@@ -1,0 +1,20 @@
+{
+    "display": {
+        "icon": {
+            "item": "minecraft:iron_ingot"
+        },
+        "show_toast": false,
+        "title": {
+            "translate": "luigis_mansion:advancements.portrait_ghosts.king_boo.silver"
+        },
+        "description": {
+            "translate": "luigis_mansion:advancements.portrait_ghosts.king_boo.silver.description"
+        }
+    },
+	"parent": "luigis_mansion:portrait_ghosts/king_boo/bronze",
+    "criteria": {
+        "portrificationized": {
+            "trigger": "minecraft:impossible"
+        }
+    }
+}

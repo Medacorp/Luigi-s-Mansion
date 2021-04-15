@@ -1,0 +1,1 @@
+execute if block 711 120 38 minecraft:trapped_chest unless block 711 120 38 minecraft:trapped_chest{LootTable:"luigis_mansion:search"} run function luigis_mansion:room/hidden/safari_room/search_chest

@@ -1,0 +1,20 @@
+{
+    "display": {
+        "icon": {
+            "item": "minecraft:carrot_on_a_stick",
+			"nbt": "{Unbreakable:1b,Damage:1,CustomModelData:1}"
+        },
+        "title": {
+            "translate": "luigis_mansion:advancements.challenges.root"
+        },
+        "description": {
+            "translate": "luigis_mansion:advancements.challenges.root.description"
+        },
+		"background": "luigis_mansion:textures/gui/advancements/background/challenges.png"
+    },
+    "criteria": {
+        "cleared": {
+            "trigger": "minecraft:impossible"
+        }
+    }
+}

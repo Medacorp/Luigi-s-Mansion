@@ -1,0 +1,3 @@
+execute unless score #underground_lab Ticking matches 1 run fill 4780 100 6 4795 100 22 minecraft:gray_concrete
+execute if score #underground_lab Ticking matches 1 if entity @a[advancements={luigis_mansion:lab/underground_lab=false}] run fill 4780 100 6 4795 100 22 minecraft:light_gray_concrete
+execute if entity @a[advancements={luigis_mansion:lab/underground_lab=true}] run fill 4780 100 6 4795 100 22 minecraft:white_concrete

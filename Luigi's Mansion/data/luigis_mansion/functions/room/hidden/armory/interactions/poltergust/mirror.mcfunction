@@ -1,0 +1,1 @@
+execute if entity @s[x=699.0,y=122,z=-27.0,dx=1,dy=1,dz=1,tag=vacuum] unless score #armory_mirror Search matches 1 store success score #armory_mirror Search run scoreboard players add #armory_mirror Searching 1

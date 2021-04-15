@@ -1,0 +1,14 @@
+{
+    "values": [
+        "luigis_mansion:room/hidden/small_hallway/reset/unload",
+        "#luigis_mansion:room/hidden/small_hallway/turn_lights/off",
+        "luigis_mansion:room/hidden/small_hallway/reset/unload_twins_room",
+        "luigis_mansion:room/hidden/small_hallway/reset/candle_1",
+        "luigis_mansion:room/hidden/small_hallway/reset/candle_2",
+        "luigis_mansion:room/hidden/small_hallway/reset/candle_3",
+        "luigis_mansion:room/hidden/small_hallway/reset/candle_4",
+        "luigis_mansion:room/hidden/small_hallway/reset/candle_5",
+        "luigis_mansion:room/hidden/small_hallway/reset/candle_6",
+        "luigis_mansion:room/hidden/small_hallway/reset/lamp"
+    ]
+}

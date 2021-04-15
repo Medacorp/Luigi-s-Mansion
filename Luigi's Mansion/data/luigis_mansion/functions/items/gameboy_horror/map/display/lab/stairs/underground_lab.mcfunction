@@ -1,0 +1,1 @@
+fill 4788 101 22 4789 105 22 minecraft:lime_stained_glass

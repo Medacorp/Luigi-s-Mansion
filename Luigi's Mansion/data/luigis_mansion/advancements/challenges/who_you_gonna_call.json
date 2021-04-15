@@ -1,0 +1,23 @@
+{
+    "display": {
+        "icon": {
+            "item": "minecraft:carrot_on_a_stick",
+			"nbt": "{Unbreakable:1b,Damage:1,CustomModelData:0}"
+        },
+        "title": {
+            "translate": "luigis_mansion:advancements.challenges.who_you_gonna_call"
+        },
+        "description": {
+            "translate": "luigis_mansion:advancements.challenges.who_you_gonna_call.description"
+        }
+    },
+	"parent": "luigis_mansion:challenges/root",
+    "criteria": {
+        "caught_11": {
+            "trigger": "minecraft:impossible"
+        }
+    },
+	"rewards": {
+		"function": "luigis_mansion:advancements/challenge/who_you_gonna_call"
+	}
+}

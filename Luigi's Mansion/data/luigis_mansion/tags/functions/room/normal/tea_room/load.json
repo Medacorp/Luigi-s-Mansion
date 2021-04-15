@@ -1,0 +1,13 @@
+{
+	"values": [
+	    "luigis_mansion:room/normal/tea_room/load/set_loaded",
+        "luigis_mansion:room/normal/tea_room/load/lights",
+        "luigis_mansion:room/normal/tea_room/load/haunted_objects",
+        "luigis_mansion:room/normal/tea_room/load/drawer_1",
+        "luigis_mansion:room/normal/tea_room/load/drawer_2",
+        "luigis_mansion:room/normal/tea_room/load/candle_1",
+        "luigis_mansion:room/normal/tea_room/load/candle_2",
+        "luigis_mansion:room/normal/tea_room/load/ice_bucket",
+        "luigis_mansion:room/normal/tea_room/load/tea_box"
+	]
+}

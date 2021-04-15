@@ -1,0 +1,1 @@
+function luigis_mansion:room/normal/main_hallway/remove_blockade

@@ -1,0 +1,12 @@
+{
+	"values": [
+	    "luigis_mansion:room/normal/guest_room/load/set_loaded",
+	    "luigis_mansion:room/normal/guest_room/load/flip",
+        "luigis_mansion:room/normal/guest_room/load/lights",
+	    "luigis_mansion:room/normal/guest_room/load/candle_1",
+	    "luigis_mansion:room/normal/guest_room/load/candle_2",
+        "luigis_mansion:room/normal/guest_room/load/haunted_objects",
+        "luigis_mansion:room/normal/guest_room/load/table_1",
+        "luigis_mansion:room/normal/guest_room/load/table_2"
+	]
+}

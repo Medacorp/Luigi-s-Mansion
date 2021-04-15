@@ -1,0 +1,1 @@
+fill 708 109 8 708 109 7 minecraft:air

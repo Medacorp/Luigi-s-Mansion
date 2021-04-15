@@ -1,0 +1,1 @@
+execute if entity @s[x=662.5,y=104,z=24.5,distance=..0.7] if entity @e[x=662.5,y=104,z=23.5,distance=..0.7,type=minecraft:item_frame,tag=poster] run tellraw @a {"translate":"chat.type.text","with":[{"selector":"@p[tag=scanning_player,gamemode=!spectator]","color":"green"},{"translate":"luigis_mansion:message.player.scan_furniture.25"}]}

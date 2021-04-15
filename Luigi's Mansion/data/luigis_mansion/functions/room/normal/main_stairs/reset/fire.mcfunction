@@ -1,0 +1,1 @@
+fill 666 111 -24 666 112 -24 minecraft:air

@@ -1,0 +1,1 @@
+scoreboard players reset #main_stairs_lamp

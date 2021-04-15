@@ -1,0 +1,1 @@
+execute if entity @s[x=687.0,y=93,z=14.0,dx=6,dy=0,dz=6,tag=ice] if block ~ ~ ~ minecraft:water unless score #pipe_room_sewage Search matches 1 store success score #pipe_room_sewage Search run scoreboard players add #pipe_room_sewage Searching 1

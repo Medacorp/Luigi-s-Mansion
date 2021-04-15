@@ -1,0 +1,1 @@
+execute if entity @s[tag=purple_bomber] run function luigis_mansion:spawn_entities/ghost/purple_bomber

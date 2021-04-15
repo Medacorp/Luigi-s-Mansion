@@ -1,0 +1,1 @@
+scoreboard players reset #kitchen_chest

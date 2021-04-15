@@ -1,0 +1,1 @@
+execute if entity @a[tag=!blackout] run setblock 687 94 28 minecraft:trapped_chest[facing=north]{LootTable:"luigis_mansion:search"}

@@ -1,0 +1,21 @@
+{
+	"values": [
+		"luigis_mansion:entities/item/picked_up/gold_coin",
+        "luigis_mansion:entities/item/picked_up/bill",
+        "luigis_mansion:entities/item/picked_up/gold_bar",
+        "luigis_mansion:entities/item/picked_up/blue_sapphire",
+        "luigis_mansion:entities/item/picked_up/green_emerald",
+        "luigis_mansion:entities/item/picked_up/red_ruby",
+        "luigis_mansion:entities/item/picked_up/red_diamond",
+        "luigis_mansion:entities/item/picked_up/blue_diamond",
+        "luigis_mansion:entities/item/picked_up/gold_diamond",
+        "luigis_mansion:entities/item/picked_up/small_pearl",
+        "luigis_mansion:entities/item/picked_up/medium_pearl",
+        "luigis_mansion:entities/item/picked_up/big_pearl",
+        "luigis_mansion:entities/item/picked_up/heart",
+        "luigis_mansion:entities/item/picked_up/poison_mushroom",
+        "luigis_mansion:entities/item/picked_up/key",
+        "luigis_mansion:entities/item/picked_up/element_medal",
+        "luigis_mansion:entities/item/picked_up/marios_item"
+	]
+}

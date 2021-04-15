@@ -1,0 +1,1 @@
+function luigis_mansion:room/normal/anteroom/remove_blockade

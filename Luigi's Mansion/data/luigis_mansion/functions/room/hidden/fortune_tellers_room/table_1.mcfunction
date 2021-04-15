@@ -1,0 +1,22 @@
+execute unless data storage luigis_mansion:data current_state.current_data.money_spawned{fortune_tellers_room_table_1:1b} positioned 708 102 21 run function luigis_mansion:spawn_entities/item/gold_coin
+execute unless data storage luigis_mansion:data current_state.current_data.money_spawned{fortune_tellers_room_table_1:1b} positioned 708 102 20 run function luigis_mansion:spawn_entities/item/gold_coin
+execute unless data storage luigis_mansion:data current_state.current_data.money_spawned{fortune_tellers_room_table_1:1b} positioned 708 102 19 run function luigis_mansion:spawn_entities/item/gold_coin
+execute unless data storage luigis_mansion:data current_state.current_data.money_spawned{fortune_tellers_room_table_1:1b} positioned 707 102 21 run function luigis_mansion:spawn_entities/item/gold_coin
+execute unless data storage luigis_mansion:data current_state.current_data.money_spawned{fortune_tellers_room_table_1:1b} positioned 708 103 21 run function luigis_mansion:spawn_entities/item/gold_coin
+execute unless data storage luigis_mansion:data current_state.current_data.money_spawned{fortune_tellers_room_table_1:1b} positioned 708 103 20 run function luigis_mansion:spawn_entities/item/gold_coin
+execute unless data storage luigis_mansion:data current_state.current_data.money_spawned{fortune_tellers_room_table_1:1b} positioned 708 103 19 run function luigis_mansion:spawn_entities/item/gold_coin
+execute unless data storage luigis_mansion:data current_state.current_data.money_spawned{fortune_tellers_room_table_1:1b} positioned 707 103 21 run function luigis_mansion:spawn_entities/item/gold_coin
+execute unless data storage luigis_mansion:data current_state.current_data.money_spawned{fortune_tellers_room_table_1:1b} positioned 707 103 20 run function luigis_mansion:spawn_entities/item/gold_coin
+execute unless data storage luigis_mansion:data current_state.current_data.money_spawned{fortune_tellers_room_table_1:1b} positioned 707 104 20 run function luigis_mansion:spawn_entities/item/gold_coin
+execute unless data storage luigis_mansion:data current_state.current_data.money_spawned{fortune_tellers_room_table_1:1b} positioned 708 102 21 run function luigis_mansion:spawn_entities/item/bill
+execute unless data storage luigis_mansion:data current_state.current_data.money_spawned{fortune_tellers_room_table_1:1b} positioned 708 102 20 run function luigis_mansion:spawn_entities/item/bill
+execute unless data storage luigis_mansion:data current_state.current_data.money_spawned{fortune_tellers_room_table_1:1b} positioned 708 102 19 run function luigis_mansion:spawn_entities/item/bill
+execute unless data storage luigis_mansion:data current_state.current_data.money_spawned{fortune_tellers_room_table_1:1b} positioned 707 102 21 run function luigis_mansion:spawn_entities/item/bill
+execute unless data storage luigis_mansion:data current_state.current_data.money_spawned{fortune_tellers_room_table_1:1b} positioned 708 103 21 run function luigis_mansion:spawn_entities/item/bill
+execute unless data storage luigis_mansion:data current_state.current_data.money_spawned{fortune_tellers_room_table_1:1b} positioned 708 103 20 run function luigis_mansion:spawn_entities/item/bill
+execute unless data storage luigis_mansion:data current_state.current_data.money_spawned{fortune_tellers_room_table_1:1b} positioned 708 103 19 run function luigis_mansion:spawn_entities/item/bill
+execute unless data storage luigis_mansion:data current_state.current_data.money_spawned{fortune_tellers_room_table_1:1b} positioned 707 103 21 run function luigis_mansion:spawn_entities/item/bill
+execute unless data storage luigis_mansion:data current_state.current_data.money_spawned{fortune_tellers_room_table_1:1b} positioned 707 103 20 run function luigis_mansion:spawn_entities/item/bill
+execute unless data storage luigis_mansion:data current_state.current_data.money_spawned{fortune_tellers_room_table_1:1b} positioned 707 104 20 run function luigis_mansion:spawn_entities/item/bill
+execute if data storage luigis_mansion:data current_state.current_data.money_spawned{fortune_tellers_room_table_1:1b} run tag @e[tag=selected] add nothing
+data modify storage luigis_mansion:data current_state.current_data.money_spawned merge value {fortune_tellers_room_table_1:1b}

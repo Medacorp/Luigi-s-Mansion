@@ -1,0 +1,32 @@
+{
+	"values": [
+	    "luigis_mansion:room/hidden/main_hallway/load/set_loaded",
+        "luigis_mansion:room/hidden/main_hallway/load/lights",
+        "luigis_mansion:room/hidden/main_hallway/load/boos",
+        "luigis_mansion:room/hidden/main_hallway/load/fake_doors",
+        "luigis_mansion:room/hidden/main_hallway/load/spawn_shivers",
+        "luigis_mansion:room/hidden/main_hallway/load/blockade",
+        "luigis_mansion:room/hidden/main_hallway/load/candle_1",
+        "luigis_mansion:room/hidden/main_hallway/load/candle_2",
+        "luigis_mansion:room/hidden/main_hallway/load/candle_3",
+        "luigis_mansion:room/hidden/main_hallway/load/candle_4",
+        "luigis_mansion:room/hidden/main_hallway/load/candle_5",
+        "luigis_mansion:room/hidden/main_hallway/load/candle_6",
+        "luigis_mansion:room/hidden/main_hallway/load/candle_7",
+        "luigis_mansion:room/hidden/main_hallway/load/candle_8",
+        "luigis_mansion:room/hidden/main_hallway/load/candle_9",
+        "luigis_mansion:room/hidden/main_hallway/load/candle_10",
+        "luigis_mansion:room/hidden/main_hallway/load/candle_11",
+        "luigis_mansion:room/hidden/main_hallway/load/candle_12",
+        "luigis_mansion:room/hidden/main_hallway/load/candle_13",
+        "luigis_mansion:room/hidden/main_hallway/load/candle_14",
+        "luigis_mansion:room/hidden/main_hallway/load/candle_15",
+        "luigis_mansion:room/hidden/main_hallway/load/candle_16",
+        "luigis_mansion:room/hidden/main_hallway/load/candle_17",
+        "luigis_mansion:room/hidden/main_hallway/load/candle_18",
+        "luigis_mansion:room/hidden/main_hallway/load/candle_19",
+        "luigis_mansion:room/hidden/main_hallway/load/candle_20",
+        "luigis_mansion:room/hidden/main_hallway/load/candle_21",
+        "luigis_mansion:room/hidden/main_hallway/load/candle_22"
+	]
+}

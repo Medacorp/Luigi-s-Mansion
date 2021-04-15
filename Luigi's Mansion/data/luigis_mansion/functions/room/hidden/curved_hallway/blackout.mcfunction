@@ -1,0 +1,1 @@
+scoreboard players set #curved_hallway Wave 100

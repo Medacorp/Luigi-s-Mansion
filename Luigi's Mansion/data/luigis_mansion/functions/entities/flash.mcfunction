@@ -1,0 +1,1 @@
+execute if entity @s[tag=flash] run function luigis_mansion:entities/flash/tick

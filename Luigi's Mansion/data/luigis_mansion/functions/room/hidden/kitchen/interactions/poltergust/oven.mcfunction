@@ -1,0 +1,1 @@
+execute if entity @s[x=687.0,y=102,z=-26.0,dx=1,dy=1,dz=3,tag=fire] unless score #kitchen_oven Search matches 1 store success score #kitchen_oven Search run scoreboard players add #kitchen_oven Searching 1

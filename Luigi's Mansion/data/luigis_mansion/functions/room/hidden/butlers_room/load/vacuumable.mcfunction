@@ -1,0 +1,1 @@
+setblock 708 107 -27 minecraft:white_wool

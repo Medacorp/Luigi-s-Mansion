@@ -1,0 +1,1 @@
+execute if entity @s[x=707.5,y=123,z=-18.5,distance=..0.7,tag=vacuum] unless score #safari_room_vacuumable Search matches 1 store success score #safari_room_vacuumable Search run scoreboard players add #safari_room_vacuumable Searching 1

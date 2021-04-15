@@ -1,0 +1,3 @@
+execute if data storage luigis_mansion:data current_state.current_data.rooms.nursery{seen:0b} run function luigis_mansion:items/gameboy_horror/map/display/normal/nursery/unseen
+execute if data storage luigis_mansion:data current_state.current_data.rooms.nursery{seen:1b,cleared:0b} run function luigis_mansion:items/gameboy_horror/map/display/normal/nursery/seen
+execute if data storage luigis_mansion:data current_state.current_data.rooms.nursery{cleared:1b} run function luigis_mansion:items/gameboy_horror/map/display/normal/nursery/cleared

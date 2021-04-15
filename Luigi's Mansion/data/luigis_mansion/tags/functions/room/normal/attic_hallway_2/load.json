@@ -1,0 +1,11 @@
+{
+	"values": [
+	    "luigis_mansion:room/normal/attic_hallway_2/load/set_loaded",
+        "luigis_mansion:room/normal/attic_hallway_2/load/lights",
+        "luigis_mansion:room/normal/attic_hallway_2/load/boos",
+        "luigis_mansion:room/normal/attic_hallway_2/load/fake_doors",
+        "luigis_mansion:room/normal/attic_hallway_2/load/vacuumable_1",
+        "luigis_mansion:room/normal/attic_hallway_2/load/vacuumable_2",
+        "luigis_mansion:room/normal/attic_hallway_2/load/vacuumable_3"
+	]
+}

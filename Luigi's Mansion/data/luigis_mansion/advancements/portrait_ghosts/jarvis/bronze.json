@@ -1,0 +1,20 @@
+{
+    "display": {
+        "icon": {
+            "item": "minecraft:copper_ingot"
+        },
+        "show_toast": false,
+        "title": {
+            "translate": "luigis_mansion:advancements.portrait_ghosts.jarvis.bronze"
+        },
+        "description": {
+            "translate": "luigis_mansion:advancements.portrait_ghosts.jarvis.bronze.description"
+        }
+    },
+	"parent": "luigis_mansion:portrait_ghosts/jarvis",
+    "criteria": {
+        "portrificationized": {
+            "trigger": "minecraft:impossible"
+        }
+    }
+}

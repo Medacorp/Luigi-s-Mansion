@@ -1,0 +1,3 @@
+execute unless score #ghost_portrificationizer_room Ticking matches 1 run fill 4777 100 -14 4765 100 22 minecraft:gray_concrete
+execute if score #ghost_portrificationizer_room Ticking matches 1 if entity @a[advancements={luigis_mansion:lab/ghost_portrificationizer_room=false}] run fill 4777 100 -14 4765 100 22 minecraft:light_gray_concrete
+execute if entity @a[advancements={luigis_mansion:lab/ghost_portrificationizer_room=true}] run fill 4777 100 -14 4765 100 22 minecraft:white_concrete

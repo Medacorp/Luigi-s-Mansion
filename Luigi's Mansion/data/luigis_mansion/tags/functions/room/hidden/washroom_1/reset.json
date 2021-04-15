@@ -1,0 +1,17 @@
+{
+    "values": [
+        "luigis_mansion:room/hidden/washroom_1/reset/unload",
+        "#luigis_mansion:room/hidden/washroom_1/turn_lights/off",
+        "luigis_mansion:room/hidden/washroom_1/reset/cabinet",
+        "luigis_mansion:room/hidden/washroom_1/reset/lamp",
+        "luigis_mansion:room/hidden/washroom_1/reset/mirror",
+        "luigis_mansion:room/hidden/washroom_1/reset/painting_1",
+        "luigis_mansion:room/hidden/washroom_1/reset/painting_2",
+        "luigis_mansion:room/hidden/washroom_1/reset/painting_3",
+        "luigis_mansion:room/hidden/washroom_1/reset/radiator",
+        "luigis_mansion:room/hidden/washroom_1/reset/sink",
+        "luigis_mansion:room/hidden/washroom_1/reset/toilet",
+        "luigis_mansion:room/hidden/washroom_1/reset/toilet_paper",
+        "luigis_mansion:room/hidden/washroom_1/reset/toilet_storage"
+    ]
+}

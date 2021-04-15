@@ -1,0 +1,2 @@
+execute if block 712 112 47 minecraft:redstone_lamp run fill 712 111 47 713 111 46 minecraft:stone_button[face=ceiling,powered=true]
+execute unless block 712 112 47 minecraft:redstone_lamp run fill 712 117 47 713 117 46 minecraft:stone_button[face=floor,powered=true]

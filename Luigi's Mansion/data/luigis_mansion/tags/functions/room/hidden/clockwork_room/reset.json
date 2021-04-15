@@ -1,0 +1,30 @@
+{
+    "values": [
+        "luigis_mansion:room/hidden/clockwork_room/reset/unload",
+        "#luigis_mansion:room/hidden/clockwork_room/turn_lights/off",
+        "luigis_mansion:room/hidden/clockwork_room/reset/elevator",
+        "luigis_mansion:room/hidden/clockwork_room/reset/chair_1",
+        "luigis_mansion:room/hidden/clockwork_room/reset/chair_2",
+        "luigis_mansion:room/hidden/clockwork_room/reset/chair_3",
+        "luigis_mansion:room/hidden/clockwork_room/reset/chair_4",
+        "luigis_mansion:room/hidden/clockwork_room/reset/chair_5",
+        "luigis_mansion:room/hidden/clockwork_room/reset/clock_1",
+        "luigis_mansion:room/hidden/clockwork_room/reset/clock_2",
+        "luigis_mansion:room/hidden/clockwork_room/reset/clock_3",
+        "luigis_mansion:room/hidden/clockwork_room/reset/lamp_1",
+        "luigis_mansion:room/hidden/clockwork_room/reset/lamp_2",
+        "luigis_mansion:room/hidden/clockwork_room/reset/puppet_1",
+        "luigis_mansion:room/hidden/clockwork_room/reset/puppet_2",
+        "luigis_mansion:room/hidden/clockwork_room/reset/small_door_1",
+        "luigis_mansion:room/hidden/clockwork_room/reset/small_door_2",
+        "luigis_mansion:room/hidden/clockwork_room/reset/small_door_3",
+        "luigis_mansion:room/hidden/clockwork_room/reset/small_door_4",
+        "luigis_mansion:room/hidden/clockwork_room/reset/small_door_5",
+        "luigis_mansion:room/hidden/clockwork_room/reset/small_door_6",
+        "luigis_mansion:room/hidden/clockwork_room/reset/table_1",
+        "luigis_mansion:room/hidden/clockwork_room/reset/table_2",
+        "luigis_mansion:room/hidden/clockwork_room/reset/table_3",
+        "luigis_mansion:room/hidden/clockwork_room/reset/table_4",
+        "luigis_mansion:room/hidden/clockwork_room/reset/vacuumable"
+    ]
+}

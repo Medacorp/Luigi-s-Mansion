@@ -1,0 +1,7 @@
+execute unless data storage luigis_mansion:data current_state.current_data.money_spawned{ceramics_studio_jar_2:1b} positioned 694 120 47 run function luigis_mansion:spawn_entities/item/gold_coin
+execute unless data storage luigis_mansion:data current_state.current_data.money_spawned{ceramics_studio_jar_2:1b} positioned 694 120 48 run function luigis_mansion:spawn_entities/item/gold_coin
+execute unless data storage luigis_mansion:data current_state.current_data.money_spawned{ceramics_studio_jar_2:1b} positioned 695 120 47 run function luigis_mansion:spawn_entities/item/gold_coin
+execute unless data storage luigis_mansion:data current_state.current_data.money_spawned{ceramics_studio_jar_2:1b} positioned 696 120 48 run function luigis_mansion:spawn_entities/item/gold_coin
+execute unless data storage luigis_mansion:data current_state.current_data.money_spawned{ceramics_studio_jar_2:1b} positioned 695 120 49 run function luigis_mansion:spawn_entities/item/gold_coin
+execute if data storage luigis_mansion:data current_state.current_data.money_spawned{ceramics_studio_jar_2:1b} run tag @e[tag=selected] add nothing
+data modify storage luigis_mansion:data current_state.current_data.money_spawned merge value {ceramics_studio_jar_2:1b}

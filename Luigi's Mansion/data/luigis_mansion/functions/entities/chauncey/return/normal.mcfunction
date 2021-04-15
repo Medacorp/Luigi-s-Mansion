@@ -1,0 +1,1 @@
+execute if score #mansion_type Selected matches 0 run teleport @s 741 20 63 -90 0

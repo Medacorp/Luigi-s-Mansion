@@ -1,0 +1,1 @@
+execute if entity @s[tag=purple_puncher] run function luigis_mansion:spawn_entities/ghost/purple_puncher

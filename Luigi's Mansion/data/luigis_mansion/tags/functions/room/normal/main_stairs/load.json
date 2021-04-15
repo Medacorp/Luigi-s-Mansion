@@ -1,0 +1,13 @@
+{
+	"values": [
+	    "luigis_mansion:room/normal/main_stairs/load/set_loaded",
+        "luigis_mansion:room/normal/main_stairs/load/lights",
+        "luigis_mansion:room/normal/main_stairs/load/fire",
+        "luigis_mansion:room/normal/main_stairs/load/candle_1",
+        "luigis_mansion:room/normal/main_stairs/load/candle_2",
+        "luigis_mansion:room/normal/main_stairs/load/candle_3",
+        "luigis_mansion:room/normal/main_stairs/load/candle_4",
+        "luigis_mansion:room/normal/main_stairs/load/vacuumable_1",
+        "luigis_mansion:room/normal/main_stairs/load/vacuumable_2"
+	]
+}

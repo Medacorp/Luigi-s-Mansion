@@ -1,0 +1,22 @@
+execute unless score #storage_room Ticking matches 1 run function #luigis_mansion:room/normal/storage_room/load
+execute as @a[x=679,y=11,z=-70,dx=12,dy=6,dz=33] unless entity @s[scores={Room=14}] run scoreboard players operation @s LastRoom = @s Room
+execute as @e[type=!minecraft:item_frame,x=679,y=11,z=-70,dx=12,dy=6,dz=33] run scoreboard players set @s Room 14
+
+scoreboard players set @e[scores={Room=14},type=!minecraft:area_effect_cloud] MirrorX 680
+
+execute as @a[gamemode=!spectator,x=679,y=11,z=-70,dx=12,dy=6,dz=33] run function luigis_mansion:room/normal/storage_room/tick_per_player
+
+function #luigis_mansion:room/normal/storage_room/interactions/room
+
+execute if block 689 13 -60 minecraft:stone_button[powered=true] run setblock 671 13 -60 minecraft:stone_button[powered=true,face=wall,facing=east]
+execute if block 689 13 -60 minecraft:stone_button[powered=false] run setblock 671 13 -60 minecraft:stone_button[powered=false,face=wall,facing=east]
+execute if block 681 13 -46 minecraft:stone_button[powered=true] run setblock 679 13 -46 minecraft:stone_button[powered=true,face=wall,facing=west]
+execute if block 681 13 -46 minecraft:stone_button[powered=false] run setblock 679 13 -46 minecraft:stone_button[powered=false,face=wall,facing=west]
+fill 671 10 -68 679 18 -40 minecraft:barrier replace minecraft:air
+
+execute if block 689 13 -60 minecraft:stone_button[powered=true] if block 682 11 -52 minecraft:andesite_stairs unless entity @a[tag=moving_wall,limit=1] if data storage luigis_mansion:data current_state.current_data.rooms.storage_room{cleared:1b} positioned 689 13 -60 run tag @p[gamemode=!spectator] add move_wall
+execute if block 681 13 -46 minecraft:stone_button[powered=true] if block 685 10 -46 minecraft:oak_slab unless entity @a[tag=release_boos,limit=1] unless entity @a[x=684.0,y=11,z=-47.0,dx=2,dy=6,dz=2,limit=1] positioned 681 13 -46 run tag @p[gamemode=!spectator] add release_boos
+
+function luigis_mansion:room/normal/storage_room/ghosts
+
+function luigis_mansion:room/normal/door/ball_room_storage_room

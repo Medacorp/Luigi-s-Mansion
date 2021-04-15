@@ -1,0 +1,4 @@
+tellraw @s {"translate":"chat.type.text","with":[{"translate":"luigis_mansion:item.gameboy_horror","color":"green"},{"translate":"luigis_mansion:message.gameboy_horror.choose"}]}
+tellraw @s {"translate":"luigis_mansion:message.options","color":"green","extra":[{"text":"\n"},{"translate":"luigis_mansion:message.gameboy_horror.map","clickEvent":{"action":"run_command","value":"/trigger GBHChoice set 1"}},{"text":"\n"},{"translate":"luigis_mansion:message.gameboy_horror.scan","clickEvent":{"action":"run_command","value":"/trigger GBHChoice set 2"}},{"text":"\n"},{"translate":"luigis_mansion:message.gameboy_horror.show_items","clickEvent":{"action":"run_command","value":"/trigger GBHChoice set 3"}},{"text":"\n"},{"translate":"luigis_mansion:message.gameboy_horror.show_caught_ghosts","clickEvent":{"action":"run_command","value":"/trigger GBHChoice set 4"}}]}
+scoreboard players enable @s GBHChoice
+scoreboard players reset @s UseItem

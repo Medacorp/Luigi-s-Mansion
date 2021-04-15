@@ -1,0 +1,1 @@
+fill 704 16 -60 703 16 -61 minecraft:air

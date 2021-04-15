@@ -1,0 +1,3 @@
+execute positioned 684 113 -28.0 run function luigis_mansion:blocks/dust
+scoreboard players set #sealed_room_painting_4 Searched 1
+tag @e[x=684.5,y=113,z=-27.5,distance=..0.7,tag=ghost_marker] add spawn

@@ -1,0 +1,21 @@
+{
+    "display": {
+        "icon": {
+            "item": "minecraft:glass_pane"
+        },
+        "show_toast": false,
+        "hidden": true,
+        "title": {
+            "translate": "luigis_mansion:advancements.lab.unlocked_hidden_mansion"
+        },
+        "description": {
+            "translate": "luigis_mansion:advancements.lab.unlocked_hidden_mansion.description"
+        }
+    },
+	"parent": "luigis_mansion:lab/underground_lab",
+    "criteria": {
+        "unlocked": {
+            "trigger": "minecraft:impossible"
+        }
+    }
+}

@@ -1,0 +1,14 @@
+{
+	"values": [
+		"luigis_mansion:room/normal/cold_storage/interactions/gameboy_horror_scan/barrel_1",
+		"luigis_mansion:room/normal/cold_storage/interactions/gameboy_horror_scan/barrel_2",
+		"luigis_mansion:room/normal/cold_storage/interactions/gameboy_horror_scan/campfire_1",
+		"luigis_mansion:room/normal/cold_storage/interactions/gameboy_horror_scan/campfire_2",
+		"luigis_mansion:room/normal/cold_storage/interactions/gameboy_horror_scan/campfire_3",
+		"luigis_mansion:room/normal/cold_storage/interactions/gameboy_horror_scan/crate_1",
+		"luigis_mansion:room/normal/cold_storage/interactions/gameboy_horror_scan/crate_2",
+		"luigis_mansion:room/normal/cold_storage/interactions/gameboy_horror_scan/junk",
+		"luigis_mansion:room/normal/cold_storage/interactions/gameboy_horror_scan/shelf_1",
+		"luigis_mansion:room/normal/cold_storage/interactions/gameboy_horror_scan/shelf_2"
+	]
+}

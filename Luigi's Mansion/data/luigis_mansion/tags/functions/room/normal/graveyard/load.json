@@ -1,0 +1,8 @@
+{
+	"values": [
+	    "luigis_mansion:room/normal/graveyard/load/set_loaded",
+        "luigis_mansion:room/normal/graveyard/load/lights",
+        "luigis_mansion:room/normal/graveyard/load/fire_1",
+        "luigis_mansion:room/normal/graveyard/load/fire_2"
+	]
+}

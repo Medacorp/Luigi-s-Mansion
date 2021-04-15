@@ -1,0 +1,1 @@
+setblock 715 93 25 minecraft:soul_campfire[lit=true]

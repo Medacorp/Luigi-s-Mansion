@@ -1,0 +1,1 @@
+execute unless score #study Ticking matches 1 unless score #master_bedroom Ticking matches 1 unless score #nursery Ticking matches 1 unless score #twins_room Ticking matches 1 run scoreboard players reset #twins_room Wave

@@ -1,0 +1,1 @@
+scoreboard players reset #hidden_room_trophy_1

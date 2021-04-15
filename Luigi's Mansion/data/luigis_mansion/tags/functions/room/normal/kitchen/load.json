@@ -1,0 +1,10 @@
+{
+	"values": [
+	    "luigis_mansion:room/normal/kitchen/load/set_loaded",
+        "luigis_mansion:room/normal/kitchen/load/lights",
+        "luigis_mansion:room/normal/kitchen/load/haunted_objects",
+        "luigis_mansion:room/normal/kitchen/load/fire",
+        "luigis_mansion:room/normal/kitchen/load/closet",
+        "luigis_mansion:room/normal/kitchen/load/vacuumable"
+	]
+}

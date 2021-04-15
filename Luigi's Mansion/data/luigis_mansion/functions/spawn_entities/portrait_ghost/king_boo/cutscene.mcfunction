@@ -1,0 +1,5 @@
+summon minecraft:armor_stand ~ ~ ~ {Rotation:[0.0f,-90.0f],CustomName:'{"translate":"luigis_mansion:entity.king_boo"}',Invisible:1b,NoGravity:1b,CustomNameVisible:1b,Invulnerable:1b,ArmorItems:[{},{},{},{id:"minecraft:diamond_pickaxe",Count:1b,tag:{Unbreakable:1b,Damage:1,CustomModelData:80}}],HandItems:[{id:"minecraft:diamond_pickaxe",Count:1b,tag:{Unbreakable:1b,Damage:2,CustomModelData:80}},{id:"minecraft:diamond_pickaxe",Count:1b,tag:{Unbreakable:1b,Damage:3,CustomModelData:80}}],Pose:{RightArm:[-90.0f,90.0f,0.0f],LeftArm:[-90.0f,-90.0f,0.0f],Head:[-90.01f,0.0f,0.01f]},Tags:["king_boo","ghost","cutscene","no_y_sync","this_entity"]}
+teleport @e[tag=this_entity,limit=1] ~ ~ ~ ~ -90
+scoreboard players set @e[tag=this_entity,limit=1] Move 6
+scoreboard players set @e[tag=this_entity,limit=1] Sound 0
+tag @e[tag=this_entity,limit=1] remove this_entity

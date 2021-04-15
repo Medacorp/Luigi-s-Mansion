@@ -1,0 +1,9 @@
+{
+	"values": [
+	    "luigis_mansion:room/hidden/storage_room/load/set_loaded",
+        "luigis_mansion:room/hidden/storage_room/load/move_wall",
+        "luigis_mansion:room/hidden/storage_room/load/open_hatch",
+        "luigis_mansion:room/hidden/storage_room/load/lights",
+        "luigis_mansion:room/hidden/storage_room/load/bucket"
+	]
+}

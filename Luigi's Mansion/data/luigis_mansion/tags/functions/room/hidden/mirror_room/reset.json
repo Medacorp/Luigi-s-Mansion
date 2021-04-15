@@ -1,0 +1,16 @@
+{
+    "values": [
+        "luigis_mansion:room/hidden/mirror_room/reset/unload",
+        "#luigis_mansion:room/hidden/mirror_room/turn_lights/off",
+        "luigis_mansion:room/hidden/mirror_room/reset/blockade",
+        "luigis_mansion:room/hidden/mirror_room/reset/candle_1",
+        "luigis_mansion:room/hidden/mirror_room/reset/candle_2",
+        "luigis_mansion:room/hidden/mirror_room/reset/chest",
+        "luigis_mansion:room/hidden/mirror_room/reset/fire",
+        "luigis_mansion:room/hidden/mirror_room/reset/lamp_1",
+        "luigis_mansion:room/hidden/mirror_room/reset/lamp_2",
+        "luigis_mansion:room/hidden/mirror_room/reset/painting",
+        "luigis_mansion:room/hidden/mirror_room/reset/table",
+        "luigis_mansion:room/hidden/mirror_room/reset/torch"
+    ]
+}

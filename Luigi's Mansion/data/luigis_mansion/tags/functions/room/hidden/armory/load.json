@@ -1,0 +1,11 @@
+{
+	"values": [
+	    "luigis_mansion:room/hidden/armory/load/set_loaded",
+        "luigis_mansion:room/hidden/armory/load/lights",
+        "luigis_mansion:room/hidden/armory/load/table_1",
+        "luigis_mansion:room/hidden/armory/load/table_2",
+        "luigis_mansion:room/hidden/armory/load/table_3",
+        "luigis_mansion:room/hidden/armory/load/table_4",
+        "luigis_mansion:room/hidden/armory/load/table_5"
+	]
+}

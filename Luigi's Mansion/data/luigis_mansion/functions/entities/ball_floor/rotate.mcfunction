@@ -1,0 +1,4 @@
+execute if entity @s[tag=left] as @e[distance=..4.999999,tag=!ball_floor] unless entity @s[gamemode=spectator] unless entity @s[type=minecraft:area_effect_cloud,tag=flashlight] unless entity @s[scores={GhostNr=-2147483648..}] run function luigis_mansion:entities/ball_floor/rotate_left
+execute if entity @s[tag=!left] as @e[distance=..4.999999,tag=!ball_floor] unless entity @s[gamemode=spectator] unless entity @s[type=minecraft:area_effect_cloud,tag=flashlight] unless entity @s[scores={GhostNr=-2147483648..}] run function luigis_mansion:entities/ball_floor/rotate_right
+teleport @s[tag=left] ~ ~ ~ ~-1.025 0
+teleport @s[tag=!left] ~ ~ ~ ~1.025 0

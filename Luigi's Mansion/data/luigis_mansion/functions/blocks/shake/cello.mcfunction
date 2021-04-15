@@ -1,0 +1,1 @@
+playsound luigis_mansion:block.search.cello block @a ~ ~ ~ 1

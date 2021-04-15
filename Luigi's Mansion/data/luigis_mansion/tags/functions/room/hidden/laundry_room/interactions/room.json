@@ -1,0 +1,18 @@
+{
+	"values": [
+		"luigis_mansion:room/hidden/laundry_room/interactions/room/basket",
+		"luigis_mansion:room/hidden/laundry_room/interactions/room/broom",
+		"luigis_mansion:room/hidden/laundry_room/interactions/room/bucket",
+		"luigis_mansion:room/hidden/laundry_room/interactions/room/chest",
+		"luigis_mansion:room/hidden/laundry_room/interactions/room/closet",
+		"luigis_mansion:room/hidden/laundry_room/interactions/room/dust_box",
+		"luigis_mansion:room/hidden/laundry_room/interactions/room/lamp",
+		"luigis_mansion:room/hidden/laundry_room/interactions/room/shelf_1",
+		"luigis_mansion:room/hidden/laundry_room/interactions/room/shelf_2",
+		"luigis_mansion:room/hidden/laundry_room/interactions/room/vacuumable_1",
+		"luigis_mansion:room/hidden/laundry_room/interactions/room/vacuumable_2",
+		"luigis_mansion:room/hidden/laundry_room/interactions/room/vacuumable_3",
+		"luigis_mansion:room/hidden/laundry_room/interactions/room/vacuumable_4",
+		"luigis_mansion:room/hidden/laundry_room/interactions/room/washing_machine"
+	]
+}

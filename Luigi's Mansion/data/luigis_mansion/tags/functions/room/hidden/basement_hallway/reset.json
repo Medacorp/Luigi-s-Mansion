@@ -1,0 +1,12 @@
+{
+    "values": [
+        "luigis_mansion:room/hidden/basement_hallway/reset/unload",
+        "#luigis_mansion:room/hidden/basement_hallway/turn_lights/off",
+        "luigis_mansion:room/hidden/basement_hallway/reset/candle_1",
+        "luigis_mansion:room/hidden/basement_hallway/reset/candle_2",
+        "luigis_mansion:room/hidden/basement_hallway/reset/candle_3",
+        "luigis_mansion:room/hidden/basement_hallway/reset/candle_4",
+        "luigis_mansion:room/hidden/basement_hallway/reset/vacuumable_1",
+        "luigis_mansion:room/hidden/basement_hallway/reset/vacuumable_2"
+    ]
+}

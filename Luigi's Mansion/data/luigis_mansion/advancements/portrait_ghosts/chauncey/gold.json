@@ -1,0 +1,20 @@
+{
+    "display": {
+        "icon": {
+            "item": "minecraft:gold_ingot"
+        },
+        "show_toast": false,
+        "title": {
+            "translate": "luigis_mansion:advancements.portrait_ghosts.chauncey.gold"
+        },
+        "description": {
+            "translate": "luigis_mansion:advancements.portrait_ghosts.chauncey.gold.description"
+        }
+    },
+	"parent": "luigis_mansion:portrait_ghosts/chauncey/silver",
+    "criteria": {
+        "portrificationized": {
+            "trigger": "minecraft:impossible"
+        }
+    }
+}

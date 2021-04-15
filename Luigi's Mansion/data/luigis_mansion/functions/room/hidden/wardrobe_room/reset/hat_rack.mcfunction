@@ -1,0 +1,1 @@
+scoreboard players reset #wardrobe_room_hat_rack

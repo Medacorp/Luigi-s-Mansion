@@ -1,0 +1,1 @@
+execute if entity @s[tag=red_grabbing_ghost] run tag @e[tag=this_entity,limit=1] add red_grabbing_ghost

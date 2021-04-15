@@ -1,0 +1,2 @@
+execute if entity @s[tag=flashlight] positioned ~ ~1 ~ positioned ^ ^ ^1 if block ~ ~ ~ #luigis_mansion:flashlight_path run function luigis_mansion:items/flashlight/vanish_ghost/step
+scoreboard players reset #temp PathStep

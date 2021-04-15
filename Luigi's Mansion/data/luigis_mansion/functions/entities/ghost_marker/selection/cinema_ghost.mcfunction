@@ -1,0 +1,1 @@
+execute if entity @s[tag=cinema_ghost] run function luigis_mansion:spawn_entities/ghost/cinema_ghost

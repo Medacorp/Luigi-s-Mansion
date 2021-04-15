@@ -1,0 +1,9 @@
+{
+	"values": [
+	    "luigis_mansion:room/normal/observatory/load/set_loaded",
+	    "luigis_mansion:room/normal/observatory/load/destroy",
+	    "luigis_mansion:room/normal/observatory/load/path",
+        "luigis_mansion:room/normal/observatory/load/lights",
+        "luigis_mansion:room/normal/observatory/load/table"
+	]
+}

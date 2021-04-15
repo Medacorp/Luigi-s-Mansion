@@ -1,0 +1,21 @@
+{
+    "display": {
+        "icon": {
+            "item": "minecraft:diamond_pickaxe",
+			"nbt": "{Unbreakable:1b,Damage:6,CustomModelData:12}"
+        },
+        "show_toast": false,
+        "title": {
+            "translate": "luigis_mansion:advancements.portrait_ghosts.slim_bankshot"
+        },
+        "description": {
+            "translate": "luigis_mansion:advancements.portrait_ghosts.slim_bankshot.description"
+        }
+    },
+	"parent": "luigis_mansion:portrait_ghosts/portrait_ghosts",
+    "criteria": {
+        "captured": {
+            "trigger": "minecraft:impossible"
+        }
+    }
+}

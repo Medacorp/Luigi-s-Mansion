@@ -1,0 +1,1 @@
+fill 713 103 7 714 113 8 minecraft:stone_button[face=floor,powered=true] replace minecraft:stone_button[face=floor,powered=false]

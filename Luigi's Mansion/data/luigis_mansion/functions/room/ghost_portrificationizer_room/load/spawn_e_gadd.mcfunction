@@ -1,0 +1,2 @@
+execute if data storage luigis_mansion:data {found_e_gadd:1b} positioned 774 77 14 unless entity @e[distance=..0.7,tag=e_gadd,limit=1] run function luigis_mansion:spawn_entities/e_gadd
+execute if data storage luigis_mansion:data current_state.current_data.portrait_ghosts.king_boo{health:0} positioned 774 77 14 run tag @e[distance=..0.7,tag=e_gadd,limit=1] add ending_dialog

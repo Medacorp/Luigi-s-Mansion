@@ -1,0 +1,1 @@
+execute if entity @s[tag=temper_terror] run function luigis_mansion:entities/temper_terror/tick

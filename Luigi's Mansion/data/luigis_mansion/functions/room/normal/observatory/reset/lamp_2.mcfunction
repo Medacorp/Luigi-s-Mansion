@@ -1,0 +1,1 @@
+scoreboard players reset #observatory_lamp_2

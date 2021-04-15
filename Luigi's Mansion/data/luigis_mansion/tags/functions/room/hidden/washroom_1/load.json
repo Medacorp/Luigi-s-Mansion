@@ -1,0 +1,10 @@
+{
+	"values": [
+	    "luigis_mansion:room/hidden/washroom_1/load/set_loaded",
+        "luigis_mansion:room/hidden/washroom_1/load/lights",
+        "luigis_mansion:room/hidden/washroom_1/load/spawn_toad",
+        "luigis_mansion:room/hidden/washroom_1/load/cabinet",
+        "luigis_mansion:room/hidden/washroom_1/load/sink",
+        "luigis_mansion:room/hidden/washroom_1/load/toilet"
+	]
+}

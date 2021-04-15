@@ -1,0 +1,3 @@
+execute unless data storage luigis_mansion:data current_state.current_data.money_spawned{secret_altar_lamp_2:1b} positioned 648 97 33 run function luigis_mansion:spawn_entities/item/blue_sapphire
+execute if data storage luigis_mansion:data current_state.current_data.money_spawned{secret_altar_lamp_2:1b} run tag @e[tag=selected] add nothing
+data modify storage luigis_mansion:data current_state.current_data.money_spawned merge value {secret_altar_lamp_2:1b}

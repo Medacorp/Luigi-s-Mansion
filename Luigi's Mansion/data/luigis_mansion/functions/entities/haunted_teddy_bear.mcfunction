@@ -1,0 +1,1 @@
+execute if entity @s[tag=haunted_teddy_bear] run function luigis_mansion:entities/haunted_object/teddy_bear

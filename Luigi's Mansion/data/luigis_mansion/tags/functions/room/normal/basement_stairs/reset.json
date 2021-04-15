@@ -1,0 +1,9 @@
+{
+    "values": [
+        "luigis_mansion:room/normal/basement_stairs/reset/unload",
+        "#luigis_mansion:room/normal/basement_stairs/turn_lights/off",
+        "luigis_mansion:room/normal/basement_stairs/reset/lamp_1",
+        "luigis_mansion:room/normal/basement_stairs/reset/lamp_2",
+        "luigis_mansion:room/normal/basement_stairs/reset/vacuumable"
+    ]
+}

@@ -1,0 +1,15 @@
+{
+	"values": [
+		"luigis_mansion:room/normal/washroom_1/interactions/room/cabinet",
+		"luigis_mansion:room/normal/washroom_1/interactions/room/lamp",
+		"luigis_mansion:room/normal/washroom_1/interactions/room/mirror",
+		"luigis_mansion:room/normal/washroom_1/interactions/room/painting_1",
+		"luigis_mansion:room/normal/washroom_1/interactions/room/painting_2",
+		"luigis_mansion:room/normal/washroom_1/interactions/room/painting_3",
+		"luigis_mansion:room/normal/washroom_1/interactions/room/radiator",
+		"luigis_mansion:room/normal/washroom_1/interactions/room/sink",
+		"luigis_mansion:room/normal/washroom_1/interactions/room/toilet",
+		"luigis_mansion:room/normal/washroom_1/interactions/room/toilet_paper",
+		"luigis_mansion:room/normal/washroom_1/interactions/room/toilet_storage"
+	]
+}

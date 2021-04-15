@@ -1,0 +1,2 @@
+execute if score #bathroom_1_water Searched matches 1 run setblock 656 106 -19 minecraft:stone_brick_slab[type=top,waterlogged=false]
+execute unless score #bathroom_1_water Searched matches 1 run setblock 656 106 -19 minecraft:stone_brick_slab[type=top,waterlogged=true]

@@ -1,0 +1,2 @@
+execute if score #pipe_room_ice Searched matches 1 run fill 696 95 17 697 95 16 minecraft:spruce_log[axis=y]
+execute unless score #pipe_room_ice Searched matches 1 run fill 696 95 17 697 95 16 minecraft:packed_ice

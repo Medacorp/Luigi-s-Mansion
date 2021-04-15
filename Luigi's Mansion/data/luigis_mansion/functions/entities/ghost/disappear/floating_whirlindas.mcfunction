@@ -1,0 +1,1 @@
+execute if entity @s[tag=floating_whirlindas] run function luigis_mansion:entities/ghost/disappear/portrait_ghost/floating_whirlindas

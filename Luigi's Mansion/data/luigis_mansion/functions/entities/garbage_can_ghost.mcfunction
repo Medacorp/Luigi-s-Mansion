@@ -1,0 +1,1 @@
+execute if entity @s[tag=garbage_can_ghost] run function luigis_mansion:entities/garbage_can_ghost/tick

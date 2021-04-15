@@ -1,0 +1,1 @@
+scoreboard players reset #armory_crate_3

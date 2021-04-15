@@ -1,0 +1,23 @@
+{
+    "display": {
+        "icon": {
+            "item": "minecraft:brick",
+			"nbt": "{CustomModelData:25}"
+        },
+        "title": {
+            "translate": "luigis_mansion:advancements.challenges.making_wario_jealous"
+        },
+        "description": {
+            "translate": "luigis_mansion:advancements.challenges.making_wario_jealous.description"
+        }
+    },
+	"parent": "luigis_mansion:challenges/root",
+    "criteria": {
+        "142390000_g": {
+            "trigger": "minecraft:impossible"
+        }
+    },
+	"rewards": {
+		"function": "luigis_mansion:advancements/challenge/making_wario_jealous"
+	}
+}

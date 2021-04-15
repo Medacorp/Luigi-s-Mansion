@@ -1,0 +1,9 @@
+{
+	"values": [
+	    "luigis_mansion:room/normal/secret_altar/load/set_loaded",
+        "luigis_mansion:room/normal/secret_altar/load/lights",
+        "luigis_mansion:room/normal/secret_altar/load/candle_1",
+        "luigis_mansion:room/normal/secret_altar/load/candle_6",
+        "luigis_mansion:room/normal/secret_altar/load/marios_painting"
+	]
+}

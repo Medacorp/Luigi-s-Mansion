@@ -1,0 +1,23 @@
+{
+	"values": [
+		"luigis_mansion:room/normal/safari_room/interactions/gameboy_horror_scan/chair",
+		"luigis_mansion:room/normal/safari_room/interactions/gameboy_horror_scan/cheese",
+		"luigis_mansion:room/normal/safari_room/interactions/gameboy_horror_scan/crate_1",
+		"luigis_mansion:room/normal/safari_room/interactions/gameboy_horror_scan/crate_2",
+		"luigis_mansion:room/normal/safari_room/interactions/gameboy_horror_scan/crate_3",
+		"luigis_mansion:room/normal/safari_room/interactions/gameboy_horror_scan/crate_4",
+		"luigis_mansion:room/normal/safari_room/interactions/gameboy_horror_scan/crate_5",
+		"luigis_mansion:room/normal/safari_room/interactions/gameboy_horror_scan/crate_6",
+		"luigis_mansion:room/normal/safari_room/interactions/gameboy_horror_scan/deer_head_1",
+		"luigis_mansion:room/normal/safari_room/interactions/gameboy_horror_scan/deer_head_2",
+		"luigis_mansion:room/normal/safari_room/interactions/gameboy_horror_scan/deer_head_3",
+		"luigis_mansion:room/normal/safari_room/interactions/gameboy_horror_scan/lamp_1",
+		"luigis_mansion:room/normal/safari_room/interactions/gameboy_horror_scan/lamp_2",
+		"luigis_mansion:room/normal/safari_room/interactions/gameboy_horror_scan/shelf_1",
+		"luigis_mansion:room/normal/safari_room/interactions/gameboy_horror_scan/shelf_2",
+		"luigis_mansion:room/normal/safari_room/interactions/gameboy_horror_scan/table",
+		"luigis_mansion:room/normal/safari_room/interactions/gameboy_horror_scan/tiger_rug_1",
+		"luigis_mansion:room/normal/safari_room/interactions/gameboy_horror_scan/tiger_rug_2",
+		"luigis_mansion:room/normal/safari_room/interactions/gameboy_horror_scan/tiger_rug_3"
+	]
+}

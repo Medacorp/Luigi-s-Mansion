@@ -1,0 +1,2 @@
+execute if block 713 112 46 minecraft:redstone_lamp if entity @s[x=707.0,y=115,z=39.0,dx=0,dy=2,dz=1,tag=vacuum] unless score #guest_room_table_1 Search matches 1 store success score #guest_room_table_1 Search run scoreboard players add #guest_room_table_1 Searching 1
+execute unless block 713 112 46 minecraft:redstone_lamp if entity @s[x=707.0,y=111,z=39.0,dx=0,dy=2,dz=1,tag=vacuum] unless score #guest_room_table_1 Search matches 1 store success score #guest_room_table_1 Search run scoreboard players add #guest_room_table_1 Searching 1

@@ -1,0 +1,110 @@
+{
+    "display": {
+        "icon": {
+            "item": "minecraft:diamond_pickaxe",
+			"nbt": "{Unbreakable:1b,Damage:4,CustomModelData:20}"
+        },
+        "title": {
+            "translate": "luigis_mansion:advancements.challenges.waluigi_pinball"
+        },
+        "description": {
+            "translate": "luigis_mansion:advancements.challenges.waluigi_pinball.description"
+        }
+    },
+	"parent": "luigis_mansion:challenges/root",
+    "criteria": {
+        "gold_ghost": {
+            "trigger": "minecraft:impossible"
+        },
+        "temper_terror": {
+            "trigger": "minecraft:impossible"
+        },
+        "purple_puncher": {
+            "trigger": "minecraft:impossible"
+        },
+        "flash": {
+            "trigger": "minecraft:impossible"
+        },
+        "blue_twirler": {
+            "trigger": "minecraft:impossible"
+        },
+        "blue_blaze": {
+            "trigger": "minecraft:impossible"
+        },
+        "garbage_can_ghost": {
+            "trigger": "minecraft:impossible"
+        },
+        "grabbing_ghost": {
+            "trigger": "minecraft:impossible"
+        },
+        "red_grabbing_ghost": {
+            "trigger": "minecraft:impossible"
+        },
+        "mirror_ghost": {
+            "trigger": "minecraft:impossible"
+        },
+        "cinema_ghost": {
+            "trigger": "minecraft:impossible"
+        },
+        "ghost_guy": {
+            "trigger": "minecraft:impossible"
+        },
+        "bowling_ghost": {
+            "trigger": "minecraft:impossible"
+        },
+        "ceiling_surprise": {
+            "trigger": "minecraft:impossible"
+        },
+        "purple_bomber": {
+            "trigger": "minecraft:impossible"
+        },
+        "mr_bones": {
+            "trigger": "minecraft:impossible"
+        },
+        "blue_mouse": {
+            "trigger": "minecraft:impossible"
+        },
+        "purple_mouse": {
+            "trigger": "minecraft:impossible"
+        },
+        "purple_bat": {
+            "trigger": "minecraft:impossible"
+        },
+        "yellow_bat": {
+            "trigger": "minecraft:impossible"
+        },
+        "pink_flying_fish": {
+            "trigger": "minecraft:impossible"
+        },
+        "green_flying_fish": {
+            "trigger": "minecraft:impossible"
+        },
+        "spark": {
+            "trigger": "minecraft:impossible"
+        },
+        "shining_ghost": {
+            "trigger": "minecraft:impossible"
+        },
+        "black_bogmire": {
+            "trigger": "minecraft:impossible"
+        },
+        "boo": {
+            "trigger": "minecraft:impossible"
+        },
+        "elemental_ghost": {
+            "trigger": "minecraft:impossible"
+        },
+        "henry": {
+            "trigger": "minecraft:impossible"
+        },
+        "orville": {
+            "trigger": "minecraft:impossible"
+        },
+        "bowser": {
+            "trigger": "minecraft:impossible"
+        }
+    },
+	"rewards": {
+		"function": "luigis_mansion:advancements/challenge/waluigi_pinball"
+	}
+}

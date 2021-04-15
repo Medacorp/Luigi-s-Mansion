@@ -1,0 +1,12 @@
+{
+    "values": [
+        "luigis_mansion:room/hidden/bathroom_2/reset/unload",
+        "#luigis_mansion:room/hidden/bathroom_2/turn_lights/off",
+        "luigis_mansion:room/hidden/bathroom_2/reset/bathtub",
+        "luigis_mansion:room/hidden/bathroom_2/reset/chest",
+        "luigis_mansion:room/hidden/bathroom_2/reset/curtain",
+        "luigis_mansion:room/hidden/bathroom_2/reset/lamp",
+        "luigis_mansion:room/hidden/bathroom_2/reset/mirror",
+        "luigis_mansion:room/hidden/bathroom_2/reset/water"
+    ]
+}

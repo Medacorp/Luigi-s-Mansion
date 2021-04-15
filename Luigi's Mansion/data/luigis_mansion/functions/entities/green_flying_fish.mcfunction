@@ -1,0 +1,1 @@
+execute if entity @s[tag=green_flying_fish] run function luigis_mansion:entities/green_flying_fish/tick

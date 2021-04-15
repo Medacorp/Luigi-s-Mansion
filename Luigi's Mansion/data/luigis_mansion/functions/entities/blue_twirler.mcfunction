@@ -1,0 +1,1 @@
+execute if entity @s[tag=blue_twirler] run function luigis_mansion:entities/blue_twirler/tick

@@ -1,0 +1,1 @@
+execute unless data storage luigis_mansion:data current_state.current_data.money_spawned{nursery_money:1b} run function luigis_mansion:room/hidden/nursery/money

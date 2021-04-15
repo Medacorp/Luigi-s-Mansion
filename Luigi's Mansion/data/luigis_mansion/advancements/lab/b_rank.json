@@ -1,0 +1,22 @@
+{
+    "display": {
+        "icon": {
+            "item": "minecraft:brick",
+			"nbt": "{CustomModelData:28}"
+        },
+        "show_toast": false,
+        "title": {
+            "translate": "luigis_mansion:advancements.lab.b_rank"
+        },
+        "description": {
+            "translate": "luigis_mansion:advancements.lab.b_rank.description"
+        },
+		"hidden": true
+    },
+	"parent": "luigis_mansion:lab/c_rank",
+    "criteria": {
+        "cleared": {
+            "trigger": "minecraft:impossible"
+        }
+    }
+}

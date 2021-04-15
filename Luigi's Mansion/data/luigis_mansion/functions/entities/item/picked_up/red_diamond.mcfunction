@@ -1,0 +1,1 @@
+execute if entity @s[tag=red_diamond] run function luigis_mansion:items/red_diamond

@@ -1,0 +1,10 @@
+{
+	"values": [
+	    "luigis_mansion:room/normal/twins_room/load/set_loaded",
+        "luigis_mansion:room/normal/twins_room/load/lights",
+        "luigis_mansion:room/normal/twins_room/load/table_1",
+        "luigis_mansion:room/normal/twins_room/load/vacuumable_1",
+        "luigis_mansion:room/normal/twins_room/load/vacuumable_2",
+        "luigis_mansion:room/normal/twins_room/load/vacuumable_3"
+	]
+}

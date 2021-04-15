@@ -1,0 +1,1 @@
+scoreboard players reset #artists_studio_chairs

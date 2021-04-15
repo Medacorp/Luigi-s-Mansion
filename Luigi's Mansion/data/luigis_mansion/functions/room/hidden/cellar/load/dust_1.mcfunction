@@ -1,0 +1,1 @@
+execute if entity @a[tag=!blackout,limit=1] positioned 709 93 54 run function luigis_mansion:room/hidden/cellar/spawn_dust

@@ -1,0 +1,14 @@
+{
+	"values": [
+	    "luigis_mansion:room/normal/parlor/load/set_loaded",
+        "luigis_mansion:room/normal/parlor/load/lights",
+        "luigis_mansion:room/normal/parlor/load/spawn_money",
+        "luigis_mansion:room/normal/parlor/load/candle_1",
+        "luigis_mansion:room/normal/parlor/load/candle_2",
+        "luigis_mansion:room/normal/parlor/load/closet",
+        "luigis_mansion:room/normal/parlor/load/table_2",
+        "luigis_mansion:room/normal/parlor/load/table_4",
+        "luigis_mansion:room/normal/parlor/load/vacuumable_1",
+        "luigis_mansion:room/normal/parlor/load/vacuumable_2"
+	]
+}

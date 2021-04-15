@@ -1,0 +1,19 @@
+{
+    "values": [
+        "luigis_mansion:room/normal/courtyard/reset/unload",
+        "#luigis_mansion:room/normal/courtyard/turn_lights/off",
+        "luigis_mansion:room/normal/courtyard/reset/close_door",
+        "luigis_mansion:room/normal/courtyard/reset/bird_house",
+        "luigis_mansion:room/normal/courtyard/reset/chest",
+        "luigis_mansion:room/normal/courtyard/reset/lamp_1",
+        "luigis_mansion:room/normal/courtyard/reset/lamp_2",
+        "luigis_mansion:room/normal/courtyard/reset/plant_1",
+        "luigis_mansion:room/normal/courtyard/reset/plant_2",
+        "luigis_mansion:room/normal/courtyard/reset/plant_3",
+        "luigis_mansion:room/normal/courtyard/reset/plant_4",
+        "luigis_mansion:room/normal/courtyard/reset/statue_1",
+        "luigis_mansion:room/normal/courtyard/reset/statue_2",
+        "luigis_mansion:room/normal/courtyard/reset/vacuumable",
+        "luigis_mansion:room/normal/courtyard/reset/water"
+    ]
+}

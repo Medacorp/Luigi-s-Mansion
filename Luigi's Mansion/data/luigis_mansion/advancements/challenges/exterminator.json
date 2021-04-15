@@ -1,0 +1,1220 @@
+{
+    "display": {
+        "icon": {
+            "item": "minecraft:diamond_pickaxe",
+			"nbt": "{Unbreakable:1b,Damage:1,CustomModelData:56}"
+        },
+        "title": {
+            "translate": "luigis_mansion:advancements.challenges.exterminator"
+        },
+        "description": {
+            "translate": "luigis_mansion:advancements.challenges.exterminator.description"
+        }
+    },
+	"parent": "luigis_mansion:challenges/root",
+    "criteria": {
+        "1": {
+            "trigger": "minecraft:impossible"
+        },
+        "2": {
+            "trigger": "minecraft:impossible"
+        },
+        "3": {
+            "trigger": "minecraft:impossible"
+        },
+        "4": {
+            "trigger": "minecraft:impossible"
+        },
+        "5": {
+            "trigger": "minecraft:impossible"
+        },
+        "6": {
+            "trigger": "minecraft:impossible"
+        },
+        "7": {
+            "trigger": "minecraft:impossible"
+        },
+        "8": {
+            "trigger": "minecraft:impossible"
+        },
+        "9": {
+            "trigger": "minecraft:impossible"
+        },
+        "10": {
+            "trigger": "minecraft:impossible"
+        },
+        "11": {
+            "trigger": "minecraft:impossible"
+        },
+        "12": {
+            "trigger": "minecraft:impossible"
+        },
+        "13": {
+            "trigger": "minecraft:impossible"
+        },
+        "14": {
+            "trigger": "minecraft:impossible"
+        },
+        "15": {
+            "trigger": "minecraft:impossible"
+        },
+        "16": {
+            "trigger": "minecraft:impossible"
+        },
+        "17": {
+            "trigger": "minecraft:impossible"
+        },
+        "18": {
+            "trigger": "minecraft:impossible"
+        },
+        "19": {
+            "trigger": "minecraft:impossible"
+        },
+        "20": {
+            "trigger": "minecraft:impossible"
+        },
+        "21": {
+            "trigger": "minecraft:impossible"
+        },
+        "22": {
+            "trigger": "minecraft:impossible"
+        },
+        "23": {
+            "trigger": "minecraft:impossible"
+        },
+        "24": {
+            "trigger": "minecraft:impossible"
+        },
+        "25": {
+            "trigger": "minecraft:impossible"
+        },
+        "26": {
+            "trigger": "minecraft:impossible"
+        },
+        "27": {
+            "trigger": "minecraft:impossible"
+        },
+        "28": {
+            "trigger": "minecraft:impossible"
+        },
+        "29": {
+            "trigger": "minecraft:impossible"
+        },
+        "30": {
+            "trigger": "minecraft:impossible"
+        },
+        "31": {
+            "trigger": "minecraft:impossible"
+        },
+        "32": {
+            "trigger": "minecraft:impossible"
+        },
+        "33": {
+            "trigger": "minecraft:impossible"
+        },
+        "34": {
+            "trigger": "minecraft:impossible"
+        },
+        "35": {
+            "trigger": "minecraft:impossible"
+        },
+        "36": {
+            "trigger": "minecraft:impossible"
+        },
+        "37": {
+            "trigger": "minecraft:impossible"
+        },
+        "38": {
+            "trigger": "minecraft:impossible"
+        },
+        "39": {
+            "trigger": "minecraft:impossible"
+        },
+        "40": {
+            "trigger": "minecraft:impossible"
+        },
+        "41": {
+            "trigger": "minecraft:impossible"
+        },
+        "42": {
+            "trigger": "minecraft:impossible"
+        },
+        "43": {
+            "trigger": "minecraft:impossible"
+        },
+        "44": {
+            "trigger": "minecraft:impossible"
+        },
+        "45": {
+            "trigger": "minecraft:impossible"
+        },
+        "46": {
+            "trigger": "minecraft:impossible"
+        },
+        "47": {
+            "trigger": "minecraft:impossible"
+        },
+        "48": {
+            "trigger": "minecraft:impossible"
+        },
+        "49": {
+            "trigger": "minecraft:impossible"
+        },
+        "50": {
+            "trigger": "minecraft:impossible"
+        },
+        "51": {
+            "trigger": "minecraft:impossible"
+        },
+        "52": {
+            "trigger": "minecraft:impossible"
+        },
+        "53": {
+            "trigger": "minecraft:impossible"
+        },
+        "54": {
+            "trigger": "minecraft:impossible"
+        },
+        "55": {
+            "trigger": "minecraft:impossible"
+        },
+        "56": {
+            "trigger": "minecraft:impossible"
+        },
+        "57": {
+            "trigger": "minecraft:impossible"
+        },
+        "58": {
+            "trigger": "minecraft:impossible"
+        },
+        "59": {
+            "trigger": "minecraft:impossible"
+        },
+        "60": {
+            "trigger": "minecraft:impossible"
+        },
+        "61": {
+            "trigger": "minecraft:impossible"
+        },
+        "62": {
+            "trigger": "minecraft:impossible"
+        },
+        "63": {
+            "trigger": "minecraft:impossible"
+        },
+        "64": {
+            "trigger": "minecraft:impossible"
+        },
+        "65": {
+            "trigger": "minecraft:impossible"
+        },
+        "66": {
+            "trigger": "minecraft:impossible"
+        },
+        "67": {
+            "trigger": "minecraft:impossible"
+        },
+        "68": {
+            "trigger": "minecraft:impossible"
+        },
+        "69": {
+            "trigger": "minecraft:impossible"
+        },
+        "70": {
+            "trigger": "minecraft:impossible"
+        },
+        "71": {
+            "trigger": "minecraft:impossible"
+        },
+        "72": {
+            "trigger": "minecraft:impossible"
+        },
+        "73": {
+            "trigger": "minecraft:impossible"
+        },
+        "74": {
+            "trigger": "minecraft:impossible"
+        },
+        "75": {
+            "trigger": "minecraft:impossible"
+        },
+        "76": {
+            "trigger": "minecraft:impossible"
+        },
+        "77": {
+            "trigger": "minecraft:impossible"
+        },
+        "78": {
+            "trigger": "minecraft:impossible"
+        },
+        "79": {
+            "trigger": "minecraft:impossible"
+        },
+        "80": {
+            "trigger": "minecraft:impossible"
+        },
+        "81": {
+            "trigger": "minecraft:impossible"
+        },
+        "82": {
+            "trigger": "minecraft:impossible"
+        },
+        "83": {
+            "trigger": "minecraft:impossible"
+        },
+        "84": {
+            "trigger": "minecraft:impossible"
+        },
+        "85": {
+            "trigger": "minecraft:impossible"
+        },
+        "86": {
+            "trigger": "minecraft:impossible"
+        },
+        "87": {
+            "trigger": "minecraft:impossible"
+        },
+        "88": {
+            "trigger": "minecraft:impossible"
+        },
+        "89": {
+            "trigger": "minecraft:impossible"
+        },
+        "90": {
+            "trigger": "minecraft:impossible"
+        },
+        "91": {
+            "trigger": "minecraft:impossible"
+        },
+        "92": {
+            "trigger": "minecraft:impossible"
+        },
+        "93": {
+            "trigger": "minecraft:impossible"
+        },
+        "94": {
+            "trigger": "minecraft:impossible"
+        },
+        "95": {
+            "trigger": "minecraft:impossible"
+        },
+        "96": {
+            "trigger": "minecraft:impossible"
+        },
+        "97": {
+            "trigger": "minecraft:impossible"
+        },
+        "98": {
+            "trigger": "minecraft:impossible"
+        },
+        "99": {
+            "trigger": "minecraft:impossible"
+        },
+        "100": {
+            "trigger": "minecraft:impossible"
+        },
+        "101": {
+            "trigger": "minecraft:impossible"
+        },
+        "102": {
+            "trigger": "minecraft:impossible"
+        },
+        "103": {
+            "trigger": "minecraft:impossible"
+        },
+        "104": {
+            "trigger": "minecraft:impossible"
+        },
+        "105": {
+            "trigger": "minecraft:impossible"
+        },
+        "106": {
+            "trigger": "minecraft:impossible"
+        },
+        "107": {
+            "trigger": "minecraft:impossible"
+        },
+        "108": {
+            "trigger": "minecraft:impossible"
+        },
+        "109": {
+            "trigger": "minecraft:impossible"
+        },
+        "110": {
+            "trigger": "minecraft:impossible"
+        },
+        "111": {
+            "trigger": "minecraft:impossible"
+        },
+        "112": {
+            "trigger": "minecraft:impossible"
+        },
+        "113": {
+            "trigger": "minecraft:impossible"
+        },
+        "114": {
+            "trigger": "minecraft:impossible"
+        },
+        "115": {
+            "trigger": "minecraft:impossible"
+        },
+        "116": {
+            "trigger": "minecraft:impossible"
+        },
+        "117": {
+            "trigger": "minecraft:impossible"
+        },
+        "118": {
+            "trigger": "minecraft:impossible"
+        },
+        "119": {
+            "trigger": "minecraft:impossible"
+        },
+        "120": {
+            "trigger": "minecraft:impossible"
+        },
+        "121": {
+            "trigger": "minecraft:impossible"
+        },
+        "122": {
+            "trigger": "minecraft:impossible"
+        },
+        "123": {
+            "trigger": "minecraft:impossible"
+        },
+        "124": {
+            "trigger": "minecraft:impossible"
+        },
+        "125": {
+            "trigger": "minecraft:impossible"
+        },
+        "126": {
+            "trigger": "minecraft:impossible"
+        },
+        "127": {
+            "trigger": "minecraft:impossible"
+        },
+        "128": {
+            "trigger": "minecraft:impossible"
+        },
+        "129": {
+            "trigger": "minecraft:impossible"
+        },
+        "130": {
+            "trigger": "minecraft:impossible"
+        },
+        "131": {
+            "trigger": "minecraft:impossible"
+        },
+        "132": {
+            "trigger": "minecraft:impossible"
+        },
+        "133": {
+            "trigger": "minecraft:impossible"
+        },
+        "134": {
+            "trigger": "minecraft:impossible"
+        },
+        "135": {
+            "trigger": "minecraft:impossible"
+        },
+        "136": {
+            "trigger": "minecraft:impossible"
+        },
+        "137": {
+            "trigger": "minecraft:impossible"
+        },
+        "138": {
+            "trigger": "minecraft:impossible"
+        },
+        "139": {
+            "trigger": "minecraft:impossible"
+        },
+        "140": {
+            "trigger": "minecraft:impossible"
+        },
+        "141": {
+            "trigger": "minecraft:impossible"
+        },
+        "142": {
+            "trigger": "minecraft:impossible"
+        },
+        "143": {
+            "trigger": "minecraft:impossible"
+        },
+        "144": {
+            "trigger": "minecraft:impossible"
+        },
+        "145": {
+            "trigger": "minecraft:impossible"
+        },
+        "146": {
+            "trigger": "minecraft:impossible"
+        },
+        "147": {
+            "trigger": "minecraft:impossible"
+        },
+        "148": {
+            "trigger": "minecraft:impossible"
+        },
+        "149": {
+            "trigger": "minecraft:impossible"
+        },
+        "150": {
+            "trigger": "minecraft:impossible"
+        },
+        "151": {
+            "trigger": "minecraft:impossible"
+        },
+        "152": {
+            "trigger": "minecraft:impossible"
+        },
+        "153": {
+            "trigger": "minecraft:impossible"
+        },
+        "154": {
+            "trigger": "minecraft:impossible"
+        },
+        "155": {
+            "trigger": "minecraft:impossible"
+        },
+        "156": {
+            "trigger": "minecraft:impossible"
+        },
+        "157": {
+            "trigger": "minecraft:impossible"
+        },
+        "158": {
+            "trigger": "minecraft:impossible"
+        },
+        "159": {
+            "trigger": "minecraft:impossible"
+        },
+        "160": {
+            "trigger": "minecraft:impossible"
+        },
+        "161": {
+            "trigger": "minecraft:impossible"
+        },
+        "162": {
+            "trigger": "minecraft:impossible"
+        },
+        "163": {
+            "trigger": "minecraft:impossible"
+        },
+        "164": {
+            "trigger": "minecraft:impossible"
+        },
+        "165": {
+            "trigger": "minecraft:impossible"
+        },
+        "166": {
+            "trigger": "minecraft:impossible"
+        },
+        "167": {
+            "trigger": "minecraft:impossible"
+        },
+        "168": {
+            "trigger": "minecraft:impossible"
+        },
+        "169": {
+            "trigger": "minecraft:impossible"
+        },
+        "170": {
+            "trigger": "minecraft:impossible"
+        },
+        "171": {
+            "trigger": "minecraft:impossible"
+        },
+        "172": {
+            "trigger": "minecraft:impossible"
+        },
+        "173": {
+            "trigger": "minecraft:impossible"
+        },
+        "174": {
+            "trigger": "minecraft:impossible"
+        },
+        "175": {
+            "trigger": "minecraft:impossible"
+        },
+        "176": {
+            "trigger": "minecraft:impossible"
+        },
+        "177": {
+            "trigger": "minecraft:impossible"
+        },
+        "178": {
+            "trigger": "minecraft:impossible"
+        },
+        "179": {
+            "trigger": "minecraft:impossible"
+        },
+        "180": {
+            "trigger": "minecraft:impossible"
+        },
+        "181": {
+            "trigger": "minecraft:impossible"
+        },
+        "182": {
+            "trigger": "minecraft:impossible"
+        },
+        "183": {
+            "trigger": "minecraft:impossible"
+        },
+        "184": {
+            "trigger": "minecraft:impossible"
+        },
+        "185": {
+            "trigger": "minecraft:impossible"
+        },
+        "186": {
+            "trigger": "minecraft:impossible"
+        },
+        "187": {
+            "trigger": "minecraft:impossible"
+        },
+        "188": {
+            "trigger": "minecraft:impossible"
+        },
+        "189": {
+            "trigger": "minecraft:impossible"
+        },
+        "190": {
+            "trigger": "minecraft:impossible"
+        },
+        "191": {
+            "trigger": "minecraft:impossible"
+        },
+        "192": {
+            "trigger": "minecraft:impossible"
+        },
+        "193": {
+            "trigger": "minecraft:impossible"
+        },
+        "194": {
+            "trigger": "minecraft:impossible"
+        },
+        "195": {
+            "trigger": "minecraft:impossible"
+        },
+        "196": {
+            "trigger": "minecraft:impossible"
+        },
+        "197": {
+            "trigger": "minecraft:impossible"
+        },
+        "198": {
+            "trigger": "minecraft:impossible"
+        },
+        "199": {
+            "trigger": "minecraft:impossible"
+        },
+        "200": {
+            "trigger": "minecraft:impossible"
+        },
+        "201": {
+            "trigger": "minecraft:impossible"
+        },
+        "202": {
+            "trigger": "minecraft:impossible"
+        },
+        "203": {
+            "trigger": "minecraft:impossible"
+        },
+        "204": {
+            "trigger": "minecraft:impossible"
+        },
+        "205": {
+            "trigger": "minecraft:impossible"
+        },
+        "206": {
+            "trigger": "minecraft:impossible"
+        },
+        "207": {
+            "trigger": "minecraft:impossible"
+        },
+        "208": {
+            "trigger": "minecraft:impossible"
+        },
+        "209": {
+            "trigger": "minecraft:impossible"
+        },
+        "210": {
+            "trigger": "minecraft:impossible"
+        },
+        "211": {
+            "trigger": "minecraft:impossible"
+        },
+        "212": {
+            "trigger": "minecraft:impossible"
+        },
+        "213": {
+            "trigger": "minecraft:impossible"
+        },
+        "214": {
+            "trigger": "minecraft:impossible"
+        },
+        "215": {
+            "trigger": "minecraft:impossible"
+        },
+        "216": {
+            "trigger": "minecraft:impossible"
+        },
+        "217": {
+            "trigger": "minecraft:impossible"
+        },
+        "218": {
+            "trigger": "minecraft:impossible"
+        },
+        "219": {
+            "trigger": "minecraft:impossible"
+        },
+        "220": {
+            "trigger": "minecraft:impossible"
+        },
+        "221": {
+            "trigger": "minecraft:impossible"
+        },
+        "222": {
+            "trigger": "minecraft:impossible"
+        },
+        "223": {
+            "trigger": "minecraft:impossible"
+        },
+        "224": {
+            "trigger": "minecraft:impossible"
+        },
+        "225": {
+            "trigger": "minecraft:impossible"
+        },
+        "226": {
+            "trigger": "minecraft:impossible"
+        },
+        "227": {
+            "trigger": "minecraft:impossible"
+        },
+        "228": {
+            "trigger": "minecraft:impossible"
+        },
+        "229": {
+            "trigger": "minecraft:impossible"
+        },
+        "230": {
+            "trigger": "minecraft:impossible"
+        },
+        "231": {
+            "trigger": "minecraft:impossible"
+        },
+        "232": {
+            "trigger": "minecraft:impossible"
+        },
+        "233": {
+            "trigger": "minecraft:impossible"
+        },
+        "234": {
+            "trigger": "minecraft:impossible"
+        },
+        "235": {
+            "trigger": "minecraft:impossible"
+        },
+        "236": {
+            "trigger": "minecraft:impossible"
+        },
+        "237": {
+            "trigger": "minecraft:impossible"
+        },
+        "238": {
+            "trigger": "minecraft:impossible"
+        },
+        "239": {
+            "trigger": "minecraft:impossible"
+        },
+        "240": {
+            "trigger": "minecraft:impossible"
+        },
+        "241": {
+            "trigger": "minecraft:impossible"
+        },
+        "242": {
+            "trigger": "minecraft:impossible"
+        },
+        "243": {
+            "trigger": "minecraft:impossible"
+        },
+        "244": {
+            "trigger": "minecraft:impossible"
+        },
+        "245": {
+            "trigger": "minecraft:impossible"
+        },
+        "246": {
+            "trigger": "minecraft:impossible"
+        },
+        "247": {
+            "trigger": "minecraft:impossible"
+        },
+        "248": {
+            "trigger": "minecraft:impossible"
+        },
+        "249": {
+            "trigger": "minecraft:impossible"
+        },
+        "250": {
+            "trigger": "minecraft:impossible"
+        },
+        "251": {
+            "trigger": "minecraft:impossible"
+        },
+        "252": {
+            "trigger": "minecraft:impossible"
+        },
+        "253": {
+            "trigger": "minecraft:impossible"
+        },
+        "254": {
+            "trigger": "minecraft:impossible"
+        },
+        "255": {
+            "trigger": "minecraft:impossible"
+        },
+        "256": {
+            "trigger": "minecraft:impossible"
+        },
+        "257": {
+            "trigger": "minecraft:impossible"
+        },
+        "258": {
+            "trigger": "minecraft:impossible"
+        },
+        "259": {
+            "trigger": "minecraft:impossible"
+        },
+        "260": {
+            "trigger": "minecraft:impossible"
+        },
+        "261": {
+            "trigger": "minecraft:impossible"
+        },
+        "262": {
+            "trigger": "minecraft:impossible"
+        },
+        "263": {
+            "trigger": "minecraft:impossible"
+        },
+        "264": {
+            "trigger": "minecraft:impossible"
+        },
+        "265": {
+            "trigger": "minecraft:impossible"
+        },
+        "266": {
+            "trigger": "minecraft:impossible"
+        },
+        "267": {
+            "trigger": "minecraft:impossible"
+        },
+        "268": {
+            "trigger": "minecraft:impossible"
+        },
+        "269": {
+            "trigger": "minecraft:impossible"
+        },
+        "270": {
+            "trigger": "minecraft:impossible"
+        },
+        "271": {
+            "trigger": "minecraft:impossible"
+        },
+        "272": {
+            "trigger": "minecraft:impossible"
+        },
+        "273": {
+            "trigger": "minecraft:impossible"
+        },
+        "274": {
+            "trigger": "minecraft:impossible"
+        },
+        "275": {
+            "trigger": "minecraft:impossible"
+        },
+        "276": {
+            "trigger": "minecraft:impossible"
+        },
+        "277": {
+            "trigger": "minecraft:impossible"
+        },
+        "278": {
+            "trigger": "minecraft:impossible"
+        },
+        "279": {
+            "trigger": "minecraft:impossible"
+        },
+        "280": {
+            "trigger": "minecraft:impossible"
+        },
+        "281": {
+            "trigger": "minecraft:impossible"
+        },
+        "282": {
+            "trigger": "minecraft:impossible"
+        },
+        "283": {
+            "trigger": "minecraft:impossible"
+        },
+        "284": {
+            "trigger": "minecraft:impossible"
+        },
+        "285": {
+            "trigger": "minecraft:impossible"
+        },
+        "286": {
+            "trigger": "minecraft:impossible"
+        },
+        "287": {
+            "trigger": "minecraft:impossible"
+        },
+        "288": {
+            "trigger": "minecraft:impossible"
+        },
+        "289": {
+            "trigger": "minecraft:impossible"
+        },
+        "290": {
+            "trigger": "minecraft:impossible"
+        },
+        "291": {
+            "trigger": "minecraft:impossible"
+        },
+        "292": {
+            "trigger": "minecraft:impossible"
+        },
+        "293": {
+            "trigger": "minecraft:impossible"
+        },
+        "294": {
+            "trigger": "minecraft:impossible"
+        },
+        "295": {
+            "trigger": "minecraft:impossible"
+        },
+        "296": {
+            "trigger": "minecraft:impossible"
+        },
+        "297": {
+            "trigger": "minecraft:impossible"
+        },
+        "298": {
+            "trigger": "minecraft:impossible"
+        },
+        "299": {
+            "trigger": "minecraft:impossible"
+        },
+        "300": {
+            "trigger": "minecraft:impossible"
+        },
+        "301": {
+            "trigger": "minecraft:impossible"
+        },
+        "302": {
+            "trigger": "minecraft:impossible"
+        },
+        "303": {
+            "trigger": "minecraft:impossible"
+        },
+        "304": {
+            "trigger": "minecraft:impossible"
+        },
+        "305": {
+            "trigger": "minecraft:impossible"
+        },
+        "306": {
+            "trigger": "minecraft:impossible"
+        },
+        "307": {
+            "trigger": "minecraft:impossible"
+        },
+        "308": {
+            "trigger": "minecraft:impossible"
+        },
+        "309": {
+            "trigger": "minecraft:impossible"
+        },
+        "310": {
+            "trigger": "minecraft:impossible"
+        },
+        "311": {
+            "trigger": "minecraft:impossible"
+        },
+        "312": {
+            "trigger": "minecraft:impossible"
+        },
+        "313": {
+            "trigger": "minecraft:impossible"
+        },
+        "314": {
+            "trigger": "minecraft:impossible"
+        },
+        "315": {
+            "trigger": "minecraft:impossible"
+        },
+        "316": {
+            "trigger": "minecraft:impossible"
+        },
+        "317": {
+            "trigger": "minecraft:impossible"
+        },
+        "318": {
+            "trigger": "minecraft:impossible"
+        },
+        "319": {
+            "trigger": "minecraft:impossible"
+        },
+        "320": {
+            "trigger": "minecraft:impossible"
+        },
+        "321": {
+            "trigger": "minecraft:impossible"
+        },
+        "322": {
+            "trigger": "minecraft:impossible"
+        },
+        "323": {
+            "trigger": "minecraft:impossible"
+        },
+        "324": {
+            "trigger": "minecraft:impossible"
+        },
+        "325": {
+            "trigger": "minecraft:impossible"
+        },
+        "326": {
+            "trigger": "minecraft:impossible"
+        },
+        "327": {
+            "trigger": "minecraft:impossible"
+        },
+        "328": {
+            "trigger": "minecraft:impossible"
+        },
+        "329": {
+            "trigger": "minecraft:impossible"
+        },
+        "330": {
+            "trigger": "minecraft:impossible"
+        },
+        "331": {
+            "trigger": "minecraft:impossible"
+        },
+        "332": {
+            "trigger": "minecraft:impossible"
+        },
+        "333": {
+            "trigger": "minecraft:impossible"
+        },
+        "334": {
+            "trigger": "minecraft:impossible"
+        },
+        "335": {
+            "trigger": "minecraft:impossible"
+        },
+        "336": {
+            "trigger": "minecraft:impossible"
+        },
+        "337": {
+            "trigger": "minecraft:impossible"
+        },
+        "338": {
+            "trigger": "minecraft:impossible"
+        },
+        "339": {
+            "trigger": "minecraft:impossible"
+        },
+        "340": {
+            "trigger": "minecraft:impossible"
+        },
+        "341": {
+            "trigger": "minecraft:impossible"
+        },
+        "342": {
+            "trigger": "minecraft:impossible"
+        },
+        "343": {
+            "trigger": "minecraft:impossible"
+        },
+        "344": {
+            "trigger": "minecraft:impossible"
+        },
+        "345": {
+            "trigger": "minecraft:impossible"
+        },
+        "346": {
+            "trigger": "minecraft:impossible"
+        },
+        "347": {
+            "trigger": "minecraft:impossible"
+        },
+        "348": {
+            "trigger": "minecraft:impossible"
+        },
+        "349": {
+            "trigger": "minecraft:impossible"
+        },
+        "350": {
+            "trigger": "minecraft:impossible"
+        },
+        "351": {
+            "trigger": "minecraft:impossible"
+        },
+        "352": {
+            "trigger": "minecraft:impossible"
+        },
+        "353": {
+            "trigger": "minecraft:impossible"
+        },
+        "354": {
+            "trigger": "minecraft:impossible"
+        },
+        "355": {
+            "trigger": "minecraft:impossible"
+        },
+        "356": {
+            "trigger": "minecraft:impossible"
+        },
+        "357": {
+            "trigger": "minecraft:impossible"
+        },
+        "358": {
+            "trigger": "minecraft:impossible"
+        },
+        "359": {
+            "trigger": "minecraft:impossible"
+        },
+        "360": {
+            "trigger": "minecraft:impossible"
+        },
+        "361": {
+            "trigger": "minecraft:impossible"
+        },
+        "362": {
+            "trigger": "minecraft:impossible"
+        },
+        "363": {
+            "trigger": "minecraft:impossible"
+        },
+        "364": {
+            "trigger": "minecraft:impossible"
+        },
+        "365": {
+            "trigger": "minecraft:impossible"
+        },
+        "366": {
+            "trigger": "minecraft:impossible"
+        },
+        "367": {
+            "trigger": "minecraft:impossible"
+        },
+        "368": {
+            "trigger": "minecraft:impossible"
+        },
+        "369": {
+            "trigger": "minecraft:impossible"
+        },
+        "370": {
+            "trigger": "minecraft:impossible"
+        },
+        "371": {
+            "trigger": "minecraft:impossible"
+        },
+        "372": {
+            "trigger": "minecraft:impossible"
+        },
+        "373": {
+            "trigger": "minecraft:impossible"
+        },
+        "374": {
+            "trigger": "minecraft:impossible"
+        },
+        "375": {
+            "trigger": "minecraft:impossible"
+        },
+        "376": {
+            "trigger": "minecraft:impossible"
+        },
+        "377": {
+            "trigger": "minecraft:impossible"
+        },
+        "378": {
+            "trigger": "minecraft:impossible"
+        },
+        "379": {
+            "trigger": "minecraft:impossible"
+        },
+        "380": {
+            "trigger": "minecraft:impossible"
+        },
+        "381": {
+            "trigger": "minecraft:impossible"
+        },
+        "382": {
+            "trigger": "minecraft:impossible"
+        },
+        "383": {
+            "trigger": "minecraft:impossible"
+        },
+        "384": {
+            "trigger": "minecraft:impossible"
+        },
+        "385": {
+            "trigger": "minecraft:impossible"
+        },
+        "386": {
+            "trigger": "minecraft:impossible"
+        },
+        "387": {
+            "trigger": "minecraft:impossible"
+        },
+        "388": {
+            "trigger": "minecraft:impossible"
+        },
+        "389": {
+            "trigger": "minecraft:impossible"
+        },
+        "390": {
+            "trigger": "minecraft:impossible"
+        },
+        "391": {
+            "trigger": "minecraft:impossible"
+        },
+        "392": {
+            "trigger": "minecraft:impossible"
+        },
+        "393": {
+            "trigger": "minecraft:impossible"
+        },
+        "394": {
+            "trigger": "minecraft:impossible"
+        },
+        "395": {
+            "trigger": "minecraft:impossible"
+        },
+        "396": {
+            "trigger": "minecraft:impossible"
+        },
+        "397": {
+            "trigger": "minecraft:impossible"
+        },
+        "398": {
+            "trigger": "minecraft:impossible"
+        },
+        "399": {
+            "trigger": "minecraft:impossible"
+        },
+        "400": {
+            "trigger": "minecraft:impossible"
+        }
+    },
+	"rewards": {
+		"function": "luigis_mansion:advancements/challenge/put_a_sock_in_it"
+	}
+}

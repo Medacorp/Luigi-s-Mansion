@@ -1,0 +1,1 @@
+execute if entity @s[tag=mirror_ghost] run function luigis_mansion:entities/mirror_ghost/tick

@@ -1,0 +1,1 @@
+execute if entity @s[x=688.0,y=111,z=-26.0,dx=2,dy=3,dz=2,tag=vacuum] if block ~ ~ ~ minecraft:pink_wool unless score #master_bedroom_mirror Search matches 1 store success score #master_bedroom_mirror Search run scoreboard players add #master_bedroom_mirror Searching 1

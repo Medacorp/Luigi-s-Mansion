@@ -1,0 +1,22 @@
+{
+    "display": {
+        "icon": {
+            "item": "minecraft:glass_pane"
+        },
+        "show_toast": false,
+        "hidden": true,
+        "frame": "challenge",
+        "title": {
+            "translate": "luigis_mansion:advancements.lab.cleared_hidden_mansion"
+        },
+        "description": {
+            "translate": "luigis_mansion:advancements.lab.cleared_hidden_mansion.description"
+        }
+    },
+	"parent": "luigis_mansion:lab/unlocked_hidden_mansion",
+    "criteria": {
+        "cleared": {
+            "trigger": "minecraft:impossible"
+        }
+    }
+}

@@ -1,0 +1,23 @@
+{
+	"values": [
+        "luigis_mansion:entities/ghost_marker/selection/gold_ghost",
+        "luigis_mansion:entities/ghost_marker/selection/gold_dummy_ghost",
+        "luigis_mansion:entities/ghost_marker/selection/temper_terror",
+        "luigis_mansion:entities/ghost_marker/selection/speedy_spirit",
+        "luigis_mansion:entities/ghost_marker/selection/purple_puncher",
+        "luigis_mansion:entities/ghost_marker/selection/flash",
+        "luigis_mansion:entities/ghost_marker/selection/blue_twirler",
+        "luigis_mansion:entities/ghost_marker/selection/blue_blaze",
+        "luigis_mansion:entities/ghost_marker/selection/grabbing_ghost",
+        "luigis_mansion:entities/ghost_marker/selection/red_grabbing_ghost",
+        "luigis_mansion:entities/ghost_marker/selection/mirror_ghost",
+        "luigis_mansion:entities/ghost_marker/selection/cinema_ghost",
+        "luigis_mansion:entities/ghost_marker/selection/garbage_can_ghost",
+        "luigis_mansion:entities/ghost_marker/selection/ghost_guy",
+        "luigis_mansion:entities/ghost_marker/selection/mr_bones",
+        "luigis_mansion:entities/ghost_marker/selection/bowling_ghost",
+        "luigis_mansion:entities/ghost_marker/selection/ceiling_surprise",
+        "luigis_mansion:entities/ghost_marker/selection/purple_bomber",
+        "luigis_mansion:entities/ghost_marker/selection/waiter"
+	]
+}

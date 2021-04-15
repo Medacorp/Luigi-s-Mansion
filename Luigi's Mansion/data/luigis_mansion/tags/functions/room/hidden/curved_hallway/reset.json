@@ -1,0 +1,7 @@
+{
+    "values": [
+        "luigis_mansion:room/hidden/curved_hallway/reset/unload",
+        "#luigis_mansion:room/hidden/curved_hallway/turn_lights/off",
+        "luigis_mansion:room/hidden/curved_hallway/reset/blockade"
+    ]
+}

@@ -1,0 +1,20 @@
+{
+    "display": {
+        "icon": {
+            "item": "minecraft:painting"
+        },
+        "show_toast": false,
+        "title": {
+            "translate": "luigis_mansion:advancements.portrait_ghosts.king_boo"
+        },
+        "description": {
+            "translate": "luigis_mansion:advancements.portrait_ghosts.king_boo.description"
+        }
+    },
+	"parent": "luigis_mansion:portrait_ghosts/portrait_ghosts",
+    "criteria": {
+        "captured": {
+            "trigger": "minecraft:impossible"
+        }
+    }
+}

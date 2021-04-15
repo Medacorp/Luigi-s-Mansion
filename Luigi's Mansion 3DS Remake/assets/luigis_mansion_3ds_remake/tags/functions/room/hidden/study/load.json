@@ -1,0 +1,16 @@
+{
+	"values": [
+	    "luigis_mansion_3ds_remake:room/hidden/study/load/set_loaded",
+        "luigis_mansion_3ds_remake:room/hidden/study/load/lights",
+        "luigis_mansion_3ds_remake:room/hidden/study/load/bookshelf_1",
+        "luigis_mansion_3ds_remake:room/hidden/study/load/bookshelf_2",
+        "luigis_mansion_3ds_remake:room/hidden/study/load/bookshelf_3",
+        "luigis_mansion_3ds_remake:room/hidden/study/load/bookshelf_4",
+        "luigis_mansion_3ds_remake:room/hidden/study/load/bookshelf_5",
+        "luigis_mansion_3ds_remake:room/hidden/study/load/bookshelf_6",
+        "luigis_mansion_3ds_remake:room/hidden/study/load/fire",
+        "luigis_mansion_3ds_remake:room/hidden/study/load/rocking_chair",
+        "luigis_mansion_3ds_remake:room/hidden/study/load/vacuumable_1",
+        "luigis_mansion_3ds_remake:room/hidden/study/load/vacuumable_2"
+	]
+}

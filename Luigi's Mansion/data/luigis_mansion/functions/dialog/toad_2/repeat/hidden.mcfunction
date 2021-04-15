@@ -1,0 +1,1 @@
+function luigis_mansion:dialog/toad_2_repeat/normal

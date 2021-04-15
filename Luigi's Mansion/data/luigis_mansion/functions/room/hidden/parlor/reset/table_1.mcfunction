@@ -1,0 +1,1 @@
+scoreboard players reset #parlor_table_1

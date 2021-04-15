@@ -1,0 +1,23 @@
+{
+    "values": [
+        "luigis_mansion:room/hidden/nanas_room/reset/unload",
+        "#luigis_mansion:room/hidden/nanas_room/turn_lights/off",
+        "luigis_mansion:room/hidden/nanas_room/reset/bookshelf",
+        "luigis_mansion:room/hidden/nanas_room/reset/chair",
+        "luigis_mansion:room/hidden/nanas_room/reset/chest",
+        "luigis_mansion:room/hidden/nanas_room/reset/closet",
+        "luigis_mansion:room/hidden/nanas_room/reset/couch",
+        "luigis_mansion:room/hidden/nanas_room/reset/curtain_1",
+        "luigis_mansion:room/hidden/nanas_room/reset/curtain_2",
+        "luigis_mansion:room/hidden/nanas_room/reset/curtain_3",
+        "luigis_mansion:room/hidden/nanas_room/reset/curtain_4",
+        "luigis_mansion:room/hidden/nanas_room/reset/lamp",
+        "luigis_mansion:room/hidden/nanas_room/reset/loom",
+        "luigis_mansion:room/hidden/nanas_room/reset/painting",
+        "luigis_mansion:room/hidden/nanas_room/reset/paintings",
+        "luigis_mansion:room/hidden/nanas_room/reset/sewing_machine",
+        "luigis_mansion:room/hidden/nanas_room/reset/shelf",
+        "luigis_mansion:room/hidden/nanas_room/reset/table_1",
+        "luigis_mansion:room/hidden/nanas_room/reset/table_2"
+    ]
+}

@@ -1,0 +1,8 @@
+{
+	"values": [
+	    "luigis_mansion:room/normal/courtyard/load/set_loaded",
+        "luigis_mansion:room/normal/courtyard/load/lights",
+        "luigis_mansion:room/normal/courtyard/load/spawn_toad",
+        "luigis_mansion:room/normal/courtyard/load/bird_house"
+	]
+}

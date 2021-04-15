@@ -1,0 +1,14 @@
+{
+	"values": [
+	    "luigis_mansion:room/hidden/dining_room/load/set_loaded",
+        "luigis_mansion:room/hidden/dining_room/load/lights",
+        "luigis_mansion:room/hidden/dining_room/load/candle_1",
+        "luigis_mansion:room/hidden/dining_room/load/candle_2",
+        "luigis_mansion:room/hidden/dining_room/load/closet_1",
+        "luigis_mansion:room/hidden/dining_room/load/closet_2",
+        "luigis_mansion:room/hidden/dining_room/load/fire_1",
+        "luigis_mansion:room/hidden/dining_room/load/fire_2",
+        "luigis_mansion:room/hidden/dining_room/load/vacuumable_1",
+        "luigis_mansion:room/hidden/dining_room/load/vacuumable_2"
+	]
+}

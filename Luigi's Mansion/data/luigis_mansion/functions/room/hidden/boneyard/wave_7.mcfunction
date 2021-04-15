@@ -1,0 +1,2 @@
+execute at @e[tag=mr_bones,scores={Room=24},tag=dying] run summon minecraft:armor_stand ~ ~0.4 ~ {NoGravity:1b,Tags:["bone","spooky_bone"],Pose:{Head:[0.0f,0.0f,0.01f]},ArmorItems:[{},{},{},{id:"minecraft:diamond_pickaxe",Count:1b,tag:{Unbreakable:1b,Damage:4,CustomModelData:6}}],Invisible:1b,DisabledSlots:2039583,Small:1b}
+scoreboard players set #boneyard Wave 7

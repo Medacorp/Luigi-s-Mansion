@@ -1,0 +1,23 @@
+{
+    "values": [
+        "luigis_mansion:room/hidden/telephone_room/reset/unload",
+        "#luigis_mansion:room/hidden/telephone_room/turn_lights/off",
+        "luigis_mansion:room/hidden/telephone_room/reset/blockade",
+        "luigis_mansion:room/hidden/telephone_room/reset/chest_1",
+        "luigis_mansion:room/hidden/telephone_room/reset/chest_2",
+        "luigis_mansion:room/hidden/telephone_room/reset/chest_3",
+        "luigis_mansion:room/hidden/telephone_room/reset/chest_4",
+        "luigis_mansion:room/hidden/telephone_room/reset/closet_1",
+        "luigis_mansion:room/hidden/telephone_room/reset/closet_2",
+        "luigis_mansion:room/hidden/telephone_room/reset/couch",
+        "luigis_mansion:room/hidden/telephone_room/reset/lamp_1",
+        "luigis_mansion:room/hidden/telephone_room/reset/lamp_2",
+        "luigis_mansion:room/hidden/telephone_room/reset/shelf_1",
+        "luigis_mansion:room/hidden/telephone_room/reset/shelf_2",
+        "luigis_mansion:room/hidden/telephone_room/reset/shelf_3",
+        "luigis_mansion:room/hidden/telephone_room/reset/table",
+        "luigis_mansion:room/hidden/telephone_room/reset/vacuumable_1",
+        "luigis_mansion:room/hidden/telephone_room/reset/vacuumable_2",
+        "luigis_mansion:room/hidden/telephone_room/reset/vacuumable_3"
+    ]
+}

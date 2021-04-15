@@ -1,0 +1,1 @@
+execute if entity @s[tag=garbage_can_ghost] run function luigis_mansion:spawn_entities/ghost/garbage_can_ghost

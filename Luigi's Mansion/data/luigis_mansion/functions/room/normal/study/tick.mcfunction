@@ -1,0 +1,11 @@
+execute unless score #study Ticking matches 1 run function #luigis_mansion:room/normal/study/load
+execute as @a[x=700,y=20,z=42,dx=17,dy=6,dz=21] unless entity @s[scores={Room=7}] run scoreboard players operation @s LastRoom = @s Room
+execute as @e[type=!minecraft:item_frame,x=700,y=20,z=42,dx=17,dy=6,dz=21] run scoreboard players set @s Room 7
+
+execute as @a[gamemode=!spectator,x=700,y=20,z=42,dx=17,dy=6,dz=21] run function luigis_mansion:room/normal/study/tick_per_player
+
+function #luigis_mansion:room/normal/study/interactions/room
+
+function luigis_mansion:room/normal/study/ghosts
+
+function luigis_mansion:room/normal/door/small_hallway_study

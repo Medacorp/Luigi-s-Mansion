@@ -1,0 +1,22 @@
+{
+    "values": [
+        "luigis_mansion:room/hidden/master_bedroom/reset/unload",
+        "#luigis_mansion:room/hidden/master_bedroom/turn_lights/off",
+        "luigis_mansion:room/hidden/master_bedroom/reset/bed",
+        "luigis_mansion:room/hidden/master_bedroom/reset/chair",
+        "luigis_mansion:room/hidden/master_bedroom/reset/chest",
+        "luigis_mansion:room/hidden/master_bedroom/reset/curtain_1",
+        "luigis_mansion:room/hidden/master_bedroom/reset/curtain_2",
+        "luigis_mansion:room/hidden/master_bedroom/reset/fan",
+        "luigis_mansion:room/hidden/master_bedroom/reset/mirror",
+        "luigis_mansion:room/hidden/master_bedroom/reset/painting_1",
+        "luigis_mansion:room/hidden/master_bedroom/reset/painting_2",
+        "luigis_mansion:room/hidden/master_bedroom/reset/painting_3",
+        "luigis_mansion:room/hidden/master_bedroom/reset/painting_4",
+        "luigis_mansion:room/hidden/master_bedroom/reset/painting_5",
+        "luigis_mansion:room/hidden/master_bedroom/reset/plant",
+        "luigis_mansion:room/hidden/master_bedroom/reset/table_1",
+        "luigis_mansion:room/hidden/master_bedroom/reset/table_2",
+        "luigis_mansion:room/hidden/master_bedroom/reset/vacuumable"
+    ]
+}

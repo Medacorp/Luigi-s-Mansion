@@ -1,0 +1,23 @@
+{
+    "display": {
+        "icon": {
+            "item": "minecraft:diamond_pickaxe",
+			"nbt": "{Unbreakable:1b,Damage:5,CustomModelData:20}"
+        },
+        "title": {
+            "translate": "luigis_mansion:advancements.challenges.look_at_me_full_of_bravery"
+        },
+        "description": {
+            "translate": "luigis_mansion:advancements.challenges.look_at_me_full_of_bravery.description"
+        }
+    },
+	"parent": "luigis_mansion:challenges/root",
+    "criteria": {
+        "10_hp_boss_enter": {
+            "trigger": "minecraft:impossible"
+        }
+    },
+	"rewards": {
+		"function": "luigis_mansion:advancements/challenge/look_at_me_full_of_bravery"
+	}
+}

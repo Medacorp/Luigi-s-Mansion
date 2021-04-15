@@ -1,0 +1,21 @@
+{
+	"values": [
+		"luigis_mansion:entities/item/physics/gold_coin",
+        "luigis_mansion:entities/item/physics/bill",
+        "luigis_mansion:entities/item/physics/gold_bar",
+        "luigis_mansion:entities/item/physics/blue_sapphire",
+        "luigis_mansion:entities/item/physics/green_emerald",
+        "luigis_mansion:entities/item/physics/red_ruby",
+        "luigis_mansion:entities/item/physics/red_diamond",
+        "luigis_mansion:entities/item/physics/blue_diamond",
+        "luigis_mansion:entities/item/physics/gold_diamond",
+        "luigis_mansion:entities/item/physics/small_pearl",
+        "luigis_mansion:entities/item/physics/medium_pearl",
+        "luigis_mansion:entities/item/physics/big_pearl",
+        "luigis_mansion:entities/item/physics/heart",
+        "luigis_mansion:entities/item/physics/poison_mushroom",
+        "luigis_mansion:entities/item/physics/key",
+        "luigis_mansion:entities/item/physics/element_medal",
+        "luigis_mansion:entities/item/physics/marios_item"
+	]
+}

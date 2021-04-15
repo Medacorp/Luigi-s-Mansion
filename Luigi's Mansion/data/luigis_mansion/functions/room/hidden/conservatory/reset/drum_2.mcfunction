@@ -1,0 +1,1 @@
+scoreboard players reset #conservatory_drum_2

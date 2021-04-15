@@ -1,0 +1,11 @@
+{
+    "values": [
+        "luigis_mansion:room/hidden/balcony_1/reset/unload",
+        "#luigis_mansion:room/hidden/balcony_1/turn_lights/off",
+        "luigis_mansion:room/hidden/balcony_1/reset/lamp",
+        "luigis_mansion:room/hidden/balcony_1/reset/plant_1",
+        "luigis_mansion:room/hidden/balcony_1/reset/plant_2",
+        "luigis_mansion:room/hidden/balcony_1/reset/plant_3",
+        "luigis_mansion:room/hidden/balcony_1/reset/plant_4"
+    ]
+}

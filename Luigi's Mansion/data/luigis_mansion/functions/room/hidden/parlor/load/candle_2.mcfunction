@@ -1,0 +1,1 @@
+execute positioned 684 113 9 run function luigis_mansion:blocks/purple_candles

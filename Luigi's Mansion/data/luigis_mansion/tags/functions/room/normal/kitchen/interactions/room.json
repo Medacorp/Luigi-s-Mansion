@@ -1,0 +1,23 @@
+{
+	"values": [
+		"luigis_mansion:room/normal/kitchen/interactions/room/chest",
+		"luigis_mansion:room/normal/kitchen/interactions/room/closet",
+		"luigis_mansion:room/normal/kitchen/interactions/room/dish_washer",
+		"luigis_mansion:room/normal/kitchen/interactions/room/fridge",
+		"luigis_mansion:room/normal/kitchen/interactions/room/lamp_1",
+		"luigis_mansion:room/normal/kitchen/interactions/room/lamp_2",
+		"luigis_mansion:room/normal/kitchen/interactions/room/oven",
+		"luigis_mansion:room/normal/kitchen/interactions/room/painting_1",
+		"luigis_mansion:room/normal/kitchen/interactions/room/painting_2",
+		"luigis_mansion:room/normal/kitchen/interactions/room/painting_3",
+		"luigis_mansion:room/normal/kitchen/interactions/room/shelf_1",
+		"luigis_mansion:room/normal/kitchen/interactions/room/shelf_2",
+		"luigis_mansion:room/normal/kitchen/interactions/room/shelf_3",
+		"luigis_mansion:room/normal/kitchen/interactions/room/shelf_4",
+		"luigis_mansion:room/normal/kitchen/interactions/room/shelf_5",
+		"luigis_mansion:room/normal/kitchen/interactions/room/table",
+		"luigis_mansion:room/normal/kitchen/interactions/room/tool_rack",
+		"luigis_mansion:room/normal/kitchen/interactions/room/vacuumable",
+		"luigis_mansion:room/normal/kitchen/interactions/room/water"
+	]
+}

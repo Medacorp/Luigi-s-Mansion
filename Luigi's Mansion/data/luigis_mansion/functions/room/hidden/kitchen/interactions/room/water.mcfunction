@@ -1,0 +1,2 @@
+execute if score #kitchen_water Searched matches 1 run fill 687 103 -29 687 103 -30 minecraft:air
+execute unless score #kitchen_water Searched matches 1 run fill 687 103 -29 687 103 -30 minecraft:water

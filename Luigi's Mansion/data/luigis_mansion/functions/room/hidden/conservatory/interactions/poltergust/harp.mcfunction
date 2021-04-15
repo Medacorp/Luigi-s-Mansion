@@ -1,0 +1,1 @@
+execute if entity @s[x=656.0,y=102,z=2.0,dx=1,dy=2,dz=1,tag=vacuum] unless score #conservatory_harp Search matches 1 store success score #conservatory_harp Search run scoreboard players add #conservatory_harp Searching 1

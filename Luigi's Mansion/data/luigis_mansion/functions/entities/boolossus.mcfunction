@@ -1,0 +1,1 @@
+execute if entity @s[tag=boolossus] run function luigis_mansion:entities/boolossus/tick

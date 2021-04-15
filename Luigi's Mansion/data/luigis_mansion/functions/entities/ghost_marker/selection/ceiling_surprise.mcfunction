@@ -1,0 +1,1 @@
+execute if entity @s[tag=ceiling_surprise] run function luigis_mansion:spawn_entities/ghost/ceiling_surprise

@@ -1,0 +1,3 @@
+execute positioned 680.0 103 25.0 unless score #billiards_room Wave matches 1.. unless entity @e[distance=..0.7,tag=billiards_ball,tag=yellow,limit=1] run function luigis_mansion:spawn_entities/ball/billiards/yellow
+execute positioned 679.8 103 24.5 unless score #billiards_room Wave matches 1.. unless entity @e[distance=..0.7,tag=billiards_ball,tag=red,limit=1] run function luigis_mansion:spawn_entities/ball/billiards/red
+execute positioned 680.2 103 24.6 unless score #billiards_room Wave matches 1.. unless entity @e[distance=..0.7,tag=billiards_ball,tag=purple,limit=1] run function luigis_mansion:spawn_entities/ball/billiards/purple

@@ -1,0 +1,10 @@
+{
+	"values": [
+	    "luigis_mansion:room/hidden/kitchen/load/set_loaded",
+        "luigis_mansion:room/hidden/kitchen/load/lights",
+        "luigis_mansion:room/hidden/kitchen/load/haunted_objects",
+        "luigis_mansion:room/hidden/kitchen/load/fire",
+        "luigis_mansion:room/hidden/kitchen/load/closet",
+        "luigis_mansion:room/hidden/kitchen/load/vacuumable"
+	]
+}

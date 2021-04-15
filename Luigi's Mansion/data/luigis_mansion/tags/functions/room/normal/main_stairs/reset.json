@@ -1,0 +1,14 @@
+{
+    "values": [
+        "luigis_mansion:room/normal/main_stairs/reset/unload",
+        "#luigis_mansion:room/normal/main_stairs/turn_lights/off",
+        "luigis_mansion:room/normal/main_stairs/reset/candle_1",
+        "luigis_mansion:room/normal/main_stairs/reset/candle_2",
+        "luigis_mansion:room/normal/main_stairs/reset/candle_3",
+        "luigis_mansion:room/normal/main_stairs/reset/candle_4",
+        "luigis_mansion:room/normal/main_stairs/reset/fire",
+        "luigis_mansion:room/normal/main_stairs/reset/lamp",
+        "luigis_mansion:room/normal/main_stairs/reset/vacuumable_1",
+        "luigis_mansion:room/normal/main_stairs/reset/vacuumable_2"
+    ]
+}

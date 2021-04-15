@@ -1,0 +1,14 @@
+{
+	"values": [
+	    "luigis_mansion:room/hidden/astral_hall/load/set_loaded",
+        "luigis_mansion:room/hidden/astral_hall/load/lights",
+        "luigis_mansion:room/hidden/astral_hall/load/candle_1",
+        "luigis_mansion:room/hidden/astral_hall/load/candle_2",
+        "luigis_mansion:room/hidden/astral_hall/load/candle_3",
+        "luigis_mansion:room/hidden/astral_hall/load/candle_4",
+        "luigis_mansion:room/hidden/astral_hall/load/candle_5",
+        "luigis_mansion:room/hidden/astral_hall/load/table_1",
+        "luigis_mansion:room/hidden/astral_hall/load/table_2",
+        "luigis_mansion:room/hidden/astral_hall/load/vacuumable"
+	]
+}

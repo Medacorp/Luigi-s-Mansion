@@ -1,0 +1,5 @@
+scoreboard players add @s[tag=flashlight] FlashlightTime 1
+execute if entity @s[scores={FlashlightTime=2400}] if score #players Totals matches 1 run tellraw @a {"translate":"chat.type.text","with":[{"translate":"luigis_mansion:entity.mansion","color":"green"},{"translate":"luigis_mansion:message.flashlight.1"}]}
+execute if entity @s[scores={FlashlightTime=2400}] if score #players Totals matches 2.. run tellraw @a {"translate":"chat.type.text","with":[{"translate":"luigis_mansion:entity.mansion","color":"green"},{"translate":"luigis_mansion:message.flashlight.2"}]}
+execute if entity @s[scores={FlashlightTime=2400..},tag=!flashlight] run tellraw @a {"translate":"chat.type.text","with":[{"translate":"luigis_mansion:entity.mansion","color":"green"},{"translate":"luigis_mansion:message.flashlight.3"}]}
+scoreboard players set @s[tag=!flashlight] FlashlightTime 0

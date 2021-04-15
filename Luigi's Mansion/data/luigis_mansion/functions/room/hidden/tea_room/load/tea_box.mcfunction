@@ -1,0 +1,1 @@
+data merge block 659 112 47 {LootTable:"luigis_mansion:search"}

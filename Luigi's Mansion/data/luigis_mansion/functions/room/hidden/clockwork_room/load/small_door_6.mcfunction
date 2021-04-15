@@ -1,0 +1,1 @@
+setblock 685 120 18 minecraft:magenta_terracotta

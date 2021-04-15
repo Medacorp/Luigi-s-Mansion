@@ -1,0 +1,2 @@
+execute if score #mansion_type Selected matches 1 if entity @s[tag=!fleeing,tag=!hurt,tag=!fight] positioned ~ ~1 ~ run function luigis_mansion:entities/chauncey/nursery/hidden
+execute if score #mansion_type Selected matches 1 if entity @s[tag=!fleeing,tag=!hurt,tag=fight] run function luigis_mansion:entities/chauncey/fight/hidden

@@ -1,0 +1,1 @@
+execute at @s[tag=mr_bones] run function luigis_mansion:entities/mr_bones/tick

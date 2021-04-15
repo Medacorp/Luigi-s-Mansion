@@ -1,0 +1,1 @@
+execute positioned 659 113 30 run function luigis_mansion:blocks/lit_candles

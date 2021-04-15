@@ -1,0 +1,13 @@
+{
+	"pools": [
+		{
+            "rolls": 1,
+            "entries": [
+                {
+                    "type": "loot_table",
+                    "name": "luigis_mansion:entities/portrait_ghost"
+                }
+            ]
+        }
+	]
+}

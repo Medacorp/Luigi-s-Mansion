@@ -1,0 +1,21 @@
+{
+	"values": [
+		"luigis_mansion:room/normal/pipe_room/interactions/room/bucket",
+		"luigis_mansion:room/normal/pipe_room/interactions/room/chest",
+		"luigis_mansion:room/normal/pipe_room/interactions/room/crate",
+		"luigis_mansion:room/normal/pipe_room/interactions/room/frozen_barrel",
+		"luigis_mansion:room/normal/pipe_room/interactions/room/ice",
+		"luigis_mansion:room/normal/pipe_room/interactions/room/sewage",
+		"luigis_mansion:room/normal/pipe_room/interactions/room/water_1",
+		"luigis_mansion:room/normal/pipe_room/interactions/room/water_2",
+		"luigis_mansion:room/normal/pipe_room/interactions/room/water_3",
+		"luigis_mansion:room/normal/pipe_room/interactions/room/water_4",
+		"luigis_mansion:room/normal/pipe_room/interactions/room/water_5",
+		"luigis_mansion:room/normal/pipe_room/interactions/room/water_6",
+		"luigis_mansion:room/normal/pipe_room/interactions/room/water_7",
+		"luigis_mansion:room/normal/pipe_room/interactions/room/water_8",
+		"luigis_mansion:room/normal/pipe_room/interactions/room/water_9",
+		"luigis_mansion:room/normal/pipe_room/interactions/room/water_10",
+		"luigis_mansion:room/normal/pipe_room/interactions/room/water_11"
+	]
+}

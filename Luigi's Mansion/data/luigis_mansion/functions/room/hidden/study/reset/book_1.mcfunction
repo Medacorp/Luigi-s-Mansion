@@ -1,0 +1,1 @@
+scoreboard players reset #study_book_1

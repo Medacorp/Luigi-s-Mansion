@@ -1,0 +1,2 @@
+execute unless data storage luigis_mansion:data current_state.current_data.technical_data{extinguished_main_stairs_fire:1b} run setblock 666 111 -24 minecraft:fire
+execute unless data storage luigis_mansion:data current_state.current_data.technical_data{extinguished_main_stairs_fire:1b} run setblock 666 112 -24 minecraft:barrier

@@ -1,0 +1,3 @@
+execute if data storage luigis_mansion:data current_state.current_data.rooms.foyer{seen:0b} run function luigis_mansion:items/gameboy_horror/map/display/hidden/foyer/unseen
+execute if data storage luigis_mansion:data current_state.current_data.rooms.foyer{seen:1b,cleared:0b} run function luigis_mansion:items/gameboy_horror/map/display/hidden/foyer/seen
+execute if data storage luigis_mansion:data current_state.current_data.rooms.foyer{cleared:1b} run function luigis_mansion:items/gameboy_horror/map/display/hidden/foyer/cleared

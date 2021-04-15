@@ -1,0 +1,1 @@
+execute if block 687 102 -38 minecraft:fire if entity @s[x=687.0,y=102,z=-38.0,dx=0,dy=1,dz=0,tag=water] run function luigis_mansion:room/hidden/kitchen/extinguish_fire

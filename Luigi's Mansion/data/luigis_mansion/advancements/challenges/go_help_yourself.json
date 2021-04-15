@@ -1,0 +1,32 @@
+{
+    "display": {
+        "icon": {
+            "item": "minecraft:diamond_pickaxe",
+			"nbt": "{Unbreakable:1b,Damage:5,CustomModelData:22}"
+        },
+        "title": {
+            "translate": "luigis_mansion:advancements.challenges.go_help_yourself"
+        },
+        "description": {
+            "translate": "luigis_mansion:advancements.challenges.go_help_yourself.description"
+        }
+    },
+	"parent": "luigis_mansion:challenges/root",
+    "criteria": {
+        "foyer": {
+            "trigger": "minecraft:impossible"
+        },
+        "washroom_1": {
+            "trigger": "minecraft:impossible"
+        },
+        "courtyard": {
+            "trigger": "minecraft:impossible"
+        },
+        "telephone_room": {
+            "trigger": "minecraft:impossible"
+        }
+    },
+	"rewards": {
+		"function": "luigis_mansion:advancements/challenge/go_help_yourself"
+	}
+}

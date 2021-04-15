@@ -1,0 +1,23 @@
+{
+    "values": [
+        "luigis_mansion:room/hidden/butlers_room/reset/unload",
+        "#luigis_mansion:room/hidden/butlers_room/turn_lights/off",
+        "luigis_mansion:room/hidden/butlers_room/reset/bucket",
+        "luigis_mansion:room/hidden/butlers_room/reset/candle",
+        "luigis_mansion:room/hidden/butlers_room/reset/chair_1",
+        "luigis_mansion:room/hidden/butlers_room/reset/chair_2",
+        "luigis_mansion:room/hidden/butlers_room/reset/chair_3",
+        "luigis_mansion:room/hidden/butlers_room/reset/chair_4",
+        "luigis_mansion:room/hidden/butlers_room/reset/chair_5",
+        "luigis_mansion:room/hidden/butlers_room/reset/chest",
+        "luigis_mansion:room/hidden/butlers_room/reset/closet",
+        "luigis_mansion:room/hidden/butlers_room/reset/hole",
+        "luigis_mansion:room/hidden/butlers_room/reset/ironing_table",
+        "luigis_mansion:room/hidden/butlers_room/reset/lamp",
+        "luigis_mansion:room/hidden/butlers_room/reset/sewing_machine",
+        "luigis_mansion:room/hidden/butlers_room/reset/table",
+        "luigis_mansion:room/hidden/butlers_room/reset/toilet_paper",
+        "luigis_mansion:room/hidden/butlers_room/reset/vacuumable",
+        "luigis_mansion:room/hidden/butlers_room/reset/water_bucket"
+    ]
+}

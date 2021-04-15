@@ -1,0 +1,1 @@
+execute if entity @s[x=673.5,y=104,z=33.5,distance=..0.7,tag=vacuum] unless entity @a[tag=moving_wall,limit=1] unless score #storage_room_vacuumable Search matches 1 store success score #storage_room_vacuumable Search run scoreboard players add #storage_room_vacuumable Searching 1

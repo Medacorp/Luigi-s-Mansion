@@ -1,0 +1,1 @@
+execute if entity @s[x=701.0,y=93,z=15.0,dx=3,dy=0,dz=3,tag=vacuum] if block ~ ~ ~ minecraft:packed_ice unless score #cold_storage_junk Search matches 1 store success score #cold_storage_junk Search run scoreboard players add #cold_storage_junk Searching 1

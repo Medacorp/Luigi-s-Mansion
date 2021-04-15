@@ -1,0 +1,22 @@
+execute unless data storage luigis_mansion:data current_state.current_data.money_spawned{telephone_room_closet_2:1b} positioned 702 120 -7 run function luigis_mansion:spawn_entities/item/gold_coin
+execute unless data storage luigis_mansion:data current_state.current_data.money_spawned{telephone_room_closet_2:1b} positioned 703 120 -7 run function luigis_mansion:spawn_entities/item/gold_coin
+execute unless data storage luigis_mansion:data current_state.current_data.money_spawned{telephone_room_closet_2:1b} positioned 704 120 -7 run function luigis_mansion:spawn_entities/item/gold_coin
+execute unless data storage luigis_mansion:data current_state.current_data.money_spawned{telephone_room_closet_2:1b} positioned 705 120 -7 run function luigis_mansion:spawn_entities/item/gold_coin
+execute unless data storage luigis_mansion:data current_state.current_data.money_spawned{telephone_room_closet_2:1b} positioned 702 121 -7 run function luigis_mansion:spawn_entities/item/gold_coin
+execute unless data storage luigis_mansion:data current_state.current_data.money_spawned{telephone_room_closet_2:1b} positioned 703 121 -7 run function luigis_mansion:spawn_entities/item/gold_coin
+execute unless data storage luigis_mansion:data current_state.current_data.money_spawned{telephone_room_closet_2:1b} positioned 704 121 -7 run function luigis_mansion:spawn_entities/item/gold_coin
+execute unless data storage luigis_mansion:data current_state.current_data.money_spawned{telephone_room_closet_2:1b} positioned 705 121 -7 run function luigis_mansion:spawn_entities/item/gold_coin
+execute unless data storage luigis_mansion:data current_state.current_data.money_spawned{telephone_room_closet_2:1b} positioned 702 122 -7 run function luigis_mansion:spawn_entities/item/gold_coin
+execute unless data storage luigis_mansion:data current_state.current_data.money_spawned{telephone_room_closet_2:1b} positioned 703 122 -7 run function luigis_mansion:spawn_entities/item/gold_coin
+execute unless data storage luigis_mansion:data current_state.current_data.money_spawned{telephone_room_closet_2:1b} positioned 704 122 -7 run function luigis_mansion:spawn_entities/item/gold_coin
+execute unless data storage luigis_mansion:data current_state.current_data.money_spawned{telephone_room_closet_2:1b} positioned 705 122 -7 run function luigis_mansion:spawn_entities/item/gold_coin
+execute unless data storage luigis_mansion:data current_state.current_data.money_spawned{telephone_room_closet_2:1b} positioned 702 123 -7 run function luigis_mansion:spawn_entities/item/gold_coin
+execute unless data storage luigis_mansion:data current_state.current_data.money_spawned{telephone_room_closet_2:1b} positioned 703 123 -7 run function luigis_mansion:spawn_entities/item/gold_coin
+execute unless data storage luigis_mansion:data current_state.current_data.money_spawned{telephone_room_closet_2:1b} positioned 704 123 -7 run function luigis_mansion:spawn_entities/item/gold_coin
+execute unless data storage luigis_mansion:data current_state.current_data.money_spawned{telephone_room_closet_2:1b} positioned 705 123 -7 run function luigis_mansion:spawn_entities/item/gold_coin
+execute unless data storage luigis_mansion:data current_state.current_data.money_spawned{telephone_room_closet_2:1b} positioned 702 120 -6 run function luigis_mansion:spawn_entities/item/gold_coin
+execute unless data storage luigis_mansion:data current_state.current_data.money_spawned{telephone_room_closet_2:1b} positioned 703 120 -6 run function luigis_mansion:spawn_entities/item/gold_coin
+execute unless data storage luigis_mansion:data current_state.current_data.money_spawned{telephone_room_closet_2:1b} positioned 704 120 -6 run function luigis_mansion:spawn_entities/item/gold_coin
+execute unless data storage luigis_mansion:data current_state.current_data.money_spawned{telephone_room_closet_2:1b} positioned 705 120 -6 run function luigis_mansion:spawn_entities/item/gold_coin
+execute if data storage luigis_mansion:data current_state.current_data.money_spawned{telephone_room_closet_2:1b} run tag @e[tag=selected] add nothing
+data modify storage luigis_mansion:data current_state.current_data.money_spawned merge value {telephone_room_closet_2:1b}

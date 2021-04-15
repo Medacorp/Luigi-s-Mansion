@@ -1,0 +1,2 @@
+execute if score #mansion_type Selected matches 0 if entity @s[scores={Room=13},tag=leader] run function luigis_mansion:entities/ghost_guy/dance/ball_room/normal
+execute if score #mansion_type Selected matches 0 if entity @s[scores={Room=50},tag=leader] run function luigis_mansion:entities/ghost_guy/dance/roof/normal

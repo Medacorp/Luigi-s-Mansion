@@ -1,0 +1,1 @@
+execute if entity @s[tag=yellow_bat] run function luigis_mansion:entities/ghost/capture/caught/yellow_bat

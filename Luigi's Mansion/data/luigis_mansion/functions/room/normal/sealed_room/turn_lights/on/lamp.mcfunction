@@ -1,0 +1,1 @@
+fill 690 115 -27 691 115 -26 minecraft:stone_button[face=floor,powered=true]

@@ -1,0 +1,23 @@
+{
+	"values": [
+        "luigis_mansion:entities/ghost/disappear/gold_ghost",
+        "luigis_mansion:entities/ghost/disappear/gold_dummy_ghost",
+        "luigis_mansion:entities/ghost/disappear/temper_terror",
+        "luigis_mansion:entities/ghost/disappear/speedy_spirit",
+        "luigis_mansion:entities/ghost/disappear/purple_puncher",
+        "luigis_mansion:entities/ghost/disappear/flash",
+        "luigis_mansion:entities/ghost/disappear/blue_twirler",
+        "luigis_mansion:entities/ghost/disappear/blue_blaze",
+        "luigis_mansion:entities/ghost/disappear/grabbing_ghost",
+        "luigis_mansion:entities/ghost/disappear/red_grabbing_ghost",
+        "luigis_mansion:entities/ghost/disappear/mirror_ghost",
+        "luigis_mansion:entities/ghost/disappear/cinema_ghost",
+        "luigis_mansion:entities/ghost/disappear/garbage_can_ghost",
+        "luigis_mansion:entities/ghost/disappear/ghost_guy",
+        "luigis_mansion:entities/ghost/disappear/mr_bones",
+        "luigis_mansion:entities/ghost/disappear/bowling_ghost",
+        "luigis_mansion:entities/ghost/disappear/ceiling_surprise",
+        "luigis_mansion:entities/ghost/disappear/purple_bomber",
+        "luigis_mansion:entities/ghost/disappear/waiter"
+	]
+}

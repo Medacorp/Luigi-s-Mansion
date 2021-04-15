@@ -1,0 +1,1 @@
+execute if entity @s[x=675.5,y=112,z=54.5,distance=..1.5,tag=vacuum] unless score #observatory_telescope Search matches 1 store success score #observatory_telescope Search run scoreboard players add #observatory_telescope Searching 1

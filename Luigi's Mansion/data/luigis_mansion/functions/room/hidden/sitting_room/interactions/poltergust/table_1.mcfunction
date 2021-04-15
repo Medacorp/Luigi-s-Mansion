@@ -1,0 +1,1 @@
+execute if entity @s[x=717.0,y=111,z=19.0,dx=0,dy=1,dz=0,tag=vacuum] unless score #sitting_room_table_1 Search matches 1 store success score #sitting_room_table_1 Search run scoreboard players add #sitting_room_table_1 Searching 1

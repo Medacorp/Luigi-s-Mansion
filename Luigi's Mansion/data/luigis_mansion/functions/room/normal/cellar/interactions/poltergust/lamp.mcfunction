@@ -1,0 +1,1 @@
+execute if entity @s[x=713.5,y=98,z=-33.5,distance=..0.7,tag=vacuum] unless score #cellar_lamp Search matches 1 store success score #cellar_lamp Search run scoreboard players add #cellar_lamp Searching 1

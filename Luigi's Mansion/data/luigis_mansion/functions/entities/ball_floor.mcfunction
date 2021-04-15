@@ -1,0 +1,1 @@
+execute if entity @s[tag=ball_floor] run function luigis_mansion:entities/ball_floor/tick

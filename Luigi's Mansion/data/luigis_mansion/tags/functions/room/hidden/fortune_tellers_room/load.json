@@ -1,0 +1,9 @@
+{
+	"values": [
+	    "luigis_mansion:room/hidden/fortune_tellers_room/load/set_loaded",
+        "luigis_mansion:room/hidden/fortune_tellers_room/load/lights",
+        "luigis_mansion:room/hidden/fortune_tellers_room/load/table_1",
+        "luigis_mansion:room/hidden/fortune_tellers_room/load/table_3",
+        "luigis_mansion:room/hidden/fortune_tellers_room/load/vacuumable"
+	]
+}

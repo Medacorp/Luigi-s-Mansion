@@ -1,0 +1,10 @@
+{
+	"values": [
+	    "luigis_mansion_3ds_remake:room/hidden/pipe_room/load/set_loaded",
+        "luigis_mansion_3ds_remake:room/hidden/pipe_room/load/lights",
+        "luigis_mansion_3ds_remake:room/hidden/pipe_room/load/sewage",
+        "luigis_mansion_3ds_remake:room/hidden/pipe_room/load/pipe",
+        "luigis_mansion_3ds_remake:room/hidden/pipe_room/load/bucket",
+        "luigis_mansion_3ds_remake:room/hidden/pipe_room/load/chest"
+	]
+}

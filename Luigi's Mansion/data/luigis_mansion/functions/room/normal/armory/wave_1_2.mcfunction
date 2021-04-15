@@ -1,0 +1,1 @@
+execute positioned 716 120 45 run function luigis_mansion:spawn_entities/new_ghost/forced_spawn/red_grabbing_ghost

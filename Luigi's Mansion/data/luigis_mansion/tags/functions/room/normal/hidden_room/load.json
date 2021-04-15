@@ -1,0 +1,13 @@
+{
+	"values": [
+	    "luigis_mansion:room/normal/hidden_room/load/set_loaded",
+        "luigis_mansion:room/normal/hidden_room/load/lights",
+        "luigis_mansion:room/normal/hidden_room/load/chest_1",
+        "luigis_mansion:room/normal/hidden_room/load/chest_2",
+        "luigis_mansion:room/normal/hidden_room/load/chest_3",
+        "luigis_mansion:room/normal/hidden_room/load/chest_4",
+        "luigis_mansion:room/normal/hidden_room/load/chest_5",
+        "luigis_mansion:room/normal/hidden_room/load/chest_6",
+        "luigis_mansion:room/normal/hidden_room/load/chest_7"
+	]
+}

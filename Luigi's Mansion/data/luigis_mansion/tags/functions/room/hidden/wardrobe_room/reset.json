@@ -1,0 +1,24 @@
+{
+    "values": [
+        "luigis_mansion:room/hidden/wardrobe_room/reset/unload",
+        "#luigis_mansion:room/hidden/wardrobe_room/turn_lights/off",
+        "luigis_mansion:room/hidden/wardrobe_room/reset/chest",
+        "luigis_mansion:room/hidden/wardrobe_room/reset/closet_1",
+        "luigis_mansion:room/hidden/wardrobe_room/reset/closet_2",
+        "luigis_mansion:room/hidden/wardrobe_room/reset/closet_3",
+        "luigis_mansion:room/hidden/wardrobe_room/reset/clothes_1",
+        "luigis_mansion:room/hidden/wardrobe_room/reset/clothes_2",
+        "luigis_mansion:room/hidden/wardrobe_room/reset/clothes_3",
+        "luigis_mansion:room/hidden/wardrobe_room/reset/clothes_4",
+        "luigis_mansion:room/hidden/wardrobe_room/reset/clothes_5",
+        "luigis_mansion:room/hidden/wardrobe_room/reset/clothes_6",
+        "luigis_mansion:room/hidden/wardrobe_room/reset/clothes_7",
+        "luigis_mansion:room/hidden/wardrobe_room/reset/clothes_8",
+        "luigis_mansion:room/hidden/wardrobe_room/reset/hat_rack",
+        "luigis_mansion:room/hidden/wardrobe_room/reset/lamp",
+        "luigis_mansion:room/hidden/wardrobe_room/reset/mirror",
+        "luigis_mansion:room/hidden/wardrobe_room/reset/painting_1",
+        "luigis_mansion:room/hidden/wardrobe_room/reset/painting_2",
+        "luigis_mansion:room/hidden/wardrobe_room/reset/shoe_stand"
+    ]
+}

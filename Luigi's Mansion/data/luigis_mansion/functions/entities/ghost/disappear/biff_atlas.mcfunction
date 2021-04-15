@@ -1,0 +1,1 @@
+execute if entity @s[tag=biff_atlas] run function luigis_mansion:entities/ghost/disappear/portrait_ghost/biff_atlas

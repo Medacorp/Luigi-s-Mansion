@@ -1,0 +1,1 @@
+execute positioned 708 111 -32 unless entity @e[tag=ball,tag=chauncey,scores={Room=9}] run function luigis_mansion:spawn_entities/ball/chauncey/small

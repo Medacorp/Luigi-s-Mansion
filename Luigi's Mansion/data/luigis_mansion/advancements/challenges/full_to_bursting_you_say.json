@@ -1,0 +1,22 @@
+{
+    "display": {
+        "icon": {
+            "item": "minecraft:painting"
+        },
+        "title": {
+            "translate": "luigis_mansion:advancements.challenges.full_to_bursting_you_say"
+        },
+        "description": {
+            "translate": "luigis_mansion:advancements.challenges.full_to_bursting_you_say.description"
+        }
+    },
+	"parent": "luigis_mansion:challenges/root",
+    "criteria": {
+        "10_hp_boss_enter": {
+            "trigger": "minecraft:impossible"
+        }
+    },
+	"rewards": {
+		"function": "luigis_mansion:advancements/challenge/full_to_bursting_you_say"
+	}
+}

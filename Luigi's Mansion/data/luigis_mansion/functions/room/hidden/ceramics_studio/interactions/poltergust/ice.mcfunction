@@ -1,0 +1,2 @@
+execute if entity @s[x=693.0,y=120,z=-21.0,dx=0,dy=1,dz=0,tag=fire] run scoreboard players set #ceramics_studio_ice Searched 1
+execute if entity @s[x=693.0,y=120,z=-21.0,dx=0,dy=1,dz=0,tag=ice] run scoreboard players reset #ceramics_studio_ice Searched

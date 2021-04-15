@@ -1,0 +1,40 @@
+bugs:
+having a non-ticking non-reset room will make all entities that look at players in said room continue moving forward, rather than go "home" or stop moving
+ghosts switching animations often don't reset AnimationProg
+ghosts that vanish lose some info (eg color for beta ghosts); fix: do not replace the entity, make them move back down when they vanish; make them invisible with specific armor values; give them the unseen idle animation (rename current idle to haunt); remove ghost marker entity
+foyer, main hallway, hallway, attic hallway and basement hallway sections aren't considered separate rooms (no resetting or hallways partially)
+locked door animations still uses clone, rather than setblock-ing a new door
+wardrobe room closet ghosts (and the resulting money from the speedy spirit) tend to get stuck in the closet
+boo warping is broken, they no longer know what room they end up in and what room section they're in
+when boos attack, they don't move to the target's y coordinate, making them miss the player
+pulling boos with multiple players can result in the boo being pulled into a player leading to massive damage
+money spawning on the lowest floor of a room doesn't get the room score unless moving up (increase room size by 2 on y and move it 1 down)
+
+to do:
+add functional mirrors (WIP, working on converting normal mansion to allow this (coordinates left))
+add cinema ghost shadow
+add missing sounds (@LaserRanger is working on this)
+add missing models (portrait ghosts+corresponding objects; biff atlas and after, excluding madame clairvoya, boolossus and king boo (not bowser or portrificationizing king boo))
+add boo idle animation is missing
+add king boo magic animation (also make mario turn to bowser)
+add ghost, puncher and twirler smug and basher animations
+change boolossus to have the boos look up/down as they move up/down
+change boos to move up/down like boolossus
+change boolossus to move up/down more randomly, rather than all in sync, until one attacks, desyncing them
+pre-build boss battle "rooms", rather than generate them (also rotate to face same way as mansion)
+
+conditional:
+go through both mansions and replace brewing stands and redstone torches with candles; remodel candles (when you can no longer extinguish them by hand in adventure); not if replacing all furniture
+
+maybe:
+replace all furniture with models and barriers (allows for the shaking animation and nuking of all map files)
+
+
+3ds add-on:
+remove the couple chairs in the tea room
+remove the 2 pans in the kitchen
+add strobulb flashlight type
+add new gallery
+add gallery battles
+add slightly modified strings (such as uncle grimmly call "prefers rooms with mirrors *and clothes*")
+add teleporting of players in luigis_mansion:hidden to luigis_mansion:normal with Z = Z * -1 + 15

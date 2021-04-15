@@ -1,0 +1,7 @@
+{
+	"values": [
+	    "luigis_mansion:room/hidden/roof/load/set_loaded",
+        "luigis_mansion:room/hidden/roof/load/lights",
+        "luigis_mansion:room/hidden/roof/load/fire"
+	]
+}

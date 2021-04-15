@@ -1,0 +1,7 @@
+{
+    "values": [
+        "luigis_mansion:room/hidden/bottom_of_the_well/reset/unload",
+        "#luigis_mansion:room/hidden/bottom_of_the_well/turn_lights/off",
+        "luigis_mansion:room/hidden/bottom_of_the_well/reset/lamp"
+    ]
+}

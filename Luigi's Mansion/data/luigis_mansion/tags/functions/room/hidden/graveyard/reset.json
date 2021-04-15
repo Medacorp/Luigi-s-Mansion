@@ -1,0 +1,22 @@
+{
+    "values": [
+        "luigis_mansion:room/hidden/graveyard/reset/unload",
+        "#luigis_mansion:room/hidden/graveyard/turn_lights/off",
+        "luigis_mansion:room/hidden/graveyard/reset/chest",
+        "luigis_mansion:room/hidden/graveyard/reset/fire_1",
+        "luigis_mansion:room/hidden/graveyard/reset/fire_2",
+        "luigis_mansion:room/hidden/graveyard/reset/gravestone_1",
+        "luigis_mansion:room/hidden/graveyard/reset/gravestone_2",
+        "luigis_mansion:room/hidden/graveyard/reset/gravestone_3",
+        "luigis_mansion:room/hidden/graveyard/reset/gravestone_4",
+        "luigis_mansion:room/hidden/graveyard/reset/gravestone_5",
+        "luigis_mansion:room/hidden/graveyard/reset/gravestone_6",
+        "luigis_mansion:room/hidden/graveyard/reset/gravestone_7",
+        "luigis_mansion:room/hidden/graveyard/reset/lamp_1",
+        "luigis_mansion:room/hidden/graveyard/reset/lamp_2",
+        "luigis_mansion:room/hidden/graveyard/reset/rain_pipe",
+        "luigis_mansion:room/hidden/graveyard/reset/torch_1",
+        "luigis_mansion:room/hidden/graveyard/reset/torch_2",
+        "luigis_mansion:room/hidden/graveyard/reset/tree_trunk"
+    ]
+}

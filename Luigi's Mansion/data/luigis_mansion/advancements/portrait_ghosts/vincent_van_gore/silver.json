@@ -1,0 +1,20 @@
+{
+    "display": {
+        "icon": {
+            "item": "minecraft:iron_ingot"
+        },
+        "show_toast": false,
+        "title": {
+            "translate": "luigis_mansion:advancements.portrait_ghosts.vincent_van_gore.silver"
+        },
+        "description": {
+            "translate": "luigis_mansion:advancements.portrait_ghosts.vincent_van_gore.silver.description"
+        }
+    },
+	"parent": "luigis_mansion:portrait_ghosts/vincent_van_gore/bronze",
+    "criteria": {
+        "portrificationized": {
+            "trigger": "minecraft:impossible"
+        }
+    }
+}

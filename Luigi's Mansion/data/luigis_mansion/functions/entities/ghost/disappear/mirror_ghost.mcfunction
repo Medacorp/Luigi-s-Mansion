@@ -1,0 +1,1 @@
+execute if entity @s[tag=mirror_ghost] run tag @e[tag=this_entity,limit=1] add mirror_ghost

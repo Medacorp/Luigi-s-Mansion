@@ -1,0 +1,8 @@
+{
+    "values": [
+        "luigis_mansion:room/normal/attic_hallway_1/reset/unload",
+        "#luigis_mansion:room/normal/attic_hallway_1/turn_lights/off",
+        "luigis_mansion:room/normal/attic_hallway_1/reset/vacuumable_1",
+        "luigis_mansion:room/normal/attic_hallway_1/reset/vacuumable_2"
+    ]
+}

@@ -1,0 +1,7 @@
+execute unless data storage luigis_mansion:data current_state.current_data.money_spawned{ceramics_studio_lamp:1b} positioned 691 125 40 run function luigis_mansion:spawn_entities/item/bill
+execute unless data storage luigis_mansion:data current_state.current_data.money_spawned{ceramics_studio_lamp:1b} positioned 691 125 42 run function luigis_mansion:spawn_entities/item/bill
+execute unless data storage luigis_mansion:data current_state.current_data.money_spawned{ceramics_studio_lamp:1b} positioned 690 125 41 run function luigis_mansion:spawn_entities/item/bill
+execute unless data storage luigis_mansion:data current_state.current_data.money_spawned{ceramics_studio_lamp:1b} positioned 692 125 41 run function luigis_mansion:spawn_entities/item/bill
+execute unless data storage luigis_mansion:data current_state.current_data.money_spawned{ceramics_studio_lamp:1b} positioned 691 124 41 run function luigis_mansion:spawn_entities/item/bill
+execute if data storage luigis_mansion:data current_state.current_data.money_spawned{ceramics_studio_lamp:1b} run tag @e[tag=selected] add nothing
+data modify storage luigis_mansion:data current_state.current_data.money_spawned merge value {ceramics_studio_lamp:1b}

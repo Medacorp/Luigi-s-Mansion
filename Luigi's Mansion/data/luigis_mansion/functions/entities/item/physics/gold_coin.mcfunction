@@ -1,0 +1,1 @@
+execute if entity @s[tag=gold_coin] run function luigis_mansion:entities/item/gold_coin_physics

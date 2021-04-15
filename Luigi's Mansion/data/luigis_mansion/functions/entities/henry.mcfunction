@@ -1,0 +1,1 @@
+execute if entity @s[tag=henry] run function luigis_mansion:entities/henry/tick

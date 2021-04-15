@@ -1,0 +1,2 @@
+execute if data storage luigis_mansion:data current_state.current_data.rooms.basement_hallway{seen:0b} run function luigis_mansion:items/gameboy_horror/map/display/normal/basement_hallway/unseen
+execute if data storage luigis_mansion:data current_state.current_data.rooms.basement_hallway{seen:1b} run function luigis_mansion:items/gameboy_horror/map/display/normal/basement_hallway/seen

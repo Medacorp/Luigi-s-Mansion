@@ -1,0 +1,1 @@
+scoreboard players reset #basement_stairs_lamp_1

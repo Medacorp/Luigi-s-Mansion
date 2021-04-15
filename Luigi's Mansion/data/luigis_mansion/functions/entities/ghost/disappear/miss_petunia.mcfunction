@@ -1,0 +1,1 @@
+execute if entity @s[tag=miss_petunia] run function luigis_mansion:entities/ghost/disappear/portrait_ghost/miss_petunia

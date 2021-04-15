@@ -1,0 +1,1 @@
+setblock 711 126 28 minecraft:light[waterlogged=false,level=15]

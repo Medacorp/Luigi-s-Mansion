@@ -1,0 +1,1 @@
+scoreboard players reset #billiards_room_chess_table

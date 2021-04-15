@@ -1,0 +1,24 @@
+{
+    "values": [
+        "luigis_mansion:room/hidden/safari_room/reset/unload",
+        "#luigis_mansion:room/hidden/safari_room/turn_lights/off",
+        "luigis_mansion:room/hidden/safari_room/reset/chair",
+        "luigis_mansion:room/hidden/safari_room/reset/chest",
+        "luigis_mansion:room/hidden/safari_room/reset/crate_1",
+        "luigis_mansion:room/hidden/safari_room/reset/crate_2",
+        "luigis_mansion:room/hidden/safari_room/reset/crate_3",
+        "luigis_mansion:room/hidden/safari_room/reset/crate_4",
+        "luigis_mansion:room/hidden/safari_room/reset/crate_5",
+        "luigis_mansion:room/hidden/safari_room/reset/crate_6",
+        "luigis_mansion:room/hidden/safari_room/reset/deer_head_1",
+        "luigis_mansion:room/hidden/safari_room/reset/deer_head_2",
+        "luigis_mansion:room/hidden/safari_room/reset/deer_head_3",
+        "luigis_mansion:room/hidden/safari_room/reset/lamp_1",
+        "luigis_mansion:room/hidden/safari_room/reset/lamp_2",
+        "luigis_mansion:room/hidden/safari_room/reset/mirror",
+        "luigis_mansion:room/hidden/safari_room/reset/shelf_1",
+        "luigis_mansion:room/hidden/safari_room/reset/shelf_2",
+        "luigis_mansion:room/hidden/safari_room/reset/table",
+        "luigis_mansion:room/hidden/safari_room/reset/vacuumable"
+    ]
+}

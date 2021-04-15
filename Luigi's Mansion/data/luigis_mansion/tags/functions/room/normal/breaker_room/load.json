@@ -1,0 +1,7 @@
+{
+	"values": [
+	    "luigis_mansion:room/normal/breaker_room/load/set_loaded",
+        "luigis_mansion:room/normal/breaker_room/load/lights",
+        "luigis_mansion:room/normal/breaker_room/load/vacuumable"
+	]
+}

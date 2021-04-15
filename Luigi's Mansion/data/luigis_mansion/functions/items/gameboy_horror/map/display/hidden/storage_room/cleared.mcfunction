@@ -1,0 +1,1 @@
+fill 3681 60 55 3673 60 26 minecraft:light_blue_concrete

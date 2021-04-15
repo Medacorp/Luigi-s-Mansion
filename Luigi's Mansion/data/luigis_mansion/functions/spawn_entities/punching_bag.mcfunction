@@ -1,0 +1,6 @@
+summon minecraft:armor_stand ~ ~5.4 ~ {Tags:["punching_bag"],ArmorItems:[{},{},{},{id:"minecraft:diamond_pickaxe",Count:1b,tag:{Unbreakable:1b,Damage:4,CustomModelData:7}}],Pose:{Head:[0.0f,0.0f,0.01f]},NoGravity:1b,Marker:1b,Invisible:1b,DisabledSlots:2039583}
+summon minecraft:zombie ~ ~ ~ {Tags:["punching_bag_detect","scan_ignore"],Silent:1b,ActiveEffects:[{Id:14b,Duration:1000000,ShowParticles:0b}],Attributes:[{Name:"minecraft:generic.movement_speed",Base:0.0d},{Name:"minecraft:generic.follow_range",Base:0.0d},{Name:"minecraft:generic.attack_damage",Base:0.0d},{Name:"minecraft:zombie.spawn_reinforcements",Base:0.0d}],Health:20.0f}
+execute positioned ~ ~5.4 ~ run scoreboard players set @e[tag=punching_bag,distance=..0.1,limit=1] Angle 0
+execute positioned ~ ~5.4 ~ as @e[tag=punching_bag,distance=..0.1,limit=1] run scoreboard players operation @s PunchingBag > @e[tag=punching_bag] PunchingBag
+execute positioned ~ ~5.4 ~ run scoreboard players add @e[tag=punching_bag,distance=..0.1,limit=1] PunchingBag 1
+execute as @e[distance=..0.1,tag=punching_bag_detect] unless entity @s[scores={PunchingBag=1..}] positioned ~ ~5.4 ~ run scoreboard players operation @s PunchingBag = @e[tag=punching_bag,distance=..0.1] PunchingBag

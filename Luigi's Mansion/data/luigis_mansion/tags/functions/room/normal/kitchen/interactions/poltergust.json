@@ -1,0 +1,24 @@
+{
+	"values": [
+		"luigis_mansion:room/normal/kitchen/interactions/poltergust/closet",
+		"luigis_mansion:room/normal/kitchen/interactions/poltergust/dish_washer",
+		"luigis_mansion:room/normal/kitchen/interactions/poltergust/fire",
+		"luigis_mansion:room/normal/kitchen/interactions/poltergust/fridge",
+		"luigis_mansion:room/normal/kitchen/interactions/poltergust/ice",
+		"luigis_mansion:room/normal/kitchen/interactions/poltergust/lamp_1",
+		"luigis_mansion:room/normal/kitchen/interactions/poltergust/lamp_2",
+		"luigis_mansion:room/normal/kitchen/interactions/poltergust/oven",
+		"luigis_mansion:room/normal/kitchen/interactions/poltergust/painting_1",
+		"luigis_mansion:room/normal/kitchen/interactions/poltergust/painting_2",
+		"luigis_mansion:room/normal/kitchen/interactions/poltergust/painting_3",
+		"luigis_mansion:room/normal/kitchen/interactions/poltergust/shelf_1",
+		"luigis_mansion:room/normal/kitchen/interactions/poltergust/shelf_2",
+		"luigis_mansion:room/normal/kitchen/interactions/poltergust/shelf_3",
+		"luigis_mansion:room/normal/kitchen/interactions/poltergust/shelf_4",
+		"luigis_mansion:room/normal/kitchen/interactions/poltergust/shelf_5",
+		"luigis_mansion:room/normal/kitchen/interactions/poltergust/table",
+		"luigis_mansion:room/normal/kitchen/interactions/poltergust/tool_rack",
+		"luigis_mansion:room/normal/kitchen/interactions/poltergust/vacuumable",
+		"luigis_mansion:room/normal/kitchen/interactions/poltergust/water"
+	]
+}

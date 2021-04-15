@@ -1,0 +1,1 @@
+execute if entity @s[tag=cinema_ghost] run tag @e[tag=this_entity,limit=1] add cinema_ghost

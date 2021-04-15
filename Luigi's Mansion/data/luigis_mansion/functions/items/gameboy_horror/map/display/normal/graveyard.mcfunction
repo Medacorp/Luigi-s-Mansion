@@ -1,0 +1,3 @@
+execute if data storage luigis_mansion:data current_state.current_data.rooms.graveyard{seen:0b} run function luigis_mansion:items/gameboy_horror/map/display/normal/graveyard/unseen
+execute if data storage luigis_mansion:data current_state.current_data.rooms.graveyard{seen:1b,cleared:0b} run function luigis_mansion:items/gameboy_horror/map/display/normal/graveyard/seen
+execute if data storage luigis_mansion:data current_state.current_data.rooms.graveyard{cleared:1b} run function luigis_mansion:items/gameboy_horror/map/display/normal/graveyard/cleared

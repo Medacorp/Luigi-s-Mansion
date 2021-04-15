@@ -1,0 +1,9 @@
+{
+	"values": [
+	    "luigis_mansion:room/normal/master_bedroom/load/set_loaded",
+        "luigis_mansion:room/normal/master_bedroom/load/lights",
+        "luigis_mansion:room/normal/master_bedroom/load/table_1",
+        "luigis_mansion:room/normal/master_bedroom/load/table_2",
+        "luigis_mansion:room/normal/master_bedroom/load/vacuumable"
+	]
+}

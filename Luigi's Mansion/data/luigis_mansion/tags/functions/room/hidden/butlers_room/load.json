@@ -1,0 +1,10 @@
+{
+	"values": [
+	    "luigis_mansion:room/hidden/butlers_room/load/set_loaded",
+        "luigis_mansion:room/hidden/butlers_room/load/lights",
+        "luigis_mansion:room/hidden/butlers_room/load/bucket",
+        "luigis_mansion:room/hidden/butlers_room/load/closet",
+        "luigis_mansion:room/hidden/butlers_room/load/vacuumable",
+        "luigis_mansion:room/hidden/butlers_room/load/water_bucket"
+	]
+}

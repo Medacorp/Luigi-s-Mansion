@@ -1,0 +1,23 @@
+{
+    "values": [
+        "luigis_mansion:room/hidden/foyer/reset/unload",
+        "#luigis_mansion:room/hidden/foyer/turn_lights/off",
+        "luigis_mansion:room/hidden/foyer/reset/blockade",
+        "luigis_mansion:room/hidden/foyer/reset/candle_1",
+        "luigis_mansion:room/hidden/foyer/reset/candle_2",
+        "luigis_mansion:room/hidden/foyer/reset/candle_3",
+        "luigis_mansion:room/hidden/foyer/reset/candle_4",
+        "luigis_mansion:room/hidden/foyer/reset/candle_5",
+        "luigis_mansion:room/hidden/foyer/reset/candle_6",
+        "luigis_mansion:room/hidden/foyer/reset/chandelier",
+        "luigis_mansion:room/hidden/foyer/reset/jar_1",
+        "luigis_mansion:room/hidden/foyer/reset/jar_2",
+        "luigis_mansion:room/hidden/foyer/reset/lamp",
+        "luigis_mansion:room/hidden/foyer/reset/mirror",
+        "luigis_mansion:room/hidden/foyer/reset/table",
+        "luigis_mansion:room/hidden/foyer/reset/vacuumable_1",
+        "luigis_mansion:room/hidden/foyer/reset/vacuumable_2",
+        "luigis_mansion:room/hidden/foyer/reset/vacuumable_3",
+        "luigis_mansion:room/hidden/foyer/reset/vacuumable_4"
+    ]
+}

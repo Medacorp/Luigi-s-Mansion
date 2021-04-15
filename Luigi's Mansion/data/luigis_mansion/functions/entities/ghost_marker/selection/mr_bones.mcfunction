@@ -1,0 +1,1 @@
+execute if entity @s[tag=mr_bones] run function luigis_mansion:spawn_entities/ghost/mr_bones

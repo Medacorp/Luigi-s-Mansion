@@ -1,0 +1,20 @@
+{
+	"values": [
+	    "luigis_mansion:room/normal/foyer/load/set_loaded",
+        "luigis_mansion:room/normal/foyer/load/lights",
+        "luigis_mansion:room/normal/foyer/load/spawn_toad",
+        "luigis_mansion:room/normal/foyer/load/spawn_money",
+        "luigis_mansion:room/normal/foyer/load/blockade",
+        "luigis_mansion:room/normal/foyer/load/candle_1",
+        "luigis_mansion:room/normal/foyer/load/candle_2",
+        "luigis_mansion:room/normal/foyer/load/candle_3",
+        "luigis_mansion:room/normal/foyer/load/candle_4",
+        "luigis_mansion:room/normal/foyer/load/candle_5",
+        "luigis_mansion:room/normal/foyer/load/candle_6",
+        "luigis_mansion:room/normal/foyer/load/table",
+        "luigis_mansion:room/normal/foyer/load/vacuumable_1",
+        "luigis_mansion:room/normal/foyer/load/vacuumable_2",
+        "luigis_mansion:room/normal/foyer/load/vacuumable_3",
+        "luigis_mansion:room/normal/foyer/load/vacuumable_4"
+	]
+}

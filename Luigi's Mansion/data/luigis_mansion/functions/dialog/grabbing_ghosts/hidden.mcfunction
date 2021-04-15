@@ -1,0 +1,1 @@
+function luigis_mansion:dialog/grabbing_ghosts/normal

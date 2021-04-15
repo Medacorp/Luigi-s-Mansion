@@ -1,0 +1,2 @@
+execute if score #graveyard_tree_trunk Searched matches 1 run particle minecraft:dust 0.5 0.5 1 1 668 102 -38 0.2 0.2 0.2 0 4
+execute if score #graveyard_tree_trunk Searched matches 1 as @a[x=668.5,y=102,z=-37.5,distance=..0.7] run function luigis_mansion:room/hidden/graveyard/go_through_tree_trunk

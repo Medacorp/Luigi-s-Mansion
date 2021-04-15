@@ -1,0 +1,13 @@
+{
+	"values": [
+		"luigis_mansion:room/normal/cold_storage/interactions/poltergust/barrel_1",
+		"luigis_mansion:room/normal/cold_storage/interactions/poltergust/barrel_2",
+		"luigis_mansion:room/normal/cold_storage/interactions/poltergust/campfire_3",
+		"luigis_mansion:room/normal/cold_storage/interactions/poltergust/crate_1",
+		"luigis_mansion:room/normal/cold_storage/interactions/poltergust/crate_2",
+		"luigis_mansion:room/normal/cold_storage/interactions/poltergust/fire",
+		"luigis_mansion:room/normal/cold_storage/interactions/poltergust/junk",
+		"luigis_mansion:room/normal/cold_storage/interactions/poltergust/shelf_1",
+		"luigis_mansion:room/normal/cold_storage/interactions/poltergust/shelf_2"
+	]
+}

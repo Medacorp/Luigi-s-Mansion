@@ -1,0 +1,1 @@
+scoreboard players reset #fortune_tellers_room_lamp

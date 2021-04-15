@@ -1,0 +1,5 @@
+execute if entity @s[tag=hat] unless data storage luigis_mansion:data current_state.current_data.technical_data{has_marios_hat:1b} run function luigis_mansion:items/marios_item/normal/hat
+execute if entity @s[tag=letter] unless data storage luigis_mansion:data current_state.current_data.technical_data{has_marios_letter:1b} run function luigis_mansion:items/marios_item/normal/letter
+execute if entity @s[tag=star] unless data storage luigis_mansion:data current_state.current_data.technical_data{has_marios_star:1b} run function luigis_mansion:items/marios_item/normal/star
+execute if entity @s[tag=glove] unless data storage luigis_mansion:data current_state.current_data.technical_data{has_marios_glove:1b} run function luigis_mansion:items/marios_item/normal/glove
+execute if entity @s[tag=shoe] unless data storage luigis_mansion:data current_state.current_data.technical_data{has_marios_shoe:1b} run function luigis_mansion:items/marios_item/normal/shoe

@@ -1,0 +1,28 @@
+{
+    "values": [
+        "luigis_mansion:room/normal/parlor/reset/unload",
+        "#luigis_mansion:room/normal/parlor/turn_lights/off",
+        "luigis_mansion:room/normal/parlor/reset/blockade",
+        "luigis_mansion:room/normal/parlor/reset/candle_1",
+        "luigis_mansion:room/normal/parlor/reset/candle_2",
+        "luigis_mansion:room/normal/parlor/reset/candle_3",
+        "luigis_mansion:room/normal/parlor/reset/chair",
+        "luigis_mansion:room/normal/parlor/reset/chest",
+        "luigis_mansion:room/normal/parlor/reset/closet",
+        "luigis_mansion:room/normal/parlor/reset/couch",
+        "luigis_mansion:room/normal/parlor/reset/lamp",
+        "luigis_mansion:room/normal/parlor/reset/painting_1",
+        "luigis_mansion:room/normal/parlor/reset/painting_2",
+        "luigis_mansion:room/normal/parlor/reset/painting_3",
+        "luigis_mansion:room/normal/parlor/reset/painting_4",
+        "luigis_mansion:room/normal/parlor/reset/painting_5",
+        "luigis_mansion:room/normal/parlor/reset/painting_6",
+        "luigis_mansion:room/normal/parlor/reset/painting_7",
+        "luigis_mansion:room/normal/parlor/reset/table_1",
+        "luigis_mansion:room/normal/parlor/reset/table_2",
+        "luigis_mansion:room/normal/parlor/reset/table_3",
+        "luigis_mansion:room/normal/parlor/reset/table_4",
+        "luigis_mansion:room/normal/parlor/reset/vacuumable_1",
+        "luigis_mansion:room/normal/parlor/reset/vacuumable_2"
+    ]
+}

@@ -1,0 +1,1 @@
+execute if entity @s[x=677.5,y=116,z=-19.5,distance=..1,tag=vacuum] unless score #astral_hall_lamp Search matches 1 store success score #astral_hall_lamp Search run scoreboard players add #astral_hall_lamp Searching 1

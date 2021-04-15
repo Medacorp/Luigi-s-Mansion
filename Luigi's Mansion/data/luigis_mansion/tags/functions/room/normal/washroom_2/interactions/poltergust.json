@@ -1,0 +1,17 @@
+{
+	"values": [
+		"luigis_mansion:room/normal/washroom_2/interactions/poltergust/lamp",
+		"luigis_mansion:room/normal/washroom_2/interactions/poltergust/mirror",
+		"luigis_mansion:room/normal/washroom_2/interactions/poltergust/painting_1",
+		"luigis_mansion:room/normal/washroom_2/interactions/poltergust/painting_2",
+		"luigis_mansion:room/normal/washroom_2/interactions/poltergust/painting_3",
+		"luigis_mansion:room/normal/washroom_2/interactions/poltergust/poster",
+		"luigis_mansion:room/normal/washroom_2/interactions/poltergust/radiator",
+		"luigis_mansion:room/normal/washroom_2/interactions/poltergust/shelf",
+		"luigis_mansion:room/normal/washroom_2/interactions/poltergust/sink",
+		"luigis_mansion:room/normal/washroom_2/interactions/poltergust/toilet",
+		"luigis_mansion:room/normal/washroom_2/interactions/poltergust/toilet_paper",
+		"luigis_mansion:room/normal/washroom_2/interactions/poltergust/toilet_storage",
+		"luigis_mansion:room/normal/washroom_2/interactions/poltergust/water"
+	]
+}
