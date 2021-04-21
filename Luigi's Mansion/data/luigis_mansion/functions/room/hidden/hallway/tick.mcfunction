@@ -1,13 +1,13 @@
 execute unless score #hallway Ticking matches 1 run function #luigis_mansion:room/hidden/hallway/load
-execute as @a[x=698,y=111,z=31,dx=8,dy=15,dz=26] unless entity @s[scores={Room=31}] run scoreboard players operation @s LastRoom = @s Room
+execute as @a[gamemode=!spectator,x=698,y=111,z=31,dx=8,dy=15,dz=26] unless entity @s[scores={Room=31}] run scoreboard players operation @s LastRoom = @s Room
 execute as @e[type=!minecraft:item_frame,x=698,y=111,z=31,dx=8,dy=15,dz=26] run scoreboard players set @s Room 31
-execute as @a[x=698,y=111,z=17,dx=8,dy=6,dz=40] unless entity @s[scores={Room=31}] run scoreboard players operation @s LastRoom = @s Room
+execute as @a[gamemode=!spectator,x=698,y=111,z=17,dx=8,dy=6,dz=40] unless entity @s[scores={Room=31}] run scoreboard players operation @s LastRoom = @s Room
 execute as @e[type=!minecraft:item_frame,x=698,y=111,z=17,dx=8,dy=6,dz=40] run scoreboard players set @s Room 31
-execute as @a[x=664,y=111,z=17,dx=42,dy=6,dz=8] unless entity @s[scores={Room=31}] run scoreboard players operation @s LastRoom = @s Room
+execute as @a[gamemode=!spectator,x=664,y=111,z=17,dx=42,dy=6,dz=8] unless entity @s[scores={Room=31}] run scoreboard players operation @s LastRoom = @s Room
 execute as @e[type=!minecraft:item_frame,x=664,y=111,z=17,dx=42,dy=6,dz=8] run scoreboard players set @s Room 31
-execute as @a[x=664,y=111,z=-10,dx=8,dy=6,dz=42] unless entity @s[scores={Room=31}] run scoreboard players operation @s LastRoom = @s Room
+execute as @a[gamemode=!spectator,x=664,y=111,z=-10,dx=8,dy=6,dz=42] unless entity @s[scores={Room=31}] run scoreboard players operation @s LastRoom = @s Room
 execute as @e[type=!minecraft:item_frame,x=664,y=111,z=-10,dx=8,dy=6,dz=42] run scoreboard players set @s Room 31
-execute as @a[x=653,y=111,z=-10,dx=19,dy=6,dz=8] unless entity @s[scores={Room=31}] run scoreboard players operation @s LastRoom = @s Room
+execute as @a[gamemode=!spectator,x=653,y=111,z=-10,dx=19,dy=6,dz=8] unless entity @s[scores={Room=31}] run scoreboard players operation @s LastRoom = @s Room
 execute as @e[type=!minecraft:item_frame,x=653,y=111,z=-10,dx=19,dy=6,dz=8] run scoreboard players set @s Room 31
 tag @e[tag=ghost,scores={Room=31}] add hallway
 

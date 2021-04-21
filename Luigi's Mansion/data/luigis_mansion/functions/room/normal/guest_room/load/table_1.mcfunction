@@ -1,2 +1,2 @@
-execute unless data storage luigis_mansion:data current_state.current_data.money_spawned{guest_room:1b} run data merge block 707 117 -24 {LootTable:"luigis_mansion:search"}
-execute unless data storage luigis_mansion:data current_state.current_data.money_spawned{guest_room:1b} run data merge block 707 117 -25 {LootTable:"luigis_mansion:search"}
+execute unless data storage luigis_mansion:data current_state.current_data.money_spawned{guest_room:1b} run data merge block 736 26 -45 {LootTable:"luigis_mansion:search"}
+execute unless data storage luigis_mansion:data current_state.current_data.money_spawned{guest_room:1b} run data merge block 736 26 -46 {LootTable:"luigis_mansion:search"}

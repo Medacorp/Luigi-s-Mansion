@@ -93,6 +93,7 @@ execute if entity @s[scores={Dialog=131..150}] as @e[tag=e_gadd,tag=dialog,limit
 execute if entity @s[scores={Dialog=150}] run tag @e[tag=e_gadd,tag=dialog,limit=1] remove walk
 execute if entity @s[scores={Dialog=150}] run tag @e[tag=e_gadd,tag=dialog,limit=1] add poltergust
 execute if entity @s[scores={Dialog=150..459}] at @e[tag=e_gadd,tag=dialog,limit=1] positioned ~ ~0.5 ~ positioned ^ ^ ^0.5 as @e[tag=gold_ghost,tag=dialog,limit=1] facing entity @s feet run function luigis_mansion:items/poltergust_3000/vacuuming/e_gadd
+execute if entity @s[scores={Dialog=150}] run scoreboard players set @e[tag=gold_ghost,tag=dialog,limit=1] AnimationProg 0
 execute if entity @s[scores={Dialog=150}] run tag @e[tag=gold_ghost,tag=dialog,limit=1] add hurt
 execute if entity @s[scores={Dialog=220}] run tag @e[tag=gold_ghost,tag=dialog,limit=1] add fleeing
 execute if entity @s[scores={Dialog=220}] as @e[tag=gold_ghost,tag=dialog,limit=1] at @s run teleport @s ~ ~ ~ facing 720 20.3 28
@@ -103,6 +104,7 @@ execute if entity @s[scores={Dialog=272}] as @e[tag=gold_ghost,tag=dialog,limit=
 execute if entity @s[scores={Dialog=273..292}] as @e[tag=gold_ghost,tag=dialog,limit=1] at @s run teleport @s ^ ^ ^0.2
 execute if entity @s[scores={Dialog=293}] as @e[tag=gold_ghost,tag=dialog,limit=1] at @s run teleport @s ~ ~ ~ facing 723 20.3 35
 execute if entity @s[scores={Dialog=294..323}] as @e[tag=gold_ghost,tag=dialog,limit=1] at @s facing 723 20.3 35 run teleport @s ^ ^ ^0.1
+execute if entity @s[scores={Dialog=317}] run scoreboard players set @e[tag=gold_ghost,tag=dialog,limit=1] AnimationProg 0
 execute if entity @s[scores={Dialog=317}] run tag @e[tag=gold_ghost,tag=dialog,limit=1] remove fleeing
 execute if entity @s[scores={Dialog=317}] run tag @e[tag=gold_ghost,tag=dialog,limit=1] remove hurt
 execute if entity @s[scores={Dialog=317..319}] as @e[tag=gold_ghost,tag=dialog,limit=1] at @s run teleport @s ~ ~ ~ ~60 ~

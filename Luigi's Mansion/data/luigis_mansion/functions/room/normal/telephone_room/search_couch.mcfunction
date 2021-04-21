@@ -1,4 +1,4 @@
-execute positioned 704 120 17 run function luigis_mansion:blocks/dust
+execute positioned 742 29 27 run function luigis_mansion:blocks/dust
 scoreboard players set #telephone_room_couch Searched 1
-tag @e[x=704.5,y=120,z=17.5,distance=..0.7,tag=ghost_marker] add spawn
-tag @e[x=704.5,y=120,z=17.5,distance=..0.7,tag=hidden_boo] add spawn
+tag @e[x=742.5,y=29,z=27.5,distance=..0.7,tag=ghost_marker] add spawn
+tag @e[x=742.5,y=29,z=27.5,distance=..0.7,tag=hidden_boo] add spawn

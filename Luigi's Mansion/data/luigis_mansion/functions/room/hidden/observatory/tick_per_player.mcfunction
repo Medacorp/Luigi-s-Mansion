@@ -4,3 +4,5 @@ execute if data storage luigis_mansion:data current_state.current_data.technical
 execute if data storage luigis_mansion:data current_state.current_data.technical_data{observatory_destroyed:1b} unless data storage luigis_mansion:data current_state.current_data.rooms.secret_altar{cleared:1b} unless entity @s[scores={MusicType=8}] unless entity @s[scores={MusicType=14}] unless entity @s[scores={MusicType=19}] unless entity @s[scores={MusicType=27}] unless entity @s[scores={MusicType=-1}] run function luigis_mansion:other/music/set/outside
 title @s[tag=!seen_room_name] title {"translate":"luigis_mansion:location.observatory"}
 tag @s add seen_room_name
+
+execute if data storage luigis_mansion:data current_state.current_data.technical_data{observatory_destroyed:1b} run particle minecraft:end_rod ~ ~ ~ 5 5 5 0 5 force @s

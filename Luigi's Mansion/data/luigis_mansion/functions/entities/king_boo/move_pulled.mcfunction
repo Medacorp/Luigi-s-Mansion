@@ -1,3 +1,3 @@
-teleport @s ^ ^ ^-0.05
+execute positioned ^ ^ ^-0.2 unless entity @a[gamemode=!spectator,distance=..0.2] positioned as @s run teleport @s ^ ^ ^-0.05
 scoreboard players add #temp Move 1
 execute if score #temp Move matches ..-1 positioned as @s run function luigis_mansion:entities/king_boo/move_pulled

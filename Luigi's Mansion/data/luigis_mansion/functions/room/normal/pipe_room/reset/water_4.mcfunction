@@ -1,2 +1,2 @@
-setblock 689 100 -4 minecraft:water
+setblock 690 9 5 minecraft:water
 scoreboard players reset #pipe_room_water_4

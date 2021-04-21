@@ -1,2 +1,2 @@
-fill 655 113 8 655 116 10 minecraft:orange_wool
+fill 654 22 -11 654 25 -9 minecraft:orange_wool
 scoreboard players reset #nanas_room_curtain_2

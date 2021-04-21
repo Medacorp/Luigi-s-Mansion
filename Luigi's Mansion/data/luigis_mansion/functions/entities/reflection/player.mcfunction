@@ -2,7 +2,7 @@ tag @s remove mirrored
 scoreboard players operation #temp ReflectionNr = @s ReflectionNr
 execute if score @s ReflectionNr matches 1.. as @e[type=minecraft:armor_stand,tag=reflection] if score @s ReflectionNr = #temp ReflectionNr run tag @s add this_reflection
 execute if score @s ReflectionNr matches 1.. unless entity @e[tag=this_reflection,limit=1] run scoreboard players reset @s ReflectionNr
-execute unless score @s ReflectionNr matches 1.. run summon minecraft:armor_stand ~ ~ ~ {Tags:["reflection","this_reflection","new"],Pose:{Head:[0.0f,0.0f,0.01f]},ShowArms:1b,NoBasePlate:1b,NoGravity:1b}
+execute unless score @s ReflectionNr matches 1.. run summon minecraft:armor_stand ~ ~ ~ {CustomName:'{"translate":"luigis_mansion:entity.reflection"}',Tags:["reflection","this_reflection","new"],Pose:{Head:[0.0f,0.0f,0.01f]},ShowArms:1b,NoBasePlate:1b,NoGravity:1b}
 execute unless score @s ReflectionNr matches 1.. run scoreboard players operation @e[tag=this_reflection,tag=new,limit=1] ReflectionNr > @e[scores={ReflectionNr=1..}] ReflectionNr
 execute unless score @s ReflectionNr matches 1.. run scoreboard players add @e[tag=this_reflection,tag=new,limit=1] ReflectionNr 1 
 execute unless score @s ReflectionNr matches 1.. run scoreboard players operation @s ReflectionNr = @e[tag=this_reflection,tag=new,limit=1] ReflectionNr

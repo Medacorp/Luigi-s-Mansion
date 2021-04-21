@@ -2,6 +2,7 @@ scoreboard players add @s Time 1
 execute if entity @s[scores={Time=1..89}] run stopsound @a[scores={Room=14}] music
 execute if entity @s[scores={Time=1}] run scoreboard players set @a[scores={Room=14}] Music 310
 execute if entity @s[scores={Time=40}] run fill 674 102 39 674 103 39 minecraft:air
+execute if entity @s[scores={Time=40..240}] run fill 673 102 39 681 108 26 minecraft:air replace minecraft:light
 execute if entity @s[scores={Time=40}] run clone 673 102 39 681 108 38 673 102 37 replace move
 execute if entity @s[scores={Time=40}] run setblock 674 102 39 minecraft:andesite_stairs[facing=north,shape=straight,half=bottom]
 execute if entity @s[scores={Time=40}] run setblock 674 103 38 minecraft:oak_fence[north=true]

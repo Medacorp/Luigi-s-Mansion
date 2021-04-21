@@ -2,6 +2,7 @@ scoreboard players add @s Time 1
 execute if entity @s[scores={Time=1..89}] run stopsound @a[scores={Room=14}] music
 execute if entity @s[scores={Time=1}] run scoreboard players set @a[scores={Room=14}] Music 310
 execute if entity @s[scores={Time=40}] run fill 682 11 -52 682 12 -52 minecraft:air
+execute if entity @s[scores={Time=40..240}] run fill 681 11 -52 689 17 -39 minecraft:air replace minecraft:light
 execute if entity @s[scores={Time=40}] run clone 681 11 -52 689 17 -51 681 11 -51 replace move
 execute if entity @s[scores={Time=40}] run setblock 682 11 -52 minecraft:andesite_stairs[facing=south,shape=straight,half=bottom]
 execute if entity @s[scores={Time=40}] run setblock 682 12 -51 minecraft:oak_fence[south=true]
@@ -27,6 +28,7 @@ teleport @s[x=689.5,y=11,z=-63.5,distance=..1.5] ~-1.5 ~ ~
 tag @s[scores={Time=280}] remove move_wall
 
 execute if entity @s[scores={Time=40}] run fill 678 11 -52 678 12 -52 minecraft:air
+execute if entity @s[scores={Time=40..240}] run fill 671 11 -52 679 17 -39 minecraft:air replace minecraft:light
 execute if entity @s[scores={Time=40}] run clone 671 11 -52 679 17 -51 671 11 -51 replace move
 execute if entity @s[scores={Time=40}] run setblock 678 11 -52 minecraft:andesite_stairs[facing=south,shape=straight,half=bottom]
 execute if entity @s[scores={Time=40}] run setblock 678 12 -51 minecraft:oak_fence[south=true]

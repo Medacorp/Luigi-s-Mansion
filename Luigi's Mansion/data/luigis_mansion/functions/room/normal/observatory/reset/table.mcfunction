@@ -1,3 +1,3 @@
-data merge block 673 111 -34 {Items:[]}
-data merge block 673 111 -33 {Items:[]}
+data merge block 641 20 -76 {Items:[]}
+data merge block 641 20 -75 {Items:[]}
 scoreboard players reset #observatory_table

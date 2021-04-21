@@ -1,14 +1,14 @@
-summon minecraft:area_effect_cloud 707 111 36 {Tags:["choice"]}
-summon minecraft:area_effect_cloud 714 111 35 {Tags:["choice"]}
-summon minecraft:area_effect_cloud 710 112 36 {Tags:["choice"]}
-summon minecraft:area_effect_cloud 708 113 36 {Tags:["choice"]}
-summon minecraft:area_effect_cloud 716 111 34 {Tags:["choice"]}
-summon minecraft:area_effect_cloud 715 111 33 {Tags:["choice"]}
-summon minecraft:area_effect_cloud 707 113 30 {Tags:["choice"]}
-summon minecraft:area_effect_cloud 714 112 19 {Tags:["choice"]}
-summon minecraft:area_effect_cloud 715 114 19 {Tags:["choice"]}
-summon minecraft:area_effect_cloud 716 112 19 {Tags:["choice"]}
-summon minecraft:area_effect_cloud 708 113 22 {Tags:["choice"]}
+summon minecraft:area_effect_cloud 738 20 48 {Tags:["choice"]}
+summon minecraft:area_effect_cloud 745 20 47 {Tags:["choice"]}
+summon minecraft:area_effect_cloud 741 21 48 {Tags:["choice"]}
+summon minecraft:area_effect_cloud 739 22 48 {Tags:["choice"]}
+summon minecraft:area_effect_cloud 747 20 46 {Tags:["choice"]}
+summon minecraft:area_effect_cloud 746 20 45 {Tags:["choice"]}
+summon minecraft:area_effect_cloud 738 22 42 {Tags:["choice"]}
+summon minecraft:area_effect_cloud 745 21 31 {Tags:["choice"]}
+summon minecraft:area_effect_cloud 746 23 31 {Tags:["choice"]}
+summon minecraft:area_effect_cloud 747 21 31 {Tags:["choice"]}
+summon minecraft:area_effect_cloud 739 22 34 {Tags:["choice"]}
 execute as @e[type=minecraft:area_effect_cloud,tag=choice] at @s if entity @e[tag=hidden_boo,distance=..1,limit=1] run kill @s
 execute at @e[type=minecraft:area_effect_cloud,tag=choice,limit=1,sort=random] run teleport @s ~ ~ ~
 execute if entity @e[type=minecraft:area_effect_cloud,tag=choice,limit=1] run tag @s add noticed_by_boo_radar

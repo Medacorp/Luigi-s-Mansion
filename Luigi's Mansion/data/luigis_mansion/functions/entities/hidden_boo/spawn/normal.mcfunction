@@ -1,4 +1,4 @@
-execute if entity @s[tag=!trap] run function luigis_mansion:entities/hidden_boo/move_to_center/normal
+execute if entity @s[tag=!trap] run function luigis_mansion:entities/hidden_boo/move_to_center
 
 execute at @s[tag=bamboo] run function luigis_mansion:spawn_entities/boo/bamboo
 execute at @s[tag=boo_b_hatch] run function luigis_mansion:spawn_entities/boo/boo_b_hatch

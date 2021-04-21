@@ -1,1 +1,0 @@
-fill 706 121 19 707 121 20 minecraft:air

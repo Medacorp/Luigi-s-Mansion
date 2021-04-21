@@ -1,5 +1,6 @@
 scoreboard players add @s Dialog 1
 execute at @e[tag=e_gadd,scores={Room=-3},limit=1] facing entity @s feet run teleport @e[tag=e_gadd,scores={Room=-3},limit=1] ~ ~ ~ ~ ~
+execute if entity @s[scores={Dialog=1}] run data merge entity @e[tag=marios_painting,limit=1] {Invisible:1b,Fixed:1b}
 execute if entity @s[scores={Dialog=40}] run data merge entity @e[tag=marios_painting,limit=1] {Facing:1b,ItemRotation:0b}
 execute if entity @s[scores={Dialog=40}] run teleport @e[tag=marios_painting,limit=1] 770 80 -12
 execute if entity @s[scores={Dialog=45}] run teleport @e[tag=marios_painting,limit=1] 770 79 -12

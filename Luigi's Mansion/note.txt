@@ -28,7 +28,7 @@ To define a new mansion, you need to set the mansion_type value, mansion_data_in
 #switch_boo_stats (bool): Whether the boos' base health and speed values are that of the original's hidden mansion.
 #changing_max_health (bool): Whether players' max health is displayed ("<Health>/<MAX> Health")
 
-None of these variables affect non-mansion rooms.
+These variables do not affect gold dummy ghosts and damage taken outside the mansion.
 
 == Check compatibility/dependency ==
 To set this add-on as loaded, allowing for other add-ons to check/warn for compatibility issues, add to the function tag #luigis_mansion:loaded_add_ons a function with the following contents: scoreboard players set #<add-on> Loaded 1
@@ -43,4 +43,5 @@ If damage is given and MaxHealth set in the same tick, player is first damaged, 
 Max health will return to 100 after 5 to 10 seconds depending on how much the player moves. This timer resets whenever the player is scared by a ghost.
 Room -4 is the gallery, regardless of 3ds remake add-on or not. The 3ds remake add-on will simply teleport players in the old gallery to the new one, and never start ticking the old one.
 Negative Room values are reserved for non-mansion rooms and Room 0 the boo woods, all positive room scores can be used freely; the GBH map can have a range of "valid" rooms to open the map in
-To receive development build updates, pull from https://github.com/Dhranios/Luigi-s-Mansion-Data-Pack into the root of the data pack.
+MirrorX means the reflection is moved on the X axis (mirror aligned with Z axis), and Mirror Z on Z axis (aligned with X axis); at most 1 of these scores should ever be used.
+To receive development build updates, pull from https://github.com/Dhranios/Luigi-s-Mansion into the root of the data pack.

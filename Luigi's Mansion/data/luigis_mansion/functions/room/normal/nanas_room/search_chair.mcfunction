@@ -1,5 +1,5 @@
-execute positioned 659 111 -4 run function luigis_mansion:blocks/dust
+execute positioned 658 20 -23 run function luigis_mansion:blocks/dust
 scoreboard players set #nanas_room_chair Searched 1
-tag @e[x=659.5,y=111,z=-3.5,distance=..0.7,tag=hidden_boo] add spawn
-tag @e[x=659.5,y=111,z=-3.5,distance=..0.7,tag=ghost_marker] add spawn
-teleport @e[x=659.5,y=111,z=-3.5,distance=..0.7,tag=spawn] 660.0 111 -4
+tag @e[x=658.5,y=20,z=-22.5,distance=..0.7,tag=hidden_boo] add spawn
+tag @e[x=658.5,y=20,z=-22.5,distance=..0.7,tag=ghost_marker] add spawn
+teleport @e[x=658.5,y=20,z=-22.5,distance=..0.7,tag=spawn] 659.0 20 -23

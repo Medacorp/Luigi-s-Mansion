@@ -1,2 +1,2 @@
-fill 659 116 30 659 112 36 minecraft:white_wool
+fill 654 24 21 654 21 27 minecraft:white_wool
 scoreboard players reset #bathroom_2_curtain

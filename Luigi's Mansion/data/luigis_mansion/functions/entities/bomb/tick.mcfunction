@@ -12,5 +12,6 @@ tag @s[tag=spawned_particle] remove spawned_particle
 tag @s[tag=!spawned_particle,tag=!no_spawned_particle] add spawned_particle
 tag @s[tag=no_spawned_particle] remove no_spawned_particle
 execute at @s run function luigis_mansion:animations/bomb/turn
-execute at @s[scores={Move=10}] run summon minecraft:creeper ~ ~ ~ {CustomName:'{"translate":"luigis_mansion:entity.bomb"}',Fuse:0s,ExplosionRadius:2b,Invulnerable:1b}
+execute at @s[scores={Move=10}] run summon minecraft:creeper ~ ~ ~ {CustomName:'{"translate":"luigis_mansion:entity.bomb"}',Fuse:0s,ExplosionRadius:2b,Invulnerable:1b,Silent:1b}
+execute at @s[scores={Move=10}] run playsound minecraft:entity.generic.explode hostile @s ~ ~ ~ 2
 tag @s[scores={Move=10}] add dead

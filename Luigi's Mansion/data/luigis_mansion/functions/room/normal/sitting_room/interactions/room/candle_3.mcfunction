@@ -1,2 +1,2 @@
-execute if score #sitting_room_candle_3 Searched matches 1 run setblock 713 112 -12 minecraft:redstone_torch[lit=false]
-execute unless score #sitting_room_candle_3 Searched matches 1 run setblock 713 112 -12 minecraft:redstone_torch[lit=true]
+execute if score #sitting_room_candle_3 Searched matches 1 run setblock 742 21 -29 minecraft:redstone_torch[lit=false]
+execute unless score #sitting_room_candle_3 Searched matches 1 run setblock 742 21 -29 minecraft:redstone_torch[lit=true]

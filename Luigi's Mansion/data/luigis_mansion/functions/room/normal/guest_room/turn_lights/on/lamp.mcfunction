@@ -1,2 +1,4 @@
-execute if block 712 112 -32 minecraft:redstone_lamp run fill 712 111 -32 713 111 -31 minecraft:stone_button[face=ceiling,powered=true]
-execute unless block 712 112 -32 minecraft:redstone_lamp run fill 712 117 -32 713 117 -31 minecraft:stone_button[face=floor,powered=true]
+execute if block 742 21 -52 minecraft:redstone_lamp run fill 741 20 -53 742 20 -52 minecraft:stone_button[face=ceiling,powered=true]
+execute if block 742 21 -52 minecraft:redstone_lamp run fill 729 20 -53 728 20 -52 minecraft:stone_button[face=ceiling,powered=true]
+execute unless block 742 21 -52 minecraft:redstone_lamp run fill 741 26 -53 742 26 -52 minecraft:stone_button[face=floor,powered=true]
+execute unless block 742 21 -52 minecraft:redstone_lamp run fill 729 26 -53 728 26 -52 minecraft:stone_button[face=floor,powered=true]

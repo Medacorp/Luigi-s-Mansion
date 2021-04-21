@@ -1,3 +1,3 @@
-data merge block 701 120 48 {Items:[]}
-data merge block 701 120 47 {Items:[]}
+data merge block 747 29 71 {Items:[]}
+data merge block 747 29 70 {Items:[]}
 scoreboard players reset #armory_chest_3

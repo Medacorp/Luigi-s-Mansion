@@ -1,2 +1,2 @@
-data merge block 659 112 -32 {Items:[]}
+data merge block 643 21 -52 {Items:[]}
 scoreboard players reset #tea_room_tea_box

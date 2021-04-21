@@ -1,3 +1,3 @@
-fill 689 94 -9 687 97 -9 minecraft:barrier
-fill 689 98 -13 689 98 -10 minecraft:water
-fill 687 98 -10 688 98 -10 minecraft:water
+fill 690 3 0 688 6 0 minecraft:barrier
+fill 690 7 -4 690 7 -1 minecraft:water
+fill 688 7 -1 689 7 -1 minecraft:water

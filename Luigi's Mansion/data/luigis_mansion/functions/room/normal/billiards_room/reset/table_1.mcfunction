@@ -1,2 +1,2 @@
-data merge block 677 102 36 {Items:[]}
+data merge block 679 11 88 {Items:[]}
 scoreboard players reset #billiards_room_table_1

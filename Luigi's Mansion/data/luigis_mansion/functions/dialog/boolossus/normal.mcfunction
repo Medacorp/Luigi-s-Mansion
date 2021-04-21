@@ -24,7 +24,7 @@ execute if entity @s[scores={Dialog=378}] run tag @e[tag=boolossus,sort=random,t
 execute if entity @s[scores={Dialog=382}] run tag @e[tag=boolossus,sort=random,tag=!dialog_animation_start,limit=1] add dialog_animation_start
 execute if entity @s[scores={Dialog=386}] run tag @e[tag=boolossus,sort=random,tag=!dialog_animation_start,limit=1] add dialog_animation_start
 execute if entity @s[scores={Dialog=390}] run tag @e[tag=boolossus,sort=random,tag=!dialog_animation_start,limit=1] add dialog_animation_start
-execute if entity @s[scores={Dialog=472}] run scoreboard players add @e[tag=boolossus] Time 1
+execute if entity @s[scores={Dialog=472}] run scoreboard players add @e[tag=boolossus] ActionTime 1
 execute if entity @s[scores={Dialog=574..}] as @e[tag=boolossus] at @s run teleport @s ~ ~1 ~
 execute if entity @s[scores={Dialog=574}] as @a[tag=target,limit=1] at @s run teleport @s ~ 120 ~
 execute if entity @s[scores={Dialog=575}] as @a[tag=target,limit=1] at @s run teleport @s ~ 121 ~
@@ -49,4 +49,5 @@ execute if entity @s[scores={Dialog=593}] as @a[tag=target,limit=1] at @s run te
 execute if entity @s[scores={Dialog=594}] as @a[tag=target,limit=1] at @s run teleport @s ~ 140 ~
 execute if entity @s[scores={Dialog=595}] run tag @e[tag=boolossus,tag=!battle] add dead
 execute if entity @s[scores={Dialog=595}] run tag @a[tag=target,limit=1] remove target
+execute as @a[x=681.5,y=120,z=-12.5,distance=..0.7,tag=target,limit=1] at @s run teleport @s ~-1.5 ~ ~
 execute if entity @s[scores={Dialog=595}] as @a run function luigis_mansion:entities/boolossus/to_arena/normal

@@ -16,6 +16,7 @@ execute if entity @s[scores={ActionTime=62..136}] align xz run scoreboard player
 execute if entity @s[scores={ActionTime=122}] align xz run playsound luigis_mansion:block.chandelier.rise hostile @a[tag=same_room] ~ ~1.5 ~ 2
 execute if entity @s[scores={ActionTime=123}] run clone ~-2 ~ ~-2 ~1 ~12 ~1 ~-2 ~1 ~-2 replace force
 execute if entity @s[scores={ActionTime=123}] run fill ~-2 ~ ~-2 ~1 ~ ~1 minecraft:air
+execute if entity @s[scores={ActionTime=52..201}] run fill ~-2 ~ ~-2 ~1 ~12 ~1 minecraft:air replace minecraft:light
 execute if entity @s[scores={ActionTime=129}] run clone ~-2 ~ ~-2 ~1 ~12 ~1 ~-2 ~1 ~-2 replace force
 execute if entity @s[scores={ActionTime=132}] align xz run playsound luigis_mansion:block.chandelier.rise hostile @a[tag=same_room] ~ ~3 ~ 2
 execute if entity @s[scores={ActionTime=137}] run clone ~-2 ~ ~-2 ~1 ~12 ~1 ~-2 ~1 ~-2 replace force

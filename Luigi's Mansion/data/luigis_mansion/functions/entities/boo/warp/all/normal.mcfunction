@@ -156,36 +156,35 @@ teleport @s[scores={Room=21}] 658 11 -15
 teleport @s[scores={Room=22}] 704 11 43
 teleport @s[scores={Room=23}] 704 11 77.0
 teleport @s[scores={Room=28}] 643 11 -45.0
-
-teleport @s[scores={Room=30}] 659 111 -25.0
-teleport @s[scores={Room=31,HallwaySection=1}] 702 111 -22
-teleport @s[scores={Room=31,HallwaySection=2}] 685 111 -6
-teleport @s[scores={Room=31,HallwaySection=3}] 668 111 4
-teleport @s[scores={Room=31,HallwaySection=4}] 660 111 21
-teleport @s[scores={Room=32}] 668 111 31
-teleport @s[scores={Room=33}] 659 111 31
-teleport @s[scores={Room=34}] 659 111 4
-teleport @s[scores={Room=35}] 677 111 -20
-teleport @s[scores={Room=37}] 679.0 102 26.0
-teleport @s[scores={Room=38}] 679.0 102 5
-teleport @s[scores={Room=39}] 712 111 28
-teleport @s[scores={Room=40}] 712 120 -27.0
-teleport @s[scores={Room=41}] 702 120 -13
-teleport @s[scores={Room=43}] 702 120 28
-teleport @s[scores={Room=44}] 708 120 8.0
-teleport @s[scores={Room=45}] 692 93 -31
-teleport @s[scores={Room=46}] 712 93 -31
-teleport @s[scores={Room=47}] 702 93 -18
+teleport @s[scores={Room=30}] 643 20 -45.0
+teleport @s[scores={Room=31,HallwaySection=1}] 716 20 -35
+teleport @s[scores={Room=31,HallwaySection=2}] 699 20 -19
+teleport @s[scores={Room=31,HallwaySection=3}] 682 20 -9
+teleport @s[scores={Room=31,HallwaySection=4}] 674 20 8
+teleport @s[scores={Room=32}] 664 20 41
+teleport @s[scores={Room=33}] 654 20 22
+teleport @s[scores={Room=34}] 658 20 -15
+teleport @s[scores={Room=35}] 666 20 -82
+teleport @s[scores={Room=37}] 681.0 11 78.0
+teleport @s[scores={Room=38}] 681.0 11 38
+teleport @s[scores={Room=39}] 743 20 40
+teleport @s[scores={Room=40}] 739 29 -45.0
+teleport @s[scores={Room=41}] 744 29 -13
+teleport @s[scores={Room=43}] 743 29 44
+teleport @s[scores={Room=44}] 746 29 18.0
+teleport @s[scores={Room=45}] 693 2 -52
+teleport @s[scores={Room=46}] 741 2 -52
+teleport @s[scores={Room=47}] 716 2 -18
 teleport @s[scores={Room=49}] 691 120 8.0
-teleport @s[scores={Room=51}] 708 120 43.0
-teleport @s[scores={Room=52}] 691 120 43.0
-teleport @s[scores={Room=54}] 692 93 -6
-teleport @s[scores={Room=55}] 709 93 -6
-teleport @s[scores={Room=56}] 712 111 -12
-teleport @s[scores={Room=57}] 712 111 -31.0
-teleport @s[scores={Room=58}] 691 120 -27.0
+teleport @s[scores={Room=51}] 754 29 66.0
+teleport @s[scores={Room=52}] 705 29 68.0
+teleport @s[scores={Room=54}] 693 2 3
+teleport @s[scores={Room=55}] 732 2 3
+teleport @s[scores={Room=56}] 741 20 -29
+teleport @s[scores={Room=57}] 741 20 -52.0
+teleport @s[scores={Room=58}] 696 29 -66.0
 
-execute at @s run summon minecraft:area_effect_cloud ~ ~ ~ {Tags:["boo_marker","new"],Duration:600}
+execute at @s run summon minecraft:area_effect_cloud ~ ~ ~ {Tags:["boo_marker","new"],Duration:600,CustomName:'{"translate":"luigis_mansion:entity.boo"}'}
 execute if entity @s[tag=bamboo] run tag @e[tag=boo_marker,tag=new] add bamboo
 execute if entity @s[tag=boo_b_hatch] run tag @e[tag=boo_marker,tag=new] add boo_b_hatch
 execute if entity @s[tag=boo_la_la] run tag @e[tag=boo_marker,tag=new] add boo_la_la

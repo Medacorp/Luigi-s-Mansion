@@ -2,7 +2,7 @@
     "pack": {
         "pack_format": 7,
         "description": {
-			"translate":"luigis_mansion_3ds_remake:data_pack.description"
+			"translate": "luigis_mansion_3ds_remake:data_pack.description"
 		}
     }
 }

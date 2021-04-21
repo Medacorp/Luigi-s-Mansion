@@ -1,2 +1,2 @@
-data merge block 697 93 -13 {Items:[]}
+data merge block 698 2 -4 {Items:[]}
 scoreboard players reset #pipe_room_bucket

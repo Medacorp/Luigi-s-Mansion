@@ -11,4 +11,4 @@ scoreboard players set @s[scores={HurtTime=1},tag=hurt] Sound 40
 execute if entity @s[scores={Sound=0},tag=fleeing] run playsound luigis_mansion:entity.jarvis.flee hostile @a[tag=same_room] ~ ~ ~ 1
 scoreboard players set @s[scores={Sound=0},tag=fleeing] Sound 40
 
-execute if entity @s[scores={StunTime=0},tag=!hurt,tag=!fleeing] run function luigis_mansion:entities/jarvis/play
+execute if entity @s[scores={StunTime=0},tag=!hurt,tag=!fleeing] run function #luigis_mansion:entities/jarvis/play

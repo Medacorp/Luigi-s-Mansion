@@ -1,1 +1,1 @@
-execute if data storage luigis_mansion:data current_state.current_data.rooms.astral_hall{cleared:1b} positioned 673 113 -20 run function luigis_mansion:blocks/lit_candles
+execute if data storage luigis_mansion:data current_state.current_data.rooms.astral_hall{cleared:1b} positioned 662 22 -82 run function luigis_mansion:blocks/lit_candles

@@ -6,7 +6,7 @@ execute if block 719 2 -47 minecraft:oak_door[open=true] if block 735 2 -47 mine
 execute if score #temp Searched matches 1..2 as @a[gamemode=!spectator,distance=..3,x=720.0,y=2,z=-46.5] if data storage luigis_mansion:data current_state.current_data.obtained_keys{cellar:1b} unless data storage luigis_mansion:data current_state.current_data.used_keys{cellar:1b} run function luigis_mansion:room/normal/cellar/unlock_door
 execute if block 719 2 -47 #minecraft:doors[open=true] unless data storage luigis_mansion:data current_state.current_data.used_keys{cellar:1b} positioned 719 2 -47 run function luigis_mansion:blocks/closed_door
 execute unless data storage luigis_mansion:data current_state.current_data.used_keys{cellar:1b} if score #temp Searched matches 1..2 run scoreboard players set #temp Searched -1
-execute unless entity @a[gamemode=!spectator,distance=..3,x=720.0,y=2,z=-46.5] unless entity @a[gamemode=!spectator,distance=..3,x=735.0,y=2,z=-25.5] if score #temp Searched matches 1..2 run scoreboard players set #temp Searched 0
+execute unless entity @a[gamemode=!spectator,distance=..3,x=720.0,y=2,z=-46.5] unless entity @a[gamemode=!spectator,distance=..3,x=735.0,y=2,z=-46.5] if score #temp Searched matches 1..2 run scoreboard players set #temp Searched 0
 
 execute if score #temp Searched matches 1 run fill 719 2 -47 719 3 -47 minecraft:air replace #minecraft:doors
 execute if score #temp Searched matches 1 run fill 735 2 -47 735 3 -47 minecraft:air replace #minecraft:doors

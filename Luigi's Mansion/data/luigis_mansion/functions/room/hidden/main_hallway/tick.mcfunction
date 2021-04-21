@@ -1,12 +1,12 @@
 execute unless score #main_hallway Ticking matches 1 run function #luigis_mansion:room/hidden/main_hallway/load
 execute if entity @a[advancements={luigis_mansion:keys={main_stairs=false}},limit=1] run function luigis_mansion:room/hidden/main_stairs/lock_door
-execute as @a[x=698,y=102,z=-23,dx=8,dy=6,dz=60] unless entity @s[scores={Room=10}] run scoreboard players operation @s LastRoom = @s Room
+execute as @a[gamemode=!spectator,x=698,y=102,z=-23,dx=8,dy=6,dz=60] unless entity @s[scores={Room=10}] run scoreboard players operation @s LastRoom = @s Room
 execute as @e[type=!minecraft:item_frame,x=698,y=102,z=-23,dx=8,dy=6,dz=60] run scoreboard players set @s Room 10
-execute as @a[x=664,y=102,z=17,dx=42,dy=6,dz=8] unless entity @s[scores={Room=10}] run scoreboard players operation @s LastRoom = @s Room
+execute as @a[gamemode=!spectator,x=664,y=102,z=17,dx=42,dy=6,dz=8] unless entity @s[scores={Room=10}] run scoreboard players operation @s LastRoom = @s Room
 execute as @e[type=!minecraft:item_frame,x=664,y=102,z=17,dx=42,dy=6,dz=8] run scoreboard players set @s Room 10
-execute as @a[x=664,y=102,z=-10,dx=8,dy=6,dz=42] unless entity @s[scores={Room=10}] run scoreboard players operation @s LastRoom = @s Room
+execute as @a[gamemode=!spectator,x=664,y=102,z=-10,dx=8,dy=6,dz=42] unless entity @s[scores={Room=10}] run scoreboard players operation @s LastRoom = @s Room
 execute as @e[type=!minecraft:item_frame,x=664,y=102,z=-10,dx=8,dy=6,dz=42] run scoreboard players set @s Room 10
-execute as @a[x=653,y=102,z=-10,dx=19,dy=6,dz=8] unless entity @s[scores={Room=10}] run scoreboard players operation @s LastRoom = @s Room
+execute as @a[gamemode=!spectator,x=653,y=102,z=-10,dx=19,dy=6,dz=8] unless entity @s[scores={Room=10}] run scoreboard players operation @s LastRoom = @s Room
 execute as @e[type=!minecraft:item_frame,x=653,y=102,z=-10,dx=19,dy=6,dz=8] run scoreboard players set @s Room 10
 tag @e[tag=ghost,scores={Room=10}] add hallway
 

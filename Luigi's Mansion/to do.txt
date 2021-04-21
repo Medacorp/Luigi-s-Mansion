@@ -1,35 +1,45 @@
 bugs:
-having a non-ticking non-reset room will make all entities that look at players in said room continue moving forward, rather than go "home" or stop moving
-ghosts switching animations often don't reset AnimationProg
+having a non-ticking non-reset room will make all entities that look at players in said room continue moving forward, rather than vanish (portrait ghosts should vanish too, resetting them, except shivers; vacuumable ghosts should be removed from existence)
+toads and e. gadd switching animations often don't reset AnimationProg
 ghosts that vanish lose some info (eg color for beta ghosts); fix: do not replace the entity, make them move back down when they vanish; make them invisible with specific armor values; give them the unseen idle animation (rename current idle to haunt); remove ghost marker entity
-foyer, main hallway, hallway, attic hallway and basement hallway sections aren't considered separate rooms (no resetting or hallways partially)
-locked door animations still uses clone, rather than setblock-ing a new door
+foyer, main hallway, hallway, attic hallway and basement hallway sections aren't considered separate rooms (no resetting of hallways partially, nor resetting rooms around hallways when traversing one)
 wardrobe room closet ghosts (and the resulting money from the speedy spirit) tend to get stuck in the closet
-boo warping is broken, they no longer know what room they end up in and what room section they're in
 when boos attack, they don't move to the target's y coordinate, making them miss the player
-pulling boos with multiple players can result in the boo being pulled into a player leading to massive damage
-money spawning on the lowest floor of a room doesn't get the room score unless moving up (increase room size by 2 on y and move it 1 down)
+money spawning on the floor of a room in the hidden mansion doesn't get the room score unless moving up (increase room size by 2 on y and move it 1 down)
+elemental ghosts disappear when the room lights up
+elemental ghosts can appear multiple times from 1 source, if the prior ones are far away enough
+boo warping is broken, they no longer know what room they end up in (current room/section score+direction -> room to end up in) and what room section they're in (update coordinates)
 
 to do:
-add functional mirrors (WIP, working on converting normal mansion to allow this (coordinates left))
+add room headers for spectators (set room score, but don't tick room)
+add functional mirrors (WIP (normal done, working on converting hidden mansion to allow this (coordinates left); fix hidden mansion trick door)
 add cinema ghost shadow
 add missing sounds (@LaserRanger is working on this)
 add missing models (portrait ghosts+corresponding objects; biff atlas and after, excluding madame clairvoya, boolossus and king boo (not bowser or portrificationizing king boo))
-add boo idle animation is missing
+add portrificationizing ghost/mario animation in the first section of the portrificationizer
+add boo idle animation is empty
 add king boo magic animation (also make mario turn to bowser)
 add ghost, puncher and twirler smug and basher animations
-change boolossus to have the boos look up/down as they move up/down
+add beta animations for all ghosts (appearing, twirler attack, etc.)
+change ghost health to not be hardcoded base values, and grab them from the mansion data instead (remove health modifier scores altogether)
+change normal ghost models to leather horse armor (allows separating color for the beta map)
+change boolossus to have the boos look up/down (model already rotated if the entity looks up/down, but the entity doesn't change rotation yet except when merging)
 change boos to move up/down like boolossus
 change boolossus to move up/down more randomly, rather than all in sync, until one attacks, desyncing them
 pre-build boss battle "rooms", rather than generate them (also rotate to face same way as mansion)
+separate vacuumable ghost (including gold mice) spawning from waves, re-triggering when a player newly enters the room, even it it was non-ticking, non-reset
 
 conditional:
 go through both mansions and replace brewing stands and redstone torches with candles; remodel candles (when you can no longer extinguish them by hand in adventure); not if replacing all furniture
+use markers, if they are deemed useful
 
 maybe:
 replace all furniture with models and barriers (allows for the shaking animation and nuking of all map files)
 
 
+
+
+NOT YET!!!
 3ds add-on:
 remove the couple chairs in the tea room
 remove the 2 pans in the kitchen
@@ -38,3 +48,7 @@ add new gallery
 add gallery battles
 add slightly modified strings (such as uncle grimmly call "prefers rooms with mirrors *and clothes*")
 add teleporting of players in luigis_mansion:hidden to luigis_mansion:normal with Z = Z * -1 + 15
+
+beta add-on:
+add basher behavior
+add luigis_beta_mansion:mansion dimension

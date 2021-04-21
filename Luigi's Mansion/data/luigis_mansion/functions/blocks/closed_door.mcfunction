@@ -1,1 +1,1 @@
-execute unless entity @e[type=minecraft:area_effect_cloud,distance=..0.7,tag=door,limit=1] run summon minecraft:area_effect_cloud ~ ~ ~ {Tags:["door"],Duration:61}
+execute unless entity @e[type=minecraft:area_effect_cloud,distance=..0.7,tag=door,limit=1] run summon minecraft:area_effect_cloud ~ ~ ~ {Tags:["door"],Duration:61,CustomName:'{"translate":"luigis_mansion:entity.door"}'}

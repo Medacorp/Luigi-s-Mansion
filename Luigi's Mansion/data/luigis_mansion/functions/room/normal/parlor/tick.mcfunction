@@ -1,8 +1,8 @@
 execute unless score #parlor Ticking matches 1 run function #luigis_mansion:room/normal/parlor/load
-execute as @a[x=712,y=20,z=17,dx=17,dy=6,dz=21] unless entity @s[scores={Room=2}] run scoreboard players operation @s LastRoom = @s Room
-execute as @e[type=!minecraft:item_frame,x=712,y=20,z=17,dx=17,dy=6,dz=21] run scoreboard players set @s Room 2
+execute as @a[gamemode=!spectator,x=712,y=19,z=17,dx=17,dy=8,dz=21] unless entity @s[scores={Room=2}] run scoreboard players operation @s LastRoom = @s Room
+execute as @e[type=!minecraft:item_frame,x=712,y=19,z=17,dx=17,dy=8,dz=21] run scoreboard players set @s Room 2
 
-execute as @a[gamemode=!spectator,x=712,y=20,z=17,dx=17,dy=6,dz=21] run function luigis_mansion:room/normal/parlor/tick_per_player
+execute as @a[gamemode=!spectator,x=712,y=19,z=17,dx=17,dy=8,dz=21] run function luigis_mansion:room/normal/parlor/tick_per_player
 
 execute as @e[tag=eternal_gold_coin,scores={Room=2}] run scoreboard players add #temp Wave 1
 execute if score #temp Wave matches ..14 if data storage luigis_mansion:data {found_e_gadd:1b} run data modify storage luigis_mansion:data current_state.current_data.money_spawned merge value {parlor_money:1b}

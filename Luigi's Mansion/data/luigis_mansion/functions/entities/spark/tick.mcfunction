@@ -21,8 +21,39 @@ execute at @s[scores={SpawnTime=1..20}] if block ^ ^ ^0.3 #luigis_mansion:ghosts
 execute at @s[scores={SpawnTime=21..200}] if block ^ ^ ^0.3 #luigis_mansion:ghosts_ignore run teleport @s ^ ^ ^0.01
 execute at @s[tag=spawn] if block ~ ~-0.01 ~ #luigis_mansion:ghosts_ignore run teleport @s ~ ~-0.01 ~
 execute at @s[scores={Turn=0},tag=spawn] run function luigis_mansion:entities/spark/turn
+data modify entity @s[scores={SpawnTime=140}] {ArmorItems:[{},{},{},{}]}
+data modify entity @s[scores={SpawnTime=142}] {ArmorItems:[{},{},{},{id:"minecraft:diamond_pickaxe",Count:1b,tag:{Unbreakable:1b,Damage:1,CustomModelData:87}}]}
+data modify entity @s[scores={SpawnTime=144}] {ArmorItems:[{},{},{},{}]}
+data modify entity @s[scores={SpawnTime=146}] {ArmorItems:[{},{},{},{id:"minecraft:diamond_pickaxe",Count:1b,tag:{Unbreakable:1b,Damage:1,CustomModelData:87}}]}
+data modify entity @s[scores={SpawnTime=148}] {ArmorItems:[{},{},{},{}]}
+data modify entity @s[scores={SpawnTime=150}] {ArmorItems:[{},{},{},{id:"minecraft:diamond_pickaxe",Count:1b,tag:{Unbreakable:1b,Damage:1,CustomModelData:87}}]}
+data modify entity @s[scores={SpawnTime=152}] {ArmorItems:[{},{},{},{}]}
+data modify entity @s[scores={SpawnTime=154}] {ArmorItems:[{},{},{},{id:"minecraft:diamond_pickaxe",Count:1b,tag:{Unbreakable:1b,Damage:1,CustomModelData:87}}]}
+data modify entity @s[scores={SpawnTime=156}] {ArmorItems:[{},{},{},{}]}
+data modify entity @s[scores={SpawnTime=158}] {ArmorItems:[{},{},{},{id:"minecraft:diamond_pickaxe",Count:1b,tag:{Unbreakable:1b,Damage:1,CustomModelData:87}}]}
+data modify entity @s[scores={SpawnTime=160}] {ArmorItems:[{},{},{},{}]}
+data modify entity @s[scores={SpawnTime=162}] {ArmorItems:[{},{},{},{id:"minecraft:diamond_pickaxe",Count:1b,tag:{Unbreakable:1b,Damage:1,CustomModelData:87}}]}
+data modify entity @s[scores={SpawnTime=164}] {ArmorItems:[{},{},{},{}]}
+data modify entity @s[scores={SpawnTime=166}] {ArmorItems:[{},{},{},{id:"minecraft:diamond_pickaxe",Count:1b,tag:{Unbreakable:1b,Damage:1,CustomModelData:87}}]}
+data modify entity @s[scores={SpawnTime=168}] {ArmorItems:[{},{},{},{}]}
+data modify entity @s[scores={SpawnTime=170}] {ArmorItems:[{},{},{},{id:"minecraft:diamond_pickaxe",Count:1b,tag:{Unbreakable:1b,Damage:1,CustomModelData:87}}]}
+data modify entity @s[scores={SpawnTime=172}] {ArmorItems:[{},{},{},{}]}
+data modify entity @s[scores={SpawnTime=174}] {ArmorItems:[{},{},{},{id:"minecraft:diamond_pickaxe",Count:1b,tag:{Unbreakable:1b,Damage:1,CustomModelData:87}}]}
+data modify entity @s[scores={SpawnTime=176}] {ArmorItems:[{},{},{},{}]}
+data modify entity @s[scores={SpawnTime=178}] {ArmorItems:[{},{},{},{id:"minecraft:diamond_pickaxe",Count:1b,tag:{Unbreakable:1b,Damage:1,CustomModelData:87}}]}
+data modify entity @s[scores={SpawnTime=180}] {ArmorItems:[{},{},{},{}]}
+data modify entity @s[scores={SpawnTime=182}] {ArmorItems:[{},{},{},{id:"minecraft:diamond_pickaxe",Count:1b,tag:{Unbreakable:1b,Damage:1,CustomModelData:87}}]}
+data modify entity @s[scores={SpawnTime=184}] {ArmorItems:[{},{},{},{}]}
+data modify entity @s[scores={SpawnTime=186}] {ArmorItems:[{},{},{},{id:"minecraft:diamond_pickaxe",Count:1b,tag:{Unbreakable:1b,Damage:1,CustomModelData:87}}]}
+data modify entity @s[scores={SpawnTime=188}] {ArmorItems:[{},{},{},{}]}
+data modify entity @s[scores={SpawnTime=190}] {ArmorItems:[{},{},{},{id:"minecraft:diamond_pickaxe",Count:1b,tag:{Unbreakable:1b,Damage:1,CustomModelData:87}}]}
+data modify entity @s[scores={SpawnTime=192}] {ArmorItems:[{},{},{},{}]}
+data modify entity @s[scores={SpawnTime=194}] {ArmorItems:[{},{},{},{id:"minecraft:diamond_pickaxe",Count:1b,tag:{Unbreakable:1b,Damage:1,CustomModelData:87}}]}
+data modify entity @s[scores={SpawnTime=196}] {ArmorItems:[{},{},{},{}]}
+data modify entity @s[scores={SpawnTime=198}] {ArmorItems:[{},{},{},{id:"minecraft:diamond_pickaxe",Count:1b,tag:{Unbreakable:1b,Damage:1,CustomModelData:87}}]}
 tag @s[scores={SpawnTime=200}] add explode
-execute if entity @s[tag=explode,tag=spawn] run summon minecraft:creeper ~ ~ ~ {CustomName:'{"translate":"luigis_mansion:entity.spark"}',Fuse:0s,ExplosionRadius:2b,Invulnerable:1b}
+execute if entity @s[tag=explode,tag=spawn] run summon minecraft:creeper ~ ~ ~ {CustomName:'{"translate":"luigis_mansion:entity.spark"}',Fuse:0s,ExplosionRadius:2b,Invulnerable:1b,Silent:1b}
+execute if entity @s[tag=explode,tag=spawn] run playsound minecraft:entity.generic.explode hostile @s ~ ~ ~ 2
 tag @s[tag=explode,tag=spawn] add dead
 tag @s[tag=explode,tag=!spawn] remove explode
 execute if entity @s[tag=dead] run teleport @s ~ -100 ~

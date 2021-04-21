@@ -1,2 +1,2 @@
-execute if score #pipe_room_water_8 Searched matches 1 run fill 687 100 -13 689 100 -10 minecraft:air replace minecraft:water
-execute unless score #pipe_room_water_8 Searched matches 1 run fill 687 100 -13 689 100 -10 minecraft:water replace minecraft:air
+execute if score #pipe_room_water_8 Searched matches 1 run fill 688 9 -4 690 9 -1 minecraft:air replace minecraft:water
+execute unless score #pipe_room_water_8 Searched matches 1 run fill 688 9 -4 690 9 -1 minecraft:water replace minecraft:air

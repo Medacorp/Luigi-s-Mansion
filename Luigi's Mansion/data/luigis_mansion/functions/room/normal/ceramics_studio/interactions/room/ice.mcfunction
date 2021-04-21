@@ -1,2 +1,2 @@
-execute if score #ceramics_studio_ice Searched matches 1 run setblock 693 120 36 minecraft:oak_planks
-execute unless score #ceramics_studio_ice Searched matches 1 run setblock 693 120 36 minecraft:packed_ice
+execute if score #ceramics_studio_ice Searched matches 1 run setblock 707 39 61 minecraft:oak_planks
+execute unless score #ceramics_studio_ice Searched matches 1 run setblock 707 39 61 minecraft:packed_ice

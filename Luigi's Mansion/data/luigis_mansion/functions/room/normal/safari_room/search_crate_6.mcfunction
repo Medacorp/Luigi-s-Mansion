@@ -1,4 +1,4 @@
-execute positioned 710.0 120 -37.0 run function luigis_mansion:blocks/dust
+execute positioned 737.0 29 -55.0 run function luigis_mansion:blocks/dust
 scoreboard players set #safari_room_crate_6 Searched 1
-tag @e[x=710.5,y=120,z=-36.5,distance=..0.7,tag=ghost] add spawn
-tag @e[x=710.5,y=120,z=-36.5,distance=..0.7,tag=hidden_boo] add spawn
+tag @e[x=737.5,y=29,z=-54.5,distance=..0.7,tag=ghost] add spawn
+tag @e[x=737.5,y=29,z=-54.5,distance=..0.7,tag=hidden_boo] add spawn

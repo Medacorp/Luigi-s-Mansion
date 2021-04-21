@@ -1,5 +1,5 @@
 execute unless score #attic_hallway_1 Ticking matches 1 run function #luigis_mansion:room/hidden/attic_hallway_1/load
-execute as @a[x=682,y=120,z=24,dx=40,dy=6,dz=8] unless entity @s[scores={Room=41}] run scoreboard players operation @s LastRoom = @s Room
+execute as @a[gamemode=!spectator,x=682,y=120,z=24,dx=40,dy=6,dz=8] unless entity @s[scores={Room=41}] run scoreboard players operation @s LastRoom = @s Room
 execute as @e[type=!minecraft:item_frame,x=682,y=120,z=24,dx=40,dy=6,dz=8] run scoreboard players set @s Room 41
 tag @e[tag=ghost,scores={Room=41}] add hallway
 

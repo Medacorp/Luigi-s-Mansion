@@ -1,1 +1,1 @@
-execute if entity @a[tag=!blackout,limit=1] positioned 715 93 -32 run function luigis_mansion:room/normal/cellar/spawn_dust
+execute if entity @a[tag=!blackout,limit=1] positioned 744 2 -53 run function luigis_mansion:room/normal/cellar/spawn_dust

@@ -1,4 +1,4 @@
-setblock 711 120 23 minecraft:air
-setblock 711 121 23 minecraft:air
-setblock 700 120 -4 minecraft:air
-setblock 700 121 -4 minecraft:air
+setblock 749 29 33 minecraft:air
+setblock 749 30 33 minecraft:air
+setblock 738 29 6 minecraft:air
+setblock 738 30 6 minecraft:air

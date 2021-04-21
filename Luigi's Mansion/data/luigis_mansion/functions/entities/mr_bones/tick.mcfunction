@@ -22,7 +22,7 @@ execute if entity @s[tag=!element_hurt,tag=!fleeing,tag=!collided,tag=attack,sco
 
 execute if entity @s[scores={Time=80..}] run function luigis_mansion:entities/mr_bones/turn
 execute at @s[tag=!hurt,tag=!element_hurt,tag=!fleeing,tag=!attack,tag=!collided,tag=!vanish,tag=!appear,scores={StunTime=0,SpawnTime=20..}] unless entity @s[tag=!laugh,tag=!complain] facing entity @p[gamemode=!spectator] feet rotated ~ 0 run teleport @s ~ ~ ~ ~ ~
-execute at @s[tag=!hurt,tag=!element_hurt,tag=!fleeing,tag=!attack,tag=!collided,tag=!laugh,tag=!complain,tag=!vanish,tag=!appear,scores={StunTime=0,SpawnTime=20..}] run function luigis_mansion:entities/mr_bones/move_forward
+execute at @s[tag=!hurt,tag=!element_hurt,tag=!fleeing,tag=!attack,tag=!collided,tag=!laugh,tag=!complain,tag=!vanish,tag=!appear,scores={StunTime=0,SpawnTime=20..}] positioned ~ ~0.1 ~ align y run function luigis_mansion:entities/mr_bones/move_forward
 execute if entity @s[tag=!hurt,tag=!element_hurt,tag=!fleeing,tag=!attack,tag=!collided,tag=laugh,tag=!vanish,scores={StunTime=0}] run function luigis_mansion:entities/mr_bones/laugh
 execute if entity @s[tag=!hurt,tag=!element_hurt,tag=!fleeing,tag=!attack,tag=!collided,tag=complain,tag=!vanish,scores={StunTime=0}] run function luigis_mansion:entities/mr_bones/complain
 execute if entity @s[tag=!element_hurt,tag=!fleeing,tag=collided,tag=!vanish,tag=!appear,scores={StunTime=0}] if entity @s[tag=!dying,tag=!dead,tag=!removed_from_existence] run function luigis_mansion:entities/ghost/collided

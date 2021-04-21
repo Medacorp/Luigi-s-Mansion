@@ -1,2 +1,2 @@
-fill 716 93 -31 717 94 -29 minecraft:air replace minecraft:soul_sand
+fill 745 2 -52 746 3 -50 minecraft:air replace minecraft:soul_sand
 scoreboard players reset #cellar_dust_4

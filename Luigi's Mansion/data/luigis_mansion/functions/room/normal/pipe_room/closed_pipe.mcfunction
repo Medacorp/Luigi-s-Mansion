@@ -1,3 +1,3 @@
-fill 689 94 -9 687 97 -9 minecraft:moving_piston
-fill 689 94 -10 687 98 -13 minecraft:air replace minecraft:water
-setblock 688 95 1 minecraft:lever[face=wall,facing=east,powered=true]
+fill 690 3 0 688 6 0 minecraft:moving_piston
+fill 690 3 -1 688 7 -4 minecraft:air replace minecraft:water
+setblock 689 4 10 minecraft:lever[face=wall,facing=east,powered=true]

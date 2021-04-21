@@ -1,6 +1,6 @@
-playsound luigis_mansion:block.blockade.spawn block @a 677 111 -11 1
-setblock 677 111 -11 minecraft:iron_trapdoor[facing=north,open=true,half=bottom]
-setblock 677 112 -11 minecraft:iron_trapdoor[facing=north,open=true,half=bottom]
-playsound luigis_mansion:block.blockade.spawn block @a 677 111 -29 1
-setblock 677 111 -29 minecraft:iron_trapdoor[facing=south,open=true,half=bottom]
-setblock 677 112 -29 minecraft:iron_trapdoor[facing=south,open=true,half=bottom]
+playsound luigis_mansion:block.blockade.spawn block @a 666 20 -73 1
+setblock 666 20 -73 minecraft:iron_trapdoor[facing=north,open=true,half=bottom]
+setblock 666 21 -73 minecraft:iron_trapdoor[facing=north,open=true,half=bottom]
+playsound luigis_mansion:block.blockade.spawn block @a 666 20 -91 1
+setblock 666 20 -91 minecraft:iron_trapdoor[facing=south,open=true,half=bottom]
+setblock 666 21 -91 minecraft:iron_trapdoor[facing=south,open=true,half=bottom]

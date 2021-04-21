@@ -1,2 +1,2 @@
-setblock 687 94 -13 minecraft:air
+setblock 688 3 -4 minecraft:air
 scoreboard players reset #pipe_room_chest

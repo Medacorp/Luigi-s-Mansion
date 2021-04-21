@@ -1,2 +1,2 @@
-data merge block 693 121 36 {LootTable:"luigis_mansion:search"}
-setblock 693 121 36 minecraft:hopper[enabled=false]
+data merge block 707 30 61 {LootTable:"luigis_mansion:search"}
+setblock 707 30 61 minecraft:hopper[enabled=false]

@@ -1,2 +1,2 @@
-fill 660 111 -28 658 111 -36 minecraft:white_wool
+fill 644 20 -48 642 20 -56 minecraft:white_wool
 scoreboard players reset #tea_room_table_2

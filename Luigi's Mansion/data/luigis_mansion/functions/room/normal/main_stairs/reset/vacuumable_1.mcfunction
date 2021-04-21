@@ -1,2 +1,2 @@
-setblock 666 106 -20 minecraft:air
+setblock 661 15 -40 minecraft:air
 scoreboard players reset #main_stairs_vacuumable_1

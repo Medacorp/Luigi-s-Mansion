@@ -11,6 +11,8 @@ execute if entity @s[scores={Dialog=421}] run playsound luigis_mansion:entity.bo
 execute if entity @s[scores={Dialog=441}] run playsound luigis_mansion:entity.boo.laugh hostile @a[tag=same_room] ~ ~ ~ 1
 execute if entity @s[scores={Dialog=461}] run playsound luigis_mansion:entity.boo.laugh hostile @a[tag=same_room] ~ ~ ~ 1
 scoreboard players set @s[scores={Dialog=321}] AnimationProg 0
+tag @s[scores={Dialog=321}] add laugh 
 execute at @s[scores={Dialog=321..580}] run function luigis_mansion:animations/boo/laugh
+tag @s[scores={Dialog=580}] remove laugh
 tag @s[scores={Dialog=580}] add intro_done
 scoreboard players reset @s[scores={Dialog=580}] Dialog

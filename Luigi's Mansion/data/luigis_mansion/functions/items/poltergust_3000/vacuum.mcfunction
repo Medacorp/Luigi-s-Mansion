@@ -6,7 +6,8 @@ execute positioned ~ ~-1.1875 ~ as @e[tag=billiards_ball,scores={SpawnTime=20..}
 execute positioned ~ ~-1.1875 ~ as @e[tag=billiards_ball,scores={SpawnTime=20..},distance=..0.7] run tag @s add in_vacuum
 execute positioned ~ ~-1.1875 ~ as @e[tag=wool,scores={SpawnTime=20..},distance=..0.7] positioned as @s positioned ~ ~1.1875 ~ if block ^ ^ ^0.3 #luigis_mansion:ghosts_ignore unless entity @a[tag=me,distance=..1.2,limit=1] positioned ~ ~-1.1875 ~ run teleport @s ^ ^ ^0.1
 execute positioned ~ ~-1.1875 ~ as @e[tag=wool,scores={SpawnTime=20..},distance=..0.7] run tag @s add in_vacuum
-execute positioned ~ ~-1 ~ as @e[tag=ball,tag=!big,tag=!spit,distance=..0.7] run tag @s add in_vacuum
+execute positioned ~ ~-0.5 ~ as @e[tag=shining_ghost,tag=!spit,distance=..0.7] run tag @s add in_vacuum
+execute positioned ~ ~-1 ~ as @e[tag=!billiards_ball,tag=ball,tag=!big,tag=!spit,tag=vacuumable,distance=..0.7] run tag @s add in_vacuum
 execute positioned ~ ~-0.4 ~ as @e[tag=ball,tag=big,tag=!spit,tag=vacuumable,distance=..2] run tag @s add in_vacuum
 execute positioned ~ ~-1 ~ as @e[tag=rocking_horse,tag=!battle,distance=..0.7] run tag @s add in_vacuum
 execute positioned ~ ~-1 ~ as @e[tag=vacuumable,distance=..0.7,tag=boolossus,tag=split] positioned as @s positioned ~ ~1 ~ run function luigis_mansion:items/poltergust_3000/effect_on_entity/vacuum_boolossus
