@@ -2,7 +2,6 @@
 	"values": [
 	    "luigis_mansion:room/hidden/hallway/load/set_loaded",
         "luigis_mansion:room/hidden/hallway/load/lights",
-        "luigis_mansion:room/hidden/hallway/load/boos",
         "luigis_mansion:room/hidden/hallway/load/fake_doors",
         "luigis_mansion:room/hidden/hallway/load/candle_1",
         "luigis_mansion:room/hidden/hallway/load/candle_2",

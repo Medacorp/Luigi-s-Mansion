@@ -1,2 +1,2 @@
-setblock 700 115 7 minecraft:air
+setblock 737 24 6 minecraft:air
 scoreboard players reset #foyer_vacuumable_2

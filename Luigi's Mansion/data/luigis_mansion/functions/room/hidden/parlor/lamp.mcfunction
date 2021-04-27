@@ -1,3 +1,3 @@
-execute unless data storage luigis_mansion:data current_state.current_data.money_spawned{parlor_lamp:1b} positioned 691.0 115 8.0 run function luigis_mansion:spawn_entities/item/gold_bar
+execute unless data storage luigis_mansion:data current_state.current_data.money_spawned{parlor_lamp:1b} positioned 721.0 24 -12.0 run function luigis_mansion:spawn_entities/item/gold_bar
 execute if data storage luigis_mansion:data current_state.current_data.money_spawned{parlor_lamp:1b} run tag @e[tag=selected] add nothing
 data modify storage luigis_mansion:data current_state.current_data.money_spawned merge value {parlor_lamp:1b}

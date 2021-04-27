@@ -1,3 +1,3 @@
-data merge block 673 112 -1 {Items:[]}
-data merge block 673 112 0 {Items:[]}
+data merge block 685 21 -26 {Items:[]}
+data merge block 685 21 -25 {Items:[]}
 scoreboard players reset #anteroom_table_1

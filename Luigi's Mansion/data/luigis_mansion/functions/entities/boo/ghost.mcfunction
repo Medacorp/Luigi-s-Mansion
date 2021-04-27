@@ -24,18 +24,18 @@ tag @s[tag=boo_hurt] remove rotated
 tag @s[tag=attack] remove rotated
 execute at @s[tag=laugh] facing entity @p[gamemode=!spectator] feet rotated ~ 0 run teleport @s ~ ~ ~ ~ ~
 execute at @s[tag=!fleeing,tag=!attack,tag=!laugh,tag=!taunt,tag=!boo_hurt,tag=!rotated] run function luigis_mansion:entities/boo/rotate
-execute if score #temp Move matches 1.. at @s[tag=!fleeing,tag=!attack,tag=!laugh,tag=!taunt,tag=!boo_hurt] unless entity @s[tag=!fleeing,tag=!attack,tag=!laugh,tag=!taunt,tag=!boo_hurt,tag=!up,tag=!down,tag=!left,tag=!right] run function luigis_mansion:entities/boo/move_forward
-execute if score #temp Move matches 1.. at @s[tag=!fleeing,tag=!attack,tag=!laugh,tag=!taunt,tag=!boo_hurt,tag=!up,tag=!down,tag=!left,tag=!right] run function luigis_mansion:entities/boo/move_forward_no_direction
 execute if entity @s[scores={Time=120..}] run function luigis_mansion:entities/boo/turn
+execute if score #temp Move matches 1.. at @s[tag=!fleeing,tag=!attack,tag=!laugh,tag=!taunt,tag=!boo_hurt] unless entity @s[tag=!fleeing,tag=!attack,tag=!laugh,tag=!taunt,tag=!boo_hurt,tag=!north,tag=!east,tag=!south,tag=!west] run function luigis_mansion:entities/boo/move_forward
+execute if score #temp Move matches 1.. at @s[tag=!fleeing,tag=!attack,tag=!laugh,tag=!taunt,tag=!boo_hurt,tag=!north,tag=!east,tag=!south,tag=!west] run function luigis_mansion:entities/boo/move_forward_no_direction
 scoreboard players add @s[tag=new_section] BooTimer 1
 tag @s[scores={BooTimer=3}] remove rotated
 tag @s[scores={BooTimer=3}] remove new_section
 scoreboard players reset @s[scores={BooTimer=3}] BooTimer
+execute if entity @s[tag=remove_from_existence] run function #luigis_mansion:entities/boo/warp
 execute if entity @s[tag=!dead] run function #luigis_mansion:entities/boo/direction
-execute if entity @s[tag=!dead] run function luigis_mansion:entities/boo/warp
+execute if entity @s[tag=!dead,tag=wall] run function luigis_mansion:entities/boo/warp
 execute if entity @s[tag=!fleeing,tag=laugh] run function luigis_mansion:entities/boo/laugh
 execute if entity @s[tag=!fleeing,tag=taunt] run function luigis_mansion:entities/boo/taunt
-execute if entity @s[tag=remove_from_existence] run function luigis_mansion:entities/boo/warp/all
 execute at @s[tag=!fleeing,tag=!boo_hurt,tag=!laugh,tag=!taunt] run function luigis_mansion:animations/boo/idle
 execute at @s[tag=fleeing] run function luigis_mansion:animations/boo/flee
 execute at @s[tag=!fleeing,tag=boo_hurt] run function luigis_mansion:animations/boo/hurt
@@ -48,3 +48,7 @@ tag @s remove disappear
 tag @s remove fleeing
 tag @s remove boo_hurt
 tag @s remove in_vacuum
+
+execute store result entity @s Pose.Head[0] float 0.01 run data get entity @s Rotation[1] 100
+execute store result entity @s Pose.RightArm[2] float 0.01 run data get entity @s Rotation[1] 100
+execute store result entity @s Pose.LeftArm[2] float 0.01 run data get entity @s Rotation[1] 100

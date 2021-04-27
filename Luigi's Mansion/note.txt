@@ -23,9 +23,6 @@ To define a new mansion, you need to set the mansion_type value, mansion_data_in
 #mirrored (bool): Whether the ghosts mirror all their animations.
 #multiply_hurt (int): Multiplies base damage taken by this value where 100 = 1x.
 #multiply_damage (int): Multiplies base damage dealt by this value where 100 = 1x.
-#multiply_health (int): Multiplies enemy base health by this value where 100 = 1x.
-#extra_health (int): Adds extra health to enemy max health where 100 = 1. (Added after multiplication. Example: base=10,multiply=150,extra=2000 -> 10*1.5+20 = 15+20 = 35)
-#switch_boo_stats (bool): Whether the boos' base health and speed values are that of the original's hidden mansion.
 #changing_max_health (bool): Whether players' max health is displayed ("<Health>/<MAX> Health")
 
 These variables do not affect gold dummy ghosts and damage taken outside the mansion.

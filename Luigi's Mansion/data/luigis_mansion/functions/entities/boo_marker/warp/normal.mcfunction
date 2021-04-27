@@ -36,41 +36,41 @@ execute if entity @s[scores={Room=47}] run summon minecraft:area_effect_cloud ~ 
 execute if entity @s[scores={Room=47}] run summon minecraft:area_effect_cloud ~ ~ ~ {Tags:["choice","pipe_room"]}
 execute if entity @s[scores={Room=47}] run summon minecraft:area_effect_cloud ~ ~ ~ {Tags:["choice","cold_storage"]}
 tag @e[type=minecraft:area_effect_cloud,tag=choice,sort=random,limit=1] add selected
-execute if entity @e[type=minecraft:area_effect_cloud,tag=choice,tag=selected,limit=1,tag=study] run teleport @s 692.0 112 29.0
-execute if entity @e[type=minecraft:area_effect_cloud,tag=choice,tag=selected,limit=1,tag=master_bedroom] run teleport @s 690.0 112 49.0
-execute if entity @e[type=minecraft:area_effect_cloud,tag=choice,tag=selected,limit=1,tag=nursery] run teleport @s 713.0 112 49.0
-execute if entity @e[type=minecraft:area_effect_cloud,tag=choice,tag=selected,limit=1,tag=twins_room] run teleport @s 713 112 29
-execute if entity @e[type=minecraft:area_effect_cloud,tag=choice,tag=selected,limit=1,tag=laundry_room] run teleport @s 702 102 49
-execute if entity @e[type=minecraft:area_effect_cloud,tag=choice,tag=selected,limit=1,tag=hidden_room] run teleport @s 713.0 102 29.0
-execute if entity @e[type=minecraft:area_effect_cloud,tag=choice,tag=selected,limit=1,tag=kitchen] run teleport @s 691 102 43
-execute if entity @e[type=minecraft:area_effect_cloud,tag=choice,tag=selected,limit=1,tag=fortune_tellers_room] run teleport @s 713.0 102 -13
-execute if entity @e[type=minecraft:area_effect_cloud,tag=choice,tag=selected,limit=1,tag=dining_room] run teleport @s 691 102 12
-execute if entity @e[type=minecraft:area_effect_cloud,tag=choice,tag=selected,limit=1,tag=ball_room] run teleport @s 691.0 102 -27.0
-execute if entity @e[type=minecraft:area_effect_cloud,tag=choice,tag=selected,limit=1,tag=storage_room] run teleport @s 678.0 102 -27.0
-execute if entity @e[type=minecraft:area_effect_cloud,tag=choice,tag=selected,limit=1,tag=projection_room] run teleport @s 678 102 5
-execute if entity @e[type=minecraft:area_effect_cloud,tag=choice,tag=selected,limit=1,tag=rec_room] run teleport @s 659.0 102 -27.0
-execute if entity @e[type=minecraft:area_effect_cloud,tag=choice,tag=selected,limit=1,tag=conservatory] run teleport @s 658 102 3
-execute if entity @e[type=minecraft:area_effect_cloud,tag=choice,tag=selected,limit=1,tag=billiards_room] run teleport @s 678 102 27
-execute if entity @e[type=minecraft:area_effect_cloud,tag=choice,tag=selected,limit=1,tag=washroom_1] run teleport @s 668 102 32
-execute if entity @e[type=minecraft:area_effect_cloud,tag=choice,tag=selected,limit=1,tag=bathroom_1] run teleport @s 659 102 32
-execute if entity @e[type=minecraft:area_effect_cloud,tag=choice,tag=selected,limit=1,tag=guest_room] run teleport @s 713.0 114 -33.0
-execute if entity @e[type=minecraft:area_effect_cloud,tag=choice,tag=selected,limit=1,tag=sitting_room] run teleport @s 713.0 112 -13
-execute if entity @e[type=minecraft:area_effect_cloud,tag=choice,tag=selected,limit=1,tag=parlor] run teleport @s 692.0 112 8.0
-execute if entity @e[type=minecraft:area_effect_cloud,tag=choice,tag=selected,limit=1,tag=astral_hall] run teleport @s 678.0 112 -21.0
-execute if entity @e[type=minecraft:area_effect_cloud,tag=choice,tag=selected,limit=1,tag=anteroom] run teleport @s 678 112 8.0
-execute if entity @e[type=minecraft:area_effect_cloud,tag=choice,tag=selected,limit=1,tag=tea_room] run teleport @s 659.0 112 -27.0
-execute if entity @e[type=minecraft:area_effect_cloud,tag=choice,tag=selected,limit=1,tag=nanas_room] run teleport @s 658 112 3
-execute if entity @e[type=minecraft:area_effect_cloud,tag=choice,tag=selected,limit=1,tag=wardrobe_room] run teleport @s 678 112 29.0
-execute if entity @e[type=minecraft:area_effect_cloud,tag=choice,tag=selected,limit=1,tag=washroom_2] run teleport @s 668 112 32
-execute if entity @e[type=minecraft:area_effect_cloud,tag=choice,tag=selected,limit=1,tag=bathroom_2] run teleport @s 659 112 32
-execute if entity @e[type=minecraft:area_effect_cloud,tag=choice,tag=selected,limit=1,tag=safari_room] run teleport @s 713.0 122 -28
-execute if entity @e[type=minecraft:area_effect_cloud,tag=choice,tag=selected,limit=1,tag=artist_studio] run teleport @s 690 122 -30
-execute if entity @e[type=minecraft:area_effect_cloud,tag=choice,tag=selected,limit=1,tag=telephone_room] run teleport @s 708 122 8.0
-execute if entity @e[type=minecraft:area_effect_cloud,tag=choice,tag=selected,limit=1,tag=clockwork_room] run teleport @s 690 122 8.0
-execute if entity @e[type=minecraft:area_effect_cloud,tag=choice,tag=selected,limit=1,tag=armory] run teleport @s 708 122 43
-execute if entity @e[type=minecraft:area_effect_cloud,tag=choice,tag=selected,limit=1,tag=cermatics_studio] run teleport @s 690 122 43
-execute if entity @e[type=minecraft:area_effect_cloud,tag=choice,tag=selected,limit=1,tag=breaker_room] run teleport @s 691 92 -33
-execute if entity @e[type=minecraft:area_effect_cloud,tag=choice,tag=selected,limit=1,tag=cellar] run teleport @s 713.0 92 -33.0
-execute if entity @e[type=minecraft:area_effect_cloud,tag=choice,tag=selected,limit=1,tag=pipe_room] run teleport @s 691 93 -6
-execute if entity @e[type=minecraft:area_effect_cloud,tag=choice,tag=selected,limit=1,tag=cold_storage] run teleport @s 709 92 -6
-execute if entity @e[type=minecraft:area_effect_cloud,tag=choice,tag=selected,limit=1] run function #luigis_mansion:entities/boo/warp_all
+execute if entity @e[type=minecraft:area_effect_cloud,tag=choice,tag=selected,limit=1,tag=study] run scoreboard players set @s Room 7
+execute if entity @e[type=minecraft:area_effect_cloud,tag=choice,tag=selected,limit=1,tag=master_bedroom] run scoreboard players set @s Room 8
+execute if entity @e[type=minecraft:area_effect_cloud,tag=choice,tag=selected,limit=1,tag=nursery] run scoreboard players set @s Room 9
+execute if entity @e[type=minecraft:area_effect_cloud,tag=choice,tag=selected,limit=1,tag=twins_room] run scoreboard players set @s Room 39
+execute if entity @e[type=minecraft:area_effect_cloud,tag=choice,tag=selected,limit=1,tag=laundry_room] run scoreboard players set @s Room 18
+execute if entity @e[type=minecraft:area_effect_cloud,tag=choice,tag=selected,limit=1,tag=hidden_room] run scoreboard players set @s Room 20
+execute if entity @e[type=minecraft:area_effect_cloud,tag=choice,tag=selected,limit=1,tag=kitchen] run scoreboard players set @s Room 23
+execute if entity @e[type=minecraft:area_effect_cloud,tag=choice,tag=selected,limit=1,tag=fortune_tellers_room] run scoreboard players set @s Room 16
+execute if entity @e[type=minecraft:area_effect_cloud,tag=choice,tag=selected,limit=1,tag=dining_room] run scoreboard players set @s Room 22
+execute if entity @e[type=minecraft:area_effect_cloud,tag=choice,tag=selected,limit=1,tag=ball_room] run scoreboard players set @s Room 13
+execute if entity @e[type=minecraft:area_effect_cloud,tag=choice,tag=selected,limit=1,tag=storage_room] run scoreboard players set @s Room 14
+execute if entity @e[type=minecraft:area_effect_cloud,tag=choice,tag=selected,limit=1,tag=projection_room] run scoreboard players set @s Room 38
+execute if entity @e[type=minecraft:area_effect_cloud,tag=choice,tag=selected,limit=1,tag=rec_room] run scoreboard players set @s Room 28
+execute if entity @e[type=minecraft:area_effect_cloud,tag=choice,tag=selected,limit=1,tag=conservatory] run scoreboard players set @s Room 21
+execute if entity @e[type=minecraft:area_effect_cloud,tag=choice,tag=selected,limit=1,tag=billiards_room] run scoreboard players set @s Room 37
+execute if entity @e[type=minecraft:area_effect_cloud,tag=choice,tag=selected,limit=1,tag=washroom_1] run scoreboard players set @s Room 15
+execute if entity @e[type=minecraft:area_effect_cloud,tag=choice,tag=selected,limit=1,tag=bathroom_1] run scoreboard players set @s Room 12
+execute if entity @e[type=minecraft:area_effect_cloud,tag=choice,tag=selected,limit=1,tag=guest_room] run scoreboard players set @s Room 57
+execute if entity @e[type=minecraft:area_effect_cloud,tag=choice,tag=selected,limit=1,tag=sitting_room] run scoreboard players set @s Room 56
+execute if entity @e[type=minecraft:area_effect_cloud,tag=choice,tag=selected,limit=1,tag=parlor] run scoreboard players set @s Room 2
+execute if entity @e[type=minecraft:area_effect_cloud,tag=choice,tag=selected,limit=1,tag=astral_hall] run scoreboard players set @s Room 35
+execute if entity @e[type=minecraft:area_effect_cloud,tag=choice,tag=selected,limit=1,tag=anteroom] run scoreboard players set @s Room 3
+execute if entity @e[type=minecraft:area_effect_cloud,tag=choice,tag=selected,limit=1,tag=tea_room] run scoreboard players set @s Room 30
+execute if entity @e[type=minecraft:area_effect_cloud,tag=choice,tag=selected,limit=1,tag=nanas_room] run scoreboard players set @s Room 34
+execute if entity @e[type=minecraft:area_effect_cloud,tag=choice,tag=selected,limit=1,tag=wardrobe_room] run scoreboard players set @s Room 4
+execute if entity @e[type=minecraft:area_effect_cloud,tag=choice,tag=selected,limit=1,tag=washroom_2] run scoreboard players set @s Room 32
+execute if entity @e[type=minecraft:area_effect_cloud,tag=choice,tag=selected,limit=1,tag=bathroom_2] run scoreboard players set @s Room 33
+execute if entity @e[type=minecraft:area_effect_cloud,tag=choice,tag=selected,limit=1,tag=safari_room] run scoreboard players set @s Room 40
+execute if entity @e[type=minecraft:area_effect_cloud,tag=choice,tag=selected,limit=1,tag=artist_studio] run scoreboard players set @s Room 58
+execute if entity @e[type=minecraft:area_effect_cloud,tag=choice,tag=selected,limit=1,tag=telephone_room] run scoreboard players set @s Room 44
+execute if entity @e[type=minecraft:area_effect_cloud,tag=choice,tag=selected,limit=1,tag=clockwork_room] run scoreboard players set @s Room 49
+execute if entity @e[type=minecraft:area_effect_cloud,tag=choice,tag=selected,limit=1,tag=armory] run scoreboard players set @s Room 51
+execute if entity @e[type=minecraft:area_effect_cloud,tag=choice,tag=selected,limit=1,tag=cermatics_studio] run scoreboard players set @s Room 52
+execute if entity @e[type=minecraft:area_effect_cloud,tag=choice,tag=selected,limit=1,tag=breaker_room] run scoreboard players set @s Room 45
+execute if entity @e[type=minecraft:area_effect_cloud,tag=choice,tag=selected,limit=1,tag=cellar] run scoreboard players set @s Room 46
+execute if entity @e[type=minecraft:area_effect_cloud,tag=choice,tag=selected,limit=1,tag=pipe_room] run scoreboard players set @s Room 54
+execute if entity @e[type=minecraft:area_effect_cloud,tag=choice,tag=selected,limit=1,tag=cold_storage] run scoreboard players set @s Room 55
+execute if entity @e[type=minecraft:area_effect_cloud,tag=choice,tag=selected,limit=1] run function luigis_mansion:entities/boo/warp/all/normal

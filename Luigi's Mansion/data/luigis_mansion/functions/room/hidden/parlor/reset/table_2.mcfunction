@@ -1,7 +1,7 @@
-data merge block 684 111 8 {Items:[]}
-data merge block 684 111 7 {Items:[]}
-setblock 685 111 9 minecraft:oak_trapdoor[facing=east,half=bottom,open=true]
-setblock 685 111 8 minecraft:oak_trapdoor[facing=east,half=bottom,open=true]
-setblock 685 111 7 minecraft:oak_trapdoor[facing=east,half=bottom,open=true]
-setblock 685 111 6 minecraft:oak_trapdoor[facing=east,half=bottom,open=true]
+data merge block 714 20 -12 {Items:[]}
+data merge block 714 20 -13 {Items:[]}
+setblock 715 20 -11 minecraft:oak_trapdoor[facing=east,half=bottom,open=true]
+setblock 715 20 -12 minecraft:oak_trapdoor[facing=east,half=bottom,open=true]
+setblock 715 20 -13 minecraft:oak_trapdoor[facing=east,half=bottom,open=true]
+setblock 715 20 -14 minecraft:oak_trapdoor[facing=east,half=bottom,open=true]
 scoreboard players reset #parlor_table_2

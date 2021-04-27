@@ -1,2 +1,2 @@
-setblock 700 113 12 minecraft:tripwire_hook[facing=east]
+setblock 737 22 11 minecraft:tripwire_hook[facing=east]
 scoreboard players reset #foyer_candle_4

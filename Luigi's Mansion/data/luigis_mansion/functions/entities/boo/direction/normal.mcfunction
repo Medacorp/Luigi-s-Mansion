@@ -7,77 +7,93 @@ execute if data storage luigis_mansion:data current_state.current_data.used_keys
 execute if data storage luigis_mansion:data current_state.current_data.used_keys{courtyard:1b} run tag @s add area_3
 execute if data storage luigis_mansion:data current_state.current_data.used_keys{attic_hallway_2:1b} run tag @s add area_4
 
-scoreboard players set @s[x=672,y=111,z=18,dx=10,dy=6,dz=6] HallwaySection 1
-scoreboard players set @s[x=672,y=111,z=25,dx=10,dy=6,dz=12] HallwaySection 2
+# wardrobe room
+scoreboard players set @s[x=677,y=20,z=56,dx=10,dy=6,dz=6] RoomSection 1
+scoreboard players set @s[x=677,y=20,z=63,dx=10,dy=6,dz=12] RoomSection 2
 
-scoreboard players set @s[x=699,y=111,z=18,dx=6,dy=6,dz=19] HallwaySection 1
-scoreboard players set @s[x=699,y=111,z=39,dx=6,dy=6,dz=19] HallwaySection 2
+# small hallway
+scoreboard players set @s[x=723,y=20,z=42,dx=6,dy=6,dz=19] RoomSection 1
+scoreboard players set @s[x=723,y=20,z=63,dx=6,dy=6,dz=19] RoomSection 2
 
-scoreboard players set @s[x=699,y=102,z=27,dx=6,dy=6,dz=10] HallwaySection 1
-scoreboard players set @s[x=699,y=102,z=18,dx=6,dy=6,dz=8] HallwaySection 2
-scoreboard players set @s[x=699,y=102,z=-3,dx=6,dy=6,dz=20] HallwaySection 3
-scoreboard players set @s[x=699,y=102,z=-8,dx=5,dy=6,dz=4] HallwaySection 4
-scoreboard players set @s[x=699,y=102,z=-21,dx=6,dy=6,dz=12] HallwaySection 5
-scoreboard players set @s[x=686,y=102,z=-9,dx=13,dy=6,dz=6] HallwaySection 6
-scoreboard players set @s[x=683,y=102,z=-9,dx=2,dy=6,dz=6] HallwaySection 7
-scoreboard players set @s[x=671,y=102,z=-9,dx=11,dy=6,dz=6] HallwaySection 8
-scoreboard players set @s[x=665,y=102,z=-16,dx=6,dy=6,dz=7] HallwaySection 9
-scoreboard players set @s[x=665,y=102,z=-8,dx=5,dy=6,dz=4] HallwaySection 10
-scoreboard players set @s[x=665,y=102,z=-3,dx=6,dy=6,dz=15] HallwaySection 11
-scoreboard players set @s[x=665,y=102,z=-13,dx=6,dy=6,dz=5] HallwaySection 12
-scoreboard players set @s[x=667,y=102,z=18,dx=5,dy=6,dz=6] HallwaySection 13
-scoreboard players set @s[x=652,y=102,z=18,dx=11,dy=6,dz=8] HallwaySection 14
+# main hallway
+scoreboard players set @s[x=713,y=11,z=14,dx=6,dy=6,dz=10] RoomSection 1
+scoreboard players set @s[x=713,y=11,z=5,dx=6,dy=6,dz=8] RoomSection 2
+scoreboard players set @s[x=713,y=11,z=-16,dx=6,dy=6,dz=20] RoomSection 3
+scoreboard players set @s[x=713,y=11,z=-21,dx=5,dy=6,dz=4] RoomSection 4
+scoreboard players set @s[x=713,y=11,z=-34,dx=6,dy=6,dz=12] RoomSection 5
+scoreboard players set @s[x=700,y=11,z=-22,dx=13,dy=6,dz=6] RoomSection 6
+scoreboard players set @s[x=697,y=11,z=-22,dx=2,dy=6,dz=6] RoomSection 7
+scoreboard players set @s[x=685,y=11,z=-22,dx=11,dy=6,dz=6] RoomSection 8
+scoreboard players set @s[x=679,y=11,z=-29,dx=6,dy=6,dz=7] RoomSection 9
+scoreboard players set @s[x=679,y=11,z=-21,dx=5,dy=6,dz=4] RoomSection 10
+scoreboard players set @s[x=679,y=11,z=-16,dx=6,dy=6,dz=15] RoomSection 11
+scoreboard players set @s[x=679,y=11,z=-1,dx=6,dy=6,dz=5] RoomSection 12
+scoreboard players set @s[x=681,y=11,z=5,dx=5,dy=6,dz=6] RoomSection 13
+scoreboard players set @s[x=666,y=11,z=5,dx=11,dy=6,dz=8] RoomSection 14
 
-scoreboard players set @s[x=683,y=102,z=-21,dx=15,dy=6,dz=11] HallwaySection 1
-scoreboard players set @s[x=683,y=102,z=-41,dx=15,dy=6,dz=19] HallwaySection 2
+# ball room
+scoreboard players set @s[x=696,y=11,z=-49,dx=15,dy=6,dz=11] RoomSection 1
+scoreboard players set @s[x=696,y=11,z=-69,dx=15,dy=6,dz=19] RoomSection 2
 
-scoreboard players set @s[x=672,y=102,z=-41,dx=10,dy=6,dz=24] HallwaySection 1
-scoreboard players set @s[x=672,y=102,z=-16,dx=10,dy=6,dz=6] HallwaySection 2
+# storage room
+scoreboard players set @s[x=680,y=11,z=-69,dx=10,dy=6,dz=24] RoomSection 1
+scoreboard players set @s[x=680,y=11,z=-44,dx=10,dy=6,dz=6] RoomSection 2
 
-scoreboard players set @s[x=686,y=102,z=-2,dx=12,dy=6,dz=14] HallwaySection 1
-scoreboard players set @s[x=686,y=102,z=13,dx=12,dy=6,dz=13] HallwaySection 2
+# dining room
+scoreboard players set @s[x=698,y=11,z=29,dx=12,dy=6,dz=14] RoomSection 1
+scoreboard players set @s[x=698,y=11,z=44,dx=12,dy=6,dz=13] RoomSection 2
 
-scoreboard players set @s[x=686,y=102,z=27,dx=12,dy=6,dz=10] HallwaySection 1
-scoreboard players set @s[x=686,y=102,z=38,dx=12,dy=6,dz=19] HallwaySection 2
+# kitchen
+scoreboard players set @s[x=698,y=11,z=62,dx=12,dy=6,dz=10] RoomSection 1
+scoreboard players set @s[x=698,y=11,z=73,dx=12,dy=6,dz=19] RoomSection 2
 
-scoreboard players set @s[x=654,y=102,z=-41,dx=10,dy=6,dz=24] HallwaySection 1
-scoreboard players set @s[x=654,y=102,z=-16,dx=10,dy=6,dz=7] HallwaySection 2
+# rec room
+scoreboard players set @s[x=638,y=11,z=-61,dx=10,dy=6,dz=24] RoomSection 1
+scoreboard players set @s[x=638,y=11,z=-36,dx=10,dy=6,dz=7] RoomSection 2
 
-scoreboard players set @s[x=654,y=111,z=-41,dx=10,dy=6,dz=24] HallwaySection 1
-scoreboard players set @s[x=654,y=111,z=-16,dx=10,dy=6,dz=7] HallwaySection 2
+# tea room
+scoreboard players set @s[x=638,y=20,z=-61,dx=10,dy=6,dz=24] RoomSection 1
+scoreboard players set @s[x=638,y=20,z=-36,dx=10,dy=6,dz=7] RoomSection 2
 
-scoreboard players set @s[x=699,y=111,z=-8,dx=5,dy=6,dz=5] HallwaySection 1
-scoreboard players set @s[x=699,y=111,z=-21,dx=6,dy=6,dz=12] HallwaySection 2
-scoreboard players set @s[x=699,y=111,z=-39,dx=6,dy=6,dz=12] HallwaySection 3
-scoreboard players set @s[x=671,y=111,z=-9,dx=26,dy=6,dz=6] HallwaySection 4
-scoreboard players set @s[x=665,y=111,z=-16,dx=6,dy=6,dz=7] HallwaySection 5
-scoreboard players set @s[x=665,y=111,z=-8,dx=5,dy=6,dz=4] HallwaySection 6
-scoreboard players set @s[x=665,y=111,z=-3,dx=6,dy=6,dz=15] HallwaySection 7
-scoreboard players set @s[x=665,y=111,z=-13,dx=6,dy=6,dz=6] HallwaySection 8
-scoreboard players set @s[x=666,y=111,z=19,dx=5,dy=6,dz=5] HallwaySection 9
-scoreboard players set @s[x=652,y=111,z=18,dx=12,dy=6,dz=8] HallwaySection 10
+# hallway
+scoreboard players set @s[x=713,y=20,z=-21,dx=5,dy=6,dz=5] RoomSection 1
+scoreboard players set @s[x=713,y=20,z=-34,dx=6,dy=6,dz=12] RoomSection 2
+scoreboard players set @s[x=713,y=20,z=-52,dx=6,dy=6,dz=12] RoomSection 3
+scoreboard players set @s[x=697,y=20,z=-22,dx=13,dy=6,dz=6] RoomSection 4
+scoreboard players set @s[x=685,y=20,z=-22,dx=12,dy=6,dz=6] RoomSection 5
+scoreboard players set @s[x=679,y=20,z=-29,dx=6,dy=6,dz=7] RoomSection 6
+scoreboard players set @s[x=679,y=20,z=-21,dx=5,dy=6,dz=4] RoomSection 7
+scoreboard players set @s[x=679,y=20,z=-16,dx=6,dy=6,dz=22] RoomSection 8
+scoreboard players set @s[x=680,y=20,z=6,dx=5,dy=6,dz=5] RoomSection 9
+scoreboard players set @s[x=666,y=20,z=5,dx=12,dy=6,dz=8] RoomSection 10
 
-scoreboard players set @s[x=672,y=111,z=-16,dx=10,dy=6,dz=6] HallwaySection 1
-scoreboard players set @s[x=672,y=111,z=-30,dx=10,dy=6,dz=14] HallwaySection 2
+# astral hall
+scoreboard players set @s[x=661,y=20,z=-78,dx=10,dy=6,dz=6] RoomSection 1
+scoreboard players set @s[x=661,y=20,z=-92,dx=10,dy=6,dz=14] RoomSection 2
 
-scoreboard players set @s[x=672,y=102,z=13,dx=13,dy=6,dz=13] HallwaySection 1
-scoreboard players set @s[x=672,y=102,z=27,dx=13,dy=6,dz=12] HallwaySection 2
+# billiards room
+scoreboard players set @s[x=674,y=11,z=65,dx=13,dy=6,dz=13] RoomSection 1
+scoreboard players set @s[x=674,y=11,z=79,dx=13,dy=6,dz=12] RoomSection 2
 
-scoreboard players set @s[x=720,y=120,z=-16,dx=1,dy=6,dz=6] HallwaySection 1
-scoreboard players set @s[x=706,y=120,z=-16,dx=11,dy=6,dz=6] HallwaySection 2
-scoreboard players set @s[x=699,y=120,z=-16,dx=6,dy=6,dz=6] HallwaySection 3
-scoreboard players set @s[x=683,y=120,z=-16,dx=15,dy=6,dz=6] HallwaySection 4
+# attic hallway 1
+scoreboard players set @s[x=762,y=29,z=-16,dx=1,dy=6,dz=6] RoomSection 1
+scoreboard players set @s[x=748,y=29,z=-16,dx=11,dy=6,dz=6] RoomSection 2
+scoreboard players set @s[x=741,y=29,z=-16,dx=6,dy=6,dz=6] RoomSection 3
+scoreboard players set @s[x=725,y=29,z=-16,dx=15,dy=6,dz=6] RoomSection 4
 
-scoreboard players set @s[x=683,y=120,z=25,dx=15,dy=6,dz=6] HallwaySection 1
-scoreboard players set @s[x=699,y=120,z=25,dx=19,dy=6,dz=6] HallwaySection 2
-scoreboard players set @s[x=720,y=120,z=25,dx=1,dy=6,dz=6] HallwaySection 3
+# attic hallway 2
+scoreboard players set @s[x=724,y=29,z=41,dx=15,dy=6,dz=6] RoomSection 1
+scoreboard players set @s[x=740,y=29,z=41,dx=19,dy=6,dz=6] RoomSection 2
+scoreboard players set @s[x=761,y=29,z=41,dx=1,dy=6,dz=6] RoomSection 3
 
-scoreboard players set @s[x=698,y=120,z=-10,dx=19,dy=6,dz=35] HallwaySection 1
-scoreboard players set @s[x=718,y=120,z=-10,dx=4,dy=6,dz=35] HallwaySection 2
+# telephone room
+scoreboard players set @s[x=736,y=29,z=0,dx=19,dy=6,dz=35] RoomSection 1
+scoreboard players set @s[x=756,y=29,z=0,dx=4,dy=6,dz=35] RoomSection 2
 
-scoreboard players set @s[x=706,y=93,z=-21,dx=13,dy=6,dz=6] HallwaySection 1
-scoreboard players set @s[x=699,y=93,z=-21,dx=6,dy=6,dz=6] HallwaySection 2
-scoreboard players set @s[x=686,y=93,z=-21,dx=13,dy=6,dz=6] HallwaySection 3
+# basement hallway
+scoreboard players set @s[x=720,y=2,z=-21,dx=13,dy=6,dz=6] RoomSection 1
+scoreboard players set @s[x=713,y=2,z=-21,dx=6,dy=6,dz=6] RoomSection 2
+scoreboard players set @s[x=700,y=2,z=-21,dx=13,dy=6,dz=6] RoomSection 3
 
 tag @s[scores={Room=2}] add west
 tag @s[scores={Room=2}] add south
@@ -88,13 +104,13 @@ tag @s[scores={Room=3}] add south
 tag @s[scores={Room=3},tag=area_3] add north
 tag @s[scores={Room=4},tag=area_3] add west
 tag @s[scores={Room=4}] add east
-tag @s[scores={Room=4,HallwaySection=1},tag=area_3] add south
+tag @s[scores={Room=4,RoomSection=1},tag=area_3] add south
 tag @s[scores={Room=4}] add north
 tag @s[scores={Room=6}] add west
-tag @s[scores={Room=6,HallwaySection=1},tag=area_3] add east
-tag @s[scores={Room=6,HallwaySection=1}] add south
-tag @s[scores={Room=6,HallwaySection=2}] add east
-tag @s[scores={Room=6,HallwaySection=2}] add north
+tag @s[scores={Room=6,RoomSection=1},tag=area_3] add east
+tag @s[scores={Room=6,RoomSection=1}] add south
+tag @s[scores={Room=6,RoomSection=2}] add east
+tag @s[scores={Room=6,RoomSection=2}] add north
 tag @s[scores={Room=7}] add west
 tag @s[scores={Room=7}] add east
 tag @s[scores={Room=7}] add south
@@ -103,68 +119,68 @@ tag @s[scores={Room=8}] add east
 tag @s[scores={Room=8}] add north
 tag @s[scores={Room=9}] add west
 tag @s[scores={Room=9},tag=area_3] add north
-tag @s[scores={Room=10,HallwaySection=1}] add west
-tag @s[scores={Room=10,HallwaySection=1}] add east
-tag @s[scores={Room=10,HallwaySection=1}] add south
-tag @s[scores={Room=10,HallwaySection=1}] add north
-tag @s[scores={Room=10,HallwaySection=2}] add west
-tag @s[scores={Room=10,HallwaySection=2}] add east
-tag @s[scores={Room=10,HallwaySection=2}] add south
-tag @s[scores={Room=10,HallwaySection=2}] add north
-tag @s[scores={Room=10,HallwaySection=3}] add west
-tag @s[scores={Room=10,HallwaySection=3}] add south
-tag @s[scores={Room=10,HallwaySection=3}] add north
-tag @s[scores={Room=10,HallwaySection=4}] add west
-tag @s[scores={Room=10,HallwaySection=4}] add east
-tag @s[scores={Room=10,HallwaySection=4}] add south
-tag @s[scores={Room=10,HallwaySection=4}] add north
-tag @s[scores={Room=10,HallwaySection=5}] add west
-tag @s[scores={Room=10,HallwaySection=5}] add east
-tag @s[scores={Room=10,HallwaySection=5}] add south
-tag @s[scores={Room=10,HallwaySection=6}] add west
-tag @s[scores={Room=10,HallwaySection=6}] add east
-tag @s[scores={Room=10,HallwaySection=6}] add south
-tag @s[scores={Room=10,HallwaySection=6}] add north
-tag @s[scores={Room=10,HallwaySection=7}] add west
-tag @s[scores={Room=10,HallwaySection=7}] add east
-tag @s[scores={Room=10,HallwaySection=7},tag=area_3] add south
-tag @s[scores={Room=10,HallwaySection=7}] add north
-tag @s[scores={Room=10,HallwaySection=8}] add west
-tag @s[scores={Room=10,HallwaySection=8}] add east
-tag @s[scores={Room=10,HallwaySection=8},tag=area_3] add south
-tag @s[scores={Room=10,HallwaySection=8}] add north
-tag @s[scores={Room=10,HallwaySection=9},tag=area_3] add west
-tag @s[scores={Room=10,HallwaySection=9}] add east
-tag @s[scores={Room=10,HallwaySection=9}] add south
-tag @s[scores={Room=10,HallwaySection=10}] add west
-tag @s[scores={Room=10,HallwaySection=10}] add east
-tag @s[scores={Room=10,HallwaySection=10}] add south
-tag @s[scores={Room=10,HallwaySection=10}] add north
-tag @s[scores={Room=10,HallwaySection=11}] add west
-tag @s[scores={Room=10,HallwaySection=11},tag=area_3] add east
-tag @s[scores={Room=10,HallwaySection=11}] add south
-tag @s[scores={Room=10,HallwaySection=11}] add north
-tag @s[scores={Room=10,HallwaySection=12}] add west
-tag @s[scores={Room=10,HallwaySection=12},tag=area_3] add east
-tag @s[scores={Room=10,HallwaySection=12}] add south
-tag @s[scores={Room=10,HallwaySection=12}] add north
-tag @s[scores={Room=10,HallwaySection=13}] add west
-tag @s[scores={Room=10,HallwaySection=13},tag=area_3] add east
-tag @s[scores={Room=10,HallwaySection=13}] add south
-tag @s[scores={Room=10,HallwaySection=13}] add north
-tag @s[scores={Room=10,HallwaySection=14}] add east
-tag @s[scores={Room=10,HallwaySection=14}] add south
-tag @s[scores={Room=10,HallwaySection=14}] add north
+tag @s[scores={Room=10,RoomSection=1}] add west
+tag @s[scores={Room=10,RoomSection=1}] add east
+tag @s[scores={Room=10,RoomSection=1}] add south
+tag @s[scores={Room=10,RoomSection=1}] add north
+tag @s[scores={Room=10,RoomSection=2}] add west
+tag @s[scores={Room=10,RoomSection=2}] add east
+tag @s[scores={Room=10,RoomSection=2}] add south
+tag @s[scores={Room=10,RoomSection=2}] add north
+tag @s[scores={Room=10,RoomSection=3}] add west
+tag @s[scores={Room=10,RoomSection=3}] add south
+tag @s[scores={Room=10,RoomSection=3}] add north
+tag @s[scores={Room=10,RoomSection=4}] add west
+tag @s[scores={Room=10,RoomSection=4}] add east
+tag @s[scores={Room=10,RoomSection=4}] add south
+tag @s[scores={Room=10,RoomSection=4}] add north
+tag @s[scores={Room=10,RoomSection=5}] add west
+tag @s[scores={Room=10,RoomSection=5}] add east
+tag @s[scores={Room=10,RoomSection=5}] add south
+tag @s[scores={Room=10,RoomSection=6}] add west
+tag @s[scores={Room=10,RoomSection=6}] add east
+tag @s[scores={Room=10,RoomSection=6}] add south
+tag @s[scores={Room=10,RoomSection=6}] add north
+tag @s[scores={Room=10,RoomSection=7}] add west
+tag @s[scores={Room=10,RoomSection=7}] add east
+tag @s[scores={Room=10,RoomSection=7},tag=area_3] add south
+tag @s[scores={Room=10,RoomSection=7}] add north
+tag @s[scores={Room=10,RoomSection=8}] add west
+tag @s[scores={Room=10,RoomSection=8}] add east
+tag @s[scores={Room=10,RoomSection=8},tag=area_3] add south
+tag @s[scores={Room=10,RoomSection=8}] add north
+tag @s[scores={Room=10,RoomSection=9},tag=area_3] add west
+tag @s[scores={Room=10,RoomSection=9}] add east
+tag @s[scores={Room=10,RoomSection=9}] add south
+tag @s[scores={Room=10,RoomSection=10}] add west
+tag @s[scores={Room=10,RoomSection=10}] add east
+tag @s[scores={Room=10,RoomSection=10}] add south
+tag @s[scores={Room=10,RoomSection=10}] add north
+tag @s[scores={Room=10,RoomSection=11}] add west
+tag @s[scores={Room=10,RoomSection=11},tag=area_3] add east
+tag @s[scores={Room=10,RoomSection=11}] add south
+tag @s[scores={Room=10,RoomSection=11}] add north
+tag @s[scores={Room=10,RoomSection=12}] add west
+tag @s[scores={Room=10,RoomSection=12},tag=area_3] add east
+tag @s[scores={Room=10,RoomSection=12}] add south
+tag @s[scores={Room=10,RoomSection=12}] add north
+tag @s[scores={Room=10,RoomSection=13}] add west
+tag @s[scores={Room=10,RoomSection=13},tag=area_3] add east
+tag @s[scores={Room=10,RoomSection=13}] add south
+tag @s[scores={Room=10,RoomSection=13}] add north
+tag @s[scores={Room=10,RoomSection=14}] add east
+tag @s[scores={Room=10,RoomSection=14}] add south
+tag @s[scores={Room=10,RoomSection=14}] add north
 tag @s[scores={Room=12}] add east
 tag @s[scores={Room=12}] add north
 tag @s[scores={Room=13}] add west
-tag @s[scores={Room=13,HallwaySection=1}] add east
+tag @s[scores={Room=13,RoomSection=1}] add east
 tag @s[scores={Room=13}] add south
-tag @s[scores={Room=13,HallwaySection=1}] add north
+tag @s[scores={Room=13,RoomSection=1}] add north
 tag @s[scores={Room=14}] add east
 tag @s[scores={Room=14}] add south
-tag @s[scores={Room=14,HallwaySection=2}] add west
-tag @s[scores={Room=14,HallwaySection=2}] add north
+tag @s[scores={Room=14,RoomSection=2}] add west
+tag @s[scores={Room=14,RoomSection=2}] add north
 tag @s[scores={Room=15}] add west
 tag @s[scores={Room=15},tag=area_3] add east
 tag @s[scores={Room=15}] add north
@@ -185,47 +201,47 @@ tag @s[scores={Room=22},tag=area_3] add west
 tag @s[scores={Room=22}] add east
 tag @s[scores={Room=22}] add south
 tag @s[scores={Room=22}] add north
-tag @s[scores={Room=23,HallwaySection=1},tag=area_3] add west
+tag @s[scores={Room=23,RoomSection=1},tag=area_3] add west
 tag @s[scores={Room=23}] add east
-tag @s[scores={Room=23,HallwaySection=1}] add south
+tag @s[scores={Room=23,RoomSection=1}] add south
 tag @s[scores={Room=23}] add north
 tag @s[scores={Room=28}] add south
-tag @s[scores={Room=28,HallwaySection=2}] add east
+tag @s[scores={Room=28,RoomSection=2}] add east
 tag @s[scores={Room=30}] add south
-tag @s[scores={Room=30,HallwaySection=2}] add east
-tag @s[scores={Room=31,HallwaySection=1}] add west
-tag @s[scores={Room=31,HallwaySection=1},tag=area_4] add east
-tag @s[scores={Room=31,HallwaySection=1},tag=area_4] add north
-tag @s[scores={Room=31,HallwaySection=2},tag=area_4] add east
-tag @s[scores={Room=31,HallwaySection=2}] add south
-tag @s[scores={Room=31,HallwaySection=2},tag=area_4] add north
-tag @s[scores={Room=31,HallwaySection=3},tag=area_4] add east
-tag @s[scores={Room=31,HallwaySection=3}] add south
-tag @s[scores={Room=31,HallwaySection=4}] add west
-tag @s[scores={Room=31,HallwaySection=4},tag=area_4] add east
-tag @s[scores={Room=31,HallwaySection=4}] add south
-tag @s[scores={Room=31,HallwaySection=5}] add west
-tag @s[scores={Room=31,HallwaySection=5}] add east
-tag @s[scores={Room=31,HallwaySection=5}] add south
-tag @s[scores={Room=31,HallwaySection=5}] add north
-tag @s[scores={Room=31,HallwaySection=6}] add west
-tag @s[scores={Room=31,HallwaySection=6}] add east
-tag @s[scores={Room=31,HallwaySection=6}] add south
-tag @s[scores={Room=31,HallwaySection=6}] add north
-tag @s[scores={Room=31,HallwaySection=7}] add west
-tag @s[scores={Room=31,HallwaySection=7}] add east
-tag @s[scores={Room=31,HallwaySection=7}] add south
-tag @s[scores={Room=31,HallwaySection=8}] add west
-tag @s[scores={Room=31,HallwaySection=8}] add east
-tag @s[scores={Room=31,HallwaySection=8}] add south
-tag @s[scores={Room=31,HallwaySection=8}] add north
-tag @s[scores={Room=31,HallwaySection=9}] add west
-tag @s[scores={Room=31,HallwaySection=9}] add east
-tag @s[scores={Room=31,HallwaySection=9}] add south
-tag @s[scores={Room=31,HallwaySection=9}] add north
-tag @s[scores={Room=31,HallwaySection=10}] add east
-tag @s[scores={Room=31,HallwaySection=10}] add south
-tag @s[scores={Room=31,HallwaySection=10}] add north
+tag @s[scores={Room=30,RoomSection=2}] add east
+tag @s[scores={Room=31,RoomSection=1}] add west
+tag @s[scores={Room=31,RoomSection=1},tag=area_4] add east
+tag @s[scores={Room=31,RoomSection=1},tag=area_4] add north
+tag @s[scores={Room=31,RoomSection=2},tag=area_4] add east
+tag @s[scores={Room=31,RoomSection=2}] add south
+tag @s[scores={Room=31,RoomSection=2},tag=area_4] add north
+tag @s[scores={Room=31,RoomSection=3},tag=area_4] add east
+tag @s[scores={Room=31,RoomSection=3}] add south
+tag @s[scores={Room=31,RoomSection=4}] add west
+tag @s[scores={Room=31,RoomSection=4},tag=area_4] add east
+tag @s[scores={Room=31,RoomSection=4}] add south
+tag @s[scores={Room=31,RoomSection=5}] add west
+tag @s[scores={Room=31,RoomSection=5}] add east
+tag @s[scores={Room=31,RoomSection=5}] add south
+tag @s[scores={Room=31,RoomSection=5}] add north
+tag @s[scores={Room=31,RoomSection=6}] add west
+tag @s[scores={Room=31,RoomSection=6}] add east
+tag @s[scores={Room=31,RoomSection=6}] add south
+tag @s[scores={Room=31,RoomSection=6}] add north
+tag @s[scores={Room=31,RoomSection=7}] add west
+tag @s[scores={Room=31,RoomSection=7}] add east
+tag @s[scores={Room=31,RoomSection=7}] add south
+tag @s[scores={Room=31,RoomSection=8}] add west
+tag @s[scores={Room=31,RoomSection=8}] add east
+tag @s[scores={Room=31,RoomSection=8}] add south
+tag @s[scores={Room=31,RoomSection=8}] add north
+tag @s[scores={Room=31,RoomSection=9}] add west
+tag @s[scores={Room=31,RoomSection=9}] add east
+tag @s[scores={Room=31,RoomSection=9}] add south
+tag @s[scores={Room=31,RoomSection=9}] add north
+tag @s[scores={Room=31,RoomSection=10}] add east
+tag @s[scores={Room=31,RoomSection=10}] add south
+tag @s[scores={Room=31,RoomSection=10}] add north
 tag @s[scores={Room=32}] add west
 tag @s[scores={Room=32}] add east
 tag @s[scores={Room=32}] add north
@@ -234,11 +250,11 @@ tag @s[scores={Room=33}] add north
 tag @s[scores={Room=34}] add east
 tag @s[scores={Room=34}] add south
 tag @s[scores={Room=34}] add north
-tag @s[scores={Room=35,HallwaySection=1}] add west
+tag @s[scores={Room=35,RoomSection=1}] add west
 tag @s[scores={Room=35}] add south
 tag @s[scores={Room=37}] add west
 tag @s[scores={Room=37}] add east
-tag @s[scores={Room=37,HallwaySection=1}] add south
+tag @s[scores={Room=37,RoomSection=1}] add south
 tag @s[scores={Room=37}] add north
 tag @s[scores={Room=38}] add west
 tag @s[scores={Room=38}] add east
@@ -247,31 +263,31 @@ tag @s[scores={Room=38}] add north
 tag @s[scores={Room=39}] add west
 tag @s[scores={Room=39}] add south
 tag @s[scores={Room=40}] add south
-tag @s[scores={Room=41,HallwaySection=1}] add west
-tag @s[scores={Room=41,HallwaySection=2},tag=area_4] add west
-tag @s[scores={Room=41,HallwaySection=2}] add north
-tag @s[scores={Room=41,HallwaySection=3},tag=area_4] add west
-tag @s[scores={Room=41,HallwaySection=3}] add east
-tag @s[scores={Room=41,HallwaySection=4}] add east
-tag @s[scores={Room=41,HallwaySection=4},tag=area_4] add north
-tag @s[scores={Room=43,HallwaySection=1}] add east
-tag @s[scores={Room=43,HallwaySection=1}] add south
-tag @s[scores={Room=43,HallwaySection=1}] add north
-tag @s[scores={Room=43,HallwaySection=2}] add west
-tag @s[scores={Room=43,HallwaySection=2}] add south
-tag @s[scores={Room=43,HallwaySection=2}] add north
-tag @s[scores={Room=43,HallwaySection=3}] add west
+tag @s[scores={Room=41,RoomSection=1}] add west
+tag @s[scores={Room=41,RoomSection=2},tag=area_4] add west
+tag @s[scores={Room=41,RoomSection=2}] add north
+tag @s[scores={Room=41,RoomSection=3},tag=area_4] add west
+tag @s[scores={Room=41,RoomSection=3}] add east
+tag @s[scores={Room=41,RoomSection=4}] add east
+tag @s[scores={Room=41,RoomSection=4},tag=area_4] add north
+tag @s[scores={Room=43,RoomSection=1}] add east
+tag @s[scores={Room=43,RoomSection=1}] add south
+tag @s[scores={Room=43,RoomSection=1}] add north
+tag @s[scores={Room=43,RoomSection=2}] add west
+tag @s[scores={Room=43,RoomSection=2}] add south
+tag @s[scores={Room=43,RoomSection=2}] add north
+tag @s[scores={Room=43,RoomSection=3}] add west
 tag @s[scores={Room=44}] add west
-tag @s[scores={Room=44,HallwaySection=1}] add south
+tag @s[scores={Room=44,RoomSection=1}] add south
 tag @s[scores={Room=45}] add south
 tag @s[scores={Room=46}] add south
-tag @s[scores={Room=47,HallwaySection=1}] add west
+tag @s[scores={Room=47,RoomSection=1}] add west
 tag @s[scores={Room=47}] add south
-tag @s[scores={Room=47,HallwaySection=1}] add north
-tag @s[scores={Room=47,HallwaySection=2}] add west
-tag @s[scores={Room=47,HallwaySection=2}] add east
-tag @s[scores={Room=47,HallwaySection=3}] add east
-tag @s[scores={Room=47,HallwaySection=3}] add north
+tag @s[scores={Room=47,RoomSection=1}] add north
+tag @s[scores={Room=47,RoomSection=2}] add west
+tag @s[scores={Room=47,RoomSection=2}] add east
+tag @s[scores={Room=47,RoomSection=3}] add east
+tag @s[scores={Room=47,RoomSection=3}] add north
 tag @s[scores={Room=49}] add east
 tag @s[scores={Room=49}] add south
 tag @s[scores={Room=51}] add west

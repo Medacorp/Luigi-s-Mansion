@@ -1,2 +1,2 @@
-setblock 684 117 4 minecraft:air
+setblock 714 26 -16 minecraft:air
 scoreboard players reset #parlor_vacuumable_1

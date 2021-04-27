@@ -1,5 +1,5 @@
-execute if entity @s[scores={Room=1,LastFloor=0}] run teleport @e[tag=me,limit=1] ~-37 ~50 ~1 ~ ~
-execute if entity @s[scores={Room=1,LastFloor=1}] run teleport @e[tag=me,limit=1] ~-37 ~91 ~1 ~ ~
+execute if entity @s[scores={Room=1,LastFloor=0}] run teleport @e[tag=me,limit=1] ~-37 ~50 ~-1 ~ ~
+execute if entity @s[scores={Room=1,LastFloor=1}] run teleport @e[tag=me,limit=1] ~-37 ~91 ~-1 ~ ~
 execute if entity @s[scores={Room=2}] run teleport @e[tag=me,limit=1] ~-30 ~91 ~-20 ~ ~
 execute if entity @s[scores={Room=3}] run teleport @e[tag=me,limit=1] ~-12 ~91 ~-25 ~ ~
 execute if entity @s[scores={Room=4}] run teleport @e[tag=me,limit=1] ~-5 ~91 ~-38 ~ ~

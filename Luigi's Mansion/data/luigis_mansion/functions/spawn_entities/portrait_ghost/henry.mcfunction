@@ -6,14 +6,8 @@ execute as @e[tag=this_entity,limit=1] store result score @s HomeX run data get 
 execute as @e[tag=this_entity,limit=1] store result score @s HomeY run data get entity @s Pos[1] 100
 execute as @e[tag=this_entity,limit=1] store result score @s HomeZ run data get entity @s Pos[2] 100
 execute as @e[tag=this_entity,limit=1] store result score @s HomeRot run data get entity @s Rotation[0]
-execute as @e[tag=this_entity,limit=1] store result score @s LastHealth run data get storage luigis_mansion:data current_state.current_data.portrait_ghosts.henry_and_orville.henry_health
-execute as @e[tag=this_entity,limit=1] run scoreboard players set @s MaxHealth 10000
-scoreboard players operation @e[tag=this_entity,limit=1] MaxHealth *= #multiply_health Selected
-scoreboard players operation @e[tag=this_entity,limit=1] MaxHealth /= #100 Constants
-scoreboard players operation @e[tag=this_entity,limit=1] MaxHealth += #extra_health Selected
-execute as @e[tag=this_entity,limit=1] if score @s LastHealth matches -1 store result storage luigis_mansion:data current_state.current_data.portrait_ghosts.henry_and_orville.henry_health int 1 run scoreboard players operation @s LastHealth = @s MaxHealth
-execute as @e[tag=this_entity,limit=1] run scoreboard players operation @s Health = @s LastHealth
-execute as @e[tag=this_entity,limit=1] run scoreboard players operation @s PrevHealth = @s Health
+execute as @e[tag=this_entity,limit=1] store result score @s PrevHealth store result score @s LastHealth store result score @s Health run data get storage luigis_mansion:data current_state.current_data.portrait_ghosts.henry_and_orville.henry_health
+execute as @e[tag=this_entity,limit=1] store result score @s MaxHealth run data get storage luigis_mansion:data current_state.current_data.portrait_ghosts.henry_and_orville.henry_max_health
 scoreboard players set @e[tag=this_entity,limit=1] PullStrength 10
 scoreboard players set @e[tag=this_entity,limit=1] Move 2
 scoreboard players set @e[tag=this_entity,limit=1] Sound 0

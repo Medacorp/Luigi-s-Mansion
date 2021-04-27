@@ -2,7 +2,6 @@
 	"values": [
 	    "luigis_mansion:room/normal/small_hallway/load/set_loaded",
         "luigis_mansion:room/normal/small_hallway/load/lights",
-        "luigis_mansion:room/normal/small_hallway/load/boos",
         "luigis_mansion:room/normal/small_hallway/load/fake_doors",
         "luigis_mansion:room/normal/small_hallway/load/spawn_money",
         "luigis_mansion:room/normal/small_hallway/load/candle_1",

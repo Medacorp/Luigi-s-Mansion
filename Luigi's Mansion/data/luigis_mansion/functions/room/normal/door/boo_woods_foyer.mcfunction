@@ -22,10 +22,10 @@ execute if score #temp Searched matches 1 in luigis_mansion:normal run setblock 
 execute if score #temp Searched matches 1 in luigis_mansion:normal run setblock 755 12 8 minecraft:spruce_door[open=true,facing=east,half=upper,hinge=left,powered=false]
 execute if score #temp Searched matches 1 in luigis_mansion:normal run setblock 755 11 9 minecraft:spruce_door[open=true,facing=east,half=lower,hinge=right,powered=false]
 execute if score #temp Searched matches 1 in luigis_mansion:normal run setblock 755 12 9 minecraft:spruce_door[open=true,facing=east,half=upper,hinge=right,powered=false]
-execute if score #temp Searched matches 0 in minecraft:overworld run playsound luigis_mansion:block.door.close block @a 719 102 8.0 1 1
-execute if score #temp Searched matches 0 in luigis_mansion:normal run playsound luigis_mansion:block.door.close block @a 756 11 9.0 1 1
-execute if score #temp Searched matches 1 in minecraft:overworld run playsound luigis_mansion:block.door.open block @a 719 102 8.0 1 1
-execute if score #temp Searched matches 1 in luigis_mansion:normal run playsound luigis_mansion:block.door.open block @a 756 11 9.0 1 1
+execute if score #temp Searched matches 0 in minecraft:overworld run playsound luigis_mansion:block.door.close block @a[scores={Room=0}] 719 102 8.0 1 1
+execute if score #temp Searched matches 0 in luigis_mansion:normal run playsound luigis_mansion:block.door.close block @a[scores={Room=1}] 756 11 9.0 1 1
+execute if score #temp Searched matches 1 in minecraft:overworld run playsound luigis_mansion:block.door.open block @a[scores={Room=0}] 719 102 8.0 1 1
+execute if score #temp Searched matches 1 in luigis_mansion:normal run playsound luigis_mansion:block.door.open block @a[scores={Room=1}] 756 11 9.0 1 1
 execute if score #temp Searched matches -1..0 in minecraft:overworld run fill 720 102 7 720 103 8 minecraft:air replace #minecraft:doors
 execute if score #temp Searched matches -1..0 in luigis_mansion:normal run fill 755 11 8 755 12 9 minecraft:air replace #minecraft:doors
 execute if score #temp Searched matches -1..0 in minecraft:overworld run setblock 720 102 7 minecraft:spruce_door[open=false,facing=west,half=lower,hinge=right,powered=false]

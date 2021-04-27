@@ -1,7 +1,8 @@
-offset everything about the room (everything in folder/file named after room, detect values, gameboy horror marker teleport values(offsets * -1), corresponding dialogs) by this:
+offset everything about the room (everything in folder/file named after room, detect values, corresponding dialogs) by this:
 foyer: +37 -91 -1
 parlor: +30 -91 -20
 anteroom: +12 -91 -25
+
 wardrobe room: +5 -91 -38 MIRROR X677
 balcony 1: * * *
 small hallway: +24 -91 -24

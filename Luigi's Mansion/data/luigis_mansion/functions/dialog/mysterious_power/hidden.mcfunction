@@ -22,7 +22,7 @@ execute if entity @s[scores={Dialog=1328}] run stopsound @a[tag=same_room] music
 execute if entity @s[scores={Dialog=1328}] run playsound luigis_mansion:music.warped_by_boos music @a[tag=same_room] ~ ~ ~ 1000
 execute if entity @s[scores={Dialog=1328}] run scoreboard players set @a[tag=same_room] Music 80
 execute if entity @s[scores={Dialog=1338..1398}] as @a[tag=same_room] at @s unless block ~-0.5 ~ ~ minecraft:black_concrete run teleport @s ~0.5 ~ ~
-execute if entity @s[scores={Dialog=1398}] run teleport @a[tag=same_room] 714.0 102 8.0
+execute if entity @s[scores={Dialog=1398}] run teleport @a[tag=same_room] 751.0 11 7.0
 execute if entity @s[scores={Dialog=1398}] run data modify storage luigis_mansion:data current_state.current_data.technical_data merge value {mysterious_power:1b}
 tag @s[scores={Dialog=1398}] add dead
 
@@ -37,7 +37,7 @@ execute if entity @s[scores={Dialog=1712}] run stopsound @a[tag=same_room] music
 execute if entity @s[scores={Dialog=1712}] run playsound luigis_mansion:music.warped_by_boos music @a[tag=same_room] ~ ~ ~ 1000
 execute if entity @s[scores={Dialog=1712}] run scoreboard players set @a[tag=same_room] Music 80
 execute if entity @s[scores={Dialog=1722..1782}] as @a[tag=same_room] at @s unless block ~-0.5 ~ ~ minecraft:black_concrete run teleport @s ~0.5 ~ ~
-execute if entity @s[scores={Dialog=1782}] run teleport @a[tag=same_room] 714.0 102 8.0
+execute if entity @s[scores={Dialog=1782}] run teleport @a[tag=same_room] 751.0 11 7.0
 tag @s[scores={Dialog=1782}] add dead
 
 execute if entity @s[scores={Dialog=1800}] if score #players Totals matches 1 run tellraw @a[tag=same_room] {"translate":"chat.type.text","with":[{"translate":"luigis_mansion:entity.mysterious_power","color":"green"},{"translate":"luigis_mansion:dialog.mysterious_power.leave.1"}]}
@@ -47,6 +47,6 @@ execute if entity @s[scores={Dialog=1936}] run stopsound @a[tag=same_room] music
 execute if entity @s[scores={Dialog=1936}] run playsound luigis_mansion:music.warped_by_boos music @a[tag=same_room] ~ ~ ~ 1000
 execute if entity @s[scores={Dialog=1936}] run scoreboard players set @a[tag=same_room] Music 80
 execute if entity @s[scores={Dialog=1946..1996}] as @a[tag=same_room] at @s unless block ~-0.5 ~ ~ minecraft:black_concrete run teleport @s ~0.5 ~ ~
-execute if entity @s[scores={Dialog=1996}] run teleport @a[tag=same_room] 714.0 102 8.0
+execute if entity @s[scores={Dialog=1996}] run teleport @a[tag=same_room] 751.0 11 7.0
 execute if entity @s[scores={Dialog=1996}] run data modify storage luigis_mansion:data current_state.current_data.technical_data merge value {mysterious_power:1b}
 tag @s[scores={Dialog=1996}] add dead

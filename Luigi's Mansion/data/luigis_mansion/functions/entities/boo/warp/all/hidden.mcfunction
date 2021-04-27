@@ -1,139 +1,78 @@
-scoreboard players set @s[x=683,y=111,z=-2,dx=16,dy=6,dz=19] Room 2
-scoreboard players set @s[x=672,y=111,z=-2,dx=11,dy=6,dz=19] Room 3
-scoreboard players set @s[x=672,y=111,z=-22,dx=11,dy=6,dz=19] Room 4
-scoreboard players set @s[x=699,y=111,z=-41,dx=7,dy=6,dz=38] Room 6
-scoreboard players set @s[x=683,y=111,z=-22,dx=16,dy=6,dz=19] Room 7
-scoreboard players set @s[x=683,y=111,z=-41,dx=16,dy=6,dz=18] Room 8
-scoreboard players set @s[x=706,y=111,z=-41,dx=13,dy=6,dz=18] Room 9
-scoreboard players set @s[x=699,y=102,z=-22,dx=7,dy=6,dz=58] Room 10
-scoreboard players set @s[x=672,y=102,z=18,dx=27,dy=6,dz=6] Room 10
-scoreboard players set @s[x=665,y=102,z=-9,dx=7,dy=6,dz=40] Room 10
-scoreboard players set @s[x=654,y=102,z=-9,dx=11,dy=6,dz=6] Room 10
-scoreboard players set @s[x=654,y=102,z=-22,dx=11,dy=6,dz=12] Room 12
-scoreboard players set @s[x=683,y=102,z=25,dx=16,dy=6,dz=31] Room 13
-scoreboard players set @s[x=672,y=102,z=25,dx=11,dy=6,dz=31] Room 14
-scoreboard players set @s[x=665,y=102,z=-22,dx=7,dy=6,dz=12] Room 15
-scoreboard players set @s[x=706,y=102,z=18,dx=13,dy=6,dz=18] Room 16
-scoreboard players set @s[x=706,y=102,z=37,dx=13,dy=6,dz=19] Room 17
-scoreboard players set @s[x=699,y=102,z=-41,dx=7,dy=6,dz=18] Room 18
-scoreboard players set @s[x=706,y=102,z=-41,dx=13,dy=6,dz=18] Room 19
-scoreboard players set @s[x=706,y=102,z=-22,dx=13,dy=6,dz=19] Room 20
-scoreboard players set @s[x=654,y=102,z=-2,dx=11,dy=6,dz=26] Room 21
-scoreboard players set @s[x=686,y=102,z=-11,dx=13,dy=6,dz=28] Room 22
-scoreboard players set @s[x=686,y=102,z=-41,dx=13,dy=6,dz=29] Room 23
-scoreboard players set @s[x=654,y=102,z=25,dx=11,dy=6,dz=31] Room 28
-scoreboard players set @s[x=654,y=111,z=25,dx=11,dy=6,dz=31] Room 30
-scoreboard players set @s[x=699,y=111,z=18,dx=7,dy=6,dz=38] Room 31
-scoreboard players set @s[x=672,y=111,z=18,dx=27,dy=6,dz=6] Room 31
-scoreboard players set @s[x=665,y=111,z=-9,dx=7,dy=6,dz=40] Room 31
-scoreboard players set @s[x=654,y=111,z=-9,dx=11,dy=6,dz=6] Room 31
-scoreboard players set @s[x=665,y=111,z=-22,dx=7,dy=6,dz=12] Room 32
-scoreboard players set @s[x=654,y=111,z=-22,dx=11,dy=6,dz=12] Room 33
-scoreboard players set @s[x=654,y=111,z=-2,dx=11,dy=6,dz=26] Room 34
-scoreboard players set @s[x=672,y=111,z=25,dx=11,dy=6,dz=20] Room 35
-scoreboard players set @s[x=672,y=102,z=-23,dx=13,dy=6,dz=25] Room 37
-scoreboard players set @s[x=672,y=102,z=3,dx=13,dy=6,dz=14] Room 38
-scoreboard players set @s[x=706,y=111,z=-22,dx=13,dy=6,dz=19] Room 39
-scoreboard players set @s[x=706,y=120,z=32,dx=13,dy=6,dz=23] Room 40
-scoreboard players set @s[x=683,y=120,z=25,dx=39,dy=6,dz=6] Room 41
-scoreboard players set @s[x=683,y=120,z=-16,dx=39,dy=6,dz=6] Room 43
-scoreboard players set @s[x=699,y=120,z=-9,dx=23,dy=6,dz=33] Room 44
-scoreboard players set @s[x=686,y=93,z=37,dx=13,dy=6,dz=19] Room 45
-scoreboard players set @s[x=706,y=93,z=37,dx=13,dy=6,dz=19] Room 46
-scoreboard players set @s[x=686,y=93,z=30,dx=35,dy=6,dz=6] Room 47
-scoreboard players set @s[x=683,y=120,z=-9,dx=16,dy=7,dz=33] Room 49
-scoreboard players set @s[x=699,y=120,z=-40,dx=21,dy=6,dz=23] Room 51
-scoreboard players set @s[x=683,y=120,z=-40,dx=16,dy=6,dz=23] Room 52
-scoreboard players set @s[x=686,y=93,z=13,dx=13,dy=6,dz=16] Room 54
-scoreboard players set @s[x=699,y=93,z=13,dx=20,dy=6,dz=16] Room 55
-scoreboard players set @s[x=706,y=111,z=18,dx=13,dy=6,dz=18] Room 56
-scoreboard players set @s[x=706,y=111,z=37,dx=13,dy=6,dz=19] Room 57
-scoreboard players set @s[x=683,y=120,z=32,dx=15,dy=6,dz=23] Room 58
+execute if entity @s[tag=bamboo] store result storage luigis_mansion:data current_state.current_data.boos[{name:"bamboo"}].room int 1 run scoreboard players get @s Room
+execute if entity @s[tag=boo_b_hatch] store result storage luigis_mansion:data current_state.current_data.boos[{name:"boo_b_hatch"}].room int 1 run scoreboard players get @s Room
+execute if entity @s[tag=boo_la_la] store result storage luigis_mansion:data current_state.current_data.boos[{name:"boo_la_la"}].room int 1 run scoreboard players get @s Room
+execute if entity @s[tag=boodacious] store result storage luigis_mansion:data current_state.current_data.boos[{name:"boodacious"}].room int 1 run scoreboard players get @s Room
+execute if entity @s[tag=booffant] store result storage luigis_mansion:data current_state.current_data.boos[{name:"booffant"}].room int 1 run scoreboard players get @s Room
+execute if entity @s[tag=boogie] store result storage luigis_mansion:data current_state.current_data.boos[{name:"boogie"}].room int 1 run scoreboard players get @s Room
+execute if entity @s[tag=boohoo] store result storage luigis_mansion:data current_state.current_data.boos[{name:"boohoo"}].room int 1 run scoreboard players get @s Room
+execute if entity @s[tag=booigi] store result storage luigis_mansion:data current_state.current_data.boos[{name:"booigi"}].room int 1 run scoreboard players get @s Room
+execute if entity @s[tag=boolderdash] store result storage luigis_mansion:data current_state.current_data.boos[{name:"boolderdash"}].room int 1 run scoreboard players get @s Room
+execute if entity @s[tag=boolicious] store result storage luigis_mansion:data current_state.current_data.boos[{name:"boolicious"}].room int 1 run scoreboard players get @s Room
+execute if entity @s[tag=booligan] store result storage luigis_mansion:data current_state.current_data.boos[{name:"booligan"}].room int 1 run scoreboard players get @s Room
+execute if entity @s[tag=boolivia] store result storage luigis_mansion:data current_state.current_data.boos[{name:"boolivia"}].room int 1 run scoreboard players get @s Room
+execute if entity @s[tag=boomeo] store result storage luigis_mansion:data current_state.current_data.boos[{name:"boomeo"}].room int 1 run scoreboard players get @s Room
+execute if entity @s[tag=boomerang] store result storage luigis_mansion:data current_state.current_data.boos[{name:"boomerang"}].room int 1 run scoreboard players get @s Room
+execute if entity @s[tag=boonita] store result storage luigis_mansion:data current_state.current_data.boos[{name:"boonita"}].room int 1 run scoreboard players get @s Room
+execute if entity @s[tag=boonswoggle] store result storage luigis_mansion:data current_state.current_data.boos[{name:"boonswoggle"}].room int 1 run scoreboard players get @s Room
+execute if entity @s[tag=booregard] store result storage luigis_mansion:data current_state.current_data.boos[{name:"booregard"}].room int 1 run scoreboard players get @s Room
+execute if entity @s[tag=booripedes] store result storage luigis_mansion:data current_state.current_data.boos[{name:"booripedes"}].room int 1 run scoreboard players get @s Room
+execute if entity @s[tag=booris] store result storage luigis_mansion:data current_state.current_data.boos[{name:"booris"}].room int 1 run scoreboard players get @s Room
+execute if entity @s[tag=booscaster] store result storage luigis_mansion:data current_state.current_data.boos[{name:"booscaster"}].room int 1 run scoreboard players get @s Room
+execute if entity @s[tag=bootha] store result storage luigis_mansion:data current_state.current_data.boos[{name:"bootha"}].room int 1 run scoreboard players get @s Room
+execute if entity @s[tag=bootique] store result storage luigis_mansion:data current_state.current_data.boos[{name:"bootique"}].room int 1 run scoreboard players get @s Room
+execute if entity @s[tag=gameboo] store result storage luigis_mansion:data current_state.current_data.boos[{name:"gameboo"}].room int 1 run scoreboard players get @s Room
+execute if entity @s[tag=gameboo_advance] store result storage luigis_mansion:data current_state.current_data.boos[{name:"gameboo_advance"}].room int 1 run scoreboard players get @s Room
+execute if entity @s[tag=gumboo] store result storage luigis_mansion:data current_state.current_data.boos[{name:"gumboo"}].room int 1 run scoreboard players get @s Room
+execute if entity @s[tag=kung_boo] store result storage luigis_mansion:data current_state.current_data.boos[{name:"kung_boo"}].room int 1 run scoreboard players get @s Room
+execute if entity @s[tag=limbooger] store result storage luigis_mansion:data current_state.current_data.boos[{name:"limbooger"}].room int 1 run scoreboard players get @s Room
+execute if entity @s[tag=little_boo_peep] store result storage luigis_mansion:data current_state.current_data.boos[{name:"little_boo_peep"}].room int 1 run scoreboard players get @s Room
+execute if entity @s[tag=mr_boojangles] store result storage luigis_mansion:data current_state.current_data.boos[{name:"mr_boojangles"}].room int 1 run scoreboard players get @s Room
+execute if entity @s[tag=peekaboo] store result storage luigis_mansion:data current_state.current_data.boos[{name:"peekaboo"}].room int 1 run scoreboard players get @s Room
+execute if entity @s[tag=shamboo] store result storage luigis_mansion:data current_state.current_data.boos[{name:"shamboo"}].room int 1 run scoreboard players get @s Room
+execute if entity @s[tag=taboo] store result storage luigis_mansion:data current_state.current_data.boos[{name:"taboo"}].room int 1 run scoreboard players get @s Room
+execute if entity @s[tag=tamboorine] store result storage luigis_mansion:data current_state.current_data.boos[{name:"tamboorine"}].room int 1 run scoreboard players get @s Room
+execute if entity @s[tag=turboo] store result storage luigis_mansion:data current_state.current_data.boos[{name:"turboo"}].room int 1 run scoreboard players get @s Room
+execute if entity @s[tag=underboo] store result storage luigis_mansion:data current_state.current_data.boos[{name:"underboo"}].room int 1 run scoreboard players get @s Room
 
-scoreboard players set @s[x=699,y=102,z=-22,dx=7,dy=6,dz=58] HallwaySection 1
-scoreboard players set @s[x=672,y=102,z=18,dx=27,dy=6,dz=6] HallwaySection 2
-scoreboard players set @s[x=665,y=102,z=-9,dx=7,dy=6,dz=40] HallwaySection 3
-scoreboard players set @s[x=654,y=102,z=-9,dx=11,dy=6,dz=6] HallwaySection 4
+execute if entity @s[tag=bamboo] store result storage luigis_mansion:data current_state.current_data.boos[{name:"bamboo"}].health int 1 run scoreboard players get @s Health
+execute if entity @s[tag=boo_b_hatch] store result storage luigis_mansion:data current_state.current_data.boos[{name:"boo_b_hatch"}].health int 1 run scoreboard players get @s Health
+execute if entity @s[tag=boo_la_la] store result storage luigis_mansion:data current_state.current_data.boos[{name:"boo_la_la"}].health int 1 run scoreboard players get @s Health
+execute if entity @s[tag=boodacious] store result storage luigis_mansion:data current_state.current_data.boos[{name:"boodacious"}].health int 1 run scoreboard players get @s Health
+execute if entity @s[tag=booffant] store result storage luigis_mansion:data current_state.current_data.boos[{name:"booffant"}].health int 1 run scoreboard players get @s Health
+execute if entity @s[tag=boogie] store result storage luigis_mansion:data current_state.current_data.boos[{name:"boogie"}].health int 1 run scoreboard players get @s Health
+execute if entity @s[tag=boohoo] store result storage luigis_mansion:data current_state.current_data.boos[{name:"boohoo"}].health int 1 run scoreboard players get @s Health
+execute if entity @s[tag=booigi] store result storage luigis_mansion:data current_state.current_data.boos[{name:"booigi"}].health int 1 run scoreboard players get @s Health
+execute if entity @s[tag=boolderdash] store result storage luigis_mansion:data current_state.current_data.boos[{name:"boolderdash"}].health int 1 run scoreboard players get @s Health
+execute if entity @s[tag=boolicious] store result storage luigis_mansion:data current_state.current_data.boos[{name:"boolicious"}].health int 1 run scoreboard players get @s Health
+execute if entity @s[tag=booligan] store result storage luigis_mansion:data current_state.current_data.boos[{name:"booligan"}].health int 1 run scoreboard players get @s Health
+execute if entity @s[tag=boolivia] store result storage luigis_mansion:data current_state.current_data.boos[{name:"boolivia"}].health int 1 run scoreboard players get @s Health
+execute if entity @s[tag=boomeo] store result storage luigis_mansion:data current_state.current_data.boos[{name:"boomeo"}].health int 1 run scoreboard players get @s Health
+execute if entity @s[tag=boomerang] store result storage luigis_mansion:data current_state.current_data.boos[{name:"boomerang"}].health int 1 run scoreboard players get @s Health
+execute if entity @s[tag=boonita] store result storage luigis_mansion:data current_state.current_data.boos[{name:"boonita"}].health int 1 run scoreboard players get @s Health
+execute if entity @s[tag=boonswoggle] store result storage luigis_mansion:data current_state.current_data.boos[{name:"boonswoggle"}].health int 1 run scoreboard players get @s Health
+execute if entity @s[tag=booregard] store result storage luigis_mansion:data current_state.current_data.boos[{name:"booregard"}].health int 1 run scoreboard players get @s Health
+execute if entity @s[tag=booripedes] store result storage luigis_mansion:data current_state.current_data.boos[{name:"booripedes"}].health int 1 run scoreboard players get @s Health
+execute if entity @s[tag=booris] store result storage luigis_mansion:data current_state.current_data.boos[{name:"booris"}].health int 1 run scoreboard players get @s Health
+execute if entity @s[tag=booscaster] store result storage luigis_mansion:data current_state.current_data.boos[{name:"booscaster"}].health int 1 run scoreboard players get @s Health
+execute if entity @s[tag=bootha] store result storage luigis_mansion:data current_state.current_data.boos[{name:"bootha"}].health int 1 run scoreboard players get @s Health
+execute if entity @s[tag=bootique] store result storage luigis_mansion:data current_state.current_data.boos[{name:"bootique"}].health int 1 run scoreboard players get @s Health
+execute if entity @s[tag=gameboo] store result storage luigis_mansion:data current_state.current_data.boos[{name:"gameboo"}].health int 1 run scoreboard players get @s Health
+execute if entity @s[tag=gameboo_advance] store result storage luigis_mansion:data current_state.current_data.boos[{name:"gameboo_advance"}].health int 1 run scoreboard players get @s Health
+execute if entity @s[tag=gumboo] store result storage luigis_mansion:data current_state.current_data.boos[{name:"gumboo"}].health int 1 run scoreboard players get @s Health
+execute if entity @s[tag=kung_boo] store result storage luigis_mansion:data current_state.current_data.boos[{name:"kung_boo"}].health int 1 run scoreboard players get @s Health
+execute if entity @s[tag=limbooger] store result storage luigis_mansion:data current_state.current_data.boos[{name:"limbooger"}].health int 1 run scoreboard players get @s Health
+execute if entity @s[tag=little_boo_peep] store result storage luigis_mansion:data current_state.current_data.boos[{name:"little_boo_peep"}].health int 1 run scoreboard players get @s Health
+execute if entity @s[tag=mr_boojangles] store result storage luigis_mansion:data current_state.current_data.boos[{name:"mr_boojangles"}].health int 1 run scoreboard players get @s Health
+execute if entity @s[tag=peekaboo] store result storage luigis_mansion:data current_state.current_data.boos[{name:"peekaboo"}].health int 1 run scoreboard players get @s Health
+execute if entity @s[tag=shamboo] store result storage luigis_mansion:data current_state.current_data.boos[{name:"shamboo"}].health int 1 run scoreboard players get @s Health
+execute if entity @s[tag=taboo] store result storage luigis_mansion:data current_state.current_data.boos[{name:"taboo"}].health int 1 run scoreboard players get @s Health
+execute if entity @s[tag=tamboorine] store result storage luigis_mansion:data current_state.current_data.boos[{name:"tamboorine"}].health int 1 run scoreboard players get @s Health
+execute if entity @s[tag=turboo] store result storage luigis_mansion:data current_state.current_data.boos[{name:"turboo"}].health int 1 run scoreboard players get @s Health
+execute if entity @s[tag=underboo] store result storage luigis_mansion:data current_state.current_data.boos[{name:"underboo"}].health int 1 run scoreboard players get @s Health
 
-scoreboard players set @s[x=699,y=111,z=18,dx=7,dy=6,dz=38] HallwaySection 1
-scoreboard players set @s[x=672,y=111,z=18,dx=27,dy=6,dz=6] HallwaySection 2
-scoreboard players set @s[x=665,y=111,z=-9,dx=7,dy=6,dz=40] HallwaySection 3
-scoreboard players set @s[x=654,y=111,z=-9,dx=11,dy=6,dz=6] HallwaySection 4
+teleport @s[scores={Room=2}] 721.0 20 -12.0
+teleport @s[scores={Room=3}] 689 20 -17.0
 
-execute if entity @s[tag=bamboo] store result storage luigis_mansion:data current_state.current_data.boos.bamboo.room int 1 run scoreboard players get @s Room
-execute if entity @s[tag=boo_b_hatch] store result storage luigis_mansion:data current_state.current_data.boos.boo_b_hatch.room int 1 run scoreboard players get @s Room
-execute if entity @s[tag=boo_la_la] store result storage luigis_mansion:data current_state.current_data.boos.boo_la_la.room int 1 run scoreboard players get @s Room
-execute if entity @s[tag=boodacious] store result storage luigis_mansion:data current_state.current_data.boos.boodacious.room int 1 run scoreboard players get @s Room
-execute if entity @s[tag=booffant] store result storage luigis_mansion:data current_state.current_data.boos.booffant.room int 1 run scoreboard players get @s Room
-execute if entity @s[tag=boogie] store result storage luigis_mansion:data current_state.current_data.boos.boogie.room int 1 run scoreboard players get @s Room
-execute if entity @s[tag=boohoo] store result storage luigis_mansion:data current_state.current_data.boos.boohoo.room int 1 run scoreboard players get @s Room
-execute if entity @s[tag=booigi] store result storage luigis_mansion:data current_state.current_data.boos.booigi.room int 1 run scoreboard players get @s Room
-execute if entity @s[tag=boolderdash] store result storage luigis_mansion:data current_state.current_data.boos.boolderdash.room int 1 run scoreboard players get @s Room
-execute if entity @s[tag=boolicious] store result storage luigis_mansion:data current_state.current_data.boos.boolicious.room int 1 run scoreboard players get @s Room
-execute if entity @s[tag=booligan] store result storage luigis_mansion:data current_state.current_data.boos.booligan.room int 1 run scoreboard players get @s Room
-execute if entity @s[tag=boolivia] store result storage luigis_mansion:data current_state.current_data.boos.boolivia.room int 1 run scoreboard players get @s Room
-execute if entity @s[tag=boomeo] store result storage luigis_mansion:data current_state.current_data.boos.boomeo.room int 1 run scoreboard players get @s Room
-execute if entity @s[tag=boomerang] store result storage luigis_mansion:data current_state.current_data.boos.boomerang.room int 1 run scoreboard players get @s Room
-execute if entity @s[tag=boonita] store result storage luigis_mansion:data current_state.current_data.boos.boonita.room int 1 run scoreboard players get @s Room
-execute if entity @s[tag=boonswoggle] store result storage luigis_mansion:data current_state.current_data.boos.boonswoggle.room int 1 run scoreboard players get @s Room
-execute if entity @s[tag=booregard] store result storage luigis_mansion:data current_state.current_data.boos.booregard.room int 1 run scoreboard players get @s Room
-execute if entity @s[tag=booripedes] store result storage luigis_mansion:data current_state.current_data.boos.booripedes.room int 1 run scoreboard players get @s Room
-execute if entity @s[tag=booris] store result storage luigis_mansion:data current_state.current_data.boos.booris.room int 1 run scoreboard players get @s Room
-execute if entity @s[tag=booscaster] store result storage luigis_mansion:data current_state.current_data.boos.booscaster.room int 1 run scoreboard players get @s Room
-execute if entity @s[tag=bootha] store result storage luigis_mansion:data current_state.current_data.boos.bootha.room int 1 run scoreboard players get @s Room
-execute if entity @s[tag=bootique] store result storage luigis_mansion:data current_state.current_data.boos.bootique.room int 1 run scoreboard players get @s Room
-execute if entity @s[tag=gameboo] store result storage luigis_mansion:data current_state.current_data.boos.gameboo.room int 1 run scoreboard players get @s Room
-execute if entity @s[tag=gameboo_advance] store result storage luigis_mansion:data current_state.current_data.boos.gameboo_advance.room int 1 run scoreboard players get @s Room
-execute if entity @s[tag=gumboo] store result storage luigis_mansion:data current_state.current_data.boos.gumboo.room int 1 run scoreboard players get @s Room
-execute if entity @s[tag=kung_boo] store result storage luigis_mansion:data current_state.current_data.boos.kung_boo.room int 1 run scoreboard players get @s Room
-execute if entity @s[tag=limbooger] store result storage luigis_mansion:data current_state.current_data.boos.limbooger.room int 1 run scoreboard players get @s Room
-execute if entity @s[tag=little_boo_peep] store result storage luigis_mansion:data current_state.current_data.boos.little_boo_peep.room int 1 run scoreboard players get @s Room
-execute if entity @s[tag=mr_boojangles] store result storage luigis_mansion:data current_state.current_data.boos.mr_boojangles.room int 1 run scoreboard players get @s Room
-execute if entity @s[tag=peekaboo] store result storage luigis_mansion:data current_state.current_data.boos.peekaboo.room int 1 run scoreboard players get @s Room
-execute if entity @s[tag=shamboo] store result storage luigis_mansion:data current_state.current_data.boos.shamboo.room int 1 run scoreboard players get @s Room
-execute if entity @s[tag=taboo] store result storage luigis_mansion:data current_state.current_data.boos.taboo.room int 1 run scoreboard players get @s Room
-execute if entity @s[tag=tamboorine] store result storage luigis_mansion:data current_state.current_data.boos.tamboorine.room int 1 run scoreboard players get @s Room
-execute if entity @s[tag=turboo] store result storage luigis_mansion:data current_state.current_data.boos.turboo.room int 1 run scoreboard players get @s Room
-execute if entity @s[tag=underboo] store result storage luigis_mansion:data current_state.current_data.boos.underboo.room int 1 run scoreboard players get @s Room
-
-execute if entity @s[tag=bamboo] store result storage luigis_mansion:data current_state.current_data.boos.bamboo.health int 1 run scoreboard players get @s Health
-execute if entity @s[tag=boo_b_hatch] store result storage luigis_mansion:data current_state.current_data.boos.boo_b_hatch.health int 1 run scoreboard players get @s Health
-execute if entity @s[tag=boo_la_la] store result storage luigis_mansion:data current_state.current_data.boos.boo_la_la.health int 1 run scoreboard players get @s Health
-execute if entity @s[tag=boodacious] store result storage luigis_mansion:data current_state.current_data.boos.boodacious.health int 1 run scoreboard players get @s Health
-execute if entity @s[tag=booffant] store result storage luigis_mansion:data current_state.current_data.boos.booffant.health int 1 run scoreboard players get @s Health
-execute if entity @s[tag=boogie] store result storage luigis_mansion:data current_state.current_data.boos.boogie.health int 1 run scoreboard players get @s Health
-execute if entity @s[tag=boohoo] store result storage luigis_mansion:data current_state.current_data.boos.boohoo.health int 1 run scoreboard players get @s Health
-execute if entity @s[tag=booigi] store result storage luigis_mansion:data current_state.current_data.boos.booigi.health int 1 run scoreboard players get @s Health
-execute if entity @s[tag=boolderdash] store result storage luigis_mansion:data current_state.current_data.boos.boolderdash.health int 1 run scoreboard players get @s Health
-execute if entity @s[tag=boolicious] store result storage luigis_mansion:data current_state.current_data.boos.boolicious.health int 1 run scoreboard players get @s Health
-execute if entity @s[tag=booligan] store result storage luigis_mansion:data current_state.current_data.boos.booligan.health int 1 run scoreboard players get @s Health
-execute if entity @s[tag=boolivia] store result storage luigis_mansion:data current_state.current_data.boos.boolivia.health int 1 run scoreboard players get @s Health
-execute if entity @s[tag=boomeo] store result storage luigis_mansion:data current_state.current_data.boos.boomeo.health int 1 run scoreboard players get @s Health
-execute if entity @s[tag=boomerang] store result storage luigis_mansion:data current_state.current_data.boos.boomerang.health int 1 run scoreboard players get @s Health
-execute if entity @s[tag=boonita] store result storage luigis_mansion:data current_state.current_data.boos.boonita.health int 1 run scoreboard players get @s Health
-execute if entity @s[tag=boonswoggle] store result storage luigis_mansion:data current_state.current_data.boos.boonswoggle.health int 1 run scoreboard players get @s Health
-execute if entity @s[tag=booregard] store result storage luigis_mansion:data current_state.current_data.boos.booregard.health int 1 run scoreboard players get @s Health
-execute if entity @s[tag=booripedes] store result storage luigis_mansion:data current_state.current_data.boos.booripedes.health int 1 run scoreboard players get @s Health
-execute if entity @s[tag=booris] store result storage luigis_mansion:data current_state.current_data.boos.booris.health int 1 run scoreboard players get @s Health
-execute if entity @s[tag=booscaster] store result storage luigis_mansion:data current_state.current_data.boos.booscaster.health int 1 run scoreboard players get @s Health
-execute if entity @s[tag=bootha] store result storage luigis_mansion:data current_state.current_data.boos.bootha.health int 1 run scoreboard players get @s Health
-execute if entity @s[tag=bootique] store result storage luigis_mansion:data current_state.current_data.boos.bootique.health int 1 run scoreboard players get @s Health
-execute if entity @s[tag=gameboo] store result storage luigis_mansion:data current_state.current_data.boos.gameboo.health int 1 run scoreboard players get @s Health
-execute if entity @s[tag=gameboo_advance] store result storage luigis_mansion:data current_state.current_data.boos.gameboo_advance.health int 1 run scoreboard players get @s Health
-execute if entity @s[tag=gumboo] store result storage luigis_mansion:data current_state.current_data.boos.gumboo.health int 1 run scoreboard players get @s Health
-execute if entity @s[tag=kung_boo] store result storage luigis_mansion:data current_state.current_data.boos.kung_boo.health int 1 run scoreboard players get @s Health
-execute if entity @s[tag=limbooger] store result storage luigis_mansion:data current_state.current_data.boos.limbooger.health int 1 run scoreboard players get @s Health
-execute if entity @s[tag=little_boo_peep] store result storage luigis_mansion:data current_state.current_data.boos.little_boo_peep.health int 1 run scoreboard players get @s Health
-execute if entity @s[tag=mr_boojangles] store result storage luigis_mansion:data current_state.current_data.boos.mr_boojangles.health int 1 run scoreboard players get @s Health
-execute if entity @s[tag=peekaboo] store result storage luigis_mansion:data current_state.current_data.boos.peekaboo.health int 1 run scoreboard players get @s Health
-execute if entity @s[tag=shamboo] store result storage luigis_mansion:data current_state.current_data.boos.shamboo.health int 1 run scoreboard players get @s Health
-execute if entity @s[tag=taboo] store result storage luigis_mansion:data current_state.current_data.boos.taboo.health int 1 run scoreboard players get @s Health
-execute if entity @s[tag=tamboorine] store result storage luigis_mansion:data current_state.current_data.boos.tamboorine.health int 1 run scoreboard players get @s Health
-execute if entity @s[tag=turboo] store result storage luigis_mansion:data current_state.current_data.boos.turboo.health int 1 run scoreboard players get @s Health
-execute if entity @s[tag=underboo] store result storage luigis_mansion:data current_state.current_data.boos.underboo.health int 1 run scoreboard players get @s Health
-
-teleport @s[scores={Room=2}] 691.0 111 8.0
-teleport @s[scores={Room=3}] 677 111 8.0
 teleport @s[scores={Room=4}] 677 111 -13.0
 teleport @s[scores={Room=6}] 702 111 -22
 teleport @s[scores={Room=7}] 691.0 111 -12.0
@@ -228,6 +167,3 @@ scoreboard players operation @e[tag=boo_marker,tag=new] Health = @s Health
 scoreboard players operation @e[tag=boo_marker,tag=new] Room = @s Room
 scoreboard players operation @e[tag=boo_marker,tag=new] HallwaySection = @s HallwaySection
 tag @e[tag=boo_marker,tag=new] remove new
-tag @s add warped
-tag @s add dead
-teleport @s ~ ~-100 ~

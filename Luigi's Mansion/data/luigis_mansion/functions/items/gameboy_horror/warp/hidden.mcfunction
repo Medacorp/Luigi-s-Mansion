@@ -1,1 +1,1 @@
-execute if score #mansion_type Selected matches 1 run teleport @s 714.0 102 8.0
+execute if score #mansion_type Selected matches 1 run teleport @s 751.0 11 7.0

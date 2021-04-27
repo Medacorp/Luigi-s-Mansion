@@ -2,7 +2,7 @@ execute unless data storage luigis_mansion:data current_state.current_data.obtai
 data modify entity @e[x=701.5,y=30,z=-73.5,distance=..0.7,limit=1,type=minecraft:item_frame] Item.tag.map set value 80
 data modify storage luigis_mansion:data current_state.current_data.rooms.artists_studio merge value {cleared:1b}
 function #luigis_mansion:room/normal/artists_studio/turn_lights/on
-execute if data storage luigis_mansion:data current_state.current_data.technical_data{released_boos_talk:1b} unless data storage luigis_mansion:data current_state.current_data{boo_counter:50} run function luigis_mansion:room/normal/artists_studio/load_boos
+execute if data storage luigis_mansion:data current_state.current_data{boos:[{}],technical_data:{released_boos_talk:1b}} run function luigis_mansion:room/normal/artists_studio/load_boos
 execute as @e[scores={Room=58},tag=optional_ghost] run data merge entity @s {Health:0.0f,DeathTime:19s}
 execute as @e[scores={Room=58},tag=ghost] run data merge entity @s {Health:0.0f,DeathTime:19s}
 tag @e[scores={Room=58},tag=ghost_marker] add dead

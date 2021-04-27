@@ -5,8 +5,10 @@ tag @s add seen_room_name
 
 execute if entity @s[x=745.5,y=11,z=9.0,distance=..4] if data storage luigis_mansion:data current_state.current_data.obtained_keys{main_hallway:1b} run function luigis_mansion:room/normal/foyer/clear_blockade
 
-execute if data storage luigis_mansion:data {found_e_gadd:1b} unless data storage luigis_mansion:data current_state.current_data.rooms.nursery{cleared:1b} if entity @s[x=751.0,y=11,z=9.0,distance=..3] unless entity @a[x=751.0,y=11,z=9.0,distance=..3,tag=scanning,limit=1] unless entity @a[tag=warp,limit=1] unless entity @e[x=751.0,y=11,z=9.0,distance=..3,tag=chandelier,type=minecraft:area_effect_cloud,limit=1] run summon minecraft:area_effect_cloud 751.0 11 9.0 {Tags:["chandelier"],Duration:240}
-execute unless data storage luigis_mansion:data {entered_mansion:1b} run playsound luigis_mansion:music.mansion.first_entrance music @s ~ ~ ~ 1000
-execute unless data storage luigis_mansion:data {entered_mansion:1b} run scoreboard players set @s Music 240
+execute if entity @s[x=751.0,y=11,z=9.0,distance=..3,tag=!chance_check] unless entity @a[x=751.0,y=11,z=9.0,distance=..3,tag=scanning,limit=1] unless entity @a[tag=warp,limit=1] if data storage luigis_mansion:data {found_e_gadd:1b,current_state:{current_data:{rooms:{nursery:{cleared:0b}}}}} unless entity @e[x=751.0,y=11,z=9.0,distance=..3,tag=chandelier,type=minecraft:area_effect_cloud,limit=1] run function luigis_mansion:room/normal/foyer/falling_chandelier
+tag @s[x=751.0,y=11,z=9.0,distance=4..5,tag=chance_check] remove chance_check
+
+execute if data storage luigis_mansion:data {entered_mansion:0b} run playsound luigis_mansion:music.mansion.first_entrance music @s ~ ~ ~ 1000
+execute if data storage luigis_mansion:data {entered_mansion:0b} run scoreboard players set @s Music 240
 data modify storage luigis_mansion:data {} merge value {entered_mansion:1b}
 execute if entity @s[x=739.5,y=10,z=15.5,distance=..3] if data storage luigis_mansion:data current_state.current_data.rooms.wardrobe_room{cleared:1b} unless data storage luigis_mansion:data current_state.current_data.technical_data{portrait_ghosts:1b} run scoreboard players set @a GBHCall 1

@@ -76,8 +76,8 @@ execute if entity @s[scores={Dialog=68}] run teleport @s 725.5 20 31.1 2.25 0
 execute if entity @s[scores={Dialog=69}] run teleport @s 725.5 20 31.2 0 0
 execute if entity @s[scores={Dialog=70}] run teleport @s 725.5 20 31.3 0 0
 execute if entity @s[scores={Dialog=71..81}] run teleport @s 725.5 20 31.4 0 0
-execute if entity @s[scores={Dialog=72}] positioned 688 20 35 run function luigis_mansion:spawn_entities/e_gadd
-execute if entity @s[scores={Dialog=72}] positioned 688 20 35 run tag @e[distance=..0.1,tag=e_gadd] add dialog
+execute if entity @s[scores={Dialog=72}] positioned 718 20 35 run function luigis_mansion:spawn_entities/e_gadd
+execute if entity @s[scores={Dialog=72}] positioned 718 20 35 run tag @e[distance=..0.1,tag=e_gadd] add dialog
 execute if entity @s[scores={Dialog=72}] positioned 725 20 34.9 run function luigis_mansion:spawn_entities/ghost/gold_ghost
 execute if entity @s[scores={Dialog=72}] positioned 725 20 34.9 run scoreboard players set @e[distance=..0.1,tag=gold_ghost] SpawnTime 20
 execute if entity @s[scores={Dialog=72}] positioned 725 20 34.9 run tag @e[distance=..0.1,tag=gold_ghost] add dialog
