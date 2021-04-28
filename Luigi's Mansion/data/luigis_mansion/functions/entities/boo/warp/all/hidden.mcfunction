@@ -72,8 +72,8 @@ execute if entity @s[tag=underboo] store result storage luigis_mansion:data curr
 
 teleport @s[scores={Room=2}] 721.0 20 -12.0
 teleport @s[scores={Room=3}] 689 20 -17.0
+teleport @s[scores={Room=4}] 682 20 -51.0
 
-teleport @s[scores={Room=4}] 677 111 -13.0
 teleport @s[scores={Room=6}] 702 111 -22
 teleport @s[scores={Room=7}] 691.0 111 -12.0
 teleport @s[scores={Room=8}] 691.0 111 -31.0

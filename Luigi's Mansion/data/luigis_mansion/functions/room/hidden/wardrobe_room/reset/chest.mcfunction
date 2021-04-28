@@ -1,2 +1,3 @@
-setblock 677 111 -16 minecraft:air
+setblock 682 20 -54 minecraft:air
+setblock 672 20 -54 minecraft:air
 scoreboard players reset #wardrobe_room_chest

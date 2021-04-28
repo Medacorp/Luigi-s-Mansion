@@ -8,6 +8,8 @@ when boos attack, they don't move to the target's y coordinate, making them miss
 money spawning on the floor of a room in the hidden mansion doesn't get the room score unless moving up (increase room size by 2 on y and move it 1 down)
 elemental ghosts disappear when the room lights up
 elemental ghosts can appear multiple times from 1 source, if the prior ones are far away enough
+boo hurt animation is identical to flee animation
+boo idle animation is empty
 
 to do:
 add room headers for spectators (set room score, but don't tick room)
@@ -16,7 +18,7 @@ add cinema ghost shadow
 add missing sounds (@LaserRanger is working on this)
 add missing models (portrait ghosts+corresponding objects; biff atlas and after, excluding madame clairvoya, boolossus and king boo (not bowser or portrificationizing king boo))
 add portrificationizing ghost/mario animation in the first section of the portrificationizer
-add boo idle animation is empty
+add boo appear animation
 add king boo magic animation (also make mario turn to bowser)
 add ghost, puncher and twirler smug and basher animations
 add beta animations for all ghosts (appearing, twirler attack, etc.)

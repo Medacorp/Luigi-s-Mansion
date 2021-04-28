@@ -6,9 +6,9 @@ execute if entity @a[gamemode=!spectator,x=712,y=20,z=-23,dx=17,dy=6,dz=21] run 
 execute if score #parlor Ticking matches 1 unless entity @a[gamemode=!spectator,x=712,y=20,z=-23,dx=17,dy=6,dz=21] unless entity @a[gamemode=!spectator,scores={Room=2}] unless entity @a[scores={LastRoom=2}] run function #luigis_mansion:room/hidden/parlor/reset
 execute if entity @a[gamemode=!spectator,x=683,y=20,z=-28,dx=12,dy=6,dz=21] run function luigis_mansion:room/hidden/anteroom/tick
 execute if score #anteroom Ticking matches 1 unless entity @a[gamemode=!spectator,x=683,y=20,z=-28,dx=12,dy=6,dz=21] unless entity @a[gamemode=!spectator,scores={Room=3}] unless entity @a[scores={LastRoom=3}] run function #luigis_mansion:room/hidden/anteroom/reset
+execute if entity @a[gamemode=!spectator,x=676,y=20,z=-61,dx=12,dy=6,dz=21] run function luigis_mansion:room/hidden/wardrobe_room/tick
+execute if score #wardrobe_room Ticking matches 1 unless entity @a[gamemode=!spectator,x=676,y=20,z=-61,dx=12,dy=6,dz=21] unless entity @a[gamemode=!spectator,scores={Room=4}] unless entity @a[scores={LastRoom=4}] run function #luigis_mansion:room/hidden/wardrobe_room/reset
 
-execute if entity @a[gamemode=!spectator,x=672,y=111,z=-22,dx=10,dy=6,dz=19] run function luigis_mansion:room/hidden/wardrobe_room/tick
-execute if score #wardrobe_room Ticking matches 1 unless entity @a[gamemode=!spectator,x=672,y=111,z=-22,dx=10,dy=6,dz=19] unless entity @a[gamemode=!spectator,scores={Room=4}] unless entity @a[scores={LastRoom=4}] run function #luigis_mansion:room/hidden/wardrobe_room/reset
 execute if entity @a[gamemode=!spectator,x=673,y=111,z=-28,dx=6,dy=6,dz=5] run function luigis_mansion:room/hidden/balcony_1/tick
 execute if score #balcony_1 Ticking matches 1 unless entity @a[gamemode=!spectator,x=673,y=111,z=-28,dx=6,dy=6,dz=5] unless entity @a[gamemode=!spectator,scores={Room=5}] unless entity @a[scores={LastRoom=5}] run function #luigis_mansion:room/hidden/balcony_1/reset
 execute if entity @a[gamemode=!spectator,x=699,y=111,z=-41,dx=6,dy=6,dz=38] run function luigis_mansion:room/hidden/small_hallway/tick

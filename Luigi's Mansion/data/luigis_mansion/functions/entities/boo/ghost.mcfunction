@@ -15,6 +15,8 @@ scoreboard players set @s[scores={HurtTime=1},tag=boo_hurt] Sound 40
 execute if entity @s[scores={Sound=0},tag=fleeing] run playsound luigis_mansion:entity.boo.flee hostile @a[tag=same_room] ~ ~ ~ 1
 scoreboard players set @s[scores={Sound=0}] Sound 40
 
+scoreboard players operation @s HallwaySection = @s RoomSection
+
 execute if entity @a[gamemode=!spectator,distance=..0.7,limit=1] run function luigis_mansion:entities/boo/collide
 execute if entity @s[tag=!fleeing,tag=!attack,tag=can_attack,tag=!laugh,tag=!taunt] if predicate luigis_mansion:boo_attack_chance run tag @s add attack
 tag @s[tag=fleeing] remove attack
@@ -25,14 +27,14 @@ tag @s[tag=attack] remove rotated
 execute at @s[tag=laugh] facing entity @p[gamemode=!spectator] feet rotated ~ 0 run teleport @s ~ ~ ~ ~ ~
 execute at @s[tag=!fleeing,tag=!attack,tag=!laugh,tag=!taunt,tag=!boo_hurt,tag=!rotated] run function luigis_mansion:entities/boo/rotate
 execute if entity @s[scores={Time=120..}] run function luigis_mansion:entities/boo/turn
-execute if score #temp Move matches 1.. at @s[tag=!fleeing,tag=!attack,tag=!laugh,tag=!taunt,tag=!boo_hurt] unless entity @s[tag=!fleeing,tag=!attack,tag=!laugh,tag=!taunt,tag=!boo_hurt,tag=!north,tag=!east,tag=!south,tag=!west] run function luigis_mansion:entities/boo/move_forward
-execute if score #temp Move matches 1.. at @s[tag=!fleeing,tag=!attack,tag=!laugh,tag=!taunt,tag=!boo_hurt,tag=!north,tag=!east,tag=!south,tag=!west] run function luigis_mansion:entities/boo/move_forward_no_direction
+execute if score #temp Move matches 1.. at @s[tag=!fleeing,tag=!attack,tag=!laugh,tag=!taunt,tag=!boo_hurt] unless entity @s[tag=!fleeing,tag=!attack,tag=!laugh,tag=!taunt,tag=!boo_hurt,tag=!north,tag=!east,tag=!south,tag=!west,tag=!up,tag=!down] run function luigis_mansion:entities/boo/move_forward
+execute if score #temp Move matches 1.. at @s[tag=!fleeing,tag=!attack,tag=!laugh,tag=!taunt,tag=!boo_hurt,tag=!north,tag=!east,tag=!south,tag=!west,tag=!up,tag=!down] run function luigis_mansion:entities/boo/move_forward_no_direction
 scoreboard players add @s[tag=new_section] BooTimer 1
-tag @s[scores={BooTimer=3}] remove rotated
-tag @s[scores={BooTimer=3}] remove new_section
+execute if entity @s[scores={BooTimer=3}] run function luigis_mansion:entities/boo/entered_new_section
 scoreboard players reset @s[scores={BooTimer=3}] BooTimer
 execute if entity @s[tag=remove_from_existence] run function #luigis_mansion:entities/boo/warp
 execute if entity @s[tag=!dead] run function #luigis_mansion:entities/boo/direction
+execute unless score @s HallwaySection = @s RoomSection run tag @s add new_section
 execute if entity @s[tag=!dead,tag=wall] run function luigis_mansion:entities/boo/warp
 execute if entity @s[tag=!fleeing,tag=laugh] run function luigis_mansion:entities/boo/laugh
 execute if entity @s[tag=!fleeing,tag=taunt] run function luigis_mansion:entities/boo/taunt

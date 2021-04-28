@@ -2,14 +2,16 @@ tag @s remove west
 tag @s remove east
 tag @s remove south
 tag @s remove north
+tag @s remove up
+tag @s remove down
 execute if data storage luigis_mansion:data current_state.current_data.rooms.parlor{cleared:1b} run tag @s add area_1
 execute if data storage luigis_mansion:data current_state.current_data.used_keys{main_hallway:1b} run tag @s add area_2
 execute if data storage luigis_mansion:data current_state.current_data.used_keys{courtyard:1b} run tag @s add area_3
 execute if data storage luigis_mansion:data current_state.current_data.used_keys{attic_hallway_2:1b} run tag @s add area_4
 
 # wardrobe room
-scoreboard players set @s[x=672,y=111,z=-9,dx=10,dy=6,dz=6] RoomSection 1
-scoreboard players set @s[x=672,y=111,z=-22,dx=10,dy=6,dz=12] RoomSection 2
+scoreboard players set @s[x=677,y=20,z=-47,dx=10,dy=6,dz=6] RoomSection 1
+scoreboard players set @s[x=677,y=20,z=-60,dx=10,dy=6,dz=12] RoomSection 2
 
 # small hallway
 scoreboard players set @s[x=699,y=111,z=-22,dx=6,dy=6,dz=19] RoomSection 1
