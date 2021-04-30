@@ -26,35 +26,35 @@ execute if entity @s[x=708.5,y=11,z=-62.0,distance=..0.7,scores={PathStep=24}] r
 execute if entity @s[x=707.0,y=11,z=-59.5,distance=..0.7,scores={PathStep=25}] run scoreboard players set @s PathStep 26
 execute if entity @s[x=704.0,y=11,z=-63.5,distance=..0.7,scores={PathStep=26}] run scoreboard players set @s PathStep 27
 execute if entity @s[x=699.5,y=11,z=-55.5,distance=..0.7,scores={PathStep=27}] run scoreboard players set @s PathStep 1
-execute if score @s PathStep matches 1 run summon minecraft:area_effect_cloud 699 11 -45 {Tags:["target"],Duration:1}
-execute if score @s PathStep matches 2 run summon minecraft:area_effect_cloud 702 11 -42 {Tags:["target"],Duration:1}
-execute if score @s PathStep matches 3 run summon minecraft:area_effect_cloud 704.0 11 -44.0 {Tags:["target"],Duration:1}
-execute if score @s PathStep matches 4 run summon minecraft:area_effect_cloud 700 11 -47 {Tags:["target"],Duration:1}
-execute if score @s PathStep matches 5 run summon minecraft:area_effect_cloud 704 11 -50.0 {Tags:["target"],Duration:1}
-execute if score @s PathStep matches 6 run summon minecraft:area_effect_cloud 705 11 -47 {Tags:["target"],Duration:1}
-execute if score @s PathStep matches 7 run summon minecraft:area_effect_cloud 705.0 11 -44.0 {Tags:["target"],Duration:1}
-execute if score @s PathStep matches 8 run summon minecraft:area_effect_cloud 705 11 -42 {Tags:["target"],Duration:1}
-execute if score @s PathStep matches 9 run summon minecraft:area_effect_cloud 708 11 -45 {Tags:["target"],Duration:1}
-execute if score @s PathStep matches 10 run summon minecraft:area_effect_cloud 707.0 11 -47.0 {Tags:["target"],Duration:1}
-execute if score @s PathStep matches 11 run summon minecraft:area_effect_cloud 704 11 -45 {Tags:["target"],Duration:1}
-execute if score @s PathStep matches 12 run summon minecraft:area_effect_cloud 702 11 -47.0 {Tags:["target"],Duration:1}
-execute if score @s PathStep matches 13 run summon minecraft:area_effect_cloud 704 11 -48 {Tags:["target"],Duration:1}
-execute if score @s PathStep matches 14 run summon minecraft:area_effect_cloud 707.0 11 -47.0 {Tags:["target"],Duration:1}
-execute if score @s PathStep matches 15 run summon minecraft:area_effect_cloud 708 11 -48 {Tags:["target"],Duration:1}
-execute if score @s PathStep matches 16 run summon minecraft:area_effect_cloud 708 11 -54 {Tags:["target"],Duration:1}
-execute if score @s PathStep matches 17 run summon minecraft:area_effect_cloud 706 11 -56 {Tags:["target"],Duration:1}
-execute if score @s PathStep matches 18 run summon minecraft:area_effect_cloud 702 11 -56 {Tags:["target"],Duration:1}
-execute if score @s PathStep matches 19 run summon minecraft:area_effect_cloud 699 11 -59 {Tags:["target"],Duration:1}
-execute if score @s PathStep matches 20 run summon minecraft:area_effect_cloud 699 11 -62 {Tags:["target"],Duration:1}
-execute if score @s PathStep matches 21 run summon minecraft:area_effect_cloud 701 11 -64 {Tags:["target"],Duration:1}
-execute if score @s PathStep matches 22 run summon minecraft:area_effect_cloud 704.0 11 -62 {Tags:["target"],Duration:1}
-execute if score @s PathStep matches 23 run summon minecraft:area_effect_cloud 706 11 -64 {Tags:["target"],Duration:1}
-execute if score @s PathStep matches 24 run summon minecraft:area_effect_cloud 708 11 -62.0 {Tags:["target"],Duration:1}
-execute if score @s PathStep matches 25 run summon minecraft:area_effect_cloud 707.0 11 -60 {Tags:["target"],Duration:1}
-execute if score @s PathStep matches 26 run summon minecraft:area_effect_cloud 704.0 11 -64 {Tags:["target"],Duration:1}
-execute if score @s PathStep matches 27 run summon minecraft:area_effect_cloud 699 11 -56 {Tags:["target"],Duration:1}
+execute if score @s PathStep matches 1 run summon minecraft:marker 699 11 -45 {Tags:["target"]}
+execute if score @s PathStep matches 2 run summon minecraft:marker 702 11 -42 {Tags:["target"]}
+execute if score @s PathStep matches 3 run summon minecraft:marker 704.0 11 -44.0 {Tags:["target"]}
+execute if score @s PathStep matches 4 run summon minecraft:marker 700 11 -47 {Tags:["target"]}
+execute if score @s PathStep matches 5 run summon minecraft:marker 704 11 -50.0 {Tags:["target"]}
+execute if score @s PathStep matches 6 run summon minecraft:marker 705 11 -47 {Tags:["target"]}
+execute if score @s PathStep matches 7 run summon minecraft:marker 705.0 11 -44.0 {Tags:["target"]}
+execute if score @s PathStep matches 8 run summon minecraft:marker 705 11 -42 {Tags:["target"]}
+execute if score @s PathStep matches 9 run summon minecraft:marker 708 11 -45 {Tags:["target"]}
+execute if score @s PathStep matches 10 run summon minecraft:marker 707.0 11 -47.0 {Tags:["target"]}
+execute if score @s PathStep matches 11 run summon minecraft:marker 704 11 -45 {Tags:["target"]}
+execute if score @s PathStep matches 12 run summon minecraft:marker 702 11 -47.0 {Tags:["target"]}
+execute if score @s PathStep matches 13 run summon minecraft:marker 704 11 -48 {Tags:["target"]}
+execute if score @s PathStep matches 14 run summon minecraft:marker 707.0 11 -47.0 {Tags:["target"]}
+execute if score @s PathStep matches 15 run summon minecraft:marker 708 11 -48 {Tags:["target"]}
+execute if score @s PathStep matches 16 run summon minecraft:marker 708 11 -54 {Tags:["target"]}
+execute if score @s PathStep matches 17 run summon minecraft:marker 706 11 -56 {Tags:["target"]}
+execute if score @s PathStep matches 18 run summon minecraft:marker 702 11 -56 {Tags:["target"]}
+execute if score @s PathStep matches 19 run summon minecraft:marker 699 11 -59 {Tags:["target"]}
+execute if score @s PathStep matches 20 run summon minecraft:marker 699 11 -62 {Tags:["target"]}
+execute if score @s PathStep matches 21 run summon minecraft:marker 701 11 -64 {Tags:["target"]}
+execute if score @s PathStep matches 22 run summon minecraft:marker 704.0 11 -62 {Tags:["target"]}
+execute if score @s PathStep matches 23 run summon minecraft:marker 706 11 -64 {Tags:["target"]}
+execute if score @s PathStep matches 24 run summon minecraft:marker 708 11 -62.0 {Tags:["target"]}
+execute if score @s PathStep matches 25 run summon minecraft:marker 707.0 11 -60 {Tags:["target"]}
+execute if score @s PathStep matches 26 run summon minecraft:marker 704.0 11 -64 {Tags:["target"]}
+execute if score @s PathStep matches 27 run summon minecraft:marker 699 11 -56 {Tags:["target"]}
 scoreboard players operation #temp Move = @s Move
 execute facing entity @e[tag=target,limit=1] feet as @e[tag=partner,limit=1] positioned as @s run function luigis_mansion:entities/ghost/move_forward
 scoreboard players operation #temp Move = @s Move
 execute facing entity @e[tag=target,limit=1] feet run function luigis_mansion:entities/ghost/move_forward
-kill @e[tag=target,limit=1,type=minecraft:area_effect_cloud]
+kill @e[tag=target,limit=1,type=minecraft:marker]

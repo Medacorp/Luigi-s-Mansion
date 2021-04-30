@@ -5,10 +5,10 @@ execute if entity @s[x=687.5,y=102,z=38.5,distance=..0.7,scores={PathStep=3}] ru
 execute if entity @s[x=694.5,y=102,z=38.5,distance=..0.7,scores={PathStep=4}] run scoreboard players set @s PathStep 5
 execute if entity @s[x=694.5,y=102,z=43.5,distance=..0.7,scores={PathStep=5}] run scoreboard players set @s PathStep 6
 execute if entity @s[x=687.5,y=102,z=43.5,distance=..0.7,scores={PathStep=6}] run scoreboard players set @s PathStep 1
-execute if entity @s[scores={PathStep=1}] run summon minecraft:area_effect_cloud 694 102 43 {Tags:["target"],Duration:1}
-execute if entity @s[scores={PathStep=2}] run summon minecraft:area_effect_cloud 694 102 38 {Tags:["target"],Duration:1}
-execute if entity @s[scores={PathStep=3}] run summon minecraft:area_effect_cloud 687 102 38 {Tags:["target"],Duration:1}
-execute if entity @s[scores={PathStep=4}] run summon minecraft:area_effect_cloud 694 102 38 {Tags:["target"],Duration:1}
-execute if entity @s[scores={PathStep=5}] run summon minecraft:area_effect_cloud 694 102 43 {Tags:["target"],Duration:1}
-execute if entity @s[scores={PathStep=6}] run summon minecraft:area_effect_cloud 687 102 43 {Tags:["target"],Duration:1}
+execute if entity @s[scores={PathStep=1}] run summon minecraft:marker 694 102 43 {Tags:["target"]}
+execute if entity @s[scores={PathStep=2}] run summon minecraft:marker 694 102 38 {Tags:["target"]}
+execute if entity @s[scores={PathStep=3}] run summon minecraft:marker 687 102 38 {Tags:["target"]}
+execute if entity @s[scores={PathStep=4}] run summon minecraft:marker 694 102 38 {Tags:["target"]}
+execute if entity @s[scores={PathStep=5}] run summon minecraft:marker 694 102 43 {Tags:["target"]}
+execute if entity @s[scores={PathStep=6}] run summon minecraft:marker 687 102 43 {Tags:["target"]}
 scoreboard players operation @e[tag=partner,limit=1] PathStep = @s PathStep

@@ -1,11 +1,12 @@
-execute unless score #nanas_room_closet Searched matches 1 run summon minecraft:area_effect_cloud ~ ~ ~ {Tags:["chance","nothing"],Duration:1}
-execute unless score #nanas_room_closet Searched matches 1 run summon minecraft:area_effect_cloud ~ ~ ~ {Tags:["chance","nothing"],Duration:1}
-execute unless score #nanas_room_closet Searched matches 1 run summon minecraft:area_effect_cloud ~ ~ ~ {Tags:["chance","nothing"],Duration:1}
-execute unless score #nanas_room_closet Searched matches 1 run summon minecraft:area_effect_cloud ~ ~ ~ {Tags:["chance","nothing"],Duration:1}
-execute unless score #nanas_room_closet Searched matches 1 run summon minecraft:area_effect_cloud ~ ~ ~ {Tags:["chance","money"],Duration:1}
-execute unless score #nanas_room_closet Searched matches 1 run tag @e[type=minecraft:area_effect_cloud,tag=chance,sort=random,limit=1] add selected
-execute if entity @e[type=minecraft:area_effect_cloud,tag=chance,tag=selected,tag=money] run function luigis_mansion:room/hidden/nanas_room/closet
-execute unless entity @e[type=minecraft:area_effect_cloud,tag=chance,tag=selected,tag=!nothing] positioned 662 111 23 run function luigis_mansion:blocks/dust
+execute unless score #nanas_room_closet Searched matches 1 run summon minecraft:marker ~ ~ ~ {Tags:["chance","nothing"],Duration:1}
+execute unless score #nanas_room_closet Searched matches 1 run summon minecraft:marker ~ ~ ~ {Tags:["chance","nothing"],Duration:1}
+execute unless score #nanas_room_closet Searched matches 1 run summon minecraft:marker ~ ~ ~ {Tags:["chance","nothing"],Duration:1}
+execute unless score #nanas_room_closet Searched matches 1 run summon minecraft:marker ~ ~ ~ {Tags:["chance","nothing"],Duration:1}
+execute unless score #nanas_room_closet Searched matches 1 run summon minecraft:marker ~ ~ ~ {Tags:["chance","money"],Duration:1}
+execute unless score #nanas_room_closet Searched matches 1 run tag @e[type=minecraft:marker,tag=chance,sort=random,limit=1] add selected
+execute if entity @e[type=minecraft:marker,tag=chance,tag=selected,tag=money] run function luigis_mansion:room/hidden/nanas_room/closet
+execute unless entity @e[type=minecraft:marker,tag=chance,tag=selected,tag=!nothing] 662 111 23 run function luigis_mansion:blocks/dust
+kill @e[type=minecraft:marker,tag=chance]
 scoreboard players set #nanas_room_closet Searched 1
 data merge block 662 111 23 {LootTable:"luigis_mansion:search"}
 data merge block 663 111 23 {LootTable:"luigis_mansion:search"}

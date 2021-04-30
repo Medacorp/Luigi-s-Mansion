@@ -8,9 +8,7 @@ execute if block ~ ~ ~ #minecraft:doors[facing=south] align xyz run teleport @a[
 execute if block ~ ~ ~ #minecraft:doors[facing=west] align xyz positioned ~-1 ~ ~ run teleport @a[dx=1] ~2.5 ~ ~0.5
 
 execute if entity @s[scores={AnimationProg=23}] run function luigis_mansion:animations/closed_door/place_door
-
 execute if entity @s[scores={AnimationProg=25}] run function luigis_mansion:animations/closed_door/remove_door
-
 execute if entity @s[scores={AnimationProg=33}] run function luigis_mansion:animations/closed_door/place_door
-
 execute if entity @s[scores={AnimationProg=35}] run function luigis_mansion:animations/closed_door/remove_door
+kill @s[scores={AnimationProg=40}]

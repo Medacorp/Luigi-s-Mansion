@@ -1,4 +1,4 @@
-summon minecraft:area_effect_cloud ~ ~ ~ {Tags:["interact","vacuum","poltergust"]}
+summon minecraft:marker ~ ~ ~ {Tags:["interact","vacuum","poltergust"]}
 scoreboard players operation #temp Room = @s Room
 scoreboard players operation #temp ID = @s ID
 tag @s add me
@@ -22,4 +22,4 @@ tag @s add vacuuming
 tag @s add vacuuming_ghost
 tag @e[tag=boo,tag=already_hurt] remove already_hurt
 tag @e[tag=king_boo,tag=already_hurt] remove already_hurt
-kill @e[tag=interact,limit=1,tag=!shot_fire,tag=!shot_water,tag=!shot_ice]
+kill @e[type=minecraft:marker,tag=interact,limit=1]

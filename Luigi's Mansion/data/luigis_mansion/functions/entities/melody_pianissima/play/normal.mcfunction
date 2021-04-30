@@ -15,12 +15,12 @@ execute if entity @s[scores={Dialog=304}] if score #players Totals matches 2.. r
 execute if entity @s[scores={Dialog=440}] run tellraw @a[tag=same_room] {"translate":"chat.type.text","with":[{"translate":"luigis_mansion:entity.melody_pianissima","color":"green"},{"translate":"luigis_mansion:dialog.melody_pianissima.4"}]}
 execute if entity @s[scores={Dialog=471}] run function luigis_mansion:room/normal/conservatory/stop_music
 execute if entity @s[scores={Dialog=472}] run scoreboard players set #conservatory Wave 3
-execute if entity @s[scores={Dialog=472}] run summon minecraft:area_effect_cloud ~ ~ ~ {"Tags":["1","option"]}
-execute if entity @s[scores={Dialog=472}] run summon minecraft:area_effect_cloud ~ ~ ~ {"Tags":["2","option"]}
-execute if entity @s[scores={Dialog=472}] run tag @e[type=minecraft:area_effect_cloud,tag=option,sort=random,limit=1] add selected
-execute if entity @s[scores={Dialog=472}] if entity @e[type=minecraft:area_effect_cloud,tag=option,tag=selected,tag=1,limit=1] run tag @s add 1
-execute if entity @s[scores={Dialog=472}] if entity @e[type=minecraft:area_effect_cloud,tag=option,tag=selected,tag=2,limit=1] run tag @s add 2
-execute if entity @s[scores={Dialog=472}] run kill @e[type=minecraft:area_effect_cloud,tag=option]
+execute if entity @s[scores={Dialog=472}] run summon minecraft:marker ~ ~ ~ {"Tags":["1","option"]}
+execute if entity @s[scores={Dialog=472}] run summon minecraft:marker ~ ~ ~ {"Tags":["2","option"]}
+execute if entity @s[scores={Dialog=472}] run tag @e[type=minecraft:marker,tag=option,sort=random,limit=1] add selected
+execute if entity @s[scores={Dialog=472}] if entity @e[type=minecraft:marker,tag=option,tag=selected,tag=1,limit=1] run tag @s add 1
+execute if entity @s[scores={Dialog=472}] if entity @e[type=minecraft:marker,tag=option,tag=selected,tag=2,limit=1] run tag @s add 2
+execute if entity @s[scores={Dialog=472}] run kill @e[type=minecraft:marker,tag=option]
 execute if entity @s[scores={Dialog=472..998},tag=1] run function luigis_mansion:entities/melody_pianissima/composer
 execute if entity @s[scores={Dialog=472..998},tag=2] run function luigis_mansion:entities/melody_pianissima/game
 tag @s[scores={Dialog=1000..}] remove 1

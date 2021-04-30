@@ -1,1 +1,1 @@
-summon minecraft:area_effect_cloud ~ ~ ~ {CustomName:'{"translate":"luigis_mansion:entity.chandelier"}',Tags:["chandelier"],Duration:240}
+summon minecraft:marker ~ ~ ~ {CustomName:'{"translate":"luigis_mansion:entity.chandelier"}',Tags:["chandelier"]}

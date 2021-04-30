@@ -38,19 +38,19 @@ execute if entity @s[scores={Dialog=122}] run playsound luigis_mansion:entity.sp
 execute if entity @s[scores={Dialog=142}] run playsound luigis_mansion:entity.spooky.bark hostile @a[tag=same_room] ~ ~ ~ 1
 tag @s[scores={Dialog=162}] remove bark
 tag @s[scores={Dialog=162}] add move
-execute at @s[scores={Dialog=162}] run summon minecraft:area_effect_cloud ~ ~ ~ {Tags:["target"],Duration:1}
-execute if entity @s[scores={Dialog=162}] store result entity @e[tag=target,limit=1] Pos[0] double 0.01 run scoreboard players get @s HomeX
-execute if entity @s[scores={Dialog=162}] store result entity @e[tag=target,limit=1] Pos[2] double 0.01 run scoreboard players get @s HomeZ
-execute at @s[scores={Dialog=162}] facing entity @e[tag=target,limit=1] feet rotated ~ 0 run teleport @s ~ ~ ~ ~ ~
+execute at @s[scores={Dialog=162}] run summon minecraft:marker ~ ~ ~ {Tags:["target"],Duration:1}
+execute if entity @s[scores={Dialog=162}] store result entity @e[type=minecraft:marker,tag=target,limit=1] Pos[0] double 0.01 run scoreboard players get @s HomeX
+execute if entity @s[scores={Dialog=162}] store result entity @e[type=minecraft:marker,tag=target,limit=1] Pos[2] double 0.01 run scoreboard players get @s HomeZ
+execute at @s[scores={Dialog=162}] facing entity @e[type=minecraft:marker,tag=target,limit=1] feet rotated ~ 0 run teleport @s ~ ~ ~ ~ ~
 execute at @s[scores={Dialog=162}] run function luigis_mansion:entities/ghost/move_forward
-execute at @s[scores={Dialog=162}] if entity @e[tag=target,limit=1,distance=..0.2] store result entity @s Rotation[0] float 1 run scoreboard players get @s HomeRot
-execute at @s[scores={Dialog=162}] if entity @e[tag=target,limit=1,distance=..0.2] run tag @s remove move
-execute at @s[scores={Dialog=162}] if entity @e[tag=target,limit=1,distance=..0.2] run tag @s remove moved_up
-execute at @s[scores={Dialog=162}] if entity @e[tag=target,limit=1,distance=..0.2] at @s run teleport @s ~ ~-0.2 ~
-execute at @s[scores={Dialog=162}] positioned ~ ~0.2 ~ if entity @e[tag=target,limit=1,distance=..0.2] run scoreboard players reset @s Dialog
+execute at @s[scores={Dialog=162}] if entity @e[type=minecraft:marker,tag=target,limit=1,distance=..0.2] store result entity @s Rotation[0] float 1 run scoreboard players get @s HomeRot
+execute at @s[scores={Dialog=162}] if entity @e[type=minecraft:marker,tag=target,limit=1,distance=..0.2] run tag @s remove move
+execute at @s[scores={Dialog=162}] if entity @e[type=minecraft:marker,tag=target,limit=1,distance=..0.2] run tag @s remove moved_up
+execute at @s[scores={Dialog=162}] if entity @e[type=minecraft:marker,tag=target,limit=1,distance=..0.2] at @s run teleport @s ~ ~-0.2 ~
+execute at @s[scores={Dialog=162}] positioned ~ ~0.2 ~ if entity @e[type=minecraft:marker,tag=target,limit=1,distance=..0.2] run scoreboard players reset @s Dialog
 execute at @s[scores={Dialog=163}] facing entity @e[tag=spooky_bone,limit=1] feet rotated ~ 0 run teleport @s ~ ~ ~ ~ ~
 execute at @s[scores={Dialog=163}] unless entity @e[tag=spooky_bone,distance=..1] run teleport @s ^ ^ ^0.2
 execute at @s[scores={Dialog=163}] if entity @e[tag=spooky_bone,distance=..1] run scoreboard players set @s VulnerableTime 5
 execute at @s[scores={Dialog=163}] if entity @e[tag=spooky_bone,distance=..1] run tag @s remove move
 execute at @s[scores={Dialog=163}] if entity @e[tag=spooky_bone,distance=..1] run tag @s add lick
-kill @e[tag=target,limit=1,type=minecraft:area_effect_cloud]
+kill @e[tag=target,limit=1,type=minecraft:marker]

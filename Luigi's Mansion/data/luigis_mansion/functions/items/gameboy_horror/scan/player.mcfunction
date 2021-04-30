@@ -8,12 +8,12 @@ execute if entity @s[scores={Health=51..,Invulnerable=0,GBHCall=0},tag=gameboy_h
 execute if entity @s[scores={Health=51..,Invulnerable=0}] unless entity @s[tag=!catch_portrait_ghost,tag=!catch_ghost] run tellraw @a {"translate":"chat.type.text","with":[{"selector":"@a[tag=scanning_player,limit=1]","color":"green"},{"translate":"luigis_mansion:message.player.scan_furniture.123","with":[{"selector":"@s"}]}]}
 
 execute if entity @s[scores={Health=51..,Invulnerable=0},tag=!flashlight_selected,tag=!catch_portrait_ghost,tag=!catch_ghost] unless entity @s[scores={GBHCall=0},tag=gameboy_horror_selected] unless entity @s[distance=..1.5] run tag @s add random_scan_message
-execute if entity @s[tag=random_scan_message] run summon minecraft:area_effect_cloud ~ ~ ~ {Tags:["choice","1"]}
-execute if entity @s[tag=random_scan_message] run summon minecraft:area_effect_cloud ~ ~ ~ {Tags:["choice","2"]}
-execute if entity @s[tag=random_scan_message] run summon minecraft:area_effect_cloud ~ ~ ~ {Tags:["choice","3"]}
-tag @e[type=minecraft:area_effect_cloud,sort=random,tag=choice,limit=1] add selected
-execute if entity @e[type=minecraft:area_effect_cloud,tag=choice,tag=selected,tag=1,limit=1] run tellraw @a {"translate":"chat.type.text","with":[{"selector":"@a[tag=scanning_player,limit=1]","color":"green"},{"translate":"luigis_mansion:message.player.scan_furniture.113","with":[{"selector":"@s"}]}]}
-execute if entity @e[type=minecraft:area_effect_cloud,tag=choice,tag=selected,tag=2,limit=1] run tellraw @a {"translate":"chat.type.text","with":[{"selector":"@a[tag=scanning_player,limit=1]","color":"green"},{"translate":"luigis_mansion:message.player.scan_furniture.114","with":[{"selector":"@s"}]}]}
-execute if entity @e[type=minecraft:area_effect_cloud,tag=choice,tag=selected,tag=3,limit=1] run tellraw @a {"translate":"chat.type.text","with":[{"selector":"@a[tag=scanning_player,limit=1]","color":"green"},{"translate":"luigis_mansion:message.player.scan_furniture.116","with":[{"selector":"@s"}]}]}
-kill @e[type=minecraft:area_effect_cloud,tag=choice]
+execute if entity @s[tag=random_scan_message] run summon minecraft:marker ~ ~ ~ {Tags:["choice","1"]}
+execute if entity @s[tag=random_scan_message] run summon minecraft:marker ~ ~ ~ {Tags:["choice","2"]}
+execute if entity @s[tag=random_scan_message] run summon minecraft:marker ~ ~ ~ {Tags:["choice","3"]}
+tag @e[type=minecraft:marker,sort=random,tag=choice,limit=1] add selected
+execute if entity @e[type=minecraft:marker,tag=choice,tag=selected,tag=1,limit=1] run tellraw @a {"translate":"chat.type.text","with":[{"selector":"@a[tag=scanning_player,limit=1]","color":"green"},{"translate":"luigis_mansion:message.player.scan_furniture.113","with":[{"selector":"@s"}]}]}
+execute if entity @e[type=minecraft:marker,tag=choice,tag=selected,tag=2,limit=1] run tellraw @a {"translate":"chat.type.text","with":[{"selector":"@a[tag=scanning_player,limit=1]","color":"green"},{"translate":"luigis_mansion:message.player.scan_furniture.114","with":[{"selector":"@s"}]}]}
+execute if entity @e[type=minecraft:marker,tag=choice,tag=selected,tag=3,limit=1] run tellraw @a {"translate":"chat.type.text","with":[{"selector":"@a[tag=scanning_player,limit=1]","color":"green"},{"translate":"luigis_mansion:message.player.scan_furniture.116","with":[{"selector":"@s"}]}]}
+kill @e[type=minecraft:marker,tag=choice]
 tag @s remove random_scan_message

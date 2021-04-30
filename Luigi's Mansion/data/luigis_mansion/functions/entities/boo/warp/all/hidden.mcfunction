@@ -74,7 +74,7 @@ teleport @s[scores={Room=2}] 721.0 20 -12.0
 teleport @s[scores={Room=3}] 689 20 -17.0
 teleport @s[scores={Room=4}] 682 20 -51.0
 
-teleport @s[scores={Room=6}] 702 111 -22
+teleport @s[scores={Room=6}] 726 20 -46
 teleport @s[scores={Room=7}] 691.0 111 -12.0
 teleport @s[scores={Room=8}] 691.0 111 -31.0
 teleport @s[scores={Room=9}] 712 111 -32
@@ -123,7 +123,7 @@ teleport @s[scores={Room=56}] 712 111 27
 teleport @s[scores={Room=57}] 712 111 47.0
 teleport @s[scores={Room=58}] 691 120 43.0
 
-execute at @s run summon minecraft:area_effect_cloud ~ ~ ~ {Tags:["boo_marker","new"],Duration:600,CustomName:'{"translate":"luigis_mansion:entity.boo"}'}
+execute at @s run summon minecraft:marker ~ ~ ~ {Tags:["boo_marker","new"],Duration:600,CustomName:'{"translate":"luigis_mansion:entity.boo"}'}
 execute if entity @s[tag=bamboo] run tag @e[tag=boo_marker,tag=new] add bamboo
 execute if entity @s[tag=boo_b_hatch] run tag @e[tag=boo_marker,tag=new] add boo_b_hatch
 execute if entity @s[tag=boo_la_la] run tag @e[tag=boo_marker,tag=new] add boo_la_la

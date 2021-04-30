@@ -14,8 +14,8 @@ scoreboard players set @s[x=677,y=20,z=-47,dx=10,dy=6,dz=6] RoomSection 1
 scoreboard players set @s[x=677,y=20,z=-60,dx=10,dy=6,dz=12] RoomSection 2
 
 # small hallway
-scoreboard players set @s[x=699,y=111,z=-22,dx=6,dy=6,dz=19] RoomSection 1
-scoreboard players set @s[x=699,y=111,z=-43,dx=6,dy=6,dz=19] RoomSection 2
+scoreboard players set @s[x=723,y=20,z=-46,dx=6,dy=6,dz=19] RoomSection 1
+scoreboard players set @s[x=723,y=20,z=-67,dx=6,dy=6,dz=19] RoomSection 2
 
 # main hallway
 scoreboard players set @s[x=699,y=102,z=-22,dx=6,dy=6,dz=10] RoomSection 1

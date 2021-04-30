@@ -12,3 +12,4 @@ execute if score @s PathStep matches 4 run function luigis_mansion:entities/flas
 execute if score @s PathStep matches 3 run function luigis_mansion:entities/flashlight/remove_light/12
 execute if score @s PathStep matches 2 run function luigis_mansion:entities/flashlight/remove_light/13
 execute if score @s PathStep matches 1 run function luigis_mansion:entities/flashlight/remove_light/14
+kill @s

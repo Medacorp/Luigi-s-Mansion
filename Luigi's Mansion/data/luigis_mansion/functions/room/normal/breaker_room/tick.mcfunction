@@ -2,7 +2,7 @@ execute unless score #breaker_room Ticking matches 1 run function #luigis_mansio
 execute as @a[gamemode=!spectator,x=686,y=1,z=-63,dx=14,dy=8,dz=21] unless entity @s[scores={Room=45}] run scoreboard players operation @s LastRoom = @s Room
 execute as @e[type=!minecraft:item_frame,x=686,y=1,z=-63,dx=14,dy=8,dz=21] run scoreboard players set @s Room 45
 
-scoreboard players set @e[scores={Room=45},type=!minecraft:area_effect_cloud] MirrorX 699
+scoreboard players set @e[scores={Room=45},type=!minecraft:marker] MirrorX 699
 
 execute as @a[gamemode=!spectator,x=686,y=1,z=-63,dx=14,dy=8,dz=21] run function luigis_mansion:room/normal/breaker_room/tick_per_player
 

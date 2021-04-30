@@ -3,7 +3,7 @@ execute as @a[gamemode=!spectator,x=645,y=92,z=-10,dx=6,dy=7,dz=11] unless entit
 execute as @e[type=!minecraft:item_frame,x=645,y=92,z=-10,dx=6,dy=7,dz=11] run scoreboard players set @s Room 27
 tag @e[tag=ghost,scores={Room=27}] add hallway
 
-scoreboard players set @e[scores={Room=27},type=!minecraft:area_effect_cloud] MirrorZ -26
+scoreboard players set @e[scores={Room=27},type=!minecraft:marker] MirrorZ -26
 
 execute as @a[gamemode=!spectator,x=647,y=92,z=-8,dx=2,dy=7,dz=8] run function luigis_mansion:room/normal/bottom_of_the_well/tick_per_player
 

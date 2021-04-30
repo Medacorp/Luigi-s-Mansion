@@ -1,11 +1,12 @@
-execute unless score #ceramics_studio_jar_6 Searched matches 1 run summon minecraft:area_effect_cloud ~ ~ ~ {Tags:["chance","nothing"],Duration:1}
-execute unless score #ceramics_studio_jar_6 Searched matches 1 run summon minecraft:area_effect_cloud ~ ~ ~ {Tags:["chance","nothing"],Duration:1}
-execute unless score #ceramics_studio_jar_6 Searched matches 1 run summon minecraft:area_effect_cloud ~ ~ ~ {Tags:["chance","nothing"],Duration:1}
-execute unless score #ceramics_studio_jar_6 Searched matches 1 run summon minecraft:area_effect_cloud ~ ~ ~ {Tags:["chance","small_heart"],Duration:1}
-execute unless score #ceramics_studio_jar_6 Searched matches 1 run summon minecraft:area_effect_cloud ~ ~ ~ {Tags:["chance","nothing"],Duration:1}
-execute unless score #ceramics_studio_jar_6 Searched matches 1 run tag @e[type=minecraft:area_effect_cloud,tag=chance,sort=random,limit=1] add selected
-execute if entity @e[type=minecraft:area_effect_cloud,tag=chance,tag=selected,tag=small_heart] positioned 710 29 67 run function luigis_mansion:spawn_entities/item/small_heart
-execute unless entity @e[type=minecraft:area_effect_cloud,tag=chance,tag=selected,tag=!nothing] positioned 711 29 67 run function luigis_mansion:blocks/dust
+execute unless score #ceramics_studio_jar_6 Searched matches 1 run summon minecraft:marker ~ ~ ~ {Tags:["chance","nothing"],Duration:1}
+execute unless score #ceramics_studio_jar_6 Searched matches 1 run summon minecraft:marker ~ ~ ~ {Tags:["chance","nothing"],Duration:1}
+execute unless score #ceramics_studio_jar_6 Searched matches 1 run summon minecraft:marker ~ ~ ~ {Tags:["chance","nothing"],Duration:1}
+execute unless score #ceramics_studio_jar_6 Searched matches 1 run summon minecraft:marker ~ ~ ~ {Tags:["chance","small_heart"],Duration:1}
+execute unless score #ceramics_studio_jar_6 Searched matches 1 run summon minecraft:marker ~ ~ ~ {Tags:["chance","nothing"],Duration:1}
+execute unless score #ceramics_studio_jar_6 Searched matches 1 run tag @e[type=minecraft:marker,tag=chance,sort=random,limit=1] add selected
+execute if entity @e[type=minecraft:marker,tag=chance,tag=selected,tag=small_heart] positioned 710 29 67 run function luigis_mansion:spawn_entities/item/small_heart
+execute unless entity @e[type=minecraft:marker,tag=chance,tag=selected,tag=!nothing] 711 29 67 run function luigis_mansion:blocks/dust
+kill @e[type=minecraft:marker,tag=chance]
 scoreboard players set #ceramics_studio_jar_6 Searched 1
 data merge block 711 29 67 {LootTable:"luigis_mansion:search"}
 setblock 711 29 67 minecraft:hopper[enabled=false]

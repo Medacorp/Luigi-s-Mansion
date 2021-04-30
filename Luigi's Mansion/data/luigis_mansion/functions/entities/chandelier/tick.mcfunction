@@ -13,26 +13,27 @@ execute if entity @s[scores={ActionTime=60}] align xz if entity @a[distance=..2,
 execute if entity @s[scores={ActionTime=82},tag=hit] align xz run playsound luigis_mansion:entity.ghost.laugh hostile @a[tag=same_room] ~ ~ ~ 2
 execute if entity @s[scores={ActionTime=82},tag=!hit] align xz run playsound luigis_mansion:entity.ghost.complain hostile @a[tag=same_room] ~ ~ ~ 2
 execute if entity @s[scores={ActionTime=62..136}] align xz run scoreboard players set @a[distance=..2,gamemode=!spectator] Invulnerable 10
-execute if entity @s[scores={ActionTime=122}] align xz run playsound luigis_mansion:block.chandelier.rise hostile @a[tag=same_room] ~ ~1.5 ~ 2
-execute if entity @s[scores={ActionTime=123}] run clone ~-2 ~ ~-2 ~1 ~12 ~1 ~-2 ~1 ~-2 replace force
-execute if entity @s[scores={ActionTime=123}] run fill ~-2 ~ ~-2 ~1 ~ ~1 minecraft:air
-execute if entity @s[scores={ActionTime=52..201}] run fill ~-2 ~ ~-2 ~1 ~12 ~1 minecraft:air replace minecraft:light
-execute if entity @s[scores={ActionTime=129}] run clone ~-2 ~ ~-2 ~1 ~12 ~1 ~-2 ~1 ~-2 replace force
-execute if entity @s[scores={ActionTime=132}] align xz run playsound luigis_mansion:block.chandelier.rise hostile @a[tag=same_room] ~ ~3 ~ 2
-execute if entity @s[scores={ActionTime=137}] run clone ~-2 ~ ~-2 ~1 ~12 ~1 ~-2 ~1 ~-2 replace force
-execute if entity @s[scores={ActionTime=142}] align xz run playsound luigis_mansion:block.chandelier.rise hostile @a[tag=same_room] ~ ~4.5 ~ 2
-execute if entity @s[scores={ActionTime=145}] run clone ~-2 ~ ~-2 ~1 ~12 ~1 ~-2 ~1 ~-2 replace force
-execute if entity @s[scores={ActionTime=152}] align xz run playsound luigis_mansion:block.chandelier.rise hostile @a[tag=same_room] ~ ~5 ~ 2
-execute if entity @s[scores={ActionTime=153}] run clone ~-2 ~ ~-2 ~1 ~12 ~1 ~-2 ~1 ~-2 replace force
-execute if entity @s[scores={ActionTime=161}] run clone ~-2 ~ ~-2 ~1 ~12 ~1 ~-2 ~1 ~-2 replace force
-execute if entity @s[scores={ActionTime=162}] align xz run playsound luigis_mansion:block.chandelier.rise hostile @a[tag=same_room] ~ ~7 ~ 2
-execute if entity @s[scores={ActionTime=169}] run clone ~-2 ~ ~-2 ~1 ~12 ~1 ~-2 ~1 ~-2 replace force
-execute if entity @s[scores={ActionTime=172}] align xz run playsound luigis_mansion:block.chandelier.rise hostile @a[tag=same_room] ~ ~8 ~ 2
-execute if entity @s[scores={ActionTime=177}] run clone ~-2 ~ ~-2 ~1 ~12 ~1 ~-2 ~1 ~-2 replace force
-execute if entity @s[scores={ActionTime=182}] align xz run playsound luigis_mansion:block.chandelier.rise hostile @a[tag=same_room] ~ ~9.5 ~ 2
-execute if entity @s[scores={ActionTime=185}] run clone ~-2 ~ ~-2 ~1 ~12 ~1 ~-2 ~1 ~-2 replace force
-execute if entity @s[scores={ActionTime=192}] align xz run playsound luigis_mansion:block.chandelier.rise hostile @a[tag=same_room] ~ ~10.5 ~ 2
-execute if entity @s[scores={ActionTime=193}] run clone ~-2 ~ ~-2 ~1 ~12 ~1 ~-2 ~1 ~-2 replace force
-execute if entity @s[scores={ActionTime=201}] align xz run playsound luigis_mansion:block.chandelier.stop hostile @a[tag=same_room] ~ ~11 ~ 2
+execute if entity @s[scores={ActionTime=121}] align xz run playsound luigis_mansion:block.chandelier.rise hostile @a[tag=same_room] ~ ~1.5 ~ 2
+execute if entity @s[scores={ActionTime=122}] run clone ~-2 ~ ~-2 ~1 ~12 ~1 ~-2 ~1 ~-2 replace force
+execute if entity @s[scores={ActionTime=122}] run fill ~-2 ~ ~-2 ~1 ~ ~1 minecraft:air
+execute if entity @s[scores={ActionTime=52..200}] run fill ~-2 ~ ~-2 ~1 ~12 ~1 minecraft:air replace minecraft:light
+execute if entity @s[scores={ActionTime=128}] run clone ~-2 ~ ~-2 ~1 ~12 ~1 ~-2 ~1 ~-2 replace force
+execute if entity @s[scores={ActionTime=131}] align xz run playsound luigis_mansion:block.chandelier.rise hostile @a[tag=same_room] ~ ~3 ~ 2
+execute if entity @s[scores={ActionTime=136}] run clone ~-2 ~ ~-2 ~1 ~12 ~1 ~-2 ~1 ~-2 replace force
+execute if entity @s[scores={ActionTime=141}] align xz run playsound luigis_mansion:block.chandelier.rise hostile @a[tag=same_room] ~ ~4.5 ~ 2
+execute if entity @s[scores={ActionTime=144}] run clone ~-2 ~ ~-2 ~1 ~12 ~1 ~-2 ~1 ~-2 replace force
+execute if entity @s[scores={ActionTime=151}] align xz run playsound luigis_mansion:block.chandelier.rise hostile @a[tag=same_room] ~ ~5 ~ 2
+execute if entity @s[scores={ActionTime=152}] run clone ~-2 ~ ~-2 ~1 ~12 ~1 ~-2 ~1 ~-2 replace force
+execute if entity @s[scores={ActionTime=160}] run clone ~-2 ~ ~-2 ~1 ~12 ~1 ~-2 ~1 ~-2 replace force
+execute if entity @s[scores={ActionTime=161}] align xz run playsound luigis_mansion:block.chandelier.rise hostile @a[tag=same_room] ~ ~7 ~ 2
+execute if entity @s[scores={ActionTime=168}] run clone ~-2 ~ ~-2 ~1 ~12 ~1 ~-2 ~1 ~-2 replace force
+execute if entity @s[scores={ActionTime=171}] align xz run playsound luigis_mansion:block.chandelier.rise hostile @a[tag=same_room] ~ ~8 ~ 2
+execute if entity @s[scores={ActionTime=176}] run clone ~-2 ~ ~-2 ~1 ~12 ~1 ~-2 ~1 ~-2 replace force
+execute if entity @s[scores={ActionTime=181}] align xz run playsound luigis_mansion:block.chandelier.rise hostile @a[tag=same_room] ~ ~9.5 ~ 2
+execute if entity @s[scores={ActionTime=184}] run clone ~-2 ~ ~-2 ~1 ~12 ~1 ~-2 ~1 ~-2 replace force
+execute if entity @s[scores={ActionTime=191}] align xz run playsound luigis_mansion:block.chandelier.rise hostile @a[tag=same_room] ~ ~10.5 ~ 2
+execute if entity @s[scores={ActionTime=192}] run clone ~-2 ~ ~-2 ~1 ~12 ~1 ~-2 ~1 ~-2 replace force
+execute if entity @s[scores={ActionTime=200}] align xz run playsound luigis_mansion:block.chandelier.stop hostile @a[tag=same_room] ~ ~11 ~ 2
+kill @s[scores={ActionTime=200}]
 tag @s remove dead
 tag @s remove remove_from_existence

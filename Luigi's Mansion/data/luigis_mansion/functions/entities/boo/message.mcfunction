@@ -1,13 +1,13 @@
-summon minecraft:area_effect_cloud ~ ~ ~ {Tags:["choice","option_1"]}
-summon minecraft:area_effect_cloud ~ ~ ~ {Tags:["choice","option_2"]}
-summon minecraft:area_effect_cloud ~ ~ ~ {Tags:["choice","option_3"]}
-summon minecraft:area_effect_cloud ~ ~ ~ {Tags:["choice","option_4"]}
-tag @e[type=minecraft:area_effect_cloud,tag=choice,limit=1,sort=random] add selected
-execute if entity @e[type=minecraft:area_effect_cloud,tag=choice,tag=selected,limit=1,tag=option_1] run tag @s add message_1
-execute if entity @e[type=minecraft:area_effect_cloud,tag=choice,tag=selected,limit=1,tag=option_2] run tag @s add message_2
-execute if entity @e[type=minecraft:area_effect_cloud,tag=choice,tag=selected,limit=1,tag=option_3] run tag @s add message_3
-execute if entity @e[type=minecraft:area_effect_cloud,tag=choice,tag=selected,limit=1,tag=option_4] run tag @s add message_4
-kill @e[type=minecraft:area_effect_cloud,tag=choice]
+summon minecraft:marker ~ ~ ~ {Tags:["choice","option_1"]}
+summon minecraft:marker ~ ~ ~ {Tags:["choice","option_2"]}
+summon minecraft:marker ~ ~ ~ {Tags:["choice","option_3"]}
+summon minecraft:marker ~ ~ ~ {Tags:["choice","option_4"]}
+tag @e[type=minecraft:marker,tag=choice,limit=1,sort=random] add selected
+execute if entity @e[type=minecraft:marker,tag=choice,tag=selected,limit=1,tag=option_1] run tag @s add message_1
+execute if entity @e[type=minecraft:marker,tag=choice,tag=selected,limit=1,tag=option_2] run tag @s add message_2
+execute if entity @e[type=minecraft:marker,tag=choice,tag=selected,limit=1,tag=option_3] run tag @s add message_3
+execute if entity @e[type=minecraft:marker,tag=choice,tag=selected,limit=1,tag=option_4] run tag @s add message_4
+kill @e[type=minecraft:marker,tag=choice]
 execute if entity @s[tag=bamboo,tag=message_1] if score #players Totals matches 1 run tellraw @a {"translate":"chat.type.text","with":[{"translate":"luigis_mansion:entity.bamboo","color":"green"},{"translate":"luigis_mansion:message.bamboo.1"}]}
 execute if entity @s[tag=bamboo,tag=message_1] if score #players Totals matches 2.. run tellraw @a {"translate":"chat.type.text","with":[{"translate":"luigis_mansion:entity.bamboo","color":"green"},{"translate":"luigis_mansion:message.bamboo.1.more"}]}
 execute if entity @s[tag=bamboo,tag=message_2] run tellraw @a {"translate":"chat.type.text","with":[{"translate":"luigis_mansion:entity.bamboo","color":"green"},{"translate":"luigis_mansion:message.bamboo.2"}]}

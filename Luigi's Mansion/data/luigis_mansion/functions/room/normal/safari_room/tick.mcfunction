@@ -2,7 +2,7 @@ execute unless score #safari_room Ticking matches 1 run function #luigis_mansion
 execute as @a[gamemode=!spectator,x=732,y=28,z=-59,dx=14,dy=8,dz=25] unless entity @s[scores={Room=40}] run scoreboard players operation @s LastRoom = @s Room
 execute as @e[type=!minecraft:item_frame,x=732,y=28,z=-59,dx=14,dy=8,dz=25] run scoreboard players set @s Room 40
 
-scoreboard players set @e[scores={Room=40},type=!minecraft:area_effect_cloud] MirrorX 745
+scoreboard players set @e[scores={Room=40},type=!minecraft:marker] MirrorX 745
 
 execute as @a[gamemode=!spectator,x=732,y=28,z=-59,dx=14,dy=8,dz=25] run function luigis_mansion:room/normal/safari_room/tick_per_player
 

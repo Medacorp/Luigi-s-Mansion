@@ -7,5 +7,4 @@ execute unless entity @a[tag=!loaded_chunks,limit=1] at @a[tag=loaded_chunks,lim
 execute as @e[type=!minecraft:player] at @s run function luigis_mansion:main/non_players
 function luigis_mansion:anti_cheating/scores
 kill @e[tag=dead,tag=can_die]
-execute at @a[tag=vacuuming] run kill @e[distance=..0.7,type=minecraft:area_effect_cloud,tag=position,limit=1]
-execute at @a[tag=vacuuming] run summon minecraft:area_effect_cloud ~ ~ ~ {Tags:["position"],Duration:2}
+execute at @a[tag=vacuuming] run summon minecraft:marker ~ ~ ~ {Tags:["position","remove_from_existence"]}

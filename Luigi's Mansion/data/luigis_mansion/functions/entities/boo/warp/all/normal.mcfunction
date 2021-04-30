@@ -122,7 +122,7 @@ teleport @s[scores={Room=56}] 741 20 -29
 teleport @s[scores={Room=57}] 741 20 -52.0
 teleport @s[scores={Room=58}] 696 29 -66.0
 
-execute at @s run summon minecraft:area_effect_cloud ~ ~ ~ {Tags:["boo_marker","new"],Duration:600,CustomName:'{"translate":"luigis_mansion:entity.boo"}'}
+execute at @s run summon minecraft:marker ~ ~ ~ {Tags:["boo_marker","new"],Duration:600,CustomName:'{"translate":"luigis_mansion:entity.boo"}'}
 execute if entity @s[tag=bamboo] run tag @e[tag=boo_marker,tag=new] add bamboo
 execute if entity @s[tag=boo_b_hatch] run tag @e[tag=boo_marker,tag=new] add boo_b_hatch
 execute if entity @s[tag=boo_la_la] run tag @e[tag=boo_marker,tag=new] add boo_la_la
