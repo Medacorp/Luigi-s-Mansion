@@ -11,7 +11,7 @@ execute if block 743 11 6 minecraft:jungle_door[powered=false] run scoreboard pl
 execute if block 719 11 21 minecraft:jungle_door[powered=false] run scoreboard players set #temp Searched -1
 execute if block 719 11 20 minecraft:jungle_door[powered=false] run scoreboard players set #temp Searched -1
 
-execute if score #temp Searched matches 1..2 as @a[gamemode=!spectator,distance=..3,x=743.0,y=11,z=7.0] if data storage luigis_mansion:data current_state.current_data.obtained_keys{main_hallway:1b} unless data storage luigis_mansion:data current_state.current_data.used_keys{main_hallway:1b} run function luigis_mansion:room/hidden/main_hallway/unlock_door
+execute if score #temp Searched matches 1..2 as @a[gamemode=!spectator,distance=..3,x=743.0,y=11,z=7.0] if data storage luigis_mansion:data current_state.current_data.obtained_keys{main_hallway:1b} unless data storage luigis_mansion:data current_state.current_data.used_keys{main_hallway:1b} positioned 743 11 7.0 run function luigis_mansion:room/hidden/main_hallway/unlock_door
 execute if block 743 11 7 #minecraft:doors[open=true] unless data storage luigis_mansion:data current_state.current_data.used_keys{main_hallway:1b} positioned 743 11 7 run function luigis_mansion:blocks/closed_door
 execute if block 743 11 6 #minecraft:doors[open=true] unless data storage luigis_mansion:data current_state.current_data.used_keys{main_hallway:1b} positioned 743 11 6 run function luigis_mansion:blocks/closed_door
 execute unless data storage luigis_mansion:data current_state.current_data.used_keys{main_hallway:1b} if score #temp Searched matches 1..2 run scoreboard players set #temp Searched -1

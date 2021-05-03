@@ -3,4 +3,4 @@ execute if score #washroom_2 Wave matches 1 unless entity @e[tag=ghost,scores={R
 execute unless data storage luigis_mansion:data current_state.current_data.rooms.washroom_2{cleared:1b} if entity @a[tag=!blackout] unless score #washroom_2 Wave matches 1.. run function luigis_mansion:room/hidden/washroom_2/wave_1
 execute if entity @a[tag=blackout] unless score #washroom_2 Wave matches 1.. run function luigis_mansion:room/hidden/washroom_2/blackout
 
-execute unless score #washroom_2_water Searched matches 1 if entity @a[x=668.5,y=114,z=-18.5,distance=..5] if data storage luigis_mansion:data current_state.current_data.technical_data{has_water_element_medal:1b} unless entity @e[x=668.5,y=114,z=-18.5,distance=..5,tag=water_elemental_ghost] positioned 668 114 -19 run function luigis_mansion:spawn_entities/ghost/water_elemental_ghost
+execute unless score #washroom_2_water Searched matches 1 positioned 668 114 -19 run function luigis_mansion:spawn_entities/ghost/water_elemental_ghost

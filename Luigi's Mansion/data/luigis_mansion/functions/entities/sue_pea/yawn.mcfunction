@@ -1,3 +1,4 @@
+scoreboard players set @s[tag=reset_to_base] Dialog 176
 scoreboard players add @s[scores={Dialog=299..}] Dialog 1
 scoreboard players add @s[scores={Dialog=298},tag=watered] Dialog 1
 scoreboard players add @s[scores={Dialog=238..297}] Dialog 1

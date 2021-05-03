@@ -12,4 +12,4 @@ scoreboard players set #anteroom_table_1 Searched 1
 data merge block 685 21 -26 {LootTable:"luigis_mansion:search"}
 data merge block 685 21 -25 {LootTable:"luigis_mansion:search"}
 tag @e[x=685.5,y=21,z=-24.5,distance=..0.7,tag=hidden_boo] add spawn
-tag @e[x=685.5,y=21,z=-24.5,distance=..0.7,tag=ghost_marker] add spawn
+tag @e[x=685.5,y=21,z=-24.5,distance=..0.7,tag=ghost,tag=hidden] add spawn

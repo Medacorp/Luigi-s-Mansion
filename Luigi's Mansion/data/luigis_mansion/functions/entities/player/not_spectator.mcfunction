@@ -8,8 +8,7 @@ execute if entity @s[tag=grabbed] run function luigis_mansion:entities/player/gr
 execute if entity @s[scores={Talk=1..}] run function luigis_mansion:target_villager
 scoreboard players set @s[scores={Talk=1..}] Talk 0
 
-execute as @e[distance=..7,tag=ghost_marker,tag=can_spawn,tag=!ceiling_ghost] positioned ^ ^ ^4 unless entity @s[distance=..4] at @s if block ~ ~ ~ #luigis_mansion:ghosts_ignore unless entity @e[type=minecraft:item_frame,distance=..0.7] run tag @s[tag=!only_forced_spawn] add try_spawn
-execute positioned ~ ~5 ~ as @e[distance=..7,tag=ghost_marker,tag=can_spawn,tag=ceiling_ghost] positioned ~ ~-5 ~ positioned ^ ^ ^4 unless entity @s[distance=..4] at @s if block ~ ~ ~ #luigis_mansion:ghosts_ignore unless entity @e[type=minecraft:item_frame,distance=..0.7] run tag @s[tag=!only_forced_spawn] add try_spawn
+execute rotated ~ 0 positioned ^ ^ ^-4 run function luigis_mansion:entities/player/spawn_ghosts
 execute if score #changing_max_health Selected matches 0 run title @s[gamemode=!creative] actionbar {"translate":"luigis_mansion:message.health","with":[{"score":{"name":"@s","objective":"Health"}}],"color":"red"}
 execute if score #changing_max_health Selected matches 1 run title @s[gamemode=!creative] actionbar {"translate":"luigis_mansion:message.health.out_of","with":[{"score":{"name":"@s","objective":"Health"}},{"score":{"name":"@s","objective":"MaxHealth"}}],"color":"red"}
 

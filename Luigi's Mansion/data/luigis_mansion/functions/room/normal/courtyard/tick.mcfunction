@@ -1,7 +1,7 @@
 execute unless score #courtyard Ticking matches 1 run function #luigis_mansion:room/normal/courtyard/load
 execute as @a[gamemode=!spectator,x=644,y=101,z=-41,dx=10,dy=8,dz=79] unless entity @s[scores={Room=26}] run scoreboard players operation @s LastRoom = @s Room
 execute as @e[type=!minecraft:item_frame,x=644,y=101,z=-41,dx=10,dy=8,dz=79] run scoreboard players set @s Room 26
-tag @e[tag=ghost,scores={Room=26}] add hallway
+tag @e[tag=ghost,scores={Room=26}] add no_hidden_move
 
 execute as @a[gamemode=!spectator,x=645,y=101,z=-40,dx=7,dy=8,dz=77] run function luigis_mansion:room/normal/courtyard/tick_per_player
 

@@ -1,15 +1,9 @@
 tag @s add maskless
 function luigis_mansion:entities/ghost_guy/stop_dancing
-data merge entity @s[tag=red] {ArmorItems:[{},{},{},{id:"minecraft:diamond_pickaxe",Count:1b,tag:{Unbreakable:1b,Damage:1,CustomModelData:20}}]}
-data merge entity @s[tag=green] {ArmorItems:[{},{},{},{id:"minecraft:diamond_pickaxe",Count:1b,tag:{Unbreakable:1b,Damage:1,CustomModelData:23}}]}
-data merge entity @s[tag=blue] {ArmorItems:[{},{},{},{id:"minecraft:diamond_pickaxe",Count:1b,tag:{Unbreakable:1b,Damage:1,CustomModelData:26}}]}
-data merge entity @s[tag=light_blue] {ArmorItems:[{},{},{},{id:"minecraft:diamond_pickaxe",Count:1b,tag:{Unbreakable:1b,Damage:1,CustomModelData:29}}]}
-data merge entity @s[tag=purple] {ArmorItems:[{},{},{},{id:"minecraft:diamond_pickaxe",Count:1b,tag:{Unbreakable:1b,Damage:1,CustomModelData:32}}]}
-data merge entity @s[tag=pink] {ArmorItems:[{},{},{},{id:"minecraft:diamond_pickaxe",Count:1b,tag:{Unbreakable:1b,Damage:1,CustomModelData:35}}]}
-data merge entity @s[tag=yellow] {ArmorItems:[{},{},{},{id:"minecraft:diamond_pickaxe",Count:1b,tag:{Unbreakable:1b,Damage:1,CustomModelData:38}}]}
-data merge entity @s[tag=orange] {ArmorItems:[{},{},{},{id:"minecraft:diamond_pickaxe",Count:1b,tag:{Unbreakable:1b,Damage:1,CustomModelData:41}}]}
-data merge entity @s[tag=brown] {ArmorItems:[{},{},{},{id:"minecraft:diamond_pickaxe",Count:1b,tag:{Unbreakable:1b,Damage:1,CustomModelData:44}}]}
-data merge entity @s[tag=white] {ArmorItems:[{},{},{},{id:"minecraft:diamond_pickaxe",Count:1b,tag:{Unbreakable:1b,Damage:1,CustomModelData:47}}]}
+execute store result score #temp Time run data get entity @s ArmorItems[3].tag.CustomModelData
+execute if entity @s[tag=!dancing] store result entity @s ArmorItems[3].tag.CustomModelData int 1 run scoreboard players remove #temp Time 1
+execute if entity @s[tag=dancing] store result entity @s ArmorItems[3].tag.CustomModelData int 1 run scoreboard players remove #temp Time 2
+scoreboard players reset #temp Time
 tag @s remove attack
 tag @s add complain
 tag @s add stunable

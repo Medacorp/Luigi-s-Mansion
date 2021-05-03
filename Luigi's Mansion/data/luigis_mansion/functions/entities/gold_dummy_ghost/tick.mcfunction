@@ -16,7 +16,7 @@ execute at @s[tag=!element_hurt,tag=!fleeing,tag=!vanish,scores={StunTime=0}] fa
 execute at @s[tag=!element_hurt,tag=!fleeing,tag=!laugh,tag=!vanish,scores={StunTime=0}] run function luigis_mansion:entities/ghost/move
 execute if entity @s[tag=!element_hurt,tag=!fleeing,tag=laugh,scores={StunTime=0}] run function luigis_mansion:entities/gold_dummy_ghost/laugh
 execute if entity @s[tag=vanish] run function luigis_mansion:entities/gold_dummy_ghost/vanish
-execute at @s[tag=!element_hurt,tag=!fleeing,tag=!vanish,tag=!laugh,scores={StunTime=0}] run function luigis_mansion:animations/ghost/normal/idle
+execute at @s[tag=!element_hurt,tag=!fleeing,tag=!vanish,tag=!laugh,scores={StunTime=0}] run function luigis_mansion:animations/ghost/normal/haunt
 execute at @s[tag=fleeing] run function luigis_mansion:animations/ghost/normal/flee
 execute at @s[tag=!fleeing,tag=hurt] run function luigis_mansion:animations/ghost/normal/hurt
 execute at @s[tag=!hurt,tag=element_hurt] run function luigis_mansion:animations/ghost/normal/hurt

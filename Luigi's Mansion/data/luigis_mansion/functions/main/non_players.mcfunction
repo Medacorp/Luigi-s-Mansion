@@ -6,12 +6,13 @@ tag @s[tag=remove_from_existence,tag=cannot_be_removed] remove remove_from_exist
 execute if entity @s[tag=door] run function luigis_mansion:animations/closed_door
 execute if entity @s[tag=first_key,tag=play] run function luigis_mansion:dialog/first_key
 execute if entity @s[tag=burning_floor] run function luigis_mansion:blocks/burning_floor
+
+function #luigis_mansion:entities
+
 tag @s[tag=!reflection,scores={MirrorX=-2147483648..}] add mirrored
 tag @s[tag=!reflection,scores={MirrorZ=-2147483648..}] add mirrored
 execute if entity @s[tag=mirrored] run function luigis_mansion:entities/reflection/non_player
 tag @s[tag=mirrored] remove mirrored
-
-function #luigis_mansion:entities
 
 data merge entity @s[type=minecraft:item] {Invulnerable:1b,Air:0}
 data merge entity @s[type=minecraft:item] {Air:1}

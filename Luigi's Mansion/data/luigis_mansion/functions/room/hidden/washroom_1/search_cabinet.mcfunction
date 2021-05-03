@@ -13,4 +13,4 @@ scoreboard players set #washroom_1_cabinet Searched 1
 data merge block 666 105 -11 {LootTable:"luigis_mansion:search"}
 data merge block 666 105 -12 {LootTable:"luigis_mansion:search"}
 tag @e[x=666.5,y=105,z=-11.5,distance=..0.7,tag=hidden_boo] add spawn
-tag @e[x=666.5,y=105,z=-11.5,distance=..0.7,tag=ghost_marker] add spawn
+tag @e[x=666.5,y=105,z=-11.5,distance=..0.7,tag=ghost,tag=hidden] add spawn

@@ -7,8 +7,7 @@ execute if block 728 20 28 minecraft:jungle_door[open=true] if block 728 20 27 m
 execute if block 728 20 27 minecraft:jungle_door[open=true] if block 728 20 28 minecraft:jungle_door[open=true] unless score #temp Searched matches 1 run scoreboard players set #temp Searched 2
 execute if block 728 20 28 minecraft:jungle_door[open=true] if block 728 20 27 minecraft:jungle_door[open=true] unless score #temp Searched matches 1 run scoreboard players set #temp Searched 2
 
-execute if score #temp Searched matches 1..2 as @a[gamemode=!spectator,distance=..3,x=736.0,y=20,z=9.0] if data storage luigis_mansion:data {obtained_parlor_key:1b} unless data storage luigis_mansion:data {used_parlor_key:1b} run function luigis_mansion:room/normal/parlor/unlock_door
-execute if score #temp Searched matches 1..2 as @a[gamemode=!spectator,distance=..3,x=736.0,y=20,z=9.0] if data storage luigis_mansion:data {obtained_parlor_key:1b} unless data storage luigis_mansion:data {used_parlor_key:1b} run function luigis_mansion:room/normal/parlor/unlock_door
+execute if score #temp Searched matches 1..2 as @a[gamemode=!spectator,distance=..3,x=736.0,y=20,z=9.0] if data storage luigis_mansion:data {obtained_parlor_key:1b} unless data storage luigis_mansion:data {used_parlor_key:1b} positioned 736 20 9.0 run function luigis_mansion:room/normal/parlor/unlock_door
 execute if block 736 20 8 #minecraft:doors[open=true] unless data storage luigis_mansion:data {used_parlor_key:1b} positioned 736 20 8 run function luigis_mansion:blocks/closed_door
 execute if block 736 20 9 #minecraft:doors[open=true] unless data storage luigis_mansion:data {used_parlor_key:1b} positioned 736 20 9 run function luigis_mansion:blocks/closed_door
 execute unless data storage luigis_mansion:data {used_parlor_key:1b} if score #temp Searched matches 1..2 run scoreboard players set #temp Searched -1

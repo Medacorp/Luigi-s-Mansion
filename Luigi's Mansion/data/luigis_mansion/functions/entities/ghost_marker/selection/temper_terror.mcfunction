@@ -1,1 +1,0 @@
-execute if entity @s[tag=temper_terror] run function luigis_mansion:spawn_entities/ghost/temper_terror

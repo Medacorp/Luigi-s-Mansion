@@ -122,7 +122,7 @@ teleport @s[scores={Room=56}] 741 20 -29
 teleport @s[scores={Room=57}] 741 20 -52.0
 teleport @s[scores={Room=58}] 696 29 -66.0
 
-execute at @s run summon minecraft:marker ~ ~ ~ {Tags:["boo_marker","new"],Duration:600,CustomName:'{"translate":"luigis_mansion:entity.boo"}'}
+execute at @s run summon minecraft:marker ~ ~ ~ {Tags:["boo_marker","new"],CustomName:'{"translate":"luigis_mansion:entity.boo"}'}
 execute if entity @s[tag=bamboo] run tag @e[tag=boo_marker,tag=new] add bamboo
 execute if entity @s[tag=boo_b_hatch] run tag @e[tag=boo_marker,tag=new] add boo_b_hatch
 execute if entity @s[tag=boo_la_la] run tag @e[tag=boo_marker,tag=new] add boo_la_la
@@ -165,4 +165,7 @@ execute if entity @s[tag=area_4] run tag @e[tag=boo_marker,tag=new] add area_4
 scoreboard players operation @e[tag=boo_marker,tag=new] Health = @s Health
 scoreboard players operation @e[tag=boo_marker,tag=new] Room = @s Room
 scoreboard players operation @e[tag=boo_marker,tag=new] HallwaySection = @s HallwaySection
+execute as @e[tag=boo_marker,tag=new] store result score @s HomeX run data get entity @s Pos[0] 100
+execute as @e[tag=boo_marker,tag=new] store result score @s HomeY run data get entity @s Pos[1] 100
+execute as @e[tag=boo_marker,tag=new] store result score @s HomeZ run data get entity @s Pos[2] 100
 tag @e[tag=boo_marker,tag=new] remove new

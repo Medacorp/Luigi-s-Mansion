@@ -1,1 +1,1 @@
-execute unless data storage luigis_mansion:data current_state.current_data.technical_data{has_water_element_medal:1b} unless entity @e[type=minecraft:armor_stand,tag=element_medal,tag=water,limit=1] positioned 693 103 -32 run function luigis_mansion:spawn_entities/item/water_element_medal
+execute unless data storage luigis_mansion:data current_state.current_data.obtained_items{water_element_medal:1b} unless entity @e[type=minecraft:armor_stand,tag=element_medal,tag=water,limit=1] positioned 693 103 -32 run function luigis_mansion:spawn_entities/item/water_element_medal

@@ -1,1 +1,1 @@
-execute positioned 762 29 68 run function luigis_mansion:spawn_entities/new_ghost/forced_spawn/red_grabbing_ghost
+execute positioned 762 29 68 run function luigis_mansion:spawn_entities/ghost/forced_spawn/red_grabbing_ghost

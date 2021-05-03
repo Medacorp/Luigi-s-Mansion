@@ -6,4 +6,4 @@ kill @e[type=minecraft:marker,tag=chance]
 scoreboard players set #sealed_room_chest_4 Searched 1
 data merge block 695 21 -71 {LootTable:"luigis_mansion:search"}
 data merge block 695 21 -72 {LootTable:"luigis_mansion:search"}
-tag @e[x=695.5,y=21,z=-70.5,distance=..0.7,tag=ghost_marker] add spawn
+tag @e[x=695.5,y=21,z=-70.5,distance=..0.7,tag=ghost,tag=hidden] add spawn

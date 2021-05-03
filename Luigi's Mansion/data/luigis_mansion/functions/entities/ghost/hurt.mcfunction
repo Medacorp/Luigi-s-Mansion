@@ -7,7 +7,6 @@ execute if entity @s[scores={HurtTime=1},tag=complain,tag=mr_bones] run function
 tag @s[scores={HurtTime=1}] remove attack
 tag @s[scores={HurtTime=1}] remove laugh
 tag @s[scores={HurtTime=1}] remove complain
-tag @s[scores={HurtTime=1}] remove vanish
 tag @s[scores={HurtTime=1}] add hurt_animation
 scoreboard players remove @s[scores={HurtTime=10},tag=!dialog] Health 1
 tag @s[scores={HurtTime=30},tag=!dialog] add fleeing

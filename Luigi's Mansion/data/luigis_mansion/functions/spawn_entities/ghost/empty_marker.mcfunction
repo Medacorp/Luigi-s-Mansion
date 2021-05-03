@@ -1,0 +1,1 @@
+summon minecraft:marker ~ ~ ~ {Rotation:[0.0f,90.0f],Tags:["hidden","new_ghost","ghost","no_height_change"]}

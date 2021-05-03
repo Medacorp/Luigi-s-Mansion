@@ -4,4 +4,4 @@ setblock 643 21 -48 minecraft:hopper[enabled=false]
 execute positioned 643 20 -51.0 run function luigis_mansion:blocks/dust
 scoreboard players set #tea_room_table_2 Searched 1
 tag @e[x=643.5,y=20,z=-50.5,distance=..0.7,tag=hidden_boo] add spawn
-tag @e[x=643.5,y=20,z=-50.5,distance=..0.7,tag=ghost_marker] add spawn
+tag @e[x=643.5,y=20,z=-50.5,distance=..0.7,tag=ghost,tag=hidden] add spawn

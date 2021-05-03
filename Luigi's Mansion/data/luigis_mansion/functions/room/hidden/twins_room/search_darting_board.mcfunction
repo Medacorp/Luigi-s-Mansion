@@ -9,4 +9,4 @@ execute unless entity @e[type=minecraft:marker,tag=chance,tag=selected,tag=!noth
 kill @e[type=minecraft:marker,tag=chance]
 scoreboard players set #twins_room_darting_board Searched 1
 tag @e[x=707.5,y=113,z=-14.5,distance=..0.7,tag=hidden_boo] add spawn
-tag @e[x=707.5,y=113,z=-14.5,distance=..0.7,tag=ghost_marker] add spawn
+tag @e[x=707.5,y=113,z=-14.5,distance=..0.7,tag=ghost,tag=hidden] add spawn

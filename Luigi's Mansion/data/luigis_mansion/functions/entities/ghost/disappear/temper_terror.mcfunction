@@ -1,2 +1,0 @@
-execute if entity @s[tag=temper_terror] run tag @e[tag=this_entity,limit=1] add temper_terror
-execute if entity @s[tag=temper_terror,tag=burning_heart] run tag @e[tag=this_entity,limit=1] add burning_heart

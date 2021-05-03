@@ -1,3 +1,3 @@
-execute unless score #twins_room_box_4 Searched matches 1 if entity @e[x=747.5,y=20,z=37.5,distance=..0.7,tag=ghost_marker] positioned 747 20 37 run function luigis_mansion:room/normal/twins_room/right_box
-execute unless score #twins_room_box_4 Searched matches 1 unless entity @e[x=747.5,y=20,z=37.5,distance=..0.7,tag=ghost_marker] unless score #temp Time matches 1 positioned 747 20 37 run function luigis_mansion:room/normal/twins_room/wrong_box
+execute unless score #twins_room_box_4 Searched matches 1 if entity @e[x=747.5,y=20,z=37.5,distance=..0.7,tag=ghost,tag=hidden] positioned 747 20 37 run function luigis_mansion:room/normal/twins_room/right_box
+execute unless score #twins_room_box_4 Searched matches 1 unless entity @e[x=747.5,y=20,z=37.5,distance=..0.7,tag=ghost,tag=hidden] unless score #temp Time matches 1 positioned 747 20 37 run function luigis_mansion:room/normal/twins_room/wrong_box
 scoreboard players set #twins_room_box_4 Searched 1

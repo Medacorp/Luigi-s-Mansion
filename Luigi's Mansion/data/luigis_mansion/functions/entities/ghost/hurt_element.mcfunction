@@ -19,7 +19,6 @@ tag @s add last_element_hurt
 tag @s remove attack
 tag @s remove laugh
 tag @s remove complain
-tag @s remove vanish
 tag @s remove element_hurt
 tag @s remove freeze
 tag @s[tag=temper_terror] add stunable

@@ -1,3 +1,7 @@
+scoreboard players set @s[tag=reset_to_base,scores={Wave=0}] Dialog 23
+scoreboard players set @s[tag=reset_to_base,scores={Wave=1}] Dialog 22
+scoreboard players set @s[tag=reset_to_base,scores={Wave=2}] Dialog 12 
+scoreboard players set @s[tag=reset_to_base,scores={Wave=3}] Dialog 1
 execute positioned ~ ~-1.1875 ~ if entity @e[type=minecraft:armor_stand,tag=wool,tag=spit,distance=..0.7] run scoreboard players add @s[scores={Dialog=22}] Dialog 1
 scoreboard players add @s[scores={Dialog=13..21}] Dialog 1
 execute positioned ~ ~-1.1875 ~ if entity @e[type=minecraft:armor_stand,tag=wool,tag=spit,distance=..0.7] run scoreboard players add @s[scores={Dialog=12}] Dialog 1
@@ -27,4 +31,4 @@ execute if entity @s[scores={Dialog=22,Wave=0}] run tag @s add leave
 execute if entity @s[tag=leave] run scoreboard players set #nanas_room Wave -1
 execute if entity @s[tag=leave] run playsound luigis_mansion:entity.nana.laugh hostile @a[tag=same_room] ~ ~ ~ 1
 execute if entity @s[tag=leave] run tag @e[tag=wool] add dead
-data merge entity @s[tag=leave] {Health:0.0f,DeathDialog:19s}
+tag @s[tag=leave] add remove_from_existence

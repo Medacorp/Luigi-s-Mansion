@@ -1,5 +1,5 @@
 scoreboard players operation #temp GhostNr = @s GhostNr
-execute as @e[tag=lydia_body] if score @s GhostNr = #temp GhostNr run tag @s add this_lydia_body
+execute as @e[tag=lydia_body] if score @s GhostNr = #temp GhostNr run tag @s add this_model
 
 execute if entity @s[tag=dying,scores={HurtTime=1}] run playsound luigis_mansion:entity.lydia.vacuumed hostile @a[tag=same_room] ~ ~ ~ 1
 execute if entity @s[tag=dead] run loot spawn ~ ~ ~ loot luigis_mansion:entities/ghost/lydia
@@ -24,8 +24,8 @@ execute at @s[tag=fleeing] run function luigis_mansion:animations/lydia/flee
 execute if entity @s[tag=!fleeing,tag=hurt] run function luigis_mansion:entities/lydia/drop_brush
 execute at @s[tag=!fleeing,tag=hurt] run function luigis_mansion:animations/lydia/hurt
 
-execute unless entity @s[tag=!dead,tag=!remove_from_existence] run teleport @e[tag=this_lydia_body] ~ -100 ~
-execute unless entity @s[tag=!dead,tag=!remove_from_existence] run tag @e[tag=this_lydia_body] add dead
+execute unless entity @s[tag=!dead,tag=!remove_from_existence] run teleport @e[tag=this_model] ~ -100 ~
+execute unless entity @s[tag=!dead,tag=!remove_from_existence] run tag @e[tag=this_model] add dead
 
 scoreboard players reset #temp GhostNr
-tag @e[tag=this_lydia_body,limit=1] remove this_lydia_body
+tag @e[tag=this_model,limit=1] remove this_model

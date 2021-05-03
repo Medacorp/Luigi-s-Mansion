@@ -1,0 +1,13 @@
+scoreboard players operation #temp GhostNr = @s GhostNr
+execute as @e[tag=mr_bones_body] if score @s GhostNr = #temp GhostNr run tag @s add this_model
+
+execute at @s run function luigis_mansion:entities/ghost/hidden_tick
+execute at @s run function luigis_mansion:animations/mr_bones/idle
+tag @s[tag=spawn] add appear
+tag @s remove spawn
+
+execute unless entity @s[tag=!dead,tag=!remove_from_existence] run teleport @e[tag=this_model] ~ -100 ~
+execute unless entity @s[tag=!dead,tag=!remove_from_existence] run tag @e[tag=this_model] add dead
+
+scoreboard players reset #temp GhostNr
+tag @e[tag=this_model] remove this_model

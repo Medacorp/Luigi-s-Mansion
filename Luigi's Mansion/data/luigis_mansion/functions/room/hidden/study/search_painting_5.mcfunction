@@ -1,4 +1,4 @@
-execute positioned 694 113 -4 run function luigis_mansion:blocks/dust
+execute positioned 712 22 -29 run function luigis_mansion:blocks/dust
 scoreboard players set #study_painting_5 Searched 1
-tag @e[x=694.5,y=113,z=-3.5,distance=..0.7,tag=hidden_boo] add spawn
-tag @e[x=694.5,y=113,z=-3.5,distance=..0.7,tag=ghost_marker] add spawn
+tag @e[x=712.5,y=22,z=-28.5,distance=..0.7,tag=hidden_boo] add spawn
+tag @e[x=712.5,y=22,z=-28.5,distance=..0.7,tag=ghost,tag=hidden] add spawn

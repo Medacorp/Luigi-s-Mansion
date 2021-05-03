@@ -3,4 +3,4 @@ execute if block 691 102 13 minecraft:structure_block run setblock 691 102 12 mi
 execute positioned 692 102 3 run function luigis_mansion:blocks/dust
 scoreboard players set #dining_room_table Searched 1
 tag @e[x=693.5,y=102,z=13.5,distance=..0.7,tag=hidden_boo] add spawn
-tag @e[x=693.5,y=102,z=13.5,distance=..0.7,tag=ghost_marker] add spawn
+tag @e[x=693.5,y=102,z=13.5,distance=..0.7,tag=ghost,tag=hidden] add spawn

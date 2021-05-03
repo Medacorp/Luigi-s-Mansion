@@ -5,5 +5,5 @@ execute if score #graveyard Wave matches 1 unless entity @e[tag=ghost,scores={Ro
 execute unless data storage luigis_mansion:data current_state.current_data.rooms.graveyard{cleared:1b} if entity @a[tag=!blackout] unless score #graveyard Wave matches 1.. run function luigis_mansion:room/normal/graveyard/wave_1
 execute if entity @a[tag=blackout] unless score #graveyard Wave matches 1.. run function luigis_mansion:room/normal/graveyard/blackout
 
-execute unless score #graveyard_fire_1 Searched matches 1 if entity @a[x=652.5,y=105,z=52.5,distance=..5] if data storage luigis_mansion:data current_state.current_data.technical_data{has_fire_element_medal:1b} unless entity @e[x=652.5,y=105,z=52.5,distance=..5,tag=fire_elemental_ghost] positioned 652 105 52 run function luigis_mansion:spawn_entities/ghost/fire_elemental_ghost
-execute unless score #graveyard_fire_2 Searched matches 1 if entity @a[x=652.5,y=105,z=43.5,distance=..5] if data storage luigis_mansion:data current_state.current_data.technical_data{has_fire_element_medal:1b} unless entity @e[x=652.5,y=105,z=43.5,distance=..5,tag=fire_elemental_ghost] positioned 652 105 43 run function luigis_mansion:spawn_entities/ghost/fire_elemental_ghost
+execute unless score #graveyard_fire_1 Searched matches 1 positioned 652 105 52 run function luigis_mansion:spawn_entities/ghost/fire_elemental_ghost
+execute unless score #graveyard_fire_2 Searched matches 1 positioned 652 105 43 run function luigis_mansion:spawn_entities/ghost/fire_elemental_ghost

@@ -3,8 +3,8 @@ teleport @s[scores={PathStep=1}] ~ ~ ~ facing 714 11 -20
 scoreboard players set @s[x=714.5,y=11,z=-19.5,distance=..0.7,scores={PathStep=1}] PathStep 2
 teleport @s[scores={PathStep=2}] ~ ~ ~ facing 710 11 -18
 scoreboard players set @s[x=710.5,y=11,z=-17.5,distance=..0.7,scores={PathStep=2}] PathStep 3
-teleport @s[scores={PathStep=3}] ~ ~ ~ facing 106 11 -20
-scoreboard players set @s[x=106.5,y=11,z=-19.5,distance=..0.7,scores={PathStep=3}] PathStep 4
+teleport @s[scores={PathStep=3}] ~ ~ ~ facing 706 11 -20
+scoreboard players set @s[x=706.5,y=11,z=-19.5,distance=..0.7,scores={PathStep=3}] PathStep 4
 teleport @s[scores={PathStep=4}] ~ ~ ~ facing 702 11 -18
 scoreboard players set @s[x=702.5,y=11,z=-17.5,distance=..0.7,scores={PathStep=4}] PathStep 5
 teleport @s[scores={PathStep=5}] ~ ~ ~ facing 698 11 -20

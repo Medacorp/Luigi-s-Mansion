@@ -1,6 +1,6 @@
+scoreboard players set @s[tag=reset_to_base] Dialog 0
 execute if entity @s[tag=!visible] run function luigis_mansion:entities/mr_luggs/turn_visible
 execute unless entity @s[scores={Dialog=1..}] at @a[tag=same_room] positioned ^ ^ ^8 if entity @s[distance=..8] run function luigis_mansion:entities/mr_luggs/turn_invisible
-
 execute unless entity @s[scores={Dialog=2..}] if entity @s[tag=visible] run item entity @e[tag=this_food,limit=1] armor.head replace minecraft:diamond_pickaxe{Unbreakable:1b,Damage:4,CustomModelData:11}
 execute if entity @s[tag=!visible] run item entity @e[tag=this_food,limit=1] armor.head replace minecraft:air
 execute unless entity @s[scores={Dialog=1..}] if block ^3 ^2 ^2 minecraft:purple_stained_glass if block ^-3 ^2 ^2 minecraft:purple_stained_glass run playsound luigis_mansion:music.solve_puzzle music @a[tag=same_room] ~ ~ ~ 10000
@@ -12,8 +12,7 @@ execute if entity @s[scores={Dialog=51..80}] run teleport @e[tag=this_food,limit
 execute if entity @s[scores={Dialog=81..99}] run teleport @e[tag=this_food,limit=1] ^ ^0.4 ^2
 scoreboard players add @s[scores={Dialog=100..}] Dialog 1
 execute if entity @s[scores={Dialog=101}] run kill @e[tag=this_food,limit=1]
-execute if entity @s[scores={Dialog=2..99}] run tag @e[tag=ghost_marker,tag=waiter] add spawn
-execute if entity @s[scores={Dialog=100}] run tag @e[tag=ghost_marker,tag=waiter] add disappear
+execute if entity @s[scores={Dialog=2..99}] run tag @e[tag=hidden,tag=waiter] add spawn
 
 execute unless entity @s[scores={Dialog=100..}] run scoreboard players add @s ActionTime 1
 execute if entity @s[scores={ActionTime=1}] run particle minecraft:dust 1 0.9 0 1 ^0.3 ^1.1 ^1 0.3 0.3 0.3 0 5

@@ -3,4 +3,5 @@ execute if entity @s[scores={ActionTime=1}] run playsound luigis_mansion:entity.
 execute at @s run function luigis_mansion:animations/waiter/vanish
 execute if score #mirrored Selected matches 0 run teleport @s ~ ~0.05 ~ ~20 ~
 execute if score #mirrored Selected matches 1 run teleport @s ~ ~0.05 ~ ~-20 ~
+execute at @s[scores={ActionTime=40}] run teleport @s ~ ~-2 ~
 tag @s[scores={ActionTime=40}] add disappear

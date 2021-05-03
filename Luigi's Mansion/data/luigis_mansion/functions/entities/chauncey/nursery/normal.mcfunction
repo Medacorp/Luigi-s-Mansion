@@ -1,4 +1,7 @@
 teleport @s ~ ~ ~
+execute if entity @s[tag=reset_to_base] run function luigis_mansion:entities/chauncey/drop_rambler
+execute if entity @s[tag=reset_to_base] run tag @e[tag=haunted_teddy_bear] remove enabled
+scoreboard players set @s[tag=reset_to_base] Dialog 1
 scoreboard players add @s[scores={Dialog=171..}] Dialog 1
 execute positioned ~ ~-1 ~ if entity @e[type=minecraft:armor_stand,tag=ball,tag=spit,distance=..0.7] run scoreboard players add @s[scores={Dialog=170}] Dialog 1
 scoreboard players add @s[scores={Dialog=50..169}] Dialog 1

@@ -12,18 +12,15 @@ execute if entity @a[gamemode=!spectator,x=673,y=111,z=-28,dx=6,dy=6,dz=5] run f
 execute if score #balcony_1 Ticking matches 1 unless entity @a[gamemode=!spectator,x=673,y=111,z=-28,dx=6,dy=6,dz=5] unless entity @a[gamemode=!spectator,scores={Room=5}] unless entity @a[scores={LastRoom=5}] run function #luigis_mansion:room/hidden/balcony_1/reset
 execute if entity @a[gamemode=!spectator,x=722,y=20,z=-65,dx=8,dy=6,dz=38] run function luigis_mansion:room/hidden/small_hallway/tick
 execute if score #small_hallway Ticking matches 1 unless entity @a[gamemode=!spectator,x=722,y=20,z=-65,dx=8,dy=6,dz=38] unless entity @a[gamemode=!spectator,scores={Room=6}] unless entity @a[scores={LastRoom=6}] run function #luigis_mansion:room/hidden/small_hallway/reset
-
-execute if entity @a[gamemode=!spectator,x=683,y=111,z=-22,dx=15,dy=6,dz=19] run function luigis_mansion:room/hidden/study/tick
-execute if score #study Ticking matches 1 unless entity @a[gamemode=!spectator,x=683,y=111,z=-22,dx=15,dy=6,dz=19] unless entity @a[gamemode=!spectator,scores={Room=7}] unless entity @a[scores={LastRoom=7}] run function #luigis_mansion:room/hidden/study/reset
+execute if entity @a[gamemode=!spectator,x=700,y=20,z=-48,dx=17,dy=6,dz=21] run function luigis_mansion:room/hidden/study/tick
+execute if score #study Ticking matches 1 unless entity @a[gamemode=!spectator,x=700,y=20,z=-48,dx=17,dy=6,dz=21] unless entity @a[gamemode=!spectator,scores={Room=7}] unless entity @a[scores={LastRoom=7}] run function #luigis_mansion:room/hidden/study/reset
 execute if entity @a[gamemode=!spectator,x=683,y=111,z=-41,dx=15,dy=6,dz=18] run function luigis_mansion:room/hidden/master_bedroom/tick
 execute if score #master_bedroom Ticking matches 1 unless entity @a[gamemode=!spectator,x=683,y=111,z=-41,dx=15,dy=6,dz=18] unless entity @a[gamemode=!spectator,scores={Room=8}] unless entity @a[scores={LastRoom=8}] run function #luigis_mansion:room/hidden/master_bedroom/reset
-execute if entity @a[gamemode=!spectator,x=706,y=111,z=-41,dx=12,dy=6,dz=18] run function luigis_mansion:room/hidden/nursery/tick
-execute if score #nursery Ticking matches 1 unless entity @a[gamemode=!spectator,x=706,y=111,z=-41,dx=12,dy=6,dz=18] unless entity @a[gamemode=!spectator,scores={Room=9}] unless entity @a[scores={LastRoom=9}] run function #luigis_mansion:room/hidden/nursery/reset
-execute if entity @a[gamemode=!spectator,x=699,y=102,z=-22,dx=6,dy=6,dz=58] run function luigis_mansion:room/hidden/main_hallway/tick
-execute unless entity @a[gamemode=!spectator,x=699,y=102,z=-22,dx=6,dy=6,dz=58] if entity @a[gamemode=!spectator,x=665,y=102,z=18,dx=40,dy=6,dz=6] run function luigis_mansion:room/hidden/main_hallway/tick
-execute unless entity @a[gamemode=!spectator,x=699,y=102,z=-22,dx=6,dy=6,dz=58] unless entity @a[gamemode=!spectator,x=665,y=102,z=18,dx=40,dy=6,dz=6] if entity @a[gamemode=!spectator,x=665,y=102,z=-9,dx=6,dy=6,dz=40] run function luigis_mansion:room/hidden/main_hallway/tick
-execute unless entity @a[gamemode=!spectator,x=699,y=102,z=-22,dx=6,dy=6,dz=58] unless entity @a[gamemode=!spectator,x=665,y=102,z=18,dx=40,dy=6,dz=6] unless entity @a[gamemode=!spectator,x=665,y=102,z=-9,dx=6,dy=6,dz=40] if entity @a[gamemode=!spectator,x=654,y=102,z=-9,dx=17,dy=6,dz=6] run function luigis_mansion:room/hidden/main_hallway/tick
-execute if score #main_hallway Ticking matches 1 unless entity @a[gamemode=!spectator,x=699,y=102,z=-22,dx=6,dy=6,dz=58] unless entity @a[gamemode=!spectator,x=665,y=102,z=18,dx=40,dy=6,dz=6] unless entity @a[gamemode=!spectator,x=665,y=102,z=-9,dx=6,dy=6,dz=40] unless entity @a[gamemode=!spectator,x=654,y=102,z=-9,dx=17,dy=6,dz=6] unless entity @a[gamemode=!spectator,scores={Room=10}] unless entity @a[scores={LastRoom=10}] run function #luigis_mansion:room/hidden/main_hallway/reset
+execute if entity @a[gamemode=!spectator,x=737,y=20,z=-58,dx=14,dy=6,dz=20] run function luigis_mansion:room/hidden/nursery/tick
+execute if score #nursery Ticking matches 1 unless entity @a[gamemode=!spectator,x=737,y=20,z=-58,dx=14,dy=6,dz=20] unless entity @a[gamemode=!spectator,scores={Room=9}] unless entity @a[scores={LastRoom=9}] run function #luigis_mansion:room/hidden/nursery/reset
+execute if entity @a[gamemode=!spectator,x=667,y=11,z=-10,dx=8,dy=6,dz=60] run function luigis_mansion:room/hidden/main_hallway/tick
+execute if score #main_hallway Ticking matches 1 unless entity @a[gamemode=!spectator,x=667,y=11,z=-10,dx=8,dy=6,dz=60] unless entity @a[gamemode=!spectator,scores={Room=10}] unless entity @a[scores={LastRoom=10}] run function #luigis_mansion:room/hidden/main_hallway/reset
+
 execute if entity @a[gamemode=!spectator,x=699,y=93,z=37,dx=6,dy=15,dz=19] run function luigis_mansion:room/hidden/basement_stairs/tick
 execute if score #basement_stairs Ticking matches 1 unless entity @a[gamemode=!spectator,x=699,y=93,z=37,dx=6,dy=15,dz=19] unless entity @a[gamemode=!spectator,scores={Room=11}] unless entity @a[scores={LastRoom=11}] run function #luigis_mansion:room/hidden/basement_stairs/reset
 execute if entity @a[gamemode=!spectator,x=654,y=102,z=-22,dx=10,dy=6,dz=12] run function luigis_mansion:room/hidden/bathroom_1/tick
@@ -128,6 +125,66 @@ execute if entity @a[gamemode=!spectator,x=683,y=120,z=32,dx=14,dy=6,dz=23] run 
 execute if score #artists_studio Ticking matches 1 unless entity @a[gamemode=!spectator,x=683,y=120,z=32,dx=14,dy=6,dz=23] unless entity @a[gamemode=!spectator,scores={Room=58}] unless entity @a[scores={LastRoom=58}] run function #luigis_mansion:room/hidden/artists_studio/reset
 execute if entity @a[gamemode=!spectator,x=635,y=93,z=25,dx=18,dy=6,dz=16] run function luigis_mansion:room/hidden/secret_altar/tick
 execute if score #secret_altar Ticking matches 1 unless entity @a[gamemode=!spectator,x=635,y=93,z=25,dx=18,dy=6,dz=16] unless entity @a[gamemode=!spectator,scores={Room=59}] unless entity @a[scores={LastRoom=59}] run function #luigis_mansion:room/hidden/secret_altar/reset
+
+execute unless entity @a[gamemode=!spectator,scores={Room=1}] run scoreboard players reset #foyer Vacuumables
+execute unless entity @a[gamemode=!spectator,scores={Room=2}] run scoreboard players reset #parlor Vacuumables
+execute unless entity @a[gamemode=!spectator,scores={Room=3}] run scoreboard players reset #anteroom Vacuumables
+execute unless entity @a[gamemode=!spectator,scores={Room=4}] run scoreboard players reset #wardrobe_room Vacuumables
+execute unless entity @a[gamemode=!spectator,scores={Room=5}] run scoreboard players reset #balcony_1 Vacuumables
+execute unless entity @a[gamemode=!spectator,scores={Room=6}] run scoreboard players reset #small_hallway Vacuumables
+execute unless entity @a[gamemode=!spectator,scores={Room=7}] run scoreboard players reset #study Vacuumables
+execute unless entity @a[gamemode=!spectator,scores={Room=8}] run scoreboard players reset #master_bedroom Vacuumables
+execute unless entity @a[gamemode=!spectator,scores={Room=9}] run scoreboard players reset #nursery Vacuumables
+execute unless entity @a[gamemode=!spectator,scores={Room=10}] run scoreboard players reset #main_hallway Vacuumables
+execute unless entity @a[gamemode=!spectator,scores={Room=11}] run scoreboard players reset #basement_stairs Vacuumables
+execute unless entity @a[gamemode=!spectator,scores={Room=12}] run scoreboard players reset #bathroom_1 Vacuumables
+execute unless entity @a[gamemode=!spectator,scores={Room=13}] run scoreboard players reset #ball_room Vacuumables
+execute unless entity @a[gamemode=!spectator,scores={Room=14}] run scoreboard players reset #storage_room Vacuumables
+execute unless entity @a[gamemode=!spectator,scores={Room=15}] run scoreboard players reset #washroom_1 Vacuumables
+execute unless entity @a[gamemode=!spectator,scores={Room=16}] run scoreboard players reset #fortune_tellers_room Vacuumables
+execute unless entity @a[gamemode=!spectator,scores={Room=17}] run scoreboard players reset #mirror_room Vacuumables
+execute unless entity @a[gamemode=!spectator,scores={Room=18}] run scoreboard players reset #laundry_room Vacuumables
+execute unless entity @a[gamemode=!spectator,scores={Room=19}] run scoreboard players reset #butlers_room Vacuumables
+execute unless entity @a[gamemode=!spectator,scores={Room=20}] run scoreboard players reset #hidden_room Vacuumables
+execute unless entity @a[gamemode=!spectator,scores={Room=21}] run scoreboard players reset #conservatory Vacuumables
+execute unless entity @a[gamemode=!spectator,scores={Room=22}] run scoreboard players reset #dining_room Vacuumables
+execute unless entity @a[gamemode=!spectator,scores={Room=23}] run scoreboard players reset #kitchen Vacuumables
+execute unless entity @a[gamemode=!spectator,scores={Room=24}] run scoreboard players reset #boneyard Vacuumables
+execute unless entity @a[gamemode=!spectator,scores={Room=25}] run scoreboard players reset #graveyard Vacuumables
+execute unless entity @a[gamemode=!spectator,scores={Room=26}] run scoreboard players reset #courtyard Vacuumables
+execute unless entity @a[gamemode=!spectator,scores={Room=27}] run scoreboard players reset #bottom_of_the_well Vacuumables
+execute unless entity @a[gamemode=!spectator,scores={Room=28}] run scoreboard players reset #rec_room Vacuumables
+execute unless entity @a[gamemode=!spectator,scores={Room=29}] run scoreboard players reset #main_stairs Vacuumables
+execute unless entity @a[gamemode=!spectator,scores={Room=30}] run scoreboard players reset #tea_room Vacuumables
+execute unless entity @a[gamemode=!spectator,scores={Room=31}] run scoreboard players reset #hallway Vacuumables
+execute unless entity @a[gamemode=!spectator,scores={Room=32}] run scoreboard players reset #washroom_2 Vacuumables
+execute unless entity @a[gamemode=!spectator,scores={Room=33}] run scoreboard players reset #bathroom_2 Vacuumables
+execute unless entity @a[gamemode=!spectator,scores={Room=34}] run scoreboard players reset #nanas_room Vacuumables
+execute unless entity @a[gamemode=!spectator,scores={Room=35}] run scoreboard players reset #astral_hall Vacuumables
+execute unless entity @a[gamemode=!spectator,scores={Room=36}] run scoreboard players reset #observatory Vacuumables
+execute unless entity @a[gamemode=!spectator,scores={Room=37}] run scoreboard players reset #billiards_room Vacuumables
+execute unless entity @a[gamemode=!spectator,scores={Room=38}] run scoreboard players reset #projection_room Vacuumables
+execute unless entity @a[gamemode=!spectator,scores={Room=39}] run scoreboard players reset #twins_room Vacuumables
+execute unless entity @a[gamemode=!spectator,scores={Room=40}] run scoreboard players reset #safari_room Vacuumables
+execute unless entity @a[gamemode=!spectator,scores={Room=41}] run scoreboard players reset #attic_hallway_1 Vacuumables
+execute unless entity @a[gamemode=!spectator,scores={Room=42}] run scoreboard players reset #balcony_2 Vacuumables
+execute unless entity @a[gamemode=!spectator,scores={Room=43}] run scoreboard players reset #attic_hallway_2 Vacuumables
+execute unless entity @a[gamemode=!spectator,scores={Room=44}] run scoreboard players reset #telephone_room Vacuumables
+execute unless entity @a[gamemode=!spectator,scores={Room=45}] run scoreboard players reset #breaker_room Vacuumables
+execute unless entity @a[gamemode=!spectator,scores={Room=46}] run scoreboard players reset #cellar Vacuumables
+execute unless entity @a[gamemode=!spectator,scores={Room=47}] run scoreboard players reset #basement_hallway Vacuumables
+execute unless entity @a[gamemode=!spectator,scores={Room=48}] run scoreboard players reset #curved_hallway Vacuumables
+execute unless entity @a[gamemode=!spectator,scores={Room=49}] run scoreboard players reset #clockwork_room Vacuumables
+execute unless entity @a[gamemode=!spectator,scores={Room=50}] run scoreboard players reset #roof Vacuumables
+execute unless entity @a[gamemode=!spectator,scores={Room=51}] run scoreboard players reset #armory Vacuumables
+execute unless entity @a[gamemode=!spectator,scores={Room=52}] run scoreboard players reset #ceramics_studio Vacuumables
+execute unless entity @a[gamemode=!spectator,scores={Room=53}] run scoreboard players reset #sealed_room Vacuumables
+execute unless entity @a[gamemode=!spectator,scores={Room=54}] run scoreboard players reset #pipe_room Vacuumables
+execute unless entity @a[gamemode=!spectator,scores={Room=55}] run scoreboard players reset #cold_storage Vacuumables
+execute unless entity @a[gamemode=!spectator,scores={Room=56}] run scoreboard players reset #sitting_room Vacuumables
+execute unless entity @a[gamemode=!spectator,scores={Room=57}] run scoreboard players reset #guest_room Vacuumables
+execute unless entity @a[gamemode=!spectator,scores={Room=58}] run scoreboard players reset #artists_studio Vacuumables
+execute unless entity @a[gamemode=!spectator,scores={Room=59}] run scoreboard players reset #secret_altar Vacuumables
 
 execute if score #clockwork_room_elevator Searched matches 1 run function luigis_mansion:room/hidden/clockwork_room/raise_elevator
 execute if score #clockwork_room_elevator Searched matches -1 run function luigis_mansion:room/hidden/clockwork_room/lower_elevator

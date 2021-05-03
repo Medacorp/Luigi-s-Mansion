@@ -4,5 +4,5 @@ execute if block 707 124 -24 minecraft:andesite run setblock 706 120 -22 minecra
 execute if block 706 120 -22 minecraft:structure_block run setblock 706 121 -22 minecraft:redstone_block
 execute positioned 707 120 -23 run function luigis_mansion:blocks/dust
 scoreboard players set #armory_armor_5 Searched 1
-tag @e[x=707.5,y=120,z=-22.5,distance=..0.7,tag=ghost_marker] add spawn
+tag @e[x=707.5,y=120,z=-22.5,distance=..0.7,tag=ghost,tag=hidden] add spawn
 tag @e[x=707.5,y=120,z=-22.5,distance=..0.7,tag=hidden_boo] add spawn

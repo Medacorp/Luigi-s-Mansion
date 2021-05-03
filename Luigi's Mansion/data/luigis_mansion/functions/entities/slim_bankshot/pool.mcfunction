@@ -1,3 +1,4 @@
+scoreboard players set @s[tag=reset_to_base] Dialog 1
 scoreboard players add @s[scores={Dialog=22..}] Dialog 1
 execute positioned ~ ~-1.1875 ~ if entity @e[type=minecraft:armor_stand,tag=billiards_ball,tag=spit,distance=..0.7] run scoreboard players add @s[scores={Dialog=21}] Dialog 1
 scoreboard players add @s[scores={Dialog=12..20}] Dialog 1

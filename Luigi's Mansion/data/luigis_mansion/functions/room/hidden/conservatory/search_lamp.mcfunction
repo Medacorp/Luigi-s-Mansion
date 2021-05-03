@@ -7,6 +7,6 @@ execute unless score #conservatory_lamp Searched matches 1 run tag @e[type=minec
 execute if entity @e[type=minecraft:marker,tag=chance,tag=selected,tag=poison_mushroom] positioned 659 106 12 run function luigis_mansion:spawn_entities/item/poison_mushroom
 execute if entity @e[type=minecraft:marker,tag=chance,tag=selected,tag=small_heart] positioned 659 106 12 run function luigis_mansion:spawn_entities/item/small_heart
 execute if entity @e[type=minecraft:marker,tag=chance,tag=selected,tag=money] run function luigis_mansion:room/hidden/conservatory/lamp
-execute unless entity @e[type=minecraft:marker,tag=chance,tag=selected,tag=!nothing] 659 107 12 run function luigis_mansion:blocks/dust
+execute unless entity @e[type=minecraft:marker,tag=chance,tag=selected,tag=!nothing] positioned 659 107 12 run function luigis_mansion:blocks/dust
 kill @e[type=minecraft:marker,tag=chance]
 scoreboard players set #conservatory_lamp Searched 1

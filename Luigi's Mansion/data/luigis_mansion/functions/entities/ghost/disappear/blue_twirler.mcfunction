@@ -1,1 +1,0 @@
-execute if entity @s[tag=blue_twirler] run tag @e[tag=this_entity,limit=1] add blue_twirler

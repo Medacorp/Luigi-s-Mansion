@@ -1,0 +1,23 @@
+execute positioned 669 22 8 run function luigis_mansion:spawn_entities/vacuumable/spark
+execute positioned 669 22 8 run function luigis_mansion:spawn_entities/vacuumable/spark
+execute positioned 669 22 8 run function luigis_mansion:spawn_entities/vacuumable/spark
+execute positioned 669 22 8 run function luigis_mansion:spawn_entities/vacuumable/spark
+execute positioned 684 20 -12 run function luigis_mansion:spawn_entities/vacuumable/purple_mouse
+execute positioned 680 20 -12 run function luigis_mansion:spawn_entities/vacuumable/purple_mouse
+execute positioned 684 20 1 run function luigis_mansion:spawn_entities/vacuumable/purple_mouse
+execute positioned 680 20 1 run function luigis_mansion:spawn_entities/vacuumable/purple_mouse
+execute positioned 684 20 -12 run function luigis_mansion:spawn_entities/vacuumable/blue_mouse
+execute positioned 680 20 -12 run function luigis_mansion:spawn_entities/vacuumable/blue_mouse
+execute positioned 684 20 -6 run function luigis_mansion:spawn_entities/vacuumable/blue_mouse
+execute positioned 680 20 -6 run function luigis_mansion:spawn_entities/vacuumable/blue_mouse
+execute positioned 684 20 1 run function luigis_mansion:spawn_entities/vacuumable/blue_mouse
+execute positioned 680 20 1 run function luigis_mansion:spawn_entities/vacuumable/blue_mouse
+execute positioned 696 26 -18 run function luigis_mansion:spawn_entities/vacuumable/yellow_bat
+execute positioned 696 26 -20 run function luigis_mansion:spawn_entities/vacuumable/yellow_bat
+execute positioned 698 26 -18 run function luigis_mansion:spawn_entities/vacuumable/yellow_bat
+execute positioned 698 26 -20 run function luigis_mansion:spawn_entities/vacuumable/yellow_bat
+execute positioned 714 20 -30 run function luigis_mansion:spawn_entities/vacuumable/spark
+execute positioned 714 20 -30 run function luigis_mansion:spawn_entities/vacuumable/spark
+execute positioned 714 20 -36 run function luigis_mansion:spawn_entities/vacuumable/spark
+execute positioned 714 20 -36 run function luigis_mansion:spawn_entities/vacuumable/spark
+scoreboard players set #hallway Vacuumables 1

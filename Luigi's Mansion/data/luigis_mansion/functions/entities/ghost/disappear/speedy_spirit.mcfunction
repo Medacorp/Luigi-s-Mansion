@@ -1,1 +1,0 @@
-execute if entity @s[tag=speedy_spirit] run tag @e[tag=this_entity,limit=1] add dead

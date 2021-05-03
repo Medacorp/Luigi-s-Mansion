@@ -11,4 +11,4 @@ scoreboard players set #parlor_table_2 Searched 1
 data merge block 714 20 -12 {LootTable:"luigis_mansion:search"}
 data merge block 714 20 -13 {LootTable:"luigis_mansion:search"}
 tag @e[x=714.5,y=20,z=-12.5,distance=..0.7,tag=hidden_boo] add spawn
-tag @e[x=714.5,y=20,z=-12.5,distance=..0.7,tag=ghost_marker] add spawn
+tag @e[x=714.5,y=20,z=-12.5,distance=..0.7,tag=ghost,tag=hidden] add spawn

@@ -3,6 +3,5 @@ execute store result entity @s Pos[1] double 0.01 run scoreboard players get @s 
 execute store result entity @s Pos[2] double 0.01 run scoreboard players get @s HomeZ
 tag @s remove rotated
 tag @s remove disappear
-tag @s remove spawn
-tag @s remove vacuumable
+tag @s remove visible
 data merge entity @s {ArmorItems:[{},{},{},{id:"minecraft:diamond_pickaxe",Count:1b,tag:{Unbreakable:1b,Damage:1,CustomModelData:57}}]}

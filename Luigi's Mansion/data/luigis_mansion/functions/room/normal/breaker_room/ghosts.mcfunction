@@ -3,3 +3,4 @@ execute unless score #breaker_room Wave matches 100 run setblock 689 3 -52 minec
 execute unless score #breaker_room Wave matches 100 run setblock 709 3 -52 minecraft:lever[face=wall,facing=west,powered=false]
 execute if score #breaker_room Wave matches 100 if block 689 3 -52 minecraft:lever[face=wall,facing=east,powered=false] run function luigis_mansion:room/normal/breaker_room/end_blackout
 execute if entity @a[tag=blackout] unless score #breaker_room Wave matches 1.. run function luigis_mansion:room/normal/breaker_room/blackout
+function luigis_mansion:room/normal/breaker_room/load_vacuumable_ghosts

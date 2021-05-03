@@ -18,20 +18,20 @@ scoreboard players set @s[x=723,y=20,z=-46,dx=6,dy=6,dz=19] RoomSection 1
 scoreboard players set @s[x=723,y=20,z=-67,dx=6,dy=6,dz=19] RoomSection 2
 
 # main hallway
-scoreboard players set @s[x=699,y=102,z=-22,dx=6,dy=6,dz=10] RoomSection 1
-scoreboard players set @s[x=699,y=102,z=-11,dx=6,dy=6,dz=8] RoomSection 2
-scoreboard players set @s[x=699,y=102,z=-2,dx=6,dy=6,dz=20] RoomSection 3
-scoreboard players set @s[x=699,y=102,z=19,dx=5,dy=6,dz=4] RoomSection 4
-scoreboard players set @s[x=699,y=102,z=24,dx=6,dy=6,dz=12] RoomSection 5
-scoreboard players set @s[x=686,y=102,z=18,dx=13,dy=6,dz=6] RoomSection 6
-scoreboard players set @s[x=683,y=102,z=18,dx=2,dy=6,dz=6] RoomSection 7
-scoreboard players set @s[x=671,y=102,z=18,dx=11,dy=6,dz=6] RoomSection 8
-scoreboard players set @s[x=665,y=102,z=24,dx=6,dy=6,dz=7] RoomSection 9
-scoreboard players set @s[x=665,y=102,z=19,dx=5,dy=6,dz=4] RoomSection 10
-scoreboard players set @s[x=665,y=102,z=3,dx=6,dy=6,dz=15] RoomSection 11
-scoreboard players set @s[x=665,y=102,z=-3,dx=6,dy=6,dz=5] RoomSection 12
-scoreboard players set @s[x=667,y=102,z=-9,dx=5,dy=6,dz=6] RoomSection 13
-scoreboard players set @s[x=652,y=102,z=-11,dx=11,dy=6,dz=8] RoomSection 14
+scoreboard players set @s[x=713,y=11,z=-9,dx=6,dy=6,dz=10] RoomSection 1
+scoreboard players set @s[x=713,y=11,z=2,dx=6,dy=6,dz=8] RoomSection 2
+scoreboard players set @s[x=713,y=11,z=11,dx=6,dy=6,dz=20] RoomSection 3
+scoreboard players set @s[x=713,y=11,z=32,dx=5,dy=6,dz=4] RoomSection 4
+scoreboard players set @s[x=713,y=11,z=37,dx=6,dy=6,dz=12] RoomSection 5
+scoreboard players set @s[x=700,y=11,z=31,dx=13,dy=6,dz=6] RoomSection 6
+scoreboard players set @s[x=697,y=11,z=31,dx=2,dy=6,dz=6] RoomSection 7
+scoreboard players set @s[x=685,y=11,z=31,dx=11,dy=6,dz=6] RoomSection 8
+scoreboard players set @s[x=679,y=11,z=37,dx=6,dy=6,dz=7] RoomSection 9
+scoreboard players set @s[x=679,y=11,z=32,dx=5,dy=6,dz=4] RoomSection 10
+scoreboard players set @s[x=679,y=11,z=16,dx=6,dy=6,dz=15] RoomSection 11
+scoreboard players set @s[x=679,y=11,z=10,dx=6,dy=6,dz=5] RoomSection 12
+scoreboard players set @s[x=681,y=11,z=4,dx=5,dy=6,dz=6] RoomSection 13
+scoreboard players set @s[x=666,y=11,z=2,dx=11,dy=6,dz=8] RoomSection 14
 
 # ball room
 scoreboard players set @s[x=683,y=102,z=25,dx=15,dy=6,dz=11] RoomSection 1

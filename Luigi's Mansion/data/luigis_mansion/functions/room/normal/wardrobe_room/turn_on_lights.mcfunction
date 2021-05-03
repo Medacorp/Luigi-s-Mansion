@@ -2,7 +2,5 @@ execute unless entity @e[type=minecraft:armor_stand,tag=key,tag=small_hallway,li
 data modify storage luigis_mansion:data current_state.current_data.rooms.wardrobe_room merge value {cleared:1b}
 function #luigis_mansion:room/normal/wardrobe_room/turn_lights/on
 execute if data storage luigis_mansion:data current_state.current_data{boos:[{}],technical_data:{released_boos_talk:1b}} run function luigis_mansion:room/normal/wardrobe_room/load_boos
-execute as @e[scores={Room=4},tag=optional_ghost] run data merge entity @s {Health:0.0f,DeathTime:19s}
-execute as @e[scores={Room=4},tag=ghost] run data merge entity @s {Health:0.0f,DeathTime:19s}
-tag @e[scores={Room=4},tag=ghost_marker] add dead
+execute as @e[scores={Room=4},tag=!cannot_be_removed] unless entity @s[tag=!ghost,tag=!optional_ghost] run tag @s add remove_from_existence
 scoreboard players reset #wardrobe_room Wave

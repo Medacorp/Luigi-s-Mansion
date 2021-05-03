@@ -1,0 +1,3 @@
+execute positioned 701 2 -18 run function luigis_mansion:spawn_entities/vacuumable/spark
+execute positioned 701 2 -18 run function luigis_mansion:spawn_entities/vacuumable/spark
+scoreboard players set #basement_hallway Vacuumables 1

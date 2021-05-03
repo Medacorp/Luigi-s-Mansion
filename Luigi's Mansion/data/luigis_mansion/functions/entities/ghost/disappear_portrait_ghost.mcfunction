@@ -1,4 +1,4 @@
-function #luigis_mansion:entities/ghost/disappear_portrait_ghost
+function #luigis_mansion:entities/ghost/disappear
 tag @s remove fleeing
 tag @s remove hurt
 tag @s remove hurt_animation

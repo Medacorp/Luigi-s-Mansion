@@ -1,8 +1,8 @@
 scoreboard players operation #temp GhostNr = @s GhostNr
-execute as @e[tag=spooky_body] if score @s GhostNr = #temp GhostNr run tag @s add this_spooky_body
+execute as @e[tag=spooky_body] if score @s GhostNr = #temp GhostNr run tag @s add this_model
 
 execute at @s run teleport @s ~ ~1 ~
-execute at @s unless entity @s[scores={StunTime=1..},tag=!fleeing,tag=!hurt] as @e[tag=this_spooky_body] run teleport @s ~ ~1 ~
+execute at @s unless entity @s[scores={StunTime=1..},tag=!fleeing,tag=!hurt] as @e[tag=this_model] run teleport @s ~ ~1 ~
 
 execute if entity @s[tag=dying,scores={HurtTime=1}] run playsound luigis_mansion:entity.spooky.vacuumed hostile @a[tag=same_room] ~ ~ ~ 1
 execute if entity @s[tag=dead] run loot spawn ~ ~ ~ loot luigis_mansion:entities/ghost/spooky
@@ -33,11 +33,11 @@ execute at @s[tag=!hurt,tag=!fleeing,tag=!wake_up,tag=!bark,tag=!move,tag=!bite,
 execute at @s[tag=fleeing] run function luigis_mansion:animations/spooky/flee
 execute at @s[tag=!fleeing,tag=hurt] run function luigis_mansion:animations/spooky/hurt
 
-execute unless entity @s[tag=!dead,tag=!remove_from_existence] run teleport @e[tag=this_spooky_body] ~ -100 ~
-execute unless entity @s[tag=!dead,tag=!remove_from_existence] run tag @e[tag=this_spooky_body] add dead
+execute unless entity @s[tag=!dead,tag=!remove_from_existence] run teleport @e[tag=this_model] ~ -100 ~
+execute unless entity @s[tag=!dead,tag=!remove_from_existence] run tag @e[tag=this_model] add dead
 
 execute at @s run teleport @s ~ ~-1 ~
-execute unless entity @s[scores={StunTime=1..},tag=!fleeing,tag=!hurt] as @e[tag=this_spooky_body] at @s run teleport @s ~ ~-1 ~
+execute unless entity @s[scores={StunTime=1..},tag=!fleeing,tag=!hurt] as @e[tag=this_model] at @s run teleport @s ~ ~-1 ~
 
 scoreboard players reset #temp GhostNr
-tag @e[tag=this_spooky_body,limit=1] remove this_spooky_body
+tag @e[tag=this_model,limit=1] remove this_model

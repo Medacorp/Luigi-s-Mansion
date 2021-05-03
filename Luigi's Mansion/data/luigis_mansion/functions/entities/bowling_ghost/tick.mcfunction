@@ -34,7 +34,7 @@ execute if entity @s[tag=!element_hurt,tag=!fleeing,tag=collided,scores={StunTim
 execute if entity @s[tag=vanish,tag=!disappear] run function luigis_mansion:entities/bowling_ghost/vanish
 execute if entity @s[tag=appear,tag=!disappear] run function luigis_mansion:entities/bowling_ghost/appear
 execute at @s[tag=fleeing,tag=!disappear] run function luigis_mansion:animations/bowling_ghost/flee
-execute at @s[tag=!hurt,tag=!element_hurt,tag=!fleeing,tag=!attack,tag=!collided,tag=!vanish,tag=!laugh,tag=!complain,tag=!appear,tag=grabbed_ball,scores={StunTime=0},tag=!disappear] run function luigis_mansion:entities/bowling_ghost/idle
+execute at @s[tag=!hurt,tag=!element_hurt,tag=!fleeing,tag=!attack,tag=!collided,tag=!vanish,tag=!laugh,tag=!complain,tag=!appear,tag=grabbed_ball,scores={StunTime=0},tag=!disappear] run function luigis_mansion:entities/bowling_ghost/waiting
 execute at @s[tag=!fleeing,tag=hurt,tag=!disappear] run function luigis_mansion:animations/bowling_ghost/hurt
 execute at @s[tag=!hurt,tag=element_hurt,tag=!disappear] run function luigis_mansion:animations/bowling_ghost/hurt
 scoreboard players reset #temp GhostNr

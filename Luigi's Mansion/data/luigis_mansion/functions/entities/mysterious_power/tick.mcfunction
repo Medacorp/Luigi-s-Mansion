@@ -5,7 +5,7 @@ execute if entity @s[scores={Room=1..}] run function #luigis_mansion:entities/my
 scoreboard players operation #temp Room = @s Room
 execute as @e[tag=ghost] if score #temp Room = @s Room run tag @s add same_room_ghost
 scoreboard players reset #temp Room
-tag @e[tag=ghost_marker,tag=same_room_ghost] add dead
+tag @e[tag=hidden,tag=same_room_ghost] add remove_from_existence
 scoreboard players set @e[tag=same_room_ghost,tag=!vanish] ActionTime 0
 scoreboard players set @e[tag=same_room_ghost,tag=!vanish] AnimationProg 0
 tag @e[tag=same_room_ghost] add vanish

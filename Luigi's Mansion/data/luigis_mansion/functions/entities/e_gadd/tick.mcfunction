@@ -1,7 +1,7 @@
 scoreboard players operation #temp PassiveNr = @s PassiveNr
-execute as @e[tag=e_gadd_body] if score @s PassiveNr = #temp PassiveNr run tag @s add this_e_gadd_body
-execute as @e[tag=e_gadd_head] if score @s PassiveNr = #temp PassiveNr run tag @s add this_e_gadd_head
-execute as @e[tag=e_gadd_poltergust] if score @s PassiveNr = #temp PassiveNr run tag @s add this_e_gadd_poltergust
+execute as @e[tag=e_gadd_body] if score @s PassiveNr = #temp PassiveNr run tag @s add this_model
+execute as @e[tag=e_gadd_head] if score @s PassiveNr = #temp PassiveNr run tag @s add this_model
+execute as @e[tag=e_gadd_poltergust] if score @s PassiveNr = #temp PassiveNr run tag @s add this_model
 
 execute if entity @s[scores={Room=0}] run function luigis_mansion:dialog/leaving_the_lab
 execute if entity @s[scores={Room=-1}] if entity @a[advancements={luigis_mansion:lab/underground_lab=false}] run function luigis_mansion:dialog/the_mansion
@@ -20,32 +20,26 @@ execute if entity @s[scores={Room=-4},tag=talk] if entity @a[advancements={luigi
 
 execute facing entity @p[gamemode=!spectator,tag=same_room] feet rotated ~ 0 run teleport @s[tag=!portrificationizing,tag=!mario_to_normal,scores={Room=-4..-1}] ~ ~ ~ ~ ~
 
-execute at @s[tag=listen] as @e[tag=this_e_gadd_head,limit=1] run function luigis_mansion:animations/e_gadd/listen
-execute at @s[tag=nod] as @e[tag=this_e_gadd_head,limit=1] run function luigis_mansion:animations/e_gadd/nod
-execute at @s[tag=shake] as @e[tag=this_e_gadd_head,limit=1] run function luigis_mansion:animations/e_gadd/shake
-execute at @s[tag=wave] as @e[tag=this_e_gadd_head,limit=1] run function luigis_mansion:animations/e_gadd/wave
-execute at @s[tag=walk] as @e[tag=this_e_gadd_head,limit=1] run function luigis_mansion:animations/e_gadd/walk
-execute at @s[tag=jump] as @e[tag=this_e_gadd_head,limit=1] run function luigis_mansion:animations/e_gadd/jump
-execute at @s[tag=walk_backwards] as @e[tag=this_e_gadd_head,limit=1] run function luigis_mansion:animations/e_gadd/walk_backwards
-execute at @s[tag=dragged] as @e[tag=this_e_gadd_head,limit=1] run function luigis_mansion:animations/e_gadd/dragged
-execute at @s[tag=hit] as @e[tag=this_e_gadd_head,limit=1] run function luigis_mansion:animations/e_gadd/hit
-execute at @s[tag=sitting] as @e[tag=this_e_gadd_head,limit=1] run function luigis_mansion:animations/e_gadd/sitting
-execute at @s[tag=get_up] as @e[tag=this_e_gadd_head,limit=1] run function luigis_mansion:animations/e_gadd/get_up
-execute at @s[tag=!listen,tag=!nod,tag=!shake,tag=!wave,tag=!walk,tag=!jump,tag=!poltergust,tag=!walk_backwards,tag=!dragged,tag=!hit,tag=!sitting,tag=!get_up] as @e[tag=this_e_gadd_head,limit=1] run function luigis_mansion:animations/e_gadd/idle
-execute at @s[tag=!listen,tag=!nod,tag=!shake,tag=!wave,tag=!walk,tag=!jump,tag=poltergust,tag=!walk_backwards,tag=!dragged,tag=!hit,tag=!sitting,tag=!get_up] as @e[tag=this_e_gadd_head,limit=1] run function luigis_mansion:animations/e_gadd/poltergust
+execute at @s[tag=listen] as @e[tag=this_model,tag=e_gadd_head,limit=1] run function luigis_mansion:animations/e_gadd/listen
+execute at @s[tag=nod] as @e[tag=this_model,tag=e_gadd_head,limit=1] run function luigis_mansion:animations/e_gadd/nod
+execute at @s[tag=shake] as @e[tag=this_model,tag=e_gadd_head,limit=1] run function luigis_mansion:animations/e_gadd/shake
+execute at @s[tag=wave] as @e[tag=this_model,tag=e_gadd_head,limit=1] run function luigis_mansion:animations/e_gadd/wave
+execute at @s[tag=walk] as @e[tag=this_model,tag=e_gadd_head,limit=1] run function luigis_mansion:animations/e_gadd/walk
+execute at @s[tag=jump] as @e[tag=this_model,tag=e_gadd_head,limit=1] run function luigis_mansion:animations/e_gadd/jump
+execute at @s[tag=walk_backwards] as @e[tag=this_model,tag=e_gadd_head,limit=1] run function luigis_mansion:animations/e_gadd/walk_backwards
+execute at @s[tag=dragged] as @e[tag=this_model,tag=e_gadd_head,limit=1] run function luigis_mansion:animations/e_gadd/dragged
+execute at @s[tag=hit] as @e[tag=this_model,tag=e_gadd_head,limit=1] run function luigis_mansion:animations/e_gadd/hit
+execute at @s[tag=sitting] as @e[tag=this_model,tag=e_gadd_head,limit=1] run function luigis_mansion:animations/e_gadd/sitting
+execute at @s[tag=get_up] as @e[tag=this_model,tag=e_gadd_head,limit=1] run function luigis_mansion:animations/e_gadd/get_up
+execute at @s[tag=!listen,tag=!nod,tag=!shake,tag=!wave,tag=!walk,tag=!jump,tag=!poltergust,tag=!walk_backwards,tag=!dragged,tag=!hit,tag=!sitting,tag=!get_up] as @e[tag=this_model,tag=e_gadd_head,limit=1] run function luigis_mansion:animations/e_gadd/idle
+execute at @s[tag=!listen,tag=!nod,tag=!shake,tag=!wave,tag=!walk,tag=!jump,tag=poltergust,tag=!walk_backwards,tag=!dragged,tag=!hit,tag=!sitting,tag=!get_up] as @e[tag=this_model,tag=e_gadd_head,limit=1] run function luigis_mansion:animations/e_gadd/poltergust
 
-execute at @s[tag=poltergust] run data modify entity @e[tag=this_e_gadd_poltergust,limit=1] HandItems[0] set value {id:"minecraft:carrot_on_a_stick",Count:1b,tag:{HideFlags:63,Unbreakable:1b,Damage:1,CustomModelData:0,display:{Name:'{"italic":false,"color":"white","translate":"luigis_mansion:item.poltergust_3000"}',Lore:['{"italic":false,"color":"gray","translate":"luigis_mansion:item.poltergust_3000.element","with":[{"translate":"luigis_mansion:item.poltergust_3000.element.none","color":"gray"}]}']},luigis_mansion:{id:"luigis_mansion:poltergust_3000",element:{type:0b}}}}
-execute at @s[tag=!poltergust] run data modify entity @e[tag=this_e_gadd_poltergust,limit=1] HandItems[0] set value {}
-execute at @e[tag=this_e_gadd_head,limit=1] run teleport @e[tag=this_e_gadd_poltergust,limit=1] ^ ^ ^-0.1 ~ ~
+execute at @s[tag=poltergust] run data modify entity @e[tag=this_model,tag=e_gadd_poltergust,limit=1] HandItems[0] set value {id:"minecraft:carrot_on_a_stick",Count:1b,tag:{HideFlags:63,Unbreakable:1b,Damage:1,CustomModelData:0,display:{Name:'{"italic":false,"color":"white","translate":"luigis_mansion:item.poltergust_3000"}',Lore:['{"italic":false,"color":"gray","translate":"luigis_mansion:item.poltergust_3000.element","with":[{"translate":"luigis_mansion:item.poltergust_3000.element.none","color":"gray"}]}']},luigis_mansion:{id:"luigis_mansion:poltergust_3000",element:{type:0b}}}}
+execute at @s[tag=!poltergust] run data modify entity @e[tag=this_model,tag=e_gadd_poltergust,limit=1] HandItems[0] set value {}
+execute at @e[tag=this_model,tag=e_gadd_head,limit=1] run teleport @e[tag=this_model,tag=e_gadd_poltergust,limit=1] ^ ^ ^-0.1 ~ ~
 
-execute unless entity @s[tag=!dead,tag=!remove_from_existence] run teleport @e[tag=this_e_gadd_body] ~ -100 ~
-execute unless entity @s[tag=!dead,tag=!remove_from_existence] run teleport @e[tag=this_e_gadd_head] ~ -100 ~
-execute unless entity @s[tag=!dead,tag=!remove_from_existence] run teleport @e[tag=this_e_gadd_poltergust] ~ -100 ~
-execute unless entity @s[tag=!dead,tag=!remove_from_existence] run tag @e[tag=this_e_gadd_body] add dead
-execute unless entity @s[tag=!dead,tag=!remove_from_existence] run tag @e[tag=this_e_gadd_head] add dead
-execute unless entity @s[tag=!dead,tag=!remove_from_existence] run tag @e[tag=this_e_gadd_poltergust] add dead
+execute unless entity @s[tag=!dead,tag=!remove_from_existence] run teleport @e[tag=this_model] ~ -100 ~
+execute unless entity @s[tag=!dead,tag=!remove_from_existence] run tag @e[tag=this_model] add dead
 
 scoreboard players reset #temp PassiveNr
-tag @e[tag=this_e_gadd_body,limit=1] remove this_e_gadd_body
-tag @e[tag=this_e_gadd_head,limit=1] remove this_e_gadd_head
-tag @e[tag=this_e_gadd_poltergust,limit=1] remove this_e_gadd_poltergust
+tag @e[tag=this_model] remove this_model

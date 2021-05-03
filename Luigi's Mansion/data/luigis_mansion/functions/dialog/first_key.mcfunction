@@ -1,6 +1,7 @@
 execute if entity @s[scores={Dialog=1}] run stopsound @a[tag=same_room] music
 execute if entity @s[scores={Dialog=1}] run playsound luigis_mansion:music.first_key music @a[tag=same_room] ~ ~ ~ 1000
 execute if entity @s[scores={Dialog=1}] run scoreboard players set @a[tag=same_room] Music 470
+data merge entity @s[scores={Dialog=1}] {ArmorItems:[{},{},{},{id:"minecraft:brick",Count:1b,tag:{CustomModelData:1}}]}
 scoreboard players add @s Dialog 1
 execute if entity @s[scores={Dialog=1..370}] run particle minecraft:dust 1 0.6 0 1 ~ ~0.5 ~ 0.2 0.2 0.2 0 5
 teleport @s[scores={Dialog=1..30}] ~ ~ ~-0.025

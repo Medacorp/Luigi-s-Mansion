@@ -15,7 +15,7 @@ scoreboard players set @s[tag=element_hurt,tag=1] Dialog 17
 scoreboard players set @s[tag=element_hurt,tag=2] Dialog 19
 execute if entity @s[tag=vanish] run function luigis_mansion:entities/waiter/vanish
 execute at @s[tag=placing_food] run function luigis_mansion:animations/waiter/place_food
-execute unless entity @s[scores={Dialog=17..}] at @s[tag=!element_hurt,tag=!fleeing,tag=!collided,tag=!vanish,tag=!placing_food,scores={StunTime=0}] run function luigis_mansion:animations/waiter/idle
+execute unless entity @s[scores={Dialog=17..}] at @s[tag=!element_hurt,tag=!fleeing,tag=!collided,tag=!vanish,tag=!placing_food,scores={StunTime=0}] run function luigis_mansion:animations/waiter/haunt
 execute at @s[tag=!hurt,tag=!element_hurt,tag=!fleeing,tag=!collided,tag=!vanish,tag=!placing_food,scores={StunTime=0,Dialog=17..}] run function luigis_mansion:animations/waiter/flee
 execute at @s[tag=fleeing] run function luigis_mansion:animations/waiter/flee
 execute at @s[tag=!fleeing,tag=hurt] run function luigis_mansion:animations/waiter/hurt

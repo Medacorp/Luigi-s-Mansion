@@ -12,5 +12,5 @@ scoreboard players set #projection_room_closet Searched 1
 data merge block 682 102 16 {LootTable:"luigis_mansion:search"}
 data merge block 681 102 16 {LootTable:"luigis_mansion:search"}
 tag @e[x=682.5,y=102,z=16.5,distance=..0.7,tag=hidden_boo] add spawn
-tag @e[x=682.5,y=102,z=16.5,distance=..0.7,tag=ghost_marker] add spawn
+tag @e[x=682.5,y=102,z=16.5,distance=..0.7,tag=ghost,tag=hidden] add spawn
 teleport @e[x=682.5,y=102,z=16.5,distance=..0.7,tag=spawn] 682.0 102 16

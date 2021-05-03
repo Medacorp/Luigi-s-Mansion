@@ -11,4 +11,4 @@ scoreboard players set #rec_room_table Searched 1
 data merge block 655 102 38 {LootTable:"luigis_mansion:search"}
 data merge block 655 102 37 {LootTable:"luigis_mansion:search"}
 tag @e[x=655.5,y=102,z=38.5,distance=..0.7,tag=hidden_boo] add spawn
-tag @e[x=655.5,y=102,z=38.5,distance=..0.7,tag=ghost_marker] add spawn
+tag @e[x=655.5,y=102,z=38.5,distance=..0.7,tag=ghost,tag=hidden] add spawn

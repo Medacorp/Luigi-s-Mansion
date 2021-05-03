@@ -6,7 +6,8 @@ summon minecraft:marker 716 111 -16 {Tags:["option"]}
 summon minecraft:marker 716 111 -10 {Tags:["option"]}
 summon minecraft:marker 711 111 -7 {Tags:["option"]}
 tag @e[type=minecraft:marker,sort=random,tag=option,limit=1] add selected
-execute at @e[type=minecraft:marker,tag=option,tag=selected,limit=1] run teleport @e[type=minecraft:marker,x=713.5,y=111,z=-13.5,distance=..0.7,tag=ghost_marker,limit=1] ~ ~ ~
+execute at @e[type=minecraft:marker,tag=option,tag=selected,limit=1] run teleport @e[type=minecraft:marker,x=713.5,y=111,z=-13.5,distance=..0.7,tag=ghost,tag=hidden,limit=1] ~ ~ ~
+kill @e[type=minecraft:marker,tag=option]
 scoreboard players set #twins_room Wave 6
 execute as @a[scores={Room=39}] run function luigis_mansion:other/music/set/danger
 function luigis_mansion:room/hidden/twins_room/add_blockade

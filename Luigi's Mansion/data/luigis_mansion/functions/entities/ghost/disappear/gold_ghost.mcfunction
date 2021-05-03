@@ -1,1 +1,0 @@
-execute if entity @s[tag=gold_ghost] run tag @e[tag=this_entity,limit=1] add gold_ghost

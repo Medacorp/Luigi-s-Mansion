@@ -3,7 +3,5 @@ data modify entity @e[x=701.5,y=30,z=-73.5,distance=..0.7,limit=1,type=minecraft
 data modify storage luigis_mansion:data current_state.current_data.rooms.artists_studio merge value {cleared:1b}
 function #luigis_mansion:room/normal/artists_studio/turn_lights/on
 execute if data storage luigis_mansion:data current_state.current_data{boos:[{}],technical_data:{released_boos_talk:1b}} run function luigis_mansion:room/normal/artists_studio/load_boos
-execute as @e[scores={Room=58},tag=optional_ghost] run data merge entity @s {Health:0.0f,DeathTime:19s}
-execute as @e[scores={Room=58},tag=ghost] run data merge entity @s {Health:0.0f,DeathTime:19s}
-tag @e[scores={Room=58},tag=ghost_marker] add dead
+execute as @e[scores={Room=58},tag=!cannot_be_removed] unless entity @s[tag=!ghost,tag=!optional_ghost] run tag @s add remove_from_existence
 scoreboard players reset #artists_studio Wave

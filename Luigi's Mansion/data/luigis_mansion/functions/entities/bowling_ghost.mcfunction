@@ -1,1 +1,2 @@
-execute if entity @s[tag=bowling_ghost] run function luigis_mansion:entities/bowling_ghost/tick
+execute if entity @s[tag=bowling_ghost,tag=!hidden] run function luigis_mansion:entities/bowling_ghost/tick
+execute if entity @s[tag=bowling_ghost,tag=hidden] run function luigis_mansion:entities/bowling_ghost/hidden_tick

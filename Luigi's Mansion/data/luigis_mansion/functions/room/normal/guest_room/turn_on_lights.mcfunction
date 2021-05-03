@@ -1,7 +1,5 @@
 function #luigis_mansion:room/normal/guest_room/turn_lights/on
 data modify storage luigis_mansion:data current_state.current_data.rooms.guest_room merge value {cleared:1b}
 execute unless block 742 21 -52 minecraft:redstone_lamp if data storage luigis_mansion:data current_state.current_data{boos:[{}],technical_data:{released_boos_talk:1b}} run function luigis_mansion:room/normal/guest_room/load_boos
-execute as @e[scores={Room=57},tag=optional_ghost] run data merge entity @s {Health:0.0f,DeathTime:19s}
-execute as @e[scores={Room=57},tag=ghost] run data merge entity @s {Health:0.0f,DeathTime:19s}
-tag @e[scores={Room=57},tag=ghost_marker] add dead
+execute as @e[scores={Room=57},tag=!cannot_be_removed] unless entity @s[tag=!ghost,tag=!optional_ghost] run tag @s add remove_from_existence
 scoreboard players reset #guest_room Wave

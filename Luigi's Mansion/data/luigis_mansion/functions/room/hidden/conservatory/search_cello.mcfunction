@@ -3,4 +3,4 @@ execute unless score #conservatory_cello Searched matches 1 as @a[scores={Room=2
 execute positioned 662.0 102 6.0 run function luigis_mansion:blocks/dust
 scoreboard players set #conservatory_cello Searched 1
 tag @e[x=662.5,y=102,z=5.5,distance=..0.7,tag=hidden_boo] add spawn
-tag @e[x=662.5,y=102,z=5.5,distance=..0.7,tag=ghost_marker] add spawn
+tag @e[x=662.5,y=102,z=5.5,distance=..0.7,tag=ghost,tag=hidden] add spawn

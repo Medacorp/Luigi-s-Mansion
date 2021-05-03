@@ -2,5 +2,6 @@ execute if score #courtyard Wave matches 2 unless entity @e[tag=ghost,scores={Ro
 execute if score #courtyard Wave matches 1 unless entity @e[tag=ghost,scores={Room=26},tag=!optional_ghost] run function luigis_mansion:room/hidden/courtyard/wave_2
 execute unless data storage luigis_mansion:data current_state.current_data.rooms.courtyard{cleared:1b} if entity @a[tag=!blackout] unless score #courtyard Wave matches 1.. run function luigis_mansion:room/hidden/courtyard/wave_1
 execute if entity @a[tag=blackout] unless score #courtyard Wave matches 1.. run function luigis_mansion:room/hidden/courtyard/blackout
+function luigis_mansion:room/hidden/courtyard/load_vacuumable_ghosts
 
-execute unless score #courtyard_water Searched matches 1 if entity @a[x=648.5,y=104.0,z=4.5,distance=..5] if data storage luigis_mansion:data current_state.current_data.technical_data{has_water_element_medal:1b} unless entity @e[x=648.5,y=104.0,z=4.5,distance=..5,tag=water_elemental_ghost] positioned 648 104 4 run function luigis_mansion:spawn_entities/ghost/water_elemental_ghost
+execute unless score #courtyard_water Searched matches 1 positioned 648 104 4 run function luigis_mansion:spawn_entities/ghost/water_elemental_ghost

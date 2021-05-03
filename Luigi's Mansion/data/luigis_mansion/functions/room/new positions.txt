@@ -4,12 +4,12 @@ parlor: +30 -91 -20
 anteroom: +12 -91 -25
 wardrobe room: +5 -91 -38 MIRROR X677
 balcony 1: * * *
-
 small hallway: +24 -91 -24
 study: +18 -91 -25
 master bedroom: * * *
 nursery: +32 -91 -16
 main hallway: +14 -91 +13
+
 basement stairs: +14 -91 +21
 bathroom 1: -5 -91 +9 MIRROR X649
 ball room: +13 -91 +28

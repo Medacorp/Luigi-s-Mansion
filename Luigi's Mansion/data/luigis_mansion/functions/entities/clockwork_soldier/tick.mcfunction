@@ -10,6 +10,9 @@ execute if entity @s[tag=vanish,tag=blue_clockwork_soldier] store result storage
 execute if entity @s[tag=vanish,tag=green_clockwork_soldier] store result storage luigis_mansion:data current_state.current_data.portrait_ghosts.clockwork_soldiers.green_health int 1 run scoreboard players operation @s LastHealth = @s Health
 execute if entity @s[tag=vanish,tag=pink_clockwork_soldier] store result storage luigis_mansion:data current_state.current_data.portrait_ghosts.clockwork_soldiers.pink_health int 1 run scoreboard players operation @s LastHealth = @s Health
 
+
+tag @s[tag=reset_to_base] remove activated
+tag @s[tag=reset_to_base] remove was_activated
 execute if entity @s[tag=activated,tag=!was_activated,scores={WaitTime=0}] run function luigis_mansion:entities/clockwork_soldier/activate
 tag @s[tag=activated,scores={WaitTime=1}] add was_activated
 

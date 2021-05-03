@@ -22,7 +22,7 @@ execute if entity @s[tag=!element_hurt,tag=!fleeing,tag=collided,scores={StunTim
 tag @s[tag=!hurt,tag=!element_hurt,tag=!fleeing,tag=!attack,tag=!collided,tag=!laugh,tag=!complain,scores={StunTime=0,SpawnTime=120..}] add vanish
 execute if entity @s[tag=vanish] run function luigis_mansion:entities/flash/vanish
 execute if entity @s[tag=appear] run function luigis_mansion:entities/flash/appear
-execute at @s[tag=!hurt,tag=!element_hurt,tag=!fleeing,tag=!attack,tag=!collided,tag=!vanish,tag=!laugh,tag=!complain,tag=!appear,scores={StunTime=0}] run function luigis_mansion:animations/puncher/idle
+execute at @s[tag=!hurt,tag=!element_hurt,tag=!fleeing,tag=!attack,tag=!collided,tag=!vanish,tag=!laugh,tag=!complain,tag=!appear,scores={StunTime=0}] run function luigis_mansion:animations/puncher/haunt
 execute at @s[tag=fleeing] run function luigis_mansion:animations/puncher/flee
 execute at @s[tag=!fleeing,tag=hurt] run function luigis_mansion:animations/puncher/hurt
 execute at @s[tag=!hurt,tag=element_hurt] run function luigis_mansion:animations/puncher/hurt

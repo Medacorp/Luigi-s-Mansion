@@ -5,7 +5,7 @@ execute if block 682 120 28 minecraft:oak_door[open=true] if block 724 29 44 min
 execute if block 724 29 44 minecraft:oak_door[powered=false] run scoreboard players set #temp Searched -1
 execute if block 682 120 28 minecraft:oak_door[powered=false] run scoreboard players set #temp Searched -1
 
-execute if score #temp Searched matches 1..2 as @a[gamemode=!spectator,distance=..3,x=683.0,y=120,z=28.5] if data storage luigis_mansion:data current_state.current_data.obtained_keys{attic_hallway_2:1b} unless data storage luigis_mansion:data current_state.current_data.used_keys{attic_hallway_2:1b} run function luigis_mansion:room/normal/attic_hallway_2/unlock_door
+execute if score #temp Searched matches 1..2 as @a[gamemode=!spectator,distance=..3,x=683.0,y=120,z=28.5] if data storage luigis_mansion:data current_state.current_data.obtained_keys{attic_hallway_2:1b} unless data storage luigis_mansion:data current_state.current_data.used_keys{attic_hallway_2:1b} positioned 682 120 28 run function luigis_mansion:room/normal/attic_hallway_2/unlock_door
 execute if block 682 120 28 #minecraft:doors[open=true] unless data storage luigis_mansion:data current_state.current_data.used_keys{attic_hallway_2:1b} positioned 682 120 28 run function luigis_mansion:blocks/closed_door
 execute unless data storage luigis_mansion:data current_state.current_data.used_keys{attic_hallway_2:1b} if score #temp Searched matches 1..2 run scoreboard players set #temp Searched -1
 execute unless entity @a[gamemode=!spectator,distance=..3,x=683.0,y=120,z=28.5] unless entity @a[gamemode=!spectator,distance=..3,x=724.0,y=29,z=44.5] if score #temp Searched matches 1..2 run scoreboard players set #temp Searched 0

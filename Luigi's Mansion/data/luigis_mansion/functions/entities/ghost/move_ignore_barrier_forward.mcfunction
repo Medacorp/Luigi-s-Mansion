@@ -1,3 +1,4 @@
+execute unless block ~ ~ ~ #luigis_mansion:ghosts_ignore if block ^ ^ ^1 #luigis_mansion:ghosts_ignore if block ^ ^1 ^1 #luigis_mansion:ghosts_ignore run teleport @s ^ ^ ^0.05
 execute if block ^ ^ ^0.6 #luigis_mansion:ghosts_ignore if block ^ ^1 ^0.6 #luigis_mansion:ghosts_ignore run teleport @s ^ ^ ^0.05
 execute if block ^ ^ ^0.6 #minecraft:slabs[type=bottom] if block ^ ^1 ^0.6 #luigis_mansion:ghosts_ignore run teleport @s ^ ^ ^0.05
 scoreboard players remove #temp Move 1

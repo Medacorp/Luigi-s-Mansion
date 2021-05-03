@@ -12,7 +12,7 @@ execute if entity @s[scores={ActionTime=40}] run summon minecraft:armor_stand ~ 
 execute if entity @s[scores={ActionTime=40}] positioned ~ ~0.4 ~ as @e[distance=..0.1,tag=bone] unless entity @s[scores={GhostNr=1..}] positioned ~ ~-0.4 ~ run scoreboard players operation @s GhostNr = @e[tag=mr_bones,distance=..0.1] GhostNr
 execute if entity @s[scores={ActionTime=40}] positioned ~ ~0.4 ~ as @e[distance=..0.1,tag=bone] run teleport @s ~ ~ ~ ~ ~
 
-execute at @s[scores={ActionTime=61}] run function luigis_mansion:animations/mr_bones/idle
+execute at @s[scores={ActionTime=61}] run function luigis_mansion:animations/mr_bones/haunt
 execute if entity @s[scores={ActionTime=61}] run scoreboard players operation #temp GhostNr = @s GhostNr
 execute if entity @s[scores={ActionTime=61}] as @e[tag=bone] if score @s GhostNr = #temp GhostNr run tag @e[distance=..0.1] add wait
 tag @s[scores={ActionTime=61},tag=!wait,tag=!laugh] add complain

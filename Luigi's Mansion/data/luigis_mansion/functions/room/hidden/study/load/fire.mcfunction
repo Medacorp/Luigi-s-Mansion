@@ -1,1 +1,1 @@
-fill 684 111 -15 684 111 -13 minecraft:soul_campfire[lit=true]
+fill 702 20 -40 702 20 -38 minecraft:soul_campfire[lit=true]

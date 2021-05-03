@@ -1,5 +1,5 @@
 scoreboard players operation #temp GhostNr = @s GhostNr
-execute as @e[tag=neville_body] if score @s GhostNr = #temp GhostNr run tag @s add this_neville_body
+execute as @e[tag=neville_body] if score @s GhostNr = #temp GhostNr run tag @s add this_model
 
 execute if entity @s[tag=dying,scores={HurtTime=1}] run playsound luigis_mansion:entity.neville.vacuumed hostile @a[tag=same_room] ~ ~ ~ 1
 execute if entity @s[tag=dead] run loot spawn ~ ~ ~ loot luigis_mansion:entities/ghost/neville
@@ -27,8 +27,8 @@ execute at @s[scores={StunTime=0}] if entity @e[tag=rocking_chair,distance=..2,s
 execute at @s[scores={StunTime=0}] if entity @e[tag=rocking_chair,distance=..2,scores={AnimationProg=21..60},limit=1] run teleport @s ^ ^ ^-0.01
 execute at @s[scores={StunTime=0}] if entity @e[tag=rocking_chair,distance=..2,scores={AnimationProg=61..80},limit=1] run teleport @s ^ ^ ^0.01
 
-execute unless entity @s[tag=!dead,tag=!remove_from_existence] run teleport @e[tag=this_neville_body] ~ -100 ~
-execute unless entity @s[tag=!dead,tag=!remove_from_existence] run tag @e[tag=this_neville_body] add dead
+execute unless entity @s[tag=!dead,tag=!remove_from_existence] run teleport @e[tag=this_model] ~ -100 ~
+execute unless entity @s[tag=!dead,tag=!remove_from_existence] run tag @e[tag=this_model] add dead
 
 scoreboard players reset #temp GhostNr
-tag @e[tag=this_neville_body,limit=1] remove this_neville_body
+tag @e[tag=this_model,limit=1] remove this_model

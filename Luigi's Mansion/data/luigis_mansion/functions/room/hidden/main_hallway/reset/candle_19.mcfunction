@@ -1,2 +1,2 @@
-setblock 684 104 23 minecraft:tripwire_hook[facing=north]
+setblock 698 13 36 minecraft:tripwire_hook[facing=north]
 scoreboard players reset #main_hallway_candle_19

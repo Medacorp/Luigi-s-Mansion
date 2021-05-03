@@ -1,7 +1,7 @@
 scoreboard players operation #temp GhostNr = @s GhostNr
-execute as @e[tag=floating_whirlindas_body] if score @s GhostNr = #temp GhostNr run tag @s add this_floating_whirlindas_body
-execute as @e[tag=floating_whirlindas_female] if score @s GhostNr = #temp GhostNr run tag @s add this_floating_whirlindas_female
-execute as @e[tag=floating_whirlindas_female_body] if score @s GhostNr = #temp GhostNr run tag @s add this_floating_whirlindas_female_body
+execute as @e[tag=floating_whirlindas_body] if score @s GhostNr = #temp GhostNr run tag @s add this_model
+execute as @e[tag=floating_whirlindas_female] if score @s GhostNr = #temp GhostNr run tag @s add this_model
+execute as @e[tag=floating_whirlindas_female_body] if score @s GhostNr = #temp GhostNr run tag @s add this_model
 
 execute if entity @s[tag=dying,scores={HurtTime=1}] run playsound luigis_mansion:entity.floating_whirlindas.vacuumed hostile @a[tag=same_room] ~ ~ ~ 1
 execute if entity @s[tag=dead] run loot spawn ~ ~ ~ loot luigis_mansion:entities/ghost/floating_whirlindas
@@ -25,14 +25,8 @@ execute at @s[tag=!hurt,tag=!fleeing,tag=!bow,tag=!vanish,scores={StunTime=0}] r
 execute at @s[tag=fleeing] run function luigis_mansion:animations/floating_whirlindas/flee
 execute at @s[tag=!fleeing,tag=hurt] run function luigis_mansion:animations/floating_whirlindas/hurt
 
-execute unless entity @s[tag=!dead,tag=!remove_from_existence] run teleport @e[tag=this_floating_whirlindas_body] ~ -100 ~
-execute unless entity @s[tag=!dead,tag=!remove_from_existence] run teleport @e[tag=this_floating_whirlindas_female] ~ -100 ~
-execute unless entity @s[tag=!dead,tag=!remove_from_existence] run teleport @e[tag=this_floating_whirlindas_female_body] ~ -100 ~
-execute unless entity @s[tag=!dead,tag=!remove_from_existence] run tag @e[tag=this_floating_whirlindas_body] add dead
-execute unless entity @s[tag=!dead,tag=!remove_from_existence] run tag @e[tag=this_floating_whirlindas_female] add dead
-execute unless entity @s[tag=!dead,tag=!remove_from_existence] run tag @e[tag=this_floating_whirlindas_female_body] add dead
+execute unless entity @s[tag=!dead,tag=!remove_from_existence] run teleport @e[tag=this_model] ~ ~-100 ~
+execute unless entity @s[tag=!dead,tag=!remove_from_existence] run tag @e[tag=this_model] add dead
 
 scoreboard players reset #temp GhostNr
-tag @e[tag=this_floating_whirlindas_body,limit=1] remove this_floating_whirlindas_body
-tag @e[tag=this_floating_whirlindas_female,limit=1] remove this_floating_whirlindas_female
-tag @e[tag=this_floating_whirlindas_female_body,limit=1] remove this_floating_whirlindas_female_body
+tag @e[tag=this_model] remove this_model

@@ -5,7 +5,7 @@ execute if block 706 11 -22 minecraft:warped_door[open=true] if block 705 11 -38
 execute if block 705 11 -38 minecraft:warped_door[powered=false] run scoreboard players set #temp Searched -1
 execute if block 706 11 -22 minecraft:warped_door[powered=false] run scoreboard players set #temp Searched -1
 
-execute if score #temp Searched matches 1..2 as @a[gamemode=!spectator,distance=..3,x=706.5,y=11,z=-22.0] if data storage luigis_mansion:data current_state.current_data.obtained_keys{ball_room:1b} unless data storage luigis_mansion:data current_state.current_data.used_keys{ball_room:1b} run function luigis_mansion:room/normal/ball_room/unlock_door
+execute if score #temp Searched matches 1..2 as @a[gamemode=!spectator,distance=..3,x=706.5,y=11,z=-22.0] if data storage luigis_mansion:data current_state.current_data.obtained_keys{ball_room:1b} unless data storage luigis_mansion:data current_state.current_data.used_keys{ball_room:1b} positioned 706 11 -22 run function luigis_mansion:room/normal/ball_room/unlock_door
 execute if block 706 11 -22 #minecraft:doors[open=true] unless data storage luigis_mansion:data current_state.current_data.used_keys{ball_room:1b} positioned 706 11 -22 run function luigis_mansion:blocks/closed_door
 execute unless data storage luigis_mansion:data current_state.current_data.used_keys{ball_room:1b} if score #temp Searched matches 1..2 run scoreboard players set #temp Searched -1
 execute unless entity @a[gamemode=!spectator,distance=..3,x=706.5,y=11,z=-22.0] unless entity @a[gamemode=!spectator,distance=..3,x=705.5,y=11,z=-37.0] if score #temp Searched matches 1..2 run scoreboard players set #temp Searched 0

@@ -7,6 +7,6 @@ execute unless score #hallway_jar_3 Searched matches 1 run tag @e[type=minecraft
 execute if entity @e[type=minecraft:marker,tag=chance,tag=selected,tag=poison_mushroom] positioned 680 22.5 -19 run function luigis_mansion:spawn_entities/item/poison_mushroom
 execute if entity @e[type=minecraft:marker,tag=chance,tag=selected,tag=small_heart] positioned 680 22.5 -19 run function luigis_mansion:spawn_entities/item/small_heart
 execute if entity @e[type=minecraft:marker,tag=chance,tag=selected,tag=money] run function luigis_mansion:room/normal/hallway/jar_3
-execute unless entity @e[type=minecraft:marker,tag=chance,tag=selected,tag=!nothing] 680 21 -19 run function luigis_mansion:blocks/dust
+execute unless entity @e[type=minecraft:marker,tag=chance,tag=selected,tag=!nothing] positioned 680 21 -19 run function luigis_mansion:blocks/dust
 kill @e[type=minecraft:marker,tag=chance]
 scoreboard players set #hallway_jar_3 Searched 1

@@ -1,1 +1,0 @@
-execute if entity @s[tag=blue_twirler] run function luigis_mansion:spawn_entities/ghost/blue_twirler

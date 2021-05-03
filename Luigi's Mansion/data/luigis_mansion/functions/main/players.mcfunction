@@ -1,5 +1,7 @@
 execute unless block ~ ~ ~ minecraft:air{loaded:0b} unless block ~-48 ~ ~ minecraft:air{loaded:0b} unless block ~48 ~ ~ minecraft:air{loaded:0b} unless block ~ ~ ~-48 minecraft:air{loaded:0b} unless block ~ ~ ~48 minecraft:air{loaded:0b} unless block ~48 ~ ~48 minecraft:air{loaded:0b} unless block ~48 ~ ~-48 minecraft:air{loaded:0b} unless block ~-48 ~ ~48 minecraft:air{loaded:0b} unless block ~-48 ~ ~-48 minecraft:air{loaded:0b} run function luigis_mansion:main/loaded_chunks
 #execute if entity @s[scores={Jump=1..}] run function luigis_mansion:main/prevent_jump
+execute unless entity @s[scores={Health=-1000..}] run scoreboard players set @s Health 100
+execute unless entity @s[scores={MaxHealth=0..}] run scoreboard players set @s MaxHealth 100
 
 scoreboard players set @s[tag=!loaded_chunk_triggered] LoadedChunks 0
 tag @s[tag=!loaded_chunk_triggered] remove loaded_chunks
