@@ -1,5 +1,3 @@
 execute if score #study Wave matches 1 unless entity @e[tag=ghost,scores={Room=7},tag=!optional_ghost] run function luigis_mansion:room/hidden/study/clear
 execute unless data storage luigis_mansion:data current_state.current_data.rooms.study{cleared:1b} if entity @a[tag=!blackout] unless score #study Wave matches 1.. run function luigis_mansion:room/hidden/study/wave_1
 execute if entity @a[tag=blackout] unless score #study Wave matches 1.. run function luigis_mansion:room/hidden/study/blackout
-
-execute unless score #study_fire Searched matches 1 positioned 702 20.5 -39 run function luigis_mansion:spawn_entities/ghost/fire_elemental_ghost

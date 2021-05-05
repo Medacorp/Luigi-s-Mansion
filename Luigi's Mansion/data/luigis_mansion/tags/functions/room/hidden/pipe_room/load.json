@@ -5,6 +5,7 @@
         "luigis_mansion:room/hidden/pipe_room/load/sewage",
         "luigis_mansion:room/hidden/pipe_room/load/pipe",
         "luigis_mansion:room/hidden/pipe_room/load/bucket",
-        "luigis_mansion:room/hidden/pipe_room/load/chest"
+        "luigis_mansion:room/hidden/pipe_room/load/chest",
+        "luigis_mansion:room/hidden/pipe_room/load/ice"
 	]
 }

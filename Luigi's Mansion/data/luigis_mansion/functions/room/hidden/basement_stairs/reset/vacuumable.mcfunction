@@ -1,2 +1,2 @@
-setblock 700 107 43 minecraft:air
+setblock 714 16 64 minecraft:air
 scoreboard players reset #basement_stairs_vacuumable

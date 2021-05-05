@@ -1,0 +1,1 @@
+execute positioned 697.0 96 17.0 run function luigis_mansion:spawn_entities/ghost/ice_elemental_ghost

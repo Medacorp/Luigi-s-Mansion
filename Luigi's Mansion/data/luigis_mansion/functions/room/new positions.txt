@@ -9,7 +9,6 @@ study: +18 -91 -25
 master bedroom: * * *
 nursery: +32 -91 -16
 main hallway: +14 -91 +13
-
 basement stairs: +14 -91 +21
 bathroom 1: -5 -91 +9 MIRROR X649
 ball room: +13 -91 +28
@@ -17,6 +16,7 @@ storage room: +8 -91 +28 MIRROR X680
 washroom 1: -4 -91 -10 MIRROR X661
 fortune tellers room: +29 -91 +17
 mirror room: +29 -91 +21 MIRROR X735
+
 laundry room: +14 -91 -20
 butlers room: +32 -91 -16
 hidden room: +31 -91 -12 MIRROR X749

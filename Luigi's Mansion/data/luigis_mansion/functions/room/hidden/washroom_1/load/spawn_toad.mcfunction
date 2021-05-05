@@ -1,1 +1,1 @@
-execute if entity @a[tag=!blackout,limit=1] positioned 666 102 -18 unless entity @e[distance=..0.7,tag=toad,limit=1] rotated -90 0 run function luigis_mansion:spawn_entities/toad/washroom_1
+execute if entity @a[tag=!blackout,limit=1] positioned 662 11 -28 unless entity @e[distance=..0.7,tag=toad,limit=1] rotated -90 0 run function luigis_mansion:spawn_entities/toad/washroom_1

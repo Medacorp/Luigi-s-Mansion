@@ -78,7 +78,7 @@ execute if entity @s[scores={Dialog=70}] run teleport @s 725.5 20 31.3 0 0
 execute if entity @s[scores={Dialog=71..81}] run teleport @s 725.5 20 31.4 0 0
 execute if entity @s[scores={Dialog=72}] positioned 718 20 35 run function luigis_mansion:spawn_entities/e_gadd
 execute if entity @s[scores={Dialog=72}] positioned 718 20 35 run tag @e[distance=..0.1,tag=e_gadd] add dialog
-execute if entity @s[scores={Dialog=72}] positioned 725 20 34.9 run function luigis_mansion:spawn_entities/ghost/gold_ghost
+execute if entity @s[scores={Dialog=72}] positioned 725 20 34.9 run function luigis_mansion:spawn_entities/ghost/forced_spawn/gold_ghost
 execute if entity @s[scores={Dialog=72}] positioned 725 20 34.9 run scoreboard players set @e[distance=..0.1,tag=gold_ghost] SpawnTime 20
 execute if entity @s[scores={Dialog=72}] positioned 725 20 34.9 run tag @e[distance=..0.1,tag=gold_ghost] add dialog
 execute if entity @s[scores={Dialog=72}] run teleport @s 725.5 20 31.4 facing entity @e[tag=gold_ghost,tag=dialog,limit=1] feet
@@ -149,15 +149,15 @@ execute if entity @s[scores={Dialog=946..1187}] as @e[tag=e_gadd,tag=dialog,limi
 execute if entity @s[scores={Dialog=1045}] if score #players Totals matches 1 run tellraw @a[tag=same_room] {"translate":"chat.type.text","with":[{"translate":"luigis_mansion:entity.e_gadd","color":"green"},{"translate":"luigis_mansion:dialog.meet_e_gadd.6"}]}
 execute if entity @s[scores={Dialog=1045}] if score #players Totals matches 2.. run tellraw @a[tag=same_room] {"translate":"chat.type.text","with":[{"translate":"luigis_mansion:entity.e_gadd","color":"green"},{"translate":"luigis_mansion:dialog.meet_e_gadd.6.more"}]}
 execute if entity @s[scores={Dialog=1187}] run tag @e[tag=e_gadd,tag=dialog,limit=1] remove nod
-execute if entity @s[scores={Dialog=1187}] positioned 718 20 29 run function luigis_mansion:spawn_entities/ghost/gold_ghost
+execute if entity @s[scores={Dialog=1187}] positioned 718 20 29 run function luigis_mansion:spawn_entities/ghost/forced_spawn/gold_ghost
 execute if entity @s[scores={Dialog=1187}] positioned 718 20 29 run tag @e[distance=..0.1,tag=gold_ghost] add dialog
 execute if entity @s[scores={Dialog=1187}] positioned 718 20 29 run tag @e[distance=..0.1,tag=gold_ghost] add opening_appear
 execute if entity @s[scores={Dialog=1187}] positioned 718 20 29 as @e[distance=..0.1,tag=gold_ghost,tag=dialog] at @s facing entity @e[tag=e_gadd,tag=dialog,limit=1] feet rotated ~ 0 run teleport @s ~ ~ ~ ~ ~
-execute if entity @s[scores={Dialog=1199}] positioned 718 20 26 run function luigis_mansion:spawn_entities/ghost/gold_ghost
+execute if entity @s[scores={Dialog=1199}] positioned 718 20 26 run function luigis_mansion:spawn_entities/ghost/forced_spawn/gold_ghost
 execute if entity @s[scores={Dialog=1199}] positioned 718 20 26 run tag @e[distance=..0.1,tag=gold_ghost] add dialog
 execute if entity @s[scores={Dialog=1199}] positioned 718 20 26 run tag @e[distance=..0.1,tag=gold_ghost] add opening_appear
 execute if entity @s[scores={Dialog=1199}] positioned 718 20 26 as @e[distance=..0.1,tag=gold_ghost,tag=dialog] at @s facing entity @e[tag=e_gadd,tag=dialog,limit=1] feet rotated ~ 0 run teleport @s ~ ~ ~ ~ ~
-execute if entity @s[scores={Dialog=1212}] positioned 720 20 27 run function luigis_mansion:spawn_entities/ghost/gold_ghost
+execute if entity @s[scores={Dialog=1212}] positioned 720 20 27 run function luigis_mansion:spawn_entities/ghost/forced_spawn/gold_ghost
 execute if entity @s[scores={Dialog=1212}] positioned 720 20 27 run tag @e[distance=..0.1,tag=gold_ghost] add dialog
 execute if entity @s[scores={Dialog=1212}] positioned 720 20 27 run tag @e[distance=..0.1,tag=gold_ghost] add opening_appear
 execute if entity @s[scores={Dialog=1212}] positioned 720 20 27 as @e[distance=..0.1,tag=gold_ghost,tag=dialog] at @s facing entity @e[tag=e_gadd,tag=dialog,limit=1] feet rotated ~ 0 run teleport @s ~ ~ ~ ~ ~

@@ -1,1 +1,1 @@
-execute positioned ~ ~1.4 ~ as @a[gamemode=!spectator,distance=..0.7,limit=1] at @s run function luigis_mansion:items/poison_mushroom/hit
+execute positioned ~ ~1.4 ~ as @p[gamemode=!spectator] at @s run function luigis_mansion:items/poison_mushroom/hit

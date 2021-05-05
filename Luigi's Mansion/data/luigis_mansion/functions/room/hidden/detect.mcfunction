@@ -20,21 +20,21 @@ execute if entity @a[gamemode=!spectator,x=737,y=20,z=-58,dx=14,dy=6,dz=20] run 
 execute if score #nursery Ticking matches 1 unless entity @a[gamemode=!spectator,x=737,y=20,z=-58,dx=14,dy=6,dz=20] unless entity @a[gamemode=!spectator,scores={Room=9}] unless entity @a[scores={LastRoom=9}] run function #luigis_mansion:room/hidden/nursery/reset
 execute if entity @a[gamemode=!spectator,x=667,y=11,z=-10,dx=8,dy=6,dz=60] run function luigis_mansion:room/hidden/main_hallway/tick
 execute if score #main_hallway Ticking matches 1 unless entity @a[gamemode=!spectator,x=667,y=11,z=-10,dx=8,dy=6,dz=60] unless entity @a[gamemode=!spectator,scores={Room=10}] unless entity @a[scores={LastRoom=10}] run function #luigis_mansion:room/hidden/main_hallway/reset
+execute if entity @a[gamemode=!spectator,x=712,y=2,z=57,dx=8,dy=15,dz=21] run function luigis_mansion:room/hidden/basement_stairs/tick
+execute if score #basement_stairs Ticking matches 1 unless entity @a[gamemode=!spectator,x=712,y=2,z=57,dx=8,dy=15,dz=21] unless entity @a[gamemode=!spectator,scores={Room=11}] unless entity @a[scores={LastRoom=11}] run function #luigis_mansion:room/hidden/basement_stairs/reset
+execute if entity @a[gamemode=!spectator,x=648,y=11,z=-14,dx=12,dy=6,dz=14] run function luigis_mansion:room/hidden/bathroom_1/tick
+execute if score #bathroom_1 Ticking matches 1 unless entity @a[gamemode=!spectator,x=648,y=11,z=-14,dx=12,dy=6,dz=14] unless entity @a[gamemode=!spectator,scores={Room=12}] unless entity @a[scores={LastRoom=12}] run function #luigis_mansion:room/hidden/bathroom_1/reset
+execute if entity @a[gamemode=!spectator,x=695,y=11,z=52,dx=17,dy=6,dz=33] run function luigis_mansion:room/hidden/ball_room/tick
+execute if score #ball_room Ticking matches 1 unless entity @a[gamemode=!spectator,x=695,y=11,z=52,dx=17,dy=6,dz=33] unless entity @a[gamemode=!spectator,scores={Room=13}] unless entity @a[scores={LastRoom=13}] run function #luigis_mansion:room/hidden/ball_room/reset
+execute if entity @a[gamemode=!spectator,x=679,y=11,z=52,dx=12,dy=6,dz=33] run function luigis_mansion:room/hidden/storage_room/tick
+execute if score #storage_room Ticking matches 1 unless entity @a[gamemode=!spectator,x=679,y=11,z=52,dx=12,dy=6,dz=33] unless entity @a[gamemode=!spectator,scores={Room=14}] unless entity @a[scores={LastRoom=14}] run function #luigis_mansion:room/hidden/storage_room/reset
+execute if entity @a[gamemode=!spectator,x=660,y=11,z=-33,dx=8,dy=6,dz=14] run function luigis_mansion:room/hidden/washroom_1/tick
+execute if score #washroom_1 Ticking matches 1 unless entity @a[gamemode=!spectator,x=660,y=11,z=-33,dx=8,dy=6,dz=14] unless entity @a[gamemode=!spectator,scores={Room=15}] unless entity @a[scores={LastRoom=15}] run function #luigis_mansion:room/hidden/washroom_1/reset
+execute if entity @a[gamemode=!spectator,x=734,y=11,z=34,dx=14,dy=6,dz=20] run function luigis_mansion:room/hidden/fortune_tellers_room/tick
+execute if score #fortune_tellers_room Ticking matches 1 unless entity @a[gamemode=!spectator,x=734,y=11,z=34,dx=14,dy=6,dz=20] unless entity @a[gamemode=!spectator,scores={Room=16}] unless entity @a[scores={LastRoom=16}] run function #luigis_mansion:room/hidden/fortune_tellers_room/reset
+execute if entity @a[gamemode=!spectator,x=734,y=11,z=57,dx=14,dy=6,dz=21] run function luigis_mansion:room/hidden/mirror_room/tick
+execute if score #mirror_room Ticking matches 1 unless entity @a[gamemode=!spectator,x=734,y=11,z=57,dx=14,dy=6,dz=21] unless entity @a[gamemode=!spectator,scores={Room=17}] unless entity @a[scores={LastRoom=17}] run function #luigis_mansion:room/hidden/mirror_room/reset
 
-execute if entity @a[gamemode=!spectator,x=699,y=93,z=37,dx=6,dy=15,dz=19] run function luigis_mansion:room/hidden/basement_stairs/tick
-execute if score #basement_stairs Ticking matches 1 unless entity @a[gamemode=!spectator,x=699,y=93,z=37,dx=6,dy=15,dz=19] unless entity @a[gamemode=!spectator,scores={Room=11}] unless entity @a[scores={LastRoom=11}] run function #luigis_mansion:room/hidden/basement_stairs/reset
-execute if entity @a[gamemode=!spectator,x=654,y=102,z=-22,dx=10,dy=6,dz=12] run function luigis_mansion:room/hidden/bathroom_1/tick
-execute if score #bathroom_1 Ticking matches 1 unless entity @a[gamemode=!spectator,x=654,y=102,z=-22,dx=10,dy=6,dz=12] unless entity @a[gamemode=!spectator,scores={Room=12}] unless entity @a[scores={LastRoom=12}] run function #luigis_mansion:room/hidden/bathroom_1/reset
-execute if entity @a[gamemode=!spectator,x=683,y=102,z=25,dx=15,dy=6,dz=31] run function luigis_mansion:room/hidden/ball_room/tick
-execute if score #ball_room Ticking matches 1 unless entity @a[gamemode=!spectator,x=683,y=102,z=25,dx=15,dy=6,dz=31] unless entity @a[gamemode=!spectator,scores={Room=13}] unless entity @a[scores={LastRoom=13}] run function #luigis_mansion:room/hidden/ball_room/reset
-execute if entity @a[gamemode=!spectator,x=672,y=102,z=25,dx=10,dy=6,dz=31] run function luigis_mansion:room/hidden/storage_room/tick
-execute if score #storage_room Ticking matches 1 unless entity @a[gamemode=!spectator,x=672,y=102,z=25,dx=10,dy=6,dz=31] unless entity @a[gamemode=!spectator,scores={Room=14}] unless entity @a[scores={LastRoom=14}] run function #luigis_mansion:room/hidden/storage_room/reset
-execute if entity @a[gamemode=!spectator,x=665,y=102,z=-22,dx=6,dy=6,dz=12] run function luigis_mansion:room/hidden/washroom_1/tick
-execute if score #washroom_1 Ticking matches 1 unless entity @a[gamemode=!spectator,x=665,y=102,z=-22,dx=6,dy=6,dz=12] unless entity @a[gamemode=!spectator,scores={Room=15}] unless entity @a[scores={LastRoom=15}] run function #luigis_mansion:room/hidden/washroom_1/reset
-execute if entity @a[gamemode=!spectator,x=706,y=102,z=18,dx=12,dy=6,dz=18] run function luigis_mansion:room/hidden/fortune_tellers_room/tick
-execute if score #fortune_tellers_room Ticking matches 1 unless entity @a[gamemode=!spectator,x=706,y=102,z=18,dx=12,dy=6,dz=18] unless entity @a[gamemode=!spectator,scores={Room=16}] unless entity @a[scores={LastRoom=16}] run function #luigis_mansion:room/hidden/fortune_tellers_room/reset
-execute if entity @a[gamemode=!spectator,x=706,y=102,z=37,dx=12,dy=6,dz=19] run function luigis_mansion:room/hidden/mirror_room/tick
-execute if score #mirror_room Ticking matches 1 unless entity @a[gamemode=!spectator,x=706,y=102,z=37,dx=12,dy=6,dz=19] unless entity @a[gamemode=!spectator,scores={Room=17}] unless entity @a[scores={LastRoom=17}] run function #luigis_mansion:room/hidden/mirror_room/reset
 execute if entity @a[gamemode=!spectator,x=699,y=102,z=-41,dx=6,dy=6,dz=18] run function luigis_mansion:room/hidden/laundry_room/tick
 execute if score #laundry_room Ticking matches 1 unless entity @a[gamemode=!spectator,x=699,y=102,z=-41,dx=6,dy=6,dz=18] unless entity @a[gamemode=!spectator,scores={Room=18}] unless entity @a[scores={LastRoom=18}] run function #luigis_mansion:room/hidden/laundry_room/reset
 execute if entity @a[gamemode=!spectator,x=706,y=102,z=-41,dx=12,dy=6,dz=18] run function luigis_mansion:room/hidden/butlers_room/tick

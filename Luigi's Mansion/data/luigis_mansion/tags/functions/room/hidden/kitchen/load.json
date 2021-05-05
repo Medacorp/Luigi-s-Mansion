@@ -5,6 +5,8 @@
         "luigis_mansion:room/hidden/kitchen/load/haunted_objects",
         "luigis_mansion:room/hidden/kitchen/load/fire",
         "luigis_mansion:room/hidden/kitchen/load/closet",
-        "luigis_mansion:room/hidden/kitchen/load/vacuumable"
+        "luigis_mansion:room/hidden/kitchen/load/ice",
+        "luigis_mansion:room/hidden/kitchen/load/vacuumable",
+        "luigis_mansion:room/hidden/kitchen/load/water"
 	]
 }

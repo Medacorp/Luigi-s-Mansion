@@ -4,5 +4,3 @@ execute if score #boneyard Wave matches 6 run tag @e[tag=ghost,scores={Room=24},
 execute if score #boneyard Wave matches 5 run function luigis_mansion:room/hidden/boneyard/wave_6
 execute unless data storage luigis_mansion:data current_state.current_data.rooms.boneyard{cleared:1b} if entity @a[tag=!blackout] unless score #boneyard Wave matches 1.. run function luigis_mansion:room/hidden/boneyard/wave_1
 execute if entity @a[tag=blackout] unless score #boneyard Wave matches 1.. run function luigis_mansion:room/hidden/boneyard/blackout
-
-execute unless score #boneyard_water Searched matches 1 positioned 681 102 -25 run function luigis_mansion:spawn_entities/ghost/water_elemental_ghost

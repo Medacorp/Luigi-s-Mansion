@@ -1,5 +1,6 @@
-fill 674 102 39 674 103 39 minecraft:air
-clone 673 102 39 681 108 38 673 102 26 replace move
-setblock 674 102 38 minecraft:oak_slab[type=bottom]
-setblock 674 102 39 minecraft:andesite_slab[type=bottom]
-summon minecraft:item_frame 673 104 33 {Facing:5b,CustomName:'{"translate":"luigis_mansion:entity.poster"}',Fixed:1b,Invisible:1b,Silent:1b,Item:{id:"minecraft:filled_map",Count:1b,tag:{map:314}},Tags:["poster"]}
+fill 682 11 67 682 12 67 minecraft:air
+clone 681 11 67 689 17 66 681 11 54 replace move
+setblock 682 11 66 minecraft:oak_slab[type=bottom]
+setblock 682 11 67 minecraft:andesite_slab[type=bottom]
+summon minecraft:item_frame 681 13 61 {Facing:5b,CustomName:'{"translate":"luigis_mansion:entity.poster"}',Fixed:1b,Invisible:1b,Silent:1b,Item:{id:"minecraft:filled_map",Count:1b,tag:{map:314}},Tags:["poster"]}
+summon minecraft:item_frame 679 13 61 {Facing:4b,CustomName:'{"translate":"luigis_mansion:entity.poster"}',Fixed:1b,Invisible:1b,Silent:1b,Item:{id:"minecraft:filled_map",Count:1b,tag:{map:151}},Tags:["poster"]}

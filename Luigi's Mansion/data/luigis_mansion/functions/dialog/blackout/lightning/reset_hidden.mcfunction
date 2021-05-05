@@ -62,3 +62,4 @@ execute if score #sitting_room Ticking matches 1 run function #luigis_mansion:ro
 execute if score #guest_room Ticking matches 1 run function #luigis_mansion:room/hidden/guest_room/turn_lights/off
 execute if score #artists_studio Ticking matches 1 run function #luigis_mansion:room/hidden/artists_studio/turn_lights/off
 execute if score #secret_altar Ticking matches 1 run function #luigis_mansion:room/hidden/secret_altar/turn_lights/off
+tag @e[tag=toad] add remove_from_existence

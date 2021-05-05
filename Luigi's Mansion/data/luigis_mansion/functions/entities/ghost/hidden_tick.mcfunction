@@ -23,11 +23,3 @@ execute at @s positioned ~ ~0.01 ~ align y run teleport @s ~ ~ ~
 
 scoreboard players reset @s MirrorX
 scoreboard players reset @s MirrorZ
-
-data modify entity @s ArmorItems[3].id set value "minecraft:diamond_pickaxe"
-data modify entity @s HandItems[0].id set value "minecraft:diamond_pickaxe"
-data modify entity @s HandItems[1].id set value "minecraft:diamond_pickaxe"
-data modify entity @s CustomNameVisible set value 1b
-execute as @e[tag=this_model] run data modify entity @s ArmorItems[3].id set value "minecraft:diamond_pickaxe"
-execute as @e[tag=this_model] run data modify entity @s HandItems[0].id set value "minecraft:diamond_pickaxe"
-execute as @e[tag=this_model] run data modify entity @s HandItems[1].id set value "minecraft:diamond_pickaxe"

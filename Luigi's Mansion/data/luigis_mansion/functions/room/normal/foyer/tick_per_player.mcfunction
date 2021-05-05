@@ -11,4 +11,4 @@ tag @s[x=751.0,y=11,z=9.0,distance=4..5,tag=chance_check] remove chance_check
 execute if data storage luigis_mansion:data {entered_mansion:0b} run playsound luigis_mansion:music.mansion.first_entrance music @s ~ ~ ~ 1000
 execute if data storage luigis_mansion:data {entered_mansion:0b} run scoreboard players set @s Music 240
 data modify storage luigis_mansion:data {} merge value {entered_mansion:1b}
-execute if entity @s[x=739.5,y=10,z=15.5,distance=..3] if data storage luigis_mansion:data current_state.current_data.rooms.wardrobe_room{cleared:1b} unless data storage luigis_mansion:data current_state.current_data.technical_data{portrait_ghosts:1b} run scoreboard players set @a GBHCall 1
+execute if entity @s[x=739.5,y=20,z=15.5,distance=..3] if data storage luigis_mansion:data current_state.current_data.rooms.wardrobe_room{cleared:1b} unless data storage luigis_mansion:data current_state.current_data.technical_data{portrait_ghosts:1b} run scoreboard players set @a GBHCall 1

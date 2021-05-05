@@ -81,12 +81,12 @@ teleport @s[scores={Room=10,HallwaySection=1}] 716 11 21
 teleport @s[scores={Room=10,HallwaySection=2}] 699 11 34
 teleport @s[scores={Room=10,HallwaySection=3}] 682 11 24
 teleport @s[scores={Room=10,HallwaySection=4}] 674 11 7
+teleport @s[scores={Room=12}] 654 11 -7
+teleport @s[scores={Room=13}] 704.0 11 69.0
+teleport @s[scores={Room=14}] 685 11 69.0
+teleport @s[scores={Room=15}] 664 11 -26
+teleport @s[scores={Room=16}] 741 11 44
 
-teleport @s[scores={Room=12}] 659 102 -16
-teleport @s[scores={Room=13}] 691.0 102 41.0
-teleport @s[scores={Room=14}] 677 102 41.0
-teleport @s[scores={Room=15}] 668 102 -16
-teleport @s[scores={Room=16}] 712 102 27
 teleport @s[scores={Room=17}] 712 102 47.0
 teleport @s[scores={Room=18}] 702 102 -32
 teleport @s[scores={Room=19}] 712 102 -32

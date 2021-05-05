@@ -2,5 +2,3 @@ execute if score #mirror_room Wave matches 2 unless entity @e[tag=ghost,scores={
 execute if score #mirror_room Wave matches 1 unless entity @e[tag=ghost,scores={Room=17},tag=!optional_ghost] run function luigis_mansion:room/hidden/mirror_room/wave_2
 execute unless data storage luigis_mansion:data current_state.current_data.rooms.mirror_room{cleared:1b} if entity @a[tag=!blackout] unless score #mirror_room Wave matches 1.. if entity @a[gamemode=!spectator,x=708,y=102,z=40,dx=9,dy=6,dz=17,limit=1] unless entity @a[gamemode=!spectator,x=712.5,y=102,z=40.5,distance=..0.7,limit=1] run function luigis_mansion:room/hidden/mirror_room/wave_1
 execute if entity @a[tag=blackout] unless score #mirror_room Wave matches 1.. run function luigis_mansion:room/hidden/mirror_room/blackout
-
-execute unless score #mirror_room_fire Searched matches 1 positioned 717 105.5 55 run function luigis_mansion:spawn_entities/ghost/fire_elemental_ghost

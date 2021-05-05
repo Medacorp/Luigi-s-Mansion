@@ -1,1 +1,1 @@
-fill 691 107 47 690 107 48 minecraft:air
+fill 704 16 75 703 16 76 minecraft:air

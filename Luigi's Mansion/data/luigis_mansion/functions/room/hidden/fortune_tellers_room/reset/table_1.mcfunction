@@ -1,4 +1,4 @@
-data merge block 707 102 20 {Items:[]}
-data merge block 707 102 19 {Items:[]}
-execute positioned 707 104 19 run function luigis_mansion:blocks/unlit_candles
+data merge block 736 11 37 {Items:[]}
+data merge block 736 11 36 {Items:[]}
+execute positioned 736 13 36 run function luigis_mansion:blocks/unlit_candles
 scoreboard players reset #fortune_tellers_room_table_1

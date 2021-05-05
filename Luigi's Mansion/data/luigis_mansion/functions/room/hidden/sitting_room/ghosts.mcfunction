@@ -4,6 +4,3 @@ execute if score #sitting_room Wave matches 1 if score #sitting_room_candle_3 Se
 execute if score #sitting_room Wave matches 1..2 if block 707 111 32 minecraft:air run scoreboard players set #sitting_room Wave -1
 execute unless data storage luigis_mansion:data current_state.current_data.rooms.sitting_room{cleared:1b} if entity @a[tag=!blackout] unless score #sitting_room Wave matches -1.. unless entity @a[x=707.5,y=111,z=32.5,distance=..2,limit=1] run function luigis_mansion:room/hidden/sitting_room/wave_1
 execute if entity @a[tag=blackout] unless score #sitting_room Wave matches -1.. run function luigis_mansion:room/hidden/sitting_room/blackout
-
-execute unless score #sitting_room_candle_3 Searched matches 1 positioned 713 112 27 run function luigis_mansion:spawn_entities/ghost/fire_elemental_ghost
-execute unless score #sitting_room_water Searched matches 1 positioned 717 112 20 run function luigis_mansion:spawn_entities/ghost/water_elemental_ghost

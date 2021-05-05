@@ -1,0 +1,1 @@
+execute positioned 717 112 20 run function luigis_mansion:spawn_entities/ghost/fire_elemental_medal

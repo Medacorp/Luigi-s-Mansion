@@ -4,6 +4,3 @@ execute if score #graveyard Wave matches 2 unless entity @e[tag=ghost,scores={Ro
 execute if score #graveyard Wave matches 1 unless entity @e[tag=ghost,scores={Room=25},tag=!optional_ghost] run function luigis_mansion:room/normal/graveyard/wave_2
 execute unless data storage luigis_mansion:data current_state.current_data.rooms.graveyard{cleared:1b} if entity @a[tag=!blackout] unless score #graveyard Wave matches 1.. run function luigis_mansion:room/normal/graveyard/wave_1
 execute if entity @a[tag=blackout] unless score #graveyard Wave matches 1.. run function luigis_mansion:room/normal/graveyard/blackout
-
-execute unless score #graveyard_fire_1 Searched matches 1 positioned 652 105 52 run function luigis_mansion:spawn_entities/ghost/fire_elemental_ghost
-execute unless score #graveyard_fire_2 Searched matches 1 positioned 652 105 43 run function luigis_mansion:spawn_entities/ghost/fire_elemental_ghost

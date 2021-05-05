@@ -9,9 +9,12 @@ scoreboard objectives add ClairvoyaChoice trigger
 scoreboard objectives add ClairvoyaSpoke dummy
 scoreboard objectives add Constants dummy
 scoreboard objectives add Damage dummy
+scoreboard objectives add DamagePitch dummy
+scoreboard objectives add DamagePitchTimer dummy
 scoreboard objectives add Dialog dummy
 scoreboard objectives add Distance dummy
 scoreboard objectives add Element dummy
+scoreboard objectives add ElementalNr dummy
 scoreboard objectives add EGaddGallChoice trigger
 scoreboard objectives add EGaddGPRChoice trigger
 scoreboard objectives add EGaddLabChoice trigger

@@ -9,7 +9,6 @@ execute unless score @s ReflectionNr matches 1.. run scoreboard players add @e[t
 execute unless score @s ReflectionNr matches 1.. run scoreboard players operation @s ReflectionNr = @e[tag=this_reflection,tag=new,limit=1] ReflectionNr
 tag @e[tag=this_reflection,limit=1] remove new
 tag @e[tag=this_reflection,limit=1] add found_owner
-tag @e[tag=this_reflection,limit=1] add found_owner_2
 
 data modify entity @e[tag=this_reflection,limit=1] Small set from entity @s Small
 data modify entity @e[tag=this_reflection,limit=1] Marker set from entity @s Marker

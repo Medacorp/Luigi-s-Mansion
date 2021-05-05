@@ -34,12 +34,12 @@ scoreboard players set @s[x=681,y=11,z=4,dx=5,dy=6,dz=6] RoomSection 13
 scoreboard players set @s[x=666,y=11,z=2,dx=11,dy=6,dz=8] RoomSection 14
 
 # ball room
-scoreboard players set @s[x=683,y=102,z=25,dx=15,dy=6,dz=11] RoomSection 1
-scoreboard players set @s[x=683,y=102,z=17,dx=15,dy=6,dz=19] RoomSection 2
+scoreboard players set @s[x=696,y=11,z=53,dx=15,dy=6,dz=11] RoomSection 1
+scoreboard players set @s[x=696,y=11,z=45,dx=15,dy=6,dz=19] RoomSection 2
 
 # storage room
-scoreboard players set @s[x=672,y=102,z=32,dx=10,dy=6,dz=24] RoomSection 1
-scoreboard players set @s[x=672,y=102,z=25,dx=10,dy=6,dz=6] RoomSection 2
+scoreboard players set @s[x=680,y=11,z=60,dx=10,dy=6,dz=24] RoomSection 1
+scoreboard players set @s[x=680,y=11,z=53,dx=10,dy=6,dz=6] RoomSection 2
 
 # dining room
 scoreboard players set @s[x=686,y=102,z=3,dx=12,dy=6,dz=14] RoomSection 1

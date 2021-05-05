@@ -2,5 +2,3 @@ execute if score #butlers_room Wave matches 1 unless entity @e[tag=ghost,scores=
 execute unless data storage luigis_mansion:data current_state.current_data.rooms.butlers_room{cleared:1b} if entity @a[tag=!blackout] unless score #butlers_room Wave matches 1.. run function luigis_mansion:room/hidden/butlers_room/wave_1
 execute if entity @a[tag=blackout] unless score #butlers_room Wave matches 1.. run function luigis_mansion:room/hidden/butlers_room/blackout
 function luigis_mansion:room/hidden/butlers_room/load_vacuumable_ghosts
-
-execute unless score #butlers_room_candle Searched matches 1 positioned 717 103 -37 run function luigis_mansion:spawn_entities/ghost/fire_elemental_ghost

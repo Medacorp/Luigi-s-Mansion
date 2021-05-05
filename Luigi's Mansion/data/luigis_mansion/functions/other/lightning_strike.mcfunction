@@ -1,4 +1,2 @@
 summon minecraft:marker ~ ~ ~ {Tags:["lightning"]}
-spreadplayers ~ ~ 1 200 false @e[tag=lightning,type=minecraft:marker,limit=1]
-execute at @e[tag=lightning,type=minecraft:marker,limit=1] run summon minecraft:lightning_bolt ~ ~ ~
-kill @e[tag=lightning,type=minecraft:marker,limit=1]
+execute as @e[tag=lightning,type=minecraft:marker] run function luigis_mansion:other/lightning_strike_marker

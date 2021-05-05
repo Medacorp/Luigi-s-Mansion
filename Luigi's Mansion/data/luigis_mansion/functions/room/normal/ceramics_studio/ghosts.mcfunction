@@ -2,5 +2,3 @@ execute if score #ceramics_studio Wave matches 1 unless entity @e[tag=ghost,scor
 execute unless data storage luigis_mansion:data current_state.current_data.rooms.ceramics_studio{cleared:1b} if entity @a[tag=!blackout] unless score #ceramics_studio Wave matches 1.. run function luigis_mansion:room/normal/ceramics_studio/wave_1
 execute if score #ceramics_studio Wave matches 100 unless entity @e[tag=ghost,scores={Room=52},tag=!optional_ghost] run function luigis_mansion:room/normal/ceramics_studio/blackout_clear
 execute unless data storage luigis_mansion:data current_state.current_data.rooms.ceramics_studio{cleared:1b} if entity @a[tag=blackout] unless score #ceramics_studio Wave matches 1.. run function luigis_mansion:room/normal/ceramics_studio/blackout
-
-execute unless score #ceramics_studio_ice Searched matches 1 positioned 707 30 62 run function luigis_mansion:spawn_entities/ghost/ice_elemental_ghost

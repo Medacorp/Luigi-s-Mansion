@@ -1,1 +1,1 @@
-execute unless entity @e[type=minecraft:marker,distance=..0.7,tag=door,limit=1] run summon minecraft:marker ~ ~ ~ {Tags:["door"],CustomName:'{"translate":"luigis_mansion:entity.door"}'}
+execute unless entity @e[type=minecraft:marker,distance=..0.7,tag=door,limit=1] run summon minecraft:marker ~ ~0.01 ~ {Tags:["door"],CustomName:'{"translate":"luigis_mansion:entity.door"}'}

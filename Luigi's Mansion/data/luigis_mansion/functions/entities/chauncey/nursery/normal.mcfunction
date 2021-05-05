@@ -20,8 +20,8 @@ execute if entity @s[scores={Dialog=51}] run function luigis_mansion:room/normal
 tag @s[scores={Dialog=51}] remove wake_up
 tag @s[scores={Dialog=51}] add yawn
 execute if entity @s[scores={Dialog=51}] run teleport @s 748 21 70
-execute if entity @s[scores={Dialog=51..169}] run scoreboard players set @a[tag=same_room,scores={MusicType=11}] Music 0
-execute if entity @s[scores={Dialog=51..169}] run scoreboard players set @a[tag=same_room,scores={MusicType=11}] MusicType 26
+execute if entity @s[scores={Dialog=51..169}] run scoreboard players set @a[tag=same_room,scores={MusicType=7}] Music 0
+execute if entity @s[scores={Dialog=51..169}] run scoreboard players set @a[tag=same_room,scores={MusicType=7}] MusicType 26
 execute if entity @s[scores={Dialog=52..},tag=!attack,tag=!vanish] facing entity @p[gamemode=!spectator] feet rotated ~ 0 run teleport @s ~ ~ ~ ~ ~
 execute if entity @s[scores={Dialog=90}] run playsound luigis_mansion:entity.chauncey.yawn hostile @a[tag=same_room] ~ ~ ~ 1
 tag @s[scores={Dialog=130}] remove yawn

@@ -1,4 +1,4 @@
-summon minecraft:armor_stand ~ ~ ~ {CustomName:'{"translate":"luigis_mansion:entity.lydia"}',Invisible:1b,NoGravity:1b,CustomNameVisible:0b,Invulnerable:1b,ArmorItems:[{},{},{},{}],HandItems:[{},{}],Pose:{RightArm:[0.0f,0.0f,0.01f],LeftArm:[0.0f,0.0f,0.01f],Head:[0.0f,0.0f,0.01f]},Tags:["lydia","portrait_ghost","pearl_dropper","ghost","no_y_sync","this_entity"],DisabledSlots:2039583}
+summon minecraft:armor_stand ~ ~ ~ {CustomName:'{"translate":"luigis_mansion:entity.lydia"}',Invisible:1b,NoGravity:1b,CustomNameVisible:0b,Invulnerable:1b,ArmorItems:[{},{},{},{}],HandItems:[{},{}],Pose:{RightArm:[0.0f,0.0f,0.01f],LeftArm:[0.0f,0.0f,0.01f],Head:[0.0f,0.0f,0.01f]},Tags:["lydia","portrait_ghost","pearl_dropper","ghost","this_entity"],DisabledSlots:2039583}
 summon minecraft:armor_stand ~ ~ ~ {CustomName:'{"translate":"luigis_mansion:entity.lydia"}',Invisible:1b,NoGravity:1b,CustomNameVisible:0b,Invulnerable:1b,ArmorItems:[{},{},{},{}],Pose:{Head:[0.0f,0.0f,0.01f]},Tags:["lydia_body","this_entity"],DisabledSlots:2039583}
 teleport @e[tag=lydia,tag=this_entity,limit=1] ~ ~ ~ ~ ~
 teleport @e[tag=lydia_body,tag=this_entity,limit=1] ~ ~ ~ ~ ~

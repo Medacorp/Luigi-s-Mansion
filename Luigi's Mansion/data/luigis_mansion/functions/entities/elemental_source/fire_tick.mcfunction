@@ -1,0 +1,3 @@
+execute if entity @s[tag=!no_check] if block ~ ~ ~ minecraft:redstone_wall_torch if entity @a[gamemode=!spectator,tag=vacuuming,tag=same_room,distance=..5,limit=1] run function luigis_mansion:spawn_entities/ghost/fire_elemental_ghost
+execute if entity @s[tag=!no_check] unless block ~ ~ ~ minecraft:redstone_wall_torch if entity @a[gamemode=!spectator,tag=same_room,distance=..5,limit=1] run function luigis_mansion:spawn_entities/ghost/fire_elemental_ghost
+execute if entity @s[tag=no_check] run function luigis_mansion:spawn_entities/ghost/fire_elemental_ghost

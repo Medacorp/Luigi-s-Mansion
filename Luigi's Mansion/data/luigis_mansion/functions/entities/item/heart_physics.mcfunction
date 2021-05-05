@@ -27,13 +27,13 @@ execute at @s positioned ~ ~1.4 ~ align y unless block ~ ~ ~ #luigis_mansion:ite
 execute at @s run function luigis_mansion:animations/money/rotate
 
 tag @s remove in_wall
-execute at @s unless block ~ ~1.4 ~0.3 #luigis_mansion:items_ignore run teleport @s ~ ~ ~-0.3
-execute at @s unless block ~ ~1.4 ~-0.3 #luigis_mansion:items_ignore run teleport @s ~ ~ ~0.3
-execute at @s unless block ~0.3 ~1.4 ~ #luigis_mansion:items_ignore run teleport @s ~0.3 ~ ~
-execute at @s unless block ~-0.3 ~1.4 ~ #luigis_mansion:items_ignore run teleport @s ~-0.3 ~ ~
-execute at @s unless block ~0.3 ~1.4 ~0.3 #luigis_mansion:items_ignore run teleport @s ~-0.3 ~ ~-0.3
-execute at @s unless block ~0.3 ~1.4 ~-0.3 #luigis_mansion:items_ignore run teleport @s ~-0.3 ~ ~0.3
-execute at @s unless block ~-0.3 ~1.4 ~0.3 #luigis_mansion:items_ignore run teleport @s ~0.3 ~ ~-0.3
-execute at @s unless block ~-0.3 ~1.4 ~-0.3 #luigis_mansion:items_ignore run teleport @s ~0.3 ~ ~0.3
+execute at @s unless block ~ ~1.4 ~0.3 #luigis_mansion:items_ignore if block ~ ~1.4 ~-0.3 #luigis_mansion:items_ignore run teleport @s ~ ~ ~-0.3
+execute at @s unless block ~ ~1.4 ~-0.3 #luigis_mansion:items_ignore if block ~ ~1.4 ~0.3 #luigis_mansion:items_ignore run teleport @s ~ ~ ~0.3
+execute at @s unless block ~0.3 ~1.4 ~ #luigis_mansion:items_ignore if block ~-0.3 ~1.4 ~ #luigis_mansion:items_ignore run teleport @s ~0.3 ~ ~
+execute at @s unless block ~-0.3 ~1.4 ~ #luigis_mansion:items_ignore if block ~0.3 ~1.4 ~ #luigis_mansion:items_ignore run teleport @s ~-0.3 ~ ~
+execute at @s unless block ~0.3 ~1.4 ~0.3 #luigis_mansion:items_ignore if block ~-0.3 ~1.4 ~-0.3 #luigis_mansion:items_ignore run teleport @s ~-0.3 ~ ~-0.3
+execute at @s unless block ~0.3 ~1.4 ~-0.3 #luigis_mansion:items_ignore if block ~-0.3 ~1.4 ~0.3 #luigis_mansion:items_ignore run teleport @s ~-0.3 ~ ~0.3
+execute at @s unless block ~-0.3 ~1.4 ~0.3 #luigis_mansion:items_ignore if block ~0.3 ~1.4 ~-0.3 #luigis_mansion:items_ignore run teleport @s ~0.3 ~ ~-0.3
+execute at @s unless block ~-0.3 ~1.4 ~-0.3 #luigis_mansion:items_ignore if block ~0.3 ~1.4 ~0.3 #luigis_mansion:items_ignore run teleport @s ~0.3 ~ ~0.3
 
 execute at @s positioned ~ ~1.4 ~ if entity @a[gamemode=!spectator,distance=..0.7] run tag @s add picked_up

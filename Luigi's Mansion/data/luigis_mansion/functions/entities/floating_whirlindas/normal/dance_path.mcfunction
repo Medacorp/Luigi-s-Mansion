@@ -32,7 +32,7 @@ execute if score @s PathStep matches 3 run summon minecraft:marker 704.0 11 -44.
 execute if score @s PathStep matches 4 run summon minecraft:marker 700 11 -47 {Tags:["target"]}
 execute if score @s PathStep matches 5 run summon minecraft:marker 704 11 -50.0 {Tags:["target"]}
 execute if score @s PathStep matches 6 run summon minecraft:marker 705 11 -47 {Tags:["target"]}
-execute if score @s PathStep matches 7 run summon minecraft:marker 705.0 11 -44.0 {Tags:["target"]}
+execute if score @s PathStep matches 7 run summon minecraft:marker 704.0 11 -44.0 {Tags:["target"]}
 execute if score @s PathStep matches 8 run summon minecraft:marker 705 11 -42 {Tags:["target"]}
 execute if score @s PathStep matches 9 run summon minecraft:marker 708 11 -45 {Tags:["target"]}
 execute if score @s PathStep matches 10 run summon minecraft:marker 707.0 11 -47.0 {Tags:["target"]}
@@ -54,7 +54,7 @@ execute if score @s PathStep matches 25 run summon minecraft:marker 707.0 11 -60
 execute if score @s PathStep matches 26 run summon minecraft:marker 704.0 11 -64 {Tags:["target"]}
 execute if score @s PathStep matches 27 run summon minecraft:marker 699 11 -56 {Tags:["target"]}
 scoreboard players operation #temp Move = @s Move
-execute facing entity @e[tag=target,limit=1] feet as @e[tag=partner,limit=1] positioned as @s run function luigis_mansion:entities/ghost/move_forward
+execute facing entity @e[tag=target,limit=1] feet as @e[tag=this_model,tag=floating_whirlindas_female,limit=1] positioned as @s run function luigis_mansion:entities/ghost/move_forward
 scoreboard players operation #temp Move = @s Move
 execute facing entity @e[tag=target,limit=1] feet run function luigis_mansion:entities/ghost/move_forward
 kill @e[tag=target,limit=1,type=minecraft:marker]
