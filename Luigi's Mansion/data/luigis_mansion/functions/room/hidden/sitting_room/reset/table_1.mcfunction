@@ -1,3 +1,3 @@
-data merge block 717 111 19 {Items:[]}
-data merge block 717 112 19 {Items:[]}
+data merge block 746 20 36 {Items:[]}
+data merge block 746 21 36 {Items:[]}
 scoreboard players reset #sitting_room_table_1

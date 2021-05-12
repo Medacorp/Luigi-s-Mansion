@@ -1,3 +1,3 @@
-data merge block 713 102 -19 {Items:[]}
-data merge block 712 102 -19 {Items:[]}
+data merge block 744 11 -31 {Items:[]}
+data merge block 743 11 -31 {Items:[]}
 scoreboard players reset #hidden_room_chest_1

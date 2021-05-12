@@ -1,6 +1,6 @@
-execute positioned 691 120 34 run function luigis_mansion:spawn_entities/ghost/gold_ghost
-execute positioned 691 120 33 run function luigis_mansion:spawn_entities/ghost/gold_ghost
-execute positioned 691 120 35 run function luigis_mansion:spawn_entities/ghost/gold_ghost
-execute positioned 692 120 33 run function luigis_mansion:spawn_entities/ghost/gold_ghost
-execute positioned 691 120 36 run function luigis_mansion:spawn_entities/ghost/gold_ghost
+execute positioned 696 29 73 run function luigis_mansion:spawn_entities/ghost/gold_ghost
+execute positioned 696 29 72 run function luigis_mansion:spawn_entities/ghost/gold_ghost
+execute positioned 696 29 74 run function luigis_mansion:spawn_entities/ghost/gold_ghost
+execute positioned 697 29 72 run function luigis_mansion:spawn_entities/ghost/gold_ghost
+execute positioned 696 29 75 run function luigis_mansion:spawn_entities/ghost/gold_ghost
 scoreboard players set #artists_studio Wave 2

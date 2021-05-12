@@ -1,4 +1,4 @@
-execute positioned 657 105 55 run function luigis_mansion:blocks/dust
+execute positioned 641 14 75 run function luigis_mansion:blocks/dust
 scoreboard players set #rec_room_swords_3 Searched 1
-tag @e[x=657.5,y=105,z=55.5,distance=..0.7,tag=hidden_boo] add spawn
-tag @e[x=657.5,y=105,z=55.5,distance=..0.7,tag=ghost,tag=hidden] add spawn
+tag @e[x=641.5,y=14,z=75.5,distance=..0.7,tag=hidden_boo] add spawn
+tag @e[x=641.5,y=14,z=75.5,distance=..0.7,tag=ghost,tag=hidden] add spawn

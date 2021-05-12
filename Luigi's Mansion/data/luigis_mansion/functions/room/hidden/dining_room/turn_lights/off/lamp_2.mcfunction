@@ -1,1 +1,1 @@
-setblock 686 105 -2 minecraft:air
+setblock 698 14 -33 minecraft:air

@@ -1,2 +1,4 @@
 execute unless data storage luigis_mansion:data current_state.current_data.rooms.secret_altar{cleared:1b} positioned 635 94 33 run function luigis_mansion:spawn_entities/mario/panic
+execute unless data storage luigis_mansion:data current_state.current_data.rooms.secret_altar{cleared:1b} run setblock 635 94 49 minecraft:rail[shape=east_west]
+execute unless data storage luigis_mansion:data current_state.current_data.rooms.secret_altar{cleared:1b} run setblock 635 94 49 minecraft:moving_piston
 execute if data storage luigis_mansion:data current_state.current_data.rooms.secret_altar{cleared:1b} positioned 635 94 33 run function luigis_mansion:spawn_entities/mario/calm

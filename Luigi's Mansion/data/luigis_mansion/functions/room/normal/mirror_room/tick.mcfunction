@@ -8,10 +8,8 @@ execute as @a[gamemode=!spectator,x=734,y=10,z=-63,dx=14,dy=8,dz=21] run functio
 
 function #luigis_mansion:room/normal/mirror_room/interactions/room
 
-execute if block 736 13 -61 minecraft:brewing_stand[has_bottle_0=true,has_bottle_1=true,has_bottle_2=true] run setblock 734 13 -61 minecraft:brewing_stand[has_bottle_0=true,has_bottle_1=true,has_bottle_2=true]
-execute if block 736 13 -61 minecraft:brewing_stand[has_bottle_0=false,has_bottle_1=false,has_bottle_2=false] run setblock 734 13 -61 minecraft:brewing_stand[has_bottle_0=false,has_bottle_1=false,has_bottle_2=false]
-execute if block 736 13 -44 minecraft:brewing_stand[has_bottle_0=true,has_bottle_1=true,has_bottle_2=true] run setblock 734 13 -44 minecraft:brewing_stand[has_bottle_0=true,has_bottle_1=true,has_bottle_2=true]
-execute if block 736 13 -44 minecraft:brewing_stand[has_bottle_0=false,has_bottle_1=false,has_bottle_2=false] run setblock 734 13 -44 minecraft:brewing_stand[has_bottle_0=false,has_bottle_1=false,has_bottle_2=false]
+clone 736 13 -61 736 13 -61 734 13 -61
+clone 736 13 -44 736 13 -44 734 13 -44
 
 execute if block 736 13 -61 minecraft:brewing_stand[has_bottle_0=true,has_bottle_1=true,has_bottle_2=true] if block 736 13 -44 minecraft:brewing_stand[has_bottle_0=true,has_bottle_1=true,has_bottle_2=true] run function luigis_mansion:room/normal/mirror_room/remove_blockade
 

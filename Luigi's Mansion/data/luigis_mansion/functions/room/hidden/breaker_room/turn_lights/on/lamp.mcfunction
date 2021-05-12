@@ -1,1 +1,2 @@
-setblock 692 97 46 minecraft:stone_button[face=ceiling,powered=true]
+setblock 693 6 67 minecraft:stone_button[face=ceiling,powered=true]
+setblock 705 6 67 minecraft:stone_button[face=ceiling,powered=true]

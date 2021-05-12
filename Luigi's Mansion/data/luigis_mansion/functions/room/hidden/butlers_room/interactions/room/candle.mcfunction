@@ -1,4 +1,4 @@
-execute if score #butlers_room_candle Searched matches 1 run setblock 717 103 -37 minecraft:redstone_torch[lit=false]
-execute if score #butlers_room_candle Searched matches 1 run tag @e[x=717.5,y=103,z=-36.5,tag=elemental_source,distance=..0.7,limit=1] remove enabled
-execute unless score #butlers_room_candle Searched matches 1 run setblock 717 103 -37 minecraft:redstone_torch[lit=true]
-execute unless score #butlers_room_candle Searched matches 1 run tag @e[x=717.5,y=103,z=-36.5,tag=elemental_source,distance=..0.7,limit=1] add enabled
+execute if score #butlers_room_candle Searched matches 1 run setblock 749 12 -53 minecraft:redstone_torch[lit=false]
+execute if score #butlers_room_candle Searched matches 1 run tag @e[x=749.5,y=12,z=-52.5,tag=elemental_source,distance=..0.7,limit=1] remove enabled
+execute unless score #butlers_room_candle Searched matches 1 run setblock 749 12 -53 minecraft:redstone_torch[lit=true]
+execute unless score #butlers_room_candle Searched matches 1 run tag @e[x=749.5,y=12,z=-52.5,tag=elemental_source,distance=..0.7,limit=1] add enabled

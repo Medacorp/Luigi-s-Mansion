@@ -28,6 +28,7 @@ execute if score #temp Searched matches -1..0 run setblock 682 120 28 minecraft:
 execute if score #temp Searched matches -1..0 run setblock 682 121 28 minecraft:oak_door[open=false,facing=east,half=upper,hinge=left,powered=true]
 
 execute if score #temp Searched matches 1..2 as @a[x=682.0,y=120,z=28.0,dx=0,dy=1,dz=0] at @s run teleport @s 725 29 44
+execute if score #temp Searched matches 1..2 as @a[x=724.0,y=29,z=44.0,dx=0,dy=1,dz=0] run scoreboard players set @s HallwayNoise 0
 execute if score #temp Searched matches 1..2 as @a[x=724.0,y=29,z=44.0,dx=0,dy=1,dz=0] at @s run teleport @s 681 120 28
 
 scoreboard players reset #temp Searched

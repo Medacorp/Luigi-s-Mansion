@@ -1,1 +1,1 @@
-execute if entity @s[x=697.0,y=105,z=-26.0,dx=0,dy=1,dz=2] run tellraw @a {"translate":"chat.type.text","with":[{"selector":"@p[tag=scanning_player,gamemode=!spectator]","color":"green"},{"translate":"luigis_mansion:message.player.scan_furniture.91"}]}
+execute if entity @s[x=709.0,y=14,z=-61.0,dx=0,dy=1,dz=2] run tellraw @a {"translate":"chat.type.text","with":[{"selector":"@p[tag=scanning_player,gamemode=!spectator]","color":"green"},{"translate":"luigis_mansion:message.player.scan_furniture.91"}]}

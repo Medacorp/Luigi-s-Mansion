@@ -1,5 +1,5 @@
-setblock 682 102 15 minecraft:oak_trapdoor[facing=north,half=bottom,open=true]
-setblock 681 102 15 minecraft:oak_trapdoor[facing=north,half=bottom,open=true]
-data merge block 682 102 16 {Items:[]}
-data merge block 681 102 16 {Items:[]}
+setblock 684 11 -18 minecraft:oak_trapdoor[facing=north,half=bottom,open=true]
+setblock 683 11 -18 minecraft:oak_trapdoor[facing=north,half=bottom,open=true]
+data merge block 684 11 -17 {Items:[]}
+data merge block 683 11 -17 {Items:[]}
 scoreboard players reset #projection_room_closet

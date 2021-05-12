@@ -2,4 +2,4 @@ execute unless entity @s[scores={MusicType=8}] unless entity @s[scores={MusicTyp
 title @s[tag=!seen_room_name] title {"translate":"luigis_mansion:location.roof"}
 tag @s add seen_room_name
 
-execute at @s[x=685,y=135,z=-22,dx=2,dy=0,dz=2] run teleport @s 695 20 -63
+teleport @s[x=685,y=135,z=-22,dx=2,dy=0,dz=2] 695 20 -63

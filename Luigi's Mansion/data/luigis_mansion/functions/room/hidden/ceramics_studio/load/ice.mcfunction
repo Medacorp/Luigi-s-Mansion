@@ -1,1 +1,1 @@
-execute positioned 693 121 -22 run function luigis_mansion:spawn_entities/ghost/ice_elemental_source
+execute positioned 707 30 -47 run function luigis_mansion:spawn_entities/ghost/ice_elemental_source

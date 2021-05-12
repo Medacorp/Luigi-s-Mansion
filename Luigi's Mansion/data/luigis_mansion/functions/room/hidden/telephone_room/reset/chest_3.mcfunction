@@ -1,3 +1,3 @@
-data merge block 715 120 21 {Items:[]}
-data merge block 716 120 21 {Items:[]}
+data merge block 753 29 11 {Items:[]}
+data merge block 754 29 11 {Items:[]}
 scoreboard players reset #telephone_room_chest_3

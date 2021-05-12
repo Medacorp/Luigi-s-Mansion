@@ -1,4 +1,4 @@
-execute positioned 707.0 120 -37.0 run function luigis_mansion:blocks/dust
+execute positioned 752.0 29 -60.0 run function luigis_mansion:blocks/dust
 scoreboard players set #armory_crate_3 Searched 1
-tag @e[x=706.5,y=120,z=-36.5,distance=..0.7,tag=ghost,tag=hidden] add spawn
-tag @e[x=706.5,y=120,z=-36.5,distance=..0.7,tag=hidden_boo] add spawn
+tag @e[x=751.5,y=29,z=-59.5,distance=..0.7,tag=ghost,tag=hidden] add spawn
+tag @e[x=751.5,y=29,z=-59.5,distance=..0.7,tag=hidden_boo] add spawn

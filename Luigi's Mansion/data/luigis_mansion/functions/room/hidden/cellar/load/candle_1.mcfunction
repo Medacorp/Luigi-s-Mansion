@@ -1,1 +1,1 @@
-execute positioned 716 96 38 run function luigis_mansion:blocks/lit_candles
+execute positioned 745 5 59 run function luigis_mansion:blocks/lit_candles

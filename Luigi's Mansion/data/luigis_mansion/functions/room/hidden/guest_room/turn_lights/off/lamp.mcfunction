@@ -1,2 +1,4 @@
-execute if block 712 112 47 minecraft:redstone_lamp run fill 712 111 47 713 111 46 minecraft:air
-execute unless block 712 112 47 minecraft:redstone_lamp run fill 712 117 47 713 117 46 minecraft:air
+execute if block 741 21 68 minecraft:redstone_lamp run fill 741 20 68 742 20 67 minecraft:air
+execute if block 741 21 68 minecraft:redstone_lamp run fill 729 20 68 728 20 67 minecraft:air
+execute unless block 741 21 68 minecraft:redstone_lamp run fill 741 26 68 742 26 67 minecraft:air
+execute unless block 741 21 68 minecraft:redstone_lamp run fill 729 26 68 728 26 67 minecraft:air

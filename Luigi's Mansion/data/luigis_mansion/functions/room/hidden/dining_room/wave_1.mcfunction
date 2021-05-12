@@ -1,12 +1,12 @@
-execute unless data storage luigis_mansion:data current_state.current_data.money_spawned{dining_room_speedy_spirit:1b} positioned 687 102 -6 run function luigis_mansion:spawn_entities/ghost/speedy_spirit
-execute positioned 694 102 15 run function luigis_mansion:spawn_entities/banana_peel
-execute positioned 695 102 12 run function luigis_mansion:spawn_entities/banana_peel
-execute positioned 696 102 6 run function luigis_mansion:spawn_entities/banana_peel
-execute positioned 695 102 -5 run function luigis_mansion:spawn_entities/banana_peel
-execute positioned 696 102 -9 run function luigis_mansion:spawn_entities/banana_peel
-execute positioned 691 102 -8 run function luigis_mansion:spawn_entities/banana_peel
-execute positioned 690 102 3 rotated -90 0 run function luigis_mansion:spawn_entities/portrait_ghost/mr_luggs
-execute positioned 688 102 -10 run function luigis_mansion:spawn_entities/ghost/waiter
-tag @e[x=688.5,y=102,z=-9.5,distance=..1,tag=waiter] add kitchen_waiter
-execute positioned 692 102 16 run function luigis_mansion:spawn_entities/ghost/waiter
+execute unless data storage luigis_mansion:data current_state.current_data.money_spawned{dining_room_speedy_spirit:1b} positioned 699 11 -37 run function luigis_mansion:spawn_entities/ghost/speedy_spirit
+execute positioned 706 11 -16 run function luigis_mansion:spawn_entities/banana_peel
+execute positioned 707 11 -19 run function luigis_mansion:spawn_entities/banana_peel
+execute positioned 708 11 -25 run function luigis_mansion:spawn_entities/banana_peel
+execute positioned 707 11 -36 run function luigis_mansion:spawn_entities/banana_peel
+execute positioned 708 11 -40 run function luigis_mansion:spawn_entities/banana_peel
+execute positioned 703 11 -39 run function luigis_mansion:spawn_entities/banana_peel
+execute positioned 702 11 -28 rotated -90 0 run function luigis_mansion:spawn_entities/portrait_ghost/mr_luggs
+execute positioned 700 11 -41 run function luigis_mansion:spawn_entities/ghost/waiter
+tag @e[x=700.5,y=11,z=-40.5,distance=..1,tag=waiter] add kitchen_waiter
+execute positioned 704 11 -15 run function luigis_mansion:spawn_entities/ghost/waiter
 scoreboard players set #dining_room Wave 1

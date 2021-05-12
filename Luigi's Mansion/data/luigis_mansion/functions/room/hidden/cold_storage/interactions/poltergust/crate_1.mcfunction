@@ -1,1 +1,1 @@
-execute if entity @s[x=713.0,y=93,z=14.0,dx=1,dy=1,dz=1,tag=vacuum] unless score #cold_storage_crate_1 Search matches 1 store success score #cold_storage_crate_1 Search run scoreboard players add #cold_storage_crate_1 Searching 1
+execute if entity @s[x=738.0,y=2,z=5.0,dx=1,dy=1,dz=1,tag=vacuum] unless score #cold_storage_crate_1 Search matches 1 store success score #cold_storage_crate_1 Search run scoreboard players add #cold_storage_crate_1 Searching 1

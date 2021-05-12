@@ -1,1 +1,1 @@
-setblock 704 113 45 minecraft:redstone_wall_torch[facing=west,lit=true]
+setblock 718 22 58 minecraft:redstone_wall_torch[facing=west,lit=true]

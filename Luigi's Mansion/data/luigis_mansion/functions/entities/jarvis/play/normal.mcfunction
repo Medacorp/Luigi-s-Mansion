@@ -3,8 +3,6 @@ execute if entity @s[tag=appeared] run effect clear @s minecraft:invisibility
 teleport @s[tag=appeared] ~ 30 ~
 teleport @s[tag=!appeared] ~ 29 ~
 
-execute if entity @s[tag=reset_to_base] run tag @e[tag=haunted_jar] remove enabled
-scoreboard players set @s[tag=reset_to_base] Dialog 1
 scoreboard players add @s[scores={Dialog=612..}] Dialog 1
 execute if entity @a[scores={JarvisChoice=1..},limit=1] run scoreboard players add @s[scores={Dialog=547..611}] Dialog 1
 scoreboard players add @s[scores={Dialog=1..546}] Dialog 1

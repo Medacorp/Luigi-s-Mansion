@@ -1,4 +1,4 @@
-execute positioned 718 122 42.0 run function luigis_mansion:blocks/dust
+execute positioned 746 31 60.0 run function luigis_mansion:blocks/dust
 scoreboard players set #safari_room_mirror Searched 1
-tag @e[x=718.5,y=122,z=42.5,distance=..0.7,tag=ghost] add spawn
-tag @e[x=718.5,y=122,z=42.5,distance=..0.7,tag=hidden_boo] add spawn
+tag @e[x=746.5,y=31,z=60.5,distance=..0.7,tag=ghost] add spawn
+tag @e[x=746.5,y=31,z=60.5,distance=..0.7,tag=hidden_boo] add spawn

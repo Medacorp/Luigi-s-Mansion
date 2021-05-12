@@ -1,4 +1,4 @@
 scoreboard players set #astral_hall_candle_5 Searched 1
-execute positioned 676 111 39 run function luigis_mansion:blocks/dust
-tag @e[x=676.5,y=111,z=39.5,distance=..0.7,tag=hidden_boo] add spawn
-tag @e[x=676.5,y=111,z=39.5,distance=..0.7,tag=ghost,tag=hidden] add spawn
+execute positioned 665 20 101 run function luigis_mansion:blocks/dust
+tag @e[x=665.5,y=20,z=101.5,distance=..0.7,tag=hidden_boo] add spawn
+tag @e[x=665.5,y=20,z=101.5,distance=..0.7,tag=ghost,tag=hidden] add spawn

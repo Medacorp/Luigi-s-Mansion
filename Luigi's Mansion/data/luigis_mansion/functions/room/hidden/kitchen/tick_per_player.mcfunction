@@ -5,4 +5,4 @@ title @s[tag=!seen_room_name] title {"translate":"luigis_mansion:location.kitche
 tag @s add seen_room_name
 
 
-execute unless data storage luigis_mansion:data current_state.current_data.rooms.dining_room{cleared:1b} if entity @s[tag=!blackout] at @s run function luigis_mansion:room/hidden/dining_room/noise
+execute unless data storage luigis_mansion:data current_state.current_data.rooms.dining_room{cleared:1b} if entity @s[tag=!blackout] at @s run function luigis_mansion:room/hidden/kitchen/dining_room_noise

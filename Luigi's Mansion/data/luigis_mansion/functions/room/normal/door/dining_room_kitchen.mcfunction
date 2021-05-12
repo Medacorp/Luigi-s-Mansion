@@ -35,6 +35,7 @@ execute if score #temp Searched matches -1..0 run setblock 704 11 62 minecraft:j
 execute if score #temp Searched matches -1..0 run setblock 704 12 62 minecraft:jungle_door[open=false,facing=north,half=upper,hinge=left,powered=false]
 
 execute if score #temp Searched matches 1..2 as @a[x=704.0,y=11,z=57.0,dx=1,dy=1,dz=0] at @s run teleport @s 705.0 11 63
+execute if score #temp Searched matches 1..2 as @a[x=704.0,y=11,z=62.0,dx=1,dy=1,dz=0] run scoreboard players set @s HallwayNoise 0
 execute if score #temp Searched matches 1..2 as @a[x=704.0,y=11,z=62.0,dx=1,dy=1,dz=0] at @s run teleport @s 705.0 11 56
 
 scoreboard players reset #temp Searched

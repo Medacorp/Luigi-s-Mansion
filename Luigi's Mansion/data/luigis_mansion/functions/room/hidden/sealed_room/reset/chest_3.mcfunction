@@ -1,2 +1,2 @@
-data merge block 693 112 37 {Items:[]}
+data merge block 704 21 83 {Items:[]}
 scoreboard players reset #sealed_room_chest_3

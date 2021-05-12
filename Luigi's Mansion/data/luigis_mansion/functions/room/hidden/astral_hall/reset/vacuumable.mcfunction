@@ -1,2 +1,2 @@
-setblock 673 116 27 minecraft:air
+setblock 662 25 89 minecraft:air
 scoreboard players reset #astral_hall_vacuumable

@@ -1,5 +1,5 @@
-execute positioned 675 102 6 run function luigis_mansion:spawn_entities/ghost/cinema_ghost
-execute positioned 680 102 6 run function luigis_mansion:spawn_entities/ghost/cinema_ghost
-execute positioned 675 102 14 run function luigis_mansion:spawn_entities/ghost/cinema_ghost
-execute positioned 680 102 14 run function luigis_mansion:spawn_entities/ghost/cinema_ghost
+execute positioned 677 11 -27 run function luigis_mansion:spawn_entities/ghost/cinema_ghost
+execute positioned 682 11 -27 run function luigis_mansion:spawn_entities/ghost/cinema_ghost
+execute positioned 677 11 -19 run function luigis_mansion:spawn_entities/ghost/cinema_ghost
+execute positioned 682 11 -19 run function luigis_mansion:spawn_entities/ghost/cinema_ghost
 scoreboard players set #projection_room Wave 100

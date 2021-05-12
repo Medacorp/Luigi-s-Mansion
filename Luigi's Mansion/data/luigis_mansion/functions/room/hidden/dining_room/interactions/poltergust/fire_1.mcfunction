@@ -1,2 +1,2 @@
-execute if entity @s[x=687.5,y=105,z=-9.5,distance=..0.7,tag=water] run scoreboard players set #dining_room_fire_1 Searched 1
-execute if entity @s[x=687.5,y=105,z=-9.5,distance=..0.7,tag=fire] run scoreboard players reset #dining_room_fire_1 Searched
+execute if entity @s[x=699.5,y=14,z=-40.5,distance=..0.7,tag=water] run scoreboard players set #dining_room_fire_1 Searched 1
+execute if entity @s[x=699.5,y=14,z=-40.5,distance=..0.7,tag=fire] run scoreboard players reset #dining_room_fire_1 Searched

@@ -3,3 +3,6 @@ execute if entity @s[tag=blackout] unless entity @s[scores={MusicType=7}] unless
 execute unless data storage luigis_mansion:data current_state.current_data.rooms.nursery{cleared:1b} if entity @s[tag=!blackout] unless entity @s[scores={MusicType=14}] unless entity @s[scores={MusicType=19}] unless entity @s[scores={MusicType=26..30}] unless entity @s[scores={MusicType=7}] unless entity @s[scores={MusicType=36}] unless entity @s[scores={MusicType=-1}] run function luigis_mansion:other/music/set/room
 title @s[tag=!seen_room_name] title {"translate":"luigis_mansion:location.nursery"}
 tag @s add seen_room_name
+
+execute unless data storage luigis_mansion:data current_state.current_data.rooms.nursery{cleared:1b} run playsound luigis_mansion:music.mansion.room.nursery ambient @s[scores={HallwayNoise=0}] ~ ~ ~ 1000
+execute unless data storage luigis_mansion:data current_state.current_data.rooms.nursery{cleared:1b} run scoreboard players set @s[scores={HallwayNoise=0}] HallwayNoise 978

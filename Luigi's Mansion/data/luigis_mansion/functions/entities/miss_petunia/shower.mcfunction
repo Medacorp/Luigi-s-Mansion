@@ -1,4 +1,3 @@
-scoreboard players set @s[tag=reset_to_base] Dialog 1
 scoreboard players add @s[scores={Dialog=2..60}] Dialog 1
 execute positioned ~3 ~ ~ if block ^ ^ ^2 minecraft:air run scoreboard players add @s[scores={Dialog=1}] Dialog 1
 execute unless entity @s[scores={Dialog=1..}] run scoreboard players add @s Dialog 1

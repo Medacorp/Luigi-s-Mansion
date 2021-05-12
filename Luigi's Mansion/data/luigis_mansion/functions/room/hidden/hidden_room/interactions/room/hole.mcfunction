@@ -1,2 +1,2 @@
-execute if score #hidden_room_hole Searched matches 1 run particle minecraft:dust 0.5 0.5 1 1 710 102 -19 0.2 0.2 0.2 0 4
-execute if score #hidden_room_hole Searched matches 1 as @a[x=710.5,y=102,z=-18.5,distance=..0.7] run function luigis_mansion:room/hidden/hidden_room/go_through_hole
+execute if score #hidden_room_hole Searched matches 1 run particle minecraft:dust 0.5 0.5 1 1 741 11 -31 0.2 0.2 0.2 0 4
+execute if score #hidden_room_hole Searched matches 1 as @a[x=741.5,y=11,z=-30.5,distance=..0.7] run function luigis_mansion:room/hidden/hidden_room/go_through_hole

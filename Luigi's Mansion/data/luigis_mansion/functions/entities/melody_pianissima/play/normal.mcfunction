@@ -1,8 +1,3 @@
-execute if entity @s[tag=reset_to_base] run tag @e[tag=hauned_music_sheet] add remove_from_existence
-execute if entity @s[tag=reset_to_base] run scoreboard players set #conservatory Wave 1
-scoreboard players set @s[tag=reset_to_base] Dialog 0
-tag @s[tag=reset_to_base] remove 1
-tag @s[tag=reset_to_base] remove 2
 execute if score #conservatory Wave matches -1 run scoreboard players add @s[tag=!1,tag=!2] Dialog 1
 execute if score #conservatory Wave matches 2 run scoreboard players add @s[tag=!1,tag=!2] Dialog 1
 execute if score #conservatory Wave matches 3 run scoreboard players add @s[tag=!1,tag=!2] Dialog 1
@@ -46,6 +41,7 @@ execute if entity @s[scores={Dialog=1200}] if score #players Totals matches 2.. 
 execute if entity @s[scores={Dialog=1272}] run scoreboard players set #conservatory Wave -1
 execute if entity @s[scores={Dialog=1272}] as @a[scores={MusicType=23}] run function luigis_mansion:other/music/set/room
 tag @s[scores={Dialog=1272}] add vanish
+tag @s[scores={Dialog=1332}] add remove_from_existence
 
 scoreboard players set @s[scores={Dialog=2000}] AnimationProg 0
 tag @s[scores={Dialog=2000}] remove listen

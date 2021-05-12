@@ -1,7 +1,7 @@
-execute unless data storage luigis_mansion:data current_state.current_data.money_spawned{ceramics_studio_lamp:1b} positioned 691 125 -25 run function luigis_mansion:spawn_entities/item/bill
-execute unless data storage luigis_mansion:data current_state.current_data.money_spawned{ceramics_studio_lamp:1b} positioned 691 125 -27 run function luigis_mansion:spawn_entities/item/bill
-execute unless data storage luigis_mansion:data current_state.current_data.money_spawned{ceramics_studio_lamp:1b} positioned 690 125 -26 run function luigis_mansion:spawn_entities/item/bill
-execute unless data storage luigis_mansion:data current_state.current_data.money_spawned{ceramics_studio_lamp:1b} positioned 692 125 -26 run function luigis_mansion:spawn_entities/item/bill
-execute unless data storage luigis_mansion:data current_state.current_data.money_spawned{ceramics_studio_lamp:1b} positioned 691 124 -26 run function luigis_mansion:spawn_entities/item/bill
+execute unless data storage luigis_mansion:data current_state.current_data.money_spawned{ceramics_studio_lamp:1b} positioned 705 34 -50 run function luigis_mansion:spawn_entities/item/bill
+execute unless data storage luigis_mansion:data current_state.current_data.money_spawned{ceramics_studio_lamp:1b} positioned 705 34 -52 run function luigis_mansion:spawn_entities/item/bill
+execute unless data storage luigis_mansion:data current_state.current_data.money_spawned{ceramics_studio_lamp:1b} positioned 704 34 -51 run function luigis_mansion:spawn_entities/item/bill
+execute unless data storage luigis_mansion:data current_state.current_data.money_spawned{ceramics_studio_lamp:1b} positioned 706 34 -51 run function luigis_mansion:spawn_entities/item/bill
+execute unless data storage luigis_mansion:data current_state.current_data.money_spawned{ceramics_studio_lamp:1b} positioned 705 33 -51 run function luigis_mansion:spawn_entities/item/bill
 execute if data storage luigis_mansion:data current_state.current_data.money_spawned{ceramics_studio_lamp:1b} run tag @e[tag=selected] add nothing
 data modify storage luigis_mansion:data current_state.current_data.money_spawned merge value {ceramics_studio_lamp:1b}

@@ -43,7 +43,7 @@ execute if entity @s[scores={Dialog=920}] run tag @a[tag=same_room] add warp_tar
 execute if entity @s[scores={Dialog=920}] run stopsound @a[tag=warp_target] music
 execute if entity @s[scores={Dialog=920}] run playsound luigis_mansion:music.warped_by_boos music @a[tag=warp_target] ~ ~ ~ 1000
 execute if entity @s[scores={Dialog=920}] run scoreboard players set @a[tag=warp_target] Music 80
-execute if entity @s[scores={Dialog=920..980}] as @a[tag=warp_target] at @s unless entity @s[x=684,dx=0] run teleport @s ~0.5 93 ~
+execute if entity @s[scores={Dialog=920..980}] as @a[tag=warp_target] at @s unless entity @s[x=684,dx=0] run teleport @s ~0.5 ~ ~
 execute if entity @s[scores={Dialog=980}] run teleport @a[tag=warp_target] 751.0 11 7.0
 execute if entity @s[scores={Dialog=980}] run tag @a[tag=warp_target] remove warp_target
 execute if entity @s[scores={Dialog=980}] run data modify storage luigis_mansion:data current_state.current_data.technical_data merge value {king_boo_warp:1b}

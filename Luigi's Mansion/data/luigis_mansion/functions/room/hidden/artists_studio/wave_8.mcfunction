@@ -1,6 +1,6 @@
-execute positioned 690 123 48 run function luigis_mansion:spawn_entities/ghost/purple_bomber
-execute positioned 690 123 47 run function luigis_mansion:spawn_entities/ghost/purple_bomber
-execute positioned 690 123 49 run function luigis_mansion:spawn_entities/ghost/purple_bomber
-execute positioned 690 123 46 run function luigis_mansion:spawn_entities/ghost/purple_bomber
-execute positioned 691 123 49 run function luigis_mansion:spawn_entities/ghost/purple_bomber
+execute positioned 695 32 87 run function luigis_mansion:spawn_entities/ghost/purple_bomber
+execute positioned 695 32 86 run function luigis_mansion:spawn_entities/ghost/purple_bomber
+execute positioned 695 32 88 run function luigis_mansion:spawn_entities/ghost/purple_bomber
+execute positioned 695 32 85 run function luigis_mansion:spawn_entities/ghost/purple_bomber
+execute positioned 696 32 88 run function luigis_mansion:spawn_entities/ghost/purple_bomber
 scoreboard players set #artists_studio Wave 8

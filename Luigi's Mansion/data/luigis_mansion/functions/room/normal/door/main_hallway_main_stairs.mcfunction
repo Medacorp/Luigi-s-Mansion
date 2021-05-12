@@ -27,7 +27,7 @@ execute if score #temp Searched matches -1..0 run setblock 663 12 -37 minecraft:
 execute if score #temp Searched matches -1..0 run setblock 682 11 -29 minecraft:dark_oak_door[open=false,facing=north,half=lower,hinge=right,powered=false]
 execute if score #temp Searched matches -1..0 run setblock 682 12 -29 minecraft:dark_oak_door[open=false,facing=north,half=upper,hinge=right,powered=false]
 
-execute if score #temp Searched matches 1..2 as @a[x=682.0,y=11,z=-29.0,dx=0,dy=1,dz=0] run stopsound @s[scores={HallwayNoise=1..}] hostile luigis_mansion:music.mansion.melody
+execute if score #temp Searched matches 1..2 as @a[x=682.0,y=11,z=-29.0,dx=0,dy=1,dz=0] run stopsound @s[scores={HallwayNoise=1..}] ambient luigis_mansion:music.mansion.melody
 execute if score #temp Searched matches 1..2 as @a[x=682.0,y=11,z=-29.0,dx=0,dy=1,dz=0] run scoreboard players set @s HallwayNoise 0
 execute if score #temp Searched matches 1..2 as @a[x=682.0,y=11,z=-29.0,dx=0,dy=1,dz=0] at @s run teleport @s 663 11 -38
 execute if score #temp Searched matches 1..2 as @a[x=663.0,y=11,z=-37.0,dx=0,dy=1,dz=0] at @s run teleport @s 682 11 -28

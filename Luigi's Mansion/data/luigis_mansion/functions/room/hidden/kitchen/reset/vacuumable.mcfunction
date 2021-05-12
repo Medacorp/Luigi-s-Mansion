@@ -1,2 +1,2 @@
-setblock 687 107 -40 minecraft:air
+setblock 699 16 -75 minecraft:air
 scoreboard players reset #kitchen_vacuumable

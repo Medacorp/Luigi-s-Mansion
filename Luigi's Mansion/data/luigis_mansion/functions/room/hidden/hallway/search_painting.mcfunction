@@ -1,2 +1,2 @@
-execute positioned 655 114 36 run function luigis_mansion:blocks/dust
+execute positioned 669 23 49 run function luigis_mansion:blocks/dust
 scoreboard players set #hallway_painting Searched 1

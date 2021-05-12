@@ -1,1 +1,1 @@
-fill 666 111 39 666 112 39 minecraft:air
+fill 661 20 59 661 21 59 minecraft:air

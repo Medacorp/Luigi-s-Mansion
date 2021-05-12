@@ -1,4 +1,4 @@
-execute positioned 716 96 38 run function luigis_mansion:blocks/dust
+execute positioned 745 5 59 run function luigis_mansion:blocks/dust
 scoreboard players set #cellar_candle_1 Searched 1
-tag @e[x=716.5,y=96,z=38.5,distance=..0.7,tag=ghost,tag=hidden] add spawn
-tag @e[x=716.5,y=96,z=38.5,distance=..0.7,tag=hidden_boo] add spawn
+tag @e[x=745.5,y=5,z=59.5,distance=..0.7,tag=ghost,tag=hidden] add spawn
+tag @e[x=745.5,y=5,z=59.5,distance=..0.7,tag=hidden_boo] add spawn

@@ -10,9 +10,6 @@ execute if entity @s[tag=vanish,tag=blue_clockwork_soldier] store result storage
 execute if entity @s[tag=vanish,tag=green_clockwork_soldier] store result storage luigis_mansion:data current_state.current_data.portrait_ghosts.clockwork_soldiers.green_health int 1 run scoreboard players operation @s LastHealth = @s Health
 execute if entity @s[tag=vanish,tag=pink_clockwork_soldier] store result storage luigis_mansion:data current_state.current_data.portrait_ghosts.clockwork_soldiers.pink_health int 1 run scoreboard players operation @s LastHealth = @s Health
 
-
-tag @s[tag=reset_to_base] remove activated
-tag @s[tag=reset_to_base] remove was_activated
 execute if entity @s[tag=activated,tag=!was_activated,scores={WaitTime=0}] run function luigis_mansion:entities/clockwork_soldier/activate
 tag @s[tag=activated,scores={WaitTime=1}] add was_activated
 
@@ -35,4 +32,4 @@ scoreboard players set @s[tag=attack] Distance 0
 execute at @s[tag=was_activated,tag=!hurt,tag=!fleeing,tag=!attack,tag=!complain,scores={Distance=0,WaitTime=0}] run function luigis_mansion:entities/clockwork_soldier/target
 execute at @s[tag=was_activated,tag=!hurt,tag=!fleeing,tag=!attack,tag=!complain,scores={Distance=1..,WaitTime=0}] run function luigis_mansion:entities/clockwork_soldier/move
 execute if entity @s[tag=was_activated,tag=!hurt,tag=!fleeing,tag=!attack,tag=complain,scores={StunTime=0}] run function luigis_mansion:entities/clockwork_soldier/complain
-tag @s[scores={VulnerableTime=1}] add disappear
+tag @s[scores={VulnerableTime=1}] add vanish

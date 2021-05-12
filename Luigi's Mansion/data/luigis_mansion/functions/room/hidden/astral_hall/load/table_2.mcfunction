@@ -1,1 +1,1 @@
-data merge block 674 111 42 {LootTable:"luigis_mansion:search"}
+data merge block 662 20 104 {LootTable:"luigis_mansion:search"}

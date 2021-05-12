@@ -1,4 +1,4 @@
-execute positioned 690 94 55.0 run function luigis_mansion:blocks/dust
+execute positioned 691 3 76.0 run function luigis_mansion:blocks/dust
 scoreboard players set #breaker_room_barrel_8 Searched 1
-tag @e[x=690.5,y=94,z=55.5,distance=..0.7,tag=ghost,tag=hidden] add spawn
-tag @e[x=690.5,y=94,z=55.5,distance=..0.7,tag=hidden_boo] add spawn
+tag @e[x=691.5,y=3,z=76.5,distance=..0.7,tag=ghost,tag=hidden] add spawn
+tag @e[x=691.5,y=3,z=76.5,distance=..0.7,tag=hidden_boo] add spawn

@@ -16,6 +16,7 @@ scoreboard players set @s[scores={Sound=0},tag=fleeing] Sound 40
 
 execute if entity @s[tag=!fleeing,tag=!hurt,tag=!vanish,scores={StunTime=0}] run function luigis_mansion:entities/neville/yawn
 
+execute if entity @s[tag=vanish,scores={VulnerableTime=1..}] run playsound luigis_mansion:entity.neville.laugh hostile @a[tag=same_room] ~ ~ ~ 1
 execute if entity @s[tag=vanish] run function luigis_mansion:entities/neville/vanish
 execute at @s[tag=yawn,tag=!fleeing,tag=!hurt,tag=!vanish,scores={StunTime=0}] run function luigis_mansion:animations/neville/yawn
 execute at @s[tag=!hurt,tag=!fleeing,tag=!yawn,tag=!vanish,scores={StunTime=0}] run function luigis_mansion:animations/neville/idle

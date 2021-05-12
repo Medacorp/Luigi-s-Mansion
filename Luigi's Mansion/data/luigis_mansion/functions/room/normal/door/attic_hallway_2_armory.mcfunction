@@ -31,6 +31,7 @@ execute if score #temp Searched matches -1..0 run setblock 757 30 55 minecraft:o
 execute if score #temp Searched matches -1..0 run setblock 733 29 55 minecraft:oak_door[open=false,facing=north,half=lower,hinge=left,powered=false]
 execute if score #temp Searched matches -1..0 run setblock 733 30 55 minecraft:oak_door[open=false,facing=north,half=upper,hinge=left,powered=false]
 
+execute if score #temp Searched matches 1..2 as @a[x=752.0,y=29,z=47.0,dx=0,dy=1,dz=0] run scoreboard players set @s HallwayNoise 0
 execute if score #temp Searched matches 1..2 as @a[x=752.0,y=29,z=47.0,dx=0,dy=1,dz=0] at @s run teleport @s 757 29 56
 execute if score #temp Searched matches 1..2 as @a[x=757.0,y=29,z=55.0,dx=0,dy=1,dz=0] at @s run teleport @s 752 29 46
 

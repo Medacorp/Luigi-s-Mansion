@@ -1,1 +1,1 @@
-fill 687 102 -38 687 103 -38 minecraft:air
+fill 699 11 -73 699 12 -73 minecraft:air

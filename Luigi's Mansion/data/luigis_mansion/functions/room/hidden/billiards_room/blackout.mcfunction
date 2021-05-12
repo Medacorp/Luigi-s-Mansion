@@ -1,7 +1,7 @@
-execute positioned 677 102 -1 run function luigis_mansion:spawn_entities/ghost/grabbing_ghost
-execute positioned 681 102 -5 run function luigis_mansion:spawn_entities/ghost/gold_ghost
-execute positioned 675 102 -8 run function luigis_mansion:spawn_entities/ghost/gold_ghost
-execute positioned 682 102 -14 run function luigis_mansion:spawn_entities/ghost/grabbing_ghost
-execute positioned 675 102 -18 run function luigis_mansion:spawn_entities/ghost/grabbing_ghost
-execute positioned 679 102 -18 run function luigis_mansion:spawn_entities/ghost/gold_ghost
+execute positioned 679 11 -53 run function luigis_mansion:spawn_entities/ghost/grabbing_ghost
+execute positioned 683 11 -57 run function luigis_mansion:spawn_entities/ghost/gold_ghost
+execute positioned 677 11 -60 run function luigis_mansion:spawn_entities/ghost/gold_ghost
+execute positioned 684 11 -66 run function luigis_mansion:spawn_entities/ghost/grabbing_ghost
+execute positioned 677 11 -70 run function luigis_mansion:spawn_entities/ghost/grabbing_ghost
+execute positioned 681 11 -70 run function luigis_mansion:spawn_entities/ghost/gold_ghost
 scoreboard players set #billiards_room Wave 100

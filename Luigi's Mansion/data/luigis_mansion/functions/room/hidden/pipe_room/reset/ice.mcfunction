@@ -1,2 +1,2 @@
-fill 696 95 17 697 95 16 minecraft:packed_ice
+fill 697 4 8 698 4 7 minecraft:packed_ice
 scoreboard players reset #pipe_room_ice

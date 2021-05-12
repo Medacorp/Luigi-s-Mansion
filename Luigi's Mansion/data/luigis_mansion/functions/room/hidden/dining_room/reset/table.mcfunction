@@ -1,2 +1,2 @@
-fill 693 102 13 691 102 -7 minecraft:white_wool
+fill 705 11 -18 703 11 -38 minecraft:white_wool
 scoreboard players reset #dining_room_table

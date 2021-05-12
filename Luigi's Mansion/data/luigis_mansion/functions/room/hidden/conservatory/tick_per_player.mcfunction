@@ -7,19 +7,19 @@ tag @s add seen_room_name
 
 
 stopsound @s[scores={Music=0}] music
-execute if score #conservatory_saxophone Searched matches 1 if entity @s[scores={Time=0,MusicType=0}] run particle minecraft:note 659 104 0 0 0 0 1 1 normal @s
+execute if score #conservatory_saxophone Searched matches 1 if entity @s[scores={Time=0,MusicType=0}] run particle minecraft:note 658 13 19 0 0 0 1 1 normal @s
 execute if score #conservatory_saxophone Searched matches 1 run playsound luigis_mansion:music.mansion.room.conservatory.saxophone music @s[scores={Music=0,MusicType=0}] ~ ~ ~ 1000
-execute if score #conservatory_harp Searched matches 1 if entity @s[scores={Time=0,MusicType=0}] run particle minecraft:note 657.0 105 3.0 0 0 0 1 1 normal @s
+execute if score #conservatory_harp Searched matches 1 if entity @s[scores={Time=0,MusicType=0}] run particle minecraft:note 656.0 14 22.0 0 0 0 1 1 normal @s
 execute if score #conservatory_harp Searched matches 1 run playsound luigis_mansion:music.mansion.room.conservatory.harp music @s[scores={Music=0,MusicType=0}] ~ ~ ~ 1000
-execute if score #conservatory_cello Searched matches 1 if entity @s[scores={Time=0,MusicType=0}] run particle minecraft:note 662.0 104 6.0 0 0 0 1 1 normal @s
+execute if score #conservatory_cello Searched matches 1 if entity @s[scores={Time=0,MusicType=0}] run particle minecraft:note 661.0 13 25.0 0 0 0 1 1 normal @s
 execute if score #conservatory_cello Searched matches 1 run playsound luigis_mansion:music.mansion.room.conservatory.cello music @s[scores={Music=0,MusicType=0}] ~ ~ ~ 1000
-execute if score #conservatory_drum_1 Searched matches 1 if entity @s[scores={Time=0,MusicType=0}] run particle minecraft:note 657 103 9 0 0 0 1 1 normal @s
+execute if score #conservatory_drum_1 Searched matches 1 if entity @s[scores={Time=0,MusicType=0}] run particle minecraft:note 656 12 28 0 0 0 1 1 normal @s
 execute if score #conservatory_drum_1 Searched matches 1 run playsound luigis_mansion:music.mansion.room.conservatory.drum music @s[scores={Music=0,MusicType=0}] ~ ~ ~ 1000
-execute if score #conservatory_drum_2 Searched matches 1 if entity @s[scores={Time=0,MusicType=0}] run particle minecraft:note 658 103 11 0 0 0 1 1 normal @s
+execute if score #conservatory_drum_2 Searched matches 1 if entity @s[scores={Time=0,MusicType=0}] run particle minecraft:note 657 12 30 0 0 0 1 1 normal @s
 execute if score #conservatory_drum_2 Searched matches 1 run playsound luigis_mansion:music.mansion.room.conservatory.drum music @s[scores={Music=0,MusicType=0}] ~ ~ ~ 1000
-execute if score #conservatory_drum_3 Searched matches 1 if entity @s[scores={Time=0,MusicType=0}] run particle minecraft:note 657 103 13 0 0 0 1 1 normal @s
+execute if score #conservatory_drum_3 Searched matches 1 if entity @s[scores={Time=0,MusicType=0}] run particle minecraft:note 656 12 32 0 0 0 1 1 normal @s
 execute if score #conservatory_drum_3 Searched matches 1 run playsound luigis_mansion:music.mansion.room.conservatory.drum music @s[scores={Music=0,MusicType=0}] ~ ~ ~ 1000
-execute if score #conservatory_xylophone Searched matches 1 if entity @s[scores={Time=0,MusicType=0}] run particle minecraft:note 662 103 12 0 0 0 1 1 normal @s
+execute if score #conservatory_xylophone Searched matches 1 if entity @s[scores={Time=0,MusicType=0}] run particle minecraft:note 661 12 31 0 0 0 1 1 normal @s
 execute if score #conservatory_xylophone Searched matches 1 run playsound luigis_mansion:music.mansion.room.conservatory.xylophone music @s[scores={Music=0,MusicType=0}] ~ ~ ~ 1000
 execute if score #conservatory Wave matches 2 run playsound luigis_mansion:music.mansion.room.conservatory.piano music @s[scores={Music=0,MusicType=0}] ~ ~ ~ 1000
 scoreboard players set @s[scores={Music=0,MusicType=0}] Music 1434

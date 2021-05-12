@@ -1,6 +1,6 @@
-fill 700 122 -27 700 123 -27 minecraft:glass_pane[west=true,south=true,north=false,east=false]
-fill 700 122 -26 700 123 -26 minecraft:glass_pane[west=true,north=true,south=false,east=false]
-execute positioned 699 122 -26.0 run function luigis_mansion:blocks/dust
+fill 746 31 -50 746 32 -49 minecraft:air
+fill 744 31 -50 744 32 -49 minecraft:barrier
+execute positioned 745 31 -49.0 run function luigis_mansion:blocks/dust
 scoreboard players set #armory_mirror Searched 1
-tag @e[x=699.5,y=122,z=-25.5,distance=..0.7,tag=ghost,tag=hidden] add spawn
-tag @e[x=699.5,y=122,z=-25.5,distance=..0.7,tag=hidden_boo] add spawn
+tag @e[x=745.5,y=31,z=-48.5,distance=..0.7,tag=ghost,tag=hidden] add spawn
+tag @e[x=745.5,y=31,z=-48.5,distance=..0.7,tag=hidden_boo] add spawn

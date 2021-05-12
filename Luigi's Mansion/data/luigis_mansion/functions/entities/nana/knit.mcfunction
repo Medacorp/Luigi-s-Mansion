@@ -1,7 +1,3 @@
-scoreboard players set @s[tag=reset_to_base,scores={Wave=0}] Dialog 23
-scoreboard players set @s[tag=reset_to_base,scores={Wave=1}] Dialog 22
-scoreboard players set @s[tag=reset_to_base,scores={Wave=2}] Dialog 12 
-scoreboard players set @s[tag=reset_to_base,scores={Wave=3}] Dialog 1
 execute positioned ~ ~-1.1875 ~ if entity @e[type=minecraft:armor_stand,tag=wool,tag=spit,distance=..0.7] run scoreboard players add @s[scores={Dialog=22}] Dialog 1
 scoreboard players add @s[scores={Dialog=13..21}] Dialog 1
 execute positioned ~ ~-1.1875 ~ if entity @e[type=minecraft:armor_stand,tag=wool,tag=spit,distance=..0.7] run scoreboard players add @s[scores={Dialog=12}] Dialog 1

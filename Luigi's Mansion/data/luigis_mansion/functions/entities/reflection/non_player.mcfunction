@@ -1,6 +1,6 @@
 tag @s remove mirrored
 scoreboard players operation #temp ReflectionNr = @s ReflectionNr
-execute if score @s ReflectionNr matches 1.. as @e[type=minecraft:armor_stand,tag=reflection] if score @s ReflectionNr = #temp ReflectionNr run tag @s add this_reflection
+execute if score @s ReflectionNr matches 1.. as @e[type=minecraft:armor_stand,tag=reflection,tag=!found_owner] if score @s ReflectionNr = #temp ReflectionNr run tag @s add this_reflection
 execute if entity @s[tag=immobile] run tag @e[tag=this_reflection,limit=1] add immobile
 execute if score @s ReflectionNr matches 1.. unless entity @e[tag=this_reflection,limit=1] run scoreboard players reset @s ReflectionNr
 execute unless score @s ReflectionNr matches 1.. run summon minecraft:armor_stand ~ ~ ~ {CustomName:'{"translate":"luigis_mansion:entity.reflection"}',Tags:["reflection","this_reflection","new"],Invisible:1b,NoGravity:1b}

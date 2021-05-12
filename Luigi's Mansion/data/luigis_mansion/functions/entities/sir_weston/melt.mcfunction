@@ -1,6 +1,5 @@
 execute unless entity @s[scores={Dialog=1..}] at @a[tag=same_room] positioned ^ ^ ^8 run effect give @s[distance=..8] minecraft:invisibility 1 0 true
 effect clear @s[nbt=!{ActiveEffects:[{Id:14b,Duration:20}]}] minecraft:invisibility
-scoreboard players set @s[tag=reset_to_base] Dialog 0
 scoreboard players add @s[scores={Dialog=483..}] Dialog 1
 scoreboard players add @s[scores={Dialog=423..482},tag=melt] Dialog 1
 tag @s remove melt

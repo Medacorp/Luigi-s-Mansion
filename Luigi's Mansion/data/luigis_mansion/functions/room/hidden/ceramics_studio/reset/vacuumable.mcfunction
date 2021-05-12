@@ -1,2 +1,2 @@
-setblock 684 125 -29 minecraft:air
+setblock 698 34 -54 minecraft:air
 scoreboard players reset #ceramics_studio_vacuumable

@@ -1,2 +1,2 @@
-setblock 687 106 -1 minecraft:air
+setblock 699 15 -32 minecraft:air
 scoreboard players reset #dining_room_vacuumable_1

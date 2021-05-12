@@ -1,2 +1,2 @@
-setblock 707 125 -11 minecraft:air
+setblock 748 34 -27 minecraft:air
 scoreboard players reset #attic_hallway_2_vacuumable_3

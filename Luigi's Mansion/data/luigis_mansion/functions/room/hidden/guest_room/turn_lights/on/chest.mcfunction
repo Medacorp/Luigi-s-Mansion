@@ -1,2 +1,4 @@
-execute if block 712 112 47 minecraft:redstone_lamp run setblock 712 117 43 minecraft:trapped_chest[facing=east,type=single]{LootTable:"luigis_mansion:search"}
-execute unless block 712 112 47 minecraft:redstone_lamp run setblock 712 111 43 minecraft:trapped_chest[facing=east,type=single]{LootTable:"luigis_mansion:search"}
+execute if block 741 21 68 minecraft:redstone_lamp run setblock 741 26 64 minecraft:trapped_chest[facing=east,type=single]{LootTable:"luigis_mansion:search"}
+execute if block 741 21 68 minecraft:redstone_lamp run setblock 729 26 64 minecraft:trapped_chest[facing=west,type=single]{LootTable:"luigis_mansion:search"}
+execute unless block 741 21 68 minecraft:redstone_lamp run setblock 741 20 64 minecraft:trapped_chest[facing=east,type=single]{LootTable:"luigis_mansion:search"}
+execute unless block 741 21 68 minecraft:redstone_lamp run setblock 729 20 64 minecraft:trapped_chest[facing=west,type=single]{LootTable:"luigis_mansion:search"}

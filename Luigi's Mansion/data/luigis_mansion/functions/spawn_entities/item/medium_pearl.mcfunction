@@ -4,3 +4,4 @@ tag @e[tag=this_entity,limit=1] remove ghost
 tag @e[tag=this_entity,limit=1] remove portrait_ghost
 tag @e[tag=this_entity,limit=1] remove pearl_dropper
 tag @e[tag=this_entity,limit=1] remove this_entity
+playsound luigis_mansion:item.medium_pearl.spawn player @a ~ ~ ~ 1

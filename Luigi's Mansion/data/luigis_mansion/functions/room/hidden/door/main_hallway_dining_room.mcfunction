@@ -25,6 +25,7 @@ execute if score #temp Searched matches -1..0 run setblock 706 12 31 minecraft:d
 execute if score #temp Searched matches -1..0 run setblock 704 11 -14 minecraft:dark_oak_door[open=false,facing=south,half=lower,hinge=left,powered=false]
 execute if score #temp Searched matches -1..0 run setblock 704 12 -14 minecraft:dark_oak_door[open=false,facing=south,half=upper,hinge=left,powered=false]
 
+execute if score #temp Searched matches 1..2 as @a[x=706.0,y=11,z=31.0,dx=0,dy=1,dz=0] run scoreboard players set @s HallwayNoise 0
 execute if score #temp Searched matches 1..2 as @a[x=706.0,y=11,z=31.0,dx=0,dy=1,dz=0] at @s run teleport @s 704 11 -15
 execute if score #temp Searched matches 1..2 as @a[x=704.0,y=11,z=-14.0,dx=0,dy=1,dz=0] at @s run teleport @s 706 11 32
 

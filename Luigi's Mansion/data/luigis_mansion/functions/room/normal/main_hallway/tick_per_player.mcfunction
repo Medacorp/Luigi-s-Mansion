@@ -8,8 +8,8 @@ execute if entity @s[x=718,y=11,z=-19,distance=..8,tag=!chance_check] unless dat
 execute if entity @s[x=718,y=11,z=-19,distance=..8,tag=!chance_check,tag=blackout] unless data storage luigis_mansion:data current_state.current_data.money_spawned{main_hallway_gold_mouse:1b} unless entity @e[tag=gold_mouse,scores={Room=10},limit=1] run function luigis_mansion:room/normal/main_hallway/gold_mouse
 tag @s[x=718,y=11,z=-19,distance=9..10,tag=chance_check] remove chance_check
 
-execute at @s unless block ~ ~ ~ #minecraft:doors unless data storage luigis_mansion:data current_state.current_data.rooms.conservatory{cleared:1b} run playsound luigis_mansion:music.mansion.melody hostile @s[x=680,y=11,z=-28,dx=4,dy=6,dz=39,scores={HallwayNoise=0}] ~ ~ ~ 1000
-execute at @s unless block ~ ~ ~ #minecraft:doors unless data storage luigis_mansion:data current_state.current_data.rooms.conservatory{cleared:1b} run scoreboard players set @s[x=680,y=11,z=-28,dx=4,dy=6,dz=39,scores={HallwayNoise=0}] HallwayNoise 850
-execute at @s unless block ~ ~ ~ #minecraft:doors unless entity @s[x=699,y=11,z=-21,dx=14,dy=6,dz=4] unless entity @s[x=680,y=11,z=-28,dx=4,dy=6,dz=39] run scoreboard players set @s HallwayNoise 0
-execute at @s unless block ~ ~ ~ #minecraft:doors unless entity @s[x=680,y=11,z=-28,dx=4,dy=6,dz=39] run stopsound @s hostile luigis_mansion:music.mansion.melody
-execute at @s unless block ~ ~ ~ #minecraft:doors unless data storage luigis_mansion:data current_state.current_data.rooms.dining_room{cleared:1b} if entity @s[x=699,y=11,z=-21,dx=14,dy=6,dz=4] at @s run function luigis_mansion:room/normal/dining_room/noise
+execute unless data storage luigis_mansion:data current_state.current_data.rooms.conservatory{cleared:1b} run playsound luigis_mansion:music.mansion.melody ambient @s[x=680,y=11,z=-28,dx=4,dy=6,dz=39,scores={HallwayNoise=0}] ~ ~ ~ 1000
+execute unless data storage luigis_mansion:data current_state.current_data.rooms.conservatory{cleared:1b} run scoreboard players set @s[x=680,y=11,z=-28,dx=4,dy=6,dz=39,scores={HallwayNoise=0}] HallwayNoise 850
+execute unless entity @s[x=699,y=11,z=-21,dx=14,dy=6,dz=4] unless entity @s[x=680,y=11,z=-28,dx=4,dy=6,dz=39] run scoreboard players set @s HallwayNoise 0
+execute unless entity @s[x=680,y=11,z=-28,dx=4,dy=6,dz=39] run stopsound @s ambient luigis_mansion:music.mansion.melody
+execute unless data storage luigis_mansion:data current_state.current_data.rooms.dining_room{cleared:1b} if entity @s[x=699,y=11,z=-21,dx=14,dy=6,dz=4] run function luigis_mansion:room/normal/main_hallway/dining_room_noise

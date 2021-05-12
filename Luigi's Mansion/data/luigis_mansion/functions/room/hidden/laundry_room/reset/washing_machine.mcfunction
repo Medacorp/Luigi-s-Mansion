@@ -1,2 +1,2 @@
-data merge block 700 103 -38 {Items:[]}
+data merge block 714 12 -58 {Items:[]}
 scoreboard players reset #laundry_room_washing_machine

@@ -1,4 +1,3 @@
-scoreboard players set @s[tag=reset_to_base] Dialog 0
 execute if entity @s[tag=!visible] run function luigis_mansion:entities/mr_luggs/turn_visible
 execute unless entity @s[scores={Dialog=1..}] at @a[tag=same_room] positioned ^ ^ ^8 if entity @s[distance=..8] run function luigis_mansion:entities/mr_luggs/turn_invisible
 execute unless entity @s[scores={Dialog=2..}] if entity @s[tag=visible] run item entity @e[tag=this_food,limit=1] armor.head replace minecraft:diamond_pickaxe{Unbreakable:1b,Damage:4,CustomModelData:11}

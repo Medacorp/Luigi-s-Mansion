@@ -27,6 +27,7 @@ execute if score #temp Searched matches -1..0 run setblock 705 12 53 minecraft:w
 execute if score #temp Searched matches -1..0 run setblock 706 11 37 minecraft:warped_door[open=false,facing=south,half=lower,hinge=left,powered=true]
 execute if score #temp Searched matches -1..0 run setblock 706 12 37 minecraft:warped_door[open=false,facing=south,half=upper,hinge=left,powered=true]
 
+execute if score #temp Searched matches 1..2 as @a[x=706.0,y=11,z=37.0,dx=0,dy=1,dz=0] run scoreboard players set @s HallwayNoise 0
 execute if score #temp Searched matches 1..2 as @a[x=706.0,y=11,z=37.0,dx=0,dy=1,dz=0] at @s run teleport @s 705 11 54
 execute if score #temp Searched matches 1..2 as @a[x=705.0,y=11,z=53.0,dx=0,dy=1,dz=0] at @s run teleport @s 706 11 36
 

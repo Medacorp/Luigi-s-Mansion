@@ -1,2 +1,2 @@
-execute if score #tea_room_ice_bucket Searched matches 1 run tag @e[x=660.5,y=112,z=43.5,tag=elemental_source,distance=..0.7,limit=1] remove enabled
-execute unless score #tea_room_ice_bucket Searched matches 1 run tag @e[x=660.5,y=112,z=43.5,tag=elemental_source,distance=..0.7,limit=1] add enabled
+execute if score #tea_room_ice_bucket Searched matches 1 run tag @e[x=644.5,y=21,z=63.5,tag=elemental_source,distance=..0.7,limit=1] remove enabled
+execute unless score #tea_room_ice_bucket Searched matches 1 run tag @e[x=644.5,y=21,z=63.5,tag=elemental_source,distance=..0.7,limit=1] add enabled

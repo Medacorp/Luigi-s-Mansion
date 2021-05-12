@@ -1,1 +1,1 @@
-execute if entity @s[x=673.5,y=106,z=0.5,distance=..0.7,tag=vacuum] unless score #billiards_room_vacuumable_2 Search matches 1 store success score #billiards_room_vacuumable_2 Search run scoreboard players add #billiards_room_vacuumable_2 Searching 1
+execute if entity @s[x=675.5,y=15,z=-51.5,distance=..0.7,tag=vacuum] unless score #billiards_room_vacuumable_2 Search matches 1 store success score #billiards_room_vacuumable_2 Search run scoreboard players add #billiards_room_vacuumable_2 Searching 1

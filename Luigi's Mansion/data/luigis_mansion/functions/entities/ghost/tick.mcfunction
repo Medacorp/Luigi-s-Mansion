@@ -6,9 +6,7 @@ execute if entity @s[tag=dying,tag=element_hurt,tag=!element_hurt,tag=!dialog] r
 scoreboard players operation #temp Move = @s Move
 execute unless score @s ActionTime matches 1.. run tag @s[tag=disappear_next_tick,tag=vanish] add disappear
 execute unless score @s ActionTime matches 1.. run tag @s[tag=vanish] add disappear_next_tick
-execute unless entity @a[tag=same_room,limit=1] if entity @s[scores={Room=1..}] run function luigis_mansion:entities/ghost/non_ticking_room
 function #luigis_mansion:entities/ghosts
-tag @s[tag=!vanish,tag=!disappear] remove reset_to_base
 scoreboard players add @s[scores={StunTime=0},tag=!hidden] SpawnTime 1
 scoreboard players set @s[tag=attack,scores={SpawnTime=21..},tag=!hidden] SpawnTime 20
 scoreboard players set @s[tag=fleeing,scores={SpawnTime=21..},tag=!hidden] SpawnTime 20

@@ -1,1 +1,1 @@
-execute if entity @s[x=711.5,y=111,z=-18.5,distance=..0.7] if block 711 111 -19 minecraft:chest if entity @e[x=711.5,y=111,z=-18.5,distance=..0.7,tag=ghost,tag=hidden] positioned 711 111 -19 run function luigis_mansion:room/hidden/twins_room/twin_shake
+execute if entity @s[x=742.5,y=20,z=-30.5,distance=..0.7] positioned 742 20 -31 if block ~ ~ ~ minecraft:chest if entity @e[distance=..0.7,tag=ghost,tag=hidden] run function luigis_mansion:room/hidden/twins_room/twin_shake

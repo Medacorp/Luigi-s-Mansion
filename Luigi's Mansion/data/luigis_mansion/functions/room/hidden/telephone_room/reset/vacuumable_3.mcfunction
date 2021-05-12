@@ -1,2 +1,2 @@
-setblock 700 125 15 minecraft:air
+setblock 738 34 5 minecraft:air
 scoreboard players reset #telephone_room_vacuumable_3

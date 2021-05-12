@@ -1,2 +1,2 @@
-data merge block 697 120 -27 {Items:[]}
+data merge block 711 29 -52 {Items:[]}
 scoreboard players reset #ceramics_studio_jar_6

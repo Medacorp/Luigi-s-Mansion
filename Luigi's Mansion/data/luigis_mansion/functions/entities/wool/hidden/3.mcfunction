@@ -1,5 +1,5 @@
 execute unless entity @s[scores={PathStep=1..}] run scoreboard players set @s PathStep 1
-teleport @s[scores={PathStep=1}] ~ ~ ~ facing 660 111 7
-scoreboard players set @s[x=660.5,y=111,z=7.5,distance=..0.7,scores={PathStep=1}] PathStep 2
-teleport @s[scores={PathStep=2}] ~ ~ ~ facing 663 111 1
-scoreboard players set @s[x=663.5,y=111,z=1.5,distance=..0.7,scores={PathStep=2}] PathStep 1
+teleport @s[scores={PathStep=1}] ~ ~ ~ facing 659 20 26
+scoreboard players set @s[x=659.5,y=20,z=26.5,distance=..0.7,scores={PathStep=1}] PathStep 2
+teleport @s[scores={PathStep=2}] ~ ~ ~ facing 662 20 20
+scoreboard players set @s[x=662.5,y=20,z=20.5,distance=..0.7,scores={PathStep=2}] PathStep 1

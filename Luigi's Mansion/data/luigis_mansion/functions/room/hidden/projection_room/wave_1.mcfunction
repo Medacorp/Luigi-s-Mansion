@@ -1,2 +1,2 @@
-execute positioned 683 103 10 run function luigis_mansion:spawn_entities/ghost/empty_marker
+execute positioned 685 12 -23 run function luigis_mansion:spawn_entities/ghost/empty_marker
 scoreboard players set #projection_room Wave 1

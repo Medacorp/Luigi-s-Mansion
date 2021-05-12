@@ -1,6 +1,6 @@
-execute positioned 695 93 28 run function luigis_mansion:spawn_entities/ghost/red_grabbing_ghost
-execute positioned 693 93 26 run function luigis_mansion:spawn_entities/ghost/red_grabbing_ghost
-execute positioned 691 94 21 run function luigis_mansion:spawn_entities/ghost/blue_twirler
-execute positioned 693 94 20 run function luigis_mansion:spawn_entities/ghost/blue_twirler
-execute positioned 694 94 18 run function luigis_mansion:spawn_entities/ghost/blue_twirler
+execute positioned 696 2 19 run function luigis_mansion:spawn_entities/ghost/red_grabbing_ghost
+execute positioned 694 2 17 run function luigis_mansion:spawn_entities/ghost/red_grabbing_ghost
+execute positioned 692 3 12 run function luigis_mansion:spawn_entities/ghost/blue_twirler
+execute positioned 694 3 11 run function luigis_mansion:spawn_entities/ghost/blue_twirler
+execute positioned 695 3 9 run function luigis_mansion:spawn_entities/ghost/blue_twirler
 scoreboard players set #pipe_room Wave 2

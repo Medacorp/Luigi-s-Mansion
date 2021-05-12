@@ -1,9 +1,14 @@
 execute unless score #hidden_room Ticking matches 1 run function #luigis_mansion:room/hidden/hidden_room/load
-execute as @a[gamemode=!spectator,x=705,y=102,z=-23,dx=14,dy=6,dz=21] unless entity @s[scores={Room=20}] run scoreboard players operation @s LastRoom = @s Room
-execute as @e[type=!minecraft:item_frame,x=705,y=102,z=-23,dx=14,dy=6,dz=21] run scoreboard players set @s Room 20
+execute as @a[gamemode=!spectator,x=736,y=10,z=-35,dx=14,dy=8,dz=21] unless entity @s[scores={Room=20}] run scoreboard players operation @s LastRoom = @s Room
+execute as @e[type=!minecraft:item_frame,x=736,y=10,z=-35,dx=14,dy=8,dz=21] run scoreboard players set @s Room 20
 
-execute as @a[gamemode=!spectator,x=707,y=102,z=-21,dx=10,dy=6,dz=17] run function luigis_mansion:room/hidden/hidden_room/tick_per_player
+scoreboard players set @e[scores={Room=20},type=!minecraft:marker] MirrorX 749
+
+execute as @a[gamemode=!spectator,x=736,y=10,z=-35,dx=14,dy=8,dz=21] run function luigis_mansion:room/hidden/hidden_room/tick_per_player
 
 function #luigis_mansion:room/hidden/hidden_room/interactions/room
+
+clone 739 13 -32 739 13 -32 759 13 -32
+clone 739 13 -17 739 13 -17 759 13 -17
 
 function luigis_mansion:room/hidden/hidden_room/ghosts

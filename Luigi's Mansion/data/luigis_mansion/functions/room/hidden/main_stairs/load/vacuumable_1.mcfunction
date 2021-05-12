@@ -1,1 +1,1 @@
-setblock 666 106 35 minecraft:cobweb
+setblock 661 15 55 minecraft:cobweb
