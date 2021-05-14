@@ -1,2 +1,2 @@
-setblock 737 22 2 minecraft:tripwire_hook[facing=east]
+execute positioned 751 13 12 run function luigis_mansion:blocks/unlit_candles
 scoreboard players reset #foyer_candle_3

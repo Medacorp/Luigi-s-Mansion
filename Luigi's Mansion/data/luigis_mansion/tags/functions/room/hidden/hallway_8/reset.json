@@ -1,0 +1,14 @@
+{
+    "values": [
+        "luigis_mansion:room/hidden/hallway_8/reset/unload",
+        "#luigis_mansion:room/hidden/hallway_8/turn_lights/off",
+        "luigis_mansion:room/hidden/hallway_8/reset/candle_1",
+        "luigis_mansion:room/hidden/hallway_8/reset/candle_2",
+        "luigis_mansion:room/hidden/hallway_8/reset/candle_3",
+        "luigis_mansion:room/hidden/hallway_8/reset/candle_4",
+        "luigis_mansion:room/hidden/hallway_8/reset/fire",
+        "luigis_mansion:room/hidden/hallway_8/reset/lamp",
+        "luigis_mansion:room/hidden/hallway_8/reset/vacuumable_1",
+        "luigis_mansion:room/hidden/hallway_8/reset/vacuumable_2"
+    ]
+}

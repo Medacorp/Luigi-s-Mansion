@@ -19,10 +19,10 @@ execute if score #temp Searched matches 1 run setblock 690 11 79 minecraft:warpe
 execute if score #temp Searched matches 1 run setblock 690 12 79 minecraft:warped_door[open=true,facing=east,half=upper,hinge=right,powered=true]
 execute if score #temp Searched matches 1 run setblock 670 11 79 minecraft:warped_door[open=true,facing=west,half=lower,hinge=left,powered=true]
 execute if score #temp Searched matches 1 run setblock 670 12 79 minecraft:warped_door[open=true,facing=west,half=upper,hinge=left,powered=true]
-execute if score #temp Searched matches 0 run playsound luigis_mansion:block.door.close block @a[scores={Room=13}] 696.0 11 79 1 1
-execute if score #temp Searched matches 0 run playsound luigis_mansion:block.door.close block @a[scores={Room=14}] 691.0 11 79 1 1
-execute if score #temp Searched matches 1 run playsound luigis_mansion:block.door.open block @a[scores={Room=13}] 696.0 11 79 1 1
-execute if score #temp Searched matches 1 run playsound luigis_mansion:block.door.open block @a[scores={Room=14}] 691.0 11 79 1 1
+execute if score #temp Searched matches 0 run playsound luigis_mansion:block.door.close block @a[scores={Room=17}] 696.0 11 79 1 1
+execute if score #temp Searched matches 0 run playsound luigis_mansion:block.door.close block @a[scores={Room=18}] 691.0 11 79 1 1
+execute if score #temp Searched matches 1 run playsound luigis_mansion:block.door.open block @a[scores={Room=17}] 696.0 11 79 1 1
+execute if score #temp Searched matches 1 run playsound luigis_mansion:block.door.open block @a[scores={Room=18}] 691.0 11 79 1 1
 execute if score #temp Searched matches -1..0 run fill 696 11 79 696 12 79 minecraft:air replace #minecraft:doors
 execute if score #temp Searched matches -1..0 run fill 690 11 79 690 12 79 minecraft:air replace #minecraft:doors
 execute if score #temp Searched matches -1..0 run fill 670 11 79 670 12 79 minecraft:air replace #minecraft:doors
@@ -33,7 +33,7 @@ execute if score #temp Searched matches -1..0 run setblock 690 12 79 minecraft:w
 execute if score #temp Searched matches -1..0 run setblock 670 11 79 minecraft:warped_door[open=false,facing=west,half=lower,hinge=left,powered=true]
 execute if score #temp Searched matches -1..0 run setblock 670 12 79 minecraft:warped_door[open=false,facing=west,half=upper,hinge=left,powered=true]
 
-execute if score #temp Searched matches 1..2 as @a[x=696.0,y=11,z=79.0,dx=0,dy=1,dz=0] at @s run teleport @s 689 11 79
-execute if score #temp Searched matches 1..2 as @a[x=690.0,y=11,z=79.0,dx=0,dy=1,dz=0] at @s run teleport @s 697 11 79
+execute if score #temp Searched matches 1..2 as @a[x=696.0,y=11,z=79.0,dx=0,dy=1,dz=0] run teleport @s 689 11 79
+execute if score #temp Searched matches 1..2 as @a[x=690.0,y=11,z=79.0,dx=0,dy=1,dz=0] run teleport @s 697 11 79
 
 scoreboard players reset #temp Searched

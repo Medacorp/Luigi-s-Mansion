@@ -1,12 +1,12 @@
-scoreboard players set @s[scores={HallwayNoise=0}] HallwayNoise 150
-playsound luigis_mansion:entity.mr_luggs.eat hostile @s[scores={HallwayNoise=150}] 705.0 11 62 1
-playsound luigis_mansion:entity.mr_luggs.eat hostile @s[scores={HallwayNoise=140}] 705.0 11 62 1
-playsound luigis_mansion:entity.mr_luggs.eat hostile @s[scores={HallwayNoise=130}] 705.0 11 62 1
-playsound luigis_mansion:entity.mr_luggs.eat hostile @s[scores={HallwayNoise=120}] 705.0 11 62 1
-playsound luigis_mansion:entity.mr_luggs.eat hostile @s[scores={HallwayNoise=110}] 705.0 11 62 1
-playsound luigis_mansion:entity.mr_luggs.eat hostile @s[scores={HallwayNoise=100}] 705.0 11 62 1
-playsound luigis_mansion:entity.mr_luggs.eat hostile @s[scores={HallwayNoise=90}] 705.0 11 62 1
-playsound luigis_mansion:entity.mr_luggs.hit_table hostile @s[scores={HallwayNoise=70}] 705.0 11 62 1
-playsound luigis_mansion:entity.mr_luggs.hit_table hostile @s[scores={HallwayNoise=50}] 705.0 11 62 1
-playsound luigis_mansion:entity.mr_luggs.hit_table hostile @s[scores={HallwayNoise=30}] 705.0 11 62 1
-playsound luigis_mansion:entity.mr_luggs.hit_table hostile @s[scores={HallwayNoise=10}] 705.0 11 62 1
+scoreboard players set @s[scores={RoomNoise=0}] RoomNoise 150
+playsound luigis_mansion:entity.mr_luggs.eat hostile @s[scores={RoomNoise=150}] 705.0 11 62 1
+playsound luigis_mansion:entity.mr_luggs.eat hostile @s[scores={RoomNoise=140}] 705.0 11 62 1
+playsound luigis_mansion:entity.mr_luggs.eat hostile @s[scores={RoomNoise=130}] 705.0 11 62 1
+playsound luigis_mansion:entity.mr_luggs.eat hostile @s[scores={RoomNoise=120}] 705.0 11 62 1
+playsound luigis_mansion:entity.mr_luggs.eat hostile @s[scores={RoomNoise=110}] 705.0 11 62 1
+playsound luigis_mansion:entity.mr_luggs.eat hostile @s[scores={RoomNoise=100}] 705.0 11 62 1
+playsound luigis_mansion:entity.mr_luggs.eat hostile @s[scores={RoomNoise=90}] 705.0 11 62 1
+playsound luigis_mansion:entity.mr_luggs.hit_table hostile @s[scores={RoomNoise=70}] 705.0 11 62 1
+playsound luigis_mansion:entity.mr_luggs.hit_table hostile @s[scores={RoomNoise=50}] 705.0 11 62 1
+playsound luigis_mansion:entity.mr_luggs.hit_table hostile @s[scores={RoomNoise=30}] 705.0 11 62 1
+playsound luigis_mansion:entity.mr_luggs.hit_table hostile @s[scores={RoomNoise=10}] 705.0 11 62 1

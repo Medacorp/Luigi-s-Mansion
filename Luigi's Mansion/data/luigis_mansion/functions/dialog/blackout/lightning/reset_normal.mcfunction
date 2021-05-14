@@ -1,14 +1,18 @@
 execute if score #foyer Ticking matches 1 run function #luigis_mansion:room/normal/foyer/turn_lights/off
+execute if score #hallway_1 Ticking matches 1 run function #luigis_mansion:room/normal/hallway_1/turn_lights/off
 execute if score #parlor Ticking matches 1 run function #luigis_mansion:room/normal/parlor/turn_lights/off
 execute if score #anteroom Ticking matches 1 run function #luigis_mansion:room/normal/anteroom/turn_lights/off
 execute if score #wardrobe_room Ticking matches 1 run function #luigis_mansion:room/normal/wardrobe_room/turn_lights/off
 execute if score #balcony_1 Ticking matches 1 run function #luigis_mansion:room/normal/balcony_1/turn_lights/off
-execute if score #small_hallway Ticking matches 1 run function #luigis_mansion:room/normal/small_hallway/turn_lights/off
+execute if score #hallway_2 Ticking matches 1 run function #luigis_mansion:room/normal/hallway_2/turn_lights/off
 execute if score #study Ticking matches 1 run function #luigis_mansion:room/normal/study/turn_lights/off
 execute if score #master_bedroom Ticking matches 1 run function #luigis_mansion:room/normal/master_bedroom/turn_lights/off
 execute if score #nursery Ticking matches 1 run function #luigis_mansion:room/normal/nursery/turn_lights/off
-execute if score #main_hallway Ticking matches 1 run function #luigis_mansion:room/normal/main_hallway/turn_lights/off
-execute if score #basement_stairs Ticking matches 1 run function #luigis_mansion:room/normal/basement_stairs/turn_lights/off
+execute if score #hallway_3 Ticking matches 1 run function #luigis_mansion:room/normal/hallway_3/turn_lights/off
+execute if score #hallway_4 Ticking matches 1 run function #luigis_mansion:room/normal/hallway_4/turn_lights/off
+execute if score #hallway_5 Ticking matches 1 run function #luigis_mansion:room/normal/hallway_5/turn_lights/off
+execute if score #hallway_6 Ticking matches 1 run function #luigis_mansion:room/normal/hallway_6/turn_lights/off
+execute if score #hallway_7 Ticking matches 1 run function #luigis_mansion:room/normal/hallway_7/turn_lights/off
 execute if score #bathroom_1 Ticking matches 1 run function #luigis_mansion:room/normal/bathroom_1/turn_lights/off
 execute if score #ball_room Ticking matches 1 run function #luigis_mansion:room/normal/ball_room/turn_lights/off
 execute if score #storage_room Ticking matches 1 run function #luigis_mansion:room/normal/storage_room/turn_lights/off
@@ -26,9 +30,15 @@ execute if score #graveyard Ticking matches 1 run function #luigis_mansion:room/
 execute if score #courtyard Ticking matches 1 run function #luigis_mansion:room/normal/courtyard/turn_lights/off
 execute if score #bottom_of_the_well Ticking matches 1 run function #luigis_mansion:room/normal/bottom_of_the_well/turn_lights/off
 execute if score #rec_room Ticking matches 1 run function #luigis_mansion:room/normal/rec_room/turn_lights/off
-execute if score #main_stairs Ticking matches 1 run function #luigis_mansion:room/normal/main_stairs/turn_lights/off
+execute if score #hallway_8 Ticking matches 1 run function #luigis_mansion:room/normal/hallway_8/turn_lights/off
 execute if score #tea_room Ticking matches 1 run function #luigis_mansion:room/normal/tea_room/turn_lights/off
-execute if score #hallway Ticking matches 1 run function #luigis_mansion:room/normal/hallway/turn_lights/off
+execute if score #hallway_9 Ticking matches 1 run function #luigis_mansion:room/normal/hallway_9/turn_lights/off
+execute if score #hallway_10 Ticking matches 1 run function #luigis_mansion:room/normal/hallway_10/turn_lights/off
+execute if score #hallway_11 Ticking matches 1 run function #luigis_mansion:room/normal/hallway_11/turn_lights/off
+execute if score #hallway_12 Ticking matches 1 run function #luigis_mansion:room/normal/hallway_12/turn_lights/off
+execute if score #hallway_13 Ticking matches 1 run function #luigis_mansion:room/normal/hallway_13/turn_lights/off
+execute if score #hallway_14 Ticking matches 1 run function #luigis_mansion:room/normal/hallway_14/turn_lights/off
+execute if score #hallway_15 Ticking matches 1 run function #luigis_mansion:room/normal/hallway_15/turn_lights/off
 execute if score #washroom_2 Ticking matches 1 run function #luigis_mansion:room/normal/washroom_2/turn_lights/off
 execute if score #bathroom_2 Ticking matches 1 run function #luigis_mansion:room/normal/bathroom_2/turn_lights/off
 execute if score #nanas_room Ticking matches 1 run function #luigis_mansion:room/normal/nanas_room/turn_lights/off
@@ -38,19 +48,22 @@ execute if score #billiards_room Ticking matches 1 run function #luigis_mansion:
 execute if score #projection_room Ticking matches 1 run function #luigis_mansion:room/normal/projection_room/turn_lights/off
 execute if score #twins_room Ticking matches 1 run function #luigis_mansion:room/normal/twins_room/turn_lights/off
 execute if score #safari_room Ticking matches 1 run function #luigis_mansion:room/normal/safari_room/turn_lights/off
-execute if score #attic_hallway_1 Ticking matches 1 run function #luigis_mansion:room/normal/attic_hallway_1/turn_lights/off
+execute if score #hallway_16 Ticking matches 1 run function #luigis_mansion:room/normal/hallway_16/turn_lights/off
+execute if score #hallway_17 Ticking matches 1 run function #luigis_mansion:room/normal/hallway_17/turn_lights/off
 execute if score #balcony_2 Ticking matches 1 run function #luigis_mansion:room/normal/balcony_2/turn_lights/off
-execute if score #attic_hallway_2 Ticking matches 1 run function #luigis_mansion:room/normal/attic_hallway_2/turn_lights/off
+execute if score #hallway_18 Ticking matches 1 run function #luigis_mansion:room/normal/hallway_18/turn_lights/off
+execute if score #hallway_19 Ticking matches 1 run function #luigis_mansion:room/normal/hallway_19/turn_lights/off
 execute if score #telephone_room Ticking matches 1 run function #luigis_mansion:room/normal/telephone_room/turn_lights/off
-execute if score #breaker_room Ticking matches 1 unless data storage luigis_mansion:data current_state.current_data.used_keys{breaker_room:1b} run teleport @a[scores={Room=45},tag=!looking_at_map] 700 93 -26
-execute if score #breaker_room Ticking matches 1 unless data storage luigis_mansion:data current_state.current_data.used_keys{breaker_room:1b} run scoreboard players set @a[scores={Room=45},tag=looking_at_map] HomeX 70050
-execute if score #breaker_room Ticking matches 1 unless data storage luigis_mansion:data current_state.current_data.used_keys{breaker_room:1b} run scoreboard players set @a[scores={Room=45},tag=looking_at_map] HomeY 9300
-execute if score #breaker_room Ticking matches 1 unless data storage luigis_mansion:data current_state.current_data.used_keys{breaker_room:1b} run scoreboard players set @a[scores={Room=45},tag=looking_at_map] HomeZ -2550
-execute if entity @a[tag=looking_at_map,limit=1] run function luigis_mansion:items/gameboy_horror/map/display/normal/door/basement_stairs_breaker_room
+execute if score #breaker_room Ticking matches 1 unless data storage luigis_mansion:data current_state.current_data.used_keys{breaker_room:1b} run teleport @a[scores={Room=57},tag=!looking_at_map] 714 2 -47
+execute if score #breaker_room Ticking matches 1 unless data storage luigis_mansion:data current_state.current_data.used_keys{breaker_room:1b} run scoreboard players set @a[scores={Room=57},tag=looking_at_map] HomeX 71450
+execute if score #breaker_room Ticking matches 1 unless data storage luigis_mansion:data current_state.current_data.used_keys{breaker_room:1b} run scoreboard players set @a[scores={Room=57},tag=looking_at_map] HomeY 200
+execute if score #breaker_room Ticking matches 1 unless data storage luigis_mansion:data current_state.current_data.used_keys{breaker_room:1b} run scoreboard players set @a[scores={Room=57},tag=looking_at_map] HomeZ -4650
+execute if entity @a[tag=looking_at_map,limit=1] run function luigis_mansion:items/gameboy_horror/map/display/normal/door/hallway_7_breaker_room
 execute if score #breaker_room Ticking matches 1 run function #luigis_mansion:room/normal/breaker_room/turn_lights/off
 execute if score #cellar Ticking matches 1 run function #luigis_mansion:room/normal/cellar/turn_lights/off
-execute if score #basement_hallway Ticking matches 1 run function #luigis_mansion:room/normal/basement_hallway/turn_lights/off
-execute if score #curved_hallway Ticking matches 1 run function #luigis_mansion:room/normal/curved_hallway/turn_lights/off
+execute if score #hallway_20 Ticking matches 1 run function #luigis_mansion:room/normal/hallway_20/turn_lights/off
+execute if score #hallway_21 Ticking matches 1 run function #luigis_mansion:room/normal/hallway_21/turn_lights/off
+execute if score #hallway_22 Ticking matches 1 run function #luigis_mansion:room/normal/hallway_22/turn_lights/off
 execute if score #clockwork_room Ticking matches 1 run function #luigis_mansion:room/normal/clockwork_room/turn_lights/off
 execute if score #roof Ticking matches 1 run function #luigis_mansion:room/normal/roof/turn_lights/off
 execute if score #armory Ticking matches 1 run function #luigis_mansion:room/normal/armory/turn_lights/off

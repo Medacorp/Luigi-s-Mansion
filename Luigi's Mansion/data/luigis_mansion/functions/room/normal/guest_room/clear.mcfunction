@@ -4,7 +4,7 @@ execute if block 741 21 -43 minecraft:redstone_lamp run playsound luigis_mansion
 execute if block 741 21 -43 minecraft:redstone_lamp run playsound luigis_mansion:block.chest.spawn block @a 729 26 -39 2
 execute unless block 741 21 -43 minecraft:redstone_lamp run playsound luigis_mansion:block.chest.spawn block @a 741 20 -39 2
 execute unless block 741 21 -43 minecraft:redstone_lamp run playsound luigis_mansion:block.chest.spawn block @a 729 20 -39 2
-stopsound @a[scores={Room=57}] music
-playsound luigis_mansion:music.cleared_room music @a[scores={Room=57}] ~ ~ ~ 10000
-scoreboard players set @a[scores={Room=57}] Music 40
-scoreboard players set @a[scores={Room=57}] MusicType 9
+stopsound @a[scores={Room=70}] music
+playsound luigis_mansion:music.cleared_room music @a[scores={Room=70}] ~ ~ ~ 10000
+scoreboard players set @a[scores={Room=70}] Music 40
+scoreboard players set @a[scores={Room=70}] MusicType 9

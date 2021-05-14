@@ -14,10 +14,10 @@ execute if score #temp Searched matches 1 run setblock 737 29 6 minecraft:oak_do
 execute if score #temp Searched matches 1 run setblock 737 30 6 minecraft:oak_door[open=true,facing=west,half=upper,hinge=right,powered=false]
 execute if score #temp Searched matches 1 run setblock 698 120 -4 minecraft:oak_door[open=true,facing=east,half=lower,hinge=left,powered=false]
 execute if score #temp Searched matches 1 run setblock 698 121 -4 minecraft:oak_door[open=true,facing=east,half=upper,hinge=left,powered=false]
-execute if score #temp Searched matches 0 run playsound luigis_mansion:block.door.close block @a[scores={Room=44}] 737.0 29 6 1 1
-execute if score #temp Searched matches 0 run playsound luigis_mansion:block.door.close block @a[scores={Room=49}] 699.0 120 -4 1 1
-execute if score #temp Searched matches 1 run playsound luigis_mansion:block.door.open block @a[scores={Room=44}] 737.0 29 6 1 1
-execute if score #temp Searched matches 1 run playsound luigis_mansion:block.door.open block @a[scores={Room=49}] 699.0 120 -4 1 1
+execute if score #temp Searched matches 0 run playsound luigis_mansion:block.door.close block @a[scores={Room=56}] 737.0 29 6 1 1
+execute if score #temp Searched matches 0 run playsound luigis_mansion:block.door.close block @a[scores={Room=62}] 699.0 120 -4 1 1
+execute if score #temp Searched matches 1 run playsound luigis_mansion:block.door.open block @a[scores={Room=56}] 737.0 29 6 1 1
+execute if score #temp Searched matches 1 run playsound luigis_mansion:block.door.open block @a[scores={Room=62}] 699.0 120 -4 1 1
 execute if score #temp Searched matches -1..0 run fill 737 29 6 737 30 6 minecraft:air replace #minecraft:doors
 execute if score #temp Searched matches -1..0 run fill 698 120 -4 698 121 -4 minecraft:air replace #minecraft:doors
 execute if score #temp Searched matches -1..0 run setblock 737 29 6 minecraft:oak_door[open=false,facing=west,half=lower,hinge=right,powered=false]
@@ -25,9 +25,9 @@ execute if score #temp Searched matches -1..0 run setblock 737 30 6 minecraft:oa
 execute if score #temp Searched matches -1..0 run setblock 698 120 -4 minecraft:oak_door[open=false,facing=east,half=lower,hinge=left,powered=false]
 execute if score #temp Searched matches -1..0 run setblock 698 121 -4 minecraft:oak_door[open=false,facing=east,half=upper,hinge=left,powered=false]
 
-execute if score #temp Searched matches 1..2 as @a[x=752.0,y=29,z=6.0,dx=0,dy=1,dz=0] run scoreboard players set @s HallwayNoise 0
-execute if score #temp Searched matches 1..2 as @a[x=737.0,y=29,z=6.0,dx=0,dy=1,dz=0] at @s run teleport @s 697 120 -4
+execute if score #temp Searched matches 1..2 as @a[x=752.0,y=29,z=6.0,dx=0,dy=1,dz=0] run scoreboard players set @s RoomNoise 0
+execute if score #temp Searched matches 1..2 as @a[x=737.0,y=29,z=6.0,dx=0,dy=1,dz=0] run teleport @s 697 120 -4
 execute if score #temp Searched matches 1..2 as @a[x=698.0,y=120,z=-4.0,dx=0,dy=1,dz=0] run scoreboard players reset @s Time
-execute if score #temp Searched matches 1..2 as @a[x=698.0,y=120,z=-4.0,dx=0,dy=1,dz=0] at @s run teleport @s 738 29 6
+execute if score #temp Searched matches 1..2 as @a[x=698.0,y=120,z=-4.0,dx=0,dy=1,dz=0] run teleport @s 738 29 6
 
 scoreboard players reset #temp Searched

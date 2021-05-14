@@ -1,4 +1,4 @@
-execute if score #armory Wave matches 1 unless entity @e[tag=ghost,scores={Room=51},tag=!optional_ghost] run function luigis_mansion:room/hidden/armory/clear
+execute if score #armory Wave matches 1 unless entity @e[tag=ghost,scores={Room=64},tag=!optional_ghost] run function luigis_mansion:room/hidden/armory/clear
 execute if score #armory Wave matches 1 if entity @e[x=757.5,y=29,z=-56.5,distance=..0.7,tag=ghost,tag=hidden,tag=spawn] run function luigis_mansion:room/hidden/armory/wave_1_1
 execute if score #armory Wave matches 1 if entity @e[x=759.5,y=29,z=-51.5,distance=..0.7,tag=ghost,tag=hidden,tag=spawn] run function luigis_mansion:room/hidden/armory/wave_1_2
 execute if score #armory Wave matches 1 if entity @e[x=753.5,y=29,z=-45.5,distance=..0.7,tag=ghost,tag=hidden,tag=spawn] run function luigis_mansion:room/hidden/armory/wave_1_3

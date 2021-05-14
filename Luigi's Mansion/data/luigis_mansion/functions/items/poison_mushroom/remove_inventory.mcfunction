@@ -4,4 +4,4 @@ clear @s
 loot replace entity @s armor.head mine 27 0 0 minecraft:golden_pickaxe{phi:{drop_contents:true}}
 setblock 27 0 0 minecraft:bedrock
 
-item entity @s weapon.mainhand replace minecraft:carrot_on_a_stick{HideFlags:63,Unbreakable:1b,Damage:1,CustomModelData:1,display:{Name:'{"italic":false,"color":"white","translate":"luigis_mansion:item.flashlight"}'},luigis_mansion:{id:"luigis_mansion:flashlight"}}
+item replace entity @s weapon.mainhand with minecraft:carrot_on_a_stick{HideFlags:63,Unbreakable:1b,Damage:1,CustomModelData:1,display:{Name:'{"italic":false,"color":"white","translate":"luigis_mansion:item.flashlight"}'},luigis_mansion:{id:"luigis_mansion:flashlight"}}

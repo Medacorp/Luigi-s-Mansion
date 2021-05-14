@@ -12,7 +12,7 @@ execute rotated ~ 0 positioned ^ ^ ^-4 run function luigis_mansion:entities/play
 execute if score #changing_max_health Selected matches 0 run title @s[gamemode=!creative] actionbar {"translate":"luigis_mansion:message.health","with":[{"score":{"name":"@s","objective":"Health"}}],"color":"red"}
 execute if score #changing_max_health Selected matches 1 run title @s[gamemode=!creative] actionbar {"translate":"luigis_mansion:message.health.out_of","with":[{"score":{"name":"@s","objective":"Health"}},{"score":{"name":"@s","objective":"MaxHealth"}}],"color":"red"}
 
-scoreboard players remove @s[scores={HallwayNoise=1..}] HallwayNoise 1
+scoreboard players remove @s[scores={RoomNoise=1..}] RoomNoise 1
 scoreboard players remove @s[scores={Sound=1..}] Sound 1
 execute if entity @s[tag=poltergust_malfunction] run function luigis_mansion:entities/player/poltergust_breakage
 execute if entity @s[scores={Pull=20..},gamemode=!creative] run function luigis_mansion:entities/player/pulled_damage

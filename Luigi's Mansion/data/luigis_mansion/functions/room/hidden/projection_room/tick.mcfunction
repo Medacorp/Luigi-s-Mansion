@@ -1,8 +1,8 @@
 execute unless score #projection_room Ticking matches 1 run function #luigis_mansion:room/hidden/projection_room/load
-execute as @a[gamemode=!spectator,x=673,y=10,z=-31,dx=15,dy=8,dz=16] unless entity @s[scores={Room=38}] run scoreboard players operation @s LastRoom = @s Room
-execute as @e[type=!minecraft:item_frame,x=673,y=10,z=-31,dx=15,dy=8,dz=16] run scoreboard players set @s Room 38
+execute as @a[gamemode=!spectator,x=673,y=10,z=-31,dx=15,dy=8,dz=16] unless entity @s[scores={Room=48}] run scoreboard players operation @s LastRoom = @s Room
+execute as @e[type=!minecraft:item_frame,x=673,y=10,z=-31,dx=15,dy=8,dz=16] run scoreboard players set @s Room 48
 
-execute as @a[gamemode=!spectator,x=673,y=10,z=-31,dx=15,dy=8,dz=16] run function luigis_mansion:room/hidden/projection_room/tick_per_player
+execute as @a[gamemode=!spectator,scores={Room=48}] run function luigis_mansion:room/normal/projection_room/tick_per_player
 
 function #luigis_mansion:room/hidden/projection_room/interactions/room
 

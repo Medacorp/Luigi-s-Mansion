@@ -132,7 +132,8 @@ execute if entity @s[scores={Dialog=2718}] if entity @a[scores={EGaddTrainChoice
 execute if entity @s[scores={Dialog=2718}] if entity @a[scores={EGaddTrainChoice=1}] run scoreboard players add @s Dialog 8
 execute if entity @s[scores={Dialog=2718}] if entity @a[scores={EGaddTrainChoice=2}] if score #players Totals matches 1 run tellraw @a[tag=same_room] {"translate":"chat.type.text","with":[{"translate":"luigis_mansion:entity.e_gadd","color":"green"},{"translate":"luigis_mansion:dialog.training_room.26.no.1"}]}
 execute if entity @s[scores={Dialog=2718}] if entity @a[scores={EGaddTrainChoice=2}] if score #players Totals matches 2.. run tellraw @a[tag=same_room] {"translate":"chat.type.text","with":[{"translate":"luigis_mansion:entity.e_gadd","color":"green"},{"translate":"luigis_mansion:dialog.training_room.26.no.1.more"}]}
-execute if entity @s[scores={Dialog=2750}] run advancement grant @a[tag=same_room] only luigis_mansion:lab/training_room
+execute if entity @s[scores={Dialog=2750}] run data modify storage luigis_mansion:data rooms.training_room merge value {cleared:1b}
+execute if entity @s[scores={Dialog=2750}] run advancement grant @a[tag=same_room] until luigis_mansion:lab/training_room
 execute if entity @s[scores={Dialog=2750}] if entity @a[tag=looking_at_map,limit=1] run function luigis_mansion:items/gameboy_horror/map/display/lab/training_room
 execute if entity @s[scores={Dialog=2750}] if entity @a[scores={EGaddTrainChoice=1},limit=1] as @a[tag=same_room,tag=looking_at_map] run function luigis_mansion:items/gameboy_horror/map/close
 execute if entity @s[scores={Dialog=2750}] if entity @a[scores={EGaddTrainChoice=1},limit=1] as @a[tag=same_room] run function luigis_mansion:entities/e_gadd/to_gallery

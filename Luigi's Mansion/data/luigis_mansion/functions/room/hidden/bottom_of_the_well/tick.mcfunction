@@ -1,11 +1,11 @@
 execute unless score #bottom_of_the_well Ticking matches 1 run function #luigis_mansion:room/hidden/bottom_of_the_well/load
-execute as @a[gamemode=!spectator,x=645,y=92,z=14,dx=6,dy=7,dz=11] unless entity @s[scores={Room=27}] run scoreboard players operation @s LastRoom = @s Room
-execute as @e[type=!minecraft:item_frame,x=645,y=92,z=14,dx=6,dy=7,dz=11] run scoreboard players set @s Room 27
-tag @e[tag=ghost,scores={Room=27}] add no_hidden_move
+execute as @a[gamemode=!spectator,x=645,y=92,z=14,dx=6,dy=7,dz=11] unless entity @s[scores={Room=31}] run scoreboard players operation @s LastRoom = @s Room
+execute as @e[type=!minecraft:item_frame,x=645,y=92,z=14,dx=6,dy=7,dz=11] run scoreboard players set @s Room 31
+tag @e[tag=ghost,scores={Room=31}] add no_hidden_move
 
-scoreboard players set @e[scores={Room=27},type=!minecraft:marker] MirrorZ 41
+scoreboard players set @e[scores={Room=31},type=!minecraft:marker] MirrorZ 41
 
-execute as @a[gamemode=!spectator,x=647,y=92,z=15,dx=2,dy=7,dz=8] run function luigis_mansion:room/hidden/bottom_of_the_well/tick_per_player
+execute as @a[gamemode=!spectator,scores={Room=31}] run function luigis_mansion:room/normal/bottom_of_the_well/tick_per_player
 
 function #luigis_mansion:room/hidden/bottom_of_the_well/interactions/room
 

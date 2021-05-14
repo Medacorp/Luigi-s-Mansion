@@ -1,1 +1,0 @@
-function luigis_mansion:room/normal/curved_hallway/remove_blockade

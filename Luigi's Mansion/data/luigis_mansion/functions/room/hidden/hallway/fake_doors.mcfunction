@@ -1,4 +1,0 @@
-execute positioned 713 29 49 unless entity @e[distance=..0.7,tag=fake_door,limit=1] run function luigis_mansion:spawn_entities/fake_door/attic/west
-execute if entity @a[tag=blackout,limit=1] positioned 706 20 31 unless entity @e[distance=..0.7,tag=fake_door,limit=1] run function luigis_mansion:spawn_entities/fake_door/normal/north
-execute if entity @a[tag=blackout,limit=1] positioned 691 20 31 unless entity @e[distance=..0.7,tag=fake_door,limit=1] run function luigis_mansion:spawn_entities/fake_door/normal/north
-scoreboard players set #hallway FakeDoors 1

@@ -1,1 +1,0 @@
-execute if entity @a[tag=blackout] unless score #curved_hallway Wave matches 1.. run function luigis_mansion:room/hidden/curved_hallway/blackout

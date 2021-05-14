@@ -1,1 +1,0 @@
-scoreboard players set #basement_stairs Wave 100

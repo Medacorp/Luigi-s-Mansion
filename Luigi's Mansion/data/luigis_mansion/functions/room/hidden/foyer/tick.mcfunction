@@ -1,19 +1,13 @@
 execute unless score #foyer Ticking matches 1 run function #luigis_mansion:room/hidden/foyer/load
-execute as @a[gamemode=!spectator,x=735,y=10,z=-4,dx=21,dy=17,dz=21] unless entity @s[scores={Room=1}] run scoreboard players operation @s LastRoom = @s Room
-execute as @e[type=!minecraft:item_frame,x=735,y=10,z=-4,dx=21,dy=17,dz=21] run scoreboard players set @s Room 1
+execute as @a[gamemode=!spectator,x=744,y=10,z=-4,dx=14,dy=17,dz=21] unless entity @s[scores={Room=1}] run scoreboard players operation @s LastRoom = @s Room
+execute as @e[type=!minecraft:item_frame,x=744,y=10,z=-4,dx=14,dy=17,dz=21] run scoreboard players set @s Room 1
 tag @e[tag=ghost,scores={Room=1}] add no_hidden_move
 
-execute as @a[gamemode=!spectator,x=735,y=10,z=-4,dx=21,dy=17,dz=21] run function luigis_mansion:room/hidden/foyer/tick_per_player
-
-execute as @e[tag=eternal_gold_coin,scores={Room=1}] run scoreboard players add #temp Wave 1
-execute if score #temp Wave matches ..7 run data modify storage luigis_mansion:data current_state.current_data.money_spawned merge value {foyer_money:1b}
-scoreboard players reset #temp Wave
+execute as @a[gamemode=!spectator,scores={Room=1}] run function luigis_mansion:room/normal/foyer/tick_per_player
 
 function #luigis_mansion:room/hidden/foyer/interactions/room
 
 function luigis_mansion:room/hidden/foyer/ghosts
 
 function luigis_mansion:room/hidden/door/boo_woods_foyer
-function luigis_mansion:room/hidden/door/foyer_parlor
-function luigis_mansion:room/hidden/door/foyer_small_hallway
-function luigis_mansion:room/hidden/door/foyer_main_hallway
+function luigis_mansion:room/hidden/door/foyer_hallway_3

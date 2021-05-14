@@ -14,10 +14,10 @@ execute if score #temp Searched matches 1 run setblock 682 20 -41 minecraft:dark
 execute if score #temp Searched matches 1 run setblock 682 21 -41 minecraft:dark_oak_door[open=true,facing=south,half=upper,hinge=left,powered=false]
 execute if score #temp Searched matches 1 run setblock 672 20 -41 minecraft:dark_oak_door[open=true,facing=south,half=lower,hinge=right,powered=false]
 execute if score #temp Searched matches 1 run setblock 672 21 -41 minecraft:dark_oak_door[open=true,facing=south,half=upper,hinge=right,powered=false]
-execute if score #temp Searched matches 0 run playsound luigis_mansion:block.door.close block @a[scores={Room=3}] 689 20 -27.0 1 1
-execute if score #temp Searched matches 0 run playsound luigis_mansion:block.door.close block @a[scores={Room=4}] 682 20 -40.0 1 1
-execute if score #temp Searched matches 1 run playsound luigis_mansion:block.door.open block @a[scores={Room=3}] 689 20 -27.0 1 1
-execute if score #temp Searched matches 1 run playsound luigis_mansion:block.door.open block @a[scores={Room=4}] 682 20 -40.0 1 1
+execute if score #temp Searched matches 0 run playsound luigis_mansion:block.door.close block @a[scores={Room=4}] 689 20 -27.0 1 1
+execute if score #temp Searched matches 0 run playsound luigis_mansion:block.door.close block @a[scores={Room=5}] 682 20 -40.0 1 1
+execute if score #temp Searched matches 1 run playsound luigis_mansion:block.door.open block @a[scores={Room=4}] 689 20 -27.0 1 1
+execute if score #temp Searched matches 1 run playsound luigis_mansion:block.door.open block @a[scores={Room=5}] 682 20 -40.0 1 1
 execute if score #temp Searched matches -1..0 run fill 689 20 -27 689 21 -27 minecraft:air replace #minecraft:doors
 execute if score #temp Searched matches -1..0 run fill 682 20 -41 682 21 -41 minecraft:air replace #minecraft:doors
 execute if score #temp Searched matches -1..0 run fill 672 20 -41 672 21 -41 minecraft:air replace #minecraft:doors
@@ -28,7 +28,7 @@ execute if score #temp Searched matches -1..0 run setblock 682 21 -41 minecraft:
 execute if score #temp Searched matches -1..0 run setblock 672 20 -41 minecraft:dark_oak_door[open=false,facing=south,half=lower,hinge=right,powered=false]
 execute if score #temp Searched matches -1..0 run setblock 672 21 -41 minecraft:dark_oak_door[open=false,facing=south,half=upper,hinge=right,powered=false]
 
-execute if score #temp Searched matches 1..2 as @a[x=689.0,y=20,z=-27.0,dx=0,dy=1,dz=0] at @s run teleport @s 682 20 -42
-execute if score #temp Searched matches 1..2 as @a[x=682.0,y=20,z=-41.0,dx=0,dy=1,dz=0] at @s run teleport @s 689 20 -26
+execute if score #temp Searched matches 1..2 as @a[x=689.0,y=20,z=-27.0,dx=0,dy=1,dz=0] run teleport @s 682 20 -42
+execute if score #temp Searched matches 1..2 as @a[x=682.0,y=20,z=-41.0,dx=0,dy=1,dz=0] run teleport @s 689 20 -26
 
 scoreboard players reset #temp Searched

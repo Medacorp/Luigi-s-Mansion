@@ -1,7 +1,7 @@
 execute if entity @s[scores={Dialog=1}] run stopsound @a[tag=same_room] music
 execute if entity @s[scores={Dialog=1}] run playsound luigis_mansion:music.first_key music @a[tag=same_room] ~ ~ ~ 1000
 execute if entity @s[scores={Dialog=1}] run scoreboard players set @a[tag=same_room] Music 470
-data merge entity @s[scores={Dialog=1}] {ArmorItems:[{},{},{},{id:"minecraft:brick",Count:1b,tag:{CustomModelData:1}}]}
+item replace entity @s[scores={Dialog=1}] armor.head with minecraft:brick{CustomModelData:1}
 scoreboard players add @s Dialog 1
 execute if entity @s[scores={Dialog=1..370}] run particle minecraft:dust 1 0.6 0 1 ~ ~0.5 ~ 0.2 0.2 0.2 0 5
 teleport @s[scores={Dialog=1..30}] ~ ~ ~-0.025
@@ -10,7 +10,7 @@ teleport @s[scores={Dialog=61..90}] ~ ~ ~-0.05
 teleport @s[scores={Dialog=91..120}] ~ ~ ~0.025
 teleport @s[scores={Dialog=121..122}] ~ ~-0.2 ~
 execute if entity @s[scores={Dialog=216}] run summon minecraft:armor_stand ~ ~ ~ {Pose:{Head:[0.0f,90.0f,0.01f]},Marker:1b,Invisible:1b,Silent:1b,ArmorItems:[{},{},{},{id:"minecraft:brick",Count:1b,tag:{CustomModelData:1}}],Tags:["parlor_key"],Rotation:[-90.0f,0.0f],DisabledSlots:2039583}
-item entity @s[scores={Dialog=216}] armor.head replace minecraft:air
+item replace entity @s[scores={Dialog=216}] armor.head with minecraft:air
 execute if entity @s[scores={Dialog=216..220}] as @e[tag=parlor_key,limit=1] at @s run teleport @s ~ ~0.1 ~
 execute if entity @s[scores={Dialog=221..231}] as @e[tag=parlor_key,limit=1] at @s run teleport @s ~ ~-0.3 ~
 execute if entity @s[scores={Dialog=232}] as @e[tag=parlor_key,limit=1] at @s run teleport @s ~0.35 ~0.2 ~0.35

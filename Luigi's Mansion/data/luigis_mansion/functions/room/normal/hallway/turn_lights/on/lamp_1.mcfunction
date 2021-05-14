@@ -1,1 +1,0 @@
-execute if data storage luigis_mansion:data current_state.current_data.rooms.hallway{cleared:1b} if entity @a[tag=!blackout] run setblock 682 26 8 minecraft:stone_button[face=floor,powered=true]

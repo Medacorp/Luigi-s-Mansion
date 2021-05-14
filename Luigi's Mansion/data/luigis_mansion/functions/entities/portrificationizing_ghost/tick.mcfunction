@@ -116,7 +116,7 @@ execute if entity @s[scores={Dialog=550}] run setblock 770 79 -7 minecraft:green
 execute if entity @s[scores={Dialog=570}] run setblock 770 81 -7 minecraft:green_terracotta
 execute if entity @s[scores={Dialog=570}] run setblock 770 79 -7 minecraft:air
 execute if entity @s[scores={Dialog=570},tag=!dead] run function #luigis_mansion:entities/portrificationizing_ghost/portrait
-item entity @s[scores={Dialog=570}] armor.head replace minecraft:air
+item replace entity @s[scores={Dialog=570}] armor.head with minecraft:air
 execute if entity @s[scores={Dialog=570}] run teleport @s 770 78 -8
 execute if entity @s[scores={Dialog=570}] positioned ~ ~1 ~ run teleport @e[distance=..0.7,type=minecraft:item_frame,limit=1] 770 79 -8
 execute if entity @s[scores={Dialog=575}] run teleport @s 770 78 -9

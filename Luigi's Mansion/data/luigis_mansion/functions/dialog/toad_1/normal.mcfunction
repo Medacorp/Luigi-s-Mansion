@@ -32,6 +32,7 @@ execute if entity @s[scores={Dialog=946}] if entity @a[scores={Toad1Choice=1}] r
 execute if entity @s[scores={Dialog=946}] if entity @a[scores={Toad1Choice=1}] if score #players Totals matches 1 run tellraw @a[tag=same_room] {"translate":"chat.type.text","with":[{"translate":"luigis_mansion:entity.toad","color":"green"},{"translate":"luigis_mansion:dialog.toad_1.yes.1","with":[{"selector":"@p[gamemode=!spectator]"}]}]}
 execute if entity @s[scores={Dialog=946}] if entity @a[scores={Toad1Choice=1}] if score #players Totals matches 2.. run tellraw @a[tag=same_room] {"translate":"chat.type.text","with":[{"translate":"luigis_mansion:entity.toad","color":"green"},{"translate":"luigis_mansion:dialog.toad_1.yes.1.more"}]}
 execute if entity @s[scores={Dialog=1042}] run function luigis_mansion:room/normal/foyer/clear
+execute if entity @s[scores={Dialog=1042}] run function luigis_mansion:room/normal/hallway_1/clear
 tag @s[scores={Dialog=1062}] add explaining
 execute if entity @s[scores={Dialog=1062}] if score #players Totals matches 1 run tellraw @a[tag=same_room] {"translate":"chat.type.text","with":[{"translate":"luigis_mansion:entity.toad","color":"green"},{"translate":"luigis_mansion:dialog.toad_1.yes.2"}]}
 execute if entity @s[scores={Dialog=1062}] if score #players Totals matches 2.. run tellraw @a[tag=same_room] {"translate":"chat.type.text","with":[{"translate":"luigis_mansion:entity.toad","color":"green"},{"translate":"luigis_mansion:dialog.toad_1.yes.2.more"}]}

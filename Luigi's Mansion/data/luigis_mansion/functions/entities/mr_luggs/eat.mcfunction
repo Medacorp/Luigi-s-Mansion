@@ -1,7 +1,7 @@
 execute if entity @s[tag=!visible] run function luigis_mansion:entities/mr_luggs/turn_visible
 execute unless entity @s[scores={Dialog=1..}] at @a[tag=same_room] positioned ^ ^ ^8 if entity @s[distance=..8] run function luigis_mansion:entities/mr_luggs/turn_invisible
-execute unless entity @s[scores={Dialog=2..}] if entity @s[tag=visible] run item entity @e[tag=this_food,limit=1] armor.head replace minecraft:diamond_pickaxe{Unbreakable:1b,Damage:4,CustomModelData:11}
-execute if entity @s[tag=!visible] run item entity @e[tag=this_food,limit=1] armor.head replace minecraft:air
+execute unless entity @s[scores={Dialog=2..}] if entity @s[tag=visible] run item replace entity @e[tag=this_food,limit=1] armor.head with minecraft:diamond_pickaxe{Unbreakable:1b,Damage:4,CustomModelData:11}
+execute if entity @s[tag=!visible] run item replace entity @e[tag=this_food,limit=1] armor.head with minecraft:air
 execute unless entity @s[scores={Dialog=1..}] if block ^3 ^2 ^2 minecraft:purple_stained_glass if block ^-3 ^2 ^2 minecraft:purple_stained_glass run playsound luigis_mansion:music.solve_puzzle music @a[tag=same_room] ~ ~ ~ 10000
 execute unless entity @s[scores={Dialog=1..}] if block ^3 ^2 ^2 minecraft:purple_stained_glass if block ^-3 ^2 ^2 minecraft:purple_stained_glass run scoreboard players set @a[tag=same_room,scores={Music=..29}] Music 30
 execute unless entity @s[scores={Dialog=1..}] if block ^3 ^2 ^2 minecraft:purple_stained_glass if block ^-3 ^2 ^2 minecraft:purple_stained_glass run scoreboard players set @s Dialog 1

@@ -1,6 +1,7 @@
-scoreboard players operation #temp Room = @s Room
-execute as @a[gamemode=!spectator] if score @s Room = #temp Room run tag @s add same_room
+execute store result score #temp Room run scoreboard players get @s Room
+execute as @a[gamemode=!spectator] run function #luigis_mansion:get_same_room
 scoreboard players reset #temp Room
+
 tag @s[tag=remove_from_existence,tag=cannot_be_removed] remove remove_from_existence
 
 execute if entity @s[tag=door] run function luigis_mansion:animations/closed_door

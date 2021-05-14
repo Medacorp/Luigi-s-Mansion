@@ -40,7 +40,7 @@ execute if score #temp Searched matches -1..0 in luigis_mansion:hidden run setbl
 execute in luigis_mansion:hidden if score #temp Searched matches 1..2 run scoreboard players set @a[x=755.0,y=11,z=6.0,dx=0,dy=1,dz=1] Room 0
 execute in luigis_mansion:hidden if score #temp Searched matches 1..2 run scoreboard players set @a[x=755.0,y=11,z=6.0,dx=0,dy=1,dz=1] LastRoom 0
 execute in luigis_mansion:hidden if score #temp Searched matches 1..2 as @a[x=755.0,y=11,z=6.0,dx=0,dy=1,dz=1] run function luigis_mansion:other/music/set/silence
-execute in luigis_mansion:hidden if score #temp Searched matches 1..2 as @a[x=755.0,y=11,z=6.0,dx=0,dy=1,dz=1] at @s in minecraft:overworld run teleport @s 721 102 8.0
-execute in minecraft:overworld if score #temp Searched matches 1..2 as @a[x=720.0,y=102,z=7.0,dx=0,dy=1,dz=1] at @s in luigis_mansion:hidden run teleport @s 754 11 7.0
+execute in luigis_mansion:hidden if score #temp Searched matches 1..2 as @a[x=755.0,y=11,z=6.0,dx=0,dy=1,dz=1] in minecraft:overworld run teleport @s 721 102 8.0
+execute in minecraft:overworld if score #temp Searched matches 1..2 as @a[x=720.0,y=102,z=7.0,dx=0,dy=1,dz=1] in luigis_mansion:hidden run teleport @s 754 11 7.0
 
 scoreboard players reset #temp Searched

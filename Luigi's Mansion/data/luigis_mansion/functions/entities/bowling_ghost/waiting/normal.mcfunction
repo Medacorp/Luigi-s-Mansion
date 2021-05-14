@@ -1,6 +1,3 @@
-scoreboard players add @s ActionTime 1
-scoreboard players set @s[scores={ActionTime=1}] AnimationProg 0
-function luigis_mansion:animations/bowling_ghost/normal/waiting
 execute if entity @s[scores={ActionTime=1}] run teleport @e[tag=this_bowling_ball,limit=1] ^-0.3 ^0.2 ^0.4
 execute if entity @s[scores={ActionTime=2}] run teleport @e[tag=this_bowling_ball,limit=1] ^-0.3 ^0.3 ^0.4
 execute if entity @s[scores={ActionTime=3}] run teleport @e[tag=this_bowling_ball,limit=1] ^-0.3 ^0.4 ^0.4
@@ -21,6 +18,3 @@ execute if entity @s[scores={ActionTime=17}] run teleport @e[tag=this_bowling_ba
 execute if entity @s[scores={ActionTime=18}] run teleport @e[tag=this_bowling_ball,limit=1] ^-0.3 ^0.4 ^0.4
 execute if entity @s[scores={ActionTime=19}] run teleport @e[tag=this_bowling_ball,limit=1] ^-0.3 ^0.3 ^0.4
 execute if entity @s[scores={ActionTime=20}] run teleport @e[tag=this_bowling_ball,limit=1] ^-0.3 ^0.2 ^0.4
-tag @s add was_idle
-scoreboard players set @s[scores={ActionTime=20}] AnimationProg 0
-scoreboard players set @s[scores={ActionTime=20}] ActionTime 0

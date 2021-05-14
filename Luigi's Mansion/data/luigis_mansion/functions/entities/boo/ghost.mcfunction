@@ -1,6 +1,7 @@
 execute if entity @s[tag=dying,tag=boo_death] run function luigis_mansion:entities/ghost/death
 execute if entity @s[tag=dying,tag=boo_hurt] run function luigis_mansion:entities/ghost/death
 
+function #luigis_mansion:entities/boo/dark_room
 execute if entity @s[tag=dying,scores={HurtTime=1}] run playsound luigis_mansion:entity.boo.vacuumed hostile @a[tag=same_room] ~ ~ ~ 1
 execute if entity @s[tag=dead,tag=!warped] run loot spawn ~ ~ ~ loot luigis_mansion:entities/ghost/boo
 execute if entity @s[tag=dead,tag=!warped] run particle minecraft:dust 0.7 1 1 1 ~-0.1 ~ ~0.1 0.2 0.6 0.2 1 30
@@ -15,7 +16,7 @@ scoreboard players set @s[scores={HurtTime=1},tag=boo_hurt] Sound 40
 execute if entity @s[scores={Sound=0},tag=fleeing] run playsound luigis_mansion:entity.boo.flee hostile @a[tag=same_room] ~ ~ ~ 1
 scoreboard players set @s[scores={Sound=0}] Sound 40
 
-scoreboard players operation @s HallwaySection = @s RoomSection
+scoreboard players operation #temp RoomSection = @s RoomSection
 
 execute if entity @a[gamemode=!spectator,distance=..0.7,limit=1] run function luigis_mansion:entities/boo/collide
 execute if entity @s[tag=!fleeing,tag=!attack,tag=can_attack,tag=!laugh,tag=!taunt,tag=!appear] if predicate luigis_mansion:boo_attack_chance run tag @s add attack
@@ -34,7 +35,7 @@ execute if entity @s[scores={BooTimer=3}] run function luigis_mansion:entities/b
 scoreboard players reset @s[scores={BooTimer=3}] BooTimer
 execute if entity @s[tag=remove_from_existence] run function #luigis_mansion:entities/boo/warp
 execute if entity @s[tag=!dead] run function #luigis_mansion:entities/boo/direction
-execute unless score @s HallwaySection = @s RoomSection run tag @s[tag=!appear] add new_section
+execute unless score #temp RoomSection = @s RoomSection run tag @s[scores={RoomSection=1..},tag=!appear] add new_section
 execute if entity @s[tag=!dead,tag=wall] run function luigis_mansion:entities/boo/warp
 execute if entity @s[tag=!fleeing,tag=laugh] run function luigis_mansion:entities/boo/laugh
 execute if entity @s[tag=!fleeing,tag=taunt] run function luigis_mansion:entities/boo/taunt
@@ -51,6 +52,7 @@ tag @s remove disappear
 tag @s remove fleeing
 tag @s remove boo_hurt
 tag @s remove in_vacuum
+scoreboard players reset #temp RoomSection
 
 execute store result entity @s Pose.Head[0] float 0.01 run data get entity @s Rotation[1] 100
 execute store result entity @s Pose.RightArm[2] float 0.01 run data get entity @s Rotation[1] 100

@@ -8,6 +8,5 @@ scoreboard players set @e[tag=this_entity,limit=1] Sound 0
 scoreboard players operation @e[tag=this_entity,limit=1] HomeX = @s HomeX
 scoreboard players operation @e[tag=this_entity,limit=1] HomeY = @s HomeY
 scoreboard players operation @e[tag=this_entity,limit=1] HomeZ = @s HomeZ
-execute as @e[tag=this_entity,limit=1] run function #luigis_mansion:entities/boo/dark_room
 execute if entity @s[tag=hidden_boo] run tag @e[tag=this_entity,limit=1] add say_message
 tag @e[tag=this_entity,limit=1] remove this_entity

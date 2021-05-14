@@ -1,1 +1,0 @@
-execute if entity @a[tag=blackout] unless score #basement_stairs Wave matches 1.. run function luigis_mansion:room/normal/basement_stairs/blackout

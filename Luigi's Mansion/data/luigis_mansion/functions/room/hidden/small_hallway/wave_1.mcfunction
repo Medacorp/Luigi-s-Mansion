@@ -1,1 +1,0 @@
-scoreboard players set #small_hallway Wave 1

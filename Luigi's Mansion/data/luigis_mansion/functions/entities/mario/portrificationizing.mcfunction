@@ -71,7 +71,7 @@ execute if entity @s[scores={Dialog=90}] run setblock 770 81 -7 minecraft:green_
 execute if entity @s[scores={Dialog=90}] run setblock 770 79 -7 minecraft:air
 execute if entity @s[scores={Dialog=80}] run playsound luigis_mansion:entity.mario.owch neutral @a[tag=same_room] ~ ~ ~ 1
 execute if entity @s[scores={Dialog=80}] run kill @e[tag=marios_painting,limit=1]
-item entity @s[scores={Dialog=80}] armor.head replace minecraft:diamond_pickaxe{Unbreakable:1b,Damage:8,CustomModelData:2}
+item replace entity @s[scores={Dialog=80}] armor.head with minecraft:diamond_pickaxe{Unbreakable:1b,Damage:8,CustomModelData:2}
 execute if entity @s[scores={Dialog=90}] run teleport @s 770 78 -6
 execute if entity @s[scores={Dialog=95}] run teleport @s 770 78 -5
 execute if entity @s[scores={Dialog=100}] run teleport @s 770 78 -4

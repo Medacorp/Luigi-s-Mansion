@@ -32,6 +32,12 @@ To set this add-on as loaded, allowing for other add-ons to check/warn for compa
 To check for add-on compatibility issues, add to the function tag #luigis_mansion:post_loaded_add_ons a function which checks if the other add-on is loaded (execute if score #<other add-on> Loaded matches 1 run ...) and send the mandatory commands.
 You can also do the same, but for dependencies, eg if you need the 3ds_remake add-on to exist to have a functioning add-on. (execute unless score #<required add-on> Loaded matches 1 run ...)
 
+== Viewpoints ==
+Most hallways contain several room scores, this is so that moving through a hallway reserts rooms around it and parts of the hallway that are not seen.
+For example the back of the F1 hallway is reset if you're in the front, until you get to the connecting section.
+This behavior is called a viewpoint: the room has a smaller score-giving area than load area; the latter of which contains other rooms (partially).
+To make sure sounds can be heard through viewpoints, make sure to add them to the main/get_room_score/viewpoints list. This list basically means "if room score is A, it can also hear in room B".
+
 == Other ==
 Ghost behavioral change the 3ds remake add-on applies: Using a flashlight on a temper terror, flash or blue blaze make them "smug", laugh and then disappear, rather than ignore and continue moving/attacking; the functions for being smug exist in the base map
 Portrait ghosts drop pearls every health value which ends at a 0, except the max health, and 0 itself.

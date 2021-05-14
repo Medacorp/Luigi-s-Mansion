@@ -5,6 +5,7 @@ execute if entity @s[tag=blackout] unless entity @s[scores={MusicType=7}] unless
 title @s[tag=!seen_room_name] title {"translate":"luigis_mansion:location.conservatory"}
 tag @s add seen_room_name
 
+execute if data storage luigis_mansion:data current_state.current_data.rooms.conservatory{seen:0b} run function luigis_mansion:room/hidden/conservatory/set_seen
 
 stopsound @s[scores={Music=0}] music
 execute if score #conservatory_saxophone Searched matches 1 if entity @s[scores={Time=0,MusicType=0}] run particle minecraft:note 658 13 19 0 0 0 1 1 normal @s

@@ -1,7 +1,7 @@
 scoreboard players set @s Music 0
 scoreboard players set @s Offline 0
 scoreboard players set @s PrevMusicType 0
-scoreboard players set @s HallwayNoise 0
+scoreboard players set @s RoomNoise 0
 scoreboard players set @s LoadedChunks 0
 scoreboard players reset @s ID
 scoreboard players operation @s ID > @a ID

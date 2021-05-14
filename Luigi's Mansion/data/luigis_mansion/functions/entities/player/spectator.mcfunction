@@ -5,8 +5,8 @@ tag @s remove poltergust_malfunction
 scoreboard players operation #temp Room = @s LastRoom
 execute as @a[gamemode=!spectator] if score @s Room = #temp Room run scoreboard players reset @a[distance=..0.1,limit=1] LastRoom
 scoreboard players reset #temp Room
-stopsound @s[scores={HallwayNoise=1..}] hostile luigis_mansion:music.mansion.melody
-scoreboard players set @s HallwayNoise 0
+stopsound @s[scores={RoomNoise=1..}] hostile luigis_mansion:music.mansion.melody
+scoreboard players set @s RoomNoise 0
 scoreboard players set @s Sound 0
 scoreboard players set @s Pull 0
 tag @s remove pulled

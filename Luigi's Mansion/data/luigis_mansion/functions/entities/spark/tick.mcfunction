@@ -8,7 +8,7 @@ execute if entity @a[gamemode=!spectator,distance=..0.7,limit=1] if entity @s[ta
 execute if entity @s[tag=!visible,tag=!turned] run function luigis_mansion:entities/spark/initial_rotation
 scoreboard players operation #temp Room = @s Room
 execute as @e[tag=spark,tag=visible] if score @s Room = #temp Room run scoreboard players add #temp ActionTime 1
-execute unless score #temp ActionTime matches 4.. unless entity @e[tag=spark,tag=visible,distance=..0.7] run tag @s add visible
+execute unless score #temp ActionTime matches 2.. unless entity @e[tag=spark,tag=visible,distance=..0.7] run tag @s add visible
 scoreboard players reset #temp ActionTime
 scoreboard players reset #temp Room
 

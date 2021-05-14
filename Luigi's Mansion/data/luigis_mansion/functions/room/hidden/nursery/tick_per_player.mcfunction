@@ -4,5 +4,7 @@ execute unless data storage luigis_mansion:data current_state.current_data.rooms
 title @s[tag=!seen_room_name] title {"translate":"luigis_mansion:location.nursery"}
 tag @s add seen_room_name
 
-execute unless data storage luigis_mansion:data current_state.current_data.rooms.nursery{cleared:1b} run playsound luigis_mansion:music.mansion.room.nursery ambient @s[scores={HallwayNoise=0}] ~ ~ ~ 1000
-execute unless data storage luigis_mansion:data current_state.current_data.rooms.nursery{cleared:1b} run scoreboard players set @s[scores={HallwayNoise=0}] HallwayNoise 978
+execute if data storage luigis_mansion:data current_state.current_data.rooms.nursery{seen:0b} run function luigis_mansion:room/hidden/nursery/set_seen
+
+execute unless data storage luigis_mansion:data current_state.current_data.rooms.nursery{cleared:1b} run playsound luigis_mansion:music.mansion.room.nursery ambient @s[scores={RoomNoise=0}] ~ ~ ~ 1000
+execute unless data storage luigis_mansion:data current_state.current_data.rooms.nursery{cleared:1b} run scoreboard players set @s[scores={RoomNoise=0}] RoomNoise 978

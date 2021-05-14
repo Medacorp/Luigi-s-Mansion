@@ -1,1 +1,1 @@
-setblock 737 22 13 minecraft:redstone_wall_torch[facing=east,lit=true]
+execute positioned 751 13 3 run function luigis_mansion:blocks/lit_candles

@@ -1,3 +1,3 @@
-execute unless entity @a[scores={LastRoom=20},limit=1] run function #luigis_mansion:room/normal/hidden_room/reset
-execute as @e[scores={Room=20},tag=ghost,tag=!portrait_ghost,tag=!boo] run function luigis_mansion:entities/ghost/non_ticking_room
+execute unless entity @a[scores={LastRoom=24},limit=1] run function #luigis_mansion:room/normal/hidden_room/reset
+execute as @e[scores={Room=24},tag=ghost,tag=!portrait_ghost,tag=!boo] run function luigis_mansion:entities/ghost/non_ticking_room
 scoreboard players reset #hidden_room Vacuumables

@@ -1,4 +1,4 @@
 data modify storage luigis_mansion:data current_state.current_data.technical_data merge value {extinguished_kitchen_fire:1b}
 fill 699 11 -73 699 12 -73 minecraft:air
-playsound luigis_mansion:music.solve_puzzle music @a[scores={Room=23}] ~ ~ ~ 1000
-scoreboard players set @a[scores={Room=23,Music=..29}] Music 30
+playsound luigis_mansion:music.solve_puzzle music @a[scores={Room=27}] ~ ~ ~ 1000
+scoreboard players set @a[scores={Room=27,Music=..29}] Music 30

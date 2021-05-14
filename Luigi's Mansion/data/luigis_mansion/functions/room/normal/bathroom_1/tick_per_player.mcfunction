@@ -4,3 +4,4 @@ execute if entity @s[tag=blackout] unless entity @s[scores={MusicType=7}] unless
 title @s[tag=!seen_room_name] title {"translate":"luigis_mansion:location.bathroom"}
 tag @s add seen_room_name
 
+execute if data storage luigis_mansion:data current_state.current_data.rooms.bathroom_1{seen:0b} run function luigis_mansion:room/normal/bathroom_1/set_seen

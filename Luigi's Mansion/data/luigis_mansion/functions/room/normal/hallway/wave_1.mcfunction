@@ -1,7 +1,0 @@
-execute if predicate luigis_mansion:hallway_ghost_chance positioned 682 23 -2 run function luigis_mansion:spawn_entities/ghost/ceiling_surprise
-execute if predicate luigis_mansion:hallway_ghost_chance positioned 682 23 -6 run function luigis_mansion:spawn_entities/ghost/purple_bomber
-execute if predicate luigis_mansion:hallway_ghost_chance positioned 682 20 -8 run function luigis_mansion:spawn_entities/ghost/bowling_ghost
-execute if predicate luigis_mansion:hallway_ghost_chance positioned 682 23 -10 run function luigis_mansion:spawn_entities/ghost/ceiling_surprise
-execute if predicate luigis_mansion:hallway_ghost_chance positioned 708 20 -20 run function luigis_mansion:spawn_entities/ghost/bowling_ghost
-execute if predicate luigis_mansion:hallway_ghost_chance positioned 708 20 -18 run function luigis_mansion:spawn_entities/ghost/bowling_ghost
-scoreboard players set #hallway Wave 1
