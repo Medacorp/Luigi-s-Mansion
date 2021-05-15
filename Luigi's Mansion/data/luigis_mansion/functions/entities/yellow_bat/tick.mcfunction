@@ -25,3 +25,4 @@ execute at @s[tag=!attack,tag=!fleeing] facing entity @p[gamemode=!spectator,tag
 
 execute at @s[tag=!attack] run function luigis_mansion:animations/bat/idle
 execute at @s[tag=attack] run function luigis_mansion:animations/bat/flying
+execute at @s[scores={LightX=-2147483648..}] run function luigis_mansion:other/cast_shadow/1_tall

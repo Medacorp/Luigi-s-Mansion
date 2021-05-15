@@ -15,3 +15,4 @@ execute at @s run function luigis_mansion:animations/bomb/turn
 execute at @s[scores={Move=10}] run summon minecraft:creeper ~ ~ ~ {CustomName:'{"translate":"luigis_mansion:entity.bomb"}',Fuse:0s,ExplosionRadius:2b,Invulnerable:1b,Silent:1b}
 execute at @s[scores={Move=10}] run playsound minecraft:entity.generic.explode hostile @s ~ ~ ~ 2
 tag @s[scores={Move=10}] add dead
+execute at @s[scores={LightX=-2147483648..}] run function luigis_mansion:other/cast_shadow/1_tall

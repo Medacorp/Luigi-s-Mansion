@@ -26,3 +26,4 @@ execute at @s[tag=!hurt,tag=!element_hurt,tag=!fleeing,tag=!attack,tag=!collided
 execute at @s[tag=fleeing] run function luigis_mansion:animations/puncher/flee
 execute at @s[tag=!fleeing,tag=hurt] run function luigis_mansion:animations/puncher/hurt
 execute at @s[tag=!hurt,tag=element_hurt] run function luigis_mansion:animations/puncher/hurt
+execute at @s[scores={LightX=-2147483648..}] run function luigis_mansion:other/cast_shadow/2_tall

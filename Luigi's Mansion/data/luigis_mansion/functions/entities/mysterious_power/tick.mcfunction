@@ -14,3 +14,4 @@ tag @e[tag=same_room_ghost] remove complain
 tag @e[tag=same_room_ghost] remove attack
 tag @e[tag=same_room_ghost] remove appear
 tag @e[tag=same_room_ghost] remove same_room_ghost
+execute at @s[scores={LightX=-2147483648..}] run function luigis_mansion:other/cast_shadow/1_tall

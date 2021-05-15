@@ -43,3 +43,4 @@ execute unless entity @s[tag=!dead,tag=!remove_from_existence] run tag @e[tag=th
 
 scoreboard players reset #temp PassiveNr
 tag @e[tag=this_model] remove this_model
+execute at @s[scores={LightX=-2147483648..}] run function luigis_mansion:other/cast_shadow/2_tall

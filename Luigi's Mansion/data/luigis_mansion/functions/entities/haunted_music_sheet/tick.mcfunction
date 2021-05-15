@@ -21,3 +21,4 @@ teleport @s[scores={WaitTime=1}] ~ ~1 ~
 execute at @s[scores={WaitTime=1..59}] run function luigis_mansion:entities/haunted_music_sheet/hover
 execute at @s[scores={WaitTime=60..}] run function luigis_mansion:entities/haunted_music_sheet/attack
 execute at @s[scores={WaitTime=1..}] run function luigis_mansion:animations/haunted_object/flap
+execute at @s[scores={LightX=-2147483648..}] run function luigis_mansion:other/cast_shadow/1_tall

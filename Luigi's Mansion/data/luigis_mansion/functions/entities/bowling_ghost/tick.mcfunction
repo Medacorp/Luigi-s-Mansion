@@ -39,3 +39,4 @@ execute at @s[tag=!fleeing,tag=hurt] run function luigis_mansion:animations/bowl
 execute at @s[tag=!hurt,tag=element_hurt] run function luigis_mansion:animations/bowling_ghost/hurt
 scoreboard players reset #temp GhostNr
 tag @e[tag=this_bowling_ball] remove this_bowling_ball
+execute at @s[scores={LightX=-2147483648..}] run function luigis_mansion:other/cast_shadow/2_tall

@@ -23,3 +23,6 @@ execute at @s positioned ~ ~0.01 ~ align y run teleport @s ~ ~ ~
 
 scoreboard players reset @s MirrorX
 scoreboard players reset @s MirrorZ
+scoreboard players reset @s LightX
+scoreboard players reset @s LightY
+scoreboard players reset @s LightZ

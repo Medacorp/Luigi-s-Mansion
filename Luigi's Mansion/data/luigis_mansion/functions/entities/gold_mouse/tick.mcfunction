@@ -11,3 +11,4 @@ execute if entity @s[tag=!dead] run function #luigis_mansion:entities/gold_mouse
 scoreboard players set #temp Move 8
 execute at @s[tag=!dead] run function luigis_mansion:entities/gold_mouse/move_forward
 execute at @s run function luigis_mansion:animations/mouse/idle
+execute at @s[scores={LightX=-2147483648..}] run function luigis_mansion:other/cast_shadow/1_tall

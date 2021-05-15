@@ -21,3 +21,4 @@ execute if entity @s[tag=appear] run function luigis_mansion:entities/garbage_ca
 execute at @s[tag=fleeing] run function luigis_mansion:animations/garbage_can_ghost/flee
 execute at @s[tag=!fleeing,tag=hurt] run function luigis_mansion:animations/garbage_can_ghost/hurt
 execute at @s[tag=!hurt,tag=element_hurt] run function luigis_mansion:animations/garbage_can_ghost/hurt
+execute at @s[scores={LightX=-2147483648..}] run function luigis_mansion:other/cast_shadow/2_tall

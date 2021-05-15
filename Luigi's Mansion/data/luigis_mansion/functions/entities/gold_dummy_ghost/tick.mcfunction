@@ -20,3 +20,4 @@ execute at @s[tag=!element_hurt,tag=!fleeing,tag=!vanish,tag=!laugh,scores={Stun
 execute at @s[tag=fleeing] run function luigis_mansion:animations/ghost/normal/flee
 execute at @s[tag=!fleeing,tag=hurt] run function luigis_mansion:animations/ghost/normal/hurt
 execute at @s[tag=!hurt,tag=element_hurt] run function luigis_mansion:animations/ghost/normal/hurt
+execute at @s[scores={LightX=-2147483648..}] run function luigis_mansion:other/cast_shadow/2_tall

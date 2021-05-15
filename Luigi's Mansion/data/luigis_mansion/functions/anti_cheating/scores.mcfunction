@@ -54,6 +54,10 @@ scoreboard objectives add LastFloor dummy
 scoreboard objectives add LastHealth dummy
 scoreboard objectives add LastRoom dummy
 scoreboard objectives add LastTotalDamage dummy
+scoreboard objectives add LightStep dummy
+scoreboard objectives add LightX dummy
+scoreboard objectives add LightY dummy
+scoreboard objectives add LightZ dummy
 scoreboard objectives add Loaded dummy
 scoreboard objectives add LoadedChunks dummy
 scoreboard objectives add Offline minecraft.custom:minecraft.leave_game

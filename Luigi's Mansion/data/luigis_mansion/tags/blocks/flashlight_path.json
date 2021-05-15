@@ -3,6 +3,8 @@
         "minecraft:air",
         "minecraft:light",
         "minecraft:barrier",
-        "minecraft:water"
+        "minecraft:water",
+        "minecraft:stone_button",
+        "minecraft:ladder"
     ]
 }

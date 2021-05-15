@@ -21,3 +21,4 @@ execute if entity @s[scores={WaitTime=60..}] run function luigis_mansion:entitie
 tag @s[scores={WaitTime=80}] remove at_height
 scoreboard players set @s[scores={WaitTime=80}] WaitTime 0
 data modify entity @s Pose.Head[0] set from entity @s Rotation[1]
+execute at @s[tag=visible,scores={LightX=-2147483648..}] run function luigis_mansion:other/cast_shadow/1_tall

@@ -33,3 +33,4 @@ execute at @s[tag=was_activated,tag=!hurt,tag=!fleeing,tag=!attack,tag=!complain
 execute at @s[tag=was_activated,tag=!hurt,tag=!fleeing,tag=!attack,tag=!complain,scores={Distance=1..,WaitTime=0}] run function luigis_mansion:entities/clockwork_soldier/move
 execute if entity @s[tag=was_activated,tag=!hurt,tag=!fleeing,tag=!attack,tag=complain,scores={StunTime=0}] run function luigis_mansion:entities/clockwork_soldier/complain
 tag @s[scores={VulnerableTime=1}] add vanish
+execute at @s[scores={LightX=-2147483648..}] run function luigis_mansion:other/cast_shadow/2_tall

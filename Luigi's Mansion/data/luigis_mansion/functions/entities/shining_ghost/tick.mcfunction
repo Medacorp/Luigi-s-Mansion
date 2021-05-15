@@ -26,3 +26,4 @@ execute at @s[tag=!played_sound] run playsound luigis_mansion:entity.shining_gho
 tag @s add played_sound
 tag @s[scores={Dialog=200}] add disappear
 execute if entity @s[tag=disappear] run function luigis_mansion:entities/shining_ghost/back_to_start
+execute at @s[scores={LightX=-2147483648..}] run function luigis_mansion:other/cast_shadow/1_tall

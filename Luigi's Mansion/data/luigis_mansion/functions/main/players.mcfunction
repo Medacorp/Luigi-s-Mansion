@@ -19,12 +19,6 @@ execute if entity @s[scores={Shrunk=1}] run function luigis_mansion:items/poison
 scoreboard players remove @s[scores={Shrunk=1..}] Shrunk 1
 scoreboard players reset @s[scores={Shrunk=0}] Shrunk
 scoreboard players reset @s[scores={Shrunk=0}] ShrunkNr
-tag @s[scores={MirrorX=-2147483648..},nbt=!{ActiveEffects:[{Id:14b}]}] add mirrored
-tag @s[scores={MirrorZ=-2147483648..},nbt=!{ActiveEffects:[{Id:14b}]}] add mirrored
-scoreboard players reset @s[tag=!mirrored] ReflectionNr
-execute if entity @s[tag=mirrored] run function luigis_mansion:entities/reflection/player
-scoreboard players reset @s MirrorX
-scoreboard players reset @s MirrorZ
 function #luigis_mansion:player_tag_dialogs
 execute if entity @s[tag=return_mario] as @a run function luigis_mansion:entities/e_gadd/return_mario
 
@@ -64,3 +58,9 @@ execute unless entity @s[scores={Room=1..}] run scoreboard players set @s LastFl
 execute store result score @s JumpHeight run data get entity @s Pos[1] 100
 
 tag @a[tag=same_room] remove same_room
+
+scoreboard players reset @s MirrorX
+scoreboard players reset @s MirrorZ
+scoreboard players reset @s LightX
+scoreboard players reset @s LightY
+scoreboard players reset @s LightZ

@@ -1,0 +1,1 @@
+execute if entity @s[tag=shadow] run function luigis_mansion:entities/shadow/tick

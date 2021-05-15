@@ -35,6 +35,7 @@
         "luigis_mansion:entities/rocking_chair",
         "luigis_mansion:entities/ball_floor",
         "luigis_mansion:entities/reflection",
+        "luigis_mansion:entities/shadow",
         "luigis_mansion:entities/elemental_source"
 	]
 }

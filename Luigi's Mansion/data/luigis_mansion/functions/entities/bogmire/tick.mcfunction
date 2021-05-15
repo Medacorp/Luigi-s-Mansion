@@ -45,3 +45,4 @@ execute as @e[tag=this_model] at @s run teleport @s ~ ~-0.5 ~
 
 scoreboard players reset #temp GhostNr
 tag @e[tag=this_model,limit=1] remove this_model
+execute at @s[scores={LightX=-2147483648..}] run function luigis_mansion:other/cast_shadow/2_tall

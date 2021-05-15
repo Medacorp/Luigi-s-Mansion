@@ -28,5 +28,8 @@ execute at @s[tag=!fleeing,tag=hurt] run function luigis_mansion:animations/floa
 execute unless entity @s[tag=!dead,tag=!remove_from_existence] run teleport @e[tag=this_model] ~ ~-100 ~
 execute unless entity @s[tag=!dead,tag=!remove_from_existence] run tag @e[tag=this_model] add dead
 
+execute at @s[scores={LightX=-2147483648..}] run function luigis_mansion:other/cast_shadow/2_tall
+execute at @s[scores={LightX=-2147483648..}] at @e[tag=floating_whirlindas_female,limit=1] run function luigis_mansion:other/cast_shadow/2_tall
+
 scoreboard players reset #temp GhostNr
 tag @e[tag=this_model] remove this_model

@@ -4,3 +4,4 @@ execute if entity @s[nbt={OnGround:0b}] store result entity @s Pose.Head[1] floa
 scoreboard players add @s ActionTime 1
 tag @s[scores={ActionTime=60}] add vacuumable
 tag @s[scores={ActionTime=600},tag=!eternal] add dead
+execute at @s[scores={LightX=-2147483648..}] run function luigis_mansion:other/cast_shadow/1_tall

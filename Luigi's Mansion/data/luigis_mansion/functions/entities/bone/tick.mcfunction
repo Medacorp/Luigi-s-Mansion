@@ -10,3 +10,4 @@ execute if entity @s[tag=hit] run effect give @a[distance=..0.7,gamemode=!specta
 execute if entity @s[tag=hit] run scoreboard players set @a[distance=..0.7,gamemode=!spectator] ForcedDamage 4
 tag @s[tag=hit] add dead
 tag @e[tag=this_mr_bones] remove this_mr_bones
+execute at @s[scores={LightX=-2147483648..}] run function luigis_mansion:other/cast_shadow/1_tall

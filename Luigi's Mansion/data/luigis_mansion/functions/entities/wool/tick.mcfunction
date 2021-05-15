@@ -18,3 +18,4 @@ tag @s[tag=!in_vacuum,tag=can_spit_2] add spit
 tag @s[tag=!in_vacuum] remove can_spit
 tag @s[tag=in_vacuum] remove in_vacuum
 execute at @s run teleport @s ~ ~-1.1875 ~
+execute at @s[scores={LightX=-2147483648..}] run function luigis_mansion:other/cast_shadow/1_tall

@@ -41,3 +41,4 @@ execute unless entity @s[scores={StunTime=1..},tag=!fleeing,tag=!hurt] as @e[tag
 
 scoreboard players reset #temp GhostNr
 tag @e[tag=this_model,limit=1] remove this_model
+execute at @s[scores={LightX=-2147483648..}] run function luigis_mansion:other/cast_shadow/2_tall

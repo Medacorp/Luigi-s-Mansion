@@ -41,3 +41,4 @@ execute if entity @s[tag=disappear,tag=!dead] run function luigis_mansion:entiti
 execute at @s[tag=visible] unless entity @s[tag=walk_up_wall,tag=!walk_on_ceiling] unless entity @s[tag=walk_down_wall,tag=!walked_on_ceiling] run function luigis_mansion:animations/mouse/idle
 execute at @s[tag=visible,tag=walk_up_wall,tag=!walk_on_ceiling] run function luigis_mansion:animations/mouse/idle_wall
 execute at @s[tag=visible,tag=walk_down_wall,tag=!walked_on_ceiling] run function luigis_mansion:animations/mouse/idle_wall
+execute at @s[tag=visible,scores={LightX=-2147483648..}] run function luigis_mansion:other/cast_shadow/1_tall

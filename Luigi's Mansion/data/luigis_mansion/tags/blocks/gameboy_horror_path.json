@@ -2,6 +2,7 @@
     "values": [
         "minecraft:air",
         "minecraft:light",
-        "minecraft:barrier"
+        "minecraft:barrier",
+        "minecraft:stone_button"
     ]
 }

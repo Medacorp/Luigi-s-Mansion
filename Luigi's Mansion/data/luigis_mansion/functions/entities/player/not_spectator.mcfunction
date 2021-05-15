@@ -41,3 +41,9 @@ execute if entity @s[scores={Run=1..},tag=!looking_at_map] run particle minecraf
 execute if entity @s[scores={Sneak=1..},tag=!looking_at_map] run particle minecraft:dust 0.5 0.5 0.5 0.7 ~ ~0.2 ~ 0 0 0 0 1
 
 execute unless entity @s[scores={Room=-3}] if score #loaded_exterior Selected matches -1 if data storage luigis_mansion:data current_state.current_data.rooms run function luigis_mansion:entities/e_gadd/to_portrificationizer
+
+tag @s[scores={MirrorX=-2147483648..},nbt=!{ActiveEffects:[{Id:14b}]}] add mirrored
+tag @s[scores={MirrorZ=-2147483648..},nbt=!{ActiveEffects:[{Id:14b}]}] add mirrored
+scoreboard players reset @s[tag=!mirrored] ReflectionNr
+execute if entity @s[tag=mirrored] run function luigis_mansion:entities/reflection/player
+execute at @s[scores={LightX=-2147483648..},nbt=!{ActiveEffects:[{Id:14b}]}] run function luigis_mansion:other/cast_shadow/2_tall

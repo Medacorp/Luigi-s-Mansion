@@ -57,3 +57,4 @@ tag @s[tag=explode,tag=visible] add dead
 tag @s[tag=explode,tag=!visible] remove explode
 execute if entity @s[tag=dead] run teleport @s ~ -100 ~
 scoreboard players remove @s[scores={Turn=1..},tag=visible] Turn 1
+execute at @s[tag=visible,scores={LightX=-2147483648..}] run function luigis_mansion:other/cast_shadow/1_tall
