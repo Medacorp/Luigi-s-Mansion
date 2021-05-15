@@ -13,12 +13,15 @@ execute if entity @s[scores={Dialog=112}] run playsound luigis_mansion:entity.to
 execute if entity @s[scores={Dialog=112}] if score #players Totals matches 1 run tellraw @a[tag=same_room] {"translate":"chat.type.text","with":[{"translate":"luigis_mansion:entity.toad","color":"green"},{"translate":"luigis_mansion:dialog.toad_1.3","with":[{"selector":"@p[gamemode=!spectator]"}]}]}
 execute if entity @s[scores={Dialog=112}] if score #players Totals matches 2.. run tellraw @a[tag=same_room] {"translate":"chat.type.text","with":[{"translate":"luigis_mansion:entity.toad","color":"green"},{"translate":"luigis_mansion:dialog.toad_1.3.more"}]}
 tag @s[scores={Dialog=112}] add happy
+execute if entity @s[scores={Dialog=112}] run scoreboard players set @e[tag=this_model,tag=toad_head,limit=1] AnimationProg 0
 execute if entity @s[scores={Dialog=224}] if score #players Totals matches 1 run tellraw @a[tag=same_room] {"translate":"chat.type.text","with":[{"translate":"luigis_mansion:entity.toad","color":"green"},{"translate":"luigis_mansion:dialog.toad_1.4"}]}
 execute if entity @s[scores={Dialog=224}] if score #players Totals matches 2.. run tellraw @a[tag=same_room] {"translate":"chat.type.text","with":[{"translate":"luigis_mansion:entity.toad","color":"green"},{"translate":"luigis_mansion:dialog.toad_1.4.more"}]}
 tag @s[scores={Dialog=224}] add explaining
+execute if entity @s[scores={Dialog=224}] run scoreboard players set @e[tag=this_model,tag=toad_head,limit=1] AnimationProg 0
 execute if entity @s[scores={Dialog=440}] run tellraw @a[tag=same_room] {"translate":"chat.type.text","with":[{"translate":"luigis_mansion:entity.toad","color":"green"},{"translate":"luigis_mansion:dialog.toad_1.5"}]}
 tag @s[scores={Dialog=728}] remove explaining
 tag @s[scores={Dialog=728}] remove happy
+execute if entity @s[scores={Dialog=728}] run scoreboard players set @e[tag=this_model,tag=toad_head,limit=1] AnimationProg 0
 execute if entity @s[scores={Dialog=728}] run data modify storage luigis_mansion:data current_state.current_data.technical_data merge value {toad_1_spoke:1b}
 execute if entity @s[scores={Dialog=728}] run playsound luigis_mansion:entity.toad.cry_1 neutral @a[tag=same_room] ~ ~ ~ 1
 execute if entity @s[scores={Dialog=728}] if score #players Totals matches 1 run tellraw @a[tag=same_room] {"translate":"chat.type.text","with":[{"translate":"luigis_mansion:entity.toad","color":"green"},{"translate":"luigis_mansion:dialog.toad_1.6"}]}
@@ -28,15 +31,18 @@ execute if entity @s[scores={Dialog=944}] run scoreboard players enable @a[tag=s
 execute if entity @s[scores={Dialog=946}] if entity @a[scores={Toad1Choice=1..}] as @a[scores={Toad1Choice=0}] run trigger Toad1Choice set 0
 execute if entity @s[scores={Dialog=946}] if entity @a[scores={Toad1Choice=1}] run tag @s add happy
 execute if entity @s[scores={Dialog=946}] if entity @a[scores={Toad1Choice=1}] run tag @s add turning_on_lights
+execute if entity @s[scores={Dialog=946}] if entity @a[scores={Toad1Choice=1}] run scoreboard players set @e[tag=this_model,tag=toad_head,limit=1] AnimationProg 0
 execute if entity @s[scores={Dialog=946}] if entity @a[scores={Toad1Choice=1}] run playsound luigis_mansion:entity.toad.yahoo neutral @a[tag=same_room] ~ ~ ~ 1
 execute if entity @s[scores={Dialog=946}] if entity @a[scores={Toad1Choice=1}] if score #players Totals matches 1 run tellraw @a[tag=same_room] {"translate":"chat.type.text","with":[{"translate":"luigis_mansion:entity.toad","color":"green"},{"translate":"luigis_mansion:dialog.toad_1.yes.1","with":[{"selector":"@p[gamemode=!spectator]"}]}]}
 execute if entity @s[scores={Dialog=946}] if entity @a[scores={Toad1Choice=1}] if score #players Totals matches 2.. run tellraw @a[tag=same_room] {"translate":"chat.type.text","with":[{"translate":"luigis_mansion:entity.toad","color":"green"},{"translate":"luigis_mansion:dialog.toad_1.yes.1.more"}]}
 execute if entity @s[scores={Dialog=1042}] run function luigis_mansion:room/hidden/foyer/clear
 execute if entity @s[scores={Dialog=1042}] run function luigis_mansion:room/hidden/hallway_1/clear
 tag @s[scores={Dialog=1062}] add explaining
+execute if entity @s[scores={Dialog=1062}] run scoreboard players set @e[tag=this_model,tag=toad_head,limit=1] AnimationProg 0
 execute if entity @s[scores={Dialog=1062}] if score #players Totals matches 1 run tellraw @a[tag=same_room] {"translate":"chat.type.text","with":[{"translate":"luigis_mansion:entity.toad","color":"green"},{"translate":"luigis_mansion:dialog.toad_1.yes.2"}]}
 execute if entity @s[scores={Dialog=1062}] if score #players Totals matches 2.. run tellraw @a[tag=same_room] {"translate":"chat.type.text","with":[{"translate":"luigis_mansion:entity.toad","color":"green"},{"translate":"luigis_mansion:dialog.toad_1.yes.2.more"}]}
 tag @s[scores={Dialog=1166}] remove explaining
+execute if entity @s[scores={Dialog=1166}] run scoreboard players set @e[tag=this_model,tag=toad_head,limit=1] AnimationProg 0
 execute if entity @s[scores={Dialog=1166}] run scoreboard players set @a Toad1Choice 0
 execute if entity @s[scores={Dialog=1166}] run tellraw @a[tag=same_room] {"translate":"luigis_mansion:message.options","color":"green","extra":[{"text":"\n"},{"translate":"luigis_mansion:message.save.yes","clickEvent":{"action":"run_command","value":"/trigger Toad1Choice set 1"}},{"text":"\n"},{"translate":"luigis_mansion:message.save.no","clickEvent":{"action":"run_command","value":"/trigger Toad1Choice set 2"}}]}
 execute if entity @s[scores={Dialog=1166}] run scoreboard players enable @a[tag=same_room] Toad1Choice
@@ -52,6 +58,8 @@ tag @s[scores={Dialog=1216}] remove turning_on_lights
 execute unless entity @a[tag=same_room,distance=..7] run tag @s remove talk
 execute if entity @s[tag=!talk] as @a[tag=same_room] run function luigis_mansion:other/music/set/silence
 execute if entity @s[tag=!talk] as @a[scores={Toad1Choice=0..}] run trigger Toad1Choice set 0
+execute if entity @s[tag=!talk,tag=explaining] run scoreboard players set @e[tag=this_model,tag=toad_head,limit=1] AnimationProg 0
+execute if entity @s[tag=!talk,scores={Dialog=..1041},tag=happy] run scoreboard players set @e[tag=this_model,tag=toad_head,limit=1] AnimationProg 0
 tag @s[tag=!talk] remove explaining
 tag @s[tag=!talk,scores={Dialog=..1041}] remove happy
 scoreboard players set @s[tag=!talk] Dialog 0

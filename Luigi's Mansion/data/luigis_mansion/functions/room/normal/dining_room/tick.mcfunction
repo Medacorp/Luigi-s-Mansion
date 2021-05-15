@@ -6,10 +6,10 @@ execute as @a[gamemode=!spectator,scores={Room=26}] run function luigis_mansion:
 
 function #luigis_mansion:room/normal/dining_room/interactions/room
 
-execute if block 704 13 46 minecraft:brewing_stand[has_bottle_0=false,has_bottle_1=false,has_bottle_2=false] positioned 704 13 46 run function luigis_mansion:blocks/1_lit_candle
-execute if block 704 13 40 minecraft:brewing_stand[has_bottle_0=false,has_bottle_1=false,has_bottle_2=false] positioned 704 13 40 run function luigis_mansion:blocks/1_lit_candle
-execute if block 704 13 46 minecraft:brewing_stand[has_bottle_0=true,has_bottle_1=true,has_bottle_2=true] positioned 704 13 46 run function luigis_mansion:blocks/purple_candles
-execute if block 704 13 40 minecraft:brewing_stand[has_bottle_0=true,has_bottle_1=true,has_bottle_2=true] positioned 704 13 40 run function luigis_mansion:blocks/purple_candles
+execute if block 704 13 46 minecraft:brewing_stand[has_bottle_0=false,has_bottle_1=false,has_bottle_2=false] positioned 704 13 46 run function luigis_mansion:spawn_furniture/1_lit_candle
+execute if block 704 13 40 minecraft:brewing_stand[has_bottle_0=false,has_bottle_1=false,has_bottle_2=false] positioned 704 13 40 run function luigis_mansion:spawn_furniture/1_lit_candle
+execute if block 704 13 46 minecraft:brewing_stand[has_bottle_0=true,has_bottle_1=true,has_bottle_2=true] positioned 704 13 46 run function luigis_mansion:spawn_furniture/purple_candles
+execute if block 704 13 40 minecraft:brewing_stand[has_bottle_0=true,has_bottle_1=true,has_bottle_2=true] positioned 704 13 40 run function luigis_mansion:spawn_furniture/purple_candles
 
 function luigis_mansion:room/normal/dining_room/ghosts
 

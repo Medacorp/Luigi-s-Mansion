@@ -10,8 +10,8 @@ scoreboard players reset #temp Wave
 
 function #luigis_mansion:room/normal/parlor/interactions/room
 
-execute if block 714 22 29 minecraft:brewing_stand[has_bottle_0=true,has_bottle_1=true,has_bottle_2=true] positioned 714 22 29 run function luigis_mansion:blocks/purple_candles
-execute if block 714 22 26 minecraft:brewing_stand[has_bottle_0=true,has_bottle_1=true,has_bottle_2=true] positioned 714 22 26 run function luigis_mansion:blocks/purple_candles
+execute if block 714 22 29 minecraft:brewing_stand[has_bottle_0=true,has_bottle_1=true,has_bottle_2=true] positioned 714 22 29 run function luigis_mansion:spawn_furniture/purple_candles
+execute if block 714 22 26 minecraft:brewing_stand[has_bottle_0=true,has_bottle_1=true,has_bottle_2=true] positioned 714 22 26 run function luigis_mansion:spawn_furniture/purple_candles
 
 function luigis_mansion:room/normal/parlor/ghosts
 

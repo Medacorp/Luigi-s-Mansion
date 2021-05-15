@@ -15,6 +15,7 @@ execute unless entity @a[tag=same_room,distance=..7] run tag @s remove talk
 execute if entity @s[tag=!talk] as @a[tag=same_room] run function luigis_mansion:other/music/set/silence
 execute if entity @s[tag=!talk] as @a[scores={ClairvoyaChoice=0..}] run trigger ClairvoyaChoice set 0
 scoreboard players set @s[tag=!talk] Dialog 0
+execute if entity @s[tag=!talk] run scoreboard players set @e[tag=this_model,tag=madame_clairvoya_head,limit=1] AnimationProg 0
 tag @s[tag=!talk] remove next
 tag @s[tag=!talk] remove hat
 tag @s[tag=!talk] remove letter

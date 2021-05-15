@@ -38,6 +38,7 @@ execute at @s[tag=!in_vacuum,tag=chauncey] run effect give @a[distance=..1,gamem
 execute at @s[tag=!in_vacuum,tag=chauncey] run scoreboard players set @a[distance=..1,gamemode=!spectator] ForcedDamage 4
 execute at @p[gamemode=!spectator,tag=vacuuming] if block ^ ^ ^1 #luigis_mansion:all_ignore run teleport @s[tag=big,tag=can_spit] ^ ^ ^1 ~ ~
 execute at @p[gamemode=!spectator,tag=vacuuming] if block ^ ^ ^2 #luigis_mansion:all_ignore run teleport @s[tag=big,tag=can_spit] ^ ^ ^2 ~ ~
+data modify entity @s[tag=spike_ball,scores={ActionTime=160}] ArmorItems[3].tag.CustomModelData set value 37
 scoreboard players add @s[tag=spike_ball] ActionTime 1
 tag @s[tag=spike_ball,scores={ActionTime=200}] add explode
 execute at @s if entity @a[gamemode=!spectator,distance=..1,limit=1] run tag @s[tag=spike_ball,tag=!in_vacuum] add explode

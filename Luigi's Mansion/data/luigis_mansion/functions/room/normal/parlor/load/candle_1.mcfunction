@@ -1,1 +1,1 @@
-execute if data storage luigis_mansion:data {found_e_gadd:1b} positioned 714 22 29 run function luigis_mansion:blocks/purple_candles
+execute if data storage luigis_mansion:data {found_e_gadd:1b} positioned 714 22 29 run function luigis_mansion:spawn_furniture/purple_candles
