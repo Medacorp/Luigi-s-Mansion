@@ -6,7 +6,7 @@ execute unless score #washroom_1_cabinet Searched matches 1 run summon minecraft
 execute unless score #washroom_1_cabinet Searched matches 1 run tag @e[type=minecraft:marker,tag=chance,sort=random,limit=1] add selected
 execute if entity @e[type=minecraft:marker,tag=chance,tag=selected,tag=poison_mushroom] positioned 663 14 -21.0 run function luigis_mansion:spawn_entities/item/poison_mushroom
 execute if entity @e[type=minecraft:marker,tag=chance,tag=selected,tag=small_heart] positioned 663 14 -21.0 run function luigis_mansion:spawn_entities/item/small_heart
-execute if entity @e[type=minecraft:marker,tag=chance,tag=selected,tag=money] run function luigis_mansion:room/hidden/washroom_1/cabinet
+execute if entity @e[type=minecraft:marker,tag=chance,tag=selected,tag=money] positioned 663 14 -21.0 run function luigis_mansion:room/hidden/washroom_1/cabinet
 execute unless entity @e[type=minecraft:marker,tag=chance,tag=selected,tag=!nothing] positioned 662 14 -21.0 run function luigis_mansion:blocks/dust
 kill @e[type=minecraft:marker,tag=chance]
 scoreboard players set #washroom_1_cabinet Searched 1

@@ -1,32 +1,32 @@
-execute unless data storage luigis_mansion:data current_state.current_data.money_spawned{astral_hall_lamp:1b} positioned 665 24 98 run function luigis_mansion:spawn_entities/item/gold_coin
-execute unless data storage luigis_mansion:data current_state.current_data.money_spawned{astral_hall_lamp:1b} positioned 666 24 98 run function luigis_mansion:spawn_entities/item/gold_coin
-execute unless data storage luigis_mansion:data current_state.current_data.money_spawned{astral_hall_lamp:1b} positioned 667 24 98 run function luigis_mansion:spawn_entities/item/gold_coin
-execute unless data storage luigis_mansion:data current_state.current_data.money_spawned{astral_hall_lamp:1b} positioned 665 24 97 run function luigis_mansion:spawn_entities/item/gold_coin
-execute unless data storage luigis_mansion:data current_state.current_data.money_spawned{astral_hall_lamp:1b} positioned 667 24 97 run function luigis_mansion:spawn_entities/item/gold_coin
-execute unless data storage luigis_mansion:data current_state.current_data.money_spawned{astral_hall_lamp:1b} positioned 665 24 96 run function luigis_mansion:spawn_entities/item/gold_coin
-execute unless data storage luigis_mansion:data current_state.current_data.money_spawned{astral_hall_lamp:1b} positioned 666 24 96 run function luigis_mansion:spawn_entities/item/gold_coin
-execute unless data storage luigis_mansion:data current_state.current_data.money_spawned{astral_hall_lamp:1b} positioned 667 24 96 run function luigis_mansion:spawn_entities/item/gold_coin
-execute unless data storage luigis_mansion:data current_state.current_data.money_spawned{astral_hall_lamp:1b} positioned 666 24 95 run function luigis_mansion:spawn_entities/item/gold_coin
-execute unless data storage luigis_mansion:data current_state.current_data.money_spawned{astral_hall_lamp:1b} positioned 666 24 99 run function luigis_mansion:spawn_entities/item/gold_coin
-execute unless data storage luigis_mansion:data current_state.current_data.money_spawned{astral_hall_lamp:1b} positioned 668 24 97 run function luigis_mansion:spawn_entities/item/gold_coin
-execute unless data storage luigis_mansion:data current_state.current_data.money_spawned{astral_hall_lamp:1b} positioned 664 24 97 run function luigis_mansion:spawn_entities/item/gold_coin
-execute unless data storage luigis_mansion:data current_state.current_data.money_spawned{astral_hall_lamp:1b} positioned 666.0 23 98.0 run function luigis_mansion:spawn_entities/item/gold_coin
-execute unless data storage luigis_mansion:data current_state.current_data.money_spawned{astral_hall_lamp:1b} positioned 667.0 23 98.0 run function luigis_mansion:spawn_entities/item/gold_coin
-execute unless data storage luigis_mansion:data current_state.current_data.money_spawned{astral_hall_lamp:1b} positioned 666 23 69.0 run function luigis_mansion:spawn_entities/item/gold_coin
-execute unless data storage luigis_mansion:data current_state.current_data.money_spawned{astral_hall_lamp:1b} positioned 665 24 98 run function luigis_mansion:spawn_entities/item/bill
-execute unless data storage luigis_mansion:data current_state.current_data.money_spawned{astral_hall_lamp:1b} positioned 666 24 98 run function luigis_mansion:spawn_entities/item/bill
-execute unless data storage luigis_mansion:data current_state.current_data.money_spawned{astral_hall_lamp:1b} positioned 667 24 98 run function luigis_mansion:spawn_entities/item/bill
-execute unless data storage luigis_mansion:data current_state.current_data.money_spawned{astral_hall_lamp:1b} positioned 665 24 97 run function luigis_mansion:spawn_entities/item/bill
-execute unless data storage luigis_mansion:data current_state.current_data.money_spawned{astral_hall_lamp:1b} positioned 667 24 97 run function luigis_mansion:spawn_entities/item/bill
-execute unless data storage luigis_mansion:data current_state.current_data.money_spawned{astral_hall_lamp:1b} positioned 665 24 96 run function luigis_mansion:spawn_entities/item/bill
-execute unless data storage luigis_mansion:data current_state.current_data.money_spawned{astral_hall_lamp:1b} positioned 666 24 96 run function luigis_mansion:spawn_entities/item/bill
-execute unless data storage luigis_mansion:data current_state.current_data.money_spawned{astral_hall_lamp:1b} positioned 667 24 96 run function luigis_mansion:spawn_entities/item/bill
-execute unless data storage luigis_mansion:data current_state.current_data.money_spawned{astral_hall_lamp:1b} positioned 666 24 95 run function luigis_mansion:spawn_entities/item/bill
-execute unless data storage luigis_mansion:data current_state.current_data.money_spawned{astral_hall_lamp:1b} positioned 666 24 99 run function luigis_mansion:spawn_entities/item/bill
-execute unless data storage luigis_mansion:data current_state.current_data.money_spawned{astral_hall_lamp:1b} positioned 668 24 97 run function luigis_mansion:spawn_entities/item/bill
-execute unless data storage luigis_mansion:data current_state.current_data.money_spawned{astral_hall_lamp:1b} positioned 664 24 97 run function luigis_mansion:spawn_entities/item/bill
-execute unless data storage luigis_mansion:data current_state.current_data.money_spawned{astral_hall_lamp:1b} positioned 666.0 23 98.0 run function luigis_mansion:spawn_entities/item/bill
-execute unless data storage luigis_mansion:data current_state.current_data.money_spawned{astral_hall_lamp:1b} positioned 667.0 23 98.0 run function luigis_mansion:spawn_entities/item/bill
-execute unless data storage luigis_mansion:data current_state.current_data.money_spawned{astral_hall_lamp:1b} positioned 666 23 99.0 run function luigis_mansion:spawn_entities/item/bill
+execute unless data storage luigis_mansion:data current_state.current_data.money_spawned{astral_hall_lamp:1b} run function luigis_mansion:spawn_entities/item/gold_coin
+execute unless data storage luigis_mansion:data current_state.current_data.money_spawned{astral_hall_lamp:1b} run function luigis_mansion:spawn_entities/item/gold_coin
+execute unless data storage luigis_mansion:data current_state.current_data.money_spawned{astral_hall_lamp:1b} run function luigis_mansion:spawn_entities/item/gold_coin
+execute unless data storage luigis_mansion:data current_state.current_data.money_spawned{astral_hall_lamp:1b} run function luigis_mansion:spawn_entities/item/gold_coin
+execute unless data storage luigis_mansion:data current_state.current_data.money_spawned{astral_hall_lamp:1b} run function luigis_mansion:spawn_entities/item/gold_coin
+execute unless data storage luigis_mansion:data current_state.current_data.money_spawned{astral_hall_lamp:1b} run function luigis_mansion:spawn_entities/item/gold_coin
+execute unless data storage luigis_mansion:data current_state.current_data.money_spawned{astral_hall_lamp:1b} run function luigis_mansion:spawn_entities/item/gold_coin
+execute unless data storage luigis_mansion:data current_state.current_data.money_spawned{astral_hall_lamp:1b} run function luigis_mansion:spawn_entities/item/gold_coin
+execute unless data storage luigis_mansion:data current_state.current_data.money_spawned{astral_hall_lamp:1b} run function luigis_mansion:spawn_entities/item/gold_coin
+execute unless data storage luigis_mansion:data current_state.current_data.money_spawned{astral_hall_lamp:1b} run function luigis_mansion:spawn_entities/item/gold_coin
+execute unless data storage luigis_mansion:data current_state.current_data.money_spawned{astral_hall_lamp:1b} run function luigis_mansion:spawn_entities/item/gold_coin
+execute unless data storage luigis_mansion:data current_state.current_data.money_spawned{astral_hall_lamp:1b} run function luigis_mansion:spawn_entities/item/gold_coin
+execute unless data storage luigis_mansion:data current_state.current_data.money_spawned{astral_hall_lamp:1b} run function luigis_mansion:spawn_entities/item/gold_coin
+execute unless data storage luigis_mansion:data current_state.current_data.money_spawned{astral_hall_lamp:1b} run function luigis_mansion:spawn_entities/item/gold_coin
+execute unless data storage luigis_mansion:data current_state.current_data.money_spawned{astral_hall_lamp:1b} run function luigis_mansion:spawn_entities/item/gold_coin
+execute unless data storage luigis_mansion:data current_state.current_data.money_spawned{astral_hall_lamp:1b} run function luigis_mansion:spawn_entities/item/bill
+execute unless data storage luigis_mansion:data current_state.current_data.money_spawned{astral_hall_lamp:1b} run function luigis_mansion:spawn_entities/item/bill
+execute unless data storage luigis_mansion:data current_state.current_data.money_spawned{astral_hall_lamp:1b} run function luigis_mansion:spawn_entities/item/bill
+execute unless data storage luigis_mansion:data current_state.current_data.money_spawned{astral_hall_lamp:1b} run function luigis_mansion:spawn_entities/item/bill
+execute unless data storage luigis_mansion:data current_state.current_data.money_spawned{astral_hall_lamp:1b} run function luigis_mansion:spawn_entities/item/bill
+execute unless data storage luigis_mansion:data current_state.current_data.money_spawned{astral_hall_lamp:1b} run function luigis_mansion:spawn_entities/item/bill
+execute unless data storage luigis_mansion:data current_state.current_data.money_spawned{astral_hall_lamp:1b} run function luigis_mansion:spawn_entities/item/bill
+execute unless data storage luigis_mansion:data current_state.current_data.money_spawned{astral_hall_lamp:1b} run function luigis_mansion:spawn_entities/item/bill
+execute unless data storage luigis_mansion:data current_state.current_data.money_spawned{astral_hall_lamp:1b} run function luigis_mansion:spawn_entities/item/bill
+execute unless data storage luigis_mansion:data current_state.current_data.money_spawned{astral_hall_lamp:1b} run function luigis_mansion:spawn_entities/item/bill
+execute unless data storage luigis_mansion:data current_state.current_data.money_spawned{astral_hall_lamp:1b} run function luigis_mansion:spawn_entities/item/bill
+execute unless data storage luigis_mansion:data current_state.current_data.money_spawned{astral_hall_lamp:1b} run function luigis_mansion:spawn_entities/item/bill
+execute unless data storage luigis_mansion:data current_state.current_data.money_spawned{astral_hall_lamp:1b} run function luigis_mansion:spawn_entities/item/bill
+execute unless data storage luigis_mansion:data current_state.current_data.money_spawned{astral_hall_lamp:1b} run function luigis_mansion:spawn_entities/item/bill
+execute unless data storage luigis_mansion:data current_state.current_data.money_spawned{astral_hall_lamp:1b} run function luigis_mansion:spawn_entities/item/bill
 execute if data storage luigis_mansion:data current_state.current_data.money_spawned{astral_hall_lamp:1b} run tag @e[tag=selected] add nothing
 data modify storage luigis_mansion:data current_state.current_data.money_spawned merge value {astral_hall_lamp:1b}

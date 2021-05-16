@@ -1,42 +1,42 @@
-execute unless data storage luigis_mansion:data current_state.current_data.money_spawned{butlers_room_closet:1b} positioned 740 11 68 run function luigis_mansion:spawn_entities/item/gold_coin
-execute unless data storage luigis_mansion:data current_state.current_data.money_spawned{butlers_room_closet:1b} positioned 740 11 67 run function luigis_mansion:spawn_entities/item/gold_coin
-execute unless data storage luigis_mansion:data current_state.current_data.money_spawned{butlers_room_closet:1b} positioned 740 11 66 run function luigis_mansion:spawn_entities/item/gold_coin
-execute unless data storage luigis_mansion:data current_state.current_data.money_spawned{butlers_room_closet:1b} positioned 740 11 65 run function luigis_mansion:spawn_entities/item/gold_coin
-execute unless data storage luigis_mansion:data current_state.current_data.money_spawned{butlers_room_closet:1b} positioned 740 11 64 run function luigis_mansion:spawn_entities/item/gold_coin
-execute unless data storage luigis_mansion:data current_state.current_data.money_spawned{butlers_room_closet:1b} positioned 740 12 68 run function luigis_mansion:spawn_entities/item/gold_coin
-execute unless data storage luigis_mansion:data current_state.current_data.money_spawned{butlers_room_closet:1b} positioned 740 12 67 run function luigis_mansion:spawn_entities/item/gold_coin
-execute unless data storage luigis_mansion:data current_state.current_data.money_spawned{butlers_room_closet:1b} positioned 740 12 66 run function luigis_mansion:spawn_entities/item/gold_coin
-execute unless data storage luigis_mansion:data current_state.current_data.money_spawned{butlers_room_closet:1b} positioned 740 12 65 run function luigis_mansion:spawn_entities/item/gold_coin
-execute unless data storage luigis_mansion:data current_state.current_data.money_spawned{butlers_room_closet:1b} positioned 740 12 64 run function luigis_mansion:spawn_entities/item/gold_coin
-execute unless data storage luigis_mansion:data current_state.current_data.money_spawned{butlers_room_closet:1b} positioned 740 13 68 run function luigis_mansion:spawn_entities/item/gold_coin
-execute unless data storage luigis_mansion:data current_state.current_data.money_spawned{butlers_room_closet:1b} positioned 740 13 67 run function luigis_mansion:spawn_entities/item/gold_coin
-execute unless data storage luigis_mansion:data current_state.current_data.money_spawned{butlers_room_closet:1b} positioned 740 13 66 run function luigis_mansion:spawn_entities/item/gold_coin
-execute unless data storage luigis_mansion:data current_state.current_data.money_spawned{butlers_room_closet:1b} positioned 740 13 65 run function luigis_mansion:spawn_entities/item/gold_coin
-execute unless data storage luigis_mansion:data current_state.current_data.money_spawned{butlers_room_closet:1b} positioned 740 13 64 run function luigis_mansion:spawn_entities/item/gold_coin
-execute unless data storage luigis_mansion:data current_state.current_data.money_spawned{butlers_room_closet:1b} positioned 740 14 68 run function luigis_mansion:spawn_entities/item/gold_coin
-execute unless data storage luigis_mansion:data current_state.current_data.money_spawned{butlers_room_closet:1b} positioned 740 14 67 run function luigis_mansion:spawn_entities/item/gold_coin
-execute unless data storage luigis_mansion:data current_state.current_data.money_spawned{butlers_room_closet:1b} positioned 740 14 66 run function luigis_mansion:spawn_entities/item/gold_coin
-execute unless data storage luigis_mansion:data current_state.current_data.money_spawned{butlers_room_closet:1b} positioned 740 14 65 run function luigis_mansion:spawn_entities/item/gold_coin
-execute unless data storage luigis_mansion:data current_state.current_data.money_spawned{butlers_room_closet:1b} positioned 740 14 64 run function luigis_mansion:spawn_entities/item/gold_coin
-execute unless data storage luigis_mansion:data current_state.current_data.money_spawned{butlers_room_closet:1b} positioned 740 11 68 run function luigis_mansion:spawn_entities/item/bill
-execute unless data storage luigis_mansion:data current_state.current_data.money_spawned{butlers_room_closet:1b} positioned 740 11 67 run function luigis_mansion:spawn_entities/item/bill
-execute unless data storage luigis_mansion:data current_state.current_data.money_spawned{butlers_room_closet:1b} positioned 740 11 66 run function luigis_mansion:spawn_entities/item/bill
-execute unless data storage luigis_mansion:data current_state.current_data.money_spawned{butlers_room_closet:1b} positioned 740 11 65 run function luigis_mansion:spawn_entities/item/bill
-execute unless data storage luigis_mansion:data current_state.current_data.money_spawned{butlers_room_closet:1b} positioned 740 11 64 run function luigis_mansion:spawn_entities/item/bill
-execute unless data storage luigis_mansion:data current_state.current_data.money_spawned{butlers_room_closet:1b} positioned 740 12 68 run function luigis_mansion:spawn_entities/item/bill
-execute unless data storage luigis_mansion:data current_state.current_data.money_spawned{butlers_room_closet:1b} positioned 740 12 67 run function luigis_mansion:spawn_entities/item/bill
-execute unless data storage luigis_mansion:data current_state.current_data.money_spawned{butlers_room_closet:1b} positioned 740 12 66 run function luigis_mansion:spawn_entities/item/bill
-execute unless data storage luigis_mansion:data current_state.current_data.money_spawned{butlers_room_closet:1b} positioned 740 12 65 run function luigis_mansion:spawn_entities/item/bill
-execute unless data storage luigis_mansion:data current_state.current_data.money_spawned{butlers_room_closet:1b} positioned 740 12 64 run function luigis_mansion:spawn_entities/item/bill
-execute unless data storage luigis_mansion:data current_state.current_data.money_spawned{butlers_room_closet:1b} positioned 740 13 68 run function luigis_mansion:spawn_entities/item/bill
-execute unless data storage luigis_mansion:data current_state.current_data.money_spawned{butlers_room_closet:1b} positioned 740 13 67 run function luigis_mansion:spawn_entities/item/bill
-execute unless data storage luigis_mansion:data current_state.current_data.money_spawned{butlers_room_closet:1b} positioned 740 13 66 run function luigis_mansion:spawn_entities/item/bill
-execute unless data storage luigis_mansion:data current_state.current_data.money_spawned{butlers_room_closet:1b} positioned 740 13 65 run function luigis_mansion:spawn_entities/item/bill
-execute unless data storage luigis_mansion:data current_state.current_data.money_spawned{butlers_room_closet:1b} positioned 740 13 64 run function luigis_mansion:spawn_entities/item/bill
-execute unless data storage luigis_mansion:data current_state.current_data.money_spawned{butlers_room_closet:1b} positioned 740 14 68 run function luigis_mansion:spawn_entities/item/bill
-execute unless data storage luigis_mansion:data current_state.current_data.money_spawned{butlers_room_closet:1b} positioned 740 14 67 run function luigis_mansion:spawn_entities/item/bill
-execute unless data storage luigis_mansion:data current_state.current_data.money_spawned{butlers_room_closet:1b} positioned 740 14 66 run function luigis_mansion:spawn_entities/item/bill
-execute unless data storage luigis_mansion:data current_state.current_data.money_spawned{butlers_room_closet:1b} positioned 740 14 65 run function luigis_mansion:spawn_entities/item/bill
-execute unless data storage luigis_mansion:data current_state.current_data.money_spawned{butlers_room_closet:1b} positioned 740 14 64 run function luigis_mansion:spawn_entities/item/bill
+execute unless data storage luigis_mansion:data current_state.current_data.money_spawned{butlers_room_closet:1b} run function luigis_mansion:spawn_entities/item/gold_coin
+execute unless data storage luigis_mansion:data current_state.current_data.money_spawned{butlers_room_closet:1b} run function luigis_mansion:spawn_entities/item/gold_coin
+execute unless data storage luigis_mansion:data current_state.current_data.money_spawned{butlers_room_closet:1b} run function luigis_mansion:spawn_entities/item/gold_coin
+execute unless data storage luigis_mansion:data current_state.current_data.money_spawned{butlers_room_closet:1b} run function luigis_mansion:spawn_entities/item/gold_coin
+execute unless data storage luigis_mansion:data current_state.current_data.money_spawned{butlers_room_closet:1b} run function luigis_mansion:spawn_entities/item/gold_coin
+execute unless data storage luigis_mansion:data current_state.current_data.money_spawned{butlers_room_closet:1b} run function luigis_mansion:spawn_entities/item/gold_coin
+execute unless data storage luigis_mansion:data current_state.current_data.money_spawned{butlers_room_closet:1b} run function luigis_mansion:spawn_entities/item/gold_coin
+execute unless data storage luigis_mansion:data current_state.current_data.money_spawned{butlers_room_closet:1b} run function luigis_mansion:spawn_entities/item/gold_coin
+execute unless data storage luigis_mansion:data current_state.current_data.money_spawned{butlers_room_closet:1b} run function luigis_mansion:spawn_entities/item/gold_coin
+execute unless data storage luigis_mansion:data current_state.current_data.money_spawned{butlers_room_closet:1b} run function luigis_mansion:spawn_entities/item/gold_coin
+execute unless data storage luigis_mansion:data current_state.current_data.money_spawned{butlers_room_closet:1b} run function luigis_mansion:spawn_entities/item/gold_coin
+execute unless data storage luigis_mansion:data current_state.current_data.money_spawned{butlers_room_closet:1b} run function luigis_mansion:spawn_entities/item/gold_coin
+execute unless data storage luigis_mansion:data current_state.current_data.money_spawned{butlers_room_closet:1b} run function luigis_mansion:spawn_entities/item/gold_coin
+execute unless data storage luigis_mansion:data current_state.current_data.money_spawned{butlers_room_closet:1b} run function luigis_mansion:spawn_entities/item/gold_coin
+execute unless data storage luigis_mansion:data current_state.current_data.money_spawned{butlers_room_closet:1b} run function luigis_mansion:spawn_entities/item/gold_coin
+execute unless data storage luigis_mansion:data current_state.current_data.money_spawned{butlers_room_closet:1b} run function luigis_mansion:spawn_entities/item/gold_coin
+execute unless data storage luigis_mansion:data current_state.current_data.money_spawned{butlers_room_closet:1b} run function luigis_mansion:spawn_entities/item/gold_coin
+execute unless data storage luigis_mansion:data current_state.current_data.money_spawned{butlers_room_closet:1b} run function luigis_mansion:spawn_entities/item/gold_coin
+execute unless data storage luigis_mansion:data current_state.current_data.money_spawned{butlers_room_closet:1b} run function luigis_mansion:spawn_entities/item/gold_coin
+execute unless data storage luigis_mansion:data current_state.current_data.money_spawned{butlers_room_closet:1b} run function luigis_mansion:spawn_entities/item/gold_coin
+execute unless data storage luigis_mansion:data current_state.current_data.money_spawned{butlers_room_closet:1b} run function luigis_mansion:spawn_entities/item/bill
+execute unless data storage luigis_mansion:data current_state.current_data.money_spawned{butlers_room_closet:1b} run function luigis_mansion:spawn_entities/item/bill
+execute unless data storage luigis_mansion:data current_state.current_data.money_spawned{butlers_room_closet:1b} run function luigis_mansion:spawn_entities/item/bill
+execute unless data storage luigis_mansion:data current_state.current_data.money_spawned{butlers_room_closet:1b} run function luigis_mansion:spawn_entities/item/bill
+execute unless data storage luigis_mansion:data current_state.current_data.money_spawned{butlers_room_closet:1b} run function luigis_mansion:spawn_entities/item/bill
+execute unless data storage luigis_mansion:data current_state.current_data.money_spawned{butlers_room_closet:1b} run function luigis_mansion:spawn_entities/item/bill
+execute unless data storage luigis_mansion:data current_state.current_data.money_spawned{butlers_room_closet:1b} run function luigis_mansion:spawn_entities/item/bill
+execute unless data storage luigis_mansion:data current_state.current_data.money_spawned{butlers_room_closet:1b} run function luigis_mansion:spawn_entities/item/bill
+execute unless data storage luigis_mansion:data current_state.current_data.money_spawned{butlers_room_closet:1b} run function luigis_mansion:spawn_entities/item/bill
+execute unless data storage luigis_mansion:data current_state.current_data.money_spawned{butlers_room_closet:1b} run function luigis_mansion:spawn_entities/item/bill
+execute unless data storage luigis_mansion:data current_state.current_data.money_spawned{butlers_room_closet:1b} run function luigis_mansion:spawn_entities/item/bill
+execute unless data storage luigis_mansion:data current_state.current_data.money_spawned{butlers_room_closet:1b} run function luigis_mansion:spawn_entities/item/bill
+execute unless data storage luigis_mansion:data current_state.current_data.money_spawned{butlers_room_closet:1b} run function luigis_mansion:spawn_entities/item/bill
+execute unless data storage luigis_mansion:data current_state.current_data.money_spawned{butlers_room_closet:1b} run function luigis_mansion:spawn_entities/item/bill
+execute unless data storage luigis_mansion:data current_state.current_data.money_spawned{butlers_room_closet:1b} run function luigis_mansion:spawn_entities/item/bill
+execute unless data storage luigis_mansion:data current_state.current_data.money_spawned{butlers_room_closet:1b} run function luigis_mansion:spawn_entities/item/bill
+execute unless data storage luigis_mansion:data current_state.current_data.money_spawned{butlers_room_closet:1b} run function luigis_mansion:spawn_entities/item/bill
+execute unless data storage luigis_mansion:data current_state.current_data.money_spawned{butlers_room_closet:1b} run function luigis_mansion:spawn_entities/item/bill
+execute unless data storage luigis_mansion:data current_state.current_data.money_spawned{butlers_room_closet:1b} run function luigis_mansion:spawn_entities/item/bill
+execute unless data storage luigis_mansion:data current_state.current_data.money_spawned{butlers_room_closet:1b} run function luigis_mansion:spawn_entities/item/bill
 execute if data storage luigis_mansion:data current_state.current_data.money_spawned{butlers_room_closet:1b} run tag @e[tag=selected] add nothing
 data modify storage luigis_mansion:data current_state.current_data.money_spawned merge value {butlers_room_closet:1b}

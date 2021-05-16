@@ -1,44 +1,44 @@
-execute unless data storage luigis_mansion:data current_state.current_data.money_spawned{billiards_room_chest:1b} positioned 681 11 81 run function luigis_mansion:spawn_entities/item/gold_coin
-execute unless data storage luigis_mansion:data current_state.current_data.money_spawned{billiards_room_chest:1b} positioned 681 11 82 run function luigis_mansion:spawn_entities/item/gold_coin
-execute unless data storage luigis_mansion:data current_state.current_data.money_spawned{billiards_room_chest:1b} positioned 681 11 83 run function luigis_mansion:spawn_entities/item/gold_coin
-execute unless data storage luigis_mansion:data current_state.current_data.money_spawned{billiards_room_chest:1b} positioned 682 11 81 run function luigis_mansion:spawn_entities/item/gold_coin
-execute unless data storage luigis_mansion:data current_state.current_data.money_spawned{billiards_room_chest:1b} positioned 682 11 83 run function luigis_mansion:spawn_entities/item/gold_coin
-execute unless data storage luigis_mansion:data current_state.current_data.money_spawned{billiards_room_chest:1b} positioned 683 11 81 run function luigis_mansion:spawn_entities/item/gold_coin
-execute unless data storage luigis_mansion:data current_state.current_data.money_spawned{billiards_room_chest:1b} positioned 683 11 82 run function luigis_mansion:spawn_entities/item/gold_coin
-execute unless data storage luigis_mansion:data current_state.current_data.money_spawned{billiards_room_chest:1b} positioned 683 11 83 run function luigis_mansion:spawn_entities/item/gold_coin
-execute unless data storage luigis_mansion:data current_state.current_data.money_spawned{billiards_room_chest:1b} positioned 680 11 81 run function luigis_mansion:spawn_entities/item/gold_coin
-execute unless data storage luigis_mansion:data current_state.current_data.money_spawned{billiards_room_chest:1b} positioned 680 11 82 run function luigis_mansion:spawn_entities/item/gold_coin
-execute unless data storage luigis_mansion:data current_state.current_data.money_spawned{billiards_room_chest:1b} positioned 680 11 83 run function luigis_mansion:spawn_entities/item/gold_coin
-execute unless data storage luigis_mansion:data current_state.current_data.money_spawned{billiards_room_chest:1b} positioned 684 11 81 run function luigis_mansion:spawn_entities/item/gold_coin
-execute unless data storage luigis_mansion:data current_state.current_data.money_spawned{billiards_room_chest:1b} positioned 684 11 82 run function luigis_mansion:spawn_entities/item/gold_coin
-execute unless data storage luigis_mansion:data current_state.current_data.money_spawned{billiards_room_chest:1b} positioned 684 11 83 run function luigis_mansion:spawn_entities/item/gold_coin
-execute unless data storage luigis_mansion:data current_state.current_data.money_spawned{billiards_room_chest:1b} positioned 681 12 80 run function luigis_mansion:spawn_entities/item/gold_coin
-execute unless data storage luigis_mansion:data current_state.current_data.money_spawned{billiards_room_chest:1b} positioned 682 12 80 run function luigis_mansion:spawn_entities/item/gold_coin
-execute unless data storage luigis_mansion:data current_state.current_data.money_spawned{billiards_room_chest:1b} positioned 683 11 80 run function luigis_mansion:spawn_entities/item/gold_coin
-execute unless data storage luigis_mansion:data current_state.current_data.money_spawned{billiards_room_chest:1b} positioned 681 11 84 run function luigis_mansion:spawn_entities/item/gold_coin
-execute unless data storage luigis_mansion:data current_state.current_data.money_spawned{billiards_room_chest:1b} positioned 682 11 84 run function luigis_mansion:spawn_entities/item/gold_coin
-execute unless data storage luigis_mansion:data current_state.current_data.money_spawned{billiards_room_chest:1b} positioned 683 11 84 run function luigis_mansion:spawn_entities/item/gold_coin
-execute unless data storage luigis_mansion:data current_state.current_data.money_spawned{billiards_room_chest:1b} positioned 681 11 81 run function luigis_mansion:spawn_entities/item/bill
-execute unless data storage luigis_mansion:data current_state.current_data.money_spawned{billiards_room_chest:1b} positioned 681 11 82 run function luigis_mansion:spawn_entities/item/bill
-execute unless data storage luigis_mansion:data current_state.current_data.money_spawned{billiards_room_chest:1b} positioned 681 11 83 run function luigis_mansion:spawn_entities/item/bill
-execute unless data storage luigis_mansion:data current_state.current_data.money_spawned{billiards_room_chest:1b} positioned 682 11 81 run function luigis_mansion:spawn_entities/item/bill
-execute unless data storage luigis_mansion:data current_state.current_data.money_spawned{billiards_room_chest:1b} positioned 682 11 83 run function luigis_mansion:spawn_entities/item/bill
-execute unless data storage luigis_mansion:data current_state.current_data.money_spawned{billiards_room_chest:1b} positioned 683 11 81 run function luigis_mansion:spawn_entities/item/bill
-execute unless data storage luigis_mansion:data current_state.current_data.money_spawned{billiards_room_chest:1b} positioned 683 11 82 run function luigis_mansion:spawn_entities/item/bill
-execute unless data storage luigis_mansion:data current_state.current_data.money_spawned{billiards_room_chest:1b} positioned 683 11 83 run function luigis_mansion:spawn_entities/item/bill
-execute unless data storage luigis_mansion:data current_state.current_data.money_spawned{billiards_room_chest:1b} positioned 680 11 81 run function luigis_mansion:spawn_entities/item/bill
-execute unless data storage luigis_mansion:data current_state.current_data.money_spawned{billiards_room_chest:1b} positioned 680 11 82 run function luigis_mansion:spawn_entities/item/bill
-execute unless data storage luigis_mansion:data current_state.current_data.money_spawned{billiards_room_chest:1b} positioned 680 11 83 run function luigis_mansion:spawn_entities/item/bill
-execute unless data storage luigis_mansion:data current_state.current_data.money_spawned{billiards_room_chest:1b} positioned 684 11 81 run function luigis_mansion:spawn_entities/item/bill
-execute unless data storage luigis_mansion:data current_state.current_data.money_spawned{billiards_room_chest:1b} positioned 684 11 82 run function luigis_mansion:spawn_entities/item/bill
-execute unless data storage luigis_mansion:data current_state.current_data.money_spawned{billiards_room_chest:1b} positioned 684 11 83 run function luigis_mansion:spawn_entities/item/bill
-execute unless data storage luigis_mansion:data current_state.current_data.money_spawned{billiards_room_chest:1b} positioned 681 11 80 run function luigis_mansion:spawn_entities/item/bill
-execute unless data storage luigis_mansion:data current_state.current_data.money_spawned{billiards_room_chest:1b} positioned 682 11 80 run function luigis_mansion:spawn_entities/item/bill
-execute unless data storage luigis_mansion:data current_state.current_data.money_spawned{billiards_room_chest:1b} positioned 683 11 80 run function luigis_mansion:spawn_entities/item/bill
-execute unless data storage luigis_mansion:data current_state.current_data.money_spawned{billiards_room_chest:1b} positioned 681 11 84 run function luigis_mansion:spawn_entities/item/bill
-execute unless data storage luigis_mansion:data current_state.current_data.money_spawned{billiards_room_chest:1b} positioned 682 11 84 run function luigis_mansion:spawn_entities/item/bill
-execute unless data storage luigis_mansion:data current_state.current_data.money_spawned{billiards_room_chest:1b} positioned 683 11 84 run function luigis_mansion:spawn_entities/item/bill
-execute unless data storage luigis_mansion:data current_state.current_data.money_spawned{billiards_room_chest:1b} positioned 682 12 82.0 run function luigis_mansion:spawn_entities/item/gold_bar
-execute unless data storage luigis_mansion:data current_state.current_data.money_spawned{billiards_room_chest:1b} positioned 682 12 83.0 run function luigis_mansion:spawn_entities/item/gold_bar
-execute unless data storage luigis_mansion:data current_state.current_data.money_spawned{billiards_room_chest:1b} positioned 682 12 82 run function luigis_mansion:spawn_entities/item/blue_diamond
+execute unless data storage luigis_mansion:data current_state.current_data.money_spawned{billiards_room_chest:1b} run function luigis_mansion:spawn_entities/item/gold_coin
+execute unless data storage luigis_mansion:data current_state.current_data.money_spawned{billiards_room_chest:1b} run function luigis_mansion:spawn_entities/item/gold_coin
+execute unless data storage luigis_mansion:data current_state.current_data.money_spawned{billiards_room_chest:1b} run function luigis_mansion:spawn_entities/item/gold_coin
+execute unless data storage luigis_mansion:data current_state.current_data.money_spawned{billiards_room_chest:1b} run function luigis_mansion:spawn_entities/item/gold_coin
+execute unless data storage luigis_mansion:data current_state.current_data.money_spawned{billiards_room_chest:1b} run function luigis_mansion:spawn_entities/item/gold_coin
+execute unless data storage luigis_mansion:data current_state.current_data.money_spawned{billiards_room_chest:1b} run function luigis_mansion:spawn_entities/item/gold_coin
+execute unless data storage luigis_mansion:data current_state.current_data.money_spawned{billiards_room_chest:1b} run function luigis_mansion:spawn_entities/item/gold_coin
+execute unless data storage luigis_mansion:data current_state.current_data.money_spawned{billiards_room_chest:1b} run function luigis_mansion:spawn_entities/item/gold_coin
+execute unless data storage luigis_mansion:data current_state.current_data.money_spawned{billiards_room_chest:1b} run function luigis_mansion:spawn_entities/item/gold_coin
+execute unless data storage luigis_mansion:data current_state.current_data.money_spawned{billiards_room_chest:1b} run function luigis_mansion:spawn_entities/item/gold_coin
+execute unless data storage luigis_mansion:data current_state.current_data.money_spawned{billiards_room_chest:1b} run function luigis_mansion:spawn_entities/item/gold_coin
+execute unless data storage luigis_mansion:data current_state.current_data.money_spawned{billiards_room_chest:1b} run function luigis_mansion:spawn_entities/item/gold_coin
+execute unless data storage luigis_mansion:data current_state.current_data.money_spawned{billiards_room_chest:1b} run function luigis_mansion:spawn_entities/item/gold_coin
+execute unless data storage luigis_mansion:data current_state.current_data.money_spawned{billiards_room_chest:1b} run function luigis_mansion:spawn_entities/item/gold_coin
+execute unless data storage luigis_mansion:data current_state.current_data.money_spawned{billiards_room_chest:1b} run function luigis_mansion:spawn_entities/item/gold_coin
+execute unless data storage luigis_mansion:data current_state.current_data.money_spawned{billiards_room_chest:1b} run function luigis_mansion:spawn_entities/item/gold_coin
+execute unless data storage luigis_mansion:data current_state.current_data.money_spawned{billiards_room_chest:1b} run function luigis_mansion:spawn_entities/item/gold_coin
+execute unless data storage luigis_mansion:data current_state.current_data.money_spawned{billiards_room_chest:1b} run function luigis_mansion:spawn_entities/item/gold_coin
+execute unless data storage luigis_mansion:data current_state.current_data.money_spawned{billiards_room_chest:1b} run function luigis_mansion:spawn_entities/item/gold_coin
+execute unless data storage luigis_mansion:data current_state.current_data.money_spawned{billiards_room_chest:1b} run function luigis_mansion:spawn_entities/item/gold_coin
+execute unless data storage luigis_mansion:data current_state.current_data.money_spawned{billiards_room_chest:1b} run function luigis_mansion:spawn_entities/item/bill
+execute unless data storage luigis_mansion:data current_state.current_data.money_spawned{billiards_room_chest:1b} run function luigis_mansion:spawn_entities/item/bill
+execute unless data storage luigis_mansion:data current_state.current_data.money_spawned{billiards_room_chest:1b} run function luigis_mansion:spawn_entities/item/bill
+execute unless data storage luigis_mansion:data current_state.current_data.money_spawned{billiards_room_chest:1b} run function luigis_mansion:spawn_entities/item/bill
+execute unless data storage luigis_mansion:data current_state.current_data.money_spawned{billiards_room_chest:1b} run function luigis_mansion:spawn_entities/item/bill
+execute unless data storage luigis_mansion:data current_state.current_data.money_spawned{billiards_room_chest:1b} run function luigis_mansion:spawn_entities/item/bill
+execute unless data storage luigis_mansion:data current_state.current_data.money_spawned{billiards_room_chest:1b} run function luigis_mansion:spawn_entities/item/bill
+execute unless data storage luigis_mansion:data current_state.current_data.money_spawned{billiards_room_chest:1b} run function luigis_mansion:spawn_entities/item/bill
+execute unless data storage luigis_mansion:data current_state.current_data.money_spawned{billiards_room_chest:1b} run function luigis_mansion:spawn_entities/item/bill
+execute unless data storage luigis_mansion:data current_state.current_data.money_spawned{billiards_room_chest:1b} run function luigis_mansion:spawn_entities/item/bill
+execute unless data storage luigis_mansion:data current_state.current_data.money_spawned{billiards_room_chest:1b} run function luigis_mansion:spawn_entities/item/bill
+execute unless data storage luigis_mansion:data current_state.current_data.money_spawned{billiards_room_chest:1b} run function luigis_mansion:spawn_entities/item/bill
+execute unless data storage luigis_mansion:data current_state.current_data.money_spawned{billiards_room_chest:1b} run function luigis_mansion:spawn_entities/item/bill
+execute unless data storage luigis_mansion:data current_state.current_data.money_spawned{billiards_room_chest:1b} run function luigis_mansion:spawn_entities/item/bill
+execute unless data storage luigis_mansion:data current_state.current_data.money_spawned{billiards_room_chest:1b} run function luigis_mansion:spawn_entities/item/bill
+execute unless data storage luigis_mansion:data current_state.current_data.money_spawned{billiards_room_chest:1b} run function luigis_mansion:spawn_entities/item/bill
+execute unless data storage luigis_mansion:data current_state.current_data.money_spawned{billiards_room_chest:1b} run function luigis_mansion:spawn_entities/item/bill
+execute unless data storage luigis_mansion:data current_state.current_data.money_spawned{billiards_room_chest:1b} run function luigis_mansion:spawn_entities/item/bill
+execute unless data storage luigis_mansion:data current_state.current_data.money_spawned{billiards_room_chest:1b} run function luigis_mansion:spawn_entities/item/bill
+execute unless data storage luigis_mansion:data current_state.current_data.money_spawned{billiards_room_chest:1b} run function luigis_mansion:spawn_entities/item/bill
+execute unless data storage luigis_mansion:data current_state.current_data.money_spawned{billiards_room_chest:1b} run function luigis_mansion:spawn_entities/item/gold_bar
+execute unless data storage luigis_mansion:data current_state.current_data.money_spawned{billiards_room_chest:1b} run function luigis_mansion:spawn_entities/item/gold_bar
+execute unless data storage luigis_mansion:data current_state.current_data.money_spawned{billiards_room_chest:1b} run function luigis_mansion:spawn_entities/item/blue_diamond
 data modify storage luigis_mansion:data current_state.current_data.money_spawned merge value {billiards_room_chest:1b}

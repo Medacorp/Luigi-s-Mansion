@@ -1,7 +1,7 @@
-execute unless data storage luigis_mansion:data current_state.current_data.money_spawned{study_ceiling_lamp:1b} positioned 709 24 53 run function luigis_mansion:spawn_entities/item/gold_coin
-execute unless data storage luigis_mansion:data current_state.current_data.money_spawned{study_ceiling_lamp:1b} positioned 709 24 52 run function luigis_mansion:spawn_entities/item/gold_coin
-execute unless data storage luigis_mansion:data current_state.current_data.money_spawned{study_ceiling_lamp:1b} positioned 708 24 53 run function luigis_mansion:spawn_entities/item/gold_coin
-execute unless data storage luigis_mansion:data current_state.current_data.money_spawned{study_ceiling_lamp:1b} positioned 708 24 52 run function luigis_mansion:spawn_entities/item/gold_coin
-execute unless data storage luigis_mansion:data current_state.current_data.money_spawned{study_ceiling_lamp:1b} positioned 709.0 24 53.0 run function luigis_mansion:spawn_entities/item/gold_coin
+execute unless data storage luigis_mansion:data current_state.current_data.money_spawned{study_ceiling_lamp:1b} run function luigis_mansion:spawn_entities/item/gold_coin
+execute unless data storage luigis_mansion:data current_state.current_data.money_spawned{study_ceiling_lamp:1b} run function luigis_mansion:spawn_entities/item/gold_coin
+execute unless data storage luigis_mansion:data current_state.current_data.money_spawned{study_ceiling_lamp:1b} run function luigis_mansion:spawn_entities/item/gold_coin
+execute unless data storage luigis_mansion:data current_state.current_data.money_spawned{study_ceiling_lamp:1b} run function luigis_mansion:spawn_entities/item/gold_coin
+execute unless data storage luigis_mansion:data current_state.current_data.money_spawned{study_ceiling_lamp:1b} run function luigis_mansion:spawn_entities/item/gold_coin
 execute if data storage luigis_mansion:data current_state.current_data.money_spawned{study_ceiling_lamp:1b} run tag @e[tag=selected] add nothing
 data modify storage luigis_mansion:data current_state.current_data.money_spawned merge value {study_ceiling_lamp:1b}

@@ -1,7 +1,7 @@
-execute unless data storage luigis_mansion:data current_state.current_data.money_spawned{breaker_room_lamp:1b} positioned 694 7 -52 run function luigis_mansion:spawn_entities/item/gold_coin
-execute unless data storage luigis_mansion:data current_state.current_data.money_spawned{breaker_room_lamp:1b} positioned 692 7 -52 run function luigis_mansion:spawn_entities/item/gold_coin
-execute unless data storage luigis_mansion:data current_state.current_data.money_spawned{breaker_room_lamp:1b} positioned 693 7 -51 run function luigis_mansion:spawn_entities/item/gold_coin
-execute unless data storage luigis_mansion:data current_state.current_data.money_spawned{breaker_room_lamp:1b} positioned 693 7 -53 run function luigis_mansion:spawn_entities/item/gold_coin
-execute unless data storage luigis_mansion:data current_state.current_data.money_spawned{breaker_room_lamp:1b} positioned 693 6 -52 run function luigis_mansion:spawn_entities/item/gold_coin
+execute unless data storage luigis_mansion:data current_state.current_data.money_spawned{breaker_room_lamp:1b} run function luigis_mansion:spawn_entities/item/gold_coin
+execute unless data storage luigis_mansion:data current_state.current_data.money_spawned{breaker_room_lamp:1b} run function luigis_mansion:spawn_entities/item/gold_coin
+execute unless data storage luigis_mansion:data current_state.current_data.money_spawned{breaker_room_lamp:1b} run function luigis_mansion:spawn_entities/item/gold_coin
+execute unless data storage luigis_mansion:data current_state.current_data.money_spawned{breaker_room_lamp:1b} run function luigis_mansion:spawn_entities/item/gold_coin
+execute unless data storage luigis_mansion:data current_state.current_data.money_spawned{breaker_room_lamp:1b} run function luigis_mansion:spawn_entities/item/gold_coin
 execute if data storage luigis_mansion:data current_state.current_data.money_spawned{breaker_room_lamp:1b} run tag @e[tag=selected] add nothing
 data modify storage luigis_mansion:data current_state.current_data.money_spawned merge value {breaker_room_lamp:1b}

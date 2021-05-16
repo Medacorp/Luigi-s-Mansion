@@ -1,3 +1,3 @@
-execute unless data storage luigis_mansion:data current_state.current_data.money_spawned{hallway_5_jar_3:1b} positioned 680 13.5 -25 run function luigis_mansion:spawn_entities/item/gold_bar
+execute unless data storage luigis_mansion:data current_state.current_data.money_spawned{hallway_5_jar_3:1b} run function luigis_mansion:spawn_entities/item/gold_bar
 execute if data storage luigis_mansion:data current_state.current_data.money_spawned{hallway_5_jar_3:1b} run tag @e[tag=selected] add nothing
 data modify storage luigis_mansion:data current_state.current_data.money_spawned merge value {hallway_5_jar_3:1b}

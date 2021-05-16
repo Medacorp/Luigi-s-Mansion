@@ -4,7 +4,7 @@ execute unless score #ceramics_studio_jar_2 Searched matches 1 run summon minecr
 execute unless score #ceramics_studio_jar_2 Searched matches 1 run summon minecraft:marker ~ ~ ~ {Tags:["chance","nothing"],Duration:1}
 execute unless score #ceramics_studio_jar_2 Searched matches 1 run summon minecraft:marker ~ ~ ~ {Tags:["chance","money"],Duration:1}
 execute unless score #ceramics_studio_jar_2 Searched matches 1 run tag @e[type=minecraft:marker,tag=chance,sort=random,limit=1] add selected
-execute if entity @e[type=minecraft:marker,tag=chance,tag=selected,tag=money] run function luigis_mansion:room/normal/ceramics_studio/jar_2
+execute if entity @e[type=minecraft:marker,tag=chance,tag=selected,tag=money] positioned 708 29 73 run function luigis_mansion:room/normal/ceramics_studio/jar_2
 execute unless entity @e[type=minecraft:marker,tag=chance,tag=selected,tag=!nothing] positioned 709 29 73 run function luigis_mansion:blocks/dust
 kill @e[type=minecraft:marker,tag=chance]
 scoreboard players set #ceramics_studio_jar_2 Searched 1

@@ -6,7 +6,7 @@ execute unless score #fortune_tellers_room_table_3 Searched matches 1 run summon
 execute unless score #fortune_tellers_room_table_3 Searched matches 1 run tag @e[type=minecraft:marker,tag=chance,sort=random,limit=1] add selected
 execute if entity @e[type=minecraft:marker,tag=chance,tag=selected,tag=poison_mushroom] positioned 736 12 52.0 run function luigis_mansion:spawn_entities/item/poison_mushroom
 execute if entity @e[type=minecraft:marker,tag=chance,tag=selected,tag=small_heart] positioned 736 12 52.0 run function luigis_mansion:spawn_entities/item/small_heart
-execute if entity @e[type=minecraft:marker,tag=chance,tag=selected,tag=money] run function luigis_mansion:room/hidden/fortune_tellers_room/table_3
+execute if entity @e[type=minecraft:marker,tag=chance,tag=selected,tag=money] positioned 736 12 52.0 run function luigis_mansion:room/hidden/fortune_tellers_room/table_3
 execute unless entity @e[type=minecraft:marker,tag=chance,tag=selected,tag=!nothing] positioned 736 11 52.0 run function luigis_mansion:blocks/dust
 kill @e[type=minecraft:marker,tag=chance]
 scoreboard players set #fortune_tellers_room_table_3 Searched 1
