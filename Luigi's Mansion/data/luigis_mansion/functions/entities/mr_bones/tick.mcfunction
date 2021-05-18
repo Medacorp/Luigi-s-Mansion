@@ -3,7 +3,7 @@ execute as @e[tag=mr_bones_body] if score @s GhostNr = #temp GhostNr run tag @s 
 
 execute if entity @s[tag=dying,tag=normal_death,scores={HurtTime=1}] run playsound luigis_mansion:entity.mr_bones.vacuumed hostile @a[tag=same_room] ~ ~ ~ 1
 execute if entity @s[tag=dying,tag=element_death,scores={HurtTime=1}] run playsound luigis_mansion:entity.mr_bones.element_death hostile @a[tag=same_room] ~ ~ ~ 1
-execute if entity @s[tag=dead] run loot spawn ~ ~ ~ loot luigis_mansion:entities/ghost/mr_bones
+execute if entity @s[tag=dead] run function luigis_mansion:entities/mr_bones/drop_loot
 execute if entity @s[tag=dead] run particle minecraft:dust 0.7 1 1 1 ~-0.1 ~ ~0.1 0.2 0.6 0.2 1 30
 execute if entity @s[tag=dead] run teleport @s ~ -100 ~
 

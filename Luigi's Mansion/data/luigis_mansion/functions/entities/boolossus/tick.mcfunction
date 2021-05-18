@@ -1,5 +1,5 @@
 execute if entity @s[tag=normal_death] run playsound luigis_mansion:entity.boolossus.vacuumed hostile @a[tag=same_room] ~ ~ ~ 1
-execute if entity @s[tag=normal_death] run loot spawn ~ ~ ~ loot luigis_mansion:entities/ghost/boolossus
+execute if entity @s[tag=normal_death] run function luigis_mansion:entities/boolossus/drop_loot
 execute if entity @s[tag=dead] run particle minecraft:dust 0.7 1 1 1 ~-0.1 ~ ~0.1 0.2 0.6 0.2 1 30
 execute if entity @s[tag=dead] run teleport @s ~ -100 ~
 execute if entity @s[tag=normal_death] as @p[gamemode=!spectator] at @s run function luigis_mansion:items/poltergust_3000/ice_element
@@ -21,5 +21,5 @@ execute if entity @s[tag=battle] run function #luigis_mansion:entities/boolossus
 execute if entity @s[tag=!battle,tag=!split] run function #luigis_mansion:entities/boolossus/balcony
 
 execute store result entity @s Pose.Head[0] float 0.01 run data get entity @s Rotation[1] 100
-execute store result entity @s Pose.RightArm[2] float 0.01 run data get entity @s Rotation[1] 100
-execute store result entity @s Pose.LeftArm[2] float 0.01 run data get entity @s Rotation[1] 100
+execute store result entity @s Pose.RightArm[1] float -0.01 run data get entity @s Rotation[1] 100
+execute store result entity @s Pose.LeftArm[1] float 0.01 run data get entity @s Rotation[1] 100

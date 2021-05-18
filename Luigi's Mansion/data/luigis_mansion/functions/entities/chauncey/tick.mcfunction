@@ -2,7 +2,7 @@ scoreboard players operation #temp GhostNr = @s GhostNr
 execute as @e[tag=chauncey_body] if score @s GhostNr = #temp GhostNr run tag @s add this_model
 
 execute if entity @s[tag=dying,scores={HurtTime=1}] run playsound luigis_mansion:entity.chauncey.vacuumed hostile @a[tag=same_room] ~ ~ ~ 1
-execute if entity @s[tag=dead] run loot spawn ~ ~ ~ loot luigis_mansion:entities/ghost/chauncey
+execute if entity @s[tag=dead] run function luigis_mansion:entities/chauncey/drop_loot
 execute if entity @s[tag=dead] run particle minecraft:dust 0.7 1 1 1 ~-0.1 ~ ~0.1 0.2 0.6 0.2 1 30
 execute if entity @s[tag=dead] run teleport @s ~ -100 ~
 execute if entity @s[tag=dead] as @a run function luigis_mansion:entities/ghost/boss_damage

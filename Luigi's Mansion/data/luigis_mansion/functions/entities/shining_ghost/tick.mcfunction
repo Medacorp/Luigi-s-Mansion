@@ -1,4 +1,3 @@
-execute if entity @s[tag=dead] run loot spawn ~ ~ ~ loot luigis_mansion:entities/ghost/shining_ghost
 execute if entity @s[tag=dead] run teleport @s ~ -100 ~
 
 execute if entity @a[gamemode=!spectator,distance=..0.7,limit=1] if entity @s[tag=!in_vacuum,tag=!can_spit_2,tag=!spit] if entity @s[tag=!dead,tag=!removed_from_existence] run function luigis_mansion:entities/shining_ghost/collide

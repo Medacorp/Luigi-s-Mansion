@@ -2,7 +2,7 @@ execute if entity @s[tag=dying,tag=boo_death] run function luigis_mansion:entiti
 execute if entity @s[tag=dying,tag=boo_hurt] run function luigis_mansion:entities/ghost/death
 
 execute if entity @s[tag=dying,scores={HurtTime=1}] run playsound luigis_mansion:entity.king_boo.vacuumed hostile @a[tag=same_room] ~ ~ ~ 1
-execute if entity @s[tag=dead,tag=!warp,tag=!secret_altar] run loot spawn ~ ~ ~ loot luigis_mansion:entities/ghost/king_boo
+execute if entity @s[tag=dead,tag=!warp,tag=!secret_altar] run function luigis_mansion:entities/king_boo/drop_loot
 execute if entity @s[tag=dead,tag=!warp,tag=!secret_altar] run particle minecraft:dust 0.7 1 1 1 ~-0.1 ~ ~0.1 0.2 0.6 0.2 1 30
 execute if entity @s[tag=dead] run teleport @s ~ -100 ~
 execute if entity @s[tag=dead] run tag @e[tag=bowser] add dead
@@ -51,6 +51,6 @@ tag @s remove boo_hurt
 tag @s remove in_vacuum
 
 execute store result entity @s Pose.Head[0] float 0.01 run data get entity @s Rotation[1] 100
-execute store result entity @s Pose.RightArm[2] float 0.01 run data get entity @s Rotation[1] 100
-execute store result entity @s Pose.LeftArm[2] float 0.01 run data get entity @s Rotation[1] 100
+execute store result entity @s Pose.RightArm[1] float -0.01 run data get entity @s Rotation[1] 100
+execute store result entity @s Pose.LeftArm[1] float 0.01 run data get entity @s Rotation[1] 100
 execute at @s[scores={LightX=-2147483648..}] run function luigis_mansion:other/cast_shadow/1_tall

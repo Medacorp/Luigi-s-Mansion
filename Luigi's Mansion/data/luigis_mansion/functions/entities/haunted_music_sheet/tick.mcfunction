@@ -1,6 +1,5 @@
 execute if entity @s[tag=dead,tag=normal_death] run playsound luigis_mansion:entity.haunted_music_sheet.vacuumed hostile @a[tag=same_room] ~ ~ ~ 1
 execute if entity @s[tag=dead,tag=element_death] run playsound luigis_mansion:entity.haunted_music_sheet.element_death hostile @a[tag=same_room] ~ ~ ~ 1
-execute if entity @s[tag=dead] run loot spawn ~ ~ ~ loot luigis_mansion:entities/vacuumable/haunted_object/haunted_music_sheet
 execute if entity @s[tag=dead] run particle minecraft:dust 0.7 1 1 1 ~-0.1 ~ ~0.1 0.2 0.2 0.2 1 10
 execute if entity @s[tag=dead] store result entity @s Pos[0] double 0.01 run scoreboard players get @s HomeX
 execute if entity @s[tag=dead] store result entity @s Pos[1] double 0.01 run scoreboard players get @s HomeY

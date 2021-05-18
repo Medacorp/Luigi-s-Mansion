@@ -3,7 +3,7 @@ execute if entity @s[tag=dying,tag=boo_hurt] run function luigis_mansion:entitie
 
 function #luigis_mansion:entities/boo/dark_room
 execute if entity @s[tag=dying,scores={HurtTime=1}] run playsound luigis_mansion:entity.boo.vacuumed hostile @a[tag=same_room] ~ ~ ~ 1
-execute if entity @s[tag=dead,tag=!warped] run loot spawn ~ ~ ~ loot luigis_mansion:entities/ghost/boo
+execute if entity @s[tag=dead,tag=!warped] run function luigis_mansion:entities/boo/drop_loot
 execute if entity @s[tag=dead,tag=!warped] run particle minecraft:dust 0.7 1 1 1 ~-0.1 ~ ~0.1 0.2 0.6 0.2 1 30
 execute if entity @s[tag=dead] run teleport @s ~ -100 ~
 execute if entity @s[tag=dead,tag=!warped] run function #luigis_mansion:entities/boo/captured
@@ -25,11 +25,14 @@ execute if entity @s[tag=!fleeing,tag=attack,tag=!laugh,tag=!taunt,tag=!appear] 
 
 tag @s[tag=boo_hurt] remove rotated
 tag @s[tag=attack] remove rotated
-execute at @s[tag=laugh] facing entity @p[gamemode=!spectator] feet rotated ~ 0 run teleport @s ~ ~ ~ ~ ~
+execute at @s unless entity @s[tag=!laugh,tag=!taunt] facing entity @p[gamemode=!spectator,tag=same_room] feet run teleport @s ~ ~ ~ ~ ~
 execute at @s[tag=!fleeing,tag=!attack,tag=!laugh,tag=!taunt,tag=!boo_hurt,tag=!rotated,tag=!appear] run function luigis_mansion:entities/boo/rotate
-execute if entity @s[scores={Time=120..},tag=!appear] run function luigis_mansion:entities/boo/turn
-execute if score #temp Move matches 1.. at @s[tag=!fleeing,tag=!attack,tag=!laugh,tag=!taunt,tag=!boo_hurt,tag=!appear] unless entity @s[tag=!fleeing,tag=!attack,tag=!laugh,tag=!taunt,tag=!boo_hurt,tag=!north,tag=!east,tag=!south,tag=!west,tag=!up,tag=!down] run function luigis_mansion:entities/boo/move_forward
-execute if score #temp Move matches 1.. at @s[tag=!fleeing,tag=!attack,tag=!laugh,tag=!taunt,tag=!boo_hurt,tag=!appear,tag=!north,tag=!east,tag=!south,tag=!west,tag=!up,tag=!down] run function luigis_mansion:entities/boo/move_forward_no_direction
+execute if entity @s[scores={Time=120..},tag=!attack,tag=!appear,tag=!north,tag=!east,tag=!south,tag=!west,tag=!up,tag=!down] run function luigis_mansion:entities/boo/turn
+execute if score #temp Move matches 1.. at @s[tag=!fleeing,tag=!attack,tag=!laugh,tag=!taunt,tag=!boo_hurt,tag=!appear,tag=move_up] unless entity @s[tag=up,x_rotation=-90] run function luigis_mansion:entities/boo/move_up
+execute if score #temp Move matches 1.. at @s[tag=!fleeing,tag=!attack,tag=!laugh,tag=!taunt,tag=!boo_hurt,tag=!appear,tag=!move_up] unless entity @s[tag=down,x_rotation=90] run function luigis_mansion:entities/boo/move_down
+execute if score #temp Move matches 1.. at @s[tag=!fleeing,tag=!attack,tag=!laugh,tag=!taunt,tag=!boo_hurt,tag=!appear,tag=up,x_rotation=-90] run function luigis_mansion:entities/boo/move_forward
+execute if score #temp Move matches 1.. at @s[tag=!fleeing,tag=!attack,tag=!laugh,tag=!taunt,tag=!boo_hurt,tag=!appear,tag=down,x_rotation=90] run function luigis_mansion:entities/boo/move_forward
+
 scoreboard players add @s[tag=new_section] BooTimer 1
 execute if entity @s[scores={BooTimer=3}] run function luigis_mansion:entities/boo/entered_new_section
 scoreboard players reset @s[scores={BooTimer=3}] BooTimer
@@ -55,5 +58,5 @@ tag @s remove in_vacuum
 scoreboard players reset #temp RoomSection
 
 execute store result entity @s Pose.Head[0] float 0.01 run data get entity @s Rotation[1] 100
-execute store result entity @s Pose.RightArm[2] float 0.01 run data get entity @s Rotation[1] 100
-execute store result entity @s Pose.LeftArm[2] float 0.01 run data get entity @s Rotation[1] 100
+execute store result entity @s Pose.RightArm[1] float -0.01 run data get entity @s Rotation[1] 100
+execute store result entity @s Pose.LeftArm[1] float 0.01 run data get entity @s Rotation[1] 100

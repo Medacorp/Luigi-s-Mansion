@@ -8,4 +8,6 @@ kill @e[type=minecraft:marker,tag=boo_height_check,limit=1]
 teleport @s[tag=!wall] ^ ^ ^0.05
 scoreboard players remove #temp Move 1
 execute if entity @s[tag=wall] run scoreboard players set #temp Move 0
+execute if entity @s[tag=wall] run scoreboard players set @s Time 120
+execute if entity @s[tag=!wall] run scoreboard players add @s Time 1
 execute if score #temp Move matches 1.. positioned as @s run function luigis_mansion:entities/boo/move_forward

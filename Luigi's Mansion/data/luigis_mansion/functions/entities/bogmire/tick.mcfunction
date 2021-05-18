@@ -6,7 +6,7 @@ execute at @s as @e[tag=this_model] run teleport @s ~ ~0.5 ~
 
 execute if entity @s[tag=dying,scores={HurtTime=1}] run tag @e[tag=black_bogmire] add remove_from_existence
 execute if entity @s[tag=dying,scores={HurtTime=1}] run playsound luigis_mansion:entity.bogmire.vacuumed hostile @a[tag=same_room] ~ ~ ~ 1
-execute if entity @s[tag=dead] run loot spawn ~ ~ ~ loot luigis_mansion:entities/ghost/bogmire
+execute if entity @s[tag=dead] run function luigis_mansion:entities/bogmire/drop_loot
 execute if entity @s[tag=dead] run particle minecraft:dust 0.7 1 1 1 ~-0.1 ~ ~0.1 0.2 0.6 0.2 1 30
 execute if entity @s[tag=dead] run teleport @s ~ -100 ~
 execute if entity @s[tag=dead] as @a run function luigis_mansion:entities/ghost/boss_damage

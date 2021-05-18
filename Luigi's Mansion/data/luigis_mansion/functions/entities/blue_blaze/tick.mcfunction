@@ -1,6 +1,6 @@
 execute if entity @s[tag=dying,tag=normal_death,scores={HurtTime=1}] run playsound luigis_mansion:entity.blue_blaze.vacuumed hostile @a[tag=same_room] ~ ~ ~ 1
 execute if entity @s[tag=dying,tag=element_death,scores={HurtTime=1}] run playsound luigis_mansion:entity.blue_blaze.element_death hostile @a[tag=same_room] ~ ~ ~ 1
-execute if entity @s[tag=dead] run loot spawn ~ ~ ~ loot luigis_mansion:entities/ghost/blue_blaze
+execute if entity @s[tag=dead] run function luigis_mansion:entities/blue_blaze/drop_loot
 execute if entity @s[tag=dead] run particle minecraft:dust 0.7 1 1 1 ~-0.1 ~ ~0.1 0.2 0.6 0.2 1 30
 execute if entity @s[tag=dead] run teleport @s ~ -100 ~
 

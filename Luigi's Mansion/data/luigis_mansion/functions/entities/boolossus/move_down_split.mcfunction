@@ -1,8 +1,9 @@
-execute store result score @s HomeY run data get entity @s Pos[1] 100
-teleport @s ~ ~-0.125 ~
-tag @s[tag=split,scores={HomeY=..4100}] add move_up
-tag @s[tag=!split,scores={HomeY=..4300}] add move_up
-execute store result score @s[tag=move_up] HomeRot run data get entity @s Rotation[0]
-execute if entity @s[tag=!split] store result entity @s Rotation[0] float 1 run scoreboard players get @s HomeRot
-execute if score #temp Move matches 1.. at @s run function luigis_mansion:entities/boo/move_forward_no_direction
-execute positioned as @s run teleport @s ~ ~ ~ ~ ~
+execute store result score @s JumpHeight run data get entity @s Pos[1] 100
+scoreboard players operation @s JumpHeight -= @s HomeY
+teleport @s ~ ~ ~ ~ ~1
+execute if predicate luigis_mansion:boo_up_down_chance run tag @s add move_up
+tag @s[scores={JumpHeight=..-90}] add move_up_now
+execute at @s[tag=move_up_now] run teleport @s ~ ~ ~ ~ 0
+tag @s[tag=move_up_now] add move_up
+tag @s remove move_up_now
+execute if score #temp Move matches 1.. at @s run function luigis_mansion:entities/boolossus/move_forward

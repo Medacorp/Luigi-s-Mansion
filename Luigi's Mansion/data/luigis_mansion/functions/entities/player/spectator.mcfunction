@@ -27,3 +27,7 @@ scoreboard players set @s ResetChoice 0
 
 execute if entity @s[tag=!already_added_to_list] run data modify storage luigis_mansion:data current_state.current_data.dead_players append from entity @s UUID
 tag @s add already_added_to_list
+
+execute store result score @s HomeX run data get entity @s Pos[0]
+execute store result score @s HomeY run data get entity @s Pos[1]
+execute store result score @s HomeZ run data get entity @s Pos[2]

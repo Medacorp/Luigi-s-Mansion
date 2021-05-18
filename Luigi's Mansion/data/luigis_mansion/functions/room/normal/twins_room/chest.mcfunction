@@ -1,1 +1,1 @@
-execute unless data storage luigis_mansion:data current_state.current_data.obtained_items{marios_shoe:1b} unless entity @e[type=minecraft:armor_stand,tag=marios_item,tag=shoe,limit=1] run function luigis_mansion:spawn_entities/item/marios_shoescoreboard players reset #temp Searched
+execute unless data storage luigis_mansion:data current_state.current_data.obtained_items{marios_shoe:1b} unless entity @e[type=minecraft:armor_stand,tag=marios_item,tag=shoe,limit=1] run function luigis_mansion:spawn_entities/item/marios_shoe
