@@ -1,4 +1,4 @@
-execute facing entity @p[gamemode=!spectator,tag=same_room] feet rotated ~ 0 run teleport @s ~ ~ ~ ~ ~
+execute facing entity @p[tag=same_room,gamemode=!spectator] feet rotated ~ 0 run teleport @s ~ ~ ~ ~ ~
 execute at @s run function luigis_mansion:animations/boo/idle
 execute if entity @s[scores={Room=1..}] run function #luigis_mansion:entities/mysterious_power/dialog
 

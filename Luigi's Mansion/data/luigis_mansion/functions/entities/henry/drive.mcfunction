@@ -7,5 +7,5 @@ tag @s[tag=in_vacuum] add in_vacuum_2
 execute if entity @s[tag=!carless,scores={VacuumTime=40}] run function luigis_mansion:entities/henry/lose_car
 tag @s[tag=carless,scores={VulnerableTime=0}] add vanish
 
-execute at @s[tag=!hurt,tag=!fleeing,tag=!collided,tag=!vanish,scores={StunTime=0},tag=!carless] facing entity @p[gamemode=!spectator] feet rotated ~ 0 run teleport @s ~ ~ ~ ~ ~
+execute at @s[tag=!hurt,tag=!fleeing,tag=!collided,tag=!vanish,scores={StunTime=0},tag=!carless] facing entity @p[tag=same_room,gamemode=!spectator] feet rotated ~ 0 run teleport @s ~ ~ ~ ~ ~
 execute at @s[tag=!hurt,tag=!fleeing,tag=!collided,tag=!vanish,tag=!laugh,tag=!complain,scores={StunTime=0,SpawnTime=20..},tag=!carless] run function luigis_mansion:entities/ghost/move_forward

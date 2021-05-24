@@ -2,7 +2,7 @@ scoreboard players add @s[scores={Dialog=81..161}] Dialog 1
 scoreboard players set @s Move 3
 scoreboard players add @s[scores={Dialog=1..79}] Dialog 1
 execute if entity @s[tag=!visible] run function luigis_mansion:entities/spooky/turn_visible
-execute unless entity @s[scores={Dialog=1..}] at @a[tag=same_room] positioned ^ ^ ^8 if entity @s[distance=..8,tag=visible] run function luigis_mansion:entities/spooky/turn_invisible
+execute unless entity @s[scores={Dialog=1..}] at @a[tag=same_room,gamemode=!spectator] positioned ^ ^ ^8 if entity @s[distance=..8,tag=visible] run function luigis_mansion:entities/spooky/turn_invisible
 execute unless entity @s[scores={Dialog=1..}] if entity @e[tag=spooky_bone,limit=1] run scoreboard players set @s Dialog 1
 execute unless entity @s[scores={Dialog=1..}] if entity @a[gamemode=!spectator,distance=..4,limit=1] run scoreboard players set @s Dialog 1
 execute if entity @s[scores={Dialog=1}] run playsound luigis_mansion:entity.spooky.wake_up hostile @a[tag=same_room] ~ ~ ~ 1

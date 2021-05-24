@@ -1,5 +1,5 @@
 execute store result score #temp Room run scoreboard players get @s Room
-execute as @a[gamemode=!spectator] run function #luigis_mansion:get_same_room
+execute as @a run function #luigis_mansion:get_same_room
 scoreboard players reset #temp Room
 
 tag @s[tag=remove_from_existence,tag=cannot_be_removed] remove remove_from_existence

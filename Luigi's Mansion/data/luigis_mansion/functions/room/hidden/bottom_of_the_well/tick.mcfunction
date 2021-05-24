@@ -3,7 +3,7 @@ execute as @a[gamemode=!spectator,x=645,y=92,z=14,dx=6,dy=7,dz=11] unless entity
 execute as @e[type=!minecraft:item_frame,x=645,y=92,z=14,dx=6,dy=7,dz=11] run scoreboard players set @s Room 31
 tag @e[tag=ghost,scores={Room=31}] add no_hidden_move
 
-scoreboard players set @e[scores={Room=31},type=!minecraft:marker] MirrorZ 41
+execute as @e[scores={Room=31},type=!minecraft:marker] unless entity @s[gamemode=spectator] run scoreboard players set @s MirrorZ 41
 
 execute as @a[gamemode=!spectator,scores={Room=31}] run function luigis_mansion:room/normal/bottom_of_the_well/tick_per_player
 

@@ -1,4 +1,4 @@
-execute facing entity @p[gamemode=!spectator] feet rotated ~ 0 run teleport @s ~ ~ ~ ~-180 ~
+execute facing entity @p[tag=same_room,gamemode=!spectator] feet rotated ~ 0 run teleport @s ~ ~ ~ ~-180 ~
 execute store result score @s HomeRot run data get entity @s Rotation[0]
 scoreboard players add @s Wave 1
 execute if entity @s[scores={Wave=31..}] run scoreboard players set #temp Move 0

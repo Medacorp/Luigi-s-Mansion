@@ -1,2 +1,2 @@
-execute if entity @s[tag=!no_check] if entity @a[gamemode=!spectator,tag=same_room,distance=..5,limit=1] run function luigis_mansion:spawn_entities/ghost/ice_elemental_ghost
+execute if entity @s[tag=!no_check] if entity @a[tag=same_room,gamemode=!spectator,distance=..5,limit=1] run function luigis_mansion:spawn_entities/ghost/ice_elemental_ghost
 execute if entity @s[tag=no_check] run function luigis_mansion:spawn_entities/ghost/ice_elemental_ghost

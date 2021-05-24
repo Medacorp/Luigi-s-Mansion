@@ -11,7 +11,7 @@ scoreboard players set @s[scores={Sound=0,Dialog=0},tag=!freeze,tag=fleeing] Sou
 
 execute if entity @a[gamemode=!spectator,distance=..0.7,limit=1] run function luigis_mansion:entities/boolossus/collide
 
-execute at @s[tag=!fleeing,tag=intro_done] facing entity @p[gamemode=!spectator,tag=same_room] feet run teleport @s ~ ~ ~ ~ ~
+execute at @s[tag=!fleeing,tag=intro_done] facing entity @p[tag=same_room,gamemode=!spectator] feet run teleport @s ~ ~ ~ ~ ~
 execute unless entity @s[scores={Wave=1..}] store result score @s HomeRot run data get entity @s Rotation[0]
 execute unless entity @s[scores={Wave=1..}] run scoreboard players set @s[tag=intro_done] Wave 1
 

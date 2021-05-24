@@ -11,7 +11,7 @@ scoreboard players set @s[scores={Sound=0}] Sound 40
 
 execute if entity @s[tag=!element_hurt,tag=!fleeing,tag=!laugh,tag=!vanish,scores={StunTime=0}] positioned ^ ^ ^0.7 if entity @a[gamemode=!spectator,distance=..0.7,limit=1] run tag @s add laugh
 
-execute at @s[tag=!element_hurt,tag=!fleeing,tag=!vanish,scores={StunTime=0}] facing entity @p[gamemode=!spectator,tag=same_room] feet rotated ~ 0 run teleport @s ~ ~ ~ ~ ~
+execute at @s[tag=!element_hurt,tag=!fleeing,tag=!vanish,scores={StunTime=0}] facing entity @p[tag=same_room,gamemode=!spectator] feet rotated ~ 0 run teleport @s ~ ~ ~ ~ ~
 execute at @s[tag=!element_hurt,tag=!fleeing,tag=!laugh,tag=!vanish,scores={StunTime=0}] run function luigis_mansion:entities/ghost/move
 execute if entity @s[tag=!element_hurt,tag=!fleeing,tag=laugh,scores={StunTime=0}] run function luigis_mansion:entities/gold_dummy_ghost/laugh
 execute if entity @s[tag=vanish] run function luigis_mansion:entities/gold_dummy_ghost/vanish

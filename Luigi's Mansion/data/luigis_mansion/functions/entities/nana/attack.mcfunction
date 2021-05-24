@@ -5,5 +5,5 @@ execute at @s anchored eyes run summon minecraft:armor_stand ^ ^-0.3 ^0.3 {Custo
 scoreboard players set @e[tag=shot_needle,tag=new,limit=1] Move 5
 execute as @e[tag=shot_needle,tag=new,limit=1] at @s rotated as @e[tag=nana,limit=1] run teleport @s ~ ~ ~ ~ ~
 tag @e[tag=shot_needle,tag=new,limit=1] remove new
-execute facing entity @p[gamemode=!spectator] feet rotated ~ 0 run teleport @s ~ ~ ~ ~ ~
+execute facing entity @p[tag=same_room,gamemode=!spectator] feet rotated ~ 0 run teleport @s ~ ~ ~ ~ ~
 tag @a[tag=me,limit=1] remove me

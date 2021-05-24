@@ -26,7 +26,7 @@ scoreboard players set @s[scores={HurtTime=1},tag=hurt] Sound 40
 
 execute at @a[gamemode=!spectator,distance=..0.7,limit=1] if entity @s[tag=!dead,tag=!shadow_death,tag=!removed_from_existence] run function luigis_mansion:entities/black_bogmire/collide
 
-execute at @s[tag=!fleeing,tag=!collided,tag=!shadow_death,scores={SpawnTime=100..}] facing entity @p[gamemode=!spectator] feet rotated ~ 0 run teleport @s ~ ~ ~ ~ ~
+execute at @s[tag=!fleeing,tag=!collided,tag=!shadow_death,scores={SpawnTime=100..}] facing entity @p[tag=same_room,gamemode=!spectator] feet rotated ~ 0 run teleport @s ~ ~ ~ ~ ~
 execute at @s[tag=!fleeing,tag=!collided,tag=!shadow_death,scores={SpawnTime=100..}] run function luigis_mansion:entities/ghost/move_forward
 execute at @s[tag=fleeing,tag=!shadow_death] run function luigis_mansion:entities/black_bogmire/flee
 

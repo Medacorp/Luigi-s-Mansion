@@ -1215,6 +1215,6 @@
         }
     },
 	"rewards": {
-		"function": "luigis_mansion:advancements/challenge/put_a_sock_in_it"
+		"function": "luigis_mansion:advancements/challenge/exterminator"
 	}
 }

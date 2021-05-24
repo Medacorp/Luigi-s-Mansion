@@ -2,7 +2,7 @@ execute unless score #secret_altar Ticking matches 1 run function #luigis_mansio
 execute as @a[gamemode=!spectator,x=634,y=92,z=24,dx=20,dy=8,dz=18] unless entity @s[scores={Room=72}] run scoreboard players operation @s LastRoom = @s Room
 execute as @e[type=!minecraft:item_frame,x=634,y=92,z=24,dx=20,dy=8,dz=18] run scoreboard players set @s Room 72
 
-scoreboard players set @e[scores={Room=72},type=!minecraft:marker] MirrorZ 41
+execute as @e[scores={Room=72},type=!minecraft:marker] unless entity @s[gamemode=spectator] run scoreboard players set @s MirrorZ 41
 
 execute as @a[gamemode=!spectator,scores={Room=72}] run function luigis_mansion:room/normal/secret_altar/tick_per_player
 

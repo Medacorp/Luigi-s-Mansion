@@ -28,6 +28,13 @@ scoreboard players set @s ResetChoice 0
 execute if entity @s[tag=!already_added_to_list] run data modify storage luigis_mansion:data current_state.current_data.dead_players append from entity @s UUID
 tag @s add already_added_to_list
 
+scoreboard players operation #temp Room = @s Room
+execute as @e[tag=ghost] if score @s Room = #temp Room run tag @s add target
+execute at @e[tag=target,tag=hidden] run particle minecraft:dust 0.7 1 0.5 0 ~ ~0.6 ~ 0.3 0.3 0.3 0 5 normal @s
+execute at @e[tag=target,tag=!visible,tag=!hidden] run particle minecraft:dust 0.7 1 0 0 ~ ~1.6 ~ 0.3 0.3 0.3 0 5 normal @s
+tag @e[tag=portrait_ghost,tag=target] remove target
+scoreboard players reset #temp Room
+
 execute store result score @s HomeX run data get entity @s Pos[0]
 execute store result score @s HomeY run data get entity @s Pos[1]
 execute store result score @s HomeZ run data get entity @s Pos[2]

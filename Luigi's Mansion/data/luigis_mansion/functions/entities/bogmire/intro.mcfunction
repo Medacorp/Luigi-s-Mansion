@@ -1,6 +1,6 @@
 scoreboard players add @s Dialog 1
-execute if entity @s[scores={Dialog=2}] run scoreboard players set @a[tag=same_room] MusicType 16
-execute if entity @s[scores={Dialog=2}] run scoreboard players set @a[tag=same_room] Music 0
+execute if entity @s[scores={Dialog=2}] run scoreboard players set @a[tag=same_room,gamemode=!spectator] MusicType 16
+execute if entity @s[scores={Dialog=2}] run scoreboard players set @a[tag=same_room,gamemode=!spectator] Music 0
 execute if entity @s[scores={Dialog=60}] run summon minecraft:lightning_bolt 651 103 47
 execute if entity @s[scores={Dialog=70}] run summon minecraft:lightning_bolt 651 103 47
 execute if entity @s[scores={Dialog=80}] run summon minecraft:lightning_bolt 651 103 47

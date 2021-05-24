@@ -8,7 +8,7 @@ tag @s[tag=!loaded_chunk_triggered] remove loaded_chunks
 tag @s remove loaded_chunk_triggered
 
 scoreboard players operation #temp Room = @s Room
-execute as @a[gamemode=!spectator] run function #luigis_mansion:get_same_room
+execute as @a run function #luigis_mansion:get_same_room
 scoreboard players reset #temp Room
 
 function luigis_mansion:dialog/try
@@ -58,6 +58,7 @@ execute unless entity @s[scores={Room=1..}] run scoreboard players set @s LastFl
 execute store result score @s JumpHeight run data get entity @s Pos[1] 100
 
 tag @a[tag=same_room] remove same_room
+tag @s remove already_ticked
 
 scoreboard players reset @s MirrorX
 scoreboard players reset @s MirrorZ

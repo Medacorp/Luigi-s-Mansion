@@ -20,7 +20,7 @@ teleport @s[scores={Dialog=1..20},tag=left,tag=intro_done] 720.0 43 -19940.0 90 
 teleport @s[scores={Dialog=1..20},tag=!left,tag=intro_done] 720.0 43 -19940.0 -90 0
 execute if entity @s[scores={Dialog=20},tag=left,tag=intro_done] positioned 708 44 -19938 run function luigis_mansion:spawn_entities/rocking_horse/left
 execute if entity @s[scores={Dialog=20},tag=!left,tag=intro_done] positioned 730 44 -19938 run function luigis_mansion:spawn_entities/rocking_horse/right
-execute if entity @s[scores={Dialog=21},tag=intro_done] facing entity @p[gamemode=!spectator] feet run teleport @s 720.0 43 -19940.0 ~ 0
+execute if entity @s[scores={Dialog=21},tag=intro_done] facing entity @p[tag=same_room,gamemode=!spectator] feet run teleport @s 720.0 43 -19940.0 ~ 0
 tag @s[scores={Dialog=21},tag=intro_done] add rambling
 scoreboard players set @s[scores={Dialog=22},tag=intro_done] AnimationProg 0
 tag @s[scores={Dialog=22},tag=intro_done] remove rambling
@@ -29,7 +29,7 @@ teleport @s[scores={Dialog=61..80},tag=left,tag=intro_done] 720.0 43 -19940.0 -9
 teleport @s[scores={Dialog=61..80},tag=!left,tag=intro_done] 720.0 43 -19940.0 90 0
 execute if entity @s[scores={Dialog=80},tag=left,tag=intro_done] positioned 730 44 -19938 run function luigis_mansion:spawn_entities/rocking_horse/right
 execute if entity @s[scores={Dialog=80},tag=!left,tag=intro_done] positioned 708 44 -19938 run function luigis_mansion:spawn_entities/rocking_horse/left
-execute if entity @s[scores={Dialog=81},tag=intro_done] facing entity @p[gamemode=!spectator] feet run teleport @s 720.0 43 -19940.0 ~ 0
+execute if entity @s[scores={Dialog=81},tag=intro_done] facing entity @p[tag=same_room,gamemode=!spectator] feet run teleport @s 720.0 43 -19940.0 ~ 0
 tag @s[scores={Dialog=81},tag=intro_done] add rambling
 scoreboard players set @s[scores={Dialog=82},tag=intro_done] AnimationProg 0
 tag @s[scores={Dialog=82},tag=intro_done] remove rambling
@@ -37,7 +37,7 @@ tag @s[scores={Dialog=82},tag=intro_done] add attack
 teleport @s[scores={Dialog=121..140},tag=intro_done] 720.0 43 -19940.0 -180 0
 execute if entity @s[scores={Dialog=140},tag=intro_done] positioned 708 44 -19938 run function luigis_mansion:spawn_entities/rocking_horse/left
 execute if entity @s[scores={Dialog=140},tag=intro_done] positioned 730 44 -19938 run function luigis_mansion:spawn_entities/rocking_horse/right
-execute if entity @s[scores={Dialog=141..381},tag=intro_done] facing entity @p[gamemode=!spectator] feet run teleport @s 720.0 43 -19940.0 ~ 0
+execute if entity @s[scores={Dialog=141..381},tag=intro_done] facing entity @p[tag=same_room,gamemode=!spectator] feet run teleport @s 720.0 43 -19940.0 ~ 0
 tag @s[scores={Dialog=141},tag=intro_done] add rambling
 scoreboard players set @s[scores={Dialog=182},tag=intro_done] AnimationProg 0
 tag @s[scores={Dialog=182},tag=intro_done] remove rambling
@@ -47,16 +47,16 @@ tag @s[scores={Dialog=260},tag=intro_done] remove rambling
 tag @s[scores={Dialog=260},tag=intro_done] add grab_rambler
 tag @s[scores={Dialog=280},tag=intro_done] remove grab_rambler
 tag @s[scores={Dialog=280},tag=intro_done] add rambling
-execute if entity @s[scores={Dialog=280},tag=intro_done] positioned 713 45 -19958 facing entity @p[gamemode=!spectator] feet rotated ~ 0 run function luigis_mansion:spawn_entities/ball/chauncey/big
-execute if entity @s[scores={Dialog=300},tag=intro_done] positioned 726 45 -19958 facing entity @p[gamemode=!spectator] feet rotated ~ 0 run function luigis_mansion:spawn_entities/ball/chauncey/big
+execute if entity @s[scores={Dialog=280},tag=intro_done] positioned 713 45 -19958 facing entity @p[tag=same_room,gamemode=!spectator] feet rotated ~ 0 run function luigis_mansion:spawn_entities/ball/chauncey/big
+execute if entity @s[scores={Dialog=300},tag=intro_done] positioned 726 45 -19958 facing entity @p[tag=same_room,gamemode=!spectator] feet rotated ~ 0 run function luigis_mansion:spawn_entities/ball/chauncey/big
 scoreboard players set @s[scores={Dialog=310},tag=intro_done] AnimationProg 0
 tag @s[scores={Dialog=310},tag=intro_done] remove rambling
 tag @s[scores={Dialog=310},tag=intro_done] add grab_rambler
 tag @s[scores={Dialog=330},tag=intro_done] remove grab_rambler
 tag @s[scores={Dialog=330},tag=intro_done] add rambling
-execute if entity @s[scores={Dialog=320},tag=intro_done] positioned 720 45 -19940 facing entity @p[gamemode=!spectator] feet rotated ~ 0 run function luigis_mansion:spawn_entities/ball/chauncey/real
-execute if entity @s[scores={Dialog=340},tag=intro_done] positioned 713 45 -19958 facing entity @p[gamemode=!spectator] feet rotated ~ 0 run function luigis_mansion:spawn_entities/ball/chauncey/big
-execute if entity @s[scores={Dialog=360},tag=intro_done] positioned 726 45 -19958 facing entity @p[gamemode=!spectator] feet rotated ~ 0 run function luigis_mansion:spawn_entities/ball/chauncey/big
+execute if entity @s[scores={Dialog=320},tag=intro_done] positioned 720 45 -19940 facing entity @p[tag=same_room,gamemode=!spectator] feet rotated ~ 0 run function luigis_mansion:spawn_entities/ball/chauncey/real
+execute if entity @s[scores={Dialog=340},tag=intro_done] positioned 713 45 -19958 facing entity @p[tag=same_room,gamemode=!spectator] feet rotated ~ 0 run function luigis_mansion:spawn_entities/ball/chauncey/big
+execute if entity @s[scores={Dialog=360},tag=intro_done] positioned 726 45 -19958 facing entity @p[tag=same_room,gamemode=!spectator] feet rotated ~ 0 run function luigis_mansion:spawn_entities/ball/chauncey/big
 scoreboard players set @s[scores={Dialog=380},tag=intro_done] AnimationProg 0
 tag @s[scores={Dialog=380},tag=intro_done] remove rambling
 tag @s[scores={Dialog=380..381},tag=intro_done] add laugh
@@ -69,7 +69,7 @@ execute at @s[scores={Dialog=382},tag=intro_done] rotated ~ 0 run teleport @s ~ 
 tag @s[scores={Dialog=622},tag=intro_done] remove dizzy
 scoreboard players set @s[scores={Dialog=622},tag=intro_done] Dialog 0
 teleport @s[scores={Dialog=1462}] ~ 43 -19944
-execute if entity @s[scores={Dialog=1502..1581}] facing entity @p[gamemode=!spectator] feet run teleport @s ~ ~ ~ ~ 0
+execute if entity @s[scores={Dialog=1502..1581}] facing entity @p[tag=same_room,gamemode=!spectator] feet run teleport @s ~ ~ ~ ~ 0
 scoreboard players set @s[scores={Dialog=1522}] AnimationProg 0
 tag @s[scores={Dialog=1522}] add scream
 execute if entity @s[scores={Dialog=1522}] run playsound luigis_mansion:entity.chauncey.scream hostile @a[tag=same_room] ~ ~ ~ 3
@@ -90,7 +90,7 @@ execute at @s[x=726,y=41,z=-19958,dx=1,dy=20,dz=20,y_rotation=-135..-45,scores={
 execute at @s[x=712,y=41,z=-19944,dx=20,dy=20,dz=1,y_rotation=-45..45,scores={Dialog=1583}] run scoreboard players add @s Dialog 1
 scoreboard players set @s[scores={Dialog=1583,PathStep=10}] PathStep 0
 teleport @s[scores={Dialog=1584}] ~ 45 -19940.0
-execute if entity @s[scores={Dialog=1585..}] facing entity @p[gamemode=!spectator] feet run teleport @s 720.0 43 -19940.0 ~ 0
+execute if entity @s[scores={Dialog=1585..}] facing entity @p[tag=same_room,gamemode=!spectator] feet run teleport @s 720.0 43 -19940.0 ~ 0
 scoreboard players set @s[scores={Dialog=1585}] AnimationProg 0
 tag @s[scores={Dialog=1585}] remove fast_bounce
 scoreboard players set @s[scores={Dialog=1614}] AnimationProg 0

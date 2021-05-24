@@ -1,0 +1,1 @@
+execute if score #mansion_type Selected matches 0 in luigis_mansion:normal run teleport @s 751.0 11 9.0
