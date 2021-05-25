@@ -4,6 +4,7 @@ execute if entity @s[scores={ActionTime=1}] run playsound luigis_mansion:entity.
 scoreboard players set @s[scores={ActionTime=1}] AnimationProg 0
 execute at @s[scores={ActionTime=1..19}] run function luigis_mansion:animations/boo/laugh
 scoreboard players set @s[scores={ActionTime=20}] AnimationProg 0
+execute at @s[scores={ActionTime=20..}] run function luigis_mansion:animations/boo/attack
 scoreboard players set @s[scores={ActionTime=20..}] Move 9
 execute at @s[scores={ActionTime=20..}] run function luigis_mansion:entities/boo/move_forward
 teleport @s[tag=wall] ~ ~ ~ ~ ~

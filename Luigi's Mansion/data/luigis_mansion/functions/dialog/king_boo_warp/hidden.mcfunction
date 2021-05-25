@@ -1,4 +1,4 @@
-tag @s remove dead
+execute facing entity @p[tag=same_room,gamemode=!spectator] feet rotated ~ 0 run teleport @s ~ ~ ~ ~ ~
 scoreboard players add @s Dialog 1
 scoreboard players set @a[tag=same_room] Invulnerable 10
 execute as @a[tag=same_room,distance=..2] at @s run teleport @s ~1 ~ ~

@@ -15,5 +15,5 @@ execute if block 714 22 26 minecraft:brewing_stand[has_bottle_0=true,has_bottle_
 
 function luigis_mansion:room/normal/parlor/ghosts
 
-function luigis_mansion:room/normal/door/foyer_hallway_1
+function luigis_mansion:room/normal/door/hallway_1_parlor
 function luigis_mansion:room/normal/door/parlor_anteroom

@@ -43,7 +43,7 @@ execute if entity @s[tag=!dead,tag=wall] run function luigis_mansion:entities/bo
 execute if entity @s[tag=!fleeing,tag=laugh] run function luigis_mansion:entities/boo/laugh
 execute if entity @s[tag=!fleeing,tag=taunt] run function luigis_mansion:entities/boo/taunt
 execute if entity @s[tag=appear] run function luigis_mansion:entities/boo/appear
-execute at @s[tag=!fleeing,tag=!boo_hurt,tag=!laugh,tag=!taunt,tag=!appear] run function luigis_mansion:animations/boo/idle
+execute at @s[tag=!fleeing,tag=!boo_hurt,tag=!laugh,tag=!taunt,tag=!appear,tag=!attack] run function luigis_mansion:animations/boo/idle
 execute at @s[tag=fleeing] run function luigis_mansion:animations/boo/flee
 execute at @s[tag=!fleeing,tag=boo_hurt] run function luigis_mansion:animations/boo/hurt
 tag @s remove wall

@@ -1,3 +1,5 @@
+tag @s[tag=warp] remove dead
+tag @s[tag=warp] remove remove_from_existence
 execute if entity @s[tag=dying,tag=boo_death] run function luigis_mansion:entities/ghost/death
 execute if entity @s[tag=dying,tag=boo_hurt] run function luigis_mansion:entities/ghost/death
 
@@ -30,11 +32,10 @@ scoreboard players set @s[scores={Sound=0}] Sound 40
 
 execute if entity @a[gamemode=!spectator,distance=..0.7,limit=1] if entity @s[tag=!dying,tag=!dead,tag=!removed_from_existence] run function luigis_mansion:entities/king_boo/collide
 
-execute at @s[tag=warp] facing entity @p[tag=same_room,gamemode=!spectator] feet rotated ~ 0 run teleport @s ~ ~ ~ ~ ~
-execute if entity @s[tag=!fleeing,tag=taunt] run function luigis_mansion:entities/king_boo/taunt
+execute at @s[tag=magic] run function luigis_mansion:animations/boo/magic
 execute at @s[tag=fleeing] run function luigis_mansion:animations/boo/flee
 execute at @s[tag=!fleeing,tag=boo_hurt] run function luigis_mansion:animations/boo/hurt
-execute at @s[tag=!fleeing,tag=!boo_hurt,tag=!taunt] run function luigis_mansion:animations/boo/idle
+execute at @s[tag=!fleeing,tag=!boo_hurt,tag=!magic] run function luigis_mansion:animations/boo/idle
 
 scoreboard players set @s[tag=!boo_hurt,tag=!fleeing,tag=!attack,tag=!laugh,tag=!taunt,tag=!dying,tag=!cutscene] ActionTime 0
 scoreboard players reset @s[tag=!boo_hurt,tag=!fleeing,tag=!attack,tag=!laugh,tag=!taunt,tag=!dying] HurtTime

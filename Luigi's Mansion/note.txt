@@ -1,4 +1,4 @@
-To receive development build updates, pull from https://github.com/Dhranios/Luigi-s-Mansion into the datapack folder.
+To receive development build updates, pull from https://github.com/Dhranios/Luigi-s-Mansion into the datapack folder; this will also download the 3DS remake and beta mansion add-ons.
 
 == Empty mansion ==
 The empty mansion is used after King Boo has been portrificationized, to make sure nobody is in the mansion when resetting. It has no rooms, no data and no functions other than an exterior (which is actually wiping out the existing mansion).

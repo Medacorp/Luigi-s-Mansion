@@ -23,6 +23,8 @@ execute if entity @s[scores={Dialog=1548}] run tellraw @a[tag=same_room] {"trans
 execute if entity @s[scores={Dialog=1572}] run tellraw @a[tag=same_room] {"translate":"chat.type.text","with":[{"translate":"luigis_mansion:entity.king_boo","color":"green"},{"translate":"luigis_mansion:dialog.king_boo.13"}]}
 execute if entity @s[scores={Dialog=1572..1582}] run teleport @s ~0.1 ~ ~
 execute if entity @s[scores={Dialog=1582}] run teleport @s 640 93 33
+tag @s[scores={Dialog=1595}] add magic
+scoreboard players set @s[scores={Dialog=1596}] AnimationProg 0
 execute if entity @s[scores={Dialog=1596}] run stopsound @a[tag=same_room] music
 execute if entity @s[scores={Dialog=1596}] run playsound luigis_mansion:music.sucked_into_painting music @a[tag=same_room] ~ ~ ~ 10000
 execute if entity @s[scores={Dialog=1596}] run scoreboard players set @a[tag=same_room] Music 399
@@ -36,6 +38,8 @@ execute if entity @s[scores={Dialog=1706..1725}] run effect give @a[tag=same_roo
 execute if entity @s[scores={Dialog=1726..1745}] run effect give @a[tag=same_room] minecraft:nausea 3 0 true
 execute if entity @s[scores={Dialog=1746..1765}] run effect give @a[tag=same_room] minecraft:nausea 2 0 true
 execute if entity @s[scores={Dialog=1766..1785}] run effect give @a[tag=same_room] minecraft:nausea 1 0 true
+tag @s[scores={Dialog=1755}] remove magic
+scoreboard players set @s[scores={Dialog=1756}] AnimationProg 0
 execute if entity @s[scores={Dialog=1785..1806}] facing 633 94 33 run teleport @s ^ ^ ^0.3 ~ ~
 execute if entity @s[scores={Dialog=1895..}] run scoreboard players set @a[tag=same_room] Invulnerable 10
 execute if entity @s[scores={Dialog=1895..}] positioned 635 94 33 as @a[tag=same_room] facing entity @s feet run function luigis_mansion:dialog/king_boo/suck
