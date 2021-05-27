@@ -82,7 +82,7 @@ scoreboard players set @s[scores={Dialog=1582}] PathStep 0
 scoreboard players add @s[scores={Dialog=1583}] PathStep 1
 teleport @s[scores={Dialog=1583,PathStep=1..10}] ^ ^0.2 ^0.2
 teleport @s[scores={Dialog=1583,PathStep=11..20}] ^ ^-0.2 ^0.2
-execute at @s[scores={Dialog=1583,PathStep=20}] as @e[distance=..1,tag=gameboy_horror_location] run function luigis_mansion:gameboy_horror_location/bring_player_back
+execute at @s[scores={Dialog=1583,PathStep=20}] as @e[distance=..1,tag=gameboy_horror_location] run function luigis_mansion:entities/gameboy_horror_location/bring_player_back
 execute at @s[scores={Dialog=1583,PathStep=20}] run effect give @a[distance=..1,gamemode=!spectator] minecraft:instant_damage 1 0 true
 execute at @s[scores={Dialog=1583,PathStep=20}] run scoreboard players set @a[distance=..1,gamemode=!spectator] ForcedDamage 4
 execute at @s[x=712,y=41,z=-19958,dx=1,dy=20,dz=20,y_rotation=45..135,scores={Dialog=1583}] run teleport @s ~ ~ ~ ~90 0

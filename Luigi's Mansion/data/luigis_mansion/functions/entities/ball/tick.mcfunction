@@ -35,7 +35,7 @@ execute at @s[tag=in_vacuum] unless entity @a[distance=..1.5,gamemode=!spectator
 execute at @s[tag=in_vacuum] unless entity @a[distance=..1.5,gamemode=!spectator,tag=vacuuming] facing entity @p[gamemode=!spectator,tag=vacuuming] feet unless block ^ ^ ^0.3 #luigis_mansion:all_ignore rotated ~ 0 if block ^ ^ ^0.3 #luigis_mansion:all_ignore run teleport @s ^ ^ ^0.3 ~ ~
 execute at @s[tag=in_vacuum] unless entity @a[distance=..1.5,gamemode=!spectator,tag=vacuuming] facing entity @p[gamemode=!spectator,tag=vacuuming] feet unless block ^ ^ ^0.3 #luigis_mansion:all_ignore rotated ~ 0 unless block ^ ^ ^0.3 #luigis_mansion:all_ignore run teleport @s ~ ~ ~ ~ ~
 execute at @s[tag=in_vacuum] at @p[distance=..1.5,gamemode=!spectator,tag=vacuuming] positioned ~ ~0.5 ~ run teleport @s ^ ^ ^0.2 ~ ~
-execute at @s[tag=!in_vacuum,tag=chauncey] as @e[distance=..1,tag=gameboy_horror_location] run function luigis_mansion:gameboy_horror_location/bring_player_back
+execute at @s[tag=!in_vacuum,tag=chauncey] as @e[distance=..1,tag=gameboy_horror_location] run function luigis_mansion:entities/gameboy_horror_location/bring_player_back
 execute at @s[tag=!in_vacuum,tag=chauncey] run effect give @a[distance=..1,gamemode=!spectator] minecraft:instant_damage 1 0 true
 execute at @s[tag=!in_vacuum,tag=chauncey] run scoreboard players set @a[distance=..1,gamemode=!spectator] ForcedDamage 4
 execute at @p[gamemode=!spectator,tag=vacuuming] if block ^ ^ ^1 #luigis_mansion:all_ignore run teleport @s[tag=big,tag=can_spit] ^ ^ ^1 ~ ~

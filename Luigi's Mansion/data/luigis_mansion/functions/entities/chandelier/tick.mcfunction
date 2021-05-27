@@ -13,7 +13,7 @@ scoreboard players set @s[scores={ActionTime=52,Sound=0}] Sound 10
 teleport @s[scores={ActionTime=52}] ~ ~-1 ~
 execute at @s[scores={ActionTime=52}] run clone ~-2 ~1 ~-2 ~1 ~3 ~1 ~-2 ~ ~-2 replace force
 execute at @s[scores={ActionTime=52}] run fill ~-2 ~ ~-2 ~1 ~3 ~1 minecraft:air replace minecraft:light
-execute at @s[scores={ActionTime=2..52}] align xz as @e[distance=..2,tag=gameboy_horror_location] run function luigis_mansion:gameboy_horror_location/bring_player_back
+execute at @s[scores={ActionTime=2..52}] align xz as @e[distance=..2,tag=gameboy_horror_location] run function luigis_mansion:entities/gameboy_horror_location/bring_player_back
 execute at @s[scores={ActionTime=2..52}] align xz run effect give @a[distance=..2,gamemode=!spectator] minecraft:instant_damage 1 0 true
 execute at @s[scores={ActionTime=2..52}] align xz run scoreboard players set @a[distance=..2,gamemode=!spectator] ForcedDamage 4
 execute at @s[scores={ActionTime=2..52}] align xz if entity @a[distance=..2,gamemode=!spectator] run tag @s add hit

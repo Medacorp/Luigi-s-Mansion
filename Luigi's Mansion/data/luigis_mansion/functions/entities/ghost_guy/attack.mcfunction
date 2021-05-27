@@ -6,12 +6,12 @@ execute at @s[tag=dancing] run function luigis_mansion:animations/ghost_guy/spin
 execute if entity @s[scores={ActionTime=20}] run playsound luigis_mansion:entity.ghost_guy.attack hostile @a[tag=same_room] ~ ~ ~ 1
 execute if score #mirrored Selected matches 0 run teleport @s[scores={ActionTime=20..29},tag=dancing] ~ ~ ~ ~-36 ~
 execute if score #mirrored Selected matches 1 run teleport @s[scores={ActionTime=20..29},tag=dancing] ~ ~ ~ ~36 ~
-execute at @s[scores={ActionTime=20},tag=dancing] as @e[distance=..2,tag=gameboy_horror_location] run function luigis_mansion:gameboy_horror_location/bring_player_back
+execute at @s[scores={ActionTime=20},tag=dancing] as @e[distance=..2,tag=gameboy_horror_location] run function luigis_mansion:entities/gameboy_horror_location/bring_player_back
 execute at @s[scores={ActionTime=20},tag=dancing] run effect give @a[distance=..2,gamemode=!spectator] minecraft:instant_damage 1 0 true
 execute at @s[scores={ActionTime=20},tag=dancing] run scoreboard players set @a[distance=..2,gamemode=!spectator] ForcedDamage 4
 execute at @s[scores={ActionTime=20},tag=dancing,tag=stop_dancing] unless entity @a[distance=..2,gamemode=!spectator] run tag @s add complain
 execute at @s[scores={ActionTime=20},tag=dancing,tag=stop_dancing] if entity @a[distance=..2,gamemode=!spectator] run scoreboard players set @s WaitTime 40
-execute at @s[scores={ActionTime=20},tag=!dancing] positioned ^ ^ ^0.7 as @e[distance=..1,tag=gameboy_horror_location] run function luigis_mansion:gameboy_horror_location/bring_player_back
+execute at @s[scores={ActionTime=20},tag=!dancing] positioned ^ ^ ^0.7 as @e[distance=..1,tag=gameboy_horror_location] run function luigis_mansion:entities/gameboy_horror_location/bring_player_back
 execute at @s[scores={ActionTime=20},tag=!dancing] positioned ^ ^ ^0.7 run effect give @a[distance=..1,gamemode=!spectator] minecraft:instant_damage 1 0 true
 execute at @s[scores={ActionTime=20},tag=!dancing] positioned ^ ^ ^0.7 run scoreboard players set @a[distance=..1,gamemode=!spectator] ForcedDamage 4
 execute at @s[scores={ActionTime=20},tag=!dancing] positioned ^ ^ ^0.7 unless entity @a[distance=..1,gamemode=!spectator] run tag @s add complain

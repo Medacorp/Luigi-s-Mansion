@@ -1,4 +1,4 @@
-summon minecraft:armor_stand ~ ~ ~ {CustomName:'{"translate":"entity.minecraft.player"}',NoGravity:1b,CustomNameVisible:1b,Tags:["gameboy_horror_location","new"],Invisible:0b,NoBasePlate:1b,ArmorItems:[{},{},{},{id:"minecraft:player_head",Count:1b}]}
+summon minecraft:armor_stand ~ ~ ~ {CustomName:'{"translate":"entity.minecraft.player"}',ShowArms:1b,NoGravity:1b,CustomNameVisible:1b,Tags:["gameboy_horror_location","new"],Invisible:0b,NoBasePlate:1b,ArmorItems:[{},{},{},{id:"minecraft:player_head",Count:1b}]}
 teleport @e[tag=gameboy_horror_location,tag=new,limit=1] ~ ~ ~ ~ ~
 scoreboard players operation @e[tag=gameboy_horror_location,tag=new,limit=1] ID = @s ID
 scoreboard players operation @e[tag=gameboy_horror_location,tag=new,limit=1] Room = @s Room

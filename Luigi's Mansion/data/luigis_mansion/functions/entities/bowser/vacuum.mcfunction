@@ -1,7 +1,7 @@
 execute unless entity @s[scores={ActionTime=1..}] run scoreboard players set @s ActionTime 1
 scoreboard players add @s[scores={ActionTime=1..19}] ActionTime 1
 scoreboard players add @s[scores={ActionTime=21..}] ActionTime 1
-execute if entity @s[scores={ActionTime=20}] as @e[distance=..15,tag=gameboy_horror_location] run function luigis_mansion:gameboy_horror_location/bring_player_back
+execute if entity @s[scores={ActionTime=20}] as @e[distance=..15,tag=gameboy_horror_location] run function luigis_mansion:entities/gameboy_horror_location/bring_player_back
 execute if entity @s[scores={ActionTime=20}] as @a[distance=..15,gamemode=!spectator] positioned ^ ^ ^15 run tag @s[distance=..18] add got_sucked
 execute if entity @s[scores={ActionTime=20}] as @e[tag=got_sucked] facing entity @s feet run function luigis_mansion:entities/bowser/suck
 execute if entity @a[tag=got_sucked,distance=..3] run scoreboard players add @s ActionTime 1
