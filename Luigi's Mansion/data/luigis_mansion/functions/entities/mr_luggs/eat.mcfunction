@@ -1,5 +1,5 @@
 execute if entity @s[tag=!visible] run function luigis_mansion:entities/mr_luggs/turn_visible
-execute unless entity @s[scores={Dialog=1..}] at @a[tag=same_room,gamemode=!spectator] positioned ^ ^ ^8 if entity @s[distance=..8] run function luigis_mansion:entities/mr_luggs/turn_invisible
+execute unless entity @s[scores={Dialog=1..}] at @e[tag=same_room,tag=!spectator] positioned ^ ^ ^8 if entity @s[distance=..8] run function luigis_mansion:entities/mr_luggs/turn_invisible
 execute unless entity @s[scores={Dialog=2..}] if entity @s[tag=visible] run item replace entity @e[tag=this_food,limit=1] armor.head with minecraft:diamond_pickaxe{Unbreakable:1b,Damage:4,CustomModelData:11}
 execute if entity @s[tag=!visible] run item replace entity @e[tag=this_food,limit=1] armor.head with minecraft:air
 execute unless entity @s[scores={Dialog=1..}] if block ^3 ^2 ^2 minecraft:purple_stained_glass if block ^-3 ^2 ^2 minecraft:purple_stained_glass run playsound luigis_mansion:music.solve_puzzle music @a[tag=same_room] ~ ~ ~ 10000
@@ -46,7 +46,7 @@ tag @s[scores={Dialog=101}] add complain
 tag @s[scores={Dialog=141}] remove complain
 tag @s[scores={Dialog=141}] add rage
 execute if entity @s[scores={Dialog=141..}] as @a[tag=same_room,gamemode=!spectator] unless entity @s[scores={MusicType=36}] run function luigis_mansion:other/music/set/danger
-execute if entity @s[scores={Dialog=141..781}] positioned ~ ~1 ~ facing entity @p[tag=same_room,gamemode=!spectator] feet positioned ~ ~-1 ~ run teleport @s ~ ~ ~ ~ ~
+execute if entity @s[scores={Dialog=141..781}] positioned ~ ~1 ~ facing entity @e[tag=same_room,tag=!spectator,sort=nearest,limit=1] feet positioned ~ ~-1 ~ run teleport @s ~ ~ ~ ~ ~
 tag @s[scores={Dialog=201}] remove rage
 tag @s[scores={Dialog=201}] add spit
 execute if entity @s[scores={Dialog=221}] run function luigis_mansion:entities/mr_luggs/spit_fire

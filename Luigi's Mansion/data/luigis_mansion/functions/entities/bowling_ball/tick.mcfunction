@@ -8,6 +8,7 @@ execute if entity @s[tag=!held] store result entity @s Pose.Head[0] float 1 run 
 execute at @s[tag=!held,tag=!rotated] rotated as @e[tag=this_bowling_ghost,limit=1] rotated ~ 0 run teleport @s ~ ~ ~ ~ ~
 tag @s[tag=!held] add rotated
 execute at @s[tag=!held,tag=rotated] run function luigis_mansion:entities/bowling_ball/move_forward
+execute at @s[tag=!held] as @e[distance=..0.7,tag=gameboy_horror_location] run function luigis_mansion:gameboy_horror_location/bring_player_back
 execute at @s[tag=!held] if entity @a[distance=..0.7,gamemode=!spectator] run tag @s add hit
 execute at @s[tag=!held,tag=hit] run tag @e[tag=this_bowling_ghost,limit=1] add laugh
 execute at @s[tag=!held,tag=hit] run effect give @a[distance=..0.7,gamemode=!spectator] minecraft:instant_damage 1 0 true

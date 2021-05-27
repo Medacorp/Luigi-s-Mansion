@@ -1,5 +1,5 @@
 scoreboard players add @s ActionTime 1
-execute at @s[scores={ActionTime=1..20}] facing entity @p[tag=same_room,gamemode=!spectator] feet run teleport @s ~ ~ ~ ~ ~
+execute at @s[scores={ActionTime=1..20}] facing entity @e[tag=same_room,tag=!spectator,sort=nearest,limit=1] feet run teleport @s ~ ~ ~ ~ ~
 execute if entity @s[scores={ActionTime=1}] run playsound luigis_mansion:entity.boo.laugh hostile @a[tag=same_room] ~ ~ ~ 1
 scoreboard players set @s[scores={ActionTime=1}] AnimationProg 0
 execute at @s[scores={ActionTime=1..19}] run function luigis_mansion:animations/boo/laugh

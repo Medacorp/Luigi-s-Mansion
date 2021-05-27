@@ -11,5 +11,5 @@ scoreboard players set @s[scores={HurtTime=1},tag=hurt] Sound 40
 execute if entity @s[scores={Sound=0},tag=fleeing] run playsound luigis_mansion:entity.slim_bankshot.flee hostile @a[tag=same_room] ~ ~ ~ 1
 scoreboard players set @s[scores={Sound=0},tag=fleeing] Sound 40
 
-execute if entity @s[tag=!fleeing,tag=!hurt,scores={StunTime=0}] run function luigis_mansion:entities/slim_bankshot/pool
+execute if entity @s[tag=!fleeing,tag=!hurt,tag=!vanish,scores={StunTime=0}] run function luigis_mansion:entities/slim_bankshot/pool
 execute at @s[scores={LightX=-2147483648..}] run function luigis_mansion:other/cast_shadow/2_tall

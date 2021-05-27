@@ -26,7 +26,7 @@ execute if entity @s[scores={Sound=0},tag=fleeing] run playsound luigis_mansion:
 scoreboard players set @s[scores={Sound=0},tag=fleeing] Sound 40
 
 execute if entity @s[tag=!fight] run function luigis_mansion:entities/bogmire/intro
-execute if entity @s[tag=fight,tag=!fleeing,tag=!hurt,tag=!intro,tag=!vanish] run function #luigis_mansion:entities/bogmire/fight
+execute if entity @s[tag=fight,tag=!fleeing,tag=!hurt,tag=!vanish,scores={StunTime=0}] run function #luigis_mansion:entities/bogmire/fight
 
 tag @s[tag=vanish,tag=fight] add disappear
 execute at @s[tag=vanish,tag=!fight] run function luigis_mansion:entities/bogmire/vanish

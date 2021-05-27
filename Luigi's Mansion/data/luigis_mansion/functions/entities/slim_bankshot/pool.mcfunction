@@ -6,9 +6,9 @@ scoreboard players add @s[scores={Dialog=2..10}] Dialog 1
 execute positioned ~ ~-1.1875 ~ if entity @e[type=minecraft:armor_stand,tag=billiards_ball,tag=spit,distance=..0.7] run scoreboard players add @s[scores={Dialog=1}] Dialog 1
 tag @e[type=minecraft:armor_stand,tag=billiards_ball,tag=spit,distance=..0.7] add collision
 execute unless entity @s[scores={Dialog=1..}] run scoreboard players add @s Dialog 1
-execute if entity @s[scores={Dialog=1}] at @a[tag=same_room,gamemode=!spectator] positioned ^ ^ ^8 run effect give @s[distance=..8] minecraft:invisibility 1 0 true
-execute if entity @s[scores={Dialog=11}] at @a[tag=same_room,gamemode=!spectator] positioned ^ ^ ^8 run effect give @s[distance=..8] minecraft:invisibility 1 0 true
-execute if entity @s[scores={Dialog=21}] at @a[tag=same_room,gamemode=!spectator] positioned ^ ^ ^8 run effect give @s[distance=..8] minecraft:invisibility 1 0 true
+execute if entity @s[scores={Dialog=1}] at @e[tag=same_room,tag=!spectator] positioned ^ ^ ^8 run effect give @s[distance=..8] minecraft:invisibility 1 0 true
+execute if entity @s[scores={Dialog=11}] at @e[tag=same_room,tag=!spectator] positioned ^ ^ ^8 run effect give @s[distance=..8] minecraft:invisibility 1 0 true
+execute if entity @s[scores={Dialog=21}] at @e[tag=same_room,tag=!spectator] positioned ^ ^ ^8 run effect give @s[distance=..8] minecraft:invisibility 1 0 true
 effect clear @s[nbt={ActiveEffects:[{Id:14b,Duration:19}]}] minecraft:invisibility
 execute if entity @s[scores={Dialog=1}] run function #luigis_mansion:entities/slim_bankshot/pool_path
 execute if entity @s[scores={Dialog=2}] run playsound luigis_mansion:entity.slim_bankshot.scream hostile @a[tag=same_room] ~ ~ ~ 1

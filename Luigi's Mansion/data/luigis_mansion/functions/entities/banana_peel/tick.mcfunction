@@ -4,4 +4,7 @@ execute if entity @s[nbt={OnGround:0b}] store result entity @s Pose.Head[1] floa
 scoreboard players add @s ActionTime 1
 tag @s[scores={ActionTime=60}] add vacuumable
 tag @s[scores={ActionTime=600},tag=!eternal] add dead
+execute if entity @s[tag=!dead] as @e[tag=same_room,distance=..0.7,tag=gameboy_horror_location] run function luigis_mansion:entities/gameboy_horror_location/bring_player_back
+execute if entity @s[tag=!dead] run tag @a[tag=same_room,distance=..0.7] add tripping
+execute if entity @a[tag=same_room,distance=..0.7,limit=1] run tag @s add dead
 execute at @s[scores={LightX=-2147483648..}] run function luigis_mansion:other/cast_shadow/1_tall

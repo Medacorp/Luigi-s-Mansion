@@ -1,3 +1,4 @@
+execute if entity @s[tag=!dead] as @e[distance=..1,tag=gameboy_horror_location] run function luigis_mansion:gameboy_horror_location/bring_player_back
 execute if entity @s[tag=!dead] run effect give @a[distance=..1,gamemode=!spectator,limit=1] minecraft:instant_damage 1 0 true
 execute if entity @s[tag=!dead] run scoreboard players set @a[distance=..1,gamemode=!spectator,limit=1] ForcedDamage 4
 execute if entity @s[tag=!dead,tag=haunted_teddy_bear] run scoreboard players set @e[tag=chauncey] AnimationProg 0

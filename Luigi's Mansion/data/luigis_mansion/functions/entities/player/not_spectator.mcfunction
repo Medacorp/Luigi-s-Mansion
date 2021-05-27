@@ -47,3 +47,4 @@ tag @s[scores={MirrorZ=-2147483648..},nbt=!{ActiveEffects:[{Id:14b}]}] add mirro
 scoreboard players reset @s[tag=!mirrored] ReflectionNr
 execute if entity @s[tag=mirrored] run function luigis_mansion:entities/reflection/player
 execute at @s[scores={LightX=-2147483648..},nbt=!{ActiveEffects:[{Id:14b}]}] run function luigis_mansion:other/cast_shadow/2_tall
+tag @s remove spectator

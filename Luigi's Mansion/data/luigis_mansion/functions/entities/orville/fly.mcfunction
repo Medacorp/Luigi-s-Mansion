@@ -1,4 +1,4 @@
-execute if entity @a[gamemode=!spectator,distance=..0.7,limit=1] if entity @s[scores={VulnerableTime=0},tag=!vanish] run function luigis_mansion:entities/orville/collide
+execute if entity @e[tag=same_room,tag=!spectator,distance=..0.7,limit=1] if entity @s[scores={VulnerableTime=0},tag=!vanish] run function luigis_mansion:entities/orville/collide
 
 scoreboard players add @s[tag=in_vacuum] VacuumTime 1
 scoreboard players set @s[tag=!in_vacuum_2,tag=!in_vacuum] VacuumTime 0

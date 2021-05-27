@@ -5,7 +5,8 @@ tag @s remove poltergust_malfunction
 scoreboard players operation #temp Room = @s LastRoom
 execute as @a[gamemode=!spectator] if score @s Room = #temp Room run scoreboard players reset @a[distance=..0.1,limit=1] LastRoom
 scoreboard players reset #temp Room
-stopsound @s[scores={RoomNoise=1..}] hostile luigis_mansion:music.mansion.melody
+stopsound @s[scores={RoomNoise=1..}] ambient luigis_mansion:music.mansion.melody
+stopsound @s[scores={RoomNoise=1..}] ambient luigis_mansion:music.mansion.room.nursery
 scoreboard players set @s RoomNoise 0
 scoreboard players set @s Sound 0
 scoreboard players set @s Pull 0
@@ -30,10 +31,11 @@ tag @s add already_added_to_list
 
 scoreboard players operation #temp Room = @s Room
 execute as @e[tag=ghost] if score @s Room = #temp Room run tag @s add target
-execute at @e[tag=target,tag=hidden] run particle minecraft:dust 0.7 1 0.5 0 ~ ~0.6 ~ 0.3 0.3 0.3 0 5 normal @s
-execute at @e[tag=target,tag=!visible,tag=!hidden] run particle minecraft:dust 0.7 1 0 0 ~ ~1.6 ~ 0.3 0.3 0.3 0 5 normal @s
+execute at @e[tag=target,tag=hidden] run particle minecraft:dust 0.7 1 0.5 1 ~ ~0.6 ~ 0.3 0.3 0.3 0 5 normal @s
+execute at @e[tag=target,tag=!visible,tag=!hidden] run particle minecraft:dust 0.7 1 0 1 ~ ~1.6 ~ 0.3 0.3 0.3 0 5 normal @s
 tag @e[tag=portrait_ghost,tag=target] remove target
 scoreboard players reset #temp Room
+tag @s add spectator
 
 execute store result score @s HomeX run data get entity @s Pos[0]
 execute store result score @s HomeY run data get entity @s Pos[1]

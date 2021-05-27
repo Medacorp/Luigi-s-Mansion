@@ -1,9 +1,9 @@
 scoreboard players add @s Dialog 1
 execute if entity @s[scores={Dialog=1}] run playsound luigis_mansion:ambience.parlor_wind ambient @a[tag=same_room] ~ ~ ~ 1000
-execute if entity @s[scores={Dialog=1..81}] run stopsound @a[tag=same_room] music
-execute if entity @s[scores={Dialog=1..81}] run scoreboard players set @a[tag=same_room] MusicType -1
-execute if entity @s[scores={Dialog=1..81}] run scoreboard players set @a[tag=same_room] Music 1308
-execute if entity @s[scores={Dialog=81}] run playsound luigis_mansion:music.meet_e_gadd music @a[tag=same_room] ~ ~ ~ 1000
+execute if entity @s[scores={Dialog=1..81}] run stopsound @a[tag=same_room,gamemode=!spectator] music
+execute if entity @s[scores={Dialog=1..81}] run scoreboard players set @a[tag=same_room,gamemode=!spectator] MusicType -1
+execute if entity @s[scores={Dialog=1..81}] run scoreboard players set @a[tag=same_room,gamemode=!spectator] Music 1308
+execute if entity @s[scores={Dialog=81}] run playsound luigis_mansion:music.meet_e_gadd music @a[tag=same_room,gamemode=!spectator] ~ ~ ~ 1000
 teleport @s[x=697,y=20,z=7,dx=1,dy=1,dz=1] ~-1 ~ ~
 execute if entity @s[scores={Dialog=1}] run teleport @s 725.5 20 28.0 90 0
 execute if entity @s[scores={Dialog=2}] run teleport @s 725.5 20 28.0 90 0
@@ -183,5 +183,5 @@ execute if entity @s[scores={Dialog=1388}] as @a run function luigis_mansion:ent
 tag @s[scores={Dialog=1388}] remove meet_e_gadd
 scoreboard players reset @s[scores={Dialog=1388}] Dialog
 
-tag @e[tag=gold_ghost,tag=hidden,tag=same_room,limit=1] add dead
+tag @e[tag=gold_ghost,tag=hidden,tag=dialog,limit=1] add dead
 tag @e[tag=dialog] remove stunable

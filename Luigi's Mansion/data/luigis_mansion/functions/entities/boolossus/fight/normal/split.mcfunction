@@ -11,13 +11,13 @@ execute if entity @s[tag=!fleeing,tag=!attack,tag=!laugh,scores={Wave=80,ActionT
 scoreboard players set @s[scores={Wave=80}] ActionTime 0
 execute if entity @s[tag=laugh,scores={Dialog=0}] run function luigis_mansion:entities/boolossus/laugh
 
-execute if entity @a[gamemode=!spectator,distance=..0.7,limit=1] run function luigis_mansion:entities/boo/collide
+execute if entity @e[tag=same_room,tag=!spectator,distance=..0.7,limit=1] run function luigis_mansion:entities/boo/collide
 execute if entity @s[tag=!fleeing,tag=!attack,tag=!laugh,scores={Wave=81..580,Dialog=0}] if predicate luigis_mansion:boolossus_attack_chance run tag @s add attack
 execute if entity @s[tag=attack,tag=!laugh,scores={Dialog=0}] run function luigis_mansion:entities/boolossus/attack
 tag @s[scores={Wave=..30}] add fleeing
 tag @s[scores={Wave=..30}] add fleeing_no_target
 
-execute at @s[tag=!fleeing,tag=laugh,scores={Dialog=0,Wave=..599}] facing entity @p[tag=same_room,gamemode=!spectator] feet rotated ~ 0 run teleport @s ~ ~ ~ ~ ~
+execute at @s[tag=!fleeing,tag=laugh,scores={Dialog=0,Wave=..599}] facing entity @e[tag=same_room,tag=!spectator,sort=nearest,limit=1] feet rotated ~ 0 run teleport @s ~ ~ ~ ~ ~
 execute if entity @s[tag=!fleeing,tag=!attack,tag=!laugh,scores={Time=120..,Dialog=0,Wave=..599}] run function luigis_mansion:entities/boolossus/turn
 execute at @s[tag=!fleeing,tag=!attack,tag=!laugh,scores={Dialog=0},tag=move_up] run function luigis_mansion:entities/boolossus/move_up_split
 execute at @s[tag=!fleeing,tag=!attack,tag=!laugh,scores={Dialog=0},tag=!move_up] run function luigis_mansion:entities/boolossus/move_down_split

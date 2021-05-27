@@ -2,7 +2,7 @@ scoreboard players add @s[scores={Dialog=2..}] Dialog 1
 execute if block 684 113 45 minecraft:air run scoreboard players add @s[scores={Dialog=1}] Dialog 1
 execute unless entity @s[scores={Dialog=1..}] run scoreboard players add @s Dialog 1
 execute if entity @s[scores={Dialog=1..2}] run function luigis_mansion:entities/lydia/turn_visible
-execute if entity @s[scores={Dialog=1}] at @a[tag=same_room,gamemode=!spectator] positioned ^ ^ ^8 if entity @s[distance=..8] run function luigis_mansion:entities/lydia/turn_invisible
+execute if entity @s[scores={Dialog=1}] at @e[tag=same_room,tag=!spectator] positioned ^ ^ ^8 if entity @s[distance=..8] run function luigis_mansion:entities/lydia/turn_invisible
 execute if entity @s[scores={Dialog=40}] run playsound luigis_mansion:entity.lydia.surprise hostile @a[tag=same_room] ~ ~ ~ 1
 tag @s[scores={Dialog=40}] add complain
 scoreboard players set @s[scores={Dialog=40}] AnimationProg 0

@@ -23,7 +23,7 @@ execute if entity @s[scores={Dialog=74}] if entity @a[scores={EGaddGPRChoice=1},
 execute if entity @s[scores={Dialog=74}] if entity @a[scores={EGaddGPRChoice=2},limit=1] as @a[tag=same_room] run function luigis_mansion:entities/e_gadd/to_gallery
 execute if entity @s[scores={Dialog=74}] run scoreboard players set @a EGaddGPRChoice 0
 tag @s[scores={Dialog=74}] remove talk
-execute unless entity @a[tag=same_room,distance=..7] run tag @s remove talk
+execute unless entity @e[tag=same_room,tag=!spectator,distance=..7,limit=1] run tag @s remove talk
 execute if entity @s[tag=!talk] as @a[scores={EGaddGPRChoice=0..}] run trigger EGaddGPRChoice set 0
 scoreboard players set @s[tag=!talk] Dialog 0
 tag @s[tag=!talk] remove listen

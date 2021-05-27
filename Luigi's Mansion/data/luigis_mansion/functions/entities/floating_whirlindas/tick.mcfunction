@@ -16,7 +16,7 @@ scoreboard players set @s[scores={HurtTime=1},tag=hurt] Sound 40
 execute if entity @s[scores={Sound=0},tag=fleeing] run playsound luigis_mansion:entity.floating_whirlindas.flee hostile @a[tag=same_room] ~ ~ ~ 1
 scoreboard players set @s[scores={Sound=0},tag=fleeing] Sound 40
 
-execute at @s[tag=!fleeing,scores={StunTime=0},tag=!vanish] run function #luigis_mansion:entities/floating_whirlindas/dance
+execute at @s[tag=!fleeing,tag=!hurt,tag=!vanish,scores={StunTime=0}] run function #luigis_mansion:entities/floating_whirlindas/dance
 execute at @s unless entity @s[tag=!fleeing,tag=!hurt] run teleport @e[tag=floating_whirlindas_female,limit=1] ^-0.5 ^ ^1 ~ ~
 
 execute if entity @s[tag=vanish] run function luigis_mansion:entities/floating_whirlindas/vanish

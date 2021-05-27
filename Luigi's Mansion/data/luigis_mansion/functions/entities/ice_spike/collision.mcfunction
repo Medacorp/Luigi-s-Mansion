@@ -1,3 +1,4 @@
+execute as @e[distance=..1,tag=gameboy_horror_location] run function luigis_mansion:gameboy_horror_location/bring_player_back
 effect give @a[distance=..1,gamemode=!spectator,limit=1] minecraft:instant_damage 1 0 true
 scoreboard players set @a[distance=..1,gamemode=!spectator,limit=1] ForcedDamage 4
 execute as @e[tag=ice_spike] if score @s Room = @e[distance=..0.1,limit=1,tag=ice_spike] Room run scoreboard players set @s WaitTime 0

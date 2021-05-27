@@ -23,7 +23,7 @@ execute if entity @s[scores={Dialog=50}] if entity @a[scores={ClairvoyaChoice=2}
 execute if entity @s[scores={Dialog=130}] if entity @a[scores={ClairvoyaChoice=2}] run scoreboard players add @s Dialog 226
 execute if entity @s[scores={Dialog=356}] run scoreboard players set @a ClairvoyaChoice 0
 tag @s[scores={Dialog=356}] remove talk
-execute unless entity @a[tag=same_room,distance=..7] run tag @s remove talk
+execute unless entity @e[tag=same_room,tag=!spectator,distance=..7,limit=1] run tag @s remove talk
 execute if entity @s[tag=!talk] as @a[tag=same_room] run function luigis_mansion:other/music/set/silence
 execute if entity @s[tag=!talk] as @a[scores={ClairvoyaChoice=0..}] run trigger ClairvoyaChoice set 0
 scoreboard players set @s[tag=!talk] Dialog 0

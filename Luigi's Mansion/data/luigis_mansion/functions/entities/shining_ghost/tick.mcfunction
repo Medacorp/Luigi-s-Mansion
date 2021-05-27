@@ -1,6 +1,6 @@
 execute if entity @s[tag=dead] run teleport @s ~ -100 ~
 
-execute if entity @a[gamemode=!spectator,distance=..0.7,limit=1] if entity @s[tag=!in_vacuum,tag=!can_spit_2,tag=!spit] if entity @s[tag=!dead,tag=!removed_from_existence] run function luigis_mansion:entities/shining_ghost/collide
+execute if entity @e[tag=same_room,tag=!spectator,distance=..0.7,limit=1] if entity @s[tag=!in_vacuum,tag=!can_spit_2,tag=!spit] if entity @s[tag=!dead,tag=!removed_from_existence] run function luigis_mansion:entities/shining_ghost/collide
 
 execute if entity @s[tag=spit] run scoreboard players set #temp Move 2
 execute if entity @s[tag=!spit] run scoreboard players set #temp Move 1

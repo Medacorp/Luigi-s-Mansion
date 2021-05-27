@@ -1,4 +1,4 @@
-summon minecraft:armor_stand ~ ~-0.5 ~ {CustomName:'{"translate":"luigis_mansion:entity.bogmire"}',Invisible:1b,NoGravity:1b,CustomNameVisible:0b,Invulnerable:1b,ArmorItems:[{},{},{},{}],HandItems:[{},{}],Pose:{RightArm:[0.0f,0.0f,0.01f],LeftArm:[0.0f,0.0f,0.01f],Head:[0.0f,0.0f,0.01f]},Tags:["bogmire","portrait_ghost","fight","ghost","ground_bound","this_entity"],DisabledSlots:2039583}
+summon minecraft:armor_stand ~ ~-0.5 ~ {CustomName:'{"translate":"luigis_mansion:entity.bogmire"}',Invisible:1b,NoGravity:1b,CustomNameVisible:0b,Invulnerable:1b,ArmorItems:[{},{},{},{}],HandItems:[{},{}],Pose:{RightArm:[0.0f,0.0f,0.01f],LeftArm:[0.0f,0.0f,0.01f],Head:[0.0f,0.0f,0.01f]},Tags:["bogmire","portrait_ghost","fight","ghost","ground_bound","stun_immune","this_entity"],DisabledSlots:2039583}
 summon minecraft:armor_stand ~ ~-0.5 ~ {CustomName:'{"translate":"luigis_mansion:entity.bogmire"}',Invisible:1b,NoGravity:1b,CustomNameVisible:0b,Invulnerable:1b,ArmorItems:[{},{},{},{}],Pose:{Head:[0.0f,0.0f,0.01f]},Tags:["bogmire_body","this_entity"],DisabledSlots:2039583}
 teleport @e[tag=bogmire,tag=this_entity,limit=1] ~ ~-0.5 ~ ~ ~
 teleport @e[tag=bogmire_body,tag=this_entity,limit=1] ~ ~-0.5 ~ ~ ~
@@ -15,6 +15,7 @@ scoreboard players set @e[tag=bogmire,tag=this_entity,limit=1] PullStrength 7
 scoreboard players set @e[tag=bogmire,tag=this_entity,limit=1] Move 5
 scoreboard players set @e[tag=bogmire,tag=this_entity,limit=1] Sound 0
 scoreboard players set @e[tag=bogmire,tag=this_entity,limit=1] Room 74
+scoreboard players set @e[tag=bogmire,tag=this_entity,limit=1] StunTime 0
 scoreboard players set @e[tag=bogmire,tag=this_entity,limit=1] VulnerableTime 0
 tag @e[tag=bogmire,tag=this_entity,limit=1] remove this_entity
 tag @e[tag=bogmire_body,tag=this_entity,limit=1] remove this_entity

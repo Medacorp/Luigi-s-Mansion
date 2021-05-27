@@ -18,7 +18,7 @@ execute if entity @s[scores={Room=-3},tag=!portrificationizing,tag=!return_dialo
 execute if entity @s[scores={Room=-4},tag=talk] if data storage luigis_mansion:data rooms.gallery{cleared:0b} run function luigis_mansion:dialog/gallery/talk
 execute if entity @s[scores={Room=-4},tag=talk] if data storage luigis_mansion:data rooms.gallery{cleared:1b} run function luigis_mansion:dialog/gallery/repeat
 
-execute facing entity @p[tag=same_room,gamemode=!spectator] feet rotated ~ 0 run teleport @s[tag=!portrificationizing,tag=!mario_to_normal,scores={Room=-4..-1}] ~ ~ ~ ~ ~
+execute facing entity @e[tag=same_room,tag=!spectator,sort=nearest,limit=1] feet rotated ~ 0 run teleport @s[tag=!portrificationizing,tag=!mario_to_normal,scores={Room=-4..-1}] ~ ~ ~ ~ ~
 
 execute at @s[tag=listen] as @e[tag=this_model,tag=e_gadd_head,limit=1] run function luigis_mansion:animations/e_gadd/listen
 execute at @s[tag=nod] as @e[tag=this_model,tag=e_gadd_head,limit=1] run function luigis_mansion:animations/e_gadd/nod

@@ -22,7 +22,7 @@ execute if entity @s[scores={Sound=0},tag=fleeing] run playsound luigis_mansion:
 scoreboard players set @s[scores={Sound=0},tag=fleeing] Sound 40
 
 tag @s[tag=vanish,tag=fight] add disappear
-execute if entity @s[tag=!fleeing,tag=!hurt] run function #luigis_mansion:entities/chauncey/tick
+execute if entity @s[tag=!fleeing,tag=!hurt,tag=!vanish,scores={StunTime=0}] run function #luigis_mansion:entities/chauncey/tick
 execute if entity @s[tag=attack] run function luigis_mansion:entities/chauncey/attack
 execute if entity @s[tag=!fleeing,tag=!attack,tag=laugh] run function luigis_mansion:entities/chauncey/laugh
 execute if entity @s[tag=!fleeing,tag=!attack,tag=complain] run function luigis_mansion:entities/chauncey/complain

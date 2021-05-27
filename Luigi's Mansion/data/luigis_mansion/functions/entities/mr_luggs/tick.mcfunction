@@ -15,7 +15,7 @@ scoreboard players set @s[scores={HurtTime=1},tag=hurt] Sound 40
 execute if entity @s[scores={Sound=0},tag=fleeing] run playsound luigis_mansion:entity.mr_luggs.flee hostile @a[tag=same_room] ~ ~ ~ 1
 scoreboard players set @s[scores={Sound=0},tag=fleeing] Sound 40
 
-execute if entity @s[tag=!fleeing,tag=!hurt,tag=!remove_from_existence,tag=!vanish,scores={StunTime=0}] run function luigis_mansion:entities/mr_luggs/eat
+execute if entity @s[tag=!fleeing,tag=!hurt,tag=!vanish,scores={StunTime=0}] run function luigis_mansion:entities/mr_luggs/eat
 
 execute if entity @s[tag=vanish] run function luigis_mansion:entities/mr_luggs/vanish
 execute at @s[tag=hit_table] run function luigis_mansion:animations/mr_luggs/hit_table

@@ -6,7 +6,7 @@ execute unless entity @s[scores={Dialog=1..}] run scoreboard players add @s Dial
 tag @s[scores={Dialog=1}] add sleep
 tag @s[scores={Dialog=1}] remove wake_up
 execute if entity @s[scores={Dialog=1..50}] run function luigis_mansion:entities/chauncey/turn_visible
-execute if entity @s[scores={Dialog=1..48}] at @a[tag=same_room,gamemode=!spectator] positioned ^ ^ ^8 if entity @s[distance=..8] run function luigis_mansion:entities/chauncey/turn_invisible
+execute if entity @s[scores={Dialog=1..48}] at @e[tag=same_room,tag=!spectator] positioned ^ ^ ^8 if entity @s[distance=..8] run function luigis_mansion:entities/chauncey/turn_invisible
 tag @s[scores={Dialog=2}] remove sleep
 tag @s[scores={Dialog=2}] add wake_up
 scoreboard players set @s[scores={Dialog=2}] AnimationProg 0
@@ -19,7 +19,7 @@ tag @s[scores={Dialog=51}] add yawn
 execute if entity @s[scores={Dialog=51}] run teleport @s 748 21 -55
 execute if entity @s[scores={Dialog=51..169}] run scoreboard players set @a[tag=same_room,gamemode=!spectator,scores={MusicType=7}] Music 0
 execute if entity @s[scores={Dialog=51..169}] run scoreboard players set @a[tag=same_room,gamemode=!spectator,scores={MusicType=7}] MusicType 26
-execute if entity @s[scores={Dialog=52..},tag=!attack,tag=!vanish] facing entity @p[tag=same_room,gamemode=!spectator] feet rotated ~ 0 run teleport @s ~ ~ ~ ~ ~
+execute if entity @s[scores={Dialog=52..},tag=!attack,tag=!vanish] facing entity @e[tag=same_room,tag=!spectator,sort=nearest,limit=1] feet rotated ~ 0 run teleport @s ~ ~ ~ ~ ~
 execute if entity @s[scores={Dialog=90}] run playsound luigis_mansion:entity.chauncey.yawn hostile @a[tag=same_room] ~ ~ ~ 1
 tag @s[scores={Dialog=130}] remove yawn
 tag @s[scores={Dialog=130}] add move
@@ -38,7 +38,7 @@ execute if entity @s[scores={Dialog=170}] if entity @e[tag=haunted_teddy_bear,sc
 execute if entity @s[scores={Dialog=170}] if entity @e[tag=haunted_teddy_bear,scores={WaitTime=60..79}] run tag @s add grab_rambler
 execute if entity @s[scores={Dialog=170}] if entity @e[tag=haunted_teddy_bear,scores={WaitTime=80..}] run tag @s remove grab_rambler
 execute if entity @s[scores={Dialog=170}] if entity @e[tag=haunted_teddy_bear,scores={WaitTime=80..}] run tag @s add rambling
-execute if entity @s[scores={Dialog=170},tag=!attack,tag=!rambling,tag=!laugh,tag=!complain] positioned ^ ^ ^0.7 if entity @a[gamemode=!spectator,distance=..0.7,limit=1] run tag @s add attack
+execute if entity @s[scores={Dialog=170},tag=!attack,tag=!rambling,tag=!laugh,tag=!complain] positioned ^ ^ ^0.7 if entity @e[tag=same_room,tag=!spectator,distance=..0.7,limit=1] run tag @s add attack
 tag @s[scores={Dialog=170},tag=attack] remove move
 tag @s[scores={Dialog=170},tag=complain] remove move
 tag @s[scores={Dialog=170},tag=laugh] remove move

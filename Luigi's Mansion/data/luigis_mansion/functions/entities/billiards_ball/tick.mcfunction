@@ -13,7 +13,7 @@ execute if entity @s[tag=!can_spit_2,tag=vacuumable] store result entity @s Pose
 execute if entity @s[tag=move] store result entity @s Pose.Head[0] float 1 run scoreboard players add @s HomeRot 10
 tag @s[tag=move,scores={SpawnTime=8}] add dead
 
-execute at @s if entity @a[gamemode=!spectator,distance=..0.7,limit=1] if entity @s[tag=vacuumable,tag=!in_vacuum,tag=!can_spit_2,tag=!spit] if entity @s[tag=!dying,tag=!dead,tag=!removed_from_existence] run function luigis_mansion:entities/billiards_ball/collide
+execute at @s if entity @e[tag=same_room,tag=!spectator,distance=..0.7,limit=1] if entity @s[tag=vacuumable,tag=!in_vacuum,tag=!can_spit_2,tag=!spit,tag=!dying,tag=!dead,tag=!removed_from_existence] run function luigis_mansion:entities/billiards_ball/collide
 
 execute at @s[tag=collision] run function luigis_mansion:entities/billiards_ball/back_to_start
 execute at @s[tag=in_vacuum] unless entity @a[distance=..1.5,gamemode=!spectator,tag=vacuuming] facing entity @p[gamemode=!spectator,tag=vacuuming] feet if block ^ ^ ^0.3 #luigis_mansion:all_ignore run teleport @s ^ ^ ^0.3 ~ ~

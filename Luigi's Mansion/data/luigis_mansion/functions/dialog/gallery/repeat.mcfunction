@@ -48,7 +48,7 @@ execute if entity @s[scores={Dialog=98}] if entity @a[scores={EGaddGallChoice=4}
 execute if entity @s[scores={Dialog=1354}] if entity @a[scores={EGaddGallChoice=3}] as @a[tag=same_room] run function luigis_mansion:entities/e_gadd/to_lab
 execute if entity @s[scores={Dialog=1354}] run scoreboard players set @a EGaddGallChoice 0
 tag @s[scores={Dialog=1354}] remove talk
-execute unless entity @a[tag=same_room,distance=..7] run tag @s remove talk
+execute unless entity @e[tag=same_room,tag=!spectator,distance=..7,limit=1] run tag @s remove talk
 execute if entity @s[tag=!talk] as @a[scores={EGaddGallChoice=0..}] run trigger EGaddGallChoice set 0
 scoreboard players set @s[tag=!talk] Dialog 0
 tag @s[tag=!talk] remove listen

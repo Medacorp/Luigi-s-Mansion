@@ -1,6 +1,6 @@
 scoreboard players add @s Time 1
-execute if entity @s[scores={Time=1..89}] run stopsound @a[scores={Room=14}] music
-execute if entity @s[scores={Time=1}] run scoreboard players set @a[scores={Room=14}] Music 310
+execute if entity @s[scores={Time=1..89}] run stopsound @a[scores={Room=18}] music
+execute if entity @s[scores={Time=1}] run scoreboard players set @a[scores={Room=18}] Music 310
 execute if entity @s[scores={Time=40}] run fill 682 11 -52 682 12 -52 minecraft:air
 execute if entity @s[scores={Time=40..240}] run fill 681 11 -52 689 17 -39 minecraft:air replace minecraft:light
 execute if entity @s[scores={Time=40}] run clone 681 11 -52 689 17 -51 681 11 -51 replace move
@@ -23,7 +23,7 @@ execute if entity @s[scores={Time=220}] run clone 681 11 -43 689 17 -42 681 11 -
 execute if entity @s[scores={Time=230}] run clone 681 11 -42 689 17 -41 681 11 -41 replace move
 execute if entity @s[scores={Time=240}] run clone 681 11 -41 689 17 -40 681 11 -40 replace move
 execute if entity @s[scores={Time=240}] run data modify storage luigis_mansion:data current_state.current_data.technical_data merge value {moved_wall:1b}
-execute if entity @s[scores={Time=280}] run playsound luigis_mansion:music.solve_puzzle music @a[scores={Room=14}] ~ ~ ~ 10000
+execute if entity @s[scores={Time=280}] run playsound luigis_mansion:music.solve_puzzle music @a[scores={Room=18}] ~ ~ ~ 10000
 teleport @s[x=689.5,y=11,z=-63.5,distance=..1.5] ~-1.5 ~ ~
 tag @s[scores={Time=280}] remove move_wall
 

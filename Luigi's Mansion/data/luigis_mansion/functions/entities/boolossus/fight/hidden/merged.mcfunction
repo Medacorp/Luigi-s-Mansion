@@ -9,9 +9,9 @@ execute if entity @s[x=734.5,y=47,z=-19952.5,distance=..4] run function luigis_m
 execute if entity @s[scores={Sound=0,Dialog=0},tag=!freeze,tag=fleeing] run playsound luigis_mansion:entity.boo.flee hostile @a[tag=same_room] ~ ~ ~ 1
 scoreboard players set @s[scores={Sound=0,Dialog=0},tag=!freeze,tag=fleeing] Sound 40
 
-execute if entity @a[gamemode=!spectator,distance=..0.7,limit=1] run function luigis_mansion:entities/boolossus/collide
+execute if entity @e[tag=same_room,tag=!spectator,distance=..0.7,limit=1] run function luigis_mansion:entities/boolossus/collide
 
-execute at @s[tag=!fleeing,tag=intro_done] facing entity @p[tag=same_room,gamemode=!spectator] feet run teleport @s ~ ~ ~ ~ ~
+execute at @s[tag=!fleeing,tag=intro_done] facing entity @e[tag=same_room,tag=!spectator,sort=nearest,limit=1] feet run teleport @s ~ ~ ~ ~ ~
 execute unless entity @s[scores={Wave=1..}] store result score @s HomeRot run data get entity @s Rotation[0]
 execute unless entity @s[scores={Wave=1..}] run scoreboard players set @s[tag=intro_done] Wave 1
 

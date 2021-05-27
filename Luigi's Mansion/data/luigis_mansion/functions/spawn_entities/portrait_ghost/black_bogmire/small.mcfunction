@@ -12,6 +12,6 @@ execute as @e[tag=black_bogmire,tag=this_entity,limit=1] store result score @s H
 execute if score #mansion_type Selected matches 0 run scoreboard players set @e[tag=this_entity,limit=1] Move 2
 execute if score #mansion_type Selected matches 1 run scoreboard players set @e[tag=this_entity,limit=1] Move 4
 scoreboard players set @e[tag=black_bogmire,tag=this_entity,limit=1] Sound 0
-scoreboard players set @e[tag=black_bogmire,tag=this_entity,limit=1] Room 61
+scoreboard players set @e[tag=black_bogmire,tag=this_entity,limit=1] Room 74
 tag @e[tag=black_bogmire,tag=this_entity,limit=1] remove this_entity
 tag @e[tag=black_bogmire_body,tag=this_entity,limit=1] remove this_entity

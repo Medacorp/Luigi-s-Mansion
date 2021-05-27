@@ -8,6 +8,8 @@ execute if entity @s[scores={ActionTime=1}] if entity @s[tag=normal] run fill ~ 
 execute if entity @s[scores={ActionTime=1}] if entity @s[tag=attic] run fill ~ ~ ~ ~ ~1 ~ minecraft:spruce_planks
 execute if entity @s[scores={ActionTime=1}] if entity @s[tag=laundry_room] run fill ~ ~ ~ ~ ~1 ~ minecraft:light_blue_terracotta
 
+execute if entity @s[scores={ActionTime=1}] run tag @e[tag=same_room,tag=!spectator,sort=nearest,limit=1] add door_target
+execute if entity @s[scores={ActionTime=1}] as @e[tag=gameboy_horror_location,tag=door_target,limit=1] run function luigis_mansion:entities/gameboy_horror_location/bring_player_back
 execute if entity @s[scores={ActionTime=1}] run tag @p[gamemode=!spectator] add door_target
 execute if entity @s[scores={ActionTime=1},tag=north] run teleport @p[tag=door_target] ~1 ~ ~0.5
 execute if entity @s[scores={ActionTime=1},tag=south] run teleport @p[tag=door_target] ~1 ~ ~-0.5
@@ -225,5 +227,6 @@ execute if entity @s[scores={ActionTime=30}] if entity @s[tag=laundry_room] if s
 execute if entity @s[scores={ActionTime=35}] if entity @s[tag=laundry_room] if score #mirrored Selected matches 1 run setblock ~ ~ ~ minecraft:warped_door[facing=west,half=lower,hinge=left,open=false]
 execute if entity @s[scores={ActionTime=35}] if entity @s[tag=laundry_room] if score #mirrored Selected matches 1 run setblock ~ ~1 ~ minecraft:warped_door[facing=west,half=upper,hinge=left,open=false]
 
+execute as @a[tag=door_target] run trigger GBHChoice set 0
 tag @s[scores={ActionTime=35}] remove attack
 scoreboard players reset @s[scores={ActionTime=35}] ActionTime

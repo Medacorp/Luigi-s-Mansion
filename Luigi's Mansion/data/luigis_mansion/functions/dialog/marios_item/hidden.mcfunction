@@ -11,7 +11,7 @@ execute if entity @s[tag=!talk,tag=glove] run data modify storage luigis_mansion
 execute if entity @s[tag=!talk,tag=shoe] run data modify storage luigis_mansion:data current_state.current_data.technical_data merge value {shown_marios_shoe:1b}
 execute if entity @s[tag=!talk] run scoreboard players add @s ClairvoyaSpoke 1
 
-execute unless entity @a[tag=same_room,distance=..7] run tag @s remove talk
+execute unless entity @e[tag=same_room,tag=!spectator,distance=..7,limit=1] run tag @s remove talk
 execute if entity @s[tag=!talk] as @a[tag=same_room] run function luigis_mansion:other/music/set/silence
 execute if entity @s[tag=!talk] as @a[scores={ClairvoyaChoice=0..}] run trigger ClairvoyaChoice set 0
 scoreboard players set @s[tag=!talk] Dialog 0

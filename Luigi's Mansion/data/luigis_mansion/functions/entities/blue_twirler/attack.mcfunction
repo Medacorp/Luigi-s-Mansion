@@ -6,6 +6,7 @@ execute if entity @s[scores={ActionTime=1}] run playsound luigis_mansion:entity.
 teleport @s[scores={ActionTime=1..38}] ~ ~0.0025 ~
 teleport @s[scores={ActionTime=39..40}] ~ ~-0.5475 ~
 execute at @s[scores={ActionTime=41}] run particle minecraft:dust 0.7 0.7 0.7 1 ~-0.5 ~0.5 ~-0.5 1 1 1 0 50 force
+execute at @s[scores={ActionTime=41}] as @e[distance=..2,tag=gameboy_horror_location] run function luigis_mansion:gameboy_horror_location/bring_player_back
 execute at @s[scores={ActionTime=41}] run effect give @a[distance=..2,gamemode=!spectator] minecraft:instant_damage 1 0 true
 execute at @s[scores={ActionTime=41}] run scoreboard players set @a[distance=..2,gamemode=!spectator] ForcedDamage 4
 execute at @s[scores={ActionTime=41}] if entity @a[distance=..2,gamemode=!spectator] run tag @s add laugh

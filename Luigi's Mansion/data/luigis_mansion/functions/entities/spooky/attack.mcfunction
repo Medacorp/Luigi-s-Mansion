@@ -8,12 +8,13 @@ tag @s[scores={PathStep=20}] remove bite
 tag @s[scores={PathStep=20}] add breathe
 scoreboard players set @s[scores={PathStep=20}] Dialog 20
 scoreboard players reset @s[scores={PathStep=20}] PathStep
-execute at @s[scores={PathStep=1..19}] positioned ^ ^ ^0.3 if entity @a[gamemode=!spectator,distance=..0.7,tag=!grabbed,limit=1] run scoreboard players set @s PathStep 30
+execute at @s[scores={PathStep=1..19}] positioned ^ ^ ^0.3 if entity @e[tag=same_room,tag=!spectator,distance=..0.7,tag=!grabbed,limit=1] run scoreboard players set @s PathStep 30
 
 scoreboard players set @s[scores={PathStep=30}] AnimationProg 0
 tag @s[scores={PathStep=30}] remove bite
 tag @s[scores={PathStep=30}] add hold
 execute if entity @s[scores={PathStep=30}] run playsound luigis_mansion:entity.spooky.hold hostile @a[tag=same_room] ~ ~ ~ 1
+execute at @s[scores={PathStep=30}] positioned ^ ^ ^0.8 as @e[distance=..0.8,tag=gameboy_horror_location] run function luigis_mansion:gameboy_horror_location/bring_player_back
 execute at @s[scores={PathStep=30}] positioned ^ ^ ^0.8 run tag @a[gamemode=!spectator,distance=..0.8,tag=!grabbed,limit=1] add grabbed
 execute at @s[scores={PathStep=30..110}] positioned ^ ^ ^0.8 run effect give @a[gamemode=!spectator,distance=..0.7,tag=grabbed,limit=1] minecraft:instant_damage 1 0 true
 execute at @s[scores={PathStep=30}] positioned ^ ^ ^0.8 run scoreboard players set @a[gamemode=!spectator,distance=..0.7,tag=grabbed,limit=1] ForcedDamage 4

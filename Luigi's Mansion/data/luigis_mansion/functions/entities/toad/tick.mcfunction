@@ -4,7 +4,7 @@ execute as @e[tag=toad_head] if score @s PassiveNr = #temp PassiveNr run tag @s 
 
 function #luigis_mansion:entities/toad/dialog
 
-execute unless entity @s[tag=!happy,tag=!talk] facing entity @p[tag=same_room,gamemode=!spectator] feet rotated ~ 0 run teleport @s ~ ~ ~ ~ ~
+execute unless entity @s[tag=!happy,tag=!talk] facing entity @e[tag=same_room,tag=!spectator,sort=nearest,limit=1] feet rotated ~ 0 run teleport @s ~ ~ ~ ~ ~
 
 execute at @s[tag=happy,tag=!explaining] as @e[tag=this_model,tag=toad_head,limit=1] run function luigis_mansion:animations/toad/happy
 execute at @s[tag=explaining] as @e[tag=this_model,tag=toad_head,limit=1] run function luigis_mansion:animations/toad/explaining

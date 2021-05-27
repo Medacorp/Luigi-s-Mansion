@@ -13,7 +13,7 @@ execute if entity @s[scores={BannanaDropTime=0}] run function luigis_mansion:ent
 scoreboard players set @s[scores={BannanaDropTime=0},tag=fleeing] BannanaDropTime 60
 scoreboard players remove @s[scores={BannanaDropTime=1..},tag=fleeing] BannanaDropTime 1
 
-execute if entity @a[gamemode=!spectator,distance=..0.7,limit=1] if entity @s[tag=!vanish,tag=!appear] if entity @s[tag=!dying,tag=!dead,tag=!removed_from_existence] run function luigis_mansion:entities/garbage_can_ghost/collide
+execute if entity @e[tag=same_room,tag=!spectator,distance=..0.7,limit=1] if entity @s[tag=!vanish,tag=!appear] if entity @s[tag=!dying,tag=!dead,tag=!removed_from_existence] run function luigis_mansion:entities/garbage_can_ghost/collide
 execute if entity @s[tag=!element_hurt,tag=!fleeing,tag=!collided,tag=!vanish,tag=!appear,tag=attack,scores={StunTime=0}] run function luigis_mansion:entities/garbage_can_ghost/attack
 execute if entity @s[tag=!element_hurt,tag=!fleeing,tag=collided,scores={StunTime=0}] if entity @s[tag=!dying,tag=!dead,tag=!removed_from_existence] run function luigis_mansion:entities/ghost/collided
 execute if entity @s[tag=vanish] run function luigis_mansion:entities/garbage_can_ghost/vanish

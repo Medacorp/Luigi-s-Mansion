@@ -6,5 +6,5 @@ tag @s add seen_room_name
 
 execute if data storage luigis_mansion:data current_state.current_data.rooms.nursery{seen:0b} run function luigis_mansion:room/hidden/nursery/set_seen
 
-execute unless data storage luigis_mansion:data current_state.current_data.rooms.nursery{cleared:1b} run playsound luigis_mansion:music.mansion.room.nursery ambient @s[scores={RoomNoise=0}] ~ ~ ~ 1000
-execute unless data storage luigis_mansion:data current_state.current_data.rooms.nursery{cleared:1b} run scoreboard players set @s[scores={RoomNoise=0}] RoomNoise 978
+execute unless data storage luigis_mansion:data current_state.current_data.rooms.nursery{cleared:1b} unless entity @s[scores={MusicType=7}] run playsound luigis_mansion:music.mansion.room.nursery ambient @s[scores={RoomNoise=0}] ~ ~ ~ 1000
+execute unless data storage luigis_mansion:data current_state.current_data.rooms.nursery{cleared:1b} unless entity @s[scores={MusicType=7}] run scoreboard players set @s[scores={RoomNoise=0}] RoomNoise 978

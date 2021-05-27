@@ -6,7 +6,7 @@ execute if entity @s[scores={Dialog=216}] run tellraw @a[tag=same_room] {"transl
 execute if entity @s[scores={Dialog=312}] run tellraw @a[tag=same_room] {"translate":"chat.type.text","with":[{"translate":"luigis_mansion:entity.king_boo","color":"green"},{"translate":"luigis_mansion:dialog.king_boo.3"}]}
 execute if entity @s[scores={Dialog=440}] run tellraw @a[tag=same_room] {"translate":"chat.type.text","with":[{"translate":"luigis_mansion:entity.king_boo","color":"green"},{"translate":"luigis_mansion:dialog.king_boo.4"}]}
 execute if entity @s[scores={Dialog=568}] run tellraw @a[tag=same_room] {"translate":"chat.type.text","with":[{"translate":"luigis_mansion:entity.king_boo","color":"green"},{"translate":"luigis_mansion:dialog.king_boo.5"}]}
-execute if entity @s[scores={Dialog=776..}] facing entity @p[tag=same_room] feet rotated ~ 0 run teleport @s ~ ~ ~ ~ ~
+execute if entity @s[scores={Dialog=776..1784}] facing entity @e[tag=same_room,tag=!spectator,sort=nearest,limit=1] feet rotated ~ 0 run teleport @s ~ ~ ~ ~ ~
 execute if entity @s[scores={Dialog=776}] run tellraw @a[tag=same_room] {"translate":"chat.type.text","with":[{"translate":"luigis_mansion:entity.king_boo","color":"green"},{"translate":"luigis_mansion:dialog.king_boo.6"}]}
 execute if entity @s[scores={Dialog=784}] if score #players Totals matches 1 run tellraw @a[tag=same_room] {"translate":"chat.type.text","with":[{"translate":"luigis_mansion:entity.king_boo","color":"green"},{"translate":"luigis_mansion:dialog.king_boo.7","with":[{"selector":"@p[gamemode=!spectator]"}]}]}
 execute if entity @s[scores={Dialog=784}] if score #players Totals matches 2..4 run tellraw @a[tag=same_room] {"translate":"chat.type.text","with":[{"translate":"luigis_mansion:entity.king_boo","color":"green"},{"translate":"luigis_mansion:dialog.king_boo.7.more"}]}
@@ -41,6 +41,7 @@ execute if entity @s[scores={Dialog=1766..1785}] run effect give @a[tag=same_roo
 tag @s[scores={Dialog=1755}] remove magic
 scoreboard players set @s[scores={Dialog=1756}] AnimationProg 0
 execute if entity @s[scores={Dialog=1785..1806}] facing 633 94 33 run teleport @s ^ ^ ^0.3 ~ ~
+execute if entity @s[scores={Dialog=1895..}] as @e[tag=same_room,tag=gameboy_horror_location] run function luigis_mansion:entities/gameboy_horror_location/bring_player_back
 execute if entity @s[scores={Dialog=1895..}] run scoreboard players set @a[tag=same_room] Invulnerable 10
 execute if entity @s[scores={Dialog=1895..}] positioned 635 94 33 as @a[tag=same_room] facing entity @s feet run function luigis_mansion:dialog/king_boo/suck
 execute if entity @s[scores={Dialog=1895..}] positioned 635 94 33 if entity @a[distance=..0.7,gamemode=!spectator,limit=1] run tag @s add dead

@@ -1,0 +1,1 @@
+execute if entity @s[tag=gameboy_horror_location] run function luigis_mansion:entities/gameboy_horror_location/tick

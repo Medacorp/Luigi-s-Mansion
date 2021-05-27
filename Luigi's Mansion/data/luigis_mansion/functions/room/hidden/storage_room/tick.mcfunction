@@ -16,7 +16,7 @@ execute if block 681 13 61 minecraft:air run setblock 679 13 61 minecraft:air
 fill 671 10 83 679 18 55 minecraft:barrier replace minecraft:air
 
 execute if block 689 13 75 minecraft:stone_button[powered=true] if block 682 11 67 minecraft:andesite_stairs unless entity @a[tag=moving_wall,limit=1] if data storage luigis_mansion:data current_state.current_data.rooms.torage_room{cleared:1b} positioned 689 13 75 run tag @p[gamemode=!spectator] add move_wall
-execute if block 681 13 61 minecraft:stone_button[powered=true] if block 685 10 61 minecraft:oak_slab unless entity @a[tag=release_boos,limit=1] unless entity @a[gamemode=!spectator,x=684.0,y=11,z=60.0,dx=2,dy=6,dz=2,limit=1] positioned 681 13 61 run tag @p[gamemode=!spectator] add release_boos
+execute if block 681 13 61 minecraft:stone_button[powered=true] if block 685 10 61 minecraft:oak_slab unless entity @a[tag=release_boos,limit=1] unless entity @a[tag=!spectator,scores={Room=18},x=684.0,y=11,z=60.0,dx=2,dy=6,dz=2,limit=1] positioned 681 13 61 run tag @p[gamemode=!spectator] add release_boos
 
 function luigis_mansion:room/hidden/storage_room/ghosts
 

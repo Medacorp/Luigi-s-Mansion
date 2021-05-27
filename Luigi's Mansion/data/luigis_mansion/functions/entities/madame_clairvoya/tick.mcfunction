@@ -17,7 +17,7 @@ scoreboard players set @s[scores={Sound=0},tag=fleeing] Sound 40
 
 tag @s[tag=!visible,tag=talk] remove talk
 execute if entity @s[tag=!visible] run function luigis_mansion:entities/madame_clairvoya/shine
-execute if entity @s[tag=visible,tag=!fleeing,tag=!hurt] run function #luigis_mansion:entities/madame_clairvoya/visible_tick
+execute if entity @s[tag=visible,tag=!fleeing,tag=!hurt,tag=!vanish,scores={StunTime=0}] run function #luigis_mansion:entities/madame_clairvoya/visible_tick
 tag @s[scores={VulnerableTime=1..},tag=talk] remove talk
 
 execute if entity @s[tag=vanish] run function luigis_mansion:entities/madame_clairvoya/vanish

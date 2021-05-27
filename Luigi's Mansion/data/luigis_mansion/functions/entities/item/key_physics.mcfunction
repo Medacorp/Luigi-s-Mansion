@@ -43,4 +43,4 @@ execute at @s unless block ~0.3 ~0.1 ~-0.3 #luigis_mansion:items_ignore if block
 execute at @s unless block ~-0.3 ~0.1 ~0.3 #luigis_mansion:items_ignore if block ~0.3 ~0.1 ~-0.3 #luigis_mansion:items_ignore run teleport @s ~0.3 ~ ~-0.3
 execute at @s unless block ~-0.3 ~0.1 ~-0.3 #luigis_mansion:items_ignore if block ~0.3 ~0.1 ~0.3 #luigis_mansion:items_ignore run teleport @s ~0.3 ~ ~0.3
 
-execute at @s positioned ~ ~0.1 ~ if entity @a[gamemode=!spectator,distance=..0.7] run tag @s add picked_up
+execute at @s positioned ~ ~0.1 ~ if entity @e[tag=same_room,tag=!spectator,distance=..0.7,limit=1] run tag @s add picked_up

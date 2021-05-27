@@ -10,7 +10,7 @@ execute if entity @s[scores={Dialog=360}] run data modify storage luigis_mansion
 execute if entity @s[scores={Dialog=360}] run advancement grant @a until luigis_mansion:lab/gallery
 execute if entity @s[scores={Dialog=360}] if entity @a[tag=looking_at_map,limit=1] run function luigis_mansion:items/gameboy_horror/map/display/lab/gallery
 tag @s[scores={Dialog=360}] remove talk
-execute unless entity @a[tag=same_room,distance=..7] run tag @s remove talk
+execute unless entity @e[tag=same_room,tag=!spectator,distance=..7,limit=1] run tag @s remove talk
 scoreboard players set @s[tag=!talk] Dialog 0
 tag @s[tag=!talk] remove nod
 execute if entity @s[tag=!talk] run scoreboard players set @e[tag=this_model,tag=e_gadd_head,limit=1] AnimationProg 0
