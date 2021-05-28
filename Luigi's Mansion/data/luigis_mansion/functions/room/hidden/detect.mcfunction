@@ -16,8 +16,8 @@ execute as @a[gamemode=spectator,tag=!already_ticked,distance=0..,scores={HomeX=
 execute if entity @a[gamemode=!spectator,x=676,y=20,z=-61,dx=12,dy=6,dz=21] run function luigis_mansion:room/hidden/wardrobe_room/tick
 execute if score #wardrobe_room Ticking matches 1 unless entity @a[gamemode=!spectator,x=676,y=20,z=-61,dx=12,dy=6,dz=21] unless entity @a[gamemode=!spectator,scores={Room=5}] run function luigis_mansion:room/hidden/wardrobe_room/not_ticking
 execute as @a[gamemode=spectator,tag=!already_ticked,distance=0..,scores={HomeX=673..679,HomeY=109..117,HomeZ=-28..-23}] at @s run function luigis_mansion:room/hidden/balcony_1/spectator_tick
-execute if entity @a[gamemode=!spectator,x=673,y=111,z=-41,dx=48,dy=6,dz=5] run function luigis_mansion:room/hidden/balcony_1/tick
-execute if score #balcony_1 Ticking matches 1 unless entity @a[gamemode=!spectator,x=673,y=111,z=-41,dx=48,dy=6,dz=5] unless entity @a[gamemode=!spectator,scores={Room=6}] run function luigis_mansion:room/hidden/balcony_1/not_ticking
+execute if entity @a[gamemode=!spectator,x=673,y=111,z=-41,dx=48,dy=6,dz=18] run function luigis_mansion:room/hidden/balcony_1/tick
+execute if score #balcony_1 Ticking matches 1 unless entity @a[gamemode=!spectator,x=673,y=111,z=-41,dx=48,dy=6,dz=18] unless entity @a[gamemode=!spectator,scores={Room=6}] run function luigis_mansion:room/hidden/balcony_1/not_ticking
 execute as @a[gamemode=spectator,tag=!already_ticked,distance=0..,scores={HomeX=722..730,HomeY=18..26,HomeZ=-65..-27}] at @s run function luigis_mansion:room/hidden/hallway_2/spectator_tick
 execute if entity @a[gamemode=!spectator,x=722,y=20,z=-65,dx=8,dy=6,dz=38] run function luigis_mansion:room/hidden/hallway_2/tick
 execute if score #hallway_2 Ticking matches 1 unless entity @a[gamemode=!spectator,x=722,y=20,z=-65,dx=8,dy=6,dz=38] unless entity @a[gamemode=!spectator,scores={Room=7}] run function luigis_mansion:room/hidden/hallway_2/not_ticking
