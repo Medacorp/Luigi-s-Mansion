@@ -64,6 +64,7 @@ scoreboard objectives add Offline minecraft.custom:minecraft.leave_game
 scoreboard objectives add PunchingBag dummy
 scoreboard objectives add MansionChoice trigger
 scoreboard objectives add MaxHealth dummy
+scoreboard objectives add MaxHealthTime dummy
 scoreboard objectives add MelodyChoice trigger
 scoreboard objectives add MirrorX dummy
 scoreboard objectives add MirrorZ dummy

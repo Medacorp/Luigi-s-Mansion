@@ -10,18 +10,21 @@ execute if entity @s[scores={Sound=0},tag=fleeing] run playsound luigis_mansion:
 execute if entity @s[scores={Sound=0},tag=!vanish,tag=!fleeing,tag=!attack,tag=!laugh,tag=!complain,tag=!appear] run playsound luigis_mansion:entity.blue_twirler.ambient hostile @a[tag=same_room] ~ ~ ~ 1
 scoreboard players set @s[scores={Sound=0}] Sound 40
 
-execute if entity @a[gamemode=!spectator,distance=..0.7,limit=1] if entity @s[tag=!vanish,tag=!appear] if entity @s[tag=!dying,tag=!dead,tag=!removed_from_existence] run function luigis_mansion:entities/blue_twirler/collide
-execute if entity @s[tag=!hurt,tag=!element_hurt,tag=!fleeing,tag=!attack,tag=!collided,tag=!laugh,tag=!complain,tag=!vanish,tag=!appear,scores={StunTime=0}] if entity @e[tag=same_room,tag=!spectator,distance=..1.5,limit=1] run tag @s add attack
-execute if entity @s[tag=!element_hurt,tag=!fleeing,tag=!collided,tag=attack,scores={StunTime=0}] run function luigis_mansion:entities/blue_twirler/attack
+execute if entity @a[gamemode=!spectator,distance=..0.7,limit=1] if entity @s[tag=!vanish,tag=!appear,tag=!dying,tag=!dead,tag=!removed_from_existence,tag=!basher] unless entity @s[tag=attack,tag=body_slam] run function luigis_mansion:entities/blue_twirler/collide
+execute if entity @s[tag=!punch,tag=!body_slam,tag=!basher] run function luigis_mansion:entities/blue_twirler/select_attack/earthquake
+execute if entity @s[tag=punch] run function luigis_mansion:entities/blue_twirler/select_attack/punch
+execute if entity @s[tag=body_slam] run function luigis_mansion:entities/blue_twirler/select_attack/body_slam
+execute if entity @s[tag=basher] run function luigis_mansion:entities/blue_twirler/select_attack/basher
 
-execute at @s[tag=!hurt,tag=!element_hurt,tag=!fleeing,tag=!attack,tag=!collided,tag=!vanish,scores={StunTime=0}] facing entity @e[tag=same_room,tag=!spectator,sort=nearest,limit=1] feet rotated ~ 0 run teleport @s ~ ~ ~ ~ ~
+execute at @s[tag=!hurt,tag=!element_hurt,tag=!fleeing,tag=!attack,tag=!collided,tag=!vanish,scores={StunTime=0}] unless entity @s[tag=appear,tag=beta_appear] facing entity @e[tag=same_room,tag=!spectator,sort=nearest,limit=1] feet rotated ~ 0 run teleport @s ~ ~ ~ ~ ~
 execute at @s[tag=!hurt,tag=!element_hurt,tag=!fleeing,tag=!attack,tag=!collided,tag=!vanish,tag=!laugh,tag=!complain,scores={StunTime=0,SpawnTime=20..}] run function luigis_mansion:entities/ghost/move
 execute if entity @s[tag=!hurt,tag=!element_hurt,tag=!fleeing,tag=!attack,tag=!collided,tag=laugh,scores={StunTime=0}] run function luigis_mansion:entities/blue_twirler/laugh
 execute if entity @s[tag=!hurt,tag=!element_hurt,tag=!fleeing,tag=!attack,tag=!collided,tag=complain,scores={StunTime=0}] run function luigis_mansion:entities/blue_twirler/complain
 execute if entity @s[tag=!element_hurt,tag=!fleeing,tag=collided,scores={StunTime=0}] if entity @s[tag=!dying,tag=!dead,tag=!removed_from_existence] run function luigis_mansion:entities/ghost/collided
 tag @s[tag=!hurt,tag=!element_hurt,tag=!fleeing,tag=!attack,tag=!collided,tag=!laugh,tag=!complain,scores={StunTime=0,SpawnTime=180..}] add vanish
 execute if entity @s[tag=vanish] run function luigis_mansion:entities/blue_twirler/vanish
-execute if entity @s[tag=appear] run function luigis_mansion:entities/blue_twirler/appear
+execute if entity @s[tag=appear,tag=!beta_appear] run function luigis_mansion:entities/blue_twirler/appear
+execute if entity @s[tag=appear,tag=beta_appear] run function luigis_mansion:entities/blue_twirler/beta_appear
 execute at @s[tag=!hurt,tag=!element_hurt,tag=!fleeing,tag=!attack,tag=!collided,tag=!vanish,tag=!laugh,tag=!complain,tag=!appear,scores={StunTime=0}] run function luigis_mansion:animations/twirler/haunt
 execute at @s[tag=fleeing] run function luigis_mansion:animations/twirler/flee
 execute at @s[tag=!fleeing,tag=hurt] run function luigis_mansion:animations/twirler/hurt

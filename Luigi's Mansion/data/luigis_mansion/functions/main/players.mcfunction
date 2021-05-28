@@ -47,7 +47,7 @@ execute unless entity @s[scores={SneakTime=0..}] run scoreboard players set @s S
 execute unless entity @s[scores={MaxHealth=100}] run scoreboard players add @s MaxHealthTime 1
 execute if entity @s[scores={MaxHealthTime=1}] if score @s MaxHealth < @s Health run function luigis_mansion:entities/player/reduce_health_to_max
 execute unless entity @s[scores={MaxHealth=100}] unless entity @s[scores={Walk=0..2,Run=0..2,Sneak=0}] run scoreboard players add @s MaxHealthTime 1
-scoreboard players add @s[scores={MaxHealthTime=200}] MaxHealth 100
+scoreboard players set @s[scores={MaxHealthTime=200}] MaxHealth 100
 scoreboard players reset @s[scores={MaxHealthTime=200}] MaxHealthTime
 scoreboard players set @s Sneak 0
 scoreboard players set @s Sneaking 0

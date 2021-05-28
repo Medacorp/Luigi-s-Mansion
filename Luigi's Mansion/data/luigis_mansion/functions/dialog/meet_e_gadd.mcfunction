@@ -159,15 +159,15 @@ execute if entity @s[scores={Dialog=1187}] run tag @e[tag=e_gadd,tag=dialog,limi
 execute if entity @s[scores={Dialog=1187}] run scoreboard players set @e[tag=e_gadd_head,tag=dialog,limit=1] AnimationProg 0
 execute if entity @s[scores={Dialog=1187}] positioned 718 20 29 run function luigis_mansion:spawn_entities/ghost/forced_spawn/gold_ghost
 execute if entity @s[scores={Dialog=1187}] positioned 718 20 29 run tag @e[distance=..0.1,tag=gold_ghost] add dialog
-execute if entity @s[scores={Dialog=1187}] positioned 718 20 29 run tag @e[distance=..0.1,tag=gold_ghost] add opening_appear
+execute if entity @s[scores={Dialog=1187}] positioned 718 20 29 run tag @e[distance=..0.1,tag=gold_ghost] add beta_appear
 execute if entity @s[scores={Dialog=1187}] positioned 718 20 29 as @e[distance=..0.1,tag=gold_ghost,tag=dialog] at @s facing entity @e[tag=e_gadd,tag=dialog,limit=1] feet rotated ~ 0 run teleport @s ~ ~ ~ ~ ~
 execute if entity @s[scores={Dialog=1199}] positioned 718 20 26 run function luigis_mansion:spawn_entities/ghost/forced_spawn/gold_ghost
 execute if entity @s[scores={Dialog=1199}] positioned 718 20 26 run tag @e[distance=..0.1,tag=gold_ghost] add dialog
-execute if entity @s[scores={Dialog=1199}] positioned 718 20 26 run tag @e[distance=..0.1,tag=gold_ghost] add opening_appear
+execute if entity @s[scores={Dialog=1199}] positioned 718 20 26 run tag @e[distance=..0.1,tag=gold_ghost] add beta_appear
 execute if entity @s[scores={Dialog=1199}] positioned 718 20 26 as @e[distance=..0.1,tag=gold_ghost,tag=dialog] at @s facing entity @e[tag=e_gadd,tag=dialog,limit=1] feet rotated ~ 0 run teleport @s ~ ~ ~ ~ ~
 execute if entity @s[scores={Dialog=1212}] positioned 720 20 27 run function luigis_mansion:spawn_entities/ghost/forced_spawn/gold_ghost
 execute if entity @s[scores={Dialog=1212}] positioned 720 20 27 run tag @e[distance=..0.1,tag=gold_ghost] add dialog
-execute if entity @s[scores={Dialog=1212}] positioned 720 20 27 run tag @e[distance=..0.1,tag=gold_ghost] add opening_appear
+execute if entity @s[scores={Dialog=1212}] positioned 720 20 27 run tag @e[distance=..0.1,tag=gold_ghost] add beta_appear
 execute if entity @s[scores={Dialog=1212}] positioned 720 20 27 as @e[distance=..0.1,tag=gold_ghost,tag=dialog] at @s facing entity @e[tag=e_gadd,tag=dialog,limit=1] feet rotated ~ 0 run teleport @s ~ ~ ~ ~ ~
 execute if entity @s[scores={Dialog=1262}] run tag @e[tag=e_gadd,tag=dialog,limit=1] add shake
 execute if entity @s[scores={Dialog=1262}] run scoreboard players set @e[tag=e_gadd_head,tag=dialog,limit=1] AnimationProg 0
