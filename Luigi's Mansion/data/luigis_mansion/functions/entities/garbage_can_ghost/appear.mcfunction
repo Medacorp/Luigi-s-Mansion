@@ -7,6 +7,7 @@ teleport @s[scores={ActionTime=12..13}] ~ ~0.4 ~
 teleport @s[scores={ActionTime=14..15}] ~ ~-0.4 ~
 execute if entity @s[scores={ActionTime=1}] run playsound luigis_mansion:entity.garbage_can_ghost.spawn hostile @a[tag=same_room] ~ ~ ~ 1
 execute if entity @s[scores={ActionTime=1}] run function luigis_mansion:blocks/dust
+execute if entity @s[scores={ActionTime=1}] as @e[tag=same_room,tag=gameboy_horror_location,distance=..5] run function luigis_mansion:entities/gameboy_horror_location/scare_player
 execute if entity @s[scores={ActionTime=1}] as @a[gamemode=!spectator,distance=..5] at @s run function luigis_mansion:entities/player/scare
 scoreboard players set @s[scores={ActionTime=1}] AnimationProg 0
 execute at @s run function luigis_mansion:animations/garbage_can_ghost/appear

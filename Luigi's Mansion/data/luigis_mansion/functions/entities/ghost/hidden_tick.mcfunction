@@ -1,10 +1,10 @@
 execute unless entity @s[scores={SpawnTime=0..}] run scoreboard players set @s SpawnTime 200
 scoreboard players remove @s[scores={SpawnTime=1..}] SpawnTime 1
 tag @s[scores={SpawnTime=100}] add can_spawn
-execute unless entity @s[scores={SpawnTime=1..},tag=!new_ghost,tag=!no_hidden_move] facing entity @p[tag=same_room,gamemode=!spectator] feet rotated ~ 0 run teleport @s ~ ~ ~ ~ ~
+execute unless entity @s[scores={SpawnTime=1..},tag=!new_ghost,tag=!no_hidden_move] facing entity @p[tag=same_room,tag=!spectator,sort=nearest,limit=1] feet rotated ~ 0 run teleport @s ~ ~ ~ ~ ~
 scoreboard players set @s ActionTime 0
 execute if entity @s[scores={Time=40..}] run function luigis_mansion:entities/ghost/hidden/turn
-execute if block ~ ~ ~ #luigis_mansion:all_ignore if entity @a[distance=..7,gamemode=!spectator,limit=1] unless entity @s[tag=!burning_heart,tag=!fozen_heart,tag=!watery_heart] run tag @s[tag=can_spawn] add try_spawn
+execute if block ~ ~ ~ #luigis_mansion:all_ignore if entity @e[tag=same_room,distance=..7,tag=!spectator,limit=1] unless entity @s[tag=!burning_heart,tag=!fozen_heart,tag=!watery_heart] run tag @s[tag=can_spawn] add try_spawn
 tag @s add me
 execute if entity @e[tag=!me,tag=!hidden,distance=..0.7] if block ~ ~ ~ #luigis_mansion:all_ignore run tag @s remove try_spawn
 execute if entity @e[tag=!me,tag=!hidden,distance=..0.7] unless entity @e[type=minecraft:item_frame,distance=..0.7] run tag @s remove try_spawn
