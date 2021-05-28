@@ -3,7 +3,6 @@
 		"luigis_mansion:items/flashlight/create_light",
 		"luigis_mansion:items/flashlight/stun_ghost",
 		"luigis_mansion:items/flashlight/stun_portrait_ghost",
-		"luigis_mansion:items/flashlight/vanish_ghost",
-		"luigis_mansion:items/flashlight/message"
+		"luigis_mansion:items/flashlight/vanish_ghost"
 	]
 }

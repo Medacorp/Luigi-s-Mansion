@@ -1,4 +1,5 @@
 execute if entity @s[scores={GBHCall=1}] run tellraw @a {"translate":"chat.type.text","with":[{"translate":"luigis_mansion:item.gameboy_horror","color":"green"},{"translate":"luigis_mansion:message.gameboy_horror.1"}]}
+execute if entity @s[scores={GBHCall=1}] run advancement grant @a only luigis_mansion:portrait_ghosts/portrait_ghosts
 execute if entity @s[scores={GBHCall=2}] if score #players Totals matches 1 run tellraw @a {"translate":"chat.type.text","with":[{"translate":"luigis_mansion:item.gameboy_horror","color":"green"},{"translate":"luigis_mansion:message.gameboy_horror.2"}]}
 execute if entity @s[scores={GBHCall=2}] if score #players Totals matches 2.. run tellraw @a {"translate":"chat.type.text","with":[{"translate":"luigis_mansion:item.gameboy_horror","color":"green"},{"translate":"luigis_mansion:message.gameboy_horror.2.more"}]}
 execute if entity @s[scores={GBHCall=3}] if score #players Totals matches 1 run tellraw @a {"translate":"chat.type.text","with":[{"translate":"luigis_mansion:item.gameboy_horror","color":"green"},{"translate":"luigis_mansion:message.gameboy_horror.3"}]}

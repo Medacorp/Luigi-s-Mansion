@@ -183,5 +183,5 @@ execute if entity @s[scores={Dialog=1388}] as @a run function luigis_mansion:ent
 tag @s[scores={Dialog=1388}] remove meet_e_gadd
 scoreboard players reset @s[scores={Dialog=1388}] Dialog
 
-tag @e[tag=gold_ghost,tag=hidden,tag=dialog,limit=1] add dead
+tag @e[tag=gold_ghost,tag=hidden,tag=!spawn,tag=dialog,limit=1] add dead
 tag @e[tag=dialog] remove stunable

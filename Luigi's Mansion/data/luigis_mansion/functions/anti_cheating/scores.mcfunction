@@ -20,7 +20,6 @@ scoreboard objectives add EGaddGPRChoice trigger
 scoreboard objectives add EGaddLabChoice trigger
 scoreboard objectives add EGaddTrainChoice trigger
 scoreboard objectives add FakeDoors dummy
-scoreboard objectives add FlashlightTime dummy
 scoreboard objectives add FlashlightType trigger
 scoreboard objectives add FlyTime dummy
 scoreboard objectives add Food food

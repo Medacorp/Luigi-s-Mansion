@@ -13,7 +13,7 @@ function #luigis_mansion:room/normal/hallway_2/interactions/room
 
 function luigis_mansion:room/normal/hallway_2/ghosts
 
-function luigis_mansion:room/normal/door/foyer_hallway_2
+function luigis_mansion:room/normal/door/hallway_1_hallway_2
 function luigis_mansion:room/normal/door/hallway_2_study
 function luigis_mansion:room/normal/door/hallway_2_master_bedroom
 function luigis_mansion:room/normal/door/hallway_2_nursery

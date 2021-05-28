@@ -4,7 +4,7 @@ execute unless entity @s[scores={Room=0}] store result score @s HomeZ run data g
 execute unless entity @s[scores={Room=0}] store result score @s HomeRotX run data get entity @s Rotation[0] 1
 execute unless entity @s[scores={Room=0}] store result score @s HomeRotY run data get entity @s Rotation[1] 1
 execute unless entity @s[scores={Room=0}] run tag @s add opening_map
-execute unless entity @a[tag=looking_at_map,limit=1] unless entity @s[scores={Room=0}] rotated as @s run function luigis_mansion:spawn_entities/gameboy_horror_location
+execute unless entity @s[scores={Room=0}] rotated as @s run function luigis_mansion:spawn_entities/gameboy_horror_location
 execute unless entity @a[tag=looking_at_map,limit=1] unless entity @s[scores={Room=0}] rotated as @s run function luigis_mansion:spawn_entities/gameboy_horror_marker
 execute unless entity @a[tag=looking_at_map,limit=1] unless entity @s[scores={Room=0}] rotated as @s as @e[distance=..1,tag=gameboy_horror_marker,limit=1] positioned as @s run function luigis_mansion:entities/gameboy_horror_marker/tick
 execute unless entity @s[scores={Room=0}] run function #luigis_mansion:items/gameboy_horror/map/warp

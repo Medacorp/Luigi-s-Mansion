@@ -2,7 +2,6 @@ execute unless entity @a[scores={LastRoom=10},limit=1] run function #luigis_mans
 execute as @e[scores={Room=10},tag=ghost,tag=!portrait_ghost,tag=!boo] run function luigis_mansion:entities/ghost/non_ticking_room
 scoreboard players reset #nursery Vacuumables
 
-execute as @e[scores={Room=10},tag=haunted_teddy_bear] run function luigis_mansion:entities/haunted_object/collision
 tag @e[scores={Room=10},tag=haunted_teddy_bear] remove enabled
 execute as @e[scores={Room=10},tag=chauncey] run function luigis_mansion:entities/ghost/go_to_home
 execute as @e[scores={Room=10},tag=chauncey] run function luigis_mansion:entities/chauncey/drop_rambler
