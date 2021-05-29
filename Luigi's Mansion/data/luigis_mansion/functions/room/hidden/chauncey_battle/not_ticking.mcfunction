@@ -1,0 +1,1 @@
+function #luigis_mansion:room/hidden/chauncey_room/reset

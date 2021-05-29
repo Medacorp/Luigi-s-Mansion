@@ -9,7 +9,6 @@ execute if entity @s[tag=dead,tag=!warp,tag=!secret_altar] run particle minecraf
 execute if entity @s[tag=dead] run teleport @s ~ -100 ~
 execute if entity @s[tag=dead] run tag @e[tag=bowser] add dead
 execute if entity @s[tag=dead] run tag @e[tag=bowser_body] add dead
-execute if entity @s[tag=dead,tag=!warp,tag=!secret_altar] as @p run function luigis_mansion:items/red_diamond
 execute if entity @s[tag=dead,tag=!warp,tag=!secret_altar] as @a run function luigis_mansion:entities/ghost/boss_damage
 execute if entity @s[tag=dead,tag=!warp,tag=!secret_altar] if score #temp Damage matches ..9 run data modify storage luigis_mansion:data current_state.current_data.portrait_ghosts.king_boo.rank set value 2b
 execute if entity @s[tag=dead,tag=!warp,tag=!secret_altar] if score #temp Damage matches 10..49 run data modify storage luigis_mansion:data current_state.current_data.portrait_ghosts.king_boo.rank set value 1b

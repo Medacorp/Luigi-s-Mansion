@@ -1,24 +1,24 @@
 scoreboard players add @s Dialog 1
-execute if entity @s[scores={Dialog=120}] run teleport @s ~ ~ ~ -180 0
+execute if entity @s[scores={Dialog=120}] run teleport @s ~ ~ ~ -90 0
 execute if entity @s[scores={Dialog=120}] run playsound luigis_mansion:entity.chauncey.cry hostile @a[tag=same_room] ~ ~ ~ 3
 execute if entity @s[scores={Dialog=140}] run playsound luigis_mansion:entity.chauncey.cry hostile @a[tag=same_room] ~ ~ ~ 3
-execute if entity @s[scores={Dialog=120}] positioned 723 45 -19938 run function luigis_mansion:spawn_entities/rocking_horse/intro
-execute if entity @s[scores={Dialog=120}] positioned 723 45 -19932 run function luigis_mansion:spawn_entities/rocking_horse/intro
-execute if entity @s[scores={Dialog=120}] positioned 723 45 -19926 run function luigis_mansion:spawn_entities/rocking_horse/intro
-execute if entity @s[scores={Dialog=120}] positioned 716 45 -19938 run function luigis_mansion:spawn_entities/rocking_horse/intro
-execute if entity @s[scores={Dialog=120}] positioned 716 45 -19932 run function luigis_mansion:spawn_entities/rocking_horse/intro
-execute if entity @s[scores={Dialog=120}] positioned 716 45 -19926 run function luigis_mansion:spawn_entities/rocking_horse/intro
-execute if entity @s[scores={Dialog=120}] positioned 723 43 -19919 run function luigis_mansion:spawn_entities/rocking_horse/intro
-execute if entity @s[scores={Dialog=120}] positioned 720.0 48 -19919 run function luigis_mansion:spawn_entities/rocking_horse/intro
-execute if entity @s[scores={Dialog=120}] positioned 716 43 -19919 run function luigis_mansion:spawn_entities/rocking_horse/intro
-execute if entity @s[scores={Dialog=120}] positioned 725 48 -19917 run function luigis_mansion:spawn_entities/rocking_horse/intro
-execute if entity @s[scores={Dialog=120}] positioned 714 48 -19917 run function luigis_mansion:spawn_entities/rocking_horse/intro
-execute if entity @s[scores={Dialog=120}] positioned 723 43 -19911 run function luigis_mansion:spawn_entities/rocking_horse/intro
-execute if entity @s[scores={Dialog=120}] positioned 718 43 -19911 run function luigis_mansion:spawn_entities/rocking_horse/intro
-execute if entity @s[scores={Dialog=120}] positioned 723 46 -19906 run function luigis_mansion:spawn_entities/rocking_horse/intro
-execute if entity @s[scores={Dialog=120}] positioned 718 46 -19906 run function luigis_mansion:spawn_entities/rocking_horse/intro
-execute if entity @s[scores={Dialog=120}] positioned 721 44 -19910 run function luigis_mansion:spawn_entities/rocking_horse/intro
-execute if entity @s[scores={Dialog=120}] positioned 716 44 -19910 run function luigis_mansion:spawn_entities/rocking_horse/intro
+execute if entity @s[scores={Dialog=120}] positioned ~-2.5 ~11 ~3.5 run function luigis_mansion:spawn_entities/rocking_horse/intro
+execute if entity @s[scores={Dialog=120}] positioned ~-8.5 ~11 ~3.5 run function luigis_mansion:spawn_entities/rocking_horse/intro
+execute if entity @s[scores={Dialog=120}] positioned ~-14.5 ~11 ~3.5 run function luigis_mansion:spawn_entities/rocking_horse/intro
+execute if entity @s[scores={Dialog=120}] positioned ~-2.5 ~11 ~-3.5 run function luigis_mansion:spawn_entities/rocking_horse/intro
+execute if entity @s[scores={Dialog=120}] positioned ~-8.5 ~11 ~-3.5 run function luigis_mansion:spawn_entities/rocking_horse/intro
+execute if entity @s[scores={Dialog=120}] positioned ~-14.5 ~11 ~-3.5 run function luigis_mansion:spawn_entities/rocking_horse/intro
+execute if entity @s[scores={Dialog=120}] positioned ~-21.5 ~9 ~3.5 run function luigis_mansion:spawn_entities/rocking_horse/intro
+execute if entity @s[scores={Dialog=120}] positioned ~-21.5 ~14 ~ run function luigis_mansion:spawn_entities/rocking_horse/intro
+execute if entity @s[scores={Dialog=120}] positioned ~-21.5 ~9 ~-3.5 run function luigis_mansion:spawn_entities/rocking_horse/intro
+execute if entity @s[scores={Dialog=120}] positioned ~-23.5 ~14 ~5.5 run function luigis_mansion:spawn_entities/rocking_horse/intro
+execute if entity @s[scores={Dialog=120}] positioned ~-23.5 ~14 ~-5.5 run function luigis_mansion:spawn_entities/rocking_horse/intro
+execute if entity @s[scores={Dialog=120}] positioned ~-29.5 ~9 ~3.5 run function luigis_mansion:spawn_entities/rocking_horse/intro
+execute if entity @s[scores={Dialog=120}] positioned ~-29.5 ~9 ~-1.5 run function luigis_mansion:spawn_entities/rocking_horse/intro
+execute if entity @s[scores={Dialog=120}] positioned ~-34.5 ~12 ~3.5 run function luigis_mansion:spawn_entities/rocking_horse/intro
+execute if entity @s[scores={Dialog=120}] positioned ~-34.5 ~12 ~-1.5 run function luigis_mansion:spawn_entities/rocking_horse/intro
+execute if entity @s[scores={Dialog=120}] positioned ~-30.5 ~10 ~1.5 run function luigis_mansion:spawn_entities/rocking_horse/intro
+execute if entity @s[scores={Dialog=120}] positioned ~-30.5 ~10 ~-3.5 run function luigis_mansion:spawn_entities/rocking_horse/intro
 execute if entity @s[scores={Dialog=330..420}] run teleport @s ~ ~0.1 ~
 scoreboard players set @s[scores={Dialog=400}] AnimationProg 0
 tag @s[scores={Dialog=400}] add look_down

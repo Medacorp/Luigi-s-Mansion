@@ -226,6 +226,9 @@ execute as @a[gamemode=spectator,tag=!already_ticked,distance=0..,scores={HomeX=
 execute if entity @a[gamemode=!spectator,x=635,y=93,z=25,dx=18,dy=6,dz=16] run function luigis_mansion:room/hidden/secret_altar/tick
 execute unless entity @a[gamemode=!spectator,x=635,y=93,z=25,dx=18,dy=6,dz=16] if entity @a[gamemode=!spectator,x=646,y=93,z=15,dx=4,dy=8,dz=10] run function luigis_mansion:room/hidden/secret_altar/tick
 execute if score #secret_altar Ticking matches 1 unless entity @a[gamemode=!spectator,x=635,y=93,z=25,dx=18,dy=6,dz=16] unless entity @a[gamemode=!spectator,x=646,y=93,z=15,dx=4,dy=8,dz=10] unless entity @a[gamemode=!spectator,scores={Room=72}] run function luigis_mansion:room/hidden/secret_altar/not_ticking
+execute as @a[gamemode=spectator,tag=!already_ticked,distance=0..,scores={HomeX=782..823,HomeY=6..39,HomeZ=-69..-28}] at @s run function luigis_mansion:room/hidden/chauncey_battle/spectator_tick
+execute if entity @a[gamemode=!spectator,x=782,y=6,z=-69,dx=41,dy=33,dz=41] run function luigis_mansion:room/hidden/chauncey_battle/tick
+execute if score #chauncey_battle Ticking matches 1 unless entity @a[gamemode=!spectator,x=782,y=6,z=-69,dx=41,dy=33,dz=41] unless entity @a[gamemode=!spectator,scores={Room=73}] run function luigis_mansion:room/hidden/chauncey_battle/not_ticking
 
 execute if score #clockwork_room_elevator Searched matches 1 run function luigis_mansion:room/hidden/clockwork_room/raise_elevator
 execute if score #clockwork_room_elevator Searched matches -1 run function luigis_mansion:room/hidden/clockwork_room/lower_elevator

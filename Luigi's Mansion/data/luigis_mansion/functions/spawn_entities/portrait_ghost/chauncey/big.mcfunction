@@ -13,7 +13,6 @@ execute as @e[tag=this_entity,limit=1] store result score @s PrevHealth store re
 execute as @e[tag=this_entity,limit=1] store result score @s MaxHealth run data get storage luigis_mansion:data current_state.current_data.portrait_ghosts.chauncey.max_health
 scoreboard players set @e[tag=chauncey,tag=this_entity,limit=1] PullStrength 7
 scoreboard players set @e[tag=chauncey,tag=this_entity,limit=1] Move 5
-scoreboard players set @e[tag=chauncey,tag=this_entity,limit=1] Room 73
 scoreboard players set @e[tag=chauncey,tag=this_entity,limit=1] Sound 0
 scoreboard players set @e[tag=chauncey,tag=this_entity,limit=1] StunTime 0
 scoreboard players set @e[tag=chauncey,tag=this_entity,limit=1] VulnerableTime 0

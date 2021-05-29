@@ -12,9 +12,6 @@ execute if entity @s[tag=dead] store result storage luigis_mansion:data current_
 execute if entity @s[tag=dead] run advancement grant @a only luigis_mansion:portrait_ghosts/chauncey
 execute if entity @s[tag=vanish] store result storage luigis_mansion:data current_state.current_data.portrait_ghosts.chauncey.health int 1 run scoreboard players operation @s LastHealth = @s Health
 execute if entity @s[tag=dead] run scoreboard players reset #temp Damage
-execute if entity @s[tag=dead] run data modify storage luigis_mansion:data current_state.current_data.rooms.nursery merge value {cleared:1b}
-execute if entity @s[tag=dead] run scoreboard players reset #nursery Ticking
-execute if entity @s[tag=dead] as @a run function luigis_mansion:entities/chauncey/return
 
 execute if entity @s[scores={HurtTime=1},tag=hurt] run playsound luigis_mansion:entity.chauncey.hurt hostile @a[tag=same_room] ~ ~ ~ 1
 scoreboard players set @s[scores={HurtTime=1},tag=hurt] Sound 40

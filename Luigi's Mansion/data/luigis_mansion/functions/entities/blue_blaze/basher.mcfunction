@@ -4,10 +4,10 @@ execute if entity @s[scores={ActionTime=1..40}] run function luigis_mansion:anim
 scoreboard players set @s[scores={ActionTime=41}] AnimationProg 0
 execute if entity @s[scores={ActionTime=41..60}] run function luigis_mansion:animations/twirler/appear
 
-data modify entity @s[scores={ActionTime=1}] ArmorItems[3].id set value "minecraft:stone_button"
-data modify entity @s[scores={ActionTime=1}] HandItems[0].id set value "minecraft:stone_button"
-data modify entity @s[scores={ActionTime=1}] HandItems[1].id set value "minecraft:stone_button"
-data modify entity @s[scores={ActionTime=1}] CustomNameVisible set value 0b
+data modify entity @s[scores={ActionTime=1..40}] ArmorItems[3].id set value "minecraft:stone_button"
+data modify entity @s[scores={ActionTime=1..40}] HandItems[0].id set value "minecraft:stone_button"
+data modify entity @s[scores={ActionTime=1..40}] HandItems[1].id set value "minecraft:stone_button"
+data modify entity @s[scores={ActionTime=1..40}] CustomNameVisible set value 0b
 execute at @s[scores={ActionTime=1..40}] run particle minecraft:dust 0.7 1 1 1 ~-0.2 ~0.2 ~-0.2 0.4 0.4 0.4 0 50 force
 execute if entity @s[scores={ActionTime=41}] run playsound luigis_mansion:entity.blue_blaze.spawn hostile @a[tag=same_room] ~ ~ ~ 1
 data modify entity @s[scores={ActionTime=41}] ArmorItems[3].id set value "minecraft:diamond_pickaxe"

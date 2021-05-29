@@ -1,0 +1,12 @@
+{
+	"values": [
+	    "luigis_mansion_3ds_remake:room/hidden/kitchen/load/set_loaded",
+        "luigis_mansion_3ds_remake:room/hidden/kitchen/load/lights",
+        "luigis_mansion_3ds_remake:room/hidden/kitchen/load/haunted_objects",
+        "luigis_mansion_3ds_remake:room/hidden/kitchen/load/fire",
+        "luigis_mansion_3ds_remake:room/hidden/kitchen/load/closet",
+        "luigis_mansion_3ds_remake:room/hidden/kitchen/load/ice",
+        "luigis_mansion_3ds_remake:room/hidden/kitchen/load/vacuumable",
+        "luigis_mansion_3ds_remake:room/hidden/kitchen/load/water"
+	]
+}
