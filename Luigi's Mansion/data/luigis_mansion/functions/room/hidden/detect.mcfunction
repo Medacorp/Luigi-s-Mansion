@@ -229,6 +229,15 @@ execute if score #secret_altar Ticking matches 1 unless entity @a[gamemode=!spec
 execute as @a[gamemode=spectator,tag=!already_ticked,distance=0..,scores={HomeX=782..823,HomeY=6..39,HomeZ=-69..-28}] at @s run function luigis_mansion:room/hidden/chauncey_battle/spectator_tick
 execute if entity @a[gamemode=!spectator,x=782,y=6,z=-69,dx=41,dy=33,dz=41] run function luigis_mansion:room/hidden/chauncey_battle/tick
 execute if score #chauncey_battle Ticking matches 1 unless entity @a[gamemode=!spectator,x=782,y=6,z=-69,dx=41,dy=33,dz=41] unless entity @a[gamemode=!spectator,scores={Room=73}] run function luigis_mansion:room/hidden/chauncey_battle/not_ticking
+execute as @a[gamemode=spectator,tag=!already_ticked,distance=0..,scores={HomeX=777..828,HomeY=5..32,HomeZ=-14..41}] at @s run function luigis_mansion:room/hidden/bogmire_battle/spectator_tick
+execute if entity @a[gamemode=!spectator,x=777,y=5,z=-14,dx=51,dy=37,dz=55] run function luigis_mansion:room/hidden/bogmire_battle/tick
+execute if score #bogmire_battle Ticking matches 1 unless entity @a[gamemode=!spectator,x=777,y=5,z=-14,dx=51,dy=37,dz=55] unless entity @a[gamemode=!spectator,scores={Room=74}] run function luigis_mansion:room/hidden/bogmire_battle/not_ticking
+execute as @a[gamemode=spectator,tag=!already_ticked,distance=0..,scores={HomeX=562..610,HomeY=15..91,HomeZ=-9..78}] at @s run function luigis_mansion:room/hidden/boolossus_battle/spectator_tick
+execute if entity @a[gamemode=!spectator,x=562,y=15,z=-9,dx=48,dy=76,dz=87] run function luigis_mansion:room/hidden/boolossus_battle/tick
+execute if score #boolossus_battle Ticking matches 1 unless entity @a[gamemode=!spectator,x=562,y=15,z=-9,dx=48,dy=76,dz=87] unless entity @a[gamemode=!spectator,scores={Room=75}] run function luigis_mansion:room/hidden/boolossus_battle/not_ticking
+execute as @a[gamemode=spectator,tag=!already_ticked,distance=0..,scores={HomeX=465..514,HomeY=25..81,HomeZ=-40..55}] at @s run function luigis_mansion:room/hidden/king_boo_battle/spectator_tick
+execute if entity @a[gamemode=!spectator,x=465,y=25,z=-40,dx=49,dy=56,dz=85] run function luigis_mansion:room/hidden/king_boo_battle/tick
+execute if score #king_boo_battle Ticking matches 1 unless entity @a[gamemode=!spectator,x=465,y=25,z=-40,dx=49,dy=56,dz=85] unless entity @a[gamemode=!spectator,scores={Room=76}] run function luigis_mansion:room/hidden/king_boo_battle/not_ticking
 
 execute if score #clockwork_room_elevator Searched matches 1 run function luigis_mansion:room/hidden/clockwork_room/raise_elevator
 execute if score #clockwork_room_elevator Searched matches -1 run function luigis_mansion:room/hidden/clockwork_room/lower_elevator

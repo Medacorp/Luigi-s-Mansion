@@ -1,0 +1,1 @@
+scoreboard players set #king_boo_battle Ticking 1

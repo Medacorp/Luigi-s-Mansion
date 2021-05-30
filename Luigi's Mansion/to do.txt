@@ -13,6 +13,5 @@ add slightly modified strings (such as uncle grimmly call "prefers rooms with mi
 add teleporting of players in luigis_mansion:hidden to luigis_mansion:normal with Z = Z * -1 + 15 and y rotation = y rotation * -1 + 180
 
 beta add-on:
-add basher behavior
 replace boo radar with ghost radar
 add luigis_beta_mansion:mansion dimension

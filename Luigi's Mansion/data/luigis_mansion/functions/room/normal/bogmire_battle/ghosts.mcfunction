@@ -1,0 +1,2 @@
+execute if score #bogmire_battle Wave matches 1 unless entity @e[tag=ghost,scores={Room=74},tag=!optional_ghost] run function luigis_mansion:room/normal/bogmire_battle/clear
+execute unless data storage luigis_mansion:data current_state.current_data.portrait_ghosts.bogmire{health:0} unless score #bogmire_battle Wave matches 1.. run function luigis_mansion:room/normal/bogmire_battle/wave_1

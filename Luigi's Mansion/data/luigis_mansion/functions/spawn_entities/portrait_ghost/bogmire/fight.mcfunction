@@ -14,7 +14,6 @@ execute as @e[tag=this_entity,limit=1] store result score @s MaxHealth run data 
 scoreboard players set @e[tag=bogmire,tag=this_entity,limit=1] PullStrength 7
 scoreboard players set @e[tag=bogmire,tag=this_entity,limit=1] Move 5
 scoreboard players set @e[tag=bogmire,tag=this_entity,limit=1] Sound 0
-scoreboard players set @e[tag=bogmire,tag=this_entity,limit=1] Room 74
 scoreboard players set @e[tag=bogmire,tag=this_entity,limit=1] StunTime 0
 scoreboard players set @e[tag=bogmire,tag=this_entity,limit=1] VulnerableTime 0
 tag @e[tag=bogmire,tag=this_entity,limit=1] remove this_entity

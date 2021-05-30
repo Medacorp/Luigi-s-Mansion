@@ -1,8 +1,3 @@
-execute if data storage luigis_mansion:data current_state.current_data.rooms.secret_altar{cleared:1b} run tag @s add dead
-execute if data storage luigis_mansion:data current_state.current_data.rooms.secret_altar{cleared:1b} run tag @e[tag=king_boo] add dead
-execute if data storage luigis_mansion:data current_state.current_data.rooms.secret_altar{cleared:1b} as @a[distance=..320] run function luigis_mansion:entities/king_boo/return/normal
-execute unless data storage luigis_mansion:data current_state.current_data.rooms.secret_altar{cleared:1b} as @a[distance=320..] run function luigis_mansion:entities/king_boo/to_arena/normal
-
 execute at @e[tag=king_boo,limit=1] run tag @e[tag=same_room,tag=!spectator,sort=nearest,limit=1] add target
 scoreboard players set #temp Move 10
 execute at @s facing entity @a[tag=target,limit=1] feet rotated ~ 0 run teleport @s ~ ~ ~ ~ ~

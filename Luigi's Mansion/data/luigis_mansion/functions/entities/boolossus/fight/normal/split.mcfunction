@@ -1,17 +1,14 @@
-execute if data storage luigis_mansion:data current_state.current_data.rooms.balcony_2{cleared:1b} run tag @s add dead
-execute if data storage luigis_mansion:data current_state.current_data.rooms.balcony_2{cleared:1b} as @a[distance=..80] run function luigis_mansion:entities/boolossus/return/normal
-execute unless data storage luigis_mansion:data current_state.current_data.rooms.balcony_2{cleared:1b} as @a[distance=80..] run function luigis_mansion:entities/boolossus/to_arena/normal
-scoreboard players set @s HomeY 4100
+scoreboard players set @s HomeY 2700
 
 execute if entity @s[scores={Sound=0,Dialog=0},tag=!freeze,tag=fleeing] run playsound luigis_mansion:entity.boo.flee hostile @a[tag=same_room] ~ ~ ~ 1
 scoreboard players set @s[scores={Sound=0,Dialog=0},tag=!freeze,tag=fleeing] Sound 40
-execute if entity @s[tag=!fleeing,tag=!attack,tag=!laugh,scores={Wave=80}] store result score @s ActionTime if entity @e[tag=boolossus,tag=split,tag=!dead]
-execute if entity @s[tag=!fleeing,tag=!attack,tag=!laugh,scores={Wave=80,ActionTime=15}] run tag @e[tag=boolossus] add laugh
-execute if entity @s[tag=!fleeing,tag=!attack,tag=!laugh,scores={Wave=80,ActionTime=8..14}] if predicate luigis_mansion:boolossus_laugh_chance run tag @e[tag=boolossus] add laugh
-scoreboard players set @s[scores={Wave=80}] ActionTime 0
+execute if entity @s[tag=!fleeing,tag=!attack,tag=!laugh,scores={Wave=80}] store result score @s Boos if entity @e[tag=boolossus,tag=split,tag=!dead]
+execute if entity @s[tag=!fleeing,tag=!attack,tag=!laugh,scores={Wave=80,Boos=15}] run tag @e[tag=boolossus] add laugh
+execute if entity @s[tag=!fleeing,tag=!attack,tag=!laugh,scores={Wave=80,Boos=8..14}] if predicate luigis_mansion:boolossus_laugh_chance run tag @e[tag=boolossus] add laugh
+scoreboard players set @s[scores={Wave=80}] Boos 0
 execute if entity @s[tag=laugh,scores={Dialog=0}] run function luigis_mansion:entities/boolossus/laugh
 
-execute if entity @e[tag=same_room,tag=!spectator,distance=..0.7,limit=1] run function luigis_mansion:entities/boo/collide
+execute if entity @e[tag=same_room,tag=!spectator,distance=..0.7,limit=1] run function luigis_mansion:entities/boolossus/collide
 execute if entity @s[tag=!fleeing,tag=!attack,tag=!laugh,scores={Wave=81..580,Dialog=0}] if predicate luigis_mansion:boolossus_attack_chance run tag @s add attack
 execute if entity @s[tag=attack,tag=!laugh,scores={Dialog=0}] run function luigis_mansion:entities/boolossus/attack
 tag @s[scores={Wave=..30}] add fleeing
