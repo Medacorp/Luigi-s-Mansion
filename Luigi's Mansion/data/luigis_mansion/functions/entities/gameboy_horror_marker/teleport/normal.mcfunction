@@ -74,3 +74,7 @@ execute if entity @s[scores={Room=69}] run teleport @e[tag=me,limit=1] ~-29 ~91 
 execute if entity @s[scores={Room=70}] run teleport @e[tag=me,limit=1] ~-29 ~91 ~21 ~ ~
 execute if entity @s[scores={Room=71}] run teleport @e[tag=me,limit=1] ~-5 ~132 ~39 ~ ~
 execute if entity @s[scores={Room=72}] run teleport @e[tag=me,limit=1] ~ ~-82 ~ ~ ~
+execute if entity @s[scores={Room=73}] run teleport @e[tag=me,limit=1] 3709.0 111 53.0 ~ ~
+execute if entity @s[scores={Room=74}] run teleport @e[tag=me,limit=1] 3658.0 61 47 ~ ~
+execute if entity @s[scores={Room=75}] run teleport @e[tag=me,limit=1] ~81 ~135 ~11 ~ ~
+execute if entity @s[scores={Room=76}] run teleport @e[tag=me,limit=1] ~208 ~174 ~ ~ ~

@@ -1,5 +1,5 @@
 execute if entity @a[gamemode=!spectator,scores={Room=0}] in minecraft:overworld run function luigis_mansion:room/hidden/door/boo_woods_foyer
-execute as @a[scores={Room=1..},tag=!looking_at_map,tag=!warp] at @s run function luigis_mansion:room/hidden/floor_header
+execute as @a[scores={Room=1..72},tag=!looking_at_map,tag=!warp] at @s run function luigis_mansion:room/hidden/floor_header
 execute as @a[gamemode=spectator,tag=!already_ticked,distance=0..,scores={HomeX=743..758,HomeY=9..26,HomeZ=-4..17}] at @s run function luigis_mansion:room/hidden/foyer/spectator_tick
 execute if entity @a[gamemode=!spectator,x=735,y=11,z=-4,dx=21,dy=15,dz=21] run function luigis_mansion:room/hidden/foyer/tick
 execute if score #foyer Ticking matches 1 unless entity @a[gamemode=!spectator,x=735,y=11,z=-4,dx=21,dy=15,dz=21] unless entity @a[gamemode=!spectator,scores={Room=1}] run function luigis_mansion:room/hidden/foyer/not_ticking

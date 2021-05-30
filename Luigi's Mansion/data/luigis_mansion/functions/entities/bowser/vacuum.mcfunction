@@ -9,7 +9,7 @@ execute if entity @s[scores={ActionTime=20}] unless entity @a[tag=got_sucked] ru
 execute if entity @s[scores={ActionTime=20}] unless entity @a[tag=got_sucked] run scoreboard players reset @s ActionTime
 execute if entity @s[scores={ActionTime=21}] run tag @a[tag=got_sucked,distance=..4,sort=nearest,limit=1] add vacuumed
 execute if entity @s[scores={ActionTime=22..79}] run teleport @a[tag=vacuumed,limit=1] ~ ~2 ~
-execute if entity @s[scores={ActionTime=80}] as @a[tag=vacuumed,limit=1] run function luigis_mansion:items/gameboy_horror/map/close
+execute if entity @s[scores={ActionTime=80}] as @a[tag=vacuumed,limit=1,tag=looking_at_map] run function luigis_mansion:items/gameboy_horror/map/close
 execute if entity @s[scores={ActionTime=80}] run effect give @a[tag=vacuumed,limit=1] minecraft:instant_damage 1 0 true
 execute if entity @s[scores={ActionTime=80}] run scoreboard players set @a[tag=vacuumed,limit=1] ForcedDamage 4
 execute if entity @s[scores={ActionTime=80}] run teleport @a[tag=vacuumed,limit=1] ^3 ^2 ^3

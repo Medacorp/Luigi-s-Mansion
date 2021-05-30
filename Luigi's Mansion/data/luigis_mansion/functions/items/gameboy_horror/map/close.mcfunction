@@ -8,4 +8,6 @@ execute unless entity @a[tag=looking_at_map,limit=1] run kill @e[type=minecraft:
 tag @s add seen_room_name
 title @s subtitle ""
 scoreboard players set @s UseItem 0
+scoreboard players set @s LoadedChunks 0
+tag @s remove loaded_chunks
 execute at @s run playsound luigis_mansion:item.gameboy_horror.map.close player @a[tag=same_room] ~ ~ ~ 1
