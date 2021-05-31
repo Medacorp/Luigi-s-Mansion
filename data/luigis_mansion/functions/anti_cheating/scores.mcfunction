@@ -155,3 +155,5 @@ execute unless score #can_warp Selected matches 0..1 run scoreboard players set 
 execute unless score #multiply_hurt Selected matches 0.. run scoreboard players set #multiply_hurt Selected 100
 execute unless score #multiply_damage Selected matches 0.. run scoreboard players set #multiply_damage Selected 100
 execute unless score #changing_max_health Selected matches 0..1 run scoreboard players set #changing_max_health Selected 0
+
+gamerule doTileDrops false
