@@ -1,0 +1,4 @@
+execute if entity @s[tag=boodacious,tag=message_1] run tellraw @a[tag=same_room] {"translate":"chat.type.text","with":[{"translate":"luigis_mansion:entity.boodacious","color":"green"},{"translate":"luigis_mansion:message.boodacious.1"}]}
+execute if entity @s[tag=boodacious,tag=message_2] run tellraw @a[tag=same_room] {"translate":"chat.type.text","with":[{"translate":"luigis_mansion:entity.boodacious","color":"green"},{"translate":"luigis_mansion:message.boodacious.2"}]}
+execute if entity @s[tag=boodacious,tag=message_3] run tellraw @a[tag=same_room] {"translate":"chat.type.text","with":[{"translate":"luigis_mansion:entity.boodacious","color":"green"},{"translate":"luigis_mansion:message.boodacious.3"}]}
+execute if entity @s[tag=boodacious,tag=message_4] run tellraw @a[tag=same_room] {"translate":"chat.type.text","with":[{"translate":"luigis_mansion:entity.boodacious","color":"green"},{"translate":"luigis_mansion:message.boodacious.4"}]}

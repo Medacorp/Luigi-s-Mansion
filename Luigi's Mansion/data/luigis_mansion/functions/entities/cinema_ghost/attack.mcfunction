@@ -7,7 +7,7 @@ execute if entity @s[scores={ActionTime=1}] run playsound luigis_mansion:entity.
 execute if entity @s[scores={ActionTime=1}] positioned ^ ^ ^0.8 as @e[distance=..0.8,tag=gameboy_horror_location] run function luigis_mansion:entities/gameboy_horror_location/bring_player_back
 execute if entity @s[scores={ActionTime=1}] positioned ^ ^ ^0.8 run tag @a[gamemode=!spectator,distance=..0.8,tag=!grabbed,limit=1] add grabbed
 execute if entity @s[scores={ActionTime=1..20}] if score #mirrored Selected matches 0 run function luigis_mansion:entities/cinema_ghost/grab/normal
-execute if entity @s[scores={ActionTime=1..20}] if score #mirrored Selected matches 1 run function luigis_mansion:entities/cinema_ghost/grab/hidden
+execute if entity @s[scores={ActionTime=1..20}] if score #mirrored Selected matches 1 run function luigis_mansion:entities/cinema_ghost/grab/mirrored
 execute if entity @s[scores={ActionTime=20..100}] positioned ^ ^ ^0.8 run effect give @a[gamemode=!spectator,distance=..0.7,tag=grabbed,limit=1] minecraft:instant_damage 1 0 true
 execute if entity @s[scores={ActionTime=20}] positioned ^ ^ ^0.8 run scoreboard players set @a[gamemode=!spectator,distance=..0.7,tag=grabbed,limit=1] ForcedDamage -1
 execute if entity @s[scores={ActionTime=21..100}] positioned ^ ^ ^0.8 run scoreboard players set @a[gamemode=!spectator,distance=..0.7,tag=grabbed,limit=1] ForcedDamage -5

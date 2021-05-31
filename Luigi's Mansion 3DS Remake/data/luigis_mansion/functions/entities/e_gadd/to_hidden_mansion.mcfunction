@@ -15,7 +15,7 @@ scoreboard players set #mansion_data_index Selected 1
 execute unless score #mansion_data_index Selected = #previous_mansion_index Selected if data storage luigis_mansion:data current_state.mansion_data[-1] run function luigis_mansion:entities/e_gadd/load_mansion_data
 scoreboard players set #mirrored Selected 0
 scoreboard players set #multiply_hurt Selected 200
-scoreboard players set #multiply_damage Selected 100
+scoreboard players set #multiply_damage Selected 125
 scoreboard players set #can_warp Selected 1
 scoreboard players set #changing_max_health Selected 0
 scoreboard players set #can_clear_hidden Selected 0
