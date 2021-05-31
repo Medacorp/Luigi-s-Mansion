@@ -2,7 +2,6 @@
 	"values": [
 		"luigis_mansion:entities/boo/message/bamboo",
         "luigis_mansion:entities/boo/message/boo_b_hatch",
-        "luigis_mansion:entities/boo/message/boo_ball",
         "luigis_mansion:entities/boo/message/boo_la_la",
         "luigis_mansion:entities/boo/message/boodacious",
         "luigis_mansion:entities/boo/message/booffant",
@@ -13,7 +12,6 @@
         "luigis_mansion:entities/boo/message/boolicious",
         "luigis_mansion:entities/boo/message/booligan",
         "luigis_mansion:entities/boo/message/boolivia",
-        "luigis_mansion:entities/boo/message/boolossus",
         "luigis_mansion:entities/boo/message/boomeo",
         "luigis_mansion:entities/boo/message/boomerang",
         "luigis_mansion:entities/boo/message/boonita",

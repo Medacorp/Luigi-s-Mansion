@@ -1,1 +1,1 @@
-tellraw @s {"translate":"luigis_mansion:message.flashlight_type.select","clickEvent":{"action":"run_command","value":"/trigger FlashlightType set -3"}}
+tellraw @s {"translate":"luigis_mansion:message.flashlight_type.select","color":"green","clickEvent":{"action":"run_command","value":"/trigger FlashlightType set -3"}}

@@ -46,7 +46,7 @@ You can also do the same, but for dependencies, eg if you need the 3ds_remake ad
 
 # Other
 ## Viewpoints
-Most hallways contain several room scores, this is so that moving through a hallway reserts rooms around it and parts of the hallway that are not seen.
+Most hallways contain several room scores, this is so that moving through a hallway resets rooms around it and parts of the hallway that are not seen.
 
 For example the back of the F1 hallway is reset if you're in the front, until you get to the connecting section.
 
@@ -74,7 +74,7 @@ Max health will return to 100 after 5 to 10 seconds depending on how much the pl
 
 ## 3DS Remake add-on changes
 Ghost behavioral changes the add-on applies:
-* Using a flashlight on a temper terror, flash or blue blaze make them "smug", laugh and then disappear, rather than ignore and continue moving/attacking; the functions for being smug exist in the base map
+* Using a flashlight on a temper terror, flash or blue blaze makes them "smug", laugh and then disappear, rather than ignore and continue moving/attacking; the functions for being smug exist in the base map.
 
 Room -4 is the gallery, regardless of add-on or not. The add-on will simply teleport players in the old gallery to the new one, and never start ticking the old one.
 
