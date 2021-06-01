@@ -1,0 +1,1 @@
+execute positioned ~ ~-1.4 ~ as @e[tag=vacuumable,distance=..1.4,tag=item,tag=poison_mushroom] positioned as @s positioned ~ ~1.5 ~ if block ^ ^ ^0.3 #luigis_mansion:item_pull_ignore positioned ~ ~-1.5 ~ run function luigis_mansion:entities/item/pull_heart
