@@ -53,5 +53,5 @@ execute positioned 677 105 43 run function luigis_mansion:spawn_entities/item/go
 execute positioned 678 105 42 run function luigis_mansion:spawn_entities/item/gold_bar
 execute positioned 678 105 43 run function luigis_mansion:spawn_entities/item/gold_diamond
 data modify storage luigis_mansion:data current_state.current_data.money_spawned merge value {boneyard_plant:1b}
-playsound luigis_mansion:music.solve_puzzle music @a[scores={Room=24}] ~ ~ ~ 1000
-scoreboard players set @a[scores={Room=24,Music=..29}] Music 30
+playsound luigis_mansion:music.solve_puzzle music @a[scores={Room=28}] ~ ~ ~ 1000
+scoreboard players set @a[scores={Room=28,Music=..29}] Music 30

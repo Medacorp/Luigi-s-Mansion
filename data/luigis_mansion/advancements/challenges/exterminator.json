@@ -1215,6 +1215,6 @@
         }
     },
 	"rewards": {
-		"function": "luigis_mansion:advancements/challenge/exterminator"
+		"function": "luigis_mansion:advancements/challenges/exterminator"
 	}
 }

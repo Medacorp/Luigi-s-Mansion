@@ -15,7 +15,7 @@ scoreboard objectives add Dialog dummy
 scoreboard objectives add Distance dummy
 scoreboard objectives add Element dummy
 scoreboard objectives add ElementalNr dummy
-scoreboard objectives add EGaddGallChoice trigger
+scoreboard objectives add EGaddCallChoice trigger
 scoreboard objectives add EGaddGPRChoice trigger
 scoreboard objectives add EGaddLabChoice trigger
 scoreboard objectives add EGaddTrainChoice trigger
@@ -32,7 +32,6 @@ scoreboard objectives add GhostCaught dummy
 scoreboard objectives add GhostCount dummy
 scoreboard objectives add GhostNr dummy
 scoreboard objectives add GhostGuyCouple dummy
-scoreboard objectives add RoomNoise dummy
 scoreboard objectives add Health dummy
 scoreboard objectives add HideTime dummy
 scoreboard objectives add HomeRot dummy
@@ -87,6 +86,7 @@ scoreboard objectives add ResetChoice trigger
 scoreboard objectives add ResetMansion dummy
 scoreboard objectives add ReturnTimer dummy
 scoreboard objectives add Room dummy
+scoreboard objectives add RoomNoise dummy
 scoreboard objectives add RoomSection dummy
 scoreboard objectives add Run minecraft.custom:minecraft.sprint_one_cm
 scoreboard objectives add Search dummy

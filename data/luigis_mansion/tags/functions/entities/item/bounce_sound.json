@@ -15,6 +15,6 @@
         "luigis_mansion:entities/item/bounce/poison_mushroom",
         "luigis_mansion:entities/item/bounce/key",
         "luigis_mansion:entities/item/bounce/element_medal",
-        "luigis_mansion:entities/item/bounce/marios_item"
+        "luigis_mansion:entities/item/bounce/mario_item"
 	]
 }

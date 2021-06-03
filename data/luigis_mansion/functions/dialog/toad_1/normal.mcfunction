@@ -1,4 +1,4 @@
-scoreboard players add @s[scores={Dialog=1166}] Dialog 1
+scoreboard players add @s[scores={Dialog=1214}] Dialog 1
 execute if entity @a[scores={Toad1Choice=1..},limit=1] run scoreboard players add @s[scores={Dialog=945..}] Dialog 1
 scoreboard players add @s[scores={Dialog=..944}] Dialog 1
 execute unless entity @s[scores={Dialog=1..}] run scoreboard players add @s Dialog 1

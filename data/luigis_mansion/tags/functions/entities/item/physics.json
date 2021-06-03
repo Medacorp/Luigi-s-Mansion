@@ -16,6 +16,6 @@
         "luigis_mansion:entities/item/physics/poison_mushroom",
         "luigis_mansion:entities/item/physics/key",
         "luigis_mansion:entities/item/physics/element_medal",
-        "luigis_mansion:entities/item/physics/marios_item"
+        "luigis_mansion:entities/item/physics/mario_item"
 	]
 }

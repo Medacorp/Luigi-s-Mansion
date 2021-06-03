@@ -9,6 +9,7 @@ tag @s remove loaded_chunk_triggered
 
 scoreboard players operation #temp Room = @s Room
 execute as @a run function #luigis_mansion:get_same_room
+execute as @e[tag=ghost] run function #luigis_mansion:get_same_room
 scoreboard players reset #temp Room
 
 function luigis_mansion:dialog/try
@@ -20,8 +21,10 @@ scoreboard players remove @s[scores={Shrunk=1..}] Shrunk 1
 scoreboard players reset @s[scores={Shrunk=0}] Shrunk
 scoreboard players reset @s[scores={Shrunk=0}] ShrunkNr
 function #luigis_mansion:player_tag_dialogs
-execute if entity @s[tag=return_mario] as @a run function luigis_mansion:entities/e_gadd/return_mario
+execute if entity @s[tag=return_mario] as @a run function luigis_mansion:entities/player/return_mario
 
+scoreboard players set @s[tag=fix_health] Health 100
+tag @s remove fix_health
 execute if entity @s[tag=!joined] run function luigis_mansion:other/join_world
 execute if entity @s[scores={Offline=1}] run function luigis_mansion:other/log_on
 execute if entity @s[scores={ChangedMansion=1}] run function luigis_mansion:entities/player/changed_mansion
@@ -57,7 +60,7 @@ scoreboard players set @s Jump 0
 execute unless entity @s[scores={Room=1..}] run scoreboard players set @s LastFloor -2
 execute store result score @s JumpHeight run data get entity @s Pos[1] 100
 
-tag @a[tag=same_room] remove same_room
+tag @e[tag=same_room] remove same_room
 tag @s remove already_ticked
 
 scoreboard players reset @s MirrorX

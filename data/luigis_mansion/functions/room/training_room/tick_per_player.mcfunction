@@ -4,4 +4,4 @@ tag @s add seen_room_name
 
 execute if data storage luigis_mansion:data rooms.training_room{seen:0b} run function luigis_mansion:room/training_room/set_seen
 
-execute unless entity @e[tag=e_gadd,scores={Room=-2}] run function luigis_mansion:entities/e_gadd/to_lab
+execute unless entity @e[tag=e_gadd,scores={Room=-2}] run function luigis_mansion:room/underground_lab/warp_to

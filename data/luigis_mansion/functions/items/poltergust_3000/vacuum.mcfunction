@@ -12,5 +12,5 @@ execute positioned ~ ~-0.4 ~ as @e[tag=ball,tag=big,tag=!spit,tag=vacuumable,dis
 execute positioned ~ ~-1 ~ as @e[tag=rocking_horse,tag=!battle,distance=..0.7] run tag @s add in_vacuum
 execute positioned ~ ~-1 ~ as @e[tag=vacuumable,distance=..0.7,tag=boolossus,tag=split] positioned as @s positioned ~ ~1 ~ run function luigis_mansion:items/poltergust_3000/effect_on_entity/vacuum_boolossus
 scoreboard players reset #temp3 Steps
-execute as @e[tag=yellow_bat] if score @s Room = #temp Room run tag @s add vacuum_in_room
+tag @e[tag=yellow_bat,tag=same_room] add vacuum_in_room
 execute unless block ~ ~ ~ minecraft:air run function luigis_mansion:items/poltergust_3000/effect_on_block/vacuum

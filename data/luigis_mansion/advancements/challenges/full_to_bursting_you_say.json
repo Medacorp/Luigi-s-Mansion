@@ -17,6 +17,6 @@
         }
     },
 	"rewards": {
-		"function": "luigis_mansion:advancements/challenge/full_to_bursting_you_say"
+		"function": "luigis_mansion:advancements/challenges/full_to_bursting_you_say"
 	}
 }

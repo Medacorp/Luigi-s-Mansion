@@ -1,6 +1,6 @@
 teleport @s ~ ~1.1875 ~
-execute if entity @s[tag=vacuumable,tag=!spit,tag=!can_spit_2] run particle minecraft:dust 1 0 0 1 ~ ~ ~ 0 0 0 1 1 normal @a[tag=same_room]
-execute if entity @s[tag=vacuumable,tag=spit,tag=!can_spit_2] run particle minecraft:dust 0 1 0 1 ~ ~ ~ 0 0 0 1 1 normal @a[tag=same_room]
+execute at @s[tag=vacuumable,tag=!spit,tag=!can_spit_2] run particle minecraft:dust 1 0 0 1 ~ ~ ~ 0 0 0 1 1 normal @a[tag=same_room]
+execute at @s[tag=vacuumable,tag=spit,tag=!can_spit_2] run particle minecraft:dust 0 1 0 1 ~ ~ ~ 0 0 0 1 1 normal @a[tag=same_room]
 scoreboard players set #temp Move 4
 scoreboard players set @s[tag=!vacuumable,tag=!move] SpawnTime 0
 scoreboard players add @s[tag=vacuumable] SpawnTime 1

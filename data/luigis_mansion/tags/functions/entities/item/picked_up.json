@@ -16,6 +16,6 @@
         "luigis_mansion:entities/item/picked_up/poison_mushroom",
         "luigis_mansion:entities/item/picked_up/key",
         "luigis_mansion:entities/item/picked_up/element_medal",
-        "luigis_mansion:entities/item/picked_up/marios_item"
+        "luigis_mansion:entities/item/picked_up/mario_item"
 	]
 }

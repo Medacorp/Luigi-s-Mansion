@@ -26,6 +26,6 @@ execute if entity @s[tag=boo,tag=!dying,scores={HurtTime=1..,Health=1..},tag=!al
 tag @s[tag=king_boo,tag=battle,tag=!dead] add boo_hurt
 tag @s[tag=king_boo,tag=battle,tag=!dead] add in_vacuum
 execute if entity @s[tag=king_boo,tag=battle,tag=!dying,scores={HurtTime=1..,Health=1..},tag=!already_hurt] run function luigis_mansion:entities/king_boo/harm
-execute if entity @s[tag=ghost,scores={VulnerableTime=1..},tag=!vanish,tag=!being_vacuumed] if score @s Room = #temp Room run function luigis_mansion:items/poltergust_3000/latch_onto_ghost
-execute if entity @s[tag=boo,scores={Health=..0}] if score @s Room = #temp Room run function luigis_mansion:items/poltergust_3000/latch_onto_ghost
-execute if entity @s[tag=king_boo,tag=battle,scores={Health=..0}] if score @s Room = #temp Room run function luigis_mansion:items/poltergust_3000/latch_onto_ghost
+execute if entity @s[tag=ghost,scores={VulnerableTime=1..},tag=!vanish,tag=!being_vacuumed] run function luigis_mansion:items/poltergust_3000/latch_onto_ghost
+execute if entity @s[tag=boo,scores={Health=..0}] run function luigis_mansion:items/poltergust_3000/latch_onto_ghost
+execute if entity @s[tag=king_boo,tag=battle,scores={Health=..0}] run function luigis_mansion:items/poltergust_3000/latch_onto_ghost

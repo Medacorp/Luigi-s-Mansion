@@ -8,4 +8,5 @@ tag @s[tag=partner_died] add stop_dancing
 tag @s remove maskless
 tag @s remove leader
 tag @s remove new_leader
+tag @s remove stunable
 tag @s remove spawn

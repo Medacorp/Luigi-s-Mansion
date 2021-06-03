@@ -10,7 +10,7 @@ execute if entity @s[scores={Time=80}] run setblock 682 12 66 minecraft:air
 execute if entity @s[scores={Time=80}] run clone 681 11 66 689 17 65 681 11 64 replace move
 execute if entity @s[scores={Time=80}] run setblock 682 11 66 minecraft:oak_slab[type=bottom]
 execute if entity @s[scores={Time=80}] run setblock 682 11 67 minecraft:andesite_slab[type=bottom]
-execute if entity @s[scores={Time=90}] run playsound luigis_mansion:music.moving_wall music @a[scores={Room=14}] ~ ~ ~ 10000
+execute if entity @s[scores={Time=90}] run playsound luigis_mansion:music.moving_wall music @a[scores={Room=18}] ~ ~ ~ 10000
 execute if entity @s[scores={Time=100}] run clone 681 11 65 689 17 64 681 11 63 replace move
 execute if entity @s[scores={Time=120}] run clone 681 11 64 689 17 63 681 11 62 replace move
 execute if entity @s[scores={Time=140}] run clone 681 11 63 689 17 62 681 11 61 replace move

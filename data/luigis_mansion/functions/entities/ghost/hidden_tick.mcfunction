@@ -3,7 +3,7 @@ scoreboard players remove @s[scores={SpawnTime=1..}] SpawnTime 1
 tag @s[scores={SpawnTime=100}] add can_spawn
 execute unless entity @s[scores={SpawnTime=1..},tag=!new_ghost,tag=!no_hidden_move] facing entity @p[tag=same_room,tag=!spectator,sort=nearest,limit=1] feet rotated ~ 0 run teleport @s ~ ~ ~ ~ ~
 scoreboard players set @s ActionTime 0
-execute unless entity @s[tag=!burning_heart,tag=!watery_heart,tag=!frozen_heart] run tag @s[tag=stunnable] remove stunnable
+execute unless entity @s[tag=!burning_heart,tag=!watery_heart,tag=!frozen_heart] run tag @s[tag=stunable] remove stunable
 execute if entity @s[scores={Time=40..}] run function luigis_mansion:entities/ghost/hidden/turn
 execute if block ~ ~ ~ #luigis_mansion:all_ignore if entity @e[tag=same_room,distance=..7,tag=!spectator,limit=1] unless entity @s[tag=!burning_heart,tag=!frozen_heart,tag=!watery_heart] run tag @s[tag=can_spawn] add try_spawn
 tag @s add me

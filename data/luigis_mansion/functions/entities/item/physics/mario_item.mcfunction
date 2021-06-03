@@ -1,0 +1,1 @@
+execute if entity @s[tag=mario_item] run function luigis_mansion:entities/item/physics

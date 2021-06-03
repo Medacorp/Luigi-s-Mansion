@@ -105,6 +105,6 @@
         }
     },
 	"rewards": {
-		"function": "luigis_mansion:advancements/challenge/waluigi_pinball"
+		"function": "luigis_mansion:advancements/challenges/waluigi_pinball"
 	}
 }

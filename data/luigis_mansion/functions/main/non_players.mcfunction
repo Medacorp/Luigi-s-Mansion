@@ -24,10 +24,10 @@ execute if entity @s[type=minecraft:lightning_bolt] run kill @e[type=minecraft:l
 
 execute unless entity @s[scores={StunTime=1..}] run scoreboard players remove @s[scores={Sound=1..}] Sound 1
 tag @s[tag=remove_from_existence] add dead
-data merge entity @s[tag=remove_from_existence] {Health:0.0f,DeathTime:19s}
-teleport @s[tag=remove_from_existence] ~ ~-100 ~
+teleport @s[tag=dead] ~ ~-100 ~
 scoreboard players reset @s[tag=dead]
 tag @s[tag=dead] add can_die
+kill @s[tag=dead]
 scoreboard players reset @s Steps
 
 tag @a[tag=same_room] remove same_room

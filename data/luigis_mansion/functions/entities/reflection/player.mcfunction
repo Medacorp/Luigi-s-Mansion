@@ -10,7 +10,7 @@ tag @e[tag=this_reflection,limit=1] remove new
 tag @e[tag=this_reflection,limit=1] add found_owner
 
 loot replace entity @e[tag=this_reflection,limit=1] armor.head 1 loot luigis_mansion:gameplay/get_player_name
-data modify entity @e[tag=this_reflection,limit=1] HandItems set value []
+data merge entity @e[tag=this_reflection,limit=1] {Invisible:0b,HandItems:[]}
 data modify entity @e[tag=this_reflection,limit=1] HandItems[0] set from entity @s SelectedItem
 data modify entity @e[tag=this_reflection,limit=1] HandItems[1] set from entity @s Inventory[{Slot:-106b}]
 data modify entity @e[tag=this_reflection,limit=1] Pose.Head[0] set from entity @s Rotation[1]

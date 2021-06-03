@@ -18,6 +18,6 @@
         }
     },
 	"rewards": {
-		"function": "luigis_mansion:advancements/challenge/scrooge_mcduck_it_up"
+		"function": "luigis_mansion:advancements/challenges/scrooge_mcduck_it_up"
 	}
 }

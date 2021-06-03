@@ -13,3 +13,4 @@ execute if entity @s[scores={AnimationProg=5..8}] store result entity @s Pose.He
 execute if entity @s[scores={AnimationProg=11..14}] store result entity @s Pose.Head[0] float 1 run scoreboard players add #temp Time 1
 execute if entity @s[scores={AnimationProg=15..18}] store result entity @s Pose.Head[0] float 1 run scoreboard players remove #temp Time 1
 scoreboard players set @s[scores={AnimationProg=20}] AnimationProg 0
+scoreboard players reset #temp Time

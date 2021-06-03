@@ -14,7 +14,7 @@ execute if entity @s[scores={Dialog=304}] if score #players Totals matches 2.. r
 execute if entity @s[scores={Dialog=376}] run tellraw @a {"translate":"chat.type.text","with":[{"translate":"luigis_mansion:entity.e_gadd","color":"green"},{"translate":"luigis_mansion:dialog.area_2_key.7"}]}
 execute if entity @s[scores={Dialog=408}] if score #players Totals matches 1 run tellraw @a {"translate":"chat.type.text","with":[{"translate":"luigis_mansion:entity.e_gadd","color":"green"},{"translate":"luigis_mansion:dialog.area_2_key.8"}]}
 execute if entity @s[scores={Dialog=408}] if score #players Totals matches 2.. run tellraw @a {"translate":"chat.type.text","with":[{"translate":"luigis_mansion:entity.e_gadd","color":"green"},{"translate":"luigis_mansion:dialog.area_2_key.8.more"}]}
-execute if entity @s[scores={Dialog=552}] as @a run function luigis_mansion:entities/e_gadd/to_portrificationizer
+execute if entity @s[scores={Dialog=552}] as @a run function luigis_mansion:room/ghost_portrificationizer_room/warp_to
 execute if entity @s[scores={Dialog=552}] run data modify storage luigis_mansion:data current_state.current_data.technical_data merge value {area_2_key:1b}
 execute if entity @s[scores={Dialog=554},advancements={luigis_mansion:lab/ghost_portrificationizer_room=true}] run tag @e[tag=e_gadd,scores={Room=-3},limit=1] add return_dialog
 execute if entity @s[scores={Dialog=554},advancements={luigis_mansion:lab/ghost_portrificationizer_room=false}] run tag @e[tag=e_gadd,scores={Room=-3},limit=1] add talk

@@ -1,6 +1,6 @@
 scoreboard players add @s Time 1
-execute if entity @s[scores={Time=2}] run stopsound @a[scores={Room=35}] music
-execute if entity @s[scores={Time=2}] run scoreboard players set @a[scores={Room=35}] Music 140
+execute if entity @s[scores={Time=2}] run stopsound @a[scores={Room=45}] music
+execute if entity @s[scores={Time=2}] run scoreboard players set @a[scores={Room=45}] Music 140
 execute if entity @s[scores={Time=3}] run playsound luigis_mansion:music.mansion.room.astral_hall music @a[scores={Room=35}] ~ ~ ~ 1000
 execute if entity @s[scores={Time=20}] positioned 665 22 93 run function luigis_mansion:spawn_furniture/purple_candles
 execute if entity @s[scores={Time=35}] positioned 669 22 95 run function luigis_mansion:spawn_furniture/purple_candles

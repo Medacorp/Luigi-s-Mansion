@@ -179,7 +179,7 @@ execute if entity @s[scores={Dialog=1387}] run teleport @e[tag=dialog,limit=1] ~
 execute if entity @s[scores={Dialog=1388}] run tag @e[tag=dialog] add remove_from_existence
 execute if entity @s[scores={Dialog=1388}] run scoreboard players set @a MusicType 2
 execute if entity @s[scores={Dialog=1388}] run data modify storage luigis_mansion:data {} merge value {found_e_gadd:1b}
-execute if entity @s[scores={Dialog=1388}] as @a run function luigis_mansion:entities/e_gadd/to_lab
+execute if entity @s[scores={Dialog=1388}] as @a run function luigis_mansion:room/underground_lab/warp_to
 tag @s[scores={Dialog=1388}] remove meet_e_gadd
 scoreboard players reset @s[scores={Dialog=1388}] Dialog
 

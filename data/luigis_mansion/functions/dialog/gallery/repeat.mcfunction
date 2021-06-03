@@ -46,7 +46,7 @@ execute if entity @s[scores={Dialog=82}] if entity @a[scores={EGaddGallChoice=3}
 execute if entity @s[scores={Dialog=106}] if entity @a[scores={EGaddGallChoice=3}] run scoreboard players set @s Dialog 1354
 execute if entity @s[scores={Dialog=82}] if entity @a[scores={EGaddGallChoice=4}] run tellraw @a[tag=same_room] {"translate":"chat.type.text","with":[{"translate":"luigis_mansion:entity.e_gadd","color":"green"},{"translate":"luigis_mansion:dialog.gallery.nothing.1"}]}
 execute if entity @s[scores={Dialog=98}] if entity @a[scores={EGaddGallChoice=4}] run scoreboard players set @s Dialog 1354
-execute if entity @s[scores={Dialog=1354}] if entity @a[scores={EGaddGallChoice=3}] as @a[tag=same_room] run function luigis_mansion:entities/e_gadd/to_lab
+execute if entity @s[scores={Dialog=1354}] if entity @a[scores={EGaddGallChoice=3}] as @a[tag=same_room] run function luigis_mansion:room/underground_lab/warp_to
 execute if entity @s[scores={Dialog=1354}] run scoreboard players set @a EGaddGallChoice 0
 tag @s[scores={Dialog=1354}] remove talk
 execute unless entity @e[tag=same_room,tag=!spectator,distance=..7,limit=1] run tag @s remove talk

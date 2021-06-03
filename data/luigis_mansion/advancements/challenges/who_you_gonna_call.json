@@ -18,6 +18,6 @@
         }
     },
 	"rewards": {
-		"function": "luigis_mansion:advancements/challenge/who_you_gonna_call"
+		"function": "luigis_mansion:advancements/challenges/who_you_gonna_call"
 	}
 }

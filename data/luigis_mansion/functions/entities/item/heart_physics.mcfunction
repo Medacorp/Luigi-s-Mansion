@@ -1,6 +1,3 @@
-scoreboard players add @s SpawnTime 1
-tag @s[scores={SpawnTime=20}] add vacuumable
-tag @s[scores={SpawnTime=300}] add dead
 execute at @s positioned ~ ~1.6 ~ align y unless block ~ ~ ~ #luigis_mansion:items_ignore unless block ~ ~ ~ #minecraft:slabs at @s run tag @s add in_wall
 teleport @s[tag=in_wall] ~ ~0.1 ~
 

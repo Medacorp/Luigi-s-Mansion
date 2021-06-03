@@ -18,6 +18,6 @@
         }
     },
 	"rewards": {
-		"function": "luigis_mansion:advancements/challenge/spare_some_change"
+		"function": "luigis_mansion:advancements/challenges/spare_some_change"
 	}
 }

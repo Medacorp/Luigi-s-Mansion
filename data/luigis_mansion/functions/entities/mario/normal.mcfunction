@@ -34,43 +34,7 @@ execute if entity @s[scores={Dialog=380}] run tag @e[tag=e_gadd,scores={Room=-3}
 execute if entity @s[scores={Dialog=380..638}] as @e[tag=e_gadd,scores={Room=-3},limit=1] at @s run teleport @s ~ ~ ~0.1 0 0
 execute if entity @s[scores={Dialog=639}] as @e[tag=e_gadd,scores={Room=-3},limit=1] at @s run teleport @s 774 77 14 0 0
 execute if entity @s[scores={Dialog=639}] run tag @e[tag=e_gadd,scores={Room=-3},limit=1] remove walk
-execute if entity @s[scores={Dialog=639}] store result score #temp2 Money run data get storage luigis_mansion:data current_state.current_data.money.gold_coin
-execute if entity @s[scores={Dialog=639}] run scoreboard players operation #temp2 Money *= #5 Constants
-execute if entity @s[scores={Dialog=639}] run scoreboard players operation #temp Money += #temp2 Money
-execute if entity @s[scores={Dialog=639}] store result score #temp2 Money run data get storage luigis_mansion:data current_state.current_data.money.bill
-execute if entity @s[scores={Dialog=639}] run scoreboard players operation #temp2 Money *= #20 Constants
-execute if entity @s[scores={Dialog=639}] run scoreboard players operation #temp Money += #temp2 Money
-execute if entity @s[scores={Dialog=639}] store result score #temp2 Money run data get storage luigis_mansion:data current_state.current_data.money.gold_bar
-execute if entity @s[scores={Dialog=639}] run scoreboard players operation #temp2 Money *= #100 Constants
-execute if entity @s[scores={Dialog=639}] run scoreboard players operation #temp Money += #temp2 Money
-execute if entity @s[scores={Dialog=639}] store result score #temp2 Money run data get storage luigis_mansion:data current_state.current_data.money.blue_sapphire
-execute if entity @s[scores={Dialog=639}] run scoreboard players operation #temp2 Money *= #500 Constants
-execute if entity @s[scores={Dialog=639}] run scoreboard players operation #temp Money += #temp2 Money
-execute if entity @s[scores={Dialog=639}] store result score #temp2 Money run data get storage luigis_mansion:data current_state.current_data.money.green_emerald
-execute if entity @s[scores={Dialog=639}] run scoreboard players operation #temp2 Money *= #800 Constants
-execute if entity @s[scores={Dialog=639}] run scoreboard players operation #temp Money += #temp2 Money
-execute if entity @s[scores={Dialog=639}] store result score #temp2 Money run data get storage luigis_mansion:data current_state.current_data.money.red_ruby
-execute if entity @s[scores={Dialog=639}] run scoreboard players operation #temp2 Money *= #1000 Constants
-execute if entity @s[scores={Dialog=639}] run scoreboard players operation #temp Money += #temp2 Money
-execute if entity @s[scores={Dialog=639}] store result score #temp2 Money run data get storage luigis_mansion:data current_state.current_data.money.blue_diamond
-execute if entity @s[scores={Dialog=639}] run scoreboard players operation #temp2 Money *= #2000 Constants
-execute if entity @s[scores={Dialog=639}] run scoreboard players operation #temp Money += #temp2 Money
-execute if entity @s[scores={Dialog=639}] store result score #temp2 Money run data get storage luigis_mansion:data current_state.current_data.money.red_diamond
-execute if entity @s[scores={Dialog=639}] run scoreboard players operation #temp2 Money *= #5 Constants
-execute if entity @s[scores={Dialog=639}] run scoreboard players operation #temp Money += #temp2 Money
-execute if entity @s[scores={Dialog=639}] store result score #temp2 Money run data get storage luigis_mansion:data current_state.current_data.money.gold_diamond
-execute if entity @s[scores={Dialog=639}] run scoreboard players operation #temp2 Money *= #20000 Constants
-execute if entity @s[scores={Dialog=639}] run scoreboard players operation #temp Money += #temp2 Money
-execute if entity @s[scores={Dialog=639}] store result score #temp2 Money run data get storage luigis_mansion:data current_state.current_data.money.small_pearl
-execute if entity @s[scores={Dialog=639}] run scoreboard players operation #temp2 Money *= #50 Constants
-execute if entity @s[scores={Dialog=639}] run scoreboard players operation #temp Money += #temp2 Money
-execute if entity @s[scores={Dialog=639}] store result score #temp2 Money run data get storage luigis_mansion:data current_state.current_data.money.medium_pearl
-execute if entity @s[scores={Dialog=639}] run scoreboard players operation #temp2 Money *= #100 Constants
-execute if entity @s[scores={Dialog=639}] run scoreboard players operation #temp Money += #temp2 Money
-execute if entity @s[scores={Dialog=639}] store result score #temp2 Money run data get storage luigis_mansion:data current_state.current_data.money.big_pearl
-execute if entity @s[scores={Dialog=639}] run scoreboard players operation #temp2 Money *= #1000 Constants
-execute if entity @s[scores={Dialog=639}] run scoreboard players operation #temp Money += #temp2 Money
-execute if entity @s[scores={Dialog=639}] run scoreboard players reset #temp2
+execute if entity @s[scores={Dialog=639}] run function luigis_mansion:dialog/portrificationizing/get_total_score
 execute if entity @s[scores={Dialog=639}] if score #temp Money matches ..4999 run tellraw @a {"translate":"chat.type.text","with":[{"translate":"luigis_mansion:entity.mansion","color":"green"},{"translate":"luigis_mansion:message.the_end.h_rank"}]}
 execute if entity @s[scores={Dialog=639}] if score #temp Money matches 5000..19999 run tellraw @a {"translate":"chat.type.text","with":[{"translate":"luigis_mansion:entity.mansion","color":"green"},{"translate":"luigis_mansion:message.the_end.g_rank"}]}
 execute if entity @s[scores={Dialog=639}] if score #temp Money matches 20000..39999 run tellraw @a {"translate":"chat.type.text","with":[{"translate":"luigis_mansion:entity.mansion","color":"green"},{"translate":"luigis_mansion:message.the_end.f_rank"}]}
@@ -87,7 +51,7 @@ execute if entity @s[scores={Dialog=639}] if score #temp Money matches 50000..59
 execute if entity @s[scores={Dialog=639}] if score #temp Money matches 60000..69999 run advancement grant @a only luigis_mansion:lab/c_rank
 execute if entity @s[scores={Dialog=639}] if score #temp Money matches 70000..149999 run advancement grant @a only luigis_mansion:lab/b_rank
 execute if entity @s[scores={Dialog=639}] if score #temp Money matches 150000.. run advancement grant @a only luigis_mansion:lab/a_rank
-execute if entity @s[scores={Dialog=639}] if data storage luigis_mansion:data current_state.current_data.money{gold_coin:0,bill:0,gold_bar:0,blue_sapphire:0,green_emerald:0,red_ruby:0,red_diamond:1,blue_diamond:0,gold_diamond:0,small_pearl:0,medium_pearl:0,big_pearl:0} run advancement grant @a only luigis_mansion:challenges/spare_some_change
+execute if entity @s[scores={Dialog=639}] if score #temp Money matches 5 if data storage luigis_mansion:data current_state.current_data.money_grabbed[{money:{red_diamond:1}}] run advancement grant @a only luigis_mansion:challenges/spare_some_change
 execute if entity @s[scores={Dialog=639}] if score #temp Money matches 142390.. run advancement grant @a only luigis_mansion:challenges/making_wario_jealous
 execute if entity @s[scores={Dialog=639}] if score #temp Money matches 186440.. run advancement grant @a only luigis_mansion:challenges/scrooge_mcduck_it_up
 execute if entity @s[scores={Dialog=639}] run scoreboard players reset #temp Money

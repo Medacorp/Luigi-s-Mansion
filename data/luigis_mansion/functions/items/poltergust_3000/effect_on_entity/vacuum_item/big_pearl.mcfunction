@@ -1,1 +1,1 @@
-execute positioned ~ ~-1.1 ~ as @e[tag=vacuumable,distance=..1.4,tag=item,tag=big_pearl] positioned as @s positioned ~ ~1.2 ~ if block ^ ^ ^0.3 #luigis_mansion:item_pull_ignore positioned ~ ~-1.2 ~ run function luigis_mansion:entities/item/pull
+execute positioned ~ ~-1.1 ~ as @e[tag=vacuumable,distance=..1.4,tag=item,tag=big_pearl] positioned as @s run function luigis_mansion:entities/item/pull

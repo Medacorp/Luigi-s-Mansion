@@ -18,6 +18,6 @@
         }
     },
 	"rewards": {
-		"function": "luigis_mansion:advancements/challenge/look_at_me_full_of_bravery"
+		"function": "luigis_mansion:advancements/challenges/look_at_me_full_of_bravery"
 	}
 }

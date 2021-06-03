@@ -19,8 +19,8 @@ execute if entity @s[scores={Dialog=58}] if entity @a[scores={EGaddGPRChoice=1}]
 execute if entity @s[scores={Dialog=58}] if entity @a[scores={EGaddGPRChoice=2}] run tellraw @a[tag=same_room] {"translate":"chat.type.text","with":[{"translate":"luigis_mansion:entity.e_gadd","color":"green"},{"translate":"luigis_mansion:dialog.ghost_portrificationizer_room.gallery.1"}]}
 execute if entity @s[scores={Dialog=58}] if entity @a[scores={EGaddGPRChoice=2}] run scoreboard players add @s Dialog 8
 execute if entity @s[scores={Dialog=58}] if entity @a[scores={EGaddGPRChoice=3}] run tellraw @a[tag=same_room] {"translate":"chat.type.text","with":[{"translate":"luigis_mansion:entity.e_gadd","color":"green"},{"translate":"luigis_mansion:dialog.ghost_portrificationizer_room.nothing.1"}]}
-execute if entity @s[scores={Dialog=74}] if entity @a[scores={EGaddGPRChoice=1},limit=1] as @a[tag=same_room] run function luigis_mansion:entities/e_gadd/to_lab
-execute if entity @s[scores={Dialog=74}] if entity @a[scores={EGaddGPRChoice=2},limit=1] as @a[tag=same_room] run function luigis_mansion:entities/e_gadd/to_gallery
+execute if entity @s[scores={Dialog=74}] if entity @a[scores={EGaddGPRChoice=1},limit=1] as @a[tag=same_room] run function luigis_mansion:room/underground_lab/warp_to
+execute if entity @s[scores={Dialog=74}] if entity @a[scores={EGaddGPRChoice=2},limit=1] as @a[tag=same_room] run function luigis_mansion:room/gallery/warp_to
 execute if entity @s[scores={Dialog=74}] run scoreboard players set @a EGaddGPRChoice 0
 tag @s[scores={Dialog=74}] remove talk
 execute unless entity @e[tag=same_room,tag=!spectator,distance=..7,limit=1] run tag @s remove talk

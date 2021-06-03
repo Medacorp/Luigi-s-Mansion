@@ -24,7 +24,7 @@ execute if entity @s[scores={Health=1..},tag=already_added_to_list] run function
 tag @s[scores={Health=1..}] remove already_added_to_list
 
 execute store result score #temp ActionTime run clear @s minecraft:carrot_on_a_stick{luigis_mansion:{id:"luigis_mansion:flashlight"}} 0
-execute if score #temp ActionTime matches 0 unless entity @s[scores={Shrunk=1..}] run give @s[advancements={luigis_mansion:lab/lab=true}] minecraft:carrot_on_a_stick{HideFlags:63,Unbreakable:1b,Damage:1,CustomModelData:1,display:{Name:'{"italic":false,"color":"white","translate":"luigis_mansion:item.flashlight"}'},luigis_mansion:{id:"luigis_mansion:flashlight"}}
+execute if score #temp ActionTime matches 0 unless entity @s[scores={Shrunk=1..}] run give @s minecraft:carrot_on_a_stick{HideFlags:63,Unbreakable:1b,Damage:1,CustomModelData:1,display:{Name:'{"italic":false,"color":"white","translate":"luigis_mansion:item.flashlight"}'},luigis_mansion:{id:"luigis_mansion:flashlight"}}
 execute store result score #temp ActionTime run clear @s minecraft:carrot_on_a_stick{luigis_mansion:{id:"luigis_mansion:poltergust_3000"}} 0
 execute if score #temp ActionTime matches 0 run scoreboard players reset @s[advancements={luigis_mansion:lab/lab=true}] Element
 execute if score #temp ActionTime matches 0 unless entity @s[scores={Shrunk=1..}] run give @s[advancements={luigis_mansion:lab/lab=true}] minecraft:carrot_on_a_stick{HideFlags:63,Unbreakable:1b,Damage:1,CustomModelData:0,display:{Name:'{"italic":false,"color":"white","translate":"luigis_mansion:item.poltergust_3000"}',Lore:['{"italic":false,"color":"gray","translate":"luigis_mansion:item.poltergust_3000.element","with":[{"translate":"luigis_mansion:item.poltergust_3000.element.none","color":"gray"}]}']},luigis_mansion:{id:"luigis_mansion:poltergust_3000",element:{type:0b}}}
@@ -39,7 +39,7 @@ execute if entity @s[scores={Walk=1..},tag=!looking_at_map] run particle minecra
 execute if entity @s[scores={Run=1..},tag=!looking_at_map] run particle minecraft:dust 0.5 0.5 0.5 2 ~ ~0.2 ~ 0 0 0 0 1
 execute if entity @s[scores={Sneak=1..},tag=!looking_at_map] run particle minecraft:dust 0.5 0.5 0.5 0.7 ~ ~0.2 ~ 0 0 0 0 1
 
-execute unless entity @s[scores={Room=-3}] if score #loaded_exterior Selected matches -1 if data storage luigis_mansion:data current_state.current_data.rooms run function luigis_mansion:entities/e_gadd/to_portrificationizer
+execute unless entity @s[scores={Room=-3}] if score #loaded_exterior Selected matches -1 unless score #mansion_type Selected matches -1 run function luigis_mansion:room/ghost_portrificationizer_room/warp_to
 
 tag @s[scores={MirrorX=-2147483648..},nbt=!{ActiveEffects:[{Id:14b}]}] add mirrored
 tag @s[scores={MirrorZ=-2147483648..},nbt=!{ActiveEffects:[{Id:14b}]}] add mirrored
