@@ -7,15 +7,7 @@ execute at @s as @e[tag=this_model] run teleport @s ~ ~0.5 ~
 
 execute if entity @s[tag=dying,scores={HurtTime=1}] run tag @e[tag=black_bogmire] add remove_from_existence
 execute if entity @s[tag=dying,scores={HurtTime=1}] run playsound luigis_mansion:entity.bogmire.vacuumed hostile @a[tag=same_room] ~ ~ ~ 1
-execute if entity @s[tag=dead] run function luigis_mansion:entities/bogmire/drop_loot
-execute if entity @s[tag=dead] run particle minecraft:dust 0.7 1 1 1 ~-0.1 ~ ~0.1 0.2 0.6 0.2 1 30
-execute if entity @s[tag=dead] run teleport @s ~ -100 ~
-execute if entity @s[tag=dead] as @a run function luigis_mansion:entities/ghost/boss_damage
-execute if entity @s[tag=dead] if score #temp Damage matches ..19 run data modify storage luigis_mansion:data current_state.current_data.portrait_ghosts.bogmire.rank set value 2b
-execute if entity @s[tag=dead] if score #temp Damage matches 20..49 run data modify storage luigis_mansion:data current_state.current_data.portrait_ghosts.bogmire.rank set value 1b
-execute if entity @s[tag=dead] store result storage luigis_mansion:data current_state.current_data.portrait_ghosts.bogmire.health int 1 run scoreboard players set @s Health 0
-execute if entity @s[tag=dead] run advancement grant @a only luigis_mansion:portrait_ghosts/bogmire
-execute if entity @s[tag=dead] run scoreboard players reset #temp Damage
+execute if entity @s[tag=dead] run function luigis_mansion:entities/bogmire/at_death
 execute if entity @s[tag=vanish] store result storage luigis_mansion:data current_state.current_data.portrait_ghosts.bogmire.health int 1 run scoreboard players operation @s LastHealth = @s Health
 
 execute if entity @s[scores={HurtTime=1},tag=hurt] run playsound luigis_mansion:entity.bogmire.hurt hostile @a[tag=same_room] ~ ~ ~ 1

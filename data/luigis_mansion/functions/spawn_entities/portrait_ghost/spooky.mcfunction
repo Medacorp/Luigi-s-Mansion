@@ -16,5 +16,6 @@ scoreboard players set @e[tag=spooky,tag=this_entity,limit=1] Move 4
 scoreboard players set @e[tag=spooky,tag=this_entity,limit=1] Sound 0
 scoreboard players set @e[tag=spooky,tag=this_entity,limit=1] StunTime 0
 scoreboard players set @e[tag=spooky,tag=this_entity,limit=1] VulnerableTime 0
+scoreboard players set @e[tag=spooky,tag=this_entity,limit=1] TopVacuumDamage 0
 tag @e[tag=spooky,tag=this_entity,limit=1] remove this_entity
 tag @e[tag=spooky_body,tag=this_entity,limit=1] remove this_entity

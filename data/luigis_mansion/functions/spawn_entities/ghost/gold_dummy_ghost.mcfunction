@@ -2,10 +2,12 @@ summon minecraft:armor_stand ~ ~ ~ {Rotation:[0.0f,90.0f],CustomName:'{"translat
 execute as @e[tag=this_entity,limit=1] store result score @s GhostNr run data get storage luigis_mansion:data ghost_nr
 execute as @e[tag=this_entity,limit=1] store result storage luigis_mansion:data ghost_nr int 1 run scoreboard players add @s GhostNr 1
 scoreboard players set @e[tag=this_entity,limit=1] Health 1000
+scoreboard players set @e[tag=this_entity,limit=1] LastHealth 1000
 teleport @e[tag=this_entity,limit=1] ~ ~ ~ facing entity @p[gamemode=!spectator]
 scoreboard players set @e[tag=this_entity,limit=1] PullStrength 20
 scoreboard players set @e[tag=this_entity,limit=1] Move 2
 scoreboard players set @e[tag=this_entity,limit=1] Sound 0
 scoreboard players set @e[tag=this_entity,limit=1] StunTime 0
 scoreboard players set @e[tag=this_entity,limit=1] VulnerableTime 0
+scoreboard players set @e[tag=this_entity,limit=1] TopVacuumDamage 0
 tag @e[tag=this_entity,limit=1] remove this_entity

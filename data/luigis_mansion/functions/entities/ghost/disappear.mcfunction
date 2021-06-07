@@ -15,6 +15,7 @@ tag @s[tag=disappear_on_vanish] add remove_from_existence
 scoreboard players set @s SpawnTime 200
 scoreboard players set @s Time 0
 scoreboard players set @s ActionTime 0
+scoreboard players operation @s LastHealth = @s Health
 tag @s remove disappear
 tag @s remove disappear_next_tick
 tag @s remove hurt_animation

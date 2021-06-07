@@ -3,7 +3,6 @@ scoreboard players set @s[scores={HurtTime=1..},tag=!hurt_animation] HurtTime 0
 scoreboard players set @s[scores={AnimationProg=1..},tag=!hurt_animation] AnimationProg 0
 scoreboard players add @s[scores={HurtTime=1..29}] HurtTime 1
 execute unless entity @s[scores={HurtTime=1..}] run scoreboard players set @s HurtTime 1
-execute if entity @s[scores={HurtTime=1},tag=complain,tag=mr_bones] run function luigis_mansion:entities/mr_bones/correct_height
 tag @s[scores={HurtTime=1}] remove attack
 tag @s[scores={HurtTime=1}] remove laugh
 tag @s[scores={HurtTime=1}] remove complain

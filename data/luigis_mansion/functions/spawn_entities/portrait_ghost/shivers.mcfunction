@@ -17,5 +17,6 @@ scoreboard players set @e[tag=shivers,tag=this_entity,limit=1] Move 2
 scoreboard players set @e[tag=shivers,tag=this_entity,limit=1] Sound 0
 scoreboard players set @e[tag=shivers,tag=this_entity,limit=1] StunTime 0
 scoreboard players set @e[tag=shivers,tag=this_entity,limit=1] VulnerableTime 0
+scoreboard players set @e[tag=shivers,tag=this_entity,limit=1] TopVacuumDamage 0
 tag @e[tag=shivers,tag=this_entity,limit=1] remove this_entity
 tag @e[tag=shivers_body,tag=this_entity,limit=1] remove this_entity

@@ -57,6 +57,7 @@ scoreboard players set @s Sneaking 0
 scoreboard players set @s Walk 0
 scoreboard players set @s Run 0
 scoreboard players set @s Jump 0
+scoreboard players set @s ReadBook 0
 execute unless entity @s[scores={Room=1..}] run scoreboard players set @s LastFloor -2
 execute store result score @s JumpHeight run data get entity @s Pos[1] 100
 

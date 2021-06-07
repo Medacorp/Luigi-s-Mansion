@@ -4,17 +4,7 @@ execute if entity @s[tag=dying,tag=boo_death] run function luigis_mansion:entiti
 execute if entity @s[tag=dying,tag=boo_hurt] run function luigis_mansion:entities/ghost/death
 
 execute if entity @s[tag=dying,scores={HurtTime=1}] run playsound luigis_mansion:entity.king_boo.vacuumed hostile @a[tag=same_room] ~ ~ ~ 1
-execute if entity @s[tag=dead,tag=!warp,tag=!secret_altar] run function luigis_mansion:entities/king_boo/drop_loot
-execute if entity @s[tag=dead,tag=!warp,tag=!secret_altar] run particle minecraft:dust 0.7 1 1 1 ~-0.1 ~ ~0.1 0.2 0.6 0.2 1 30
-execute if entity @s[tag=dead] run teleport @s ~ -100 ~
-execute if entity @s[tag=dead] run tag @e[tag=bowser] add dead
-execute if entity @s[tag=dead] run tag @e[tag=bowser_body] add dead
-execute if entity @s[tag=dead,tag=!warp,tag=!secret_altar] as @a run function luigis_mansion:entities/ghost/boss_damage
-execute if entity @s[tag=dead,tag=!warp,tag=!secret_altar] if score #temp Damage matches ..9 run data modify storage luigis_mansion:data current_state.current_data.portrait_ghosts.king_boo.rank set value 2b
-execute if entity @s[tag=dead,tag=!warp,tag=!secret_altar] if score #temp Damage matches 10..49 run data modify storage luigis_mansion:data current_state.current_data.portrait_ghosts.king_boo.rank set value 1b
-execute if entity @s[tag=dead,tag=!warp,tag=!secret_altar] store result storage luigis_mansion:data current_state.current_data.portrait_ghosts.king_boo.health int 1 run scoreboard players set @s Health 0
-execute if entity @s[tag=dead,tag=!warp,tag=!secret_altar] run advancement grant @a only luigis_mansion:portrait_ghosts/king_boo
-execute if entity @s[tag=dead,tag=!warp,tag=!secret_altar] run scoreboard players reset #temp Damage
+execute if entity @s[tag=dead,tag=!warp,tag=!secret_altar] run function luigis_mansion:entities/king_boo/at_death
 execute if entity @s[tag=disappear,tag=!warp,tag=!secret_altar] store result storage luigis_mansion:data current_state.current_data.portrait_ghosts.king_boo.health int 1 run scoreboard players operation @s LastHealth = @s Health
 
 execute if entity @s[tag=!boo_hurt,tag=fleeing,tag=!dying] run function luigis_mansion:entities/king_boo/hurt

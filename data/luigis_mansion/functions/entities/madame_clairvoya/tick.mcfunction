@@ -3,11 +3,7 @@ execute as @e[tag=madame_clairvoya_head] if score @s GhostNr = #temp GhostNr run
 execute as @e[tag=madame_clairvoya_body] if score @s GhostNr = #temp GhostNr run tag @s add this_model
 
 execute if entity @s[tag=dying,scores={HurtTime=1}] run playsound luigis_mansion:entity.madame_clairvoya.vacuumed hostile @a[tag=same_room] ~ ~ ~ 1
-execute if entity @s[tag=dead] run function luigis_mansion:entities/madame_clairvoya/drop_loot
-execute if entity @s[tag=dead] run particle minecraft:dust 0.7 1 1 1 ~-0.1 ~ ~0.1 0.2 0.6 0.2 1 30
-execute if entity @s[tag=dead] run teleport @s ~ -100 ~
-execute if entity @s[tag=dead] store result storage luigis_mansion:data current_state.current_data.portrait_ghosts.madame_clairvoya.health int 1 run scoreboard players set @s Health 0
-execute if entity @s[tag=dead] run advancement grant @a only luigis_mansion:portrait_ghosts/madame_clairvoya
+execute if entity @s[tag=dead] run function luigis_mansion:entities/madame_clairvoya/at_death
 execute if entity @s[tag=vanish] store result storage luigis_mansion:data current_state.current_data.portrait_ghosts.madame_clairvoya.health int 1 run scoreboard players operation @s LastHealth = @s Health
 
 execute if entity @s[scores={HurtTime=1},tag=hurt] run playsound luigis_mansion:entity.madame_clairvoya.hurt hostile @a[tag=same_room] ~ ~ ~ 1

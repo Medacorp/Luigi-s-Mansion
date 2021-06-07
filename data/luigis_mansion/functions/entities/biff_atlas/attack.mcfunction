@@ -1,5 +1,9 @@
-execute if entity @s[scores={Sound=0}] run playsound luigis_mansion:entity.biff_atlas.attack hostile @a[tag=same_room] ~ ~ ~ 1
-execute if entity @s[scores={Sound=0}] run scoreboard players set @s[scores={Sound=0}] Sound 10
+scoreboard players add @s ActionTime 1
+scoreboard players set @s[scores={ActionTime=1}] AnimationProg 0
+execute if entity @s[scores={ActionTime=1}] run playsound luigis_mansion:entity.biff_atlas.attack hostile @a[tag=same_room] ~ ~ ~ 1
 execute as @e[distance=..2,tag=gameboy_horror_location] run function luigis_mansion:entities/gameboy_horror_location/bring_player_back
 effect give @a[distance=..2,gamemode=!spectator] minecraft:instant_damage 1 0 true
 scoreboard players set @a[distance=..2,gamemode=!spectator] ForcedDamage 4
+function luigis_mansion:animations/biff_atlas/attack
+tag @s[scores={ActionTime=10}] remove attack
+scoreboard players set @s[scores={ActionTime=10}] ActionTime 0

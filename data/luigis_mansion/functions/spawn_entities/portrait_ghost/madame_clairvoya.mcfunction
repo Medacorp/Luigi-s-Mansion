@@ -19,6 +19,7 @@ scoreboard players set @e[tag=madame_clairvoya,tag=this_entity,limit=1] Move 4
 scoreboard players set @e[tag=madame_clairvoya,tag=this_entity,limit=1] Sound 0
 scoreboard players set @e[tag=madame_clairvoya,tag=this_entity,limit=1] StunTime 0
 scoreboard players set @e[tag=madame_clairvoya,tag=this_entity,limit=1] VulnerableTime 0
+scoreboard players set @e[tag=madame_clairvoya,tag=this_entity,limit=1] TopVacuumDamage 0
 scoreboard players set @e[tag=madame_clairvoya,tag=this_entity,limit=1] ClairvoyaSpoke 0
 execute if data storage luigis_mansion:data current_state.current_data.technical_data{shown_marios_hat:1b} run scoreboard players add @e[tag=madame_clairvoya,tag=this_entity,limit=1] ClairvoyaSpoke 1
 execute if data storage luigis_mansion:data current_state.current_data.technical_data{shown_marios_letter:1b} run scoreboard players add @e[tag=madame_clairvoya,tag=this_entity,limit=1] ClairvoyaSpoke 1

@@ -1,1 +1,0 @@
-scoreboard players set #observatory Wave 100

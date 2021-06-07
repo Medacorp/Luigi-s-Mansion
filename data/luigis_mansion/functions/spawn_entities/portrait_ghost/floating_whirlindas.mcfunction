@@ -22,6 +22,7 @@ scoreboard players set @e[tag=floating_whirlindas,tag=this_entity,limit=1] Move 
 scoreboard players set @e[tag=floating_whirlindas,tag=this_entity,limit=1] Sound 0
 scoreboard players set @e[tag=floating_whirlindas,tag=this_entity,limit=1] StunTime 0
 scoreboard players set @e[tag=floating_whirlindas,tag=this_entity,limit=1] VulnerableTime 0
+scoreboard players set @e[tag=floating_whirlindas,tag=this_entity,limit=1] TopVacuumDamage 0
 tag @e[tag=floating_whirlindas,tag=this_entity,limit=1] remove this_entity
 tag @e[tag=floating_whirlindas_body,tag=this_entity,limit=1] remove this_entity
 tag @e[tag=floating_whirlindas_female,tag=this_entity,limit=1] remove this_entity

@@ -1,5 +1,6 @@
 scoreboard players operation #temp GhostNr = @s GhostNr
 execute as @e[tag=mr_bones_body] if score @s GhostNr = #temp GhostNr run tag @s add this_model
+execute if entity @s[scores={HurtTime=1},tag=complain,tag=mr_bones] run function luigis_mansion:entities/mr_bones/correct_height
 
 execute if entity @s[tag=dying,tag=normal_death,scores={HurtTime=1}] run playsound luigis_mansion:entity.mr_bones.vacuumed hostile @a[tag=same_room] ~ ~ ~ 1
 execute if entity @s[tag=dying,tag=element_death,scores={HurtTime=1}] run playsound luigis_mansion:entity.mr_bones.element_death hostile @a[tag=same_room] ~ ~ ~ 1

@@ -13,6 +13,7 @@ execute unless score #temp LastHealth = #temp Health run particle minecraft:dama
 scoreboard players reset #temp LastHealth
 scoreboard players reset #temp Health
 execute at @s[tag=portrait_ghost,tag=pearl_dropper,scores={Room=1..,Health=1..}] run function luigis_mansion:entities/ghost/pearl_dropper
+function luigis_mansion:entities/ghost/top_vacuum_damage
 tag @s remove attack
 tag @s remove laugh
 tag @s remove complain

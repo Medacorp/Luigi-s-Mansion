@@ -1,0 +1,4 @@
+execute store result score #temp Time run data get storage luigis_mansion:data current_state.current_data.in_mansion_time
+execute unless score #temp Time matches 2147483647 store result storage luigis_mansion:data current_state.current_data.in_mansion_time int 1 run scoreboard players add #temp Time 1
+execute store result score #temp Time run data get storage luigis_mansion:data current_state.current_data.lowest_health_moment
+execute store result storage luigis_mansion:data current_state.current_data.lowest_health_moment int 1 run scoreboard players operation #temp Time < @a Health

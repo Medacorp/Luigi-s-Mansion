@@ -242,3 +242,4 @@ execute if score #king_boo_battle Ticking matches 1 unless entity @a[gamemode=!s
 execute if score #clockwork_room_elevator Searched matches 1 run function luigis_mansion:room/normal/clockwork_room/raise_elevator
 execute if score #clockwork_room_elevator Searched matches -1 run function luigis_mansion:room/normal/clockwork_room/lower_elevator
 execute unless entity @a[tag=blackout_lightning,limit=1] if predicate luigis_mansion:lightning_strike_chance run function luigis_mansion:other/lightning_strike
+execute if data storage luigis_mansion:data {found_e_gadd:1b} if entity @a[scores={Room=1..},gamemode=!spectator] run function luigis_mansion:room/update_stats
