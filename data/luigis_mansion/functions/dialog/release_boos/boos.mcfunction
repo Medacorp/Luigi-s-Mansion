@@ -24,6 +24,7 @@ execute if entity @s[scores={Dialog=250}] run function luigis_mansion:spawn_enti
 execute if entity @s[scores={Dialog=255}] run function luigis_mansion:spawn_entities/boo/cutscene
 execute if entity @s[scores={Dialog=260}] run function luigis_mansion:spawn_entities/boo/cutscene
 execute if entity @s[scores={Dialog=265}] run function luigis_mansion:spawn_entities/portrait_ghost/king_boo/cutscene
+execute if entity @s[scores={Dialog=265}] run tag @e[tag=king_boo,distance=..0.7,limit=1] add cutscene
 execute if entity @s[scores={Dialog=270}] run function luigis_mansion:spawn_entities/boo/cutscene
 execute if entity @s[scores={Dialog=275}] run function luigis_mansion:spawn_entities/boo/cutscene
 execute if entity @s[scores={Dialog=280}] run function luigis_mansion:spawn_entities/boo/cutscene

@@ -12,20 +12,14 @@ execute as @e[tag=madame_clairvoya,tag=this_entity,limit=1] store result score @
 execute as @e[tag=madame_clairvoya,tag=this_entity,limit=1] store result score @s HomeY run data get entity @s Pos[1] 100
 execute as @e[tag=madame_clairvoya,tag=this_entity,limit=1] store result score @s HomeZ run data get entity @s Pos[2] 100
 execute as @e[tag=madame_clairvoya,tag=this_entity,limit=1] store result score @s HomeRot run data get entity @s Rotation[0]
-execute as @e[tag=this_entity,limit=1] store result score @s PrevHealth store result score @s LastHealth store result score @s Health run data get storage luigis_mansion:data current_state.current_data.portrait_ghosts.madame_clairvoya.health
-execute as @e[tag=this_entity,limit=1] store result score @s MaxHealth run data get storage luigis_mansion:data current_state.current_data.portrait_ghosts.madame_clairvoya.max_health
+execute as @e[tag=madame_clairvoya,tag=this_entity,limit=1] store result score @s PrevHealth store result score @s LastHealth store result score @s Health run data get storage luigis_mansion:data current_state.current_data.portrait_ghosts.madame_clairvoya.health
+execute as @e[tag=madame_clairvoya,tag=this_entity,limit=1] store result score @s MaxHealth run data get storage luigis_mansion:data current_state.current_data.portrait_ghosts.madame_clairvoya.max_health
+execute as @e[tag=madame_clairvoya,tag=this_entity,limit=1] store result score @s TopVacuumDamage run data get storage luigis_mansion:data current_state.current_data.portrait_ghosts.madame_clairvoya.top_vacuum_damage
 scoreboard players set @e[tag=madame_clairvoya,tag=this_entity,limit=1] PullStrength 10
 scoreboard players set @e[tag=madame_clairvoya,tag=this_entity,limit=1] Move 4
 scoreboard players set @e[tag=madame_clairvoya,tag=this_entity,limit=1] Sound 0
 scoreboard players set @e[tag=madame_clairvoya,tag=this_entity,limit=1] StunTime 0
 scoreboard players set @e[tag=madame_clairvoya,tag=this_entity,limit=1] VulnerableTime 0
-scoreboard players set @e[tag=madame_clairvoya,tag=this_entity,limit=1] TopVacuumDamage 0
-scoreboard players set @e[tag=madame_clairvoya,tag=this_entity,limit=1] ClairvoyaSpoke 0
-execute if data storage luigis_mansion:data current_state.current_data.technical_data{shown_marios_hat:1b} run scoreboard players add @e[tag=madame_clairvoya,tag=this_entity,limit=1] ClairvoyaSpoke 1
-execute if data storage luigis_mansion:data current_state.current_data.technical_data{shown_marios_letter:1b} run scoreboard players add @e[tag=madame_clairvoya,tag=this_entity,limit=1] ClairvoyaSpoke 1
-execute if data storage luigis_mansion:data current_state.current_data.technical_data{shown_marios_star:1b} run scoreboard players add @e[tag=madame_clairvoya,tag=this_entity,limit=1] ClairvoyaSpoke 1
-execute if data storage luigis_mansion:data current_state.current_data.technical_data{shown_marios_glove:1b} run scoreboard players add @e[tag=madame_clairvoya,tag=this_entity,limit=1] ClairvoyaSpoke 1
-execute if data storage luigis_mansion:data current_state.current_data.technical_data{shown_marios_shoe:1b} run scoreboard players add @e[tag=madame_clairvoya,tag=this_entity,limit=1] ClairvoyaSpoke 1
 tag @e[tag=madame_clairvoya,tag=this_entity,limit=1] remove this_entity
 tag @e[tag=madame_clairvoya_head,tag=this_entity,limit=1] remove this_entity
 tag @e[tag=madame_clairvoya_body,tag=this_entity,limit=1] remove this_entity

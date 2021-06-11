@@ -1,6 +1,7 @@
 execute if entity @s[tag=dying,scores={HurtTime=1}] run playsound luigis_mansion:entity.orville.vacuumed hostile @a[tag=same_room] ~ ~ ~ 1
 execute if entity @s[tag=dead] run function luigis_mansion:entities/orville/at_death
 execute if entity @s[tag=vanish] store result storage luigis_mansion:data current_state.current_data.portrait_ghosts.henry_and_orville.orville_health int 1 run scoreboard players operation @s LastHealth = @s Health
+execute if entity @s[tag=vanish] store result storage luigis_mansion:data current_state.current_data.portrait_ghosts.henry_and_orville.orville_top_vacuum_damage int 1 run scoreboard players get @s TopVacuumDamage
 
 tag @s[tag=remove_hide_and_seek] add dead
 

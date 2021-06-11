@@ -31,7 +31,7 @@ tag @s remove fleeing
 execute if entity @s[tag=warp,scores={Room=1..}] run function #luigis_mansion:entities/king_boo/warp
 execute if entity @s[tag=secret_altar] run function luigis_mansion:entities/king_boo/secret_altar
 execute if entity @s[tag=cutscene] run function luigis_mansion:entities/king_boo/cutscene
-execute if entity @s[tag=battle] run function luigis_mansion:entities/king_boo/battle
+execute if entity @s[tag=fight] run function luigis_mansion:entities/king_boo/fight
 tag @s[tag=vanish] add dead
 execute if entity @s[tag=vanish] store result storage luigis_mansion:data current_state.current_data.portrait_ghosts.king_boo.health int 1 run scoreboard players get @s Health
 tag @s remove boo_hurt

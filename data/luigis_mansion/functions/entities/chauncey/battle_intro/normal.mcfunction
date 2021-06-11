@@ -19,6 +19,7 @@ execute if entity @s[scores={Dialog=120}] positioned ~-34.5 ~12 ~-3.5 run functi
 execute if entity @s[scores={Dialog=120}] positioned ~-34.5 ~12 ~1.5 run function luigis_mansion:spawn_entities/rocking_horse/intro
 execute if entity @s[scores={Dialog=120}] positioned ~-30.5 ~10 ~-1.5 run function luigis_mansion:spawn_entities/rocking_horse/intro
 execute if entity @s[scores={Dialog=120}] positioned ~-30.5 ~10 ~3.5 run function luigis_mansion:spawn_entities/rocking_horse/intro
+execute if entity @s[scores={Dialog=330}] run function luigis_mansion:entities/chauncey/turn_visible_big
 execute if entity @s[scores={Dialog=330..420}] run teleport @s ~ ~0.1 ~
 scoreboard players set @s[scores={Dialog=400}] AnimationProg 0
 tag @s[scores={Dialog=400}] add look_down

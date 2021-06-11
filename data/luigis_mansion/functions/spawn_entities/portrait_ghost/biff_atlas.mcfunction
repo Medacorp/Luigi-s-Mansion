@@ -9,13 +9,13 @@ execute as @e[tag=biff_atlas,tag=this_entity,limit=1] store result score @s Home
 execute as @e[tag=biff_atlas,tag=this_entity,limit=1] store result score @s HomeY run data get entity @s Pos[1] 100
 execute as @e[tag=biff_atlas,tag=this_entity,limit=1] store result score @s HomeZ run data get entity @s Pos[2] 100
 execute as @e[tag=biff_atlas,tag=this_entity,limit=1] store result score @s HomeRot run data get entity @s Rotation[0]
-execute as @e[tag=this_entity,limit=1] store result score @s PrevHealth store result score @s LastHealth store result score @s Health run data get storage luigis_mansion:data current_state.current_data.portrait_ghosts.biff_atlas.health
-execute as @e[tag=this_entity,limit=1] store result score @s MaxHealth run data get storage luigis_mansion:data current_state.current_data.portrait_ghosts.biff_atlas.max_health
+execute as @e[tag=biff_atlas,tag=this_entity,limit=1] store result score @s PrevHealth store result score @s LastHealth store result score @s Health run data get storage luigis_mansion:data current_state.current_data.portrait_ghosts.biff_atlas.health
+execute as @e[tag=biff_atlas,tag=this_entity,limit=1] store result score @s MaxHealth run data get storage luigis_mansion:data current_state.current_data.portrait_ghosts.biff_atlas.max_health
+execute as @e[tag=biff_atlas,tag=this_entity,limit=1] store result score @s TopVacuumDamage run data get storage luigis_mansion:data current_state.current_data.portrait_ghosts.biff_atlas.top_vacuum_damage
 scoreboard players set @e[tag=biff_atlas,tag=this_entity,limit=1] PullStrength 10
 scoreboard players set @e[tag=biff_atlas,tag=this_entity,limit=1] Move 4
 scoreboard players set @e[tag=biff_atlas,tag=this_entity,limit=1] Sound 0
 scoreboard players set @e[tag=biff_atlas,tag=this_entity,limit=1] StunTime 0
 scoreboard players set @e[tag=biff_atlas,tag=this_entity,limit=1] VulnerableTime 0
-scoreboard players set @e[tag=biff_atlas,tag=this_entity,limit=1] TopVacuumDamage 0
 tag @e[tag=biff_atlas,tag=this_entity,limit=1] remove this_entity
 tag @e[tag=biff_atlas_body,tag=this_entity,limit=1] remove this_entity

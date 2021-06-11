@@ -4,6 +4,7 @@ execute as @e[tag=lydia_body] if score @s GhostNr = #temp GhostNr run tag @s add
 execute if entity @s[tag=dying,scores={HurtTime=1}] run playsound luigis_mansion:entity.lydia.vacuumed hostile @a[tag=same_room] ~ ~ ~ 1
 execute if entity @s[tag=dead] run function luigis_mansion:entities/lydia/at_death
 execute if entity @s[tag=vanish] store result storage luigis_mansion:data current_state.current_data.portrait_ghosts.lydia.health int 1 run scoreboard players operation @s LastHealth = @s Health
+execute if entity @s[tag=vanish] store result storage luigis_mansion:data current_state.current_data.portrait_ghosts.lydia.top_vacuum_damage int 1 run scoreboard players get @s TopVacuumDamage
 
 execute if entity @s[scores={HurtTime=1},tag=hurt] run playsound luigis_mansion:entity.lydia.hurt hostile @a[tag=same_room] ~ ~ ~ 1
 scoreboard players set @s[scores={HurtTime=1},tag=hurt] Sound 40

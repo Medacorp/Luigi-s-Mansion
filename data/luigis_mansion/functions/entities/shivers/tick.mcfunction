@@ -4,6 +4,7 @@ execute as @e[tag=shivers_body] if score @s GhostNr = #temp GhostNr run tag @s a
 execute if entity @s[tag=dying,scores={HurtTime=1}] run playsound luigis_mansion:entity.shivers.vacuumed hostile @a[tag=same_room] ~ ~ ~ 1
 execute if entity @s[tag=dead] run function luigis_mansion:entities/shivers/at_death
 execute if entity @s[tag=vanish] store result storage luigis_mansion:data current_state.current_data.portrait_ghosts.shivers.health int 1 run scoreboard players operation @s LastHealth = @s Health
+execute if entity @s[tag=vanish] store result storage luigis_mansion:data current_state.current_data.portrait_ghosts.shivers.top_vacuum_damage int 1 run scoreboard players get @s TopVacuumDamage
 
 execute if entity @s[scores={HurtTime=1},tag=hurt] run playsound luigis_mansion:entity.shivers.hurt hostile @a[tag=same_room] ~ ~ ~ 1
 scoreboard players set @s[scores={HurtTime=1},tag=hurt] Sound 40

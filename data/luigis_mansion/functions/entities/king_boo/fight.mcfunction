@@ -6,4 +6,4 @@ execute at @s[tag=!fleeing,tag=!boo_hurt,scores={Wave=1..120}] if score #temp Mo
 scoreboard players set @s[tag=!boo_hurt,tag=!fleeing,tag=!dying] ActionTime 0
 scoreboard players reset @s[tag=!boo_hurt,tag=!fleeing,tag=!dying] HurtTime
 tag @s remove vanish
-execute if entity @s[scores={Wave=121..}] run function luigis_mansion:entities/king_boo/battle_to_bowser
+execute if entity @s[scores={Wave=121..}] run function luigis_mansion:entities/king_boo/flee_to_bowser
