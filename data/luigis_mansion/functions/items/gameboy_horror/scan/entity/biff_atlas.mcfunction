@@ -1,0 +1,2 @@
+execute if entity @s[tag=biff_atlas] if score #players Totals matches 1 run tellraw @a {"translate":"chat.type.text","with":[{"translate":"luigis_mansion:entity.biff_atlas","color":"green"},{"translate":"luigis_mansion:message.biff_atlas.scan"}]}
+execute if entity @s[tag=biff_atlas] if score #players Totals matches 2.. run tellraw @a {"translate":"chat.type.text","with":[{"translate":"luigis_mansion:entity.biff_atlas","color":"green"},{"translate":"luigis_mansion:message.biff_atlas.scan.more"}]}

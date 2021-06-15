@@ -1,0 +1,2 @@
+execute if entity @s[tag=neville] if score #players Totals matches 1 run tellraw @a {"translate":"chat.type.text","with":[{"translate":"luigis_mansion:entity.neville","color":"green"},{"translate":"luigis_mansion:message.neville.scan"}]}
+execute if entity @s[tag=neville] if score #players Totals matches 2.. run tellraw @a {"translate":"chat.type.text","with":[{"translate":"luigis_mansion:entity.neville","color":"green"},{"translate":"luigis_mansion:message.neville.scan.more"}]}

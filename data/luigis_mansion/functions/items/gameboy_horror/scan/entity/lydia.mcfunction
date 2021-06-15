@@ -1,0 +1,1 @@
+execute if entity @s[tag=lydia] run tellraw @a {"translate":"chat.type.text","with":[{"translate":"luigis_mansion:entity.lydia","color":"green"},{"translate":"luigis_mansion:message.lydia.scan"}]}

@@ -1,0 +1,2 @@
+execute if entity @s[tag=slim_bankshot] if score #players Totals matches 1 run tellraw @a {"translate":"chat.type.text","with":[{"translate":"luigis_mansion:entity.slim_bankshot","color":"green"},{"translate":"luigis_mansion:message.slim_bankshot.scan"}]}
+execute if entity @s[tag=slim_bankshot] if score #players Totals matches 2.. run tellraw @a {"translate":"chat.type.text","with":[{"translate":"luigis_mansion:entity.slim_bankshot","color":"green"},{"translate":"luigis_mansion:message.slim_bankshot.scan.more"}]}

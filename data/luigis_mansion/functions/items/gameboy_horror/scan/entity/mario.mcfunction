@@ -1,0 +1,1 @@
+execute if entity @s[tag=mario,tag=panic] run tellraw @a {"translate":"chat.type.text","with":[{"selector":"@s","color":"green"},{"translate":"luigis_mansion:message.player.scan_furniture.51"}]}

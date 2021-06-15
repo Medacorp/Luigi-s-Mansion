@@ -1,0 +1,1 @@
+execute as @s[type=minecraft:player] run function luigis_mansion:items/gameboy_horror/scan/entity/player_return

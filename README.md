@@ -3,6 +3,8 @@ To receive development build updates, pull from https://github.com/Dhranios/Luig
 NOTE: doing this will not apply any in-world changes, only functionality changes.
 
 # Official add-ons
+When making your own, consider supporting these, as players may instal them as well.
+
 * [Luigi's Mansion 3DS Remake](https://github.com/Dhranios/Luigi-s-Mansion-3DS-Remake)
 
 # Predefined mansions
@@ -71,12 +73,6 @@ Examples: max 100->70+10 damage -> 70/70; max 100->70+50 damage -> 50/70
 Deal damage 1 tick after setting max health to have it "stack" with the max health limitation.
 
 Max health will return to 100 after 5 to 10 seconds depending on how much the player moves. This timer resets whenever the player is scared by a ghost.
-
-## 3DS Remake add-on changes
-Ghost behavioral changes the add-on applies:
-* Using a flashlight on a temper terror, flash or blue blaze makes them "smug", laugh and then disappear, rather than ignore and continue moving/attacking; the functions for being smug exist in the base map.
-
-Room -4 is the gallery, regardless of add-on or not. The add-on will simply teleport players in the old gallery to the new one, and never start ticking the old one.
 
 ## Special scores
 Negative Room values are reserved for non-mansion rooms and Room 0 the boo woods, all positive room scores can be used freely; the GBH map can have a range of "valid" rooms to open the map in
