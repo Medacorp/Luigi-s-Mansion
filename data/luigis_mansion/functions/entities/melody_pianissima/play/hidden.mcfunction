@@ -41,7 +41,7 @@ tag @s[scores={Dialog=1200}] remove rage
 execute if entity @s[scores={Dialog=1200}] if score #players Totals matches 1 run tellraw @a[tag=same_room] {"translate":"chat.type.text","with":[{"translate":"luigis_mansion:entity.melody_pianissima","color":"green"},{"translate":"luigis_mansion:dialog.melody_pianissima.no.3"}]}
 execute if entity @s[scores={Dialog=1200}] if score #players Totals matches 2.. run tellraw @a[tag=same_room] {"translate":"chat.type.text","with":[{"translate":"luigis_mansion:entity.melody_pianissima","color":"green"},{"translate":"luigis_mansion:dialog.melody_pianissima.no.3.more"}]}
 execute if entity @s[scores={Dialog=1272}] run scoreboard players set #conservatory Wave -1
-execute if entity @s[scores={Dialog=1272}] as @a[scores={MusicType=23}] run function luigis_mansion:other/music/set/room
+execute if entity @s[scores={Dialog=1272}] as @a[scores={MusicType=23},gamemode=!spectator] run function luigis_mansion:other/music/set/room
 scoreboard players set @s[scores={Dialog=1272}] AnimationProg 0
 tag @s[scores={Dialog=1272}] add vanish
 tag @s[scores={Dialog=1332}] add remove_from_existence

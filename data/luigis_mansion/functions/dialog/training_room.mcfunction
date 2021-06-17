@@ -87,8 +87,7 @@ execute if entity @s[scores={Dialog=2288}] if score #players Totals matches 1.. 
 execute if entity @s[scores={Dialog=2332}] if score #training GhostCaught matches ..3 run tag @s add shake
 execute if entity @s[scores={Dialog=2332}] if score #training GhostCaught matches ..3 run tag @s remove nod
 execute if entity @s[scores={Dialog=2332},tag=shake] run scoreboard players set @e[tag=this_model,tag=e_gadd_head,limit=1] AnimationProg 0
-execute if entity @s[scores={Dialog=2332}] run scoreboard players set @a[tag=same_room,scores={MusicType=3}] Music 0
-execute if entity @s[scores={Dialog=2332}] run scoreboard players set @a[tag=same_room,scores={MusicType=3}] MusicType 24
+execute if entity @s[scores={Dialog=2332}] as @a[tag=same_room] run function luigis_mansion:other/music/set/training_results
 execute if entity @s[scores={Dialog=2332}] run setblock 791 81 -3 minecraft:light[level=15,waterlogged=false]
 execute if entity @s[scores={Dialog=2332}] run setblock 791 81 -14 minecraft:light[level=15,waterlogged=false]
 execute if entity @s[scores={Dialog=2332}] if score #training GhostCaught matches 0 run tellraw @a[tag=same_room] {"translate":"chat.type.text","with":[{"translate":"luigis_mansion:entity.e_gadd","color":"green"},{"translate":"luigis_mansion:dialog.training_room.23.0"}]}

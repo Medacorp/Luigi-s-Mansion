@@ -1,2 +1,2 @@
-execute if score #mirrored Selected matches 0 run function luigis_mansion:animations/melody_pianissima/normal/flee
-execute if score #mirrored Selected matches 1 run function luigis_mansion:animations/melody_pianissima/mirrored/flee
+execute if score #mirrored Selected matches 0 run function luigis_mansion:animations/biff_atlas/normal/flee
+execute if score #mirrored Selected matches 1 run function luigis_mansion:animations/biff_atlas/mirrored/flee

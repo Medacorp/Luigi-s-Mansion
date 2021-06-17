@@ -12,5 +12,4 @@ stopsound @a[scores={Room=21}] music luigis_mansion:music.conservatory.drum_1
 stopsound @a[scores={Room=21}] music luigis_mansion:music.conservatory.drum_2
 stopsound @a[scores={Room=21}] music luigis_mansion:music.conservatory.drum_3
 stopsound @a[scores={Room=21}] music luigis_mansion:music.conservatory.piano
-scoreboard players set @a[scores={Room=21}] Music 0
-scoreboard players set @a[scores={Room=21}] MusicType -2
+execute as @a[scores={Room=21},gamemode=!spectator] run function luigis_mansion:other/music/set/silence

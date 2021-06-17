@@ -6,9 +6,9 @@ scoreboard players set @s[scores={Dialog=20}] AnimationProg 0
 tag @s[scores={Dialog=20}] remove shot_out
 tag @s[scores={Dialog=20}] add stuck
 execute if entity @s[scores={Dialog=1..18}] rotated 173.7 0 run teleport @s ^ ^ ^1 ~ 0
+execute if entity @s[scores={Dialog=80}] as @a[scores={Room=-3}] run function luigis_mansion:other/music/set/credits
 execute if entity @s[scores={Dialog=80}] run playsound luigis_mansion:music.mario_to_normal_2 music @a[scores={Room=-3}] ~ ~ ~ 1000
 execute if entity @s[scores={Dialog=80}] run scoreboard players set @a[scores={Room=-3}] Music 560
-execute if entity @s[scores={Dialog=80}] run scoreboard players set @a[scores={Room=-3}] MusicType 40
 execute if entity @s[scores={Dialog=80}] run playsound luigis_mansion:entity.mario.vent_stuck neutral @a[tag=same_room] ~ ~ ~ 1
 execute if entity @s[scores={Dialog=141..160}] rotated -6.3 0 run teleport @s ^ ^ ^0.05
 execute if entity @s[scores={Dialog=141..160}] at @s run teleport @s ~ ~ ~ ~4.55 ~

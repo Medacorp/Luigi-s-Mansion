@@ -7,4 +7,4 @@ execute if entity @s[scores={MusicType=17}] run function luigis_mansion:other/mu
 execute if entity @s[scores={MusicType=34}] run function luigis_mansion:other/music/set/catching_boolossus
 execute if entity @s[scores={MusicType=18}] run function luigis_mansion:other/music/set/catching_king_boo
 execute if entity @s[scores={MusicType=35}] run function luigis_mansion:other/music/set/catching_king_boo
-execute if entity @s[scores={MusicType=13}] unless entity @e[tag=floating_whirlindas,limit=1] run function luigis_mansion:other/music/set/ball_room
+execute if entity @s[scores={MusicType=13}] unless entity @e[tag=floating_whirlindas,tag=same_room,limit=1] run function luigis_mansion:other/music/set/ball_room

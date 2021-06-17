@@ -1,5 +1,5 @@
 scoreboard players add @s Dialog 1
-execute if entity @s[scores={Dialog=1..}] as @a unless entity @s[scores={MusicType=19}] run function luigis_mansion:other/music/set/gameboy_horror
+execute if entity @s[scores={Dialog=1..}] as @a unless entity @s[scores={MusicGroup=0,MusicType=19}] run function luigis_mansion:other/music/set/gameboy_horror
 execute if entity @s[scores={Dialog=1}] run tellraw @a {"translate":"chat.type.text","with":[{"translate":"luigis_mansion:entity.e_gadd","color":"green"},{"translate":"luigis_mansion:dialog.blackout.1"}]}
 execute if entity @s[scores={Dialog=32}] run tellraw @a {"translate":"chat.type.text","with":[{"translate":"luigis_mansion:entity.e_gadd","color":"green"},{"translate":"luigis_mansion:dialog.blackout.2"}]}
 execute if entity @s[scores={Dialog=88}] run tellraw @a {"translate":"chat.type.text","with":[{"translate":"luigis_mansion:entity.e_gadd","color":"green"},{"translate":"luigis_mansion:dialog.blackout.3"}]}

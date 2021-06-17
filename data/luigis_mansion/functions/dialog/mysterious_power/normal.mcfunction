@@ -3,9 +3,7 @@ execute unless entity @a[scores={Room=52},gamemode=!spectator,limit=1] run score
 scoreboard players add @s Dialog 1
 scoreboard players set @a[tag=same_room,gamemode=!spectator] Invulnerable 10
 execute as @a[distance=..2] at @s run teleport @s ~1 ~ ~
-execute if entity @s[scores={Dialog=1}] run stopsound @a[tag=same_room,gamemode=!spectator] music
-execute if entity @s[scores={Dialog=1}] run scoreboard players set @a[tag=same_room,gamemode=!spectator] MusicType 21
-execute if entity @s[scores={Dialog=1}] run scoreboard players set @a[tag=same_room,gamemode=!spectator] Music 0
+execute if entity @s[scores={Dialog=1}] as @a[tag=same_room,gamemode=!spectator] run function luigis_mansion:other/music/set/mysterious_power
 execute if data storage luigis_mansion:data current_state.current_data.technical_data{mysterious_power:1b} run scoreboard players set @s[scores={Dialog=1}] Dialog 1400
 execute if entity @s[scores={Dialog=1}] if score #players Totals matches 1 run tellraw @a[tag=same_room,gamemode=!spectator] {"translate":"chat.type.text","with":[{"translate":"luigis_mansion:entity.mysterious_power","color":"green"},{"translate":"luigis_mansion:dialog.mysterious_power.1"}]}
 execute if entity @s[scores={Dialog=1}] if score #players Totals matches 2.. run tellraw @a[tag=same_room,gamemode=!spectator] {"translate":"chat.type.text","with":[{"translate":"luigis_mansion:entity.mysterious_power","color":"green"},{"translate":"luigis_mansion:dialog.mysterious_power.1.more"}]}

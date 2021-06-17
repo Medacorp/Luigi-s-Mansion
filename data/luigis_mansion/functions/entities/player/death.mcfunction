@@ -1,7 +1,7 @@
 scoreboard players operation @s LastRoom = @s Room
+function luigis_mansion:other/music/set/hallway
 stopsound @s music
 playsound luigis_mansion:music.game_over music @s ~ ~ ~ 1000
-scoreboard players set @s MusicType 6
 scoreboard players set @s Music 100
 gamemode spectator @s
 

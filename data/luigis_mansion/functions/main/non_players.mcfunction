@@ -10,6 +10,7 @@ execute if entity @s[tag=first_key,tag=play] run function luigis_mansion:dialog/
 execute if entity @s[tag=burning_floor] run function luigis_mansion:blocks/burning_floor
 
 function #luigis_mansion:entities
+scoreboard players reset #temp Move
 
 tag @s[tag=!reflection,scores={MirrorX=-2147483648..}] add mirrored
 tag @s[tag=!reflection,scores={MirrorZ=-2147483648..}] add mirrored

@@ -8,10 +8,10 @@ playsound luigis_mansion:music.gallery music @s[scores={MusicType=4}] ~ ~ ~ 1000
 scoreboard players set @s[scores={MusicType=4}] Music 662
 playsound luigis_mansion:music.ghost_portrificationizer_room music @s[scores={MusicType=5}] ~ ~ ~ 1000
 scoreboard players set @s[scores={MusicType=5}] Music 320
-execute if entity @s[scores={MusicType=6}] run function luigis_mansion:other/music/play/loop_mansion_hallway
-execute if entity @s[scores={MusicType=7}] run function luigis_mansion:other/music/play/loop_mansion_dark_room
-execute if entity @s[scores={MusicType=8}] run function luigis_mansion:other/music/play/loop_mansion_outside
-execute if entity @s[scores={MusicType=9}] run function luigis_mansion:other/music/play/loop_mansion_light
+execute if entity @s[scores={MusicType=6}] run function luigis_mansion:other/music/play/group_0/loop_mansion_hallway
+execute if entity @s[scores={MusicType=7}] run function luigis_mansion:other/music/play/group_0/loop_mansion_dark_room
+execute if entity @s[scores={MusicType=8}] run function luigis_mansion:other/music/play/group_0/loop_mansion_outside
+execute if entity @s[scores={MusicType=9}] run function luigis_mansion:other/music/play/group_0/loop_mansion_light
 playsound luigis_mansion:music.toad music @s[scores={MusicType=10}] ~ ~ ~ 1000
 scoreboard players set @s[scores={MusicType=10}] Music 480
 #execute if entity @s[scores={MusicType=11}] run 

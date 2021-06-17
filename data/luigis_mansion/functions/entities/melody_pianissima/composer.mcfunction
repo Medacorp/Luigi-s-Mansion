@@ -1,7 +1,7 @@
 scoreboard players add @s Dialog 1
-scoreboard players set @a[tag=same_room,gamemode=!spectator] MusicType 23
 scoreboard players set @s[scores={Dialog=473}] AnimationProg 0
 tag @s[scores={Dialog=473}] remove nod
+execute as @a[tag=same_room,gamemode=!spectator] unless entity @s[scores={MusicGroup=0,MusicType=23}] run function luigis_mansion:other/music/set/talking_ghost
 execute if entity @s[scores={Dialog=473}] run stopsound @a[tag=same_room,gamemode=!spectator] music
 execute if entity @s[scores={Dialog=473}] run playsound luigis_mansion:music.water music @a[tag=same_room] ~ ~ ~ 1000
 execute if entity @s[scores={Dialog=473}] run scoreboard players set @a[tag=same_room,gamemode=!spectator] Music 240

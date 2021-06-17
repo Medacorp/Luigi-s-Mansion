@@ -4,3 +4,5 @@ execute store result entity @s Pos[2] double 0.01 run scoreboard players get @s 
 execute store result entity @s Rotation[0] float 1 run scoreboard players get @s HomeRot
 scoreboard players set @s Time 0
 scoreboard players set @s Dialog 0
+scoreboard players set @s ActionTime 0
+tag @s remove knocked_out

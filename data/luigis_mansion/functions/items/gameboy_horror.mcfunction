@@ -17,7 +17,7 @@ execute if entity @s[tag=!gameboy_horror_selected] run trigger GBHChoice set 0
 execute if entity @s[tag=grabbed] run trigger GBHChoice set 0
 execute if entity @s[tag=tripping] run trigger GBHChoice set 0
 execute unless entity @s[scores={GBHCall=0..}] run scoreboard players set @s GBHCall 0
-execute if entity @s[scores={GBHCall=1..}] unless entity @s[scores={MusicType=2..5}] unless entity @s[scores={MusicType=22}] unless entity @s[scores={MusicType=24}] unless entity @s[scores={MusicType=38}] unless entity @s[scores={MusicType=19}] unless entity @s[scores={MusicType=27}] run function luigis_mansion:other/music/set/gameboy_horror_calling
+execute if entity @s[scores={GBHCall=1..}] unless entity @s[scores={MusicGroup=0,MusicType=2..5}] unless entity @s[scores={MusicGroup=0,MusicType=22}] unless entity @s[scores={MusicGroup=0,MusicType=24}] unless entity @s[scores={MusicGroup=0,MusicType=38}] unless entity @s[scores={MusicGroup=0,MusicType=19}] unless entity @s[scores={MusicGroup=0,MusicType=27}] run function luigis_mansion:other/music/set/gameboy_horror_calling
 scoreboard players add @s[scores={GBHCall=1..},tag=!gameboy_horror_selected] GBHWait 1
 
 attribute @s[tag=scanning] minecraft:generic.movement_speed base set 0

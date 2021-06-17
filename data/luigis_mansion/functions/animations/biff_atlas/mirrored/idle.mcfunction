@@ -6,10 +6,14 @@ execute store result score #temp Time run data get entity @s Pose.Head[1] 1
 execute if entity @s[scores={AnimationProg=1..10}] store result entity @s Pose.Head[1] float 1 run scoreboard players remove #temp Time 2
 execute if entity @s[scores={AnimationProg=11..30}] store result entity @s Pose.Head[1] float 1 run scoreboard players add #temp Time 2
 execute if entity @s[scores={AnimationProg=31..40}] store result entity @s Pose.Head[1] float 1 run scoreboard players remove #temp Time 2
-execute store result score #temp Time run data get entity @s Pose.RightArm[1] 1
-execute if entity @s[scores={AnimationProg=1..20}] store result entity @s Pose.RightArm[1] float 1 run scoreboard players add #temp Time 2
-execute if entity @s[scores={AnimationProg=21..40}] store result entity @s Pose.RightArm[1] float 1 run scoreboard players remove #temp Time 2
-execute store result score #temp Time run data get entity @s Pose.LeftArm[1] 1
-execute if entity @s[scores={AnimationProg=1..20}] store result entity @s Pose.LeftArm[1] float 1 run scoreboard players remove #temp Time 2
-execute if entity @s[scores={AnimationProg=21..40}] store result entity @s Pose.LeftArm[1] float 1 run scoreboard players add #temp Time 2
+execute store result score #temp Time run data get entity @s Pose.RightArm[2] 1
+execute if entity @s[scores={AnimationProg=1..10}] store result entity @s Pose.RightArm[2] float 1 run scoreboard players add #temp Time 2
+execute if entity @s[scores={AnimationProg=11..20}] store result entity @s Pose.RightArm[2] float 1 run scoreboard players remove #temp Time 2
+execute if entity @s[scores={AnimationProg=21..30}] store result entity @s Pose.RightArm[2] float 1 run scoreboard players add #temp Time 2
+execute if entity @s[scores={AnimationProg=31..40}] store result entity @s Pose.RightArm[2] float 1 run scoreboard players remove #temp Time 2
+execute store result score #temp Time run data get entity @s Pose.LeftArm[2] 1
+execute if entity @s[scores={AnimationProg=1..10}] store result entity @s Pose.LeftArm[2] float 1 run scoreboard players remove #temp Time 2
+execute if entity @s[scores={AnimationProg=11..20}] store result entity @s Pose.LeftArm[2] float 1 run scoreboard players add #temp Time 2
+execute if entity @s[scores={AnimationProg=21..30}] store result entity @s Pose.LeftArm[2] float 1 run scoreboard players remove #temp Time 2
+execute if entity @s[scores={AnimationProg=31..40}] store result entity @s Pose.LeftArm[2] float 1 run scoreboard players add #temp Time 2
 scoreboard players set @s[scores={AnimationProg=40..}] AnimationProg 0

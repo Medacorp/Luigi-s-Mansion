@@ -1,8 +1,7 @@
 execute unless entity @e[tag=portrificationizing_ghost,limit=1] run scoreboard players add @s[scores={Dialog=665..}] Dialog 1
 scoreboard players add @s[scores={Dialog=..664}] Dialog 1
 execute unless entity @s[scores={Dialog=1..}] run scoreboard players add @s Dialog 1
-execute if entity @s[scores={Dialog=1}] run scoreboard players set @a[tag=same_room] MusicType 22
-execute if entity @s[scores={Dialog=1}] run scoreboard players set @a[tag=same_room] Music 0
+execute if entity @s[scores={Dialog=1}] as @a[tag=same_room] run function luigis_mansion:other/music/set/portrificationizing
 execute if entity @s[scores={Dialog=1}] run function #luigis_mansion:portrificationize_ghosts
 teleport @s[scores={Dialog=1}] ~ ~ ~ facing 771 77 15
 tag @s[scores={Dialog=201}] add jump
@@ -55,8 +54,7 @@ execute if entity @s[scores={Dialog=802},tag=ending] run scoreboard players set 
 tag @s[scores={Dialog=810}] remove nod
 tag @s[scores={Dialog=810},tag=!ending] add walk
 execute if entity @s[scores={Dialog=810}] run scoreboard players set @e[tag=this_model,tag=e_gadd_head,limit=1] AnimationProg 0
-execute if entity @s[scores={Dialog=810}] run scoreboard players set @a[tag=same_room] MusicType 38
-execute if entity @s[scores={Dialog=810}] run scoreboard players set @a[tag=same_room] Music 0
+execute if entity @s[scores={Dialog=810}] as @a[tag=same_room] run function luigis_mansion:other/music/set/portraits
 execute if entity @s[scores={Dialog=810}] run function luigis_mansion:dialog/portrificationizing/get_gold_coin
 execute if entity @s[scores={Dialog=810}] unless score #temp Money matches 0 run tellraw @a[tag=same_room] {"translate":"chat.type.text","with":[{"translate":"luigis_mansion:entity.mansion","color":"green"},{"translate":"luigis_mansion:message.money","with":[{"translate":"luigis_mansion:item.gold_coin"},{"score":{"objective":"Money","name":"#temp"}},{"score":{"objective":"Money","name":"#temp2"}}]}]}
 execute if entity @s[scores={Dialog=810}] if score #temp Money matches 0 run tellraw @a[tag=same_room] {"translate":"chat.type.text","with":[{"translate":"luigis_mansion:entity.mansion","color":"green"},{"translate":"luigis_mansion:message.money.not_obtained"}]}

@@ -7,8 +7,8 @@ execute in luigis_mansion:hidden if block 755 11 7 minecraft:spruce_door[open=tr
 execute in luigis_mansion:hidden if block 755 11 6 minecraft:spruce_door[open=true] if block 755 11 7 minecraft:spruce_door[open=true] unless score #temp Searched matches 1 run scoreboard players set #temp Searched 2
 execute in luigis_mansion:hidden if block 755 11 7 minecraft:spruce_door[open=true] if block 755 11 6 minecraft:spruce_door[open=true] unless score #temp Searched matches 1 run scoreboard players set #temp Searched 2
 
-execute in luigis_mansion:hidden if block 755 11 7 #minecraft:doors[open=true] if entity @a[tag=blackout,limit=1] positioned 755 11 7 run function luigis_mansion:blocks/closed_door
-execute in luigis_mansion:hidden if block 755 11 6 #minecraft:doors[open=true] if entity @a[tag=blackout,limit=1] positioned 755 11 6 run function luigis_mansion:blocks/closed_door
+execute in luigis_mansion:hidden if block 755 11 7 #minecraft:doors[open=true] if entity @a[tag=blackout,limit=1] positioned 755 11 7 run function luigis_mansion:blocks/closed_door/no_animation
+execute in luigis_mansion:hidden if block 755 11 6 #minecraft:doors[open=true] if entity @a[tag=blackout,limit=1] positioned 755 11 6 run function luigis_mansion:blocks/closed_door/no_animation
 execute if entity @a[tag=blackout,limit=1] if score #temp Searched matches 1..2 run scoreboard players set #temp Searched -1
 execute in minecraft:overworld unless entity @a[gamemode=!spectator,distance=..3,x=719.5,y=102,z=8.0] in luigis_mansion:hidden unless entity @a[gamemode=!spectator,distance=..3,x=756.5,y=11,z=7.0] if score #temp Searched matches 1..2 run scoreboard players set #temp Searched 0
 

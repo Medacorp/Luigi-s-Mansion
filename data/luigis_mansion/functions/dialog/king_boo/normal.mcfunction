@@ -1,6 +1,6 @@
 scoreboard players add @s Dialog 1
 execute unless entity @s[scores={Dialog=1572..}] as @a[tag=same_room,distance=..5.9,limit=1] run teleport @s 645 93 -18 90 0
-execute if entity @s[scores={Dialog=1..1596}] as @a[tag=same_room] unless entity @s[scores={MusicType=31}] run scoreboard players set @s MusicType 31
+execute if entity @s[scores={Dialog=1..1596}] as @a[tag=same_room] unless entity @s[scores={MusicGroup=0,MusicType=31}] run function luigis_mansion:other/music/set/talking_king_boo
 execute if entity @s[scores={Dialog=1}] run tellraw @a[tag=same_room] {"translate":"chat.type.text","with":[{"translate":"luigis_mansion:entity.king_boo","color":"green"},{"translate":"luigis_mansion:dialog.king_boo.1"}]}
 execute if entity @s[scores={Dialog=216}] run tellraw @a[tag=same_room] {"translate":"chat.type.text","with":[{"translate":"luigis_mansion:entity.king_boo","color":"green"},{"translate":"luigis_mansion:dialog.king_boo.2"}]}
 execute if entity @s[scores={Dialog=312}] run tellraw @a[tag=same_room] {"translate":"chat.type.text","with":[{"translate":"luigis_mansion:entity.king_boo","color":"green"},{"translate":"luigis_mansion:dialog.king_boo.3"}]}

@@ -10,9 +10,7 @@ execute if entity @s[scores={Dialog=10}] run setblock 770 78 -12 minecraft:light
 execute if entity @s[scores={Dialog=10}] run teleport @e[tag=marios_painting] 771 78 -12
 execute if entity @s[scores={Dialog=20}] run setblock 770 79 -12 minecraft:light_gray_concrete
 execute if entity @s[scores={Dialog=20}] run teleport @e[tag=marios_painting] 771 79 -12
-execute if entity @s[scores={Dialog=30}] run scoreboard players set @a[scores={Room=-3}] MusicType -1
-execute if entity @s[scores={Dialog=30}] run scoreboard players set @a[scores={Room=-3}] Music 0
-execute if entity @s[scores={Dialog=30}] run stopsound @a[scores={Room=-3}] music
+execute if entity @s[scores={Dialog=30}] as @a[scores={Room=-3}] run function luigis_mansion:other/music/set/non_overwritten_silence
 execute if entity @s[scores={Dialog=31}] run data merge entity @e[tag=marios_painting,limit=1] {Fixed:1b,ItemRotation:0b,Silent:1b}
 execute if entity @s[scores={Dialog=31}] run teleport @e[tag=marios_painting] 771 78 -12
 execute if entity @s[scores={Dialog=31}] run summon minecraft:armor_stand 770 79 -12 {Tags:["mario","portrificationizing"],Marker:1b,Invisible:1b,Silent:1b,ArmorItems:[{},{},{},{}],DisabledSlots:2039583}

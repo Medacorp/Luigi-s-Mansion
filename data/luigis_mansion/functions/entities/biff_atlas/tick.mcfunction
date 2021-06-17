@@ -1,5 +1,6 @@
 scoreboard players operation #temp GhostNr = @s GhostNr
 execute as @e[tag=biff_atlas_body] if score @s GhostNr = #temp GhostNr run tag @s add this_model
+execute as @e[tag=weights] if score @s GhostNr = #temp GhostNr run tag @s add these_weights
 
 execute if entity @s[tag=dying,scores={HurtTime=1}] run playsound luigis_mansion:entity.biff_atlas.vacuumed hostile @a[tag=same_room] ~ ~ ~ 1
 execute if entity @s[tag=dead] run function luigis_mansion:entities/biff_atlas/at_death
@@ -16,10 +17,11 @@ execute if entity @s[tag=!fleeing,tag=!hurt,tag=!vanish,scores={StunTime=0}] run
 
 execute if entity @s[tag=vanish] run function luigis_mansion:entities/biff_atlas/vanish
 execute at @s[tag=knocked_back] run function luigis_mansion:animations/biff_atlas/knocked_back
-execute at @s[tag=!knocked_back,tag=!knocked_out,tag=!attack,tag=!fleeing,tag=!hurt,tag=!vanish,tag=!lift_succeed,tag=!lift_fail] run function luigis_mansion:animations/biff_atlas/idle
+execute at @s[tag=!knocked_back,tag=!knocked_out,tag=!attack,tag=!laugh,tag=!fleeing,tag=!hurt,tag=!vanish,tag=!strech_neck,tag=!lift_succeed,tag=!lift_fail] run function luigis_mansion:animations/biff_atlas/idle
 execute at @s[tag=knocked_out,tag=!attack,tag=!fleeing,tag=!hurt,tag=!vanish,scores={StunTime=0}] run function luigis_mansion:animations/biff_atlas/ko
 execute at @s[tag=lift_fail] run function luigis_mansion:animations/biff_atlas/lift_fail
 execute at @s[tag=lift_succeed] run function luigis_mansion:animations/biff_atlas/lift_succeed
+execute at @s[tag=strech_neck] run function luigis_mansion:animations/biff_atlas/strech_neck
 execute at @s[tag=fleeing] run function luigis_mansion:animations/biff_atlas/flee
 execute at @s[tag=!fleeing,tag=hurt] run function luigis_mansion:animations/biff_atlas/hurt
 
@@ -28,4 +30,5 @@ execute unless entity @s[tag=!dead,tag=!remove_from_existence] run tag @e[tag=th
 
 scoreboard players reset #temp GhostNr
 tag @e[tag=this_model,limit=1] remove this_model
+tag @e[tag=these_weights,limit=1] remove these_weights
 execute at @s[scores={LightX=-2147483648..}] run function luigis_mansion:other/cast_shadow/2_tall

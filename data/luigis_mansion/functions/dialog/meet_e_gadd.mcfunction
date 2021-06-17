@@ -1,7 +1,7 @@
 scoreboard players add @s Dialog 1
 execute if entity @s[scores={Dialog=1}] run playsound luigis_mansion:ambience.parlor_wind ambient @a[tag=same_room] ~ ~ ~ 1000
 execute if entity @s[scores={Dialog=1..81}] run stopsound @a[tag=same_room,gamemode=!spectator] music
-execute if entity @s[scores={Dialog=1..81}] run scoreboard players set @a[tag=same_room,gamemode=!spectator] MusicType -1
+execute if entity @s[scores={Dialog=1..81}] as @a[tag=same_room,gamemode=!spectator] run function luigis_mansion:other/music/set/non_overwritten_silence
 execute if entity @s[scores={Dialog=1..81}] run scoreboard players set @a[tag=same_room,gamemode=!spectator] Music 1308
 execute if entity @s[scores={Dialog=81}] run playsound luigis_mansion:music.meet_e_gadd music @a[tag=same_room,gamemode=!spectator] ~ ~ ~ 1000
 teleport @s[x=697,y=20,z=7,dx=1,dy=1,dz=1] ~-1 ~ ~
@@ -177,7 +177,7 @@ execute if entity @s[scores={Dialog=1319}] if score #players Totals matches 1 ru
 execute if entity @s[scores={Dialog=1319}] if score #players Totals matches 2.. run tellraw @a[tag=same_room] {"translate":"chat.type.text","with":[{"translate":"luigis_mansion:entity.e_gadd","color":"green"},{"translate":"luigis_mansion:dialog.meet_e_gadd.8.more"}]}
 execute if entity @s[scores={Dialog=1387}] run teleport @e[tag=dialog,limit=1] ~ ~-100 ~
 execute if entity @s[scores={Dialog=1388}] run tag @e[tag=dialog] add remove_from_existence
-execute if entity @s[scores={Dialog=1388}] run scoreboard players set @a MusicType 2
+execute if entity @s[scores={Dialog=1388}] as @a[scores={MusicType=-1}] run function luigis_mansion:other/music/set/silence
 execute if entity @s[scores={Dialog=1388}] run data modify storage luigis_mansion:data {} merge value {found_e_gadd:1b}
 execute if entity @s[scores={Dialog=1388}] as @a run function luigis_mansion:room/underground_lab/warp_to
 tag @s[scores={Dialog=1388}] remove meet_e_gadd

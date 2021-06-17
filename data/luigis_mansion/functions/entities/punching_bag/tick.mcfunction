@@ -1,6 +1,8 @@
 scoreboard players set #temp Move 8
 scoreboard players operation #temp PunchingBag = @s PunchingBag
 execute as @e[tag=punching_bag_detect] if score @s PunchingBag = #temp PunchingBag run tag @s add this_punching_bag
+scoreboard players reset @e[tag=this_punching_bag,limit=1] MirrorX
+scoreboard players reset @e[tag=this_punching_bag,limit=1] MirrorZ
 scoreboard players reset #temp PunchingBag
 execute if entity @s[scores={Angle=-600..600}] positioned ~ ~-5.4 ~ unless entity @e[tag=this_punching_bag,distance=..0.1,limit=1] at @s facing entity @e[tag=this_punching_bag,limit=1] feet rotated ~ 0 run teleport @s ~ ~ ~ ~ ~
 execute if entity @s[scores={Angle=-600..600}] positioned ~ ~-5.4 ~ unless entity @e[tag=this_punching_bag,distance=..0.1,limit=1] if entity @e[tag=this_punching_bag,limit=1,nbt={HurtTime:0s}] run scoreboard players set @s Angle 1000
