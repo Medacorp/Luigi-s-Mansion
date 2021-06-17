@@ -1,1 +1,1 @@
-teleport @s ~ ~ ~ ~50 ~
+teleport @s ~ ~ ~ 90 ~

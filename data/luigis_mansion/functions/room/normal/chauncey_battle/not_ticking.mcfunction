@@ -1,1 +1,1 @@
-function #luigis_mansion:room/normal/chauncey_room/reset
+function #luigis_mansion:room/normal/chauncey_battle/reset

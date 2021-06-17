@@ -64,6 +64,7 @@ tag @s[scores={Dialog=382},tag=intro_done] add dizzy
 scoreboard players set @s[scores={Dialog=382},tag=intro_done] ActionTime 0
 execute at @s[scores={Dialog=382},tag=intro_done] rotated ~ 0 run teleport @s ~4 ~-2 ~ ~ ~
 tag @s[scores={Dialog=622},tag=intro_done] remove dizzy
+teleport @s[scores={Dialog=622}] 792.0 20 -48.0
 scoreboard players set @s[scores={Dialog=622},tag=intro_done] Dialog 0
 teleport @s[scores={Dialog=1462}] 796.0 20 ~
 execute if entity @s[scores={Dialog=1522..1581}] facing entity @e[tag=same_room,tag=!spectator,sort=nearest,limit=1] feet run teleport @s ~ ~ ~ ~ 0

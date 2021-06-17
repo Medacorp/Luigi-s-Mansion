@@ -8,4 +8,4 @@ execute rotated ~ 0 if block ^ ^ ^0.6 minecraft:barrier run tag @s add dead
 scoreboard players set #temp Move 2
 execute if entity @s[tag=intro] run scoreboard players set #temp Move 3
 execute if entity @s[tag=fast] run scoreboard players set #temp Move 4
-execute at @s[tag=!attack] run function luigis_mansion:entities/ghost/move_forward
+execute at @s[tag=!attack] run function luigis_mansion:entities/rocking_horse/move_forward

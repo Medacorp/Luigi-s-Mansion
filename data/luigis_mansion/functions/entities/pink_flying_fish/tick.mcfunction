@@ -12,7 +12,7 @@ execute unless score #temp ActionTime matches 3.. unless entity @e[tag=pink_flyi
 scoreboard players reset #temp ActionTime
 scoreboard players reset #temp Room
 
-data merge entity @s[tag=visible] {ArmorItems:[{},{},{},{id:"minecraft:diamond_pickaxe",Count:1b,tag:{Unbreakable:1b,Damage:1,CustomModelData:85}}]}
+data modify entity @s[tag=visible] ArmorItems[3].id set value "minecraft:leather_chestplate"
 scoreboard players set #temp Move 3
 scoreboard players add @s[tag=visible] WaitTime 1
 execute if entity @s[scores={WaitTime=1..79}] run function luigis_mansion:entities/pink_flying_fish/hover

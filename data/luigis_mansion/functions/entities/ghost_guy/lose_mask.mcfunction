@@ -1,9 +1,6 @@
 tag @s add maskless
 function luigis_mansion:entities/ghost_guy/stop_dancing
-execute store result score #temp Time run data get entity @s ArmorItems[3].tag.CustomModelData
-execute if entity @s[tag=!dancing] store result entity @s ArmorItems[3].tag.CustomModelData int 1 run scoreboard players remove #temp Time 1
-execute if entity @s[tag=dancing] store result entity @s ArmorItems[3].tag.CustomModelData int 1 run scoreboard players remove #temp Time 2
-scoreboard players reset #temp Time
+data modify entity @s ArmorItems[3].tag.CustomModelData set value 4
 tag @s remove attack
 tag @s add complain
 tag @s add stunable

@@ -11,8 +11,8 @@ execute if entity @s[scores={Sound=0},tag=!vanish,tag=!fleeing,tag=!attack,tag=!
 scoreboard players set @s[scores={Sound=0}] Sound 40
 
 execute if entity @e[tag=same_room,tag=!spectator,distance=..0.7,limit=1] unless entity @s[tag=!element_hurt,tag=!complain,tag=!laugh] if entity @s[tag=!vanish,tag=!appear,tag=!attack,tag=!dying,tag=!dead,tag=!removed_from_existence] run function luigis_mansion:entities/mirror_ghost/collide
-execute if entity @s[tag=!visible] unless entity @s[tag=!element_hurt,tag=!attack,tag=!collided,tag=!laugh,tag=!complain,scores={VulnerableTime=0}] run function luigis_mansion:entities/mirror_ghost/turn_visible
-execute if entity @s[tag=visible] if entity @s[tag=!element_hurt,tag=!attack,tag=!collided,tag=!laugh,tag=!complain,scores={VulnerableTime=0}] run function luigis_mansion:entities/mirror_ghost/turn_invisible
+execute if entity @s[tag=!visible,tag=!vanish] unless entity @s[tag=!element_hurt,tag=!attack,tag=!collided,tag=!laugh,tag=!complain,scores={VulnerableTime=0}] run function luigis_mansion:entities/mirror_ghost/turn_visible
+execute if entity @s[tag=visible,tag=!vanish] if entity @s[tag=!element_hurt,tag=!attack,tag=!collided,tag=!laugh,tag=!complain,scores={VulnerableTime=0}] run function luigis_mansion:entities/mirror_ghost/turn_invisible
 
 execute if entity @s[tag=!hurt,tag=!element_hurt,tag=!fleeing,tag=!attack,tag=!collided,tag=!laugh,tag=!complain,tag=!vanish,tag=!appear,tag=!vanish,tag=!appear,scores={StunTime=0,SpawnTime=20..},tag=!grabbed] positioned ^ ^ ^0.6 if entity @e[tag=same_room,tag=!spectator,distance=..0.7,limit=1] run tag @s add attack
 execute if entity @s[tag=!element_hurt,tag=!fleeing,tag=!collided,tag=attack,scores={StunTime=0}] run function luigis_mansion:entities/mirror_ghost/attack

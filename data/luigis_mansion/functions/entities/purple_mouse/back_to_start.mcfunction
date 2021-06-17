@@ -8,4 +8,5 @@ tag @s remove walk_down_wall
 tag @s remove walked_on_ceiling
 tag @s remove disappear
 tag @s remove visible
-data merge entity @s {ArmorItems:[{},{},{},{id:"minecraft:diamond_pickaxe",Count:1b,tag:{Unbreakable:1b,Damage:1,CustomModelData:62}}]}
+data modify entity @s ArmorItems[3].id set value "minecraft:oak_button"
+execute at @s run teleport @s ~ ~1.3 ~

@@ -4,15 +4,15 @@ execute if entity @s[scores={ActionTime=1..40}] run function luigis_mansion:anim
 scoreboard players set @s[scores={ActionTime=41}] AnimationProg 0
 execute if entity @s[scores={ActionTime=41..60}] run function luigis_mansion:animations/twirler/appear
 
-data modify entity @s[scores={ActionTime=1..40}] ArmorItems[3].id set value "minecraft:stone_button"
-data modify entity @s[scores={ActionTime=1..40}] HandItems[0].id set value "minecraft:stone_button"
-data modify entity @s[scores={ActionTime=1..40}] HandItems[1].id set value "minecraft:stone_button"
+data modify entity @s[scores={ActionTime=1..40}] ArmorItems[3].id set value "minecraft:oak_button"
+data modify entity @s[scores={ActionTime=1..40}] HandItems[0].id set value "minecraft:oak_button"
+data modify entity @s[scores={ActionTime=1..40}] HandItems[1].id set value "minecraft:oak_button"
 data modify entity @s[scores={ActionTime=1..40}] CustomNameVisible set value 0b
 execute at @s[scores={ActionTime=1..40}] run particle minecraft:dust 0.7 1 1 1 ~-0.2 ~0.2 ~-0.2 0.4 0.4 0.4 0 50 force
 execute if entity @s[scores={ActionTime=41}] run playsound luigis_mansion:entity.blue_twirler.spawn hostile @a[tag=same_room] ~ ~ ~ 1
-data modify entity @s[scores={ActionTime=41}] ArmorItems[3].id set value "minecraft:diamond_pickaxe"
-data modify entity @s[scores={ActionTime=41}] HandItems[0].id set value "minecraft:diamond_pickaxe"
-data modify entity @s[scores={ActionTime=41}] HandItems[1].id set value "minecraft:diamond_pickaxe"
+data modify entity @s[scores={ActionTime=41}] ArmorItems[3].id set value "minecraft:leather_chestplate"
+data modify entity @s[scores={ActionTime=41}] HandItems[0].id set value "minecraft:leather_chestplate"
+data modify entity @s[scores={ActionTime=41}] HandItems[1].id set value "minecraft:leather_chestplate"
 data modify entity @s[scores={ActionTime=41}] CustomNameVisible set value 1b
 execute if entity @s[scores={ActionTime=41}] run summon minecraft:armor_stand ~ ~0.5 ~ {CustomName:'{"translate":"luigis_mansion:message.basher_scare","color":"yellow","bold":true}',Marker:1b,Invisible:1b,NoGravity:1b,CustomNameVisible:1b,Fire:32767s,Tags:["basher_scare"]}
 execute if entity @s[scores={ActionTime=41}] as @e[distance=..5,tag=gameboy_horror_location] run function luigis_mansion:entities/gameboy_horror_location/bring_player_back

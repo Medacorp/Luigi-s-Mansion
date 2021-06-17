@@ -18,6 +18,8 @@ data modify entity @s HandItems[0] set from storage luigis_mansion:data LeftHand
 data modify entity @s HandItems[1] set from storage luigis_mansion:data RightHandItem
 execute if data storage luigis_mansion:data LeftHandItem{id:"minecraft:diamond_pickaxe"} run data modify entity @s HandItems[0].tag.Damage set value 2
 execute if data storage luigis_mansion:data RightHandItem{id:"minecraft:diamond_pickaxe"} run data modify entity @s HandItems[1].tag.Damage set value 3
+execute if data storage luigis_mansion:data LeftHandItem{id:"minecraft:leather_chestplate"} run data modify entity @s HandItems[0].tag.Damage set value 2
+execute if data storage luigis_mansion:data RightHandItem{id:"minecraft:leather_chestplate"} run data modify entity @s HandItems[1].tag.Damage set value 3
 data remove storage luigis_mansion:data RightHandItem
 data remove storage luigis_mansion:data LeftHandItem
 data remove storage luigis_mansion:data Pose
