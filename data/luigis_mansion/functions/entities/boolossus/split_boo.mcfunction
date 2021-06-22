@@ -1,4 +1,4 @@
-execute store result entity @e[tag=boolossus,tag=battle,limit=1] Rotation[0] float 1 run scoreboard players get #temp HomeRot
+execute store result entity @e[tag=boolossus,tag=fight,limit=1] Rotation[0] float 1 run scoreboard players get #temp HomeRot
 execute at @s rotated ~ 20 run function luigis_mansion:spawn_entities/portrait_ghost/boolossus/boo
 scoreboard players operation #temp HomeRot += #temp ActionTime
 scoreboard players remove #temp Boos 1

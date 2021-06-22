@@ -9,5 +9,6 @@ scoreboard players set #mirrored Selected 0
 scoreboard players set #multiply_hurt Selected 100
 scoreboard players set #multiply_damage Selected 100
 scoreboard players set #can_warp Selected 1
+scoreboard players set #ghost_heart_size Selected 20
 scoreboard players set #changing_max_health Selected 0
 scoreboard players reset #can_clear_hidden Selected

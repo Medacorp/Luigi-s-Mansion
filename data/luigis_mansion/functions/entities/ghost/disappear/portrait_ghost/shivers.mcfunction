@@ -5,4 +5,3 @@ execute store result entity @s Rotation[0] float 1 run scoreboard players get @s
 tag @s remove burning
 tag @s remove burn
 function #luigis_mansion:entities/shivers/wander
-function luigis_mansion:entities/shivers/turn_visible

@@ -2,7 +2,7 @@
     "display": {
         "icon": {
             "item": "minecraft:diamond_pickaxe",
-			"nbt": "{Unbreakable:1b,Damage:5,CustomModelData:22}"
+			"nbt": "{Unbreakable:1b,Damage:5,CustomModelData:20}"
         },
         "title": {
             "translate": "luigis_mansion:advancements.challenges.go_help_yourself"

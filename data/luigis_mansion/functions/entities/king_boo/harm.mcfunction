@@ -1,5 +1,5 @@
 scoreboard players operation #temp LastHealth = @s Health
-scoreboard players set #temp Health 25
+scoreboard players set #temp Health 75
 scoreboard players operation #temp Health *= #multiply_damage Selected
 scoreboard players operation #temp Health /= #100 Constants
 scoreboard players operation @s Health -= #temp Health

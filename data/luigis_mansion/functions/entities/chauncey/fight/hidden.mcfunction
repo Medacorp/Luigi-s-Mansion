@@ -12,6 +12,7 @@ scoreboard players add @s[scores={Dialog=..20},tag=intro_done] Dialog 1
 execute unless entity @s[scores={Dialog=1..}] run scoreboard players add @s[tag=intro_done] Dialog 1
 execute if entity @s[scores={Dialog=1},tag=intro_done] run tag @s remove laugh
 scoreboard players set @s[scores={Dialog=1},tag=intro_done] ActionTime 0
+execute if entity @s[scores={Dialog=1},tag=intro_done] run function luigis_mansion:entities/chauncey/grab_rambler
 tag @s[scores={Dialog=1,Health=..5000},tag=intro_done] add left
 teleport @s[scores={Dialog=1..20},tag=left,tag=intro_done] ~ ~ ~ -180 0
 teleport @s[scores={Dialog=1..20},tag=!left,tag=intro_done] ~ ~ ~ 0 0
@@ -44,16 +45,16 @@ tag @s[scores={Dialog=260},tag=intro_done] remove rambling
 tag @s[scores={Dialog=260},tag=intro_done] add grab_rambler
 tag @s[scores={Dialog=280},tag=intro_done] remove grab_rambler
 tag @s[scores={Dialog=280},tag=intro_done] add rambling
-execute if entity @s[scores={Dialog=280},tag=intro_done] positioned ~17 ~2 ~-6.5 facing entity @e[tag=same_room,tag=!spectator,sort=nearest,limit=1] feet rotated ~ 0 run function luigis_mansion:spawn_entities/ball/chauncey/big
-execute if entity @s[scores={Dialog=300},tag=intro_done] positioned ~17 ~2 ~6.5 facing entity @e[tag=same_room,tag=!spectator,sort=nearest,limit=1] feet rotated ~ 0 run function luigis_mansion:spawn_entities/ball/chauncey/big
+execute if entity @s[scores={Dialog=280},tag=intro_done] positioned ~17 ~3 ~-6.5 facing entity @e[tag=same_room,tag=!spectator,sort=nearest,limit=1] feet rotated ~ 0 run function luigis_mansion:spawn_entities/ball/chauncey/big
+execute if entity @s[scores={Dialog=300},tag=intro_done] positioned ~17 ~3 ~6.5 facing entity @e[tag=same_room,tag=!spectator,sort=nearest,limit=1] feet rotated ~ 0 run function luigis_mansion:spawn_entities/ball/chauncey/big
 scoreboard players set @s[scores={Dialog=310},tag=intro_done] AnimationProg 0
 tag @s[scores={Dialog=310},tag=intro_done] remove rambling
 tag @s[scores={Dialog=310},tag=intro_done] add grab_rambler
 tag @s[scores={Dialog=330},tag=intro_done] remove grab_rambler
 tag @s[scores={Dialog=330},tag=intro_done] add rambling
-execute if entity @s[scores={Dialog=320},tag=intro_done] positioned ~2 ~2 ~ facing entity @e[tag=same_room,tag=!spectator,sort=nearest,limit=1] feet rotated ~ 0 run function luigis_mansion:spawn_entities/ball/chauncey/real
-execute if entity @s[scores={Dialog=340},tag=intro_done] positioned ~17 ~2 ~-6.5 facing entity @e[tag=same_room,tag=!spectator,sort=nearest,limit=1] feet rotated ~ 0 run function luigis_mansion:spawn_entities/ball/chauncey/big
-execute if entity @s[scores={Dialog=360},tag=intro_done] positioned ~17 ~2 ~6.5 facing entity @e[tag=same_room,tag=!spectator,sort=nearest,limit=1] feet rotated ~ 0 run function luigis_mansion:spawn_entities/ball/chauncey/big
+execute if entity @s[scores={Dialog=320},tag=intro_done] positioned ~2 ~3 ~ facing entity @e[tag=same_room,tag=!spectator,sort=nearest,limit=1] feet rotated ~ 0 run function luigis_mansion:spawn_entities/ball/chauncey/real
+execute if entity @s[scores={Dialog=340},tag=intro_done] positioned ~17 ~3 ~-6.5 facing entity @e[tag=same_room,tag=!spectator,sort=nearest,limit=1] feet rotated ~ 0 run function luigis_mansion:spawn_entities/ball/chauncey/big
+execute if entity @s[scores={Dialog=360},tag=intro_done] positioned ~17 ~3 ~6.5 facing entity @e[tag=same_room,tag=!spectator,sort=nearest,limit=1] feet rotated ~ 0 run function luigis_mansion:spawn_entities/ball/chauncey/big
 scoreboard players set @s[scores={Dialog=380},tag=intro_done] AnimationProg 0
 tag @s[scores={Dialog=380},tag=intro_done] remove rambling
 tag @s[scores={Dialog=380..381},tag=intro_done] add laugh

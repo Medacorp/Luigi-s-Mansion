@@ -57,7 +57,7 @@ execute at @p[gamemode=!spectator,tag=vacuuming] if block ^ ^ ^2 #luigis_mansion
 data modify entity @s[tag=spike_ball,scores={ActionTime=160}] ArmorItems[3].tag.CustomModelData set value 37
 scoreboard players add @s[tag=spike_ball] ActionTime 1
 tag @s[tag=spike_ball,scores={ActionTime=200}] add explode
-execute at @s if entity @a[gamemode=!spectator,distance=..1,limit=1] run tag @s[tag=spike_ball,tag=!in_vacuum] add explode
+execute at @s if entity @a[gamemode=!spectator,distance=..1,limit=1] run tag @s[tag=spike_ball,tag=!in_vacuum,tag=!can_spit_2,tag=!spit] add explode
 execute at @s if entity @e[tag=bowser,distance=..2,limit=1] run tag @s[tag=spike_ball,tag=!in_vacuum] add explode
 execute at @s[tag=explode] run function luigis_mansion:entities/ball/spike_explode
 execute at @s if entity @p[distance=..1.5,gamemode=!spectator,tag=vacuuming] run tag @s[tag=in_vacuum] add can_spit

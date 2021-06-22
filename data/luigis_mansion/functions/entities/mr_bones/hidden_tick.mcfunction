@@ -10,4 +10,5 @@ execute unless entity @s[tag=!dead,tag=!remove_from_existence] run teleport @e[t
 execute unless entity @s[tag=!dead,tag=!remove_from_existence] run tag @e[tag=this_model] add dead
 
 scoreboard players reset #temp GhostNr
+tag @e[tag=this_model] add found_owner
 tag @e[tag=this_model] remove this_model

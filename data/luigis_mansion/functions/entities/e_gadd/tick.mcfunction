@@ -1,7 +1,5 @@
 scoreboard players operation #temp PassiveNr = @s PassiveNr
-execute as @e[tag=e_gadd_body] if score @s PassiveNr = #temp PassiveNr run tag @s add this_model
-execute as @e[tag=e_gadd_head] if score @s PassiveNr = #temp PassiveNr run tag @s add this_model
-execute as @e[tag=e_gadd_poltergust] if score @s PassiveNr = #temp PassiveNr run tag @s add this_model
+execute as @e[tag=model_piece,scores={PassiveNr=-2147483648..}] if score @s PassiveNr = #temp PassiveNr run tag @s add this_model
 
 function #luigis_mansion:entities/e_gadd/dialog
 
@@ -25,9 +23,7 @@ execute at @s[tag=poltergust] run data modify entity @e[tag=this_model,tag=e_gad
 execute at @s[tag=!poltergust] run data modify entity @e[tag=this_model,tag=e_gadd_poltergust,limit=1] HandItems[0] set value {}
 execute at @e[tag=this_model,tag=e_gadd_head,limit=1] run teleport @e[tag=this_model,tag=e_gadd_poltergust,limit=1] ^ ^ ^-0.1 ~ ~
 
-execute unless entity @s[tag=!dead,tag=!remove_from_existence] run teleport @e[tag=this_model] ~ -100 ~
-execute unless entity @s[tag=!dead,tag=!remove_from_existence] run tag @e[tag=this_model] add dead
-
 scoreboard players reset #temp PassiveNr
+tag @e[tag=this_model] add found_owner
 tag @e[tag=this_model] remove this_model
 execute at @s[scores={LightX=-2147483648..}] run function luigis_mansion:other/cast_shadow/2_tall

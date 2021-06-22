@@ -1,5 +1,5 @@
 scoreboard players operation #temp GhostNr = @s GhostNr
-execute as @e[tag=black_bogmire_body] if score @s GhostNr = #temp GhostNr run tag @s add this_model
+execute as @e[tag=model_piece,scores={GhostNr=-2147483648..}] if score @s GhostNr = #temp GhostNr run tag @s add this_model
 
 teleport @s[tag=!big] ~ ~0.5 ~
 execute if entity @s[tag=!big] as @e[tag=this_model] run teleport @s ~ ~0.5 ~
@@ -36,15 +36,13 @@ execute at @s[tag=vanish_flee] run function luigis_mansion:animations/bogmire/fl
 execute at @s[tag=!hurt,tag=!fleeing,tag=!appear,tag=!vanish,tag=!shadow_death] run function luigis_mansion:animations/bogmire/idle
 execute at @s[tag=fleeing,tag=!shadow_death] run function luigis_mansion:animations/bogmire/flee
 
-execute unless entity @s[tag=!dead,tag=!remove_from_existence] run teleport @e[tag=this_model] ~ -100 ~
-execute unless entity @s[tag=!dead,tag=!remove_from_existence] run tag @e[tag=this_model] add dead
-
 execute at @s[tag=!big] run teleport @s ~ ~-0.5 ~
 execute if entity @s[tag=!big] as @e[tag=this_model] at @s run teleport @s ~ ~-0.5 ~
 execute at @s[tag=big] run teleport @s ~ ~ ~
 execute if entity @s[tag=big] as @e[tag=this_model] at @s run teleport @s ~ ~ ~
 
 scoreboard players reset #temp GhostNr
+tag @e[tag=this_model,limit=1] add found_owner
 tag @e[tag=this_model,limit=1] remove this_model
 
 tag @s remove fleeing

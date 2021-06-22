@@ -2,7 +2,7 @@
     "display": {
         "icon": {
             "item": "minecraft:diamond_pickaxe",
-			"nbt": "{Unbreakable:1b,Damage:5,CustomModelData:20}"
+			"nbt": "{Unbreakable:1b,Damage:5,CustomModelData:13}"
         },
         "title": {
             "translate": "luigis_mansion:advancements.challenges.look_at_me_full_of_bravery"

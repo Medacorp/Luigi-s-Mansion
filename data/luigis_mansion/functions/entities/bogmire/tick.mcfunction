@@ -1,6 +1,5 @@
 scoreboard players operation #temp GhostNr = @s GhostNr
-execute as @e[tag=bogmire_body] if score @s GhostNr = #temp GhostNr run tag @s add this_model
-execute as @e[tag=bogmire_shadow_blob] if score @s GhostNr = #temp GhostNr run tag @s add this_model
+execute as @e[tag=model_piece,scores={GhostNr=-2147483648..}] if score @s GhostNr = #temp GhostNr run tag @s add this_model
 
 execute at @s run teleport @s ~ ~0.5 ~
 execute at @s as @e[tag=this_model] run teleport @s ~ ~0.5 ~
@@ -33,12 +32,10 @@ execute if entity @s[tag=shadow_hit,tag=!big_shadow] run item replace entity @e[
 execute if entity @s[tag=shadow_hit,tag=big_shadow] run item replace entity @e[tag=bogmire_shadow_blob,tag=this_model,limit=1] armor.head with minecraft:diamond_pickaxe{Unbreakable:1,Damage:4,CustomModelData:39}
 execute if entity @s[tag=!shadow_hit] run item replace entity @e[tag=bogmire_shadow_blob,tag=this_model,limit=1] armor.head with minecraft:air
 
-execute unless entity @s[tag=!dead,tag=!remove_from_existence] run teleport @e[tag=this_model] ~ -100 ~
-execute unless entity @s[tag=!dead,tag=!remove_from_existence] run tag @e[tag=this_model] add dead
-
 execute at @s run teleport @s ~ ~-0.5 ~
 execute as @e[tag=this_model] at @s run teleport @s ~ ~-0.5 ~
 
 scoreboard players reset #temp GhostNr
+tag @e[tag=this_model] add found_owner
 tag @e[tag=this_model] remove this_model
 execute at @s[scores={LightX=-2147483648..}] run function luigis_mansion:other/cast_shadow/2_tall

@@ -1,5 +1,5 @@
 scoreboard players operation #temp GhostNr = @s GhostNr
-execute as @e[tag=mr_luggs_body] if score @s GhostNr = #temp GhostNr run tag @s add this_model
+execute as @e[tag=model_piece,scores={GhostNr=-2147483648..}] if score @s GhostNr = #temp GhostNr run tag @s add this_model
 execute as @e[tag=food] if score @s GhostNr = #temp GhostNr run tag @s add this_food
 
 execute if entity @s[tag=dying,scores={HurtTime=1}] run playsound luigis_mansion:entity.mr_luggs.vacuumed hostile @a[tag=same_room] ~ ~ ~ 1
@@ -24,12 +24,11 @@ execute at @s[tag=!hurt,tag=!fleeing,tag=!sigh,tag=!complain,tag=!hit_table,tag=
 execute at @s[tag=fleeing] run function luigis_mansion:animations/mr_luggs/flee
 execute at @s[tag=!fleeing,tag=hurt] run function luigis_mansion:animations/mr_luggs/hurt
 
-execute unless entity @s[tag=!dead,tag=!remove_from_existence] run teleport @e[tag=this_model] ~ -100 ~
 execute unless entity @s[tag=!dead,tag=!remove_from_existence] run teleport @e[tag=this_food] ~ -100 ~
-execute unless entity @s[tag=!dead,tag=!remove_from_existence] run tag @e[tag=this_model] add dead
 execute unless entity @s[tag=!dead,tag=!remove_from_existence] run tag @e[tag=this_food] add dead
 
 scoreboard players reset #temp GhostNr
+tag @e[tag=this_model,limit=1] add found_owner
 tag @e[tag=this_model,limit=1] remove this_model
 tag @e[tag=this_food,limit=1] remove this_food
 execute at @s[scores={LightX=-2147483648..}] run function luigis_mansion:other/cast_shadow/2_tall

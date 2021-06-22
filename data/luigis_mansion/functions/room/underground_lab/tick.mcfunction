@@ -11,3 +11,6 @@ setblock 785 78 21 minecraft:lever[face=floor,facing=south,powered=false]
 setblock 784 78 20 minecraft:lever[face=floor,facing=south,powered=false]
 
 function #luigis_mansion:room/underground_lab/interactions/room
+
+function luigis_mansion:room/door/underground_lab_training_room
+function luigis_mansion:room/door/underground_lab_ghost_portrificationizer_room

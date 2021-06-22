@@ -3,7 +3,7 @@ execute unless entity @s[scores={ActionTime=0..}] run scoreboard players set @s 
 execute if entity @s[tag=key,tag=!rotated,tag=!display] run function luigis_mansion:entities/item/key_rotate
 scoreboard players add @s SpawnTime 1
 tag @s[scores={SpawnTime=20}] add vacuumable
-tag @s[scores={SpawnTime=300},tag=!eternal] add dead
+tag @s[scores={SpawnTime=600},tag=!eternal] add dead
 
 execute at @s run function #luigis_mansion:entities/item/physics
 

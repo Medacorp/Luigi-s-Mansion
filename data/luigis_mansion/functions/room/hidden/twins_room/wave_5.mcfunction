@@ -6,6 +6,7 @@ setblock 747 20 -22 minecraft:chest[facing=east,type=single]{LootTable:"luigis_m
 setblock 742 20 -19 minecraft:chest[facing=east,type=single]{LootTable:"luigis_mansion:search"}
 execute positioned 744 20 -26 run function luigis_mansion:spawn_entities/ghost/empty_marker
 execute positioned 744 20 -26 run function luigis_mansion:spawn_entities/ghost/empty_marker
+tag @e[type=minecraft:marker,x=744.5,y=20,z=-25.5,distance=..0.7,tag=ghost,tag=hidden] add portrait_ghost
 
 summon minecraft:marker 738 20 -25 {Tags:["option"]}
 summon minecraft:marker 744 20 -31 {Tags:["option"]}

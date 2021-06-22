@@ -12,4 +12,3 @@ scoreboard players set @s ActionTime 0
 scoreboard players set @s AnimationProg 0
 scoreboard players operation @s LastHealth = @s Health
 data modify entity @s ArmorItems[3].tag merge value {attacked_by:[]}
-playsound luigis_mansion:entity.ghost.disappear hostile @a[tag=same_room] ~ ~ ~ 1

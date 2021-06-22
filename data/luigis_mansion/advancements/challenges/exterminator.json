@@ -1,8 +1,8 @@
 {
     "display": {
         "icon": {
-            "item": "minecraft:diamond_pickaxe",
-			"nbt": "{Unbreakable:1b,Damage:1,CustomModelData:56}"
+            "item": "minecraft:leather_chestplate",
+			"nbt": "{Unbreakable:1b,Damage:1,CustomModelData:13,display:{color:38911}}"
         },
         "title": {
             "translate": "luigis_mansion:advancements.challenges.exterminator"

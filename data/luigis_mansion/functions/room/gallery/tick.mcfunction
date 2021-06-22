@@ -6,5 +6,6 @@ execute as @a[gamemode=!spectator,scores={Room=-4}] run function luigis_mansion:
 
 function #luigis_mansion:room/gallery/interactions/room
 
+function luigis_mansion:room/door/ghost_portrificationizer_room_gallery
 function luigis_mansion:room/door/gallery_1
 function luigis_mansion:room/door/gallery_2

@@ -18,7 +18,7 @@ scoreboard players add @s[tag=visible] SpawnTime 1
 execute at @s[scores={SpawnTime=1..}] if block ^ ^ ^0.3 #luigis_mansion:ghosts_ignore if block ^ ^1 ^0.3 #luigis_mansion:ghosts_ignore run teleport @s ^ ^ ^0.02
 execute at @s[tag=visible] if block ~ ~-0.01 ~ #luigis_mansion:ghosts_ignore run teleport @s ~ ~-0.01 ~
 execute at @s[scores={Turn=0},tag=visible] run function luigis_mansion:entities/spark/turn
-data modify entity @s[scores={SpawnTime=140}] ArmorItems[3].tag.CustomModelData set value 88
+data modify entity @s[scores={SpawnTime=140}] ArmorItems[3].tag.CustomModelData set value 101
 tag @s[scores={SpawnTime=200}] add explode
 execute if entity @s[tag=explode,tag=visible] run summon minecraft:creeper ~ ~ ~ {CustomName:'{"translate":"luigis_mansion:entity.spark"}',Fuse:0s,ExplosionRadius:2b,Invulnerable:1b,Silent:1b}
 execute if entity @s[tag=explode,tag=visible] run playsound minecraft:entity.generic.explode hostile @s ~ ~ ~ 2
