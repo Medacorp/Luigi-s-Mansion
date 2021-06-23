@@ -15,7 +15,7 @@ tag @s remove pulled
 clear @s minecraft:carved_pumpkin
 
 tellraw @s[scores={ResetChoice=1}] {"translate":"chat.type.text","with":[{"translate":"luigis_mansion:entity.mansion","color":"green"},{"translate":"luigis_mansion:dialog.reset_mansion.confirm.1"}]}
-tellraw @s[scores={ResetChoice=1}] {"translate":"luigis_mansion:message.options","color":"green","extra":[{"text":"\n"},{"translate":"luigis_mansion:dialog.reset_mansion.confirm.yes","clickEvent":{"action":"run_command","value":"/trigger ResetChoice set 3"}},{"text":"\n"},{"translate":"luigis_mansion:dialog.reset_mansion.confirm.no","clickEvent":{"action":"run_command","value":"/trigger ResetChoice set 4"}}]}
+tellraw @s[scores={ResetChoice=1}] {"translate":"luigis_mansion:dialog.reset_mansion.confirm.yes","color":"green","clickEvent":{"action":"run_command","value":"/trigger ResetChoice set 3"},"extra":[{"text":"\n"},{"translate":"luigis_mansion:dialog.reset_mansion.confirm.no","clickEvent":{"action":"run_command","value":"/trigger ResetChoice set 4"}}]}
 scoreboard players enable @s[scores={ResetChoice=1}] ResetChoice
 
 tellraw @s[scores={ResetChoice=2}] {"translate":"chat.type.text","with":[{"translate":"luigis_mansion:entity.mansion","color":"green"},{"translate":"luigis_mansion:dialog.reset_mansion.no.1"}]}

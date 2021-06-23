@@ -10,7 +10,7 @@ execute if entity @s[scores={Dialog=1}] if data storage luigis_mansion:data curr
 execute if data storage luigis_mansion:data current_state.current_data.rooms.fortune_tellers_room{cleared:1b} run scoreboard players set @s[scores={Dialog=48}] Dialog 634
 tag @s[scores={Dialog=120}] remove explaining
 execute if entity @s[scores={Dialog=120}] run scoreboard players set @e[tag=this_model,tag=toad_head,limit=1] AnimationProg 0
-execute if entity @s[scores={Dialog=120}] run tellraw @a[tag=same_room] {"translate":"luigis_mansion:message.options","color":"green","extra":[{"text":"\n"},{"translate":"luigis_mansion:dialog.toad_4.repeat.no","clickEvent":{"action":"run_command","value":"/trigger Toad4Choice set 2"}},{"text":"\n"},{"translate":"luigis_mansion:dialog.toad_4.repeat.yes","clickEvent":{"action":"run_command","value":"/trigger Toad4Choice set 1"}}]}
+execute if entity @s[scores={Dialog=120}] run tellraw @a[tag=same_room] {"translate":"luigis_mansion:dialog.toad_4.repeat.no","color":"green","clickEvent":{"action":"run_command","value":"/trigger Toad4Choice set 2"},"extra":[{"text":"\n"},{"translate":"luigis_mansion:dialog.toad_4.repeat.yes","clickEvent":{"action":"run_command","value":"/trigger Toad4Choice set 1"}}]}
 execute if entity @s[scores={Dialog=120}] run scoreboard players enable @a[tag=same_room] Toad4Choice
 execute if entity @s[scores={Dialog=122}] if entity @a[scores={Toad4Choice=1..}] as @a[scores={Toad4Choice=0}] run trigger Toad4Choice set 0
 tag @s[scores={Dialog=122}] add explaining
@@ -26,7 +26,7 @@ execute if entity @s[scores={Dialog=282}] if entity @a[scores={Toad4Choice=2}] r
 tag @s[scores={Dialog=634}] remove explaining
 execute if entity @s[scores={Dialog=634}] run scoreboard players set @e[tag=this_model,tag=toad_head,limit=1] AnimationProg 0
 execute if entity @s[scores={Dialog=634}] run scoreboard players set @a Toad4Choice 0
-execute if entity @s[scores={Dialog=634}] run tellraw @a[tag=same_room] {"translate":"luigis_mansion:message.options","color":"green","extra":[{"text":"\n"},{"translate":"luigis_mansion:message.save.yes","clickEvent":{"action":"run_command","value":"/trigger Toad4Choice set 1"}},{"text":"\n"},{"translate":"luigis_mansion:message.save.no","clickEvent":{"action":"run_command","value":"/trigger Toad4Choice set 2"}}]}
+execute if entity @s[scores={Dialog=634}] run tellraw @a[tag=same_room] {"translate":"luigis_mansion:message.save.yes","color":"green","clickEvent":{"action":"run_command","value":"/trigger Toad4Choice set 1"},"extra":[{"text":"\n"},{"translate":"luigis_mansion:message.save.no","clickEvent":{"action":"run_command","value":"/trigger Toad4Choice set 2"}}]}
 execute if entity @s[scores={Dialog=634}] run scoreboard players enable @a[tag=same_room] Toad4Choice
 execute if entity @s[scores={Dialog=636}] as @a[scores={Toad4Choice=1},limit=1] run function luigis_mansion:entities/player/save_mansion
 execute if entity @s[scores={Dialog=636}] run scoreboard players set @a Toad4Choice 0

@@ -14,7 +14,7 @@ execute if entity @s[scores={Dialog=1}] unless data storage luigis_mansion:data 
 execute if entity @s[scores={Dialog=1}] if data storage luigis_mansion:data current_state.current_data.rooms.breaker_room{cleared:1b} run scoreboard players add @s Dialog 16
 tag @s[scores={Dialog=128}] remove explaining
 execute if entity @s[scores={Dialog=128}] run scoreboard players set @e[tag=this_model,tag=toad_head,limit=1] AnimationProg 0
-execute if entity @s[scores={Dialog=128}] run tellraw @a[tag=same_room] {"translate":"luigis_mansion:message.options","color":"green","extra":[{"text":"\n"},{"translate":"luigis_mansion:message.save.yes","clickEvent":{"action":"run_command","value":"/trigger Toad1Choice set 1"}},{"text":"\n"},{"translate":"luigis_mansion:message.save.no","clickEvent":{"action":"run_command","value":"/trigger Toad1Choice set 2"}}]}
+execute if entity @s[scores={Dialog=128}] run tellraw @a[tag=same_room] {"translate":"luigis_mansion:message.save.yes","color":"green","clickEvent":{"action":"run_command","value":"/trigger Toad1Choice set 1"},"extra":[{"text":"\n"},{"translate":"luigis_mansion:message.save.no","clickEvent":{"action":"run_command","value":"/trigger Toad1Choice set 2"}}]}
 execute if entity @s[scores={Dialog=128}] run scoreboard players enable @a[tag=same_room] Toad1Choice
 execute if entity @s[scores={Dialog=130}] as @a[scores={Toad1Choice=1},limit=1] run function luigis_mansion:entities/player/save_mansion
 execute if entity @s[scores={Dialog=130}] run scoreboard players set @a Toad1Choice 0

@@ -7,6 +7,7 @@ scoreboard objectives add BooTimer dummy
 scoreboard objectives add ChangedMansion dummy
 scoreboard objectives add ClairvoyaChoice trigger
 scoreboard objectives add ClairvoyaSpoke dummy
+scoreboard objectives add ClickEventCheck trigger
 scoreboard objectives add Constants dummy
 scoreboard objectives add Damage dummy
 scoreboard objectives add DamagePitch dummy

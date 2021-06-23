@@ -8,7 +8,7 @@ execute if entity @s[scores={Dialog=1}] if score #players Totals matches 2.. run
 tag @s[scores={Dialog=56}] add listen
 tag @s[scores={Dialog=56}] remove nod
 execute if entity @s[scores={Dialog=56}] run scoreboard players set @e[tag=this_model,tag=e_gadd_head,limit=1] AnimationProg 0
-execute if entity @s[scores={Dialog=56}] run tellraw @a[tag=same_room] {"translate":"luigis_mansion:message.options","color":"green","extra":[{"text":"\n"},{"translate":"luigis_mansion:dialog.ghost_portrificationizer_room.lab","clickEvent":{"action":"run_command","value":"/trigger EGaddGPRChoice set 1"}},{"text":"\n"},{"translate":"luigis_mansion:dialog.ghost_portrificationizer_room.gallery","clickEvent":{"action":"run_command","value":"/trigger EGaddGPRChoice set 2"}},{"text":"\n"},{"translate":"luigis_mansion:dialog.ghost_portrificationizer_room.nothing","clickEvent":{"action":"run_command","value":"/trigger EGaddGPRChoice set 3"}}]}
+execute if entity @s[scores={Dialog=56}] run tellraw @a[tag=same_room] {"translate":"luigis_mansion:dialog.ghost_portrificationizer_room.lab","color":"green","clickEvent":{"action":"run_command","value":"/trigger EGaddGPRChoice set 1"},"extra":[{"text":"\n"},{"translate":"luigis_mansion:dialog.ghost_portrificationizer_room.gallery","clickEvent":{"action":"run_command","value":"/trigger EGaddGPRChoice set 2"}},{"text":"\n"},{"translate":"luigis_mansion:dialog.ghost_portrificationizer_room.nothing","clickEvent":{"action":"run_command","value":"/trigger EGaddGPRChoice set 3"}}]}
 execute if entity @s[scores={Dialog=56}] run scoreboard players enable @a[tag=same_room] EGaddGPRChoice
 tag @s[scores={Dialog=58}] remove listen
 tag @s[scores={Dialog=58}] add nod

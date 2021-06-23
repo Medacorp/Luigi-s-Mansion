@@ -64,6 +64,10 @@ execute store result score @s JumpHeight run data get entity @s Pos[1] 100
 tag @e[tag=same_room] remove same_room
 tag @s remove already_ticked
 
+tellraw @s[scores={ClickEventCheck=1}] {"translate":"chat.type.text","with":[{"translate":"luigis_mansion:entity.mansion","color":"green"},{"translate":"luigis_mansion:message.format_explanation.check"}]}
+scoreboard players set @s ClickEventCheck 0
+scoreboard players enable @s ClickEventCheck
+
 scoreboard players reset @s MirrorX
 scoreboard players reset @s MirrorZ
 scoreboard players reset @s LightX
