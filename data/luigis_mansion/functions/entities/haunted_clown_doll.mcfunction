@@ -1,1 +1,1 @@
-execute if entity @s[tag=haunted_clown_doll] run function luigis_mansion:entities/haunted_object/clown_doll
+execute if entity @s[tag=haunted_clown_doll] run function luigis_mansion:entities/haunted_clown_doll/tick

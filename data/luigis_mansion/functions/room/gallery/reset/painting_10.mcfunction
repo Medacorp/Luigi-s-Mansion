@@ -1,1 +1,1 @@
-data modify entity @e[x=754.5,y=79,z=-25.5,type=minecraft:item_frame,distance=..0.7,limit=1] Item set value {id:"minecraft:carved_pumpkin",Count:1b}
+data modify entity @e[x=754.5,y=79,z=-25.5,type=minecraft:item_frame,distance=..0.7,limit=1] Item set value {id:"minecraft:painting",Count:1b,tag:{CustomModelData:2}}

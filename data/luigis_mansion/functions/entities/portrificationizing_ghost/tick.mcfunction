@@ -1,3 +1,4 @@
+teleport @s ~ ~0.4 ~
 execute unless entity @a[gamemode=!spectator] run tag @s add dead
 scoreboard players add @s[scores={Dialog=301..}] Dialog 1
 execute unless entity @e[tag=portrificationizing_ghost,scores={Dialog=301..380},limit=1] run scoreboard players add @s[scores={Dialog=300}] Dialog 1
@@ -11,11 +12,10 @@ execute if entity @s[scores={Dialog=320}] run setblock 770 77 12 minecraft:air
 execute if entity @s[scores={Dialog=320}] run setblock 770 78 11 minecraft:light_gray_concrete
 execute if entity @s[scores={Dialog=330}] run setblock 770 78 11 minecraft:air
 execute if entity @s[scores={Dialog=330}] run setblock 770 78 10 minecraft:light_gray_concrete
-teleport @s[scores={Dialog=301}] 770 80 12
-teleport @s[scores={Dialog=330..340}] ~ ~-0.1 ~-0.2
-teleport @s[scores={Dialog=341..349}] ~ ~-0.1 ~
-execute if entity @s[scores={Dialog=350..596}] run setblock ~ ~ ~1 minecraft:air
-execute if entity @s[scores={Dialog=350..596}] run setblock ~ ~ ~ minecraft:light_gray_concrete
+execute at @s run teleport @s[scores={Dialog=330..340}] ~ ~-0.1 ~-0.2
+execute at @s run teleport @s[scores={Dialog=341..349}] ~ ~-0.1 ~
+execute at @s[scores={Dialog=350..596}] run setblock ~ ~0.3 ~1 minecraft:air
+execute at @s[scores={Dialog=350..596}] run setblock ~ ~0.3 ~ minecraft:light_gray_concrete
 execute if entity @s[scores={Dialog=350}] run teleport @s 770 78 9
 execute if entity @s[scores={Dialog=360}] run teleport @s 770 78 8
 execute if entity @s[scores={Dialog=370}] run teleport @s 770 78 7
@@ -116,28 +116,26 @@ execute if entity @s[scores={Dialog=550}] run setblock 770 79 -7 minecraft:green
 execute if entity @s[scores={Dialog=570}] run setblock 770 81 -7 minecraft:green_terracotta
 execute if entity @s[scores={Dialog=570}] run setblock 770 79 -7 minecraft:air
 execute if entity @s[scores={Dialog=570},tag=!dead] run function #luigis_mansion:entities/portrificationizing_ghost/portrait
-item replace entity @s[scores={Dialog=570}] armor.head with minecraft:air
-execute if entity @s[scores={Dialog=570}] run teleport @s 770 78 -8
-execute if entity @s[scores={Dialog=570}] positioned ~ ~1 ~ run teleport @e[distance=..0.7,type=minecraft:item_frame,limit=1] 770 79 -8
-execute if entity @s[scores={Dialog=575}] run teleport @s 770 78 -9
-execute if entity @s[scores={Dialog=575}] positioned ~ ~1 ~ run teleport @e[distance=..0.7,type=minecraft:item_frame,limit=1] 770 79 -9
-execute if entity @s[scores={Dialog=580}] run teleport @s 770 78 -10
-execute if entity @s[scores={Dialog=580}] positioned ~ ~1 ~ run teleport @e[distance=..0.7,type=minecraft:item_frame,limit=1] 770 79 -10
-execute if entity @s[scores={Dialog=585}] run teleport @s 770 78 -11
-execute if entity @s[scores={Dialog=585}] positioned ~ ~1 ~ run teleport @e[distance=..0.7,type=minecraft:item_frame,limit=1] 770 79 -11
-execute if entity @s[scores={Dialog=590}] run teleport @s 770 78 -12
-execute if entity @s[scores={Dialog=590}] positioned ~ ~1 ~ run teleport @e[distance=..0.7,type=minecraft:item_frame,limit=1] 770 79 -12
-execute if entity @s[scores={Dialog=595}] run teleport @s 770 79 -12
-execute if entity @s[scores={Dialog=595}] positioned ~ ~1 ~ run teleport @e[distance=..0.7,type=minecraft:item_frame,limit=1] 770 80 -12
-execute if entity @s[scores={Dialog=600}] run data merge entity @e[x=770.5,y=80,z=-11.5,distance=..0.7,type=minecraft:item_frame,limit=1] {Facing:5b,ItemRotation:0b}
-execute if entity @s[scores={Dialog=600}] run teleport @e[x=770.5,y=80,z=-11.5,distance=..0.7,type=minecraft:item_frame,limit=1] 771 79 -12
-execute if entity @s[scores={Dialog=645}] run teleport @e[x=771.5,y=79,z=-11.5,distance=..0.7,type=minecraft:item_frame,limit=1] 771 78 -12
+execute if entity @s[scores={Dialog=570}] run teleport @s 770 77.95 -8 -90 0
+execute if entity @s[scores={Dialog=575}] run teleport @s 770 77.95 -9
+execute if entity @s[scores={Dialog=580}] run teleport @s 770 77.95 -10
+execute if entity @s[scores={Dialog=585}] run teleport @s 770 77.95 -11
+execute if entity @s[scores={Dialog=590}] run teleport @s 770 77.95 -12
+execute if entity @s[scores={Dialog=595}] run teleport @s 770 78.95 -12
+execute if entity @s[scores={Dialog=596}] run data merge entity @s {Pose:{Head:[18.0f,0.0f,0.0f]}}
+execute if entity @s[scores={Dialog=597}] run data merge entity @s {Pose:{Head:[36.0f,0.0f,0.0f]}}
+execute if entity @s[scores={Dialog=598}] run data merge entity @s {Pose:{Head:[54.0f,0.0f,0.0f]}}
+execute if entity @s[scores={Dialog=599}] run data merge entity @s {Pose:{Head:[72.0f,0.0f,0.0f]}}
+execute if entity @s[scores={Dialog=600}] run data merge entity @s {Pose:{Head:[90.0f,0.0f,0.0f]}}
+execute if entity @s[scores={Dialog=600}] run teleport @s 770.99 78.47 -12
+execute if entity @s[scores={Dialog=645}] run teleport @s 770.99 77.47 -12
 execute if entity @s[scores={Dialog=645}] run setblock 770 79 -12 minecraft:air
-execute if entity @s[scores={Dialog=650}] run teleport @e[x=771.5,y=78,z=-11.5,distance=..0.7,type=minecraft:item_frame,limit=1] 771 77 -12
+execute if entity @s[scores={Dialog=650}] run teleport @s 770.99 76.47 -12
 execute if entity @s[scores={Dialog=650}] run setblock 770 78 -12 minecraft:air
 execute if entity @s[scores={Dialog=650}] run setblock 770 77 -12 minecraft:light_gray_concrete
-execute if entity @s[scores={Dialog=655}] run teleport @e[x=771.5,y=77,z=-11.5,distance=..0.7,type=minecraft:item_frame,limit=1] 771 76 -12
+execute if entity @s[scores={Dialog=655}] run teleport @s 770.99 75.47 -12
 execute if entity @s[scores={Dialog=655}] run setblock 770 77 -12 minecraft:cyan_terracotta
-execute if entity @s[scores={Dialog=660}] run kill @e[x=771.5,y=76,z=-11.5,distance=..0.7,type=minecraft:item_frame,limit=1]
 execute if entity @s[scores={Dialog=660}] run setblock 770 77 -12 minecraft:air
-kill @s[scores={Dialog=660}]
+execute if entity @s[scores={Dialog=660}] run teleport @s 770.99 74.47 -12
+kill @s[scores={Dialog=665}]
+execute at @s run teleport @s ~ ~-0.4 ~

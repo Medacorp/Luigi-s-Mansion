@@ -1,5 +1,6 @@
 execute if entity @s[tag=dead,tag=normal_death] run playsound luigis_mansion:entity.green_flying_fish.vacuumed hostile @a[tag=same_room] ~ ~ ~ 1
 execute if entity @s[tag=dead,tag=element_death] run playsound luigis_mansion:entity.green_flying_fish.element_death hostile @a[tag=same_room] ~ ~ ~ 1
+execute if entity @s[tag=dead] run function luigis_mansion:entities/green_flying_fish/drop_loot
 execute if entity @s[tag=dead] run particle minecraft:dust 0.7 1 1 1 ~-0.1 ~ ~0.1 0.2 0.2 0.2 1 10
 execute if entity @s[tag=dead] run teleport @s ~ -100 ~
 

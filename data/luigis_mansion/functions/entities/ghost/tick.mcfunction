@@ -2,12 +2,12 @@ execute unless entity @s[scores={Health=1..},tag=!dialog] run tag @s add dying
 execute if entity @s[tag=dying,tag=normal_death,tag=!dialog] run function luigis_mansion:entities/ghost/death
 execute if entity @s[tag=dying,tag=hurt,tag=!normal_death,tag=!dialog] run function luigis_mansion:entities/ghost/death
 execute if entity @s[tag=dying,tag=element_death,tag=!dialog] run function luigis_mansion:entities/ghost/death_element
-execute if entity @s[tag=dying,tag=element_hurt,tag=!element_hurt,tag=!dialog] run function luigis_mansion:entities/ghost/death_element
+execute if entity @s[tag=dying,tag=element_hurt,tag=!element_death,tag=!dialog] run function luigis_mansion:entities/ghost/death_element
 scoreboard players operation #temp Move = @s Move
 execute unless score @s ActionTime matches 1.. run tag @s[tag=disappear_next_tick,tag=vanish] add disappear
 execute unless score @s ActionTime matches 1.. run tag @s[tag=vanish] add disappear_next_tick
 execute if entity @s[tag=!hidden,scores={LightX=-2147483648..}] run function luigis_mansion:other/cast_shadow
-function #luigis_mansion:entities/ghosts
+execute if entity @s[tag=!freeze] run function #luigis_mansion:entities/ghosts
 scoreboard players add @s[scores={StunTime=0},tag=!hidden] SpawnTime 1
 scoreboard players set @s[tag=attack,scores={SpawnTime=21..},tag=!hidden] SpawnTime 20
 scoreboard players set @s[tag=fleeing,scores={SpawnTime=21..},tag=!hidden] SpawnTime 20
@@ -34,9 +34,8 @@ scoreboard players set @s[tag=vanish] VulnerableTime 0
 scoreboard players set @s[tag=vanish] StunTime 0
 execute if entity @s[tag=!hurt,tag=fleeing,tag=!dying,scores={VulnerableTime=0..}] run function luigis_mansion:entities/ghost/hurt
 execute if entity @s[tag=hurt,tag=!disappear,tag=!dying,scores={VulnerableTime=0..}] run function luigis_mansion:entities/ghost/hurt
-tag @s[tag=!element_hurt,tag=last_element_hurt] remove last_element_hurt
-execute if entity @s[tag=!hurt,tag=!disappear,tag=element_hurt,tag=!dying,scores={VulnerableTime=0..}] run function luigis_mansion:entities/ghost/hurt_element
-execute if entity @s[tag=!hurt,tag=!disappear,tag=!element_hurt,tag=freeze,tag=!dying,scores={VulnerableTime=0..}] run function luigis_mansion:entities/ghost/hurt_element
+execute if entity @s[tag=!hurt,tag=!disappear,tag=element_hurt,tag=!dying,scores={VulnerableTime=0..,ElementHurtTime=0}] run function luigis_mansion:entities/ghost/hurt_element
+execute if entity @s[tag=!hurt,tag=!disappear,tag=!dying,scores={VulnerableTime=0..,ElementHurtTime=1..}] run function luigis_mansion:entities/ghost/hurt_element
 
 execute if entity @s[tag=fleeing,tag=!vanish,tag=!disappear,tag=!vacuumable,tag=!dialog,tag=!dying] run function luigis_mansion:entities/ghost/flee
 tag @s[tag=in_vacuum] remove in_vacuum

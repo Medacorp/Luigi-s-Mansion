@@ -1,4 +1,5 @@
 tag @s add element_death
+tag @s remove element_hurt
 tag @s remove hurt
 
 scoreboard players set @s[scores={HurtTime=1}] HurtTime 2

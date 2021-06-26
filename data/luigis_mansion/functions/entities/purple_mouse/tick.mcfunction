@@ -1,6 +1,7 @@
 teleport @s ~ ~1.3 ~
 execute at @s[tag=dead,tag=normal_death] run playsound luigis_mansion:entity.purple_mouse.vacuumed hostile @a[tag=same_room] ~ ~ ~ 1
 execute at @s[tag=dead,tag=element_death] run playsound luigis_mansion:entity.purple_mouse.element_death hostile @a[tag=same_room] ~ ~ ~ 1
+execute at @s[tag=dead] run function luigis_mansion:entities/purple_mouse/drop_loot
 execute at @s[tag=dead] run particle minecraft:dust 0.7 1 1 1 ~-0.1 ~ ~0.1 0.2 0.2 0.2 1 10
 execute if entity @s[tag=dead] run teleport @s ~ -100 ~
 

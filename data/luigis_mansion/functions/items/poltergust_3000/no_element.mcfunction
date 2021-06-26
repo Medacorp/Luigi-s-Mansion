@@ -4,3 +4,4 @@ data modify entity @e[tag=inventory,limit=1] ArmorItems[3].tag.luigis_mansion.it
 scoreboard players reset #temp Move
 execute as @e[tag=inventory,limit=1] run function luigis_mansion:other/inventory_boxes/set
 function luigis_mansion:other/inventory_boxes/load
+scoreboard players reset @s Element

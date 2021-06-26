@@ -1,9 +1,6 @@
 execute if entity @s[tag=!dead] as @e[distance=..1,tag=gameboy_horror_location] run function luigis_mansion:entities/gameboy_horror_location/bring_player_back
 execute if entity @s[tag=!dead] run effect give @a[distance=..1,gamemode=!spectator,limit=1] minecraft:instant_damage 1 0 true
 execute if entity @s[tag=!dead] run scoreboard players set @a[distance=..1,gamemode=!spectator,limit=1] ForcedDamage 4
-execute if entity @s[tag=!dead,tag=haunted_teddy_bear] run scoreboard players set @e[tag=chauncey] AnimationProg 0
-execute if entity @s[tag=!dead,tag=haunted_teddy_bear] if entity @a[distance=..1,gamemode=!spectator,limit=1] run tag @e[tag=chauncey] add laugh
-execute if entity @s[tag=!dead,tag=haunted_teddy_bear] unless entity @a[distance=..1,gamemode=!spectator,limit=1] run tag @e[tag=chauncey] add complain
 scoreboard players operation #temp Room = @s Room
 execute as @e[tag=haunted_object] if score @s Room = #temp Room run scoreboard players set @s WaitTime 0
 execute as @e[tag=haunted_object] if score @s Room = #temp Room run scoreboard players set @s AnimationProg 0

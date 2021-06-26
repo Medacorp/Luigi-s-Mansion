@@ -13,10 +13,12 @@ scoreboard players operation #temp GhostNr = @s GhostNr
 execute as @e[tag=bowling_ball] if score @s GhostNr = #temp GhostNr run tag @s add this_bowling_ball
 
 execute unless entity @s[tag=!dead,tag=!vanish,tag=!remove_from_existence] run tag @e[tag=this_bowling_ball,tag=held,limit=1] add drop
-execute if entity @s[scores={HurtTime=1},tag=element_hurt] run tag @e[tag=this_bowling_ball,tag=held,limit=1] add drop
-execute if entity @s[scores={HurtTime=1},tag=hurt] run tag @e[tag=this_bowling_ball,tag=held,limit=1] add drop
-execute if entity @s[scores={HurtTime=1},tag=hurt] run playsound luigis_mansion:entity.bowling_ghost.hurt hostile @a[tag=same_room] ~ ~ ~ 1
-scoreboard players set @s[scores={HurtTime=1},tag=hurt] Sound 40
+execute if entity @s[tag=element_hurt] run tag @e[tag=this_bowling_ball,tag=held,limit=1] add drop
+execute if entity @s[tag=hurt] run tag @e[tag=this_bowling_ball,tag=held,limit=1] add drop
+execute if entity @s[scores={HurtTime=1},tag=hurt,tag=!fleeing] run playsound luigis_mansion:entity.bowling_ghost.hurt hostile @a[tag=same_room] ~ ~ ~ 1
+scoreboard players set @s[scores={HurtTime=1},tag=hurt,tag=!fleeing] Sound 40
+execute if entity @s[scores={ElementHurtTime=0},tag=element_hurt] run playsound luigis_mansion:entity.bowling_ghost.element_hurt hostile @a[tag=same_room] ~ ~ ~ 1
+scoreboard players set @s[scores={ElementHurtTime=0},tag=element_hurt] Sound 30
 execute if entity @s[scores={Sound=0},tag=fleeing] run playsound luigis_mansion:entity.bowling_ghost.flee hostile @a[tag=same_room] ~ ~ ~ 1
 execute if entity @s[scores={Sound=0},tag=!vanish,tag=!fleeing,tag=!attack,tag=!laugh,tag=!complain,tag=grabbed_ball,tag=!appear] run playsound luigis_mansion:entity.bowling_ghost.ambient hostile @a[tag=same_room] ~ ~ ~ 1
 scoreboard players set @s[scores={Sound=0}] Sound 20

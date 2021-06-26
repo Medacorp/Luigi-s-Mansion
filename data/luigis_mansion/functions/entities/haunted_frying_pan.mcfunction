@@ -1,1 +1,1 @@
-execute if entity @s[tag=haunted_frying_pan] run function luigis_mansion:entities/haunted_object/frying_pan
+execute if entity @s[tag=haunted_frying_pan] run function luigis_mansion:entities/haunted_frying_pan/tick

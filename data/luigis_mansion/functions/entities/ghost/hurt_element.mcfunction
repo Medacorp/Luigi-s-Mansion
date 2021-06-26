@@ -1,26 +1,18 @@
-scoreboard players operation #temp LastHealth = @s Health
-scoreboard players set #temp Health 10
-scoreboard players operation #temp Health *= #multiply_damage Selected
-scoreboard players operation #temp Health /= #100 Constants
-scoreboard players operation @s[scores={Room=1..}] Health -= #temp Health
-scoreboard players remove @s[scores={Room=..0}] Health 10
-scoreboard players operation #temp Health = @s Health
-scoreboard players operation #temp LastHealth /= #100 Constants
-scoreboard players operation #temp Health /= #100 Constants
-execute unless score #temp LastHealth = #temp Health run particle minecraft:damage_indicator ~ ~0.6 ~ 0.2 0.2 0.2 0 1
-scoreboard players reset #temp LastHealth
-scoreboard players reset #temp Health
+execute unless entity @s[tag=!burning_heart,tag=!watery_heart,tag=!frozen_heart] run scoreboard players set @s ElementHurtTime 10
+execute if entity @s[tag=!burning_heart,tag=!watery_heart,tag=!frozen_heart] run scoreboard players set @s[scores={ElementalHurt=0..1}] ElementHurtTime 60
+scoreboard players remove @s ElementHurtTime 1
+execute if entity @s[scores={ElementHurtTime=10..}] run function luigis_mansion:entities/ghost/hurt_element_damage
+
+
+scoreboard players set @s[tag=!freeze] ActionTime 0
+scoreboard players set @s[scores={ElementHurtTime=0},tag=!freeze] AnimationProg 0
+execute unless entity @s[tag=!burning_heart,tag=!watery_heart,tag=!frozen_heart] run tag @s add stunable
+tag @s[tag=!freeze] remove attack
+tag @s[tag=!freeze] remove laugh
+tag @s[tag=!freeze] remove complain
+tag @s[tag=!freeze] remove smug
 tag @s remove burning_heart
 tag @s remove watery_heart
 tag @s remove frozen_heart
-scoreboard players set @s ActionTime 0
-scoreboard players set @s[tag=!last_element_hurt] AnimationProg 0
-tag @s add last_element_hurt
-tag @s remove attack
-tag @s remove laugh
-tag @s remove complain
 tag @s remove element_hurt
 tag @s remove freeze
-tag @s[tag=temper_terror] add stunable
-tag @s[tag=flash] add stunable
-tag @s[tag=blue_blaze] add stunable

@@ -11,8 +11,8 @@ execute if entity @s[tag=!boo_hurt,tag=fleeing,tag=!dying] run function luigis_m
 execute if entity @s[tag=boo_hurt,tag=!dying] run function luigis_mansion:entities/king_boo/hurt
 execute if entity @s[tag=fleeing] run function luigis_mansion:entities/king_boo/flee
 
-execute if entity @s[scores={HurtTime=1},tag=boo_hurt] run playsound luigis_mansion:entity.king_boo.hurt hostile @a[tag=same_room] ~ ~ ~ 1
-scoreboard players set @s[scores={HurtTime=1},tag=boo_hurt] Sound 40
+execute if entity @s[scores={HurtTime=1},tag=boo_hurt,tag=!fleeing] run playsound luigis_mansion:entity.king_boo.hurt hostile @a[tag=same_room] ~ ~ ~ 1
+scoreboard players set @s[scores={HurtTime=1},tag=boo_hurt,tag=!fleeing] Sound 40
 execute if entity @s[scores={Sound=0},tag=fleeing] run playsound luigis_mansion:entity.king_boo.flee hostile @a[tag=same_room] ~ ~ ~ 1
 scoreboard players set @s[scores={Sound=0}] Sound 40
 

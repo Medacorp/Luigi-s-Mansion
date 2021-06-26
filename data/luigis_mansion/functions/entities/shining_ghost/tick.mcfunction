@@ -8,6 +8,7 @@ execute if entity @s[tag=spit] run function luigis_mansion:entities/shining_ghos
 execute if entity @s[tag=spit] at @s run function luigis_mansion:animations/shining_ghost/spit
 execute if entity @s[tag=!in_vacuum,tag=!spit] run function luigis_mansion:entities/shining_ghost/move
 execute if entity @s[tag=collision,tag=spit] run function luigis_mansion:entities/shining_ghost/capture
+execute if entity @s[tag=collision,tag=spit] run function luigis_mansion:entities/shining_ghost/drop_loot
 tag @s[tag=collision,tag=spit] add dead
 tag @s[tag=collision] remove spit
 tag @s[tag=collision] remove collision

@@ -1,22 +1,22 @@
+teleport @s ~ ~0.4 ~
 scoreboard players add @s Dialog 1
 execute at @e[tag=e_gadd,scores={Room=-3},limit=1] facing entity @s feet run teleport @e[tag=e_gadd,scores={Room=-3},limit=1] ~ ~ ~ ~ ~
-execute if entity @s[scores={Dialog=1}] run data merge entity @e[tag=marios_painting,limit=1] {Invisible:1b,Fixed:1b}
-execute if entity @s[scores={Dialog=40}] run data merge entity @e[tag=marios_painting,limit=1] {Facing:1b,ItemRotation:0b}
-execute if entity @s[scores={Dialog=40}] run teleport @e[tag=marios_painting,limit=1] 770 80 -12
-execute if entity @s[scores={Dialog=45}] run teleport @e[tag=marios_painting,limit=1] 770 79 -12
+execute if entity @s[scores={Dialog=1}] run kill @e[tag=marios_painting,limit=1]
+execute if entity @s[scores={Dialog=35}] run data merge entity @s {Pose:{Head:[72.0f,0.0f,0.0f]}}
+execute if entity @s[scores={Dialog=36}] run data merge entity @s {Pose:{Head:[54.0f,0.0f,0.0f]}}
+execute if entity @s[scores={Dialog=37}] run data merge entity @s {Pose:{Head:[36.0f,0.0f,0.0f]}}
+execute if entity @s[scores={Dialog=38}] run data merge entity @s {Pose:{Head:[18.0f,0.0f,0.0f]}}
+execute if entity @s[scores={Dialog=39}] run data merge entity @s {Pose:{Head:[0.0f,0.0f,0.0f]}}
+execute if entity @s[scores={Dialog=40}] run teleport @s 770 78.95 -12
+execute if entity @s[scores={Dialog=45}] run teleport @s 770 77.95 -12
 execute if entity @s[scores={Dialog=45}] run setblock 770 79 -12 minecraft:air
-execute if entity @s[scores={Dialog=51..176}] run setblock ~ ~ ~-1 minecraft:air
-execute if entity @s[scores={Dialog=51..176}] run setblock ~ ~ ~ minecraft:light_gray_concrete
-execute if entity @s[scores={Dialog=50}] run teleport @s 770 78 -11
-execute if entity @s[scores={Dialog=50}] run teleport @e[tag=marios_painting,limit=1] 770 79 -11
-execute if entity @s[scores={Dialog=55}] run teleport @s 770 78 -10
-execute if entity @s[scores={Dialog=55}] run teleport @e[tag=marios_painting,limit=1] 770 79 -10
-execute if entity @s[scores={Dialog=60}] run teleport @s 770 78 -9
-execute if entity @s[scores={Dialog=60}] run teleport @e[tag=marios_painting,limit=1] 770 79 -9
-execute if entity @s[scores={Dialog=65}] run teleport @s 770 78 -8
-execute if entity @s[scores={Dialog=65}] run teleport @e[tag=marios_painting,limit=1] 770 79 -8
-execute if entity @s[scores={Dialog=70}] run teleport @s 770 78 -7
-execute if entity @s[scores={Dialog=70}] run teleport @e[tag=marios_painting,limit=1] 770 79 -7
+execute at @s[scores={Dialog=51..176}] run setblock ~ ~0.3 ~-1 minecraft:air
+execute at @s[scores={Dialog=51..176}] run setblock ~ ~0.3 ~ minecraft:light_gray_concrete
+execute if entity @s[scores={Dialog=50}] run teleport @s 770 77.95 -11
+execute if entity @s[scores={Dialog=55}] run teleport @s 770 77.95 -10
+execute if entity @s[scores={Dialog=60}] run teleport @s 770 77.95 -9
+execute if entity @s[scores={Dialog=65}] run teleport @s 770 77.95 -8
+execute if entity @s[scores={Dialog=70}] run teleport @s 770 77.95 -7
 execute if entity @s[scores={Dialog=50}] run setblock 770 80 -4 minecraft:air
 execute if entity @s[scores={Dialog=50}] run setblock 769 80 -4 minecraft:air
 execute if entity @s[scores={Dialog=50}] run setblock 768 80 -4 minecraft:air
@@ -70,9 +70,8 @@ execute if entity @s[scores={Dialog=80}] run setblock 770 79 -7 minecraft:green_
 execute if entity @s[scores={Dialog=90}] run setblock 770 81 -7 minecraft:green_terracotta
 execute if entity @s[scores={Dialog=90}] run setblock 770 79 -7 minecraft:air
 execute if entity @s[scores={Dialog=80}] run playsound luigis_mansion:entity.mario.owch neutral @a[tag=same_room] ~ ~ ~ 1
-execute if entity @s[scores={Dialog=80}] run kill @e[tag=marios_painting,limit=1]
 item replace entity @s[scores={Dialog=80}] armor.head with minecraft:diamond_pickaxe{Unbreakable:1b,Damage:10,CustomModelData:0}
-execute if entity @s[scores={Dialog=90}] run teleport @s 770 78 -6
+execute if entity @s[scores={Dialog=90}] run teleport @s 770 78 -6 0 0
 execute if entity @s[scores={Dialog=95}] run teleport @s 770 78 -5
 execute if entity @s[scores={Dialog=100}] run teleport @s 770 78 -4
 execute if entity @s[scores={Dialog=105}] run teleport @s 770 78 -3
@@ -120,8 +119,9 @@ execute if entity @s[scores={Dialog=160}] run teleport @s 770 78 6
 execute if entity @s[scores={Dialog=165}] run teleport @s 770 78 7
 execute if entity @s[scores={Dialog=170}] run teleport @s 770 78 8
 execute if entity @s[scores={Dialog=175}] run teleport @s 770 78 9
-teleport @s[scores={Dialog=180..189}] ~ ~0.1 ~
-teleport @s[scores={Dialog=190..205}] ~ ~0.1 ~0.2
+execute if entity @s[scores={Dialog=180}] run teleport @s 770 78 10
+execute at @s run teleport @s[scores={Dialog=181..189}] ~ ~0.1 ~
+execute at @s run teleport @s[scores={Dialog=190..200}] ~ ~0.1 ~0.2
 execute if entity @s[scores={Dialog=185}] run setblock 770 78 9 minecraft:air
 execute if entity @s[scores={Dialog=185}] run setblock 770 78 10 minecraft:light_gray_concrete
 execute if entity @s[scores={Dialog=190}] run setblock 770 78 10 minecraft:air
@@ -137,3 +137,4 @@ execute if entity @s[scores={Dialog=630}] run playsound luigis_mansion:entity.ma
 execute if entity @s[scores={Dialog=630}] run particle minecraft:cloud 774 78.5 19.8 0.2 0.2 0 0 10
 execute if entity @s[scores={Dialog=690}] positioned 774 77 20 run function luigis_mansion:spawn_entities/mario/normal
 tag @s[scores={Dialog=690}] add dead
+execute at @s run teleport @s ~ ~-0.4 ~

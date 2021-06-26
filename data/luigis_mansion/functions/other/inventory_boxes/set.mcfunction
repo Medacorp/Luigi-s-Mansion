@@ -37,7 +37,7 @@ execute in minecraft:overworld run data modify entity @s ArmorItems[3].tag.luigi
 execute in minecraft:overworld run data modify entity @s ArmorItems[3].tag.luigis_mansion.items[{Slot:34b}] merge value {Slot:7b}
 execute in minecraft:overworld run data modify entity @s ArmorItems[3].tag.luigis_mansion.items[{Slot:35b}] merge value {Slot:8b}
 execute in minecraft:overworld run setblock 27 1 0 minecraft:shulker_box
-execute in minecraft:overworld run data modify block -27 1 0 Items set from entity @s ArmorItems[3].tag.luigis_mansion.items
+execute in minecraft:overworld run data modify block 27 1 0 Items set from entity @s ArmorItems[3].tag.luigis_mansion.items
 execute in minecraft:overworld run data remove entity @s ArmorItems[3].tag.luigis_mansion.items[{Slot:0b}]
 execute in minecraft:overworld run data remove entity @s ArmorItems[3].tag.luigis_mansion.items[{Slot:1b}]
 execute in minecraft:overworld run data remove entity @s ArmorItems[3].tag.luigis_mansion.items[{Slot:2b}]

@@ -1,1 +1,1 @@
-execute if entity @s[tag=haunted_jar] run function luigis_mansion:entities/haunted_object/jar
+execute if entity @s[tag=haunted_jar] run function luigis_mansion:entities/haunted_jar/tick

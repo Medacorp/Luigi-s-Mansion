@@ -1,6 +1,6 @@
 execute if entity @s[tag=dead,tag=normal_death] run playsound luigis_mansion:entity.haunted_jar.vacuumed hostile @a[tag=same_room] ~ ~ ~ 1
 execute if entity @s[tag=dead,tag=element_death] run playsound luigis_mansion:entity.haunted_jar.element_death hostile @a[tag=same_room] ~ ~ ~ 1
-execute if entity @s[tag=dead] run loot spawn ~ ~ ~ loot luigis_mansion:entities/vacuumable/haunted_object/haunted_jar
+execute if entity @s[tag=dead] run function luigis_mansion:entities/haunted_jar/drop_loot
 execute if entity @s[tag=dead] run particle minecraft:dust 0.7 1 1 1 ~-0.1 ~ ~0.1 0.2 0.2 0.2 1 10
 execute if entity @s[tag=dead] run teleport @s ~ -100 ~
 execute if entity @s[tag=dead] run function luigis_mansion:entities/haunted_object/collision
