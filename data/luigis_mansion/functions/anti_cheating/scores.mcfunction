@@ -132,7 +132,7 @@ scoreboard objectives add Walk minecraft.custom:minecraft.walk_one_cm
 scoreboard objectives add Wave dummy
 scoreboard objectives add Wool dummy
 
-scoreboard players set #-1b Constants -1b
+scoreboard players set #-1 Constants -1
 scoreboard players set #2 Constants 2
 scoreboard players set #5 Constants 5
 scoreboard players set #10 Constants 10
