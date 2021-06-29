@@ -1,10 +1,12 @@
-summon minecraft:armor_stand ~ ~-1.2 ~ {CustomName:'{"translate":"luigis_mansion:entity.spooky"}',Invisible:1b,NoGravity:1b,CustomNameVisible:0b,Invulnerable:1b,ArmorItems:[{},{},{},{}],HandItems:[{},{}],Pose:{RightArm:[0.0f,0.0f,0.01f],LeftArm:[0.0f,0.0f,0.01f],Head:[0.0f,0.0f,0.01f]},Tags:["spooky","portrait_ghost","pearl_dropper","ghost","this_entity"],DisabledSlots:2039583}
-summon minecraft:armor_stand ~ ~-1.2 ~ {CustomName:'{"translate":"luigis_mansion:entity.spooky"}',Invisible:1b,NoGravity:1b,CustomNameVisible:0b,Invulnerable:1b,ArmorItems:[{},{},{},{}],Pose:{Head:[0.0f,0.0f,0.01f]},Tags:["model_piece","found_owner","spooky_body","this_entity"],DisabledSlots:2039583}
-teleport @e[tag=spooky,tag=this_entity,limit=1] ~ ~-1.2 ~ ~ ~
-teleport @e[tag=model_piece,tag=this_entity,limit=1] ~ ~-1.2 ~ ~ ~
+summon minecraft:armor_stand ~ ~-1 ~ {CustomName:'{"translate":"luigis_mansion:entity.spooky"}',Invisible:1b,NoGravity:1b,CustomNameVisible:0b,Invulnerable:1b,ArmorItems:[{},{},{},{}],Pose:{Head:[0.0f,0.0f,0.01f]},Tags:["spooky","portrait_ghost","pearl_dropper","ghost","this_entity"],DisabledSlots:2039583}
+summon minecraft:armor_stand ~ ~-1 ~ {CustomName:'{"translate":"luigis_mansion:entity.spooky"}',Invisible:1b,NoGravity:1b,CustomNameVisible:0b,Invulnerable:1b,ArmorItems:[{},{},{},{}],Pose:{Head:[0.0f,0.0f,0.01f]},Tags:["model_piece","found_owner","spooky_body","this_entity"],DisabledSlots:2039583}
+summon minecraft:armor_stand ~ ~-1 ~ {CustomName:'{"translate":"luigis_mansion:entity.spooky"}',Invisible:1b,NoGravity:1b,CustomNameVisible:0b,Invulnerable:1b,ArmorItems:[{},{},{},{}],Pose:{Head:[0.0f,0.0f,0.01f]},Tags:["model_piece","found_owner","spooky_right_arm","this_entity"],DisabledSlots:2039583}
+summon minecraft:armor_stand ~ ~-1 ~ {CustomName:'{"translate":"luigis_mansion:entity.spooky"}',Invisible:1b,NoGravity:1b,CustomNameVisible:0b,Invulnerable:1b,ArmorItems:[{},{},{},{}],Pose:{Head:[0.0f,0.0f,0.01f]},Tags:["model_piece","found_owner","spooky_left_arm","this_entity"],DisabledSlots:2039583}
+teleport @e[tag=spooky,tag=this_entity,limit=1] ~ ~-1 ~ ~ ~
+teleport @e[tag=model_piece,tag=this_entity] ~ ~-1 ~ ~ ~
 execute as @e[tag=spooky,tag=this_entity,limit=1] store result score @s GhostNr run data get storage luigis_mansion:data ghost_nr
 execute as @e[tag=spooky,tag=this_entity,limit=1] store result storage luigis_mansion:data ghost_nr int 1 run scoreboard players add @s GhostNr 1
-scoreboard players operation @e[tag=model_piece,tag=this_entity,limit=1] GhostNr = @e[tag=spooky,tag=this_entity,limit=1] GhostNr
+scoreboard players operation @e[tag=model_piece,tag=this_entity] GhostNr = @e[tag=spooky,tag=this_entity,limit=1] GhostNr
 execute as @e[tag=spooky,tag=this_entity,limit=1] store result score @s HomeX run data get entity @s Pos[0] 100
 execute as @e[tag=spooky,tag=this_entity,limit=1] store result score @s HomeY run data get entity @s Pos[1] 100
 execute as @e[tag=spooky,tag=this_entity,limit=1] store result score @s HomeZ run data get entity @s Pos[2] 100

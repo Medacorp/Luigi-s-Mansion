@@ -12,6 +12,6 @@ teleport @s[scores={HomeZ=75,HomeX=679..683}] ~-5 ~91 ~-36
 teleport @s[scores={HomeZ=75,HomeX=684..686}] ~ ~ ~-1
 
 teleport @s[scores={HomeY=25}] ~-5 ~94 ~-38
-teleport @s[scores={HomeY=18}] ~-3 ~-3 ~16
+teleport @s[scores={HomeY=18}] ~-3 ~-3 ~14
 
 tag @s add already_ticked

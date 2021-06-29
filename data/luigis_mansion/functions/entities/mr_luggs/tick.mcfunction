@@ -28,7 +28,7 @@ execute unless entity @s[tag=!dead,tag=!remove_from_existence] run teleport @e[t
 execute unless entity @s[tag=!dead,tag=!remove_from_existence] run tag @e[tag=this_food] add dead
 
 scoreboard players reset #temp GhostNr
-tag @e[tag=this_model,limit=1] add found_owner
-tag @e[tag=this_model,limit=1] remove this_model
+tag @e[tag=this_model] add found_owner
+tag @e[tag=this_model] remove this_model
 tag @e[tag=this_food,limit=1] remove this_food
 execute at @s[scores={LightX=-2147483648..}] run function luigis_mansion:other/cast_shadow/2_tall

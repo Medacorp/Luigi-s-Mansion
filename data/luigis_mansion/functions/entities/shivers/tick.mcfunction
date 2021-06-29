@@ -24,6 +24,6 @@ execute at @s[tag=fleeing] run function luigis_mansion:animations/shivers/flee
 execute at @s[tag=!fleeing,tag=hurt] run function luigis_mansion:animations/shivers/hurt
 
 scoreboard players reset #temp GhostNr
-tag @e[tag=this_model,limit=1] add found_owner
-tag @e[tag=this_model,limit=1] remove this_model
+tag @e[tag=this_model] add found_owner
+tag @e[tag=this_model] remove this_model
 execute at @s[scores={LightX=-2147483648..}] run function luigis_mansion:other/cast_shadow/2_tall
