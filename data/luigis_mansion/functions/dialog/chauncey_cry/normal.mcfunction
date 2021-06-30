@@ -1,3 +1,4 @@
+scoreboard players set #freeze_timer Selected 1
 scoreboard players add @s Time 1
 execute if entity @s[scores={Time=1}] run data modify storage luigis_mansion:data current_state.current_data.technical_data merge value {chauncey_cried:1b}
 execute if entity @s[scores={Time=1}] run playsound luigis_mansion:entity.chauncey.cry hostile @a 729 21 66 3

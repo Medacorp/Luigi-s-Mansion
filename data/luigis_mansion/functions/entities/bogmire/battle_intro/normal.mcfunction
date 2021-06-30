@@ -1,3 +1,4 @@
+scoreboard players set #freeze_timer Selected 1
 scoreboard players add @s Dialog 1
 execute if entity @s[scores={Dialog=100}] run teleport @s ~ ~ ~ -90 0
 execute if entity @s[scores={Dialog=200}] run summon minecraft:lightning_bolt ~ ~ ~

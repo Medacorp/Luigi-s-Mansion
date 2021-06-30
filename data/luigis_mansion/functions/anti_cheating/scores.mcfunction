@@ -162,5 +162,8 @@ execute unless score #multiply_hurt Selected matches 0.. run scoreboard players 
 execute unless score #multiply_damage Selected matches 0.. run scoreboard players set #multiply_damage Selected 100
 execute unless score #changing_max_health Selected matches 0..1 run scoreboard players set #changing_max_health Selected 0
 execute unless score #ghost_heart_size Selected matches 0..100 run scoreboard players set #ghost_heart_size Selected 20
+execute unless score #gbh_clock Selected matches 0.. run scoreboard players set #gbh_clock Selected 0
+execute unless score #gbh_clock_increase Selected matches 0.. run scoreboard players set #gbh_clock_increase Selected 0
+execute if score #gbh_clock_increase Selected matches 0 run scoreboard players set #gbh_clock Selected 0
 
 gamerule doTileDrops false

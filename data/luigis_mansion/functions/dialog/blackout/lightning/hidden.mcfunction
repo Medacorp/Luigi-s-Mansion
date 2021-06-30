@@ -1,3 +1,4 @@
+scoreboard players set #freeze_timer Selected 1
 scoreboard players add @s Time 1
 execute if entity @s[scores={Time=1}] run summon minecraft:lightning_bolt 691 100 -66
 execute if entity @s[scores={Time=30}] run summon minecraft:lightning_bolt 691 100 81

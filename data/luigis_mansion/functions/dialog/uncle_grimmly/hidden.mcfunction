@@ -1,3 +1,4 @@
+scoreboard players set #freeze_timer Selected 1
 scoreboard players add @s Dialog 1
 execute if entity @s[scores={Dialog=1}] run tellraw @a {"translate":"chat.type.text","with":[{"translate":"luigis_mansion:entity.unknown","color":"green"},{"translate":"luigis_mansion:dialog.uncle_grimmly.1"}]}
 execute if entity @s[scores={Dialog=24}] if score #players Totals matches 1 run tellraw @a {"translate":"chat.type.text","with":[{"translate":"luigis_mansion:entity.e_gadd","color":"green"},{"translate":"luigis_mansion:dialog.uncle_grimmly.2"}]}

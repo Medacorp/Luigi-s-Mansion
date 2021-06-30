@@ -1,3 +1,4 @@
+scoreboard players set #freeze_timer Selected 1
 scoreboard players add @s Dialog 1
 execute if entity @s[scores={Dialog=1}] as @a run function luigis_mansion:other/music/set/non_overwritten_silence
 execute if entity @s[scores={Dialog=1}] run stopsound @a music

@@ -1,3 +1,4 @@
+scoreboard players set #freeze_timer Selected 1
 scoreboard players add @s Time 1
 execute if entity @s[scores={Time=2}] run stopsound @a[scores={Room=45}] music
 execute if entity @s[scores={Time=2}] run scoreboard players set @a[scores={Room=45}] Music 140

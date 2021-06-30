@@ -11,12 +11,9 @@ scoreboard players set @s[scores={HurtTime=1},tag=hurt,tag=!fleeing] Sound 40
 execute if entity @s[scores={Sound=0},tag=fleeing] run playsound luigis_mansion:entity.lydia.flee hostile @a[tag=same_room] ~ ~ ~ 1
 scoreboard players set @s[scores={Sound=0},tag=fleeing] Sound 40
 
-execute if entity @s[tag=!fleeing,tag=!hurt,tag=!vanish,scores={StunTime=0}] run function #luigis_mansion:entities/lydia/close_curtain
+execute if entity @s[tag=!fleeing,tag=!hurt,scores={StunTime=0}] run function #luigis_mansion:entities/lydia/tick
 
 execute if entity @s[tag=vanish] run function luigis_mansion:entities/lydia/vanish
-execute at @s[tag=complain,tag=!fleeing,tag=!hurt,tag=!vanish,scores={StunTime=0}] run function luigis_mansion:animations/lydia/complain
-execute at @s[tag=move] run function luigis_mansion:animations/lydia/move
-execute at @s[tag=!hurt,tag=!fleeing,tag=!complain,tag=!move,tag=!vanish,scores={StunTime=0}] run function luigis_mansion:animations/lydia/idle
 execute at @s[tag=fleeing] run function luigis_mansion:animations/lydia/flee
 execute if entity @s[tag=!fleeing,tag=hurt] run function luigis_mansion:entities/lydia/drop_brush
 execute at @s[tag=!fleeing,tag=hurt] run function luigis_mansion:animations/lydia/hurt

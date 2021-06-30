@@ -1,3 +1,4 @@
+scoreboard players set #freeze_timer Selected 1
 scoreboard players add @s Dialog 1
 execute if entity @s[scores={Dialog=120}] run teleport @s ~ ~ ~ -90 0
 execute if entity @s[scores={Dialog=120}] run playsound luigis_mansion:entity.chauncey.cry hostile @a[tag=same_room] ~ ~ ~ 3

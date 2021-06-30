@@ -1,3 +1,4 @@
+scoreboard players set #freeze_timer Selected 1
 scoreboard players add @s Dialog 1
 execute if entity @s[scores={Dialog=1..}] as @a unless entity @s[scores={MusicGroup=0,MusicType=19}] run function luigis_mansion:other/music/set/gameboy_horror
 execute if entity @s[scores={Dialog=1}] if score #players Totals matches 1 run tellraw @a {"translate":"chat.type.text","with":[{"translate":"luigis_mansion:entity.e_gadd","color":"green"},{"translate":"luigis_mansion:dialog.ice_element_medal.1","with":[{"selector":"@p[gamemode=!spectator]"}]}]}
@@ -14,7 +15,6 @@ execute if entity @s[scores={Dialog=600}] if score #players Totals matches 2.. r
 execute if entity @s[scores={Dialog=792}] if score #players Totals matches 1 run tellraw @a {"translate":"chat.type.text","with":[{"translate":"luigis_mansion:entity.e_gadd","color":"green"},{"translate":"luigis_mansion:dialog.ice_element_medal.7","with":[{"selector":"@p[gamemode=!spectator]"}]}]}
 execute if entity @s[scores={Dialog=792}] if score #players Totals matches 2.. run tellraw @a {"translate":"chat.type.text","with":[{"translate":"luigis_mansion:entity.e_gadd","color":"green"},{"translate":"luigis_mansion:dialog.ice_element_medal.7.more"}]}
 execute if entity @s[scores={Dialog=1000}] as @a run function luigis_mansion:other/music/set/silence
-execute if entity @s[scores={Dialog=1000}] run data modify storage luigis_mansion:data current_state.current_data.technical_data merge value {ice_element_medal:1b}
 scoreboard players set @s[scores={Dialog=1000}] GBHCall 0
 scoreboard players set @s[scores={Dialog=1000}] GBHWait 0
 scoreboard players reset @s[scores={Dialog=1000}] Dialog

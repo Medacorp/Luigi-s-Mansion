@@ -1,3 +1,4 @@
+scoreboard players set #freeze_timer Selected 1
 scoreboard players add @s Dialog 1
 execute if entity @s[scores={Dialog=1}] run stopsound @a[scores={Room=3},gamemode=!spectator] music
 execute if entity @s[scores={Dialog=1}] run playsound luigis_mansion:music.paintings music @a[scores={Room=3},gamemode=!spectator] ~ ~ ~ 1000

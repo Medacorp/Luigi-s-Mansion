@@ -1,3 +1,4 @@
+scoreboard players set #freeze_timer Selected 1
 execute facing entity @e[tag=same_room,tag=!spectator,sort=nearest,limit=1] feet rotated ~ 0 run teleport @s ~ ~ ~ ~ ~
 scoreboard players add @s Dialog 1
 scoreboard players set @a[tag=same_room] Invulnerable 10

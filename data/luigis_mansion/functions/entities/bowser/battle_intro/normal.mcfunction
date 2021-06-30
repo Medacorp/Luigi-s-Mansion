@@ -1,3 +1,4 @@
+scoreboard players set #freeze_timer Selected 1
 scoreboard players add @s Dialog 1
 teleport @e[tag=bowser_body] ~ ~ ~ ~ ~
 teleport @s[scores={Dialog=..220}] ~ ~-0.2 ~

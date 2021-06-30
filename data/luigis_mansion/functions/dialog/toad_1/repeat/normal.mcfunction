@@ -1,3 +1,4 @@
+scoreboard players set #freeze_timer Selected 1
 execute if entity @a[scores={Toad1Choice=1..},limit=1] run scoreboard players add @s[scores={Dialog=129..}] Dialog 1
 scoreboard players add @s[scores={Dialog=..128}] Dialog 1
 execute unless entity @s[scores={Dialog=1..}] run scoreboard players add @s Dialog 1

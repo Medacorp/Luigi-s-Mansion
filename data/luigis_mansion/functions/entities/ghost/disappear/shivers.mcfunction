@@ -1,1 +1,1 @@
-execute if entity @s[tag=shivers] run function luigis_mansion:entities/ghost/disappear/portrait_ghost/shivers
+execute if entity @s[tag=shivers] run function #luigis_mansion:entities/shivers/disappear

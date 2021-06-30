@@ -1,1 +1,1 @@
-function #luigis_mansion:entities/bowser/fight
+function #luigis_mansion:entities/bowser/tick

@@ -1,3 +1,4 @@
+scoreboard players set #freeze_timer Selected 1
 execute if entity @s[scores={ClairvoyaSpoke=0}] run function luigis_mansion:dialog/mario_item/normal/item_1
 execute if entity @s[scores={ClairvoyaSpoke=1}] run function luigis_mansion:dialog/mario_item/normal/item_2
 execute if entity @s[scores={ClairvoyaSpoke=2}] run function luigis_mansion:dialog/mario_item/normal/item_3

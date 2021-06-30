@@ -12,15 +12,9 @@ scoreboard players set @s[scores={HurtTime=1},tag=hurt,tag=!fleeing] Sound 40
 execute if entity @s[scores={Sound=0},tag=fleeing] run playsound luigis_mansion:entity.mr_luggs.flee hostile @a[tag=same_room] ~ ~ ~ 1
 scoreboard players set @s[scores={Sound=0},tag=fleeing] Sound 40
 
-execute if entity @s[tag=!fleeing,tag=!hurt,tag=!vanish,scores={StunTime=0}] run function luigis_mansion:entities/mr_luggs/eat
+execute if entity @s[tag=!fleeing,tag=!hurt,scores={StunTime=0}] run function #luigis_mansion:entities/mr_luggs/tick
 
 execute if entity @s[tag=vanish] run function luigis_mansion:entities/mr_luggs/vanish
-execute at @s[tag=hit_table] run function luigis_mansion:animations/mr_luggs/hit_table
-execute at @s[tag=complain] run function luigis_mansion:animations/mr_luggs/complain
-execute at @s[tag=rage] run function luigis_mansion:animations/mr_luggs/rage
-execute at @s[tag=spit] run function luigis_mansion:animations/mr_luggs/spit
-execute at @s[tag=sigh,tag=!fleeing,tag=!hurt,tag=!vanish,scores={StunTime=0}] run function luigis_mansion:animations/mr_luggs/sigh
-execute at @s[tag=!hurt,tag=!fleeing,tag=!sigh,tag=!complain,tag=!hit_table,tag=!rage,tag=!spit,tag=!vanish,scores={StunTime=0}] run function luigis_mansion:animations/mr_luggs/idle
 execute at @s[tag=fleeing] run function luigis_mansion:animations/mr_luggs/flee
 execute at @s[tag=!fleeing,tag=hurt] run function luigis_mansion:animations/mr_luggs/hurt
 

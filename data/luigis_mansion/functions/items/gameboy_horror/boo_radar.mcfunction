@@ -7,5 +7,5 @@ execute if entity @e[tag=this_room_boo,distance=5..6] run scoreboard players add
 execute if entity @s[scores={GBHRadar=40..}] run playsound luigis_mansion:item.gameboy_horror.boo_radar player @s ~ ~ ~ 0.5
 scoreboard players set @s[scores={GBHRadar=40..}] GBHRadar 0
 
-execute unless entity @e[tag=this_room_boo,distance=..4] if entity @s[nbt={Inventory:[{tag:{luigis_mansion:{id:"luigis_mansion:gameboy_horror"}}}]},nbt=!{Inventory:[{tag:{CustomModelData:4,luigis_mansion:{id:"luigis_mansion:gameboy_horror"}}}]}] run function luigis_mansion:items/gameboy_horror/turn_boo_radar_yellow
-execute if entity @e[tag=this_room_boo,distance=..4] if entity @s[nbt={Inventory:[{tag:{luigis_mansion:{id:"luigis_mansion:gameboy_horror"}}}]},nbt=!{Inventory:[{tag:{CustomModelData:5,luigis_mansion:{id:"luigis_mansion:gameboy_horror"}}}]}] run function luigis_mansion:items/gameboy_horror/turn_boo_radar_red
+execute unless entity @e[tag=this_room_boo,distance=..4] if entity @s[nbt={Inventory:[{tag:{luigis_mansion:{id:"luigis_mansion:gameboy_horror"}}}]},nbt=!{Inventory:[{tag:{Damage:4,luigis_mansion:{id:"luigis_mansion:gameboy_horror"}}}]}] run function luigis_mansion:items/gameboy_horror/turn_boo_radar_yellow
+execute if entity @e[tag=this_room_boo,distance=..4] if entity @s[nbt={Inventory:[{tag:{luigis_mansion:{id:"luigis_mansion:gameboy_horror"}}}]},nbt=!{Inventory:[{tag:{Damage:5,luigis_mansion:{id:"luigis_mansion:gameboy_horror"}}}]}] run function luigis_mansion:items/gameboy_horror/turn_boo_radar_red

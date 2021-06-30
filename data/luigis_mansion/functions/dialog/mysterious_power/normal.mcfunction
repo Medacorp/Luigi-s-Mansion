@@ -1,3 +1,4 @@
+scoreboard players set #freeze_timer Selected 1
 execute unless entity @a[scores={Room=52},gamemode=!spectator,limit=1] run scoreboard players set @s[scores={Dialog=..1320}] Dialog 1799
 execute unless entity @a[scores={Room=52},gamemode=!spectator,limit=1] run scoreboard players set @s[scores={Dialog=1400..1704}] Dialog 1799
 scoreboard players add @s Dialog 1

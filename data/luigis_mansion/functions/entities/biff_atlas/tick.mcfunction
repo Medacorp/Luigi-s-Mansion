@@ -13,15 +13,9 @@ scoreboard players set @s[scores={HurtTime=1},tag=hurt,tag=!fleeing] Sound 40
 execute if entity @s[scores={Sound=0},tag=fleeing] run playsound luigis_mansion:entity.biff_atlas.flee hostile @a[tag=same_room] ~ ~ ~ 1
 scoreboard players set @s[scores={Sound=0},tag=fleeing] Sound 40
 
-execute if entity @s[tag=!fleeing,tag=!hurt,tag=!vanish,scores={StunTime=0}] run function luigis_mansion:entities/biff_atlas/body_build
+execute if entity @s[tag=!fleeing,tag=!hurt,scores={StunTime=0}] run function #luigis_mansion:entities/biff_atlas/tick
 
 execute if entity @s[tag=vanish] run function luigis_mansion:entities/biff_atlas/vanish
-execute at @s[tag=knocked_back] run function luigis_mansion:animations/biff_atlas/knocked_back
-execute at @s[tag=!knocked_back,tag=!knocked_out,tag=!attack,tag=!laugh,tag=!fleeing,tag=!hurt,tag=!vanish,tag=!strech_neck,tag=!lift_succeed,tag=!lift_fail] run function luigis_mansion:animations/biff_atlas/idle
-execute at @s[tag=knocked_out,tag=!attack,tag=!fleeing,tag=!hurt,tag=!vanish,scores={StunTime=0}] run function luigis_mansion:animations/biff_atlas/ko
-execute at @s[tag=lift_fail] run function luigis_mansion:animations/biff_atlas/lift_fail
-execute at @s[tag=lift_succeed] run function luigis_mansion:animations/biff_atlas/lift_succeed
-execute at @s[tag=strech_neck] run function luigis_mansion:animations/biff_atlas/strech_neck
 execute at @s[tag=fleeing] run function luigis_mansion:animations/biff_atlas/flee
 execute at @s[tag=!fleeing,tag=hurt] run function luigis_mansion:animations/biff_atlas/hurt
 

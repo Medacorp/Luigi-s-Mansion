@@ -61,6 +61,7 @@ scoreboard players set @s ReadBook 0
 execute unless entity @s[scores={Room=1..}] run scoreboard players set @s LastFloor -2
 execute store result score @s JumpHeight run data get entity @s Pos[1] 100
 
+execute if entity @a[tag=!same_room,limit=1] run scoreboard players set #freeze_timer Selected 0
 tag @e[tag=same_room] remove same_room
 tag @s remove already_ticked
 

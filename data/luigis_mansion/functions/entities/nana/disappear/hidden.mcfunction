@@ -1,0 +1,1 @@
+function luigis_mansion:entities/nana/disappear/normal

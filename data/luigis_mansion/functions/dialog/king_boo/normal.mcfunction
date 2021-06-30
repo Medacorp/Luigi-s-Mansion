@@ -1,3 +1,4 @@
+scoreboard players set #freeze_timer Selected 1
 scoreboard players add @s Dialog 1
 execute unless entity @s[scores={Dialog=1572..}] as @a[tag=same_room,distance=..5.9,limit=1] run teleport @s 645 93 -18 90 0
 execute if entity @s[scores={Dialog=1..1596}] as @a[tag=same_room] unless entity @s[scores={MusicGroup=0,MusicType=31}] run function luigis_mansion:other/music/set/talking_king_boo

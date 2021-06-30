@@ -15,15 +15,9 @@ scoreboard players set @s[scores={HurtTime=1},tag=hurt,tag=!fleeing] Sound 40
 execute if entity @s[scores={Sound=0},tag=fleeing] run playsound luigis_mansion:entity.bogmire.flee hostile @a[tag=same_room] ~ ~ ~ 1
 scoreboard players set @s[scores={Sound=0},tag=fleeing] Sound 40
 
-execute at @s[tag=!fight] run function #luigis_mansion:entities/bogmire/intro
-execute at @s[tag=fight,tag=!fleeing,tag=!hurt,tag=!vanish,scores={StunTime=0}] run function #luigis_mansion:entities/bogmire/fight
+execute if entity @s[tag=!fleeing,tag=!hurt,tag=!vanish,scores={StunTime=0}] run function #luigis_mansion:entities/bogmire/tick
 
-tag @s[tag=vanish,tag=fight] add disappear
-execute at @s[tag=vanish,tag=!fight] run function luigis_mansion:entities/bogmire/vanish
-execute at @s[tag=appear] run function luigis_mansion:entities/bogmire/appear
-execute at @s[tag=shadow_hit] run function luigis_mansion:animations/bogmire/hurt
-execute at @s[tag=vanish_flee] run function luigis_mansion:animations/bogmire/flee
-execute at @s[tag=!hurt,tag=!fleeing,tag=!appear,tag=!vanish] run function luigis_mansion:animations/bogmire/idle
+execute at @s[tag=vanish] run function luigis_mansion:entities/bogmire/vanish
 execute at @s[tag=fleeing] run function luigis_mansion:animations/bogmire/flee
 execute at @s[tag=!fleeing,tag=hurt] run function luigis_mansion:animations/bogmire/hurt
 tag @s[tag=hurt] remove shadow_hit

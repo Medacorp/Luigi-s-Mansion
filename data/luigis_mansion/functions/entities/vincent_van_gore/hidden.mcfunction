@@ -1,1 +1,1 @@
-execute if score #mansion_type Selected matches 1 run function luigis_mansion:entities/vincent_van_gore/paint/hidden
+execute if score #mansion_type Selected matches 1 run function luigis_mansion:entities/vincent_van_gore/tick/hidden

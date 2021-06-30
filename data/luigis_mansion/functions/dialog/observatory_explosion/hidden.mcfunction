@@ -1,3 +1,4 @@
+scoreboard players set #freeze_timer Selected 1
 scoreboard players add @s Time 1
 execute if entity @s[scores={Time=1}] run setblock 661 111 67 minecraft:magma_block
 execute if entity @s[scores={Time=1}] run setblock 661 112 66 minecraft:magma_block

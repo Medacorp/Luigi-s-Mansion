@@ -15,6 +15,9 @@ execute if entity @e[tag=ghost_guy,tag=!hidden,scores={Room=71},limit=1] run dat
 execute if entity @e[tag=garbage_can_ghost,tag=!hidden,scores={Room=71},limit=1] run data modify entity @e[x=694.5,y=30,z=-69.5,distance=..0.7,limit=1] Item.tag.map set value 82
 execute if entity @e[tag=purple_bomber,tag=!hidden,scores={Room=71},limit=1] run data modify entity @e[x=695.5,y=30,z=-71.5,distance=..0.7,limit=1] Item.tag.map set value 88
 
+execute if entity @e[tag=ghost,tag=hidden,tag=new_ghost,scores={Room=71}] run scoreboard players set #freeze_timer Selected 1
+execute if score #freeze_timer Selected matches 1 as @a unless entity @s[scores={Room=71}] run scoreboard players set #freeze_timer Selected 0
+
 function #luigis_mansion:room/normal/artists_studio/interactions/room
 
 function luigis_mansion:room/normal/artists_studio/ghosts

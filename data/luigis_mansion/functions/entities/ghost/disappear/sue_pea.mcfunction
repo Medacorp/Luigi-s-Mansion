@@ -1,1 +1,1 @@
-execute if entity @s[tag=sue_pea] run function luigis_mansion:entities/ghost/disappear/portrait_ghost/sue_pea
+execute if entity @s[tag=sue_pea] run function #luigis_mansion:entities/sue_pea/disappear

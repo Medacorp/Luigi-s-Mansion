@@ -11,17 +11,9 @@ scoreboard players set @s[scores={HurtTime=1},tag=hurt,tag=!fleeing] Sound 40
 execute if entity @s[scores={Sound=0},tag=fleeing] run playsound luigis_mansion:entity.melody_pianissima.flee hostile @a[tag=same_room] ~ ~ ~ 1
 scoreboard players set @s[scores={Sound=0},tag=fleeing] Sound 40
 
-execute if entity @s[tag=visible,tag=!talk] run function luigis_mansion:entities/melody_pianissima/turn_invisible
-execute if entity @s[tag=talk] run function #luigis_mansion:entities/melody_pianissima/play
-execute if entity @s[tag=!talk] if entity @a[gamemode=!spectator,distance=..5] run function #luigis_mansion:entities/melody_pianissima/play
+execute if entity @s[tag=!fleeing,tag=!hurt,scores={StunTime=0}] run function #luigis_mansion:entities/melody_pianissima/tick
 
 execute if entity @s[tag=vanish] run function luigis_mansion:entities/melody_pianissima/vanish
-execute at @s[tag=nod] run function luigis_mansion:animations/melody_pianissima/nod
-execute at @s[tag=listen] run function luigis_mansion:animations/melody_pianissima/listen
-execute at @s[tag=rage] run function luigis_mansion:animations/melody_pianissima/rage
-execute at @s[tag=laugh] run function luigis_mansion:animations/melody_pianissima/laugh
-execute at @s[tag=complain,tag=!fleeing,tag=!hurt,tag=!vanish,scores={StunTime=0}] run function luigis_mansion:animations/melody_pianissima/complain
-execute at @s[tag=!hurt,tag=!fleeing,tag=!complain,tag=!nod,tag=!listen,tag=!rage,tag=!laugh,tag=!vanish,scores={StunTime=0}] run function luigis_mansion:animations/melody_pianissima/idle
 execute at @s[tag=fleeing] run function luigis_mansion:animations/melody_pianissima/flee
 execute at @s[tag=!fleeing,tag=hurt] run function luigis_mansion:animations/melody_pianissima/hurt
 
