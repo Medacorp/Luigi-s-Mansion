@@ -1,34 +1,20 @@
-function luigis_mansion:items/gameboy_horror/show_items/check_money/gold_coin
-tellraw @s {"translate":"chat.type.text","with":[{"translate":"luigis_mansion:item.gameboy_horror","color":"green"},{"translate":"luigis_mansion:message.gameboy_horror.money","with":[{"translate":"luigis_mansion:item.gold_coin"},{"score":{"objective":"Money","name":"#temp2"}},{"score":{"objective":"Money","name":"#temp"}}]}]}
-function luigis_mansion:items/gameboy_horror/show_items/check_money/bill
-tellraw @s {"translate":"chat.type.text","with":[{"translate":"luigis_mansion:item.gameboy_horror","color":"green"},{"translate":"luigis_mansion:message.gameboy_horror.money","with":[{"translate":"luigis_mansion:item.bill"},{"score":{"objective":"Money","name":"#temp2"}},{"score":{"objective":"Money","name":"#temp"}}]}]}
-function luigis_mansion:items/gameboy_horror/show_items/check_money/gold_bar
-tellraw @s {"translate":"chat.type.text","with":[{"translate":"luigis_mansion:item.gameboy_horror","color":"green"},{"translate":"luigis_mansion:message.gameboy_horror.money","with":[{"translate":"luigis_mansion:item.gold_bar"},{"score":{"objective":"Money","name":"#temp2"}},{"score":{"objective":"Money","name":"#temp"}}]}]}
-function luigis_mansion:items/gameboy_horror/show_items/check_money/blue_sapphire
-execute if score #temp Money matches 1.. run tellraw @s {"translate":"chat.type.text","with":[{"translate":"luigis_mansion:item.gameboy_horror","color":"green"},{"translate":"luigis_mansion:message.gameboy_horror.money","with":[{"translate":"luigis_mansion:item.blue_sapphire"},{"score":{"objective":"Money","name":"#temp2"}},{"score":{"objective":"Money","name":"#temp"}}]}]}
-function luigis_mansion:items/gameboy_horror/show_items/check_money/green_emerald
-execute if score #temp Money matches 1.. run tellraw @s {"translate":"chat.type.text","with":[{"translate":"luigis_mansion:item.gameboy_horror","color":"green"},{"translate":"luigis_mansion:message.gameboy_horror.money","with":[{"translate":"luigis_mansion:item.green_emerald"},{"score":{"objective":"Money","name":"#temp2"}},{"score":{"objective":"Money","name":"#temp"}}]}]}
-function luigis_mansion:items/gameboy_horror/show_items/check_money/red_ruby
-execute if score #temp Money matches 1.. run tellraw @s {"translate":"chat.type.text","with":[{"translate":"luigis_mansion:item.gameboy_horror","color":"green"},{"translate":"luigis_mansion:message.gameboy_horror.money","with":[{"translate":"luigis_mansion:item.red_ruby"},{"score":{"objective":"Money","name":"#temp2"}},{"score":{"objective":"Money","name":"#temp"}}]}]}
-function luigis_mansion:items/gameboy_horror/show_items/check_money/blue_diamond
-execute if score #temp Money matches 1.. run tellraw @s {"translate":"chat.type.text","with":[{"translate":"luigis_mansion:item.gameboy_horror","color":"green"},{"translate":"luigis_mansion:message.gameboy_horror.money","with":[{"translate":"luigis_mansion:item.blue_diamond"},{"score":{"objective":"Money","name":"#temp2"}},{"score":{"objective":"Money","name":"#temp"}}]}]}
-function luigis_mansion:items/gameboy_horror/show_items/check_money/red_diamond
-execute if score #temp Money matches 1.. run tellraw @s {"translate":"chat.type.text","with":[{"translate":"luigis_mansion:item.gameboy_horror","color":"green"},{"translate":"luigis_mansion:message.gameboy_horror.money","with":[{"translate":"luigis_mansion:item.red_diamond"},{"score":{"objective":"Money","name":"#temp2"}},{"score":{"objective":"Money","name":"#temp"}}]}]}
-function luigis_mansion:items/gameboy_horror/show_items/check_money/gold_diamond
-execute if score #temp Money matches 1.. run tellraw @s {"translate":"chat.type.text","with":[{"translate":"luigis_mansion:item.gameboy_horror","color":"green"},{"translate":"luigis_mansion:message.gameboy_horror.money","with":[{"translate":"luigis_mansion:item.gold_diamond"},{"score":{"objective":"Money","name":"#temp2"}},{"score":{"objective":"Money","name":"#temp"}}]}]}
-function luigis_mansion:items/gameboy_horror/show_items/check_money/small_pearl
-execute if score #temp Money matches 1.. run tellraw @s {"translate":"chat.type.text","with":[{"translate":"luigis_mansion:item.gameboy_horror","color":"green"},{"translate":"luigis_mansion:message.gameboy_horror.money","with":[{"translate":"luigis_mansion:item.small_pearl"},{"score":{"objective":"Money","name":"#temp2"}},{"score":{"objective":"Money","name":"#temp"}}]}]}
-function luigis_mansion:items/gameboy_horror/show_items/check_money/medium_pearl
-execute if score #temp Money matches 1.. run tellraw @s {"translate":"chat.type.text","with":[{"translate":"luigis_mansion:item.gameboy_horror","color":"green"},{"translate":"luigis_mansion:message.gameboy_horror.money","with":[{"translate":"luigis_mansion:item.medium_pearl"},{"score":{"objective":"Money","name":"#temp2"}},{"score":{"objective":"Money","name":"#temp"}}]}]}
-function luigis_mansion:items/gameboy_horror/show_items/check_money/big_pearl
-execute if score #temp Money matches 1.. run tellraw @s {"translate":"chat.type.text","with":[{"translate":"luigis_mansion:item.gameboy_horror","color":"green"},{"translate":"luigis_mansion:message.gameboy_horror.money","with":[{"translate":"luigis_mansion:item.big_pearl"},{"score":{"objective":"Money","name":"#temp2"}},{"score":{"objective":"Money","name":"#temp"}}]}]}
-execute if data storage luigis_mansion:data current_state.current_data.obtained_items{fire_element_medal:1b} run tellraw @s {"translate":"chat.type.text","with":[{"translate":"luigis_mansion:item.gameboy_horror","color":"green"},{"translate":"luigis_mansion:item.fire_element_medal"}]}
-execute if data storage luigis_mansion:data current_state.current_data.obtained_items{water_element_medal:1b} run tellraw @s {"translate":"chat.type.text","with":[{"translate":"luigis_mansion:item.gameboy_horror","color":"green"},{"translate":"luigis_mansion:item.water_element_medal"}]}
-execute if data storage luigis_mansion:data current_state.current_data.obtained_items{ice_element_medal:1b} run tellraw @s {"translate":"chat.type.text","with":[{"translate":"luigis_mansion:item.gameboy_horror","color":"green"},{"translate":"luigis_mansion:item.ice_element_medal"}]}
-execute if data storage luigis_mansion:data current_state.current_data.obtained_items{marios_hat:1b} run tellraw @s {"translate":"chat.type.text","with":[{"translate":"luigis_mansion:item.gameboy_horror","color":"green"},{"translate":"luigis_mansion:item.marios_hat"}]}
-execute if data storage luigis_mansion:data current_state.current_data.obtained_items{marios_letter:1b} run tellraw @s {"translate":"chat.type.text","with":[{"translate":"luigis_mansion:item.gameboy_horror","color":"green"},{"translate":"luigis_mansion:item.marios_letter"}]}
-execute if data storage luigis_mansion:data current_state.current_data.obtained_items{marios_star:1b} run tellraw @s {"translate":"chat.type.text","with":[{"translate":"luigis_mansion:item.gameboy_horror","color":"green"},{"translate":"luigis_mansion:item.marios_star"}]}
-execute if data storage luigis_mansion:data current_state.current_data.obtained_items{marios_shoe:1b} run tellraw @s {"translate":"chat.type.text","with":[{"translate":"luigis_mansion:item.gameboy_horror","color":"green"},{"translate":"luigis_mansion:item.marios_shoe"}]}
-execute if data storage luigis_mansion:data current_state.current_data.obtained_items{marios_glove:1b} run tellraw @s {"translate":"chat.type.text","with":[{"translate":"luigis_mansion:item.gameboy_horror","color":"green"},{"translate":"luigis_mansion:item.marios_glove"}]}
-scoreboard players reset #temp Money
-scoreboard players reset #temp2 Money
+function luigis_mansion:items/gameboy_horror/show_items/items/item/gold_coin
+function luigis_mansion:items/gameboy_horror/show_items/items/item/bill
+function luigis_mansion:items/gameboy_horror/show_items/items/item/gold_bar
+function luigis_mansion:items/gameboy_horror/show_items/items/item/blue_sapphire
+function luigis_mansion:items/gameboy_horror/show_items/items/item/green_emerald
+function luigis_mansion:items/gameboy_horror/show_items/items/item/red_ruby
+function luigis_mansion:items/gameboy_horror/show_items/items/item/blue_diamond
+function luigis_mansion:items/gameboy_horror/show_items/items/item/red_diamond
+function luigis_mansion:items/gameboy_horror/show_items/items/item/gold_diamond
+function luigis_mansion:items/gameboy_horror/show_items/items/item/small_pearl
+function luigis_mansion:items/gameboy_horror/show_items/items/item/medium_pearl
+function luigis_mansion:items/gameboy_horror/show_items/items/item/big_pearl
+function luigis_mansion:items/gameboy_horror/show_items/items/item/fire_element_medal
+function luigis_mansion:items/gameboy_horror/show_items/items/item/water_element_medal
+function luigis_mansion:items/gameboy_horror/show_items/items/item/ice_element_medal
+function luigis_mansion:items/gameboy_horror/show_items/items/item/marios_hat
+function luigis_mansion:items/gameboy_horror/show_items/items/item/marios_letter
+function luigis_mansion:items/gameboy_horror/show_items/items/item/marios_star
+function luigis_mansion:items/gameboy_horror/show_items/items/item/marios_shoe
+function luigis_mansion:items/gameboy_horror/show_items/items/item/marios_glove

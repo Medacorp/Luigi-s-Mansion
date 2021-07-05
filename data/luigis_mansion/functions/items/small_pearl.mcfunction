@@ -18,4 +18,6 @@ data modify storage luigis_mansion:data current_state.money_grabbed append from 
 data remove storage luigis_mansion:data current_state.my_money
 data modify storage luigis_mansion:data current_state.current_data.money_grabbed append from storage luigis_mansion:data current_state.my_money_data
 data remove storage luigis_mansion:data current_state.my_money_data
+scoreboard players set #temp Time 0
+function #luigis_mansion:items/assign_rank
 scoreboard players reset #temp Time
