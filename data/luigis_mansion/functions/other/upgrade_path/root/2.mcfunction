@@ -1,3 +1,3 @@
 data merge storage luigis_mansion:data {data_version:2,portrait_ghost_ranks:{neville:-1b,lydia:-1b,chauncey:-1b,floating_whirlindas:-1b,shivers:-1b,melody_pianissima:-1b,mr_luggs:-1b,spooky:-1b,bogmire:-1b,biff_atlas:-1b,miss_petunia:-1b,nana:-1b,slim_bankshot:-1b,henry_and_orville:-1b,madame_clairvoya:-1b,boolossus:-1b,uncle_grimmly:-1b,clockwork_soldiers:-1b,sue_pea:-1b,jarvis:-1b,sir_weston:-1b,vincent_van_gore:-1b,king_boo:-1b}}
-execute if score #3ds_remake Loaded matches 1 run data modify storage luigis_mansion:data portrait_ghost_ranks set from luigis_mansion_3ds_remake:data selected_portraits
+execute if score #3ds_remake Loaded matches 1 run data modify storage luigis_mansion:data portrait_ghost_ranks set from storage luigis_mansion_3ds_remake:data selected_portraits
 execute if score #3ds_remake Loaded matches 1 run data remove storage luigis_mansion:data portrait_ghost_ranks.mansion_rank

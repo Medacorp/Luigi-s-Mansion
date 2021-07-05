@@ -29,15 +29,23 @@ The exterior is loaded in when you enter hallway 22 with Mario's painting, but t
 ## Mansion data variables
 To define a new mansion, you need to set the mansion_type value, mansion_data_index is for saved data, all mansions with the same data index use the same save data.
 
+* `#loaded_exterior` (int): ID of the outside of the mansion that's loaded. (For example -1 is no mansion, 0 is the mansion.)
 * `#mansion_type` (int): Defines the mansion that is loaded.
-* `#loaded_exterior` (int): ID of the outside of the mansion that's loaded (eg -1 is no mansion, 0 is the mansion)
 * `#mansion_data_index` (int): Defines the save data ID that is used.
 * `#mirrored` (bool): Whether the ghosts mirror all their animations.
+* `#can_warp` (bool): Whether the Gameboy Horror can warp players by scanning mirrors.
 * `#multiply_hurt` (int): Multiplies base damage taken by this value where 100 = 1x.
 * `#multiply_damage` (int): Multiplies base damage dealt by this value where 100 = 1x.
-* `#changing_max_health` (bool): Whether players' max health is displayed ("<Health>/<MAX> Health")
+* `#changing_max_health` (bool): Whether players' max health is displayed. ("<Health>/<MAX> Health")
+* `#ghost_heart_size` (int): The size of the hearts dropped by ghosts when capturing multiple at once.
+* `#gbh_clock` (int): The current time shown by the Gameboy Horror.
+* `#gbh_clock_increase` (int): The `#gbh_clock` value increases by this value every tick, as long as the `in_mansion_time` value also increases. (Can be 0 or more, when 0 the clock is not shown.)
 
 These variables do not affect gold dummy ghosts and damage taken outside the mansion.
+
+### Other variables of interest
+
+* `#training_choice` (bool): Whether multiple training room programs are installed. (Should be set in loaded add-on function. Will use `#luigis_mansion:dialog/training_room/option` to ask which to select, and `#luigis_mansion:dialog/training_room/play` to run the selected program then.)
 
 # Check compatibility/dependency
 To set this add-on as loaded, allowing for other add-ons to check/warn for compatibility issues, add to the function tag `#luigis_mansion:loaded_add_ons` a function with the following contents: `scoreboard players set #<add-on> Loaded 1`

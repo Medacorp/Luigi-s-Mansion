@@ -4,6 +4,8 @@ playsound luigis_mansion:music.training_intro music @s[scores={MusicType=3}] ~ ~
 scoreboard players set @s[scores={MusicType=3}] Music 127
 playsound luigis_mansion:music.toad_intro music @s[scores={MusicType=10}] ~ ~ ~ 1000
 scoreboard players set @s[scores={MusicType=10}] Music 65
+playsound luigis_mansion:music.training_option_intro music @s[scores={MusicType=11}] ~ ~ ~ 1000
+scoreboard players set @s[scores={MusicType=11}] Music 4553
 playsound luigis_mansion:music.area_boss_defeated_intro music @s[scores={MusicType=14}] ~ ~ ~ 1000
 scoreboard players set @s[scores={MusicType=14}] Music 101
 playsound luigis_mansion:music.boss.chauncey_intro music @s[scores={MusicType=15}] ~ ~ ~ 1000

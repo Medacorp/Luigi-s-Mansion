@@ -120,6 +120,7 @@ scoreboard objectives add Toad5Choice trigger
 scoreboard objectives add TopVacuumDamage dummy
 scoreboard objectives add TotalDamage dummy
 scoreboard objectives add Totals dummy
+scoreboard objectives add TrainingOption trigger
 scoreboard objectives add Turn dummy
 scoreboard objectives add TwinsChoice trigger
 scoreboard objectives add UseItem minecraft.used:minecraft.carrot_on_a_stick
@@ -161,6 +162,7 @@ execute unless score #can_warp Selected matches 0..1 run scoreboard players set 
 execute unless score #multiply_hurt Selected matches 0.. run scoreboard players set #multiply_hurt Selected 100
 execute unless score #multiply_damage Selected matches 0.. run scoreboard players set #multiply_damage Selected 100
 execute unless score #changing_max_health Selected matches 0..1 run scoreboard players set #changing_max_health Selected 0
+execute unless score #training_choice Selected matches 0..1 run scoreboard players set #training_choice Selected 0
 execute unless score #ghost_heart_size Selected matches 0..100 run scoreboard players set #ghost_heart_size Selected 20
 execute unless score #gbh_clock Selected matches 0.. run scoreboard players set #gbh_clock Selected 0
 execute unless score #gbh_clock_increase Selected matches 0.. run scoreboard players set #gbh_clock_increase Selected 0
