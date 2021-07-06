@@ -1,61 +1,6 @@
-execute if entity @s[scores={AnimationProg=21}] at @e[tag=these_weights,limit=1] run fill ~ ~1.17 ~-1 ~ ~1.17 ~1 minecraft:air
-execute if entity @s[scores={AnimationProg=21}] run teleport @e[tag=these_weights,limit=1] ^ ^-1.56 ^0.4
-execute if entity @s[scores={AnimationProg=22}] run teleport @e[tag=these_weights,limit=1] ^ ^-1.53 ^0.4
-execute if entity @s[scores={AnimationProg=23}] run teleport @e[tag=these_weights,limit=1] ^ ^-1.5 ^0.4
-execute if entity @s[scores={AnimationProg=24}] run teleport @e[tag=these_weights,limit=1] ^ ^-1.47 ^0.4
-execute if entity @s[scores={AnimationProg=25}] run teleport @e[tag=these_weights,limit=1] ^ ^-1.44 ^0.4
-execute if entity @s[scores={AnimationProg=26}] run teleport @e[tag=these_weights,limit=1] ^ ^-1.41 ^0.4
-execute if entity @s[scores={AnimationProg=27}] run teleport @e[tag=these_weights,limit=1] ^ ^-1.38 ^0.4
-execute if entity @s[scores={AnimationProg=28}] run teleport @e[tag=these_weights,limit=1] ^ ^-1.35 ^0.4
-execute if entity @s[scores={AnimationProg=29}] run teleport @e[tag=these_weights,limit=1] ^ ^-1.32 ^0.4
-execute if entity @s[scores={AnimationProg=30}] run teleport @e[tag=these_weights,limit=1] ^ ^-1.28 ^0.4
-execute if entity @s[scores={AnimationProg=31}] run teleport @e[tag=these_weights,limit=1] ^ ^-1.25 ^0.4
-execute if entity @s[scores={AnimationProg=32}] run teleport @e[tag=these_weights,limit=1] ^ ^-1.22 ^0.4
-execute if entity @s[scores={AnimationProg=33}] run teleport @e[tag=these_weights,limit=1] ^ ^-1.19 ^0.4
-execute if entity @s[scores={AnimationProg=34}] run teleport @e[tag=these_weights,limit=1] ^ ^-1.16 ^0.4
-execute if entity @s[scores={AnimationProg=35}] run teleport @e[tag=these_weights,limit=1] ^ ^-1.13 ^0.4
-execute if entity @s[scores={AnimationProg=36}] run teleport @e[tag=these_weights,limit=1] ^ ^-1.1 ^0.4
-execute if entity @s[scores={AnimationProg=37}] run teleport @e[tag=these_weights,limit=1] ^ ^-1.07 ^0.4
-execute if entity @s[scores={AnimationProg=38}] run teleport @e[tag=these_weights,limit=1] ^ ^-1.05 ^0.4
-execute if entity @s[scores={AnimationProg=39}] run teleport @e[tag=these_weights,limit=1] ^ ^-1.03 ^0.4
-execute if entity @s[scores={AnimationProg=40}] run teleport @e[tag=these_weights,limit=1] ^ ^-1.01 ^0.4
-execute if entity @s[scores={AnimationProg=41}] run teleport @e[tag=these_weights,limit=1] ^ ^-1.02 ^0.4
-execute if entity @s[scores={AnimationProg=42}] run teleport @e[tag=these_weights,limit=1] ^ ^-1.03 ^0.4
-execute if entity @s[scores={AnimationProg=43}] run teleport @e[tag=these_weights,limit=1] ^ ^-1.05 ^0.4
-execute if entity @s[scores={AnimationProg=44}] run teleport @e[tag=these_weights,limit=1] ^ ^-1.07 ^0.4
-execute if entity @s[scores={AnimationProg=45}] run teleport @e[tag=these_weights,limit=1] ^ ^-1.08 ^0.4
-execute if entity @s[scores={AnimationProg=46}] run teleport @e[tag=these_weights,limit=1] ^ ^-1.1 ^0.4
-execute if entity @s[scores={AnimationProg=47}] run teleport @e[tag=these_weights,limit=1] ^ ^-1.12 ^0.4
-execute if entity @s[scores={AnimationProg=48}] run teleport @e[tag=these_weights,limit=1] ^ ^-1.13 ^0.4
-execute if entity @s[scores={AnimationProg=49}] run teleport @e[tag=these_weights,limit=1] ^ ^-1.15 ^0.4
-execute if entity @s[scores={AnimationProg=50}] run teleport @e[tag=these_weights,limit=1] ^ ^-1.16 ^0.4
-execute if entity @s[scores={AnimationProg=51}] run teleport @e[tag=these_weights,limit=1] ^ ^-1.15 ^0.4
-execute if entity @s[scores={AnimationProg=52}] run teleport @e[tag=these_weights,limit=1] ^ ^-1.13 ^0.4
-execute if entity @s[scores={AnimationProg=53}] run teleport @e[tag=these_weights,limit=1] ^ ^-1.12 ^0.4
-execute if entity @s[scores={AnimationProg=54}] run teleport @e[tag=these_weights,limit=1] ^ ^-1.1 ^0.4
-execute if entity @s[scores={AnimationProg=55}] run teleport @e[tag=these_weights,limit=1] ^ ^-1.08 ^0.4
-execute if entity @s[scores={AnimationProg=56}] run teleport @e[tag=these_weights,limit=1] ^ ^-1.07 ^0.4
-execute if entity @s[scores={AnimationProg=57}] run teleport @e[tag=these_weights,limit=1] ^ ^-1.05 ^0.4
-execute if entity @s[scores={AnimationProg=58}] run teleport @e[tag=these_weights,limit=1] ^ ^-1.03 ^0.4
-execute if entity @s[scores={AnimationProg=59}] run teleport @e[tag=these_weights,limit=1] ^ ^-1.02 ^0.4
-execute if entity @s[scores={AnimationProg=60}] run teleport @e[tag=these_weights,limit=1] ^ ^-1.01 ^0.4
-execute if entity @s[scores={AnimationProg=61}] run teleport @e[tag=these_weights,limit=1] ^ ^-1.03 ^0.4
-execute if entity @s[scores={AnimationProg=62}] run teleport @e[tag=these_weights,limit=1] ^ ^-1.05 ^0.4
-execute if entity @s[scores={AnimationProg=63}] run teleport @e[tag=these_weights,limit=1] ^ ^-1.07 ^0.4
-execute if entity @s[scores={AnimationProg=64}] run teleport @e[tag=these_weights,limit=1] ^ ^-1.1 ^0.4
-execute if entity @s[scores={AnimationProg=65}] run teleport @e[tag=these_weights,limit=1] ^ ^-1.13 ^0.4
-execute if entity @s[scores={AnimationProg=66}] run teleport @e[tag=these_weights,limit=1] ^ ^-1.16 ^0.4
-execute if entity @s[scores={AnimationProg=67}] run teleport @e[tag=these_weights,limit=1] ^ ^-1.19 ^0.4
-execute if entity @s[scores={AnimationProg=68}] run teleport @e[tag=these_weights,limit=1] ^ ^-1.22 ^0.4
-execute if entity @s[scores={AnimationProg=69}] run teleport @e[tag=these_weights,limit=1] ^ ^-1.25 ^0.4
-execute if entity @s[scores={AnimationProg=70}] run teleport @e[tag=these_weights,limit=1] ^ ^-1.28 ^0.4
-execute if entity @s[scores={AnimationProg=71}] run teleport @e[tag=these_weights,limit=1] ^ ^-1.32 ^0.4
-execute if entity @s[scores={AnimationProg=72}] run teleport @e[tag=these_weights,limit=1] ^ ^-1.35 ^0.4
-execute if entity @s[scores={AnimationProg=73}] run teleport @e[tag=these_weights,limit=1] ^ ^-1.38 ^0.4
-execute if entity @s[scores={AnimationProg=74}] run teleport @e[tag=these_weights,limit=1] ^ ^-1.41 ^0.4
-execute if entity @s[scores={AnimationProg=75}] run teleport @e[tag=these_weights,limit=1] ^ ^-1.44 ^0.4
-execute if entity @s[scores={AnimationProg=76}] run teleport @e[tag=these_weights,limit=1] ^ ^-1.47 ^0.4
-execute if entity @s[scores={AnimationProg=77}] run teleport @e[tag=these_weights,limit=1] ^ ^-1.5 ^0.4
-execute if entity @s[scores={AnimationProg=78}] run teleport @e[tag=these_weights,limit=1] ^ ^-1.53 ^0.4
-execute if entity @s[scores={AnimationProg=79}] run teleport @e[tag=these_weights,limit=1] ^ ^-1.56 ^0.4
-execute if entity @s[scores={AnimationProg=79}] at @e[tag=these_weights,limit=1] run fill ~ ~1.17 ~-1 ~ ~1.17 ~1 minecraft:barrier
+execute if entity @s[scores={AnimationProg=21}] at @e[tag=these_weights,limit=1] run fill ^-1 ^1.17 ^ ^1 ^1.17 ^ minecraft:air
+execute if entity @s[scores={AnimationProg=21..40}] as @e[tag=these_weights,limit=1] at @s run teleport @s ^ ^0.03 ^
+execute if entity @s[scores={AnimationProg=41..50}] as @e[tag=these_weights,limit=1] at @s run teleport @s ^ ^-0.01 ^
+execute if entity @s[scores={AnimationProg=51..60}] as @e[tag=these_weights,limit=1] at @s run teleport @s ^ ^0.01 ^
+execute if entity @s[scores={AnimationProg=61..79}] as @e[tag=these_weights,limit=1] at @s run teleport @s ^ ^-0.03 ^
+execute if entity @s[scores={AnimationProg=79}] as @e[tag=these_weights,limit=1] run function luigis_mansion:entities/biff_atlas/move_weights/home
