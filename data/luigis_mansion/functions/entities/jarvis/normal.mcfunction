@@ -1,1 +1,1 @@
-execute if score #mansion_type Selected matches 0 run function luigis_mansion:entities/jarvis/play/normal
+execute if score #mansion_type Selected matches 0 run function luigis_mansion:entities/jarvis/tick/normal
