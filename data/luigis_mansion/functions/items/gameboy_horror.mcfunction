@@ -24,19 +24,8 @@ attribute @s[tag=scanning] minecraft:generic.movement_speed base set 0
 attribute @s[tag=gameboy_horror_selected,scores={GBHCall=1..}] minecraft:generic.movement_speed base set 0
 execute unless entity @s[tag=gameboy_horror_selected,scores={GBHCall=1..}] run attribute @s[tag=!scanning] minecraft:generic.movement_speed base set 0.10000000149011612
 
-scoreboard players operation #temp Room = @s Room
-execute as @e[tag=hidden_boo] if score @s Room = #temp Room run tag @s add this_room_boo
-execute as @e[tag=boo,tag=!dark_room,tag=!cutscene,tag=ghost] if score @s Room = #temp Room run tag @s add this_room_boo
-scoreboard players reset #temp Room
-execute if entity @e[tag=this_room_boo,limit=1] positioned ~ ~0.5 ~ run function luigis_mansion:items/gameboy_horror/boo_radar
+execute if entity @s[nbt={Inventory:[{tag:{luigis_mansion:{id:"luigis_mansion:gameboy_horror"}}}]}] run function luigis_mansion:items/gameboy_horror/change_screen
 
-execute unless entity @a[scores={GBHCall=1..,Dialog=1..}] unless entity @e[tag=e_gadd,scores={Room=-2}] unless score #gbh_clock_increase Selected matches 1.. if entity @s[tag=!scanning,nbt={Inventory:[{tag:{luigis_mansion:{id:"luigis_mansion:gameboy_horror"}}}]},nbt=!{Inventory:[{tag:{CustomModelData:0,luigis_mansion:{id:"luigis_mansion:gameboy_horror"}}}]}] run function luigis_mansion:items/gameboy_horror/turn_screen_off
-execute unless entity @a[scores={GBHCall=1..,Dialog=1..}] unless entity @e[tag=e_gadd,scores={Room=-2}] if score #gbh_clock_increase Selected matches 1.. if entity @s[tag=!scanning,nbt={Inventory:[{tag:{luigis_mansion:{id:"luigis_mansion:gameboy_horror"}}}]}] run function luigis_mansion:items/gameboy_horror/turn_screen_to_clock
-execute unless entity @a[scores={GBHCall=1..,Dialog=1..}] if entity @s[tag=scanning,nbt={Inventory:[{tag:{luigis_mansion:{id:"luigis_mansion:gameboy_horror"}}}]},nbt=!{Inventory:[{tag:{CustomModelData:2,luigis_mansion:{id:"luigis_mansion:gameboy_horror"}}}]}] run function luigis_mansion:items/gameboy_horror/turn_screen_to_scan
-execute if entity @a[scores={GBHCall=1..,Dialog=1..}] if entity @s[nbt={Inventory:[{tag:{luigis_mansion:{id:"luigis_mansion:gameboy_horror"}}}]},nbt=!{Inventory:[{tag:{CustomModelData:1,luigis_mansion:{id:"luigis_mansion:gameboy_horror"}}}]}] run function luigis_mansion:items/gameboy_horror/turn_screen_to_call
-execute unless data storage luigis_mansion:data current_state.current_data.technical_data{released_boos_talk:1b} if entity @s[nbt={Inventory:[{tag:{luigis_mansion:{id:"luigis_mansion:gameboy_horror"}}}]},nbt=!{Inventory:[{tag:{Damage:2,luigis_mansion:{id:"luigis_mansion:gameboy_horror"}}}]}] run function luigis_mansion:items/gameboy_horror/turn_boo_radar_off
-execute unless entity @e[tag=this_room_boo,limit=1] if data storage luigis_mansion:data current_state.current_data.technical_data{released_boos_talk:1b} if entity @s[nbt={Inventory:[{tag:{luigis_mansion:{id:"luigis_mansion:gameboy_horror"}}}]},nbt=!{Inventory:[{tag:{Damage:3,luigis_mansion:{id:"luigis_mansion:gameboy_horror"}}}]}] run function luigis_mansion:items/gameboy_horror/turn_boo_radar_on
-
-tag @e[tag=hidden_boo] remove this_room_boo
-tag @e[tag=boo,tag=ghost] remove this_room_boo
-tag @s remove already_radared
+execute if score #force_radar Selected matches 0 if entity @s[nbt={Inventory:[{tag:{luigis_mansion:{id:"luigis_mansion:gameboy_horror"}}}]}] run function #luigis_mansion:items/gameboy_horror/change_radar
+execute if score #force_radar Selected matches 1 if entity @s[nbt={Inventory:[{tag:{luigis_mansion:{id:"luigis_mansion:gameboy_horror"}}}]},nbt=!{Inventory:[{tag:{Damage:5,luigis_mansion:{id:"luigis_mansion:gameboy_horror"}}}]}] run function luigis_mansion:items/gameboy_horror/turn_boo_radar_red
+execute if score #force_radar Selected matches 1 run playsound luigis_mansion:item.gameboy_horror.boo_radar player @s ~ ~ ~ 0.5

@@ -1,4 +1,6 @@
+scoreboard players set @s[tag=!boo_hurt,tag=!boo_death,tag=!normal_death] HurtTime 3
 tag @s[tag=!boo_hurt,tag=!boo_death] add normal_death
+scoreboard players set @s[tag=boo_hurt,tag=!boo_death] HurtTime 3
 tag @s[tag=boo_hurt] add boo_death
 tag @s[tag=boo_hurt] remove boo_hurt
 

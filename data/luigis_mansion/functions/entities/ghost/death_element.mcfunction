@@ -1,3 +1,4 @@
+scoreboard players set @s[tag=!element_death] HurtTime 3
 tag @s add element_death
 tag @s remove element_hurt
 tag @s remove hurt

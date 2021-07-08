@@ -1,4 +1,4 @@
-execute as @a[tag=same_room] if entity @s[nbt={Inventory:[{tag:{luigis_mansion:{id:"luigis_mansion:gameboy_horror"}}}]},nbt=!{Inventory:[{tag:{Damage:2,luigis_mansion:{id:"luigis_mansion:gameboy_horror"}}}]}] run function luigis_mansion:items/gameboy_horror/turn_screen_to_call
+scoreboard players set #force_gbh_screen Selected 1
 execute if entity @e[tag=this_model,limit=1] run tag @e[tag=this_model] add dead
 execute if score #training_choice Selected matches 1 unless entity @a[scores={TrainingOption=0..}] as @a[scores={Room=-2}] unless entity @s[scores={TrainingOption=-1}] run function #luigis_mansion:dialog/training_room/option
 execute if score #training_choice Selected matches 1 unless entity @a[scores={TrainingOption=0..}] as @a[scores={Room=-2}] unless entity @s[scores={TrainingOption=-1}] run scoreboard players set @s TrainingOption -1

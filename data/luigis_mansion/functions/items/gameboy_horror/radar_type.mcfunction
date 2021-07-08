@@ -1,0 +1,1 @@
+execute if score #radar_type Selected matches 0 run function luigis_mansion:items/gameboy_horror/change_boo_radar

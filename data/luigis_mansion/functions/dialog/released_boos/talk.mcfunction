@@ -30,6 +30,7 @@ execute if entity @s[scores={Dialog=1224}] if score #players Totals matches 2.. 
 execute if entity @s[scores={Dialog=1408}] if score #players Totals matches 1 run tellraw @a[tag=same_room] {"translate":"chat.type.text","with":[{"translate":"luigis_mansion:entity.e_gadd","color":"green"},{"translate":"luigis_mansion:dialog.released_boos_talk.10"}]}
 execute if entity @s[scores={Dialog=1408}] if score #players Totals matches 2.. run tellraw @a[tag=same_room] {"translate":"chat.type.text","with":[{"translate":"luigis_mansion:entity.e_gadd","color":"green"},{"translate":"luigis_mansion:dialog.released_boos_talk.10.more"}]}
 execute if entity @s[scores={Dialog=1672}] run data modify storage luigis_mansion:data current_state.current_data.technical_data merge value {released_boos_talk:1b}
+execute if entity @s[scores={Dialog=1672}] run data modify storage luigis_mansion:data current_state.current_data.items merge value {boo_radar:1b}
 tag @s[scores={Dialog=1672}] remove nod
 tag @s[scores={Dialog=1672}] add talk
 scoreboard players set @s[scores={Dialog=1672}] Dialog 0
