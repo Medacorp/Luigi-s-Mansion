@@ -4,6 +4,7 @@ execute if entity @a[scores={MansionChoice=0..},limit=1] run scoreboard players 
 execute if entity @a[scores={MansionChoice=..-2},limit=1] run scoreboard players add @s[scores={Dialog=57..}] Dialog 1
 scoreboard players add @s[scores={Dialog=..56}] Dialog 1
 execute unless entity @s[scores={Dialog=1..}] run scoreboard players add @s Dialog 1
+tag @s[scores={Dialog=1}] add underground_lab_dialog
 execute if entity @s[scores={Dialog=1}] if score #loaded_exterior Selected matches -1 unless score #mansion_type Selected matches -1 run tag @s add no_mansion
 tag @s[scores={Dialog=1}] add nod
 execute if entity @s[scores={Dialog=1}] run scoreboard players set @e[tag=this_model,tag=e_gadd_head,limit=1] AnimationProg 0
@@ -57,4 +58,5 @@ scoreboard players set @s[tag=!talk] Dialog 0
 tag @s[tag=!talk] remove nod
 tag @s[tag=!talk] remove listen
 tag @s[tag=!talk] remove no_mansion
+tag @s[tag=!talk] remove underground_lab_dialog
 execute if entity @s[tag=!talk] run scoreboard players set @e[tag=this_model,tag=e_gadd_head,limit=1] AnimationProg 0

@@ -1,5 +1,7 @@
 {
 	"values": [
-		"luigis_mansion:entities/e_gadd/dialog/lab"
+		"luigis_mansion:entities/e_gadd/dialog/lab",
+		"luigis_mansion:entities/e_gadd/dialog/normal",
+		"luigis_mansion:entities/e_gadd/dialog/hidden"
 	]
 }
