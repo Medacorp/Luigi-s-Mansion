@@ -14,4 +14,5 @@ execute positioned ~ ~-1 ~ as @e[tag=rocking_horse,tag=!battle,distance=..0.7] r
 execute positioned ~ ~-1 ~ as @e[tag=vacuumable,distance=..0.7,tag=boolossus,tag=split] positioned as @s positioned ~ ~1 ~ run function luigis_mansion:items/poltergust_3000/effect_on_entity/vacuum_boolossus
 scoreboard players reset #temp3 Steps
 tag @e[tag=yellow_bat,tag=same_room] add vacuum_in_room
+execute if block ~ ~ ~ #minecraft:doors[half=bottom] unless entity @e[distance=..0.7,tag=fake_door,limit=1] run playsound luigis_mansion:block.search.wood block @a ~ ~ ~ 1
 execute unless block ~ ~ ~ minecraft:air run function luigis_mansion:items/poltergust_3000/effect_on_block/vacuum

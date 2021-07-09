@@ -8,5 +8,5 @@ function luigis_mansion:other/music/set/silence
 stopsound @s music
 playsound luigis_mansion:music.leaving_the_lab music @s ~ ~ ~ 1000
 scoreboard players set @s Music 260
-scoreboard players set @s Health 100
+scoreboard players operation @s Health = @s MaxHealth
 tag @s remove seen_room_name

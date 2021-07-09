@@ -29,11 +29,24 @@ execute store result score #temp ActionTime run clear @s minecraft:carrot_on_a_s
 execute if score #temp ActionTime matches 0 run scoreboard players reset @s[advancements={luigis_mansion:lab/lab=true}] Element
 execute if score #temp ActionTime matches 0 unless entity @s[scores={Shrunk=1..}] run give @s[advancements={luigis_mansion:lab/lab=true}] minecraft:carrot_on_a_stick{HideFlags:63,Unbreakable:1b,Damage:1,CustomModelData:0,display:{Name:'{"italic":false,"color":"white","translate":"luigis_mansion:item.poltergust_3000"}',Lore:['{"italic":false,"color":"gray","translate":"luigis_mansion:item.poltergust_3000.element","with":[{"translate":"luigis_mansion:item.poltergust_3000.element.none","color":"gray"}]}']},luigis_mansion:{id:"luigis_mansion:poltergust_3000",element:{type:0b}}}
 execute store result score #temp ActionTime run clear @s minecraft:carrot_on_a_stick{luigis_mansion:{id:"luigis_mansion:gameboy_horror"}} 0
-execute if score #temp ActionTime matches 0 unless entity @s[scores={Shrunk=1..}] run give @s[advancements={luigis_mansion:lab/lab=true}] minecraft:carrot_on_a_stick{HideFlags:63,Unbreakable:1b,Damage:1,CustomModelData:2,display:{Name:'{"italic":false,"color":"white","translate":"luigis_mansion:item.gameboy_horror"}'},luigis_mansion:{id:"luigis_mansion:gameboy_horror"}}
+execute if score #temp ActionTime matches 0 unless entity @s[scores={Shrunk=1..}] run give @s[advancements={luigis_mansion:lab/lab=true}] minecraft:carrot_on_a_stick{HideFlags:63,Unbreakable:1b,Damage:2,CustomModelData:0,display:{Name:'{"italic":false,"color":"white","translate":"luigis_mansion:item.gameboy_horror"}'},luigis_mansion:{id:"luigis_mansion:gameboy_horror"}}
 scoreboard players reset #temp ActionTime
 execute as @e[distance=..3,type=minecraft:item] unless entity @s[nbt=!{Item:{tag:{luigis_mansion:{id:"luigis_mansion:flashlight"}}}},nbt=!{Item:{tag:{luigis_mansion:{id:"luigis_mansion:poltergust_3000"}}}},nbt=!{Item:{tag:{luigis_mansion:{id:"luigis_mansion:gameboy_horror"}}}}] run kill @s
 
 execute if entity @s[scores={Shrunk=2..}] run function luigis_mansion:items/poison_mushroom/visual
+
+execute unless entity @s[scores={Invulnerable=0..}] run scoreboard players set @s Invulnerable 0
+scoreboard players remove @s[scores={Invulnerable=1..}] Invulnerable 1
+execute if entity @s[scores={Health=1..}] store result score @s Damage run data get entity @s Health -1
+scoreboard players operation @s[scores={Health=1..}] Damage += #100 Constants
+execute if entity @s[scores={Damage=1..},gamemode=!spectator] run function luigis_mansion:entities/player/take_damage
+effect give @s[scores={Food=3..}] minecraft:hunger 1 255 true
+effect give @s[scores={Food=..0}] minecraft:saturation 1 0 true
+execute unless entity @s[scores={MaxHealth=100}] run scoreboard players add @s MaxHealthTime 1
+execute if entity @s[scores={MaxHealthTime=1}] if score @s MaxHealth < @s Health run function luigis_mansion:entities/player/reduce_health_to_max
+execute unless entity @s[scores={MaxHealth=100}] unless entity @s[scores={Walk=0..2,Run=0..2,Sneak=0}] run scoreboard players add @s MaxHealthTime 1
+scoreboard players set @s[scores={MaxHealthTime=200}] MaxHealth 100
+scoreboard players reset @s[scores={MaxHealthTime=200}] MaxHealthTime
 
 execute if entity @s[scores={Walk=1..},tag=!looking_at_map] run particle minecraft:dust 0.5 0.5 0.5 1.2 ~ ~0.2 ~ 0 0 0 0 1
 execute if entity @s[scores={Run=1..},tag=!looking_at_map] run particle minecraft:dust 0.5 0.5 0.5 2 ~ ~0.2 ~ 0 0 0 0 1

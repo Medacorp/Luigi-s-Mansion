@@ -50,13 +50,13 @@ execute if entity @s[scores={Dialog=58}] if entity @a[scores={EGaddLabChoice=5},
 execute if entity @s[scores={Dialog=74}] if entity @a[scores={EGaddLabChoice=5},limit=1] run scoreboard players set @s Dialog -1
 execute if entity @s[scores={Dialog=-1}] run scoreboard players set @a EGaddLabChoice 0
 tag @s[scores={Dialog=-1}] remove talk
-tag @s[scores={Dialog=-1}] remove cannot_change
 execute unless entity @e[tag=same_room,tag=!spectator,distance=..7,limit=1] run tag @s remove talk
 execute if entity @s[tag=!talk] as @a[scores={EGaddLabChoice=0..}] run trigger EGaddLabChoice set 0
 execute if entity @s[tag=!talk] as @a unless entity @s[scores={MansionChoice=-1}] run trigger MansionChoice set -1
 scoreboard players set @s[tag=!talk] Dialog 0
 tag @s[tag=!talk] remove nod
 tag @s[tag=!talk] remove listen
+tag @s[tag=!talk] remove cannot_change
 tag @s[tag=!talk] remove no_mansion
 tag @s[tag=!talk] remove underground_lab_dialog
 execute if entity @s[tag=!talk] run scoreboard players set @e[tag=this_model,tag=e_gadd_head,limit=1] AnimationProg 0
