@@ -1,5 +1,4 @@
 scoreboard players set #mansion_type Selected 1
-scoreboard objectives setdisplay sidebar Element
 execute unless score #mansion_data_index Selected matches 0 run scoreboard players set #can_clear_hidden Selected 1
 execute unless score #mansion_data_index Selected matches 0 if data storage luigis_mansion:data current_state.current_data.data_index run function luigis_mansion:room/save_mansion_data
 execute unless score #mansion_data_index Selected matches 0 run function luigis_mansion:room/hidden/default_data

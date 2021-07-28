@@ -14,7 +14,6 @@ scoreboard objectives add DamagePitch dummy
 scoreboard objectives add DamagePitchTimer dummy
 scoreboard objectives add Dialog dummy
 scoreboard objectives add Distance dummy
-scoreboard objectives add Element dummy
 scoreboard objectives add ElementHurtTime dummy
 scoreboard objectives add ElementalNr dummy
 scoreboard objectives add EGaddCallChoice trigger
