@@ -59,8 +59,6 @@ scoreboard objectives add LightY dummy
 scoreboard objectives add LightZ dummy
 scoreboard objectives add Loaded dummy
 scoreboard objectives add LoadedChunks dummy
-scoreboard objectives add Offline minecraft.custom:minecraft.leave_game
-scoreboard objectives add PunchingBag dummy
 scoreboard objectives add MansionChoice trigger
 scoreboard objectives add MaxHealth dummy
 scoreboard objectives add MaxHealthTime dummy
@@ -72,6 +70,10 @@ scoreboard objectives add Move dummy
 scoreboard objectives add Music dummy
 scoreboard objectives add MusicGroup dummy
 scoreboard objectives add MusicType dummy
+scoreboard objectives add Offline minecraft.custom:minecraft.leave_game
+scoreboard objectives add OtherX dummy
+scoreboard objectives add OtherY dummy
+scoreboard objectives add OtherZ dummy
 scoreboard objectives add PassiveNr dummy
 scoreboard objectives add PathStep dummy
 scoreboard objectives add PosX dummy
@@ -83,6 +85,7 @@ scoreboard objectives add PrevRoom dummy
 scoreboard objectives add PrevTotalDamage dummy
 scoreboard objectives add Pull dummy
 scoreboard objectives add PullStrength dummy
+scoreboard objectives add PunchingBag dummy
 scoreboard objectives add ReadBook minecraft.used:minecraft.written_book
 scoreboard objectives add ReflectionNr dummy
 scoreboard objectives add ResetChoice trigger
@@ -146,6 +149,7 @@ scoreboard players set #500 Constants 500
 scoreboard players set #800 Constants 800
 scoreboard players set #1000 Constants 1000
 scoreboard players set #2000 Constants 2000
+scoreboard players set #10000 Constants 10000
 scoreboard players set #20000 Constants 20000
 
 scoreboard objectives setdisplay list Health
