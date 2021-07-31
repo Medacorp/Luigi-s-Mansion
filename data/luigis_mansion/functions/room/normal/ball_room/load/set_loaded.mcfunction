@@ -1,1 +1,0 @@
-scoreboard players set #ball_room Ticking 1

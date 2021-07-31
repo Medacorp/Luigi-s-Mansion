@@ -1,0 +1,1 @@
+function luigis_mansion:room/hidden/foyer/remove_blockade

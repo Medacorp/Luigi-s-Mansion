@@ -1,0 +1,1 @@
+playsound luigis_mansion:block.search.harp block @a ~ ~ ~ 1

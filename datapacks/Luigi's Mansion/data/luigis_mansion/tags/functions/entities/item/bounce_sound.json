@@ -1,0 +1,20 @@
+{
+	"values": [
+		"luigis_mansion:entities/item/bounce/gold_coin",
+        "luigis_mansion:entities/item/bounce/gold_bar",
+        "luigis_mansion:entities/item/bounce/blue_sapphire",
+        "luigis_mansion:entities/item/bounce/green_emerald",
+        "luigis_mansion:entities/item/bounce/red_ruby",
+        "luigis_mansion:entities/item/bounce/red_diamond",
+        "luigis_mansion:entities/item/bounce/blue_diamond",
+        "luigis_mansion:entities/item/bounce/gold_diamond",
+        "luigis_mansion:entities/item/bounce/small_pearl",
+        "luigis_mansion:entities/item/bounce/medium_pearl",
+        "luigis_mansion:entities/item/bounce/big_pearl",
+        "luigis_mansion:entities/item/bounce/heart",
+        "luigis_mansion:entities/item/bounce/poison_mushroom",
+        "luigis_mansion:entities/item/bounce/key",
+        "luigis_mansion:entities/item/bounce/element_medal",
+        "luigis_mansion:entities/item/bounce/mario_item"
+	]
+}

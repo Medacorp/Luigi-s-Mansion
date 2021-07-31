@@ -1,1 +1,0 @@
-scoreboard players set #parlor Ticking 1

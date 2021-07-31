@@ -1,1 +1,0 @@
-execute if entity @s[x=740.5,y=16,z=58.5,distance=..0.7,tag=vacuum] unless score #butlers_room_vacuumable Search matches 1 store success score #butlers_room_vacuumable Search run scoreboard players add #butlers_room_vacuumable Searching 1

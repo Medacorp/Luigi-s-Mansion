@@ -1,1 +1,0 @@
-scoreboard players reset #clockwork_room_puppet_1

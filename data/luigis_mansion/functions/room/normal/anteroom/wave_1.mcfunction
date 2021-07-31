@@ -1,3 +1,0 @@
-function luigis_mansion:room/normal/anteroom/add_blockade
-execute positioned 687 20 33.0 run function luigis_mansion:spawn_entities/ghost/gold_ghost
-scoreboard players set #anteroom Wave 1

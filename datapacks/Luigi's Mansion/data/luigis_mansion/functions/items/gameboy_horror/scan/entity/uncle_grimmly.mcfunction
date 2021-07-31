@@ -1,0 +1,1 @@
+execute if entity @s[tag=uncle_grimmly] run tellraw @a {"translate":"chat.type.text","with":[{"translate":"luigis_mansion:entity.uncle_grimmly","color":"green"},{"translate":"luigis_mansion:message.uncle_grimmly.scan"}]}

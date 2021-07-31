@@ -1,0 +1,1 @@
+scoreboard players set #rec_room Ticking 1

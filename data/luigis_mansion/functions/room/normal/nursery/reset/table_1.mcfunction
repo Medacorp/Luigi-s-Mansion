@@ -1,1 +1,0 @@
-scoreboard players reset #nursery_table_1

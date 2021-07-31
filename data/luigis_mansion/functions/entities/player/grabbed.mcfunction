@@ -1,3 +1,0 @@
-effect give @s minecraft:slowness 1 1 true
-execute unless entity @e[distance=..1,tag=grabbing_ghost,tag=attack,scores={ActionTime=..42}] unless entity @e[distance=..1,tag=red_grabbing_ghost,tag=attack,scores={ActionTime=..110}] unless entity @e[distance=..1,tag=mirror_ghost,tag=attack,scores={ActionTime=..110}] unless entity @e[distance=..1,tag=cinema_ghost,tag=attack,scores={ActionTime=..110}] positioned ~ ~-1 ~ unless entity @e[distance=..1,tag=spooky,tag=attack,scores={PathStep=30..120}] run tag @s remove grabbed
-effect clear @s[tag=!grabbed] minecraft:slowness

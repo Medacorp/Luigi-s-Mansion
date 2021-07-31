@@ -1,0 +1,1 @@
+function luigis_mansion:room/normal/balcony_2/remove_blockade

@@ -1,0 +1,1 @@
+execute positioned 761 29 63 run function luigis_mansion:spawn_entities/ghost/forced_spawn/garbage_can_ghost

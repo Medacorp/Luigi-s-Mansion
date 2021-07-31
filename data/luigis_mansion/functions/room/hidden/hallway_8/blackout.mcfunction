@@ -1,1 +1,0 @@
-scoreboard players set #hallway_8 Wave 100

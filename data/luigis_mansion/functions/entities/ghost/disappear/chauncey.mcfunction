@@ -1,1 +1,0 @@
-execute if entity @s[tag=chauncey] run function #luigis_mansion:entities/chauncey/disappear

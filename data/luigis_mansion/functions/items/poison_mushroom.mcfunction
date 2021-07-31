@@ -1,2 +1,0 @@
-execute positioned ~ ~1.4 ~ as @e[tag=same_room,tag=!spectator,sort=nearest,limit=1] if entity @s[tag=gameboy_horror_location] run function luigis_mansion:entities/gameboy_horror_location/bring_back_player
-execute positioned ~ ~1.4 ~ as @e[tag=same_room,tag=!spectator,sort=nearest,limit=1] at @s run function luigis_mansion:items/poison_mushroom/hit

@@ -1,0 +1,8 @@
+function luigis_mansion:room/hidden/ceramics_studio/turn_on_lights
+execute if entity @a[tag=looking_at_map,limit=1] run function luigis_mansion:items/gameboy_horror/map/display/hidden/ceramics_studio
+function luigis_mansion:room/hidden/ceramics_studio/remove_blockade
+playsound luigis_mansion:block.chest.spawn block @a 704 29 -56 2
+execute as @a[scores={Room=65},gamemode=!spectator] unless entity @s[scores={MusicGroup=0,MusicType=14}] run function luigis_mansion:other/music/set/light
+scoreboard players set #room Room 65
+function luigis_mansion:other/music/play/group_0/cleared_room
+scoreboard players reset #room Room

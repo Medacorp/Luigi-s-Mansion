@@ -1,1 +1,0 @@
-scoreboard players set #billiards_room Ticking 1

@@ -1,7 +1,0 @@
-scoreboard players set * ResetMansion
-execute as @a run function luigis_mansion:other/load_data/reset_mansion_data
-execute unless score #loaded_exterior Selected matches -1 in minecraft:overworld run function luigis_mansion:room/load_exterior/empty
-scoreboard players set #mansion_type Selected -1
-scoreboard players set #mansion_data_index Selected -1
-scoreboard players set #previous_mansion_index Selected -1
-data modify storage luigis_mansion:data current_state.current_data set value {}

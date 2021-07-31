@@ -1,1 +1,0 @@
-function #luigis_mansion:room/underground_lab/reset

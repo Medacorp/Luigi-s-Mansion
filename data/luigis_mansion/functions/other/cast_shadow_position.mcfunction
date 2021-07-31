@@ -1,3 +1,0 @@
-execute positioned ^ ^ ^0.1 unless block ~ ~0.3 ~ #luigis_mansion:flashlight_path unless block ~ ~-0.3 ~ #luigis_mansion:flashlight_path positioned ^ ^ ^-0.1 run summon minecraft:armor_stand ~ ~-1.4 ~ {Rotation:[90.0f,0.0f],Tags:["shadow","this_shadow","new_shadow"],Invisible:1b,Pose:{Head:[0.0f,0.0f,0.0f]}}
-execute unless entity @e[tag=this_shadow,limit=1] run summon minecraft:armor_stand ~ ~-1.4 ~ {Rotation:[90.0f,0.0f],Tags:["shadow","this_shadow","new_shadow","horizontal_shadow"],Invisible:1b,Pose:{Head:[90.0f,0.0f,0.0f]}}
-execute as @e[tag=this_shadow,limit=1] run teleport @s ~ ~-1.4 ~ ~ ~

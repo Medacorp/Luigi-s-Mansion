@@ -1,1 +1,0 @@
-execute if entity @s[tag=biff_atlas] run function luigis_mansion:entities/biff_atlas/tick

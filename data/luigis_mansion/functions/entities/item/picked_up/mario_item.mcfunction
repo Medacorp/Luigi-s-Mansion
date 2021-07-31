@@ -1,1 +1,0 @@
-execute if entity @s[tag=mario_item] run function #luigis_mansion:items/mario_item

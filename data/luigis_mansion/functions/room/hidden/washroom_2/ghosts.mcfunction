@@ -1,4 +1,0 @@
-execute if score #washroom_2 Wave matches 2 unless entity @e[tag=ghost,scores={Room=42},tag=!optional_ghost] run function luigis_mansion:room/hidden/washroom_2/clear
-execute if score #washroom_2 Wave matches 1 unless entity @e[tag=ghost,scores={Room=42},tag=!optional_ghost] run function luigis_mansion:room/hidden/washroom_2/wave_2
-execute unless data storage luigis_mansion:data current_state.current_data.rooms.washroom_2{cleared:1b} if entity @a[tag=!blackout] unless score #washroom_2 Wave matches 1.. run function luigis_mansion:room/hidden/washroom_2/wave_1
-execute if entity @a[tag=blackout] unless score #washroom_2 Wave matches 1.. run function luigis_mansion:room/hidden/washroom_2/blackout

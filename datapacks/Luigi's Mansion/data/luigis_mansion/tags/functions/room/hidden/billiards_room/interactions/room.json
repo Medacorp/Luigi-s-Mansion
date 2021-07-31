@@ -1,0 +1,22 @@
+{
+	"values": [
+		"luigis_mansion:room/hidden/billiards_room/interactions/room/billiards_table",
+		"luigis_mansion:room/hidden/billiards_room/interactions/room/chair_1",
+		"luigis_mansion:room/hidden/billiards_room/interactions/room/chair_2",
+		"luigis_mansion:room/hidden/billiards_room/interactions/room/chair_3",
+		"luigis_mansion:room/hidden/billiards_room/interactions/room/chess_table",
+		"luigis_mansion:room/hidden/billiards_room/interactions/room/chest",
+		"luigis_mansion:room/hidden/billiards_room/interactions/room/darting_board",
+		"luigis_mansion:room/hidden/billiards_room/interactions/room/fan",
+		"luigis_mansion:room/hidden/billiards_room/interactions/room/painting_1",
+		"luigis_mansion:room/hidden/billiards_room/interactions/room/painting_2",
+		"luigis_mansion:room/hidden/billiards_room/interactions/room/painting_3",
+		"luigis_mansion:room/hidden/billiards_room/interactions/room/painting_4",
+		"luigis_mansion:room/hidden/billiards_room/interactions/room/painting_5",
+		"luigis_mansion:room/hidden/billiards_room/interactions/room/painting_6",
+		"luigis_mansion:room/hidden/billiards_room/interactions/room/table_1",
+		"luigis_mansion:room/hidden/billiards_room/interactions/room/table_2",
+		"luigis_mansion:room/hidden/billiards_room/interactions/room/vacuumable_1",
+		"luigis_mansion:room/hidden/billiards_room/interactions/room/vacuumable_2"
+	]
+}

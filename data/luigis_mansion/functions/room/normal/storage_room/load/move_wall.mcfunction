@@ -1,1 +1,0 @@
-execute if data storage luigis_mansion:data current_state.current_data.technical_data{moved_wall:1b} run function luigis_mansion:room/normal/storage_room/moved_wall

@@ -1,2 +1,0 @@
-execute if block 742 21 -52 minecraft:redstone_lamp if entity @s[x=736.0,y=23,z=-61.0,dx=1,dy=3,dz=2,tag=water] unless score #guest_room_plant Search matches 1 store success score #guest_room_plant Search run scoreboard players add #guest_room_plant Searching 1
-execute unless block 742 21 -52 minecraft:redstone_lamp if entity @s[x=736.0,y=20,z=-61.0,dx=1,dy=3,dz=2,tag=water] unless score #guest_room_plant Search matches 1 store success score #guest_room_plant Search run scoreboard players add #guest_room_plant Searching 1

@@ -1,1 +1,0 @@
-scoreboard players set #ghost_portrificationizer_room Ticking 1

@@ -1,2 +1,0 @@
-execute if block 741 21 68 minecraft:redstone_lamp if block 741 26 64 minecraft:trapped_chest unless block 741 26 64 minecraft:trapped_chest{LootTable:"luigis_mansion:search"} run function luigis_mansion:room/hidden/guest_room/search_chest_flipped
-execute unless block 741 21 68 minecraft:redstone_lamp if block 741 20 64 minecraft:trapped_chest unless block 741 20 64 minecraft:trapped_chest{LootTable:"luigis_mansion:search"} run function luigis_mansion:room/hidden/guest_room/search_chest

@@ -1,0 +1,1 @@
+execute if entity @s[x=704.5,y=12,z=-27.5,distance=..0.7,tag=vacuum] unless score #dining_room_food Search matches 1 store success score #dining_room_food Search run scoreboard players add @e[tag=mr_luggs,scores={Dialog=1..99},limit=1] Dialog 1

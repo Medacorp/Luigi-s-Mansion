@@ -1,1 +1,0 @@
-playsound luigis_mansion:block.search.drum block @a ~ ~ ~ 1

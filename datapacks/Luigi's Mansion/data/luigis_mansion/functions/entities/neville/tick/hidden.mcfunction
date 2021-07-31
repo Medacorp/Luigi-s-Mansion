@@ -1,0 +1,1 @@
+function luigis_mansion:entities/neville/tick/normal

@@ -1,0 +1,1 @@
+function #luigis_mansion:room/hidden/boolossus_battle/reset

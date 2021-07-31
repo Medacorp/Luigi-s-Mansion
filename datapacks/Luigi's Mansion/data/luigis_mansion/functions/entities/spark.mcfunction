@@ -1,0 +1,1 @@
+execute if entity @s[tag=spark] run function luigis_mansion:entities/spark/tick

@@ -1,0 +1,1 @@
+execute unless data storage luigis_mansion:data current_state.current_data.money_spawned{guest_room:1b} run data merge block 744 26 76 {LootTable:"luigis_mansion:search"}

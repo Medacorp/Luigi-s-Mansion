@@ -1,0 +1,38 @@
+{
+    "type": "luigis_mansion:dark_boo_woods",
+    "generator": {
+        "settings": {
+            "lakes": false,
+            "features": true,
+            "biome": "luigis_mansion:boo_woods",
+            "structures": {
+                "structures": {
+					"minecraft:village": {
+						"spacing": 4,
+						"separation": 3,
+						"salt": 10387312
+					}
+				}
+            },
+            "layers": [
+                {
+                    "height": 1,
+                    "block": "minecraft:bedrock"
+                },
+				{
+                    "height": 86,
+                    "block": "minecraft:stone"
+                },
+				{
+                    "height": 2,
+                    "block": "minecraft:dirt"
+                },
+				{
+                    "height": 1,
+                    "block": "minecraft:mycelium"
+                }
+            ]
+        },
+        "type": "minecraft:flat"
+    }
+}

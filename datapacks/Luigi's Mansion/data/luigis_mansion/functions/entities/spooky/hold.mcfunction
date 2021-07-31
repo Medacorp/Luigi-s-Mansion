@@ -1,0 +1,3 @@
+execute positioned ^ ^ ^0.8 if entity @a[gamemode=!spectator,tag=grabbed,distance=..0.7,limit=1] store result entity @s Rotation[0] float 0.01 run data get entity @a[gamemode=!spectator,tag=grabbed,distance=..0.7,limit=1] Rotation[0] 100
+execute positioned ^ ^ ^0.8 unless entity @a[gamemode=!spectator,distance=..0.7,tag=grabbed,limit=1] run scoreboard players set @s PathStep 120
+execute positioned ^ ^ ^0.8 positioned as @a[gamemode=!spectator,distance=..0.7,tag=grabbed,limit=1] rotated as @s positioned ^ ^ ^-0.8 run teleport @s ~ ~ ~ ~ ~

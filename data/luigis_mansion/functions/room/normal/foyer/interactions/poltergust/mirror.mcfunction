@@ -1,1 +1,0 @@
-execute if entity @s[x=745.0,y=12,z=3.0,dx=1,dy=2,dz=1,tag=vacuum] unless score #foyer_mirror Search matches 1 store success score #foyer_mirror Search run scoreboard players add #foyer_mirror Searching 1

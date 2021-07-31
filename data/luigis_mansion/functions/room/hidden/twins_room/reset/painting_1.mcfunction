@@ -1,1 +1,0 @@
-scoreboard players reset #twins_room_painting_1

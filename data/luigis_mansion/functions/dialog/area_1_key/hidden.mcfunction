@@ -1,1 +1,0 @@
-function luigis_mansion:dialog/area_1_key/normal

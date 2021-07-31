@@ -1,1 +1,0 @@
-scoreboard players reset #hallway_3_lamp_2

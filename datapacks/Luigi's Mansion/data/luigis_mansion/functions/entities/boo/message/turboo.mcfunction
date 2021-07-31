@@ -1,0 +1,4 @@
+execute if entity @s[tag=turboo,tag=message_1] run tellraw @a[tag=same_room] {"translate":"chat.type.text","with":[{"translate":"luigis_mansion:entity.turboo","color":"green"},{"translate":"luigis_mansion:message.turboo.1"}]}
+execute if entity @s[tag=turboo,tag=message_2] run tellraw @a[tag=same_room] {"translate":"chat.type.text","with":[{"translate":"luigis_mansion:entity.turboo","color":"green"},{"translate":"luigis_mansion:message.turboo.2"}]}
+execute if entity @s[tag=turboo,tag=message_3] run tellraw @a[tag=same_room] {"translate":"chat.type.text","with":[{"translate":"luigis_mansion:entity.turboo","color":"green"},{"translate":"luigis_mansion:message.turboo.3"}]}
+execute if entity @s[tag=turboo,tag=message_4] run tellraw @a[tag=same_room] {"translate":"chat.type.text","with":[{"translate":"luigis_mansion:entity.turboo","color":"green"},{"translate":"luigis_mansion:message.turboo.4"}]}

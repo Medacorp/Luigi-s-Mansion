@@ -1,0 +1,1 @@
+execute if entity @s[tag=blue_mouse] run function luigis_mansion:entities/ghost/capture/caught/blue_mouse

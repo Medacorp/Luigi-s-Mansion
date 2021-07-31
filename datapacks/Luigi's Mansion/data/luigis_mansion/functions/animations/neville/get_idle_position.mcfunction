@@ -1,0 +1,2 @@
+execute if score #mirrored Selected matches 0 run function luigis_mansion:animations/neville/normal/get_idle_position
+execute if score #mirrored Selected matches 1 run function luigis_mansion:animations/neville/mirrored/get_idle_position

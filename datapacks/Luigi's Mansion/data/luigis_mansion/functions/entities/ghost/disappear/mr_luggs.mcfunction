@@ -1,0 +1,1 @@
+execute if entity @s[tag=mr_luggs] run function #luigis_mansion:entities/mr_luggs/disappear

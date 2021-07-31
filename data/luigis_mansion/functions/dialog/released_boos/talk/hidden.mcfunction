@@ -1,1 +1,0 @@
-function luigis_mansion:dialog/released_boos/talk/normal

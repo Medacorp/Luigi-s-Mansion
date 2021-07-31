@@ -1,0 +1,1 @@
+setblock 713 13 36 minecraft:redstone_wall_torch[facing=north,lit=true]

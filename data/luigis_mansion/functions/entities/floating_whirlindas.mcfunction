@@ -1,1 +1,0 @@
-execute at @s[tag=floating_whirlindas] run function luigis_mansion:entities/floating_whirlindas/tick

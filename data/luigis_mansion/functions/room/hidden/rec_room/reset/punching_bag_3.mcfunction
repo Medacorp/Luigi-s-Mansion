@@ -1,1 +1,0 @@
-scoreboard players reset #rec_room_punching_bag_3

@@ -1,7 +1,0 @@
-{
-    "type": "minecraft:village",
-	"config": {
-		"start_pool": "luigis_mansion:boo_woods_starts",
-		"size": 7
-	}
-}

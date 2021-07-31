@@ -1,1 +1,0 @@
-scoreboard players reset #clockwork_room_table_3

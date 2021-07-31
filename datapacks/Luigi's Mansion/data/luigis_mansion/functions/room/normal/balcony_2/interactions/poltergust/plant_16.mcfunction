@@ -1,0 +1,1 @@
+execute if entity @s[x=679.0,y=120,z=-41.0,dx=2,dy=1,dz=2,tag=water] unless score #balcony_2_plant_16 Search matches 1 store success score #balcony_2_plant_16 Search run scoreboard players add #balcony_2_plant_16 Searching 1

@@ -1,0 +1,22 @@
+{
+    "values": [
+        "luigis_mansion:room/hidden/artists_studio/reset/unload",
+        "#luigis_mansion:room/hidden/artists_studio/turn_lights/off",
+        "luigis_mansion:room/hidden/artists_studio/reset/blockade",
+        "luigis_mansion:room/hidden/artists_studio/reset/bricks",
+        "luigis_mansion:room/hidden/artists_studio/reset/chairs",
+        "luigis_mansion:room/hidden/artists_studio/reset/lamp",
+        "luigis_mansion:room/hidden/artists_studio/reset/painting_1",
+        "luigis_mansion:room/hidden/artists_studio/reset/painting_2",
+        "luigis_mansion:room/hidden/artists_studio/reset/painting_3",
+        "luigis_mansion:room/hidden/artists_studio/reset/painting_4",
+        "luigis_mansion:room/hidden/artists_studio/reset/painting_5",
+        "luigis_mansion:room/hidden/artists_studio/reset/painting_6",
+        "luigis_mansion:room/hidden/artists_studio/reset/painting_7",
+        "luigis_mansion:room/hidden/artists_studio/reset/painting_8",
+        "luigis_mansion:room/hidden/artists_studio/reset/painting_9",
+        "luigis_mansion:room/hidden/artists_studio/reset/table_1",
+        "luigis_mansion:room/hidden/artists_studio/reset/table_2",
+        "luigis_mansion:room/hidden/artists_studio/reset/table_3"
+    ]
+}

@@ -1,0 +1,2 @@
+execute unless score #butlers_room Vacuumables matches 1 unless data storage luigis_mansion:data current_state.current_data.rooms.butlers_room{cleared:1b} if entity @a[tag=!blackout,limit=1] run function luigis_mansion:room/hidden/butlers_room/vacuumable_ghosts
+execute unless score #butlers_room Vacuumables matches 1 if entity @a[tag=blackout,limit=1] run function luigis_mansion:room/hidden/butlers_room/vacuumable_ghosts

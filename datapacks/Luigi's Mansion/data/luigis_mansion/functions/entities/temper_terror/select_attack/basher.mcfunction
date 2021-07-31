@@ -1,0 +1,1 @@
+execute if entity @s[tag=!element_hurt,tag=!hurt,tag=!fleeing,tag=!collided,tag=!smug,tag=attack,scores={StunTime=0}] run function luigis_mansion:entities/temper_terror/basher

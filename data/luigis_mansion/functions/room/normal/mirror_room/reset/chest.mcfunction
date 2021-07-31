@@ -1,1 +1,0 @@
-scoreboard players reset #mirror_room_chest

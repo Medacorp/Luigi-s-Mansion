@@ -1,1 +1,0 @@
-scoreboard players set #armory Ticking 1

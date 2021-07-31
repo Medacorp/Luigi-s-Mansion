@@ -1,0 +1,2 @@
+execute if entity @s[tag=nana] if score #players Totals matches 1 run tellraw @a {"translate":"chat.type.text","with":[{"translate":"luigis_mansion:entity.nana","color":"green"},{"translate":"luigis_mansion:message.nana.scan"}]}
+execute if entity @s[tag=nana] if score #players Totals matches 2.. run tellraw @a {"translate":"chat.type.text","with":[{"translate":"luigis_mansion:entity.nana","color":"green"},{"translate":"luigis_mansion:message.nana.scan.more"}]}

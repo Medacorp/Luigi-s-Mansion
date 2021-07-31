@@ -1,0 +1,1 @@
+execute if entity @s[tag=bogmire] run function luigis_mansion:entities/bogmire/tick

@@ -1,0 +1,8 @@
+{
+	"values": [
+	    "luigis_mansion:room/hidden/conservatory/load/set_loaded",
+        "luigis_mansion:room/hidden/conservatory/load/lights",
+        "luigis_mansion:room/hidden/conservatory/load/closet",
+        "luigis_mansion:room/hidden/conservatory/load/vacuumable"
+	]
+}

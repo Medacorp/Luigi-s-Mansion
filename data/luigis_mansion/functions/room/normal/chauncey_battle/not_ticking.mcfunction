@@ -1,1 +1,0 @@
-function #luigis_mansion:room/normal/chauncey_battle/reset

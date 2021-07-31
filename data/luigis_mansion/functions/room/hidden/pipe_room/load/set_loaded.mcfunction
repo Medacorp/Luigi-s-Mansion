@@ -1,1 +1,0 @@
-scoreboard players set #pipe_room Ticking 1

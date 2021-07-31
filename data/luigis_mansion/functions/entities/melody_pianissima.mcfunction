@@ -1,1 +1,0 @@
-execute if entity @s[tag=melody_pianissima] run function luigis_mansion:entities/melody_pianissima/tick

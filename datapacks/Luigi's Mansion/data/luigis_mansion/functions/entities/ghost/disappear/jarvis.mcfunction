@@ -1,0 +1,1 @@
+execute if entity @s[tag=jarvis] run function #luigis_mansion:entities/jarvis/disappear

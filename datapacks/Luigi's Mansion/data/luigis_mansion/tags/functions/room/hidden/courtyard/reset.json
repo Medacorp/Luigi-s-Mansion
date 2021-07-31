@@ -1,0 +1,19 @@
+{
+    "values": [
+        "luigis_mansion:room/hidden/courtyard/reset/unload",
+        "#luigis_mansion:room/hidden/courtyard/turn_lights/off",
+        "luigis_mansion:room/hidden/courtyard/reset/close_door",
+        "luigis_mansion:room/hidden/courtyard/reset/bird_house",
+        "luigis_mansion:room/hidden/courtyard/reset/chest",
+        "luigis_mansion:room/hidden/courtyard/reset/lamp_1",
+        "luigis_mansion:room/hidden/courtyard/reset/lamp_2",
+        "luigis_mansion:room/hidden/courtyard/reset/plant_1",
+        "luigis_mansion:room/hidden/courtyard/reset/plant_2",
+        "luigis_mansion:room/hidden/courtyard/reset/plant_3",
+        "luigis_mansion:room/hidden/courtyard/reset/plant_4",
+        "luigis_mansion:room/hidden/courtyard/reset/statue_1",
+        "luigis_mansion:room/hidden/courtyard/reset/statue_2",
+        "luigis_mansion:room/hidden/courtyard/reset/vacuumable",
+        "luigis_mansion:room/hidden/courtyard/reset/water"
+    ]
+}

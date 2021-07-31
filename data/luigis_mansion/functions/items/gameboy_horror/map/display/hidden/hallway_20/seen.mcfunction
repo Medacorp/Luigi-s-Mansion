@@ -1,1 +1,0 @@
-fill 3717 10 35 3699 10 31 minecraft:lime_concrete

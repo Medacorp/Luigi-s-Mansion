@@ -1,0 +1,1 @@
+execute if entity @s[tag=small_pearl] run function luigis_mansion:entities/item/physics

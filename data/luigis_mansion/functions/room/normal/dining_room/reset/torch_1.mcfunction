@@ -1,1 +1,0 @@
-scoreboard players reset #dining_room_torch_1

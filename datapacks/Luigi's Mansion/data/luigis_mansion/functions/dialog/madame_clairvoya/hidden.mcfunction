@@ -1,0 +1,1 @@
+function luigis_mansion:dialog/madame_clairvoya/normal

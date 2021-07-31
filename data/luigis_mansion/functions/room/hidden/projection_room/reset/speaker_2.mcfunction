@@ -1,1 +1,0 @@
-scoreboard players reset #projection_room_speaker_2

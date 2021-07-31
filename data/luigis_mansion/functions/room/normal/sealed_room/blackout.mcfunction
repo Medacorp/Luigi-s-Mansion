@@ -1,1 +1,0 @@
-scoreboard players set #sealed_room Wave 100

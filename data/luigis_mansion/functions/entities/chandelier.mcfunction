@@ -1,1 +1,0 @@
-execute if entity @s[tag=chandelier] run function luigis_mansion:entities/chandelier/tick

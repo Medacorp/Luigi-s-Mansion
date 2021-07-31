@@ -1,1 +1,0 @@
-execute if entity @s[tag=shining_ghost] run function luigis_mansion:entities/shining_ghost/tick

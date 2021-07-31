@@ -1,0 +1,1 @@
+function luigis_mansion:room/normal/mirror_room/remove_blockade

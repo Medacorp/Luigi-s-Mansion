@@ -1,1 +1,0 @@
-scoreboard players set #bogmire_battle Ticking 1

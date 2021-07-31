@@ -1,0 +1,1 @@
+function luigis_mansion:entities/slim_bankshot/disappear/normal

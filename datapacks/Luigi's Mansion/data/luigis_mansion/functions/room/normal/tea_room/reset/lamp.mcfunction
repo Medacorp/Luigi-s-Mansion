@@ -1,0 +1,1 @@
+scoreboard players reset #tea_room_lamp

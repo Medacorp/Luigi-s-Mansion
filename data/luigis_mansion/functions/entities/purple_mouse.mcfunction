@@ -1,1 +1,0 @@
-execute if entity @s[tag=purple_mouse] run function luigis_mansion:entities/purple_mouse/tick

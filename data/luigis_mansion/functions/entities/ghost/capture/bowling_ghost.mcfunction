@@ -1,1 +1,0 @@
-execute if entity @s[tag=bowling_ghost] run function luigis_mansion:entities/ghost/capture/caught/bowling_ghost

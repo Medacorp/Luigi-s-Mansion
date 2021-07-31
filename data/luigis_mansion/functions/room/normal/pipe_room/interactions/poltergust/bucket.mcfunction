@@ -1,1 +1,0 @@
-execute if entity @s[x=698.5,y=2,z=-3.5,distance=..0.7,tag=vacuum] unless score #pipe_room_bucket Search matches 1 store success score #pipe_room_bucket Search run scoreboard players add #pipe_room_bucket Searching 1

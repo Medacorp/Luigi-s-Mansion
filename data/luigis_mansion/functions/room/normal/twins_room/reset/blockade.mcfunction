@@ -1,1 +1,0 @@
-function luigis_mansion:room/normal/twins_room/remove_blockade

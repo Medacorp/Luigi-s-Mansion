@@ -1,0 +1,1 @@
+execute if entity @s[tag=orville] run function luigis_mansion:entities/orville/tick

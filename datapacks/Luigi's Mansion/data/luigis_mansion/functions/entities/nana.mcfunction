@@ -1,0 +1,1 @@
+execute if entity @s[tag=nana] run function luigis_mansion:entities/nana/tick

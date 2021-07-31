@@ -1,0 +1,19 @@
+{
+	"values": [
+	    "luigis_mansion:room/normal/sealed_room/load/set_loaded",
+        "luigis_mansion:room/normal/sealed_room/load/lights",
+        "luigis_mansion:room/normal/sealed_room/load/candle_1",
+        "luigis_mansion:room/normal/sealed_room/load/candle_2",
+        "luigis_mansion:room/normal/sealed_room/load/candle_3",
+        "luigis_mansion:room/normal/sealed_room/load/candle_4",
+        "luigis_mansion:room/normal/sealed_room/load/chest_1",
+        "luigis_mansion:room/normal/sealed_room/load/chest_2",
+        "luigis_mansion:room/normal/sealed_room/load/chest_3",
+        "luigis_mansion:room/normal/sealed_room/load/chest_4",
+        "luigis_mansion:room/normal/sealed_room/load/chest_5",
+        "luigis_mansion:room/normal/sealed_room/load/chest_6",
+        "luigis_mansion:room/normal/sealed_room/load/chest_7",
+        "luigis_mansion:room/normal/sealed_room/load/chest_8",
+        "luigis_mansion:room/normal/sealed_room/load/chest_9"
+	]
+}

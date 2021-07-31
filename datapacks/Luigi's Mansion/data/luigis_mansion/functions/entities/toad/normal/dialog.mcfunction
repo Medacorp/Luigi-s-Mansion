@@ -1,0 +1,12 @@
+execute if entity @s[scores={Room=1},tag=!turning_on_lights,tag=talk] unless data storage luigis_mansion:data current_state.current_data.rooms.foyer{cleared:1b} run function luigis_mansion:dialog/toad_1/normal
+execute if entity @s[scores={Room=1},tag=turning_on_lights,tag=talk] run function luigis_mansion:dialog/toad_1/normal
+execute if entity @s[scores={Room=1},tag=!turning_on_lights,tag=talk] if data storage luigis_mansion:data current_state.current_data.rooms.foyer{cleared:1b} run function luigis_mansion:dialog/toad_1/repeat/normal
+execute if entity @s[scores={Room=6},tag=!turning_on_lights,tag=talk] unless data storage luigis_mansion:data current_state.current_data.rooms.balcony_1{cleared:1b} run function luigis_mansion:dialog/toad_2/normal
+execute if entity @s[scores={Room=6},tag=turning_on_lights,tag=talk] run function luigis_mansion:dialog/toad_2/normal
+execute if entity @s[scores={Room=6},tag=!turning_on_lights,tag=talk] if data storage luigis_mansion:data current_state.current_data.rooms.balcony_1{cleared:1b} run function luigis_mansion:dialog/toad_2/repeat/normal
+execute if entity @s[scores={Room=19},tag=!turning_on_lights,tag=talk] unless data storage luigis_mansion:data current_state.current_data.rooms.washroom_1{cleared:1b} run function luigis_mansion:dialog/toad_3/normal
+execute if entity @s[scores={Room=19},tag=turning_on_lights,tag=talk] run function luigis_mansion:dialog/toad_3/normal
+execute if entity @s[scores={Room=19},tag=!turning_on_lights,tag=talk] if data storage luigis_mansion:data current_state.current_data.rooms.washroom_1{cleared:1b} run function luigis_mansion:dialog/toad_3/repeat/normal
+execute if entity @s[scores={Room=30},tag=talk] unless data storage luigis_mansion:data current_state.current_data.technical_data{saw_mario:1b} unless data storage luigis_mansion:data current_state.current_data.technical_data{toad_4_happy:1b} run function luigis_mansion:dialog/toad_4/look/normal
+execute if entity @s[scores={Room=30},tag=talk] if data storage luigis_mansion:data current_state.current_data.technical_data{saw_mario:1b} unless data storage luigis_mansion:data current_state.current_data.technical_data{toad_4_happy:1b} run function luigis_mansion:dialog/toad_4/normal
+execute if entity @s[scores={Room=30},tag=talk] if data storage luigis_mansion:data current_state.current_data.technical_data{toad_4_happy:1b} run function luigis_mansion:dialog/toad_4/repeat/normal

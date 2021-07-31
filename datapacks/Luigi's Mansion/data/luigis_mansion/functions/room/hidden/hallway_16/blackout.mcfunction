@@ -1,0 +1,1 @@
+scoreboard players set #hallway_16 Wave 100

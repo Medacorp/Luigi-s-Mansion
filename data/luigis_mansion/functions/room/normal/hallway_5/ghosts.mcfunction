@@ -1,3 +1,0 @@
-execute unless data storage luigis_mansion:data current_state.current_data.rooms.hallway_5{cleared:1b} if entity @a[tag=!blackout] unless score #hallway_5 Wave matches 1.. run function luigis_mansion:room/normal/hallway_5/wave_1
-execute if entity @a[tag=blackout] unless score #hallway_5 Wave matches 1.. run function luigis_mansion:room/normal/hallway_5/blackout
-function luigis_mansion:room/normal/hallway_5/load_vacuumable_ghosts

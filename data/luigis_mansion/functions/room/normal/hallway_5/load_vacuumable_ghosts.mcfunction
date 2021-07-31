@@ -1,2 +1,0 @@
-execute unless score #hallway_5 Vacuumables matches 1 unless data storage luigis_mansion:data current_state.current_data.rooms.hallway_5{cleared:1b} if entity @a[tag=!blackout,limit=1] run function luigis_mansion:room/normal/hallway_5/vacuumable_ghosts
-execute unless score #hallway_5 Vacuumables matches 1 if entity @a[tag=blackout,limit=1] run function luigis_mansion:room/normal/hallway_5/vacuumable_ghosts

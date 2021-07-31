@@ -1,0 +1,8 @@
+{
+	"values": [
+	    "luigis_mansion:room/hidden/mirror_room/load/set_loaded",
+        "luigis_mansion:room/hidden/mirror_room/load/lights",
+        "luigis_mansion:room/hidden/mirror_room/load/fire",
+        "luigis_mansion:room/hidden/mirror_room/load/table"
+	]
+}

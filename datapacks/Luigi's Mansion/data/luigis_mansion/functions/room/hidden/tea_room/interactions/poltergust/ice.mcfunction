@@ -1,0 +1,2 @@
+execute if entity @s[x=643.0,y=21,z=63.5,distance=..0.7,tag=fire] run scoreboard players set #tea_room_ice Searched 1
+execute if entity @s[x=643.0,y=21,z=63.5,distance=..0.7,tag=ice] run scoreboard players reset #tea_room_ice Searched

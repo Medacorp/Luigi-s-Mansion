@@ -1,0 +1,2 @@
+execute if score #mirrored Selected matches 0 run function luigis_mansion:animations/mr_luggs/normal/hit_table
+execute if score #mirrored Selected matches 1 run function luigis_mansion:animations/mr_luggs/mirrored/hit_table

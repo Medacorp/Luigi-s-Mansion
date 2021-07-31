@@ -1,0 +1,1 @@
+execute unless data storage luigis_mansion:data current_state.current_data.obtained_items{marios_glove:1b} unless entity @e[type=minecraft:armor_stand,tag=mario_item,tag=glove,limit=1] run function luigis_mansion:spawn_entities/item/marios_glove

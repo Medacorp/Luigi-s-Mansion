@@ -1,2 +1,0 @@
-tellraw @s {"translate":"chat.type.text","with":[{"translate":"luigis_mansion:entity.e_gadd","color":"green"},{"translate":"luigis_mansion:message.training_type"}]}
-tellraw @s {"translate":"luigis_mansion:message.training_type.vanilla","color":"green","clickEvent":{"action":"run_command","value":"/trigger TrainingOption set 0"}}

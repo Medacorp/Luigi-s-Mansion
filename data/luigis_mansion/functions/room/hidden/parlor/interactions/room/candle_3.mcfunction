@@ -1,2 +1,0 @@
-execute if score #parlor_candle_3 Searched matches 1 run setblock 720 21 -8 minecraft:redstone_torch[lit=false]
-execute unless score #parlor_candle_3 Searched matches 1 run setblock 720 21 -8 minecraft:redstone_torch[lit=true]

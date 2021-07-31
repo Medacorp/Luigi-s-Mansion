@@ -1,0 +1,1 @@
+scoreboard players set #cold_storage Ticking 1

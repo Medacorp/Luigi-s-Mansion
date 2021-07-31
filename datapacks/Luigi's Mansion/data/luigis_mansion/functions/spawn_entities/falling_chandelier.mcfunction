@@ -1,0 +1,1 @@
+summon minecraft:marker ~ ~ ~ {CustomName:'{"translate":"luigis_mansion:entity.chandelier"}',Tags:["chandelier"]}

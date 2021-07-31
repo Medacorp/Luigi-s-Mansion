@@ -1,3 +1,0 @@
-execute if entity @s[tag=blue_clockwork_soldier] run tellraw @a {"translate":"chat.type.text","with":[{"translate":"luigis_mansion:entity.clockwork_soldier","color":"green"},{"translate":"luigis_mansion:message.blue_clockwork_soldier.scan"}]}
-execute if entity @s[tag=green_clockwork_soldier] run tellraw @a {"translate":"chat.type.text","with":[{"translate":"luigis_mansion:entity.clockwork_soldier","color":"green"},{"translate":"luigis_mansion:message.green_clockwork_soldier.scan"}]}
-execute if entity @s[tag=pink_clockwork_soldier] run tellraw @a {"translate":"chat.type.text","with":[{"translate":"luigis_mansion:entity.clockwork_soldier","color":"green"},{"translate":"luigis_mansion:message.pink_clockwork_soldier.scan"}]}

@@ -1,0 +1,1 @@
+execute if entity @s[tag=wool] run function luigis_mansion:entities/wool/tick

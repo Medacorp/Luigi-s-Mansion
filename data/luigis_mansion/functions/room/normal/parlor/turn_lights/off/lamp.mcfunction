@@ -1,1 +1,0 @@
-fill 721 26 27 720 26 28 minecraft:air

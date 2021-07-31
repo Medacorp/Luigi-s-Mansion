@@ -1,1 +1,0 @@
-fill 745 18 9 745 18 8 minecraft:air

@@ -1,1 +1,0 @@
-setblock 685 120 15 minecraft:yellow_terracotta

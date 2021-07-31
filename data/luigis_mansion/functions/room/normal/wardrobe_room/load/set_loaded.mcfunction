@@ -1,1 +1,0 @@
-scoreboard players set #wardrobe_room Ticking 1

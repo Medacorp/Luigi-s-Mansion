@@ -1,1 +1,0 @@
-execute if entity @s[tag=green_flying_fish] run function luigis_mansion:entities/ghost/capture/caught/green_flying_fish

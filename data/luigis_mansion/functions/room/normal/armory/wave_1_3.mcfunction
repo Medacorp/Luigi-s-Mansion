@@ -1,1 +1,0 @@
-execute positioned 757 29 59 run function luigis_mansion:spawn_entities/ghost/forced_spawn/gold_ghost

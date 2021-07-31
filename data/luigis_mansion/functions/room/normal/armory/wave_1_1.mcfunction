@@ -1,1 +1,0 @@
-execute positioned 759 29 69 run function luigis_mansion:spawn_entities/ghost/forced_spawn/blue_twirler

@@ -1,1 +1,0 @@
-execute in minecraft:overworld run function luigis_mansion:items/gameboy_horror/map/display/lab/warp

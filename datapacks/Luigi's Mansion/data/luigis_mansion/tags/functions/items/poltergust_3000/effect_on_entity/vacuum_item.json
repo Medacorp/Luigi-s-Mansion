@@ -1,0 +1,21 @@
+{
+	"values": [
+		"luigis_mansion:items/poltergust_3000/effect_on_entity/vacuum_item/gold_coin",
+        "luigis_mansion:items/poltergust_3000/effect_on_entity/vacuum_item/bill",
+        "luigis_mansion:items/poltergust_3000/effect_on_entity/vacuum_item/gold_bar",
+        "luigis_mansion:items/poltergust_3000/effect_on_entity/vacuum_item/blue_sapphire",
+        "luigis_mansion:items/poltergust_3000/effect_on_entity/vacuum_item/green_emerald",
+        "luigis_mansion:items/poltergust_3000/effect_on_entity/vacuum_item/red_ruby",
+        "luigis_mansion:items/poltergust_3000/effect_on_entity/vacuum_item/red_diamond",
+        "luigis_mansion:items/poltergust_3000/effect_on_entity/vacuum_item/blue_diamond",
+        "luigis_mansion:items/poltergust_3000/effect_on_entity/vacuum_item/gold_diamond",
+        "luigis_mansion:items/poltergust_3000/effect_on_entity/vacuum_item/small_pearl",
+        "luigis_mansion:items/poltergust_3000/effect_on_entity/vacuum_item/medium_pearl",
+        "luigis_mansion:items/poltergust_3000/effect_on_entity/vacuum_item/big_pearl",
+        "luigis_mansion:items/poltergust_3000/effect_on_entity/vacuum_item/heart",
+        "luigis_mansion:items/poltergust_3000/effect_on_entity/vacuum_item/poison_mushroom",
+        "luigis_mansion:items/poltergust_3000/effect_on_entity/vacuum_item/key",
+        "luigis_mansion:items/poltergust_3000/effect_on_entity/vacuum_item/element_medal",
+        "luigis_mansion:items/poltergust_3000/effect_on_entity/vacuum_item/mario_item"
+	]
+}

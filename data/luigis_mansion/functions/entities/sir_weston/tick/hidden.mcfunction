@@ -1,1 +1,0 @@
-function luigis_mansion:entities/sir_weston/tick/normal

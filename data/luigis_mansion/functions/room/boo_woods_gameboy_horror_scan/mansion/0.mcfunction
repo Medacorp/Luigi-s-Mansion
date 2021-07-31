@@ -1,1 +1,0 @@
-execute if score #loaded_exterior Selected matches 0 if entity @s[x=644.0,y=100,z=-42.0,dx=85,dy=50,dz=99] store result score @s Selected run tellraw @a {"translate":"chat.type.text","with":[{"selector":"@p[tag=scanning_player,gamemode=!spectator]","color":"green"},{"translate":"luigis_mansion:message.player.scan_furniture.47"}]}

@@ -1,1 +1,0 @@
-execute if entity @s[tag=mirror_ghost] run function luigis_mansion:entities/ghost/capture/caught/mirror_ghost

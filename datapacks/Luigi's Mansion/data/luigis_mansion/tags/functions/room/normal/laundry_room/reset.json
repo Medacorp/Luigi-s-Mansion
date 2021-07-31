@@ -1,0 +1,20 @@
+{
+    "values": [
+        "luigis_mansion:room/normal/laundry_room/reset/unload",
+        "#luigis_mansion:room/normal/laundry_room/turn_lights/off",
+        "luigis_mansion:room/normal/laundry_room/reset/basket",
+        "luigis_mansion:room/normal/laundry_room/reset/broom",
+        "luigis_mansion:room/normal/laundry_room/reset/bucket",
+        "luigis_mansion:room/normal/laundry_room/reset/chest",
+        "luigis_mansion:room/normal/laundry_room/reset/closet",
+        "luigis_mansion:room/normal/laundry_room/reset/dust_box",
+        "luigis_mansion:room/normal/laundry_room/reset/lamp",
+        "luigis_mansion:room/normal/laundry_room/reset/shelf_1",
+        "luigis_mansion:room/normal/laundry_room/reset/shelf_2",
+        "luigis_mansion:room/normal/laundry_room/reset/vacuumable_1",
+        "luigis_mansion:room/normal/laundry_room/reset/vacuumable_2",
+        "luigis_mansion:room/normal/laundry_room/reset/vacuumable_3",
+        "luigis_mansion:room/normal/laundry_room/reset/vacuumable_4",
+        "luigis_mansion:room/normal/laundry_room/reset/washing_machine"
+    ]
+}

@@ -1,1 +1,0 @@
-scoreboard players reset #courtyard_lamp_1

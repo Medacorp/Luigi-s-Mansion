@@ -1,1 +1,0 @@
-execute unless entity @s[tag=!boo,tag=!boolossus] run function luigis_mansion:entities/ghost/capture/caught/boo

@@ -1,0 +1,1 @@
+execute if entity @s[tag=green_emerald] run function luigis_mansion:items/green_emerald

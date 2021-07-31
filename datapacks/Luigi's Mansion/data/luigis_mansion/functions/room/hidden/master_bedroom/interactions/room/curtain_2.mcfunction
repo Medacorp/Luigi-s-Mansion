@@ -1,0 +1,1 @@
+scoreboard players reset #master_bedroom_curtain_2 Search

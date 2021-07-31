@@ -1,1 +1,0 @@
-execute if entity @s[tag=poison_mushroom] run function luigis_mansion:entities/item/heart_physics

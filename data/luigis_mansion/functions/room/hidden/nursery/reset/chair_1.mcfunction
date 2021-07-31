@@ -1,1 +1,0 @@
-scoreboard players reset #nursery_chair_1

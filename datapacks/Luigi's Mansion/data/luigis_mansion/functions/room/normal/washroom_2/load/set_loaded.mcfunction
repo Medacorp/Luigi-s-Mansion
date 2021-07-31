@@ -1,0 +1,1 @@
+scoreboard players set #washroom_2 Ticking 1

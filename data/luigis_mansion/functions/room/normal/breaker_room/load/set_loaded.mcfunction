@@ -1,1 +1,0 @@
-scoreboard players set #breaker_room Ticking 1

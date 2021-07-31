@@ -1,0 +1,1 @@
+execute if entity @s[x=741.5,y=11,z=47.5,distance=..0.7] run function luigis_mansion:room/normal/hidden_room/scan_hole

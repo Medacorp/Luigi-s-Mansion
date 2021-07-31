@@ -1,0 +1,14 @@
+execute if entity @s[tag=east,y_rotation=-135..-45,tag=!up,tag=!down] run function luigis_mansion:entities/boo/warp/east
+execute if entity @s[tag=north,y_rotation=135..-135,tag=!up,tag=!down] run function luigis_mansion:entities/boo/warp/north
+execute if entity @s[tag=south,y_rotation=-45..45,tag=!up,tag=!down] run function luigis_mansion:entities/boo/warp/south
+execute if entity @s[tag=west,y_rotation=45..135,tag=!up,tag=!down] run function luigis_mansion:entities/boo/warp/west
+execute if entity @s[tag=east,y_rotation=-135..-45,x_rotation=-45..90,tag=up,tag=!down] run function luigis_mansion:entities/boo/warp/east
+execute if entity @s[tag=north,y_rotation=135..-135,x_rotation=-45..90,tag=up,tag=!down] run function luigis_mansion:entities/boo/warp/north
+execute if entity @s[tag=south,y_rotation=-45..45,x_rotation=-45..90,tag=up,tag=!down] run function luigis_mansion:entities/boo/warp/south
+execute if entity @s[tag=west,y_rotation=45..135,x_rotation=-45..90,tag=up,tag=!down] run function luigis_mansion:entities/boo/warp/west
+execute if entity @s[tag=east,y_rotation=-135..-45,x_rotation=-90..45,tag=!up,tag=down] run function luigis_mansion:entities/boo/warp/east
+execute if entity @s[tag=north,y_rotation=135..-135,x_rotation=-90..45,tag=!up,tag=down] run function luigis_mansion:entities/boo/warp/north
+execute if entity @s[tag=south,y_rotation=-45..45,x_rotation=-90..45,tag=!up,tag=down] run function luigis_mansion:entities/boo/warp/south
+execute if entity @s[tag=west,y_rotation=45..135,x_rotation=-90..45,tag=!up,tag=down] run function luigis_mansion:entities/boo/warp/west
+execute if entity @s[tag=up,x_rotation=-90..-45] run function luigis_mansion:entities/boo/warp/up
+execute if entity @s[tag=down,x_rotation=45..90] run function luigis_mansion:entities/boo/warp/down

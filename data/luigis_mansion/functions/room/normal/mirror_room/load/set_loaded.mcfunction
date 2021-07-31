@@ -1,1 +1,0 @@
-scoreboard players set #mirror_room Ticking 1

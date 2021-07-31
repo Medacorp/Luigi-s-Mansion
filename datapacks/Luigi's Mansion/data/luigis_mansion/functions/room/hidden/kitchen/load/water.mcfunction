@@ -1,0 +1,1 @@
+execute positioned 700 12.5 -64.0 run function luigis_mansion:spawn_entities/ghost/water_elemental_source

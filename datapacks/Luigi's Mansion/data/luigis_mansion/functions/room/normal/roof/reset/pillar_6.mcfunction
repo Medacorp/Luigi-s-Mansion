@@ -1,0 +1,1 @@
+scoreboard players reset #roof_pillar_6

@@ -1,1 +1,0 @@
-execute if entity @s[tag=element_medal] run playsound luigis_mansion:item.element_medal.bounce player @a[tag=same_room] ~ ~ ~ 1

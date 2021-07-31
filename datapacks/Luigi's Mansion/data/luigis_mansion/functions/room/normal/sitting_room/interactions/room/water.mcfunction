@@ -1,0 +1,2 @@
+execute if score #sitting_room_water Searched matches 1 run tag @e[x=746.5,y=21,z=-21.5,tag=elemental_source,distance=..0.7,limit=1] remove enabled
+execute unless score #sitting_room_water Searched matches 1 run tag @e[x=746.5,y=21,z=-21.5,tag=elemental_source,distance=..0.7,limit=1] add enabled

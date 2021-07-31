@@ -1,1 +1,0 @@
-execute if entity @s[tag=spark] run function luigis_mansion:entities/ghost/capture/caught/spark

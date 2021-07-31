@@ -1,0 +1,2 @@
+execute if entity @s[tag=blue_blaze,tag=!hidden] run function luigis_mansion:entities/blue_blaze/tick
+execute if entity @s[tag=blue_blaze,tag=hidden] run function luigis_mansion:entities/blue_blaze/hidden_tick

@@ -1,1 +1,0 @@
-scoreboard players set #master_bedroom Ticking 1

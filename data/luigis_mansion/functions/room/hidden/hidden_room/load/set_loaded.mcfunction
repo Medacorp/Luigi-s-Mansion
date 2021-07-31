@@ -1,1 +1,0 @@
-scoreboard players set #hidden_room Ticking 1

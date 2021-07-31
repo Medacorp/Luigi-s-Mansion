@@ -1,1 +1,0 @@
-scoreboard players set #boolossus_battle Ticking 1

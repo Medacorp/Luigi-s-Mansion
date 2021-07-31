@@ -1,1 +1,0 @@
-scoreboard players set #chauncey_battle Ticking 1

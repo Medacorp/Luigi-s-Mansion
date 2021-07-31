@@ -1,1 +1,0 @@
-execute if entity @s[tag=mario_item] run playsound luigis_mansion:item.mario_item.bounce player @a[tag=same_room] ~ ~ ~ 1

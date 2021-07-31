@@ -1,1 +1,0 @@
-execute if entity @s[tag=!element_hurt,tag=!hurt,tag=!fleeing,tag=!collided,tag=attack,scores={StunTime=0}] run function luigis_mansion:entities/purple_puncher/basher

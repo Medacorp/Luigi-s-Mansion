@@ -1,0 +1,1 @@
+advancement grant @s only luigis_mansion:challenges/root

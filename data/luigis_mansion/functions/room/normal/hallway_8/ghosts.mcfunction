@@ -1,2 +1,0 @@
-execute if entity @a[tag=blackout] unless score #hallway_8 Wave matches 1.. run function luigis_mansion:room/normal/hallway_8/blackout
-function luigis_mansion:room/normal/hallway_8/load_vacuumable_ghosts

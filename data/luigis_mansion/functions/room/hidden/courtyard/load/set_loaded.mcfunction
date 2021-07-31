@@ -1,1 +1,0 @@
-scoreboard players set #courtyard Ticking 1

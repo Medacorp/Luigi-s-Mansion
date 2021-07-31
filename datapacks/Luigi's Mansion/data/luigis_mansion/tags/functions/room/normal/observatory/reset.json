@@ -1,0 +1,12 @@
+{
+    "values": [
+        "luigis_mansion:room/normal/observatory/reset/unload",
+        "#luigis_mansion:room/normal/observatory/turn_lights/off",
+        "luigis_mansion:room/normal/observatory/reset/repair",
+        "luigis_mansion:room/normal/observatory/reset/chair",
+        "luigis_mansion:room/normal/observatory/reset/lamp_1",
+        "luigis_mansion:room/normal/observatory/reset/lamp_2",
+        "luigis_mansion:room/normal/observatory/reset/table",
+        "luigis_mansion:room/normal/observatory/reset/telescope"
+    ]
+}

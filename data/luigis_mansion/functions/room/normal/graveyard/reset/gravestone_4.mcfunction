@@ -1,1 +1,0 @@
-scoreboard players reset #graveyard_gravestone_4

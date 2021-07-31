@@ -1,0 +1,1 @@
+execute if data storage luigis_mansion:data current_state.current_data.technical_data{froze_sewage:1b} run function luigis_mansion:room/normal/pipe_room/freeze_sewage

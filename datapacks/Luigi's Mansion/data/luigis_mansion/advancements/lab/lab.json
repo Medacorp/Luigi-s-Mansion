@@ -1,0 +1,20 @@
+{
+    "display": {
+        "icon": {
+            "item": "minecraft:iron_block"
+        },
+        "show_toast": false,
+        "title": {
+            "translate": "luigis_mansion:advancements.lab.lab"
+        },
+        "description": {
+            "translate": "luigis_mansion:advancements.lab.lab.description"
+        },
+		"background": "luigis_mansion:textures/gui/advancements/background/lab.png"
+    },
+    "criteria": {
+        "cleared": {
+            "trigger": "minecraft:impossible"
+        }
+    }
+}

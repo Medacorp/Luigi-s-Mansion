@@ -1,1 +1,0 @@
-execute if entity @s[tag=key,tag=!display] run function #luigis_mansion:items/key

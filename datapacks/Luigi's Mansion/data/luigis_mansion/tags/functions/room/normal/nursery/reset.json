@@ -1,0 +1,22 @@
+{
+    "values": [
+        "luigis_mansion:room/normal/nursery/reset/unload",
+        "#luigis_mansion:room/normal/nursery/turn_lights/off",
+        "luigis_mansion:room/normal/nursery/reset/blockade",
+        "luigis_mansion:room/normal/nursery/reset/chair_1",
+        "luigis_mansion:room/normal/nursery/reset/chair_2",
+        "luigis_mansion:room/normal/nursery/reset/chest",
+        "luigis_mansion:room/normal/nursery/reset/crib",
+        "luigis_mansion:room/normal/nursery/reset/lamp",
+        "luigis_mansion:room/normal/nursery/reset/painting_1",
+        "luigis_mansion:room/normal/nursery/reset/painting_2",
+        "luigis_mansion:room/normal/nursery/reset/painting_3",
+        "luigis_mansion:room/normal/nursery/reset/rocking_horse",
+        "luigis_mansion:room/normal/nursery/reset/table_1",
+        "luigis_mansion:room/normal/nursery/reset/table_2",
+        "luigis_mansion:room/normal/nursery/reset/toy_1",
+        "luigis_mansion:room/normal/nursery/reset/toy_2",
+        "luigis_mansion:room/normal/nursery/reset/vacuumable_1",
+        "luigis_mansion:room/normal/nursery/reset/vacuumable_2"
+    ]
+}

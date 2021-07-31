@@ -1,1 +1,0 @@
-fill 3681 110 19 3673 110 36 minecraft:yellow_concrete

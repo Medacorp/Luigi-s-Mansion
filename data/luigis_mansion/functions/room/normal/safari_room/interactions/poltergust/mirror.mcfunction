@@ -1,1 +1,0 @@
-execute if entity @s[x=745.0,y=30,z=-46.0,dx=0,dy=3,dz=3,tag=vacuum] unless score #safari_room_mirror Search matches 1 store success score #safari_room_mirror Search run scoreboard players add #safari_room_mirror Searching 1

@@ -1,0 +1,30 @@
+{
+	"values": [
+		"luigis_mansion:room/hidden/dining_room/interactions/poltergust/candle_1",
+		"luigis_mansion:room/hidden/dining_room/interactions/poltergust/candle_2",
+		"luigis_mansion:room/hidden/dining_room/interactions/poltergust/chair_1",
+		"luigis_mansion:room/hidden/dining_room/interactions/poltergust/chair_2",
+		"luigis_mansion:room/hidden/dining_room/interactions/poltergust/chair_3",
+		"luigis_mansion:room/hidden/dining_room/interactions/poltergust/closet_1",
+		"luigis_mansion:room/hidden/dining_room/interactions/poltergust/closet_2",
+		"luigis_mansion:room/hidden/dining_room/interactions/poltergust/dishes_1",
+		"luigis_mansion:room/hidden/dining_room/interactions/poltergust/dishes_2",
+		"luigis_mansion:room/hidden/dining_room/interactions/poltergust/dishes_3",
+		"luigis_mansion:room/hidden/dining_room/interactions/poltergust/dishes_4",
+		"luigis_mansion:room/hidden/dining_room/interactions/poltergust/dishes_5",
+		"luigis_mansion:room/hidden/dining_room/interactions/poltergust/dishes_6",
+		"luigis_mansion:room/hidden/dining_room/interactions/poltergust/dishes_7",
+		"luigis_mansion:room/hidden/dining_room/interactions/poltergust/fire_1",
+		"luigis_mansion:room/hidden/dining_room/interactions/poltergust/fire_2",
+		"luigis_mansion:room/hidden/dining_room/interactions/poltergust/food",
+		"luigis_mansion:room/hidden/dining_room/interactions/poltergust/painting_1",
+		"luigis_mansion:room/hidden/dining_room/interactions/poltergust/painting_2",
+		"luigis_mansion:room/hidden/dining_room/interactions/poltergust/painting_3",
+		"luigis_mansion:room/hidden/dining_room/interactions/poltergust/painting_4",
+		"luigis_mansion:room/hidden/dining_room/interactions/poltergust/table",
+		"luigis_mansion:room/hidden/dining_room/interactions/poltergust/torch_1",
+		"luigis_mansion:room/hidden/dining_room/interactions/poltergust/torch_2",
+		"luigis_mansion:room/hidden/dining_room/interactions/poltergust/vacuumable_1",
+		"luigis_mansion:room/hidden/dining_room/interactions/poltergust/vacuumable_2"
+	]
+}

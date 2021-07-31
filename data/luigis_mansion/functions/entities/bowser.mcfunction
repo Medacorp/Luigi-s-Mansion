@@ -1,1 +1,0 @@
-execute if entity @s[tag=bowser] run function luigis_mansion:entities/bowser/tick

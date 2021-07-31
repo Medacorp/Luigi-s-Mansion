@@ -1,0 +1,1 @@
+scoreboard players reset #rec_room_lamp_1

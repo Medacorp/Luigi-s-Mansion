@@ -1,1 +1,0 @@
-execute positioned 484 37 -2 run function luigis_mansion:room/hidden/king_boo_battle/spawn_pillar

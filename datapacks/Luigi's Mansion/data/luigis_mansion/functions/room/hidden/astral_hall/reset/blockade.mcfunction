@@ -1,0 +1,1 @@
+function luigis_mansion:room/hidden/astral_hall/remove_blockade

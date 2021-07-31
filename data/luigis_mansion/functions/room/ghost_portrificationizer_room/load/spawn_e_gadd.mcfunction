@@ -1,3 +1,0 @@
-execute if data storage luigis_mansion:data {found_e_gadd:1b} positioned 774 77 14 unless entity @e[distance=..0.7,tag=e_gadd,limit=1] run function luigis_mansion:spawn_entities/e_gadd
-execute if data storage luigis_mansion:data current_state.current_data.portrait_ghosts.king_boo{health:0,portrificationized:0b} positioned 774 77 14 run tag @e[distance=..0.7,tag=e_gadd,limit=1] add ending_dialog
-execute unless data storage luigis_mansion:data current_state.current_data.portrait_ghosts.king_boo{health:0,portrificationized:0b} if entity @a[nbt={Inventory:[{id:"minecraft:painting",tag:{CustomModelData:1}}]}] positioned 774 77 14 run tag @e[distance=..0.7,tag=e_gadd,limit=1] add mario_to_normal

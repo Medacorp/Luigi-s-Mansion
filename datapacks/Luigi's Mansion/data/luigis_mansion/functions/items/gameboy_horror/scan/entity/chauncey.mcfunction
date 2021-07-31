@@ -1,0 +1,2 @@
+execute if entity @s[tag=chauncey,tag=sleep,tag=!fight] run tellraw @a {"translate":"chat.type.text","with":[{"translate":"luigis_mansion:entity.chauncey","color":"green"},{"translate":"luigis_mansion:message.chauncey.scan.1"}]}
+execute if entity @s[tag=chauncey,tag=!sleep,tag=!fight] run tellraw @a {"translate":"chat.type.text","with":[{"translate":"luigis_mansion:entity.chauncey","color":"green"},{"translate":"luigis_mansion:message.chauncey.scan.2"}]}

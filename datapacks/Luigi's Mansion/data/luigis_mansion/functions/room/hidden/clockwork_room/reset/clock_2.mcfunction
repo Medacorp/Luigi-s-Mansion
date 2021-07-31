@@ -1,0 +1,1 @@
+scoreboard players reset #clockwork_room_clock_2

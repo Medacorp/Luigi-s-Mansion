@@ -1,0 +1,2 @@
+execute if entity @s[x=700.0,y=13,z=69.0,dx=0,dy=0,dz=1,tag=fire] run scoreboard players set #kitchen_ice Searched 1
+execute if entity @s[x=700.0,y=13,z=69.0,dx=0,dy=0,dz=1,tag=ice] run scoreboard players reset #kitchen_ice Searched

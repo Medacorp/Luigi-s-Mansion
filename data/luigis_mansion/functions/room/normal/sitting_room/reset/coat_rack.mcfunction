@@ -1,1 +1,0 @@
-scoreboard players reset #sitting_room_coat_rack

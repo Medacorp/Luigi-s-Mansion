@@ -1,1 +1,0 @@
-fill 750 12 6 751 22 7 minecraft:stone_button[face=floor,powered=false] replace minecraft:stone_button[face=floor,powered=true]

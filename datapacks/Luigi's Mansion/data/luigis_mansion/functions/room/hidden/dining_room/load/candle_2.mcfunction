@@ -1,0 +1,1 @@
+execute positioned 704 13 -25 run function luigis_mansion:spawn_furniture/1_lit_candle

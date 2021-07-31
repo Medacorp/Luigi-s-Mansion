@@ -1,1 +1,0 @@
-fill 3684 10 -16 3655 10 -20 minecraft:lime_concrete

@@ -1,0 +1,2 @@
+data modify entity @e[tag=this_model,tag=neville_right_arm,limit=1] ArmorItems[3] set value {id:"minecraft:diamond_pickaxe",Count:1b,tag:{Unbreakable:1b,Damage:2,CustomModelData:6}}
+data modify entity @e[tag=this_model,tag=neville_left_arm,limit=1] ArmorItems[3] set value {id:"minecraft:diamond_pickaxe",Count:1b,tag:{Unbreakable:1b,Damage:3,CustomModelData:6}}

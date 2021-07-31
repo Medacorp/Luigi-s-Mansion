@@ -1,1 +1,0 @@
-function luigis_mansion:room/hidden/ceramics_studio/remove_blockade

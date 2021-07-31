@@ -1,0 +1,27 @@
+{
+    "values": [
+        "luigis_mansion:room/hidden/kitchen/reset/unload",
+        "#luigis_mansion:room/hidden/kitchen/turn_lights/off",
+        "luigis_mansion:room/hidden/kitchen/reset/chest",
+        "luigis_mansion:room/hidden/kitchen/reset/closet",
+        "luigis_mansion:room/hidden/kitchen/reset/dish_washer",
+        "luigis_mansion:room/hidden/kitchen/reset/fire",
+        "luigis_mansion:room/hidden/kitchen/reset/fridge",
+        "luigis_mansion:room/hidden/kitchen/reset/ice",
+        "luigis_mansion:room/hidden/kitchen/reset/oven",
+        "luigis_mansion:room/hidden/kitchen/reset/lamp_1",
+        "luigis_mansion:room/hidden/kitchen/reset/lamp_2",
+        "luigis_mansion:room/hidden/kitchen/reset/painting_1",
+        "luigis_mansion:room/hidden/kitchen/reset/painting_2",
+        "luigis_mansion:room/hidden/kitchen/reset/painting_3",
+        "luigis_mansion:room/hidden/kitchen/reset/shelf_1",
+        "luigis_mansion:room/hidden/kitchen/reset/shelf_2",
+        "luigis_mansion:room/hidden/kitchen/reset/shelf_3",
+        "luigis_mansion:room/hidden/kitchen/reset/shelf_4",
+        "luigis_mansion:room/hidden/kitchen/reset/shelf_5",
+        "luigis_mansion:room/hidden/kitchen/reset/table",
+        "luigis_mansion:room/hidden/kitchen/reset/tool_rack",
+        "luigis_mansion:room/hidden/kitchen/reset/vacuumable",
+        "luigis_mansion:room/hidden/kitchen/reset/water"
+    ]
+}

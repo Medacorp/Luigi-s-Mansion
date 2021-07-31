@@ -1,0 +1,1 @@
+execute if entity @s[tag=spooky] run function luigis_mansion:entities/spooky/tick

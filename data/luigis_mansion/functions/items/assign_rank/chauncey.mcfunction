@@ -1,3 +1,0 @@
-execute if entity @s[tag=chauncey] store result score #temp ActionTime run data get storage luigis_mansion:data current_state.current_data.portrait_ghosts.chauncey.rank
-execute if entity @s[tag=chauncey] if score #temp Time > #temp ActionTime store result storage luigis_mansion:data current_state.current_data.portrait_ghosts.chauncey.rank byte 1 run scoreboard players get #temp Time
-scoreboard players reset #temp ActionTime

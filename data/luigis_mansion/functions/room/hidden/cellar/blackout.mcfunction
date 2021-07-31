@@ -1,1 +1,0 @@
-scoreboard players set #cellar Wave 100

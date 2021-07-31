@@ -1,0 +1,14 @@
+data/command_storage_*
+data/scoreboard.dat
+data/raids.dat
+datapacks/Luigi's Beta Mansion
+datapacks/Luigi's Mansion 3DS Remake
+DIM1
+DIM-1
+dimensions/luigis_beta_mansion
+dimensions/*/*/data/raids.dat
+dimensions/*/*/poi
+poi
+level.dat
+*_old
+session.lock

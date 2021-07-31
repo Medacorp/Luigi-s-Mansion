@@ -1,1 +1,0 @@
-execute if data storage luigis_mansion:data {found_e_gadd:1b} positioned 788 77 17 unless entity @e[distance=..0.7,tag=e_gadd,limit=1] run function luigis_mansion:spawn_entities/e_gadd

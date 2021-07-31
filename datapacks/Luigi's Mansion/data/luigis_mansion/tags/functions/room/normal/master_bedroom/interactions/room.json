@@ -1,0 +1,20 @@
+{
+	"values": [
+		"luigis_mansion:room/normal/master_bedroom/interactions/room/bed",
+		"luigis_mansion:room/normal/master_bedroom/interactions/room/chair",
+		"luigis_mansion:room/normal/master_bedroom/interactions/room/chest",
+		"luigis_mansion:room/normal/master_bedroom/interactions/room/curtain_1",
+		"luigis_mansion:room/normal/master_bedroom/interactions/room/curtain_2",
+		"luigis_mansion:room/normal/master_bedroom/interactions/room/fan",
+		"luigis_mansion:room/normal/master_bedroom/interactions/room/mirror",
+		"luigis_mansion:room/normal/master_bedroom/interactions/room/painting_1",
+		"luigis_mansion:room/normal/master_bedroom/interactions/room/painting_2",
+		"luigis_mansion:room/normal/master_bedroom/interactions/room/painting_3",
+		"luigis_mansion:room/normal/master_bedroom/interactions/room/painting_4",
+		"luigis_mansion:room/normal/master_bedroom/interactions/room/painting_5",
+		"luigis_mansion:room/normal/master_bedroom/interactions/room/plant",
+		"luigis_mansion:room/normal/master_bedroom/interactions/room/table_1",
+		"luigis_mansion:room/normal/master_bedroom/interactions/room/table_2",
+		"luigis_mansion:room/normal/master_bedroom/interactions/room/vacuumable"
+	]
+}

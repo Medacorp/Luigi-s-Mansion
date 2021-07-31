@@ -1,1 +1,0 @@
-scoreboard players reset #bottom_of_the_well_lamp

@@ -1,0 +1,23 @@
+{
+    "display": {
+        "icon": {
+            "item": "minecraft:diamond_pickaxe",
+			"nbt": "{Unbreakable:1b,Damage:1,CustomModelData:4}"
+        },
+        "show_toast": false,
+        "hidden": true,
+        "frame": "goal",
+        "title": {
+            "translate": "luigis_mansion:advancements.lab.cleared_mansion"
+        },
+        "description": {
+            "translate": "luigis_mansion:advancements.lab.cleared_mansion.description"
+        }
+    },
+	"parent": "luigis_mansion:lab/underground_lab",
+    "criteria": {
+        "cleared": {
+            "trigger": "minecraft:impossible"
+        }
+    }
+}

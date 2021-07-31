@@ -1,1 +1,0 @@
-scoreboard players set #butlers_room Ticking 1

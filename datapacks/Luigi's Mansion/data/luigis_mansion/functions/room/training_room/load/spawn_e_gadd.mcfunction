@@ -1,0 +1,2 @@
+execute positioned 795.0 75 -8.0 unless entity @e[distance=..0.7,tag=e_gadd,limit=1] run scoreboard players set #training_room GhostCaught 0
+execute positioned 795.0 75 -8.0 unless entity @e[distance=..0.7,tag=e_gadd,limit=1] run function luigis_mansion:spawn_entities/e_gadd

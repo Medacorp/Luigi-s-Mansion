@@ -1,0 +1,1 @@
+execute unless score #laundry_room FakeDoors matches 1 run function luigis_mansion:room/normal/laundry_room/fake_doors

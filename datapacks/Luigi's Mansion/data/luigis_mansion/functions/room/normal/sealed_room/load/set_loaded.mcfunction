@@ -1,0 +1,1 @@
+scoreboard players set #sealed_room Ticking 1

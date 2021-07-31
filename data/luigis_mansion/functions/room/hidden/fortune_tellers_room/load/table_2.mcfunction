@@ -1,1 +1,0 @@
-execute positioned 741 12 44 run function luigis_mansion:spawn_furniture/crystal_ball

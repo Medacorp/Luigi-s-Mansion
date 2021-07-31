@@ -1,0 +1,1 @@
+function luigis_mansion:room/hidden/sitting_room/remove_blockade

@@ -1,1 +1,0 @@
-function #luigis_mansion:room/normal/king_boo_battle/reset

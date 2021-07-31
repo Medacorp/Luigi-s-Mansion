@@ -1,2 +1,0 @@
-execute if entity @s[tag=purple_bomber,tag=!hidden] run function luigis_mansion:entities/purple_bomber/tick
-execute if entity @s[tag=purple_bomber,tag=hidden] run function luigis_mansion:entities/purple_bomber/hidden_tick

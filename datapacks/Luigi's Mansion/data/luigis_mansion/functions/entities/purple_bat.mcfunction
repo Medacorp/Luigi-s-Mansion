@@ -1,0 +1,1 @@
+execute if entity @s[tag=purple_bat] run function luigis_mansion:entities/purple_bat/tick

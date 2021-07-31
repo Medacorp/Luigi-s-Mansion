@@ -1,2 +1,0 @@
-execute if score #mirrored Selected matches 0 run function luigis_mansion:animations/biff_atlas/normal/strech_neck
-execute if score #mirrored Selected matches 1 run function luigis_mansion:animations/biff_atlas/mirrored/strech_neck

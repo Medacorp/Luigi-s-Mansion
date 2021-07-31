@@ -1,0 +1,2 @@
+execute if entity @s[x=738.5,y=2,z=16.5,distance=..0.7,tag=water] run scoreboard players set #cold_storage_fire Searched 1
+execute if entity @s[x=738.5,y=2,z=16.5,distance=..0.7,tag=fire] run scoreboard players reset #cold_storage_fire Searched

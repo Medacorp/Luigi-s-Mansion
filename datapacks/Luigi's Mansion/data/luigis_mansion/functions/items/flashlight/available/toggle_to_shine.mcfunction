@@ -1,0 +1,1 @@
+tellraw @s {"translate":"luigis_mansion:message.flashlight_type.toggle","color":"green","clickEvent":{"action":"run_command","value":"/trigger FlashlightType set -2"}}

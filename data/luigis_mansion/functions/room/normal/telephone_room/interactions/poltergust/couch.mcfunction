@@ -1,1 +1,0 @@
-execute if entity @s[x=742.0,y=29,z=27.0,dx=2,dy=0,dz=2,tag=vacuum] if block ~ ~ ~ minecraft:cobblestone_stairs unless score #telephone_room_couch Search matches 1 store success score #telephone_room_couch Search run scoreboard players add #telephone_room_couch Searching 1

@@ -1,0 +1,2 @@
+execute if entity @s[scores={Room=26},tag=!kitchen_waiter] run function luigis_mansion:entities/waiter/normal/path/dining_room_1
+execute if entity @s[scores={Room=26},tag=kitchen_waiter] run function luigis_mansion:entities/waiter/normal/path/dining_room_2

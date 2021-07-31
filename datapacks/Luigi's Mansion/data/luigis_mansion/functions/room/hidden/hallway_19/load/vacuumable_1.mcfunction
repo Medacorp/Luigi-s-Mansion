@@ -1,0 +1,1 @@
+setblock 741 34 -31 minecraft:cobweb

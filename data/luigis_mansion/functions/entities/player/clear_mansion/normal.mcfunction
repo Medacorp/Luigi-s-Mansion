@@ -1,2 +1,0 @@
-execute if score #mansion_type Selected matches 0 run advancement grant @a only luigis_mansion:lab/cleared_mansion
-execute if score #mansion_type Selected matches 0 run advancement grant @a only luigis_mansion:lab/unlocked_hidden_mansion

@@ -1,0 +1,1 @@
+scoreboard players reset #anteroom_lamp_2

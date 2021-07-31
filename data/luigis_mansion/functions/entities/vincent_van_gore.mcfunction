@@ -1,1 +1,0 @@
-execute if entity @s[tag=vincent_van_gore] run function luigis_mansion:entities/vincent_van_gore/tick

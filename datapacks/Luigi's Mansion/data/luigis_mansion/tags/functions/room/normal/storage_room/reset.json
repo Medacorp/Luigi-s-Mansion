@@ -1,0 +1,25 @@
+{
+    "values": [
+        "luigis_mansion:room/normal/storage_room/reset/unload",
+        "#luigis_mansion:room/normal/storage_room/turn_lights/off",
+        "luigis_mansion:room/normal/storage_room/reset/revert_wall",
+        "luigis_mansion:room/normal/storage_room/reset/bucket",
+        "luigis_mansion:room/normal/storage_room/reset/chair",
+        "luigis_mansion:room/normal/storage_room/reset/chairs",
+        "luigis_mansion:room/normal/storage_room/reset/crate_1",
+        "luigis_mansion:room/normal/storage_room/reset/crate_2",
+        "luigis_mansion:room/normal/storage_room/reset/crate_3",
+        "luigis_mansion:room/normal/storage_room/reset/crate_4",
+        "luigis_mansion:room/normal/storage_room/reset/crate_5",
+        "luigis_mansion:room/normal/storage_room/reset/crate_6",
+        "luigis_mansion:room/normal/storage_room/reset/crate_7",
+        "luigis_mansion:room/normal/storage_room/reset/crate_8",
+        "luigis_mansion:room/normal/storage_room/reset/lamp_1",
+        "luigis_mansion:room/normal/storage_room/reset/lamp_2",
+        "luigis_mansion:room/normal/storage_room/reset/lamp_3",
+        "luigis_mansion:room/normal/storage_room/reset/lamp_4",
+        "luigis_mansion:room/normal/storage_room/reset/lamp_5",
+        "luigis_mansion:room/normal/storage_room/reset/mirror",
+        "luigis_mansion:room/normal/storage_room/reset/vacuumable"
+    ]
+}

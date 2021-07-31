@@ -1,1 +1,0 @@
-setblock 744 24 63 minecraft:stone_button[face=ceiling,powered=true]

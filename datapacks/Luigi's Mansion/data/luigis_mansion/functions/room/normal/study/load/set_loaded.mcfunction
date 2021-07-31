@@ -1,0 +1,1 @@
+scoreboard players set #study Ticking 1

@@ -1,0 +1,1 @@
+execute if entity @s[x=660.0,y=11,z=24.0,dx=1,dy=1,dz=1,tag=vacuum] unless score #conservatory_cello Search matches 1 store success score #conservatory_cello Search run scoreboard players add #conservatory_cello Searching 1

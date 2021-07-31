@@ -1,0 +1,16 @@
+execute unless score #fortune_tellers_room Ticking matches 1 run function #luigis_mansion:room/hidden/fortune_tellers_room/load
+execute as @a[gamemode=!spectator,x=734,y=10,z=34,dx=14,dy=8,dz=20] unless entity @s[scores={Room=20}] run scoreboard players operation @s LastRoom = @s Room
+execute as @e[type=!minecraft:item_frame,x=734,y=10,z=34,dx=14,dy=8,dz=20] run scoreboard players set @s Room 20
+
+execute as @a[gamemode=!spectator,scores={Room=20}] run function luigis_mansion:room/normal/fortune_tellers_room/tick_per_player
+
+function #luigis_mansion:room/hidden/fortune_tellers_room/interactions/room
+
+execute if block 746 13 52 minecraft:brewing_stand[has_bottle_0=true,has_bottle_1=true,has_bottle_2=true] if block 736 13 52 minecraft:brewing_stand[has_bottle_0=true,has_bottle_1=true,has_bottle_2=true] if block 736 13 36 minecraft:brewing_stand[has_bottle_0=true,has_bottle_1=true,has_bottle_2=true] if block 746 13 36 minecraft:brewing_stand[has_bottle_0=true,has_bottle_1=true,has_bottle_2=true] unless entity @e[type=minecraft:armor_stand,tag=key,tag=laundry_room,limit=1] unless data storage luigis_mansion:data current_state.current_data.obtained_keys{laundry_room:1b} run playsound luigis_mansion:music.solve_puzzle music @a[scores={Room=16}] ~ ~ ~ 10000 
+execute if block 746 13 52 minecraft:brewing_stand[has_bottle_0=true,has_bottle_1=true,has_bottle_2=true] if block 736 13 52 minecraft:brewing_stand[has_bottle_0=true,has_bottle_1=true,has_bottle_2=true] if block 736 13 36 minecraft:brewing_stand[has_bottle_0=true,has_bottle_1=true,has_bottle_2=true] if block 746 13 36 minecraft:brewing_stand[has_bottle_0=true,has_bottle_1=true,has_bottle_2=true] unless entity @e[type=minecraft:armor_stand,tag=key,tag=laundry_room,limit=1] unless data storage luigis_mansion:data current_state.current_data.obtained_keys{laundry_room:1b} run scoreboard players set @a[scores={Room=16,Music=..30}] Music 30
+execute if block 746 13 52 minecraft:brewing_stand[has_bottle_0=true,has_bottle_1=true,has_bottle_2=true] if block 736 13 52 minecraft:brewing_stand[has_bottle_0=true,has_bottle_1=true,has_bottle_2=true] if block 736 13 36 minecraft:brewing_stand[has_bottle_0=true,has_bottle_1=true,has_bottle_2=true] if block 746 13 36 minecraft:brewing_stand[has_bottle_0=true,has_bottle_1=true,has_bottle_2=true] unless entity @e[type=minecraft:armor_stand,tag=key,tag=laundry_room,limit=1] unless data storage luigis_mansion:data current_state.current_data.obtained_keys{laundry_room:1b} run summon minecraft:armor_stand 744 17 49 {CustomName:'{"translate":"luigis_mansion:item.key"}',Pose:{Head:[0.0f,0.0f,0.01f]},Marker:1b,Invisible:1b,Silent:1b,ArmorItems:[{},{},{},{id:"minecraft:diamond_pickaxe",Count:1b,tag:{Unbreakable:1b,Damage:5,CustomModelData:15}}],Small:1b,Tags:["item","key","eternal","laundry_room","no_spawn_sound"],DisabledSlots:2039583}
+
+function luigis_mansion:room/hidden/fortune_tellers_room/ghosts
+
+function luigis_mansion:room/hidden/door/hallway_3_fortune_tellers_room
+function luigis_mansion:room/hidden/door/fortune_tellers_room_mirror_room

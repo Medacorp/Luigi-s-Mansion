@@ -1,2 +1,0 @@
-execute if entity @s[tag=speedy_spirit,tag=!hidden] run function luigis_mansion:entities/speedy_spirit/tick
-execute if entity @s[tag=speedy_spirit,tag=hidden] run function luigis_mansion:entities/speedy_spirit/hidden_tick

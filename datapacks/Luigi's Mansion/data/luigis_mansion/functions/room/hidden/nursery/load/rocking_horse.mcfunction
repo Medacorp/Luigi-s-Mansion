@@ -1,0 +1,1 @@
+execute positioned 748 20 -55 rotated -135 0 run function luigis_mansion:spawn_furniture/rocking_horse

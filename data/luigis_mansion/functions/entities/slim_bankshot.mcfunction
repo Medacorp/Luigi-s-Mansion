@@ -1,1 +1,0 @@
-execute if entity @s[tag=slim_bankshot] run function luigis_mansion:entities/slim_bankshot/tick

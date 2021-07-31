@@ -1,0 +1,14 @@
+{
+	"values": [
+		"luigis_mansion:room/hidden/fortune_tellers_room/interactions/room/candle_1",
+		"luigis_mansion:room/hidden/fortune_tellers_room/interactions/room/candle_2",
+		"luigis_mansion:room/hidden/fortune_tellers_room/interactions/room/chair",
+		"luigis_mansion:room/hidden/fortune_tellers_room/interactions/room/chest",
+		"luigis_mansion:room/hidden/fortune_tellers_room/interactions/room/pillar_1",
+		"luigis_mansion:room/hidden/fortune_tellers_room/interactions/room/pillar_2",
+		"luigis_mansion:room/hidden/fortune_tellers_room/interactions/room/table_1",
+		"luigis_mansion:room/hidden/fortune_tellers_room/interactions/room/table_2",
+		"luigis_mansion:room/hidden/fortune_tellers_room/interactions/room/table_3",
+		"luigis_mansion:room/hidden/fortune_tellers_room/interactions/room/vacuumable"
+	]
+}

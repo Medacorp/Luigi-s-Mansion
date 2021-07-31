@@ -1,1 +1,0 @@
-scoreboard players set #projection_room Ticking 1

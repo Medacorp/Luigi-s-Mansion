@@ -1,1 +1,0 @@
-execute if entity @a[tag=this_player,limit=1,nbt={Dimension:"luigis_mansion:hidden"}] positioned ~3000 ~ ~ run function luigis_mansion:entities/gameboy_horror_marker/teleport/hidden

@@ -1,1 +1,0 @@
-execute if entity @s[x=751.0,y=22,z=7.0,distance=..3,tag=vacuum] unless entity @e[tag=chandelier,limit=1] unless score #foyer_chandelier Search matches 1 store success score #foyer_chandelier Search run scoreboard players add #foyer_chandelier Searching 1

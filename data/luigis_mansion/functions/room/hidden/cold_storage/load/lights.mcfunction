@@ -1,1 +1,0 @@
-execute if data storage luigis_mansion:data current_state.current_data.rooms.cold_storage{cleared:1b} if entity @a[tag=!blackout] run function luigis_mansion:room/hidden/cold_storage/turn_on_lights

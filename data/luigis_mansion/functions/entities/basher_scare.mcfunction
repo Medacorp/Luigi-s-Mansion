@@ -1,1 +1,0 @@
-execute if entity @s[tag=basher_scare] run function luigis_mansion:entities/basher_scare/tick

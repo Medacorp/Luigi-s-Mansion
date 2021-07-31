@@ -1,0 +1,22 @@
+{
+	"values": [
+		"luigis_mansion:room/normal/safari_room/interactions/room/chair",
+		"luigis_mansion:room/normal/safari_room/interactions/room/chest",
+		"luigis_mansion:room/normal/safari_room/interactions/room/crate_1",
+		"luigis_mansion:room/normal/safari_room/interactions/room/crate_2",
+		"luigis_mansion:room/normal/safari_room/interactions/room/crate_3",
+		"luigis_mansion:room/normal/safari_room/interactions/room/crate_4",
+		"luigis_mansion:room/normal/safari_room/interactions/room/crate_5",
+		"luigis_mansion:room/normal/safari_room/interactions/room/crate_6",
+		"luigis_mansion:room/normal/safari_room/interactions/room/deer_head_1",
+		"luigis_mansion:room/normal/safari_room/interactions/room/deer_head_2",
+		"luigis_mansion:room/normal/safari_room/interactions/room/deer_head_3",
+		"luigis_mansion:room/normal/safari_room/interactions/room/lamp_1",
+		"luigis_mansion:room/normal/safari_room/interactions/room/lamp_2",
+		"luigis_mansion:room/normal/safari_room/interactions/room/mirror",
+		"luigis_mansion:room/normal/safari_room/interactions/room/shelf_1",
+		"luigis_mansion:room/normal/safari_room/interactions/room/shelf_2",
+		"luigis_mansion:room/normal/safari_room/interactions/room/table",
+		"luigis_mansion:room/normal/safari_room/interactions/room/vacuumable"
+	]
+}

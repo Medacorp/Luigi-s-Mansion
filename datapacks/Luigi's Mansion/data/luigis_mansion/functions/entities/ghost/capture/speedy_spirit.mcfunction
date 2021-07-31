@@ -1,0 +1,1 @@
+execute if entity @s[tag=speedy_spirit] run function luigis_mansion:entities/ghost/capture/caught/speedy_spirit

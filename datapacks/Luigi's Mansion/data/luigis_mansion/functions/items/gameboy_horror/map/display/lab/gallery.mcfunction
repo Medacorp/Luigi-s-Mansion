@@ -1,0 +1,12 @@
+execute if data storage luigis_mansion:data rooms.gallery{seen:0b} run fill 4777 100 -17 4765 100 -40 minecraft:gray_concrete
+execute if data storage luigis_mansion:data rooms.gallery{seen:0b} run fill 4764 100 -35 4744 100 -31 minecraft:gray_concrete
+execute if data storage luigis_mansion:data rooms.gallery{seen:0b} run fill 4764 100 -26 4744 100 -22 minecraft:gray_concrete
+execute if data storage luigis_mansion:data rooms.gallery{seen:0b} run fill 4741 100 -21 4729 100 -36 minecraft:gray_concrete
+execute if data storage luigis_mansion:data rooms.gallery{seen:1b,cleared:0b} run fill 4777 100 -17 4765 100 -40 minecraft:light_gray_concrete
+execute if data storage luigis_mansion:data rooms.gallery{seen:1b,cleared:0b} run fill 4764 100 -35 4744 100 -31 minecraft:light_gray_concrete
+execute if data storage luigis_mansion:data rooms.gallery{seen:1b,cleared:0b} run fill 4764 100 -26 4744 100 -22 minecraft:light_gray_concrete
+execute if data storage luigis_mansion:data rooms.gallery{seen:1b,cleared:0b} run fill 4741 100 -21 4729 100 -36 minecraft:light_gray_concrete
+execute if data storage luigis_mansion:data rooms.gallery{cleared:1b} run fill 4777 100 -17 4765 100 -40 minecraft:white_concrete
+execute if data storage luigis_mansion:data rooms.gallery{cleared:1b} run fill 4764 100 -35 4744 100 -31 minecraft:white_concrete
+execute if data storage luigis_mansion:data rooms.gallery{cleared:1b} run fill 4764 100 -26 4744 100 -22 minecraft:white_concrete
+execute if data storage luigis_mansion:data rooms.gallery{cleared:1b} run fill 4741 100 -21 4729 100 -36 minecraft:white_concrete

@@ -1,0 +1,1 @@
+execute if entity @s[tag=reflection] run function luigis_mansion:entities/reflection/tick

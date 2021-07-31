@@ -1,0 +1,16 @@
+{
+    "values": [
+        "luigis_mansion:room/hidden/astral_hall/reset/unload",
+        "#luigis_mansion:room/hidden/astral_hall/turn_lights/off",
+        "luigis_mansion:room/hidden/astral_hall/reset/blockade",
+        "luigis_mansion:room/hidden/astral_hall/reset/candle_1",
+        "luigis_mansion:room/hidden/astral_hall/reset/candle_2",
+        "luigis_mansion:room/hidden/astral_hall/reset/candle_3",
+        "luigis_mansion:room/hidden/astral_hall/reset/candle_4",
+        "luigis_mansion:room/hidden/astral_hall/reset/candle_5",
+        "luigis_mansion:room/hidden/astral_hall/reset/lamp",
+        "luigis_mansion:room/hidden/astral_hall/reset/table_1",
+        "luigis_mansion:room/hidden/astral_hall/reset/table_2",
+        "luigis_mansion:room/hidden/astral_hall/reset/vacuumable"
+    ]
+}

@@ -1,0 +1,31 @@
+{
+	"values": [
+		"luigis_mansion:room/hidden/dining_room/interactions/room/candle_1",
+		"luigis_mansion:room/hidden/dining_room/interactions/room/candle_2",
+		"luigis_mansion:room/hidden/dining_room/interactions/room/chair_1",
+		"luigis_mansion:room/hidden/dining_room/interactions/room/chair_2",
+		"luigis_mansion:room/hidden/dining_room/interactions/room/chair_3",
+		"luigis_mansion:room/hidden/dining_room/interactions/room/chest",
+		"luigis_mansion:room/hidden/dining_room/interactions/room/closet_1",
+		"luigis_mansion:room/hidden/dining_room/interactions/room/closet_2",
+		"luigis_mansion:room/hidden/dining_room/interactions/room/dishes_1",
+		"luigis_mansion:room/hidden/dining_room/interactions/room/dishes_2",
+		"luigis_mansion:room/hidden/dining_room/interactions/room/dishes_3",
+		"luigis_mansion:room/hidden/dining_room/interactions/room/dishes_4",
+		"luigis_mansion:room/hidden/dining_room/interactions/room/dishes_5",
+		"luigis_mansion:room/hidden/dining_room/interactions/room/dishes_6",
+		"luigis_mansion:room/hidden/dining_room/interactions/room/dishes_7",
+		"luigis_mansion:room/hidden/dining_room/interactions/room/fire_1",
+		"luigis_mansion:room/hidden/dining_room/interactions/room/fire_2",
+		"luigis_mansion:room/hidden/dining_room/interactions/room/food",
+		"luigis_mansion:room/hidden/dining_room/interactions/room/painting_1",
+		"luigis_mansion:room/hidden/dining_room/interactions/room/painting_2",
+		"luigis_mansion:room/hidden/dining_room/interactions/room/painting_3",
+		"luigis_mansion:room/hidden/dining_room/interactions/room/painting_4",
+		"luigis_mansion:room/hidden/dining_room/interactions/room/table",
+		"luigis_mansion:room/hidden/dining_room/interactions/room/torch_1",
+		"luigis_mansion:room/hidden/dining_room/interactions/room/torch_2",
+		"luigis_mansion:room/hidden/dining_room/interactions/room/vacuumable_1",
+		"luigis_mansion:room/hidden/dining_room/interactions/room/vacuumable_2"
+	]
+}

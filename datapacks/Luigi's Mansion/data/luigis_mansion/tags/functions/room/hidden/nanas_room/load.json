@@ -1,0 +1,8 @@
+{
+	"values": [
+	    "luigis_mansion:room/hidden/nanas_room/load/set_loaded",
+        "luigis_mansion:room/hidden/nanas_room/load/lights",
+        "luigis_mansion:room/hidden/nanas_room/load/bookshelf",
+        "luigis_mansion:room/hidden/nanas_room/load/closet"
+	]
+}

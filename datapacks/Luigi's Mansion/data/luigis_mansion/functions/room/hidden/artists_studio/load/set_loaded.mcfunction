@@ -1,0 +1,1 @@
+scoreboard players set #artists_studio Ticking 1

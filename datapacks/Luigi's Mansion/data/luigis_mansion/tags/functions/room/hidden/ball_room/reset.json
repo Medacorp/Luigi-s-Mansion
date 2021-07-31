@@ -1,0 +1,21 @@
+{
+    "values": [
+        "luigis_mansion:room/hidden/ball_room/reset/unload",
+        "#luigis_mansion:room/hidden/ball_room/turn_lights/off",
+        "luigis_mansion:room/hidden/ball_room/reset/chair_1",
+        "luigis_mansion:room/hidden/ball_room/reset/chair_2",
+        "luigis_mansion:room/hidden/ball_room/reset/chair_3",
+        "luigis_mansion:room/hidden/ball_room/reset/chair_4",
+        "luigis_mansion:room/hidden/ball_room/reset/chair_5",
+        "luigis_mansion:room/hidden/ball_room/reset/chair_6",
+        "luigis_mansion:room/hidden/ball_room/reset/chair_7",
+        "luigis_mansion:room/hidden/ball_room/reset/chair_8",
+        "luigis_mansion:room/hidden/ball_room/reset/chest",
+        "luigis_mansion:room/hidden/ball_room/reset/lamp_1",
+        "luigis_mansion:room/hidden/ball_room/reset/lamp_2",
+        "luigis_mansion:room/hidden/ball_room/reset/painting_1",
+        "luigis_mansion:room/hidden/ball_room/reset/painting_2",
+        "luigis_mansion:room/hidden/ball_room/reset/painting_3",
+        "luigis_mansion:room/hidden/ball_room/reset/painting_4"
+    ]
+}

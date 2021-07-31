@@ -1,1 +1,0 @@
-execute if data storage luigis_mansion:data current_state.current_data.technical_data{observatory_destroyed:1b} if data storage luigis_mansion:data current_state.current_data.rooms.observatory{cleared:1b} unless data storage luigis_mansion:data current_state.current_data.rooms.secret_altar{cleared:1b} run function luigis_mansion:room/hidden/observatory/create_path

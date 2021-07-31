@@ -1,0 +1,1 @@
+scoreboard players reset #balcony_2_lamp_6

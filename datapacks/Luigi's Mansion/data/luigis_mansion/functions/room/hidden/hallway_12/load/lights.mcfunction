@@ -1,0 +1,1 @@
+execute if data storage luigis_mansion:data current_state.current_data.rooms.hallway_12{cleared:1b} run function luigis_mansion:room/hidden/hallway_12/turn_on_lights

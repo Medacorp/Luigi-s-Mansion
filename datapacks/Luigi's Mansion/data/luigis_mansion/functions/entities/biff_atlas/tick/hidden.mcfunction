@@ -1,0 +1,1 @@
+function luigis_mansion:entities/biff_atlas/tick/normal

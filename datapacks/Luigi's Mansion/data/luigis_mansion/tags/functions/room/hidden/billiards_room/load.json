@@ -1,0 +1,11 @@
+{
+	"values": [
+	    "luigis_mansion:room/hidden/billiards_room/load/set_loaded",
+        "luigis_mansion:room/hidden/billiards_room/load/lights",
+        "luigis_mansion:room/hidden/billiards_room/load/billiard_balls",
+        "luigis_mansion:room/hidden/billiards_room/load/table_1",
+        "luigis_mansion:room/hidden/billiards_room/load/table_2",
+        "luigis_mansion:room/hidden/billiards_room/load/vacuumable_1",
+        "luigis_mansion:room/hidden/billiards_room/load/vacuumable_2"
+	]
+}

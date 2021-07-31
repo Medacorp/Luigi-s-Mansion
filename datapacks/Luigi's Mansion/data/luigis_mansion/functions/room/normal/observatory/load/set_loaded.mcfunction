@@ -1,0 +1,1 @@
+scoreboard players set #observatory Ticking 1

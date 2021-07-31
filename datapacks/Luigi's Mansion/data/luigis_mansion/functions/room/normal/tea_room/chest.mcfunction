@@ -1,0 +1,1 @@
+execute unless data storage luigis_mansion:data current_state.current_data.obtained_items{ice_element_medal:1b} unless entity @e[type=minecraft:armor_stand,tag=element_medal,tag=ice,limit=1] run function luigis_mansion:spawn_entities/item/ice_element_medal

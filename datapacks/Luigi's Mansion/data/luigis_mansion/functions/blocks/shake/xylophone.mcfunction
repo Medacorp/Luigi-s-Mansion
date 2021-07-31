@@ -1,0 +1,1 @@
+playsound luigis_mansion:block.search.xylophone block @a ~ ~ ~ 1

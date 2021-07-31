@@ -1,0 +1,14 @@
+{
+    "values": [
+        "luigis_mansion:room/normal/projection_room/reset/unload",
+        "#luigis_mansion:room/normal/projection_room/turn_lights/off",
+        "luigis_mansion:room/normal/projection_room/reset/chest",
+        "luigis_mansion:room/normal/projection_room/reset/closet",
+        "luigis_mansion:room/normal/projection_room/reset/lamp_1",
+        "luigis_mansion:room/normal/projection_room/reset/lamp_2",
+        "luigis_mansion:room/normal/projection_room/reset/projector",
+        "luigis_mansion:room/normal/projection_room/reset/screen",
+        "luigis_mansion:room/normal/projection_room/reset/speaker_1",
+        "luigis_mansion:room/normal/projection_room/reset/speaker_2"
+    ]
+}

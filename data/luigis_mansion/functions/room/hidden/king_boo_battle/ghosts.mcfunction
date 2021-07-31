@@ -1,2 +1,0 @@
-execute if score #king_boo_battle Wave matches 1 if data storage luigis_mansion:data current_state.current_data.portrait_ghosts.king_boo{health:0} run function luigis_mansion:room/hidden/king_boo_battle/clear
-execute unless data storage luigis_mansion:data current_state.current_data.portrait_ghosts.king_boo{health:0} unless score #king_boo_battle Wave matches 1.. run function luigis_mansion:room/hidden/king_boo_battle/wave_1

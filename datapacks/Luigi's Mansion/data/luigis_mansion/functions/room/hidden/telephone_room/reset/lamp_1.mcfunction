@@ -1,0 +1,1 @@
+scoreboard players reset #telephone_room_lamp_1

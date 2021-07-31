@@ -1,0 +1,2 @@
+execute if entity @s[tag=fight] run function luigis_mansion:entities/boolossus/tick/fight/normal
+execute if entity @s[tag=!fight,tag=!split] run function luigis_mansion:entities/boolossus/tick/balcony/normal

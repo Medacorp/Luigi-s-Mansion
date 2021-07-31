@@ -1,0 +1,1 @@
+execute unless score #hallway_15 FakeDoors matches 1 run function luigis_mansion:room/hidden/hallway_15/fake_doors

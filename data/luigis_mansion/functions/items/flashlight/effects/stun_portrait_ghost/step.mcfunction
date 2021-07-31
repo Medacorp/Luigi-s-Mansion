@@ -1,3 +1,0 @@
-execute as @e[distance=..3,tag=portrait_ghost,tag=!vanish,tag=!appear,tag=!hurt_animation,tag=!hurt,tag=!stun_immune,scores={StunTime=0,VulnerableTime=1..}] at @s run function luigis_mansion:items/flashlight/effects/stun_portrait_ghost/effect
-scoreboard players add #temp PathStep 1
-execute unless score #temp PathStep matches 5 positioned ^ ^ ^1 if block ~ ~ ~ #luigis_mansion:flashlight_path run function luigis_mansion:items/flashlight/effects/stun_portrait_ghost/step

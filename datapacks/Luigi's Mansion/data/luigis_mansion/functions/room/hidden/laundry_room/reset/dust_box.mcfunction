@@ -1,0 +1,1 @@
+scoreboard players reset #laundry_room_dust_box

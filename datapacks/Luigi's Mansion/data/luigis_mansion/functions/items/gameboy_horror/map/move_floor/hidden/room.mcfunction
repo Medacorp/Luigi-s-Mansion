@@ -1,0 +1,1 @@
+function luigis_mansion:items/gameboy_horror/map/move_floor/normal/room

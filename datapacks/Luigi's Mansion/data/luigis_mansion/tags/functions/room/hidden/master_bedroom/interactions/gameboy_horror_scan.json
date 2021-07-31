@@ -1,0 +1,16 @@
+{
+	"values": [
+		"luigis_mansion:room/hidden/master_bedroom/interactions/gameboy_horror_scan/bed",
+		"luigis_mansion:room/hidden/master_bedroom/interactions/gameboy_horror_scan/chair",
+		"luigis_mansion:room/hidden/master_bedroom/interactions/gameboy_horror_scan/fan",
+		"luigis_mansion:room/hidden/master_bedroom/interactions/gameboy_horror_scan/mirror",
+		"luigis_mansion:room/hidden/master_bedroom/interactions/gameboy_horror_scan/painting_1",
+		"luigis_mansion:room/hidden/master_bedroom/interactions/gameboy_horror_scan/painting_2",
+		"luigis_mansion:room/hidden/master_bedroom/interactions/gameboy_horror_scan/painting_3",
+		"luigis_mansion:room/hidden/master_bedroom/interactions/gameboy_horror_scan/painting_4",
+		"luigis_mansion:room/hidden/master_bedroom/interactions/gameboy_horror_scan/painting_5",
+		"luigis_mansion:room/hidden/master_bedroom/interactions/gameboy_horror_scan/plant",
+		"luigis_mansion:room/hidden/master_bedroom/interactions/gameboy_horror_scan/table_1",
+		"luigis_mansion:room/hidden/master_bedroom/interactions/gameboy_horror_scan/table_2"
+	]
+}

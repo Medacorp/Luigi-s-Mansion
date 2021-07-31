@@ -1,1 +1,0 @@
-execute if entity @s[tag=element_medal] run function luigis_mansion:entities/item/physics

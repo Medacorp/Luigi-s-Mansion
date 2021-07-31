@@ -1,3 +1,0 @@
-execute if data storage luigis_mansion:data rooms.ghost_portrificationizer_room{seen:0b} run fill 4777 100 -14 4765 100 22 minecraft:gray_concrete
-execute if data storage luigis_mansion:data rooms.ghost_portrificationizer_room{seen:1b,cleared:0b} run fill 4777 100 -14 4765 100 22 minecraft:light_gray_concrete
-execute if data storage luigis_mansion:data rooms.ghost_portrificationizer_room{cleared:1b} run fill 4777 100 -14 4765 100 22 minecraft:white_concrete

@@ -1,1 +1,0 @@
-scoreboard players reset #balcony_2_bench_1

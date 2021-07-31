@@ -1,1 +1,0 @@
-scoreboard players set #telephone_room Ticking 1

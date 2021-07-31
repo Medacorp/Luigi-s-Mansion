@@ -1,0 +1,26 @@
+{
+    "values": [
+        "luigis_mansion:room/hidden/hidden_room/reset/unload",
+        "#luigis_mansion:room/hidden/hidden_room/turn_lights/off",
+        "luigis_mansion:room/hidden/hidden_room/reset/candle_1",
+        "luigis_mansion:room/hidden/hidden_room/reset/candle_2",
+        "luigis_mansion:room/hidden/hidden_room/reset/chest_1",
+        "luigis_mansion:room/hidden/hidden_room/reset/chest_2",
+        "luigis_mansion:room/hidden/hidden_room/reset/chest_3",
+        "luigis_mansion:room/hidden/hidden_room/reset/chest_4",
+        "luigis_mansion:room/hidden/hidden_room/reset/chest_5",
+        "luigis_mansion:room/hidden/hidden_room/reset/chest_6",
+        "luigis_mansion:room/hidden/hidden_room/reset/chest_7",
+        "luigis_mansion:room/hidden/hidden_room/reset/chest_8",
+        "luigis_mansion:room/hidden/hidden_room/reset/hole",
+        "luigis_mansion:room/hidden/hidden_room/reset/lamp",
+        "luigis_mansion:room/hidden/hidden_room/reset/mirror",
+        "luigis_mansion:room/hidden/hidden_room/reset/painting_1",
+        "luigis_mansion:room/hidden/hidden_room/reset/painting_2",
+        "luigis_mansion:room/hidden/hidden_room/reset/painting_3",
+        "luigis_mansion:room/hidden/hidden_room/reset/painting_4",
+        "luigis_mansion:room/hidden/hidden_room/reset/painting_5",
+        "luigis_mansion:room/hidden/hidden_room/reset/trophy_1",
+        "luigis_mansion:room/hidden/hidden_room/reset/trophy_2"
+    ]
+}

@@ -1,0 +1,1 @@
+execute if score @s Room = #temp Room run tag @s add same_room

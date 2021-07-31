@@ -1,1 +1,0 @@
-scoreboard players set #safari_room Ticking 1

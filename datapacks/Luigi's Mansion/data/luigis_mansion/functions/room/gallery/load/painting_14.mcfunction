@@ -1,0 +1,3 @@
+execute if data storage luigis_mansion:data portrait_ghost_ranks{vincent_van_gore:0b} run data merge entity @e[x=746.5,y=79,z=-30.5,type=minecraft:item_frame,distance=..0.7,limit=1] {Item:{id:"minecraft:painting",Count:1b,tag:{CustomModelData:63}}}
+execute if data storage luigis_mansion:data portrait_ghost_ranks{vincent_van_gore:1b} run data merge entity @e[x=746.5,y=79,z=-30.5,type=minecraft:item_frame,distance=..0.7,limit=1] {Item:{id:"minecraft:painting",Count:1b,tag:{CustomModelData:64}}}
+execute if data storage luigis_mansion:data portrait_ghost_ranks{vincent_van_gore:2b} run data merge entity @e[x=746.5,y=79,z=-30.5,type=minecraft:item_frame,distance=..0.7,limit=1] {Item:{id:"minecraft:painting",Count:1b,tag:{CustomModelData:65}}}

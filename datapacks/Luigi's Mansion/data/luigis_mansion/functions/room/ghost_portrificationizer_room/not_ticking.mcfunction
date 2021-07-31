@@ -1,0 +1,1 @@
+function #luigis_mansion:room/ghost_portrificationizer_room/reset

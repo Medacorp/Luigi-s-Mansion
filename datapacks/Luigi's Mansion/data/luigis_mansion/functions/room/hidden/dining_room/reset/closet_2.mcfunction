@@ -1,0 +1,12 @@
+data merge block 699 12 -20 {Items:[]}
+data merge block 699 12 -18 {Items:[]}
+setblock 700 11 -20 minecraft:oak_trapdoor[facing=east,half=bottom,open=true]
+setblock 700 11 -19 minecraft:oak_trapdoor[facing=east,half=bottom,open=true]
+setblock 700 11 -18 minecraft:oak_trapdoor[facing=east,half=bottom,open=true]
+setblock 700 12 -20 minecraft:oak_trapdoor[facing=east,half=top,open=true]
+setblock 700 12 -19 minecraft:oak_trapdoor[facing=east,half=top,open=true]
+setblock 700 12 -18 minecraft:oak_trapdoor[facing=east,half=top,open=true]
+setblock 700 13 -20 minecraft:oak_trapdoor[facing=east,half=top,open=true]
+setblock 700 13 -19 minecraft:oak_trapdoor[facing=east,half=top,open=true]
+setblock 700 13 -18 minecraft:oak_trapdoor[facing=east,half=top,open=true]
+scoreboard players reset #dining_room_closet_2

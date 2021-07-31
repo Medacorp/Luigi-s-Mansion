@@ -1,7 +1,0 @@
-{
-	"values": [
-		"luigis_mansion:items/flashlight/available/always_shine",
-		"luigis_mansion:items/flashlight/available/toggle_to_shine",
-		"luigis_mansion:items/flashlight/available/select_to_shine"
-	]
-}

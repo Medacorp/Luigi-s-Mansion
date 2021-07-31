@@ -1,1 +1,0 @@
-scoreboard players set #astral_hall Ticking 1

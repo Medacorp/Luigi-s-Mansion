@@ -1,1 +1,0 @@
-execute positioned 496 37 -26 run function luigis_mansion:room/hidden/king_boo_battle/remove_pillar

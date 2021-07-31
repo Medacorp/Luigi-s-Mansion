@@ -1,1 +1,0 @@
-scoreboard players set #nursery Ticking 1

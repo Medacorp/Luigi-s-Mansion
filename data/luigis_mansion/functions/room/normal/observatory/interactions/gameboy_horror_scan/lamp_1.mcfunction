@@ -1,1 +1,0 @@
-execute if entity @s[x=645.5,y=25,z=-77.5,distance=..1.5] if block 645 24 -78 minecraft:redstone_lamp run tellraw @a {"translate":"chat.type.text","with":[{"selector":"@p[tag=scanning_player,gamemode=!spectator]","color":"green"},{"translate":"luigis_mansion:message.player.scan_furniture.69"}]}

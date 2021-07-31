@@ -1,1 +1,0 @@
-scoreboard players reset #study_ceiling_lamp

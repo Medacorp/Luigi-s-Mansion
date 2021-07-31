@@ -1,1 +1,0 @@
-scoreboard players reset #nanas_room_chair

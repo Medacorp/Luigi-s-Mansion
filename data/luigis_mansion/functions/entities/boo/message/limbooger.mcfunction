@@ -1,4 +1,0 @@
-execute if entity @s[tag=limbooger,tag=message_1] run tellraw @a[tag=same_room] {"translate":"chat.type.text","with":[{"translate":"luigis_mansion:entity.limbooger","color":"green"},{"translate":"luigis_mansion:message.limbooger.1"}]}
-execute if entity @s[tag=limbooger,tag=message_2] run tellraw @a[tag=same_room] {"translate":"chat.type.text","with":[{"translate":"luigis_mansion:entity.limbooger","color":"green"},{"translate":"luigis_mansion:message.limbooger.2"}]}
-execute if entity @s[tag=limbooger,tag=message_3] run tellraw @a[tag=same_room] {"translate":"chat.type.text","with":[{"translate":"luigis_mansion:entity.limbooger","color":"green"},{"translate":"luigis_mansion:message.limbooger.3"}]}
-execute if entity @s[tag=limbooger,tag=message_4] run tellraw @a[tag=same_room] {"translate":"chat.type.text","with":[{"translate":"luigis_mansion:entity.limbooger","color":"green"},{"translate":"luigis_mansion:message.limbooger.4"}]}

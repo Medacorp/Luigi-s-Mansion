@@ -1,0 +1,21 @@
+execute if entity @s[scores={ActionTime=41}] rotated ~ 0 run function luigis_mansion:entities/ghost/move_forward
+execute if entity @s[scores={ActionTime=42}] rotated ~-18 0 run function luigis_mansion:entities/ghost/move_forward
+execute if entity @s[scores={ActionTime=43}] rotated ~-36 0 run function luigis_mansion:entities/ghost/move_forward
+execute if entity @s[scores={ActionTime=44}] rotated ~-54 0 run function luigis_mansion:entities/ghost/move_forward
+execute if entity @s[scores={ActionTime=45}] rotated ~-72 0 run function luigis_mansion:entities/ghost/move_forward
+execute if entity @s[scores={ActionTime=46}] rotated ~-90 0 run function luigis_mansion:entities/ghost/move_forward
+execute if entity @s[scores={ActionTime=47}] rotated ~-108 0 run function luigis_mansion:entities/ghost/move_forward
+execute if entity @s[scores={ActionTime=48}] rotated ~-136 0 run function luigis_mansion:entities/ghost/move_forward
+execute if entity @s[scores={ActionTime=49}] rotated ~-144 0 run function luigis_mansion:entities/ghost/move_forward
+execute if entity @s[scores={ActionTime=50}] rotated ~-162 0 run function luigis_mansion:entities/ghost/move_forward
+execute if entity @s[scores={ActionTime=51}] rotated ~-180 0 run function luigis_mansion:entities/ghost/move_forward
+execute if entity @s[scores={ActionTime=52}] rotated ~-198 0 run function luigis_mansion:entities/ghost/move_forward
+execute if entity @s[scores={ActionTime=53}] rotated ~-216 0 run function luigis_mansion:entities/ghost/move_forward
+execute if entity @s[scores={ActionTime=54}] rotated ~-234 0 run function luigis_mansion:entities/ghost/move_forward
+execute if entity @s[scores={ActionTime=55}] rotated ~-252 0 run function luigis_mansion:entities/ghost/move_forward
+execute if entity @s[scores={ActionTime=56}] rotated ~-270 0 run function luigis_mansion:entities/ghost/move_forward
+execute if entity @s[scores={ActionTime=57}] rotated ~-288 0 run function luigis_mansion:entities/ghost/move_forward
+execute if entity @s[scores={ActionTime=58}] rotated ~-306 0 run function luigis_mansion:entities/ghost/move_forward
+execute if entity @s[scores={ActionTime=59}] rotated ~-324 0 run function luigis_mansion:entities/ghost/move_forward
+execute if entity @s[scores={ActionTime=60}] rotated ~-342 0 run function luigis_mansion:entities/ghost/move_forward
+execute at @s run teleport @s[scores={ActionTime=41..60}] ~ ~ ~ ~18 ~

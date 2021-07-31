@@ -1,1 +1,0 @@
-scoreboard players set #balcony_2 Ticking 1

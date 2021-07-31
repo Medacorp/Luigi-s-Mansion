@@ -1,1 +1,0 @@
-scoreboard players reset #butlers_room_sewing_machine

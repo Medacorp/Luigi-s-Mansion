@@ -1,1 +1,0 @@
-execute if entity @s[tag=shrunk_player] run function luigis_mansion:entities/shrunk_player/tick

@@ -1,0 +1,16 @@
+{
+	"values": [
+		"luigis_mansion:room/hidden/courtyard/interactions/room/bird_house",
+		"luigis_mansion:room/hidden/courtyard/interactions/room/chest",
+		"luigis_mansion:room/hidden/courtyard/interactions/room/lamp_1",
+		"luigis_mansion:room/hidden/courtyard/interactions/room/lamp_2",
+		"luigis_mansion:room/hidden/courtyard/interactions/room/plant_1",
+		"luigis_mansion:room/hidden/courtyard/interactions/room/plant_2",
+		"luigis_mansion:room/hidden/courtyard/interactions/room/plant_3",
+		"luigis_mansion:room/hidden/courtyard/interactions/room/plant_4",
+		"luigis_mansion:room/hidden/courtyard/interactions/room/statue_1",
+		"luigis_mansion:room/hidden/courtyard/interactions/room/statue_2",
+		"luigis_mansion:room/hidden/courtyard/interactions/room/vacuumable",
+		"luigis_mansion:room/hidden/courtyard/interactions/room/water"
+	]
+}

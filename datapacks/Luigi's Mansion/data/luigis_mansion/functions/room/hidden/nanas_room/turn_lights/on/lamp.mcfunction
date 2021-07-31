@@ -1,0 +1,1 @@
+setblock 658 25 30 minecraft:stone_button[face=floor,powered=true]

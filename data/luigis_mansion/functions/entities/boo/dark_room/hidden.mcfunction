@@ -1,1 +1,0 @@
-function luigis_mansion:entities/boo/dark_room/normal

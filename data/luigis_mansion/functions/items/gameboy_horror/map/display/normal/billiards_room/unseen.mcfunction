@@ -1,1 +1,0 @@
-fill 3684 60 14 3673 60 36 minecraft:gray_concrete

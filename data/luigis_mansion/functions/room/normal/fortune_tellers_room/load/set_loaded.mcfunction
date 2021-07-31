@@ -1,1 +1,0 @@
-scoreboard players set #fortune_tellers_room Ticking 1

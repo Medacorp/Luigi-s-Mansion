@@ -1,1 +1,0 @@
-scoreboard players set #foyer Wave 100

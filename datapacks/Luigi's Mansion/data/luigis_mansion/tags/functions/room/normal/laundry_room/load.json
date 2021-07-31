@@ -1,0 +1,14 @@
+{
+	"values": [
+	    "luigis_mansion:room/normal/laundry_room/load/set_loaded",
+        "luigis_mansion:room/normal/laundry_room/load/lights",
+        "luigis_mansion:room/normal/laundry_room/load/fake_doors",
+        "luigis_mansion:room/normal/laundry_room/load/bucket",
+        "luigis_mansion:room/normal/laundry_room/load/closet",
+        "luigis_mansion:room/normal/laundry_room/load/vacuumable_1",
+        "luigis_mansion:room/normal/laundry_room/load/vacuumable_2",
+        "luigis_mansion:room/normal/laundry_room/load/vacuumable_3",
+        "luigis_mansion:room/normal/laundry_room/load/vacuumable_4",
+        "luigis_mansion:room/normal/laundry_room/load/washing_machine"
+	]
+}

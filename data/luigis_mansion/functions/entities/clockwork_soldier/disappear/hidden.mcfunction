@@ -1,1 +1,0 @@
-function luigis_mansion:entities/clockwork_soldier/disappear/normal

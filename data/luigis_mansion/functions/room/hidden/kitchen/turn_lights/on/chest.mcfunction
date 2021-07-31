@@ -1,1 +1,0 @@
-setblock 705 11 -67 minecraft:trapped_chest[facing=east,type=single]{LootTable:"luigis_mansion:search"}

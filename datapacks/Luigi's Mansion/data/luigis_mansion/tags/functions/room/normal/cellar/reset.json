@@ -1,0 +1,28 @@
+{
+    "values": [
+        "luigis_mansion:room/normal/cellar/reset/unload",
+        "#luigis_mansion:room/normal/cellar/turn_lights/off",
+        "luigis_mansion:room/normal/cellar/reset/barrel_1",
+        "luigis_mansion:room/normal/cellar/reset/barrel_2",
+        "luigis_mansion:room/normal/cellar/reset/box_1",
+        "luigis_mansion:room/normal/cellar/reset/box_2",
+        "luigis_mansion:room/normal/cellar/reset/candle_1",
+        "luigis_mansion:room/normal/cellar/reset/candle_2",
+        "luigis_mansion:room/normal/cellar/reset/chest",
+        "luigis_mansion:room/normal/cellar/reset/dust_1",
+        "luigis_mansion:room/normal/cellar/reset/dust_2",
+        "luigis_mansion:room/normal/cellar/reset/dust_3",
+        "luigis_mansion:room/normal/cellar/reset/dust_4",
+        "luigis_mansion:room/normal/cellar/reset/dust_5",
+        "luigis_mansion:room/normal/cellar/reset/dust_6",
+        "luigis_mansion:room/normal/cellar/reset/dust_7",
+        "luigis_mansion:room/normal/cellar/reset/dust_8",
+        "luigis_mansion:room/normal/cellar/reset/lamp",
+        "luigis_mansion:room/normal/cellar/reset/shelf_1",
+        "luigis_mansion:room/normal/cellar/reset/shelf_2",
+        "luigis_mansion:room/normal/cellar/reset/shelf_3",
+        "luigis_mansion:room/normal/cellar/reset/shelf_4",
+        "luigis_mansion:room/normal/cellar/reset/shelf_5",
+        "luigis_mansion:room/normal/cellar/reset/shelf_6"
+    ]
+}

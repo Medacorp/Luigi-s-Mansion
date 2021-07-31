@@ -1,1 +1,0 @@
-scoreboard players set #hallway_5 Ticking 1

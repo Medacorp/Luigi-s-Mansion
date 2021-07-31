@@ -1,2 +1,0 @@
-execute if entity @s[tag=gold_ghost,tag=!hidden] run function luigis_mansion:entities/gold_ghost/tick
-execute if entity @s[tag=gold_ghost,tag=hidden] run function luigis_mansion:entities/gold_ghost/hidden_tick

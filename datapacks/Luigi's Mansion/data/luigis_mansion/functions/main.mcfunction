@@ -1,0 +1,13 @@
+function #luigis_mansion:loaded_add_ons
+function #luigis_mansion:post_loaded_add_ons
+execute store result score #players Totals if entity @a[gamemode=!spectator]
+execute store result score #all_players Totals if entity @a
+execute as @a at @s run function luigis_mansion:main/players
+scoreboard players set #force_gbh_screen Selected 0
+scoreboard players set #force_radar Selected 0
+execute unless entity @a[tag=!loaded_chunks,limit=1] positioned as @a[tag=loaded_chunks,limit=1] run function luigis_mansion:room/detect
+scoreboard players set #freeze_timer Selected 0
+execute as @e[type=!minecraft:player] at @s run function luigis_mansion:main/non_players
+execute as @e[type=minecraft:armor_stand,tag=model_piece] at @s run function luigis_mansion:animations/model_piece
+kill @e[tag=dead,tag=can_die]
+execute at @a[tag=vacuuming] run summon minecraft:marker ~ ~ ~ {Tags:["position","remove_from_existence"]}

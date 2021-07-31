@@ -1,3 +1,0 @@
-execute if data storage luigis_mansion:data rooms.training_room{seen:0b} run fill 4798 100 3 4783 100 -20 minecraft:gray_concrete
-execute if data storage luigis_mansion:data rooms.training_room{seen:1b,cleared:0b} run fill 4798 100 3 4783 100 -20 minecraft:light_gray_concrete
-execute if data storage luigis_mansion:data rooms.training_room{cleared:1b} run fill 4798 100 3 4783 100 -20 minecraft:white_concrete

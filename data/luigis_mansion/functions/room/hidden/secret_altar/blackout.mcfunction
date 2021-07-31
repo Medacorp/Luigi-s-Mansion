@@ -1,1 +1,0 @@
-scoreboard players set #secret_altar Wave 100

@@ -1,1 +1,0 @@
-scoreboard players set #hallway_21 Ticking 1

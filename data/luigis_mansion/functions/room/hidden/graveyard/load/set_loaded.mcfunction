@@ -1,1 +1,0 @@
-scoreboard players set #graveyard Ticking 1

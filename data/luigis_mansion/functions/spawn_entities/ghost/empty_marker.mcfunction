@@ -1,1 +1,0 @@
-summon minecraft:marker ~ ~ ~ {Tags:["hidden","new_ghost","ghost","no_height_change","only_forced_spawn"]}

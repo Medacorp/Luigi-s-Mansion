@@ -1,0 +1,1 @@
+scoreboard players set #nanas_room Ticking 1

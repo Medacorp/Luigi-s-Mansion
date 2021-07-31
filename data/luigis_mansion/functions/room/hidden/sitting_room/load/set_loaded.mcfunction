@@ -1,1 +1,0 @@
-scoreboard players set #sitting_room Ticking 1

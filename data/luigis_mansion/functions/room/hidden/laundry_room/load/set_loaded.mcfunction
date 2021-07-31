@@ -1,1 +1,0 @@
-scoreboard players set #laundry_room Ticking 1

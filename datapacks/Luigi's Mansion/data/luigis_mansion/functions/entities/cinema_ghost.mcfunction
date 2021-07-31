@@ -1,0 +1,2 @@
+execute if entity @s[tag=cinema_ghost,tag=!hidden] run function luigis_mansion:entities/cinema_ghost/tick
+execute if entity @s[tag=cinema_ghost,tag=hidden] run function luigis_mansion:entities/cinema_ghost/hidden_tick

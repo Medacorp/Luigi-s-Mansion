@@ -1,0 +1,1 @@
+execute if entity @s[tag=bill] run function luigis_mansion:items/bill

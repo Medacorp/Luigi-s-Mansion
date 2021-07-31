@@ -1,0 +1,1 @@
+execute if entity @s[tag=lydia] run function #luigis_mansion:entities/lydia/disappear

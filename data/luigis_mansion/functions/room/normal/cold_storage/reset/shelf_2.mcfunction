@@ -1,1 +1,0 @@
-scoreboard players reset #cold_storage_shelf_2

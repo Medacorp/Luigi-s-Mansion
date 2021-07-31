@@ -1,0 +1,1 @@
+function luigis_mansion:dialog/released_boos/call/normal

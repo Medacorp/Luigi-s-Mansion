@@ -1,1 +1,0 @@
-scoreboard players reset #kitchen_dish_washer

@@ -1,1 +1,0 @@
-scoreboard players set #boneyard Ticking 1

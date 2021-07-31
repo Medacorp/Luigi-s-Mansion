@@ -1,0 +1,1 @@
+execute if entity @s[x=691.5,y=125,z=16.5,distance=..0.7,tag=vacuum] unless score #clockwork_room_lamp_2 Search matches 1 store success score #clockwork_room_lamp_2 Search run scoreboard players add #clockwork_room_lamp_2 Searching 1

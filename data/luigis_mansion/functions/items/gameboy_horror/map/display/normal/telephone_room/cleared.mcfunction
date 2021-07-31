@@ -1,1 +1,0 @@
-fill 3717 160 23 3700 160 -8 minecraft:pink_concrete

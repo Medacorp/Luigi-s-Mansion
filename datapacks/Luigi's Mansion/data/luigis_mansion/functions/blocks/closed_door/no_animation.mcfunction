@@ -1,0 +1,1 @@
+execute unless entity @e[type=minecraft:marker,distance=..0.7,tag=door,limit=1] run summon minecraft:marker ~ ~0.01 ~ {Tags:["door","no_animation"],CustomName:'{"translate":"luigis_mansion:entity.door"}'}

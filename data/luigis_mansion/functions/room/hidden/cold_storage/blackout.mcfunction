@@ -1,1 +1,0 @@
-scoreboard players set #cold_storage Wave 100

@@ -1,0 +1,2 @@
+execute if entity @s[tag=ceiling_surprise,tag=!hidden] run function luigis_mansion:entities/ceiling_surprise/tick
+execute if entity @s[tag=ceiling_surprise,tag=hidden] run function luigis_mansion:entities/ceiling_surprise/hidden_tick

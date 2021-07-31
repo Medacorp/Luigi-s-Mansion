@@ -1,1 +1,0 @@
-fill 642 26 61 643 26 60 minecraft:air

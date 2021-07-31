@@ -1,1 +1,0 @@
-fill 3670 60 39 3645 60 55 minecraft:light_gray_concrete

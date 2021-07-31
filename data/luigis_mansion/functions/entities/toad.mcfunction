@@ -1,1 +1,0 @@
-execute if entity @s[tag=toad] run function luigis_mansion:entities/toad/tick

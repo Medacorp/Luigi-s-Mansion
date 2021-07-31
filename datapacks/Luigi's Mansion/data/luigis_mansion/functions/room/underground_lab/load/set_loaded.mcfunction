@@ -1,0 +1,1 @@
+scoreboard players set #underground_lab Ticking 1

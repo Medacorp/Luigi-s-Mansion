@@ -1,0 +1,1 @@
+execute if score #mansion_type Selected matches -1 run teleport @s ~ ~-1 ~

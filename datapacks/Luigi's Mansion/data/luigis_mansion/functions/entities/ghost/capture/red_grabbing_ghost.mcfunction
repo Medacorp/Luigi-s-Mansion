@@ -1,0 +1,1 @@
+execute if entity @s[tag=red_grabbing_ghost] run function luigis_mansion:entities/ghost/capture/caught/red_grabbing_ghost

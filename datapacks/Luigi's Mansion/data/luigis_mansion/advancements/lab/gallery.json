@@ -1,0 +1,20 @@
+{
+    "display": {
+        "icon": {
+            "item": "minecraft:item_frame"
+        },
+        "show_toast": false,
+        "title": {
+            "translate": "luigis_mansion:location.gallery"
+        },
+        "description": {
+            "translate": "luigis_mansion:advancements.lab.gallery.description"
+        }
+    },
+	"parent": "luigis_mansion:lab/lab",
+    "criteria": {
+        "cleared": {
+            "trigger": "minecraft:impossible"
+        }
+    }
+}

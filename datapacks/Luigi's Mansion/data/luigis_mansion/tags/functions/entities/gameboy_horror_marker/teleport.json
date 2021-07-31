@@ -1,0 +1,7 @@
+{
+	"values": [
+        "luigis_mansion:entities/gameboy_horror_marker/lab",
+        "luigis_mansion:entities/gameboy_horror_marker/normal",
+        "luigis_mansion:entities/gameboy_horror_marker/hidden"
+	]
+}

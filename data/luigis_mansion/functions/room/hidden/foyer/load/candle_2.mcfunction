@@ -1,1 +1,0 @@
-execute positioned 751 13 1 run function luigis_mansion:spawn_furniture/lit_candles

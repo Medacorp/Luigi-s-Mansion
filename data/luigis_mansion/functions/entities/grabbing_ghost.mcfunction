@@ -1,2 +1,0 @@
-execute if entity @s[tag=grabbing_ghost,tag=!hidden] run function luigis_mansion:entities/grabbing_ghost/tick
-execute if entity @s[tag=grabbing_ghost,tag=hidden] run function luigis_mansion:entities/grabbing_ghost/hidden_tick

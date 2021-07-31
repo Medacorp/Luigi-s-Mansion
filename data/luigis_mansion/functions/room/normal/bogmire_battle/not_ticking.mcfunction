@@ -1,1 +1,0 @@
-function #luigis_mansion:room/normal/bogmire_battle/reset

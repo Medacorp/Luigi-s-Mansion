@@ -1,0 +1,1 @@
+function luigis_mansion:dialog/caught_king_boo/normal

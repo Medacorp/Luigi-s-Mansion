@@ -1,0 +1,1 @@
+function luigis_mansion:entities/hidden_boo/spawn/normal
