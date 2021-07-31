@@ -1,3 +1,4 @@
+advancements/
 data/command_storage_*
 data/scoreboard.dat
 data/raids.dat
@@ -8,7 +9,9 @@ DIM-1
 dimensions/luigis_beta_mansion
 dimensions/*/*/data/raids.dat
 dimensions/*/*/poi
+playerdata
 poi
 level.dat
 *_old
 session.lock
+stats
