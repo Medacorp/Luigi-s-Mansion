@@ -16,7 +16,7 @@ kill @e[distance=..0.1,type=minecraft:item,limit=1]
 execute if entity @s[scores={ID=1}] as @e[tag=luigi_model,tag=new] run data modify entity @s ArmorItems[3].tag.display.color set value 37129
 execute if entity @s[scores={ID=2}] as @e[tag=luigi_model,tag=new] run data modify entity @s ArmorItems[3].tag.display.color set value 4882943
 execute if entity @s[scores={ID=3}] as @e[tag=luigi_model,tag=new] run data modify entity @s ArmorItems[3].tag.display.color set value 16726271
-execute if entity @s[scores={ID=4}] as @e[tag=luigi_model,tag=new] run data modify entity @s ArmorItems[3].tag.display.color set value 56753976
+execute if entity @s[scores={ID=4}] as @e[tag=luigi_model,tag=new] run data modify entity @s ArmorItems[3].tag.display.color set value 16756001
 execute if entity @s[scores={ID=5..}] run function luigis_mansion:other/generate_color
 execute if entity @s[scores={ID=5..}] as @e[tag=luigi_model,tag=new] store result entity @s ArmorItems[3].tag.display.color int 1 run scoreboard players get #temp Time
 scoreboard players reset #temp Time
