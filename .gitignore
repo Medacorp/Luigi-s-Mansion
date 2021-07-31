@@ -1,14 +1,15 @@
-advancements/
+advancements
 data/command_storage_*
 data/scoreboard.dat
 data/raids.dat
-datapacks/Luigi's Beta Mansion
-datapacks/Luigi's Mansion 3DS Remake
+datapacks/*/
+!datapacks/Luigi's Mansion/
 DIM1
 DIM-1
-dimensions/luigis_beta_mansion
-dimensions/*/*/data/raids.dat
-dimensions/*/*/poi
+dimensions/*/
+!dimensions/luigis_mansion/
+dimensions/luigis_mansion/*/data/raids.dat
+dimensions/luigis_mansion/*/poi
 playerdata
 poi
 level.dat
