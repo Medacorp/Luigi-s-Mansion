@@ -21,7 +21,7 @@ scoreboard players operation #temp KillerID = @s KillerID
 execute as @a[gamemode=!spectator] if score @s ID = #temp KillerID run tag @s add killer
 scoreboard players reset #temp KillerID
 
-execute at @s[scores={HurtTime=1}] run function luigis_mansion:entities/ghost/capture
+execute at @s[scores={HurtTime=1,Room=1..}] run function luigis_mansion:entities/ghost/capture
 execute at @s[scores={HurtTime=1,Room=-2}] run scoreboard players add #training_room GhostCaught 1
 execute at @s[scores={HurtTime=2}] run tag @s add dead
 tag @a remove killer
