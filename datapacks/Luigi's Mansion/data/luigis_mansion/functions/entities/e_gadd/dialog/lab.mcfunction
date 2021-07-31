@@ -2,7 +2,7 @@ execute if entity @s[scores={Room=0}] run function luigis_mansion:dialog/leaving
 execute if entity @s[scores={Room=-1}] if data storage luigis_mansion:data rooms.underground_lab{cleared:0b} run function luigis_mansion:dialog/the_mansion
 execute if entity @s[scores={Room=-1},tag=talk] if data storage luigis_mansion:data rooms.underground_lab{cleared:1b} if entity @s[tag=underground_lab_dialog] run function luigis_mansion:dialog/underground_lab
 execute if entity @s[scores={Room=-1},tag=talk] if data storage luigis_mansion:data rooms.underground_lab{cleared:1b} unless entity @s[scores={Dialog=1..}] run function luigis_mansion:dialog/underground_lab
-execute if entity @s[scores={Room=-2}] run function luigis_mansion:dialog/training_room
+execute if entity @s[scores={Room=-2}] run function luigis_mansion:dialog/training_room/option
 execute if entity @s[scores={Room=-3},tag=portrificationizing] run function luigis_mansion:dialog/portrificationizing
 execute if entity @s[scores={Room=-3},tag=return_dialog] run function luigis_mansion:dialog/ghost_portrificationizer_room/return
 execute if entity @s[scores={Room=-3},tag=ending_dialog] run function luigis_mansion:dialog/ghost_portrificationizer_room/ending
