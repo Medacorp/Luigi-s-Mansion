@@ -6,15 +6,15 @@ execute unless score @s ReflectionNr matches 1.. run summon minecraft:armor_stan
 execute unless score @s ReflectionNr matches 1.. run scoreboard players operation @e[tag=this_reflection,tag=new,limit=1] ReflectionNr > @e[scores={ReflectionNr=1..}] ReflectionNr
 execute unless score @s ReflectionNr matches 1.. run scoreboard players add @e[tag=this_reflection,tag=new,limit=1] ReflectionNr 1 
 execute unless score @s ReflectionNr matches 1.. run data modify entity @e[tag=this_reflection,tag=new,limit=1] Invisible set from entity @s Invisible
-execute unless score @s ReflectionNr matches 1.. run data modify entity @e[tag=this_reflection,tag=new,limit=1] Small set from entity @s Small
 execute unless score @s ReflectionNr matches 1.. run data modify entity @e[tag=this_reflection,tag=new,limit=1] Marker set from entity @s Marker
 execute unless score @s ReflectionNr matches 1.. run scoreboard players operation @s ReflectionNr = @e[tag=this_reflection,tag=new,limit=1] ReflectionNr
 tag @e[tag=this_reflection,tag=!new,limit=1] add found_owner
 tag @e[tag=this_reflection,limit=1] remove new
 
 execute if entity @s[tag=immobile] run tag @e[tag=this_reflection,limit=1] add immobile
+data modify entity @e[tag=this_reflection,limit=1] Small set from entity @s Small
 data modify entity @e[tag=this_reflection,limit=1] Pose set from entity @s Pose
-data modify entity @e[tag=this_reflection,limit=1] ArmorItems set from entity @s ArmorItems
+data modify entity @e[tag=this_reflection,limit=1] ArmorItems set from entity @s[tag=!held_item] ArmorItems
 data modify entity @e[tag=this_reflection,limit=1] HandItems set from entity @s HandItems
 execute if entity @s[tag=mirror_ghost] as @e[tag=this_reflection,limit=1] run function luigis_mansion:entities/reflection/mirror_ghost_reflection
 execute if entity @s[tag=cinema_ghost] as @e[tag=this_reflection,limit=1] run function luigis_mansion:entities/reflection/cinema_ghost_reflection

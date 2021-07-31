@@ -1,0 +1,186 @@
+{
+	"type": "minecraft:generic",
+    "pools": [
+		{
+            "rolls": 1,
+            "entries": [
+                {
+                    "type": "item",
+                    "name": "minecraft:carved_pumpkin",
+                    "weight": 1,
+					"functions": [
+						{
+							"function":"set_nbt",
+							"tag":"{value:1}"
+						}
+					]
+                },
+                {
+                    "type": "item",
+                    "name": "minecraft:carved_pumpkin",
+                    "weight": 1,
+					"functions": [
+						{
+							"function":"set_nbt",
+							"tag":"{value:2}"
+						}
+					]
+                },
+                {
+                    "type": "item",
+                    "name": "minecraft:carved_pumpkin",
+                    "weight": 1,
+					"functions": [
+						{
+							"function":"set_nbt",
+							"tag":"{value:3}"
+						}
+					]
+                },
+				{
+                    "type": "item",
+                    "name": "minecraft:carved_pumpkin",
+                    "weight": 1,
+					"functions": [
+						{
+							"function":"set_nbt",
+							"tag":"{value:4}"
+						}
+					]
+                },
+				{
+                    "type": "item",
+                    "name": "minecraft:carved_pumpkin",
+                    "weight": 1,
+					"functions": [
+						{
+							"function":"set_nbt",
+							"tag":"{value:5}"
+						}
+					]
+                },
+				{
+                    "type": "item",
+                    "name": "minecraft:carved_pumpkin",
+                    "weight": 1,
+					"functions": [
+						{
+							"function":"set_nbt",
+							"tag":"{value:6}"
+						}
+					]
+                },
+				{
+                    "type": "item",
+                    "name": "minecraft:carved_pumpkin",
+                    "weight": 1,
+					"functions": [
+						{
+							"function":"set_nbt",
+							"tag":"{value:7}"
+						}
+					]
+                },
+				{
+                    "type": "item",
+                    "name": "minecraft:carved_pumpkin",
+                    "weight": 1,
+					"functions": [
+						{
+							"function":"set_nbt",
+							"tag":"{value:8}"
+						}
+					]
+                },
+				{
+                    "type": "item",
+                    "name": "minecraft:carved_pumpkin",
+                    "weight": 1,
+					"functions": [
+						{
+							"function":"set_nbt",
+							"tag":"{value:9}"
+						}
+					]
+                },
+				{
+                    "type": "item",
+                    "name": "minecraft:carved_pumpkin",
+                    "weight": 1,
+					"functions": [
+						{
+							"function":"set_nbt",
+							"tag":"{value:10}"
+						}
+					]
+                },
+				{
+                    "type": "item",
+                    "name": "minecraft:carved_pumpkin",
+                    "weight": 1,
+					"functions": [
+						{
+							"function":"set_nbt",
+							"tag":"{value:11}"
+						}
+					]
+                },
+				{
+                    "type": "item",
+                    "name": "minecraft:carved_pumpkin",
+                    "weight": 1,
+					"functions": [
+						{
+							"function":"set_nbt",
+							"tag":"{value:12}"
+						}
+					]
+                },
+				{
+                    "type": "item",
+                    "name": "minecraft:carved_pumpkin",
+                    "weight": 1,
+					"functions": [
+						{
+							"function":"set_nbt",
+							"tag":"{value:13}"
+						}
+					]
+                },
+				{
+                    "type": "item",
+                    "name": "minecraft:carved_pumpkin",
+                    "weight": 1,
+					"functions": [
+						{
+							"function":"set_nbt",
+							"tag":"{value:14}"
+						}
+					]
+                },
+				{
+                    "type": "item",
+                    "name": "minecraft:carved_pumpkin",
+                    "weight": 1,
+					"functions": [
+						{
+							"function":"set_nbt",
+							"tag":"{value:15}"
+						}
+					]
+                },
+				{
+                    "type": "item",
+                    "name": "minecraft:carved_pumpkin",
+                    "weight": 1,
+					"functions": [
+						{
+							"function":"set_nbt",
+							"tag":"{value:16}"
+						}
+					]
+                }
+            ]
+        }
+	]
+}

@@ -43,6 +43,7 @@ scoreboard objectives add HomeY dummy
 scoreboard objectives add HomeZ dummy
 scoreboard objectives add HurtTime dummy
 scoreboard objectives add ID dummy
+scoreboard objectives add IncreaseAmount dummy
 scoreboard objectives add Invulnerable dummy
 scoreboard objectives add JarvisChoice trigger
 scoreboard objectives add Jump minecraft.custom:minecraft.jump
@@ -65,6 +66,7 @@ scoreboard objectives add MaxHealthTime dummy
 scoreboard objectives add MelodyChoice trigger
 scoreboard objectives add MirrorX dummy
 scoreboard objectives add MirrorZ dummy
+scoreboard objectives add ModelTime dummy
 scoreboard objectives add Money dummy
 scoreboard objectives add Move dummy
 scoreboard objectives add Music dummy
@@ -76,6 +78,7 @@ scoreboard objectives add OtherY dummy
 scoreboard objectives add OtherZ dummy
 scoreboard objectives add PassiveNr dummy
 scoreboard objectives add PathStep dummy
+scoreboard objectives add PlayerRotation dummy
 scoreboard objectives add PosX dummy
 scoreboard objectives add PosY dummy
 scoreboard objectives add PosZ dummy
@@ -86,6 +89,7 @@ scoreboard objectives add PrevTotalDamage dummy
 scoreboard objectives add Pull dummy
 scoreboard objectives add PullStrength dummy
 scoreboard objectives add PunchingBag dummy
+scoreboard objectives add Range dummy
 scoreboard objectives add ReadBook minecraft.used:minecraft.written_book
 scoreboard objectives add ReflectionNr dummy
 scoreboard objectives add ResetChoice trigger
@@ -94,6 +98,7 @@ scoreboard objectives add ReturnTimer dummy
 scoreboard objectives add Room dummy
 scoreboard objectives add RoomNoise dummy
 scoreboard objectives add RoomSection dummy
+scoreboard objectives add RotationDif dummy
 scoreboard objectives add Run minecraft.custom:minecraft.sprint_one_cm
 scoreboard objectives add Search dummy
 scoreboard objectives add Searched dummy
@@ -132,6 +137,8 @@ scoreboard objectives add Variant dummy
 scoreboard objectives add VulnerableTime dummy
 scoreboard objectives add WaitTime dummy
 scoreboard objectives add Walk minecraft.custom:minecraft.walk_one_cm
+scoreboard objectives add WalkOnWater minecraft.custom:minecraft.walk_on_water_one_cm
+scoreboard objectives add WalkUnderWater minecraft.custom:minecraft.walk_under_water_one_cm
 scoreboard objectives add Wave dummy
 scoreboard objectives add Wool dummy
 
@@ -145,6 +152,7 @@ scoreboard players set #50 Constants 50
 scoreboard players set #60 Constants 60
 scoreboard players set #100 Constants 100
 scoreboard players set #200 Constants 200
+scoreboard players set #256 Constants 256
 scoreboard players set #500 Constants 500
 scoreboard players set #800 Constants 800
 scoreboard players set #1000 Constants 1000

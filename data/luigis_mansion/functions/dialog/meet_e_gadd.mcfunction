@@ -12,6 +12,7 @@ execute if entity @s[scores={Dialog=4}] run teleport @s 725.5 20 28.0 90 0
 execute if entity @s[scores={Dialog=5}] run teleport @s 725.5 20 28.0 90 0
 execute if entity @s[scores={Dialog=6}] run teleport @s 725.5 20 28.0 90 0
 execute if entity @s[scores={Dialog=7}] run teleport @s 725.5 20 28.0 90 0
+tag @s[scores={Dialog=8..17}] add walking 
 execute if entity @s[scores={Dialog=8}] run teleport @s 725.5 20 28.1 90 0
 execute if entity @s[scores={Dialog=9}] run teleport @s 725.5 20 28.2 90 0
 execute if entity @s[scores={Dialog=10}] run teleport @s 725.5 20 28.3 90 0
@@ -32,6 +33,7 @@ execute if entity @s[scores={Dialog=24}] run teleport @s 725.5 20 29.0 90 0
 execute if entity @s[scores={Dialog=25}] run teleport @s 725.5 20 29.0 90 0
 execute if entity @s[scores={Dialog=26}] run teleport @s 725.5 20 29.0 90 0
 execute if entity @s[scores={Dialog=27}] run teleport @s 725.5 20 29.0 90 0
+tag @s[scores={Dialog=28..37}] add walking 
 execute if entity @s[scores={Dialog=28}] run teleport @s 725.5 20 29.1 90 0
 execute if entity @s[scores={Dialog=29}] run teleport @s 725.5 20 29.2 90 0
 execute if entity @s[scores={Dialog=30}] run teleport @s 725.5 20 29.3 87.75 0
@@ -52,6 +54,7 @@ execute if entity @s[scores={Dialog=44}] run teleport @s 725.5 20 30.0 56.25 0
 execute if entity @s[scores={Dialog=45}] run teleport @s 725.5 20 30.0 54 0
 execute if entity @s[scores={Dialog=46}] run teleport @s 725.5 20 30.0 51.75 0
 execute if entity @s[scores={Dialog=47}] run teleport @s 725.5 20 30.0 49.5 0
+tag @s[scores={Dialog=48..57}] add walking 
 execute if entity @s[scores={Dialog=48}] run teleport @s 725.5 20 30.1 47.25 0
 execute if entity @s[scores={Dialog=49}] run teleport @s 725.5 20 30.2 45 0
 execute if entity @s[scores={Dialog=50}] run teleport @s 725.5 20 30.3 42.75 0
@@ -72,6 +75,7 @@ execute if entity @s[scores={Dialog=64}] run teleport @s 725.5 20 31.0 11.25 0
 execute if entity @s[scores={Dialog=65}] run teleport @s 725.5 20 31.0 9 0
 execute if entity @s[scores={Dialog=66}] run teleport @s 725.5 20 31.0 6.75 0
 execute if entity @s[scores={Dialog=67}] run teleport @s 725.5 20 31.0 4.5 0
+tag @s[scores={Dialog=68..71}] add walking 
 execute if entity @s[scores={Dialog=68}] run teleport @s 725.5 20 31.1 2.25 0
 execute if entity @s[scores={Dialog=69}] run teleport @s 725.5 20 31.2 0 0
 execute if entity @s[scores={Dialog=70}] run teleport @s 725.5 20 31.3 0 0
@@ -84,6 +88,7 @@ execute if entity @s[scores={Dialog=72}] positioned 725 20 34.9 run scoreboard p
 execute if entity @s[scores={Dialog=72}] positioned 725 20 34.9 run tag @e[distance=..0.1,tag=gold_ghost] add dialog
 execute if entity @s[scores={Dialog=72}] run teleport @s 725.5 20 31.4 facing entity @e[tag=gold_ghost,tag=dialog,limit=1] feet
 execute if entity @s[scores={Dialog=72}] run teleport @e[tag=gold_ghost,tag=dialog,limit=1] 725 20 34.9 -180 0
+tag @s[scores={Dialog=82..149}] add walking 
 execute if entity @s[scores={Dialog=82..149}] at @e[tag=gold_ghost,tag=dialog,limit=1] run teleport @s ^ ^ ^3.5 ~-180 ~
 execute if entity @s[scores={Dialog=82..149}] as @e[tag=gold_ghost,tag=dialog,limit=1] at @s run teleport @s ^ ^ ^0.1 ~ ~
 execute if entity @s[scores={Dialog=98}] as @e[tag=e_gadd,tag=dialog,limit=1] at @s run teleport @s ~ ~ ~ facing 718 20 31

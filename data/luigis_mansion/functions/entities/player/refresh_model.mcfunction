@@ -1,0 +1,16 @@
+scoreboard players operation #temp ID = @s ID
+execute as @e[tag=model_piece,tag=!source] if score @s ID = #temp ID run tag @s add me
+
+summon minecraft:armor_stand ~ ~ ~ {NoGravity:1b,Invisible:1b,Marker:1b,Tags:["head","luigi_model","model_piece","new","found_owner","found_owner_2"],CustomName:'{"translate":"luigis_mansion:entity.luigi"}',ArmorItems:[{},{},{},{id:"minecraft:leather_chestplate",Count:1b,tag:{Unbreakable:1b,Damage:1,CustomModelData:19,display:{color:37129}}}]}
+summon minecraft:armor_stand ~ ~ ~ {NoGravity:1b,Invisible:1b,Marker:1b,Tags:["chest","luigi_model","model_piece","new","found_owner","found_owner_2"],CustomName:'{"translate":"luigis_mansion:entity.luigi"}',ArmorItems:[{},{},{},{id:"minecraft:leather_chestplate",Count:1b,tag:{Unbreakable:1b,Damage:1,CustomModelData:18,display:{color:37129}}}]}
+summon minecraft:armor_stand ~ ~ ~ {NoGravity:1b,Invisible:1b,Marker:1b,Tags:["right_arm","luigi_model","model_piece","new","found_owner","found_owner_2"],CustomName:'{"translate":"luigis_mansion:entity.luigi"}',ArmorItems:[{},{},{},{id:"minecraft:leather_chestplate",Count:1b,tag:{Unbreakable:1b,Damage:2,CustomModelData:19,display:{color:37129}}}]}
+summon minecraft:armor_stand ~ ~ ~ {NoGravity:1b,Invisible:1b,Marker:1b,Tags:["left_arm","luigi_model","model_piece","new","found_owner","found_owner_2"],CustomName:'{"translate":"luigis_mansion:entity.luigi"}',ArmorItems:[{},{},{},{id:"minecraft:leather_chestplate",Count:1b,tag:{Unbreakable:1b,Damage:3,CustomModelData:19,display:{color:37129}}}]}
+summon minecraft:armor_stand ~ ~ ~ {NoGravity:1b,Invisible:1b,Marker:1b,Tags:["right_arm","held_item","luigi_model","model_piece","new","found_owner","found_owner_2"],CustomName:'{"translate":"luigis_mansion:entity.luigi"}'}
+summon minecraft:armor_stand ~ ~ ~ {NoGravity:1b,Invisible:1b,Marker:1b,Tags:["left_arm","held_item","luigi_model","model_piece","new","found_owner","found_owner_2"],CustomName:'{"translate":"luigis_mansion:entity.luigi"}'}
+summon minecraft:armor_stand ~ ~ ~ {NoGravity:1b,Invisible:1b,Marker:1b,Tags:["leg","right","luigi_model","model_piece","new","found_owner","found_owner_2"],CustomName:'{"translate":"luigis_mansion:entity.luigi"}',ArmorItems:[{},{},{},{id:"minecraft:leather_chestplate",Count:1b,tag:{Unbreakable:1b,Damage:2,CustomModelData:18,display:{color:37129}}}]}
+summon minecraft:armor_stand ~ ~ ~ {NoGravity:1b,Invisible:1b,Marker:1b,Tags:["leg","left","luigi_model","model_piece","new","found_owner","found_owner_2"],CustomName:'{"translate":"luigis_mansion:entity.luigi"}',ArmorItems:[{},{},{},{id:"minecraft:leather_chestplate",Count:1b,tag:{Unbreakable:1b,Damage:3,CustomModelData:18,display:{color:37129}}}]}
+execute at @s as @e[tag=luigi_model,tag=new] run scoreboard players operation @s ID = @a[distance=..0.1,limit=1] ID
+execute as @e[tag=luigi_model,tag=new] run data modify entity @s ArmorItems[3].tag.display.color set from entity @e[tag=me,limit=1] ArmorItems[3].tag.display.color
+tag @e[tag=luigi_model,tag=new] remove new
+tag @e[tag=luigi_model,tag=me] add dead
+scoreboard players reset #temp ID

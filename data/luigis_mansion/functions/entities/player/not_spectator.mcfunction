@@ -54,9 +54,8 @@ execute if entity @s[scores={Sneak=1..},tag=!looking_at_map] run particle minecr
 
 execute unless entity @s[scores={Room=-3}] if score #loaded_exterior Selected matches -1 unless score #mansion_type Selected matches -1 run function luigis_mansion:room/ghost_portrificationizer_room/warp_to
 
-tag @s[scores={MirrorX=-2147483648..},nbt=!{ActiveEffects:[{Id:14b}]}] add mirrored
-tag @s[scores={MirrorZ=-2147483648..},nbt=!{ActiveEffects:[{Id:14b}]}] add mirrored
-scoreboard players reset @s[tag=!mirrored] ReflectionNr
-execute if entity @s[tag=mirrored] run function luigis_mansion:entities/reflection/player
 execute at @s[scores={LightX=-2147483648..},nbt=!{ActiveEffects:[{Id:14b}]}] run function luigis_mansion:other/cast_shadow/2_tall
 tag @s remove spectator
+
+effect give @s minecraft:invisibility 1000000 0 true
+function luigis_mansion:animations/luigi
