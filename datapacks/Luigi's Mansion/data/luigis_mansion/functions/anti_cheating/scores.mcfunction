@@ -17,6 +17,7 @@ scoreboard objectives add Distance dummy
 scoreboard objectives add ElementHurtTime dummy
 scoreboard objectives add ElementalNr dummy
 scoreboard objectives add EGaddCallChoice trigger
+scoreboard objectives add EGaddGallChoice trigger
 scoreboard objectives add EGaddGPRChoice trigger
 scoreboard objectives add EGaddLabChoice trigger
 scoreboard objectives add EGaddTrainChoice trigger

@@ -11,6 +11,13 @@ scoreboard players set @s Damage 0
 scoreboard players set @s TotalDamage 0
 scoreboard players set @s LastTotalDamage 0
 scoreboard players set @s Sound 0
+scoreboard players set @s Walk 0
+scoreboard players set @s WalkOnWater 0
+scoreboard players set @s WalkUnderWater 0
+scoreboard players set @s Run 0
+scoreboard players set @s Sneak 0
+scoreboard players set @s Sneaking 0
+scoreboard players set @s SneakTime 0
 gamemode adventure @s
 tag @s add joined
 tag @s add fix_health
