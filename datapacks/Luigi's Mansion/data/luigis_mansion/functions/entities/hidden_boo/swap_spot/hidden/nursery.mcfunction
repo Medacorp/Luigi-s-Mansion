@@ -2,7 +2,7 @@ summon minecraft:marker 739 21 -36 {Tags:["choice"]}
 summon minecraft:marker 743 23 -40 {Tags:["choice"]}
 summon minecraft:marker 745 23 -40 {Tags:["choice"]}
 summon minecraft:marker 741 20 -52 {Tags:["choice"]}
-summon minecraft:marker 747 20 -46 {Tags:["choice"]}
+summon minecraft:marker 747 20 -45 {Tags:["choice"]}
 summon minecraft:marker 747 20 -44 {Tags:["choice"]}
 summon minecraft:marker 747 20 -43 {Tags:["choice"]}
 summon minecraft:marker 739 20 -40 {Tags:["choice"]}
