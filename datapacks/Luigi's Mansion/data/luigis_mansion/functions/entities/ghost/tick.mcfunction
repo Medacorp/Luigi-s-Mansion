@@ -34,8 +34,7 @@ scoreboard players set @s[tag=vanish] VulnerableTime 0
 scoreboard players set @s[tag=vanish] StunTime 0
 execute if entity @s[tag=!hurt,tag=fleeing,tag=!dying,scores={VulnerableTime=0..}] run function luigis_mansion:entities/ghost/hurt
 execute if entity @s[tag=hurt,tag=!disappear,tag=!dying,scores={VulnerableTime=0..}] run function luigis_mansion:entities/ghost/hurt
-execute if entity @s[tag=!hurt,tag=!disappear,tag=!dying,scores={VulnerableTime=0..,ElementHurtTime=1..}] run function luigis_mansion:entities/ghost/hurt_element
-execute if entity @s[tag=!hurt,tag=!disappear,tag=element_hurt,tag=!dying,scores={VulnerableTime=0..,ElementHurtTime=0}] run function luigis_mansion:entities/ghost/hurt_element
+execute if entity @s[tag=!hurt,tag=!disappear,tag=element_hurt,tag=!dying,scores={VulnerableTime=0..}] run function luigis_mansion:entities/ghost/hurt_element
 
 execute if entity @s[tag=fleeing,tag=!vanish,tag=!disappear,tag=!vacuumable,tag=!dialog,tag=!dying] run function luigis_mansion:entities/ghost/flee
 tag @s[tag=in_vacuum] remove in_vacuum
