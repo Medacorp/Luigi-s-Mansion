@@ -2,7 +2,7 @@ summon minecraft:marker ~ ~ ~ {Tags:["interact","vacuum","poltergust"]}
 scoreboard players operation #temp Room = @s Room
 scoreboard players operation #temp ID = @s ID
 tag @s add me
-execute as @e[tag=ghost,tag=same_room] run function luigis_mansion:items/poltergust_3000/attacking_ghost
+execute as @e[tag=ghost,tag=same_room,scores={VulnerableTime=1..}] run function luigis_mansion:items/poltergust_3000/attacking_ghost
 execute if score #temp GhostCount > @s GhostCount run scoreboard players operation @s GhostCount = #temp GhostCount
 execute if score #temp GhostCount matches 1.. as @e[tag=ghost,tag=being_vacuumed] run function luigis_mansion:items/poltergust_3000/catch_ghost
 execute if score #temp GhostCount matches 1.. as @e[tag=ghost,tag=being_vacuumed] facing entity @s feet run function luigis_mansion:items/poltergust_3000/vacuuming/ghost

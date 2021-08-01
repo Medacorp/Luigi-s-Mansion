@@ -18,9 +18,9 @@ execute if entity @s[scores={Dialog=800}] if score #players Totals matches 1 run
 execute if entity @s[scores={Dialog=800}] if score #players Totals matches 2.. run tellraw @a {"translate":"chat.type.text","with":[{"translate":"luigis_mansion:entity.e_gadd","color":"green"},{"translate":"luigis_mansion:dialog.fire_element_medal.8.more"}]}
 execute if entity @s[scores={Dialog=872}] if score #players Totals matches 1 run tellraw @a {"translate":"chat.type.text","with":[{"translate":"luigis_mansion:entity.e_gadd","color":"green"},{"translate":"luigis_mansion:dialog.fire_element_medal.9"}]}
 execute if entity @s[scores={Dialog=872}] if score #players Totals matches 2.. run tellraw @a {"translate":"chat.type.text","with":[{"translate":"luigis_mansion:entity.e_gadd","color":"green"},{"translate":"luigis_mansion:dialog.fire_element_medal.9.more"}]}
-execute if entity @s[scores={Dialog=1046}] if score #players Totals matches 1 run tellraw @a {"translate":"chat.type.text","with":[{"translate":"luigis_mansion:entity.e_gadd","color":"green"},{"translate":"luigis_mansion:dialog.fire_element_medal.10"}]}
-execute if entity @s[scores={Dialog=1046}] if score #players Totals matches 2.. run tellraw @a {"translate":"chat.type.text","with":[{"translate":"luigis_mansion:entity.e_gadd","color":"green"},{"translate":"luigis_mansion:dialog.fire_element_medal.10.more"}]}
-execute if entity @s[scores={Dialog=1230}] as @a run function luigis_mansion:other/music/set/silence
-scoreboard players set @s[scores={Dialog=1230}] GBHCall 0
-scoreboard players set @s[scores={Dialog=1230}] GBHWait 0
-scoreboard players reset @s[scores={Dialog=1230}] Dialog
+execute if entity @s[scores={Dialog=1022}] if score #players Totals matches 1 run tellraw @a {"translate":"chat.type.text","with":[{"translate":"luigis_mansion:entity.e_gadd","color":"green"},{"translate":"luigis_mansion:dialog.fire_element_medal.10"}]}
+execute if entity @s[scores={Dialog=1022}] if score #players Totals matches 2.. run tellraw @a {"translate":"chat.type.text","with":[{"translate":"luigis_mansion:entity.e_gadd","color":"green"},{"translate":"luigis_mansion:dialog.fire_element_medal.10.more"}]}
+execute if entity @s[scores={Dialog=1206}] as @a run function luigis_mansion:other/music/set/silence
+scoreboard players set @s[scores={Dialog=1206}] GBHCall 0
+scoreboard players set @s[scores={Dialog=1206}] GBHWait 0
+scoreboard players reset @s[scores={Dialog=1206}] Dialog
