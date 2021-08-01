@@ -1,1 +1,1 @@
-setblock ~ ~ ~ minecraft:purple_stained_glass
+setblock ~ ~ ~ minecraft:slime_block

@@ -3,9 +3,9 @@ execute if entity @s[tag=!visible] unless entity @e[tag=this_food] positioned ^ 
 execute unless entity @s[scores={Dialog=1..}] at @e[tag=same_room,tag=!spectator] positioned ^ ^ ^8 if entity @s[distance=..8] run function luigis_mansion:entities/mr_luggs/turn_invisible
 execute unless entity @s[scores={Dialog=2..}] if entity @s[tag=visible] run item replace entity @e[tag=this_food,limit=1] armor.head with minecraft:diamond_pickaxe{Unbreakable:1b,Damage:4,CustomModelData:11}
 execute if entity @s[tag=!visible] run item replace entity @e[tag=this_food,limit=1] armor.head with minecraft:air
-execute unless entity @s[scores={Dialog=1..}] if block ^3 ^1.9 ^2 minecraft:purple_stained_glass if block ^-3 ^1.9 ^2 minecraft:purple_stained_glass run playsound luigis_mansion:music.solve_puzzle music @a[tag=same_room] ~ ~ ~ 10000
-execute unless entity @s[scores={Dialog=1..}] if block ^3 ^1.9 ^2 minecraft:purple_stained_glass if block ^-3 ^1.9 ^2 minecraft:purple_stained_glass run scoreboard players set @a[tag=same_room,gamemode=!spectator,scores={Music=..29}] Music 30
-execute unless entity @s[scores={Dialog=1..}] if block ^3 ^1.9 ^2 minecraft:purple_stained_glass if block ^-3 ^1.9 ^2 minecraft:purple_stained_glass run scoreboard players set @s Dialog 1
+execute unless entity @s[scores={Dialog=1..}] if block ^3 ^1.9 ^2 minecraft:slime_block if block ^-3 ^1.9 ^2 minecraft:slime_block run playsound luigis_mansion:music.solve_puzzle music @a[tag=same_room] ~ ~ ~ 10000
+execute unless entity @s[scores={Dialog=1..}] if block ^3 ^1.9 ^2 minecraft:slime_block if block ^-3 ^1.9 ^2 minecraft:slime_block run scoreboard players set @a[tag=same_room,gamemode=!spectator,scores={Music=..29}] Music 30
+execute unless entity @s[scores={Dialog=1..}] if block ^3 ^1.9 ^2 minecraft:slime_block if block ^-3 ^1.9 ^2 minecraft:slime_block run scoreboard players set @s Dialog 1
 execute if entity @s[scores={Dialog=1..20}] run teleport @e[tag=this_food,limit=1] ^ ^0.9 ^2
 execute if entity @s[scores={Dialog=21..50}] run teleport @e[tag=this_food,limit=1] ^ ^0.7 ^2
 execute if entity @s[scores={Dialog=51..80}] run teleport @e[tag=this_food,limit=1] ^ ^0.5 ^2
