@@ -1,4 +1,4 @@
-execute if entity @s[scores={ResetMansion=1}] run function luigis_mansion:other/load_data/reset_mansion_data
+execute if entity @s[scores={ResetMansion=1}] run function luigis_mansion:other/login_data_sync/reset_mansion_data
 
 execute if data storage luigis_mansion:data rooms.underground_lab{cleared:1b} run advancement grant @a only luigis_mansion:lab/lab
 execute if data storage luigis_mansion:data rooms.underground_lab{cleared:1b} run advancement grant @a only luigis_mansion:lab/underground_lab

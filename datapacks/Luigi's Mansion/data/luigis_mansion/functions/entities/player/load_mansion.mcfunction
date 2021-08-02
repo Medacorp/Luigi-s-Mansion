@@ -6,4 +6,7 @@ execute if data storage luigis_mansion:data current_state.current_data{nothing_l
 execute if data storage luigis_mansion:data current_state.current_data{nothing_loaded:1b} run scoreboard players set #mansion_type Selected -1
 execute if data storage luigis_mansion:data current_state.current_data{nothing_loaded:1b} run scoreboard players set #mansion_data_index Selected -1
 execute if data storage luigis_mansion:data current_state.current_data{nothing_loaded:1b} run scoreboard players set #previous_mansion_index Selected -1
+
+function #luigis_mansion:load_data
+
 tellraw @a {"translate":"chat.type.text","with":[{"selector":"@s","color":"green"},{"translate":"luigis_mansion:message.save.load"}]}

@@ -18,4 +18,5 @@ tag @s add visible
 tag @s remove hidden
 tag @s remove can_spawn
 tag @s remove try_spawn
+tag @s remove spawn_now
 tag @s remove new_ghost
