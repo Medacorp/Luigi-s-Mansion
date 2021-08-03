@@ -129,7 +129,7 @@ execute if entity @s[scores={Dialog=10000}] if score #players Totals matches 1 r
 execute if entity @s[scores={Dialog=10000}] if score #players Totals matches 2.. run tellraw @a {"translate":"chat.type.text","with":[{"translate":"luigis_mansion:entity.e_gadd","color":"green"},{"translate":"luigis_mansion:dialog.caught_boo.end.1.more"}]}
 execute if entity @s[scores={Dialog=10096}] run tellraw @a {"translate":"luigis_mansion:message.save.yes","color":"green","clickEvent":{"action":"run_command","value":"/trigger EGaddCallChoice set 1"},"extra":[{"text":"\n"},{"translate":"luigis_mansion:message.save.no","clickEvent":{"action":"run_command","value":"/trigger EGaddCallChoice set 2"}}]}
 execute if entity @s[scores={Dialog=10096}] run scoreboard players enable @a EGaddCallChoice
-execute if entity @s[scores={Dialog=10098}] as @a[scores={EGaddCallChoice=1},limit=1] run function luigis_mansion:entities/player/save_mansion
+execute if entity @s[scores={Dialog=10098}] as @a[scores={EGaddCallChoice=1},limit=1] run function luigis_mansion:data/save
 execute if entity @s[scores={Dialog=10098}] as @a run trigger EGaddCallChoice add 0
 execute if entity @s[scores={Dialog=10098}] unless entity @s[scores={Variant=-2}] if score #players Totals matches 1 run tellraw @a {"translate":"chat.type.text","with":[{"translate":"luigis_mansion:entity.e_gadd","color":"green"},{"translate":"luigis_mansion:dialog.caught_boo.end.2","with":[{"selector":"@p[gamemode=!spectator]"}]}]}
 execute if entity @s[scores={Dialog=10098}] unless entity @s[scores={Variant=-2}] if score #players Totals matches 2.. run tellraw @a {"translate":"chat.type.text","with":[{"translate":"luigis_mansion:entity.e_gadd","color":"green"},{"translate":"luigis_mansion:dialog.caught_boo.end.2.more"}]}

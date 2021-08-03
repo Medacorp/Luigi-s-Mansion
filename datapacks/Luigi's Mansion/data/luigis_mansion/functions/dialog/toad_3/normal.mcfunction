@@ -23,7 +23,7 @@ execute if entity @s[scores={Dialog=146}] if entity @a[scores={Toad3Choice=2}] r
 execute if entity @s[scores={Dialog=442}] run scoreboard players set @a Toad3Choice 0
 execute if entity @s[scores={Dialog=442}] run tellraw @a[tag=same_room] {"translate":"luigis_mansion:message.save.yes","color":"green","clickEvent":{"action":"run_command","value":"/trigger Toad3Choice set 1"},"extra":[{"text":"\n"},{"translate":"luigis_mansion:message.save.no","clickEvent":{"action":"run_command","value":"/trigger Toad3Choice set 2"}}]}
 execute if entity @s[scores={Dialog=442}] run scoreboard players enable @a[tag=same_room] Toad3Choice
-execute if entity @s[scores={Dialog=444}] as @a[scores={Toad3Choice=1},limit=1] run function luigis_mansion:entities/player/save_mansion
+execute if entity @s[scores={Dialog=444}] as @a[scores={Toad3Choice=1},limit=1] run function luigis_mansion:data/save
 execute if entity @s[scores={Dialog=444}] run scoreboard players set @a Toad3Choice 0
 tag @s[scores={Dialog=444}] remove talk
 tag @s[scores={Dialog=444}] remove turning_on_lights
