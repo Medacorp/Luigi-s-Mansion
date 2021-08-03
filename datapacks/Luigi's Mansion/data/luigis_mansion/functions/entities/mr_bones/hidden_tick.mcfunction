@@ -3,7 +3,7 @@ execute as @e[tag=mr_bones_body] if score @s GhostNr = #temp GhostNr run tag @s 
 
 execute at @s run function luigis_mansion:entities/ghost/hidden_tick
 execute at @s run function luigis_mansion:animations/mr_bones/idle
-tag @s[tag=spawn] add appear
+tag @s[tag=spawn,tag=!no_appear] add appear
 tag @s remove spawn
 
 execute unless entity @s[tag=!dead,tag=!remove_from_existence] run teleport @e[tag=this_model] ~ -100 ~
