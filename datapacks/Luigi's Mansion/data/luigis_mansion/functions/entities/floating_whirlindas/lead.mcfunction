@@ -16,8 +16,6 @@ execute if entity @s[scores={Dialog=300..319}] if score #mirrored Selected match
 execute if entity @s[scores={Dialog=300..319}] if score #mirrored Selected matches 1 positioned ^ ^ ^0.7 as @e[tag=this_model,tag=floating_whirlindas_female,limit=1] rotated as @s run teleport @s ~ ~ ~ ~-18 ~
 execute if entity @s[scores={Dialog=300}] run scoreboard players set @s AnimationProg 0
 execute if entity @s[scores={Dialog=300}] run scoreboard players set @e[tag=this_model,tag=floating_whirlindas_female,limit=1] AnimationProg 0
-tag @s[scores={Dialog=300}] add bow
-tag @s[scores={Dialog=420}] remove bow
 execute if entity @s[scores={Dialog=420}] run scoreboard players set @s Dialog 0
 
 execute if entity @s[tag=!visible] run particle minecraft:dust 1 1 0.66 1 ~ ~0.6 ~ 0.3 0.3 0.3 0 5

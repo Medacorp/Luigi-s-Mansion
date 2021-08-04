@@ -26,6 +26,6 @@ tag @s[scores={Dialog=212}] remove move
 tag @s[scores={Dialog=212}] add vanish
 scoreboard players set @s[scores={Dialog=212}] Dialog 0
 
-execute at @s[tag=complain,tag=!vanish] run function luigis_mansion:animations/lydia/complain
-execute at @s[tag=move] run function luigis_mansion:animations/lydia/move
-execute at @s[tag=!complain,tag=!move,tag=!vanish] run function luigis_mansion:animations/lydia/idle
+execute at @s[scores={Dialog=40..99},tag=!vanish] run function luigis_mansion:animations/lydia/complain
+execute at @s[scores={Dialog=100..211},tag=!vanish] run function luigis_mansion:animations/lydia/move
+execute at @s[scores={Dialog=..98},tag=!vanish] run function luigis_mansion:animations/lydia/idle
