@@ -40,7 +40,7 @@ execute unless data storage luigis_mansion:data current_state.current_data.rooms
 execute unless data storage luigis_mansion:data current_state.current_data.rooms.hallway_14{cleared:1b} run tag @s[scores={Room=40}] add dark_room
 execute unless data storage luigis_mansion:data current_state.current_data.rooms.hallway_15{cleared:1b} run tag @s[scores={Room=41}] add dark_room
 execute unless data storage luigis_mansion:data current_state.current_data.rooms.washroom_2{cleared:1b} run tag @s[scores={Room=42}] add dark_room
-execute unless data storage luigis_mansion:data current_state.current_data.rooms.batheroom_2{cleared:1b} run tag @s[scores={Room=43}] add dark_room
+execute unless data storage luigis_mansion:data current_state.current_data.rooms.bathroom_2{cleared:1b} run tag @s[scores={Room=43}] add dark_room
 execute unless data storage luigis_mansion:data current_state.current_data.rooms.nanas_room{cleared:1b} run tag @s[scores={Room=44}] add dark_room
 execute unless data storage luigis_mansion:data current_state.current_data.rooms.astral_hall{cleared:1b} run tag @s[scores={Room=45}] add dark_room
 execute unless data storage luigis_mansion:data current_state.current_data.rooms.observatory{cleared:1b} run tag @s[scores={Room=46}] add dark_room
