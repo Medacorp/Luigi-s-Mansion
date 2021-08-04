@@ -15,5 +15,8 @@ execute in minecraft:overworld run setblock 27 0 0 minecraft:bedrock
 kill @e[distance=..0.1,type=minecraft:item,limit=1]
 function luigis_mansion:other/get_luigi_color
 execute as @e[tag=luigi_model,tag=new] store result entity @s ArmorItems[3].tag.display.color int 1 run scoreboard players get #temp Time
+execute if score #temp2 Time matches 1 as @e[tag=luigi_model,tag=new,nbt={ArmorItems:[{tag:{CustomModelData:18}}]}] run data modify entity @s ArmorItems[3].tag.CustomModelData set value 21
+execute if score #temp2 Time matches 1 as @e[tag=luigi_model,tag=new,nbt={ArmorItems:[{tag:{CustomModelData:19}}]}] run data modify entity @s ArmorItems[3].tag.CustomModelData set value 22
 scoreboard players reset #temp Time
+scoreboard players reset #temp2 Time
 tag @e[tag=luigi_model,tag=new] remove new

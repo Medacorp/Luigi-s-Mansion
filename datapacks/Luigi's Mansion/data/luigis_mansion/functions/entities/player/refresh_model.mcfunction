@@ -16,6 +16,8 @@ execute in minecraft:overworld run data modify entity @e[tag=luigi_model,tag=sou
 execute in minecraft:overworld run setblock 27 0 0 minecraft:bedrock
 kill @e[distance=..0.1,type=minecraft:item,limit=1]
 execute as @e[tag=luigi_model,tag=new] run data modify entity @s ArmorItems[3].tag.display.color set from entity @e[tag=me,tag=!source,limit=1] ArmorItems[3].tag.display.color
+execute as @e[tag=luigi_model,tag=new,nbt={ArmorItems:[{tag:{CustomModelData:18}}]}] run data modify entity @s ArmorItems[3].tag.CustomModelData set from entity @e[tag=me,tag=chest,limit=1] ArmorItems[3].tag.CustomModelData
+execute as @e[tag=luigi_model,tag=new,nbt={ArmorItems:[{tag:{CustomModelData:19}}]}] run data modify entity @s ArmorItems[3].tag.CustomModelData set from entity @e[tag=me,tag=right_arm,tag=!held_item,limit=1] ArmorItems[3].tag.CustomModelData
 tag @e[tag=luigi_model,tag=new] remove new
 tag @e[tag=luigi_model,tag=me] add dead
 scoreboard players reset #temp ID
