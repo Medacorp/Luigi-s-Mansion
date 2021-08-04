@@ -1,14 +1,14 @@
 execute if entity @a[scores={EGaddTrainChoice=1..},limit=1] run scoreboard players add @s[scores={Dialog=2717..}] Dialog 1
 scoreboard players add @s[scores={Dialog=2128..2716}] Dialog 1
-execute unless entity @e[tag=gold_dummy_ghost,limit=1] run scoreboard players add @s[scores={Dialog=2127}] Dialog 1
+execute unless entity @e[tag=ghost,scores={Room=-2},limit=1] run scoreboard players add @s[scores={Dialog=2127}] Dialog 1
 scoreboard players add @s[scores={Dialog=1974..2126}] Dialog 1
-execute unless entity @e[tag=gold_dummy_ghost,limit=1] run scoreboard players add @s[scores={Dialog=1973}] Dialog 1
+execute unless entity @e[tag=ghost,scores={Room=-2},limit=1] run scoreboard players add @s[scores={Dialog=1973}] Dialog 1
 scoreboard players add @s[scores={Dialog=1652..1972}] Dialog 1
-execute unless entity @e[tag=gold_dummy_ghost,limit=1] run scoreboard players add @s[scores={Dialog=1651}] Dialog 1
+execute unless entity @e[tag=ghost,scores={Room=-2},limit=1] run scoreboard players add @s[scores={Dialog=1651}] Dialog 1
 scoreboard players add @s[scores={Dialog=1490..1650}] Dialog 1
-execute unless entity @e[tag=gold_dummy_ghost,limit=1] run scoreboard players add @s[scores={Dialog=1489}] Dialog 1
+execute unless entity @e[tag=ghost,scores={Room=-2},limit=1] run scoreboard players add @s[scores={Dialog=1489}] Dialog 1
 scoreboard players add @s[scores={Dialog=1274..1488}] Dialog 1
-execute unless entity @e[tag=gold_dummy_ghost,limit=1] run scoreboard players add @s[scores={Dialog=1273}] Dialog 1
+execute unless entity @e[tag=ghost,scores={Room=-2},limit=1] run scoreboard players add @s[scores={Dialog=1273}] Dialog 1
 scoreboard players add @s[scores={Dialog=..1272}] Dialog 1
 scoreboard players add @s[scores={Dialog=2812..}] Dialog 1
 execute if entity @a[scores={Health=1},tag=same_room] run scoreboard players set @s[scores={Dialog=..2812}] Dialog 2812
@@ -120,7 +120,7 @@ execute if entity @s[scores={Dialog=2812}] run scoreboard players set @a[tag=sam
 execute if entity @s[scores={Dialog=2812}] run scoreboard players set @a[tag=same_room] Pull 0
 execute if entity @s[scores={Dialog=2812}] run scoreboard players set #training_room GhostCaught 0
 execute if entity @s[scores={Dialog=2812}] as @a[tag=same_room] at @s run function luigis_mansion:entities/player/poltergust_breakage
-execute if entity @s[scores={Dialog=2812}] run tag @e[tag=gold_dummy_ghost,tag=!fleeing] add vanish
+execute if entity @s[scores={Dialog=2812}] run tag @e[tag=ghost,scores={Room=-2},tag=!fleeing] add vanish
 execute if entity @s[scores={Dialog=2812}] if score #players Totals matches 1 run tellraw @a[tag=same_room] {"translate":"chat.type.text","with":[{"translate":"luigis_mansion:entity.e_gadd","color":"green"},{"translate":"luigis_mansion:dialog.training_room.0","with":[{"selector":"@a[gamemode=!spectator]"}]}]}
 execute if entity @s[scores={Dialog=2812}] if score #players Totals matches 2.. run tellraw @a[tag=same_room] {"translate":"chat.type.text","with":[{"translate":"luigis_mansion:entity.e_gadd","color":"green"},{"translate":"luigis_mansion:dialog.training_room.0.more"}]}
 execute if entity @s[scores={Dialog=2936}] run scoreboard players set @s Dialog 735
