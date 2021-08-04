@@ -1,14 +1,26 @@
 scoreboard players add @s[scores={Dialog=2..60}] Dialog 1
 execute positioned ~3 ~ ~ if block ^ ^ ^2 minecraft:air run scoreboard players add @s[scores={Dialog=1}] Dialog 1
 execute unless entity @s[scores={Dialog=1..}] run scoreboard players add @s Dialog 1
-execute if entity @s[scores={Dialog=1}] at @e[tag=same_room,tag=!spectator] positioned ^ ^ ^8 run effect give @s[distance=..8] minecraft:invisibility 1 0 true
-execute if entity @s[scores={Dialog=61},tag=!frozen] at @e[tag=same_room,tag=!spectator] positioned ^ ^ ^8 run effect give @s[distance=..8] minecraft:invisibility 1 0 true
+execute unless entity @s[scores={Dialog=3..59}] run function luigis_mansion:entities/miss_petunia/turn_visible
+execute if entity @s[scores={Dialog=1},tag=visible] at @e[tag=same_room,tag=!spectator] positioned ^ ^ ^8 if entity @s[distance=..8] run function luigis_mansion:entities/miss_petunia/turn_invisible
+execute if entity @s[scores={Dialog=61,VulnerableTime=0},tag=visible] at @e[tag=same_room,tag=!spectator] positioned ^ ^ ^8 if entity @s[distance=..8] run function luigis_mansion:entities/miss_petunia/turn_invisible
 effect clear @s[nbt={ActiveEffects:[{Id:14b,Duration:19}]}] minecraft:invisibility
+scoreboard players set @s[scores={Dialog=20}] AnimationProg 0
 execute if entity @s[scores={Dialog=20..59}] facing entity @e[tag=same_room,tag=!spectator,sort=nearest,limit=1] feet run teleport @s ~ ~ ~ ~ ~
+scoreboard players set @s[scores={Dialog=50}] AnimationProg 0
 execute if entity @s[scores={Dialog=59}] run function luigis_mansion:entities/miss_petunia/attack
-execute if entity @s[scores={Dialog=60}] run teleport @s ~ ~ ~ ~ 0
-execute if entity @s[scores={Dialog=60}] store result entity @s Rotation[0] float 1 run scoreboard players get @s HomeRot
+execute if entity @s[scores={Dialog=60,VulnerableTime=0}] run teleport @s ~ ~ ~ ~ 0
+execute if entity @s[scores={Dialog=60,VulnerableTime=0}] store result entity @s Rotation[0] float 1 run scoreboard players get @s HomeRot
+scoreboard players set @s[scores={Dialog=2..,VulnerableTime=1}] AnimationProg 1
+scoreboard players set @s[scores={Dialog=2..,VulnerableTime=0},tag=frozen] AnimationProg 0
 scoreboard players set @s[scores={Dialog=2..},tag=frozen,tag=!vanish] VulnerableTime 60
-execute if entity @s[scores={Dialog=2..},tag=frozen] unless data storage luigis_mansion:data current_state.current_data.technical_data{miss_petunia_spoke:1b} run tellraw @a[tag=same_room] {"translate":"chat.type.text","with":[{"translate":"luigis_mansion:entity.miss_petunia","color":"green"},{"translate":"luigis_mansion:message.miss_petunia.freeze"}]}
-execute if entity @s[scores={Dialog=2..},tag=frozen] run data modify storage luigis_mansion:data current_state.current_data.technical_data merge value {miss_petunia_spoke:1b}
+scoreboard players set @s[scores={Dialog=2..60},tag=frozen,tag=!vanish] Dialog 61
+execute if entity @s[scores={Dialog=61,VulnerableTime=1..}] facing entity @e[tag=same_room,tag=!spectator,sort=nearest,limit=1] feet run teleport @s ~ ~ ~ ~ ~
+execute if entity @s[scores={Dialog=61},tag=frozen] unless data storage luigis_mansion:data current_state.current_data.technical_data{miss_petunia_spoke:1b} run tellraw @a[tag=same_room] {"translate":"chat.type.text","with":[{"translate":"luigis_mansion:entity.miss_petunia","color":"green"},{"translate":"luigis_mansion:message.miss_petunia.freeze"}]}
+execute if entity @s[scores={Dialog=61},tag=frozen] run data modify storage luigis_mansion:data current_state.current_data.technical_data merge value {miss_petunia_spoke:1b}
 tag @s remove frozen
+
+execute at @s[scores={Dialog=20..49}] run function luigis_mansion:animations/miss_petunia/panic
+execute at @s[scores={Dialog=50..59}] run function luigis_mansion:animations/miss_petunia/spit
+execute at @s[scores={VulnerableTime=1..}] run function luigis_mansion:animations/miss_petunia/shiver
+execute at @s[scores={VulnerableTime=0},tag=!vanish] unless entity @s[scores={Dialog=20..59}] run function luigis_mansion:animations/miss_petunia/idle
