@@ -1,5 +1,5 @@
-teleport @s ~ ~-0.15 ~ ~ ~
-teleport @e[tag=this_model,tag=e_gadd_body,limit=1] ~ ~-0.7 ~ ~ ~
+teleport @s ~ ~-0.35 ~ ~ ~
+teleport @e[tag=this_model,tag=e_gadd_body,limit=1] ~ ~-0.9 ~ ~ ~
 scoreboard players add @s AnimationProg 1
 data merge entity @s[scores={AnimationProg=1}] {Pose:{RightArm:[0.0f,0.01f,0.0f],LeftArm:[0.0f,-0.01f,0.0f],Head:[10.0f,0.0f,0.01f]}}
 execute if entity @s[scores={AnimationProg=1}] run data merge entity @e[tag=this_model,tag=e_gadd_body,limit=1] {Pose:{RightArm:[0.0f,0.0f,0.01f],LeftArm:[0.0f,0.0f,0.01f],Head:[0.0f,0.0f,0.01f]}}

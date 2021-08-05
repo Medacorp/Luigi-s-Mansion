@@ -14,15 +14,7 @@ execute if entity @s[scores={AnimationProg=14}] run teleport @e[tag=this_model,t
 teleport @s[scores={AnimationProg=15}] ~ ~-0.4 ~ ~ ~
 execute if entity @s[scores={AnimationProg=15}] run teleport @e[tag=this_model,tag=e_gadd_body,limit=1] ~ ~-0.95 ~ ~ ~
 teleport @s[scores={AnimationProg=16}] ~ ~-0.35 ~ ~ ~
-execute if entity @s[scores={AnimationProg=16}] run teleport @e[tag=this_model,tag=e_gadd_body,limit=1] ~ ~-0.9 ~ ~ ~
-teleport @s[scores={AnimationProg=17}] ~ ~-0.3 ~ ~ ~
-execute if entity @s[scores={AnimationProg=17}] run teleport @e[tag=this_model,tag=e_gadd_body,limit=1] ~ ~-0.85 ~ ~ ~
-teleport @s[scores={AnimationProg=18}] ~ ~-0.25 ~ ~ ~
-execute if entity @s[scores={AnimationProg=18}] run teleport @e[tag=this_model,tag=e_gadd_body,limit=1] ~ ~-0.8 ~ ~ ~
-teleport @s[scores={AnimationProg=19}] ~ ~-0.2 ~ ~ ~
-execute if entity @s[scores={AnimationProg=19}] run teleport @e[tag=this_model,tag=e_gadd_body,limit=1] ~ ~-0.75 ~ ~ ~
-teleport @s[scores={AnimationProg=20}] ~ ~-0.15 ~ ~ ~
-execute if entity @s[scores={AnimationProg=20}] run teleport @e[tag=this_model,tag=e_gadd_body,limit=1] ~ ~-0.7 ~ ~ ~
+execute if entity @s[scores={AnimationProg=16..20}] run teleport @e[tag=this_model,tag=e_gadd_body,limit=1] ~ ~-0.9 ~ ~ ~
 execute store result score #temp Time run data get entity @s Pose.RightArm[0]
 execute if entity @s[scores={AnimationProg=1..10}] store result entity @s Pose.RightArm[0] float 1 run scoreboard players remove #temp Time 2
 execute if entity @s[scores={AnimationProg=11..20}] store result entity @s Pose.RightArm[0] float 1 run scoreboard players add #temp Time 3
