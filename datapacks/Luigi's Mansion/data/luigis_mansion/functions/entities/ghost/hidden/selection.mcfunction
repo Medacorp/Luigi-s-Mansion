@@ -5,6 +5,7 @@ execute if data entity @s ArmorItems[{id:"minecraft:stone_button"}] run data mod
 execute if data entity @s HandItems[{id:"minecraft:stone_button"}] run data modify entity @s HandItems[0].id set value "minecraft:diamond_pickaxe"
 execute if data entity @s HandItems[{id:"minecraft:stone_button"}] run data modify entity @s HandItems[1].id set value "minecraft:diamond_pickaxe"
 data modify entity @s CustomNameVisible set value 1b
+data modify entity @s Marker set value 0b
 execute as @e[tag=this_model] if data entity @s ArmorItems[{id:"minecraft:oak_button"}] run data modify entity @s ArmorItems[3].id set value "minecraft:leather_chestplate"
 execute as @e[tag=this_model] if data entity @s HandItems[{id:"minecraft:oak_button"}] run data modify entity @s HandItems[0].id set value "minecraft:leather_chestplate"
 execute as @e[tag=this_model] if data entity @s HandItems[{id:"minecraft:oak_button"}] run data modify entity @s HandItems[1].id set value "minecraft:leather_chestplate"
