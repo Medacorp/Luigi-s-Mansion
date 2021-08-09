@@ -22,10 +22,10 @@ execute if entity @s[scores={RotationDif=-60000..60000}] if entity @s[tag=!looki
 execute unless entity @s[scores={RotationDif=-60000..60000}] if entity @s[tag=!looking_at_map] store result entity @s Rotation[0] float 0.001 run scoreboard players get #temp PlayerRotation
 scoreboard players reset #temp PlayerRotation
 
-data modify entity @s[tag=dark_room,nbt={ArmorItems:[{tag:{CustomModelData:19}}]}] ArmorItems[3].tag.CustomModelData set value 20
-data modify entity @s[tag=!dark_room,nbt={ArmorItems:[{tag:{CustomModelData:20}}]}] ArmorItems[3].tag.CustomModelData set value 19
-data modify entity @s[tag=dark_room,nbt={ArmorItems:[{tag:{CustomModelData:22}}]}] ArmorItems[3].tag.CustomModelData set value 23
-data modify entity @s[tag=!dark_room,nbt={ArmorItems:[{tag:{CustomModelData:23}}]}] ArmorItems[3].tag.CustomModelData set value 22
+data modify entity @s[tag=dark_room,nbt={ArmorItems:[{tag:{CustomModelData:18}}]}] ArmorItems[3].tag.CustomModelData set value 20
+data modify entity @s[tag=!dark_room,nbt={ArmorItems:[{tag:{CustomModelData:20}}]}] ArmorItems[3].tag.CustomModelData set value 18
+data modify entity @s[tag=dark_room,nbt={ArmorItems:[{tag:{CustomModelData:21}}]}] ArmorItems[3].tag.CustomModelData set value 23
+data modify entity @s[tag=!dark_room,nbt={ArmorItems:[{tag:{CustomModelData:23}}]}] ArmorItems[3].tag.CustomModelData set value 21
 
 # Look up/down
 execute if entity @s[tag=!looking_at_map] store result entity @s Pose.Head[0] float 1 run data get entity @a[tag=this_luigi,limit=1] Rotation[1] 1

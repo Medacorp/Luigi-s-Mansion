@@ -18,9 +18,9 @@ execute if entity @s[tag=hurt_elemental_ghost,tag=!was_hurt] run scoreboard play
 execute if entity @s[tag=fire,tag=hurt_elemental_ghost,tag=!was_hurt] run playsound luigis_mansion:entity.fire_elemental_ghost.hurt
 execute if entity @s[tag=water,tag=hurt_elemental_ghost,tag=!was_hurt] run playsound luigis_mansion:entity.water_elemental_ghost.hurt
 execute if entity @s[tag=ice,tag=hurt_elemental_ghost,tag=!was_hurt] run playsound luigis_mansion:entity.ice_elemental_ghost.hurt
-data merge entity @s[tag=fire,tag=hurt_elemental_ghost,tag=!was_hurt] {ArmorItems:[{},{},{},{id:"minecraft:diamond_pickaxe",Count:1b,tag:{Unbreakable:1b,Damage:1,CustomModelData:103}}]}
-data merge entity @s[tag=water,tag=hurt_elemental_ghost,tag=!was_hurt] {ArmorItems:[{},{},{},{id:"minecraft:diamond_pickaxe",Count:1b,tag:{Unbreakable:1b,Damage:1,CustomModelData:105}}]}
-data merge entity @s[tag=ice,tag=hurt_elemental_ghost,tag=!was_hurt] {ArmorItems:[{},{},{},{id:"minecraft:diamond_pickaxe",Count:1b,tag:{Unbreakable:1b,Damage:1,CustomModelData:107}}]}
+data merge entity @s[tag=fire,tag=hurt_elemental_ghost,tag=!was_hurt] {ArmorItems:[{},{},{},{id:"minecraft:diamond_pickaxe",Count:1b,tag:{Unbreakable:1b,Damage:1,CustomModelData:105}}]}
+data merge entity @s[tag=water,tag=hurt_elemental_ghost,tag=!was_hurt] {ArmorItems:[{},{},{},{id:"minecraft:diamond_pickaxe",Count:1b,tag:{Unbreakable:1b,Damage:1,CustomModelData:107}}]}
+data merge entity @s[tag=ice,tag=hurt_elemental_ghost,tag=!was_hurt] {ArmorItems:[{},{},{},{id:"minecraft:diamond_pickaxe",Count:1b,tag:{Unbreakable:1b,Damage:1,CustomModelData:109}}]}
 tag @s[tag=hurt_elemental_ghost] add was_hurt
 execute at @s[scores={SpawnTime=80..},tag=!bounce] if block ~ ~-0.1 ~ #luigis_mansion:item_pull_ignore run teleport @s ~ ~-0.1 ~
 execute at @s[scores={SpawnTime=80..},tag=bounce] if block ~ ~0.4 ~ #luigis_mansion:item_pull_ignore run teleport @s ~ ~0.1 ~
