@@ -1,0 +1,1 @@
+execute if block ~ ~ ~ minecraft:brewing_stand unless block ~ ~ ~ minecraft:brewing_stand[has_bottle_0=true,has_bottle_1=true,has_bottle_2=true] run function luigis_mansion:spawn_furniture/lit_candles

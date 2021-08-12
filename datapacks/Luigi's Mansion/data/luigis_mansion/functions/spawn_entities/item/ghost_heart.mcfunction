@@ -1,4 +1,4 @@
-execute if score #ghost_heart_size Selected matches 1.. run summon minecraft:armor_stand ~ ~-1 ~ {CustomName:'{"translate":"luigis_mansion:item.heart"}',Pose:{Head:[0.0f,0.0f,0.01f]},Marker:1b,Invisible:1b,Silent:1b,ArmorItems:[{},{},{},{id:"minecraft:diamond_pickaxe",Count:1b,tag:{Unbreakable:1b,Damage:5,CustomModelData:13,luigis_mansion:{size:20}}}],Tags:["item","heart","this_entity"],DisabledSlots:2039583}
+execute if score #ghost_heart_size Selected matches 1.. run summon minecraft:armor_stand ~ ~-1 ~ {CustomName:'{"translate":"luigis_mansion:item.heart"}',Pose:{Head:[0.0f,0.0f,0.01f]},Invisible:1b,Silent:1b,ArmorItems:[{},{},{},{id:"minecraft:diamond_pickaxe",Count:1b,tag:{Unbreakable:1b,Damage:5,CustomModelData:13,luigis_mansion:{size:20}}}],Tags:["item","heart","this_entity"],DisabledSlots:2039583}
 execute store result entity @e[tag=this_entity,limit=1] ArmorItems[3].tag.luigis_mansion.size int 1 run scoreboard players get #ghost_heart_size Selected
 execute if score #ghost_heart_size Selected matches 40.. run data modify entity @e[tag=this_entity,limit=1] ArmorItems[3].tag.CustomModelData set value 14
 loot spawn ~ ~ ~ loot luigis_mansion:gameplay/0_90

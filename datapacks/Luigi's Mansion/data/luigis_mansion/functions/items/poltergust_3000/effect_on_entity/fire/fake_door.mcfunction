@@ -1,0 +1,1 @@
+tag @s[tag=fake_door] add dead

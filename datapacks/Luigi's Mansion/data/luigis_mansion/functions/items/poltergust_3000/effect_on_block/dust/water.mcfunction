@@ -1,0 +1,1 @@
+execute if block ~ ~ ~ minecraft:water run particle minecraft:bubble ~ ~ ~ 0 0 0 0 1 normal @a[tag=same_room]

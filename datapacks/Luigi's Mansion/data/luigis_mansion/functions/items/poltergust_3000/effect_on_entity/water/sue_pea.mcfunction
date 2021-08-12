@@ -1,0 +1,1 @@
+tag @s[tag=sue_pea] add watered

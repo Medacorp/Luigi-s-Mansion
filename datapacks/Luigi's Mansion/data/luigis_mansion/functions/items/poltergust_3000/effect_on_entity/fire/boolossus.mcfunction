@@ -1,0 +1,1 @@
+scoreboard players set @s[tag=vacuumable,tag=boolossus] Dialog 0

@@ -1,0 +1,1 @@
+tag @s[tag=clockwork_soldier,tag=!windless] add in_vacuum

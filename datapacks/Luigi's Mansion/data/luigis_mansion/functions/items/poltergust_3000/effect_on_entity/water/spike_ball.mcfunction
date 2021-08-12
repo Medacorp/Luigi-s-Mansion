@@ -1,0 +1,1 @@
+tag @s[tag=spike_ball] add dead

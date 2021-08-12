@@ -1,0 +1,9 @@
+{
+	"values": [
+		"luigis_mansion:items/poltergust_3000/effect_on_entity/water/air",
+        "luigis_mansion:items/poltergust_3000/effect_on_entity/water/campfires",
+        "luigis_mansion:items/poltergust_3000/effect_on_entity/water/standing_candles",
+        "luigis_mansion:items/poltergust_3000/effect_on_entity/water/wall_candles",
+        "luigis_mansion:items/poltergust_3000/effect_on_entity/water/interact"
+	]
+}

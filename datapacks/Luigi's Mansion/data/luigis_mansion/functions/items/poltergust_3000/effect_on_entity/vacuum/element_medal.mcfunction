@@ -1,0 +1,1 @@
+execute positioned ~ ~-1.1 ~ positioned as @s[tag=vacuumable,distance=..1.4,tag=item,tag=element_medal] run function luigis_mansion:entities/item/pull

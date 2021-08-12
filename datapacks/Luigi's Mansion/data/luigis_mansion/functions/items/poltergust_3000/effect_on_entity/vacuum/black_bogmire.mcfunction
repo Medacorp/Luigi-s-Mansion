@@ -1,0 +1,1 @@
+tag @s[tag=black_bogmire] add in_vacuum

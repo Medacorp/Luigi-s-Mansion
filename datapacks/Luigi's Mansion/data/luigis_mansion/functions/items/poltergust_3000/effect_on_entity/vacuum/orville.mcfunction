@@ -1,0 +1,1 @@
+tag @s[tag=orville,tag=!planeless] add in_vacuum

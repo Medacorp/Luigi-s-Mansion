@@ -1,0 +1,2 @@
+execute positioned ~ ~-1.1875 ~ positioned as @s[tag=billiards_ball,scores={SpawnTime=20..},distance=..0.7] positioned ~ ~1.1875 ~ if block ^ ^ ^0.3 #luigis_mansion:ghosts_ignore unless entity @a[tag=me,distance=..1.2,limit=1] positioned ~ ~-1.1875 ~ run teleport @s ^ ^ ^0.1
+execute positioned ~ ~-1.1875 ~ run tag @s[tag=billiards_ball,scores={SpawnTime=20..},distance=..0.7] add in_vacuum

@@ -1,1 +1,0 @@
-execute positioned ~ ~-1.1 ~ as @e[tag=vacuumable,distance=..1.4,tag=item,tag=blue_sapphire] positioned as @s run function luigis_mansion:entities/item/pull

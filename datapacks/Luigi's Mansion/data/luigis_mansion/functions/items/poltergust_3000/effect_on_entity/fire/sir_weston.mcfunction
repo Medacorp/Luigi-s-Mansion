@@ -1,0 +1,1 @@
+tag @s[tag=sir_weston,scores={Dialog=423..}] add melt

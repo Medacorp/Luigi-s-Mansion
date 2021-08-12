@@ -1,3 +1,7 @@
+tag @s remove expelling_dust
+tag @s remove expelling_fire
+tag @s remove expelling_water
+tag @s remove expelling_ice
 tag @s remove vacuuming
 tag @s remove poltergust_selected
 tag @s remove vacuuming_ghost

@@ -1,0 +1,1 @@
+tag @s[tag=jarvis,tag=can_freeze,tag=appeared] add frozen

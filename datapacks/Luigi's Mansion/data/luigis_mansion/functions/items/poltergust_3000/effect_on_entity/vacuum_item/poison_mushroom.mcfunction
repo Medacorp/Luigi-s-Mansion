@@ -1,1 +1,0 @@
-execute positioned ~ ~-1.4 ~ as @e[tag=vacuumable,distance=..1.4,tag=item,tag=poison_mushroom] positioned as @s run function luigis_mansion:entities/item/pull_heart

@@ -1,0 +1,3 @@
+tag @s[tag=ghost,tag=!burning_heart,tag=!frozen_heart,tag=!vacuumable,tag=!portrait_ghost,tag=!boo,tag=!hurt_animation,tag=!vanish,tag=!appear,tag=!fleeing,tag=!elemental_ghost] add element_hurt
+tag @s[tag=ghost,tag=!burning_heart,tag=!frozen_heart,tag=!vacuumable,tag=!portrait_ghost,tag=!boo,tag=!hurt_animation,tag=!vanish,tag=!appear,tag=!boolossus,tag=!fleeing,tag=!elemental_ghost] add freeze
+execute if entity @s[tag=ghost,tag=!burning_heart,tag=!frozen_heart,tag=!vacuumable,tag=!portrait_ghost,tag=!boo,tag=!hurt_animation,tag=!vanish,tag=!appear,tag=!fleeing,tag=!elemental_ghost] run function luigis_mansion:items/poltergust_3000/latch_onto_ghost

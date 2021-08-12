@@ -1,1 +1,0 @@
-execute positioned ~ ~-1.3 ~ as @e[tag=vacuumable,distance=..1.4,tag=item,tag=bill] positioned as @s run function luigis_mansion:entities/item/pull_bill

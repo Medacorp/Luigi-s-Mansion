@@ -1,0 +1,2 @@
+execute if entity @s[tag=haunted_object] unless entity @s[tag=!haunted_music_sheet,tag=!moving] unless entity @s[tag=haunted_music_sheet,scores={WaitTime=..0}] run tag @s add element_death
+execute if entity @s[tag=haunted_object] unless entity @s[tag=!haunted_music_sheet,tag=!moving] unless entity @s[tag=haunted_music_sheet,scores={WaitTime=..0}] run function luigis_mansion:items/poltergust_3000/latch_onto_ghost
