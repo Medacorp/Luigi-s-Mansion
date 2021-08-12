@@ -77,6 +77,7 @@ scoreboard objectives add Offline minecraft.custom:minecraft.leave_game
 scoreboard objectives add OtherX dummy
 scoreboard objectives add OtherY dummy
 scoreboard objectives add OtherZ dummy
+scoreboard objectives add Owner dummy
 scoreboard objectives add PassiveNr dummy
 scoreboard objectives add PathStep dummy
 scoreboard objectives add PlayerRotation dummy
