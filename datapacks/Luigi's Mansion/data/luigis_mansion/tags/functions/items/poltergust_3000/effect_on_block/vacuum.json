@@ -1,11 +1,11 @@
 {
 	"values": [
-		"luigis_mansion:items/poltergust_3000/effect_on_entity/vacuum/air",
-        "luigis_mansion:items/poltergust_3000/effect_on_entity/vacuum/water",
-        "luigis_mansion:items/poltergust_3000/effect_on_entity/vacuum/campfires",
-        "luigis_mansion:items/poltergust_3000/effect_on_entity/vacuum/standing_candles",
-        "luigis_mansion:items/poltergust_3000/effect_on_entity/vacuum/wall_candles",
-        "luigis_mansion:items/poltergust_3000/effect_on_entity/vacuum/doors",
-        "luigis_mansion:items/poltergust_3000/effect_on_entity/vacuum/interact"
+		"luigis_mansion:items/poltergust_3000/effect_on_block/vacuum/air",
+        "luigis_mansion:items/poltergust_3000/effect_on_block/vacuum/water",
+        "luigis_mansion:items/poltergust_3000/effect_on_block/vacuum/campfires",
+        "luigis_mansion:items/poltergust_3000/effect_on_block/vacuum/standing_candles",
+        "luigis_mansion:items/poltergust_3000/effect_on_block/vacuum/wall_candles",
+        "luigis_mansion:items/poltergust_3000/effect_on_block/vacuum/doors",
+        "luigis_mansion:items/poltergust_3000/effect_on_block/vacuum/interact"
 	]
 }

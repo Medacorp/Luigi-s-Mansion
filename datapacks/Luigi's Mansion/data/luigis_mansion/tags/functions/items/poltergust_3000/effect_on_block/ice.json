@@ -1,9 +1,9 @@
 {
 	"values": [
-		"luigis_mansion:items/poltergust_3000/effect_on_entity/ice/air",
-        "luigis_mansion:items/poltergust_3000/effect_on_entity/ice/campfires",
-        "luigis_mansion:items/poltergust_3000/effect_on_entity/ice/standing_candles",
-        "luigis_mansion:items/poltergust_3000/effect_on_entity/ice/wall_candles",
-        "luigis_mansion:items/poltergust_3000/effect_on_entity/ice/interact"
+		"luigis_mansion:items/poltergust_3000/effect_on_block/ice/air",
+        "luigis_mansion:items/poltergust_3000/effect_on_block/ice/campfires",
+        "luigis_mansion:items/poltergust_3000/effect_on_block/ice/standing_candles",
+        "luigis_mansion:items/poltergust_3000/effect_on_block/ice/wall_candles",
+        "luigis_mansion:items/poltergust_3000/effect_on_block/ice/interact"
 	]
 }
