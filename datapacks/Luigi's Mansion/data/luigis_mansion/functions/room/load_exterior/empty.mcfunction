@@ -3,9 +3,12 @@ scoreboard players set * ChangedMansion 1
 scoreboard players reset @e ChangedMansion
 
 tellraw @a {"translate":"chat.type.text","with":[{"translate":"luigis_mansion:entity.mansion","color":"green"},{"translate":"luigis_mansion:message.load_mansion.start"}]}
-kill @e[x=615,y=92,z=-66,dx=107,dy=60,dz=147,type=minecraft:item_frame]
+summon minecraft:marker ~ ~ ~ {Tags:["me"]}
+spreadplayers 774 3 0 1 true @e[type=minecraft:marker,tag=me,limit=1]
+kill @e[type=minecraft:marker,tag=me,limit=1]
 setblock 771 97 13 minecraft:air
 setblock 771 97 2 minecraft:air
+forceload add 749 -66 615 81
 setblock 711 138 78 minecraft:structure_block[mode=load]{mode:"LOAD",name:"luigis_mansion:mansion/empty/24",posX:1,posY:0,posZ:1,sizeX:37,sizeY:13,sizeZ:2,ignoreEntities:1b}
 setblock 711 139 78 minecraft:redstone_block
 fill 711 138 78 711 139 78 minecraft:air
@@ -78,5 +81,5 @@ fill 615 100 -18 615 101 -18 minecraft:air
 setblock 615 100 -66 minecraft:structure_block[mode=load]{mode:"LOAD",name:"luigis_mansion:mansion/empty/1",posX:1,posY:-10,posZ:1,sizeX:48,sizeY:48,sizeZ:48,ignoreEntities:1b}
 setblock 615 101 -66 minecraft:redstone_block
 fill 615 100 -66 615 101 -66 minecraft:air
-kill @e[x=615,y=92,z=-66,dx=107,dy=60,dz=147,type=minecraft:item]
+forceload remove 749 -66 615 81
 tellraw @a {"translate":"chat.type.text","with":[{"translate":"luigis_mansion:entity.mansion","color":"green"},{"translate":"luigis_mansion:message.load_mansion.stop"}]}

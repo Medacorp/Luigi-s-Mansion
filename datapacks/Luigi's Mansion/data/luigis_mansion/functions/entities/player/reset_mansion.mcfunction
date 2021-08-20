@@ -1,4 +1,5 @@
 scoreboard players set * ResetMansion
+function #luigis_mansion:room/remove_forceloaded_chunks
 execute as @a run function luigis_mansion:other/load_data/reset_mansion_data
 execute unless score #loaded_exterior Selected matches -1 in minecraft:overworld run function luigis_mansion:room/load_exterior/empty
 scoreboard players set #mansion_type Selected -1

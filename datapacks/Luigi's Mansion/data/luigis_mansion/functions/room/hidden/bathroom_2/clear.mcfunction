@@ -1,5 +1,5 @@
 function luigis_mansion:room/hidden/bathroom_2/turn_on_lights
-execute if entity @a[tag=looking_at_map,limit=1] run function luigis_mansion:items/gameboy_horror/map/display/hidden/bathroom_2
+execute if entity @a[tag=looking_at_map,limit=1] run function luigis_mansion:items/gameboy_horror/map/display/hidden/generate
 playsound luigis_mansion:block.chest.spawn block @a 656 20 -3 2
 execute as @a[scores={Room=43},gamemode=!spectator] unless entity @s[scores={MusicGroup=0,MusicType=14}] run function luigis_mansion:other/music/set/light
 scoreboard players set #room Room 43

@@ -58,7 +58,7 @@ execute if score #breaker_room Ticking matches 1 unless data storage luigis_mans
 execute if score #breaker_room Ticking matches 1 unless data storage luigis_mansion:data current_state.current_data.used_keys{breaker_room:1b} run scoreboard players set @a[scores={Room=57},tag=looking_at_map] HomeX 71450
 execute if score #breaker_room Ticking matches 1 unless data storage luigis_mansion:data current_state.current_data.used_keys{breaker_room:1b} run scoreboard players set @a[scores={Room=57},tag=looking_at_map] HomeY 200
 execute if score #breaker_room Ticking matches 1 unless data storage luigis_mansion:data current_state.current_data.used_keys{breaker_room:1b} run scoreboard players set @a[scores={Room=57},tag=looking_at_map] HomeZ -4650
-execute if entity @a[tag=looking_at_map,limit=1] run function luigis_mansion:items/gameboy_horror/map/display/normal/door/hallway_7_breaker_room
+execute if entity @a[tag=looking_at_map,limit=1] run function luigis_mansion:items/gameboy_horror/map/display/normal/generate
 execute if score #breaker_room Ticking matches 1 run function #luigis_mansion:room/normal/breaker_room/turn_lights/off
 execute if score #cellar Ticking matches 1 run function #luigis_mansion:room/normal/cellar/turn_lights/off
 execute if score #hallway_20 Ticking matches 1 run function #luigis_mansion:room/normal/hallway_20/turn_lights/off

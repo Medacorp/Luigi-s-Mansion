@@ -1,3 +1,4 @@
+forceload add 4859 -101 4668 83
 function luigis_mansion:items/gameboy_horror/map/display/lab/clear
 function luigis_mansion:items/gameboy_horror/map/display/lab/underground_lab
 function luigis_mansion:items/gameboy_horror/map/display/lab/training_room
@@ -9,3 +10,4 @@ function luigis_mansion:items/gameboy_horror/map/display/lab/door/ghost_portrifi
 function luigis_mansion:items/gameboy_horror/map/display/lab/door/gallery_1
 function luigis_mansion:items/gameboy_horror/map/display/lab/door/gallery_2
 function luigis_mansion:items/gameboy_horror/map/display/lab/stairs/underground_lab
+forceload remove 4859 -101 4668 83
