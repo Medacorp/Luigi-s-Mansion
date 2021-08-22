@@ -1,5 +1,5 @@
 scoreboard players operation #temp GhostNr = @s GhostNr
-execute as @e[tag=mr_bones_body] if score @s GhostNr = #temp GhostNr run tag @s add this_model
+execute as @e[tag=body] if score @s GhostNr = #temp GhostNr run tag @s add this_model
 
 execute at @s run function luigis_mansion:entities/ghost/hidden_tick
 execute at @s run function luigis_mansion:animations/mr_bones/idle

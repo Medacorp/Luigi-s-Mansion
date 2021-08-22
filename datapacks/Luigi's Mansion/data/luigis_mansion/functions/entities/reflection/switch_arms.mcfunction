@@ -4,6 +4,7 @@ data modify entity @s Pose.LeftArm set from storage luigis_mansion:data Pose.Rig
 data modify entity @s Pose.RightLeg set from storage luigis_mansion:data Pose.LeftLeg
 data modify entity @s Pose.LeftLeg set from storage luigis_mansion:data Pose.RightLeg
 execute store result entity @s Pose.Head[1] float 0.01 run data get entity @s Pose.Head[1] -100
+execute store result entity @s Pose.Head[2] float 0.01 run data get entity @s Pose.Head[2] -100
 execute store result entity @s Pose.RightArm[1] float 0.01 run data get entity @s Pose.RightArm[1] -100
 execute store result entity @s Pose.LeftArm[1] float 0.01 run data get entity @s Pose.LeftArm[1] -100
 execute store result entity @s Pose.RightLeg[1] float 0.01 run data get entity @s Pose.RightLeg[1] -100

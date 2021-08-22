@@ -1,7 +1,6 @@
 execute as @e[tag=same_room,distance=..15,tag=!spectator] positioned ^ ^ ^15 run tag @s[distance=..18] add can_see_player
 execute if entity @s[tag=!headless_run] unless entity @s[scores={ActionTime=1..}] unless entity @e[tag=can_see_player,tag=!spectator,limit=1] facing entity @e[tag=same_room,tag=!spectator,sort=nearest,limit=1] feet rotated ~ 0 run teleport @s ~ ~ ~ ~ ~
 tag @e[tag=same_room,tag=can_see_player] remove can_see_player
-teleport @e[tag=bowser_body] ~ ~ ~ ~ ~
 execute unless entity @s[scores={ActionTime=1..}] run teleport @s ~ 37 ~
 execute if entity @s[tag=headless_run] run function luigis_mansion:entities/bowser/headless_run
 execute if entity @s[tag=intro_done] unless entity @s[scores={ActionTime=1..}] if entity @a[distance=..12,gamemode=!spectator] run function luigis_mansion:entities/bowser/select_closeby

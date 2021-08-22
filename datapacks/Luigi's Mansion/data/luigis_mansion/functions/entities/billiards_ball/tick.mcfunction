@@ -8,9 +8,11 @@ scoreboard players add @s[tag=move] SpawnTime 1
 execute at @s[scores={SpawnTime=1},tag=vacuumable] run function luigis_mansion:entities/billiards_ball/rotate
 execute at @s[tag=!in_vacuum,tag=vacuumable] run function luigis_mansion:entities/billiards_ball/move_forward
 execute at @s[tag=move] run function luigis_mansion:entities/billiards_ball/move_forward
+execute at @s[tag=move] run function luigis_mansion:entities/billiards_ball/move_forward
 execute store result score @s HomeRot run data get entity @s Pose.Head[0] 1
 execute if entity @s[tag=!can_spit_2,tag=vacuumable] store result entity @s Pose.Head[0] float 1 run scoreboard players add @s HomeRot 10
-execute if entity @s[tag=move] store result entity @s Pose.Head[0] float 1 run scoreboard players add @s HomeRot 10
+execute if entity @s[tag=move] store result entity @s Pose.Head[0] float 1 run scoreboard players add @s HomeRot 20
+execute at @s[tag=move,scores={SpawnTime=8}] run tag @e[tag=billiards_ball,distance=..2] add vacuumable
 tag @s[tag=move,scores={SpawnTime=8}] add dead
 
 execute at @s if entity @e[tag=same_room,tag=!spectator,distance=..0.7,limit=1] if entity @s[tag=vacuumable,tag=!in_vacuum,tag=!can_spit_2,tag=!spit,tag=!dying,tag=!dead,tag=!removed_from_existence] run function luigis_mansion:entities/billiards_ball/collide
