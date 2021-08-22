@@ -14,13 +14,14 @@ tag @e[tag=this_reflection,limit=1] remove new
 execute if entity @s[tag=immobile] run tag @e[tag=this_reflection,limit=1] add immobile
 data modify entity @e[tag=this_reflection,limit=1] Pose set from entity @s Pose
 data modify entity @e[tag=this_reflection,limit=1] Small set from entity @s Small
-data modify entity @e[tag=this_reflection,limit=1] ArmorItems set from entity @s ArmorItems
+data modify entity @e[tag=this_reflection,limit=1] ArmorItems set from entity @s[tag=!held_item] ArmorItems
+execute if entity @s[tag=held_item,tag=left_arm] at @s as @e[tag=right_arm,tag=held_item] if score @s ID = @e[tag=held_item,tag=left_arm,distance=..0.1,limit=1] ID run data modify entity @e[tag=this_reflection,limit=1] ArmorItems[3] set from entity @s ArmorItems[3]
 execute if entity @s[tag=!held_item,tag=left_arm] run data modify entity @e[tag=this_reflection,limit=1] ArmorItems[3].tag.Damage set value 2
 execute if entity @s[tag=!held_item,tag=right_arm] run data modify entity @e[tag=this_reflection,limit=1] ArmorItems[3].tag.Damage set value 3
 execute if entity @s[tag=!held_item,tag=left_leg] run data modify entity @e[tag=this_reflection,limit=1] ArmorItems[3].tag.Damage set value 2
 execute if entity @s[tag=!held_item,tag=right_leg] run data modify entity @e[tag=this_reflection,limit=1] ArmorItems[3].tag.Damage set value 3
 data modify entity @e[tag=this_reflection,limit=1] HandItems set from entity @s HandItems
-execute if entity @s[tag=!portrait_ghost,tag=!hidden,tag=!visible] as @e[tag=this_reflection,limit=1] run function luigis_mansion:entities/reflection/ghost_reflection
+execute if entity @s[tag=!portrait_ghost,tag=!hidden,tag=!visible,nbt={ArmorItems:[{id:"minecraft:oak_button"}]}] as @e[tag=this_reflection,limit=1] run function luigis_mansion:entities/reflection/ghost_reflection
 
 execute store result score #temp HomeX run data get entity @s Pos[0] 100
 execute store result score #temp HomeZ run data get entity @s Pos[2] 100
