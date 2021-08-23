@@ -1,4 +1,4 @@
-To receive development build updates, pull from https://github.com/Dhranios/Luigi-s-Mansion into the "`Luigi's Mansion/datapacks/Luigi's Mansion`" folder.
+To receive development build updates, pull from https://github.com/Dhranios/Luigi-s-Mansion into the "`Luigi's Mansion`" world folder.
 
 Before you pull, you need to disregard all your changes. Doing this without preparation may cause "damage" to your world
 To have no lasting "damage" on your world, follow these steps before disregarding changes:
