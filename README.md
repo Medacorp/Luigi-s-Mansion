@@ -14,28 +14,9 @@ When making your own, consider supporting these, as players may instal them as w
 
 * [Luigi's Mansion 3DS Remake](https://github.com/Dhranios/Luigi-s-Mansion-3DS-Remake)
 
-# Predefined mansions
-Add-on is the variable defined as loaded, namespace is the namespace used for files.
+# Variables of interest
 
-The following mansion types and mansion indexes are predefined, keep them in mind when making your add-ons.
-
-```
-mansion  | type | index | add-on       | overwrites     | namespace                 | Data pack name
-empty    | -1   | -1    | vanilla      |                | -                         | "file/Luigi's Mansion"
-normal   | 0    | 0     | vanilla      |                | luigis_mansion            | "file/Luigi's Mansion"
-hidden   | 1    | 0     | vanilla      |                | luigis_mansion            | "file/Luigi's Mansion"
-hidden   | 1    | 1     | 3ds_remake   | vanilla/hidden | luigis_mansion_3ds_remake | "file/Luigi's Mansion 3DS Remake"
-original | 2    | 2     | beta_mansion |                | luigis_beta_mansion       | "file/Luigi's Beta Mansion"
-```
-
-## Empty mansion
-The empty mansion is used after King Boo has been portrificationized, to make sure nobody is in the mansion when resetting. It has no rooms, no data and no functions other than an exterior (which is actually wiping out the existing mansion).
-
-The exterior is loaded in when you enter hallway 22 with Mario's painting, but the data variables are set only when Mario has been unportrificationized.
-
-## Variables of interest
-
-### Mansion data variables
+## Mansion data variables
 To define a new mansion, you need to set the mansion_type value, mansion_data_index is for saved data, all mansions with the same data index use the same save data.
 
 * `#loaded_exterior` (int): ID of the outside of the mansion that's loaded. (For example -1 is no mansion, 0 is the mansion.)
@@ -51,13 +32,81 @@ To define a new mansion, you need to set the mansion_type value, mansion_data_in
 * `#gbh_clock` (int): The current time shown by the Gameboy Horror.
 * `#gbh_clock_increase` (int): The `#gbh_clock` value increases by this value every tick, as long as the `in_mansion_time` value also increases. (Can be 0 or more, when 0 the clock is not shown.)
 
-### Variables that immediately reset
+## Variables that immediately reset
 * `#freeze_timer` (bool): Whether the `in_mansion_time` value is frozen this tick. (If there's players in different rooms not connected with viewpoints, this is set back to 0. (Room tick is after player tick but before value update, so if a room sets this to 1, do check if there's only players in that room.))
 * `#force_gbh_screen` (bool): Whether the Gameboy Horror screen if forced to show E. Gadd.
 * `#force_radar` (bool): Whether the Gameboy Horror radar if forced to become red, ignoring radar type requirements.
 
-### Other variables
-* `#training_choice` (bool): Whether multiple training room programs are installed. (Should be set in loaded add-on function. Will use `#luigis_mansion:dialog/training_room/option` to ask which to select, and `#luigis_mansion:dialog/training_room/play` to run the selected program then.)
+## Other variables
+* `#training_choice` (bool): Whether multiple training room programs are installed.
+
+# Predefined collections
+Add-on is the variable defined as loaded, namespace is the namespace used for files.
+
+The following groups are predefined, keep them in mind when making your add-ons.
+
+## Mansions
+Add new ones in `#luigis_mansion:mansion_options` to allow selecting it, `#luigis_mansion:mansion_detect` to tick rooms, `#luigis_mansion:mansion_interaction_detect` to allow searching and scanning furniture, `#luigis_mansion:mansion_forceload_chunks` to allow add-ons to arbitrarily load the mansion's chunks, and `#luigis_mansion:mansion_remove_forceloaded_chunks` for unloading.
+
+If the mansion has a new exterior, add to `#luigis_mansion:mansion_gameboy_horror_scan` to add a scan message for it.
+
+```
+Mansion     | Type | Index | Exterior | Add-on       | Overwrites     | Namespace                 | Data pack name
+Empty       | -1   | -1    | -1       | vanilla      |                | -                         | "file/Luigi's Mansion"
+Normal      | 0    | 0     | 0        | vanilla      |                | luigis_mansion            | "file/Luigi's Mansion"
+Hidden      | 1    | 0     | 0        | vanilla      |                | luigis_mansion            | "file/Luigi's Mansion"
+Hidden      | 1    | 1     | 0        | 3ds_remake   | vanilla/hidden | luigis_mansion_3ds_remake | "file/Luigi's Mansion 3DS Remake"
+Original    | 2    | 2     | 1        | beta_mansion |                | luigis_beta_mansion       | "file/Luigi's Beta Mansion"
+Trill Tower | 3    | 3     | 2        | trill_tower  |                | trill_tower               | "file/Thrill Tower"
+```
+
+### Empty mansion
+The empty mansion is used after King Boo has been portrificationized, to make sure nobody is in the mansion when resetting. It has no rooms, no data and no functions other than an exterior (which is actually wiping out the existing mansion).
+
+The exterior is loaded in when you save Mario from the mansion, but the data variables are set only when Mario has been unportrificationized.
+
+## Training room programs
+Add new ones in `#luigis_mansion:dialog/training_room/option` to allow selecting it, and `#luigis_mansion:dialog/training_room/play` to run it.
+
+Make sure to set the `#training_choice` variable when adding any, as described above.
+
+```
+Program    | Type | Index | Add-on              | Namespace                 | Data pack name
+Vanilla    | 0    | 0     | vanilla             | luigis_mansion            | "file/Luigi's Mansion"
+3DS Remake | 1    | 1     | 3ds_remake          | luigis_mansion_3ds_remake | "file/Luigi's Mansion 3DS Remake"
+Challenge  | 2    | 2     | extensive_training  | extensive_training        | "file/Extensive Training"
+```
+
+## Music groups
+Add new ones in `#luigis_mansion:play_music`.
+
+The underground lab allows MusicType 1 from any music group.
+
+```
+Group | Add-on        | Namespace                 | Data pack name
+0     | vanilla       | luigis_mansion            | "file/Luigi's Mansion"
+1     | 3ds_remake    | luigis_mansion_3ds_remake | "file/Luigi's Mansion 3DS Remake"
+2     | beta_mansion  | luigis_beta_mansion       | "file/Luigi's Beta Mansion"
+```
+
+## Radar types
+Add new ones in `#luigis_mansion:items/gameboy_horror/radar_type`.
+
+```
+Type | Detects                  | Add-on        | Namespace                 | Data pack name
+0    | Boos in lit rooms        | vanilla       | luigis_mansion            | "file/Luigi's Mansion"
+1    | Ghosts in a small radius | beta_mansion  | luigis_beta_mansion       | "file/Luigi's Beta Mansion"
+```
+
+## Gallery numbers
+The 3DS Remake Values column refers to the SelectedFrame score.
+
+```
+Numbers shown | 3DS Remake Values | Add-on             | Namespace                 | Data pack name
+1-23          | 1-23 and 25       | vanilla            | luigis_mansion            | "file/Luigi's Mansion"
+              | 24 and 26         | 3ds_remake         | luigis_mansion_3ds_remake | "file/Luigi's Mansion 3DS Remake"
+24            | 27                | trill_tower        | trill_tower               | "file/Thrill Tower"
+```
 
 # Check compatibility/dependency
 To set this add-on as loaded, allowing for other add-ons to check/warn for compatibility issues, add to the function tag `#luigis_mansion:loaded_add_ons` a function with the following contents: `scoreboard players set #<add-on> Loaded 1`
