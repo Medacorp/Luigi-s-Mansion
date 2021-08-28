@@ -1,0 +1,3 @@
+execute positioned ~ ~0.8 ~ if block ^ ^ ^0.1 #luigis_mansion:item_pull_ignore positioned as @s run teleport @s ^ ^ ^0.1 ~ ~
+execute positioned ~ ~0.8 ~ unless block ^ ^ ^0.1 #luigis_mansion:item_pull_ignore rotated ~ 0 if block ^ ^ ^0.1 #luigis_mansion:item_pull_ignore positioned as @s run teleport @s ^ ^ ^0.1 ~ ~
+execute at @s positioned ~ ~0.8 ~ if entity @a[distance=..0.7,tag=me,limit=1] run tag @s add dead

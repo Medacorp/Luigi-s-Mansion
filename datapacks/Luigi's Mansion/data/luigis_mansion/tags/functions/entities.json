@@ -38,6 +38,7 @@
         "luigis_mansion:entities/reflection",
         "luigis_mansion:entities/shadow",
         "luigis_mansion:entities/elemental_source",
-        "luigis_mansion:entities/basher_scare"
+        "luigis_mansion:entities/basher_scare",
+        "luigis_mansion:entities/vacuumable_object"
 	]
 }

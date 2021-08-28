@@ -37,6 +37,7 @@
         "luigis_mansion:items/poltergust_3000/effect_on_entity/vacuum/bat",
         "luigis_mansion:items/poltergust_3000/effect_on_entity/vacuum/flying_fish",
         "luigis_mansion:items/poltergust_3000/effect_on_entity/vacuum/haunted_object",
-        "luigis_mansion:items/poltergust_3000/effect_on_entity/vacuum/ghost"
+        "luigis_mansion:items/poltergust_3000/effect_on_entity/vacuum/ghost",
+        "luigis_mansion:items/poltergust_3000/effect_on_entity/vacuum/vacuumable_object"
 	]
 }

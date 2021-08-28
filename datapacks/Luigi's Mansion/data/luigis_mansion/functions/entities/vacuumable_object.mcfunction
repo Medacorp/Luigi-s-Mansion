@@ -1,0 +1,1 @@
+execute if entity @s[tag=vacuumable_object,tag=vacuumable] run function luigis_mansion:entities/vacuumable_object/tick
