@@ -1,9 +1,14 @@
 scoreboard players add @s ActionTime 1
+execute if entity @s[scores={ActionTime=1}] at @e[tag=same_room,tag=!spectator,sort=nearest,limit=1] rotated ~ 0 positioned ^ ^ ^-0.7 if block ~ ~ ~ #luigis_mansion:ghosts_ignore run teleport @s ~ ~ ~ ~ ~
+execute if entity @s[scores={ActionTime=1}] at @e[tag=same_room,tag=!spectator,sort=nearest,limit=1] rotated ~ 0 positioned ^ ^ ^-0.7 unless block ~ ~ ~ #luigis_mansion:ghosts_ignore run scoreboard players set @s ActionTime 0
+tag @s[scores={ActionTime=0}] remove attack
 scoreboard players set @s[scores={ActionTime=1}] AnimationProg 0
 execute if entity @s[scores={ActionTime=1..40}] run function luigis_mansion:animations/ghost/basher_stun
 scoreboard players set @s[scores={ActionTime=41}] AnimationProg 0
 execute if entity @s[scores={ActionTime=41..60}] run function luigis_mansion:animations/ghost/appear
 
+tag @s[scores={ActionTime=1},tag=!burning_heart] add stunable
+tag @s[scores={ActionTime=1}] add visible
 data modify entity @s[scores={ActionTime=1..40}] ArmorItems[3].id set value "minecraft:oak_button"
 data modify entity @s[scores={ActionTime=1..40}] HandItems[0].id set value "minecraft:oak_button"
 data modify entity @s[scores={ActionTime=1..40}] HandItems[1].id set value "minecraft:oak_button"

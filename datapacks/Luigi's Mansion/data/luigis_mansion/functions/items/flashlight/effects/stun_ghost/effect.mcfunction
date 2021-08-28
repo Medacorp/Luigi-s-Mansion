@@ -7,7 +7,7 @@ scoreboard players operation @s VulnerableTime -= #temp VulnerableTime
 scoreboard players set @s[scores={VulnerableTime=..0}] VulnerableTime 1
 scoreboard players operation @s StunTime = @s VulnerableTime
 scoreboard players reset #temp VulnerableTime
-data modify entity @s[tag=basher] ArmorItems[3].id set value "minecraft:diamond_pickaxe"
-data modify entity @s[tag=basher] HandItems[0].id set value "minecraft:diamond_pickaxe"
-data modify entity @s[tag=basher] HandItems[1].id set value "minecraft:diamond_pickaxe"
+data modify entity @s[tag=basher] ArmorItems[3].id set value "minecraft:leather_chestplate"
+data modify entity @s[tag=basher] HandItems[0].id set value "minecraft:leather_chestplate"
+data modify entity @s[tag=basher] HandItems[1].id set value "minecraft:leather_chestplate"
 data modify entity @s[tag=basher] CustomNameVisible set value 1b
