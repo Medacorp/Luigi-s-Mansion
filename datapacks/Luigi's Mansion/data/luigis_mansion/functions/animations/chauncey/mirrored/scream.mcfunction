@@ -14,6 +14,7 @@ execute store result score #temp Time run data get entity @s Pose.LeftArm[0]
 execute if entity @s[scores={AnimationProg=1..3}] store result entity @s Pose.LeftArm[0] float 1 run scoreboard players add #temp Time 1
 execute if entity @s[scores={AnimationProg=8..13}] store result entity @s Pose.LeftArm[0] float 1 run scoreboard players remove #temp Time 1
 execute if entity @s[scores={AnimationProg=18..20}] store result entity @s Pose.LeftArm[0] float 1 run scoreboard players add #temp Time 1
+scoreboard players reset #temp Time
 scoreboard players set @s[scores={AnimationProg=20..}] AnimationProg 0
 data modify entity @s[scores={AnimationProg=3},tag=!fight] ArmorItems[3].tag merge value {CustomModelData:12}
 data modify entity @s[scores={AnimationProg=13},tag=!fight] ArmorItems[3].tag merge value {CustomModelData:10}

@@ -104,4 +104,5 @@ execute store result score #temp Time run data get entity @e[tag=this_model,tag=
 execute if entity @s[scores={AnimationProg=1..20}] store result entity @e[tag=this_model,tag=body,limit=1] Pose.Head[0] float 0.1 run scoreboard players add #temp Time 5
 execute if entity @s[scores={AnimationProg=21..60}] store result entity @e[tag=this_model,tag=body,limit=1] Pose.Head[0] float 0.1 run scoreboard players remove #temp Time 5
 execute if entity @s[scores={AnimationProg=61..80}] store result entity @e[tag=this_model,tag=body,limit=1] Pose.Head[0] float 0.1 run scoreboard players add #temp Time 5
+scoreboard players reset #temp Time
 scoreboard players set @s[scores={AnimationProg=80}] AnimationProg 0

@@ -24,4 +24,5 @@ execute if entity @s[scores={AnimationProg=16}] run teleport @e[tag=this_model,l
 execute if entity @s[scores={AnimationProg=17}] run teleport @e[tag=this_model,limit=1] ~ ~0.4 ~ ~ ~
 execute if entity @s[scores={AnimationProg=18}] run teleport @e[tag=this_model,limit=1] ~ ~0.3 ~ ~ ~
 execute if entity @s[scores={AnimationProg=19..40}] run teleport @e[tag=this_model,limit=1] ~ ~0.2 ~ ~ ~
+scoreboard players reset #temp Time
 scoreboard players set @s[scores={AnimationProg=40}] AnimationProg 0

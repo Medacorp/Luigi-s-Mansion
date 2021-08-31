@@ -9,4 +9,5 @@ execute if entity @s[scores={AnimationProg=1}] run data merge entity @e[tag=this
 execute store result score #temp Time run data get entity @s Pose.Head[0]
 execute if entity @s[scores={AnimationProg=1..2}] store result entity @s Pose.Head[0] float 1 run scoreboard players remove #temp Time 7
 execute if entity @s[scores={AnimationProg=25..40}] store result entity @s Pose.Head[0] float 1 run scoreboard players add #temp Time 4
+scoreboard players reset #temp Time
 scoreboard players set @s[scores={AnimationProg=40..}] AnimationProg 0

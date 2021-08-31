@@ -34,4 +34,5 @@ execute if entity @s[scores={AnimationProg=41..50}] store result entity @e[tag=t
 execute if entity @s[scores={AnimationProg=51..60}] store result entity @e[tag=this_model,tag=left_arm,limit=1] Pose.Head[1] float 1 run scoreboard players add #temp Time 1
 execute if entity @s[scores={AnimationProg=61..70}] store result entity @e[tag=this_model,tag=left_arm,limit=1] Pose.Head[1] float 1 run scoreboard players remove #temp Time 1
 execute if entity @s[scores={AnimationProg=71..80}] store result entity @e[tag=this_model,tag=left_arm,limit=1] Pose.Head[1] float 1 run scoreboard players add #temp Time 1
+scoreboard players reset #temp Time
 scoreboard players set @s[scores={AnimationProg=80..}] AnimationProg 0

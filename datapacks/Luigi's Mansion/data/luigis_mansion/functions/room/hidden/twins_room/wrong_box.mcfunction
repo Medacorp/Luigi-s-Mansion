@@ -1,4 +1,4 @@
-tellraw @a {"translate":"chat.type.text","with":[{"translate":"luigis_mansion:entity.henry","color":"green"},{"translate":"luigis_mansion:dialog.twins.game.0"}]}
+tellraw @a[scores={Room=49}] {"translate":"chat.type.text","with":[{"translate":"luigis_mansion:entity.henry","color":"green"},{"translate":"luigis_mansion:dialog.twins.game.0"}]}
 execute as @a[scores={Room=49},gamemode=!spectator] run function luigis_mansion:other/music/set/room
 stopsound @a[scores={Room=49},gamemode=!spectator] music
 playsound luigis_mansion:music.mini_game_failure music @a[scores={Room=49},gamemode=!spectator] ~ ~ ~ 1000

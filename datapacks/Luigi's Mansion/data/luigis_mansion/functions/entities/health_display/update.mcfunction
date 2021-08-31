@@ -1,6 +1,9 @@
-execute if entity @e[tag=this_ghost,tag=!ceiling_ghost] run teleport @s ~ ~0.5 ~
-execute if entity @e[tag=this_ghost,tag=ceiling_ghost] run teleport @s ~ ~1.5 ~
-scoreboard players operation #temp Health = @e[tag=this_ghost] Health
+teleport @s ~ ~ ~ ~ ~
+execute at @e[tag=this_ghost,tag=body,limit=1] run teleport @s ~ ~ ~ ~ ~
+scoreboard players set #temp Time 0
+scoreboard players operation #temp Time = @e[tag=this_ghost,tag=!body,limit=1] HealthOffset
+execute unless score #temp Time matches 0 at @s run function luigis_mansion:entities/health_display/move
+scoreboard players operation #temp Health = @e[tag=this_ghost,tag=!body] Health
 scoreboard players add #temp Health 98
 scoreboard players operation #temp Health /= #100 Constants
 execute unless score @s Health = #temp Health in minecraft:overworld run setblock 27 0 0 minecraft:oak_sign{Text1:'{"score":{"objective":"Health","name":"#temp"},"color":"light_purple"}'}
@@ -8,3 +11,4 @@ execute unless score @s Health = #temp Health in minecraft:overworld run data mo
 execute unless score @s Health = #temp Health in minecraft:overworld run setblock 27 0 0 minecraft:bedrock
 scoreboard players operation @s Health = #temp Health
 scoreboard players reset #temp Health
+scoreboard players reset #temp Time
