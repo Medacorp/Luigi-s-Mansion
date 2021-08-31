@@ -1,0 +1,3 @@
+summon minecraft:armor_stand ~ ~ ~ {CustomName:'{"translate":"luigis_mansion:entity.wind"}',Invisible:1b,NoGravity:1b,CustomNameVisible:0b,Invulnerable:1b,ArmorItems:[{},{},{},{id:"minecraft:diamond_pickaxe",Count:1b,tag:{Unbreakable:1b,Damage:4,CustomModelData:24}}],Pose:{Head:[0.0f,0.01f,0.0f]},Tags:["wind","vacuumable_object","this_entity"],DisabledSlots:2039583}
+execute as @e[tag=this_entity,limit=1] run teleport @s ~ ~ ~ ~ ~
+tag @e[tag=this_entity,limit=1] remove this_entity

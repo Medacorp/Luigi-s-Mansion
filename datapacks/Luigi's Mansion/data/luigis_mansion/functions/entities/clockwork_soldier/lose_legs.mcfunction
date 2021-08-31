@@ -1,0 +1,5 @@
+execute if entity @s[tag=blue_clockwork_soldier] run data modify entity @e[tag=this_model,tag=body,limit=1] ArmorItems[3] set value {id:"minecraft:diamond_pickaxe",Count:1b,tag:{Unbreakable:1b,Damage:1,CustomModelData:72}}
+execute if entity @s[tag=pink_clockwork_soldier] run data modify entity @e[tag=this_model,tag=body,limit=1] ArmorItems[3] set value {id:"minecraft:diamond_pickaxe",Count:1b,tag:{Unbreakable:1b,Damage:1,CustomModelData:69}}
+execute if entity @s[tag=green_clockwork_soldier] run data modify entity @e[tag=this_model,tag=body,limit=1] ArmorItems[3] set value {id:"minecraft:diamond_pickaxe",Count:1b,tag:{Unbreakable:1b,Damage:1,CustomModelData:75}}
+data modify entity @e[tag=this_model,tag=right_leg,limit=1] ArmorItems[3] set value {}
+data modify entity @e[tag=this_model,tag=left_leg,limit=1] ArmorItems[3] set value {}

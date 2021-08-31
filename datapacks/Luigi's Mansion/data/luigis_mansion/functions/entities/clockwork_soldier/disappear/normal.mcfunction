@@ -7,3 +7,4 @@ tag @s remove was_activated
 tag @s remove complain
 scoreboard players set @s Distance 0
 scoreboard players set @s WaitTime 0
+scoreboard players set @s VacuumTime 0

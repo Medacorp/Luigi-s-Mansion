@@ -24,8 +24,5 @@ execute at @s run tp @s ~ ~0.2 ~
 execute at @s[tag=!vanish,tag=!laugh,tag=!carless,tag=!grab_vehicle,scores={StunTime=0}] run function luigis_mansion:entities/henry/move
 execute at @s run tp @s ~ ~-0.2 ~
 
-execute if entity @s[tag=!carless] rotated ~ 0 positioned ^ ^ ^0.4 run teleport @e[tag=this_car] ~ ~-0.5 ~ ~ ~
-execute if entity @s[tag=carless] rotated ~ 0 positioned ^ ^ ^0.4 run teleport @e[tag=this_car] ~ ~0.5 ~ ~ ~
-execute if entity @s[tag=carless] run tag @e[tag=this_car] add vacuumable
-execute if entity @s[tag=carless] run scoreboard players reset @e[tag=this_car] GhostNr
-tag @e[tag=this_car] remove this_car
+execute at @s[tag=!carless] rotated ~ 0 positioned ^ ^ ^0.4 run teleport @e[tag=this_car,limit=1] ~ ~-1.2 ~ ~ ~
+tag @e[tag=this_car,limit=1] remove this_car
