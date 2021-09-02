@@ -10,6 +10,6 @@ execute unless score #temp Time matches 0 at @s run function luigis_mansion:enti
 execute at @s[tag=burning] run particle minecraft:flame ~ ~1 ~ 0.2 0.2 0.2 0 1
 execute at @s[tag=watery] run particle minecraft:rain ~ ~1 ~ 0.2 0.2 0.2 0 1
 execute at @s[tag=frozen] run particle minecraft:firework ~ ~1 ~ 0.2 0.2 0.2 0 1
-execute unless entity @e[tag=this_ghost,limit=1] run tag @s add dead
+execute unless entity @e[tag=this_ghost,tag=!body,limit=1] run tag @s add dead
 tag @e[tag=this_ghost] remove this_ghost
 scoreboard players reset #temp Time

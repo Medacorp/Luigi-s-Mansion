@@ -20,5 +20,4 @@ scoreboard players set @e[tag=sue_pea,tag=this_entity,limit=1] Sound 0
 scoreboard players set @e[tag=sue_pea,tag=this_entity,limit=1] StunTime 0
 scoreboard players set @e[tag=sue_pea,tag=this_entity,limit=1] VulnerableTime 0
 scoreboard players set @e[tag=sue_pea,tag=this_entity,limit=1] HeartOffset 8
-scoreboard players set @e[tag=sue_pea,tag=this_entity,limit=1] HealthOffset 15
 tag @e[tag=this_entity] remove this_entity

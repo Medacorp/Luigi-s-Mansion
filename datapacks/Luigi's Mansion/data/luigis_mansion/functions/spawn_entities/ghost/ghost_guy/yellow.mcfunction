@@ -14,5 +14,4 @@ scoreboard players set @e[tag=this_entity,limit=1] VulnerableTime 0
 scoreboard players set @e[tag=this_entity,limit=1] TopVacuumDamage 0
 scoreboard players set @e[tag=this_entity,limit=1] ElementHurtTime 0
 scoreboard players set @e[tag=this_entity,limit=1] HeartOffset -2
-scoreboard players set @e[tag=this_entity,limit=1] HealthOffset 5
 tag @e[tag=this_entity,limit=1] remove this_entity

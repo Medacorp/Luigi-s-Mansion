@@ -1,5 +1,5 @@
-summon minecraft:cave_spider ~ ~ ~ {CustomName:'{"translate":"luigis_mansion:entity.jarvis"}',NoAI:1b,NoGravity:1b,CustomNameVisible:1b,Invulnerable:1b,ArmorItems:[{},{},{},{}],Silent:1b,AbsorptionAmount:100.0f,HandItems:[{},{}],HandDropChances:[0.0f,1.0f],ArmorDropChances:[0.0f,0.0f,0.0f,0.0f],PersistenceRequired:1b,LeftHanded:0b,Tags:["jarvis","portrait_ghost","pearl_dropper","ghost","this_entity"]}
-teleport @e[tag=this_entity,limit=1] ~ ~ ~ ~ ~
+summon minecraft:armor_stand ~ ~-1.5 ~ {CustomName:'{"translate":"luigis_mansion:entity.jarvis"}',Invisible:1b,NoGravity:1b,CustomNameVisible:0b,Marker:0b,Invulnerable:1b,ArmorItems:[{},{},{},{}],Pose:{Head:[0.0f,0.0f,0.01f]},Tags:["jarvis","portrait_ghost","pearl_dropper","ghost","this_entity"],DisabledSlots:2039583}
+teleport @e[tag=this_entity,limit=1] ~ ~-1.5 ~ ~ ~
 execute as @e[tag=this_entity,limit=1] store result score @s GhostNr run data get storage luigis_mansion:data ghost_nr
 execute as @e[tag=this_entity,limit=1] store result storage luigis_mansion:data ghost_nr int 1 run scoreboard players add @s GhostNr 1
 execute as @e[tag=this_entity,limit=1] store result score @s HomeX run data get entity @s Pos[0] 100
@@ -15,5 +15,4 @@ scoreboard players set @e[tag=this_entity,limit=1] Sound 0
 scoreboard players set @e[tag=this_entity,limit=1] StunTime 0
 scoreboard players set @e[tag=this_entity,limit=1] VulnerableTime 0
 scoreboard players set @e[tag=this_entity,limit=1] HeartOffset 3
-scoreboard players set @e[tag=this_entity,limit=1] HealthOffset 12
 tag @e[tag=this_entity,limit=1] remove this_entity

@@ -35,7 +35,6 @@ scoreboard objectives add GhostCount dummy
 scoreboard objectives add GhostNr dummy
 scoreboard objectives add GhostGuyCouple dummy
 scoreboard objectives add Health dummy
-scoreboard objectives add HealthOffset dummy
 scoreboard objectives add HeartOffset dummy
 scoreboard objectives add HideTime dummy
 scoreboard objectives add HomeRot dummy

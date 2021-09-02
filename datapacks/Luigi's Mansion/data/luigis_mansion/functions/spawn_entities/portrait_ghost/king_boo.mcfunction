@@ -13,5 +13,5 @@ scoreboard players set @e[tag=this_entity,limit=1] Move 6
 scoreboard players set @e[tag=this_entity,limit=1] Sound 0
 scoreboard players set @e[tag=this_entity,limit=1] StunTime 0
 scoreboard players set @e[tag=this_entity,limit=1] VulnerableTime 0
-scoreboard players set @e[tag=this_entity,limit=1] HealthOffset 5
+scoreboard players set @e[tag=this_entity,limit=1] HeartOffset -2
 tag @e[tag=this_entity,limit=1] remove this_entity

@@ -1,7 +1,7 @@
-teleport @s ~ ~ ~ ~ ~
-execute at @e[tag=this_ghost,tag=body,limit=1] run teleport @s ~ ~ ~ ~ ~
+teleport @s ~ ~0.8 ~ ~ ~
+execute at @e[tag=this_ghost,tag=body,limit=1] run teleport @s ~ ~0.8 ~ ~ ~
 scoreboard players set #temp Time 0
-scoreboard players operation #temp Time = @e[tag=this_ghost,tag=!body,limit=1] HealthOffset
+scoreboard players operation #temp Time = @e[tag=this_ghost,tag=!body,limit=1] HeartOffset
 execute unless score #temp Time matches 0 at @s run function luigis_mansion:entities/health_display/move
 scoreboard players operation #temp Health = @e[tag=this_ghost,tag=!body] Health
 scoreboard players add #temp Health 98

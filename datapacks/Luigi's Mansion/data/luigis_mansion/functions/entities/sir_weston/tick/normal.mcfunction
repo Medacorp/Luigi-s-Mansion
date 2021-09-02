@@ -23,7 +23,7 @@ execute if entity @s[scores={Dialog=422}] run data modify storage luigis_mansion
 execute if entity @s[scores={Dialog=422..}] as @a[tag=same_room,gamemode=!spectator] unless entity @s[scores={MusicGroup=0,MusicType=36}] run function luigis_mansion:other/music/set/danger
 scoreboard players add @s[scores={Dialog=422..482}] PathStep 1
 execute if entity @s[scores={PathStep=20..50,VulnerableTime=0}] facing entity @e[tag=same_room,tag=!spectator,sort=nearest,limit=1] feet rotated ~ 0 run teleport @s ~ ~ ~ ~ ~
-execute at @s[scores={PathStep=50..60}] run function luigis_mansion:entities/sir_weston/attack
+execute at @s[scores={PathStep=50}] run function luigis_mansion:entities/sir_weston/attack
 scoreboard players set @s[scores={PathStep=80}] PathStep 0
 execute if entity @s[scores={Dialog=483}] run particle minecraft:block minecraft:ice ~ ~1.2 ~ 0.6 0.6 0.6 0 30
 scoreboard players set @s[scores={Dialog=483}] VulnerableTime 40

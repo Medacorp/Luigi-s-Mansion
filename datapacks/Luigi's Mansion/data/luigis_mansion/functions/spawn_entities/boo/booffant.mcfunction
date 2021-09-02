@@ -8,6 +8,6 @@ scoreboard players set @e[tag=this_entity,limit=1] Sound 0
 scoreboard players operation @e[tag=this_entity,limit=1] HomeX = @s HomeX
 scoreboard players operation @e[tag=this_entity,limit=1] HomeY = @s HomeY
 scoreboard players operation @e[tag=this_entity,limit=1] HomeZ = @s HomeZ
-scoreboard players set @e[tag=this_entity,limit=1] HealthOffset 5
+scoreboard players set @e[tag=this_entity,limit=1] HeartOffset -2
 execute if entity @s[tag=hidden_boo] run tag @e[tag=this_entity,limit=1] add say_message
 tag @e[tag=this_entity,limit=1] remove this_entity
