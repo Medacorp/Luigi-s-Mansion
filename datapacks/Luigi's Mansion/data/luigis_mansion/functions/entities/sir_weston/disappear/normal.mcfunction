@@ -3,4 +3,4 @@ execute store result entity @s Pos[1] double 0.01 run scoreboard players get @s 
 execute store result entity @s Pos[2] double 0.01 run scoreboard players get @s HomeZ
 execute store result entity @s Rotation[0] float 1 run scoreboard players get @s HomeRot
 scoreboard players set @s PathStep 0
-scoreboard players set @s Dialog 483
+scoreboard players set @s Dialog 463
