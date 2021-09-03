@@ -5,8 +5,3 @@ tag @s remove found_owner
 tag @s[scores={ModelTime=10}] add dead
 scoreboard players reset @s[tag=dead]
 kill @s[tag=dead]
-scoreboard players reset @s LightX
-scoreboard players reset @s LightY
-scoreboard players reset @s LightZ
-scoreboard players reset @s MirrorX
-scoreboard players reset @s MirrorZ

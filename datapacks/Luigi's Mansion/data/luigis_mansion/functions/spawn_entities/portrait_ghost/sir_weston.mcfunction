@@ -2,10 +2,10 @@ summon minecraft:armor_stand ~ ~0.6 ~ {CustomName:'{"translate":"luigis_mansion:
 summon minecraft:armor_stand ~ ~0.6 ~ {CustomName:'{"translate":"luigis_mansion:entity.sir_weston"}',Invisible:1b,NoGravity:1b,CustomNameVisible:0b,Marker:1b,Invulnerable:1b,ArmorItems:[{},{},{},{}],Pose:{Head:[0.0f,0.0f,0.01f]},Tags:["model_piece","found_owner","body","this_entity"],DisabledSlots:2039583}
 summon minecraft:armor_stand ~ ~0.6 ~ {CustomName:'{"translate":"luigis_mansion:entity.sir_weston"}',Invisible:1b,NoGravity:1b,CustomNameVisible:0b,Marker:1b,Invulnerable:1b,ArmorItems:[{},{},{},{}],Pose:{Head:[0.0f,0.0f,0.01f]},Tags:["model_piece","found_owner","right_arm","this_entity"],DisabledSlots:2039583}
 summon minecraft:armor_stand ~ ~0.6 ~ {CustomName:'{"translate":"luigis_mansion:entity.sir_weston"}',Invisible:1b,NoGravity:1b,CustomNameVisible:0b,Marker:1b,Invulnerable:1b,ArmorItems:[{},{},{},{}],Pose:{Head:[0.0f,0.0f,0.01f]},Tags:["model_piece","found_owner","left_arm","this_entity"],DisabledSlots:2039583}
-summon minecraft:armor_stand ~ ~0.6 ~ {CustomName:'{"translate":"luigis_mansion:entity.sir_weston"}',Invisible:1b,NoGravity:1b,CustomNameVisible:0b,Marker:1b,Invulnerable:1b,ArmorItems:[{},{},{},{}],Pose:{Head:[0.0f,0.0f,0.01f]},Tags:["model_piece","found_owner","sir_weston_ice","this_entity"],DisabledSlots:2039583}
+summon minecraft:armor_stand ~ ~0.3 ~ {CustomName:'{"translate":"luigis_mansion:entity.sir_weston"}',Invisible:1b,NoGravity:1b,CustomNameVisible:0b,Marker:1b,Invulnerable:1b,ArmorItems:[{},{},{},{}],Pose:{Head:[0.0f,0.0f,0.01f]},Tags:["model_piece","found_owner","sir_weston_ice","this_entity"],DisabledSlots:2039583}
 teleport @e[tag=sir_weston,tag=this_entity,limit=1] ~ ~0.6 ~ ~ ~
 teleport @e[tag=model_piece,tag=this_entity] ~ ~0.6 ~ ~ ~
-teleport @e[tag=sir_weston_rocking_chair,tag=this_entity] ~ ~-1.25 ~ ~ ~
+teleport @e[tag=sir_weston_ice,tag=this_entity] ~ ~0.3 ~ ~ ~
 execute as @e[tag=sir_weston,tag=this_entity,limit=1] store result score @s GhostNr run data get storage luigis_mansion:data ghost_nr
 execute as @e[tag=sir_weston,tag=this_entity,limit=1] store result storage luigis_mansion:data ghost_nr int 1 run scoreboard players add @s GhostNr 1
 scoreboard players operation @e[tag=model_piece,tag=this_entity] GhostNr = @e[tag=sir_weston,tag=this_entity,limit=1] GhostNr

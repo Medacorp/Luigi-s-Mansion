@@ -16,6 +16,11 @@ tag @s[tag=!reflection,scores={MirrorX=-2147483648..}] add mirrored
 tag @s[tag=!reflection,scores={MirrorZ=-2147483648..}] add mirrored
 execute if entity @s[tag=mirrored] run function luigis_mansion:entities/reflection/non_player
 tag @s[tag=mirrored] remove mirrored
+scoreboard players reset @s[tag=model_piece] LightX
+scoreboard players reset @s[tag=model_piece] LightY
+scoreboard players reset @s[tag=model_piece] LightZ
+scoreboard players reset @s[tag=model_piece] MirrorX
+scoreboard players reset @s[tag=model_piece] MirrorZ
 
 data merge entity @s[type=minecraft:item] {Invulnerable:1b,Air:0}
 data merge entity @s[type=minecraft:item] {Air:1}
