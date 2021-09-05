@@ -1,5 +1,5 @@
 scoreboard players add @s ActionTime 1
-execute if entity @s[scores={ActionTime=1}] run playsound luigis_mansion:entity.floating_whirlindas.disappear hostile @a[tag=same_room] ~ ~ ~ 1
+execute if entity @s[scores={ActionTime=1},tag=visible] run playsound luigis_mansion:entity.floating_whirlindas.disappear hostile @a[tag=same_room] ~ ~ ~ 1
 scoreboard players set @s[scores={ActionTime=1}] AnimationProg 0
 execute if entity @s[scores={ActionTime=1}] run scoreboard players set @e[tag=this_model,tag=floating_whirlindas_female,limit=1] AnimationProg 0
 execute at @s run function luigis_mansion:animations/floating_whirlindas/vanish

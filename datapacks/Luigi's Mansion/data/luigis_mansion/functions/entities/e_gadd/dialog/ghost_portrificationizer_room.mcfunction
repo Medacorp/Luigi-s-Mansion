@@ -1,0 +1,3 @@
+execute if entity @s[scores={Room=-3},tag=mario_to_normal] run function luigis_mansion:dialog/mario_to_normal
+execute if entity @s[scores={Room=-3},tag=talk] if data storage luigis_mansion:data rooms.ghost_portrificationizer_room{cleared:0b} if entity @s[tag=ghost_portrificationizer_room_dialog] run function luigis_mansion:dialog/ghost_portrificationizer_room/talk
+execute if entity @s[scores={Room=-3},tag=talk] if data storage luigis_mansion:data rooms.ghost_portrificationizer_room{cleared:1b} if entity @s[tag=ghost_portrificationizer_room_dialog] run function luigis_mansion:dialog/ghost_portrificationizer_room/repeat

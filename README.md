@@ -87,6 +87,7 @@ Group | Add-on        | Namespace                 | Data pack name
 0     | vanilla       | luigis_mansion            | "file/Luigi's Mansion"
 1     | 3ds_remake    | luigis_mansion_3ds_remake | "file/Luigi's Mansion 3DS Remake"
 2     | beta_mansion  | luigis_beta_mansion       | "file/Luigi's Beta Mansion"
+3     | trill_tower   | trill_tower               | "file/Thrill Tower"
 ```
 
 ## Radar types

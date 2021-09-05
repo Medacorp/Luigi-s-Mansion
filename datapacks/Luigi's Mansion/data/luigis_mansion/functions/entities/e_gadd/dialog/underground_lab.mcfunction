@@ -1,0 +1,2 @@
+execute if entity @s[scores={Room=-1}] if data storage luigis_mansion:data rooms.underground_lab{cleared:0b} run function luigis_mansion:dialog/the_mansion
+execute if entity @s[scores={Room=-1},tag=talk] if data storage luigis_mansion:data rooms.underground_lab{cleared:1b} if entity @s[tag=underground_lab_dialog] run function luigis_mansion:dialog/underground_lab

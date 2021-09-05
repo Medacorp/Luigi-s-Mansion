@@ -1,5 +1,5 @@
 scoreboard players add @s ActionTime 1
-execute if entity @s[scores={ActionTime=1}] run playsound luigis_mansion:entity.nana.disappear hostile @a[tag=same_room] ~ ~ ~ 1
+execute if entity @s[scores={ActionTime=1},tag=visible] run playsound luigis_mansion:entity.nana.disappear hostile @a[tag=same_room] ~ ~ ~ 1
 scoreboard players set @s[scores={ActionTime=1}] AnimationProg 0
 execute at @s run function luigis_mansion:animations/nana/vanish
 execute if score #mirrored Selected matches 0 run teleport @s[scores={ActionTime=..40}] ~ ~0.05 ~ ~20 ~

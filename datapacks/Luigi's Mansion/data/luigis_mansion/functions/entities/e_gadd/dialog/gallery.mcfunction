@@ -1,0 +1,2 @@
+execute if entity @s[scores={Room=-4},tag=talk] if data storage luigis_mansion:data rooms.gallery{cleared:0b} run function luigis_mansion:dialog/gallery/talk
+execute if entity @s[scores={Room=-4},tag=talk] if data storage luigis_mansion:data rooms.gallery{cleared:1b} run function luigis_mansion:dialog/gallery/repeat
