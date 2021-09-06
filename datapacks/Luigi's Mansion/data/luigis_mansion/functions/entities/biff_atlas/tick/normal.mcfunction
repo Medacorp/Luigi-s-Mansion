@@ -18,7 +18,7 @@ execute if entity @s[scores={Dialog=2..21}] run teleport @s ^ ^ ^0.1
 scoreboard players set @s[scores={Dialog=80}] AnimationProg 0
 tag @s[scores={Dialog=80}] remove knocked_back
 execute if entity @s[scores={Dialog=81}] facing entity @e[tag=same_room,tag=!spectator,sort=nearest,limit=1] feet rotated ~ 0 run teleport @s ~ ~ ~ ~ ~
-execute at @s[scores={Dialog=81},tag=!laugh] run function luigis_mansion:entities/ghost/move
+execute at @s[scores={Dialog=81},tag=!laugh] run function luigis_mansion:entities/ghost/move_forward
 execute if entity @s[scores={Dialog=81},tag=!laugh] positioned ^ ^ ^0.7 if entity @e[tag=same_room,tag=!spectator,distance=..2,limit=1] run tag @s add attack
 scoreboard players set @s[scores={Dialog=82}] AnimationProg 0
 tag @s[scores={Dialog=82}] remove attack
@@ -31,7 +31,7 @@ tag @s[scores={Dialog=160},tag=!ko] add ko
 tag @s[scores={Dialog=160}] remove knocked_back
 tag @s[scores={Dialog=161},tag=!laugh] add attack
 execute if entity @s[scores={Dialog=161}] facing entity @e[tag=same_room,tag=!spectator,sort=nearest,limit=1] feet rotated ~ 0 run teleport @s ~ ~ ~ ~ ~
-execute at @s[scores={Dialog=161},tag=!laugh] run function luigis_mansion:entities/ghost/move
+execute at @s[scores={Dialog=161},tag=!laugh] run function luigis_mansion:entities/ghost/move_forward
 scoreboard players set @s[scores={Dialog=162}] AnimationProg 0
 tag @s[scores={Dialog=162}] remove attack
 tag @s[scores={Dialog=162}] remove laugh

@@ -54,7 +54,7 @@ execute if score @s PathStep matches 25 run summon minecraft:marker 707.0 11.6 -
 execute if score @s PathStep matches 26 run summon minecraft:marker 704.0 11.6 -64 {Tags:["target"]}
 execute if score @s PathStep matches 27 run summon minecraft:marker 699 11.6 -56 {Tags:["target"]}
 scoreboard players operation #temp Move = @s Move
-execute facing entity @e[tag=target,limit=1] feet as @e[tag=this_model,tag=floating_whirlindas_female,tag=main,limit=1] positioned as @s run function luigis_mansion:entities/ghost/move_forward
+execute facing entity @e[tag=target,limit=1] feet rotated ~ 0 as @e[tag=this_model,tag=floating_whirlindas_female,tag=main,limit=1] positioned as @s run function luigis_mansion:entities/ghost/move_forward
 scoreboard players operation #temp Move = @s Move
-execute facing entity @e[tag=target,limit=1] feet run function luigis_mansion:entities/ghost/move_forward
+execute facing entity @e[tag=target,limit=1] feet rotated ~ 0 run function luigis_mansion:entities/ghost/move_forward
 kill @e[tag=target,limit=1,type=minecraft:marker]

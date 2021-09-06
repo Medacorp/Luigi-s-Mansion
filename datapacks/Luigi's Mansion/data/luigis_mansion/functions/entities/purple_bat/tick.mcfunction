@@ -9,9 +9,7 @@ execute if entity @e[tag=same_room,tag=!spectator,distance=..0.7,limit=1] if ent
 tag @s[tag=fleeing] add turn_back
 tag @s[tag=fleeing] remove fleeing
 
-scoreboard players operation #temp Room = @s Room
 execute if entity @s[tag=!fleeing,tag=!attack,tag=!collided] if entity @e[tag=same_room,tag=!spectator,distance=..10,limit=1] run tag @s add attack
-scoreboard players reset #temp Room
 execute if entity @s[tag=attack,tag=!targetted,tag=!turn_back] run function luigis_mansion:entities/purple_bat/target
 execute if entity @s[tag=attack,tag=targetted,tag=turn_back] run function luigis_mansion:entities/purple_bat/return
 execute if entity @s[tag=turn_back,tag=!dead] run function luigis_mansion:entities/purple_bat/move
