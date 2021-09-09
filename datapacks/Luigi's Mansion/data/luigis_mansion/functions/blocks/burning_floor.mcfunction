@@ -1,5 +1,6 @@
 scoreboard players add @s Time 1
-execute if entity @s[scores={Time=1..59}] run fill ~-1 ~-1 ~-1 ~1 ~-1 ~1 minecraft:magma_block
-execute if entity @s[scores={Time=60}] run clone ~-1 ~-2 ~-1 ~1 ~-2 ~1 ~-1 ~-1 ~-1
-execute if entity @s[scores={Time=60}] run fill ~-1 ~-1 ~-1 ~1 ~-1 ~1 minecraft:air replace minecraft:melon
-execute unless block ~-1 ~-1 ~-1 minecraft:magma_block unless block ~1 ~-1 ~-1 minecraft:magma_block unless block ~-1 ~-1 ~1 minecraft:magma_block unless block ~1 ~-1 ~1 minecraft:magma_block run kill @s[scores={Time=60..}]
+execute if entity @s[scores={Time=1}] run function luigis_mansion:blocks/burning_floor/move_down
+execute as @e[distance=..2,tag=gameboy_horror_location] run function luigis_mansion:entities/gameboy_horror_location/bring_player_back
+effect give @a[gamemode=!spectator,distance=..2] minecraft:instant_damage 1 0 true
+scoreboard players set @a[gamemode=!spectator,distance=..2] ForcedDamage 4
+tag @s[scores={Time=60..}] add dead

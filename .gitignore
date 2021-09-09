@@ -1,4 +1,5 @@
 advancements
+data/chunks.dat
 data/command_storage_*
 data/scoreboard.dat
 data/raids.dat
@@ -8,6 +9,7 @@ DIM1
 DIM-1
 dimensions/*/
 !dimensions/luigis_mansion/
+dimensions/luigis_mansion/*/data/chunks.dat
 dimensions/luigis_mansion/*/data/raids.dat
 dimensions/luigis_mansion/*/poi
 playerdata

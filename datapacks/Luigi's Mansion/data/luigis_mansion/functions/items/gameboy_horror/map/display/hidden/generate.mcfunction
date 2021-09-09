@@ -1,4 +1,3 @@
-forceload add 3777 -100 3585 115
 function luigis_mansion:items/gameboy_horror/map/display/hidden/clear
 function luigis_mansion:items/gameboy_horror/map/display/hidden/foyer
 function luigis_mansion:items/gameboy_horror/map/display/hidden/hallway_1
@@ -130,4 +129,3 @@ function luigis_mansion:items/gameboy_horror/map/display/hidden/stairs/foyer
 function luigis_mansion:items/gameboy_horror/map/display/hidden/stairs/hallway_7
 function luigis_mansion:items/gameboy_horror/map/display/hidden/stairs/hallway_8
 function luigis_mansion:items/gameboy_horror/map/display/hidden/stairs/hallway_14
-forceload remove 3777 -100 3585 115

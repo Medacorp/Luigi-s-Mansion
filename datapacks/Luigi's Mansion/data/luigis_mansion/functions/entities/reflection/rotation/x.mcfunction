@@ -1,2 +1,1 @@
 execute store result entity @s Rotation[0] float -0.01 run data get entity @s Rotation[0] 100
-scoreboard players add @s Dialog 1

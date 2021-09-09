@@ -30,10 +30,10 @@ execute if entity @s[tag=!already_added_to_list] run data modify storage luigis_
 tag @s add already_added_to_list
 
 scoreboard players operation #temp Room = @s Room
-execute as @e[tag=ghost] if score @s Room = #temp Room run tag @s add target
+execute as @e[tag=ghost,tag=!visible] if score @s Room = #temp Room run tag @s add target
 execute at @e[tag=target,tag=hidden] run particle minecraft:dust 0.7 1 0.5 1 ~ ~0.6 ~ 0.3 0.3 0.3 0 5 normal @s
-execute at @e[tag=target,tag=!visible,tag=!hidden] run particle minecraft:dust 0.7 1 0 1 ~ ~1.6 ~ 0.3 0.3 0.3 0 5 normal @s
-tag @e[tag=portrait_ghost,tag=target] remove target
+execute at @e[tag=target,tag=!hidden] run particle minecraft:dust 0.7 1 0 1 ~ ~1.6 ~ 0.3 0.3 0.3 0 5 normal @s
+tag @e[tag=target] remove target
 scoreboard players reset #temp Room
 tag @s add spectator
 

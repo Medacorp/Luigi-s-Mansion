@@ -5,9 +5,7 @@ scoreboard players operation #temp Health *= #2 Constants
 execute if score #temp Health <= @s MaxHealth if entity @e[tag=bowser_body,distance=..2,limit=1] run tag @e[tag=bowser,limit=1] add headless_run
 execute if entity @e[tag=bowser_body,distance=..2,limit=1] run scoreboard players reset @e[tag=bowser,limit=1] ActionTime
 execute if entity @e[tag=bowser_body,distance=..2,limit=1] run tag @s add vanish
-execute at @e[tag=bowser_body,distance=..2,limit=1] run teleport @e[tag=bowser,limit=1] ~ ~ ~ ~ ~
+execute at @e[tag=bowser_body,distance=..2,limit=1] run tag @e[tag=bowser,tag=!headless_run,limit=1] add grabbing_head
+execute at @e[tag=bowser_body,distance=..2,limit=1] run teleport @e[tag=bowser,limit=1] ^ ^0.5 ^0.5 ~ ~
 execute if score #temp Health <= @s MaxHealth positioned ~ ~-4 ~ if entity @e[tag=bowser_body,distance=..2,limit=1] run tag @e[tag=bowser,limit=1] add headless_run
-execute positioned ~ ~-4 ~ if entity @e[tag=bowser_body,distance=..2,limit=1] run scoreboard players reset @e[tag=bowser,limit=1] ActionTime
-execute positioned ~ ~-4 ~ if entity @e[tag=bowser_body,distance=..2,limit=1] run tag @s add vanish
-execute positioned ~ ~-4 ~ at @e[tag=bowser_body,distance=..2,limit=1] run teleport @e[tag=bowser,limit=1] ~ ~ ~ ~ ~
 scoreboard players reset #temp Health

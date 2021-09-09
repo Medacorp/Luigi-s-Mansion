@@ -32,9 +32,11 @@ execute if entity @s[scores={Dialog=1596}] run scoreboard players set @a[tag=sam
 execute if entity @s[scores={Dialog=1596..1605}] run effect give @a[tag=same_room] minecraft:nausea 10 0 true
 execute if entity @s[scores={Dialog=1606..1625}] run effect give @a[tag=same_room] minecraft:nausea 9 0 true
 execute if entity @s[scores={Dialog=1626..1645}] run effect give @a[tag=same_room] minecraft:nausea 8 0 true
+execute if entity @s[scores={Dialog=1626}] at @e[tag=mario,scores={Room=72}] positioned ^ ^0.5 ^-1 run function luigis_mansion:spawn_entities/bowser/painting
 execute if entity @s[scores={Dialog=1646..1665}] run effect give @a[tag=same_room] minecraft:nausea 7 0 true
 execute if entity @s[scores={Dialog=1666..1685}] run effect give @a[tag=same_room] minecraft:nausea 6 0 true
 execute if entity @s[scores={Dialog=1686..1705}] run effect give @a[tag=same_room] minecraft:nausea 5 0 true
+execute if entity @s[scores={Dialog=1686}] run tag @e[tag=mario,scores={Room=72}] add dead
 execute if entity @s[scores={Dialog=1706..1725}] run effect give @a[tag=same_room] minecraft:nausea 4 0 true
 execute if entity @s[scores={Dialog=1726..1745}] run effect give @a[tag=same_room] minecraft:nausea 3 0 true
 execute if entity @s[scores={Dialog=1746..1765}] run effect give @a[tag=same_room] minecraft:nausea 2 0 true
@@ -42,6 +44,7 @@ execute if entity @s[scores={Dialog=1766..1785}] run effect give @a[tag=same_roo
 tag @s[scores={Dialog=1756}] remove magic
 scoreboard players set @s[scores={Dialog=1755}] AnimationProg 0
 execute if entity @s[scores={Dialog=1785..1806}] facing 633 94 -18 run teleport @s ^ ^ ^0.3 ~ ~
+execute if entity @s[scores={Dialog=1806}] run tag @e[tag=bowser,scores={Room=72}] add animate
 execute if entity @s[scores={Dialog=1895..}] as @e[tag=same_room,tag=gameboy_horror_location] run function luigis_mansion:entities/gameboy_horror_location/bring_player_back
 execute if entity @s[scores={Dialog=1895..}] run scoreboard players set @a[tag=same_room] Invulnerable 10
 execute if entity @s[scores={Dialog=1895..}] positioned 635 94 -18 as @a[tag=same_room] facing entity @s feet run function luigis_mansion:dialog/king_boo/suck
