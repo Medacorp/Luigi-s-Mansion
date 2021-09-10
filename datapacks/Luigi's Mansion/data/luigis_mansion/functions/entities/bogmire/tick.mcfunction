@@ -19,6 +19,7 @@ execute if entity @s[tag=!fleeing,tag=!hurt,tag=!vanish,scores={StunTime=0}] run
 
 execute at @s[tag=vanish] run function luigis_mansion:entities/bogmire/vanish
 execute at @s[tag=fleeing] run function luigis_mansion:animations/bogmire/flee
+execute at @s[tag=!fleeing,tag=hurt] run tag @e[tag=bogmires_shadow] add dead
 execute at @s[tag=!fleeing,tag=hurt] run function luigis_mansion:animations/bogmire/hurt
 tag @s[tag=hurt] remove shadow_hit
 tag @s[tag=hurt] remove big_shadow

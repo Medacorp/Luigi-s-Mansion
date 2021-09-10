@@ -33,6 +33,7 @@ execute at @s[tag=appear] run function luigis_mansion:entities/mr_bones/appear
 execute at @s[tag=!hurt,tag=!element_hurt,tag=!fleeing,tag=!attack,tag=!collided,tag=!vanish,tag=!laugh,tag=!complain,tag=!appear,scores={StunTime=0}] run function luigis_mansion:animations/mr_bones/haunt
 execute at @s[tag=fleeing] run function luigis_mansion:animations/mr_bones/flee
 execute at @s[tag=!fleeing,tag=hurt] run function luigis_mansion:animations/mr_bones/hurt
+data merge entity @s[tag=!fleeing,tag=hurt] {HandItems:[{id:"minecraft:diamond_pickaxe",Count:1b,tag:{Unbreakable:1b,Damage:2,CustomModelData:95}},{id:"minecraft:diamond_pickaxe",Count:1b,tag:{Unbreakable:1b,Damage:3,CustomModelData:95}}]}
 execute at @s[tag=!hurt,tag=element_hurt] run function luigis_mansion:animations/mr_bones/hurt
 
 scoreboard players reset #temp GhostNr

@@ -6,7 +6,7 @@ scoreboard players set @s[scores={ActionTime=1}] AnimationProg 0
 data modify entity @s[scores={ActionTime=15}] ArmorItems[3].tag.CustomModelData set value 90
 scoreboard players set @s[scores={ActionTime=21}] AnimationProg 0
 teleport @s[scores={ActionTime=2..21}] ^ ^-0.15 ^0.1
-execute if entity @s[scores={ActionTime=21..30}] positioned ^ ^ ^0.5 run function luigis_mansion:entities/bowser/suck
+execute if entity @s[scores={ActionTime=21..30}] positioned ^ ^0.9 ^1.5 run function luigis_mansion:entities/bowser/suck
 execute if entity @s[scores={ActionTime=30}] run tag @a[tag=got_sucked,distance=..4,sort=nearest,limit=1] add vacuumed
 execute if entity @a[tag=got_sucked,distance=..4] run scoreboard players add @s[scores={ActionTime=30}] ActionTime 1
 execute if entity @s[scores={ActionTime=30}] unless entity @a[tag=got_sucked] run scoreboard players set @s ActionTime 120

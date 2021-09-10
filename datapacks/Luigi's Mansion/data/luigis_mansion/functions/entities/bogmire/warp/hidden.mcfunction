@@ -12,5 +12,3 @@ execute at @s if block ~ 15 ~ minecraft:lime_wool if block ^ ^ ^1 #luigis_mansio
 execute at @s if block ~ 15 ~ minecraft:lime_wool if block ^ ^ ^1 #luigis_mansion:all_ignore run scoreboard players set @s Dialog 0
 execute at @s if block ~ 15 ~ minecraft:lime_wool if block ^ ^ ^1 #luigis_mansion:all_ignore run function luigis_mansion:entities/bogmire/turn_visible
 execute at @s if block ~ 15 ~ minecraft:lime_wool if block ^ ^ ^1 #luigis_mansion:all_ignore run function luigis_mansion:entities/bogmire/spawn_shadow
-scoreboard players reset #temp Steps
-tag @s remove spawn

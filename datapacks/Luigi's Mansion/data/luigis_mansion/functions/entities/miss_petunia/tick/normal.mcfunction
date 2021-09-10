@@ -1,5 +1,7 @@
 scoreboard players add @s[scores={Dialog=2..60}] Dialog 1
 execute positioned ~3 ~ ~ if block ^ ^ ^2 minecraft:air run scoreboard players add @s[scores={Dialog=1}] Dialog 1
+execute positioned ~3 ~ ~ unless block ^ ^ ^2 minecraft:air unless entity @s[tag=vanish] as @e[tag=this_model,tag=miss_petunia_shadow,tag=!body,tag=!right_arm,tag=!left_arm,tag=!visible,limit=1] run function luigis_mansion:entities/miss_petunia/turn_shadow_visible
+execute positioned ~3 ~ ~ if block ^ ^ ^2 minecraft:air as @e[tag=this_model,tag=miss_petunia_shadow,tag=!body,tag=!right_arm,tag=!left_arm,tag=visible,limit=1] run function luigis_mansion:entities/miss_petunia/turn_shadow_invisible
 execute unless entity @s[scores={Dialog=1..}] run scoreboard players add @s Dialog 1
 execute unless entity @s[scores={Dialog=3..59}] run function luigis_mansion:entities/miss_petunia/turn_visible
 execute if entity @s[scores={Dialog=1},tag=visible] at @e[tag=same_room,tag=!spectator] positioned ^ ^ ^8 if entity @s[distance=..8] run function luigis_mansion:entities/miss_petunia/turn_invisible
@@ -24,3 +26,4 @@ execute at @s[scores={Dialog=20..49}] run function luigis_mansion:animations/mis
 execute at @s[scores={Dialog=50..59}] run function luigis_mansion:animations/miss_petunia/spit
 execute at @s[scores={VulnerableTime=1..}] run function luigis_mansion:animations/miss_petunia/shiver
 execute at @s[scores={VulnerableTime=0},tag=!vanish] unless entity @s[scores={Dialog=20..59}] run function luigis_mansion:animations/miss_petunia/idle
+execute as @e[tag=this_model,tag=miss_petunia_shadow,tag=!body,tag=!right_arm,tag=!left_arm,limit=1] positioned ~3.5 ~ ~ run function luigis_mansion:animations/miss_petunia/shadow

@@ -1,3 +1,5 @@
+execute as @e[tag=bogmires_shadow] at @s run function luigis_mansion:entities/bogmire/shadow
+
 execute if entity @s[tag=!intro_done] run function luigis_mansion:entities/bogmire/battle_intro/normal
 execute unless entity @s[scores={Dialog=1..}] run scoreboard players add @s[tag=intro_done,scores={VulnerableTime=0}] Dialog 1
 scoreboard players add @s[tag=intro_done,scores={VulnerableTime=0,Dialog=..179}] Dialog 1
