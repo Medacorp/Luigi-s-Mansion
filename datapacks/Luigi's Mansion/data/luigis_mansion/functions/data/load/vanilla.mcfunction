@@ -1,6 +1,7 @@
 data modify storage luigis_mansion:data current_state.current_data set value {nothing_loaded:1b}
 data modify storage luigis_mansion:data current_state.mansion_data set from storage luigis_mansion:data saved_state.mansion_data
 data modify storage luigis_mansion:data current_state.ghosts_caught set from storage luigis_mansion:data saved_state.ghosts_caught
+data modify storage luigis_mansion:data current_state.money_grabbed set from storage luigis_mansion:data saved_state.money_grabbed
 execute if data storage luigis_mansion:data current_state.mansion_data[-1] run function luigis_mansion:room/load_mansion_data
 execute if data storage luigis_mansion:data current_state.current_data{nothing_loaded:1b} unless score #loaded_exterior Selected matches -1 in minecraft:overworld run function luigis_mansion:room/load_exterior/empty
 execute if data storage luigis_mansion:data current_state.current_data{nothing_loaded:1b} run function #luigis_mansion:room/remove_forceloaded_chunks

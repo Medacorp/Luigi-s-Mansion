@@ -93,12 +93,12 @@ execute if entity @s[scores={Dialog=1030}] unless score #temp Money matches 0 ru
 execute if entity @s[scores={Dialog=1030}] if score #temp Money matches 0 run tellraw @a[tag=same_room] {"translate":"chat.type.text","with":[{"translate":"luigis_mansion:entity.mansion","color":"green"},{"translate":"luigis_mansion:message.money.not_obtained"}]}
 execute if entity @s[scores={Dialog=1050}] run function luigis_mansion:dialog/portrificationizing/get_total_score
 execute if entity @s[scores={Dialog=1050}] if score #temp Money matches 1.. run tellraw @a[tag=same_room] {"translate":"chat.type.text","with":[{"translate":"luigis_mansion:entity.mansion","color":"green"},{"translate":"luigis_mansion:message.money.total","with":[{"score":{"objective":"Money","name":"#temp"}}]}]}
-execute if entity @s[scores={Dialog=1050}] unless score #temp Money matches 1.. run tellraw @a[tag=same_room] {"translate":"chat.type.text","with":[{"translate":"luigis_mansion:entity.mansion","color":"green"},{"translate":"luigis_mansion:message.money.not_obtained"}]}
+execute if entity @s[scores={Dialog=1050}] unless score #temp Money matches 1.. run tellraw @a[tag=same_room] {"translate":"chat.type.text","with":[{"translate":"luigis_mansion:entity.mansion","color":"green"},{"translate":"luigis_mansion:message.money.total.no_money"}]}
 execute if entity @s[scores={Dialog=1050},tag=ending] if data storage luigis_mansion:data high_scores[0] run function luigis_mansion:dialog/portrificationizing/get_high_score
 execute if entity @s[scores={Dialog=1050},tag=ending] run scoreboard players operation #temp2 Money > #temp Money
 execute if entity @s[scores={Dialog=1050},tag=ending] run function luigis_mansion:dialog/portrificationizing/save_high_score
 execute if entity @s[scores={Dialog=1050},tag=ending] if score #temp2 Money matches 1.. run tellraw @a[tag=same_room] {"translate":"chat.type.text","with":[{"translate":"luigis_mansion:entity.mansion","color":"green"},{"translate":"luigis_mansion:message.money.high_score","with":[{"score":{"objective":"Money","name":"#temp2"}}]}]}
-execute if entity @s[scores={Dialog=1050},tag=ending] unless score #temp2 Money matches 1.. run tellraw @a[tag=same_room] {"translate":"chat.type.text","with":[{"translate":"luigis_mansion:entity.mansion","color":"green"},{"translate":"luigis_mansion:message.money.high_score","with":[{"score":{"objective":"Money","name":"#temp2"}}]}]}
+execute if entity @s[scores={Dialog=1050},tag=ending] unless score #temp2 Money matches 1.. run tellraw @a[tag=same_room] {"translate":"chat.type.text","with":[{"translate":"luigis_mansion:entity.mansion","color":"green"},{"translate":"luigis_mansion:message.money.high_score.no_money"}]}
 execute if entity @s[scores={Dialog=1050}] run scoreboard players reset #temp Money
 execute if entity @s[scores={Dialog=1050}] run scoreboard players reset #temp2 Money
 teleport @s[scores={Dialog=810..1068},tag=!ending] ~ ~ ~0.1 0 0

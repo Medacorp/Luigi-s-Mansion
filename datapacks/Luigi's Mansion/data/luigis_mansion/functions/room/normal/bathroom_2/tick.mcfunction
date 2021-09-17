@@ -1,6 +1,6 @@
 execute unless score #bathroom_2 Ticking matches 1 run function #luigis_mansion:room/normal/bathroom_2/load
 execute as @a[gamemode=!spectator,x=648,y=19,z=15,dx=12,dy=8,dz=14] unless entity @s[scores={Room=43}] run scoreboard players operation @s LastRoom = @s Room
-execute as @e[type=!minecraft:item_frame,x=648,y=19,z=15,dx=12,dy=8,dz=14] unless entity @s[type=!minecraft:player,scores={Room=-2147483648..}] run scoreboard players set @s Room 43
+execute as @e[type=!minecraft:item_frame,x=648,y=19,z=15,dx=12,dy=8,dz=14] unless entity @s[type=!minecraft:player,tag=!model_piece,scores={Room=-2147483648..}] run scoreboard players set @s Room 43
 
 execute as @e[scores={Room=43},type=!minecraft:marker] unless entity @s[gamemode=spectator] run scoreboard players set @s MirrorX 649
 

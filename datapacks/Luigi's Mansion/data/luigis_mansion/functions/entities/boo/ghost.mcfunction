@@ -18,7 +18,7 @@ scoreboard players set @s[scores={Sound=0}] Sound 40
 
 scoreboard players operation #temp RoomSection = @s RoomSection
 
-execute if entity @a[gamemode=!spectator,distance=..0.7,limit=1] if entity @s[tag=!dying,tag=!dead,tag=!removed_from_existence] run function luigis_mansion:entities/boo/collide
+execute if entity @a[gamemode=!spectator,distance=..0.7,limit=1] if entity @s[tag=!dying,tag=!dead,tag=!removed_from_existence,tag=!appear] run function luigis_mansion:entities/boo/collide
 execute if entity @s[tag=!fleeing,tag=!attack,tag=can_attack,tag=!laugh,tag=!taunt,tag=!appear] if predicate luigis_mansion:boo_attack_chance run tag @s add attack
 tag @s[tag=fleeing] remove attack
 execute if entity @s[tag=!fleeing,tag=attack,tag=!laugh,tag=!taunt,tag=!appear] run function luigis_mansion:entities/boo/attack

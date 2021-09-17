@@ -1,5 +1,5 @@
 give @s minecraft:filled_map{HideFlags:63,map:0,CustomModelData:0,display:{Name:'{"italic":false,"color":"white","translate":"luigis_mansion:item.contest_reward_map"}'},luigis_mansion:{id:"luigis_mansion:contest_reward_map"}}
-teleport @s 889 90 -134 -180 0
+teleport @s 858 90 -38 0 0
 attribute @s minecraft:generic.max_health base set 100
 effect give @s minecraft:instant_health 1 19 true
 scoreboard players set @s ForcedDamage 0
@@ -18,6 +18,7 @@ scoreboard players set @s Run 0
 scoreboard players set @s Sneak 0
 scoreboard players set @s Sneaking 0
 scoreboard players set @s SneakTime 0
+scoreboard players set @s Room 0
 gamemode adventure @s
 tag @s add joined
 tag @s add fix_health

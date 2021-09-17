@@ -96,7 +96,6 @@ scoreboard objectives add Range dummy
 scoreboard objectives add ReadBook minecraft.used:minecraft.written_book
 scoreboard objectives add ReflectionNr dummy
 scoreboard objectives add ResetChoice trigger
-scoreboard objectives add ResetMansion dummy
 scoreboard objectives add ReturnTimer dummy
 scoreboard objectives add Room dummy
 scoreboard objectives add RoomNoise dummy
@@ -166,8 +165,8 @@ scoreboard players set #20000 Constants 20000
 scoreboard objectives setdisplay list Health
 
 execute unless score #loaded_exterior Selected matches -2147483648.. run scoreboard players set #loaded_exterior Selected 0
+execute unless score #mansion_data_index Selected matches -2147483648.. run function luigis_mansion:other/upgrade_path/newly_installed
 execute unless score #mansion_data_index Selected matches -2147483648.. run scoreboard players set #mansion_data_index Selected 0
-execute unless score #mansion_type Selected matches -2147483648.. run function luigis_mansion:other/upgrade_path/newly_installed
 execute unless score #mansion_type Selected matches -2147483648.. run scoreboard players set #mansion_type Selected 0
 execute unless score #previous_mansion_index Selected matches -2147483648.. run scoreboard players set #previous_mansion_index Selected 0
 execute unless score #mirrored Selected matches 0..1 run scoreboard players set #mirrored Selected 0

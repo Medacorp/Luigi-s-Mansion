@@ -48,6 +48,7 @@ tag @s[scores={Walk=1..},tag=!looking_at_map] add walking
 tag @s[scores={WalkOnWater=1..},tag=!looking_at_map] add walking
 tag @s[scores={WalkUnderWater=1..},tag=!looking_at_map] add walking
 execute if entity @s[nbt={OnGround:0b}] if block ~ ~-0.01 ~ minecraft:air run tag @s[tag=!looking_at_map] add walking
+execute if entity @s[scores={Room=0},tag=walking,tag=!played_opening_music] run function luigis_mansion:other/play_opening_music
 scoreboard players set @s[scores={Walk=1..}] Walk 0
 scoreboard players set @s[scores={WalkOnWater=1..}] WalkOnWater 0
 scoreboard players set @s[scores={WalkUnderWater=1..}] WalkUnderWater 0

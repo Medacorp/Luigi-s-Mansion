@@ -4,7 +4,7 @@
 	"shrunk": false,
 	"has_skylight": false,
 	"has_ceiling": false,
-	"ambient_light": -0.03,
+	"ambient_light": -0.01,
 	"fixed_time": 22000,
 	"piglin_safe": true,
 	"bed_works": false,

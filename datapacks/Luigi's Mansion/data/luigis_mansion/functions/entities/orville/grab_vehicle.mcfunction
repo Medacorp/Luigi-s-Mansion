@@ -2,7 +2,7 @@ scoreboard players add @s ActionTime 1
 execute if entity @s[scores={ActionTime=1}] run playsound luigis_mansion:entity.orville.grab_vehicle hostile @a[tag=same_room] ~ ~ ~ 1
 scoreboard players set @s[scores={ActionTime=1}] AnimationProg 0
 execute if entity @s[scores={ActionTime=1}] run function luigis_mansion:entities/orville/turn_visible
-execute if entity @s[scores={ActionTime=1}] run function luigis_mansion:spawn_entities/plane
+execute if entity @s[scores={ActionTime=1}] run function luigis_mansion:spawn_entities/vacuumable_object/plane
 execute if entity @s[scores={ActionTime=1}] run scoreboard players operation @e[distance=..0.7,tag=plane] GhostNr = @s GhostNr
 execute if score #mirrored Selected matches 0 run teleport @s[scores={ActionTime=..40}] ~ ~ ~ ~20 ~
 execute if score #mirrored Selected matches 1 run teleport @s[scores={ActionTime=..40}] ~ ~ ~ ~-20 ~

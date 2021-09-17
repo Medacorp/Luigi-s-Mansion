@@ -1,5 +1,5 @@
 scoreboard players set @s HomeY 2700
-execute if entity @a[tag=same_room,tag=expelling_ice,distance=..10,limit=1] run tag @s[scores={Wave=..599}] fleeing
+execute if entity @a[tag=same_room,tag=expelling_ice,distance=..10,limit=1] run tag @s[scores={Wave=..599}] add fleeing
 execute if entity @s[scores={Sound=0,Dialog=0},tag=!freeze,tag=fleeing] run playsound luigis_mansion:entity.boo.flee hostile @a[tag=same_room] ~ ~ ~ 1
 scoreboard players set @s[scores={Sound=0,Dialog=0},tag=!freeze,tag=fleeing] Sound 40
 execute if entity @s[tag=!fleeing,tag=!attack,tag=!laugh,scores={Wave=80}] store result score @s ActionTime if entity @e[tag=boolossus,tag=split,tag=!dead]

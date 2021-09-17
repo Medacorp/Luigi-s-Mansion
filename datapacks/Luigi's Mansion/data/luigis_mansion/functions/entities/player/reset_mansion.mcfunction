@@ -1,8 +1,5 @@
-scoreboard players set * ResetMansion
+scoreboard players set * ChangedMansion
+scoreboard players reset @e ChangedMansion
 function #luigis_mansion:room/remove_forceloaded_chunks
-execute as @a run function luigis_mansion:other/load_data/reset_mansion_data
-execute unless score #loaded_exterior Selected matches -1 in minecraft:overworld run function luigis_mansion:room/load_exterior/empty
-scoreboard players set #mansion_type Selected -1
-scoreboard players set #mansion_data_index Selected -1
-scoreboard players set #previous_mansion_index Selected -1
-data modify storage luigis_mansion:data current_state.current_data set value {}
+function luigis_mansion:data/load
+execute as @a unless entity @s[scores={Room=-4..-1}] run function luigis_mansion:room/underground_lab/warp_to
