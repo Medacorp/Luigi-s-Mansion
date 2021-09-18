@@ -17,3 +17,4 @@ execute if entity @s[scores={AnimationProg=1..10}] store result entity @s Pose.H
 execute if entity @s[scores={AnimationProg=11..20}] store result entity @s Pose.Head[0] float 1 run scoreboard players remove #temp Time 4
 scoreboard players reset #temp Time
 scoreboard players set @s[scores={AnimationProg=20..}] AnimationProg 0
+execute if entity @s[scores={AnimationProg=1}] run playsound luigis_mansion:entity.melody_pianissima.slam_piano hostile @a[tag=same_room] ~ ~ ~ 1

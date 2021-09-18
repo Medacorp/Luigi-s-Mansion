@@ -1,0 +1,1 @@
+execute if entity @s[tag=fake_door] run function luigis_mansion:entities/ghost/capture/caught/fake_door

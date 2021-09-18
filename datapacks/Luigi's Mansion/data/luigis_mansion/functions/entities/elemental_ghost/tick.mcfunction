@@ -1,6 +1,9 @@
 execute if entity @s[tag=dead,tag=fire] as @p[gamemode=!spectator,tag=vacuuming] run function luigis_mansion:items/poltergust_3000/fire_element
 execute if entity @s[tag=dead,tag=water] as @p[gamemode=!spectator,tag=vacuuming] run function luigis_mansion:items/poltergust_3000/water_element
 execute if entity @s[tag=dead,tag=ice] as @p[gamemode=!spectator,tag=vacuuming] run function luigis_mansion:items/poltergust_3000/ice_element
+execute if entity @s[tag=dead,tag=fire] as @p[gamemode=!spectator,tag=vacuuming] run playsound luigis_mansion:entity.fire_elemental_ghost.vacuumed hostile @a[tag=same_room] ~ ~ ~ 1
+execute if entity @s[tag=dead,tag=water] as @p[gamemode=!spectator,tag=vacuuming] run playsound luigis_mansion:entity.water_elemental_ghost.vacuumed hostile @a[tag=same_room] ~ ~ ~ 1
+execute if entity @s[tag=dead,tag=ice] as @p[gamemode=!spectator,tag=vacuuming] run playsound luigis_mansion:entity.ice_elemental_ghost.vacuumed hostile @a[tag=same_room] ~ ~ ~ 1
 execute if entity @s[tag=dead] run function luigis_mansion:entities/elemental_ghost/drop_loot
 scoreboard players add @s SpawnTime 1
 execute if entity @s[scores={SpawnTime=1}] run function luigis_mansion:entities/elemental_ghost/initial_rotation
@@ -15,9 +18,9 @@ execute at @s[tag=fire,scores={SpawnTime=..60}] run particle minecraft:flame ~ ~
 execute at @s[tag=water,scores={SpawnTime=..60}] run particle minecraft:rain ~ ~0.8 ~ 0 0 0 0 1
 execute at @s[tag=ice,scores={SpawnTime=..60}] run particle minecraft:firework ~ ~0.8 ~ 0 0 0 0 1
 execute if entity @s[tag=hurt_elemental_ghost,tag=!was_hurt] run scoreboard players set @s SpawnTime 80
-execute if entity @s[tag=fire,tag=hurt_elemental_ghost,tag=!was_hurt] run playsound luigis_mansion:entity.fire_elemental_ghost.hurt
-execute if entity @s[tag=water,tag=hurt_elemental_ghost,tag=!was_hurt] run playsound luigis_mansion:entity.water_elemental_ghost.hurt
-execute if entity @s[tag=ice,tag=hurt_elemental_ghost,tag=!was_hurt] run playsound luigis_mansion:entity.ice_elemental_ghost.hurt
+execute if entity @s[tag=fire,tag=hurt_elemental_ghost,tag=!was_hurt] run playsound luigis_mansion:entity.fire_elemental_ghost.hurt hostile @a[tag=same_room] ~ ~ ~ 1
+execute if entity @s[tag=water,tag=hurt_elemental_ghost,tag=!was_hurt] run playsound luigis_mansion:entity.water_elemental_ghost.hurt hostile @a[tag=same_room] ~ ~ ~ 1
+execute if entity @s[tag=ice,tag=hurt_elemental_ghost,tag=!was_hurt] run playsound luigis_mansion:entity.ice_elemental_ghost.hurt hostile @a[tag=same_room] ~ ~ ~ 1
 data merge entity @s[tag=fire,tag=hurt_elemental_ghost,tag=!was_hurt] {ArmorItems:[{},{},{},{id:"minecraft:diamond_pickaxe",Count:1b,tag:{Unbreakable:1b,Damage:1,CustomModelData:108}}]}
 data merge entity @s[tag=water,tag=hurt_elemental_ghost,tag=!was_hurt] {ArmorItems:[{},{},{},{id:"minecraft:diamond_pickaxe",Count:1b,tag:{Unbreakable:1b,Damage:1,CustomModelData:110}}]}
 data merge entity @s[tag=ice,tag=hurt_elemental_ghost,tag=!was_hurt] {ArmorItems:[{},{},{},{id:"minecraft:diamond_pickaxe",Count:1b,tag:{Unbreakable:1b,Damage:1,CustomModelData:112}}]}

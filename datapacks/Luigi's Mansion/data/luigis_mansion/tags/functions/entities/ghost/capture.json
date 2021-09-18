@@ -12,7 +12,6 @@
         "luigis_mansion:entities/ghost/capture/spark",
         "luigis_mansion:entities/ghost/capture/elemental_ghost",
         "luigis_mansion:entities/ghost/capture/gold_ghost",
-        "luigis_mansion:entities/ghost/capture/gold_dummy_ghost",
         "luigis_mansion:entities/ghost/capture/temper_terror",
         "luigis_mansion:entities/ghost/capture/speedy_spirit",
         "luigis_mansion:entities/ghost/capture/purple_puncher",
@@ -31,6 +30,7 @@
         "luigis_mansion:entities/ghost/capture/purple_bomber",
         "luigis_mansion:entities/ghost/capture/waiter",
         "luigis_mansion:entities/ghost/capture/boo",
-        "luigis_mansion:entities/ghost/capture/portrait_ghost"
+        "luigis_mansion:entities/ghost/capture/portrait_ghost",
+        "luigis_mansion:entities/ghost/capture/fake_door"
 	]
 }

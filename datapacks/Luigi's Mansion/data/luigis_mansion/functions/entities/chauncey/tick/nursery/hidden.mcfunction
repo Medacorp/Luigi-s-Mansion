@@ -11,8 +11,8 @@ execute if entity @s[scores={Dialog=1..48}] at @e[tag=same_room,tag=!spectator] 
 tag @s[scores={Dialog=2}] remove sleep
 tag @s[scores={Dialog=2}] add wake_up
 scoreboard players set @s[scores={Dialog=2}] AnimationProg 0
-execute if entity @s[scores={Dialog=10}] run playsound luigis_mansion:entity.chauncey.cry hostile @a[tag=same_room] ~ ~ ~ 1
-execute if entity @s[scores={Dialog=30}] run playsound luigis_mansion:entity.chauncey.cry hostile @a[tag=same_room] ~ ~ ~ 1
+execute if entity @s[scores={Dialog=10}] run playsound luigis_mansion:entity.chauncey.cry_wake hostile @a[tag=same_room] ~ ~ ~ 1
+execute if entity @s[scores={Dialog=30}] run playsound luigis_mansion:entity.chauncey.cry_wake hostile @a[tag=same_room] ~ ~ ~ 1
 scoreboard players set @s[scores={Dialog=51}] AnimationProg 0
 execute if entity @s[scores={Dialog=51}] run function luigis_mansion:room/hidden/nursery/add_blockade
 tag @s[scores={Dialog=51}] remove wake_up
@@ -57,6 +57,7 @@ tag @s[scores={Dialog=171}] remove laugh
 tag @s[scores={Dialog=171}] remove complain
 tag @s[scores={Dialog=171}] remove move
 tag @s[scores={Dialog=171}] add knocked_back
+execute if entity @s[scores={Dialog=171}] run playsound luigis_mansion:entity.chauncey.hit_by_ball hostile @a[tag=same_room] ~ ~ ~ 1
 execute if entity @s[scores={Dialog=171..174}] if block ^ ^ ^-0.5 #luigis_mansion:ghosts_ignore if block ^ ^1 ^-0.5 #luigis_mansion:ghosts_ignore run teleport @s ^ ^ ^-0.5
 tag @s[scores={Dialog=211}] add move
 tag @s[scores={Dialog=211}] remove knocked_back

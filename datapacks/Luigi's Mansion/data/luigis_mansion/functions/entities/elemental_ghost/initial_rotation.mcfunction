@@ -18,6 +18,6 @@ execute if block ~ ~ ~1 #luigis_mansion:all_ignore if block ~ ~ ~-1 #luigis_mans
 execute if block ~ ~ ~1 #luigis_mansion:all_ignore if block ~ ~ ~-1 #luigis_mansion:all_ignore unless block ~1 ~ ~ #luigis_mansion:all_ignore if block ~-1 ~ ~ #luigis_mansion:all_ignore run teleport @s ~ ~ ~ 90 ~
 
 scoreboard players set @s Turn 20
-execute if entity @s[tag=fire] run playsound luigis_mansion:entity.fire_elemental_ghost.spawn
-execute if entity @s[tag=water] run playsound luigis_mansion:entity.water_elemental_ghost.spawn
-execute if entity @s[tag=ice] run playsound luigis_mansion:entity.ice_elemental_ghost.spawn
+execute if entity @s[tag=fire] run playsound luigis_mansion:entity.fire_elemental_ghost.spawn hostile @a[tag=same_room] ~ ~ ~ 1
+execute if entity @s[tag=water] run playsound luigis_mansion:entity.water_elemental_ghost.spawn hostile @a[tag=same_room] ~ ~ ~ 1
+execute if entity @s[tag=ice] run playsound luigis_mansion:entity.ice_elemental_ghost.spawn hostile @a[tag=same_room] ~ ~ ~ 1

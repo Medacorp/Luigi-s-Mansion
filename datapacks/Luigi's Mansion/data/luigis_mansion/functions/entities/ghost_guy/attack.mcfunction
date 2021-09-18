@@ -3,7 +3,8 @@ scoreboard players set @s[scores={ActionTime=1}] AnimationProg 0
 execute at @s[tag=!dancing] run function luigis_mansion:animations/ghost_guy/stab_attack
 execute at @s[tag=dancing] run function luigis_mansion:animations/ghost_guy/spin_attack
 
-execute if entity @s[scores={ActionTime=20}] run playsound luigis_mansion:entity.ghost_guy.attack hostile @a[tag=same_room] ~ ~ ~ 1
+execute if entity @s[scores={ActionTime=20},tag=dancing] run playsound luigis_mansion:entity.ghost_guy.spin_attack hostile @a[tag=same_room] ~ ~ ~ 1
+execute if entity @s[scores={ActionTime=20},tag=!dancing] run playsound luigis_mansion:entity.ghost_guy.attack hostile @a[tag=same_room] ~ ~ ~ 1
 execute if score #mirrored Selected matches 0 run teleport @s[scores={ActionTime=20..29},tag=dancing] ~ ~ ~ ~-36 ~
 execute if score #mirrored Selected matches 1 run teleport @s[scores={ActionTime=20..29},tag=dancing] ~ ~ ~ ~36 ~
 execute at @s[scores={ActionTime=20},tag=dancing] as @e[distance=..2,tag=gameboy_horror_location] run function luigis_mansion:entities/gameboy_horror_location/bring_player_back

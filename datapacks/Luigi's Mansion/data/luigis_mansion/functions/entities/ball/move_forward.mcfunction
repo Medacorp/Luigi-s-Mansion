@@ -2,6 +2,7 @@ execute if block ^ ^ ^0.1 #luigis_mansion:all_ignore if entity @s[tag=!chauncey]
 execute if block ^ ^ ^0.1 #luigis_mansion:all_ignore if entity @s[tag=spit] run teleport @s ^ ^ ^0.05
 execute if block ^ ^ ^0.1 #luigis_mansion:all_ignore run teleport @s[tag=chauncey,tag=!spit,tag=!land] ^ ^-0.05 ^0.05
 execute if block ^ ^ ^0.1 #luigis_mansion:all_ignore run teleport @s[tag=chauncey,tag=!spit,tag=land] ^ ^0.05 ^0.05
+execute positioned as @s[tag=chauncey,tag=!spit] unless block ~ ~-0.1 ~ #luigis_mansion:all_ignore run playsound luigis_mansion:entity.ball.bounce neutral @a[tag=same_room] ~ ~ ~ 1
 execute positioned as @s[tag=chauncey,tag=!spit] unless block ~ ~-0.1 ~ #luigis_mansion:all_ignore run tag @s add land
 execute positioned as @s[tag=chauncey,tag=!spit] if block ~ ~-0.1 ~ #luigis_mansion:all_ignore if block ~ ~-1.1 ~ #luigis_mansion:all_ignore if block ~ ~-2.1 ~ #luigis_mansion:all_ignore if block ~ ~-3.1 ~ #luigis_mansion:all_ignore run tag @s remove land
 scoreboard players remove #temp Move 1

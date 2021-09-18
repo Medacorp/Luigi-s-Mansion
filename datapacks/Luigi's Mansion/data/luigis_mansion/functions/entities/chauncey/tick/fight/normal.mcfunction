@@ -90,8 +90,10 @@ scoreboard players set @s[scores={Dialog=582},tag=intro_done] VulnerableTime 240
 scoreboard players set @s[scores={Dialog=582},tag=intro_done] AnimationProg 0
 tag @s[scores={Dialog=582},tag=intro_done] remove laugh
 tag @s[scores={Dialog=582},tag=intro_done] add dizzy
+execute if entity @s[scores={Dialog=582},tag=intro_done] run playsound luigis_mansion:entity.chauncey.hit_by_ball hostile @a[tag=same_room] ~ ~ ~ 1
 scoreboard players set @s[scores={Dialog=582},tag=intro_done] ActionTime 0
 execute at @s[scores={Dialog=582},tag=intro_done] rotated ~ 0 run teleport @s ~4 ~-2 ~ ~ ~
+execute if entity @s[scores={Dialog=802}] run playsound luigis_mansion:entity.chauncey.recover hostile @a[tag=same_room] ~ ~ ~ 1
 tag @s[scores={Dialog=822}] remove dizzy
 teleport @s[scores={Dialog=822}] 792.0 20 64.0
 scoreboard players set @s[scores={Dialog=822}] Dialog 0

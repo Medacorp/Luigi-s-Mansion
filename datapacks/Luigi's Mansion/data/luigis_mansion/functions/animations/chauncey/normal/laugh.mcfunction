@@ -16,3 +16,8 @@ execute if entity @s[scores={AnimationProg=6..15}] store result entity @s Pose.L
 execute if entity @s[scores={AnimationProg=16..20}] store result entity @s Pose.LeftArm[1] float 1 run scoreboard players add #temp Time 4
 scoreboard players reset #temp Time
 scoreboard players set @s[scores={AnimationProg=20..}] AnimationProg 0
+execute if entity @e[tag=this_model,nbt={ArmorItems:[{tag:{CustomModelData:11}}]},tag=!head] run tag @s add rattle 
+execute if entity @e[tag=this_model,nbt={ArmorItems:[{tag:{CustomModelData:14}}]},tag=!head] run tag @s add rattle
+execute if entity @s[tag=rattle,scores={AnimationProg=5}] run playsound luigis_mansion:entity.chauncey.rattle hostile @a[tag=same_room] ~ ~ ~ 1
+execute if entity @s[tag=rattle,scores={AnimationProg=15}] run playsound luigis_mansion:entity.chauncey.rattle hostile @a[tag=same_room] ~ ~ ~ 1
+tag @s remove rattle

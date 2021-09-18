@@ -5,7 +5,7 @@ tag @e[tag=ghost,scores={Room=2}] add no_hidden_move
 
 execute as @a[gamemode=!spectator,scores={Room=2}] run function luigis_mansion:room/normal/hallway_1/tick_per_player
 
-execute unless entity @e[type=minecraft:armor_stand,tag=key,tag=parlor,limit=1] unless entity @e[type=minecraft:armor_stand,tag=first_key,limit=1] unless data storage luigis_mansion:data {obtained_parlor_key:1b} if entity @e[x=736,y=20,z=8,dx=0,dy=1,dz=1,tag=door,scores={AnimationProg=39}] run playsound luigis_mansion:entity.ghost.cry hostile @a 751.0 13 9.0 3
+execute unless entity @e[type=minecraft:armor_stand,tag=key,tag=parlor,limit=1] unless entity @e[type=minecraft:armor_stand,tag=first_key,limit=1] unless data storage luigis_mansion:data {obtained_parlor_key:1b} if entity @e[x=736,y=20,z=8,dx=0,dy=1,dz=1,tag=door,scores={AnimationProg=39}] run playsound luigis_mansion:entity.ghost.mumble hostile @a 751.0 13 9.0 3
 execute unless entity @e[type=minecraft:armor_stand,tag=key,tag=parlor,limit=1] unless entity @e[type=minecraft:armor_stand,tag=first_key,limit=1] unless data storage luigis_mansion:data {obtained_parlor_key:1b} if entity @e[x=736,y=20,z=8,dx=0,dy=1,dz=1,tag=door,scores={AnimationProg=39}] run summon minecraft:armor_stand 751.0 13 9.0 {CustomName:'{"translate":"luigis_mansion:entity.gold_ghost"}',Tags:["first_key"],NoGravity:1b,Invulnerable:1b,Silent:1b,Invisible:1b,DisabledSlots:2039583}
 
 execute as @e[tag=eternal_gold_coin,scores={Room=2}] run scoreboard players add #temp Wave 1

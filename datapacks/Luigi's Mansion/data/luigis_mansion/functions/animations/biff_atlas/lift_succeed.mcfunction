@@ -45,3 +45,10 @@ execute if entity @s[scores={AnimationProg=126..140}] store result entity @e[tag
 execute if entity @s[scores={AnimationProg=141..160}] store result entity @e[tag=this_model,tag=left_arm,limit=1] Pose.Head[0] float 1 run scoreboard players remove #temp Time 3
 scoreboard players reset #temp Time
 scoreboard players set @s[scores={AnimationProg=160..}] AnimationProg 0
+execute if entity @s[scores={AnimationProg=21}] run playsound luigis_mansion:entity.biff_atlas.lift_1 hostile @a[tag=same_room] ~ ~ ~ 1
+execute if entity @s[scores={AnimationProg=41}] run playsound luigis_mansion:entity.biff_atlas.lift_4 hostile @a[tag=same_room] ~ ~ ~ 1
+execute if entity @s[scores={AnimationProg=75}] run playsound luigis_mansion:entity.biff_atlas.lift_success hostile @a[tag=same_room] ~ ~ ~ 1
+execute if entity @s[scores={AnimationProg=81}] run playsound luigis_mansion:entity.biff_atlas.lift_1 hostile @a[tag=same_room] ~ ~ ~ 1
+execute if entity @s[scores={AnimationProg=95}] run playsound luigis_mansion:entity.biff_atlas.lift_success hostile @a[tag=same_room] ~ ~ ~ 1
+execute if entity @s[scores={AnimationProg=115}] run playsound luigis_mansion:entity.biff_atlas.lift_success hostile @a[tag=same_room] ~ ~ ~ 1
+execute if entity @s[scores={AnimationProg=135}] run playsound luigis_mansion:entity.biff_atlas.lift_6 hostile @a[tag=same_room] ~ ~ ~ 1
