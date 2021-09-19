@@ -165,7 +165,6 @@ scoreboard players set #20000 Constants 20000
 scoreboard objectives setdisplay list Health
 
 execute unless score #loaded_exterior Selected matches -2147483648.. run scoreboard players set #loaded_exterior Selected 0
-execute unless score #mansion_data_index Selected matches -2147483648.. run function luigis_mansion:other/upgrade_path/newly_installed
 execute unless score #mansion_data_index Selected matches -2147483648.. run scoreboard players set #mansion_data_index Selected 0
 execute unless score #mansion_type Selected matches -2147483648.. run scoreboard players set #mansion_type Selected 0
 execute unless score #previous_mansion_index Selected matches -2147483648.. run scoreboard players set #previous_mansion_index Selected 0
@@ -182,6 +181,8 @@ execute unless score #ghost_heart_size Selected matches 0..100 run scoreboard pl
 execute unless score #gbh_clock Selected matches 0.. run scoreboard players set #gbh_clock Selected 0
 execute unless score #gbh_clock_increase Selected matches 0.. run scoreboard players set #gbh_clock_increase Selected 0
 execute if score #gbh_clock_increase Selected matches 0 run scoreboard players set #gbh_clock Selected 0
+
+execute unless data storage luigis_mansion:data current_state run function luigis_mansion:other/upgrade_path/newly_installed
 
 gamerule doTileDrops false
 gamerule maxCommandChainLength 2147483647

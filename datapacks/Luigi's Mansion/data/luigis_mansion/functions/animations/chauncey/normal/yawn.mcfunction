@@ -31,3 +31,5 @@ execute store result score #temp Time run data get entity @e[tag=this_model,limi
 execute if entity @s[scores={AnimationProg=1..10}] store result entity @e[tag=this_model,limit=1] Pose.Head[0] float 1 run scoreboard players remove #temp Time 4
 scoreboard players reset #temp Time
 scoreboard players set @s[scores={AnimationProg=80..}] AnimationProg 0
+data modify entity @s[scores={AnimationProg=1},tag=!fight] ArmorItems[3].tag merge value {CustomModelData:10}
+data modify entity @s[scores={AnimationProg=1},tag=fight] ArmorItems[3].tag merge value {CustomModelData:13}

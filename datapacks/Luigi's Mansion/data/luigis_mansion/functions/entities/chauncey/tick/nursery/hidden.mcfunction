@@ -5,17 +5,26 @@ execute positioned ~ ~-1 ~ if entity @e[type=minecraft:armor_stand,tag=ball,tag=
 scoreboard players add @s[scores={Dialog=50..169}] Dialog 1
 execute unless entity @s[scores={Dialog=1..}] run scoreboard players add @s Dialog 1
 tag @s[scores={Dialog=1}] add sleep
+scoreboard players set @s[scores={Dialog=1},tag=wake_up] AnimationProg 0
+scoreboard players set @s[scores={Dialog=1},tag=scream_wake] AnimationProg 0
 tag @s[scores={Dialog=1}] remove wake_up
-execute if entity @s[scores={Dialog=1..50}] run function luigis_mansion:entities/chauncey/turn_visible
+tag @s[scores={Dialog=1}] remove scream_wake
+execute if entity @s[scores={Dialog=1..50},tag=!visible] run function luigis_mansion:entities/chauncey/turn_visible
 execute if entity @s[scores={Dialog=1..48}] at @e[tag=same_room,tag=!spectator] positioned ^ ^ ^8 if entity @s[distance=..8] run function luigis_mansion:entities/chauncey/turn_invisible
-tag @s[scores={Dialog=2}] remove sleep
-tag @s[scores={Dialog=2}] add wake_up
-scoreboard players set @s[scores={Dialog=2}] AnimationProg 0
-execute if entity @s[scores={Dialog=10}] run playsound luigis_mansion:entity.chauncey.cry_wake hostile @a[tag=same_room] ~ ~ ~ 1
-execute if entity @s[scores={Dialog=30}] run playsound luigis_mansion:entity.chauncey.cry_wake hostile @a[tag=same_room] ~ ~ ~ 1
+execute if entity @s[scores={Dialog=2}] if predicate luigis_mansion:50_50 run tag @s add wake_up
+tag @s[scores={Dialog=2},tag=wake_up] remove sleep
+scoreboard players set @s[scores={Dialog=2},tag=wake_up] AnimationProg 0
+tag @s[scores={Dialog=10},tag=!wake_up] remove sleep
+tag @s[scores={Dialog=10},tag=!wake_up] add scream_wake
+scoreboard players set @s[scores={Dialog=10},tag=!wake_up] AnimationProg 0
+execute if entity @s[scores={Dialog=10},tag=wake_up] run playsound luigis_mansion:entity.chauncey.cry_wake hostile @a[tag=same_room] ~ ~ ~ 1
+execute if entity @s[scores={Dialog=30},tag=wake_up] run playsound luigis_mansion:entity.chauncey.cry_wake hostile @a[tag=same_room] ~ ~ ~ 1
+execute if entity @s[scores={Dialog=10},tag=scream_wake] run playsound luigis_mansion:entity.chauncey.scream_wake hostile @a[tag=same_room] ~ ~ ~ 1
+execute if entity @s[scores={Dialog=30},tag=scream_wake] run playsound luigis_mansion:entity.chauncey.scream_wake hostile @a[tag=same_room] ~ ~ ~ 1
 scoreboard players set @s[scores={Dialog=51}] AnimationProg 0
 execute if entity @s[scores={Dialog=51}] run function luigis_mansion:room/hidden/nursery/add_blockade
 tag @s[scores={Dialog=51}] remove wake_up
+tag @s[scores={Dialog=51}] remove scream_wake
 tag @s[scores={Dialog=51}] add yawn
 execute if entity @s[scores={Dialog=51}] run teleport @s 748 21 -55
 execute if entity @s[scores={Dialog=51..169}] as @a[tag=same_room,gamemode=!spectator,scores={MusicType=7}] run function luigis_mansion:other/music/set/lets_play

@@ -9,6 +9,7 @@ execute if entity @s[tag=!attack,tag=laugh] run function luigis_mansion:entities
 execute if entity @s[tag=!attack,tag=complain] run function luigis_mansion:entities/chauncey/complain
 execute at @s[tag=sleep] run function luigis_mansion:animations/chauncey/sleep
 execute at @s[tag=wake_up] run function luigis_mansion:animations/chauncey/wake_up
+execute at @s[tag=scream_wake] run function luigis_mansion:animations/chauncey/scream_wake
 execute at @s[tag=yawn] run function luigis_mansion:animations/chauncey/yawn
 execute at @s[tag=move] run function luigis_mansion:animations/chauncey/move
 execute at @s[tag=grab_rambler] run function luigis_mansion:animations/chauncey/grab_rambler
@@ -22,4 +23,4 @@ execute at @s[tag=bounce] run function luigis_mansion:animations/chauncey/bounce
 # run twice per tick
 execute at @s[tag=fast_bounce] run function luigis_mansion:animations/chauncey/bounce
 execute at @s[tag=fast_bounce] run function luigis_mansion:animations/chauncey/bounce
-execute at @s[tag=!scream,tag=!move,tag=!laugh,tag=!look_down,tag=!wink,tag=!sleep,tag=!grab_rambler,tag=!rambling,tag=!knocked_back,tag=!dizzy,tag=!bounce,tag=!fast_bounce,tag=!wake_up,tag=!yawn,tag=!attack,tag=!complain] run function luigis_mansion:animations/chauncey/idle
+execute at @s[tag=!scream,tag=!move,tag=!laugh,tag=!look_down,tag=!wink,tag=!sleep,tag=!grab_rambler,tag=!rambling,tag=!knocked_back,tag=!dizzy,tag=!bounce,tag=!fast_bounce,tag=!wake_up,tag=!scream_wake,tag=!yawn,tag=!attack,tag=!complain] run function luigis_mansion:animations/chauncey/idle
