@@ -20,7 +20,7 @@ execute at @s[tag=chauncey,tag=!vacuumable] run function luigis_mansion:entities
 execute at @s[scores={Move=1..}] run function luigis_mansion:entities/ball/move
 tag @s add me
 tag @e[tag=ball,tag=!me,sort=nearest,distance=..5,limit=1] add target
-execute at @s[tag=big] positioned ~ ~-0.4 ~ facing entity @e[tag=target,limit=1] feet positioned ^ ^ ^2 if entity @e[tag=target,distance=..1,limit=1] run function luigis_mansion:entities/ball/collide
+execute at @s[tag=big] positioned ~ ~-0.4 ~ facing entity @e[tag=target,limit=1] feet positioned ^ ^ ^2 if entity @e[tag=target,distance=..2,limit=1] run function luigis_mansion:entities/ball/collide
 execute at @s[tag=!big] positioned ~ ~-1 ~ facing entity @e[tag=target,limit=1] feet positioned ^ ^ ^1 if entity @e[tag=target,distance=..1,limit=1] run function luigis_mansion:entities/ball/collide
 tag @e[tag=target,limit=1] remove target
 tag @s remove me
@@ -39,6 +39,7 @@ execute if entity @s[tag=spit] store result entity @s Pose.Head[0] float 1 run s
 execute if entity @s[tag=chauncey,tag=!vacuumable] store result entity @s Pose.Head[0] float 1 run scoreboard players add @s HomeRot 10
 execute if entity @s[tag=spike_ball,scores={Move=1..}] store result entity @s Pose.Head[0] float 1 run scoreboard players add @s HomeRot 10
 scoreboard players remove @s[scores={Move=1..}] Move 1
+execute unless entity @s[scores={Move=0..}] run scoreboard players set @s Move 0
 scoreboard players set @s[tag=can_spit_2,tag=spike_ball] Move 0
 tag @s[tag=collision,tag=boo] add dead
 tag @s[tag=collision,tag=spike_ball] add explode

@@ -18,7 +18,8 @@ tag @s[tag=spawn_now,scores={Room=-2147483648..}] add spawn
 execute if entity @s[tag=!spawn,tag=!no_height_change] unless block ~ ~ ~ #luigis_mansion:all_ignore run tag @s add forced_collision
 execute if entity @s[tag=!spawn,tag=!no_height_change] if block ~ ~ ~ #minecraft:slabs run tag @s add forced_collision
 execute if entity @s[tag=!spawn,tag=!no_height_change] if block ~ ~ ~ #minecraft:stairs run tag @s add forced_collision
-execute if entity @s[tag=spawn,tag=!no_height_change] if block ~ ~-1 ~ #minecraft:slabs[type=bottom] run teleport @s ~ ~-0.5 ~
+execute if entity @s[tag=!no_height_change,tag=!new_ghost] if block ~ ~-0.5 ~ #luigis_mansion:all_ignore run teleport @s ~ ~-0.5 ~
+execute at @s[tag=spawn,tag=!no_height_change,tag=!new_ghost] if block ~ ~-1 ~ #minecraft:slabs[type=bottom] run teleport @s ~ ~-0.5 ~
 execute at @s[tag=spawn] unless entity @s[scores={GhostGuyCouple=-2147483648..}] run function luigis_mansion:entities/ghost/hidden/selection
 
 execute at @s[tag=!spawn] if entity @s[scores={SpawnTime=1..},tag=!new_ghost,tag=!no_hidden_move] run function luigis_mansion:entities/ghost/hidden/move

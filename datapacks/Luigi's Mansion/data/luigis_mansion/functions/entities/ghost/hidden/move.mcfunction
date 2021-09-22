@@ -17,10 +17,9 @@ execute at @s[tag=stuck] if block ~-1 ~ ~ #minecraft:stairs[half=bottom] run tel
 execute at @s[tag=!forced_collision] rotated ~ 0 run teleport @s ^ ^ ^0.2
 tag @s remove collision
 tag @s[tag=forced_collision] add collision
-execute at @s[tag=!no_height_change] unless block ~ ~ ~ #luigis_mansion:all_ignore if block ~ ~1 ~ #luigis_mansion:all_ignore if block ~ ~2 ~ #luigis_mansion:all_ignore run teleport @s ~ ~1 ~
-execute at @s[tag=!no_height_change] if block ~ ~ ~ #minecraft:slabs if block ~ ~1 ~ #luigis_mansion:all_ignore if block ~ ~2 ~ #luigis_mansion:all_ignore run teleport @s ~ ~1 ~
-execute at @s[tag=!no_height_change] if block ~ ~ ~ #minecraft:stairs if block ~ ~1 ~ #luigis_mansion:all_ignore if block ~ ~2 ~ #luigis_mansion:all_ignore run teleport @s ~ ~1 ~
-execute at @s[tag=!no_height_change] if block ~ ~-1 ~ #luigis_mansion:all_ignore run teleport @s ~ ~-1 ~
+execute at @s[tag=!no_height_change,tag=!new_ghost] unless block ~ ~ ~ #luigis_mansion:all_ignore if block ~ ~1 ~ #luigis_mansion:all_ignore if block ~ ~2 ~ #luigis_mansion:all_ignore run teleport @s ~ ~1 ~
+execute at @s[tag=!no_height_change,tag=!new_ghost] if block ~ ~ ~ #minecraft:slabs if block ~ ~1 ~ #luigis_mansion:all_ignore if block ~ ~2 ~ #luigis_mansion:all_ignore run teleport @s ~ ~1 ~
+execute at @s[tag=!no_height_change,tag=!new_ghost] if block ~ ~ ~ #minecraft:stairs if block ~ ~1 ~ #luigis_mansion:all_ignore if block ~ ~2 ~ #luigis_mansion:all_ignore run teleport @s ~ ~1 ~
 execute at @s[tag=!stuck,y_rotation=-180..0] unless block ~0.4 ~ ~ #luigis_mansion:all_ignore unless block ~0.4 ~ ~ #minecraft:slabs[type=bottom] unless block ~0.4 ~ ~ #minecraft:stairs[half=bottom] run tag @s add collision
 execute at @s[tag=!stuck,y_rotation=0..-180] unless block ~-0.4 ~ ~ #luigis_mansion:all_ignore unless block ~-0.4 ~ ~ #minecraft:slabs[type=bottom] unless block ~-0.4 ~ ~ #minecraft:stairs[half=bottom] run tag @s add collision
 execute at @s[tag=!stuck,y_rotation=-90..90] unless block ~ ~ ~0.4 #luigis_mansion:all_ignore unless block ~ ~ ~0.4 #minecraft:slabs[type=bottom] unless block ~ ~ ~0.4 #minecraft:stairs[half=bottom] run tag @s add collision

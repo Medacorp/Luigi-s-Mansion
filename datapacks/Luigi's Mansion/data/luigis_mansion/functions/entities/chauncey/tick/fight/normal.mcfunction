@@ -3,8 +3,8 @@ scoreboard players add @s[scores={Dialog=1784..},tag=intro_done] Dialog 1
 scoreboard players add @s[scores={Dialog=582..1782},tag=intro_done] Dialog 1
 execute positioned ~-1 ~ ~-1 if entity @e[type=minecraft:armor_stand,tag=ball,scores={Room=73},tag=spit,dx=2,dy=2,dz=2] run scoreboard players set @s[scores={Dialog=381..581},tag=intro_done] Dialog 582
 execute unless entity @e[type=minecraft:armor_stand,tag=ball,scores={Room=73}] run scoreboard players set @s[scores={Dialog=381..581},tag=intro_done] Dialog 0
-scoreboard players add @s[scores={Dialog=382..580},tag=!laugh,tag=intro_done] Dialog 1
-execute if entity @e[type=minecraft:armor_stand,tag=ball,scores={Room=73},tag=can_spit] run scoreboard players add @s[scores={Dialog=381},tag=!laugh,tag=intro_done] Dialog 1
+scoreboard players add @s[scores={Dialog=382..580},tag=intro_done] Dialog 1
+execute if entity @e[type=minecraft:armor_stand,tag=ball,scores={Room=73},tag=can_spit_2] run scoreboard players add @s[scores={Dialog=381},tag=intro_done] Dialog 1
 scoreboard players add @s[scores={Dialog=83,Health=5001..},tag=intro_done] Dialog 100
 scoreboard players set @s[scores={Dialog=240..380},tag=laugh,tag=intro_done] Dialog 380
 scoreboard players add @s[scores={Dialog=240..380},tag=intro_done] Dialog 1
