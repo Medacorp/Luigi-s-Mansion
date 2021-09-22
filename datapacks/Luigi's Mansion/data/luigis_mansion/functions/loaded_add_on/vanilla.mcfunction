@@ -1,5 +1,6 @@
 scoreboard players reset * Loaded
-scoreboard players set #vanilla Loaded 1
+scoreboard players operation #vanilla Loaded > * Loaded
+scoreboard players add #vanilla Loaded 1
 
 function luigis_mansion:anti_cheating/scores
 

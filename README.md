@@ -110,11 +110,22 @@ Numbers shown | 3DS Remake Values | Add-on             | Namespace              
 ```
 
 # Check compatibility/dependency
-To set this add-on as loaded, allowing for other add-ons to check/warn for compatibility issues, add to the function tag `#luigis_mansion:loaded_add_ons` a function with the following contents: `scoreboard players set #<add-on> Loaded 1`
+To set this add-on as loaded, allowing for other add-ons to check/warn for compatibility issues, add to the function tag `#luigis_mansion:loaded_add_ons` a function with the following contents: 
+`scoreboard players operation #<add-on> Loaded > * Loaded`
+`scoreboard players add #<add-on> Loaded 1`
 
-To check for add-on compatibility issues, add to the function tag `#luigis_mansion:post_loaded_add_ons` a function which checks if the other add-on is loaded (`execute if score #<other add-on> Loaded matches 1 run ...`) and send the mandatory commands.
+The value of your add-on's Loaded score will be equal to the pack order.
 
-You can also do the same, but for dependencies, eg if you need the 3ds_remake add-on to exist to have a functioning add-on. (`execute unless score #<required add-on> Loaded matches 1 run ...`)
+If you need to rely on the load order of data packs, then you can use the following commands:
+
+`execute unless score #<add-on> Loaded matches <required number> run datapack disable "file/<pack name>"`
+`execute unless score #<add-on> Loaded matches <required number> run datapack enable "file/<pack name>" after "file/<pack name to load after>"`
+
+This is, however, something you should avoid. If 2 packs require to have the same loading position, the map will get stuck in a loop.
+
+To check for add-on compatibility issues, add to the function tag `#luigis_mansion:post_loaded_add_ons` a function which checks if the other add-on is loaded (`execute if score #<other add-on> Loaded matches 1.. run ...`) and send the mandatory commands.
+
+You can also do the same, but for dependencies, eg if you need the 3ds_remake add-on to exist to have a functioning add-on. (`execute unless score #<required add-on> Loaded matches 1.. run ...`)
 
 # Other
 ## Viewpoints
