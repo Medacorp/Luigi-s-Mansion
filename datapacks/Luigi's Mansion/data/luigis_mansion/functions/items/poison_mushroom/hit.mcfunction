@@ -16,5 +16,5 @@ execute if score #temp ActionTime matches 1.. positioned ~ ~1 ~ as @e[tag=gold_c
 scoreboard players remove #temp ActionTime 10
 execute if score #temp ActionTime matches ..0 run scoreboard players set #temp ActionTime 0
 function luigis_mansion:entities/player/reduce_my_coins
-execute unless entity @s[scores={Shrunk=1..}] run function luigis_mansion:items/poison_mushroom/remove_inventory
+execute unless entity @s[scores={Shrunk=1..}] in minecraft:overworld run function luigis_mansion:items/poison_mushroom/remove_inventory
 scoreboard players set @s Shrunk 201
