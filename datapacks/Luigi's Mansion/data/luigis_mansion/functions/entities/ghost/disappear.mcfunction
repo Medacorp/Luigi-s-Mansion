@@ -27,4 +27,5 @@ tag @s remove disappear
 tag @s remove disappear_next_tick
 tag @s remove hurt_animation
 tag @s remove vanish
+tag @s remove visible
 tag @s add hidden

@@ -6,14 +6,14 @@ execute if entity @s[tag=dead] run teleport @s ~ -100 ~
 
 execute if entity @s[scores={HurtTime=1},tag=hurt,tag=!fleeing] run playsound luigis_mansion:entity.garbage_can_ghost.hurt hostile @a[tag=same_room] ~ ~ ~ 1
 scoreboard players set @s[scores={HurtTime=1},tag=hurt,tag=!fleeing] Sound 40
-scoreboard players set @s[scores={HurtTime=1},tag=hurt,tag=!fleeing] BannanaDropTime 40
+scoreboard players set @s[scores={HurtTime=1},tag=hurt,tag=!fleeing] BananaDropTime 40
 execute if entity @s[scores={ElementHurtTime=0},tag=element_hurt] run playsound luigis_mansion:entity.garbage_can_ghost.element_hurt hostile @a[tag=same_room] ~ ~ ~ 1
 scoreboard players set @s[scores={ElementHurtTime=0},tag=element_hurt] Sound 30
 execute if entity @s[scores={Sound=0},tag=fleeing] run playsound luigis_mansion:entity.garbage_can_ghost.flee hostile @a[tag=same_room] ~ ~ ~ 1
 scoreboard players set @s[scores={Sound=0},tag=fleeing] Sound 40
-execute if entity @s[scores={BannanaDropTime=0}] run function luigis_mansion:entities/garbage_can_ghost/throw_bannana
-scoreboard players set @s[scores={BannanaDropTime=0},tag=fleeing] BannanaDropTime 60
-scoreboard players remove @s[scores={BannanaDropTime=1..},tag=fleeing] BannanaDropTime 1
+execute if entity @s[scores={BananaDropTime=0}] run function luigis_mansion:entities/garbage_can_ghost/throw_banana
+scoreboard players add @s[scores={BananaDropTime=0},tag=fleeing] BananaDropTime 60
+scoreboard players remove @s[scores={BananaDropTime=1..},tag=fleeing] BananaDropTime 1
 
 execute if entity @e[tag=same_room,tag=!spectator,distance=..0.7,limit=1] if entity @s[tag=!vanish,tag=!appear] if entity @s[tag=!dying,tag=!dead,tag=!removed_from_existence] run function luigis_mansion:entities/garbage_can_ghost/collide
 execute if entity @s[tag=!element_hurt,tag=!fleeing,tag=!collided,tag=!vanish,tag=!appear,tag=attack,scores={StunTime=0}] run function luigis_mansion:entities/garbage_can_ghost/attack

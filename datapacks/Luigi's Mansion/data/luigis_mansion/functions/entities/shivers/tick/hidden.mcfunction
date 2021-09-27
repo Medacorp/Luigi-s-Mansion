@@ -1,5 +1,5 @@
-execute if entity @s[scores={PathStep=1..2},tag=visible] run function luigis_mansion:entities/shivers/turn_invisible
-execute if entity @s[scores={PathStep=3..},tag=!visible,tag=!disappear] run function luigis_mansion:entities/shivers/turn_visible
+execute if entity @s[scores={PathStep=1..2},tag=visible,tag=!vanish] run function luigis_mansion:entities/shivers/turn_invisible
+execute if entity @s[scores={PathStep=3..},tag=!visible,tag=!vanish] run function luigis_mansion:entities/shivers/turn_visible
 execute unless entity @s[scores={PathStep=1..}] run scoreboard players set @s PathStep 1
 teleport @s[scores={PathStep=1}] ~ ~ ~ facing 682 11.6 29
 scoreboard players set @s[x=682.5,y=11.6,z=29.5,distance=..0.7,scores={PathStep=1}] PathStep 2
@@ -36,7 +36,7 @@ scoreboard players set @s[x=742.5,y=11.6,z=-53.5,distance=..0.7,scores={PathStep
 teleport @s[scores={PathStep=52}] ~ ~ ~ facing 745 11.6 -52
 execute if entity @s[scores={PathStep=53..},tag=!vanish] run scoreboard players add @s PathStep 1
 scoreboard players set @s[x=745.5,y=11.6,z=-51.5,distance=..0.7,scores={PathStep=52}] PathStep 53
-execute at @s[scores={PathStep=..52}] unless entity @s[scores={PathStep=3..43}] run function luigis_mansion:entities/shivers/move_forward
+execute at @s[scores={PathStep=..52},tag=!vanish] unless entity @s[scores={PathStep=3..43}] run function luigis_mansion:entities/shivers/move_forward
 scoreboard players set @s[scores={PathStep=53}] AnimationProg 0
 tag @s[scores={PathStep=53}] remove run
 tag @s[scores={PathStep=53}] add look_around
@@ -44,7 +44,7 @@ tag @s[scores={PathStep=73}] remove look_around
 tag @s[scores={PathStep=73}] add sit_down
 tag @s[scores={PathStep=93}] remove sit_down
 execute if entity @s[scores={PathStep=73..93}] run scoreboard players set #temp Move 1
-execute at @s[scores={PathStep=73..93}] facing 745 11.6 -51 run function luigis_mansion:entities/shivers/move_forward
+execute at @s[scores={PathStep=73..93},tag=!vanish] facing 745 11.6 -51 run function luigis_mansion:entities/shivers/move_forward
 tag @s[scores={PathStep=93}] add burn
 scoreboard players set @s[scores={PathStep=173}] AnimationProg 0
 tag @s[scores={PathStep=173}] remove burn

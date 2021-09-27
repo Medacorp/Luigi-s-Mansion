@@ -1,6 +1,6 @@
 execute unless score #boolossus_battle Ticking matches 1 run function #luigis_mansion:room/hidden/boolossus_battle/load
 execute as @a[gamemode=!spectator,x=562,y=15,z=-9,dx=48,dy=76,dz=87] run scoreboard players set @s LastRoom 75
-execute as @e[type=!minecraft:item_frame,x=562,y=15,z=-9,dx=48,dy=76,dz=87] unless entity @s[type=!minecraft:player,tag=!model_piece,scores={Room=-2147483648..}] run scoreboard players set @s Room 75
+execute as @e[type=!minecraft:item_frame,x=562,y=15,z=-9,dx=48,dy=76,dz=87] run scoreboard players set @s Room 75
 
 execute if data storage luigis_mansion:data current_state.current_data.portrait_ghosts.bogmire{health:0} run scoreboard players add #boolossus_battle ReturnTimer 1
 execute if score #boolossus_battle ReturnTimer matches 100.. as @a[gamemode=!spectator,scores={Room=75}] run function luigis_mansion:room/hidden/boolossus_battle/clear_balcony_2

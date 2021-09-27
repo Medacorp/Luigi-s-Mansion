@@ -1,0 +1,1 @@
+execute unless score #clockwork_room Ticking matches 1 run function luigis_mansion:room/normal/clockwork_room/reset_elevator

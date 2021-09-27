@@ -24,6 +24,8 @@ execute if score #temp Searched matches -1..0 run setblock 666 21 -92 minecraft:
 
 execute if score #temp Searched matches 1..2 as @a[x=666.0,y=20,z=-92.0,dx=0,dy=1,dz=0] unless data storage luigis_mansion:data current_state.current_data.rooms.astral_hall{cleared:1b} run function luigis_mansion:room/normal/astral_hall/trick_door
 execute if score #temp Searched matches 1..2 as @a[x=666.0,y=20,z=-92.0,dx=0,dy=1,dz=0] run teleport @s 645 20 -74
+execute if score #temp Searched matches 1..2 as @a[x=645.0,y=20,z=-73.0,dx=0,dy=1,dz=0] run stopsound @s[scores={RoomNoise=1..}] ambient luigis_mansion:music.mansion.room.observatory
+execute if score #temp Searched matches 1..2 as @a[x=645.0,y=20,z=-73.0,dx=0,dy=1,dz=0] run scoreboard players set @s RoomNoise 0
 execute if score #temp Searched matches 1..2 as @a[x=645.0,y=20,z=-73.0,dx=0,dy=1,dz=0] run teleport @s 666 20 -91
 
 scoreboard players reset #temp Searched

@@ -11,5 +11,5 @@ scoreboard players set @e[tag=this_entity,tag=mr_bones,limit=1] StunTime 0
 scoreboard players set @e[tag=this_entity,tag=mr_bones,limit=1] VulnerableTime 0
 scoreboard players set @e[tag=this_entity,tag=mr_bones,limit=1] TopVacuumDamage 0
 scoreboard players set @e[tag=this_entity,tag=mr_bones,limit=1] ElementHurtTime 0
-scoreboard players set @e[tag=this_entity,tag=mr_bones,limit=1] HeartOffset -2
+scoreboard players set @e[tag=this_entity,tag=mr_bones,limit=1] HeartOffset 3
 tag @e[tag=this_entity] remove this_entity

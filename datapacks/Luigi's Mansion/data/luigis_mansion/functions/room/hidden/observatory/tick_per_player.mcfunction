@@ -7,4 +7,6 @@ tag @s add seen_room_name
 
 execute if data storage luigis_mansion:data current_state.current_data.rooms.observatory{seen:0b} run function luigis_mansion:room/hidden/observatory/set_seen
 
-execute if data storage luigis_mansion:data current_state.current_data.technical_data{observatory_destroyed:1b} run particle minecraft:end_rod ~ ~ ~ 5 5 5 0 5 force @s
+execute if data storage luigis_mansion:data current_state.current_data.technical_data{observatory_destroyed:1b} at @s run particle minecraft:end_rod ~ ~ ~ 5 5 5 0 5 force @s
+execute if data storage luigis_mansion:data current_state.current_data.technical_data{observatory_destroyed:1b} run playsound luigis_mansion:music.mansion.room.observatory ambient @s[scores={RoomNoise=0}] ~ ~ ~ 1000
+execute if data storage luigis_mansion:data current_state.current_data.technical_data{observatory_destroyed:1b} run scoreboard players set @s[scores={RoomNoise=0}] RoomNoise 230

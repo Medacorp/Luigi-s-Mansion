@@ -1,7 +1,7 @@
 scoreboard objectives add ActionTime dummy
 scoreboard objectives add Angle dummy
 scoreboard objectives add AnimationProg dummy
-scoreboard objectives add BannanaDropTime dummy
+scoreboard objectives add BananaDropTime dummy
 scoreboard objectives add Boos dummy
 scoreboard objectives add BooTimer dummy
 scoreboard objectives add ChangedMansion dummy
@@ -26,6 +26,8 @@ scoreboard objectives add FlashlightType trigger
 scoreboard objectives add FlyTime dummy
 scoreboard objectives add Food food
 scoreboard objectives add ForcedDamage dummy
+scoreboard objectives add ForceRadar dummy
+scoreboard objectives add ForceScreen dummy
 scoreboard objectives add GBHCall dummy
 scoreboard objectives add GBHChoice trigger
 scoreboard objectives add GBHRadar dummy
@@ -174,8 +176,6 @@ execute unless score #multiply_hurt Selected matches 0.. run scoreboard players 
 execute unless score #multiply_damage Selected matches 0.. run scoreboard players set #multiply_damage Selected 100
 execute unless score #changing_max_health Selected matches 0..1 run scoreboard players set #changing_max_health Selected 0
 execute unless score #training_choice Selected matches 0..1 run scoreboard players set #training_choice Selected 0
-execute unless score #force_gbh_screen Selected matches 0..1 run scoreboard players set #force_gbh_screen Selected 0
-execute unless score #force_radar Selected matches 0..1 run scoreboard players set #force_radar Selected 0
 execute unless score #radar_type Selected matches 0.. run scoreboard players set #radar_type Selected 0
 execute unless score #ghost_heart_size Selected matches 0..100 run scoreboard players set #ghost_heart_size Selected 20
 execute unless score #gbh_clock Selected matches 0.. run scoreboard players set #gbh_clock Selected 0

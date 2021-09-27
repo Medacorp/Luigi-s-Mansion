@@ -4,7 +4,7 @@ execute unless entity @a[scores={Room=52},gamemode=!spectator,limit=1] run score
 execute unless entity @a[scores={Room=52},gamemode=!spectator,limit=1] run scoreboard players set @s[scores={Dialog=1450..1754}] Dialog 1850
 scoreboard players set @a[tag=same_room,gamemode=!spectator] Invulnerable 10
 execute as @a[distance=..2] at @s run teleport @s ~1 ~ ~
-execute if entity @s[scores={Dialog=1}] as @a[tag=same_room,gamemode=!spectator] run function luigis_mansion:other/music/set/mysterious_power
+execute if entity @s[scores={Dialog=1..2096}] as @a[tag=same_room,gamemode=!spectator] unless entity @s[scores={MusicGroup=0,MusicType=21}] run function luigis_mansion:other/music/set/mysterious_power
 execute if data storage luigis_mansion:data current_state.current_data.technical_data{mysterious_power:1b} run scoreboard players set @s[scores={Dialog=1}] Dialog 1450
 execute if entity @s[scores={Dialog=1}] run playsound luigis_mansion:entity.boo.laugh_2 hostile @a[tag=same_room] ~ ~ ~ 1
 execute if entity @s[scores={Dialog=40}] run playsound luigis_mansion:entity.boo.flinch hostile @a[tag=same_room] ~ ~ ~ 1

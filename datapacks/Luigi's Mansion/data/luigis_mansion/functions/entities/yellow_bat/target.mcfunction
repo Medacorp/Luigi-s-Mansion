@@ -1,6 +1,6 @@
-execute if entity @e[tag=same_room,tag=!spectator,sort=nearest,limit=1] store result score @s TargetX run data get entity @e[tag=same_room,tag=!spectator,sort=nearest,limit=1] Pos[0] 100
-execute if entity @e[tag=same_room,tag=!spectator,sort=nearest,limit=1] store result score @s TargetY run data get entity @e[tag=same_room,tag=!spectator,sort=nearest,limit=1] Pos[1] 100
-execute if entity @e[tag=same_room,tag=!spectator,sort=nearest,limit=1] store result score @s TargetZ run data get entity @e[tag=same_room,tag=!spectator,sort=nearest,limit=1] Pos[2] 100
+execute if entity @e[tag=this_room,tag=!spectator,sort=nearest,limit=1] store result score @s TargetX run data get entity @e[tag=this_room,tag=!spectator,sort=nearest,limit=1] Pos[0] 100
+execute if entity @e[tag=this_room,tag=!spectator,sort=nearest,limit=1] store result score @s TargetY run data get entity @e[tag=this_room,tag=!spectator,sort=nearest,limit=1] Pos[1] 100
+execute if entity @e[tag=this_room,tag=!spectator,sort=nearest,limit=1] store result score @s TargetZ run data get entity @e[tag=this_room,tag=!spectator,sort=nearest,limit=1] Pos[2] 100
 execute if entity @s[tag=!targetted] run playsound luigis_mansion:entity.yellow_bat.attack hostile @a[tag=same_room] ~ ~ ~ 1
 data modify entity @s[tag=!targetted] HandItems[0].tag.CustomModelData set value 14
 data modify entity @s[tag=!targetted] HandItems[1].tag.CustomModelData set value 14

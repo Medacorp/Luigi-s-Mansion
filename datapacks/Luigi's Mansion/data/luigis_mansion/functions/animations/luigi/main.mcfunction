@@ -37,6 +37,9 @@ tag @s[tag=sneak_pos] remove sneak_pos
 tag @s[tag=looking_at_map] add was_looking_at_map
 tag @s[tag=!looking_at_map] remove was_looking_at_map
 tag @s[tag=looking_at_map] remove looking_at_map
+tag @s[tag=flipped_gravity] add was_flipped
+tag @s[tag=!flipped_gravity] remove was_flipped
+tag @s[tag=flipped_gravity] remove flipped_gravity
 tag @s remove dark_room
 tag @s remove flashlight
 tag @s add found_owner

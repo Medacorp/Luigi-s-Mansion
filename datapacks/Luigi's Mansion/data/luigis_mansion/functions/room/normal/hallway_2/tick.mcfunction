@@ -1,6 +1,6 @@
 execute unless score #hallway_2 Ticking matches 1 run function #luigis_mansion:room/normal/hallway_2/load
 execute as @a[gamemode=!spectator,x=722,y=19,z=42,dx=8,dy=8,dz=38] unless entity @s[scores={Room=7}] run scoreboard players operation @s LastRoom = @s Room
-execute as @e[type=!minecraft:item_frame,x=722,y=19,z=42,dx=8,dy=8,dz=38] unless entity @s[type=!minecraft:player,tag=!model_piece,scores={Room=-2147483648..}] run scoreboard players set @s Room 7
+execute as @e[type=!minecraft:item_frame,x=722,y=19,z=42,dx=8,dy=8,dz=38] run scoreboard players set @s Room 7
 tag @e[tag=ghost,scores={Room=7}] add no_hidden_move
 
 execute as @a[gamemode=!spectator,scores={Room=7}] run function luigis_mansion:room/normal/hallway_2/tick_per_player

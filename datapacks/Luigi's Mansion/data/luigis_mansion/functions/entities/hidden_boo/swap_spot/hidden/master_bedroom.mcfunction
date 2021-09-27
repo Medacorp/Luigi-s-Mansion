@@ -5,7 +5,7 @@ summon minecraft:marker 696 114 -24 {Tags:["choice"]}
 summon minecraft:marker 696 114 -24 {Tags:["choice"]}
 summon minecraft:marker 692 114 -24 {Tags:["choice"]}
 summon minecraft:marker 695 111 -40 {Tags:["choice"]}
-summon minecraft:marker 691 111 -37 {Tags:["choice"]}
+summon minecraft:marker 690 111 -37 {Tags:["choice"]}
 summon minecraft:marker 690 111 -26 {Tags:["choice"]}
 summon minecraft:marker 689 111 -25 {Tags:["choice"]}
 summon minecraft:marker 695 111 -24 {Tags:["choice"]}

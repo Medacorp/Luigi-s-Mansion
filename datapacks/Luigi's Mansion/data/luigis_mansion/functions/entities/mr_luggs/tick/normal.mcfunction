@@ -46,7 +46,7 @@ scoreboard players set @s[scores={Dialog=101}] AnimationProg 0
 tag @s[scores={Dialog=101}] add complain
 tag @s[scores={Dialog=141}] remove complain
 tag @s[scores={Dialog=141}] add rage
-execute if entity @s[scores={Dialog=141..}] as @a[tag=same_room,gamemode=!spectator] unless entity @s[scores={MusicGroup=0,MusicType=36}] run function luigis_mansion:other/music/set/danger
+execute if entity @s[scores={Dialog=141..}] as @a[tag=same_room,gamemode=!spectator] unless entity @s[scores={MusicGroup=0,MusicType=28}] unless entity @s[scores={MusicGroup=0,MusicType=36}] run function luigis_mansion:other/music/set/danger
 execute if entity @s[scores={Dialog=141..781}] positioned ~ ~1 ~ facing entity @e[tag=same_room,tag=!spectator,sort=nearest,limit=1] feet positioned ~ ~-1 ~ run teleport @s ~ ~ ~ ~ ~
 tag @s[scores={Dialog=201}] remove rage
 tag @s[scores={Dialog=201}] add spit

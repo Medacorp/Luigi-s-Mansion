@@ -16,7 +16,8 @@ execute if entity @s[scores={Dialog=1}] run playsound luigis_mansion:music.sue_p
 execute if entity @s[scores={Dialog=94}] run tellraw @a[tag=same_room] {"translate":"chat.type.text","with":[{"translate":"luigis_mansion:entity.sue_pea","color":"green"},{"translate":"luigis_mansion:dialog.sue_pea.1"}]}
 execute if entity @s[scores={Dialog=175}] run tellraw @a[tag=same_room] {"translate":"chat.type.text","with":[{"translate":"luigis_mansion:entity.sue_pea","color":"green"},{"translate":"luigis_mansion:dialog.sue_pea.2"}]}
 execute if entity @s[scores={Dialog=175}] run data modify storage luigis_mansion:data current_state.current_data.technical_data merge value {sue_pea_spoke:1b}
-execute if entity @s[scores={Dialog=..367},tag=visible,tag=!vanish] run function luigis_mansion:entities/sue_pea/turn_invisible
+execute if entity @s[scores={Dialog=..242},tag=visible,tag=!vanish] run function luigis_mansion:entities/sue_pea/turn_visible
+execute if entity @s[scores={Dialog=243..366},tag=visible,tag=!vanish] run function luigis_mansion:entities/sue_pea/turn_invisible
 execute if entity @s[scores={Dialog=243..366}] at @e[tag=same_room,tag=!spectator] positioned ^ ^ ^8 if entity @s[distance=..8] run function luigis_mansion:entities/sue_pea/turn_visible
 scoreboard players set @s[scores={Dialog=245}] AnimationProg 0
 teleport @s[scores={Dialog=245..264}] ^ ^-0.05 ^0.05

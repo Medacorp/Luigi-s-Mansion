@@ -4,8 +4,8 @@ scoreboard players add @s Dialog 1
 scoreboard players set @a[tag=same_room] Invulnerable 10
 execute as @a[tag=same_room,distance=..2] at @s run teleport @s ~1 ~ ~
 execute if entity @s[scores={Dialog=1}] run stopsound @a[tag=same_room] music
-execute unless data storage luigis_mansion:data current_state.current_data.technical_data{king_boo_warp:1b} if entity @s[scores={Dialog=1}] as @a[tag=same_room] run function luigis_mansion:other/music/set/king_boo_warp
-execute if data storage luigis_mansion:data current_state.current_data.technical_data{king_boo_warp:1b} if entity @s[scores={Dialog=1}] as @a[tag=same_room] run function luigis_mansion:other/music/set/mysterious_power
+execute unless data storage luigis_mansion:data current_state.current_data.technical_data{king_boo_warp:1b} if entity @s[scores={Dialog=1..920}] as @a[tag=same_room] unless entity @s[scores={MusicGroup=0,MusicType=20}] run function luigis_mansion:other/music/set/king_boo_warp
+execute if data storage luigis_mansion:data current_state.current_data.technical_data{king_boo_warp:1b} if entity @s[scores={Dialog=1..920}] as @a[tag=same_room] unless entity @s[scores={MusicGroup=0,MusicType=21}] run function luigis_mansion:other/music/set/mysterious_power
 execute if entity @s[scores={Dialog=1}] run scoreboard players set @a[tag=same_room] Music 0
 execute if data storage luigis_mansion:data current_state.current_data.technical_data{king_boo_warp:1b} run scoreboard players set @s[scores={Dialog=1}] Dialog 720
 execute if entity @s[scores={Dialog=1}] run tellraw @a[tag=same_room] {"translate":"chat.type.text","with":[{"translate":"luigis_mansion:entity.king_boo","color":"green"},{"translate":"luigis_mansion:dialog.king_boo_warp.1"}]}

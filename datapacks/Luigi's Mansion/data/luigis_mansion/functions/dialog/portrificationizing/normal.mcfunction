@@ -120,6 +120,7 @@ execute if entity @s[scores={Dialog=1070}] run scoreboard players reset #temp2 M
 teleport @s[scores={Dialog=810..1068},tag=!ending] ~ ~ ~0.1 0 0
 teleport @s[scores={Dialog=1069},tag=!ending] 774 77 14 0 0
 tag @s[scores={Dialog=1069},tag=!ending] remove walk
+execute at @s[scores={Dialog=1069..},tag=!ending] facing entity @e[tag=same_room,tag=!spectator,sort=nearest,limit=1] feet rotated ~ 0 run teleport @s ~ ~ ~ ~ ~
 execute if entity @s[scores={Dialog=1069},tag=!ending] run scoreboard players set @e[tag=this_model,tag=e_gadd_head,limit=1] AnimationProg 0
 execute if entity @s[scores={Dialog=1070},tag=!ending] run tellraw @a[tag=same_room] {"translate":"luigis_mansion:message.save.yes","color":"green","clickEvent":{"action":"run_command","value":"/trigger EGaddGPRChoice set 1"},"extra":[{"text":"\n"},{"translate":"luigis_mansion:message.save.no","clickEvent":{"action":"run_command","value":"/trigger EGaddGPRChoice set 2"}}]}
 execute if entity @s[scores={Dialog=1070},tag=!ending] run scoreboard players enable @a[tag=same_room] EGaddGPRChoice

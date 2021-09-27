@@ -5,6 +5,6 @@ execute if entity @s[tag=blackout] unless entity @s[scores={MusicGroup=0,MusicTy
 execute if data storage luigis_mansion:data current_state.current_data.rooms.hallway_17{seen:0b} run function luigis_mansion:room/hidden/hallway_17/set_seen
 
 execute store result score #temp Boos run data get storage luigis_mansion:data current_state.current_data.boo_counter
-execute unless score #temp Boos matches 20.. run scoreboard players set #force_radar Selected 1
+execute unless score #temp Boos matches 20.. run scoreboard players set @s ForceRadar 1
 execute if entity @s[x=726.0,y=120,z=23.0,dx=4,dy=7,dz=7] unless score #temp Boos matches 20.. unless entity @e[tag=mysterious_power,limit=1] positioned 726 29 28 run function luigis_mansion:spawn_entities/portrait_ghost/boolossus/mysterious_power
 scoreboard players reset #temp Boos

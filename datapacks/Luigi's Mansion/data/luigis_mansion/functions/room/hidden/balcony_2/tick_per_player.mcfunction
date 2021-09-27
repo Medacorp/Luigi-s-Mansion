@@ -6,4 +6,4 @@ execute if data storage luigis_mansion:data current_state.current_data.rooms.bal
 
 execute if entity @s[x=681.5,y=120,z=-13.0,distance=..4] if data storage luigis_mansion:data current_state.current_data.obtained_keys{hallway_18:1b} run function luigis_mansion:room/hidden/balcony_2/clear_blockade
 
-execute if entity @e[tag=boolossus,limit=1] run scoreboard players set #force_radar Selected 1
+execute if entity @e[tag=boolossus,limit=1] run scoreboard players set @s ForceRadar 1

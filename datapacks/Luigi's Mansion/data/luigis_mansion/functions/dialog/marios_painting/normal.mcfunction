@@ -2,8 +2,8 @@ scoreboard players set #freeze_timer Selected 1
 scoreboard players add @s Dialog 1
 execute if entity @s[scores={Dialog=1}] as @a run function luigis_mansion:other/music/set/non_overwritten_silence
 execute if entity @s[scores={Dialog=1}] run stopsound @a music
-execute if entity @s[scores={Dialog=1}] run playsound luigis_mansion:music.marios_painting music @a ~ ~ ~ 1000
 execute if entity @s[scores={Dialog=1}] run scoreboard players set @a Music 480
+execute if entity @s[scores={Dialog=2}] run playsound luigis_mansion:music.marios_painting music @a ~ ~ ~ 1000
 execute if entity @s[scores={Dialog=340}] run tellraw @a[tag=same_room] {"translate":"chat.type.text","with":[{"translate":"luigis_mansion:entity.mario","color":"green"},{"translate":"luigis_mansion:dialog.marios_painting.1"}]}
 execute if entity @s[scores={Dialog=420}] run tellraw @a[tag=same_room] {"translate":"chat.type.text","with":[{"selector":"@s","color":"green"},{"translate":"luigis_mansion:dialog.marios_painting.2"}]}
 execute if entity @s[scores={Dialog=480}] as @a run function luigis_mansion:other/music/set/silence
