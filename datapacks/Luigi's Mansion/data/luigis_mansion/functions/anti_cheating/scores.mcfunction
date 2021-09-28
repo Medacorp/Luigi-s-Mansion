@@ -179,7 +179,7 @@ execute unless score #training_choice Selected matches 0..1 run scoreboard playe
 execute unless score #radar_type Selected matches 0.. run scoreboard players set #radar_type Selected 0
 execute unless score #ghost_heart_size Selected matches 0..100 run scoreboard players set #ghost_heart_size Selected 20
 execute unless score #gbh_clock Selected matches 0.. run scoreboard players set #gbh_clock Selected 0
-execute unless score #gbh_clock_increase Selected matches 0.. run scoreboard players set #gbh_clock_increase Selected 0
+execute unless score #gbh_clock_increase Selected matches -2147483648.. run scoreboard players set #gbh_clock_increase Selected 0
 execute if score #gbh_clock_increase Selected matches 0 run scoreboard players set #gbh_clock Selected 0
 
 execute unless data storage luigis_mansion:data current_state run function luigis_mansion:other/upgrade_path/newly_installed

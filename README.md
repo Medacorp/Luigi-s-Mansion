@@ -30,14 +30,10 @@ To define a new mansion, you need to set the mansion_type value, mansion_data_in
 * `#ghost_heart_size` (int): The size of the hearts dropped by ghosts when capturing multiple at once. Does not affect non-mansion rooms (there values is always treated as 0).
 * `#radar_type` (int): Defines what type of radar the Gameboy Horror has.
 * `#gbh_clock` (int): The current time shown by the Gameboy Horror.
-* `#gbh_clock_increase` (int): The `#gbh_clock` value increases by this value every tick, as long as the `in_mansion_time` value also increases. (Can be 0 or more, when 0 the clock is not shown.)
+* `#gbh_clock_increase` (int): The `#gbh_clock` value increases by this value every tick, as long as the `in_mansion_time` value also increases. (When 0 the clock is not shown.)
 
 ## Variables that immediately reset
 * `#freeze_timer` (bool): Whether the `in_mansion_time` value is frozen this tick. (If there's players in different rooms not connected with viewpoints, this is set back to 0. (Room tick is after player tick but before value update, so if a room sets this to 1, do check if there's only players in that room.))
-* `#force_gbh_screen` (bool): Whether the Gameboy Horror screen if forced to show E. Gadd.
-* `#force_radar` (bool): Whether the Gameboy Horror radar if forced to become red, ignoring radar type requirements.
-
-## Other variables
 * `#training_choice` (bool): Whether multiple training room programs are installed.
 
 # Predefined collections
