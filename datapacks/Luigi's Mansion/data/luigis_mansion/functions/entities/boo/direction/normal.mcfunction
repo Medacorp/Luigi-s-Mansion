@@ -216,8 +216,8 @@ tag @s[scores={Room=35..41,RoomSection=1},tag=area_4] add east
 tag @s[scores={Room=35..41,RoomSection=1},tag=area_4] add north
 tag @s[scores={Room=35..41,RoomSection=2},tag=area_4] add east
 tag @s[scores={Room=35..41,RoomSection=2}] add south
-tag @s[scores={Room=35..41,RoomSection=2},tag=area_4] add north
-tag @s[scores={Room=35..41,RoomSection=3},tag=area_4] add east
+execute if data storage luigis_mansion:data current_state.current_data.rooms.guest_room{cleared:1b} run tag @s[scores={Room=35..41,RoomSection=2},tag=area_4] add north
+execute if data storage luigis_mansion:data current_state.current_data.rooms.guest_room{cleared:1b} run tag @s[scores={Room=35..41,RoomSection=3},tag=area_4] add east
 tag @s[scores={Room=35..41,RoomSection=3}] add south
 tag @s[scores={Room=35..41,RoomSection=4}] add west
 tag @s[scores={Room=35..41,RoomSection=4},tag=area_4] add east

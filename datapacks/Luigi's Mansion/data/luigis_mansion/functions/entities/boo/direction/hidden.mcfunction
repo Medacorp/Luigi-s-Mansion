@@ -58,9 +58,9 @@ scoreboard players set @s[x=638,y=20,z=52,dx=10,dy=6,dz=24] RoomSection 1
 scoreboard players set @s[x=638,y=20,z=44,dx=10,dy=6,dz=7] RoomSection 2
 
 # hallway 9-15
-scoreboard players set @s[x=713,y=20,z=21,dx=5,dy=6,dz=5] RoomSection 1
-scoreboard players set @s[x=713,y=20,z=34,dx=6,dy=6,dz=12] RoomSection 2
-scoreboard players set @s[x=713,y=20,z=55,dx=6,dy=6,dz=12] RoomSection 3
+scoreboard players set @s[x=713,y=20,z=31,dx=5,dy=6,dz=5] RoomSection 1
+scoreboard players set @s[x=713,y=20,z=37,dx=6,dy=6,dz=12] RoomSection 2
+scoreboard players set @s[x=713,y=20,z=50,dx=6,dy=6,dz=12] RoomSection 3
 scoreboard players set @s[x=697,y=20,z=31,dx=13,dy=6,dz=6] RoomSection 4
 scoreboard players set @s[x=684,y=20,z=31,dx=12,dy=6,dz=6] RoomSection 5
 scoreboard players set @s[x=678,y=20,z=29,dx=6,dy=6,dz=7] RoomSection 6
@@ -216,8 +216,8 @@ tag @s[scores={Room=35..41,RoomSection=1},tag=area_4] add east
 tag @s[scores={Room=35..41,RoomSection=1},tag=area_4] add south
 tag @s[scores={Room=35..41,RoomSection=2},tag=area_4] add east
 tag @s[scores={Room=35..41,RoomSection=2}] add north
-tag @s[scores={Room=35..41,RoomSection=2},tag=area_4] add south
-tag @s[scores={Room=35..41,RoomSection=3},tag=area_4] add east
+execute if data storage luigis_mansion:data current_state.current_data.rooms.guest_room{cleared:1b} run tag @s[scores={Room=35..41,RoomSection=2},tag=area_4] add south
+execute if data storage luigis_mansion:data current_state.current_data.rooms.guest_room{cleared:1b} run tag @s[scores={Room=35..41,RoomSection=3},tag=area_4] add east
 tag @s[scores={Room=35..41,RoomSection=3}] add north
 tag @s[scores={Room=35..41,RoomSection=4}] add west
 tag @s[scores={Room=35..41,RoomSection=4},tag=area_4] add east

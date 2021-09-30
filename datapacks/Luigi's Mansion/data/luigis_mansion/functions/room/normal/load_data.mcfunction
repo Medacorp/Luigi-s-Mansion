@@ -1,6 +1,5 @@
 function #luigis_mansion:mansion_remove_forceloaded_chunks
 function luigis_mansion:room/normal/forceload_chunks
-execute if score #mansion_type Selected matches 1 run data modify storage luigis_mansion:data current_state.current_data.can_clear_hidden set value 0b
 scoreboard players set #mansion_type Selected 0
 execute unless score #mansion_data_index Selected matches 0 if data storage luigis_mansion:data current_state.current_data.data_index run function luigis_mansion:room/save_mansion_data
 execute unless score #mansion_data_index Selected matches 0 run function luigis_mansion:room/normal/default_data
