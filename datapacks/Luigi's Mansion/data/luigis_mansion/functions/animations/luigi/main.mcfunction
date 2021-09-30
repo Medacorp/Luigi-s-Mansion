@@ -42,4 +42,5 @@ tag @s[tag=!flipped_gravity] remove was_flipped
 tag @s[tag=flipped_gravity] remove flipped_gravity
 tag @s remove dark_room
 tag @s remove flashlight
+tag @s remove target
 tag @s add found_owner
