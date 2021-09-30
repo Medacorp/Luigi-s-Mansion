@@ -17,6 +17,7 @@ execute if entity @s[scores={HurtTime=1}] run tag @a remove vacuuming_this_ghost
 
 scoreboard players operation #temp KillerID = @s KillerID
 execute as @a[gamemode=!spectator] if score @s ID = #temp KillerID run tag @s add killer
+execute if entity @s[scores={HurtTime=1..2}] unless entity @a[tag=killer,limit=1] run function luigis_mansion:entities/ghost/cancel_death
 scoreboard players reset #temp KillerID
 execute at @s facing entity @a[tag=killer,limit=1] feet run teleport @s ~ ~ ~ ~-180 ~
 execute store result score #temp HomeRot run data get entity @s Rotation[1] 100

@@ -19,6 +19,7 @@ execute if entity @s[scores={HurtTime=1}] run tag @a remove shooter
 
 scoreboard players operation #temp KillerID = @s KillerID
 execute as @a[gamemode=!spectator] if score @s ID = #temp KillerID run tag @s add killer
+execute if entity @s[scores={HurtTime=1..2}] unless entity @a[tag=killer,limit=1] run function luigis_mansion:entities/ghost/cancel_death
 scoreboard players reset #temp KillerID
 
 execute at @s[scores={HurtTime=1,Room=1..}] run function luigis_mansion:entities/ghost/capture
