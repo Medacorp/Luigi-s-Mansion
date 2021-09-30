@@ -1,1 +1,1 @@
-tag @s[tag=jarvis,tag=can_freeze,tag=!got_frozen,tag=!pop_out,tag=!pop_in] add frozen
+tag @s[tag=jarvis,tag=can_freeze,tag=!got_frozen,tag=!pop_out,tag=!pop_in,tag=visible] add frozen

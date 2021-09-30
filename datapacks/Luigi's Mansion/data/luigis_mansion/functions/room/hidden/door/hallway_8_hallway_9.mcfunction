@@ -22,7 +22,7 @@ execute if score #temp Searched matches -1..0 run setblock 663 21 52 minecraft:d
 execute if score #temp Searched matches -1..0 run setblock 682 20 44 minecraft:dark_oak_door[open=false,facing=south,half=lower,hinge=left,powered=false]
 execute if score #temp Searched matches -1..0 run setblock 682 21 44 minecraft:dark_oak_door[open=false,facing=south,half=upper,hinge=left,powered=false]
 
-execute if score #temp Searched matches 1..2 as @a[x=663.0,y=20,z=52.0,dx=0,dy=1,dz=0] run teleport @s 682 20 44
+execute if score #temp Searched matches 1..2 as @a[x=663.0,y=20,z=52.0,dx=0,dy=1,dz=0] run teleport @s 682 20 43
 execute if score #temp Searched matches 1..2 as @a[x=682.0,y=20,z=44.0,dx=0,dy=1,dz=0] run teleport @s 663 20 53
 
 scoreboard players reset #temp Searched

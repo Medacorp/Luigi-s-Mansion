@@ -4,7 +4,7 @@ execute as @a[gamemode=!spectator,x=659,y=10,z=51,dx=8,dy=17,dz=26] unless entit
 execute as @e[type=!minecraft:item_frame,x=659,y=10,z=51,dx=8,dy=17,dz=26] run scoreboard players set @s Room 33
 tag @e[tag=ghost,scores={Room=33}] add no_hidden_move
 
-execute as @a[gamemode=!spectator,scores={Room=33}] run function luigis_mansion:room/normal/hallway_8/tick_per_player
+execute as @a[gamemode=!spectator,scores={Room=33}] run function luigis_mansion:room/hidden/hallway_8/tick_per_player
 
 function #luigis_mansion:room/hidden/hallway_8/interactions/room
 

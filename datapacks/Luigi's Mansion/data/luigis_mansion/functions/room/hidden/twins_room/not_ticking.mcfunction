@@ -4,6 +4,7 @@ scoreboard players reset #twins_room Vacuumables
 
 execute if score #twins_room Wave matches 3 if score #players Totals matches 1 run tellraw @a {"translate":"chat.type.text","with":[{"translate":"luigis_mansion:entity.henry","color":"green"},{"translate":"luigis_mansion:dialog.twins.game.1"}]}
 execute if score #twins_room Wave matches 3 if score #players Totals matches 2.. run tellraw @a {"translate":"chat.type.text","with":[{"translate":"luigis_mansion:entity.henry","color":"green"},{"translate":"luigis_mansion:dialog.twins.game.1.more"}]}
+execute if score #twins_room Wave matches 3..7 run tag @e[scores={Room=49},type=!minecraft:player,tag=!model_piece] add remove_from_existence
 execute if score #twins_room Wave matches 3..7 run scoreboard players set #twins_room Wave 4
 setblock 738 20 -25 minecraft:air
 setblock 742 20 -31 minecraft:air

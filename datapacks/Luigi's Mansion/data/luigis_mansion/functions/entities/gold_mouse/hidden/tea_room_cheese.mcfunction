@@ -13,5 +13,5 @@ teleport @s[scores={PathStep=6}] ~ ~ ~ facing 646 20 49
 scoreboard players set @s[x=646.5,y=20,z=49.5,distance=..0.7,scores={PathStep=6}] PathStep 7
 teleport @s[scores={PathStep=7}] ~ ~ ~ facing 646 20 60
 scoreboard players set @s[x=646.5,y=20,z=60.5,distance=..0.7,scores={PathStep=7}] PathStep 8
-teleport @s[scores={PathStep=8}] ~ ~ ~ facing 648 20 60
-tag @s[x=648.5,y=20,z=60.5,distance=..0.7] add remove_from_existence
+teleport @s[scores={PathStep=8}] ~ ~ ~ facing 638 20 60
+tag @s[x=638.5,y=20,z=60.5,distance=..0.7] add remove_from_existence

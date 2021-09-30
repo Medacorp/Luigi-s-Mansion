@@ -5,9 +5,9 @@ execute if entity @s[tag=!spooky_bone] as @e[distance=..0.7,tag=gameboy_horror_l
 execute if entity @s[tag=!spooky_bone] run effect give @a[distance=..0.7,gamemode=!spectator] minecraft:instant_damage 1 0 true
 execute if entity @s[tag=!spooky_bone] run scoreboard players set @a[distance=..0.7,gamemode=!spectator] ForcedDamage 4
 execute if entity @a[distance=..0.7,gamemode=!spectator] run tag @s[tag=!spooky_bone] add dead
-execute if entity @s[tag=dead,scores={Owner=-2147483648..}] run scoreboard players operation #temp GhostID = @s Owner
-execute if entity @s[tag=dead,scores={Owner=-2147483648..}] as @e[tag=!model_piece,tag=ghost] if score @s GhostID = #temp GhostID run scoreboard players set @s AnimationProg 0
-execute if entity @s[tag=dead,scores={Owner=-2147483648..}] if entity @a[distance=..0.7,gamemode=!spectator,limit=1] as @e[tag=!model_piece,tag=ghost] if score @s GhostID = #temp GhostID run tag @s add laugh
-execute if entity @s[tag=dead,scores={Owner=-2147483648..}] unless entity @a[distance=..0.7,gamemode=!spectator,limit=1] as @e[tag=!model_piece,tag=ghost] if score @s GhostID = #temp GhostID run tag @s add complain
+execute if entity @s[tag=dead,scores={Owner=-2147483648..}] run scoreboard players operation #temp GhostNr = @s Owner
+execute if entity @s[tag=dead,scores={Owner=-2147483648..}] as @e[tag=!model_piece,tag=ghost] if score @s GhostNr = #temp GhostNr run scoreboard players set @s AnimationProg 0
+execute if entity @s[tag=dead,scores={Owner=-2147483648..}] if entity @a[distance=..0.7,gamemode=!spectator,limit=1] as @e[tag=!model_piece,tag=ghost] if score @s GhostNr = #temp GhostNr run tag @s add laugh
+execute if entity @s[tag=dead,scores={Owner=-2147483648..}] unless entity @a[distance=..0.7,gamemode=!spectator,limit=1] as @e[tag=!model_piece,tag=ghost] if score @s GhostNr = #temp GhostNr run tag @s add complain
 scoreboard players reset #temp GhostID
 execute at @s[scores={LightX=-2147483648..}] run function luigis_mansion:other/cast_shadow/1_tall

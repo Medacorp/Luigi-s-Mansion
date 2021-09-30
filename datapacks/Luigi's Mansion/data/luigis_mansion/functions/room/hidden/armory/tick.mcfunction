@@ -4,7 +4,7 @@ execute as @e[type=!minecraft:item_frame,x=744,y=28,z=-64,dx=22,dy=8,dz=25] run 
 
 execute as @e[scores={Room=64},type=!minecraft:marker] unless entity @s[gamemode=spectator] run scoreboard players set @s MirrorX 745
 
-execute as @a[gamemode=!spectator,scores={Room=64}] run function luigis_mansion:room/normal/armory/tick_per_player
+execute as @a[gamemode=!spectator,scores={Room=64}] run function luigis_mansion:room/hidden/armory/tick_per_player
 
 function #luigis_mansion:room/hidden/armory/interactions/room
 

@@ -47,31 +47,31 @@ execute if entity @s[scores={Dialog=857}] run function luigis_mansion:room/hidde
 execute if entity @s[scores={Dialog=857..1511}] as @a[tag=same_room,gamemode=!spectator] unless entity @s[scores={MusicGroup=0,MusicType=37}] run function luigis_mansion:other/music/set/mini_game
 tag @s[scores={Dialog=857}] add can_freeze
 scoreboard players set @s[scores={Dialog=857}] Wave 0
-execute if entity @s[scores={Dialog=976}] run function luigis_mansion:entities/jarvis/switch_jar/normal
+execute if entity @s[scores={Dialog=976}] run function luigis_mansion:entities/jarvis/switch_jar/hidden
 tag @s[scores={Dialog=976},tag=!frozen] add pop_out
 scoreboard players set @s[scores={Dialog=996..1126},tag=frozen] Dialog 1126
 tag @s[scores={Dialog=1126},tag=!frozen] add pop_in
-execute if entity @s[scores={Dialog=1206}] run function luigis_mansion:entities/jarvis/switch_jar/normal
+execute if entity @s[scores={Dialog=1206}] run function luigis_mansion:entities/jarvis/switch_jar/hidden
 tag @s[scores={Dialog=1206},tag=!frozen] add pop_out
 scoreboard players set @s[scores={Dialog=1226..1266},tag=frozen] Dialog 1266
 tag @s[scores={Dialog=1266},tag=!frozen] add pop_in
-execute if entity @s[scores={Dialog=1326}] run function luigis_mansion:entities/jarvis/switch_jar/normal
+execute if entity @s[scores={Dialog=1326}] run function luigis_mansion:entities/jarvis/switch_jar/hidden
 tag @s[scores={Dialog=1326},tag=!frozen] add pop_out
 scoreboard players set @s[scores={Dialog=1346..1386},tag=frozen] Dialog 1386
 tag @s[scores={Dialog=1386},tag=!frozen] add pop_in
-execute if entity @s[scores={Dialog=1436}] run function luigis_mansion:entities/jarvis/switch_jar/normal
+execute if entity @s[scores={Dialog=1436}] run function luigis_mansion:entities/jarvis/switch_jar/hidden
 tag @s[scores={Dialog=1436},tag=!frozen] add pop_out
 scoreboard players set @s[scores={Dialog=1456..1496},tag=frozen] Dialog 1496
 tag @s[scores={Dialog=1496},tag=!frozen] add pop_in
-execute if entity @s[scores={Dialog=1536}] run function luigis_mansion:entities/jarvis/switch_jar/normal
+execute if entity @s[scores={Dialog=1536}] run function luigis_mansion:entities/jarvis/switch_jar/hidden
 tag @s[scores={Dialog=1536},tag=!frozen] add pop_out
 scoreboard players set @s[scores={Dialog=1556..1596},tag=frozen] Dialog 1596
 tag @s[scores={Dialog=1596},tag=!frozen] add pop_in
-execute if entity @s[scores={Dialog=1626}] run function luigis_mansion:entities/jarvis/switch_jar/normal
+execute if entity @s[scores={Dialog=1626}] run function luigis_mansion:entities/jarvis/switch_jar/hidden
 tag @s[scores={Dialog=1626},tag=!frozen] add pop_out
 scoreboard players set @s[scores={Dialog=1646..1686},tag=frozen] Dialog 1686
 tag @s[scores={Dialog=1686},tag=!frozen] add pop_in
-execute if entity @s[scores={Dialog=1706}] run function luigis_mansion:entities/jarvis/switch_jar/normal
+execute if entity @s[scores={Dialog=1706}] run function luigis_mansion:entities/jarvis/switch_jar/hidden
 tag @s[scores={Dialog=1706},tag=!frozen] add pop_out
 scoreboard players set @s[scores={Dialog=1726..1766},tag=frozen] Dialog 1766
 tag @s[scores={Dialog=1766},tag=!frozen] add pop_in

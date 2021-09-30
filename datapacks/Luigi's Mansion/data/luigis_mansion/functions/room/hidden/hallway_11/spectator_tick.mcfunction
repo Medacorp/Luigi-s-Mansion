@@ -2,7 +2,7 @@ scoreboard players set @s Room 37
 scoreboard players set @s PrevRoom 37
 
 teleport @s[scores={HomeZ=37,HomeX=686}] ~ ~ ~-1
-teleport @s[scores={HomeZ=37,HomeX=687..695}] ~-25 ~ ~55
+teleport @s[scores={HomeZ=37,HomeX=687..695}] ~-25 ~ ~51
 teleport @s[scores={HomeZ=37,HomeX=696..697}] ~ ~ ~-1
 teleport @s[scores={HomeZ=31,HomeX=686}] ~ ~ ~-1
 teleport @s[scores={HomeZ=31,HomeX=687..695}] ~-2 ~ ~-40

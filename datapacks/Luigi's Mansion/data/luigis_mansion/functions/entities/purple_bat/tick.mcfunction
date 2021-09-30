@@ -6,15 +6,15 @@ execute if entity @s[tag=dead] run teleport @s ~ -100 ~
 
 execute if entity @e[tag=same_room,tag=!spectator,distance=..0.7,limit=1] if entity @s[tag=!dead,tag=!removed_from_existence] run function luigis_mansion:entities/purple_bat/collide
 
-tag @s[tag=fleeing] add turn_back
+tag @s[tag=fleeing,tag=attack] add turn_back
+tag @s[tag=fleeing] add attack
 tag @s[tag=fleeing] remove fleeing
 
 execute store result score #temp Room run scoreboard players get @s Room
 execute as @e[tag=same_room,tag=!spectator] if score @s Room = #temp Room run tag @s add this_room
 execute if entity @s[tag=!fleeing,tag=!attack,tag=!collided] if entity @e[tag=this_room,tag=!spectator,distance=..10,limit=1] run tag @s add attack
 execute if entity @s[tag=attack,tag=!targetted,tag=!turn_back] run function luigis_mansion:entities/purple_bat/target
-execute if entity @s[tag=attack,tag=targetted,tag=turn_back] run function luigis_mansion:entities/purple_bat/return
-execute if entity @s[tag=turn_back,tag=!dead] run function luigis_mansion:entities/purple_bat/move
+execute if entity @s[tag=turn_back,tag=!dead] run function luigis_mansion:entities/purple_bat/return
 execute if entity @s[tag=targetted,tag=!dead] run function luigis_mansion:entities/purple_bat/move
 execute if entity @s[tag=returned,tag=!dead] run function luigis_mansion:entities/purple_bat/returned
 execute at @s[tag=!attack,tag=!fleeing] facing entity @e[tag=same_room,tag=!spectator,sort=nearest,limit=1] feet rotated ~ 0 run teleport @s ~ ~ ~ ~-180 ~

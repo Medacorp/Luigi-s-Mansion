@@ -22,7 +22,7 @@ execute if score #temp Searched matches -1..0 run setblock 745 30 -43 minecraft:
 execute if score #temp Searched matches -1..0 run setblock 712 29 -45 minecraft:oak_door[open=false,facing=east,half=lower,hinge=right,powered=false]
 execute if score #temp Searched matches -1..0 run setblock 712 30 -45 minecraft:oak_door[open=false,facing=east,half=upper,hinge=right,powered=false]
 
-execute if score #temp Searched matches 1..2 as @a[x=745.0,y=29,z=-43.0,dx=0,dy=1,dz=0] run teleport @s 712 29 -45
+execute if score #temp Searched matches 1..2 as @a[x=745.0,y=29,z=-43.0,dx=0,dy=1,dz=0] run teleport @s 711 29 -45
 execute if score #temp Searched matches 1..2 as @a[x=712.0,y=29,z=-45.0,dx=0,dy=1,dz=0] run teleport @s 746 29 -43
 
 scoreboard players reset #temp Searched

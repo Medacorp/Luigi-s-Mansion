@@ -2,7 +2,7 @@ execute as @e[tag=bogmires_shadow] at @s run function luigis_mansion:entities/bo
 
 execute if entity @s[tag=!intro_done] run function luigis_mansion:entities/bogmire/battle_intro/hidden
 execute unless entity @s[scores={Dialog=1..}] run scoreboard players add @s[tag=intro_done,scores={VulnerableTime=0}] Dialog 1
-scoreboard players add @s[tag=intro_done,scores={VulnerableTime=0,Dialog=..179},tag=!shadow_hit] Dialog 1
+scoreboard players add @s[tag=intro_done,scores={VulnerableTime=0,Dialog=..109},tag=!shadow_hit] Dialog 1
 scoreboard players add @s[tag=intro_done,scores={VulnerableTime=0,Dialog=181..},tag=!shadow_hit] Dialog 1
 tag @s[scores={Dialog=2}] remove vanish_flee
 execute if entity @s[tag=intro_done,scores={Dialog=70},tag=!shadow_hit] run function luigis_mansion:entities/bogmire/turn_invisible

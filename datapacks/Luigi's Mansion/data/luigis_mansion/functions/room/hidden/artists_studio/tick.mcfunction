@@ -2,7 +2,7 @@ execute unless score #artists_studio Ticking matches 1 run function #luigis_mans
 execute as @a[gamemode=!spectator,x=687,y=28,z=70,dx=16,dy=8,dz=25] unless entity @s[scores={Room=71}] run scoreboard players operation @s LastRoom = @s Room
 execute as @e[type=!minecraft:item_frame,x=687,y=28,z=70,dx=16,dy=8,dz=25] run scoreboard players set @s Room 71
 
-execute as @a[gamemode=!spectator,scores={Room=71}] run function luigis_mansion:room/normal/artists_studio/tick_per_player
+execute as @a[gamemode=!spectator,scores={Room=71}] run function luigis_mansion:room/hidden/artists_studio/tick_per_player
 
 tag @e[tag=ghost,tag=hidden,tag=can_spawn,scores={Room=71}] add spawn
 execute at @e[tag=ghost,tag=hidden,tag=new_ghost,scores={Room=71}] positioned ~ 30 ~ if entity @e[type=minecraft:item_frame,distance=..0.7] run particle minecraft:dust 0.7 1 1 1 ~ 30.5 ~ 0.2 0.2 0.2 1 5

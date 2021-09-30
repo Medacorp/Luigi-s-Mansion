@@ -1,5 +1,5 @@
 summon minecraft:marker 699 11 -50 {Tags:["choice"]}
-summon minecraft:marker 700 11 -55 {Tags:["choice"]}
+summon minecraft:marker 701 11 -55 {Tags:["choice"]}
 summon minecraft:marker 705 11 -74 {Tags:["choice"]}
 summon minecraft:marker 700 11 -70 {Tags:["choice"]}
 summon minecraft:marker 699 15 -73 {Tags:["choice"]}

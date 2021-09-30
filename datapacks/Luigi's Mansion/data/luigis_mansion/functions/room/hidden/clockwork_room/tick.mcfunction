@@ -2,7 +2,7 @@ execute unless score #clockwork_room Ticking matches 1 run function #luigis_mans
 execute as @a[gamemode=!spectator,x=682,y=119,z=-10,dx=17,dy=8,dz=35] unless entity @s[scores={Room=62}] run scoreboard players operation @s LastRoom = @s Room
 execute as @e[type=!minecraft:item_frame,x=682,y=119,z=-10,dx=17,dy=8,dz=35] run scoreboard players set @s Room 62
 
-execute as @a[gamemode=!spectator,scores={Room=62}] run function luigis_mansion:room/normal/clockwork_room/tick_per_player
+execute as @a[gamemode=!spectator,scores={Room=62}] run function luigis_mansion:room/hidden/clockwork_room/tick_per_player
 
 function #luigis_mansion:room/hidden/clockwork_room/interactions/room
 

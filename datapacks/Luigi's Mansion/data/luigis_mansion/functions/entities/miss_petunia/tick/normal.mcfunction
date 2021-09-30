@@ -1,7 +1,7 @@
 scoreboard players add @s[scores={Dialog=2..60}] Dialog 1
 execute positioned ~3 ~ ~ if block ^ ^ ^2 minecraft:air run scoreboard players add @s[scores={Dialog=1}] Dialog 1
-execute positioned ~3 ~ ~ unless block ^ ^ ^2 minecraft:air unless entity @s[tag=vanish] as @e[tag=this_model,tag=miss_petunia_shadow,tag=!body,tag=!right_arm,tag=!left_arm,tag=!visible,limit=1] run function luigis_mansion:entities/miss_petunia/turn_shadow_visible
-execute positioned ~3 ~ ~ if block ^ ^ ^2 minecraft:air as @e[tag=this_model,tag=miss_petunia_shadow,tag=!body,tag=!right_arm,tag=!left_arm,tag=visible,limit=1] run function luigis_mansion:entities/miss_petunia/turn_shadow_invisible
+execute unless block ~3 ~ ~ minecraft:air unless entity @s[tag=vanish] as @e[tag=this_model,tag=miss_petunia_shadow,tag=!body,tag=!right_arm,tag=!left_arm,tag=!visible,limit=1] run function luigis_mansion:entities/miss_petunia/turn_shadow_visible
+execute if block ~3 ~ ~ minecraft:air as @e[tag=this_model,tag=miss_petunia_shadow,tag=!body,tag=!right_arm,tag=!left_arm,tag=visible,limit=1] run function luigis_mansion:entities/miss_petunia/turn_shadow_invisible
 execute unless entity @s[scores={Dialog=1..}] run scoreboard players add @s Dialog 1
 execute unless entity @s[scores={Dialog=3..59}] run function luigis_mansion:entities/miss_petunia/turn_visible
 execute if entity @s[scores={Dialog=1},tag=visible] at @e[tag=same_room,tag=!spectator] positioned ^ ^ ^8 if entity @s[distance=..8] run function luigis_mansion:entities/miss_petunia/turn_invisible

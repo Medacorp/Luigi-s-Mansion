@@ -1,8 +1,7 @@
 scoreboard players set #freeze_timer Selected 1
 scoreboard players add @s Dialog 1
 execute if entity @s[scores={Dialog=120}] run teleport @s ~ ~ ~ -90 0
-execute if entity @s[scores={Dialog=120}] run playsound luigis_mansion:entity.chauncey.cry hostile @a[tag=same_room] ~ ~ ~ 3
-execute if entity @s[scores={Dialog=140}] run playsound luigis_mansion:entity.chauncey.cry hostile @a[tag=same_room] ~ ~ ~ 3
+execute if entity @s[scores={Dialog=120}] run playsound luigis_mansion:entity.chauncey.cutscene_scream hostile @a[tag=same_room] ~ ~ ~ 3
 execute if entity @s[scores={Dialog=120}] positioned ~-2.5 ~11 ~3.5 run function luigis_mansion:spawn_entities/rocking_horse/intro
 execute if entity @s[scores={Dialog=120}] positioned ~-8.5 ~11 ~3.5 run function luigis_mansion:spawn_entities/rocking_horse/intro
 execute if entity @s[scores={Dialog=120}] positioned ~-14.5 ~11 ~3.5 run function luigis_mansion:spawn_entities/rocking_horse/intro

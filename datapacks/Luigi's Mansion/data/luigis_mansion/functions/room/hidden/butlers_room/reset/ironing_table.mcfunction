@@ -1,2 +1,2 @@
-fill 745 12 -45 745 12 -56 minecraft:white_carpet
+fill 745 12 -55 745 12 -56 minecraft:white_carpet
 scoreboard players reset #butlers_room_ironing_table

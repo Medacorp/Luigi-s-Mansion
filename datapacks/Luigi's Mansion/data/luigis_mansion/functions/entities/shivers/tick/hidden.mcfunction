@@ -23,12 +23,12 @@ teleport @s[scores={PathStep=46}] ~ ~ ~ facing 716 11.6 46
 scoreboard players set @s[x=716.5,y=11.6,z=46.5,distance=..0.7,scores={PathStep=46}] PathStep 47
 teleport @s[scores={PathStep=47}] ~ ~ ~ facing 716 11.6 -9
 scoreboard players set @s[x=716.5,y=11.6,z=-8.5,distance=..0.7,scores={PathStep=47}] PathStep 48
-teleport @s[x=716.0,y=11.6,z=-9.0,dx=0,dy=1,dz=0] 726 11.6 -43
+teleport @s[x=716.5,y=11.6,z=-8.5,distance=..0.7] 726 11.6 -43
 execute at @s run teleport @s[scores={PathStep=48}] ~ ~ ~ facing 716 11.6 -50
 scoreboard players set @s[x=716.5,y=11.6,z=-49.5,distance=..0.7,scores={PathStep=48}] PathStep 49
 teleport @s[scores={PathStep=49}] ~ ~ ~ facing 719 11.6 -50
 scoreboard players set @s[x=719.5,y=11.6,z=-49.5,distance=..0.7,scores={PathStep=49}] PathStep 50
-teleport @s[x=719.0,y=11.6,z=-50.0,dx=0,dy=1,dz=0] 738 11.6 -46
+teleport @s[x=719.5,y=11.6,z=-49.5,distance=..0.7] 738 11.6 -46
 execute at @s run teleport @s[scores={PathStep=50}] ~ ~ ~ facing 740 11.6 -46
 scoreboard players set @s[x=740.5,y=11.6,z=-45.5,distance=..0.7,scores={PathStep=50}] PathStep 51
 teleport @s[scores={PathStep=51}] ~ ~ ~ facing 742 11.6 -54

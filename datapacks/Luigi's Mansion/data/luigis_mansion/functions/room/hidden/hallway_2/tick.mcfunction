@@ -3,7 +3,7 @@ execute as @a[gamemode=!spectator,x=722,y=19,z=-65,dx=8,dy=8,dz=38] unless entit
 execute as @e[type=!minecraft:item_frame,x=722,y=19,z=-65,dx=8,dy=8,dz=38] run scoreboard players set @s Room 7
 tag @e[tag=ghost,scores={Room=7}] add no_hidden_move
 
-execute as @a[gamemode=!spectator,scores={Room=7}] run function luigis_mansion:room/normal/hallway_2/tick_per_player
+execute as @a[gamemode=!spectator,scores={Room=7}] run function luigis_mansion:room/hidden/hallway_2/tick_per_player
 
 execute as @e[tag=eternal_gold_coin,scores={Room=7}] run scoreboard players add #temp Wave 1
 execute if score #temp Wave matches ..10 run data modify storage luigis_mansion:data current_state.current_data.money_spawned merge value {hallway_2_money:1b}
