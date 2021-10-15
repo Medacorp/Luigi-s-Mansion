@@ -3,7 +3,7 @@ scoreboard players set @s[scores={ActionTime=1}] AnimationProg 0
 execute at @s run function luigis_mansion:animations/puncher/attack
 
 scoreboard players set #temp Move 6
-execute if entity @s[scores={ActionTime=1}] run playsound luigis_mansion:entity.purple_puncher.attack hostile @a[tag=same_room] ~ ~ ~ 1
+execute if entity @s[scores={ActionTime=21}] run playsound luigis_mansion:entity.purple_puncher.attack hostile @a[tag=same_room] ~ ~ ~ 1
 execute if entity @s[scores={ActionTime=41}] run playsound luigis_mansion:entity.ghost.uppercut hostile @a[tag=same_room] ~ ~ ~ 1
 execute if entity @s[scores={ActionTime=41..60}] if score #mirrored Selected matches 0 rotated ~342 0 run function luigis_mansion:entities/purple_puncher/punch/normal
 execute if entity @s[scores={ActionTime=41..60}] if score #mirrored Selected matches 1 rotated ~342 0 run function luigis_mansion:entities/purple_puncher/punch/hidden

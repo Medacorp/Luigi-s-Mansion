@@ -41,3 +41,5 @@ execute if entity @s[scores={AnimationProg=31..40}] store result entity @e[tag=t
 execute if entity @s[scores={AnimationProg=121..130}] store result entity @e[tag=this_model,tag=left_arm,limit=1] Pose.Head[1] float 1 run scoreboard players add #temp Time 9
 scoreboard players reset #temp Time
 scoreboard players set @s[scores={AnimationProg=130..}] AnimationProg 0
+execute if entity @s[scores={AnimationProg=1}] run playsound luigis_mansion:entity.biff_atlas.hit hostile @a[tag=same_room] ~ ~ ~ 1
+execute if entity @s[scores={AnimationProg=40}] run playsound luigis_mansion:entity.biff_atlas.ko hostile @a[tag=same_room] ~ ~ ~ 1

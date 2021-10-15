@@ -7,6 +7,9 @@ execute at @s[tag=!held] as @e[distance=..1,tag=gameboy_horror_location] run fun
 execute at @s[tag=!held] run effect give @a[distance=..1,gamemode=!spectator] minecraft:instant_damage 1 0 true
 execute at @s[tag=!held] run scoreboard players set @a[distance=..1,gamemode=!spectator] ForcedDamage 4
 execute at @s[tag=!held] if entity @a[distance=..1,gamemode=!spectator,limit=1] run tag @s add dead
+execute at @s[tag=!held] if entity @a[distance=..1,gamemode=!spectator,limit=1] run playsound luigis_mansion:entity.bowling_ball.clap hostile @a[tag=same_room] ~ ~ ~ 1
+execute if entity @s[scores={Sound=0},tag=!held] run playsound luigis_mansion:entity.bowling_ball.roll hostile @a[tag=same_room] ~ ~ ~ 1
+scoreboard players set @s[scores={Sound=0},tag=!held] Sound 20
 execute at @s[tag=drop] run teleport @s ~ ~-0.2 ~
 execute at @s[tag=drop] unless block ~ ~1 ~ #luigis_mansion:ghosts_ignore run tag @s add dead
 execute at @s[tag=dead,scores={Owner=-2147483648..}] run scoreboard players operation #temp GhostNr = @s Owner
