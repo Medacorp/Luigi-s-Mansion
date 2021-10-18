@@ -1,0 +1,1 @@
+execute if entity @s[tag=revive_detection] run function luigis_mansion:entities/revive_detection/tick

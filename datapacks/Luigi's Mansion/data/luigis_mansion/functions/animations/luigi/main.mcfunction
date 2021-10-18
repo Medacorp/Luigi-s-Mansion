@@ -40,6 +40,8 @@ tag @s[tag=looking_at_map] remove looking_at_map
 tag @s[tag=flipped_gravity] add was_flipped
 tag @s[tag=!flipped_gravity] remove was_flipped
 tag @s[tag=flipped_gravity] remove flipped_gravity
+tag @s[tag=death_animation] remove death_animation
+tag @s[tag=revive_animation] remove revive_animation
 tag @s remove dark_room
 tag @s remove flashlight
 tag @s remove target

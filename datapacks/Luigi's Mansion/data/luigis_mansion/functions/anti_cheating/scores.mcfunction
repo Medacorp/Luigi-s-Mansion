@@ -12,6 +12,7 @@ scoreboard objectives add Constants dummy
 scoreboard objectives add Damage dummy
 scoreboard objectives add DamagePitch dummy
 scoreboard objectives add DamagePitchTimer dummy
+scoreboard objectives add DeathTime dummy
 scoreboard objectives add Dialog dummy
 scoreboard objectives add Distance dummy
 scoreboard objectives add ElementHurtTime dummy
@@ -103,6 +104,8 @@ scoreboard objectives add Room dummy
 scoreboard objectives add RoomNoise dummy
 scoreboard objectives add RoomSection dummy
 scoreboard objectives add RotationDif dummy
+scoreboard objectives add RotX dummy
+scoreboard objectives add RotY dummy
 scoreboard objectives add Run minecraft.custom:minecraft.sprint_one_cm
 scoreboard objectives add Search dummy
 scoreboard objectives add Searched dummy
@@ -172,6 +175,7 @@ execute unless score #mansion_type Selected matches -2147483648.. run scoreboard
 execute unless score #previous_mansion_index Selected matches -2147483648.. run scoreboard players set #previous_mansion_index Selected 0
 execute unless score #mirrored Selected matches 0..1 run scoreboard players set #mirrored Selected 0
 execute unless score #can_warp Selected matches 0..1 run scoreboard players set #can_warp Selected 1
+execute unless score #can_revive Selected matches 0..1 run scoreboard players set #can_revive Selected 0
 execute unless score #multiply_hurt Selected matches 0.. run scoreboard players set #multiply_hurt Selected 100
 execute unless score #multiply_damage Selected matches 0.. run scoreboard players set #multiply_damage Selected 100
 execute unless score #changing_max_health Selected matches 0..1 run scoreboard players set #changing_max_health Selected 0

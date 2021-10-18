@@ -20,7 +20,6 @@ execute if entity @s[gamemode=spectator] run function luigis_mansion:entities/pl
 execute if entity @s[scores={Shrunk=1}] run function luigis_mansion:items/poison_mushroom/readd_inventory
 scoreboard players remove @s[scores={Shrunk=1..}] Shrunk 1
 scoreboard players reset @s[scores={Shrunk=0}] Shrunk
-scoreboard players reset @s[scores={Shrunk=0}] ShrunkNr
 execute if entity @s[tag=return_mario] as @a run function luigis_mansion:entities/player/return_mario
 
 scoreboard players set @s[tag=fix_health] Health 100
@@ -88,3 +87,5 @@ scoreboard players operation @s OtherZ = @s PosZ
 execute store result score @s PosX run data get entity @s Pos[0] 100
 execute store result score @s PosY run data get entity @s Pos[1] 100
 execute store result score @s PosZ run data get entity @s Pos[2] 100
+execute store result score @s RotY run data get entity @s Rotation[0] 100
+execute store result score @s RotX run data get entity @s Rotation[1] 100

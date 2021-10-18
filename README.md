@@ -23,6 +23,7 @@ To define a new mansion, you need to set the mansion_type value, mansion_data_in
 * `#mansion_type` (int): Defines the mansion that is loaded.
 * `#mansion_data_index` (int): Defines the save data ID that is used.
 * `#mirrored` (bool): Whether the ghosts mirror all their animations.
+* `#can_revive` (bool): Whether dead players can be revived by other players.
 * `#can_warp` (bool): Whether the Gameboy Horror can warp players by scanning mirrors.
 * `#multiply_hurt` (int): Multiplies base damage taken by this value where 100 = 1x. Does not affect non-mansion rooms (there values is always treated as 100).
 * `#multiply_damage` (int): Multiplies base damage dealt by this value where 100 = 1x. Does not affect non-mansion rooms (there values is always treated as 100).
