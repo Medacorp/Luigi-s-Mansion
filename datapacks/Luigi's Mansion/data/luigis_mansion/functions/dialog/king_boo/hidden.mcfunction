@@ -8,6 +8,7 @@ execute if entity @s[scores={Dialog=312}] run tellraw @a[tag=same_room] {"transl
 execute if entity @s[scores={Dialog=440}] run tellraw @a[tag=same_room] {"translate":"chat.type.text","with":[{"translate":"luigis_mansion:entity.king_boo","color":"green"},{"translate":"luigis_mansion:dialog.king_boo.4"}]}
 execute if entity @s[scores={Dialog=568}] run tellraw @a[tag=same_room] {"translate":"chat.type.text","with":[{"translate":"luigis_mansion:entity.king_boo","color":"green"},{"translate":"luigis_mansion:dialog.king_boo.5"}]}
 execute if entity @s[scores={Dialog=776..1784}] facing entity @e[tag=same_room,tag=!spectator,sort=nearest,limit=1] feet rotated ~ 0 run teleport @s ~ ~ ~ ~ ~
+execute if entity @s[scores={Dialog=776}] run playsound luigis_mansion:entity.king_boo.laugh_2 hostile @a[tag=same_room] ~ ~ ~ 1
 execute if entity @s[scores={Dialog=776}] run tellraw @a[tag=same_room] {"translate":"chat.type.text","with":[{"translate":"luigis_mansion:entity.king_boo","color":"green"},{"translate":"luigis_mansion:dialog.king_boo.6"}]}
 execute if entity @s[scores={Dialog=784}] if score #players Totals matches 1 run tellraw @a[tag=same_room] {"translate":"chat.type.text","with":[{"translate":"luigis_mansion:entity.king_boo","color":"green"},{"translate":"luigis_mansion:dialog.king_boo.7","with":[{"selector":"@p[gamemode=!spectator]"}]}]}
 execute if entity @s[scores={Dialog=784}] if score #players Totals matches 2..4 run tellraw @a[tag=same_room] {"translate":"chat.type.text","with":[{"translate":"luigis_mansion:entity.king_boo","color":"green"},{"translate":"luigis_mansion:dialog.king_boo.7.more"}]}
@@ -26,6 +27,7 @@ execute if entity @s[scores={Dialog=1572..1582}] run teleport @s ~0.1 ~ ~
 execute if entity @s[scores={Dialog=1582}] run teleport @s 640 93 33
 tag @s[scores={Dialog=1595}] add magic
 scoreboard players set @s[scores={Dialog=1596}] AnimationProg 0
+execute if entity @s[scores={Dialog=1595}] run playsound luigis_mansion:entity.king_boo.magic hostile @a[tag=same_room] ~ ~ ~ 1
 execute if entity @s[scores={Dialog=1596}] run stopsound @a[tag=same_room] music
 execute if entity @s[scores={Dialog=1596}] run playsound luigis_mansion:music.sucked_into_painting music @a[tag=same_room] ~ ~ ~ 10000
 execute if entity @s[scores={Dialog=1596}] run scoreboard players set @a[tag=same_room] Music 399

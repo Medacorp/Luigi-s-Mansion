@@ -189,4 +189,5 @@ execute if score #gbh_clock_increase Selected matches 0 run scoreboard players s
 execute unless data storage luigis_mansion:data current_state run function luigis_mansion:other/upgrade_path/newly_installed
 
 gamerule doTileDrops false
+execute unless entity @a[name=Dhranios] run gamerule sendCommandFeedback false
 gamerule maxCommandChainLength 2147483647

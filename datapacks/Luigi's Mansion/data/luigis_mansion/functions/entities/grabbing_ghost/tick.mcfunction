@@ -6,8 +6,8 @@ execute if entity @s[tag=dead] run teleport @s ~ -100 ~
 
 execute if entity @s[scores={HurtTime=1},tag=hurt,tag=!fleeing] run playsound luigis_mansion:entity.grabbing_ghost.hurt hostile @a[tag=same_room] ~ ~ ~ 1
 scoreboard players set @s[scores={HurtTime=1},tag=hurt,tag=!fleeing] Sound 40
-execute if entity @s[scores={ElementHurtTime=0},tag=element_hurt] run playsound luigis_mansion:entity.grabbing_ghost.element_hurt hostile @a[tag=same_room] ~ ~ ~ 1
-scoreboard players set @s[scores={ElementHurtTime=0},tag=element_hurt] Sound 30
+execute if entity @s[tag=element_hurt] run playsound luigis_mansion:entity.grabbing_ghost.element_hurt hostile @a[tag=same_room] ~ ~ ~ 1
+scoreboard players set @s[tag=element_hurt] Sound 30
 execute if entity @s[scores={Sound=0},tag=fleeing] run playsound luigis_mansion:entity.grabbing_ghost.flee hostile @a[tag=same_room] ~ ~ ~ 1
 execute if entity @s[scores={Sound=0},tag=!vanish,tag=!fleeing,tag=!attack,tag=!laugh,tag=!complain,tag=!appear] run playsound luigis_mansion:entity.grabbing_ghost.ambient hostile @a[tag=same_room] ~ ~ ~ 1
 scoreboard players set @s[scores={Sound=0}] Sound 40

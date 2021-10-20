@@ -8,13 +8,16 @@ execute if entity @s[scores={Dialog=1},tag=visible] at @e[tag=same_room,tag=!spe
 execute if entity @s[scores={Dialog=61,VulnerableTime=0},tag=visible] at @e[tag=same_room,tag=!spectator] positioned ^ ^ ^8 if entity @s[distance=..8] run function luigis_mansion:entities/miss_petunia/turn_invisible
 effect clear @s[nbt={ActiveEffects:[{Id:14b,Duration:19}]}] minecraft:invisibility
 scoreboard players set @s[scores={Dialog=20}] AnimationProg 0
+execute if entity @s[scores={Dialog=20}] run playsound luigis_mansion:entity.miss_petunia.scream hostile @a[tag=same_room] ~ ~ ~ 1
 execute if entity @s[scores={Dialog=20..59}] facing entity @e[tag=same_room,tag=!spectator,sort=nearest,limit=1] feet run teleport @s ~ ~ ~ ~ ~
 scoreboard players set @s[scores={Dialog=50}] AnimationProg 0
+execute if entity @s[scores={Dialog=50}] run playsound luigis_mansion:entity.miss_petunia.attack hostile @a[tag=same_room] ~ ~ ~ 1
 execute if entity @s[scores={Dialog=59}] run function luigis_mansion:entities/miss_petunia/attack
 execute if entity @s[scores={Dialog=60,VulnerableTime=0}] run teleport @s ~ ~ ~ ~ 0
 execute if entity @s[scores={Dialog=60,VulnerableTime=0}] store result entity @s Rotation[0] float 1 run scoreboard players get @s HomeRot
 scoreboard players set @s[scores={Dialog=2..,VulnerableTime=1}] AnimationProg 1
 scoreboard players set @s[scores={Dialog=2..,VulnerableTime=0},tag=frozen] AnimationProg 0
+execute if entity @s[scores={Dialog=2..,VulnerableTime=0},tag=frozen,tag=!vanish] run playsound luigis_mansion:entity.miss_petunia.complain hostile @a[tag=same_room] ~ ~ ~ 1
 scoreboard players set @s[scores={Dialog=2..},tag=frozen,tag=!vanish] VulnerableTime 60
 scoreboard players set @s[scores={Dialog=2..60},tag=frozen,tag=!vanish] Dialog 61
 execute if entity @s[scores={Dialog=61,VulnerableTime=1..}] facing entity @e[tag=same_room,tag=!spectator,sort=nearest,limit=1] feet run teleport @s ~ ~ ~ ~ ~
@@ -27,3 +30,6 @@ execute at @s[scores={Dialog=50..59}] run function luigis_mansion:animations/mis
 execute at @s[scores={VulnerableTime=1..}] run function luigis_mansion:animations/miss_petunia/shiver
 execute at @s[scores={VulnerableTime=0},tag=!vanish] unless entity @s[scores={Dialog=20..59}] run function luigis_mansion:animations/miss_petunia/idle
 execute as @e[tag=this_model,tag=miss_petunia_shadow,tag=!body,tag=!right_arm,tag=!left_arm,limit=1] positioned ~3.5 ~ ~ run function luigis_mansion:animations/miss_petunia/shadow
+
+execute if entity @s[scores={VulnerableTime=0,Sound=0},tag=!vanish] unless entity @s[scores={Dialog=20..59}] run playsound luigis_mansion:entity.miss_petunia.ambient hostile @a[tag=same_room] ~ ~ ~ 1
+execute unless entity @s[scores={Dialog=20..59}] run scoreboard players set @s[scores={VulnerableTime=0,Sound=0},tag=!vanish] Sound 40

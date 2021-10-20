@@ -51,7 +51,6 @@ execute if entity @s[scores={Dialog=976}] run function luigis_mansion:entities/j
 tag @s[scores={Dialog=976},tag=!frozen] add pop_out
 scoreboard players set @s[scores={Dialog=996..1126},tag=frozen] Dialog 1126
 tag @s[scores={Dialog=1126},tag=!frozen] add pop_in
-
 execute if entity @s[scores={Dialog=1206}] run function luigis_mansion:entities/jarvis/switch_jar/normal
 tag @s[scores={Dialog=1206},tag=!frozen] add pop_out
 scoreboard players set @s[scores={Dialog=1226..1266},tag=frozen] Dialog 1266
@@ -77,6 +76,7 @@ tag @s[scores={Dialog=1706},tag=!frozen] add pop_out
 scoreboard players set @s[scores={Dialog=1726..1766},tag=frozen] Dialog 1766
 tag @s[scores={Dialog=1766},tag=!frozen] add pop_in
 tag @s[scores={Dialog=1766}] remove can_freeze
+execute if entity @s[tag=frozen] run playsound luigis_mansion:entity.jarvis.freeze hostile @a[tag=same_room] ~ ~ ~ 1
 scoreboard players add @s[tag=frozen] Wave 1
 tag @s[tag=frozen] add got_frozen
 tag @s[tag=frozen] remove frozen

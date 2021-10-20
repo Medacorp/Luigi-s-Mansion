@@ -5,6 +5,7 @@ execute at @s run teleport @s ~ ~0.5 ~
 execute at @s as @e[tag=this_model] run teleport @s ~ ~0.5 ~
 
 execute if entity @s[tag=dying,scores={HurtTime=1}] run tag @e[tag=black_bogmire] add remove_from_existence
+execute if entity @s[tag=dying,scores={HurtTime=1}] run playsound luigis_mansion:entity.bogmire.vacuumed_moan hostile @a[tag=same_room] ~ ~ ~ 1
 execute if entity @s[tag=dying,scores={HurtTime=1}] run playsound luigis_mansion:entity.bogmire.vacuumed hostile @a[tag=same_room] ~ ~ ~ 1
 execute if entity @s[tag=dead] run function luigis_mansion:entities/bogmire/at_death
 execute if entity @s[tag=vanish] store result storage luigis_mansion:data current_state.current_data.portrait_ghosts.bogmire.health int 1 run scoreboard players operation @s LastHealth = @s Health
@@ -14,6 +15,8 @@ execute if entity @s[scores={HurtTime=1},tag=hurt,tag=!fleeing] run playsound lu
 scoreboard players set @s[scores={HurtTime=1},tag=hurt,tag=!fleeing] Sound 40
 execute if entity @s[scores={Sound=0},tag=fleeing] run playsound luigis_mansion:entity.bogmire.flee hostile @a[tag=same_room] ~ ~ ~ 1
 scoreboard players set @s[scores={Sound=0},tag=fleeing] Sound 40
+execute if entity @s[scores={Sound=0},tag=!hurt,tag=!fleeing,tag=visible] run playsound luigis_mansion:entity.bogmire.ambient hostile @a[tag=same_room] ~ ~ ~ 1
+scoreboard players set @s[scores={Sound=0},tag=!hurt,tag=!fleeing,tag=visible] Sound 30
 
 execute if entity @s[tag=!fleeing,tag=!hurt,tag=!vanish,scores={StunTime=0}] run function #luigis_mansion:entities/bogmire/tick
 

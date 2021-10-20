@@ -3,6 +3,7 @@ execute unless entity @s[scores={ActionTime=1..}] run scoreboard players set @s 
 scoreboard players set @s[scores={ActionTime=1}] AnimationProg 0
 execute if entity @s[scores={ActionTime=1..40}] facing entity @p[tag=same_room,gamemode=!spectator] feet rotated ~ 0 run teleport @s ~ ~ ~ ~ ~
 execute at @s[scores={ActionTime=1..60}] run function luigis_mansion:animations/mr_bones/attack
+execute at @s[scores={ActionTime=1}] run playsound luigis_mansion:entity.mr_bones.assemble hostile @a[tag=same_room] ~ ~ ~ 1
 execute if entity @s[scores={ActionTime=1}] if score #mirrored Selected matches 0 run data merge entity @s {HandItems:[{id:"minecraft:diamond_pickaxe",Count:1b,tag:{Unbreakable:1b,Damage:2,CustomModelData:98}},{id:"minecraft:diamond_pickaxe",Count:1b,tag:{Unbreakable:1b,Damage:3,CustomModelData:96}}]}
 execute if entity @s[scores={ActionTime=1}] if score #mirrored Selected matches 1 run data merge entity @s {HandItems:[{id:"minecraft:diamond_pickaxe",Count:1b,tag:{Unbreakable:1b,Damage:2,CustomModelData:96}},{id:"minecraft:diamond_pickaxe",Count:1b,tag:{Unbreakable:1b,Damage:3,CustomModelData:98}}]}
 
@@ -13,6 +14,7 @@ execute if entity @s[scores={ActionTime=40}] positioned ~ ~0.4 ~ as @e[distance=
 execute if entity @s[scores={ActionTime=40}] positioned ~ ~0.4 ~ as @e[distance=..0.1,tag=bone] run teleport @s ~ ~ ~ ~ ~
 
 scoreboard players set @s[scores={ActionTime=60}] AnimationProg 0
+execute at @s[scores={ActionTime=60}] run playsound luigis_mansion:entity.mr_bones.dismantle hostile @a[tag=same_room] ~ ~ ~ 1
 execute at @s[scores={ActionTime=60..61}] run function luigis_mansion:animations/mr_bones/haunt
 scoreboard players set @s[scores={ActionTime=61},tag=!laugh,tag=!complain] ActionTime 60
 tag @s[scores={ActionTime=61}] remove attack

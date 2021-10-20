@@ -17,6 +17,8 @@ execute if entity @e[tag=same_room,tag=!spectator,distance=..0.7,limit=1] if ent
 
 execute at @s[tag=magic] run function luigis_mansion:animations/boo/magic
 execute at @s[tag=laugh] run function luigis_mansion:entities/king_boo/laugh
+execute at @s[tag=complain] run function luigis_mansion:animations/boo/hurt
+execute at @s[tag=appear] run function luigis_mansion:animations/boo/appear
 execute at @s[tag=fleeing] run function luigis_mansion:animations/boo/flee
 execute at @s[tag=!fleeing,tag=boo_hurt] run function luigis_mansion:animations/boo/hurt
 execute at @s[tag=!fleeing,tag=!boo_hurt,tag=!magic] run function luigis_mansion:animations/boo/idle

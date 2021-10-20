@@ -10,8 +10,8 @@ execute if entity @s[tag=dead] run teleport @s ~ -100 ~
 
 execute if entity @s[scores={HurtTime=1},tag=hurt,tag=!fleeing] run playsound luigis_mansion:entity.mr_bones.hurt hostile @a[tag=same_room] ~ ~ ~ 1
 scoreboard players set @s[scores={HurtTime=1},tag=hurt,tag=!fleeing] Sound 40
-execute if entity @s[scores={ElementHurtTime=0},tag=element_hurt] run playsound luigis_mansion:entity.mr_bones.element_hurt hostile @a[tag=same_room] ~ ~ ~ 1
-scoreboard players set @s[scores={ElementHurtTime=0},tag=element_hurt] Sound 30
+execute if entity @s[tag=element_hurt] run playsound luigis_mansion:entity.mr_bones.element_hurt hostile @a[tag=same_room] ~ ~ ~ 1
+scoreboard players set @s[tag=element_hurt] Sound 10
 execute if entity @s[scores={Sound=0},tag=fleeing] run playsound luigis_mansion:entity.mr_bones.flee hostile @a[tag=same_room] ~ ~ ~ 1
 scoreboard players set @s[scores={Sound=0},tag=fleeing] Sound 40
 

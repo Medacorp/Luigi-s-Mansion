@@ -18,6 +18,7 @@ execute if entity @s[tag=intro_done,scores={Dialog=262}] run function luigis_man
 execute if entity @s[tag=intro_done,scores={Dialog=182..}] run scoreboard players set @e[tag=black_bogmire,limit=1,scores={SpawnTime=..120}] SpawnTime 120
 execute if entity @s[tag=intro_done,scores={Dialog=281}] run scoreboard players set @s Dialog 179
 
+execute align xyz if entity @e[dx=0,dy=2,dz=0,tag=shadow,tag=ball] if entity @s[tag=visible,tag=!shadow_hit] run playsound luigis_mansion:entity.bogmire.hit_by_shadow_ball hostile @a[tag=same_room] ~ ~ ~ 1
 execute align xyz if entity @e[dx=0,dy=2,dz=0,tag=shadow,tag=ball] run tag @s[tag=visible] add shadow_hit
 execute align xyz if entity @e[dx=0,dy=2,dz=0,tag=shadow,tag=ball,tag=big] run tag @s[tag=visible] add big_shadow
 execute align xyz if entity @e[dx=0,dy=2,dz=0,tag=shadow,tag=ball] run scoreboard players set @s[tag=visible] VulnerableTime 280

@@ -10,8 +10,8 @@ execute if entity @s[tag=dead] run scoreboard players reset #temp GhostGuyCouple
 
 execute if entity @s[scores={HurtTime=1},tag=hurt,tag=!fleeing] run playsound luigis_mansion:entity.ghost_guy.hurt hostile @a[tag=same_room] ~ ~ ~ 1
 scoreboard players set @s[scores={HurtTime=1},tag=hurt,tag=!fleeing] Sound 40
-execute if entity @s[scores={ElementHurtTime=0},tag=element_hurt] run playsound luigis_mansion:entity.ghost_guy.element_hurt hostile @a[tag=same_room] ~ ~ ~ 1
-scoreboard players set @s[scores={ElementHurtTime=0},tag=element_hurt] Sound 30
+execute if entity @s[tag=element_hurt] run playsound luigis_mansion:entity.ghost_guy.element_hurt hostile @a[tag=same_room] ~ ~ ~ 1
+scoreboard players set @s[tag=element_hurt] Sound 30
 execute if entity @s[scores={Sound=0},tag=fleeing] run playsound luigis_mansion:entity.ghost_guy.flee hostile @a[tag=same_room] ~ ~ ~ 1
 scoreboard players set @s[scores={Sound=0},tag=fleeing] Sound 40
 
@@ -25,6 +25,19 @@ scoreboard players add @s[tag=in_vacuum] VacuumTime 1
 scoreboard players set @s[tag=!in_vacuum_2,tag=!in_vacuum] VacuumTime 0
 tag @s[tag=!in_vacuum] remove in_vacuum_2
 tag @s[tag=in_vacuum] add in_vacuum_2
+execute if entity @s[tag=!maskless,scores={VacuumTime=1}] run playsound luigis_mansion:entity.ghost_guy.mask_shake hostile @a[tag=same_room] ~ ~ ~ 1
+execute if entity @s[tag=!maskless,scores={VacuumTime=4}] run playsound luigis_mansion:entity.ghost_guy.mask_shake hostile @a[tag=same_room] ~ ~ ~ 1
+execute if entity @s[tag=!maskless,scores={VacuumTime=7}] run playsound luigis_mansion:entity.ghost_guy.mask_shake hostile @a[tag=same_room] ~ ~ ~ 1
+execute if entity @s[tag=!maskless,scores={VacuumTime=10}] run playsound luigis_mansion:entity.ghost_guy.mask_shake hostile @a[tag=same_room] ~ ~ ~ 1
+execute if entity @s[tag=!maskless,scores={VacuumTime=13}] run playsound luigis_mansion:entity.ghost_guy.mask_shake hostile @a[tag=same_room] ~ ~ ~ 1
+execute if entity @s[tag=!maskless,scores={VacuumTime=16}] run playsound luigis_mansion:entity.ghost_guy.mask_shake hostile @a[tag=same_room] ~ ~ ~ 1
+execute if entity @s[tag=!maskless,scores={VacuumTime=19}] run playsound luigis_mansion:entity.ghost_guy.mask_shake hostile @a[tag=same_room] ~ ~ ~ 1
+execute if entity @s[tag=!maskless,scores={VacuumTime=22}] run playsound luigis_mansion:entity.ghost_guy.mask_shake hostile @a[tag=same_room] ~ ~ ~ 1
+execute if entity @s[tag=!maskless,scores={VacuumTime=25}] run playsound luigis_mansion:entity.ghost_guy.mask_shake hostile @a[tag=same_room] ~ ~ ~ 1
+execute if entity @s[tag=!maskless,scores={VacuumTime=28}] run playsound luigis_mansion:entity.ghost_guy.mask_shake hostile @a[tag=same_room] ~ ~ ~ 1
+execute if entity @s[tag=!maskless,scores={VacuumTime=31}] run playsound luigis_mansion:entity.ghost_guy.mask_shake hostile @a[tag=same_room] ~ ~ ~ 1
+execute if entity @s[tag=!maskless,scores={VacuumTime=34}] run playsound luigis_mansion:entity.ghost_guy.mask_shake hostile @a[tag=same_room] ~ ~ ~ 1
+execute if entity @s[tag=!maskless,scores={VacuumTime=37}] run playsound luigis_mansion:entity.ghost_guy.mask_shake hostile @a[tag=same_room] ~ ~ ~ 1
 execute if entity @s[tag=!maskless,scores={VacuumTime=40}] run function luigis_mansion:entities/ghost_guy/lose_mask
 
 execute if entity @s[tag=element_hurt] run function luigis_mansion:entities/ghost_guy/stop_dancing
