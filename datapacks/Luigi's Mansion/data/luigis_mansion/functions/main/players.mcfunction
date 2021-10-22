@@ -66,6 +66,9 @@ tag @s[scores={Sneak=1..},tag=!looking_at_map] add sneaking
 scoreboard players set @s[scores={Sneak=1..}] Sneak 0
 tag @s[tag=walking,tag=sneak_pos] add sneaking
 tag @s[tag=walking,tag=sneak_pos] remove walking
+tag @s[tag=attacking] remove attacking
+tag @s[scores={Attack=1..}] add attacking
+scoreboard players set @s[scores={Attack=1..}] Attack 0
 
 execute if entity @a[tag=!same_room,limit=1] run scoreboard players set #freeze_timer Selected 0
 tag @e[tag=same_room] remove same_room

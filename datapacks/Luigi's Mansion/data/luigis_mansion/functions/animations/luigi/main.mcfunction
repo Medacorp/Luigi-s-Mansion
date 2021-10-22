@@ -5,6 +5,7 @@ execute if entity @s[scores={AnimationProg=1..}] unless data storage luigis_mans
 execute if entity @s[scores={AnimationProg=1..}] unless data storage luigis_mansion:data luigi{tags:["looking_at_map"]} run scoreboard players set @s[tag=was_looking_at_map] AnimationProg 0
 execute if entity @s[scores={AnimationProg=0},tag=was_swimming] store result entity @s Pose.Head[0] float 1 run scoreboard players get @s IncreaseAmount
 execute if entity @s[scores={AnimationProg=1..}] if data storage luigis_mansion:data luigi{tags:["swimming"]} run scoreboard players set @s[tag=!was_swimming] AnimationProg 0
+tag @s[tag=looking_at_map] remove sneak_pos
 data modify entity @s Tags append from storage luigis_mansion:data luigi.tags[]
 execute if data storage luigis_mansion:data luigi{gliding:1b} run tag @s[tag=walking] remove walking
 execute unless data entity @s Pose.Head[0] run data merge entity @s {Pose:{Head:[0.001f,0.001f,0.001f]}}

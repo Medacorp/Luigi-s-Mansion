@@ -47,8 +47,8 @@ scoreboard players reset #temp Time
 scoreboard players set @s[scores={AnimationProg=160..}] AnimationProg 0
 execute if entity @s[scores={AnimationProg=21}] run playsound luigis_mansion:entity.biff_atlas.lift_1 hostile @a[tag=same_room] ~ ~ ~ 1
 execute if entity @s[scores={AnimationProg=41}] run playsound luigis_mansion:entity.biff_atlas.lift_4 hostile @a[tag=same_room] ~ ~ ~ 1
-execute if entity @s[scores={AnimationProg=75}] run playsound luigis_mansion:entity.biff_atlas.lift_success hostile @a[tag=same_room] ~ ~ ~ 1
+execute if entity @s[scores={AnimationProg=75}] run playsound luigis_mansion:entity.biff_atlas.lift_succeed hostile @a[tag=same_room] ~ ~ ~ 1
 execute if entity @s[scores={AnimationProg=81}] run playsound luigis_mansion:entity.biff_atlas.lift_1 hostile @a[tag=same_room] ~ ~ ~ 1
-execute if entity @s[scores={AnimationProg=95}] run playsound luigis_mansion:entity.biff_atlas.lift_success hostile @a[tag=same_room] ~ ~ ~ 1
-execute if entity @s[scores={AnimationProg=115}] run playsound luigis_mansion:entity.biff_atlas.lift_success hostile @a[tag=same_room] ~ ~ ~ 1
+execute if entity @s[scores={AnimationProg=95}] run playsound luigis_mansion:entity.biff_atlas.lift_succeed hostile @a[tag=same_room] ~ ~ ~ 1
+execute if entity @s[scores={AnimationProg=115}] run playsound luigis_mansion:entity.biff_atlas.lift_succeed hostile @a[tag=same_room] ~ ~ ~ 1
 execute if entity @s[scores={AnimationProg=135}] run playsound luigis_mansion:entity.biff_atlas.lift_6 hostile @a[tag=same_room] ~ ~ ~ 1

@@ -1,4 +1,5 @@
 scoreboard players set @s[tag=attack] AnimationProg 0
+scoreboard players set @s[tag=attack] ActionTime 0
 tag @s remove attack
 scoreboard players add @s ActionTime 1
 scoreboard players set @s[scores={ActionTime=1}] AnimationProg 0

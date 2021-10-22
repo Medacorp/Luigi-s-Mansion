@@ -8,14 +8,17 @@ teleport @s[tag=sneak_pos,nbt=!{Small:1b},tag=flipped_gravity] ^-0.35 ^-0.34 ^ ~
 teleport @s[tag=!sneak_pos,nbt={Small:1b},tag=flipped_gravity] ^-0.24 ^0.4 ^ ~ ~
 teleport @s[tag=sneak_pos,nbt={Small:1b},tag=flipped_gravity] ^-0.24 ^0.46 ^ ~ ~
 
-#data modify entity @s[tag=held_item,tag=!looking_at_map] ArmorItems[3] set from storage luigis_mansion:data luigi.offhand
 
 data modify entity @s[tag=was_sneak_posing,tag=!sneak_pos] Pose.Head[0] set value 0.001f
 data modify entity @s[tag=!was_sneak_posing,tag=sneak_pos] Pose.Head[0] set value 20.0f
 data modify entity @s[tag=was_flipped,tag=!flipped_gravity] Pose.Head[2] set value 0.0f
 data modify entity @s[tag=!was_flipped,tag=flipped_gravity] Pose.Head[2] set value -180.0f
 
-function luigis_mansion:animations/luigi/idle/left_arm
+execute if entity @s[tag=!looking_at_map] run function luigis_mansion:animations/luigi/idle/left_arm
+
+#data modify entity @s[tag=held_item,tag=!looking_at_map] ArmorItems[3] set from storage luigis_mansion:data luigi.offhand
+#execute if entity @s[tag=attacking,tag=!looking_at_map] run function luigis_mansion:animations/luigi/attack/left_arm
+tag @s remove attacking
 
 # Walk animation
 data modify entity @s[tag=was_sneaking,tag=!sneaking,tag=!walking,tag=!running,tag=!swimming] Pose.Head[0] set value 20.0f
@@ -24,8 +27,8 @@ data modify entity @s[tag=was_running,tag=!running,tag=!sneaking,tag=!walking,ta
 data modify entity @s[tag=was_swimming,tag=!sneaking,tag=!walking,tag=!running,tag=!swimming] Pose.Head[0] set value 0.001f
 data modify entity @s[tag=was_swimming,tag=!swimming] Pose.Head[1] set value 0.001f
 
-execute if entity @s[tag=sneaking] run function luigis_mansion:animations/luigi/sneaking/left_arm
-execute if entity @s[tag=walking] run function luigis_mansion:animations/luigi/walking/left_arm
-execute if entity @s[tag=running] run function luigis_mansion:animations/luigi/running/left_arm
-execute if entity @s[tag=swimming] run function luigis_mansion:animations/luigi/swimming/left_arm
+execute if entity @s[tag=sneaking,tag=!looking_at_map] run function luigis_mansion:animations/luigi/sneaking/left_arm
+execute if entity @s[tag=walking,tag=!looking_at_map] run function luigis_mansion:animations/luigi/walking/left_arm
+execute if entity @s[tag=running,tag=!looking_at_map] run function luigis_mansion:animations/luigi/running/left_arm
+execute if entity @s[tag=swimming,tag=!looking_at_map] run function luigis_mansion:animations/luigi/swimming/left_arm
 execute if entity @s[tag=looking_at_map] run function luigis_mansion:animations/luigi/looking_at_map/left_arm

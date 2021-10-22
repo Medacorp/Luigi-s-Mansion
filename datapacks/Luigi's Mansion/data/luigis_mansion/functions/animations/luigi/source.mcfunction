@@ -29,14 +29,14 @@ execute store result entity @s[tag=!looking_at_map,tag=!moving_backwards] Rotati
 tag @s remove moving_backwards
 
 # Move with
-execute rotated as @s run teleport @s[tag=!looking_at_map,tag=!flipped_gravity,tag=!sneak_pos,nbt=!{Small:1b}] ^ ^1.65 ^-.25
-execute rotated as @s run teleport @s[tag=!looking_at_map,tag=!flipped_gravity,tag=sneak_pos,nbt=!{Small:1b}] ^ ^1.4 ^-.25
-execute rotated as @s run teleport @s[tag=!looking_at_map,tag=!flipped_gravity,tag=!sneak_pos,nbt={Small:1b}] ^ ^1.15 ^-.25
-execute rotated as @s run teleport @s[tag=!looking_at_map,tag=!flipped_gravity,tag=sneak_pos,nbt={Small:1b}] ^ ^1 ^-.25
-execute rotated as @s run teleport @s[tag=!looking_at_map,tag=flipped_gravity,tag=!sneak_pos,nbt=!{Small:1b}] ^ ^-0.6 ^-.25
-execute rotated as @s run teleport @s[tag=!looking_at_map,tag=flipped_gravity,tag=sneak_pos,nbt=!{Small:1b}] ^ ^-0.35 ^-.25
-execute rotated as @s run teleport @s[tag=!looking_at_map,tag=flipped_gravity,tag=!sneak_pos,nbt={Small:1b}] ^ ^-0.3 ^-.25
-execute rotated as @s run teleport @s[tag=!looking_at_map,tag=flipped_gravity,tag=sneak_pos,nbt={Small:1b}] ^ ^-0.3 ^-.25
+execute rotated as @s run teleport @s[tag=!flipped_gravity,tag=!sneak_pos,nbt=!{Small:1b}] ^ ^1.65 ^-.25
+execute rotated as @s run teleport @s[tag=!flipped_gravity,tag=sneak_pos,nbt=!{Small:1b}] ^ ^1.4 ^-.25
+execute rotated as @s run teleport @s[tag=!flipped_gravity,tag=!sneak_pos,nbt={Small:1b}] ^ ^1.15 ^-.25
+execute rotated as @s run teleport @s[tag=!flipped_gravity,tag=sneak_pos,nbt={Small:1b}] ^ ^1 ^-.25
+execute rotated as @s run teleport @s[tag=flipped_gravity,tag=!sneak_pos,nbt=!{Small:1b}] ^ ^-0.6 ^-.25
+execute rotated as @s run teleport @s[tag=flipped_gravity,tag=sneak_pos,nbt=!{Small:1b}] ^ ^-0.35 ^-.25
+execute rotated as @s run teleport @s[tag=flipped_gravity,tag=!sneak_pos,nbt={Small:1b}] ^ ^-0.3 ^-.25
+execute rotated as @s run teleport @s[tag=flipped_gravity,tag=sneak_pos,nbt={Small:1b}] ^ ^-0.3 ^-.25
 
 execute unless data storage luigis_mansion:data luigi{swimming:0b,gliding:0b} run teleport @s ~ ~-1 ~
 execute unless data storage luigis_mansion:data luigi{swimming:0b,gliding:0b} if entity @s[tag=!looking_at_map] run data modify entity @s Rotation[1] set from entity @a[tag=this_luigi,limit=1] Rotation[1]

@@ -9,6 +9,6 @@ execute store result score #temp Time run data get entity @s Pose.Head[2] 100
 execute if entity @s[scores={DeathTime=11..50}] if score #mirrored Selected matches 0 store result entity @s Pose.Head[2] float 0.01 run scoreboard players remove #temp Time 125
 execute if entity @s[scores={DeathTime=11..50}] if score #mirrored Selected matches 1 store result entity @s Pose.Head[2] float 0.01 run scoreboard players add #temp Time 200
 execute store result score #temp Time run data get entity @s Pose.Head[0] 100
-execute if entity @s[scores={DeathTime=11..50}] if score #mirrored Selected matches 0 store result entity @s Pose.Head[0] float 0.01 run scoreboard players remove #temp Time 100
-execute if entity @s[scores={DeathTime=11..50}] if score #mirrored Selected matches 1 store result entity @s Pose.Head[0] float 0.01 run scoreboard players add #temp Time 50
+execute if entity @s[scores={DeathTime=11..50}] if score #mirrored Selected matches 0 store result entity @s Pose.Head[0] float 0.01 run scoreboard players add #temp Time 100
+execute if entity @s[scores={DeathTime=11..50}] if score #mirrored Selected matches 1 store result entity @s Pose.Head[0] float 0.01 run scoreboard players remove #temp Time 50
 scoreboard players reset #temp Time
