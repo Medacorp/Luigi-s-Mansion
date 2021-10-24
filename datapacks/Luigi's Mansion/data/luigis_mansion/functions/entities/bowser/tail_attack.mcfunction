@@ -2,6 +2,7 @@ scoreboard players add @s ActionTime 1
 scoreboard players set @s[scores={ActionTime=1}] AnimationProg 0
 function luigis_mansion:animations/bowser/tail_attack
 execute if entity @s[scores={ActionTime=11}] run data merge entity @e[tag=this_model,tag=tail,limit=1] {Small:0b}
+execute if entity @s[scores={AnimationProg=11}] run playsound luigis_mansion:entity.bowser.wave_tail hostile @a[tag=same_room] ~ ~ ~ 3
 execute if entity @s[scores={ActionTime=31}] run data merge entity @e[tag=this_model,tag=tail,limit=1] {Small:1b}
 execute if entity @s[scores={ActionTime=11..30}] positioned ^ ^-3 ^-4 as @e[distance=..3,tag=gameboy_horror_location] run function luigis_mansion:entities/gameboy_horror_location/bring_player_back
 execute if entity @s[scores={ActionTime=11..30}] positioned ^ ^-3 ^-4 run effect give @a[gamemode=!spectator,distance=..3] minecraft:instant_damage 1 0 true

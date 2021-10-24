@@ -7,7 +7,8 @@ teleport @s[scores={Dialog=3}] ~ ~ ~ facing 700 11 45
 scoreboard players set @s[x=700.5,y=11,z=45.5,distance=..0.7,scores={Dialog=3}] Dialog 4
 teleport @s[scores={Dialog=4}] ~ ~ ~ facing 702 11 45
 scoreboard players add @s[x=702.5,y=11,z=45.5,distance=..0.7,scores={Dialog=4..13}] Dialog 1
-tag @s[scores={Dialog=5}] add placing_food
+execute if entity @e[tag=mr_luggs,scores={Dialog=..100}] run tag @s[scores={Dialog=5}] add placing_food
+execute if entity @e[tag=mr_luggs,scores={Dialog=101..}] run tag @s[scores={Dialog=5}] add complain
 scoreboard players set @s[scores={Dialog=5}] AnimationProg 0
 execute if entity @s[scores={Dialog=7}] run scoreboard players set @e[tag=mr_luggs,scores={Dialog=2..99},limit=1] Dialog 1
 teleport @s[scores={Dialog=14}] ~ ~ ~ facing 701 11 48

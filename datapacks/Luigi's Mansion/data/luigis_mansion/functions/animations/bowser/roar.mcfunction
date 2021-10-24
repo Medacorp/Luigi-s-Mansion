@@ -33,4 +33,5 @@ execute store result score #temp Time run data get entity @e[tag=this_model,tag=
 execute if entity @s[scores={AnimationProg=1..20}] store result entity @e[tag=this_model,tag=left_arm,limit=1] Pose.Head[0] float 1 run scoreboard players remove #temp Time 2
 execute if entity @s[scores={AnimationProg=21..40}] store result entity @e[tag=this_model,tag=left_arm,limit=1] Pose.Head[0] float 1 run scoreboard players add #temp Time 2
 scoreboard players reset #temp Time
+execute if entity @s[scores={AnimationProg=2}] run playsound luigis_mansion:entity.bowser.roar hostile @a[tag=same_room] ~ ~ ~ 3
 scoreboard players set @s[scores={AnimationProg=40}] AnimationProg 0

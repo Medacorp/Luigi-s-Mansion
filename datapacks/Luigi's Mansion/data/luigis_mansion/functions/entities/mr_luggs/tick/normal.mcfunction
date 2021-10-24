@@ -44,49 +44,67 @@ tag @s[scores={ActionTime=0}] remove hit_table
 
 scoreboard players set @s[scores={Dialog=101}] AnimationProg 0
 tag @s[scores={Dialog=101}] add complain
+execute if entity @s[scores={Dialog=101}] run playsound luigis_mansion:entity.mr_luggs.complain hostile @a[tag=same_room] ~ ~ ~ 1
 tag @s[scores={Dialog=141}] remove complain
 tag @s[scores={Dialog=141}] add rage
 execute if entity @s[scores={Dialog=141..}] as @a[tag=same_room,gamemode=!spectator] unless entity @s[scores={MusicGroup=0,MusicType=28}] unless entity @s[scores={MusicGroup=0,MusicType=36}] run function luigis_mansion:other/music/set/danger
 execute if entity @s[scores={Dialog=141..781}] positioned ~ ~1 ~ facing entity @e[tag=same_room,tag=!spectator,sort=nearest,limit=1] feet positioned ~ ~-1 ~ run teleport @s ~ ~ ~ ~ ~
 tag @s[scores={Dialog=201}] remove rage
 tag @s[scores={Dialog=201}] add spit
+execute if entity @s[scores={Dialog=201}] run playsound luigis_mansion:entity.mr_luggs.spit hostile @a[tag=same_room] ~ ~ ~ 1
 execute if entity @s[scores={Dialog=221}] run function luigis_mansion:entities/mr_luggs/spit_fire
 tag @s[scores={Dialog=221}] add rage
 tag @s[scores={Dialog=221}] remove spit
 tag @s[scores={Dialog=301}] remove rage
 tag @s[scores={Dialog=301}] add spit
+execute if entity @s[scores={Dialog=201}] run playsound luigis_mansion:entity.mr_luggs.spit hostile @a[tag=same_room] ~ ~ ~ 1
 execute if entity @s[scores={Dialog=321}] run function luigis_mansion:entities/mr_luggs/spit_fire
+execute if entity @s[scores={Dialog=361}] run playsound luigis_mansion:entity.mr_luggs.spit_repeat hostile @a[tag=same_room] ~ ~ ~ 1
 execute if entity @s[scores={Dialog=361}] run function luigis_mansion:entities/mr_luggs/spit_fire
 tag @s[scores={Dialog=361}] add rage
 tag @s[scores={Dialog=361}] remove spit
 tag @s[scores={Dialog=421}] remove rage
 tag @s[scores={Dialog=421}] add spit
+execute if entity @s[scores={Dialog=421}] run playsound luigis_mansion:entity.mr_luggs.spit hostile @a[tag=same_room] ~ ~ ~ 1
 execute if entity @s[scores={Dialog=441}] run function luigis_mansion:entities/mr_luggs/spit_fire
+execute if entity @s[scores={Dialog=461}] run playsound luigis_mansion:entity.mr_luggs.spit_repeat hostile @a[tag=same_room] ~ ~ ~ 1
 execute if entity @s[scores={Dialog=461}] run function luigis_mansion:entities/mr_luggs/spit_fire
+execute if entity @s[scores={Dialog=481}] run playsound luigis_mansion:entity.mr_luggs.spit_repeat hostile @a[tag=same_room] ~ ~ ~ 1
 execute if entity @s[scores={Dialog=481}] run function luigis_mansion:entities/mr_luggs/spit_fire
 tag @s[scores={Dialog=481}] add rage
 tag @s[scores={Dialog=481}] remove spit
 tag @s[scores={Dialog=521}] remove rage
 tag @s[scores={Dialog=521}] add spit
+execute if entity @s[scores={Dialog=521}] run playsound luigis_mansion:entity.mr_luggs.spit hostile @a[tag=same_room] ~ ~ ~ 1
 execute if entity @s[scores={Dialog=541}] run function luigis_mansion:entities/mr_luggs/spit_fire
+execute if entity @s[scores={Dialog=561}] run playsound luigis_mansion:entity.mr_luggs.spit_repeat hostile @a[tag=same_room] ~ ~ ~ 1
 execute if entity @s[scores={Dialog=561}] run function luigis_mansion:entities/mr_luggs/spit_fire
+execute if entity @s[scores={Dialog=581}] run playsound luigis_mansion:entity.mr_luggs.spit_repeat hostile @a[tag=same_room] ~ ~ ~ 1
 execute if entity @s[scores={Dialog=581}] run function luigis_mansion:entities/mr_luggs/spit_fire
+execute if entity @s[scores={Dialog=601}] run playsound luigis_mansion:entity.mr_luggs.spit_repeat hostile @a[tag=same_room] ~ ~ ~ 1
 execute if entity @s[scores={Dialog=601}] run function luigis_mansion:entities/mr_luggs/spit_fire
 tag @s[scores={Dialog=601}] add rage
 tag @s[scores={Dialog=601}] remove spit
 tag @s[scores={Dialog=661}] remove rage
 tag @s[scores={Dialog=661}] add spit
+execute if entity @s[scores={Dialog=661}] run playsound luigis_mansion:entity.mr_luggs.spit hostile @a[tag=same_room] ~ ~ ~ 1
 execute if entity @s[scores={Dialog=681}] run function luigis_mansion:entities/mr_luggs/spit_fire
+execute if entity @s[scores={Dialog=701}] run playsound luigis_mansion:entity.mr_luggs.spit_repeat hostile @a[tag=same_room] ~ ~ ~ 1
 execute if entity @s[scores={Dialog=701}] run function luigis_mansion:entities/mr_luggs/spit_fire
+execute if entity @s[scores={Dialog=721}] run playsound luigis_mansion:entity.mr_luggs.spit_repeat hostile @a[tag=same_room] ~ ~ ~ 1
 execute if entity @s[scores={Dialog=721}] run function luigis_mansion:entities/mr_luggs/spit_fire
+execute if entity @s[scores={Dialog=741}] run playsound luigis_mansion:entity.mr_luggs.spit_repeat hostile @a[tag=same_room] ~ ~ ~ 1
 execute if entity @s[scores={Dialog=741}] run function luigis_mansion:entities/mr_luggs/spit_fire
+execute if entity @s[scores={Dialog=761}] run playsound luigis_mansion:entity.mr_luggs.spit_repeat hostile @a[tag=same_room] ~ ~ ~ 1
 execute if entity @s[scores={Dialog=761}] run function luigis_mansion:entities/mr_luggs/spit_fire
 tag @s[scores={Dialog=761}] add sigh
 tag @s[scores={Dialog=761}] remove spit
+execute if entity @s[scores={Dialog=761}] run playsound luigis_mansion:entity.mr_luggs.sigh hostile @a[tag=same_room] ~ ~ ~ 1
 execute if entity @s[scores={Dialog=781}] run scoreboard players set @s VulnerableTime 80
 execute if entity @s[scores={Dialog=861}] run scoreboard players set @s AnimationProg 0
 tag @s[scores={Dialog=861}] add complain
 tag @s[scores={Dialog=861}] remove sigh
+execute if entity @s[scores={Dialog=881}] run playsound luigis_mansion:entity.mr_luggs.complain_repeat hostile @a[tag=same_room] ~ ~ ~ 1
 tag @s[scores={Dialog=901}] remove complain
 tag @s[scores={Dialog=901}] add rage
 scoreboard players set @s[scores={Dialog=901}] Dialog 601

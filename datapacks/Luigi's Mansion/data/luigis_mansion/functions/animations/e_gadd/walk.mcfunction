@@ -24,5 +24,7 @@ execute if entity @s[scores={AnimationProg=1..4}] store result entity @s Pose.He
 execute if entity @s[scores={AnimationProg=5..8}] store result entity @s Pose.Head[0] float 0.1 run scoreboard players remove #temp Time 5
 execute if entity @s[scores={AnimationProg=11..14}] store result entity @s Pose.Head[0] float 0.1 run scoreboard players add #temp Time 5
 execute if entity @s[scores={AnimationProg=15..18}] store result entity @s Pose.Head[0] float 0.1 run scoreboard players remove #temp Time 5
-scoreboard players set @s[scores={AnimationProg=20}] AnimationProg 0
 scoreboard players reset #temp Time
+execute if entity @s[scores={AnimationProg=5}] run playsound luigis_mansion:entity.e_gadd.walk neutral @a[tag=same_room] ~ ~ ~ 1 1
+execute if entity @s[scores={AnimationProg=15}] run playsound luigis_mansion:entity.e_gadd.walk neutral @a[tag=same_room] ~ ~ ~ 1 0.9
+scoreboard players set @s[scores={AnimationProg=20}] AnimationProg 0

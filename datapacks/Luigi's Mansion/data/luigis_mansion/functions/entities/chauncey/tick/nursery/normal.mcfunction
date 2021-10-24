@@ -87,6 +87,5 @@ tag @s[scores={Dialog=642}] remove laugh
 tag @s[scores={Dialog=642}] add vanish
 scoreboard players set @s[scores={Dialog=642}] AnimationProg 0
 scoreboard players set @s[scores={Dialog=642}] ActionTime 0
-execute if entity @s[scores={Dialog=682}] as @a run function luigis_mansion:room/normal/chauncey_battle/warp_to
 
 execute at @s run teleport @s ~ ~-1 ~

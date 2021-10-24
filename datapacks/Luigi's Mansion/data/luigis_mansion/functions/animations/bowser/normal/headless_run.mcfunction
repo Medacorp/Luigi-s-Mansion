@@ -25,4 +25,6 @@ execute if entity @s[scores={AnimationProg=1..4}] store result entity @e[tag=thi
 execute if entity @s[scores={AnimationProg=5..12}] store result entity @e[tag=this_model,tag=left_leg,limit=1] Pose.Head[0] float 1 run scoreboard players add #temp Time 5
 execute if entity @s[scores={AnimationProg=13..16}] store result entity @e[tag=this_model,tag=left_leg,limit=1] Pose.Head[0] float 1 run scoreboard players remove #temp Time 5
 scoreboard players reset #temp Time
+execute if entity @s[scores={Dialog=5}] run playsound luigis_mansion:entity.bowser.walk hostile @a[tag=same_room] ~ ~ ~ 3
+execute if entity @s[scores={Dialog=13}] run playsound luigis_mansion:entity.bowser.walk hostile @a[tag=same_room] ~ ~ ~ 3 0.8
 scoreboard players set @s[scores={AnimationProg=16}] AnimationProg 0
