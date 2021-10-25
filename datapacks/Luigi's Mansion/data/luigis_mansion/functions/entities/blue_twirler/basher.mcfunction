@@ -6,6 +6,8 @@ scoreboard players set @s[scores={ActionTime=1}] AnimationProg 0
 execute if entity @s[scores={ActionTime=1..40}] run function luigis_mansion:animations/twirler/basher_stun
 scoreboard players set @s[scores={ActionTime=41}] AnimationProg 0
 execute if entity @s[scores={ActionTime=41..60}] run function luigis_mansion:animations/twirler/appear
+scoreboard players set @s[scores={ActionTime=61}] AnimationProg 0
+execute if entity @s[scores={ActionTime=61..90}] run function luigis_mansion:animations/twirler/basher_complain
 
 tag @s[scores={ActionTime=1}] add stunable
 tag @s[scores={ActionTime=1}] add visible
@@ -27,7 +29,11 @@ execute if entity @s[scores={ActionTime=41}] run scoreboard players set @a[dista
 execute if entity @s[scores={ActionTime=41}] run effect give @a[distance=..5,gamemode=!spectator] minecraft:instant_damage 1 0 true
 execute if entity @s[scores={ActionTime=41}] run scoreboard players set @a[distance=..5,gamemode=!spectator] ForcedDamage 4
 execute if entity @s[scores={ActionTime=41}] if entity @a[distance=..5,gamemode=!spectator] run tag @s add laugh
-tag @s[scores={ActionTime=41},tag=!laugh] add complain
-tag @s[scores={ActionTime=60}] remove attack
-scoreboard players set @s[scores={ActionTime=60}] AnimationProg 0
-scoreboard players set @s[scores={ActionTime=60}] ActionTime 0
+tag @s[scores={ActionTime=60},tag=laugh] remove attack
+scoreboard players set @s[scores={ActionTime=60},tag=laugh] AnimationProg 0
+scoreboard players set @s[scores={ActionTime=60},tag=laugh] ActionTime 0
+execute if entity @s[scores={ActionTime=81}] run playsound luigis_mansion:entity.blue_twirler.complain_basher hostile @a[tag=same_room] ~ ~ ~ 1
+tag @s[scores={ActionTime=90}] add vanish
+tag @s[scores={ActionTime=90}] remove attack
+scoreboard players set @s[scores={ActionTime=90}] AnimationProg 0
+scoreboard players set @s[scores={ActionTime=90}] ActionTime 0

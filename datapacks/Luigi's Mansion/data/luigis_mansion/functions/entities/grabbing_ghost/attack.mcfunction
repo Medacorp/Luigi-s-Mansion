@@ -18,6 +18,7 @@ execute if entity @s[scores={ActionTime=21..110}] positioned ^ ^ ^0.8 unless ent
 execute if entity @s[scores={ActionTime=21..110}] positioned ^ ^ ^0.8 positioned as @a[gamemode=!spectator,distance=..0.7,tag=grabbed,limit=1] rotated as @s positioned ^ ^ ^-0.8 run teleport @s ~ ~ ~ ~ ~
 execute at @s[scores={ActionTime=40}] positioned ^ ^ ^0.8 if entity @a[distance=..0.7,gamemode=!spectator,tag=grabbed,limit=1] run tag @s add laugh
 scoreboard players set @s[scores={ActionTime=110}] AnimationProg 0
+execute if entity @s[scores={ActionTime=110}] run playsound luigis_mansion:entity.grabbing_ghost.let_go hostile @a[tag=same_room] ~ ~ ~ 1
 execute if entity @s[scores={ActionTime=110..130}] run function luigis_mansion:animations/grabbing_ghost/let_go
 tag @s[scores={ActionTime=130},tag=!laugh] add complain
 tag @s[scores={ActionTime=130}] remove attack
