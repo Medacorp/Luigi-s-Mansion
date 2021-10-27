@@ -10,3 +10,5 @@ execute as @a[gamemode=!spectator,scores={Room=73}] run function luigis_mansion:
 execute if data storage luigis_mansion:data current_state.current_data.rooms.nursery{cleared:0b} as @a unless entity @s[scores={Room=73}] run function luigis_mansion:room/normal/chauncey_battle/warp_to
 
 function luigis_mansion:room/normal/chauncey_battle/ghosts
+
+tag @e[x=794,y=20,z=56,dx=0,dy=10,dz=15,tag=ball,tag=!spit,y_rotation=0..-180] add collision

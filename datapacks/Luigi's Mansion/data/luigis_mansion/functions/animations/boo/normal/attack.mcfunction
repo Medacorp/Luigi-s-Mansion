@@ -4,26 +4,12 @@ execute store result score #temp Time run data get entity @s Pose.Head[2]
 execute store result entity @s Pose.Head[2] float 1 run scoreboard players remove #temp Time 18
 scoreboard players reset #temp Time
 data modify entity @s[scores={AnimationProg=1},tag=boo] ArmorItems[3].tag merge value {CustomModelData:100}
-data modify entity @s[scores={AnimationProg=1},tag=boolossus] ArmorItems[3].tag merge value {CustomModelData:63}
+data modify entity @s[scores={AnimationProg=1},tag=boolossus,tag=split] ArmorItems[3].tag merge value {CustomModelData:63}
 data modify entity @s[scores={AnimationProg=1},tag=king_boo] ArmorItems[3].tag merge value {CustomModelData:87}
 data modify entity @s[scores={AnimationProg=1}] HandItems[0].id set value "minecraft:stone_button"
 data modify entity @s[scores={AnimationProg=1}] HandItems[1].id set value "minecraft:stone_button"
 data modify entity @s[scores={AnimationProg=20},tag=boo] ArmorItems[3].tag merge value {CustomModelData:99}
-data modify entity @s[scores={AnimationProg=20,ActionTime=1},tag=boolossus] ArmorItems[3].tag merge value {CustomModelData:48}
-data modify entity @s[scores={AnimationProg=20,ActionTime=2},tag=boolossus] ArmorItems[3].tag merge value {CustomModelData:49}
-data modify entity @s[scores={AnimationProg=20,ActionTime=3},tag=boolossus] ArmorItems[3].tag merge value {CustomModelData:50}
-data modify entity @s[scores={AnimationProg=20,ActionTime=4},tag=boolossus] ArmorItems[3].tag merge value {CustomModelData:51}
-data modify entity @s[scores={AnimationProg=20,ActionTime=5},tag=boolossus] ArmorItems[3].tag merge value {CustomModelData:52}
-data modify entity @s[scores={AnimationProg=20,ActionTime=6},tag=boolossus] ArmorItems[3].tag merge value {CustomModelData:53}
-data modify entity @s[scores={AnimationProg=20,ActionTime=7},tag=boolossus] ArmorItems[3].tag merge value {CustomModelData:54}
-data modify entity @s[scores={AnimationProg=20,ActionTime=8},tag=boolossus] ArmorItems[3].tag merge value {CustomModelData:55}
-data modify entity @s[scores={AnimationProg=20,ActionTime=9},tag=boolossus] ArmorItems[3].tag merge value {CustomModelData:56}
-data modify entity @s[scores={AnimationProg=20,ActionTime=10},tag=boolossus] ArmorItems[3].tag merge value {CustomModelData:57}
-data modify entity @s[scores={AnimationProg=20,ActionTime=11},tag=boolossus] ArmorItems[3].tag merge value {CustomModelData:58}
-data modify entity @s[scores={AnimationProg=20,ActionTime=12},tag=boolossus] ArmorItems[3].tag merge value {CustomModelData:59}
-data modify entity @s[scores={AnimationProg=20,ActionTime=13},tag=boolossus] ArmorItems[3].tag merge value {CustomModelData:60}
-data modify entity @s[scores={AnimationProg=20,ActionTime=14},tag=boolossus] ArmorItems[3].tag merge value {CustomModelData:61}
-data modify entity @s[scores={AnimationProg=20,ActionTime=15},tag=boolossus] ArmorItems[3].tag merge value {CustomModelData:62}
+data modify entity @s[scores={AnimationProg=20},tag=boolossus,tag=split] ArmorItems[3].tag merge value {CustomModelData:48}
 data modify entity @s[scores={AnimationProg=20},tag=king_boo] ArmorItems[3].tag merge value {CustomModelData:86}
 data modify entity @s[scores={AnimationProg=20}] HandItems[0].id set value "minecraft:diamond_pickaxe"
 data modify entity @s[scores={AnimationProg=20}] HandItems[1].id set value "minecraft:diamond_pickaxe"

@@ -59,7 +59,7 @@ scoreboard players set @s[scores={Room=22},tag=warp_north] LastRoom 11
 scoreboard players set @s[scores={Room=22},tag=warp_west] LastRoom 27
 scoreboard players set @s[scores={Room=23},tag=warp_north] LastRoom 24
 scoreboard players set @s[scores={Room=23},tag=warp_west] LastRoom 22
-scoreboard players set @s[scores={Room=24},tag=warp_south] LastRoom 22
+scoreboard players set @s[scores={Room=24},tag=warp_south] LastRoom 23
 scoreboard players set @s[scores={Room=24},tag=warp_west] LastRoom 11
 scoreboard players set @s[scores={Room=25},tag=warp_east] LastRoom 13
 scoreboard players set @s[scores={Room=25},tag=warp_north] LastRoom 32

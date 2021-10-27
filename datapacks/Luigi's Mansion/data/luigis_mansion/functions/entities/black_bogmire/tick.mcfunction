@@ -21,10 +21,10 @@ tag @s remove disappear
 execute at @s[tag=shadow_death] run function luigis_mansion:entities/black_bogmire/vanish
 execute if entity @s[tag=dead] run teleport @s ~ -100 ~
 
-execute if entity @s[scores={HurtTime=1},tag=hurt,tag=!fleeing] run playsound luigis_mansion:entity.black_bogmire.hurt hostile @a[tag=same_room] ~ ~ ~ 1
-scoreboard players set @s[scores={HurtTime=1},tag=hurt,tag=!fleeing] Sound 40
-execute if entity @s[scores={Sound=0},tag=!hurt,tag=!fleeing] run playsound luigis_mansion:entity.black_bogmire.ambient hostile @a[tag=same_room] ~ ~ ~ 1
-scoreboard players set @s[scores={Sound=0},tag=!hurt,tag=!fleeing] Sound 30
+execute if entity @s[scores={VacuumTime=1}] run playsound luigis_mansion:entity.black_bogmire.hurt hostile @a[tag=same_room] ~ ~ ~ 1
+scoreboard players set @s[scores={VacuumTime=1}] Sound 40
+execute if entity @s[scores={Sound=0},tag=!fleeing,tag=!vanish,tag=!new_black_bogmire,tag=!vanish_flee] run playsound luigis_mansion:entity.black_bogmire.ambient hostile @a[tag=same_room] ~ ~ ~ 1
+scoreboard players set @s[scores={Sound=0},tag=!fleeing,tag=!vanish,tag=!new_black_bogmire,tag=!vanish_flee] Sound 30
 
 execute at @e[tag=same_room,tag=!spectator,distance=..0.7,limit=1] if entity @s[tag=!dead,tag=!shadow_death,tag=!removed_from_existence] run function luigis_mansion:entities/black_bogmire/collide
 
@@ -33,9 +33,9 @@ execute at @s[tag=!fleeing,tag=!collided,tag=!shadow_death,scores={SpawnTime=100
 execute at @s[tag=fleeing,tag=!shadow_death] run function luigis_mansion:entities/black_bogmire/flee
 
 execute at @s[tag=vanish] run function luigis_mansion:entities/black_bogmire/vanish
-execute at @s[tag=appear] run function luigis_mansion:entities/black_bogmire/appear
+execute at @s[tag=new_black_bogmire] run function luigis_mansion:entities/black_bogmire/appear
 execute at @s[tag=vanish_flee] run function luigis_mansion:animations/bogmire/flee
-execute at @s[tag=!hurt,tag=!fleeing,tag=!appear,tag=!vanish,tag=!shadow_death] run function luigis_mansion:animations/bogmire/idle
+execute at @s[tag=!fleeing,tag=!spawn,tag=!vanish,tag=!shadow_death] run function luigis_mansion:animations/bogmire/idle
 execute at @s[tag=fleeing,tag=!shadow_death] run function luigis_mansion:animations/bogmire/flee
 
 execute at @s[tag=!big] run teleport @s ~ ~-0.5 ~
@@ -48,7 +48,6 @@ tag @e[tag=this_model,limit=1] add found_owner
 tag @e[tag=this_model,limit=1] remove this_model
 
 tag @s remove fleeing
-tag @s remove hurt
 tag @s remove element_hurt
 tag @s remove freeze
 execute at @s[scores={LightX=-2147483648..}] run function luigis_mansion:other/cast_shadow/2_tall

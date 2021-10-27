@@ -105,7 +105,7 @@ execute if entity @s[scores={Dialog=150..459}] at @e[tag=e_gadd,tag=dialog,limit
 execute if entity @s[scores={Dialog=150}] run scoreboard players set @e[tag=gold_ghost,tag=dialog,limit=1] AnimationProg 0
 execute if entity @s[scores={Dialog=150}] run tag @e[tag=gold_ghost,tag=dialog,limit=1] add hurt
 execute if entity @s[scores={Dialog=150}] at @e[tag=gold_ghost,tag=dialog,limit=1] run playsound luigis_mansion:entity.gold_ghost.hurt hostile @a[tag=same_room] ~ ~ ~ 1
-execute if entity @s[scores={Dialog=170}] at @e[tag=e_gadd,tag=dialog,limit=1] run playsound luigis_mansion:entity.e_gadd.talk.soisoi neutral @a[tag=same_room] ~ ~ ~ 1
+execute if entity @s[scores={Dialog=170}] at @e[tag=e_gadd,tag=dialog,limit=1] run playsound luigis_mansion:entity.e_gadd.talk.soy_soh_ooh neutral @a[tag=same_room] ~ ~ ~ 1
 execute if entity @s[scores={Dialog=233}] at @e[tag=e_gadd,tag=dialog,limit=1] run playsound luigis_mansion:entity.e_gadd.dragged neutral @a[tag=same_room] ~ ~ ~ 1
 execute if entity @s[scores={Dialog=220}] run tag @e[tag=gold_ghost,tag=dialog,limit=1] add fleeing
 execute if entity @s[scores={Dialog=220}] as @e[tag=gold_ghost,tag=dialog,limit=1] at @s run playsound luigis_mansion:entity.gold_ghost.cutscene_flee hostile @a[tag=same_room] ~ ~ ~ 1

@@ -14,6 +14,7 @@ tag @e[tag=this_reflection,limit=1] remove new
 execute if entity @s[tag=immobile] run tag @e[tag=this_reflection,limit=1] add immobile
 data modify entity @e[tag=this_reflection,limit=1] Pose set from entity @s Pose
 data modify entity @e[tag=this_reflection,limit=1] Small set from entity @s Small
+scoreboard players operation @e[tag=this_reflection,limit=1] Room = @s Room
 data modify entity @e[tag=this_reflection,limit=1] ArmorItems set from entity @s[tag=!held_item] ArmorItems
 execute if entity @s[tag=held_item,tag=left_arm] at @s as @e[tag=right_arm,tag=held_item] if score @s ID = @e[tag=held_item,tag=left_arm,distance=..0.1,limit=1] ID run data modify entity @e[tag=this_reflection,limit=1] ArmorItems[3] set from entity @s ArmorItems[3]
 execute if entity @s[tag=!held_item,tag=left_arm] run data modify entity @e[tag=this_reflection,limit=1] ArmorItems[3].tag.Damage set value 2

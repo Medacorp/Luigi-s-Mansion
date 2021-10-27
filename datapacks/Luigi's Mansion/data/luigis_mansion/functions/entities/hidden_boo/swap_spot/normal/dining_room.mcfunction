@@ -1,12 +1,12 @@
-summon minecraft:marker 709 11 34 {Tags:["choice"]}
-summon minecraft:marker 709 11 52 {Tags:["choice"]}
-summon minecraft:marker 709 11 56 {Tags:["choice"]}
-summon minecraft:marker 709 11 30 {Tags:["choice"]}
+summon minecraft:marker 699 11 34 {Tags:["choice"]}
+summon minecraft:marker 699 11 52 {Tags:["choice"]}
+summon minecraft:marker 699 11 56 {Tags:["choice"]}
+summon minecraft:marker 699 11 30 {Tags:["choice"]}
 summon minecraft:marker 702 11 49 {Tags:["choice"]}
 summon minecraft:marker 702 11 43 {Tags:["choice"]}
 summon minecraft:marker 702 11 37 {Tags:["choice"]}
 summon minecraft:marker 709 14 52 {Tags:["choice"]}
-summon minecraft:marker 709 14 43 {Tags:["choice"]}
+summon minecraft:marker 699 14 43 {Tags:["choice"]}
 summon minecraft:marker 709 14 43 {Tags:["choice"]}
 summon minecraft:marker 709 14 34 {Tags:["choice"]}
 summon minecraft:marker 705 11 33 {Tags:["choice"]}

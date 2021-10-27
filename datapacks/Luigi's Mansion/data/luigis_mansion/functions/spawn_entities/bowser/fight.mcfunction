@@ -11,4 +11,5 @@ teleport @e[tag=model_piece,tag=this_entity] ~ ~3 ~ ~ ~
 execute as @e[tag=bowser,tag=this_entity,limit=1] store result score @s GhostNr run data get storage luigis_mansion:data ghost_nr
 execute as @e[tag=bowser,tag=this_entity,limit=1] store result storage luigis_mansion:data ghost_nr int 1 run scoreboard players add @s GhostNr 1
 scoreboard players operation @e[tag=model_piece,tag=this_entity] GhostNr = @e[tag=bowser,tag=this_entity,limit=1] GhostNr
+scoreboard players set @e[tag=bowser,tag=this_entity,limit=1] Sound 0
 tag @e[tag=this_entity] remove this_entity

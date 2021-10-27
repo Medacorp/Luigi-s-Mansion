@@ -32,6 +32,7 @@ scoreboard objectives add ForceRadar dummy
 scoreboard objectives add ForceScreen dummy
 scoreboard objectives add GBHCall dummy
 scoreboard objectives add GBHChoice trigger
+scoreboard objectives add GBHDialog dummy
 scoreboard objectives add GBHRadar dummy
 scoreboard objectives add GBHWait dummy
 scoreboard objectives add GhostCaught dummy

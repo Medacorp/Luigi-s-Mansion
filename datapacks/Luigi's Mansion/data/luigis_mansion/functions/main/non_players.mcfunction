@@ -1,26 +1,6 @@
-execute store result score #temp Room run scoreboard players get @s Room
-execute as @a run function #luigis_mansion:get_same_room
-execute as @e[tag=gameboy_horror_location] run function #luigis_mansion:get_same_room
-scoreboard players reset #temp Room
-
 tag @s[tag=remove_from_existence,tag=cannot_be_removed] remove remove_from_existence
 
-execute if entity @s[tag=door] run function luigis_mansion:animations/closed_door
-execute if entity @s[tag=first_key,tag=play] run function luigis_mansion:dialog/first_key
-execute if entity @s[tag=burning_floor] run function luigis_mansion:blocks/burning_floor
-
-function #luigis_mansion:entities
-scoreboard players reset #temp Move
-
-tag @s[tag=!reflection,scores={MirrorX=-2147483648..}] add mirrored
-tag @s[tag=!reflection,scores={MirrorZ=-2147483648..}] add mirrored
-execute if entity @s[tag=mirrored] run function luigis_mansion:entities/reflection/non_player
-tag @s[tag=mirrored] remove mirrored
-scoreboard players reset @s[tag=model_piece] LightX
-scoreboard players reset @s[tag=model_piece] LightY
-scoreboard players reset @s[tag=model_piece] LightZ
-scoreboard players reset @s[tag=model_piece] MirrorX
-scoreboard players reset @s[tag=model_piece] MirrorZ
+execute if entity @s[scores={Room=-2147483648..}] run function luigis_mansion:main/non_players_in_room
 
 data merge entity @s[type=minecraft:item] {Invulnerable:1b,Air:0}
 data merge entity @s[type=minecraft:item] {Air:1}
@@ -35,5 +15,3 @@ scoreboard players reset @s[tag=dead]
 tag @s[tag=dead] add can_die
 kill @s[tag=dead]
 scoreboard players reset @s Steps
-
-tag @a[tag=same_room] remove same_room

@@ -3,7 +3,7 @@ scoreboard players set @s[scores={ActionTime=1}] AnimationProg 0
 execute if entity @s[scores={ActionTime=1}] run playsound luigis_mansion:entity.bowser.breathe_fire hostile @a[tag=same_room] ~ ~ ~ 3
 teleport @s[scores={ActionTime=1..20}] ^ ^-0.15 ^0.1
 data modify entity @s[scores={ActionTime=15}] ArmorItems[3].tag.CustomModelData set value 91
-tag @s[scores={AnimationProg=21}] add can_decapitate
+tag @s[scores={ActionTime=21}] add can_decapitate
 execute if entity @s[scores={ActionTime=20}] run scoreboard players set @s Time 0
 execute if entity @s[scores={ActionTime=21..41}] run scoreboard players add @s Time 15
 execute if entity @s[scores={ActionTime=41..81}] run scoreboard players remove @s Time 15
@@ -35,7 +35,7 @@ execute at @s[scores={ActionTime=21..121}] run particle minecraft:block minecraf
 execute if entity @s[scores={ActionTime=21..121}] run teleport @s ~ ~ ~ ~ ~
 scoreboard players reset #temp Time
 data modify entity @s[scores={ActionTime=125}] ArmorItems[3].tag.CustomModelData set value 88
-tag @s[scores={AnimationProg=120}] remove can_decapitate
+tag @s[scores={ActionTime=120}] remove can_decapitate
 teleport @s[scores={ActionTime=121..140}] ^ ^0.15 ^-0.1
 tag @s[scores={ActionTime=140}] remove breathe_fire
 scoreboard players set @s[scores={ActionTime=140}] AnimationProg 0

@@ -1,6 +1,7 @@
 {
 	"values": [
 		"luigis_mansion:items/poltergust_3000/effect_on_block/water/air",
+		"luigis_mansion:items/poltergust_3000/effect_on_block/water/light",
         "luigis_mansion:items/poltergust_3000/effect_on_block/water/campfires",
         "luigis_mansion:items/poltergust_3000/effect_on_block/water/standing_candles",
         "luigis_mansion:items/poltergust_3000/effect_on_block/water/wall_candles",

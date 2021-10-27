@@ -8,8 +8,8 @@ execute unless entity @s[scores={Dialog=1..}] if entity @e[tag=same_room,tag=!sp
 execute if entity @s[scores={Dialog=1}] run playsound luigis_mansion:entity.spooky.wake_up hostile @a[tag=same_room] ~ ~ ~ 1
 scoreboard players set @s[scores={Dialog=1}] AnimationProg 0
 tag @s[scores={Dialog=1}] add wake_up
-execute if entity @s[scores={Dialog=21}] run playsound luigis_mansion:entity.spooky.breathe hostile @a[tag=same_room] ~ ~ ~ 1
-execute if entity @s[scores={Dialog=31}] run playsound luigis_mansion:entity.spooky.breathe hostile @a[tag=same_room] ~ ~ ~ 1
+execute if entity @s[scores={Dialog=21}] run playsound luigis_mansion:entity.spooky.pant hostile @a[tag=same_room] ~ ~ ~ 1
+execute if entity @s[scores={Dialog=31}] run playsound luigis_mansion:entity.spooky.pant hostile @a[tag=same_room] ~ ~ ~ 1
 execute at @s run teleport @s[scores={Dialog=37},tag=!moved_up] ~ ~0.4 ~
 tag @s[scores={Dialog=37}] add moved_up
 tag @s[scores={Dialog=40}] remove wake_up
@@ -25,9 +25,10 @@ tag @s[scores={Dialog=80},tag=!attack] add move
 execute if entity @e[tag=spooky_bone,limit=1] run scoreboard players set @s[scores={Dialog=80}] Dialog 163
 execute at @s[scores={Dialog=80},tag=!attack] run function luigis_mansion:entities/ghost/move_forward
 execute at @s[scores={Dialog=80},tag=!attack] positioned ^ ^ ^2 if entity @e[tag=same_room,tag=!spectator,distance=..0.7,limit=1] run tag @s add attack
-execute if entity @s[scores={Dialog=82}] run playsound luigis_mansion:entity.spooky.breathe hostile @a[tag=same_room] ~ ~ ~ 1
-execute if entity @s[scores={Dialog=102}] run playsound luigis_mansion:entity.spooky.breathe hostile @a[tag=same_room] ~ ~ ~ 1
+execute if entity @s[scores={Dialog=82}] run playsound luigis_mansion:entity.spooky.pant hostile @a[tag=same_room] ~ ~ ~ 1
+execute if entity @s[scores={Dialog=102}] run playsound luigis_mansion:entity.spooky.pant hostile @a[tag=same_room] ~ ~ ~ 1
 execute at @s[scores={Dialog=122..161},tag=!attack] facing entity @e[tag=same_room,tag=!spectator,sort=nearest,limit=1] feet rotated ~ 0 run teleport @s ~ ~ ~ ~ ~
+execute at @s run teleport @s[scores={Dialog=122}] ~ ~0.4 ~
 tag @s[scores={Dialog=122}] remove wake_up
 tag @s[scores={Dialog=122}] add bark
 execute if entity @s[scores={Dialog=122}] run playsound luigis_mansion:entity.spooky.bark hostile @a[tag=same_room] ~ ~ ~ 1
