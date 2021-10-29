@@ -1,0 +1,1 @@
+tag @s[tag=boo] add frozen
