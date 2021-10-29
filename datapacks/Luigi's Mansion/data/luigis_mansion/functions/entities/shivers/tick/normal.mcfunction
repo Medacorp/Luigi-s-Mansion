@@ -11,6 +11,8 @@ scoreboard players set @s[scores={PathStep=3}] AnimationProg 0
 tag @s[scores={PathStep=3}] add look_around
 tag @s[scores={PathStep=23}] remove look_around
 tag @s[scores={PathStep=23}] add panic
+execute if entity @s[scores={PathStep=23}] run playsound luigis_mansion:entity.shivers.realize hostile @a[tag=same_room] ~ ~ ~ 1
+scoreboard players set @s[scores={PathStep=23}] Sound 50
 tag @s[scores={PathStep=43}] remove panic
 tag @s[scores={PathStep=43}] add run
 execute if entity @s[scores={PathStep=3}] unless data storage luigis_mansion:data current_state.current_data.technical_data{shivers_spoke:1b} run tellraw @a[tag=same_room] {"translate":"chat.type.text","with":[{"translate":"luigis_mansion:entity.shivers","color":"green"},{"translate":"luigis_mansion:message.shivers.fire"}]}
@@ -41,6 +43,7 @@ scoreboard players set @s[scores={PathStep=53}] AnimationProg 0
 tag @s[scores={PathStep=53}] remove run
 tag @s[scores={PathStep=53}] add look_around
 tag @s[scores={PathStep=73}] remove look_around
+execute if entity @s[scores={PathStep=73}] run playsound luigis_mansion:entity.shivers.calm_down hostile @a[tag=same_room] ~ ~ ~ 1
 tag @s[scores={PathStep=73}] add sit_down
 tag @s[scores={PathStep=93}] remove sit_down
 execute if entity @s[scores={PathStep=73..93}] run scoreboard players set #temp Move 1
@@ -55,6 +58,11 @@ scoreboard players set @s[scores={PathStep=93}] VulnerableTime 80
 tag @s[scores={PathStep=233}] add vanish
 tag @s[scores={PathStep=233}] remove burning
 scoreboard players set @s[scores={PathStep=233}] PathStep 1
+
+execute if entity @s[scores={PathStep=43..53,Sound=0}] run playsound luigis_mansion:entity.shivers.panic hostile @a[tag=same_room] ~ ~ ~ 1
+scoreboard players set @s[scores={PathStep=43..53,Sound=0}] Sound 40
+execute if entity @s[scores={PathStep=93..172,Sound=0}] run playsound luigis_mansion:entity.shivers.ambient hostile @a[tag=same_room] ~ ~ ~ 1
+scoreboard players set @s[scores={PathStep=93..172,Sound=0}] Sound 10
 
 execute at @s[tag=look_around] run function luigis_mansion:animations/shivers/look_around
 execute at @s[tag=panic] run function luigis_mansion:animations/shivers/panic

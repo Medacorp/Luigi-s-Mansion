@@ -7,6 +7,7 @@ execute if entity @a[scores={MelodyChoice=2}] run scoreboard players set @s[scor
 tag @s[scores={Dialog=1}] add talk
 execute if entity @s[scores={Dialog=1},tag=!visible] run function luigis_mansion:entities/melody_pianissima/turn_visible
 execute if entity @s[scores={Dialog=80}] if data storage luigis_mansion:data current_state.current_data.technical_data{melody_pianissima_spoke:1b} run scoreboard players set @s Dialog 304
+execute if entity @s[scores={Dialog=80}] run playsound luigis_mansion:entity.melody_pianissima.laugh hostile @a[tag=same_room] ~ ~ ~ 1
 execute if entity @s[scores={Dialog=80}] run tellraw @a[tag=same_room] {"translate":"chat.type.text","with":[{"translate":"luigis_mansion:entity.melody_pianissima","color":"green"},{"translate":"luigis_mansion:dialog.melody_pianissima.1"}]}
 execute if entity @s[scores={Dialog=192}] run tellraw @a[tag=same_room] {"translate":"chat.type.text","with":[{"translate":"luigis_mansion:entity.melody_pianissima","color":"green"},{"translate":"luigis_mansion:dialog.melody_pianissima.2"}]}
 scoreboard players set @s[scores={Dialog=304}] AnimationProg 0
@@ -49,6 +50,7 @@ tag @s[scores={Dialog=1272}] add vanish
 scoreboard players set @s[scores={Dialog=2000}] AnimationProg 0
 tag @s[scores={Dialog=2000}] remove listen
 tag @s[scores={Dialog=2000}] add laugh
+execute if entity @s[scores={Dialog=2000}] run playsound luigis_mansion:entity.melody_pianissima.laugh hostile @a[tag=same_room] ~ ~ ~ 1
 execute if entity @s[scores={Dialog=2000}] if score #players Totals matches 1 run tellraw @a[tag=same_room] {"translate":"chat.type.text","with":[{"translate":"luigis_mansion:entity.melody_pianissima","color":"green"},{"translate":"luigis_mansion:dialog.melody_pianissima.yes.1"}]}
 execute if entity @s[scores={Dialog=2000}] if score #players Totals matches 2.. run tellraw @a[tag=same_room] {"translate":"chat.type.text","with":[{"translate":"luigis_mansion:entity.melody_pianissima","color":"green"},{"translate":"luigis_mansion:dialog.melody_pianissima.yes.1.more"}]}
 scoreboard players set @s[scores={Dialog=2040}] AnimationProg 0
