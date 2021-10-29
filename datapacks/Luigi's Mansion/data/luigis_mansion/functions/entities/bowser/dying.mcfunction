@@ -1,5 +1,6 @@
+execute unless entity @s[scores={Dialog=3..}] run scoreboard players add @s Dialog 1
+execute if entity @s[scores={Dialog=2}] unless block ~ ~0.8 ~ #luigis_mansion:ghosts_ignore run scoreboard players add @s Dialog 1
 execute unless entity @s[scores={Dialog=2..}] run scoreboard players add @s Dialog 1
-execute if entity @s[scores={Dialog=2..}] unless block ~ ~0.8 ~ #luigis_mansion:ghosts_ignore run scoreboard players add @s Dialog 1
 scoreboard players set @s[scores={Dialog=1}] AnimationProg 0
 function luigis_mansion:animations/bowser/dying
 execute if entity @s[scores={Dialog=2}] run teleport @s ~ ~-0.2 ~ ~ 0
