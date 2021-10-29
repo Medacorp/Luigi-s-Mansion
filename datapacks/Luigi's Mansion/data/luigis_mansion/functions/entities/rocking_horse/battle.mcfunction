@@ -6,6 +6,8 @@ execute rotated ~ 0 unless block ^ ^ ^0.6 #luigis_mansion:all_ignore run tag @s[
 execute rotated ~ 0 if block ^ ^ ^0.6 minecraft:barrier run tag @s add dead
 
 scoreboard players set #temp Move 2
+execute if entity @s[tag=intro,scores={Sound=0}] run playsound luigis_mansion:entity.rocking_horse.charge_intro hostile @a[tag=same_room] ~ ~ ~ 3
+scoreboard players set @s[tag=intro,scores={Sound=0}] Sound 30
 execute if entity @s[tag=intro] run scoreboard players set #temp Move 3
 execute if entity @s[tag=fast] run scoreboard players set #temp Move 4
 execute at @s[tag=!attack] run function luigis_mansion:entities/rocking_horse/move_forward
