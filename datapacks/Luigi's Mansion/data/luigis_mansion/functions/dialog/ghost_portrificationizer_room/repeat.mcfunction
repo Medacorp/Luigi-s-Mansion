@@ -6,6 +6,7 @@ tag @s[scores={Dialog=1}] add nod
 execute if entity @s[scores={Dialog=1}] run scoreboard players set @e[tag=this_model,tag=e_gadd_head,limit=1] AnimationProg 0
 execute if entity @s[scores={Dialog=1}] if score #players Totals matches 1 run tellraw @a[tag=same_room] {"translate":"chat.type.text","with":[{"translate":"luigis_mansion:entity.e_gadd","color":"green"},{"translate":"luigis_mansion:dialog.ghost_portrificationizer_room.repeat.1","with":[{"selector":"@a[gamemode=!spectator]"}]}]}
 execute if entity @s[scores={Dialog=1}] if score #players Totals matches 2.. run tellraw @a[tag=same_room] {"translate":"chat.type.text","with":[{"translate":"luigis_mansion:entity.e_gadd","color":"green"},{"translate":"luigis_mansion:dialog.ghost_portrificationizer_room.repeat.1.more"}]}
+execute if entity @s[scores={Dialog=1}] run playsound luigis_mansion:entity.e_gadd.talk.luigi_oui neutral @a[tag=same_room] ~ ~ ~ 1
 tag @s[scores={Dialog=56}] add listen
 tag @s[scores={Dialog=56}] remove nod
 execute if entity @s[scores={Dialog=56}] run scoreboard players set @e[tag=this_model,tag=e_gadd_head,limit=1] AnimationProg 0
@@ -14,12 +15,15 @@ execute if entity @s[scores={Dialog=56}] run scoreboard players enable @a[tag=sa
 tag @s[scores={Dialog=58}] remove listen
 tag @s[scores={Dialog=58}] add nod
 execute if entity @s[scores={Dialog=58}] run scoreboard players set @e[tag=this_model,tag=e_gadd_head,limit=1] AnimationProg 0
-execute if entity @s[scores={Dialog=58}] if entity @a[scores={EGaddGPRChoice=1..}] as @a[scores={EGaddGPRChoice=0}] run trigger EGaddGPRChoice set 0
-execute if entity @s[scores={Dialog=58}] if entity @a[scores={EGaddGPRChoice=1}] run tellraw @a[tag=same_room] {"translate":"chat.type.text","with":[{"translate":"luigis_mansion:entity.e_gadd","color":"green"},{"translate":"luigis_mansion:dialog.ghost_portrificationizer_room.lab.1"}]}
-execute if entity @s[scores={Dialog=58}] if entity @a[scores={EGaddGPRChoice=1}] run scoreboard players add @s Dialog 8
-execute if entity @s[scores={Dialog=58}] if entity @a[scores={EGaddGPRChoice=2}] run tellraw @a[tag=same_room] {"translate":"chat.type.text","with":[{"translate":"luigis_mansion:entity.e_gadd","color":"green"},{"translate":"luigis_mansion:dialog.ghost_portrificationizer_room.gallery.1"}]}
-execute if entity @s[scores={Dialog=58}] if entity @a[scores={EGaddGPRChoice=2}] run scoreboard players add @s Dialog 8
-execute if entity @s[scores={Dialog=58}] if entity @a[scores={EGaddGPRChoice=3}] run tellraw @a[tag=same_room] {"translate":"chat.type.text","with":[{"translate":"luigis_mansion:entity.e_gadd","color":"green"},{"translate":"luigis_mansion:dialog.ghost_portrificationizer_room.nothing.1"}]}
+execute if entity @s[scores={Dialog=58}] if entity @a[scores={EGaddGPRChoice=1..},limit=1] as @a[scores={EGaddGPRChoice=0}] run trigger EGaddGPRChoice set 0
+execute if entity @s[scores={Dialog=58}] if entity @a[scores={EGaddGPRChoice=1},limit=1] run tellraw @a[tag=same_room] {"translate":"chat.type.text","with":[{"translate":"luigis_mansion:entity.e_gadd","color":"green"},{"translate":"luigis_mansion:dialog.ghost_portrificationizer_room.lab.1"}]}
+execute if entity @s[scores={Dialog=58}] if entity @a[scores={EGaddGPRChoice=1},limit=1] run playsound luigis_mansion:entity.e_gadd.talk.yahboh_yahboh neutral @a[tag=same_room] ~ ~ ~ 1
+execute if entity @s[scores={Dialog=58}] if entity @a[scores={EGaddGPRChoice=1},limit=1] run scoreboard players add @s Dialog 8
+execute if entity @s[scores={Dialog=58}] if entity @a[scores={EGaddGPRChoice=2},limit=1] run tellraw @a[tag=same_room] {"translate":"chat.type.text","with":[{"translate":"luigis_mansion:entity.e_gadd","color":"green"},{"translate":"luigis_mansion:dialog.ghost_portrificationizer_room.gallery.1"}]}
+execute if entity @s[scores={Dialog=58}] if entity @a[scores={EGaddGPRChoice=2},limit=1] run playsound luigis_mansion:entity.e_gadd.talk.odoh_mah_mah neutral @a[tag=same_room] ~ ~ ~ 1
+execute if entity @s[scores={Dialog=58}] if entity @a[scores={EGaddGPRChoice=2},limit=1] run scoreboard players add @s Dialog 8
+execute if entity @s[scores={Dialog=58}] if entity @a[scores={EGaddGPRChoice=3},limit=1] run tellraw @a[tag=same_room] {"translate":"chat.type.text","with":[{"translate":"luigis_mansion:entity.e_gadd","color":"green"},{"translate":"luigis_mansion:dialog.ghost_portrificationizer_room.nothing.1"}]}
+execute if entity @s[scores={Dialog=58}] if entity @a[scores={EGaddGPRChoice=3},limit=1] run playsound luigis_mansion:entity.e_gadd.talk.yahmum_bah neutral @a[tag=same_room] ~ ~ ~ 1
 execute if entity @s[scores={Dialog=74}] if entity @a[scores={EGaddGPRChoice=1},limit=1] as @a[tag=same_room] run function luigis_mansion:room/underground_lab/warp_to
 execute if entity @s[scores={Dialog=74}] if entity @a[scores={EGaddGPRChoice=2},limit=1] as @a[tag=same_room] run function luigis_mansion:room/gallery/warp_to
 execute if entity @s[scores={Dialog=74}] run scoreboard players set @a EGaddGPRChoice 0
