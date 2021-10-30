@@ -10,3 +10,6 @@ execute unless score #temp Time matches 1 unless entity @e[tag=orville,limit=1] 
 execute unless entity @e[tag=orville,limit=1] run function luigis_mansion:spawn_entities/portrait_ghost/orville
 tag @e[distance=..0.7,tag=orville] add hide_and_seek
 tag @e[distance=..0.7,tag=orville] add appear
+
+execute unless score #temp Time matches 1 run playsound luigis_mansion:music.solve_puzzle music @a[tag=same_room] ~ ~ ~ 10000
+execute unless score #temp Time matches 1 run scoreboard players set @a[tag=same_room,scores={Music=..30}] Music 30
