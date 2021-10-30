@@ -1,6 +1,7 @@
 scoreboard players operation #temp Room = @s Room
 scoreboard players operation #temp ID = @s ID
 tag @s add me
+tag @s remove vacuuming
 summon minecraft:marker ~ ~ ~ {Tags:["interact","poltergust"]}
 execute unless entity @s[level=1..] unless entity @s[nbt={SelectedItem:{tag:{luigis_mansion:{id:"luigis_mansion:poltergust_3000",element:{type:0b}}}}}] run function luigis_mansion:items/poltergust_3000/no_element
 experience set @s[level=1..,nbt={SelectedItem:{tag:{luigis_mansion:{id:"luigis_mansion:poltergust_3000",element:{type:0b}}}}}] 0 levels
@@ -19,7 +20,7 @@ execute if entity @s[tag=fire,scores={SneakTime=1}] run function luigis_mansion:
 execute if entity @s[tag=water,scores={SneakTime=1}] run function luigis_mansion:items/poltergust_3000/shoot_water
 execute if entity @s[tag=ice,scores={SneakTime=1}] run function luigis_mansion:items/poltergust_3000/shoot_ice
 execute unless entity @s[scores={SneakTime=1..20}] unless entity @s[nbt={SelectedItem:{tag:{luigis_mansion:{id:"luigis_mansion:poltergust_3000",element:{type:0b}}}}}] run function luigis_mansion:items/poltergust_3000/reduce_element
-execute if entity @s[scores={Sneaking=1},tag=!was_sneaking] unless entity @s[nbt={SelectedItem:{tag:{luigis_mansion:{id:"luigis_mansion:poltergust_3000",element:{type:0b}}}}}] run function luigis_mansion:items/poltergust_3000/reduce_element_shoot
+execute if entity @s[scores={SneakTime=1}] unless entity @s[nbt={SelectedItem:{tag:{luigis_mansion:{id:"luigis_mansion:poltergust_3000",element:{type:0b}}}}}] run function luigis_mansion:items/poltergust_3000/reduce_element_shoot
 tag @s[tag=!fire,tag=!water,tag=!ice] add expelling_dust
 tag @s[tag=fire] add expelling_fire
 tag @s[tag=water] add expelling_water

@@ -13,16 +13,19 @@ execute if entity @s[scores={Dialog=1}] as @a[tag=same_room,gamemode=!spectator]
 execute if entity @s[scores={Dialog=1}] run stopsound @a[tag=same_room,gamemode=!spectator] music
 execute if entity @s[scores={Dialog=1}] run scoreboard players set @a[tag=same_room,gamemode=!spectator] Music 242
 execute if entity @s[scores={Dialog=1}] run playsound luigis_mansion:music.sue_pea music @a[tag=same_room] ~ ~ ~ 1000
+execute if entity @s[scores={Dialog=94}] run playsound luigis_mansion:entity.sue_pea.go_away hostile @a[tag=same_room] ~ ~ ~ 1000
 execute if entity @s[scores={Dialog=94}] run tellraw @a[tag=same_room] {"translate":"chat.type.text","with":[{"translate":"luigis_mansion:entity.sue_pea","color":"green"},{"translate":"luigis_mansion:dialog.sue_pea.1"}]}
 execute if entity @s[scores={Dialog=175}] run tellraw @a[tag=same_room] {"translate":"chat.type.text","with":[{"translate":"luigis_mansion:entity.sue_pea","color":"green"},{"translate":"luigis_mansion:dialog.sue_pea.2"}]}
 execute if entity @s[scores={Dialog=175}] run data modify storage luigis_mansion:data current_state.current_data.technical_data merge value {sue_pea_spoke:1b}
-execute if entity @s[scores={Dialog=..242},tag=visible,tag=!vanish] run function luigis_mansion:entities/sue_pea/turn_visible
+execute if entity @s[scores={Dialog=..242},tag=!visible,tag=!vanish] run function luigis_mansion:entities/sue_pea/turn_visible
 execute if entity @s[scores={Dialog=243..366},tag=visible,tag=!vanish] run function luigis_mansion:entities/sue_pea/turn_invisible
 execute if entity @s[scores={Dialog=243..366}] at @e[tag=same_room,tag=!spectator] positioned ^ ^ ^8 if entity @s[distance=..8] run function luigis_mansion:entities/sue_pea/turn_visible
 scoreboard players set @s[scores={Dialog=245}] AnimationProg 0
+execute if entity @s[scores={Dialog=245}] run playsound luigis_mansion:entity.sue_pea.complain hostile @a[tag=same_room] ~ ~ ~ 1000
 teleport @s[scores={Dialog=245..264}] ^ ^-0.05 ^0.05
 teleport @s[scores={Dialog=285..304}] ^ ^0.05 ^-0.05
 scoreboard players set @s[scores={Dialog=306}] AnimationProg 0
+execute if entity @s[scores={Dialog=306}] run playsound luigis_mansion:entity.sue_pea.complain2 hostile @a[tag=same_room] ~ ~ ~ 1000
 teleport @s[scores={Dialog=306..325}] ^ ^-0.05 ^0.05
 teleport @s[scores={Dialog=346..365}] ^ ^0.05 ^-0.05
 scoreboard players set @s[scores={Dialog=367}] AnimationProg 0
@@ -32,6 +35,7 @@ execute if entity @s[scores={Dialog=367..}] as @a[tag=same_room,gamemode=!specta
 execute if entity @s[scores={Dialog=367},tag=!visible] run function luigis_mansion:entities/sue_pea/turn_visible
 execute if entity @s[scores={Dialog=367}] run tag @e[tag=haunted_clown_doll] add enabled
 scoreboard players set @s[scores={Dialog=367}] VulnerableTime 100
+execute if entity @s[scores={Dialog=367}] run playsound luigis_mansion:entity.sue_pea.wake_up hostile @a[tag=same_room] ~ ~ ~ 1000
 teleport @s[scores={Dialog=367..386},tag=!vanish] ^ ^-0.07 ^0.05
 teleport @s[scores={Dialog=488..507},tag=!vanish] ^ ^0.07 ^-0.05
 execute if entity @s[scores={Dialog=467}] run function luigis_mansion:entities/sue_pea/turn_invisible

@@ -20,4 +20,4 @@ execute at @s[tag=!fleeing,tag=hurt] run function luigis_mansion:animations/sue_
 scoreboard players reset #temp GhostNr
 tag @e[tag=this_model] add found_owner
 tag @e[tag=this_model] remove this_model
-execute at @s[scores={LightX=-2147483648..}] run function luigis_mansion:other/cast_shadow/2_tall
+execute at @s[scores={LightX=-2147483648..}] run function luigis_mansion:other/cast_shadow/ceiling_ghost

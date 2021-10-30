@@ -67,8 +67,8 @@ execute if entity @s[scores={Dialog=1974}] if score #training_room GhostCaught m
 execute if entity @s[scores={Dialog=1974}] if score #training_room GhostCaught matches ..3 if score #players Totals matches 2.. run tellraw @a[tag=same_room] {"translate":"chat.type.text","with":[{"translate":"luigis_mansion:entity.e_gadd","color":"green"},{"translate":"luigis_mansion:dialog.training_room.18.bad.more"}]}
 execute if entity @s[scores={Dialog=1974}] if score #training_room GhostCaught matches ..3 as @a[tag=same_room] at @s run playsound luigis_mansion:entity.e_gadd.talk.ooh_ooh_yahboh_yahboh_hoo_hoo_hoo neutral @s ~ ~ ~ 1
 execute if entity @s[scores={Dialog=1974}] if score #training_room GhostCaught matches 4.. run tellraw @a[tag=same_room] {"translate":"chat.type.text","with":[{"translate":"luigis_mansion:entity.e_gadd","color":"green"},{"translate":"luigis_mansion:dialog.training_room.18.good"}]}
-execute if entity @s[scores={Dialog=1974}] if score #training_room GhostCaught matches 4.. run scoreboard players add @s Dialog 32
 execute if entity @s[scores={Dialog=1974}] if score #training_room GhostCaught matches 4.. as @a[tag=same_room] at @s run playsound luigis_mansion:entity.e_gadd.talk.yahboh_yahboh_hoo_hoo_hoo neutral @s ~ ~ ~ 1
+execute if entity @s[scores={Dialog=1974}] if score #training_room GhostCaught matches 4.. run scoreboard players add @s Dialog 32
 execute if entity @s[scores={Dialog=2094}] run tellraw @a[tag=same_room] {"translate":"chat.type.text","with":[{"translate":"luigis_mansion:entity.e_gadd","color":"green"},{"translate":"luigis_mansion:dialog.training_room.19"}]}
 execute if entity @s[scores={Dialog=2094}] as @a[tag=same_room] at @s run playsound luigis_mansion:entity.e_gadd.talk.tatta_tatta neutral @s ~ ~ ~ 1
 execute if entity @s[scores={Dialog=2126}] run function luigis_mansion:room/training_room/spawn_5_ghosts

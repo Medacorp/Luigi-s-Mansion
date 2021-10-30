@@ -2,19 +2,23 @@ summon minecraft:marker ~ ~ ~ {Tags:["interact","vacuum","poltergust"]}
 scoreboard players operation #temp Room = @s Room
 scoreboard players operation #temp ID = @s ID
 tag @s add me
-tag @s add vacuuming
 execute as @e[tag=ghost,tag=same_room,scores={VulnerableTime=1..}] run function luigis_mansion:items/poltergust_3000/attacking_ghost
 execute if score #temp GhostCount > @s GhostCount run scoreboard players operation @s GhostCount = #temp GhostCount
 execute if score #temp GhostCount matches 1.. as @e[tag=ghost,tag=being_vacuumed] run function luigis_mansion:items/poltergust_3000/catch_ghost
 execute if score #temp GhostCount matches 1.. as @e[tag=ghost,tag=being_vacuumed] facing entity @s feet run function luigis_mansion:items/poltergust_3000/vacuuming/ghost
 execute unless score #temp GhostCount matches 1.. unless entity @e[tag=ball,distance=..2.5,tag=can_spit,limit=1] run function luigis_mansion:items/poltergust_3000/vacuuming/default
-execute unless score #temp GhostCount matches 1.. run tag @e[tag=ball,distance=..2.5,tag=can_spit,sort=nearest,limit=1] add in_vacuum
+execute unless score #temp GhostCount matches 1.. if entity @e[tag=ball,distance=..2.5,tag=can_spit,sort=nearest,limit=1] run function luigis_mansion:items/poltergust_3000/vacuuming/get_clogged
 execute if score #temp GhostCount matches 1.. run tag @s add vacuuming_ghost
 execute if entity @s[tag=catch_portrait_ghost] as @a[tag=same_room,scores={Room=1..}] unless entity @s[scores={MusicGroup=0,MusicType=19}] unless entity @s[scores={MusicGroup=0,MusicType=27}] unless entity @s[scores={MusicGroup=0,MusicType=29..30}] unless entity @s[scores={MusicGroup=0,MusicType=37}] run function luigis_mansion:other/music/set/catching_portrait_ghost
 execute if entity @s[tag=!catch_portrait_ghost,tag=catch_ghost] as @a[tag=same_room,scores={Room=1..}] unless entity @s[scores={MusicGroup=0,MusicType=19}] unless entity @s[scores={MusicGroup=0,MusicType=27..30}] unless entity @s[scores={MusicGroup=0,MusicType=37}] run function luigis_mansion:other/music/set/catching_ghost
 scoreboard players reset #temp GhostCount
 scoreboard players reset #temp Room
 scoreboard players reset #temp ID
+tag @s add vacuuming
+tag @s remove expelling_dust
+tag @s remove expelling_fire
+tag @s remove expelling_water
+tag @s remove expelling_ice
 execute if entity @s[scores={DamagePitch=1,DamagePitchTimer=6}] run playsound luigis_mansion:entity.ghost.lose_health hostile @a ~ ~ ~ 1 1
 execute if entity @s[scores={DamagePitch=2,DamagePitchTimer=6}] run playsound luigis_mansion:entity.ghost.lose_health hostile @a ~ ~ ~ 1 1.2
 execute if entity @s[scores={DamagePitch=3,DamagePitchTimer=6}] run playsound luigis_mansion:entity.ghost.lose_health hostile @a ~ ~ ~ 1 1.4

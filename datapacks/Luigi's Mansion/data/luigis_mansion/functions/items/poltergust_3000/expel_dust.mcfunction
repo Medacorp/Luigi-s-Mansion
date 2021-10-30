@@ -101,3 +101,8 @@ execute positioned ^ ^0.9 ^4 facing entity @s feet rotated ~-180 ~ run function 
 execute positioned ^ ^-0.9 ^4 facing entity @s feet rotated ~-180 ~ run function luigis_mansion:items/poltergust_3000/dust
 execute positioned ^0.9 ^ ^4 facing entity @s feet rotated ~-180 ~ run function luigis_mansion:items/poltergust_3000/dust
 execute positioned ^-0.9 ^ ^4 facing entity @s feet rotated ~-180 ~ run function luigis_mansion:items/poltergust_3000/dust
+
+execute if entity @s[tag=!expelling_dust] run playsound luigis_mansion:item.poltergust_3000.expelling.dust_start player @a[tag=same_room] ~ ~ ~ 1
+scoreboard players set @s[tag=!expelling_dust] Sound 10
+execute if entity @s[tag=expelling_dust,scores={Sound=0}] run playsound luigis_mansion:item.poltergust_3000.expelling.dust player @a[tag=same_room] ~ ~ ~ 1
+scoreboard players set @s[tag=expelling_dust,scores={Sound=0}] Sound 20

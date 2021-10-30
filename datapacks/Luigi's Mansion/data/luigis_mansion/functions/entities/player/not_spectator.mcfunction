@@ -58,7 +58,8 @@ execute if entity @s[scores={Sneak=1..},tag=!looking_at_map] run particle minecr
 
 execute unless entity @s[scores={Room=-3}] if score #loaded_exterior Selected matches -1 unless score #mansion_type Selected matches -1 run function luigis_mansion:room/ghost_portrificationizer_room/warp_to
 
-execute at @s[scores={LightX=-2147483648..},nbt=!{ActiveEffects:[{Id:14b}]}] run function luigis_mansion:other/cast_shadow/2_tall
+execute at @s[scores={LightX=-2147483648..}] unless entity @s[scores={Shrunk=1..}] run function luigis_mansion:other/cast_shadow/2_tall
+execute at @s[scores={LightX=-2147483648..,Shrunk=1..}] run function luigis_mansion:other/cast_shadow/1_tall
 tag @s[tag=!death_animation,tag=!revive_animation] remove spectator
 
 effect give @s minecraft:invisibility 1000000 0 true

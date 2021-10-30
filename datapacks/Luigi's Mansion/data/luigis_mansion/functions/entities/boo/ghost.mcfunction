@@ -11,8 +11,8 @@ execute if entity @s[tag=!boo_hurt,tag=fleeing,tag=!dying] run function luigis_m
 execute if entity @s[tag=boo_hurt,tag=!dying] run function luigis_mansion:entities/boo/hurt
 execute if entity @s[tag=fleeing,tag=!dying] run function luigis_mansion:entities/boo/flee
 
-execute unless score @s[scores={Dialog=2..}] run scoreboard players set @s[tag=frozen] AnimationProg 0
-execute unless score @s[scores={Dialog=2..}] run scoreboard players set @s[tag=frozen] Dialog 40
+execute unless entity @s[scores={Dialog=2..}] run scoreboard players set @s[tag=frozen] AnimationProg 0
+execute unless entity @s[scores={Dialog=2..}] run scoreboard players set @s[tag=frozen] Dialog 40
 scoreboard players remove @s[scores={Dialog=1..}] Dialog 1
 tag @s[scores={Dialog=0}] remove frozen
 execute at @s[tag=frozen] run particle minecraft:firework ~ ~1 ~ 0.2 0.2 0.2 0 1
