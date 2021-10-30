@@ -25,7 +25,7 @@ scoreboard players set @s[scores={Dialog=42,PathStep=9..100}] PathStep 1
 scoreboard players set @s[scores={Dialog=80}] VulnerableTime 60
 scoreboard players set @s[scores={Dialog=82}] AnimationProg 0
 scoreboard players set @s[scores={Dialog=142}] Dialog 41
-execute if entity @s[scores={Dialog=40..,Sound=0}] run playsound luigis_mansion:entity.slim_bankshot.complain hostile @a[tag=same_room] ~ ~ ~ 1
+execute if entity @s[scores={Dialog=40..,Sound=0}] run playsound luigis_mansion:entity.slim_bankshot.complain2 hostile @a[tag=same_room] ~ ~ ~ 1
 execute if entity @s[scores={Dialog=40..,Sound=0}] run scoreboard players set @s Sound 10
 
 execute if entity @s[scores={Dialog=2..20}] run function luigis_mansion:animations/slim_bankshot/hit
