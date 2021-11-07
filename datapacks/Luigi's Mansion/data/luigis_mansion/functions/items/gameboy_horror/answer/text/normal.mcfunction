@@ -19,7 +19,6 @@ execute if entity @s[scores={GBHCall=11}] run tellraw @a {"translate":"chat.type
 execute if entity @s[scores={GBHCall=12}] if score #players Totals matches 1 run tellraw @a {"translate":"chat.type.text","with":[{"translate":"luigis_mansion:item.gameboy_horror","color":"green"},{"translate":"luigis_mansion:message.gameboy_horror.12"}]}
 execute if entity @s[scores={GBHCall=12}] if score #players Totals matches 2.. run tellraw @a {"translate":"chat.type.text","with":[{"translate":"luigis_mansion:item.gameboy_horror","color":"green"},{"translate":"luigis_mansion:message.gameboy_horror.12.more"}]}
 
-execute if entity @s[scores={GBHCall=1}] run data modify storage luigis_mansion:data current_state.current_data.technical_data merge value {portrait_ghosts:1b}
 execute if entity @s[scores={GBHCall=4}] run data modify storage luigis_mansion:data current_state.current_data.technical_data merge value {released_boos_call:1b}
 scoreboard players set @s[scores={MusicType=19}] GBHDialog 0
 execute if entity @s[tag=hang_up] as @a run function luigis_mansion:other/music/set/silence

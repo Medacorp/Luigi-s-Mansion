@@ -1,7 +1,8 @@
-summon minecraft:armor_stand ~ ~ ~ {NoGravity:1b,Invisible:1b,CustomName:'{"translate":"entity.minecraft.player"}',Tags:["gameboy_horror_marker","new","found_owner","found_owner_2"],CustomNameVisible:1b,ArmorItems:[{},{},{},{id:"minecraft:leather_chestplate",Count:1b,tag:{Unbreakable:1b,Damage:1,CustomModelData:19,display:{color:37129}}}],DisabledSlots:2039583}
+summon minecraft:armor_stand ~ ~ ~ {NoGravity:1b,Invisible:1b,CustomName:'{"translate":"entity.minecraft.player"}',Tags:["gameboy_horror_marker","new"],CustomNameVisible:1b,ArmorItems:[{},{},{},{id:"minecraft:leather_chestplate",Count:1b,tag:{Unbreakable:1b,Damage:1,CustomModelData:19,display:{color:37129}}}],DisabledSlots:2039583}
 teleport @e[tag=gameboy_horror_marker,tag=new,limit=1] ~ ~ ~ ~ ~
 scoreboard players operation #temp ID = @s ID
 execute as @e[tag=gameboy_horror_marker,tag=!new] if score @s ID = #temp ID run kill @e[tag=gameboy_horror_marker,tag=new,limit=1]
+scoreboard players operation @e[tag=gameboy_horror_marker,tag=new,limit=1] Room = @s Room
 scoreboard players operation @e[tag=gameboy_horror_marker,tag=new,limit=1] ID = #temp ID
 execute as @e[tag=head,tag=model_piece] if score #temp ID = @s ID run data modify entity @e[tag=gameboy_horror_marker,tag=new,limit=1] ArmorItems[3] set from entity @s ArmorItems[3]
 scoreboard players reset #temp ID
