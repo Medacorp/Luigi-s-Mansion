@@ -14,7 +14,7 @@ execute if entity @a[distance=..1.5] if block ~ ~ ~ #luigis_mansion:all_ignore r
 tag @s[tag=try_spawn] add spawn_now
 tag @s[tag=spawn] add spawn_now
 tag @s[tag=spawn] remove spawn
-tag @s[tag=spawn_now,scores={Room=-2147483648..}] add spawn
+tag @s[tag=spawn_now] add spawn
 execute if entity @s[tag=!spawn,tag=!no_height_change] unless block ~ ~ ~ #luigis_mansion:all_ignore run tag @s add forced_collision
 execute if entity @s[tag=!spawn,tag=!no_height_change] if block ~ ~ ~ #minecraft:slabs run tag @s add forced_collision
 execute if entity @s[tag=!spawn,tag=!no_height_change] if block ~ ~ ~ #minecraft:stairs run tag @s add forced_collision

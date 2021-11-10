@@ -8,8 +8,8 @@ tag @s remove fleeing
 
 execute store result score #temp Room run scoreboard players get @s Room
 execute as @e[tag=green_flying_fish,tag=visible] if score @s Room = #temp Room run scoreboard players add #temp ActionTime 1
-execute unless score #temp ActionTime matches 3.. unless entity @e[tag=green_flying_fish,tag=visible,distance=..0.7] if entity @s[tag=!visible,scores={Room=-2147483648..}] run playsound luigis_mansion:entity.green_flying_fish.spawn hostile @a[tag=same_room] ~ ~ ~ 1
-execute unless score #temp ActionTime matches 3.. unless entity @e[tag=green_flying_fish,tag=visible,distance=..0.7] run tag @s[scores={Room=-2147483648..}] add visible
+execute unless score #temp ActionTime matches 3.. unless entity @e[distance=..0.7,tag=!spectator,limit=1] unless entity @e[tag=green_flying_fish,tag=visible,distance=..0.7] if entity @s[tag=!visible] run playsound luigis_mansion:entity.green_flying_fish.spawn hostile @a[tag=same_room] ~ ~ ~ 1
+execute unless score #temp ActionTime matches 3.. unless entity @e[distance=..0.7,tag=!spectator,limit=1] unless entity @e[tag=green_flying_fish,tag=visible,distance=..0.7] run tag @s add visible
 scoreboard players reset #temp ActionTime
 scoreboard players reset #temp Room
 
