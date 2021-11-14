@@ -16,7 +16,7 @@ execute at @s[scores={Move=10}] run summon minecraft:creeper ~ ~ ~ {CustomName:'
 execute at @s[scores={Move=10}] run playsound minecraft:entity.generic.explode hostile @s ~ ~ ~ 2
 execute at @s[scores={Move=10}] run data remove entity @s ArmorItems
 # distance=..4 -> 2 x ExplosionRadius
-execute if entity @s[scores={Move=10..30,Owner=-2147483648..}] if entity @a[distance=..4,gamemode=!spectator,limit=1] run tag @s add make_laugh
+execute if entity @s[scores={Move=10..30,Owner=-2147483648..}] if entity @a[distance=..4,tag=!spectator,limit=1] run tag @s add make_laugh
 execute if entity @s[scores={Move=30,Owner=-2147483648..}] run scoreboard players operation #temp GhostNr = @s Owner
 execute if entity @s[scores={Move=30,Owner=-2147483648..}] as @e[tag=!model_piece,tag=ghost] if score @s GhostNr = #temp GhostNr run scoreboard players set @s AnimationProg 0
 execute if entity @s[scores={Move=30,Owner=-2147483648..},tag=make_laugh] as @e[tag=!model_piece,tag=ghost] if score @s GhostNr = #temp GhostNr run tag @s add laugh

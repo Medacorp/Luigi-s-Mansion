@@ -10,7 +10,7 @@ execute if entity @s[scores={ActionTime=1}] if entity @s[tag=laundry_room] run f
 
 execute if entity @s[scores={ActionTime=1}] run tag @e[tag=same_room,tag=!spectator,sort=nearest,limit=1] add door_target
 execute if entity @s[scores={ActionTime=1}] as @e[tag=gameboy_horror_location,tag=door_target,limit=1] run function luigis_mansion:entities/gameboy_horror_location/bring_player_back
-execute if entity @s[scores={ActionTime=1}] run tag @p[gamemode=!spectator] add door_target
+execute if entity @s[scores={ActionTime=1}] run tag @p[tag=!spectator] add door_target
 execute if entity @s[scores={ActionTime=1},tag=north] run teleport @p[tag=door_target] ~1 ~ ~0.5
 execute if entity @s[scores={ActionTime=1},tag=south] run teleport @p[tag=door_target] ~1 ~ ~-0.5
 execute if entity @s[scores={ActionTime=1},tag=west] if score #mirrored Selected matches 0 run teleport @p[tag=door_target] ~0.5 ~ ~-1

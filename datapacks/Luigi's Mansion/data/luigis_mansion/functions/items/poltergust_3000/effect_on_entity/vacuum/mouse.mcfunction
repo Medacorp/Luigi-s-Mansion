@@ -1,1 +1,1 @@
-execute positioned ~ ~-1.3 ~ positioned as @s[distance=..1,tag=mouse,tag=vacuumable] run function luigis_mansion:items/poltergust_3000/effect_on_entity/vacuum/effect/mouse
+execute positioned ~ ~-1.3 ~ positioned as @s[distance=..1,tag=mouse,tag=vacuumable,tag=visible] run function luigis_mansion:items/poltergust_3000/effect_on_entity/vacuum/effect/mouse

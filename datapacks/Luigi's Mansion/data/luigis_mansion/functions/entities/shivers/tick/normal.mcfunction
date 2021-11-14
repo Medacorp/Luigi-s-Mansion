@@ -59,10 +59,10 @@ tag @s[scores={PathStep=233}] add vanish
 tag @s[scores={PathStep=233}] remove burning
 scoreboard players set @s[scores={PathStep=233}] PathStep 1
 
-execute if entity @s[scores={PathStep=43..53,Sound=0}] run playsound luigis_mansion:entity.shivers.panic hostile @a[tag=same_room] ~ ~ ~ 1
-scoreboard players set @s[scores={PathStep=43..53,Sound=0}] Sound 40
-execute if entity @s[scores={PathStep=93..172,Sound=0}] run playsound luigis_mansion:entity.shivers.ambient hostile @a[tag=same_room] ~ ~ ~ 1
-scoreboard players set @s[scores={PathStep=93..172,Sound=0}] Sound 10
+execute if entity @s[scores={PathStep=43..53,Sound=0},tag=panic,tag=!vanish] run playsound luigis_mansion:entity.shivers.panic hostile @a[tag=same_room] ~ ~ ~ 1
+scoreboard players set @s[scores={PathStep=43..53,Sound=0},tag=panic,tag=!vanish] Sound 40
+execute if entity @s[scores={PathStep=93..172,Sound=0},tag=burn,tag=!vanish] run playsound luigis_mansion:entity.shivers.ambient hostile @a[tag=same_room] ~ ~ ~ 1
+scoreboard players set @s[scores={PathStep=93..172,Sound=0},tag=burn,tag=!vanish] Sound 10
 
 execute at @s[tag=look_around] run function luigis_mansion:animations/shivers/look_around
 execute at @s[tag=panic] run function luigis_mansion:animations/shivers/panic

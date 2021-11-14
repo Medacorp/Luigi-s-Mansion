@@ -1,7 +1,7 @@
 scoreboard players add @s[scores={ActionTime=1..60}] ActionTime 1
 execute unless entity @s[scores={ActionTime=1..}] run scoreboard players set @s ActionTime 1
 scoreboard players set @s[scores={ActionTime=1}] AnimationProg 0
-execute if entity @s[scores={ActionTime=1..40}] facing entity @p[tag=same_room,gamemode=!spectator] feet rotated ~ 0 run teleport @s ~ ~ ~ ~ ~
+execute if entity @s[scores={ActionTime=1..40}] facing entity @p[tag=same_room,tag=!spectator] feet rotated ~ 0 run teleport @s ~ ~ ~ ~ ~
 execute at @s[scores={ActionTime=1..60}] run function luigis_mansion:animations/mr_bones/attack
 execute at @s[scores={ActionTime=1}] run playsound luigis_mansion:entity.mr_bones.assemble hostile @a[tag=same_room] ~ ~ ~ 1
 execute if entity @s[scores={ActionTime=1}] if score #mirrored Selected matches 0 run data merge entity @s {HandItems:[{id:"minecraft:diamond_pickaxe",Count:1b,tag:{Unbreakable:1b,Damage:2,CustomModelData:98}},{id:"minecraft:diamond_pickaxe",Count:1b,tag:{Unbreakable:1b,Damage:3,CustomModelData:96}}]}

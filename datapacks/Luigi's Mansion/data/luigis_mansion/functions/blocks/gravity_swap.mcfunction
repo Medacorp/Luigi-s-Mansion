@@ -3,8 +3,8 @@ execute if block ~ ~2 ~ minecraft:pumpkin run tag @s add remove_flipped_gravity
 
 effect give @s[tag=flipped_gravity,tag=!looking_at_map] minecraft:levitation 1000000 9 true
 effect give @s[tag=remove_flipped_gravity] minecraft:resistance 1 9 true
-effect give @s[tag=flipped_gravity,tag=looking_at_map] minecraft:resistance 1 9 true
 effect clear @s[tag=remove_flipped_gravity] minecraft:levitation
+effect give @s[tag=flipped_gravity,tag=looking_at_map] minecraft:resistance 1 9 true
 effect clear @s[tag=flipped_gravity,tag=looking_at_map] minecraft:levitation
 tag @s[tag=remove_flipped_gravity] remove flipped_gravity
 tag @s[tag=remove_flipped_gravity] remove remove_flipped_gravity

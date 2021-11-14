@@ -1,5 +1,5 @@
 execute if entity @s[scores={ClairvoyaSpoke=5,VulnerableTime=0}] run function luigis_mansion:entities/madame_clairvoya/tick/hidden/laugh
-execute if entity @s[scores={VulnerableTime=1..}] as @a[tag=same_room,gamemode=!spectator] unless entity @s[scores={MusicGroup=0,MusicType=36}] run function luigis_mansion:other/music/set/danger
+execute if entity @s[scores={VulnerableTime=1..}] as @a[tag=same_room,tag=!spectator] unless entity @s[scores={MusicGroup=0,MusicType=36}] run function luigis_mansion:other/music/set/danger
 
 execute if entity @s[tag=talk,scores={Dialog=0}] run function luigis_mansion:entities/madame_clairvoya/tick/hidden/select_dialog
 execute if entity @s[tag=talk,tag=normal] run function luigis_mansion:dialog/madame_clairvoya/hidden

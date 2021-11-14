@@ -18,12 +18,12 @@ tag @s[tag=move,scores={SpawnTime=8}] add dead
 execute at @s if entity @e[tag=same_room,tag=!spectator,distance=..0.7,limit=1] if entity @s[tag=vacuumable,tag=!in_vacuum,tag=!can_spit_2,tag=!spit,tag=!dying,tag=!dead,tag=!removed_from_existence] run function luigis_mansion:entities/billiards_ball/collide
 
 execute at @s[tag=collision] run function luigis_mansion:entities/billiards_ball/back_to_start
-execute at @s[tag=in_vacuum] unless entity @a[distance=..1.5,gamemode=!spectator,tag=vacuuming] facing entity @p[gamemode=!spectator,tag=vacuuming] feet if block ^ ^ ^0.3 #luigis_mansion:all_ignore run teleport @s ^ ^ ^0.3 ~ ~
-execute at @s[tag=in_vacuum] unless entity @a[distance=..1.5,gamemode=!spectator,tag=vacuuming] facing entity @p[gamemode=!spectator,tag=vacuuming] feet unless block ^ ^ ^0.3 #luigis_mansion:all_ignore rotated ~ 0 if block ^ ^ ^0.3 #luigis_mansion:all_ignore run teleport @s ^ ^ ^0.3 ~ ~
-execute at @s[tag=in_vacuum] unless entity @a[distance=..1.5,gamemode=!spectator,tag=vacuuming] facing entity @p[gamemode=!spectator,tag=vacuuming] feet unless block ^ ^ ^0.3 #luigis_mansion:all_ignore rotated ~ 0 unless block ^ ^ ^0.3 #luigis_mansion:all_ignore run teleport @s ~ ~ ~ ~ ~
-execute at @s[tag=in_vacuum] at @p[distance=..1.5,gamemode=!spectator,tag=vacuuming] positioned ~ ~0.5 ~ run teleport @s ^ ^ ^0.2 ~ ~
-execute at @s if entity @p[distance=..1.5,gamemode=!spectator,tag=vacuuming] run tag @s[tag=in_vacuum] add can_spit
-execute at @s if entity @p[distance=..1.5,gamemode=!spectator,tag=vacuuming] run tag @s[tag=in_vacuum] add can_spit_2
+execute at @s[tag=in_vacuum] unless entity @a[distance=..1.5,tag=!spectator,tag=vacuuming] facing entity @p[tag=!spectator,tag=vacuuming] feet if block ^ ^ ^0.3 #luigis_mansion:all_ignore run teleport @s ^ ^ ^0.3 ~ ~
+execute at @s[tag=in_vacuum] unless entity @a[distance=..1.5,tag=!spectator,tag=vacuuming] facing entity @p[tag=!spectator,tag=vacuuming] feet unless block ^ ^ ^0.3 #luigis_mansion:all_ignore rotated ~ 0 if block ^ ^ ^0.3 #luigis_mansion:all_ignore run teleport @s ^ ^ ^0.3 ~ ~
+execute at @s[tag=in_vacuum] unless entity @a[distance=..1.5,tag=!spectator,tag=vacuuming] facing entity @p[tag=!spectator,tag=vacuuming] feet unless block ^ ^ ^0.3 #luigis_mansion:all_ignore rotated ~ 0 unless block ^ ^ ^0.3 #luigis_mansion:all_ignore run teleport @s ~ ~ ~ ~ ~
+execute at @s[tag=in_vacuum] at @p[distance=..1.5,tag=!spectator,tag=vacuuming] positioned ~ ~0.5 ~ run teleport @s ^ ^ ^0.2 ~ ~
+execute at @s if entity @p[distance=..1.5,tag=!spectator,tag=vacuuming] run tag @s[tag=in_vacuum] add can_spit
+execute at @s if entity @p[distance=..1.5,tag=!spectator,tag=vacuuming] run tag @s[tag=in_vacuum] add can_spit_2
 tag @s[tag=!can_spit] remove can_spit_2
 tag @s[tag=!in_vacuum,tag=can_spit_2] add spit
 tag @s[tag=!in_vacuum] remove can_spit

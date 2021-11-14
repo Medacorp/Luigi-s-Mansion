@@ -1,6 +1,6 @@
 execute if entity @s[tag=visible,tag=!talk] run function luigis_mansion:entities/melody_pianissima/turn_invisible
 execute if entity @s[tag=talk,tag=!vanish] run function luigis_mansion:entities/melody_pianissima/tick/hidden/play
-execute if entity @s[tag=!talk,tag=!vanish] if entity @a[gamemode=!spectator,distance=..5] run function luigis_mansion:entities/melody_pianissima/tick/hidden/play
+execute if entity @s[tag=!talk,tag=!vanish] if entity @a[tag=!spectator,distance=..5] run function luigis_mansion:entities/melody_pianissima/tick/hidden/play
 
 execute at @s[tag=nod] run function luigis_mansion:animations/melody_pianissima/nod
 execute at @s[tag=listen] run function luigis_mansion:animations/melody_pianissima/listen

@@ -10,11 +10,11 @@ data modify entity @s[tag=basher,tag=element_hurt] HandItems[0].id set value "mi
 data modify entity @s[tag=basher,tag=element_hurt] HandItems[1].id set value "minecraft:leather_chestplate"
 data modify entity @s[tag=basher,tag=element_hurt] CustomNameVisible set value 1b
 
-execute if entity @s[scores={HurtTime=1},tag=hurt,tag=!fleeing] run playsound luigis_mansion:entity.temper_terror.hurt hostile @a[tag=same_room] ~ ~ ~ 1
-scoreboard players set @s[scores={HurtTime=1},tag=hurt,tag=!fleeing] Sound 40
+execute if entity @s[scores={HurtTime=1},tag=hurt,tag=!fleeing,tag=!dying] run playsound luigis_mansion:entity.temper_terror.hurt hostile @a[tag=same_room] ~ ~ ~ 1
+scoreboard players set @s[scores={HurtTime=1},tag=hurt,tag=!fleeing,tag=!dying] Sound 40
 execute if entity @s[scores={ElementHurtTime=0},tag=element_hurt] run playsound luigis_mansion:entity.temper_terror.element_hurt hostile @a[tag=same_room] ~ ~ ~ 1
 scoreboard players set @s[scores={ElementHurtTime=0},tag=element_hurt] Sound 30
-execute if entity @s[scores={Sound=0},tag=fleeing] run playsound luigis_mansion:entity.temper_terror.flee hostile @a[tag=same_room] ~ ~ ~ 1
+execute if entity @s[scores={Sound=0},tag=fleeing,tag=!dying] run playsound luigis_mansion:entity.temper_terror.flee hostile @a[tag=same_room] ~ ~ ~ 1
 execute if entity @s[scores={Sound=0},tag=!vanish,tag=!fleeing,tag=!attack,tag=!smug,tag=!laugh,tag=!complain,tag=!appear,tag=!basher] run playsound luigis_mansion:entity.temper_terror.ambient hostile @a[tag=same_room] ~ ~ ~ 1
 scoreboard players set @s[scores={Sound=0}] Sound 40
 

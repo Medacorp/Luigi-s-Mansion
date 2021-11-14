@@ -4,7 +4,7 @@ execute unless entity @s[scores={Dialog=1..}] at @e[tag=same_room,tag=!spectator
 execute unless entity @s[scores={Dialog=2..}] if entity @s[tag=visible] run item replace entity @e[tag=this_food,limit=1] armor.head with minecraft:diamond_pickaxe{Unbreakable:1b,Damage:4,CustomModelData:11}
 execute if entity @s[tag=!visible] run item replace entity @e[tag=this_food,limit=1] armor.head with minecraft:air
 execute unless entity @s[scores={Dialog=1..}] if block ^3 ^1.9 ^2 minecraft:slime_block if block ^-3 ^1.9 ^2 minecraft:slime_block run playsound luigis_mansion:music.solve_puzzle music @a[tag=same_room] ~ ~ ~ 10000
-execute unless entity @s[scores={Dialog=1..}] if block ^3 ^1.9 ^2 minecraft:slime_block if block ^-3 ^1.9 ^2 minecraft:slime_block run scoreboard players set @a[tag=same_room,gamemode=!spectator,scores={Music=..29}] Music 30
+execute unless entity @s[scores={Dialog=1..}] if block ^3 ^1.9 ^2 minecraft:slime_block if block ^-3 ^1.9 ^2 minecraft:slime_block run scoreboard players set @a[tag=same_room,tag=!spectator,scores={Music=..29}] Music 30
 execute unless entity @s[scores={Dialog=1..}] if block ^3 ^1.9 ^2 minecraft:slime_block if block ^-3 ^1.9 ^2 minecraft:slime_block run scoreboard players set @s Dialog 1
 execute if entity @s[scores={Dialog=1..20}] run teleport @e[tag=this_food,limit=1] ^ ^0.9 ^2
 execute if entity @s[scores={Dialog=21..50}] run teleport @e[tag=this_food,limit=1] ^ ^0.7 ^2
@@ -47,7 +47,7 @@ tag @s[scores={Dialog=101}] add complain
 execute if entity @s[scores={Dialog=101}] run playsound luigis_mansion:entity.mr_luggs.complain hostile @a[tag=same_room] ~ ~ ~ 1
 tag @s[scores={Dialog=141}] remove complain
 tag @s[scores={Dialog=141}] add rage
-execute if entity @s[scores={Dialog=141..}] as @a[tag=same_room,gamemode=!spectator] unless entity @s[scores={MusicGroup=0,MusicType=28}] unless entity @s[scores={MusicGroup=0,MusicType=36}] run function luigis_mansion:other/music/set/danger
+execute if entity @s[scores={Dialog=141..}] as @a[tag=same_room,tag=!spectator] unless entity @s[scores={MusicGroup=0,MusicType=28}] unless entity @s[scores={MusicGroup=0,MusicType=36}] run function luigis_mansion:other/music/set/danger
 execute if entity @s[scores={Dialog=141..781}] positioned ~ ~1 ~ facing entity @e[tag=same_room,tag=!spectator,sort=nearest,limit=1] feet positioned ~ ~-1 ~ run teleport @s ~ ~ ~ ~ ~
 tag @s[scores={Dialog=201}] remove rage
 tag @s[scores={Dialog=201}] add spit

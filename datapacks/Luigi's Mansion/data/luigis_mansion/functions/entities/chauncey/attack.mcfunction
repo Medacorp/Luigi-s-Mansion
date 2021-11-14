@@ -9,9 +9,9 @@ execute if entity @s[scores={ActionTime=11}] run playsound luigis_mansion:entity
 execute if entity @s[scores={ActionTime=11}] run playsound luigis_mansion:entity.chauncey.attack hostile @a[tag=same_room] ~ ~ ~ 1
 teleport @s[scores={ActionTime=11..30}] ~ ~ ~ ~-18 ~
 execute at @s[scores={ActionTime=11},tag=!fight] positioned ~ ~1 ~ as @e[distance=..0.7,tag=gameboy_horror_location] run function luigis_mansion:entities/gameboy_horror_location/bring_player_back
-execute at @s[scores={ActionTime=11},tag=!fight] positioned ~ ~1 ~ run effect give @a[distance=..1,gamemode=!spectator] minecraft:instant_damage 1 0 true
-execute at @s[scores={ActionTime=11},tag=!fight] positioned ~ ~1 ~ run scoreboard players set @a[distance=..1,gamemode=!spectator] ForcedDamage 4
-execute at @s[scores={ActionTime=11},tag=!fight] positioned ~ ~1 ~ if entity @a[distance=..1,gamemode=!spectator] run tag @s add laugh
+execute at @s[scores={ActionTime=11},tag=!fight] positioned ~ ~1 ~ run effect give @a[distance=..1,tag=!spectator] minecraft:instant_damage 1 0 true
+execute at @s[scores={ActionTime=11},tag=!fight] positioned ~ ~1 ~ run scoreboard players set @a[distance=..1,tag=!spectator] ForcedDamage 4
+execute at @s[scores={ActionTime=11},tag=!fight] positioned ~ ~1 ~ if entity @a[distance=..1,tag=!spectator] run tag @s add laugh
 tag @s[scores={ActionTime=11},tag=!fight,tag=!laugh] add complain
 execute at @s run function luigis_mansion:animations/chauncey/attack
 tag @s[scores={ActionTime=30}] remove attack

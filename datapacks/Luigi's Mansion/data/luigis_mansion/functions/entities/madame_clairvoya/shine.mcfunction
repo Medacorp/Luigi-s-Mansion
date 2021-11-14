@@ -1,4 +1,4 @@
-execute at @a[tag=flashlight,tag=same_room,gamemode=!spectator] positioned ^ ^ ^3 run summon minecraft:marker ~ ~ ~ {Tags:["flashlight_target"]}
+execute at @a[tag=flashlight,tag=same_room,tag=!spectator] positioned ^ ^ ^3 run summon minecraft:marker ~ ~ ~ {Tags:["flashlight_target"]}
 scoreboard players add @s[scores={PathStep=40..}] PathStep 1
 execute unless entity @s[scores={PathStep=0..}] run scoreboard players set @s PathStep 0
 execute positioned ^ ^0.9 ^1.5 if entity @e[type=minecraft:marker,tag=flashlight_target,distance=..3,limit=1] run scoreboard players add @s[scores={PathStep=..40}] PathStep 1

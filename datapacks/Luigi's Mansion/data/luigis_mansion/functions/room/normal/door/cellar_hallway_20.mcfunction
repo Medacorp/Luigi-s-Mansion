@@ -11,10 +11,10 @@ execute if score #temp Searched matches 1 run setblock 741 2 -43 minecraft:oak_d
 execute if score #temp Searched matches 1 run setblock 741 3 -43 minecraft:oak_door[open=true,facing=south,half=upper,hinge=left,powered=false]
 execute if score #temp Searched matches 1 run setblock 726 2 -21 minecraft:oak_door[open=true,facing=north,half=lower,hinge=right,powered=false]
 execute if score #temp Searched matches 1 run setblock 726 3 -21 minecraft:oak_door[open=true,facing=north,half=upper,hinge=right,powered=false]
-execute if score #temp Searched matches 0 run playsound luigis_mansion:block.door.close block @a[scores={Room=60}] 741 2 -42.0 1 1
-execute if score #temp Searched matches 0 run playsound luigis_mansion:block.door.close block @a[scores={Room=61}] 726 2 -21.0 1 1
-execute if score #temp Searched matches 1 run playsound luigis_mansion:block.door.open block @a[scores={Room=60}] 741 2 -42.0 1 1
-execute if score #temp Searched matches 1 run playsound luigis_mansion:block.door.open block @a[scores={Room=61}] 726 2 -21.0 1 1
+execute if score #temp Searched matches 0 run playsound luigis_mansion:block.door.close block @a[scores={Room=58}] 741 2 -42.0 1 1
+execute if score #temp Searched matches 0 run playsound luigis_mansion:block.door.close block @a[scores={Room=59}] 726 2 -21.0 1 1
+execute if score #temp Searched matches 1 run playsound luigis_mansion:block.door.open block @a[scores={Room=58}] 741 2 -42.0 1 1
+execute if score #temp Searched matches 1 run playsound luigis_mansion:block.door.open block @a[scores={Room=59}] 726 2 -21.0 1 1
 execute if score #temp Searched matches -1..0 run fill 741 2 -43 741 3 -43 minecraft:air replace #minecraft:doors
 execute if score #temp Searched matches -1..0 run fill 726 2 -21 726 3 -21 minecraft:air replace #minecraft:doors
 execute if score #temp Searched matches -1..0 run setblock 741 2 -43 minecraft:oak_door[open=false,facing=south,half=lower,hinge=left,powered=false]

@@ -10,15 +10,15 @@ data modify entity @s[tag=basher,tag=element_hurt] HandItems[0].id set value "mi
 data modify entity @s[tag=basher,tag=element_hurt] HandItems[1].id set value "minecraft:leather_chestplate"
 data modify entity @s[tag=basher,tag=element_hurt] CustomNameVisible set value 1b
 
-execute if entity @s[scores={HurtTime=1},tag=hurt,tag=!fleeing] run playsound luigis_mansion:entity.blue_twirler.hurt hostile @a[tag=same_room] ~ ~ ~ 1
-scoreboard players set @s[scores={HurtTime=1},tag=hurt,tag=!fleeing] Sound 40
+execute if entity @s[scores={HurtTime=1},tag=hurt,tag=!fleeing,tag=!dying] run playsound luigis_mansion:entity.blue_twirler.hurt hostile @a[tag=same_room] ~ ~ ~ 1
+scoreboard players set @s[scores={HurtTime=1},tag=hurt,tag=!fleeing,tag=!dying] Sound 40
 execute if entity @s[scores={ElementHurtTime=0},tag=element_hurt] run playsound luigis_mansion:entity.blue_twirler.element_hurt hostile @a[tag=same_room] ~ ~ ~ 1
 scoreboard players set @s[scores={ElementHurtTime=0},tag=element_hurt] Sound 30
-execute if entity @s[scores={Sound=0},tag=fleeing] run playsound luigis_mansion:entity.blue_twirler.flee hostile @a[tag=same_room] ~ ~ ~ 1
+execute if entity @s[scores={Sound=0},tag=fleeing,tag=!dying] run playsound luigis_mansion:entity.blue_twirler.flee hostile @a[tag=same_room] ~ ~ ~ 1
 execute if entity @s[scores={Sound=0},tag=!vanish,tag=!fleeing,tag=!attack,tag=!laugh,tag=!complain,tag=!appear,tag=!basher] run playsound luigis_mansion:entity.blue_twirler.ambient hostile @a[tag=same_room] ~ ~ ~ 1
 scoreboard players set @s[scores={Sound=0}] Sound 40
 
-execute if entity @a[gamemode=!spectator,distance=..0.7,limit=1] if entity @s[tag=!vanish,tag=!appear,tag=!dying,tag=!dead,tag=!removed_from_existence,tag=!basher] unless entity @s[tag=attack,tag=body_slam] run function luigis_mansion:entities/blue_twirler/collide
+execute if entity @a[tag=!spectator,distance=..0.7,limit=1] if entity @s[tag=!vanish,tag=!appear,tag=!dying,tag=!dead,tag=!removed_from_existence,tag=!basher] unless entity @s[tag=attack,tag=body_slam] run function luigis_mansion:entities/blue_twirler/collide
 execute if entity @s[tag=!punch,tag=!body_slam,tag=!basher] run function luigis_mansion:entities/blue_twirler/select_attack/earthquake
 execute if entity @s[tag=punch] run function luigis_mansion:entities/blue_twirler/select_attack/punch
 execute if entity @s[tag=body_slam] run function luigis_mansion:entities/blue_twirler/select_attack/body_slam

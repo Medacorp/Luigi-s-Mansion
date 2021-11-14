@@ -8,12 +8,12 @@ execute if entity @s[tag=dead] run function luigis_mansion:entities/mr_bones/dro
 execute if entity @s[tag=dead] run particle minecraft:dust 0.7 1 1 1 ~-0.1 ~ ~0.1 0.2 0.6 0.2 1 30
 execute if entity @s[tag=dead] run teleport @s ~ -100 ~
 
-execute if entity @s[scores={HurtTime=1},tag=hurt,tag=!fleeing] run playsound luigis_mansion:entity.mr_bones.hurt hostile @a[tag=same_room] ~ ~ ~ 1
-scoreboard players set @s[scores={HurtTime=1},tag=hurt,tag=!fleeing] Sound 40
+execute if entity @s[scores={HurtTime=1},tag=hurt,tag=!fleeing,tag=!dying] run playsound luigis_mansion:entity.mr_bones.hurt hostile @a[tag=same_room] ~ ~ ~ 1
+scoreboard players set @s[scores={HurtTime=1},tag=hurt,tag=!fleeing,tag=!dying] Sound 40
 execute if entity @s[tag=element_hurt] run playsound luigis_mansion:entity.mr_bones.element_hurt hostile @a[tag=same_room] ~ ~ ~ 1
 scoreboard players set @s[tag=element_hurt] Sound 10
-execute if entity @s[scores={Sound=0},tag=fleeing] run playsound luigis_mansion:entity.mr_bones.flee hostile @a[tag=same_room] ~ ~ ~ 1
-scoreboard players set @s[scores={Sound=0},tag=fleeing] Sound 40
+execute if entity @s[scores={Sound=0},tag=fleeing,tag=!dying] run playsound luigis_mansion:entity.mr_bones.flee hostile @a[tag=same_room] ~ ~ ~ 1
+scoreboard players set @s[scores={Sound=0},tag=fleeing,tag=!dying] Sound 40
 
 execute unless entity @s[scores={ActionTime=-20}] run scoreboard players remove @s[tag=!hurt,tag=!element_hurt,tag=!fleeing,tag=!attack,tag=!collided,tag=!laugh,tag=!complain,tag=!vanish,tag=!appear,scores={StunTime=0}] ActionTime 1
 execute if entity @e[tag=same_room,tag=!spectator,distance=..0.7,limit=1] if entity @s[tag=!dying,tag=!dead,tag=!removed_from_existence] run function luigis_mansion:entities/mr_bones/collide

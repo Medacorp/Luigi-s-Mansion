@@ -4,6 +4,7 @@ execute if entity @s[tag=flashlight,tag=!had_flashlight_on] run playsound luigis
 clear @s[tag=!flashlight] minecraft:carved_pumpkin{luigis_mansion:{id:"luigis_mansion:flashlight_vision"}}
 execute if entity @s[tag=flashlight] positioned ~ ~1 ~ positioned ^ ^ ^0.8 if block ~ ~ ~ #luigis_mansion:flashlight_path run summon minecraft:marker ~ ~ ~ {Tags:["flashlight","new"]}
 execute if entity @s[tag=flashlight] positioned ~ ~1 ~ run teleport @e[type=minecraft:marker,tag=flashlight,tag=new,limit=1] ~ ~ ~ ~ ~
+execute if entity @s[tag=flashlight] run scoreboard players operation @e[type=minecraft:marker,tag=flashlight,tag=new,limit=1] Room = @s Room
 execute if entity @s[tag=flashlight] as @e[type=minecraft:marker,tag=flashlight,tag=new,limit=1] store result score @s HomeRotX run data get entity @s Rotation[0] 100
 execute if entity @s[tag=flashlight] as @e[type=minecraft:marker,tag=flashlight,tag=new,limit=1] store result score @s HomeRotY run data get entity @s Rotation[1] 100
 execute if entity @s[tag=flashlight] as @e[type=minecraft:marker,tag=flashlight,tag=new,limit=1] store result score @s HomeX run data get entity @s Pos[0] 100

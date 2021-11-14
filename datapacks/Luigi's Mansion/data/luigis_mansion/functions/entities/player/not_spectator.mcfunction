@@ -43,7 +43,7 @@ execute unless entity @s[scores={Invulnerable=0..}] run scoreboard players set @
 scoreboard players remove @s[scores={Invulnerable=1..}] Invulnerable 1
 execute if entity @s[scores={Health=1..}] store result score @s Damage run data get entity @s Health -1
 scoreboard players operation @s[scores={Health=1..}] Damage += #100 Constants
-execute if entity @s[scores={Damage=1..},gamemode=!spectator] run function luigis_mansion:entities/player/take_damage
+execute if entity @s[scores={Damage=1..},tag=!spectator] run function luigis_mansion:entities/player/take_damage
 effect give @s[scores={Food=3..}] minecraft:hunger 1 255 true
 effect give @s[scores={Food=..0}] minecraft:saturation 1 0 true
 execute unless entity @s[scores={MaxHealth=100}] run scoreboard players add @s MaxHealthTime 1

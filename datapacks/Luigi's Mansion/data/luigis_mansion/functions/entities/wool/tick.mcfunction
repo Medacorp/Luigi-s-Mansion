@@ -10,9 +10,9 @@ execute if entity @s[tag=!can_spit_2,tag=vacuumable] store result entity @s Pose
 tag @s[tag=collision,tag=spit] add dead
 tag @s[tag=collision] remove spit
 tag @s[tag=collision] remove collision
-execute at @s[tag=in_vacuum] at @p[distance=..1.5,gamemode=!spectator,tag=vacuuming] positioned ~ ~0.5 ~ unless block ~ ~ ~ #minecraft:doors run teleport @s ^ ^ ^0.2 ~ ~
-execute at @s if entity @p[distance=..1.5,gamemode=!spectator,tag=vacuuming] run tag @s[tag=in_vacuum] add can_spit
-execute at @s if entity @p[distance=..1.5,gamemode=!spectator,tag=vacuuming] run tag @s[tag=in_vacuum] add can_spit_2
+execute at @s[tag=in_vacuum] at @p[distance=..1.5,tag=!spectator,tag=vacuuming] positioned ~ ~0.5 ~ unless block ~ ~ ~ #minecraft:doors run teleport @s ^ ^ ^0.2 ~ ~
+execute at @s if entity @p[distance=..1.5,tag=!spectator,tag=vacuuming] run tag @s[tag=in_vacuum] add can_spit
+execute at @s if entity @p[distance=..1.5,tag=!spectator,tag=vacuuming] run tag @s[tag=in_vacuum] add can_spit_2
 tag @s[tag=!can_spit] remove can_spit_2
 tag @s[tag=!in_vacuum,tag=can_spit_2] add spit
 tag @s[tag=!in_vacuum] remove can_spit

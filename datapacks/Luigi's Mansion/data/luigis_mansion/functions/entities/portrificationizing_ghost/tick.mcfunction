@@ -1,5 +1,5 @@
 teleport @s ~ ~0.4 ~
-execute unless entity @a[gamemode=!spectator] run tag @s add dead
+execute unless entity @a[tag=!spectator] run tag @s add dead
 scoreboard players add @s[scores={Dialog=301..}] Dialog 1
 execute unless entity @e[tag=portrificationizing_ghost,scores={Dialog=301..380},limit=1] run scoreboard players add @s[scores={Dialog=300}] Dialog 1
 scoreboard players add @s[scores={Dialog=..299}] Dialog 1

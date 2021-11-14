@@ -4,7 +4,7 @@ tag @s remove flipped_gravity
 tag @s remove poltergust_malfunction
 
 scoreboard players operation #temp Room = @s LastRoom
-execute as @a[gamemode=!spectator] if score @s Room = #temp Room run scoreboard players reset @a[distance=..0.1,limit=1] LastRoom
+execute as @a[tag=!spectator] if score @s Room = #temp Room run scoreboard players reset @a[distance=..0.1,limit=1] LastRoom
 scoreboard players reset #temp Room
 stopsound @s[scores={RoomNoise=1..}] ambient
 scoreboard players set @s RoomNoise 0

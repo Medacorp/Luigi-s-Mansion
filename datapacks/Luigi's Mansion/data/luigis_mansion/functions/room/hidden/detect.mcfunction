@@ -83,10 +83,10 @@ execute if score #dining_room Ticking matches 1 unless entity @a[gamemode=!spect
 execute as @a[gamemode=spectator,tag=!already_ticked,distance=0..,scores={HomeX=697..711,HomeY=9..17,HomeZ=-77..-46}] at @s run function luigis_mansion:room/hidden/kitchen/spectator_tick
 execute if entity @a[gamemode=!spectator,x=697,y=11,z=-77,dx=14,dy=6,dz=31] run function luigis_mansion:room/hidden/kitchen/tick
 execute if score #kitchen Ticking matches 1 unless entity @a[gamemode=!spectator,x=697,y=11,z=-77,dx=14,dy=6,dz=31] unless entity @a[gamemode=!spectator,scores={Room=27}] run function luigis_mansion:room/hidden/kitchen/not_ticking
-execute as @a[gamemode=spectator,tag=!already_ticked,distance=0..,scores={HomeX=672..685,HomeY=100..108,HomeZ=-40..-23}] at @s run function luigis_mansion:room/hidden/boneyard/spectator_tick
+execute as @a[gamemode=spectator,tag=!already_ticked,distance=0..,scores={HomeX=672..685,HomeY=100..108,HomeZ=-41..-23}] at @s run function luigis_mansion:room/hidden/boneyard/spectator_tick
 execute if entity @a[gamemode=!spectator,x=672,y=102,z=-40,dx=12,dy=6,dz=17] run function luigis_mansion:room/hidden/boneyard/tick
 execute if score #boneyard Ticking matches 1 unless entity @a[gamemode=!spectator,x=672,y=102,z=-40,dx=12,dy=6,dz=17] unless entity @a[gamemode=!spectator,scores={Room=28}] run function luigis_mansion:room/hidden/boneyard/not_ticking
-execute as @a[gamemode=spectator,tag=!already_ticked,distance=0..,scores={HomeX=645..671,HomeY=100..108,HomeZ=-40..-23}] at @s run function luigis_mansion:room/hidden/graveyard/spectator_tick
+execute as @a[gamemode=spectator,tag=!already_ticked,distance=0..,scores={HomeX=645..671,HomeY=100..108,HomeZ=-41..-23}] at @s run function luigis_mansion:room/hidden/graveyard/spectator_tick
 execute if entity @a[gamemode=!spectator,x=645,y=102,z=-40,dx=25,dy=6,dz=16] run function luigis_mansion:room/hidden/graveyard/tick
 execute if score #graveyard Ticking matches 1 unless entity @a[gamemode=!spectator,x=645,y=102,z=-40,dx=25,dy=6,dz=16] unless entity @a[gamemode=!spectator,scores={Room=29}] run function luigis_mansion:room/hidden/graveyard/not_ticking
 execute as @a[gamemode=spectator,tag=!already_ticked,distance=0..,scores={HomeX=645..653,HomeY=100..108,HomeZ=-23..55}] at @s run function luigis_mansion:room/hidden/courtyard/spectator_tick

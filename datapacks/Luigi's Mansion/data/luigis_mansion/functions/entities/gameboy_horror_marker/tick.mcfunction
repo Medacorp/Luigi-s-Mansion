@@ -1,5 +1,5 @@
 scoreboard players operation #temp ID = @s ID
-execute as @a[gamemode=!spectator] if score @s ID = #temp ID run tag @s add this_player
+execute as @a[tag=!spectator] if score @s ID = #temp ID run tag @s add this_player
 scoreboard players reset #temp ID
 tag @s add me
 execute as @a[tag=this_player,tag=!looking_at_map,limit=1] at @s run function #luigis_mansion:entities/gameboy_horror_marker/teleport

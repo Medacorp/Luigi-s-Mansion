@@ -11,14 +11,14 @@ tag @s[scores={HurtTime=1}] add me
 execute if entity @s[scores={HurtTime=1}] as @a run function luigis_mansion:entities/ghost/find_vacuumers
 tag @s[scores={HurtTime=1}] remove me
 execute if entity @s[scores={HurtTime=1}] as @a[tag=vacuuming_this_ghost] run function luigis_mansion:entities/ghost/find_shooters
-execute if entity @s[scores={HurtTime=1}] if entity @a[gamemode=!spectator,tag=shooter] run tag @a[tag=vacuuming_this_ghost,tag=!shooter] remove vacuuming_this_ghost
-execute if entity @s[scores={HurtTime=1}] unless entity @a[gamemode=!spectator,tag=shooter] run scoreboard players operation @s KillerID = @a[sort=nearest,limit=1,gamemode=!spectator,tag=vacuuming_this_ghost] ID
-execute if entity @s[scores={HurtTime=1}] if entity @a[gamemode=!spectator,tag=shooter] run scoreboard players operation @s KillerID = @a[sort=furthest,limit=1,gamemode=!spectator,tag=vacuuming_this_ghost] ID
+execute if entity @s[scores={HurtTime=1}] if entity @a[tag=!spectator,tag=shooter] run tag @a[tag=vacuuming_this_ghost,tag=!shooter] remove vacuuming_this_ghost
+execute if entity @s[scores={HurtTime=1}] unless entity @a[tag=!spectator,tag=shooter] run scoreboard players operation @s KillerID = @a[sort=nearest,limit=1,tag=!spectator,tag=vacuuming_this_ghost] ID
+execute if entity @s[scores={HurtTime=1}] if entity @a[tag=!spectator,tag=shooter] run scoreboard players operation @s KillerID = @a[sort=furthest,limit=1,tag=!spectator,tag=vacuuming_this_ghost] ID
 execute if entity @s[scores={HurtTime=1}] run tag @a remove vacuuming_this_ghost
 execute if entity @s[scores={HurtTime=1}] run tag @a remove shooter
 
 scoreboard players operation #temp KillerID = @s KillerID
-execute as @a[gamemode=!spectator] if score @s ID = #temp KillerID run tag @s add killer
+execute as @a[tag=!spectator] if score @s ID = #temp KillerID run tag @s add killer
 execute if entity @s[scores={HurtTime=1..2}] unless entity @a[tag=killer,limit=1] run function luigis_mansion:entities/ghost/cancel_death
 scoreboard players reset #temp KillerID
 

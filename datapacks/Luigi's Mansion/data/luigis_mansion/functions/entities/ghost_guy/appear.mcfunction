@@ -3,7 +3,7 @@ execute if entity @s[scores={ActionTime=1}] run playsound luigis_mansion:entity.
 data merge entity @s[scores={ActionTime=1}] {Pose:{RightArm:[-90.0f,90.0f,0.0f],LeftArm:[-90.0f,-90.0f,0.0f]}}
 execute if entity @s[scores={ActionTime=1}] run function luigis_mansion:blocks/dust
 execute if entity @s[scores={ActionTime=1}] as @e[tag=same_room,tag=gameboy_horror_location,distance=..5] run function luigis_mansion:entities/gameboy_horror_location/scare_player
-execute if entity @s[scores={ActionTime=1}] as @a[gamemode=!spectator,distance=..5] at @s run function luigis_mansion:entities/player/scare
+execute if entity @s[scores={ActionTime=1}] as @a[tag=!spectator,distance=..5] at @s run function luigis_mansion:entities/player/scare
 execute if score #mirrored Selected matches 0 run teleport @s[scores={ActionTime=1}] ~ ~2 ~ ~200 ~
 execute if score #mirrored Selected matches 1 run teleport @s[scores={ActionTime=1}] ~ ~2 ~ ~-200 ~
 execute if score #mirrored Selected matches 0 at @s run teleport @s ~ ~-0.1 ~ ~-10 ~

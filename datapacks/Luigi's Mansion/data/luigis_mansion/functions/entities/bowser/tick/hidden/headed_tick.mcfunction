@@ -7,8 +7,8 @@ execute if entity @s[tag=!headless_run] unless entity @s[scores={ActionTime=1..}
 execute if entity @s[tag=!headless_run] unless entity @s[scores={ActionTime=1..}] if score #temp Time matches 180.. run scoreboard players remove #temp Time 360
 
 execute if entity @s[tag=headless_run] run function luigis_mansion:entities/bowser/headless_run
-execute if score #temp Time matches -3..3 if entity @s[tag=intro_done] unless entity @s[scores={ActionTime=1..}] if entity @a[distance=..12,gamemode=!spectator] run function luigis_mansion:entities/bowser/select_closeby
-execute if score #temp Time matches -3..3 if entity @s[tag=intro_done] unless entity @s[scores={ActionTime=1..}] unless entity @a[distance=..12,gamemode=!spectator] if entity @a[distance=12..,gamemode=!spectator] run function luigis_mansion:entities/bowser/select_distant
+execute if score #temp Time matches -3..3 if entity @s[tag=intro_done] unless entity @s[scores={ActionTime=1..}] if entity @a[distance=..12,tag=!spectator] run function luigis_mansion:entities/bowser/select_closeby
+execute if score #temp Time matches -3..3 if entity @s[tag=intro_done] unless entity @s[scores={ActionTime=1..}] unless entity @a[distance=..12,tag=!spectator] if entity @a[distance=12..,tag=!spectator] run function luigis_mansion:entities/bowser/select_distant
 execute if score #temp Time matches -90..90 unless score #temp Time matches -3..3 if entity @s[tag=intro_done] unless entity @s[scores={ActionTime=1..}] run tag @s add turn_around
 execute unless score #temp Time matches -90..90 if entity @s[tag=intro_done] unless entity @s[scores={ActionTime=1..}] positioned ^ ^-3 ^-4 if entity @e[tag=same_room,tag=!spectator,distance=..3,limit=1] run tag @s add tail_attack
 execute unless score #temp Time matches -90..90 if entity @s[tag=intro_done,tag=!tail_attack] unless entity @s[scores={ActionTime=1..}] run tag @s add look_around
@@ -30,9 +30,9 @@ execute if entity @s[tag=look_around] run function luigis_mansion:entities/bowse
 execute if entity @s[tag=turn_around] run function luigis_mansion:entities/bowser/turn_around
 
 execute positioned ^ ^-3 ^-2 as @e[distance=..3,tag=gameboy_horror_location] run function luigis_mansion:entities/gameboy_horror_location/bring_player_back
-execute positioned ^ ^-3 ^-2 as @a[distance=..3,gamemode=!spectator,tag=!vacuumed] if entity @s[tag=!dying,tag=!dead,tag=!removed_from_existence] run function luigis_mansion:entities/bowser/collide
+execute positioned ^ ^-3 ^-2 as @a[distance=..3,tag=!spectator,tag=!vacuumed] if entity @s[tag=!dying,tag=!dead,tag=!removed_from_existence] run function luigis_mansion:entities/bowser/collide
 execute positioned ^ ^ ^-2 as @e[distance=..3,tag=gameboy_horror_location] run function luigis_mansion:entities/gameboy_horror_location/bring_player_back
-execute positioned ^ ^ ^-2 as @a[distance=..3,gamemode=!spectator,tag=!vacuumed] if entity @s[tag=!dying,tag=!dead,tag=!removed_from_existence] run function luigis_mansion:entities/bowser/collide
+execute positioned ^ ^ ^-2 as @a[distance=..3,tag=!spectator,tag=!vacuumed] if entity @s[tag=!dying,tag=!dead,tag=!removed_from_existence] run function luigis_mansion:entities/bowser/collide
 execute unless entity @s[tag=!walk,tag=!run,tag=!headless_run] positioned ~ ~-3 ~2 if block ~ ~1 ~ minecraft:clay run function luigis_mansion:entities/bowser/tick/hidden/destroy_pillar
 execute unless entity @s[tag=!walk,tag=!run,tag=!headless_run] positioned ~1 ~-3 ~1 if block ~ ~1 ~ minecraft:clay run function luigis_mansion:entities/bowser/tick/hidden/destroy_pillar
 execute unless entity @s[tag=!walk,tag=!run,tag=!headless_run] positioned ~-1 ~-3 ~1 if block ~ ~1 ~ minecraft:clay run function luigis_mansion:entities/bowser/tick/hidden/destroy_pillar

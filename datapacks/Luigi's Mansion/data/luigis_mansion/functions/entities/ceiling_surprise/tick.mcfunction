@@ -4,12 +4,12 @@ execute if entity @s[tag=dead] run function luigis_mansion:entities/ceiling_surp
 execute if entity @s[tag=dead] run particle minecraft:dust 0.7 1 1 1 ~-0.1 ~ ~0.1 0.2 0.6 0.2 1 30
 execute if entity @s[tag=dead] run teleport @s ~ -100 ~
 
-execute if entity @s[scores={HurtTime=1},tag=hurt,tag=!fleeing] run playsound luigis_mansion:entity.ceiling_surprise.hurt hostile @a[tag=same_room] ~ ~ ~ 1
-scoreboard players set @s[scores={HurtTime=1},tag=hurt,tag=!fleeing] Sound 40
+execute if entity @s[scores={HurtTime=1},tag=hurt,tag=!fleeing,tag=!dying] run playsound luigis_mansion:entity.ceiling_surprise.hurt hostile @a[tag=same_room] ~ ~ ~ 1
+scoreboard players set @s[scores={HurtTime=1},tag=hurt,tag=!fleeing,tag=!dying] Sound 40
 execute if entity @s[scores={ElementHurtTime=0},tag=element_hurt] run playsound luigis_mansion:entity.ceiling_surprise.element_hurt hostile @a[tag=same_room] ~ ~ ~ 1
 scoreboard players set @s[scores={ElementHurtTime=0},tag=element_hurt] Sound 30
-execute if entity @s[scores={Sound=0},tag=fleeing] run playsound luigis_mansion:entity.ceiling_surprise.flee hostile @a[tag=same_room] ~ ~ ~ 1
-scoreboard players set @s[scores={Sound=0},tag=fleeing] Sound 40
+execute if entity @s[scores={Sound=0},tag=fleeing,tag=!dying] run playsound luigis_mansion:entity.ceiling_surprise.flee hostile @a[tag=same_room] ~ ~ ~ 1
+scoreboard players set @s[scores={Sound=0},tag=fleeing,tag=!dying] Sound 40
 
 execute if entity @e[tag=same_room,tag=!spectator,distance=..0.7,limit=1] if entity @s[tag=!vanish,tag=!appear] if entity @s[tag=!dying,tag=!dead,tag=!removed_from_existence] run function luigis_mansion:entities/ceiling_surprise/collide
 

@@ -14,9 +14,9 @@ execute if score #temp Searched matches 1 run setblock 735 20 -34 minecraft:dark
 execute if score #temp Searched matches 1 run setblock 735 21 -34 minecraft:dark_oak_door[open=true,facing=west,half=upper,hinge=right,powered=false]
 execute if score #temp Searched matches 1 run setblock 719 20 -30 minecraft:dark_oak_door[open=true,facing=east,half=lower,hinge=left,powered=false]
 execute if score #temp Searched matches 1 run setblock 719 21 -30 minecraft:dark_oak_door[open=true,facing=east,half=upper,hinge=left,powered=false]
-execute if score #temp Searched matches 0 run playsound luigis_mansion:block.door.close block @a[scores={Room=38}] 720.0 20 -30 1 1
+execute if score #temp Searched matches 0 run playsound luigis_mansion:block.door.close block @a[scores={Room=39}] 720.0 20 -30 1 1
 execute if score #temp Searched matches 0 run playsound luigis_mansion:block.door.close block @a[scores={Room=69}] 735.0 20 -34 1 1
-execute if score #temp Searched matches 1 run playsound luigis_mansion:block.door.open block @a[scores={Room=38}] 720.0 20 -30 1 1
+execute if score #temp Searched matches 1 run playsound luigis_mansion:block.door.open block @a[scores={Room=39}] 720.0 20 -30 1 1
 execute if score #temp Searched matches 1 run playsound luigis_mansion:block.door.open block @a[scores={Room=69}] 735.0 20 -34 1 1
 execute if score #temp Searched matches -1..0 run fill 719 20 -30 719 21 -30 minecraft:air replace #minecraft:doors
 execute if score #temp Searched matches -1..0 run fill 735 20 -34 735 21 -34 minecraft:air replace #minecraft:doors

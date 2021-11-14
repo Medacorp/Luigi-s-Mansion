@@ -1,6 +1,6 @@
 scoreboard players set #freeze_timer Selected 1
 scoreboard players add @s Dialog 1
-execute if entity @s[scores={Dialog=2}] as @a[tag=same_room,gamemode=!spectator] run function luigis_mansion:other/music/set/bogmire_battle
+execute if entity @s[scores={Dialog=2}] as @a[tag=same_room,tag=!spectator] run function luigis_mansion:other/music/set/bogmire_battle
 execute if entity @s[scores={Dialog=60}] run summon minecraft:lightning_bolt 651 103 47
 execute if entity @s[scores={Dialog=70}] run summon minecraft:lightning_bolt 651 103 47
 execute if entity @s[scores={Dialog=80}] run summon minecraft:lightning_bolt 651 103 47

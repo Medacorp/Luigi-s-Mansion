@@ -1,9 +1,9 @@
-execute if entity @s[tag=dead,tag=fire] as @p[gamemode=!spectator,tag=vacuuming] run function luigis_mansion:items/poltergust_3000/fire_element
-execute if entity @s[tag=dead,tag=water] as @p[gamemode=!spectator,tag=vacuuming] run function luigis_mansion:items/poltergust_3000/water_element
-execute if entity @s[tag=dead,tag=ice] as @p[gamemode=!spectator,tag=vacuuming] run function luigis_mansion:items/poltergust_3000/ice_element
-execute if entity @s[tag=dead,tag=fire] as @p[gamemode=!spectator,tag=vacuuming] run playsound luigis_mansion:entity.fire_elemental_ghost.vacuumed hostile @a[tag=same_room] ~ ~ ~ 1
-execute if entity @s[tag=dead,tag=water] as @p[gamemode=!spectator,tag=vacuuming] run playsound luigis_mansion:entity.water_elemental_ghost.vacuumed hostile @a[tag=same_room] ~ ~ ~ 1
-execute if entity @s[tag=dead,tag=ice] as @p[gamemode=!spectator,tag=vacuuming] run playsound luigis_mansion:entity.ice_elemental_ghost.vacuumed hostile @a[tag=same_room] ~ ~ ~ 1
+execute if entity @s[tag=dead,tag=fire] as @p[tag=!spectator,tag=vacuuming] run function luigis_mansion:items/poltergust_3000/fire_element
+execute if entity @s[tag=dead,tag=water] as @p[tag=!spectator,tag=vacuuming] run function luigis_mansion:items/poltergust_3000/water_element
+execute if entity @s[tag=dead,tag=ice] as @p[tag=!spectator,tag=vacuuming] run function luigis_mansion:items/poltergust_3000/ice_element
+execute if entity @s[tag=dead,tag=fire] as @p[tag=!spectator,tag=vacuuming] run playsound luigis_mansion:entity.fire_elemental_ghost.vacuumed hostile @a[tag=same_room] ~ ~ ~ 1
+execute if entity @s[tag=dead,tag=water] as @p[tag=!spectator,tag=vacuuming] run playsound luigis_mansion:entity.water_elemental_ghost.vacuumed hostile @a[tag=same_room] ~ ~ ~ 1
+execute if entity @s[tag=dead,tag=ice] as @p[tag=!spectator,tag=vacuuming] run playsound luigis_mansion:entity.ice_elemental_ghost.vacuumed hostile @a[tag=same_room] ~ ~ ~ 1
 execute if entity @s[tag=dead] run function luigis_mansion:entities/elemental_ghost/drop_loot
 scoreboard players add @s SpawnTime 1
 execute if entity @s[scores={SpawnTime=1}] run function luigis_mansion:entities/elemental_ghost/initial_rotation
