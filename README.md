@@ -1,6 +1,6 @@
 To receive development build updates, pull from https://github.com/Dhranios/Luigi-s-Mansion into the "`Luigi's Mansion`" world folder.
 
-Before you pull, you need to disregard all your changes. Doing this without preparation may cause "damage" to your world
+Before you pull, you need to disregard all your changes. Doing this without preparation may cause "damage" to your world.
 To have no lasting "damage" on your world, follow these steps before disregarding changes:
 1. Go to the Underground Lab.
 2. Talk to E. Gadd.
@@ -43,9 +43,11 @@ Add-on is the variable defined as loaded, namespace is the namespace used for fi
 The following groups are predefined, keep them in mind when making your add-ons.
 
 ## Mansions
-Add new ones in `#luigis_mansion:mansion_options` to allow selecting it, `#luigis_mansion:mansion_detect` to tick rooms, `#luigis_mansion:mansion_interaction_detect` to allow searching and scanning furniture, `#luigis_mansion:mansion_forceload_chunks` to allow add-ons to arbitrarily load the mansion's chunks, and `#luigis_mansion:mansion_remove_forceloaded_chunks` for unloading.
+Add new ones in `#luigis_mansion:mansion_options` to allow selecting it, `#luigis_mansion:mansion_detect` to tick rooms, `#luigis_mansion:mansion_interaction_detect` to allow searching and scanning furniture, `#luigis_mansion:room/dark_room` to allow the flashight to work in dark rooms, `#luigis_mansion:mansion_forceload_chunks` to allow add-ons to arbitrarily load the mansion's chunks, and `#luigis_mansion:mansion_remove_forceloaded_chunks` for unloading.
 
 If the mansion has a new exterior, add to `#luigis_mansion:mansion_gameboy_horror_scan` to add a scan message for it.
+
+There's more tags you may want to use, such as `#luigis_mansion:items/key` and `#luigis_mansion:entities/gameboy_horror_marker/teleport`, but those are the main ones to add a mansion; rest depends on what you include in the mansion.
 
 ```
 Mansion     | Type | Index | Exterior | Add-on       | Overwrites     | Namespace                 | Data pack name
@@ -132,7 +134,7 @@ For example the back of the F1 hallway is reset if you're in the front, until yo
 
 This behavior is called a viewpoint: the room has a smaller score-giving area than load area; the latter of which contains other rooms (partially).
 
-To make sure sounds can be heard through viewpoints, make sure to add them to the `main/get_room_score/viewpoints` list. This list basically means "if room score is A, it can also hear in room B".
+To make sure sounds can be heard through viewpoints, make sure to add them to the `#luigis_mansion:get_same_room` list. This list basically means "if room score is A, it can also hear in room B".
 
 ## Pearl dropping behavior
 Portrait ghosts always drop 4 small pearls before dropping a medium pearl.
