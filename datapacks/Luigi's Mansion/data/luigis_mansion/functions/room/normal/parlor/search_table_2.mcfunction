@@ -10,5 +10,5 @@ kill @e[type=minecraft:marker,tag=chance]
 scoreboard players set #parlor_table_2 Searched 1
 data merge block 714 20 28 {LootTable:"luigis_mansion:search"}
 data merge block 714 20 27 {LootTable:"luigis_mansion:search"}
-tag @e[x=714.5,y=20,z=27.5,distance=..0.7,tag=hidden_boo] add spawn
+tag @e[x=714.5,y=20,z=27.5,distance=..0.7,tag=hidden_boo,tag=caught_by_boo_radar] add spawn
 tag @e[x=714.5,y=20,z=27.5,distance=..0.7,tag=ghost,tag=hidden] add spawn

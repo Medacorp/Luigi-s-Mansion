@@ -12,5 +12,5 @@ kill @e[type=minecraft:marker,tag=chance]
 scoreboard players set #laundry_room_bucket Searched 1
 data merge block 714 11 -46 {LootTable:"luigis_mansion:search"}
 setblock 714 11 -46 minecraft:hopper[enabled=false]
-tag @e[x=714.5,y=11,z=-45.5,distance=..0.7,tag=hidden_boo] add spawn
+tag @e[x=714.5,y=11,z=-45.5,distance=..0.7,tag=hidden_boo,tag=caught_by_boo_radar] add spawn
 tag @e[x=714.5,y=11,z=-45.5,distance=..0.7,tag=ghost,tag=hidden] add spawn

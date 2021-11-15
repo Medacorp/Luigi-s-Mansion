@@ -9,4 +9,4 @@ execute unless entity @e[type=minecraft:marker,tag=chance,tag=selected,tag=!noth
 kill @e[type=minecraft:marker,tag=chance]
 scoreboard players set #clockwork_room_puppet_2 Searched 1
 tag @e[x=688.5,y=122,z=22.5,distance=..0.7,tag=ghost,tag=hidden] add spawn
-tag @e[x=688.5,y=122,z=22.5,distance=..0.7,tag=hidden_boo] add spawn
+tag @e[x=688.5,y=122,z=22.5,distance=..0.7,tag=hidden_boo,tag=caught_by_boo_radar] add spawn

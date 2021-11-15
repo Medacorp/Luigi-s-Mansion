@@ -7,4 +7,4 @@ scoreboard players set #telephone_room_chest_3 Searched 1
 data merge block 753 29 4 {LootTable:"luigis_mansion:search"}
 data merge block 754 29 4 {LootTable:"luigis_mansion:search"}
 tag @e[x=753.5,y=29,z=4.5,distance=..0.7,tag=ghost,tag=hidden] add spawn
-tag @e[x=753.5,y=29,z=4.5,distance=..0.7,tag=hidden_boo] add spawn
+tag @e[x=753.5,y=29,z=4.5,distance=..0.7,tag=hidden_boo,tag=caught_by_boo_radar] add spawn

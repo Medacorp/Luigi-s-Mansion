@@ -7,4 +7,4 @@ scoreboard players set #ceramics_studio_jar_4 Searched 1
 data merge block 710 29 70 {LootTable:"luigis_mansion:search"}
 setblock 710 29 70 minecraft:hopper[enabled=false]
 tag @e[x=710.5,y=29,z=70.5,distance=..0.7,tag=ghost,tag=hidden] add spawn
-tag @e[x=710.5,y=29,z=70.5,distance=..0.7,tag=hidden_boo] add spawn
+tag @e[x=710.5,y=29,z=70.5,distance=..0.7,tag=hidden_boo,tag=caught_by_boo_radar] add spawn

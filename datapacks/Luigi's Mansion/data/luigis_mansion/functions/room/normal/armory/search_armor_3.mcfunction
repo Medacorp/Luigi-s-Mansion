@@ -7,4 +7,4 @@ execute if block 732 29 66 minecraft:structure_block run setblock 732 30 66 mine
 execute positioned 759 29 67 run function luigis_mansion:blocks/dust
 scoreboard players set #armory_armor_3 Searched 1
 tag @e[x=759.5,y=29,z=67.5,distance=..0.7,tag=ghost,tag=hidden] add spawn
-tag @e[x=759.5,y=29,z=67.5,distance=..0.7,tag=hidden_boo] add spawn
+tag @e[x=759.5,y=29,z=67.5,distance=..0.7,tag=hidden_boo,tag=caught_by_boo_radar] add spawn

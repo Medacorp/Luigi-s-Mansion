@@ -10,5 +10,5 @@ execute unless entity @e[type=minecraft:marker,tag=chance,tag=selected,tag=!noth
 kill @e[type=minecraft:marker,tag=chance]
 scoreboard players set #billiards_room_table_2 Searched 1
 data merge block 683 11 -73 {LootTable:"luigis_mansion:search"}
-tag @e[x=683.5,y=11,z=-72.5,distance=..0.7,tag=hidden_boo] add spawn
+tag @e[x=683.5,y=11,z=-72.5,distance=..0.7,tag=hidden_boo,tag=caught_by_boo_radar] add spawn
 tag @e[x=683.5,y=11,z=-72.5,distance=..0.7,tag=ghost,tag=hidden] add spawn

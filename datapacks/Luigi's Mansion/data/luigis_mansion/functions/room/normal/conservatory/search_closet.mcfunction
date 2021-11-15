@@ -11,5 +11,5 @@ kill @e[type=minecraft:marker,tag=chance]
 scoreboard players set #conservatory_closet Searched 1
 data merge block 654 12 -26 {LootTable:"luigis_mansion:search"}
 data merge block 654 12 -27 {LootTable:"luigis_mansion:search"}
-tag @e[x=654.5,y=12,z=-25.5,distance=..0.7,tag=hidden_boo] add spawn
+tag @e[x=654.5,y=12,z=-25.5,distance=..0.7,tag=hidden_boo,tag=caught_by_boo_radar] add spawn
 tag @e[x=654.5,y=12,z=-25.5,distance=..0.7,tag=ghost,tag=hidden] add spawn

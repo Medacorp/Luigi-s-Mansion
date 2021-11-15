@@ -3,7 +3,7 @@ scoreboard players set @s Room 42
 scoreboard players set @s PrevRoom 42
 
 teleport @s[scores={HomeX=661}] ~-3 ~ ~19
-teleport @s[scores={HomeX=667}] ~8 ~ ~-42
+teleport @s[scores={HomeX=667}] ~11 ~ ~-28
 teleport @s[scores={HomeZ=-32}] ~ ~ ~-1
 teleport @s[scores={HomeZ=-20}] ~18 ~ ~25
 

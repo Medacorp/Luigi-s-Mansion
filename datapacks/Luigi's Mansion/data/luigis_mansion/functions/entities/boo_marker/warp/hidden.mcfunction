@@ -58,7 +58,7 @@ execute if entity @e[type=minecraft:marker,tag=choice,tag=selected,limit=1,tag=s
 execute if entity @e[type=minecraft:marker,tag=choice,tag=selected,limit=1,tag=parlor] run scoreboard players set @s Room 3
 execute if entity @e[type=minecraft:marker,tag=choice,tag=selected,limit=1,tag=astral_hall] run scoreboard players set @s Room 45
 execute if entity @e[type=minecraft:marker,tag=choice,tag=selected,limit=1,tag=anteroom] run scoreboard players set @s Room 4
-execute if entity @e[type=minecraft:marker,tag=choice,tag=selected,limit=1,tag=tea_room] run scoreboard players set @s Room 40
+execute if entity @e[type=minecraft:marker,tag=choice,tag=selected,limit=1,tag=tea_room] run scoreboard players set @s Room 34
 execute if entity @e[type=minecraft:marker,tag=choice,tag=selected,limit=1,tag=nanas_room] run scoreboard players set @s Room 44
 execute if entity @e[type=minecraft:marker,tag=choice,tag=selected,limit=1,tag=wardrobe_room] run scoreboard players set @s Room 5
 execute if entity @e[type=minecraft:marker,tag=choice,tag=selected,limit=1,tag=washroom_2] run scoreboard players set @s Room 42

@@ -11,4 +11,4 @@ scoreboard players set #pipe_room_bucket Searched 1
 data merge block 698 2 -4 {LootTable:"luigis_mansion:search"}
 setblock 698 2 -4 minecraft:hopper[enabled=false]
 tag @e[x=698.5,y=2,z=-3.5,distance=..0.7,tag=ghost,tag=hidden] add spawn
-tag @e[x=698.5,y=2,z=-3.5,distance=..0.7,tag=hidden_boo] add spawn
+tag @e[x=698.5,y=2,z=-3.5,distance=..0.7,tag=hidden_boo,tag=caught_by_boo_radar] add spawn

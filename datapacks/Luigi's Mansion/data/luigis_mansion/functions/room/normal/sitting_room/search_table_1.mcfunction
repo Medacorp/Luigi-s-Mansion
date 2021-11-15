@@ -12,4 +12,4 @@ data merge block 746 20 -21 {LootTable:"luigis_mansion:search"}
 data merge block 746 21 -21 {LootTable:"luigis_mansion:search"}
 setblock 746 21 -21 minecraft:hopper[enabled=false]
 tag @e[x=746.5,y=20,z=-20.5,distance=..0.7,tag=ghost,tag=hidden] add spawn
-tag @e[x=746.5,y=20,z=-20.5,distance=..0.7,tag=hidden_boo] add spawn
+tag @e[x=746.5,y=20,z=-20.5,distance=..0.7,tag=hidden_boo,tag=caught_by_boo_radar] add spawn

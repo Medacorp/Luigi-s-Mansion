@@ -8,5 +8,5 @@ execute if entity @e[type=minecraft:marker,tag=chance,tag=selected,tag=small_hea
 execute unless entity @e[type=minecraft:marker,tag=chance,tag=selected,tag=!nothing] positioned 744.0 11 63.0 run function luigis_mansion:blocks/dust
 kill @e[type=minecraft:marker,tag=chance]
 scoreboard players set #butlers_room_table Searched 1
-tag @e[x=745.5,y=11,z=63.5,distance=..0.7,tag=hidden_boo] add spawn
-tag @e[x=745.5,y=11,z=63.5,distance=..0.7,tag=ghost,tag=hidden] add spawn
+tag @e[x=744.5,y=11,z=63.5,distance=..0.7,tag=hidden_boo,tag=caught_by_boo_radar] add spawn
+tag @e[x=744.5,y=11,z=63.5,distance=..0.7,tag=ghost,tag=hidden] add spawn
