@@ -3,8 +3,8 @@ execute if entity @s[tag=!intro_done] run function luigis_mansion:entities/boolo
 execute if entity @s[x=586.5,y=31,z=-4.5,distance=..4] run function luigis_mansion:entities/boolossus/split_up
 execute if entity @s[x=586.5,y=31,z=-33.5,distance=..4] run function luigis_mansion:entities/boolossus/split_up
 
-execute if entity @s[scores={Sound=0,Dialog=0},tag=fleeing] run playsound luigis_mansion:entity.boo.flee hostile @a[tag=same_room] ~ ~ ~ 1
-scoreboard players set @s[scores={Sound=0,Dialog=0},tag=fleeing] Sound 40
+execute if entity @s[scores={Sound=0},tag=fleeing] run playsound luigis_mansion:entity.boo.flee hostile @a[tag=same_room] ~ ~ ~ 1
+scoreboard players set @s[scores={Sound=0},tag=fleeing] Sound 20
 
 execute if entity @e[tag=same_room,tag=!spectator,distance=..0.7,limit=1] run function luigis_mansion:entities/boolossus/collide
 
