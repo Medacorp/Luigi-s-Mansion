@@ -1,1 +1,1 @@
-execute if data storage luigis_mansion:data current_state.current_data.rooms.artists_studio{cleared:1b} run data modify entity @e[x=688.5,y=121,z=-25.5,distance=..0.7,limit=1] Item.tag.map set value 92
+execute if data storage luigis_mansion:data current_state.current_data.rooms.artists_studio{cleared:1b} run data modify entity @e[x=693.5,y=30,z=-64.5,distance=..0.7,limit=1] Item.tag.map set value 92

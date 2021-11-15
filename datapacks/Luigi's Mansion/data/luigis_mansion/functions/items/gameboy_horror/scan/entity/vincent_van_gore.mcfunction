@@ -1,2 +1,0 @@
-execute if entity @s[tag=vincent_van_gore] if score #players Totals matches 1 run tellraw @a {"translate":"chat.type.text","with":[{"translate":"luigis_mansion:entity.vincent_van_gore","color":"green"},{"translate":"luigis_mansion:message.vincent_van_gore.scan"}]}
-execute if entity @s[tag=vincent_van_gore] if score #players Totals matches 2.. run tellraw @a {"translate":"chat.type.text","with":[{"translate":"luigis_mansion:entity.vincent_van_gore","color":"green"},{"translate":"luigis_mansion:message.vincent_van_gore.scan.more"}]}

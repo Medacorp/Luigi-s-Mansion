@@ -1,7 +1,7 @@
 scoreboard players set #freeze_timer Selected 1
 scoreboard players add @s Dialog 1
 scoreboard players set @s[tag=fleeing] Dialog 580
-execute if entity @s[scores={Dialog=100}] run playsound luigis_mansion:entity.boolossus.laugh hostile @a[tag=same_room] ~ ~ ~ 3
+execute if entity @s[scores={Dialog=100}] run playsound luigis_mansion:entity.boolossus.laugh2 hostile @a[tag=same_room] ~ ~ ~ 30
 teleport @s[scores={Dialog=120..180}] ~ ~ ~ ~ ~1.5
 teleport @s[scores={Dialog=218..280}] ~ ~-1 ~
 teleport @s[scores={Dialog=290..300}] ~ ~0.2 ~ ~ ~-4.5

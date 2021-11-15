@@ -1,0 +1,6 @@
+{
+	"values": [
+		"luigis_mansion:entities/bogmire/normal_at_death",
+        "luigis_mansion:entities/bogmire/hidden_at_death"
+	]
+}

@@ -1,2 +1,0 @@
-execute if entity @s[tag=shivers,tag=!burning] run tellraw @a {"translate":"chat.type.text","with":[{"translate":"luigis_mansion:entity.shivers","color":"green"},{"translate":"luigis_mansion:message.shivers.scan.1"}]}
-execute if entity @s[tag=shivers,tag=burning] run tellraw @a {"translate":"chat.type.text","with":[{"translate":"luigis_mansion:entity.shivers","color":"green"},{"translate":"luigis_mansion:message.shivers.scan.2"}]}
