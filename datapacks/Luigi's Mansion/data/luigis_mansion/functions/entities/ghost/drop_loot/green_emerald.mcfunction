@@ -1,3 +1,3 @@
-function luigis_mansion:spawn_entities/item/green_emerald
-scoreboard players remove #temp Time 1
-execute if score #temp Time matches 1.. run function luigis_mansion:entities/ghost/drop_loot/green_emerald
+execute store result score #temp Time run data get storage luigis_mansion:data drop_loot.green_emerald
+execute if score #temp Time matches 1.. run function luigis_mansion:entities/ghost/drop_loot/loop/green_emerald
+scoreboard players reset #temp Time

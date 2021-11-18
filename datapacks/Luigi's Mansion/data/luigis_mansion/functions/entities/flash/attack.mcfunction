@@ -6,7 +6,7 @@ scoreboard players set #temp Move 6
 execute if entity @s[scores={ActionTime=21}] run playsound luigis_mansion:entity.flash.attack hostile @a[tag=same_room] ~ ~ ~ 1
 execute if entity @s[scores={ActionTime=41}] run playsound luigis_mansion:entity.ghost.uppercut hostile @a[tag=same_room] ~ ~ ~ 1
 execute if entity @s[scores={ActionTime=41..60}] if score #mirrored Selected matches 0 rotated ~342 0 run function luigis_mansion:entities/flash/punch/normal
-execute if entity @s[scores={ActionTime=41..60}] if score #mirrored Selected matches 1 rotated ~342 0 run function luigis_mansion:entities/flash/punch/hidden
+execute if entity @s[scores={ActionTime=41..60}] if score #mirrored Selected matches 1 rotated ~342 0 run function luigis_mansion:entities/flash/punch/mirrored
 execute at @s[scores={ActionTime=41..60}] as @e[distance=..1,tag=gameboy_horror_location] run function luigis_mansion:entities/gameboy_horror_location/bring_player_back
 execute at @s[scores={ActionTime=41..60}] run effect give @a[distance=..1,tag=!spectator] minecraft:instant_damage 1 0 true
 execute at @s[scores={ActionTime=41..60}] run scoreboard players set @a[distance=..1,tag=!spectator] ForcedDamage 4

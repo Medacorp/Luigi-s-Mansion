@@ -2,4 +2,3 @@ summon minecraft:armor_stand ~ ~ ~ {CustomName:'{"translate":"luigis_mansion:ent
 scoreboard players set @e[tag=this_entity,limit=1] WaitTime 0
 execute as @e[tag=this_entity,limit=1] store result score @s HomeY run data get entity @s Pos[1] 100
 tag @e[tag=this_entity,limit=1] remove this_entity
-playsound luigis_mansion:entity.green_flying_fish.spawn hostile @a ~ ~ ~ 1

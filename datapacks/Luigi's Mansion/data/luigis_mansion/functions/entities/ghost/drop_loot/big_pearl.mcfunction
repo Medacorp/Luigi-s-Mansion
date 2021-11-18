@@ -1,3 +1,3 @@
-function luigis_mansion:spawn_entities/item/big_pearl
-scoreboard players remove #temp Time 1
-execute if score #temp Time matches 1.. run function luigis_mansion:entities/ghost/drop_loot/big_pearl
+execute store result score #temp Time run data get storage luigis_mansion:data drop_loot.big_pearl
+execute if score #temp Time matches 1.. run function luigis_mansion:entities/ghost/drop_loot/loop/big_pearl
+scoreboard players reset #temp Time

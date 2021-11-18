@@ -1,3 +1,3 @@
-function luigis_mansion:spawn_entities/item/bill
-scoreboard players remove #temp Time 1
-execute if score #temp Time matches 1.. run function luigis_mansion:entities/ghost/drop_loot/bill
+execute store result score #temp Time run data get storage luigis_mansion:data drop_loot.bill
+execute if score #temp Time matches 1.. run function luigis_mansion:entities/ghost/drop_loot/loop/bill
+scoreboard players reset #temp Time
