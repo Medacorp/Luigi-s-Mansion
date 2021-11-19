@@ -6,11 +6,11 @@ execute if entity @s[scores={Dialog=1},tag=!vanish] at @e[tag=same_room,tag=!spe
 execute if entity @s[scores={Dialog=40}] run playsound luigis_mansion:entity.lydia.surprise hostile @a[tag=same_room] ~ ~ ~ 1
 scoreboard players set @s[scores={Dialog=40}] AnimationProg 0
 execute if entity @s[scores={Dialog=50}] run playsound luigis_mansion:entity.lydia.complain hostile @a[tag=same_room] ~ ~ ~ 1
-scoreboard players set @s[scores={Dialog=60}] VulnerableTime 40
-execute if entity @s[scores={Dialog=60}] run function luigis_mansion:entities/lydia/drop_brush
-execute if entity @s[scores={Dialog=60}] unless data storage luigis_mansion:data current_state.current_data.technical_data{lydia_spoke:1b} run tellraw @a[tag=same_room] {"translate":"chat.type.text","with":[{"translate":"luigis_mansion:entity.lydia","color":"green"},{"translate":"luigis_mansion:message.lydia.draft"}]}
-execute if entity @s[scores={Dialog=60}] run data modify storage luigis_mansion:data current_state.current_data.technical_data merge value {lydia_spoke:1b}
-execute if entity @s[scores={Dialog=100}] run playsound luigis_mansion:entity.lydia.sigh hostile @a[tag=same_room] ~ ~ ~ 1
+scoreboard players set @s[scores={Dialog=60},tag=!vanish] VulnerableTime 40
+execute if entity @s[scores={Dialog=60},tag=!vanish] run function luigis_mansion:entities/lydia/drop_brush
+execute if entity @s[scores={Dialog=60},tag=!vanish] unless data storage luigis_mansion:data current_state.current_data.technical_data{lydia_spoke:1b} run tellraw @a[tag=same_room] {"translate":"chat.type.text","with":[{"translate":"luigis_mansion:entity.lydia","color":"green"},{"translate":"luigis_mansion:message.lydia.draft"}]}
+execute if entity @s[scores={Dialog=60},tag=!vanish] run data modify storage luigis_mansion:data current_state.current_data.technical_data merge value {lydia_spoke:1b}
+execute if entity @s[scores={Dialog=100},tag=!vanish] run playsound luigis_mansion:entity.lydia.sigh hostile @a[tag=same_room] ~ ~ ~ 1
 execute if entity @s[scores={Dialog=100},tag=!vanish] run teleport @s ~ ~ ~ facing 689 111.6 -27
 execute if entity @s[scores={Dialog=110},tag=!vanish] run teleport @s ~ ~ ~ facing 685 111.6 -27
 execute if entity @s[scores={Dialog=136},tag=!vanish] run teleport @s ~ ~ ~ facing 685 111.6 -30

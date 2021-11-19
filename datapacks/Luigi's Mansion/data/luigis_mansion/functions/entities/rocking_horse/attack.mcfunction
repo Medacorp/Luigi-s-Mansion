@@ -12,6 +12,6 @@ execute if entity @s[scores={ActionTime=2..},tag=!big,tag=!fast] run scoreboard 
 execute if entity @s[scores={ActionTime=2..},tag=big,tag=!fast] run scoreboard players set #temp Move 14
 execute if entity @s[scores={ActionTime=2..},tag=!big,tag=fast] run scoreboard players set #temp Move 10
 execute if entity @s[scores={ActionTime=2..},tag=big,tag=fast] run scoreboard players set #temp Move 20
-execute if entity @s[scores={Sound=0}] run playsound luigis_mansion:entity.rocking_horse.charge hostile @a[tag=same_room] ~ ~ ~ 3
+execute if entity @s[scores={Sound=0}] run playsound luigis_mansion:entity.rocking_horse.charge_battle hostile @a[tag=same_room] ~ ~ ~ 1
 scoreboard players set @s[scores={Sound=0}] Sound 30
 execute at @s[scores={ActionTime=2..}] run function luigis_mansion:entities/ghost/move_forward

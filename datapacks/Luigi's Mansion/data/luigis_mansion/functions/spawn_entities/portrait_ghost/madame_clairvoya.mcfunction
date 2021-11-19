@@ -20,5 +20,6 @@ scoreboard players set @e[tag=madame_clairvoya,tag=this_entity,limit=1] Move 4
 scoreboard players set @e[tag=madame_clairvoya,tag=this_entity,limit=1] Sound 0
 scoreboard players set @e[tag=madame_clairvoya,tag=this_entity,limit=1] StunTime 0
 scoreboard players set @e[tag=madame_clairvoya,tag=this_entity,limit=1] VulnerableTime 0
+scoreboard players set @e[tag=madame_clairvoya,tag=this_entity,limit=1] SecondFleeDamage -1
 scoreboard players set @e[tag=madame_clairvoya,tag=this_entity,limit=1] HeartOffset -2
 tag @e[tag=this_entity] remove this_entity

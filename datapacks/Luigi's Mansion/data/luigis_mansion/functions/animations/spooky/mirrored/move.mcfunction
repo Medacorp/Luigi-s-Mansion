@@ -15,4 +15,5 @@ execute if entity @s[scores={AnimationProg=1..2}] store result entity @e[tag=thi
 execute if entity @s[scores={AnimationProg=3..6}] store result entity @e[tag=this_model,tag=left_arm,limit=1] Pose.Head[0] float 1 run scoreboard players add #temp Time 4
 execute if entity @s[scores={AnimationProg=7..8}] store result entity @e[tag=this_model,tag=left_arm,limit=1] Pose.Head[0] float 1 run scoreboard players remove #temp Time 4
 scoreboard players reset #temp Time
+execute if entity @s[scores={AnimationProg=1}] run playsound luigis_mansion:entity.spooky.pant hostile @a[tag=same_room] ~ ~ ~ 1
 scoreboard players set @s[scores={AnimationProg=8..}] AnimationProg 0

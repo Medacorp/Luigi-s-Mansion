@@ -1,4 +1,4 @@
-execute if entity @s[tag=!visible] run function luigis_mansion:entities/mr_luggs/turn_visible
+execute if entity @s[tag=!visible,tag=!vanish] run function luigis_mansion:entities/mr_luggs/turn_visible
 execute if entity @s[tag=!visible] unless entity @e[tag=this_food] positioned ^ ^0.9 ^2 run scoreboard players operation @e[tag=food,distance=..0.7,limit=1] GhostNr = @s GhostNr
 execute unless entity @s[scores={Dialog=1..}] at @e[tag=same_room,tag=!spectator] positioned ^ ^ ^8 if entity @s[distance=..8] run function luigis_mansion:entities/mr_luggs/turn_invisible
 execute unless entity @s[scores={Dialog=2..}] if entity @s[tag=visible] run item replace entity @e[tag=this_food,limit=1] armor.head with minecraft:diamond_pickaxe{Unbreakable:1b,Damage:4,CustomModelData:11}
@@ -6,39 +6,39 @@ execute if entity @s[tag=!visible] run item replace entity @e[tag=this_food,limi
 execute unless entity @s[scores={Dialog=1..}] if block ^3 ^1.9 ^2 minecraft:slime_block if block ^-3 ^1.9 ^2 minecraft:slime_block run playsound luigis_mansion:music.solve_puzzle music @a[tag=same_room] ~ ~ ~ 10000
 execute unless entity @s[scores={Dialog=1..}] if block ^3 ^1.9 ^2 minecraft:slime_block if block ^-3 ^1.9 ^2 minecraft:slime_block run scoreboard players set @a[tag=same_room,tag=!spectator,scores={Music=..29}] Music 30
 execute unless entity @s[scores={Dialog=1..}] if block ^3 ^1.9 ^2 minecraft:slime_block if block ^-3 ^1.9 ^2 minecraft:slime_block run scoreboard players set @s Dialog 1
-execute if entity @s[scores={Dialog=1..20}] run teleport @e[tag=this_food,limit=1] ^ ^0.9 ^2
-execute if entity @s[scores={Dialog=21..50}] run teleport @e[tag=this_food,limit=1] ^ ^0.7 ^2
-execute if entity @s[scores={Dialog=51..80}] run teleport @e[tag=this_food,limit=1] ^ ^0.5 ^2
-execute if entity @s[scores={Dialog=81..99}] run teleport @e[tag=this_food,limit=1] ^ ^0.3 ^2
+execute if entity @s[scores={Dialog=1..20}] run teleport @e[tag=this_food,limit=1] ^ ^0.4 ^2
+execute if entity @s[scores={Dialog=21..50}] run teleport @e[tag=this_food,limit=1] ^ ^0.2 ^2
+execute if entity @s[scores={Dialog=51..80}] run teleport @e[tag=this_food,limit=1] ^ ^0 ^2
+execute if entity @s[scores={Dialog=81..99}] run teleport @e[tag=this_food,limit=1] ^ ^-0.2 ^2
 scoreboard players add @s[scores={Dialog=100..}] Dialog 1
 execute if entity @s[scores={Dialog=101}] run kill @e[tag=this_food,limit=1]
 execute if entity @s[scores={Dialog=2..99}] run tag @e[tag=hidden,tag=waiter] add spawn
 
 execute unless entity @s[scores={Dialog=100..},tag=!vanish] run scoreboard players add @s ActionTime 1
-execute if entity @s[scores={ActionTime=1}] run particle minecraft:dust 1 0.9 0 1 ^0.3 ^1.1 ^1 0.3 0.3 0.3 0 5
-execute if entity @s[scores={ActionTime=1}] run playsound luigis_mansion:entity.mr_luggs.eat hostile @a[tag=same_room] ^ ^1 ^1 4
-execute if entity @s[scores={ActionTime=11}] run particle minecraft:dust 1 0.9 0 1 ^-0.3 ^1.1 ^1 0.3 0.3 0.3 0 5
-execute if entity @s[scores={ActionTime=11}] run playsound luigis_mansion:entity.mr_luggs.eat hostile @a[tag=same_room] ^ ^1 ^1 4
-execute if entity @s[scores={ActionTime=21}] run particle minecraft:dust 1 0.9 0 1 ^0.3 ^1.1 ^1 0.3 0.3 0.3 0 5
-execute if entity @s[scores={ActionTime=21}] run playsound luigis_mansion:entity.mr_luggs.eat hostile @a[tag=same_room] ^ ^1 ^1 4
-execute if entity @s[scores={ActionTime=31}] run particle minecraft:dust 1 0.9 0 1 ^-0.3 ^1.1 ^1 0.3 0.3 0.3 0 5
-execute if entity @s[scores={ActionTime=31}] run playsound luigis_mansion:entity.mr_luggs.eat hostile @a[tag=same_room] ^ ^1 ^1 4
-execute if entity @s[scores={ActionTime=41}] run particle minecraft:dust 1 0.9 0 1 ^0.3 ^1.1 ^1 0.3 0.3 0.3 0 5
-execute if entity @s[scores={ActionTime=41}] run playsound luigis_mansion:entity.mr_luggs.eat hostile @a[tag=same_room] ^ ^1 ^1 4
-execute if entity @s[scores={ActionTime=51}] run particle minecraft:dust 1 0.9 0 1 ^-0.3 ^1.1 ^1 0.3 0.3 0.3 0 5
-execute if entity @s[scores={ActionTime=51}] run playsound luigis_mansion:entity.mr_luggs.eat hostile @a[tag=same_room] ^ ^1 ^1 4
-execute if entity @s[scores={ActionTime=61}] run particle minecraft:dust 1 0.9 0 1 ^0.3 ^1.1 ^1 0.3 0.3 0.3 0 5
-execute if entity @s[scores={ActionTime=61}] run playsound luigis_mansion:entity.mr_luggs.eat hostile @a[tag=same_room] ^ ^1 ^1 4
-execute if entity @s[scores={ActionTime=71}] run particle minecraft:dust 1 0.9 0 1 ^-0.3 ^1.1 ^1 0.3 0.3 0.3 0 5
-execute if entity @s[scores={ActionTime=71}] run playsound luigis_mansion:entity.mr_luggs.eat hostile @a[tag=same_room] ^ ^1 ^1 4
-scoreboard players set @s[scores={ActionTime=80}] AnimationProg 0
-tag @s[scores={ActionTime=80}] add hit_table
-execute if entity @s[scores={ActionTime=80}] run playsound luigis_mansion:entity.mr_luggs.hit_table hostile @a[tag=same_room] ^ ^ ^2 4
-execute if entity @s[scores={ActionTime=100}] run playsound luigis_mansion:entity.mr_luggs.hit_table hostile @a[tag=same_room] ^ ^ ^2 4
-execute if entity @s[scores={ActionTime=120}] run playsound luigis_mansion:entity.mr_luggs.hit_table hostile @a[tag=same_room] ^ ^ ^2 4
-execute if entity @s[scores={ActionTime=140}] run playsound luigis_mansion:entity.mr_luggs.hit_table hostile @a[tag=same_room] ^ ^ ^2 4
-scoreboard players set @s[scores={ActionTime=150}] AnimationProg 0
-scoreboard players set @s[scores={ActionTime=150}] ActionTime 0
+execute if entity @s[scores={Dialog=..99,ActionTime=1}] run particle minecraft:dust 1 0.9 0 1 ^0.3 ^1.1 ^1 0.3 0.3 0.3 0 5
+execute if entity @s[scores={Dialog=..99,ActionTime=1}] run playsound luigis_mansion:entity.mr_luggs.eat hostile @a[tag=same_room] ^ ^1 ^1 4
+execute if entity @s[scores={Dialog=..99,ActionTime=11}] run particle minecraft:dust 1 0.9 0 1 ^-0.3 ^1.1 ^1 0.3 0.3 0.3 0 5
+execute if entity @s[scores={Dialog=..99,ActionTime=11}] run playsound luigis_mansion:entity.mr_luggs.eat hostile @a[tag=same_room] ^ ^1 ^1 4
+execute if entity @s[scores={Dialog=..99,ActionTime=21}] run particle minecraft:dust 1 0.9 0 1 ^0.3 ^1.1 ^1 0.3 0.3 0.3 0 5
+execute if entity @s[scores={Dialog=..99,ActionTime=21}] run playsound luigis_mansion:entity.mr_luggs.eat hostile @a[tag=same_room] ^ ^1 ^1 4
+execute if entity @s[scores={Dialog=..99,ActionTime=31}] run particle minecraft:dust 1 0.9 0 1 ^-0.3 ^1.1 ^1 0.3 0.3 0.3 0 5
+execute if entity @s[scores={Dialog=..99,ActionTime=31}] run playsound luigis_mansion:entity.mr_luggs.eat hostile @a[tag=same_room] ^ ^1 ^1 4
+execute if entity @s[scores={Dialog=..99,ActionTime=41}] run particle minecraft:dust 1 0.9 0 1 ^0.3 ^1.1 ^1 0.3 0.3 0.3 0 5
+execute if entity @s[scores={Dialog=..99,ActionTime=41}] run playsound luigis_mansion:entity.mr_luggs.eat hostile @a[tag=same_room] ^ ^1 ^1 4
+execute if entity @s[scores={Dialog=..99,ActionTime=51}] run particle minecraft:dust 1 0.9 0 1 ^-0.3 ^1.1 ^1 0.3 0.3 0.3 0 5
+execute if entity @s[scores={Dialog=..99,ActionTime=51}] run playsound luigis_mansion:entity.mr_luggs.eat hostile @a[tag=same_room] ^ ^1 ^1 4
+execute if entity @s[scores={Dialog=..99,ActionTime=61}] run particle minecraft:dust 1 0.9 0 1 ^0.3 ^1.1 ^1 0.3 0.3 0.3 0 5
+execute if entity @s[scores={Dialog=..99,ActionTime=61}] run playsound luigis_mansion:entity.mr_luggs.eat hostile @a[tag=same_room] ^ ^1 ^1 4
+execute if entity @s[scores={Dialog=..99,ActionTime=71}] run particle minecraft:dust 1 0.9 0 1 ^-0.3 ^1.1 ^1 0.3 0.3 0.3 0 5
+execute if entity @s[scores={Dialog=..99,ActionTime=71}] run playsound luigis_mansion:entity.mr_luggs.eat hostile @a[tag=same_room] ^ ^1 ^1 4
+scoreboard players set @s[scores={Dialog=..99,ActionTime=80}] AnimationProg 0
+tag @s[scores={Dialog=..99,ActionTime=80}] add hit_table
+execute if entity @s[scores={Dialog=..99,ActionTime=80}] run playsound luigis_mansion:entity.mr_luggs.hit_table hostile @a[tag=same_room] ^ ^ ^2 4
+execute if entity @s[scores={Dialog=..99,ActionTime=100}] run playsound luigis_mansion:entity.mr_luggs.hit_table hostile @a[tag=same_room] ^ ^ ^2 4
+execute if entity @s[scores={Dialog=..99,ActionTime=120}] run playsound luigis_mansion:entity.mr_luggs.hit_table hostile @a[tag=same_room] ^ ^ ^2 4
+execute if entity @s[scores={Dialog=..99,ActionTime=140}] run playsound luigis_mansion:entity.mr_luggs.hit_table hostile @a[tag=same_room] ^ ^ ^2 4
+scoreboard players set @s[scores={Dialog=..99,ActionTime=150}] AnimationProg 0
+scoreboard players set @s[scores={Dialog=..99,ActionTime=150}] ActionTime 0
 scoreboard players set @s[scores={Dialog=101}] ActionTime 0
 tag @s[scores={ActionTime=0}] remove hit_table
 
@@ -57,7 +57,7 @@ tag @s[scores={Dialog=221}] add rage
 tag @s[scores={Dialog=221}] remove spit
 tag @s[scores={Dialog=301}] remove rage
 tag @s[scores={Dialog=301}] add spit
-execute if entity @s[scores={Dialog=201}] run playsound luigis_mansion:entity.mr_luggs.spit hostile @a[tag=same_room] ~ ~ ~ 1
+execute if entity @s[scores={Dialog=301}] run playsound luigis_mansion:entity.mr_luggs.spit hostile @a[tag=same_room] ~ ~ ~ 1
 execute if entity @s[scores={Dialog=321}] run function luigis_mansion:entities/mr_luggs/spit_fire
 execute if entity @s[scores={Dialog=361}] run playsound luigis_mansion:entity.mr_luggs.spit_repeat hostile @a[tag=same_room] ~ ~ ~ 1
 execute if entity @s[scores={Dialog=361}] run function luigis_mansion:entities/mr_luggs/spit_fire

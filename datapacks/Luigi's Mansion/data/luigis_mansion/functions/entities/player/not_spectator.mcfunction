@@ -12,32 +12,16 @@ execute if entity @s[scores={Talk=1..},tag=!death_animation,tag=!revive_animatio
 scoreboard players set @s[scores={Talk=1..}] Talk 0
 
 execute rotated ~ 0 positioned ^ ^ ^-4 run function luigis_mansion:entities/player/spawn_ghosts
-execute if score #changing_max_health Selected matches 0 run title @s[gamemode=!creative] actionbar {"translate":"luigis_mansion:message.health","with":[{"score":{"name":"@s","objective":"Health"}}],"color":"red"}
-execute if score #changing_max_health Selected matches 1 run title @s[gamemode=!creative] actionbar {"translate":"luigis_mansion:message.health.out_of","with":[{"score":{"name":"@s","objective":"Health"}},{"score":{"name":"@s","objective":"MaxHealth"}}],"color":"red"}
 
 scoreboard players remove @s[scores={RoomNoise=1..}] RoomNoise 1
 scoreboard players remove @s[scores={Sound=1..}] Sound 1
-execute if entity @s[tag=poltergust_malfunction] run function luigis_mansion:entities/player/poltergust_breakage
-execute if entity @s[scores={Pull=20..},gamemode=!creative] run function luigis_mansion:entities/player/pulled_damage
-scoreboard players remove @s[scores={Pull=1..}] Pull 1
-tag @s remove pulled
 
 execute if entity @s[scores={Health=..0},tag=!death_animation,tag=!revive_animation] run function luigis_mansion:entities/player/death
 execute if entity @s[scores={Health=1..},tag=already_added_to_list] run function luigis_mansion:entities/player/remove_dead_entry
 tag @s[scores={Health=1..}] remove already_added_to_list
 
-execute store result score #temp ActionTime run clear @s minecraft:carrot_on_a_stick{luigis_mansion:{id:"luigis_mansion:flashlight"}} 0
-execute if score #temp ActionTime matches 0 unless entity @s[scores={Shrunk=1..}] run give @s minecraft:carrot_on_a_stick{HideFlags:63,Unbreakable:1b,Damage:1,CustomModelData:1,display:{Name:'{"italic":false,"color":"white","translate":"luigis_mansion:item.flashlight"}'},luigis_mansion:{id:"luigis_mansion:flashlight"}}
-execute store result score #temp ActionTime run clear @s minecraft:carrot_on_a_stick{luigis_mansion:{id:"luigis_mansion:poltergust_3000"}} 0
-execute if score #temp ActionTime matches 0 run experience set @s[advancements={luigis_mansion:lab/lab=true}] 0 levels
-execute if score #temp ActionTime matches 0 unless entity @s[scores={Shrunk=1..}] run give @s[advancements={luigis_mansion:lab/lab=true}] minecraft:carrot_on_a_stick{HideFlags:63,Unbreakable:1b,Damage:1,CustomModelData:0,display:{Name:'{"italic":false,"color":"white","translate":"luigis_mansion:item.poltergust_3000"}',Lore:['{"italic":false,"color":"gray","translate":"luigis_mansion:item.poltergust_3000.element","with":[{"translate":"luigis_mansion:item.poltergust_3000.element.none","color":"gray"}]}']},luigis_mansion:{id:"luigis_mansion:poltergust_3000",element:{type:0b}}}
-execute store result score #temp ActionTime run clear @s minecraft:carrot_on_a_stick{luigis_mansion:{id:"luigis_mansion:gameboy_horror"}} 0
-execute if score #temp ActionTime matches 0 unless entity @s[scores={Shrunk=1..}] run give @s[advancements={luigis_mansion:lab/lab=true}] minecraft:carrot_on_a_stick{HideFlags:63,Unbreakable:1b,Damage:2,CustomModelData:0,display:{Name:'{"italic":false,"color":"white","translate":"luigis_mansion:item.gameboy_horror"}'},luigis_mansion:{id:"luigis_mansion:gameboy_horror"}}
-clear @s[advancements={luigis_mansion:lab/lab=true}] minecraft:diamond_pickaxe{luigis_mansion:{id:"luigis_mansion:contest_reward_map"}}
-scoreboard players reset #temp ActionTime
-execute as @e[distance=..3,type=minecraft:item] unless entity @s[nbt=!{Item:{tag:{luigis_mansion:{id:"luigis_mansion:flashlight"}}}},nbt=!{Item:{tag:{luigis_mansion:{id:"luigis_mansion:poltergust_3000"}}}},nbt=!{Item:{tag:{luigis_mansion:{id:"luigis_mansion:gameboy_horror"}}}}] run kill @s
-
-execute if entity @s[scores={Shrunk=2..}] run function luigis_mansion:items/poison_mushroom/visual
+function luigis_mansion:entities/player/health_display
+function luigis_mansion:entities/player/give_items
 
 execute unless entity @s[scores={Invulnerable=0..}] run scoreboard players set @s Invulnerable 0
 scoreboard players remove @s[scores={Invulnerable=1..}] Invulnerable 1

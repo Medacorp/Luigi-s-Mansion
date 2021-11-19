@@ -1,5 +1,8 @@
 scoreboard players set @s Shruk 201
 playsound luigis_mansion:item.poison_mushroom.obtain player @a[tag=same_room] ~ ~ ~ 1
+scoreboard players operation #temp ID = @s ID
+execute as @e[tag=model_piece,nbt=!{Small:1b}] if score @s ID = #temp ID run data merge entity @s {Small:1b}
+scoreboard players reset #temp ID
 function luigis_mansion:entities/player/get_my_coins
 execute if score #temp ActionTime matches 1.. run function luigis_mansion:entities/player/drop_gold_coins
 execute if score #temp ActionTime matches 1.. positioned ~ ~2 ~ run function luigis_mansion:spawn_entities/item/gold_coin

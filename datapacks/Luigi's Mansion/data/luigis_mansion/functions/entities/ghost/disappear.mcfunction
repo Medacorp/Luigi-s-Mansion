@@ -22,10 +22,13 @@ tag @s[tag=disappear_on_vanish] add remove_from_existence
 scoreboard players set @s SpawnTime 200
 scoreboard players set @s Time 0
 scoreboard players set @s ActionTime 0
+scoreboard players set @s PathStep 0
+scoreboard players reset @s SecondFleeState
 scoreboard players operation @s LastHealth = @s Health
 tag @s remove disappear
 tag @s remove disappear_next_tick
 tag @s remove hurt_animation
 tag @s remove vanish
 tag @s remove visible
+tag @s remove second_flee_state
 tag @s add hidden

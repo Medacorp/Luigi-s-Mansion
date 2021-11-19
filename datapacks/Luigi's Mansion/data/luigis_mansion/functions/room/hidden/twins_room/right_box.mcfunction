@@ -13,5 +13,5 @@ tag @e[distance=..0.7,tag=orville] add hide_and_seek
 tag @e[distance=..0.7,tag=orville] add appear
 scoreboard players set @e[distance=..0.7,tag=orville] Room 49
 
-execute unless score #temp Time matches 1 run playsound luigis_mansion:music.solve_puzzle music @a[tag=same_room] ~ ~ ~ 10000
-execute unless score #temp Time matches 1 run scoreboard players set @a[tag=same_room,scores={Music=..30}] Music 30
+execute unless score #temp Time matches 1 run playsound luigis_mansion:music.solve_puzzle music @a[scores={Room=49}] ~ ~ ~ 10000
+execute unless score #temp Time matches 1 run scoreboard players set @a[scores={Room=49,Music=..30}] Music 30

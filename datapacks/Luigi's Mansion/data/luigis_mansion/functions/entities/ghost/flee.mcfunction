@@ -5,6 +5,7 @@ tag @s add me
 function luigis_mansion:entities/ghost/clear_non_vacuumers
 function luigis_mansion:entities/ghost/pull
 tag @s remove me
+execute at @s[tag=second_flee_state] run function luigis_mansion:entities/ghost/second_flee_state
 execute if entity @s[tag=!can_pull] run scoreboard players set #temp Move 4
 execute if score #temp Move matches 1.. at @s[tag=!ground_bound] rotated ~ 0 run function luigis_mansion:entities/ghost/move_flee
 execute if score #temp Move matches 1.. at @s[tag=ground_bound] rotated ~ 0 run function luigis_mansion:entities/ghost/move_flee_ground_bound

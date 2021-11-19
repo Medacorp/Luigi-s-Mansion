@@ -13,10 +13,11 @@ execute as @e[tag=bogmire,tag=this_entity,limit=1] store result score @s HomeRot
 execute as @e[tag=bogmire,tag=this_entity,limit=1] store result score @s PrevHealth store result score @s LastHealth store result score @s Health run data get storage luigis_mansion:data current_state.current_data.portrait_ghosts.bogmire.health
 execute as @e[tag=bogmire,tag=this_entity,limit=1] store result score @s MaxHealth run data get storage luigis_mansion:data current_state.current_data.portrait_ghosts.bogmire.max_health
 execute as @e[tag=bogmire,tag=this_entity,limit=1] store result score @s TopVacuumDamage run data get storage luigis_mansion:data current_state.current_data.portrait_ghosts.bogmire.top_vacuum_damage
-scoreboard players set @e[tag=bogmire,tag=this_entity,limit=1] PullStrength 7
+scoreboard players set @e[tag=bogmire,tag=this_entity,limit=1] PullStrength 0
 scoreboard players set @e[tag=bogmire,tag=this_entity,limit=1] Move 5
 scoreboard players set @e[tag=bogmire,tag=this_entity,limit=1] Sound 0
 scoreboard players set @e[tag=bogmire,tag=this_entity,limit=1] StunTime 0
 scoreboard players set @e[tag=bogmire,tag=this_entity,limit=1] VulnerableTime 0
+scoreboard players set @e[tag=bogmire,tag=this_entity,limit=1] SecondFleeDamage -1
 scoreboard players set @e[tag=bogmire,tag=this_entity,limit=1] HeartOffset -2
 tag @e[tag=this_entity] remove this_entity

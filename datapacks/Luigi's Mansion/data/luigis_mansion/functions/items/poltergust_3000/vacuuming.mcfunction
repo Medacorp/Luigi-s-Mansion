@@ -6,6 +6,13 @@ execute as @e[tag=ghost,tag=same_room,scores={VulnerableTime=1..}] run function 
 execute if score #temp GhostCount > @s GhostCount run scoreboard players operation @s GhostCount = #temp GhostCount
 execute if score #temp GhostCount matches 1.. as @e[tag=ghost,tag=being_vacuumed] run function luigis_mansion:items/poltergust_3000/catch_ghost
 execute if score #temp GhostCount matches 1.. as @e[tag=ghost,tag=being_vacuumed] facing entity @s feet run function luigis_mansion:items/poltergust_3000/vacuuming/ghost
+execute if score #temp GhostCount matches 1.. run tag @s[tag=is_pulling] remove made_error
+execute if score #temp GhostCount matches 1.. run scoreboard players set @s[tag=is_pulling] ErrorTime 0
+execute if score #temp GhostCount matches 1.. run scoreboard players add @s[tag=!is_pulling] ErrorTime 1
+execute if score #temp GhostCount matches 1.. if entity @s[scores={ErrorTime=5..}] run function luigis_mansion:items/poltergust_3000/vacuuming/made_error
+execute unless score #temp GhostCount matches 1.. run tag @s remove made_error
+execute unless score #temp GhostCount matches 1.. run scoreboard players set @s VacuumErrors 0
+execute unless score #temp GhostCount matches 1.. run scoreboard players set @s ErrorTime 0
 execute unless score #temp GhostCount matches 1.. unless entity @e[tag=ball,distance=..2.5,tag=can_spit,limit=1] run function luigis_mansion:items/poltergust_3000/vacuuming/default
 execute unless score #temp GhostCount matches 1.. if entity @e[tag=ball,distance=..2.5,tag=can_spit,sort=nearest,limit=1] run function luigis_mansion:items/poltergust_3000/vacuuming/get_clogged
 execute if score #temp GhostCount matches 1.. run tag @s add vacuuming_ghost
@@ -19,6 +26,7 @@ tag @s remove expelling_dust
 tag @s remove expelling_fire
 tag @s remove expelling_water
 tag @s remove expelling_ice
+scoreboard players set @s[tag=!made_error] Pull 0
 execute if entity @s[scores={DamagePitch=1,DamagePitchTimer=6}] run playsound luigis_mansion:entity.ghost.lose_health hostile @a ~ ~ ~ 1 1
 execute if entity @s[scores={DamagePitch=2,DamagePitchTimer=6}] run playsound luigis_mansion:entity.ghost.lose_health hostile @a ~ ~ ~ 1 1.2
 execute if entity @s[scores={DamagePitch=3,DamagePitchTimer=6}] run playsound luigis_mansion:entity.ghost.lose_health hostile @a ~ ~ ~ 1 1.4

@@ -1,0 +1,19 @@
+fill ~ ~ ~ ~ ~ ~ minecraft:black_concrete replace minecraft:pink_concrete
+execute positioned ~2 ~ ~ if block ~ ~ ~ minecraft:pink_concrete run function luigis_mansion:add_ons/missingno_room
+execute positioned ~-2 ~ ~ if block ~ ~ ~ minecraft:pink_concrete run function luigis_mansion:add_ons/missingno_room
+execute positioned ~ ~2 ~ if block ~ ~ ~ minecraft:pink_concrete run function luigis_mansion:add_ons/missingno_room
+execute positioned ~ ~-2 ~ if block ~ ~ ~ minecraft:pink_concrete run function luigis_mansion:add_ons/missingno_room
+execute positioned ~ ~ ~2 if block ~ ~ ~ minecraft:pink_concrete run function luigis_mansion:add_ons/missingno_room
+execute positioned ~ ~ ~-2 if block ~ ~ ~ minecraft:pink_concrete run function luigis_mansion:add_ons/missingno_room
+execute positioned ~1 ~1 ~ if block ~ ~ ~ minecraft:pink_concrete run function luigis_mansion:add_ons/missingno_room
+execute positioned ~1 ~-1 ~ if block ~ ~ ~ minecraft:pink_concrete run function luigis_mansion:add_ons/missingno_room
+execute positioned ~1 ~ ~1 if block ~ ~ ~ minecraft:pink_concrete run function luigis_mansion:add_ons/missingno_room
+execute positioned ~1 ~ ~-1 if block ~ ~ ~ minecraft:pink_concrete run function luigis_mansion:add_ons/missingno_room
+execute positioned ~-1 ~1 ~ if block ~ ~ ~ minecraft:pink_concrete run function luigis_mansion:add_ons/missingno_room
+execute positioned ~-1 ~-1 ~ if block ~ ~ ~ minecraft:pink_concrete run function luigis_mansion:add_ons/missingno_room
+execute positioned ~-1 ~ ~1 if block ~ ~ ~ minecraft:pink_concrete run function luigis_mansion:add_ons/missingno_room
+execute positioned ~-1 ~ ~-1 if block ~ ~ ~ minecraft:pink_concrete run function luigis_mansion:add_ons/missingno_room
+execute positioned ~ ~1 ~1 if block ~ ~ ~ minecraft:pink_concrete run function luigis_mansion:add_ons/missingno_room
+execute positioned ~ ~1 ~-1 if block ~ ~ ~ minecraft:pink_concrete run function luigis_mansion:add_ons/missingno_room
+execute positioned ~ ~-1 ~1 if block ~ ~ ~ minecraft:pink_concrete run function luigis_mansion:add_ons/missingno_room
+execute positioned ~ ~-1 ~-1 if block ~ ~ ~ minecraft:pink_concrete run function luigis_mansion:add_ons/missingno_room

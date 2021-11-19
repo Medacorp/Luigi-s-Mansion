@@ -23,6 +23,7 @@ scoreboard objectives add EGaddGallChoice trigger
 scoreboard objectives add EGaddGPRChoice trigger
 scoreboard objectives add EGaddLabChoice trigger
 scoreboard objectives add EGaddTrainChoice trigger
+scoreboard objectives add ErrorTime dummy
 scoreboard objectives add FakeDoors dummy
 scoreboard objectives add FlashlightType trigger
 scoreboard objectives add FlyTime dummy
@@ -57,6 +58,7 @@ scoreboard objectives add Jump minecraft.custom:minecraft.jump
 scoreboard objectives add JumpHeight dummy
 scoreboard objectives add Keys dummy
 scoreboard objectives add KillerID dummy
+scoreboard objectives add KnockbackTime dummy
 scoreboard objectives add LastFloor dummy
 scoreboard objectives add LastHealth dummy
 scoreboard objectives add LastRoom dummy
@@ -112,6 +114,8 @@ scoreboard objectives add Run minecraft.custom:minecraft.sprint_one_cm
 scoreboard objectives add Search dummy
 scoreboard objectives add Searched dummy
 scoreboard objectives add Searching dummy
+scoreboard objectives add SecondFleeDamage dummy
+scoreboard objectives add SecondFleeState dummy
 scoreboard objectives add Selected dummy
 scoreboard objectives add Shrunk dummy
 scoreboard objectives add ShrunkNr dummy
@@ -141,6 +145,7 @@ scoreboard objectives add Turn dummy
 scoreboard objectives add TwinsChoice trigger
 scoreboard objectives add UseItem minecraft.used:minecraft.carrot_on_a_stick
 scoreboard objectives add Vacuumables dummy
+scoreboard objectives add VacuumErrors dummy
 scoreboard objectives add VacuumTime dummy
 scoreboard objectives add Variant dummy
 scoreboard objectives add VulnerableTime dummy

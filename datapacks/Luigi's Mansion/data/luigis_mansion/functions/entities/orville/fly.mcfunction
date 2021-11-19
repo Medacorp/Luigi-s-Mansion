@@ -21,7 +21,7 @@ execute at @s[tag=!planeless,tag=!in_vacuum,tag=!vanish,tag=!laugh] run function
 
 execute if entity @s[scores={WaitTime=0},tag=laugh] facing entity @e[tag=same_room,tag=!spectator,sort=nearest,limit=1] feet rotated ~ 0 run teleport @s ~ ~ ~ ~ ~
 execute at @s run tp @s ~ ~0.2 ~
-execute at @s unless entity @s[scores={WaitTime=0},tag=laugh] at @s[tag=!vanish,tag=!planeless,tag=!grab_vehicle,scores={StunTime=0}] run function luigis_mansion:entities/orville/move
+execute at @s at @s[tag=!laugh,tag=!vanish,tag=!planeless,tag=!grab_vehicle,scores={StunTime=0}] run function luigis_mansion:entities/orville/move
 execute at @s run tp @s ~ ~-0.2 ~
 
 execute at @s[tag=!planeless] rotated ~ 0 positioned ^ ^ ^0.4 run teleport @e[tag=this_plane,limit=1] ~ ~-1.2 ~ ~ ~
