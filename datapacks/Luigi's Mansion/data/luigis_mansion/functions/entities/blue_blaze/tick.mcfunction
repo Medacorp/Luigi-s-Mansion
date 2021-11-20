@@ -18,7 +18,7 @@ execute if entity @s[scores={Sound=0},tag=fleeing,tag=!dying] run playsound luig
 execute if entity @s[scores={Sound=0},tag=!vanish,tag=!fleeing,tag=!attack,tag=!smug,tag=!laugh,tag=!complain,tag=!appear,tag=!basher] run playsound luigis_mansion:entity.blue_blaze.ambient hostile @a[tag=same_room] ~ ~ ~ 1
 scoreboard players set @s[scores={Sound=0}] Sound 40
 
-execute if entity @a[tag=!spectator,distance=..0.7,limit=1] if entity @s[tag=!vanish,tag=!appear,tag=!dying,tag=!dead,tag=!removed_from_existence,tag=!basher] unless entity @s[tag=attack,tag=body_slam] run function luigis_mansion:entities/blue_blaze/collide
+execute if entity @a[tag=!spectator,distance=..0.7,limit=1] if entity @s[tag=!vanish,tag=!appear,tag=!dying,tag=!dead,tag=!removed_from_existence,tag=!basher,tag=!hurt,tag=!fleeing,tag=!element_hurt] unless entity @s[tag=attack,tag=body_slam] run function luigis_mansion:entities/blue_blaze/collide
 execute if entity @s[tag=!punch,tag=!body_slam,tag=!basher] run function luigis_mansion:entities/blue_blaze/select_attack/earthquake
 execute if entity @s[tag=punch] run function luigis_mansion:entities/blue_blaze/select_attack/punch
 execute if entity @s[tag=body_slam] run function luigis_mansion:entities/blue_blaze/select_attack/body_slam

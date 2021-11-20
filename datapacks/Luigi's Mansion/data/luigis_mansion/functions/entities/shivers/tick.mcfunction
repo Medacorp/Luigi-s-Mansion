@@ -11,7 +11,7 @@ scoreboard players set @s[scores={HurtTime=1},tag=hurt,tag=!fleeing,tag=!dying] 
 execute if entity @s[scores={Sound=0},tag=fleeing,tag=!dying] run playsound luigis_mansion:entity.shivers.flee hostile @a[tag=same_room] ~ ~ ~ 1
 scoreboard players set @s[scores={Sound=0},tag=fleeing,tag=!dying] Sound 40
 
-execute if entity @e[tag=same_room,tag=!spectator,distance=..1.6,limit=1] if entity @s[tag=!vanish,tag=!dying,tag=!dead,tag=!removed_from_existence,tag=visible] run function luigis_mansion:entities/shivers/collide
+execute if entity @e[tag=same_room,tag=!spectator,distance=..1.6,limit=1] if entity @s[tag=!vanish,tag=!dying,tag=!dead,tag=!removed_from_existence,tag=visible,tag=!hurt,tag=!fleeing] run function luigis_mansion:entities/shivers/collide
 
 execute if entity @s[tag=!fleeing,tag=!hurt,scores={StunTime=0}] run function #luigis_mansion:entities/shivers/tick
 

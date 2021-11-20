@@ -13,8 +13,6 @@ scoreboard players set @s[scores={HurtTime=1},tag=boo_hurt,tag=!fleeing] Sound 4
 execute if entity @s[scores={Sound=0},tag=fleeing,tag=!dying] run playsound luigis_mansion:entity.king_boo.flee hostile @a[tag=same_room] ~ ~ ~ 1
 scoreboard players set @s[scores={Sound=0}] Sound 40
 
-execute if entity @e[tag=same_room,tag=!spectator,distance=..0.7,limit=1] if entity @s[tag=!dying,tag=!dead,tag=!removed_from_existence] run function luigis_mansion:entities/king_boo/collide
-
 execute at @s[tag=magic] run function luigis_mansion:animations/boo/magic
 execute at @s[tag=laugh] run function luigis_mansion:entities/king_boo/laugh
 execute at @s[tag=complain] run function luigis_mansion:animations/boo/hurt

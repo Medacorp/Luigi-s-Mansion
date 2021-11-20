@@ -1,6 +1,6 @@
 execute if entity @s[tag=!carless] as @e[tag=car,scores={GhostNr=-2147483648..}] if score @s GhostNr = #temp GhostNr run tag @s add this_car
 
-execute if entity @e[tag=same_room,tag=!spectator,distance=..0.7,limit=1] if entity @s[scores={VulnerableTime=0},tag=!vanish] run function luigis_mansion:entities/henry/collide
+execute if entity @e[tag=same_room,tag=!spectator,distance=..0.7,limit=1] if entity @s[scores={VulnerableTime=0},tag=!vanish,tag=!hurt,tag=!fleeing] run function luigis_mansion:entities/henry/collide
 
 scoreboard players add @s[tag=in_vacuum,scores={WaitTime=40..}] VacuumTime 1
 scoreboard players set @s[tag=!in_vacuum_2,tag=!in_vacuum,scores={VacuumTime=1..39}] AnimationProg 0

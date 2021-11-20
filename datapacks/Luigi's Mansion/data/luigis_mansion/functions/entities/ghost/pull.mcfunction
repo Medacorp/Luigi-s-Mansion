@@ -1,7 +1,3 @@
-# boss 0
-# portrait 10
-# big 15
-# small 20
 scoreboard players add @s Pull 1
 scoreboard players remove @s[tag=is_pulled] Pull 5
 scoreboard players set @s[scores={Pull=..-1}] Pull 0

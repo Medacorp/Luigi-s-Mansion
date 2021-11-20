@@ -18,7 +18,7 @@ execute if entity @s[scores={Sound=0},tag=fleeing,tag=!dying] run playsound luig
 execute if entity @s[scores={Sound=0},tag=!vanish,tag=!fleeing,tag=!attack,tag=!laugh,tag=!complain,tag=!appear,tag=!basher] run playsound luigis_mansion:entity.gold_ghost.ambient hostile @a[tag=same_room] ~ ~ ~ 1
 scoreboard players set @s[scores={Sound=0}] Sound 40
 
-execute if entity @e[tag=same_room,tag=!spectator,distance=..0.7,limit=1] if entity @s[tag=!dialog,tag=!vanish,tag=!appear,tag=!dying,tag=!dead,tag=!removed_from_existence,tag=!basher,tag=!no_attack] run function luigis_mansion:entities/gold_ghost/collide
+execute if entity @e[tag=same_room,tag=!spectator,distance=..0.7,limit=1] if entity @s[tag=!dialog,tag=!vanish,tag=!appear,tag=!dying,tag=!dead,tag=!removed_from_existence,tag=!basher,tag=!no_attack,tag=!hurt,tag=!fleeing,tag=!element_hurt] run function luigis_mansion:entities/gold_ghost/collide
 execute if entity @s[tag=!basher,tag=!no_attack] run function luigis_mansion:entities/gold_ghost/select_attack/punch
 execute if entity @s[tag=basher] run function luigis_mansion:entities/gold_ghost/select_attack/basher
 execute if entity @s[tag=no_attack] run function luigis_mansion:entities/gold_ghost/select_attack/laugh

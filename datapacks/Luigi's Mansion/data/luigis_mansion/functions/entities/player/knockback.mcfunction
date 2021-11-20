@@ -30,7 +30,8 @@ execute at @s[scores={KnockbackTime=21..,KnockbackType=3}] facing entity @e[type
 
 execute at @s[scores={KnockbackTime=20..,KnockbackType=4}] if score #mirrored Selected matches 0 run teleport @s ^ ^ ^ ~-10 ~
 execute at @s[scores={KnockbackTime=20..,KnockbackType=4}] if score #mirrored Selected matches 1 run teleport @s ^ ^ ^ ~10 ~
-execute at @s[scores={KnockbackType=5..,KnockbackType=4}] run particle minecraft:smoke ~ ~1 ~ 0.2 0.2 0.2 1 3 normal @a[tag=same_room]
+# move to head animation
+execute at @s[scores={KnockbackType=5..,KnockbackType=4}] run particle minecraft:smoke ~ ~1.9 ~ 0.2 0.2 0.2 0 3 normal @a[tag=same_room]
 execute at @s[scores={KnockbackType=..19,KnockbackType=4}] run function luigis_mansion:entities/player/knockback_lock_position
 
 execute at @s[scores={KnockbackType=1..,KnockbackType=5}] run summon minecraft:marker ~ ~ ~ {Tags:["home"]}
@@ -40,7 +41,8 @@ execute at @s[scores={KnockbackType=1..,KnockbackType=5}] store result entity @e
 execute at @s[scores={KnockbackType=1..,KnockbackType=5}] store result entity @e[tag=home,limit=1] Rotation[0] float 0.01 run scoreboard players get @s RotY
 execute at @s[scores={KnockbackType=1..,KnockbackType=5}] store result entity @e[tag=home,limit=1] Rotation[1] float 0.01 run scoreboard players get @s RotX
 execute at @s[scores={KnockbackType=1..,KnockbackType=5}] at @e[tag=home,limit=1] run tp @s ~ ~ ~ ~ ~
-execute at @s[scores={KnockbackType=3..,KnockbackType=5}] run particle minecraft:falling_water ~ ~1 ~ 0.4 0.4 0.4 1 10 normal @a[tag=same_room]
+# move to head animation
+execute at @s[scores={KnockbackType=3..,KnockbackType=5}] run particle minecraft:falling_water ~ ~1 ~ 0.4 0.4 0.4 0 10 normal @a[tag=same_room]
 execute at @s[scores={KnockbackType=1..,KnockbackType=5}] run kill @e[tag=home,limit=1]
 
 execute at @s[scores={KnockbackType=1..,KnockbackType=6}] run summon minecraft:marker ~ ~ ~ {Tags:["home"]}
@@ -54,7 +56,8 @@ execute at @s[scores={KnockbackType=1..,KnockbackType=6}] at @e[tag=home,limit=1
 scoreboard players set @s[scores={KnockbackType=10..,KnockbackType=6,Invulnerable=6..}] Invulnerable 5
 execute at @s[scores={KnockbackType=10..,KnockbackType=6}] run effect give @s minecraft:instant_damage 1 0 true
 execute at @s[scores={KnockbackType=10..,KnockbackType=6}] run scoreboard players set @s ForcedDamage -5
-execute at @s[scores={KnockbackType=10..,KnockbackType=6}] run particle minecraft:firework ~ ~1 ~ 0.4 0.4 0.4 1 10 normal @a[tag=same_room]
+# move to head animation
+execute at @s[scores={KnockbackType=10..,KnockbackType=6}] run particle minecraft:firework ~ ~1 ~ 0.4 0.4 0.4 0 10 normal @a[tag=same_room]
 scoreboard players set @s[scores={KnockbackTime=10,KnockbackType=6}] Invulnerable 70
 execute at @s[scores={KnockbackType=1..,KnockbackType=6}] run kill @e[tag=home,limit=1]
 
