@@ -10,11 +10,13 @@ execute if score #mirrored Selected matches 1 run teleport @s[scores={ActionTime
 execute at @s[scores={ActionTime=20},tag=spin_attack] as @e[distance=..2,tag=gameboy_horror_location] run function luigis_mansion:entities/gameboy_horror_location/bring_player_back
 execute at @s[scores={ActionTime=20},tag=spin_attack] run effect give @a[distance=..2,tag=!spectator] minecraft:instant_damage 1 0 true
 execute at @s[scores={ActionTime=20},tag=spin_attack] run scoreboard players set @a[distance=..2,tag=!spectator] ForcedDamage 4
+execute at @s[scores={ActionTime=20},tag=spin_attack] as @a[distance=..2,tag=!spectator] run function luigis_mansion:entities/player/knockback/large
 execute at @s[scores={ActionTime=20},tag=spin_attack,tag=stop_dancing] unless entity @a[distance=..2,tag=!spectator] run tag @s add complain
 execute at @s[scores={ActionTime=20},tag=spin_attack,tag=stop_dancing] if entity @a[distance=..2,tag=!spectator] run scoreboard players set @s WaitTime 40
 execute at @s[scores={ActionTime=20},tag=!spin_attack] positioned ^ ^ ^0.7 as @e[distance=..1,tag=gameboy_horror_location] run function luigis_mansion:entities/gameboy_horror_location/bring_player_back
 execute at @s[scores={ActionTime=20},tag=!spin_attack] positioned ^ ^ ^0.7 run effect give @a[distance=..1,tag=!spectator] minecraft:instant_damage 1 0 true
 execute at @s[scores={ActionTime=20},tag=!spin_attack] positioned ^ ^ ^0.7 run scoreboard players set @a[distance=..1,tag=!spectator] ForcedDamage 4
+execute at @s[scores={ActionTime=20},tag=!spin_attack] positioned ^ ^ ^0.7 as @a[distance=..1,tag=!spectator] positioned ^ ^ ^-0.7 run function luigis_mansion:entities/player/knockback/large
 execute at @s[scores={ActionTime=20},tag=!spin_attack,tag=stop_dancing] positioned ^ ^ ^0.7 unless entity @a[distance=..1,tag=!spectator] run tag @s add complain
 execute at @s[scores={ActionTime=20},tag=!spin_attack,tag=stop_dancing] positioned ^ ^ ^0.7 if entity @a[distance=..1,tag=!spectator] run scoreboard players set @s WaitTime 40
 tag @s[scores={ActionTime=30}] remove attack

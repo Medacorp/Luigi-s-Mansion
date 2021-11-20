@@ -46,6 +46,9 @@
         "cinema_ghost": {
             "trigger": "minecraft:impossible"
         },
+        "waiter": {
+            "trigger": "minecraft:impossible"
+        },
         "ghost_guy": {
             "trigger": "minecraft:impossible"
         },
@@ -94,10 +97,28 @@
         "elemental_ghost": {
             "trigger": "minecraft:impossible"
         },
+        "neville": {
+            "trigger": "minecraft:impossible"
+        },
+        "floating_whirlindas": {
+            "trigger": "minecraft:impossible"
+        },
+        "shivers": {
+            "trigger": "minecraft:impossible"
+        },
+        "mr_luggs": {
+            "trigger": "minecraft:impossible"
+        },
+        "nana": {
+            "trigger": "minecraft:impossible"
+        },
         "henry": {
             "trigger": "minecraft:impossible"
         },
         "orville": {
+            "trigger": "minecraft:impossible"
+        },
+        "uncle_grimmly": {
             "trigger": "minecraft:impossible"
         },
         "bowser": {

@@ -1,9 +1,9 @@
 tag @s remove dark_room
 function #luigis_mansion:room/dark_room
 
-execute if entity @s[tag=!looking_at_map,tag=!death_animation,tag=!revive_animation] run function #luigis_mansion:items
-execute if entity @s[tag=!death_animation,tag=!revive_animation] run function luigis_mansion:items/gameboy_horror
-execute if entity @s[tag=!death_animation,tag=!revive_animation] run function luigis_mansion:blocks/gravity_swap
+execute if entity @s[tag=!looking_at_map,tag=!death_animation,tag=!revive_animation] unless entity @s[scores={KnockbackType=2..}] run function #luigis_mansion:items
+execute if entity @s[tag=!death_animation,tag=!revive_animation] unless entity @s[scores={KnockbackType=2..}] run function luigis_mansion:items/gameboy_horror
+execute if entity @s[tag=!death_animation,tag=!revive_animation] unless entity @s[scores={KnockbackType=2..}] run function luigis_mansion:blocks/gravity_swap
 execute if entity @s[tag=!death_animation,tag=!revive_animation] run function luigis_mansion:blocks/blockade
 execute if entity @s[tag=warp] run function luigis_mansion:items/gameboy_horror/warp
 execute if entity @s[tag=grabbed] run function luigis_mansion:entities/player/grabbed
@@ -35,6 +35,8 @@ execute if entity @s[scores={MaxHealthTime=1}] if score @s MaxHealth < @s Health
 execute unless entity @s[scores={MaxHealth=100}] unless entity @s[scores={Walk=0..2,Run=0..2,Sneak=0}] run scoreboard players add @s MaxHealthTime 1
 scoreboard players set @s[scores={MaxHealthTime=200}] MaxHealth 100
 scoreboard players reset @s[scores={MaxHealthTime=200}] MaxHealthTime
+
+execute if entity @s[scores={KnockbackTime=1..}] run function luigis_mansion:entities/player/knockback
 
 execute if entity @s[scores={Walk=1..},tag=!looking_at_map] run particle minecraft:dust 0.5 0.5 0.5 1.2 ~ ~0.2 ~ 0 0 0 0 1
 execute if entity @s[scores={Run=1..},tag=!looking_at_map] run particle minecraft:dust 0.5 0.5 0.5 2 ~ ~0.2 ~ 0 0 0 0 1

@@ -1,9 +1,10 @@
 tag @s add this_luigi
 scoreboard players operation #temp ID = @s ID
-data modify storage luigis_mansion:data luigi set value {tags:[],gliding:0b,swimming:0b,mainhand:{},offhand:{}}
+data modify storage luigis_mansion:data luigi set value {tags:[],gliding:0b,swimming:0b,invulnerable:0b,mainhand:{},offhand:{}}
 data modify storage luigis_mansion:data luigi.tags set from entity @s Tags
 data modify storage luigis_mansion:data luigi.gliding set from entity @s FallFlying
 execute store result storage luigis_mansion:data luigi.swimming byte 1 if entity @s[tag=swimming]
+execute store result storage luigis_mansion:data luigi.invulnerable byte 1 if entity @s[scores={Invulnerable=1..60}]
 data modify storage luigis_mansion:data luigi.mainhand set from entity @s SelectedItem
 data modify storage luigis_mansion:data luigi.offhand set from entity @s Inventory[{Slot:-106b}]
 execute as @e[type=minecraft:armor_stand,tag=luigi_model,tag=!found_owner] if score @s ID = #temp ID run tag @s add this_luigi

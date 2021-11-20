@@ -59,6 +59,9 @@ scoreboard objectives add JumpHeight dummy
 scoreboard objectives add Keys dummy
 scoreboard objectives add KillerID dummy
 scoreboard objectives add KnockbackTime dummy
+scoreboard objectives add KnockbackType dummy
+scoreboard objectives add KnockbackX dummy
+scoreboard objectives add KnockbackZ dummy
 scoreboard objectives add LastFloor dummy
 scoreboard objectives add LastHealth dummy
 scoreboard objectives add LastRoom dummy
@@ -78,6 +81,7 @@ scoreboard objectives add MirrorZ dummy
 scoreboard objectives add ModelTime dummy
 scoreboard objectives add Money dummy
 scoreboard objectives add Move dummy
+scoreboard objectives add MushroomTimer dummy
 scoreboard objectives add Music dummy
 scoreboard objectives add MusicGroup dummy
 scoreboard objectives add MusicType dummy

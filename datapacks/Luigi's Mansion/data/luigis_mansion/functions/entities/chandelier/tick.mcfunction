@@ -16,6 +16,7 @@ execute at @s[scores={ActionTime=52}] run fill ~-2 ~ ~-2 ~1 ~3 ~1 minecraft:air 
 execute at @s[scores={ActionTime=2..52}] align xz as @e[distance=..2,tag=gameboy_horror_location] run function luigis_mansion:entities/gameboy_horror_location/bring_player_back
 execute at @s[scores={ActionTime=2..52}] align xz run effect give @a[distance=..2,tag=!spectator] minecraft:instant_damage 1 0 true
 execute at @s[scores={ActionTime=2..52}] align xz run scoreboard players set @a[distance=..2,tag=!spectator] ForcedDamage 4
+execute at @s[scores={ActionTime=2..52}] align xz as @a[distance=..2,tag=!spectator] run function luigis_mansion:entities/player/knockback/large
 execute at @s[scores={ActionTime=2..52}] align xz if entity @a[distance=..2,tag=!spectator] run tag @s add hit
 execute at @s[scores={ActionTime=52}] unless block ~ ~-1 ~ minecraft:air run scoreboard players add @s ActionTime 1
 execute if entity @s[scores={ActionTime=53}] align xz run playsound luigis_mansion:block.chandelier.land hostile @a[tag=same_room] ~ ~ ~ 2

@@ -1,6 +1,7 @@
 scoreboard players set #freeze_timer Selected 1
 scoreboard players add @s Dialog 1
 execute unless entity @s[scores={Dialog=1572..}] as @a[tag=same_room,distance=..5.9,limit=1] run teleport @s 645 93 33 90 0
+execute if entity @s[scores={Dialog=1}] run scoreboard players set #can_warp Selected 0
 execute if entity @s[scores={Dialog=1..1596}] as @a[tag=same_room] unless entity @s[scores={MusicGroup=0,MusicType=31}] run function luigis_mansion:other/music/set/talking_king_boo
 execute if entity @s[scores={Dialog=1}] run tellraw @a[tag=same_room] {"translate":"chat.type.text","with":[{"translate":"luigis_mansion:entity.king_boo","color":"green"},{"translate":"luigis_mansion:dialog.king_boo.1"}]}
 execute if entity @s[scores={Dialog=216}] run tellraw @a[tag=same_room] {"translate":"chat.type.text","with":[{"translate":"luigis_mansion:entity.king_boo","color":"green"},{"translate":"luigis_mansion:dialog.king_boo.2"}]}
@@ -27,6 +28,7 @@ execute if entity @s[scores={Dialog=1572..1582}] run teleport @s ~0.1 ~ ~
 execute if entity @s[scores={Dialog=1582}] run teleport @s 640 93 33
 tag @s[scores={Dialog=1595}] add magic
 scoreboard players set @s[scores={Dialog=1596}] AnimationProg 0
+execute if entity @s[scores={Dialog=1596}] run function #luigis_mansion:room/hidden/secret_altar/turn_lights/off
 execute if entity @s[scores={Dialog=1595}] run playsound luigis_mansion:entity.king_boo.magic hostile @a[tag=same_room] ~ ~ ~ 1
 execute if entity @s[scores={Dialog=1596}] run stopsound @a[tag=same_room] music
 execute if entity @s[scores={Dialog=1596}] run playsound luigis_mansion:music.sucked_into_painting music @a[tag=same_room] ~ ~ ~ 10000

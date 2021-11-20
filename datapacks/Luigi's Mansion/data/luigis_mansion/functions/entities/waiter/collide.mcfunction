@@ -1,0 +1,2 @@
+advancement grant @a[tag=!spectator,distance=..0.7] only luigis_mansion:challenges/waluigi_pinball waiter
+execute as @a[tag=!spectator,distance=..0.7] run function luigis_mansion:entities/player/knockback/medium
