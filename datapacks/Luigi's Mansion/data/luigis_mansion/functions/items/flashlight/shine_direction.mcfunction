@@ -1,0 +1,1 @@
+function luigis_mansion:items/flashlight/shine_direction/normal

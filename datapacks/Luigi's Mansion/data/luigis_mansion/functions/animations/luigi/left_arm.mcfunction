@@ -14,7 +14,7 @@ data modify entity @s[tag=!was_sneak_posing,tag=sneak_pos] Pose.Head[0] set valu
 data modify entity @s[tag=was_flipped,tag=!flipped_gravity] Pose.Head[2] set value 0.0f
 data modify entity @s[tag=!was_flipped,tag=flipped_gravity] Pose.Head[2] set value -180.0f
 
-execute if entity @s[tag=!looking_at_map] run function luigis_mansion:animations/luigi/idle/left_arm
+execute if entity @s[tag=!looking_at_map,scores={KnockbackType=0}] run function luigis_mansion:animations/luigi/idle/left_arm
 
 #data modify entity @s[tag=held_item,tag=!looking_at_map] ArmorItems[3] set from storage luigis_mansion:data luigi.offhand
 #execute if entity @s[tag=attacking,tag=!looking_at_map] run function luigis_mansion:animations/luigi/attack/left_arm
@@ -32,3 +32,10 @@ execute if entity @s[tag=walking,tag=!looking_at_map] run function luigis_mansio
 execute if entity @s[tag=running,tag=!looking_at_map] run function luigis_mansion:animations/luigi/running/left_arm
 execute if entity @s[tag=swimming,tag=!looking_at_map] run function luigis_mansion:animations/luigi/swimming/left_arm
 execute if entity @s[tag=looking_at_map] run function luigis_mansion:animations/luigi/looking_at_map/left_arm
+
+execute at @s[tag=!held_item,scores={KnockbackType=1}] run function luigis_mansion:animations/luigi/knockback/small/left_arm
+execute at @s[tag=!held_item,scores={KnockbackType=2}] run function luigis_mansion:animations/luigi/knockback/medium/left_arm
+execute at @s[tag=!held_item,scores={KnockbackType=3}] run function luigis_mansion:animations/luigi/knockback/large/left_arm
+execute at @s[tag=!held_item,scores={KnockbackType=4}] run function luigis_mansion:animations/luigi/knockback/burn/left_arm
+execute at @s[tag=!held_item,scores={KnockbackType=5}] run function luigis_mansion:animations/luigi/knockback/soak/left_arm
+execute at @s[tag=!held_item,scores={KnockbackType=6}] run function luigis_mansion:animations/luigi/knockback/freeze/left_arm

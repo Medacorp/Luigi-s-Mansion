@@ -16,7 +16,7 @@ execute rotated ~ 0 positioned ^ ^ ^-4 run function luigis_mansion:entities/play
 scoreboard players remove @s[scores={RoomNoise=1..}] RoomNoise 1
 scoreboard players remove @s[scores={Sound=1..}] Sound 1
 
-execute if entity @s[scores={Health=..0},tag=!death_animation,tag=!revive_animation] run function luigis_mansion:entities/player/death
+execute if entity @s[scores={Health=..0},tag=!death_animation,tag=!revive_animation] unless entity @s[scores={KnockbackTime=1..}] run function luigis_mansion:entities/player/death
 execute if entity @s[scores={Health=1..},tag=already_added_to_list] run function luigis_mansion:entities/player/remove_dead_entry
 tag @s[scores={Health=1..}] remove already_added_to_list
 
@@ -36,7 +36,8 @@ execute unless entity @s[scores={MaxHealth=100}] unless entity @s[scores={Walk=0
 scoreboard players set @s[scores={MaxHealthTime=200}] MaxHealth 100
 scoreboard players reset @s[scores={MaxHealthTime=200}] MaxHealthTime
 
-execute if entity @s[scores={KnockbackTime=1..}] run function luigis_mansion:entities/player/knockback
+execute if entity @s[scores={Walk=0,Run=0,Sneak=0,Jump=0,GBHCall=0},tag=!looking_at_map,tag=!warp,tag=!scanning,tag=!grabbed,tag=!poltergust_selected] run function luigis_mansion:entities/player/idle
+execute unless entity @s[scores={Walk=0,Run=0,Sneak=0,Jump=0,GBHCall=0},tag=!looking_at_map,tag=!warp,tag=!scanning,tag=!grabbed,tag=!poltergust_selected] run function luigis_mansion:entities/player/idle/reset
 
 execute if entity @s[scores={Walk=1..},tag=!looking_at_map] run particle minecraft:dust 0.5 0.5 0.5 1.2 ~ ~0.2 ~ 0 0 0 0 1
 execute if entity @s[scores={Run=1..},tag=!looking_at_map] run particle minecraft:dust 0.5 0.5 0.5 2 ~ ~0.2 ~ 0 0 0 0 1
@@ -50,5 +51,7 @@ tag @s[tag=!death_animation,tag=!revive_animation] remove spectator
 
 effect give @s minecraft:invisibility 1000000 0 true
 function luigis_mansion:animations/luigi
+
+execute if entity @s[scores={KnockbackTime=1..}] run function luigis_mansion:entities/player/knockback
 execute if entity @s[tag=death_animation] run function luigis_mansion:entities/player/death_animation
 execute if entity @s[tag=revive_animation] run function luigis_mansion:entities/player/revive_animation
