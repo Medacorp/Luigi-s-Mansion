@@ -1,0 +1,1 @@
+scoreboard players set #radar_type Selected 0

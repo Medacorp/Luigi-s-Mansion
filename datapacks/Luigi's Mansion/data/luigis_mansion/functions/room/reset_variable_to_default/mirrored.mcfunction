@@ -1,0 +1,1 @@
+scoreboard players set #mirrored Selected 0

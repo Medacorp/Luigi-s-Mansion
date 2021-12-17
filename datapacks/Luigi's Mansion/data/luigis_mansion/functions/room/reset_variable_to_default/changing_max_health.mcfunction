@@ -1,0 +1,1 @@
+scoreboard players set #changing_max_health Selected 0

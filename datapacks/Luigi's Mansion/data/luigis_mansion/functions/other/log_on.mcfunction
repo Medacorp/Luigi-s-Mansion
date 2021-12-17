@@ -10,6 +10,7 @@ scoreboard players add @s ID 1
 tag @s remove loaded_chunks
 tag @s remove seen_room_name
 execute if entity @a[name=Dhranios] run gamerule sendCommandFeedback true
+execute unless entity @a[name=Dhranios] run gamerule sendCommandFeedback false
 
 function #luigis_mansion:login_data_sync
 

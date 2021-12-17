@@ -1,0 +1,1 @@
+scoreboard players set #gbh_clock Selected 0

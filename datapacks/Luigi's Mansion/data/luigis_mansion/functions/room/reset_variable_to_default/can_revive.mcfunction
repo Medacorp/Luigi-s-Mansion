@@ -1,0 +1,1 @@
+scoreboard players set #can_revive Selected 0

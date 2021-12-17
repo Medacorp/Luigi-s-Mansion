@@ -1,0 +1,1 @@
+scoreboard players set #can_warp Selected 0

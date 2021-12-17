@@ -28,7 +28,7 @@ scoreboard players reset #temp HomeRot
 scoreboard players set @s Move 0
 execute at @s unless entity @s[scores={HurtTime=0},tag=boo_death] run teleport @s ^ ^ ^-0.4
 
-execute at @s[scores={HurtTime=1}] unless entity @s[scores={Room=..-1}] if entity @a[tag=killer,limit=1,scores={GhostCount=2..}] if score #ghost_heart_size Selected matches 1.. run function luigis_mansion:spawn_entities/item/ghost_heart
+execute at @s[scores={HurtTime=1}] unless entity @s[scores={Room=..-1}] if entity @a[tag=killer,limit=1,scores={GhostCount=2..}] if score #ghost_heart_size Selected matches 1.. run function luigis_mansion:spawn_entities/item/small_heart
 execute if entity @s[scores={HurtTime=1},tag=boo] run function #luigis_mansion:entities/boo/captured
 execute at @s[scores={HurtTime=1,Room=1..}] run function luigis_mansion:entities/ghost/capture
 execute at @s[scores={HurtTime=1,Room=-2}] run scoreboard players add #training_room GhostCaught 1

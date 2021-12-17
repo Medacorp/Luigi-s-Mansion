@@ -1,0 +1,1 @@
+scoreboard players set #heart_coin_count Selected 0

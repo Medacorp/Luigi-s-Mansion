@@ -1,0 +1,1 @@
+scoreboard players set #multiply_damage Selected 100

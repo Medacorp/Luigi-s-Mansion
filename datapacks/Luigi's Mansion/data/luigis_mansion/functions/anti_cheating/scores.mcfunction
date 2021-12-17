@@ -190,15 +190,15 @@ execute unless score #can_revive Selected matches 0..1 run scoreboard players se
 execute unless score #multiply_hurt Selected matches 0.. run scoreboard players set #multiply_hurt Selected 100
 execute unless score #multiply_damage Selected matches 0.. run scoreboard players set #multiply_damage Selected 100
 execute unless score #changing_max_health Selected matches 0..1 run scoreboard players set #changing_max_health Selected 0
-execute unless score #training_choice Selected matches 0..1 run scoreboard players set #training_choice Selected 0
 execute unless score #radar_type Selected matches 0.. run scoreboard players set #radar_type Selected 0
-execute unless score #ghost_heart_size Selected matches 0..100 run scoreboard players set #ghost_heart_size Selected 20
+execute unless score #heart_coin_count Selected matches 0.. run scoreboard players set #ghost_heart_size Selected 200
 execute unless score #gbh_clock Selected matches -2147483648.. run scoreboard players set #gbh_clock Selected 0
 execute unless score #gbh_clock_increase Selected matches -2147483648.. run scoreboard players set #gbh_clock_increase Selected 0
 execute if score #gbh_clock_increase Selected matches 0 run scoreboard players set #gbh_clock Selected 0
 
+execute unless score #training_choice Selected matches 0..1 run scoreboard players set #training_choice Selected 0
+execute unless score #freeze_timer Selected matches 0..1 run scoreboard players set #freeze_timer Selected 0
 execute unless data storage luigis_mansion:data current_state run function luigis_mansion:other/upgrade_path/newly_installed
 
 gamerule doTileDrops false
-execute unless entity @a[name=Dhranios] run gamerule sendCommandFeedback false
 gamerule maxCommandChainLength 2147483647
