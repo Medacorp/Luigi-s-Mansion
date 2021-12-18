@@ -2,7 +2,8 @@ scoreboard players operation #temp GhostNr = @s GhostNr
 execute as @e[tag=model_piece,scores={GhostNr=-2147483648..}] if score @s GhostNr = #temp GhostNr run tag @s add this_model
 execute as @e[tag=food] if score @s GhostNr = #temp GhostNr run tag @s add this_food
 
-execute if entity @s[tag=dying,scores={HurtTime=1}] run playsound luigis_mansion:entity.mr_luggs.vacuumed hostile @a[tag=same_room] ~ ~ ~ 1
+execute if entity @s[tag=dying,scores={DeathTime=1}] run playsound luigis_mansion:entity.mr_luggs.vacuumed hostile @a[tag=same_room] ~ ~ ~ 1
+execute if entity @s[tag=dying,scores={DeathTime=1}] if data storage luigis_mansion:data current_state.current_data.portrait_ghosts.mr_luggs{loot_at_0:1b} run function luigis_mansion:entities/mr_luggs/drop_loot
 execute if entity @s[tag=dead] run function luigis_mansion:entities/mr_luggs/at_death
 execute if entity @s[tag=vanish] store result storage luigis_mansion:data current_state.current_data.portrait_ghosts.mr_luggs.health int 1 run scoreboard players operation @s LastHealth = @s Health
 execute if entity @s[tag=vanish] store result storage luigis_mansion:data current_state.current_data.portrait_ghosts.mr_luggs.top_vacuum_damage int 1 run scoreboard players get @s TopVacuumDamage

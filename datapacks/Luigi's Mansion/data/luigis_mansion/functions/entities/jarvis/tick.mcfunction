@@ -1,4 +1,5 @@
-execute if entity @s[tag=dying,scores={HurtTime=1}] run playsound luigis_mansion:entity.jarvis.vacuumed hostile @a[tag=same_room] ~ ~ ~ 1
+execute if entity @s[tag=dying,scores={DeathTime=1}] run playsound luigis_mansion:entity.jarvis.vacuumed hostile @a[tag=same_room] ~ ~ ~ 1
+execute if entity @s[tag=dying,scores={DeathTime=1}] if data storage luigis_mansion:data current_state.current_data.portrait_ghosts.jarvis{loot_at_0:1b} run function luigis_mansion:entities/jarvis/drop_loot
 execute if entity @s[tag=dead] run function luigis_mansion:entities/jarvis/at_death
 execute if entity @s[tag=vanish] store result storage luigis_mansion:data current_state.current_data.portrait_ghosts.jarvis.health int 1 run scoreboard players operation @s LastHealth = @s Health
 execute if entity @s[tag=vanish] store result storage luigis_mansion:data current_state.current_data.portrait_ghosts.jarvis.top_vacuum_damage int 1 run scoreboard players get @s TopVacuumDamage

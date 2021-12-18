@@ -4,6 +4,7 @@ execute as @e[tag=this_entity,limit=1] store result storage luigis_mansion:data 
 execute as @e[tag=this_entity,limit=1] store result score @s Health store result score @s LastHealth store result score @s MaxHealth run data get storage luigis_mansion:data current_state.current_data.boos[{name:"shamboo"}].health
 execute as @e[tag=this_entity,limit=1] store result score @s Room run data get storage luigis_mansion:data current_state.current_data.boos[{name:"shamboo"}].room
 execute as @e[tag=this_entity,limit=1] store result score @s Move run data get storage luigis_mansion:data current_state.current_data.boos[{name:"shamboo"}].speed
+execute if data storage luigis_mansion:data current_state.current_data.boos[{name:"shamboo",loot_at_0:1b}] run tag @e[tag=this_entity,limit=1] add loot_at_0
 scoreboard players set @e[tag=this_entity,limit=1] Sound 0
 scoreboard players operation @e[tag=this_entity,limit=1] HomeX = @s HomeX
 scoreboard players operation @e[tag=this_entity,limit=1] HomeY = @s HomeY

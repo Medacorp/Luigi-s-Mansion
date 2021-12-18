@@ -21,8 +21,12 @@ execute at @s[tag=visible] if block ~ ~-0.01 ~ #luigis_mansion:ghosts_ignore run
 execute at @s[scores={Turn=0},tag=visible] run function luigis_mansion:entities/spark/turn
 data modify entity @s[scores={SpawnTime=140}] ArmorItems[3].tag.CustomModelData set value 106
 tag @s[scores={SpawnTime=200}] add explode
-execute if entity @s[tag=explode,tag=visible] run summon minecraft:creeper ~ ~ ~ {CustomName:'{"translate":"luigis_mansion:entity.spark"}',Fuse:0s,ExplosionRadius:2b,Invulnerable:1b,Silent:1b}
-execute if entity @s[tag=explode,tag=visible] run playsound minecraft:entity.generic.explode hostile @s ~ ~ ~ 2
+execute if entity @s[tag=explode,tag=visible] run execute as @e[distance=..3,tag=gameboy_horror_location] run function luigis_mansion:entities/gameboy_horror_location/bring_player_back
+execute if entity @s[tag=explode,tag=visible] run effect give @a[distance=..3,tag=!spectator] minecraft:instant_damage 1 0 true
+execute if entity @s[tag=explode,tag=visible] run scoreboard players set @a[distance=..3,tag=!spectator] ForcedDamage 4
+execute if entity @s[tag=explode,tag=visible] as @a[distance=..3,tag=!spectator] run function luigis_mansion:entities/player/knockback/burn
+execute if entity @s[tag=explode,tag=visible] run particle minecraft:explosion ~ ~ ~ 0.2 0.2 0.2 1 4 force @a[tag=same_room]
+execute if entity @s[tag=explode,tag=visible] run playsound minecraft:entity.generic.explode hostile @a[tag=same_room] ~ ~ ~ 2
 tag @s[tag=explode,tag=visible] add dead
 tag @s[tag=explode,tag=!visible] remove explode
 execute if entity @s[tag=dead] run teleport @s ~ -100 ~
