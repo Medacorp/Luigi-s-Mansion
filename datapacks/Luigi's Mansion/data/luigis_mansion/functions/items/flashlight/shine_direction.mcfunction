@@ -1,1 +1,2 @@
-function luigis_mansion:items/flashlight/shine_direction/normal
+execute if entity @s[tag=!flipped_gravity] run function luigis_mansion:items/flashlight/shine_direction/normal
+execute if entity @s[tag=flipped_gravity] run function luigis_mansion:items/flashlight/shine_direction/normal_flipped

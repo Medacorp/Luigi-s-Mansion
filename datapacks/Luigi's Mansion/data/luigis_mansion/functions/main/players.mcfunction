@@ -1,5 +1,6 @@
 execute unless block ~ ~ ~ minecraft:air{loaded:0b} unless block ~-48 ~ ~ minecraft:air{loaded:0b} unless block ~48 ~ ~ minecraft:air{loaded:0b} unless block ~ ~ ~-48 minecraft:air{loaded:0b} unless block ~ ~ ~48 minecraft:air{loaded:0b} unless block ~48 ~ ~48 minecraft:air{loaded:0b} unless block ~48 ~ ~-48 minecraft:air{loaded:0b} unless block ~-48 ~ ~48 minecraft:air{loaded:0b} unless block ~-48 ~ ~-48 minecraft:air{loaded:0b} run function luigis_mansion:main/loaded_chunks
 #execute if entity @s[scores={Jump=1..}] run function luigis_mansion:main/prevent_jump
+execute at @s[scores={Sneaking=0}] unless block ~ ~1.799 ~ #luigis_mansion:ghosts_ignore align y run teleport @s ~ ~ ~
 execute unless entity @s[scores={Health=-1000..}] run scoreboard players set @s Health 100
 execute unless entity @s[scores={MaxHealth=0..}] run scoreboard players set @s MaxHealth 100
 
@@ -46,7 +47,6 @@ tag @s[tag=walking] remove walking
 tag @s[scores={Walk=1..},tag=!looking_at_map] add walking
 tag @s[scores={WalkOnWater=1..},tag=!looking_at_map] add walking
 tag @s[scores={WalkUnderWater=1..},tag=!looking_at_map] add walking
-execute if entity @s[nbt={OnGround:0b}] if block ~ ~-0.01 ~ minecraft:air run tag @s[tag=!looking_at_map] add walking
 execute if entity @s[scores={Room=0},tag=walking,tag=!played_opening_music] run function luigis_mansion:other/play_opening_music
 scoreboard players set @s[scores={Walk=1..}] Walk 0
 scoreboard players set @s[scores={WalkOnWater=1..}] WalkOnWater 0

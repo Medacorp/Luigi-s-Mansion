@@ -1,0 +1,2 @@
+execute if entity @s[scores={MusicType=17,MusicGroup=0}] run function luigis_mansion:other/music/set/catching_boolossus
+execute if entity @s[scores={MusicType=34,MusicGroup=0}] run function luigis_mansion:other/music/set/catching_boolossus

@@ -1,0 +1,1 @@
+execute if entity @s[scores={MusicType=13,MusicGroup=0}] unless entity @e[tag=floating_whirlindas,tag=same_room,limit=1] run function luigis_mansion:other/music/set/ball_room
