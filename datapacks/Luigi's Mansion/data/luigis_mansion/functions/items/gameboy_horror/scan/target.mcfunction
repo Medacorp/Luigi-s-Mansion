@@ -1,5 +1,5 @@
 execute positioned ~-0.5 ~-0.5 ~-0.5 run tag @e[dx=0,dy=0,dz=0,tag=!scan_ignore,tag=!scanning_player,tag=!model_piece,tag=!spectator,type=!minecraft:item_frame,limit=1] add target
-execute unless entity @e[tag=target,limit=1] if block ~ ~ ~ #luigis_mansion:gameboy_horror_warp if score #can_warp Selected matches 1 run tag @s add warp
+execute unless entity @e[tag=target,limit=1] if block ~ ~ ~ #luigis_mansion:gameboy_horror_warp if score #can_warp Selected matches 1 unless entity @s[scores={Dialog=1..}] run tag @s add warp
 execute unless entity @s[tag=warp] unless entity @e[tag=target,limit=1] unless block ~ ~ ~ #luigis_mansion:gameboy_horror_warp unless block ~ ~ ~ #luigis_mansion:gameboy_horror_path unless block ~ ~ ~ minecraft:stone_button[powered=true] run function luigis_mansion:items/gameboy_horror/scan/block
 execute unless entity @s[tag=warp] unless entity @e[tag=target,limit=1] if block ~ ~ ~ minecraft:barrier if entity @e[type=minecraft:armor_stand,distance=..3,limit=1] run function luigis_mansion:items/gameboy_horror/scan/block
 scoreboard players add #temp Move 1

@@ -157,6 +157,7 @@ scoreboard objectives add WaitTime dummy
 scoreboard objectives add Walk minecraft.custom:minecraft.walk_one_cm
 scoreboard objectives add WalkOnWater minecraft.custom:minecraft.walk_on_water_one_cm
 scoreboard objectives add WalkUnderWater minecraft.custom:minecraft.walk_under_water_one_cm
+scoreboard objectives add WarpTime dummy
 scoreboard objectives add Wave dummy
 scoreboard objectives add Wool dummy
 
