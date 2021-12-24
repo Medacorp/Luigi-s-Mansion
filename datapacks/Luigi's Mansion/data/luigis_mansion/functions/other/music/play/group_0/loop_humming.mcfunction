@@ -1,191 +1,191 @@
 scoreboard players add @s[scores={HealthMusic=..0}] LastHealthMusic 480000
 scoreboard players add @s[scores={HealthMusic=..0}] HealthMusic 480000
 #100-71
-playsound luigis_mansion:entity.player.humming.high.1 player @s[scores={HealthMusic=..480000,LastHealthMusic=480001..,Sound=0,Health=71..100}] ~ ~ ~ 1
-playsound luigis_mansion:entity.player.humming.high.2 player @s[scores={HealthMusic=..456650,LastHealthMusic=456651..,Sound=0,Health=71..100}] ~ ~ ~ 1
-playsound luigis_mansion:entity.player.humming.high.3 player @s[scores={HealthMusic=..444800,LastHealthMusic=444801..,Sound=0,Health=71..100}] ~ ~ ~ 1
-playsound luigis_mansion:entity.player.humming.high.4 player @s[scores={HealthMusic=..433000,LastHealthMusic=433001..,Sound=0,Health=71..100}] ~ ~ ~ 1
-playsound luigis_mansion:entity.player.humming.high.5 player @s[scores={HealthMusic=..409470,LastHealthMusic=409471..,Sound=0,Health=71..100}] ~ ~ ~ 1
-playsound luigis_mansion:entity.player.humming.high.6 player @s[scores={HealthMusic=..397700,LastHealthMusic=397701..,Sound=0,Health=71..100}] ~ ~ ~ 1
-playsound luigis_mansion:entity.player.humming.high.7 player @s[scores={HealthMusic=..382800,LastHealthMusic=382801..,Sound=0,Health=71..100}] ~ ~ ~ 1
-playsound luigis_mansion:entity.player.humming.high.8 player @s[scores={HealthMusic=..379950,LastHealthMusic=379951..,Sound=0,Health=71..100}] ~ ~ ~ 1
-playsound luigis_mansion:entity.player.humming.high.9 player @s[scores={HealthMusic=..377000,LastHealthMusic=377001..,Sound=0,Health=71..100}] ~ ~ ~ 1
-playsound luigis_mansion:entity.player.humming.high.10 player @s[scores={HealthMusic=..374050,LastHealthMusic=374051..,Sound=0,Health=71..100}] ~ ~ ~ 1
-playsound luigis_mansion:entity.player.humming.high.11 player @s[scores={HealthMusic=..368200,LastHealthMusic=368201..,Sound=0,Health=71..100}] ~ ~ ~ 1
-playsound luigis_mansion:entity.player.humming.high.12 player @s[scores={HealthMusic=..365200,LastHealthMusic=365201..,Sound=0,Health=71..100}] ~ ~ ~ 1
-playsound luigis_mansion:entity.player.humming.high.13 player @s[scores={HealthMusic=..362400,LastHealthMusic=362401..,Sound=0,Health=71..100}] ~ ~ ~ 1
-playsound luigis_mansion:entity.player.humming.high.14 player @s[scores={HealthMusic=..356600,LastHealthMusic=356601..,Sound=0,Health=71..100}] ~ ~ ~ 1
-playsound luigis_mansion:entity.player.humming.high.15 player @s[scores={HealthMusic=..335800,LastHealthMusic=335801..,Sound=0,Health=71..100}] ~ ~ ~ 1
-playsound luigis_mansion:entity.player.humming.high.16 player @s[scores={HealthMusic=..329700,LastHealthMusic=329701..,Sound=0,Health=71..100}] ~ ~ ~ 1
-playsound luigis_mansion:entity.player.humming.high.17 player @s[scores={HealthMusic=..326900,LastHealthMusic=326901..,Sound=0,Health=71..100}] ~ ~ ~ 1
-playsound luigis_mansion:entity.player.humming.high.18 player @s[scores={HealthMusic=..321000,LastHealthMusic=321001..,Sound=0,Health=71..100}] ~ ~ ~ 1
-playsound luigis_mansion:entity.player.humming.high.19 player @s[scores={HealthMusic=..318100,LastHealthMusic=318101..,Sound=0,Health=71..100}] ~ ~ ~ 1
-playsound luigis_mansion:entity.player.humming.high.20 player @s[scores={HealthMusic=..315100,LastHealthMusic=315101..,Sound=0,Health=71..100}] ~ ~ ~ 1
-playsound luigis_mansion:entity.player.humming.high.21 player @s[scores={HealthMusic=..306400,LastHealthMusic=306401..,Sound=0,Health=71..100}] ~ ~ ~ 1
-playsound luigis_mansion:entity.player.humming.high.22 player @s[scores={HealthMusic=..303500,LastHealthMusic=303501..,Sound=0,Health=71..100}] ~ ~ ~ 1
-playsound luigis_mansion:entity.player.humming.high.23 player @s[scores={HealthMusic=..297650,LastHealthMusic=297651..,Sound=0,Health=71..100}] ~ ~ ~ 1
-playsound luigis_mansion:entity.player.humming.high.24 player @s[scores={HealthMusic=..288650,LastHealthMusic=288651..,Sound=0,Health=71..100}] ~ ~ ~ 1
-playsound luigis_mansion:entity.player.humming.high.25 player @s[scores={HealthMusic=..285800,LastHealthMusic=285801..,Sound=0,Health=71..100}] ~ ~ ~ 1
-playsound luigis_mansion:entity.player.humming.high.26 player @s[scores={HealthMusic=..282900,LastHealthMusic=282901..,Sound=0,Health=71..100}] ~ ~ ~ 1
-playsound luigis_mansion:entity.player.humming.high.27 player @s[scores={HealthMusic=..279950,LastHealthMusic=279951..,Sound=0,Health=71..100}] ~ ~ ~ 1
-playsound luigis_mansion:entity.player.humming.high.28 player @s[scores={HealthMusic=..273950,LastHealthMusic=273951..,Sound=0,Health=71..100}] ~ ~ ~ 1
-playsound luigis_mansion:entity.player.humming.high.29 player @s[scores={HealthMusic=..268200,LastHealthMusic=268201..,Sound=0,Health=71..100}] ~ ~ ~ 1
-playsound luigis_mansion:entity.player.humming.high.30 player @s[scores={HealthMusic=..262250,LastHealthMusic=262251..,Sound=0,Health=71..100}] ~ ~ ~ 1
-playsound luigis_mansion:entity.player.humming.high.31 player @s[scores={HealthMusic=..241650,LastHealthMusic=241651..,Sound=0,Health=71..100}] ~ ~ ~ 1
-playsound luigis_mansion:entity.player.humming.high.32 player @s[scores={HealthMusic=..235550,LastHealthMusic=235551..,Sound=0,Health=71..100}] ~ ~ ~ 1
-playsound luigis_mansion:entity.player.humming.high.33 player @s[scores={HealthMusic=..232800,LastHealthMusic=232801..,Sound=0,Health=71..100}] ~ ~ ~ 1
-playsound luigis_mansion:entity.player.humming.high.34 player @s[scores={HealthMusic=..227000,LastHealthMusic=227001..,Sound=0,Health=71..100}] ~ ~ ~ 1
-playsound luigis_mansion:entity.player.humming.high.35 player @s[scores={HealthMusic=..221100,LastHealthMusic=221101..,Sound=0,Health=71..100}] ~ ~ ~ 1
-playsound luigis_mansion:entity.player.humming.high.36 player @s[scores={HealthMusic=..215200,LastHealthMusic=215201..,Sound=0,Health=71..100}] ~ ~ ~ 1
-playsound luigis_mansion:entity.player.humming.high.37 player @s[scores={HealthMusic=..209350,LastHealthMusic=209351..,Sound=0,Health=71..100}] ~ ~ ~ 1
-playsound luigis_mansion:entity.player.humming.high.38 player @s[scores={HealthMusic=..185800,LastHealthMusic=185801..,Sound=0,Health=71..100}] ~ ~ ~ 1
-playsound luigis_mansion:entity.player.humming.high.39 player @s[scores={HealthMusic=..165150,LastHealthMusic=165151..,Sound=0,Health=71..100}] ~ ~ ~ 1
-playsound luigis_mansion:entity.player.humming.high.40 player @s[scores={HealthMusic=..159350,LastHealthMusic=159351..,Sound=0,Health=71..100}] ~ ~ ~ 1
-playsound luigis_mansion:entity.player.humming.high.41 player @s[scores={HealthMusic=..156200,LastHealthMusic=156201..,Sound=0,Health=71..100}] ~ ~ ~ 1
-playsound luigis_mansion:entity.player.humming.high.42 player @s[scores={HealthMusic=..153450,LastHealthMusic=153451..,Sound=0,Health=71..100}] ~ ~ ~ 1
-playsound luigis_mansion:entity.player.humming.high.43 player @s[scores={HealthMusic=..150500,LastHealthMusic=150501..,Sound=0,Health=71..100}] ~ ~ ~ 1
-playsound luigis_mansion:entity.player.humming.high.44 player @s[scores={HealthMusic=..144500,LastHealthMusic=144501..,Sound=0,Health=71..100}] ~ ~ ~ 1
-playsound luigis_mansion:entity.player.humming.high.45 player @s[scores={HealthMusic=..138750,LastHealthMusic=138751..,Sound=0,Health=71..100}] ~ ~ ~ 1
-playsound luigis_mansion:entity.player.humming.high.46 player @s[scores={HealthMusic=..127000,LastHealthMusic=127001..,Sound=0,Health=71..100}] ~ ~ ~ 1
-playsound luigis_mansion:entity.player.humming.high.47 player @s[scores={HealthMusic=..121000,LastHealthMusic=121001..,Sound=0,Health=71..100}] ~ ~ ~ 1
-playsound luigis_mansion:entity.player.humming.high.48 player @s[scores={HealthMusic=..115200,LastHealthMusic=115201..,Sound=0,Health=71..100}] ~ ~ ~ 1
-playsound luigis_mansion:entity.player.humming.high.49 player @s[scores={HealthMusic=..109300,LastHealthMusic=109301..,Sound=0,Health=71..100}] ~ ~ ~ 1
-playsound luigis_mansion:entity.player.humming.high.50 player @s[scores={HealthMusic=..97650,LastHealthMusic=97651..,Sound=0,Health=71..100}] ~ ~ ~ 1
-playsound luigis_mansion:entity.player.humming.high.51 player @s[scores={HealthMusic=..91700,LastHealthMusic=91701..,Sound=0,Health=71..100}] ~ ~ ~ 1
-playsound luigis_mansion:entity.player.humming.high.52 player @s[scores={HealthMusic=..85800,LastHealthMusic=85801..,Sound=0,Health=71..100}] ~ ~ ~ 1
-playsound luigis_mansion:entity.player.humming.high.53 player @s[scores={HealthMusic=..74000,LastHealthMusic=74001..,Sound=0,Health=71..100}] ~ ~ ~ 1
-playsound luigis_mansion:entity.player.humming.high.54 player @s[scores={HealthMusic=..68150,LastHealthMusic=68151..,Sound=0,Health=71..100}] ~ ~ ~ 1
-playsound luigis_mansion:entity.player.humming.high.55 player @s[scores={HealthMusic=..56400,LastHealthMusic=56401..,Sound=0,Health=71..100}] ~ ~ ~ 1
-playsound luigis_mansion:entity.player.humming.high.56 player @s[scores={HealthMusic=..47500,LastHealthMusic=47501..,Sound=0,Health=71..100}] ~ ~ ~ 1
-playsound luigis_mansion:entity.player.humming.high.57 player @s[scores={HealthMusic=..41700,LastHealthMusic=41701..,Sound=0,Health=71..100}] ~ ~ ~ 1
-playsound luigis_mansion:entity.player.humming.high.58 player @s[scores={HealthMusic=..38700,LastHealthMusic=38701..,Sound=0,Health=71..100}] ~ ~ ~ 1
-playsound luigis_mansion:entity.player.humming.high.59 player @s[scores={HealthMusic=..35700,LastHealthMusic=35701..,Sound=0,Health=71..100}] ~ ~ ~ 1
-playsound luigis_mansion:entity.player.humming.high.60 player @s[scores={HealthMusic=..32850,LastHealthMusic=32851..,Sound=0,Health=71..100}] ~ ~ ~ 1
-playsound luigis_mansion:entity.player.humming.high.61 player @s[scores={HealthMusic=..20500,LastHealthMusic=20501..,Sound=0,Health=71..100}] ~ ~ ~ 1
-playsound luigis_mansion:entity.player.humming.high.62 player @s[scores={HealthMusic=..9000,LastHealthMusic=9001..,Sound=0,Health=71..100}] ~ ~ ~ 1
+execute at @a[tag=same_room,tag=!spectator,scores={Health=71..100,Sound=0}] run playsound luigis_mansion:entity.player.humming.high.1 player @s[scores={HealthMusic=..480000,LastHealthMusic=480001..,Sound=0}] ~ ~ ~ 1
+execute at @a[tag=same_room,tag=!spectator,scores={Health=71..100,Sound=0}] run playsound luigis_mansion:entity.player.humming.high.2 player @s[scores={HealthMusic=..456650,LastHealthMusic=456651..,Sound=0}] ~ ~ ~ 1
+execute at @a[tag=same_room,tag=!spectator,scores={Health=71..100,Sound=0}] run playsound luigis_mansion:entity.player.humming.high.3 player @s[scores={HealthMusic=..444800,LastHealthMusic=444801..,Sound=0}] ~ ~ ~ 1
+execute at @a[tag=same_room,tag=!spectator,scores={Health=71..100,Sound=0}] run playsound luigis_mansion:entity.player.humming.high.4 player @s[scores={HealthMusic=..433000,LastHealthMusic=433001..,Sound=0}] ~ ~ ~ 1
+execute at @a[tag=same_room,tag=!spectator,scores={Health=71..100,Sound=0}] run playsound luigis_mansion:entity.player.humming.high.5 player @s[scores={HealthMusic=..409470,LastHealthMusic=409471..,Sound=0}] ~ ~ ~ 1
+execute at @a[tag=same_room,tag=!spectator,scores={Health=71..100,Sound=0}] run playsound luigis_mansion:entity.player.humming.high.6 player @s[scores={HealthMusic=..397700,LastHealthMusic=397701..,Sound=0}] ~ ~ ~ 1
+execute at @a[tag=same_room,tag=!spectator,scores={Health=71..100,Sound=0}] run playsound luigis_mansion:entity.player.humming.high.7 player @s[scores={HealthMusic=..382800,LastHealthMusic=382801..,Sound=0}] ~ ~ ~ 1
+execute at @a[tag=same_room,tag=!spectator,scores={Health=71..100,Sound=0}] run playsound luigis_mansion:entity.player.humming.high.8 player @s[scores={HealthMusic=..379950,LastHealthMusic=379951..,Sound=0}] ~ ~ ~ 1
+execute at @a[tag=same_room,tag=!spectator,scores={Health=71..100,Sound=0}] run playsound luigis_mansion:entity.player.humming.high.9 player @s[scores={HealthMusic=..377000,LastHealthMusic=377001..,Sound=0}] ~ ~ ~ 1
+execute at @a[tag=same_room,tag=!spectator,scores={Health=71..100,Sound=0}] run playsound luigis_mansion:entity.player.humming.high.10 player @s[scores={HealthMusic=..374050,LastHealthMusic=374051..,Sound=0}] ~ ~ ~ 1
+execute at @a[tag=same_room,tag=!spectator,scores={Health=71..100,Sound=0}] run playsound luigis_mansion:entity.player.humming.high.11 player @s[scores={HealthMusic=..368200,LastHealthMusic=368201..,Sound=0}] ~ ~ ~ 1
+execute at @a[tag=same_room,tag=!spectator,scores={Health=71..100,Sound=0}] run playsound luigis_mansion:entity.player.humming.high.12 player @s[scores={HealthMusic=..365200,LastHealthMusic=365201..,Sound=0}] ~ ~ ~ 1
+execute at @a[tag=same_room,tag=!spectator,scores={Health=71..100,Sound=0}] run playsound luigis_mansion:entity.player.humming.high.13 player @s[scores={HealthMusic=..362400,LastHealthMusic=362401..,Sound=0}] ~ ~ ~ 1
+execute at @a[tag=same_room,tag=!spectator,scores={Health=71..100,Sound=0}] run playsound luigis_mansion:entity.player.humming.high.14 player @s[scores={HealthMusic=..356600,LastHealthMusic=356601..,Sound=0}] ~ ~ ~ 1
+execute at @a[tag=same_room,tag=!spectator,scores={Health=71..100,Sound=0}] run playsound luigis_mansion:entity.player.humming.high.15 player @s[scores={HealthMusic=..335800,LastHealthMusic=335801..,Sound=0}] ~ ~ ~ 1
+execute at @a[tag=same_room,tag=!spectator,scores={Health=71..100,Sound=0}] run playsound luigis_mansion:entity.player.humming.high.16 player @s[scores={HealthMusic=..329700,LastHealthMusic=329701..,Sound=0}] ~ ~ ~ 1
+execute at @a[tag=same_room,tag=!spectator,scores={Health=71..100,Sound=0}] run playsound luigis_mansion:entity.player.humming.high.17 player @s[scores={HealthMusic=..326900,LastHealthMusic=326901..,Sound=0}] ~ ~ ~ 1
+execute at @a[tag=same_room,tag=!spectator,scores={Health=71..100,Sound=0}] run playsound luigis_mansion:entity.player.humming.high.18 player @s[scores={HealthMusic=..321000,LastHealthMusic=321001..,Sound=0}] ~ ~ ~ 1
+execute at @a[tag=same_room,tag=!spectator,scores={Health=71..100,Sound=0}] run playsound luigis_mansion:entity.player.humming.high.19 player @s[scores={HealthMusic=..318100,LastHealthMusic=318101..,Sound=0}] ~ ~ ~ 1
+execute at @a[tag=same_room,tag=!spectator,scores={Health=71..100,Sound=0}] run playsound luigis_mansion:entity.player.humming.high.20 player @s[scores={HealthMusic=..315100,LastHealthMusic=315101..,Sound=0}] ~ ~ ~ 1
+execute at @a[tag=same_room,tag=!spectator,scores={Health=71..100,Sound=0}] run playsound luigis_mansion:entity.player.humming.high.21 player @s[scores={HealthMusic=..306400,LastHealthMusic=306401..,Sound=0}] ~ ~ ~ 1
+execute at @a[tag=same_room,tag=!spectator,scores={Health=71..100,Sound=0}] run playsound luigis_mansion:entity.player.humming.high.22 player @s[scores={HealthMusic=..303500,LastHealthMusic=303501..,Sound=0}] ~ ~ ~ 1
+execute at @a[tag=same_room,tag=!spectator,scores={Health=71..100,Sound=0}] run playsound luigis_mansion:entity.player.humming.high.23 player @s[scores={HealthMusic=..297650,LastHealthMusic=297651..,Sound=0}] ~ ~ ~ 1
+execute at @a[tag=same_room,tag=!spectator,scores={Health=71..100,Sound=0}] run playsound luigis_mansion:entity.player.humming.high.24 player @s[scores={HealthMusic=..288650,LastHealthMusic=288651..,Sound=0}] ~ ~ ~ 1
+execute at @a[tag=same_room,tag=!spectator,scores={Health=71..100,Sound=0}] run playsound luigis_mansion:entity.player.humming.high.25 player @s[scores={HealthMusic=..285800,LastHealthMusic=285801..,Sound=0}] ~ ~ ~ 1
+execute at @a[tag=same_room,tag=!spectator,scores={Health=71..100,Sound=0}] run playsound luigis_mansion:entity.player.humming.high.26 player @s[scores={HealthMusic=..282900,LastHealthMusic=282901..,Sound=0}] ~ ~ ~ 1
+execute at @a[tag=same_room,tag=!spectator,scores={Health=71..100,Sound=0}] run playsound luigis_mansion:entity.player.humming.high.27 player @s[scores={HealthMusic=..279950,LastHealthMusic=279951..,Sound=0}] ~ ~ ~ 1
+execute at @a[tag=same_room,tag=!spectator,scores={Health=71..100,Sound=0}] run playsound luigis_mansion:entity.player.humming.high.28 player @s[scores={HealthMusic=..273950,LastHealthMusic=273951..,Sound=0}] ~ ~ ~ 1
+execute at @a[tag=same_room,tag=!spectator,scores={Health=71..100,Sound=0}] run playsound luigis_mansion:entity.player.humming.high.29 player @s[scores={HealthMusic=..268200,LastHealthMusic=268201..,Sound=0}] ~ ~ ~ 1
+execute at @a[tag=same_room,tag=!spectator,scores={Health=71..100,Sound=0}] run playsound luigis_mansion:entity.player.humming.high.30 player @s[scores={HealthMusic=..262250,LastHealthMusic=262251..,Sound=0}] ~ ~ ~ 1
+execute at @a[tag=same_room,tag=!spectator,scores={Health=71..100,Sound=0}] run playsound luigis_mansion:entity.player.humming.high.31 player @s[scores={HealthMusic=..241650,LastHealthMusic=241651..,Sound=0}] ~ ~ ~ 1
+execute at @a[tag=same_room,tag=!spectator,scores={Health=71..100,Sound=0}] run playsound luigis_mansion:entity.player.humming.high.32 player @s[scores={HealthMusic=..235550,LastHealthMusic=235551..,Sound=0}] ~ ~ ~ 1
+execute at @a[tag=same_room,tag=!spectator,scores={Health=71..100,Sound=0}] run playsound luigis_mansion:entity.player.humming.high.33 player @s[scores={HealthMusic=..232800,LastHealthMusic=232801..,Sound=0}] ~ ~ ~ 1
+execute at @a[tag=same_room,tag=!spectator,scores={Health=71..100,Sound=0}] run playsound luigis_mansion:entity.player.humming.high.34 player @s[scores={HealthMusic=..227000,LastHealthMusic=227001..,Sound=0}] ~ ~ ~ 1
+execute at @a[tag=same_room,tag=!spectator,scores={Health=71..100,Sound=0}] run playsound luigis_mansion:entity.player.humming.high.35 player @s[scores={HealthMusic=..221100,LastHealthMusic=221101..,Sound=0}] ~ ~ ~ 1
+execute at @a[tag=same_room,tag=!spectator,scores={Health=71..100,Sound=0}] run playsound luigis_mansion:entity.player.humming.high.36 player @s[scores={HealthMusic=..215200,LastHealthMusic=215201..,Sound=0}] ~ ~ ~ 1
+execute at @a[tag=same_room,tag=!spectator,scores={Health=71..100,Sound=0}] run playsound luigis_mansion:entity.player.humming.high.37 player @s[scores={HealthMusic=..209350,LastHealthMusic=209351..,Sound=0}] ~ ~ ~ 1
+execute at @a[tag=same_room,tag=!spectator,scores={Health=71..100,Sound=0}] run playsound luigis_mansion:entity.player.humming.high.38 player @s[scores={HealthMusic=..185800,LastHealthMusic=185801..,Sound=0}] ~ ~ ~ 1
+execute at @a[tag=same_room,tag=!spectator,scores={Health=71..100,Sound=0}] run playsound luigis_mansion:entity.player.humming.high.39 player @s[scores={HealthMusic=..165150,LastHealthMusic=165151..,Sound=0}] ~ ~ ~ 1
+execute at @a[tag=same_room,tag=!spectator,scores={Health=71..100,Sound=0}] run playsound luigis_mansion:entity.player.humming.high.40 player @s[scores={HealthMusic=..159350,LastHealthMusic=159351..,Sound=0}] ~ ~ ~ 1
+execute at @a[tag=same_room,tag=!spectator,scores={Health=71..100,Sound=0}] run playsound luigis_mansion:entity.player.humming.high.41 player @s[scores={HealthMusic=..156200,LastHealthMusic=156201..,Sound=0}] ~ ~ ~ 1
+execute at @a[tag=same_room,tag=!spectator,scores={Health=71..100,Sound=0}] run playsound luigis_mansion:entity.player.humming.high.42 player @s[scores={HealthMusic=..153450,LastHealthMusic=153451..,Sound=0}] ~ ~ ~ 1
+execute at @a[tag=same_room,tag=!spectator,scores={Health=71..100,Sound=0}] run playsound luigis_mansion:entity.player.humming.high.43 player @s[scores={HealthMusic=..150500,LastHealthMusic=150501..,Sound=0}] ~ ~ ~ 1
+execute at @a[tag=same_room,tag=!spectator,scores={Health=71..100,Sound=0}] run playsound luigis_mansion:entity.player.humming.high.44 player @s[scores={HealthMusic=..144500,LastHealthMusic=144501..,Sound=0}] ~ ~ ~ 1
+execute at @a[tag=same_room,tag=!spectator,scores={Health=71..100,Sound=0}] run playsound luigis_mansion:entity.player.humming.high.45 player @s[scores={HealthMusic=..138750,LastHealthMusic=138751..,Sound=0}] ~ ~ ~ 1
+execute at @a[tag=same_room,tag=!spectator,scores={Health=71..100,Sound=0}] run playsound luigis_mansion:entity.player.humming.high.46 player @s[scores={HealthMusic=..127000,LastHealthMusic=127001..,Sound=0}] ~ ~ ~ 1
+execute at @a[tag=same_room,tag=!spectator,scores={Health=71..100,Sound=0}] run playsound luigis_mansion:entity.player.humming.high.47 player @s[scores={HealthMusic=..121000,LastHealthMusic=121001..,Sound=0}] ~ ~ ~ 1
+execute at @a[tag=same_room,tag=!spectator,scores={Health=71..100,Sound=0}] run playsound luigis_mansion:entity.player.humming.high.48 player @s[scores={HealthMusic=..115200,LastHealthMusic=115201..,Sound=0}] ~ ~ ~ 1
+execute at @a[tag=same_room,tag=!spectator,scores={Health=71..100,Sound=0}] run playsound luigis_mansion:entity.player.humming.high.49 player @s[scores={HealthMusic=..109300,LastHealthMusic=109301..,Sound=0}] ~ ~ ~ 1
+execute at @a[tag=same_room,tag=!spectator,scores={Health=71..100,Sound=0}] run playsound luigis_mansion:entity.player.humming.high.50 player @s[scores={HealthMusic=..97650,LastHealthMusic=97651..,Sound=0}] ~ ~ ~ 1
+execute at @a[tag=same_room,tag=!spectator,scores={Health=71..100,Sound=0}] run playsound luigis_mansion:entity.player.humming.high.51 player @s[scores={HealthMusic=..91700,LastHealthMusic=91701..,Sound=0}] ~ ~ ~ 1
+execute at @a[tag=same_room,tag=!spectator,scores={Health=71..100,Sound=0}] run playsound luigis_mansion:entity.player.humming.high.52 player @s[scores={HealthMusic=..85800,LastHealthMusic=85801..,Sound=0}] ~ ~ ~ 1
+execute at @a[tag=same_room,tag=!spectator,scores={Health=71..100,Sound=0}] run playsound luigis_mansion:entity.player.humming.high.53 player @s[scores={HealthMusic=..74000,LastHealthMusic=74001..,Sound=0}] ~ ~ ~ 1
+execute at @a[tag=same_room,tag=!spectator,scores={Health=71..100,Sound=0}] run playsound luigis_mansion:entity.player.humming.high.54 player @s[scores={HealthMusic=..68150,LastHealthMusic=68151..,Sound=0}] ~ ~ ~ 1
+execute at @a[tag=same_room,tag=!spectator,scores={Health=71..100,Sound=0}] run playsound luigis_mansion:entity.player.humming.high.55 player @s[scores={HealthMusic=..56400,LastHealthMusic=56401..,Sound=0}] ~ ~ ~ 1
+execute at @a[tag=same_room,tag=!spectator,scores={Health=71..100,Sound=0}] run playsound luigis_mansion:entity.player.humming.high.56 player @s[scores={HealthMusic=..47500,LastHealthMusic=47501..,Sound=0}] ~ ~ ~ 1
+execute at @a[tag=same_room,tag=!spectator,scores={Health=71..100,Sound=0}] run playsound luigis_mansion:entity.player.humming.high.57 player @s[scores={HealthMusic=..41700,LastHealthMusic=41701..,Sound=0}] ~ ~ ~ 1
+execute at @a[tag=same_room,tag=!spectator,scores={Health=71..100,Sound=0}] run playsound luigis_mansion:entity.player.humming.high.58 player @s[scores={HealthMusic=..38700,LastHealthMusic=38701..,Sound=0}] ~ ~ ~ 1
+execute at @a[tag=same_room,tag=!spectator,scores={Health=71..100,Sound=0}] run playsound luigis_mansion:entity.player.humming.high.59 player @s[scores={HealthMusic=..35700,LastHealthMusic=35701..,Sound=0}] ~ ~ ~ 1
+execute at @a[tag=same_room,tag=!spectator,scores={Health=71..100,Sound=0}] run playsound luigis_mansion:entity.player.humming.high.60 player @s[scores={HealthMusic=..32850,LastHealthMusic=32851..,Sound=0}] ~ ~ ~ 1
+execute at @a[tag=same_room,tag=!spectator,scores={Health=71..100,Sound=0}] run playsound luigis_mansion:entity.player.humming.high.61 player @s[scores={HealthMusic=..20500,LastHealthMusic=20501..,Sound=0}] ~ ~ ~ 1
+execute at @a[tag=same_room,tag=!spectator,scores={Health=71..100,Sound=0}] run playsound luigis_mansion:entity.player.humming.high.62 player @s[scores={HealthMusic=..9000,LastHealthMusic=9001..,Sound=0}] ~ ~ ~ 1
 #70-41
-playsound luigis_mansion:entity.player.humming.medium.1 player @s[scores={HealthMusic=..480000,LastHealthMusic=480001..,Sound=0,Health=41..70}] ~ ~ ~ 1
-playsound luigis_mansion:entity.player.humming.medium.2 player @s[scores={HealthMusic=..456500,LastHealthMusic=456501..,Sound=0,Health=41..70}] ~ ~ ~ 1
-playsound luigis_mansion:entity.player.humming.medium.3 player @s[scores={HealthMusic=..447500,LastHealthMusic=447501..,Sound=0,Health=41..70}] ~ ~ ~ 1
-playsound luigis_mansion:entity.player.humming.medium.4 player @s[scores={HealthMusic=..444500,LastHealthMusic=444501..,Sound=0,Health=41..70}] ~ ~ ~ 1
-playsound luigis_mansion:entity.player.humming.medium.5 player @s[scores={HealthMusic=..438600,LastHealthMusic=438601..,Sound=0,Health=41..70}] ~ ~ ~ 1
-playsound luigis_mansion:entity.player.humming.medium.6 player @s[scores={HealthMusic=..432700,LastHealthMusic=432701..,Sound=0,Health=41..70}] ~ ~ ~ 1
-playsound luigis_mansion:entity.player.humming.medium.7 player @s[scores={HealthMusic=..409050,LastHealthMusic=409051..,Sound=0,Health=41..70}] ~ ~ ~ 1
-playsound luigis_mansion:entity.player.humming.medium.8 player @s[scores={HealthMusic=..400100,LastHealthMusic=400101..,Sound=0,Health=41..70}] ~ ~ ~ 1
-playsound luigis_mansion:entity.player.humming.medium.9 player @s[scores={HealthMusic=..397200,LastHealthMusic=397201..,Sound=0,Health=41..70}] ~ ~ ~ 1
-playsound luigis_mansion:entity.player.humming.medium.10 player @s[scores={HealthMusic=..391300,LastHealthMusic=391301..,Sound=0,Health=41..70}] ~ ~ ~ 1
-playsound luigis_mansion:entity.player.humming.medium.11 player @s[scores={HealthMusic=..382400,LastHealthMusic=382401..,Sound=0,Health=41..70}] ~ ~ ~ 1
-playsound luigis_mansion:entity.player.humming.medium.12 player @s[scores={HealthMusic=..376500,LastHealthMusic=376501..,Sound=0,Health=41..70}] ~ ~ ~ 1
-playsound luigis_mansion:entity.player.humming.medium.13 player @s[scores={HealthMusic=..373550,LastHealthMusic=373551..,Sound=0,Health=41..70}] ~ ~ ~ 1
-playsound luigis_mansion:entity.player.humming.medium.14 player @s[scores={HealthMusic=..367650,LastHealthMusic=367651..,Sound=0,Health=41..70}] ~ ~ ~ 1
-playsound luigis_mansion:entity.player.humming.medium.15 player @s[scores={HealthMusic=..361700,LastHealthMusic=361701..,Sound=0,Health=41..70}] ~ ~ ~ 1
-playsound luigis_mansion:entity.player.humming.medium.16 player @s[scores={HealthMusic=..355800,LastHealthMusic=355801..,Sound=0,Health=41..70}] ~ ~ ~ 1
-playsound luigis_mansion:entity.player.humming.medium.17 player @s[scores={HealthMusic=..335100,LastHealthMusic=335101..,Sound=0,Health=41..70}] ~ ~ ~ 1
-playsound luigis_mansion:entity.player.humming.medium.18 player @s[scores={HealthMusic=..329200,LastHealthMusic=329201..,Sound=0,Health=41..70}] ~ ~ ~ 1
-playsound luigis_mansion:entity.player.humming.medium.19 player @s[scores={HealthMusic=..326200,LastHealthMusic=326201..,Sound=0,Health=41..70}] ~ ~ ~ 1
-playsound luigis_mansion:entity.player.humming.medium.20 player @s[scores={HealthMusic=..320300,LastHealthMusic=320301..,Sound=0,Health=41..70}] ~ ~ ~ 1
-playsound luigis_mansion:entity.player.humming.medium.21 player @s[scores={HealthMusic=..317400,LastHealthMusic=317401..,Sound=0,Health=41..70}] ~ ~ ~ 1
-playsound luigis_mansion:entity.player.humming.medium.22 player @s[scores={HealthMusic=..314400,LastHealthMusic=314401..,Sound=0,Health=41..70}] ~ ~ ~ 1
-playsound luigis_mansion:entity.player.humming.medium.23 player @s[scores={HealthMusic=..305550,LastHealthMusic=305551..,Sound=0,Health=41..70}] ~ ~ ~ 1
-playsound luigis_mansion:entity.player.humming.medium.24 player @s[scores={HealthMusic=..296700,LastHealthMusic=296701..,Sound=0,Health=41..70}] ~ ~ ~ 1
-playsound luigis_mansion:entity.player.humming.medium.25 player @s[scores={HealthMusic=..287800,LastHealthMusic=287801..,Sound=0,Health=41..70}] ~ ~ ~ 1
-playsound luigis_mansion:entity.player.humming.medium.26 player @s[scores={HealthMusic=..281850,LastHealthMusic=281851..,Sound=0,Health=41..70}] ~ ~ ~ 1
-playsound luigis_mansion:entity.player.humming.medium.27 player @s[scores={HealthMusic=..278900,LastHealthMusic=278901..,Sound=0,Health=41..70}] ~ ~ ~ 1
-playsound luigis_mansion:entity.player.humming.medium.28 player @s[scores={HealthMusic=..273000,LastHealthMusic=273001..,Sound=0,Health=41..70}] ~ ~ ~ 1
-playsound luigis_mansion:entity.player.humming.medium.29 player @s[scores={HealthMusic=..270050,LastHealthMusic=270051..,Sound=0,Health=41..70}] ~ ~ ~ 1
-playsound luigis_mansion:entity.player.humming.medium.30 player @s[scores={HealthMusic=..267100,LastHealthMusic=267101..,Sound=0,Health=41..70}] ~ ~ ~ 1
-playsound luigis_mansion:entity.player.humming.medium.31 player @s[scores={HealthMusic=..261200,LastHealthMusic=261201..,Sound=0,Health=41..70}] ~ ~ ~ 1
-playsound luigis_mansion:entity.player.humming.medium.32 player @s[scores={HealthMusic=..240200,LastHealthMusic=240201..,Sound=0,Health=41..70}] ~ ~ ~ 1
-playsound luigis_mansion:entity.player.humming.medium.33 player @s[scores={HealthMusic=..234600,LastHealthMusic=234601..,Sound=0,Health=41..70}] ~ ~ ~ 1
-playsound luigis_mansion:entity.player.humming.medium.34 player @s[scores={HealthMusic=..231600,LastHealthMusic=231601..,Sound=0,Health=41..70}] ~ ~ ~ 1
-playsound luigis_mansion:entity.player.humming.medium.35 player @s[scores={HealthMusic=..225700,LastHealthMusic=225701..,Sound=0,Health=41..70}] ~ ~ ~ 1
-playsound luigis_mansion:entity.player.humming.medium.36 player @s[scores={HealthMusic=..222700,LastHealthMusic=222701..,Sound=0,Health=41..70}] ~ ~ ~ 1
-playsound luigis_mansion:entity.player.humming.medium.37 player @s[scores={HealthMusic=..219800,LastHealthMusic=219801..,Sound=0,Health=41..70}] ~ ~ ~ 1
-playsound luigis_mansion:entity.player.humming.medium.38 player @s[scores={HealthMusic=..213900,LastHealthMusic=213901..,Sound=0,Health=41..70}] ~ ~ ~ 1
-playsound luigis_mansion:entity.player.humming.medium.39 player @s[scores={HealthMusic=..210900,LastHealthMusic=210901..,Sound=0,Health=41..70}] ~ ~ ~ 1
-playsound luigis_mansion:entity.player.humming.medium.40 player @s[scores={HealthMusic=..207950,LastHealthMusic=207951..,Sound=0,Health=41..70}] ~ ~ ~ 1
-playsound luigis_mansion:entity.player.humming.medium.41 player @s[scores={HealthMusic=..184300,LastHealthMusic=184301..,Sound=0,Health=41..70}] ~ ~ ~ 1
-playsound luigis_mansion:entity.player.humming.medium.42 player @s[scores={HealthMusic=..163600,LastHealthMusic=163601..,Sound=0,Health=41..70}] ~ ~ ~ 1
-playsound luigis_mansion:entity.player.humming.medium.43 player @s[scores={HealthMusic=..157700,LastHealthMusic=157701..,Sound=0,Health=41..70}] ~ ~ ~ 1
-playsound luigis_mansion:entity.player.humming.medium.44 player @s[scores={HealthMusic=..154700,LastHealthMusic=154701..,Sound=0,Health=41..70}] ~ ~ ~ 1
-playsound luigis_mansion:entity.player.humming.medium.45 player @s[scores={HealthMusic=..151750,LastHealthMusic=151751..,Sound=0,Health=41..70}] ~ ~ ~ 1
-playsound luigis_mansion:entity.player.humming.medium.46 player @s[scores={HealthMusic=..148800,LastHealthMusic=148801..,Sound=0,Health=41..70}] ~ ~ ~ 1
-playsound luigis_mansion:entity.player.humming.medium.47 player @s[scores={HealthMusic=..142900,LastHealthMusic=142901..,Sound=0,Health=41..70}] ~ ~ ~ 1
-playsound luigis_mansion:entity.player.humming.medium.48 player @s[scores={HealthMusic=..136950,LastHealthMusic=136951..,Sound=0,Health=41..70}] ~ ~ ~ 1
-playsound luigis_mansion:entity.player.humming.medium.49 player @s[scores={HealthMusic=..125100,LastHealthMusic=125101..,Sound=0,Health=41..70}] ~ ~ ~ 1
-playsound luigis_mansion:entity.player.humming.medium.50 player @s[scores={HealthMusic=..119250,LastHealthMusic=119251..,Sound=0,Health=41..70}] ~ ~ ~ 1
-playsound luigis_mansion:entity.player.humming.medium.51 player @s[scores={HealthMusic=..113300,LastHealthMusic=113301..,Sound=0,Health=41..70}] ~ ~ ~ 1
-playsound luigis_mansion:entity.player.humming.medium.52 player @s[scores={HealthMusic=..107400,LastHealthMusic=107401..,Sound=0,Health=41..70}] ~ ~ ~ 1
-playsound luigis_mansion:entity.player.humming.medium.53 player @s[scores={HealthMusic=..95200,LastHealthMusic=95201..,Sound=0,Health=41..70}] ~ ~ ~ 1
-playsound luigis_mansion:entity.player.humming.medium.54 player @s[scores={HealthMusic=..89750,LastHealthMusic=89751..,Sound=0,Health=41..70}] ~ ~ ~ 1
-playsound luigis_mansion:entity.player.humming.medium.55 player @s[scores={HealthMusic=..83750,LastHealthMusic=83751..,Sound=0,Health=41..70}] ~ ~ ~ 1
-playsound luigis_mansion:entity.player.humming.medium.56 player @s[scores={HealthMusic=..71950,LastHealthMusic=71951..,Sound=0,Health=41..70}] ~ ~ ~ 1
-playsound luigis_mansion:entity.player.humming.medium.57 player @s[scores={HealthMusic=..68950,LastHealthMusic=68951..,Sound=0,Health=41..70}] ~ ~ ~ 1
-playsound luigis_mansion:entity.player.humming.medium.58 player @s[scores={HealthMusic=..66000,LastHealthMusic=66001..,Sound=0,Health=41..70}] ~ ~ ~ 1
-playsound luigis_mansion:entity.player.humming.medium.59 player @s[scores={HealthMusic=..54200,LastHealthMusic=54201..,Sound=0,Health=41..70}] ~ ~ ~ 1
-playsound luigis_mansion:entity.player.humming.medium.60 player @s[scores={HealthMusic=..45300,LastHealthMusic=45301..,Sound=0,Health=41..70}] ~ ~ ~ 1
-playsound luigis_mansion:entity.player.humming.medium.61 player @s[scores={HealthMusic=..39400,LastHealthMusic=39401..,Sound=0,Health=41..70}] ~ ~ ~ 1
-playsound luigis_mansion:entity.player.humming.medium.62 player @s[scores={HealthMusic=..36450,LastHealthMusic=36451..,Sound=0,Health=41..70}] ~ ~ ~ 1
-playsound luigis_mansion:entity.player.humming.medium.63 player @s[scores={HealthMusic=..33500,LastHealthMusic=33501..,Sound=0,Health=41..70}] ~ ~ ~ 1
-playsound luigis_mansion:entity.player.humming.medium.64 player @s[scores={HealthMusic=..30500,LastHealthMusic=30501..,Sound=0,Health=41..70}] ~ ~ ~ 1
-playsound luigis_mansion:entity.player.humming.medium.65 player @s[scores={HealthMusic=..18700,LastHealthMusic=18701..,Sound=0,Health=41..70}] ~ ~ ~ 1
-playsound luigis_mansion:entity.player.humming.medium.66 player @s[scores={HealthMusic=..6900,LastHealthMusic=6901..,Sound=0,Health=41..70}] ~ ~ ~ 1
+execute at @a[tag=same_room,tag=!spectator,scores={Health=41..70,Sound=0}] run playsound luigis_mansion:entity.player.humming.medium.1 player @s[scores={HealthMusic=..480000,LastHealthMusic=480001..,Sound=0}] ~ ~ ~ 1
+execute at @a[tag=same_room,tag=!spectator,scores={Health=41..70,Sound=0}] run playsound luigis_mansion:entity.player.humming.medium.2 player @s[scores={HealthMusic=..456500,LastHealthMusic=456501..,Sound=0}] ~ ~ ~ 1
+execute at @a[tag=same_room,tag=!spectator,scores={Health=41..70,Sound=0}] run playsound luigis_mansion:entity.player.humming.medium.3 player @s[scores={HealthMusic=..447500,LastHealthMusic=447501..,Sound=0}] ~ ~ ~ 1
+execute at @a[tag=same_room,tag=!spectator,scores={Health=41..70,Sound=0}] run playsound luigis_mansion:entity.player.humming.medium.4 player @s[scores={HealthMusic=..444500,LastHealthMusic=444501..,Sound=0}] ~ ~ ~ 1
+execute at @a[tag=same_room,tag=!spectator,scores={Health=41..70,Sound=0}] run playsound luigis_mansion:entity.player.humming.medium.5 player @s[scores={HealthMusic=..438600,LastHealthMusic=438601..,Sound=0}] ~ ~ ~ 1
+execute at @a[tag=same_room,tag=!spectator,scores={Health=41..70,Sound=0}] run playsound luigis_mansion:entity.player.humming.medium.6 player @s[scores={HealthMusic=..432700,LastHealthMusic=432701..,Sound=0}] ~ ~ ~ 1
+execute at @a[tag=same_room,tag=!spectator,scores={Health=41..70,Sound=0}] run playsound luigis_mansion:entity.player.humming.medium.7 player @s[scores={HealthMusic=..409050,LastHealthMusic=409051..,Sound=0}] ~ ~ ~ 1
+execute at @a[tag=same_room,tag=!spectator,scores={Health=41..70,Sound=0}] run playsound luigis_mansion:entity.player.humming.medium.8 player @s[scores={HealthMusic=..400100,LastHealthMusic=400101..,Sound=0}] ~ ~ ~ 1
+execute at @a[tag=same_room,tag=!spectator,scores={Health=41..70,Sound=0}] run playsound luigis_mansion:entity.player.humming.medium.9 player @s[scores={HealthMusic=..397200,LastHealthMusic=397201..,Sound=0}] ~ ~ ~ 1
+execute at @a[tag=same_room,tag=!spectator,scores={Health=41..70,Sound=0}] run playsound luigis_mansion:entity.player.humming.medium.10 player @s[scores={HealthMusic=..391300,LastHealthMusic=391301..,Sound=0}] ~ ~ ~ 1
+execute at @a[tag=same_room,tag=!spectator,scores={Health=41..70,Sound=0}] run playsound luigis_mansion:entity.player.humming.medium.11 player @s[scores={HealthMusic=..382400,LastHealthMusic=382401..,Sound=0}] ~ ~ ~ 1
+execute at @a[tag=same_room,tag=!spectator,scores={Health=41..70,Sound=0}] run playsound luigis_mansion:entity.player.humming.medium.12 player @s[scores={HealthMusic=..376500,LastHealthMusic=376501..,Sound=0}] ~ ~ ~ 1
+execute at @a[tag=same_room,tag=!spectator,scores={Health=41..70,Sound=0}] run playsound luigis_mansion:entity.player.humming.medium.13 player @s[scores={HealthMusic=..373550,LastHealthMusic=373551..,Sound=0}] ~ ~ ~ 1
+execute at @a[tag=same_room,tag=!spectator,scores={Health=41..70,Sound=0}] run playsound luigis_mansion:entity.player.humming.medium.14 player @s[scores={HealthMusic=..367650,LastHealthMusic=367651..,Sound=0}] ~ ~ ~ 1
+execute at @a[tag=same_room,tag=!spectator,scores={Health=41..70,Sound=0}] run playsound luigis_mansion:entity.player.humming.medium.15 player @s[scores={HealthMusic=..361700,LastHealthMusic=361701..,Sound=0}] ~ ~ ~ 1
+execute at @a[tag=same_room,tag=!spectator,scores={Health=41..70,Sound=0}] run playsound luigis_mansion:entity.player.humming.medium.16 player @s[scores={HealthMusic=..355800,LastHealthMusic=355801..,Sound=0}] ~ ~ ~ 1
+execute at @a[tag=same_room,tag=!spectator,scores={Health=41..70,Sound=0}] run playsound luigis_mansion:entity.player.humming.medium.17 player @s[scores={HealthMusic=..335100,LastHealthMusic=335101..,Sound=0}] ~ ~ ~ 1
+execute at @a[tag=same_room,tag=!spectator,scores={Health=41..70,Sound=0}] run playsound luigis_mansion:entity.player.humming.medium.18 player @s[scores={HealthMusic=..329200,LastHealthMusic=329201..,Sound=0}] ~ ~ ~ 1
+execute at @a[tag=same_room,tag=!spectator,scores={Health=41..70,Sound=0}] run playsound luigis_mansion:entity.player.humming.medium.19 player @s[scores={HealthMusic=..326200,LastHealthMusic=326201..,Sound=0}] ~ ~ ~ 1
+execute at @a[tag=same_room,tag=!spectator,scores={Health=41..70,Sound=0}] run playsound luigis_mansion:entity.player.humming.medium.20 player @s[scores={HealthMusic=..320300,LastHealthMusic=320301..,Sound=0}] ~ ~ ~ 1
+execute at @a[tag=same_room,tag=!spectator,scores={Health=41..70,Sound=0}] run playsound luigis_mansion:entity.player.humming.medium.21 player @s[scores={HealthMusic=..317400,LastHealthMusic=317401..,Sound=0}] ~ ~ ~ 1
+execute at @a[tag=same_room,tag=!spectator,scores={Health=41..70,Sound=0}] run playsound luigis_mansion:entity.player.humming.medium.22 player @s[scores={HealthMusic=..314400,LastHealthMusic=314401..,Sound=0}] ~ ~ ~ 1
+execute at @a[tag=same_room,tag=!spectator,scores={Health=41..70,Sound=0}] run playsound luigis_mansion:entity.player.humming.medium.23 player @s[scores={HealthMusic=..305550,LastHealthMusic=305551..,Sound=0}] ~ ~ ~ 1
+execute at @a[tag=same_room,tag=!spectator,scores={Health=41..70,Sound=0}] run playsound luigis_mansion:entity.player.humming.medium.24 player @s[scores={HealthMusic=..296700,LastHealthMusic=296701..,Sound=0}] ~ ~ ~ 1
+execute at @a[tag=same_room,tag=!spectator,scores={Health=41..70,Sound=0}] run playsound luigis_mansion:entity.player.humming.medium.25 player @s[scores={HealthMusic=..287800,LastHealthMusic=287801..,Sound=0}] ~ ~ ~ 1
+execute at @a[tag=same_room,tag=!spectator,scores={Health=41..70,Sound=0}] run playsound luigis_mansion:entity.player.humming.medium.26 player @s[scores={HealthMusic=..281850,LastHealthMusic=281851..,Sound=0}] ~ ~ ~ 1
+execute at @a[tag=same_room,tag=!spectator,scores={Health=41..70,Sound=0}] run playsound luigis_mansion:entity.player.humming.medium.27 player @s[scores={HealthMusic=..278900,LastHealthMusic=278901..,Sound=0}] ~ ~ ~ 1
+execute at @a[tag=same_room,tag=!spectator,scores={Health=41..70,Sound=0}] run playsound luigis_mansion:entity.player.humming.medium.28 player @s[scores={HealthMusic=..273000,LastHealthMusic=273001..,Sound=0}] ~ ~ ~ 1
+execute at @a[tag=same_room,tag=!spectator,scores={Health=41..70,Sound=0}] run playsound luigis_mansion:entity.player.humming.medium.29 player @s[scores={HealthMusic=..270050,LastHealthMusic=270051..,Sound=0}] ~ ~ ~ 1
+execute at @a[tag=same_room,tag=!spectator,scores={Health=41..70,Sound=0}] run playsound luigis_mansion:entity.player.humming.medium.30 player @s[scores={HealthMusic=..267100,LastHealthMusic=267101..,Sound=0}] ~ ~ ~ 1
+execute at @a[tag=same_room,tag=!spectator,scores={Health=41..70,Sound=0}] run playsound luigis_mansion:entity.player.humming.medium.31 player @s[scores={HealthMusic=..261200,LastHealthMusic=261201..,Sound=0}] ~ ~ ~ 1
+execute at @a[tag=same_room,tag=!spectator,scores={Health=41..70,Sound=0}] run playsound luigis_mansion:entity.player.humming.medium.32 player @s[scores={HealthMusic=..240200,LastHealthMusic=240201..,Sound=0}] ~ ~ ~ 1
+execute at @a[tag=same_room,tag=!spectator,scores={Health=41..70,Sound=0}] run playsound luigis_mansion:entity.player.humming.medium.33 player @s[scores={HealthMusic=..234600,LastHealthMusic=234601..,Sound=0}] ~ ~ ~ 1
+execute at @a[tag=same_room,tag=!spectator,scores={Health=41..70,Sound=0}] run playsound luigis_mansion:entity.player.humming.medium.34 player @s[scores={HealthMusic=..231600,LastHealthMusic=231601..,Sound=0}] ~ ~ ~ 1
+execute at @a[tag=same_room,tag=!spectator,scores={Health=41..70,Sound=0}] run playsound luigis_mansion:entity.player.humming.medium.35 player @s[scores={HealthMusic=..225700,LastHealthMusic=225701..,Sound=0}] ~ ~ ~ 1
+execute at @a[tag=same_room,tag=!spectator,scores={Health=41..70,Sound=0}] run playsound luigis_mansion:entity.player.humming.medium.36 player @s[scores={HealthMusic=..222700,LastHealthMusic=222701..,Sound=0}] ~ ~ ~ 1
+execute at @a[tag=same_room,tag=!spectator,scores={Health=41..70,Sound=0}] run playsound luigis_mansion:entity.player.humming.medium.37 player @s[scores={HealthMusic=..219800,LastHealthMusic=219801..,Sound=0}] ~ ~ ~ 1
+execute at @a[tag=same_room,tag=!spectator,scores={Health=41..70,Sound=0}] run playsound luigis_mansion:entity.player.humming.medium.38 player @s[scores={HealthMusic=..213900,LastHealthMusic=213901..,Sound=0}] ~ ~ ~ 1
+execute at @a[tag=same_room,tag=!spectator,scores={Health=41..70,Sound=0}] run playsound luigis_mansion:entity.player.humming.medium.39 player @s[scores={HealthMusic=..210900,LastHealthMusic=210901..,Sound=0}] ~ ~ ~ 1
+execute at @a[tag=same_room,tag=!spectator,scores={Health=41..70,Sound=0}] run playsound luigis_mansion:entity.player.humming.medium.40 player @s[scores={HealthMusic=..207950,LastHealthMusic=207951..,Sound=0}] ~ ~ ~ 1
+execute at @a[tag=same_room,tag=!spectator,scores={Health=41..70,Sound=0}] run playsound luigis_mansion:entity.player.humming.medium.41 player @s[scores={HealthMusic=..184300,LastHealthMusic=184301..,Sound=0}] ~ ~ ~ 1
+execute at @a[tag=same_room,tag=!spectator,scores={Health=41..70,Sound=0}] run playsound luigis_mansion:entity.player.humming.medium.42 player @s[scores={HealthMusic=..163600,LastHealthMusic=163601..,Sound=0}] ~ ~ ~ 1
+execute at @a[tag=same_room,tag=!spectator,scores={Health=41..70,Sound=0}] run playsound luigis_mansion:entity.player.humming.medium.43 player @s[scores={HealthMusic=..157700,LastHealthMusic=157701..,Sound=0}] ~ ~ ~ 1
+execute at @a[tag=same_room,tag=!spectator,scores={Health=41..70,Sound=0}] run playsound luigis_mansion:entity.player.humming.medium.44 player @s[scores={HealthMusic=..154700,LastHealthMusic=154701..,Sound=0}] ~ ~ ~ 1
+execute at @a[tag=same_room,tag=!spectator,scores={Health=41..70,Sound=0}] run playsound luigis_mansion:entity.player.humming.medium.45 player @s[scores={HealthMusic=..151750,LastHealthMusic=151751..,Sound=0}] ~ ~ ~ 1
+execute at @a[tag=same_room,tag=!spectator,scores={Health=41..70,Sound=0}] run playsound luigis_mansion:entity.player.humming.medium.46 player @s[scores={HealthMusic=..148800,LastHealthMusic=148801..,Sound=0}] ~ ~ ~ 1
+execute at @a[tag=same_room,tag=!spectator,scores={Health=41..70,Sound=0}] run playsound luigis_mansion:entity.player.humming.medium.47 player @s[scores={HealthMusic=..142900,LastHealthMusic=142901..,Sound=0}] ~ ~ ~ 1
+execute at @a[tag=same_room,tag=!spectator,scores={Health=41..70,Sound=0}] run playsound luigis_mansion:entity.player.humming.medium.48 player @s[scores={HealthMusic=..136950,LastHealthMusic=136951..,Sound=0}] ~ ~ ~ 1
+execute at @a[tag=same_room,tag=!spectator,scores={Health=41..70,Sound=0}] run playsound luigis_mansion:entity.player.humming.medium.49 player @s[scores={HealthMusic=..125100,LastHealthMusic=125101..,Sound=0}] ~ ~ ~ 1
+execute at @a[tag=same_room,tag=!spectator,scores={Health=41..70,Sound=0}] run playsound luigis_mansion:entity.player.humming.medium.50 player @s[scores={HealthMusic=..119250,LastHealthMusic=119251..,Sound=0}] ~ ~ ~ 1
+execute at @a[tag=same_room,tag=!spectator,scores={Health=41..70,Sound=0}] run playsound luigis_mansion:entity.player.humming.medium.51 player @s[scores={HealthMusic=..113300,LastHealthMusic=113301..,Sound=0}] ~ ~ ~ 1
+execute at @a[tag=same_room,tag=!spectator,scores={Health=41..70,Sound=0}] run playsound luigis_mansion:entity.player.humming.medium.52 player @s[scores={HealthMusic=..107400,LastHealthMusic=107401..,Sound=0}] ~ ~ ~ 1
+execute at @a[tag=same_room,tag=!spectator,scores={Health=41..70,Sound=0}] run playsound luigis_mansion:entity.player.humming.medium.53 player @s[scores={HealthMusic=..95200,LastHealthMusic=95201..,Sound=0}] ~ ~ ~ 1
+execute at @a[tag=same_room,tag=!spectator,scores={Health=41..70,Sound=0}] run playsound luigis_mansion:entity.player.humming.medium.54 player @s[scores={HealthMusic=..89750,LastHealthMusic=89751..,Sound=0}] ~ ~ ~ 1
+execute at @a[tag=same_room,tag=!spectator,scores={Health=41..70,Sound=0}] run playsound luigis_mansion:entity.player.humming.medium.55 player @s[scores={HealthMusic=..83750,LastHealthMusic=83751..,Sound=0}] ~ ~ ~ 1
+execute at @a[tag=same_room,tag=!spectator,scores={Health=41..70,Sound=0}] run playsound luigis_mansion:entity.player.humming.medium.56 player @s[scores={HealthMusic=..71950,LastHealthMusic=71951..,Sound=0}] ~ ~ ~ 1
+execute at @a[tag=same_room,tag=!spectator,scores={Health=41..70,Sound=0}] run playsound luigis_mansion:entity.player.humming.medium.57 player @s[scores={HealthMusic=..68950,LastHealthMusic=68951..,Sound=0}] ~ ~ ~ 1
+execute at @a[tag=same_room,tag=!spectator,scores={Health=41..70,Sound=0}] run playsound luigis_mansion:entity.player.humming.medium.58 player @s[scores={HealthMusic=..66000,LastHealthMusic=66001..,Sound=0}] ~ ~ ~ 1
+execute at @a[tag=same_room,tag=!spectator,scores={Health=41..70,Sound=0}] run playsound luigis_mansion:entity.player.humming.medium.59 player @s[scores={HealthMusic=..54200,LastHealthMusic=54201..,Sound=0}] ~ ~ ~ 1
+execute at @a[tag=same_room,tag=!spectator,scores={Health=41..70,Sound=0}] run playsound luigis_mansion:entity.player.humming.medium.60 player @s[scores={HealthMusic=..45300,LastHealthMusic=45301..,Sound=0}] ~ ~ ~ 1
+execute at @a[tag=same_room,tag=!spectator,scores={Health=41..70,Sound=0}] run playsound luigis_mansion:entity.player.humming.medium.61 player @s[scores={HealthMusic=..39400,LastHealthMusic=39401..,Sound=0}] ~ ~ ~ 1
+execute at @a[tag=same_room,tag=!spectator,scores={Health=41..70,Sound=0}] run playsound luigis_mansion:entity.player.humming.medium.62 player @s[scores={HealthMusic=..36450,LastHealthMusic=36451..,Sound=0}] ~ ~ ~ 1
+execute at @a[tag=same_room,tag=!spectator,scores={Health=41..70,Sound=0}] run playsound luigis_mansion:entity.player.humming.medium.63 player @s[scores={HealthMusic=..33500,LastHealthMusic=33501..,Sound=0}] ~ ~ ~ 1
+execute at @a[tag=same_room,tag=!spectator,scores={Health=41..70,Sound=0}] run playsound luigis_mansion:entity.player.humming.medium.64 player @s[scores={HealthMusic=..30500,LastHealthMusic=30501..,Sound=0}] ~ ~ ~ 1
+execute at @a[tag=same_room,tag=!spectator,scores={Health=41..70,Sound=0}] run playsound luigis_mansion:entity.player.humming.medium.65 player @s[scores={HealthMusic=..18700,LastHealthMusic=18701..,Sound=0}] ~ ~ ~ 1
+execute at @a[tag=same_room,tag=!spectator,scores={Health=41..70,Sound=0}] run playsound luigis_mansion:entity.player.humming.medium.66 player @s[scores={HealthMusic=..6900,LastHealthMusic=6901..,Sound=0}] ~ ~ ~ 1
 #40-1
-playsound luigis_mansion:entity.player.humming.low.1 player @s[scores={HealthMusic=..480000,LastHealthMusic=480001..,Sound=0,Health=1..40}] ~ ~ ~ 1
-playsound luigis_mansion:entity.player.humming.low.2 player @s[scores={HealthMusic=..456500,LastHealthMusic=456501..,Sound=0,Health=1..40}] ~ ~ ~ 1
-playsound luigis_mansion:entity.player.humming.low.3 player @s[scores={HealthMusic=..447650,LastHealthMusic=447651..,Sound=0,Health=1..40}] ~ ~ ~ 1
-playsound luigis_mansion:entity.player.humming.low.4 player @s[scores={HealthMusic=..444750,LastHealthMusic=444751..,Sound=0,Health=1..40}] ~ ~ ~ 1
-playsound luigis_mansion:entity.player.humming.low.5 player @s[scores={HealthMusic=..432900,LastHealthMusic=432901..,Sound=0,Health=1..40}] ~ ~ ~ 1
-playsound luigis_mansion:entity.player.humming.low.6 player @s[scores={HealthMusic=..409350,LastHealthMusic=409351..,Sound=0,Health=1..40}] ~ ~ ~ 1
-playsound luigis_mansion:entity.player.humming.low.7 player @s[scores={HealthMusic=..400600,LastHealthMusic=400601..,Sound=0,Health=1..40}] ~ ~ ~ 1
-playsound luigis_mansion:entity.player.humming.low.8 player @s[scores={HealthMusic=..397650,LastHealthMusic=397651..,Sound=0,Health=1..40}] ~ ~ ~ 1
-playsound luigis_mansion:entity.player.humming.low.9 player @s[scores={HealthMusic=..382800,LastHealthMusic=382801..,Sound=0,Health=1..40}] ~ ~ ~ 1
-playsound luigis_mansion:entity.player.humming.low.10 player @s[scores={HealthMusic=..380000,LastHealthMusic=380001..,Sound=0,Health=1..40}] ~ ~ ~ 1
-playsound luigis_mansion:entity.player.humming.low.11 player @s[scores={HealthMusic=..374100,LastHealthMusic=374101..,Sound=0,Health=1..40}] ~ ~ ~ 1
-playsound luigis_mansion:entity.player.humming.low.12 player @s[scores={HealthMusic=..368100,LastHealthMusic=368101..,Sound=0,Health=1..40}] ~ ~ ~ 1
-playsound luigis_mansion:entity.player.humming.low.13 player @s[scores={HealthMusic=..362400,LastHealthMusic=362401..,Sound=0,Health=1..40}] ~ ~ ~ 1
-playsound luigis_mansion:entity.player.humming.low.14 player @s[scores={HealthMusic=..356350,LastHealthMusic=356351..,Sound=0,Health=1..40}] ~ ~ ~ 1
-playsound luigis_mansion:entity.player.humming.low.15 player @s[scores={HealthMusic=..335750,LastHealthMusic=335751..,Sound=0,Health=1..40}] ~ ~ ~ 1
-playsound luigis_mansion:entity.player.humming.low.16 player @s[scores={HealthMusic=..330000,LastHealthMusic=330001..,Sound=0,Health=1..40}] ~ ~ ~ 1
-playsound luigis_mansion:entity.player.humming.low.17 player @s[scores={HealthMusic=..327100,LastHealthMusic=327101..,Sound=0,Health=1..40}] ~ ~ ~ 1
-playsound luigis_mansion:entity.player.humming.low.18 player @s[scores={HealthMusic=..321200,LastHealthMusic=321201..,Sound=0,Health=1..40}] ~ ~ ~ 1
-playsound luigis_mansion:entity.player.humming.low.19 player @s[scores={HealthMusic=..315300,LastHealthMusic=315301..,Sound=0,Health=1..40}] ~ ~ ~ 1
-playsound luigis_mansion:entity.player.humming.low.20 player @s[scores={HealthMusic=..309450,LastHealthMusic=309451..,Sound=0,Health=1..40}] ~ ~ ~ 1
-playsound luigis_mansion:entity.player.humming.low.21 player @s[scores={HealthMusic=..303500,LastHealthMusic=303501..,Sound=0,Health=1..40}] ~ ~ ~ 1
-playsound luigis_mansion:entity.player.humming.low.22 player @s[scores={HealthMusic=..297650,LastHealthMusic=297651..,Sound=0,Health=1..40}] ~ ~ ~ 1
-playsound luigis_mansion:entity.player.humming.low.23 player @s[scores={HealthMusic=..288800,LastHealthMusic=288801..,Sound=0,Health=1..40}] ~ ~ ~ 1
-playsound luigis_mansion:entity.player.humming.low.24 player @s[scores={HealthMusic=..282950,LastHealthMusic=282951..,Sound=0,Health=1..40}] ~ ~ ~ 1
-playsound luigis_mansion:entity.player.humming.low.25 player @s[scores={HealthMusic=..280050,LastHealthMusic=280051..,Sound=0,Health=1..40}] ~ ~ ~ 1
-playsound luigis_mansion:entity.player.humming.low.26 player @s[scores={HealthMusic=..273800,LastHealthMusic=273801..,Sound=0,Health=1..40}] ~ ~ ~ 1
-playsound luigis_mansion:entity.player.humming.low.27 player @s[scores={HealthMusic=..268100,LastHealthMusic=268101..,Sound=0,Health=1..40}] ~ ~ ~ 1
-playsound luigis_mansion:entity.player.humming.low.28 player @s[scores={HealthMusic=..262100,LastHealthMusic=262101..,Sound=0,Health=1..40}] ~ ~ ~ 1
-playsound luigis_mansion:entity.player.humming.low.29 player @s[scores={HealthMusic=..241550,LastHealthMusic=241551..,Sound=0,Health=1..40}] ~ ~ ~ 1
-playsound luigis_mansion:entity.player.humming.low.30 player @s[scores={HealthMusic=..235850,LastHealthMusic=235851..,Sound=0,Health=1..40}] ~ ~ ~ 1
-playsound luigis_mansion:entity.player.humming.low.31 player @s[scores={HealthMusic=..232950,LastHealthMusic=232951..,Sound=0,Health=1..40}] ~ ~ ~ 1
-playsound luigis_mansion:entity.player.humming.low.32 player @s[scores={HealthMusic=..226800,LastHealthMusic=226801..,Sound=0,Health=1..40}] ~ ~ ~ 1
-playsound luigis_mansion:entity.player.humming.low.33 player @s[scores={HealthMusic=..224150,LastHealthMusic=224151..,Sound=0,Health=1..40}] ~ ~ ~ 1
-playsound luigis_mansion:entity.player.humming.low.34 player @s[scores={HealthMusic=..221150,LastHealthMusic=221151..,Sound=0,Health=1..40}] ~ ~ ~ 1
-playsound luigis_mansion:entity.player.humming.low.35 player @s[scores={HealthMusic=..215300,LastHealthMusic=215301..,Sound=0,Health=1..40}] ~ ~ ~ 1
-playsound luigis_mansion:entity.player.humming.low.36 player @s[scores={HealthMusic=..209300,LastHealthMusic=209301..,Sound=0,Health=1..40}] ~ ~ ~ 1
-playsound luigis_mansion:entity.player.humming.low.37 player @s[scores={HealthMusic=..185100,LastHealthMusic=185101..,Sound=0,Health=1..40}] ~ ~ ~ 1
-playsound luigis_mansion:entity.player.humming.low.38 player @s[scores={HealthMusic=..162200,LastHealthMusic=162201..,Sound=0,Health=1..40}] ~ ~ ~ 1
-playsound luigis_mansion:entity.player.humming.low.39 player @s[scores={HealthMusic=..156500,LastHealthMusic=156501..,Sound=0,Health=1..40}] ~ ~ ~ 1
-playsound luigis_mansion:entity.player.humming.low.40 player @s[scores={HealthMusic=..150500,LastHealthMusic=150501..,Sound=0,Health=1..40}] ~ ~ ~ 1
-playsound luigis_mansion:entity.player.humming.low.41 player @s[scores={HealthMusic=..144650,LastHealthMusic=144651..,Sound=0,Health=1..40}] ~ ~ ~ 1
-playsound luigis_mansion:entity.player.humming.low.42 player @s[scores={HealthMusic=..138800,LastHealthMusic=138801..,Sound=0,Health=1..40}] ~ ~ ~ 1
-playsound luigis_mansion:entity.player.humming.low.43 player @s[scores={HealthMusic=..121200,LastHealthMusic=121201..,Sound=0,Health=1..40}] ~ ~ ~ 1
-playsound luigis_mansion:entity.player.humming.low.44 player @s[scores={HealthMusic=..115150,LastHealthMusic=115151..,Sound=0,Health=1..40}] ~ ~ ~ 1
-playsound luigis_mansion:entity.player.humming.low.45 player @s[scores={HealthMusic=..108900,LastHealthMusic=108901..,Sound=0,Health=1..40}] ~ ~ ~ 1
-playsound luigis_mansion:entity.player.humming.low.46 player @s[scores={HealthMusic=..97400,LastHealthMusic=97401..,Sound=0,Health=1..40}] ~ ~ ~ 1
-playsound luigis_mansion:entity.player.humming.low.47 player @s[scores={HealthMusic=..91750,LastHealthMusic=91751..,Sound=0,Health=1..40}] ~ ~ ~ 1
-playsound luigis_mansion:entity.player.humming.low.48 player @s[scores={HealthMusic=..85850,LastHealthMusic=85851..,Sound=0,Health=1..40}] ~ ~ ~ 1
-playsound luigis_mansion:entity.player.humming.low.49 player @s[scores={HealthMusic=..74100,LastHealthMusic=74101..,Sound=0,Health=1..40}] ~ ~ ~ 1
-playsound luigis_mansion:entity.player.humming.low.50 player @s[scores={HealthMusic=..71150,LastHealthMusic=71151..,Sound=0,Health=1..40}] ~ ~ ~ 1
-playsound luigis_mansion:entity.player.humming.low.51 player @s[scores={HealthMusic=..68250,LastHealthMusic=68251..,Sound=0,Health=1..40}] ~ ~ ~ 1
-playsound luigis_mansion:entity.player.humming.low.52 player @s[scores={HealthMusic=..56500,LastHealthMusic=56501..,Sound=0,Health=1..40}] ~ ~ ~ 1
-playsound luigis_mansion:entity.player.humming.low.53 player @s[scores={HealthMusic=..44700,LastHealthMusic=44701..,Sound=0,Health=1..40}] ~ ~ ~ 1
-playsound luigis_mansion:entity.player.humming.low.54 player @s[scores={HealthMusic=..41750,LastHealthMusic=41751..,Sound=0,Health=1..40}] ~ ~ ~ 1
-playsound luigis_mansion:entity.player.humming.low.55 player @s[scores={HealthMusic=..38800,LastHealthMusic=38801..,Sound=0,Health=1..40}] ~ ~ ~ 1
-playsound luigis_mansion:entity.player.humming.low.56 player @s[scores={HealthMusic=..32950,LastHealthMusic=32951..,Sound=0,Health=1..40}] ~ ~ ~ 1
-playsound luigis_mansion:entity.player.humming.low.57 player @s[scores={HealthMusic=..21000,LastHealthMusic=21001..,Sound=0,Health=1..40}] ~ ~ ~ 1
-playsound luigis_mansion:entity.player.humming.low.58 player @s[scores={HealthMusic=..9050,LastHealthMusic=9051..,Sound=0,Health=1..40}] ~ ~ ~ 1
+execute at @a[tag=same_room,tag=!spectator,scores={Health=1..40,Sound=0}] run playsound luigis_mansion:entity.player.humming.low.1 player @s[scores={HealthMusic=..480000,LastHealthMusic=480001..,Sound=0}] ~ ~ ~ 1
+execute at @a[tag=same_room,tag=!spectator,scores={Health=1..40,Sound=0}] run playsound luigis_mansion:entity.player.humming.low.2 player @s[scores={HealthMusic=..456500,LastHealthMusic=456501..,Sound=0}] ~ ~ ~ 1
+execute at @a[tag=same_room,tag=!spectator,scores={Health=1..40,Sound=0}] run playsound luigis_mansion:entity.player.humming.low.3 player @s[scores={HealthMusic=..447650,LastHealthMusic=447651..,Sound=0}] ~ ~ ~ 1
+execute at @a[tag=same_room,tag=!spectator,scores={Health=1..40,Sound=0}] run playsound luigis_mansion:entity.player.humming.low.4 player @s[scores={HealthMusic=..444750,LastHealthMusic=444751..,Sound=0}] ~ ~ ~ 1
+execute at @a[tag=same_room,tag=!spectator,scores={Health=1..40,Sound=0}] run playsound luigis_mansion:entity.player.humming.low.5 player @s[scores={HealthMusic=..432900,LastHealthMusic=432901..,Sound=0}] ~ ~ ~ 1
+execute at @a[tag=same_room,tag=!spectator,scores={Health=1..40,Sound=0}] run playsound luigis_mansion:entity.player.humming.low.6 player @s[scores={HealthMusic=..409350,LastHealthMusic=409351..,Sound=0}] ~ ~ ~ 1
+execute at @a[tag=same_room,tag=!spectator,scores={Health=1..40,Sound=0}] run playsound luigis_mansion:entity.player.humming.low.7 player @s[scores={HealthMusic=..400600,LastHealthMusic=400601..,Sound=0}] ~ ~ ~ 1
+execute at @a[tag=same_room,tag=!spectator,scores={Health=1..40,Sound=0}] run playsound luigis_mansion:entity.player.humming.low.8 player @s[scores={HealthMusic=..397650,LastHealthMusic=397651..,Sound=0}] ~ ~ ~ 1
+execute at @a[tag=same_room,tag=!spectator,scores={Health=1..40,Sound=0}] run playsound luigis_mansion:entity.player.humming.low.9 player @s[scores={HealthMusic=..382800,LastHealthMusic=382801..,Sound=0}] ~ ~ ~ 1
+execute at @a[tag=same_room,tag=!spectator,scores={Health=1..40,Sound=0}] run playsound luigis_mansion:entity.player.humming.low.10 player @s[scores={HealthMusic=..380000,LastHealthMusic=380001..,Sound=0}] ~ ~ ~ 1
+execute at @a[tag=same_room,tag=!spectator,scores={Health=1..40,Sound=0}] run playsound luigis_mansion:entity.player.humming.low.11 player @s[scores={HealthMusic=..374100,LastHealthMusic=374101..,Sound=0}] ~ ~ ~ 1
+execute at @a[tag=same_room,tag=!spectator,scores={Health=1..40,Sound=0}] run playsound luigis_mansion:entity.player.humming.low.12 player @s[scores={HealthMusic=..368100,LastHealthMusic=368101..,Sound=0}] ~ ~ ~ 1
+execute at @a[tag=same_room,tag=!spectator,scores={Health=1..40,Sound=0}] run playsound luigis_mansion:entity.player.humming.low.13 player @s[scores={HealthMusic=..362400,LastHealthMusic=362401..,Sound=0}] ~ ~ ~ 1
+execute at @a[tag=same_room,tag=!spectator,scores={Health=1..40,Sound=0}] run playsound luigis_mansion:entity.player.humming.low.14 player @s[scores={HealthMusic=..356350,LastHealthMusic=356351..,Sound=0}] ~ ~ ~ 1
+execute at @a[tag=same_room,tag=!spectator,scores={Health=1..40,Sound=0}] run playsound luigis_mansion:entity.player.humming.low.15 player @s[scores={HealthMusic=..335750,LastHealthMusic=335751..,Sound=0}] ~ ~ ~ 1
+execute at @a[tag=same_room,tag=!spectator,scores={Health=1..40,Sound=0}] run playsound luigis_mansion:entity.player.humming.low.16 player @s[scores={HealthMusic=..330000,LastHealthMusic=330001..,Sound=0}] ~ ~ ~ 1
+execute at @a[tag=same_room,tag=!spectator,scores={Health=1..40,Sound=0}] run playsound luigis_mansion:entity.player.humming.low.17 player @s[scores={HealthMusic=..327100,LastHealthMusic=327101..,Sound=0}] ~ ~ ~ 1
+execute at @a[tag=same_room,tag=!spectator,scores={Health=1..40,Sound=0}] run playsound luigis_mansion:entity.player.humming.low.18 player @s[scores={HealthMusic=..321200,LastHealthMusic=321201..,Sound=0}] ~ ~ ~ 1
+execute at @a[tag=same_room,tag=!spectator,scores={Health=1..40,Sound=0}] run playsound luigis_mansion:entity.player.humming.low.19 player @s[scores={HealthMusic=..315300,LastHealthMusic=315301..,Sound=0}] ~ ~ ~ 1
+execute at @a[tag=same_room,tag=!spectator,scores={Health=1..40,Sound=0}] run playsound luigis_mansion:entity.player.humming.low.20 player @s[scores={HealthMusic=..309450,LastHealthMusic=309451..,Sound=0}] ~ ~ ~ 1
+execute at @a[tag=same_room,tag=!spectator,scores={Health=1..40,Sound=0}] run playsound luigis_mansion:entity.player.humming.low.21 player @s[scores={HealthMusic=..303500,LastHealthMusic=303501..,Sound=0}] ~ ~ ~ 1
+execute at @a[tag=same_room,tag=!spectator,scores={Health=1..40,Sound=0}] run playsound luigis_mansion:entity.player.humming.low.22 player @s[scores={HealthMusic=..297650,LastHealthMusic=297651..,Sound=0}] ~ ~ ~ 1
+execute at @a[tag=same_room,tag=!spectator,scores={Health=1..40,Sound=0}] run playsound luigis_mansion:entity.player.humming.low.23 player @s[scores={HealthMusic=..288800,LastHealthMusic=288801..,Sound=0}] ~ ~ ~ 1
+execute at @a[tag=same_room,tag=!spectator,scores={Health=1..40,Sound=0}] run playsound luigis_mansion:entity.player.humming.low.24 player @s[scores={HealthMusic=..282950,LastHealthMusic=282951..,Sound=0}] ~ ~ ~ 1
+execute at @a[tag=same_room,tag=!spectator,scores={Health=1..40,Sound=0}] run playsound luigis_mansion:entity.player.humming.low.25 player @s[scores={HealthMusic=..280050,LastHealthMusic=280051..,Sound=0}] ~ ~ ~ 1
+execute at @a[tag=same_room,tag=!spectator,scores={Health=1..40,Sound=0}] run playsound luigis_mansion:entity.player.humming.low.26 player @s[scores={HealthMusic=..273800,LastHealthMusic=273801..,Sound=0}] ~ ~ ~ 1
+execute at @a[tag=same_room,tag=!spectator,scores={Health=1..40,Sound=0}] run playsound luigis_mansion:entity.player.humming.low.27 player @s[scores={HealthMusic=..268100,LastHealthMusic=268101..,Sound=0}] ~ ~ ~ 1
+execute at @a[tag=same_room,tag=!spectator,scores={Health=1..40,Sound=0}] run playsound luigis_mansion:entity.player.humming.low.28 player @s[scores={HealthMusic=..262100,LastHealthMusic=262101..,Sound=0}] ~ ~ ~ 1
+execute at @a[tag=same_room,tag=!spectator,scores={Health=1..40,Sound=0}] run playsound luigis_mansion:entity.player.humming.low.29 player @s[scores={HealthMusic=..241550,LastHealthMusic=241551..,Sound=0}] ~ ~ ~ 1
+execute at @a[tag=same_room,tag=!spectator,scores={Health=1..40,Sound=0}] run playsound luigis_mansion:entity.player.humming.low.30 player @s[scores={HealthMusic=..235850,LastHealthMusic=235851..,Sound=0}] ~ ~ ~ 1
+execute at @a[tag=same_room,tag=!spectator,scores={Health=1..40,Sound=0}] run playsound luigis_mansion:entity.player.humming.low.31 player @s[scores={HealthMusic=..232950,LastHealthMusic=232951..,Sound=0}] ~ ~ ~ 1
+execute at @a[tag=same_room,tag=!spectator,scores={Health=1..40,Sound=0}] run playsound luigis_mansion:entity.player.humming.low.32 player @s[scores={HealthMusic=..226800,LastHealthMusic=226801..,Sound=0}] ~ ~ ~ 1
+execute at @a[tag=same_room,tag=!spectator,scores={Health=1..40,Sound=0}] run playsound luigis_mansion:entity.player.humming.low.33 player @s[scores={HealthMusic=..224150,LastHealthMusic=224151..,Sound=0}] ~ ~ ~ 1
+execute at @a[tag=same_room,tag=!spectator,scores={Health=1..40,Sound=0}] run playsound luigis_mansion:entity.player.humming.low.34 player @s[scores={HealthMusic=..221150,LastHealthMusic=221151..,Sound=0}] ~ ~ ~ 1
+execute at @a[tag=same_room,tag=!spectator,scores={Health=1..40,Sound=0}] run playsound luigis_mansion:entity.player.humming.low.35 player @s[scores={HealthMusic=..215300,LastHealthMusic=215301..,Sound=0}] ~ ~ ~ 1
+execute at @a[tag=same_room,tag=!spectator,scores={Health=1..40,Sound=0}] run playsound luigis_mansion:entity.player.humming.low.36 player @s[scores={HealthMusic=..209300,LastHealthMusic=209301..,Sound=0}] ~ ~ ~ 1
+execute at @a[tag=same_room,tag=!spectator,scores={Health=1..40,Sound=0}] run playsound luigis_mansion:entity.player.humming.low.37 player @s[scores={HealthMusic=..185100,LastHealthMusic=185101..,Sound=0}] ~ ~ ~ 1
+execute at @a[tag=same_room,tag=!spectator,scores={Health=1..40,Sound=0}] run playsound luigis_mansion:entity.player.humming.low.38 player @s[scores={HealthMusic=..162200,LastHealthMusic=162201..,Sound=0}] ~ ~ ~ 1
+execute at @a[tag=same_room,tag=!spectator,scores={Health=1..40,Sound=0}] run playsound luigis_mansion:entity.player.humming.low.39 player @s[scores={HealthMusic=..156500,LastHealthMusic=156501..,Sound=0}] ~ ~ ~ 1
+execute at @a[tag=same_room,tag=!spectator,scores={Health=1..40,Sound=0}] run playsound luigis_mansion:entity.player.humming.low.40 player @s[scores={HealthMusic=..150500,LastHealthMusic=150501..,Sound=0}] ~ ~ ~ 1
+execute at @a[tag=same_room,tag=!spectator,scores={Health=1..40,Sound=0}] run playsound luigis_mansion:entity.player.humming.low.41 player @s[scores={HealthMusic=..144650,LastHealthMusic=144651..,Sound=0}] ~ ~ ~ 1
+execute at @a[tag=same_room,tag=!spectator,scores={Health=1..40,Sound=0}] run playsound luigis_mansion:entity.player.humming.low.42 player @s[scores={HealthMusic=..138800,LastHealthMusic=138801..,Sound=0}] ~ ~ ~ 1
+execute at @a[tag=same_room,tag=!spectator,scores={Health=1..40,Sound=0}] run playsound luigis_mansion:entity.player.humming.low.43 player @s[scores={HealthMusic=..121200,LastHealthMusic=121201..,Sound=0}] ~ ~ ~ 1
+execute at @a[tag=same_room,tag=!spectator,scores={Health=1..40,Sound=0}] run playsound luigis_mansion:entity.player.humming.low.44 player @s[scores={HealthMusic=..115150,LastHealthMusic=115151..,Sound=0}] ~ ~ ~ 1
+execute at @a[tag=same_room,tag=!spectator,scores={Health=1..40,Sound=0}] run playsound luigis_mansion:entity.player.humming.low.45 player @s[scores={HealthMusic=..108900,LastHealthMusic=108901..,Sound=0}] ~ ~ ~ 1
+execute at @a[tag=same_room,tag=!spectator,scores={Health=1..40,Sound=0}] run playsound luigis_mansion:entity.player.humming.low.46 player @s[scores={HealthMusic=..97400,LastHealthMusic=97401..,Sound=0}] ~ ~ ~ 1
+execute at @a[tag=same_room,tag=!spectator,scores={Health=1..40,Sound=0}] run playsound luigis_mansion:entity.player.humming.low.47 player @s[scores={HealthMusic=..91750,LastHealthMusic=91751..,Sound=0}] ~ ~ ~ 1
+execute at @a[tag=same_room,tag=!spectator,scores={Health=1..40,Sound=0}] run playsound luigis_mansion:entity.player.humming.low.48 player @s[scores={HealthMusic=..85850,LastHealthMusic=85851..,Sound=0}] ~ ~ ~ 1
+execute at @a[tag=same_room,tag=!spectator,scores={Health=1..40,Sound=0}] run playsound luigis_mansion:entity.player.humming.low.49 player @s[scores={HealthMusic=..74100,LastHealthMusic=74101..,Sound=0}] ~ ~ ~ 1
+execute at @a[tag=same_room,tag=!spectator,scores={Health=1..40,Sound=0}] run playsound luigis_mansion:entity.player.humming.low.50 player @s[scores={HealthMusic=..71150,LastHealthMusic=71151..,Sound=0}] ~ ~ ~ 1
+execute at @a[tag=same_room,tag=!spectator,scores={Health=1..40,Sound=0}] run playsound luigis_mansion:entity.player.humming.low.51 player @s[scores={HealthMusic=..68250,LastHealthMusic=68251..,Sound=0}] ~ ~ ~ 1
+execute at @a[tag=same_room,tag=!spectator,scores={Health=1..40,Sound=0}] run playsound luigis_mansion:entity.player.humming.low.52 player @s[scores={HealthMusic=..56500,LastHealthMusic=56501..,Sound=0}] ~ ~ ~ 1
+execute at @a[tag=same_room,tag=!spectator,scores={Health=1..40,Sound=0}] run playsound luigis_mansion:entity.player.humming.low.53 player @s[scores={HealthMusic=..44700,LastHealthMusic=44701..,Sound=0}] ~ ~ ~ 1
+execute at @a[tag=same_room,tag=!spectator,scores={Health=1..40,Sound=0}] run playsound luigis_mansion:entity.player.humming.low.54 player @s[scores={HealthMusic=..41750,LastHealthMusic=41751..,Sound=0}] ~ ~ ~ 1
+execute at @a[tag=same_room,tag=!spectator,scores={Health=1..40,Sound=0}] run playsound luigis_mansion:entity.player.humming.low.55 player @s[scores={HealthMusic=..38800,LastHealthMusic=38801..,Sound=0}] ~ ~ ~ 1
+execute at @a[tag=same_room,tag=!spectator,scores={Health=1..40,Sound=0}] run playsound luigis_mansion:entity.player.humming.low.56 player @s[scores={HealthMusic=..32950,LastHealthMusic=32951..,Sound=0}] ~ ~ ~ 1
+execute at @a[tag=same_room,tag=!spectator,scores={Health=1..40,Sound=0}] run playsound luigis_mansion:entity.player.humming.low.57 player @s[scores={HealthMusic=..21000,LastHealthMusic=21001..,Sound=0}] ~ ~ ~ 1
+execute at @a[tag=same_room,tag=!spectator,scores={Health=1..40,Sound=0}] run playsound luigis_mansion:entity.player.humming.low.58 player @s[scores={HealthMusic=..9050,LastHealthMusic=9051..,Sound=0}] ~ ~ ~ 1
