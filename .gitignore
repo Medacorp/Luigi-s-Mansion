@@ -12,6 +12,7 @@ dimensions/*/
 dimensions/luigis_mansion/*/data/chunks.dat
 dimensions/luigis_mansion/*/data/raids.dat
 dimensions/luigis_mansion/*/poi
+entities/
 playerdata
 poi
 level.dat
