@@ -1,3 +1,5 @@
+tag @s remove was_low_health
+tag @s remove low_health
 tag @s remove was_sneaking
 tag @s remove sneaking
 tag @s remove was_walking

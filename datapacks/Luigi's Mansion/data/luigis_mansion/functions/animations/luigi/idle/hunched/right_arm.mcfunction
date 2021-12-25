@@ -1,4 +1,4 @@
-scoreboard players set @s[tag=was_low_health] Time 0
+scoreboard players set @s[tag=!was_low_health] Time 0
 scoreboard players add @s Time 1
 data modify entity @s[scores={Time=1},tag=!attack] Pose.Head[2] set value 0.001f
 data modify entity @s[scores={Time=1},tag=flipped_gravity,tag=!attack] Pose.Head[2] set value -180.0f

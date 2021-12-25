@@ -1,6 +1,6 @@
 execute at @s[tag=!low_health_idle,tag=!cold_room_idle,tag=!high_health_idle] run function #luigis_mansion:items/flashlight/effects
 execute at @s[tag=low_health_idle] rotated ~100 10 run function #luigis_mansion:items/flashlight/effects
-execute at @s[tag=cold_room_idle] rotated ~100 -20 run function #luigis_mansion:items/flashlight/effects
+execute at @s[tag=cold_room_idle] rotated ~160 -20 run function #luigis_mansion:items/flashlight/effects
 execute at @s[tag=high_health_idle,scores={IdleTime=200}] rotated ~ 0 run function #luigis_mansion:items/flashlight/effects
 execute at @s[tag=high_health_idle,scores={IdleTime=201}] rotated ~-1 0 run function #luigis_mansion:items/flashlight/effects
 execute at @s[tag=high_health_idle,scores={IdleTime=202}] rotated ~-2 -0.5 run function #luigis_mansion:items/flashlight/effects

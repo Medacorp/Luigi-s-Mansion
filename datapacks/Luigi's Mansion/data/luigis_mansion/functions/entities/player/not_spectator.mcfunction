@@ -36,8 +36,8 @@ execute unless entity @s[scores={MaxHealth=100}] unless entity @s[scores={Walk=0
 scoreboard players set @s[scores={MaxHealthTime=200}] MaxHealth 100
 scoreboard players reset @s[scores={MaxHealthTime=200}] MaxHealthTime
 
-execute if entity @s[scores={Walk=0,Run=0,Sneak=0,Jump=0,GBHCall=0},tag=!looking_at_map,tag=!warp,tag=!scanning,tag=!grabbed,tag=!poltergust_selected] run function luigis_mansion:entities/player/idle
-execute unless entity @s[scores={Walk=0,Run=0,Sneak=0,Jump=0,GBHCall=0},tag=!looking_at_map,tag=!warp,tag=!scanning,tag=!grabbed,tag=!poltergust_selected] run function luigis_mansion:entities/player/idle/reset
+execute if entity @s[scores={Walk=0,Run=0,Sneak=0,Jump=0,GBHCall=0},tag=!sneak_pos,tag=!spectator,tag=!looking_at_map,tag=!warp,tag=!scanning,tag=!grabbed,tag=!poltergust_selected] run function luigis_mansion:entities/player/idle
+execute unless entity @s[scores={Walk=0,Run=0,Sneak=0,Jump=0,GBHCall=0},tag=!sneak_pos,tag=!spectator,tag=!looking_at_map,tag=!warp,tag=!scanning,tag=!grabbed,tag=!poltergust_selected] run function luigis_mansion:entities/player/idle/reset
 
 execute if entity @s[scores={Walk=1..},tag=!looking_at_map] run particle minecraft:dust 0.5 0.5 0.5 1.2 ~ ~0.2 ~ 0 0 0 0 1
 execute if entity @s[scores={Run=1..},tag=!looking_at_map] run particle minecraft:dust 0.5 0.5 0.5 2 ~ ~0.2 ~ 0 0 0 0 1

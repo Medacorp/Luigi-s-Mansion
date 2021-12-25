@@ -1,0 +1,1 @@
+tag @s[scores={Room=68}] add cold_room

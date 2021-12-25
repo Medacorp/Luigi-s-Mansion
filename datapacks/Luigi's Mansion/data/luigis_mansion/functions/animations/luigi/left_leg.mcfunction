@@ -1,3 +1,4 @@
+tag @s[tag=low_health,tag=!looking_at_map] add sneak_pos
 # Move with
 teleport @s[nbt=!{Small:1b},tag=!flipped_gravity] ^0.11 ^-2.34 ^ ~ ~
 teleport @s[nbt={Small:1b},tag=!flipped_gravity] ^0.08 ^-1.34 ^ ~ ~
@@ -25,3 +26,7 @@ execute at @s[scores={KnockbackType=3}] run function luigis_mansion:animations/l
 execute at @s[scores={KnockbackType=4}] run function luigis_mansion:animations/luigi/knockback/burn/left_leg
 execute at @s[scores={KnockbackType=5}] run function luigis_mansion:animations/luigi/knockback/soak/left_leg
 execute at @s[scores={KnockbackType=6}] run function luigis_mansion:animations/luigi/knockback/freeze/left_leg
+
+execute at @s[tag=cold_room_idle] run function luigis_mansion:animations/luigi/idle/cold_room/left_leg
+execute at @s[tag=high_health_idle] run function luigis_mansion:animations/luigi/idle/high_health/left_leg
+execute at @s[tag=low_health_idle] run function luigis_mansion:animations/luigi/idle/low_health/left_leg
