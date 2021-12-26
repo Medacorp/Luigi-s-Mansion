@@ -48,7 +48,7 @@ scoreboard players reset #temp Time
 teleport @s[tag=looking_at_map] ~ ~-1.67 ~ ~ ~
 execute if entity @s[tag=looking_at_map] run function luigis_mansion:animations/luigi/looking_at_map/head
 
-execute at @s[scores={KnockbackType=-2}] run function luigis_mansion:animations/luigi/scared/bashed/head
+execute at @s[scores={KnockbackType=-3..-2}] run function luigis_mansion:animations/luigi/scared/bashed/head
 execute at @s[scores={KnockbackType=-1}] run function luigis_mansion:animations/luigi/scared/head
 execute at @s[scores={KnockbackType=1}] run function luigis_mansion:animations/luigi/knockback/small/head
 execute at @s[scores={KnockbackType=2}] run function luigis_mansion:animations/luigi/knockback/medium/head

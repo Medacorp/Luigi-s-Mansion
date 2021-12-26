@@ -35,7 +35,7 @@ execute if entity @s[tag=running,tag=!looking_at_map,tag=!low_health] run functi
 execute if entity @s[tag=swimming,tag=!looking_at_map] run function luigis_mansion:animations/luigi/swimming/right_arm
 execute if entity @s[tag=looking_at_map] run function luigis_mansion:animations/luigi/looking_at_map/right_arm
 
-execute at @s[scores={KnockbackType=-2}] run function luigis_mansion:animations/luigi/scared/bashed/right_arm
+execute at @s[scores={KnockbackType=-3..-2}] run function luigis_mansion:animations/luigi/scared/bashed/right_arm
 execute at @s[scores={KnockbackType=-1}] run function luigis_mansion:animations/luigi/scared/right_arm
 execute at @s[scores={KnockbackType=1}] run function luigis_mansion:animations/luigi/knockback/small/right_arm
 execute at @s[scores={KnockbackType=2}] run function luigis_mansion:animations/luigi/knockback/medium/right_arm

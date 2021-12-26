@@ -28,8 +28,9 @@ execute if entity @s[scores={ActionTime=30}] as @a[tag=still_grabbed,limit=1] ru
 execute if entity @s[scores={ActionTime=30..51,Sound=0}] run playsound luigis_mansion:entity.spooky.attack hostile @a[tag=same_room] ~ ~ ~ 1 1
 execute if entity @s[scores={ActionTime=30..51,Sound=0}] run scoreboard players set @s Sound 20
 execute if entity @s[scores={ActionTime=30..51}] unless entity @a[tag=still_grabbed,limit=1] run scoreboard players set @s ActionTime 53
-execute if entity @s[scores={ActionTime=30..51}] at @e[tag=grabbed_model,limit=1] run teleport @s ^ ^ ^-0.65 ~ ~
-execute if entity @s[scores={ActionTime=51},tag=!harmless] run scoreboard players add @a[tag=still_grabbed,limit=1] GrabbedShake 1
+execute if entity @s[scores={ActionTime=30..51}] if score #mirrored Selected matches 0 at @e[tag=grabbed_model,limit=1] run teleport @s ^0.8 ^ ^ ~30 ~
+execute if entity @s[scores={ActionTime=30..51}] if score #mirrored Selected matches 1 at @e[tag=grabbed_model,limit=1] run teleport @s ^-0.8 ^ ^ ~-30 ~
+execute if entity @s[scores={ActionTime=51}] run scoreboard players add @a[tag=still_grabbed,limit=1] GrabbedShake 1
 tag @a[tag=still_grabbed,limit=1] remove still_grabbed
 tag @e[tag=grabbed_model,limit=1] remove grabbed_model
 scoreboard players reset #temp ID

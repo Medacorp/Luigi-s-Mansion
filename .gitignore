@@ -1,20 +1,20 @@
-advancements
-data/chunks.dat
-data/command_storage_*
-data/scoreboard.dat
-data/raids.dat
-datapacks/*/
-!datapacks/Luigi's Mansion/
-DIM1
-DIM-1
-dimensions/*/
-!dimensions/luigis_mansion/
-dimensions/luigis_mansion/*/data/chunks.dat
-dimensions/luigis_mansion/*/data/raids.dat
-dimensions/luigis_mansion/*/poi
-entities/
-playerdata
-poi
+/advancements/
+/data/chunks.dat
+/data/command_storage_*
+/data/scoreboard.dat
+/data/raids.dat
+/datapacks/*/
+!/datapacks/Luigi's Mansion/
+/DIM1/
+/DIM-1/
+/dimensions/*/
+!/dimensions/luigis_mansion/
+/dimensions/luigis_mansion/*/data/chunks.dat
+/dimensions/luigis_mansion/*/data/raids.dat
+/dimensions/luigis_mansion/*/poi
+/entities/
+/playerdata/
+/poi/
 level.dat
 *_old
 session.lock

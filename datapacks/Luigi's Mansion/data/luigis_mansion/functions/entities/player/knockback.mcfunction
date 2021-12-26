@@ -87,10 +87,10 @@ execute at @s[scores={KnockbackTime=2..,KnockbackType=7..9},tag=!positive_x] if 
 execute at @s[scores={KnockbackTime=2..,KnockbackType=7..9},tag=!positive_z] if score #temp PosZ matches 8.. run tag @s add struggle
 execute at @s[scores={KnockbackTime=2..,KnockbackType=7..9},tag=!negative_x] if score #temp PosX matches ..-8 run tag @s add struggle
 execute at @s[scores={KnockbackTime=2..,KnockbackType=7..9},tag=!negative_z] if score #temp PosZ matches ..-8 run tag @s add struggle
-execute at @s[scores={KnockbackTime=1..,KnockbackType=7..9}] run tag @s remove positive_x
-execute at @s[scores={KnockbackTime=1..,KnockbackType=7..9}] run tag @s remove positive_z
-execute at @s[scores={KnockbackTime=1..,KnockbackType=7..9}] run tag @s remove negative_x
-execute at @s[scores={KnockbackTime=1..,KnockbackType=7..9}] run tag @s remove negative_z
+execute at @s[scores={KnockbackTime=1..,KnockbackType=7..9}] unless score #temp PosX matches -8..8 unless score #temp PosZ matches -8..8 run tag @s remove positive_x
+execute at @s[scores={KnockbackTime=1..,KnockbackType=7..9}] unless score #temp PosX matches -8..8 unless score #temp PosZ matches -8..8 run tag @s remove positive_z
+execute at @s[scores={KnockbackTime=1..,KnockbackType=7..9}] unless score #temp PosX matches -8..8 unless score #temp PosZ matches -8..8 run tag @s remove negative_x
+execute at @s[scores={KnockbackTime=1..,KnockbackType=7..9}] unless score #temp PosX matches -8..8 unless score #temp PosZ matches -8..8 run tag @s remove negative_z
 execute at @s[scores={KnockbackTime=2..,KnockbackType=7..9}] if score #temp PosX matches 8.. run tag @s add positive_x
 execute at @s[scores={KnockbackTime=2..,KnockbackType=7..9}] if score #temp PosZ matches 8.. run tag @s add positive_z
 execute at @s[scores={KnockbackTime=2..,KnockbackType=7..9}] if score #temp PosX matches ..-8 run tag @s add negative_x

@@ -81,12 +81,12 @@ execute store result score #temp Time run data get entity @s Pose.Head[0] 1
 execute if entity @s[scores={ScareTime=22..31}] store result entity @s Pose.Head[0] float 1 run scoreboard players add #temp Time 18
 scoreboard players set @s[scores={ScareTime=22}] AnimationProg 0
 scoreboard players add @s[scores={ScareTime=21}] AnimationProg 1
-execute if entity @s[scores={ScareTime=21,AnimationProg=1..2}] if score #mirrored Selected matches 0 store result entity @s Pose.Head[0] float 1 run scoreboard players remove #temp Time 4
-execute if entity @s[scores={ScareTime=21,AnimationProg=3..6}] if score #mirrored Selected matches 0 store result entity @s Pose.Head[0] float 1 run scoreboard players add #temp Time 4
-execute if entity @s[scores={ScareTime=21,AnimationProg=7..8}] if score #mirrored Selected matches 0 store result entity @s Pose.Head[0] float 1 run scoreboard players remove #temp Time 4
-execute if entity @s[scores={ScareTime=21,AnimationProg=1..2}] if score #mirrored Selected matches 1 store result entity @s Pose.Head[0] float 1 run scoreboard players add #temp Time 4
-execute if entity @s[scores={ScareTime=21,AnimationProg=3..6}] if score #mirrored Selected matches 1 store result entity @s Pose.Head[0] float 1 run scoreboard players remove #temp Time 4
-execute if entity @s[scores={ScareTime=21,AnimationProg=7..8}] if score #mirrored Selected matches 1 store result entity @s Pose.Head[0] float 1 run scoreboard players add #temp Time 4
+execute if entity @s[scores={ScareTime=21,AnimationProg=1..2,KnockbackType=-2}] if score #mirrored Selected matches 0 store result entity @s Pose.Head[0] float 1 run scoreboard players remove #temp Time 4
+execute if entity @s[scores={ScareTime=21,AnimationProg=3..6,KnockbackType=-2}] if score #mirrored Selected matches 0 store result entity @s Pose.Head[0] float 1 run scoreboard players add #temp Time 4
+execute if entity @s[scores={ScareTime=21,AnimationProg=7..8,KnockbackType=-2}] if score #mirrored Selected matches 0 store result entity @s Pose.Head[0] float 1 run scoreboard players remove #temp Time 4
+execute if entity @s[scores={ScareTime=21,AnimationProg=1..2,KnockbackType=-2}] if score #mirrored Selected matches 1 store result entity @s Pose.Head[0] float 1 run scoreboard players add #temp Time 4
+execute if entity @s[scores={ScareTime=21,AnimationProg=3..6,KnockbackType=-2}] if score #mirrored Selected matches 1 store result entity @s Pose.Head[0] float 1 run scoreboard players remove #temp Time 4
+execute if entity @s[scores={ScareTime=21,AnimationProg=7..8,KnockbackType=-2}] if score #mirrored Selected matches 1 store result entity @s Pose.Head[0] float 1 run scoreboard players add #temp Time 4
 scoreboard players set @s[scores={ScareTime=21,AnimationProg=8}] AnimationProg 0
 scoreboard players set @s[scores={ScareTime=20}] AnimationProg 0
 data merge entity @s[scores={ScareTime=20}] {Pose:{Head:[-180.0f,0.0f,0.01f]}}

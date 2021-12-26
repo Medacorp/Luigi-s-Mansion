@@ -82,10 +82,10 @@ execute if score #mirrored Selected matches 1 run data merge entity @s[scores={S
 scoreboard players set @s[scores={ScareTime=22}] AnimationProg 0
 scoreboard players add @s[scores={ScareTime=21}] AnimationProg 1
 execute store result score #temp Time run data get entity @s Pose.Head[0] 1
-execute if entity @s[scores={ScareTime=21,AnimationProg=1..4}] if score #mirrored Selected matches 0 store result entity @s Pose.Head[0] float 1 run scoreboard players remove #temp Time 2
-execute if entity @s[scores={ScareTime=21,AnimationProg=5..8}] if score #mirrored Selected matches 0 store result entity @s Pose.Head[0] float 1 run scoreboard players add #temp Time 2
-execute if entity @s[scores={ScareTime=21,AnimationProg=1..4}] if score #mirrored Selected matches 1 store result entity @s Pose.Head[0] float 1 run scoreboard players add #temp Time 2
-execute if entity @s[scores={ScareTime=21,AnimationProg=5..8}] if score #mirrored Selected matches 1 store result entity @s Pose.Head[0] float 1 run scoreboard players remove #temp Time 2
+execute if entity @s[scores={ScareTime=21,AnimationProg=1..4,KnockbackType=-2}] if score #mirrored Selected matches 0 store result entity @s Pose.Head[0] float 1 run scoreboard players remove #temp Time 2
+execute if entity @s[scores={ScareTime=21,AnimationProg=5..8,KnockbackType=-2}] if score #mirrored Selected matches 0 store result entity @s Pose.Head[0] float 1 run scoreboard players add #temp Time 2
+execute if entity @s[scores={ScareTime=21,AnimationProg=1..4,KnockbackType=-2}] if score #mirrored Selected matches 1 store result entity @s Pose.Head[0] float 1 run scoreboard players add #temp Time 2
+execute if entity @s[scores={ScareTime=21,AnimationProg=5..8,KnockbackType=-2}] if score #mirrored Selected matches 1 store result entity @s Pose.Head[0] float 1 run scoreboard players remove #temp Time 2
 scoreboard players set @s[scores={ScareTime=21,AnimationProg=8}] AnimationProg 0
 scoreboard players set @s[scores={ScareTime=20}] AnimationProg 0
 data merge entity @s[scores={ScareTime=20}] {Pose:{Head:[-90.0f,-5.0f,0.01f]}}

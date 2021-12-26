@@ -14,7 +14,7 @@ data modify entity @s[tag=!was_sneak_posing,tag=sneak_pos] Pose.Head[0] set valu
 data modify entity @s[tag=was_flipped,tag=!flipped_gravity] Pose.Head[2] set value 0.0f
 data modify entity @s[tag=!was_flipped,tag=flipped_gravity] Pose.Head[2] set value -180.0f
 
-execute at @s[scores={KnockbackType=-2}] run function luigis_mansion:animations/luigi/scared/bashed/chest
+execute at @s[scores={KnockbackType=-3..-2}] run function luigis_mansion:animations/luigi/scared/bashed/chest
 execute at @s[scores={KnockbackType=-1}] run function luigis_mansion:animations/luigi/scared/chest
 execute at @s[scores={KnockbackType=1}] run function luigis_mansion:animations/luigi/knockback/small/chest
 execute at @s[scores={KnockbackType=2}] run function luigis_mansion:animations/luigi/knockback/medium/chest
