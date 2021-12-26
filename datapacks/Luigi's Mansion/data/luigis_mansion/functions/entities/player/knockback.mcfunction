@@ -72,6 +72,47 @@ execute at @s[scores={KnockbackTime=10..,KnockbackType=6}] run particle minecraf
 scoreboard players set @s[scores={KnockbackTime=10,KnockbackType=6}] Invulnerable 70
 execute at @s[scores={KnockbackTime=1..,KnockbackType=6}] run kill @e[tag=home,limit=1]
 
+execute at @s[scores={KnockbackTime=10,KnockbackType=7..9}] run playsound luigis_mansion:entity.player.grabbed player @a[tag=same_room] ~ ~ ~ 1
+execute at @s[scores={KnockbackTime=10,KnockbackType=8..9}] run effect give @s minecraft:instant_damage 1 0 true
+execute at @s[scores={KnockbackTime=10,KnockbackType=8}] run scoreboard players set @s ForcedDamage -1
+execute at @s[scores={KnockbackTime=10,KnockbackType=9}] run scoreboard players set @s ForcedDamage 4
+execute at @s[scores={KnockbackTime=1..,KnockbackType=7..9}] run scoreboard players operation #temp GrabbedID = @s ID
+execute at @s[scores={KnockbackTime=1..,KnockbackType=7..9}] as @e[tag=ghost,scores={GrabbedID=-2147483648..}] if score @s GrabbedID = #temp GrabbedID run tag @s add this_ghost
+execute if entity @e[tag=this_ghost,limit=1,scores={VulnerableTime=0}] run scoreboard players add @s[scores={KnockbackTime=1,KnockbackType=7..9}] KnockbackTime 1
+execute at @s[scores={KnockbackTime=2..,KnockbackType=7..9}] store result score #temp PosX run data get entity @s Pos[0] 100
+execute at @s[scores={KnockbackTime=2..,KnockbackType=7..9}] store result score #temp PosZ run data get entity @s Pos[2] 100
+execute at @s[scores={KnockbackTime=2..,KnockbackType=7..9}] run scoreboard players operation #temp PosX -= @s PosX
+execute at @s[scores={KnockbackTime=2..,KnockbackType=7..9}] run scoreboard players operation #temp PosZ -= @s PosZ
+execute at @s[scores={KnockbackTime=2..,KnockbackType=7..9},tag=!positive_x] if score #temp PosX matches 8.. run tag @s add struggle
+execute at @s[scores={KnockbackTime=2..,KnockbackType=7..9},tag=!positive_z] if score #temp PosZ matches 8.. run tag @s add struggle
+execute at @s[scores={KnockbackTime=2..,KnockbackType=7..9},tag=!negative_x] if score #temp PosX matches ..-8 run tag @s add struggle
+execute at @s[scores={KnockbackTime=2..,KnockbackType=7..9},tag=!negative_z] if score #temp PosZ matches ..-8 run tag @s add struggle
+execute at @s[scores={KnockbackTime=1..,KnockbackType=7..9}] run tag @s remove positive_x
+execute at @s[scores={KnockbackTime=1..,KnockbackType=7..9}] run tag @s remove positive_z
+execute at @s[scores={KnockbackTime=1..,KnockbackType=7..9}] run tag @s remove negative_x
+execute at @s[scores={KnockbackTime=1..,KnockbackType=7..9}] run tag @s remove negative_z
+execute at @s[scores={KnockbackTime=2..,KnockbackType=7..9}] if score #temp PosX matches 8.. run tag @s add positive_x
+execute at @s[scores={KnockbackTime=2..,KnockbackType=7..9}] if score #temp PosZ matches 8.. run tag @s add positive_z
+execute at @s[scores={KnockbackTime=2..,KnockbackType=7..9}] if score #temp PosX matches ..-8 run tag @s add negative_x
+execute at @s[scores={KnockbackTime=2..,KnockbackType=7..9}] if score #temp PosZ matches ..-8 run tag @s add negative_z
+execute at @s[scores={KnockbackTime=2..,KnockbackType=7..9},tag=struggle] run scoreboard players add @s GrabbedShake 1
+execute at @s[scores={KnockbackTime=2..,KnockbackType=7..8},tag=struggle] run scoreboard players set @e[tag=this_ghost,limit=1] ActionTime 20
+execute at @s[scores={KnockbackTime=2..,KnockbackType=9},tag=struggle] run scoreboard players set @e[tag=this_ghost,limit=1] ActionTime 31
+execute at @s[scores={KnockbackTime=2..,KnockbackType=7..8,GrabbedShake=5..}] run scoreboard players reset @e[tag=this_ghost,limit=1] GrabbedID
+execute at @s[scores={KnockbackTime=2..,KnockbackType=9,GrabbedShake=10..}] run scoreboard players reset @e[tag=this_ghost,limit=1] GrabbedID
+execute at @s[scores={KnockbackTime=2..,KnockbackType=7..9}] run tag @s remove struggle
+scoreboard players set @s[scores={KnockbackTime=2..,KnockbackType=8..9,Invulnerable=6..}] Invulnerable 5
+execute at @s[scores={KnockbackTime=2..,KnockbackType=8..9}] run effect give @s minecraft:instant_damage 1 0 true
+execute at @s[scores={KnockbackTime=2..,KnockbackType=8..9}] run scoreboard players set @s ForcedDamage -5
+execute at @s[scores={KnockbackTime=2..,KnockbackType=7..9}] run effect give @s minecraft:slowness 1 0 true
+execute at @s[scores={KnockbackTime=1,KnockbackType=7..9}] run effect clear @s minecraft:slowness
+execute at @s[scores={KnockbackTime=1,KnockbackType=7..9}] run scoreboard players reset @e[tag=this_ghost,limit=1] GrabbedID
+scoreboard players set @s[scores={KnockbackTime=1,KnockbackType=8..9}] Invulnerable 60
+scoreboard players reset @s[scores={KnockbackTime=1,KnockbackType=7..9}] GrabbedShake
+tag @s[scores={KnockbackTime=1,KnockbackType=7..9}] remove grabbed
+execute at @s[scores={KnockbackTime=1..,KnockbackType=7..9}] run tag @e[tag=this_ghost,limit=1] remove this_ghost
+execute at @s[scores={KnockbackTime=1..,KnockbackType=7..9}] run scoreboard players reset #temp GrabbedID
+
 execute at @s if block ~ ~1 ~ #luigis_mansion:ghosts_ignore unless block ~ ~1.9 ~ #luigis_mansion:ghosts_ignore run teleport @s ~ ~-0.16 ~
 execute at @s unless block ~ ~ ~ #luigis_mansion:ghosts_ignore if block ~ ~0.1 ~ #luigis_mansion:ghosts_ignore run teleport @s ~ ~0.16 ~
 execute at @s unless block ~0.3 ~ ~ #luigis_mansion:ghosts_ignore if block ~ ~ ~ #luigis_mansion:ghosts_ignore run teleport @s ~-0.16 ~ ~
@@ -80,6 +121,8 @@ execute at @s unless block ~ ~ ~0.3 #luigis_mansion:ghosts_ignore if block ~ ~ ~
 execute at @s unless block ~ ~ ~-0.3 #luigis_mansion:ghosts_ignore if block ~ ~ ~ #luigis_mansion:ghosts_ignore run teleport @s ~ ~ ~0.16
 kill @e[type=minecraft:marker,tag=temp,limit=1]
 scoreboard players remove @s KnockbackTime 1
+scoreboard players reset @s[scores={KnockbackType=..6}] GrabbedShake
+tag @s[scores={KnockbackType=..6}] remove grabbed
 scoreboard players reset @s[scores={KnockbackTime=0}] KnockbackX
 scoreboard players reset @s[scores={KnockbackTime=0}] KnockbackZ
 scoreboard players reset @s[scores={KnockbackTime=0}] KnockbackType

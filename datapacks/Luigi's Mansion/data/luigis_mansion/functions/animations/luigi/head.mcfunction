@@ -56,6 +56,8 @@ execute at @s[scores={KnockbackType=3}] run function luigis_mansion:animations/l
 execute at @s[scores={KnockbackType=4}] run function luigis_mansion:animations/luigi/knockback/burn/head
 execute at @s[scores={KnockbackType=5}] run function luigis_mansion:animations/luigi/knockback/soak/head
 execute at @s[scores={KnockbackType=6}] run function luigis_mansion:animations/luigi/knockback/freeze/head
+execute at @s[scores={KnockbackType=7..8}] run function luigis_mansion:animations/luigi/knockback/grab/head
+execute at @s[scores={KnockbackType=9}] run function luigis_mansion:animations/luigi/knockback/bite/head
 
 execute at @s[tag=cold_room_idle] run function luigis_mansion:animations/luigi/idle/cold_room/head
 execute at @s[tag=high_health_idle] run function luigis_mansion:animations/luigi/idle/high_health/head

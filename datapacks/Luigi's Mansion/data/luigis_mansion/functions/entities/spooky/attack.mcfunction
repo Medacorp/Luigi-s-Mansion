@@ -1,46 +1,54 @@
-scoreboard players add @s PathStep 1
+scoreboard players add @s[scores={ActionTime=52..}] ActionTime 1
+scoreboard players set @s[scores={ActionTime=51}] ActionTime 44
+scoreboard players add @s[scores={ActionTime=1..50}] ActionTime 1
+execute unless entity @s[scores={ActionTime=1..}] run scoreboard players set @s ActionTime 1
 scoreboard players set @s Move 5
-scoreboard players set @s[scores={PathStep=1}] AnimationProg 0
-tag @s[scores={PathStep=1}] add bite
-tag @s[scores={PathStep=1}] remove move
-execute if entity @s[scores={PathStep=1}] run playsound luigis_mansion:entity.spooky.attack hostile @a[tag=same_room] ~ ~ ~ 1
-execute at @s[scores={PathStep=1..19}] run function luigis_mansion:entities/ghost/move_forward
-tag @s[scores={PathStep=20}] remove attack
-tag @s[scores={PathStep=20}] remove bite
-tag @s[scores={PathStep=20}] add breathe
-scoreboard players set @s[scores={PathStep=20}] Dialog 20
-scoreboard players reset @s[scores={PathStep=20}] PathStep
-execute at @s[scores={PathStep=1..19}] positioned ^ ^ ^0.3 if entity @e[tag=same_room,tag=!spectator,distance=..0.7,tag=!grabbed,limit=1] run scoreboard players set @s PathStep 30
+scoreboard players set @s[scores={ActionTime=1}] AnimationProg 0
+tag @s[scores={ActionTime=1}] add bite
+tag @s[scores={ActionTime=1}] remove move
+execute if entity @s[scores={ActionTime=1}] run playsound luigis_mansion:entity.spooky.attack hostile @a[tag=same_room] ~ ~ ~ 1
+execute at @s[scores={ActionTime=1..19}] run function luigis_mansion:entities/ghost/move_forward
+tag @s[scores={ActionTime=20}] remove attack
+tag @s[scores={ActionTime=20}] remove bite
+tag @s[scores={ActionTime=20}] add breathe
+scoreboard players set @s[scores={ActionTime=20}] Dialog 20
+scoreboard players reset @s[scores={ActionTime=20}] ActionTime
+execute at @s[scores={ActionTime=1..19}] positioned ^ ^ ^0.3 if entity @e[tag=same_room,tag=!spectator,distance=..0.7,tag=!grabbed,limit=1] run scoreboard players set @s ActionTime 30
 
-scoreboard players set @s[scores={PathStep=30}] AnimationProg 0
-tag @s[scores={PathStep=30}] remove bite
-tag @s[scores={PathStep=30}] add hold
-execute if entity @s[scores={PathStep=30}] run playsound luigis_mansion:entity.spooky.attack hostile @a[tag=same_room] ~ ~ ~ 1 1
-execute if entity @s[scores={PathStep=50}] run playsound luigis_mansion:entity.spooky.attack hostile @a[tag=same_room] ~ ~ ~ 1 0.9
-execute if entity @s[scores={PathStep=70}] run playsound luigis_mansion:entity.spooky.attack hostile @a[tag=same_room] ~ ~ ~ 1 1
-execute if entity @s[scores={PathStep=90}] run playsound luigis_mansion:entity.spooky.attack hostile @a[tag=same_room] ~ ~ ~ 1 1.1
-execute if entity @s[scores={PathStep=110}] run playsound luigis_mansion:entity.spooky.attack hostile @a[tag=same_room] ~ ~ ~ 1 1
-execute at @s[scores={PathStep=30}] positioned ^ ^ ^0.8 as @e[distance=..0.8,tag=gameboy_horror_location] run function luigis_mansion:entities/gameboy_horror_location/bring_player_back
-execute at @s[scores={PathStep=30}] positioned ^ ^ ^0.8 run tag @a[tag=!spectator,distance=..0.8,tag=!grabbed,limit=1] add grabbed
-execute at @s[scores={PathStep=30..110}] positioned ^ ^ ^0.8 run effect give @a[tag=!spectator,distance=..0.7,tag=grabbed,limit=1] minecraft:instant_damage 1 0 true
-execute at @s[scores={PathStep=30}] positioned ^ ^ ^0.8 run scoreboard players set @a[tag=!spectator,distance=..0.7,tag=grabbed,limit=1] ForcedDamage 4
-execute at @s[scores={PathStep=31..110}] positioned ^ ^ ^0.8 run scoreboard players set @a[tag=!spectator,distance=..0.7,tag=grabbed,limit=1] ForcedDamage -5
-execute at @s[scores={PathStep=31..120}] run function luigis_mansion:entities/spooky/hold
-execute if entity @s[scores={PathStep=121}] run playsound luigis_mansion:entity.spooky.let_go hostile @a[tag=same_room] ~ ~ ~ 1
-scoreboard players set @s[scores={PathStep=121}] AnimationProg 0
-execute at @s[scores={PathStep=121}] store result entity @s Pos[1] double 0.01 run scoreboard players get @s HomeY
-execute at @s[scores={PathStep=121}] run teleport @s ~ ~1 ~
-tag @s[scores={PathStep=121}] remove hold
-tag @s[scores={PathStep=121}] add let_go
-scoreboard players set @s[scores={PathStep=121..180}] Move 1
-execute at @s[scores={PathStep=121..160}] rotated ~-180 0 run function luigis_mansion:entities/ghost/move_forward
-execute at @s[scores={PathStep=121..130}] run teleport @s ~ ~0.2 ~
-execute at @s[scores={PathStep=131..140}] run teleport @s ~ ~0.1 ~
-execute at @s[scores={PathStep=141..150}] run teleport @s ~ ~-0.1 ~
-execute at @s[scores={PathStep=151..160}] run teleport @s ~ ~-0.2 ~
-execute at @s[scores={PathStep=161}] run teleport @s ~ ~-0.4 ~
-tag @s[scores={PathStep=180}] remove attack
-tag @s[scores={PathStep=180}] remove let_go
-tag @s[scores={PathStep=180}] add wake_up
-scoreboard players add @s[scores={PathStep=180}] Dialog 1
-scoreboard players reset @s[scores={PathStep=180}] PathStep
+scoreboard players set @s[scores={ActionTime=30}] AnimationProg 0
+tag @s[scores={ActionTime=30}] remove bite
+tag @s[scores={ActionTime=30}] add hold
+execute if entity @s[scores={ActionTime=30}] positioned ^ ^ ^0.8 as @e[distance=..0.8,tag=gameboy_horror_location] run function luigis_mansion:entities/gameboy_horror_location/bring_player_back
+execute if entity @s[scores={ActionTime=30}] positioned ^ ^ ^0.8 run scoreboard players operation @s GrabbedID = @a[tag=!spectator,distance=..0.8,tag=!grabbed,limit=1] ID
+execute if entity @s[scores={ActionTime=30}] positioned ^ ^ ^0.8 run tag @a[tag=!spectator,distance=..0.8,tag=!grabbed,limit=1] add grabbed
+execute if entity @s[scores={GrabbedID=-2147483648..}] run scoreboard players operation #temp ID = @s GrabbedID
+execute if entity @s[scores={GrabbedID=-2147483648..}] as @a[tag=grabbed] if score @s ID = #temp ID run tag @s add still_grabbed
+execute if entity @s[scores={GrabbedID=-2147483648..}] if entity @a[tag=still_grabbed,limit=1] as @e[tag=chest] if score @s ID = #temp ID run tag @s add grabbed_model
+execute if entity @s[scores={ActionTime=30}] as @a[tag=still_grabbed,limit=1] run function luigis_mansion:entities/player/knockback/bite
+execute if entity @s[scores={ActionTime=30..51,Sound=0}] run playsound luigis_mansion:entity.spooky.attack hostile @a[tag=same_room] ~ ~ ~ 1 1
+execute if entity @s[scores={ActionTime=30..51,Sound=0}] run scoreboard players set @s Sound 20
+execute if entity @s[scores={ActionTime=30..51}] unless entity @a[tag=still_grabbed,limit=1] run scoreboard players set @s ActionTime 53
+execute if entity @s[scores={ActionTime=30..51}] at @e[tag=grabbed_model,limit=1] run teleport @s ^ ^ ^-0.65 ~ ~
+execute if entity @s[scores={ActionTime=51},tag=!harmless] run scoreboard players add @a[tag=still_grabbed,limit=1] GrabbedShake 1
+tag @a[tag=still_grabbed,limit=1] remove still_grabbed
+tag @e[tag=grabbed_model,limit=1] remove grabbed_model
+scoreboard players reset #temp ID
+scoreboard players set @s[scores={ActionTime=53}] AnimationProg 0
+scoreboard players reset @s[scores={ActionTime=53}] GrabbedID
+tag @s[scores={ActionTime=53}] remove hold
+tag @s[scores={ActionTime=53}] add let_go
+scoreboard players set @s[scores={ActionTime=53..112}] Move 1
+execute at @s[scores={ActionTime=53}] store result entity @s Pos[1] double 0.01 run scoreboard players get @s HomeY
+execute at @s[scores={ActionTime=53}] run teleport @s ~ ~1 ~
+execute if entity @s[scores={ActionTime=53}] run playsound luigis_mansion:entity.spooky.let_go hostile @a[tag=same_room] ~ ~ ~ 1
+execute at @s[scores={ActionTime=53..92}] rotated ~-180 0 run function luigis_mansion:entities/ghost/move_forward
+execute at @s[scores={ActionTime=53..62}] run teleport @s ~ ~0.2 ~
+execute at @s[scores={ActionTime=63..72}] run teleport @s ~ ~0.1 ~
+execute at @s[scores={ActionTime=73..82}] run teleport @s ~ ~-0.1 ~
+execute at @s[scores={ActionTime=83..92}] run teleport @s ~ ~-0.2 ~
+execute at @s[scores={ActionTime=93}] run teleport @s ~ ~-0.4 ~
+tag @s[scores={ActionTime=112}] remove attack
+tag @s[scores={ActionTime=112}] remove let_go
+tag @s[scores={ActionTime=112}] add wake_up
+scoreboard players add @s[scores={ActionTime=112}] Dialog 1
+scoreboard players reset @s[scores={ActionTime=112}] ActionTime

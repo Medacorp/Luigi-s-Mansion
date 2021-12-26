@@ -22,6 +22,8 @@ execute at @s[scores={KnockbackType=3}] run function luigis_mansion:animations/l
 execute at @s[scores={KnockbackType=4}] run function luigis_mansion:animations/luigi/knockback/burn/chest
 execute at @s[scores={KnockbackType=5}] run function luigis_mansion:animations/luigi/knockback/soak/chest
 execute at @s[scores={KnockbackType=6}] run function luigis_mansion:animations/luigi/knockback/freeze/chest
+execute at @s[scores={KnockbackType=7..8}] run function luigis_mansion:animations/luigi/knockback/grab/chest
+execute at @s[scores={KnockbackType=9}] run function luigis_mansion:animations/luigi/knockback/bite/chest
 
 execute at @s[tag=cold_room_idle] run function luigis_mansion:animations/luigi/idle/cold_room/chest
 execute at @s[tag=high_health_idle] run function luigis_mansion:animations/luigi/idle/high_health/chest

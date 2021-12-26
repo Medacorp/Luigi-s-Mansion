@@ -28,6 +28,8 @@ execute at @s[scores={KnockbackType=3}] run function luigis_mansion:animations/l
 execute at @s[scores={KnockbackType=4}] run function luigis_mansion:animations/luigi/knockback/burn/right_leg
 execute at @s[scores={KnockbackType=5}] run function luigis_mansion:animations/luigi/knockback/soak/right_leg
 execute at @s[scores={KnockbackType=6}] run function luigis_mansion:animations/luigi/knockback/freeze/right_leg
+execute at @s[scores={KnockbackType=7..8}] run function luigis_mansion:animations/luigi/knockback/grab/right_leg
+execute at @s[scores={KnockbackType=9}] run function luigis_mansion:animations/luigi/knockback/bite/right_leg
 
 execute at @s[tag=cold_room_idle] run function luigis_mansion:animations/luigi/idle/cold_room/right_leg
 execute at @s[tag=high_health_idle] run function luigis_mansion:animations/luigi/idle/high_health/right_leg

@@ -1,27 +1,34 @@
-scoreboard players add @s[scores={ActionTime=1..40},tag=harmless] ActionTime 1
-scoreboard players add @s[scores={ActionTime=42..},tag=harmless] ActionTime 1
-scoreboard players add @s[scores={ActionTime=1..159},tag=!harmless] ActionTime 1
+scoreboard players add @s[scores={ActionTime=41..}] ActionTime 1
+scoreboard players set @s[scores={ActionTime=40}] ActionTime 33
+scoreboard players add @s[scores={ActionTime=1..39}] ActionTime 1
 execute unless entity @s[scores={ActionTime=1..}] run scoreboard players set @s ActionTime 1
 scoreboard players set @s[scores={ActionTime=1}] AnimationProg 0
 execute if entity @s[scores={ActionTime=1..20}] run function luigis_mansion:animations/grabbing_ghost/grab
-
+tag @s[scores={ActionTime=1}] remove stunable
 execute if entity @s[scores={ActionTime=1}] run playsound luigis_mansion:entity.red_grabbing_ghost.attack hostile @a[tag=same_room] ~ ~ ~ 1
 execute if entity @s[scores={ActionTime=1}] positioned ^ ^ ^0.8 as @e[distance=..0.8,tag=gameboy_horror_location] run function luigis_mansion:entities/gameboy_horror_location/bring_player_back
+execute if entity @s[scores={ActionTime=1}] positioned ^ ^ ^0.8 run scoreboard players operation @s GrabbedID = @a[tag=!spectator,distance=..0.8,tag=!grabbed,limit=1] ID
 execute if entity @s[scores={ActionTime=1}] positioned ^ ^ ^0.8 run tag @a[tag=!spectator,distance=..0.8,tag=!grabbed,limit=1] add grabbed
+execute if entity @s[scores={GrabbedID=-2147483648..}] run scoreboard players operation #temp ID = @s GrabbedID
+execute if entity @s[scores={GrabbedID=-2147483648..}] as @a[tag=grabbed] if score @s ID = #temp ID run tag @s add still_grabbed
+execute if entity @s[scores={GrabbedID=-2147483648..}] if entity @a[tag=still_grabbed,limit=1] as @e[tag=chest] if score @s ID = #temp ID run tag @s add grabbed_model
 execute if entity @s[scores={ActionTime=1..20}] if score #mirrored Selected matches 0 run function luigis_mansion:entities/red_grabbing_ghost/grab/normal
 execute if entity @s[scores={ActionTime=1..20}] if score #mirrored Selected matches 1 run function luigis_mansion:entities/red_grabbing_ghost/grab/mirrored
-execute if entity @s[scores={ActionTime=20}] positioned ^ ^ ^0.8 at @a[tag=!spectator,distance=..0.7,tag=grabbed,limit=1] run playsound luigis_mansion:entity.player.grabbed player @a[tag=same_room] ~ ~ ~ 1
-execute if entity @s[scores={ActionTime=20..100},tag=!harmless] positioned ^ ^ ^0.8 run effect give @a[tag=!spectator,distance=..0.7,tag=grabbed,limit=1] minecraft:instant_damage 1 0 true
-execute if entity @s[scores={ActionTime=20},tag=!harmless] positioned ^ ^ ^0.8 run scoreboard players set @a[tag=!spectator,distance=..0.7,tag=grabbed,limit=1] ForcedDamage -1
-execute if entity @s[scores={ActionTime=21..100},tag=!harmless] positioned ^ ^ ^0.8 run scoreboard players set @a[tag=!spectator,distance=..0.7,tag=grabbed,limit=1] ForcedDamage -5
-execute if entity @s[scores={ActionTime=21..110}] positioned ^ ^ ^0.8 store result entity @s Rotation[0] float 0.01 run data get entity @a[tag=!spectator,distance=..0.7,tag=grabbed,limit=1] Rotation[0] 100
-execute if entity @s[scores={ActionTime=21..110}] positioned ^ ^ ^0.8 unless entity @a[tag=!spectator,distance=..0.7,tag=grabbed,limit=1] run scoreboard players set @s ActionTime 110
-execute if entity @s[scores={ActionTime=21..110}] positioned ^ ^ ^0.8 positioned as @a[tag=!spectator,distance=..0.7,tag=grabbed,limit=1] rotated as @s positioned ^ ^ ^-0.8 run teleport @s ~ ~ ~ ~ ~
-execute at @s[scores={ActionTime=40}] positioned ^ ^ ^0.8 if entity @a[distance=..0.7,tag=!spectator,tag=grabbed,limit=1] run tag @s add laugh
-scoreboard players set @s[scores={ActionTime=110}] AnimationProg 0
-execute if entity @s[scores={ActionTime=110}] run playsound luigis_mansion:entity.red_grabbing_ghost.let_go hostile @a[tag=same_room] ~ ~ ~ 1
-execute if entity @s[scores={ActionTime=110..130}] run function luigis_mansion:animations/grabbing_ghost/let_go
-tag @s[scores={ActionTime=130},tag=!laugh] add complain
-tag @s[scores={ActionTime=130}] remove attack
-scoreboard players set @s[scores={ActionTime=130}] AnimationProg 0
-scoreboard players set @s[scores={ActionTime=130}] ActionTime 0
+execute if entity @s[scores={ActionTime=20},tag=harmless] as @a[tag=still_grabbed,limit=1] run function luigis_mansion:entities/player/knockback/harmless_grab
+execute if entity @s[scores={ActionTime=20},tag=!harmless] as @a[tag=still_grabbed,limit=1] run function luigis_mansion:entities/player/knockback/harmfull_grab
+execute if entity @s[scores={ActionTime=20..40}] unless entity @a[tag=still_grabbed,limit=1] run scoreboard players set @s ActionTime 41
+execute if entity @s[scores={ActionTime=20..40}] at @e[tag=grabbed_model,limit=1] run teleport @s ^ ^ ^-0.65 ~ ~
+tag @s[scores={ActionTime=21}] add stunable
+execute if entity @s[scores={ActionTime=40},tag=!harmless] run scoreboard players add @a[tag=still_grabbed,limit=1] GrabbedShake 1
+tag @a[tag=still_grabbed,limit=1] remove still_grabbed
+tag @e[tag=grabbed_model,limit=1] remove grabbed_model
+scoreboard players reset #temp ID
+tag @s[scores={ActionTime=40}] add laugh
+scoreboard players set @s[scores={ActionTime=41}] AnimationProg 0
+scoreboard players reset @s[scores={ActionTime=41}] GrabbedID
+execute if entity @s[scores={ActionTime=41}] run playsound luigis_mansion:entity.red_grabbing_ghost.let_go hostile @a[tag=same_room] ~ ~ ~ 1
+execute if entity @s[scores={ActionTime=41..61}] run function luigis_mansion:animations/grabbing_ghost/let_go
+tag @s[scores={ActionTime=61},tag=!laugh] add complain
+tag @s[scores={ActionTime=61}] remove attack
+scoreboard players set @s[scores={ActionTime=61}] AnimationProg 0
+scoreboard players set @s[scores={ActionTime=61}] ActionTime 0
