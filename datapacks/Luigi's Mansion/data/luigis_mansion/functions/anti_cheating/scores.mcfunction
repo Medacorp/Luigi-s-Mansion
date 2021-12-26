@@ -115,6 +115,8 @@ scoreboard objectives add RotationDif dummy
 scoreboard objectives add RotX dummy
 scoreboard objectives add RotY dummy
 scoreboard objectives add Run minecraft.custom:minecraft.sprint_one_cm
+scoreboard objectives add ScareType dummy
+scoreboard objectives add ScareTime dummy
 scoreboard objectives add Search dummy
 scoreboard objectives add Searched dummy
 scoreboard objectives add Searching dummy

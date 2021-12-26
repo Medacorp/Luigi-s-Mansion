@@ -24,6 +24,7 @@ execute if entity @s[scores={AnimationProg=41..45}] if score #mirrored Selected 
 execute if entity @s[scores={AnimationProg=46..50}] if score #mirrored Selected matches 1 store result entity @s Pose.Head[0] float 1 run scoreboard players remove #temp Time 10
 execute if entity @s[scores={AnimationProg=51..55}] if score #mirrored Selected matches 1 store result entity @s Pose.Head[0] float 1 run scoreboard players add #temp Time 10
 execute if entity @s[scores={AnimationProg=56..60}] if score #mirrored Selected matches 1 store result entity @s Pose.Head[0] float 1 run scoreboard players remove #temp Time 10
+scoreboard players reset #temp Time
 data merge entity @s[scores={AnimationProg=60}] {Pose:{Head:[0.0f,0.0f,0.01f]}}
 data merge entity @s[scores={AnimationProg=60},tag=flipped_gravity] {Pose:{Head:[0.0f,0.0f,-180.0f]}}
 scoreboard players set @s[scores={AnimationProg=60..}] AnimationProg 0

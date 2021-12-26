@@ -2,7 +2,7 @@ tag @s[tag=!boo_hurt,tag=!boo_death] add normal_death
 tag @s[tag=boo_hurt] add boo_death
 tag @s[tag=boo_hurt] remove boo_hurt
 
-scoreboard players add @s[scores={DeathTime=1}] DeathTime 1
+scoreboard players add @s DeathTime 1
 
 tag @s[scores={DeathTime=2}] add me
 execute if entity @s[scores={DeathTime=2}] as @a run function luigis_mansion:entities/ghost/find_vacuumers

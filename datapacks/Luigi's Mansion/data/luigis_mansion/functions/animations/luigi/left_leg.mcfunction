@@ -20,6 +20,8 @@ execute if entity @s[tag=walking,tag=!looking_at_map] run function luigis_mansio
 execute if entity @s[tag=running,tag=!looking_at_map] run function luigis_mansion:animations/luigi/running/left_leg
 execute if entity @s[tag=swimming,tag=!looking_at_map] run function luigis_mansion:animations/luigi/swimming/left_leg
 
+execute at @s[scores={KnockbackType=-2}] run function luigis_mansion:animations/luigi/scared/bashed/left_leg
+execute at @s[scores={KnockbackType=-1}] run function luigis_mansion:animations/luigi/scared/left_leg
 execute at @s[scores={KnockbackType=1}] run function luigis_mansion:animations/luigi/knockback/small/left_leg
 execute at @s[scores={KnockbackType=2}] run function luigis_mansion:animations/luigi/knockback/medium/left_leg
 execute at @s[scores={KnockbackType=3}] run function luigis_mansion:animations/luigi/knockback/large/left_leg

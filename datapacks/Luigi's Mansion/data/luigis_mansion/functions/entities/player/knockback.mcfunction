@@ -85,4 +85,6 @@ scoreboard players reset @s[scores={KnockbackTime=0}] KnockbackZ
 scoreboard players reset @s[scores={KnockbackTime=0}] KnockbackType
 scoreboard players reset @s[scores={KnockbackTime=0}] KnockbackTime
 
+scoreboard players reset @s ScareType
+scoreboard players reset @s ScareTime
 function luigis_mansion:entities/player/idle/reset

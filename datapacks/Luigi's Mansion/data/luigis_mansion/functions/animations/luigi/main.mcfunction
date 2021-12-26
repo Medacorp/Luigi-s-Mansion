@@ -11,10 +11,11 @@ execute if entity @s[tag=was_high_health_idle] unless data storage luigis_mansio
 execute if entity @s[tag=!was_high_health_idle] if data storage luigis_mansion:data luigi{tags:["high_health_idle"]} run function luigis_mansion:animations/luigi/reset_pose
 execute if entity @s[scores={AnimationProg=0},tag=was_swimming] store result entity @s Pose.Head[0] float 1 run scoreboard players get @s IncreaseAmount
 execute if entity @s[tag=!was_swimming] if data storage luigis_mansion:data luigi{tags:["swimming"]} run function luigis_mansion:animations/luigi/reset_pose
-execute store result score @s KnockbackType run data get storage luigis_mansion:data luigi.knockback_animation
+execute store result score @s KnockbackType run data get storage luigis_mansion:data luigi.animation
+execute unless score @s ScareType = @s KnockbackType run function luigis_mansion:animations/luigi/reset_pose
 data modify entity @s Tags append from storage luigis_mansion:data luigi.tags[]
 tag @s[tag=looking_at_map] remove sneak_pos
-scoreboard players set @s[scores={KnockbackType=0}] KnockbackTime
+execute if entity @s[scores={KnockbackType=..-1}] run function luigis_mansion:animations/luigi/in_knockback
 execute if entity @s[scores={KnockbackType=2..}] run function luigis_mansion:animations/luigi/in_knockback
 execute if data storage luigis_mansion:data luigi{gliding:1b} run tag @s[tag=walking] remove walking
 execute unless data entity @s Pose.Head[0] run data merge entity @s {Pose:{Head:[0.001f,0.001f,0.001f]}}
@@ -31,6 +32,7 @@ execute if entity @s[tag=!head] store result entity @s Pose.Head[0] float 1 run 
 scoreboard players reset #temp Time
 execute if data storage luigis_mansion:data luigi{invulnerable:1b} run function luigis_mansion:animations/luigi/invulnerability_blink
 execute if data storage luigis_mansion:data luigi{invulnerable:0b} if entity @s[nbt={ArmorItems:[{id:"minecraft:oak_button"}]}] run data modify entity @s[tag=was_invisible] ArmorItems[3].id set value "minecraft:diamond_pickaxe"
+scoreboard players operation @s ScareType = @s KnockbackType
 tag @s[tag=low_health] add was_low_health
 tag @s[tag=!low_health] remove was_low_health
 tag @s[tag=low_health] remove low_health
