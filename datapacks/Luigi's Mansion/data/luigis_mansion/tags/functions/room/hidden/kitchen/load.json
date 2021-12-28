@@ -6,6 +6,9 @@
         "luigis_mansion:room/hidden/kitchen/load/fire",
         "luigis_mansion:room/hidden/kitchen/load/closet",
         "luigis_mansion:room/hidden/kitchen/load/ice",
+        "luigis_mansion:room/hidden/kitchen/load/painting_1",
+        "luigis_mansion:room/hidden/kitchen/load/painting_2",
+        "luigis_mansion:room/hidden/kitchen/load/painting_3",
         "luigis_mansion:room/hidden/kitchen/load/vacuumable",
         "luigis_mansion:room/hidden/kitchen/load/water"
 	]

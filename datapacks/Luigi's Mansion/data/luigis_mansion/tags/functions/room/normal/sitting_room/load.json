@@ -3,6 +3,11 @@
 	    "luigis_mansion:room/normal/sitting_room/load/set_loaded",
         "luigis_mansion:room/normal/sitting_room/load/lights",
         "luigis_mansion:room/normal/sitting_room/load/candle_3",
+        "luigis_mansion:room/normal/sitting_room/load/painting_1",
+        "luigis_mansion:room/normal/sitting_room/load/painting_2",
+        "luigis_mansion:room/normal/sitting_room/load/painting_3",
+        "luigis_mansion:room/normal/sitting_room/load/painting_4",
+        "luigis_mansion:room/normal/sitting_room/load/painting_5",
         "luigis_mansion:room/normal/sitting_room/load/table",
         "luigis_mansion:room/normal/sitting_room/load/water"
 	]

@@ -2,9 +2,12 @@
 	"values": [
 	    "luigis_mansion:room/hidden/nursery/load/set_loaded",
         "luigis_mansion:room/hidden/nursery/load/lights",
-        "luigis_mansion:room/hidden/nursery/load/ball",
-        "luigis_mansion:room/hidden/nursery/load/rocking_horse",
         "luigis_mansion:room/hidden/nursery/load/spawn_money",
+        "luigis_mansion:room/hidden/nursery/load/ball",
+        "luigis_mansion:room/hidden/nursery/load/painting_1",
+        "luigis_mansion:room/hidden/nursery/load/painting_2",
+        "luigis_mansion:room/hidden/nursery/load/painting_3",
+        "luigis_mansion:room/hidden/nursery/load/rocking_horse",
         "luigis_mansion:room/hidden/nursery/load/table_2",
         "luigis_mansion:room/hidden/nursery/load/vacuumable_1",
         "luigis_mansion:room/hidden/nursery/load/vacuumable_2"

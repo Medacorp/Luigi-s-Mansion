@@ -9,4 +9,3 @@ fill 678 11 67 678 12 67 minecraft:air
 clone 671 11 67 679 17 66 671 11 54 replace move
 setblock 678 11 66 minecraft:oak_slab[type=bottom]
 setblock 678 11 67 minecraft:andesite_slab[type=bottom]
-summon minecraft:item_frame 679 13 61 {Facing:4b,CustomName:'{"translate":"luigis_mansion:entity.poster"}',Fixed:1b,Invisible:1b,Silent:1b,Item:{id:"minecraft:filled_map",Count:1b,tag:{map:151}},Tags:["poster"]}

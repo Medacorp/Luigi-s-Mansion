@@ -3,6 +3,10 @@
 	    "luigis_mansion:room/normal/conservatory/load/set_loaded",
         "luigis_mansion:room/normal/conservatory/load/lights",
         "luigis_mansion:room/normal/conservatory/load/closet",
+        "luigis_mansion:room/normal/conservatory/load/painting_1",
+        "luigis_mansion:room/normal/conservatory/load/painting_2",
+        "luigis_mansion:room/normal/conservatory/load/painting_3",
+        "luigis_mansion:room/normal/conservatory/load/painting_4",
         "luigis_mansion:room/normal/conservatory/load/vacuumable"
 	]
 }

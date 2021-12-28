@@ -18,7 +18,7 @@ execute at @s[scores={Move=10}] run scoreboard players set @a[distance=..3,tag=!
 execute at @s[scores={Move=10}] as @a[distance=..3,tag=!spectator] run function luigis_mansion:entities/player/knockback/burn
 execute at @s[scores={Move=10}] run particle minecraft:explosion ~ ~ ~ 0.2 0.2 0.2 1 4 force @a[tag=same_room]
 execute at @s[scores={Move=10}] run playsound minecraft:entity.generic.explode hostile @a[tag=same_room] ~ ~ ~ 2
-execute at @s[scores={Move=10}] run data remove entity @s ArmorItems
+execute at @s[scores={Move=10}] run data remove entity @s ArmorItems[3]
 execute if entity @s[scores={Move=10..30,Owner=-2147483648..}] if entity @a[distance=..3,tag=!spectator,limit=1] run tag @s add make_laugh
 execute if entity @s[scores={Move=30,Owner=-2147483648..}] run scoreboard players operation #temp GhostNr = @s Owner
 execute if entity @s[scores={Move=30,Owner=-2147483648..}] as @e[tag=!model_piece,tag=ghost] if score @s GhostNr = #temp GhostNr run scoreboard players set @s AnimationProg 0

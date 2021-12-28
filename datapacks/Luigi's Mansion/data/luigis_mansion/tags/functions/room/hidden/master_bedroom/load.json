@@ -2,6 +2,11 @@
 	"values": [
 	    "luigis_mansion:room/hidden/master_bedroom/load/set_loaded",
         "luigis_mansion:room/hidden/master_bedroom/load/lights",
+        "luigis_mansion:room/hidden/master_bedroom/load/painting_1",
+        "luigis_mansion:room/hidden/master_bedroom/load/painting_2",
+        "luigis_mansion:room/hidden/master_bedroom/load/painting_3",
+        "luigis_mansion:room/hidden/master_bedroom/load/painting_4",
+        "luigis_mansion:room/hidden/master_bedroom/load/painting_5",
         "luigis_mansion:room/hidden/master_bedroom/load/table_1",
         "luigis_mansion:room/hidden/master_bedroom/load/table_2",
         "luigis_mansion:room/hidden/master_bedroom/load/vacuumable"
