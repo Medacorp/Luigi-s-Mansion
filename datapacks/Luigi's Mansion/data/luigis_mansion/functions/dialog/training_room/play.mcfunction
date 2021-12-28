@@ -1,9 +1,9 @@
-execute if entity @a[scores={EGaddTrainChoice=1..},limit=1] run scoreboard players add @s[scores={Dialog=2747..}] Dialog 1
-scoreboard players add @s[scores={Dialog=2158..2746}] Dialog 1
-execute unless entity @e[tag=ghost,scores={Room=-2},limit=1] run scoreboard players add @s[scores={Dialog=2157}] Dialog 1
-scoreboard players add @s[scores={Dialog=2004..2156}] Dialog 1
-execute unless entity @e[tag=ghost,scores={Room=-2},limit=1] run scoreboard players add @s[scores={Dialog=2003}] Dialog 1
-scoreboard players add @s[scores={Dialog=1652..2002}] Dialog 1
+execute if entity @a[scores={EGaddTrainChoice=1..},limit=1] run scoreboard players add @s[scores={Dialog=2749..}] Dialog 1
+scoreboard players add @s[scores={Dialog=2160..2748}] Dialog 1
+execute unless entity @e[tag=ghost,scores={Room=-2},limit=1] run scoreboard players add @s[scores={Dialog=2159}] Dialog 1
+scoreboard players add @s[scores={Dialog=2006..2158}] Dialog 1
+execute unless entity @e[tag=ghost,scores={Room=-2},limit=1] run scoreboard players add @s[scores={Dialog=2005}] Dialog 1
+scoreboard players add @s[scores={Dialog=1652..2004}] Dialog 1
 execute unless entity @e[tag=ghost,scores={Room=-2},limit=1] run scoreboard players add @s[scores={Dialog=1651}] Dialog 1
 scoreboard players add @s[scores={Dialog=1490..1650}] Dialog 1
 execute unless entity @e[tag=ghost,scores={Room=-2},limit=1] run scoreboard players add @s[scores={Dialog=1489}] Dialog 1
@@ -11,7 +11,7 @@ scoreboard players add @s[scores={Dialog=1274..1488}] Dialog 1
 execute unless entity @e[tag=ghost,scores={Room=-2},limit=1] run scoreboard players add @s[scores={Dialog=1273}] Dialog 1
 scoreboard players add @s[scores={Dialog=..1272}] Dialog 1
 scoreboard players add @s[scores={Dialog=2812..}] Dialog 1
-execute if entity @a[scores={Health=1},tag=same_room] run scoreboard players set @s[scores={Dialog=..2842}] Dialog 2842
+execute if entity @a[scores={Health=1},tag=same_room] run scoreboard players set @s[scores={Dialog=..2844}] Dialog 2844
 execute unless entity @s[scores={Dialog=1..}] run scoreboard players add @s Dialog 1
 execute if entity @s[scores={Dialog=1}] if entity @a[advancements={luigis_mansion:lab/training_room=true}] run scoreboard players set @s Dialog 736
 execute if entity @s[scores={Dialog=1}] if score #players Totals matches 1 run tellraw @a[tag=same_room] {"translate":"chat.type.text","with":[{"translate":"luigis_mansion:entity.e_gadd","color":"green"},{"translate":"luigis_mansion:dialog.training_room.1"}]}

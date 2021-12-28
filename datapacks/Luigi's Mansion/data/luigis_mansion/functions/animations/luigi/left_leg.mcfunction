@@ -34,3 +34,6 @@ execute at @s[scores={KnockbackType=9}] run function luigis_mansion:animations/l
 execute at @s[tag=cold_room_idle] run function luigis_mansion:animations/luigi/idle/cold_room/left_leg
 execute at @s[tag=high_health_idle] run function luigis_mansion:animations/luigi/idle/high_health/left_leg
 execute at @s[tag=low_health_idle] run function luigis_mansion:animations/luigi/idle/low_health/left_leg
+
+execute at @s[scores={Pull=10..19,KnockbackType=0}] run function luigis_mansion:animations/luigi/pulled/start/left_leg
+execute at @s[scores={Pull=20..,KnockbackType=0}] run function luigis_mansion:animations/luigi/pulled/left_leg

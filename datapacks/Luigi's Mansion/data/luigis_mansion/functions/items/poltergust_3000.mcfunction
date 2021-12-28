@@ -14,6 +14,9 @@ tag @s remove catch_portrait_ghost
 tag @s remove catch_ghost
 tag @s[tag=!poltergust_malfunction,nbt={SelectedItem:{tag:{luigis_mansion:{id:"luigis_mansion:poltergust_3000"}}}}] add poltergust_selected
 tag @s[tag=!poltergust_selected] remove expelling
+scoreboard players set @s[tag=!poltergust_selected] VacuumErrors 0
+scoreboard players set @s[tag=!poltergust_selected] Pull 0
+tag @s[tag=!poltergust_selected] remove made_error
 tag @s[tag=poltergust_selected,scores={UseItem=1},tag=!expelling] add toggle_expelling
 tag @s[tag=poltergust_selected,tag=toggle_expelling] add expelling
 scoreboard players set @s[tag=poltergust_selected,tag=toggle_expelling] UseItem 0
