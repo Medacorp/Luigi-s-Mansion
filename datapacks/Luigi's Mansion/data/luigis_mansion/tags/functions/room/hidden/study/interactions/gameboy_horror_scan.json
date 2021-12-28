@@ -1,6 +1,11 @@
 {
 	"values": [
-		"luigis_mansion:room/hidden/study/interactions/gameboy_horror_scan/bookshelf",
+        "luigis_mansion:room/hidden/study/interactions/gameboy_horror_scan/bookshelf_1",
+        "luigis_mansion:room/hidden/study/interactions/gameboy_horror_scan/bookshelf_2",
+        "luigis_mansion:room/hidden/study/interactions/gameboy_horror_scan/bookshelf_3",
+        "luigis_mansion:room/hidden/study/interactions/gameboy_horror_scan/bookshelf_4",
+        "luigis_mansion:room/hidden/study/interactions/gameboy_horror_scan/bookshelf_5",
+        "luigis_mansion:room/hidden/study/interactions/gameboy_horror_scan/bookshelf_6",
 		"luigis_mansion:room/hidden/study/interactions/gameboy_horror_scan/bottled_ship",
 		"luigis_mansion:room/hidden/study/interactions/gameboy_horror_scan/ceiling_lamp",
 		"luigis_mansion:room/hidden/study/interactions/gameboy_horror_scan/chair",

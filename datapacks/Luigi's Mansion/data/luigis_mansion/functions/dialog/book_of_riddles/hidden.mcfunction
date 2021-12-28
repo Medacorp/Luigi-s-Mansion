@@ -1,0 +1,1 @@
+function luigis_mansion:dialog/book_of_riddles/normal

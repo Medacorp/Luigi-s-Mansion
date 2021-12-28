@@ -3,6 +3,7 @@ scoreboard objectives add Angle dummy
 scoreboard objectives add AnimationProg dummy
 scoreboard objectives add Attack minecraft.custom:minecraft.damage_dealt
 scoreboard objectives add BananaDropTime dummy
+scoreboard objectives add BookChoice trigger
 scoreboard objectives add Boos dummy
 scoreboard objectives add BooTimer dummy
 scoreboard objectives add ChangedMansion dummy
@@ -106,7 +107,6 @@ scoreboard objectives add Pull dummy
 scoreboard objectives add PullStrength dummy
 scoreboard objectives add PunchingBag dummy
 scoreboard objectives add Range dummy
-scoreboard objectives add ReadBook minecraft.used:minecraft.written_book
 scoreboard objectives add ReflectionNr dummy
 scoreboard objectives add ResetChoice trigger
 scoreboard objectives add ReturnTimer dummy

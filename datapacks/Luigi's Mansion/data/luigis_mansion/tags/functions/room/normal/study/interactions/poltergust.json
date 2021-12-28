@@ -2,6 +2,12 @@
 	"values": [
 		"luigis_mansion:room/normal/study/interactions/poltergust/book_1",
 		"luigis_mansion:room/normal/study/interactions/poltergust/book_2",
+        "luigis_mansion:room/normal/study/interactions/poltergust/bookshelf_1",
+        "luigis_mansion:room/normal/study/interactions/poltergust/bookshelf_2",
+        "luigis_mansion:room/normal/study/interactions/poltergust/bookshelf_3",
+        "luigis_mansion:room/normal/study/interactions/poltergust/bookshelf_4",
+        "luigis_mansion:room/normal/study/interactions/poltergust/bookshelf_5",
+        "luigis_mansion:room/normal/study/interactions/poltergust/bookshelf_6",
 		"luigis_mansion:room/normal/study/interactions/poltergust/bottled_ship",
 		"luigis_mansion:room/normal/study/interactions/poltergust/ceiling_lamp",
 		"luigis_mansion:room/normal/study/interactions/poltergust/chair",

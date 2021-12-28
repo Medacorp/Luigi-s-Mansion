@@ -11,3 +11,11 @@ execute if entity @s[tag=blackout_lightning] run function luigis_mansion:dialog/
 execute if entity @s[tag=toad_5_dialog] run function luigis_mansion:dialog/toad_5/hidden
 execute if entity @s[tag=uncle_grimmly_dialog] run function luigis_mansion:dialog/uncle_grimmly/hidden
 execute if entity @s[tag=close_pipe] run function luigis_mansion:dialog/close_pipe/hidden
+
+execute if entity @s[tag=book_of_riddles] run function luigis_mansion:dialog/book_of_riddles/hidden
+execute if entity @s[tag=darkness_is_their_cheese] run function luigis_mansion:dialog/darkness_is_their_cheese/hidden
+execute if entity @s[tag=e_gadds_guide_to_ghosts] run function luigis_mansion:dialog/e_gadds_guide_to_ghosts/hidden
+execute if entity @s[tag=lydias_child_care_diary] run function luigis_mansion:dialog/lydias_child_care_diary/hidden
+execute if entity @s[tag=moldy_old_journal] run function luigis_mansion:dialog/moldy_old_journal/hidden
+execute if entity @s[tag=nevilles_big_baby_care_diary] run function luigis_mansion:dialog/nevilles_big_baby_care_diary/hidden
+execute if entity @s[tag=the_book_of_pericles] run function luigis_mansion:dialog/the_book_of_pericles/hidden
