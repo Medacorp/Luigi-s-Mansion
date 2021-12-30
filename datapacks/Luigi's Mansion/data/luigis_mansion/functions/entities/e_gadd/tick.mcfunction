@@ -22,7 +22,7 @@ execute at @s[tag=get_up] as @e[tag=this_model,tag=e_gadd_head,limit=1] run func
 execute at @s[tag=!listen,tag=!nod,tag=!shake,tag=!wave,tag=!walk,tag=!jump,tag=!poltergust,tag=!walk_backwards,tag=!dragged,tag=!hit,tag=!sitting,tag=!get_up] as @e[tag=this_model,tag=e_gadd_head,limit=1] run function luigis_mansion:animations/e_gadd/idle
 execute at @s[tag=!listen,tag=!nod,tag=!shake,tag=!wave,tag=!walk,tag=!jump,tag=poltergust,tag=!walk_backwards,tag=!dragged,tag=!hit,tag=!sitting,tag=!get_up] as @e[tag=this_model,tag=e_gadd_head,limit=1] run function luigis_mansion:animations/e_gadd/poltergust
 
-execute at @s[tag=poltergust] run data modify entity @e[tag=this_model,tag=e_gadd_poltergust,limit=1] ArmorItems[3] set value {id:"minecraft:carrot_on_a_stick",Count:1b,tag:{HideFlags:63,Unbreakable:1b,Damage:1,CustomModelData:0,display:{Name:'{"italic":false,"color":"white","translate":"luigis_mansion:item.poltergust_3000"}',Lore:['{"italic":false,"color":"gray","translate":"luigis_mansion:item.poltergust_3000.element","with":[{"translate":"luigis_mansion:item.poltergust_3000.element.none","color":"gray"}]}']},luigis_mansion:{id:"luigis_mansion:poltergust_3000",element:{type:0b}}}}
+execute at @s[tag=poltergust] run data modify entity @e[tag=this_model,tag=e_gadd_poltergust,limit=1] ArmorItems[3] set value {id:"minecraft:carrot_on_a_stick",Count:1b,tag:{Unbreakable:1b,Damage:0,CustomModelData:1}}
 execute at @s[tag=!poltergust] run data modify entity @e[tag=this_model,tag=e_gadd_poltergust,limit=1] ArmorItems[3] set value {}
 execute at @e[tag=this_model,tag=e_gadd_head,limit=1] run teleport @e[tag=this_model,tag=e_gadd_poltergust,limit=1] ^-0.34 ^0.05 ^ ~ ~
 

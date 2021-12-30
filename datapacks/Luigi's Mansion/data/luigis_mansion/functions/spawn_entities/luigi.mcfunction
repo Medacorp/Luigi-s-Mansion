@@ -7,6 +7,7 @@ summon minecraft:armor_stand ~ ~ ~ {NoGravity:1b,Invisible:1b,Marker:1b,Tags:["r
 summon minecraft:armor_stand ~ ~ ~ {NoGravity:1b,Invisible:1b,Marker:1b,Tags:["left_arm","held_item","luigi_model","model_piece","new","found_owner","found_owner_2"],CustomName:'{"translate":"luigis_mansion:entity.luigi"}'}
 summon minecraft:armor_stand ~ ~ ~ {NoGravity:1b,Invisible:1b,Marker:1b,Tags:["right_leg","luigi_model","model_piece","new","found_owner","found_owner_2"],CustomName:'{"translate":"luigis_mansion:entity.luigi"}',ArmorItems:[{},{},{},{id:"minecraft:leather_chestplate",Count:1b,tag:{Unbreakable:1b,Damage:2,CustomModelData:19,display:{color:37129}}}]}
 summon minecraft:armor_stand ~ ~ ~ {NoGravity:1b,Invisible:1b,Marker:1b,Tags:["left_leg","luigi_model","model_piece","new","found_owner","found_owner_2"],CustomName:'{"translate":"luigis_mansion:entity.luigi"}',ArmorItems:[{},{},{},{id:"minecraft:leather_chestplate",Count:1b,tag:{Unbreakable:1b,Damage:3,CustomModelData:19,display:{color:37129}}}]}
+summon minecraft:armor_stand ~ ~ ~ {NoGravity:1b,Invisible:1b,Marker:1b,Tags:["poltergust_body","luigi_model","model_piece","new","found_owner","found_owner_2"],CustomName:'{"translate":"luigis_mansion:entity.luigi"}',ArmorItems:[{},{},{},{}]}
 scoreboard players operation #temp ID = @s ID
 execute at @s as @e[tag=luigi_model,tag=new] run scoreboard players operation @s ID = #temp ID
 scoreboard players reset #temp ID

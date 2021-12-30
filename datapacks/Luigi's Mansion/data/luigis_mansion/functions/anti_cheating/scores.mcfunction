@@ -126,7 +126,8 @@ scoreboard objectives add SecondFleeDamage dummy
 scoreboard objectives add SecondFleeState dummy
 scoreboard objectives add Selected dummy
 scoreboard objectives add Shrunk dummy
-scoreboard objectives add ShrunkNr dummy
+scoreboard objectives add SlipX dummy
+scoreboard objectives add SlipZ dummy
 scoreboard objectives add Sneak minecraft.custom:minecraft.crouch_one_cm
 scoreboard objectives add Sneaking minecraft.custom:minecraft.sneak_time
 scoreboard objectives add SneakTime dummy

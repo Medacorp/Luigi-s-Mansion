@@ -87,10 +87,12 @@ execute at @s[scores={KnockbackTime=2..,KnockbackType=7..9},tag=!positive_x] if 
 execute at @s[scores={KnockbackTime=2..,KnockbackType=7..9},tag=!positive_z] if score #temp PosZ matches 8.. run tag @s add struggle
 execute at @s[scores={KnockbackTime=2..,KnockbackType=7..9},tag=!negative_x] if score #temp PosX matches ..-8 run tag @s add struggle
 execute at @s[scores={KnockbackTime=2..,KnockbackType=7..9},tag=!negative_z] if score #temp PosZ matches ..-8 run tag @s add struggle
-execute at @s[scores={KnockbackTime=1..,KnockbackType=7..9}] unless score #temp PosX matches -8..8 unless score #temp PosZ matches -8..8 run tag @s remove positive_x
-execute at @s[scores={KnockbackTime=1..,KnockbackType=7..9}] unless score #temp PosX matches -8..8 unless score #temp PosZ matches -8..8 run tag @s remove positive_z
-execute at @s[scores={KnockbackTime=1..,KnockbackType=7..9}] unless score #temp PosX matches -8..8 unless score #temp PosZ matches -8..8 run tag @s remove negative_x
-execute at @s[scores={KnockbackTime=1..,KnockbackType=7..9}] unless score #temp PosX matches -8..8 unless score #temp PosZ matches -8..8 run tag @s remove negative_z
+execute at @s[scores={KnockbackTime=1..,KnockbackType=7..9}] if score #temp PosX matches -8..8 if score #temp PosZ matches -8..8 run tag @s add didnt_move
+execute at @s[scores={KnockbackTime=1..,KnockbackType=7..9}] run tag @s[tag=!didnt_move] remove positive_x
+execute at @s[scores={KnockbackTime=1..,KnockbackType=7..9}] run tag @s[tag=!didnt_move] remove positive_z
+execute at @s[scores={KnockbackTime=1..,KnockbackType=7..9}] run tag @s[tag=!didnt_move] remove negative_x
+execute at @s[scores={KnockbackTime=1..,KnockbackType=7..9}] run tag @s[tag=!didnt_move] remove negative_z
+execute at @s[scores={KnockbackTime=1..,KnockbackType=7..9}] run tag @s remove didnt_move
 execute at @s[scores={KnockbackTime=2..,KnockbackType=7..9}] if score #temp PosX matches 8.. run tag @s add positive_x
 execute at @s[scores={KnockbackTime=2..,KnockbackType=7..9}] if score #temp PosZ matches 8.. run tag @s add positive_z
 execute at @s[scores={KnockbackTime=2..,KnockbackType=7..9}] if score #temp PosX matches ..-8 run tag @s add negative_x
@@ -125,7 +127,7 @@ scoreboard players reset @s[scores={KnockbackType=..6}] GrabbedShake
 tag @s[scores={KnockbackType=..6}] remove grabbed
 scoreboard players reset @s[scores={KnockbackTime=0}] KnockbackX
 scoreboard players reset @s[scores={KnockbackTime=0}] KnockbackZ
-scoreboard players reset @s[scores={KnockbackTime=0}] KnockbackType
+scoreboard players set @s[scores={KnockbackTime=0}] KnockbackType 0
 scoreboard players reset @s[scores={KnockbackTime=0}] KnockbackTime
 
 scoreboard players reset @s ScareType

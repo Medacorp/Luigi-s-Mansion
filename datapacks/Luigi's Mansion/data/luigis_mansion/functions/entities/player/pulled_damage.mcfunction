@@ -11,5 +11,4 @@ execute if entity @s[scores={Health=1..}] if score #temp ActionTime matches 1.. 
 function luigis_mansion:entities/player/reduce_my_coins
 playsound luigis_mansion:entity.player.hurt player @a[tag=same_room] ~ ~ ~ 1
 execute if score @s Health > @s MaxHealth run scoreboard players operation @s Health = @s MaxHealth
-scoreboard players reset #temp ActionTime
 scoreboard players operation @s LastTotalDamage = @s TotalDamage

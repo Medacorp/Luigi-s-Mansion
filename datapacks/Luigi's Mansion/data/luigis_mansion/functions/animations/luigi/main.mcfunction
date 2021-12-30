@@ -1,6 +1,6 @@
-execute if entity @s[tag=!made_error,tag=was_sneaking,tag=!was_swimming] unless data storage luigis_mansion:data luigi{tags:["sneaking"]} run function luigis_mansion:animations/luigi/reset_pose
-execute if entity @s[tag=!made_error,tag=was_walking,tag=!was_swimming] unless data storage luigis_mansion:data luigi{tags:["walking"]} run function luigis_mansion:animations/luigi/reset_pose
-execute if entity @s[tag=!made_error,tag=was_running,tag=!was_swimming] unless data storage luigis_mansion:data luigi{tags:["running"]} run function luigis_mansion:animations/luigi/reset_pose
+execute if entity @s[tag=!made_error,tag=was_sneaking,tag=!was_swimming,tag=!riding_poltergust] unless data storage luigis_mansion:data luigi{tags:["sneaking"]} run function luigis_mansion:animations/luigi/reset_pose
+execute if entity @s[tag=!made_error,tag=was_walking,tag=!was_swimming,tag=!riding_poltergust] unless data storage luigis_mansion:data luigi{tags:["walking"]} run function luigis_mansion:animations/luigi/reset_pose
+execute if entity @s[tag=!made_error,tag=was_running,tag=!was_swimming,tag=!riding_poltergust] unless data storage luigis_mansion:data luigi{tags:["running"]} run function luigis_mansion:animations/luigi/reset_pose
 execute if entity @s[tag=was_swimming] unless data storage luigis_mansion:data luigi{tags:["swimming"]} run function luigis_mansion:animations/luigi/reset_pose
 execute if entity @s[tag=was_looking_at_map] unless data storage luigis_mansion:data luigi{tags:["looking_at_map"]} run function luigis_mansion:animations/luigi/reset_pose
 execute if entity @s[tag=was_cold_room_idle] unless data storage luigis_mansion:data luigi{tags:["cold_room_idle"]} run function luigis_mansion:animations/luigi/reset_pose
@@ -15,6 +15,7 @@ execute if entity @s[tag=!was_swimming] if data storage luigis_mansion:data luig
 execute store result score @s KnockbackType run data get storage luigis_mansion:data luigi.animation
 execute unless score @s ScareType = @s KnockbackType run function luigis_mansion:animations/luigi/reset_pose
 data modify entity @s Tags append from storage luigis_mansion:data luigi.tags[]
+tag @s[tag=riding_poltergust] remove sneak_pos
 tag @s[tag=looking_at_map] remove sneak_pos
 execute if entity @s[scores={KnockbackType=..-1}] run function luigis_mansion:animations/luigi/in_knockback
 execute if entity @s[scores={KnockbackType=2..}] run function luigis_mansion:animations/luigi/in_knockback
@@ -71,6 +72,7 @@ tag @s[tag=!flipped_gravity] remove was_flipped
 tag @s[tag=flipped_gravity] remove flipped_gravity
 tag @s[tag=death_animation] remove death_animation
 tag @s[tag=spawn_animation] remove spawn_animation
+tag @s remove riding_poltergust
 tag @s remove dark_room
 tag @s remove flashlight
 tag @s add found_owner
