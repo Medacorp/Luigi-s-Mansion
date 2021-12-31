@@ -44,6 +44,7 @@ scoreboard objectives add GhostGuyCouple dummy
 scoreboard objectives add GrabbedID dummy
 scoreboard objectives add GrabbedShake dummy
 scoreboard objectives add Health dummy
+scoreboard objectives add HealthMusic dummy
 scoreboard objectives add HeartOffset dummy
 scoreboard objectives add HideTime dummy
 scoreboard objectives add HomeRot dummy
@@ -67,6 +68,7 @@ scoreboard objectives add KnockbackX dummy
 scoreboard objectives add KnockbackZ dummy
 scoreboard objectives add LastFloor dummy
 scoreboard objectives add LastHealth dummy
+scoreboard objectives add LastHealthMusic dummy
 scoreboard objectives add LastRoom dummy
 scoreboard objectives add LastTotalDamage dummy
 scoreboard objectives add LightStep dummy
