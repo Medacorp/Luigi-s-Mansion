@@ -1,6 +1,8 @@
-execute if entity @s[tag=!flashlight,tag=had_flashlight_on] run playsound luigis_mansion:item.flashlight.off player @a[tag=same_room] ~ ~ ~ 1
+execute if entity @s[tag=!flashlight,tag=had_flashlight_on,scores={Shrunk=0}] run playsound luigis_mansion:item.flashlight.off player @a[tag=same_room] ~ ~ ~ 1
+execute if entity @s[tag=!flashlight,tag=had_flashlight_on,scores={Shrunk=1..}] run playsound luigis_mansion:item.flashlight.off player @a[tag=same_room] ~ ~ ~ 1 2
 execute unless entity @s[nbt={Inventory:[{Slot:103b}]}] run item replace entity @s[tag=flashlight,tag=!had_flashlight_on] armor.head with minecraft:carved_pumpkin{luigis_mansion:{id:"luigis_mansion:flashlight_vision"},display:{Name:'{"text":""}'},Enchantments:[{id:"minecraft:binding_curse",lvl:1s}]}
-execute if entity @s[tag=flashlight,tag=!had_flashlight_on] run playsound luigis_mansion:item.flashlight.on player @a[tag=same_room] ~ ~ ~ 1
+execute if entity @s[tag=flashlight,tag=!had_flashlight_on,scores={Shrunk=0}] run playsound luigis_mansion:item.flashlight.on player @a[tag=same_room] ~ ~ ~ 1
+execute if entity @s[tag=flashlight,tag=!had_flashlight_on,scores={Shrunk=1..}] run playsound luigis_mansion:item.flashlight.on player @a[tag=same_room] ~ ~ ~ 1 2
 clear @s[tag=!flashlight] minecraft:carved_pumpkin{luigis_mansion:{id:"luigis_mansion:flashlight_vision"}}
 execute if entity @s[tag=flashlight] positioned ~ ~1 ~ positioned ^ ^ ^0.8 if block ~ ~ ~ #luigis_mansion:flashlight_path run summon minecraft:marker ~ ~ ~ {Tags:["flashlight","new"]}
 execute if entity @s[tag=flashlight] positioned ~ ~1 ~ run teleport @e[type=minecraft:marker,tag=flashlight,tag=new,limit=1] ~ ~ ~ ~ ~

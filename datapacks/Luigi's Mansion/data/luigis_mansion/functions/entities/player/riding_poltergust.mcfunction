@@ -9,3 +9,7 @@ scoreboard players operation @s SlipX -= @s PosX
 scoreboard players operation @s SlipZ -= @s PosZ
 scoreboard players reset #temp SlipX
 scoreboard players reset #temp SlipZ
+scoreboard players set @s[tag=x_stop] SlipX 0
+scoreboard players set @s[tag=z_stop] SlipZ 0
+tag @s remove x_stop
+tag @s remove z_stop

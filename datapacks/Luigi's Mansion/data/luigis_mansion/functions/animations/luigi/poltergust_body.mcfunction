@@ -25,6 +25,7 @@ data modify entity @s[tag=!riding_poltergust,tag=!was_flipped,tag=flipped_gravit
 data modify entity @s[tag=riding_poltergust,tag=!flipped_gravity] Pose.Head set value [-90.0f,-180.0f,0.0f]
 data modify entity @s[tag=riding_poltergust,tag=flipped_gravity] Pose.Head set value [-90.0f,-180.0f,-180.0f]
 
+execute if entity @s[tag=riding_poltergust,tag=!was_riding_poltergust] run tag @a[tag=this_luigi,limit=1] add poltergust_floor_sound
 execute unless data storage luigis_mansion:data luigi.mainhand.tag.luigis_mansion.poltergust_model_data unless data storage luigis_mansion:data luigi.offhand.tag.luigis_mansion.poltergust_model_data run data remove entity @s[tag=!looking_at_map,tag=!riding_poltergust,scores={KnockbackType=0}] ArmorItems[3]
 execute if data storage luigis_mansion:data luigi.mainhand.tag.luigis_mansion.poltergust_model_data run data modify entity @s[tag=!looking_at_map] ArmorItems[3] set value {id:"minecraft:diamond_pickaxe",Count:1b,tag:{Unbreakable:1b,Damage:6,CustomModelData:0}}
 execute if data storage luigis_mansion:data luigi.mainhand.tag.luigis_mansion.poltergust_model_data store result score #temp Time run data get storage luigis_mansion:data luigi.mainhand.tag.luigis_mansion.poltergust_model_data

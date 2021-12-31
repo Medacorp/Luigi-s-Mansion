@@ -67,12 +67,14 @@ tag @s[tag=sneak_pos] remove sneak_pos
 tag @s[tag=looking_at_map] add was_looking_at_map
 tag @s[tag=!looking_at_map] remove was_looking_at_map
 tag @s[tag=looking_at_map] remove looking_at_map
+tag @s[tag=riding_poltergust] add was_riding_poltergust
+tag @s[tag=!riding_poltergust] remove was_riding_poltergust
+tag @s[tag=riding_poltergust] remove riding_poltergust
 tag @s[tag=flipped_gravity] add was_flipped
 tag @s[tag=!flipped_gravity] remove was_flipped
 tag @s[tag=flipped_gravity] remove flipped_gravity
 tag @s[tag=death_animation] remove death_animation
 tag @s[tag=spawn_animation] remove spawn_animation
-tag @s remove riding_poltergust
 tag @s remove dark_room
 tag @s remove flashlight
 tag @s add found_owner
