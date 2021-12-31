@@ -1,6 +1,6 @@
 tag @s[tag=remove_from_existence,tag=cannot_be_removed] remove remove_from_existence
 
-execute if entity @s[scores={Room=-2147483648..}] run function luigis_mansion:main/non_players_in_room
+execute if entity @s[scores={Room=-2147483648..},tag=!captured] run function luigis_mansion:main/non_players_in_room
 
 data merge entity @s[type=minecraft:item] {Invulnerable:1b,Air:0}
 data merge entity @s[type=minecraft:item] {Air:1}

@@ -19,7 +19,6 @@ tag @s[tag=big,scores={VacuumTime=60}] add shadow_death
 tag @s remove disappear
 
 execute at @s[tag=shadow_death] run function luigis_mansion:entities/black_bogmire/vanish
-execute if entity @s[tag=dead] run teleport @s ~ -100 ~
 
 execute if entity @s[scores={VacuumTime=1}] run playsound luigis_mansion:entity.black_bogmire.hurt hostile @a[tag=same_room] ~ ~ ~ 1
 scoreboard players set @s[scores={VacuumTime=1}] Sound 40

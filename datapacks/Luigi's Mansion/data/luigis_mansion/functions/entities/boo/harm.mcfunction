@@ -7,6 +7,7 @@ scoreboard players operation @s Health -= #temp Health
 scoreboard players operation #temp Health = @s Health
 scoreboard players operation #temp LastHealth /= #100 Constants
 scoreboard players operation #temp Health /= #100 Constants
+scoreboard players set @s[scores={Health=..-1}] Health 0
 execute at @s[scores={Health=0}] run playsound luigis_mansion:entity.boo.poltergust_latched_on hostile @a[tag=same_room] ~ ~ ~ 1
 execute unless score #temp LastHealth = #temp Health at @s run playsound luigis_mansion:entity.boo.lose_health hostile @a[tag=same_room] ~ ~ ~ 1
 execute unless score #temp LastHealth = #temp Health at @s run particle minecraft:damage_indicator ~ ~0.6 ~ 0.2 0.2 0.2 0 1

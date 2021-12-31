@@ -3,11 +3,8 @@ execute if entity @s[tag=dying,tag=boo_hurt] run function luigis_mansion:entitie
 
 tag @s remove dark_room
 function #luigis_mansion:room/dark_room
-execute if entity @s[tag=dying,scores={DeathTime=1}] run playsound luigis_mansion:entity.boo.vacuumed hostile @a[tag=same_room] ~ ~ ~ 1
 execute if entity @s[tag=dying,scores={DeathTime=1},tag=loot_at_0] run function luigis_mansion:entities/boo/drop_loot
 execute if entity @s[tag=dead,tag=!warped,tag=!loot_at_0] run function luigis_mansion:entities/boo/drop_loot
-execute if entity @s[tag=dead,tag=!warped] run particle minecraft:dust 0.7 1 1 1 ~-0.1 ~ ~0.1 0.2 0.6 0.2 1 30
-execute if entity @s[tag=dead] run teleport @s ~ -100 ~
 execute if entity @s[tag=!boo_hurt,tag=fleeing,tag=!dying] run function luigis_mansion:entities/boo/hurt
 execute if entity @s[tag=boo_hurt,tag=!dying] run function luigis_mansion:entities/boo/hurt
 execute if entity @s[tag=fleeing,tag=!dying] run function luigis_mansion:entities/boo/flee

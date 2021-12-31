@@ -1,8 +1,4 @@
-execute if entity @s[tag=dead,tag=normal_death] run playsound luigis_mansion:entity.haunted_teddy_bear.vacuumed hostile @a[tag=same_room] ~ ~ ~ 1
-execute if entity @s[tag=dead,tag=element_death] run playsound luigis_mansion:entity.haunted_teddy_bear.element_death hostile @a[tag=same_room] ~ ~ ~ 1
 execute if entity @s[tag=dead] run function luigis_mansion:entities/haunted_teddy_bear/drop_loot
-execute if entity @s[tag=dead] run particle minecraft:dust 0.7 1 1 1 ~-0.1 ~ ~0.1 0.2 0.2 0.2 1 10
-execute if entity @s[tag=dead] run teleport @s ~ -100 ~
 execute if entity @s[tag=dead] run function luigis_mansion:entities/haunted_object/collision
 execute if entity @s[tag=dead] run scoreboard players set @e[tag=chauncey] AnimationProg 0
 execute if entity @s[tag=dead] run tag @e[tag=chauncey] add complain

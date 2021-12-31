@@ -1,8 +1,4 @@
-execute if entity @s[tag=dead,tag=normal_death] run playsound luigis_mansion:entity.purple_bat.vacuumed hostile @a[tag=same_room] ~ ~ ~ 1
-execute if entity @s[tag=dead,tag=element_death] run playsound luigis_mansion:entity.purple_bat.element_death hostile @a[tag=same_room] ~ ~ ~ 1
 execute if entity @s[tag=dead] run function luigis_mansion:entities/purple_bat/drop_loot
-execute if entity @s[tag=dead] run particle minecraft:dust 0.7 1 1 1 ~-0.1 ~ ~0.1 0.2 0.2 0.2 1 10
-execute if entity @s[tag=dead] run teleport @s ~ -100 ~
 
 execute if entity @e[tag=same_room,tag=!spectator,distance=..0.7,limit=1] if entity @s[tag=!dead,tag=!removed_from_existence] run function luigis_mansion:entities/purple_bat/collide
 

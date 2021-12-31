@@ -1,4 +1,3 @@
-execute if entity @s[tag=dead] run playsound luigis_mansion:entity.boolossus.vacuumed hostile @a[tag=same_room] ~ ~ ~ 1
 execute if entity @s[tag=dead] run function luigis_mansion:entities/boolossus/at_death
 
 function #luigis_mansion:entities/boolossus/tick

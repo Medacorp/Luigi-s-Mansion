@@ -1,5 +1,3 @@
-execute if entity @s[tag=dead] run playsound luigis_mansion:entity.spark.vacuumed hostile @a[tag=same_room] ~ ~ ~ 1
-execute if entity @s[tag=dead] run particle minecraft:dust 0.7 1 1 1 ~-0.1 ~ ~0.1 0.2 0.2 0.2 1 10
 execute if entity @s[tag=dead] run function luigis_mansion:entities/spark/drop_loot
 tag @s[tag=dead,tag=!element_death,scores={HurtTime=1..}] add explode
 
@@ -29,6 +27,5 @@ execute if entity @s[tag=explode,tag=visible] run particle minecraft:explosion ~
 execute if entity @s[tag=explode,tag=visible] run playsound minecraft:entity.generic.explode hostile @a[tag=same_room] ~ ~ ~ 2
 tag @s[tag=explode,tag=visible] add dead
 tag @s[tag=explode,tag=!visible] remove explode
-execute if entity @s[tag=dead] run teleport @s ~ -100 ~
 scoreboard players remove @s[scores={Turn=1..},tag=visible] Turn 1
 execute at @s[tag=visible,scores={LightX=-2147483648..}] run function luigis_mansion:other/cast_shadow/1_tall

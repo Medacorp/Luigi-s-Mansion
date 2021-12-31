@@ -19,6 +19,7 @@ execute if entity @s[tag=ice] unless entity @s[scores={SneakTime=1..20}] run fun
 execute if entity @s[tag=fire,scores={SneakTime=1}] run function luigis_mansion:items/poltergust_3000/shoot_fire
 execute if entity @s[tag=water,scores={SneakTime=1}] run function luigis_mansion:items/poltergust_3000/shoot_water
 execute if entity @s[tag=ice,scores={SneakTime=1}] run function luigis_mansion:items/poltergust_3000/shoot_ice
+execute as @e[tag=captured,tag=element_death] at @s run function luigis_mansion:items/poltergust_3000/vaporize
 execute unless entity @s[scores={SneakTime=1..20}] unless entity @s[nbt={SelectedItem:{tag:{luigis_mansion:{id:"luigis_mansion:poltergust_3000",element:{type:0b}}}}}] run function luigis_mansion:items/poltergust_3000/reduce_element
 execute if entity @s[scores={SneakTime=1}] unless entity @s[nbt={SelectedItem:{tag:{luigis_mansion:{id:"luigis_mansion:poltergust_3000",element:{type:0b}}}}}] run function luigis_mansion:items/poltergust_3000/reduce_element_shoot
 tag @s[tag=!fire,tag=!water,tag=!ice] add expelling_dust

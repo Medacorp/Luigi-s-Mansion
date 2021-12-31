@@ -1,9 +1,5 @@
-execute if entity @s[tag=dying,tag=normal_death,scores={DeathTime=1}] run playsound luigis_mansion:entity.mirror_ghost.vacuumed hostile @a[tag=same_room] ~ ~ ~ 1
-execute if entity @s[tag=dying,tag=element_death,scores={DeathTime=1}] run playsound luigis_mansion:entity.mirror_ghost.element_death hostile @a[tag=same_room] ~ ~ ~ 1
 execute if entity @s[tag=dying,scores={DeathTime=1}] if data storage luigis_mansion:data current_state.current_data.ghosts.mirror_ghost{loot_at_0:1b} run function luigis_mansion:entities/mirror_ghost/drop_loot
 execute if entity @s[tag=dead] unless data storage luigis_mansion:data current_state.current_data.ghosts.mirror_ghost{loot_at_0:1b} run function luigis_mansion:entities/mirror_ghost/drop_loot
-execute if entity @s[tag=dead] run particle minecraft:dust 0.7 1 1 1 ~-0.1 ~ ~0.1 0.2 0.6 0.2 1 30
-execute if entity @s[tag=dead] run teleport @s ~ -100 ~
 
 execute if entity @s[scores={HurtTime=1},tag=hurt,tag=!fleeing,tag=!dying] run playsound luigis_mansion:entity.mirror_ghost.hurt hostile @a[tag=same_room] ~ ~ ~ 1
 scoreboard players set @s[scores={HurtTime=1},tag=hurt,tag=!fleeing,tag=!dying] Sound 40

@@ -65,10 +65,11 @@ execute at @s[scores={KnockbackTime=1..,KnockbackType=6}] store result entity @e
 execute at @s[scores={KnockbackTime=1..,KnockbackType=6}] store result entity @e[tag=home,limit=1] Rotation[1] float 0.01 run scoreboard players get @s RotX
 execute at @s[scores={KnockbackTime=10..,KnockbackType=6}] unless entity @e[tag=home,limit=1,distance=..0.1] run scoreboard players remove @s KnockbackTime 2
 execute at @s[scores={KnockbackTime=1..,KnockbackType=6}] at @e[tag=home,limit=1] run tp @s ~ ~ ~ ~ ~
+execute at @s[scores={KnockbackTime=80,KnockbackType=6}] anchored eyes run summon minecraft:armor_stand ^ ^ ^ {CustomName:'{"translate":"luigis_mansion:entity.luigi"}',Tags:["luigi_ice"],Invisible:1b,Marker:1b,Pose:{Head:[0.0f,0.0f,0.01f]},ArmorItems:[{},{},{},{id:"minecraft:diamond_pickaxe",Count:1b,tag:{Unbreakable:1b,Damage:4,CustomModelData:47}}]}
+execute at @s[scores={KnockbackTime=8..10,KnockbackType=6}] anchored eyes positioned ^ ^ ^ run tag @e[tag=luigi_ice,distance=..0.1,limit=1] add remove_from_existence
 scoreboard players set @s[scores={KnockbackTime=10..,KnockbackType=6,Invulnerable=6..}] Invulnerable 5
 execute at @s[scores={KnockbackTime=10..,KnockbackType=6}] run effect give @s minecraft:instant_damage 1 0 true
 execute at @s[scores={KnockbackTime=10..,KnockbackType=6}] run scoreboard players set @s ForcedDamage -5
-execute at @s[scores={KnockbackTime=10..,KnockbackType=6}] run particle minecraft:firework ~ ~1 ~ 0.4 0.4 0.4 0 10 normal @a[tag=same_room]
 scoreboard players set @s[scores={KnockbackTime=10,KnockbackType=6}] Invulnerable 70
 execute at @s[scores={KnockbackTime=1..,KnockbackType=6}] run kill @e[tag=home,limit=1]
 
