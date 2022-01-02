@@ -1,1 +1,0 @@
-scoreboard players set #artists_studio Wave 100

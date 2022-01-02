@@ -47,7 +47,7 @@ function luigis_mansion:items/gameboy_horror/map/display/hidden/astral_hall
 function luigis_mansion:items/gameboy_horror/map/display/hidden/observatory
 function luigis_mansion:items/gameboy_horror/map/display/hidden/billiards_room
 function luigis_mansion:items/gameboy_horror/map/display/hidden/projection_room
-function luigis_mansion:items/gameboy_horror/map/display/hidden/twins_room
+function luigis_mansion:items/gameboy_horror/map/display/hidden/the_twins_room
 function luigis_mansion:items/gameboy_horror/map/display/hidden/safari_room
 function luigis_mansion:items/gameboy_horror/map/display/hidden/hallway_16
 function luigis_mansion:items/gameboy_horror/map/display/hidden/hallway_17
@@ -69,7 +69,7 @@ function luigis_mansion:items/gameboy_horror/map/display/hidden/pipe_room
 function luigis_mansion:items/gameboy_horror/map/display/hidden/cold_storage
 function luigis_mansion:items/gameboy_horror/map/display/hidden/sitting_room
 function luigis_mansion:items/gameboy_horror/map/display/hidden/guest_room
-function luigis_mansion:items/gameboy_horror/map/display/hidden/artists_studio
+function luigis_mansion:items/gameboy_horror/map/display/hidden/the_artists_studio
 function luigis_mansion:items/gameboy_horror/map/display/hidden/secret_altar
 function luigis_mansion:items/gameboy_horror/map/display/hidden/door/hallway_1_parlor
 function luigis_mansion:items/gameboy_horror/map/display/hidden/door/parlor_anteroom
@@ -106,7 +106,7 @@ function luigis_mansion:items/gameboy_horror/map/display/hidden/door/hallway_11_
 function luigis_mansion:items/gameboy_horror/map/display/hidden/door/astral_hall_observatory
 function luigis_mansion:items/gameboy_horror/map/display/hidden/door/hallway_5_billiards_room
 function luigis_mansion:items/gameboy_horror/map/display/hidden/door/billiards_room_projection_room
-function luigis_mansion:items/gameboy_horror/map/display/hidden/door/hallway_2_twins_room
+function luigis_mansion:items/gameboy_horror/map/display/hidden/door/hallway_2_the_twins_room
 function luigis_mansion:items/gameboy_horror/map/display/hidden/door/hallway_15_safari_room
 function luigis_mansion:items/gameboy_horror/map/display/hidden/door/safari_room_hallway_16
 function luigis_mansion:items/gameboy_horror/map/display/hidden/door/hallway_17_balcony_2
@@ -123,7 +123,7 @@ function luigis_mansion:items/gameboy_horror/map/display/hidden/door/hallway_21_
 function luigis_mansion:items/gameboy_horror/map/display/hidden/door/hallway_20_cold_storage
 function luigis_mansion:items/gameboy_horror/map/display/hidden/door/hallway_13_sitting_room
 function luigis_mansion:items/gameboy_horror/map/display/hidden/door/sitting_room_guest_room
-function luigis_mansion:items/gameboy_horror/map/display/hidden/door/hallway_17_artists_studio
+function luigis_mansion:items/gameboy_horror/map/display/hidden/door/hallway_17_the_artists_studio
 function luigis_mansion:items/gameboy_horror/map/display/hidden/door/hallway_22_secret_altar
 function luigis_mansion:items/gameboy_horror/map/display/hidden/stairs/foyer
 function luigis_mansion:items/gameboy_horror/map/display/hidden/stairs/hallway_7

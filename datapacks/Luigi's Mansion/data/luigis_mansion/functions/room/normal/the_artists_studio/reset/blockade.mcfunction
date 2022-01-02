@@ -1,0 +1,1 @@
+function luigis_mansion:room/normal/the_artists_studio/remove_blockade

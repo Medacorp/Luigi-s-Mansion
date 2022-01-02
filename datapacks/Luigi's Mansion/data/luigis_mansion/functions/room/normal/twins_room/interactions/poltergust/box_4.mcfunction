@@ -1,1 +1,0 @@
-execute if entity @s[x=747.5,y=20,z=37.5,distance=..0.7] positioned 747 20 37 if block ~ ~ ~ minecraft:chest if entity @e[distance=..0.7,tag=ghost,tag=hidden] run function luigis_mansion:room/normal/twins_room/twin_shake

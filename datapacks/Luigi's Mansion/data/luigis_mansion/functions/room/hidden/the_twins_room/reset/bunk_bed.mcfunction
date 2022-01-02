@@ -1,0 +1,1 @@
+scoreboard players reset #the_twins_room_bunk_bed

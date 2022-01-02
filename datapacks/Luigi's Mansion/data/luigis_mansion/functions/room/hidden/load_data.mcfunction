@@ -13,3 +13,6 @@ scoreboard players set #multiply_hurt Selected 200
 scoreboard players set #multiply_damage Selected 125
 scoreboard players set #can_warp Selected 1
 scoreboard players set #heart_coin_count Selected 1000
+scoreboard players reset * Ticking
+scoreboard players set #underground_lab Ticking 1
+scoreboard players reset * Wave

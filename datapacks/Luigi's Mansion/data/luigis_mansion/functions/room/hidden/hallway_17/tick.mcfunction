@@ -10,4 +10,4 @@ function #luigis_mansion:room/hidden/hallway_17/interactions/room
 function luigis_mansion:room/hidden/hallway_17/ghosts
 
 function luigis_mansion:room/hidden/door/hallway_17_balcony_2
-function luigis_mansion:room/hidden/door/hallway_17_artists_studio
+function luigis_mansion:room/hidden/door/hallway_17_the_artists_studio

@@ -46,7 +46,7 @@ title @s[scores={Room=45}] title {"translate":"luigis_mansion:location.astral_ha
 title @s[scores={Room=46}] title {"translate":"luigis_mansion:location.observatory"}
 title @s[scores={Room=47}] title {"translate":"luigis_mansion:location.billiards_room"}
 title @s[scores={Room=48}] title {"translate":"luigis_mansion:location.projection_room"}
-title @s[scores={Room=49}] title {"translate":"luigis_mansion:location.twins_room"}
+title @s[scores={Room=49}] title {"translate":"luigis_mansion:location.the_twins_room"}
 title @s[scores={Room=50}] title {"translate":"luigis_mansion:location.safari_room"}
 #title @s[scores={Room=51}] title {"translate":"luigis_mansion:location.hallway"}
 #title @s[scores={Room=52}] title {"translate":"luigis_mansion:location.hallway"}
@@ -68,5 +68,5 @@ title @s[scores={Room=67}] title {"translate":"luigis_mansion:location.pipe_room
 title @s[scores={Room=68}] title {"translate":"luigis_mansion:location.cold_storage"}
 title @s[scores={Room=69}] title {"translate":"luigis_mansion:location.sitting_room"}
 title @s[scores={Room=70}] title {"translate":"luigis_mansion:location.guest_room"}
-title @s[scores={Room=71}] title {"translate":"luigis_mansion:location.artists_studio"}
+title @s[scores={Room=71}] title {"translate":"luigis_mansion:location.the_artists_studio"}
 title @s[scores={Room=72}] title {"translate":"luigis_mansion:location.secret_altar"}

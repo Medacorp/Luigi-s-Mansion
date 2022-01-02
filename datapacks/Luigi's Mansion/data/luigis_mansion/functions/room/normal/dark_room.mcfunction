@@ -46,7 +46,7 @@ execute unless data storage luigis_mansion:data current_state.current_data.rooms
 execute unless data storage luigis_mansion:data current_state.current_data.rooms.observatory{cleared:1b} run tag @s[scores={Room=46}] add dark_room
 execute unless data storage luigis_mansion:data current_state.current_data.rooms.billiards_room{cleared:1b} run tag @s[scores={Room=47}] add dark_room
 execute unless data storage luigis_mansion:data current_state.current_data.rooms.projection_room{cleared:1b} run tag @s[scores={Room=48}] add dark_room
-execute unless data storage luigis_mansion:data current_state.current_data.rooms.twins_room{cleared:1b} run tag @s[scores={Room=49}] add dark_room
+execute unless data storage luigis_mansion:data current_state.current_data.rooms.the_twins_room{cleared:1b} run tag @s[scores={Room=49}] add dark_room
 execute unless data storage luigis_mansion:data current_state.current_data.rooms.safari_room{cleared:1b} run tag @s[scores={Room=50}] add dark_room
 execute unless data storage luigis_mansion:data current_state.current_data.rooms.hallway_16{cleared:1b} run tag @s[scores={Room=51}] add dark_room
 execute unless data storage luigis_mansion:data current_state.current_data.rooms.hallway_17{cleared:1b} run tag @s[scores={Room=52}] add dark_room
@@ -68,5 +68,5 @@ execute unless data storage luigis_mansion:data current_state.current_data.rooms
 execute unless data storage luigis_mansion:data current_state.current_data.rooms.cold_storage{cleared:1b} run tag @s[scores={Room=68}] add dark_room
 execute unless data storage luigis_mansion:data current_state.current_data.rooms.sitting_room{cleared:1b} run tag @s[scores={Room=69}] add dark_room
 execute unless data storage luigis_mansion:data current_state.current_data.rooms.guest_room{cleared:1b} run tag @s[scores={Room=70}] add dark_room
-execute unless data storage luigis_mansion:data current_state.current_data.rooms.artists_studio{cleared:1b} run tag @s[scores={Room=71}] add dark_room
+execute unless data storage luigis_mansion:data current_state.current_data.rooms.the_artists_studio{cleared:1b} run tag @s[scores={Room=71}] add dark_room
 execute if entity @a[tag=blackout,limit=1] run tag @s[scores={Room=1..}] add dark_room

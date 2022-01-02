@@ -153,9 +153,9 @@ execute if score #billiards_room Ticking matches 1 unless entity @a[gamemode=!sp
 execute as @a[gamemode=spectator,tag=!already_ticked,distance=0..,scores={HomeX=673..688,HomeY=9..17,HomeZ=30..46}] at @s run function luigis_mansion:room/normal/projection_room/spectator_tick
 execute if entity @a[gamemode=!spectator,x=673,y=11,z=30,dx=15,dy=6,dz=16] run function luigis_mansion:room/normal/projection_room/tick
 execute if score #projection_room Ticking matches 1 unless entity @a[gamemode=!spectator,x=673,y=11,z=30,dx=15,dy=6,dz=16] unless entity @a[gamemode=!spectator,scores={Room=48}] run function luigis_mansion:room/normal/projection_room/not_ticking
-execute as @a[gamemode=spectator,tag=!already_ticked,distance=0..,scores={HomeX=736..750,HomeY=18..26,HomeZ=29..50}] at @s run function luigis_mansion:room/normal/twins_room/spectator_tick
-execute if entity @a[gamemode=!spectator,x=736,y=20,z=29,dx=14,dy=6,dz=21] run function luigis_mansion:room/normal/twins_room/tick
-execute if score #twins_room Ticking matches 1 unless entity @a[gamemode=!spectator,x=736,y=20,z=29,dx=14,dy=6,dz=21] unless entity @a[gamemode=!spectator,scores={Room=49}] run function luigis_mansion:room/normal/twins_room/not_ticking
+execute as @a[gamemode=spectator,tag=!already_ticked,distance=0..,scores={HomeX=736..750,HomeY=18..26,HomeZ=29..50}] at @s run function luigis_mansion:room/normal/the_twins_room/spectator_tick
+execute if entity @a[gamemode=!spectator,x=736,y=20,z=29,dx=14,dy=6,dz=21] run function luigis_mansion:room/normal/the_twins_room/tick
+execute if score #the_twins_room Ticking matches 1 unless entity @a[gamemode=!spectator,x=736,y=20,z=29,dx=14,dy=6,dz=21] unless entity @a[gamemode=!spectator,scores={Room=49}] run function luigis_mansion:room/normal/the_twins_room/not_ticking
 execute as @a[gamemode=spectator,tag=!already_ticked,distance=0..,scores={HomeX=732..746,HomeY=27..35,HomeZ=-59..-34}] at @s run function luigis_mansion:room/normal/safari_room/spectator_tick
 execute if entity @a[gamemode=!spectator,x=732,y=29,z=-59,dx=14,dy=6,dz=25] run function luigis_mansion:room/normal/safari_room/tick
 execute if score #safari_room Ticking matches 1 unless entity @a[gamemode=!spectator,x=732,y=29,z=-59,dx=14,dy=6,dz=25] unless entity @a[gamemode=!spectator,scores={Room=50}] run function luigis_mansion:room/normal/safari_room/not_ticking
@@ -219,9 +219,9 @@ execute if score #sitting_room Ticking matches 1 unless entity @a[gamemode=!spec
 execute as @a[gamemode=spectator,tag=!already_ticked,distance=0..,scores={HomeX=734..748,HomeY=18..26,HomeZ=-63..-42}] at @s run function luigis_mansion:room/normal/guest_room/spectator_tick
 execute if entity @a[gamemode=!spectator,x=734,y=20,z=-63,dx=14,dy=6,dz=21] run function luigis_mansion:room/normal/guest_room/tick
 execute if score #guest_room Ticking matches 1 unless entity @a[gamemode=!spectator,x=734,y=20,z=-63,dx=14,dy=6,dz=21] unless entity @a[gamemode=!spectator,scores={Room=70}] run function luigis_mansion:room/normal/guest_room/not_ticking
-execute as @a[gamemode=spectator,tag=!already_ticked,distance=0..,scores={HomeX=687..703,HomeY=27..35,HomeZ=-80..-55}] at @s run function luigis_mansion:room/normal/artists_studio/spectator_tick
-execute if entity @a[gamemode=!spectator,x=687,y=29,z=-80,dx=16,dy=6,dz=25] run function luigis_mansion:room/normal/artists_studio/tick
-execute if score #artists_studio Ticking matches 1 unless entity @a[gamemode=!spectator,x=687,y=29,z=-80,dx=16,dy=6,dz=25] unless entity @a[gamemode=!spectator,scores={Room=71}] run function luigis_mansion:room/normal/artists_studio/not_ticking
+execute as @a[gamemode=spectator,tag=!already_ticked,distance=0..,scores={HomeX=687..703,HomeY=27..35,HomeZ=-80..-55}] at @s run function luigis_mansion:room/normal/the_artists_studio/spectator_tick
+execute if entity @a[gamemode=!spectator,x=687,y=29,z=-80,dx=16,dy=6,dz=25] run function luigis_mansion:room/normal/the_artists_studio/tick
+execute if score #the_artists_studio Ticking matches 1 unless entity @a[gamemode=!spectator,x=687,y=29,z=-80,dx=16,dy=6,dz=25] unless entity @a[gamemode=!spectator,scores={Room=71}] run function luigis_mansion:room/normal/the_artists_studio/not_ticking
 execute as @a[gamemode=spectator,tag=!already_ticked,distance=0..,scores={HomeX=635..653,HomeY=91..99,HomeZ=-26..-10}] at @s run function luigis_mansion:room/normal/secret_altar/spectator_tick
 execute if entity @a[gamemode=!spectator,x=635,y=93,z=-26,dx=18,dy=6,dz=16] run function luigis_mansion:room/normal/secret_altar/tick
 execute unless entity @a[gamemode=!spectator,x=635,y=93,z=-26,dx=18,dy=6,dz=16] if entity @a[gamemode=!spectator,x=646,y=93,z=-10,dx=4,dy=8,dz=10] run function luigis_mansion:room/normal/secret_altar/tick

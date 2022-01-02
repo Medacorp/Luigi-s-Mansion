@@ -9,3 +9,6 @@ execute unless score #mansion_data_index Selected = #previous_mansion_index Sele
 function #luigis_mansion:room/reset_variable_to_default
 scoreboard players set #can_warp Selected 1
 scoreboard players set #heart_coin_count Selected 200
+scoreboard players reset * Ticking
+scoreboard players set #underground_lab Ticking 1
+scoreboard players reset * Wave

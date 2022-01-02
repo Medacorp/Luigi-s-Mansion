@@ -34,4 +34,18 @@ data modify storage luigis_mansion:data current_state.current_data.boos[{name:"b
 data modify storage luigis_mansion:data current_state.current_data.boos[{name:"boolivia"}] merge value {loot_at_0:0b}
 data modify storage luigis_mansion:data current_state.current_data.boos[{name:"boonita"}] merge value {loot_at_0:0b}
 data modify storage luigis_mansion:data current_state.current_data.boos[{name:"bootique"}] merge value {loot_at_0:0b}
+data modify storage luigis_mansion:data current_state.current_data.room.the_twins_room set from storage luigis_mansion:data current_state.current_data.room.twins_room
+execute if data storage luigis_mansion:data current_state.current_data.obtained_keys{twins_room:1b} run data modify storage luigis_mansion:data current_state.current_data.obtained_keys merge value {the_twins_room:1b}
+execute if data storage luigis_mansion:data current_state.current_data.used_keys{twins_room:1b} run data modify storage luigis_mansion:data current_state.current_data.used_keys merge value {the_twins_room:1b}
+execute if data storage luigis_mansion:data current_state.current_data.money_spawned{twins_room_speedy_spirit:1b} run data modify storage luigis_mansion:data current_state.current_data.money_spawned merge value {the_twins_room_speedy_spirit:1b}
+execute if data storage luigis_mansion:data current_state.current_data.money_spawned{twins_room_lamp:1b} run data modify storage luigis_mansion:data current_state.current_data.money_spawned merge value {the_twins_room_lamp:1b}
+execute if data storage luigis_mansion:data current_state.current_data.money_spawned{the_twins_room_table_1:1b} run data modify storage luigis_mansion:data current_state.current_data.money_spawned merge value {the_twins_room_table_1:1b}
+execute if data storage luigis_mansion:data current_state.current_data.money_spawned{the_twins_room_chest:1b} run data modify storage luigis_mansion:data current_state.current_data.money_spawned merge value {the_twins_room_chest:1b}
+execute store result score #the_twins_room Ticking run scoreboard players get #twins_room Ticking
+execute store result score #the_twins_room Wave run scoreboard players get #twins_room Wave
+data modify storage luigis_mansion:data current_state.current_data.room.the_artists_studio set from storage luigis_mansion:data current_state.current_data.room.artists_studio
+execute if data storage luigis_mansion:data current_state.current_data.obtained_keys{artists_studio:1b} run data modify storage luigis_mansion:data current_state.current_data.obtained_keys merge value {the_artists_studio:1b}
+execute if data storage luigis_mansion:data current_state.current_data.used_keys{artists_studio:1b} run data modify storage luigis_mansion:data current_state.current_data.used_keys merge value {the_artists_studio:1b}
+execute store result score #the_artists_studio Ticking run scoreboard players get #artists_studio Ticking
+execute store result score #the_artists_studio Wave run scoreboard players get #artists_studio Wave
 data modify storage luigis_mansion:data current_state.current_data.data_version set value 2

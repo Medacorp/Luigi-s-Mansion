@@ -47,7 +47,7 @@ execute if score #astral_hall Ticking matches 1 if data storage luigis_mansion:d
 execute if score #observatory Ticking matches 1 if data storage luigis_mansion:data current_state.current_data.rooms.observatory{cleared:1b} run function luigis_mansion:room/normal/observatory/clear
 execute if score #billiards_room Ticking matches 1 if data storage luigis_mansion:data current_state.current_data.rooms.billiards_room{cleared:1b} run function luigis_mansion:room/normal/billiards_room/clear
 execute if score #projection_room Ticking matches 1 if data storage luigis_mansion:data current_state.current_data.rooms.projection_room{cleared:1b} run function luigis_mansion:room/normal/projection_room/clear
-execute if score #twins_room Ticking matches 1 if data storage luigis_mansion:data current_state.current_data.rooms.twins_room{cleared:1b} run function luigis_mansion:room/normal/twins_room/clear
+execute if score #the_twins_room Ticking matches 1 if data storage luigis_mansion:data current_state.current_data.rooms.the_twins_room{cleared:1b} run function luigis_mansion:room/normal/the_twins_room/clear
 execute if score #safari_room Ticking matches 1 if data storage luigis_mansion:data current_state.current_data.rooms.safari_room{cleared:1b} run function luigis_mansion:room/normal/safari_room/clear
 execute if score #hallway_16 Ticking matches 1 if data storage luigis_mansion:data current_state.current_data.rooms.hallway_16{cleared:1b} run function luigis_mansion:room/normal/hallway_16/clear
 execute if score #hallway_17 Ticking matches 1 if data storage luigis_mansion:data current_state.current_data.rooms.hallway_17{cleared:1b} run function luigis_mansion:room/normal/hallway_17/clear
@@ -69,5 +69,5 @@ execute if score #pipe_room Ticking matches 1 if data storage luigis_mansion:dat
 execute if score #cold_storage Ticking matches 1 if data storage luigis_mansion:data current_state.current_data.rooms.cold_storage{cleared:1b} run function luigis_mansion:room/normal/cold_storage/clear
 execute if score #sitting_room Ticking matches 1 if data storage luigis_mansion:data current_state.current_data.rooms.sitting_room{cleared:1b} run function luigis_mansion:room/normal/sitting_room/clear
 execute if score #guest_room Ticking matches 1 if data storage luigis_mansion:data current_state.current_data.rooms.guest_room{cleared:1b} run function luigis_mansion:room/normal/guest_room/clear
-execute if score #artists_studio Ticking matches 1 if data storage luigis_mansion:data current_state.current_data.rooms.artists_studio{cleared:1b} run function luigis_mansion:room/normal/artists_studio/clear
+execute if score #the_artists_studio Ticking matches 1 if data storage luigis_mansion:data current_state.current_data.rooms.the_artists_studio{cleared:1b} run function luigis_mansion:room/normal/the_artists_studio/clear
 execute if score #secret_altar Ticking matches 1 run function luigis_mansion:room/normal/secret_altar/clear

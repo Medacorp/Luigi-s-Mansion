@@ -17,4 +17,4 @@ function luigis_mansion:room/normal/door/hallway_1_hallway_2
 function luigis_mansion:room/normal/door/hallway_2_study
 function luigis_mansion:room/normal/door/hallway_2_master_bedroom
 function luigis_mansion:room/normal/door/hallway_2_nursery
-function luigis_mansion:room/normal/door/hallway_2_twins_room
+function luigis_mansion:room/normal/door/hallway_2_the_twins_room

@@ -1,13 +1,13 @@
 scoreboard players set #freeze_timer Selected 1
 scoreboard players add @s Dialog 1
-execute if entity @s[scores={Dialog=1}] as @a[scores={Room=3},gamemode=!spectator] at @s run playsound luigis_mansion:entity.ghost.laugh music @s ~ ~ ~ 3
+execute if entity @s[scores={Dialog=1}] as @a[scores={Room=3},gamemode=!spectator] at @s run playsound luigis_mansion:entity.ghost.laugh hostile @s ~ ~ ~ 3
 execute if entity @s[scores={Dialog=20}] run stopsound @a[scores={Room=3},gamemode=!spectator] music
 execute if entity @s[scores={Dialog=20}] run playsound luigis_mansion:music.paintings music @a[scores={Room=3},gamemode=!spectator] ~ ~ ~ 1000
 execute if entity @s[scores={Dialog=20}] run scoreboard players set @a[scores={Room=3},gamemode=!spectator] Music 560
 execute if entity @s[scores={Dialog=20}] if score #players Totals matches 1 run tellraw @a[scores={Room=3}] {"translate":"chat.type.text","with":[{"translate":"luigis_mansion:entity.painting","color":"green"},{"translate":"luigis_mansion:dialog.paintings.1"}]}
 execute if entity @s[scores={Dialog=20}] if score #players Totals matches 2.. run tellraw @a[scores={Room=3}] {"translate":"chat.type.text","with":[{"translate":"luigis_mansion:entity.painting","color":"green"},{"translate":"luigis_mansion:dialog.paintings.1.more"}]}
 execute if entity @s[scores={Dialog=100}] run tellraw @a[scores={Room=3}] {"translate":"chat.type.text","with":[{"translate":"luigis_mansion:entity.painting","color":"green"},{"translate":"luigis_mansion:dialog.paintings.2"}]}
-execute if entity @s[scores={Dialog=140}] as @a[scores={Room=3},gamemode=!spectator] at @s run playsound luigis_mansion:entity.ghost.laugh music @s ~ ~ ~ 3
+execute if entity @s[scores={Dialog=140}] as @a[scores={Room=3},gamemode=!spectator] at @s run playsound luigis_mansion:entity.ghost.laugh hostile @s ~ ~ ~ 3
 execute if entity @s[scores={Dialog=180}] if score #players Totals matches 1 run tellraw @a[scores={Room=3}] {"translate":"chat.type.text","with":[{"translate":"luigis_mansion:entity.painting","color":"green"},{"translate":"luigis_mansion:dialog.paintings.3"}]}
 execute if entity @s[scores={Dialog=180}] if score #players Totals matches 2.. run tellraw @a[scores={Room=3}] {"translate":"chat.type.text","with":[{"translate":"luigis_mansion:entity.painting","color":"green"},{"translate":"luigis_mansion:dialog.paintings.3.more"}]}
 execute if entity @s[scores={Dialog=260}] if score #players Totals matches 1 run tellraw @a[scores={Room=3}] {"translate":"chat.type.text","with":[{"translate":"luigis_mansion:entity.painting","color":"green"},{"translate":"luigis_mansion:dialog.paintings.4"}]}

@@ -37,26 +37,27 @@ execute if entity @s[scores={Dialog=1016}] run scoreboard players set @e[tag=thi
 execute if entity @s[scores={Dialog=1016}] if score #players Totals matches 1 run tellraw @a[tag=same_room] {"translate":"chat.type.text","with":[{"translate":"luigis_mansion:entity.e_gadd","color":"green"},{"translate":"luigis_mansion:dialog.the_mansion.8"}]}
 execute if entity @s[scores={Dialog=1016}] if score #players Totals matches 2.. run tellraw @a[tag=same_room] {"translate":"chat.type.text","with":[{"translate":"luigis_mansion:entity.e_gadd","color":"green"},{"translate":"luigis_mansion:dialog.the_mansion.8.more"}]}
 execute if entity @s[scores={Dialog=1016}] run playsound luigis_mansion:entity.e_gadd.talk.hey_hey_suu_tahmentahkeh_oydohroh neutral @a[tag=same_room] ~ ~ ~ 1
-tag @s[scores={Dialog=1304}] add listen
-tag @s[scores={Dialog=1304}] remove nod
-execute if entity @s[scores={Dialog=1304}] run scoreboard players set @e[tag=this_model,tag=e_gadd_head,limit=1] AnimationProg 0
-execute if entity @s[scores={Dialog=1304}] run tellraw @a[tag=same_room] {"translate":"chat.type.text","with":[{"translate":"luigis_mansion:entity.e_gadd","color":"green"},{"translate":"luigis_mansion:dialog.the_mansion.9"}]}
-execute if entity @s[scores={Dialog=1304}] run playsound luigis_mansion:entity.e_gadd.talk.mm_oydohroh neutral @a[tag=same_room] ~ ~ ~ 1
-execute if entity @s[scores={Dialog=1312}] run tellraw @a[tag=same_room] {"translate":"chat.type.text","with":[{"translate":"luigis_mansion:entity.e_gadd","color":"green"},{"translate":"luigis_mansion:dialog.the_mansion.10"}]}
-execute if entity @s[scores={Dialog=1312}] run playsound luigis_mansion:entity.e_gadd.talk.hap_poh_tatta_tatta neutral @a[tag=same_room] ~ ~ ~ 1
-tag @s[scores={Dialog=1384}] remove listen
-tag @s[scores={Dialog=1384}] add shake
-execute if entity @s[scores={Dialog=1384}] run scoreboard players set @e[tag=this_model,tag=e_gadd_head,limit=1] AnimationProg 0
-execute if entity @s[scores={Dialog=1384}] if score #players Totals matches 1 run tellraw @a[tag=same_room] {"translate":"chat.type.text","with":[{"translate":"luigis_mansion:entity.e_gadd","color":"green"},{"translate":"luigis_mansion:dialog.the_mansion.11"}]}
-execute if entity @s[scores={Dialog=1384}] if score #players Totals matches 2.. run tellraw @a[tag=same_room] {"translate":"chat.type.text","with":[{"translate":"luigis_mansion:entity.e_gadd","color":"green"},{"translate":"luigis_mansion:dialog.the_mansion.11.more"}]}
-execute if entity @s[scores={Dialog=1384}] run playsound luigis_mansion:entity.e_gadd.talk.mm_nohjeebeedoggy_ohyah_oydohroh neutral @a[tag=same_room] ~ ~ ~ 1
-tag @s[scores={Dialog=1520}] add nod
-tag @s[scores={Dialog=1520}] remove shake
-execute if entity @s[scores={Dialog=1520}] run scoreboard players set @e[tag=this_model,tag=e_gadd_head,limit=1] AnimationProg 0
-execute if entity @s[scores={Dialog=1520}] if score #players Totals matches 1 run tellraw @a[tag=same_room] {"translate":"chat.type.text","with":[{"translate":"luigis_mansion:entity.e_gadd","color":"green"},{"translate":"luigis_mansion:dialog.the_mansion.12","with":[{"selector":"@p[gamemode=!spectator]"}]}]}
-execute if entity @s[scores={Dialog=1520}] if score #players Totals matches 2.. run tellraw @a[tag=same_room] {"translate":"chat.type.text","with":[{"translate":"luigis_mansion:entity.e_gadd","color":"green"},{"translate":"luigis_mansion:dialog.the_mansion.12.more"}]}
-execute if entity @s[scores={Dialog=1520}] run playsound luigis_mansion:entity.e_gadd.talk.ohdoh_luigi_tahmentahkeh_suku_suku neutral @a[tag=same_room] ~ ~ ~ 1
-execute if entity @s[scores={Dialog=1672}] as @a run function luigis_mansion:room/training_room/warp_to
-execute if entity @s[scores={Dialog=1672}] run data modify storage luigis_mansion:data rooms.underground_lab merge value {cleared:1b}
-execute if entity @s[scores={Dialog=1672}] run advancement grant @a until luigis_mansion:lab/underground_lab
-execute if entity @s[scores={Dialog=1672}] if entity @a[tag=looking_at_map,limit=1] run function luigis_mansion:items/gameboy_horror/map/display/lab/underground_lab
+tag @s[scores={Dialog=1336}] add listen
+tag @s[scores={Dialog=1336}] remove nod
+execute if entity @s[scores={Dialog=1336}] run scoreboard players set @e[tag=this_model,tag=e_gadd_head,limit=1] AnimationProg 0
+execute if entity @s[scores={Dialog=1336}] run tellraw @a[tag=same_room] {"translate":"chat.type.text","with":[{"translate":"luigis_mansion:entity.e_gadd","color":"green"},{"translate":"luigis_mansion:dialog.the_mansion.9"}]}
+execute if entity @s[scores={Dialog=1336}] run playsound luigis_mansion:entity.e_gadd.talk.mm_oydohroh neutral @a[tag=same_room] ~ ~ ~ 1
+execute if entity @s[scores={Dialog=1344}] if score #players Totals matches 1 run tellraw @a[tag=same_room] {"translate":"chat.type.text","with":[{"translate":"luigis_mansion:entity.e_gadd","color":"green"},{"translate":"luigis_mansion:dialog.the_mansion.10"}]}
+execute if entity @s[scores={Dialog=1344}] if score #players Totals matches 2.. run tellraw @a[tag=same_room] {"translate":"chat.type.text","with":[{"translate":"luigis_mansion:entity.e_gadd","color":"green"},{"translate":"luigis_mansion:dialog.the_mansion.10.more"}]}
+execute if entity @s[scores={Dialog=1344}] run playsound luigis_mansion:entity.e_gadd.talk.hap_poh_tatta_tatta neutral @a[tag=same_room] ~ ~ ~ 1
+tag @s[scores={Dialog=1416}] remove listen
+tag @s[scores={Dialog=1416}] add shake
+execute if entity @s[scores={Dialog=1416}] run scoreboard players set @e[tag=this_model,tag=e_gadd_head,limit=1] AnimationProg 0
+execute if entity @s[scores={Dialog=1416}] if score #players Totals matches 1 run tellraw @a[tag=same_room] {"translate":"chat.type.text","with":[{"translate":"luigis_mansion:entity.e_gadd","color":"green"},{"translate":"luigis_mansion:dialog.the_mansion.11"}]}
+execute if entity @s[scores={Dialog=1416}] if score #players Totals matches 2.. run tellraw @a[tag=same_room] {"translate":"chat.type.text","with":[{"translate":"luigis_mansion:entity.e_gadd","color":"green"},{"translate":"luigis_mansion:dialog.the_mansion.11.more"}]}
+execute if entity @s[scores={Dialog=1416}] run playsound luigis_mansion:entity.e_gadd.talk.mm_nohjeebeedoggy_ohyah_oydohroh neutral @a[tag=same_room] ~ ~ ~ 1
+tag @s[scores={Dialog=1552}] add nod
+tag @s[scores={Dialog=1552}] remove shake
+execute if entity @s[scores={Dialog=1552}] run scoreboard players set @e[tag=this_model,tag=e_gadd_head,limit=1] AnimationProg 0
+execute if entity @s[scores={Dialog=1552}] if score #players Totals matches 1 run tellraw @a[tag=same_room] {"translate":"chat.type.text","with":[{"translate":"luigis_mansion:entity.e_gadd","color":"green"},{"translate":"luigis_mansion:dialog.the_mansion.12","with":[{"selector":"@p[gamemode=!spectator]"}]}]}
+execute if entity @s[scores={Dialog=1552}] if score #players Totals matches 2.. run tellraw @a[tag=same_room] {"translate":"chat.type.text","with":[{"translate":"luigis_mansion:entity.e_gadd","color":"green"},{"translate":"luigis_mansion:dialog.the_mansion.12.more"}]}
+execute if entity @s[scores={Dialog=1552}] run playsound luigis_mansion:entity.e_gadd.talk.ohdoh_luigi_tahmentahkeh_suku_suku neutral @a[tag=same_room] ~ ~ ~ 1
+execute if entity @s[scores={Dialog=1712}] as @a run function luigis_mansion:room/training_room/warp_to
+execute if entity @s[scores={Dialog=1712}] run data modify storage luigis_mansion:data rooms.underground_lab merge value {cleared:1b}
+execute if entity @s[scores={Dialog=1712}] run advancement grant @a until luigis_mansion:lab/underground_lab
+execute if entity @s[scores={Dialog=1712}] if entity @a[tag=looking_at_map,limit=1] run function luigis_mansion:items/gameboy_horror/map/display/lab/underground_lab

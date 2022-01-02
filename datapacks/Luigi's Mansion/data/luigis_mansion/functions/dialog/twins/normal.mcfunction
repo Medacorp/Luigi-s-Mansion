@@ -41,7 +41,7 @@ execute if entity @s[scores={Dialog=278}] if entity @a[scores={TwinsChoice=1}] r
 execute if entity @s[scores={Dialog=278}] if entity @a[scores={TwinsChoice=1}] run tag @s add nod
 execute if entity @s[scores={Dialog=278}] if entity @a[scores={TwinsChoice=1}] run scoreboard players set @s AnimationProg 0
 execute if entity @s[scores={Dialog=278}] if entity @a[scores={TwinsChoice=1}] run tellraw @a[tag=same_room] {"translate":"chat.type.text","with":[{"translate":"luigis_mansion:entity.orville","color":"green"},{"translate":"luigis_mansion:dialog.twins.yes.2"}]}
-execute if entity @s[scores={Dialog=278}] if entity @a[scores={TwinsChoice=1}] run scoreboard players set #twins_room Wave 3
+execute if entity @s[scores={Dialog=278}] if entity @a[scores={TwinsChoice=1}] run scoreboard players set #the_twins_room Wave 3
 execute if entity @s[scores={Dialog=278}] if entity @a[scores={TwinsChoice=2}] run tag @s add shake
 execute if entity @s[scores={Dialog=270}] if entity @a[scores={TwinsChoice=2}] run tag @e[tag=henry,limit=1] add shake
 execute if entity @s[scores={Dialog=270}] if entity @a[scores={TwinsChoice=2}] run tellraw @a[tag=same_room] {"translate":"chat.type.text","with":[{"translate":"luigis_mansion:entity.orville","color":"green"},{"translate":"luigis_mansion:dialog.twins.no.1"}]}

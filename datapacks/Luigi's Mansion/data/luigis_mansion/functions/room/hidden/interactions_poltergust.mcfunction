@@ -46,7 +46,7 @@ execute if score #temp Room matches 45 run function #luigis_mansion:room/hidden/
 execute if score #temp Room matches 46 run function #luigis_mansion:room/hidden/observatory/interactions/poltergust
 execute if score #temp Room matches 47 run function #luigis_mansion:room/hidden/billiards_room/interactions/poltergust
 execute if score #temp Room matches 48 run function #luigis_mansion:room/hidden/projection_room/interactions/poltergust
-execute if score #temp Room matches 49 run function #luigis_mansion:room/hidden/twins_room/interactions/poltergust
+execute if score #temp Room matches 49 run function #luigis_mansion:room/hidden/the_twins_room/interactions/poltergust
 execute if score #temp Room matches 50 run function #luigis_mansion:room/hidden/safari_room/interactions/poltergust
 execute if score #temp Room matches 51 run function #luigis_mansion:room/hidden/hallway_16/interactions/poltergust
 execute if score #temp Room matches 52 run function #luigis_mansion:room/hidden/hallway_17/interactions/poltergust
@@ -68,5 +68,5 @@ execute if score #temp Room matches 67 run function #luigis_mansion:room/hidden/
 execute if score #temp Room matches 68 run function #luigis_mansion:room/hidden/cold_storage/interactions/poltergust
 execute if score #temp Room matches 69 run function #luigis_mansion:room/hidden/sitting_room/interactions/poltergust
 execute if score #temp Room matches 70 run function #luigis_mansion:room/hidden/guest_room/interactions/poltergust
-execute if score #temp Room matches 71 run function #luigis_mansion:room/hidden/artists_studio/interactions/poltergust
+execute if score #temp Room matches 71 run function #luigis_mansion:room/hidden/the_artists_studio/interactions/poltergust
 execute if score #temp Room matches 72 run function #luigis_mansion:room/hidden/secret_altar/interactions/poltergust

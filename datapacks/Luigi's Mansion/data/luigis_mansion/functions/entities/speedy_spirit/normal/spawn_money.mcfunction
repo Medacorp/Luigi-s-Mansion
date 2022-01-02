@@ -21,7 +21,7 @@ execute if entity @s[scores={Room=44}] run data modify storage luigis_mansion:da
 execute if entity @s[scores={Room=47}] run function luigis_mansion:entities/speedy_spirit/spawn_money/blue_sapphire
 execute if entity @s[scores={Room=47}] run data modify storage luigis_mansion:data current_state.current_data.money_spawned merge value {billiards_room_speedy_spirit:1b}
 execute if entity @s[scores={Room=49}] run function luigis_mansion:entities/speedy_spirit/spawn_money/bills
-execute if entity @s[scores={Room=49}] run data modify storage luigis_mansion:data current_state.current_data.money_spawned merge value {twins_room_speedy_spirit:1b}
+execute if entity @s[scores={Room=49}] run data modify storage luigis_mansion:data current_state.current_data.money_spawned merge value {the_twins_room_speedy_spirit:1b}
 execute if entity @s[scores={Room=57}] run function luigis_mansion:entities/speedy_spirit/spawn_money/blue_sapphire
 execute if entity @s[scores={Room=57}] run data modify storage luigis_mansion:data current_state.current_data.money_spawned merge value {breaker_room_speedy_spirit:1b}
 execute if entity @s[scores={Room=58}] run function luigis_mansion:entities/speedy_spirit/spawn_money/gold_bars

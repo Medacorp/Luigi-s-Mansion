@@ -1,7 +1,7 @@
 execute if entity @s[scores={Room=7}] run summon minecraft:marker ~ ~ ~ {Tags:["choice","study"]}
 execute if entity @s[scores={Room=7}] run summon minecraft:marker ~ ~ ~ {Tags:["choice","master_bedroom"]}
 execute if entity @s[scores={Room=7}] run summon minecraft:marker ~ ~ ~ {Tags:["choice","nursery"]}
-execute if entity @s[scores={Room=7}] unless entity @s[tag=!area_3,tag=!area_4] run summon minecraft:marker ~ ~ ~ {Tags:["choice","twins_room"]}
+execute if entity @s[scores={Room=7}] unless entity @s[tag=!area_3,tag=!area_4] run summon minecraft:marker ~ ~ ~ {Tags:["choice","the_twins_room"]}
 execute if entity @s[scores={Room=11}] run summon minecraft:marker ~ ~ ~ {Tags:["choice","laundry_room"]}
 execute if entity @s[scores={Room=11}] run summon minecraft:marker ~ ~ ~ {Tags:["choice","hidden_room"]}
 execute if entity @s[scores={Room=11}] run summon minecraft:marker ~ ~ ~ {Tags:["choice","kitchen"]}
@@ -39,7 +39,7 @@ tag @e[type=minecraft:marker,tag=choice,sort=random,limit=1] add selected
 execute if entity @e[type=minecraft:marker,tag=choice,tag=selected,limit=1,tag=study] run scoreboard players set @s Room 8
 execute if entity @e[type=minecraft:marker,tag=choice,tag=selected,limit=1,tag=master_bedroom] run scoreboard players set @s Room 9
 execute if entity @e[type=minecraft:marker,tag=choice,tag=selected,limit=1,tag=nursery] run scoreboard players set @s Room 19
-execute if entity @e[type=minecraft:marker,tag=choice,tag=selected,limit=1,tag=twins_room] run scoreboard players set @s Room 49
+execute if entity @e[type=minecraft:marker,tag=choice,tag=selected,limit=1,tag=the_twins_room] run scoreboard players set @s Room 49
 execute if entity @e[type=minecraft:marker,tag=choice,tag=selected,limit=1,tag=laundry_room] run scoreboard players set @s Room 22
 execute if entity @e[type=minecraft:marker,tag=choice,tag=selected,limit=1,tag=hidden_room] run scoreboard players set @s Room 24
 execute if entity @e[type=minecraft:marker,tag=choice,tag=selected,limit=1,tag=kitchen] run scoreboard players set @s Room 27

@@ -1,0 +1,1 @@
+execute if block 742 20 -19 minecraft:chest unless block 742 20 -19 minecraft:chest{LootTable:"luigis_mansion:search"} run function luigis_mansion:room/hidden/the_twins_room/search_box_5

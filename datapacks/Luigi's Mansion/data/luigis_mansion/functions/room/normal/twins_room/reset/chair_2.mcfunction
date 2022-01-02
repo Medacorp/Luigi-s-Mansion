@@ -1,1 +1,0 @@
-scoreboard players reset #twins_room_chair_2

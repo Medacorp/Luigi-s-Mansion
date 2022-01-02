@@ -65,7 +65,7 @@ execute if score #observatory Ticking matches 1 if data storage luigis_mansion:d
 execute if score #billiards_room Ticking matches 1 if data storage luigis_mansion:data current_state.current_data.rooms.billiards_room{cleared:1b} run particle minecraft:bubble_pop 681.0 16.5 78.0 0.6 0.3 0.6 0 10
 execute if score #projection_room Ticking matches 1 if data storage luigis_mansion:data current_state.current_data.rooms.projection_room{cleared:1b} run particle minecraft:bubble_pop 681 16.5 41 0.3 0.3 0.3 0 10
 execute if score #projection_room Ticking matches 1 if data storage luigis_mansion:data current_state.current_data.rooms.projection_room{cleared:1b} run particle minecraft:bubble_pop 681 16.5 35 0.3 0.3 0.3 0 10
-execute if score #twins_room Ticking matches 1 if data storage luigis_mansion:data current_state.current_data.rooms.twins_room{cleared:1b} run particle minecraft:bubble_pop 743 25.5 40 0.3 0.3 0.3 0 10
+execute if score #the_twins_room Ticking matches 1 if data storage luigis_mansion:data current_state.current_data.rooms.the_twins_room{cleared:1b} run particle minecraft:bubble_pop 743 25.5 40 0.3 0.3 0.3 0 10
 execute if score #safari_room Ticking matches 1 if data storage luigis_mansion:data current_state.current_data.rooms.safari_room{cleared:1b} run particle minecraft:bubble_pop 739 34 -40 0.3 0.3 0.3 0 10
 execute if score #safari_room Ticking matches 1 if data storage luigis_mansion:data current_state.current_data.rooms.safari_room{cleared:1b} run particle minecraft:bubble_pop 739 34 -48 0.3 0.3 0.3 0 10
 #execute if score #hallway_16 Ticking matches 1 if data storage luigis_mansion:data current_state.current_data.rooms.hallway_16{cleared:1b} run No visible lights
@@ -107,7 +107,7 @@ execute if score #pipe_room Ticking matches 1 if data storage luigis_mansion:dat
 execute if score #sitting_room Ticking matches 1 if data storage luigis_mansion:data current_state.current_data.rooms.sitting_room{cleared:1b} run particle minecraft:bubble_pop 741 27 -29 0.9 0.6 0.9 0 10
 execute if score #guest_room Ticking matches 1 if data storage luigis_mansion:data current_state.current_data.rooms.guest_room{cleared:1b} if block 742 21 -52 minecraft:redstone_lamp run particle minecraft:bubble_pop 742.0 21 -52.0 1.2 0.6 1.2 0 10
 execute if score #guest_room Ticking matches 1 if data storage luigis_mansion:data current_state.current_data.rooms.guest_room{cleared:1b} unless block 742 21 -52 minecraft:redstone_lamp run particle minecraft:bubble_pop 742.0 26 -52.0 1.2 0.6 1.2 0 10
-execute if score #artists_studio Ticking matches 1 if data storage luigis_mansion:data current_state.current_data.rooms.artists_studio{cleared:1b} run particle minecraft:bubble_pop 696 34.5 -65 0.3 0.3 0.3 0 10
+execute if score #the_artists_studio Ticking matches 1 if data storage luigis_mansion:data current_state.current_data.rooms.the_artists_studio{cleared:1b} run particle minecraft:bubble_pop 696 34.5 -65 0.3 0.3 0.3 0 10
 execute if score #secret_altar Ticking matches 1 run particle minecraft:bubble_pop 648 99 -18 0.9 0.6 0.9 0 10
 execute if score #secret_altar Ticking matches 1 run particle minecraft:bubble_pop 641 99 -13 0.9 0.6 0.9 0 10
 execute if score #secret_altar Ticking matches 1 run particle minecraft:bubble_pop 641 99 -23 0.9 0.6 0.9 0 10

@@ -21,10 +21,10 @@ execute if entity @s[scores={GBHDialog=600}] as @a[tag=same_room] at @s run play
 execute if entity @s[scores={GBHDialog=712}] if score #players Totals matches 1 run tellraw @a {"translate":"chat.type.text","with":[{"translate":"luigis_mansion:entity.e_gadd","color":"green"},{"translate":"luigis_mansion:dialog.ice_element_medal.7"}]}
 execute if entity @s[scores={GBHDialog=712}] if score #players Totals matches 2.. run tellraw @a {"translate":"chat.type.text","with":[{"translate":"luigis_mansion:entity.e_gadd","color":"green"},{"translate":"luigis_mansion:dialog.ice_element_medal.7.more"}]}
 execute if entity @s[scores={GBHDialog=712}] as @a[tag=same_room] at @s run playsound luigis_mansion:entity.e_gadd.talk.ohyah_ohyahmah_hey_hey_oui neutral @s ~ ~ ~ 1
-execute if entity @s[scores={GBHDialog=904}] if score #players Totals matches 1 run tellraw @a {"translate":"chat.type.text","with":[{"translate":"luigis_mansion:entity.e_gadd","color":"green"},{"translate":"luigis_mansion:dialog.ice_element_medal.8","with":[{"selector":"@p[gamemode=!spectator]"}]}]}
-execute if entity @s[scores={GBHDialog=904}] if score #players Totals matches 2.. run tellraw @a {"translate":"chat.type.text","with":[{"translate":"luigis_mansion:entity.e_gadd","color":"green"},{"translate":"luigis_mansion:dialog.ice_element_medal.8.more"}]}
-execute if entity @s[scores={GBHDialog=904}] as @a[tag=same_room] at @s run playsound luigis_mansion:entity.e_gadd.talk.mah_mah_mah_luigi_oui neutral @s ~ ~ ~ 1
-execute if entity @s[scores={GBHDialog=1112}] as @a run function luigis_mansion:other/music/set/silence
-scoreboard players set @s[scores={GBHDialog=1112}] GBHCall 0
-scoreboard players set @s[scores={GBHDialog=1112}] GBHWait 0
-scoreboard players reset @s[scores={GBHDialog=1112}] GBHDialog
+execute if entity @s[scores={GBHDialog=912}] if score #players Totals matches 1 run tellraw @a {"translate":"chat.type.text","with":[{"translate":"luigis_mansion:entity.e_gadd","color":"green"},{"translate":"luigis_mansion:dialog.ice_element_medal.8","with":[{"selector":"@p[gamemode=!spectator]"}]}]}
+execute if entity @s[scores={GBHDialog=912}] if score #players Totals matches 2.. run tellraw @a {"translate":"chat.type.text","with":[{"translate":"luigis_mansion:entity.e_gadd","color":"green"},{"translate":"luigis_mansion:dialog.ice_element_medal.8.more"}]}
+execute if entity @s[scores={GBHDialog=912}] as @a[tag=same_room] at @s run playsound luigis_mansion:entity.e_gadd.talk.mah_mah_mah_luigi_oui neutral @s ~ ~ ~ 1
+execute if entity @s[scores={GBHDialog=1120}] as @a run function luigis_mansion:other/music/set/silence
+scoreboard players set @s[scores={GBHDialog=1120}] GBHCall 0
+scoreboard players set @s[scores={GBHDialog=1120}] GBHWait 0
+scoreboard players reset @s[scores={GBHDialog=1120}] GBHDialog

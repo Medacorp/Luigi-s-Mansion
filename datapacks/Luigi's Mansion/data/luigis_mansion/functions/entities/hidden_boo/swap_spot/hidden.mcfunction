@@ -24,7 +24,7 @@ execute if entity @s[scores={Room=44}] run function luigis_mansion:entities/hidd
 execute if entity @s[scores={Room=45}] run function luigis_mansion:entities/hidden_boo/swap_spot/hidden/astral_hall
 execute if entity @s[scores={Room=47}] run function luigis_mansion:entities/hidden_boo/swap_spot/hidden/billiards_room
 execute if entity @s[scores={Room=48}] run function luigis_mansion:entities/hidden_boo/swap_spot/hidden/projection_room
-execute if entity @s[scores={Room=49}] run function luigis_mansion:entities/hidden_boo/swap_spot/hidden/twins_room
+execute if entity @s[scores={Room=49}] run function luigis_mansion:entities/hidden_boo/swap_spot/hidden/the_twins_room
 execute if entity @s[scores={Room=50}] run function luigis_mansion:entities/hidden_boo/swap_spot/hidden/safari_room
 execute if entity @s[scores={Room=56}] run function luigis_mansion:entities/hidden_boo/swap_spot/hidden/telephone_room
 execute if entity @s[scores={Room=57}] run function luigis_mansion:entities/hidden_boo/swap_spot/hidden/breaker_room
@@ -36,6 +36,6 @@ execute if entity @s[scores={Room=67}] run function luigis_mansion:entities/hidd
 execute if entity @s[scores={Room=68}] run function luigis_mansion:entities/hidden_boo/swap_spot/hidden/cold_storage
 execute if entity @s[scores={Room=69}] run function luigis_mansion:entities/hidden_boo/swap_spot/hidden/sitting_room
 execute if entity @s[scores={Room=70}] run function luigis_mansion:entities/hidden_boo/swap_spot/hidden/guest_room
-execute if entity @s[scores={Room=71}] run function luigis_mansion:entities/hidden_boo/swap_spot/hidden/artists_studio
+execute if entity @s[scores={Room=71}] run function luigis_mansion:entities/hidden_boo/swap_spot/hidden/the_artists_studio
 execute at @s[tag=caught_by_boo_radar,tag=can_play_sound] run playsound luigis_mansion:entity.boo.hide hostile @a[tag=same_room] ~ ~ ~ 1
 scoreboard players set @s[tag=caught_by_boo_radar] HideTime 600

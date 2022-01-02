@@ -21,7 +21,7 @@ tag @s[scores={ActionTime=40}] remove can_decapitate
 teleport @s[scores={ActionTime=41..60}] ^ ^0.15 ^-0.1
 execute if entity @s[scores={ActionTime=90}] as @a[tag=vacuumed,limit=1,tag=looking_at_map] run function luigis_mansion:items/gameboy_horror/map/close
 execute if entity @s[scores={ActionTime=90}] run effect give @a[tag=vacuumed,limit=1] minecraft:instant_damage 1 0 true
-execute if entity @s[scores={ActionTime=90}] run scoreboard players set @a[tag=vacuumed,limit=1] ForcedDamage 24
+execute if entity @s[scores={ActionTime=90}] run scoreboard players set @a[tag=vacuumed,limit=1] ForcedDamage 9
 data modify entity @s[scores={ActionTime=86}] ArmorItems[3].tag.CustomModelData set value 91
 execute if entity @s[scores={ActionTime=86}] run playsound luigis_mansion:entity.bowser.vacuum_spit hostile @a[tag=same_room] ~ ~ ~ 3
 execute if entity @s[scores={ActionTime=90}] as @a[tag=vacuumed,limit=1] positioned as @s run teleport @s ~ ~2 ~

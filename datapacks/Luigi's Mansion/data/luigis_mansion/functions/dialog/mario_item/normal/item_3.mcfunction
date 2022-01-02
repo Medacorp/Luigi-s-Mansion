@@ -15,9 +15,9 @@ execute if entity @s[scores={Dialog=616}] run scoreboard players set @e[tag=this
 execute if entity @s[scores={Dialog=616}] run tellraw @a[tag=same_room] {"translate":"chat.type.text","with":[{"translate":"luigis_mansion:entity.madame_clairvoya","color":"green"},{"translate":"luigis_mansion:dialog.madame_clairvoya.item_3.2"}]}
 execute if entity @s[scores={Dialog=728}] if score #players Totals matches 1 run tellraw @a[tag=same_room] {"translate":"chat.type.text","with":[{"translate":"luigis_mansion:entity.madame_clairvoya","color":"green"},{"translate":"luigis_mansion:dialog.madame_clairvoya.item_3.3"}]}
 execute if entity @s[scores={Dialog=728}] if score #players Totals matches 2.. run tellraw @a[tag=same_room] {"translate":"chat.type.text","with":[{"translate":"luigis_mansion:entity.madame_clairvoya","color":"green"},{"translate":"luigis_mansion:dialog.madame_clairvoya.item_3.3.more"}]}
-tag @s[scores={Dialog=1088}] add nod
-tag @s[scores={Dialog=1088}] remove explain
-execute if entity @s[scores={Dialog=1088}] run scoreboard players set @e[tag=this_model,tag=madame_clairvoya_head,limit=1] AnimationProg 0
-execute if entity @s[scores={Dialog=1088}] run tellraw @a[tag=same_room] {"translate":"chat.type.text","with":[{"translate":"luigis_mansion:entity.madame_clairvoya","color":"green"},{"translate":"luigis_mansion:dialog.madame_clairvoya.item_3.4"}]}
-tag @s[scores={Dialog=1184}] remove nod
-tag @s[scores={Dialog=1184}] remove talk
+tag @s[scores={Dialog=1096}] add nod
+tag @s[scores={Dialog=1096}] remove explain
+execute if entity @s[scores={Dialog=1096}] run scoreboard players set @e[tag=this_model,tag=madame_clairvoya_head,limit=1] AnimationProg 0
+execute if entity @s[scores={Dialog=1096}] run tellraw @a[tag=same_room] {"translate":"chat.type.text","with":[{"translate":"luigis_mansion:entity.madame_clairvoya","color":"green"},{"translate":"luigis_mansion:dialog.madame_clairvoya.item_3.4"}]}
+tag @s[scores={Dialog=1192}] remove nod
+tag @s[scores={Dialog=1192}] remove talk

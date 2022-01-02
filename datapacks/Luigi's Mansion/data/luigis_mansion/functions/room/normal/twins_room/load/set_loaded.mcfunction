@@ -1,1 +1,0 @@
-scoreboard players set #twins_room Ticking 1

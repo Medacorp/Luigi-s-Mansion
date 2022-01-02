@@ -36,7 +36,7 @@ execute if entity @s[scores={Dialog=706}] if entity @a[scores={Toad4Choice=2}] r
 execute if entity @s[scores={Dialog=706}] if entity @a[scores={Toad4Choice=2}] run scoreboard players set @e[tag=this_model,tag=toad_head,limit=1] AnimationProg 0
 execute if entity @s[scores={Dialog=706}] if entity @a[scores={Toad4Choice=2}] if score #players Totals matches 1 run tellraw @a[tag=same_room] {"translate":"chat.type.text","with":[{"translate":"luigis_mansion:entity.toad","color":"green"},{"translate":"luigis_mansion:dialog.toad_4.no.1"}]}
 execute if entity @s[scores={Dialog=706}] if entity @a[scores={Toad4Choice=2}] if score #players Totals matches 2.. run tellraw @a[tag=same_room] {"translate":"chat.type.text","with":[{"translate":"luigis_mansion:entity.toad","color":"green"},{"translate":"luigis_mansion:dialog.toad_4.no.1"}]}
-execute if entity @s[scores={Dialog=738}] if entity @a[scores={Toad4Choice=2}] run scoreboard players set @s Dialog 874
+execute if entity @s[scores={Dialog=746}] if entity @a[scores={Toad4Choice=2}] run scoreboard players set @s Dialog 874
 execute if entity @s[scores={Dialog=874}] run scoreboard players set @a Toad4Choice 0
 tag @s[scores={Dialog=874}] remove talk
 execute unless entity @e[tag=same_room,tag=!spectator,distance=..7,limit=1] run tag @s remove talk

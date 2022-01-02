@@ -46,7 +46,7 @@ execute if score #astral_hall Ticking matches 1 run function #luigis_mansion:roo
 execute if score #observatory Ticking matches 1 run function #luigis_mansion:room/hidden/observatory/turn_lights/off
 execute if score #billiards_room Ticking matches 1 run function #luigis_mansion:room/hidden/billiards_room/turn_lights/off
 execute if score #projection_room Ticking matches 1 run function #luigis_mansion:room/hidden/projection_room/turn_lights/off
-execute if score #twins_room Ticking matches 1 run function #luigis_mansion:room/hidden/twins_room/turn_lights/off
+execute if score #the_twins_room Ticking matches 1 run function #luigis_mansion:room/hidden/the_twins_room/turn_lights/off
 execute if score #safari_room Ticking matches 1 run function #luigis_mansion:room/hidden/safari_room/turn_lights/off
 execute if score #hallway_16 Ticking matches 1 run function #luigis_mansion:room/hidden/hallway_16/turn_lights/off
 execute if score #hallway_17 Ticking matches 1 run function #luigis_mansion:room/hidden/hallway_17/turn_lights/off
@@ -73,6 +73,6 @@ execute if score #pipe_room Ticking matches 1 run function #luigis_mansion:room/
 execute if score #cold_storage Ticking matches 1 run function #luigis_mansion:room/hidden/cold_storage/turn_lights/off
 execute if score #sitting_room Ticking matches 1 run function #luigis_mansion:room/hidden/sitting_room/turn_lights/off
 execute if score #guest_room Ticking matches 1 run function #luigis_mansion:room/hidden/guest_room/turn_lights/off
-execute if score #artists_studio Ticking matches 1 run function #luigis_mansion:room/hidden/artists_studio/turn_lights/off
+execute if score #the_artists_studio Ticking matches 1 run function #luigis_mansion:room/hidden/the_artists_studio/turn_lights/off
 execute if score #secret_altar Ticking matches 1 run function #luigis_mansion:room/hidden/secret_altar/turn_lights/off
 tag @e[tag=toad] add remove_from_existence
