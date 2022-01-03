@@ -1,0 +1,16 @@
+{
+	"values": [
+		"luigis_mansion:entities/player/damage/gold_coin",
+		"luigis_mansion:entities/player/damage/bill",
+		"luigis_mansion:entities/player/damage/gold_bar",
+		"luigis_mansion:entities/player/damage/blue_sapphire",
+		"luigis_mansion:entities/player/damage/green_emerald",
+		"luigis_mansion:entities/player/damage/red_ruby",
+		"luigis_mansion:entities/player/damage/blue_diamond",
+		"luigis_mansion:entities/player/damage/red_diamond",
+		"luigis_mansion:entities/player/damage/gold_diamond",
+		"luigis_mansion:entities/player/damage/small_pearl",
+		"luigis_mansion:entities/player/damage/medium_pearl",
+		"luigis_mansion:entities/player/damage/big_pearl"
+	]
+}

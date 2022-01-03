@@ -4,4 +4,4 @@ execute if score #temp ActionTime matches 1 run data modify storage luigis_mansi
 execute if score #temp ActionTime matches 0 run data modify storage luigis_mansion:data current_state.new_money_grabbed append from storage luigis_mansion:data current_state.money_grabbed[-1]
 data remove storage luigis_mansion:data current_state.money_grabbed[-1]
 execute if score #temp ActionTime matches 1 run data modify storage luigis_mansion:data current_state.new_money_grabbed append from storage luigis_mansion:data current_state.money_grabbed[]
-execute unless score #temp ActionTime matches 1 if data storage luigis_mansion:data current_state.money_grabbed[-1] run function luigis_mansion:entities/player/get_my_coins_index
+execute unless score #temp ActionTime matches 1 if data storage luigis_mansion:data current_state.money_grabbed[-1] run function luigis_mansion:entities/player/get_money/index

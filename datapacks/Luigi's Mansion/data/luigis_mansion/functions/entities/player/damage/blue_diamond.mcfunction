@@ -1,0 +1,3 @@
+execute if data storage luigis_mansion:data current_state.current_data{drop_item_on_damage:"luigis_mansion:blue_diamond"} run function luigis_mansion:entities/player/damage/blue_diamond/get
+execute if data storage luigis_mansion:data current_state.current_data{drop_item_on_damage:"luigis_mansion:blue_diamond"} if score #temp ActionTime matches 1.. run function luigis_mansion:entities/player/damage/blue_diamond/drop
+execute if data storage luigis_mansion:data current_state.current_data{drop_item_on_damage:"luigis_mansion:blue_diamond"} run function luigis_mansion:entities/player/damage/blue_diamond/reduce

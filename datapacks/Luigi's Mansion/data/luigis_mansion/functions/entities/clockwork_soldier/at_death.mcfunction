@@ -1,5 +1,8 @@
 execute unless data storage luigis_mansion:data current_state.current_data.portrait_ghosts.clockwork_soldiers{loot_at_0:1b} run function luigis_mansion:entities/clockwork_soldier/drop_loot
 execute if entity @s[tag=blue_clockwork_soldier] store result storage luigis_mansion:data current_state.current_data.portrait_ghosts.clockwork_soldiers.blue_health int 1 run scoreboard players set @s Health 0
+execute if entity @s[tag=blue_clockwork_soldier] store result storage luigis_mansion:data current_state.current_data.portrait_ghosts.clockwork_soldiers.blue_top_vacuum_damage int 1 run scoreboard players get @s TopVacuumDamage
 execute if entity @s[tag=green_clockwork_soldier] store result storage luigis_mansion:data current_state.current_data.portrait_ghosts.clockwork_soldiers.green_health int 1 run scoreboard players set @s Health 0
+execute if entity @s[tag=green_clockwork_soldier] store result storage luigis_mansion:data current_state.current_data.portrait_ghosts.clockwork_soldiers.green_top_vacuum_damage int 1 run scoreboard players get @s TopVacuumDamage
 execute if entity @s[tag=pink_clockwork_soldier] store result storage luigis_mansion:data current_state.current_data.portrait_ghosts.clockwork_soldiers.pink_health int 1 run scoreboard players set @s Health 0
+execute if entity @s[tag=pink_clockwork_soldier] store result storage luigis_mansion:data current_state.current_data.portrait_ghosts.clockwork_soldiers.pink_top_vacuum_damage int 1 run scoreboard players get @s TopVacuumDamage
 function #luigis_mansion:entities/clockwork_soldier/at_death

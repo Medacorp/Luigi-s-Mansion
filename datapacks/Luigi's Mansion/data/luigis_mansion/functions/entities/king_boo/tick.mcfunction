@@ -2,7 +2,7 @@ execute if entity @s[tag=dying,tag=boo_death] run function luigis_mansion:entiti
 execute if entity @s[tag=dying,tag=boo_hurt] run function luigis_mansion:entities/ghost/death
 
 execute if entity @s[tag=dying,scores={DeathTime=1}] if data storage luigis_mansion:data current_state.current_data.portrait_ghosts.king_boo{loot_at_0:1b} run function luigis_mansion:entities/king_boo/drop_loot
-execute if entity @s[tag=dead] run function luigis_mansion:entities/king_boo/at_death
+execute if entity @s[tag=captured] run function luigis_mansion:entities/king_boo/at_death
 
 execute if entity @s[tag=!boo_hurt,tag=fleeing,tag=!dying] run function luigis_mansion:entities/king_boo/hurt
 execute if entity @s[tag=boo_hurt,tag=!dying] run function luigis_mansion:entities/king_boo/hurt

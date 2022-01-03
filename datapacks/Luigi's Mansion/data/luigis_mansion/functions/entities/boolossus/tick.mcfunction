@@ -1,4 +1,4 @@
-execute if entity @s[tag=dead] run function luigis_mansion:entities/boolossus/at_death
+execute if entity @s[tag=captured] run function luigis_mansion:entities/boolossus/at_death
 
 function #luigis_mansion:entities/boolossus/tick
 

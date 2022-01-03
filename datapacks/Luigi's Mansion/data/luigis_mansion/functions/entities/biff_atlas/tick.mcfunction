@@ -3,7 +3,7 @@ execute as @e[tag=model_piece,scores={GhostNr=-2147483648..}] if score @s GhostN
 execute as @e[tag=weights] if score @s GhostNr = #temp GhostNr run tag @s add these_weights
 
 execute if entity @s[tag=dying,scores={DeathTime=1}] if data storage luigis_mansion:data current_state.current_data.portrait_ghosts.biff_atlas{loot_at_0:1b} run function luigis_mansion:entities/biff_atlas/drop_loot
-execute if entity @s[tag=dead] run function luigis_mansion:entities/biff_atlas/at_death
+execute if entity @s[tag=captured] run function luigis_mansion:entities/biff_atlas/at_death
 execute if entity @s[tag=vanish] store result storage luigis_mansion:data current_state.current_data.portrait_ghosts.biff_atlas.health int 1 run scoreboard players operation @s LastHealth = @s Health
 execute if entity @s[tag=vanish] store result storage luigis_mansion:data current_state.current_data.portrait_ghosts.biff_atlas.top_vacuum_damage int 1 run scoreboard players get @s TopVacuumDamage
 

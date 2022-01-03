@@ -18,7 +18,7 @@ execute unless score #temp GhostCount matches 1.. if entity @e[tag=ball,distance
 execute if score #temp GhostCount matches 1.. run tag @s add vacuuming_ghost
 execute if entity @s[tag=catch_portrait_ghost] as @a[tag=same_room,scores={Room=1..}] unless entity @s[scores={MusicGroup=0,MusicType=19}] unless entity @s[scores={MusicGroup=0,MusicType=27}] unless entity @s[scores={MusicGroup=0,MusicType=29..30}] unless entity @s[scores={MusicGroup=0,MusicType=37}] run function luigis_mansion:other/music/set/catching_portrait_ghost
 execute if entity @s[tag=!catch_portrait_ghost,tag=catch_ghost] as @a[tag=same_room,scores={Room=1..}] unless entity @s[scores={MusicGroup=0,MusicType=19}] unless entity @s[scores={MusicGroup=0,MusicType=27..30}] unless entity @s[scores={MusicGroup=0,MusicType=37}] run function luigis_mansion:other/music/set/catching_ghost
-execute as @e[distance=..1.2,tag=captured,tag=!element_death] at @s run function luigis_mansion:items/poltergust_3000/vacuuming/capture
+execute as @e[distance=..3,tag=captured,tag=!element_death] at @s run function luigis_mansion:items/poltergust_3000/vacuuming/capture
 scoreboard players reset #temp GhostCount
 scoreboard players reset #temp Room
 scoreboard players reset #temp ID
@@ -28,12 +28,12 @@ tag @s remove expelling_fire
 tag @s remove expelling_water
 tag @s remove expelling_ice
 scoreboard players set @s[tag=!made_error] Pull 0
-execute if entity @s[scores={DamagePitch=1,DamagePitchTimer=6}] run playsound luigis_mansion:entity.ghost.lose_health hostile @a ~ ~ ~ 1 1
-execute if entity @s[scores={DamagePitch=2,DamagePitchTimer=6}] run playsound luigis_mansion:entity.ghost.lose_health hostile @a ~ ~ ~ 1 1.2
-execute if entity @s[scores={DamagePitch=3,DamagePitchTimer=6}] run playsound luigis_mansion:entity.ghost.lose_health hostile @a ~ ~ ~ 1 1.4
-execute if entity @s[scores={DamagePitch=4,DamagePitchTimer=6}] run playsound luigis_mansion:entity.ghost.lose_health hostile @a ~ ~ ~ 1 1.6
-execute if entity @s[scores={DamagePitch=5,DamagePitchTimer=6}] run playsound luigis_mansion:entity.ghost.lose_health hostile @a ~ ~ ~ 1 1.8
-execute if entity @s[scores={DamagePitch=6..,DamagePitchTimer=6}] run playsound luigis_mansion:entity.ghost.lose_health hostile @a ~ ~ ~ 1 2
+execute if entity @s[scores={DamagePitch=1,DamagePitchTimer=6}] run playsound luigis_mansion:item.poltergust_3000.damage hostile @a ~ ~ ~ 1 1
+execute if entity @s[scores={DamagePitch=2,DamagePitchTimer=6}] run playsound luigis_mansion:item.poltergust_3000.damage hostile @a ~ ~ ~ 1 1.2
+execute if entity @s[scores={DamagePitch=3,DamagePitchTimer=6}] run playsound luigis_mansion:item.poltergust_3000.damage hostile @a ~ ~ ~ 1 1.4
+execute if entity @s[scores={DamagePitch=4,DamagePitchTimer=6}] run playsound luigis_mansion:item.poltergust_3000.damage hostile @a ~ ~ ~ 1 1.6
+execute if entity @s[scores={DamagePitch=5,DamagePitchTimer=6}] run playsound luigis_mansion:item.poltergust_3000.damage hostile @a ~ ~ ~ 1 1.8
+execute if entity @s[scores={DamagePitch=6..,DamagePitchTimer=6}] run playsound luigis_mansion:item.poltergust_3000.damage hostile @a ~ ~ ~ 1 2
 scoreboard players set @s[scores={DamagePitchTimer=0}] DamagePitch 0
 scoreboard players remove @s[scores={DamagePitchTimer=1..}] DamagePitchTimer 1
 tag @s remove me
