@@ -18,6 +18,11 @@ execute if entity @s[tag=poltergust_wall_sound,scores={Shrunk=0}] run playsound 
 execute if entity @s[tag=poltergust_wall_sound,scores={Shrunk=1..}] run playsound luigis_mansion:item.poltergust_3000.hit_wall player @a[tag=same_room] ~ ~ ~ 1 2
 tag @s remove poltergust_floor_sound
 tag @s remove poltergust_wall_sound
+scoreboard players operation #temp ID = @s ID
+tag @s add me
+execute as @e[tag=ghost,scores={KillerID=1..}] if score @s KillerID = #temp ID run tag @a[tag=me,limit=1] add poltergust_selected
+tag @s remove me
+scoreboard players reset #temp ID
 tag @s[tag=!poltergust_malfunction,nbt={SelectedItem:{tag:{luigis_mansion:{id:"luigis_mansion:poltergust_3000"}}}}] add poltergust_selected
 tag @s[tag=!poltergust_selected] remove expelling
 scoreboard players set @s[tag=!poltergust_selected] VacuumErrors 0

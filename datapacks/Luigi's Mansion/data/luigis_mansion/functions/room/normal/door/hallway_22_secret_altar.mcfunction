@@ -37,7 +37,8 @@ execute if score #temp Searched matches -1..0 run setblock 653 93 -34 minecraft:
 execute if score #temp Searched matches -1..0 run setblock 653 94 -34 minecraft:acacia_door[open=false,facing=east,half=upper,hinge=right,powered=true]
 
 execute if score #temp Searched matches 1..2 as @a[x=654.0,y=2,z=-18.0,dx=0,dy=1,dz=0] run teleport @s 652 93 -18
-execute if score #temp Searched matches 1..2 if entity @a[x=653.0,y=93,z=-18.0,dx=0,dy=1,dz=0] if data storage luigis_mansion:data current_state.current_data.rooms.secret_altar{cleared:1b} unless entity @e[x=636.5,y=94,z=-17.5,distance=..0.7,type=minecraft:item_frame,limit=1] run tag @a add return_mario
-execute if score #temp Searched matches 1..2 as @a[x=653.0,y=93,z=-18.0,dx=0,dy=1,dz=0,tag=!return_mario] run teleport @s 655 2 -18
+execute if score #temp Searched matches 1..2 if entity @a[x=653.0,y=93,z=-18.0,dx=0,dy=1,dz=0] if data storage luigis_mansion:data current_state.current_data.rooms.secret_altar{cleared:1b} unless entity @e[x=636.5,y=94,z=-17.5,distance=..0.7,type=minecraft:item_frame,limit=1] unless score #loaded_exterior Selected matches -1 in minecraft:overworld run function luigis_mansion:room/load_exterior/empty
+execute if score #temp Searched matches 1..2 if entity @a[x=653.0,y=93,z=-18.0,dx=0,dy=1,dz=0] if data storage luigis_mansion:data current_state.current_data.rooms.secret_altar{cleared:1b} unless entity @e[x=636.5,y=94,z=-17.5,distance=..0.7,type=minecraft:item_frame,limit=1] as @a run function luigis_mansion:room/ghost_portrificationizer_room/warp_to
+execute if score #temp Searched matches 1..2 as @a[x=653.0,y=93,z=-18.0,dx=0,dy=1,dz=0] if data storage luigis_mansion:data current_state.current_data.rooms.secret_altar{cleared:0b} run teleport @s 655 2 -18
 
 scoreboard players reset #temp Searched

@@ -11,3 +11,5 @@ execute store result score #temp Time run data get storage luigis_mansion:data c
 execute if score #temp Money < #temp Time store result storage luigis_mansion:data current_high_score.lowest_value int 1 run scoreboard players get #temp Money
 data modify storage luigis_mansion:data current_state.high_scores append from storage luigis_mansion:data current_high_score
 data remove storage luigis_mansion:data current_high_score
+scoreboard players reset #temp Time
+scoreboard players reset #temp2 Time

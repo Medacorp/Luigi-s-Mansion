@@ -78,6 +78,7 @@ scoreboard objectives add LightZ dummy
 scoreboard objectives add Loaded dummy
 scoreboard objectives add LoadedChunks dummy
 scoreboard objectives add MansionChoice trigger
+scoreboard objectives add MapZoomTime dummy
 scoreboard objectives add MaxHealth dummy
 scoreboard objectives add MaxHealthTime dummy
 scoreboard objectives add MelodyChoice trigger
@@ -91,6 +92,8 @@ scoreboard objectives add Music dummy
 scoreboard objectives add MusicGroup dummy
 scoreboard objectives add MusicType dummy
 scoreboard objectives add Offline minecraft.custom:minecraft.leave_game
+scoreboard objectives add OpenMapFocus dummy
+scoreboard objectives add OpenMapTime dummy
 scoreboard objectives add OtherX dummy
 scoreboard objectives add OtherY dummy
 scoreboard objectives add OtherZ dummy

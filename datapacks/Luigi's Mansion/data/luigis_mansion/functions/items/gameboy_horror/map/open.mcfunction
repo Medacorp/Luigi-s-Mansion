@@ -13,4 +13,5 @@ execute unless entity @s[scores={Room=0}] if entity @s[tag=!cancel] run playsoun
 execute unless entity @s[scores={Room=0}] at @s[tag=!cancel] run playsound luigis_mansion:item.gameboy_horror.map.open player @s ~ ~ ~ 1
 tag @s remove opening_map
 tag @s remove cancel
+scoreboard players reset @s OpenMapTime
 scoreboard players set @s GBHChoice 0

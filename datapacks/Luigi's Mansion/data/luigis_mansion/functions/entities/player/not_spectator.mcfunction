@@ -1,12 +1,13 @@
 tag @s remove dark_room
 function #luigis_mansion:room/dark_room
 
+scoreboard players remove @s[scores={OpenMapTime=1..}] OpenMapTime 1
+execute if entity @s[scores={OpenMapTime=0}] run function luigis_mansion:items/gameboy_horror/map/open
 execute if entity @s[tag=!looking_at_map,tag=!death_animation,tag=!revive_animation] unless entity @s[scores={KnockbackType=2..}] unless entity @s[scores={ScareType=2..}] run function #luigis_mansion:items
 execute if entity @s[tag=!death_animation,tag=!revive_animation] unless entity @s[scores={KnockbackType=2..}] unless entity @s[scores={ScareType=2..}] run function luigis_mansion:items/gameboy_horror
 execute if entity @s[tag=!death_animation,tag=!revive_animation] unless entity @s[scores={KnockbackType=2..}] unless entity @s[scores={ScareType=2..}] run function luigis_mansion:blocks/gravity_swap
 execute if entity @s[tag=!death_animation,tag=!revive_animation] unless entity @s[scores={ScareType=2..}] run function luigis_mansion:blocks/blockade
 execute if entity @s[tag=warp] run function luigis_mansion:items/gameboy_horror/warp
-execute if entity @s[tag=grabbed] run function luigis_mansion:entities/player/grabbed
 execute if entity @s[tag=riding_poltergust,scores={KnockbackType=0},tag=!looking_at_map,tag=!death_animation,tag=!revive_animation] run function luigis_mansion:entities/player/riding_poltergust
 execute unless entity @s[tag=riding_poltergust,scores={KnockbackType=0},tag=!looking_at_map,tag=!death_animation,tag=!revive_animation] run scoreboard players set @s SlipX 0
 execute unless entity @s[tag=riding_poltergust,scores={KnockbackType=0},tag=!looking_at_map,tag=!death_animation,tag=!revive_animation] run scoreboard players set @s SlipZ 0
@@ -46,16 +47,13 @@ execute if entity @s[scores={Walk=1..},tag=!looking_at_map] run particle minecra
 execute if entity @s[scores={Run=1..},tag=!looking_at_map] run particle minecraft:dust 0.5 0.5 0.5 2 ~ ~0.2 ~ 0 0 0 0 1
 execute if entity @s[scores={Sneak=1..},tag=!looking_at_map] run particle minecraft:dust 0.5 0.5 0.5 0.7 ~ ~0.2 ~ 0 0 0 0 1
 
-execute unless entity @s[scores={Room=-3}] if score #loaded_exterior Selected matches -1 unless score #mansion_type Selected matches -1 run function luigis_mansion:room/ghost_portrificationizer_room/warp_to
-
 execute at @s[scores={LightX=-2147483648..}] unless entity @s[scores={Shrunk=1..}] run function luigis_mansion:other/cast_shadow/2_tall
 execute at @s[scores={LightX=-2147483648..,Shrunk=1..}] run function luigis_mansion:other/cast_shadow/1_tall
 tag @s[tag=!death_animation,tag=!revive_animation] remove spectator
 
 effect give @s minecraft:invisibility 1000000 0 true
-function luigis_mansion:animations/luigi
-
 execute if entity @s[scores={KnockbackTime=1..}] run function luigis_mansion:entities/player/knockback
 execute if entity @s[scores={ScareTime=1..}] run function luigis_mansion:entities/player/scared
+function luigis_mansion:animations/luigi
 execute if entity @s[tag=death_animation] run function luigis_mansion:entities/player/death_animation
 execute if entity @s[tag=revive_animation] run function luigis_mansion:entities/player/revive_animation
