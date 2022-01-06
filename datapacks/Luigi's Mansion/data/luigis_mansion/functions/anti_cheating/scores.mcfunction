@@ -55,6 +55,7 @@ scoreboard objectives add HomeY dummy
 scoreboard objectives add HomeZ dummy
 scoreboard objectives add HurtTime dummy
 scoreboard objectives add ID dummy
+scoreboard objectives add IdleTime dummy
 scoreboard objectives add IncreaseAmount dummy
 scoreboard objectives add Invulnerable dummy
 scoreboard objectives add JarvisChoice trigger

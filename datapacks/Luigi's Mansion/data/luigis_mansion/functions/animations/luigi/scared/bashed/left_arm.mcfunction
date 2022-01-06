@@ -80,17 +80,20 @@ data merge entity @s[scores={ScareTime=51},tag=flipped_gravity] {Pose:{Head:[-18
 execute store result score #temp Time run data get entity @s Pose.Head[0] 1
 execute if entity @s[scores={ScareTime=22..31}] store result entity @s Pose.Head[0] float 1 run scoreboard players add #temp Time 18
 scoreboard players set @s[scores={ScareTime=22}] AnimationProg 0
-scoreboard players add @s[scores={ScareTime=21}] AnimationProg 1
-execute if entity @s[scores={ScareTime=21,AnimationProg=1..2,KnockbackType=-2}] if score #mirrored Selected matches 0 store result entity @s Pose.Head[0] float 1 run scoreboard players add #temp Time 4
-execute if entity @s[scores={ScareTime=21,AnimationProg=3..6,KnockbackType=-2}] if score #mirrored Selected matches 0 store result entity @s Pose.Head[0] float 1 run scoreboard players remove #temp Time 4
-execute if entity @s[scores={ScareTime=21,AnimationProg=7..8,KnockbackType=-2}] if score #mirrored Selected matches 0 store result entity @s Pose.Head[0] float 1 run scoreboard players add #temp Time 4
-execute if entity @s[scores={ScareTime=21,AnimationProg=1..2,KnockbackType=-2}] if score #mirrored Selected matches 1 store result entity @s Pose.Head[0] float 1 run scoreboard players remove #temp Time 4
-execute if entity @s[scores={ScareTime=21,AnimationProg=3..6,KnockbackType=-2}] if score #mirrored Selected matches 1 store result entity @s Pose.Head[0] float 1 run scoreboard players add #temp Time 4
-execute if entity @s[scores={ScareTime=21,AnimationProg=7..8,KnockbackType=-2}] if score #mirrored Selected matches 1 store result entity @s Pose.Head[0] float 1 run scoreboard players remove #temp Time 4
-scoreboard players set @s[scores={ScareTime=21,AnimationProg=8}] AnimationProg 0
+scoreboard players set @s[scores={ScareTime=21},tag=!moved] AnimationProg 0
+data merge entity @s[scores={ScareTime=21},tag=!moved] {Pose:{Head:[0.0f,0.0f,0.01f]}}
+data merge entity @s[scores={ScareTime=21},tag=!moved,tag=flipped_gravity] {Pose:{Head:[0.0f,0.0f,-180.0f]}}
+scoreboard players add @s[scores={ScareTime=21},tag=moved] AnimationProg 1
+execute if entity @s[scores={ScareTime=21,AnimationProg=1..2},tag=moved] if score #mirrored Selected matches 0 store result entity @s Pose.Head[0] float 1 run scoreboard players add #temp Time 4
+execute if entity @s[scores={ScareTime=21,AnimationProg=3..6},tag=moved] if score #mirrored Selected matches 0 store result entity @s Pose.Head[0] float 1 run scoreboard players remove #temp Time 4
+execute if entity @s[scores={ScareTime=21,AnimationProg=7..8},tag=moved] if score #mirrored Selected matches 0 store result entity @s Pose.Head[0] float 1 run scoreboard players add #temp Time 4
+execute if entity @s[scores={ScareTime=21,AnimationProg=1..2},tag=moved] if score #mirrored Selected matches 1 store result entity @s Pose.Head[0] float 1 run scoreboard players remove #temp Time 4
+execute if entity @s[scores={ScareTime=21,AnimationProg=3..6},tag=moved] if score #mirrored Selected matches 1 store result entity @s Pose.Head[0] float 1 run scoreboard players add #temp Time 4
+execute if entity @s[scores={ScareTime=21,AnimationProg=7..8},tag=moved] if score #mirrored Selected matches 1 store result entity @s Pose.Head[0] float 1 run scoreboard players remove #temp Time 4
+scoreboard players set @s[scores={ScareTime=21,AnimationProg=8},tag=moved] AnimationProg 0
 scoreboard players set @s[scores={ScareTime=20}] AnimationProg 0
-data merge entity @s[scores={ScareTime=20}] {Pose:{Head:[-180.0f,0.0f,0.01f]}}
-data merge entity @s[scores={ScareTime=20},tag=flipped_gravity] {Pose:{Head:[-180.0f,0.0f,-180.0f]}}
+data merge entity @s[scores={ScareTime=20}] {Pose:{Head:[0.0f,0.0f,0.01f]}}
+data merge entity @s[scores={ScareTime=20},tag=flipped_gravity] {Pose:{Head:[0.0f,0.0f,-180.0f]}}
 execute if entity @s[scores={ScareTime=11..20}] store result entity @s Pose.Head[0] float 1 run scoreboard players remove #temp Time 2
 execute if entity @s[scores={ScareTime=1..10}] store result entity @s Pose.Head[0] float 1 run scoreboard players add #temp Time 2
 data merge entity @s[scores={ScareTime=1}] {Pose:{Head:[0.0f,0.0f,0.01f]}}

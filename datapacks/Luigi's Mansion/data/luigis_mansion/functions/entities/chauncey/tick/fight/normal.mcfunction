@@ -97,6 +97,8 @@ execute if entity @s[scores={Dialog=802}] run playsound luigis_mansion:entity.ch
 tag @s[scores={Dialog=822}] remove dizzy
 teleport @s[scores={Dialog=822}] 792.0 20 64.0
 scoreboard players set @s[scores={Dialog=822}] Dialog 0
+tag @s[scores={Dialog=1662}] remove left
+execute at @s[scores={Dialog=1662}] run tag @s[z=56.0,dz=7] add left
 teleport @s[scores={Dialog=1662}] 796.0 20 ~
 execute if entity @s[scores={Dialog=1722..1781}] facing entity @e[tag=same_room,tag=!spectator,sort=nearest,limit=1] feet run teleport @s ~ ~ ~ ~ 0
 scoreboard players set @s[scores={Dialog=1722}] AnimationProg 0
@@ -105,7 +107,8 @@ execute if entity @s[scores={Dialog=1722}] run playsound luigis_mansion:entity.c
 execute if entity @s[scores={Dialog=1742}] run playsound luigis_mansion:entity.chauncey.scream hostile @a[tag=same_room] ~ ~ ~ 3
 tag @s[scores={Dialog=1762}] remove scream
 teleport @s[scores={Dialog=1762..1781}] ~ ~-0.1 ~
-teleport @s[scores={Dialog=1782}] ~ ~ ~ -180 0
+teleport @s[scores={Dialog=1782},tag=!left] ~ ~ ~ -180 0
+teleport @s[scores={Dialog=1782},tag=left] ~ ~ ~ 0 0
 tag @s[scores={Dialog=1782}] add bounce
 scoreboard players set @s[scores={Dialog=1782}] PathStep 0
 scoreboard players add @s[scores={Dialog=1783}] PathStep 1
@@ -114,9 +117,12 @@ teleport @s[scores={Dialog=1783,PathStep=11..20}] ^ ^-0.2 ^0.2
 execute at @s[scores={Dialog=1783,PathStep=20}] as @e[distance=..1,tag=gameboy_horror_location] run function luigis_mansion:entities/gameboy_horror_location/bring_player_back
 execute at @s[scores={Dialog=1783,PathStep=20}] run effect give @a[distance=..1,tag=!spectator] minecraft:instant_damage 1 0 true
 execute at @s[scores={Dialog=1783,PathStep=20}] run scoreboard players set @a[distance=..1,tag=!spectator] ForcedDamage 4
-execute at @s[y_rotation=135..-135,scores={Dialog=1783}] unless block ^ ^1 ^2 #luigis_mansion:all_ignore run teleport @s ~ ~ ~ ~90 0
-execute at @s[y_rotation=-135..-45,scores={Dialog=1783}] unless block ^ ^1 ^2 #luigis_mansion:all_ignore run teleport @s ~ ~ ~ ~90 0
-execute at @s[y_rotation=-45..45,scores={Dialog=1783}] unless block ^ ^1 ^2 #luigis_mansion:all_ignore run teleport @s ~ ~ ~ ~90 0
+execute at @s[y_rotation=135..-135,scores={Dialog=1783},tag=!left] unless block ^ ^1 ^2 #luigis_mansion:all_ignore run teleport @s ~ ~ ~ ~90 0
+execute at @s[y_rotation=-135..-45,scores={Dialog=1783},tag=!left] unless block ^ ^1 ^2 #luigis_mansion:all_ignore run teleport @s ~ ~ ~ ~90 0
+execute at @s[y_rotation=-45..45,scores={Dialog=1783},tag=!left] unless block ^ ^1 ^2 #luigis_mansion:all_ignore run teleport @s ~ ~ ~ ~90 0
+execute at @s[y_rotation=135..-135,scores={Dialog=1783},tag=left] unless block ^ ^1 ^2 #luigis_mansion:all_ignore run teleport @s ~ ~ ~ ~-90 0
+execute at @s[y_rotation=-135..-45,scores={Dialog=1783},tag=left] unless block ^ ^1 ^2 #luigis_mansion:all_ignore run teleport @s ~ ~ ~ ~-90 0
+execute at @s[y_rotation=-45..45,scores={Dialog=1783},tag=left] unless block ^ ^1 ^2 #luigis_mansion:all_ignore run teleport @s ~ ~ ~ ~-90 0
 execute at @s[y_rotation=45..135,scores={Dialog=1783}] unless block ^ ^1 ^2 #luigis_mansion:all_ignore run scoreboard players add @s Dialog 1
 scoreboard players set @s[scores={Dialog=1783,PathStep=20}] PathStep 0
 teleport @s[scores={Dialog=1784}] 792.0 20 64.0

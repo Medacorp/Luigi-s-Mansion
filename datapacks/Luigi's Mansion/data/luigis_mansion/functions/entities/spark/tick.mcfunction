@@ -1,5 +1,4 @@
 execute if entity @s[tag=dead] run function luigis_mansion:entities/spark/drop_loot
-tag @s[tag=dead,tag=!element_death,scores={HurtTime=1..}] add explode
 
 execute if entity @e[tag=same_room,tag=!spectator,distance=..0.7,limit=1] if entity @s[tag=visible] run function luigis_mansion:entities/spark/collide
 

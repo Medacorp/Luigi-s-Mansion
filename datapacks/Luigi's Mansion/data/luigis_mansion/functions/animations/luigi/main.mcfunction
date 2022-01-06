@@ -77,4 +77,5 @@ tag @s[tag=death_animation] remove death_animation
 tag @s[tag=spawn_animation] remove spawn_animation
 tag @s remove dark_room
 tag @s remove flashlight
+tag @s remove moved
 tag @s add found_owner

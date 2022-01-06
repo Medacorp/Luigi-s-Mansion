@@ -6,6 +6,7 @@ playsound luigis_mansion:entity.mr_luggs.eat hostile @s[scores={RoomNoise=120}] 
 playsound luigis_mansion:entity.mr_luggs.eat hostile @s[scores={RoomNoise=110}] 705.0 11 -47 1
 playsound luigis_mansion:entity.mr_luggs.eat hostile @s[scores={RoomNoise=100}] 705.0 11 -47 1
 playsound luigis_mansion:entity.mr_luggs.eat hostile @s[scores={RoomNoise=90}] 705.0 11 -47 1
+playsound luigis_mansion:entity.mr_luggs.eat hostile @s[scores={RoomNoise=80}] 705.0 11 -47 1
 playsound luigis_mansion:entity.mr_luggs.hit_table hostile @s[scores={RoomNoise=70}] 705.0 11 -47 1
 playsound luigis_mansion:entity.mr_luggs.hit_table hostile @s[scores={RoomNoise=50}] 705.0 11 -47 1
 playsound luigis_mansion:entity.mr_luggs.hit_table hostile @s[scores={RoomNoise=30}] 705.0 11 -47 1

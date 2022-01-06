@@ -25,13 +25,13 @@ execute if entity @s[tag=swimming,tag=!looking_at_map,tag=!riding_poltergust] ru
 execute at @s[scores={KnockbackType=-3..-2}] run function luigis_mansion:animations/luigi/scared/bashed/right_leg
 execute at @s[scores={KnockbackType=-1}] run function luigis_mansion:animations/luigi/scared/right_leg
 execute at @s[scores={KnockbackType=1}] run function luigis_mansion:animations/luigi/knockback/small/right_leg
-execute at @s[scores={KnockbackType=2}] run function luigis_mansion:animations/luigi/knockback/medium/right_leg
-execute at @s[scores={KnockbackType=3}] run function luigis_mansion:animations/luigi/knockback/large/right_leg
-execute at @s[scores={KnockbackType=4}] run function luigis_mansion:animations/luigi/knockback/burn/right_leg
-execute at @s[scores={KnockbackType=5}] run function luigis_mansion:animations/luigi/knockback/soak/right_leg
-execute at @s[scores={KnockbackType=6}] run function luigis_mansion:animations/luigi/knockback/freeze/right_leg
-execute at @s[scores={KnockbackType=7..8}] run function luigis_mansion:animations/luigi/knockback/grab/right_leg
-execute at @s[scores={KnockbackType=9}] run function luigis_mansion:animations/luigi/knockback/bite/right_leg
+execute at @s[scores={KnockbackType=2..3}] run function luigis_mansion:animations/luigi/knockback/medium/right_leg
+execute at @s[scores={KnockbackType=4}] run function luigis_mansion:animations/luigi/knockback/large/right_leg
+execute at @s[scores={KnockbackType=5}] run function luigis_mansion:animations/luigi/knockback/burn/right_leg
+execute at @s[scores={KnockbackType=6}] run function luigis_mansion:animations/luigi/knockback/soak/right_leg
+execute at @s[scores={KnockbackType=7}] run function luigis_mansion:animations/luigi/knockback/freeze/right_leg
+execute at @s[scores={KnockbackType=8..9}] run function luigis_mansion:animations/luigi/knockback/grab/right_leg
+execute at @s[scores={KnockbackType=10}] run function luigis_mansion:animations/luigi/knockback/bite/right_leg
 
 execute at @s[tag=cold_room_idle] run function luigis_mansion:animations/luigi/idle/cold_room/right_leg
 execute at @s[tag=high_health_idle] run function luigis_mansion:animations/luigi/idle/high_health/right_leg

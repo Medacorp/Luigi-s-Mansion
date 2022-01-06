@@ -16,7 +16,7 @@ execute at @s[tag=spit] run function luigis_mansion:entities/ball/move_forward
 scoreboard players set @s[tag=!spit] Time 0
 scoreboard players set @s[tag=!bounced] Dialog 0
 tag @s[scores={Time=100}] add collision
-execute at @s[tag=chauncey,tag=!vacuumable] run function luigis_mansion:entities/ball/move_forward
+execute at @s[tag=chauncey,tag=!vacuumable] rotated ~ 0 run function luigis_mansion:entities/ball/move_forward
 execute at @s[scores={Move=1..}] run function luigis_mansion:entities/ball/move
 tag @s add me
 tag @e[tag=ball,tag=!me,sort=nearest,distance=..5,limit=1] add target

@@ -11,4 +11,4 @@ execute if data storage luigis_mansion:data current_state.current_data.rooms.nur
 
 function luigis_mansion:room/normal/chauncey_battle/ghosts
 
-tag @e[x=794,y=20,z=56,dx=0,dy=10,dz=15,tag=ball,tag=!spit,y_rotation=0..-180] add collision
+execute as @e[x=792,y=17,z=56,dx=2,dy=13,dz=15,tag=ball,tag=!spit,y_rotation=0..-180] at @s run teleport @s ~ ~ ~ ~-180 ~

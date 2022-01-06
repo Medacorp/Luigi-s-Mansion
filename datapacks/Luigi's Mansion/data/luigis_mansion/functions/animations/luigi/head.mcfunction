@@ -30,15 +30,6 @@ execute if entity @s[scores={RotationDif=-60000..60000}] if entity @s[tag=!looki
 execute unless entity @s[scores={RotationDif=-60000..60000}] if entity @s[tag=!looking_at_map] store result entity @s Rotation[0] float 0.001 run scoreboard players get #temp PlayerRotation
 scoreboard players reset #temp PlayerRotation
 
-tag @s[tag=low_health] add dark_room
-tag @s[tag=cold_room_idle] add dark_room
-tag @s[tag=low_health_idle] add dark_room
-tag @s[tag=high_health_idle] add dark_room
-data modify entity @s[tag=dark_room,nbt={ArmorItems:[{tag:{CustomModelData:18}}]}] ArmorItems[3].tag.CustomModelData set value 20
-data modify entity @s[tag=!dark_room,nbt={ArmorItems:[{tag:{CustomModelData:20}}]}] ArmorItems[3].tag.CustomModelData set value 18
-data modify entity @s[tag=dark_room,nbt={ArmorItems:[{tag:{CustomModelData:22}}]}] ArmorItems[3].tag.CustomModelData set value 24
-data modify entity @s[tag=!dark_room,nbt={ArmorItems:[{tag:{CustomModelData:24}}]}] ArmorItems[3].tag.CustomModelData set value 22
-
 # Look up/down
 execute if entity @s[tag=!looking_at_map,tag=!flipped_gravity] store result score #temp Time run data get entity @a[tag=this_luigi,limit=1] Rotation[1] 1
 execute if entity @s[tag=!looking_at_map,tag=flipped_gravity] store result score #temp Time run data get entity @a[tag=this_luigi,limit=1] Rotation[1] -1
@@ -51,13 +42,13 @@ execute if entity @s[tag=looking_at_map] run function luigis_mansion:animations/
 execute at @s[scores={KnockbackType=-3..-2}] run function luigis_mansion:animations/luigi/scared/bashed/head
 execute at @s[scores={KnockbackType=-1}] run function luigis_mansion:animations/luigi/scared/head
 execute at @s[scores={KnockbackType=1}] run function luigis_mansion:animations/luigi/knockback/small/head
-execute at @s[scores={KnockbackType=2}] run function luigis_mansion:animations/luigi/knockback/medium/head
-execute at @s[scores={KnockbackType=3}] run function luigis_mansion:animations/luigi/knockback/large/head
-execute at @s[scores={KnockbackType=4}] run function luigis_mansion:animations/luigi/knockback/burn/head
-execute at @s[scores={KnockbackType=5}] run function luigis_mansion:animations/luigi/knockback/soak/head
-execute at @s[scores={KnockbackType=6}] run function luigis_mansion:animations/luigi/knockback/freeze/head
-execute at @s[scores={KnockbackType=7..8}] run function luigis_mansion:animations/luigi/knockback/grab/head
-execute at @s[scores={KnockbackType=9}] run function luigis_mansion:animations/luigi/knockback/bite/head
+execute at @s[scores={KnockbackType=2..3}] run function luigis_mansion:animations/luigi/knockback/medium/head
+execute at @s[scores={KnockbackType=4}] run function luigis_mansion:animations/luigi/knockback/large/head
+execute at @s[scores={KnockbackType=5}] run function luigis_mansion:animations/luigi/knockback/burn/head
+execute at @s[scores={KnockbackType=6}] run function luigis_mansion:animations/luigi/knockback/soak/head
+execute at @s[scores={KnockbackType=7}] run function luigis_mansion:animations/luigi/knockback/freeze/head
+execute at @s[scores={KnockbackType=8..9}] run function luigis_mansion:animations/luigi/knockback/grab/head
+execute at @s[scores={KnockbackType=10}] run function luigis_mansion:animations/luigi/knockback/bite/head
 
 execute at @s[tag=cold_room_idle] run function luigis_mansion:animations/luigi/idle/cold_room/head
 execute at @s[tag=high_health_idle] run function luigis_mansion:animations/luigi/idle/high_health/head
@@ -65,3 +56,13 @@ execute at @s[tag=low_health_idle] run function luigis_mansion:animations/luigi/
 
 execute at @s[scores={Pull=10..19,KnockbackType=0}] run function luigis_mansion:animations/luigi/pulled/start/head
 execute at @s[scores={Pull=20..,KnockbackType=0}] run function luigis_mansion:animations/luigi/pulled/head
+
+tag @s[tag=low_health] add dark_room_head
+tag @s[tag=cold_room_idle] add dark_room_head
+tag @s[tag=low_health_idle] add dark_room_head
+tag @s[tag=high_health_idle] add dark_room_head
+execute unless entity @s[scores={KnockbackType=0}] run tag @s add dark_room_head
+execute if data storage luigis_mansion:data luigi.mainhand.tag.luigis_mansion.poltergust_model_data run tag @s add dark_room_head
+execute if entity @s[tag=dark_room] run function luigis_mansion:animations/luigi/idle/head_dark_room
+execute if entity @s[tag=!dark_room] run function luigis_mansion:animations/luigi/idle/head
+tag @s remove dark_room_head

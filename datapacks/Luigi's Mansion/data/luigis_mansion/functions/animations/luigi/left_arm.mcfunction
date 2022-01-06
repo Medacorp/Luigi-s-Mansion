@@ -39,13 +39,13 @@ execute if entity @s[tag=looking_at_map] run function luigis_mansion:animations/
 execute at @s[scores={KnockbackType=-3..-2}] run function luigis_mansion:animations/luigi/scared/bashed/left_arm
 execute at @s[scores={KnockbackType=-1}] run function luigis_mansion:animations/luigi/scared/left_arm
 execute at @s[scores={KnockbackType=1}] run function luigis_mansion:animations/luigi/knockback/small/left_arm
-execute at @s[scores={KnockbackType=2}] run function luigis_mansion:animations/luigi/knockback/medium/left_arm
-execute at @s[scores={KnockbackType=3}] run function luigis_mansion:animations/luigi/knockback/large/left_arm
-execute at @s[scores={KnockbackType=4}] run function luigis_mansion:animations/luigi/knockback/burn/left_arm
-execute at @s[scores={KnockbackType=5}] run function luigis_mansion:animations/luigi/knockback/soak/left_arm
-execute at @s[scores={KnockbackType=6}] run function luigis_mansion:animations/luigi/knockback/freeze/left_arm
-execute at @s[scores={KnockbackType=7..8}] run function luigis_mansion:animations/luigi/knockback/grab/left_arm
-execute at @s[scores={KnockbackType=9}] run function luigis_mansion:animations/luigi/knockback/bite/left_arm
+execute at @s[scores={KnockbackType=2..3}] run function luigis_mansion:animations/luigi/knockback/medium/left_arm
+execute at @s[scores={KnockbackType=4}] run function luigis_mansion:animations/luigi/knockback/large/left_arm
+execute at @s[scores={KnockbackType=5}] run function luigis_mansion:animations/luigi/knockback/burn/left_arm
+execute at @s[scores={KnockbackType=6}] run function luigis_mansion:animations/luigi/knockback/soak/left_arm
+execute at @s[scores={KnockbackType=7}] run function luigis_mansion:animations/luigi/knockback/freeze/left_arm
+execute at @s[scores={KnockbackType=8..9}] run function luigis_mansion:animations/luigi/knockback/grab/left_arm
+execute at @s[scores={KnockbackType=10}] run function luigis_mansion:animations/luigi/knockback/bite/left_arm
 
 execute at @s[tag=cold_room_idle] run function luigis_mansion:animations/luigi/idle/cold_room/left_arm
 execute at @s[tag=high_health_idle] run function luigis_mansion:animations/luigi/idle/high_health/left_arm

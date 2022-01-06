@@ -1,7 +1,7 @@
 execute as @e[distance=..4,tag=gameboy_horror_location] run function luigis_mansion:entities/gameboy_horror_location/bring_player_back
 effect give @a[tag=!spectator,distance=..4] minecraft:instant_damage 1 0 true
 scoreboard players set @a[tag=!spectator,distance=..4] ForcedDamage 4
-execute as @a[tag=!spectator,distance=..0.7] run function luigis_mansion:entities/player/knockback/large
+execute as @a[tag=!spectator,distance=..4] run function luigis_mansion:entities/player/knockback/large
 execute if entity @s[scores={Owner=-2147483648..}] run scoreboard players operation #temp GhostNr = @s Owner
 execute if entity @s[scores={Owner=-2147483648..}] if entity @a[distance=..4,tag=!spectator,limit=1] as @e[tag=!model_piece,tag=ghost] if score @s GhostNr = #temp GhostNr run scoreboard players set @s AnimationProg 0
 execute if entity @s[scores={Owner=-2147483648..}] if entity @a[distance=..4,tag=!spectator,limit=1] as @e[tag=!model_piece,tag=ghost] if score @s GhostNr = #temp GhostNr run tag @s add laugh

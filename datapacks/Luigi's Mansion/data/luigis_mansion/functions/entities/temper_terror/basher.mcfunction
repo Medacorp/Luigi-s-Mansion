@@ -23,7 +23,7 @@ data modify entity @s[scores={ActionTime=41}] HandItems[1].id set value "minecra
 data modify entity @s[scores={ActionTime=41}] CustomNameVisible set value 1b
 execute if entity @s[scores={ActionTime=41}] run summon minecraft:armor_stand ~ ~0.5 ~ {CustomName:'{"translate":"luigis_mansion:message.basher_scare","color":"yellow","bold":true}',Marker:1b,Invisible:1b,NoGravity:1b,CustomNameVisible:1b,Fire:32767s,Tags:["basher_scare"]}
 execute if entity @s[scores={ActionTime=41}] as @e[distance=..5,tag=gameboy_horror_location] run function luigis_mansion:entities/gameboy_horror_location/bring_player_back
-execute if entity @s[scores={ActionTime=41}] as @a[distance=3..5,tag=!spectator] at @s run function luigis_mansion:entities/player/scare
+execute if entity @s[scores={ActionTime=41}] as @a[distance=3..5,tag=!spectator] run function luigis_mansion:entities/player/scare
 execute if entity @s[scores={ActionTime=41}] as @a[distance=..3,tag=!spectator] run function luigis_mansion:entities/player/scare_bashed
 execute if entity @s[scores={ActionTime=41}] run scoreboard players set @a[distance=..5,tag=!spectator] MaxHealth 70
 execute if entity @s[scores={ActionTime=41}] run scoreboard players set @a[distance=..3,tag=!spectator] MaxHealth 50
