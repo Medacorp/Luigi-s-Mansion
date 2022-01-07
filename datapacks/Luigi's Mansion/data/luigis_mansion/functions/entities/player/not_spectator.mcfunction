@@ -25,7 +25,8 @@ execute if entity @s[scores={Health=1..},tag=already_added_to_list] run function
 tag @s[scores={Health=1..}] remove already_added_to_list
 
 function luigis_mansion:entities/player/health_display
-function luigis_mansion:entities/player/give_items
+clear @s[advancements={luigis_mansion:lab/lab=true}] minecraft:diamond_pickaxe{luigis_mansion:{id:"luigis_mansion:contest_reward_map"}}
+kill @e[distance=..3,type=minecraft:item]
 
 execute unless entity @s[scores={Invulnerable=0..}] run scoreboard players set @s Invulnerable 0
 scoreboard players remove @s[scores={Invulnerable=1..}] Invulnerable 1

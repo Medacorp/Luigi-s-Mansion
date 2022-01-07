@@ -2,6 +2,7 @@ tag @s remove scanning_player
 attribute @s[tag=scanning] minecraft:generic.movement_speed base set 0
 attribute @s[tag=!scanning] minecraft:generic.movement_speed base set 0.10000000149011612
 
+execute unless entity @s[scores={Shrunk=1..}] if entity @s[advancements={luigis_mansion:lab/lab=true},nbt=!{Inventory:[{tag:{luigis_mansion:{id:"luigis_mansion:gameboy_horror"}}}]}] run function luigis_mansion:items/gameboy_horror/give
 execute if entity @s[tag=looking_at_map] run function luigis_mansion:items/gameboy_horror/map/tick
 execute if entity @s[scores={UseItem=1},tag=gameboy_horror_selected,tag=looking_at_map] run function luigis_mansion:items/gameboy_horror/map/close
 execute if entity @s[scores={UseItem=1},tag=gameboy_horror_selected,tag=!looking_at_map,tag=!scanning,tag=!grabbed,tag=!tripping] unless entity @s[scores={GBHCall=1..}] run function luigis_mansion:items/gameboy_horror/choice
