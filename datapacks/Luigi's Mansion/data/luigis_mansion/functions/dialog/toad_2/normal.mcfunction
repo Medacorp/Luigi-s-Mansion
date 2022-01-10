@@ -17,8 +17,8 @@ tag @s[scores={Dialog=236}] add explaining
 execute if entity @s[scores={Dialog=236}] run scoreboard players set @e[tag=this_model,tag=toad_head,limit=1] AnimationProg 0
 execute if entity @s[scores={Dialog=236}] run tellraw @a {"translate":"chat.type.text","with":[{"translate":"luigis_mansion:entity.toad","color":"green"},{"translate":"luigis_mansion:dialog.toad_2.4"}]}
 tag @s[scores={Dialog=356}] remove talk
-tag @s[scores={Dialog=356}] remove turning_on_lights
-execute unless entity @a[gamemode=!spectator,distance=..7] run tag @s remove talk
+execute unless entity @e[tag=same_room,tag=!spectator,distance=..7,limit=1] run tag @s remove talk
+tag @s[tag=!talk] remove turning_on_lights
 execute if entity @s[tag=!talk] as @a[tag=same_room] run function luigis_mansion:other/music/set/silence
 execute if entity @s[tag=!talk,tag=explaining] run scoreboard players set @e[tag=this_model,tag=toad_head,limit=1] AnimationProg 0
 execute if entity @s[tag=!talk,scores={Dialog=..215},tag=happy] run scoreboard players set @e[tag=this_model,tag=toad_head,limit=1] AnimationProg 0

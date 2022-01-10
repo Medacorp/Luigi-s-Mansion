@@ -14,6 +14,10 @@ execute if entity @s[scores={Dialog=528}] run data modify storage luigis_mansion
 execute if entity @s[scores={Dialog=528}] run advancement grant @a until luigis_mansion:lab/ghost_portrificationizer_room
 execute if entity @s[scores={Dialog=528}] if entity @a[tag=looking_at_map,limit=1] run function luigis_mansion:items/gameboy_horror/map/display/lab/ghost_portrificationizer_room
 tag @s[scores={Dialog=528}] remove talk
+execute if entity @s[scores={Dialog=530}] if score #players Totals matches 1 run tellraw @a[tag=same_room] {"translate":"chat.type.text","with":[{"translate":"luigis_mansion:entity.e_gadd","color":"green"},{"translate":"luigis_mansion:dialog.ghost_portrificationizer_room.0","with":[{"selector":"@p[gamemode=!spectator]"}]}]}
+execute if entity @s[scores={Dialog=530}] if score #players Totals matches 2.. run tellraw @a[tag=same_room] {"translate":"chat.type.text","with":[{"translate":"luigis_mansion:entity.e_gadd","color":"green"},{"translate":"luigis_mansion:dialog.ghost_portrificationizer_room.0.more"}]}
+execute if entity @s[scores={Dialog=530}] run playsound luigis_mansion:entity.e_gadd.talk.odoh_luigi neutral @a[tag=same_room] ~ ~ ~ 1
+scoreboard players set @s[scores={Dialog=626}] Dialog 0
 execute unless entity @e[tag=same_room,tag=!spectator,distance=..7,limit=1] run tag @s remove talk
 scoreboard players set @s[tag=!talk] Dialog 0
 tag @s[tag=!talk] remove nod
