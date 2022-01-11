@@ -5,7 +5,7 @@ execute if entity @s[tag=dying,tag=element_death,tag=!dialog] run function luigi
 execute if entity @s[tag=dying,tag=element_hurt,tag=!element_death,tag=!dialog] run function luigis_mansion:entities/ghost/death_element
 scoreboard players operation #temp Move = @s Move
 execute if entity @s[tag=!hidden,scores={LightX=-2147483648..}] run function luigis_mansion:other/cast_shadow
-execute if entity @s[tag=!freeze] run function #luigis_mansion:entities/ghosts
+execute if entity @s[tag=!freeze,tag=!captured] run function #luigis_mansion:entities/ghosts
 scoreboard players add @s[scores={StunTime=0},tag=!hidden] SpawnTime 1
 scoreboard players set @s[tag=attack,scores={SpawnTime=21..},tag=!hidden] SpawnTime 20
 scoreboard players set @s[tag=fleeing,scores={SpawnTime=21..},tag=!hidden] SpawnTime 20

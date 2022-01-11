@@ -1,6 +1,6 @@
 scoreboard players set * ChangedMansion
 scoreboard players reset @e ChangedMansion
-function #luigis_mansion:room/remove_forceloaded_chunks
+function #luigis_mansion:mansion_reset
 data modify storage luigis_mansion:data current_state.current_data set value {nothing_loaded:1b}
 scoreboard players set @a Health 100
 gamemode adventure @a[gamemode=spectator]

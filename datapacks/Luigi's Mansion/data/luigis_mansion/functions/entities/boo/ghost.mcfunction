@@ -15,17 +15,17 @@ scoreboard players remove @s[scores={Dialog=1..}] Dialog 1
 tag @s[scores={Dialog=0}] remove frozen
 execute at @s[tag=frozen] run particle minecraft:firework ~ ~1 ~ 0.2 0.2 0.2 0 1
 
-execute if entity @s[scores={DeathTime=1},tag=boo_hurt,tag=!fleeing,tag=!frozen] run playsound luigis_mansion:entity.boo.hurt hostile @a[tag=same_room] ~ ~ ~ 1
-scoreboard players set @s[scores={DeathTime=1},tag=boo_hurt,tag=!fleeing,tag=!frozen] Sound 40
+execute if entity @s[scores={HurtTime=1},tag=boo_hurt,tag=!fleeing,tag=!frozen] run playsound luigis_mansion:entity.boo.hurt hostile @a[tag=same_room] ~ ~ ~ 1
+scoreboard players set @s[scores={HurtTime=1},tag=boo_hurt,tag=!fleeing,tag=!frozen] Sound 40
 execute if entity @s[scores={Sound=0},tag=fleeing,tag=!dying,tag=!frozen] run playsound luigis_mansion:entity.boo.flee hostile @a[tag=same_room] ~ ~ ~ 1
 scoreboard players set @s[scores={Sound=0},tag=fleeing,tag=!dying,tag=!frozen] Sound 40
 
 scoreboard players operation #temp RoomSection = @s RoomSection
 
 execute if entity @a[tag=!spectator,distance=..0.7,limit=1] if entity @s[tag=!dying,tag=!dead,tag=!removed_from_existence,tag=!appear] run function luigis_mansion:entities/boo/collide
-execute if entity @s[tag=!fleeing,tag=!attack,tag=can_attack,tag=!laugh,tag=!taunt,tag=!appear,tag=!frozen] if predicate luigis_mansion:boo_attack_chance run tag @s add attack
+execute if entity @s[tag=!fleeing,tag=!attack,tag=can_attack,tag=!laugh,tag=!taunt,tag=!dying,tag=!dead,tag=!removed_from_existence,tag=!appear,tag=!frozen] if predicate luigis_mansion:boo_attack_chance run tag @s add attack
 tag @s[tag=fleeing] remove attack
-execute if entity @s[tag=!fleeing,tag=attack,tag=!laugh,tag=!taunt,tag=!appear] run function luigis_mansion:entities/boo/attack
+execute if entity @s[tag=!fleeing,tag=attack,tag=!laugh,tag=!taunt,tag=!dying,tag=!dead,tag=!removed_from_existence,tag=!appear] run function luigis_mansion:entities/boo/attack
 
 tag @s[tag=boo_hurt] remove rotated
 tag @s[tag=attack] remove rotated

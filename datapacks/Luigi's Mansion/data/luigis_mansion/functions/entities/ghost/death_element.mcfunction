@@ -21,7 +21,7 @@ scoreboard players reset #temp KillerID
 
 execute at @s[scores={DeathTime=1,Room=1..}] run function luigis_mansion:entities/ghost/capture
 execute at @s[scores={DeathTime=1,Room=-2}] run scoreboard players add #training_room GhostCaught 1
-execute at @s[scores={DeathTime=2}] run tag @s add captured
+execute at @s[scores={DeathTime=1..}] run tag @s add captured
 tag @a[tag=killer,limit=1] add capturing_ghost
 tag @a[tag=killer,limit=1] remove killer
 

@@ -1,5 +1,5 @@
-execute in minecraft:overworld run setblock 27 0 0 minecraft:shulker_box{Items:[{Slot:0b,id:"minecraft:stone",Count:1b,tag:{value:[I;]}}]}
-execute in minecraft:overworld run setblock 26 0 0 minecraft:shulker_box{Items:[{Slot:0b,id:"minecraft:stone",Count:1b,tag:{value:[I;]}}]}
+execute in minecraft:overworld run setblock 27 0 0 minecraft:shulker_box{Items:[{Slot:0b,id:"minecraft:stone",Count:1b,tag:{value:[I;],first_run_only:1b}}]}
+execute in minecraft:overworld run setblock 26 0 0 minecraft:shulker_box{Items:[{Slot:0b,id:"minecraft:stone",Count:1b,tag:{value:[I;],first_run_only:1b}}]}
 execute in minecraft:overworld run data modify block 27 0 0 Items[0].tag.value set from entity @a[tag=killer,limit=1] UUID
 data modify storage luigis_mansion:data current_state.new_ghosts_caught set value []
 data modify storage luigis_mansion:data current_state.ghost_caught set value {uuid:[I;],total:0,caught:{}}

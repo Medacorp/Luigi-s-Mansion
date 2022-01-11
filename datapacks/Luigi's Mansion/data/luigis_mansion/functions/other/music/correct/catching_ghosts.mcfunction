@@ -1,0 +1,1 @@
+execute if entity @s[scores={MusicType=28..29,MusicGroup=0,Shrunk=1..}] if score #players Totals matches 1 run function luigis_mansion:other/music/set/silence

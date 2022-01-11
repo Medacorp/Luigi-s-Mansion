@@ -1,0 +1,5 @@
+execute if data storage luigis_mansion:data current_state.current_data{boo_counter:0} run bossbar set luigis_mansion:boo_counter players
+execute unless data storage luigis_mansion:data current_state.current_data{boo_counter:0} run bossbar set luigis_mansion:boo_counter players @a
+execute unless data storage luigis_mansion:data current_state.current_data{boo_counter:0} run bossbar set luigis_mansion:boo_counter max 50
+execute unless data storage luigis_mansion:data current_state.current_data{boo_counter:0} store result bossbar luigis_mansion:boo_counter value run data get storage luigis_mansion:data current_state.current_data.boo_counter
+execute unless data storage luigis_mansion:data current_state.current_data{boo_counter:0} run bossbar set luigis_mansion:boo_counter name {"translate":"luigis_mansion:message.boo_counter","color":"white","with":[{"nbt":"current_state.current_data.boo_counter","storage":"luigis_mansion:data"},{"text":"50"}]}

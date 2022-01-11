@@ -192,6 +192,9 @@ scoreboard players set #20000 Constants 20000
 
 scoreboard objectives setdisplay list Health
 
+bossbar add luigis_mansion:boo_counter {"translate":"luigis_mansion:message.boo_counter","color":"white","with":["0","0"]}
+bossbar set luigis_mansion:boo_counter color white
+
 execute unless score #loaded_exterior Selected matches -2147483648.. run scoreboard players set #loaded_exterior Selected 0
 execute unless score #mansion_data_index Selected matches -2147483648.. run scoreboard players set #mansion_data_index Selected 0
 execute unless score #mansion_type Selected matches -2147483648.. run scoreboard players set #mansion_type Selected 0
