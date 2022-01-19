@@ -5,7 +5,7 @@ execute if entity @s[scores={Dialog=30}] run summon minecraft:lightning_bolt 691
 execute if entity @s[scores={Dialog=70}] run summon minecraft:lightning_bolt 687 151 8.0
 execute if entity @s[scores={Dialog=70..}] run function luigis_mansion:dialog/blackout/lightning/particles_normal
 execute if entity @s[scores={Dialog=130}] as @e[type=!minecraft:player,limit=1] run function luigis_mansion:dialog/blackout/lightning/reset_normal
-execute if entity @s[scores={Dialog=130}] run tag @a add blackout
+execute if entity @s[scores={Dialog=130}] run data modify storage luigis_mansion:data current_state.current_data.blackout set value 1b
 execute if entity @s[scores={Dialog=190}] run scoreboard players set @a GBHCall 11
 tag @s[scores={Dialog=190}] remove blackout_lightning
 scoreboard players reset @s[scores={Dialog=190}] Dialog

@@ -1,4 +1,4 @@
-tag @a remove blackout
+data modify storage luigis_mansion:data current_state.current_data.blackout set value 0b
 execute if score #foyer Ticking matches 1 if data storage luigis_mansion:data current_state.current_data.rooms.foyer{cleared:1b} run function luigis_mansion:room/normal/foyer/clear
 execute if score #hallway_1 Ticking matches 1 if data storage luigis_mansion:data current_state.current_data.rooms.hallway_1{cleared:1b} run function luigis_mansion:room/normal/hallway_1/clear
 execute if score #parlor Ticking matches 1 if data storage luigis_mansion:data current_state.current_data.rooms.parlor{cleared:1b} run function luigis_mansion:room/normal/parlor/clear

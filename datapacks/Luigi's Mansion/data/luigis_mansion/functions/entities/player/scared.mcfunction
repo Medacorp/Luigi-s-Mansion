@@ -10,10 +10,9 @@ scoreboard players remove @s[scores={ScareType=1}] ScareTime 1
 execute at @s[scores={ScareTime=51,ScareType=2..3,Shrunk=0}] run playsound luigis_mansion:entity.player.scare_bashed player @a[tag=same_room] ~ ~ ~ 1
 execute at @s[scores={ScareTime=51,ScareType=2..3,Shrunk=1..}] run playsound luigis_mansion:entity.player.scare_bashed player @a[tag=same_room] ~ ~ ~ 1 2
 execute at @s[scores={ScareTime=22..,ScareType=2..3}] positioned as @e[type=minecraft:marker,tag=temp,limit=1] run teleport @s ~ ~ ~
-execute at @s[scores={ScareTime=20..21,ScareType=2..3}] run tag @s[tag=!force_moved] remove moved
-execute at @s[scores={ScareTime=21,ScareType=2..3}] unless score @s PosX = @s OtherX run tag @s add moved
-execute at @s[scores={ScareTime=21,ScareType=2..3}] unless score @s PosX = @s OtherX run tag @s add moved
-execute at @s[scores={ScareTime=20..21,ScareType=2..3}] run tag @s remove force_moved
+tag @s[scores={ScareTime=20..21,ScareType=2..3},tag=!force_moved] remove moved
+tag @s[scores={ScareTime=20..21,ScareType=2..3}] remove force_moved
+tag @s[scores={ScareTime=21,ScareType=2}] add moved
 execute at @s[scores={ScareTime=21,ScareType=3}] positioned as @e[type=minecraft:marker,tag=temp,limit=1] run teleport @s ~ ~ ~
 execute at @s[scores={ScareTime=21,ScareType=2}] unless entity @e[type=minecraft:marker,tag=temp,distance=..0.1,limit=1] facing entity @e[type=minecraft:marker,tag=temp,limit=1] feet rotated ~ 0 positioned as @e[type=minecraft:marker,tag=temp,limit=1] run teleport @s ^ ^ ^0.1
 execute at @s[scores={ScareTime=21,ScareType=2}] if entity @e[type=minecraft:marker,tag=temp,distance=..0.1,limit=1] rotated ~ 0 run teleport @s ^ ^ ^-0.1

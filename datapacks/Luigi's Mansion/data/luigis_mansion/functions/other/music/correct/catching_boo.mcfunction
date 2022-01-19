@@ -1,1 +1,1 @@
-execute if data storage luigis_mansion:data current_state.current_data{boos:[{}],items:{boo_radar:1b}} run function luigis_mansion:other/music/set/catching_boo
+execute if data storage luigis_mansion:data current_state.current_data{boos:[{}],obtained_items:{boo_radar:1b}} run function luigis_mansion:other/music/set/catching_boo

@@ -43,4 +43,9 @@ execute if data storage luigis_mansion:data saved_state.mansion_data[{data_index
 data modify storage luigis_mansion:data saved_state.mansion_data[{data_index:0}].rooms.the_artists_studio set from storage luigis_mansion:data saved_state.mansion_data[{data_index:0}].rooms.artists_studio
 execute if data storage luigis_mansion:data saved_state.mansion_data[{data_index:0}].obtained_keys{artists_studio:1b} run data modify storage luigis_mansion:data saved_state.mansion_data[{data_index:0}].obtained_keys merge value {the_artists_studio:1b}
 execute if data storage luigis_mansion:data saved_state.mansion_data[{data_index:0}].used_keys{artists_studio:1b} run data modify storage luigis_mansion:data saved_state.mansion_data[{data_index:0}].used_keys merge value {the_artists_studio:1b}
+execute if data storage luigis_mansion:data saved_state.mansion_data[{data_index:0}].items{boo_radar:1b} run data modify storage luigis_mansion:data saved_state.mansion_data[{data_index:0}].obtained_items merge value {boo_radar:1b}
+data modify storage luigis_mansion:data saved_state.mansion_data[{data_index:0}].blackout set value 0b
+execute if data storage luigis_mansion:data saved_state.mansion_data[{data_index:0}].technical_data{cleared_area_4_blockade:1b} run data modify storage luigis_mansion:data saved_state.mansion_data[{data_index:0}].blackout set value 1b
+execute if data storage luigis_mansion:data saved_state.mansion_data[{data_index:0}].used_keys{hallway_18:1b} run data modify storage luigis_mansion:data saved_state.mansion_data[{data_index:0}].blackout set value 1b
+execute if data storage luigis_mansion:data saved_state.mansion_data[{data_index:0}].rooms.breaker_room{cleared:1b} run data modify storage luigis_mansion:data saved_state.mansion_data[{data_index:0}].blackout set value 0b
 data modify storage luigis_mansion:data saved_state.mansion_data[{data_index:0}].data_version set value 2

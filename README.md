@@ -43,7 +43,7 @@ Add-on is the variable defined as loaded, namespace is the namespace used for fi
 The following groups are predefined, keep them in mind when making your add-ons.
 
 ## Mansions
-Add new ones in `#luigis_mansion:mansion_options` to allow selecting it, `#luigis_mansion:mansion_detect` to tick rooms, `#luigis_mansion:mansion_interaction_detect` to allow searching and scanning furniture, `#luigis_mansion:room/dark_room` to allow the flashight to work in dark rooms, `#luigis_mansion:mansion_forceload_chunks` to allow add-ons to arbitrarily load the mansion's chunks, and `#luigis_mansion:mansion_remove_forceloaded_chunks` for unloading.
+Add new ones in `#luigis_mansion:mansion_options` to allow selecting it, `#luigis_mansion:mansion_detect` to tick rooms, `#luigis_mansion:mansion_interaction_detect` to allow searching and scanning furniture, `#luigis_mansion:room/dark_room` to allow the flashight to work in dark rooms, `#luigis_mansion:mansion_forceload_chunks` to allow add-ons to arbitrarily load the mansion's chunks, and `#luigis_mansion:mansion_reset` for unloading.
 
 If the mansion has a new exterior, add to `#luigis_mansion:mansion_gameboy_horror_scan` to add a scan message for it.
 

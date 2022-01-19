@@ -71,5 +71,5 @@ execute at @s[tag=sit_down] run function luigis_mansion:animations/shivers/sit_d
 execute at @s[tag=burn,tag=!vanish] run function luigis_mansion:animations/shivers/burn
 execute at @s[tag=!burn,tag=!vanish,tag=!look_around,tag=!panic,tag=!run,tag=!sit_down] run function luigis_mansion:animations/shivers/idle
 
-execute if entity @a[tag=blackout,limit=1] run tag @s add remove_from_existence
+execute if data storage luigis_mansion:data current_state.current_data{blackout:1b} run tag @s add remove_from_existence
 execute if data storage luigis_mansion:data current_state.current_data.rooms.butlers_room{cleared:1b} run tag @s add remove_from_existence

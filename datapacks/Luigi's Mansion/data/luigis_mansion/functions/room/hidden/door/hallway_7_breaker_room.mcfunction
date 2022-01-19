@@ -4,8 +4,8 @@ execute if block 713 2 62 minecraft:oak_door[open=true] if block 699 2 62 minecr
 execute if block 699 2 62 minecraft:oak_door[open=true] if block 713 2 62 minecraft:oak_door[open=true] unless score #temp Searched matches 1 run scoreboard players set #temp Searched 2
 
 execute if score #temp Searched matches 1..2 as @a[gamemode=!spectator,distance=..3,x=713.0,y=2,z=62.5] if data storage luigis_mansion:data current_state.current_data.obtained_keys{breaker_room:1b} unless data storage luigis_mansion:data current_state.current_data.used_keys{breaker_room:1b} positioned 713 2 62 run function luigis_mansion:room/hidden/breaker_room/unlock_door
-execute if block 713 2 62 #minecraft:doors[open=true] unless data storage luigis_mansion:data current_state.current_data.used_keys{breaker_room:1b} if entity @a[tag=blackout,limit=1] positioned 713 2 62 run function luigis_mansion:blocks/closed_door
-execute unless data storage luigis_mansion:data current_state.current_data.used_keys{breaker_room:1b} if entity @a[tag=blackout,limit=1] if score #temp Searched matches 1..2 run scoreboard players set #temp Searched -1
+execute if block 713 2 62 #minecraft:doors[open=true] unless data storage luigis_mansion:data current_state.current_data.used_keys{breaker_room:1b} if data storage luigis_mansion:data current_state.current_data{blackout:1b} positioned 713 2 62 run function luigis_mansion:blocks/closed_door
+execute unless data storage luigis_mansion:data current_state.current_data.used_keys{breaker_room:1b} if data storage luigis_mansion:data current_state.current_data{blackout:1b} if score #temp Searched matches 1..2 run scoreboard players set #temp Searched -1
 execute unless entity @a[gamemode=!spectator,distance=..3,x=713.0,y=2,z=62.5] unless entity @a[gamemode=!spectator,distance=..3,x=700.0,y=2,z=62.5] if score #temp Searched matches 1..2 run scoreboard players set #temp Searched 0
 
 execute if score #temp Searched matches 1 run fill 713 2 62 713 3 62 minecraft:air replace #minecraft:doors

@@ -4,7 +4,7 @@ function #luigis_mansion:room/dark_room
 scoreboard players remove @s[scores={OpenMapTime=1..}] OpenMapTime 1
 execute if entity @s[scores={OpenMapTime=0}] run function luigis_mansion:items/gameboy_horror/map/open
 execute if entity @s[tag=!looking_at_map,tag=!death_animation,tag=!revive_animation] unless entity @s[scores={KnockbackType=2..}] unless entity @s[scores={ScareType=2..}] run function #luigis_mansion:items
-execute if entity @s[tag=!death_animation,tag=!revive_animation] unless entity @s[scores={KnockbackType=2..}] unless entity @s[scores={ScareType=2..}] run function luigis_mansion:items/gameboy_horror
+execute if entity @s[tag=!death_animation,tag=!revive_animation] unless entity @s[scores={KnockbackType=2..}] run function luigis_mansion:items/gameboy_horror
 execute if entity @s[tag=!death_animation,tag=!revive_animation] unless entity @s[scores={KnockbackType=2..}] unless entity @s[scores={ScareType=2..}] run function luigis_mansion:blocks/gravity_swap
 execute if entity @s[tag=!death_animation,tag=!revive_animation] unless entity @s[scores={ScareType=2..}] run function luigis_mansion:blocks/blockade
 execute if entity @s[tag=warp] run function luigis_mansion:items/gameboy_horror/warp

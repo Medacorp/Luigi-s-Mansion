@@ -1,2 +1,2 @@
-execute unless score #courtyard Vacuumables matches 1 unless data storage luigis_mansion:data current_state.current_data.rooms.courtyard{cleared:1b} if entity @a[tag=!blackout,limit=1] run function luigis_mansion:room/hidden/courtyard/vacuumable_ghosts
-execute unless score #courtyard Vacuumables matches 1 if entity @a[tag=blackout,limit=1] run function luigis_mansion:room/hidden/courtyard/vacuumable_ghosts
+execute unless score #courtyard Vacuumables matches 1 unless data storage luigis_mansion:data current_state.current_data.rooms.courtyard{cleared:1b} if data storage luigis_mansion:data current_state.current_data{blackout:0b} run function luigis_mansion:room/hidden/courtyard/vacuumable_ghosts
+execute unless score #courtyard Vacuumables matches 1 if data storage luigis_mansion:data current_state.current_data{blackout:1b} run function luigis_mansion:room/hidden/courtyard/vacuumable_ghosts

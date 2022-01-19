@@ -48,4 +48,9 @@ execute if data storage luigis_mansion:data current_state.current_data.obtained_
 execute if data storage luigis_mansion:data current_state.current_data.used_keys{artists_studio:1b} run data modify storage luigis_mansion:data current_state.current_data.used_keys merge value {the_artists_studio:1b}
 execute store result score #the_artists_studio Ticking run scoreboard players get #artists_studio Ticking
 execute store result score #the_artists_studio Wave run scoreboard players get #artists_studio Wave
+execute if data storage luigis_mansion:data current_state.current_data.items{boo_radar:1b} run data modify storage luigis_mansion:data current_state.current_data.obtained_items merge value {boo_radar:1b}
+data modify storage luigis_mansion:data current_state.current_data.blackout set value 0b
+execute if data storage luigis_mansion:data current_state.current_data.technical_data{cleared_area_4_blockade:1b} run data modify storage luigis_mansion:data current_state.current_data.blackout set value 1b
+execute if data storage luigis_mansion:data current_state.current_data.used_keys{hallway_18:1b} run data modify storage luigis_mansion:data current_state.current_data.blackout set value 1b
+execute if data storage luigis_mansion:data current_state.current_data.rooms.breaker_room{cleared:1b} run data modify storage luigis_mansion:data current_state.current_data.blackout set value 0b
 data modify storage luigis_mansion:data current_state.current_data.data_version set value 2

@@ -1,1 +1,1 @@
-execute if entity @a[tag=!blackout] run setblock 688 3 19 minecraft:trapped_chest[facing=north]{LootTable:"luigis_mansion:search"}
+execute if data storage luigis_mansion:data current_state.current_data{blackout:0b} run setblock 688 3 19 minecraft:trapped_chest[facing=north]{LootTable:"luigis_mansion:search"}

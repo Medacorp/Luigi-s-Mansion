@@ -1,1 +1,1 @@
-execute if entity @a[tag=blackout] unless score #foyer Wave matches 1.. run function luigis_mansion:room/normal/foyer/blackout
+execute if data storage luigis_mansion:data current_state.current_data{blackout:1b} unless score #foyer Wave matches 1.. run function luigis_mansion:room/normal/foyer/blackout

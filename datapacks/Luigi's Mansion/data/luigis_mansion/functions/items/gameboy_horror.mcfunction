@@ -15,13 +15,14 @@ execute if entity @s[scores={GBHChoice=4}] run function luigis_mansion:items/gam
 execute if entity @s[scores={GBHCall=1..},tag=gameboy_horror_selected] run function luigis_mansion:items/gameboy_horror/answer
 execute if entity @s[scores={GBHWait=1200}] run function luigis_mansion:items/gameboy_horror/answer
 tag @s[tag=!gameboy_horror_selected,tag=!warp] remove scanning
+tag @s[scores={ScareType=2..}] remove scanning
 tag @s remove gameboy_horror_selected
 tag @s[nbt={SelectedItem:{tag:{luigis_mansion:{id:"luigis_mansion:gameboy_horror"}}}}] add gameboy_horror_selected
 execute if entity @s[tag=!gameboy_horror_selected] run trigger GBHChoice set 0
 execute if entity @s[tag=grabbed] run trigger GBHChoice set 0
 execute if entity @s[tag=tripping] run trigger GBHChoice set 0
 execute unless entity @s[scores={GBHCall=0..}] run scoreboard players set @s GBHCall 0
-execute if entity @a[limit=1,scores={GBHCall=1..}] if entity @s[tag=!warp] run function luigis_mansion:items/gameboy_horror/freeze_player
+execute if entity @a[limit=1,scores={GBHCall=1..}] if entity @s[tag=!warp] unless entity @s[scores={ScareType=2..}] run function luigis_mansion:items/gameboy_horror/freeze_player
 execute if entity @s[scores={GBHCall=1..,GBHWait=20}] run tellraw @a[tag=same_room] {"translate":"chat.type.text","with":[{"selector":"@s","color":"green"},{"translate":"luigis_mansion:message.player.ringing_gameboy_horror"}]}
 execute if entity @s[scores={GBHCall=1..}] unless entity @s[scores={MusicGroup=0,MusicType=2..5}] unless entity @s[scores={MusicGroup=0,MusicType=22}] unless entity @s[scores={MusicGroup=0,MusicType=24}] unless entity @s[scores={MusicGroup=0,MusicType=38}] unless entity @s[scores={MusicGroup=0,MusicType=19}] unless entity @s[scores={MusicGroup=0,MusicType=27}] run function luigis_mansion:other/music/set/gameboy_horror_calling
 scoreboard players add @s[scores={GBHCall=1..},tag=!gameboy_horror_selected] GBHWait 1

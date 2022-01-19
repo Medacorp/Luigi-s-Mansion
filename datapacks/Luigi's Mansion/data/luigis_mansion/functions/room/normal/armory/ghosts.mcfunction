@@ -3,5 +3,5 @@ execute if score #armory Wave matches 1 if entity @e[x=757.5,y=29,z=72.5,distanc
 execute if score #armory Wave matches 1 if entity @e[x=759.5,y=29,z=67.5,distance=..0.7,tag=ghost,tag=hidden,tag=spawn,tag=only_forced_spawn] run function luigis_mansion:room/normal/armory/wave_1_2
 execute if score #armory Wave matches 1 if entity @e[x=753.5,y=29,z=61.5,distance=..0.7,tag=ghost,tag=hidden,tag=spawn,tag=only_forced_spawn] run function luigis_mansion:room/normal/armory/wave_1_3
 execute if score #armory Wave matches 1 if entity @e[x=762.5,y=29,z=57.5,distance=..0.7,tag=ghost,tag=hidden,tag=spawn,tag=only_forced_spawn] run function luigis_mansion:room/normal/armory/wave_1_4
-execute unless data storage luigis_mansion:data current_state.current_data.rooms.armory{cleared:1b} if entity @a[tag=!blackout] unless score #armory Wave matches 1.. run function luigis_mansion:room/normal/armory/wave_1
-execute if entity @a[tag=blackout] unless score #armory Wave matches 1.. run function luigis_mansion:room/normal/armory/blackout
+execute unless data storage luigis_mansion:data current_state.current_data.rooms.armory{cleared:1b} if data storage luigis_mansion:data current_state.current_data{blackout:0b} unless score #armory Wave matches 1.. run function luigis_mansion:room/normal/armory/wave_1
+execute if data storage luigis_mansion:data current_state.current_data{blackout:1b} unless score #armory Wave matches 1.. run function luigis_mansion:room/normal/armory/blackout

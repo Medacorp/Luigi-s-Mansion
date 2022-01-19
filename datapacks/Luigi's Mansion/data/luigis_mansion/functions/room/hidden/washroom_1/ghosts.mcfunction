@@ -1,1 +1,1 @@
-execute if entity @a[tag=blackout] unless score #washroom_1 Wave matches 1.. run function luigis_mansion:room/hidden/washroom_1/blackout
+execute if data storage luigis_mansion:data current_state.current_data{blackout:1b} unless score #washroom_1 Wave matches 1.. run function luigis_mansion:room/hidden/washroom_1/blackout

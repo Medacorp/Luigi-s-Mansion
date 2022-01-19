@@ -1,77 +1,40 @@
-execute if entity @s[scores={Room=7}] run summon minecraft:marker ~ ~ ~ {Tags:["choice","study"]}
-execute if entity @s[scores={Room=7}] run summon minecraft:marker ~ ~ ~ {Tags:["choice","master_bedroom"]}
-execute if entity @s[scores={Room=7}] run summon minecraft:marker ~ ~ ~ {Tags:["choice","nursery"]}
-execute if entity @s[scores={Room=7}] unless entity @s[tag=!area_3,tag=!area_4] run summon minecraft:marker ~ ~ ~ {Tags:["choice","the_twins_room"]}
-execute if entity @s[scores={Room=11}] run summon minecraft:marker ~ ~ ~ {Tags:["choice","laundry_room"]}
-execute if entity @s[scores={Room=11}] run summon minecraft:marker ~ ~ ~ {Tags:["choice","hidden_room"]}
-execute if entity @s[scores={Room=11}] run summon minecraft:marker ~ ~ ~ {Tags:["choice","kitchen"]}
-execute if entity @s[scores={Room=11}] run summon minecraft:marker ~ ~ ~ {Tags:["choice","fortune_tellers_room"]}
-execute if entity @s[scores={Room=11..12}] run summon minecraft:marker ~ ~ ~ {Tags:["choice","dining_room"]}
-execute if entity @s[scores={Room=11..12}] run summon minecraft:marker ~ ~ ~ {Tags:["choice","ball_room"]}
-execute if entity @s[scores={Room=12..13}] run summon minecraft:marker ~ ~ ~ {Tags:["choice","storage_room"]}
-execute if entity @s[scores={Room=12..13}] unless entity @s[tag=!area_3,tag=!area_4] run summon minecraft:marker ~ ~ ~ {Tags:["choice","projection_room"]}
-execute if entity @s[scores={Room=13}] unless entity @s[tag=!area_3,tag=!area_4] run summon minecraft:marker ~ ~ ~ {Tags:["choice","rec_room"]}
-execute if entity @s[scores={Room=13..14}] run summon minecraft:marker ~ ~ ~ {Tags:["choice","conservatory"]}
-execute if entity @s[scores={Room=13..14}] unless entity @s[tag=!area_3,tag=!area_4] run summon minecraft:marker ~ ~ ~ {Tags:["choice","billiards_room"]}
-execute if entity @s[scores={Room=13..14}] run summon minecraft:marker ~ ~ ~ {Tags:["choice","washroom_1"]}
-execute if entity @s[scores={Room=14}] run summon minecraft:marker ~ ~ ~ {Tags:["choice","bathroom_1"]}
-execute if entity @s[scores={Room=35}] run summon minecraft:marker ~ ~ ~ {Tags:["choice","tea_room"]}
-execute if entity @s[scores={Room=35..36}] run summon minecraft:marker ~ ~ ~ {Tags:["choice","nanas_room"]}
-execute if entity @s[scores={Room=35..36}] run summon minecraft:marker ~ ~ ~ {Tags:["choice","wardrobe_room"]}
-execute if entity @s[scores={Room=35..36}] run summon minecraft:marker ~ ~ ~ {Tags:["choice","washroom_2"]}
-execute if entity @s[scores={Room=36}] run summon minecraft:marker ~ ~ ~ {Tags:["choice","bathroom_2"]}
-execute if entity @s[scores={Room=37..38}] run summon minecraft:marker ~ ~ ~ {Tags:["choice","astral_hall"]}
-execute if entity @s[scores={Room=37..38}] run summon minecraft:marker ~ ~ ~ {Tags:["choice","anteroom"]}
-execute if entity @s[scores={Room=37..38}] run summon minecraft:marker ~ ~ ~ {Tags:["choice","parlor"]}
-execute if entity @s[scores={Room=39..40}] unless entity @s[tag=!area_4] run summon minecraft:marker ~ ~ ~ {Tags:["choice","guest_room"]}
-execute if entity @s[scores={Room=39..40}] unless entity @s[tag=!area_4] run summon minecraft:marker ~ ~ ~ {Tags:["choice","sitting_room"]}
-execute if entity @s[scores={Room=51..52}] run summon minecraft:marker ~ ~ ~ {Tags:["choice","safari_room"]}
-execute if entity @s[scores={Room=51..52}] unless entity @s[tag=!area_4] run summon minecraft:marker ~ ~ ~ {Tags:["choice","artist_studio"]}
-execute if entity @s[scores={Room=54..55}] run summon minecraft:marker ~ ~ ~ {Tags:["choice","telephone_room"]}
-execute if entity @s[scores={Room=54..55}] run summon minecraft:marker ~ ~ ~ {Tags:["choice","clockwork_room"]}
-execute if entity @s[scores={Room=54..55}] run summon minecraft:marker ~ ~ ~ {Tags:["choice","armory"]}
-execute if entity @s[scores={Room=54..55}] run summon minecraft:marker ~ ~ ~ {Tags:["choice","cermatics_studio"]}
-execute if entity @s[scores={Room=59..60}] run summon minecraft:marker ~ ~ ~ {Tags:["choice","breaker_room"]}
-execute if entity @s[scores={Room=59..60}] run summon minecraft:marker ~ ~ ~ {Tags:["choice","cellar"]}
-execute if entity @s[scores={Room=59..60}] run summon minecraft:marker ~ ~ ~ {Tags:["choice","pipe_room"]}
-execute if entity @s[scores={Room=59..60}] run summon minecraft:marker ~ ~ ~ {Tags:["choice","cold_storage"]}
-tag @e[type=minecraft:marker,tag=choice,sort=random,limit=1] add selected
-execute if entity @e[type=minecraft:marker,tag=choice,tag=selected,limit=1,tag=study] run scoreboard players set @s Room 8
-execute if entity @e[type=minecraft:marker,tag=choice,tag=selected,limit=1,tag=master_bedroom] run scoreboard players set @s Room 9
-execute if entity @e[type=minecraft:marker,tag=choice,tag=selected,limit=1,tag=nursery] run scoreboard players set @s Room 19
-execute if entity @e[type=minecraft:marker,tag=choice,tag=selected,limit=1,tag=the_twins_room] run scoreboard players set @s Room 49
-execute if entity @e[type=minecraft:marker,tag=choice,tag=selected,limit=1,tag=laundry_room] run scoreboard players set @s Room 22
-execute if entity @e[type=minecraft:marker,tag=choice,tag=selected,limit=1,tag=hidden_room] run scoreboard players set @s Room 24
-execute if entity @e[type=minecraft:marker,tag=choice,tag=selected,limit=1,tag=kitchen] run scoreboard players set @s Room 27
-execute if entity @e[type=minecraft:marker,tag=choice,tag=selected,limit=1,tag=fortune_tellers_room] run scoreboard players set @s Room 20
-execute if entity @e[type=minecraft:marker,tag=choice,tag=selected,limit=1,tag=dining_room] run scoreboard players set @s Room 26
-execute if entity @e[type=minecraft:marker,tag=choice,tag=selected,limit=1,tag=ball_room] run scoreboard players set @s Room 17
-execute if entity @e[type=minecraft:marker,tag=choice,tag=selected,limit=1,tag=storage_room] run scoreboard players set @s Room 18
-execute if entity @e[type=minecraft:marker,tag=choice,tag=selected,limit=1,tag=projection_room] run scoreboard players set @s Room 48
-execute if entity @e[type=minecraft:marker,tag=choice,tag=selected,limit=1,tag=rec_room] run scoreboard players set @s Room 32
-execute if entity @e[type=minecraft:marker,tag=choice,tag=selected,limit=1,tag=conservatory] run scoreboard players set @s Room 25
-execute if entity @e[type=minecraft:marker,tag=choice,tag=selected,limit=1,tag=billiards_room] run scoreboard players set @s Room 47
-execute if entity @e[type=minecraft:marker,tag=choice,tag=selected,limit=1,tag=washroom_1] run scoreboard players set @s Room 19
-execute if entity @e[type=minecraft:marker,tag=choice,tag=selected,limit=1,tag=bathroom_1] run scoreboard players set @s Room 16
-execute if entity @e[type=minecraft:marker,tag=choice,tag=selected,limit=1,tag=guest_room] run scoreboard players set @s Room 70
-execute if entity @e[type=minecraft:marker,tag=choice,tag=selected,limit=1,tag=sitting_room] run scoreboard players set @s Room 69
-execute if entity @e[type=minecraft:marker,tag=choice,tag=selected,limit=1,tag=parlor] run scoreboard players set @s Room 3
-execute if entity @e[type=minecraft:marker,tag=choice,tag=selected,limit=1,tag=astral_hall] run scoreboard players set @s Room 45
-execute if entity @e[type=minecraft:marker,tag=choice,tag=selected,limit=1,tag=anteroom] run scoreboard players set @s Room 4
-execute if entity @e[type=minecraft:marker,tag=choice,tag=selected,limit=1,tag=tea_room] run scoreboard players set @s Room 34
-execute if entity @e[type=minecraft:marker,tag=choice,tag=selected,limit=1,tag=nanas_room] run scoreboard players set @s Room 44
-execute if entity @e[type=minecraft:marker,tag=choice,tag=selected,limit=1,tag=wardrobe_room] run scoreboard players set @s Room 5
-execute if entity @e[type=minecraft:marker,tag=choice,tag=selected,limit=1,tag=washroom_2] run scoreboard players set @s Room 42
-execute if entity @e[type=minecraft:marker,tag=choice,tag=selected,limit=1,tag=bathroom_2] run scoreboard players set @s Room 43
-execute if entity @e[type=minecraft:marker,tag=choice,tag=selected,limit=1,tag=safari_room] run scoreboard players set @s Room 50
-execute if entity @e[type=minecraft:marker,tag=choice,tag=selected,limit=1,tag=artist_studio] run scoreboard players set @s Room 71
-execute if entity @e[type=minecraft:marker,tag=choice,tag=selected,limit=1,tag=telephone_room] run scoreboard players set @s Room 56
-execute if entity @e[type=minecraft:marker,tag=choice,tag=selected,limit=1,tag=clockwork_room] run scoreboard players set @s Room 62
-execute if entity @e[type=minecraft:marker,tag=choice,tag=selected,limit=1,tag=armory] run scoreboard players set @s Room 64
-execute if entity @e[type=minecraft:marker,tag=choice,tag=selected,limit=1,tag=cermatics_studio] run scoreboard players set @s Room 65
-execute if entity @e[type=minecraft:marker,tag=choice,tag=selected,limit=1,tag=breaker_room] run scoreboard players set @s Room 57
-execute if entity @e[type=minecraft:marker,tag=choice,tag=selected,limit=1,tag=cellar] run scoreboard players set @s Room 58
-execute if entity @e[type=minecraft:marker,tag=choice,tag=selected,limit=1,tag=pipe_room] run scoreboard players set @s Room 67
-execute if entity @e[type=minecraft:marker,tag=choice,tag=selected,limit=1,tag=cold_storage] run scoreboard players set @s Room 68
-execute if entity @e[type=minecraft:marker,tag=choice,tag=selected,limit=1] run function luigis_mansion:entities/boo/warp/all/hidden
-kill @e[type=minecraft:marker,tag=choice]
+execute if entity @s[scores={Room=3}] if score #parlor Ticking matches 1 if data storage luigis_mansion:data current_state.current_data.rooms.parlor{cleared:1b} run function luigis_mansion:entities/boo_marker/change_to_hidden_boo
+execute if entity @s[scores={Room=4}] if score #anteroom Ticking matches 1 if data storage luigis_mansion:data current_state.current_data.rooms.anteroom{cleared:1b} run function luigis_mansion:entities/boo_marker/change_to_hidden_boo
+execute if entity @s[scores={Room=5}] if score #wardrobe_room Ticking matches 1 if data storage luigis_mansion:data current_state.current_data.rooms.wardrobe_room{cleared:1b} run function luigis_mansion:entities/boo_marker/change_to_hidden_boo
+execute if entity @s[scores={Room=8}] if score #study Ticking matches 1 if data storage luigis_mansion:data current_state.current_data.rooms.study{cleared:1b} run function luigis_mansion:entities/boo_marker/change_to_hidden_boo
+execute if entity @s[scores={Room=9}] if score #master_bedroom Ticking matches 1 if data storage luigis_mansion:data current_state.current_data.rooms.master_bedroom{cleared:1b} run function luigis_mansion:entities/boo_marker/change_to_hidden_boo
+execute if entity @s[scores={Room=10}] if score #nursery Ticking matches 1 if data storage luigis_mansion:data current_state.current_data.rooms.nursery{cleared:1b} run function luigis_mansion:entities/boo_marker/change_to_hidden_boo
+execute if entity @s[scores={Room=16}] if score #bathroom_1 Ticking matches 1 if data storage luigis_mansion:data current_state.current_data.rooms.bathroom_1{cleared:1b} run function luigis_mansion:entities/boo_marker/change_to_hidden_boo
+execute if entity @s[scores={Room=17}] if score #ball_room Ticking matches 1 if data storage luigis_mansion:data current_state.current_data.rooms.ball_room{cleared:1b} run function luigis_mansion:entities/boo_marker/change_to_hidden_boo
+execute if entity @s[scores={Room=18}] if score #storage_room Ticking matches 1 if data storage luigis_mansion:data current_state.current_data.rooms.storage_room{cleared:1b} run function luigis_mansion:entities/boo_marker/change_to_hidden_boo
+execute if entity @s[scores={Room=19}] if score #washroom_1 Ticking matches 1 if data storage luigis_mansion:data current_state.current_data.rooms.washroom_1{cleared:1b} run function luigis_mansion:entities/boo_marker/change_to_hidden_boo
+execute if entity @s[scores={Room=20}] if score #fortune_tellers_room Ticking matches 1 if data storage luigis_mansion:data current_state.current_data.rooms.fortune_tellers_room{cleared:1b} run function luigis_mansion:entities/boo_marker/change_to_hidden_boo
+execute if entity @s[scores={Room=21}] if score #mirror_room Ticking matches 1 if data storage luigis_mansion:data current_state.current_data.rooms.mirror_room{cleared:1b} run function luigis_mansion:entities/boo_marker/change_to_hidden_boo
+execute if entity @s[scores={Room=22}] if score #laundry_room Ticking matches 1 if data storage luigis_mansion:data current_state.current_data.rooms.laundry_room{cleared:1b} run function luigis_mansion:entities/boo_marker/change_to_hidden_boo
+execute if entity @s[scores={Room=23}] if score #butlers_room Ticking matches 1 if data storage luigis_mansion:data current_state.current_data.rooms.butlers_room{cleared:1b} run function luigis_mansion:entities/boo_marker/change_to_hidden_boo
+execute if entity @s[scores={Room=24}] if score #hidden_room Ticking matches 1 if data storage luigis_mansion:data current_state.current_data.rooms.hidden_room{cleared:1b} run function luigis_mansion:entities/boo_marker/change_to_hidden_boo
+execute if entity @s[scores={Room=25}] if score #conservatory Ticking matches 1 if data storage luigis_mansion:data current_state.current_data.rooms.conservatory{cleared:1b} run function luigis_mansion:entities/boo_marker/change_to_hidden_boo
+execute if entity @s[scores={Room=26}] if score #dining_room Ticking matches 1 if data storage luigis_mansion:data current_state.current_data.rooms.dining_room{cleared:1b} run function luigis_mansion:entities/boo_marker/change_to_hidden_boo
+execute if entity @s[scores={Room=27}] if score #kitchen Ticking matches 1 if data storage luigis_mansion:data current_state.current_data.rooms.kitchen{cleared:1b} run function luigis_mansion:entities/boo_marker/change_to_hidden_boo
+execute if entity @s[scores={Room=32}] if score #rec_room Ticking matches 1 if data storage luigis_mansion:data current_state.current_data.rooms.rec_room{cleared:1b} run function luigis_mansion:entities/boo_marker/change_to_hidden_boo
+execute if entity @s[scores={Room=34}] if score #tea_room Ticking matches 1 if data storage luigis_mansion:data current_state.current_data.rooms.tea_room{cleared:1b} run function luigis_mansion:entities/boo_marker/change_to_hidden_boo
+execute if entity @s[scores={Room=42}] if score #washroom_2 Ticking matches 1 if data storage luigis_mansion:data current_state.current_data.rooms.washroom_2{cleared:1b} run function luigis_mansion:entities/boo_marker/change_to_hidden_boo
+execute if entity @s[scores={Room=43}] if score #bathroom_2 Ticking matches 1 if data storage luigis_mansion:data current_state.current_data.rooms.bathroom_2{cleared:1b} run function luigis_mansion:entities/boo_marker/change_to_hidden_boo
+execute if entity @s[scores={Room=44}] if score #nanas_room Ticking matches 1 if data storage luigis_mansion:data current_state.current_data.rooms.nanas_room{cleared:1b} run function luigis_mansion:entities/boo_marker/change_to_hidden_boo
+execute if entity @s[scores={Room=45}] if score #astral_hall Ticking matches 1 if data storage luigis_mansion:data current_state.current_data.rooms.astral_hall{cleared:1b} run function luigis_mansion:entities/boo_marker/change_to_hidden_boo
+execute if entity @s[scores={Room=47}] if score #billiards_room Ticking matches 1 if data storage luigis_mansion:data current_state.current_data.rooms.billiards_room{cleared:1b} run function luigis_mansion:entities/boo_marker/change_to_hidden_boo
+execute if entity @s[scores={Room=48}] if score #projection_room Ticking matches 1 if data storage luigis_mansion:data current_state.current_data.rooms.projection_room{cleared:1b} run function luigis_mansion:entities/boo_marker/change_to_hidden_boo
+execute if entity @s[scores={Room=49}] if score #the_twins_room Ticking matches 1 if data storage luigis_mansion:data current_state.current_data.rooms.the_twins_room{cleared:1b} run function luigis_mansion:entities/boo_marker/change_to_hidden_boo
+execute if entity @s[scores={Room=50}] if score #safari_room Ticking matches 1 if data storage luigis_mansion:data current_state.current_data.rooms.safari_room{cleared:1b} run function luigis_mansion:entities/boo_marker/change_to_hidden_boo
+execute if entity @s[scores={Room=56}] if score #telephone_room Ticking matches 1 if data storage luigis_mansion:data current_state.current_data.rooms.telephone_room{cleared:1b} run function luigis_mansion:entities/boo_marker/change_to_hidden_boo
+execute if entity @s[scores={Room=57}] if score #breaker_room Ticking matches 1 if data storage luigis_mansion:data current_state.current_data.rooms.breaker_room{cleared:1b} run function luigis_mansion:entities/boo_marker/change_to_hidden_boo
+execute if entity @s[scores={Room=58}] if score #cellar Ticking matches 1 if data storage luigis_mansion:data current_state.current_data.rooms.cellar{cleared:1b} run function luigis_mansion:entities/boo_marker/change_to_hidden_boo
+execute if entity @s[scores={Room=62}] if score #clockwork_room Ticking matches 1 if data storage luigis_mansion:data current_state.current_data.rooms.clockwork_room{cleared:1b} run function luigis_mansion:entities/boo_marker/change_to_hidden_boo
+execute if entity @s[scores={Room=64}] if score #armory Ticking matches 1 if data storage luigis_mansion:data current_state.current_data.rooms.armory{cleared:1b} run function luigis_mansion:entities/boo_marker/change_to_hidden_boo
+execute if entity @s[scores={Room=65}] if score #ceramics_studio Ticking matches 1 if data storage luigis_mansion:data current_state.current_data.rooms.ceramics_studio{cleared:1b} run function luigis_mansion:entities/boo_marker/change_to_hidden_boo
+execute if entity @s[scores={Room=67}] if score #pipe_room Ticking matches 1 if data storage luigis_mansion:data current_state.current_data.rooms.pipe_room{cleared:1b} run function luigis_mansion:entities/boo_marker/change_to_hidden_boo
+execute if entity @s[scores={Room=68}] if score #cold_storage Ticking matches 1 if data storage luigis_mansion:data current_state.current_data.rooms.cold_storage{cleared:1b} run function luigis_mansion:entities/boo_marker/change_to_hidden_boo
+execute if entity @s[scores={Room=69}] if score #sitting_room Ticking matches 1 if data storage luigis_mansion:data current_state.current_data.rooms.sitting_room{cleared:1b} run function luigis_mansion:entities/boo_marker/change_to_hidden_boo
+execute if entity @s[scores={Room=70}] if score #guest_room Ticking matches 1 if data storage luigis_mansion:data current_state.current_data.rooms.guest_room{cleared:1b} run function luigis_mansion:entities/boo_marker/change_to_hidden_boo
+execute if entity @s[scores={Room=71}] if score #the_artists_studio Ticking matches 1 if data storage luigis_mansion:data current_state.current_data.rooms.the_artists_studio{cleared:1b} run function luigis_mansion:entities/boo_marker/change_to_hidden_boo
+execute if entity @s[tag=boo_marker] run function luigis_mansion:entities/boo_marker/warp/hidden_warp

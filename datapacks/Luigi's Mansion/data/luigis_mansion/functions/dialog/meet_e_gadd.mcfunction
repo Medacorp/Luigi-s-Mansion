@@ -1,4 +1,7 @@
 scoreboard players add @s Dialog 1
+execute if entity @e[tag=gold_ghost,tag=dialog] run tag @a[scores={IdleTime=19..}] remove cold_room_idle
+execute if entity @e[tag=gold_ghost,tag=dialog] run scoreboard players set @a[scores={IdleTime=19..}] IdleTime 18
+scoreboard players set @s[scores={Dialog=..72,IdleTime=19..}] IdleTime 18
 scoreboard players set @e[tag=gold_ghost,tag=dialog] Sound -1
 execute if entity @s[scores={Dialog=1}] run playsound luigis_mansion:ambience.parlor_wind ambient @a[tag=same_room] ~ ~ ~ 1000
 execute if entity @s[scores={Dialog=1..81}] run stopsound @a[tag=same_room,gamemode=!spectator] music
@@ -89,9 +92,11 @@ execute if entity @s[scores={Dialog=72}] positioned 725 20 34.9 run scoreboard p
 execute if entity @s[scores={Dialog=72}] positioned 725 20 34.9 run tag @e[distance=..0.1,tag=gold_ghost] add dialog
 execute if entity @s[scores={Dialog=72}] run teleport @s 725.5 20 31.4 facing entity @e[tag=gold_ghost,tag=dialog,limit=1] feet
 execute if entity @s[scores={Dialog=72}] run teleport @e[tag=gold_ghost,tag=dialog,limit=1] 725 20 34.9 -180 0
-tag @s[scores={Dialog=82..149}] add walking 
-execute if entity @s[scores={Dialog=82..149}] at @e[tag=gold_ghost,tag=dialog,limit=1] run teleport @s ^ ^ ^3.5 ~-180 ~
-execute if entity @s[scores={Dialog=82..149}] as @e[tag=gold_ghost,tag=dialog,limit=1] at @s run teleport @s ^ ^ ^0.1 ~ ~
+execute if entity @s[scores={Dialog=72}] as @a[tag=same_room] at @e[tag=ghost,tag=dialog,limit=1] run function luigis_mansion:entities/player/scare_bashed
+scoreboard players set @s[scores={Dialog=72}] ScareType 3
+execute if entity @s[scores={Dialog=72..190}] run scoreboard players set @a[tag=same_room,limit=1,scores={ScareTime=..20}] ScareTime 21
+execute if entity @s[scores={Dialog=92..149}] at @e[tag=ghost,tag=dialog,limit=1] positioned ^ ^ ^3.5 rotated ~-180 ~ run function luigis_mansion:entities/player/scared_bashed_force_move
+execute if entity @s[scores={Dialog=92..149}] as @e[tag=ghost,tag=dialog,limit=1] at @s run teleport @s ^ ^ ^0.11 ~ ~
 execute if entity @s[scores={Dialog=98}] as @e[tag=e_gadd,tag=dialog,limit=1] at @s run teleport @s ~ ~ ~ facing 718 20 31
 execute if entity @s[scores={Dialog=98}] run tag @e[tag=e_gadd,tag=dialog,limit=1] add walk
 execute if entity @s[scores={Dialog=98}] run scoreboard players set @e[tag=e_gadd_head,tag=dialog,limit=1] AnimationProg 0
@@ -104,6 +109,7 @@ execute if entity @s[scores={Dialog=150}] run scoreboard players set @e[tag=e_ga
 execute if entity @s[scores={Dialog=150..459}] at @e[tag=e_gadd,tag=dialog,limit=1] positioned ~ ~0.5 ~ positioned ^ ^ ^0.5 as @e[tag=gold_ghost,tag=dialog,limit=1] facing entity @s feet run function luigis_mansion:items/poltergust_3000/vacuuming/e_gadd
 execute if entity @s[scores={Dialog=150}] run scoreboard players set @e[tag=gold_ghost,tag=dialog,limit=1] AnimationProg 0
 execute if entity @s[scores={Dialog=150}] run tag @e[tag=gold_ghost,tag=dialog,limit=1] add hurt
+scoreboard players set @s[scores={Dialog=150}] ScareType 2
 execute if entity @s[scores={Dialog=150}] at @e[tag=gold_ghost,tag=dialog,limit=1] run playsound luigis_mansion:entity.gold_ghost.hurt hostile @a[tag=same_room] ~ ~ ~ 1
 execute if entity @s[scores={Dialog=170}] at @e[tag=e_gadd,tag=dialog,limit=1] run playsound luigis_mansion:entity.e_gadd.talk.soy_soh_ooh neutral @a[tag=same_room] ~ ~ ~ 1
 execute if entity @s[scores={Dialog=233}] at @e[tag=e_gadd,tag=dialog,limit=1] run playsound luigis_mansion:entity.e_gadd.dragged neutral @a[tag=same_room] ~ ~ ~ 1

@@ -1,1 +1,1 @@
-execute if entity @a[tag=!blackout,limit=1] positioned 746 2 71 run function luigis_mansion:room/hidden/cellar/spawn_dust
+execute if data storage luigis_mansion:data current_state.current_data{blackout:0b} positioned 746 2 71 run function luigis_mansion:room/hidden/cellar/spawn_dust

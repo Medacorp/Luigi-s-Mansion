@@ -69,4 +69,4 @@ execute unless data storage luigis_mansion:data current_state.current_data.rooms
 execute unless data storage luigis_mansion:data current_state.current_data.rooms.sitting_room{cleared:1b} run tag @s[scores={Room=69}] add dark_room
 execute unless data storage luigis_mansion:data current_state.current_data.rooms.guest_room{cleared:1b} run tag @s[scores={Room=70}] add dark_room
 execute unless data storage luigis_mansion:data current_state.current_data.rooms.the_artists_studio{cleared:1b} run tag @s[scores={Room=71}] add dark_room
-execute if entity @a[tag=blackout,limit=1] run tag @s[scores={Room=1..}] add dark_room
+execute if data storage luigis_mansion:data current_state.current_data{blackout:1b} run tag @s[scores={Room=1..}] add dark_room
