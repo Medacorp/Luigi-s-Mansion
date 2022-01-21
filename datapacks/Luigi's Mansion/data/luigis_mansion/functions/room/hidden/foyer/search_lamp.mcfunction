@@ -4,8 +4,8 @@ execute unless score #foyer_lamp Searched matches 1 run summon minecraft:marker 
 execute unless score #foyer_lamp Searched matches 1 run summon minecraft:marker ~ ~ ~ {Tags:["chance","small_heart"],Duration:1}
 execute unless score #foyer_lamp Searched matches 1 run summon minecraft:marker ~ ~ ~ {Tags:["chance","money"],Duration:1}
 execute unless score #foyer_lamp Searched matches 1 run tag @e[type=minecraft:marker,tag=chance,sort=random,limit=1] add selected
-execute if entity @e[type=minecraft:marker,tag=chance,tag=selected,tag=poison_muchroom] positioned 745 16 7.0 run function luigis_mansion:spawn_entities/item/poison_muchroom
-execute if entity @e[type=minecraft:marker,tag=chance,tag=selected,tag=small_heart] positioned 745 16 7.0 run function luigis_mansion:spawn_entities/item/small_heart
+execute if entity @e[type=minecraft:marker,tag=chance,tag=selected,tag=poison_muchroom] positioned 745 16 7.0 run function luigis_mansion:spawn_entities/item/room_search/poison_muchroom
+execute if entity @e[type=minecraft:marker,tag=chance,tag=selected,tag=small_heart] positioned 745 16 7.0 run function luigis_mansion:spawn_entities/item/room_search/small_heart
 execute if entity @e[type=minecraft:marker,tag=chance,tag=selected,tag=money] positioned 745 16 7.0 run function luigis_mansion:room/hidden/foyer/lamp
 execute unless entity @e[type=minecraft:marker,tag=chance,tag=selected,tag=!nothing] positioned 745 17 7.0 run function luigis_mansion:blocks/dust
 kill @e[type=minecraft:marker,tag=chance]

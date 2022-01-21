@@ -1,0 +1,1 @@
+function luigis_mansion:spawn_entities/item/big_heart
