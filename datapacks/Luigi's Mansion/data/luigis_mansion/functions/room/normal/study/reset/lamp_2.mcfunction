@@ -1,0 +1,1 @@
+scoreboard players reset #study_lamp_2

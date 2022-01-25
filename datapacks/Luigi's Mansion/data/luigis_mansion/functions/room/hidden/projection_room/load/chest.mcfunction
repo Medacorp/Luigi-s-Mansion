@@ -1,0 +1,1 @@
+execute if data storage luigis_mansion:data current_state.current_data.obtained_items{marios_glove:1b} run scoreboard players set #projection_room_chest Searched 1

@@ -34,6 +34,7 @@ data modify storage luigis_mansion:data saved_state.mansion_data[{data_index:0}]
 data modify storage luigis_mansion:data saved_state.mansion_data[{data_index:0}].boos[{name:"boolivia"}] merge value {loot_at_0:0b}
 data modify storage luigis_mansion:data saved_state.mansion_data[{data_index:0}].boos[{name:"boonita"}] merge value {loot_at_0:0b}
 data modify storage luigis_mansion:data saved_state.mansion_data[{data_index:0}].boos[{name:"bootique"}] merge value {loot_at_0:0b}
+execute if data storage luigis_mansion:data saved_state.mansion_data[{data_index:0}].money_spawned{study_ceiling_lamp:1b} run data modify storage luigis_mansion:data saved_state.mansion_data[{data_index:0}].money_spawned merge value {study_lamp_2:1b}
 data modify storage luigis_mansion:data saved_state.mansion_data[{data_index:0}].rooms.the_twins_room set from storage luigis_mansion:data saved_state.mansion_data[{data_index:0}].rooms.twins_room
 execute if data storage luigis_mansion:data saved_state.mansion_data[{data_index:0}].obtained_keys{twins_room:1b} run data modify storage luigis_mansion:data saved_state.mansion_data[{data_index:0}].obtained_keys merge value {the_twins_room:1b}
 execute if data storage luigis_mansion:data saved_state.mansion_data[{data_index:0}].used_keys{twins_room:1b} run data modify storage luigis_mansion:data saved_state.mansion_data[{data_index:0}].used_keys merge value {the_twins_room:1b}

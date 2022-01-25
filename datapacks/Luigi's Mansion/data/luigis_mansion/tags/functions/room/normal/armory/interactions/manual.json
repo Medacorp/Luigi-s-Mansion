@@ -1,0 +1,33 @@
+{
+	"values": [
+		"luigis_mansion:room/normal/armory/interactions/manual/armor_1",
+		"luigis_mansion:room/normal/armory/interactions/manual/armor_2",
+		"luigis_mansion:room/normal/armory/interactions/manual/armor_3",
+		"luigis_mansion:room/normal/armory/interactions/manual/armor_4",
+		"luigis_mansion:room/normal/armory/interactions/manual/armor_5",
+		"luigis_mansion:room/normal/armory/interactions/manual/armor_6",
+		"luigis_mansion:room/normal/armory/interactions/manual/armor_7",
+		"luigis_mansion:room/normal/armory/interactions/manual/armor_8",
+		"luigis_mansion:room/normal/armory/interactions/manual/armor_9",
+		"luigis_mansion:room/normal/armory/interactions/manual/chest_1",
+		"luigis_mansion:room/normal/armory/interactions/manual/chest_2",
+		"luigis_mansion:room/normal/armory/interactions/manual/chest_3",
+		"luigis_mansion:room/normal/armory/interactions/manual/chest_4",
+		"luigis_mansion:room/normal/armory/interactions/manual/chest_5",
+		"luigis_mansion:room/normal/armory/interactions/manual/chest_6",
+		"luigis_mansion:room/normal/armory/interactions/manual/crate_1",
+		"luigis_mansion:room/normal/armory/interactions/manual/crate_2",
+		"luigis_mansion:room/normal/armory/interactions/manual/crate_3",
+		"luigis_mansion:room/normal/armory/interactions/manual/crate_4",
+		"luigis_mansion:room/normal/armory/interactions/manual/crate_5",
+		"luigis_mansion:room/normal/armory/interactions/manual/crate_6",
+		"luigis_mansion:room/normal/armory/interactions/manual/crate_7",
+		"luigis_mansion:room/normal/armory/interactions/manual/crate_8",
+		"luigis_mansion:room/normal/armory/interactions/manual/crate_9",
+		"luigis_mansion:room/normal/armory/interactions/manual/crate_10",
+		"luigis_mansion:room/normal/armory/interactions/manual/crate_11",
+		"luigis_mansion:room/normal/armory/interactions/manual/lamp",
+		"luigis_mansion:room/normal/armory/interactions/manual/mirror",
+		"luigis_mansion:room/normal/armory/interactions/manual/shield"
+	]
+}

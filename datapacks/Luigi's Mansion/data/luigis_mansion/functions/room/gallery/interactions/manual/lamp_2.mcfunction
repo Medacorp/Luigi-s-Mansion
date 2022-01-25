@@ -1,0 +1,2 @@
+tag @s[x=733.5,y=83,z=-31.5,distance=..2,tag=check] add can_interact
+execute if entity @s[x=733.5,y=83,z=-31.5,distance=..2,tag=sound,tag=!long_shake] run playsound luigis_mansion:block.search.generic block @a[tag=same_room] ~ ~ ~ 1

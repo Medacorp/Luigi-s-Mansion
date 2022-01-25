@@ -1,0 +1,1 @@
+execute if entity @s[x=724.5,y=2,z=10.5,distance=..0.7,tag=vacuum] unless score #cold_storage_campfire_2 Search matches 1 store success score #cold_storage_campfire_2 Search run scoreboard players add #cold_storage_campfire_2 Searching 1

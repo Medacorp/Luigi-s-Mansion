@@ -1,0 +1,1 @@
+execute if data storage luigis_mansion:data current_state.current_data.obtained_items{water_element_medal:1b} run scoreboard players set #kitchen_chest Searched 1

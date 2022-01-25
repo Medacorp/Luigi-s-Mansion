@@ -13,6 +13,7 @@ To have no lasting "damage" on your world, follow these steps before disregardin
 When making your own, consider supporting these, as players may instal them as well.
 
 * [Luigi's Mansion 3DS Remake](https://github.com/Dhranios/Luigi-s-Mansion-3DS-Remake)
+* [Luigi's Beta Mansion](https://github.com/Dhranios/Luigi-s-Beta-Mansion)
 
 # Variables of interest
 

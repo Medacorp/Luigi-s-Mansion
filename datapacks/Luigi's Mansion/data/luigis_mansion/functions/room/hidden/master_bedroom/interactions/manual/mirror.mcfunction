@@ -1,0 +1,3 @@
+execute unless entity @s[x=690.5,y=111,z=-25.5,distance=..0.7] run tag @s[x=688.0,y=111,z=-27.0,dx=2,dy=3,dz=2,tag=check] add can_interact
+execute unless entity @s[x=690.5,y=111,z=-25.5,distance=..0.7] if entity @s[x=688.0,y=111,z=-27.0,dx=2,dy=3,dz=2,tag=sound] run playsound luigis_mansion:block.search.generic block @a[tag=same_room] ~ ~ ~ 1
+execute unless entity @s[x=690.5,y=111,z=-25.5,distance=..0.7] if entity @s[x=688.0,y=111,z=-27.0,dx=2,dy=3,dz=2,tag=!sound,tag=!check] run function luigis_mansion:room/hidden/master_bedroom/search/mirror

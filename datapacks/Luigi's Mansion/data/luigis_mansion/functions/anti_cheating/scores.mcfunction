@@ -57,6 +57,8 @@ scoreboard objectives add HurtTime dummy
 scoreboard objectives add ID dummy
 scoreboard objectives add IdleTime dummy
 scoreboard objectives add IncreaseAmount dummy
+scoreboard objectives add InteractionTime dummy
+scoreboard objectives add InteractionType dummy
 scoreboard objectives add Invulnerable dummy
 scoreboard objectives add JarvisChoice trigger
 scoreboard objectives add Jump minecraft.custom:minecraft.jump
@@ -171,6 +173,7 @@ scoreboard objectives add WalkUnderWater minecraft.custom:minecraft.walk_under_w
 scoreboard objectives add WarpTime dummy
 scoreboard objectives add Wave dummy
 scoreboard objectives add Wool dummy
+scoreboard objectives add YellTime dummy
 
 scoreboard players set #-1 Constants -1
 scoreboard players set #2 Constants 2

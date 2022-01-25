@@ -1,0 +1,1 @@
+execute unless score #kitchen_oven Searched matches 1.. run scoreboard players set #kitchen_oven Searched 1

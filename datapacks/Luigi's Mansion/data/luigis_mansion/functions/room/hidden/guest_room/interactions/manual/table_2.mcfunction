@@ -1,0 +1,6 @@
+execute if block 742 21 67 minecraft:redstone_lamp run tag @s[x=744.5,y=26,z=76.5,distance=..0.7,tag=check] add can_interact
+execute if block 742 21 67 minecraft:redstone_lamp if entity @s[x=744.5,y=26,z=76.5,distance=..0.7,tag=sound] run playsound luigis_mansion:block.search.generic block @a[tag=same_room] ~ ~ ~ 1
+execute if block 742 21 67 minecraft:redstone_lamp if entity @s[x=744.5,y=26,z=76.5,distance=..0.7,tag=!sound,tag=!check] run function luigis_mansion:room/hidden/guest_room/search/table_2_flipped
+execute unless block 742 21 67 minecraft:redstone_lamp run tag @s[x=744.5,y=20,z=76.5,distance=..0.7,tag=check] add can_interact
+execute unless block 742 21 67 minecraft:redstone_lamp if entity @s[x=744.5,y=20,z=76.5,distance=..0.7,tag=sound] run playsound luigis_mansion:block.search.generic block @a[tag=same_room] ~ ~ ~ 1
+execute unless block 742 21 67 minecraft:redstone_lamp if entity @s[x=744.5,y=20,z=76.5,distance=..0.7,tag=!sound,tag=!check] run function luigis_mansion:room/hidden/guest_room/search/table_2

@@ -4,6 +4,7 @@
         "luigis_mansion:room/hidden/courtyard/load/lights",
         "luigis_mansion:room/hidden/courtyard/load/spawn_toad",
         "luigis_mansion:room/hidden/courtyard/load/bird_house",
+        "luigis_mansion:room/hidden/courtyard/load/chest",
         "luigis_mansion:room/hidden/courtyard/load/water"
 	]
 }

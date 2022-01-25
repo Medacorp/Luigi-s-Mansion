@@ -3,13 +3,8 @@
 		"luigis_mansion:room/normal/conservatory/interactions/room/chair_1",
 		"luigis_mansion:room/normal/conservatory/interactions/room/chair_2",
 		"luigis_mansion:room/normal/conservatory/interactions/room/chair_3",
-		"luigis_mansion:room/normal/conservatory/interactions/room/cello",
 		"luigis_mansion:room/normal/conservatory/interactions/room/chest",
 		"luigis_mansion:room/normal/conservatory/interactions/room/closet",
-		"luigis_mansion:room/normal/conservatory/interactions/room/drum_1",
-		"luigis_mansion:room/normal/conservatory/interactions/room/drum_2",
-		"luigis_mansion:room/normal/conservatory/interactions/room/drum_3",
-		"luigis_mansion:room/normal/conservatory/interactions/room/harp",
 		"luigis_mansion:room/normal/conservatory/interactions/room/lamp",
 		"luigis_mansion:room/normal/conservatory/interactions/room/lectern_1",
 		"luigis_mansion:room/normal/conservatory/interactions/room/lectern_2",
@@ -18,8 +13,6 @@
 		"luigis_mansion:room/normal/conservatory/interactions/room/painting_3",
 		"luigis_mansion:room/normal/conservatory/interactions/room/painting_4",
 		"luigis_mansion:room/normal/conservatory/interactions/room/piano",
-		"luigis_mansion:room/normal/conservatory/interactions/room/saxophone",
-		"luigis_mansion:room/normal/conservatory/interactions/room/vacuumable",
-		"luigis_mansion:room/normal/conservatory/interactions/room/xylophone"
+		"luigis_mansion:room/normal/conservatory/interactions/room/vacuumable"
 	]
 }

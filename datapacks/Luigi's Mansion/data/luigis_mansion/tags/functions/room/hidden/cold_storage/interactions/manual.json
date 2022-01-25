@@ -1,0 +1,15 @@
+{
+	"values": [
+		"luigis_mansion:room/hidden/cold_storage/interactions/manual/barrel_1",
+		"luigis_mansion:room/hidden/cold_storage/interactions/manual/barrel_2",
+		"luigis_mansion:room/hidden/cold_storage/interactions/manual/campfire_1",
+		"luigis_mansion:room/hidden/cold_storage/interactions/manual/campfire_2",
+		"luigis_mansion:room/hidden/cold_storage/interactions/manual/campfire_3",
+		"luigis_mansion:room/hidden/cold_storage/interactions/manual/chest",
+		"luigis_mansion:room/hidden/cold_storage/interactions/manual/crate_1",
+		"luigis_mansion:room/hidden/cold_storage/interactions/manual/crate_2",
+		"luigis_mansion:room/hidden/cold_storage/interactions/manual/junk",
+		"luigis_mansion:room/hidden/cold_storage/interactions/manual/shelf_1",
+		"luigis_mansion:room/hidden/cold_storage/interactions/manual/shelf_2"
+	]
+}

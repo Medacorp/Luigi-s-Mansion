@@ -5,10 +5,10 @@ playsound luigis_mansion:music.mini_game_failure music @a[scores={Room=49},gamem
 scoreboard players set @a[scores={Room=49},gamemode=!spectator] Music 40
 scoreboard players set #temp Time 1
 scoreboard players set #the_twins_room Wave 7
-function luigis_mansion:room/normal/the_twins_room/search_box_1
-function luigis_mansion:room/normal/the_twins_room/search_box_2
-function luigis_mansion:room/normal/the_twins_room/search_box_3
-function luigis_mansion:room/normal/the_twins_room/search_box_4
-function luigis_mansion:room/normal/the_twins_room/search_box_5
+function luigis_mansion:room/normal/the_twins_room/search/box_1
+function luigis_mansion:room/normal/the_twins_room/search/box_2
+function luigis_mansion:room/normal/the_twins_room/search/box_3
+function luigis_mansion:room/normal/the_twins_room/search/box_4
+function luigis_mansion:room/normal/the_twins_room/search/box_5
 kill @e[scores={Room=49},type=minecraft:marker,tag=ghost]
 scoreboard players reset #temp Time

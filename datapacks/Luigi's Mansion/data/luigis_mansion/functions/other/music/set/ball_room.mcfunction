@@ -3,4 +3,4 @@ execute if entity @e[tag=floating_whirlindas,limit=1] run scoreboard players set
 scoreboard players set @s Music 0
 scoreboard players set @s MusicGroup 0
 scoreboard players set @s HealthMusic 0
-scoreboard players set @s LastHealthMusic -1
+scoreboard players set @s LastHealthMusic 1

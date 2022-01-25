@@ -1,0 +1,11 @@
+{
+	"values": [
+		"luigis_mansion:room/hidden/projection_room/interactions/manual/chest",
+		"luigis_mansion:room/hidden/projection_room/interactions/manual/closet",
+		"luigis_mansion:room/hidden/projection_room/interactions/manual/lamp_1",
+		"luigis_mansion:room/hidden/projection_room/interactions/manual/lamp_2",
+		"luigis_mansion:room/hidden/projection_room/interactions/manual/projector",
+		"luigis_mansion:room/hidden/projection_room/interactions/manual/speaker_1",
+		"luigis_mansion:room/hidden/projection_room/interactions/manual/speaker_2"
+	]
+}

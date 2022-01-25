@@ -1,1 +1,1 @@
-execute if block ~ ~ ~ #minecraft:doors[half=bottom] unless entity @e[distance=..0.7,tag=fake_door,limit=1] run playsound luigis_mansion:block.search.wood block @a ~ ~ ~ 1
+execute if block ~ ~ ~ #minecraft:doors[half=bottom] unless entity @e[distance=..0.7,tag=fake_door,limit=1] run playsound luigis_mansion:block.search.generic block @a ~ ~ ~ 1
