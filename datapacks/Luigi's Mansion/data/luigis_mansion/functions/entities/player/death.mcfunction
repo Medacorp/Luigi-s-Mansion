@@ -1,6 +1,8 @@
 stopsound @s music
 playsound luigis_mansion:music.game_over music @s ~ ~ ~ 1000
 scoreboard players set @s Music 121
+execute if entity @s[scores={Shrunk=1..}] run function luigis_mansion:items/poison_mushroom/readd_inventory
+scoreboard players set @s Shrunk 0
 tag @s add death_animation
 tag @s add spectator
 scoreboard players operation #temp ID = @s ID

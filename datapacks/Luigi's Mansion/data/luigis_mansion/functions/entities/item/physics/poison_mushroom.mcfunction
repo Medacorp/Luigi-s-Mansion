@@ -1,2 +1,2 @@
 execute if entity @s[tag=poison_mushroom] run function luigis_mansion:entities/item/heart_physics
-execute at @s[tag=poison_mushroom] run particle minecraft:dust 0.8 0.09 0.7 1 ~ ~ ~ 0.3 0.3 0.3 1 1 normal @a[tag=same_room]
+execute at @s[tag=poison_mushroom] run particle minecraft:dust 0.8 0.09 0.7 1 ~ ~1.75 ~ 0 0 0 0 1 normal @a[tag=same_room]

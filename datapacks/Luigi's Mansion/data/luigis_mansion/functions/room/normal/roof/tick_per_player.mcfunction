@@ -4,4 +4,4 @@ tag @s add seen_room_name
 
 execute if data storage luigis_mansion:data current_state.current_data.rooms.roof{seen:0b} run function luigis_mansion:room/normal/roof/set_seen
 
-teleport @s[x=685,y=135,z=-22,dx=2,dy=0,dz=2] 695 20 -63
+execute if entity @s[x=685,y=135,z=-22,dx=2,dy=0,dz=2] run function luigis_mansion:room/normal/roof/go_through_chimney

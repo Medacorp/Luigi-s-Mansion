@@ -14,9 +14,15 @@ execute as @e[tag=ghost] run function #luigis_mansion:get_same_room
 scoreboard players reset #temp Room
 
 function luigis_mansion:dialog/try
-function luigis_mansion:other/music
 function #luigis_mansion:player_tag_dialogs
 execute if entity @s[gamemode=!spectator] run function luigis_mansion:entities/player/not_spectator
+execute if entity @s[gamemode=!spectator,scores={Shrunk=1..}] unless entity @s[scores={ScareTime=20,ScareType=2..3}] run scoreboard players operation @s OtherX = @s PosX
+execute if entity @s[gamemode=!spectator,scores={Shrunk=1..}] unless entity @s[scores={ScareTime=20,ScareType=2..3}] run scoreboard players operation @s OtherY = @s PosY
+execute if entity @s[gamemode=!spectator,scores={Shrunk=1..}] unless entity @s[scores={ScareTime=20,ScareType=2..3}] run scoreboard players operation @s OtherZ = @s PosZ
+execute if entity @s[gamemode=!spectator,scores={Shrunk=1..}] unless entity @s[scores={ScareTime=20,ScareType=2..3}] store result score @s PosX run data get entity @s Pos[0] 100
+execute if entity @s[gamemode=!spectator,scores={Shrunk=1..}] unless entity @s[scores={ScareTime=20,ScareType=2..3}] store result score @s PosY run data get entity @s Pos[1] 100
+execute if entity @s[gamemode=!spectator,scores={Shrunk=1..}] unless entity @s[scores={ScareTime=20,ScareType=2..3}] store result score @s PosZ run data get entity @s Pos[2] 100
+execute if entity @s[gamemode=!spectator,scores={Shrunk=1..}] unless entity @s[scores={ScareTime=20,ScareType=2..3}] run function luigis_mansion:entities/player/not_spectator
 execute if entity @s[gamemode=spectator] run function luigis_mansion:entities/player/spectator
 execute if entity @s[scores={Shrunk=1}] run function luigis_mansion:items/poison_mushroom/readd_inventory
 scoreboard players remove @s[scores={Shrunk=1..}] Shrunk 1

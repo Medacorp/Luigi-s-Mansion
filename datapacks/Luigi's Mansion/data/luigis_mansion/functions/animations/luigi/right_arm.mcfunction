@@ -23,13 +23,7 @@ execute if score #mirrored Selected matches 1 run data modify entity @s[tag=held
 execute if score #mirrored Selected matches 0 if entity @s[tag=attacking,tag=!looking_at_map] run function luigis_mansion:animations/luigi/attack/right_arm
 execute if score #mirrored Selected matches 1 run tag @s remove attacking
 
-# Walk animation
-data modify entity @s[tag=was_sneaking,tag=!sneaking,tag=!walking,tag=!running,tag=!swimming,tag=!low_health,tag=!riding_poltergust] Pose.Head[0] set value 20.0f
-data modify entity @s[tag=was_walking,tag=!walking,tag=!sneaking,tag=!running,tag=!swimming,tag=!riding_poltergust] Pose.Head[0] set value 0.001f
-data modify entity @s[tag=was_running,tag=!running,tag=!sneaking,tag=!walking,tag=!swimming,tag=!riding_poltergust] Pose.Head[0] set value 0.001f
-data modify entity @s[tag=was_swimming,tag=!sneaking,tag=!walking,tag=!running,tag=!swimming,tag=!riding_poltergust] Pose.Head[0] set value 0.001f
-data modify entity @s[tag=was_swimming,tag=!swimming,tag=!riding_poltergust] Pose.Head[1] set value 0.001f
-
+# Move animations
 execute if entity @s[tag=sneaking,tag=!looking_at_map,tag=!low_health,tag=!riding_poltergust] run function luigis_mansion:animations/luigi/sneaking/right_arm
 execute if entity @s[tag=walking,tag=!looking_at_map,tag=!low_health,tag=!riding_poltergust] run function luigis_mansion:animations/luigi/walking/right_arm
 execute if entity @s[tag=running,tag=!looking_at_map,tag=!low_health,tag=!riding_poltergust] run function luigis_mansion:animations/luigi/running/right_arm

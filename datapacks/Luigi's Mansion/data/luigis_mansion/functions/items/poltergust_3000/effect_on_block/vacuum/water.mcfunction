@@ -1,1 +1,3 @@
 execute if block ~ ~ ~ minecraft:water run particle minecraft:bubble ~ ~ ~ 0 0 0 0 1 normal @a[tag=same_room]
+execute if block ~ ~ ~ minecraft:water if score #temp MirrorX matches -2147483648.. as @e[tag=interact,limit=1] run function luigis_mansion:items/poltergust_3000/effect_on_block/vacuum/mirror/water_x
+execute if block ~ ~ ~ minecraft:water if score #temp MirrorZ matches -2147483648.. as @e[tag=interact,limit=1] run function luigis_mansion:items/poltergust_3000/effect_on_block/vacuum/mirror/water_z

@@ -11,10 +11,6 @@ data modify entity @s[tag=was_flipped,tag=!flipped_gravity] Pose.Head[2] set val
 data modify entity @s[tag=!was_flipped,tag=flipped_gravity] Pose.Head[2] set value -180.0f
 
 # Move animations
-data modify entity @s[tag=was_sneaking,tag=!sneaking,tag=sneak_pos,tag=!walking,tag=!running,tag=!riding_poltergust] Pose.Head[0] set value 0.001f
-data modify entity @s[tag=was_sneaking,tag=!sneaking,tag=!sneak_pos,tag=!walking,tag=!running,tag=!riding_poltergust] Pose.Head[0] set value 0.001f
-data modify entity @s[tag=was_walking,tag=!walking,tag=!sneaking,tag=!running,tag=!riding_poltergust] Pose.Head[0] set value 0.001f
-data modify entity @s[tag=was_running,tag=!running,tag=!sneaking,tag=!walking,tag=!riding_poltergust] Pose.Head[0] set value 0.001f
 data modify entity @s[tag=riding_poltergust] Pose.Head[0] set value -30.0f
 data modify entity @s[tag=riding_poltergust] Pose.Head[1] set value 30.0f
 execute if entity @s[tag=sneaking,tag=!looking_at_map,tag=!riding_poltergust] run function luigis_mansion:animations/luigi/sneaking/right_leg

@@ -8,7 +8,6 @@ data merge entity @s[type=minecraft:item] {Air:1}
 # Fix multiple lightning loading in
 execute if entity @s[type=minecraft:lightning_bolt] run kill @e[type=minecraft:lightning_bolt,distance=0.1..]
 
-execute unless entity @s[scores={StunTime=1..},tag=!hurt,tag=!fleeing] run scoreboard players remove @s[scores={Sound=1..}] Sound 1
 tag @s[tag=remove_from_existence] add dead
 teleport @s[tag=dead] ~ ~-100 ~
 scoreboard players reset @s[tag=dead]

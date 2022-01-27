@@ -1,2 +1,3 @@
 execute if score #boneyard_dog_house Searched matches 1 run particle minecraft:dust 0.5 0.5 1 1 674 102 53 0.2 0.2 0.2 0 4
+execute if score #boneyard_dog_house Searched matches 1 as @e[x=674.5,y=102,z=53.5,distance=..0.7,tag=gameboy_horror_location] run function luigis_mansion:entities/gameboy_horror_location/bring_player_back
 execute if score #boneyard_dog_house Searched matches 1 as @a[x=674.5,y=102,z=53.5,distance=..0.7] run function luigis_mansion:room/normal/boneyard/go_through_dog_house
