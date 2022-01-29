@@ -1,4 +1,5 @@
 execute positioned 695 21 -77.0 run function luigis_mansion:blocks/dust
+execute positioned 693 21 -77.0 run function luigis_mansion:blocks/dust_no_sound
 scoreboard players set #sealed_room_chest_5 Searched 1
 data merge block 695 21 -77 {LootTable:"luigis_mansion:search"}
 data merge block 695 21 -78 {LootTable:"luigis_mansion:search"}

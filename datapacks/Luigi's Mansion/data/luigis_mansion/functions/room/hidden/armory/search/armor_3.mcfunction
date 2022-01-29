@@ -7,6 +7,7 @@ execute if block 758 29 -51 minecraft:structure_block run setblock 758 30 -51 mi
 execute if block 731 33 -53 minecraft:andesite run setblock 732 29 -51 minecraft:structure_block[mode=load]{mode:"LOAD",name:"luigis_mansion:armory/armor_diagonal_smashed",rotation:"CLOCKWISE_180"}
 execute if block 732 29 -51 minecraft:structure_block run setblock 732 30 -51 minecraft:redstone_block
 execute positioned 759 29 -52 run function luigis_mansion:blocks/dust
+execute positioned 731 29 -52 run function luigis_mansion:blocks/dust_no_sound
 scoreboard players set #armory_armor_3 Searched 1
 tag @e[x=759.5,y=29,z=-51.5,distance=..0.7,tag=ghost,tag=hidden] add spawn
 tag @e[x=759.5,y=29,z=-51.5,distance=..0.7,tag=hidden_boo,tag=caught_by_boo_radar] add spawn

@@ -6,6 +6,7 @@ execute unless score #bathroom_2_mirror Searched matches 1 run summon minecraft:
 execute unless score #bathroom_2_mirror Searched matches 1 run tag @e[type=minecraft:marker,tag=chance,sort=random,limit=1] add selected
 execute if entity @e[type=minecraft:marker,tag=chance,tag=selected,tag=small_heart] positioned 651 21 18 run function luigis_mansion:spawn_entities/item/room_search/small_heart
 execute unless entity @e[type=minecraft:marker,tag=chance,tag=selected,tag=!nothing] positioned 651.0 21 18 run function luigis_mansion:blocks/dust
+execute unless entity @e[type=minecraft:marker,tag=chance,tag=selected,tag=!nothing] positioned 648.0 21 18 run function luigis_mansion:blocks/dust_no_sound
 kill @e[type=minecraft:marker,tag=chance]
 scoreboard players set #bathroom_2_mirror Searched 1
 tag @e[x=651.5,y=20,z=18.5,distance=..0.7,tag=hidden_boo,tag=caught_by_boo_radar] add spawn

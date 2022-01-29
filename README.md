@@ -81,7 +81,7 @@ Speedrun   | 3     | extensive_training  | extensive_training        | "file/Ext
 ## Music groups
 Add new ones in `#luigis_mansion:play_music`.
 
-The underground lab allows MusicType 1 from any music group.
+All rooms in the lab allow MusicType 1 from any music group.
 
 ```
 Group | Add-on        | Namespace                 | Data pack name

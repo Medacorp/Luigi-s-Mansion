@@ -7,4 +7,5 @@ execute as @e[tag=this_entity,limit=1] store result score @s HomeZ run data get 
 execute as @e[tag=this_entity,limit=1] store result score @s HomeRotX run data get entity @s Rotation[0] 1
 execute as @e[tag=this_entity,limit=1] store result score @s HomeRotY run data get entity @s Rotation[1] 1
 scoreboard players set @e[tag=this_entity,limit=1] WaitTime 0
+scoreboard players set @e[tag=this_entity,limit=1] Sound 0
 tag @e[tag=this_entity,limit=1] remove this_entity

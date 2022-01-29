@@ -1,0 +1,1 @@
+execute if score #mansion_type Selected matches 0 run scoreboard players set @s[scores={Room=1..72}] YellTime 1

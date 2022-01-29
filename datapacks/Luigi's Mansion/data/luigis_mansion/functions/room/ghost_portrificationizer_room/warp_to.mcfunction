@@ -1,4 +1,5 @@
 title @s subtitle ""
+function luigis_mansion:other/music/set/ghost_portrificationizer_room
 execute if entity @s[tag=looking_at_map] run function luigis_mansion:items/gameboy_horror/map/close
 execute in minecraft:overworld run teleport @s 775 77 16 150 0
 experience set @s 0 levels

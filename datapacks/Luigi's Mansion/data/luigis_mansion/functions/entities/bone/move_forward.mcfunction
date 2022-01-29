@@ -1,4 +1,6 @@
 teleport @s ^ ^ ^0.05
+execute if entity @s[scores={Sound=0}] run playsound luigis_mansion:entity.bone.fly hostile @a[tag=same_room] ~ ~ ~ 1
+scoreboard players set @s[scores={Sound=0}] Sound 4
 scoreboard players remove #temp Move 1
 execute at @s[tag=!spooky_bone] unless block ~ ~ ~ #luigis_mansion:ghosts_ignore run tag @s add dead
 execute store result score #temp GhostNr run data get entity @s Pose.Head[0]

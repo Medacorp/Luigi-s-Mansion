@@ -8,6 +8,7 @@ execute if entity @e[type=minecraft:marker,tag=chance,tag=selected,tag=poison_mu
 execute if entity @e[type=minecraft:marker,tag=chance,tag=selected,tag=small_heart] positioned 663 14 -21.0 run function luigis_mansion:spawn_entities/item/room_search/small_heart
 execute if entity @e[type=minecraft:marker,tag=chance,tag=selected,tag=money] positioned 663 14 -21.0 run function luigis_mansion:room/hidden/washroom_1/cabinet
 execute unless entity @e[type=minecraft:marker,tag=chance,tag=selected,tag=!nothing] positioned 662 14 -21.0 run function luigis_mansion:blocks/dust
+execute unless entity @e[type=minecraft:marker,tag=chance,tag=selected,tag=!nothing] positioned 660 14 -21.0 run function luigis_mansion:blocks/dust_no_sound
 kill @e[type=minecraft:marker,tag=chance]
 scoreboard players set #washroom_1_cabinet Searched 1
 data merge block 662 14 -21 {LootTable:"luigis_mansion:search"}

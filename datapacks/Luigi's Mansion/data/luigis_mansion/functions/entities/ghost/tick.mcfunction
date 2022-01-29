@@ -1,8 +1,8 @@
 execute unless entity @s[scores={Health=1..},tag=!dialog] run tag @s add dying
-execute if entity @s[tag=dying,tag=normal_death,tag=!dialog] run function luigis_mansion:entities/ghost/death
-execute if entity @s[tag=dying,tag=hurt,tag=!normal_death,tag=!dialog] run function luigis_mansion:entities/ghost/death
-execute if entity @s[tag=dying,tag=element_death,tag=!dialog] run function luigis_mansion:entities/ghost/death_element
-execute if entity @s[tag=dying,tag=element_hurt,tag=!element_death,tag=!dialog] run function luigis_mansion:entities/ghost/death_element
+execute if entity @s[tag=!dead,tag=dying,tag=normal_death,tag=!dialog] run function luigis_mansion:entities/ghost/death
+execute if entity @s[tag=!dead,tag=dying,tag=hurt,tag=!normal_death,tag=!dialog] run function luigis_mansion:entities/ghost/death
+execute if entity @s[tag=!dead,tag=dying,tag=element_death,tag=!dialog] run function luigis_mansion:entities/ghost/death_element
+execute if entity @s[tag=!dead,tag=dying,tag=element_hurt,tag=!element_death,tag=!dialog] run function luigis_mansion:entities/ghost/death_element
 scoreboard players operation #temp Move = @s Move
 execute if entity @s[tag=!hidden,scores={LightX=-2147483648..}] run function luigis_mansion:other/cast_shadow
 execute if entity @s[tag=!freeze,tag=!captured] run function #luigis_mansion:entities/ghosts

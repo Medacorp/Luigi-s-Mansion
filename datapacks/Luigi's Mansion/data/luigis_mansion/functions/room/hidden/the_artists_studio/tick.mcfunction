@@ -1,6 +1,7 @@
 execute unless score #the_artists_studio Ticking matches 1 run function #luigis_mansion:room/hidden/the_artists_studio/load
 execute as @a[gamemode=!spectator,x=687,y=28,z=70,dx=16,dy=8,dz=25] unless entity @s[scores={Room=71}] run scoreboard players operation @s LastRoom = @s Room
 execute as @e[x=687,y=28,z=70,dx=16,dy=8,dz=25] unless entity @s[tag=ghost,tag=appear] unless entity @s[tag=ghost,tag=vanish] run scoreboard players set @s Room 71
+scoreboard players set #temp Room 71
 
 execute as @a[gamemode=!spectator,scores={Room=71}] run function luigis_mansion:room/hidden/the_artists_studio/tick_per_player
 

@@ -2,6 +2,7 @@ execute unless score #armory_chest_1 Searched matches 1 run summon minecraft:mar
 execute unless score #armory_chest_1 Searched matches 1 run tag @e[type=minecraft:marker,tag=chance,sort=random,limit=1] add selected
 execute if entity @e[type=minecraft:marker,tag=chance,tag=selected,tag=money] positioned 750.0 30 -59 run function luigis_mansion:room/hidden/armory/chest_1
 execute unless entity @e[type=minecraft:marker,tag=chance,tag=selected,tag=!nothing] positioned 750.0 29 -59 run function luigis_mansion:blocks/dust
+execute unless entity @e[type=minecraft:marker,tag=chance,tag=selected,tag=!nothing] positioned 741.0 29 -59 run function luigis_mansion:blocks/dust_no_sound
 kill @e[type=minecraft:marker,tag=chance]
 scoreboard players set #armory_chest_1 Searched 1
 data merge block 750 29 -59 {LootTable:"luigis_mansion:search"}

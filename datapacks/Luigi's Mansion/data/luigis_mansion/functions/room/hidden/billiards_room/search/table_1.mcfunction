@@ -7,6 +7,7 @@ execute unless score #billiards_room_table_1 Searched matches 1 run tag @e[type=
 execute if entity @e[type=minecraft:marker,tag=chance,tag=selected,tag=poison_mushroom] positioned 679 12 -73 run function luigis_mansion:spawn_entities/item/room_search/poison_mushroom
 execute if entity @e[type=minecraft:marker,tag=chance,tag=selected,tag=money] positioned 679 12 -73 run function luigis_mansion:room/hidden/billiards_room/table_1
 execute unless entity @e[type=minecraft:marker,tag=chance,tag=selected,tag=!nothing] positioned 679 11 -73 run function luigis_mansion:blocks/dust
+execute unless entity @e[type=minecraft:marker,tag=chance,tag=selected,tag=!nothing] positioned 669 11 -73 run function luigis_mansion:blocks/dust_no_sound
 kill @e[type=minecraft:marker,tag=chance]
 scoreboard players set #billiards_room_table_1 Searched 1
 data merge block 679 11 -73 {LootTable:"luigis_mansion:search"}

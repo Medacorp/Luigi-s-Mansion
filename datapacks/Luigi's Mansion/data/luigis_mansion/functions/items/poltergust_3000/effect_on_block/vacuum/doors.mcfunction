@@ -1,1 +1,5 @@
-execute if block ~ ~ ~ #minecraft:doors[half=bottom] unless entity @e[distance=..0.7,tag=fake_door,limit=1] run playsound luigis_mansion:block.search.generic block @a ~ ~ ~ 1
+execute if block ~ ~ ~ #minecraft:doors[half=lower] align xyz positioned ~0.5 ~ ~0.5 unless entity @e[distance=..0.7,tag=fake_door,limit=1] if entity @a[tag=me,scores={Sound=0}] run function luigis_mansion:blocks/search_sound/generic
+execute if block ~ ~ ~ #minecraft:doors[half=lower] align xyz positioned ~0.5 ~ ~0.5 unless entity @e[distance=..0.7,tag=fake_door,limit=1] if entity @a[tag=me,scores={Sound=4}] run function luigis_mansion:blocks/search_sound/generic
+execute if block ~ ~ ~ #minecraft:doors[half=lower] align xyz positioned ~0.5 ~ ~0.5 unless entity @e[distance=..0.7,tag=fake_door,limit=1] if entity @a[tag=me,scores={Sound=8}] run function luigis_mansion:blocks/search_sound/generic
+execute if block ~ ~ ~ #minecraft:doors[half=lower] align xyz positioned ~0.5 ~ ~0.5 unless entity @e[distance=..0.7,tag=fake_door,limit=1] if entity @a[tag=me,scores={Sound=12}] run function luigis_mansion:blocks/search_sound/generic
+execute if block ~ ~ ~ #minecraft:doors[half=lower] align xyz positioned ~0.5 ~ ~0.5 unless entity @e[distance=..0.7,tag=fake_door,limit=1] if entity @a[tag=me,scores={Sound=16}] run function luigis_mansion:blocks/search_sound/generic

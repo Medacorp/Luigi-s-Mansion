@@ -8,5 +8,6 @@ execute if entity @e[type=minecraft:marker,tag=chance,tag=selected,tag=poison_mu
 execute if entity @e[type=minecraft:marker,tag=chance,tag=selected,tag=small_heart] positioned 664 15 -26 run function luigis_mansion:spawn_entities/item/room_search/small_heart
 execute if entity @e[type=minecraft:marker,tag=chance,tag=selected,tag=money] positioned 664 15 -26 run function luigis_mansion:room/hidden/washroom_1/lamp
 execute unless entity @e[type=minecraft:marker,tag=chance,tag=selected,tag=!nothing] positioned 664 16 -26 run function luigis_mansion:blocks/dust
+execute unless entity @e[type=minecraft:marker,tag=chance,tag=selected,tag=!nothing] positioned 658 16 -26 run function luigis_mansion:blocks/dust_no_sound
 kill @e[type=minecraft:marker,tag=chance]
 scoreboard players set #washroom_1_lamp Searched 1

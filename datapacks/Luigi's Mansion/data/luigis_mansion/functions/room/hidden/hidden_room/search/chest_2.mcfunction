@@ -1,4 +1,5 @@
 execute positioned 738 13 -29.0 run function luigis_mansion:blocks/dust
+execute positioned 760 13 -29.0 run function luigis_mansion:blocks/dust_no_sound
 scoreboard players set #hidden_room_chest_2 Searched 1
 data merge block 738 13 -30 {LootTable:"luigis_mansion:search"}
 data merge block 738 13 -29 {LootTable:"luigis_mansion:search"}

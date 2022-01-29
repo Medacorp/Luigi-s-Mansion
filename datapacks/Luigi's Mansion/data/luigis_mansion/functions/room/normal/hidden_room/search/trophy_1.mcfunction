@@ -8,6 +8,7 @@ execute if entity @e[type=minecraft:marker,tag=chance,tag=selected,tag=poison_mu
 execute if entity @e[type=minecraft:marker,tag=chance,tag=selected,tag=small_heart] positioned 746 14 47 run function luigis_mansion:spawn_entities/item/room_search/small_heart
 execute if entity @e[type=minecraft:marker,tag=chance,tag=selected,tag=money] positioned 746 14 47 run function luigis_mansion:room/normal/hidden_room/trophy_1
 execute unless entity @e[type=minecraft:marker,tag=chance,tag=selected,tag=!nothing] positioned 746 13 47 run function luigis_mansion:blocks/dust
+execute unless entity @e[type=minecraft:marker,tag=chance,tag=selected,tag=!nothing] positioned 752 13 47 run function luigis_mansion:blocks/dust_no_sound
 kill @e[type=minecraft:marker,tag=chance]
 scoreboard players set #hidden_room_trophy_1 Searched 1
 tag @e[x=746.5,y=13,z=47.5,distance=..0.7,tag=hidden_boo,tag=caught_by_boo_radar] add spawn

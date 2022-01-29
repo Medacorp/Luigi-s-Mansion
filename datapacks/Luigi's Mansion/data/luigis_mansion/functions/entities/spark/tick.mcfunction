@@ -23,7 +23,7 @@ execute if entity @s[tag=explode,tag=visible] run effect give @a[distance=..3,ta
 execute if entity @s[tag=explode,tag=visible] run scoreboard players set @a[distance=..3,tag=!spectator] ForcedDamage 4
 execute if entity @s[tag=explode,tag=visible] as @a[distance=..3,tag=!spectator] run function luigis_mansion:entities/player/knockback/burn
 execute if entity @s[tag=explode,tag=visible] run particle minecraft:explosion ~ ~ ~ 0.2 0.2 0.2 1 4 force @a[tag=same_room]
-execute if entity @s[tag=explode,tag=visible] run playsound minecraft:entity.generic.explode hostile @a[tag=same_room] ~ ~ ~ 2
+execute if entity @s[tag=explode,tag=visible] run playsound luigis_mansion:entity.ghost.explode hostile @a[tag=same_room] ~ ~ ~ 1
 tag @s[tag=explode,tag=visible] add dead
 tag @s[tag=explode,tag=!visible] remove explode
 scoreboard players remove @s[scores={Turn=1..},tag=visible] Turn 1

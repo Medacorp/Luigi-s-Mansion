@@ -13,3 +13,4 @@ execute if score #ghost_portrificationizer_room Ticking matches 1 unless entity 
 execute as @a[gamemode=spectator,tag=!already_ticked,distance=0..,scores={HomeX=727..778,HomeY=75..86,HomeZ=-42..-15}] at @s run function luigis_mansion:room/gallery/spectator_tick
 execute if entity @a[gamemode=!spectator,x=728,y=77,z=-41,dx=50,dy=9,dz=25] run function luigis_mansion:room/gallery/tick
 execute if score #gallery Ticking matches 1 unless entity @a[gamemode=!spectator,x=728,y=77,z=-41,dx=50,dy=9,dz=25] unless entity @a[gamemode=!spectator,scores={Room=-4}] run function luigis_mansion:room/gallery/not_ticking
+scoreboard players reset #temp Room

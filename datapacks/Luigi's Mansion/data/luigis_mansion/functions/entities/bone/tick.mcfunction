@@ -1,4 +1,5 @@
 scoreboard players set #temp Move 4
+execute unless entity @s[scores={Sount=0..}] run scoreboard players set @s Sound 0
 execute if entity @s[tag=!spooky_bone] rotated ~ 0 run function luigis_mansion:entities/bone/move_forward
 execute if entity @s[tag=spooky_bone] run function #luigis_mansion:entities/bone/spooky
 execute if entity @s[tag=!spooky_bone] as @e[distance=..0.7,tag=gameboy_horror_location] run function luigis_mansion:entities/gameboy_horror_location/bring_player_back
