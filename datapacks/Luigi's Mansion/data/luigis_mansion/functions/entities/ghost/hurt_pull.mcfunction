@@ -5,7 +5,7 @@ scoreboard players operation #temp Health /= #100 Constants
 scoreboard players operation @s[scores={Room=1..}] Health -= #temp Health
 scoreboard players remove @s[scores={Room=..0}] Health 12
 scoreboard players operation #temp Health = @s Health
-execute if score #temp LastHealth matches 1 run tag @s add no_sound
+execute if entity @s[scores={HurtTime=10}] run tag @s add no_sound
 scoreboard players operation #temp LastHealth /= #100 Constants
 scoreboard players operation #temp Health /= #100 Constants
 execute if entity @s[tag=!no_sound] unless score #temp LastHealth = #temp Health run scoreboard players set @a[tag=me,limit=1] DamagePitchTimer 6

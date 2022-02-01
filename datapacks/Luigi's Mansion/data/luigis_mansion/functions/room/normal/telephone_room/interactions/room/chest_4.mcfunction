@@ -1,1 +1,2 @@
 execute if block 742 29 11 minecraft:trapped_chest unless block 742 29 11 minecraft:trapped_chest{LootTable:"luigis_mansion:search"} run function luigis_mansion:room/normal/telephone_room/search/chest_4
+execute if block 742 29 11 minecraft:trapped_chest unless score #telephone_room_chest Searched matches 1 run particle minecraft:crit 742.5 29.5 11.5 0.6 0.6 0.6 0 1 normal @a[scores={Room=56}]

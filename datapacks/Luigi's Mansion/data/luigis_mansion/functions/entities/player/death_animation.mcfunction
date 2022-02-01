@@ -24,4 +24,4 @@ tag @s[tag=turn_spectator] remove death_animation
 tag @s remove turn_spectator
 tag @e[tag=detect_exists,limit=1] remove detect_exists
 execute if entity @s[scores={Shrunk=1..}] run function luigis_mansion:items/poison_mushroom/readd_inventory
-scoreboard players reset @s Shrunk
+scoreboard players set @s Shrunk 0
