@@ -34,6 +34,13 @@ data modify storage luigis_mansion:data current_state.mansion_data[{data_index:0
 data modify storage luigis_mansion:data current_state.mansion_data[{data_index:0}].boos[{name:"boolivia"}] merge value {loot_at_0:0b}
 data modify storage luigis_mansion:data current_state.mansion_data[{data_index:0}].boos[{name:"boonita"}] merge value {loot_at_0:0b}
 data modify storage luigis_mansion:data current_state.mansion_data[{data_index:0}].boos[{name:"bootique"}] merge value {loot_at_0:0b}
+execute unless data storage luigis_mansion:data current_state.mansion_data[{data_index:0}].money_spawned{balcony_plant_1:1b} if data storage luigis_mansion:data current_state.mansion_data[{data_index:0}].money_spawned{balcony_plant_1:1b} run scoreboard players set #temp Selected 1
+execute if score #temp Selected matches 1 run data modify storage luigis_mansion:data current_state.mansion_data[{data_index:0}].money_spawned merge value {balcony_plant_2:1b}
+execute if score #temp Selected matches 1 run data remove storage luigis_mansion:data current_state.mansion_data[{data_index:0}].money_spawned.balcony_plant_1
+execute unless score #temp Selected matches 1 if data storage luigis_mansion:data current_state.mansion_data[{data_index:0}].money_spawned{balcony_plant_2:1b} unless data storage luigis_mansion:data current_state.mansion_data[{data_index:0}].money_spawned{balcony_plant_2:1b} run scoreboard players set #temp Selected 2
+execute if score #temp Selected matches 2 run data modify storage luigis_mansion:data current_state.mansion_data[{data_index:0}].money_spawned merge value {balcony_plant_1:1b}
+execute if score #temp Selected matches 2 run data remove storage luigis_mansion:data current_state.mansion_data[{data_index:0}].money_spawned.balcony_plant_2
+scoreboard players reset #temp Selected
 execute if data storage luigis_mansion:data current_state.mansion_data[{data_index:0}].money_spawned{study_ceiling_lamp:1b} run data modify storage luigis_mansion:data current_state.mansion_data[{data_index:0}].money_spawned merge value {study_lamp_2:1b}
 data modify storage luigis_mansion:data current_state.mansion_data[{data_index:0}].rooms.the_twins_room set from storage luigis_mansion:data current_state.mansion_data[{data_index:0}].rooms.twins_room
 execute if data storage luigis_mansion:data current_state.mansion_data[{data_index:0}].obtained_keys{twins_room:1b} run data modify storage luigis_mansion:data current_state.mansion_data[{data_index:0}].obtained_keys merge value {the_twins_room:1b}
