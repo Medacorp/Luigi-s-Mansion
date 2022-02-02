@@ -1,3 +1,3 @@
 execute unless entity @s[x=744.0,y=29,z=29.0,dx=1,dy=1,dz=1] run tag @s[x=742.0,y=29,z=27.0,dx=2,dy=0,dz=2,tag=check] add can_interact
 execute unless entity @s[x=744.0,y=29,z=29.0,dx=1,dy=1,dz=1] if entity @s[x=742.0,y=29,z=27.0,dx=2,dy=0,dz=2,tag=sound] run function luigis_mansion:blocks/search_sound/heavy_generic
-execute unless entity @s[x=744.0,y=29,z=29.0,dx=1,dy=1,dz=1] if entity @s[x=742.0,y=29,z=27.0,dx=2,dy=0,dz=2,tag=!sound,tag=!check] run function luigis_mansion:room/normal/telephone_room/search/couch
+execute unless entity @s[x=744.0,y=29,z=29.0,dx=1,dy=1,dz=1] if entity @s[x=742.0,y=29,z=27.0,dx=2,dy=0,dz=2,tag=!sound,tag=!check] run function luigis_mansion:room/normal/telephone_room/search/boo_check/couch

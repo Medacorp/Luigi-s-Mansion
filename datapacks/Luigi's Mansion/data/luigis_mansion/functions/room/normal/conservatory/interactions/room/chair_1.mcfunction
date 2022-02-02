@@ -1,6 +1,6 @@
 execute unless score #conservatory_chair_1 Search matches 1 run scoreboard players reset #conservatory_chair_1 Searching
 scoreboard players reset #conservatory_chair_1 Search
-execute if score #conservatory_chair_1 Searching matches 20 run function luigis_mansion:room/normal/conservatory/search/chair_1
+execute if score #conservatory_chair_1 Searching matches 20 run function luigis_mansion:room/normal/conservatory/search/boo_check/chair_1
 scoreboard players operation #temp Searching = #conservatory_chair_1 Searching
 scoreboard players operation #temp Searching %= #3 Constants
 execute if score #temp Searching matches 1 positioned 655 11 -8 run function luigis_mansion:blocks/search_sound/generic

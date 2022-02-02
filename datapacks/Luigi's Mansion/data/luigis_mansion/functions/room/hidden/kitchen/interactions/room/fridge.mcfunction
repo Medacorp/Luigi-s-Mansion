@@ -1,6 +1,6 @@
 execute unless score #kitchen_fridge Search matches 1 run scoreboard players reset #kitchen_fridge Searching
 scoreboard players reset #kitchen_fridge Search
-execute if score #kitchen_fridge Searching matches 20 run function luigis_mansion:room/hidden/kitchen/search/fridge
+execute if score #kitchen_fridge Searching matches 20 run function luigis_mansion:room/hidden/kitchen/search/boo_check/fridge
 scoreboard players operation #temp Searching = #kitchen_fridge Searching
 scoreboard players operation #temp Searching %= #3 Constants
 execute if score #temp Searching matches 1 positioned 701 11 -54.0 run function luigis_mansion:blocks/search_sound/fridge

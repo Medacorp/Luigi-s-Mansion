@@ -12,5 +12,4 @@ data merge block 661 20 -27 {LootTable:"luigis_mansion:search"}
 data merge block 662 20 -27 {LootTable:"luigis_mansion:search"}
 data merge block 661 21 -27 {LootTable:"luigis_mansion:search"}
 data merge block 662 21 -27 {LootTable:"luigis_mansion:search"}
-tag @e[x=661.5,y=20,z=-26.5,distance=..0.7,tag=hidden_boo,tag=caught_by_boo_radar] add spawn
 tag @e[x=661.5,y=20,z=-26.5,distance=..0.7,tag=ghost,tag=hidden] add spawn

@@ -6,5 +6,4 @@ kill @e[type=minecraft:marker,tag=chance]
 scoreboard players set #butlers_room_bucket Searched 1
 data merge block 749 11 -56 {LootTable:"luigis_mansion:search"}
 setblock 749 11 -56 minecraft:hopper[enabled=false]
-tag @e[x=749.5,y=11,z=-55.5,distance=..0.7,tag=hidden_boo,tag=caught_by_boo_radar] add spawn
 tag @e[x=749.5,y=11,z=-55.5,distance=..0.7,tag=ghost,tag=hidden] add spawn

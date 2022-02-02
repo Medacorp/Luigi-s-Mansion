@@ -1,0 +1,2 @@
+execute unless entity @e[x=738.5,y=3,z=-44.5,distance=..0.7,tag=hidden_boo,tag=caught_by_boo_radar] run function luigis_mansion:room/normal/cellar/search/box_1
+tag @e[x=738.5,y=3,z=-44.5,distance=..0.7,tag=hidden_boo,tag=caught_by_boo_radar] add spawn

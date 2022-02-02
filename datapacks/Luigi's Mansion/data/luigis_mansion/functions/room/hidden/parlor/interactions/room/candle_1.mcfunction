@@ -1,6 +1,6 @@
 execute unless score #parlor_candle_1 Search matches 1 run scoreboard players reset #parlor_candle_1 Searching
 scoreboard players reset #parlor_candle_1 Search
-execute if score #parlor_candle_1 Searching matches 20 run function luigis_mansion:room/hidden/parlor/search/candle_1
+execute if score #parlor_candle_1 Searching matches 20 run function luigis_mansion:room/hidden/parlor/search/boo_check/candle_1
 scoreboard players operation #temp Searching = #parlor_candle_1 Searching
 scoreboard players operation #temp Searching %= #3 Constants
 execute if score #temp Searching matches 1 positioned 714 22 -14 run function luigis_mansion:blocks/search_sound/generic

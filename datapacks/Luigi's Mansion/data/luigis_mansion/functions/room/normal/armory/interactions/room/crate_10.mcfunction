@@ -1,6 +1,6 @@
 execute unless score #armory_crate_10 Search matches 1 run scoreboard players reset #armory_crate_10 Searching
 scoreboard players reset #armory_crate_10 Search
-execute if score #armory_crate_10 Searching matches 20 run function luigis_mansion:room/normal/armory/search/crate_10
+execute if score #armory_crate_10 Searching matches 20 run function luigis_mansion:room/normal/armory/search/boo_check/crate_10
 scoreboard players operation #temp Searching = #armory_crate_10 Searching
 scoreboard players operation #temp Searching %= #3 Constants
 execute if score #temp Searching matches 1 positioned 747.0 29 61.0 run function luigis_mansion:blocks/search_sound/heavy_generic

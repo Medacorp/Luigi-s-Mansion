@@ -8,6 +8,5 @@ data merge block 641 20 -60 {LootTable:"luigis_mansion:search"}
 data merge block 642 20 -60 {LootTable:"luigis_mansion:search"}
 data merge block 644 20 -60 {LootTable:"luigis_mansion:search"}
 data merge block 645 20 -60 {LootTable:"luigis_mansion:search"}
-tag @e[x=643.5,y=20,z=-59.5,distance=..0.7,tag=hidden_boo,tag=caught_by_boo_radar] add spawn
 tag @e[x=643.5,y=20,z=-59.5,distance=..0.7,tag=ghost,tag=hidden] add spawn
 teleport @e[x=643.5,y=20,z=-59.5,distance=..0.7,tag=spawn] 643 20 -59

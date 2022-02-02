@@ -1,6 +1,6 @@
 execute unless score #rec_room_weights Search matches 1 run scoreboard players reset #rec_room_weights Searching
 scoreboard players reset #rec_room_weights Search
-execute if score #rec_room_weights Searching matches 20 run function luigis_mansion:room/hidden/rec_room/search/weights
+execute if score #rec_room_weights Searching matches 20 run function luigis_mansion:room/hidden/rec_room/search/boo_check/weights
 scoreboard players operation #temp Searching = #rec_room_weights Searching
 scoreboard players operation #temp Searching %= #3 Constants
 execute if score #temp Searching matches 1 positioned 639 12 50 run function luigis_mansion:blocks/search_sound/heavy_generic

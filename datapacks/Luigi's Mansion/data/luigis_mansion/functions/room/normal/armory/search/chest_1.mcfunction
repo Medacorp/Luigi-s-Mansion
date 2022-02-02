@@ -8,4 +8,3 @@ scoreboard players set #armory_chest_1 Searched 1
 data merge block 750 29 74 {LootTable:"luigis_mansion:search"}
 data merge block 749 29 74 {LootTable:"luigis_mansion:search"}
 tag @e[x=750.5,y=29,z=74.5,distance=..0.7,tag=ghost,tag=hidden] add spawn
-tag @e[x=750.5,y=29,z=74.5,distance=..0.7,tag=hidden_boo,tag=caught_by_boo_radar] add spawn
