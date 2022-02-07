@@ -6,6 +6,7 @@
 		"luigis_mansion:room/hidden/projection_room/interactions/gameboy_horror_scan/projector",
 		"luigis_mansion:room/hidden/projection_room/interactions/gameboy_horror_scan/screen",
 		"luigis_mansion:room/hidden/projection_room/interactions/gameboy_horror_scan/speaker_1",
-		"luigis_mansion:room/hidden/projection_room/interactions/gameboy_horror_scan/speaker_2"
+		"luigis_mansion:room/hidden/projection_room/interactions/gameboy_horror_scan/speaker_2",
+		"luigis_mansion:room/hidden/projection_room/interactions/gameboy_horror_scan/table"
 	]
 }

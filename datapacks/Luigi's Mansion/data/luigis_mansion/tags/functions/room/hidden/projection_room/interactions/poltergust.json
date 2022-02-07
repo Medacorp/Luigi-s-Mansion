@@ -6,6 +6,7 @@
 		"luigis_mansion:room/hidden/projection_room/interactions/poltergust/projector",
 		"luigis_mansion:room/hidden/projection_room/interactions/poltergust/screen",
 		"luigis_mansion:room/hidden/projection_room/interactions/poltergust/speaker_1",
-		"luigis_mansion:room/hidden/projection_room/interactions/poltergust/speaker_2"
+		"luigis_mansion:room/hidden/projection_room/interactions/poltergust/speaker_2",
+		"luigis_mansion:room/hidden/projection_room/interactions/poltergust/table"
 	]
 }

@@ -7,6 +7,7 @@
 		"luigis_mansion:room/hidden/projection_room/interactions/room/projector",
 		"luigis_mansion:room/hidden/projection_room/interactions/room/screen",
 		"luigis_mansion:room/hidden/projection_room/interactions/room/speaker_1",
-		"luigis_mansion:room/hidden/projection_room/interactions/room/speaker_2"
+		"luigis_mansion:room/hidden/projection_room/interactions/room/speaker_2",
+		"luigis_mansion:room/hidden/projection_room/interactions/room/table"
 	]
 }

@@ -10,6 +10,7 @@ scoreboard players set @s ForcedDamage 0
 scoreboard players set @s Damage 0
 scoreboard players set @s TotalDamage 0
 scoreboard players set @s LastTotalDamage 0
+scoreboard players set @s PoltergustSound 0
 scoreboard players set @s Sound 0
 scoreboard players set @s Walk 0
 scoreboard players set @s WalkOnWater 0

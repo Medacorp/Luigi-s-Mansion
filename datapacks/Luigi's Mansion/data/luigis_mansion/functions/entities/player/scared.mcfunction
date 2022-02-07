@@ -32,4 +32,4 @@ kill @e[type=minecraft:marker,tag=temp,limit=1]
 scoreboard players reset @s[scores={ScareTime=0}] ScareType
 scoreboard players reset @s[scores={ScareTime=0}] ScareTime
 
-function luigis_mansion:entities/player/idle/reset
+function luigis_mansion:entities/player/idle_reset

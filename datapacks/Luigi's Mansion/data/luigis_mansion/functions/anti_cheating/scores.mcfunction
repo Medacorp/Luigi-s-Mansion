@@ -104,6 +104,7 @@ scoreboard objectives add Owner dummy
 scoreboard objectives add PassiveNr dummy
 scoreboard objectives add PathStep dummy
 scoreboard objectives add PlayerRotation dummy
+scoreboard objectives add PoltergustSound dummy
 scoreboard objectives add PosX dummy
 scoreboard objectives add PosY dummy
 scoreboard objectives add PosZ dummy

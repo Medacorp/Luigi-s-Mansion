@@ -6,6 +6,7 @@ execute if entity @s[scores={MirrorZ=-2147483648..}] run scoreboard players oper
 tag @s add me
 execute as @e[tag=ghost,tag=same_room,scores={VulnerableTime=1..}] run function luigis_mansion:items/poltergust_3000/attacking_ghost
 execute if score #temp GhostCount > @s GhostCount run scoreboard players operation @s GhostCount = #temp GhostCount
+execute if score #temp GhostCount matches 1.. run function luigis_mansion:items/poltergust_3000/get_old_position
 execute if score #temp GhostCount matches 1.. as @e[tag=ghost,tag=being_vacuumed] run function luigis_mansion:items/poltergust_3000/catch_ghost
 execute if score #temp GhostCount matches 1.. as @e[tag=ghost,tag=being_vacuumed] facing entity @s feet run function luigis_mansion:items/poltergust_3000/vacuuming/ghost
 execute if score #temp GhostCount matches 1.. run tag @s[tag=is_pulling] remove made_error
@@ -41,5 +42,7 @@ scoreboard players remove @s[scores={DamagePitchTimer=1..}] DamagePitchTimer 1
 scoreboard players reset #temp MirrorX
 scoreboard players reset #temp MirrorZ
 tag @s remove me
+tag @s remove vacuumed_door
 tag @e[tag=already_hurt] remove already_hurt
 kill @e[type=minecraft:marker,tag=interact,limit=1]
+kill @e[type=minecraft:marker,tag=position,limit=1]

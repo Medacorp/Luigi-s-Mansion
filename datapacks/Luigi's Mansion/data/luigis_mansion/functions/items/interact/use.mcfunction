@@ -47,4 +47,4 @@ kill @e[tag=interact,tag=manual,limit=1]
 tag @s remove searcher
 scoreboard players reset #temp Room
 scoreboard players reset @s YellTime
-function luigis_mansion:entities/player/idle/reset
+function luigis_mansion:entities/player/idle_reset

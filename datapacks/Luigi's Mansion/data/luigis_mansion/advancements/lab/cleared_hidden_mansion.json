@@ -1,7 +1,7 @@
 {
     "display": {
         "icon": {
-            "item": "minecraft:glass_pane"
+            "item": "minecraft:blaze_powder"
         },
         "show_toast": false,
         "hidden": true,

@@ -3,3 +3,4 @@ execute if block ~ ~ ~ #minecraft:doors[half=lower] align xyz positioned ~0.5 ~ 
 execute if block ~ ~ ~ #minecraft:doors[half=lower] align xyz positioned ~0.5 ~ ~0.5 unless entity @e[distance=..0.7,tag=fake_door,limit=1] if entity @a[tag=me,scores={Sound=8}] run function luigis_mansion:blocks/search_sound/generic
 execute if block ~ ~ ~ #minecraft:doors[half=lower] align xyz positioned ~0.5 ~ ~0.5 unless entity @e[distance=..0.7,tag=fake_door,limit=1] if entity @a[tag=me,scores={Sound=12}] run function luigis_mansion:blocks/search_sound/generic
 execute if block ~ ~ ~ #minecraft:doors[half=lower] align xyz positioned ~0.5 ~ ~0.5 unless entity @e[distance=..0.7,tag=fake_door,limit=1] if entity @a[tag=me,scores={Sound=16}] run function luigis_mansion:blocks/search_sound/generic
+execute if block ~ ~ ~ #minecraft:doors[half=lower] align xyz positioned ~0.5 ~ ~0.5 unless entity @e[distance=..0.7,tag=fake_door,limit=1] run tag @s remove vacuumed_door

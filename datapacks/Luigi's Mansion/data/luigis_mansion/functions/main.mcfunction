@@ -9,4 +9,3 @@ execute as @e[type=!minecraft:player] at @s run function luigis_mansion:main/non
 execute as @e[type=minecraft:armor_stand,tag=model_piece] at @s run function luigis_mansion:animations/model_piece
 execute as @e unless entity @s[scores={StunTime=1..},tag=!hurt,tag=!fleeing] run function luigis_mansion:main/tick_sound
 kill @e[tag=dead,tag=can_die]
-execute at @a[tag=vacuuming] run summon minecraft:marker ~ ~ ~ {Tags:["position","remove_from_existence"]}
