@@ -39,6 +39,17 @@ scoreboard players reset #temp Time
 teleport @s[tag=looking_at_map] ~ ~-1.67 ~ ~ ~
 execute if entity @s[tag=looking_at_map] run function luigis_mansion:animations/luigi/looking_at_map/head
 
+execute at @s[tag=yelling] run function luigis_mansion:animations/luigi/yelling/head
+execute at @s[tag=nod] run function luigis_mansion:animations/luigi/nod/head
+execute at @s[tag=thinking] run function luigis_mansion:animations/luigi/thinking/head
+execute at @s[tag=sigh] run function luigis_mansion:animations/luigi/sigh/head
+execute at @s[tag=enthusiastic] run function luigis_mansion:animations/luigi/enthusiastic/head
+execute at @s[tag=answer_phone] run function luigis_mansion:animations/luigi/answer_phone/head
+execute at @s[tag=gameboy_horror] run function luigis_mansion:animations/luigi/gameboy_horror/head
+execute at @s[tag=inspect] run function luigis_mansion:animations/luigi/inspect/head
+execute at @s[scores={KnockbackType=-7}] run function luigis_mansion:animations/luigi/search/bash/head
+execute at @s[scores={KnockbackType=-6}] run function luigis_mansion:animations/luigi/search/hump/head
+execute at @s[scores={KnockbackType=-5..-4}] run function luigis_mansion:animations/luigi/search/knock/head
 execute at @s[scores={KnockbackType=-3..-2}] run function luigis_mansion:animations/luigi/scared/bashed/head
 execute at @s[scores={KnockbackType=-1}] run function luigis_mansion:animations/luigi/scared/head
 execute at @s[scores={KnockbackType=1}] run function luigis_mansion:animations/luigi/knockback/small/head

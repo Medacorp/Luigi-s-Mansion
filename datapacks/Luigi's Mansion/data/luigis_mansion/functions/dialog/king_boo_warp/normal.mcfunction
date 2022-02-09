@@ -26,7 +26,7 @@ tag @s[scores={Dialog=272}] add laugh
 execute if entity @s[scores={Dialog=272}] if score #players Totals matches 1 run tellraw @a[tag=same_room] {"translate":"chat.type.text","with":[{"translate":"luigis_mansion:entity.king_boo","color":"green"},{"translate":"luigis_mansion:dialog.king_boo_warp.7","with":[{"selector":"@p"}]}]}
 execute if entity @s[scores={Dialog=272}] if score #players Totals matches 2.. run tellraw @a[tag=same_room] {"translate":"chat.type.text","with":[{"translate":"luigis_mansion:entity.king_boo","color":"green"},{"translate":"luigis_mansion:dialog.king_boo_warp.7.more"}]}
 tag @s[scores={Dialog=292}] remove laugh
-execute if entity @s[scores={Dialog=416,Sound=0}] unless entity @s[scores={InteractionTime=1..}] unless entity @s[scores={YellTime=1..}] run function #luigis_mansion:room/yell
+execute if entity @s[scores={Dialog=416}] as @a[tag=same_room,scores={Sound=0}] unless entity @s[scores={InteractionTime=1..}] run function #luigis_mansion:room/yell
 execute if entity @s[scores={Dialog=416}] run playsound luigis_mansion:entity.king_boo.laugh_2 hostile @a[tag=same_room] ~ ~ ~ 1
 scoreboard players set @s[scores={Dialog=456}] AnimationProg 0
 execute if entity @s[scores={Dialog=456}] run playsound luigis_mansion:entity.king_boo.flinch hostile @a[tag=same_room] ~ ~ ~ 1

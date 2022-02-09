@@ -22,4 +22,4 @@ execute if entity @s[scores={Dialog=100}] run particle minecraft:explosion 629.0
 execute if entity @s[scores={Dialog=120}] run function luigis_mansion:room/normal/observatory/clear
 teleport @s[x=645.5,y=20,z=-74.5,distance=..1] ~ ~ ~-1
 tag @s[scores={Dialog=120}] remove observatory_explosion
-scoreboard players reset @s[scores={Dialog=120}] Dialog
+scoreboard players set @s[scores={Dialog=120}] Dialog 0

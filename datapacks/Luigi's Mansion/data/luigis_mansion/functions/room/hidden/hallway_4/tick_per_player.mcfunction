@@ -7,4 +7,4 @@ execute if data storage luigis_mansion:data current_state.current_data.rooms.hal
 tag @s[x=718,y=11,z=34,distance=9..10,tag=chance_check] remove chance_check
 
 stopsound @s ambient luigis_mansion:music.mansion.melody
-execute unless data storage luigis_mansion:data current_state.current_data.rooms.dining_room{cleared:1b} at @s[tag=!blackout] run function luigis_mansion:room/hidden/hallway_4/dining_room_noise
+execute unless data storage luigis_mansion:data current_state.current_data.rooms.dining_room{cleared:1b} if data storage luigis_mansion:data current_state.current_data{blackout:0b} run function luigis_mansion:room/hidden/hallway_4/dining_room_noise

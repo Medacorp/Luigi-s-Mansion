@@ -10,4 +10,10 @@ execute if entity @s[tag=!already_included] unless data entity @s ArmorItems[3].
 execute if entity @s[tag=!already_included] in minecraft:overworld run data modify entity @s ArmorItems[3].tag.attacked_by append from block 27 0 0 Items[0].tag.Value
 execute if entity @s[tag=!already_included] in minecraft:overworld run setblock 27 0 0 minecraft:air
 
+execute if entity @s[tag=!already_included,tag=!vacuumable] at @a[tag=me,scores={Health=41..,Shrunk=0},limit=1] run playsound luigis_mansion:entity.player.latch_onto_ghost.high_health player @a[tag=same_room] ~ ~ ~ 1
+execute if entity @s[tag=!already_included,tag=!vacuumable] at @a[tag=me,scores={Health=41..,Shrunk=1..},limit=1] run playsound luigis_mansion:entity.player.latch_onto_ghost.high_health player @a[tag=same_room] ~ ~ ~ 1 2
+execute if entity @s[tag=!already_included,tag=!vacuumable] at @a[tag=me,scores={Health=..40,Shrunk=0},limit=1] run playsound luigis_mansion:entity.player.latch_onto_ghost.low_health player @a[tag=same_room] ~ ~ ~ 1
+execute if entity @s[tag=!already_included,tag=!vacuumable] at @a[tag=me,scores={Health=..40,Shrunk=1..},limit=1] run playsound luigis_mansion:entity.player.latch_onto_ghost.low_health player @a[tag=same_room] ~ ~ ~ 1 2
+execute if entity @s[tag=!already_included,tag=!vacuumable] run scoreboard players set @a[tag=me,limit=1] Sound 20
+
 tag @s remove already_included

@@ -41,6 +41,17 @@ execute at @s[tag=exploding_poltergust] run particle minecraft:large_smoke ~ ~1.
 execute at @s[tag=exploding_poltergust] run particle minecraft:flame ~ ~1.5 ~ 0.3 0.3 0.3 0 10 normal @a[tag=same_room]
 tag @s remove exploding_poltergust
 
+execute at @s[tag=yelling] run function luigis_mansion:animations/luigi/yelling/chest
+execute at @s[tag=nod] run function luigis_mansion:animations/luigi/nod/chest
+execute at @s[tag=thinking] run function luigis_mansion:animations/luigi/thinking/chest
+execute at @s[tag=sigh] run function luigis_mansion:animations/luigi/sigh/chest
+execute at @s[tag=enthusiastic] run function luigis_mansion:animations/luigi/enthusiastic/chest
+execute at @s[tag=answer_phone] run function luigis_mansion:animations/luigi/answer_phone/chest
+execute at @s[tag=gameboy_horror] run function luigis_mansion:animations/luigi/gameboy_horror/chest
+execute at @s[tag=inspect] run function luigis_mansion:animations/luigi/inspect/chest
+execute at @s[scores={KnockbackType=-7}] run function luigis_mansion:animations/luigi/search/bash/chest
+execute at @s[scores={KnockbackType=-6}] run function luigis_mansion:animations/luigi/search/hump/chest
+execute at @s[scores={KnockbackType=-5..-4}] run function luigis_mansion:animations/luigi/search/knock/chest
 execute at @s[scores={KnockbackType=-3..-2}] run function luigis_mansion:animations/luigi/scared/bashed/chest
 execute at @s[scores={KnockbackType=-1}] run function luigis_mansion:animations/luigi/scared/chest
 execute at @s[scores={KnockbackType=1}] run function luigis_mansion:animations/luigi/knockback/small/chest

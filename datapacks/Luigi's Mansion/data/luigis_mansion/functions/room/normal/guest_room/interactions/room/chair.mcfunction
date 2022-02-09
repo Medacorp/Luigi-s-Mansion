@@ -5,5 +5,5 @@ execute unless block 742 21 -52 minecraft:redstone_lamp if score #guest_room_cha
 scoreboard players operation #temp Searching = #guest_room_chair Searching
 scoreboard players operation #temp Searching %= #3 Constants
 execute if score #temp Searching matches 1 if block 742 21 -52 minecraft:redstone_lamp positioned 738 27 -45 run function luigis_mansion:blocks/search_sound/generic
-execute unless score #temp Searching matches 1 if block 742 21 -52 minecraft:redstone_lamp positioned 738 20 -45 run function luigis_mansion:blocks/search_sound/generic
+execute if score #temp Searching matches 1 unless block 742 21 -52 minecraft:redstone_lamp positioned 738 20 -45 run function luigis_mansion:blocks/search_sound/generic
 scoreboard players reset #temp Searching

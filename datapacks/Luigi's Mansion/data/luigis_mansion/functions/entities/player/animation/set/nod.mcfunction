@@ -1,5 +1,3 @@
+function luigis_mansion:entities/player/animation/set/none
 tag @s add nod
-tag @s remove high_health_idle
-tag @s remove low_health_idle
-tag @s remove cold_room_idle
 scoreboard players set @s IdleTime -21

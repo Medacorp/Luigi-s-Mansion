@@ -123,7 +123,7 @@ execute at @s[y_rotation=-45..45,scores={Dialog=1783},tag=!left] unless block ^ 
 execute at @s[y_rotation=135..-135,scores={Dialog=1783},tag=left] unless block ^ ^1 ^2 #luigis_mansion:all_ignore run teleport @s ~ ~ ~ ~-90 0
 execute at @s[y_rotation=-135..-45,scores={Dialog=1783},tag=left] unless block ^ ^1 ^2 #luigis_mansion:all_ignore run teleport @s ~ ~ ~ ~-90 0
 execute at @s[y_rotation=-45..45,scores={Dialog=1783},tag=left] unless block ^ ^1 ^2 #luigis_mansion:all_ignore run teleport @s ~ ~ ~ ~-90 0
-execute at @s[y_rotation=45..135,scores={Dialog=1783}] unless block ^ ^1 ^2 #luigis_mansion:all_ignore run scoreboard players add @s Dialog 1
+execute at @s[y_rotation=45..135,scores={Dialog=1783},x=792.0,dx=1] run scoreboard players add @s Dialog 1
 scoreboard players set @s[scores={Dialog=1783,PathStep=20}] PathStep 0
 teleport @s[scores={Dialog=1784}] 792.0 20 64.0
 execute if entity @s[scores={Dialog=1785..}] facing entity @e[tag=same_room,tag=!spectator,sort=nearest,limit=1] feet run teleport @s ~ ~ ~ ~ 0

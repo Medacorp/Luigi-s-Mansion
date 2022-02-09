@@ -8,4 +8,4 @@ execute if entity @s[scores={Dialog=130}] as @e[type=!minecraft:player,limit=1] 
 execute if entity @s[scores={Dialog=130}] run data modify storage luigis_mansion:data current_state.current_data.blackout set value 1b
 execute if entity @s[scores={Dialog=190}] run scoreboard players set @a GBHCall 11
 tag @s[scores={Dialog=190}] remove blackout_lightning
-scoreboard players reset @s[scores={Dialog=190}] Dialog
+scoreboard players set @s[scores={Dialog=190}] Dialog 0

@@ -2,7 +2,7 @@ execute if entity @s[tag=dying,tag=boo_death] run function luigis_mansion:entiti
 execute if entity @s[tag=dying,tag=boo_hurt] run function luigis_mansion:entities/ghost/death
 
 execute if entity @s[tag=dying,scores={DeathTime=1}] if data storage luigis_mansion:data current_state.current_data.portrait_ghosts.king_boo{loot_at_0:1b} run function luigis_mansion:entities/king_boo/drop_loot
-execute if entity @s[tag=captured] run function luigis_mansion:entities/king_boo/at_death
+execute if entity @s[tag=dead] run function luigis_mansion:entities/king_boo/at_death
 
 execute if entity @s[tag=!boo_hurt,tag=fleeing,tag=!dying] run function luigis_mansion:entities/king_boo/hurt
 execute if entity @s[tag=boo_hurt,tag=!dying] run function luigis_mansion:entities/king_boo/hurt
@@ -19,7 +19,7 @@ execute at @s[tag=complain] run function luigis_mansion:animations/boo/hurt
 execute at @s[tag=appear] run function luigis_mansion:animations/boo/appear
 execute at @s[tag=fleeing] run function luigis_mansion:animations/boo/flee
 execute at @s[tag=!fleeing,tag=boo_hurt] run function luigis_mansion:animations/boo/hurt
-execute at @s[tag=!fleeing,tag=!boo_hurt,tag=!magic] run function luigis_mansion:animations/boo/idle
+execute at @s[tag=!fleeing,tag=!boo_hurt,tag=!magic,tag=!complain,tag=!appear,tag=!laugh] run function luigis_mansion:animations/boo/idle
 
 scoreboard players set @s[tag=!boo_hurt,tag=!fleeing,tag=!attack,tag=!laugh,tag=!taunt,tag=!dying,tag=!cutscene] ActionTime 0
 scoreboard players reset @s[tag=!boo_hurt,tag=!fleeing,tag=!attack,tag=!laugh,tag=!taunt,tag=!dying] HurtTime

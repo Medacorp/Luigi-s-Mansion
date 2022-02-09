@@ -22,6 +22,7 @@ scoreboard players set @s SneakTime 0
 scoreboard players set @s Room 0
 scoreboard players set @s KnockbackType 0
 scoreboard players set @s Shrunk 0
+scoreboard players set @s Dialog 0
 gamemode adventure @s
 tag @s add joined
 tag @s add fix_health

@@ -18,6 +18,16 @@ execute if entity @s[tag=walking,tag=!looking_at_map,tag=!riding_poltergust] run
 execute if entity @s[tag=running,tag=!looking_at_map,tag=!riding_poltergust] run function luigis_mansion:animations/luigi/running/left_leg
 execute if entity @s[tag=swimming,tag=!looking_at_map,tag=!riding_poltergust] run function luigis_mansion:animations/luigi/swimming/left_leg
 
+execute at @s[tag=nod] run function luigis_mansion:animations/luigi/nod/left_leg
+execute at @s[tag=thinking] run function luigis_mansion:animations/luigi/thinking/left_leg
+execute at @s[tag=sigh] run function luigis_mansion:animations/luigi/sigh/left_leg
+execute at @s[tag=enthusiastic] run function luigis_mansion:animations/luigi/enthusiastic/left_leg
+execute at @s[tag=answer_phone] run function luigis_mansion:animations/luigi/answer_phone/left_leg
+execute at @s[tag=gameboy_horror] run function luigis_mansion:animations/luigi/gameboy_horror/left_leg
+execute at @s[tag=inspect] run function luigis_mansion:animations/luigi/inspect/left_leg
+execute at @s[scores={KnockbackType=-7}] run function luigis_mansion:animations/luigi/search/bash/left_leg
+execute at @s[scores={KnockbackType=-6}] run function luigis_mansion:animations/luigi/search/hump/left_leg
+execute at @s[scores={KnockbackType=-5..-4}] run function luigis_mansion:animations/luigi/search/knock/left_leg
 execute at @s[scores={KnockbackType=-3..-2}] run function luigis_mansion:animations/luigi/scared/bashed/left_leg
 execute at @s[scores={KnockbackType=-1}] run function luigis_mansion:animations/luigi/scared/left_leg
 execute at @s[scores={KnockbackType=1}] run function luigis_mansion:animations/luigi/knockback/small/left_leg

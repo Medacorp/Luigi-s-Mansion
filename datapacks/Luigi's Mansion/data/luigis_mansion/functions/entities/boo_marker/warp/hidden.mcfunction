@@ -37,4 +37,4 @@ execute if entity @s[scores={Room=68}] if score #cold_storage Ticking matches 1 
 execute if entity @s[scores={Room=69}] if score #sitting_room Ticking matches 1 if data storage luigis_mansion:data current_state.current_data.rooms.sitting_room{cleared:1b} run function luigis_mansion:entities/boo_marker/change_to_hidden_boo
 execute if entity @s[scores={Room=70}] if score #guest_room Ticking matches 1 if data storage luigis_mansion:data current_state.current_data.rooms.guest_room{cleared:1b} run function luigis_mansion:entities/boo_marker/change_to_hidden_boo
 execute if entity @s[scores={Room=71}] if score #the_artists_studio Ticking matches 1 if data storage luigis_mansion:data current_state.current_data.rooms.the_artists_studio{cleared:1b} run function luigis_mansion:entities/boo_marker/change_to_hidden_boo
-execute if entity @s[tag=boo_marker] run function luigis_mansion:entities/boo_marker/warp/hidden_warp
+execute if entity @s[tag=boo_marker] run function luigis_mansion:entities/boo_marker/warp/hidden_move

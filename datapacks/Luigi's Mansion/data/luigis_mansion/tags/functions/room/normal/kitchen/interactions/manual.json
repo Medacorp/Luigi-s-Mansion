@@ -1,5 +1,6 @@
 {
 	"values": [
+		"luigis_mansion:room/normal/kitchen/interactions/manual/chest",
 		"luigis_mansion:room/normal/kitchen/interactions/manual/closet",
 		"luigis_mansion:room/normal/kitchen/interactions/manual/dish_washer",
 		"luigis_mansion:room/normal/kitchen/interactions/manual/fridge",

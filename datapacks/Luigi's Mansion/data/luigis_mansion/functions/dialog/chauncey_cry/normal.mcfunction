@@ -6,4 +6,4 @@ execute if entity @s[scores={Dialog=20}] run stopsound @a music
 execute if entity @s[scores={Dialog=20}] run scoreboard players set @a Music 120
 execute if entity @s[scores={Dialog=21}] run playsound luigis_mansion:block.door.chauncey music @a ~ ~ ~ 1000
 tag @s[scores={Dialog=140}] remove chauncey_cry
-scoreboard players reset @s[scores={Dialog=140}] Dialog
+scoreboard players set @s[scores={Dialog=140}] Dialog 0

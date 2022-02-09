@@ -21,4 +21,4 @@ execute if entity @s[scores={Dialog=120}] positioned 662 22 97 run function luig
 execute if entity @s[scores={Dialog=120}] run function luigis_mansion:room/hidden/astral_hall/wave_1
 teleport @s[x=666.5,y=20.5,z=97.5,distance=1..] 666 20.5 97
 tag @s[scores={Dialog=120}] remove astral_hall_ambush
-scoreboard players reset @s[scores={Dialog=120}] Dialog
+scoreboard players set @s[scores={Dialog=120}] Dialog 0

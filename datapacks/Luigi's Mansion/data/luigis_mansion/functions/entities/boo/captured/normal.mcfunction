@@ -70,7 +70,7 @@ execute if entity @s[tag=tamboorine] run kill @e[tag=tamboorine_trap]
 execute if entity @s[tag=turboo] run kill @e[tag=turboo_trap]
 execute if entity @s[tag=underboo] run kill @e[tag=underboo_trap]
 
-execute if data storage luigis_mansion:data current_state.current_data{boo_counter:49} run function luigis_mansion:spawn_entities/item/gold_diamond
+execute if data storage luigis_mansion:data current_state.current_data{boo_counter:49} positioned ~ ~3 ~ run function luigis_mansion:spawn_entities/item/gold_diamond
 execute if data storage luigis_mansion:data current_state.current_data{boo_counter:4} if entity @a[tag=looking_at_map,limit=1] run function luigis_mansion:items/gameboy_horror/map/display/normal/door/main_hallway_washroom_1
 execute store result score #temp Boos run data get storage luigis_mansion:data current_state.current_data.boo_counter
 execute store result storage luigis_mansion:data current_state.current_data.boo_counter int 1 run scoreboard players add #temp Boos 1

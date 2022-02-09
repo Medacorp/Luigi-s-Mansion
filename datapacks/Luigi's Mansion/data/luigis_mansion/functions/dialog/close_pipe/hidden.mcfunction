@@ -8,4 +8,4 @@ execute if entity @s[scores={Dialog=1}] run data modify storage luigis_mansion:d
 execute if entity @s[scores={Dialog=1}] run playsound luigis_mansion:music.solve_puzzle music @a[scores={Room=67}] ~ ~ ~ 10000
 execute if entity @s[scores={Dialog=31}] run playsound luigis_mansion:music.close_pipe music @a[scores={Room=67}] ~ ~ ~ 10000
 tag @s[scores={Dialog=31}] remove close_pipe
-scoreboard players reset @s[scores={Dialog=31}] Dialog
+scoreboard players set @s[scores={Dialog=31}] Dialog 0

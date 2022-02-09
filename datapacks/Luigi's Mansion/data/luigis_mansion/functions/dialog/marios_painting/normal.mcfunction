@@ -10,4 +10,4 @@ execute if entity @s[scores={Dialog=480}] as @a run function luigis_mansion:othe
 tag @s[scores={Dialog=480}] remove marios_painting
 execute if entity @s[scores={Dialog=480}] run data modify storage luigis_mansion:data current_state.current_data.technical_data merge value {saw_mario:1b}
 execute if entity @s[scores={Dialog=480}] run data modify storage luigis_mansion:data current_state.current_data.technical_data merge value {saw_mario_again:1b}
-scoreboard players reset @s[scores={Dialog=480}] Dialog
+scoreboard players set @s[scores={Dialog=480}] Dialog 0

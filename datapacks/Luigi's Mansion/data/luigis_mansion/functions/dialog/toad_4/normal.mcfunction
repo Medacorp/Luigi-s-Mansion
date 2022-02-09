@@ -41,7 +41,7 @@ execute if entity @s[scores={Dialog=874}] run scoreboard players set @a Toad4Cho
 tag @s[scores={Dialog=874}] remove talk
 execute unless entity @e[tag=same_room,tag=!spectator,distance=..7,limit=1] run tag @s remove talk
 execute if entity @s[tag=!talk] as @a[tag=same_room] run function luigis_mansion:other/music/set/silence
-execute if entity @s[tag=!talk] as @a[scores={Toad4Choice=0..}] run trigger Toad4Choice set 0
+execute if entity @s[tag=!talk] run scoreboard players reset @a[scores={Toad4Choice=0..}] Toad4Choice
 execute if entity @s[tag=!talk,tag=explaining] run scoreboard players set @e[tag=this_model,tag=toad_head,limit=1] AnimationProg 0
 execute if entity @s[tag=!talk,scores={Dialog=..873},tag=happy] run scoreboard players set @e[tag=this_model,tag=toad_head,limit=1] AnimationProg 0
 tag @s[tag=!talk] remove explaining

@@ -49,4 +49,4 @@ execute if entity @s[scores={Dialog=220}] run clone 671 11 -43 679 17 -42 671 11
 execute if entity @s[scores={Dialog=230}] run clone 671 11 -42 679 17 -41 671 11 -41 replace move
 execute if entity @s[scores={Dialog=240}] run clone 671 11 -41 679 17 -40 671 11 -40 replace move
 
-scoreboard players reset @s[scores={Dialog=280}] Dialog
+scoreboard players set @s[scores={Dialog=280}] Dialog 0

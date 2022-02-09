@@ -6,8 +6,13 @@ execute if entity @s[scores={Health=..30},tag=!attack] run data modify storage l
 data modify storage luigis_mansion:data luigi.gliding set from entity @s FallFlying
 execute store result storage luigis_mansion:data luigi.swimming byte 1 if entity @s[tag=swimming]
 execute store result storage luigis_mansion:data luigi.invulnerable byte 1 if entity @s[scores={Invulnerable=1..60}]
-execute store result storage luigis_mansion:data luigi.animation byte 1 run scoreboard players get @s KnockbackType
+execute if entity @s[scores={YellTime=1..}] run data modify storage luigis_mansion:data luigi.tags append value "yelling"
+scoreboard players operation #temp InteractionType = @s InteractionType
+scoreboard players add #temp InteractionType 3
+execute if entity @s[scores={InteractionType=1..}] store result storage luigis_mansion:data luigi.animation byte -1 run scoreboard players get #temp InteractionType
+scoreboard players reset #temp InteractionType
 execute if entity @s[scores={ScareType=1..}] store result storage luigis_mansion:data luigi.animation byte -1 run scoreboard players get @s ScareType
+execute if entity @s[scores={KnockbackType=1..}] store result storage luigis_mansion:data luigi.animation byte 1 run scoreboard players get @s KnockbackType
 data modify storage luigis_mansion:data luigi.mainhand set from entity @s SelectedItem
 data modify storage luigis_mansion:data luigi.offhand set from entity @s Inventory[{Slot:-106b}]
 execute as @e[type=minecraft:armor_stand,tag=luigi_model,tag=!found_owner] if score @s ID = #temp ID run tag @s add this_luigi

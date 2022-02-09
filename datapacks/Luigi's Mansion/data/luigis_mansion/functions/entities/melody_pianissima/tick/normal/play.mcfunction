@@ -28,8 +28,7 @@ execute if entity @s[scores={Dialog=472..998},tag=1] run function luigis_mansion
 execute if entity @s[scores={Dialog=472..998},tag=2] run function luigis_mansion:entities/melody_pianissima/game
 tag @s[scores={Dialog=1000..}] remove 1
 tag @s[scores={Dialog=1000..}] remove 2
-execute if entity @s[scores={Dialog=1000..}] if entity @a[scores={MelodyChoice=1..}] as @a[scores={MelodyChoice=0}] run trigger MelodyChoice set 0
-execute if entity @s[scores={Dialog=1000..}] run scoreboard players set @a MelodyChoice 0
+execute if entity @s[scores={Dialog=1000..}] run scoreboard players reset @a MelodyChoice
 
 scoreboard players set @s[scores={Dialog=1000}] AnimationProg 0
 tag @s[scores={Dialog=1000}] remove listen

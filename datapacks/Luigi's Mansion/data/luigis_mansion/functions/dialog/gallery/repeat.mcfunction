@@ -62,7 +62,7 @@ execute if entity @s[scores={Dialog=1354}] if entity @a[scores={EGaddGallChoice=
 execute if entity @s[scores={Dialog=1354}] run scoreboard players set @a EGaddGallChoice 0
 tag @s[scores={Dialog=1354}] remove talk
 execute unless entity @e[tag=same_room,tag=!spectator,distance=..7,limit=1] run tag @s remove talk
-execute if entity @s[tag=!talk] as @a[scores={EGaddGallChoice=0..}] run trigger EGaddGallChoice set 0
+execute if entity @s[tag=!talk] run scoreboard players reset @a[scores={EGaddGallChoice=0..}] EGaddGallChoice
 scoreboard players set @s[tag=!talk] Dialog 0
 tag @s[tag=!talk] remove listen
 tag @s[tag=!talk] remove nod

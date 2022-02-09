@@ -29,7 +29,7 @@ execute if entity @s[scores={Dialog=74}] if entity @a[scores={EGaddGPRChoice=2},
 execute if entity @s[scores={Dialog=74}] run scoreboard players set @a EGaddGPRChoice 0
 tag @s[scores={Dialog=74}] remove talk
 execute unless entity @e[tag=same_room,tag=!spectator,distance=..7,limit=1] run tag @s remove talk
-execute if entity @s[tag=!talk] as @a[scores={EGaddGPRChoice=0..}] run trigger EGaddGPRChoice set 0
+execute if entity @s[tag=!talk] run scoreboard players reset @a[scores={EGaddGPRChoice=0..}] EGaddGPRChoice
 scoreboard players set @s[tag=!talk] Dialog 0
 tag @s[tag=!talk] remove listen
 tag @s[tag=!talk] remove nod

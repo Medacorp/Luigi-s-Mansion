@@ -17,6 +17,19 @@ execute if entity @s[scores={ActionTime=1},tag=west] if score #mirrored Selected
 execute if entity @s[scores={ActionTime=1},tag=west] if score #mirrored Selected matches 1 run teleport @p[tag=door_target] ~0.5 ~ ~1
 execute if entity @s[scores={ActionTime=1},tag=laundry_room] if score #mirrored Selected matches 0 run teleport @p[tag=door_target] ~0.5 ~ ~-1
 execute if entity @s[scores={ActionTime=1},tag=laundry_room] if score #mirrored Selected matches 1 run teleport @p[tag=door_target] ~0.5 ~ ~1
+execute if entity @s[scores={ActionTime=1}] at @p[tag=door_target,distance=..3,scores={KnockbackTime=10,KnockbackType=1,Sound=0,Health=41..,Shrunk=0}] run playsound luigis_mansion:entity.player.hurt_scare.high_health player @a[tag=same_room] ~ ~ ~ 1
+execute if entity @s[scores={ActionTime=1}] at @p[tag=door_target,distance=..3,scores={KnockbackTime=10,KnockbackType=1,Sound=0,Health=41..,Shrunk=1..}] run playsound luigis_mansion:entity.player.hurt_scare.high_health player @a[tag=same_room] ~ ~ ~ 1 2
+execute if entity @s[scores={ActionTime=1}] at @p[tag=door_target,distance=..3,scores={KnockbackTime=10,KnockbackType=1,Sound=0,Health=..40,Shrunk=0}] run playsound luigis_mansion:entity.player.hurt_scare.low_health player @a[tag=same_room] ~ ~ ~ 1
+execute if entity @s[scores={ActionTime=1}] at @p[tag=door_target,distance=..3,scores={KnockbackTime=10,KnockbackType=1,Sound=0,Health=..40,Shrunk=1..}] run playsound luigis_mansion:entity.player.hurt_scare.low_health player @a[tag=same_room] ~ ~ ~ 1 2
+execute if entity @s[scores={ActionTime=1}] run scoreboard players set @p[tag=door_target,distance=..3,scores={KnockbackTime=10,KnockbackType=1,Sound=0}] Sound 5
+execute if entity @s[scores={ActionTime=6}] at @p[tag=door_target,distance=..3,scores={KnockbackTime=10,KnockbackType=1,Sound=0,Shrunk=0}] run playsound luigis_mansion:entity.player.hurt_little player @a[tag=same_room] ~ ~ ~ 1
+execute if entity @s[scores={ActionTime=6}] at @p[tag=door_target,distance=..3,scores={KnockbackTime=10,KnockbackType=1,Sound=0,Shrunk=1..}] run playsound luigis_mansion:entity.player.hurt_little player @a[tag=same_room] ~ ~ ~ 1 2
+execute if entity @s[scores={ActionTime=6}] run scoreboard players set @p[tag=door_target,distance=..3,scores={KnockbackTime=10,KnockbackType=1,Sound=0}] Sound 29
+execute if entity @s[scores={ActionTime=35}] at @p[tag=door_target,distance=..3,scores={KnockbackTime=10,KnockbackType=1,Sound=0,Health=41..,Shrunk=0}] run playsound luigis_mansion:entity.player.sigh.high_health player @a[tag=same_room] ~ ~ ~ 1
+execute if entity @s[scores={ActionTime=35}] at @p[tag=door_target,distance=..3,scores={KnockbackTime=10,KnockbackType=1,Sound=0,Health=41..,Shrunk=1..}] run playsound luigis_mansion:entity.player.sigh.high_health player @a[tag=same_room] ~ ~ ~ 1 2
+execute if entity @s[scores={ActionTime=35}] at @p[tag=door_target,distance=..3,scores={KnockbackTime=10,KnockbackType=1,Sound=0,Health=..40,Shrunk=0}] run playsound luigis_mansion:entity.player.sigh.low_health player @a[tag=same_room] ~ ~ ~ 1
+execute if entity @s[scores={ActionTime=35}] at @p[tag=door_target,distance=..3,scores={KnockbackTime=10,KnockbackType=1,Sound=0,Health=..40,Shrunk=1..}] run playsound luigis_mansion:entity.player.sigh.low_health player @a[tag=same_room] ~ ~ ~ 1 2
+execute if entity @s[scores={ActionTime=35}] run scoreboard players set @p[tag=door_target,distance=..3,scores={KnockbackTime=10,KnockbackType=1,Sound=0}] Sound 20
 execute if entity @s[scores={ActionTime=2}] run scoreboard players set @p[tag=door_target,distance=..3] ForcedDamage 7
 execute if entity @s[scores={ActionTime=2..20},tag=north] run teleport @p[tag=door_target,distance=..3] ~1 ~ ~0.5
 execute if entity @s[scores={ActionTime=2..20},tag=south] run teleport @p[tag=door_target,distance=..3] ~1 ~ ~-0.5

@@ -1,8 +1,15 @@
 playsound luigis_mansion:item.red_ruby.obtain player @a[tag=same_room] ~ ~ ~ 1
 playsound luigis_mansion:item.item.get music @a[tag=same_room] ~ ~ ~ 1
+execute if entity @a[tag=collector,limit=1,scores={Health=41..,Shrunk=0}] run playsound luigis_mansion:entity.player.show_item.high_health player @a[tag=same_room] ~ ~ ~ 1
+execute if entity @a[tag=collector,limit=1,scores={Health=41..,Shrunk=1..}] run playsound luigis_mansion:entity.player.show_item.high_health player @a[tag=same_room] ~ ~ ~ 1 2
+execute if entity @a[tag=collector,limit=1,scores={Health=..40,Shrunk=0}] run playsound luigis_mansion:entity.player.show_item.low_health player @a[tag=same_room] ~ ~ ~ 1
+execute if entity @a[tag=collector,limit=1,scores={Health=..40,Shrunk=1..}] run playsound luigis_mansion:entity.player.show_item.low_health player @a[tag=same_room] ~ ~ ~ 1 2
+execute as @a[tag=collector,tag=looking_at_map,limit=1,scores={Health=41..,Shrunk=0}] at @s run playsound luigis_mansion:entity.player.show_item.high_health player @s ~ ~ ~ 1
+execute as @a[tag=collector,tag=looking_at_map,limit=1,scores={Health=41..,Shrunk=1..}] at @s run playsound luigis_mansion:entity.player.show_item.high_health player @s ~ ~ ~ 1 2
+execute as @a[tag=collector,tag=looking_at_map,limit=1,scores={Health=..40,Shrunk=0}] at @s run playsound luigis_mansion:entity.player.show_item.low_health player @s ~ ~ ~ 1
+execute as @a[tag=collector,tag=looking_at_map,limit=1,scores={Health=..40,Shrunk=1..}] at @s run playsound luigis_mansion:entity.player.show_item.low_health player @s ~ ~ ~ 1 2
+scoreboard players set @a[tag=collector,limit=1] Sound 70
 scoreboard players set @a[tag=same_room,scores={Music=..70}] Music 70
-execute positioned ~ ~1.3 ~ run tag @a[tag=same_room,tag=!spectator,sort=nearest,limit=1] add me
-execute unless entity @a[tag=me,limit=1] positioned ~ ~1.3 ~ as @e[tag=same_room,tag=gameboy_horror_location,sort=nearest,limit=1] run function luigis_mansion:entities/gameboy_horror_location/tag_for_money
 function luigis_mansion:items/retreive_player_money/retreive
 execute store result score #temp Time run data get storage luigis_mansion:data current_state.my_money.money.red_ruby
 execute unless score #temp ActionTime matches 2147483647 store result storage luigis_mansion:data current_state.my_money.money.red_ruby int 1 run scoreboard players add #temp Time 1

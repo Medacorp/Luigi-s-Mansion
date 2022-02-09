@@ -49,7 +49,7 @@ execute if entity @s[scores={Dialog=310}] if entity @a[scores={TwinsChoice=2}] r
 execute if entity @s[scores={Dialog=334}] run scoreboard players set @a TwinsChoice 0
 tag @s[scores={Dialog=334}] add remove_from_existence
 execute if entity @s[tag=remove_from_existence] as @a[tag=same_room] run function luigis_mansion:other/music/set/silence
-execute if entity @s[tag=remove_from_existence] as @a[scores={TwinsChoice=0..}] run trigger TwinsChoice set 0
+execute if entity @s[tag=remove_from_existence] run scoreboard players reset @a[scores={TwinsChoice=0..}] TwinsChoice
 execute if entity @s[tag=remove_from_existence] run tag @e[tag=henry,tag=dialog,limit=1] add remove_from_existence
 execute if entity @s[tag=remove_from_existence] run teleport @e[tag=henry,tag=dialog,limit=1] ~ ~-100 ~
 teleport @s[tag=remove_from_existence] ~ ~-100 ~

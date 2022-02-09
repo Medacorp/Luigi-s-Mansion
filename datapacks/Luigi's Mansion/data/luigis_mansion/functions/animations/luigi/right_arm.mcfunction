@@ -25,12 +25,23 @@ execute if entity @s[tag=!looking_at_map,tag=!cold_room_idle,tag=!high_health_id
 execute if entity @s[tag=!looking_at_map,tag=!cold_room_idle,tag=!high_health_idle,tag=!low_health_idle,scores={KnockbackType=0,Pull=0..9}] if entity @s[tag=low_health,tag=!holding_poltergust] run function luigis_mansion:animations/luigi/idle/hunched/right_arm
 
 # Move animations
-execute if entity @s[tag=sneaking,tag=!looking_at_map,tag=!low_health,tag=!riding_poltergust,tag=!holding_poltergust] run function luigis_mansion:animations/luigi/sneaking/right_arm
-execute if entity @s[tag=walking,tag=!looking_at_map,tag=!low_health,tag=!riding_poltergust,tag=!holding_poltergust] run function luigis_mansion:animations/luigi/walking/right_arm
-execute if entity @s[tag=running,tag=!looking_at_map,tag=!low_health,tag=!riding_poltergust,tag=!holding_poltergust] run function luigis_mansion:animations/luigi/running/right_arm
-execute if entity @s[tag=swimming,tag=!looking_at_map,tag=!riding_poltergust,tag=!holding_poltergust] run function luigis_mansion:animations/luigi/swimming/right_arm
+execute if entity @s[tag=sneaking,tag=!looking_at_map,tag=!low_health,tag=!riding_poltergust,tag=!holding_poltergust,tag=!yelling] run function luigis_mansion:animations/luigi/sneaking/right_arm
+execute if entity @s[tag=walking,tag=!looking_at_map,tag=!low_health,tag=!riding_poltergust,tag=!holding_poltergust,tag=!yelling] run function luigis_mansion:animations/luigi/walking/right_arm
+execute if entity @s[tag=running,tag=!looking_at_map,tag=!low_health,tag=!riding_poltergust,tag=!holding_poltergust,tag=!yelling] run function luigis_mansion:animations/luigi/running/right_arm
+execute if entity @s[tag=swimming,tag=!looking_at_map,tag=!riding_poltergust,tag=!holding_poltergust,tag=!yelling] run function luigis_mansion:animations/luigi/swimming/right_arm
 execute if entity @s[tag=looking_at_map] run function luigis_mansion:animations/luigi/looking_at_map/right_arm
 
+execute at @s[tag=yelling] unless entity @s[tag=held_item,tag=holding_poltergust] run function luigis_mansion:animations/luigi/yelling/right_arm
+execute at @s[tag=nod] unless entity @s[tag=held_item,tag=holding_poltergust] run function luigis_mansion:animations/luigi/nod/right_arm
+execute at @s[tag=thinking] unless entity @s[tag=held_item,tag=holding_poltergust] run function luigis_mansion:animations/luigi/thinking/right_arm
+execute at @s[tag=sigh] unless entity @s[tag=held_item,tag=holding_poltergust] run function luigis_mansion:animations/luigi/sigh/right_arm
+execute at @s[tag=enthusiastic] unless entity @s[tag=held_item,tag=holding_poltergust] run function luigis_mansion:animations/luigi/enthusiastic/right_arm
+execute at @s[tag=answer_phone] unless entity @s[tag=held_item,tag=holding_poltergust] run function luigis_mansion:animations/luigi/answer_phone/right_arm
+execute at @s[tag=gameboy_horror] unless entity @s[tag=held_item,tag=holding_poltergust] run function luigis_mansion:animations/luigi/gameboy_horror/right_arm
+execute at @s[tag=inspect] unless entity @s[tag=held_item,tag=holding_poltergust] run function luigis_mansion:animations/luigi/inspect/right_arm
+execute at @s[scores={KnockbackType=-7}] unless entity @s[tag=held_item,tag=holding_poltergust] run function luigis_mansion:animations/luigi/search/bash/right_arm
+execute at @s[scores={KnockbackType=-6}] unless entity @s[tag=held_item,tag=holding_poltergust] run function luigis_mansion:animations/luigi/search/hump/right_arm
+execute at @s[scores={KnockbackType=-5..-4}] unless entity @s[tag=held_item,tag=holding_poltergust] run function luigis_mansion:animations/luigi/search/knock/right_arm
 execute at @s[scores={KnockbackType=-3..-2}] unless entity @s[tag=held_item,tag=holding_poltergust] run function luigis_mansion:animations/luigi/scared/bashed/right_arm
 execute at @s[scores={KnockbackType=-1}] unless entity @s[tag=held_item,tag=holding_poltergust] run function luigis_mansion:animations/luigi/scared/right_arm
 execute at @s[scores={KnockbackType=1}] unless entity @s[tag=held_item,tag=holding_poltergust] run function luigis_mansion:animations/luigi/knockback/small/right_arm

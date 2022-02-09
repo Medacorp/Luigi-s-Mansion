@@ -21,4 +21,4 @@ teleport @s[x=689.5,y=11,z=79.5,distance=..1.5] ~-1.5 ~ ~
 execute if entity @s[scores={Dialog=460}] as @a run function luigis_mansion:other/music/set/silence
 execute if entity @s[scores={Dialog=460}] run data modify storage luigis_mansion:data current_state.current_data.technical_data merge value {released_boos:1b}
 execute if entity @s[scores={Dialog=460}] run scoreboard players set @a GBHCall 4
-scoreboard players reset @s[scores={Dialog=460}] Dialog
+scoreboard players set @s[scores={Dialog=460}] Dialog 0

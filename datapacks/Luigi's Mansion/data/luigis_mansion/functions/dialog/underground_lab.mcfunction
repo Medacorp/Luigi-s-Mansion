@@ -58,8 +58,8 @@ execute if entity @s[scores={Dialog=74}] if entity @a[scores={EGaddLabChoice=5},
 execute if entity @s[scores={Dialog=-1}] run scoreboard players set @a EGaddLabChoice 0
 tag @s[scores={Dialog=-1}] remove talk
 execute unless entity @e[tag=same_room,tag=!spectator,distance=..7,limit=1] run tag @s remove talk
-execute if entity @s[tag=!talk] as @a[scores={EGaddLabChoice=0..}] run trigger EGaddLabChoice set 0
-execute if entity @s[tag=!talk] as @a unless entity @s[scores={MansionChoice=-1}] run trigger MansionChoice set -1
+execute if entity @s[tag=!talk] run scoreboard players reset @a[scores={EGaddLabChoice=0..}] EGaddLabChoice
+execute if entity @s[tag=!talk] run scoreboard players reset @a MansionChoice
 scoreboard players set @s[tag=!talk] Dialog 0
 tag @s[tag=!talk] remove nod
 tag @s[tag=!talk] remove listen

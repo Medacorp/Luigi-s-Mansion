@@ -9,4 +9,5 @@ execute at @s run function #luigis_mansion:entities/item/physics
 
 execute if entity @s[tag=picked_up] run function #luigis_mansion:entities/item/picked_up
 tag @s[tag=picked_up] add dead
+tag @a[tag=collector] remove collector
 execute at @s[scores={LightX=-2147483648..}] run function luigis_mansion:other/cast_shadow/1_tall

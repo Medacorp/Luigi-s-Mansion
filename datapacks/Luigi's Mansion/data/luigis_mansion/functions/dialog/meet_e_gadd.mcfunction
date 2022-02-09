@@ -4,6 +4,8 @@ execute if entity @e[tag=gold_ghost,tag=dialog] run scoreboard players set @a[sc
 scoreboard players set @s[scores={Dialog=..72,IdleTime=19..}] IdleTime 18
 scoreboard players set @e[tag=gold_ghost,tag=dialog] Sound -1
 execute if entity @s[scores={Dialog=1}] run playsound luigis_mansion:ambience.parlor_wind ambient @a[tag=same_room] ~ ~ ~ 1000
+execute if entity @s[scores={Dialog=1}] run playsound luigis_mansion:entity.player.scare_causion player @a[tag=same_room] ~ ~ ~ 1
+scoreboard players set @s[scores={Dialog=1}] Sound 60
 execute if entity @s[scores={Dialog=1..81}] run stopsound @a[tag=same_room,gamemode=!spectator] music
 execute if entity @s[scores={Dialog=1..81}] as @a[tag=same_room,gamemode=!spectator] run function luigis_mansion:other/music/set/non_overwritten_silence
 execute if entity @s[scores={Dialog=1..81}] run scoreboard players set @a[tag=same_room,gamemode=!spectator] Music 1308
@@ -214,7 +216,7 @@ execute if entity @s[scores={Dialog=1388}] as @a[scores={MusicType=-1}] run func
 execute if entity @s[scores={Dialog=1388}] run data modify storage luigis_mansion:data {} merge value {found_e_gadd:1b}
 execute if entity @s[scores={Dialog=1388}] as @a run function luigis_mansion:room/underground_lab/warp_to
 tag @s[scores={Dialog=1388}] remove meet_e_gadd
-scoreboard players reset @s[scores={Dialog=1388}] Dialog
+scoreboard players set @s[scores={Dialog=1388}] Dialog 0
 
 tag @e[tag=gold_ghost,tag=hidden,tag=!spawn,tag=dialog,limit=1] add dead
 tag @e[tag=dialog] remove stunable

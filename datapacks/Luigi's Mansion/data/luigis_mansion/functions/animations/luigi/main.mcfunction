@@ -1,6 +1,6 @@
-execute if entity @s[tag=!made_error,tag=was_sneaking,tag=!was_swimming,tag=!riding_poltergust] unless data storage luigis_mansion:data luigi{tags:["sneaking"]} run function luigis_mansion:animations/luigi/reset_pose
-execute if entity @s[tag=!made_error,tag=was_walking,tag=!was_swimming,tag=!riding_poltergust] unless data storage luigis_mansion:data luigi{tags:["walking"]} run function luigis_mansion:animations/luigi/reset_pose
-execute if entity @s[tag=!made_error,tag=was_running,tag=!was_swimming,tag=!riding_poltergust] unless data storage luigis_mansion:data luigi{tags:["running"]} run function luigis_mansion:animations/luigi/reset_pose
+execute if entity @s[tag=!made_error,tag=was_sneaking,tag=!was_swimming,tag=!riding_poltergust] unless entity @s[tag=yelling,tag=!right_leg,tag=!left_leg] unless data storage luigis_mansion:data luigi{tags:["sneaking"]} run function luigis_mansion:animations/luigi/reset_pose
+execute if entity @s[tag=!made_error,tag=was_walking,tag=!was_swimming,tag=!riding_poltergust] unless entity @s[tag=yelling,tag=!right_leg,tag=!left_leg] unless data storage luigis_mansion:data luigi{tags:["walking"]} run function luigis_mansion:animations/luigi/reset_pose
+execute if entity @s[tag=!made_error,tag=was_running,tag=!was_swimming,tag=!riding_poltergust] unless entity @s[tag=yelling,tag=!right_leg,tag=!left_leg] unless data storage luigis_mansion:data luigi{tags:["running"]} run function luigis_mansion:animations/luigi/reset_pose
 execute if entity @s[tag=was_swimming] unless data storage luigis_mansion:data luigi{tags:["swimming"]} run function luigis_mansion:animations/luigi/reset_pose
 execute if entity @s[tag=was_looking_at_map] unless data storage luigis_mansion:data luigi{tags:["looking_at_map"]} run function luigis_mansion:animations/luigi/reset_pose
 execute if entity @s[tag=was_cold_room_idle] unless data storage luigis_mansion:data luigi{tags:["cold_room_idle"]} run function luigis_mansion:animations/luigi/reset_pose
@@ -12,6 +12,14 @@ execute if entity @s[tag=!was_high_health_idle] if data storage luigis_mansion:d
 execute if entity @s[scores={Pull=10..}] unless data storage luigis_mansion:data luigi{tags:["made_error"]} run function luigis_mansion:animations/luigi/reset_pose
 execute if entity @s[scores={AnimationProg=0},tag=was_swimming] store result entity @s Pose.Head[0] float 1 run scoreboard players get @s IncreaseAmount
 execute if entity @s[tag=!was_swimming] if data storage luigis_mansion:data luigi{tags:["swimming"]} run function luigis_mansion:animations/luigi/reset_pose
+execute if entity @s[tag=!was_yelling] if data storage luigis_mansion:data luigi{tags:["yelling"]} run function luigis_mansion:animations/luigi/reset_pose
+execute if entity @s[tag=!was_nodding] if data storage luigis_mansion:data luigi{tags:["nod"]} run function luigis_mansion:animations/luigi/reset_pose
+execute if entity @s[tag=!was_thinking] if data storage luigis_mansion:data luigi{tags:["thinking"]} run function luigis_mansion:animations/luigi/reset_pose
+execute if entity @s[tag=!was_sighing] if data storage luigis_mansion:data luigi{tags:["sigh"]} run function luigis_mansion:animations/luigi/reset_pose
+execute if entity @s[tag=!was_enthusiastic] if data storage luigis_mansion:data luigi{tags:["enthusiastic"]} run function luigis_mansion:animations/luigi/reset_pose
+execute if entity @s[tag=!was_answering_phone] if data storage luigis_mansion:data luigi{tags:["answer_phone"]} run function luigis_mansion:animations/luigi/reset_pose
+execute if entity @s[tag=!was_gameboy_horroring] if data storage luigis_mansion:data luigi{tags:["gameboy_horror"]} run function luigis_mansion:animations/luigi/reset_pose
+execute if entity @s[tag=!was_inspecting] if data storage luigis_mansion:data luigi{tags:["inspect"]} run function luigis_mansion:animations/luigi/reset_pose
 execute store result score @s KnockbackType run data get storage luigis_mansion:data luigi.animation
 execute unless score @s ScareType = @s KnockbackType run function luigis_mansion:animations/luigi/reset_pose
 data modify entity @s Tags append from storage luigis_mansion:data luigi.tags[]
@@ -73,6 +81,30 @@ tag @s[tag=riding_poltergust] remove riding_poltergust
 tag @s[tag=flipped_gravity] add was_flipped
 tag @s[tag=!flipped_gravity] remove was_flipped
 tag @s[tag=flipped_gravity] remove flipped_gravity
+tag @s[tag=yelling] add was_yelling
+tag @s[tag=!yelling] remove was_yelling
+tag @s[tag=yelling] remove yelling
+tag @s[tag=nod] add was_nodding
+tag @s[tag=!nod] remove was_nodding
+tag @s[tag=nod] remove nod
+tag @s[tag=thinking] add was_thinking
+tag @s[tag=!thinking] remove was_thinking
+tag @s[tag=thinking] remove thinking
+tag @s[tag=sigh] add was_sighing
+tag @s[tag=!sigh] remove was_sighing
+tag @s[tag=sigh] remove sigh
+tag @s[tag=enthusiastic] add was_enthusiastic
+tag @s[tag=!enthusiastic] remove was_enthusiastic
+tag @s[tag=enthusiastic] remove enthusiastic
+tag @s[tag=answer_phone] add was_answering_phone
+tag @s[tag=!answer_phone] remove was_answering_phone
+tag @s[tag=answer_phone] remove answer_phone
+tag @s[tag=gameboy_horror] add was_gameboy_horroring
+tag @s[tag=!gameboy_horror] remove was_gameboy_horroring
+tag @s[tag=gameboy_horror] remove gameboy_horror
+tag @s[tag=inspect] add was_inspecting
+tag @s[tag=!inspect] remove was_inspecting
+tag @s[tag=inspect] remove inspect
 tag @s[tag=death_animation] remove death_animation
 tag @s[tag=spawn_animation] remove spawn_animation
 tag @s remove dark_room
