@@ -3,11 +3,10 @@ scoreboard players set * ChangedMansion 1
 scoreboard players reset @e ChangedMansion
 
 tellraw @a {"translate":"chat.type.text","with":[{"translate":"luigis_mansion:entity.mansion","color":"green"},{"translate":"luigis_mansion:message.load_mansion.start"}]}
-summon minecraft:marker ~ ~ ~ {Tags:["me"]}
-spreadplayers 774 3 0 1 true @e[type=minecraft:marker,tag=me,limit=1]
-kill @e[type=minecraft:marker,tag=me,limit=1]
+forceload add 774 9
 setblock 771 97 13 minecraft:soul_fire
 setblock 771 97 2 minecraft:soul_fire
+forceload remove 774 9
 forceload add 749 -66 615 81
 setblock 711 138 78 minecraft:structure_block[mode=load]{mode:"LOAD",name:"luigis_mansion:mansion/mansion/24",posX:1,posY:0,posZ:1,sizeX:37,sizeY:13,sizeZ:2,ignoreEntities:1b}
 setblock 711 139 78 minecraft:redstone_block
