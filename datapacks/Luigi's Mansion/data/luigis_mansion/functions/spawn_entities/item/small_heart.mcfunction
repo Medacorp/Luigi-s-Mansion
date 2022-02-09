@@ -15,4 +15,4 @@ execute as @e[tag=this_entity,limit=1] run data modify entity @s Rotation[1] set
 kill @e[distance=..0.7,type=minecraft:item,nbt={Item:{id:"minecraft:carved_pumpkin"}}]
 tag @e[tag=this_entity,limit=1] remove this_entity
 playsound luigis_mansion:item.heart.spawn player @a ~ ~ ~ 1
-scoreboard players reset #temp Selected
+scoreboard players reset #temp Money

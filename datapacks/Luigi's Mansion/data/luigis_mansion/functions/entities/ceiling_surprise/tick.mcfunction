@@ -8,12 +8,12 @@ scoreboard players set @s[scores={ElementHurtTime=0},tag=element_hurt] Sound 30
 execute if entity @s[scores={Sound=0},tag=fleeing,tag=!dying] run playsound luigis_mansion:entity.ceiling_surprise.flee hostile @a[tag=same_room] ~ ~ ~ 1
 scoreboard players set @s[scores={Sound=0},tag=fleeing,tag=!dying] Sound 40
 
-execute if entity @e[tag=same_room,tag=!spectator,distance=..0.7,limit=1] if entity @s[tag=!vanish,tag=!appear] if entity @s[tag=!dying,tag=!dead,tag=!removed_from_existence,tag=!hurt,tag=!fleeing,tag=!element_hurt] run function luigis_mansion:entities/ceiling_surprise/collide
+execute if entity @e[tag=same_room,tag=!spectator,distance=..0.7,limit=1] if entity @s[tag=!vanish,tag=!appear] if entity @s[tag=!dying,tag=!dead,tag=!captured,tag=!removed_from_existence,tag=!hurt,tag=!fleeing,tag=!element_hurt] run function luigis_mansion:entities/ceiling_surprise/collide
 
 execute at @s[tag=!hurt,tag=!element_hurt,tag=!fleeing,tag=!collided,tag=!appear,tag=!vanish,scores={StunTime=0,SpawnTime=20..}] facing entity @e[tag=same_room,tag=!spectator,sort=nearest,limit=1] feet rotated ~ 0 run teleport @s ~ ~ ~ ~ ~
 execute if entity @s[tag=!hurt,tag=!element_hurt,tag=!fleeing,tag=!collided,tag=laugh,tag=!vanish,scores={StunTime=0}] run function luigis_mansion:entities/ceiling_surprise/laugh
 execute if entity @s[tag=!hurt,tag=!element_hurt,tag=!fleeing,tag=!collided,tag=complain,tag=!vanish,scores={StunTime=0}] run function luigis_mansion:entities/ceiling_surprise/complain
-execute if entity @s[tag=!element_hurt,tag=!fleeing,tag=collided,tag=!vanish,scores={StunTime=0}] if entity @s[tag=!dying,tag=!dead,tag=!removed_from_existence] run function luigis_mansion:entities/ghost/collided
+execute if entity @s[tag=!element_hurt,tag=!fleeing,tag=collided,tag=!vanish,scores={StunTime=0}] if entity @s[tag=!dying,tag=!dead,tag=!captured,tag=!removed_from_existence] run function luigis_mansion:entities/ghost/collided
 execute if entity @s[tag=vanish] run function luigis_mansion:entities/ceiling_surprise/vanish
 execute if entity @s[tag=appear] run function luigis_mansion:entities/ceiling_surprise/appear
 execute at @s[tag=!hurt,tag=!element_hurt,tag=!fleeing,tag=!collided,tag=!vanish,tag=!laugh,tag=!complain,tag=!appear,scores={StunTime=0}] run function luigis_mansion:animations/ceiling_ghost/haunt

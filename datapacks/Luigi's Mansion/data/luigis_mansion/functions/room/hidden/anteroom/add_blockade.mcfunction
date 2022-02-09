@@ -1,6 +1,8 @@
-playsound luigis_mansion:block.blockade.spawn block @a 693 20 -11 1
+execute as @a[scores={Room=4},tag=looking_at_map] run function luigis_mansion:items/gameboy_horror/map/close
+execute as @a[scores={Room=4}] run function luigis_mansion:entities/player/scare
+playsound luigis_mansion:block.blockade.spawn block @a[scores={Room=4}] 693 20 -11 1
 setblock 693 20 -11 minecraft:iron_trapdoor[facing=west,open=true,half=bottom]
 setblock 693 21 -11 minecraft:iron_trapdoor[facing=west,open=true,half=bottom]
-playsound luigis_mansion:block.blockade.spawn block @a 689 20 -26 1
+playsound luigis_mansion:block.blockade.spawn block @a[scores={Room=4}] 689 20 -26 1
 setblock 689 20 -26 minecraft:iron_trapdoor[facing=south,open=true,half=bottom]
 setblock 689 21 -26 minecraft:iron_trapdoor[facing=south,open=true,half=bottom]

@@ -15,7 +15,7 @@ execute if entity @s[scores={Sound=0},tag=fleeing,tag=!dying] run playsound luig
 execute if entity @s[scores={Sound=0},tag=!vanish,tag=!fleeing,tag=!attack,tag=!smug,tag=!laugh,tag=!complain,tag=!appear,tag=!basher] run playsound luigis_mansion:entity.flash.ambient hostile @a[tag=same_room] ~ ~ ~ 1
 scoreboard players set @s[scores={Sound=0}] Sound 40
 
-execute if entity @e[tag=same_room,tag=!spectator,distance=..0.7,limit=1] if entity @s[tag=!vanish,tag=!appear,tag=!dying,tag=!dead,tag=!removed_from_existence,tag=!basher,tag=!hurt,tag=!fleeing,tag=!element_hurt] unless entity @s[tag=attack,scores={ActionTime=41..60}] run function luigis_mansion:entities/flash/collide
+execute if entity @e[tag=same_room,tag=!spectator,distance=..0.7,limit=1] if entity @s[tag=!vanish,tag=!appear,tag=!dying,tag=!dead,tag=!captured,tag=!removed_from_existence,tag=!basher,tag=!hurt,tag=!fleeing,tag=!element_hurt] unless entity @s[tag=attack,scores={ActionTime=41..60}] run function luigis_mansion:entities/flash/collide
 execute if entity @s[tag=!basher] run function luigis_mansion:entities/flash/select_attack/punch
 execute if entity @s[tag=basher] run function luigis_mansion:entities/flash/select_attack/basher
 
@@ -23,7 +23,7 @@ execute at @s[tag=!hurt,tag=!element_hurt,tag=!fleeing,tag=!attack,tag=!collided
 execute at @s[tag=!hurt,tag=!element_hurt,tag=!fleeing,tag=!attack,tag=!collided,tag=!smug,tag=!vanish,tag=!laugh,tag=!complain,tag=!appear,scores={StunTime=0}] run function luigis_mansion:entities/ghost/move
 execute if entity @s[tag=!hurt,tag=!element_hurt,tag=!fleeing,tag=!attack,tag=!collided,tag=!smug,tag=laugh,scores={StunTime=0}] run function luigis_mansion:entities/flash/laugh
 execute if entity @s[tag=!hurt,tag=!element_hurt,tag=!fleeing,tag=!attack,tag=!collided,tag=!smug,tag=complain,scores={StunTime=0}] run function luigis_mansion:entities/flash/complain
-execute if entity @s[tag=!element_hurt,tag=!fleeing,tag=collided,scores={StunTime=0}] if entity @s[tag=!dying,tag=!dead,tag=!removed_from_existence] run function luigis_mansion:entities/ghost/collided
+execute if entity @s[tag=!element_hurt,tag=!fleeing,tag=collided,scores={StunTime=0}] if entity @s[tag=!dying,tag=!dead,tag=!captured,tag=!removed_from_existence] run function luigis_mansion:entities/ghost/collided
 tag @s[tag=!hurt,tag=!element_hurt,tag=!fleeing,tag=!attack,tag=!collided,tag=!laugh,tag=!complain,tag=!smug,scores={StunTime=0,SpawnTime=120..}] add vanish
 execute if entity @s[tag=vanish] run function luigis_mansion:entities/flash/vanish
 execute if entity @s[tag=smug] run function luigis_mansion:entities/flash/smug
