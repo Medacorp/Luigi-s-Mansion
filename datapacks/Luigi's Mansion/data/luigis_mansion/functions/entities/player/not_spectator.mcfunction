@@ -1,6 +1,10 @@
 tag @s remove dark_room
 function #luigis_mansion:room/dark_room
 
+execute if entity @s[scores={Health=..0},tag=!death_animation,tag=!revive_animation] run function luigis_mansion:entities/player/death
+execute if entity @s[scores={Health=1..},tag=already_added_to_list] run function luigis_mansion:entities/player/remove_dead_entry
+tag @s[scores={Health=1..}] remove already_added_to_list
+
 scoreboard players remove @s[scores={OpenMapTime=1..}] OpenMapTime 1
 execute if entity @s[scores={OpenMapTime=0}] run function luigis_mansion:items/gameboy_horror/map/open
 execute if entity @s[tag=!looking_at_map,tag=!death_animation,tag=!revive_animation] unless entity @s[scores={KnockbackType=2..}] unless entity @s[scores={ScareType=2..}] run function #luigis_mansion:items
@@ -16,10 +20,6 @@ execute if entity @s[scores={Talk=1..},tag=!death_animation,tag=!revive_animatio
 scoreboard players set @s[scores={Talk=1..}] Talk 0
 
 execute unless entity @a[scores={GBHCall=1..},limit=1] rotated ~ 0 positioned ^ ^ ^-4 run function luigis_mansion:entities/player/spawn_ghosts
-
-execute if entity @s[scores={Health=..0},tag=!death_animation,tag=!revive_animation] run function luigis_mansion:entities/player/death
-execute if entity @s[scores={Health=1..},tag=already_added_to_list] run function luigis_mansion:entities/player/remove_dead_entry
-tag @s[scores={Health=1..}] remove already_added_to_list
 
 function luigis_mansion:entities/player/health_display
 clear @s[advancements={luigis_mansion:lab/lab=true}] minecraft:diamond_pickaxe{luigis_mansion:{id:"luigis_mansion:contest_reward_map"}}
@@ -40,7 +40,7 @@ scoreboard players reset @s[scores={MaxHealthTime=200}] MaxHealthTime
 
 execute if entity @s[scores={Walk=0,Run=0,Sneak=0,Jump=0,IdleTime=0..},tag=!sneak_pos,tag=!spectator,tag=!looking_at_map,tag=!warp,tag=!scanning,tag=!grabbed,tag=!poltergust_selected,tag=!riding_poltergust] run function luigis_mansion:entities/player/idle
 execute if entity @s[scores={IdleTime=..-1}] run function luigis_mansion:entities/player/idle
-execute unless entity @s[scores={IdleTime=..-1}] unless entity @s[scores={Walk=0,Run=0,Sneak=0,Jump=0},tag=!sneak_pos,tag=!spectator,tag=!looking_at_map,tag=!warp,tag=!scanning,tag=!grabbed,tag=!poltergust_selected,tag=!riding_poltergust] run function luigis_mansion:entities/player/idle_reset
+execute unless entity @s[scores={IdleTime=..-1}] unless entity @s[scores={Walk=0,Run=0,Sneak=0,Jump=0},tag=!sneak_pos,tag=!spectator,tag=!looking_at_map,tag=!warp,tag=!scanning,tag=!grabbed,tag=!poltergust_selected,tag=!riding_poltergust] run function luigis_mansion:entities/player/animation/set/none
 
 execute unless entity @s[scores={Walk=0,Run=0,Sneak=0}] if entity @s[tag=!looking_at_map] run function luigis_mansion:entities/player/walk_dust
 

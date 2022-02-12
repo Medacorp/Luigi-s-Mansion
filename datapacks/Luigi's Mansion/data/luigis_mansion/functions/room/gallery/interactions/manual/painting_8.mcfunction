@@ -1,0 +1,2 @@
+execute if entity @s[x=746.5,y=79,z=-25.5,distance=..0.7,tag=check] as @a[tag=searcher,limit=1] run function luigis_mansion:entities/player/animation/set/inspect
+execute if entity @s[x=746.5,y=79,z=-25.5,distance=..0.7,tag=check] run kill @e[tag=interact,tag=manual,tag=check]

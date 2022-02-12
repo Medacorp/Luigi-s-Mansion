@@ -14,6 +14,7 @@ When making your own, consider supporting these, as players may instal them as w
 
 * [Luigi's Mansion 3DS Remake](https://github.com/Dhranios/Luigi-s-Mansion-3DS-Remake)
 * [Luigi's Beta Mansion](https://github.com/Dhranios/Luigi-s-Beta-Mansion)
+* [Extensive Training](https://github.com/Dhranios/Extensive-Training)
 
 # Variables of interest
 

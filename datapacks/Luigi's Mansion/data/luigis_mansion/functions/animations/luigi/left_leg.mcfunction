@@ -25,10 +25,11 @@ execute at @s[tag=enthusiastic] run function luigis_mansion:animations/luigi/ent
 execute at @s[tag=answer_phone] run function luigis_mansion:animations/luigi/answer_phone/left_leg
 execute at @s[tag=gameboy_horror] run function luigis_mansion:animations/luigi/gameboy_horror/left_leg
 execute at @s[tag=inspect] run function luigis_mansion:animations/luigi/inspect/left_leg
-execute at @s[scores={KnockbackType=-7}] run function luigis_mansion:animations/luigi/search/bash/left_leg
-execute at @s[scores={KnockbackType=-6}] run function luigis_mansion:animations/luigi/search/hump/left_leg
-execute at @s[scores={KnockbackType=-5..-4}] run function luigis_mansion:animations/luigi/search/knock/left_leg
-execute at @s[scores={KnockbackType=-3..-2}] run function luigis_mansion:animations/luigi/scared/bashed/left_leg
+execute at @s[scores={KnockbackType=-8}] run function luigis_mansion:animations/luigi/search/bash/left_leg
+execute at @s[scores={KnockbackType=-7}] run function luigis_mansion:animations/luigi/search/hump/left_leg
+execute at @s[scores={KnockbackType=-6..-5}] run function luigis_mansion:animations/luigi/search/knock/left_leg
+execute at @s[scores={KnockbackType=-4..-3}] run function luigis_mansion:animations/luigi/scared/bashed/left_leg
+execute at @s[scores={KnockbackType=-2}] run function luigis_mansion:animations/luigi/scared/freeze/left_leg
 execute at @s[scores={KnockbackType=-1}] run function luigis_mansion:animations/luigi/scared/left_leg
 execute at @s[scores={KnockbackType=1}] run function luigis_mansion:animations/luigi/knockback/small/left_leg
 execute at @s[scores={KnockbackType=2..3}] run function luigis_mansion:animations/luigi/knockback/medium/left_leg
@@ -38,6 +39,7 @@ execute at @s[scores={KnockbackType=6}] run function luigis_mansion:animations/l
 execute at @s[scores={KnockbackType=7}] run function luigis_mansion:animations/luigi/knockback/freeze/left_leg
 execute at @s[scores={KnockbackType=8..9}] run function luigis_mansion:animations/luigi/knockback/grab/left_leg
 execute at @s[scores={KnockbackType=10}] run function luigis_mansion:animations/luigi/knockback/bite/left_leg
+execute at @s[scores={KnockbackType=11}] run function luigis_mansion:animations/luigi/knockback/slip/left_leg
 
 execute at @s[tag=cold_room_idle] run function luigis_mansion:animations/luigi/idle/cold_room/left_leg
 execute at @s[tag=high_health_idle] run function luigis_mansion:animations/luigi/idle/high_health/left_leg

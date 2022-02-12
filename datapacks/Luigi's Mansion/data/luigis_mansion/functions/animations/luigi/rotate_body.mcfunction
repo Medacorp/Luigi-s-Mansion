@@ -6,5 +6,5 @@ scoreboard players add @s Range 1
 scoreboard players operation @s Range *= #10000 Constants
 execute if entity @s[scores={RotationDif=50001..}] run scoreboard players operation @s PlayerRotation -= @s Range
 execute if entity @s[scores={RotationDif=..-50001}] run scoreboard players operation @s PlayerRotation += @s Range
-execute if entity @s[scores={RotationDif=50001..}] as @a[tag=this_luigi,limit=1] run function luigis_mansion:entities/player/idle_reset
-execute if entity @s[scores={RotationDif=..-50001}] as @a[tag=this_luigi,limit=1] run function luigis_mansion:entities/player/idle_reset
+execute if entity @s[scores={RotationDif=50001..}] as @a[tag=this_luigi,limit=1] run function luigis_mansion:entities/player/animation/set/none
+execute if entity @s[scores={RotationDif=..-50001}] as @a[tag=this_luigi,limit=1] run function luigis_mansion:entities/player/animation/set/none

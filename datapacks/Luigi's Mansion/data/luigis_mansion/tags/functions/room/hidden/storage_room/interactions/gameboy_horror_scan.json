@@ -1,7 +1,8 @@
 {
 	"values": [
 		"luigis_mansion:room/hidden/storage_room/interactions/gameboy_horror_scan/bucket",
-		"luigis_mansion:room/hidden/storage_room/interactions/gameboy_horror_scan/button",
+		"luigis_mansion:room/hidden/storage_room/interactions/gameboy_horror_scan/button_1",
+		"luigis_mansion:room/hidden/storage_room/interactions/gameboy_horror_scan/button_2",
 		"luigis_mansion:room/hidden/storage_room/interactions/gameboy_horror_scan/chair",
 		"luigis_mansion:room/hidden/storage_room/interactions/gameboy_horror_scan/chairs",
 		"luigis_mansion:room/hidden/storage_room/interactions/gameboy_horror_scan/crate_1",

@@ -94,6 +94,7 @@ execute at @s[scores={KnockbackTime=1..,KnockbackType=6}] store result entity @e
 execute at @s[scores={KnockbackTime=1..,KnockbackType=6}] store result entity @e[tag=home,limit=1] Pos[2] double 0.01 run scoreboard players get @s PosZ
 execute at @s[scores={KnockbackTime=1..,KnockbackType=6}] store result entity @e[tag=home,limit=1] Rotation[0] float 0.01 run scoreboard players get @s RotY
 execute at @s[scores={KnockbackTime=1..,KnockbackType=6}] store result entity @e[tag=home,limit=1] Rotation[1] float 0.01 run scoreboard players get @s RotX
+execute at @s[scores={KnockbackTime=1..,KnockbackType=6}] at @e[tag=home,limit=1] run tp @s ~ 0 ~ ~ ~
 execute at @s[scores={KnockbackTime=1..,KnockbackType=6}] at @e[tag=home,limit=1] run tp @s ~ ~ ~ ~ ~
 execute at @s[scores={KnockbackTime=1..,KnockbackType=6}] run kill @e[tag=home,limit=1]
 
@@ -107,6 +108,7 @@ execute at @s[scores={KnockbackTime=1..,KnockbackType=7}] store result entity @e
 execute at @s[scores={KnockbackTime=1..,KnockbackType=7}] store result entity @e[tag=home,limit=1] Rotation[0] float 0.01 run scoreboard players get @s RotY
 execute at @s[scores={KnockbackTime=1..,KnockbackType=7}] store result entity @e[tag=home,limit=1] Rotation[1] float 0.01 run scoreboard players get @s RotX
 execute at @s[scores={KnockbackTime=10..,KnockbackType=7}] unless entity @e[tag=home,limit=1,distance=..0.1] run scoreboard players remove @s KnockbackTime 2
+execute at @s[scores={KnockbackTime=1..,KnockbackType=7}] at @e[tag=home,limit=1] run tp @s ~ 0 ~ ~ ~
 execute at @s[scores={KnockbackTime=1..,KnockbackType=7}] at @e[tag=home,limit=1] run tp @s ~ ~ ~ ~ ~
 execute at @s[scores={KnockbackTime=80,KnockbackType=7}] anchored eyes run summon minecraft:armor_stand ^ ^ ^ {CustomName:'{"translate":"luigis_mansion:entity.luigi"}',Tags:["luigi_ice"],Invisible:1b,Marker:1b,Pose:{Head:[0.0f,0.0f,0.01f]},ArmorItems:[{},{},{},{id:"minecraft:diamond_pickaxe",Count:1b,tag:{Unbreakable:1b,Damage:4,CustomModelData:47}}]}
 execute at @s[scores={KnockbackTime=8..10,KnockbackType=7}] anchored eyes positioned ^ ^ ^ run tag @e[tag=luigi_ice,distance=..0.1,limit=1] add remove_from_existence
@@ -173,6 +175,28 @@ tag @s[scores={KnockbackTime=1,KnockbackType=8..10}] remove grabbed
 execute at @s[scores={KnockbackTime=1..,KnockbackType=8..10}] run tag @e[tag=this_ghost,limit=1] remove this_ghost
 execute at @s[scores={KnockbackTime=1..,KnockbackType=8..10}] run scoreboard players reset #temp GrabbedID
 
+execute at @s[scores={KnockbackTime=60,KnockbackType=11}] run playsound luigis_mansion:entity.player.slip player @a[tag=same_room] ~ ~ ~ 1
+execute at @s[scores={KnockbackTime=60,KnockbackType=11,Sound=0,Health=41..,Shrunk=0}] run playsound luigis_mansion:entity.player.hurt_scare.high_health player @a[tag=same_room] ~ ~ ~ 1
+execute at @s[scores={KnockbackTime=60,KnockbackType=11,Sound=0,Health=41..,Shrunk=1..}] run playsound luigis_mansion:entity.player.hurt_scare.high_health player @a[tag=same_room] ~ ~ ~ 1 2
+execute at @s[scores={KnockbackTime=60,KnockbackType=11,Sound=0,Health=..40,Shrunk=0}] run playsound luigis_mansion:entity.player.hurt_scare.low_health player @a[tag=same_room] ~ ~ ~ 1
+execute at @s[scores={KnockbackTime=60,KnockbackType=11,Sound=0,Health=..40,Shrunk=1..}] run playsound luigis_mansion:entity.player.hurt_scare.low_health player @a[tag=same_room] ~ ~ ~ 1 2
+scoreboard players set @s[scores={KnockbackTime=60,KnockbackType=11,Sound=0}] Sound 20
+execute at @s[scores={KnockbackTime=40,KnockbackType=11,Sound=0,Health=41..,Shrunk=0}] run playsound luigis_mansion:entity.player.hurt_bounce.high_health player @a[tag=same_room] ~ ~ ~ 1
+execute at @s[scores={KnockbackTime=40,KnockbackType=11,Sound=0,Health=41..,Shrunk=1..}] run playsound luigis_mansion:entity.player.hurt_bounce.high_health player @a[tag=same_room] ~ ~ ~ 1 2
+execute at @s[scores={KnockbackTime=40,KnockbackType=11,Sound=0,Health=..40,Shrunk=0}] run playsound luigis_mansion:entity.player.hurt_bounce.low_health player @a[tag=same_room] ~ ~ ~ 1
+execute at @s[scores={KnockbackTime=40,KnockbackType=11,Sound=0,Health=..40,Shrunk=1..}] run playsound luigis_mansion:entity.player.hurt_bounce.low_health player @a[tag=same_room] ~ ~ ~ 1 2
+scoreboard players set @s[scores={KnockbackTime=40,KnockbackType=11,Sound=0}] Sound 20
+effect give @s[scores={KnockbackTime=40,KnockbackType=11}] minecraft:instant_damage 1 0 true
+scoreboard players set @s[scores={KnockbackTime=40,KnockbackType=11}] ForcedDamage 4
+execute at @s[scores={KnockbackTime=10,KnockbackType=11,Sound=0,Health=41..,Shrunk=0}] run playsound luigis_mansion:entity.player.recover.high_health player @a[tag=same_room] ~ ~ ~ 1
+execute at @s[scores={KnockbackTime=10,KnockbackType=11,Sound=0,Health=41..,Shrunk=1..}] run playsound luigis_mansion:entity.player.recover.high_health player @a[tag=same_room] ~ ~ ~ 1 2
+execute at @s[scores={KnockbackTime=10,KnockbackType=11,Sound=0,Health=..40,Shrunk=0}] run playsound luigis_mansion:entity.player.recover.low_health player @a[tag=same_room] ~ ~ ~ 1
+execute at @s[scores={KnockbackTime=10,KnockbackType=11,Sound=0,Health=..40,Shrunk=1..}] run playsound luigis_mansion:entity.player.recover.low_health player @a[tag=same_room] ~ ~ ~ 1 2
+scoreboard players set @s[scores={KnockbackTime=10,KnockbackType=11,Sound=0}] Sound 10
+execute at @s[scores={KnockbackType=11}] run function luigis_mansion:entities/player/knockback_lock_position
+execute at @s[scores={KnockbackTime=51..60,KnockbackType=11}] facing entity @e[type=minecraft:marker,tag=temp,limit=1] feet rotated ~ 0 run teleport @s ^ ^0.15 ^0.05 ~ ~
+execute at @s[scores={KnockbackTime=41..50,KnockbackType=11}] facing entity @e[type=minecraft:marker,tag=temp,limit=1] feet rotated ~ 0 run teleport @s ^ ^-0.15 ^0.05 ~ ~
+
 execute at @s if block ~ ~1 ~ #luigis_mansion:all_ignore unless block ~ ~1.9 ~ #luigis_mansion:all_ignore run teleport @s ~ ~-0.16 ~
 execute at @s unless block ~ ~ ~ #luigis_mansion:all_ignore if block ~ ~0.1 ~ #luigis_mansion:all_ignore run teleport @s ~ ~0.16 ~
 execute at @s unless block ~0.3 ~ ~ #luigis_mansion:all_ignore if block ~ ~ ~ #luigis_mansion:all_ignore run teleport @s ~-0.16 ~ ~
@@ -190,4 +214,4 @@ scoreboard players reset @s[scores={KnockbackTime=0}] KnockbackTime
 
 scoreboard players reset @s ScareType
 scoreboard players reset @s ScareTime
-function luigis_mansion:entities/player/idle_reset
+function luigis_mansion:entities/player/animation/set/none

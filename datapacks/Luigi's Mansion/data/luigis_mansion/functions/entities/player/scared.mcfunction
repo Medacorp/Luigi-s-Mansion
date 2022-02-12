@@ -7,34 +7,87 @@ execute at @s[scores={ScareTime=20,ScareType=1,Health=41..,Shrunk=1..}] run play
 execute at @s[scores={ScareTime=20,ScareType=1,Health=..40,Shrunk=0}] run playsound luigis_mansion:entity.player.scare.low_health player @a[tag=same_room] ~ ~ ~ 1
 execute at @s[scores={ScareTime=20,ScareType=1,Health=..40,Shrunk=1..}] run playsound luigis_mansion:entity.player.scare.low_health player @a[tag=same_room] ~ ~ ~ 1 2
 scoreboard players set @s[scores={ScareTime=20,ScareType=1}] Sound 20
+execute at @s[scores={ScareTime=1..,ScareType=1}] positioned as @e[type=minecraft:marker,tag=temp,limit=1] run teleport @s ~ 0 ~
 execute at @s[scores={ScareTime=1..,ScareType=1}] positioned as @e[type=minecraft:marker,tag=temp,limit=1] run teleport @s ~ ~ ~
 scoreboard players remove @s[scores={ScareType=1}] ScareTime 1
 
-execute at @s[scores={ScareTime=51,ScareType=2..3,Health=41..,Shrunk=0}] run playsound luigis_mansion:entity.player.scare_bashed.high_health player @a[tag=same_room] ~ ~ ~ 1
-execute at @s[scores={ScareTime=51,ScareType=2..3,Health=41..,Shrunk=1..}] run playsound luigis_mansion:entity.player.scare_bashed.high_health player @a[tag=same_room] ~ ~ ~ 1 2
-execute at @s[scores={ScareTime=51,ScareType=2..3,Health=..40,Shrunk=0}] run playsound luigis_mansion:entity.player.scare_bashed.low_health player @a[tag=same_room] ~ ~ ~ 1
-execute at @s[scores={ScareTime=51,ScareType=2..3,Health=..40,Shrunk=1..}] run playsound luigis_mansion:entity.player.scare_bashed.low_health player @a[tag=same_room] ~ ~ ~ 1 2
-scoreboard players set @s[scores={ScareTime=51,ScareType=2..3}] Sound 30
-execute at @s[scores={ScareTime=22..,ScareType=2..3}] positioned as @e[type=minecraft:marker,tag=temp,limit=1] run teleport @s ~ ~ ~
-tag @s[scores={ScareTime=20..21,ScareType=2..3},tag=!force_moved] remove moved
-tag @s[scores={ScareTime=20..21,ScareType=2..3}] remove force_moved
-tag @s[scores={ScareTime=21,ScareType=2}] add moved
-execute at @s[scores={ScareTime=21,ScareType=2..3,Sound=0,Shrunk=0},tag=moved] run playsound luigis_mansion:entity.player.scare_bashed.move player @a[tag=same_room] ~ ~ ~ 1
-execute at @s[scores={ScareTime=21,ScareType=2..3,Sound=0,Shrunk=1..},tag=moved] run playsound luigis_mansion:entity.player.scare_bashed.move player @a[tag=same_room] ~ ~ ~ 1 2
-scoreboard players set @s[scores={ScareTime=21,ScareType=2..3,Sound=0},tag=moved] Sound 4
-execute at @s[scores={ScareTime=21,ScareType=3}] positioned as @e[type=minecraft:marker,tag=temp,limit=1] run teleport @s ~ ~ ~
-execute at @s[scores={ScareTime=21,ScareType=2}] unless entity @e[type=minecraft:marker,tag=temp,distance=..0.1,limit=1] facing entity @e[type=minecraft:marker,tag=temp,limit=1] feet rotated ~ 0 positioned as @e[type=minecraft:marker,tag=temp,limit=1] run teleport @s ^ ^ ^0.1
-execute at @s[scores={ScareTime=21,ScareType=2}] if entity @e[type=minecraft:marker,tag=temp,distance=..0.1,limit=1] rotated ~ 0 run teleport @s ^ ^ ^-0.1
-execute at @s[scores={ScareTime=21,ScareType=2}] rotated ~ 0 unless block ^ ^ ^-0.5 #luigis_mansion:all_ignore run function luigis_mansion:entities/player/scared_bashed_turn
-execute at @s[scores={ScareTime=..20,ScareType=2..3}] positioned as @e[type=minecraft:marker,tag=temp,limit=1] run teleport @s ~ ~ ~
-execute at @s[scores={ScareTime=20,ScareType=2..3,Health=41..,Shrunk=0}] run playsound luigis_mansion:entity.player.recover.high_health player @a[tag=same_room] ~ ~ ~ 1
-execute at @s[scores={ScareTime=20,ScareType=2..3,Health=41..,Shrunk=1..}] run playsound luigis_mansion:entity.player.recover.high_health player @a[tag=same_room] ~ ~ ~ 1 2
-execute at @s[scores={ScareTime=20,ScareType=2..3,Health=..40,Shrunk=0}] run playsound luigis_mansion:entity.player.recover.low_health player @a[tag=same_room] ~ ~ ~ 1
-execute at @s[scores={ScareTime=20,ScareType=2..3,Health=..40,Shrunk=1..}] run playsound luigis_mansion:entity.player.recover.low_health player @a[tag=same_room] ~ ~ ~ 1 2
-scoreboard players set @s[scores={ScareTime=20,ScareType=2..3}] Sound 20
-scoreboard players remove @s[scores={ScareType=2..3,ScareTime=..20}] ScareTime 1
-execute unless entity @s[scores={MaxHealthTime=1..}] run scoreboard players remove @s[scores={ScareType=2..3,ScareTime=21}] ScareTime 1
-scoreboard players remove @s[scores={ScareType=2..3,ScareTime=22..}] ScareTime 1
+execute at @s[scores={ScareTime=80,ScareType=2,Health=41..,Shrunk=0}] run playsound luigis_mansion:entity.player.scare_freeze.high_health player @a[tag=same_room] ~ ~ ~ 1
+execute at @s[scores={ScareTime=80,ScareType=2,Health=41..,Shrunk=1..}] run playsound luigis_mansion:entity.player.scare_freeze.high_health player @a[tag=same_room] ~ ~ ~ 1 2
+execute at @s[scores={ScareTime=80,ScareType=2,Health=..40,Shrunk=0}] run playsound luigis_mansion:entity.player.scare_freeze.low_health player @a[tag=same_room] ~ ~ ~ 1
+execute at @s[scores={ScareTime=80,ScareType=2,Health=..40,Shrunk=1..}] run playsound luigis_mansion:entity.player.scare_freeze.low_health player @a[tag=same_room] ~ ~ ~ 1 2
+scoreboard players set @s[scores={ScareTime=80,ScareType=2}] Sound 60
+execute at @s[scores={ScareTime=1..,ScareType=2}] facing entity @e[type=minecraft:marker,tag=temp,limit=1] feet rotated ~ 0 run teleport @s ~ 0 ~ ~ ~
+execute at @s[scores={ScareTime=61..80,ScareType=2}] facing entity @e[type=minecraft:marker,tag=temp,limit=1] feet rotated ~ 0 run teleport @s ^ ^ ^ ~ ~
+execute at @s[scores={ScareTime=60,ScareType=2},tag=!flipped_gravity] facing entity @e[type=minecraft:marker,tag=temp,limit=1] feet rotated ~ 0 run teleport @s ^ ^ ^ ~ ~-4.5
+execute at @s[scores={ScareTime=59,ScareType=2},tag=!flipped_gravity] facing entity @e[type=minecraft:marker,tag=temp,limit=1] feet rotated ~ 0 run teleport @s ^ ^ ^ ~ ~-9
+execute at @s[scores={ScareTime=58,ScareType=2},tag=!flipped_gravity] facing entity @e[type=minecraft:marker,tag=temp,limit=1] feet rotated ~ 0 run teleport @s ^ ^ ^ ~ ~-13.5
+execute at @s[scores={ScareTime=57,ScareType=2},tag=!flipped_gravity] facing entity @e[type=minecraft:marker,tag=temp,limit=1] feet rotated ~ 0 run teleport @s ^ ^ ^ ~ ~-18
+execute at @s[scores={ScareTime=56,ScareType=2},tag=!flipped_gravity] facing entity @e[type=minecraft:marker,tag=temp,limit=1] feet rotated ~ 0 run teleport @s ^ ^ ^ ~ ~-22.5
+execute at @s[scores={ScareTime=55,ScareType=2},tag=!flipped_gravity] facing entity @e[type=minecraft:marker,tag=temp,limit=1] feet rotated ~ 0 run teleport @s ^ ^ ^ ~ ~-27
+execute at @s[scores={ScareTime=54,ScareType=2},tag=!flipped_gravity] facing entity @e[type=minecraft:marker,tag=temp,limit=1] feet rotated ~ 0 run teleport @s ^ ^ ^ ~ ~-31.5
+execute at @s[scores={ScareTime=53,ScareType=2},tag=!flipped_gravity] facing entity @e[type=minecraft:marker,tag=temp,limit=1] feet rotated ~ 0 run teleport @s ^ ^ ^ ~ ~-36
+execute at @s[scores={ScareTime=52,ScareType=2},tag=!flipped_gravity] facing entity @e[type=minecraft:marker,tag=temp,limit=1] feet rotated ~ 0 run teleport @s ^ ^ ^ ~ ~-40.5
+execute at @s[scores={ScareTime=51,ScareType=2},tag=!flipped_gravity] facing entity @e[type=minecraft:marker,tag=temp,limit=1] feet rotated ~ 0 run teleport @s ^ ^ ^ ~ ~-45
+execute at @s[scores={ScareTime=50,ScareType=2},tag=!flipped_gravity] facing entity @e[type=minecraft:marker,tag=temp,limit=1] feet rotated ~ 0 run teleport @s ^ ^ ^ ~ ~-49.5
+execute at @s[scores={ScareTime=49,ScareType=2},tag=!flipped_gravity] facing entity @e[type=minecraft:marker,tag=temp,limit=1] feet rotated ~ 0 run teleport @s ^ ^ ^ ~ ~-54
+execute at @s[scores={ScareTime=48,ScareType=2},tag=!flipped_gravity] facing entity @e[type=minecraft:marker,tag=temp,limit=1] feet rotated ~ 0 run teleport @s ^ ^ ^ ~ ~-58.5
+execute at @s[scores={ScareTime=47,ScareType=2},tag=!flipped_gravity] facing entity @e[type=minecraft:marker,tag=temp,limit=1] feet rotated ~ 0 run teleport @s ^ ^ ^ ~ ~-63
+execute at @s[scores={ScareTime=46,ScareType=2},tag=!flipped_gravity] facing entity @e[type=minecraft:marker,tag=temp,limit=1] feet rotated ~ 0 run teleport @s ^ ^ ^ ~ ~-67.5
+execute at @s[scores={ScareTime=45,ScareType=2},tag=!flipped_gravity] facing entity @e[type=minecraft:marker,tag=temp,limit=1] feet rotated ~ 0 run teleport @s ^ ^ ^ ~ ~-72
+execute at @s[scores={ScareTime=44,ScareType=2},tag=!flipped_gravity] facing entity @e[type=minecraft:marker,tag=temp,limit=1] feet rotated ~ 0 run teleport @s ^ ^ ^ ~ ~-76.5
+execute at @s[scores={ScareTime=43,ScareType=2},tag=!flipped_gravity] facing entity @e[type=minecraft:marker,tag=temp,limit=1] feet rotated ~ 0 run teleport @s ^ ^ ^ ~ ~-81
+execute at @s[scores={ScareTime=42,ScareType=2},tag=!flipped_gravity] facing entity @e[type=minecraft:marker,tag=temp,limit=1] feet rotated ~ 0 run teleport @s ^ ^ ^ ~ ~-85.5
+execute at @s[scores={ScareTime=..41,ScareType=2},tag=!flipped_gravity] facing entity @e[type=minecraft:marker,tag=temp,limit=1] feet rotated ~ 0 run teleport @s ^ ^ ^ ~ ~-90
+execute at @s[scores={ScareTime=60,ScareType=2},tag=flipped_gravity] facing entity @e[type=minecraft:marker,tag=temp,limit=1] feet rotated ~ 0 run teleport @s ^ ^ ^ ~ ~4.5
+execute at @s[scores={ScareTime=59,ScareType=2},tag=flipped_gravity] facing entity @e[type=minecraft:marker,tag=temp,limit=1] feet rotated ~ 0 run teleport @s ^ ^ ^ ~ ~9
+execute at @s[scores={ScareTime=58,ScareType=2},tag=flipped_gravity] facing entity @e[type=minecraft:marker,tag=temp,limit=1] feet rotated ~ 0 run teleport @s ^ ^ ^ ~ ~13.5
+execute at @s[scores={ScareTime=57,ScareType=2},tag=flipped_gravity] facing entity @e[type=minecraft:marker,tag=temp,limit=1] feet rotated ~ 0 run teleport @s ^ ^ ^ ~ ~18
+execute at @s[scores={ScareTime=56,ScareType=2},tag=flipped_gravity] facing entity @e[type=minecraft:marker,tag=temp,limit=1] feet rotated ~ 0 run teleport @s ^ ^ ^ ~ ~22.5
+execute at @s[scores={ScareTime=55,ScareType=2},tag=flipped_gravity] facing entity @e[type=minecraft:marker,tag=temp,limit=1] feet rotated ~ 0 run teleport @s ^ ^ ^ ~ ~27
+execute at @s[scores={ScareTime=54,ScareType=2},tag=flipped_gravity] facing entity @e[type=minecraft:marker,tag=temp,limit=1] feet rotated ~ 0 run teleport @s ^ ^ ^ ~ ~31.5
+execute at @s[scores={ScareTime=53,ScareType=2},tag=flipped_gravity] facing entity @e[type=minecraft:marker,tag=temp,limit=1] feet rotated ~ 0 run teleport @s ^ ^ ^ ~ ~36
+execute at @s[scores={ScareTime=52,ScareType=2},tag=flipped_gravity] facing entity @e[type=minecraft:marker,tag=temp,limit=1] feet rotated ~ 0 run teleport @s ^ ^ ^ ~ ~40.5
+execute at @s[scores={ScareTime=51,ScareType=2},tag=flipped_gravity] facing entity @e[type=minecraft:marker,tag=temp,limit=1] feet rotated ~ 0 run teleport @s ^ ^ ^ ~ ~45
+execute at @s[scores={ScareTime=50,ScareType=2},tag=flipped_gravity] facing entity @e[type=minecraft:marker,tag=temp,limit=1] feet rotated ~ 0 run teleport @s ^ ^ ^ ~ ~49.5
+execute at @s[scores={ScareTime=49,ScareType=2},tag=flipped_gravity] facing entity @e[type=minecraft:marker,tag=temp,limit=1] feet rotated ~ 0 run teleport @s ^ ^ ^ ~ ~54
+execute at @s[scores={ScareTime=48,ScareType=2},tag=flipped_gravity] facing entity @e[type=minecraft:marker,tag=temp,limit=1] feet rotated ~ 0 run teleport @s ^ ^ ^ ~ ~58.5
+execute at @s[scores={ScareTime=47,ScareType=2},tag=flipped_gravity] facing entity @e[type=minecraft:marker,tag=temp,limit=1] feet rotated ~ 0 run teleport @s ^ ^ ^ ~ ~63
+execute at @s[scores={ScareTime=46,ScareType=2},tag=flipped_gravity] facing entity @e[type=minecraft:marker,tag=temp,limit=1] feet rotated ~ 0 run teleport @s ^ ^ ^ ~ ~67.5
+execute at @s[scores={ScareTime=45,ScareType=2},tag=flipped_gravity] facing entity @e[type=minecraft:marker,tag=temp,limit=1] feet rotated ~ 0 run teleport @s ^ ^ ^ ~ ~72
+execute at @s[scores={ScareTime=44,ScareType=2},tag=flipped_gravity] facing entity @e[type=minecraft:marker,tag=temp,limit=1] feet rotated ~ 0 run teleport @s ^ ^ ^ ~ ~76.5
+execute at @s[scores={ScareTime=43,ScareType=2},tag=flipped_gravity] facing entity @e[type=minecraft:marker,tag=temp,limit=1] feet rotated ~ 0 run teleport @s ^ ^ ^ ~ ~81
+execute at @s[scores={ScareTime=42,ScareType=2},tag=flipped_gravity] facing entity @e[type=minecraft:marker,tag=temp,limit=1] feet rotated ~ 0 run teleport @s ^ ^ ^ ~ ~85.5
+execute at @s[scores={ScareTime=..41,ScareType=2},tag=flipped_gravity] facing entity @e[type=minecraft:marker,tag=temp,limit=1] feet rotated ~ 0 run teleport @s ^ ^ ^ ~ ~90
+scoreboard players remove @s[scores={ScareType=2}] ScareTime 1
+
+execute at @s[scores={ScareTime=51,ScareType=3..4,Health=41..,Shrunk=0}] run playsound luigis_mansion:entity.player.scare_bashed.high_health player @a[tag=same_room] ~ ~ ~ 1
+execute at @s[scores={ScareTime=51,ScareType=3..4,Health=41..,Shrunk=1..}] run playsound luigis_mansion:entity.player.scare_bashed.high_health player @a[tag=same_room] ~ ~ ~ 1 2
+execute at @s[scores={ScareTime=51,ScareType=3..4,Health=..40,Shrunk=0}] run playsound luigis_mansion:entity.player.scare_bashed.low_health player @a[tag=same_room] ~ ~ ~ 1
+execute at @s[scores={ScareTime=51,ScareType=3..4,Health=..40,Shrunk=1..}] run playsound luigis_mansion:entity.player.scare_bashed.low_health player @a[tag=same_room] ~ ~ ~ 1 2
+scoreboard players set @s[scores={ScareTime=51,ScareType=3..4}] Sound 30
+execute at @s[scores={ScareTime=22..,ScareType=3..4}] positioned as @e[type=minecraft:marker,tag=temp,limit=1] run teleport @s ~ 0 ~
+execute at @s[scores={ScareTime=22..,ScareType=3..4}] positioned as @e[type=minecraft:marker,tag=temp,limit=1] run teleport @s ~ ~ ~
+tag @s[scores={ScareTime=20..21,ScareType=3..4},tag=!force_moved] remove moved
+tag @s[scores={ScareTime=20..21,ScareType=3..4}] remove force_moved
+tag @s[scores={ScareTime=21,ScareType=3}] add moved
+execute at @s[scores={ScareTime=21,ScareType=3..4,Sound=0,Shrunk=0},tag=moved] run playsound luigis_mansion:entity.player.scare_bashed.move player @a[tag=same_room] ~ ~ ~ 1
+execute at @s[scores={ScareTime=21,ScareType=3..4,Sound=0,Shrunk=1..},tag=moved] run playsound luigis_mansion:entity.player.scare_bashed.move player @a[tag=same_room] ~ ~ ~ 1 2
+scoreboard players set @s[scores={ScareTime=21,ScareType=3..4,Sound=0},tag=moved] Sound 4
+execute at @s[scores={ScareTime=21,ScareType=4}] positioned as @e[type=minecraft:marker,tag=temp,limit=1] run teleport @s ~ 0 ~
+execute at @s[scores={ScareTime=21,ScareType=4}] positioned as @e[type=minecraft:marker,tag=temp,limit=1] run teleport @s ~ ~ ~
+execute at @s[scores={ScareTime=21,ScareType=3}] unless entity @e[type=minecraft:marker,tag=temp,distance=..0.1,limit=1] facing entity @e[type=minecraft:marker,tag=temp,limit=1] feet rotated ~ 0 positioned as @e[type=minecraft:marker,tag=temp,limit=1] run teleport @s ^ ^ ^0.1
+execute at @s[scores={ScareTime=21,ScareType=3}] if entity @e[type=minecraft:marker,tag=temp,distance=..0.1,limit=1] rotated ~ 0 run teleport @s ^ ^ ^-0.1
+execute at @s[scores={ScareTime=21,ScareType=3}] rotated ~ 0 unless block ^ ^ ^-0.5 #luigis_mansion:all_ignore run function luigis_mansion:entities/player/scared_bashed_turn
+execute at @s[scores={ScareTime=..20,ScareType=3..4}] positioned as @e[type=minecraft:marker,tag=temp,limit=1] run teleport @s ~ 0 ~
+execute at @s[scores={ScareTime=..20,ScareType=3..4}] positioned as @e[type=minecraft:marker,tag=temp,limit=1] run teleport @s ~ ~ ~
+execute at @s[scores={ScareTime=20,ScareType=3..4,Health=41..,Shrunk=0}] run playsound luigis_mansion:entity.player.recover.high_health player @a[tag=same_room] ~ ~ ~ 1
+execute at @s[scores={ScareTime=20,ScareType=3..4,Health=41..,Shrunk=1..}] run playsound luigis_mansion:entity.player.recover.high_health player @a[tag=same_room] ~ ~ ~ 1 2
+execute at @s[scores={ScareTime=20,ScareType=3..4,Health=..40,Shrunk=0}] run playsound luigis_mansion:entity.player.recover.low_health player @a[tag=same_room] ~ ~ ~ 1
+execute at @s[scores={ScareTime=20,ScareType=3..4,Health=..40,Shrunk=1..}] run playsound luigis_mansion:entity.player.recover.low_health player @a[tag=same_room] ~ ~ ~ 1 2
+scoreboard players set @s[scores={ScareTime=20,ScareType=3..4}] Sound 20
+scoreboard players remove @s[scores={ScareType=3..4,ScareTime=..20}] ScareTime 1
+execute unless entity @s[scores={MaxHealthTime=1..}] run scoreboard players remove @s[scores={ScareType=3..4,ScareTime=21}] ScareTime 1
+scoreboard players remove @s[scores={ScareType=3..4,ScareTime=22..}] ScareTime 1
 
 execute at @s if block ~ ~1 ~ #luigis_mansion:all_ignore unless block ~ ~1.9 ~ #luigis_mansion:all_ignore run teleport @s ~ ~-0.16 ~
 execute at @s unless block ~ ~ ~ #luigis_mansion:all_ignore if block ~ ~0.1 ~ #luigis_mansion:all_ignore run teleport @s ~ ~0.16 ~
@@ -46,4 +99,4 @@ kill @e[type=minecraft:marker,tag=temp,limit=1]
 scoreboard players reset @s[scores={ScareTime=0}] ScareType
 scoreboard players reset @s[scores={ScareTime=0}] ScareTime
 
-function luigis_mansion:entities/player/idle_reset
+function luigis_mansion:entities/player/animation/set/none

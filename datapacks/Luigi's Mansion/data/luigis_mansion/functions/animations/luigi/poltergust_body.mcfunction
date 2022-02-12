@@ -49,10 +49,11 @@ execute at @s[tag=enthusiastic] run function luigis_mansion:animations/luigi/ent
 execute at @s[tag=answer_phone] run function luigis_mansion:animations/luigi/answer_phone/chest
 execute at @s[tag=gameboy_horror] run function luigis_mansion:animations/luigi/gameboy_horror/chest
 execute at @s[tag=inspect] run function luigis_mansion:animations/luigi/inspect/chest
-execute at @s[scores={KnockbackType=-7}] run function luigis_mansion:animations/luigi/search/bash/chest
-execute at @s[scores={KnockbackType=-6}] run function luigis_mansion:animations/luigi/search/hump/chest
-execute at @s[scores={KnockbackType=-5..-4}] run function luigis_mansion:animations/luigi/search/knock/chest
-execute at @s[scores={KnockbackType=-3..-2}] run function luigis_mansion:animations/luigi/scared/bashed/chest
+execute at @s[scores={KnockbackType=-8}] run function luigis_mansion:animations/luigi/search/bash/chest
+execute at @s[scores={KnockbackType=-7}] run function luigis_mansion:animations/luigi/search/hump/chest
+execute at @s[scores={KnockbackType=-6..-5}] run function luigis_mansion:animations/luigi/search/knock/chest
+execute at @s[scores={KnockbackType=-4..-3}] run function luigis_mansion:animations/luigi/scared/bashed/chest
+execute at @s[scores={KnockbackType=-2}] run function luigis_mansion:animations/luigi/scared/freeze/chest
 execute at @s[scores={KnockbackType=-1}] run function luigis_mansion:animations/luigi/scared/chest
 execute at @s[scores={KnockbackType=1}] run function luigis_mansion:animations/luigi/knockback/small/chest
 execute at @s[scores={KnockbackType=2..3}] run function luigis_mansion:animations/luigi/knockback/medium/chest
@@ -62,6 +63,7 @@ execute at @s[scores={KnockbackType=6}] run function luigis_mansion:animations/l
 execute at @s[scores={KnockbackType=7}] run function luigis_mansion:animations/luigi/knockback/freeze/chest
 execute at @s[scores={KnockbackType=8..9}] run function luigis_mansion:animations/luigi/knockback/grab/chest
 execute at @s[scores={KnockbackType=10}] run function luigis_mansion:animations/luigi/knockback/bite/chest
+execute at @s[scores={KnockbackType=11}] run function luigis_mansion:animations/luigi/knockback/slip/chest
 
 execute at @s[tag=cold_room_idle] run function luigis_mansion:animations/luigi/idle/cold_room/chest
 execute at @s[tag=high_health_idle] run function luigis_mansion:animations/luigi/idle/high_health/chest

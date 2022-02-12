@@ -1,6 +1,12 @@
 execute if entity @s[tag=dying,scores={DeathTime=1}] if data storage luigis_mansion:data current_state.current_data.ghosts.red_grabbing_ghost{loot_at_0:1b} run function luigis_mansion:entities/red_grabbing_ghost/drop_loot
 execute if entity @s[tag=dead] unless data storage luigis_mansion:data current_state.current_data.ghosts.red_grabbing_ghost{loot_at_0:1b} run function luigis_mansion:entities/red_grabbing_ghost/drop_loot
 
+tag @s[tag=!basher,tag=attack,scores={ActionTime=1..40}] remove hurt
+tag @s[tag=!basher,tag=attack,scores={ActionTime=1..40}] remove element_hurt
+data modify entity @s[tag=!basher,tag=attack,scores={ActionTime=1..40}] ArmorItems[3].tag merge value {attacked_by:[]}
+scoreboard players set @s[tag=!basher,tag=attack,scores={ActionTime=1..40}] StunTime 0
+scoreboard players set @s[tag=!basher,tag=attack,scores={ActionTime=1..40}] VulnerableTime 0
+
 execute if entity @s[scores={HurtTime=1},tag=hurt,tag=!fleeing,tag=!dying] run playsound luigis_mansion:entity.red_grabbing_ghost.hurt hostile @a[tag=same_room] ~ ~ ~ 1
 scoreboard players set @s[scores={HurtTime=1},tag=hurt,tag=!fleeing,tag=!dying] Sound 40
 execute if entity @s[tag=element_hurt] run playsound luigis_mansion:entity.red_grabbing_ghost.element_hurt hostile @a[tag=same_room] ~ ~ ~ 1

@@ -1,6 +1,6 @@
 tag @s add this_luigi
 scoreboard players operation #temp ID = @s ID
-data modify storage luigis_mansion:data luigi set value {tags:[],gliding:0b,swimming:0b,invulnerable:0b,mainhand:{},offhand:{}}
+data modify storage luigis_mansion:data luigi set value {tags:[],gliding:0b,swimming:0b,invulnerable:0b,animation:0b,mainhand:{},offhand:{}}
 data modify storage luigis_mansion:data luigi.tags set from entity @s Tags
 execute if entity @s[scores={Health=..30},tag=!attack] run data modify storage luigis_mansion:data luigi.tags append value "low_health"
 data modify storage luigis_mansion:data luigi.gliding set from entity @s FallFlying
@@ -8,7 +8,7 @@ execute store result storage luigis_mansion:data luigi.swimming byte 1 if entity
 execute store result storage luigis_mansion:data luigi.invulnerable byte 1 if entity @s[scores={Invulnerable=1..60}]
 execute if entity @s[scores={YellTime=1..}] run data modify storage luigis_mansion:data luigi.tags append value "yelling"
 scoreboard players operation #temp InteractionType = @s InteractionType
-scoreboard players add #temp InteractionType 3
+scoreboard players add #temp InteractionType 4
 execute if entity @s[scores={InteractionType=1..}] store result storage luigis_mansion:data luigi.animation byte -1 run scoreboard players get #temp InteractionType
 scoreboard players reset #temp InteractionType
 execute if entity @s[scores={ScareType=1..}] store result storage luigis_mansion:data luigi.animation byte -1 run scoreboard players get @s ScareType

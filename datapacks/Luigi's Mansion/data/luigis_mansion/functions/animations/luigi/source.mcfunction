@@ -1,5 +1,5 @@
 # Rotate if moving
-execute if entity @s[scores={KnockbackType=..-4}] run scoreboard players reset @s PlayerRotation
+execute if entity @s[scores={KnockbackType=..-5}] run scoreboard players reset @s PlayerRotation
 execute store result score @s PosX run scoreboard players get @a[tag=this_luigi,limit=1] PosX
 execute store result score @s PosZ run scoreboard players get @a[tag=this_luigi,limit=1] PosZ
 execute store result score @s HomeX run scoreboard players get @a[tag=this_luigi,limit=1] OtherX

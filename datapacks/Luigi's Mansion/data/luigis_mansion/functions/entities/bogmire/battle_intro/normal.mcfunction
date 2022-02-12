@@ -44,7 +44,7 @@ execute if entity @s[scores={Dialog=237}] positioned ~12.95 ~-1.43 ~ run functio
 execute if entity @s[scores={Dialog=238}] positioned ~13.3 ~-1.43 ~ run function luigis_mansion:entities/bogmire/create_shadow_intro
 execute if entity @s[scores={Dialog=239}] positioned ~13.65 ~-1.43 ~ run function luigis_mansion:entities/bogmire/create_shadow_intro
 execute if entity @s[scores={Dialog=240}] positioned ~14 ~ ~ run function luigis_mansion:spawn_entities/portrait_ghost/black_bogmire/big
-execute if entity @s[scores={Dialog=240}] as @a[tag=same_room] at @s facing entity @e[tag=bogmire,scores={Dialog=240},limit=1] feet rotated ~ 0 positioned ^ ^ ^1 run function luigis_mansion:entities/player/scare
+execute if entity @s[scores={Dialog=240}] as @a[tag=same_room] at @s facing entity @e[tag=bogmire,scores={Dialog=240},limit=1] feet rotated ~ 0 positioned ^ ^ ^1 run function luigis_mansion:entities/player/scare/normal
 execute if entity @s[scores={Dialog=240}] run tag @e[tag=bogmires_shadow] add vanish
 execute if entity @s[scores={Dialog=241..460}] run scoreboard players set @e[tag=black_bogmire,limit=1] SpawnTime 60
 execute if entity @s[scores={Dialog=320}] run function luigis_mansion:entities/bogmire/turn_invisible

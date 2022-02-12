@@ -25,7 +25,7 @@ execute if entity @s[scores={Dialog=378}] run tag @e[tag=boolossus,sort=random,t
 execute if entity @s[scores={Dialog=382}] run tag @e[tag=boolossus,sort=random,tag=!dialog_animation_start,limit=1] add dialog_animation_start
 execute if entity @s[scores={Dialog=386}] run tag @e[tag=boolossus,sort=random,tag=!dialog_animation_start,limit=1] add dialog_animation_start
 execute if entity @s[scores={Dialog=390}] run tag @e[tag=boolossus,sort=random,tag=!dialog_animation_start,limit=1] add dialog_animation_start
-execute if entity @s[scores={Dialog=434}] as @a[tag=target,limit=1] at @s positioned ^ ^ ^1 run function luigis_mansion:entities/player/scare_bashed_no_move
+execute if entity @s[scores={Dialog=434}] as @a[tag=target,limit=1] at @s positioned ^ ^ ^1 run function luigis_mansion:entities/player/scare/bash_no_move
 execute if entity @s[scores={Dialog=435..554}] if score #mirrored Selected matches 0 as @a[tag=target,scores={ScareTime=20},limit=1] at @s rotated ~-5 0 run function luigis_mansion:entities/player/scared_bashed_force_move
 execute if entity @s[scores={Dialog=435..554}] if score #mirrored Selected matches 1 as @a[tag=target,scores={ScareTime=20},limit=1] at @s rotated ~5 0 run function luigis_mansion:entities/player/scared_bashed_force_move
 execute if entity @s[scores={Dialog=435..593}] run scoreboard players set @a[tag=target,limit=1,scores={ScareTime=20}] ScareTime 21

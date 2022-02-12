@@ -1,6 +1,6 @@
 scoreboard players operation #temp GhostNr = @s GhostNr
 execute as @e[tag=model_piece,scores={GhostNr=-2147483648..}] if score @s GhostNr = #temp GhostNr run tag @s add this_model
-execute if entity @s[scores={DeathTime=1},tag=complain,tag=mr_bones] run function luigis_mansion:entities/mr_bones/correct_height
+execute if entity @s[tag=hurt,tag=complain] run function luigis_mansion:entities/mr_bones/correct_height
 
 execute if entity @s[tag=dying,scores={DeathTime=1}] if data storage luigis_mansion:data current_state.current_data.ghosts.mr_bones{loot_at_0:1b} run function luigis_mansion:entities/mr_bones/drop_loot
 execute if entity @s[tag=dead] unless data storage luigis_mansion:data current_state.current_data.ghosts.mr_bones{loot_at_0:1b} run function luigis_mansion:entities/mr_bones/drop_loot

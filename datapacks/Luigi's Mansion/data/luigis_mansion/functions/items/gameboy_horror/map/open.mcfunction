@@ -14,4 +14,5 @@ execute unless entity @s[scores={Room=0}] at @s[tag=!cancel] run playsound luigi
 tag @s remove opening_map
 tag @s remove cancel
 scoreboard players reset @s OpenMapTime
+scoreboard players set @s MapSound 0
 scoreboard players set @s GBHChoice 0

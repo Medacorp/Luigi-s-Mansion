@@ -81,6 +81,7 @@ scoreboard objectives add LightZ dummy
 scoreboard objectives add Loaded dummy
 scoreboard objectives add LoadedChunks dummy
 scoreboard objectives add MansionChoice trigger
+scoreboard objectives add MapSound dummy
 scoreboard objectives add MapZoomTime dummy
 scoreboard objectives add MaxHealth dummy
 scoreboard objectives add MaxHealthTime dummy

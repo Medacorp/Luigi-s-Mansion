@@ -8,4 +8,5 @@ tag @s remove gameboy_horror
 tag @s remove inspect
 tag @s remove answer_phone
 tag @s remove sigh
+scoreboard players reset @s YellTime
 scoreboard players set @s IdleTime 0

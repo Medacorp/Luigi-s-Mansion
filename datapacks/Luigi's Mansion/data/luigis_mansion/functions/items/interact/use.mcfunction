@@ -13,10 +13,10 @@ kill @e[tag=home,limit=1]
 #type 4 = knock
 #none set = randomly 2, 3 or 4
 #out of range = 3
-execute unless entity @s[scores={InteractionType=1..}] if predicate luigis_mansion:1_3 run scoreboard players set @s InteractionType 2
-execute unless entity @s[scores={InteractionType=1..}] if predicate luigis_mansion:50_50 run scoreboard players set @s InteractionType 3
-execute unless entity @s[scores={InteractionType=1..}] run scoreboard players set @s InteractionType 4
-execute unless entity @s[scores={InteractionType=1..4}] run scoreboard players set @s InteractionType 3
+execute unless entity @s[scores={InteractionType=1..}] if predicate luigis_mansion:1_3 run scoreboard players set @s[scores={IdleTime=0..}] InteractionType 2
+execute unless entity @s[scores={InteractionType=1..}] if predicate luigis_mansion:50_50 run scoreboard players set @s[scores={IdleTime=0..}] InteractionType 3
+execute unless entity @s[scores={InteractionType=1..}] run scoreboard players set @s[scores={IdleTime=0..}] InteractionType 4
+execute unless entity @s[scores={InteractionType=1..4}] run scoreboard players set @s[scores={IdleTime=0..}] InteractionType 3
 scoreboard players add @s InteractionTime 1
 scoreboard players operation #temp Room = @s Room
 tag @s add searcher
@@ -47,4 +47,4 @@ kill @e[tag=interact,tag=manual,limit=1]
 tag @s remove searcher
 scoreboard players reset #temp Room
 scoreboard players reset @s YellTime
-function luigis_mansion:entities/player/idle_reset
+function luigis_mansion:entities/player/animation/set/no_idle

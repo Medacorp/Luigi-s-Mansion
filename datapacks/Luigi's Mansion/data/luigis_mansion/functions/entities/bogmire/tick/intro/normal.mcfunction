@@ -7,7 +7,7 @@ execute if entity @s[scores={Dialog=80}] run summon minecraft:lightning_bolt 651
 execute if entity @s[scores={Dialog=90}] run summon minecraft:lightning_bolt 651 103 47
 scoreboard players set @s[scores={Dialog=80}] AnimationProg 0
 tag @s[scores={Dialog=80}] add appear
-execute if entity @s[scores={Dialog=100}] as @a[tag=same_room] at @s facing entity @e[tag=bogmire,scores={Dialog=100},limit=1] feet rotated ~ 0 positioned ^ ^ ^1 run function luigis_mansion:entities/player/scare_bashed_no_move
+execute if entity @s[scores={Dialog=100}] as @a[tag=same_room] run function luigis_mansion:entities/player/scare/bash_no_move
 execute if entity @s[scores={Dialog=100..240}] run scoreboard players set @a[tag=same_room,scores={ScareTime=20}] ScareTime 21
 execute if entity @s[scores={Dialog=240}] as @a run function luigis_mansion:room/normal/bogmire_battle/warp_to
 execute if entity @s[scores={Dialog=240}] as @a[tag=same_room] at @s run function luigis_mansion:entities/player/scared_bashed_force_move

@@ -2,6 +2,7 @@ scoreboard players set #freeze_timer Selected 1
 scoreboard players add @s Dialog 1
 scoreboard players set @s[tag=fleeing] Dialog 580
 execute if entity @s[scores={Dialog=100}] run playsound luigis_mansion:entity.boolossus.laugh_2 hostile @a[tag=same_room] ~ ~ ~ 30
+execute if entity @s[scores={Dialog=100}] as @a[tag=same_room] run function luigis_mansion:entities/player/scare/freeze
 teleport @s[scores={Dialog=120..180}] ~ ~ ~ ~ ~1.5
 teleport @s[scores={Dialog=218..280}] ~ ~-1 ~
 execute if entity @s[scores={Dialog=280}] run playsound luigis_mansion:entity.boolossus.bounce hostile @a[tag=same_room] ~ ~ ~ 3
