@@ -9,6 +9,6 @@ execute as @a[gamemode=!spectator,x=643.5,y=20,z=-79.5,distance=..0.7,y_rotation
 
 function #luigis_mansion:room/normal/observatory/interactions/room
 
-function luigis_mansion:room/normal/observatory/ghosts
+execute if entity @a[gamemode=!spectator,scores={Room=46}] run function luigis_mansion:room/normal/observatory/ghosts
 
 function luigis_mansion:room/normal/door/astral_hall_observatory

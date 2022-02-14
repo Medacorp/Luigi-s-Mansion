@@ -14,6 +14,6 @@ clone 736 13 -44 736 13 -44 734 13 -44
 
 execute if block 736 13 -61 minecraft:brewing_stand[has_bottle_0=true,has_bottle_1=true,has_bottle_2=true] if block 736 13 -44 minecraft:brewing_stand[has_bottle_0=true,has_bottle_1=true,has_bottle_2=true] run function luigis_mansion:room/normal/mirror_room/remove_blockade
 
-function luigis_mansion:room/normal/mirror_room/ghosts
+execute if entity @a[gamemode=!spectator,scores={Room=21}] run function luigis_mansion:room/normal/mirror_room/ghosts
 
 function luigis_mansion:room/normal/door/fortune_tellers_room_mirror_room

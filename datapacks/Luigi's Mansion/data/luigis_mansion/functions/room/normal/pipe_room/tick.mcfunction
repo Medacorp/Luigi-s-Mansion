@@ -9,6 +9,6 @@ execute unless data storage luigis_mansion:data current_state.current_data.techn
 
 function #luigis_mansion:room/normal/pipe_room/interactions/room
 
-function luigis_mansion:room/normal/pipe_room/ghosts
+execute if entity @a[gamemode=!spectator,scores={Room=67}] run function luigis_mansion:room/normal/pipe_room/ghosts
 
 function luigis_mansion:room/normal/door/hallway_21_pipe_room

@@ -12,4 +12,4 @@ function #luigis_mansion:room/normal/hidden_room/interactions/room
 clone 739 13 47 739 13 47 759 13 47
 clone 739 13 32 739 13 32 759 13 32
 
-function luigis_mansion:room/normal/hidden_room/ghosts
+execute if entity @a[gamemode=!spectator,scores={Room=24}] run function luigis_mansion:room/normal/hidden_room/ghosts

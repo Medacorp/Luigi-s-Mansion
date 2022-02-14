@@ -1,5 +1,5 @@
 execute as @a[scores={Room=3},tag=looking_at_map] run function luigis_mansion:items/gameboy_horror/map/close
-execute as @a[scores={Room=3}] run function luigis_mansion:entities/player/scare/normal
+execute as @a[scores={Room=3},gamemode=!spectator] run function luigis_mansion:entities/player/scare/normal
 playsound luigis_mansion:block.blockade.spawn block @a[scores={Room=3}] 727 20 28.0 1
 setblock 727 20 28 minecraft:iron_trapdoor[facing=west,open=true,half=bottom]
 setblock 727 21 28 minecraft:iron_trapdoor[facing=west,open=true,half=bottom]

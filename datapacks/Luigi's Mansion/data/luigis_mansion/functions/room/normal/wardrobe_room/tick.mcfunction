@@ -12,7 +12,7 @@ function #luigis_mansion:room/normal/wardrobe_room/interactions/room
 clone 678 21 64 678 22 67 676 21 64 filtered minecraft:warped_trapdoor
 clone 679 21 64 679 22 67 675 21 64 filtered minecraft:warped_trapdoor
 
-function luigis_mansion:room/normal/wardrobe_room/ghosts
+execute if entity @a[gamemode=!spectator,scores={Room=5}] run function luigis_mansion:room/normal/wardrobe_room/ghosts
 
 function luigis_mansion:room/normal/door/anteroom_wardrobe_room
 function luigis_mansion:room/normal/door/wardrobe_room_balcony_1

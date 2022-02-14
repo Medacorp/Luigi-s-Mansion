@@ -14,6 +14,6 @@ clone 695 24 -65 695 24 -65 693 24 -65
 clone 704 22 -66 704 22 -66 684 22 -66
 clone 704 22 -70 704 22 -70 684 22 -70
 
-function luigis_mansion:room/normal/sealed_room/ghosts
+execute if entity @a[gamemode=!spectator,scores={Room=66}] run function luigis_mansion:room/normal/sealed_room/ghosts
 
 function luigis_mansion:room/normal/door/hallway_12_sealed_room

@@ -9,7 +9,7 @@ execute as @a[gamemode=!spectator,scores={Room=64}] run function luigis_mansion:
 
 function #luigis_mansion:room/hidden/armory/interactions/room
 
-function luigis_mansion:room/hidden/armory/ghosts
+execute if entity @a[gamemode=!spectator,scores={Room=64},limit=1] run function luigis_mansion:room/hidden/armory/ghosts
 
 function luigis_mansion:room/hidden/door/hallway_19_armory
 function luigis_mansion:room/hidden/door/armory_ceramics_studio

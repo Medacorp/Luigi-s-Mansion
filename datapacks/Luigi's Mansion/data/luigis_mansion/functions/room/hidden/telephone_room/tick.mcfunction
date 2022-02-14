@@ -16,7 +16,7 @@ execute unless entity @a[tag=toad_5_dialog,limit=1] if data storage luigis_mansi
 execute unless entity @a[tag=uncle_grimmly_dialog,limit=1] if data storage luigis_mansion:data current_state.current_data{blackout:1b} if data storage luigis_mansion:data current_state.current_data.technical_data{telephone_2:1b} unless data storage luigis_mansion:data current_state.current_data.technical_data{telephone_3:1b} positioned 750.5 30 7.5 run playsound luigis_mansion:block.telephone.ring ambient @a[scores={Room=56,RoomNoise=0}] ~ ~ ~ 1
 execute unless entity @a[tag=toad_5_dialog,limit=1] unless entity @a[tag=uncle_grimmly_dialog,limit=1] if data storage luigis_mansion:data current_state.current_data{blackout:1b} unless data storage luigis_mansion:data current_state.current_data.technical_data{telephone_3:1b} run scoreboard players set @a[scores={Room=56,RoomNoise=0}] RoomNoise 40
 
-function luigis_mansion:room/hidden/telephone_room/ghosts
+execute if entity @a[gamemode=!spectator,scores={Room=56}] run function luigis_mansion:room/hidden/telephone_room/ghosts
 
 function luigis_mansion:room/hidden/door/hallway_19_telephone_room
 function luigis_mansion:room/hidden/door/telephone_room_clockwork_room

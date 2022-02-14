@@ -24,7 +24,7 @@ execute if entity @s[tag=grabbed] run trigger GBHChoice set 0
 execute if entity @s[tag=tripping] run trigger GBHChoice set 0
 execute unless entity @s[scores={GBHCall=0..}] run scoreboard players set @s GBHCall 0
 execute if entity @s[scores={GBHCall=1..,GBHWait=20}] run tellraw @a[tag=same_room] {"translate":"chat.type.text","with":[{"selector":"@s","color":"green"},{"translate":"luigis_mansion:message.player.ringing_gameboy_horror"}]}
-execute if entity @s[scores={GBHCall=1..,GBHWait=20..},tag=!high_health_idle] run function luigis_mansion:entities/player/animation/set/high_health_idle
+execute if entity @s[scores={GBHCall=1..,GBHWait=20..},tag=!high_health_idle] run function luigis_mansion:entities/player/animation/set/high_health_idle_no_sound
 execute if entity @s[scores={GBHCall=1..}] unless entity @s[scores={MusicGroup=0,MusicType=2..5}] unless entity @s[scores={MusicGroup=0,MusicType=22}] unless entity @s[scores={MusicGroup=0,MusicType=24}] unless entity @s[scores={MusicGroup=0,MusicType=38}] unless entity @s[scores={MusicGroup=0,MusicType=19}] unless entity @s[scores={MusicGroup=0,MusicType=27}] run function luigis_mansion:other/music/set/gameboy_horror_calling
 scoreboard players add @s[scores={GBHCall=1..},tag=!gameboy_horror_selected] GBHWait 1
 

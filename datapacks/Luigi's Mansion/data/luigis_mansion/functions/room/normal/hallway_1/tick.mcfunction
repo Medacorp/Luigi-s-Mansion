@@ -15,7 +15,7 @@ scoreboard players reset #temp Wave
 
 function #luigis_mansion:room/normal/hallway_1/interactions/room
 
-function luigis_mansion:room/normal/hallway_1/ghosts
+execute if entity @a[gamemode=!spectator,scores={Room=2}] run function luigis_mansion:room/normal/hallway_1/ghosts
 
 function luigis_mansion:room/normal/door/hallway_1_parlor
 function luigis_mansion:room/normal/door/hallway_1_hallway_2

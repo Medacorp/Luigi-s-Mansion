@@ -12,7 +12,7 @@ execute if block 704 13 40 minecraft:brewing_stand[has_bottle_0=false,has_bottle
 execute if block 704 13 46 minecraft:brewing_stand[has_bottle_0=true,has_bottle_1=true,has_bottle_2=true] positioned 704 13 46 run function luigis_mansion:spawn_furniture/purple_candles
 execute if block 704 13 40 minecraft:brewing_stand[has_bottle_0=true,has_bottle_1=true,has_bottle_2=true] positioned 704 13 40 run function luigis_mansion:spawn_furniture/purple_candles
 
-function luigis_mansion:room/normal/dining_room/ghosts
+execute if entity @a[gamemode=!spectator,scores={Room=26}] run function luigis_mansion:room/normal/dining_room/ghosts
 
 function luigis_mansion:room/normal/door/hallway_4_dining_room
 function luigis_mansion:room/normal/door/dining_room_kitchen
