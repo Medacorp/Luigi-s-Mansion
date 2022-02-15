@@ -1,0 +1,1 @@
+execute if entity @s[x=699.5,y=16,z=-74.5,distance=..0.7,tag=vacuum] unless score #kitchen_web Search matches 1 store success score #kitchen_web Search run scoreboard players add #kitchen_web Searching 1

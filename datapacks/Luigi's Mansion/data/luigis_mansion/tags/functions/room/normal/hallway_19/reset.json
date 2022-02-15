@@ -2,7 +2,7 @@
     "values": [
         "luigis_mansion:room/normal/hallway_19/reset/unload",
         "#luigis_mansion:room/normal/hallway_19/turn_lights/off",
-        "luigis_mansion:room/normal/hallway_19/reset/vacuumable_1",
-        "luigis_mansion:room/normal/hallway_19/reset/vacuumable_2"
+        "luigis_mansion:room/normal/hallway_19/reset/web_1",
+        "luigis_mansion:room/normal/hallway_19/reset/web_2"
     ]
 }

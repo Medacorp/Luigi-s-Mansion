@@ -1,1 +1,1 @@
-setblock 714 14 66 minecraft:cobweb
+setblock 714 13 60 minecraft:white_wool

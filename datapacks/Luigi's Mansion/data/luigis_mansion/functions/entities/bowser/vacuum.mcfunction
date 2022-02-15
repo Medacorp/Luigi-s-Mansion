@@ -12,6 +12,9 @@ execute if entity @s[scores={ActionTime=21..30,Sound=0}] run playsound luigis_ma
 scoreboard players set @s[scores={ActionTime=21..30,Sound=0}] Sound 10
 execute if entity @s[scores={ActionTime=21..30}] positioned ^ ^0.9 ^1.5 run function luigis_mansion:entities/bowser/suck
 execute if entity @s[scores={ActionTime=30}] run tag @a[tag=got_sucked,distance=..4,sort=nearest,limit=1] add vacuumed
+execute if entity @s[scores={ActionTime=30}] as @a[tag=vacuumed,limit=1,scores={Shrunk=0}] at @s run playsound luigis_mansion:entity.player.wind_warp player @a ~ ~ ~ 1
+execute if entity @s[scores={ActionTime=30}] as @a[tag=vacuumed,limit=1,scores={Shrunk=1..}] at @s run playsound luigis_mansion:entity.player.wind_warp player @a ~ ~ ~ 1
+execute if entity @s[scores={ActionTime=30..89}] run scoreboard players set @a[tag=vacuumed,limit=1] Sound 1
 execute if entity @a[tag=got_sucked,distance=..4] run scoreboard players add @s[scores={ActionTime=30}] ActionTime 1
 execute if entity @s[scores={ActionTime=30}] unless entity @a[tag=got_sucked] run scoreboard players set @s ActionTime 120
 scoreboard players set @s[scores={ActionTime=31}] AnimationProg 0
@@ -24,11 +27,11 @@ execute if entity @s[scores={ActionTime=90}] run effect give @a[tag=vacuumed,lim
 execute if entity @s[scores={ActionTime=90}] run scoreboard players set @a[tag=vacuumed,limit=1] ForcedDamage 9
 data modify entity @s[scores={ActionTime=86}] ArmorItems[3].tag.CustomModelData set value 91
 execute if entity @s[scores={ActionTime=86}] run playsound luigis_mansion:entity.bowser.vacuum_spit hostile @a[tag=same_room] ~ ~ ~ 3
-execute if entity @s[scores={ActionTime=90}] as @a[tag=vacuumed,limit=1] positioned as @s run teleport @s ~ ~2 ~
-execute if entity @s[scores={ActionTime=90..99}] if score #mirrored Selected matches 0 rotated ~-45 ~ as @a[tag=vacuumed,limit=1] positioned as @s run teleport @s ^ ^ ^0.3
-execute if entity @s[scores={ActionTime=90..99}] if score #mirrored Selected matches 1 rotated ~45 ~ as @a[tag=vacuumed,limit=1] positioned as @s run teleport @s ^ ^ ^0.3
+execute if entity @s[scores={ActionTime=90}] if score #mirrored Selected matches 0 as @a[tag=vacuumed,limit=1] positioned as @s run teleport @s ~ ~2 ~ -45 0
+execute if entity @s[scores={ActionTime=90}] if score #mirrored Selected matches 1 as @a[tag=vacuumed,limit=1] positioned as @s run teleport @s ~ ~2 ~ 45 0
+execute if entity @s[scores={ActionTime=90}] as @a[tag=vacuumed,limit=1] at @s positioned ^ ^ ^-1 run function luigis_mansion:entities/player/knockback/large
+execute if entity @s[scores={ActionTime=90}] run tag @a[tag=vacuumed] remove vacuumed
 data modify entity @s[scores={ActionTime=94}] ArmorItems[3].tag.CustomModelData set value 88
-execute if entity @s[scores={ActionTime=100}] run tag @a[tag=vacuumed] remove vacuumed
 tag @s[scores={ActionTime=110}] remove vacuum
 scoreboard players set @s[scores={ActionTime=110}] AnimationProg 0
 scoreboard players reset @s[scores={ActionTime=110}] ActionTime

@@ -11,8 +11,8 @@
 		"luigis_mansion:room/normal/laundry_room/interactions/room/shelf_2",
 		"luigis_mansion:room/normal/laundry_room/interactions/room/vacuumable_1",
 		"luigis_mansion:room/normal/laundry_room/interactions/room/vacuumable_2",
-		"luigis_mansion:room/normal/laundry_room/interactions/room/vacuumable_3",
-		"luigis_mansion:room/normal/laundry_room/interactions/room/vacuumable_4",
-		"luigis_mansion:room/normal/laundry_room/interactions/room/washing_machine"
+		"luigis_mansion:room/normal/laundry_room/interactions/room/washing_machine",
+		"luigis_mansion:room/normal/laundry_room/interactions/room/web_1",
+		"luigis_mansion:room/normal/laundry_room/interactions/room/web_2"
 	]
 }

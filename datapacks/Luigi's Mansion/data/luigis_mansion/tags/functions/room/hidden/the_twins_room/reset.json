@@ -22,8 +22,8 @@
         "luigis_mansion:room/hidden/the_twins_room/reset/toy_1",
         "luigis_mansion:room/hidden/the_twins_room/reset/toy_2",
         "luigis_mansion:room/hidden/the_twins_room/reset/toy_3",
-        "luigis_mansion:room/hidden/the_twins_room/reset/vacuumable_1",
-        "luigis_mansion:room/hidden/the_twins_room/reset/vacuumable_2",
-        "luigis_mansion:room/hidden/the_twins_room/reset/vacuumable_3"
+        "luigis_mansion:room/hidden/the_twins_room/reset/vacuumable",
+        "luigis_mansion:room/hidden/the_twins_room/reset/web_1",
+        "luigis_mansion:room/hidden/the_twins_room/reset/web_2"
     ]
 }
