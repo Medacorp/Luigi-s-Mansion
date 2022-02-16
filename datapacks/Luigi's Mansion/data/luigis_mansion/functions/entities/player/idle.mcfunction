@@ -14,6 +14,7 @@ execute if entity @s[tag=enthusiastic] run function luigis_mansion:entities/play
 execute if entity @s[tag=sigh] run function luigis_mansion:entities/player/animation/sigh
 execute if entity @s[tag=gameboy_horror] run function luigis_mansion:entities/player/animation/gameboy_horror
 execute if entity @s[tag=inspect] run function luigis_mansion:entities/player/animation/inspect
+execute if entity @s[tag=look] run function luigis_mansion:entities/player/animation/look
 execute if entity @s[tag=answer_phone] run function luigis_mansion:entities/player/animation/answer_phone
 execute if entity @s[tag=low_health_idle] run function luigis_mansion:entities/player/animation/low_health_idle
 execute if entity @s[tag=cold_room_idle] run function luigis_mansion:entities/player/animation/cold_room_idle

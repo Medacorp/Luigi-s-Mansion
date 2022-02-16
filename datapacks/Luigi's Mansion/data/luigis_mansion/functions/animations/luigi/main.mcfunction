@@ -28,6 +28,8 @@ execute if entity @s[tag=!was_gameboy_horroring] if data storage luigis_mansion:
 execute if entity @s[tag=was_gameboy_horroring] unless data storage luigis_mansion:data luigi{tags:["gameboy_horror"]} run function luigis_mansion:animations/luigi/reset_pose
 execute if entity @s[tag=!was_inspecting] if data storage luigis_mansion:data luigi{tags:["inspect"]} run function luigis_mansion:animations/luigi/reset_pose
 execute if entity @s[tag=was_inspecting] unless data storage luigis_mansion:data luigi{tags:["inspect"]} run function luigis_mansion:animations/luigi/reset_pose
+execute if entity @s[tag=!was_looking] if data storage luigis_mansion:data luigi{tags:["look"]} run function luigis_mansion:animations/luigi/reset_pose
+execute if entity @s[tag=was_looking] unless data storage luigis_mansion:data luigi{tags:["look"]} run function luigis_mansion:animations/luigi/reset_pose
 execute store result score @s KnockbackType run data get storage luigis_mansion:data luigi.animation
 execute unless score @s ScareType = @s KnockbackType run function luigis_mansion:animations/luigi/reset_pose
 data modify entity @s Tags append from storage luigis_mansion:data luigi.tags[]
@@ -37,10 +39,22 @@ tag @s[tag=thinking] remove sneak_pos
 tag @s[tag=sigh] remove sneak_pos
 tag @s[tag=enthusiastic] remove sneak_pos
 tag @s[tag=answer_phone] remove sneak_pos
+tag @s[tag=inspect] remove sneak_pos
+tag @s[tag=look] remove sneak_pos
 tag @s[tag=gameboy_horror] remove sneak_pos
 tag @s[tag=inspect] remove sneak_pos
 tag @s[tag=riding_poltergust] remove sneak_pos
-tag @s[tag=looking_at_map] remove sneak_pos
+tag @s[tag=yelling] remove low_health
+tag @s[tag=nod] remove low_health
+tag @s[tag=thinking] remove low_health
+tag @s[tag=sigh] remove low_health
+tag @s[tag=enthusiastic] remove low_health
+tag @s[tag=answer_phone] remove low_health
+tag @s[tag=inspect] remove low_health
+tag @s[tag=look] remove low_health
+tag @s[tag=gameboy_horror] remove low_health
+tag @s[tag=inspect] remove low_health
+tag @s[tag=riding_poltergust] remove low_health
 execute if entity @s[scores={Pull=10..}] run function luigis_mansion:animations/luigi/in_knockback
 execute if entity @s[scores={KnockbackType=..-1}] run function luigis_mansion:animations/luigi/in_knockback
 execute if entity @s[scores={KnockbackType=2..}] run function luigis_mansion:animations/luigi/in_knockback
@@ -74,24 +88,21 @@ tag @s[tag=low_health_idle] add was_low_health_idle
 tag @s[tag=!low_health_idle] remove was_low_health_idle
 tag @s[tag=low_health_idle] remove low_health_idle
 tag @s[tag=made_error] remove made_error
-tag @s[tag=sneaking] add was_sneaking
+tag @s[tag=sneaking,tag=!stop_model] add was_sneaking
 tag @s[tag=!sneaking] remove was_sneaking
 tag @s[tag=sneaking] remove sneaking
-tag @s[tag=walking] add was_walking
+tag @s[tag=walking,tag=!stop_model] add was_walking
 tag @s[tag=!walking] remove was_walking
 tag @s[tag=walking] remove walking
-tag @s[tag=running] add was_running
+tag @s[tag=running,tag=!stop_model] add was_running
 tag @s[tag=!running] remove was_running
 tag @s[tag=running] remove running
-tag @s[tag=swimming] add was_swimming
+tag @s[tag=swimming,tag=!stop_model] add was_swimming
 tag @s[tag=!swimming] remove was_swimming
 tag @s[tag=swimming] remove swimming
-tag @s[tag=sneak_pos] add was_sneak_posing
+tag @s[tag=sneak_pos,tag=!stop_model] add was_sneak_posing
 tag @s[tag=!sneak_pos] remove was_sneak_posing
 tag @s[tag=sneak_pos] remove sneak_pos
-tag @s[tag=looking_at_map] add was_looking_at_map
-tag @s[tag=!looking_at_map] remove was_looking_at_map
-tag @s[tag=looking_at_map] remove looking_at_map
 tag @s[tag=riding_poltergust] add was_riding_poltergust
 tag @s[tag=!riding_poltergust] remove was_riding_poltergust
 tag @s[tag=riding_poltergust] remove riding_poltergust
@@ -122,8 +133,15 @@ tag @s[tag=gameboy_horror] remove gameboy_horror
 tag @s[tag=inspect] add was_inspecting
 tag @s[tag=!inspect] remove was_inspecting
 tag @s[tag=inspect] remove inspect
+tag @s[tag=look] add was_looking
+tag @s[tag=!look] remove was_looking
+tag @s[tag=look] remove look
+tag @s[tag=holding_poltergust] add was_holding_poltergust
+tag @s[tag=!holding_poltergust] remove was_holding_poltergust
+tag @s[tag=holding_poltergust] remove holding_poltergust
 tag @s[tag=death_animation] remove death_animation
 tag @s[tag=spawn_animation] remove spawn_animation
+tag @s[tag=stop_model] remove stop_model
 tag @s remove dark_room
 tag @s remove flashlight
 tag @s remove moved

@@ -1,6 +1,6 @@
 execute unless score #fortune_tellers_room Ticking matches 1 run function #luigis_mansion:room/hidden/fortune_tellers_room/load
 execute as @a[gamemode=!spectator,x=734,y=10,z=34,dx=14,dy=8,dz=20] unless entity @s[scores={Room=20}] run scoreboard players operation @s LastRoom = @s Room
-execute as @e[x=734,y=10,z=34,dx=14,dy=8,dz=20] unless entity @s[tag=ghost,tag=appear] unless entity @s[tag=ghost,tag=vanish] run scoreboard players set @s Room 20
+execute as @e[tag=!spectator,x=734,y=10,z=34,dx=14,dy=8,dz=20] unless entity @s[tag=ghost,tag=appear] unless entity @s[tag=ghost,tag=vanish] run scoreboard players set @s Room 20
 scoreboard players set #temp Room 20
 
 execute as @a[gamemode=!spectator,scores={Room=20}] run function luigis_mansion:room/hidden/fortune_tellers_room/tick_per_player

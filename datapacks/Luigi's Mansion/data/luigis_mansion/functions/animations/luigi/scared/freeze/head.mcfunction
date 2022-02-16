@@ -22,7 +22,12 @@ execute if entity @s[scores={AnimationProg=63..66}] if score #mirrored Selected 
 execute if entity @s[scores={AnimationProg=67..70}] if score #mirrored Selected matches 0 store result entity @s Pose.Head[2] float 0.1 run scoreboard players add #temp Time 5
 execute if entity @s[scores={AnimationProg=71..74}] if score #mirrored Selected matches 0 store result entity @s Pose.Head[2] float 0.1 run scoreboard players remove #temp Time 5
 execute if entity @s[scores={AnimationProg=75..78}] if score #mirrored Selected matches 0 store result entity @s Pose.Head[2] float 0.1 run scoreboard players add #temp Time 5
-execute if entity @s[scores={AnimationProg=79..80}] if score #mirrored Selected matches 0 store result entity @s Pose.Head[2] float 0.1 run scoreboard players remove #temp Time 5
+execute if entity @s[scores={AnimationProg=79..82}] if score #mirrored Selected matches 0 store result entity @s Pose.Head[2] float 0.1 run scoreboard players remove #temp Time 5
+execute if entity @s[scores={AnimationProg=83..86}] if score #mirrored Selected matches 0 store result entity @s Pose.Head[2] float 0.1 run scoreboard players add #temp Time 5
+execute if entity @s[scores={AnimationProg=87..90}] if score #mirrored Selected matches 0 store result entity @s Pose.Head[2] float 0.1 run scoreboard players remove #temp Time 5
+execute if entity @s[scores={AnimationProg=91..94}] if score #mirrored Selected matches 0 store result entity @s Pose.Head[2] float 0.1 run scoreboard players add #temp Time 5
+execute if entity @s[scores={AnimationProg=95..98}] if score #mirrored Selected matches 0 store result entity @s Pose.Head[2] float 0.1 run scoreboard players remove #temp Time 5
+execute if entity @s[scores={AnimationProg=99..100}] if score #mirrored Selected matches 0 store result entity @s Pose.Head[2] float 0.1 run scoreboard players add #temp Time 5
 execute if entity @s[scores={AnimationProg=1..2}] if score #mirrored Selected matches 1 store result entity @s Pose.Head[2] float 0.1 run scoreboard players add #temp Time 5
 execute if entity @s[scores={AnimationProg=3..6}] if score #mirrored Selected matches 1 store result entity @s Pose.Head[2] float 0.1 run scoreboard players remove #temp Time 5
 execute if entity @s[scores={AnimationProg=7..10}] if score #mirrored Selected matches 1 store result entity @s Pose.Head[2] float 0.1 run scoreboard players add #temp Time 5
@@ -43,8 +48,13 @@ execute if entity @s[scores={AnimationProg=63..66}] if score #mirrored Selected 
 execute if entity @s[scores={AnimationProg=67..70}] if score #mirrored Selected matches 1 store result entity @s Pose.Head[2] float 0.1 run scoreboard players remove #temp Time 5
 execute if entity @s[scores={AnimationProg=71..74}] if score #mirrored Selected matches 1 store result entity @s Pose.Head[2] float 0.1 run scoreboard players add #temp Time 5
 execute if entity @s[scores={AnimationProg=75..78}] if score #mirrored Selected matches 1 store result entity @s Pose.Head[2] float 0.1 run scoreboard players remove #temp Time 5
-execute if entity @s[scores={AnimationProg=79..80}] if score #mirrored Selected matches 1 store result entity @s Pose.Head[2] float 0.1 run scoreboard players add #temp Time 5
+execute if entity @s[scores={AnimationProg=79..82}] if score #mirrored Selected matches 1 store result entity @s Pose.Head[2] float 0.1 run scoreboard players add #temp Time 5
+execute if entity @s[scores={AnimationProg=83..86}] if score #mirrored Selected matches 1 store result entity @s Pose.Head[2] float 0.1 run scoreboard players remove #temp Time 5
+execute if entity @s[scores={AnimationProg=87..90}] if score #mirrored Selected matches 1 store result entity @s Pose.Head[2] float 0.1 run scoreboard players add #temp Time 5
+execute if entity @s[scores={AnimationProg=91..94}] if score #mirrored Selected matches 1 store result entity @s Pose.Head[2] float 0.1 run scoreboard players remove #temp Time 5
+execute if entity @s[scores={AnimationProg=95..98}] if score #mirrored Selected matches 1 store result entity @s Pose.Head[2] float 0.1 run scoreboard players add #temp Time 5
+execute if entity @s[scores={AnimationProg=99..100}] if score #mirrored Selected matches 1 store result entity @s Pose.Head[2] float 0.1 run scoreboard players remove #temp Time 5
 scoreboard players reset #temp Time
-data merge entity @s[scores={AnimationProg=80}] {Pose:{Head:[0.0f,0.0f,0.01f]}}
-data merge entity @s[scores={AnimationProg=80},tag=flipped_gravity] {Pose:{Head:[0.0f,0.0f,-180.0f]}}
-scoreboard players set @s[scores={AnimationProg=80..}] AnimationProg 0
+data merge entity @s[scores={AnimationProg=100}] {Pose:{Head:[0.0f,0.0f,0.01f]}}
+data merge entity @s[scores={AnimationProg=100},tag=flipped_gravity] {Pose:{Head:[0.0f,0.0f,-180.0f]}}
+scoreboard players set @s[scores={AnimationProg=100..}] AnimationProg 0

@@ -9,5 +9,6 @@ tag @s remove inspect
 tag @s remove answer_phone
 tag @s remove sigh
 tag @s remove stand_still
+tag @s remove look
 scoreboard players reset @s YellTime
 scoreboard players set @s IdleTime 0

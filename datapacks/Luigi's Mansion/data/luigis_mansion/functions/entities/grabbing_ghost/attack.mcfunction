@@ -18,12 +18,12 @@ execute if entity @s[scores={ActionTime=20},tag=harmless] as @a[tag=still_grabbe
 execute if entity @s[scores={ActionTime=20},tag=!harmless] as @a[tag=still_grabbed,limit=1] run function luigis_mansion:entities/player/knockback/harmfull_grab
 execute if entity @s[scores={ActionTime=20..40}] unless entity @a[tag=still_grabbed,limit=1] run scoreboard players set @s ActionTime 41
 execute if entity @s[scores={ActionTime=20..40}] at @e[tag=grabbed_model,limit=1] run teleport @s ^ ^ ^-0.65 ~ ~
-tag @s[scores={ActionTime=21}] add stunable
 execute if entity @s[scores={ActionTime=40},tag=!harmless] run scoreboard players add @a[tag=still_grabbed,limit=1] GrabbedShake 1
 tag @a[tag=still_grabbed,limit=1] remove still_grabbed
 tag @e[tag=grabbed_model,limit=1] remove grabbed_model
 scoreboard players reset #temp ID
 tag @s[scores={ActionTime=40}] add laugh
+tag @s[scores={ActionTime=41}] add stunable
 scoreboard players set @s[scores={ActionTime=41}] AnimationProg 0
 scoreboard players reset @s[scores={ActionTime=41}] GrabbedID
 execute if entity @s[scores={ActionTime=41}] run playsound luigis_mansion:entity.grabbing_ghost.let_go hostile @a[tag=same_room] ~ ~ ~ 1

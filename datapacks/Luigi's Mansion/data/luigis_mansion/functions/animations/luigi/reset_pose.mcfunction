@@ -1,5 +1,4 @@
 scoreboard players set @s AnimationProg 0
-scoreboard players set @s Time 0
 scoreboard players set @s Pull 0
 scoreboard players set @s ScareTime 0
 tag @s remove was_sneak_posing
