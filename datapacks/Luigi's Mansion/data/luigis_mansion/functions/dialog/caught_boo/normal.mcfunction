@@ -49,6 +49,7 @@ kill @e[type=minecraft:marker,tag=choice]
 execute if entity @a[scores={EGaddCallChoice=1..},limit=1] run scoreboard players add @s[scores={GBHDialog=10097..}] GBHDialog 1
 scoreboard players add @s[scores={GBHDialog=..10096}] GBHDialog 1
 execute unless entity @s[scores={GBHDialog=1..}] run scoreboard players add @s GBHDialog 1
+execute if entity @s[scores={GBHDialog=1..}] as @a[gamemode=!spectator,scores={IdleTime=0..},tag=!looking_at_map] run function luigis_mansion:entities/player/animation/set/gameboy_horror
 execute if entity @s[scores={GBHDialog=1..}] as @a unless entity @s[scores={MusicGroup=0,MusicType=19}] run function luigis_mansion:other/music/set/gameboy_horror
 execute if entity @s[scores={GBHDialog=1,Variant=1}] if score #players Totals matches 1 run tellraw @a {"translate":"chat.type.text","with":[{"translate":"luigis_mansion:entity.e_gadd","color":"green"},{"translate":"luigis_mansion:dialog.caught_boo.1"}]}
 execute if entity @s[scores={GBHDialog=1,Variant=1}] if score #players Totals matches 2.. run tellraw @a {"translate":"chat.type.text","with":[{"translate":"luigis_mansion:entity.e_gadd","color":"green"},{"translate":"luigis_mansion:dialog.caught_boo.1.more"}]}
@@ -164,6 +165,7 @@ execute if entity @s[scores={GBHDialog=10098}] unless entity @s[scores={Variant=
 execute if entity @s[scores={GBHDialog=10098}] unless entity @s[scores={Variant=-2}] as @a[tag=same_room] at @s run playsound luigis_mansion:entity.e_gadd.talk. neutral @s ~ ~ ~ 1
 execute unless entity @s[scores={Variant=-2}] run scoreboard players set @s[scores={GBHDialog=10138}] GBHDialog -1
 execute if entity @s[scores={GBHDialog=-1}] as @a run function luigis_mansion:other/music/set/silence
+execute if entity @s[scores={GBHDialog=-1}] as @a[tag=same_room,tag=!spectator,tag=!looking_at_map] run function luigis_mansion:entities/player/animation/set/none
 execute if entity @s[scores={GBHDialog=-1}] as @a run scoreboard players reset @a EGaddCallChoice
 scoreboard players set @s[scores={GBHDialog=-1}] GBHCall 0
 scoreboard players set @s[scores={GBHDialog=-1}] GBHWait 0

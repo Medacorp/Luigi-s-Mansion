@@ -1,5 +1,6 @@
 scoreboard players set #freeze_timer Selected 1
 scoreboard players add @s Dialog 1
+execute if entity @s[scores={Dialog=1..139}] as @a[tag=same_room,gamemode=!spectator,scores={IdleTime=0..},tag=!looking_at_map] run function luigis_mansion:entities/player/animation/set/high_health_idle_no_sound
 execute if entity @s[scores={Dialog=1}] as @a run function luigis_mansion:other/music/set/non_overwritten_silence
 execute if entity @s[scores={Dialog=1}] run stopsound @a music
 execute if entity @s[scores={Dialog=1}] run scoreboard players set @a Music 420
@@ -16,9 +17,10 @@ execute if entity @s[scores={Dialog=240}] if score #players Totals matches 2.. r
 execute if entity @s[scores={Dialog=290}] if score #players Totals matches 1 run tellraw @a {"translate":"chat.type.text","with":[{"translate":"luigis_mansion:entity.boo","color":"green"},{"translate":"luigis_mansion:dialog.release_boos.4"}]}
 execute if entity @s[scores={Dialog=290}] if score #players Totals matches 2.. run tellraw @a {"translate":"chat.type.text","with":[{"translate":"luigis_mansion:entity.boo","color":"green"},{"translate":"luigis_mansion:dialog.release_boos.4.more"}]}
 execute if entity @s[scores={Dialog=340}] run tellraw @a {"translate":"chat.type.text","with":[{"translate":"luigis_mansion:entity.boo","color":"green"},{"translate":"luigis_mansion:dialog.release_boos.5"}]}
-tag @s[scores={Dialog=460}] remove release_boos
-teleport @s[x=689.5,y=11,z=-63.5,distance=..1.5] ~-1.5 ~ ~
 execute if entity @s[scores={Dialog=460}] as @a run function luigis_mansion:other/music/set/silence
-execute if entity @s[scores={Dialog=460}] run data modify storage luigis_mansion:data current_state.current_data.technical_data merge value {released_boos:1b}
-execute if entity @s[scores={Dialog=460}] run scoreboard players set @a GBHCall 4
-scoreboard players set @s[scores={Dialog=460}] Dialog 0
+execute if entity @s[scores={Dialog=460}] as @a[tag=same_room,tag=!spectator,tag=!sigh,tag=!looking_at_map] run function luigis_mansion:entities/player/animation/set/sigh
+execute if entity @s[scores={Dialog=480}] as @a[tag=same_room,tag=!spectator,tag=!looking_at_map] run function luigis_mansion:entities/player/animation/set/none
+execute if entity @s[scores={Dialog=480}] run data modify storage luigis_mansion:data current_state.current_data.technical_data merge value {released_boos:1b}
+tag @s[scores={Dialog=480}] remove release_boos
+execute if entity @s[scores={Dialog=480}] run scoreboard players set @a GBHCall 4
+scoreboard players set @s[scores={Dialog=480}] Dialog 0

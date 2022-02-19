@@ -101,6 +101,15 @@ Type | Detects                  | Add-on        | Namespace                 | Da
 1    | Ghosts in a small radius | beta_mansion  | luigis_beta_mansion       | "file/Luigi's Beta Mansion"
 ```
 
+## Map settings
+Add new ones in `#luigis_mansion:settings/map`.
+
+```
+Values | Add-on       | Namespace           | Data pack name
+1-2    | vanilla      | luigis_mansion      | "file/Luigi's Mansion"
+3      | beta_mansion | luigis_beta_mansion | "file/Luigi's Beta Mansion"
+```
+
 ## Gallery numbers
 The 3DS Remake Values column refers to the SelectedFrame score.
 

@@ -1,4 +1,6 @@
 scoreboard players add @s Dialog 1
+execute unless entity @s[scores={Dialog=72..580}] run tag @a[scores={IdleTime=19..}] remove cold_room_idle
+execute unless entity @s[scores={Dialog=72..580}] run scoreboard players set @a[scores={IdleTime=19..}] IdleTime 18
 execute if entity @e[tag=gold_ghost,tag=dialog] run tag @a[scores={IdleTime=19..}] remove cold_room_idle
 execute if entity @e[tag=gold_ghost,tag=dialog] run scoreboard players set @a[scores={IdleTime=19..}] IdleTime 18
 scoreboard players set @s[scores={Dialog=..72,IdleTime=19..}] IdleTime 18

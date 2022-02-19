@@ -1,5 +1,6 @@
 scoreboard players set #freeze_timer Selected 1
 scoreboard players add @s GBHDialog 1
+execute if entity @s[scores={GBHDialog=1..503}] as @a[gamemode=!spectator,scores={IdleTime=0..},tag=!looking_at_map] run function luigis_mansion:entities/player/animation/set/gameboy_horror
 execute if entity @s[scores={GBHDialog=1..}] as @a unless entity @s[scores={MusicGroup=0,MusicType=19}] run function luigis_mansion:other/music/set/gameboy_horror
 execute if entity @s[scores={GBHDialog=1}] run tellraw @a {"translate":"chat.type.text","with":[{"translate":"luigis_mansion:entity.e_gadd","color":"green"},{"translate":"luigis_mansion:dialog.area_3_key.1"}]}
 execute if entity @s[scores={GBHDialog=1}] as @a[tag=same_room] at @s run playsound luigis_mansion:entity.e_gadd.talk.luigi neutral @s ~ ~ ~ 1
@@ -21,10 +22,12 @@ execute if entity @s[scores={GBHDialog=384}] run tellraw @a {"translate":"chat.t
 execute if entity @s[scores={GBHDialog=384}] as @a[tag=same_room] at @s run playsound luigis_mansion:entity.e_gadd.talk.oui_soh_suu_suhm_ck_ck neutral @s ~ ~ ~ 1
 execute if entity @s[scores={GBHDialog=440}] run tellraw @a {"translate":"chat.type.text","with":[{"translate":"luigis_mansion:entity.e_gadd","color":"green"},{"translate":"luigis_mansion:dialog.area_3_key.8"}]}
 execute if entity @s[scores={GBHDialog=440}] as @a[tag=same_room] at @s run playsound luigis_mansion:entity.e_gadd.talk.ohmoogah_luigi_odoh neutral @s ~ ~ ~ 1
-execute if entity @s[scores={GBHDialog=504}] as @a run function luigis_mansion:room/ghost_portrificationizer_room/warp_to
-execute if entity @s[scores={GBHDialog=506},advancements={luigis_mansion:lab/ghost_portrificationizer_room=true}] run tag @e[tag=e_gadd,scores={Room=-3},limit=1] add return_dialog
-execute if entity @s[scores={GBHDialog=506},advancements={luigis_mansion:lab/ghost_portrificationizer_room=false}] run tag @e[tag=e_gadd,scores={Room=-3},limit=1] add talk
-execute if entity @s[scores={GBHDialog=506},advancements={luigis_mansion:lab/ghost_portrificationizer_room=false}] run scoreboard players set @e[tag=e_gadd,scores={Room=-3},limit=1] Dialog 529
-scoreboard players set @s[scores={GBHDialog=506}] GBHCall 0
-scoreboard players set @s[scores={GBHDialog=506}] GBHWait 0
-scoreboard players reset @s[scores={GBHDialog=506}] GBHDialog
+execute if entity @s[scores={GBHDialog=504}] as @a[gamemode=!spectator,tag=!nod,tag=!looking_at_map] run function luigis_mansion:entities/player/animation/set/nod
+execute if entity @s[scores={GBHDialog=524}] as @a[gamemode=!spectator,tag=!looking_at_map] run function luigis_mansion:entities/player/animation/set/none
+execute if entity @s[scores={GBHDialog=524}] as @a run function luigis_mansion:room/ghost_portrificationizer_room/warp_to
+execute if entity @s[scores={GBHDialog=526},advancements={luigis_mansion:lab/ghost_portrificationizer_room=true}] run tag @e[tag=e_gadd,scores={Room=-3},limit=1] add return_dialog
+execute if entity @s[scores={GBHDialog=526},advancements={luigis_mansion:lab/ghost_portrificationizer_room=false}] run tag @e[tag=e_gadd,scores={Room=-3},limit=1] add talk
+execute if entity @s[scores={GBHDialog=526},advancements={luigis_mansion:lab/ghost_portrificationizer_room=false}] run scoreboard players set @e[tag=e_gadd,scores={Room=-3},limit=1] Dialog 529
+scoreboard players set @s[scores={GBHDialog=526}] GBHCall 0
+scoreboard players set @s[scores={GBHDialog=526}] GBHWait 0
+scoreboard players reset @s[scores={GBHDialog=526}] GBHDialog

@@ -1,5 +1,7 @@
 scoreboard players set #freeze_timer Selected 1
 scoreboard players add @s Dialog 1
+execute if entity @s[scores={Dialog=1}] as @a[tag=same_room,gamemode=!spectator] run function luigis_mansion:entities/player/scare/bash_no_move
+execute if entity @s[scores={Dialog=1..170}] run scoreboard players set @a[scores={ScareType=4}] ScareTime 21
 execute if entity @s[scores={Dialog=1}] run summon minecraft:lightning_bolt 691 100 81
 execute if entity @s[scores={Dialog=30}] run summon minecraft:lightning_bolt 691 100 -66
 execute if entity @s[scores={Dialog=70}] run summon minecraft:lightning_bolt 687 151 8.0

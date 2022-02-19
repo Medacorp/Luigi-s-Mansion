@@ -1,5 +1,6 @@
 scoreboard players set #freeze_timer Selected 1
 scoreboard players add @s GBHDialog 1
+execute if entity @s[scores={GBHDialog=1..1559}] as @a[gamemode=!spectator,scores={IdleTime=0..},tag=!looking_at_map] run function luigis_mansion:entities/player/animation/set/gameboy_horror
 execute if entity @s[scores={GBHDialog=1..}] as @a unless entity @s[scores={MusicGroup=0,MusicType=19}] run function luigis_mansion:other/music/set/gameboy_horror
 execute if entity @s[scores={GBHDialog=1}] run tellraw @a {"translate":"chat.type.text","with":[{"translate":"luigis_mansion:entity.e_gadd","color":"green"},{"translate":"luigis_mansion:dialog.caught_king_boo.1"}]}
 execute if entity @s[scores={GBHDialog=1}] as @a at @s run playsound luigis_mansion:entity.e_gadd.talk.luigi neutral @s ~ ~ ~ 1
@@ -15,6 +16,7 @@ execute if entity @s[scores={GBHDialog=232}] as @a at @s run playsound luigis_ma
 execute if entity @s[scores={GBHDialog=328}] if score #players Totals matches 1 run tellraw @a {"translate":"chat.type.text","with":[{"translate":"luigis_mansion:entity.e_gadd","color":"green"},{"translate":"luigis_mansion:dialog.caught_king_boo.5"}]}
 execute if entity @s[scores={GBHDialog=328}] if score #players Totals matches 2.. run tellraw @a {"translate":"chat.type.text","with":[{"translate":"luigis_mansion:entity.e_gadd","color":"green"},{"translate":"luigis_mansion:dialog.caught_king_boo.5.more"}]}
 execute if entity @s[scores={GBHDialog=328}] as @a at @s run playsound luigis_mansion:entity.e_gadd.talk.ohyah_ohyahmah_hey_hey_oui neutral @s ~ ~ ~ 1
+execute if entity @s[scores={GBHDialog=496..1559}] as @a[gamemode=!spectator,tag=!thinking,tag=!looking_at_map] run function luigis_mansion:entities/player/animation/set/thinking
 execute if entity @s[scores={GBHDialog=496}] run tellraw @a {"translate":"chat.type.text","with":[{"translate":"luigis_mansion:entity.e_gadd","color":"green"},{"translate":"luigis_mansion:dialog.caught_king_boo.6"}]}
 execute if entity @s[scores={GBHDialog=496}] as @a at @s run playsound luigis_mansion:entity.e_gadd.talk.mee_oomahkah_suku_suku_yahboh_yahboh neutral @s ~ ~ ~ 1
 execute if entity @s[scores={GBHDialog=616}] if score #players Totals matches 1 run tellraw @a {"translate":"chat.type.text","with":[{"translate":"luigis_mansion:entity.e_gadd","color":"green"},{"translate":"luigis_mansion:dialog.caught_king_boo.7"}]}
@@ -38,6 +40,7 @@ execute if entity @s[scores={GBHDialog=1520}] if score #players Totals matches 1
 execute if entity @s[scores={GBHDialog=1520}] if score #players Totals matches 2.. run tellraw @a {"translate":"chat.type.text","with":[{"translate":"luigis_mansion:entity.e_gadd","color":"green"},{"translate":"luigis_mansion:dialog.caught_king_boo.13.more"}]}
 execute if entity @s[scores={GBHDialog=1520}] as @a at @s run playsound luigis_mansion:entity.e_gadd.talk.ohyah_mee neutral @s ~ ~ ~ 1
 execute if entity @s[scores={GBHDialog=1560}] as @a run function luigis_mansion:other/music/set/silence
+execute if entity @s[scores={GBHDialog=1560}] as @a[gamemode=!spectator,tag=!nod,tag=!looking_at_map] run function luigis_mansion:entities/player/animation/set/nod
 scoreboard players set @s[scores={GBHDialog=1560}] GBHCall 0
 scoreboard players set @s[scores={GBHDialog=1560}] GBHWait 0
 scoreboard players reset @s[scores={GBHDialog=1560}] GBHDialog

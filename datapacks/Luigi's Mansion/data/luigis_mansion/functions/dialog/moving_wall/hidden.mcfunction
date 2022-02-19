@@ -1,5 +1,6 @@
 scoreboard players set #freeze_timer Selected 1
 scoreboard players add @s Dialog 1
+execute if entity @s[scores={Dialog=1..279}] as @a[tag=same_room,gamemode=!spectator,scores={IdleTime=0..},tag=!looking_at_map] run function luigis_mansion:entities/player/animation/set/stand_still
 execute if entity @s[scores={Dialog=1..89}] run stopsound @a[scores={Room=18}] music
 execute if entity @s[scores={Dialog=1}] run scoreboard players set @a[scores={Room=18}] Music 310
 execute if entity @s[scores={Dialog=40}] run fill 682 11 67 682 12 67 minecraft:air
@@ -25,7 +26,7 @@ execute if entity @s[scores={Dialog=230}] run clone 681 11 57 689 17 56 681 11 5
 execute if entity @s[scores={Dialog=240}] run clone 681 11 56 689 17 55 681 11 54 replace move
 execute if entity @s[scores={Dialog=240}] run data modify storage luigis_mansion:data current_state.current_data.technical_data merge value {moved_wall:1b}
 execute if entity @s[scores={Dialog=280}] run playsound luigis_mansion:music.solve_puzzle music @a[scores={Room=18}] ~ ~ ~ 10000
-teleport @s[x=689.5,y=11,z=79.5,distance=..1.5] ~-1.5 ~ ~
+execute if entity @s[scores={Dialog=280}] as @a[tag=same_room,tag=!spectator,tag=!looking_at_map] run function luigis_mansion:entities/player/animation/set/none
 tag @s[scores={Dialog=280}] remove move_wall
 
 execute if entity @s[scores={Dialog=40}] run fill 678 11 67 678 12 67 minecraft:air

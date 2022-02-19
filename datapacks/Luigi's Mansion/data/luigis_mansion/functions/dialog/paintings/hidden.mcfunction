@@ -1,6 +1,7 @@
 scoreboard players set #freeze_timer Selected 1
 scoreboard players add @s Dialog 1
 execute if entity @s[scores={Dialog=1}] as @a[scores={Room=3},gamemode=!spectator] at @s run playsound luigis_mansion:entity.ghost.laugh hostile @s ~ ~ ~ 3
+execute if entity @s[scores={Dialog=1..579}] as @a[gamemode=!spectator,scores={Room=3,IdleTime=0..},tag=!looking_at_map] run function luigis_mansion:entities/player/animation/set/stand_still
 execute if entity @s[scores={Dialog=20}] run stopsound @a[scores={Room=3},gamemode=!spectator] music
 execute if entity @s[scores={Dialog=20}] run playsound luigis_mansion:music.paintings music @a[scores={Room=3},gamemode=!spectator] ~ ~ ~ 1000
 execute if entity @s[scores={Dialog=20}] run scoreboard players set @a[scores={Room=3},gamemode=!spectator] Music 560
@@ -28,4 +29,5 @@ execute if entity @s[scores={Dialog=480..498}] unless score #parlor_painting_4 S
 execute if entity @s[scores={Dialog=540}] run tellraw @a[scores={Room=3}] {"translate":"chat.type.text","with":[{"translate":"luigis_mansion:entity.painting","color":"green"},{"translate":"luigis_mansion:dialog.paintings.8"}]}
 execute if entity @s[scores={Dialog=540..549}] unless score #parlor_painting_4 Search matches 1 store success score #parlor_painting_4 Search run scoreboard players add #parlor_painting_4 Searching 1
 execute if entity @s[scores={Dialog=580}] run function luigis_mansion:room/hidden/parlor/wave_1
+execute if entity @s[scores={Dialog=580}] as @a[scores={Room=3},tag=!spectator,tag=!looking_at_map] run function luigis_mansion:entities/player/animation/set/none
 scoreboard players set @s[scores={Dialog=580}] Dialog 0

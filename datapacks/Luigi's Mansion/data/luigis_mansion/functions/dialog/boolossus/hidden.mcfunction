@@ -1,5 +1,6 @@
 scoreboard players set #freeze_timer Selected 1
 scoreboard players add @s Dialog 1
+execute if entity @s[scores={Dialog=1..433}] as @a[tag=same_room,gamemode=!spectator,scores={IdleTime=0..},tag=!looking_at_map] run function luigis_mansion:entities/player/animation/set/stand_still
 execute if entity @s[scores={Dialog=1}] if score #players Totals matches 1 run tellraw @a[tag=same_room] {"translate":"chat.type.text","with":[{"translate":"luigis_mansion:entity.boolossus","color":"green"},{"translate":"luigis_mansion:dialog.boolossus.1","with":[{"selector":"@p[gamemode=!spectator]"}]}]}
 execute if entity @s[scores={Dialog=1}] if score #players Totals matches 2.. run tellraw @a[tag=same_room] {"translate":"chat.type.text","with":[{"translate":"luigis_mansion:entity.boolossus","color":"green"},{"translate":"luigis_mansion:dialog.boolossus.1.more"}]}
 execute if entity @s[scores={Dialog=120}] run tellraw @a[tag=same_room] {"translate":"chat.type.text","with":[{"translate":"luigis_mansion:entity.boolossus","color":"green"},{"translate":"luigis_mansion:dialog.boolossus.2"}]}
@@ -25,10 +26,11 @@ execute if entity @s[scores={Dialog=378}] run tag @e[tag=boolossus,sort=random,t
 execute if entity @s[scores={Dialog=382}] run tag @e[tag=boolossus,sort=random,tag=!dialog_animation_start,limit=1] add dialog_animation_start
 execute if entity @s[scores={Dialog=386}] run tag @e[tag=boolossus,sort=random,tag=!dialog_animation_start,limit=1] add dialog_animation_start
 execute if entity @s[scores={Dialog=390}] run tag @e[tag=boolossus,sort=random,tag=!dialog_animation_start,limit=1] add dialog_animation_start
-execute if entity @s[scores={Dialog=434}] as @a[tag=target,limit=1] at @s positioned ^ ^ ^1 run function luigis_mansion:entities/player/scare/bash_no_move
+execute if entity @s[scores={Dialog=434}] as @a[tag=same_room,tag=!spectator,tag=!looking_at_map] run function luigis_mansion:entities/player/animation/set/none
+execute if entity @s[scores={Dialog=434}] as @a[tag=same_room,limit=1] at @s positioned ^ ^ ^1 run function luigis_mansion:entities/player/scare/bash_no_move
 execute if entity @s[scores={Dialog=435..554}] if score #mirrored Selected matches 0 as @a[tag=target,scores={ScareTime=20},limit=1] at @s rotated ~-5 0 run function luigis_mansion:entities/player/scared_bashed_force_move
 execute if entity @s[scores={Dialog=435..554}] if score #mirrored Selected matches 1 as @a[tag=target,scores={ScareTime=20},limit=1] at @s rotated ~5 0 run function luigis_mansion:entities/player/scared_bashed_force_move
-execute if entity @s[scores={Dialog=435..593}] run scoreboard players set @a[tag=target,limit=1,scores={ScareTime=20}] ScareTime 21
+execute if entity @s[scores={Dialog=435..593}] run scoreboard players set @a[tag=same_room,limit=1,scores={ScareTime=20}] ScareTime 21
 execute if entity @s[scores={Dialog=472}] run scoreboard players add @e[tag=boolossus] ActionTime 1
 execute if entity @s[scores={Dialog=574..}] as @e[tag=boolossus] at @s run teleport @s ~ ~1 ~
 execute if entity @s[scores={Dialog=574}] as @a[tag=target,limit=1] at @s run teleport @s ~ 120 ~
@@ -54,6 +56,5 @@ execute if entity @s[scores={Dialog=593}] as @a[tag=target,limit=1] at @s run te
 execute if entity @s[scores={Dialog=594}] as @a[tag=target,limit=1] at @s run teleport @s ~ 140 ~
 execute if entity @s[scores={Dialog=595}] run tag @e[tag=boolossus,tag=!fight] add remove_from_existence
 execute if entity @s[scores={Dialog=595}] run tag @e[tag=target,limit=1] remove target
-execute as @a[x=681.5,y=120,z=28.5,distance=..0.7,tag=target,limit=1] at @s run teleport @s ~-1.5 ~ ~
-execute if entity @s[scores={Dialog=594..}] run scoreboard players set @a[tag=target,limit=1] ScareTime 1
+execute if entity @s[scores={Dialog=594..}] run scoreboard players set @a[tag=same_room,limit=1] ScareTime 1
 execute if entity @s[scores={Dialog=595}] as @a run function luigis_mansion:room/hidden/boolossus_battle/warp_to

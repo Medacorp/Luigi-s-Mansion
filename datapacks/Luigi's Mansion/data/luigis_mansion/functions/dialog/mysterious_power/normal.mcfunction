@@ -1,9 +1,7 @@
 scoreboard players set #freeze_timer Selected 1
 scoreboard players add @s Dialog 1
-execute unless entity @a[scores={Room=52},gamemode=!spectator,limit=1] run scoreboard players set @s[scores={Dialog=..1386}] Dialog 1900
-execute unless entity @a[scores={Room=52},gamemode=!spectator,limit=1] run scoreboard players set @s[scores={Dialog=1466..1770}] Dialog 1900
 scoreboard players set @a[tag=same_room,gamemode=!spectator] Invulnerable 10
-execute as @a[distance=..2] at @s run teleport @s ~1 ~ ~
+execute if entity @s[scores={Dialog=1..}] as @a[tag=same_room,gamemode=!spectator,scores={IdleTime=0..},tag=!looking_at_map] run function luigis_mansion:entities/player/animation/set/stand_still
 execute if entity @s[scores={Dialog=1..2096}] as @a[tag=same_room,gamemode=!spectator] unless entity @s[scores={MusicGroup=0,MusicType=21}] run function luigis_mansion:other/music/set/mysterious_power
 execute if data storage luigis_mansion:data current_state.current_data.technical_data{mysterious_power:1b} run scoreboard players set @s[scores={Dialog=1}] Dialog 1466
 execute if entity @s[scores={Dialog=1}] run playsound luigis_mansion:entity.boo.laugh_2 hostile @a[tag=same_room] ~ ~ ~ 1
@@ -29,6 +27,7 @@ execute if entity @s[scores={Dialog=1394}] run playsound luigis_mansion:music.wa
 execute if entity @s[scores={Dialog=1394}] run scoreboard players set @a[tag=same_room,gamemode=!spectator] Music 80
 execute if entity @s[scores={Dialog=1404..}] as @e[tag=same_room,tag=gameboy_horror_location] run function luigis_mansion:entities/gameboy_horror_location/bring_player_back
 execute if entity @s[scores={Dialog=1404..1464}] as @a[tag=same_room,gamemode=!spectator] at @s unless block ~-0.5 ~ ~ minecraft:black_concrete run teleport @s ~0.5 ~ ~
+execute if entity @s[scores={Dialog=1464}] as @a[tag=same_room,tag=!spectator,tag=!looking_at_map] run function luigis_mansion:entities/player/animation/set/none
 execute if entity @s[scores={Dialog=1464}] run teleport @a[tag=same_room,gamemode=!spectator] 751.0 11 9.0
 execute if entity @s[scores={Dialog=1464}] run data modify storage luigis_mansion:data current_state.current_data.technical_data merge value {mysterious_power:1b}
 tag @s[scores={Dialog=1464}] add dead
@@ -47,22 +46,9 @@ execute if entity @s[scores={Dialog=1828}] run playsound luigis_mansion:music.wa
 execute if entity @s[scores={Dialog=1828}] run scoreboard players set @a[tag=same_room,gamemode=!spectator] Music 80
 execute if entity @s[scores={Dialog=1838..}] as @e[tag=same_room,tag=gameboy_horror_location] run function luigis_mansion:entities/gameboy_horror_location/bring_player_back
 execute if entity @s[scores={Dialog=1838..1898}] as @a[tag=same_room,gamemode=!spectator] at @s unless block ~-0.5 ~ ~ minecraft:black_concrete run teleport @s ~0.5 ~ ~
+execute if entity @s[scores={Dialog=1898}] as @a[tag=same_room,tag=!spectator,tag=!looking_at_map] run function luigis_mansion:entities/player/animation/set/none
 execute if entity @s[scores={Dialog=1898}] run teleport @a[tag=same_room,gamemode=!spectator] 751.0 11 9.0
 tag @s[scores={Dialog=1898}] add dead
-
-execute if entity @s[scores={Dialog=1900}] run playsound luigis_mansion:entity.boo.complain hostile @a[tag=same_room] ~ ~ ~ 1
-scoreboard players set @s[scores={Dialog=1900}] AnimationProg 0
-execute if entity @s[scores={Dialog=1900}] if score #players Totals matches 1 run tellraw @a[tag=same_room,gamemode=!spectator] {"translate":"chat.type.text","with":[{"translate":"luigis_mansion:entity.mysterious_power","color":"green"},{"translate":"luigis_mansion:dialog.mysterious_power.leave.1"}]}
-execute if entity @s[scores={Dialog=1900}] if score #players Totals matches 2.. run tellraw @a[tag=same_room,gamemode=!spectator] {"translate":"chat.type.text","with":[{"translate":"luigis_mansion:entity.mysterious_power","color":"green"},{"translate":"luigis_mansion:dialog.mysterious_power.leave.1.more"}]}
-execute if entity @s[scores={Dialog=2028}] run tellraw @a[tag=same_room,gamemode=!spectator] {"translate":"chat.type.text","with":[{"translate":"luigis_mansion:entity.mysterious_power","color":"green"},{"translate":"luigis_mansion:dialog.mysterious_power.leave.2"}]}
-execute if entity @s[scores={Dialog=2036}] run stopsound @a[tag=same_room,gamemode=!spectator] music
-execute if entity @s[scores={Dialog=2036}] run playsound luigis_mansion:music.warped_by_boos music @a[tag=same_room,gamemode=!spectator] ~ ~ ~ 1000
-execute if entity @s[scores={Dialog=2036}] run scoreboard players set @a[tag=same_room,gamemode=!spectator] Music 80
-execute if entity @s[scores={Dialog=2046..}] as @e[tag=same_room,tag=gameboy_horror_location] run function luigis_mansion:entities/gameboy_horror_location/bring_player_back
-execute if entity @s[scores={Dialog=2046..2096}] as @a[tag=same_room,gamemode=!spectator] at @s unless block ~-0.5 ~ ~ minecraft:black_concrete run teleport @s ~0.5 ~ ~
-execute if entity @s[scores={Dialog=2096}] run teleport @a[tag=same_room,gamemode=!spectator] 751.0 11 9.0
-execute if entity @s[scores={Dialog=2096}] run data modify storage luigis_mansion:data current_state.current_data.technical_data merge value {mysterious_power:1b}
-tag @s[scores={Dialog=2096}] add dead
 
 execute at @s[scores={Dialog=40..45}] run function luigis_mansion:animations/boo/taunt
 execute at @s[scores={Dialog=1506..1511}] run function luigis_mansion:animations/boo/taunt

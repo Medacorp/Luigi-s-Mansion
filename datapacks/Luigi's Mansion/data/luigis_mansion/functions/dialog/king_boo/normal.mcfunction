@@ -2,6 +2,7 @@ scoreboard players set #freeze_timer Selected 1
 scoreboard players add @s Dialog 1
 execute unless entity @s[scores={Dialog=1588..}] as @a[tag=same_room,distance=..5.9,limit=1] run teleport @s 645 93 -18 90 0
 execute if entity @s[scores={Dialog=1}] run scoreboard players set #can_warp Selected 0
+execute if entity @s[scores={Dialog=1..1910}] as @a[tag=same_room,gamemode=!spectator,scores={IdleTime=0..},tag=!looking_at_map] run function luigis_mansion:entities/player/animation/set/stand_still
 execute if entity @s[scores={Dialog=1..1612}] as @a[tag=same_room] unless entity @s[scores={MusicGroup=0,MusicType=31}] run function luigis_mansion:other/music/set/talking_king_boo
 execute if entity @s[scores={Dialog=1}] run tellraw @a[tag=same_room] {"translate":"chat.type.text","with":[{"translate":"luigis_mansion:entity.king_boo","color":"green"},{"translate":"luigis_mansion:dialog.king_boo.1"}]}
 execute if entity @s[scores={Dialog=224}] run tellraw @a[tag=same_room] {"translate":"chat.type.text","with":[{"translate":"luigis_mansion:entity.king_boo","color":"green"},{"translate":"luigis_mansion:dialog.king_boo.2"}]}
@@ -51,6 +52,7 @@ tag @s[scores={Dialog=1772}] remove magic
 scoreboard players set @s[scores={Dialog=1771}] AnimationProg 0
 execute if entity @s[scores={Dialog=1801..1822}] facing 633 94 -18 run teleport @s ^ ^ ^0.3 ~ ~
 execute if entity @s[scores={Dialog=1822}] run tag @e[tag=bowser,scores={Room=72}] add animate
+execute if entity @s[scores={Dialog=1911}] as @a[tag=same_room,tag=!spectator,tag=!looking_at_map] run function luigis_mansion:entities/player/animation/set/none
 execute if entity @s[scores={Dialog=1911}] as @a[tag=same_room] run function luigis_mansion:entities/player/knockback/flee
 execute if entity @s[scores={Dialog=1911..}] run scoreboard players set @a[tag=same_room] Invulnerable 10
 execute if entity @s[scores={Dialog=1911..}] positioned 635 94 -18 as @a[tag=same_room] facing entity @s feet run function luigis_mansion:dialog/king_boo/suck

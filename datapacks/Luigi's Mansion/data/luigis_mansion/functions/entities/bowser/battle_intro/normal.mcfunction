@@ -1,10 +1,12 @@
 scoreboard players set #freeze_timer Selected 1
 scoreboard players add @s Dialog 1
+execute if entity @s[scores={Dialog=1..529}] as @a[tag=same_room,gamemode=!spectator,scores={IdleTime=0..},tag=!looking_at_map] unless entity @s[scores={ScareTime=1..}] run function luigis_mansion:entities/player/animation/set/high_health_idle_no_sound
 teleport @s[scores={Dialog=20}] ^ ^-3 ^2
 execute at @s[scores={Dialog=177..220}] run teleport @s ~ ~-1 ~
 execute if entity @s[scores={Dialog=177..220}] as @e[tag=this_model] at @s run teleport @s ~ ~-1 ~
 execute if entity @s[scores={Dialog=220}] run playsound luigis_mansion:entity.bowser.land hostile @a[tag=same_room] ~ ~ ~ 3
 execute if entity @s[scores={Dialog=220}] as @a[tag=same_room,tag=looking_at_map] run function luigis_mansion:items/gameboy_horror/map/close
+execute if entity @s[scores={Dialog=220}] as @a[tag=same_room,gamemode=!spectator,tag=!looking_at_map] run function luigis_mansion:entities/player/animation/set/none
 execute if entity @s[scores={Dialog=220}] as @a[tag=same_room] at @s positioned ^ ^ ^1 run function luigis_mansion:entities/player/scare/bash_no_move
 execute if entity @s[scores={Dialog=220..329}] if score #mirrored Selected matches 0 at @e[tag=this_model,tag=right_leg] positioned ^0.63 ^ ^0.7 as @a[tag=same_room,scores={ScareTime=20}] at @s positioned ^ ^ ^1 unless entity @e[tag=this_model,distance=..3,limit=1] positioned ^ ^ ^1 unless entity @e[tag=this_model,distance=..3,limit=1] positioned ^ ^ ^1 unless entity @e[tag=this_model,distance=..3,limit=1] positioned ^ ^ ^1 unless entity @e[tag=this_model,distance=..3,limit=1] positioned ^ ^ ^1 unless entity @e[tag=this_model,distance=..3,limit=1] positioned ^ ^ ^1 unless entity @e[tag=this_model,distance=..3,limit=1] positioned ^ ^ ^1 unless entity @e[tag=this_model,distance=..3,limit=1] at @s rotated ~5 0 positioned ^ ^ ^-0.1 run function luigis_mansion:entities/player/scared_bashed_force_move
 execute if entity @s[scores={Dialog=220..329}] if score #mirrored Selected matches 1 at @e[tag=this_model,tag=right_leg] positioned ^0.63 ^ ^0.7 as @a[tag=same_room,scores={ScareTime=20}] at @s positioned ^ ^ ^1 unless entity @e[tag=this_model,distance=..3,limit=1] positioned ^ ^ ^1 unless entity @e[tag=this_model,distance=..3,limit=1] positioned ^ ^ ^1 unless entity @e[tag=this_model,distance=..3,limit=1] positioned ^ ^ ^1 unless entity @e[tag=this_model,distance=..3,limit=1] positioned ^ ^ ^1 unless entity @e[tag=this_model,distance=..3,limit=1] positioned ^ ^ ^1 unless entity @e[tag=this_model,distance=..3,limit=1] positioned ^ ^ ^1 unless entity @e[tag=this_model,distance=..3,limit=1] at @s rotated ~-5 0 positioned ^ ^ ^-0.1 run function luigis_mansion:entities/player/scared_bashed_force_move
@@ -27,6 +29,7 @@ tag @s[scores={Dialog=329}] remove intro
 scoreboard players set @s[scores={Dialog=329}] AnimationProg 0
 tag @s[scores={Dialog=370}] add breathe_fire
 tag @s[scores={Dialog=530}] add intro_done
+execute if entity @s[scores={Dialog=530}] as @a[tag=same_room,gamemode=!spectator,tag=!looking_at_map] run function luigis_mansion:entities/player/animation/set/none
 scoreboard players reset @s[scores={Dialog=530}] Dialog
 
 execute if entity @s[tag=breathe_fire] run function luigis_mansion:entities/bowser/breathe_fire

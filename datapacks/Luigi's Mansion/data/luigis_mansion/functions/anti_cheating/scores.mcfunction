@@ -26,7 +26,7 @@ scoreboard objectives add EGaddLabChoice trigger
 scoreboard objectives add EGaddTrainChoice trigger
 scoreboard objectives add ErrorTime dummy
 scoreboard objectives add FakeDoors dummy
-scoreboard objectives add FlashlightType trigger
+scoreboard objectives add FlashlightType dummy
 scoreboard objectives add FlyTime dummy
 scoreboard objectives add Food food
 scoreboard objectives add ForcedDamage dummy
@@ -135,6 +135,7 @@ scoreboard objectives add Searching dummy
 scoreboard objectives add SecondFleeDamage dummy
 scoreboard objectives add SecondFleeState dummy
 scoreboard objectives add Selected dummy
+scoreboard objectives add SettingsCheck trigger
 scoreboard objectives add Shrunk dummy
 scoreboard objectives add SlipX dummy
 scoreboard objectives add SlipZ dummy

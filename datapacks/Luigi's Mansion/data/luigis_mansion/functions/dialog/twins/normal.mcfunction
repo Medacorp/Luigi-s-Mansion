@@ -4,6 +4,7 @@ scoreboard players add @s[scores={Dialog=..268}] Dialog 1
 execute unless entity @s[scores={Dialog=1..}] run scoreboard players add @s Dialog 1
 execute if entity @s[scores={Dialog=1}] run tag @e[tag=henry,limit=1] add appear
 tag @s[scores={Dialog=1}] add appear
+execute if entity @s[scores={Dialog=1..333}] as @a[tag=same_room,gamemode=!spectator,scores={IdleTime=0..},tag=!looking_at_map] run function luigis_mansion:entities/player/animation/set/stand_still
 execute if entity @s[scores={Dialog=30}] run playsound luigis_mansion:music.solve_puzzle music @a[tag=same_room] ~ ~ ~ 10000
 execute if entity @s[scores={Dialog=30}] run scoreboard players set @a[tag=same_room,scores={Music=..30}] Music 30
 execute if entity @s[scores={Dialog=61..334}] as @a[tag=same_room] unless entity @s[scores={MusicGroup=0,MusicType=23}] run function luigis_mansion:other/music/set/talking_ghost
@@ -46,6 +47,7 @@ execute if entity @s[scores={Dialog=278}] if entity @a[scores={TwinsChoice=2}] r
 execute if entity @s[scores={Dialog=270}] if entity @a[scores={TwinsChoice=2}] run tag @e[tag=henry,limit=1] add shake
 execute if entity @s[scores={Dialog=270}] if entity @a[scores={TwinsChoice=2}] run tellraw @a[tag=same_room] {"translate":"chat.type.text","with":[{"translate":"luigis_mansion:entity.orville","color":"green"},{"translate":"luigis_mansion:dialog.twins.no.1"}]}
 execute if entity @s[scores={Dialog=310}] if entity @a[scores={TwinsChoice=2}] run scoreboard players set @s Dialog 334
+execute if entity @s[scores={Dialog=334}] as @a[tag=same_room,tag=!spectator,tag=!looking_at_map] run function luigis_mansion:entities/player/animation/set/none
 execute if entity @s[scores={Dialog=334}] run scoreboard players set @a TwinsChoice 0
 tag @s[scores={Dialog=334}] add remove_from_existence
 execute if entity @s[tag=remove_from_existence] as @a[tag=same_room] run function luigis_mansion:other/music/set/silence
