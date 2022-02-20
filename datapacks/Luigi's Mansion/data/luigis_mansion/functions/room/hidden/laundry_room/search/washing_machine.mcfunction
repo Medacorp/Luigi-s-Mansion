@@ -4,4 +4,3 @@ execute if entity @e[type=minecraft:marker,tag=chance,tag=selected,tag=key] posi
 execute unless entity @e[type=minecraft:marker,tag=chance,tag=selected,tag=!nothing] positioned 715 11 -58 run function luigis_mansion:blocks/dust
 kill @e[type=minecraft:marker,tag=chance]
 scoreboard players set #laundry_room_washing_machine Searched 1
-data merge block 714 12 -58 {LootTable:"luigis_mansion:search"}

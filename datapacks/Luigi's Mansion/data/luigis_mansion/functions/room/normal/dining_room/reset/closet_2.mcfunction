@@ -1,5 +1,3 @@
-data merge block 699 12 35 {Items:[]}
-data merge block 699 12 33 {Items:[]}
 setblock 700 11 35 minecraft:oak_trapdoor[facing=east,half=bottom,open=true]
 setblock 700 11 34 minecraft:oak_trapdoor[facing=east,half=bottom,open=true]
 setblock 700 11 33 minecraft:oak_trapdoor[facing=east,half=bottom,open=true]

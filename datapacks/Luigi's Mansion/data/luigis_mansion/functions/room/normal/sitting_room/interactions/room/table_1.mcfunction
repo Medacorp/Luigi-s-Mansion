@@ -5,5 +5,4 @@ scoreboard players operation #temp Searching = #sitting_room_table_1 Searching
 scoreboard players operation #temp Searching %= #3 Constants
 execute if score #temp Searching matches 1 positioned 746 21 -21 run function luigis_mansion:blocks/search_sound/ceramic
 scoreboard players reset #temp Searching
-execute unless block 746 20 -21 minecraft:chest{LootTable:"luigis_mansion:search"} run function luigis_mansion:room/normal/sitting_room/search/boo_check/table_1
 execute unless block 746 21 -21 minecraft:hopper{LootTable:"luigis_mansion:search"} run function luigis_mansion:room/normal/sitting_room/search/boo_check/table_1

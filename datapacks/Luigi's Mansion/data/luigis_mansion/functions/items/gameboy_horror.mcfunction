@@ -1,13 +1,12 @@
 tag @s remove scanning_player
-attribute @s[tag=scanning] minecraft:generic.movement_speed base set 0
-attribute @s[tag=!scanning] minecraft:generic.movement_speed base set 0.10000000149011612
+execute if entity @s[tag=scanning] unless entity @s[scores={WarpTime=95..96}] run function luigis_mansion:items/gameboy_horror/freeze_player
 execute if entity @a[limit=1,scores={GBHCall=1..}] if entity @s[tag=!warp] unless entity @s[scores={ScareType=2..}] run function luigis_mansion:items/gameboy_horror/freeze_player
 
 execute unless entity @s[scores={Shrunk=1..}] if entity @s[advancements={luigis_mansion:lab/lab=true},nbt=!{Inventory:[{tag:{luigis_mansion:{id:"luigis_mansion:gameboy_horror"}}}]}] run function luigis_mansion:items/gameboy_horror/give
 execute if entity @s[tag=looking_at_map] run function luigis_mansion:items/gameboy_horror/map/tick
 execute if entity @s[scores={UseItem=1},tag=gameboy_horror_selected,tag=looking_at_map] run function luigis_mansion:items/gameboy_horror/map/close
-execute if entity @s[scores={UseItem=1},tag=gameboy_horror_selected,tag=!looking_at_map,tag=!scanning,tag=!grabbed,tag=!tripping] unless entity @s[scores={GBHCall=1..}] run function luigis_mansion:items/gameboy_horror/choice
-execute if entity @s[scores={GBHChoice=1}] unless entity @s[scores={GBHCall=1..}] run function luigis_mansion:items/gameboy_horror/map/open
+execute if entity @s[scores={UseItem=1,KnockbackType=0},tag=gameboy_horror_selected,tag=!looking_at_map,tag=!scanning] unless entity @s[scores={ScareType=1..}] unless entity @s[scores={IdleTime=..-1},tag=!idle] run function luigis_mansion:items/gameboy_horror/choice
+execute if entity @s[scores={GBHChoice=1}] run function luigis_mansion:items/gameboy_horror/map/open
 execute if entity @s[scores={GBHChoice=2}] run function luigis_mansion:items/gameboy_horror/enable_scan
 execute if entity @s[scores={UseItem=1},tag=gameboy_horror_selected,tag=scanning,tag=!warp] run function luigis_mansion:items/gameboy_horror/scan
 execute if entity @s[tag=gameboy_horror_selected] run function luigis_mansion:items/gameboy_horror/show_ghost_presence
@@ -19,9 +18,9 @@ tag @s[tag=!gameboy_horror_selected,tag=!warp] remove scanning
 tag @s[scores={ScareType=2..}] remove scanning
 tag @s remove gameboy_horror_selected
 tag @s[nbt={SelectedItem:{tag:{luigis_mansion:{id:"luigis_mansion:gameboy_horror"}}}}] add gameboy_horror_selected
-execute if entity @s[tag=!gameboy_horror_selected] run trigger GBHChoice set 0
-execute if entity @s[tag=grabbed] run trigger GBHChoice set 0
-execute if entity @s[tag=tripping] run trigger GBHChoice set 0
+execute unless entity @s[scores={UseItem=1,KnockbackType=0},tag=gameboy_horror_selected,tag=!looking_at_map,tag=!scanning] run trigger GBHChoice set 0
+execute if entity @s[scores={ScareType=1..}] run trigger GBHChoice set 0
+execute if entity @s[scores={IdleTime=..-1},tag=!idle] run trigger GBHChoice set 0
 execute unless entity @s[scores={GBHCall=0..}] run scoreboard players set @s GBHCall 0
 execute if entity @s[scores={GBHCall=1..,GBHWait=20}] run tellraw @a[tag=same_room] {"translate":"chat.type.text","with":[{"selector":"@s","color":"green"},{"translate":"luigis_mansion:message.player.ringing_gameboy_horror"}]}
 execute if entity @s[scores={GBHCall=1..,GBHWait=20..},tag=!high_health_idle] run function luigis_mansion:entities/player/animation/set/high_health_idle_no_sound

@@ -5,5 +5,3 @@ scoreboard players operation #temp Searching = #dining_room_closet_2 Searching
 scoreboard players operation #temp Searching %= #3 Constants
 execute if score #temp Searching matches 1 positioned 699 12 -19 run function luigis_mansion:blocks/search_sound/heavy_generic
 scoreboard players reset #temp Searching
-execute unless block 699 12 -20 minecraft:chest{LootTable:"luigis_mansion:search"} run function luigis_mansion:room/hidden/dining_room/search/boo_check/closet_2
-execute unless block 699 12 -18 minecraft:chest{LootTable:"luigis_mansion:search"} run function luigis_mansion:room/hidden/dining_room/search/boo_check/closet_2

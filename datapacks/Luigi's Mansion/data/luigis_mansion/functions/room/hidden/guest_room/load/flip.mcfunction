@@ -1,2 +1,2 @@
-execute if data storage luigis_mansion:data current_state.current_data.rooms.guest_room{cleared:1b} run setblock 723 19 58 minecraft:structure_block[mode=load]{mode:"LOAD",name:"luigis_mansion:guest_room/straight_up_hidden"}
-execute if data storage luigis_mansion:data current_state.current_data.rooms.guest_room{cleared:1b} run setblock 723 20 58 minecraft:redstone_block
+execute if data storage luigis_mansion:data current_state.current_data.rooms.guest_room{cleared:1b} run setblock 723 19 77 minecraft:structure_block[mode=load]{mode:"LOAD",name:"luigis_mansion:guest_room/straight_up",mirror:"LEFT_RIGHT"}
+execute if data storage luigis_mansion:data current_state.current_data.rooms.guest_room{cleared:1b} run setblock 723 20 77 minecraft:redstone_block

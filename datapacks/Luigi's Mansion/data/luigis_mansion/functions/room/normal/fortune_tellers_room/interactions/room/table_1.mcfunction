@@ -5,5 +5,3 @@ scoreboard players operation #temp Searching = #fortune_tellers_room_table_1 Sea
 scoreboard players operation #temp Searching %= #3 Constants
 execute if score #temp Searching matches 1 positioned 736 11 -21.0 run function luigis_mansion:blocks/search_sound/heavy_generic
 scoreboard players reset #temp Searching
-execute unless block 736 11 -22 minecraft:chest{LootTable:"luigis_mansion:search"} run function luigis_mansion:room/normal/fortune_tellers_room/search/boo_check/table_1
-execute unless block 736 11 -21 minecraft:chest{LootTable:"luigis_mansion:search"} run function luigis_mansion:room/normal/fortune_tellers_room/search/boo_check/table_1

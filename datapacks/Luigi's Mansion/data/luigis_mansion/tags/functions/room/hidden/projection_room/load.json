@@ -2,7 +2,6 @@
 	"values": [
 	    "luigis_mansion:room/hidden/projection_room/load/set_loaded",
         "luigis_mansion:room/hidden/projection_room/load/lights",
-        "luigis_mansion:room/hidden/projection_room/load/chest",
-        "luigis_mansion:room/hidden/projection_room/load/closet"
+        "luigis_mansion:room/hidden/projection_room/load/chest"
 	]
 }

@@ -4,7 +4,6 @@
         "luigis_mansion:room/normal/mirror_room/load/lights",
         "luigis_mansion:room/normal/mirror_room/load/chest",
         "luigis_mansion:room/normal/mirror_room/load/fire",
-        "luigis_mansion:room/normal/mirror_room/load/painting",
-        "luigis_mansion:room/normal/mirror_room/load/table"
+        "luigis_mansion:room/normal/mirror_room/load/painting"
 	]
 }

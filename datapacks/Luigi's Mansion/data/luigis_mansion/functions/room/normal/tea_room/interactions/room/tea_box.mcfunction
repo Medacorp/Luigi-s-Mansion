@@ -5,4 +5,3 @@ scoreboard players operation #temp Searching = #tea_room_tea_box Searching
 scoreboard players operation #temp Searching %= #3 Constants
 execute if score #temp Searching matches 1 positioned 643 21 -52 run function luigis_mansion:blocks/search_sound/generic
 scoreboard players reset #temp Searching
-execute unless block 643 21 -52 minecraft:chest{LootTable:"luigis_mansion:search"} run function luigis_mansion:room/normal/tea_room/search/boo_check/tea_box

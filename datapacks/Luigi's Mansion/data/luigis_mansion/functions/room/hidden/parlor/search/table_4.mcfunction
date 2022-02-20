@@ -9,5 +9,4 @@ execute if entity @e[type=minecraft:marker,tag=chance,tag=selected,tag=money] po
 execute unless entity @e[type=minecraft:marker,tag=chance,tag=selected,tag=!nothing] positioned 727 21 -4 run function luigis_mansion:blocks/dust
 kill @e[type=minecraft:marker,tag=chance]
 scoreboard players set #parlor_table_4 Searched 1
-data merge block 727 21 -4 {LootTable:"luigis_mansion:search"}
 tag @e[x=727.5,y=21,z=-3.5,distance=..0.7,tag=ghost,tag=hidden] add spawn

@@ -9,4 +9,3 @@ execute if entity @e[type=minecraft:marker,tag=chance,tag=selected,tag=small_hea
 execute unless entity @e[type=minecraft:marker,tag=chance,tag=selected,tag=!nothing] positioned 746 11 2 run function luigis_mansion:blocks/dust
 kill @e[type=minecraft:marker,tag=chance]
 scoreboard players set #foyer_table Searched 1
-data merge block 746 11 2 {LootTable:"luigis_mansion:search"}

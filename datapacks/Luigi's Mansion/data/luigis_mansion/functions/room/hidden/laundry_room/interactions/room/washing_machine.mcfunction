@@ -5,4 +5,3 @@ scoreboard players operation #temp Searching = #laundry_room_washing_machine Sea
 scoreboard players operation #temp Searching %= #3 Constants
 execute if score #temp Searching matches 1 positioned 715 11 -58 run function luigis_mansion:blocks/search_sound/heavy_metal
 scoreboard players reset #temp Searching
-execute unless block 714 12 -58 minecraft:dropper{LootTable:"luigis_mansion:search"} run function luigis_mansion:room/hidden/laundry_room/search/boo_check/washing_machine

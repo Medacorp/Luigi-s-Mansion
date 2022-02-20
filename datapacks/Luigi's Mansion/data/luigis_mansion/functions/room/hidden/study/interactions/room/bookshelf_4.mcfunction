@@ -5,5 +5,3 @@ scoreboard players operation #temp Searching = #study_bookshelf_4 Searching
 scoreboard players operation #temp Searching %= #3 Constants
 execute if score #temp Searching matches 1 positioned 702 23 -33.0 run function luigis_mansion:blocks/search_sound/heavy_generic
 scoreboard players reset #temp Searching
-execute unless block 702 21 -33 minecraft:chest{LootTable:"luigis_mansion:search"} run function luigis_mansion:room/hidden/study/search/bookshelf_4
-execute unless block 702 21 -34 minecraft:chest{LootTable:"luigis_mansion:search"} run function luigis_mansion:room/hidden/study/search/bookshelf_4
