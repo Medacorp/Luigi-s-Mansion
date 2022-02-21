@@ -38,6 +38,7 @@ tag @s[tag=fleeing] remove fleeing
 
 scoreboard players add @s[scores={Wave=..80}] Wave 1
 execute at @s if entity @e[tag=boolossus,distance=0.1..,limit=1] run scoreboard players add @s Wave 1
+execute unless entity @e[tag=boolossus,distance=0.1..,limit=1] run tag @s add portrait_ghost_pop
 execute if entity @s[scores={Wave=600}] unless entity @e[tag=to_me,limit=1] run tag @s add to_me
 execute at @s[scores={Wave=600..},tag=!to_me] facing entity @e[tag=to_me,limit=1] feet run teleport @s ~ ~ ~ ~ ~
 teleport @s[scores={Wave=600..},tag=to_me] ~ ~0.1 ~
