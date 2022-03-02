@@ -5,15 +5,6 @@
             "lakes": false,
             "features": true,
             "biome": "luigis_mansion:boo_woods",
-            "structures": {
-                "structures": {
-					"minecraft:village": {
-						"spacing": 4,
-						"separation": 3,
-						"salt": 10387312
-					}
-				}
-            },
             "layers": [
                 {
                     "height": 1,

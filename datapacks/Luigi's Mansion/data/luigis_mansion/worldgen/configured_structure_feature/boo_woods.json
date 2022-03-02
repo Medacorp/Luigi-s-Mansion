@@ -3,5 +3,8 @@
 	"config": {
 		"start_pool": "luigis_mansion:boo_woods_starts",
 		"size": 7
-	}
+	},
+    "biomes": "#luigis_mansion:generates_woods",
+    "adapt_noise": false,
+    "spawn_overrides": {}
 }

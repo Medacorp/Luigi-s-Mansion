@@ -6,7 +6,7 @@
 			"weight": 1,
 			"element": {
 				"element_type": "minecraft:single_pool_element",
-				"processors": [],
+				"processors": "minecraft:empty",
 				"projection": "rigid",
 				"location": "luigis_mansion:boo_woods/tree/0"
 			}
@@ -15,7 +15,7 @@
 			"weight": 1,
 			"element": {
 				"element_type": "minecraft:single_pool_element",
-				"processors": [],
+				"processors": "minecraft:empty",
 				"projection": "rigid",
 				"location": "luigis_mansion:boo_woods/tree/1"
 			}
@@ -24,7 +24,7 @@
 			"weight": 1,
 			"element": {
 				"element_type": "minecraft:single_pool_element",
-				"processors": [],
+				"processors": "minecraft:empty",
 				"projection": "rigid",
 				"location": "luigis_mansion:boo_woods/tree/2"
 			}
@@ -33,7 +33,7 @@
 			"weight": 1,
 			"element": {
 				"element_type": "minecraft:single_pool_element",
-				"processors": [],
+				"processors": "minecraft:empty",
 				"projection": "rigid",
 				"location": "luigis_mansion:boo_woods/tree/3"
 			}
@@ -42,7 +42,7 @@
 			"weight": 1,
 			"element": {
 				"element_type": "minecraft:single_pool_element",
-				"processors": [],
+				"processors": "minecraft:empty",
 				"projection": "rigid",
 				"location": "luigis_mansion:boo_woods/tree/4"
 			}
@@ -51,7 +51,7 @@
 			"weight": 1,
 			"element": {
 				"element_type": "minecraft:single_pool_element",
-				"processors": [],
+				"processors": "minecraft:empty",
 				"projection": "rigid",
 				"location": "luigis_mansion:boo_woods/tree/5"
 			}

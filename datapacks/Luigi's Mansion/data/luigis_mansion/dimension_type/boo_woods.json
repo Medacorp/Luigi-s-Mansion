@@ -14,5 +14,5 @@
 	"min_y": 0,
 	"height": 256,
 	"coordinate_scale": 1.0,
-	"infiniburn": "minecraft:infiniburn_overworld"
+	"infiniburn": "#minecraft:infiniburn_overworld"
 }
