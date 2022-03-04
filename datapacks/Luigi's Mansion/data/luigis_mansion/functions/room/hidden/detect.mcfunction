@@ -174,7 +174,7 @@ execute if score #hallway_18 Ticking matches 1 unless entity @a[x=723,y=29,z=-33
 execute as @a[gamemode=spectator,tag=!already_ticked,distance=0..,scores={HomeX=740..764,HomeY=27..35,HomeZ=-33..-25}] at @s run function luigis_mansion:room/hidden/hallway_19/spectator_tick
 execute if entity @a[x=723,y=29,z=-33,dx=40,dy=6,dz=8] run function luigis_mansion:room/hidden/hallway_19/tick
 execute if score #hallway_19 Ticking matches 1 unless entity @a[x=723,y=29,z=-33,dx=40,dy=6,dz=8] unless entity @a[scores={Room=55}] run function luigis_mansion:room/hidden/hallway_19/not_ticking
-execute as @a[gamemode=spectator,tag=!already_ticked,distance=0..,scores={HomeX=736..760,HomeY=27..35,HomeZ=-20..15}] at @s run function luigis_mansion:room/hidden/telephone_room/spectator_tick
+execute as @a[gamemode=spectator,tag=!already_ticked,distance=0..,scores={HomeX=736..761,HomeY=27..35,HomeZ=-20..15}] at @s run function luigis_mansion:room/hidden/telephone_room/spectator_tick
 execute if entity @a[x=736,y=29,z=-20,dx=24,dy=6,dz=35] run function luigis_mansion:room/hidden/telephone_room/tick
 execute if score #telephone_room Ticking matches 1 unless entity @a[x=736,y=29,z=-20,dx=24,dy=6,dz=35] unless entity @a[scores={Room=56}] run function luigis_mansion:room/hidden/telephone_room/not_ticking
 execute as @a[gamemode=spectator,tag=!already_ticked,distance=0..,scores={HomeX=686..700,HomeY=0..8,HomeZ=57..78}] at @s run function luigis_mansion:room/hidden/breaker_room/spectator_tick

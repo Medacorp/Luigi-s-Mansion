@@ -5,6 +5,8 @@ scoreboard players set @s PrevRoom 56
 teleport @s[scores={HomeX=737}] ~-40 ~91 ~10
 teleport @s[scores={HomeX=756,HomeZ=-18..-6}] ~-1 ~ ~
 teleport @s[scores={HomeX=756,HomeZ=1..13}] ~-1 ~ ~
+teleport @s[scores={HomeX=757..760,HomeZ=-6}] ~ ~ ~1
+teleport @s[scores={HomeX=757..760,HomeZ=1}] ~ ~ ~-1
 teleport @s[scores={HomeX=761}] ~-1 ~ ~
 teleport @s[scores={HomeZ=-19}] ~3 ~ ~-8
 teleport @s[scores={HomeZ=14}] ~4 ~ ~12

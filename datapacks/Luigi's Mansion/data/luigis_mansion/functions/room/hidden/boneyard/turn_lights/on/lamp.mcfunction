@@ -1,1 +1,1 @@
-setblock 672 105 -40 minecraft:stone_button[face=floor,powered=true]
+setblock 678 107 -32 minecraft:light[level=15]
