@@ -17,7 +17,7 @@ execute as @e[tag=clockwork_soldier,tag=this_entity,limit=1] store result score 
 execute as @e[tag=clockwork_soldier,tag=this_entity,limit=1] store result score @s MaxHealth run data get storage luigis_mansion:data current_state.current_data.portrait_ghosts.clockwork_soldiers.pink_max_health
 execute as @e[tag=clockwork_soldier,tag=this_entity,limit=1] store result score @s TopVacuumDamage run data get storage luigis_mansion:data current_state.current_data.portrait_ghosts.clockwork_soldiers.pink_top_vacuum_damage
 scoreboard players set @e[tag=clockwork_soldier,tag=this_entity,limit=1] PullStrength 10
-scoreboard players set @e[tag=clockwork_soldier,tag=this_entity,limit=1] Move 4
+scoreboard players set @e[tag=clockwork_soldier,tag=this_entity,limit=1] Move 20
 scoreboard players set @e[tag=clockwork_soldier,tag=this_entity,limit=1] Sound 0
 scoreboard players set @e[tag=clockwork_soldier,tag=this_entity,limit=1] StunTime 0
 scoreboard players set @e[tag=clockwork_soldier,tag=this_entity,limit=1] VulnerableTime 0

@@ -1,4 +1,4 @@
-scoreboard players set #temp Move 8
+scoreboard players set #temp Move 40
 scoreboard players operation #temp PunchingBag = @s PunchingBag
 execute as @e[tag=punching_bag_detect] if score @s PunchingBag = #temp PunchingBag run tag @s add this_punching_bag
 scoreboard players reset @e[tag=this_punching_bag,limit=1] MirrorX

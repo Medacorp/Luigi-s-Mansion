@@ -10,6 +10,7 @@
 		"luigis_mansion:room/normal/washroom_1/interactions/poltergust/sink",
 		"luigis_mansion:room/normal/washroom_1/interactions/poltergust/toilet",
 		"luigis_mansion:room/normal/washroom_1/interactions/poltergust/toilet_paper",
-		"luigis_mansion:room/normal/washroom_1/interactions/poltergust/toilet_storage"
+		"luigis_mansion:room/normal/washroom_1/interactions/poltergust/toilet_storage",
+		"luigis_mansion:room/normal/washroom_1/interactions/poltergust/vacuumable"
 	]
 }

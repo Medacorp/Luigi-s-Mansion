@@ -1,6 +1,6 @@
-execute unless block ~ ~1 ~ #luigis_mansion:all_ignore if block ^ ^1 ^1 #luigis_mansion:all_ignore run teleport @s ^ ^ ^0.05
-execute if block ^ ^1 ^0.6 #luigis_mansion:all_ignore run teleport @s ^ ^ ^0.05
-execute if block ^ ^1 ^0.6 #luigis_mansion:all_ignore run teleport @s ^ ^ ^0.05
+execute unless block ~ ~1 ~ #luigis_mansion:all_ignore if block ^ ^1 ^1 #luigis_mansion:all_ignore run teleport @s ^ ^ ^0.01
+execute if block ^ ^1 ^0.6 #luigis_mansion:all_ignore run teleport @s ^ ^ ^0.01
+execute if block ^ ^1 ^0.6 #luigis_mansion:all_ignore run teleport @s ^ ^ ^0.01
 scoreboard players remove #temp Move 1
 execute at @s unless block ~0.3 ~1 ~ #luigis_mansion:all_ignore if block ~ ~1 ~ #luigis_mansion:all_ignore run teleport @s ~-0.1 ~ ~
 execute at @s unless block ~-0.3 ~1 ~ #luigis_mansion:all_ignore if block ~ ~1 ~ #luigis_mansion:all_ignore run teleport @s ~0.1 ~ ~

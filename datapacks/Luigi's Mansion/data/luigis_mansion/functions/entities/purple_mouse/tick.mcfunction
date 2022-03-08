@@ -25,7 +25,7 @@ scoreboard players reset #temp Room
 
 data modify entity @s[tag=visible,tag=!walk_down_wall,tag=!walk_up_wall,tag=!walk_on_ceiling] ArmorItems[3].id set value "minecraft:leather_chestplate"
 execute at @s[tag=!rotated,tag=!walk_on_ceiling,tag=!dead,tag=visible] run function luigis_mansion:entities/purple_mouse/move
-scoreboard players set #temp Move 2
+scoreboard players set #temp Move 10
 execute at @s[tag=rotated,tag=!walk_up_wall] rotated ~ 0 run function luigis_mansion:entities/purple_mouse/move_forward
 execute at @s[tag=walk_up_wall,tag=!walk_on_ceiling] rotated ~ 0 run function luigis_mansion:entities/purple_mouse/move_up
 tag @s[tag=walk_on_ceiling,tag=rotated] remove rotated

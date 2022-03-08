@@ -15,7 +15,7 @@ tag @s[scores={Wave=..30}] add fleeing
 tag @s[scores={Wave=..30}] add fleeing_no_target
 
 execute at @s[tag=!fleeing,tag=laugh,scores={Dialog=0,Wave=..599}] facing entity @e[tag=same_room,tag=!spectator,sort=nearest,limit=1] feet rotated ~ 0 run teleport @s ~ ~ ~ ~ ~
-execute if entity @s[tag=!fleeing,tag=!attack,tag=!laugh,scores={Time=120..,Dialog=0,Wave=..599}] run function luigis_mansion:entities/boolossus/turn
+execute if entity @s[tag=!fleeing,tag=!attack,tag=!laugh,scores={Time=600..,Dialog=0,Wave=..599}] run function luigis_mansion:entities/boolossus/turn
 execute at @s[tag=!fleeing,tag=!attack,tag=!laugh,scores={Dialog=0},tag=move_up] run function luigis_mansion:entities/boolossus/move_up_split
 execute at @s[tag=!fleeing,tag=!attack,tag=!laugh,scores={Dialog=0},tag=!move_up] run function luigis_mansion:entities/boolossus/move_down_split
 tag @s remove wall
@@ -43,5 +43,5 @@ execute if entity @s[scores={Wave=600}] unless entity @e[tag=to_me,limit=1] run 
 execute at @s[scores={Wave=600..},tag=!to_me] facing entity @e[tag=to_me,limit=1] feet run teleport @s ~ ~ ~ ~ ~
 teleport @s[scores={Wave=600..},tag=to_me] ~ ~0.1 ~
 execute if entity @s[scores={Wave=610..},tag=to_me] run particle minecraft:campfire_cosy_smoke ~ ~3 ~ 0.4 0.4 0.4 0 10 force
-scoreboard players set @s[scores={Wave=600..}] Move 20
+scoreboard players set @s[scores={Wave=600..}] Move 100
 execute if entity @s[scores={Wave=640},tag=to_me] run function luigis_mansion:entities/boolossus/merge

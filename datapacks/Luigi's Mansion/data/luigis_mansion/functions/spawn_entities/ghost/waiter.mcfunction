@@ -7,7 +7,7 @@ execute as @e[tag=this_entity,limit=1] store result score @s HomeX run data get 
 execute as @e[tag=this_entity,limit=1] store result score @s HomeY run data get entity @s Pos[1] 100
 execute as @e[tag=this_entity,limit=1] store result score @s HomeZ run data get entity @s Pos[2] 100
 scoreboard players set @e[tag=this_entity,limit=1] PullStrength 20
-scoreboard players set @e[tag=this_entity,limit=1] Move 2
+scoreboard players set @e[tag=this_entity,limit=1] Move 10
 scoreboard players set @e[tag=this_entity,limit=1] Sound 0
 scoreboard players set @e[tag=this_entity,limit=1] StunTime 0
 scoreboard players set @e[tag=this_entity,limit=1] VulnerableTime 0

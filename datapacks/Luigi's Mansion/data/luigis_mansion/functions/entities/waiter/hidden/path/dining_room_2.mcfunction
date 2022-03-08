@@ -19,6 +19,6 @@ teleport @s[scores={PathStep=16}] ~ ~ ~ facing 700 11 -17
 scoreboard players set @s[x=700.5,y=11,z=-16.5,distance=..0.7,scores={PathStep=16}] PathStep 17
 teleport @s[scores={PathStep=17}] ~ ~ ~ facing 700 11 -41
 tag @s[x=700.5,y=11,z=-40.5,distance=..0.7,scores={PathStep=17}] add disappear
-scoreboard players set @s[scores={PathStep=17}] Move 3
+scoreboard players set @s[scores={PathStep=17}] Move 15
 
 execute unless entity @s[scores={PathStep=4..12}] at @s run function luigis_mansion:entities/ghost/move

@@ -1,5 +1,5 @@
-execute if block ^ ^ ^0.6 #luigis_mansion:all_ignore run teleport @s[tag=!spit,tag=!land] ^ ^-0.05 ^0.05
-execute if block ^ ^ ^0.6 #luigis_mansion:all_ignore run teleport @s[tag=!spit,tag=land] ^ ^ ^0.05
+execute if block ^ ^ ^0.6 #luigis_mansion:all_ignore run teleport @s[tag=!spit,tag=!land] ^ ^-0.01 ^0.01
+execute if block ^ ^ ^0.6 #luigis_mansion:all_ignore run teleport @s[tag=!spit,tag=land] ^ ^ ^0.01
 execute positioned as @s[tag=!spit,tag=!spike_ball] unless block ~ ~-0.1 ~ #luigis_mansion:all_ignore run playsound luigis_mansion:entity.ball.bounce neutral @a[tag=same_room] ~ ~ ~ 1
 execute positioned as @s[tag=!spit] unless block ~ ~-0.1 ~ #luigis_mansion:all_ignore run tag @s add land
 execute positioned as @s[tag=!spit] if block ~ ~-0.1 ~ #luigis_mansion:all_ignore run tag @s remove land

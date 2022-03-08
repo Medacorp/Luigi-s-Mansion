@@ -26,4 +26,4 @@ execute align xyz if entity @s[tag=visible] run tag @e[dx=0,dy=2,dz=0,tag=shadow
 scoreboard players set @s[scores={VulnerableTime=1}] Dialog 69
 tag @s[scores={VulnerableTime=1}] remove shadow_hit
 
-scoreboard players set @e[tag=bogmire_shadow,tag=small,scores={Move=2}] Move 4
+scoreboard players set @e[tag=bogmire_shadow,tag=small,scores={Move=10}] Move 20

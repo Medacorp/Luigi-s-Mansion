@@ -1,4 +1,4 @@
-teleport @s ^ ^ ^0.1
+teleport @s ^ ^ ^0.02
 scoreboard players remove #temp Move 1
 scoreboard players add @s Dialog 1
 execute rotated ~ 0 if block ^ ^ ^0.6 minecraft:white_wool run tag @s add collision

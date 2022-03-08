@@ -5,7 +5,7 @@ execute as @e[tag=this_entity,limit=1] store result storage luigis_mansion:data 
 execute as @e[tag=this_entity,limit=1] store result score @s Health store result score @s LastHealth run data get storage luigis_mansion:data current_state.current_data.ghosts.dancing_ghost_guy.health
 teleport @e[tag=this_entity,limit=1] ~ ~ ~ facing entity @p[gamemode=!spectator]
 scoreboard players set @e[tag=this_entity,limit=1] PullStrength 20
-scoreboard players set @e[tag=this_entity,limit=1] Move 2
+scoreboard players set @e[tag=this_entity,limit=1] Move 10
 scoreboard players set @e[tag=this_entity,limit=1] WaitTime 0
 scoreboard players set @e[tag=this_entity,limit=1] Distance 0
 scoreboard players set @e[tag=this_entity,limit=1] Sound 0

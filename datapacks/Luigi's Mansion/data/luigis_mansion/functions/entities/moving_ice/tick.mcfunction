@@ -1,4 +1,4 @@
-scoreboard players set #temp Move 4
+scoreboard players set #temp Move 20
 function luigis_mansion:entities/moving_ice/move_forward
 scoreboard players reset #temp Move
 scoreboard players add @s ActionTime 1

@@ -9,7 +9,7 @@ execute as @e[tag=this_entity,limit=1] store result score @s HomeRot run data ge
 execute as @e[tag=this_entity,limit=1] store result score @s PrevHealth store result score @s LastHealth store result score @s Health run data get storage luigis_mansion:data current_state.current_data.portrait_ghosts.king_boo.health
 execute as @e[tag=this_entity,limit=1] store result score @s MaxHealth run data get storage luigis_mansion:data current_state.current_data.portrait_ghosts.king_boo.max_health
 scoreboard players set @e[tag=this_entity,limit=1] PullStrength 10
-scoreboard players set @e[tag=this_entity,limit=1] Move 6
+scoreboard players set @e[tag=this_entity,limit=1] Move 30
 scoreboard players set @e[tag=this_entity,limit=1] Sound 0
 scoreboard players set @e[tag=this_entity,limit=1] StunTime 0
 scoreboard players set @e[tag=this_entity,limit=1] VulnerableTime 0

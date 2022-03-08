@@ -21,7 +21,7 @@ execute if entity @s[tag=was_activated,tag=!vanish,tag=attack,tag=!windless,scor
 
 scoreboard players set @s[tag=attack] Distance 0
 execute at @s[tag=was_activated,tag=!attack,tag=!complain,tag=!vanish,scores={Distance=0,WaitTime=0}] run function luigis_mansion:entities/clockwork_soldier/target
-execute at @s[tag=was_activated,tag=!attack,tag=!complain,tag=!vanish,scores={Distance=1..,WaitTime=0}] run function luigis_mansion:entities/clockwork_soldier/move
+execute at @s[tag=was_activated,tag=!attack,tag=!complain,tag=!vanish,scores={Distance=1..,WaitTime=0}] rotated ~ 0 run function luigis_mansion:entities/clockwork_soldier/move
 tag @s[scores={VulnerableTime=1}] add vanish
 scoreboard players remove @s[scores={WaitTime=1..}] WaitTime 1
 

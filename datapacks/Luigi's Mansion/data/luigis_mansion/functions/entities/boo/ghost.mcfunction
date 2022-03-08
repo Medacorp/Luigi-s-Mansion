@@ -33,7 +33,7 @@ tag @s[tag=laugh] remove rotated
 tag @s[tag=taunt] remove rotated
 execute at @s unless entity @s[tag=!laugh,tag=!taunt] facing entity @e[tag=same_room,tag=!spectator,sort=nearest,limit=1] feet run teleport @s ~ ~ ~ ~ ~
 execute at @s[tag=!attack,tag=!laugh,tag=!taunt,tag=!boo_hurt,tag=!rotated,tag=!appear,tag=!frozen,tag=!wall] run function luigis_mansion:entities/boo/rotate
-execute if entity @s[scores={Time=120..},tag=!attack,tag=!appear,tag=!north,tag=!east,tag=!south,tag=!west,tag=!up,tag=!down,tag=!frozen] run function luigis_mansion:entities/boo/turn
+execute if entity @s[scores={Time=600..},tag=!attack,tag=!appear,tag=!north,tag=!east,tag=!south,tag=!west,tag=!up,tag=!down,tag=!frozen] run function luigis_mansion:entities/boo/turn
 execute if score #temp Move matches 1.. at @s[tag=!fleeing,tag=!attack,tag=!laugh,tag=!taunt,tag=!boo_hurt,tag=!appear,tag=move_up,tag=!frozen] unless entity @s[tag=up,x_rotation=-90] run function luigis_mansion:entities/boo/move_up
 execute if score #temp Move matches 1.. at @s[tag=!fleeing,tag=!attack,tag=!laugh,tag=!taunt,tag=!boo_hurt,tag=!appear,tag=!move_up,tag=!frozen] unless entity @s[tag=down,x_rotation=90] run function luigis_mansion:entities/boo/move_down
 execute if score #temp Move matches 1.. at @s[tag=!fleeing,tag=!attack,tag=!laugh,tag=!taunt,tag=!boo_hurt,tag=!appear,tag=up,tag=!frozen,x_rotation=-90] run function luigis_mansion:entities/boo/move_forward

@@ -2,7 +2,7 @@ summon minecraft:armor_stand ^ ^ ^2.5 {CustomName:'{"translate":"luigis_mansion:
 execute as @e[tag=this_entity,limit=1] positioned as @s facing ^ ^ ^-3 run teleport @s ~ ~ ~ ~ ~
 scoreboard players set @e[tag=this_entity,limit=1] Wave 0
 scoreboard players set @e[tag=this_entity,limit=1] Dialog 0
-scoreboard players set @e[tag=this_entity,limit=1] Move 3
+scoreboard players set @e[tag=this_entity,limit=1] Move 15
 scoreboard players set @e[tag=this_entity,limit=1] Sound 0
 tag @e[tag=this_entity,limit=1] remove this_entity
 scoreboard players add #temp Boos 1

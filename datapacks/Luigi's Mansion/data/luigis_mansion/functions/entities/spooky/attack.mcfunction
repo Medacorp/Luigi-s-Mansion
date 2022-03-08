@@ -2,7 +2,7 @@ scoreboard players add @s[scores={ActionTime=52..}] ActionTime 1
 scoreboard players set @s[scores={ActionTime=51}] ActionTime 44
 scoreboard players add @s[scores={ActionTime=1..50}] ActionTime 1
 execute unless entity @s[scores={ActionTime=1..}] run scoreboard players set @s ActionTime 1
-scoreboard players set @s Move 5
+scoreboard players set @s Move 25
 scoreboard players set @s[scores={ActionTime=1}] AnimationProg 0
 tag @s[scores={ActionTime=1}] add bite
 tag @s[scores={ActionTime=1}] remove move
@@ -38,7 +38,7 @@ scoreboard players set @s[scores={ActionTime=53}] AnimationProg 0
 scoreboard players reset @s[scores={ActionTime=53}] GrabbedID
 tag @s[scores={ActionTime=53}] remove hold
 tag @s[scores={ActionTime=53}] add let_go
-scoreboard players set @s[scores={ActionTime=53..112}] Move 1
+scoreboard players set @s[scores={ActionTime=53..112}] Move 5
 execute at @s[scores={ActionTime=53}] store result entity @s Pos[1] double 0.01 run scoreboard players get @s HomeY
 execute at @s[scores={ActionTime=53}] run teleport @s ~ ~1 ~
 execute if entity @s[scores={ActionTime=53}] run playsound luigis_mansion:entity.spooky.let_go hostile @a[tag=same_room] ~ ~ ~ 1

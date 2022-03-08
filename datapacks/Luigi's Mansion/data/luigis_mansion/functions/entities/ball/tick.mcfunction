@@ -1,8 +1,8 @@
 teleport @s[tag=!big] ~ ~1 ~
 teleport @s[tag=big] ~ ~0.4 ~
 execute at @s[tag=boo] unless block ~ ~ ~ #luigis_mansion:all_ignore run teleport @s ^ ^ ^0.1
-scoreboard players set #temp Move 6
-execute if entity @s[tag=spit] run scoreboard players set #temp Move 10
+scoreboard players set #temp Move 30
+execute if entity @s[tag=spit] run scoreboard players set #temp Move 50
 execute if entity @s[scores={Dialog=1..}] run scoreboard players operation #temp Dialog = @s Dialog
 execute if entity @s[scores={Dialog=1..}] run scoreboard players operation #temp Dialog /= #2 Constants
 execute if entity @s[scores={Dialog=1..}] run scoreboard players operation #temp Move -= #temp Dialog

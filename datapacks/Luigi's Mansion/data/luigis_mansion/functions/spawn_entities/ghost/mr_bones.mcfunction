@@ -5,7 +5,7 @@ execute as @e[tag=this_entity,tag=mr_bones,limit=1] store result storage luigis_
 scoreboard players operation @e[tag=this_entity,tag=model_piece,limit=1] GhostNr = @e[tag=this_entity,tag=mr_bones,limit=1] GhostNr
 execute as @e[tag=this_entity,tag=mr_bones,limit=1] store result score @s Health store result score @s LastHealth run data get storage luigis_mansion:data current_state.current_data.ghosts.mr_bones.health
 scoreboard players set @e[tag=this_entity,tag=mr_bones,limit=1] PullStrength 15
-scoreboard players set @e[tag=this_entity,tag=mr_bones,limit=1] Move 4
+scoreboard players set @e[tag=this_entity,tag=mr_bones,limit=1] Move 20
 scoreboard players set @e[tag=this_entity,tag=mr_bones,limit=1] Sound 0
 scoreboard players set @e[tag=this_entity,tag=mr_bones,limit=1] StunTime 0
 scoreboard players set @e[tag=this_entity,tag=mr_bones,limit=1] VulnerableTime 0

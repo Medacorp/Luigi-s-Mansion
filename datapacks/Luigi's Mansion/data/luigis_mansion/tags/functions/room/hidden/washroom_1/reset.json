@@ -12,6 +12,7 @@
         "luigis_mansion:room/hidden/washroom_1/reset/sink",
         "luigis_mansion:room/hidden/washroom_1/reset/toilet",
         "luigis_mansion:room/hidden/washroom_1/reset/toilet_paper",
-        "luigis_mansion:room/hidden/washroom_1/reset/toilet_storage"
+        "luigis_mansion:room/hidden/washroom_1/reset/toilet_storage",
+        "luigis_mansion:room/hidden/washroom_1/reset/vacuumable"
     ]
 }

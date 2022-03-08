@@ -1,4 +1,4 @@
-teleport @s ^ ^ ^0.05
+teleport @s ^ ^ ^0.01
 execute at @s if block ~ ~ ~ #minecraft:slabs align y run teleport @s ~ ~0.5 ~
 execute at @s if block ~ ~ ~ #minecraft:slabs run tag @s add slab
 execute at @s[tag=slab] unless block ~ ~ ~ #minecraft:slabs unless block ~ ~ ~ #luigis_mansion:ghosts_ignore align y run teleport @s ~ ~1 ~

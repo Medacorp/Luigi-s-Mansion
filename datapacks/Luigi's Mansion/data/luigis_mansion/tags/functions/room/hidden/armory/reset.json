@@ -30,6 +30,7 @@
         "luigis_mansion:room/hidden/armory/reset/crate_11",
         "luigis_mansion:room/hidden/armory/reset/lamp",
         "luigis_mansion:room/hidden/armory/reset/mirror",
-        "luigis_mansion:room/hidden/armory/reset/shield"
+        "luigis_mansion:room/hidden/armory/reset/shield",
+        "luigis_mansion:room/hidden/armory/reset/vacuumable"
     ]
 }

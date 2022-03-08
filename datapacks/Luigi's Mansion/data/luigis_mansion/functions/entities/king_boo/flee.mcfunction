@@ -1,5 +1,5 @@
 scoreboard players operation #temp Move = @s Move
-execute if score #temp Move matches 3.. unless entity @e[tag=bowser_body,distance=..4] run scoreboard players remove #temp Move 2
+execute if score #temp Move matches 15.. unless entity @e[tag=bowser_body,distance=..4] run scoreboard players remove #temp Move 10
 tag @s[tag=!in_vacuum] remove fleeing
 tag @s[tag=!in_vacuum] remove hurt
 execute if score #temp Move matches 1.. at @s rotated ~ 0 run function luigis_mansion:entities/king_boo/move_flee

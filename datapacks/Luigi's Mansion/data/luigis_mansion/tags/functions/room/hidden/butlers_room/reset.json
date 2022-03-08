@@ -17,7 +17,8 @@
         "luigis_mansion:room/hidden/butlers_room/reset/sewing_machine",
         "luigis_mansion:room/hidden/butlers_room/reset/table",
         "luigis_mansion:room/hidden/butlers_room/reset/toilet_paper",
-        "luigis_mansion:room/hidden/butlers_room/reset/vacuumable",
+        "luigis_mansion:room/hidden/butlers_room/reset/vacuumable_1",
+        "luigis_mansion:room/hidden/butlers_room/reset/vacuumable_2",
         "luigis_mansion:room/hidden/butlers_room/reset/water_bucket"
     ]
 }

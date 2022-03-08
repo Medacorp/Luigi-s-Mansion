@@ -1,6 +1,6 @@
 teleport @s ~ ~1.1875 ~
-execute if entity @s[tag=spit] run scoreboard players set #temp Move 6
-execute if entity @s[tag=!spit] run scoreboard players set #temp Move 2
+execute if entity @s[tag=spit] run scoreboard players set #temp Move 30
+execute if entity @s[tag=!spit] run scoreboard players set #temp Move 10
 scoreboard players set @s[tag=!vacuumable] SpawnTime 0
 scoreboard players add @s[tag=vacuumable] SpawnTime 1
 execute at @s[tag=spit] run function luigis_mansion:entities/wool/spit

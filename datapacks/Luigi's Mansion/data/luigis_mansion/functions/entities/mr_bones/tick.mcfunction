@@ -18,7 +18,7 @@ execute if entity @s[tag=!hurt,tag=!element_hurt,tag=!fleeing,tag=!attack,tag=!c
 scoreboard players reset #temp Steps
 execute if entity @s[tag=!element_hurt,tag=!fleeing,tag=!collided,tag=attack,tag=!vanish,scores={StunTime=0}] run function luigis_mansion:entities/mr_bones/attack
 
-execute if entity @s[scores={Time=80..}] run function luigis_mansion:entities/mr_bones/turn
+execute if entity @s[scores={Time=400..}] run function luigis_mansion:entities/mr_bones/turn
 execute at @s[tag=!hurt,tag=!element_hurt,tag=!fleeing,tag=!attack,tag=!collided,tag=!vanish,tag=!appear,scores={StunTime=0,SpawnTime=20..}] unless entity @s[tag=!laugh,tag=!complain] facing entity @e[tag=same_room,tag=!spectator,sort=nearest,limit=1] feet rotated ~ 0 run teleport @s ~ ~ ~ ~ ~
 execute at @s[tag=!hurt,tag=!element_hurt,tag=!fleeing,tag=!attack,tag=!collided,tag=!laugh,tag=!complain,tag=!vanish,tag=!appear,scores={StunTime=0,SpawnTime=20..}] positioned ~ ~0.1 ~ align y run function luigis_mansion:entities/mr_bones/move_forward
 execute if entity @s[tag=!hurt,tag=!element_hurt,tag=!fleeing,tag=!attack,tag=!collided,tag=laugh,tag=!vanish,scores={StunTime=0}] run function luigis_mansion:entities/mr_bones/laugh

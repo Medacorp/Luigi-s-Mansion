@@ -46,14 +46,14 @@ tag @s[scores={PathStep=73}] remove look_around
 execute if entity @s[scores={PathStep=73}] run playsound luigis_mansion:entity.shivers.calm_down hostile @a[tag=same_room] ~ ~ ~ 1
 tag @s[scores={PathStep=73}] add sit_down
 tag @s[scores={PathStep=93}] remove sit_down
-execute if entity @s[scores={PathStep=73..93}] run scoreboard players set #temp Move 1
+execute if entity @s[scores={PathStep=73..93}] run scoreboard players set #temp Move 5
 execute at @s[scores={PathStep=73..93},tag=!vanish] facing 745 11.6 -51 run function luigis_mansion:entities/shivers/move_forward
 tag @s[scores={PathStep=93}] add burn
 scoreboard players set @s[scores={PathStep=173}] AnimationProg 0
 tag @s[scores={PathStep=173}] remove burn
 tag @s[scores={PathStep=173}] add look_around
 tag @s[scores={PathStep=233}] remove look_around
-scoreboard players set #temp Move 2
+scoreboard players set #temp Move 10
 scoreboard players set @s[scores={PathStep=93}] VulnerableTime 80
 tag @s[scores={PathStep=233}] add vanish
 tag @s[scores={PathStep=233}] remove burning

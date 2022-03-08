@@ -3,7 +3,7 @@ execute store result score @s HomeRot run data get entity @s Rotation[0]
 scoreboard players add @s Wave 1
 execute if entity @s[scores={Wave=31..}] run scoreboard players set #temp Move 0
 execute if entity @s[scores={Wave=31..}] at @p[tag=!spectator,tag=vacuuming] run teleport @s ^ ^ ^5
-execute if entity @s[scores={Wave=..30}] run scoreboard players set #temp Move 9
+execute if entity @s[scores={Wave=..30}] run scoreboard players set #temp Move 45
 execute if entity @s[scores={Wave=90}] run scoreboard players set #temp Move 20
 scoreboard players set @s[scores={Wave=90}] Wave 30
 execute if entity @s[scores={Wave=30..}] run tag @s remove hit_floor

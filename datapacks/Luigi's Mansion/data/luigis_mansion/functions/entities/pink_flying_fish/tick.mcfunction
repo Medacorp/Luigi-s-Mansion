@@ -10,7 +10,7 @@ scoreboard players reset #temp ActionTime
 scoreboard players reset #temp Room
 
 data modify entity @s[tag=visible] ArmorItems[3].id set value "minecraft:leather_chestplate"
-scoreboard players set #temp Move 3
+scoreboard players set #temp Move 15
 scoreboard players add @s[tag=visible] WaitTime 1
 execute if entity @s[scores={WaitTime=1..79}] run function luigis_mansion:entities/pink_flying_fish/hover
 execute if entity @s[scores={WaitTime=80..}] run function luigis_mansion:entities/pink_flying_fish/attack

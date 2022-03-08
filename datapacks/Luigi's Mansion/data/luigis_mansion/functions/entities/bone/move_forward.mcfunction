@@ -1,4 +1,4 @@
-teleport @s ^ ^ ^0.05
+teleport @s ^ ^ ^0.01
 execute if entity @s[scores={Sound=0}] run playsound luigis_mansion:entity.bone.fly hostile @a[tag=same_room] ~ ~ ~ 1
 scoreboard players set @s[scores={Sound=0}] Sound 4
 scoreboard players remove #temp Move 1

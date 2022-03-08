@@ -4,6 +4,6 @@ scoreboard players set @e[tag=this_entity,limit=1] Wave 0
 scoreboard players set @e[tag=this_entity,limit=1] ActionTime 1
 scoreboard players operation @e[tag=this_entity,limit=1] Room = #temp Room
 scoreboard players set @e[tag=this_entity,limit=1] Dialog 0
-scoreboard players set @e[tag=this_entity,limit=1] Move 3
+scoreboard players set @e[tag=this_entity,limit=1] Move 15
 scoreboard players set @e[tag=this_entity,limit=1] Sound 0
 tag @e[tag=this_entity,limit=1] remove this_entity

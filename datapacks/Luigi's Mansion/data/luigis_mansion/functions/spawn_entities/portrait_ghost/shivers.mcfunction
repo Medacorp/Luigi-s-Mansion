@@ -17,7 +17,7 @@ execute as @e[tag=shivers,tag=this_entity,limit=1] store result score @s PrevHea
 execute as @e[tag=shivers,tag=this_entity,limit=1] store result score @s MaxHealth run data get storage luigis_mansion:data current_state.current_data.portrait_ghosts.shivers.max_health
 execute as @e[tag=shivers,tag=this_entity,limit=1] store result score @s TopVacuumDamage run data get storage luigis_mansion:data current_state.current_data.portrait_ghosts.shivers.top_vacuum_damage
 scoreboard players set @e[tag=shivers,tag=this_entity,limit=1] PullStrength 10
-scoreboard players set @e[tag=shivers,tag=this_entity,limit=1] Move 2
+scoreboard players set @e[tag=shivers,tag=this_entity,limit=1] Move 10
 scoreboard players set @e[tag=shivers,tag=this_entity,limit=1] Sound 0
 scoreboard players set @e[tag=shivers,tag=this_entity,limit=1] StunTime 0
 scoreboard players set @e[tag=shivers,tag=this_entity,limit=1] VulnerableTime 0

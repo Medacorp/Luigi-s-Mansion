@@ -1,5 +1,5 @@
 scoreboard players add @s[scores={Dialog=81..161}] Dialog 1
-scoreboard players set @s Move 3
+scoreboard players set @s Move 15
 scoreboard players add @s[scores={Dialog=1..79}] Dialog 1
 execute if entity @s[tag=!visible,tag=!vanish] run function luigis_mansion:entities/spooky/turn_visible
 execute unless entity @s[scores={Dialog=1..}] at @e[tag=same_room,tag=!spectator] positioned ^ ^ ^8 if entity @s[distance=..8,tag=visible] run function luigis_mansion:entities/spooky/turn_invisible

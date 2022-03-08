@@ -27,6 +27,8 @@
         "luigis_mansion:room/normal/tea_room/reset/table_2",
         "luigis_mansion:room/normal/tea_room/reset/tea_box",
         "luigis_mansion:room/normal/tea_room/reset/tea_set_1",
-        "luigis_mansion:room/normal/tea_room/reset/tea_set_2"
+        "luigis_mansion:room/normal/tea_room/reset/tea_set_2",
+        "luigis_mansion:room/normal/tea_room/reset/vacuumable_1",
+        "luigis_mansion:room/normal/tea_room/reset/vacuumable_2"
     ]
 }

@@ -11,7 +11,7 @@ execute if entity @e[tag=melody_pianissima,limit=1] run data modify entity @s[ta
 execute if entity @e[tag=melody_pianissima,limit=1] run tag @s[tag=dead] remove normal_death
 execute if entity @e[tag=melody_pianissima,limit=1] run tag @s[tag=dead] remove dead
 
-scoreboard players set #temp Move 5
+scoreboard players set #temp Move 25
 scoreboard players add @s[scores={WaitTime=..-1}] WaitTime 1
 execute if entity @e[tag=melody_pianissima,limit=1] unless entity @e[tag=melody_pianissima,scores={VulnerableTime=1..},tag=!vanish,limit=1] run scoreboard players add @s[scores={WaitTime=0..}] WaitTime 1
 teleport @s[scores={WaitTime=1}] ~ ~1 ~

@@ -1,0 +1,1 @@
+execute if entity @s[x=737.0,y=31,z=-3.0,dx=0,dy=1,dz=1] unless score #telephone_room_vacuumable_2 Searched matches 1 run tellraw @a {"translate":"chat.type.text","with":[{"selector":"@p[tag=scanning_player,gamemode=!spectator]","color":"green"},{"translate":"luigis_mansion:message.player.scan_furniture.55"}]}

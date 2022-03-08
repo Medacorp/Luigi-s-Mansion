@@ -1,5 +1,5 @@
 execute at @e[tag=king_boo,limit=1] run tag @e[tag=same_room,tag=!spectator,sort=nearest,limit=1] add target
-scoreboard players set #temp Move 10
+scoreboard players set #temp Move 50
 execute at @s facing entity @a[tag=target,limit=1] feet run teleport @s ~ ~ ~ ~ ~
 execute at @s unless entity @a[tag=target,limit=1,distance=..8] rotated ~ 0 run function luigis_mansion:entities/bowser/move_forward
 scoreboard players add @s ActionTime 1

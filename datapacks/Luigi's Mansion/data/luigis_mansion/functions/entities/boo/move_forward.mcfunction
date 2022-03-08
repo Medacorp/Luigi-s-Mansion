@@ -5,9 +5,9 @@ execute positioned as @e[type=minecraft:marker,tag=boo_height_check,limit=1] rot
 execute if entity @s[tag=up,x_rotation=-90..-45] unless block ~ ~1.3 ~ #luigis_mansion:boos_ignore positioned ~ ~-6 ~ if entity @e[type=minecraft:marker,tag=boo_height_check,limit=1,distance=..1] run tag @s add wall
 execute if entity @s[tag=down,x_rotation=45..90] unless block ~ ~1.3 ~ #luigis_mansion:boos_ignore positioned ~ ~1 ~ if entity @e[type=minecraft:marker,tag=boo_height_check,limit=1,distance=..1] run tag @s add wall
 kill @e[type=minecraft:marker,tag=boo_height_check,limit=1]
-teleport @s[tag=!wall] ^ ^ ^0.05
+teleport @s[tag=!wall] ^ ^ ^0.01
 scoreboard players remove #temp Move 1
 execute if entity @s[tag=wall] run scoreboard players set #temp Move 0
-execute if entity @s[tag=wall] run scoreboard players set @s Time 120
+execute if entity @s[tag=wall] run scoreboard players set @s Time 600
 execute if entity @s[tag=!wall] run scoreboard players add @s Time 1
 execute if score #temp Move matches 1.. positioned as @s run function luigis_mansion:entities/boo/move_forward

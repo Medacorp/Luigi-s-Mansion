@@ -14,7 +14,7 @@ execute if score #temp HomeY = @s HomeY run tag @s add on_floor
 scoreboard players reset #temp HomeY
 
 execute at @s[tag=!dead] run function #luigis_mansion:entities/gold_mouse/tick
-scoreboard players set #temp Move 6
+scoreboard players set #temp Move 30
 execute at @s[tag=!dead] run function luigis_mansion:entities/gold_mouse/move_forward
 execute at @s run function luigis_mansion:animations/mouse/idle
 execute at @s[scores={LightX=-2147483648..}] run function luigis_mansion:other/cast_shadow/1_tall

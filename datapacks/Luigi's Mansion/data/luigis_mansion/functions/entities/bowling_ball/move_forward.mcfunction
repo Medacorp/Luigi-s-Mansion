@@ -1,6 +1,6 @@
 execute at @s[tag=on_slab] unless block ~ ~ ~ #minecraft:slabs[type=bottom] align y run teleport @s ~ ~ ~
 execute at @s[tag=on_slab] unless block ~ ~ ~ #minecraft:slabs[type=bottom] run tag @s remove on_slab
-execute at @s run teleport @s ^ ^ ^0.05
+execute at @s run teleport @s ^ ^ ^0.01
 execute at @s[tag=!on_slab] if block ~ ~ ~ #minecraft:slabs[type=bottom] align y run teleport @s ~ ~0.5 ~
 execute at @s[tag=!on_slab] if block ~ ~ ~ #minecraft:slabs[type=bottom] run tag @s add on_slab
 scoreboard players remove #temp Move 1
