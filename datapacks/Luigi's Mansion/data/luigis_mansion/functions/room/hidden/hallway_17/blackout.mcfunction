@@ -1,2 +1,2 @@
-execute positioned 730 29 28 run function luigis_mansion:spawn_entities/ghost/bowling_ghost
+execute positioned 730 29 28 run function luigis_mansion:spawn_entities/ghost/can_spawn_now/bowling_ghost
 scoreboard players set #hallway_17 Wave 100

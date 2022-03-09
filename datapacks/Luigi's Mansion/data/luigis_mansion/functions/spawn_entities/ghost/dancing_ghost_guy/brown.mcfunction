@@ -15,6 +15,7 @@ scoreboard players set @e[tag=this_entity,limit=1] TopVacuumDamage 0
 scoreboard players set @e[tag=this_entity,limit=1] ElementHurtTime 0
 scoreboard players set @e[tag=this_entity,limit=1] SecondFleeDamage -1
 scoreboard players set @e[tag=this_entity,limit=1] HeartOffset -2
+scoreboard players set @e[tag=this_entity,limit=1] SpawnTime 160
 execute as @e[tag=this_entity,limit=1] store result score @s HomeX run data get entity @s Pos[0] 100
 execute as @e[tag=this_entity,limit=1] store result score @s HomeY run data get entity @s Pos[1] 100
 execute as @e[tag=this_entity,limit=1] store result score @s HomeZ run data get entity @s Pos[2] 100
