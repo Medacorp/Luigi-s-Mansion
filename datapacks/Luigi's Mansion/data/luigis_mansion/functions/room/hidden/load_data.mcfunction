@@ -10,7 +10,7 @@ execute unless score #mansion_data_index Selected = #previous_mansion_index Sele
 function #luigis_mansion:room/reset_variable_to_default
 scoreboard players set #mirrored Selected 1
 scoreboard players set #multiply_hurt Selected 200
-scoreboard players set #multiply_damage Selected 125
+scoreboard players set #multiply_damage Selected 150
 scoreboard players set #can_warp Selected 1
 scoreboard players set #heart_coin_count Selected 1000
 scoreboard players reset * Ticking

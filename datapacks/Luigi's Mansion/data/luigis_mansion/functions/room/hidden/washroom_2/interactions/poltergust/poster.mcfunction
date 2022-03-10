@@ -1,6 +1,6 @@
 execute if entity @s[x=661.0,y=22,z=-22.0,dx=0,dy=2,dz=1,tag=vacuum] if entity @a[tag=me,x=661.5,y=23,z=-21.0,distance=4.8..5,limit=1] unless score #washroom_2_poster Search matches 1 store success score #washroom_2_poster Search run scoreboard players add #washroom_2_poster Searching 1
 execute if entity @s[x=661.0,y=22,z=-22.0,dx=0,dy=2,dz=1,tag=vacuum] if entity @a[tag=me,x=661.5,y=23,z=-21.0,distance=..4.8,limit=1] unless score #washroom_2_poster Search matches 1 store success score #washroom_2_poster Search run scoreboard players add #washroom_2_poster Searching 0
-execute if entity @s[x=661.0,y=22,z=-22.0,dx=0,dy=2,dz=1,tag=vacuum] as @a[tag=me,x=661.5,y=23,z=-21.0,distance=4.8..3,limit=1] at @s facing 661.5 23 -21.0 rotated ~ 0 run teleport @s ^ ^ ^0.2
+execute if entity @s[x=661.0,y=22,z=-22.0,dx=0,dy=2,dz=1,tag=vacuum] as @a[tag=me,x=661.5,y=23,z=-21.0,distance=4.8..5,limit=1] at @s facing 661.5 23 -21.0 rotated ~ 0 run teleport @s ^ ^ ^0.2
 execute if entity @s[x=661.0,y=22,z=-22.0,dx=0,dy=2,dz=1,tag=vacuum] as @a[tag=me,x=661.5,y=23,z=-21.0,distance=..4.8,limit=1] at @s facing 661.5 23 -21.0 run teleport @s ~ ~ ~ ~ ~
 execute if entity @s[x=661.0,y=22,z=-22.0,dx=0,dy=2,dz=1,tag=vacuum] run tag @a[tag=me,x=661.5,y=23,z=-21.0,distance=..4.8,limit=1] add vacuuming_poster
 execute if entity @s[x=661.0,y=22,z=-22.0,dx=0,dy=2,dz=1,tag=vacuum] if score #washroom_2_poster Searching matches 40 as @a[tag=me,x=661.5,y=23,z=-21.0,distance=..5,limit=1] positioned 661.5 23 -21.0 run function luigis_mansion:entities/player/boo_poster

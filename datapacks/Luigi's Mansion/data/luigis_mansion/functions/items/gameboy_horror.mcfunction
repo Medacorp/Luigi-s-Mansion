@@ -18,7 +18,7 @@ tag @s[tag=!gameboy_horror_selected,tag=!warp] remove scanning
 tag @s[scores={ScareType=2..}] remove scanning
 tag @s remove gameboy_horror_selected
 tag @s[nbt={SelectedItem:{tag:{luigis_mansion:{id:"luigis_mansion:gameboy_horror"}}}}] add gameboy_horror_selected
-execute unless entity @s[scores={UseItem=1,KnockbackType=0},tag=gameboy_horror_selected,tag=!looking_at_map,tag=!scanning] run trigger GBHChoice set 0
+execute unless entity @s[scores={KnockbackType=0},tag=gameboy_horror_selected,tag=!looking_at_map,tag=!scanning] run trigger GBHChoice set 0
 execute if entity @s[scores={ScareType=1..}] run trigger GBHChoice set 0
 execute if entity @s[scores={IdleTime=..-1},tag=!idle] run trigger GBHChoice set 0
 execute unless entity @s[scores={GBHCall=0..}] run scoreboard players set @s GBHCall 0
