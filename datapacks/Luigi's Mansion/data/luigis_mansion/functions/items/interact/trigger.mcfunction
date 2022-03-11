@@ -12,7 +12,7 @@ execute if entity @e[tag=interact,tag=manual,tag=can_interact,tag=2,limit=1] run
 execute if entity @e[tag=interact,tag=manual,tag=can_interact,tag=1,limit=1] run tag @s[tag=!2] add 1
 execute if entity @e[tag=interact,tag=manual,tag=can_interact,tag=3,limit=1] run tag @s[tag=!1,tag=!2] add 3
 execute unless entity @s[scores={InteractionTime=1..}] at @e[tag=interact,tag=manual,tag=up,limit=1] unless block ~ ~ ~ #luigis_mansion:interact_ignore run function luigis_mansion:items/interact/wall
-execute unless entity @s[scores={InteractionTime=1..}] if entity @s[scores={Sound=0,IdleTime=0..}] run function #luigis_mansion:room/yell
+execute unless entity @s[scores={InteractionTime=1..}] if entity @s[scores={Sound=0}] run function #luigis_mansion:room/yell
 kill @e[tag=interact,tag=manual]
 scoreboard players reset #temp Room
 tag @s remove searcher
