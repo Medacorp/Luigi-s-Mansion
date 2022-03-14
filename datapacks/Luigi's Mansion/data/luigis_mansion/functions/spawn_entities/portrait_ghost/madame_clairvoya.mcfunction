@@ -15,8 +15,9 @@ execute as @e[tag=madame_clairvoya,tag=this_entity,limit=1] store result score @
 execute as @e[tag=madame_clairvoya,tag=this_entity,limit=1] store result score @s PrevHealth store result score @s LastHealth store result score @s Health run data get storage luigis_mansion:data current_state.current_data.portrait_ghosts.madame_clairvoya.health
 execute as @e[tag=madame_clairvoya,tag=this_entity,limit=1] store result score @s MaxHealth run data get storage luigis_mansion:data current_state.current_data.portrait_ghosts.madame_clairvoya.max_health
 execute as @e[tag=madame_clairvoya,tag=this_entity,limit=1] store result score @s TopVacuumDamage run data get storage luigis_mansion:data current_state.current_data.portrait_ghosts.madame_clairvoya.top_vacuum_damage
+execute as @e[tag=madame_clairvoya,tag=this_entity,limit=1] store result score @s Move run data get storage luigis_mansion:data current_state.current_data.portrait_ghosts.madame_clairvoya.speed
+execute as @e[tag=madame_clairvoya,tag=this_entity,limit=1] store result score @s MoveFlee run data get storage luigis_mansion:data current_state.current_data.portrait_ghosts.madame_clairvoya.flee_speed
 scoreboard players set @e[tag=madame_clairvoya,tag=this_entity,limit=1] PullStrength 10
-scoreboard players set @e[tag=madame_clairvoya,tag=this_entity,limit=1] Move 20
 scoreboard players set @e[tag=madame_clairvoya,tag=this_entity,limit=1] Sound 0
 scoreboard players set @e[tag=madame_clairvoya,tag=this_entity,limit=1] StunTime 0
 scoreboard players set @e[tag=madame_clairvoya,tag=this_entity,limit=1] VulnerableTime 0

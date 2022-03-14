@@ -16,6 +16,8 @@ execute as @e[tag=nana,tag=this_entity,limit=1] store result score @s HomeRot ru
 execute as @e[tag=nana,tag=this_entity,limit=1] store result score @s PrevHealth store result score @s LastHealth store result score @s Health run data get storage luigis_mansion:data current_state.current_data.portrait_ghosts.nana.health
 execute as @e[tag=nana,tag=this_entity,limit=1] store result score @s MaxHealth run data get storage luigis_mansion:data current_state.current_data.portrait_ghosts.nana.max_health
 execute as @e[tag=nana,tag=this_entity,limit=1] store result score @s TopVacuumDamage run data get storage luigis_mansion:data current_state.current_data.portrait_ghosts.nana.top_vacuum_damage
+execute as @e[tag=nana,tag=this_entity,limit=1] store result score @s Move run data get storage luigis_mansion:data current_state.current_data.portrait_ghosts.nana.speed
+execute as @e[tag=nana,tag=this_entity,limit=1] store result score @s MoveFlee run data get storage luigis_mansion:data current_state.current_data.portrait_ghosts.nana.flee_speed
 scoreboard players set @e[tag=nana,tag=this_entity,limit=1] PullStrength 10
 scoreboard players set @e[tag=nana,tag=this_entity,limit=1] Move 10
 scoreboard players set @e[tag=nana,tag=this_entity,limit=1] Sound 0

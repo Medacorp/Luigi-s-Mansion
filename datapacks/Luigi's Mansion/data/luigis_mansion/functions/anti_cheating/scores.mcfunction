@@ -91,6 +91,7 @@ scoreboard objectives add MirrorZ dummy
 scoreboard objectives add ModelTime dummy
 scoreboard objectives add Money dummy
 scoreboard objectives add Move dummy
+scoreboard objectives add MoveFlee dummy
 scoreboard objectives add MushroomTimer dummy
 scoreboard objectives add Music dummy
 scoreboard objectives add MusicGroup dummy

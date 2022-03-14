@@ -1,1 +1,1 @@
-tag @s[tag=boolossus,tag=split,scores={Wave=..599}] add frozen
+tag @s[tag=boolossus,tag=split,tag=!fleeing,scores={Wave=..599}] add frozen

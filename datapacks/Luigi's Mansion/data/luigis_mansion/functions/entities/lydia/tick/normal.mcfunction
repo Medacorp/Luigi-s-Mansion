@@ -18,7 +18,7 @@ execute if entity @s[scores={Dialog=136..163},tag=!vanish] run fill 684 112 42 6
 execute if entity @s[scores={Dialog=163},tag=!vanish] run teleport @s ~ ~ ~ facing 689 111.6 43
 execute if entity @s[scores={Dialog=197},tag=!vanish] run teleport @s ~ ~ ~ facing 690 111.6 41
 execute if entity @s[scores={Dialog=212},tag=!vanish] run teleport @s ~ ~ ~ 135 0
-execute at @s[scores={Dialog=100..212},tag=!vanish] run teleport @s ^ ^ ^0.15
+execute at @s[scores={Dialog=100..212},tag=!vanish] run function luigis_mansion:entities/ghost/move_forward
 tag @s[scores={Dialog=212}] add vanish
 scoreboard players set @s[scores={Dialog=212}] Dialog 0
 

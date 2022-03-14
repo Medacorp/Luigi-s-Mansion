@@ -13,7 +13,7 @@ tag @s remove fleeing
 
 data modify entity @s[tag=visible,scores={SpawnTime=1}] ArmorItems[3].id set value "minecraft:diamond_pickaxe"
 scoreboard players add @s[tag=visible] SpawnTime 1
-execute at @s[scores={SpawnTime=1..}] if block ^ ^ ^0.3 #luigis_mansion:ghosts_ignore if block ^ ^1 ^0.3 #luigis_mansion:ghosts_ignore run teleport @s ^ ^ ^0.02
+execute at @s[scores={SpawnTime=1..}] run function luigis_mansion:entities/ghost/move_forward
 execute at @s[tag=visible] if block ~ ~-0.01 ~ #luigis_mansion:ghosts_ignore run teleport @s ~ ~-0.01 ~
 execute at @s[scores={Turn=0},tag=visible] run function luigis_mansion:entities/spark/turn
 data modify entity @s[scores={SpawnTime=140}] ArmorItems[3].tag.CustomModelData set value 106

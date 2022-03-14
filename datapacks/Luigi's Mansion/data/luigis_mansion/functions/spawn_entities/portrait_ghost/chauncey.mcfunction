@@ -12,8 +12,9 @@ execute as @e[tag=chauncey,tag=this_entity,limit=1] store result score @s HomeRo
 execute as @e[tag=chauncey,tag=this_entity,limit=1] store result score @s PrevHealth store result score @s LastHealth store result score @s Health run data get storage luigis_mansion:data current_state.current_data.portrait_ghosts.chauncey.health
 execute as @e[tag=chauncey,tag=this_entity,limit=1] store result score @s MaxHealth run data get storage luigis_mansion:data current_state.current_data.portrait_ghosts.chauncey.max_health
 execute as @e[tag=chauncey,tag=this_entity,limit=1] store result score @s TopVacuumDamage run data get storage luigis_mansion:data current_state.current_data.portrait_ghosts.chauncey.top_vacuum_damage
+execute as @e[tag=chauncey,tag=this_entity,limit=1] store result score @s Move run data get storage luigis_mansion:data current_state.current_data.portrait_ghosts.chauncey.speed
+execute as @e[tag=chauncey,tag=this_entity,limit=1] store result score @s MoveFlee run data get storage luigis_mansion:data current_state.current_data.portrait_ghosts.chauncey.flee_speed
 scoreboard players set @e[tag=chauncey,tag=this_entity,limit=1] PullStrength 0
-scoreboard players set @e[tag=chauncey,tag=this_entity,limit=1] Move 5
 scoreboard players set @e[tag=chauncey,tag=this_entity,limit=1] Sound 0
 scoreboard players set @e[tag=chauncey,tag=this_entity,limit=1] StunTime 0
 scoreboard players set @e[tag=chauncey,tag=this_entity,limit=1] VulnerableTime 0

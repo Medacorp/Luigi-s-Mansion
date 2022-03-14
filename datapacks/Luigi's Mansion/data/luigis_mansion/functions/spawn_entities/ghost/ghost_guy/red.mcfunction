@@ -3,9 +3,10 @@ execute if score #mirrored Selected matches 1 run summon minecraft:armor_stand ~
 execute as @e[tag=this_entity,limit=1] store result score @s GhostNr run data get storage luigis_mansion:data ghost_nr
 execute as @e[tag=this_entity,limit=1] store result storage luigis_mansion:data ghost_nr int 1 run scoreboard players add @s GhostNr 1
 execute as @e[tag=this_entity,limit=1] store result score @s Health store result score @s LastHealth run data get storage luigis_mansion:data current_state.current_data.ghosts.ghost_guy.health
+execute as @e[tag=this_entity,limit=1] store result score @s Move run data get storage luigis_mansion:data current_state.current_data.ghosts.ghost_guy.speed
+execute as @e[tag=this_entity,limit=1] store result score @s MoveFlee run data get storage luigis_mansion:data current_state.current_data.ghosts.ghost_guy.flee_speed
 teleport @e[tag=this_entity,limit=1] ~ ~ ~ facing entity @p[gamemode=!spectator]
 scoreboard players set @e[tag=this_entity,limit=1] PullStrength 20
-scoreboard players set @e[tag=this_entity,limit=1] Move 10
 scoreboard players set @e[tag=this_entity,limit=1] WaitTime 0
 scoreboard players set @e[tag=this_entity,limit=1] Distance 0
 scoreboard players set @e[tag=this_entity,limit=1] Sound 0

@@ -2,7 +2,7 @@ scoreboard players add @s[scores={ActionTime=52..}] ActionTime 1
 scoreboard players set @s[scores={ActionTime=51}] ActionTime 44
 scoreboard players add @s[scores={ActionTime=1..50}] ActionTime 1
 execute unless entity @s[scores={ActionTime=1..}] run scoreboard players set @s ActionTime 1
-scoreboard players set @s Move 25
+scoreboard players set #temp Move 25
 scoreboard players set @s[scores={ActionTime=1}] AnimationProg 0
 tag @s[scores={ActionTime=1}] add bite
 tag @s[scores={ActionTime=1}] remove move

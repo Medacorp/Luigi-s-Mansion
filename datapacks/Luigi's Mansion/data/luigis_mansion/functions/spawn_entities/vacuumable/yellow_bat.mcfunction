@@ -2,4 +2,5 @@ summon minecraft:armor_stand ~ ~-0.2 ~ {CustomName:'{"translate":"luigis_mansion
 execute as @e[tag=this_entity,limit=1] store result score @s HomeX run data get entity @s Pos[0] 100
 execute as @e[tag=this_entity,limit=1] store result score @s HomeY run data get entity @s Pos[1] 100
 execute as @e[tag=this_entity,limit=1] store result score @s HomeZ run data get entity @s Pos[2] 100
+execute as @e[tag=this_entity,limit=1] store result score @s Move run data get storage luigis_mansion:data current_state.current_data.ghosts.yellow_bat.speed
 tag @e[tag=this_entity,limit=1] remove this_entity
