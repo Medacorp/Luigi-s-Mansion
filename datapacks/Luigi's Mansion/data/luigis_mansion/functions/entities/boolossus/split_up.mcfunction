@@ -6,7 +6,7 @@ scoreboard players operation #temp2 Boos = @s ActionTime
 scoreboard players set #temp HomeRot -180
 playsound luigis_mansion:entity.boolossus.pop hostile @a[tag=same_room] ~ ~ ~ 3
 function luigis_mansion:entities/boolossus/split_boo
-scoreboard players operation @e[tag=boolossus,tag=split,tag=!dead] Time = #temp2 Boos
+scoreboard players operation @e[tag=boolossus,tag=split,tag=!dead] GhostCount = #temp2 Boos
 scoreboard players operation @e[tag=boolossus,tag=split,tag=!dead] Move /= #temp2 Boos
 tag @s add dead
 scoreboard players reset #temp ActionTime

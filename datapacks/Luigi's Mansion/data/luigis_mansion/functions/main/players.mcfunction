@@ -77,7 +77,7 @@ tag @s[tag=attacking] remove attacking
 tag @s[scores={Attack=1..}] add attacking
 scoreboard players set @s[scores={Attack=1..}] Attack 0
 
-execute if entity @a[tag=!same_room,limit=1] run scoreboard players set #freeze_timer Selected 0
+execute if entity @a[tag=!same_room,tag=!looking_at_map,scores={Room=1..},limit=1] run scoreboard players set #freeze_timer Selected 0
 tag @e[tag=same_room] remove same_room
 tag @s remove already_ticked
 
