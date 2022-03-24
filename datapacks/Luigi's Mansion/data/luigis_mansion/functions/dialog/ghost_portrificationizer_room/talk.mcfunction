@@ -1,6 +1,6 @@
 scoreboard players add @s Dialog 1
-tag @s[scores={Dialog=1}] add ghost_portrificationizer_room_dialog
-tag @s[scores={Dialog=1}] add nod
+tag @s[scores={Dialog=1..}] add ghost_portrificationizer_room_dialog
+tag @s[scores={Dialog=1..}] add nod
 execute if entity @s[scores={Dialog=1..625}] as @a[tag=same_room,gamemode=!spectator,scores={IdleTime=0..},tag=!looking_at_map] run function luigis_mansion:entities/player/animation/set/stand_still
 execute if entity @s[scores={Dialog=1}] run scoreboard players set @e[tag=this_model,tag=e_gadd_head,limit=1] AnimationProg 0
 execute if entity @s[scores={Dialog=1}] run tellraw @a[tag=same_room] {"translate":"chat.type.text","with":[{"translate":"luigis_mansion:entity.e_gadd","color":"green"},{"translate":"luigis_mansion:dialog.ghost_portrificationizer_room.1"}]}
