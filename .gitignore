@@ -16,7 +16,7 @@
 /entities/
 /playerdata/
 /poi/
+/stats/
 level.dat
 *_old
 session.lock
-stats
