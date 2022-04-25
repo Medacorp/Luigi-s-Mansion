@@ -6,6 +6,9 @@ execute as @e[tag=this_entity,limit=1] store result score @s Health store result
 execute as @e[tag=this_entity,limit=1] store result score @s Move run data get storage luigis_mansion:data current_state.current_data.ghosts.dancing_ghost_guy.speed
 execute as @e[tag=this_entity,limit=1] store result score @s MoveFlee run data get storage luigis_mansion:data current_state.current_data.ghosts.dancing_ghost_guy.flee_speed
 teleport @e[tag=this_entity,limit=1] ~ ~ ~ facing entity @p[gamemode=!spectator]
+execute as @e[tag=this_entity,limit=1] store result score @s HomeX run data get entity @s Pos[0] 100
+execute as @e[tag=this_entity,limit=1] store result score @s HomeY run data get entity @s Pos[1] 100
+execute as @e[tag=this_entity,limit=1] store result score @s HomeZ run data get entity @s Pos[2] 100
 scoreboard players set @e[tag=this_entity,limit=1] PullStrength 20
 scoreboard players set @e[tag=this_entity,limit=1] WaitTime 0
 scoreboard players set @e[tag=this_entity,limit=1] Distance 0

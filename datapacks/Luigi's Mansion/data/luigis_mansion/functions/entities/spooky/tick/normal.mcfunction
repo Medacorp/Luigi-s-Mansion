@@ -38,13 +38,13 @@ execute at @s[scores={Dialog=162}] run summon minecraft:marker ~ ~ ~ {Tags:["tar
 execute if entity @s[scores={Dialog=162}] store result entity @e[type=minecraft:marker,tag=target,limit=1] Pos[0] double 0.01 run scoreboard players get @s HomeX
 execute if entity @s[scores={Dialog=162}] store result entity @e[type=minecraft:marker,tag=target,limit=1] Pos[2] double 0.01 run scoreboard players get @s HomeZ
 execute at @s[scores={Dialog=162}] facing entity @e[type=minecraft:marker,tag=target,limit=1] feet rotated ~ 0 run teleport @s ~ ~ ~ ~ ~
-execute at @s[scores={Dialog=162}] run function luigis_mansion:entities/ghost/move_forward
+execute at @s[scores={Dialog=162}] run teleport @s ^ ^ ^0.15
 execute at @s[scores={Dialog=162}] if entity @e[type=minecraft:marker,tag=target,limit=1,distance=..0.2] store result entity @s Rotation[0] float 1 run scoreboard players get @s HomeRot
 execute at @s[scores={Dialog=162}] if entity @e[type=minecraft:marker,tag=target,limit=1,distance=..0.2] run tag @s remove move
 execute at @s[scores={Dialog=162}] if entity @e[type=minecraft:marker,tag=target,limit=1,distance=..0.2] run tag @s remove moved_up
 execute at @s[scores={Dialog=162}] if entity @e[type=minecraft:marker,tag=target,limit=1,distance=..0.2] store result entity @s Pos[1] double 0.01 run scoreboard players get @s HomeY
 execute at @s[scores={Dialog=163},tag=!vanish] facing entity @e[tag=spooky_bone,limit=1] feet rotated ~ 0 run teleport @s ~ ~ ~ ~ ~
-execute at @s[scores={Dialog=163},tag=!vanish] unless entity @e[tag=spooky_bone,distance=..1] run teleport @s ^ ^ ^0.2
+execute at @s[scores={Dialog=163},tag=!vanish] unless entity @e[tag=spooky_bone,distance=..1] run teleport @s ^ ^ ^0.15
 execute at @s[scores={Dialog=163},tag=!vanish] if entity @e[tag=spooky_bone,distance=..1] run scoreboard players set @s VulnerableTime 5
 execute at @s[scores={Dialog=163},tag=!vanish] if entity @e[tag=spooky_bone,distance=..1] run tag @s remove move
 execute at @s[scores={Dialog=163},tag=!vanish] if entity @e[tag=spooky_bone,distance=..1] run tag @s add lick
