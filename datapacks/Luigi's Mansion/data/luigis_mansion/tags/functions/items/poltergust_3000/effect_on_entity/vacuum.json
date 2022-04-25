@@ -39,6 +39,7 @@
         "luigis_mansion:items/poltergust_3000/effect_on_entity/vacuum/haunted_object",
         "luigis_mansion:items/poltergust_3000/effect_on_entity/vacuum/ghost",
         "luigis_mansion:items/poltergust_3000/effect_on_entity/vacuum/banana_peel",
-        "luigis_mansion:items/poltergust_3000/effect_on_entity/vacuum/vacuumable_object"
+        "luigis_mansion:items/poltergust_3000/effect_on_entity/vacuum/vacuumable_object",
+        "luigis_mansion:items/poltergust_3000/effect_on_entity/vacuum/door"
 	]
 }

@@ -1,0 +1,6 @@
+execute if data storage luigis_mansion:data LeftHandItem{id:"minecraft:diamond_pickaxe",tag:{Damage:3}} run data modify entity @s HandItems[0].tag.Damage set value 2
+execute if data storage luigis_mansion:data RightHandItem{id:"minecraft:diamond_pickaxe",tag:{Damage:2}} run data modify entity @s HandItems[1].tag.Damage set value 3
+execute if data storage luigis_mansion:data LeftHandItem{id:"minecraft:leather_chestplate",tag:{Damage:3}} run data modify entity @s HandItems[0].tag.Damage set value 2
+execute if data storage luigis_mansion:data RightHandItem{id:"minecraft:leather_chestplate",tag:{Damage:2}} run data modify entity @s HandItems[1].tag.Damage set value 3
+execute if data storage luigis_mansion:data LeftHandItem{id:"minecraft:diamond_pickaxe",tag:{Damage:17}} run data modify entity @s HandItems[0].tag.Damage set value 18
+execute if data storage luigis_mansion:data RightHandItem{id:"minecraft:diamond_pickaxe",tag:{Damage:18}} run data modify entity @s HandItems[1].tag.Damage set value 17

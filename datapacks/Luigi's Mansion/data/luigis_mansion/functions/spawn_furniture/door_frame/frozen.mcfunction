@@ -1,0 +1,2 @@
+execute positioned ^ ^ ^0.5 run data modify entity @e[distance=..0.4,type=minecraft:armor_stand,tag=door,tag=frame,limit=1,tag=!left] HandItems[1] set value {id:"minecraft:diamond_pickaxe",Count:1b,tag:{Unbreakable:1b,Damage:16,CustomModelData:24}}
+execute positioned ^ ^ ^0.5 run data modify entity @e[distance=..0.4,type=minecraft:armor_stand,tag=door,tag=frame,limit=1,tag=left] HandItems[0] set value {id:"minecraft:diamond_pickaxe",Count:1b,tag:{Unbreakable:1b,Damage:16,CustomModelData:24}}

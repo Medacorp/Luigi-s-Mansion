@@ -10,6 +10,7 @@
         "luigis_mansion:items/poltergust_3000/effect_on_entity/water/flying_fish",
         "luigis_mansion:items/poltergust_3000/effect_on_entity/water/ghost",
         "luigis_mansion:items/poltergust_3000/effect_on_entity/water/spike_ball",
-        "luigis_mansion:items/poltergust_3000/effect_on_entity/water/bomb"
+        "luigis_mansion:items/poltergust_3000/effect_on_entity/water/bomb",
+        "luigis_mansion:items/poltergust_3000/effect_on_entity/water/door"
 	]
 }

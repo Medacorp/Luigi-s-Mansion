@@ -1,0 +1,1 @@
+execute if entity @e[distance=..0.7,tag=door,tag=fake,limit=1] run tag @s add burning

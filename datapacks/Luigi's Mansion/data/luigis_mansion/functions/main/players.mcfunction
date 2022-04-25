@@ -35,6 +35,7 @@ execute if entity @s[scores={ChangedMansion=1}] run function luigis_mansion:enti
 
 execute unless score @s PrevRoom = @s Room run tag @s remove seen_room_name
 scoreboard players operation @s PrevRoom = @s Room
+execute unless entity @s[scores={Room=1..}] run scoreboard players set @s LastFloor -2
 
 scoreboard players set @s UseItem 0
 scoreboard players add @s[scores={SneakTime=1..}] SneakTime 1
@@ -44,7 +45,6 @@ tag @s[scores={Sneaking=0}] remove was_sneaking
 scoreboard players set @s[scores={Sneaking=0,SneakTime=20..}] SneakTime 0
 execute unless entity @s[scores={SneakTime=0..}] run scoreboard players set @s SneakTime 0
 scoreboard players set @s Jump 0
-execute unless entity @s[scores={Room=1..}] run scoreboard players set @s LastFloor -2
 execute store result score @s JumpHeight run data get entity @s Pos[1] 100
 tag @s[tag=walking] remove walking
 tag @s[scores={Walk=1..},tag=!looking_at_map] add walking
