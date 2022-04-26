@@ -3,3 +3,4 @@ function luigis_mansion:room/normal/load_data
 function luigis_mansion:room/normal/default_data
 forceload add 4859 -101 4668 83
 forceload add 27 0 27 0
+function luigis_mansion:data/save

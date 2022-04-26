@@ -194,8 +194,10 @@ execute at @s[scores={KnockbackTime=10,KnockbackType=11,Sound=0,Health=..40,Shru
 execute at @s[scores={KnockbackTime=10,KnockbackType=11,Sound=0,Health=..40,Shrunk=1..}] run playsound luigis_mansion:entity.player.recover.low_health player @a[tag=same_room] ~ ~ ~ 1 2
 scoreboard players set @s[scores={KnockbackTime=10,KnockbackType=11,Sound=0}] Sound 10
 execute at @s[scores={KnockbackType=11}] run function luigis_mansion:entities/player/knockback_lock_position
-execute at @s[scores={KnockbackTime=51..60,KnockbackType=11}] facing entity @e[type=minecraft:marker,tag=temp,limit=1] feet rotated ~ 0 run teleport @s ^ ^0.15 ^0.05 ~ ~
-execute at @s[scores={KnockbackTime=41..50,KnockbackType=11}] facing entity @e[type=minecraft:marker,tag=temp,limit=1] feet rotated ~ 0 run teleport @s ^ ^-0.15 ^0.05 ~ ~
+execute at @s[scores={KnockbackTime=51..60,KnockbackType=11},tag=!flipped_gravity] facing entity @e[type=minecraft:marker,tag=temp,limit=1] feet rotated ~ 0 run teleport @s ^ ^0.15 ^0.05 ~ ~
+execute at @s[scores={KnockbackTime=41..50,KnockbackType=11},tag=!flipped_gravity] facing entity @e[type=minecraft:marker,tag=temp,limit=1] feet rotated ~ 0 run teleport @s ^ ^-0.15 ^0.05 ~ ~
+execute at @s[scores={KnockbackTime=51..60,KnockbackType=11},tag=flipped_gravity] facing entity @e[type=minecraft:marker,tag=temp,limit=1] feet rotated ~ 0 run teleport @s ^ ^-0.15 ^0.05 ~ ~
+execute at @s[scores={KnockbackTime=41..50,KnockbackType=11},tag=flipped_gravity] facing entity @e[type=minecraft:marker,tag=temp,limit=1] feet rotated ~ 0 run teleport @s ^ ^0.15 ^0.05 ~ ~
 
 execute at @s[scores={KnockbackTime=60,KnockbackType=12..13,Sound=0,Health=41..,Shrunk=0}] run playsound luigis_mansion:entity.player.flee.high_health player @a[tag=same_room] ~ ~ ~ 1
 execute at @s[scores={KnockbackTime=60,KnockbackType=12..13,Sound=0,Health=41..,Shrunk=1..}] run playsound luigis_mansion:entity.player.flee.high_health player @a[tag=same_room] ~ ~ ~ 1 2
@@ -224,7 +226,7 @@ execute at @s[scores={KnockbackType=12..13}] run function luigis_mansion:entitie
 execute at @s[scores={KnockbackTime=..50,KnockbackType=12..13}] facing entity @e[type=minecraft:marker,tag=temp,limit=1] feet rotated ~-180 0 run teleport @s ^ ^ ^0.16 ~ ~
 
 execute at @s if block ~ ~1 ~ #luigis_mansion:all_ignore unless block ~ ~1.9 ~ #luigis_mansion:all_ignore run teleport @s ~ ~-0.16 ~
-execute at @s unless block ~ ~ ~ #luigis_mansion:all_ignore if block ~ ~0.1 ~ #luigis_mansion:all_ignore run teleport @s ~ ~0.16 ~
+execute at @s unless block ~ ~ ~ #luigis_mansion:all_ignore if block ~ ~0.3 ~ #luigis_mansion:all_ignore run teleport @s ~ ~0.16 ~
 execute at @s unless block ~0.3 ~ ~ #luigis_mansion:all_ignore if block ~ ~ ~ #luigis_mansion:all_ignore run teleport @s ~-0.16 ~ ~
 execute at @s unless block ~-0.3 ~ ~ #luigis_mansion:all_ignore if block ~ ~ ~ #luigis_mansion:all_ignore run teleport @s ~0.16 ~ ~
 execute at @s unless block ~ ~ ~0.3 #luigis_mansion:all_ignore if block ~ ~ ~ #luigis_mansion:all_ignore run teleport @s ~ ~ ~-0.16
