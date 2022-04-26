@@ -1,1 +1,2 @@
-execute if entity @e[distance=..0.7,tag=door,tag=fake,limit=1] run tag @s add burning
+tag @s[tag=door,tag=fake] add burning
+execute if entity @s[tag=door,tag=fake] run function luigis_mansion:items/poltergust_3000/latch_onto_ghost

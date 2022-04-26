@@ -3,7 +3,6 @@ execute as @a run function #luigis_mansion:get_same_room
 execute as @e[tag=gameboy_horror_location] run function #luigis_mansion:get_same_room
 scoreboard players reset #temp Room
 
-#execute if entity @s[tag=door] run function luigis_mansion:animations/closed_door
 execute if entity @s[tag=first_key,tag=play] run function luigis_mansion:dialog/first_key
 execute if entity @s[tag=burning_floor] run function luigis_mansion:blocks/burning_floor
 
