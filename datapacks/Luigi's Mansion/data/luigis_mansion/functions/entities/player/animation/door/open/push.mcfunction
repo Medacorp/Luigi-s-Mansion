@@ -10,9 +10,9 @@ execute if entity @s[scores={AnimationProg=10,Health=41..,Shrunk=1..}] run plays
 execute if entity @s[scores={AnimationProg=10,Health=..40,Shrunk=0}] run playsound luigis_mansion:entity.player.open_door.low_health player @a[tag=same_room] ~ ~ ~ 1
 execute if entity @s[scores={AnimationProg=10,Health=..40,Shrunk=1..}] run playsound luigis_mansion:entity.player.open_door.low_health player @a[tag=same_room] ~ ~ ~ 1 2
 scoreboard players set @s[scores={AnimationProg=7..26}] Walk 1
-execute rotated as @s run teleport @s[scores={AnimationProg=7..26}] ^ ^ ^0.1
+execute at @s run teleport @s[scores={AnimationProg=7..26}] ^ ^ ^0.1
 execute if entity @s[scores={AnimationProg=11}] run function #luigis_mansion:entities/door/go_through
-execute rotated as @s run teleport @s[distance=..0.2,scores={AnimationProg=11}] ^ ^ ^2.1
+execute at @s[distance=..0.7] run teleport @s[scores={AnimationProg=11}] ^ ^ ^2.1
 execute if entity @e[tag=!open_door,tag=door,type=minecraft:villager,distance=..0.7] run function luigis_mansion:entities/door/force_animation
 scoreboard players set @s Sound 10
 scoreboard players set @s Invulnerable 1000

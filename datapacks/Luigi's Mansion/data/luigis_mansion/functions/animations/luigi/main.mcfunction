@@ -1,5 +1,5 @@
 execute if entity @s[tag=!made_error,tag=was_sneaking,tag=!was_swimming,tag=!riding_poltergust] unless entity @s[tag=was_yelling,tag=!right_leg,tag=!left_leg] unless data storage luigis_mansion:data luigi{tags:["sneaking"]} run function luigis_mansion:animations/luigi/reset_pose
-execute if entity @s[tag=!made_error,tag=was_walking,tag=!was_swimming,tag=!riding_poltergust] unless entity @s[tag=was_yelling,tag=!right_leg,tag=!left_leg] unless data storage luigis_mansion:data luigi{tags:["walking"]} run function luigis_mansion:animations/luigi/reset_pose
+execute if entity @s[tag=!made_error,tag=was_walking,tag=!was_swimming,tag=!riding_poltergust] unless entity @s[tag=was_yelling,tag=!right_leg,tag=!left_leg] unless entity @s[tag=was_pulling_open_door,tag=!left_leg,tag=!right_leg] unless entity @s[tag=was_pushing_open_door,tag=!left_leg,tag=!right_leg] unless data storage luigis_mansion:data luigi{tags:["walking"]} run function luigis_mansion:animations/luigi/reset_pose
 execute if entity @s[tag=!made_error,tag=was_running,tag=!was_swimming,tag=!riding_poltergust] unless entity @s[tag=was_yelling,tag=!right_leg,tag=!left_leg] unless data storage luigis_mansion:data luigi{tags:["running"]} run function luigis_mansion:animations/luigi/reset_pose
 execute if entity @s[tag=was_swimming] unless data storage luigis_mansion:data luigi{tags:["swimming"]} run function luigis_mansion:animations/luigi/reset_pose
 execute if entity @s[tag=was_looking_at_map] unless data storage luigis_mansion:data luigi{tags:["looking_at_map"]} run function luigis_mansion:animations/luigi/reset_pose
@@ -30,18 +30,18 @@ execute if entity @s[tag=!was_inspecting] if data storage luigis_mansion:data lu
 execute if entity @s[tag=was_inspecting] unless data storage luigis_mansion:data luigi{tags:["inspect"]} run function luigis_mansion:animations/luigi/reset_pose
 execute if entity @s[tag=!was_looking] if data storage luigis_mansion:data luigi{tags:["look"]} run function luigis_mansion:animations/luigi/reset_pose
 execute if entity @s[tag=was_looking] unless data storage luigis_mansion:data luigi{tags:["look"]} run function luigis_mansion:animations/luigi/reset_pose
-execute if entity @s[tag=!was_pull_open_door] unless entity @s[tag=!right_arm,tag=!left_arm] if data storage luigis_mansion:data luigi{tags:["pull_open_door"]} run function luigis_mansion:animations/luigi/reset_pose
-execute if entity @s[tag=pull_open_door] unless entity @s[tag=!right_arm,tag=!left_arm] unless data storage luigis_mansion:data luigi{tags:["pull_open_door"]} run function luigis_mansion:animations/luigi/reset_pose
-execute if entity @s[tag=!push_open_door] unless entity @s[tag=!right_arm,tag=!left_arm] if data storage luigis_mansion:data luigi{tags:["push_open_door"]} run function luigis_mansion:animations/luigi/reset_pose
-execute if entity @s[tag=push_open_door] unless entity @s[tag=!right_arm,tag=!left_arm] unless data storage luigis_mansion:data luigi{tags:["push_open_door"]} run function luigis_mansion:animations/luigi/reset_pose
-execute if entity @s[tag=!pull_locked_door] unless entity @s[tag=!right_arm,tag=!left_arm] if data storage luigis_mansion:data luigi{tags:["pull_locked_door"]} run function luigis_mansion:animations/luigi/reset_pose
-execute if entity @s[tag=pull_locked_door] unless entity @s[tag=!right_arm,tag=!left_arm] unless data storage luigis_mansion:data luigi{tags:["pull_locked_door"]} run function luigis_mansion:animations/luigi/reset_pose
-execute if entity @s[tag=!push_locked_door] unless entity @s[tag=!right_arm,tag=!left_arm] if data storage luigis_mansion:data luigi{tags:["push_locked_door"]} run function luigis_mansion:animations/luigi/reset_pose
-execute if entity @s[tag=push_locked_door] unless entity @s[tag=!right_arm,tag=!left_arm] unless data storage luigis_mansion:data luigi{tags:["push_locked_door"]} run function luigis_mansion:animations/luigi/reset_pose
-execute if entity @s[tag=!pull_unlock_door] unless entity @s[tag=!right_arm,tag=!left_arm] if data storage luigis_mansion:data luigi{tags:["pull_unlock_door"]} run function luigis_mansion:animations/luigi/reset_pose
-execute if entity @s[tag=pull_unlock_door] unless entity @s[tag=!right_arm,tag=!left_arm] unless data storage luigis_mansion:data luigi{tags:["pull_unlock_door"]} run function luigis_mansion:animations/luigi/reset_pose
-execute if entity @s[tag=!push_unlock_door] unless entity @s[tag=!right_arm,tag=!left_arm] if data storage luigis_mansion:data luigi{tags:["push_unlock_door"]} run function luigis_mansion:animations/luigi/reset_pose
-execute if entity @s[tag=push_unlock_door] unless entity @s[tag=!right_arm,tag=!left_arm] unless data storage luigis_mansion:data luigi{tags:["push_unlock_door"]} run function luigis_mansion:animations/luigi/reset_pose
+execute if entity @s[tag=!was_pulling_open_door] unless entity @s[tag=!right_arm,tag=!left_arm] if data storage luigis_mansion:data luigi{tags:["pull_open_door"]} run function luigis_mansion:animations/luigi/reset_pose
+execute if entity @s[tag=was_pulling_open_door] unless entity @s[tag=!right_arm,tag=!left_arm] unless data storage luigis_mansion:data luigi{tags:["pull_open_door"]} run function luigis_mansion:animations/luigi/reset_pose
+execute if entity @s[tag=!was_pushing_open_door] unless entity @s[tag=!right_arm,tag=!left_arm] if data storage luigis_mansion:data luigi{tags:["push_open_door"]} run function luigis_mansion:animations/luigi/reset_pose
+execute if entity @s[tag=was_pushing_open_door] unless entity @s[tag=!right_arm,tag=!left_arm] unless data storage luigis_mansion:data luigi{tags:["push_open_door"]} run function luigis_mansion:animations/luigi/reset_pose
+execute if entity @s[tag=!was_pulling_locked_door] unless entity @s[tag=!right_arm,tag=!left_arm] if data storage luigis_mansion:data luigi{tags:["pull_locked_door"]} run function luigis_mansion:animations/luigi/reset_pose
+execute if entity @s[tag=was_pulling_locked_door] unless entity @s[tag=!right_arm,tag=!left_arm] unless data storage luigis_mansion:data luigi{tags:["pull_locked_door"]} run function luigis_mansion:animations/luigi/reset_pose
+execute if entity @s[tag=!was_pushing_locked_door] unless entity @s[tag=!right_arm,tag=!left_arm] if data storage luigis_mansion:data luigi{tags:["push_locked_door"]} run function luigis_mansion:animations/luigi/reset_pose
+execute if entity @s[tag=was_pushing_locked_door] unless entity @s[tag=!right_arm,tag=!left_arm] unless data storage luigis_mansion:data luigi{tags:["push_locked_door"]} run function luigis_mansion:animations/luigi/reset_pose
+execute if entity @s[tag=!was_pulling_unlock_door] unless entity @s[tag=!right_arm,tag=!left_arm] if data storage luigis_mansion:data luigi{tags:["pull_unlock_door"]} run function luigis_mansion:animations/luigi/reset_pose
+execute if entity @s[tag=was_pulling_unlock_door] unless entity @s[tag=!right_arm,tag=!left_arm] unless data storage luigis_mansion:data luigi{tags:["pull_unlock_door"]} run function luigis_mansion:animations/luigi/reset_pose
+execute if entity @s[tag=!was_pushing_unlock_door] unless entity @s[tag=!right_arm,tag=!left_arm] if data storage luigis_mansion:data luigi{tags:["push_unlock_door"]} run function luigis_mansion:animations/luigi/reset_pose
+execute if entity @s[tag=was_pushing_unlock_door] unless entity @s[tag=!right_arm,tag=!left_arm] unless data storage luigis_mansion:data luigi{tags:["push_unlock_door"]} run function luigis_mansion:animations/luigi/reset_pose
 execute store result score @s KnockbackType run data get storage luigis_mansion:data luigi.animation
 execute unless score @s ScareType = @s KnockbackType run function luigis_mansion:animations/luigi/reset_pose
 data modify entity @s Tags append from storage luigis_mansion:data luigi.tags[]
@@ -72,8 +72,6 @@ tag @s[tag=inspect] remove low_health
 tag @s[tag=look] remove low_health
 tag @s[tag=gameboy_horror] remove low_health
 tag @s[tag=inspect] remove low_health
-tag @s[tag=was_sneak_posing] remove low_health
-tag @s[tag=was_sneak_posing] remove was_low_health
 tag @s[tag=pull_open_door] remove low_health
 tag @s[tag=push_open_door] remove low_health
 tag @s[tag=pull_locked_door] remove low_health

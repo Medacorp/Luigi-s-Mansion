@@ -9,7 +9,6 @@ execute if entity @s[scores={AnimationProg=1}] run playsound luigis_mansion:item
 execute if entity @s[scores={AnimationProg=80}] run playsound luigis_mansion:item.key.use block @a[tag=same_room] ~ ~ ~ 1
 scoreboard players set @s Sound 10
 scoreboard players set @s Invulnerable 1000
-tag @s[scores={IdleTime=-1}] remove left_door
 scoreboard players set @s[scores={IdleTime=-1}] Invulnerable 0
 scoreboard players reset @s[scores={IdleTime=-1}] AnimationProg
 execute if entity @s[scores={IdleTime=-1}] run function luigis_mansion:entities/player/animation/set/door/open/pull
