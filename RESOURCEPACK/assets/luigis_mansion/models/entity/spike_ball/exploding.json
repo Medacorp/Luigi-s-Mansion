@@ -1,0 +1,7 @@
+{
+	"parent": "luigis_mansion:entity/spike_ball/normal",
+	"textures": {
+		"0": "luigis_mansion:entity/ball/spike/fast_ball",
+		"1": "luigis_mansion:entity/ball/spike/fast_spike"
+	}
+}

@@ -1,0 +1,7 @@
+{
+	"parent": "luigis_mansion:item/gameboy_horror",
+	"textures": {
+		"screen": "luigis_mansion:item/gameboy_horror/timer",
+		"time_colon": "luigis_mansion:item/gameboy_horror/timer_colon"
+	}
+}

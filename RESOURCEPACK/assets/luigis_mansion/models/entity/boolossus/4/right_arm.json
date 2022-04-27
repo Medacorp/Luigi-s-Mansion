@@ -1,0 +1,10 @@
+{
+	"parent": "luigis_mansion:entity/boolossus/1/right_arm",
+	"display": {
+		"thirdperson_righthand": {
+			"rotation": [0, 90, 0],
+			"translation": [0, 1, 14],
+			"scale": [1.6429, 1.6429, 1.6429]
+		}
+	}
+}

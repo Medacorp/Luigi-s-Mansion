@@ -1,0 +1,6 @@
+{
+	"parent": "luigis_mansion:item/gameboy_horror",
+	"textures": {
+		"screen": "luigis_mansion:item/gameboy_horror/e_gadd"
+	}
+}

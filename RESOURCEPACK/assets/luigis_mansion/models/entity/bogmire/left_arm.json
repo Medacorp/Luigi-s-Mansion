@@ -1,0 +1,64 @@
+{
+	"credit": "Made with Blockbench",
+	"textures": {
+		"0": "luigis_mansion:entity/bogmire",
+		"particle": "#0"
+	},
+	"elements": [
+		{
+			"from": [5, 3, 9],
+			"to": [7, 5, 12],
+			"rotation": {"angle": 0, "axis": "y", "origin": [7, 5, 12]},
+			"faces": {
+				"east": {"uv": [9.5, 3.5, 9.875, 3.75], "texture": "#0"},
+				"south": {"uv": [10.5, 3.5, 10.75, 3.75], "texture": "#0"},
+				"west": {"uv": [10.125, 3.5, 10.5, 3.75], "texture": "#0"},
+				"up": {"uv": [9.875, 3.125, 10.125, 3.5], "rotation": 180, "texture": "#0"},
+				"down": {"uv": [10.125, 3.125, 10.375, 3.5], "rotation": 180, "texture": "#0"}
+			}
+		},
+		{
+			"from": [5, -3, 7],
+			"to": [7, 9, 9],
+			"rotation": {"angle": 0, "axis": "y", "origin": [7, -1, 8]},
+			"faces": {
+				"north": {"uv": [8.25, 2.25, 8.5, 3.75], "texture": "#0"},
+				"east": {"uv": [8, 2.25, 8.25, 3.75], "texture": "#0"},
+				"south": {"uv": [8.75, 2.25, 9, 3.75], "texture": "#0"},
+				"west": {"uv": [8.5, 2.25, 8.75, 3.75], "texture": "#0"},
+				"up": {"uv": [8.25, 2, 8.5, 2.25], "rotation": 180, "texture": "#0"},
+				"down": {"uv": [8.5, 2, 8.75, 2.25], "rotation": 180, "texture": "#0"}
+			}
+		},
+		{
+			"from": [5, -3, 9],
+			"to": [7, -1, 16],
+			"rotation": {"angle": 0, "axis": "y", "origin": [7, -1, 12]},
+			"faces": {
+				"east": {"uv": [8.125, 3.75, 9, 4], "texture": "#0"},
+				"south": {"uv": [10.125, 3.75, 10.375, 4], "texture": "#0"},
+				"west": {"uv": [9.25, 3.75, 10.125, 4], "texture": "#0"},
+				"up": {"uv": [9, 2.875, 9.25, 3.75], "rotation": 180, "texture": "#0"},
+				"down": {"uv": [9.25, 2.875, 9.5, 3.75], "rotation": 180, "texture": "#0"}
+			}
+		},
+		{
+			"from": [5, 0, 9],
+			"to": [7, 2, 14],
+			"rotation": {"angle": 0, "axis": "y", "origin": [7, 2, 12]},
+			"faces": {
+				"east": {"uv": [9, 2.625, 9.625, 2.875], "texture": "#0"},
+				"south": {"uv": [10.5, 2.625, 10.75, 2.875], "texture": "#0"},
+				"west": {"uv": [9.875, 2.625, 10.5, 2.875], "texture": "#0"},
+				"up": {"uv": [9.625, 2, 9.875, 2.625], "rotation": 180, "texture": "#0"},
+				"down": {"uv": [9.875, 2, 10.125, 2.625], "rotation": 180, "texture": "#0"}
+			}
+		}
+	],
+	"display": {
+		"thirdperson_lefthand": {
+			"rotation": [90, 0, 0],
+			"translation": [-2, -2, 11]
+		}
+	}
+}

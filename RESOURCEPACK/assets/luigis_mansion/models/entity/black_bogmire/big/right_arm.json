@@ -1,0 +1,13 @@
+{
+	"parent": "luigis_mansion:entity/bogmire/right_arm",
+	"textures": {
+		"0": "luigis_mansion:entity/black_bogmire"
+	},
+	"display": {
+		"thirdperson_righthand": {
+			"rotation": [90, 0, 0],
+			"translation": [-2, -2, 11],
+			"scale": [1.6, 1.6, 1.6]
+		}
+	}
+}

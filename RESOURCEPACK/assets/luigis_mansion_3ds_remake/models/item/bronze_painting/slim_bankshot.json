@@ -1,0 +1,6 @@
+{
+	"parent": "luigis_mansion_3ds_remake:item/bronze_painting",
+	"textures": {
+		"image": "luigis_mansion_3ds_remake:painting/bronze/slim_bankshot"
+	}
+}

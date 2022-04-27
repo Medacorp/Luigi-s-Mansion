@@ -1,0 +1,38 @@
+{
+	"credit": "Made with Blockbench",
+	"textures": {
+		"0": "luigis_mansion:entity/miss_petunia",
+		"particle": "luigis_mansion:entity/miss_petunia"
+	},
+	"elements": [
+		{
+			"from": [6, 8, 6],
+			"to": [10, 18, 10],
+			"faces": {
+				"north": {"uv": [10.5, 8.625, 11, 9.875], "texture": "#0"},
+				"east": {"uv": [10, 8.625, 10.5, 9.875], "texture": "#0"},
+				"south": {"uv": [11.4375, 8.625, 11.9375, 9.875], "texture": "#0"},
+				"west": {"uv": [11, 8.625, 11.5, 9.875], "texture": "#0"},
+				"up": {"uv": [10.5, 8.125, 11, 8.625], "rotation": 180, "texture": "#0"},
+				"down": {"uv": [11, 8.125, 11.5, 8.625], "rotation": 180, "texture": "#0"}
+			}
+		},
+		{
+			"from": [6, 8, -4],
+			"to": [10, 12, 6],
+			"faces": {
+				"north": {"uv": [13.25, 9.375, 13.75, 9.875], "texture": "#0"},
+				"east": {"uv": [12, 9.375, 13.25, 9.875], "texture": "#0"},
+				"west": {"uv": [13.75, 9.375, 15, 9.875], "texture": "#0"},
+				"up": {"uv": [13.25, 8.125, 13.75, 9.375], "rotation": 180, "texture": "#0"},
+				"down": {"uv": [13.75, 8.125, 14.25, 9.375], "texture": "#0"}
+			}
+		}
+	],
+	"display": {
+		"head": {
+			"translation": [0, -16, 0],
+			"scale": [1.3, 1.3, 1.3]
+		}
+	}
+}

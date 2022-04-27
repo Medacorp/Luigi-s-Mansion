@@ -1,0 +1,8 @@
+{
+    "parent": "minecraft:block/slab",
+    "textures": {
+        "bottom": "luigis_mansion:block/mansion_path",
+        "top": "luigis_mansion:block/mansion_path",
+        "side": "luigis_mansion:block/mansion_path"
+    }
+}

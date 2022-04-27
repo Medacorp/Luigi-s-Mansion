@@ -1,0 +1,6 @@
+{
+	"parent": "luigis_mansion:item/gold_painting",
+	"textures": {
+		"image": "luigis_mansion:painting/gold/madame_clairvoya"
+	}
+}

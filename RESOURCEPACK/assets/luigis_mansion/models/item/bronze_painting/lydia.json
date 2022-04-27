@@ -1,0 +1,6 @@
+{
+	"parent": "luigis_mansion:item/bronze_painting",
+	"textures": {
+		"image": "luigis_mansion:painting/bronze/lydia"
+	}
+}

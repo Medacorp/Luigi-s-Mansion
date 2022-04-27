@@ -1,0 +1,6 @@
+{
+	"parent": "luigis_mansion:item/bronze_king_boo_painting",
+	"textures": {
+		"frame": "luigis_mansion:painting/gold_king_boo_frame"
+	}
+}

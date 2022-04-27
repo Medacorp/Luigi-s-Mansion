@@ -1,0 +1,29 @@
+{
+	"credit": "Made with Blockbench",
+	"textures": {
+		"0": "luigis_mansion:entity/chauncey",
+		"particle": "luigis_mansion:entity/chauncey"
+	},
+	"elements": [
+		{
+			"from": [0, -6, 6],
+			"to": [4, 8, 10],
+			"rotation": {"angle": 0, "axis": "y", "origin": [2, -2, 8]},
+			"faces": {
+				"north": {"uv": [9.625, 5.25, 10.125, 7], "texture": "#0"},
+				"east": {"uv": [9.125, 5.25, 9.625, 7], "texture": "#0"},
+				"south": {"uv": [10.625, 5.25, 11.125, 7], "texture": "#0"},
+				"west": {"uv": [10.125, 5.25, 10.625, 7], "texture": "#0"},
+				"up": {"uv": [9.625, 4.75, 10.125, 5.25], "rotation": 180, "texture": "#0"},
+				"down": {"uv": [10.125, 4.75, 10.625, 5.25], "rotation": 180, "texture": "#0"}
+			}
+		}
+	],
+	"display": {
+		"thirdperson_lefthand": {
+			"rotation": [90, 0, 0],
+			"translation": [-4.75, -2, 12],
+			"scale": [0.7, 0.7, 0.7]
+		}
+	}
+}

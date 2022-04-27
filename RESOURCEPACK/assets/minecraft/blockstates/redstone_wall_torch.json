@@ -1,0 +1,12 @@
+{
+    "variants": {
+        "facing=east,lit=true":  { "model": "luigis_mansion:block/lit_wall_candle" },
+        "facing=south,lit=true":  { "model": "luigis_mansion:block/lit_wall_candle", "y": 90 },
+        "facing=west,lit=true":  { "model": "luigis_mansion:block/lit_wall_candle", "y": 180 },
+        "facing=north,lit=true":  { "model": "luigis_mansion:block/lit_wall_candle", "y": 270 },
+        "facing=east,lit=false":  { "model": "luigis_mansion:block/unlit_wall_candle" },
+        "facing=south,lit=false":  { "model": "luigis_mansion:block/unlit_wall_candle", "y": 90 },
+        "facing=west,lit=false":  { "model": "luigis_mansion:block/unlit_wall_candle", "y": 180 },
+        "facing=north,lit=false":  { "model": "luigis_mansion:block/unlit_wall_candle", "y": 270 }
+    }
+}

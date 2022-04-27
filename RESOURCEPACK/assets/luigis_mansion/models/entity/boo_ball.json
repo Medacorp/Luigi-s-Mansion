@@ -1,0 +1,12 @@
+{
+	"parent": "luigis_mansion:entity/round",
+	"credit": "Made with Blockbench",
+	"textures": {
+		"north": "luigis_mansion:entity/ball/boo/front",
+		"south": "luigis_mansion:entity/ball/boo/side",
+		"east": "#south",
+		"west": "#south",
+		"up": "#south",
+		"down": "#south"
+	}
+}

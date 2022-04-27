@@ -1,0 +1,6 @@
+{
+    "variants": {
+        "snowy=false": { "model": "luigis_mansion:block/grass" },
+        "snowy=true": { "model": "luigis_mansion:block/grass" }
+    }
+}

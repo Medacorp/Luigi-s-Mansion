@@ -1,0 +1,9 @@
+{
+	"credit": "Made with Blockbench",
+	"parent": "luigis_mansion:entity/ghost/right_arm",
+	"textures": {
+		"0": "luigis_mansion:entity/puncher/base",
+		"1": "luigis_mansion:entity/puncher/overlay",
+		"particle": "luigis_mansion:entity/puncher/base"
+	}
+}

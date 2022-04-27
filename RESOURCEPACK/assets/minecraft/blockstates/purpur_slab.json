@@ -1,0 +1,7 @@
+{
+    "variants": {
+        "type=bottom": { "model": "luigis_mansion:block/grass_slab" },
+        "type=top": { "model": "luigis_mansion:block/grass_slab_top" },
+        "type=double": { "model": "minecraft:block/purpur_block" }
+    }
+}

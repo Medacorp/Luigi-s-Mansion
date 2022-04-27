@@ -1,0 +1,79 @@
+{
+	"credit": "Made with Blockbench",
+	"parent": "luigis_mansion:entity/door_frame",
+	"textures": {
+		"door": "luigis_mansion:entity/door/windowed_frame"
+	},
+	"elements": [
+		{
+			"from": [0, 16.9, 7],
+			"to": [16, 21.9, 11],
+			"faces": {
+				"north": {"uv": [1, 11.25, 5, 12.5], "texture": "#door"},
+				"east": {"uv": [0, 11.25, 1, 12.5], "texture": "#door"},
+				"south": {"uv": [6, 11.25, 10, 12.5], "texture": "#door"},
+				"west": {"uv": [5, 11.25, 6, 12.5], "texture": "#door"},
+				"up": {"uv": [1, 10.25, 5, 11.25], "texture": "#door"},
+				"down": {"uv": [5, 10.25, 9, 11.25], "rotation": 180, "texture": "#door"}
+			}
+		},
+		{
+			"from": [16, -15.1, 7],
+			"to": [19, 19.9, 11],
+			"faces": {
+				"north": {"uv": [10, 2.25, 10.75, 11.25], "texture": "#door"},
+				"east": {"uv": [9, 2.25, 10, 11.25], "texture": "#door"},
+				"south": {"uv": [11.75, 2.25, 12.5, 11.25], "texture": "#door"},
+				"west": {"uv": [10.75, 2.25, 11.75, 11.25], "texture": "#door"},
+				"up": {"uv": [10, 1.25, 10.75, 2.25], "texture": "#door"},
+				"down": {"uv": [10.75, 1.25, 11.5, 2.25], "rotation": 180, "texture": "#door"}
+			}
+		},
+		{
+			"from": [15.925, -15.1, 10],
+			"to": [15.925, 16.9, 26],
+			"faces": {
+				"west": {"uv": [0, 0, 16, 16], "texture": "#frame_box"}
+			}
+		},
+		{
+			"from": [0.075, -15.1, 10],
+			"to": [0.075, 16.9, 26],
+			"rotation": {"angle": 0, "axis": "y", "origin": [16, 0, 0]},
+			"faces": {
+				"east": {"uv": [0, 0, 16, 16], "texture": "#frame_box"}
+			}
+		},
+		{
+			"from": [0, -15.025, 10],
+			"to": [16, -15.025, 26],
+			"faces": {
+				"up": {"uv": [0, 0, 16, 16], "texture": "#frame_box"}
+			}
+		},
+		{
+			"from": [0, 16.85, 10],
+			"to": [16, 16.85, 26],
+			"faces": {
+				"down": {"uv": [0, 0, 16, 16], "rotation": 180, "texture": "#frame_box"}
+			}
+		},
+		{
+			"from": [0, -15.1, 26],
+			"to": [16, 16.9, 26],
+			"faces": {
+				"north": {"uv": [0, 0, 16, 16], "texture": "#frame_box"}
+			}
+		}
+	],
+	"groups": [
+		0,
+		1,
+		{
+			"name": "box",
+			"origin": [8, 8, 8],
+			"color": 0,
+			"children": [2, 3, 4, 5, 6]
+		}
+	]
+}

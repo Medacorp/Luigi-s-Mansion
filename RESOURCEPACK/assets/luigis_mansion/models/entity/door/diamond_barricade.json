@@ -1,0 +1,6 @@
+{
+	"parent": "luigis_mansion:entity/door/diamond",
+	"textures": {
+		"barricade_single": "luigis_mansion:entity/door/barricade"
+	}
+}

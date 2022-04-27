@@ -1,0 +1,10 @@
+{
+	"parent": "luigis_mansion:item/gameboy_horror/clock",
+	"textures": {
+		"time_apm": "luigis_mansion:item/gameboy_horror/timer_pm",
+		"hour_1": "luigis_mansion:item/gameboy_horror/timer_0",
+		"hour_2": "luigis_mansion:item/gameboy_horror/timer_2",
+		"minute_1": "luigis_mansion:item/gameboy_horror/timer_0",
+		"minute_2": "luigis_mansion:item/gameboy_horror/timer_7"
+	}
+}

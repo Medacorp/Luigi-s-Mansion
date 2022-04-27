@@ -1,0 +1,6 @@
+{
+	"parent": "luigis_mansion:item/boss_painting",
+	"textures": {
+		"frame": "luigis_mansion:painting/bronze_boss_frame"
+	}
+}

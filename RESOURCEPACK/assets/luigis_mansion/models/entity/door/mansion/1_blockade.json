@@ -1,0 +1,6 @@
+{
+	"parent": "luigis_mansion:entity/door/mansion/1",
+	"textures": {
+		"overlay": "luigis_mansion:entity/door/blockade"
+	}
+}

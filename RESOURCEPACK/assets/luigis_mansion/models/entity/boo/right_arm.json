@@ -1,0 +1,29 @@
+{
+	"credit": "Made with Blockbench",
+	"textures": {
+		"particle": "luigis_mansion:entity/boo",
+		"arm": "luigis_mansion:entity/boo"
+	},
+	"elements": [
+		{
+			"from": [14.4, 0.8, 5.6],
+			"to": [19.2, 5.6, 10.4],
+			"rotation": {"angle": 0, "axis": "y", "origin": [8, 7.8, 8]},
+			"faces": {
+				"north": {"uv": [15.25, 11.75, 16, 12.5], "texture": "#arm"},
+				"east": {"uv": [14.5, 14, 15.25, 14.75], "texture": "#arm"},
+				"south": {"uv": [15.25, 12.5, 16, 13.25], "texture": "#arm"},
+				"west": {"uv": [9.875, 11.375, 10, 11.5], "texture": "#arm"},
+				"up": {"uv": [15.25, 13.25, 16, 14], "texture": "#arm"},
+				"down": {"uv": [15.25, 14, 16, 14.75], "texture": "#arm"}
+			}
+		}
+	],
+	"display": {
+		"thirdperson_righthand": {
+			"rotation": [0, 90, 0],
+			"translation": [0, 1, 14],
+			"scale": [0.625, 0.625, 0.625]
+		}
+	}
+}

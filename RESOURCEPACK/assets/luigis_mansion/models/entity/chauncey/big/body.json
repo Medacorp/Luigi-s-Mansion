@@ -1,0 +1,10 @@
+{
+	"parent": "luigis_mansion:entity/chauncey/body",
+	"credit": "Made with Blockbench",
+	"display": {
+		"head": {
+			"translation": [0, -7, 0],
+			"scale": [1.6, 1.6, 1.6]
+		}
+	}
+}

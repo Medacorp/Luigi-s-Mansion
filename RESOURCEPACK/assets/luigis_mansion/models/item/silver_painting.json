@@ -1,0 +1,6 @@
+{
+	"parent": "luigis_mansion:item/painting",
+	"textures": {
+		"frame": "luigis_mansion:painting/silver_frame"
+	}
+}

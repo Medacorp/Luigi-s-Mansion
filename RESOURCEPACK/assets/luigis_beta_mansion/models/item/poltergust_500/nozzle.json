@@ -1,0 +1,7 @@
+{
+	"parent": "luigis_mansion:item/poltergust_3000/nozzle",
+	"textures": {
+		"nozzle_attachment": "luigis_beta_mansion:item/poltergust_nozzle_attachment",
+		"nozzle": "luigis_beta_mansion:item/poltergust_nozzle"
+	}
+}

@@ -1,0 +1,6 @@
+{
+	"parent": "luigis_mansion:entity/portrificationizing_king_boo/state_0",
+	"textures": {
+		"king_boo": "luigis_mansion_3ds_remake:entity/king_boo"
+	}
+}

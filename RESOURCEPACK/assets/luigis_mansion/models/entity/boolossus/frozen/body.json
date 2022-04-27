@@ -1,0 +1,7 @@
+{
+	"parent": "luigis_mansion:entity/boolossus/1/body",
+	"textures": {
+		"0": "luigis_mansion:entity/boolossus/frozen",
+		"particle": "luigis_mansion:entity/boolossus/frozen"
+	}
+}

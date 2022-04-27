@@ -1,0 +1,10 @@
+{
+	"credit": "Made with Blockbench",
+	"parent": "luigis_mansion:entity/rocking_horse/normal",
+	"display": {
+		"head": {
+			"translation": [0, 0.75, 0],
+			"scale": [3, 3, 3]
+		}
+	}
+}

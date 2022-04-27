@@ -1,0 +1,237 @@
+{
+	"ambient.cave": {
+        "replace": true,
+        "sounds": [
+            {
+                "name": "luigis_mansion:no_sound",
+                "stream": false
+            }
+        ]
+    },
+    "block.fire.ambient": {
+        "replace": true,
+        "sounds": [
+            {
+                "name": "luigis_mansion:block/fire/fire",
+                "stream": false
+            }
+        ],
+        "subtitle": "luigis_mansion:subtitles.block.fire"
+    },
+    "block.wooden_door.close": {
+        "replace": true,
+        "sounds": [
+            {
+                "name": "luigis_mansion:no_sound",
+                "stream": false
+            }
+        ]
+    },
+    "block.wooden_door.open": {
+        "replace": true,
+        "sounds": [
+            {
+                "name": "luigis_mansion:no_sound",
+                "stream": false
+            }
+        ]
+    },
+    "entity.lightning_bolt.thunder": {
+        "replace": true,
+        "sounds": [
+            {
+                "name": "luigis_mansion:weather/thunder",
+                "stream": false
+            }
+        ],
+        "subtitle": "subtitles.entity.lightning_bolt.thunder"
+    },
+    "music.creative": {
+        "replace": true,
+        "sounds": [
+            {
+                "name": "luigis_mansion:no_sound",
+                "stream": false
+            }
+        ]
+    },
+    "music.credits": {
+        "replace": true,
+        "sounds": [
+            {
+                "name": "luigis_mansion:no_sound",
+                "stream": false
+            }
+        ]
+    },
+    "music.dragon": {
+        "replace": true,
+        "sounds": [
+            {
+                "name": "luigis_mansion:no_sound",
+                "stream": false
+            }
+        ]
+    },
+    "music.end": {
+        "replace": true,
+        "sounds": [
+            {
+                "name": "luigis_mansion:no_sound",
+                "stream": false
+            }
+        ]
+    },
+    "music.game": {
+        "replace": true,
+        "sounds": [
+            {
+                "name": "luigis_mansion:no_sound",
+                "stream": false
+            }
+        ]
+    },
+    "music.menu": {
+        "replace": true,
+        "sounds": [
+            {
+                "name": "luigis_mansion:music/menu/menu",
+                "stream": true
+            },
+            {
+                "name": "luigis_mansion:music/menu/title",
+                "stream": true
+            },
+            {
+                "name": "luigis_mansion:music/menu/opening",
+                "stream": true
+            }
+        ]
+    },
+    "music.nether.basalt_deltas": {
+        "replace": true,
+        "sounds": [
+            {
+                "name": "luigis_mansion:no_sound",
+                "stream": false
+            }
+        ]
+    },
+    "music.nether.crimson_forest": {
+        "replace": true,
+        "sounds": [
+            {
+                "name": "luigis_mansion:no_sound",
+                "stream": false
+            }
+        ]
+    },
+    "music.nether.nether_wastes": {
+        "replace": true,
+        "sounds": [
+            {
+                "name": "luigis_mansion:no_sound",
+                "stream": false
+            }
+        ]
+    },
+    "music.nether.soul_sand_valley": {
+        "replace": true,
+        "sounds": [
+            {
+                "name": "luigis_mansion:no_sound",
+                "stream": false
+            }
+        ]
+    },
+    "music.nether.warped_forest": {
+        "replace": true,
+        "sounds": [
+            {
+                "name": "luigis_mansion:no_sound",
+                "stream": false
+            }
+        ]
+    },
+    "music.overworld.dripstone_caves": {
+        "replace": true,
+        "sounds": [
+            {
+                "name": "luigis_mansion:no_sound",
+                "stream": false
+            }
+        ]
+    },
+    "music.overworld.frozen_peaks": {
+        "replace": true,
+        "sounds": [
+            {
+                "name": "luigis_mansion:no_sound",
+                "stream": false
+            }
+        ]
+    },
+    "music.overworld.grove": {
+        "replace": true,
+        "sounds": [
+            {
+                "name": "luigis_mansion:no_sound",
+                "stream": false
+            }
+        ]
+    },
+    "music.overworld.jagged_peaks": {
+        "replace": true,
+        "sounds": [
+            {
+                "name": "luigis_mansion:no_sound",
+                "stream": false
+            }
+        ]
+    },
+    "music.overworld.lush_caves": {
+        "replace": true,
+        "sounds": [
+            {
+                "name": "luigis_mansion:no_sound",
+                "stream": false
+            }
+        ]
+    },
+    "music.overworld.meadow": {
+        "replace": true,
+        "sounds": [
+            {
+                "name": "luigis_mansion:no_sound",
+                "stream": false
+            }
+        ]
+    },
+    "music.overworld.snowy_slopes": {
+        "replace": true,
+        "sounds": [
+            {
+                "name": "luigis_mansion:no_sound",
+                "stream": false
+            }
+        ]
+    },
+    "music.overworld.stony_peaks": {
+        "replace": true,
+        "sounds": [
+            {
+                "name": "luigis_mansion:no_sound",
+                "stream": false
+            }
+        ]
+    },
+    "music.under_water": {
+        "replace": true,
+        "sounds": [
+            {
+                "name": "luigis_mansion:no_sound",
+                "stream": false
+            }
+        ]
+    }
+}

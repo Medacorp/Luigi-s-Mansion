@@ -1,0 +1,6 @@
+{
+	"parent": "luigis_mansion:item/mansion_rank_painting",
+	"textures": {
+		"image": "luigis_mansion:painting/mansion_rank/f"
+	}
+}

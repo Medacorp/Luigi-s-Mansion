@@ -1,0 +1,6 @@
+{
+	"parent": "luigis_mansion:entity/door_frame/normal",
+	"textures": {
+		"door": "luigis_mansion:entity/door/stone_frame"
+	}
+}

@@ -1,0 +1,7 @@
+{
+	"parent": "luigis_mansion:item/flashlight",
+	"textures": {
+		"particle": "luigis_mansion:item/flashlight_off",
+		"flashlight": "luigis_mansion:item/flashlight_off"
+	}
+}

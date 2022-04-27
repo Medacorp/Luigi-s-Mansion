@@ -1,0 +1,6 @@
+{
+	"parent": "luigis_mansion:entity/diamond",
+	"textures": {
+		"0": "luigis_mansion:entity/blue_diamond"
+	}
+}

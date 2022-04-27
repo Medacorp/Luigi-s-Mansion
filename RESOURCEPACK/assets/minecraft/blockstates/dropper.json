@@ -1,0 +1,10 @@
+{
+    "variants": {
+        "facing=down":  { "model": "minecraft:block/dropper_vertical", "x": 180 },
+        "facing=up":    { "model": "luigis_mansion:block/sink" },
+        "facing=north": { "model": "luigis_mansion:block/deer_head" },
+        "facing=south": { "model": "luigis_mansion:block/deer_head", "y": 180 },
+        "facing=west":  { "model": "luigis_mansion:block/deer_head", "y": 270 },
+        "facing=east":  { "model": "luigis_mansion:block/deer_head", "y": 90 }
+    }
+}
