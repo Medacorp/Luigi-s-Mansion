@@ -14,6 +14,7 @@ execute if entity @e[type=minecraft:marker,tag=random_select,tag=selected,tag=do
 execute unless entity @e[type=minecraft:marker,tag=random_select,limit=1] run function luigis_mansion:entities/boo/turn
 kill @e[type=minecraft:marker,tag=random_select]
 tag @s add rotated
+tag @s remove wall
 tag @s remove not_east
 tag @s remove not_north
 tag @s remove not_south
