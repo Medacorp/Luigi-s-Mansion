@@ -1,4 +1,5 @@
 scoreboard players add @s[tag=!made_error] VacuumErrors 1
+execute if entity @s[tag=!made_error] if score #debug Selected matches 1 run say [DEBUG] Made a vacuuming mistake.
 tag @s add made_error
 scoreboard players add @s Pull 1
 execute if entity @s[scores={Pull=10,Health=41..,Shrunk=0}] run playsound luigis_mansion:entity.player.hurt_dragged.high_health player @a[tag=same_room] ~ ~ ~ 1

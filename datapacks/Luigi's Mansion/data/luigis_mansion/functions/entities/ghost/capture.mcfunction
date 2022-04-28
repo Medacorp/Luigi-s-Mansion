@@ -27,3 +27,5 @@ data modify storage luigis_mansion:data current_state.new_ghosts_caught append f
 data modify storage luigis_mansion:data current_state.current_data.ghosts_caught set from storage luigis_mansion:data current_state.new_ghosts_caught
 data remove storage luigis_mansion:data current_state.ghost_caught
 data remove storage luigis_mansion:data current_state.new_ghosts_caught
+
+execute unless entity @a[tag=killer,limit=1] if score #debug Selected matches 1 run say [DEBUG] The ghost couldn't find who killed it; an empty UUID is now present in the ghosts caught list, this should never happen!

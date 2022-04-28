@@ -221,6 +221,7 @@ execute if score #gbh_clock_increase Selected matches 0 run scoreboard players s
 
 execute unless score #training_choice Selected matches 0..1 run scoreboard players set #training_choice Selected 0
 execute unless score #freeze_timer Selected matches 0..1 run scoreboard players set #freeze_timer Selected 0
+execute unless score #debug Selected matches 0..1 run scoreboard players set #debug Selected 0
 execute unless data storage luigis_mansion:data current_state run function luigis_mansion:other/upgrade_path/newly_installed
 
 gamerule doTileDrops false
