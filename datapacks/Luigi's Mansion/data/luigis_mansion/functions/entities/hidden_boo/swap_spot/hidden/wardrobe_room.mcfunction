@@ -1,6 +1,6 @@
-summon minecraft:marker 679 21 -43 {Tags:["choice"]}
-summon minecraft:marker 679 21 -50 {Tags:["choice"]}
-summon minecraft:marker 679 21 -58 {Tags:["choice"]}
+summon minecraft:marker 679 20 -43 {Tags:["choice"]}
+summon minecraft:marker 679 20 -50 {Tags:["choice"]}
+summon minecraft:marker 679 20 -58 {Tags:["choice"]}
 summon minecraft:marker 686 22 -48 {Tags:["choice"]}
 summon minecraft:marker 686 21 -44 {Tags:["choice"]}
 summon minecraft:marker 685 20 -42 {Tags:["choice"]}

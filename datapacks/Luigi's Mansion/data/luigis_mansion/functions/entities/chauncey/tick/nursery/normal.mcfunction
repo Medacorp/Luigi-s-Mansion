@@ -58,6 +58,7 @@ tag @s[scores={Dialog=170},tag=attack] remove grab_rambler
 tag @s[scores={Dialog=170},tag=attack] remove rambling
 tag @s[scores={Dialog=170},tag=attack] remove move
 execute at @s[scores={Dialog=170},tag=!attack,tag=!rambling,tag=!laugh,tag=!complain] run function luigis_mansion:entities/ghost/move
+execute if entity @s[scores={Dialog=171}] run scoreboard players set @s[tag=haunted_teddy_bear,scores={WaitTime=..100}] WaitTime 0
 execute if entity @s[scores={Dialog=171}] run tag @e[tag=haunted_teddy_bear] remove enabled
 scoreboard players set @s[scores={Dialog=171}] AnimationProg 0
 scoreboard players set @s[scores={Dialog=171}] ActionTime 0

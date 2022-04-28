@@ -223,6 +223,7 @@ execute at @s[scores={KnockbackTime=44,KnockbackType=13},tag=flipped_gravity] fa
 execute at @s[scores={KnockbackTime=43,KnockbackType=13},tag=flipped_gravity] facing entity @e[type=minecraft:marker,tag=temp,limit=1] feet rotated ~-180 0 run teleport @s ^ ^ ^ ~ 20
 execute at @s[scores={KnockbackTime=42,KnockbackType=13},tag=flipped_gravity] facing entity @e[type=minecraft:marker,tag=temp,limit=1] feet rotated ~-180 0 run teleport @s ^ ^ ^ ~ 10
 execute at @s[scores={KnockbackType=12..13}] run function luigis_mansion:entities/player/knockback_lock_position
+execute at @s[scores={KnockbackTime=51..60,KnockbackType=12}] facing entity @e[type=minecraft:marker,tag=temp,limit=1] feet rotated ~-180 0 run teleport @s ^ ^ ^0.16 ~ ~
 execute at @s[scores={KnockbackTime=..50,KnockbackType=12..13}] facing entity @e[type=minecraft:marker,tag=temp,limit=1] feet rotated ~-180 0 run teleport @s ^ ^ ^0.16 ~ ~
 
 execute at @s if block ~ ~1 ~ #luigis_mansion:all_ignore unless block ~ ~1.9 ~ #luigis_mansion:all_ignore run teleport @s ~ ~-0.16 ~
@@ -234,7 +235,7 @@ execute at @s unless block ~ ~ ~-0.3 #luigis_mansion:all_ignore if block ~ ~ ~ #
 kill @e[type=minecraft:marker,tag=temp,limit=1]
 scoreboard players remove @s KnockbackTime 1
 scoreboard players reset @s[scores={KnockbackType=..6}] GrabbedShake
-tag @s[scores={KnockbackType=..6}] remove grabbed
+execute unless entity @s[scores={KnockbackType=8..10}] run tag @s remove grabbed
 scoreboard players reset @s[scores={KnockbackTime=0}] KnockbackX
 scoreboard players reset @s[scores={KnockbackTime=0}] KnockbackZ
 scoreboard players set @s[scores={KnockbackTime=0}] KnockbackType 0

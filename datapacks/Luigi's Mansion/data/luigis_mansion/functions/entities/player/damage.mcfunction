@@ -8,5 +8,5 @@ scoreboard players operation @s[tag=!fix_health] LastTotalDamage = @s TotalDamag
 execute if score @s Health > @s MaxHealth run scoreboard players operation @s Health = @s MaxHealth
 scoreboard players set @s Damage 0
 scoreboard players set @s ForcedDamage 0
-scoreboard players set @s Invulnerable 60
-execute if entity @s[scores={KnockbackTime=1..}] run scoreboard players operation @s Invulnerable += @s KnockbackTime
+scoreboard players set @s[tag=!pulled_last_tick] Invulnerable 60
+execute if entity @s[tag=!pulled_last_tick,scores={KnockbackTime=1..}] run scoreboard players operation @s Invulnerable += @s KnockbackTime

@@ -7,6 +7,6 @@ execute if entity @e[distance=..0.7,type=minecraft:item,nbt={Item:{id:"minecraft
 execute if entity @e[distance=..0.7,type=minecraft:item,nbt={Item:{id:"minecraft:carved_pumpkin",tag:{Value:2}}}] as @e[tag=this_entity,limit=1] at @s run teleport @s ~ ~ ~ ~180 ~
 execute if entity @e[distance=..0.7,type=minecraft:item,nbt={Item:{id:"minecraft:carved_pumpkin",tag:{Value:3}}}] as @e[tag=this_entity,limit=1] at @s run teleport @s ~ ~ ~ ~-90 ~
 kill @e[distance=..0.7,type=minecraft:item,nbt={Item:{id:"minecraft:carved_pumpkin"}}]
-scoreboard players set @e[tag=this_entity,limit=1] Move 6
+scoreboard players set @e[tag=this_entity,limit=1] Move 30
 scoreboard players set @e[tag=this_entity,limit=1] Sound 0
 tag @e[tag=this_entity,limit=1] remove this_entity

@@ -5,10 +5,10 @@ scoreboard players set @s[scores={Room=3},tag=warp_west] LastRoom 4
 scoreboard players set @s[scores={Room=4},tag=warp_east] LastRoom 3
 scoreboard players set @s[scores={Room=4},tag=warp_south] LastRoom 37
 scoreboard players set @s[scores={Room=4},tag=warp_north] LastRoom 5
-scoreboard players set @s[scores={Room=4},tag=warp_west] LastRoom 36
+scoreboard players set @s[scores={Room=4},tag=warp_west] LastRoom 35
 scoreboard players set @s[scores={Room=5},tag=warp_east] LastRoom 8
 scoreboard players set @s[scores={Room=5},tag=warp_south] LastRoom 4
-scoreboard players set @s[scores={Room=5,RoomSection=1},tag=warp_west] LastRoom 36
+scoreboard players set @s[scores={Room=5,RoomSection=1},tag=warp_west] LastRoom 35
 scoreboard players set @s[scores={Room=5,RoomSection=2},tag=warp_west] LastRoom 42
 scoreboard players set @s[scores={Room=7,RoomSection=1},tag=warp_east] LastRoom 49
 scoreboard players set @s[scores={Room=7,RoomSection=2},tag=warp_east] LastRoom 10

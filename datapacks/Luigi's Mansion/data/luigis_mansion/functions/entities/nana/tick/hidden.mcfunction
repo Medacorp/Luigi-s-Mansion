@@ -21,9 +21,9 @@ execute if entity @s[scores={Dialog=22}] if entity @e[tag=wool,tag=can_spit,limi
 execute if entity @s[scores={Dialog=22}] if entity @e[tag=wool,tag=can_spit,limit=1,distance=..6] run function luigis_mansion:entities/nana/try_attack
 scoreboard players set @s[scores={Dialog=23}] AnimationProg 0
 execute if entity @s[scores={Dialog=24},tag=!visible,tag=!vanish] run function luigis_mansion:entities/nana/turn_visible
-scoreboard players set @s[scores={Dialog=24}] VulnerableTime 2147483647
-execute if entity @s[scores={Dialog=24,Sound=0}] run playsound luigis_mansion:entity.nana.complain hostile @a[tag=same_room] ~ ~ ~ 1
-execute if entity @s[scores={Dialog=24,Sound=0}] run scoreboard players set @s Sound 40
+scoreboard players set @s[scores={Dialog=24},tag=!vanish] VulnerableTime 2147483647
+execute if entity @s[scores={Dialog=24,Sound=0},tag=!vanish] run playsound luigis_mansion:entity.nana.complain hostile @a[tag=same_room] ~ ~ ~ 1
+execute if entity @s[scores={Dialog=24,Sound=0},tag=!vanish] run scoreboard players set @s Sound 40
 execute positioned ~-0.5 ~-1.1875 ~-0.5 run tag @e[type=minecraft:armor_stand,tag=wool,tag=spit,dx=0,dy=3,dz=0] add dead
 
 execute store result score @s Wave if entity @e[tag=wool]

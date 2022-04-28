@@ -1,2 +1,2 @@
-execute if entity @s[x=728.0,y=80,z=-29.0,dx=0,dy=2,dz=1,tag=check] as @a[tag=searcher,limit=1] run function luigis_mansion:entities/player/animation/set/inspect
-execute if entity @s[x=728.0,y=80,z=-29.0,dx=0,dy=2,dz=1,tag=check] run kill @e[tag=interact,tag=manual,tag=check]
+execute if entity @s[x=728.0,y=80,z=-29.0,dx=0,dy=2,dz=1,tag=check] if block 729 79 -28 minecraft:birch_wall_sign as @a[tag=searcher,limit=1] run function luigis_mansion:entities/player/animation/set/inspect
+execute if entity @s[x=728.0,y=80,z=-29.0,dx=0,dy=2,dz=1,tag=check] if block 729 79 -28 minecraft:birch_wall_sign run kill @e[tag=interact,tag=manual,tag=check]

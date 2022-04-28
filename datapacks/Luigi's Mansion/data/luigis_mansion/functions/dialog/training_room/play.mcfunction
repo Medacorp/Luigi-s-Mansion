@@ -3,9 +3,9 @@ scoreboard players add @s[scores={Dialog=2276..2872}] Dialog 1
 execute unless entity @e[tag=ghost,scores={Room=-2},limit=1] run scoreboard players add @s[scores={Dialog=2275}] Dialog 1
 scoreboard players add @s[scores={Dialog=2122..2274}] Dialog 1
 execute unless entity @e[tag=ghost,scores={Room=-2},limit=1] run scoreboard players add @s[scores={Dialog=2121}] Dialog 1
-scoreboard players add @s[scores={Dialog=1968..2120}] Dialog 1
-execute unless entity @e[tag=ghost,scores={Room=-2},limit=1] run scoreboard players add @s[scores={Dialog=1967}] Dialog 1
-scoreboard players add @s[scores={Dialog=1606..1966}] Dialog 1
+scoreboard players add @s[scores={Dialog=1768..2120}] Dialog 1
+execute unless entity @e[tag=ghost,scores={Room=-2},limit=1] run scoreboard players add @s[scores={Dialog=1767}] Dialog 1
+scoreboard players add @s[scores={Dialog=1606..1766}] Dialog 1
 execute unless entity @e[tag=ghost,scores={Room=-2},limit=1] run scoreboard players add @s[scores={Dialog=1605}] Dialog 1
 scoreboard players add @s[scores={Dialog=1390..1604}] Dialog 1
 execute unless entity @e[tag=ghost,scores={Room=-2},limit=1] run scoreboard players add @s[scores={Dialog=1389}] Dialog 1

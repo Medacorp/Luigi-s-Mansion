@@ -1,3 +1,4 @@
+execute unless entity @s[scores={GBHDialog=1..}] as @a[tag=high_health_idle] run function luigis_mansion:entities/player/animation/set/none
 tag @s[nbt=!{SelectedItem:{tag:{luigis_mansion:{id:"luigis_mansion:gameboy_horror"}}}}] add hang_up
 tag @s add me
 scoreboard players set @a[tag=!me] GBHCall 0

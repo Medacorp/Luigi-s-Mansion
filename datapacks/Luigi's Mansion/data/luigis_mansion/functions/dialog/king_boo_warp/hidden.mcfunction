@@ -1,6 +1,6 @@
 scoreboard players set #freeze_timer Selected 1
-execute facing entity @e[tag=same_room,tag=!spectator,sort=nearest,limit=1] feet rotated ~ 0 run teleport @s ~ ~ ~ ~ ~
 scoreboard players add @s Dialog 1
+execute unless entity @s[scores={Dialog=1..10}] facing entity @e[tag=same_room,tag=!spectator,sort=nearest,limit=1] feet rotated ~ 0 run teleport @s ~ ~ ~ ~ ~
 scoreboard players set @a[tag=same_room] Invulnerable 10
 execute as @a[tag=same_room,distance=..2] at @s run teleport @s ~1 ~ ~
 execute if entity @s[scores={Dialog=1}] run stopsound @a[tag=same_room] music
@@ -9,6 +9,7 @@ execute if data storage luigis_mansion:data current_state.current_data.technical
 execute if entity @s[scores={Dialog=1}] run scoreboard players set @a[tag=same_room] Music 0
 tag @s[scores={Dialog=1}] add appear
 execute if entity @s[scores={Dialog=1}] run playsound luigis_mansion:entity.king_boo.laugh_2 hostile @a[tag=same_room] ~ ~ ~ 1
+execute if entity @s[scores={Dialog=1..}] as @a[tag=same_room,gamemode=!spectator,scores={IdleTime=0..},tag=!looking_at_map] run function luigis_mansion:entities/player/animation/set/stand_still
 tag @s[scores={Dialog=10}] remove appear
 execute if data storage luigis_mansion:data current_state.current_data.technical_data{king_boo_warp:1b} run scoreboard players set @s[scores={Dialog=20}] Dialog 740
 execute if entity @s[scores={Dialog=20}] run tellraw @a[tag=same_room] {"translate":"chat.type.text","with":[{"translate":"luigis_mansion:entity.king_boo","color":"green"},{"translate":"luigis_mansion:dialog.king_boo_warp.1"}]}
@@ -82,6 +83,7 @@ execute if entity @s[scores={Dialog=1030}] run scoreboard players set @a[tag=war
 execute if entity @s[scores={Dialog=1030..}] as @e[tag=same_room,tag=gameboy_horror_location] run function luigis_mansion:entities/gameboy_horror_location/bring_player_back
 execute if entity @s[scores={Dialog=1030..1090}] as @a[tag=warp_target] at @s unless entity @s[x=684,dx=0] run teleport @s ~0.5 ~ ~
 tag @s[scores={Dialog=1040}] remove appear
+execute if entity @s[scores={Dialog=1090}] as @a[tag=same_room,tag=!spectator,tag=!looking_at_map] run function luigis_mansion:entities/player/animation/set/none
 execute if entity @s[scores={Dialog=1090}] run teleport @a[tag=warp_target] 751.0 11 7.0
 execute if entity @s[scores={Dialog=1090}] run tag @a[tag=warp_target] remove warp_target
 execute if entity @s[scores={Dialog=1090}] run data modify storage luigis_mansion:data current_state.current_data.technical_data merge value {king_boo_warp:1b}

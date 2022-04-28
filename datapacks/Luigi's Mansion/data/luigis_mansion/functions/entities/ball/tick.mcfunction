@@ -38,7 +38,7 @@ execute if entity @s[tag=in_vacuum,tag=!can_spit_2] store result entity @s Pose.
 execute if entity @s[tag=spit] store result entity @s Pose.Head[0] float 1 run scoreboard players add @s HomeRot 10
 execute if entity @s[tag=chauncey,tag=!vacuumable] store result entity @s Pose.Head[0] float 1 run scoreboard players add @s HomeRot 10
 execute if entity @s[tag=spike_ball,scores={Move=1..}] store result entity @s Pose.Head[0] float 1 run scoreboard players add @s HomeRot 10
-scoreboard players remove @s[scores={Move=1..}] Move 1
+scoreboard players remove @s[scores={Move=1..}] Move 5
 execute unless entity @s[scores={Move=0..}] run scoreboard players set @s Move 0
 scoreboard players set @s[tag=can_spit_2,tag=spike_ball] Move 0
 tag @s[tag=collision,tag=boo] add dead

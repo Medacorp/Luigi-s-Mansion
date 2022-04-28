@@ -56,5 +56,5 @@ execute if entity @s[scores={Dialog=1911}] as @a[tag=same_room,tag=!spectator,ta
 execute if entity @s[scores={Dialog=1911}] as @a[tag=same_room] run function luigis_mansion:entities/player/knockback/flee
 execute if entity @s[scores={Dialog=1911..}] run scoreboard players set @a[tag=same_room] Invulnerable 10
 execute if entity @s[scores={Dialog=1911..}] positioned 635 94 33 as @a[tag=same_room] facing entity @s feet run function luigis_mansion:dialog/king_boo/suck
-execute if entity @s[scores={Dialog=1911..}] positioned 635 94 33 if entity @a[distance=..0.7,gamemode=!spectator,limit=1] run tag @s add dead
+execute if entity @s[scores={Dialog=1911..}] positioned 635 94 33 if entity @a[distance=..0.7,gamemode=!spectator,limit=1] run tag @s add remove_from_existence
 execute if entity @s[scores={Dialog=1911..}] positioned 635 94 33 if entity @a[distance=..0.7,gamemode=!spectator,limit=1] as @a run function luigis_mansion:room/normal/king_boo_battle/warp_to

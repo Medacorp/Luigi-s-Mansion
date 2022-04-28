@@ -7,6 +7,10 @@ execute as @a[gamemode=!spectator,scores={Room=65}] run function luigis_mansion:
 
 function #luigis_mansion:room/normal/ceramics_studio/interactions/room
 
-execute if entity @a[gamemode=!spectator,scores={Room=65},limit=1] run function luigis_mansion:room/normal/ceramics_studio/ghosts
+scoreboard players set #temp Room 65
+execute as @a[gamemode=!spectator] run function #luigis_mansion:get_same_room
+scoreboard players reset #temp Room
+execute if entity @a[tag=same_room,limit=1] run function luigis_mansion:room/normal/ceramics_studio/ghosts
+tag @a[tag=same_room] remove same_room
 
 function luigis_mansion:room/normal/door/armory_ceramics_studio

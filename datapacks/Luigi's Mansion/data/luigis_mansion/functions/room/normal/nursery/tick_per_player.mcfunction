@@ -8,3 +8,5 @@ execute if data storage luigis_mansion:data current_state.current_data.rooms.nur
 
 execute unless data storage luigis_mansion:data current_state.current_data.rooms.nursery{cleared:1b} if entity @s[scores={MusicType=7}] run playsound luigis_mansion:music.mansion.room.nursery ambient @s[scores={RoomNoise=0}] ~ ~ ~ 1000
 execute unless data storage luigis_mansion:data current_state.current_data.rooms.nursery{cleared:1b} if entity @s[scores={MusicType=7}] run scoreboard players set @s[scores={RoomNoise=0}] RoomNoise 978
+execute unless data storage luigis_mansion:data current_state.current_data.rooms.nursery{cleared:1b} unless entity @s[scores={MusicType=7}] run stopsound @s ambient luigis_mansion:music.mansion.room.nursery
+execute unless data storage luigis_mansion:data current_state.current_data.rooms.nursery{cleared:1b} unless entity @s[scores={MusicType=7}] run scoreboard players set @s RoomNoise 0
