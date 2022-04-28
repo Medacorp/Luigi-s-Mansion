@@ -126,7 +126,7 @@ teleport @s[scores={Room=69}] 741 20 44
 teleport @s[scores={Room=70}] 741 20 68.0
 teleport @s[scores={Room=71}] 696 29 82.0
 
-execute at @s run summon minecraft:marker ~ ~ ~ {Tags:["boo_marker","new"],CustomName:'{"translate":"luigis_mansion:entity.boo"}'}
+execute at @s run summon minecraft:marker ~ ~ ~ {Tags:["boo_marker","cannot_be_removed","new"],CustomName:'{"translate":"luigis_mansion:entity.boo"}'}
 execute if entity @s[tag=bamboo] run tag @e[tag=boo_marker,tag=new] add bamboo
 execute if entity @s[tag=boo_b_hatch] run tag @e[tag=boo_marker,tag=new] add boo_b_hatch
 execute if entity @s[tag=boo_la_la] run tag @e[tag=boo_marker,tag=new] add boo_la_la

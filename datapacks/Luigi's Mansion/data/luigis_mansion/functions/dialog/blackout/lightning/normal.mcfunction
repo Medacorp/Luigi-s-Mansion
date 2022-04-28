@@ -8,6 +8,8 @@ execute if entity @s[scores={Dialog=70}] run summon minecraft:lightning_bolt 687
 execute if entity @s[scores={Dialog=70..}] run function luigis_mansion:dialog/blackout/lightning/particles_normal
 execute if entity @s[scores={Dialog=130}] as @e[type=!minecraft:player,limit=1] run function luigis_mansion:dialog/blackout/lightning/reset_normal
 execute if entity @s[scores={Dialog=130}] run data modify storage luigis_mansion:data current_state.current_data.blackout set value 1b
+execute if entity @s[scores={Dialog=130..}] run scoreboard players set @e[tag=ghost,tag=hidden,tag=can_spawn] SpawnTime 102
+execute if entity @s[scores={Dialog=130..}] run tag @e[tag=ghost,tag=hidden,tag=can_spawn] remove can_spawn
 execute if entity @s[scores={Dialog=190}] run scoreboard players set @a GBHCall 11
 tag @s[scores={Dialog=190}] remove blackout_lightning
 scoreboard players set @s[scores={Dialog=190}] Dialog 0
