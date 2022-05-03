@@ -126,7 +126,7 @@ teleport @s[scores={Room=69}] 741 20 44
 teleport @s[scores={Room=70}] 741 20 68.0
 teleport @s[scores={Room=71}] 696 29 82.0
 
-execute at @s run summon minecraft:marker ~ ~ ~ {Tags:["boo_marker","new"],CustomName:'{"translate":"luigis_mansion:entity.boo"}'}
+execute at @s run summon minecraft:marker ~ ~ ~ {Tags:["boo_marker","cannot_be_removed","new"],CustomName:'{"translate":"luigis_mansion:entity.boo"}'}
 execute if entity @s[tag=bamboo] run tag @e[tag=boo_marker,tag=new] add bamboo
 execute if entity @s[tag=boo_b_hatch] run tag @e[tag=boo_marker,tag=new] add boo_b_hatch
 execute if entity @s[tag=boo_la_la] run tag @e[tag=boo_marker,tag=new] add boo_la_la
@@ -172,3 +172,8 @@ execute as @e[tag=boo_marker,tag=new] store result score @s HomeX run data get e
 execute as @e[tag=boo_marker,tag=new] store result score @s HomeY run data get entity @s Pos[1] 100
 execute as @e[tag=boo_marker,tag=new] store result score @s HomeZ run data get entity @s Pos[2] 100
 tag @e[tag=boo_marker,tag=new] remove new
+
+playsound luigis_mansion:entity.boo.vanish hostile @a[tag=same_room] ~ ~ ~ 1
+playsound luigis_mansion:entity.boo.warp hostile @a[tag=same_room] ~ ~ ~ 1
+particle minecraft:dust 0.8 0.8 1 1 ~ ~1 ~ 0.3 0.3 0.3 0 30 normal @a[tag=same_room]
+tag @s add remove_from_existence

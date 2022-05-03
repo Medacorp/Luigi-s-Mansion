@@ -11,4 +11,8 @@ function #luigis_mansion:room/hidden/washroom_2/interactions/room
 
 clone 664 21 -29 664 21 -29 658 21 -29
 
-execute if entity @a[gamemode=!spectator,scores={Room=42}] run function luigis_mansion:room/hidden/washroom_2/ghosts
+scoreboard players set #temp Room 42
+execute as @a[gamemode=!spectator] run function #luigis_mansion:get_same_room
+scoreboard players reset #temp Room
+execute if entity @a[tag=same_room,limit=1] run function luigis_mansion:room/hidden/washroom_2/ghosts
+tag @a[tag=same_room] remove same_room

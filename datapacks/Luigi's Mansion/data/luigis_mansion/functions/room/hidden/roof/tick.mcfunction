@@ -7,7 +7,11 @@ execute as @a[gamemode=!spectator,scores={Room=63}] run function luigis_mansion:
 
 function #luigis_mansion:room/hidden/roof/interactions/room
 
-execute if entity @a[gamemode=!spectator,scores={Room=63},limit=1] run function luigis_mansion:room/hidden/roof/ghosts
+scoreboard players set #temp Room 63
+execute as @a[gamemode=!spectator] run function #luigis_mansion:get_same_room
+scoreboard players reset #temp Room
+execute if entity @a[tag=same_room,limit=1] run function luigis_mansion:room/hidden/roof/ghosts
+tag @a[tag=same_room] remove same_room
 
 execute unless score #clockwork_room_elevator Time matches 1.. if entity @a[gamemode=!spectator,x=687.0,y=131,z=6.0,dx=2,dy=0,dz=3,gamemode=!spectator] run scoreboard players set #clockwork_room_elevator Searched 1
 execute if score #clockwork_room_elevator Time matches 100 if entity @a[gamemode=!spectator,x=685.0,y=131,z=7.0,dx=1,dy=0,dz=1,gamemode=!spectator] run scoreboard players set #clockwork_room_elevator Searched -1

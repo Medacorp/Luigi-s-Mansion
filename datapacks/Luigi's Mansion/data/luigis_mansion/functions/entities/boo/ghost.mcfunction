@@ -39,7 +39,6 @@ execute if score #temp Move matches 1.. at @s[tag=!fleeing,tag=!attack,tag=!laug
 execute if score #temp Move matches 1.. at @s[tag=!fleeing,tag=!attack,tag=!laugh,tag=!taunt,tag=!boo_hurt,tag=!appear,tag=up,tag=!frozen,x_rotation=-90] run function luigis_mansion:entities/boo/move_forward
 execute if score #temp Move matches 1.. at @s[tag=!fleeing,tag=!attack,tag=!laugh,tag=!taunt,tag=!boo_hurt,tag=!appear,tag=down,tag=!frozen,x_rotation=90] run function luigis_mansion:entities/boo/move_forward
 
-execute if entity @s[tag=wall] run function luigis_mansion:entities/boo/rotate_wall
 scoreboard players add @s[tag=new_section,tag=!frozen,tag=!wall] BooTimer 1
 execute if entity @s[scores={BooTimer=3},tag=!frozen,tag=!wall] run function luigis_mansion:entities/boo/entered_new_section
 scoreboard players reset @s[scores={BooTimer=3},tag=!frozen,tag=!wall] BooTimer
@@ -54,7 +53,7 @@ execute at @s[tag=!fleeing,tag=!boo_hurt,tag=!laugh,tag=!taunt,tag=!appear,tag=!
 execute at @s[tag=frozen] run function luigis_mansion:animations/boo/frozen
 execute at @s[tag=fleeing,tag=!frozen] run function luigis_mansion:animations/boo/flee
 execute at @s[tag=!fleeing,tag=boo_hurt,tag=!frozen] run function luigis_mansion:animations/boo/hurt
-tag @s[tag=!up,tag=!down,tag=!left,tag=!right] add can_attack
+tag @s[tag=!up,tag=!down,tag=!north,tag=!south,tag=!east,tag=!west] add can_attack
 
 scoreboard players set @s[tag=!boo_hurt,tag=!fleeing,tag=!attack,tag=!laugh,tag=!taunt,tag=!dying,tag=!frozen] ActionTime 0
 scoreboard players reset @s[tag=!boo_hurt,tag=!fleeing,tag=!attack,tag=!laugh,tag=!taunt,tag=!dying,tag=!frozen] HurtTime

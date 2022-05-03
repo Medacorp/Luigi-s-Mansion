@@ -13,6 +13,7 @@ execute if entity @s[scores={MushroomTimer=0},tag=portrait_ghost,tag=!no_poison_
 tag @s[scores={HurtTime=30},tag=!dialog] add fleeing
 execute at @s if block ~ ~2 ~ #luigis_mansion:ghosts_ignore run teleport @s[scores={HurtTime=1..21},tag=!ground_bound,tag=!ceiling_ghost] ~ ~0.05 ~
 tag @s[tag=remove_from_existence] remove in_vacuum
+execute if entity @s[tag=!in_vacuum,tag=!dialog] if score #debug Selected matches 1 run say [DEBUG] The ghost escaped because it was no longer in a vacuum.
 tag @s[tag=!in_vacuum,tag=!dialog] add vanish
 tag @s[tag=!in_vacuum,tag=!dialog] remove fleeing
 tag @s[tag=!in_vacuum,tag=!dialog] remove hurt

@@ -14,4 +14,8 @@ clone 695 24 -65 695 24 -65 693 24 -65
 clone 704 22 -66 704 22 -66 684 22 -66
 clone 704 22 -70 704 22 -70 684 22 -70
 
-execute if entity @a[gamemode=!spectator,scores={Room=66}] run function luigis_mansion:room/normal/sealed_room/ghosts
+scoreboard players set #temp Room 66
+execute as @a[gamemode=!spectator] run function #luigis_mansion:get_same_room
+scoreboard players reset #temp Room
+execute if entity @a[tag=same_room,limit=1] run function luigis_mansion:room/normal/sealed_room/ghosts
+tag @a[tag=same_room] remove same_room

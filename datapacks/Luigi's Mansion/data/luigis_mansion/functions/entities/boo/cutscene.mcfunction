@@ -7,7 +7,7 @@ execute if entity @s[scores={ActionTime=..9}] run teleport @s ~ ~0.2 ~
 execute at @s[scores={ActionTime=10}] run teleport @s ~ ~ ~ ~ 0
 execute at @s[scores={ActionTime=10..},tag=move_up] run function luigis_mansion:entities/boo/move_up
 execute at @s[scores={ActionTime=10..},tag=!move_up] run function luigis_mansion:entities/boo/move_down
-execute at @s[scores={Time=120..}] run function luigis_mansion:entities/boo/turn
+execute at @s[scores={Time=600..}] run function luigis_mansion:entities/boo/turn
 execute if entity @s[tag=wall] run function luigis_mansion:entities/boo/warp/cutscene
 tag @s remove disappear
 tag @s remove fleeing

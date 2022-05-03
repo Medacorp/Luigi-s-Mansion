@@ -9,4 +9,4 @@ execute as @a[tag=collector,tag=looking_at_map,limit=1,scores={Health=41..,Shrun
 execute as @a[tag=collector,tag=looking_at_map,limit=1,scores={Health=..40,Shrunk=0}] at @s run playsound luigis_mansion:entity.player.show_item.low_health player @s ~ ~ ~ 1
 execute as @a[tag=collector,tag=looking_at_map,limit=1,scores={Health=..40,Shrunk=1..}] at @s run playsound luigis_mansion:entity.player.show_item.low_health player @s ~ ~ ~ 1 2
 scoreboard players set @a[tag=collector,limit=1] Sound 70
-scoreboard players set @a[tag=same_room,scores={Music=..70}] Music 70
+execute as @a[tag=same_room,scores={Music=..70}] unless entity @s[scores={HealthMusic=1..}] run scoreboard players set @s Music 70

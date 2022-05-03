@@ -2,3 +2,5 @@ execute if entity @s[tag=looking_at_map] run function luigis_mansion:items/gameb
 advancement grant @s[scores={Health=..10}] only luigis_mansion:challenges/look_at_me_full_of_bravery
 function luigis_mansion:other/music/set/king_boo_battle
 teleport @s 490 37 10 -20 0
+scoreboard players set @s KnockbackType 0
+scoreboard players reset @s KnockbackTime

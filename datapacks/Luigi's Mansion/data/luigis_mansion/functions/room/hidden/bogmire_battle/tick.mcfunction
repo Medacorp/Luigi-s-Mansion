@@ -10,4 +10,8 @@ execute as @a[gamemode=!spectator,scores={Room=74}] run function luigis_mansion:
 
 execute if data storage luigis_mansion:data current_state.current_data.rooms.graveyard{cleared:0b} as @a unless entity @s[scores={Room=74}] run function luigis_mansion:room/hidden/bogmire_battle/warp_to
 
-execute if entity @a[gamemode=!spectator,scores={Room=74}] run function luigis_mansion:room/hidden/bogmire_battle/ghosts
+scoreboard players set #temp Room 74
+execute as @a[gamemode=!spectator] run function #luigis_mansion:get_same_room
+scoreboard players reset #temp Room
+execute if entity @a[tag=same_room,limit=1] run function luigis_mansion:room/hidden/bogmire_battle/ghosts
+tag @a[tag=same_room] remove same_room

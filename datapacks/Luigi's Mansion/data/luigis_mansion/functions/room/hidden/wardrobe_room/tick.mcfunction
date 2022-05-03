@@ -12,4 +12,8 @@ function #luigis_mansion:room/hidden/wardrobe_room/interactions/room
 clone 678 21 -52 678 22 -49 676 21 -52 filtered minecraft:warped_trapdoor
 clone 679 21 -52 679 22 -49 675 21 -52 filtered minecraft:warped_trapdoor
 
-execute if entity @a[gamemode=!spectator,scores={Room=5}] run function luigis_mansion:room/hidden/wardrobe_room/ghosts
+scoreboard players set #temp Room 5
+execute as @a[gamemode=!spectator] run function #luigis_mansion:get_same_room
+scoreboard players reset #temp Room
+execute if entity @a[tag=same_room,limit=1] run function luigis_mansion:room/hidden/wardrobe_room/ghosts
+tag @a[tag=same_room] remove same_room

@@ -15,4 +15,8 @@ execute if block 663 14 37 minecraft:oak_trapdoor[open=false] run setblock 659 1
 execute if block 663 14 36 minecraft:oak_trapdoor[open=true] run setblock 659 14 36 minecraft:oak_trapdoor[open=true,facing=west,half=top]
 execute if block 663 14 36 minecraft:oak_trapdoor[open=false] run setblock 659 14 36 minecraft:oak_trapdoor[open=false,facing=west,half=top]
 
-execute if entity @a[gamemode=!spectator,scores={Room=19}] run function luigis_mansion:room/normal/washroom_1/ghosts
+scoreboard players set #temp Room 19
+execute as @a[gamemode=!spectator] run function #luigis_mansion:get_same_room
+scoreboard players reset #temp Room
+execute if entity @a[tag=same_room,limit=1] run function luigis_mansion:room/normal/washroom_1/ghosts
+tag @a[tag=same_room] remove same_room

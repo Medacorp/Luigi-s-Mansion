@@ -20,6 +20,7 @@ tag @s[scores={ActionTime=100}] remove can_decapitate
 execute if entity @s[scores={ActionTime=80}] run playsound luigis_mansion:entity.bowser.land hostile @a[tag=same_room] ~ ~ ~ 3
 scoreboard players set @s[scores={ActionTime=101}] AnimationProg 0
 teleport @s[scores={ActionTime=101..120}] ^ ^0.15 ^-0.1
+teleport @s[scores={ActionTime=140}] ~ 40 ~
 tag @s[scores={ActionTime=140}] remove jump
 scoreboard players set @s[scores={ActionTime=140}] AnimationProg 0
 scoreboard players reset @s[scores={ActionTime=140}] ActionTime

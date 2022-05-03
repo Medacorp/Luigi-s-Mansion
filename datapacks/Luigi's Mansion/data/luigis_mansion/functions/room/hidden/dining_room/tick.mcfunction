@@ -12,4 +12,8 @@ execute if block 704 13 -25 minecraft:brewing_stand[has_bottle_0=false,has_bottl
 execute if block 704 13 -31 minecraft:brewing_stand[has_bottle_0=true,has_bottle_1=true,has_bottle_2=true] positioned 704 13 -31 run function luigis_mansion:spawn_furniture/purple_candles
 execute if block 704 13 -25 minecraft:brewing_stand[has_bottle_0=true,has_bottle_1=true,has_bottle_2=true] positioned 704 13 -25 run function luigis_mansion:spawn_furniture/purple_candles
 
-execute if entity @a[gamemode=!spectator,scores={Room=26}] run function luigis_mansion:room/hidden/dining_room/ghosts
+scoreboard players set #temp Room 36
+execute as @a[gamemode=!spectator] run function #luigis_mansion:get_same_room
+scoreboard players reset #temp Room
+execute if entity @a[tag=same_room,limit=1] run function luigis_mansion:room/hidden/dining_room/ghosts
+tag @a[tag=same_room] remove same_room

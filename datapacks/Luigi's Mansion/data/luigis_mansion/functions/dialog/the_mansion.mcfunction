@@ -24,7 +24,7 @@ tag @s[scores={Dialog=392}] add shake
 execute if entity @s[scores={Dialog=392}] run scoreboard players set @e[tag=this_model,tag=e_gadd_head,limit=1] AnimationProg 0
 execute if entity @s[scores={Dialog=392}] if score #players Totals matches 1 run tellraw @a[tag=same_room] {"translate":"chat.type.text","with":[{"translate":"luigis_mansion:entity.e_gadd","color":"green"},{"translate":"luigis_mansion:dialog.the_mansion.4"}]}
 execute if entity @s[scores={Dialog=392}] if score #players Totals matches 2.. run tellraw @a[tag=same_room] {"translate":"chat.type.text","with":[{"translate":"luigis_mansion:entity.e_gadd","color":"green"},{"translate":"luigis_mansion:dialog.the_mansion.4.more"}]}
-execute if entity @s[scores={Dialog=392}] run playsound luigis_mansion:entity.e_gadd.talk.oh_tohmah_poheh_jeemee_pen_pen neutral @a[tag=same_room] ~ ~ ~ 1
+execute if entity @s[scores={Dialog=392}] run playsound luigis_mansion:entity.e_gadd.talk.oh_tohmah_poheh_jeemee_jeemee_pen_pen neutral @a[tag=same_room] ~ ~ ~ 1
 execute if entity @s[scores={Dialog=520}] as @a[tag=same_room,tag=!spectator,tag=thinking,tag=!looking_at_map] run function luigis_mansion:entities/player/animation/set/none
 execute if entity @s[scores={Dialog=520}] if score #players Totals matches 1 run tellraw @a[tag=same_room] {"translate":"chat.type.text","with":[{"translate":"luigis_mansion:entity.e_gadd","color":"green"},{"translate":"luigis_mansion:dialog.the_mansion.5"}]}
 execute if entity @s[scores={Dialog=520}] if score #players Totals matches 2.. run tellraw @a[tag=same_room] {"translate":"chat.type.text","with":[{"translate":"luigis_mansion:entity.e_gadd","color":"green"},{"translate":"luigis_mansion:dialog.the_mansion.5.more"}]}

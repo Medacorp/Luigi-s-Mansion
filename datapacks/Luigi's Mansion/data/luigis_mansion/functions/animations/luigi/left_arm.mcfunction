@@ -23,8 +23,8 @@ data modify entity @s[tag=!was_sneak_posing,tag=sneak_pos,tag=!low_health] Pose.
 data modify entity @s[tag=was_flipped,tag=!flipped_gravity] Pose.Head[2] set value 0.0f
 data modify entity @s[tag=!was_flipped,tag=flipped_gravity] Pose.Head[2] set value -180.0f
 
-execute if entity @s[tag=!stop_model,tag=!cold_room_idle,tag=!high_health_idle,tag=!low_health_idle,tag=!push_open_door,tag=!pull_open_door,tag=!push_locked_door,tag=!pull_locked_door,tag=!push_unlock_door,tag=!pull_unlock_door,scores={KnockbackType=0,Pull=0..9}] unless entity @s[tag=low_health,tag=!holding_poltergust] run function luigis_mansion:animations/luigi/idle/left_arm
-execute if entity @s[tag=!stop_model,tag=!cold_room_idle,tag=!high_health_idle,tag=!low_health_idle,tag=!push_open_door,tag=!pull_open_door,tag=!push_locked_door,tag=!pull_locked_door,tag=!push_unlock_door,tag=!pull_unlock_door,scores={KnockbackType=0,Pull=0..9}] if entity @s[tag=low_health,tag=!holding_poltergust] run function luigis_mansion:animations/luigi/idle/hunched/left_arm
+execute if entity @s[scores={KnockbackType=0,Pull=0..9}] unless entity @s[tag=low_health,tag=!holding_poltergust] unless entity @s[scores={AnimationProg=1..},tag=!sneaking,tag=!walking,tag=!running,tag=!swimming] run function luigis_mansion:animations/luigi/idle/left_arm
+execute if entity @s[scores={KnockbackType=0,Pull=0..9}] if entity @s[tag=low_health,tag=!holding_poltergust] unless entity @s[scores={AnimationProg=1..},tag=!sneaking,tag=!walking,tag=!running,tag=!swimming] run function luigis_mansion:animations/luigi/idle/hunched/left_arm
 
 # Move animations
 execute if entity @s[tag=sneaking,tag=!stop_model,tag=!low_health,tag=!riding_poltergust,tag=!holding_poltergust,tag=!yelling,tag=!push_open_door,tag=!pull_open_door,tag=!push_locked_door,tag=!pull_locked_door,tag=!push_unlock_door,tag=!pull_unlock_door] run function luigis_mansion:animations/luigi/sneaking/left_arm

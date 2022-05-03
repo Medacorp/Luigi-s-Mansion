@@ -2,7 +2,7 @@ execute if entity @s[tag=dead] run function luigis_mansion:entities/yellow_bat/d
 
 execute if entity @e[tag=same_room,tag=!spectator,distance=..0.7,limit=1] if entity @s[tag=!dead,tag=!removed_from_existence] run function luigis_mansion:entities/yellow_bat/collide
 
-tag @s[scores={FlyTime=600..}] add turn_back
+tag @s[scores={FlyTime=3000..}] add turn_back
 tag @s[tag=fleeing,tag=attack] add turn_back
 tag @s[tag=fleeing] add attack
 tag @s[tag=fleeing] remove fleeing
