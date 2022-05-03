@@ -2,6 +2,7 @@
 	"values": [
 	    "luigis_mansion:room/hidden/study/load/set_loaded",
         "luigis_mansion:room/hidden/study/load/lights",
+        "luigis_mansion:room/hidden/study/load/doors",
         "luigis_mansion:room/hidden/study/load/chest",
         "luigis_mansion:room/hidden/study/load/fire",
         "luigis_mansion:room/hidden/study/load/painting_1",

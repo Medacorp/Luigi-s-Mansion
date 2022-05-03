@@ -2,7 +2,6 @@
     "values": [
         "luigis_mansion:room/hidden/the_artists_studio/reset/unload",
         "#luigis_mansion:room/hidden/the_artists_studio/turn_lights/off",
-        "luigis_mansion:room/hidden/the_artists_studio/reset/blockade",
         "luigis_mansion:room/hidden/the_artists_studio/reset/bricks",
         "luigis_mansion:room/hidden/the_artists_studio/reset/chairs",
         "luigis_mansion:room/hidden/the_artists_studio/reset/lamp",

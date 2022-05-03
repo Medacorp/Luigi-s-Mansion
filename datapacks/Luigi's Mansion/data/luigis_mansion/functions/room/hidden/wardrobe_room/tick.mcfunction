@@ -13,6 +13,3 @@ clone 678 21 -52 678 22 -49 676 21 -52 filtered minecraft:warped_trapdoor
 clone 679 21 -52 679 22 -49 675 21 -52 filtered minecraft:warped_trapdoor
 
 execute if entity @a[gamemode=!spectator,scores={Room=5}] run function luigis_mansion:room/hidden/wardrobe_room/ghosts
-
-function luigis_mansion:room/hidden/door/anteroom_wardrobe_room
-function luigis_mansion:room/hidden/door/wardrobe_room_balcony_1

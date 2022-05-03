@@ -13,6 +13,3 @@ execute unless entity @a[tag=toad_5_dialog,limit=1] unless entity @a[tag=uncle_g
 execute unless entity @a[tag=toad_5_dialog,limit=1] unless entity @a[tag=uncle_grimmly_dialog,limit=1] if data storage luigis_mansion:data current_state.current_data{blackout:1b} unless data storage luigis_mansion:data current_state.current_data.technical_data{telephone_3:1b} run scoreboard players set @a[scores={Room=55,RoomNoise=0}] RoomNoise 40
 
 function luigis_mansion:room/hidden/hallway_19/ghosts
-
-function luigis_mansion:room/hidden/door/hallway_19_telephone_room
-function luigis_mansion:room/hidden/door/hallway_19_armory

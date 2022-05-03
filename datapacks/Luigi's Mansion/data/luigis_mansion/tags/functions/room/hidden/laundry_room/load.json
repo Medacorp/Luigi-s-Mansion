@@ -2,7 +2,7 @@
 	"values": [
 	    "luigis_mansion:room/hidden/laundry_room/load/set_loaded",
         "luigis_mansion:room/hidden/laundry_room/load/lights",
-        "luigis_mansion:room/hidden/laundry_room/load/fake_doors",
+        "luigis_mansion:room/hidden/laundry_room/load/doors",
         "luigis_mansion:room/hidden/laundry_room/load/bucket",
         "luigis_mansion:room/hidden/laundry_room/load/chest",
         "luigis_mansion:room/hidden/laundry_room/load/vacuumable_1",

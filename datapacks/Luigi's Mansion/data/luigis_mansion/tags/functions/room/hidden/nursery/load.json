@@ -2,6 +2,7 @@
 	"values": [
 	    "luigis_mansion:room/hidden/nursery/load/set_loaded",
         "luigis_mansion:room/hidden/nursery/load/lights",
+        "luigis_mansion:room/hidden/nursery/load/doors",
         "luigis_mansion:room/hidden/nursery/load/spawn_money",
         "luigis_mansion:room/hidden/nursery/load/ball",
         "luigis_mansion:room/hidden/nursery/load/chest",

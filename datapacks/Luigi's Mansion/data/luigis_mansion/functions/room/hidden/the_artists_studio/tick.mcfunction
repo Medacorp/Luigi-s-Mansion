@@ -22,5 +22,3 @@ execute if score #freeze_timer Selected matches 1 as @a unless entity @s[scores=
 function #luigis_mansion:room/hidden/the_artists_studio/interactions/room
 
 execute if entity @a[gamemode=!spectator,scores={Room=71}] run function luigis_mansion:room/hidden/the_artists_studio/ghosts
-
-function luigis_mansion:room/hidden/door/hallway_17_the_artists_studio

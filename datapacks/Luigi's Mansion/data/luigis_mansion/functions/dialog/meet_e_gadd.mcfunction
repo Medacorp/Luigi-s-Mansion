@@ -1,10 +1,9 @@
 scoreboard players add @s Dialog 1
-execute unless entity @s[scores={Dialog=72..580}] run scoreboard players set @a[tag=cold_room_idle] IdleTime 18
-execute unless entity @s[scores={Dialog=72..580}] run tag @a[tag=cold_room_idle] remove cold_room_idle
-execute if entity @e[tag=gold_ghost,tag=dialog] run scoreboard players set @a[tag=cold_room_idle] IdleTime 18
-execute if entity @e[tag=gld_ghost,tag=dialog] run tag @a[tag=cold_room_idle] remove cold_room_idle
-scoreboard players set @s[scores={Dialog=..72,IdleTime=19..}] IdleTime 18
-scoreboard players set @e[tag=gold_ghost,tag=dialog] Sound -1
+execute if entity @e[tag=ghost,tag=dialog] run tag @a[scores={Room=3,IdleTime=..-1}] remove cold_room_idle
+execute if entity @e[tag=ghost,tag=dialog] run tag @a[scores={Room=3,IdleTime=..-1}] remove idle
+execute if entity @e[tag=ghost,tag=dialog] as @a[scores={Room=3}] unless entity @s[scores={IdleTime=18}] run scoreboard players set @s IdleTime 18
+scoreboard players set @s[scores={Dialog=..72,IdleTime=19}] IdleTime 18
+scoreboard players set @e[tag=ghost,tag=dialog] Sound -1
 execute if entity @s[scores={Dialog=1}] run playsound luigis_mansion:ambience.parlor_wind ambient @a[tag=same_room] ~ ~ ~ 1000
 execute if entity @s[scores={Dialog=1}] run playsound luigis_mansion:entity.player.scare_causion player @a[tag=same_room] ~ ~ ~ 1
 scoreboard players set @s[scores={Dialog=1}] Sound 60
@@ -12,7 +11,7 @@ execute if entity @s[scores={Dialog=1..81}] run stopsound @a[tag=same_room,gamem
 execute if entity @s[scores={Dialog=1..81}] as @a[tag=same_room,gamemode=!spectator] run function luigis_mansion:other/music/set/non_overwritten_silence
 execute if entity @s[scores={Dialog=1..81}] run scoreboard players set @a[tag=same_room,gamemode=!spectator] Music 1308
 execute if entity @s[scores={Dialog=81}] run playsound luigis_mansion:music.meet_e_gadd music @a[tag=same_room,gamemode=!spectator] ~ ~ ~ 1000
-teleport @s[x=697,y=20,z=7,dx=1,dy=1,dz=1] ~-1 ~ ~
+teleport @s[x=727.0,y=20.0,z=27.0,dx=1,dy=1,dz=1] ~-1 ~ ~
 execute if entity @s[scores={Dialog=1}] run teleport @s 725.5 20 28.0 90 0
 execute if entity @s[scores={Dialog=2}] run teleport @s 725.5 20 28.0 90 0
 execute if entity @s[scores={Dialog=3}] run teleport @s 725.5 20 28.0 90 0

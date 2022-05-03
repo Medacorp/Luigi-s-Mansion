@@ -2,7 +2,6 @@
     "values": [
         "luigis_mansion:room/normal/anteroom/reset/unload",
         "#luigis_mansion:room/normal/anteroom/turn_lights/off",
-        "luigis_mansion:room/normal/anteroom/reset/blockade",
         "luigis_mansion:room/normal/anteroom/reset/lamp_1",
         "luigis_mansion:room/normal/anteroom/reset/lamp_2",
         "luigis_mansion:room/normal/anteroom/reset/table_1",

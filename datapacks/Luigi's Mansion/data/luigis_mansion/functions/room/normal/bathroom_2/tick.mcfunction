@@ -12,5 +12,3 @@ function #luigis_mansion:room/normal/bathroom_2/interactions/room
 clone 654 21 21 654 25 27 644 21 21
 
 execute if entity @a[gamemode=!spectator,scores={Room=43}] run function luigis_mansion:room/normal/bathroom_2/ghosts
-
-function luigis_mansion:room/normal/door/hallway_10_bathroom_2

@@ -8,5 +8,3 @@ execute as @a[gamemode=!spectator,scores={Room=65}] run function luigis_mansion:
 function #luigis_mansion:room/hidden/ceramics_studio/interactions/room
 
 execute if entity @a[gamemode=!spectator,scores={Room=65},limit=1] run function luigis_mansion:room/hidden/ceramics_studio/ghosts
-
-function luigis_mansion:room/hidden/door/armory_ceramics_studio

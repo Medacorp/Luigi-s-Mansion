@@ -15,5 +15,3 @@ execute as @e[tag=!spectator,x=636.5,y=94,z=33.5,distance=..0.7,type=minecraft:i
 execute unless entity @e[x=636.5,y=94,z=33.5,distance=..0.7,type=minecraft:item_frame,limit=1] run kill @e[x=636.5,y=94,z=49.5,distance=..0.7,type=minecraft:item_frame,limit=1]
 
 execute if entity @a[gamemode=!spectator,scores={Room=72}] run function luigis_mansion:room/hidden/secret_altar/ghosts
-
-function luigis_mansion:room/hidden/door/hallway_22_secret_altar

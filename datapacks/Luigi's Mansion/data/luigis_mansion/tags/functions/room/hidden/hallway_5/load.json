@@ -2,6 +2,7 @@
 	"values": [
 	    "luigis_mansion:room/hidden/hallway_5/load/set_loaded",
         "luigis_mansion:room/hidden/hallway_5/load/lights",
+        "luigis_mansion:room/hidden/hallway_5/load/doors",
         "luigis_mansion:room/hidden/hallway_5/load/spawn_shivers",
         "luigis_mansion:room/hidden/hallway_5/load/candle_1",
         "luigis_mansion:room/hidden/hallway_5/load/candle_2",

@@ -15,5 +15,3 @@ clone 704 22 81 704 22 81 684 22 81
 clone 704 22 85 704 22 85 684 22 85
 
 execute if entity @a[gamemode=!spectator,scores={Room=66}] run function luigis_mansion:room/hidden/sealed_room/ghosts
-
-function luigis_mansion:room/hidden/door/hallway_12_sealed_room

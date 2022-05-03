@@ -2,6 +2,7 @@
 	"values": [
 	    "luigis_mansion:room/normal/the_artists_studio/load/set_loaded",
         "luigis_mansion:room/normal/the_artists_studio/load/lights",
+        "luigis_mansion:room/normal/the_artists_studio/load/doors",
         "luigis_mansion:room/normal/the_artists_studio/load/painting_1",
         "luigis_mansion:room/normal/the_artists_studio/load/painting_2",
         "luigis_mansion:room/normal/the_artists_studio/load/painting_3",

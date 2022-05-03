@@ -27,3 +27,12 @@ execute unless entity @s[tag=!remove_from_existence,tag=!dead] run tag @e[tag=th
 
 tag @e[tag=this_model_frame,limit=1] remove this_model_frame
 tag @e[tag=this_model,limit=1] remove this_model
+
+execute if entity @s[tag=blockade_sounds_can_play,tag=blockade,tag=!had_blockade] as @a[tag=same_room,tag=looking_at_map] run function luigis_mansion:items/gameboy_horror/map/close
+execute if entity @s[tag=blockade_sounds_can_play,tag=blockade,tag=!had_blockade] as @a[tag=same_room,tag=!spectator] run function luigis_mansion:entities/player/scare/normal
+execute if entity @s[tag=blockade_sounds_can_play,tag=blockade,tag=!had_blockade] run playsound luigis_mansion:block.blockade.spawn block @a[tag=same_room] ~ ~ ~ 1
+execute if entity @s[tag=blockade_sounds_can_play,tag=!blockade,tag=!area_blockade,tag=had_blockade] run playsound luigis_mansion:block.blockade.disappear block @a[tag=same_room] ~ ~ ~ 1
+tag @s remove had_blockade
+tag @s[tag=blockade] add had_blockade
+tag @s[tag=area_blockade] add had_blockade
+tag @s add blockade_sounds_can_play

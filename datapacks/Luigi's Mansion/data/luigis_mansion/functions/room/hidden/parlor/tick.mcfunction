@@ -15,6 +15,3 @@ execute if block 714 22 -11 minecraft:brewing_stand[has_bottle_0=true,has_bottle
 execute if block 714 22 -14 minecraft:brewing_stand[has_bottle_0=true,has_bottle_1=true,has_bottle_2=true] positioned 714 22 -14 run function luigis_mansion:spawn_furniture/purple_candles
 
 execute if entity @a[gamemode=!spectator,scores={Room=3}] run function luigis_mansion:room/hidden/parlor/ghosts
-
-function luigis_mansion:room/hidden/door/hallway_1_parlor
-function luigis_mansion:room/hidden/door/parlor_anteroom

@@ -2,7 +2,6 @@
     "values": [
         "luigis_mansion:room/normal/astral_hall/reset/unload",
         "#luigis_mansion:room/normal/astral_hall/turn_lights/off",
-        "luigis_mansion:room/normal/astral_hall/reset/blockade",
         "luigis_mansion:room/normal/astral_hall/reset/candle_1",
         "luigis_mansion:room/normal/astral_hall/reset/candle_2",
         "luigis_mansion:room/normal/astral_hall/reset/candle_3",

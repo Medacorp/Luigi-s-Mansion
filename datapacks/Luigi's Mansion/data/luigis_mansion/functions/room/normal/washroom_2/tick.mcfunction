@@ -12,5 +12,3 @@ function #luigis_mansion:room/normal/washroom_2/interactions/room
 clone 664 21 44 664 21 44 658 21 44
 
 execute if entity @a[gamemode=!spectator,scores={Room=42}] run function luigis_mansion:room/normal/washroom_2/ghosts
-
-function luigis_mansion:room/normal/door/hallway_9_washroom_2

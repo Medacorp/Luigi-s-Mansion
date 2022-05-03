@@ -2,6 +2,7 @@
 	"values": [
 	    "luigis_mansion:room/normal/sealed_room/load/set_loaded",
         "luigis_mansion:room/normal/sealed_room/load/lights",
+        "luigis_mansion:room/normal/sealed_room/load/doors",
         "luigis_mansion:room/normal/sealed_room/load/candle_1",
         "luigis_mansion:room/normal/sealed_room/load/candle_2",
         "luigis_mansion:room/normal/sealed_room/load/candle_3",

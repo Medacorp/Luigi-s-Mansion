@@ -2,6 +2,7 @@
 	"values": [
 	    "luigis_mansion:room/normal/hallway_20/load/set_loaded",
         "luigis_mansion:room/normal/hallway_20/load/lights",
+        "luigis_mansion:room/normal/hallway_20/load/doors",
         "luigis_mansion:room/normal/hallway_20/load/candle_1",
         "luigis_mansion:room/normal/hallway_20/load/candle_2",
         "luigis_mansion:room/normal/hallway_20/load/web"

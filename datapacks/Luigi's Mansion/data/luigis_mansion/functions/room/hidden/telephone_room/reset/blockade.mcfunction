@@ -1,1 +1,0 @@
-function luigis_mansion:room/hidden/telephone_room/remove_blockade

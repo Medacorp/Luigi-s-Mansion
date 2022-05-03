@@ -2,6 +2,7 @@
 	"values": [
 	    "luigis_mansion:room/gallery/load/set_loaded",
 	    "luigis_mansion:room/gallery/load/spawn_e_gadd",
+	    "luigis_mansion:room/gallery/load/doors",
 	    "luigis_mansion:room/gallery/load/painting_1",
 	    "luigis_mansion:room/gallery/load/painting_2",
 	    "luigis_mansion:room/gallery/load/painting_3",

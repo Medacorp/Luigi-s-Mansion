@@ -1,5 +1,1 @@
-execute unless block 741 11 -44 minecraft:air run playsound luigis_mansion:block.blockade.disappear block @a[scores={Room=21}] 741 11 -44 1
-setblock 741 11 -44 minecraft:air
-setblock 741 12 -44 minecraft:air
-setblock 729 11 -44 minecraft:air
-setblock 729 12 -44 minecraft:air
+tag @e[scores={Room=21},type=minecraft:villager,tag=door] remove blockade

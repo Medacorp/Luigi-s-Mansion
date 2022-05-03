@@ -20,5 +20,3 @@ execute if block 689 13 -60 minecraft:stone_button[powered=true] if block 682 11
 execute if block 681 13 -46 minecraft:stone_button[powered=true] if block 685 10 -46 minecraft:oak_slab unless entity @a[tag=release_boos,limit=1] unless entity @e[tag=!spectator,scores={Room=18},x=684.0,y=10,z=-47.0,dx=2,dy=8,dz=2,limit=1] positioned 681 13 -46 run tag @p[gamemode=!spectator] add release_boos
 
 execute if entity @a[gamemode=!spectator,scores={Room=18}] run function luigis_mansion:room/normal/storage_room/ghosts
-
-function luigis_mansion:room/normal/door/ball_room_storage_room

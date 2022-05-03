@@ -1,1 +1,0 @@
-function luigis_mansion:room/hidden/nursery/remove_blockade

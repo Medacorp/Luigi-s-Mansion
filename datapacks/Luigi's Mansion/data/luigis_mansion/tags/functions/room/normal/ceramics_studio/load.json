@@ -2,6 +2,7 @@
 	"values": [
 	    "luigis_mansion:room/normal/ceramics_studio/load/set_loaded",
         "luigis_mansion:room/normal/ceramics_studio/load/lights",
+        "luigis_mansion:room/normal/ceramics_studio/load/doors",
         "luigis_mansion:room/normal/ceramics_studio/load/haunted_objects",
         "luigis_mansion:room/normal/ceramics_studio/load/chest",
         "luigis_mansion:room/normal/ceramics_studio/load/frozen_jar",

@@ -9,5 +9,3 @@ execute as @a[gamemode=!spectator,scores={Room=38}] run function luigis_mansion:
 function #luigis_mansion:room/normal/hallway_12/interactions/room
 
 execute if entity @a[gamemode=!spectator,scores={Room=38},limit=1] run function luigis_mansion:room/normal/hallway_12/ghosts
-
-function luigis_mansion:room/normal/door/hallway_12_sealed_room

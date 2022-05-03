@@ -11,7 +11,7 @@ scoreboard players reset #temp Move
 
 tag @s[tag=!reflection,scores={MirrorX=-2147483648..}] add mirrored
 tag @s[tag=!reflection,scores={MirrorZ=-2147483648..}] add mirrored
-execute if entity @s[tag=mirrored,type=!minecraft:item_frame] run function luigis_mansion:entities/reflection/non_player
+execute if entity @s[tag=mirrored,type=minecraft:armor_stand] run function luigis_mansion:entities/reflection/armor_stand
 execute if entity @s[tag=mirrored,type=minecraft:item_frame] run function luigis_mansion:entities/reflection/item_frame
 tag @s[tag=mirrored] remove mirrored
 scoreboard players reset @s LightX

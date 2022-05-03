@@ -2,7 +2,6 @@
     "values": [
         "luigis_mansion:room/hidden/balcony_2/reset/unload",
         "#luigis_mansion:room/hidden/balcony_2/turn_lights/off",
-        "luigis_mansion:room/hidden/balcony_2/reset/blockade",
         "luigis_mansion:room/hidden/balcony_2/reset/bench_1",
         "luigis_mansion:room/hidden/balcony_2/reset/bench_2",
         "luigis_mansion:room/hidden/balcony_2/reset/chest",
