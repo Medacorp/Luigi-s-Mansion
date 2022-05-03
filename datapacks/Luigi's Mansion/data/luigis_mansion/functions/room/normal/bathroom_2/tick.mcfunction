@@ -12,7 +12,7 @@ function #luigis_mansion:room/normal/bathroom_2/interactions/room
 clone 654 21 21 654 25 27 644 21 21
 
 scoreboard players set #temp Room 43
-execute as @a[gamemode=!spectator] run function #luigis_mansion:get_same_room
+execute as @a[gamemode=!spectator,tag=!pull_open_door,tag=!push_open_door] run function #luigis_mansion:get_same_room
 scoreboard players reset #temp Room
 execute if entity @a[tag=same_room,limit=1] run function luigis_mansion:room/normal/bathroom_2/ghosts
 tag @a[tag=same_room] remove same_room

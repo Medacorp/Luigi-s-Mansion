@@ -17,7 +17,7 @@ execute unless entity @a[tag=uncle_grimmly_dialog,limit=1] if data storage luigi
 execute unless entity @a[tag=toad_5_dialog,limit=1] unless entity @a[tag=uncle_grimmly_dialog,limit=1] if data storage luigis_mansion:data current_state.current_data{blackout:1b} unless data storage luigis_mansion:data current_state.current_data.technical_data{telephone_3:1b} run scoreboard players set @a[scores={Room=56,RoomNoise=0}] RoomNoise 40
 
 scoreboard players set #temp Room 56
-execute as @a[gamemode=!spectator] run function #luigis_mansion:get_same_room
+execute as @a[gamemode=!spectator,tag=!pull_open_door,tag=!push_open_door] run function #luigis_mansion:get_same_room
 scoreboard players reset #temp Room
 execute if entity @a[tag=same_room,limit=1] run function luigis_mansion:room/normal/telephone_room/ghosts
 tag @a[tag=same_room] remove same_room

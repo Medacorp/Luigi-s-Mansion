@@ -13,7 +13,7 @@ clone 678 21 64 678 22 67 676 21 64 filtered minecraft:warped_trapdoor
 clone 679 21 64 679 22 67 675 21 64 filtered minecraft:warped_trapdoor
 
 scoreboard players set #temp Room 5
-execute as @a[gamemode=!spectator] run function #luigis_mansion:get_same_room
+execute as @a[gamemode=!spectator,tag=!pull_open_door,tag=!push_open_door] run function #luigis_mansion:get_same_room
 scoreboard players reset #temp Room
 execute if entity @a[tag=same_room,limit=1] run function luigis_mansion:room/normal/wardrobe_room/ghosts
 tag @a[tag=same_room] remove same_room

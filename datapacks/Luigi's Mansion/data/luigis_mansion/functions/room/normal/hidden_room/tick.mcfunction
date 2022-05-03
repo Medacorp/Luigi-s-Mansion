@@ -13,7 +13,7 @@ clone 739 13 47 739 13 47 759 13 47
 clone 739 13 32 739 13 32 759 13 32
 
 scoreboard players set #temp Room 24
-execute as @a[gamemode=!spectator] run function #luigis_mansion:get_same_room
+execute as @a[gamemode=!spectator,tag=!pull_open_door,tag=!push_open_door] run function #luigis_mansion:get_same_room
 scoreboard players reset #temp Room
 execute if entity @a[tag=same_room,limit=1] run function luigis_mansion:room/normal/hidden_room/ghosts
 tag @a[tag=same_room] remove same_room

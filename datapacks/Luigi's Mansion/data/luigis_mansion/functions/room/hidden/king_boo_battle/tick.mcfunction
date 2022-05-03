@@ -11,7 +11,7 @@ execute as @a[gamemode=!spectator,scores={Room=76}] run function luigis_mansion:
 execute if data storage luigis_mansion:data current_state.current_data.rooms.secret_altar{cleared:0b} as @a unless entity @s[scores={Room=76}] run function luigis_mansion:room/hidden/king_boo_battle/warp_to
 
 scoreboard players set #temp Room 76
-execute as @a[gamemode=!spectator] run function #luigis_mansion:get_same_room
+execute as @a[gamemode=!spectator,tag=!pull_open_door,tag=!push_open_door] run function #luigis_mansion:get_same_room
 scoreboard players reset #temp Room
 execute if entity @a[tag=same_room,limit=1] run function luigis_mansion:room/hidden/king_boo_battle/ghosts
 tag @a[tag=same_room] remove same_room

@@ -20,7 +20,7 @@ execute if block 689 13 -60 minecraft:stone_button[powered=true] if block 682 11
 execute if block 681 13 -46 minecraft:stone_button[powered=true] if block 685 10 -46 minecraft:oak_slab unless entity @a[tag=release_boos,limit=1] unless entity @e[tag=!spectator,scores={Room=18},x=684.0,y=10,z=-47.0,dx=2,dy=8,dz=2,limit=1] positioned 681 13 -46 run tag @p[gamemode=!spectator] add release_boos
 
 scoreboard players set #temp Room 18
-execute as @a[gamemode=!spectator] run function #luigis_mansion:get_same_room
+execute as @a[gamemode=!spectator,tag=!pull_open_door,tag=!push_open_door] run function #luigis_mansion:get_same_room
 scoreboard players reset #temp Room
 execute if entity @a[tag=same_room,limit=1] run function luigis_mansion:room/normal/storage_room/ghosts
 tag @a[tag=same_room] remove same_room
