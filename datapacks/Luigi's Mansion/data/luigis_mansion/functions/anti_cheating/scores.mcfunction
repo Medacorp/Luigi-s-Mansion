@@ -228,4 +228,6 @@ execute unless score #debug Selected matches 0..1 run scoreboard players set #de
 execute unless data storage luigis_mansion:data current_state run function luigis_mansion:other/upgrade_path/newly_installed
 
 gamerule doTileDrops false
+gamerule doEntityDrops false
+gamerule fallDamage false
 gamerule maxCommandChainLength 2147483647

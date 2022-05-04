@@ -1,4 +1,4 @@
-execute at @s run summon minecraft:marker ~ ~ ~ {Tags:["temp"]}
+execute at @s run summon minecraft:marker ~ ~ ~ {Tags:["temp","remove_from_existence"]}
 scoreboard players operation #temp MirrorX *= #100 Constants
 scoreboard players add #temp MirrorX 50
 execute store result score #temp ActionTime run data get entity @s Pos[0] 100
