@@ -1,5 +1,7 @@
-effect give @s minecraft:instant_health 1 27 true
+attribute @s minecraft:generic.max_health base set 100
+effect give @s minecraft:instant_health 1 19 true
 scoreboard players operation @s[scores={Health=1..,Invulnerable=0},tag=!fix_health] Health -= @s Damage
+scoreboard players set @s[scores={Health=..0,Invulnerable=0},tag=!fix_health] Health 0
 scoreboard players operation @s[scores={Health=1..,Invulnerable=0},tag=!fix_health] TotalDamage += @s Damage
 execute if entity @s[scores={Damage=1..,Invulnerable=0},tag=!fix_health] run playsound luigis_mansion:entity.player.hurt player @a[tag=same_room] ~ ~ ~ 1
 execute if entity @s[scores={Damage=1..,Invulnerable=0,Room=1..},tag=!fix_health] run function #luigis_mansion:entities/player/damage/drop_item

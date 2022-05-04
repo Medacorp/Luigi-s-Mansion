@@ -1,4 +1,4 @@
-execute at @s run summon minecraft:marker ~ ~ ~ {Tags:["temp"]}
+execute at @s run summon minecraft:marker ~ ~ ~ {Tags:["temp","remove_from_existence"]}
 execute store result entity @e[type=minecraft:marker,tag=temp,limit=1] Pos[0] double 0.01 run scoreboard players get @s PosX
 execute store result entity @e[type=minecraft:marker,tag=temp,limit=1] Pos[2] double 0.01 run scoreboard players get @s PosZ
 

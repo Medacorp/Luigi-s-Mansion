@@ -1,4 +1,4 @@
-summon minecraft:marker ^ ^-1 ^ {Tags:["temp"]}
+summon minecraft:marker ^ ^-1 ^ {Tags:["temp","remove_from_existence"]}
 execute store result entity @e[type=minecraft:marker,tag=temp,limit=1] Pos[0] double 0.01 run scoreboard players get @s KnockbackX
 execute store result entity @e[type=minecraft:marker,tag=temp,limit=1] Pos[2] double 0.01 run scoreboard players get @s KnockbackZ
 
@@ -88,7 +88,7 @@ execute at @s[scores={KnockbackTime=10,KnockbackType=6,Sound=0,Health=41..,Shrun
 execute at @s[scores={KnockbackTime=10,KnockbackType=6,Sound=0,Health=..40,Shrunk=0}] run playsound luigis_mansion:entity.player.hurt_soak.low_health player @a[tag=same_room] ~ ~ ~ 1
 execute at @s[scores={KnockbackTime=10,KnockbackType=6,Sound=0,Health=..40,Shrunk=1..}] run playsound luigis_mansion:entity.player.hurt_soak.low_health player @a[tag=same_room] ~ ~ ~ 1 2
 scoreboard players set @s[scores={KnockbackTime=10,KnockbackType=6,Sound=0}] Sound 20
-execute at @s[scores={KnockbackTime=1..,KnockbackType=6}] run summon minecraft:marker ~ ~ ~ {Tags:["home"]}
+execute at @s[scores={KnockbackTime=1..,KnockbackType=6}] run summon minecraft:marker ~ ~ ~ {Tags:["home","remove_from_existence"]}
 execute at @s[scores={KnockbackTime=1..,KnockbackType=6}] store result entity @e[tag=home,limit=1] Pos[0] double 0.01 run scoreboard players get @s PosX
 execute at @s[scores={KnockbackTime=1..,KnockbackType=6}] store result entity @e[tag=home,limit=1] Pos[1] double 0.01 run scoreboard players get @s PosY
 execute at @s[scores={KnockbackTime=1..,KnockbackType=6}] store result entity @e[tag=home,limit=1] Pos[2] double 0.01 run scoreboard players get @s PosZ
@@ -101,7 +101,7 @@ execute at @s[scores={KnockbackTime=1..,KnockbackType=6}] run kill @e[tag=home,l
 execute at @s[scores={KnockbackTime=80,KnockbackType=7,Sound=0,Shrunk=0}] run playsound luigis_mansion:entity.player.hurt_freeze player @a[tag=same_room] ~ ~ ~ 1
 execute at @s[scores={KnockbackTime=80,KnockbackType=7,Sound=0,Shrunk=1..}] run playsound luigis_mansion:entity.player.hurt_freeze player @a[tag=same_room] ~ ~ ~ 1 2
 scoreboard players set @s[scores={KnockbackTime=10..,KnockbackType=7,Sound=0}] Sound 2
-execute at @s[scores={KnockbackTime=1..,KnockbackType=7}] run summon minecraft:marker ~ ~ ~ {Tags:["home"]}
+execute at @s[scores={KnockbackTime=1..,KnockbackType=7}] run summon minecraft:marker ~ ~ ~ {Tags:["home","remove_from_existence"]}
 execute at @s[scores={KnockbackTime=1..,KnockbackType=7}] store result entity @e[tag=home,limit=1] Pos[0] double 0.01 run scoreboard players get @s PosX
 execute at @s[scores={KnockbackTime=1..,KnockbackType=7}] store result entity @e[tag=home,limit=1] Pos[1] double 0.01 run scoreboard players get @s PosY
 execute at @s[scores={KnockbackTime=1..,KnockbackType=7}] store result entity @e[tag=home,limit=1] Pos[2] double 0.01 run scoreboard players get @s PosZ

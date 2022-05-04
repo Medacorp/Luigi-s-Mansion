@@ -1,4 +1,4 @@
-summon minecraft:marker ~ ~ ~ {Tags:["temp"],NoGravity:1b}
+summon minecraft:marker ~ ~ ~ {Tags:["temp","remove_from_existence"],NoGravity:1b}
 
 execute if score #temp MirrorX matches -2147483648.. run scoreboard players operation #temp MirrorX *= #100 Constants
 execute if score #temp MirrorX matches -2147483648.. run scoreboard players add #temp MirrorX 50
