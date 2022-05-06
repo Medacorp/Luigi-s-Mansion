@@ -1,4 +1,4 @@
-execute positioned 673 11 11 rotated -180 0 run function luigis_mansion:spawn_furniture/door/right/pull/mansion/1
+execute positioned 673 11 11 rotated -180 0 run function luigis_mansion:spawn_furniture/door/right/push/mansion/1
 execute positioned 673 11 11 rotated -180 0 run function luigis_mansion:spawn_furniture/door_frame/normal
 execute positioned 668 11 8 rotated -90 0 run function luigis_mansion:spawn_furniture/door/left/pull/club
 execute positioned 668 11 8 rotated -90 0 run function luigis_mansion:spawn_furniture/door_frame/normal

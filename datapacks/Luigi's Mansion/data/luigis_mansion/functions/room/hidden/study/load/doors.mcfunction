@@ -1,0 +1,2 @@
+execute positioned 716 20 -33 rotated 90 0 run function luigis_mansion:spawn_furniture/door/left/push/mansion/1
+execute positioned 716 20 -33 rotated 90 0 run function luigis_mansion:spawn_furniture/door_frame/gray
