@@ -124,8 +124,8 @@ teleport @s[x=658.0,y=20,z=17.0,dx=0,dy=1,dz=0,y_rotation=90..-90] 673 20 10.0
 teleport @s[x=691.0,y=20,z=37.0,dx=0,dy=1,dz=0,y_rotation=-90..90] 666 20 88.0
 teleport @s[x=666.0,y=20,z=87.0,dx=0,dy=1,dz=0,y_rotation=90..-90] 691 20 37.0
 #astral hall-observatory
-execute if entity @s[x=666.0,y=20,z=107.0,dx=0,dy=1,dz=0,y_rotation=-90..90] unless data storage luigis_mansion:data current_state.current_data.rooms.astral_hall{cleared:1b} run teleport @s 666 20 88.0
 execute if entity @s[x=666.0,y=20,z=107.0,dx=0,dy=1,dz=0,y_rotation=-90..90] unless data storage luigis_mansion:data current_state.current_data.rooms.astral_hall{cleared:1b} run playsound luigis_mansion:music.trick_door music @s 666 20 97 1000
+execute if entity @s[x=666.0,y=20,z=107.0,dx=0,dy=1,dz=0,y_rotation=-90..90] unless data storage luigis_mansion:data current_state.current_data.rooms.astral_hall{cleared:1b} run teleport @s 666 20 88.0
 teleport @s[x=666.0,y=20,z=107.0,dx=0,dy=1,dz=0,y_rotation=-90..90] 645 20 89.0
 stopsound @s[x=645.0,y=20,z=88.0,dx=0,dy=1,dz=0,y_rotation=90..-90] ambient luigis_mansion:music.mansion.room.observatory
 scoreboard players set @s[x=645.0,y=20,z=88.0,dx=0,dy=1,dz=0,y_rotation=90..-90] RoomNoise 0

@@ -1,1 +1,1 @@
-setblock 641 19 98 minecraft:stone_button[face=wall,facing=south,powered=true]
+setblock 641 18 97 minecraft:stone_button[face=ceiling,powered=true]

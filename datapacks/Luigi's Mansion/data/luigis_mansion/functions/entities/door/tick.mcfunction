@@ -10,8 +10,8 @@ execute if entity @s[tag=blockade,tag=!burning,tag=!fake] run data modify entity
 execute if entity @s[tag=area_blockade,tag=!burning,tag=!fake] run data modify entity @e[tag=this_model,limit=1] HandItems[{tag:{}}].tag.Damage set value 15
 execute if entity @s[tag=fake] at @e[tag=this_model_frame,limit=1] run teleport @e[tag=this_model,limit=1] ^ ^ ^0.15
 
-execute if entity @e[tag=extinguish] run function luigis_mansion:entities/door/extinguish
-execute if entity @e[tag=burning] run function luigis_mansion:entities/door/burn
+execute if entity @s[tag=extinguish] run function luigis_mansion:entities/door/extinguish
+execute if entity @s[tag=burning] run function luigis_mansion:entities/door/burn
 execute if entity @s[tag=talk,tag=!open_door,tag=!bash_door,tag=!unlock_door,tag=!attack] run function luigis_mansion:entities/door/use
 tag @s remove talk
 

@@ -5,4 +5,5 @@ execute at @s run function luigis_mansion:animations/shivers/vanish
 execute if score #mirrored Selected matches 0 run teleport @s[scores={ActionTime=..40}] ~ ~0.05 ~ ~20 ~
 execute if score #mirrored Selected matches 1 run teleport @s[scores={ActionTime=..40}] ~ ~0.05 ~ ~-20 ~
 execute if entity @s[scores={ActionTime=40}] run function luigis_mansion:entities/shivers/turn_completely_invisible
+execute if entity @s[scores={ActionTime=120}] run function luigis_mansion:entities/shivers/turn_invisible
 tag @s[scores={ActionTime=120}] add disappear

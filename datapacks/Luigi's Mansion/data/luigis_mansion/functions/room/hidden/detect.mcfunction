@@ -38,9 +38,9 @@ execute as @a[gamemode=spectator,tag=!already_ticked,distance=0..,scores={HomeX=
 execute if entity @a[x=679,y=11,z=-10,dx=41,dy=6,dz=60] run function luigis_mansion:room/hidden/hallway_4/tick
 execute if score #hallway_4 Ticking matches 1 unless entity @a[x=679,y=11,z=-10,dx=41,dy=6,dz=60] unless entity @a[scores={Room=12}] run function luigis_mansion:room/hidden/hallway_4/not_ticking
 execute as @a[gamemode=spectator,tag=!already_ticked,distance=0..,scores={HomeX=679..685,HomeY=9..17,HomeZ=3..45}] at @s run function luigis_mansion:room/hidden/hallway_5/spectator_tick
-execute if entity @a[x=667,y=11,z=3,dx=28,dy=6,dz=42] run function luigis_mansion:room/hidden/hallway_5/tick
-execute unless entity @a[x=667,y=11,z=3,dx=28,dy=6,dz=42] if entity @a[x=678,y=11,z=30,dx=42,dy=6,dz=8] run function luigis_mansion:room/hidden/hallway_5/tick
-execute if score #hallway_5 Ticking matches 1 unless entity @a[x=667,y=11,z=3,dx=28,dy=6,dz=42] unless entity @a[x=678,y=11,z=30,dx=42,dy=6,dz=8] unless entity @a[scores={Room=13}] run function luigis_mansion:room/hidden/hallway_5/not_ticking
+execute if entity @a[x=667,y=11,z=3,dx=18,dy=6,dz=42] run function luigis_mansion:room/hidden/hallway_5/tick
+execute unless entity @a[x=667,y=11,z=3,dx=18,dy=6,dz=42] if entity @a[x=678,y=11,z=30,dx=42,dy=6,dz=8] run function luigis_mansion:room/hidden/hallway_5/tick
+execute if score #hallway_5 Ticking matches 1 unless entity @a[x=667,y=11,z=3,dx=18,dy=6,dz=42] unless entity @a[x=678,y=11,z=30,dx=42,dy=6,dz=8] unless entity @a[scores={Room=13}] run function luigis_mansion:room/hidden/hallway_5/not_ticking
 execute as @a[gamemode=spectator,tag=!already_ticked,distance=0..,scores={HomeX=667..678,HomeY=9..17,HomeZ=3..11}] at @s run function luigis_mansion:room/hidden/hallway_6/spectator_tick
 execute if entity @a[x=667,y=11,z=3,dx=18,dy=6,dz=42] run function luigis_mansion:room/hidden/hallway_6/tick
 execute if score #hallway_6 Ticking matches 1 unless entity @a[x=667,y=11,z=3,dx=18,dy=6,dz=42] unless entity @a[scores={Room=14}] run function luigis_mansion:room/hidden/hallway_6/not_ticking
@@ -106,9 +106,9 @@ execute as @a[gamemode=spectator,tag=!already_ticked,distance=0..,scores={HomeX=
 execute if entity @a[x=637,y=20,z=44,dx=12,dy=6,dz=33] run function luigis_mansion:room/hidden/tea_room/tick
 execute if score #tea_room Ticking matches 1 unless entity @a[x=637,y=20,z=44,dx=12,dy=6,dz=33] unless entity @a[scores={Room=34}] run function luigis_mansion:room/hidden/tea_room/not_ticking
 execute as @a[gamemode=spectator,tag=!already_ticked,distance=0..,scores={HomeX=679..685,HomeY=18..26,HomeZ=3..45}] at @s run function luigis_mansion:room/hidden/hallway_9/spectator_tick
-execute if entity @a[x=667,y=20,z=3,dx=28,dy=6,dz=42] run function luigis_mansion:room/hidden/hallway_9/tick
-execute unless entity @a[x=667,y=20,z=3,dx=28,dy=6,dz=42] if entity @a[x=678,y=20,z=30,dx=42,dy=6,dz=8] run function luigis_mansion:room/hidden/hallway_9/tick
-execute if score #hallway_9 Ticking matches 1 unless entity @a[x=667,y=20,z=3,dx=28,dy=6,dz=42] unless entity @a[x=678,y=20,z=30,dx=42,dy=6,dz=8] unless entity @a[scores={Room=35}] run function luigis_mansion:room/hidden/hallway_9/not_ticking
+execute if entity @a[x=667,y=20,z=3,dx=18,dy=6,dz=42] run function luigis_mansion:room/hidden/hallway_9/tick
+execute unless entity @a[x=667,y=20,z=3,dx=18,dy=6,dz=42] if entity @a[x=678,y=20,z=30,dx=42,dy=6,dz=8] run function luigis_mansion:room/hidden/hallway_9/tick
+execute if score #hallway_9 Ticking matches 1 unless entity @a[x=667,y=20,z=3,dx=18,dy=6,dz=42] unless entity @a[x=678,y=20,z=30,dx=42,dy=6,dz=8] unless entity @a[scores={Room=35}] run function luigis_mansion:room/hidden/hallway_9/not_ticking
 execute as @a[gamemode=spectator,tag=!already_ticked,distance=0..,scores={HomeX=667..678,HomeY=18..26,HomeZ=3..11}] at @s run function luigis_mansion:room/hidden/hallway_10/spectator_tick
 execute if entity @a[x=667,y=20,z=3,dx=18,dy=6,dz=42] run function luigis_mansion:room/hidden/hallway_10/tick
 execute if score #hallway_10 Ticking matches 1 unless entity @a[x=667,y=20,z=3,dx=18,dy=6,dz=42] unless entity @a[scores={Room=36}] run function luigis_mansion:room/hidden/hallway_10/not_ticking

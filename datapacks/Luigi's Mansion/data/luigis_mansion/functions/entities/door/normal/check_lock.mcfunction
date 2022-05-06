@@ -15,8 +15,9 @@ execute if entity @s[tag=hallway_4_ball_room] unless data storage luigis_mansion
 execute if entity @s[tag=hallway_4_ball_room] if data storage luigis_mansion:data current_state.current_data{used_keys:{ball_room:0b},obtained_keys:{ball_room:1b}} run tag @s add unlock
 execute if entity @s[tag=ball_room_storage_room] unless data storage luigis_mansion:data current_state.current_data{obtained_keys:{storage_room:1b}} run tag @s add locked
 execute if entity @s[tag=ball_room_storage_room] if data storage luigis_mansion:data current_state.current_data{used_keys:{storage_room:0b},obtained_keys:{storage_room:1b}} run tag @s add unlock
-execute if entity @s[tag=hallway_5_washroom] store result score #temp Boos run data get storage luigis_mansion:data current_state.current_data.boo_counter
-execute if entity @s[tag=hallway_5_washroom] unless score #temp Boos matches 5.. run tag @s add locked
+execute if entity @s[tag=hallway_5_washroom_1] store result score #temp Boos run data get storage luigis_mansion:data current_state.current_data.boo_counter
+execute if entity @s[tag=hallway_5_washroom_1] unless score #temp Boos matches 5.. run tag @s add locked
+execute if entity @s[tag=hallway_5_washroom_1] unless score #temp Boos matches 5.. run tag @a[tag=talked_to_villager,limit=1,sort=nearest] add washroom_toad
 scoreboard players reset #temp Boos
 execute if entity @s[tag=hallway_3_fortune_tellers_room] unless data storage luigis_mansion:data current_state.current_data{obtained_keys:{fortune_tellers_room:1b}} run tag @s add locked
 execute if entity @s[tag=hallway_3_fortune_tellers_room] if data storage luigis_mansion:data current_state.current_data{used_keys:{fortune_tellers_room:0b},obtained_keys:{fortune_tellers_room:1b}} run tag @s add unlock
@@ -42,8 +43,8 @@ execute if entity @s[tag=hallway_17_balcony_2] unless data storage luigis_mansio
 execute if entity @s[tag=hallway_17_balcony_2] if data storage luigis_mansion:data current_state.current_data{used_keys:{balcony_2:0b},obtained_keys:{balcony_2:1b}} run tag @s add unlock
 execute if entity @s[tag=balcony_2_hallway_18] unless data storage luigis_mansion:data current_state.current_data{obtained_keys:{hallway_18:1b}} run tag @s add locked
 execute if entity @s[tag=balcony_2_hallway_18] if data storage luigis_mansion:data current_state.current_data{used_keys:{hallway_18:0b},obtained_keys:{hallway_18:1b}} run tag @s add unlock
-execute if entity @s[tag=hallway_7_breaker_room] unless data storage luigis_mansion:data current_state.current_data{blackout:1b,obtained_keys:{breaker_room:1b}} run tag @s add locked
-execute if entity @s[tag=hallway_7_breaker_room] if data storage luigis_mansion:data current_state.current_data{blackout:1b,used_keys:{breaker_room:0b},obtained_keys:{breaker_room:1b}} run tag @s add unlock
+execute if entity @s[tag=hallway_7_breaker_room] if data storage luigis_mansion:data current_state.current_data{blackout:1b} unless data storage luigis_mansion:data current_state.current_data{obtained_keys:{breaker_room:1b}} run tag @s add locked
+execute if entity @s[tag=hallway_7_breaker_room] if data storage luigis_mansion:data current_state.current_data{blackout:1b} if data storage luigis_mansion:data current_state.current_data{used_keys:{breaker_room:0b},obtained_keys:{breaker_room:1b}} run tag @s add unlock
 execute if entity @s[tag=hallway_7_cellar] unless data storage luigis_mansion:data current_state.current_data{obtained_keys:{cellar:1b}} run tag @s add locked
 execute if entity @s[tag=hallway_7_cellar] if data storage luigis_mansion:data current_state.current_data{used_keys:{cellar:0b},obtained_keys:{cellar:1b}} run tag @s add unlock
 execute if entity @s[tag=telephone_room_clockwork_room] unless data storage luigis_mansion:data current_state.current_data{obtained_keys:{clockwork_room:1b}} run tag @s add locked

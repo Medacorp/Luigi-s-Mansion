@@ -1,4 +1,4 @@
-summon minecraft:marker 702 12 54 {Tags:["choice"]}
+summon minecraft:marker 701 12 54 {Tags:["choice"]}
 summon minecraft:marker 697 12 65 {Tags:["choice"]}
 summon minecraft:marker 710 12 65 {Tags:["choice"]}
 summon minecraft:marker 710 12 79 {Tags:["choice"]}
