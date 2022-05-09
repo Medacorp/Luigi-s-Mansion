@@ -12,14 +12,13 @@ execute if entity @s[scores={OpenMapTime=0}] run function luigis_mansion:items/g
 execute if entity @s[tag=!looking_at_map,tag=!death_animation,tag=!revive_animation] unless entity @s[scores={KnockbackType=2..}] unless entity @s[scores={ScareType=2..}] run function #luigis_mansion:items
 execute if entity @s[tag=!death_animation,tag=!revive_animation] unless entity @s[scores={KnockbackType=2..}] run function luigis_mansion:items/gameboy_horror
 execute if entity @s[tag=!death_animation,tag=!revive_animation] unless entity @s[scores={KnockbackType=2..}] unless entity @s[scores={ScareType=2..}] run function luigis_mansion:blocks/gravity_swap
-execute if entity @s[tag=!death_animation,tag=!revive_animation] unless entity @s[scores={ScareType=2..}] run function luigis_mansion:blocks/blockade
 execute if entity @s[tag=warp] run function luigis_mansion:items/gameboy_horror/warp
 execute if entity @s[tag=riding_poltergust,scores={KnockbackType=0},tag=!looking_at_map,tag=!death_animation,tag=!revive_animation] run function luigis_mansion:entities/player/riding_poltergust
 execute unless entity @s[tag=riding_poltergust,scores={KnockbackType=0},tag=!looking_at_map,tag=!death_animation,tag=!revive_animation] run scoreboard players set @s SlipX 0
 execute unless entity @s[tag=riding_poltergust,scores={KnockbackType=0},tag=!looking_at_map,tag=!death_animation,tag=!revive_animation] run scoreboard players set @s SlipZ 0
 
 tag @s remove talked_to_villager
-execute if entity @s[scores={Talk=1..,IdleTime=0..},tag=!death_animation,tag=!revive_animation] run function luigis_mansion:target_villager
+execute if entity @s[scores={Talk=1..,IdleTime=0..},tag=!death_animation,tag=!revive_animation] unless entity @s[scores={KnockbackType=1..}] unless entity @s[scores={ScareType=1..}] unless entity @s[scores={Dialog=1..}] run function luigis_mansion:target_villager
 tag @s[scores={Talk=1..,IdleTime=0..}] add talked_to_villager
 scoreboard players set @s[scores={Talk=1..}] Talk 0
 

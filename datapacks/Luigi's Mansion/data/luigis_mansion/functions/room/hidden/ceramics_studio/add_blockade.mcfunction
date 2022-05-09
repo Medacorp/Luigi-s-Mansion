@@ -1,1 +1,0 @@
-tag @e[scores={Room=65},tag=door,type=minecraft:villager] add blockade

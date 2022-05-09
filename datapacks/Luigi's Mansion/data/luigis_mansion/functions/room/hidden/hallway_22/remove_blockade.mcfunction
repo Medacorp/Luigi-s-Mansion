@@ -1,1 +1,0 @@
-tag @e[scores={Room=61},type=minecraft:villager,tag=door] remove area_blockade

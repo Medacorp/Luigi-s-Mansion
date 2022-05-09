@@ -6471,7 +6471,7 @@
         {
             "predicate": {
                 "damaged": 0,
-                "damage": 0.0082,
+                "damage": 0.0083,
                 "custom_model_data": 0
             },
             "model": "luigis_mansion:entity/door/lab_barricade"
@@ -6479,7 +6479,7 @@
         {
             "predicate": {
                 "damaged": 0,
-                "damage": 0.0082,
+                "damage": 0.0083,
                 "custom_model_data": 1
             },
             "model": "luigis_mansion:entity/door/training_barricade"
@@ -6687,7 +6687,7 @@
         {
             "predicate": {
                 "damaged": 0,
-                "damage": 0.008,
+                "damage": 0.0088,
                 "custom_model_data": 9
             },
             "model": "luigis_mansion:entity/door/mansion/2_blockade"
@@ -7091,6 +7091,22 @@
                 "custom_model_data": 28
             },
             "model": "luigis_mansion:entity/door_frame/curved_planks"
+        },
+        {
+            "predicate": {
+                "damaged": 0,
+                "damage": 0.01,
+                "custom_model_data": 29
+            },
+            "model": "luigis_mansion:entity/door_frame/blue_stones"
+        },
+        {
+            "predicate": {
+                "damaged": 0,
+                "damage": 0.01,
+                "custom_model_data": 30
+            },
+            "model": "luigis_mansion:entity/door_frame/golden_decoration"
         },
         {
             "predicate": {

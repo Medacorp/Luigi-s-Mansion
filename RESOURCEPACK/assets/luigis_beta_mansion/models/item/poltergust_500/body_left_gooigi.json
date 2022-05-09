@@ -1,0 +1,6 @@
+{
+	"parent": "luigis_beta_mansion:item/poltergust_500/body_left",
+	"textures": {
+		"0": "luigis_beta_mansion:item/poltergust_gooigi"
+	}
+}
