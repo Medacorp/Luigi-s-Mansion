@@ -1,3 +1,3 @@
-summon minecraft:armor_stand ~0.5 ~4 ~1 {CustomName:'{"translate":"luigis_mansion:item.key"}',Pose:{Head:[0.0f,0.0f,0.01f]},Invisible:1b,Silent:1b,ArmorItems:[{},{},{},{id:"minecraft:diamond_pickaxe",Count:1b,tag:{Unbreakable:1b,Damage:5,CustomModelData:17}}],NoGravity:1b,Tags:["item","key","eternal","this_entity","display","no_spawn_sound"],DisabledSlots:2039583}
+summon minecraft:armor_stand ~0.5 ~4 ~1 {CustomName:'{"translate":"luigis_mansion:item.key"}',Pose:{Head:[0.0f,0.0f,0.01f]},Invisible:1b,Silent:1b,ArmorItems:[{},{},{},{id:"minecraft:diamond_pickaxe",Count:1b,tag:{Unbreakable:1b,Damage:5,CustomModelData:17}}],NoGravity:1b,Tags:["item","key","eternal","this_entity","display","no_reflection","no_spawn_sound"],DisabledSlots:2039583}
 scoreboard players set @e[tag=this_entity,limit=1] Room 0
 scoreboard players set @e[tag=this_entity,limit=1] Time 4
