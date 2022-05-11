@@ -80,5 +80,6 @@ fill 615 100 -18 615 101 -18 minecraft:air
 setblock 615 100 -66 minecraft:structure_block[mode=load]{mode:"LOAD",name:"luigis_mansion:mansion/empty/1",posX:1,posY:-10,posZ:1,sizeX:48,sizeY:48,sizeZ:48,ignoreEntities:1b}
 setblock 615 101 -66 minecraft:redstone_block
 fill 615 100 -66 615 101 -66 minecraft:air
+tag @e[scores={Room=0},tag=door] add remove_from_existence
 forceload remove 749 -66 615 81
 tellraw @a {"translate":"chat.type.text","with":[{"translate":"luigis_mansion:entity.mansion","color":"green"},{"translate":"luigis_mansion:message.load_mansion.stop"}]}

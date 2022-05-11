@@ -4,8 +4,8 @@ scoreboard players set @s[x=755.0,y=11,z=8.0,dx=0,dy=1,dz=1,y_rotation=-180..0] 
 execute if entity @s[x=755.0,y=11,z=8.0,dx=0,dy=1,dz=1,y_rotation=-180..0] run function luigis_mansion:other/music/set/silence
 execute if entity @s[x=755.0,y=11,z=8.0,dx=0,dy=1,dz=0,y_rotation=-180..0] in minecraft:overworld run teleport @s 721.0 102 7
 execute if entity @s[x=755.0,y=11,z=9.0,dx=0,dy=1,dz=0,y_rotation=-180..0] in minecraft:overworld run teleport @s 721.0 102 8
-execute in minecraft:overworld if entity @s[x=720.0,y=102,z=7.0,dx=0,dy=1,dz=0,y_rotation=0..-180] in luigis_mansion:normal run teleport @s 756.0 11 8
-execute in minecraft:overworld if entity @s[x=720.0,y=102,z=8.0,dx=0,dy=1,dz=0,y_rotation=0..-180] in luigis_mansion:normal run teleport @s 756.0 11 9
+execute in minecraft:overworld if entity @s[x=720.0,y=102,z=7.0,dx=0,dy=1,dz=0,y_rotation=0..-180] in luigis_mansion:normal run teleport @s 755.0 11 8
+execute in minecraft:overworld if entity @s[x=720.0,y=102,z=8.0,dx=0,dy=1,dz=0,y_rotation=0..-180] in luigis_mansion:normal run teleport @s 755.0 11 9
 #hallway 1-parlor
 teleport @s[x=736.0,y=20,z=8.0,dx=0,dy=1,dz=0,y_rotation=0..-180] 728.0 20 27
 teleport @s[x=736.0,y=20,z=9.0,dx=0,dy=1,dz=0,y_rotation=0..-180] 728.0 20 28

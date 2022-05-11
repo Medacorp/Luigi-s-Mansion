@@ -1,4 +1,3 @@
-execute if entity @s[tag=boo_woods_foyer] unless data storage luigis_mansion:data current_state.current_data{blackout:1b} run tag @s add locked
 execute if entity @s[tag=hallway_1_parlor] unless data storage luigis_mansion:data {obtained_parlor_key:1b} run tag @s add locked
 execute if entity @s[tag=hallway_1_parlor] if data storage luigis_mansion:data {used_parlor_key:0b,obtained_parlor_key:1b} run tag @s add unlock
 execute if entity @s[tag=parlor_anteroom] unless data storage luigis_mansion:data current_state.current_data{obtained_keys:{anteroom:1b}} run tag @s add locked

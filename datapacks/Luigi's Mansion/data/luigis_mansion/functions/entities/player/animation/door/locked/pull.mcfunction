@@ -2,7 +2,7 @@ execute at @s run summon minecraft:marker ~ ~ ~ {Tags:["home"]}
 execute store result entity @e[tag=home,limit=1] Pos[0] double 0.01 run scoreboard players get @s PosX
 execute store result entity @e[tag=home,limit=1] Pos[2] double 0.01 run scoreboard players get @s PosZ
 execute store result entity @e[tag=home,limit=1] Rotation[0] float 1 run scoreboard players get @s HomeRot
-execute at @e[tag=home,limit=1] run tp @s ~ ~ ~ ~ ~
+execute at @e[tag=home,limit=1] run tp @s ~ ~ ~ ~ 40
 kill @e[tag=home,limit=1]
 scoreboard players add @s AnimationProg 1
 scoreboard players set @s Sound 5
