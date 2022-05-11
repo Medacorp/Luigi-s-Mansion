@@ -183,7 +183,7 @@ tag @s[tag=holding_poltergust] add was_holding_poltergust
 tag @s[tag=!holding_poltergust] remove was_holding_poltergust
 tag @s[tag=holding_poltergust] remove holding_poltergust
 tag @s[tag=death_animation] remove death_animation
-tag @s[tag=spawn_animation] remove spawn_animation
+tag @s[tag=revive_animation] remove revive_animation
 tag @s[tag=stop_model] remove stop_model
 tag @s remove dark_room
 tag @s remove flashlight
