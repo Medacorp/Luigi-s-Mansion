@@ -7110,6 +7110,30 @@
         },
         {
             "predicate": {
+                "damaged": 0,
+                "damage": 0.01,
+                "custom_model_data": 31
+            },
+            "model": "luigis_mansion_3ds_remake:entity/door_frame/red_metal"
+        },
+        {
+            "predicate": {
+                "damaged": 0,
+                "damage": 0.0106,
+                "custom_model_data": 31
+            },
+            "model": "luigis_mansion_3ds_remake:entity/door_frame/double/reinforced_planks_right"
+        },
+        {
+            "predicate": {
+                "damaged": 0,
+                "damage": 0.0112,
+                "custom_model_data": 31
+            },
+            "model": "luigis_mansion_3ds_remake:entity/door_frame/double/reinforced_planks_left"
+        },
+        {
+            "predicate": {
                 "damaged": 1
             },
             "model": "minecraft:item/diamond_pickaxe"

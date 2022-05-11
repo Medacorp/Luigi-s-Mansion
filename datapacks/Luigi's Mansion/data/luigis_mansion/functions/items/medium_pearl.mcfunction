@@ -1,13 +1,13 @@
 playsound luigis_mansion:item.medium_pearl.obtain player @a[tag=same_room] ~ ~ ~ 1
 function luigis_mansion:items/retreive_player_money/retreive
-execute store result score #temp Time run data get storage luigis_mansion:data current_state.my_money.money.medium_pearl
-execute unless score #temp ActionTime matches 2147483647 store result storage luigis_mansion:data current_state.my_money.money.medium_pearl int 1 run scoreboard players add #temp Time 1
+execute store result score #temp Time run data get storage luigis_mansion:data current_state.my_money.money.luigis_mansion.medium_pearl
+execute unless score #temp ActionTime matches 2147483647 store result storage luigis_mansion:data current_state.my_money.money.luigis_mansion.medium_pearl int 1 run scoreboard players add #temp Time 1
 execute store result score #temp Time run data get storage luigis_mansion:data current_state.my_money.total
 scoreboard players add #temp Time 100
 execute if score #temp Time matches ..0 run scoreboard players set #temp Time 2147483647
 execute store result storage luigis_mansion:data current_state.my_money.total int 1 run scoreboard players get #temp Time
-execute store result score #temp Time run data get storage luigis_mansion:data current_state.my_money_data.money.medium_pearl
-execute unless score #temp ActionTime matches 2147483647 store result storage luigis_mansion:data current_state.my_money_data.money.medium_pearl int 1 run scoreboard players add #temp Time 1
+execute store result score #temp Time run data get storage luigis_mansion:data current_state.my_money_data.money.luigis_mansion.medium_pearl
+execute unless score #temp ActionTime matches 2147483647 store result storage luigis_mansion:data current_state.my_money_data.money.luigis_mansion.medium_pearl int 1 run scoreboard players add #temp Time 1
 execute store result score #temp Time run data get storage luigis_mansion:data current_state.my_money_data.total
 scoreboard players add #temp Time 100
 execute if score #temp Time matches ..0 run scoreboard players set #temp Time 2147483647

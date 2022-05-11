@@ -3,7 +3,7 @@ scoreboard players operation #temp LastTotalDamage = @s LastTotalDamage
 scoreboard players operation #temp2 LastTotalDamage = #temp LastTotalDamage
 scoreboard players operation #temp2 LastTotalDamage %= #2 Constants
 
-execute unless score #temp LastTotalDamage = #temp TotalDamage run function luigis_mansion:entities/player/damage/blue_diamond/drop/loop
+execute unless score #temp LastTotalDamage = #temp TotalDamage run function luigis_mansion:entities/player/damage/silver_diamond/drop/loop
 
 scoreboard players reset #temp TotalDamage
 scoreboard players reset #temp LastTotalDamage

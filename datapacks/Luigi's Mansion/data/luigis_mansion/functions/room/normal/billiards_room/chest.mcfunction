@@ -40,5 +40,5 @@ execute unless data storage luigis_mansion:data current_state.current_data.money
 execute unless data storage luigis_mansion:data current_state.current_data.money_spawned{billiards_room_chest:1b} run function luigis_mansion:spawn_entities/item/bill
 execute unless data storage luigis_mansion:data current_state.current_data.money_spawned{billiards_room_chest:1b} run function luigis_mansion:spawn_entities/item/gold_bar
 execute unless data storage luigis_mansion:data current_state.current_data.money_spawned{billiards_room_chest:1b} run function luigis_mansion:spawn_entities/item/gold_bar
-execute unless data storage luigis_mansion:data current_state.current_data.money_spawned{billiards_room_chest:1b} run function luigis_mansion:spawn_entities/item/blue_diamond
+execute unless data storage luigis_mansion:data current_state.current_data.money_spawned{billiards_room_chest:1b} run function luigis_mansion:spawn_entities/item/silver_diamond
 data modify storage luigis_mansion:data current_state.current_data.money_spawned merge value {billiards_room_chest:1b}

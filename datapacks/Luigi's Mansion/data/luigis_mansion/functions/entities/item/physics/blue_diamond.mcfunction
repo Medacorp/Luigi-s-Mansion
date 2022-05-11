@@ -1,2 +1,0 @@
-execute if entity @s[tag=blue_diamond] run function luigis_mansion:entities/item/physics
-execute at @s[tag=blue_diamond] run particle minecraft:crit ~ ~1.75 ~ 0.3 0.3 0.3 0 1 normal @a[tag=same_room]

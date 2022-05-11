@@ -4,7 +4,7 @@ function luigis_mansion:items/gameboy_horror/show_items/items/item/gold_bar
 function luigis_mansion:items/gameboy_horror/show_items/items/item/blue_sapphire
 function luigis_mansion:items/gameboy_horror/show_items/items/item/green_emerald
 function luigis_mansion:items/gameboy_horror/show_items/items/item/red_ruby
-function luigis_mansion:items/gameboy_horror/show_items/items/item/blue_diamond
+function luigis_mansion:items/gameboy_horror/show_items/items/item/silver_diamond
 function luigis_mansion:items/gameboy_horror/show_items/items/item/red_diamond
 function luigis_mansion:items/gameboy_horror/show_items/items/item/gold_diamond
 function luigis_mansion:items/gameboy_horror/show_items/items/item/small_pearl
