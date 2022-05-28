@@ -1,7 +1,7 @@
 {
 	"textures": {
         "particle": "#door",
-		"frame_box": "luigis_mansion:entity/door/frame_box"
+		"frame_box": "luigis_mansion:entity/door_frame/box"
     },
 	"display": {
 		"thirdperson_righthand": {

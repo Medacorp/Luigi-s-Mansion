@@ -4,7 +4,6 @@ execute if score #temp MirrorX matches -2147483648.. run scoreboard players add 
 execute if score #temp MirrorZ matches -2147483648.. run scoreboard players operation #temp MirrorZ *= #100 Constants
 execute if score #temp MirrorZ matches -2147483648.. run scoreboard players add #temp MirrorZ 50
 
-execute if score #temp MirrorX matches -2147483648.. run function luigis_mansion:entities/reflection/rotation/x
-execute if score #temp MirrorZ matches -2147483648.. run function luigis_mansion:entities/reflection/rotation/z
+function luigis_mansion:entities/reflection/rotation
 execute if score #temp MirrorX matches -2147483648.. run function luigis_mansion:entities/reflection/position/x
 execute if score #temp MirrorZ matches -2147483648.. run function luigis_mansion:entities/reflection/position/z

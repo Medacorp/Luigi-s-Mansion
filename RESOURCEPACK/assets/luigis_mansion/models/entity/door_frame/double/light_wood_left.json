@@ -1,6 +1,6 @@
 {
 	"parent": "luigis_mansion:entity/door_frame/double/basic_left",
 	"textures": {
-		"door": "luigis_mansion:entity/door/light_wood_frame"
+		"door": "luigis_mansion:entity/door_frame/light_wood"
 	}
 }

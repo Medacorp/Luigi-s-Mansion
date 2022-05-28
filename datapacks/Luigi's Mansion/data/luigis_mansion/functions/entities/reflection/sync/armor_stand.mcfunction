@@ -20,6 +20,6 @@ execute unless data storage luigis_mansion:data mirror{Tags:["portrait_ghost"]} 
 
 execute if entity @s[tag=found_owner] unless data storage luigis_mansion:data mirror{Tags:["immobile"]} run function luigis_mansion:entities/reflection/mobile_entity
 
-execute if data storage luigis_mansion:data mirror{Tags:["static"]} run tag @e[tag=this_reflection,limit=1] add static
+execute if entity @s[tag=found_owner] if data storage luigis_mansion:data mirror{Tags:["static"]} run tag @e[tag=this_reflection,limit=1] add static
 
 execute at @s rotated ~ 0 if block ^ ^ ^0.1 minecraft:black_concrete run data merge entity @s {ArmorItems:[],HandItems:[],Invisible:1b}

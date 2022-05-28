@@ -1,8 +1,7 @@
 {
 	"credit": "Made with Blockbench",
 	"textures": {
-		"0": "luigis_mansion:entity/bogmire",
-		"particle": "#0"
+		"0": "luigis_mansion:entity/bogmire"
 	},
 	"elements": [
 		{
@@ -81,10 +80,6 @@
 			"to": [18, -10, 18],
 			"rotation": {"angle": 0, "axis": "y", "origin": [8, -2, 8]},
 			"faces": {
-				"north": {"uv": [1.5, 5.25, 3.25, 7.5], "texture": "#0"},
-				"east": {"uv": [0, 5.25, 1.5, 7.5], "texture": "#0"},
-				"south": {"uv": [4.75, 5.25, 6.5, 7.5], "texture": "#0"},
-				"west": {"uv": [3.25, 5.25, 4.75, 7.5], "texture": "#0"},
 				"up": {"uv": [0, 9.375, 2.5, 11.875], "rotation": 180, "texture": "#0"}
 			}
 		}

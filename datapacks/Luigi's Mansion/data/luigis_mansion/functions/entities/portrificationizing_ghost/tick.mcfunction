@@ -24,7 +24,7 @@ execute if entity @s[scores={Dialog=200..279}] store result entity @s ArmorItems
 data modify entity @s[scores={Dialog=300}] Pose.Head[0] set value 0f
 teleport @s[scores={Dialog=300}] 770 80 12 0 0
 execute if entity @s[scores={Dialog=301}] run setblock 770 76 12 minecraft:light_gray_concrete
-execute if entity @s[scores={Dialog=310}] run setblock 770 76 12 minecraft:air
+execute if entity @s[scores={Dialog=310}] run setblock 770 76 12 minecraft:barrier
 execute if entity @s[scores={Dialog=310}] run setblock 770 77 12 minecraft:light_gray_concrete
 execute if entity @s[scores={Dialog=320}] run setblock 770 77 12 minecraft:air
 execute if entity @s[scores={Dialog=320}] run setblock 770 78 11 minecraft:light_gray_concrete

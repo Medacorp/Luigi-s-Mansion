@@ -3915,6 +3915,15 @@
         ],
         "subtitle": "luigis_mansion:subtitles.entity.king_boo.complain"
     },
+    "entity.king_boo.cutscene_flee": {
+        "sounds": [
+            {
+                "name": "luigis_mansion:entity/king_boo/poltergust_latched_on",
+                "stream": false
+            }
+        ],
+        "subtitle": "luigis_mansion:subtitles.entity.king_boo.flee"
+    },
     "entity.king_boo.flee": {
         "sounds": [
             {
