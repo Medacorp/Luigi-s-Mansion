@@ -1,0 +1,16 @@
+{
+	"textures": {
+        "particle": "#door",
+		"frame_box": "luigis_mansion:entity/door_frame/box"
+    },
+	"display": {
+		"thirdperson_righthand": {
+			"rotation": [90, 0, 0],
+			"translation": [-4, 1, 11.099]
+		},
+		"thirdperson_lefthand": {
+			"rotation": [90, 0, 0],
+			"translation": [-4, 1, 11.099]
+		}
+	}
+}

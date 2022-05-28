@@ -14,7 +14,9 @@ tag @s remove fleeing
 execute store result score #temp HomeY run data get entity @s Pos[1] 100
 scoreboard players remove #temp HomeY 130
 tag @s remove on_floor
-execute if score #temp HomeY = @s HomeY run tag @s add on_floor
+execute if score #temp HomeY <= @s HomeY at @s[tag=!on_floor] store result entity @s Pos[1] double 0.01 run scoreboard players get @s HomeY
+execute if score #temp HomeY <= @s HomeY at @s[tag=!on_floor] run teleport @s ~ ~1.3 ~
+execute if score #temp HomeY <= @s HomeY run tag @s add on_floor
 scoreboard players reset #temp HomeY
 
 execute store result score #temp Room run scoreboard players get @s Room

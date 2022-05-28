@@ -1,0 +1,6 @@
+{
+    "variants": {
+        "lit=true":  { "model": "luigis_mansion:block/lit_candle" },
+        "lit=false":  { "model": "luigis_mansion:block/unlit_candle" }
+    }
+}

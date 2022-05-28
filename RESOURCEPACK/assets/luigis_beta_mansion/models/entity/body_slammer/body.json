@@ -1,0 +1,9 @@
+{
+	"credit": "Made with Blockbench",
+	"parent": "luigis_mansion:entity/twirler/body",
+	"textures": {
+		"0": "luigis_beta_mansion:entity/body_slammer/base",
+		"1": "luigis_beta_mansion:entity/body_slammer/overlay",
+		"particle": "luigis_beta_mansion:entity/body_slammer/base"
+	}
+}

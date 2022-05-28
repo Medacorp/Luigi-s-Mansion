@@ -1,0 +1,33 @@
+{   
+	"parent": "minecraft:block/block",
+    "textures": {
+        "particle": "luigis_mansion:block/cheese",
+		"cheese": "luigis_mansion:block/cheese"
+    },
+    "elements": [
+        {   
+			"from": [ 5, 0, 6 ],
+            "to": [ 8, 4, 10 ],
+            "faces": {
+                "down":  { "texture": "#cheese"},
+                "up":    { "texture": "#cheese"},
+                "north": { "texture": "#cheese"},
+                "south": { "texture": "#cheese"},
+                "west":  { "texture": "#cheese"},
+                "east":  { "texture": "#cheese"}
+            }
+        },
+		{   
+			"from": [ 8, 0, 6.5 ],
+            "to": [ 11, 3.5, 9.5 ],
+            "faces": {
+                "down":  { "texture": "#cheese"},
+                "up":    { "texture": "#cheese"},
+                "north": { "texture": "#cheese"},
+                "south": { "texture": "#cheese"},
+                "west":  { "texture": "#cheese"},
+                "east":  { "texture": "#cheese"}
+            }
+        }
+    ]
+}

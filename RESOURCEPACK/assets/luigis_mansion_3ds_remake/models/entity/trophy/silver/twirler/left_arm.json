@@ -1,0 +1,8 @@
+{
+	"parent": "luigis_mansion:entity/twirler/left_arm",
+	"textures": {
+		"0": "luigis_mansion_3ds_remake:entity/trophy/silver/twirler",
+		"1": "luigis_mansion:block/empty",
+		"particle": "luigis_mansion_3ds_remake:entity/trophy/silver/twirler"
+	}
+}

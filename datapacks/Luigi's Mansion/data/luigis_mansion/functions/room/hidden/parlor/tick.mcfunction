@@ -14,7 +14,8 @@ function #luigis_mansion:room/hidden/parlor/interactions/room
 execute if block 714 22 -11 minecraft:brewing_stand[has_bottle_0=true,has_bottle_1=true,has_bottle_2=true] positioned 714 22 -11 run function luigis_mansion:spawn_furniture/purple_candles
 execute if block 714 22 -14 minecraft:brewing_stand[has_bottle_0=true,has_bottle_1=true,has_bottle_2=true] positioned 714 22 -14 run function luigis_mansion:spawn_furniture/purple_candles
 
-execute if entity @a[gamemode=!spectator,scores={Room=3}] run function luigis_mansion:room/hidden/parlor/ghosts
-
-function luigis_mansion:room/hidden/door/hallway_1_parlor
-function luigis_mansion:room/hidden/door/parlor_anteroom
+scoreboard players set #temp Room 3
+execute as @a[gamemode=!spectator,tag=!pull_open_door,tag=!push_open_door] run function #luigis_mansion:get_same_room
+scoreboard players reset #temp Room
+execute if entity @a[tag=same_room,limit=1] run function luigis_mansion:room/hidden/parlor/ghosts
+tag @a[tag=same_room] remove same_room

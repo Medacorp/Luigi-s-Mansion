@@ -1,0 +1,7 @@
+{
+    "parent": "minecraft:block/cube_column",
+    "textures": {
+        "end": "luigis_mansion:block/speaker_side",
+        "side": "luigis_mansion:block/speaker_face"
+    }
+}

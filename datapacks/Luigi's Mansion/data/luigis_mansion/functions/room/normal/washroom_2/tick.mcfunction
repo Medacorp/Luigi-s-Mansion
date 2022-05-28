@@ -11,6 +11,8 @@ function #luigis_mansion:room/normal/washroom_2/interactions/room
 
 clone 664 21 44 664 21 44 658 21 44
 
-execute if entity @a[gamemode=!spectator,scores={Room=42}] run function luigis_mansion:room/normal/washroom_2/ghosts
-
-function luigis_mansion:room/normal/door/hallway_9_washroom_2
+scoreboard players set #temp Room 42
+execute as @a[gamemode=!spectator,tag=!pull_open_door,tag=!push_open_door] run function #luigis_mansion:get_same_room
+scoreboard players reset #temp Room
+execute if entity @a[tag=same_room,limit=1] run function luigis_mansion:room/normal/washroom_2/ghosts
+tag @a[tag=same_room] remove same_room

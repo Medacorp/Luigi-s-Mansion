@@ -11,6 +11,8 @@ scoreboard players reset #temp Wave
 
 function #luigis_mansion:room/hidden/nursery/interactions/room
 
-execute if entity @a[gamemode=!spectator,scores={Room=10}] run function luigis_mansion:room/hidden/nursery/ghosts
-
-function luigis_mansion:room/hidden/door/hallway_2_nursery
+scoreboard players set #temp Room 10
+execute as @a[gamemode=!spectator,tag=!pull_open_door,tag=!push_open_door] run function #luigis_mansion:get_same_room
+scoreboard players reset #temp Room
+execute if entity @a[tag=same_room,limit=1] run function luigis_mansion:room/hidden/nursery/ghosts
+tag @a[tag=same_room] remove same_room

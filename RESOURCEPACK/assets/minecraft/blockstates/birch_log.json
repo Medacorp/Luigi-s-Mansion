@@ -1,0 +1,7 @@
+{
+    "variants": {
+        "axis=y":  { "model": "luigis_mansion:block/speaker" },
+        "axis=z":   { "model": "luigis_mansion:block/speaker", "x": 90 },
+        "axis=x":   { "model": "luigis_mansion:block/speaker", "x": 90, "y": 90 }
+    }
+}

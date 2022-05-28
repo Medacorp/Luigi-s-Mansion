@@ -1,6 +1,7 @@
 {
 	"values": [
 	    "luigis_mansion:room/hidden/anteroom/load/set_loaded",
-        "luigis_mansion:room/hidden/anteroom/load/lights"
+        "luigis_mansion:room/hidden/anteroom/load/lights",
+        "luigis_mansion:room/hidden/anteroom/load/doors"
 	]
 }

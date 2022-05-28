@@ -1,0 +1,78 @@
+{
+	"credit": "Made with Blockbench",
+	"textures": {
+		"nozzle_attachment": "luigis_mansion:item/poltergust_nozzle_attachment",
+		"nozzle": "luigis_mansion:item/poltergust_nozzle"
+	},
+	"elements": [
+		{
+			"from": [6.80716, 6.63647, 1.19863],
+			"to": [9.05716, 8.63647, 14.34863],
+			"rotation": {"angle": 0, "axis": "x", "origin": [4.30716, 17.93647, -2.65137]},
+			"faces": {
+				"north": {"uv": [0.016, 0.984, 0.984, 0.016], "rotation": 270, "texture": "#nozzle"},
+				"east": {"uv": [0.984, 0.016, 0.016, 0.984], "texture": "#nozzle"},
+				"west": {"uv": [0.984, 0.016, 0.016, 0.984], "rotation": 180, "texture": "#nozzle"},
+				"up": {"uv": [0.016, 0.984, 0.984, 0.016], "rotation": 90, "texture": "#nozzle"},
+				"down": {"uv": [0.016, 0.984, 0.984, 0.016], "rotation": 90, "texture": "#nozzle"}
+			}
+		},
+		{
+			"from": [2.30716, 2.63647, 14.34863],
+			"to": [13.55716, 12.63647, 16.34863],
+			"rotation": {"angle": 0, "axis": "x", "origin": [4.30716, 17.93647, -2.65137]},
+			"faces": {
+				"north": {"uv": [0.016, 0.984, 0.984, 0.016], "rotation": 270, "texture": "#nozzle"},
+				"east": {"uv": [0.984, 0.016, 0.016, 0.984], "texture": "#nozzle"},
+				"south": {"uv": [16, 0, 0, 16], "texture": "#nozzle"},
+				"west": {"uv": [0.984, 0.016, 0.016, 0.984], "rotation": 180, "texture": "#nozzle"},
+				"up": {"uv": [0.016, 0.984, 0.984, 0.016], "rotation": 90, "texture": "#nozzle"},
+				"down": {"uv": [0.016, 0.984, 0.984, 0.016], "rotation": 90, "texture": "#nozzle"}
+			}
+		},
+		{
+			"from": [5.80716, 5.63647, 13.19863],
+			"to": [10.05716, 9.63647, 14.34863],
+			"rotation": {"angle": 0, "axis": "x", "origin": [4.30716, 17.93647, -2.65137]},
+			"faces": {
+				"north": {"uv": [0.016, 0.984, 0.984, 0.016], "rotation": 270, "texture": "#nozzle_attachment"},
+				"east": {"uv": [0.984, 0.016, 0.016, 0.984], "texture": "#nozzle_attachment"},
+				"west": {"uv": [0.984, 0.016, 0.016, 0.984], "rotation": 180, "texture": "#nozzle_attachment"},
+				"up": {"uv": [0.016, 0.984, 0.984, 0.016], "rotation": 90, "texture": "#nozzle_attachment"},
+				"down": {"uv": [0.016, 0.984, 0.984, 0.016], "rotation": 90, "texture": "#nozzle_attachment"}
+			}
+		}
+	],
+	"display": {
+		"thirdperson_righthand": {
+			"scale": [0, 0, 0]
+		},
+		"thirdperson_lefthand": {
+			"scale": [0, 0, 0]
+		},
+		"firstperson_righthand": {
+			"rotation": [0, -180, 0],
+			"translation": [1, 1.75, 3.5],
+			"scale": [0.65, 0.65, 0.65]
+		},
+		"firstperson_lefthand": {
+			"rotation": [0, -180, 0],
+			"translation": [1, 1.75, 3.5],
+			"scale": [0.65, 0.65, 0.65]
+		},
+		"ground": {
+			"scale": [0.5, 0.5, 0.5]
+		},
+		"gui": {
+			"rotation": [30, 43, 0],
+			"translation": [-2.25, 2.5, 0]
+		},
+		"head": {
+			"rotation": [0, -180, 0],
+			"translation": [0, -23, -2.75]
+		},
+		"fixed": {
+			"rotation": [0, -180, 0]
+		}
+	}
+}

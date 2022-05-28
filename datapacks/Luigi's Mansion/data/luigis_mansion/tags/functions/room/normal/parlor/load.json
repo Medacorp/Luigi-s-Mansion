@@ -2,6 +2,7 @@
 	"values": [
 	    "luigis_mansion:room/normal/parlor/load/set_loaded",
         "luigis_mansion:room/normal/parlor/load/lights",
+        "luigis_mansion:room/normal/parlor/load/doors",
         "luigis_mansion:room/normal/parlor/load/spawn_money",
         "luigis_mansion:room/normal/parlor/load/candle_1",
         "luigis_mansion:room/normal/parlor/load/candle_2",

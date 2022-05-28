@@ -133,7 +133,7 @@ execute if entity @s[scores={Dialog=195}] run setblock 770 78 11 minecraft:air
 execute if entity @s[scores={Dialog=195}] run setblock 770 77 12 minecraft:light_gray_concrete
 execute if entity @s[scores={Dialog=200}] run setblock 770 77 12 minecraft:air
 execute if entity @s[scores={Dialog=200}] run setblock 770 76 12 minecraft:light_gray_concrete
-execute if entity @s[scores={Dialog=205}] run setblock 770 76 12 minecraft:air
+execute if entity @s[scores={Dialog=205}] run setblock 770 76 12 minecraft:barrier
 execute if entity @s[scores={Dialog=300}] run playsound luigis_mansion:entity.mario.unportrificationizing neutral @a[tag=same_room] ~ ~ ~ 1
 execute at @s[scores={Dialog=300..340}] run teleport @s ~ ~ ~ ~5 ~
 execute at @s[scores={Dialog=341..380}] run teleport @s ~ ~ ~ ~10 ~

@@ -1,0 +1,6 @@
+{
+	"parent": "luigis_mansion:entity/fire_elemental_ghost/full",
+	"textures": {
+		"0": "luigis_mansion:entity/water_elemental_ghost"
+	}
+}

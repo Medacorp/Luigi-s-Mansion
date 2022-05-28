@@ -5,7 +5,8 @@ execute if entity @a[limit=1,scores={GBHCall=1..}] if entity @s[tag=!warp] unles
 execute unless entity @s[scores={Shrunk=1..}] if entity @s[advancements={luigis_mansion:lab/lab=true},nbt=!{Inventory:[{tag:{luigis_mansion:{id:"luigis_mansion:gameboy_horror"}}}]}] run function luigis_mansion:items/gameboy_horror/give
 execute if entity @s[tag=looking_at_map] run function luigis_mansion:items/gameboy_horror/map/tick
 execute if entity @s[scores={UseItem=1},tag=gameboy_horror_selected,tag=looking_at_map] run function luigis_mansion:items/gameboy_horror/map/close
-execute if entity @s[scores={UseItem=1,KnockbackType=0},tag=gameboy_horror_selected,tag=!looking_at_map,tag=!scanning] unless entity @s[scores={ScareType=1..}] unless entity @s[scores={IdleTime=..-1},tag=!idle] run function luigis_mansion:items/gameboy_horror/choice
+execute if entity @s[scores={UseItem=1,KnockbackType=0},tag=open_gbh_menu,tag=gameboy_horror_selected,tag=!looking_at_map,tag=!scanning] unless entity @s[scores={ScareType=1..}] unless entity @s[scores={IdleTime=..-1},tag=!idle] run function luigis_mansion:items/gameboy_horror/double_use
+execute if entity @s[scores={UseItem=1,KnockbackType=0},tag=!open_gbh_menu,tag=gameboy_horror_selected,tag=!looking_at_map,tag=!scanning] unless entity @s[scores={ScareType=1..}] unless entity @s[scores={IdleTime=..-1},tag=!idle] run function luigis_mansion:items/gameboy_horror/choice
 execute if entity @s[scores={GBHChoice=1}] run function luigis_mansion:items/gameboy_horror/map/open
 execute if entity @s[scores={GBHChoice=2}] run function luigis_mansion:items/gameboy_horror/enable_scan
 execute if entity @s[scores={UseItem=1},tag=gameboy_horror_selected,tag=scanning,tag=!warp] run function luigis_mansion:items/gameboy_horror/scan
@@ -15,6 +16,8 @@ execute if entity @s[scores={GBHChoice=4}] run function luigis_mansion:items/gam
 execute if entity @s[scores={GBHCall=1..},tag=gameboy_horror_selected] run function luigis_mansion:items/gameboy_horror/answer
 execute if entity @s[scores={GBHWait=1200}] run function luigis_mansion:items/gameboy_horror/answer
 tag @s[tag=!gameboy_horror_selected,tag=!warp] remove scanning
+tag @s[tag=looking_at_map] remove open_gbh_menu
+tag @s[tag=!gameboy_horror_selected] remove open_gbh_menu
 tag @s[scores={ScareType=2..}] remove scanning
 tag @s remove gameboy_horror_selected
 tag @s[nbt={SelectedItem:{tag:{luigis_mansion:{id:"luigis_mansion:gameboy_horror"}}}}] add gameboy_horror_selected

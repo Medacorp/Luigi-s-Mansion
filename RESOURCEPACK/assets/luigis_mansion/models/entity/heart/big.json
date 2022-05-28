@@ -1,0 +1,12 @@
+{
+	"parent": "luigis_mansion:entity/heart",
+	"textures": {
+		"0": "luigis_mansion:entity/heart/normal"
+	},
+	"display": {
+		"head": {
+			"translation": [0, -7.25, 0],
+			"scale": [1, 1, 1]
+		}
+	}
+}

@@ -1,0 +1,49 @@
+{
+	"credit": "Made with Blockbench",
+	"textures": {
+		"0": "luigis_mansion:entity/vincent_van_gore"
+	},
+	"elements": [
+		{
+			"from": [6, 2, 6],
+			"to": [10, 18, 10],
+			"faces": {
+				"north": {"uv": [7, 5.25, 7.5, 7.25], "texture": "#0"},
+				"east": {"uv": [6.5, 5.25, 7, 7.25], "texture": "#0"},
+				"south": {"uv": [8, 5.25, 8.5, 7.25], "texture": "#0"},
+				"west": {"uv": [7.5, 5.25, 8, 7.25], "texture": "#0"},
+				"up": {"uv": [7, 4.75, 7.5, 5.25], "rotation": 180, "texture": "#0"},
+				"down": {"uv": [7.5, 4.75, 8, 5.25], "rotation": 180, "texture": "#0"}
+			}
+		},
+		{
+			"from": [7, 3, 1],
+			"to": [9, 5, 11],
+			"faces": {
+				"east": {"uv": [8.5, 6, 8.75, 7.25], "rotation": 90, "texture": "#0"},
+				"south": {"uv": [9, 5.75, 9.25, 6], "texture": "#0"},
+				"west": {"uv": [9, 6, 9.25, 7.25], "rotation": 270, "texture": "#0"},
+				"up": {"uv": [9.25, 6, 9.5, 7.25], "texture": "#0"},
+				"down": {"uv": [8.75, 6, 9, 7.25], "rotation": 180, "texture": "#0"}
+			}
+		},
+		{
+			"from": [6.5, 2.5, -3],
+			"to": [9.5, 5.5, 1],
+			"faces": {
+				"north": {"uv": [8.875, 4.875, 9.25, 5.25], "texture": "#0"},
+				"east": {"uv": [8.5, 5.25, 8.875, 5.75], "rotation": 90, "texture": "#0"},
+				"south": {"uv": [9.25, 4.875, 9.625, 5.25], "texture": "#0"},
+				"west": {"uv": [9.25, 5.25, 9.625, 5.75], "rotation": 270, "texture": "#0"},
+				"up": {"uv": [9.625, 5.25, 10, 5.75], "texture": "#0"},
+				"down": {"uv": [8.875, 5.25, 9.25, 5.75], "rotation": 180, "texture": "#0"}
+			}
+		}
+	],
+	"display": {
+		"head": {
+			"translation": [0, -16, 0],
+			"scale": [1.3, 1.3, 1.3]
+		}
+	}
+}

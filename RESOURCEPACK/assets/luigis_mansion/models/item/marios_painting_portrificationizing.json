@@ -1,0 +1,10 @@
+{
+	"parent": "luigis_mansion:item/marios_painting",
+	"display": {
+		"head": {
+			"rotation": [90, 0, 0],
+			"translation": [0, -5.5, -13.5],
+			"scale": [1.6, 1.2, 1.6]
+		}
+	}
+}

@@ -1,0 +1,6 @@
+{
+	"parent": "luigis_mansion:entity/door/training",
+	"textures": {
+		"overlay": "luigis_mansion:entity/door/fire"
+	}
+}

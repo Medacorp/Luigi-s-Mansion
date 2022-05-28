@@ -2,6 +2,6 @@
 	"values": [
 	    "luigis_mansion:room/normal/hallway_22/load/set_loaded",
         "luigis_mansion:room/normal/hallway_22/load/lights",
-        "luigis_mansion:room/normal/hallway_22/load/blockade"
+        "luigis_mansion:room/normal/hallway_22/load/doors"
 	]
 }

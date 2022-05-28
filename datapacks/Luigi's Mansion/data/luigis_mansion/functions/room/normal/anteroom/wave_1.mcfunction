@@ -1,3 +1,3 @@
-function luigis_mansion:room/normal/anteroom/add_blockade
+tag @e[scores={Room=4},tag=door,type=minecraft:villager] add blockade
 execute positioned 687 20 33.0 run function luigis_mansion:spawn_entities/ghost/gold_ghost
 scoreboard players set #anteroom Wave 1

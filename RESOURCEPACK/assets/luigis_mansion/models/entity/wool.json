@@ -1,0 +1,17 @@
+{
+	"parent": "luigis_mansion:entity/round",
+	"credit": "Made with Blockbench",
+	"textures": {
+		"south": "#north",
+		"east": "#north",
+		"west": "#north",
+		"up": "#north",
+		"down": "#north"
+	},
+	"display": {
+		"head": {
+			"translation": [0, -7.25, 0],
+			"scale": [0.7, 0.7, 0.7]
+		}
+	}
+}

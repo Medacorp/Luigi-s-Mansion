@@ -1,0 +1,9 @@
+{
+	"credit": "Made with Blockbench",
+	"parent": "luigis_mansion:entity/ghost/right_arm",
+	"textures": {
+		"0": "luigis_beta_mansion:entity/ghost/base",
+		"1": "luigis_beta_mansion:entity/ghost/overlay",
+		"particle": "luigis_beta_mansion:entity/ghost/base"
+	}
+}

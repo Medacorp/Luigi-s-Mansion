@@ -2,6 +2,7 @@
 	"values": [
 	    "luigis_mansion:room/hidden/hallway_21/load/set_loaded",
         "luigis_mansion:room/hidden/hallway_21/load/lights",
+        "luigis_mansion:room/hidden/hallway_21/load/doors",
         "luigis_mansion:room/hidden/hallway_21/load/candle_1",
         "luigis_mansion:room/hidden/hallway_21/load/candle_2",
         "luigis_mansion:room/hidden/hallway_21/load/web"

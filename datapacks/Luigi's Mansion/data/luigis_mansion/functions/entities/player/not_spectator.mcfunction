@@ -12,13 +12,14 @@ execute if entity @s[scores={OpenMapTime=0}] run function luigis_mansion:items/g
 execute if entity @s[tag=!looking_at_map,tag=!death_animation,tag=!revive_animation] unless entity @s[scores={KnockbackType=2..}] unless entity @s[scores={ScareType=2..}] run function #luigis_mansion:items
 execute if entity @s[tag=!death_animation,tag=!revive_animation] unless entity @s[scores={KnockbackType=2..}] run function luigis_mansion:items/gameboy_horror
 execute if entity @s[tag=!death_animation,tag=!revive_animation] unless entity @s[scores={KnockbackType=2..}] unless entity @s[scores={ScareType=2..}] run function luigis_mansion:blocks/gravity_swap
-execute if entity @s[tag=!death_animation,tag=!revive_animation] unless entity @s[scores={ScareType=2..}] run function luigis_mansion:blocks/blockade
 execute if entity @s[tag=warp] run function luigis_mansion:items/gameboy_horror/warp
 execute if entity @s[tag=riding_poltergust,scores={KnockbackType=0},tag=!looking_at_map,tag=!death_animation,tag=!revive_animation] run function luigis_mansion:entities/player/riding_poltergust
 execute unless entity @s[tag=riding_poltergust,scores={KnockbackType=0},tag=!looking_at_map,tag=!death_animation,tag=!revive_animation] run scoreboard players set @s SlipX 0
 execute unless entity @s[tag=riding_poltergust,scores={KnockbackType=0},tag=!looking_at_map,tag=!death_animation,tag=!revive_animation] run scoreboard players set @s SlipZ 0
 
-execute if entity @s[scores={Talk=1..},tag=!death_animation,tag=!revive_animation] run function luigis_mansion:target_villager
+tag @s remove talked_to_villager
+execute if entity @s[scores={Talk=1..,IdleTime=0..},tag=!death_animation,tag=!revive_animation] unless entity @s[scores={KnockbackType=1..}] unless entity @s[scores={ScareType=1..}] unless entity @s[scores={Dialog=1..}] run function luigis_mansion:target_villager
+tag @s[scores={Talk=1..,IdleTime=0..}] add talked_to_villager
 scoreboard players set @s[scores={Talk=1..}] Talk 0
 
 execute unless entity @a[scores={GBHCall=1..},limit=1] rotated ~ 0 positioned ^ ^ ^-4 run function luigis_mansion:entities/player/spawn_ghosts
@@ -27,11 +28,11 @@ function luigis_mansion:entities/player/health_display
 clear @s[advancements={luigis_mansion:lab/lab=true}] minecraft:diamond_pickaxe{luigis_mansion:{id:"luigis_mansion:contest_reward_map"}}
 kill @e[distance=..3,type=minecraft:item]
 
-execute unless entity @s[scores={Invulnerable=0..}] run scoreboard players set @s Invulnerable 0
-scoreboard players remove @s[scores={Invulnerable=1..}] Invulnerable 1
 execute if entity @s[scores={Health=1..}] store result score @s Damage run data get entity @s Health -1
 scoreboard players add @s[scores={Health=1..}] Damage 100
 execute if entity @s[scores={Damage=1..},tag=!spectator] run function luigis_mansion:entities/player/take_damage
+execute unless entity @s[scores={Invulnerable=0..}] run scoreboard players set @s Invulnerable 0
+scoreboard players remove @s[scores={Invulnerable=1..}] Invulnerable 1
 effect give @s[scores={Food=3..}] minecraft:hunger 1 255 true
 effect give @s[scores={Food=..0}] minecraft:saturation 1 0 true
 execute unless entity @s[scores={MaxHealth=100}] run scoreboard players add @s MaxHealthTime 1

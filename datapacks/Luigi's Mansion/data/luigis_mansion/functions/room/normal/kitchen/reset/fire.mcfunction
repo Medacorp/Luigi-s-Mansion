@@ -1,1 +1,0 @@
-fill 699 11 88 699 12 88 minecraft:air

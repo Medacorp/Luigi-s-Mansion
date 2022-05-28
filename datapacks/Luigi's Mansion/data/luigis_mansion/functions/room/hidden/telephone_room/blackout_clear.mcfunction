@@ -1,1 +1,1 @@
-function luigis_mansion:room/hidden/telephone_room/remove_blockade
+tag @e[scores={Room=56},tag=door,type=minecraft:villager] remove blockade

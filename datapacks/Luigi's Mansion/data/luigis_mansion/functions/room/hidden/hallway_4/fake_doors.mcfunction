@@ -1,3 +1,0 @@
-execute if data storage luigis_mansion:data current_state.current_data{blackout:1b} positioned 691 11 31 unless entity @e[distance=..0.7,tag=fake_door,limit=1] run function luigis_mansion:spawn_entities/fake_door/normal/north
-execute if data storage luigis_mansion:data current_state.current_data{blackout:1b} positioned 691 11 37 unless entity @e[distance=..0.7,tag=fake_door,limit=1] run function luigis_mansion:spawn_entities/fake_door/normal/south
-scoreboard players set #hallway_4 FakeDoors 1

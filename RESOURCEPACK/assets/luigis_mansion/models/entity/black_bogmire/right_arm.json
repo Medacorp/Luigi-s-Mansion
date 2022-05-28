@@ -1,0 +1,6 @@
+{
+	"parent": "luigis_mansion:entity/bogmire/right_arm",
+	"textures": {
+		"0": "luigis_mansion:entity/black_bogmire"
+	}
+}

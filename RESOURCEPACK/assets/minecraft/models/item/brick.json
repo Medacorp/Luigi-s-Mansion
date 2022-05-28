@@ -1,0 +1,320 @@
+{
+    "parent": "minecraft:item/generated",
+    "textures": {
+        "layer0": "minecraft:item/brick"
+    },
+    "overrides": [
+		{
+            "predicate": {
+                "custom_model_data": 1
+            },
+            "model": "luigis_mansion:item/key"
+        },
+		{
+            "predicate": {
+                "custom_model_data": 2
+            },
+            "model": "luigis_mansion:item/heart_key"
+        },
+		{
+            "predicate": {
+                "custom_model_data": 3
+            },
+            "model": "luigis_mansion:item/club_key"
+        },
+		{
+            "predicate": {
+                "custom_model_data": 4
+            },
+            "model": "luigis_mansion:item/diamond_key"
+        },
+		{
+            "predicate": {
+                "custom_model_data": 5
+            },
+            "model": "luigis_mansion:item/spade_key"
+        },
+		{
+            "predicate": {
+                "custom_model_data": 6
+            },
+            "model": "luigis_mansion:item/marios_hat"
+        },
+		{
+            "predicate": {
+                "custom_model_data": 7
+            },
+            "model": "luigis_mansion:item/marios_letter"
+        },
+		{
+            "predicate": {
+                "custom_model_data": 8
+            },
+            "model": "luigis_mansion:item/marios_star"
+        },
+		{
+            "predicate": {
+                "custom_model_data": 9
+            },
+            "model": "luigis_mansion:item/marios_glove"
+        },
+		{
+            "predicate": {
+                "custom_model_data": 10
+            },
+            "model": "luigis_mansion:item/marios_shoe"
+        },
+		{
+            "predicate": {
+                "custom_model_data": 11
+            },
+            "model": "luigis_mansion:item/fire_element_medal"
+        },
+		{
+            "predicate": {
+                "custom_model_data": 12
+            },
+            "model": "luigis_mansion:item/water_element_medal"
+        },
+		{
+            "predicate": {
+                "custom_model_data": 13
+            },
+            "model": "luigis_mansion:item/ice_element_medal"
+        },
+		{
+            "predicate": {
+                "custom_model_data": 18
+            },
+            "model": "luigis_mansion:item/gold_coin"
+        },
+		{
+            "predicate": {
+                "custom_model_data": 19
+            },
+            "model": "luigis_mansion:item/bill"
+        },
+		{
+            "predicate": {
+                "custom_model_data": 20
+            },
+            "model": "luigis_mansion:item/gold_bar"
+        },
+		{
+            "predicate": {
+                "custom_model_data": 21
+            },
+            "model": "luigis_mansion:item/blue_sapphire"
+        },
+		{
+            "predicate": {
+                "custom_model_data": 22
+            },
+            "model": "luigis_mansion:item/green_emerald"
+        },
+		{
+            "predicate": {
+                "custom_model_data": 23
+            },
+            "model": "luigis_mansion:item/red_ruby"
+        },
+		{
+            "predicate": {
+                "custom_model_data": 24
+            },
+            "model": "luigis_mansion:item/red_diamond"
+        },
+		{
+            "predicate": {
+                "custom_model_data": 25
+            },
+            "model": "luigis_mansion:item/blue_diamond"
+        },
+		{
+            "predicate": {
+                "custom_model_data": 26
+            },
+            "model": "luigis_mansion:item/gold_diamond"
+        },
+		{
+            "predicate": {
+                "custom_model_data": 27
+            },
+            "model": "luigis_mansion:item/small_pearl"
+        },
+		{
+            "predicate": {
+                "custom_model_data": 28
+            },
+            "model": "luigis_mansion:item/medium_pearl"
+        },
+		{
+            "predicate": {
+                "custom_model_data": 29
+            },
+            "model": "luigis_mansion:item/big_pearl"
+        },
+		{
+            "predicate": {
+                "custom_model_data": 30
+            },
+            "model": "luigis_mansion_3ds_remake:entity/trophy/silver/ghost/body"
+        },
+        {
+            "predicate": {
+                "custom_model_data": 31
+            },
+            "model": "luigis_mansion_3ds_remake:entity/trophy/silver/ghost/right_arm"
+        },
+        {
+            "predicate": {
+                "custom_model_data": 32
+            },
+            "model": "luigis_mansion_3ds_remake:entity/trophy/silver/ghost/left_arm"
+        },
+        {
+            "predicate": {
+                "custom_model_data": 33
+            },
+            "model": "luigis_mansion_3ds_remake:entity/trophy/silver/puncher/body"
+        },
+        {
+            "predicate": {
+                "custom_model_data": 34
+            },
+            "model": "luigis_mansion_3ds_remake:entity/trophy/silver/puncher/right_arm"
+        },
+        {
+            "predicate": {
+                "custom_model_data": 35
+            },
+            "model": "luigis_mansion_3ds_remake:entity/trophy/silver/puncher/left_arm"
+        },
+        {
+            "predicate": {
+                "custom_model_data": 36
+            },
+            "model": "luigis_mansion_3ds_remake:entity/trophy/silver/twirler/body"
+        },
+        {
+            "predicate": {
+                "custom_model_data": 37
+            },
+            "model": "luigis_mansion_3ds_remake:entity/trophy/silver/twirler/right_arm"
+        },
+        {
+            "predicate": {
+                "custom_model_data": 38
+            },
+            "model": "luigis_mansion_3ds_remake:entity/trophy/silver/twirler/left_arm"
+        },
+        {
+            "predicate": {
+                "custom_model_data": 39
+            },
+            "model": "luigis_mansion_3ds_remake:entity/trophy/silver/garbage_can_ghost/body"
+        },
+        {
+            "predicate": {
+                "custom_model_data": 40
+            },
+            "model": "luigis_mansion_3ds_remake:entity/trophy/silver/garbage_can_ghost/right_arm"
+        },
+        {
+            "predicate": {
+                "custom_model_data": 41
+            },
+            "model": "luigis_mansion_3ds_remake:entity/trophy/silver/garbage_can_ghost/left_arm"
+        },
+		{
+            "predicate": {
+                "custom_model_data": 42
+            },
+            "model": "luigis_mansion_3ds_remake:entity/trophy/gold/ghost/body"
+        },
+        {
+            "predicate": {
+                "custom_model_data": 43
+            },
+            "model": "luigis_mansion_3ds_remake:entity/trophy/gold/ghost/right_arm"
+        },
+        {
+            "predicate": {
+                "custom_model_data": 44
+            },
+            "model": "luigis_mansion_3ds_remake:entity/trophy/gold/ghost/left_arm"
+        },
+        {
+            "predicate": {
+                "custom_model_data": 45
+            },
+            "model": "luigis_mansion_3ds_remake:entity/trophy/gold/puncher/body"
+        },
+        {
+            "predicate": {
+                "custom_model_data": 46
+            },
+            "model": "luigis_mansion_3ds_remake:entity/trophy/gold/puncher/right_arm"
+        },
+        {
+            "predicate": {
+                "custom_model_data": 47
+            },
+            "model": "luigis_mansion_3ds_remake:entity/trophy/gold/puncher/left_arm"
+        },
+        {
+            "predicate": {
+                "custom_model_data": 48
+            },
+            "model": "luigis_mansion_3ds_remake:entity/trophy/gold/twirler/body"
+        },
+        {
+            "predicate": {
+                "custom_model_data": 49
+            },
+            "model": "luigis_mansion_3ds_remake:entity/trophy/gold/twirler/right_arm"
+        },
+        {
+            "predicate": {
+                "custom_model_data": 50
+            },
+            "model": "luigis_mansion_3ds_remake:entity/trophy/gold/twirler/left_arm"
+        },
+        {
+            "predicate": {
+                "custom_model_data": 51
+            },
+            "model": "luigis_mansion_3ds_remake:entity/trophy/gold/garbage_can_ghost/body"
+        },
+        {
+            "predicate": {
+                "custom_model_data": 52
+            },
+            "model": "luigis_mansion_3ds_remake:entity/trophy/gold/garbage_can_ghost/right_arm"
+        },
+        {
+            "predicate": {
+                "custom_model_data": 53
+            },
+            "model": "luigis_mansion_3ds_remake:entity/trophy/gold/garbage_can_ghost/left_arm"
+        },
+        {
+            "predicate": {
+                "custom_model_data": 54
+            },
+            "model": "luigis_mansion_3ds_remake:entity/trophy/gold/grabbing_ghost/body"
+        },
+        {
+            "predicate": {
+                "custom_model_data": 55
+            },
+            "model": "luigis_mansion_3ds_remake:entity/trophy/gold/grabbing_ghost/right_arm"
+        },
+        {
+            "predicate": {
+                "custom_model_data": 56
+            },
+            "model": "luigis_mansion_3ds_remake:entity/trophy/gold/grabbing_ghost/left_arm"
+        }
+	]
+}

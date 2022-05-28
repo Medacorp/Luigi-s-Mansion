@@ -13,6 +13,7 @@
         "luigis_mansion:items/poltergust_3000/effect_on_entity/fire/flying_fish",
         "luigis_mansion:items/poltergust_3000/effect_on_entity/fire/ghost",
         "luigis_mansion:items/poltergust_3000/effect_on_entity/fire/spike_ball",
-        "luigis_mansion:items/poltergust_3000/effect_on_entity/fire/bomb"
+        "luigis_mansion:items/poltergust_3000/effect_on_entity/fire/bomb",
+        "luigis_mansion:items/poltergust_3000/effect_on_entity/fire/door"
 	]
 }

@@ -1,0 +1,7 @@
+{
+    "parent": "minecraft:block/cube_column",
+    "textures": {
+        "end": "luigis_mansion:block/dark_stone_slab_top",
+        "side": "luigis_mansion:block/dark_stone_slab_side"
+    }
+}

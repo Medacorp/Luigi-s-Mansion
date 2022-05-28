@@ -1,0 +1,89 @@
+{
+	"credit": "Made with Blockbench",
+	"textures": {
+		"0": "luigis_mansion:entity/waiter",
+		"1": "luigis_mansion:block/waiter_plate",
+		"food": "luigis_mansion:block/empty",
+		"particle": "luigis_mansion:entity/waiter"
+	},
+	"elements": [
+		{
+			"from": [0, 2, 11],
+			"to": [5, 5, 14],
+			"rotation": {"angle": 22.5, "axis": "y", "origin": [5, 4.5, 12.5]},
+			"faces": {
+				"north": {"uv": [14.75, 11.75, 16, 12.5], "texture": "#0"},
+				"south": {"uv": [14.75, 12.5, 16, 13.25], "texture": "#0"},
+				"west": {"uv": [0, 8, 0.125, 8.125], "texture": "#0"},
+				"up": {"uv": [14.75, 13.25, 16, 14], "texture": "#0"},
+				"down": {"uv": [14.75, 14, 16, 14.75], "texture": "#0"}
+			}
+		},
+		{
+			"from": [2.55, 2, 2.9],
+			"to": [5.55, 5, 13.9],
+			"rotation": {"angle": 0, "axis": "x", "origin": [8, 4.5, 12.5]},
+			"faces": {
+				"east": {"uv": [12, 12.5, 14.75, 13.25], "texture": "#0"},
+				"west": {"uv": [12, 11.75, 14.75, 12.5], "texture": "#0"},
+				"up": {"uv": [12, 13.25, 14.75, 14], "texture": "#0"},
+				"down": {"uv": [12, 14, 14.75, 14.75], "texture": "#0"}
+			}
+		},
+		{
+			"from": [2, 1.5, -1],
+			"to": [8, 5.5, 3],
+			"rotation": {"angle": 0, "axis": "y", "origin": [4, 3.5, 3]},
+			"faces": {
+				"north": {"uv": [11, 13.25, 12, 14.75], "rotation": 90, "texture": "#0"},
+				"east": {"uv": [10, 14.75, 11, 15.75], "rotation": 270, "texture": "#0"},
+				"south": {"uv": [10, 13.25, 11, 14.75], "rotation": 90, "texture": "#0"},
+				"west": {"uv": [12.5, 14.75, 13.5, 15.75], "rotation": 90, "texture": "#0"},
+				"up": {"uv": [11, 14.75, 12.5, 15.75], "rotation": 180, "texture": "#0"},
+				"down": {"uv": [8.5, 14.75, 10, 15.75], "texture": "#0"}
+			}
+		},
+		{
+			"from": [4, 5.75, -0.5],
+			"to": [7, 7.75, 1.5],
+			"rotation": {"angle": -22.5, "axis": "x", "origin": [5, 5.5, 2]},
+			"faces": {
+				"north": {"uv": [14.75, 14.75, 15.25, 15.5], "rotation": 90, "texture": "#0"},
+				"east": {"uv": [14.25, 15.375, 14.75, 15.875], "rotation": 270, "texture": "#0"},
+				"south": {"uv": [14.25, 14.75, 14.75, 15.5], "rotation": 90, "texture": "#0"},
+				"west": {"uv": [15.5, 15.5, 16, 16], "rotation": 90, "texture": "#0"},
+				"up": {"uv": [14.75, 15.5, 15.5, 16], "rotation": 180, "texture": "#0"}
+			}
+		},
+		{
+			"from": [0, -3, -2],
+			"to": [14, 11, -1],
+			"rotation": {"angle": 0, "axis": "y", "origin": [8, 8, 6]},
+			"faces": {
+				"north": {"uv": [0, 0, 16, 16], "texture": "#1"},
+				"east": {"uv": [15, 0, 16, 16], "texture": "#1"},
+				"south": {"uv": [0, 0, 16, 16], "texture": "#1"},
+				"west": {"uv": [0, 0, 1, 16], "texture": "#1"},
+				"up": {"uv": [0, 0, 16, 1], "texture": "#1"},
+				"down": {"uv": [0, 15, 16, 16], "texture": "#1"}
+			}
+		},
+		{
+			"from": [3, 0, -10],
+			"to": [11, 8, -2],
+			"rotation": {"angle": 0, "axis": "y", "origin": [8, 7, 8]},
+			"faces": {
+				"north": {"uv": [3, 3, 13, 13], "texture": "#food"},
+				"east": {"uv": [3, 3, 13, 13], "texture": "#food"},
+				"west": {"uv": [3, 3, 13, 13], "texture": "#food"},
+				"up": {"uv": [3, 3, 13, 13], "texture": "#food"},
+				"down": {"uv": [3, 3, 13, 13], "texture": "#food"}
+			}
+		}
+	],
+	"display": {
+		"thirdperson_righthand": {
+			"translation": [6, 2.5, 4.25]
+		}
+	}
+}

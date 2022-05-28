@@ -1,0 +1,6 @@
+{
+	"parent": "luigis_mansion:entity/heart",
+	"textures": {
+		"0": "luigis_mansion:entity/heart/ghost"
+	}
+}

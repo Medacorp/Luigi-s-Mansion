@@ -1,0 +1,6 @@
+{
+	"parent": "luigis_mansion:item/silver_king_boo_painting",
+	"textures": {
+		"image": "luigis_mansion:painting/silver/king_boo"
+	}
+}

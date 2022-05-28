@@ -1,0 +1,8 @@
+{
+	"parent": "luigis_mansion:entity/grabbing_ghost/right_arm",
+	"textures": {
+		"0": "luigis_mansion_3ds_remake:entity/trophy/gold/grabbing_ghost",
+		"1": "luigis_mansion:block/empty",
+		"particle": "luigis_mansion_3ds_remake:entity/trophy/gold/grabbing_ghost"
+	}
+}

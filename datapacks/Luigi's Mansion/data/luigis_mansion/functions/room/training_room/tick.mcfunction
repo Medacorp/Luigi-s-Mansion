@@ -6,5 +6,3 @@ scoreboard players set #temp Room -2
 execute as @a[gamemode=!spectator,scores={Room=-2}] run function luigis_mansion:room/training_room/tick_per_player
 
 function #luigis_mansion:room/training_room/interactions/room
-
-function luigis_mansion:room/door/underground_lab_training_room

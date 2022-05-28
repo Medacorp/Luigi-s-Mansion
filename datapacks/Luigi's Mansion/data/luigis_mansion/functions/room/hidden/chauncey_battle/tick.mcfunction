@@ -10,6 +10,10 @@ execute as @a[gamemode=!spectator,scores={Room=73}] run function luigis_mansion:
 
 execute if data storage luigis_mansion:data current_state.current_data.rooms.nursery{cleared:0b} as @a unless entity @s[scores={Room=73}] run function luigis_mansion:room/hidden/chauncey_battle/warp_to
 
-execute if entity @a[gamemode=!spectator,scores={Room=73}] run function luigis_mansion:room/hidden/chauncey_battle/ghosts
+scoreboard players set #temp Room 73
+execute as @a[gamemode=!spectator,tag=!pull_open_door,tag=!push_open_door] run function #luigis_mansion:get_same_room
+scoreboard players reset #temp Room
+execute if entity @a[tag=same_room,limit=1] run function luigis_mansion:room/hidden/chauncey_battle/ghosts
+tag @a[tag=same_room] remove same_room
 
 execute as @e[tag=!spectator,x=792,y=17,z=-56,dx=2,dy=13,dz=15,tag=ball,tag=!spit,y_rotation=0..-180] at @s run teleport @s ~ ~ ~ ~-180 ~

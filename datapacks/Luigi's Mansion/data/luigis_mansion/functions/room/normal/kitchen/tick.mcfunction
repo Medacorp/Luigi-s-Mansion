@@ -5,13 +5,11 @@ scoreboard players set #temp Room 27
 
 execute as @a[gamemode=!spectator,scores={Room=27}] run function luigis_mansion:room/normal/kitchen/tick_per_player
 
+execute if entity @e[x=699.0,y=11,z=88.5,distance=..0.7,type=minecraft:villager,tag=door,tag=!burning,limit=1] run data modify storage luigis_mansion:data current_state.current_data.technical_data merge value {extinguished_kitchen_fire:1b}
 function #luigis_mansion:room/normal/kitchen/interactions/room
 
 scoreboard players set #temp Room 27
-execute as @a[gamemode=!spectator] run function #luigis_mansion:get_same_room
+execute as @a[gamemode=!spectator,tag=!pull_open_door,tag=!push_open_door] run function #luigis_mansion:get_same_room
 scoreboard players reset #temp Room
 execute if entity @a[tag=same_room,limit=1] run function luigis_mansion:room/normal/kitchen/ghosts
 tag @a[tag=same_room] remove same_room
-
-function luigis_mansion:room/normal/door/dining_room_kitchen
-function luigis_mansion:room/normal/door/kitchen_boneyard

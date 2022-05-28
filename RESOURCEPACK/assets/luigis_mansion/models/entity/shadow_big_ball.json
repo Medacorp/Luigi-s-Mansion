@@ -1,0 +1,10 @@
+{
+	"parent": "luigis_mansion:entity/shadow_ball",
+	"credit": "Made with Blockbench",
+	"display": {
+		"head": {
+			"translation": [0, -7.25, 0],
+			"scale": [3, 3, 3]
+		}
+	}
+}

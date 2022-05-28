@@ -1,0 +1,7 @@
+{
+	"credit": "Made with Blockbench",
+	"parent": "luigis_mansion:entity/ghost_guy/left_arm",
+	"textures": {
+		"spear": "luigis_mansion:entity/ghost_guy/spear"
+	}
+}

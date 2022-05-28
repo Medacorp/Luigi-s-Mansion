@@ -1,0 +1,28 @@
+{
+	"credit": "Made with Blockbench",
+	"textures": {
+		"0": "luigis_mansion:entity/toad",
+		"particle": "luigis_mansion:entity/toad"
+	},
+	"elements": [
+		{
+			"from": [4, 0, 1],
+			"to": [11, 7, 11],
+			"faces": {
+				"north": {"uv": [1.25, 10, 2.25, 11], "texture": "#0"},
+				"east": {"uv": [0, 10, 1.25, 11], "texture": "#0"},
+				"south": {"uv": [3.375, 10, 4.375, 11], "texture": "#0"},
+				"west": {"uv": [2.125, 10, 3.375, 11], "texture": "#0"},
+				"up": {"uv": [1.25, 8.75, 2.25, 10], "rotation": 180, "texture": "#0"},
+				"down": {"uv": [2.25, 8.75, 3.25, 10], "rotation": 180, "texture": "#0"}
+			}
+		}
+	],
+	"display": {
+		"thirdperson_lefthand": {
+			"rotation": [90, 0, 0],
+			"translation": [-3.5, -2, 10.5],
+			"scale": [0.7, 0.7, 0.7]
+		}
+	}
+}

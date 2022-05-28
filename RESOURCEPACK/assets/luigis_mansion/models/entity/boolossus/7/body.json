@@ -1,0 +1,8 @@
+{
+	"parent": "luigis_mansion:entity/boolossus/1/body",
+	"display": {
+		"head": {
+			"scale": [2.2857, 2.2857, 2.2857]
+		}
+	}
+}

@@ -9,6 +9,8 @@ execute as @a[gamemode=!spectator,x=643.5,y=20,z=-79.5,distance=..0.7,y_rotation
 
 function #luigis_mansion:room/normal/observatory/interactions/room
 
-execute if entity @a[gamemode=!spectator,scores={Room=46}] run function luigis_mansion:room/normal/observatory/ghosts
-
-function luigis_mansion:room/normal/door/astral_hall_observatory
+scoreboard players set #temp Room 46
+execute as @a[gamemode=!spectator,tag=!pull_open_door,tag=!push_open_door] run function #luigis_mansion:get_same_room
+scoreboard players reset #temp Room
+execute if entity @a[tag=same_room,limit=1] run function luigis_mansion:room/normal/observatory/ghosts
+tag @a[tag=same_room] remove same_room

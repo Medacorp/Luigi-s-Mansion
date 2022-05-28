@@ -2,6 +2,7 @@
 	"values": [
 	    "luigis_mansion:room/normal/telephone_room/load/set_loaded",
         "luigis_mansion:room/normal/telephone_room/load/lights",
+        "luigis_mansion:room/normal/telephone_room/load/doors",
         "luigis_mansion:room/normal/telephone_room/load/chest_1",
         "luigis_mansion:room/normal/telephone_room/load/chest_2",
         "luigis_mansion:room/normal/telephone_room/load/chest_3",

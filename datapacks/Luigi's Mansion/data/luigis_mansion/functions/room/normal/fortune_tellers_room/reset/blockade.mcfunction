@@ -1,1 +1,0 @@
-function luigis_mansion:room/normal/fortune_tellers_room/remove_blockade

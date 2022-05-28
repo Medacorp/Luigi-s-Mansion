@@ -1,0 +1,6 @@
+{
+	"parent": "luigis_mansion_3ds_remake:item/gold_painting",
+	"textures": {
+		"image": "luigis_mansion_3ds_remake:painting/gold/biff_atlas"
+	}
+}

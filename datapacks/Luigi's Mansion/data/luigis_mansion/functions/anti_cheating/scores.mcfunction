@@ -35,6 +35,7 @@ scoreboard objectives add ForceScreen dummy
 scoreboard objectives add GBHCall dummy
 scoreboard objectives add GBHChoice trigger
 scoreboard objectives add GBHDialog dummy
+scoreboard objectives add GBHDoubleUse trigger
 scoreboard objectives add GBHRadar dummy
 scoreboard objectives add GBHWait dummy
 scoreboard objectives add GhostCaught dummy
@@ -198,6 +199,9 @@ scoreboard players set #2000 Constants 2000
 scoreboard players set #10000 Constants 10000
 scoreboard players set #20000 Constants 20000
 
+team add NoCollision
+team modify NoCollision collisionRule never
+
 scoreboard objectives setdisplay list Health
 
 bossbar add luigis_mansion:boo_counter {"translate":"luigis_mansion:message.boo_counter","color":"white","with":["0","0"]}
@@ -223,6 +227,8 @@ execute unless score #training_choice Selected matches 0..1 run scoreboard playe
 execute unless score #freeze_timer Selected matches 0..1 run scoreboard players set #freeze_timer Selected 0
 execute unless score #debug Selected matches 0..1 run scoreboard players set #debug Selected 0
 execute unless data storage luigis_mansion:data current_state run function luigis_mansion:other/upgrade_path/newly_installed
+
+execute unless score #global_player_names Selected matches 0..1 run scoreboard players set #global_player_names Selected 1
 
 gamerule doTileDrops false
 gamerule doEntityDrops false

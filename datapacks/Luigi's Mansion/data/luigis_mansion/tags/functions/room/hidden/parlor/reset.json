@@ -2,7 +2,6 @@
     "values": [
         "luigis_mansion:room/hidden/parlor/reset/unload",
         "#luigis_mansion:room/hidden/parlor/turn_lights/off",
-        "luigis_mansion:room/hidden/parlor/reset/blockade",
         "luigis_mansion:room/hidden/parlor/reset/candle_1",
         "luigis_mansion:room/hidden/parlor/reset/candle_2",
         "luigis_mansion:room/hidden/parlor/reset/candle_3",

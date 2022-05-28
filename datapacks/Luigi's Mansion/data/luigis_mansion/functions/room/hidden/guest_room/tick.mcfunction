@@ -14,7 +14,9 @@ execute if block 736 23 68 minecraft:tripwire_hook run setblock 734 23 68 minecr
 execute if block 736 23 66 minecraft:redstone_wall_torch run setblock 734 23 66 minecraft:redstone_wall_torch[facing=west,lit=true]
 execute if block 736 23 66 minecraft:tripwire_hook run setblock 734 23 66 minecraft:tripwire_hook[facing=west]
 
-execute if entity @a[gamemode=!spectator,scores={Room=70}] run function luigis_mansion:room/hidden/guest_room/ghosts
+scoreboard players set #temp Room 70
+execute as @a[gamemode=!spectator,tag=!pull_open_door,tag=!push_open_door] run function #luigis_mansion:get_same_room
+scoreboard players reset #temp Room
+execute if entity @a[tag=same_room,limit=1] run function luigis_mansion:room/hidden/guest_room/ghosts
+tag @a[tag=same_room] remove same_room
 execute unless data storage luigis_mansion:data current_state.current_data.rooms.guest_room{cleared:1b} as @e[tag=haunted_clown_doll,scores={Room=70,WaitTime=..60}] run data modify entity @s Pose.Head[2] set value 180.0f
-
-function luigis_mansion:room/hidden/door/sitting_room_guest_room

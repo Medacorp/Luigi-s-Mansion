@@ -6,15 +6,11 @@ tag @e[tag=ghost,scores={Room=33}] add no_hidden_move
 
 execute as @a[gamemode=!spectator,scores={Room=33}] run function luigis_mansion:room/normal/hallway_8/tick_per_player
 
+execute if entity @e[x=661.0,y=20,z=59.5,distance=..0.7,type=minecraft:villager,tag=door,tag=!burning,limit=1] run data modify storage luigis_mansion:data current_state.current_data.technical_data merge value {extinguished_hallway_8_fire:1b}
 function #luigis_mansion:room/normal/hallway_8/interactions/room
 
 scoreboard players set #temp Room 33
-execute as @a[gamemode=!spectator] run function #luigis_mansion:get_same_room
+execute as @a[gamemode=!spectator,tag=!pull_open_door,tag=!push_open_door] run function #luigis_mansion:get_same_room
 scoreboard players reset #temp Room
 execute if entity @a[tag=same_room,limit=1] run function luigis_mansion:room/normal/hallway_8/ghosts
 tag @a[tag=same_room] remove same_room
-
-function luigis_mansion:room/normal/door/rec_room_hallway_8
-function luigis_mansion:room/normal/door/hallway_5_hallway_8
-function luigis_mansion:room/normal/door/hallway_8_tea_room
-function luigis_mansion:room/normal/door/hallway_8_hallway_9

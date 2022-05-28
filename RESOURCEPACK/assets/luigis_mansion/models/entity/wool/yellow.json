@@ -1,0 +1,7 @@
+{
+	"parent": "luigis_mansion:entity/wool",
+	"credit": "Made with Blockbench",
+	"textures": {
+		"north": "luigis_mansion:entity/wool/yellow"
+	}
+}

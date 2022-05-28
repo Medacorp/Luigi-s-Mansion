@@ -22,8 +22,8 @@ execute in minecraft:overworld run fill 27 0 0 26 0 0 minecraft:bedrock
 data modify storage luigis_mansion:data current_state.current_data.money_grabbed set from storage luigis_mansion:data current_state.new_money_grabbed
 data remove storage luigis_mansion:data current_state.new_money_grabbed
 
-execute store result score #temp ActionTime run data get storage luigis_mansion:data current_state.my_money_data.money.red_ruby
-execute store result score #temp2 ActionTime run data get storage luigis_mansion:data current_state.my_money.money.red_ruby
+execute store result score #temp ActionTime run data get storage luigis_mansion:data current_state.my_money_data.money.luigis_mansion.red_ruby
+execute store result score #temp2 ActionTime run data get storage luigis_mansion:data current_state.my_money.money.luigis_mansion.red_ruby
 execute store result score #temp Money run data get storage luigis_mansion:data current_state.my_money_data.total
 execute store result score #temp2 Money run data get storage luigis_mansion:data current_state.my_money.total
 scoreboard players operation #temp3 Money = #temp ActionTime

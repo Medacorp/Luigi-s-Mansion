@@ -1,4 +1,4 @@
-execute store result score #temp Time run data get storage luigis_mansion:data current_state.current_data.money_grabbed[0].money.bill
+execute store result score #temp Time run data get storage luigis_mansion:data current_state.current_data.money_grabbed[0].money.luigis_mansion.bill
 scoreboard players operation #temp Money += #temp Time
 data modify storage luigis_mansion:data current_state.current_data.new_money_grabbed append from storage luigis_mansion:data current_state.current_data.money_grabbed[0]
 data remove storage luigis_mansion:data current_state.current_data.money_grabbed[0]

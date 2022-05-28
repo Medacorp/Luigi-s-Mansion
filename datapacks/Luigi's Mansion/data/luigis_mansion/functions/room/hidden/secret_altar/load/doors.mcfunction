@@ -1,0 +1,2 @@
+execute positioned 653 93 33 rotated 90 0 run function luigis_mansion:spawn_furniture/door/left/push/spade
+tag @e[x=653.0,y=93,z=33.5,distance=..0.7,type=minecraft:villager,tag=door,limit=1] add hallway_22_secret_altar

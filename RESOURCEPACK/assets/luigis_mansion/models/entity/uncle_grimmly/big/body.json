@@ -1,0 +1,9 @@
+{
+	"parent": "luigis_mansion:entity/uncle_grimmly/body",
+	"display": {
+		"head": {
+			"translation": [0, -33, 0],
+			"scale": [2.6, 2.6, 2.6]
+		}
+	}
+}

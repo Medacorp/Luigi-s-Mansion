@@ -1,0 +1,2 @@
+execute if score #temp MirrorX matches -2147483648.. run function luigis_mansion:entities/reflection/rotation/x
+execute if score #temp MirrorZ matches -2147483648.. run function luigis_mansion:entities/reflection/rotation/z

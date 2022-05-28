@@ -10,7 +10,7 @@ execute in minecraft:overworld run setblock 26 0 0 minecraft:shulker_box{Items:[
 execute in minecraft:overworld run data modify block 27 0 0 Items[0].tag.value set from entity @s UUID
 data modify storage luigis_mansion:data current_state.new_money_grabbed set value []
 execute in minecraft:overworld if data storage luigis_mansion:data current_state.current_data.money_grabbed[-1] run function luigis_mansion:items/gameboy_horror/show_items/check_money/personal_value
-execute store result score #temp2 Money run data get storage luigis_mansion:data current_state.my_money.money.green_emerald
+execute store result score #temp2 Money run data get storage luigis_mansion:data current_state.my_money.money.luigis_mansion.green_emerald
 scoreboard players reset #temp ActionTime
 execute in minecraft:overworld run fill 27 0 0 26 0 0 minecraft:bedrock
 data modify storage luigis_mansion:data current_state.current_data.money_grabbed set from storage luigis_mansion:data current_state.new_money_grabbed

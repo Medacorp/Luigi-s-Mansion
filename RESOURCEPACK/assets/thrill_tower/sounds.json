@@ -1,0 +1,29 @@
+{
+    "music.catching_master_hand_and_crazy_hand_intro": {
+        "sounds": [
+            {
+                "name": "thrill_tower:music/catching_master_hand_and_crazy_hand_intro",
+                "stream": true,
+                "volume": 0.0005
+            }
+        ]
+    },
+    "music.catching_master_hand_and_crazy_hand": {
+        "sounds": [
+            {
+                "name": "thrill_tower:music/catching_master_hand_and_crazy_hand",
+                "stream": true,
+                "volume": 0.0005
+            }
+        ]
+    },
+    "music.master_hand_and_crazy_hand": {
+        "sounds": [
+            {
+                "name": "thrill_tower:music/master_hand_and_crazy_hand",
+                "stream": true,
+                "volume": 0.00025
+            }
+        ]
+    }
+}

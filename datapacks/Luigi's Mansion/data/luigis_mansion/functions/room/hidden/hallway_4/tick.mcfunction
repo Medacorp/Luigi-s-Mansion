@@ -9,10 +9,7 @@ execute as @a[gamemode=!spectator,scores={Room=12}] run function luigis_mansion:
 function #luigis_mansion:room/hidden/hallway_4/interactions/room
 
 scoreboard players set #temp Room 12
-execute as @a[gamemode=!spectator] run function #luigis_mansion:get_same_room
+execute as @a[gamemode=!spectator,tag=!pull_open_door,tag=!push_open_door] run function #luigis_mansion:get_same_room
 scoreboard players reset #temp Room
 execute if entity @a[tag=same_room,limit=1] run function luigis_mansion:room/hidden/hallway_4/ghosts
 tag @a[tag=same_room] remove same_room
-
-function luigis_mansion:room/hidden/door/hallway_4_ball_room
-function luigis_mansion:room/hidden/door/hallway_4_dining_room

@@ -1,1 +1,0 @@
-function luigis_mansion:room/hidden/hallway_22/remove_blockade

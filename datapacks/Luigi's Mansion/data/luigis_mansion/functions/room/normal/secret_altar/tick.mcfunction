@@ -13,6 +13,8 @@ clone 644 95 -25 644 95 -25 644 95 -27
 clone 644 95 -11 644 95 -11 644 95 -41
 execute if entity @e[x=636.5,y=94,z=-17.5,distance=..0.7,type=minecraft:item_frame,nbt=!{Item:{}},limit=1] run function luigis_mansion:room/normal/secret_altar/grab_painting
 
-execute if entity @a[gamemode=!spectator,scores={Room=72}] run function luigis_mansion:room/normal/secret_altar/ghosts
-
-function luigis_mansion:room/normal/door/hallway_22_secret_altar
+scoreboard players set #temp Room 72
+execute as @a[gamemode=!spectator,tag=!pull_open_door,tag=!push_open_door] run function #luigis_mansion:get_same_room
+scoreboard players reset #temp Room
+execute if entity @a[tag=same_room,limit=1] run function luigis_mansion:room/normal/secret_altar/ghosts
+tag @a[tag=same_room] remove same_room

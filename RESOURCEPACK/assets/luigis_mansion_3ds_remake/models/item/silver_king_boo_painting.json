@@ -1,0 +1,6 @@
+{
+	"parent": "luigis_mansion_3ds_remake:item/king_boo_painting",
+	"textures": {
+		"frame": "luigis_mansion_3ds_remake:painting/silver_king_boo_frame"
+	}
+}

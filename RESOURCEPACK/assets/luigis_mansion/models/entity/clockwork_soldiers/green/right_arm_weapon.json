@@ -1,0 +1,6 @@
+{
+	"parent": "luigis_mansion:entity/clockwork_soldiers/blue/right_arm_weapon",
+	"textures": {
+		"0": "luigis_mansion:entity/clockwork_soldiers/green"
+	}
+}

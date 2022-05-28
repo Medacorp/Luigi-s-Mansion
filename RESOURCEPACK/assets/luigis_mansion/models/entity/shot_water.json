@@ -1,0 +1,9 @@
+{
+	"parent": "luigis_mansion:entity/shot_element",
+	"credit": "Made with Blockbench",
+	"textures": {
+		"0": "luigis_mansion:entity/shot_element/water/back",
+		"1": "luigis_mansion:entity/shot_element/water/front",
+		"2": "luigis_mansion:entity/shot_element/water/side"
+	}
+}

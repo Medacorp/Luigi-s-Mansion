@@ -24,4 +24,4 @@ function luigis_mansion:spawn_entities/item/bill
 function luigis_mansion:spawn_entities/item/bill
 function luigis_mansion:spawn_entities/item/bill
 function luigis_mansion:spawn_entities/item/gold_bar
-function luigis_mansion:spawn_entities/item/blue_diamond
+function luigis_mansion:spawn_entities/item/silver_diamond

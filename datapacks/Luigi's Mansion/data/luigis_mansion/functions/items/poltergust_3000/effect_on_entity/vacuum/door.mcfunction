@@ -1,0 +1,1 @@
+tag @s[tag=door,tag=!fake] add in_vacuum

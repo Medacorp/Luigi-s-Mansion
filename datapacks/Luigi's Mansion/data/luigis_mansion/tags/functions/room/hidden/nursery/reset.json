@@ -2,7 +2,6 @@
     "values": [
         "luigis_mansion:room/hidden/nursery/reset/unload",
         "#luigis_mansion:room/hidden/nursery/turn_lights/off",
-        "luigis_mansion:room/hidden/nursery/reset/blockade",
         "luigis_mansion:room/hidden/nursery/reset/chair_1",
         "luigis_mansion:room/hidden/nursery/reset/chair_2",
         "luigis_mansion:room/hidden/nursery/reset/chest",

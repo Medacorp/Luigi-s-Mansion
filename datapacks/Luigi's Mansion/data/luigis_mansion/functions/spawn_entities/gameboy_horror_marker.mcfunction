@@ -1,4 +1,4 @@
-summon minecraft:armor_stand ~ ~ ~ {NoGravity:1b,Invisible:1b,CustomName:'{"translate":"entity.minecraft.player"}',Tags:["gameboy_horror_marker","new"],CustomNameVisible:1b,ArmorItems:[{},{},{},{id:"minecraft:leather_chestplate",Count:1b,tag:{Unbreakable:1b,Damage:1,CustomModelData:19,display:{color:37129}}}],DisabledSlots:2039583}
+summon minecraft:armor_stand ~ ~ ~ {NoGravity:1b,Invisible:1b,CustomName:'{"translate":"entity.minecraft.player"}',Tags:["gameboy_horror_marker","no_reflection","new"],CustomNameVisible:1b,ArmorItems:[{},{},{},{id:"minecraft:leather_chestplate",Count:1b,tag:{Unbreakable:1b,Damage:1,CustomModelData:19,display:{color:37129}}}],DisabledSlots:2039583}
 teleport @e[tag=gameboy_horror_marker,tag=new,limit=1] ~ ~ ~ ~ ~
 scoreboard players operation #temp ID = @s ID
 execute as @e[tag=gameboy_horror_marker,tag=!new] if score @s ID = #temp ID run kill @e[tag=gameboy_horror_marker,tag=new,limit=1]

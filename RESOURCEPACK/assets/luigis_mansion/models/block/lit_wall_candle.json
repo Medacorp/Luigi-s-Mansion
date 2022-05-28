@@ -1,0 +1,8 @@
+{
+    "parent": "luigis_mansion:block/wall_candle",
+	"textures": {
+        "candle": "luigis_mansion:block/wall_candle_on",
+		"candle_top": "luigis_mansion:block/wall_candle_top_on",
+		"wall": "luigis_mansion:block/wall_candle_holder"
+    }
+}

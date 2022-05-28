@@ -1,0 +1,8 @@
+{
+    "variants": {
+        "facing=east":  { "model": "luigis_mansion:block/unlit_wall_candle" },
+        "facing=south":  { "model": "luigis_mansion:block/unlit_wall_candle", "y": 90 },
+        "facing=west":  { "model": "luigis_mansion:block/unlit_wall_candle", "y": 180 },
+        "facing=north":  { "model": "luigis_mansion:block/unlit_wall_candle", "y": 270 }
+    }
+}

@@ -12,7 +12,8 @@ stopsound @a[scores={Room=55,RoomNoise=0}] ambient luigis_mansion:block.telephon
 execute unless entity @a[tag=toad_5_dialog,limit=1] unless entity @a[tag=uncle_grimmly_dialog,limit=1] if data storage luigis_mansion:data current_state.current_data{blackout:1b} unless data storage luigis_mansion:data current_state.current_data.technical_data{telephone_3:1b} positioned 752 29 -26 run playsound luigis_mansion:block.telephone.ring ambient @a[scores={Room=55,RoomNoise=0}] ~ ~ ~ 1
 execute unless entity @a[tag=toad_5_dialog,limit=1] unless entity @a[tag=uncle_grimmly_dialog,limit=1] if data storage luigis_mansion:data current_state.current_data{blackout:1b} unless data storage luigis_mansion:data current_state.current_data.technical_data{telephone_3:1b} run scoreboard players set @a[scores={Room=55,RoomNoise=0}] RoomNoise 40
 
-function luigis_mansion:room/hidden/hallway_19/ghosts
-
-function luigis_mansion:room/hidden/door/hallway_19_telephone_room
-function luigis_mansion:room/hidden/door/hallway_19_armory
+scoreboard players set #temp Room 55
+execute as @a[gamemode=!spectator,tag=!pull_open_door,tag=!push_open_door] run function #luigis_mansion:get_same_room
+scoreboard players reset #temp Room
+execute if entity @a[tag=same_room,limit=1] run function luigis_mansion:room/hidden/hallway_19/ghosts
+tag @a[tag=same_room] remove same_room

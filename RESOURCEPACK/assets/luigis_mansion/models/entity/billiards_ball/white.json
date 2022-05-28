@@ -1,0 +1,8 @@
+{
+	"parent": "luigis_mansion:entity/billiards_ball",
+	"credit": "Made with Blockbench",
+	"textures": {
+		"north": "luigis_mansion:entity/ball/billiards/white",
+		"south": "luigis_mansion:entity/ball/billiards/white"
+	}
+}

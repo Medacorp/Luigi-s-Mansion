@@ -1,1 +1,0 @@
-fill 661 20 59 661 21 59 minecraft:air

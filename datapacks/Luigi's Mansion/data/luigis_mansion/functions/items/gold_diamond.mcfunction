@@ -11,14 +11,14 @@ execute as @a[tag=collector,tag=looking_at_map,limit=1,scores={Health=..40,Shrun
 scoreboard players set @a[tag=collector,limit=1] Sound 70
 execute as @a[tag=same_room,scores={Music=..70}] unless entity @s[scores={HealthMusic=1..}] run scoreboard players set @s Music 70
 function luigis_mansion:items/retreive_player_money/retreive
-execute store result score #temp Time run data get storage luigis_mansion:data current_state.my_money.money.gold_diamond
-execute unless score #temp ActionTime matches 2147483647 store result storage luigis_mansion:data current_state.my_money.money.gold_diamond int 1 run scoreboard players add #temp Time 1
+execute store result score #temp Time run data get storage luigis_mansion:data current_state.my_money.money.luigis_mansion.gold_diamond
+execute unless score #temp ActionTime matches 2147483647 store result storage luigis_mansion:data current_state.my_money.money.luigis_mansion.gold_diamond int 1 run scoreboard players add #temp Time 1
 execute store result score #temp Time run data get storage luigis_mansion:data current_state.my_money.total
 scoreboard players add #temp Time 20000
 execute if score #temp Time matches ..0 run scoreboard players set #temp Time 2147483647
 execute store result storage luigis_mansion:data current_state.my_money.total int 1 run scoreboard players get #temp Time
-execute store result score #temp Time run data get storage luigis_mansion:data current_state.my_money_data.money.gold_diamond
-execute unless score #temp ActionTime matches 2147483647 store result storage luigis_mansion:data current_state.my_money_data.money.gold_diamond int 1 run scoreboard players add #temp Time 1
+execute store result score #temp Time run data get storage luigis_mansion:data current_state.my_money_data.money.luigis_mansion.gold_diamond
+execute unless score #temp ActionTime matches 2147483647 store result storage luigis_mansion:data current_state.my_money_data.money.luigis_mansion.gold_diamond int 1 run scoreboard players add #temp Time 1
 execute store result score #temp Time run data get storage luigis_mansion:data current_state.my_money_data.total
 scoreboard players add #temp Time 20000
 execute if score #temp Time matches ..0 run scoreboard players set #temp Time 2147483647
