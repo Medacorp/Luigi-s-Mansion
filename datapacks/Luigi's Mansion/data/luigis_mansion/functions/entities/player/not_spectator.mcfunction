@@ -53,7 +53,7 @@ execute at @s[scores={LightX=-2147483648..,Shrunk=1..}] run function luigis_mans
 tag @s[tag=!death_animation,tag=!revive_animation] remove spectator
 
 effect give @s minecraft:invisibility 1000000 0 true
-function luigis_mansion:animations/luigi
+execute if entity @s[tag=!camera] run function luigis_mansion:animations/luigi
 execute if entity @s[scores={KnockbackTime=1..}] run function luigis_mansion:entities/player/knockback
 execute if entity @s[scores={ScareTime=1..}] run function luigis_mansion:entities/player/scared
 execute if entity @s[tag=death_animation] run function luigis_mansion:entities/player/death_animation

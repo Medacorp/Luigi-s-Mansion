@@ -1,3 +1,4 @@
+tag @s[tag=camera,gamemode=!spectator] remove spectator
 execute unless block ~ ~ ~ minecraft:air{loaded:0b} unless block ~-48 ~ ~ minecraft:air{loaded:0b} unless block ~48 ~ ~ minecraft:air{loaded:0b} unless block ~ ~ ~-48 minecraft:air{loaded:0b} unless block ~ ~ ~48 minecraft:air{loaded:0b} unless block ~48 ~ ~48 minecraft:air{loaded:0b} unless block ~48 ~ ~-48 minecraft:air{loaded:0b} unless block ~-48 ~ ~48 minecraft:air{loaded:0b} unless block ~-48 ~ ~-48 minecraft:air{loaded:0b} run function luigis_mansion:main/loaded_chunks
 execute if entity @s[scores={Jump=1..}] unless block ~ ~ ~ #minecraft:climbable run function luigis_mansion:main/prevent_jump
 execute if entity @s[tag=flipped_gravity] run function luigis_mansion:entities/player/correct_flipped_position
@@ -96,3 +97,4 @@ execute unless entity @s[scores={SettingsCheck=0}] run function luigis_mansion:s
 tag @s add me
 execute as @a[distance=..0.4,tag=!me,limit=1] run function luigis_mansion:entities/player/collide
 tag @s remove me
+tag @s[tag=camera] add spectator

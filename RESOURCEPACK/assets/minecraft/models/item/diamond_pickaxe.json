@@ -7134,6 +7134,38 @@
         },
         {
             "predicate": {
+                "damaged": 0,
+                "damage": 0.0118,
+                "custom_model_data": 0
+            },
+            "model": "luigis_mansion:entity/cobweb/undisturbed"
+        },
+        {
+            "predicate": {
+                "damaged": 0,
+                "damage": 0.0118,
+                "custom_model_data": 1
+            },
+            "model": "luigis_mansion:entity/cobweb/pulled"
+        },
+        {
+            "predicate": {
+                "damaged": 0,
+                "damage": 0.0118,
+                "custom_model_data": 2
+            },
+            "model": "luigis_mansion:entity/cobweb/pushed"
+        },
+        {
+            "predicate": {
+                "damaged": 0,
+                "damage": 0.0118,
+                "custom_model_data": 3
+            },
+            "model": "luigis_mansion:entity/cobweb/broken"
+        },
+        {
+            "predicate": {
                 "damaged": 1
             },
             "model": "minecraft:item/diamond_pickaxe"
