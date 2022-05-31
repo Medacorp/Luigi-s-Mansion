@@ -1,7 +1,6 @@
 {
     "values": [
         "luigis_mansion:room/normal/hallway_18/reset/unload",
-        "#luigis_mansion:room/normal/hallway_18/turn_lights/off",
-        "luigis_mansion:room/normal/hallway_18/reset/web"
+        "#luigis_mansion:room/normal/hallway_18/turn_lights/off"
     ]
 }

@@ -6,8 +6,6 @@
 		"luigis_mansion:room/normal/foyer/interactions/room/lamp",
 		"luigis_mansion:room/normal/foyer/interactions/room/mirror",
 		"luigis_mansion:room/normal/foyer/interactions/room/table",
-		"luigis_mansion:room/normal/foyer/interactions/room/vacuumable",
-		"luigis_mansion:room/normal/foyer/interactions/room/web_1",
-		"luigis_mansion:room/normal/foyer/interactions/room/web_2"
+		"luigis_mansion:room/normal/foyer/interactions/room/vacuumable"
 	]
 }

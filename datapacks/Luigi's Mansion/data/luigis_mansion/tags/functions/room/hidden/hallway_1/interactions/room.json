@@ -1,8 +1,6 @@
 {
 	"values": [
 		"luigis_mansion:room/hidden/hallway_1/interactions/room/jar_1",
-		"luigis_mansion:room/hidden/hallway_1/interactions/room/jar_2",
-		"luigis_mansion:room/hidden/hallway_1/interactions/room/web_1",
-		"luigis_mansion:room/hidden/hallway_1/interactions/room/web_2"
+		"luigis_mansion:room/hidden/hallway_1/interactions/room/jar_2"
 	]
 }

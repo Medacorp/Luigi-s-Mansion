@@ -1,8 +1,6 @@
 {
 	"values": [
 		"luigis_mansion:room/normal/hallway_1/interactions/poltergust/jar_1",
-		"luigis_mansion:room/normal/hallway_1/interactions/poltergust/jar_2",
-		"luigis_mansion:room/normal/hallway_1/interactions/poltergust/web_1",
-		"luigis_mansion:room/normal/hallway_1/interactions/poltergust/web_2"
+		"luigis_mansion:room/normal/hallway_1/interactions/poltergust/jar_2"
 	]
 }

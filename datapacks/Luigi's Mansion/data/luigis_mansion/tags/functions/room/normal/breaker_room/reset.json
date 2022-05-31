@@ -24,7 +24,6 @@
         "luigis_mansion:room/normal/breaker_room/reset/lamp",
         "luigis_mansion:room/normal/breaker_room/reset/mirror",
         "luigis_mansion:room/normal/breaker_room/reset/table",
-        "luigis_mansion:room/normal/breaker_room/reset/vacuumable",
-        "luigis_mansion:room/normal/breaker_room/reset/web"
+        "luigis_mansion:room/normal/breaker_room/reset/vacuumable"
     ]
 }

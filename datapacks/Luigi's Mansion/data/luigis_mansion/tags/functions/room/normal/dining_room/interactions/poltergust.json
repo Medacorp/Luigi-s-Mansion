@@ -24,8 +24,6 @@
 		"luigis_mansion:room/normal/dining_room/interactions/poltergust/table",
 		"luigis_mansion:room/normal/dining_room/interactions/poltergust/torch_1",
 		"luigis_mansion:room/normal/dining_room/interactions/poltergust/torch_2",
-		"luigis_mansion:room/normal/dining_room/interactions/poltergust/vacuumable",
-		"luigis_mansion:room/normal/dining_room/interactions/poltergust/web_1",
-		"luigis_mansion:room/normal/dining_room/interactions/poltergust/web_2"
+		"luigis_mansion:room/normal/dining_room/interactions/poltergust/vacuumable"
 	]
 }

@@ -3,7 +3,6 @@
         "luigis_mansion:room/normal/hallway_21/reset/unload",
         "#luigis_mansion:room/normal/hallway_21/turn_lights/off",
         "luigis_mansion:room/normal/hallway_21/reset/candle_1",
-        "luigis_mansion:room/normal/hallway_21/reset/candle_2",
-        "luigis_mansion:room/normal/hallway_21/reset/web"
+        "luigis_mansion:room/normal/hallway_21/reset/candle_2"
     ]
 }

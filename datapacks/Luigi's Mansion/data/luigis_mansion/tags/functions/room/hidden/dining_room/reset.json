@@ -32,8 +32,6 @@
         "luigis_mansion:room/hidden/dining_room/reset/table",
         "luigis_mansion:room/hidden/dining_room/reset/torch_1",
         "luigis_mansion:room/hidden/dining_room/reset/torch_2",
-        "luigis_mansion:room/hidden/dining_room/reset/vacuumable",
-        "luigis_mansion:room/hidden/dining_room/reset/web_1",
-        "luigis_mansion:room/hidden/dining_room/reset/web_2"
+        "luigis_mansion:room/hidden/dining_room/reset/vacuumable"
     ]
 }

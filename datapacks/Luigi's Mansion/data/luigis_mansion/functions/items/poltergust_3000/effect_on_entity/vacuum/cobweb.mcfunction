@@ -1,1 +1,1 @@
-execute positioned ~ ~-1.5 ~ if entity @s[distance=..0.5,tag=cobweb,tag=!broken] run function luigis_mansion:items/poltergust_3000/effect_on_entity/vacuum/effect/cobweb
+execute positioned ~ ~-1.3 ~ if entity @s[distance=..0.5,tag=cobweb,tag=!broken] run function luigis_mansion:items/poltergust_3000/effect_on_entity/vacuum/effect/cobweb
