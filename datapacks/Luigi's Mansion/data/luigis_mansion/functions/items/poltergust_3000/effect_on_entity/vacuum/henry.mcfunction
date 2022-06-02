@@ -1,1 +1,1 @@
-tag @s[tag=henry,tag=!carless] add in_vacuum
+tag @s[tag=henry,tag=!carless,distance=..0.7] add in_vacuum

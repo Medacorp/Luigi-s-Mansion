@@ -184,6 +184,7 @@ scoreboard players set #-1 Constants -1
 scoreboard players set #2 Constants 2
 scoreboard players set #3 Constants 3
 scoreboard players set #5 Constants 5
+scoreboard players set #8 Constants 8
 scoreboard players set #10 Constants 10
 scoreboard players set #20 Constants 20
 scoreboard players set #30 Constants 30

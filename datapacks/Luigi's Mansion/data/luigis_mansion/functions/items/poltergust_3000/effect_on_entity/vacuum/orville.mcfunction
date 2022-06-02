@@ -1,1 +1,1 @@
-tag @s[tag=orville,tag=!planeless] add in_vacuum
+tag @s[tag=orville,tag=!planeless,distance=..0.7] add in_vacuum

@@ -1,6 +1,6 @@
 execute unless score #secret_altar Ticking matches 1 run function #luigis_mansion:room/hidden/secret_altar/load
-execute as @a[gamemode=!spectator,x=634,y=92,z=24,dx=20,dy=7,dz=18] unless entity @s[scores={Room=72}] run scoreboard players operation @s LastRoom = @s Room
-execute as @e[tag=!spectator,x=634,y=92,z=24,dx=20,dy=7,dz=18] unless entity @s[tag=ghost,tag=appear] unless entity @s[tag=ghost,tag=vanish] run scoreboard players set @s Room 72
+execute as @a[gamemode=!spectator,x=634,y=90,z=24,dx=20,dy=9,dz=18] unless entity @s[scores={Room=72}] run scoreboard players operation @s LastRoom = @s Room
+execute as @e[tag=!spectator,x=634,y=90,z=24,dx=20,dy=9,dz=18] unless entity @s[tag=ghost,tag=appear] unless entity @s[tag=ghost,tag=vanish] run scoreboard players set @s Room 72
 scoreboard players set #temp Room 72
 
 execute as @e[scores={Room=72},type=!minecraft:marker] unless entity @s[gamemode=spectator] run scoreboard players set @s MirrorZ 41

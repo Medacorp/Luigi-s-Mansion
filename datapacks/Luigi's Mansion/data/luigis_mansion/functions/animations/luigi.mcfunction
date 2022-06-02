@@ -27,5 +27,5 @@ execute store result score #temp Time if entity @e[tag=this_luigi,tag=source,lim
 execute if score #temp Time matches 2.. run tag @e[tag=this_luigi] add dead
 execute if entity @e[tag=this_luigi,limit=1] run scoreboard players set @s ModelTime 0
 execute unless entity @e[tag=this_luigi,limit=1] run scoreboard players add @s ModelTime 1
-execute unless entity @e[tag=this_luigi,limit=1] if entity @s[scores={ModelTime=10}] run function luigis_mansion:spawn_entities/luigi
+execute unless entity @e[tag=this_luigi,limit=1] if entity @s[scores={ModelTime=10..}] run function luigis_mansion:spawn_entities/luigi
 tag @e[tag=this_luigi] remove this_luigi

@@ -1,3 +1,3 @@
-execute positioned as @s[tag=ball,tag=!big,tag=can_spit_2,tag=vacuumable,scores={Move=0}] if entity @a[gamemode=!spectator,distance=..1.2,limit=1] run tag @s add spit
-execute positioned as @s[tag=ball,tag=!big,tag=!spit,tag=vacuumable,scores={Move=0}] if block ^ ^ ^0.3 #luigis_mansion:ghosts_ignore unless entity @a[gamemode=!spectator,distance=..1.2,limit=1] run teleport @s ^ ^ ^0.1
-execute positioned as @s[tag=ball,tag=!big,tag=!spit,tag=vacuumable,scores={Move=0}] run teleport @s ~ ~ ~ ~ ~
+execute positioned as @s[tag=ball,tag=!big,tag=can_spit_2,tag=vacuumable,scores={Move=0},distance=..0.7] if entity @a[gamemode=!spectator,distance=..1.2,limit=1] run tag @s add spit
+execute positioned as @s[tag=ball,tag=!big,tag=!spit,tag=vacuumable,scores={Move=0},distance=..0.7] if block ^ ^ ^0.3 #luigis_mansion:ghosts_ignore unless entity @a[gamemode=!spectator,distance=..1.2,limit=1] run teleport @s ^ ^ ^0.1
+execute positioned as @s[tag=ball,tag=!big,tag=!spit,tag=vacuumable,scores={Move=0},distance=..0.7] run teleport @s ~ ~ ~ ~ ~

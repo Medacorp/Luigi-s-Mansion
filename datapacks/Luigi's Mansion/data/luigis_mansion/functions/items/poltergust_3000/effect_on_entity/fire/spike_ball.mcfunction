@@ -1,1 +1,1 @@
-scoreboard players set @s[tag=spike_ball] ActionTime 199
+scoreboard players set @s[tag=spike_ball,distance=..2] ActionTime 199

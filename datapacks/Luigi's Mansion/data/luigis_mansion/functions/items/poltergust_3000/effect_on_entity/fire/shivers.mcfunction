@@ -1,1 +1,1 @@
-tag @s[tag=shivers] add burning
+tag @s[tag=shivers,distance=..0.7] add burning

@@ -7,8 +7,8 @@ execute unless entity @s[tag=!burning_heart,tag=!watery_heart,tag=!frozen_heart]
 execute if entity @s[scores={Time=40..}] run function luigis_mansion:entities/ghost/hidden/turn
 execute if block ~ ~ ~ #luigis_mansion:all_ignore unless entity @a[scores={GBHCall=1..},limit=1] if entity @e[tag=same_room,distance=..7,tag=!spectator,limit=1] unless entity @s[tag=!burning_heart,tag=!frozen_heart,tag=!watery_heart] run tag @s[tag=can_spawn] add try_spawn
 tag @s add me
-execute if entity @e[tag=!me,tag=!hidden,tag=!model_piece,distance=..0.7] if block ~ ~ ~ #luigis_mansion:all_ignore run tag @s remove try_spawn
-execute if entity @e[tag=!me,tag=!hidden,tag=!model_piece,distance=..0.7] unless entity @e[type=minecraft:item_frame,distance=..0.7] run tag @s remove try_spawn
+execute if entity @e[tag=!me,tag=!hidden,tag=!model_piece,tag=!door,distance=..0.7,limit=1] if block ~ ~ ~ #luigis_mansion:all_ignore run tag @s remove try_spawn
+execute if entity @e[tag=!me,tag=!hidden,tag=!model_piece,tag=!door,distance=..0.7,limit=1] unless entity @e[type=minecraft:item_frame,distance=..0.7,limit=1] run tag @s remove try_spawn
 tag @s remove me
 execute if entity @a[distance=..1.5] if block ~ ~ ~ #luigis_mansion:all_ignore run tag @s remove try_spawn
 tag @s[tag=try_spawn] add spawn_now

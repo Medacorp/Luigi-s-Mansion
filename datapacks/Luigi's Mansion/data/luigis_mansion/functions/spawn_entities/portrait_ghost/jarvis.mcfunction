@@ -1,4 +1,4 @@
-summon minecraft:armor_stand ~ ~-1.5 ~ {CustomName:'{"translate":"luigis_mansion:entity.jarvis"}',Invisible:1b,NoGravity:1b,CustomNameVisible:0b,Marker:0b,Invulnerable:1b,ArmorItems:[{},{},{},{}],Pose:{Head:[0.0f,0.0f,0.01f]},Tags:["jarvis","portrait_ghost","portrait_ghost_pop","pearl_dropper","ghost","this_entity"],DisabledSlots:2039583}
+summon minecraft:armor_stand ~ ~-1.5 ~ {CustomName:'{"translate":"luigis_mansion:entity.jarvis"}',Invisible:1b,NoGravity:1b,Marker:0b,CustomNameVisible:0b,Invulnerable:1b,ArmorItems:[{},{},{},{}],Pose:{Head:[0.0f,0.0f,0.01f]},Tags:["jarvis","portrait_ghost","portrait_ghost_pop","pearl_dropper","ghost","this_entity"],DisabledSlots:2039583}
 teleport @e[tag=this_entity,limit=1] ~ ~-1.5 ~ ~ ~
 execute as @e[tag=this_entity,limit=1] store result score @s GhostNr run data get storage luigis_mansion:data ghost_nr
 execute as @e[tag=this_entity,limit=1] store result storage luigis_mansion:data ghost_nr int 1 run scoreboard players add @s GhostNr 1

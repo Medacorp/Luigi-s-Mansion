@@ -46,9 +46,9 @@ teleport @s[x=716.0,y=11,z=-43.0,dx=0,dy=1,dz=0,y_rotation=-90..90] 716 11 -33.0
 teleport @s[x=673.0,y=11,z=11.0,dx=0,dy=1,dz=0,y_rotation=-90..90] 654 11 17.0
 teleport @s[x=654.0,y=11,z=16.0,dx=0,dy=1,dz=0,y_rotation=90..-90] 673 11 11.0
 #hallway 4-ball room
-scoreboard players set @s[x=706.0,y=11,z=-22.0,dx=0,dy=1,dz=0,y_rotation=90..-90] RoomNoise 0
-teleport @s[x=706.0,y=11,z=-22.0,dx=0,dy=1,dz=0,y_rotation=90..-90] 705 11 -38.0
-teleport @s[x=705.0,y=11,z=-38.0,dx=0,dy=1,dz=0,y_rotation=-90..90] 706 11 -21.0
+scoreboard players set @s[x=707.0,y=11,z=-22.0,dx=0,dy=1,dz=0,y_rotation=90..-90] RoomNoise 0
+teleport @s[x=707.0,y=11,z=-22.0,dx=0,dy=1,dz=0,y_rotation=90..-90] 706 11 -38.0
+teleport @s[x=706.0,y=11,z=-38.0,dx=0,dy=1,dz=0,y_rotation=-90..90] 707 11 -21.0
 #ball room-storage room
 teleport @s[x=696.0,y=11,z=-64.0,dx=0,dy=1,dz=0,y_rotation=0..-180] 690.0 11 -64
 teleport @s[x=690.0,y=11,z=-64.0,dx=0,dy=1,dz=0,y_rotation=-180..0] 697.0 11 -64

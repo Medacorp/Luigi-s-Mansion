@@ -9,21 +9,21 @@ teleport @s[tag=!riding_poltergust,tag=sneak_pos,nbt=!{Small:1b},tag=flipped_gra
 teleport @s[tag=!riding_poltergust,tag=!sneak_pos,nbt={Small:1b},tag=flipped_gravity] ^ ^0.8 ^-0.075 ~ ~
 teleport @s[tag=!riding_poltergust,tag=sneak_pos,nbt={Small:1b},tag=flipped_gravity] ^ ^0.8 ^-0.22 ~ ~
 
-teleport @s[tag=riding_poltergust,tag=!flipped_gravity,tag=!sneak_pos,nbt=!{Small:1b}] ^ ^-2.65 ^-0.2 ~ ~
-teleport @s[tag=riding_poltergust,tag=!flipped_gravity,tag=sneak_pos,nbt=!{Small:1b}] ^ ^-2.4 ^-0.2 ~ ~
-teleport @s[tag=riding_poltergust,tag=!flipped_gravity,tag=!sneak_pos,nbt={Small:1b}] ^ ^-1.6 ^-0.1 ~ ~
-teleport @s[tag=riding_poltergust,tag=!flipped_gravity,tag=sneak_pos,nbt={Small:1b}] ^ ^-1.45 ^-0.1 ~ ~
-teleport @s[tag=riding_poltergust,tag=flipped_gravity,tag=!sneak_pos,nbt=!{Small:1b}] ^ ^0.6 ^-0.2 ~ ~
-teleport @s[tag=riding_poltergust,tag=flipped_gravity,tag=sneak_pos,nbt=!{Small:1b}] ^ ^0.35 ^-0.2 ~ ~
-teleport @s[tag=riding_poltergust,tag=flipped_gravity,tag=!sneak_pos,nbt={Small:1b}] ^ ^1.08 ^-0.1 ~ ~
-teleport @s[tag=riding_poltergust,tag=flipped_gravity,tag=sneak_pos,nbt={Small:1b}] ^ ^1.08 ^-0.1 ~ ~
+teleport @s[tag=riding_poltergust,tag=!flipped_gravity,tag=!sneak_pos,nbt=!{Small:1b}] ^ ^-2.65 ^0.1 ~ ~
+teleport @s[tag=riding_poltergust,tag=!flipped_gravity,tag=sneak_pos,nbt=!{Small:1b}] ^ ^-2.4 ^0.1 ~ ~
+teleport @s[tag=riding_poltergust,tag=!flipped_gravity,tag=!sneak_pos,nbt={Small:1b}] ^ ^-1.6 ^0.05 ~ ~
+teleport @s[tag=riding_poltergust,tag=!flipped_gravity,tag=sneak_pos,nbt={Small:1b}] ^ ^-1.45 ^0.05 ~ ~
+teleport @s[tag=riding_poltergust,tag=flipped_gravity,tag=!sneak_pos,nbt=!{Small:1b}] ^ ^0.6 ^0.1 ~ ~
+teleport @s[tag=riding_poltergust,tag=flipped_gravity,tag=sneak_pos,nbt=!{Small:1b}] ^ ^0.35 ^0.1 ~ ~
+teleport @s[tag=riding_poltergust,tag=flipped_gravity,tag=!sneak_pos,nbt={Small:1b}] ^ ^1.08 ^0.05 ~ ~
+teleport @s[tag=riding_poltergust,tag=flipped_gravity,tag=sneak_pos,nbt={Small:1b}] ^ ^1.08 ^0.05 ~ ~
 
 data modify entity @s[tag=!riding_poltergust,tag=was_sneak_posing,tag=!sneak_pos] Pose.Head[0] set value 0.001f
 data modify entity @s[tag=!riding_poltergust,tag=!was_sneak_posing,tag=sneak_pos] Pose.Head[0] set value 20.0f
 data modify entity @s[tag=!riding_poltergust,tag=was_flipped,tag=!flipped_gravity] Pose.Head[2] set value 0.0f
 data modify entity @s[tag=!riding_poltergust,tag=!was_flipped,tag=flipped_gravity] Pose.Head[2] set value -180.0f
-data modify entity @s[tag=riding_poltergust,tag=!flipped_gravity] Pose.Head set value [-90.0f,-180.0f,0.0f]
-data modify entity @s[tag=riding_poltergust,tag=flipped_gravity] Pose.Head set value [-90.0f,-180.0f,-180.0f]
+data modify entity @s[tag=riding_poltergust,tag=!flipped_gravity] Pose.Head set value [-90.0f,0.0f,0.0f]
+data modify entity @s[tag=riding_poltergust,tag=flipped_gravity] Pose.Head set value [-90.0f,0.0f,-180.0f]
 
 execute if entity @s[tag=riding_poltergust,tag=!was_riding_poltergust] run tag @a[tag=this_luigi,limit=1] add poltergust_floor_sound
 execute unless data storage luigis_mansion:data luigi.mainhand.tag.luigis_mansion.poltergust_model_data unless data storage luigis_mansion:data luigi.offhand.tag.luigis_mansion.poltergust_model_data run data remove entity @s[tag=!looking_at_map,tag=!riding_poltergust,scores={KnockbackType=0}] ArmorItems[3]
@@ -34,8 +34,10 @@ execute if data storage luigis_mansion:data luigi.offhand.tag.luigis_mansion.pol
 execute if data storage luigis_mansion:data luigi.offhand.tag.luigis_mansion.poltergust_model_data store result score #temp Time run data get storage luigis_mansion:data luigi.offhand.tag.luigis_mansion.poltergust_model_data
 execute if data storage luigis_mansion:data luigi.offhand.tag.luigis_mansion.poltergust_model_data if score #mirrored Selected matches 0 run scoreboard players add #temp Time 1
 execute if entity @s[tag=riding_poltergust,scores={KnockbackType=0}] run scoreboard players add #temp Time 2
-execute store result entity @s[tag=!stop_model] ArmorItems[3].tag.CustomModelData int 1 run scoreboard players get #temp Time
+execute unless data storage luigis_mansion:data luigi.mainhand.tag.luigis_mansion.poltergust_model_data unless data storage luigis_mansion:data luigi.offhand.tag.luigis_mansion.poltergust_model_data run tag @s add not_held
+execute store result entity @s[tag=!stop_model,tag=!not_held] ArmorItems[3].tag.CustomModelData int 1 run scoreboard players get #temp Time
 scoreboard players reset #temp Time
+tag @s remove not_held
 
 execute at @s[tag=exploding_poltergust] run particle minecraft:large_smoke ~ ~1.5 ~ 0.3 0.3 0.3 0 10 normal @a[tag=same_room]
 execute at @s[tag=exploding_poltergust] run particle minecraft:flame ~ ~1.5 ~ 0.3 0.3 0.3 0 10 normal @a[tag=same_room]

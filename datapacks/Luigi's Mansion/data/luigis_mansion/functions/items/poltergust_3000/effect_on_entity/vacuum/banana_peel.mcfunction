@@ -1,2 +1,2 @@
-execute positioned as @s[tag=banana_peel,tag=vacuumable] if block ^ ^ ^0.3 #luigis_mansion:items_ignore unless entity @a[tag=me,distance=..1.2,limit=1] run teleport @s ^ ^ ^0.1
-execute positioned as @s[tag=banana_peel,tag=vacuumable] if entity @a[tag=me,distance=..1.2,limit=1] run tag @s add captured
+execute positioned ~ ~-1 ~ positioned as @s[tag=banana_peel,tag=vacuumable,distance=..0.7] positioned ~ ~1 ~ if block ^ ^ ^0.3 #luigis_mansion:items_ignore unless entity @a[tag=me,distance=..1.2,limit=1] run teleport @s ^ ^ ^0.1
+execute positioned ~ ~-1 ~ positioned as @s[tag=banana_peel,tag=vacuumable,distance=..0.7] if entity @a[tag=me,distance=..1.2,limit=1] run tag @s add captured

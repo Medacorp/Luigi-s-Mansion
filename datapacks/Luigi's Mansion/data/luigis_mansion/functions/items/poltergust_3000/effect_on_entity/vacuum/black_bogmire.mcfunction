@@ -1,1 +1,1 @@
-tag @s[tag=black_bogmire] add in_vacuum
+tag @s[tag=black_bogmire,distance=..0.7] add in_vacuum

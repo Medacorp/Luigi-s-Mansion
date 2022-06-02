@@ -1,1 +1,1 @@
-scoreboard players set @s[tag=vacuumable,tag=boolossus] Dialog 0
+execute positioned ~ ~-1.3 ~ run scoreboard players set @s[tag=vacuumable,tag=boolossus,distance=..0.7] Dialog 0

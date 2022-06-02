@@ -1,1 +1,1 @@
-tag @s[tag=boo] add frozen
+execute positioned ~ ~-1.3 ~ run tag @s[tag=boo,distance=..0.7] add frozen

@@ -1,1 +1,1 @@
-tag @s[tag=sir_weston,scores={Dialog=423..}] add melt
+tag @s[tag=sir_weston,scores={Dialog=423..},distance=..0.7] add melt
