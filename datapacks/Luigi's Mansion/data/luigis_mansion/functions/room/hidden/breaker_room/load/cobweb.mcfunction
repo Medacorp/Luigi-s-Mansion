@@ -1,1 +1,1 @@
-execute positioned 688 7 59 rotated -90 0 run function luigis_mansion:spawn_furniture/cobweb
+execute positioned 688.35 7 59.35 rotated -45 0 run function luigis_mansion:spawn_furniture/cobweb
