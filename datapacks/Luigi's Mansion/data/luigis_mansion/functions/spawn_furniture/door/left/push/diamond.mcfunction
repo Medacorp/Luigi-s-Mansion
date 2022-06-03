@@ -4,5 +4,6 @@ summon minecraft:armor_stand ^0.125 ^ ^0.44 {CustomName:'{"translate":"luigis_ma
 execute as @e[tag=this_entity] positioned as @s run teleport @s ~ ~ ~ ~ ~
 execute as @e[tag=this_entity] positioned as @s run teleport @s ~ ~ ~ ~ ~
 scoreboard players set @e[tag=this_entity] Sound 0
+scoreboard players set @e[tag=this_entity] AnimationProg 0
 execute as @e[tag=this_entity,type=minecraft:villager,limit=1] store result score @s Health store result score @s LastHealth run data get storage luigis_mansion:data current_state.current_data.ghosts.fake_door.health
 tag @e[tag=this_entity] remove this_entity

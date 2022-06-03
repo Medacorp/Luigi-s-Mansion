@@ -1,0 +1,1 @@
+execute positioned ~ ~-1 ~ run tag @s[tag=!big,tag=!billiards_ball,tag=!wool,tag=!spit,distance=..0.7,scores={Move=0}] add in_vacuum

@@ -1,2 +1,0 @@
-execute positioned ~ ~-1.4 ~ positioned as @s[tag=vacuumable,distance=..1.4,tag=item,tag=poison_mushroom] run function luigis_mansion:entities/item/pull_heart
-execute positioned ~ ~-1.4 ~ positioned as @s[tag=vacuumable,distance=..1.4,tag=item,tag=poison_mushroom] positioned ~ ~1.6 ~ if entity @a[tag=me,distance=..0.7,limit=1] run tag @s add captured

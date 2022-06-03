@@ -46,6 +46,15 @@
         ],
         "subtitle": "subtitles.entity.lightning_bolt.thunder"
     },
+    "entity.player.levelup": {
+        "replace": true,
+        "sounds": [
+            {
+                "name": "luigis_mansion:no_sound",
+                "stream": false
+            }
+        ]
+    },
     "music.creative": {
         "replace": true,
         "sounds": [

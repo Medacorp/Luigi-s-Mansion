@@ -1,0 +1,2 @@
+execute if block ^ ^ ^0.3 #luigis_mansion:items_ignore unless entity @a[tag=me,distance=..1.2,limit=1] positioned as @s run teleport @s ^ ^ ^0.1
+execute if entity @a[tag=me,distance=..1.2,limit=1] run tag @s add captured

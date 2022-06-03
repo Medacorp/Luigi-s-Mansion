@@ -1,0 +1,1 @@
+execute if entity @s[tag=boolossus,tag=fight] run function luigis_mansion:items/poltergust_3000/effect_on_entity/vacuum/effect/ghost/boolossus

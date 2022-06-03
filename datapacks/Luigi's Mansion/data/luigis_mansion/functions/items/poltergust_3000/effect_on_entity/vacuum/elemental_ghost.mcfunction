@@ -1,4 +1,0 @@
-tag @s[tag=elemental_ghost,scores={SpawnTime=21..},distance=..0.7] add hurt_elemental_ghost
-execute positioned as @s[tag=elemental_ghost,scores={SpawnTime=21..},distance=..0.7] if entity @a[tag=me,distance=..1.2,limit=1] run tag @s add normal_death
-execute positioned as @s[tag=elemental_ghost,scores={SpawnTime=21..},distance=..0.7] if entity @a[tag=me,distance=..1.2,limit=1] run function luigis_mansion:items/poltergust_3000/latch_onto_ghost
-execute positioned as @s[tag=elemental_ghost,scores={SpawnTime=21..},distance=..0.7] if block ^ ^ ^0.3 #luigis_mansion:items_ignore run teleport @s ^ ^ ^0.01
