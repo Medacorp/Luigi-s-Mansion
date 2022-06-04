@@ -1,0 +1,2 @@
+execute if entity @s[tag=boo_la_la_trap] run data modify storage luigis_mansion:data current_state.current_data.boos[{name:"boo_la_la"}].trap_found set value 1b
+execute if entity @s[tag=boo_la_la_trap] run function luigis_mansion:spawn_entities/boo_bomb

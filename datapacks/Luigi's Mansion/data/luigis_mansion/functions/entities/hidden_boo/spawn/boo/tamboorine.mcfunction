@@ -1,0 +1,1 @@
+execute if entity @s[tag=tamboorine] run function luigis_mansion:spawn_entities/boo/tamboorine

@@ -1,0 +1,1 @@
+execute if entity @s[tag=boo_b_hatch] if entity @e[tag=!new,limit=1,tag=boo_b_hatch] run kill @s

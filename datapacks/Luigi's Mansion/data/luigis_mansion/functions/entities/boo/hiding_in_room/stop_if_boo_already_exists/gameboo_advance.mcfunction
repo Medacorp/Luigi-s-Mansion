@@ -1,0 +1,1 @@
+execute if entity @s[tag=gameboo_advance] if entity @e[tag=!new,limit=1,tag=gameboo_advance] run kill @s

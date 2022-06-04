@@ -1,0 +1,1 @@
+execute if entity @s[tag=bootique] run function luigis_mansion:spawn_entities/boo/bootique

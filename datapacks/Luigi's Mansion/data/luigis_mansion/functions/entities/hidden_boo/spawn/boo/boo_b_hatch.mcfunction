@@ -1,0 +1,1 @@
+execute if entity @s[tag=boo_b_hatch] run function luigis_mansion:spawn_entities/boo/boo_b_hatch

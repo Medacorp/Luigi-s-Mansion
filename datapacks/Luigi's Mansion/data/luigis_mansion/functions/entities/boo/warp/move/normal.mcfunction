@@ -142,4 +142,4 @@ scoreboard players set @s[scores={Room=70},tag=warp_south] LastRoom 69
 scoreboard players set @s[scores={Room=70},tag=warp_west] LastRoom 39
 scoreboard players set @s[scores={Room=71},tag=warp_south] LastRoom 52
 scoreboard players operation @s Room = @s LastRoom
-function luigis_mansion:entities/boo/warp/all/normal
+function luigis_mansion:entities/boo/warp/teleport/normal

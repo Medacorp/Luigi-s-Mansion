@@ -1,0 +1,1 @@
+execute if entity @s[tag=gameboo_advance] run data modify storage luigis_mansion:data drop_loot set from storage luigis_mansion:data current_state.current_data.boos[{name:"gameboo_advance"}].loot

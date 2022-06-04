@@ -1,0 +1,3 @@
+execute if entity @s[tag=booligan] run tag @e[tag=boo_marker,tag=new] add booligan
+execute if entity @s[tag=booligan] store result storage luigis_mansion:data current_state.current_data.boos[{name:"booligan"}].health int 1 run scoreboard players get @s Health
+execute if entity @s[tag=booligan] store result storage luigis_mansion:data current_state.current_data.boos[{name:"booligan"}].room int 1 run scoreboard players get @s Room

@@ -1,0 +1,1 @@
+execute if entity @s[tag=boodacious] run function luigis_mansion:spawn_entities/boo/boodacious

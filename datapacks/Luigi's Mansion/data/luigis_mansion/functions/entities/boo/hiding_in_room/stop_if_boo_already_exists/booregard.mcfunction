@@ -1,0 +1,1 @@
+execute if entity @s[tag=booregard] if entity @e[tag=!new,limit=1,tag=booregard] run kill @s
