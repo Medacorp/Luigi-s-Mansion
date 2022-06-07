@@ -11,4 +11,5 @@ scoreboard players set @s Sound 10
 scoreboard players set @s Invulnerable 1000
 scoreboard players set @s[scores={IdleTime=-1}] Invulnerable 0
 scoreboard players reset @s[scores={IdleTime=-1}] AnimationProg
+execute unless entity @a[tag=!spectator,distance=0.1..,limit=1] run scoreboard players set #freeze_timer Selected 1
 execute if entity @s[scores={IdleTime=-1}] run function luigis_mansion:entities/player/animation/set/door/open/pull

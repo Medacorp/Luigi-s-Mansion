@@ -5,7 +5,11 @@ scoreboard players add @s SpawnTime 1
 tag @s[scores={SpawnTime=20}] add vacuumable
 tag @s[scores={SpawnTime=600},tag=!eternal] add dead
 
+execute if entity @s[scores={MirrorX=-2147483648..}] run scoreboard players operation #temp MirrorX = @s MirrorX
+execute if entity @s[scores={MirrorZ=-2147483648..}] run scoreboard players operation #temp MirrorZ = @s MirrorZ
 execute at @s run function #luigis_mansion:entities/item/physics
+scoreboard players reset #temp MirrorX
+scoreboard players reset #temp MirrorZ
 
 execute if entity @s[tag=picked_up] run function #luigis_mansion:entities/item/picked_up
 tag @s[tag=picked_up] add dead

@@ -18,6 +18,7 @@ tag @s remove cancel
 scoreboard players reset @s OpenMapTime
 scoreboard players set @s MapSound 0
 scoreboard players set @s GBHChoice 0
+title @s times 0 40 40
 tag @s remove scanning
 tag @s remove warp
 tag @s remove was_in_room

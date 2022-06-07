@@ -1,3 +1,3 @@
 execute if entity @s[tag=key,tag=!display] run function luigis_mansion:entities/item/key_physics
-execute at @s[tag=key,tag=!display] run particle minecraft:crit ~ ~1.75 ~ 0.3 0.3 0.3 0 1 normal @a[tag=same_room]
+execute at @s[tag=key,tag=!display] run function luigis_mansion:entities/item/particle/sparkle
 execute at @s[tag=key,tag=display] run function luigis_mansion:animations/money/rotate

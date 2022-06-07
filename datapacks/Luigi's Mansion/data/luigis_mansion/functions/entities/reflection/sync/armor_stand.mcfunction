@@ -13,10 +13,10 @@ data modify entity @s Small set from storage luigis_mansion:data mirror.Small
 data modify entity @s ArmorItems set from storage luigis_mansion:data mirror.ArmorItems
 data modify entity @s HandItems[0] set from storage luigis_mansion:data mirror.HandItems[1]
 data modify entity @s HandItems[1] set from storage luigis_mansion:data mirror.HandItems[0]
+execute unless data storage luigis_mansion:data mirror{Tags:["portrait_ghost"]} unless data storage luigis_mansion:data mirror{Tags:["hidden"]} unless data storage luigis_mansion:data mirror{Tags:["visible"]} unless data storage luigis_mansion:data mirror{Tags:["vacuumable"]} if data storage luigis_mansion:data mirror.ArmorItems[{id:"minecraft:oak_button"}] run function luigis_mansion:entities/reflection/ghost_reflection
 data modify storage luigis_mansion:data RightHandItem set from entity @s HandItems[0]
 data modify storage luigis_mansion:data LeftHandItem set from entity @s HandItems[1]
 function #luigis_mansion:entities/reflection/swap_model
-execute unless data storage luigis_mansion:data mirror{Tags:["portrait_ghost"]} unless data storage luigis_mansion:data mirror{Tags:["hidden"]} unless data storage luigis_mansion:data mirror{Tags:["visible"]} unless data storage luigis_mansion:data mirror{Tags:["vacuumable"]} if data storage luigis_mansion:data mirror.ArmorItems[{id:"minecraft:oak_button"}] run function luigis_mansion:entities/reflection/ghost_reflection
 
 execute if entity @s[tag=found_owner] unless data storage luigis_mansion:data mirror{Tags:["immobile"]} run function luigis_mansion:entities/reflection/mobile_entity
 

@@ -4,4 +4,4 @@ execute if data storage luigis_mansion:data current_state.current_data{blackout:
 
 execute if data storage luigis_mansion:data current_state.current_data.rooms.hallway_2{seen:0b} run function luigis_mansion:room/hidden/hallway_2/set_seen
 
-execute unless data storage luigis_mansion:data current_state.current_data.technical_data{chauncey_cried:1b} if data storage luigis_mansion:data current_state.current_data.obtained_keys{nursery:1b} run tag @s add chauncey_cry
+execute unless data storage luigis_mansion:data current_state.current_data.technical_data{chauncey_cried:1b} if data storage luigis_mansion:data current_state.current_data.obtained_keys{nursery:1b} run tag @s[tag=!pull_open_door,tag=!push_open_door] add chauncey_cry

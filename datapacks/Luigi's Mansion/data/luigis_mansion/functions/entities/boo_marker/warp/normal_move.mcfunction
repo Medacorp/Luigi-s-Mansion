@@ -73,5 +73,5 @@ execute if entity @e[type=minecraft:marker,tag=choice,tag=selected,limit=1,tag=b
 execute if entity @e[type=minecraft:marker,tag=choice,tag=selected,limit=1,tag=cellar] run scoreboard players set @s Room 58
 execute if entity @e[type=minecraft:marker,tag=choice,tag=selected,limit=1,tag=pipe_room] run scoreboard players set @s Room 67
 execute if entity @e[type=minecraft:marker,tag=choice,tag=selected,limit=1,tag=cold_storage] run scoreboard players set @s Room 68
-execute if entity @e[type=minecraft:marker,tag=choice,tag=selected,limit=1] run function luigis_mansion:entities/boo/warp/all/normal
+execute if entity @e[type=minecraft:marker,tag=choice,tag=selected,limit=1] run function luigis_mansion:entities/boo/warp/teleport/normal
 kill @e[type=minecraft:marker,tag=choice]

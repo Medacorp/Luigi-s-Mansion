@@ -15,6 +15,8 @@ tag @s remove loaded_chunks
 tag @s remove seen_room_name
 execute if entity @a[name=Dhranios] run gamerule sendCommandFeedback true
 execute unless entity @a[name=Dhranios] run gamerule sendCommandFeedback false
+title @s[tag=!looking_at_map] times 40 40 40
+title @s[tag=looking_at_map] times 0 40 40
 
 function #luigis_mansion:login_data_sync
 

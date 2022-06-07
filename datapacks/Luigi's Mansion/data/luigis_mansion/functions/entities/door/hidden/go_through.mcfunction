@@ -1,9 +1,13 @@
 #boo woods-foyer
-scoreboard players set @s[x=755.0,y=11,z=8.0,dx=0,dy=1,dz=1,y_rotation=-180..0] Room 0
-scoreboard players set @s[x=755.0,y=11,z=8.0,dx=0,dy=1,dz=1,y_rotation=-180..0] LastRoom 0
-execute if entity @s[x=755.0,y=11,z=8.0,dx=0,dy=1,dz=1,y_rotation=-180..0] run function luigis_mansion:other/music/set/silence
+scoreboard players set @s[x=755.0,y=11,z=6.0,dx=0,dy=1,dz=1,y_rotation=-180..0] Room 0
+scoreboard players set @s[x=755.0,y=11,z=6.0,dx=0,dy=1,dz=1,y_rotation=-180..0] LastRoom 0
+execute if entity @s[x=755.0,y=11,z=6.0,dx=0,dy=1,dz=1,y_rotation=-180..0] run function luigis_mansion:other/music/set/silence
+scoreboard players set @s[x=755.0,y=11,z=6.0,dx=0,dy=1,dz=1,y_rotation=-180..0] LoadedChunks 0
+tag @s[x=755.0,y=11,z=6.0,dx=0,dy=1,dz=1,y_rotation=-180..0] remove loaded_chunks
 execute if entity @s[x=755.0,y=11,z=7.0,dx=0,dy=1,dz=0,y_rotation=-180..0] in minecraft:overworld run teleport @s 721.0 102 8
 execute if entity @s[x=755.0,y=11,z=6.0,dx=0,dy=1,dz=0,y_rotation=-180..0] in minecraft:overworld run teleport @s 721.0 102 7
+execute in minecraft:overworld run scoreboard players set @s[x=720.0,y=102,z=7.0,dx=0,dy=1,dz=1,y_rotation=-180..0] LoadedChunks 0
+execute in minecraft:overworld run tag @s[x=720.0,y=102,z=7.0,dx=0,dy=1,dz=1,y_rotation=-180..0] remove loaded_chunks
 execute in minecraft:overworld if entity @s[x=720.0,y=102,z=8.0,dx=0,dy=1,dz=0,y_rotation=0..-180] in luigis_mansion:normal run teleport @s 755.0 11 7
 execute in minecraft:overworld if entity @s[x=720.0,y=102,z=7.0,dx=0,dy=1,dz=0,y_rotation=0..-180] in luigis_mansion:normal run teleport @s 755.0 11 6
 #hallway 1-parlor
@@ -200,5 +204,6 @@ teleport @s[x=699.0,y=29,z=71.0,dx=0,dy=1,dz=0,y_rotation=90..-90] 736 29 31.0
 #hallway 22-secret altar
 teleport @s[x=654.0,y=2,z=33.0,dx=0,dy=1,dz=0,y_rotation=0..-180] 653.0 93 33
 execute if entity @s[x=653.0,y=93,z=33.0,dx=0,dy=1,dz=0,y_rotation=-180..0] if data storage luigis_mansion:data current_state.current_data.rooms.secret_altar{cleared:1b} unless score #loaded_exterior Selected matches -1 in minecraft:overworld run function luigis_mansion:room/load_exterior/empty
+execute if entity @s[x=653.0,y=93,z=33.0,dx=0,dy=1,dz=0,y_rotation=-180..0] if data storage luigis_mansion:data current_state.current_data.rooms.secret_altar{cleared:1b} run function luigis_mansion:entities/player/animation/set/reset
 execute if entity @s[x=653.0,y=93,z=33.0,dx=0,dy=1,dz=0,y_rotation=-180..0] if data storage luigis_mansion:data current_state.current_data.rooms.secret_altar{cleared:1b} as @a run function luigis_mansion:room/ghost_portrificationizer_room/warp_to
 execute if entity @s[x=653.0,y=93,z=33.0,dx=0,dy=1,dz=0,y_rotation=-180..0] if data storage luigis_mansion:data current_state.current_data.rooms.secret_altar{cleared:0b} run teleport @s 655.0 2 33

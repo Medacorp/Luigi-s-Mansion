@@ -15,6 +15,7 @@ scoreboard players set @s LoadedChunks 0
 scoreboard players reset @s MapZoomTime
 scoreboard players reset @s OpenMapFocus
 scoreboard players reset @s OpenMapTime
+title @s times 40 40 40
 tag @s remove loaded_chunks
 execute at @s run function luigis_mansion:entities/player/refresh_model
 execute at @s run playsound luigis_mansion:item.gameboy_horror.map.close player @a[tag=same_room] ~ ~ ~ 1

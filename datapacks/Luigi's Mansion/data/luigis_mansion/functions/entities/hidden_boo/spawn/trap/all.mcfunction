@@ -1,0 +1,1 @@
+execute if entity @s[tag=trap] run function luigis_mansion:entities/hidden_boo/spawn/trap

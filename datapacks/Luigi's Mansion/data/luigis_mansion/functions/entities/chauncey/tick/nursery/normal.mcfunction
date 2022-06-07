@@ -66,7 +66,7 @@ tag @s[scores={Dialog=171}] remove attack
 tag @s[scores={Dialog=171}] remove rambling
 tag @s[scores={Dialog=171}] remove grab_rambler
 tag @s[scores={Dialog=171}] remove laugh
-tag @s[scores={Dialog=171}] remove complain
+tag @s[scores={Dialog=171..}] remove complain
 tag @s[scores={Dialog=171}] remove move
 tag @s[scores={Dialog=171}] add knocked_back
 execute if entity @s[scores={Dialog=171}] run playsound luigis_mansion:entity.chauncey.hit_by_ball hostile @a[tag=same_room] ~ ~ ~ 1

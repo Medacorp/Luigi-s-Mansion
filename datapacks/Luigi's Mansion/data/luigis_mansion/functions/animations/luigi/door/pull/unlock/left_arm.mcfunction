@@ -54,14 +54,14 @@ execute if entity @s[scores={AnimationProg=80..84}] store result entity @s Pose.
 execute if entity @s[scores={AnimationProg=88..92}] store result entity @s Pose.Head[2] float 1 run scoreboard players remove #temp Time 4
 execute if entity @s[scores={AnimationProg=201..220}] store result entity @s Pose.Head[2] float 1 run scoreboard players add #temp Time 1
 scoreboard players reset #temp Time
-execute at @s run teleport @s[scores={AnimationProg=240}] ^ ^ ^-0.05
-execute at @s run teleport @s[scores={AnimationProg=241}] ^ ^ ^-0.1
-execute at @s run teleport @s[scores={AnimationProg=242}] ^ ^ ^-0.15
-execute at @s run teleport @s[scores={AnimationProg=243}] ^ ^ ^-0.2
-execute at @s run teleport @s[scores={AnimationProg=244}] ^ ^ ^-0.25
-execute at @s run teleport @s[scores={AnimationProg=245}] ^ ^ ^-0.3
-execute at @s run teleport @s[scores={AnimationProg=246}] ^ ^ ^-0.35
-execute at @s run teleport @s[scores={AnimationProg=247}] ^ ^ ^-0.4
-execute at @s run teleport @s[scores={AnimationProg=248}] ^ ^ ^-0.45
-execute at @s run teleport @s[scores={AnimationProg=249..260}] ^ ^ ^-0.5
+execute at @s run teleport @s[scores={AnimationProg=240}] ^ ^ ^-0.01
+execute at @s run teleport @s[scores={AnimationProg=241}] ^ ^ ^-0.02
+execute at @s run teleport @s[scores={AnimationProg=242}] ^ ^ ^-0.03
+execute at @s run teleport @s[scores={AnimationProg=243}] ^ ^ ^-0.04
+execute at @s run teleport @s[scores={AnimationProg=244}] ^ ^ ^-0.05
+execute at @s run teleport @s[scores={AnimationProg=245}] ^ ^ ^-0.06
+execute at @s run teleport @s[scores={AnimationProg=246}] ^ ^ ^-0.07
+execute at @s run teleport @s[scores={AnimationProg=247}] ^ ^ ^-0.08
+execute at @s run teleport @s[scores={AnimationProg=248}] ^ ^ ^-0.09
+execute at @s run teleport @s[scores={AnimationProg=249..260}] ^ ^ ^-0.1
 scoreboard players set @s[scores={AnimationProg=260..}] AnimationProg 0

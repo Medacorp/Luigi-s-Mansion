@@ -1,0 +1,2 @@
+execute if predicate luigis_mansion:50_50 run function luigis_mansion:spawn_entities/boo_bomb
+execute unless entity @e[distance=..0.7,tag=bomb,limit=1] run function luigis_mansion:spawn_entities/ball/boo

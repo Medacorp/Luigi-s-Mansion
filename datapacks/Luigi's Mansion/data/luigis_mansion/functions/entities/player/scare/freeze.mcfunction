@@ -1,6 +1,6 @@
 execute if entity @s[tag=looking_at_map] run function luigis_mansion:items/gameboy_horror/map/close
-execute unless entity @s[scores={KnockbackTime=1..}] unless entity @s[scores={ScareType=1..,ScareTime=1..}] run effect give @s minecraft:slowness 1 9 true
-execute unless entity @s[scores={KnockbackTime=1..}] unless entity @s[scores={ScareType=1..,ScareTime=1..}] run scoreboard players set @s ScareTime 100
-execute unless entity @s[scores={KnockbackTime=1..}] unless entity @s[scores={ScareType=1,ScareTime=1..}] run scoreboard players reset @s MaxHealthTime
-execute unless entity @s[scores={KnockbackTime=1..}] if entity @s[scores={ScareType=3..,ScareTime=1..}] run function luigis_mansion:entities/player/scare/bash
-execute unless entity @s[scores={KnockbackTime=1..}] unless entity @s[scores={ScareType=1..,ScareTime=1..}] run scoreboard players set @s ScareType 2
+execute if entity @s[tag=!push_open_door,tag=!pull_open_door,tag=!push_locked_door,tag=!pull_locked_door,tag=!push_unlock_door,tag=!pull_unlock_door] unless entity @s[scores={KnockbackTime=1..}] unless entity @s[scores={ScareType=1..,ScareTime=1..}] run effect give @s minecraft:slowness 1 9 true
+execute if entity @s[tag=!push_open_door,tag=!pull_open_door,tag=!push_locked_door,tag=!pull_locked_door,tag=!push_unlock_door,tag=!pull_unlock_door] unless entity @s[scores={KnockbackTime=1..}] unless entity @s[scores={ScareType=1..,ScareTime=1..}] run scoreboard players set @s ScareTime 100
+execute if entity @s[tag=!push_open_door,tag=!pull_open_door,tag=!push_locked_door,tag=!pull_locked_door,tag=!push_unlock_door,tag=!pull_unlock_door] unless entity @s[scores={KnockbackTime=1..}] unless entity @s[scores={ScareType=1,ScareTime=1..}] run scoreboard players reset @s MaxHealthTime
+execute if entity @s[tag=!push_open_door,tag=!pull_open_door,tag=!push_locked_door,tag=!pull_locked_door,tag=!push_unlock_door,tag=!pull_unlock_door] unless entity @s[scores={KnockbackTime=1..}] if entity @s[scores={ScareType=3..,ScareTime=1..}] run function luigis_mansion:entities/player/scare/bash
+execute if entity @s[tag=!push_open_door,tag=!pull_open_door,tag=!push_locked_door,tag=!pull_locked_door,tag=!push_unlock_door,tag=!pull_unlock_door] unless entity @s[scores={KnockbackTime=1..}] unless entity @s[scores={ScareType=1..,ScareTime=1..}] run scoreboard players set @s ScareType 2

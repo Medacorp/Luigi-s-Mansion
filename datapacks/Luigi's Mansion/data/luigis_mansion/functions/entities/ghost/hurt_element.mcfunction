@@ -15,4 +15,4 @@ tag @s remove burning_heart
 tag @s remove watery_heart
 tag @s remove frozen_heart
 tag @s[scores={ElementHurtTime=0}] remove element_hurt
-tag @s remove freeze
+tag @s[scores={ElementHurtTime=0}] remove freeze

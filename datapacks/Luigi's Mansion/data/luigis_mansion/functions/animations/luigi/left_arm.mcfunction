@@ -32,6 +32,9 @@ execute if entity @s[tag=walking,tag=!stop_model,tag=!low_health,tag=!riding_pol
 execute if entity @s[tag=running,tag=!stop_model,tag=!low_health,tag=!riding_poltergust,tag=!holding_poltergust,tag=!yelling,tag=!push_open_door,tag=!pull_open_door,tag=!push_locked_door,tag=!pull_locked_door,tag=!push_unlock_door,tag=!pull_unlock_door] run function luigis_mansion:animations/luigi/running/left_arm
 execute if entity @s[tag=swimming,tag=!stop_model,tag=!riding_poltergust,tag=!holding_poltergust,tag=!yelling,tag=!push_open_door,tag=!pull_open_door,tag=!push_locked_door,tag=!pull_locked_door,tag=!push_unlock_door,tag=!pull_unlock_door] run function luigis_mansion:animations/luigi/swimming/left_arm
 
+execute unless entity @s[tag=!push_locked_door,tag=!pull_locked_door,tag=!push_unlock_door,tag=!pull_unlock_door] run data modify entity @s[tag=held_item] ArmorItems[3] set value {}
+execute if score #mirrored Selected matches 0 run data modify entity @s[tag=gameboy_horror,tag=held_item] ArmorItems[3] set value {}
+execute if score #mirrored Selected matches 1 run data modify entity @s[tag=gameboy_horror,tag=held_item] ArmorItems[3] set from entity @a[tag=this_luigi,nbt={Inventory:[{tag:{luigis_mansion:{id:"luigis_mansion:gameboy_horror"}}}]},limit=1] Inventory[{tag:{luigis_mansion:{id:"luigis_mansion:gameboy_horror"}}}]
 execute at @s[tag=push_open_door,tag=left_door] unless entity @s[tag=held_item,tag=holding_poltergust] run function luigis_mansion:animations/luigi/door/push/open/left_arm
 execute at @s[tag=pull_open_door,tag=left_door] unless entity @s[tag=held_item,tag=holding_poltergust] run function luigis_mansion:animations/luigi/door/pull/open/left_arm
 execute at @s[tag=push_locked_door,tag=left_door] unless entity @s[tag=held_item,tag=holding_poltergust] run function luigis_mansion:animations/luigi/door/push/locked/left_arm
