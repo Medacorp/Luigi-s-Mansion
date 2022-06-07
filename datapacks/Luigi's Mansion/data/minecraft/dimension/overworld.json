@@ -1,0 +1,29 @@
+{
+    "type": "luigis_mansion:boo_woods",
+    "generator": {
+        "type": "minecraft:flat",
+        "settings": {
+            "biome": "luigis_mansion:boo_woods",
+            "features": true,
+            "lakes": false,
+            "layers": [
+                {
+                    "block": "minecraft:bedrock",
+                    "height": 1
+                },
+                {
+                    "block": "minecraft:stone",
+                    "height": 86
+                },
+                {
+                    "block": "minecraft:dirt",
+                    "height": 2
+                },
+                {
+                    "block": "minecraft:mycelium",
+                    "height": 1
+                }
+            ]
+        }
+    }
+}

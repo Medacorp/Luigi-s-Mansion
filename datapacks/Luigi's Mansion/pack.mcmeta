@@ -1,8 +1,24 @@
 {
     "pack": {
-        "pack_format": 9,
+        "pack_format": 10,
         "description": {
 			"translate":"luigis_mansion:data_pack.description"
 		}
+    },
+    "filter": {
+        "block": [
+            {
+                "namespace": "minecraft",
+                "path": "advancements/.*"
+            },
+            {
+                "namespace": "minecraft",
+                "path": "loot_tables/.*"
+            },
+            {
+                "namespace": "minecraft",
+                "path": "recipes/.*"
+            }
+        ]
     }
 }

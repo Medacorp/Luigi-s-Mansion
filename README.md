@@ -52,13 +52,13 @@ If the mansion has a new exterior, add to `#luigis_mansion:mansion_gameboy_horro
 There's more tags you may want to use, such as `#luigis_mansion:items/key` and `#luigis_mansion:entities/gameboy_horror_marker/teleport`, but those are the main ones to add a mansion; rest depends on what you include in the mansion.
 
 ```
-Mansion     | Type | Index | Exterior | Add-on       | Overwrites     | Namespace                 | Data pack name
-Empty       | -1   | -1    | -1       | vanilla      |                | -                         | "file/Luigi's Mansion"
-Normal      | 0    | 0     | 0        | vanilla      |                | luigis_mansion            | "file/Luigi's Mansion"
-Hidden      | 1    | 0     | 0        | vanilla      |                | luigis_mansion            | "file/Luigi's Mansion"
-Hidden      | 1    | 1     | 0        | 3ds_remake   | vanilla/hidden | luigis_mansion_3ds_remake | "file/Luigi's Mansion 3DS Remake"
-Original    | 2    | 2     | 1        | beta_mansion |                | luigis_beta_mansion       | "file/Luigi's Beta Mansion"
-Trill Tower | 3    | 3     | 2        | trill_tower  |                | trill_tower               | "file/Thrill Tower"
+Mansion      | Type | Index | Exterior | Add-on       | Namespace                 | Data pack name
+Empty        | -1   | -1    | -1       | vanilla      | -                         | "file/Luigi's Mansion"
+Normal       | 0    | 0     | 0        | vanilla      | luigis_mansion            | "file/Luigi's Mansion"
+(GCN) Hidden | 1    | 0     | 0        | vanilla      | luigis_mansion            | "file/Luigi's Mansion"
+(3DS) Hidden | 1    | 1     | 0        | 3ds_remake   | luigis_mansion_3ds_remake | "file/Luigi's Mansion 3DS Remake"
+Original     | 2    | 2     | 1        | beta_mansion | luigis_beta_mansion       | "file/Luigi's Beta Mansion"
+Trill Tower  | 3    | 3     | 2        | trill_tower  | trill_tower               | "file/Thrill Tower"
 ```
 
 ### Empty mansion

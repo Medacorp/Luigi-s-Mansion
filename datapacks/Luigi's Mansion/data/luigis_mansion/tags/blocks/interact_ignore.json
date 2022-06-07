@@ -2,7 +2,6 @@
     "values": [
         "#minecraft:banners",
         "#minecraft:buttons",
-        "#minecraft:carpets",
         "#minecraft:coral_plants",
         "#minecraft:crops",
         "#minecraft:fire",
@@ -11,6 +10,7 @@
         "#minecraft:rails",
         "#minecraft:saplings",
         "#minecraft:signs",
+        "#minecraft:wool_carpets",
         "#minecraft:wall_corals",
         "minecraft:air",
         "minecraft:attached_melon_stem",

@@ -1,12 +1,7 @@
 {
-	"depth": 1,
-	"scale": 1,
 	"precipitation": "none",
-	"category": "forest",
 	"temperature": 0.7,
-	"temperature_modifier": "none",
 	"downfall": 0,
-	"player_spawn_friendly": true,
 	"creature_spawn_probability": 0,
 	"effects": {
 		"fog_color": 15066597,
@@ -17,7 +12,6 @@
 		"water_fog_color": 329011,
 		"grass_color_modifier": "dark_forest"
 	},
-	"surface_builder": "luigis_mansion:boo_woods",
 	"carvers": {
 		"air": [],
 		"liquid": []
@@ -35,5 +29,5 @@
 		[]
 	],
 	"spawners": {},
-	"spawn_costs": {}
+    "spawn_costs": {}
 }
