@@ -1,3 +1,2 @@
-setblock 699 11 -52 minecraft:structure_block[mode=load]{mode:"LOAD",name:"luigis_mansion:kitchen/fridge_closed",mirror:"LEFT_RIGHT"}
-setblock 699 12 -52 minecraft:redstone_block
+place template luigis_mansion:kitchen/fridge_closed 699 11 -52 none left_right
 scoreboard players reset #kitchen_fridge

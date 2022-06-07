@@ -1,2 +1,1 @@
-setblock 3713 110 -22 minecraft:structure_block[mode=load]{mode:"LOAD",name:"luigis_mansion:gameboy_horror_map/door/single_unlocked",rotation:"CLOCKWISE_90"}
-setblock 3713 111 -22 minecraft:redstone_block
+place template luigis_mansion:gameboy_horror_map/door/single_unlocked 3713 110 -22 clockwise_90

@@ -1,5 +1,3 @@
-setblock 758 29 66 minecraft:structure_block[mode=load]{mode:"LOAD",name:"luigis_mansion:armory/armor_diagonal"}
-setblock 758 30 66 minecraft:redstone_block
-setblock 732 29 66 minecraft:structure_block[mode=load]{mode:"LOAD",name:"luigis_mansion:armory/armor_diagonal",mirror:"FRONT_BACK"}
-setblock 732 30 66 minecraft:redstone_block
+place template luigis_mansion:armory/armor_diagonal 758 29 66
+place template luigis_mansion:armory/armor_diagonal 732 29 66 none front_back
 scoreboard players reset #armory_armor_3

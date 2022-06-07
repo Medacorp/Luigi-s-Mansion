@@ -1,3 +1,2 @@
-setblock 746 12 3 minecraft:structure_block[mode=load]{mode:"LOAD",name:"luigis_mansion:foyer/mirror_not_vacuumed"}
-setblock 746 13 3 minecraft:redstone_block
+place template luigis_mansion:foyer/mirror_not_vacuumed 746 12 3
 scoreboard players reset #foyer_vacuumable

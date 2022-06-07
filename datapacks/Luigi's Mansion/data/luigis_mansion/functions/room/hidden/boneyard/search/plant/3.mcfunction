@@ -1,4 +1,4 @@
-setblock 676 102 -26 minecraft:structure_block[mode=load]{mode:"LOAD",name:"luigis_mansion:boneyard/plant_5",mirror:"LEFT_RIGHT"}
+place template luigis_mansion:boneyard/plant_5 676 102 -26 none left_right
 execute positioned 679 105 -29 run function luigis_mansion:spawn_entities/item/gold_coin
 execute positioned 679 104 -29 run function luigis_mansion:spawn_entities/item/gold_coin
 execute positioned 677 106 -29 run function luigis_mansion:spawn_entities/item/gold_coin

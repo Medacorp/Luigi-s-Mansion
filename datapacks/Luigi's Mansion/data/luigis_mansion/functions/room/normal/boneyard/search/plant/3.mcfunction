@@ -1,4 +1,4 @@
-setblock 676 102 41 minecraft:structure_block[mode=load]{mode:"LOAD",name:"luigis_mansion:boneyard/plant_5"}
+place template luigis_mansion:boneyard/plant_5 676 102 41
 execute positioned 679 105 44 run function luigis_mansion:spawn_entities/item/gold_coin
 execute positioned 679 104 44 run function luigis_mansion:spawn_entities/item/gold_coin
 execute positioned 677 106 44 run function luigis_mansion:spawn_entities/item/gold_coin

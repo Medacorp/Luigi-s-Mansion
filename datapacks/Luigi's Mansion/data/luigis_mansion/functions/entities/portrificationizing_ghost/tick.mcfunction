@@ -66,16 +66,14 @@ execute if entity @s[scores={Dialog=470}] run setblock 770 84 3 minecraft:air
 execute if entity @s[scores={Dialog=420}] run teleport @s 770 78 4
 execute if entity @s[scores={Dialog=430}] run teleport @s 770 78 3
 execute if entity @s[scores={Dialog=440}] run teleport @s 770 78 2
-execute if entity @s[scores={Dialog=450}] run setblock 769 79 -1 minecraft:structure_block[mode=load]{mode:"LOAD",name:"luigis_mansion:ghost_portrificationizer_room/zapper_ready"}
-execute if entity @s[scores={Dialog=450}] run setblock 769 80 -1 minecraft:redstone_block
+execute if entity @s[scores={Dialog=450}] run place template luigis_mansion:ghost_portrificationizer_room/zapper_ready 769 79 -1
 execute if entity @s[scores={Dialog=460}] run teleport @s 770 78 1
 execute if entity @s[scores={Dialog=470}] run teleport @s 770 78 0
 execute if entity @s[scores={Dialog=470..490}] run particle minecraft:bubble_pop 770 78.3 0 0.6 0.6 0.6 0 10
 execute if entity @s[scores={Dialog=490}] run teleport @s 770 78 0
 execute if entity @s[scores={Dialog=500}] run teleport @s 770 78 -1
 execute if entity @s[scores={Dialog=510}] run teleport @s 770 78 -2
-execute if entity @s[scores={Dialog=510}] run setblock 769 79 -1 minecraft:structure_block[mode=load]{mode:"LOAD",name:"luigis_mansion:ghost_portrificationizer_room/zapper_stand_by"}
-execute if entity @s[scores={Dialog=510}] run setblock 769 80 -1 minecraft:redstone_block
+execute if entity @s[scores={Dialog=510}] run place template luigis_mansion:ghost_portrificationizer_room/zapper_stand_by 769 79 -1
 execute if entity @s[scores={Dialog=520}] run teleport @s 770 78 -3
 execute if entity @s[scores={Dialog=525}] run teleport @s 770 78 -4
 execute if entity @s[scores={Dialog=530}] run teleport @s 770 78 -5
