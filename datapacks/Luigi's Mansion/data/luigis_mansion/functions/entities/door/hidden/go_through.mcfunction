@@ -8,8 +8,8 @@ execute if entity @s[x=755.0,y=11,z=7.0,dx=0,dy=1,dz=0,y_rotation=-180..0] in mi
 execute if entity @s[x=755.0,y=11,z=6.0,dx=0,dy=1,dz=0,y_rotation=-180..0] in minecraft:overworld run teleport @s 721.0 102 7
 execute in minecraft:overworld run scoreboard players set @s[x=720.0,y=102,z=7.0,dx=0,dy=1,dz=1,y_rotation=-180..0] LoadedChunks 0
 execute in minecraft:overworld run tag @s[x=720.0,y=102,z=7.0,dx=0,dy=1,dz=1,y_rotation=-180..0] remove loaded_chunks
-execute in minecraft:overworld if entity @s[x=720.0,y=102,z=8.0,dx=0,dy=1,dz=0,y_rotation=0..-180] in luigis_mansion:normal run teleport @s 755.0 11 7
-execute in minecraft:overworld if entity @s[x=720.0,y=102,z=7.0,dx=0,dy=1,dz=0,y_rotation=0..-180] in luigis_mansion:normal run teleport @s 755.0 11 6
+execute in minecraft:overworld if entity @s[x=720.0,y=102,z=8.0,dx=0,dy=1,dz=0,y_rotation=0..-180] in luigis_mansion:hidden run teleport @s 755.0 11 7
+execute in minecraft:overworld if entity @s[x=720.0,y=102,z=7.0,dx=0,dy=1,dz=0,y_rotation=0..-180] in luigis_mansion:hidden run teleport @s 755.0 11 6
 #hallway 1-parlor
 teleport @s[x=736.0,y=20,z=7.0,dx=0,dy=1,dz=0,y_rotation=0..-180] 728.0 20 -12
 teleport @s[x=736.0,y=20,z=6.0,dx=0,dy=1,dz=0,y_rotation=0..-180] 728.0 20 -13

@@ -12,7 +12,7 @@
             "translate": "luigis_mansion:advancements.lab.unlocked_hidden_mansion.description"
         }
     },
-	"parent": "luigis_mansion:lab/underground_lab",
+	"parent": "luigis_mansion:lab/cleared_mansion",
     "criteria": {
         "unlocked": {
             "trigger": "minecraft:impossible"

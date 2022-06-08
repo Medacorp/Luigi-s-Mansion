@@ -30,7 +30,6 @@ tag @s[tag=collision,tag=chauncey,tag=!spit,tag=!real] add dead
 tag @s[tag=collision,tag=chauncey,tag=!spit,tag=real] add vacuumable
 tag @s[tag=collision,tag=chauncey,tag=spit,tag=vacuumable] add dead
 tag @s[tag=collision,tag=chauncey,tag=!vacuumable] remove in_vacuum
-tag @s[tag=collision,tag=shadow,tag=spit] add dead
 tag @s[tag=shadow,tag=!spit,tag=!in_vacuum,tag=!can_spit_2,tag=!first_tick] add dead
 tag @s[tag=shadow,tag=first_tick] remove first_tick
 execute store result score @s HomeRot run data get entity @s Pose.Head[0] 1
@@ -41,6 +40,7 @@ execute if entity @s[tag=spike_ball,scores={Move=1..}] store result entity @s Po
 scoreboard players remove @s[scores={Move=1..}] Move 5
 execute unless entity @s[scores={Move=0..}] run scoreboard players set @s Move 0
 scoreboard players set @s[tag=can_spit_2,tag=spike_ball] Move 0
+tag @s[tag=collision,tag=shadow] add dead
 tag @s[tag=collision,tag=boo] add dead
 tag @s[tag=collision,tag=spike_ball] add explode
 tag @s[tag=collision] remove spit

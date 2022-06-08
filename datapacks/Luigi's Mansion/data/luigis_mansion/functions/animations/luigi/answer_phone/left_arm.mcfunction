@@ -1,9 +1,9 @@
 scoreboard players operation @s AnimationProg = @a[tag=this_luigi,limit=1] IdleTime
 scoreboard players add @s AnimationProg 41
-execute at @s if score #mirrored Selected matches 1 run teleport @s[scores={AnimationProg=17..},tag=!flipped_gravity,nbt=!{Small:1b}] ~ ~-0.2 ~
-execute at @s if score #mirrored Selected matches 1 run teleport @s[scores={AnimationProg=17..},tag=!flipped_gravity,nbt={Small:1b}] ~ ~-0.1 ~ 
-execute at @s if score #mirrored Selected matches 1 run teleport @s[scores={AnimationProg=17..},tag=flipped_gravity,nbt=!{Small:1b}] ~ ~0.2 ~
-execute at @s if score #mirrored Selected matches 1 run teleport @s[scores={AnimationProg=17..},tag=flipped_gravity,nbt={Small:1b}] ~ ~0.1 ~ 
+execute at @s if score #mirrored Selected matches 1 rotated ~ 0 run teleport @s[scores={AnimationProg=17..},tag=!flipped_gravity,nbt=!{Small:1b}] ^ ^-0.2 ^-0.2
+execute at @s if score #mirrored Selected matches 1 rotated ~ 0 run teleport @s[scores={AnimationProg=17..},tag=!flipped_gravity,nbt={Small:1b}] ^ ^-0.1 ^-0.1
+execute at @s if score #mirrored Selected matches 1 rotated ~ 0 run teleport @s[scores={AnimationProg=17..},tag=flipped_gravity,nbt=!{Small:1b}] ^ ^0.2 ^-0.2
+execute at @s if score #mirrored Selected matches 1 rotated ~ 0 run teleport @s[scores={AnimationProg=17..},tag=flipped_gravity,nbt={Small:1b}] ^ ^0.1 ^-0.1
 data merge entity @s[scores={AnimationProg=1}] {Pose:{Head:[0.0f,0.0f,0.01f]}}
 data merge entity @s[scores={AnimationProg=1},tag=flipped_gravity] {Pose:{Head:[0.0f,0.0f,-180.0f]}}
 execute store result score #temp Time run data get entity @s Pose.Head[0]
