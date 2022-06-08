@@ -400,6 +400,22 @@
         {
             "predicate": {
                 "damaged": 0,
+                "damage": 0.025,
+                "custom_model_data": 20
+            },
+            "model": "luigis_mansion:entity/luigi/squished"
+        },
+        {
+            "predicate": {
+                "damaged": 0,
+                "damage": 0.0375,
+                "custom_model_data": 20
+            },
+            "model": "luigis_mansion:entity/luigi/squished_mirrored"
+        },
+        {
+            "predicate": {
+                "damaged": 0,
                 "damage": 0.0125,
                 "custom_model_data": 21
             },
@@ -460,6 +476,22 @@
                 "custom_model_data": 24
             },
             "model": "luigis_mansion:entity/luigi/head_dark_room_2"
+        },
+        {
+            "predicate": {
+                "damaged": 0,
+                "damage": 0.025,
+                "custom_model_data": 20
+            },
+            "model": "luigis_mansion:entity/luigi/squished_2"
+        },
+        {
+            "predicate": {
+                "damaged": 0,
+                "damage": 0.0375,
+                "custom_model_data": 20
+            },
+            "model": "luigis_mansion:entity/luigi/squished_mirrored_2"
         },
         {
             "predicate": {

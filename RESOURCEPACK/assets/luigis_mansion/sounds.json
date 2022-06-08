@@ -8960,33 +8960,6 @@
         ],
         "subtitle": "luigis_mansion:subtitles.item.bill.obtain"
     },
-    "item.blue_diamond.bounce": {
-        "sounds": [
-            {
-                "name": "luigis_mansion:item/gem_bounce",
-                "stream": false
-            }
-        ],
-        "subtitle": "luigis_mansion:subtitles.item.blue_diamond.bounce"
-    },
-    "item.blue_diamond.obtain": {
-        "sounds": [
-            {
-                "name": "luigis_mansion:item/gem_obtain",
-                "stream": false
-            }
-        ],
-        "subtitle": "luigis_mansion:subtitles.item.blue_diamond.obtain"
-    },
-    "item.blue_diamond.spawn": {
-        "sounds": [
-            {
-                "name": "luigis_mansion:item/spawn",
-                "stream": false
-            }
-        ],
-        "subtitle": "luigis_mansion:subtitles.item.blue_diamond.spawn"
-    },
     "item.blue_sapphire.bounce": {
         "sounds": [
             {
@@ -9775,6 +9748,33 @@
             }
         ],
         "subtitle": "luigis_mansion:subtitles.item.red_ruby.spawn"
+    },
+    "item.silver_diamond.bounce": {
+        "sounds": [
+            {
+                "name": "luigis_mansion:item/gem_bounce",
+                "stream": false
+            }
+        ],
+        "subtitle": "luigis_mansion:subtitles.item.silver_diamond.bounce"
+    },
+    "item.silver_diamond.obtain": {
+        "sounds": [
+            {
+                "name": "luigis_mansion:item/gem_obtain",
+                "stream": false
+            }
+        ],
+        "subtitle": "luigis_mansion:subtitles.item.silver_diamond.obtain"
+    },
+    "item.silver_diamond.spawn": {
+        "sounds": [
+            {
+                "name": "luigis_mansion:item/spawn",
+                "stream": false
+            }
+        ],
+        "subtitle": "luigis_mansion:subtitles.item.silver_diamond.spawn"
     },
     "item.small_pearl.bounce": {
         "sounds": [

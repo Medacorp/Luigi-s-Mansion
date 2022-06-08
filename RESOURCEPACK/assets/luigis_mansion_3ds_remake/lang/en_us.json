@@ -1,4 +1,10 @@
 {
+"luigis_mansion_3ds_remake:advancements.amiibo.boo": "Boo",
+"luigis_mansion_3ds_remake:advancements.amiibo.luigi": "Luigi",
+"luigis_mansion_3ds_remake:advancements.amiibo.mario": "Mario",
+"luigis_mansion_3ds_remake:advancements.amiibo.root": "Amiibo",
+"luigis_mansion_3ds_remake:advancements.amiibo.root.description": "Amiibo aid in your journey, you can turn them on and off in the lab.",
+"luigis_mansion_3ds_remake:advancements.amiibo.toad": "Toad",
 "luigis_mansion_3ds_remake:advancements.lab.cleared_gcn_hidden_mansion": "Cleared GCN Hidden Mansion",
 "luigis_mansion_3ds_remake:advancements.lab.cleared_gcn_hidden_mansion.description": "Saved Mario from the GCN hidden mansion without switching to or from another mansion.",
 "luigis_mansion_3ds_remake:advancements.lab.cleared_hidden_mansion.description": "Saved Mario from the hidden mansion.",
