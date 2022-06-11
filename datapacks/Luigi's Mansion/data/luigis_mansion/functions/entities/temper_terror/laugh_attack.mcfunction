@@ -5,7 +5,7 @@ execute at @s run function luigis_mansion:animations/ghost/normal/laugh
 tag @s[scores={ActionTime=40}] add vanish
 tag @s[scores={ActionTime=40}] remove attack
 scoreboard players set @s[scores={ActionTime=40}] ActionTime 0
-execute positioned ^ ^ ^0.7 unless entity @a[distance=..0.7,tag=!spectator] run tag @s add stop_attack
+execute positioned ^ ^ ^0.7 unless entity @a[distance=..0.7,scores={Invulnerable=0},tag=!spectator] run tag @s add stop_attack
 
 scoreboard players set @s[tag=stop_attack] ActionTime 0
 scoreboard players set @s[tag=stop_attack] AnimationProg 0

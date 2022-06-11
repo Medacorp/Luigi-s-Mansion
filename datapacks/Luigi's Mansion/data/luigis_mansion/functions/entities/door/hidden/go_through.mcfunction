@@ -122,7 +122,7 @@ teleport @s[x=664.0,y=20,z=-20.0,dx=0,dy=1,dz=0,y_rotation=-90..90] 682 20 5.0
 teleport @s[x=673.0,y=20,z=4.0,dx=0,dy=1,dz=0,y_rotation=90..-90] 654 20 -1.0
 teleport @s[x=654.0,y=20,z=-1.0,dx=0,dy=1,dz=0,y_rotation=-90..90] 673 20 5.0
 #hallway 10-nanas room
-teleport @s[x=673.0,y=20,z=10.0,dx=0,dy=1,dz=0,y_rotation=-90..90] 658 20 182.0
+teleport @s[x=673.0,y=20,z=10.0,dx=0,dy=1,dz=0,y_rotation=-90..90] 658 20 18.0
 teleport @s[x=658.0,y=20,z=17.0,dx=0,dy=1,dz=0,y_rotation=90..-90] 673 20 10.0
 #hallway 11-astral hall
 teleport @s[x=691.0,y=20,z=37.0,dx=0,dy=1,dz=0,y_rotation=-90..90] 666 20 88.0

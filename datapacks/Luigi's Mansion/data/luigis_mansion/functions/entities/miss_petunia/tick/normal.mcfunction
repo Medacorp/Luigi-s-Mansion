@@ -6,7 +6,6 @@ execute unless entity @s[scores={Dialog=1..}] run scoreboard players add @s Dial
 execute unless entity @s[scores={Dialog=3..59}] run function luigis_mansion:entities/miss_petunia/turn_visible
 execute if entity @s[scores={Dialog=1},tag=visible] at @e[tag=same_room,tag=!spectator] positioned ^ ^ ^8 if entity @s[distance=..8] run function luigis_mansion:entities/miss_petunia/turn_invisible
 execute if entity @s[scores={Dialog=61,VulnerableTime=0},tag=visible] at @e[tag=same_room,tag=!spectator] positioned ^ ^ ^8 if entity @s[distance=..8] run function luigis_mansion:entities/miss_petunia/turn_invisible
-effect clear @s[nbt={ActiveEffects:[{Id:14b,Duration:19}]}] minecraft:invisibility
 scoreboard players set @s[scores={Dialog=20}] AnimationProg 0
 execute if entity @s[scores={Dialog=20}] run playsound luigis_mansion:entity.miss_petunia.scream hostile @a[tag=same_room] ~ ~ ~ 1
 execute if entity @s[scores={Dialog=20..59}] facing entity @e[tag=same_room,tag=!spectator,sort=nearest,limit=1] feet run teleport @s ~ ~ ~ ~ ~

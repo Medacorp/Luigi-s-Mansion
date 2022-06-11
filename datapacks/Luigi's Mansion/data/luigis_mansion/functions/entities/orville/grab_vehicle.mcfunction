@@ -8,4 +8,5 @@ execute if score #mirrored Selected matches 0 run teleport @s[scores={ActionTime
 execute if score #mirrored Selected matches 1 run teleport @s[scores={ActionTime=..40}] ~ ~ ~ ~-20 ~
 tag @s[scores={ActionTime=60}] add laugh
 tag @s[scores={ActionTime=60}] remove grab_vehicle
+tag @s[scores={ActionTime=60}] remove at_height
 scoreboard players set @s[scores={ActionTime=60}] ActionTime 0

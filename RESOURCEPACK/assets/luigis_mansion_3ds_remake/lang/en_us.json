@@ -429,6 +429,7 @@
 "luigis_mansion_3ds_remake:message.player.scan_furniture.8": "Some kind of blueprint?",
 "luigis_mansion_3ds_remake:message.player.scan_furniture.9": "I probably shouldn't touch this...",
 "luigis_mansion_3ds_remake:message.the_end.s_rank": "S Rank! Congratulations! The mansion is complete!",
+"luigis_mansion_3ds_remake:message.time_spent_in_mansion": "Time spent in mansion: %1$s:%2$s:%3$s",
 "luigis_mansion_3ds_remake:message.training_type.3ds_remake": "3DS Remake.",
 "luigis_mansion_3ds_remake:settings.flashlight_type.strobulb": "Strobulb",
 "luigis_mansion_3ds_remake:subtitles.entity.gooigi.death": "Gooigi falls apart",

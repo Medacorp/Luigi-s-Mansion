@@ -13,7 +13,7 @@ execute if entity @s[scores={AnimationProg=1}] run data merge entity @e[tag=this
 execute if entity @s[scores={AnimationProg=1}] run data merge entity @e[tag=this_model,tag=right_leg,limit=1] {Pose:{Head:[0.0f,0.0f,0.01f]}}
 execute if entity @s[scores={AnimationProg=1}] run data merge entity @e[tag=this_model,tag=left_leg,limit=1] {Pose:{Head:[0.0f,0.0f,0.01f]}}
 execute store result score #temp Time run data get entity @s Pose.Head[0]
-execute if entity @s[scores={AnimationProg=21..30}] store result entity @s Pose.Head[0] float 1 run scoreboard players remove #temp Time 10
+execute if entity @s[scores={AnimationProg=21..30}] store result entity @s Pose.Head[0] float 1 run scoreboard players add #temp Time 10
 execute store result score #temp Time run data get entity @s Pose.Head[1]
 execute if entity @s[scores={AnimationProg=21..30}] store result entity @s Pose.Head[1] float 1 run scoreboard players remove #temp Time 18
 execute store result score #temp Time run data get entity @e[tag=this_model,tag=right_arm,limit=1] Pose.Head[0]

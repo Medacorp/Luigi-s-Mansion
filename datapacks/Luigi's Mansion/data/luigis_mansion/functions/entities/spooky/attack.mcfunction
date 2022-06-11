@@ -14,14 +14,14 @@ tag @s[scores={ActionTime=20}] add breathe
 scoreboard players set @s[scores={ActionTime=20}] Move 15
 scoreboard players set @s[scores={ActionTime=20}] Dialog 20
 scoreboard players reset @s[scores={ActionTime=20}] ActionTime
-execute at @s[scores={ActionTime=1..19}] positioned ^ ^ ^0.3 if entity @e[tag=same_room,tag=!spectator,distance=..0.7,tag=!grabbed,limit=1] run scoreboard players set @s ActionTime 30
+execute at @s[scores={ActionTime=1..19}] positioned ^ ^ ^0.3 if entity @e[tag=same_room,tag=!spectator,scores={Invulnerable=0},distance=..0.7,tag=!grabbed,limit=1] run scoreboard players set @s ActionTime 30
 
 scoreboard players set @s[scores={ActionTime=30}] AnimationProg 0
 tag @s[scores={ActionTime=30}] remove bite
 tag @s[scores={ActionTime=30}] add hold
 execute if entity @s[scores={ActionTime=30}] positioned ^ ^ ^0.8 as @e[distance=..0.8,tag=gameboy_horror_location] run function luigis_mansion:entities/gameboy_horror_location/bring_player_back
-execute if entity @s[scores={ActionTime=30}] positioned ^ ^ ^0.8 run scoreboard players operation @s GrabbedID = @a[tag=!spectator,distance=..0.8,tag=!grabbed,limit=1] ID
-execute if entity @s[scores={ActionTime=30}] positioned ^ ^ ^0.8 run tag @a[tag=!spectator,distance=..0.8,tag=!grabbed,limit=1] add grabbed
+execute if entity @s[scores={ActionTime=30}] positioned ^ ^ ^0.8 run scoreboard players operation @s GrabbedID = @a[tag=!spectator,scores={Invulnerable=0},distance=..0.8,tag=!grabbed,limit=1] ID
+execute if entity @s[scores={ActionTime=30}] positioned ^ ^ ^0.8 run tag @a[tag=!spectator,scores={Invulnerable=0},distance=..0.8,tag=!grabbed,limit=1] add grabbed
 execute if entity @s[scores={GrabbedID=-2147483648..}] run scoreboard players operation #temp ID = @s GrabbedID
 execute if entity @s[scores={GrabbedID=-2147483648..}] as @a[tag=grabbed] if score @s ID = #temp ID run tag @s add still_grabbed
 execute if entity @s[scores={GrabbedID=-2147483648..}] if entity @a[tag=still_grabbed,limit=1] as @e[tag=chest] if score @s ID = #temp ID run tag @s add grabbed_model

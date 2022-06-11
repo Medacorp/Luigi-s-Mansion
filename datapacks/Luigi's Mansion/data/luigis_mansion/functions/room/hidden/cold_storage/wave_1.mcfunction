@@ -1,5 +1,5 @@
-execute positioned 735 7 16 run function luigis_mansion:spawn_entities/ice_spike
-execute positioned 728 7 15 run function luigis_mansion:spawn_entities/ice_spike
+execute positioned 735 7 17 run function luigis_mansion:spawn_entities/ice_spike
+execute positioned 728 7 16 run function luigis_mansion:spawn_entities/ice_spike
 execute positioned 730 7 12 run function luigis_mansion:spawn_entities/ice_spike
 execute positioned 726 7 13 run function luigis_mansion:spawn_entities/ice_spike
 execute positioned 737 7 11 run function luigis_mansion:spawn_entities/ice_spike

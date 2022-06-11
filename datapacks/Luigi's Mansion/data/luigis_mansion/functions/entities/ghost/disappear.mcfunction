@@ -31,4 +31,5 @@ tag @s remove hurt_animation
 tag @s remove vanish
 tag @s remove visible
 tag @s remove second_flee_state
+tag @s remove smug
 tag @s add hidden

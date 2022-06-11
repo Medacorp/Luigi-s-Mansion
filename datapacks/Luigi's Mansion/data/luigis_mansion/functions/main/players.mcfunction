@@ -23,7 +23,9 @@ execute if entity @s[gamemode=!spectator,scores={Shrunk=1..}] unless entity @s[s
 execute if entity @s[gamemode=!spectator,scores={Shrunk=1..}] unless entity @s[scores={ScareTime=20,ScareType=2..3}] store result score @s PosX run data get entity @s Pos[0] 100
 execute if entity @s[gamemode=!spectator,scores={Shrunk=1..}] unless entity @s[scores={ScareTime=20,ScareType=2..3}] store result score @s PosY run data get entity @s Pos[1] 100
 execute if entity @s[gamemode=!spectator,scores={Shrunk=1..}] unless entity @s[scores={ScareTime=20,ScareType=2..3}] store result score @s PosZ run data get entity @s Pos[2] 100
+execute if entity @s[gamemode=!spectator,scores={Shrunk=1..}] unless entity @s[scores={ScareTime=20,ScareType=2..3}] run tag @s add small_second_run
 execute at @s[gamemode=!spectator,scores={Shrunk=1..}] unless entity @s[scores={ScareTime=20,ScareType=2..3}] run function luigis_mansion:entities/player/not_spectator
+tag @s remove small_second_run
 execute if entity @s[gamemode=spectator] run function luigis_mansion:entities/player/spectator
 execute if entity @s[scores={Shrunk=1}] run function luigis_mansion:items/poison_mushroom/readd_inventory
 scoreboard players remove @s[scores={Shrunk=1..}] Shrunk 1

@@ -1,2 +1,2 @@
-advancement grant @a[tag=!spectator,distance=..1.6] only luigis_mansion:challenges/waluigi_pinball neville
-execute as @a[tag=!spectator,distance=..1.6] run function luigis_mansion:entities/player/knockback/medium
+advancement grant @a[tag=!spectator,scores={Invulnerable=0},distance=..1.6] only luigis_mansion:challenges/waluigi_pinball neville
+execute as @a[tag=!spectator,scores={Invulnerable=0},distance=..1.6] run function luigis_mansion:entities/player/knockback/medium

@@ -2,6 +2,7 @@ summon minecraft:armor_stand ~ ~-0.8 ~ {CustomName:'{"translate":"luigis_mansion
 data modify entity @e[tag=this_entity,limit=1] Tags append from entity @s Tags[]
 tag @e[tag=this_entity,limit=1] remove ghost
 tag @e[tag=this_entity,limit=1] remove portrait_ghost
+tag @e[tag=this_entity,limit=1] remove portrait_ghost_pop
 tag @e[tag=this_entity,limit=1] remove pearl_dropper
 tag @e[tag=this_entity,limit=1] remove this_entity
 playsound luigis_mansion:item.big_pearl.spawn player @a ~ ~ ~ 1

@@ -5,6 +5,8 @@ scoreboard players set #temp Room 68
 
 execute as @a[gamemode=!spectator,scores={Room=68}] run function luigis_mansion:room/hidden/cold_storage/tick_per_player
 
+execute as @e[tag=!spectator,x=724.5,y=3,z=6.5,distance=..3,tag=ghost,tag=fleeing] at @s run teleport @s ~ ~ ~ -45 ~
+
 function #luigis_mansion:room/hidden/cold_storage/interactions/room
 
 scoreboard players set #temp Room 68

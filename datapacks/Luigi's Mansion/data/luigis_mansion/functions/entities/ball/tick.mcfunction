@@ -51,12 +51,12 @@ execute at @s[tag=in_vacuum] unless entity @a[distance=..1.5,tag=!spectator,tag=
 execute at @s[tag=in_vacuum] unless entity @a[distance=..1.5,tag=!spectator,tag=vacuuming] facing entity @p[tag=!spectator,tag=vacuuming] feet unless block ^ ^ ^0.3 #luigis_mansion:all_ignore rotated ~ 0 unless block ^ ^ ^0.3 #luigis_mansion:all_ignore run teleport @s ~ ~ ~ ~ ~
 execute at @s[tag=in_vacuum] at @p[distance=..1.5,tag=!spectator,tag=vacuuming] positioned ~ ~0.5 ~ run teleport @s ^ ^ ^0.2 ~ ~
 execute at @s[tag=!in_vacuum,tag=chauncey] as @e[distance=..1,tag=gameboy_horror_location] run function luigis_mansion:entities/gameboy_horror_location/bring_player_back
-execute at @s[tag=!in_vacuum,tag=chauncey] run effect give @a[distance=..1,tag=!spectator] minecraft:instant_damage 1 0 true
-execute at @s[tag=!in_vacuum,tag=chauncey] run scoreboard players set @a[distance=..1,tag=!spectator] ForcedDamage 4
-execute at @s[tag=!in_vacuum,tag=chauncey] as @a[distance=..1,tag=!spectator] run function luigis_mansion:entities/player/knockback/large
+execute at @s[tag=!in_vacuum,tag=chauncey] run effect give @a[distance=..1,scores={Invulnerable=0},tag=!spectator] minecraft:instant_damage 1 0 true
+execute at @s[tag=!in_vacuum,tag=chauncey] run scoreboard players set @a[distance=..1,scores={Invulnerable=0},tag=!spectator] ForcedDamage 4
+execute at @s[tag=!in_vacuum,tag=chauncey] as @a[distance=..1,scores={Invulnerable=0},tag=!spectator] run function luigis_mansion:entities/player/knockback/large
 execute at @s[tag=!in_vacuum,tag=chauncey,scores={Owner=-2147483648..}] run scoreboard players operation #temp GhostNr = @s Owner
-execute at @s[tag=!in_vacuum,tag=chauncey,scores={Owner=-2147483648..}] if entity @a[distance=..1,tag=!spectator,limit=1] as @e[tag=!model_piece,tag=ghost] if score @s GhostNr = #temp GhostNr run scoreboard players set @s AnimationProg 0
-execute at @s[tag=!in_vacuum,tag=chauncey,scores={Owner=-2147483648..}] if entity @a[distance=..1,tag=!spectator,limit=1] as @e[tag=!model_piece,tag=ghost] if score @s GhostNr = #temp GhostNr run tag @s add laugh
+execute at @s[tag=!in_vacuum,tag=chauncey,scores={Owner=-2147483648..}] if entity @a[distance=..1,scores={Invulnerable=0},tag=!spectator,limit=1] as @e[tag=!model_piece,tag=ghost] if score @s GhostNr = #temp GhostNr run scoreboard players set @s AnimationProg 0
+execute at @s[tag=!in_vacuum,tag=chauncey,scores={Owner=-2147483648..}] if entity @a[distance=..1,scores={Invulnerable=0},tag=!spectator,limit=1] as @e[tag=!model_piece,tag=ghost] if score @s GhostNr = #temp GhostNr run tag @s add laugh
 scoreboard players reset #temp GhostNr
 execute at @p[tag=!spectator,tag=vacuuming] if block ^ ^ ^1 #luigis_mansion:all_ignore run teleport @s[tag=big,tag=can_spit] ^ ^ ^1 ~ ~
 execute at @p[tag=!spectator,tag=vacuuming] if block ^ ^ ^2 #luigis_mansion:all_ignore run teleport @s[tag=big,tag=can_spit] ^ ^ ^2 ~ ~

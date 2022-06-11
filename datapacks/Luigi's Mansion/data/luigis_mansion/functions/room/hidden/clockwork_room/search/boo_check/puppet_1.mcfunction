@@ -1,2 +1,2 @@
-execute unless entity @e[x=688.5,y=122,z=38.5,distance=..0.7,tag=hidden_boo,tag=caught_by_boo_radar] run function luigis_mansion:room/hidden/clockwork_room/search/puppet_1
-tag @e[x=688.5,y=122,z=38.5,distance=..0.7,tag=hidden_boo,tag=caught_by_boo_radar] add spawn
+execute unless entity @e[x=688.5,y=122,z=-5.5,distance=..0.7,tag=hidden_boo,tag=caught_by_boo_radar] run function luigis_mansion:room/hidden/clockwork_room/search/puppet_1
+tag @e[x=688.5,y=122,z=-5.5,distance=..0.7,tag=hidden_boo,tag=caught_by_boo_radar] add spawn

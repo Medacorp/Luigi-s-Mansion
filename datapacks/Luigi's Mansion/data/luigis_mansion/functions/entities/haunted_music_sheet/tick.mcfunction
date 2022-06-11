@@ -1,20 +1,15 @@
 execute if entity @s[tag=dead] run function luigis_mansion:entities/haunted_music_sheet/drop_loot
-execute if entity @s[tag=dead] store result entity @s Pos[0] double 0.01 run scoreboard players get @s HomeX
-execute if entity @s[tag=dead] store result entity @s Pos[1] double 0.01 run scoreboard players get @s HomeY
-execute if entity @s[tag=dead] store result entity @s Pos[2] double 0.01 run scoreboard players get @s HomeZ
-execute if entity @s[tag=dead] store result entity @s Rotation[0] float 1 run scoreboard players get @s HomeRotX
-execute if entity @s[tag=dead] store result entity @s Rotation[1] float 1 run scoreboard players get @s HomeRotY
-execute if entity @s[tag=dead] store result entity @s Pose.RightArm[0] float 1 run scoreboard players get @s HomeRotY
-execute if entity @s[tag=dead] store result entity @s Pose.LeftArm[0] float 1 run scoreboard players get @s HomeRotY
-execute if entity @s[tag=dead] run scoreboard players set @s WaitTime -60
-execute if entity @e[tag=melody_pianissima,limit=1] run data modify entity @s[tag=dead] ArmorItems[3].tag.attacked_by set value []
-execute if entity @e[tag=melody_pianissima,limit=1] run tag @s[tag=dead] remove normal_death
-execute if entity @e[tag=melody_pianissima,limit=1] run tag @s[tag=dead] remove dead
+execute if entity @s[tag=dead] run function luigis_mansion:entities/haunted_music_sheet/captured
+
+scoreboard players set @s[tag=fleeing] WaitTime 0
+tag @s remove fleeing
 
 scoreboard players add @s[scores={WaitTime=..-1}] WaitTime 1
-execute if entity @e[tag=melody_pianissima,limit=1] unless entity @e[tag=melody_pianissima,scores={VulnerableTime=1..},tag=!vanish,limit=1] run scoreboard players add @s[scores={WaitTime=0..}] WaitTime 1
+execute if entity @e[tag=melody_pianissima,tag=!vanish,limit=1] unless entity @e[tag=melody_pianissima,scores={VulnerableTime=1..},limit=1] run scoreboard players add @s[scores={WaitTime=0..}] WaitTime 1
 teleport @s[scores={WaitTime=1}] ~ ~1 ~
 execute at @s[scores={WaitTime=1..59}] run function luigis_mansion:entities/haunted_music_sheet/hover
 execute at @s[scores={WaitTime=60..}] run function luigis_mansion:entities/haunted_music_sheet/attack
+scoreboard players set @s[scores={WaitTime=120}] WaitTime 0
+tag @s[scores={WaitTime=1}] remove at_height
 execute at @s[scores={WaitTime=1..}] run function luigis_mansion:animations/haunted_object/flap
 execute at @s[scores={LightX=-2147483648..}] run function luigis_mansion:other/cast_shadow/1_tall

@@ -5,6 +5,8 @@ execute unless score #hidden_room_trophy_1 Searched matches 1 run summon minecra
 execute unless score #hidden_room_trophy_1 Searched matches 1 run summon minecraft:marker ~ ~ ~ {Tags:["chance","money"],Duration:1}
 execute unless score #hidden_room_trophy_1 Searched matches 1 run tag @e[type=minecraft:marker,tag=chance,sort=random,limit=1] add selected
 execute if entity @e[type=minecraft:marker,tag=chance,tag=selected,tag=money] positioned 746 14 -32 run function luigis_mansion:room/hidden/hidden_room/trophy_1
+execute if entity @e[type=minecraft:marker,tag=chance,tag=selected,tag=small_heart] positioned 746 14 -32 run function luigis_mansion:spawn_entities/item/room_search/small_heart
+execute if entity @e[type=minecraft:marker,tag=chance,tag=selected,tag=poison_mushroom] positioned 746 14 -32 run function luigis_mansion:spawn_entities/item/room_search/poison_mushroom
 execute unless entity @e[type=minecraft:marker,tag=chance,tag=selected,tag=!nothing] positioned 746 13 -32 run function luigis_mansion:blocks/dust
 execute unless entity @e[type=minecraft:marker,tag=chance,tag=selected,tag=!nothing] positioned 752 13 -32 run function luigis_mansion:blocks/dust_no_sound
 kill @e[type=minecraft:marker,tag=chance]

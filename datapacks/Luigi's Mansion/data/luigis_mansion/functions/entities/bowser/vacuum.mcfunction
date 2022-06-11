@@ -22,17 +22,19 @@ scoreboard players set @s[scores={ActionTime=31}] AnimationProg 0
 execute if entity @s[scores={ActionTime=32..89}] at @e[tag=this_model,tag=right_leg] run teleport @a[tag=vacuumed,limit=1] ~ 0 ~
 execute if entity @s[scores={ActionTime=32..89}] at @e[tag=this_model,tag=right_leg] run teleport @a[tag=vacuumed,limit=1] ^0.63 ^2.45 ^0.2
 data modify entity @s[scores={ActionTime=32}] ArmorItems[3].tag.CustomModelData set value 88
+execute if entity @a[tag=vacuumed,limit=1] run tag @s remove can_decapitate
 tag @s[scores={ActionTime=40}] remove can_decapitate
 teleport @s[scores={ActionTime=41..60}] ^ ^0.15 ^-0.1
-execute if entity @s[scores={ActionTime=90}] as @a[tag=vacuumed,limit=1,tag=looking_at_map] run function luigis_mansion:items/gameboy_horror/map/close
-execute if entity @s[scores={ActionTime=90}] run effect give @a[tag=vacuumed,limit=1] minecraft:instant_damage 1 0 true
-execute if entity @s[scores={ActionTime=90}] run scoreboard players set @a[tag=vacuumed,limit=1] ForcedDamage 9
 data modify entity @s[scores={ActionTime=86}] ArmorItems[3].tag.CustomModelData set value 91
 execute if entity @s[scores={ActionTime=86}] run playsound luigis_mansion:entity.bowser.vacuum_spit hostile @a[tag=same_room] ~ ~ ~ 3
+execute if entity @s[scores={ActionTime=90}] run scoreboard players set @a[tag=vacuumed,limit=1] Invulnerable 0
+execute if entity @s[scores={ActionTime=90}] as @a[tag=vacuumed,limit=1,tag=looking_at_map] run function luigis_mansion:items/gameboy_horror/map/close
 execute if entity @s[scores={ActionTime=90}] if score #mirrored Selected matches 0 as @a[tag=vacuumed,limit=1] positioned as @s rotated ~-45 0 run teleport @s ~ ~2 ~ ~-180 ~
 execute if entity @s[scores={ActionTime=90}] if score #mirrored Selected matches 1 as @a[tag=vacuumed,limit=1] positioned as @s rotated ~45 0 run teleport @s ~ ~2 ~ ~-180 ~
-execute if entity @s[scores={ActionTime=91}] as @a[tag=vacuumed,limit=1] at @s positioned ^ ^ ^1 run function luigis_mansion:entities/player/knockback/large
-execute if entity @s[scores={ActionTime=91}] run tag @a[tag=vacuumed] remove vacuumed
+execute if entity @s[scores={ActionTime=90}] as @a[tag=vacuumed,limit=1] at @s positioned ^ ^ ^1 run function luigis_mansion:entities/player/knockback/large
+execute if entity @s[scores={ActionTime=90}] run effect give @a[tag=vacuumed,limit=1] minecraft:instant_damage 1 0 true
+execute if entity @s[scores={ActionTime=90}] run scoreboard players set @a[tag=vacuumed,limit=1] ForcedDamage 9
+execute if entity @s[scores={ActionTime=90}] run tag @a[tag=vacuumed] remove vacuumed
 data modify entity @s[scores={ActionTime=94}] ArmorItems[3].tag.CustomModelData set value 88
 tag @s[scores={ActionTime=110}] remove vacuum
 scoreboard players set @s[scores={ActionTime=110}] AnimationProg 0

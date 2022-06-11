@@ -31,6 +31,7 @@ tag @s[tag=vanish] add dead
 execute if entity @s[tag=vanish] store result storage luigis_mansion:data current_state.current_data.portrait_ghosts.king_boo.health int 1 run scoreboard players get @s Health
 tag @s remove boo_hurt
 tag @s remove in_vacuum
+tag @s remove is_pulled
 
 execute store result entity @s Pose.Head[0] float 0.01 run data get entity @s Rotation[1] 100
 execute store result entity @s Pose.RightArm[1] float -0.01 run data get entity @s Rotation[1] 100

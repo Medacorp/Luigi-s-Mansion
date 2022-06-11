@@ -4,6 +4,8 @@ execute if entity @s[tag=key,tag=!rotated,tag=!display] run function luigis_mans
 scoreboard players add @s SpawnTime 1
 tag @s[scores={SpawnTime=20}] add vacuumable
 tag @s[scores={SpawnTime=600},tag=!eternal] add dead
+tag @s remove item_is_pulled
+tag @s[scores={SpawnTime=..19}] add item_is_pulled
 
 execute if entity @s[scores={MirrorX=-2147483648..}] run scoreboard players operation #temp MirrorX = @s MirrorX
 execute if entity @s[scores={MirrorZ=-2147483648..}] run scoreboard players operation #temp MirrorZ = @s MirrorZ
