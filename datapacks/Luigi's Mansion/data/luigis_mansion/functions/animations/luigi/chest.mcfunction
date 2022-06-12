@@ -39,6 +39,7 @@ execute at @s[scores={KnockbackType=8..9}] run function luigis_mansion:animation
 execute at @s[scores={KnockbackType=10}] run function luigis_mansion:animations/luigi/knockback/bite/chest
 execute at @s[scores={KnockbackType=11}] run function luigis_mansion:animations/luigi/knockback/slip/chest
 execute at @s[scores={KnockbackType=12..13}] run function luigis_mansion:animations/luigi/knockback/flee/chest
+execute at @s[scores={KnockbackType=14}] run function luigis_mansion:animations/luigi/knockback/fake_door/chest
 
 execute at @s[tag=cold_room_idle] run function luigis_mansion:animations/luigi/idle/cold_room/chest
 execute at @s[tag=high_health_idle] run function luigis_mansion:animations/luigi/idle/high_health/chest

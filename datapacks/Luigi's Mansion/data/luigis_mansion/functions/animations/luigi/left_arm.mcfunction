@@ -66,6 +66,7 @@ execute at @s[scores={KnockbackType=8..9}] unless entity @s[tag=held_item,tag=ho
 execute at @s[scores={KnockbackType=10}] unless entity @s[tag=held_item,tag=holding_poltergust] run function luigis_mansion:animations/luigi/knockback/bite/left_arm
 execute at @s[scores={KnockbackType=11}] unless entity @s[tag=held_item,tag=holding_poltergust] run function luigis_mansion:animations/luigi/knockback/slip/left_arm
 execute at @s[scores={KnockbackType=12..13}] unless entity @s[tag=held_item,tag=holding_poltergust] run function luigis_mansion:animations/luigi/knockback/flee/left_arm
+execute at @s[scores={KnockbackType=14}] unless entity @s[tag=held_item,tag=holding_poltergust] run function luigis_mansion:animations/luigi/knockback/fake_door/left_arm
 
 execute at @s[tag=cold_room_idle,tag=!holding_poltergust] run function luigis_mansion:animations/luigi/idle/cold_room/left_arm
 execute at @s[tag=high_health_idle,tag=!holding_poltergust] run function luigis_mansion:animations/luigi/idle/high_health/left_arm
