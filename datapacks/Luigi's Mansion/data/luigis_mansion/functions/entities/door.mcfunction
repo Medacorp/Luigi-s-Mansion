@@ -1,1 +1,1 @@
-execute if entity @s[tag=door,type=minecraft:villager] run function luigis_mansion:entities/door/tick
+execute if entity @s[tag=door,tag=frame] run function luigis_mansion:entities/door/tick

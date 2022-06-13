@@ -1,2 +1,2 @@
-execute as @e[distance=..3,tag=!model_piece,tag=!hidden,tag=!item] run function #luigis_mansion:items/poltergust_3000/effect_on_entity/fire
+execute as @e[distance=..3,tag=!model_piece,tag=!hidden,tag=!item,tag=!no_poltergust_interaction] run function #luigis_mansion:items/poltergust_3000/effect_on_entity/fire
 function #luigis_mansion:items/poltergust_3000/effect_on_block/fire

@@ -2,7 +2,7 @@ scoreboard players add @s Dialog 1
 tag @s[scores={Dialog=1..}] add ghost_portrificationizer_room_dialog
 tag @s[scores={Dialog=1..}] add nod
 execute if entity @s[scores={Dialog=1..625}] as @a[tag=same_room,gamemode=!spectator,scores={IdleTime=0..},tag=!looking_at_map] run function luigis_mansion:entities/player/animation/set/stand_still
-execute if entity @s[scores={Dialog=1}] run scoreboard players set @e[tag=this_model,tag=e_gadd_head,limit=1] AnimationProg 0
+scoreboard players set @s[scores={Dialog=1}] AnimationProg 0
 execute if entity @s[scores={Dialog=1}] run tellraw @a[tag=same_room] {"translate":"chat.type.text","with":[{"translate":"luigis_mansion:entity.e_gadd","color":"green"},{"translate":"luigis_mansion:dialog.ghost_portrificationizer_room.1"}]}
 execute if entity @s[scores={Dialog=1}] run playsound luigis_mansion:entity.e_gadd.talk.yahmum_bah_poheh_hap_poh neutral @a[tag=same_room] ~ ~ ~ 1
 execute if entity @s[scores={Dialog=176}] if score #players Totals matches 1 run tellraw @a[tag=same_room] {"translate":"chat.type.text","with":[{"translate":"luigis_mansion:entity.e_gadd","color":"green"},{"translate":"luigis_mansion:dialog.ghost_portrificationizer_room.2"}]}
@@ -24,4 +24,4 @@ execute unless entity @e[tag=same_room,tag=!spectator,distance=..7,limit=1] run 
 scoreboard players set @s[tag=!talk] Dialog 0
 tag @s[tag=!talk] remove nod
 tag @s[tag=!talk] remove ghost_portrificationizer_room_dialog
-execute if entity @s[tag=!talk] run scoreboard players set @e[tag=this_model,tag=e_gadd_head,limit=1] AnimationProg 0
+scoreboard players set @s[tag=!talk] AnimationProg 0

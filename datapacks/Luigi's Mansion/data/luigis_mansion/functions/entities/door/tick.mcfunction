@@ -1,5 +1,4 @@
 tag @e[tag=door,tag=!frame,type=minecraft:armor_stand,distance=..0.7,limit=1] add this_model
-tag @e[tag=door,tag=frame,type=minecraft:armor_stand,distance=..0.7,limit=1] add this_model_frame
 
 execute if entity @s[scores={Health=..0},tag=!dead,tag=!captured] run function luigis_mansion:entities/door/drop_loot
 
@@ -12,8 +11,8 @@ execute if entity @s[tag=fake] at @e[tag=this_model_frame,limit=1] run teleport 
 
 execute if entity @s[tag=extinguish] run function luigis_mansion:entities/door/extinguish
 execute if entity @s[tag=burning] run function luigis_mansion:entities/door/burn
-execute if entity @s[tag=talk,tag=!open_door,tag=!bash_door,tag=!unlock_door,tag=!attack] run function luigis_mansion:entities/door/use
-tag @s remove talk
+execute if entity @s[tag=try_open,tag=!open_door,tag=!bash_door,tag=!unlock_door,tag=!attack] run function luigis_mansion:entities/door/use
+tag @s remove try_open
 
 fill ^ ^ ^-0.5 ^ ^1 ^-0.5 minecraft:light_gray_stained_glass replace minecraft:air
 execute if entity @s[tag=!fake,tag=!open_door,tag=!bash_door,tag=!unlock_door,tag=!attack] unless entity @s[tag=!in_vacuum,tag=!was_shaking] run function luigis_mansion:entities/door/shake
@@ -25,7 +24,6 @@ execute if entity @s[tag=attack] run function luigis_mansion:entities/door/attac
 execute unless entity @s[tag=!remove_from_existence,tag=!dead] run tag @e[tag=this_model_frame,limit=1] add remove_from_existence
 execute unless entity @s[tag=!remove_from_existence,tag=!dead] run tag @e[tag=this_model,limit=1] add remove_from_existence
 
-tag @e[tag=this_model_frame,limit=1] remove this_model_frame
 tag @e[tag=this_model,limit=1] remove this_model
 
 execute if entity @s[tag=blockade_sounds_can_play,tag=blockade,tag=!had_blockade] as @a[tag=same_room,tag=looking_at_map] run function luigis_mansion:items/gameboy_horror/map/close

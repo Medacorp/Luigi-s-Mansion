@@ -200,9 +200,6 @@ scoreboard players set #2000 Constants 2000
 scoreboard players set #10000 Constants 10000
 scoreboard players set #20000 Constants 20000
 
-team add NoCollision
-team modify NoCollision collisionRule never
-
 scoreboard objectives setdisplay list Health
 
 bossbar add luigis_mansion:boo_counter {"translate":"luigis_mansion:message.boo_counter","color":"white","with":["0","0"]}
