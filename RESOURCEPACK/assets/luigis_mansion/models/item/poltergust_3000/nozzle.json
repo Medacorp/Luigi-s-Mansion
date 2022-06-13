@@ -1,45 +1,46 @@
 {
 	"credit": "Made with Blockbench",
 	"textures": {
-		"nozzle_attachment": "luigis_mansion:item/poltergust_nozzle_attachment",
-		"nozzle": "luigis_mansion:item/poltergust_nozzle"
+		"0": "luigis_mansion:item/poltergust",
+		"particle": "luigis_mansion:item/poltergust"
 	},
 	"elements": [
 		{
-			"from": [6.80716, 6.63647, 1.19863],
-			"to": [9.05716, 8.63647, 14.34863],
-			"rotation": {"angle": 0, "axis": "x", "origin": [4.30716, 17.93647, -2.65137]},
+			"from": [6.675, 6.625, 0.35],
+			"to": [8.675, 8.625, 13.35],
+			"rotation": {"angle": 0, "axis": "y", "origin": [0.35, -0.1, 0.15]},
 			"faces": {
-				"north": {"uv": [0.016, 0.984, 0.984, 0.016], "rotation": 270, "texture": "#nozzle"},
-				"east": {"uv": [0.984, 0.016, 0.016, 0.984], "texture": "#nozzle"},
-				"west": {"uv": [0.984, 0.016, 0.016, 0.984], "rotation": 180, "texture": "#nozzle"},
-				"up": {"uv": [0.016, 0.984, 0.984, 0.016], "rotation": 90, "texture": "#nozzle"},
-				"down": {"uv": [0.016, 0.984, 0.984, 0.016], "rotation": 90, "texture": "#nozzle"}
+				"north": {"uv": [13.5, 14.25, 14, 14.75], "texture": "#0"},
+				"east": {"uv": [10.25, 14.25, 13.5, 14.75], "texture": "#0"},
+				"west": {"uv": [6.5, 14.25, 9.75, 14.75], "texture": "#0"},
+				"up": {"uv": [9.75, 11, 10.25, 14.25], "texture": "#0"},
+				"down": {"uv": [10.25, 11, 10.75, 14.25], "rotation": 180, "texture": "#0"}
 			}
 		},
 		{
-			"from": [2.30716, 2.63647, 14.34863],
-			"to": [13.55716, 12.63647, 16.34863],
-			"rotation": {"angle": 0, "axis": "x", "origin": [4.30716, 17.93647, -2.65137]},
+			"from": [5.675, 5.625, 13.35],
+			"to": [9.675, 9.625, 14.35],
+			"rotation": {"angle": 0, "axis": "y", "origin": [0.35, -0.1, 0.15]},
 			"faces": {
-				"north": {"uv": [0.016, 0.984, 0.984, 0.016], "rotation": 270, "texture": "#nozzle"},
-				"east": {"uv": [0.984, 0.016, 0.016, 0.984], "texture": "#nozzle"},
-				"south": {"uv": [16, 0, 0, 16], "texture": "#nozzle"},
-				"west": {"uv": [0.984, 0.016, 0.016, 0.984], "rotation": 180, "texture": "#nozzle"},
-				"up": {"uv": [0.016, 0.984, 0.984, 0.016], "rotation": 90, "texture": "#nozzle"},
-				"down": {"uv": [0.016, 0.984, 0.984, 0.016], "rotation": 90, "texture": "#nozzle"}
+				"north": {"uv": [8, 15, 9, 16], "texture": "#0"},
+				"east": {"uv": [7.75, 15, 8, 16], "texture": "#0"},
+				"south": {"uv": [0, 0, 0, 0], "texture": "#0"},
+				"west": {"uv": [6.5, 15, 6.75, 16], "texture": "#0"},
+				"up": {"uv": [6.75, 14.75, 7.75, 15], "texture": "#0"},
+				"down": {"uv": [7.75, 14.75, 8.75, 15], "rotation": 180, "texture": "#0"}
 			}
 		},
 		{
-			"from": [5.80716, 5.63647, 13.19863],
-			"to": [10.05716, 9.63647, 14.34863],
-			"rotation": {"angle": 0, "axis": "x", "origin": [4.30716, 17.93647, -2.65137]},
+			"from": [2.175, 2.625, 14.35],
+			"to": [13.175, 12.625, 16.35],
+			"rotation": {"angle": 0, "axis": "y", "origin": [0.35, -0.1, 0.15]},
 			"faces": {
-				"north": {"uv": [0.016, 0.984, 0.984, 0.016], "rotation": 270, "texture": "#nozzle_attachment"},
-				"east": {"uv": [0.984, 0.016, 0.016, 0.984], "texture": "#nozzle_attachment"},
-				"west": {"uv": [0.984, 0.016, 0.016, 0.984], "rotation": 180, "texture": "#nozzle_attachment"},
-				"up": {"uv": [0.016, 0.984, 0.984, 0.016], "rotation": 90, "texture": "#nozzle_attachment"},
-				"down": {"uv": [0.016, 0.984, 0.984, 0.016], "rotation": 90, "texture": "#nozzle_attachment"}
+				"north": {"uv": [3.75, 13.5, 6.5, 16], "texture": "#0"},
+				"east": {"uv": [3.25, 13.5, 3.75, 16], "texture": "#0"},
+				"south": {"uv": [0.5, 13.5, 3.25, 16], "texture": "#0"},
+				"west": {"uv": [0, 13.5, 0.5, 16], "texture": "#0"},
+				"up": {"uv": [0.5, 13, 3.25, 13.5], "texture": "#0"},
+				"down": {"uv": [3.25, 13, 6, 13.5], "rotation": 180, "texture": "#0"}
 			}
 		}
 	],
@@ -69,7 +70,7 @@
 		},
 		"head": {
 			"rotation": [0, -180, 0],
-			"translation": [0, -23, -2.75]
+			"translation": [0, -21.25, -2.75]
 		},
 		"fixed": {
 			"rotation": [0, -180, 0]

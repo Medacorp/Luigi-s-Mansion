@@ -1,9 +1,6 @@
 {
 	"parent": "luigis_mansion:item/poltergust_3000/body_left",
 	"textures": {
-		"particle": "luigis_mansion_3ds_remake:item/poltergust_base_gooigi",
-		"base": "luigis_mansion_3ds_remake:item/poltergust_base_gooigi",
-		"strap": "luigis_mansion_3ds_remake:item/poltergust_strap_gooigi",
-		"model": "luigis_mansion_3ds_remake:item/poltergust_model_gooigi"
+		"0": "luigis_mansion_3ds_remake:item/poltergust_gooigi"
 	}
 }

@@ -1,7 +1,6 @@
 {
 	"parent": "luigis_mansion:item/poltergust_3000/nozzle",
 	"textures": {
-		"nozzle_attachment": "luigis_mansion_3ds_remake:item/poltergust_nozzle_attachment_gooigi",
-		"nozzle": "luigis_mansion_3ds_remake:item/poltergust_nozzle_gooigi"
+		"0": "luigis_mansion_3ds_remake:item/poltergust_gooigi"
 	}
 }

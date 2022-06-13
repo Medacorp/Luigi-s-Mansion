@@ -12,6 +12,8 @@ execute if entity @s[tag=!was_high_health_idle] if data storage luigis_mansion:d
 execute if entity @s[scores={Pull=10..}] unless data storage luigis_mansion:data luigi{tags:["made_error"]} run function luigis_mansion:animations/luigi/reset_pose
 execute if entity @s[scores={AnimationProg=0},tag=was_swimming] store result entity @s Pose.Head[0] float 1 run scoreboard players get @s IncreaseAmount
 execute if entity @s[tag=!was_swimming] if data storage luigis_mansion:data luigi{tags:["swimming"]} run function luigis_mansion:animations/luigi/reset_pose
+execute if entity @s[tag=!was_riding_poltergust] if data storage luigis_mansion:data luigi{tags:["riding_poltergust"]} run function luigis_mansion:animations/luigi/reset_pose
+execute if entity @s[tag=was_riding_poltergust] unless data storage luigis_mansion:data luigi{tags:["riding_poltergust"]} run function luigis_mansion:animations/luigi/reset_pose
 execute if entity @s[tag=!was_yelling] if data storage luigis_mansion:data luigi{tags:["yelling"]} run function luigis_mansion:animations/luigi/reset_pose
 execute if entity @s[tag=was_yelling] unless data storage luigis_mansion:data luigi{tags:["yelling"]} run function luigis_mansion:animations/luigi/reset_pose
 execute if entity @s[tag=!was_nodding] if data storage luigis_mansion:data luigi{tags:["nod"]} run function luigis_mansion:animations/luigi/reset_pose
