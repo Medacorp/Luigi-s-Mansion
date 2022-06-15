@@ -12,7 +12,7 @@ function #luigis_mansion:room/hidden/mirror_room/interactions/room
 clone 736 13 76 736 13 76 734 13 76
 clone 736 13 59 736 13 59 734 13 59
 
-execute if block 736 13 76 minecraft:brewing_stand[has_bottle_0=true,has_bottle_1=true,has_bottle_2=true] if block 736 13 59 minecraft:brewing_stand[has_bottle_0=true,has_bottle_1=true,has_bottle_2=true] run tag @e[scores={Room=21},tag=door,type=minecraft:villager] remove blockade
+execute if block 736 13 76 minecraft:brewing_stand[has_bottle_0=true,has_bottle_1=true,has_bottle_2=true] if block 736 13 59 minecraft:brewing_stand[has_bottle_0=true,has_bottle_1=true,has_bottle_2=true] run tag @e[scores={Room=21},tag=door,tag=frame] remove blockade
 
 scoreboard players set #temp Room 21
 execute as @a[gamemode=!spectator,tag=!pull_open_door,tag=!push_open_door] run function #luigis_mansion:get_same_room

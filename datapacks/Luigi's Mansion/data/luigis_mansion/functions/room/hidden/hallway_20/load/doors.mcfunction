@@ -2,4 +2,4 @@ execute positioned 726 2 36 rotated -180 0 run function luigis_mansion:spawn_fur
 execute positioned 726 2 36 rotated -180 0 run function luigis_mansion:spawn_furniture/door_frame/stone
 execute positioned 726 2 30 rotated 0 0 run function luigis_mansion:spawn_furniture/door/left/push/mansion/wooden
 execute positioned 726 2 30 rotated 0 0 run function luigis_mansion:spawn_furniture/door_frame/stone
-tag @e[x=726.5,y=2,z=31.0,distance=..0.7,type=minecraft:villager,tag=door,limit=1] add hallway_20_cold_storage
+tag @e[x=726.5,y=2,z=31.0,distance=..0.7,tag=door,tag=frame,limit=1] add hallway_20_cold_storage

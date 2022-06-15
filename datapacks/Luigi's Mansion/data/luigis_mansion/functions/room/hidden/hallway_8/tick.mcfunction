@@ -6,7 +6,7 @@ tag @e[tag=ghost,scores={Room=33}] add no_hidden_move
 
 execute as @a[gamemode=!spectator,scores={Room=33}] run function luigis_mansion:room/hidden/hallway_8/tick_per_player
 
-execute if entity @e[x=661.0,y=20,z=59.5,distance=..0.7,type=minecraft:villager,tag=door,tag=!burning,limit=1] run data modify storage luigis_mansion:data current_state.current_data.technical_data merge value {extinguished_hallway_8_fire:1b}
+execute if entity @e[x=661.0,y=20,z=59.5,distance=..0.7,tag=door,tag=frame,tag=!burning,limit=1] run data modify storage luigis_mansion:data current_state.current_data.technical_data merge value {extinguished_hallway_8_fire:1b}
 function #luigis_mansion:room/hidden/hallway_8/interactions/room
 
 scoreboard players set #temp Room 33
