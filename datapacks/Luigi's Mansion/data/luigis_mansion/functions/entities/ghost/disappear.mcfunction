@@ -23,6 +23,7 @@ scoreboard players set @s SpawnTime 200
 scoreboard players set @s Time 0
 scoreboard players set @s ActionTime 0
 scoreboard players set @s PathStep 0
+scoreboard players set @s ErrorTime 0
 scoreboard players reset @s SecondFleeState
 scoreboard players operation @s LastHealth = @s Health
 tag @s remove disappear

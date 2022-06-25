@@ -5,3 +5,4 @@ execute at @e[type=minecraft:marker,tag=position,limit=1] facing entity @s feet 
 execute rotated as @a[tag=me,limit=1] positioned ^ ^ ^0.5 facing entity @s feet run function luigis_mansion:items/poltergust_3000/vacuuming/ghost_step
 scoreboard players reset #temp Steps
 tag @s remove being_vacuumed
+execute if entity @s[scores={Health=..0}] run tag @s add capturing_ghost

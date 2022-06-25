@@ -13,7 +13,7 @@ scoreboard players set @s[scores={AnimationProg=7..26}] Walk 1
 execute at @s run teleport @s[scores={AnimationProg=7..26}] ^ ^ ^0.1
 execute if entity @s[scores={AnimationProg=11}] run function #luigis_mansion:entities/door/go_through
 execute at @s[distance=..0.7] run teleport @s[scores={AnimationProg=11}] ^ ^ ^2.1
-execute if entity @e[tag=!open_door,tag=door,type=minecraft:villager,distance=..0.7] run function luigis_mansion:entities/door/force_animation
+execute if entity @e[tag=!open_door,tag=door,tag=frame,distance=..0.7] run function luigis_mansion:entities/door/force_animation
 scoreboard players set @s Sound 10
 scoreboard players set @s Invulnerable 1000
 tag @s[scores={IdleTime=-1}] remove left_door

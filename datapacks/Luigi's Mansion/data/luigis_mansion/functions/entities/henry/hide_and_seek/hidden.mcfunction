@@ -1,5 +1,5 @@
 scoreboard players add @s Dialog 1
-execute if entity @s[scores={Dialog=1},tag=next_wave] run tag @e[scores={Room=49},tag=door,type=minecraft:villager] add blockade
+execute if entity @s[scores={Dialog=1},tag=next_wave] run tag @e[scores={Room=49},tag=door,tag=frame] add blockade
 execute if entity @s[scores={Dialog=60}] run tag @e[tag=orville,limit=1] add to_remove
 
 execute if entity @s[scores={Dialog=120},tag=next_wave] at @e[tag=orville,limit=1] positioned ~ ~-2 ~ run function luigis_mansion:spawn_entities/portrait_ghost/orville

@@ -3,7 +3,7 @@ scoreboard players set #temp Health 192
 scoreboard players operation #temp Health *= #multiply_damage Selected
 scoreboard players operation #temp Health /= #100 Constants
 scoreboard players operation @s[scores={Room=1..}] Health -= #temp Health
-scoreboard players remove @s[scores={Room=..0}] Health 12
+scoreboard players remove @s[scores={Room=..0}] Health 192
 scoreboard players operation #temp Health = @s Health
 execute if entity @s[scores={HurtTime=10}] run tag @s add no_sound
 scoreboard players operation #temp LastHealth /= #100 Constants

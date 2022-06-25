@@ -11,6 +11,7 @@ scoreboard players set @s VulnerableTime 0
 scoreboard players set @s StunTime 0
 scoreboard players set @s ActionTime 0
 scoreboard players set @s AnimationProg 0
+scoreboard players set @s ErrorTime 0
 scoreboard players reset @s SecondFleeState
 scoreboard players operation @s LastHealth = @s Health
 data modify entity @s ArmorItems[3].tag merge value {attacked_by:[]}

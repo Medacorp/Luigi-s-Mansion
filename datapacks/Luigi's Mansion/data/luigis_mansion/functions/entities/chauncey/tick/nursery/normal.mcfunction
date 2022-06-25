@@ -22,7 +22,7 @@ execute if entity @s[scores={Dialog=30},tag=wake_up] run playsound luigis_mansio
 execute if entity @s[scores={Dialog=10},tag=scream_wake] run playsound luigis_mansion:entity.chauncey.scream_wake hostile @a[tag=same_room] ~ ~ ~ 1
 execute if entity @s[scores={Dialog=30},tag=scream_wake] run playsound luigis_mansion:entity.chauncey.scream_wake hostile @a[tag=same_room] ~ ~ ~ 1
 scoreboard players set @s[scores={Dialog=51}] AnimationProg 0
-execute if entity @s[scores={Dialog=51}] run tag @e[scores={Room=10},tag=door,type=minecraft:villager] add blockade
+execute if entity @s[scores={Dialog=51}] run tag @e[scores={Room=10},tag=door,tag=frame] add blockade
 execute if entity @s[scores={Dialog=51..169}] as @a[tag=same_room,gamemode=!spectator,scores={IdleTime=0..},tag=!looking_at_map] run function luigis_mansion:entities/player/animation/set/stand_still
 tag @s[scores={Dialog=51}] remove wake_up
 tag @s[scores={Dialog=51}] remove scream_wake
