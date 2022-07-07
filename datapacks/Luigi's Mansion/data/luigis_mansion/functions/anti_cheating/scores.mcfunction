@@ -18,6 +18,7 @@ scoreboard objectives add DeathTime dummy
 scoreboard objectives add Dialog dummy
 scoreboard objectives add Distance dummy
 scoreboard objectives add ElementHurtTime dummy
+scoreboard objectives add ElementMeter dummy
 scoreboard objectives add ElementalNr dummy
 scoreboard objectives add EGaddCallChoice trigger
 scoreboard objectives add EGaddGallChoice trigger
@@ -25,7 +26,6 @@ scoreboard objectives add EGaddGPRChoice trigger
 scoreboard objectives add EGaddLabChoice trigger
 scoreboard objectives add EGaddTrainChoice trigger
 scoreboard objectives add ErrorTime dummy
-scoreboard objectives add FakeDoors dummy
 scoreboard objectives add FlashlightType dummy
 scoreboard objectives add FlyTime dummy
 scoreboard objectives add Food food

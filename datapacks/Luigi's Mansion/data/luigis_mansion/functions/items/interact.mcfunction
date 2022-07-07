@@ -1,5 +1,2 @@
-tag @s remove try_opening_door
-execute if entity @s[scores={UseItem=1..},nbt={SelectedItem:{tag:{luigis_mansion:{id:"luigis_mansion:interact"}}}}] unless entity @s[scores={IdleTime=..-1},tag=!idle] unless entity @s[scores={InteractionTime=1..}] run function luigis_mansion:items/interact/trigger
-execute if entity @s[scores={InteractionTime=1..}] run function luigis_mansion:items/interact/use
-execute if entity @s[scores={YellTime=1..}] run function luigis_mansion:items/interact/yell
+execute if entity @s[tag=!looking_at_map,tag=!death_animation,tag=!revive_animation,nbt={Inventory:[{tag:{luigis_mansion:{id:"luigis_mansion:interact"}}}]}] unless entity @s[scores={KnockbackType=1..}] unless entity @s[scores={ScareType=2..}] run function luigis_mansion:items/interact/tick
 execute if entity @s[nbt=!{Inventory:[{tag:{luigis_mansion:{id:"luigis_mansion:interact"}}}]}] run function luigis_mansion:items/interact/give

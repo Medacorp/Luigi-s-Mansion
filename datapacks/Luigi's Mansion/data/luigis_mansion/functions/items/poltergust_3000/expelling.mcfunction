@@ -5,8 +5,8 @@ execute if entity @s[scores={MirrorZ=-2147483648..}] run scoreboard players oper
 tag @s add me
 tag @s remove vacuuming
 summon minecraft:marker ~ ~ ~ {Tags:["interact","poltergust"]}
-execute unless entity @s[level=1..] unless entity @s[nbt={SelectedItem:{tag:{luigis_mansion:{id:"luigis_mansion:poltergust_3000",element:{type:0b}}}}}] run function luigis_mansion:items/poltergust_3000/no_element
-experience set @s[level=1..,nbt={SelectedItem:{tag:{luigis_mansion:{id:"luigis_mansion:poltergust_3000",element:{type:0b}}}}}] 0 levels
+execute unless entity @s[scores={ElementMeter=1..}] unless entity @s[nbt={SelectedItem:{tag:{luigis_mansion:{id:"luigis_mansion:poltergust_3000",element:{type:0b}}}}}] run function luigis_mansion:items/poltergust_3000/no_element
+execute if entity @s[scores={ElementMeter=1..},nbt={SelectedItem:{tag:{luigis_mansion:{id:"luigis_mansion:poltergust_3000",element:{type:0b}}}}}] run function luigis_mansion:items/poltergust_3000/no_element
 tag @s[nbt={SelectedItem:{tag:{luigis_mansion:{id:"luigis_mansion:poltergust_3000",element:{type:1b}}}}}] add fire
 tag @s[nbt={SelectedItem:{tag:{luigis_mansion:{id:"luigis_mansion:poltergust_3000",element:{type:2b}}}}}] add water
 tag @s[nbt={SelectedItem:{tag:{luigis_mansion:{id:"luigis_mansion:poltergust_3000",element:{type:3b}}}}}] add ice

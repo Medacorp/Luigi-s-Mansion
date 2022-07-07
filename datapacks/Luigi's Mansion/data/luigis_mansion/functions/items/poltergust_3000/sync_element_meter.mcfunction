@@ -1,0 +1,13 @@
+experience set @s 63 levels
+experience set @s[scores={ElementMeter=..0}] 0 points
+experience set @s[scores={ElementMeter=1..44}] 40 points
+experience set @s[scores={ElementMeter=45..88}] 80 points
+experience set @s[scores={ElementMeter=89..132}] 120 points
+experience set @s[scores={ElementMeter=133..176}] 160 points
+experience set @s[scores={ElementMeter=177..220}] 200 points
+experience set @s[scores={ElementMeter=221..264}] 240 points
+experience set @s[scores={ElementMeter=265..308}] 280 points
+experience set @s[scores={ElementMeter=309..352}] 320 points
+experience set @s[scores={ElementMeter=353..396}] 360 points
+experience set @s[scores={ElementMeter=397..}] 398 points
+experience set @s 0 levels
