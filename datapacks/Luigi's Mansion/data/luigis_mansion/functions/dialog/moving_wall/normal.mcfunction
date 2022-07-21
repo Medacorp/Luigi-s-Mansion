@@ -1,8 +1,8 @@
 scoreboard players set #freeze_timer Selected 1
 scoreboard players add @s Dialog 1
 execute if entity @s[scores={Dialog=1..279}] as @a[tag=same_room,gamemode=!spectator,scores={IdleTime=0..},tag=!looking_at_map] run function luigis_mansion:entities/player/animation/set/stand_still
-execute if entity @s[scores={Dialog=1..89}] run stopsound @a[scores={Room=18}] music
-execute if entity @s[scores={Dialog=1}] run scoreboard players set @a[scores={Room=18}] Music 310
+execute if entity @s[scores={Dialog=1..89}] run stopsound @a[tag=same_room] music
+execute if entity @s[scores={Dialog=1}] run scoreboard players set @a[tag=same_room] Music 310
 execute if entity @s[scores={Dialog=40}] run fill 682 11 -52 682 12 -52 minecraft:air
 execute if entity @s[scores={Dialog=40..240}] run fill 681 11 -52 689 17 -39 minecraft:air replace minecraft:light
 execute if entity @s[scores={Dialog=40}] run clone 681 11 -52 689 17 -51 681 11 -51 replace move
@@ -12,7 +12,7 @@ execute if entity @s[scores={Dialog=80}] run setblock 682 12 -51 minecraft:air
 execute if entity @s[scores={Dialog=80}] run clone 681 11 -51 689 17 -50 681 11 -50 replace move
 execute if entity @s[scores={Dialog=80}] run setblock 682 11 -51 minecraft:oak_slab[type=bottom]
 execute if entity @s[scores={Dialog=80}] run setblock 682 11 -52 minecraft:andesite_slab[type=bottom]
-execute if entity @s[scores={Dialog=90}] run playsound luigis_mansion:music.moving_wall music @a[scores={Room=18}] ~ ~ ~ 10000
+execute if entity @s[scores={Dialog=90}] run playsound luigis_mansion:music.moving_wall music @a[tag=same_room] ~ ~ ~ 10000
 execute if entity @s[scores={Dialog=100}] run clone 681 11 -50 689 17 -49 681 11 -49 replace move
 execute if entity @s[scores={Dialog=120}] run clone 681 11 -49 689 17 -48 681 11 -48 replace move
 execute if entity @s[scores={Dialog=140}] run clone 681 11 -48 689 17 -47 681 11 -47 replace move
@@ -25,7 +25,8 @@ execute if entity @s[scores={Dialog=220}] run clone 681 11 -43 689 17 -42 681 11
 execute if entity @s[scores={Dialog=230}] run clone 681 11 -42 689 17 -41 681 11 -41 replace move
 execute if entity @s[scores={Dialog=240}] run clone 681 11 -41 689 17 -40 681 11 -40 replace move
 execute if entity @s[scores={Dialog=240}] run data modify storage luigis_mansion:data current_state.current_data.technical_data merge value {moved_wall:1b}
-execute if entity @s[scores={Dialog=280}] run playsound luigis_mansion:music.solve_puzzle music @a[scores={Room=18}] ~ ~ ~ 10000
+execute if entity @s[scores={Dialog=20}] run playsound luigis_mansion:block.moving_wall block @a[tag=same_room] 685 11 -49 2
+execute if entity @s[scores={Dialog=280}] run playsound luigis_mansion:music.solve_puzzle music @a[tag=same_room] ~ ~ ~ 10000
 execute if entity @s[scores={Dialog=280}] as @a[tag=same_room,tag=!spectator,tag=!looking_at_map] run function luigis_mansion:entities/player/animation/set/none
 tag @s[scores={Dialog=280}] remove move_wall
 

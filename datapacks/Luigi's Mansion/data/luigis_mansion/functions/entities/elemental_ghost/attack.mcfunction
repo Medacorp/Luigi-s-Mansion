@@ -5,7 +5,4 @@ advancement grant @a[tag=!spectator,scores={Invulnerable=0},distance=..1] only l
 execute if entity @s[tag=fire] as @a[distance=..1,scores={Invulnerable=0},tag=!spectator] run function luigis_mansion:entities/player/knockback/burn
 execute if entity @s[tag=water] as @a[distance=..1,scores={Invulnerable=0},tag=!spectator] run function luigis_mansion:entities/player/knockback/soak
 execute if entity @s[tag=ice] as @a[distance=..1,scores={Invulnerable=0},tag=!spectator] run function luigis_mansion:entities/player/knockback/freeze
-execute if entity @s[tag=fire] if entity @a[distance=..1,scores={Invulnerable=0},tag=!spectator] run playsound luigis_mansion:entity.fire_elemental_ghost.attack hostile @a[tag=same_room] ~ ~ ~ 1
-execute if entity @s[tag=water] if entity @a[distance=..1,scores={Invulnerable=0},tag=!spectator] run playsound luigis_mansion:entity.water_elemental_ghost.attack hostile @a[tag=same_room] ~ ~ ~ 1
-execute if entity @s[tag=ice] if entity @a[distance=..1,scores={Invulnerable=0},tag=!spectator] run playsound luigis_mansion:entity.ice_elemental_ghost.attack hostile @a[tag=same_room] ~ ~ ~ 1
 execute if entity @a[distance=..1,scores={Invulnerable=0},tag=!spectator] run tag @s add dead

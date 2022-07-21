@@ -1,0 +1,1 @@
+playsound luigis_mansion:block.search.chest block @a[tag=same_room] ~ ~ ~ 1

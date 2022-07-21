@@ -79,6 +79,24 @@
         ],
         "subtitle": "luigis_mansion:subtitles.block.blockade.spawn"
     },
+    "block.boo_hatch": {
+        "sounds": [
+            {
+                "name": "luigis_mansion:block/boo_hatch",
+                "stream": false
+            }
+        ],
+        "subtitle": "luigis_mansion:subtitles.block.boo_hatch"
+    },
+    "block.button.press": {
+        "sounds": [
+            {
+                "name": "luigis_mansion:block/button/press",
+                "stream": false
+            }
+        ],
+        "subtitle": "luigis_mansion:subtitles.block.button.press"
+    },
     "block.chandelier.fall": {
         "sounds": [
             {
@@ -224,7 +242,8 @@
         "sounds": [
             {
                 "name": "luigis_mansion:block/door/burn",
-                "stream": false
+                "stream": false,
+                "volume": 0.5
             }
         ],
         "subtitle": "luigis_mansion:subtitles.block.door.burn"
@@ -246,19 +265,10 @@
         ],
         "subtitle": "luigis_mansion:subtitles.block.door.close"
     },
-    "block.door.crack_pull": {
+    "block.door.crack": {
         "sounds": [
             {
-                "name": "luigis_mansion:block/door/crack_pull",
-                "stream": false
-            }
-        ],
-        "subtitle": "luigis_mansion:subtitles.block.door.crack"
-    },
-    "block.door.crack_push": {
-        "sounds": [
-            {
-                "name": "luigis_mansion:block/door/crack_push",
+                "name": "luigis_mansion:block/door/crack",
                 "stream": false
             }
         ],
@@ -336,6 +346,15 @@
         ],
         "subtitle": "luigis_mansion:subtitles.block.dust"
     },
+    "block.moving_wall": {
+        "sounds": [
+            {
+                "name": "luigis_mansion:block/moving_wall",
+                "stream": false
+            }
+        ],
+        "subtitle": "luigis_mansion:subtitles.block.moving_wall"
+    },
     "block.search.cello": {
         "sounds": [
             {
@@ -350,6 +369,16 @@
         "sounds": [
             {
                 "name": "luigis_mansion:block/search/ceramic",
+                "stream": false,
+				"volume": 0.5
+            }
+        ],
+        "subtitle": "luigis_mansion:subtitles.block.search"
+    },
+    "block.search.chest": {
+        "sounds": [
+            {
+                "name": "luigis_mansion:block/search/chest",
                 "stream": false,
 				"volume": 0.5
             }
@@ -460,6 +489,16 @@
         "sounds": [
             {
                 "name": "luigis_mansion:block/search/plant",
+                "stream": false,
+				"volume": 0.5
+            }
+        ],
+        "subtitle": "luigis_mansion:subtitles.block.search"
+    },
+    "block.search.plate": {
+        "sounds": [
+            {
+                "name": "luigis_mansion:block/search/plate",
                 "stream": false,
 				"volume": 0.5
             }
@@ -2910,14 +2949,14 @@
         ],
         "subtitle": "luigis_mansion:subtitles.entity.e_gadd.walk"
     },
-    "entity.fire_elemental_ghost.attack": {
+    "entity.fire_elemental_ghost.bounce": {
         "sounds": [
             {
-                "name": "luigis_mansion:entity/elemental_ghost/attack",
+                "name": "luigis_mansion:entity/elemental_ghost/bounce",
                 "stream": false
             }
         ],
-        "subtitle": "luigis_mansion:subtitles.entity.fire_elemental_ghost.attack"
+        "subtitle": "luigis_mansion:subtitles.entity.fire_elemental_ghost.bounce"
     },
     "entity.fire_elemental_ghost.hurt": {
         "sounds": [
@@ -3669,6 +3708,33 @@
         ],
         "subtitle": "luigis_mansion:subtitles.entity.haunted_book.spawn"
     },
+    "entity.haunted_book.flying": {
+        "sounds": [
+            {
+                "name": "luigis_mansion:entity/haunted_object/flying",
+                "stream": false
+            }
+        ],
+        "subtitle": "luigis_mansion:subtitles.entity.haunted_book.flying"
+    },
+    "entity.haunted_book.flying_start": {
+        "sounds": [
+            {
+                "name": "luigis_mansion:entity/haunted_object/flying_start",
+                "stream": false
+            }
+        ],
+        "subtitle": "luigis_mansion:subtitles.entity.haunted_book.flying"
+    },
+    "entity.haunted_book.hit": {
+        "sounds": [
+            {
+                "name": "luigis_mansion:entity/haunted_object/hit",
+                "stream": false
+            }
+        ],
+        "subtitle": "luigis_mansion:subtitles.entity.haunted_book.hit"
+    },
     "entity.haunted_clown_doll.spawn": {
         "sounds": [
             {
@@ -3677,6 +3743,33 @@
             }
         ],
         "subtitle": "luigis_mansion:subtitles.entity.haunted_clown_doll.spawn"
+    },
+    "entity.haunted_clown_doll.flying": {
+        "sounds": [
+            {
+                "name": "luigis_mansion:entity/haunted_object/flying",
+                "stream": false
+            }
+        ],
+        "subtitle": "luigis_mansion:subtitles.entity.haunted_clown_doll.flying"
+    },
+    "entity.haunted_clown_doll.flying_start": {
+        "sounds": [
+            {
+                "name": "luigis_mansion:entity/haunted_object/flying_start",
+                "stream": false
+            }
+        ],
+        "subtitle": "luigis_mansion:subtitles.entity.haunted_clown_doll.flying"
+    },
+    "entity.haunted_clown_doll.hit": {
+        "sounds": [
+            {
+                "name": "luigis_mansion:entity/haunted_object/hit",
+                "stream": false
+            }
+        ],
+        "subtitle": "luigis_mansion:subtitles.entity.haunted_clown_doll.hit"
     },
     "entity.haunted_frying_pan.spawn": {
         "sounds": [
@@ -3687,6 +3780,33 @@
         ],
         "subtitle": "luigis_mansion:subtitles.entity.haunted_frying_pan.spawn"
     },
+    "entity.haunted_frying_pan.flying": {
+        "sounds": [
+            {
+                "name": "luigis_mansion:entity/haunted_object/flying",
+                "stream": false
+            }
+        ],
+        "subtitle": "luigis_mansion:subtitles.entity.haunted_frying_pan.flying"
+    },
+    "entity.haunted_frying_pan.flying_start": {
+        "sounds": [
+            {
+                "name": "luigis_mansion:entity/haunted_object/flying_start",
+                "stream": false
+            }
+        ],
+        "subtitle": "luigis_mansion:subtitles.entity.haunted_frying_pan.flying"
+    },
+    "entity.haunted_frying_pan.hit": {
+        "sounds": [
+            {
+                "name": "luigis_mansion:entity/haunted_object/hit",
+                "stream": false
+            }
+        ],
+        "subtitle": "luigis_mansion:subtitles.entity.haunted_frying_pan.hit"
+    },
     "entity.haunted_jar.spawn": {
         "sounds": [
             {
@@ -3695,6 +3815,33 @@
             }
         ],
         "subtitle": "luigis_mansion:subtitles.entity.haunted_jar.spawn"
+    },
+    "entity.haunted_jar.flying": {
+        "sounds": [
+            {
+                "name": "luigis_mansion:entity/haunted_object/flying",
+                "stream": false
+            }
+        ],
+        "subtitle": "luigis_mansion:subtitles.entity.haunted_jar.flying"
+    },
+    "entity.haunted_jar.flying_start": {
+        "sounds": [
+            {
+                "name": "luigis_mansion:entity/haunted_object/flying_start",
+                "stream": false
+            }
+        ],
+        "subtitle": "luigis_mansion:subtitles.entity.haunted_jar.flying"
+    },
+    "entity.haunted_jar.hit": {
+        "sounds": [
+            {
+                "name": "luigis_mansion:entity/haunted_object/hit",
+                "stream": false
+            }
+        ],
+        "subtitle": "luigis_mansion:subtitles.entity.haunted_jar.hit"
     },
     "entity.haunted_plate.spawn": {
         "sounds": [
@@ -3705,6 +3852,33 @@
         ],
         "subtitle": "luigis_mansion:subtitles.entity.haunted_plate.spawn"
     },
+    "entity.haunted_plate.flying": {
+        "sounds": [
+            {
+                "name": "luigis_mansion:entity/haunted_object/flying",
+                "stream": false
+            }
+        ],
+        "subtitle": "luigis_mansion:subtitles.entity.haunted_plate.flying"
+    },
+    "entity.haunted_plate.flying_start": {
+        "sounds": [
+            {
+                "name": "luigis_mansion:entity/haunted_object/flying_start",
+                "stream": false
+            }
+        ],
+        "subtitle": "luigis_mansion:subtitles.entity.haunted_plate.flying"
+    },
+    "entity.haunted_plate.hit": {
+        "sounds": [
+            {
+                "name": "luigis_mansion:entity/haunted_object/hit",
+                "stream": false
+            }
+        ],
+        "subtitle": "luigis_mansion:subtitles.entity.haunted_plate.hit"
+    },
     "entity.haunted_teddy_bear.spawn": {
         "sounds": [
             {
@@ -3713,6 +3887,33 @@
             }
         ],
         "subtitle": "luigis_mansion:subtitles.entity.haunted_teddy_bear.spawn"
+    },
+    "entity.haunted_teddy_bear.flying": {
+        "sounds": [
+            {
+                "name": "luigis_mansion:entity/haunted_object/flying",
+                "stream": false
+            }
+        ],
+        "subtitle": "luigis_mansion:subtitles.entity.haunted_teddy_bear.flying"
+    },
+    "entity.haunted_teddy_bear.flying_start": {
+        "sounds": [
+            {
+                "name": "luigis_mansion:entity/haunted_object/flying_start",
+                "stream": false
+            }
+        ],
+        "subtitle": "luigis_mansion:subtitles.entity.haunted_teddy_bear.flying"
+    },
+    "entity.haunted_teddy_bear.hit": {
+        "sounds": [
+            {
+                "name": "luigis_mansion:entity/haunted_object/hit",
+                "stream": false
+            }
+        ],
+        "subtitle": "luigis_mansion:subtitles.entity.haunted_teddy_bear.hit"
     },
     "entity.heart.beat": {
         "sounds": [
@@ -3821,14 +4022,14 @@
         ],
         "subtitle": "luigis_mansion:subtitles.entity.henry.spawn"
     },
-    "entity.ice_elemental_ghost.attack": {
+    "entity.ice_elemental_ghost.bounce": {
         "sounds": [
             {
-                "name": "luigis_mansion:entity/elemental_ghost/attack",
+                "name": "luigis_mansion:entity/elemental_ghost/bounce",
                 "stream": false
             }
         ],
-        "subtitle": "luigis_mansion:subtitles.entity.ice_elemental_ghost.attack"
+        "subtitle": "luigis_mansion:subtitles.entity.ice_elemental_ghost.bounce"
     },
     "entity.ice_elemental_ghost.hurt": {
         "sounds": [
@@ -8888,14 +9089,14 @@
         ],
         "subtitle": "luigis_mansion:subtitles.entity.waiter.place_food"
     },
-    "entity.water_elemental_ghost.attack": {
+    "entity.water_elemental_ghost.bounce": {
         "sounds": [
             {
-                "name": "luigis_mansion:entity/elemental_ghost/attack",
+                "name": "luigis_mansion:entity/elemental_ghost/bounce",
                 "stream": false
             }
         ],
-        "subtitle": "luigis_mansion:subtitles.entity.water_elemental_ghost.attack"
+        "subtitle": "luigis_mansion:subtitles.entity.water_elemental_ghost.bounce"
     },
     "entity.water_elemental_ghost.hurt": {
         "sounds": [
