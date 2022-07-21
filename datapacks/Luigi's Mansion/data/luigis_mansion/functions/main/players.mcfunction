@@ -15,6 +15,7 @@ execute as @e[tag=ghost] run function #luigis_mansion:get_same_room
 scoreboard players reset #temp Room
 
 function luigis_mansion:dialog/try
+execute if entity @s[tag=show_credits] run function luigis_mansion:credits
 function #luigis_mansion:player_tag_dialogs
 execute at @s[gamemode=!spectator] run function luigis_mansion:entities/player/not_spectator
 execute if entity @s[gamemode=!spectator,scores={Shrunk=1..}] unless entity @s[scores={ScareTime=20,ScareType=2..3}] run scoreboard players operation @s OtherX = @s PosX
@@ -48,7 +49,8 @@ tag @s[scores={Sneaking=0}] remove was_sneaking
 scoreboard players set @s[scores={Sneaking=0,SneakTime=20..}] SneakTime 0
 execute unless entity @s[scores={SneakTime=0..}] run scoreboard players set @s SneakTime 0
 scoreboard players set @s Jump 0
-execute store result score @s JumpHeight run data get entity @s Pos[1] 100
+execute store result score @s JumpHeight run data get entity @s Pos[1] 1000
+scoreboard players add @s JumpHeight 1
 tag @s[tag=walking] remove walking
 tag @s[scores={Walk=1..},tag=!looking_at_map] add walking
 tag @s[scores={WalkOnWater=1..},tag=!looking_at_map] add walking

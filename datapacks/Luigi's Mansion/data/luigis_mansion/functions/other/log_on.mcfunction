@@ -6,6 +6,7 @@ scoreboard players set @s Offline 0
 scoreboard players set @s PrevMusicType 0
 scoreboard players set @s RoomNoise 0
 scoreboard players set @s LoadedChunks 0
+scoreboard players set @s CreditsTime 0
 function luigis_mansion:entities/player/animation/set/none
 scoreboard players reset @s ID
 scoreboard players reset @s[scores={TrainingOption=-1}] TrainingOption
