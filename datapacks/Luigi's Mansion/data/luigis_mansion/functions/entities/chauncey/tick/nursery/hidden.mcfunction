@@ -37,7 +37,7 @@ execute if entity @s[scores={Dialog=130}] if data storage luigis_mansion:data cu
 execute if entity @s[scores={Dialog=130}] run tellraw @a[tag=same_room] {"translate":"chat.type.text","with":[{"translate":"luigis_mansion:entity.chauncey","color":"green"},{"translate":"luigis_mansion:message.chauncey.play"}]}
 execute if entity @s[scores={Dialog=169}] as @a[tag=same_room,tag=!spectator,tag=!looking_at_map] run function luigis_mansion:entities/player/animation/set/none
 execute if entity @s[scores={Dialog=170}] run data modify storage luigis_mansion:data current_state.current_data.technical_data merge value {chauncey_spoke:1b}
-execute if entity @s[scores={Dialog=170..}] as @a[tag=same_room,tag=!spectator] unless entity @s[scores={MusicGroup=0,MusicType=36}] run function luigis_mansion:other/music/set/danger
+execute if entity @s[scores={Dialog=170..}] as @a[tag=same_room,tag=!spectator] run function luigis_mansion:other/music/set/danger
 execute if entity @s[scores={Dialog=170},tag=!attack,tag=!laugh,tag=!complain] run tag @e[tag=haunted_teddy_bear] add enabled
 execute if entity @s[scores={Dialog=170}] unless entity @s[tag=!laugh,tag=!complain,tag=!attack] run scoreboard players set @e[tag=haunted_teddy_bear] WaitTime 0
 execute if entity @s[scores={Dialog=170}] unless entity @s[tag=!laugh,tag=!complain,tag=!attack] run tag @e[tag=haunted_teddy_bear] remove enabled

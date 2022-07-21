@@ -7,7 +7,7 @@ tag @s[scores={Dialog=1}] add appear
 execute if entity @s[scores={Dialog=1..333}] as @a[tag=same_room,gamemode=!spectator,scores={IdleTime=0..},tag=!looking_at_map] run function luigis_mansion:entities/player/animation/set/stand_still
 execute if entity @s[scores={Dialog=30}] run playsound luigis_mansion:music.solve_puzzle music @a[tag=same_room] ~ ~ ~ 10000
 execute if entity @s[scores={Dialog=30}] run scoreboard players set @a[tag=same_room,scores={Music=..30}] Music 30
-execute if entity @s[scores={Dialog=61..334}] as @a[tag=same_room] unless entity @s[scores={MusicGroup=0,MusicType=23}] run function luigis_mansion:other/music/set/talking_ghost
+execute if entity @s[scores={Dialog=61..334}] as @a[tag=same_room] run function luigis_mansion:other/music/set/talking_ghost
 tag @s[scores={Dialog=61}] add nod
 scoreboard players set @s[scores={Dialog=61}] AnimationProg 0
 execute if entity @s[scores={Dialog=61}] if score #players Totals matches 1 run tellraw @a[tag=same_room] {"translate":"chat.type.text","with":[{"translate":"luigis_mansion:entity.orville","color":"green"},{"translate":"luigis_mansion:dialog.twins.1"}]}

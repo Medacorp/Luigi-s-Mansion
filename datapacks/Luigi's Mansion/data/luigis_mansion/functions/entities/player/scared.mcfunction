@@ -96,6 +96,7 @@ execute at @s unless block ~-0.3 ~ ~ #luigis_mansion:all_ignore if block ~ ~ ~ #
 execute at @s unless block ~ ~ ~0.3 #luigis_mansion:all_ignore if block ~ ~ ~ #luigis_mansion:all_ignore run teleport @s ~ ~ ~-0.16
 execute at @s unless block ~ ~ ~-0.3 #luigis_mansion:all_ignore if block ~ ~ ~ #luigis_mansion:all_ignore run teleport @s ~ ~ ~0.16
 kill @e[type=minecraft:marker,tag=temp,limit=1]
+tag @s[scores={ScareType=2..}] remove vacuuming_ghost
 scoreboard players reset @s[scores={ScareTime=0}] ScareType
 scoreboard players reset @s[scores={ScareTime=0}] ScareTime
 

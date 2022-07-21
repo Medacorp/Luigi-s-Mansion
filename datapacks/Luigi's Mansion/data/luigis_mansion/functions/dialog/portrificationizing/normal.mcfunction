@@ -9,14 +9,6 @@ execute if entity @s[scores={Dialog=1}] run function #luigis_mansion:portrificat
 teleport @s[scores={Dialog=1}] ~ ~ ~ facing 771 77 15
 tag @s[scores={Dialog=201}] add jump
 scoreboard players set @s[scores={Dialog=201}] AnimationProg 0
-teleport @s[scores={Dialog=201..210}] ~ ~0.05 ~
-teleport @s[scores={Dialog=211..220}] ~ ~-0.05 ~
-teleport @s[scores={Dialog=221..230}] ~ ~0.05 ~
-teleport @s[scores={Dialog=231..240}] ~ ~-0.05 ~
-teleport @s[scores={Dialog=241..250}] ~ ~0.05 ~
-teleport @s[scores={Dialog=251..260}] ~ ~-0.05 ~
-teleport @s[scores={Dialog=261..270}] ~ ~0.05 ~
-teleport @s[scores={Dialog=271..280}] ~ ~-0.05 ~
 tag @s[scores={Dialog=280}] remove jump
 scoreboard players set @s[scores={Dialog=280}] AnimationProg 0
 tag @s[scores={Dialog=300}] add walk

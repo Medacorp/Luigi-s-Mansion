@@ -9,7 +9,6 @@ tag @s[tag=!poltergust_selected] remove vacuuming
 tag @s[tag=!poltergust_selected] remove was_clogged
 tag @s[tag=!capturing_ghost] remove poltergust_selected
 tag @s[tag=capturing_ghost] add poltergust_selected
-tag @s remove vacuuming_ghost
 tag @s remove is_pulling
 tag @s remove catch_portrait_ghost
 tag @s remove catch_ghost
@@ -25,16 +24,15 @@ tag @s[tag=!poltergust_selected] remove expelling
 scoreboard players set @s[tag=!poltergust_selected] VacuumErrors 0
 scoreboard players set @s[tag=!poltergust_selected] Pull 0
 tag @s[tag=!poltergust_selected] remove made_error
-tag @s[tag=poltergust_selected,scores={UseItem=1},tag=!expelling] add toggle_expelling
-tag @s[tag=poltergust_selected,tag=toggle_expelling] add expelling
-scoreboard players set @s[tag=poltergust_selected,tag=toggle_expelling] UseItem 0
-tag @s[tag=poltergust_selected,tag=toggle_expelling] remove toggle_expelling
-tag @s[tag=poltergust_selected,scores={UseItem=1},tag=expelling] remove expelling
-scoreboard players set @s[scores={UseItem=1},tag=poltergust_selected] UseItem 0
+tag @s[tag=poltergust_selected,tag=!vacuuming_ghost,scores={UseItem=1..},tag=!expelling] add toggle_expelling
+tag @s[tag=poltergust_selected,tag=!vacuuming_ghost,tag=toggle_expelling] add expelling
+tag @s[tag=poltergust_selected,tag=!vacuuming_ghost,scores={UseItem=1..},tag=!toggle_expelling] remove expelling
+tag @s[tag=toggle_expelling] remove toggle_expelling
+scoreboard players set @s[scores={UseItem=1..},tag=poltergust_selected] UseItem 0
+tag @s remove vacuuming_ghost
 execute if entity @s[tag=!expelling,tag=poltergust_selected] positioned ~ ~0.5 ~ run function luigis_mansion:items/poltergust_3000/vacuuming
 execute if entity @s[tag=expelling,tag=poltergust_selected] positioned ~ ~0.5 ~ run function luigis_mansion:items/poltergust_3000/expelling
 execute if entity @s[tag=vaporizing_ghost] as @e[tag=captured,tag=element_death] at @s run function luigis_mansion:items/poltergust_3000/vaporize
 tag @s remove vaporizing_ghost
-execute if entity @s[tag=!vacuuming_ghost] unless entity @a[tag=vacuuming_ghost,tag=same_room] as @a[tag=same_room,scores={MusicGroup=0,MusicType=28..29}] run function luigis_mansion:other/music/set/silence
 scoreboard players set @s[tag=!vacuuming_ghost] GhostCount 0
 scoreboard players set @s[tag=!vacuuming_ghost] Pull 0

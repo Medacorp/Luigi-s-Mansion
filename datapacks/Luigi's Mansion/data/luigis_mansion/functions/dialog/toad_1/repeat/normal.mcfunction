@@ -2,7 +2,7 @@ scoreboard players set #freeze_timer Selected 1
 execute if entity @a[scores={Toad1Choice=1..},limit=1] run scoreboard players add @s[scores={Dialog=137..}] Dialog 1
 scoreboard players add @s[scores={Dialog=..136}] Dialog 1
 execute unless entity @s[scores={Dialog=1..}] run scoreboard players add @s Dialog 1
-execute if entity @s[scores={Dialog=1..138}] as @a[tag=same_room] unless entity @s[scores={MusicGroup=0,MusicType=10}] run function luigis_mansion:other/music/set/toad
+execute if entity @s[scores={Dialog=1..138}] as @a[tag=same_room] run function luigis_mansion:other/music/set/toad
 tag @s[scores={Dialog=1}] add explaining
 execute if entity @s[scores={Dialog=1..137}] as @a[tag=same_room,gamemode=!spectator,scores={IdleTime=0..},tag=!looking_at_map] run function luigis_mansion:entities/player/animation/set/stand_still
 scoreboard players set @s[scores={Dialog=1}] AnimationProg 0

@@ -1,1 +1,1 @@
-execute if entity @s[scores={MusicType=28..29,MusicGroup=0,Shrunk=1..}] if score #players Totals matches 1 run function luigis_mansion:other/music/set/silence
+execute if entity @s[scores={MusicType=28..29,MusicGroup=0},tag=!vacuuming_ghost] unless entity @a[tag=vacuuming_ghost,tag=same_room,limit=1] run function luigis_mansion:other/music/set/silence

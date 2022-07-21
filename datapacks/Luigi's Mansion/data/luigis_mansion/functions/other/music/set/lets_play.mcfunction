@@ -1,5 +1,3 @@
-scoreboard players set @s MusicType 26
-scoreboard players set @s Music 0
-scoreboard players set @s MusicGroup 0
-scoreboard players set @s HealthMusic 0
-scoreboard players set @s LastHealthMusic 1
+function #luigis_mansion:other/music/cannot_overwrite/lets_play
+execute if entity @s[tag=!cancel] run function luigis_mansion:other/music/set/force/lets_play
+tag @s remove cancel

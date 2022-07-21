@@ -1,5 +1,5 @@
 scoreboard players set #freeze_timer Selected 1
-execute if entity @s[scores={Dialog=1..}] as @a[tag=same_room] unless entity @s[scores={MusicGroup=0,MusicType=23}] run function luigis_mansion:other/music/set/talking_ghost
+execute if entity @s[scores={Dialog=1..}] as @a[tag=same_room] run function luigis_mansion:other/music/set/talking_ghost
 execute if entity @s[scores={ClairvoyaSpoke=0}] run function luigis_mansion:dialog/mario_item/hidden/item_1
 execute if entity @s[scores={ClairvoyaSpoke=1}] run function luigis_mansion:dialog/mario_item/hidden/item_2
 execute if entity @s[scores={ClairvoyaSpoke=2}] run function luigis_mansion:dialog/mario_item/hidden/item_3

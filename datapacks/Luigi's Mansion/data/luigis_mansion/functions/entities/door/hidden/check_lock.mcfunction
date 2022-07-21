@@ -14,7 +14,7 @@ execute if entity @s[tag=ball_room_storage_room] unless data storage luigis_mans
 execute if entity @s[tag=ball_room_storage_room] if data storage luigis_mansion:data current_state.current_data.obtained_keys{storage_room:1b} unless data storage luigis_mansion:data current_state.current_data.used_keys{storage_room:1b} run tag @s add unlock
 execute if entity @s[tag=hallway_5_washroom_1] store result score #temp Boos run data get storage luigis_mansion:data current_state.current_data.boo_counter
 execute if entity @s[tag=hallway_5_washroom_1] unless score #temp Boos matches 5.. run tag @s add locked
-execute if entity @s[tag=hallway_5_washroom_1] unless score #temp Boos matches 5.. run tag @a[tag=talked_to_villager,limit=1,sort=nearest] add washroom_toad
+execute if entity @s[tag=hallway_5_washroom_1] unless score #temp Boos matches 5.. run tag @a[tag=try_opening_door,limit=1,sort=nearest] add washroom_toad
 scoreboard players reset #temp Boos
 execute if entity @s[tag=hallway_3_fortune_tellers_room] unless data storage luigis_mansion:data current_state.current_data.obtained_keys{fortune_tellers_room:1b} run tag @s add locked
 execute if entity @s[tag=hallway_3_fortune_tellers_room] if data storage luigis_mansion:data current_state.current_data.obtained_keys{fortune_tellers_room:1b} unless data storage luigis_mansion:data current_state.current_data.used_keys{fortune_tellers_room:1b} run tag @s add unlock

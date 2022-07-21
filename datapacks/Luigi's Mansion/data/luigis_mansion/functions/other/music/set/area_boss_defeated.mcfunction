@@ -1,5 +1,3 @@
-scoreboard players set @s MusicType 14
-scoreboard players set @s Music 0
-scoreboard players set @s MusicGroup 0
-scoreboard players set @s HealthMusic 0
-scoreboard players set @s LastHealthMusic 1
+function #luigis_mansion:other/music/cannot_overwrite/area_boss_defeated
+execute if entity @s[tag=!cancel] run function luigis_mansion:other/music/set/force/area_boss_defeated
+tag @s remove cancel

@@ -4,7 +4,7 @@ execute if entity @a[scores={Toad4Choice=1..},limit=1] run scoreboard players ad
 scoreboard players add @s[scores={Dialog=..120}] Dialog 1
 execute unless entity @s[scores={Dialog=1..}] run scoreboard players add @s Dialog 1
 execute if entity @s[scores={Dialog=1..635}] as @a[tag=same_room,gamemode=!spectator,scores={IdleTime=0..},tag=!looking_at_map] run function luigis_mansion:entities/player/animation/set/stand_still
-execute if entity @s[scores={Dialog=1..636}] as @a[tag=same_room] unless entity @s[scores={MusicGroup=0,MusicType=10}] run function luigis_mansion:other/music/set/toad
+execute if entity @s[scores={Dialog=1..636}] as @a[tag=same_room] run function luigis_mansion:other/music/set/toad
 tag @s[scores={Dialog=1}] add explaining
 scoreboard players set @s[scores={Dialog=1}] AnimationProg 0
 execute if entity @s[scores={Dialog=1}] unless data storage luigis_mansion:data current_state.current_data.rooms.fortune_tellers_room{cleared:1b} run tellraw @a[tag=same_room] {"translate":"chat.type.text","with":[{"translate":"luigis_mansion:entity.toad","color":"green"},{"translate":"luigis_mansion:dialog.toad_4.repeat.1"}]}

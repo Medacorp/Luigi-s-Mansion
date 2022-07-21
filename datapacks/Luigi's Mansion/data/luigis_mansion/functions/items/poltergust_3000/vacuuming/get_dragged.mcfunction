@@ -1,4 +1,4 @@
-scoreboard players add @s Pull 1
+scoreboard players add @s[scores={Pull=..40}] Pull 1
 execute if entity @s[scores={Pull=10,Health=41..,Shrunk=0}] run playsound luigis_mansion:entity.player.hurt_dragged.high_health player @a[tag=same_room] ~ ~ ~ 1
 execute if entity @s[scores={Pull=10,Health=41..,Shrunk=1..}] run playsound luigis_mansion:entity.player.hurt_dragged.high_health player @a[tag=same_room] ~ ~ ~ 1 2
 execute if entity @s[scores={Pull=10,Health=..40,Shrunk=0}] run playsound luigis_mansion:entity.player.hurt_dragged.low_health player @a[tag=same_room] ~ ~ ~ 1

@@ -19,3 +19,4 @@ execute if score #temp ActionTime matches ..0 run scoreboard players set #temp A
 function luigis_mansion:entities/player/reduce_my_coins
 execute unless entity @s[scores={Shrunk=1..}] in minecraft:overworld run function luigis_mansion:items/poison_mushroom/remove_inventory
 scoreboard players set @s Shrunk 201
+tag @s remove vacuuming_ghost

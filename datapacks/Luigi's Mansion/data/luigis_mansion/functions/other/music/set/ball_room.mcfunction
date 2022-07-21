@@ -1,6 +1,3 @@
-scoreboard players set @s MusicType 12
-execute if entity @e[tag=floating_whirlindas,limit=1] run scoreboard players set @s MusicType 13
-scoreboard players set @s Music 0
-scoreboard players set @s MusicGroup 0
-scoreboard players set @s HealthMusic 0
-scoreboard players set @s LastHealthMusic 1
+function #luigis_mansion:other/music/cannot_overwrite/ball_room
+execute if entity @s[tag=!cancel] run function luigis_mansion:other/music/set/force/ball_room
+tag @s remove cancel

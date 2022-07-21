@@ -4,8 +4,8 @@ execute unless entity @s[scores={Dialog=1..10}] facing entity @e[tag=same_room,t
 scoreboard players set @a[tag=same_room] Invulnerable 10
 execute as @a[tag=same_room,distance=..2] at @s run teleport @s ~1 ~ ~
 execute if entity @s[scores={Dialog=1}] run stopsound @a[tag=same_room] music
-execute unless data storage luigis_mansion:data current_state.current_data.technical_data{king_boo_warp:1b} if entity @s[scores={Dialog=1..1050}] as @a[tag=same_room] unless entity @s[scores={MusicGroup=0,MusicType=20}] run function luigis_mansion:other/music/set/king_boo_warp
-execute if data storage luigis_mansion:data current_state.current_data.technical_data{king_boo_warp:1b} if entity @s[scores={Dialog=1..1050}] as @a[tag=same_room] unless entity @s[scores={MusicGroup=0,MusicType=21}] run function luigis_mansion:other/music/set/mysterious_power
+execute unless data storage luigis_mansion:data current_state.current_data.technical_data{king_boo_warp:1b} if entity @s[scores={Dialog=1..1050}] as @a[tag=same_room] run function luigis_mansion:other/music/set/king_boo_warp
+execute if data storage luigis_mansion:data current_state.current_data.technical_data{king_boo_warp:1b} if entity @s[scores={Dialog=1..1050}] as @a[tag=same_room] run function luigis_mansion:other/music/set/mysterious_power
 execute if entity @s[scores={Dialog=1}] run scoreboard players set @a[tag=same_room] Music 0
 tag @s[scores={Dialog=1}] add appear
 execute if entity @s[scores={Dialog=1}] run playsound luigis_mansion:entity.king_boo.laugh_2 hostile @a[tag=same_room] ~ ~ ~ 1
@@ -85,6 +85,7 @@ execute if entity @s[scores={Dialog=1050..}] as @e[tag=same_room,tag=gameboy_hor
 execute if entity @s[scores={Dialog=1050..1110}] as @a[tag=warp_target] at @s unless entity @s[x=684,dx=0] run teleport @s ~0.5 ~ ~
 tag @s[scores={Dialog=1060}] remove appear
 execute if entity @s[scores={Dialog=1110}] as @a[tag=same_room,tag=!spectator,tag=!looking_at_map] run function luigis_mansion:entities/player/animation/set/none
+execute if entity @s[scores={Dialog=1110}] as @a[tag=same_room] run function luigis_mansion:other/music/set/silence
 execute if entity @s[scores={Dialog=1110}] run teleport @a[tag=warp_target] 751.0 11 7.0
 execute if entity @s[scores={Dialog=1110}] run tag @a[tag=warp_target] remove warp_target
 execute if entity @s[scores={Dialog=1110}] run data modify storage luigis_mansion:data current_state.current_data.technical_data merge value {king_boo_warp:1b}

@@ -25,12 +25,12 @@ execute at @s run teleport @s ^ ^ ^-0.4
 
 execute at @s[scores={DeathTime=2,Health=-2147483648..},tag=!dont_drop_heart,tag=!dead,tag=!remove_from_existence] unless entity @s[scores={Room=..-1}] if entity @a[tag=killer,limit=1,scores={GhostCount=2..}] if score #heart_coin_count Selected matches 1.. run function luigis_mansion:spawn_entities/item/small_heart
 execute at @s[scores={DeathTime=1,Room=1..},tag=!dead,tag=!remove_from_existence] unless entity @s[scores={Health=-2147483648..}] run function luigis_mansion:entities/ghost/capture
-execute at @s[scores={DeathTime=2..,Room=1..,Health=-2147483648..},tag=!dead,tag=!remove_from_existence] if entity @a[tag=!spectator,distance=..0.7] run function luigis_mansion:entities/ghost/capture
-execute at @s[scores={DeathTime=2..,Room=-2},tag=!dead,tag=!remove_from_existence] if entity @a[tag=!spectator,distance=..0.7] run scoreboard players add #training_room GhostCaught 1
-execute at @s[scores={DeathTime=2..},tag=!dead,tag=!remove_from_existence] if entity @a[tag=!spectator,distance=..0.7] run tag @s add captured
+execute at @s[scores={DeathTime=2..,Room=1..,Health=-2147483648..},tag=!dead,tag=!remove_from_existence] if entity @a[tag=killer,distance=..0.7] run function luigis_mansion:entities/ghost/capture
+execute at @s[scores={DeathTime=2..,Room=-2},tag=!dead,tag=!remove_from_existence] if entity @a[tag=killer,distance=..0.7] run scoreboard players add #training_room GhostCaught 1
+execute at @s[scores={DeathTime=2..},tag=!dead,tag=!remove_from_existence] if entity @a[tag=killer,distance=..0.7] run tag @s add captured
 tag @a[tag=killer,limit=1] remove killer
 
 execute if entity @s[scores={DeathTime=1},tag=!dead,tag=!remove_from_existence] unless entity @s[scores={Health=-2147483648..}] run tag @s add captured
 
-execute if entity @s[scores={KillerID=-2147483648..}] run data modify entity @s ArmorItems[3].tag.attacked_by set value []
-execute if entity @s[scores={KillerID=-2147483648..}] store result score @s ArmorItems[3].tag.attacked_by[0] int 1 run scoreboard players get entity @s KillerID
+execute if entity @s[scores={KillerID=-2147483648..}] run data modify entity @s ArmorItems[3].tag.attacked_by set value [0]
+execute if entity @s[scores={KillerID=-2147483648..}] store result entity @s ArmorItems[3].tag.attacked_by[0] int 1 run scoreboard players get @s KillerID

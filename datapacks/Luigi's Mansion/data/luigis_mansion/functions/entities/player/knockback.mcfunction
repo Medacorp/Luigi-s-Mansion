@@ -265,7 +265,8 @@ execute at @s unless entity @s[scores={KnockbackType=14}] unless block ~ ~ ~0.3 
 execute at @s unless entity @s[scores={KnockbackType=14}] unless block ~ ~ ~-0.3 #luigis_mansion:all_ignore if block ~ ~ ~ #luigis_mansion:all_ignore run teleport @s ~ ~ ~0.16
 kill @e[type=minecraft:marker,tag=temp,limit=1]
 scoreboard players remove @s KnockbackTime 1
-scoreboard players reset @s[scores={KnockbackType=..6}] GrabbedShake
+tag @s[scores={KnockbackType=2..}] remove vacuuming_ghost
+execute unless entity @s[scores={KnockbackType=8..10}] run scoreboard players reset @s GrabbedShake
 execute unless entity @s[scores={KnockbackType=8..10}] run tag @s remove grabbed
 scoreboard players reset @s[scores={KnockbackTime=0}] KnockbackX
 scoreboard players reset @s[scores={KnockbackTime=0}] KnockbackZ

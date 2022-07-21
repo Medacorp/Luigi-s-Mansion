@@ -44,6 +44,7 @@ scoreboard objectives add GhostNr dummy
 scoreboard objectives add GhostGuyCouple dummy
 scoreboard objectives add GrabbedID dummy
 scoreboard objectives add GrabbedShake dummy
+scoreboard objectives add GradualMusic dummy
 scoreboard objectives add Health dummy
 scoreboard objectives add HealthMusic dummy
 scoreboard objectives add HeartOffset dummy

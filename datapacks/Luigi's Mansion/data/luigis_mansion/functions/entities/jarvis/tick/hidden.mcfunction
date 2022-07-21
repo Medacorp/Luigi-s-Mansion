@@ -12,7 +12,7 @@ execute unless entity @e[tag=same_room,tag=!spectator,distance=..4,limit=1] if e
 tag @s[scores={Dialog=1}] add pop_out
 execute if entity @s[scores={Dialog=1..619}] as @a[tag=same_room,gamemode=!spectator,scores={IdleTime=0..},tag=!looking_at_map] run function luigis_mansion:entities/player/animation/set/stand_still
 execute if entity @s[scores={Dialog=1..863}] if entity @a[scores={JarvisChoice=1}] as @a[tag=same_room,gamemode=!spectator,scores={IdleTime=0..},tag=!looking_at_map] run function luigis_mansion:entities/player/animation/set/stand_still
-execute if entity @s[scores={Dialog=1..856}] as @a[tag=same_room,tag=!spectator] unless entity @s[scores={MusicGroup=0,MusicType=23}] run function luigis_mansion:other/music/set/talking_ghost
+execute if entity @s[scores={Dialog=1..856}] as @a[tag=same_room,tag=!spectator] run function luigis_mansion:other/music/set/talking_ghost
 execute if entity @s[scores={Dialog=10}] if data storage luigis_mansion:data current_state.current_data.technical_data{jarvis_spoke:1b} run scoreboard players set @s Dialog 426
 execute if entity @s[scores={Dialog=10}] if score #players Totals matches 1 run tellraw @a[tag=same_room] {"translate":"chat.type.text","with":[{"translate":"luigis_mansion:entity.jarvis","color":"green"},{"translate":"luigis_mansion:dialog.jarvis.1"}]}
 execute if entity @s[scores={Dialog=10}] if score #players Totals matches 2.. run tellraw @a[tag=same_room] {"translate":"chat.type.text","with":[{"translate":"luigis_mansion:entity.jarvis","color":"green"},{"translate":"luigis_mansion:dialog.jarvis.1.more"}]}
@@ -49,7 +49,7 @@ execute if entity @s[scores={Dialog=620}] if entity @a[scores={JarvisChoice=2}] 
 execute if entity @s[scores={Dialog=620}] run scoreboard players reset @a JarvisChoice
 
 execute if entity @s[scores={Dialog=865}] run tag @e[scores={Room=65},tag=door,tag=frame] add blockade
-execute if entity @s[scores={Dialog=865..1519}] as @a[tag=same_room,tag=!spectator] unless entity @s[scores={MusicGroup=0,MusicType=37}] run function luigis_mansion:other/music/set/mini_game
+execute if entity @s[scores={Dialog=865..1519}] as @a[tag=same_room,tag=!spectator] run function luigis_mansion:other/music/set/mini_game
 tag @s[scores={Dialog=865}] add can_freeze
 scoreboard players set @s[scores={Dialog=865}] Wave 0
 execute if entity @s[scores={Dialog=984}] run function luigis_mansion:entities/jarvis/switch_jar/hidden
@@ -94,7 +94,7 @@ execute if entity @s[scores={Dialog=1864}] if score #players Totals matches 2.. 
 execute if entity @s[scores={Dialog=1888}] run tellraw @a[tag=same_room] {"translate":"chat.type.text","with":[{"translate":"luigis_mansion:entity.jarvis","color":"green"},{"translate":"luigis_mansion:dialog.jarvis.game.2"}]}
 tag @s[scores={Dialog=1920}] add pop_in
 tag @s[scores={Dialog=1960}] add pop_out
-execute if entity @s[scores={Dialog=1960..2241}] as @a[tag=same_room,tag=!spectator] unless entity @s[scores={MusicGroup=0,MusicType=23}] run function luigis_mansion:other/music/set/talking_ghost
+execute if entity @s[scores={Dialog=1960..2241}] as @a[tag=same_room,tag=!spectator] run function luigis_mansion:other/music/set/talking_ghost
 execute if entity @s[scores={Dialog=1970,Wave=0}] if score #players Totals matches 1 run tellraw @a[tag=same_room] {"translate":"chat.type.text","with":[{"translate":"luigis_mansion:entity.jarvis","color":"green"},{"translate":"luigis_mansion:dialog.jarvis.game.3.0"}]}
 execute if entity @s[scores={Dialog=1970,Wave=0}] if score #players Totals matches 2.. run tellraw @a[tag=same_room] {"translate":"chat.type.text","with":[{"translate":"luigis_mansion:entity.jarvis","color":"green"},{"translate":"luigis_mansion:dialog.jarvis.game.3.0.more"}]}
 execute if entity @s[scores={Dialog=1970,Wave=1}] if score #players Totals matches 1 run tellraw @a[tag=same_room] {"translate":"chat.type.text","with":[{"translate":"luigis_mansion:entity.jarvis","color":"green"},{"translate":"luigis_mansion:dialog.jarvis.game.3.1"}]}
@@ -124,7 +124,7 @@ execute if entity @s[scores={Dialog=2082,Wave=7}] if score #players Totals match
 tag @s[scores={Dialog=2242}] add pop_in
 execute if entity @s[scores={Dialog=2242}] as @a[tag=same_room,tag=!spectator,tag=!looking_at_map] run function luigis_mansion:entities/player/animation/set/none
 execute if entity @s[scores={Dialog=2242}] run tag @e[tag=haunted_jar] add enabled
-execute if entity @s[scores={Dialog=2242..}] as @a[tag=same_room,tag=!spectator] unless entity @s[scores={MusicGroup=0,MusicType=36}] run function luigis_mansion:other/music/set/danger
+execute if entity @s[scores={Dialog=2242..}] as @a[tag=same_room,tag=!spectator] run function luigis_mansion:other/music/set/danger
 execute if entity @s[scores={Dialog=2262},tag=!vanish] run function luigis_mansion:entities/jarvis/switch_jar/hidden
 tag @s[scores={Dialog=2262},tag=!vanish] add pop_out
 scoreboard players set @s[scores={Dialog=2282}] VulnerableTime 40

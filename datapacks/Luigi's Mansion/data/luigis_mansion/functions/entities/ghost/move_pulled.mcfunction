@@ -12,4 +12,4 @@ teleport @s[tag=force_move] ^ ^ ^0.01
 execute if entity @s[tag=!force_move] unless block ^ ^ ^0.6 #minecraft:slabs[type=bottom] unless block ^ ^ ^0.6 #luigis_mansion:ghosts_ignore rotated ~ 0 unless block ^ ^ ^0.6 #minecraft:slabs[type=bottom] unless block ^ ^ ^0.6 #luigis_mansion:ghosts_ignore run scoreboard players set #temp Move 0
 execute if entity @s[tag=!force_move] unless block ^ ^1 ^0.6 #luigis_mansion:ghosts_ignore rotated ~ 0 unless block ^ ^ ^0.6 #luigis_mansion:ghosts_ignore run scoreboard players set #temp Move 0
 tag @s remove force_move
-execute if score #temp Move matches ..-1 positioned as @s unless entity @a[tag=vacuuming,distance=..3,limit=1] run function luigis_mansion:entities/ghost/move_pulled
+execute if score #temp Move matches ..-1 positioned as @s unless entity @a[tag=vacuuming_this_ghost,distance=..3,limit=1] run function luigis_mansion:entities/ghost/move_pulled

@@ -80,16 +80,17 @@ Speedrun   | 3     | extensive_training  | extensive_training        | "file/Ext
 ```
 
 ## Music groups
-Add new ones in `#luigis_mansion:play_music`.
-
-All rooms in the lab allow MusicType 1 from any music group.
+Add new ones in `#luigis_mansion:other/music/play`.
+To disallow a track to overwrite another (by default), add the `cannot_overwrite` function of the track-to-not-overwrite to the `cannot_overwrite` tag of the trying-to-overwrite track.
+The `#luigis_mansion:other/music/correct` tag is used to automatically change one track into another if a certain condition is met (such as catching chauncey).
 
 ```
 Group | Add-on        | Namespace                 | Data pack name
 0     | vanilla       | luigis_mansion            | "file/Luigi's Mansion"
 1     | 3ds_remake    | luigis_mansion_3ds_remake | "file/Luigi's Mansion 3DS Remake"
 2     | beta_mansion  | luigis_beta_mansion       | "file/Luigi's Beta Mansion"
-3     | trill_tower   | trill_tower               | "file/Thrill Tower"
+3-4   | music_packs   | music_packs               | "file/Music Packs"
+5     | trill_tower   | trill_tower               | "file/Thrill Tower"
 ```
 
 ## Radar types
@@ -106,8 +107,9 @@ Add new ones in `#luigis_mansion:settings/map`.
 
 ```
 Values | Add-on       | Namespace           | Data pack name
-1-2    | vanilla      | luigis_mansion      | "file/Luigi's Mansion"
-3      | beta_mansion | luigis_beta_mansion | "file/Luigi's Beta Mansion"
+1-4    | vanilla      | luigis_mansion      | "file/Luigi's Mansion"
+5      | beta_mansion | luigis_beta_mansion | "file/Luigi's Beta Mansion"
+6      | music_packs  | music_packs         | "file/Music Packs"
 ```
 
 ## Gallery numbers
@@ -127,14 +129,13 @@ To set this add-on as loaded, allowing for other add-ons to check/warn for compa
 
 The value of your add-on's Loaded score will be equal to the pack order.
 
-If you need to rely on the load order of data packs, then you can use the following commands:
-
+If you need to rely on the load order of data packs, then you can use the following commands in a function added to `#luigis_mansion:post_loaded_add_ons`:
 `execute unless score #<add-on> Loaded matches <required number> run datapack disable "file/<pack name>"`
 `execute unless score #<add-on> Loaded matches <required number> run datapack enable "file/<pack name>" after "file/<pack name to load after>"`
 
 This is, however, something you should avoid. If 2 packs require to have the same loading position, the map will get stuck in a loop.
 
-To check for add-on compatibility issues, add to the function tag `#luigis_mansion:post_loaded_add_ons` a function which checks if the other add-on is loaded (`execute if score #<other add-on> Loaded matches 1.. run ...`) and send the mandatory commands.
+To check for add-on compatibility issues, check if the other add-on is loaded (`execute if score #<other add-on> Loaded matches 1.. run ...`) and send the mandatory commands.
 
 You can also do the same, but for dependencies, eg if you need the 3ds_remake add-on to exist to have a functioning add-on. (`execute unless score #<required add-on> Loaded matches 1.. run ...`)
 

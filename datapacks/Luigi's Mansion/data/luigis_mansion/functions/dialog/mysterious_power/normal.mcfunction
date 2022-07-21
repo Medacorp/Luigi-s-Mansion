@@ -2,7 +2,7 @@ scoreboard players set #freeze_timer Selected 1
 scoreboard players add @s Dialog 1
 scoreboard players set @a[tag=same_room,gamemode=!spectator] Invulnerable 10
 execute if entity @s[scores={Dialog=1..}] as @a[tag=same_room,gamemode=!spectator,scores={IdleTime=0..},tag=!looking_at_map] run function luigis_mansion:entities/player/animation/set/stand_still
-execute if entity @s[scores={Dialog=1..2096}] as @a[tag=same_room,gamemode=!spectator] unless entity @s[scores={MusicGroup=0,MusicType=21}] run function luigis_mansion:other/music/set/mysterious_power
+execute if entity @s[scores={Dialog=1..2096}] as @a[tag=same_room,gamemode=!spectator] run function luigis_mansion:other/music/set/mysterious_power
 execute if data storage luigis_mansion:data current_state.current_data.technical_data{mysterious_power:1b} run scoreboard players set @s[scores={Dialog=1}] Dialog 1466
 execute if entity @s[scores={Dialog=1}] run playsound luigis_mansion:entity.boo.laugh_2 hostile @a[tag=same_room] ~ ~ ~ 1
 scoreboard players set @s[scores={Dialog=40}] AnimationProg 0
@@ -28,6 +28,7 @@ execute if entity @s[scores={Dialog=1394}] run scoreboard players set @a[tag=sam
 execute if entity @s[scores={Dialog=1404..}] as @e[tag=same_room,tag=gameboy_horror_location] run function luigis_mansion:entities/gameboy_horror_location/bring_player_back
 execute if entity @s[scores={Dialog=1404..1464}] as @a[tag=same_room,gamemode=!spectator] at @s unless block ~-0.5 ~ ~ minecraft:black_concrete run teleport @s ~0.5 ~ ~
 execute if entity @s[scores={Dialog=1464}] as @a[tag=same_room,tag=!spectator,tag=!looking_at_map] run function luigis_mansion:entities/player/animation/set/none
+execute if entity @s[scores={Dialog=1464}] as @a[tag=same_room] run function luigis_mansion:other/music/set/silence
 execute if entity @s[scores={Dialog=1464}] run teleport @a[tag=same_room,gamemode=!spectator] 751.0 11 9.0
 execute if entity @s[scores={Dialog=1464}] run data modify storage luigis_mansion:data current_state.current_data.technical_data merge value {mysterious_power:1b}
 tag @s[scores={Dialog=1464}] add dead
@@ -47,6 +48,7 @@ execute if entity @s[scores={Dialog=1828}] run scoreboard players set @a[tag=sam
 execute if entity @s[scores={Dialog=1838..}] as @e[tag=same_room,tag=gameboy_horror_location] run function luigis_mansion:entities/gameboy_horror_location/bring_player_back
 execute if entity @s[scores={Dialog=1838..1898}] as @a[tag=same_room,gamemode=!spectator] at @s unless block ~-0.5 ~ ~ minecraft:black_concrete run teleport @s ~0.5 ~ ~
 execute if entity @s[scores={Dialog=1898}] as @a[tag=same_room,tag=!spectator,tag=!looking_at_map] run function luigis_mansion:entities/player/animation/set/none
+execute if entity @s[scores={Dialog=1898}] as @a[tag=same_room] run function luigis_mansion:other/music/set/silence
 execute if entity @s[scores={Dialog=1898}] run teleport @a[tag=same_room,gamemode=!spectator] 751.0 11 9.0
 tag @s[scores={Dialog=1898}] add dead
 

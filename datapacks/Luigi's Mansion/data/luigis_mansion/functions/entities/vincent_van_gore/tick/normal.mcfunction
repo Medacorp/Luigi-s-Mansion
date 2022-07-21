@@ -6,7 +6,7 @@ execute if entity @s[tag=!visible,tag=!vanish] run function luigis_mansion:entit
 execute if entity @s[scores={Dialog=1..643}] unless entity @s[scores={Dialog=332..333}] as @a[tag=same_room,gamemode=!spectator,scores={IdleTime=0..},tag=!looking_at_map] run function luigis_mansion:entities/player/animation/set/stand_still
 execute if entity @s[scores={Dialog=333}] at @e[tag=same_room,tag=!spectator] positioned ^ ^ ^8 if entity @s[distance=..8] run function luigis_mansion:entities/vincent_van_gore/turn_invisible
 execute if entity @s[scores={Dialog=1}] if data storage luigis_mansion:data current_state.current_data.technical_data{vincent_van_gore_spoke:1b} run scoreboard players set @s Dialog 332
-execute unless entity @s[scores={Dialog=332..333}] unless entity @s[scores={Dialog=646}] as @a[tag=same_room,tag=!spectator] unless entity @s[scores={MusicGroup=0,MusicType=23}] run function luigis_mansion:other/music/set/talking_ghost
+execute unless entity @s[scores={Dialog=332..333}] unless entity @s[scores={Dialog=646}] as @a[tag=same_room,tag=!spectator] run function luigis_mansion:other/music/set/talking_ghost
 execute if entity @s[scores={Dialog=60}] run playsound luigis_mansion:entity.vincent_van_gore.talk hostile @a[tag=same_room] ~ ~ ~ 1
 execute if entity @s[scores={Dialog=60}] if score #players Totals matches 1 run tellraw @a[tag=same_room] {"translate":"chat.type.text","with":[{"translate":"luigis_mansion:entity.vincent_van_gore","color":"green"},{"translate":"luigis_mansion:dialog.vincent_van_gore.1"}]}
 execute if entity @s[scores={Dialog=60}] if score #players Totals matches 2.. run tellraw @a[tag=same_room] {"translate":"chat.type.text","with":[{"translate":"luigis_mansion:entity.vincent_van_gore","color":"green"},{"translate":"luigis_mansion:dialog.vincent_van_gore.1.more"}]}
@@ -38,7 +38,7 @@ execute if entity @s[scores={Dialog=630}] run tellraw @a[tag=same_room] {"transl
 execute if entity @s[scores={Dialog=644}] as @a[tag=same_room,tag=!spectator,tag=!looking_at_map] run function luigis_mansion:entities/player/animation/set/none
 scoreboard players set @s[scores={Dialog=645}] AnimationProg 0
 execute if entity @s[scores={Dialog=645}] run playsound luigis_mansion:entity.vincent_van_gore.complain hostile @a[tag=same_room] ~ ~ ~ 1
-execute if entity @s[scores={Dialog=646}] as @a[tag=same_room,tag=!spectator] unless entity @s[scores={MusicGroup=0,MusicType=36}] run function luigis_mansion:other/music/set/danger
+execute if entity @s[scores={Dialog=646}] as @a[tag=same_room,tag=!spectator] run function luigis_mansion:other/music/set/danger
 scoreboard players set @s[scores={Dialog=646},tag=!vanish] VulnerableTime 2147483647
 
 execute if entity @s[scores={Dialog=140..271}] run function luigis_mansion:animations/vincent_van_gore/talk
