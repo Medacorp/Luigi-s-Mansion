@@ -22,4 +22,5 @@ title @s times 0 40 40
 tag @s remove scanning
 tag @s remove warp
 tag @s remove was_in_room
+tag @s remove poltergust_selected
 scoreboard players reset @s WarpTime
