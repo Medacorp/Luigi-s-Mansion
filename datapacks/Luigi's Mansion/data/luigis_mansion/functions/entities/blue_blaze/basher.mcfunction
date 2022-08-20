@@ -9,7 +9,7 @@ execute if entity @s[scores={ActionTime=41..60}] run function luigis_mansion:ani
 scoreboard players set @s[scores={ActionTime=61}] AnimationProg 0
 execute if entity @s[scores={ActionTime=61..90}] run function luigis_mansion:animations/twirler/basher_complain
 
-tag @s[scores={ActionTime=1},tag=!watery_heart] add stunable
+tag @s[scores={ActionTime=1},tag=!watery_heart] add stunnable
 tag @s[scores={ActionTime=1}] add visible
 data modify entity @s[scores={ActionTime=1..40}] ArmorItems[3].id set value "minecraft:oak_button"
 data modify entity @s[scores={ActionTime=1..40}] HandItems[0].id set value "minecraft:oak_button"

@@ -18,16 +18,16 @@ title @s[scores={CreditsTime=600}] title {"translate":"luigis_mansion:credits.te
 title @s[scores={CreditsTime=700}] title {"translate":"luigis_mansion:credits.links","color":"#598DC9"}
 title @s[scores={CreditsTime=800}] subtitle {"translate":"luigis_mansion:credits.discord.description","color":"#598DC9"}
 title @s[scores={CreditsTime=800}] title {"translate":"luigis_mansion:credits.discord","color":"#598DC9"}
-tellraw @s[scores={CreditsTime=800}] {"translate":"luigis_mansion:credits.discord.chat","underlined":true,"clickEvent":{"action":"open_url","value":"https://discord.gg/Nn6wScEc88"},"color":"#598DC9"}
+tellraw @s[scores={CreditsTime=800}] {"translate":"luigis_mansion:credits.discord.chat","clickEvent":{"action":"open_url","value":"https://discord.gg/Nn6wScEc88"},"color":"green"}
 title @s[scores={CreditsTime=900}] subtitle {"translate":"luigis_mansion:credits.patreon.description","color":"#598DC9"}
 title @s[scores={CreditsTime=900}] title {"translate":"luigis_mansion:credits.patreon","color":"#598DC9"}
-tellraw @s[scores={CreditsTime=900}] {"translate":"luigis_mansion:credits.patreon.chat","underlined":true,"clickEvent":{"action":"open_url","value":"https://www.patreon.com/dhranios"},"color":"#598DC9"}
-title @s[scores={CreditsTime=1000}] subtitle {"translate":"luigis_mansion:credits.github".description,"color":"#598DC9"}
+tellraw @s[scores={CreditsTime=900}] {"translate":"luigis_mansion:credits.patreon.chat","clickEvent":{"action":"open_url","value":"https://www.patreon.com/dhranios"},"color":"green"}
+title @s[scores={CreditsTime=1000}] subtitle {"translate":"luigis_mansion:credits.github.description","color":"#598DC9"}
 title @s[scores={CreditsTime=1000}] title {"translate":"luigis_mansion:credits.github","color":"#598DC9"}
-tellraw @s[scores={CreditsTime=1000}] {"translate":"luigis_mansion:credits.github.chat","underlined":true,"clickEvent":{"action":"open_url","value":"https://github.com/Medacorp/Luigi-s-Mansion"},"color":"#598DC9"}
+tellraw @s[scores={CreditsTime=1000}] {"translate":"luigis_mansion:credits.github.chat","clickEvent":{"action":"open_url","value":"https://github.com/Medacorp/Luigi-s-Mansion"},"color":"green"}
 title @s[scores={CreditsTime=1100}] subtitle {"translate":"luigis_mansion:credits.crowdin.description","color":"#598DC9"}
 title @s[scores={CreditsTime=1100}] title {"translate":"luigis_mansion:credits.crowdin","color":"#598DC9"}
-tellraw @s[scores={CreditsTime=1100}] {"translate":"luigis_mansion:credits.crowdin.chat","underlined":true,"clickEvent":{"action":"open_url","value":"https://crowdin.com/project/medacorp-projects"},"color":"#598DC9"}
+tellraw @s[scores={CreditsTime=1100}] {"translate":"luigis_mansion:credits.crowdin.chat","clickEvent":{"action":"open_url","value":"https://crowdin.com/project/medacorp-projects"},"color":"green"}
 title @s[scores={CreditsTime=1200},tag=!looking_at_map] times 40 40 40
 title @s[scores={CreditsTime=1200},tag=looking_at_map] times 0 40 40
 tag @s[scores={CreditsTime=1200}] remove show_credits

@@ -4,8 +4,10 @@ execute if entity @s[tag=dead] unless data storage luigis_mansion:data current_s
 execute if entity @s[scores={HurtTime=1},tag=hurt,tag=!fleeing,tag=!dying] run playsound luigis_mansion:entity.garbage_can_ghost.hurt hostile @a[tag=same_room] ~ ~ ~ 1
 scoreboard players set @s[scores={HurtTime=1},tag=hurt,tag=!fleeing,tag=!dying] Sound 40
 scoreboard players set @s[scores={HurtTime=1},tag=hurt,tag=!fleeing,tag=!dying] BananaDropTime 40
-execute if entity @s[tag=element_hurt] run playsound luigis_mansion:entity.garbage_can_ghost.element_hurt hostile @a[tag=same_room] ~ ~ ~ 1
-scoreboard players set @s[tag=element_hurt] Sound 30
+execute if entity @s[scores={ElementHurtTime=0},tag=element_hurt] run playsound luigis_mansion:entity.garbage_can_ghost.element_hurt hostile @a[tag=same_room] ~ ~ ~ 1
+scoreboard players set @s[scores={ElementHurtTime=0},tag=element_hurt] Sound 30
+execute if entity @s[scores={Sound=0},tag=element_hurt] run playsound luigis_mansion:entity.garbage_can_ghost.element_hurt hostile @a[tag=same_room] ~ ~ ~ 1
+scoreboard players set @s[scores={Sound=0},tag=element_hurt] Sound 30
 execute if entity @s[scores={Sound=0},tag=fleeing,tag=!dying] run playsound luigis_mansion:entity.garbage_can_ghost.flee hostile @a[tag=same_room] ~ ~ ~ 1
 scoreboard players set @s[scores={Sound=0},tag=fleeing,tag=!dying] Sound 40
 execute if entity @s[scores={BananaDropTime=0}] run function luigis_mansion:entities/garbage_can_ghost/throw_banana

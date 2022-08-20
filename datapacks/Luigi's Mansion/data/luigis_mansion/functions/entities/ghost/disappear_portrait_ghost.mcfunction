@@ -5,7 +5,7 @@ tag @s remove hurt_animation
 tag @s remove vanish
 tag @s remove disappear_next_tick
 tag @s remove disappear
-tag @s remove stunable
+tag @s remove stunnable
 tag @s remove second_flee_state
 scoreboard players set @s VulnerableTime 0
 scoreboard players set @s StunTime 0

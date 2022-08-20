@@ -220,4 +220,4 @@ tag @s[scores={Dialog=1388}] remove meet_e_gadd
 scoreboard players set @s[scores={Dialog=1388}] Dialog 0
 
 tag @e[tag=gold_ghost,tag=hidden,tag=!spawn,tag=dialog,limit=1] add dead
-tag @e[tag=dialog] remove stunable
+tag @e[tag=dialog] remove stunnable

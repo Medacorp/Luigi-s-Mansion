@@ -6,7 +6,7 @@ execute if entity @s[scores={ElementHurtTime=1}] run data modify entity @s Armor
 scoreboard players remove @s ElementHurtTime 1
 execute if entity @s[scores={ElementHurtTime=10..}] run function luigis_mansion:entities/ghost/hurt_element_damage
 
-execute unless entity @s[tag=!burning_heart,tag=!watery_heart,tag=!frozen_heart] run tag @s add stunable
+execute unless entity @s[tag=!burning_heart,tag=!watery_heart,tag=!frozen_heart] run tag @s add stunnable
 tag @s[tag=!freeze] remove attack
 tag @s[tag=!freeze] remove laugh
 tag @s[tag=!freeze] remove complain

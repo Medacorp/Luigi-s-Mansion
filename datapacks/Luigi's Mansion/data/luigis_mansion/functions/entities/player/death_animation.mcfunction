@@ -11,6 +11,7 @@ execute as @e[tag=revive_detection] if score @s ID = #temp ID run tag @s add det
 scoreboard players reset #temp ID
 scoreboard players add @s[scores={DeathTime=..120}] DeathTime 1
 execute unless entity @s[scores={DeathTime=1..}] run scoreboard players add @s DeathTime 1
+tag @s[scores={DeathTime=1}] remove vacuuming_ghost
 execute if entity @s[scores={DeathTime=1}] run playsound luigis_mansion:entity.player.death player @a[tag=same_room] ~ ~ ~ 1
 execute if entity @s[scores={DeathTime=120..121}] if score #can_revive Selected matches 0 run tag @s add turn_spectator
 execute if entity @s[scores={DeathTime=120..121}] if score #can_revive Selected matches 1 unless entity @a[scores={Health=1..}] run tag @s add turn_spectator

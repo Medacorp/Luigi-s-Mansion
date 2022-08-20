@@ -56,7 +56,7 @@ tag @s[scores={PathStep=173}] remove burn
 tag @s[scores={PathStep=173}] add look_around
 tag @s[scores={PathStep=233}] remove look_around
 scoreboard players set #temp Move 10
-scoreboard players set @s[scores={PathStep=93}] VulnerableTime 80
+scoreboard players set @s[scores={PathStep=93},tag=!vanish] VulnerableTime 80
 tag @s[scores={PathStep=233}] add vanish
 tag @s[scores={PathStep=233}] remove burning
 scoreboard players set @s[scores={PathStep=233}] PathStep 1

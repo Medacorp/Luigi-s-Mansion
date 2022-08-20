@@ -29,4 +29,5 @@ execute if entity @s[tag=!valid_location,tag=on_slab] at @s align y if block ~0.
 execute if entity @s[tag=!valid_location,tag=!on_slab] at @s if block ~0.3 ~ ~0.3 #luigis_mansion:all_ignore if block ~-0.3 ~ ~0.3 #luigis_mansion:all_ignore if block ~0.3 ~ ~-0.3 #luigis_mansion:all_ignore if block ~-0.3 ~ ~-0.3 #luigis_mansion:all_ignore if block ~0.3 ~1 ~0.3 #luigis_mansion:all_ignore if block ~-0.3 ~1 ~0.3 #luigis_mansion:all_ignore if block ~0.3 ~1 ~-0.3 #luigis_mansion:all_ignore if block ~-0.3 ~1 ~-0.3 #luigis_mansion:all_ignore run tag @s add valid_location
 tag @s remove on_slab
 teleport @s[tag=!valid_location] ~ ~ ~
+execute if entity @s[tag=valid_location] run function luigis_mansion:main/update_last_position
 tag @s remove valid_location

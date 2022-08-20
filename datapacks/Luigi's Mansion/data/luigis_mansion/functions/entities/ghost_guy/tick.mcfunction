@@ -9,8 +9,10 @@ execute if entity @s[tag=dead] run scoreboard players reset #temp GhostGuyCouple
 
 execute if entity @s[scores={HurtTime=1},tag=hurt,tag=!fleeing,tag=!dying] run playsound luigis_mansion:entity.ghost_guy.hurt hostile @a[tag=same_room] ~ ~ ~ 1
 scoreboard players set @s[scores={HurtTime=1},tag=hurt,tag=!fleeing,tag=!dying] Sound 40
-execute if entity @s[tag=element_hurt] run playsound luigis_mansion:entity.ghost_guy.element_hurt hostile @a[tag=same_room] ~ ~ ~ 1
-scoreboard players set @s[tag=element_hurt] Sound 30
+execute if entity @s[scores={ElementHurtTime=0},tag=element_hurt] run playsound luigis_mansion:entity.ghost_guy.element_hurt hostile @a[tag=same_room] ~ ~ ~ 1
+scoreboard players set @s[scores={ElementHurtTime=0},tag=element_hurt] Sound 30
+execute if entity @s[scores={Sound=0},tag=element_hurt] run playsound luigis_mansion:entity.ghost_guy.element_hurt hostile @a[tag=same_room] ~ ~ ~ 1
+scoreboard players set @s[scores={Sound=0},tag=element_hurt] Sound 30
 execute if entity @s[scores={Sound=0},tag=fleeing,tag=!dying] run playsound luigis_mansion:entity.ghost_guy.flee hostile @a[tag=same_room] ~ ~ ~ 1
 scoreboard players set @s[scores={Sound=0},tag=fleeing,tag=!dying] Sound 40
 

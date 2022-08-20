@@ -24,8 +24,8 @@ execute unless score #temp GhostCount matches 1.. unless entity @e[tag=ball,dist
 execute unless score #temp GhostCount matches 1.. if entity @e[tag=ball,distance=..2.5,tag=can_spit,sort=nearest,limit=1] run function luigis_mansion:items/poltergust_3000/vacuuming/get_clogged
 execute if score #temp GhostCount matches 1.. run tag @s add vacuuming_ghost
 execute if score #temp GhostCount matches 1.. at @s rotated ~ 0 run function luigis_mansion:items/poltergust_3000/vacuuming/attack_ghost
-execute if entity @s[tag=catch_portrait_ghost] as @a[tag=same_room,scores={Room=1..}] run function luigis_mansion:other/music/set/catching_portrait_ghost
-execute if entity @s[tag=!catch_portrait_ghost,tag=catch_ghost] as @a[tag=same_room,scores={Room=1..}] run function luigis_mansion:other/music/set/catching_ghost
+execute if entity @s[tag=catch_portrait_ghost] as @a[tag=same_room,scores={Room=1..}] unless entity @s[tag=spectator,tag=!camera] run function luigis_mansion:other/music/set/catching_portrait_ghost
+execute if entity @s[tag=!catch_portrait_ghost,tag=catch_ghost] as @a[tag=same_room,scores={Room=1..}] unless entity @s[tag=spectator,tag=!camera] run function luigis_mansion:other/music/set/catching_ghost
 execute as @e[distance=..3,tag=captured,tag=!element_death] at @s run function luigis_mansion:items/poltergust_3000/vacuuming/capture
 scoreboard players reset #temp GhostCount
 scoreboard players reset #temp Room
