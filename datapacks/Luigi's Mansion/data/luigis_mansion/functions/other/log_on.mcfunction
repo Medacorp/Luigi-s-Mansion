@@ -1,3 +1,4 @@
+execute unless entity @s[scores={Room=-2147483648..}] run function luigis_mansion:other/initial_scores
 scoreboard players set @s Music 0
 scoreboard players set @s GradualMusic 0
 scoreboard players set @s HealthMusic 0
@@ -9,10 +10,10 @@ scoreboard players set @s LoadedChunks 0
 scoreboard players set @s CreditsTime 0
 function luigis_mansion:entities/player/animation/set/none
 scoreboard players reset @s ID
-scoreboard players reset @s[scores={TrainingOption=-1}] TrainingOption
 scoreboard players operation @s ID > @a ID
 scoreboard players add @s ID 1
 scoreboard players set @s SettingsCheck -1
+execute if entity @s[scores={Room=-2}] run function luigis_mansion:room/underground_lab/warp_to
 tag @s remove loaded_chunks
 tag @s remove seen_room_name
 execute if entity @a[name=Dhranios] run gamerule sendCommandFeedback true

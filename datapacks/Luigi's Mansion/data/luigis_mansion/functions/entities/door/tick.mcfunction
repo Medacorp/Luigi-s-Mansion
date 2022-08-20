@@ -21,7 +21,7 @@ execute if entity @s[tag=bash_door] run function luigis_mansion:entities/door/ba
 execute if entity @s[tag=unlock_door] run function luigis_mansion:entities/door/unlock_door
 execute if entity @s[tag=attack] run function luigis_mansion:entities/door/attack
 
-execute unless entity @s[tag=!remove_from_existence,tag=!dead] run tag @e[tag=this_model,limit=1] add remove_from_existence
+execute unless entity @s[tag=!remove_from_existence,tag=!dead] unless entity @e[tag=door,tag=frame,distance=..0.7,tag=!remove_from_existence,tag=!dead,limit=1] run tag @e[tag=this_model,limit=1] add remove_from_existence
 
 tag @e[tag=this_model,limit=1] remove this_model
 
