@@ -1663,6 +1663,7 @@
 "luigis_mansion:settings.flashlight_type.toggle_to_shine": "Toggle to shine",
 "luigis_mansion:settings.game": "Check game settings.",
 "luigis_mansion:settings.game.brightness": "Brightness set to \"Bright\"; the intended brightness of the map is controlled via the dimensions. If you set it lower, you may not see anything.",
+"luigis_mansion:settings.game.gui_scale": "The GUI scale should be set to anything except the highest scale, if it is set to the highest scale, some text will go off screen.",
 "luigis_mansion:settings.game.music": "Music is assigned to the music slider, and the Ambience slider if there's multiple tracks at once. Luigi's humming is controlled via the Player slider.",
 "luigis_mansion:settings.game.server": "Make sure that these are the values for the following fields, in case you run this map on a server:",
 "luigis_mansion:settings.game.sounds": "Sounds are assigned to their proper slider, ghosts assigned to Hostile Creatures, E. Gadd to Friendly Creatures, etc.",

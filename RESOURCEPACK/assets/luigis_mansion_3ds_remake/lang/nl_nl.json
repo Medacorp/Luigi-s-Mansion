@@ -429,8 +429,11 @@
     "luigis_mansion_3ds_remake:message.player.scan_furniture.8": "Een soort blauwdruk?",
     "luigis_mansion_3ds_remake:message.player.scan_furniture.9": "Ik zou dit waarschijnlijk niet moeten aanraken...",
     "luigis_mansion_3ds_remake:message.the_end.s_rank": "S Rank! Gefeliciteerd! Het landhuis is compleet!",
+    "luigis_mansion_3ds_remake:message.time_spent_in_mansion": "Tijd doorbracht in het landhuis: %1$s:%2$s:%3$s",
     "luigis_mansion_3ds_remake:message.training_type.3ds_remake": "3DS-versie.",
     "luigis_mansion_3ds_remake:settings.flashlight_type.strobulb": "Strobulb",
+    "luigis_mansion_3ds_remake:settings.modified.global_3ds_remake_gallery": "%1$s heeft \\\"(Globaal) 3DS-versie gallerij\\\" gezet naar \\\"%2$s\\\".",
+    "luigis_mansion_3ds_remake:settings.global_3ds_remake_gallery": "(Globaal) 3DS-versie gallerij: %1$s.",
     "luigis_mansion_3ds_remake:subtitles.entity.gooigi.death": "Gooigi valt uit elkaar",
     "luigis_mansion_3ds_remake:subtitles.entity.gooigi.spawn": "Gooigi stolt",
     "luigis_mansion_3ds_remake:subtitles.entity.gooigi.vanish": "Gooigi verdwijnt",
@@ -447,10 +450,5 @@
     "luigis_mansion_3ds_remake:subtitles.item.gameboy_horror_part.spawn": "Gameboy Horror onderdeel spawnt",
     "luigis_mansion_3ds_remake:subtitles.item.super_mushroom.bounce": "Super paddenstoel stuitert",
     "luigis_mansion_3ds_remake:subtitles.item.super_mushroom.obtain": "Super paddenstoel verkregen",
-    "luigis_mansion_3ds_remake:subtitles.item.super_mushroom.spawn": "Super paddenstoel spawnt",
-    "": {
-        "luigis_mansion_3ds_remake:message": {
-            "time_spent_in_mansion": "Tijd doorgebracht in landhuis: %1$s:%2$s:%3$s"
-        }
-    }
+    "luigis_mansion_3ds_remake:subtitles.item.super_mushroom.spawn": "Super paddenstoel spawnt"
 }

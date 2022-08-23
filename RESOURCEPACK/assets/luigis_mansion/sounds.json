@@ -7020,6 +7020,58 @@
         ],
         "subtitle": "luigis_mansion:subtitles.entity.player.open_door"
     },
+    "entity.player.open_door.self.high_health": {
+        "sounds": [
+            {
+                "name": "luigis_mansion:entity/player/idle/high1",
+                "stream": false,
+                "attenuation_distance": 16000,
+                "volume": 0.001
+            },
+            {
+                "name": "luigis_mansion:entity/player/idle/high2",
+                "stream": false,
+                "attenuation_distance": 16000,
+                "volume": 0.001
+            },
+            {
+                "name": "luigis_mansion:entity/player/idle/high3",
+                "stream": false,
+                "attenuation_distance": 16000,
+                "volume": 0.001
+            }
+        ],
+        "subtitle": "luigis_mansion:subtitles.entity.player.open_door"
+    },
+    "entity.player.open_door.self.low_health": {
+        "sounds": [
+            {
+                "name": "luigis_mansion:entity/player/idle/low1",
+                "stream": false,
+                "attenuation_distance": 16000,
+                "volume": 0.001
+            },
+            {
+                "name": "luigis_mansion:entity/player/idle/low2",
+                "stream": false,
+                "attenuation_distance": 16000,
+                "volume": 0.001
+            },
+            {
+                "name": "luigis_mansion:entity/player/idle/low3",
+                "stream": false,
+                "attenuation_distance": 16000,
+                "volume": 0.001
+            },
+            {
+                "name": "luigis_mansion:entity/player/idle/low4",
+                "stream": false,
+                "attenuation_distance": 16000,
+                "volume": 0.001
+            }
+        ],
+        "subtitle": "luigis_mansion:subtitles.entity.player.open_door"
+    },
     "entity.player.pull.high_health": {
         "sounds": [
             {

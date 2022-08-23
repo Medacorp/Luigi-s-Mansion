@@ -1,6 +1,7 @@
 tag @s remove locked
 tag @s remove unlock
 function #luigis_mansion:entities/door/check_lock
+tag @s remove not_locked
 execute if entity @s[tag=!locked,tag=!unlock] run tag @s add open_door
 execute if entity @s[tag=!locked,tag=!unlock] positioned ^ ^ ^0.5 rotated ~-180 ~ align xz run teleport @a[tag=try_opening_door,limit=1,sort=nearest] ~0.5 ~ ~0.5 ~ ~
 execute if entity @s[tag=!locked,tag=!unlock,tag=!pull] as @a[tag=try_opening_door,limit=1,sort=nearest] run function luigis_mansion:entities/player/animation/set/door/open/push

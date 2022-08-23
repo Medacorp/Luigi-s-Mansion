@@ -16,7 +16,7 @@ tag @s remove try_open
 
 fill ^ ^ ^-0.5 ^ ^1 ^-0.5 minecraft:light_gray_stained_glass replace minecraft:air
 execute if entity @s[tag=!fake,tag=!open_door,tag=!bash_door,tag=!unlock_door,tag=!attack] unless entity @s[tag=!in_vacuum,tag=!was_shaking] run function luigis_mansion:entities/door/shake
-execute if entity @s[tag=open_door] run function luigis_mansion:entities/door/open_door
+execute unless entity @s[tag=!open_door,tag=!forced_animation] run function luigis_mansion:entities/door/open_door
 execute if entity @s[tag=bash_door] run function luigis_mansion:entities/door/bash_door
 execute if entity @s[tag=unlock_door] run function luigis_mansion:entities/door/unlock_door
 execute if entity @s[tag=attack] run function luigis_mansion:entities/door/attack

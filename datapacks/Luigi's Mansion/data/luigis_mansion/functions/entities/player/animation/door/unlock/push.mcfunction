@@ -2,7 +2,8 @@ execute at @s run summon minecraft:marker ~ ~ ~ {Tags:["home","remove_from_exist
 execute store result entity @e[tag=home,limit=1] Pos[0] double 0.01 run scoreboard players get @s PosX
 execute store result entity @e[tag=home,limit=1] Pos[2] double 0.01 run scoreboard players get @s PosZ
 execute store result entity @e[tag=home,limit=1] Rotation[0] float 1 run scoreboard players get @s HomeRot
-execute at @e[tag=home,limit=1] run tp @s ~ ~ ~ ~ 40
+execute at @e[tag=home,limit=1] run tp @s[scores={IdleTime=..-2}] ~ ~ ~ ~ 40
+execute at @e[tag=home,limit=1] run tp @s[scores={IdleTime=-1}] ~ ~ ~ ~ 0
 kill @e[tag=home,limit=1]
 scoreboard players add @s AnimationProg 1
 execute if entity @s[scores={AnimationProg=1}] run playsound luigis_mansion:item.key.grab block @a[tag=same_room] ~ ~ ~ 1

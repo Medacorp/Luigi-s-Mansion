@@ -89,7 +89,7 @@
     "luigis_beta_mansion:message.gallery.trophy.what_happened.description": "Overheat the Poltergust 500.",
     "luigis_beta_mansion:message.get_high_score.original": "the Original Mansion",
     "luigis_beta_mansion:message.no_mansion_inside_found": "No inside of the mansion was found! Make sure you dragged in the dimension files and closed the world after installing the data pack.",
-    "luigis_beta_mansion:settings.modified.play_beta_lab_music": "Set \"Play beta lab music\" to %1$s.",
+    "luigis_beta_mansion:settings.modified.play_beta_lab_music": "Set \"Play beta lab music\" to \"%1$s\".",
     "luigis_beta_mansion:settings.play_beta_lab_music": "Play beta lab music: %1$s.",
     "luigis_beta_mansion:subtitles.entity.basher.ambient": "Basher haunts",
     "luigis_beta_mansion:subtitles.entity.basher.attack": "Basher attacks",
@@ -135,5 +135,5 @@
     "luigis_beta_mansion:subtitles.item.poltergust_500.hit": "Poltergust 500 bonks",
     "luigis_beta_mansion:subtitles.item.poltergust_500.reel_in": "Poltergust 500 reels in",
     "luigis_beta_mansion:subtitles.item.poltergust_500.vacuuming": "Poltergust 500 vacuums",
-    "luigis_beta_mansion:subtitles.item.poltergust_500.vaporize": "Poltergust 500 vaporizes"
+    "luigis_beta_mansion:subtitles.item.poltergust_500.vaporize": "Poltergust 500 vaporises"
 }

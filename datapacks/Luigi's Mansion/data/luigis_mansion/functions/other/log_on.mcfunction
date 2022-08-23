@@ -1,4 +1,4 @@
-execute unless entity @s[scores={Room=-2147483648..}] run function luigis_mansion:other/initial_scores
+execute unless entity @s[scores={Dialog=0..}] run function luigis_mansion:other/initial_scores
 scoreboard players set @s Music 0
 scoreboard players set @s GradualMusic 0
 scoreboard players set @s HealthMusic 0

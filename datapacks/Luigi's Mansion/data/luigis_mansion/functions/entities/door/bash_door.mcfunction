@@ -6,4 +6,5 @@ execute if entity @s[tag=!pull] as @e[tag=this_model,limit=1] run function luigi
 execute if entity @s[tag=pull] as @e[tag=this_model,limit=1] run function luigis_mansion:animations/door/bash/pull
 
 tag @s[scores={AnimationProg=40}] remove bash_door
+execute if entity @s[scores={AnimationProg=40}] run scoreboard players reset @e[tag=this_model,limit=1] AnimationProg
 scoreboard players reset @s[scores={AnimationProg=40}] AnimationProg

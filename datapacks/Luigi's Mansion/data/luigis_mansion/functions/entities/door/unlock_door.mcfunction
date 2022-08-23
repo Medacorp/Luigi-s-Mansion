@@ -10,4 +10,5 @@ execute if entity @s[tag=pull] as @e[tag=this_model,limit=1] run function luigis
 
 tag @s[scores={AnimationProg=260}] remove unlock_door
 tag @s[scores={AnimationProg=260}] add open_door
+execute if entity @s[scores={AnimationProg=260}] run scoreboard players reset @e[tag=this_model,limit=1] AnimationProg
 scoreboard players reset @s[scores={AnimationProg=260}] AnimationProg
