@@ -1,7 +1,6 @@
 scoreboard objectives add ActionTime dummy
 scoreboard objectives add Angle dummy
 scoreboard objectives add AnimationProg dummy
-scoreboard objectives add Attack minecraft.custom:minecraft.damage_dealt
 scoreboard objectives add BananaDropTime dummy
 scoreboard objectives add BookChoice trigger
 scoreboard objectives add Boos dummy
@@ -38,11 +37,13 @@ scoreboard objectives add FurnitureFire dummy
 scoreboard objectives add FurnitureForward dummy
 scoreboard objectives add FurnitureIce dummy
 scoreboard objectives add FurnitureRadius dummy
+scoreboard objectives add FurnitureRotDef dummy
 scoreboard objectives add FurnitureSearch dummy
 scoreboard objectives add FurnitureSizeX dummy
 scoreboard objectives add FurnitureSizeY dummy
 scoreboard objectives add FurnitureSizeZ dummy
 scoreboard objectives add FurnitureSound dummy
+scoreboard objectives add FurnitureSpins dummy
 scoreboard objectives add FurnitureUp dummy
 scoreboard objectives add FurnitureVacuum dummy
 scoreboard objectives add FurnitureWater dummy
@@ -149,6 +150,7 @@ scoreboard objectives add RoomNoise dummy
 scoreboard objectives add RoomSection dummy
 scoreboard objectives add RotationDif dummy
 scoreboard objectives add RotationSpeed dummy
+scoreboard objectives add RotationSpeedDef dummy
 scoreboard objectives add RotX dummy
 scoreboard objectives add RotY dummy
 scoreboard objectives add Run minecraft.custom:minecraft.sprint_one_cm

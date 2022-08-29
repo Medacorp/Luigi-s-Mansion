@@ -15,8 +15,6 @@ execute if score #mirrored Selected matches 0 if data storage luigis_mansion:dat
 execute if score #mirrored Selected matches 1 if data storage luigis_mansion:data luigi.mainhand.tag.luigis_mansion.poltergust_model_data run tag @s add holding_poltergust
 execute if score #mirrored Selected matches 0 run data modify entity @s[tag=held_item,tag=!stop_model] ArmorItems[3] set from storage luigis_mansion:data luigi.offhand
 execute if score #mirrored Selected matches 1 run data modify entity @s[tag=held_item,tag=!stop_model] ArmorItems[3] set from storage luigis_mansion:data luigi.mainhand
-execute if score #mirrored Selected matches 1 if entity @s[tag=attacking,tag=!stop_model,tag=!holding_poltergust] run function luigis_mansion:animations/luigi/attack/left_arm
-execute if score #mirrored Selected matches 0 run tag @s remove attacking
 
 data modify entity @s[tag=was_sneak_posing,tag=!sneak_pos,tag=!low_health] Pose.Head[0] set value 0.001f
 data modify entity @s[tag=!was_sneak_posing,tag=sneak_pos,tag=!low_health] Pose.Head[0] set value 20.0f

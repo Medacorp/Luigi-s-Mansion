@@ -1,0 +1,10 @@
+execute if score #radius Steps matches 11 if entity @s[distance=..1.1] run tag @e[tag=furniture,tag=me,limit=1] add hit
+execute if score #radius Steps matches 12 if entity @s[distance=..1.2] run tag @e[tag=furniture,tag=me,limit=1] add hit
+execute if score #radius Steps matches 13 if entity @s[distance=..1.3] run tag @e[tag=furniture,tag=me,limit=1] add hit
+execute if score #radius Steps matches 14 if entity @s[distance=..1.4] run tag @e[tag=furniture,tag=me,limit=1] add hit
+execute if score #radius Steps matches 15 if entity @s[distance=..1.5] run tag @e[tag=furniture,tag=me,limit=1] add hit
+execute if score #radius Steps matches 16 if entity @s[distance=..1.6] run tag @e[tag=furniture,tag=me,limit=1] add hit
+execute if score #radius Steps matches 17 if entity @s[distance=..1.7] run tag @e[tag=furniture,tag=me,limit=1] add hit
+execute if score #radius Steps matches 18 if entity @s[distance=..1.8] run tag @e[tag=furniture,tag=me,limit=1] add hit
+execute if score #radius Steps matches 19 if entity @s[distance=..1.9] run tag @e[tag=furniture,tag=me,limit=1] add hit
+execute if score #radius Steps matches 20 if entity @s[distance=..2] run tag @e[tag=furniture,tag=me,limit=1] add hit

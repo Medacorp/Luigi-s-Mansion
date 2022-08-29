@@ -4,9 +4,9 @@ scoreboard players operation #x Steps /= #2 Constants
 scoreboard players operation #x Time = @s FurnitureSizeX
 scoreboard players operation #x Time %= #2 Constants
 scoreboard players operation #y Steps = @s FurnitureSizeY
-execute if entity @s[tag=!swinging] run scoreboard players operation #y Steps /= #2 Constants
-execute if entity @s[tag=!swinging] run scoreboard players operation #y Time = @s FurnitureSizeY
-execute if entity @s[tag=!swinging] run scoreboard players operation #y Time %= #2 Constants
+execute if entity @s[tag=!swinging,tag=!swirling] run scoreboard players operation #y Steps /= #2 Constants
+execute if entity @s[tag=!swinging,tag=!swirling] run scoreboard players operation #y Time = @s FurnitureSizeY
+execute if entity @s[tag=!swinging,tag=!swirling] run scoreboard players operation #y Time %= #2 Constants
 scoreboard players operation #z Steps = @s FurnitureSizeZ
 scoreboard players operation #z Steps /= #2 Constants
 scoreboard players operation #z Time = @s FurnitureSizeZ

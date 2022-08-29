@@ -1,4 +1,4 @@
-scoreboard players add @s FurnitureZProg 18
+scoreboard players add @s FurnitureZProg 12
 function luigis_mansion:entities/furniture/tick/swing/cosz
 #amplifier
 scoreboard players operation #temp2 Time = @s FurnitureZOrigin
