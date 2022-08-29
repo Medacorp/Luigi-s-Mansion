@@ -23,7 +23,6 @@
         "luigis_mansion:entities/boo_marker",
         "luigis_mansion:entities/hidden_boo",
         "luigis_mansion:entities/banana_peel",
-        "luigis_mansion:entities/punching_bag",
         "luigis_mansion:entities/portrificationizing_ghost",
         "luigis_mansion:entities/item",
         "luigis_mansion:entities/mario",
@@ -41,6 +40,8 @@
         "luigis_mansion:entities/basher_scare",
         "luigis_mansion:entities/vacuumable_object",
         "luigis_mansion:entities/cobweb",
-        "luigis_mansion:entities/revive_detection"
+        "luigis_mansion:entities/revive_detection",
+        "luigis_mansion:entities/furniture",
+        "luigis_mansion:entities/lamp"
 	]
 }

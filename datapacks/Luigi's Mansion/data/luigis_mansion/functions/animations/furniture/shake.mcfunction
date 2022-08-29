@@ -1,0 +1,3 @@
+execute if score #mirrored Selected matches 0 run function luigis_mansion:animations/furniture/normal/shake
+execute if score #mirrored Selected matches 1 run function luigis_mansion:animations/furniture/mirrored/shake
+tag @s[scores={AnimationProg=0}] remove shake

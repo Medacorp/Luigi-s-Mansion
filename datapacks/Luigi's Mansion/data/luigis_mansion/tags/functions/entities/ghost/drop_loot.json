@@ -14,6 +14,9 @@
         "luigis_mansion:entities/ghost/drop_loot/big_pearl",
         "luigis_mansion:entities/ghost/drop_loot/small_heart",
         "luigis_mansion:entities/ghost/drop_loot/big_heart",
-        "luigis_mansion:entities/ghost/drop_loot/poison_mushroom"
+        "luigis_mansion:entities/ghost/drop_loot/poison_mushroom",
+        "luigis_mansion:entities/ghost/drop_loot/key",
+        "luigis_mansion:entities/ghost/drop_loot/element_medal",
+        "luigis_mansion:entities/ghost/drop_loot/mario_item"
 	]
 }

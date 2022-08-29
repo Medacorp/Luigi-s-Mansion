@@ -1,0 +1,1 @@
+execute if data storage luigis_mansion:data drop_loot.key[0] run function luigis_mansion:entities/ghost/drop_loot/loop/key

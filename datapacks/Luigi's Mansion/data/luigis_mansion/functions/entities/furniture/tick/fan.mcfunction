@@ -1,0 +1,13 @@
+execute if entity @s[tag=in_vacuum] run function luigis_mansion:entities/furniture/tick/increase_speed
+execute if entity @s[tag=!in_vacuum] run function luigis_mansion:entities/furniture/tick/decrease_speed
+function luigis_mansion:entities/furniture/tick/turn_fan
+tag @s remove in_vacuum
+
+execute unless entity @s[scores={RotationSpeed=-999..999},tag=searchable_by_vacuum] if entity @s[tag=!searched] run function luigis_mansion:entities/furniture/tick/search
+execute unless entity @s[scores={RotationSpeed=-999..999},tag=searchable_by_vacuum] run tag @s add searched
+tag @s[scores={RotationSpeed=-999..999}] remove searched
+execute if entity @s[tag=searchable_by_hand,tag=search] run function luigis_mansion:entities/furniture/tick/search
+tag @s[tag=!searchable_by_hand,tag=search] add open
+tag @s remove search
+execute if entity @s[tag=drop_loot] run function luigis_mansion:entities/furniture/tick/search
+tag @s remove drop_loot

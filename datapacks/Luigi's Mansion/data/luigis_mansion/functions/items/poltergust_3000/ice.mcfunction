@@ -1,2 +1,4 @@
-execute as @e[distance=..3,tag=!model_piece,tag=!hidden,tag=!item,tag=!no_poltergust_interaction] run function #luigis_mansion:items/poltergust_3000/effect_on_entity/ice
+execute as @e[distance=..3,tag=!furniture,tag=!model_piece,tag=!hidden,tag=!item,tag=!no_poltergust_interaction] run function #luigis_mansion:items/poltergust_3000/effect_on_entity/ice
 function #luigis_mansion:items/poltergust_3000/effect_on_block/ice
+teleport @e[tag=interact,limit=1] ~ ~ ~ ~ ~
+execute as @e[tag=same_room,tag=furniture,tag=!hit] run function luigis_mansion:items/poltergust_3000/effect_on_furniture/ice

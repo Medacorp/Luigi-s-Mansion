@@ -1,9 +1,12 @@
+execute store result entity @s[scores={Dialog=241},tag=hit_by_swinging_furniture] Rotation[0] float 1 run scoreboard players get @s HitFurnitureDir
+execute store result entity @s[scores={Dialog=121},tag=hit_by_swinging_furniture] Rotation[0] float 1 run scoreboard players get @s HitFurnitureDir
+execute store result entity @s[scores={Dialog=1},tag=hit_by_swinging_furniture] Rotation[0] float 1 run scoreboard players get @s HitFurnitureDir
 scoreboard players add @s[scores={Dialog=242..},tag=!vanish] Dialog 1
-scoreboard players add @s[scores={Dialog=241},tag=hit] Dialog 1
+scoreboard players add @s[scores={Dialog=241},tag=hit_by_swinging_furniture] Dialog 1
 scoreboard players add @s[scores={Dialog=122..240}] Dialog 1
-scoreboard players add @s[scores={Dialog=121},tag=hit] Dialog 1
+scoreboard players add @s[scores={Dialog=121},tag=hit_by_swinging_furniture] Dialog 1
 scoreboard players add @s[scores={Dialog=2..120}] Dialog 1
-scoreboard players add @s[scores={Dialog=1},tag=hit] Dialog 1
+scoreboard players add @s[scores={Dialog=1},tag=hit_by_swinging_furniture] Dialog 1
 execute unless entity @s[scores={Dialog=1..}] run scoreboard players add @s Dialog 1
 execute if entity @s[scores={Dialog=1..2}] run function luigis_mansion:entities/biff_atlas/turn_visible
 execute if entity @s[scores={Dialog=1}] at @e[tag=same_room,tag=!spectator] positioned ^ ^ ^8 if entity @s[distance=..8] run function luigis_mansion:entities/biff_atlas/turn_invisible
@@ -28,7 +31,7 @@ tag @s[scores={Dialog=122}] remove attack
 tag @s[scores={Dialog=122}] remove laugh
 tag @s[scores={Dialog=122}] add knocked_back
 execute if entity @s[scores={Dialog=122..141}] run teleport @s ^ ^ ^0.1
-scoreboard players set @s[scores={Dialog=2..240},tag=hit,tag=ko] Dialog 240
+scoreboard players set @s[scores={Dialog=2..240},tag=hit_by_swinging_furniture,tag=ko] Dialog 240
 scoreboard players set @s[scores={Dialog=240}] AnimationProg 0
 tag @s[scores={Dialog=240},tag=!ko] add ko
 tag @s[scores={Dialog=240}] remove knocked_back
@@ -41,7 +44,7 @@ tag @s[scores={Dialog=242}] remove laugh
 tag @s[scores={Dialog=242}] add knocked_out
 execute if entity @s[scores={Dialog=242..261}] run teleport @s ^ ^ ^0.1
 scoreboard players set @s[scores={Dialog=282}] VulnerableTime 80
-tag @s remove hit
+tag @s remove hit_by_swinging_furniture
 tag @s[scores={Dialog=372}] remove knocked_out
 scoreboard players set @s[scores={Dialog=372}] Dialog 240
 

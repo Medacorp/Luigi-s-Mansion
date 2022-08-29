@@ -1,1 +1,0 @@
-execute if entity @s[tag=punching_bag] run function luigis_mansion:entities/punching_bag/tick

@@ -106,3 +106,4 @@ execute if entity @s[tag=!expelling_fire] run playsound luigis_mansion:item.polt
 scoreboard players set @s[tag=!expelling_fire] PoltergustSound 10
 execute if entity @s[tag=expelling_fire,scores={PoltergustSound=0}] run playsound luigis_mansion:item.poltergust_3000.expelling.fire player @a[tag=same_room] ~ ~ ~ 1
 scoreboard players set @s[tag=expelling_fire,scores={PoltergustSound=0}] PoltergustSound 20
+tag @e[tag=furniture,tag=hit] remove hit

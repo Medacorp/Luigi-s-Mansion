@@ -33,6 +33,25 @@ scoreboard objectives add Food food
 scoreboard objectives add ForcedDamage dummy
 scoreboard objectives add ForceRadar dummy
 scoreboard objectives add ForceScreen dummy
+scoreboard objectives add FurnitureDust dummy
+scoreboard objectives add FurnitureFire dummy
+scoreboard objectives add FurnitureForward dummy
+scoreboard objectives add FurnitureIce dummy
+scoreboard objectives add FurnitureRadius dummy
+scoreboard objectives add FurnitureSearch dummy
+scoreboard objectives add FurnitureSizeX dummy
+scoreboard objectives add FurnitureSizeY dummy
+scoreboard objectives add FurnitureSizeZ dummy
+scoreboard objectives add FurnitureSound dummy
+scoreboard objectives add FurnitureUp dummy
+scoreboard objectives add FurnitureVacuum dummy
+scoreboard objectives add FurnitureWater dummy
+scoreboard objectives add FurnitureXProg dummy
+scoreboard objectives add FurnitureXOrigin dummy
+scoreboard objectives add FurnitureXTarget dummy
+scoreboard objectives add FurnitureZProg dummy
+scoreboard objectives add FurnitureZOrigin dummy
+scoreboard objectives add FurnitureZTarget dummy
 scoreboard objectives add GBHCall dummy
 scoreboard objectives add GBHChoice trigger
 scoreboard objectives add GBHDialog dummy
@@ -50,6 +69,7 @@ scoreboard objectives add Health dummy
 scoreboard objectives add HealthMusic dummy
 scoreboard objectives add HeartOffset dummy
 scoreboard objectives add HideTime dummy
+scoreboard objectives add HitFurnitureDir dummy
 scoreboard objectives add HomeRot dummy
 scoreboard objectives add HomeRotX dummy
 scoreboard objectives add HomeRotY dummy
@@ -128,6 +148,7 @@ scoreboard objectives add Room dummy
 scoreboard objectives add RoomNoise dummy
 scoreboard objectives add RoomSection dummy
 scoreboard objectives add RotationDif dummy
+scoreboard objectives add RotationSpeed dummy
 scoreboard objectives add RotX dummy
 scoreboard objectives add RotY dummy
 scoreboard objectives add Run minecraft.custom:minecraft.sprint_one_cm
@@ -187,6 +208,7 @@ scoreboard players set #2 Constants 2
 scoreboard players set #3 Constants 3
 scoreboard players set #5 Constants 5
 scoreboard players set #8 Constants 8
+scoreboard players set #9 Constants 9
 scoreboard players set #10 Constants 10
 scoreboard players set #20 Constants 20
 scoreboard players set #30 Constants 30

@@ -1,0 +1,1 @@
+execute if entity @s[tag=plant] run function luigis_mansion:entities/furniture/tick/plant

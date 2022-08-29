@@ -1,6 +1,12 @@
-summon minecraft:armor_stand ~ ~5.4 ~ {CustomName:'{"translate":"luigis_mansion:entity.punching_bag"}',Tags:["punching_bag","scan_ignore"],ArmorItems:[{},{},{},{id:"minecraft:diamond_pickaxe",Count:1b,tag:{Unbreakable:1b,Damage:4,CustomModelData:7}}],Pose:{Head:[0.0f,0.0f,0.01f]},NoGravity:1b,Marker:1b,Marker:1b,Invisible:1b,DisabledSlots:2039583}
-summon minecraft:zombie ~ ~ ~ {CustomName:'{"translate":"luigis_mansion:entity.punching_bag"}',Tags:["punching_bag_detect","scan_ignore"],Silent:1b,ActiveEffects:[{Id:14,ShowParticles:0b,Ambient:0b,Amplifier:0b,Duration:1000000}],Attributes:[{Name:"minecraft:generic.movement_speed",Base:0.0d},{Name:"minecraft:generic.follow_range",Base:0.0d},{Name:"minecraft:generic.attack_damage",Base:0.0d},{Name:"minecraft:zombie.spawn_reinforcements",Base:0.0d}],Health:20.0f}
-execute positioned ~ ~5.4 ~ run scoreboard players set @e[tag=punching_bag,distance=..0.1,limit=1] Angle 0
-execute positioned ~ ~5.4 ~ as @e[tag=punching_bag,distance=..0.1,limit=1] run scoreboard players operation @s PunchingBag > @e[tag=punching_bag] PunchingBag
-execute positioned ~ ~5.4 ~ run scoreboard players add @e[tag=punching_bag,distance=..0.1,limit=1] PunchingBag 1
-execute as @e[distance=..0.1,tag=punching_bag_detect] unless entity @s[scores={PunchingBag=1..}] positioned ~ ~5.4 ~ run scoreboard players operation @s PunchingBag = @e[tag=punching_bag,distance=..0.1] PunchingBag
+summon minecraft:armor_stand ~ ~5.4 ~ {CustomName:'{"translate":"luigis_mansion:entity.punching_bag"}',Tags:["furniture","swinging","swinging_harms","punching_bag","scan_ignore","this_entity"],ArmorItems:[{},{},{},{id:"minecraft:diamond_pickaxe",Count:1b,tag:{Unbreakable:1b,Damage:4,CustomModelData:7}}],Pose:{Head:[0.0f,0.001f,0.0f]},NoGravity:1b,Marker:1b,Marker:1b,Invisible:1b,DisabledSlots:2039583}
+execute if data storage luigis_mansion:data give_loot run data modify entity @e[tag=this_entity,limit=1] ArmorItems.tag.loot set from storage luigis_mansion:data give_loot
+data remove storage luigis_mansion:data give_loot
+scoreboard players set @e[tag=this_entity,limit=1] Sound 0
+scoreboard players set @e[tag=this_entity,limit=1] FurnitureSound 0
+scoreboard players set @e[tag=this_entity,limit=1] FurnitureSizeX 1
+scoreboard players set @e[tag=this_entity,limit=1] FurnitureSizeY 6
+scoreboard players set @e[tag=this_entity,limit=1] FurnitureSizeZ 1
+scoreboard players set @e[tag=this_entity,limit=1] FurnitureXOrigin 0
+scoreboard players set @e[tag=this_entity,limit=1] FurnitureZOrigin 0
+scoreboard players set @e[tag=this_entity,limit=1] FurnitureVacuum 100
+tag @e[tag=this_entity,limit=1] remove this_entity
