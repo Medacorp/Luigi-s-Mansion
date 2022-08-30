@@ -6,6 +6,7 @@ execute if entity @s[scores={MirrorZ=-2147483648..}] run scoreboard players oper
 tag @s add me
 scoreboard players set @s[scores={ErrorTime=0}] Pull 0
 scoreboard players set @s[tag=capturing_ghost] Invulnerable 2
+tag @s[tag=capturing_ghost] remove grabbed
 tag @s remove capturing_ghost
 execute as @e[tag=ghost,tag=same_room,scores={VulnerableTime=1..}] run function luigis_mansion:items/poltergust_3000/attacking_ghost
 execute if score #temp GhostCount > @s GhostCount run scoreboard players operation @s GhostCount = #temp GhostCount
