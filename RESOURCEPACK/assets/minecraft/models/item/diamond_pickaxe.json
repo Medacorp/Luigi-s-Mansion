@@ -7166,6 +7166,22 @@
         },
         {
             "predicate": {
+                "damaged": 0,
+                "damage": 0.0124,
+                "custom_model_data": 0
+            },
+            "model": "luigis_mansion:entity/fan"
+        },
+        {
+            "predicate": {
+                "damaged": 0,
+                "damage": 0.013,
+                "custom_model_data": 0
+            },
+            "model": "luigis_mansion:entity/fan_mirrored"
+        },
+        {
+            "predicate": {
                 "damaged": 1
             },
             "model": "minecraft:item/diamond_pickaxe"

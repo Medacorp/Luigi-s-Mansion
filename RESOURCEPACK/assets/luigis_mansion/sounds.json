@@ -346,6 +346,15 @@
         ],
         "subtitle": "luigis_mansion:subtitles.block.dust"
     },
+    "block.fan": {
+        "sounds": [
+            {
+                "name": "luigis_mansion:block/fan",
+                "stream": false
+            }
+        ],
+        "subtitle": "luigis_mansion:subtitles.block.fan"
+    },
     "block.moving_wall": {
         "sounds": [
             {
