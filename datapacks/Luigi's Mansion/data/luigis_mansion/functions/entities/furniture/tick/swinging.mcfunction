@@ -20,6 +20,7 @@ execute if entity @s[scores={FurnitureZProg=84}] unless entity @s[scores={Furnit
 scoreboard players set @s FurnitureSearch 0
 execute if entity @s[scores={FurnitureXTarget=-900..900}] run scoreboard players operation @s FurnitureSearch = @s FurnitureXTarget
 execute if score @s FurnitureSearch matches ..-1 if score @s FurnitureZTarget matches 1.. run scoreboard players operation @s FurnitureSearch *= #-1 Constants
+execute if score @s FurnitureSearch matches 1.. if score @s FurnitureZTarget matches ..-1 run scoreboard players operation @s FurnitureSearch *= #-1 Constants
 execute if score @s FurnitureSearch matches ..-1 if entity @s[scores={FurnitureZTarget=-900..900}] run scoreboard players operation @s FurnitureSearch < @s FurnitureZTarget
 execute if score @s FurnitureSearch matches 1.. if entity @s[scores={FurnitureZTarget=-900..900}] run scoreboard players operation @s FurnitureSearch > @s FurnitureZTarget
 execute if score @s FurnitureSearch matches 0 if entity @s[scores={FurnitureZTarget=-900..900}] run scoreboard players operation @s FurnitureSearch = @s FurnitureZTarget
