@@ -10,5 +10,6 @@ execute as @e[tag=black_bogmire,tag=this_entity,limit=1] store result score @s H
 execute as @e[tag=black_bogmire,tag=this_entity,limit=1] store result score @s HomeZ run data get entity @s Pos[2] 100
 execute as @e[tag=black_bogmire,tag=this_entity,limit=1] store result score @s HomeRot run data get entity @s Rotation[0]
 execute as @e[tag=black_bogmire,tag=this_entity,limit=1] store result score @s Move run data get storage luigis_mansion:data current_state.current_data.ghosts.black_bogmire.small_speed
+data modify entity @e[tag=black_bogmire,tag=this_entity,limit=1] ArmorItems[3].tag.loot set from storage luigis_mansion:data current_state.current_data.portrait_ghosts.black_bogmire.small_loot
 scoreboard players set @e[tag=black_bogmire,tag=this_entity,limit=1] Sound 0
 tag @e[tag=this_entity] remove this_entity

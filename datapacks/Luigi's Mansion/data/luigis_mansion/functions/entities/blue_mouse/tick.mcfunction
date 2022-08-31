@@ -1,5 +1,5 @@
 teleport @s ~ ~1.3 ~
-execute at @s[tag=dead] run function luigis_mansion:entities/blue_mouse/drop_loot
+execute at @s[tag=dead] run function luigis_mansion:other/drop_loot
 
 execute if entity @s[tag=visible] if predicate luigis_mansion:blue_mouse/start_squeeking run tag @s add squeek
 

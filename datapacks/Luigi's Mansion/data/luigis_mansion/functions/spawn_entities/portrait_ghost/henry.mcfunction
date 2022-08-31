@@ -16,6 +16,7 @@ execute as @e[tag=henry,tag=this_entity,limit=1] store result score @s MaxHealth
 execute as @e[tag=henry,tag=this_entity,limit=1] store result score @s TopVacuumDamage run data get storage luigis_mansion:data current_state.current_data.portrait_ghosts.henry_and_orville.henry.top_vacuum_damage
 execute as @e[tag=henry,tag=this_entity,limit=1] store result score @s Move run data get storage luigis_mansion:data current_state.current_data.portrait_ghosts.henry_and_orville.henry.speed
 execute as @e[tag=henry,tag=this_entity,limit=1] store result score @s MoveFlee run data get storage luigis_mansion:data current_state.current_data.portrait_ghosts.henry_and_orville.henry.flee_speed
+data modify entity @e[tag=henry,tag=this_entity,limit=1] ArmorItems[3].tag.loot set from storage luigis_mansion:data current_state.current_data.portrait_ghosts.henry_and_orville.henry.loot
 scoreboard players set @e[tag=henry,tag=this_entity,limit=1] PullStrength 10
 scoreboard players set @e[tag=henry,tag=this_entity,limit=1] Sound 0
 scoreboard players set @e[tag=henry,tag=this_entity,limit=1] StunTime 0

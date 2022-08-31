@@ -1,5 +1,5 @@
-execute if entity @s[tag=dying,scores={DeathTime=1}] if data storage luigis_mansion:data current_state.current_data.ghosts.cinema_ghost{loot_at_0:1b} run function luigis_mansion:entities/cinema_ghost/drop_loot
-execute if entity @s[tag=dead] unless data storage luigis_mansion:data current_state.current_data.ghosts.cinema_ghost{loot_at_0:1b} run function luigis_mansion:entities/cinema_ghost/drop_loot
+execute if entity @s[tag=dying,scores={DeathTime=1}] if data entity @s ArmorItems[3].tag.loot{drop_at_0:1b} run function luigis_mansion:other/drop_loot
+execute if entity @s[tag=dead] unless data entity @s ArmorItems[3].tag.loot{drop_at_0:1b} run function luigis_mansion:other/drop_loot
 
 tag @s[tag=!basher,tag=attack,scores={ActionTime=1..40}] remove hurt
 tag @s[tag=!basher,tag=attack,scores={ActionTime=1..40}] remove element_hurt

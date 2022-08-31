@@ -1,1 +1,0 @@
-execute if data storage luigis_mansion:data drop_loot.element_medal run function luigis_mansion:entities/ghost/drop_loot/loop/element_medal

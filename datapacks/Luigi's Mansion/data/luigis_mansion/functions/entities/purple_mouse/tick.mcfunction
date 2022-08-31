@@ -1,5 +1,5 @@
 teleport @s ~ ~1.3 ~
-execute at @s[tag=dead] run function luigis_mansion:entities/purple_mouse/drop_loot
+execute at @s[tag=dead] run function luigis_mansion:other/drop_loot
 
 execute at @s[tag=visible,tag=!dead,tag=!removed_from_existence] if entity @e[tag=same_room,tag=!spectator,distance=..0.7,limit=1] run function luigis_mansion:entities/purple_mouse/collide
 

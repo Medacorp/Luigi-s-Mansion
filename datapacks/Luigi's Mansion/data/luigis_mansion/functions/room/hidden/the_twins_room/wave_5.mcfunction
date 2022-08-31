@@ -1,4 +1,7 @@
-execute unless data storage luigis_mansion:data current_state.current_data.money_spawned{the_twins_room_speedy_spirit:1b} positioned 739 22 -19 unless entity @e[tag=speedy_spirit,distance=..0.7,limit=1] run function luigis_mansion:spawn_entities/ghost/speedy_spirit
+execute positioned 739 22 -19 run tag @e[tag=speedy_spirit,distance=..0.7,limit=1] add remove_from_existence
+execute unless data storage luigis_mansion:data current_state.current_data{money_spawned:["the_twins_room_speedy_spirit"]} positioned 739 22 -19 unless entity @e[tag=speedy_spirit,distance=..0.7,limit=1] run function luigis_mansion:spawn_entities/ghost/speedy_spirit
+execute positioned 739 22 -19 as @e[tag=speedy_spirit,distance=..0.7] run function luigis_mansion:entities/speedy_spirit/give_money/silver_diamond
+execute positioned 739 22 -19 as @e[tag=speedy_spirit,distance=..0.7] run data modify entity @s ArmorItems[3].tag.loot merge value {name:"the_twins_room_speedy_spirit"}
 setblock 738 20 -25 minecraft:chest[facing=east,type=single]{LootTable:"luigis_mansion:search"}
 setblock 742 20 -31 minecraft:chest[facing=east,type=single]{LootTable:"luigis_mansion:search"}
 setblock 747 20 -28 minecraft:chest[facing=east,type=single]{LootTable:"luigis_mansion:search"}

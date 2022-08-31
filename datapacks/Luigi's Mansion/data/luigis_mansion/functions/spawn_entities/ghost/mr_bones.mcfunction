@@ -6,6 +6,7 @@ scoreboard players operation @e[tag=this_entity,tag=model_piece,limit=1] GhostNr
 execute as @e[tag=this_entity,tag=mr_bones,limit=1] store result score @s Health store result score @s LastHealth run data get storage luigis_mansion:data current_state.current_data.ghosts.mr_bones.health
 execute as @e[tag=this_entity,tag=mr_bones,limit=1] store result score @s Move run data get storage luigis_mansion:data current_state.current_data.ghosts.mr_bones.speed
 execute as @e[tag=this_entity,tag=mr_bones,limit=1] store result score @s MoveFlee run data get storage luigis_mansion:data current_state.current_data.ghosts.mr_bones.flee_speed
+data modify entity @e[tag=this_entity,tag=mr_bones,limit=1] ArmorItems[3].tag.loot set from storage luigis_mansion:data current_state.current_data.ghosts.mr_bones.loot
 teleport @e[tag=this_entity,limit=1] ~ ~ ~ facing entity @p[gamemode=!spectator]
 execute as @e[tag=this_entity,limit=1] store result score @s HomeX run data get entity @s Pos[0] 100
 execute as @e[tag=this_entity,limit=1] store result score @s HomeY run data get entity @s Pos[1] 100
@@ -17,5 +18,5 @@ scoreboard players set @e[tag=this_entity,tag=mr_bones,limit=1] VulnerableTime 0
 scoreboard players set @e[tag=this_entity,tag=mr_bones,limit=1] TopVacuumDamage 0
 scoreboard players set @e[tag=this_entity,tag=mr_bones,limit=1] ElementHurtTime 0
 scoreboard players set @e[tag=this_entity,tag=mr_bones,limit=1] HeartOffset 3
-scoreboard players set @e[tag=this_entity,limit=1] SpawnTime 160
+scoreboard players set @e[tag=this_entity,tag=mr_bones,limit=1] SpawnTime 160
 tag @e[tag=this_entity] remove this_entity

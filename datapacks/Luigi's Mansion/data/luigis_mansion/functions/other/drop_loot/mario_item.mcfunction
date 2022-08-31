@@ -1,0 +1,1 @@
+execute if data storage luigis_mansion:data drop_loot.contents.luigis_mansion.mario_item run function luigis_mansion:other/drop_loot/loop/mario_item

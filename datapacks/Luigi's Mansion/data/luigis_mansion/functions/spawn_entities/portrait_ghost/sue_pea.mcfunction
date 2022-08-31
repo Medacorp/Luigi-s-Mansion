@@ -16,6 +16,7 @@ execute as @e[tag=sue_pea,tag=this_entity,limit=1] store result score @s MaxHeal
 execute as @e[tag=sue_pea,tag=this_entity,limit=1] store result score @s TopVacuumDamage run data get storage luigis_mansion:data current_state.current_data.portrait_ghosts.sue_pea.top_vacuum_damage
 execute as @e[tag=sue_pea,tag=this_entity,limit=1] store result score @s Move run data get storage luigis_mansion:data current_state.current_data.portrait_ghosts.sue_pea.speed
 execute as @e[tag=sue_pea,tag=this_entity,limit=1] store result score @s MoveFlee run data get storage luigis_mansion:data current_state.current_data.portrait_ghosts.sue_pea.flee_speed
+data modify entity @e[tag=sue_pea,tag=this_entity,limit=1] ArmorItems[3].tag.loot set from storage luigis_mansion:data current_state.current_data.portrait_ghosts.sue_pea.loot
 scoreboard players set @e[tag=sue_pea,tag=this_entity,limit=1] PullStrength 10
 scoreboard players set @e[tag=sue_pea,tag=this_entity,limit=1] Sound 0
 scoreboard players set @e[tag=sue_pea,tag=this_entity,limit=1] StunTime 0

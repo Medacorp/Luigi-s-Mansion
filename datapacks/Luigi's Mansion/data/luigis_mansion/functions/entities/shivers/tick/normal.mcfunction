@@ -72,6 +72,7 @@ execute at @s[tag=run] run function luigis_mansion:animations/shivers/run
 execute at @s[tag=sit_down] run function luigis_mansion:animations/shivers/sit_down
 execute at @s[tag=burn,tag=!vanish] run function luigis_mansion:animations/shivers/burn
 execute at @s[tag=!burn,tag=!vanish,tag=!look_around,tag=!panic,tag=!run,tag=!sit_down] run function luigis_mansion:animations/shivers/idle
+execute at @s[tag=visible,tag=!vanish] as @e[tag=this_model,tag=right_arm] at @s run function luigis_mansion:entities/shivers/candle_flame
 
 execute if data storage luigis_mansion:data current_state.current_data{blackout:1b} run tag @s add remove_from_existence
 execute if data storage luigis_mansion:data current_state.current_data.rooms.butlers_room{cleared:1b} run tag @s add remove_from_existence

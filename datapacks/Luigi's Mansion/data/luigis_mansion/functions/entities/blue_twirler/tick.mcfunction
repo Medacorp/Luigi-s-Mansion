@@ -1,5 +1,5 @@
-execute if entity @s[tag=dying,scores={DeathTime=1}] if data storage luigis_mansion:data current_state.current_data.ghosts.blue_twirler{loot_at_0:1b} run function luigis_mansion:entities/blue_twirler/drop_loot
-execute if entity @s[tag=dead] unless data storage luigis_mansion:data current_state.current_data.ghosts.blue_twirler{loot_at_0:1b} run function luigis_mansion:entities/blue_twirler/drop_loot
+execute if entity @s[tag=dying,scores={DeathTime=1}] if data entity @s ArmorItems[3].tag.loot{drop_at_0:1b} run function luigis_mansion:other/drop_loot
+execute if entity @s[tag=dead] unless data entity @s ArmorItems[3].tag.loot{drop_at_0:1b} run function luigis_mansion:other/drop_loot
 
 execute if entity @s[tag=basher] unless entity @s[tag=!attack,tag=!visible] run tag @s remove element_hurt
 data modify entity @s[tag=basher,tag=element_hurt] ArmorItems[3].id set value "minecraft:leather_chestplate"

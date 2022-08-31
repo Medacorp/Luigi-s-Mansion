@@ -1,5 +1,5 @@
-execute if entity @s[tag=dying,scores={DeathTime=1}] if data storage luigis_mansion:data current_state.current_data.ghosts.bowling_ghost{loot_at_0:1b} run function luigis_mansion:entities/bowling_ghost/drop_loot
-execute if entity @s[tag=dead] unless data storage luigis_mansion:data current_state.current_data.ghosts.bowling_ghost{loot_at_0:1b} run function luigis_mansion:entities/bowling_ghost/drop_loot
+execute if entity @s[tag=dying,scores={DeathTime=1}] if data entity @s ArmorItems[3].tag.loot{drop_at_0:1b} run function luigis_mansion:other/drop_loot
+execute if entity @s[tag=dead] unless data entity @s ArmorItems[3].tag.loot{drop_at_0:1b} run function luigis_mansion:other/drop_loot
 
 tag @s[tag=grab_ball] remove laugh
 tag @s[tag=grab_ball] remove complain

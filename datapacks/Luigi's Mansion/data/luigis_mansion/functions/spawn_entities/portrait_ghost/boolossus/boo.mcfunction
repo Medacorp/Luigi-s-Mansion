@@ -6,5 +6,6 @@ scoreboard players set @e[tag=this_entity,limit=1] ActionTime 1
 scoreboard players operation @e[tag=this_entity,limit=1] Room = #temp Room
 scoreboard players set @e[tag=this_entity,limit=1] Dialog 0
 execute as @e[tag=this_entity,limit=1] store result score @s Move run data get storage luigis_mansion:data current_state.current_data.portrait_ghosts.boolossus.speed
+data modify entity @e[tag=this_entity,limit=1] ArmorItems[3].tag.loot set from storage luigis_mansion:data current_state.current_data.portrait_ghosts.boolossus.loot
 scoreboard players set @e[tag=this_entity,limit=1] Sound 0
 tag @e[tag=this_entity,limit=1] remove this_entity

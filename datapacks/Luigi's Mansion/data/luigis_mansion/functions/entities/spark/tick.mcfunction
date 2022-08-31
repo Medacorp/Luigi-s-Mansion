@@ -1,4 +1,4 @@
-execute if entity @s[tag=dead] run function luigis_mansion:entities/spark/drop_loot
+execute if entity @s[tag=dead] run function luigis_mansion:other/drop_loot
 
 execute if entity @e[tag=same_room,tag=!spectator,distance=..0.7,limit=1] if entity @s[tag=visible] run function luigis_mansion:entities/spark/collide
 

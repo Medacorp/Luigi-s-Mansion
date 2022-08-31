@@ -1,7 +1,7 @@
-execute if entity @s[tag=dying,tag=!dancing,scores={DeathTime=1}] if data storage luigis_mansion:data current_state.current_data.ghosts.ghost_guy{loot_at_0:1b} run function luigis_mansion:entities/ghost_guy/drop_loot
-execute if entity @s[tag=dying,tag=dancing,scores={DeathTime=1}] if data storage luigis_mansion:data current_state.current_data.ghosts.dancing_ghost_guy{loot_at_0:1b} run function luigis_mansion:entities/ghost_guy/drop_loot
-execute if entity @s[tag=dead,tag=!dancing] unless data storage luigis_mansion:data current_state.current_data.ghosts.ghost_guy{loot_at_0:1b} run function luigis_mansion:entities/ghost_guy/drop_loot
-execute if entity @s[tag=dead,tag=dancing] unless data storage luigis_mansion:data current_state.current_data.ghosts.dancing_ghost_guy{loot_at_0:1b} run function luigis_mansion:entities/ghost_guy/drop_loot
+execute if entity @s[tag=dying,tag=!dancing,scores={DeathTime=1}] if data entity @s ArmorItems[3].tag.loot{drop_at_0:1b} run function luigis_mansion:other/drop_loot
+execute if entity @s[tag=dying,tag=dancing,scores={DeathTime=1}] if data entity @s ArmorItems[3].tag.loot{drop_at_0:1b} run function luigis_mansion:other/drop_loot
+execute if entity @s[tag=dead,tag=!dancing] unless data entity @s ArmorItems[3].tag.loot{drop_at_0:1b} run function luigis_mansion:other/drop_loot
+execute if entity @s[tag=dead,tag=dancing] unless data entity @s ArmorItems[3].tag.loot{drop_at_0:1b} run function luigis_mansion:other/drop_loot
 execute if entity @s[tag=dead] run scoreboard players operation #temp GhostGuyCouple = @s GhostGuyCouple
 execute if entity @s[tag=dead] as @e[tag=ghost_guy] if score @s GhostGuyCouple = #temp GhostGuyCouple run tag @s add partner_died
 execute if entity @s[tag=dead] as @e[tag=ghost_guy] if score @s GhostGuyCouple = #temp GhostGuyCouple run scoreboard players reset @s GhostGuyCouple

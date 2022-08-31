@@ -1,3 +1,6 @@
+tag @s add no_visible_shake
+tag @s remove long_shake
+execute if entity @s[tag=shake] run function luigis_mansion:entities/furniture/tick/shake
 execute if entity @s[tag=in_vacuum] run function luigis_mansion:entities/furniture/tick/increase_speed
 execute if entity @s[tag=!in_vacuum] if score @s RotationSpeed > @s RotationSpeedDef run function luigis_mansion:entities/furniture/tick/decrease_speed
 function luigis_mansion:entities/furniture/tick/turn_fan

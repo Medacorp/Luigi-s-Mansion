@@ -1,4 +1,4 @@
-execute if entity @s[tag=dead] run function luigis_mansion:entities/green_flying_fish/drop_loot
+execute if entity @s[tag=dead] run function luigis_mansion:other/drop_loot
 
 scoreboard players set @s[tag=fleeing] WaitTime 0
 tag @s remove fleeing

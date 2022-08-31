@@ -11,6 +11,7 @@ execute as @e[tag=this_entity,limit=1] store result score @s MaxHealth run data 
 execute as @e[tag=this_entity,limit=1] store result score @s TopVacuumDamage run data get storage luigis_mansion:data current_state.current_data.portrait_ghosts.jarvis.top_vacuum_damage
 execute as @e[tag=this_entity,limit=1] store result score @s Move run data get storage luigis_mansion:data current_state.current_data.portrait_ghosts.jarvis.speed
 execute as @e[tag=this_entity,limit=1] store result score @s MoveFlee run data get storage luigis_mansion:data current_state.current_data.portrait_ghosts.jarvis.flee_speed
+data modify entity @e[tag=jarvis,tag=this_entity,limit=1] ArmorItems[3].tag.loot set from storage luigis_mansion:data current_state.current_data.portrait_ghosts.jarvis.loot
 scoreboard players set @e[tag=this_entity,limit=1] PullStrength 10
 scoreboard players set @e[tag=this_entity,limit=1] Sound 0
 scoreboard players set @e[tag=this_entity,limit=1] StunTime 0

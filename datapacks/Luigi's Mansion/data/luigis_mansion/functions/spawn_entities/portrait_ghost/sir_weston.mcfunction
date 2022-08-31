@@ -18,6 +18,7 @@ execute as @e[tag=sir_weston,tag=this_entity,limit=1] store result score @s MaxH
 execute as @e[tag=sir_weston,tag=this_entity,limit=1] store result score @s TopVacuumDamage run data get storage luigis_mansion:data current_state.current_data.portrait_ghosts.sir_weston.top_vacuum_damage
 execute as @e[tag=sir_weston,tag=this_entity,limit=1] store result score @s Move run data get storage luigis_mansion:data current_state.current_data.portrait_ghosts.sir_weston.speed
 execute as @e[tag=sir_weston,tag=this_entity,limit=1] store result score @s MoveFlee run data get storage luigis_mansion:data current_state.current_data.portrait_ghosts.sir_weston.flee_speed
+data modify entity @e[tag=sir_weston,tag=this_entity,limit=1] ArmorItems[3].tag.loot set from storage luigis_mansion:data current_state.current_data.portrait_ghosts.sir_weston.loot
 scoreboard players set @e[tag=sir_weston,tag=this_entity,limit=1] PullStrength 10
 scoreboard players set @e[tag=sir_weston,tag=this_entity,limit=1] Sound 0
 scoreboard players set @e[tag=sir_weston,tag=this_entity,limit=1] StunTime 0
