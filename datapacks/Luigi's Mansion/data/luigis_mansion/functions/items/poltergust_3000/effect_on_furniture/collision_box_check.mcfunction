@@ -1,4 +1,4 @@
-execute at @s run summon minecraft:marker ~ ~1.3 ~ {Tags:["collision_check","remove_from_existence"]}
+execute at @s run summon minecraft:marker ~ ~1.4 ~ {Tags:["collision_check","remove_from_existence"]}
 scoreboard players operation #x Steps = @s FurnitureSizeX
 scoreboard players operation #x Steps /= #2 Constants
 scoreboard players operation #x Time = @s FurnitureSizeX

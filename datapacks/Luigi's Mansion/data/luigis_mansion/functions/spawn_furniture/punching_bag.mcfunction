@@ -9,6 +9,6 @@ scoreboard players set @e[tag=this_entity,limit=1] FurnitureSizeZ 1
 scoreboard players set @e[tag=this_entity,limit=1] InteractionType -2
 scoreboard players set @e[tag=this_entity,limit=1] FurnitureXOrigin 0
 scoreboard players set @e[tag=this_entity,limit=1] FurnitureZOrigin 0
-scoreboard players set @e[tag=this_entity,limit=1] FurnitureUp -1
+scoreboard players set @e[tag=this_entity,limit=1] FurnitureUp -10
 scoreboard players set @e[tag=this_entity,limit=1] FurnitureVacuum 100
 tag @e[tag=this_entity,limit=1] remove this_entity

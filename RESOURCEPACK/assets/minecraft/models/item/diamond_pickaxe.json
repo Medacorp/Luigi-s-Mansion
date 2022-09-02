@@ -7167,6 +7167,14 @@
         {
             "predicate": {
                 "damaged": 0,
+                "damage": 0.0118,
+                "custom_model_data": 4
+            },
+            "model": "luigis_mansion:entity/vase"
+        },
+        {
+            "predicate": {
+                "damaged": 0,
                 "damage": 0.0124,
                 "custom_model_data": 0
             },

@@ -9,4 +9,4 @@ execute unless data storage luigis_mansion:data current_state.current_data{money
 execute unless data storage luigis_mansion:data current_state.current_data{money_spawned:["the_twins_room_lamp"]} positioned 744 25 40 run function luigis_mansion:spawn_entities/item/bill
 execute unless data storage luigis_mansion:data current_state.current_data{money_spawned:["the_twins_room_lamp"]} positioned 743 24 40 run function luigis_mansion:spawn_entities/item/bill
 execute if data storage luigis_mansion:data current_state.current_data{money_spawned:["the_twins_room_lamp"]} run tag @e[tag=selected] add nothing
-execute unless data luigis_mansion:data current_state.current_data{money_spawned:["the_twins_room_lamp"]} run data modify storage luigis_mansion:data current_state.current_data.money_spawned append value "the_twins_room_lamp"
+execute unless data storage luigis_mansion:data current_state.current_data{money_spawned:["the_twins_room_lamp"]} run data modify storage luigis_mansion:data current_state.current_data.money_spawned append value "the_twins_room_lamp"

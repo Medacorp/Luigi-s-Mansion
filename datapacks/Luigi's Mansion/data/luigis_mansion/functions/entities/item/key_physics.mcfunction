@@ -7,18 +7,18 @@ execute if entity @s[tag=!bounce] if block ~ ~0.1 ~ #minecraft:slabs unless bloc
 execute if entity @s[tag=!bounce,tag=!in_wall] unless block ~ ~0.1 ~ #luigis_mansion:items_ignore run function luigis_mansion:entities/item/bounce
 execute if entity @s[tag=!bounce,tag=!in_wall] unless block ~ ~0.1 ~ #minecraft:slabs unless block ~ ~0.4 ~ #luigis_mansion:items_ignore run function luigis_mansion:entities/item/bounce
 
-execute if entity @s[tag=bounce,scores={ActionTime=0..3}] if block ~ ~0.7 ~ #luigis_mansion:items_ignore run teleport @s ~ ~0.2 ~
-execute if entity @s[tag=bounce,scores={ActionTime=0..3}] unless block ~ ~0.7 ~ #luigis_mansion:items_ignore run function luigis_mansion:entities/item/bounce_top
-execute if entity @s[tag=bounce,scores={ActionTime=0}] if block ~ ~-1.9 ~ #luigis_mansion:items_ignore if block ~ ~-0.9 ~ #luigis_mansion:items_ignore run function luigis_mansion:entities/item/bounce_top
-execute if entity @s[tag=bounce,scores={ActionTime=1}] if block ~ ~-1.4 ~ #luigis_mansion:items_ignore if block ~ ~-0.9 ~ #luigis_mansion:items_ignore run function luigis_mansion:entities/item/bounce_top
-execute if entity @s[tag=bounce,scores={ActionTime=2}] if block ~ ~-0.9 ~ #luigis_mansion:items_ignore run function luigis_mansion:entities/item/bounce_top
-execute if entity @s[tag=bounce,scores={ActionTime=3}] if block ~ ~-0.4 ~ #luigis_mansion:items_ignore run function luigis_mansion:entities/item/bounce_top
+execute if entity @s[tag=bounce,scores={ActionTime=0..3}] if block ~ ~0.7 ~ #luigis_mansion:item_bounce_ignore run teleport @s ~ ~0.2 ~
+execute if entity @s[tag=bounce,scores={ActionTime=0..3}] unless block ~ ~0.7 ~ #luigis_mansion:item_bounce_ignore run function luigis_mansion:entities/item/bounce_top
+execute if entity @s[tag=bounce,scores={ActionTime=0}] if block ~ ~-1.9 ~ #luigis_mansion:item_bounce_ignore if block ~ ~-0.9 ~ #luigis_mansion:item_bounce_ignore run function luigis_mansion:entities/item/bounce_top
+execute if entity @s[tag=bounce,scores={ActionTime=1}] if block ~ ~-1.4 ~ #luigis_mansion:item_bounce_ignore if block ~ ~-0.9 ~ #luigis_mansion:item_bounce_ignore run function luigis_mansion:entities/item/bounce_top
+execute if entity @s[tag=bounce,scores={ActionTime=2}] if block ~ ~-0.9 ~ #luigis_mansion:item_bounce_ignore run function luigis_mansion:entities/item/bounce_top
+execute if entity @s[tag=bounce,scores={ActionTime=3}] if block ~ ~-0.4 ~ #luigis_mansion:item_bounce_ignore run function luigis_mansion:entities/item/bounce_top
 
 execute store result score @s HomeY run data get entity @s Pos[1] 100
-execute unless entity @s[scores={ActionTime=1..}] if entity @s[tag=!no_move] at @s positioned ~ ~0.1 ~ if block ^ ^ ^0.2 #luigis_mansion:ghosts_ignore unless block ^ ^ ^0.2 #minecraft:slabs at @s run teleport @s ^ ^ ^0.1
-execute if entity @s[scores={ActionTime=1},tag=!no_move] at @s positioned ~ ~0.1 ~ if block ^ ^ ^0.1 #luigis_mansion:ghosts_ignore unless block ^ ^ ^0.1 #minecraft:slabs at @s run teleport @s ^ ^ ^0.05
-execute if entity @s[scores={ActionTime=2},tag=!no_move] at @s positioned ~ ~0.1 ~ if block ^ ^ ^0.05 #luigis_mansion:ghosts_ignore unless block ^ ^ ^0.05 #minecraft:slabs at @s run teleport @s ^ ^ ^0.025
-execute if entity @s[scores={ActionTime=3},tag=!no_move,tag=!bounce] at @s positioned ~ ~0.1 ~ if block ^ ^ ^0.025 #luigis_mansion:ghosts_ignore unless block ^ ^ ^0.025 #minecraft:slabs at @s run teleport @s ^ ^ ^0.0125
+execute unless entity @s[scores={ActionTime=1..}] if entity @s[tag=!no_move] at @s positioned ~ ~0.1 ~ if block ^ ^ ^0.2 #luigis_mansion:items_ignore unless block ^ ^ ^0.2 #minecraft:slabs at @s run teleport @s ^ ^ ^0.1
+execute if entity @s[scores={ActionTime=1},tag=!no_move] at @s positioned ~ ~0.1 ~ if block ^ ^ ^0.1 #luigis_mansion:items_ignore unless block ^ ^ ^0.1 #minecraft:slabs at @s run teleport @s ^ ^ ^0.05
+execute if entity @s[scores={ActionTime=2},tag=!no_move] at @s positioned ~ ~0.1 ~ if block ^ ^ ^0.05 #luigis_mansion:items_ignore unless block ^ ^ ^0.05 #minecraft:slabs at @s run teleport @s ^ ^ ^0.025
+execute if entity @s[scores={ActionTime=3},tag=!no_move,tag=!bounce] at @s positioned ~ ~0.1 ~ if block ^ ^ ^0.025 #luigis_mansion:items_ignore unless block ^ ^ ^0.025 #minecraft:slabs at @s run teleport @s ^ ^ ^0.0125
 execute if entity @s[tag=bounce] unless entity @s[scores={ActionTime=4..}] store result entity @s Pos[1] double 0.01 run scoreboard players get @s HomeY
 
 execute at @s[tag=bounce,scores={ActionTime=4..}] positioned ~ ~0.1 ~ if block ~ ~ ~ #luigis_mansion:items_ignore if block ~ ~-0.2 ~ #luigis_mansion:items_ignore at @s run teleport @s ~ ~-0.2 ~

@@ -27,7 +27,7 @@ execute unless entity @s[scores={InteractionType=1..}] run scoreboard players se
 execute unless entity @s[scores={InteractionType=1..4}] run scoreboard players set @s[scores={IdleTime=0..}] InteractionType 3
 scoreboard players operation #temp Room = @s Room
 execute if entity @s[scores={InteractionType=3}] run tag @e[tag=interact,tag=manual,limit=1] add long_shake
-execute if entity @s[scores={InteractionTime=2},tag=!not_facing] at @e[tag=interact,tag=manual,limit=1] as @e[tag=furniture,tag=same_room] run function luigis_mansion:items/interact/target_furniture/shake
+execute if entity @s[scores={InteractionTime=2,InteractionType=1..},tag=!not_facing] at @e[tag=interact,tag=manual,limit=1] as @e[tag=furniture,tag=same_room] run function luigis_mansion:items/interact/target_furniture/shake
 execute if entity @s[scores={InteractionTime=2,InteractionType=1}] run function luigis_mansion:blocks/search_sound/wall
 execute if entity @s[scores={InteractionTime=2,InteractionType=3,Health=41..,Shrunk=0}] run playsound luigis_mansion:entity.player.search.high_health player @a[tag=same_room] ~ ~ ~ 1
 execute if entity @s[scores={InteractionTime=2,InteractionType=3,Health=41..,Shrunk=1..}] run playsound luigis_mansion:entity.player.search.high_health player @a[tag=same_room] ~ ~ ~ 1 2
