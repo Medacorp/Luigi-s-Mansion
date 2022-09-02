@@ -5,7 +5,7 @@ tag @s[scores={ActionTime=0}] remove attack
 scoreboard players set @s[scores={ActionTime=1}] AnimationProg 0
 execute if entity @s[scores={ActionTime=1..40}] run function luigis_mansion:animations/puncher/basher_stun
 scoreboard players set @s[scores={ActionTime=41}] AnimationProg 0
-execute if entity @s[scores={ActionTime=41..60}] run function luigis_mansion:animations/puncher/appear
+execute if entity @s[scores={ActionTime=41..60}] run function luigis_mansion:animations/puncher/basher_appear
 scoreboard players set @s[scores={ActionTime=61}] AnimationProg 0
 execute if entity @s[scores={ActionTime=61..90}] run function luigis_mansion:animations/puncher/basher_complain
 
