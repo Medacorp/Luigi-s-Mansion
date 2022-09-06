@@ -1,0 +1,1 @@
+function luigis_mansion:dialog/king_boo_warp/normal

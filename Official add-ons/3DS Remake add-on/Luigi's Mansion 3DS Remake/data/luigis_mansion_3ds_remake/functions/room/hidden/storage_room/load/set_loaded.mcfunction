@@ -1,0 +1,1 @@
+scoreboard players set #storage_room Ticking 1

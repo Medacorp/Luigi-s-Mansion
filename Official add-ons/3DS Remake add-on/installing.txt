@@ -1,0 +1,21 @@
+== NOTICE ==
+This is an official add-on, it is made by the map creator and will be updated alongside the map.
+Any compatibility issues with this add-on should be reported to the conflicting add-on.
+
+Issues with this add-on itself should be reported on the github here: https://github.com/Medacorp/Luigi-s-Mansion-3DS-Remake/issues
+Please do look if it's already reported.
+
+The 11 ghosts by yourself in the training room advancement is not granted for this add-on's training room program. Select vanilla to try to get that instead.
+
+This add-on will force a load order, the first world load with this add-on enabled while others are enabled too may take a while to load due to how this works. (There's nothing I can do to imrpove this.)
+
+== How to install ==
+1. Open the Luigi's Mansion world.
+2. Open the "datapacks" folder
+3. Drop the data pack folder (named "Luigi's Mansion 3DS Remake") in this folder
+
+== Updates ==
+When updating the map, delete the existing 3DS Remake add-on and re-install the latest version.
+
+== Latest compatible world version ==
+Same version as this folder is shipped with.

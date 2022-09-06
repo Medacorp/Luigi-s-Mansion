@@ -1,0 +1,1 @@
+scoreboard players reset #wardrobe_room_closet_1

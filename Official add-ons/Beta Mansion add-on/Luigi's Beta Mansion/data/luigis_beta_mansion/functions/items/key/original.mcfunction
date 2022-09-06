@@ -1,0 +1,3 @@
+execute if entity @s[tag=living_room] unless data storage luigis_mansion:data current_state.current_data{obtained_keys:["living_room"]} run function luigis_beta_mansion:items/key/original/living_room
+execute if entity @s[tag=hallway_2] unless data storage luigis_mansion:data current_state.current_data{obtained_keys:["hallway_2"]} run function luigis_beta_mansion:items/key/original/hallway_2
+execute if entity @s[tag=hallway_3] unless data storage luigis_mansion:data current_state.current_data{obtained_keys:["hallway_3"]} run function luigis_beta_mansion:items/key/original/hallway_3

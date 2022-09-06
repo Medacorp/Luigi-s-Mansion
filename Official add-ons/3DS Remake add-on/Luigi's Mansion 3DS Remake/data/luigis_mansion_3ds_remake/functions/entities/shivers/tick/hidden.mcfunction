@@ -1,0 +1,1 @@
+function luigis_mansion:entities/shivers/tick/normal

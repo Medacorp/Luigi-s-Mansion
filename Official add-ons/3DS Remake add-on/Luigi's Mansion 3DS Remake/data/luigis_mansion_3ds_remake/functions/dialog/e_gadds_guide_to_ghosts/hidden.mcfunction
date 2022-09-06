@@ -1,0 +1,1 @@
+function luigis_mansion:dialog/e_gadds_guide_to_ghosts/normal

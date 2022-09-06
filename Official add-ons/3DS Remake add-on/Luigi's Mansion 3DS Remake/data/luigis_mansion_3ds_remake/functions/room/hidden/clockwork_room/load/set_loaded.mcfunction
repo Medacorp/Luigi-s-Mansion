@@ -1,0 +1,1 @@
+scoreboard players set #clockwork_room Ticking 1

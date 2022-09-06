@@ -1,0 +1,2 @@
+data modify storage luigis_mansion:data current_state.high_scores append from storage luigis_mansion:data current_state.high_scores[{data_index:0}]
+data modify storage luigis_mansion:data current_state.high_scores[-1].data_index set value 1

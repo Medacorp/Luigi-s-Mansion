@@ -1,0 +1,1 @@
+execute if entity @s[x=681.0,y=102,z=39.0,dx=0,dy=1,dz=1,tag=vacuum] unless score #back_yard_water_tap Search matches 1 store success score #back_yard_water_tap Search run scoreboard players add #back_yard_water_tap Searching 1

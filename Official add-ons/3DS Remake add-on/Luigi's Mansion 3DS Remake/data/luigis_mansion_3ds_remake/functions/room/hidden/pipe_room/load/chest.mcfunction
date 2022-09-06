@@ -1,0 +1,2 @@
+execute if data storage luigis_mansion:data current_state.current_data{blackout:0b} run setblock 688 3 -4 minecraft:trapped_chest[facing=south]{LootTable:"luigis_mansion:search"}
+execute if data storage luigis_mansion:data current_state.current_data.obtained_keys{cold_storage:1b} run scoreboard players set #pipe_room_chest Searched 1

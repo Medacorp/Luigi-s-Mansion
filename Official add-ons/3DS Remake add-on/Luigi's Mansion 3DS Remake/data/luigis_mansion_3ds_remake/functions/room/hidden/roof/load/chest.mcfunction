@@ -1,0 +1,1 @@
+execute if data storage luigis_mansion:data current_state.current_data.obtained_keys{armory:1b} run scoreboard players set #roof_chest Searched 1

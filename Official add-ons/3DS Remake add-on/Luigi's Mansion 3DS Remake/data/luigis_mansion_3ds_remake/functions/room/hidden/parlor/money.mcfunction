@@ -1,0 +1,15 @@
+execute positioned 715 20 31 run function luigis_mansion:spawn_entities/item/eternal_gold_coin
+execute positioned 716 20 33 run function luigis_mansion:spawn_entities/item/eternal_gold_coin
+execute positioned 717 20 33 run function luigis_mansion:spawn_entities/item/eternal_gold_coin
+execute positioned 716 20 32 run function luigis_mansion:spawn_entities/item/eternal_gold_coin
+execute positioned 717 20 31 run function luigis_mansion:spawn_entities/item/eternal_gold_coin
+execute positioned 716 20 35 run function luigis_mansion:spawn_entities/item/eternal_gold_coin
+execute positioned 717 20 34 run function luigis_mansion:spawn_entities/item/eternal_gold_coin
+execute positioned 719 20 35 run function luigis_mansion:spawn_entities/item/eternal_gold_coin
+execute positioned 720 20 35 run function luigis_mansion:spawn_entities/item/eternal_gold_coin
+execute positioned 721 21 32 run function luigis_mansion:spawn_entities/item/eternal_gold_coin
+execute positioned 721.0 21 33 run function luigis_mansion:spawn_entities/item/eternal_gold_coin
+execute positioned 721 21 23 run function luigis_mansion:spawn_entities/item/eternal_gold_coin
+execute positioned 722 21 23 run function luigis_mansion:spawn_entities/item/eternal_gold_coin
+execute positioned 720 21 24 run function luigis_mansion:spawn_entities/item/eternal_gold_coin
+execute positioned 718 20 22 run function luigis_mansion:spawn_entities/item/eternal_gold_coin

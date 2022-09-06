@@ -1,0 +1,2 @@
+execute if entity @e[type=minecraft:marker,tag=selected,tag=speedy_spirit,limit=1] run function extensive_training:room/training_room/spawn/speedy_spirit
+execute unless entity @e[type=minecraft:marker,tag=selected,limit=1] if score #training_room Wave matches 10.. unless score #training_room Selected matches 1 if predicate extensive_training:speedy_spirit_selection_chance run summon minecraft:marker ~ ~ ~ {Tags:["select_ghost","speedy_spirit"]}

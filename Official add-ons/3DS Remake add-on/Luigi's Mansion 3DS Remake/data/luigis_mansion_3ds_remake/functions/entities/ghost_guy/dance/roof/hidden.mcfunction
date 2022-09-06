@@ -1,0 +1,1 @@
+function luigis_mansion:entities/ghost_guy/dance/roof/normal

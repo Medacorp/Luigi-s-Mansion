@@ -1,0 +1,13 @@
+experience set @s 63 levels
+experience set @s[scores={OverheatMeter=..30}] 0 points
+experience set @s[scores={OverheatMeter=31..60}] 40 points
+experience set @s[scores={OverheatMeter=61..90}] 80 points
+experience set @s[scores={OverheatMeter=91..120}] 120 points
+experience set @s[scores={OverheatMeter=121..150}] 160 points
+experience set @s[scores={OverheatMeter=151..180}] 200 points
+experience set @s[scores={OverheatMeter=181..210}] 240 points
+experience set @s[scores={OverheatMeter=211..240}] 280 points
+experience set @s[scores={OverheatMeter=241..270}] 320 points
+experience set @s[scores={OverheatMeter=271..298}] 360 points
+experience set @s[scores={OverheatMeter=299..}] 398 points
+experience set @s 0 levels

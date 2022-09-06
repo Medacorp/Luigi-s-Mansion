@@ -1,0 +1,20 @@
+{
+    "values": [
+        "luigis_beta_mansion:room/original/childs_room/reset/unload",
+        "#luigis_beta_mansion:room/original/childs_room/turn_lights/off",
+        "luigis_beta_mansion:room/original/childs_room/reset/chair_1",
+        "luigis_beta_mansion:room/original/childs_room/reset/chair_2",
+        "luigis_beta_mansion:room/original/childs_room/reset/chest",
+        "luigis_beta_mansion:room/original/childs_room/reset/crib",
+        "luigis_beta_mansion:room/original/childs_room/reset/lamp",
+        "luigis_beta_mansion:room/original/childs_room/reset/painting_1",
+        "luigis_beta_mansion:room/original/childs_room/reset/painting_2",
+        "luigis_beta_mansion:room/original/childs_room/reset/painting_3",
+        "luigis_beta_mansion:room/original/childs_room/reset/painting_4",
+        "luigis_beta_mansion:room/original/childs_room/reset/rocking_horse",
+        "luigis_beta_mansion:room/original/childs_room/reset/table_1",
+        "luigis_beta_mansion:room/original/childs_room/reset/table_2",
+        "luigis_beta_mansion:room/original/childs_room/reset/toy_1",
+        "luigis_beta_mansion:room/original/childs_room/reset/toy_2"
+    ]
+}

@@ -1,0 +1,1 @@
+execute if data storage luigis_mansion:data current_state.current_data{money_spawned:["hidden_room_chest_8"]} run scoreboard players set #hidden_room_chest_8 Searched 1

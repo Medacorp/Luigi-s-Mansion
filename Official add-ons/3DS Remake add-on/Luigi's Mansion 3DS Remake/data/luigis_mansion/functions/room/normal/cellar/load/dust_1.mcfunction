@@ -1,0 +1,1 @@
+execute if data storage luigis_mansion:data current_state.current_data{blackout:0b} unless data storage luigis_mansion:data current_state.current_data.technical_data{vacuumed_cellar_dust_1:1b} positioned 738 2 -60 run function luigis_mansion:room/normal/cellar/spawn_dust

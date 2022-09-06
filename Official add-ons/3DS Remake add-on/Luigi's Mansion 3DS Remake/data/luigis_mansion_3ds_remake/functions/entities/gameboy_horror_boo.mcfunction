@@ -1,0 +1,1 @@
+execute if entity @s[tag=gameboy_horror_boo] run function luigis_mansion_3ds_remake:entities/gameboy_horror_boo/tick

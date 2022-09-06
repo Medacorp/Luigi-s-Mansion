@@ -1,0 +1,20 @@
+{
+    "display": {
+        "icon": {
+            "item": "minecraft:diamond_pickaxe",
+			"nbt": "{Unbreakable:1b,Damage:5,CustomModelData:13}"
+        },
+        "title": {
+            "translate": "extensive_training:advancements.amiibo.koopa"
+        },
+        "description": {
+            "translate": "extensive_training:dialog.underground_lab.change_amiibo.koopa.hover"
+        }
+    },
+	"parent": "luigis_mansion_3ds_remake:amiibo/root",
+    "criteria": {
+        "obtained": {
+            "trigger": "minecraft:impossible"
+        }
+    }
+}

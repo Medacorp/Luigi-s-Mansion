@@ -1,0 +1,17 @@
+scoreboard players operation #temp Money /= #20 Constants
+#time = hours
+scoreboard players operation #temp Time = #temp Money
+scoreboard players operation #temp Time /= #60 Constants
+scoreboard players operation #temp Time /= #60 Constants
+scoreboard players operation #temp Time *= #60 Constants
+scoreboard players operation #temp Time *= #60 Constants
+scoreboard players operation #temp Money -= #temp Time
+scoreboard players operation #temp Time /= #60 Constants
+scoreboard players operation #temp Time /= #60 Constants
+#actiontime = minutes
+scoreboard players operation #temp ActionTime = #temp Money
+scoreboard players operation #temp ActionTime /= #60 Constants
+scoreboard players operation #temp ActionTime *= #60 Constants
+scoreboard players operation #temp Money -= #temp ActionTime
+scoreboard players operation #temp ActionTime /= #60 Constants
+#money = seconds

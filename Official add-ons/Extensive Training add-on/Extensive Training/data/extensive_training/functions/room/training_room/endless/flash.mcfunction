@@ -1,0 +1,3 @@
+execute if entity @e[type=minecraft:marker,tag=selected,tag=flash,limit=1] run function extensive_training:room/training_room/spawn/flash
+execute if entity @e[type=minecraft:marker,tag=selected,tag=flash,limit=1] run function extensive_training:room/gallery/clear_task/task_6
+execute unless entity @e[type=minecraft:marker,tag=selected,limit=1] if score #training_room Wave matches 50.. run summon minecraft:marker ~ ~ ~ {Tags:["select_ghost","flash"]}

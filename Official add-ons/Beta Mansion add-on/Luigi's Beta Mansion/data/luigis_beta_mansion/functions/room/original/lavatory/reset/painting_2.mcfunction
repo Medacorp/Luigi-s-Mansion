@@ -1,0 +1,1 @@
+scoreboard players reset #lavatory_painting_2

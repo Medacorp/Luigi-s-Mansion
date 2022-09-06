@@ -1,0 +1,2 @@
+execute if block 716 20 28 minecraft:trapped_chest run scoreboard players add #living_room_chest Searching 1
+execute if score #living_room_chest Searching matches 20 run function luigis_beta_mansion:room/original/living_room/search/chest

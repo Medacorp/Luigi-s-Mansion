@@ -1,21 +1,34 @@
-/advancements/
-/data/chunks.dat
-/data/command_storage_*
-/data/scoreboard.dat
-/data/raids.dat
-/datapacks/*/
-!/datapacks/Luigi's Mansion/
-/DIM1/
-/DIM-1/
-/dimensions/*/
-!/dimensions/luigis_mansion/
-/dimensions/luigis_mansion/*/data/chunks.dat
-/dimensions/luigis_mansion/*/data/raids.dat
-/dimensions/luigis_mansion/*/entities/
-/dimensions/luigis_mansion/*/poi/
-/entities/
-/playerdata/
-/poi/
-/stats/
+/Future add-ons/
+/libraries/
+/logs/
+/Luigi's Mansion/advancements/
+/Luigi's Mansion/data/chunks.dat
+/Luigi's Mansion/data/command_storage_*
+/Luigi's Mansion/data/scoreboard.dat
+/Luigi's Mansion/data/raids.dat
+/Luigi's Mansion/datapacks/*/
+!/Luigi's Mansion/datapacks/Luigi's Mansion/
+/Luigi's Mansion/DIM1/
+/Luigi's Mansion/DIM-1/
+/Luigi's Mansion/dimensions/*/
+!/Luigi's Mansion/dimensions/luigis_mansion/
+/Luigi's Mansion/dimensions/luigis_mansion/*/data/chunks.dat
+/Luigi's Mansion/dimensions/luigis_mansion/*/data/raids.dat
+/Luigi's Mansion/dimensions/luigis_mansion/*/entities/
+/Luigi's Mansion/dimensions/luigis_mansion/*/poi/
+/Luigi's Mansion/entities/
+/Luigi's Mansion/playerdata/
+/Luigi's Mansion/poi/
+/Luigi's Mansion/stats/
+/Official add-ons/*/* Dimension/*/*/data/chunks.dat
+/Official add-ons/*/* Dimension/*/*/data/raids.dat
+/Official add-ons/*/* Dimension/*/*/data/entities/
+/Official add-ons/*/* Dimension/*/*/data/poi/
+/versions/
 *_old
 session.lock
+/eula.txt
+/*.json
+/*.properties
+/*.bat
+/*.jar

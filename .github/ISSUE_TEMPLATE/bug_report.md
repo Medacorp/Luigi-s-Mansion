@@ -25,7 +25,10 @@ Add your save data download here if you cannot reproduce it consistently. The sa
 If applicable, add screenshots to help explain your problem.
 
 **Map version:**
- Say the version number you downloaded the map as. If you used development updates, specify which commit you are at.
+Say the version number you downloaded the map as. If you used development updates, specify which commit you are at.
+
+**Enabled add-ons**
+List all add-ons (other data packs) you have enabled here.
 
 **Additional context**
 Add any other context about the problem here.

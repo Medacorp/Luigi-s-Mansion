@@ -1,0 +1,1 @@
+execute if entity @s[x=649.5,y=93,z=-1.5,distance=..0.7,tag=vacuum] unless score #bottom_of_the_well_lamp Search matches 1 store success score #bottom_of_the_well_lamp Search run scoreboard players add #bottom_of_the_well_lamp Searching 1

@@ -1,0 +1,1 @@
+scoreboard players reset #nursery_crib

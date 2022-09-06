@@ -1,0 +1,11 @@
+execute if score #temp Room matches 1..2 run tag @s[scores={Room=1..2}] add same_room
+execute if score #temp Room matches 8..11 run tag @s[scores={Room=8..11}] add same_room
+execute if score #temp Room matches 8..11 run tag @s[scores={Room=20..27}] add same_room
+execute if score #temp Room matches 20..27 run tag @s[scores={Room=8..11}] add same_room
+execute if score #temp Room matches 20..27 run tag @s[scores={Room=20..27}] add same_room
+execute if score #temp Room matches 39..40 run tag @s[scores={Room=39..40}] add same_room
+execute if score #temp Room matches 39..40 run tag @s[scores={Room=73}] add same_room
+execute if score #temp Room matches 51..52 run tag @s[scores={Room=51..52}] add same_room
+execute if score #temp Room matches 55..56 run tag @s[scores={Room=55..56}] add same_room
+execute if score #temp Room matches 59..60 run tag @s[scores={Room=59..60}] add same_room
+execute if score #temp Room matches 73 run tag @s[scores={Room=39..40}] add same_room

@@ -1,0 +1,1 @@
+scoreboard players set #3ds_gallery Ticking 1

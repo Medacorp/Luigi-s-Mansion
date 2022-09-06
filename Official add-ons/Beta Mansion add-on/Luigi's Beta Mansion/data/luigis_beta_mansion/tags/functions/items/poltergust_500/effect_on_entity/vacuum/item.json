@@ -1,0 +1,24 @@
+{
+	"values": [
+		"luigis_beta_mansion:items/poltergust_500/effect_on_entity/vacuum/item/gold_coin",
+        "luigis_beta_mansion:items/poltergust_500/effect_on_entity/vacuum/item/bill",
+        "luigis_beta_mansion:items/poltergust_500/effect_on_entity/vacuum/item/gold_bar",
+        "luigis_beta_mansion:items/poltergust_500/effect_on_entity/vacuum/item/blue_sapphire",
+        "luigis_beta_mansion:items/poltergust_500/effect_on_entity/vacuum/item/green_emerald",
+        "luigis_beta_mansion:items/poltergust_500/effect_on_entity/vacuum/item/red_ruby",
+        "luigis_beta_mansion:items/poltergust_500/effect_on_entity/vacuum/item/red_diamond",
+        "luigis_beta_mansion:items/poltergust_500/effect_on_entity/vacuum/item/silver_diamond",
+        "luigis_beta_mansion:items/poltergust_500/effect_on_entity/vacuum/item/gold_diamond",
+        "luigis_beta_mansion:items/poltergust_500/effect_on_entity/vacuum/item/small_pearl",
+        "luigis_beta_mansion:items/poltergust_500/effect_on_entity/vacuum/item/medium_pearl",
+        "luigis_beta_mansion:items/poltergust_500/effect_on_entity/vacuum/item/big_pearl",
+        "luigis_beta_mansion:items/poltergust_500/effect_on_entity/vacuum/item/heart",
+        "luigis_beta_mansion:items/poltergust_500/effect_on_entity/vacuum/item/poison_mushroom",
+        "luigis_beta_mansion:items/poltergust_500/effect_on_entity/vacuum/item/key",
+        "luigis_beta_mansion:items/poltergust_500/effect_on_entity/vacuum/item/element_medal",
+        "luigis_beta_mansion:items/poltergust_500/effect_on_entity/vacuum/item/mario_item",
+        "luigis_beta_mansion:items/poltergust_500/effect_on_entity/vacuum/item/gameboy_horror_part",
+        "luigis_beta_mansion:items/poltergust_500/effect_on_entity/vacuum/item/super_mushroom",
+        "luigis_beta_mansion:items/poltergust_500/effect_on_entity/vacuum/item/ghost_coin"
+	]
+}

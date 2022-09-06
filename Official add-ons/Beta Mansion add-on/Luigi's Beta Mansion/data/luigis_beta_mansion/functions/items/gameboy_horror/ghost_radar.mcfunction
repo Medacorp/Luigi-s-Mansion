@@ -1,0 +1,1 @@
+execute if score #radar_type Selected matches 1 run function luigis_beta_mansion:items/gameboy_horror/update_ghost_radar

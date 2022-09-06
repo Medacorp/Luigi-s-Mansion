@@ -1,0 +1,80 @@
+== NOTICE ==
+This map requires 1.19-1.19.2.
+
+Bugs should be reported on the github here: https://github.com/Medacorp/Luigi-s-Mansion/issues
+Please do look if it's already reported.
+
+Do NOT turn chat off, or you will get stuck. The map requires players to click on certain chat messages to advance. 
+
+== Known issues ==
+
+* A bunch of sounds are missing
+* Spawning money in rooms with mirrors causes tons of lag (just grab the money quickly while I try to find a way to fix this)
+* Some instances of rapid teleportation may make client-server communication difficult.
+** When on the ball room floors, if affected, disconnect and let the player with the best connection clear the room, then the floors stop
+** Vote for https://bugs.mojang.com/browse/MC-197855 to get this fixed!
+* Sometimes entities don't show rotated correctly (Mainly noticable with Neville)
+** If this affects doors, don't worry, you can still use them.
+** Vote for https://bugs.mojang.com/browse/MC-103800 to get this fixed!
+
+== Supported languages ==
+English (US)
+Nederlands (Nederland)
+
+To get more supported, go to https://crowdin.com/project/medacorp-projects and help translate the map to more languages.
+
+== How to install ==
+1. Launch Minecraft: Java Edition
+2. Select "Options..."
+3. Select "Resource Packs..."
+4. Select "Open Pack folder"
+- <A file explorer opens>
+5. Drop the resource pack folder (named "Luigi's Mansion Resource Pack") in this folder
+6. Go up one folder
+7. Go to "saves"
+8. Drop the world folder (named "Luigi's Mansion") in this folder
+9. Enable the resource pack in the resource packs menu
+10. Select to open the world
+11. Be patient while it is loading everything; this is a map with a lot of functionality it needs to load in
+
+== How to update ==
+The best way to update your current save is as follows:
+1. Go to the Underground Lab.
+2. Talk to E. Gadd.
+3. Select the normal mansion.
+4. Wait for E. Gadd to go back inside the lab.
+5. Have every player in the world be in the Boo woods. Being in the lab or mansion may result in some broken behavior.
+6. Close the world.
+7. Drop the updated world onto the old world, overwriting all files it clashes with.
+This will replace everything but advancements, player/entity data, statistics, scoreboard and command storage, keeping all progress you have.
+If you were affected by a softlock, contact Dhranios on the Medacorp discord: https://discord.gg/Nn6wScEc88
+
+== Installing add-ons ==
+Add-ons are downloaded with their installation guides included.
+Just make sure that the add-ons you install are compatible with the map version you use (and each other).
+Do not rename any add-on file names (nor unzip them if they were zipped), as they may need a specific loading order, and to do this, the file name must not be changed.
+
+== Uninstalling add-ons ==
+The best way to uninstall add-ons is as follows:
+1. Go to the Underground Lab.
+2. Talk to E. Gadd.
+3. Select the normal mansion.
+4. Wait for E. Gadd to go back inside the lab.
+5. Have every player in the world be in the Boo woods. Being in the lab or mansion may result in some broken behavior.
+Then close the world or server, and remove the data pack from the world.
+1. Go to the "Luigi's Mansion" world folder
+2. Go to the "datapacks" folder
+3. Delete the desired add-ons. (Do NOT delete the "Luigi's Mansion" folder, as that's the base map behavior.)
+
+== Server properties requirements ==
+gamemode=adventure
+difficulty=normal
+spawn-monsters=true
+spawn-npcs=true
+spawn-animals=true
+
+== Credits ==
+Made by: Dhranios
+Research by: Skydier
+Trailer: Supersleiny
+Bug testing: Danish_Pirate, Feras_MQ, UltimateGold

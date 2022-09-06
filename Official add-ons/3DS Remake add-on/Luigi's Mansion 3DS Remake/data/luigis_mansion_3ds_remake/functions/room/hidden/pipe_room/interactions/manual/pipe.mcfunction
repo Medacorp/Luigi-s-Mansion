@@ -1,0 +1,2 @@
+tag @s[x=688.0,y=4,z=9.0,dx=2,dy=7,dz=2,tag=check] add can_interact
+execute if entity @s[x=688.0,y=4,z=9.0,dx=2,dy=7,dz=2,tag=check] run scoreboard players set @a[tag=searcher,limit=1] InteractionType 3

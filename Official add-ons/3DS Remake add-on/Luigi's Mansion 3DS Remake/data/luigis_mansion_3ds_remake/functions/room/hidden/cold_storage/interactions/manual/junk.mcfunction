@@ -1,0 +1,3 @@
+execute if block ~ ~ ~ minecraft:packed_ice run tag @s[x=724.0,y=2,z=6.0,dx=3,dy=0,dz=3,tag=check] add can_interact
+execute if block ~ ~ ~ minecraft:packed_ice if entity @s[x=724.0,y=2,z=6.0,dx=3,dy=0,dz=3,tag=sound] run function luigis_mansion:blocks/search_sound/metal
+execute if block ~ ~ ~ minecraft:packed_ice if entity @s[x=724.0,y=2,z=6.0,dx=3,dy=0,dz=3,tag=!sound,tag=!check] run function luigis_mansion_3ds_remake:room/hidden/cold_storage/search/boo_check/junk

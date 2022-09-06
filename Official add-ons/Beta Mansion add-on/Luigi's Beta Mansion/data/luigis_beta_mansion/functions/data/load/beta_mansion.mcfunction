@@ -1,0 +1,1 @@
+data modify storage luigis_beta_mansion:data current_state set from storage luigis_beta_mansion:data saved_state

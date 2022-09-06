@@ -1,0 +1,1 @@
+tag @s[tag=door,tag=burning,distance=..0.7] add extinguish

@@ -1,0 +1,2 @@
+execute if data storage luigis_mansion_3ds_remake:data current_state.trophy.master.found_posters{washroom_2:1b} run scoreboard players add #temp Time 1
+execute if data storage luigis_mansion_3ds_remake:data current_state.trophy.master.found_posters{projection_room:1b} run scoreboard players add #temp Time 1

@@ -1,0 +1,1 @@
+execute if data storage luigis_mansion:data current_state.current_data.obtained_keys{the_twins_room:1b} run scoreboard players set #nanas_room_chest Searched 1

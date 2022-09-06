@@ -1,0 +1,1 @@
+execute positioned ~ ~-1.3 ~ if entity @s[tag=boo,tag=!dead,tag=!appear,distance=..0.7] run function luigis_beta_mansion:items/poltergust_500/effect_on_entity/vacuum/effect/ghost/boo

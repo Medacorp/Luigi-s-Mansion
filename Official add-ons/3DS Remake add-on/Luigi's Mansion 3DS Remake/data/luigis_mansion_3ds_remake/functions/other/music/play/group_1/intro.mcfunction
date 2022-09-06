@@ -1,0 +1,1 @@
+scoreboard players operation @s[scores={Music=0}] PrevMusicType = @s MusicType

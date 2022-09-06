@@ -1,0 +1,1 @@
+scoreboard players reset #butlers_room_hole

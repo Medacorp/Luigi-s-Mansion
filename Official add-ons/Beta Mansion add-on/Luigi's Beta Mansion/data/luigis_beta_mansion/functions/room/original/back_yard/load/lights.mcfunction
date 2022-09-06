@@ -1,0 +1,1 @@
+execute if data storage luigis_mansion:data current_state.current_data.rooms.back_yard{cleared:1b} run function luigis_beta_mansion:room/original/back_yard/turn_on_lights

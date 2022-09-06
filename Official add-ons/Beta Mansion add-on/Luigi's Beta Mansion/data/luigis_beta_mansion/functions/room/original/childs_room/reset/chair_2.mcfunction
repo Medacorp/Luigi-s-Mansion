@@ -1,0 +1,1 @@
+scoreboard players reset #childs_room_chair_2

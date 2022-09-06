@@ -1,0 +1,1 @@
+scoreboard players reset #pipe_room_frozen_barrel

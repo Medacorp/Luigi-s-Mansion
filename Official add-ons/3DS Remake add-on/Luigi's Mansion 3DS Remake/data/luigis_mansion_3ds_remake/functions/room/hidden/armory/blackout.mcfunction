@@ -1,0 +1,1 @@
+scoreboard players set #armory Wave 100

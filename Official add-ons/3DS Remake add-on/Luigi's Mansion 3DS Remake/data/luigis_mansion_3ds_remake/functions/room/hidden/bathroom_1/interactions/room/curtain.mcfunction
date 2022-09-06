@@ -1,0 +1,1 @@
+scoreboard players reset #bathroom_1_curtain Search

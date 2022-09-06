@@ -1,0 +1,1 @@
+execute if entity @a[scores={TrainingOption=4}] run function extensive_training:dialog/training_room/pvp_program

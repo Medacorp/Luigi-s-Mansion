@@ -1,0 +1,86 @@
+Q. Is the map multiplayer compatible?
+A. Absolutely! The map even provides different translation strings based on player count so languages can properly pluralize them.
+
+Q. How do I scan furniture?
+A. 1. Use the Gameboy Horror, and choose the scan furniture option.
+   2. Look at the furniture you want to scan (don't be too close to entities to scan them)
+   3. Use the Gameboy Horror again.
+You cannot scan until you've gotten the Gameboy Horror part installed if you use the 3DS Remake add-on.
+Additionally, there's a map setting (which can be opened via the Gameboy Horror menu) to double-use the Gameboy Horror to go to an option directly, without needing to open chat. This is set to scan by default.
+
+Q. Can I zoom in on the map?
+A. No, this is functionality I haven't added (yet). Only a "focus point" being triggered zooms the map in and out.
+
+Q. How do you deal the most damage to a ghost?
+A. Move away from the ghost quickly and rapidly; just tapping to move backwards should suffice. Don't worry about walls, you'll be kept away from them a little bit so you can still move.
+Do note, that the player doesn't immediately stop moving when letting go of the controls for moving, so keep a LITTLE bit of delay for the best results.
+For Boos, they always get the same damage per second, regardless of what you do, but you can stall their fleeing by stopping the vacuum for a moment, retriggering their panic animation.
+
+Q. Why do the ghosts escape randomly from the Poltergust?
+A. They don't, there's a few reasons they may have escaped: 
+   1. You got (non-pulling) damage.
+   2. You didn't move away from the ghost while vacuuming for a total of 10 times.
+   3. You moved beyond 7 blocks of distance away from the ghost (so it is out of poltergust reach).
+   3. The ghost entered a second flee state which forces an escape after 2.5 seconds.
+
+Q. Can I disregard current data somehow?
+A. Of course, just talk to E. Gadd to load your old data.
+
+Q. How do I make grabbing ghosts let go?
+A. Walk in different directions as quickly as possible. Spooky, harmful grabbing ghosts and being frozen will also decrease in duration when doing this.
+
+Q. I can't find one of the Boos!
+A. Go past every room and see if the Gameboy Horror reacts (remember, Boos can only be found in lit rooms). If no room has the Gameboy Horror reacting, make a bug report and provide the file "data/command_storage_luigis_mansion.dat" so it can be investigated.
+
+Q. I installed the 3DS Remake add-on, but I can't do portrait battles!
+A. The portrait battle list only exists once the add-on is installed, the mansions you defeated the portrait ghost in before you installed it won't save the data for something that doesn't exist.
+
+Q. Why can't I trigger the objective for a choice?
+A. 1. (Dialog) The dialog needs to be active to react, if you stop the dialog, the option will get disabled. 
+   2. (Gameboy Horror) Keep the Gameboy Horror selected, deselecting is an indication for being done with the item.
+   3. (Gallery) You can only react to one gallery object at a time.
+   4. (Gooigi) Gooigi cannot speak, other players will have to react.
+
+Q. Can I turn off the opening of the Gameboy Horror map when collecting a key?
+A. Yes, go to the map settings (via Gameboy Horror) and click the option to change it.
+
+Q. Is this feature missing?
+A. Maybe. If you can see something is definitely missing, feel free to make a bug report.
+
+Q. How did you do this thing?
+A. The entire map and its add-ons are on github, if you wish to understand how I did something, feel free to browse through the functions. If you need further help understanding it, I could explain it if you ask. (Make a discussion topic for this, not a bug report.)
+
+Q. Why is my movement not registering properly?
+A. Rapid teleportation is the only way to pull some things off, but it comes at a cost. This cannot be fixed in the map, and is actually a minecraft bug: https://bugs.mojang.com/browse/MC-197855
+
+Q. Why did my call with E. Gadd end so suddenly?
+A. You hang up on E. Gadd if you deselect the Gameboy Horror. The first person to grab the Gameboy Horror is the only one who can hang up.
+
+Q. Why does the vanilla training room program mention rapidly moving backwards, but the 3DS Remake one not?
+A. The corresponding line in the game ("Tilt the Control Stick in the opposite direction quickly and repeatedly for the best results!") doesn't exist in a similar fashion in the 3DS Remake.
+
+Q. Why doesn't the room clear? No ghost is appearing.
+A. 1. You may need to figure out a puzzle before the ghosts appear.
+   2. It may be you're standing in the exact spot the ghost wants to appear in, making you prevent its appearing.
+   3. Make sure to be close to and have your back to every place at least twice, ghosts move around the room a few seconds after they vanish.
+
+Q. Why are the rooms so high? 
+A. The rooms are horizontally a bit bigger than in the original game, compared to Luigi; the rooms were made taller to make it not look as stretched.
+
+Q. Where did the mansion go?
+A. As E. Gadd tells you, it vanished in the night. If you wish to enter the mansion, talk to E. Gadd in the lab again.
+
+Q. I got lost in the Boo Woods!
+A. ... Not very clever... The Boo woods are generated automatically in new chunks. They're endless. To find your way back, head to X=770 Z=8 to find the mansion's front gate.
+
+Q. How do I unlock amiibos from the 3DS Remake and other add-ons?
+A. The amiibos are unlocked as you clear the trophy tasks.
+
+Q. Where's the chef ghost in the original mansion?
+A. He's not added; nothing is known for sure about him, except his visuals from one grainy image. Everything else is speculation or theories. There's simply not enough known to add him.
+
+Q. How can I catch Spooky and Miss. Petunia in the original mansion.
+A. You don't, they never show their hearts.
+
+Q. The trailer shows the player sneaking while catching a ghost, why?
+A. Prior to v2.0, the rapid damage was done by switching between sneaking and standing, rather than rapidly moving back and stopping.

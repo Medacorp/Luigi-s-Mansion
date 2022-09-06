@@ -1,0 +1,2 @@
+summon minecraft:item_frame 695 30 -60 {Facing:5b,Silent:1b,Invulnerable:1b,Item:{id:"minecraft:filled_map",Count:1b,tag:{map:91}},CustomName:'{"translate":"luigis_mansion:entity.painting"}',Invisible:1b,Fixed:1b}
+execute if data storage luigis_mansion:data current_state.current_data.rooms.the_artists_studio{cleared:1b} run data modify entity @e[x=695.5,y=30,z=-59.5,distance=..0.7,limit=1] Item.tag.map set value 90

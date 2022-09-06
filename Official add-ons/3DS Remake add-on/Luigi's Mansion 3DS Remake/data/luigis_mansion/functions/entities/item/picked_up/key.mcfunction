@@ -1,0 +1,3 @@
+execute positioned ~ ~0.1 ~ if entity @e[tag=same_room,tag=!spectator,distance=..0.8,limit=1,tag=gooigi] run tag @s[tag=key,tag=!display] remove picked_up
+execute positioned ~ ~0.1 ~ if entity @e[tag=same_room,tag=!spectator,distance=..0.8,limit=1,scores={Shrunk=1..}] run tag @s[tag=key,tag=!display] remove picked_up
+execute if entity @s[tag=key,tag=!display,tag=picked_up] run function #luigis_mansion:items/key

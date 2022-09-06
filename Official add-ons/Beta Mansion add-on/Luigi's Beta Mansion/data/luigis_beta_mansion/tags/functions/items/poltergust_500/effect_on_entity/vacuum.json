@@ -1,0 +1,12 @@
+{
+	"values": [
+		"luigis_beta_mansion:items/poltergust_500/effect_on_entity/vacuum/item",
+        "luigis_beta_mansion:items/poltergust_500/effect_on_entity/vacuum/ball",
+        "luigis_beta_mansion:items/poltergust_500/effect_on_entity/vacuum/rocking_horse",
+        "luigis_beta_mansion:items/poltergust_500/effect_on_entity/vacuum/ghost",
+        "luigis_beta_mansion:items/poltergust_500/effect_on_entity/vacuum/banana_peel",
+        "luigis_beta_mansion:items/poltergust_500/effect_on_entity/vacuum/vacuumable_object",
+        "luigis_beta_mansion:items/poltergust_500/effect_on_entity/vacuum/door",
+        "luigis_beta_mansion:items/poltergust_500/effect_on_entity/vacuum/cobweb"
+	]
+}

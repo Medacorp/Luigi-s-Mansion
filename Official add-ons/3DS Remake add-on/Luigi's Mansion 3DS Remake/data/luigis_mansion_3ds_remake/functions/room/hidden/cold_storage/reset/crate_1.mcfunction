@@ -1,0 +1,1 @@
+scoreboard players reset #cold_storage_crate_1

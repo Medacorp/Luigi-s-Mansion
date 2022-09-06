@@ -1,0 +1,1 @@
+tellraw @s {"translate":"luigis_mansion_3ds_remake:message.flashlight_type.strobulb","color":"green","clickEvent":{"action":"run_command","value":"/trigger FlashlightType set -4"}}

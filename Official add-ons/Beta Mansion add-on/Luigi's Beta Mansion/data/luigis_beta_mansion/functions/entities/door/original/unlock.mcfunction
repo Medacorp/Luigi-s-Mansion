@@ -1,0 +1,3 @@
+execute if entity @s[tag=hallway_1_living_room] run data modify storage luigis_mansion:data current_state.current_data.used_keys append value "living_room"
+execute if entity @s[tag=hallway_1_hallway_2] run data modify storage luigis_mansion:data current_state.current_data.used_keys append value "hallway_2"
+execute if entity @s[tag=entrance_hallway_3] run data modify storage luigis_mansion:data current_state.current_data.used_keys append value "hallway_3"

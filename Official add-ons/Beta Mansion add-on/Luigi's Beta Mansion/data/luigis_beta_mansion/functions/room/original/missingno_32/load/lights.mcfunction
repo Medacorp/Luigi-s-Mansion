@@ -1,0 +1,1 @@
+execute if data storage luigis_mansion:data current_state.current_data.rooms.missingno_32{cleared:1b} run function luigis_beta_mansion:room/original/missingno_32/turn_on_lights

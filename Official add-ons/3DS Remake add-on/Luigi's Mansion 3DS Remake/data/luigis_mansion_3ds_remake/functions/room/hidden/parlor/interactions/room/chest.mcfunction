@@ -1,0 +1,1 @@
+execute if block 718 20 27 minecraft:trapped_chest unless block 718 20 27 minecraft:trapped_chest{LootTable:"luigis_mansion:search"} run function luigis_mansion_3ds_remake:room/hidden/parlor/search/chest

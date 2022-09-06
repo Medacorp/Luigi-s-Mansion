@@ -1,0 +1,1 @@
+scoreboard players reset #guest_room_chair

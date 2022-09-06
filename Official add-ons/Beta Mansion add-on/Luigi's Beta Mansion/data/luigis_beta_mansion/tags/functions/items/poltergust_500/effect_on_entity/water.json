@@ -1,0 +1,17 @@
+{
+	"values": [
+        "luigis_beta_mansion:items/poltergust_500/effect_on_entity/water/ball",
+        "luigis_beta_mansion:items/poltergust_500/effect_on_entity/water/big_ball",
+        "luigis_beta_mansion:items/poltergust_500/effect_on_entity/water/haunted_object",
+        "luigis_beta_mansion:items/poltergust_500/effect_on_entity/water/spark",
+        "luigis_beta_mansion:items/poltergust_500/effect_on_entity/water/sue_pea",
+        "luigis_beta_mansion:items/poltergust_500/effect_on_entity/water/bat",
+        "luigis_beta_mansion:items/poltergust_500/effect_on_entity/water/mouse",
+        "luigis_beta_mansion:items/poltergust_500/effect_on_entity/water/flying_fish",
+        "luigis_beta_mansion:items/poltergust_500/effect_on_entity/water/ghost",
+        "luigis_beta_mansion:items/poltergust_500/effect_on_entity/water/spike_ball",
+        "luigis_beta_mansion:items/poltergust_500/effect_on_entity/water/bomb",
+        "luigis_beta_mansion:items/poltergust_500/effect_on_entity/water/door",
+        "luigis_beta_mansion:items/poltergust_500/effect_on_entity/water/burning_floor"
+	]
+}

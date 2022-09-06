@@ -1,0 +1,21 @@
+{
+    "values": [
+        "luigis_beta_mansion:room/original/hallway_3/reset/unload",
+        "#luigis_beta_mansion:room/original/hallway_3/turn_lights/off",
+        "luigis_beta_mansion:room/original/hallway_3/reset/candle_1",
+        "luigis_beta_mansion:room/original/hallway_3/reset/candle_2",
+        "luigis_beta_mansion:room/original/hallway_3/reset/candle_3",
+        "luigis_beta_mansion:room/original/hallway_3/reset/candle_4",
+        "luigis_beta_mansion:room/original/hallway_3/reset/candle_5",
+        "luigis_beta_mansion:room/original/hallway_3/reset/candle_6",
+        "luigis_beta_mansion:room/original/hallway_3/reset/candle_7",
+        "luigis_beta_mansion:room/original/hallway_3/reset/candle_8",
+        "luigis_beta_mansion:room/original/hallway_3/reset/candle_9",
+        "luigis_beta_mansion:room/original/hallway_3/reset/jar_1",
+        "luigis_beta_mansion:room/original/hallway_3/reset/jar_2",
+        "luigis_beta_mansion:room/original/hallway_3/reset/jar_3",
+        "luigis_beta_mansion:room/original/hallway_3/reset/jar_4",
+        "luigis_beta_mansion:room/original/hallway_3/reset/lamp_1",
+        "luigis_beta_mansion:room/original/hallway_3/reset/lamp_2"
+    ]
+}

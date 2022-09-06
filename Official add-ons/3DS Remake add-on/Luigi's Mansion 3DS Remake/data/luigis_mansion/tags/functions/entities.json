@@ -1,0 +1,9 @@
+{
+	"values": [
+		"luigis_mansion_3ds_remake:entities/gameboy_horror_boo",
+		"luigis_mansion_3ds_remake:entities/gooigi",
+        "luigis_mansion_3ds_remake:entities/polterpup",
+		"luigis_mansion_3ds_remake:entities/weak_flashlight",
+		"luigis_mansion_3ds_remake:entities/change_boo_models"
+	]
+}

@@ -1,0 +1,19 @@
+summon minecraft:armor_stand ~ ~ ~ {NoGravity:1b,Invisible:1b,Marker:1b,Tags:["source","gooigi_model","new","model_piece","found_owner"],CustomName:'{"translate":"luigis_mansion_3ds_remake:entity.gooigi"}'}
+summon minecraft:armor_stand ~ ~ ~ {NoGravity:1b,Invisible:1b,Marker:1b,Tags:["head","gooigi_model","model_piece","new","found_owner"],CustomName:'{"translate":"luigis_mansion_3ds_remake:entity.gooigi"}',ArmorItems:[{},{},{},{id:"minecraft:diamond_pickaxe",Count:1b,tag:{Unbreakable:1b,Damage:1,CustomModelData:147}}]}
+summon minecraft:armor_stand ~ ~ ~ {NoGravity:1b,Invisible:1b,Marker:1b,Tags:["chest","gooigi_model","new","model_piece","found_owner"],CustomName:'{"translate":"luigis_mansion_3ds_remake:entity.gooigi"}',ArmorItems:[{},{},{},{id:"minecraft:diamond_pickaxe",Count:1b,tag:{Unbreakable:1b,Damage:1,CustomModelData:148}}]}
+summon minecraft:armor_stand ~ ~ ~ {NoGravity:1b,Invisible:1b,Marker:1b,Tags:["right_arm","gooigi_model","new","model_piece","found_owner"],CustomName:'{"translate":"luigis_mansion_3ds_remake:entity.gooigi"}',ArmorItems:[{},{},{},{id:"minecraft:diamond_pickaxe",Count:1b,tag:{Unbreakable:1b,Damage:2,CustomModelData:147}}]}
+summon minecraft:armor_stand ~ ~ ~ {NoGravity:1b,Invisible:1b,Marker:1b,Tags:["left_arm","gooigi_model","new","model_piece","found_owner"],CustomName:'{"translate":"luigis_mansion_3ds_remake:entity.gooigi"}',ArmorItems:[{},{},{},{id:"minecraft:diamond_pickaxe",Count:1b,tag:{Unbreakable:1b,Damage:3,CustomModelData:147}}]}
+summon minecraft:armor_stand ~ ~ ~ {NoGravity:1b,Invisible:1b,Marker:1b,Tags:["right_arm","held_item","gooigi_model","new","model_piece","found_owner"],CustomName:'{"translate":"luigis_mansion_3ds_remake:entity.gooigi"}'}
+summon minecraft:armor_stand ~ ~ ~ {NoGravity:1b,Invisible:1b,Marker:1b,Tags:["left_arm","held_item","gooigi_model","new","model_piece","found_owner"],CustomName:'{"translate":"luigis_mansion_3ds_remake:entity.gooigi"}'}
+summon minecraft:armor_stand ~ ~ ~ {NoGravity:1b,Invisible:1b,Marker:1b,Tags:["right_leg","gooigi_model","new","model_piece","found_owner"],CustomName:'{"translate":"luigis_mansion_3ds_remake:entity.gooigi"}',ArmorItems:[{},{},{},{id:"minecraft:diamond_pickaxe",Count:1b,tag:{Unbreakable:1b,Damage:2,CustomModelData:148}}]}
+summon minecraft:armor_stand ~ ~ ~ {NoGravity:1b,Invisible:1b,Marker:1b,Tags:["left_leg","gooigi_model","new","model_piece","found_owner"],CustomName:'{"translate":"luigis_mansion_3ds_remake:entity.gooigi"}',ArmorItems:[{},{},{},{id:"minecraft:diamond_pickaxe",Count:1b,tag:{Unbreakable:1b,Damage:3,CustomModelData:148}}]}
+summon minecraft:armor_stand ~ ~ ~ {NoGravity:1b,Invisible:1b,Marker:1b,Tags:["poltergust_body","gooigi_model","model_piece","new","found_owner"],CustomName:'{"translate":"luigis_mansion_3ds_remake:entity.gooigi"}',ArmorItems:[{},{},{},{}]}
+loot spawn ~ ~ ~ loot luigis_mansion:gameplay/get_player_name
+execute in minecraft:overworld run setblock 27 0 0 minecraft:oak_sign{Text1:'{"entity":"@e[type=minecraft:item,nbt={Item:{id:\\"minecraft:player_head\\"}},limit=1]","nbt":"Item.tag.SkullOwner.Name"}'}
+execute in minecraft:overworld run data modify entity @e[tag=gooigi_model,tag=source,tag=new,limit=1] CustomName set from block 27 0 0 Text1
+execute in minecraft:overworld run setblock 27 0 0 minecraft:bedrock
+kill @e[distance=..0.1,type=minecraft:item,limit=1]
+execute if score #global_player_names Selected matches 0 run data merge entity @e[tag=gooigi_model,tag=source,tag=new,limit=1] {CustomNameVisible:0b}
+execute if score #global_player_names Selected matches 1 run data merge entity @e[tag=gooigi_model,tag=source,tag=new,limit=1] {CustomNameVisible:1b}
+tag @e[tag=gooigi_model,tag=new] remove new
+tag @s add spawn_animation

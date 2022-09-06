@@ -1,0 +1,1 @@
+execute if entity @s[tag=boolldog] run function luigis_mansion_3ds_remake:spawn_entities/boo/boolldog

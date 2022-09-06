@@ -1,0 +1,3 @@
+execute positioned 737.0 3 -57.0 run function luigis_mansion:blocks/dust
+scoreboard players set #cellar_box_2 Searched 1
+tag @e[x=737.5,y=3,z=-57.5,distance=..0.7,tag=ghost,tag=hidden] add spawn

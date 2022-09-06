@@ -1,0 +1,24 @@
+execute if entity @s[scores={SelectedFrame=1}] run function luigis_mansion_3ds_remake:room/gallery/portrait_battle/get_results/biff_atlas
+execute if entity @s[scores={SelectedFrame=2}] run function luigis_mansion_3ds_remake:room/gallery/portrait_battle/get_results/neville
+execute if entity @s[scores={SelectedFrame=3}] run function luigis_mansion_3ds_remake:room/gallery/portrait_battle/get_results/chauncey
+execute if entity @s[scores={SelectedFrame=4}] run function luigis_mansion_3ds_remake:room/gallery/portrait_battle/get_results/clockwork_soldiers
+execute if entity @s[scores={SelectedFrame=5}] run function luigis_mansion_3ds_remake:room/gallery/portrait_battle/get_results/miss_petunia
+execute if entity @s[scores={SelectedFrame=6}] run function luigis_mansion_3ds_remake:room/gallery/portrait_battle/get_results/lydia
+execute if entity @s[scores={SelectedFrame=7}] run function luigis_mansion_3ds_remake:room/gallery/portrait_battle/get_results/bogmire
+execute if entity @s[scores={SelectedFrame=8}] run function luigis_mansion_3ds_remake:room/gallery/portrait_battle/get_results/sue_pea
+execute if entity @s[scores={SelectedFrame=9}] run function luigis_mansion_3ds_remake:room/gallery/portrait_battle/get_results/nana
+execute if entity @s[scores={SelectedFrame=10}] run function luigis_mansion_3ds_remake:room/gallery/portrait_battle/get_results/floating_whirlindas
+execute if entity @s[scores={SelectedFrame=11}] run function luigis_mansion_3ds_remake:room/gallery/portrait_battle/get_results/king_boo
+execute if entity @s[scores={SelectedFrame=12}] run function luigis_mansion_3ds_remake:room/gallery/portrait_battle/get_results/jarvis
+execute if entity @s[scores={SelectedFrame=13}] run function luigis_mansion_3ds_remake:room/gallery/portrait_battle/get_results/slim_bankshot
+execute if entity @s[scores={SelectedFrame=14}] run function luigis_mansion_3ds_remake:room/gallery/portrait_battle/get_results/shivers
+execute if entity @s[scores={SelectedFrame=15}] run function luigis_mansion_3ds_remake:room/gallery/portrait_battle/get_results/sir_weston
+execute if entity @s[scores={SelectedFrame=16}] run function luigis_mansion_3ds_remake:room/gallery/portrait_battle/get_results/henry_and_orville
+execute if entity @s[scores={SelectedFrame=17}] run function luigis_mansion_3ds_remake:room/gallery/portrait_battle/get_results/melody_pianissima
+execute if entity @s[scores={SelectedFrame=18}] run function luigis_mansion_3ds_remake:room/gallery/portrait_battle/get_results/vincent_van_gore
+execute if entity @s[scores={SelectedFrame=19}] run function luigis_mansion_3ds_remake:room/gallery/portrait_battle/get_results/madame_clairvoya
+execute if entity @s[scores={SelectedFrame=20}] run function luigis_mansion_3ds_remake:room/gallery/portrait_battle/get_results/mr_luggs
+execute if entity @s[scores={SelectedFrame=21}] run function luigis_mansion_3ds_remake:room/gallery/portrait_battle/get_results/boolossus
+execute if entity @s[scores={SelectedFrame=22}] run function luigis_mansion_3ds_remake:room/gallery/portrait_battle/get_results/uncle_grimmly
+execute if entity @s[scores={SelectedFrame=23}] run function luigis_mansion_3ds_remake:room/gallery/portrait_battle/get_results/spooky
+function luigis_mansion_3ds_remake:room/gallery/portrait_battle/return

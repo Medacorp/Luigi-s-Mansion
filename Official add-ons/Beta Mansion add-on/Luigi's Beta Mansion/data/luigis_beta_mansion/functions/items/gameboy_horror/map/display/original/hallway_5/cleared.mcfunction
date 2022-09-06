@@ -1,0 +1,1 @@
+fill 3666 60 -16 3670 60 23 minecraft:white_concrete

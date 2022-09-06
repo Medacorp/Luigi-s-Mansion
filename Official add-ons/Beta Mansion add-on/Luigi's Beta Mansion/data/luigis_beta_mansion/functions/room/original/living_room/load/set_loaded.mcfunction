@@ -1,0 +1,1 @@
+scoreboard players set #living_room Ticking 1

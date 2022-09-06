@@ -1,0 +1,1 @@
+execute positioned ~ ~-1.3 ~ positioned as @s[tag=vacuumable_object,distance=..1.4,tag=vacuumable] run function luigis_mansion:entities/vacuumable_object/pull

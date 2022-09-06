@@ -1,0 +1,1 @@
+execute positioned 742 21 -29 run function luigis_mansion:spawn_entities/ghost/fire_elemental_source

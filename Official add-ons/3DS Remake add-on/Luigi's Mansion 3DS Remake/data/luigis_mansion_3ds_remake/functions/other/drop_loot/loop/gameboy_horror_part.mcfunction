@@ -1,0 +1,1 @@
+execute unless entity @e[tag=gameboy_horror_part,limit=1] unless data storage luigis_mansion_3ds_remake:data {obtained_gameboy_horror_part:1b} run function luigis_mansion_3ds_remake:spawn_entities/item/gameboy_horror_part

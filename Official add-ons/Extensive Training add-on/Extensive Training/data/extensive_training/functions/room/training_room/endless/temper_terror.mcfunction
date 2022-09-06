@@ -1,0 +1,3 @@
+execute if entity @e[type=minecraft:marker,tag=selected,tag=temper_terror,limit=1] run function extensive_training:room/training_room/spawn/temper_terror
+execute if entity @e[type=minecraft:marker,tag=selected,tag=temper_terror,limit=1] run function extensive_training:room/gallery/clear_task/task_6
+execute unless entity @e[type=minecraft:marker,tag=selected,limit=1] if score #training_room Wave matches 50.. run summon minecraft:marker ~ ~ ~ {Tags:["select_ghost","temper_terror"]}

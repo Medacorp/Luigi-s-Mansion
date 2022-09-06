@@ -1,0 +1,2 @@
+tag @s add normal_death
+function luigis_beta_mansion:items/poltergust_500/latch_onto_ghost

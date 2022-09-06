@@ -1,0 +1,1 @@
+execute if entity @s[tag=gameboy_horror_part] run playsound luigis_mansion_3ds_remake:item.gameboy_horror_part.bounce player @a[tag=same_room] ~ ~ ~ 1

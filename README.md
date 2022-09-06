@@ -1,4 +1,4 @@
-To receive development build updates, pull from https://github.com/Medacorp/Luigi-s-Mansion into the "`Luigi's Mansion`" world folder.
+To receive development build updates, pull from https://github.com/Medacorp/Luigi-s-Mansion into the extracted download folder.
 
 Before you pull, you need to disregard all your changes. Doing this without preparation may cause "damage" to your world.
 To have no lasting "damage" on your world, follow these steps before disregarding changes:
@@ -11,10 +11,6 @@ To have no lasting "damage" on your world, follow these steps before disregardin
 
 # Official add-ons
 When making your own, consider supporting these, as players may install them as well.
-
-* [Luigi's Mansion 3DS Remake](https://github.com/Medacorp/Luigi-s-Mansion-3DS-Remake)
-* [Luigi's Beta Mansion](https://github.com/Medacorp/Luigi-s-Beta-Mansion)
-* [Extensive Training](https://github.com/Medacorp/Extensive-Training)
 
 # Variables of interest
 

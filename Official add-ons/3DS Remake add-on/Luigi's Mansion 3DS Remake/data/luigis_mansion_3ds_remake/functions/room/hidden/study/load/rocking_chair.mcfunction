@@ -1,0 +1,1 @@
+execute positioned 709.0 20 57.0 rotated -125 0 run function luigis_mansion:spawn_furniture/rocking_chair

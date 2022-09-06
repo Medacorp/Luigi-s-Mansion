@@ -1,0 +1,1 @@
+data modify storage luigis_mansion:data current_state.current_data.portrait_ghosts.spooky.rank set value 0b

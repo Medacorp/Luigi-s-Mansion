@@ -1,0 +1,10 @@
+{
+    "values": [
+        "luigis_beta_mansion:room/original/hallway_1/reset/unload",
+        "#luigis_beta_mansion:room/original/hallway_1/turn_lights/off",
+        "luigis_beta_mansion:room/original/hallway_1/reset/candle_1",
+        "luigis_beta_mansion:room/original/hallway_1/reset/candle_2",
+        "luigis_beta_mansion:room/original/hallway_1/reset/jar_1",
+        "luigis_beta_mansion:room/original/hallway_1/reset/jar_2"
+    ]
+}

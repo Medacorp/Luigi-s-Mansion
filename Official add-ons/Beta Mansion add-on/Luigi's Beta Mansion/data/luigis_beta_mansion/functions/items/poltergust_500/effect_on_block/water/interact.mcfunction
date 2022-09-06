@@ -1,0 +1,1 @@
+execute unless block ~ ~ ~ minecraft:air as @e[tag=interact,limit=1] run function luigis_beta_mansion:items/poltergust_500/interact

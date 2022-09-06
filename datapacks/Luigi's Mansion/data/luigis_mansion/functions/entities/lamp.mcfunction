@@ -1,1 +1,0 @@
-execute if entity @s[tag=lamp] run function luigis_mansion:entities/lamp/tick

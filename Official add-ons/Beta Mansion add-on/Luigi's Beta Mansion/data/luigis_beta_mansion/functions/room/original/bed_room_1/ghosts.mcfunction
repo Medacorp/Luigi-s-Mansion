@@ -1,0 +1,3 @@
+execute if score #bed_room_1 Wave matches 2 unless entity @e[tag=ghost,scores={Room=6},tag=!optional_ghost] run function luigis_beta_mansion:room/original/bed_room_1/clear
+execute if score #bed_room_1 Wave matches 1 unless entity @e[tag=ghost,scores={Room=6},tag=!optional_ghost,tag=!lydia] run function luigis_beta_mansion:room/original/bed_room_1/wave_2
+execute unless data storage luigis_mansion:data current_state.current_data.rooms.bed_room_1{cleared:1b} unless score #bed_room_1 Wave matches 1.. run function luigis_beta_mansion:room/original/bed_room_1/wave_1

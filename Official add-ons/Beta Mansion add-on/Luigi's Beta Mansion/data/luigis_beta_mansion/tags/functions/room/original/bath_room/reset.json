@@ -1,0 +1,10 @@
+{
+    "values": [
+        "luigis_beta_mansion:room/original/bath_room/reset/unload",
+        "#luigis_beta_mansion:room/original/bath_room/turn_lights/off",
+        "luigis_beta_mansion:room/original/bath_room/reset/bathtub",
+        "luigis_beta_mansion:room/original/bath_room/reset/curtain",
+        "luigis_beta_mansion:room/original/bath_room/reset/lamp",
+        "luigis_beta_mansion:room/original/bath_room/reset/mirror"
+    ]
+}

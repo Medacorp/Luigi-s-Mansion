@@ -1,0 +1,7 @@
+{
+	"values": [
+        "luigis_mansion:other/music/cannot_overwrite/non_overwritten_silence",
+        "luigis_beta_mansion:other/music/cannot_overwrite/lab",
+        { "id": "luigis_mansion_3ds_remake:other/music/cannot_overwrite/future_e_gadd", "required": false }
+	]
+}

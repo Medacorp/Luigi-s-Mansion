@@ -1,0 +1,1 @@
+scoreboard players reset #sealed_room_trophy_3

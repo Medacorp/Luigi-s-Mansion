@@ -1,0 +1,1 @@
+function luigis_mansion:entities/boolossus/tick/fight/normal/merged

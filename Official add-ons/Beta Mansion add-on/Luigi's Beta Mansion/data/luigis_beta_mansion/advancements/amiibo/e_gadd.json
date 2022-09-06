@@ -1,0 +1,20 @@
+{
+    "display": {
+        "icon": {
+            "item": "minecraft:carrot_on_a_stick",
+			"nbt": "{Unbreakable:1b,Damage:1,CustomModelData:0}"
+        },
+        "title": {
+            "translate": "luigis_beta_mansion:advancements.amiibo.e_gadd"
+        },
+        "description": {
+            "translate": "luigis_beta_mansion:dialog.underground_lab.change_amiibo.e_gadd.hover"
+        }
+    },
+	"parent": "luigis_mansion_3ds_remake:amiibo/root",
+    "criteria": {
+        "obtained": {
+            "trigger": "minecraft:impossible"
+        }
+    }
+}

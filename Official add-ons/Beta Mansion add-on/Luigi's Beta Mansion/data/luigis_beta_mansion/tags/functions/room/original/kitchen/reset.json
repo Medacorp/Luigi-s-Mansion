@@ -1,0 +1,22 @@
+{
+    "values": [
+        "luigis_beta_mansion:room/original/kitchen/reset/unload",
+        "#luigis_beta_mansion:room/original/kitchen/turn_lights/off",
+        "luigis_beta_mansion:room/original/kitchen/reset/chest",
+        "luigis_beta_mansion:room/original/kitchen/reset/closet",
+        "luigis_beta_mansion:room/original/kitchen/reset/dish_washer",
+        "luigis_beta_mansion:room/original/kitchen/reset/fridge",
+        "luigis_beta_mansion:room/original/kitchen/reset/oven",
+        "luigis_beta_mansion:room/original/kitchen/reset/lamp_1",
+        "luigis_beta_mansion:room/original/kitchen/reset/lamp_2",
+        "luigis_beta_mansion:room/original/kitchen/reset/painting_1",
+        "luigis_beta_mansion:room/original/kitchen/reset/painting_2",
+        "luigis_beta_mansion:room/original/kitchen/reset/shelf_1",
+        "luigis_beta_mansion:room/original/kitchen/reset/shelf_2",
+        "luigis_beta_mansion:room/original/kitchen/reset/shelf_3",
+        "luigis_beta_mansion:room/original/kitchen/reset/shelf_4",
+        "luigis_beta_mansion:room/original/kitchen/reset/shelf_5",
+        "luigis_beta_mansion:room/original/kitchen/reset/table",
+        "luigis_beta_mansion:room/original/kitchen/reset/tool_rack"
+    ]
+}

@@ -1,0 +1,10 @@
+{
+	"values": [
+        "luigis_mansion:other/music/cannot_overwrite/non_overwritten_silence",
+        "luigis_beta_mansion:other/music/cannot_overwrite/light",
+        "luigis_mansion:other/music/cannot_overwrite/catching_ghost",
+        "luigis_mansion:other/music/cannot_overwrite/catching_portrait_ghost",
+        "luigis_mansion:other/music/cannot_overwrite/gameboy_horror",
+        "luigis_mansion:other/music/cannot_overwrite/gameboy_horror_calling"
+	]
+}

@@ -1,0 +1,1 @@
+execute if entity @a[tag=meet_e_gadd,limit=1] unless entity @e[tag=ghost,tag=same_room,limit=1] run tag @s[scores={Room=3}] add cold_room

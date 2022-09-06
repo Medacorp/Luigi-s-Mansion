@@ -1,0 +1,1 @@
+function luigis_mansion:dialog/blackout/lightning/particles_normal

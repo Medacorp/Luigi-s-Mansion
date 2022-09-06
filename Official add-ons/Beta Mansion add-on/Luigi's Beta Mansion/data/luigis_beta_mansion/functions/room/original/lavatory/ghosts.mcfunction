@@ -1,0 +1,2 @@
+execute if score #lavatory Wave matches 1 unless entity @e[tag=ghost,scores={Room=13},tag=!optional_ghost] run function luigis_beta_mansion:room/original/lavatory/clear
+execute unless data storage luigis_mansion:data current_state.current_data.rooms.lavatory{cleared:1b} unless score #lavatory Wave matches 1.. run function luigis_beta_mansion:room/original/lavatory/wave_1

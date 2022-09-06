@@ -1,0 +1,1 @@
+scoreboard players reset #study_bookshelf_2
