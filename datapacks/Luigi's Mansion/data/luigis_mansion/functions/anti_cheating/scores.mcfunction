@@ -158,6 +158,7 @@ scoreboard objectives add ScareType dummy
 scoreboard objectives add ScareTime dummy
 scoreboard objectives add Search dummy
 scoreboard objectives add Searched dummy
+scoreboard objectives add SearcherID dummy
 scoreboard objectives add Searching dummy
 scoreboard objectives add SecondFleeDamage dummy
 scoreboard objectives add SecondFleeState dummy
