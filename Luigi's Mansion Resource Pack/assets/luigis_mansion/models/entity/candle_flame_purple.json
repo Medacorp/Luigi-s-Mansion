@@ -1,0 +1,6 @@
+{
+	"parent": "luigis_mansion:entity/candle_flame",
+	"textures": {
+		"0": "luigis_mansion:block/candle_flame_purple"
+	}
+}

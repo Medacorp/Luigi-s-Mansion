@@ -1,0 +1,39 @@
+{
+	"credit": "Made with Blockbench",
+	"textures": {
+		"0": "luigis_mansion:block/fan",
+		"particle": "luigis_mansion:block/fan"
+	},
+	"elements": [
+		{
+			"from": [10, 8, 5],
+			"to": [28, 9, 11],
+			"rotation": {"angle": 22.5, "axis": "x", "origin": [21, 8.5, 8]},
+			"faces": {
+				"north": {"uv": [0, 3, 11, 3.5], "texture": "#0"},
+				"east": {"uv": [11, 3, 14, 3.5], "texture": "#0"},
+				"south": {"uv": [0, 6.5, 11, 7], "texture": "#0"},
+				"west": {"uv": [11, 6.5, 14, 7], "texture": "#0"},
+				"up": {"uv": [0, 0, 11, 3], "texture": "#0"},
+				"down": {"uv": [0, 3.5, 11, 6.5], "texture": "#0"}
+			}
+		}
+	],
+	"display": {
+		"thirdperson_righthand": {
+			"rotation": [90, 30, 0],
+			"translation": [-6, -2, 10.5],
+			"scale": [2.5, 2.5, 2.5]
+		},
+		"thirdperson_lefthand": {
+			"rotation": [90, -150, 0],
+			"translation": [-6, -2, 10.5],
+			"scale": [2.5, 2.5, 2.5]
+		},
+		"head": {
+			"rotation": [0, -90, 0],
+			"translation": [0, -7.25, 0],
+			"scale": [4, 4, 4]
+		}
+	}
+}
