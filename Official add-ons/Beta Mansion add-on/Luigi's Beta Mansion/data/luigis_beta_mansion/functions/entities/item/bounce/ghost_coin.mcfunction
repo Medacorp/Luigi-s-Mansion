@@ -1,0 +1,1 @@
+execute if entity @s[tag=ghost_coin] run playsound luigis_beta_mansion:item.ghost_coin.bounce player @a[tag=same_room] ~ ~ ~ 1

@@ -1,0 +1,2 @@
+execute as @e[distance=..3,tag=!model_piece,tag=!hidden,tag=!item,tag=!no_poltergust_interaction] run function #luigis_beta_mansion:items/poltergust_500/effect_on_entity/water
+function #luigis_beta_mansion:items/poltergust_500/effect_on_block/water

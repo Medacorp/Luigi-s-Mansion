@@ -1,0 +1,27 @@
+{
+    "values": [
+        "luigis_beta_mansion:room/original/living_room/reset/unload",
+        "#luigis_beta_mansion:room/original/living_room/turn_lights/off",
+        "luigis_beta_mansion:room/original/living_room/reset/candle_1",
+        "luigis_beta_mansion:room/original/living_room/reset/candle_2",
+        "luigis_beta_mansion:room/original/living_room/reset/candle_3",
+        "luigis_beta_mansion:room/original/living_room/reset/chair_1",
+        "luigis_beta_mansion:room/original/living_room/reset/chair_2",
+        "luigis_beta_mansion:room/original/living_room/reset/chair_3",
+        "luigis_beta_mansion:room/original/living_room/reset/chest",
+        "luigis_beta_mansion:room/original/living_room/reset/closet",
+        "luigis_beta_mansion:room/original/living_room/reset/couch",
+        "luigis_beta_mansion:room/original/living_room/reset/lamp",
+        "luigis_beta_mansion:room/original/living_room/reset/painting_1",
+        "luigis_beta_mansion:room/original/living_room/reset/painting_2",
+        "luigis_beta_mansion:room/original/living_room/reset/painting_3",
+        "luigis_beta_mansion:room/original/living_room/reset/painting_4",
+        "luigis_beta_mansion:room/original/living_room/reset/painting_5",
+        "luigis_beta_mansion:room/original/living_room/reset/painting_6",
+        "luigis_beta_mansion:room/original/living_room/reset/painting_7",
+        "luigis_beta_mansion:room/original/living_room/reset/table_1",
+        "luigis_beta_mansion:room/original/living_room/reset/table_2",
+        "luigis_beta_mansion:room/original/living_room/reset/table_3",
+        "luigis_beta_mansion:room/original/living_room/reset/table_4"
+    ]
+}

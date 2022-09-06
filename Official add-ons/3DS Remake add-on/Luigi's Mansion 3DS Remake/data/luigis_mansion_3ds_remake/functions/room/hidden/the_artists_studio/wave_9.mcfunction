@@ -1,0 +1,1 @@
+scoreboard players set #the_artists_studio Wave 9

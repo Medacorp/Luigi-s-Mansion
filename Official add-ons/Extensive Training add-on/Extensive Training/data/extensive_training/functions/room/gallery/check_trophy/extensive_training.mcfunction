@@ -1,0 +1,1 @@
+tellraw @p[tag=!spectator] {"translate":"extensive_training:message.gallery.trophy.extensive_training","color":"green","clickEvent":{"action":"run_command","value":"/trigger FrameChoice set 7"}}

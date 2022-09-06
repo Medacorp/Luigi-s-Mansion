@@ -1,0 +1,1 @@
+tellraw @s {"translate":"extensive_training:message.training_type.speedrun","color":"green","clickEvent":{"action":"run_command","value":"/trigger TrainingOption set 3"}}

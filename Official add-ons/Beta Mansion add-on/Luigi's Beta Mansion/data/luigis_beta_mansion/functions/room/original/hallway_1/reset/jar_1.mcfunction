@@ -1,0 +1,1 @@
+scoreboard players reset #hallway_1_jar_1

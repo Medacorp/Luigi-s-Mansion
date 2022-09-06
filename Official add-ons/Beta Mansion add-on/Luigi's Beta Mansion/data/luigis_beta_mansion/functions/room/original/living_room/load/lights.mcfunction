@@ -1,0 +1,1 @@
+execute if data storage luigis_mansion:data current_state.current_data.rooms.living_room{cleared:1b} run function luigis_beta_mansion:room/original/living_room/turn_on_lights

@@ -1,0 +1,2 @@
+execute unless score #childs_room_rocking_horse Search matches 1 run scoreboard players remove @e[tag=chauncey,tag=!fight,scores={Dialog=2..49},limit=1] Dialog 3
+scoreboard players reset #childs_room_rocking_horse Search

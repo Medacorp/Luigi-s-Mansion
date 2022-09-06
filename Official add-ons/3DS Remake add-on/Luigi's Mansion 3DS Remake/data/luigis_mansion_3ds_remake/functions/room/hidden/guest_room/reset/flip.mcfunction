@@ -1,0 +1,1 @@
+place template luigis_mansion:guest_room/flipped 723 19 -62

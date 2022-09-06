@@ -1,0 +1,1 @@
+execute positioned 761 32 63 run function luigis_mansion:spawn_entities/ghost/forced_spawn/purple_bomber

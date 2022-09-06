@@ -1,0 +1,2 @@
+execute if entity @e[type=minecraft:marker,tag=selected,tag=garbage_can_ghost,limit=1] run function extensive_training:room/training_room/spawn/garbage_can_ghost
+execute unless entity @e[type=minecraft:marker,tag=selected,limit=1] if score #training_room Wave matches 20.. run summon minecraft:marker ~ ~ ~ {Tags:["select_ghost","garbage_can_ghost"]}

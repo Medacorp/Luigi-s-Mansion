@@ -1,0 +1,3 @@
+execute if data storage luigis_mansion_3ds_remake:data current_state.trophy.easy.has_element_medals{fire:1b} run scoreboard players add #temp Time 1
+execute if data storage luigis_mansion_3ds_remake:data current_state.trophy.easy.has_element_medals{water:1b} run scoreboard players add #temp Time 1
+execute if data storage luigis_mansion_3ds_remake:data current_state.trophy.easy.has_element_medals{ice:1b} run scoreboard players add #temp Time 1

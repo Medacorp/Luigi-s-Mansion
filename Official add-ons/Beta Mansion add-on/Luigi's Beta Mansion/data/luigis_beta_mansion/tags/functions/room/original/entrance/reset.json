@@ -1,0 +1,14 @@
+{
+    "values": [
+        "luigis_beta_mansion:room/original/entrance/reset/unload",
+        "#luigis_beta_mansion:room/original/entrance/turn_lights/off",
+        "luigis_beta_mansion:room/original/entrance/reset/candle_1",
+        "luigis_beta_mansion:room/original/entrance/reset/candle_2",
+        "luigis_beta_mansion:room/original/entrance/reset/candle_3",
+        "luigis_beta_mansion:room/original/entrance/reset/candle_4",
+        "luigis_beta_mansion:room/original/entrance/reset/chandelier",
+        "luigis_beta_mansion:room/original/entrance/reset/lamp",
+        "luigis_beta_mansion:room/original/entrance/reset/mirror",
+        "luigis_beta_mansion:room/original/entrance/reset/table"
+    ]
+}

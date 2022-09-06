@@ -1,0 +1,1 @@
+scoreboard players set #missingno_43 Ticking 1

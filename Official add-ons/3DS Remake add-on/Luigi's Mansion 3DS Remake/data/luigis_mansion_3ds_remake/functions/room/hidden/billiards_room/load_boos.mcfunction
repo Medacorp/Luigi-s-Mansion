@@ -1,0 +1,3 @@
+execute if data storage luigis_mansion:data current_state.current_data.boos[{name:"boohoo",trap_found:0b}] unless entity @e[tag=boohoo_trap,limit=1] run summon minecraft:marker 681.0 11 78.0 {CustomName:'{"translate":"luigis_mansion:entity.hidden_boo"}',Tags:["hidden_boo","boohoo_trap","trap","new"]}
+scoreboard players set #temp Room 47
+execute positioned 681.0 11 78.0 run function luigis_mansion:entities/boo/hiding_in_room/load

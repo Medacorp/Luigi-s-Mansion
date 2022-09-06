@@ -1,0 +1,1 @@
+scoreboard players set #bath_room Ticking 1

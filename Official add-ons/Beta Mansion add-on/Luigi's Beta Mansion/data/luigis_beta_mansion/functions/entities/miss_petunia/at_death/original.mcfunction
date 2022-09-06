@@ -1,0 +1,1 @@
+data modify storage luigis_mansion:data current_state.current_data.portrait_ghosts.miss_petunia.rank set value 0b

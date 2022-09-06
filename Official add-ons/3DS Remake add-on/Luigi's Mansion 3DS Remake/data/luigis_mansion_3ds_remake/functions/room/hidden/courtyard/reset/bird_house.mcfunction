@@ -1,0 +1,1 @@
+scoreboard players reset #courtyard_bird_house

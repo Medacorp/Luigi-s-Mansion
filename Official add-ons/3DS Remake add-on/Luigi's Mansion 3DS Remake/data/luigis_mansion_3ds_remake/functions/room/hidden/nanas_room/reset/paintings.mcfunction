@@ -1,0 +1,1 @@
+scoreboard players reset #nanas_room_paintings

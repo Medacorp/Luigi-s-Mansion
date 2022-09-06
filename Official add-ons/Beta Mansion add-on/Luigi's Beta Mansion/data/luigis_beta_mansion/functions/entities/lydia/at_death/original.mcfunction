@@ -1,0 +1,2 @@
+data modify storage luigis_mansion:data current_state.current_data.portrait_ghosts.lydia.rank set value 0b
+execute if data storage luigis_beta_mansion:data current_state.trophy{task_1:0b} if data storage luigis_mansion:data current_state.current_data.portrait_ghosts{neville:{health:0},lydia:{health:0}} run function luigis_beta_mansion:room/gallery/clear_task/task_1

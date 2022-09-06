@@ -1,0 +1,2 @@
+execute positioned ~ ~-1.3 ~ positioned as @s[tag=vacuumable,tag=split,distance=..0.7] positioned ~ ~1.3 ~ run function luigis_beta_mansion:items/poltergust_500/effect_on_entity/vacuum/effect/ghost/boolossus_split
+tag @s[tag=!split] add fleeing

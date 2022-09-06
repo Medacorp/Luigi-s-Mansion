@@ -1,0 +1,3 @@
+execute if data storage luigis_mansion:data current_state.current_data.boos[{name:"booregard",trap_found:0b}] unless entity @e[tag=booregard_trap,limit=1] run summon minecraft:marker 643 11 -45.0 {CustomName:'{"translate":"luigis_mansion:entity.hidden_boo"}',Tags:["hidden_boo","booregard_trap","trap","new"]}
+scoreboard players set #temp Room 32
+execute positioned 643 11 -45.0 run function luigis_mansion:entities/boo/hiding_in_room/load

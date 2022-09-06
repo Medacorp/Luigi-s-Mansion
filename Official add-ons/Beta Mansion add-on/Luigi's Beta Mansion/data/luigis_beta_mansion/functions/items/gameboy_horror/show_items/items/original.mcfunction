@@ -1,0 +1,1 @@
+function luigis_beta_mansion:items/gameboy_horror/show_items/items/item/ghost_coin

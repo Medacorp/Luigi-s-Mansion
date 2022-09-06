@@ -1,0 +1,2 @@
+execute if data storage extensive_training:data current_state.trophy{done:1b} run advancement grant @a only luigis_mansion_3ds_remake:amiibo/root
+execute if data storage extensive_training:data current_state.trophy{done:1b} run advancement grant @a only extensive_training:amiibo/koopa

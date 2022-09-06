@@ -1,0 +1,10 @@
+execute if entity @s[tag=e_gadd] run tellraw @a {"translate":"chat.type.text","with":[{"selector":"@s","color":"green"},{"translate":"luigis_mansion:message.player.scan_furniture.57"}]}
+execute if entity @s[tag=toad] run tellraw @a {"translate":"chat.type.text","with":[{"selector":"@s","color":"green"},{"translate":"luigis_mansion:message.player.scan_furniture.6"}]}
+execute if entity @s[tag=mario,tag=panic] run tellraw @a {"translate":"chat.type.text","with":[{"selector":"@s","color":"green"},{"translate":"luigis_mansion:message.player.scan_furniture.51"}]}
+execute as @s[type=minecraft:player] run function luigis_mansion:items/gameboy_horror/scan/entity/player_return
+execute if entity @s[tag=lydia] run tellraw @a {"translate":"chat.type.text","with":[{"translate":"luigis_mansion:entity.lydia","color":"green"},{"translate":"luigis_mansion:message.lydia.scan"}]}
+execute if entity @s[tag=miss_petunia] run tellraw @a {"translate":"chat.type.text","with":[{"translate":"luigis_mansion:entity.miss_petunia","color":"green"},{"translate":"luigis_mansion:message.miss_petunia.scan"}]}
+execute if entity @s[tag=miss_petunia] run function luigis_beta_mansion:room/gallery/clear_task/task_8
+execute if entity @s[tag=neville] if score #players Totals matches 1 run tellraw @a {"translate":"chat.type.text","with":[{"translate":"luigis_mansion:entity.neville","color":"green"},{"translate":"luigis_mansion:message.neville.scan"}]}
+execute if entity @s[tag=neville] if score #players Totals matches 2.. run tellraw @a {"translate":"chat.type.text","with":[{"translate":"luigis_mansion:entity.neville","color":"green"},{"translate":"luigis_mansion:message.neville.scan.more"}]}
+execute if entity @s[tag=spooky] run tellraw @a {"translate":"chat.type.text","with":[{"translate":"luigis_mansion:entity.spooky","color":"green"},{"translate":"luigis_mansion:message.spooky.scan"}]}

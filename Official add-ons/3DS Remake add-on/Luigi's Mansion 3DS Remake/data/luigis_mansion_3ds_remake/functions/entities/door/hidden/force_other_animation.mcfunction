@@ -1,0 +1,1 @@
+function luigis_mansion:entities/door/normal/force_other_animation

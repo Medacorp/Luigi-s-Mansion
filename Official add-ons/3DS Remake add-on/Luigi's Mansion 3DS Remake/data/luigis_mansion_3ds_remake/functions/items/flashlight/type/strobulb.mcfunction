@@ -1,0 +1,3 @@
+tellraw @s[scores={FlashlightType=-4}] {"translate":"chat.type.text","with":[{"translate":"luigis_mansion:entity.mansion","color":"green"},{"translate":"luigis_mansion_3ds_remake:message.flashlight_type.set.strobulb"}]}
+scoreboard players set @s[scores={FlashlightType=-4}] FlashlightType 4
+execute if entity @s[scores={FlashlightType=4}] run function luigis_mansion_3ds_remake:items/flashlight/strobulb

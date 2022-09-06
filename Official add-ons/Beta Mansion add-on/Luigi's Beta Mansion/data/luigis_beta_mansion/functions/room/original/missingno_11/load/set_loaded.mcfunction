@@ -1,0 +1,1 @@
+scoreboard players set #missingno_11 Ticking 1

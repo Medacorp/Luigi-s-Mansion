@@ -1,0 +1,3 @@
+# Needed because of the koopa amiibo, it disabled dragging damage for poltergust 500 too
+execute if score #beta_mansion Loaded matches 1.. unless score #extensive_training Loaded > #beta_mansion Loaded run datapack disable "file/Extensive Training"
+execute if score #beta_mansion Loaded matches 1.. unless score #extensive_training Loaded > #beta_mansion Loaded run datapack enable "file/Extensive Training" after "file/Luigi's Beta Mansion"

@@ -1,0 +1,1 @@
+scoreboard players reset #hidden_room_chest_8

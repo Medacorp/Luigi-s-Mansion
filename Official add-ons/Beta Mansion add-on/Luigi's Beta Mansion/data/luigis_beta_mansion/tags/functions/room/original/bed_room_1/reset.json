@@ -1,0 +1,20 @@
+{
+    "values": [
+        "luigis_beta_mansion:room/original/bed_room_1/reset/unload",
+        "#luigis_beta_mansion:room/original/bed_room_1/turn_lights/off",
+        "luigis_beta_mansion:room/original/bed_room_1/reset/bed_1",
+        "luigis_beta_mansion:room/original/bed_room_1/reset/bed_2",
+        "luigis_beta_mansion:room/original/bed_room_1/reset/chair",
+        "luigis_beta_mansion:room/original/bed_room_1/reset/chest",
+        "luigis_beta_mansion:room/original/bed_room_1/reset/closet",
+        "luigis_beta_mansion:room/original/bed_room_1/reset/curtain_1",
+        "luigis_beta_mansion:room/original/bed_room_1/reset/curtain_2",
+        "luigis_beta_mansion:room/original/bed_room_1/reset/fan",
+        "luigis_beta_mansion:room/original/bed_room_1/reset/mirror",
+        "luigis_beta_mansion:room/original/bed_room_1/reset/painting_1",
+        "luigis_beta_mansion:room/original/bed_room_1/reset/painting_2",
+        "luigis_beta_mansion:room/original/bed_room_1/reset/painting_3",
+        "luigis_beta_mansion:room/original/bed_room_1/reset/painting_4",
+        "luigis_beta_mansion:room/original/bed_room_1/reset/table"
+    ]
+}

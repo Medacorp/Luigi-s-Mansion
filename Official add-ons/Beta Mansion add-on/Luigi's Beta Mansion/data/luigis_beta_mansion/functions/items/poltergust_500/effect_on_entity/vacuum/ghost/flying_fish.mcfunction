@@ -1,0 +1,1 @@
+execute positioned ~ ~-1.3 ~ positioned as @s[tag=flying_fish,tag=visible,distance=..0.7] run function luigis_beta_mansion:items/poltergust_500/effect_on_entity/vacuum/effect/ghost/flying_fish

@@ -1,0 +1,4 @@
+execute if entity @s[scores={PortraitBattle=2}] run function luigis_mansion_3ds_remake:room/gallery/portrait_battle/prepare
+execute if entity @s[scores={PortraitBattle=2}] run function luigis_beta_mansion:room/gallery/portrait_battle/prepare_mansion/original
+execute if entity @s[scores={PortraitBattle=2}] run data modify storage luigis_mansion_3ds_remake:data loaded_mansion.high_scores set from storage luigis_mansion_3ds_remake:data current_state.portrait_ghosts_defeated_in.neville[{data_index:2,mansion_type:2}]
+execute if entity @s[scores={PortraitBattle=2}] in luigis_beta_mansion:original run teleport @a 714 20 48 90 0

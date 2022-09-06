@@ -1,0 +1,13 @@
+{
+	"values": [
+        "luigis_beta_mansion:entities/ghost/capture/beta_boo",
+        "luigis_beta_mansion:entities/ghost/capture/beta_flying_fish",
+        "luigis_beta_mansion:entities/ghost/capture/beta_shining_ghost",
+        "luigis_beta_mansion:entities/ghost/capture/beta_mouse",
+        "luigis_beta_mansion:entities/ghost/capture/beta_bat",
+        "luigis_beta_mansion:entities/ghost/capture/beta_ghost",
+        "luigis_beta_mansion:entities/ghost/capture/beta_puncher",
+        "luigis_beta_mansion:entities/ghost/capture/beta_body_slammer",
+        "luigis_beta_mansion:entities/ghost/capture/beta_basher"
+	]
+}

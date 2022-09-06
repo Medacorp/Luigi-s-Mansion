@@ -1,0 +1,1 @@
+execute positioned ~ ~-1.1 ~ positioned as @s[distance=..1.4,tag=ghost_coin] run function luigis_mansion:entities/item/pull

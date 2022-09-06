@@ -1,0 +1,2 @@
+execute if entity @e[type=minecraft:marker,tag=selected,tag=grabbing_ghost,limit=1] run function extensive_training:room/training_room/spawn/grabbing_ghost
+execute unless entity @e[type=minecraft:marker,tag=selected,limit=1] if score #training_room Wave matches 10.. run summon minecraft:marker ~ ~ ~ {Tags:["select_ghost","grabbing_ghost"]}

@@ -1,0 +1,2 @@
+execute if score #living_room Wave matches 1 unless entity @e[tag=ghost,scores={Room=3},tag=!optional_ghost] run function luigis_beta_mansion:room/original/living_room/clear
+execute unless data storage luigis_mansion:data current_state.current_data.rooms.living_room{cleared:1b} if data storage luigis_mansion:data {found_e_gadd:1b} unless score #living_room Wave matches 1.. run function luigis_beta_mansion:room/original/living_room/wave_1

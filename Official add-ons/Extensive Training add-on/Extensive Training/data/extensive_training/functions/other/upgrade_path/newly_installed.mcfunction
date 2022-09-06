@@ -1,0 +1,1 @@
+data merge storage extensive_training:data {saved_state:{endless_record:-1,speedrun_record:-1,trophy:{done:0b,task_1:0b,task_2:0b,task_3:0b,task_4:0b,task_5:0b,task_6:0b,task_7:0b,task_8:0b,task_9:0b}},current_state:{endless_record:-1,speedrun_record:-1,trophy:{done:0b,task_1:0b,task_2:0b,task_3:0b,task_4:0b,task_5:0b,task_6:0b,task_7:0b,task_8:0b,task_9:0b}}}

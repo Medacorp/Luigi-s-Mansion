@@ -1,0 +1,20 @@
+{
+    "display": {
+        "icon": {
+            "item": "minecraft:diamond_pickaxe",
+			"nbt": "{Unbreakable:1b,Damage:5,CustomModelData:13}"
+        },
+        "title": {
+            "translate": "luigis_mansion_3ds_remake:advancements.amiibo.toad"
+        },
+        "description": {
+            "translate": "luigis_mansion_3ds_remake:dialog.underground_lab.change_amiibo.toad.hover"
+        }
+    },
+	"parent": "luigis_mansion_3ds_remake:amiibo/root",
+    "criteria": {
+        "obtained": {
+            "trigger": "minecraft:impossible"
+        }
+    }
+}

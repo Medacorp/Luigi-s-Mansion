@@ -1,0 +1,2 @@
+execute if entity @s[tag=!looking_at_map,tag=!death_animation,tag=!revive_animation,tag=!polterpup_reviving,nbt={Inventory:[{tag:{luigis_mansion:{id:"luigis_mansion:flashlight"}}}]}] unless entity @s[scores={KnockbackType=2..}] unless entity @s[scores={ScareType=2..}] run function luigis_mansion:items/flashlight/tick
+execute if entity @s[nbt=!{Inventory:[{tag:{luigis_mansion:{id:"luigis_mansion:flashlight"}}}]}] run function luigis_mansion:items/flashlight/give

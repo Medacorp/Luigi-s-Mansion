@@ -1,0 +1,1 @@
+function luigis_mansion_3ds_remake:entities/boo/stop_tracking/stop/normal

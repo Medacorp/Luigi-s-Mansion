@@ -1,0 +1,10 @@
+{
+	"values": [
+		"luigis_beta_mansion:items/poltergust_500/effect_on_block/water/air",
+		"luigis_beta_mansion:items/poltergust_500/effect_on_block/water/light",
+        "luigis_beta_mansion:items/poltergust_500/effect_on_block/water/campfires",
+        "luigis_beta_mansion:items/poltergust_500/effect_on_block/water/standing_candles",
+        "luigis_beta_mansion:items/poltergust_500/effect_on_block/water/wall_candles",
+        "luigis_beta_mansion:items/poltergust_500/effect_on_block/water/interact"
+	]
+}

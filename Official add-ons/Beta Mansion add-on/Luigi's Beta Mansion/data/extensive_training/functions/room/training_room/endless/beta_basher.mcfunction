@@ -1,0 +1,2 @@
+execute if entity @e[type=minecraft:marker,tag=selected,tag=beta_basher,limit=1] run function extensive_training:room/training_room/spawn/beta_basher
+execute unless entity @e[type=minecraft:marker,tag=selected,limit=1] if score #training_room Wave matches 20.. if score #training_room Selected matches 1 run summon minecraft:marker ~ ~ ~ {Tags:["select_ghost","beta_basher"]}

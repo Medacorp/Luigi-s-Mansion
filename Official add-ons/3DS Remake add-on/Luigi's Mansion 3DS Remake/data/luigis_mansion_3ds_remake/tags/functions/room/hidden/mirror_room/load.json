@@ -1,0 +1,10 @@
+{
+	"values": [
+	    "luigis_mansion_3ds_remake:room/hidden/mirror_room/load/set_loaded",
+        "luigis_mansion_3ds_remake:room/hidden/mirror_room/load/lights",
+        "luigis_mansion_3ds_remake:room/hidden/mirror_room/load/doors",
+        "luigis_mansion_3ds_remake:room/hidden/mirror_room/load/chest",
+        "luigis_mansion_3ds_remake:room/hidden/mirror_room/load/fire",
+        "luigis_mansion_3ds_remake:room/hidden/mirror_room/load/painting"
+	]
+}

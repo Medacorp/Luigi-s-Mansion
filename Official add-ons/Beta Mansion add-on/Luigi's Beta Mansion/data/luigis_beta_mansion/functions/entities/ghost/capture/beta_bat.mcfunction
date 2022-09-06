@@ -1,0 +1,1 @@
+execute if entity @s[tag=beta_bat] run function luigis_beta_mansion:entities/ghost/capture/caught/beta_bat

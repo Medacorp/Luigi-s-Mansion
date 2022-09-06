@@ -1,0 +1,2 @@
+execute if entity @s[tag=!death_animation,tag=!revive_animation,tag=!polterpup_reviving,nbt={Inventory:[{tag:{luigis_mansion:{id:"luigis_mansion:gameboy_horror"}}}]}] unless entity @s[scores={KnockbackType=1..}] unless entity @s[scores={ScareType=2..}] run function luigis_mansion:items/gameboy_horror/tick
+execute unless entity @s[scores={Shrunk=1..}] if entity @s[advancements={luigis_mansion:lab/lab=true},nbt=!{Inventory:[{tag:{luigis_mansion:{id:"luigis_mansion:gameboy_horror"}}}]}] run function luigis_mansion:items/gameboy_horror/give

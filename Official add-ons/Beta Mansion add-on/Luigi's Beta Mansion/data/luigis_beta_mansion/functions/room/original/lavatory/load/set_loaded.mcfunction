@@ -1,0 +1,1 @@
+scoreboard players set #lavatory Ticking 1

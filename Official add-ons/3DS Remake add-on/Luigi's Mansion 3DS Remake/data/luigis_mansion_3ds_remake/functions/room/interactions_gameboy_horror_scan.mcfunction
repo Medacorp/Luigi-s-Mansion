@@ -1,0 +1,1 @@
+execute if score #temp Room matches -5 run function #luigis_mansion_3ds_remake:room/gallery/interactions/gameboy_horror_scan

@@ -1,0 +1,3 @@
+execute if entity @s[tag=hallway_1_living_room] run data merge storage luigis_mansion:data {used_parlor_key:1b}
+execute if entity @s[tag=hallway_1_hallway_2] run data modify storage luigis_mansion:data current_state.current_data.used_keys merge value {hallway_2:1b}
+execute if entity @s[tag=entrance_hallway_3] run data modify storage luigis_mansion:data current_state.current_data.used_keys merge value {hallway_3:1b}

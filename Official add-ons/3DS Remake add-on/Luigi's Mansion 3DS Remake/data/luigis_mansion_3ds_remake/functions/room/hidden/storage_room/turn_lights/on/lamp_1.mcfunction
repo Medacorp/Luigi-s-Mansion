@@ -1,0 +1,2 @@
+fill 688 14 -51 688 14 -39 minecraft:stone_button[face=floor,powered=true] replace minecraft:stone_button[face=floor,powered=false]
+fill 672 14 -51 672 14 -39 minecraft:stone_button[face=floor,powered=true] replace minecraft:stone_button[face=floor,powered=false]

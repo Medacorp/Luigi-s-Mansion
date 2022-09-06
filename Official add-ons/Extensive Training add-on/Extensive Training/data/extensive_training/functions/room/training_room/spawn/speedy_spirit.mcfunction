@@ -1,0 +1,10 @@
+function luigis_mansion:spawn_entities/ghost/speedy_spirit
+tag @e[distance=..1,tag=hidden,limit=1] add no_appear
+tag @e[distance=..1,tag=hidden,limit=1] add basher
+tag @e[distance=..1,tag=hidden,limit=1] add disappear_on_vanish
+scoreboard players set @e[distance=..1,tag=hidden,limit=1] Health 1000
+scoreboard players set @e[distance=..1,tag=hidden,limit=1] LastHealth 1000
+scoreboard players set @e[distance=..1,tag=hidden,limit=1] Move 20
+scoreboard players set @e[distance=..1,tag=hidden,limit=1] MoveFlee 20
+scoreboard players set @e[distance=..1,tag=hidden,limit=1] GhostCaught 3
+scoreboard players set #training_room Selected 1

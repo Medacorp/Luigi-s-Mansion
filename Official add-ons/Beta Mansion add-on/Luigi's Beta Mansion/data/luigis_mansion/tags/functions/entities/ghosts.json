@@ -1,0 +1,13 @@
+{
+	"values": [
+		"luigis_beta_mansion:entities/beta_boo",
+        "luigis_beta_mansion:entities/beta_flying_fish",
+        "luigis_beta_mansion:entities/beta_shining_ghost",
+        "luigis_beta_mansion:entities/beta_bat",
+        "luigis_beta_mansion:entities/beta_mouse",
+        "luigis_beta_mansion:entities/beta_ghost",
+        "luigis_beta_mansion:entities/beta_puncher",
+        "luigis_beta_mansion:entities/beta_body_slammer",
+        "luigis_beta_mansion:entities/beta_basher"
+	]
+}

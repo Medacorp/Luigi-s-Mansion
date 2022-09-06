@@ -1,0 +1,2 @@
+execute if entity @s[tag=!play_old_lab_music,scores={MusicType=2,MusicGroup=0}] run function luigis_beta_mansion:other/music/set/force/lab
+execute if entity @s[tag=play_old_lab_music,scores={MusicType=1,MusicGroup=2}] run function luigis_mansion:other/music/set/force/lab

@@ -1,0 +1,2 @@
+execute unless data storage luigis_mansion:data current_state.current_data.rooms.hallway_2{cleared:1b} unless score #hallway_2 Wave matches 1.. run function luigis_beta_mansion:room/original/hallway_2/wave_1
+function luigis_beta_mansion:room/original/hallway_2/load_vacuumable_ghosts

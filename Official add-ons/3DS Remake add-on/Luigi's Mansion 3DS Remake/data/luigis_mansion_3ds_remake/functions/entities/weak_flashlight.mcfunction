@@ -1,0 +1,1 @@
+execute if entity @s[tag=weak_flashlight] run function luigis_mansion_3ds_remake:entities/weak_flashlight/tick

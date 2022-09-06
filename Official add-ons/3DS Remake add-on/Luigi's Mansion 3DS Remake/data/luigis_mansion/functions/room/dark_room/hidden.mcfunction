@@ -1,0 +1,2 @@
+execute if score #mansion_type Selected matches 1 if score #mansion_data_index Selected matches 1 in luigis_mansion:normal run function luigis_mansion_3ds_remake:room/hidden/dark_room
+execute if score #mansion_type Selected matches 1 if score #mansion_data_index Selected matches 0 in luigis_mansion:hidden run function luigis_mansion:room/hidden/dark_room

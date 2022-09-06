@@ -1,0 +1,1 @@
+scoreboard players set #kitchen Ticking 1

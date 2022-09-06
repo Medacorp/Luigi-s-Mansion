@@ -1,0 +1,1 @@
+scoreboard players reset #courtyard_statue_2

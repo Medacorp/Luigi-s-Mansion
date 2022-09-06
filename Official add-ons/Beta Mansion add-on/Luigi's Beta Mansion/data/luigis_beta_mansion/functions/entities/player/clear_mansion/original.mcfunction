@@ -1,0 +1,2 @@
+execute if score #mansion_type Selected matches 2 if score #mansion_data_index Selected matches 2 run advancement grant @a only luigis_beta_mansion:lab/cleared_original_mansion
+execute if score #mansion_type Selected matches 2 if score #mansion_data_index Selected matches 2 if data storage luigis_mansion:data current_state.current_data{lowest_health_moment:100} if data storage luigis_beta_mansion:data current_state.trophy{task_3:0b} run function luigis_beta_mansion:room/gallery/clear_task/task_3

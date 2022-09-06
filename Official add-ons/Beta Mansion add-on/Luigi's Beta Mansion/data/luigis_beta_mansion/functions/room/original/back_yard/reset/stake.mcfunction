@@ -1,0 +1,1 @@
+scoreboard players reset #back_yard_stake

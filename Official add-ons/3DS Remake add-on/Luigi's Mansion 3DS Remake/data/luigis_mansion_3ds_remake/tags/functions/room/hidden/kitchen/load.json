@@ -1,0 +1,15 @@
+{
+	"values": [
+	    "luigis_mansion_3ds_remake:room/hidden/kitchen/load/set_loaded",
+        "luigis_mansion_3ds_remake:room/hidden/kitchen/load/lights",
+        "luigis_mansion_3ds_remake:room/hidden/kitchen/load/doors",
+        "luigis_mansion_3ds_remake:room/hidden/kitchen/load/haunted_objects",
+        "luigis_mansion_3ds_remake:room/hidden/kitchen/load/chest",
+        "luigis_mansion_3ds_remake:room/hidden/kitchen/load/ice",
+        "luigis_mansion_3ds_remake:room/hidden/kitchen/load/painting_1",
+        "luigis_mansion_3ds_remake:room/hidden/kitchen/load/painting_2",
+        "luigis_mansion_3ds_remake:room/hidden/kitchen/load/painting_3",
+        "luigis_mansion_3ds_remake:room/hidden/kitchen/load/water",
+        "luigis_mansion_3ds_remake:room/hidden/kitchen/load/cobweb"
+	]
+}

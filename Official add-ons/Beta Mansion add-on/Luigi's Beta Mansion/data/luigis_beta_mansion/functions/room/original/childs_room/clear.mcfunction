@@ -1,0 +1,4 @@
+function luigis_beta_mansion:room/original/childs_room/turn_on_lights
+execute if entity @a[tag=looking_at_map,limit=1] run function luigis_beta_mansion:items/gameboy_horror/map/display/original/generate
+execute as @a[scores={Room=7},gamemode=!spectator] unless entity @s[scores={MusicGroup=2,MusicType=3}] run function luigis_beta_mansion:other/music/play/group_2/cleared_room
+execute if data storage luigis_mansion:data current_state.current_data.rooms{living_room:{cleared:1b},study:{cleared:1b},bed_room_1:{cleared:1b},childs_room:{cleared:1b},lavatory:{cleared:1b},dining_room:{cleared:1b},kitchen:{cleared:1b},study:{cleared:1b}} run function luigis_beta_mansion:room/gallery/clear_task/task_2

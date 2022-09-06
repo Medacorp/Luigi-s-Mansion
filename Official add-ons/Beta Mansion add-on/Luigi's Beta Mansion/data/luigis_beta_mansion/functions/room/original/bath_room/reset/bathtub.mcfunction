@@ -1,0 +1,1 @@
+scoreboard players reset #bath_room_bathtub

@@ -1,0 +1,1 @@
+data modify storage luigis_mansion_3ds_remake:data current_state set from storage luigis_mansion_3ds_remake:data saved_state

@@ -1,0 +1,1 @@
+scoreboard players reset #boneyard_lamp

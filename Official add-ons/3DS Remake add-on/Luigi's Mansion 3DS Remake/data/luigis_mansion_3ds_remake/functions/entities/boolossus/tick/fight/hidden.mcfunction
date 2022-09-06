@@ -1,0 +1,2 @@
+execute if entity @s[tag=!split] run function luigis_mansion_3ds_remake:entities/boolossus/tick/fight/hidden/merged
+execute if entity @s[tag=split] run function luigis_mansion_3ds_remake:entities/boolossus/tick/fight/hidden/split

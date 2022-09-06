@@ -1,0 +1,2 @@
+execute if entity @s[tag=beta_puncher,tag=!hidden] run function luigis_beta_mansion:entities/beta_puncher/tick
+execute if entity @s[tag=beta_puncher,tag=hidden] run function luigis_beta_mansion:entities/beta_puncher/hidden_tick

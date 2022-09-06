@@ -1,0 +1,2 @@
+execute if entity @s[scores={Jump=1},y=41,dy=153] run function luigis_beta_mansion:items/gameboy_horror/map/move_floor/original/up
+execute if entity @s[scores={Sneaking=1},tag=!was_sneaking,y=91,dy=153] run function luigis_beta_mansion:items/gameboy_horror/map/move_floor/original/down

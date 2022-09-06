@@ -1,0 +1,384 @@
+v2.2.2:
+* Fixed Biff Atlas breaks when leaving and re-entering the room
+* Fixed Luigi/Gooigi model leaks a temporary value, breaking the non-interact search of the twins room boxes
+
+
+
+v2.1.1:
+3DS Remake:
+* Fixed gallery intro non-functional
+* Fixed training room program warps to GCN gallery, rather than 3DS
+
+Beta Mansion:
+* Fixed E. Gadd doesn't look at the player in the 3DS Remake gallery
+
+
+
+v2.2:
+* Changed doors, now animate both sides from the beginning if both sides are loaded in, not the destination side only when the player warps to it
+* Fixed doors could be opened as the player got a GBH call, breaking the door.
+* Fixed area 1 key dialog nod not animated, goes back to GBH.
+* Fixed warping to lab improperly warps other players (go back to their old X and Z coordinate).
+* Fixed E. Gadd doesn't jump in jump animation.
+* Fixed grabbing ghosts', ghost guys', mr bones-es' and garbage can ghosts' element hurt sound spams every tick.
+* Fixed dying players still have/keep the vacuuming_ghost tag.
+* Fixed button press shiver locks player in place.
+* Fixed Shivers heartbeat spams when vanishing if vacuumed the first tick he becomes vulnerable.
+* Fixed Mario painting dialog doesn't set player's old X and Z position, causing slight flickering.
+* Fixed collecting a key opens the map for dying/dead players.
+* Fixed collecting a key with the option to opens the map turned on and vacuuming as the map opens locks the player in the map area.
+* Fixed collecting a key with the option to opens the map turned on triggers the focus if the map was not opened for any reason (IE player was dying/dead, or had no GBH).
+* Fixed yelling arm and head animations cancel when walking.
+* Fixed low health walk doesn't position arm correctly.
+* Fixed players fight over who gets to be where, rather than just stepping to the side.
+* Fixed changing name results in loss of scores, breaking parts of the map; this really should be Mojang's issue to fix, but I worked around it now; rejoin again and scores get re-added.
+* Fixed players can be grabbed by grabbing ghost, while not getting the grabbed knockback.
+* Fixed leaving while in training room now puts you in the underground upon rejoining; for 3DS remake, if the training wasn't done yet, you get put back in from the start.
+* Fixed low health idle animation doesn't crouch if health is over 30.
+* Fixed loading a mansion exterior while another mansion exterior is loaded with doors in the same position mansion doors.
+* Fixed gallery doors make the door close sound at 2 different times.
+* Fixed going through mansion doors cuts off player's "open door" sound only for them, due to being teleported out of range
+* Fixed opening door that was just unlocked from the other side breaks the other side's door; unlock animation now stops
+
+3DS Remake:
+* Added option "(Global) 3DS Remake gallery" to the 3DS Remake add-on.
+* Fixed Gooigi spams grab sound for mario items, keys, element medals and gameboy horror part.
+* Fixed Gooigi spawn animation freezes players in same block space.
+* Fixed Gooigi spawns in door space; doesn't wait until target he moves to is out of door animation.
+* Fixed Gooigi can't scan cheese.
+* Fixed Gooigi can't have any idle animations, nor waving.
+* Fixed Gooigi has no idle animations.
+
+Beta Mansion:
+* Fixed not properly installing beta mansion didn't print error and move player into the wall if appempting to enter the original mansion.
+
+Extensive Training:
+* Added "Player VS player" training room program.
+
+
+
+v2.1.1:
+Fixed typo in credits function caused function to not load, which results in different issues due to credits never appearing/finishing.
+
+
+
+v2.1:
+* Added credits in-game.
+* Elemental meter is now displayed in xp bar progress, rather than level.
+* Added a couple more sounds (door unlocking, door burning, haunted object flying/hitting, haunted plate shaking, elemental ghost hurt, button pressing, moving wall/boo hatch triggering, portrait ghost/poster catching, chest shaking)
+* Rewrote music to be less hardcoded to rooms.
+* Ghost-vacuuming players now face the average of all latched-on ghost positions.
+* Ghosts now count error time each as well as players; if a ghost has not been pulled for half a second, increases error count by 1 on all latched-on players.
+* Added the unused dialog string for getting a non-0-11 ghost count in the training room (could be achieved with add-ons changing the ghost spawning).
+* Fixed ghosts that blockade doors don't do so.
+* Fixed walking through door doesn't trigger other door entity's animation.
+* Fixed fake door animation stops midway.
+* Fixed players not properly centered in front of door in animations.
+* Poison mushrooms dropped by portrait ghosts now face the same direction as the portrait ghost.
+* Fixed pulling ghosts in training room wasn't very effective.
+* Fixed players that are reeling in ghosts can no longer be hit by attacks, knockback or poison mushrooms, allowing them to reel the ghost in properly.
+* Fixed ghost vacuuming players didn't get pushed away from wall if the block at feet was air but block at head wasn't.
+* Fixed function call when searching for player collected money.
+* Fixed Luigi model incorrectly triggered low health positioning during other animations.
+* Fixed Luigi model didn't play pulled animation properly, resetting it every tick.
+* Fixed getting pulled had no limit to the score, causing overflowing for the animation.
+* Fixed E. Gadd jumping animation doesn't move E. Gadd up and down.
+* Fixed washroom Toad dialog doesn't trigger.
+* Ghosts in hurt animation now try to go to 2 blocks above the first latching-on player's head (if flipped gravity, below them); this should resolve some of the weirdness when catching Orville or Sue Pea.
+* Fixed ghosts move forward when fleeing, as long as there's a vacuuming player in 6 blocks, rather than a player vacuuming *this ghost* in 6 blocks.
+* Fixed flying fish, Orville and haunted music sheets flee way too fast, making them incredibly hard to capture.
+* Fixed ghost catching music doesn't stop when getting bashed or knockedback.
+* Fixed reeling in ghosts tagged the ghost as reeling in itself.
+* Fixed non-poltergust items can be used while reeling in ghosts.
+* Using poltergust while vacuuming a ghost no longer toggles between vacuuming and expelling.
+* Looking up or down when vacuuming a ghost can no longer move you into the air or ground.
+* Jumping while inside non-full non-slab blocks no longer puts the player above the block.
+
+3DS Remake:
+* Fixed normal mansion sitting room softlock.
+* Fixed outdated ghost pull damage method, on the other hand made the training ghost pulling effective again.
+
+Beta mansion:
+* Overheat meter is now displayed in xp bar progress, rather than level.
+* Renamed dark_room music to room, to be consistent with main map.
+* Fixed Koopa amiibo (from extensive training) effect still applied if that add-on got turned off.
+
+Extensive Training:
+* Fixed speedrun training room program though no score was better than any score.
+* Changed speedrun wave 19 and 20 slightly, to compensate for the now-forced facing direction; this does make both waves easier.
+* This add-on now wants insurance it loads later than the beta mansion (not necessarily directly after).
+
+
+
+v2.0:
+HOTFIX:
+* Fixed doors didn't get state changes at all, including which key is required.
+* Fixed training room showed E. Gadd name.
+* Fixed 3DS Remake incorrectly ran upgrade path before running the "create default data" function, causing a lot of lacking data.
+
+Changes:
+!!!!!Redid ghost harming, it no longer uses sneaking, but instead rapidly moving backwards; the time it takes to error has also been upped.!!!!!
+!!!!!Additionally, players can now walk backwards, even into walls/furniture, they'll get moved a little bit to the front again.!!!!!
+!!!!!(Keep in mind that letting go of walking, doesn't make you stop immediately, so don't spam the backwards button too rapidly, or the map thinks you're doing one single pull.)!!!!!
+* Added new Poltergust 3000 model.
+* Added door models and animations.
+* Added cobweb models and animations.
+* Added "Double use Gameboy Horror" setting to trigger a default action if using the Gameboy Horror while the menu is shown.
+* Added "(Global) Player Names" setting to disable visible player names.
+* Added the sparkle effect to the dog house/tree trunk when the boneyard/graveyard is cleared.
+* Added option to save in the lab.
+* Added ability to extinguish burning floors. 
+* Changed E. Gadd, Toad and Madame Clairvoya to require interact item to be talked to.
+* Changed Bower's head reattaching, it is no longer instant.
+* Changed banana physics; now fully controlled, rather than via Motion.
+* Changed heart-physics items to bounce a bit higher.
+* Changed heart-physics items to rotate less abruptly.
+* Changed heart-physics items to bounce against walls.
+* Changed answer phone animation slightly.
+* Changed big rocking horse hitbox from 4 to 3 blocks, making it a bit easier to evade.
+* Changed Bogmire lightning knockback range from 6 to 4 blocks.
+* Changed burning floor hit range range from 2 to 1.5 blocks.
+* Changed room name duration; now set to 2 seconds fade in, stay and fade out; fade in set to none when looking at the map.
+* Changing dimension now resets loaded chunk timer.
+* Renamed Blue Diamond to Silver Diamond.
+* Moved the cold storage's ice spike closest to the door by 1 block.
+* Moved "unlocked hidden mansion" advancement behind "cleared mansion".
+* Rewrote hidden Boo spawning, it's no longer hardcoded to the room (except the trap), meaning any Boo with a valid name can spawn and be caught in any mansion.
+* Players tagged as camera now get ignored by entities, and have no model. Items still function, but ghosts will immediately escape the Poltergust.
+* Fixed some of the lag when a lot of entities are in rooms with mirrors.
+* Fixed was impossible to use items while looking at money.
+* Fixed storage room poster was incredibly hard to vacuum up.
+* Fixed rolling wool gave no knockback.
+* Fixed Gameboy Horror scanning was obstructed by marker armor stands and invisible ghosts.
+* Fixed Luigi model duplicated under some conditions.
+* Fixed 1x1 hole in ghost portrificationizer room (there's a barrier now).
+* Fixed purple mice had trouble finding the floor, and move through it.
+* Fixed boo woods music never played.
+* Fixed King Boo missed flee sound in escape cutscene.
+* Fixed Poltergust couldn't react to entities properly if their hitbox is out of the effect, but model not.
+* Fixed rooms didn't properly count some entities as inside them.
+* Fixed stopping Boolossus mid-animation by vacuuming, while they're laughing from the intro.
+* Fixed Chauncey animations mess up when catching a haunted teddy bear after hitting with ball.
+* Fixed freezing ghosts started animation the moment the elemental stream ends rather than the hurt effect.
+* Fixed Boo traps were predefined, rather than 50/50.
+* Fixed chest and item particles didn't mirror.
+* Fixed no invulnerability after damage after being dragged by a ghost (ending on the right tick).
+* Fixed dropping Mario's painting destroys it.
+* Fixed Gameboy Horror didn't show the twins nor clockwork soldiers when caught.
+* Fixed hidden mansion set the can_clear_hidden field to the previously loaded mansion data, not its data.
+* Fixed Garbage Can Ghosts and Shivers had no flee speed.
+* Fixed leftmost cellar barrel interactions offset.
+* Fixed shadow balls could bouse.
+* Fixed hidden balcony Toad would cry after reloading him.
+* Fixed Luigi pose not reset when sitting down on/getting off of Poltergust.
+* Fixed coins could bounce outside of Bogmire battle bounds.
+* Fixed coins could bounce onto balcony barriers.
+* Fixed Bower's head correcting animation flipped it incorrectly if mirrored was set.
+* Fixed Vincent Van Gore's talk animation was a little bit broken if mirrored was set.
+* Fixed Invulnerable players got the the screen tilt from damage; ghosts now also don't laugh when hitting them.
+* Fixed Boos (King Boo included) couldn't be pulled by the Poltergust.
+* Fixed frozen Boos couldn't warp.
+* Fixed frozen Boos didn't lower speed at all.
+* Fixed frozen Boos were permanently frozen.
+* Fixed Bowser could be decapitated when a player was being vacuumed up; causing instant-grab on next vacuum.
+* Fixed smug ghosts that disappeared would be smug again the moment of spawn.
+* Fixed haunted music sheets didn't properly respawn.
+* Fixed Orville didn't properly move back up after vanishing.
+* Fixed heart-physics items could get stuck below ceilings, spamming bounce sound.
+* Fixed shot elements/needle/burning floor didn't set room score to shooter; causing issues if done outside a room (eg Boo woods).
+* Fixed Orville, flying fish and haunted music sheets would move down if in a block, even if there's no space there, making them leave rooms.
+* Fixed haunted music sheets don't move back to hover state after a few seconds (only after a hit).
+* Fixed slipping could drop players into the floor (once again).
+* Fixed shivers made no ambient panic sounds.
+* Fixed hidden mansion map missed hallway 5-hallway 8 door.
+* Fixed being small broke flashlight.
+* Fixed hidden butler's room vaccuumable 1 didn't properly reset.
+* Fixed some hidden clockwork room furniture boo checks were offset.
+* Fixed no floor changing header appeared in hallways.
+* Fixed going to roof showed "Clockwork Room" due to slightly overlapping room bounds.
+* Fixed pearls can drop behind Cold Storage's frozen junk, making it unobtainable.
+* Fixed Mr. Luggs and his food were slightly too low.
+* Fixed hidden hallway 8 lamp spawned money wrongly.
+* Fixed some hidden mansion furniture tried spawning hearts/mushrooms, but was missing a command for it.
+* Fixed hidden kitchen closet spawned money in the wall.
+* Fixed hidden pipe room spectator bound on right wall teleports the wrong way.
+* Fixed hidden safari room lamp 2 mirror dust made sound.
+* Fixed hidden study painting 3 made sound very offset.
+* Fixed hidden telephone room poster vacuuming teleported player facing wrongly.
+* Fixed medium and big pearls made portrait ghost pop sound when vacuumed.
+* Fixed hidden mansion cold storage missing poltergust triggers for campfires.
+* Fixed Bower's vacuum didn't deal knockback, only damage.
+* Fixed items couldn't be pulled up slabs.
+* Fixed hidden pipe room spawned an elemental ghost, rather than elemental source.
+* Fixed flying fish and haunted music sheets hurt the player while being vacuumed up if attacking.
+
+3DS Remake add-on:
+!!!!!The hidden mansion is no longer overwritten; but it does replace the option until the master tasks are done.!!!!!
+!!!!!When the master task is done, the GCN hidden will unlock (again) and the hidden will be renamed to 3DS hidden.!!!!!
+!!!!!If the GCN hidden was cleared before the add-on got installed, it is immediately unlocked.!!!!!
+* Portrait battles now save per mansion type+data index set, not just data index.
+* Added Gooigi explanation when turning into him.
+* Added progress display to Timed Challenge Champ and Super Boss Guster (X out of 23).
+* Added Amiibo advancement tab, so you can always check which ones you unlocked.
+* Changed "unlocked hidden mansion" icon.
+* Fixed lowest health and fastest time tasks didn't clear.
+* Fixed Miss. Petunia never gave platinum.
+* Fixed dust 1 looked at if dust 8 has been vacuumed before in order to spawn, in the cellar.
+* Fixed some chests didn't respond well to the interact item.
+* Fixed balcony 1's plant positions weren't updated.
+* Fixed 3DS hidden wardrobe room didn't hide boos.
+* Fixed Boolossus didn't show in the Boos painting if dead in currently loaded mansion.
+* Fixed Golden Gallery/Platinum Gallery tasks didn't clear when getting the last one from a portrait battle (would clear when portificationizing any ghost afterwards).
+* Fixed Boolossus and Bogmire portrait battles freeze timer at the start.
+* Fixed Twins portrait battle couldn't be won.
+* Fixed 3DS hidden Boos didn't have 1.5x health.
+* Fixed frozen timer in portrait battle at start spams ghost laugh.
+* Fixed King Boo portrait battle spawns player in line of fire.
+* Fixed some portrait battles can spawn some money.
+* Fixed clearing a task group didn't check if later task groups were done (to mark them as such).
+* Fixed 3DS hidden mansion mirrors warped to wrong coordinates.
+* Fixed 3DS hidden roof wave 5 ghost got stuck in floor.
+* Fixed 3DS sealed room triggered ghosts when none were left, rather than 1 or 0.
+* Fixed 3DS hidden staircases had dark room music, rather than humming.
+* Fixed 3DS hidden chauncey bounce has too much forward momentum. 
+* Fixed furthest-most Boolossus Boo in Boo painting has weird rotation
+* Fixed 3DS hidden Bogmire portrait battle skipped the "intro" spawning of the first Black Bogmire.
+* Fixed leaving portrait battle while player is frozen in place corrupts current mansion data;  while timer is frozen.
+
+Beta Mansion add-on:
+* Fixed capturing basher or (beta) ghost does count to Gold Ghost Collector 3DS Remake task, but didn't clear it (clears it now).
+* Fixed capturing (beta) mice counted twice to the Exterminator advancement.
+
+
+
+v1.8
+Changes:
+* Fixed tick-perfect, 50% chance softlock when catching the second to last Boo from Boolosus.
+* Fixed cheese gold mouse in the normal mansion tea room spawns way offset during the blackout.
+* Fixed cheese can spawn the gold mice even if it is already present in the room.
+* Fixed reviving player freezes model after the revive animation.
+
+3DS Remake:
+* Moved amiibo unlocking to 1 set earlier (Toad now unlocks when you clear beginner, Mario easy, Boo normal, Luigi hard); What'll unlock when you clear master will be added later.
+* Fixed Portrait Buff and Portrait Master tasks can't clear when you cleared the Area 1 Cleared task.
+* Fixed Two For One task unclearable.
+* Fixed Boo Master task cannot be cleared if you don't portrificationize Boolossus before catching the 50th Boo.
+* Fixed King Boo portrait battle spawns Bowser in the ground/3 blocks too low.
+
+Extensive training: 
+* Fixed basher speedy spirit in endless training room program doesn't get removed when player dies; he'd reappar after a few seconds
+
+New add-ons:
+* Luigi's Beta Mansion, adds the beta of the game (as seen on E3 2001) as a new mansion.
+
+
+
+v1.7
+* Added about.txt to the add-ons.
+* Fixed rooms get cleared after sudden server shutdowns.
+* Fixed in the Bowser intro, the player can turn around, causing unfortunate effects.
+* Fixed Bowser's vacuum victim could receive damage while vacuumed.
+* Fixed players can receive fall damage, leading to several issues; fall damage is now disabled.
+* Fixed loading old data without mansion data existing doesn't revive players.
+* Fixed player movement locked when hanging up on E. Gadd mid-Caught King Boo call.
+* Fixed damage received can cause negative health. 
+
+
+
+v1.6
+A whole lot of bug fixes; including some bugs that prevented players from progressing. 
+
+
+
+v1.5
+* Fixed E. Gadd doesn't do the ghost portrificationizer dialog properly when warping to it and not having been there before.
+* Fixed Gameboy Horror didn't (re)set animations properly, causing players to get stuck until they leave and re-enter the world.
+* Fixed flashlight item would get the wrong model is set to select to shine and picked up by cursor.
+* Fixed some minor FAQ file issues.
+* Added FAQ about multiplayer compatibility (at the top). 
+
+
+
+v1.4
+Changes:
+* Added knockback from damage sources and collision.
+** Being grabbed/bitten and slipping is now a form of "knockback".
+* Added interact item.
+** Makes player call for Mario if there's nothing to interact with, while in the mansion.
+* Added animations for knockback, being scared, being idle, and being dragged.
+* Added poison mushroom dropping by portrait ghosts.
+* Added Chauncey's second flee state.
+* Added riding the Poltergust in the hidden Boolossus battle.
+** Removed ice floor.
+* Added Luigi humming in dark rooms/outside and making other sounds.
+* Added smooth music transitions between the main themes and changes in health.
+* Added pop sound when the Poltergust reeled in a ghost.
+* Added Toad crying particles.
+* Added map opening when obtaining a key.
+* Added map zooming; only able to be done with the key collecting, no option for it yet.
+* Added exploding of the Poltergust (rather than the spark exploding when vacuumed up).
+* Added Luigi dark room head idle animation + breath particle.
+* Added off flashlight model.
+* Added more sounds, including furniture sounds.
+* Changed all damage values from ghost attacks and collision to match the game.
+* Changed ceiling surprises to always drop a small heart.
+* Changed small heart size to be based on coin count.
+* Changed ghost escape conditions, now based on wrong move count, not pull time.
+* Changed grabbing ghosts and Spooky, they now need actions, not distance, to let go.
+* Changed paintings to spawn in on room load.
+** No more entity region files.
+* Changed secret altar to lock door and prevent mirror warp during King Boo's dialog.
+* Changed King Boo to turn off lights during his dialog.
+* Changed training room to mention sneaking and standing increasing damage dealt (vanilla program only).
+* Changed books to be dialogs, rather than items, making their furniture consistent with all others (only on manual search).
+* Changed dialogs to no longer be non-Luigi based (such as "THE Mario" reverted back to "your brother").
+* Changed players to get bashed in the intro cutscenes of Chauncey, Bogmire, Boolossus and Bowser, and in the Meet E. Gadd and Boo Release cutscenes.
+* Changed haunted objects to reset, rather than vanish, on lighting up the room.
+* Removed ability to use mirror warp while in a dialog/cutscene.
+* Fixed tons of bugs.
+
+Add-on support:
+* Made portrait ghosts' at_death function allow mansion specific behavior (such as boss ranking).
+* Made Mario's non-panic behavior loaded-mansion determined.
+* Made Gameboy Horror entity scans behavior loaded-mansion determined.
+* Made variable resetting and setting prevent leaking data from other mansions with any new variables.
+* Made music corrections able to be appended.
+* Loot dropped by ghosts now supports custom items.
+* Item dropped on damage can now be changed per mansion.
+
+New add-ons:
+* Extensive Training, adds new training room programs that help hone your skills for ghost capturing.
+
+
+
+v1.3
+* Fixed a bunch of issues caused by lack of room score, such as Henry and Orville not appearing.
+* Fixed observatory moon instantly blows up.
+* Fixed Bowser's head flies up in death animation.
+* Fixed invisible mice and flying fish can be caught.
+* Fixed cellar/hallway 20 door and hallway 13/sitting room door makes no sound.
+* Fixed players in death animation can still be hurt by ghosts, causing Minecraft death, rather than just the map death.
+* Fixed some subtitles were missing.
+* Fixed billiards room darting board (the magenta wool) isn't interactable.
+* Fixed Shivers still playing panic/hyperventilation sounds when vanishing/calmly re-entering the room.
+* Fixed 0HP ghosts play hurt sound again at death.
+
+
+
+v1.2
+* Fixed the hidden mansion's mirror room doesn't trigger the ghosts.
+* Fixed mice, flying fish and sparks could spawn inside players (dealing damage without possibly being seen).
+
+
+
+v1.1
+* Fixed Boolossus battle gets skipped. (Fix old save, use "/data modify storage luigis_mansion:data current_state.current_data.rooms.balcony_2.cleared set value 0b")
+* Fixed Gameboy Horror Marker doesn't move after opening the map the first time. (Fix old save, use "/tag @e[​tag=gameboy_horror_marker] add dead")
+* Fixed Garbage Can Ghost spawn animation 1 tick too short.
+* Fixed finding twin has no "secret found" tune.
+* Fixed closing pipe has wrong/too long music.
+
+
+
+v1.0
+Initial release

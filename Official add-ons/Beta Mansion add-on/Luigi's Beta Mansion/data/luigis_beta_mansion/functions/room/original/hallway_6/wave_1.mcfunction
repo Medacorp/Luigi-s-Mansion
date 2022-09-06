@@ -1,0 +1,1 @@
+scoreboard players set #hallway_6 Wave 1

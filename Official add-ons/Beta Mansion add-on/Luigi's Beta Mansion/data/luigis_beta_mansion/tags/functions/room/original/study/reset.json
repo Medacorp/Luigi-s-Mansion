@@ -1,0 +1,24 @@
+{
+    "values": [
+        "luigis_beta_mansion:room/original/study/reset/unload",
+        "#luigis_beta_mansion:room/original/study/turn_lights/off",
+        "luigis_beta_mansion:room/original/study/reset/book_1",
+        "luigis_beta_mansion:room/original/study/reset/book_2",
+        "luigis_beta_mansion:room/original/study/reset/bookshelf_1",
+        "luigis_beta_mansion:room/original/study/reset/bookshelf_2",
+        "luigis_beta_mansion:room/original/study/reset/bookshelf_3",
+        "luigis_beta_mansion:room/original/study/reset/bookshelf_4",
+        "luigis_beta_mansion:room/original/study/reset/bookshelf_5",
+        "luigis_beta_mansion:room/original/study/reset/bookshelf_6",
+        "luigis_beta_mansion:room/original/study/reset/bottled_ship",
+        "luigis_beta_mansion:room/original/study/reset/chair",
+        "luigis_beta_mansion:room/original/study/reset/chest",
+        "luigis_beta_mansion:room/original/study/reset/fire",
+        "luigis_beta_mansion:room/original/study/reset/hat_rack",
+        "luigis_beta_mansion:room/original/study/reset/lamp_1",
+        "luigis_beta_mansion:room/original/study/reset/lamp_2",
+        "luigis_beta_mansion:room/original/study/reset/rocking_chair",
+        "luigis_beta_mansion:room/original/study/reset/table_1",
+        "luigis_beta_mansion:room/original/study/reset/table_2"
+    ]
+}

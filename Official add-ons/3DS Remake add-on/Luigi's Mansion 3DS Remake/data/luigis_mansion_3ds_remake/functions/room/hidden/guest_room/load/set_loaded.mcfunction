@@ -1,0 +1,1 @@
+scoreboard players set #guest_room Ticking 1

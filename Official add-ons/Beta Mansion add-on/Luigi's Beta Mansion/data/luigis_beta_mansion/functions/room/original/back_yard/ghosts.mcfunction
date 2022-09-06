@@ -1,0 +1,2 @@
+execute if score #back_yard Wave matches 1 unless entity @e[tag=ghost,scores={Room=16},tag=!optional_ghost] run function luigis_beta_mansion:room/original/back_yard/clear
+execute unless data storage luigis_mansion:data current_state.current_data.rooms.back_yard{cleared:1b} unless score #back_yard Wave matches 1.. run function luigis_beta_mansion:room/original/back_yard/wave_1

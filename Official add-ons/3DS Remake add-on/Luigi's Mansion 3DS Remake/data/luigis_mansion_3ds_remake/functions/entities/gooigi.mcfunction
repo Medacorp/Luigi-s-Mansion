@@ -1,0 +1,1 @@
+execute if entity @s[tag=gooigi] run function luigis_mansion_3ds_remake:entities/gooigi/tick

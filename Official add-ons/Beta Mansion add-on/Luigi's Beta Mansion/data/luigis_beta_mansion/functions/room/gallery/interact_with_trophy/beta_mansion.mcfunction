@@ -1,0 +1,1 @@
+execute if entity @s[scores={FrameChoice=6}] run function luigis_beta_mansion:room/gallery/interact_with_trophy/tasks

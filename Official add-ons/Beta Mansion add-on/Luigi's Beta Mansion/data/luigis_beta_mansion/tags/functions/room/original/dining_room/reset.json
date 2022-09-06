@@ -1,0 +1,24 @@
+{
+    "values": [
+        "luigis_beta_mansion:room/original/dining_room/reset/unload",
+        "#luigis_beta_mansion:room/original/dining_room/turn_lights/off",
+        "luigis_beta_mansion:room/original/dining_room/reset/candle_1",
+        "luigis_beta_mansion:room/original/dining_room/reset/candle_2",
+        "luigis_beta_mansion:room/original/dining_room/reset/chair_1",
+        "luigis_beta_mansion:room/original/dining_room/reset/chair_2",
+        "luigis_beta_mansion:room/original/dining_room/reset/chair_3",
+        "luigis_beta_mansion:room/original/dining_room/reset/chair_4",
+        "luigis_beta_mansion:room/original/dining_room/reset/chair_5",
+        "luigis_beta_mansion:room/original/dining_room/reset/chair_6",
+        "luigis_beta_mansion:room/original/dining_room/reset/chair_7",
+        "luigis_beta_mansion:room/original/dining_room/reset/chest",
+        "luigis_beta_mansion:room/original/dining_room/reset/clock",
+        "luigis_beta_mansion:room/original/dining_room/reset/closet",
+        "luigis_beta_mansion:room/original/dining_room/reset/lamp_1",
+        "luigis_beta_mansion:room/original/dining_room/reset/lamp_2",
+        "luigis_beta_mansion:room/original/dining_room/reset/lamp_3",
+        "luigis_beta_mansion:room/original/dining_room/reset/lamp_4",
+        "luigis_beta_mansion:room/original/dining_room/reset/lamp_5",
+        "luigis_beta_mansion:room/original/dining_room/reset/table"
+    ]
+}

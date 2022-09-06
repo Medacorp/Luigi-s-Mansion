@@ -1,0 +1,1 @@
+execute store result storage luigis_mansion_3ds_remake:data loaded_mansion.settings.mansion_data_index int 1 run scoreboard players get #mansion_data_index Selected

@@ -1,0 +1,2 @@
+tag @s[x=686.0,y=22,z=67.0,dx=0,dy=1,dz=0,tag=check] add can_interact
+execute if entity @s[x=686.0,y=22,z=67.0,dx=0,dy=1,dz=0,tag=sound,tag=!long_shake] run function luigis_mansion:blocks/search_sound/ceramic

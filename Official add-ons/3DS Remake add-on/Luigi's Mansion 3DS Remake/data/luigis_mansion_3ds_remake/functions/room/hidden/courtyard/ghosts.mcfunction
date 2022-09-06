@@ -1,0 +1,5 @@
+execute if score #courtyard Wave matches 2 unless entity @e[tag=ghost,scores={Room=30},tag=!optional_ghost] run function luigis_mansion_3ds_remake:room/hidden/courtyard/clear
+execute if score #courtyard Wave matches 1 unless entity @e[tag=ghost,scores={Room=30},tag=!optional_ghost] run function luigis_mansion_3ds_remake:room/hidden/courtyard/wave_2
+execute unless data storage luigis_mansion:data current_state.current_data.rooms.courtyard{cleared:1b} if data storage luigis_mansion:data current_state.current_data{blackout:0b} unless score #courtyard Wave matches 1.. run function luigis_mansion_3ds_remake:room/hidden/courtyard/wave_1
+execute if data storage luigis_mansion:data current_state.current_data{blackout:1b} unless score #courtyard Wave matches 1.. run function luigis_mansion_3ds_remake:room/hidden/courtyard/blackout
+function luigis_mansion_3ds_remake:room/hidden/courtyard/load_vacuumable_ghosts

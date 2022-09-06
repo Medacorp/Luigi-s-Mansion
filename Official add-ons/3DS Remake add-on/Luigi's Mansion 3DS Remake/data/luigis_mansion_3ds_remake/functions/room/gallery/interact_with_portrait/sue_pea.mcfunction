@@ -1,0 +1,18 @@
+execute store result score #temp Time run data get storage luigis_mansion:data current_state.portrait_ghost_ranks.sue_pea
+execute if score #temp Time matches 3.. if entity @s[scores={FrameChoice=4}] run data merge storage luigis_mansion_3ds_remake:data {current_state:{selected_portraits:{sue_pea:3b}}}
+execute if score #temp Time matches 2.. if entity @s[scores={FrameChoice=3}] run data merge storage luigis_mansion_3ds_remake:data {current_state:{selected_portraits:{sue_pea:2b}}}
+execute if score #temp Time matches 1.. if entity @s[scores={FrameChoice=2}] run data merge storage luigis_mansion_3ds_remake:data {current_state:{selected_portraits:{sue_pea:1b}}}
+execute if score #temp Time matches 0.. if entity @s[scores={FrameChoice=1}] run data merge storage luigis_mansion_3ds_remake:data {current_state:{selected_portraits:{sue_pea:0b}}}
+
+execute if data storage luigis_mansion_3ds_remake:data {current_state:{selected_portraits:{sue_pea:0b}}} if score #global_3ds_remake_gallery Selected matches 1 run data merge entity @e[x=745.5,y=19,z=-25.5,type=minecraft:item_frame,distance=..0.7,limit=1] {Item:{id:"minecraft:painting",Count:1b,tag:{CustomModelData:159}}}
+execute if data storage luigis_mansion_3ds_remake:data {current_state:{selected_portraits:{sue_pea:1b}}} if score #global_3ds_remake_gallery Selected matches 1 run data merge entity @e[x=745.5,y=19,z=-25.5,type=minecraft:item_frame,distance=..0.7,limit=1] {Item:{id:"minecraft:painting",Count:1b,tag:{CustomModelData:160}}}
+execute if data storage luigis_mansion_3ds_remake:data {current_state:{selected_portraits:{sue_pea:2b}}} if score #global_3ds_remake_gallery Selected matches 1 run data merge entity @e[x=745.5,y=19,z=-25.5,type=minecraft:item_frame,distance=..0.7,limit=1] {Item:{id:"minecraft:painting",Count:1b,tag:{CustomModelData:161}}}
+execute if data storage luigis_mansion_3ds_remake:data {current_state:{selected_portraits:{sue_pea:3b}}} if score #global_3ds_remake_gallery Selected matches 1 run data merge entity @e[x=745.5,y=19,z=-25.5,type=minecraft:item_frame,distance=..0.7,limit=1] {Item:{id:"minecraft:painting",Count:1b,tag:{CustomModelData:162}}}
+
+execute if data storage luigis_mansion_3ds_remake:data {current_state:{selected_portraits:{sue_pea:0b}}} if score #global_3ds_remake_gallery Selected matches 0 run data merge entity @e[x=758.5,y=79,z=-30.5,type=minecraft:item_frame,distance=..0.7,limit=1] {Item:{id:"minecraft:painting",Count:1b,tag:{CustomModelData:30}}}
+execute if data storage luigis_mansion_3ds_remake:data {current_state:{selected_portraits:{sue_pea:1b}}} if score #global_3ds_remake_gallery Selected matches 0 run data merge entity @e[x=758.5,y=79,z=-30.5,type=minecraft:item_frame,distance=..0.7,limit=1] {Item:{id:"minecraft:painting",Count:1b,tag:{CustomModelData:31}}}
+execute if data storage luigis_mansion_3ds_remake:data {current_state:{selected_portraits:{sue_pea:2b}}} if score #global_3ds_remake_gallery Selected matches 0 run data merge entity @e[x=758.5,y=79,z=-30.5,type=minecraft:item_frame,distance=..0.7,limit=1] {Item:{id:"minecraft:painting",Count:1b,tag:{CustomModelData:32}}}
+execute if data storage luigis_mansion_3ds_remake:data {current_state:{selected_portraits:{sue_pea:3b}}} if score #global_3ds_remake_gallery Selected matches 0 run data merge entity @e[x=758.5,y=79,z=-30.5,type=minecraft:item_frame,distance=..0.7,limit=1] {Item:{id:"minecraft:painting",Count:1b,tag:{CustomModelData:32}}}
+
+scoreboard players reset #temp Time
+execute if entity @s[scores={FrameChoice=5}] run function #luigis_mansion_3ds_remake:room/gallery/portrait_battle/option/sue_pea

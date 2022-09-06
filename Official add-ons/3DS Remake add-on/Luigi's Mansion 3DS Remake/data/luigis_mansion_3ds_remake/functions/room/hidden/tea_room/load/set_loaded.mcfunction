@@ -1,0 +1,1 @@
+scoreboard players set #tea_room Ticking 1

@@ -1,0 +1,16 @@
+This add-on turns the world into the 3DS Remake version of the game.
+
+Strobulb flashight option added.
+New gallery added, with platinum frames, S Rank, Small ghost and Boo portrait, trophy and tasks, and portrait battles.
+Temper Terrors, Flashes and Blue Blazes that get shined on by the flashlight will get smug and vanish.
+Additional new hidden mansion (later referred to as 3DS Hidden), taking the place of the existing hidden mansion until later unlocked (as GCN Hidden)
+
+== Known issues ==
+
+None known
+
+== Supported languages ==
+English (US)
+Nederlands (Nederland)
+
+To get more supported, go to https://crowdin.com/project/medacorp-projects and help translate the map to more languages.

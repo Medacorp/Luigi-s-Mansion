@@ -1,0 +1,17 @@
+{
+    "values": [
+        "luigis_mansion_3ds_remake:room/hidden/fortune_tellers_room/reset/unload",
+        "#luigis_mansion_3ds_remake:room/hidden/fortune_tellers_room/turn_lights/off",
+        "luigis_mansion_3ds_remake:room/hidden/fortune_tellers_room/reset/candle_1",
+        "luigis_mansion_3ds_remake:room/hidden/fortune_tellers_room/reset/candle_2",
+        "luigis_mansion_3ds_remake:room/hidden/fortune_tellers_room/reset/chair",
+        "luigis_mansion_3ds_remake:room/hidden/fortune_tellers_room/reset/chest",
+        "luigis_mansion_3ds_remake:room/hidden/fortune_tellers_room/reset/crystal_ball",
+        "luigis_mansion_3ds_remake:room/hidden/fortune_tellers_room/reset/lamp",
+        "luigis_mansion_3ds_remake:room/hidden/fortune_tellers_room/reset/pillar_1",
+        "luigis_mansion_3ds_remake:room/hidden/fortune_tellers_room/reset/pillar_2",
+        "luigis_mansion_3ds_remake:room/hidden/fortune_tellers_room/reset/table_1",
+        "luigis_mansion_3ds_remake:room/hidden/fortune_tellers_room/reset/table_2",
+        "luigis_mansion_3ds_remake:room/hidden/fortune_tellers_room/reset/table_3"
+    ]
+}

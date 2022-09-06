@@ -1,0 +1,1 @@
+scoreboard players set #childs_room Ticking 1

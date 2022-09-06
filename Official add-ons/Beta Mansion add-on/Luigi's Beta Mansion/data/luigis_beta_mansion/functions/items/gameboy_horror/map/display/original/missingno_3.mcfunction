@@ -1,0 +1,3 @@
+execute if data storage luigis_mansion:data current_state.current_data.rooms.missingno_3{seen:0b} run function luigis_beta_mansion:items/gameboy_horror/map/display/original/missingno_3/unseen
+execute if data storage luigis_mansion:data current_state.current_data.rooms.missingno_3{seen:1b,cleared:0b} run function luigis_beta_mansion:items/gameboy_horror/map/display/original/missingno_3/seen
+execute if data storage luigis_mansion:data current_state.current_data.rooms.missingno_3{cleared:1b} run function luigis_beta_mansion:items/gameboy_horror/map/display/original/missingno_3/cleared

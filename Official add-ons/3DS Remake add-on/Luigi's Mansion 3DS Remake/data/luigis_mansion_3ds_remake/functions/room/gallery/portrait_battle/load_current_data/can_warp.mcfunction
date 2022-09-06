@@ -1,0 +1,1 @@
+execute store result score #can_warp Selected run data get storage luigis_mansion_3ds_remake:data loaded_mansion.settings.can_warp

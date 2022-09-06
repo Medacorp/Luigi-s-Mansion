@@ -1,0 +1,2 @@
+execute if block 704 11 32 minecraft:trapped_chest unless block 704 11 32 minecraft:trapped_chest{LootTable:"luigis_mansion:search"} run function luigis_mansion_3ds_remake:room/hidden/dining_room/search/chest
+execute if block 704 11 32 minecraft:trapped_chest unless score #dining_room_chest Searched matches 1 run particle minecraft:crit 704.5 11.5 32.5 0.6 0.6 0.6 0 1 normal @a[scores={Room=26}]

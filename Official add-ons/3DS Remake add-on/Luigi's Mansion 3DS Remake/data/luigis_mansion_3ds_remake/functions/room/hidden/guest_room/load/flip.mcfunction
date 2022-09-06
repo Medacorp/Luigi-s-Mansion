@@ -1,0 +1,1 @@
+execute if data storage luigis_mansion:data current_state.current_data.rooms.guest_room{cleared:1b} run place template luigis_mansion:guest_room/straight_up 723 19 -62
