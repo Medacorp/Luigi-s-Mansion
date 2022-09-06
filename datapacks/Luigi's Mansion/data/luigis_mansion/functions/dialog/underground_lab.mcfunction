@@ -73,6 +73,7 @@ execute if entity @s[tag=!talk] run scoreboard players reset @a MansionChoice
 scoreboard players set @s[tag=!talk] Dialog 0
 tag @s[tag=!talk] remove nod
 tag @s[tag=!talk] remove listen
+tag @s[tag=!talk] remove changing_mansion
 tag @s[tag=!talk] remove cannot_change
 tag @s[tag=!talk] remove no_mansion
 tag @s[tag=!talk] remove underground_lab_dialog
