@@ -1,0 +1,1 @@
+summon minecraft:armor_stand ~ ~-1.4 ~ {CustomName:'{"translate":"luigis_mansion:entity.candle_flame"}',Pose:{Head:[0.01f,0.0f,0.0f]},HasVisualFire:1b,Marker:1b,NoGravity:1b,Invisible:1b,Silent:1b,ArmorItems:[{},{},{},{}],Tags:["candle_flame","purple","scan_ignore"],DisabledSlots:2039583}

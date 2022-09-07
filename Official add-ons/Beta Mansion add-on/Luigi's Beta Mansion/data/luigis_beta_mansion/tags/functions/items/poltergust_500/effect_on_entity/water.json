@@ -12,6 +12,7 @@
         "luigis_beta_mansion:items/poltergust_500/effect_on_entity/water/spike_ball",
         "luigis_beta_mansion:items/poltergust_500/effect_on_entity/water/bomb",
         "luigis_beta_mansion:items/poltergust_500/effect_on_entity/water/door",
-        "luigis_beta_mansion:items/poltergust_500/effect_on_entity/water/burning_floor"
+        "luigis_beta_mansion:items/poltergust_500/effect_on_entity/water/burning_floor",
+        "luigis_beta_mansion:items/poltergust_500/effect_on_entity/water/candle_flame"
 	]
 }

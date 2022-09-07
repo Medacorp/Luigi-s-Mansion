@@ -19,13 +19,6 @@ execute at @s[nbt={OnGround:1b},tag=3] rotated ~ 0 run summon minecraft:marker ^
 execute at @s[nbt={OnGround:0b},tag=3] rotated ~ 0 run summon minecraft:marker ^ ^-0.9 ^1 {Tags:["interact","manual"]}
 tag @s add searcher
 scoreboard players add @s InteractionTime 1
-#to delete
-execute if entity @s[scores={InteractionTime=..16}] run tag @e[tag=interact,tag=manual,limit=1] add sound
-execute if entity @s[scores={InteractionTime=2}] at @e[tag=interact,tag=manual,limit=1] run function luigis_mansion:room/interactions
-execute if entity @s[scores={InteractionTime=9,InteractionType=2}] at @e[tag=interact,tag=manual,limit=1] run function luigis_mansion:room/interactions
-execute if entity @s[scores={InteractionTime=9,InteractionType=4}] at @e[tag=interact,tag=manual,limit=1] run function luigis_mansion:room/interactions
-execute if entity @s[scores={InteractionTime=17}] at @e[tag=interact,tag=manual,limit=1] run function luigis_mansion:room/interactions
-#/to delete
 execute if entity @s[scores={InteractionTime=2}] at @e[tag=interact,tag=manual,limit=1] as @e[tag=furniture,tag=same_room] run function luigis_mansion:items/interact/target_furniture/get_animation
 scoreboard players set @s[tag=not_facing,scores={IdleTime=0..}] InteractionType 3
 execute unless entity @s[scores={InteractionType=1..}] if predicate luigis_mansion:1_3 run scoreboard players set @s[scores={IdleTime=0..}] InteractionType 2
@@ -34,6 +27,14 @@ execute unless entity @s[scores={InteractionType=1..}] run scoreboard players se
 execute unless entity @s[scores={InteractionType=1..5}] run scoreboard players set @s[scores={IdleTime=0..}] InteractionType 3
 scoreboard players operation #temp Room = @s Room
 execute if entity @s[scores={InteractionType=3}] run tag @e[tag=interact,tag=manual,limit=1] add long_shake
+#to delete
+execute if entity @s[scores={InteractionTime=..16}] run tag @e[tag=interact,tag=manual,limit=1] add sound
+execute if entity @s[scores={InteractionTime=2}] as @e[tag=interact,tag=manual,limit=1] at @s run function luigis_mansion:room/interactions
+execute if entity @s[scores={InteractionTime=9,InteractionType=2}] as @e[tag=interact,tag=manual,limit=1] at @s run function luigis_mansion:room/interactions
+execute if entity @s[scores={InteractionTime=9,InteractionType=4}] as @e[tag=interact,tag=manual,limit=1] at @s run function luigis_mansion:room/interactions
+execute if entity @s[scores={InteractionTime=12,InteractionType=3}] as @e[tag=interact,tag=manual,limit=1] at @s run function luigis_mansion:room/interactions
+execute if entity @s[scores={InteractionTime=17}] as @e[tag=interact,tag=manual,limit=1] at @s run function luigis_mansion:room/interactions
+#/to delete
 execute if entity @s[scores={InteractionTime=2,InteractionType=1..},tag=!not_facing] at @e[tag=interact,tag=manual,limit=1] as @e[tag=furniture,tag=same_room] run function luigis_mansion:items/interact/target_furniture/shake
 execute if entity @s[scores={InteractionTime=2,InteractionType=1}] run function luigis_mansion:blocks/search_sound/wall
 execute if entity @s[scores={InteractionTime=2,InteractionType=3,Health=41..,Shrunk=0},tag=!gooigi] run playsound luigis_mansion:entity.player.search.high_health player @a[tag=same_room] ~ ~ ~ 1

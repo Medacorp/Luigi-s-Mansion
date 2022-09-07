@@ -6,7 +6,7 @@ scoreboard players set #temp Room 10
 execute as @a[gamemode=!spectator,scores={Room=10}] run function luigis_mansion:room/hidden/nursery/tick_per_player
 
 execute as @e[tag=eternal_gold_coin,scores={Room=10}] run scoreboard players add #temp Wave 1
-execute if score #temp Wave matches ..8 run data modify storage luigis_mansion:data current_state.current_data.money_spawned merge value {nursery_money:1b}
+execute if score #temp Wave matches ..8 unless data storage luigis_mansion:data current_state.current_data{money_spawned:["nursery_money"]} run data modify storage luigis_mansion:data current_state.current_data.money_spawned append value "nursery_money"
 scoreboard players reset #temp Wave
 
 function #luigis_mansion:room/hidden/nursery/interactions/room
