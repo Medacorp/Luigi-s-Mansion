@@ -1,8 +1,8 @@
 {
 	"values": [
 	    "luigis_mansion_3ds_remake:room/hidden/hallway_17/load/set_loaded",
-        "luigis_mansion_3ds_remake:room/hidden/hallway_17/load/lights",
         "luigis_mansion_3ds_remake:room/hidden/hallway_17/load/doors",
-        "luigis_mansion_3ds_remake:room/hidden/hallway_17/load/cobweb"
+        "luigis_mansion_3ds_remake:room/hidden/hallway_17/load/cobweb",
+        "luigis_mansion_3ds_remake:room/hidden/hallway_17/load/lamp"
 	]
 }

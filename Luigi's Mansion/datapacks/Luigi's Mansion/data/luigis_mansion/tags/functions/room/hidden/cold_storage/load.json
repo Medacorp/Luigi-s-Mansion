@@ -4,6 +4,7 @@
         "luigis_mansion:room/hidden/cold_storage/load/lights",
         "luigis_mansion:room/hidden/cold_storage/load/doors",
         "luigis_mansion:room/hidden/cold_storage/load/chest",
-        "luigis_mansion:room/hidden/cold_storage/load/fire"
+        "luigis_mansion:room/hidden/cold_storage/load/fire",
+        "luigis_mansion:room/hidden/cold_storage/load/lamp"
 	]
 }

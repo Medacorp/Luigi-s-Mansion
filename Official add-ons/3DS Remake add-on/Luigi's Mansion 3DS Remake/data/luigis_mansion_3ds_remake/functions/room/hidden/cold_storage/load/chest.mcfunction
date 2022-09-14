@@ -1,1 +1,1 @@
-execute if data storage luigis_mansion:data current_state.current_data.obtained_keys{the_artists_studio:1b} run scoreboard players set #cold_storage_chest Searched 1
+execute if data storage luigis_mansion:data current_state.current_data{obtained_keys:["the_artists_studio"]} run scoreboard players set #cold_storage_chest Searched 1

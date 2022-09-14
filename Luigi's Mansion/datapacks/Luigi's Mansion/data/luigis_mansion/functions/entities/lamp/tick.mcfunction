@@ -1,5 +1,6 @@
 tag @s remove dark_room
-function #luigis_mansion:room/dark_room
+execute if entity @s[tag=!dead,tag=!remove_from_existence] run function #luigis_mansion:room/dark_room
+tag @s[tag=!dead,tag=!remove_from_existence] add dark_room
 
 execute store result score #temp Time run data get entity @s ArmorItems[3].tag.CustomModelData
 execute if entity @s[tag=was_dark_room,tag=!dark_room] store result entity @s ArmorItems[3].tag.CustomModelData int 1 run scoreboard players add #temp Time 1

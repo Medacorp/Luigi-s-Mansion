@@ -1,1 +1,0 @@
-execute if data storage luigis_mansion:data drop_loot.contents.luigis_mansion.key[0] unless entity @a[tag=portait_battle,limit=1] run function luigis_mansion:other/drop_loot/loop/key

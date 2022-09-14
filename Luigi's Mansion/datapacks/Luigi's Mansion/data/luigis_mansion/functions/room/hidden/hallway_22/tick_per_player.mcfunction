@@ -9,4 +9,4 @@ execute store result score #temp Boos run data get storage luigis_mansion:data c
 execute if entity @s[x=655.0,y=2,z=29.0,dx=4,dy=7,dz=7] unless score #temp Boos matches 45.. unless entity @e[tag=king_boo,tag=warp,limit=1] positioned 656 2 33 run function luigis_mansion:spawn_entities/portrait_ghost/king_boo
 execute if entity @s[x=655.0,y=2,z=29.0,dx=4,dy=7,dz=7] unless score #temp Boos matches 45.. unless entity @e[tag=king_boo,tag=warp,limit=1] positioned 656 2 33 run tag @e[tag=king_boo,distance=..0.7,limit=1] add warp
 scoreboard players reset #temp Boos
-execute if entity @s[x=655.5,y=2,z=33.5,distance=..4] if data storage luigis_mansion:data current_state.current_data.obtained_keys{secret_altar:1b} run function luigis_mansion:room/hidden/hallway_22/clear_blockade
+execute if entity @s[x=655.5,y=2,z=33.5,distance=..4] if data storage luigis_mansion:data current_state.current_data{obtained_keys:["secret_altar"]} run function luigis_mansion:room/hidden/hallway_22/clear_blockade

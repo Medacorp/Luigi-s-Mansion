@@ -9,4 +9,5 @@ summon minecraft:marker ~ ~ ~ {Tags:["chance","nothing"]}
 tag @e[type=minecraft:marker,tag=chance,sort=random,limit=1] add selected
 execute if entity @e[type=minecraft:marker,tag=chance,tag=selected,tag=poison_mushroom] run function luigis_mansion:spawn_entities/item/poison_mushroom
 execute if entity @e[type=minecraft:marker,tag=chance,tag=selected,tag=small_heart] run function luigis_mansion:spawn_entities/item/small_heart
+tag @e[tag=this_entity,limit=1] remove this_entity
 kill @e[type=minecraft:marker,tag=chance]

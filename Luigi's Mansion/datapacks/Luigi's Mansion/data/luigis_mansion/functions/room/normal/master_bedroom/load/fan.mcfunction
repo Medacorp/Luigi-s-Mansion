@@ -1,2 +1,2 @@
-execute unless data storage luigis_mansion:data current_state.current_data{money_spawned:["master_bedroom_fan"]} run data modify storage luigis_mansion:data give_loot set value {name:"master_bedroom_fan",contents:{luigis_mansion:{bill:25}}}
+execute unless data storage luigis_mansion:data current_state.current_data{money_spawned:["master_bedroom_fan"]} run data modify storage luigis_mansion:data furniture.loot set value {name:"master_bedroom_fan",contents:{luigis_mansion:{bill:25}}}
 execute positioned 691.0 117 47.0 rotated -90 0 run function luigis_mansion:spawn_furniture/fan/turn_left

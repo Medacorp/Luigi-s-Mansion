@@ -1,1 +1,1 @@
-execute if data storage luigis_mansion:data current_state.current_data.obtained_keys{sitting_room:1b} run scoreboard players set #sealed_room_chest_10 Searched 1
+execute if data storage luigis_mansion:data current_state.current_data{obtained_keys:["sitting_room"]} run scoreboard players set #sealed_room_chest_10 Searched 1

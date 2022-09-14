@@ -1,1 +1,1 @@
-execute if data storage luigis_mansion:data current_state.current_data.obtained_keys{safari_room:1b} run scoreboard players set #fortune_tellers_room_chest Searched 1
+execute if data storage luigis_mansion:data current_state.current_data{obtained_keys:["safari_room"]} run scoreboard players set #fortune_tellers_room_chest Searched 1

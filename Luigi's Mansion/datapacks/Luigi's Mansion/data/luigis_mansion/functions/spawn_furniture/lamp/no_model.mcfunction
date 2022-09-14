@@ -1,0 +1,1 @@
+summon minecraft:marker ~ ~ ~ {CustomName:'{"translate":"luigis_mansion:entity.lamp"}',Tags:["lamp","was_dark_room","dark_room","scan_ignore"]}

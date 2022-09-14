@@ -1,6 +1,10 @@
 execute at @s if score #x Time matches 1 run teleport @s ~-0.5 ~ ~
 execute at @s if score #y Time matches 1 run teleport @s ~ ~-0.5 ~
 execute at @s if score #z Time matches 1 run teleport @s ~ ~ ~-0.5
-execute at @s if score #x Steps matches 1.. run function luigis_beta_mansion:items/poltergust_500/effect_on_furniture/move_x
-execute at @s if score #y Steps matches 1.. run function luigis_beta_mansion:items/poltergust_500/effect_on_furniture/move_y
-execute at @s if score #z Steps matches 1.. run function luigis_beta_mansion:items/poltergust_500/effect_on_furniture/move_z
+execute store result score #temp Time run data get entity @s Pos[0] 10
+execute store result entity @s Pos[0] double 0.1 run scoreboard players operation #temp Time -= #x Steps
+execute store result score #temp Time run data get entity @s Pos[1] 10
+execute store result entity @s Pos[1] double 0.1 run scoreboard players operation #temp Time -= #y Steps
+execute store result score #temp Time run data get entity @s Pos[2] 10
+execute store result entity @s Pos[2] double 0.1 run scoreboard players operation #temp Time -= #z Steps
+scoreboard players reset #temp Time

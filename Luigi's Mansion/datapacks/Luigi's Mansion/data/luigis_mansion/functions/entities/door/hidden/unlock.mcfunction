@@ -26,3 +26,4 @@ execute if entity @s[tag=hallway_20_cold_storage] run data modify storage luigis
 execute if entity @s[tag=hallway_13_sitting_room] run data modify storage luigis_mansion:data current_state.current_data.used_keys append value "sitting_room"
 execute if entity @s[tag=hallway_17_the_artists_studio] run data modify storage luigis_mansion:data current_state.current_data.used_keys append value "the_artists_studio"
 execute if entity @s[tag=hallway_22_secret_altar] run data modify storage luigis_mansion:data current_state.current_data.used_keys append value "secret_altar"
+execute if entity @a[tag=looking_at_map,limit=1] run function luigis_mansion:items/gameboy_horror/map/display/normal/generate

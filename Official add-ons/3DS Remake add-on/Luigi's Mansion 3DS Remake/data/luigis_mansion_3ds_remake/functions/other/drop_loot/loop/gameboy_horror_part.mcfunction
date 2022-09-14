@@ -1,1 +1,5 @@
 execute unless entity @e[tag=gameboy_horror_part,limit=1] unless data storage luigis_mansion_3ds_remake:data {obtained_gameboy_horror_part:1b} run function luigis_mansion_3ds_remake:spawn_entities/item/gameboy_horror_part
+execute if data storage luigis_mansion:data drop_loot.contents.luigis_mansion_3ds_remake.gameboy_horror_part.rotation run tag @e[tag=this_entity,limit=1] add rotated
+execute if data storage luigis_mansion:data drop_loot.contents.luigis_mansion_3ds_remake.gameboy_horror_part.rotation run data modify entity @e[tag=this_entity,limit=1] Rotation set from storage luigis_mansion:data drop_loot.contents.luigis_mansion_3ds_remake.gameboy_horror_part.rotation
+tag @e[tag=this_entity,limit=1] remove this_entity
+data remove storage luigis_mansion:data drop_loot.contents.luigis_mansion_3ds_remake.gameboy_horror_part

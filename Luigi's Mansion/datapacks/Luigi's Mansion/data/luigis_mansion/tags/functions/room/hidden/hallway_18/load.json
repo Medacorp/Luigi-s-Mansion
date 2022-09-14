@@ -1,8 +1,8 @@
 {
 	"values": [
 	    "luigis_mansion:room/hidden/hallway_18/load/set_loaded",
-        "luigis_mansion:room/hidden/hallway_18/load/lights",
         "luigis_mansion:room/hidden/hallway_18/load/doors",
-        "luigis_mansion:room/hidden/hallway_18/load/cobweb"
+        "luigis_mansion:room/hidden/hallway_18/load/cobweb",
+        "luigis_mansion:room/hidden/hallway_18/load/lamp"
 	]
 }
