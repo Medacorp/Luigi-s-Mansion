@@ -8,3 +8,5 @@ execute if data storage luigis_mansion:data {used_parlor_key:1b} run data modify
 execute if data storage luigis_mansion:data {used_parlor_key:1b} run data modify storage luigis_mansion:data current_state.mansion_data[].used_keys merge value {parlor:1b}
 execute if data storage luigis_mansion:data {used_parlor_key:1b} run data modify storage luigis_mansion:data saved_state.mansion_data[].used_keys merge value {parlor:1b}
 scoreboard objectives remove Attack
+scoreboard players operation #heart_money_count Selected = #heart_coin_count Selected
+scoreboard players reset #heart_coin_count Selected

@@ -5,7 +5,7 @@
         "luigis_mansion:room/reset_variable_to_default/changing_max_health",
         "luigis_mansion:room/reset_variable_to_default/gbh_clock",
         "luigis_mansion:room/reset_variable_to_default/gbh_clock_increase",
-        "luigis_mansion:room/reset_variable_to_default/heart_coin_count",
+        "luigis_mansion:room/reset_variable_to_default/heart_money_count",
         "luigis_mansion:room/reset_variable_to_default/mirrored",
         "luigis_mansion:room/reset_variable_to_default/multiply_damage",
         "luigis_mansion:room/reset_variable_to_default/multiply_hurt",
