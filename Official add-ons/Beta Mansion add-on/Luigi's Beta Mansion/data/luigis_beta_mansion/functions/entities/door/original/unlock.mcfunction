@@ -1,3 +1,4 @@
-execute if entity @s[tag=hallway_1_living_room] run data merge storage luigis_mansion:data {used_parlor_key:1b}
-execute if entity @s[tag=hallway_1_hallway_2] run data modify storage luigis_mansion:data current_state.current_data.used_keys merge value {hallway_2:1b}
-execute if entity @s[tag=entrance_hallway_3] run data modify storage luigis_mansion:data current_state.current_data.used_keys merge value {hallway_3:1b}
+execute if entity @s[tag=hallway_1_living_room] run data modify storage luigis_mansion:data current_state.current_data.used_keys append value "living_room"
+execute if entity @s[tag=hallway_1_hallway_2] run data modify storage luigis_mansion:data current_state.current_data.used_keys append value "hallway_2"
+execute if entity @s[tag=entrance_hallway_3] run data modify storage luigis_mansion:data current_state.current_data.used_keys append value "hallway_3"
+execute if entity @a[tag=looking_at_map,limit=1] run function luigis_beta_mansion:items/gameboy_horror/map/display/original/generate
