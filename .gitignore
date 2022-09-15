@@ -22,8 +22,8 @@
 /Luigi's Mansion/stats/
 /Official add-ons/*/* Dimension/*/*/data/chunks.dat
 /Official add-ons/*/* Dimension/*/*/data/raids.dat
-/Official add-ons/*/* Dimension/*/*/data/entities/
-/Official add-ons/*/* Dimension/*/*/data/poi/
+/Official add-ons/*/* Dimension/*/*/entities/
+/Official add-ons/*/* Dimension/*/*/poi/
 /versions/
 *_old
 session.lock
