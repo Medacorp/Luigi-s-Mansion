@@ -701,15 +701,6 @@
         ],
         "subtitle": "luigis_beta_mansion:subtitles.item.poltergust_500.vaporize"
     },
-    "item.poltergust_500.vaporize_vacuumable": {
-        "sounds": [
-            {
-                "name": "luigis_mansion:item/poltergust_3000/vaporize_vacuumable",
-                "stream": false
-            }
-        ],
-        "subtitle": "luigis_beta_mansion:subtitles.item.poltergust_500.vaporize"
-    },
     "music.first_key": {
         "sounds": [
             {

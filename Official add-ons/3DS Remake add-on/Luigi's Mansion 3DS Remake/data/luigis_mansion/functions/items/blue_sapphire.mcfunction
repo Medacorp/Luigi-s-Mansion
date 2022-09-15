@@ -10,7 +10,7 @@ execute as @a[tag=collector,tag=!gooigi,tag=looking_at_map,limit=1,scores={Healt
 execute as @a[tag=collector,tag=!gooigi,tag=looking_at_map,limit=1,scores={Health=..40,Shrunk=1..}] at @s run playsound luigis_mansion:entity.player.show_item.low_health player @s ~ ~ ~ 1 2
 scoreboard players set @a[tag=collector,tag=!gooigi,limit=1] Sound 70
 execute as @a[tag=same_room,scores={Music=..70}] unless entity @s[scores={HealthMusic=1..}] run scoreboard players set @s Music 70
-function luigis_mansion:items/retreive_player_money/retreive
+function luigis_mansion:items/get_player_money/get
 execute store result score #temp Time run data get storage luigis_mansion:data current_state.my_money.money.luigis_mansion.blue_sapphire
 execute unless score #temp ActionTime matches 2147483647 store result storage luigis_mansion:data current_state.my_money.money.luigis_mansion.blue_sapphire int 1 run scoreboard players add #temp Time 1
 execute store result score #temp Time run data get storage luigis_mansion:data current_state.my_money.total

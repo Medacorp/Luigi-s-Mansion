@@ -4,7 +4,7 @@ execute in minecraft:overworld run data modify block 27 0 0 Items[0].tag.value s
 data modify storage luigis_mansion:data current_state.new_money_grabbed set value []
 data modify storage luigis_mansion:data current_state.my_money set value {uuid:[I;],total:0,money:{}}
 data modify storage luigis_mansion:data current_state.my_money.uuid set from entity @a[tag=collector,limit=1] UUID
-execute in minecraft:overworld if data storage luigis_mansion:data current_state.money_grabbed[-1] run function luigis_mansion:items/retreive_player_money/retreive_index
+execute in minecraft:overworld if data storage luigis_mansion:data current_state.money_grabbed[-1] run function luigis_mansion:items/get_player_money/get_index
 scoreboard players reset #temp ActionTime
 execute in minecraft:overworld run fill 27 0 0 26 0 0 minecraft:bedrock
 data modify storage luigis_mansion:data current_state.money_grabbed set from storage luigis_mansion:data current_state.new_money_grabbed
@@ -16,7 +16,7 @@ execute in minecraft:overworld run data modify block 27 0 0 Items[0].tag.value s
 data modify storage luigis_mansion:data current_state.new_money_grabbed set value []
 data modify storage luigis_mansion:data current_state.my_money_data set value {uuid:[I;],total:0,money:{}}
 data modify storage luigis_mansion:data current_state.my_money_data.uuid set from entity @a[tag=collector,limit=1] UUID
-execute in minecraft:overworld if data storage luigis_mansion:data current_state.current_data.money_grabbed[-1] run function luigis_mansion:items/retreive_player_money/retreive_index_mansion
+execute in minecraft:overworld if data storage luigis_mansion:data current_state.current_data.money_grabbed[-1] run function luigis_mansion:items/get_player_money/get_index_mansion
 scoreboard players reset #temp ActionTime
 execute in minecraft:overworld run fill 27 0 0 26 0 0 minecraft:bedrock
 data modify storage luigis_mansion:data current_state.current_data.money_grabbed set from storage luigis_mansion:data current_state.new_money_grabbed

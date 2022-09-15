@@ -134,7 +134,7 @@
 "luigis_beta_mansion:subtitles.entity.puncher.laugh": "Puncher laughs",
 "luigis_beta_mansion:subtitles.entity.puncher.spawn": "Puncher spawns",
 "luigis_beta_mansion:subtitles.item.ghost_coin.bounce": "Ghost Coin bounces",
-"luigis_beta_mansion:subtitles.item.ghost_coin.obtain": "Ghost Coin obtained",
+"luigis_beta_mansion:subtitles.item.ghost_coin.obtain": "Player obtains Ghost Coin",
 "luigis_beta_mansion:subtitles.item.poltergust_500.catch": "Poltergust 500 swallows",
 "luigis_beta_mansion:subtitles.item.poltergust_500.clogged": "Poltergust 500 gets clogged",
 "luigis_beta_mansion:subtitles.item.poltergust_500.damage": "Poltergust 500 drains energy",
@@ -143,5 +143,5 @@
 "luigis_beta_mansion:subtitles.item.poltergust_500.hit": "Poltergust 500 bonks",
 "luigis_beta_mansion:subtitles.item.poltergust_500.reel_in": "Poltergust 500 reels in",
 "luigis_beta_mansion:subtitles.item.poltergust_500.vacuuming": "Poltergust 500 vacuums",
-"luigis_beta_mansion:subtitles.item.poltergust_500.vaporize": "Poltergust 500 vaporizes"
+"luigis_beta_mansion:subtitles.item.poltergust_500.vaporize": "Poltergust 500 vaporizes ghost"
 }

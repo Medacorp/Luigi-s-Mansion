@@ -9948,15 +9948,6 @@
         ],
         "subtitle": "luigis_mansion:subtitles.item.poltergust_3000.vaporize"
     },
-    "item.poltergust_3000.vaporize_vacuumable": {
-        "sounds": [
-            {
-                "name": "luigis_mansion:item/poltergust_3000/vaporize_vacuumable",
-                "stream": false
-            }
-        ],
-        "subtitle": "luigis_mansion:subtitles.item.poltergust_3000.vaporize"
-    },
     "item.red_diamond.bounce": {
         "sounds": [
             {
