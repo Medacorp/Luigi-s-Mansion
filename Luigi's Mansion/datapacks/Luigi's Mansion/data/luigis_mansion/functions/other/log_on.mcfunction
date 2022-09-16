@@ -8,6 +8,7 @@ scoreboard players set @s PrevMusicType 0
 scoreboard players set @s RoomNoise 0
 scoreboard players set @s LoadedChunks 0
 scoreboard players set @s CreditsTime 0
+execute unless entity @s[scores={FlashlightType=0..2}] run scoreboard players set @s FlashlightType 0
 function luigis_mansion:entities/player/animation/set/none
 scoreboard players reset @s ID
 scoreboard players operation @s ID > @a ID
