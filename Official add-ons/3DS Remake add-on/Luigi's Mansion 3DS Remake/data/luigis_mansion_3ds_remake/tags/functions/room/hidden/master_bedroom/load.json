@@ -3,13 +3,13 @@
 	    "luigis_mansion_3ds_remake:room/hidden/master_bedroom/load/set_loaded",
         "luigis_mansion_3ds_remake:room/hidden/master_bedroom/load/lights",
         "luigis_mansion_3ds_remake:room/hidden/master_bedroom/load/doors",
-        "luigis_mansion_3ds_remake:room/hidden/master_bedroom/load/chest",
         "luigis_mansion_3ds_remake:room/hidden/master_bedroom/load/fan",
         "luigis_mansion_3ds_remake:room/hidden/master_bedroom/load/painting_1",
         "luigis_mansion_3ds_remake:room/hidden/master_bedroom/load/painting_2",
         "luigis_mansion_3ds_remake:room/hidden/master_bedroom/load/painting_3",
         "luigis_mansion_3ds_remake:room/hidden/master_bedroom/load/painting_4",
         "luigis_mansion_3ds_remake:room/hidden/master_bedroom/load/painting_5",
+        "luigis_mansion_3ds_remake:room/hidden/master_bedroom/load/room_clear_chest",
         "luigis_mansion_3ds_remake:room/hidden/master_bedroom/load/table_2",
         "luigis_mansion_3ds_remake:room/hidden/master_bedroom/load/cobweb"
 	]

@@ -7191,6 +7191,326 @@
         {
             "predicate": {
                 "damaged": 0,
+                "damage": 0.0118,
+                "custom_model_data": 7
+            },
+            "model": "luigis_mansion:entity/room_clear_chest/blue/small_state_0"
+        },
+        {
+            "predicate": {
+                "damaged": 0,
+                "damage": 0.0118,
+                "custom_model_data": 8
+            },
+            "model": "luigis_mansion:entity/room_clear_chest/blue/small_state_1"
+        },
+        {
+            "predicate": {
+                "damaged": 0,
+                "damage": 0.0118,
+                "custom_model_data": 9
+            },
+            "model": "luigis_mansion:entity/room_clear_chest/blue/small_state_2"
+        },
+        {
+            "predicate": {
+                "damaged": 0,
+                "damage": 0.0118,
+                "custom_model_data": 10
+            },
+            "model": "luigis_mansion:entity/room_clear_chest/blue/small_state_3"
+        },
+        {
+            "predicate": {
+                "damaged": 0,
+                "damage": 0.0118,
+                "custom_model_data": 11
+            },
+            "model": "luigis_mansion:entity/room_clear_chest/blue/small_state_4"
+        },
+        {
+            "predicate": {
+                "damaged": 0,
+                "damage": 0.0118,
+                "custom_model_data": 12
+            },
+            "model": "luigis_mansion:entity/room_clear_chest/green/small_state_0"
+        },
+        {
+            "predicate": {
+                "damaged": 0,
+                "damage": 0.0118,
+                "custom_model_data": 13
+            },
+            "model": "luigis_mansion:entity/room_clear_chest/green/small_state_1"
+        },
+        {
+            "predicate": {
+                "damaged": 0,
+                "damage": 0.0118,
+                "custom_model_data": 14
+            },
+            "model": "luigis_mansion:entity/room_clear_chest/green/small_state_2"
+        },
+        {
+            "predicate": {
+                "damaged": 0,
+                "damage": 0.0118,
+                "custom_model_data": 15
+            },
+            "model": "luigis_mansion:entity/room_clear_chest/green/small_state_3"
+        },
+        {
+            "predicate": {
+                "damaged": 0,
+                "damage": 0.0118,
+                "custom_model_data": 16
+            },
+            "model": "luigis_mansion:entity/room_clear_chest/green/small_state_4"
+        },
+        {
+            "predicate": {
+                "damaged": 0,
+                "damage": 0.0118,
+                "custom_model_data": 17
+            },
+            "model": "luigis_mansion:entity/room_clear_chest/red/small_state_0"
+        },
+        {
+            "predicate": {
+                "damaged": 0,
+                "damage": 0.0118,
+                "custom_model_data": 18
+            },
+            "model": "luigis_mansion:entity/room_clear_chest/red/small_state_1"
+        },
+        {
+            "predicate": {
+                "damaged": 0,
+                "damage": 0.0118,
+                "custom_model_data": 19
+            },
+            "model": "luigis_mansion:entity/room_clear_chest/red/small_state_2"
+        },
+        {
+            "predicate": {
+                "damaged": 0,
+                "damage": 0.0118,
+                "custom_model_data": 20
+            },
+            "model": "luigis_mansion:entity/room_clear_chest/red/small_state_3"
+        },
+        {
+            "predicate": {
+                "damaged": 0,
+                "damage": 0.0118,
+                "custom_model_data": 21
+            },
+            "model": "luigis_mansion:entity/room_clear_chest/red/small_state_4"
+        },
+        {
+            "predicate": {
+                "damaged": 0,
+                "damage": 0.0118,
+                "custom_model_data": 22
+            },
+            "model": "luigis_mansion:entity/room_clear_chest/gold/state_0"
+        },
+        {
+            "predicate": {
+                "damaged": 0,
+                "damage": 0.0118,
+                "custom_model_data": 23
+            },
+            "model": "luigis_mansion:entity/room_clear_chest/gold/state_1"
+        },
+        {
+            "predicate": {
+                "damaged": 0,
+                "damage": 0.0118,
+                "custom_model_data": 24
+            },
+            "model": "luigis_mansion:entity/room_clear_chest/gold/state_2"
+        },
+        {
+            "predicate": {
+                "damaged": 0,
+                "damage": 0.0118,
+                "custom_model_data": 25
+            },
+            "model": "luigis_mansion:entity/room_clear_chest/gold/state_3"
+        },
+        {
+            "predicate": {
+                "damaged": 0,
+                "damage": 0.0118,
+                "custom_model_data": 26
+            },
+            "model": "luigis_mansion:entity/room_clear_chest/gold/state_4"
+        },
+        {
+            "predicate": {
+                "damaged": 0,
+                "damage": 0.0118,
+                "custom_model_data": 27
+            },
+            "model": "luigis_mansion:entity/room_clear_chest/green/state_0"
+        },
+        {
+            "predicate": {
+                "damaged": 0,
+                "damage": 0.0118,
+                "custom_model_data": 28
+            },
+            "model": "luigis_mansion:entity/room_clear_chest/green/state_1"
+        },
+        {
+            "predicate": {
+                "damaged": 0,
+                "damage": 0.0118,
+                "custom_model_data": 29
+            },
+            "model": "luigis_mansion:entity/room_clear_chest/green/state_2"
+        },
+        {
+            "predicate": {
+                "damaged": 0,
+                "damage": 0.0118,
+                "custom_model_data": 30
+            },
+            "model": "luigis_mansion:entity/room_clear_chest/green/state_3"
+        },
+        {
+            "predicate": {
+                "damaged": 0,
+                "damage": 0.0118,
+                "custom_model_data": 31
+            },
+            "model": "luigis_mansion:entity/room_clear_chest/green/state_4"
+        },
+        {
+            "predicate": {
+                "damaged": 0,
+                "damage": 0.0118,
+                "custom_model_data": 32
+            },
+            "model": "luigis_mansion:entity/room_clear_chest/green/state_0"
+        },
+        {
+            "predicate": {
+                "damaged": 0,
+                "damage": 0.0118,
+                "custom_model_data": 33
+            },
+            "model": "luigis_mansion:entity/room_clear_chest/red/state_1"
+        },
+        {
+            "predicate": {
+                "damaged": 0,
+                "damage": 0.0118,
+                "custom_model_data": 34
+            },
+            "model": "luigis_mansion:entity/room_clear_chest/red/state_2"
+        },
+        {
+            "predicate": {
+                "damaged": 0,
+                "damage": 0.0118,
+                "custom_model_data": 35
+            },
+            "model": "luigis_mansion:entity/room_clear_chest/red/state_3"
+        },
+        {
+            "predicate": {
+                "damaged": 0,
+                "damage": 0.0118,
+                "custom_model_data": 36
+            },
+            "model": "luigis_mansion:entity/room_clear_chest/red/state_4"
+        },
+        {
+            "predicate": {
+                "damaged": 0,
+                "damage": 0.0118,
+                "custom_model_data": 37
+            },
+            "model": "luigis_mansion:entity/room_clear_chest/blue/state_0"
+        },
+        {
+            "predicate": {
+                "damaged": 0,
+                "damage": 0.0118,
+                "custom_model_data": 38
+            },
+            "model": "luigis_mansion:entity/room_clear_chest/blue/state_1"
+        },
+        {
+            "predicate": {
+                "damaged": 0,
+                "damage": 0.0118,
+                "custom_model_data": 39
+            },
+            "model": "luigis_mansion:entity/room_clear_chest/blue/state_2"
+        },
+        {
+            "predicate": {
+                "damaged": 0,
+                "damage": 0.0118,
+                "custom_model_data": 40
+            },
+            "model": "luigis_mansion:entity/room_clear_chest/blue/state_3"
+        },
+        {
+            "predicate": {
+                "damaged": 0,
+                "damage": 0.0118,
+                "custom_model_data": 41
+            },
+            "model": "luigis_mansion:entity/room_clear_chest/blue/state_4"
+        },
+        {
+            "predicate": {
+                "damaged": 0,
+                "damage": 0.0118,
+                "custom_model_data": 42
+            },
+            "model": "luigis_mansion:entity/room_clear_chest/white/state_0"
+        },
+        {
+            "predicate": {
+                "damaged": 0,
+                "damage": 0.0118,
+                "custom_model_data": 43
+            },
+            "model": "luigis_mansion:entity/room_clear_chest/white/state_1"
+        },
+        {
+            "predicate": {
+                "damaged": 0,
+                "damage": 0.0118,
+                "custom_model_data": 44
+            },
+            "model": "luigis_mansion:entity/room_clear_chest/white/state_2"
+        },
+        {
+            "predicate": {
+                "damaged": 0,
+                "damage": 0.0118,
+                "custom_model_data": 45
+            },
+            "model": "luigis_mansion:entity/room_clear_chest/white/state_3"
+        },
+        {
+            "predicate": {
+                "damaged": 0,
+                "damage": 0.0118,
+                "custom_model_data": 46
+            },
+            "model": "luigis_mansion:entity/room_clear_chest/white/state_4"
+        },
+        {
+            "predicate": {
+                "damaged": 0,
                 "damage": 0.0124,
                 "custom_model_data": 0
             },

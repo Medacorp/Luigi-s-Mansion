@@ -1,17 +1,16 @@
 {
     "values": [
         "luigis_mansion_3ds_remake:room/hidden/cold_storage/reset/unload",
-        "#luigis_mansion_3ds_remake:room/hidden/cold_storage/turn_lights/off",
         "luigis_mansion_3ds_remake:room/hidden/cold_storage/reset/barrel_1",
         "luigis_mansion_3ds_remake:room/hidden/cold_storage/reset/barrel_2",
         "luigis_mansion_3ds_remake:room/hidden/cold_storage/reset/campfire_1",
         "luigis_mansion_3ds_remake:room/hidden/cold_storage/reset/campfire_2",
         "luigis_mansion_3ds_remake:room/hidden/cold_storage/reset/campfire_3",
-        "luigis_mansion_3ds_remake:room/hidden/cold_storage/reset/chest",
         "luigis_mansion_3ds_remake:room/hidden/cold_storage/reset/crate_1",
         "luigis_mansion_3ds_remake:room/hidden/cold_storage/reset/crate_2",
         "luigis_mansion_3ds_remake:room/hidden/cold_storage/reset/fire",
         "luigis_mansion_3ds_remake:room/hidden/cold_storage/reset/junk",
+        "luigis_mansion_3ds_remake:room/hidden/cold_storage/reset/room_clear_chest",
         "luigis_mansion_3ds_remake:room/hidden/cold_storage/reset/shelf_1",
         "luigis_mansion_3ds_remake:room/hidden/cold_storage/reset/shelf_2"
     ]

@@ -4,7 +4,6 @@
         "luigis_mansion:room/hidden/ceramics_studio/load/lights",
         "luigis_mansion:room/hidden/ceramics_studio/load/doors",
         "luigis_mansion:room/hidden/ceramics_studio/load/haunted_objects",
-        "luigis_mansion:room/hidden/ceramics_studio/load/chest",
         "luigis_mansion:room/hidden/ceramics_studio/load/frozen_jar",
         "luigis_mansion:room/hidden/ceramics_studio/load/ice",
         "luigis_mansion:room/hidden/ceramics_studio/load/jar_1",
@@ -15,6 +14,7 @@
         "luigis_mansion:room/hidden/ceramics_studio/load/jar_6",
         "luigis_mansion:room/hidden/ceramics_studio/load/jar_7",
         "luigis_mansion:room/hidden/ceramics_studio/load/jar_8",
+        "luigis_mansion:room/hidden/ceramics_studio/load/room_clear_chest",
         "luigis_mansion:room/hidden/ceramics_studio/load/cobweb"
 	]
 }

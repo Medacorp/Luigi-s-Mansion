@@ -1,1 +1,0 @@
-execute if data storage luigis_mansion:data current_state.current_data{obtained_keys:["billiards_room"]} run scoreboard players set #bathroom_2_chest Searched 1

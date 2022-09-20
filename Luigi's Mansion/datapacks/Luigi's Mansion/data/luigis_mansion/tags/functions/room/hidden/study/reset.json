@@ -12,7 +12,6 @@
         "luigis_mansion:room/hidden/study/reset/bookshelf_6",
         "luigis_mansion:room/hidden/study/reset/bottled_ship",
         "luigis_mansion:room/hidden/study/reset/chair",
-        "luigis_mansion:room/hidden/study/reset/chest",
         "luigis_mansion:room/hidden/study/reset/fire",
         "luigis_mansion:room/hidden/study/reset/hat_rack",
         "luigis_mansion:room/hidden/study/reset/lamp_1",
@@ -23,6 +22,7 @@
         "luigis_mansion:room/hidden/study/reset/painting_4",
         "luigis_mansion:room/hidden/study/reset/painting_5",
         "luigis_mansion:room/hidden/study/reset/rocking_chair",
+        "luigis_mansion:room/hidden/study/reset/room_clear_chest",
         "luigis_mansion:room/hidden/study/reset/table"
     ]
 }

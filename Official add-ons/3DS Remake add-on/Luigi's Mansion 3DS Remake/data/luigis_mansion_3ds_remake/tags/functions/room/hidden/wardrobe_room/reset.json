@@ -2,7 +2,6 @@
     "values": [
         "luigis_mansion_3ds_remake:room/hidden/wardrobe_room/reset/unload",
         "#luigis_mansion_3ds_remake:room/hidden/wardrobe_room/turn_lights/off",
-        "luigis_mansion_3ds_remake:room/hidden/wardrobe_room/reset/chest",
         "luigis_mansion_3ds_remake:room/hidden/wardrobe_room/reset/closet_1",
         "luigis_mansion_3ds_remake:room/hidden/wardrobe_room/reset/closet_2",
         "luigis_mansion_3ds_remake:room/hidden/wardrobe_room/reset/closet_3",
@@ -19,6 +18,7 @@
         "luigis_mansion_3ds_remake:room/hidden/wardrobe_room/reset/mirror",
         "luigis_mansion_3ds_remake:room/hidden/wardrobe_room/reset/painting_1",
         "luigis_mansion_3ds_remake:room/hidden/wardrobe_room/reset/painting_2",
+        "luigis_mansion_3ds_remake:room/hidden/wardrobe_room/reset/room_clear_chest",
         "luigis_mansion_3ds_remake:room/hidden/wardrobe_room/reset/shoe_stand"
     ]
 }

@@ -6,7 +6,6 @@
         "luigis_mansion:room/normal/parlor/load/spawn_money",
         "luigis_mansion:room/normal/parlor/load/candle_1",
         "luigis_mansion:room/normal/parlor/load/candle_2",
-        "luigis_mansion:room/normal/parlor/load/chest",
         "luigis_mansion:room/normal/parlor/load/painting_1",
         "luigis_mansion:room/normal/parlor/load/painting_2",
         "luigis_mansion:room/normal/parlor/load/painting_3",
@@ -15,6 +14,7 @@
         "luigis_mansion:room/normal/parlor/load/painting_6",
         "luigis_mansion:room/normal/parlor/load/painting_7",
         "luigis_mansion:room/normal/parlor/load/cobweb_1",
-        "luigis_mansion:room/normal/parlor/load/cobweb_2"
+        "luigis_mansion:room/normal/parlor/load/cobweb_2",
+        "luigis_mansion:room/normal/parlor/load/room_clear_chest"
 	]
 }

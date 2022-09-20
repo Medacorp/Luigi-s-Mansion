@@ -4,7 +4,6 @@
         "#luigis_mansion_3ds_remake:room/hidden/balcony_2/turn_lights/off",
         "luigis_mansion_3ds_remake:room/hidden/balcony_2/reset/bench_1",
         "luigis_mansion_3ds_remake:room/hidden/balcony_2/reset/bench_2",
-        "luigis_mansion_3ds_remake:room/hidden/balcony_2/reset/chest",
         "luigis_mansion_3ds_remake:room/hidden/balcony_2/reset/lamp_1",
         "luigis_mansion_3ds_remake:room/hidden/balcony_2/reset/lamp_2",
         "luigis_mansion_3ds_remake:room/hidden/balcony_2/reset/lamp_3",
@@ -27,6 +26,7 @@
         "luigis_mansion_3ds_remake:room/hidden/balcony_2/reset/plant_14",
         "luigis_mansion_3ds_remake:room/hidden/balcony_2/reset/plant_15",
         "luigis_mansion_3ds_remake:room/hidden/balcony_2/reset/plant_16",
+        "luigis_mansion_3ds_remake:room/hidden/balcony_2/reset/room_clear_chest",
         "luigis_mansion_3ds_remake:room/hidden/balcony_2/reset/statue_1",
         "luigis_mansion_3ds_remake:room/hidden/balcony_2/reset/statue_2"
     ]

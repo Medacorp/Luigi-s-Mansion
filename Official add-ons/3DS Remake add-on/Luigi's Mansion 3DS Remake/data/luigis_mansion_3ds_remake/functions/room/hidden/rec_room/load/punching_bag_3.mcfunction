@@ -1,0 +1,1 @@
+execute positioned 644 11 -41 run function luigis_mansion:spawn_furniture/punching_bag

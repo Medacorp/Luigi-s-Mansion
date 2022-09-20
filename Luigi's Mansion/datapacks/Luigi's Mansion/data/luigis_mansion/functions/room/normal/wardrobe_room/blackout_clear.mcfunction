@@ -1,5 +1,7 @@
-setblock 682 20 69 minecraft:trapped_chest[facing=east,type=single]{LootTable:"luigis_mansion:search"}
-setblock 672 20 69 minecraft:trapped_chest[facing=west,type=single]{LootTable:"luigis_mansion:search"}
-playsound luigis_mansion:block.chest.spawn block @a 682 20 69 2
+data modify storage luigis_mansion:data furniture.loot set value {contents:{luigis_mansion:{key:[{door:"breaker_room",variant:0b,rotation:[-180.0f,0.0f]}]}}}
+execute unless data storage luigis_mansion:data current_state.current_data{money_spawned:["wardrobe_room_room_clear_chest"]} run data modify storage luigis_mansion:data furniture.loot.name set value "wardrobe_room_room_clear_chest"
+execute if data storage luigis_mansion:data current_state.current_data{money_spawned:["wardrobe_room_room_clear_chest"]} run data modify storage luigis_mansion:data furniture.open set value 1b
+execute positioned 682 20 69 rotated -90 0 run function luigis_mansion:spawn_furniture/room_clear_chest/small_blue
+setblock 682 20 69 minecraft:light_gray_stained_glass
 data modify storage luigis_mansion:data current_state.current_data.technical_data merge value {caught_grimmly:1b}
 scoreboard players set #wardrobe_room Wave 101

@@ -30,4 +30,4 @@ tag @s remove search
 execute if entity @s[tag=drop_loot] run function luigis_mansion:entities/furniture/tick/search
 tag @s remove drop_loot
 
-execute if entity @s[tag=open] run function #luigis_mansion:entities/furniture/open
+execute if entity @s[tag=open,scores={ActionTime=0..}] run function #luigis_mansion:entities/furniture/open

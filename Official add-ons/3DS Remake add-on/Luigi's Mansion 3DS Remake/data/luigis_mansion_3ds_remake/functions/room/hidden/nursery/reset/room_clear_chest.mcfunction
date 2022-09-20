@@ -1,0 +1,1 @@
+setblock 742 20 61 minecraft:light_gray_stained_glass

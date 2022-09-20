@@ -1,1 +1,0 @@
-scoreboard players reset #guest_room_chest

@@ -1,0 +1,1 @@
+execute positioned 659 107 47 run function luigis_mansion:spawn_furniture/lamp/no_model

@@ -1,2 +1,0 @@
-execute if block 740 20 40 minecraft:trapped_chest unless block 740 20 40 minecraft:trapped_chest{LootTable:"luigis_mansion:search"} run function luigis_mansion_3ds_remake:room/hidden/the_twins_room/search/chest
-execute if block 740 20 40 minecraft:trapped_chest unless score #the_twins_room_chest Searched matches 1 run particle minecraft:crit 740.5 20.5 40.5 0.6 0.6 0.6 0 1 normal @a[scores={Room=49}]

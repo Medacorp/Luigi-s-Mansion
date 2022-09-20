@@ -1,1 +1,0 @@
-setblock 659 107 47 minecraft:light[level=15]

@@ -3,8 +3,8 @@
 	    "luigis_mansion:room/normal/mirror_room/load/set_loaded",
         "luigis_mansion:room/normal/mirror_room/load/lights",
         "luigis_mansion:room/normal/mirror_room/load/doors",
-        "luigis_mansion:room/normal/mirror_room/load/chest",
         "luigis_mansion:room/normal/mirror_room/load/fire",
-        "luigis_mansion:room/normal/mirror_room/load/painting"
+        "luigis_mansion:room/normal/mirror_room/load/painting",
+        "luigis_mansion:room/normal/mirror_room/load/room_clear_chest"
 	]
 }

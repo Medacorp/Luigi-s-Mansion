@@ -1,1 +1,0 @@
-execute if data storage luigis_mansion:data current_state.current_data{obtained_keys:["pipe_room"]} run scoreboard players set #armory_chest_6 Searched 1

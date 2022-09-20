@@ -3,7 +3,6 @@
 	    "luigis_mansion:room/hidden/study/load/set_loaded",
         "luigis_mansion:room/hidden/study/load/lights",
         "luigis_mansion:room/hidden/study/load/doors",
-        "luigis_mansion:room/hidden/study/load/chest",
         "luigis_mansion:room/hidden/study/load/fire",
         "luigis_mansion:room/hidden/study/load/painting_1",
         "luigis_mansion:room/hidden/study/load/painting_2",
@@ -11,6 +10,7 @@
         "luigis_mansion:room/hidden/study/load/painting_4",
         "luigis_mansion:room/hidden/study/load/painting_5",
         "luigis_mansion:room/hidden/study/load/rocking_chair",
+        "luigis_mansion:room/hidden/study/load/room_clear_chest",
         "luigis_mansion:room/hidden/study/load/cobweb_1",
         "luigis_mansion:room/hidden/study/load/cobweb_2"
 	]

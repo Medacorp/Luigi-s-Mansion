@@ -1,7 +1,7 @@
 execute store result entity @s[scores={Dialog=0}] Pos[0] double 0.01 run scoreboard players get @s HomeX
 execute store result entity @s[scores={Dialog=0}] Pos[1] double 0.01 run scoreboard players get @s HomeY
 execute store result entity @s[scores={Dialog=0}] Pos[2] double 0.01 run scoreboard players get @s HomeZ
-execute positioned ~ ~-1.85 ~ run scoreboard players operation @s ActionTime = @e[tag=rocking_chair,distance=..1,limit=1] AnimationProg
+execute positioned ~ ~-1.85 ~ run scoreboard players operation @s ActionTime = @e[tag=rocking_chair,distance=..1,limit=1] Dialog
 scoreboard players set @s[scores={Dialog=0}] AnimationProg 0
 execute if entity @s[scores={Dialog=0}] positioned ~ ~-1.85 ~ if entity @e[tag=rocking_chair,distance=..1,limit=1] at @s unless score @s ActionTime = @s AnimationProg run function luigis_mansion:animations/neville/get_idle_position
 scoreboard players set @s[scores={Dialog=0}] Dialog 1

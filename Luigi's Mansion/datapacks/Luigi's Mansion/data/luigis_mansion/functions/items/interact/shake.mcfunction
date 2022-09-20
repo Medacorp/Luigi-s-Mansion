@@ -12,7 +12,7 @@ kill @e[tag=home,limit=1]
 #type 4 = knock
 
 #none set = randomly 2, 3 or 4
-#out of range = 3
+#out of range or not facing correctly = 3
 execute at @s[tag=1] rotated ~ 0 run summon minecraft:marker ^ ^0.1 ^1 {Tags:["interact","manual"]}
 execute at @s[tag=2] rotated ~ 0 run summon minecraft:marker ^ ^1.1 ^1 {Tags:["interact","manual"]}
 execute at @s[nbt={OnGround:1b},tag=3] rotated ~ 0 run summon minecraft:marker ^ ^2.1 ^1 {Tags:["interact","manual"]}

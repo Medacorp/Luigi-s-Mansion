@@ -1,1 +1,1 @@
-execute if entity @s[tag=!rolling,tag=!swinging,tag=!swirling,tag=!fan,tag=!plant,tag=!room_clear_chest] run function luigis_mansion:entities/furniture/tick/generic
+execute if entity @s[tag=generic] run function luigis_mansion:entities/furniture/tick/generic

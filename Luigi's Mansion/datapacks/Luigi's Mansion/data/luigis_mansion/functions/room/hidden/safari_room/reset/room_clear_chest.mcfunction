@@ -1,0 +1,1 @@
+setblock 738 29 56 minecraft:air

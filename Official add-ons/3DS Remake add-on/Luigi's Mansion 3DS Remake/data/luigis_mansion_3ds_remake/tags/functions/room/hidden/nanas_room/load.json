@@ -3,8 +3,8 @@
 	    "luigis_mansion_3ds_remake:room/hidden/nanas_room/load/set_loaded",
         "luigis_mansion_3ds_remake:room/hidden/nanas_room/load/lights",
         "luigis_mansion_3ds_remake:room/hidden/nanas_room/load/doors",
-        "luigis_mansion_3ds_remake:room/hidden/nanas_room/load/chest",
         "luigis_mansion_3ds_remake:room/hidden/nanas_room/load/painting",
-        "luigis_mansion_3ds_remake:room/hidden/nanas_room/load/paintings"
+        "luigis_mansion_3ds_remake:room/hidden/nanas_room/load/paintings",
+        "luigis_mansion_3ds_remake:room/hidden/nanas_room/load/room_clear_chest"
 	]
 }

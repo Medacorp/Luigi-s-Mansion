@@ -1,1 +1,0 @@
-scoreboard players reset #graveyard_lamp_1

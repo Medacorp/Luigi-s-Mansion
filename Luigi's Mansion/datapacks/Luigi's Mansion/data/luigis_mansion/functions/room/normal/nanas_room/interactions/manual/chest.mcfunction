@@ -1,4 +1,0 @@
-execute if block 656 20 -13 minecraft:trapped_chest run tag @s[x=656.5,y=20,z=-12.5,distance=..0.7,tag=check] add can_interact
-execute if block 656 20 -13 minecraft:trapped_chest if entity @s[x=656.5,y=20,z=-12.5,distance=..0.7,tag=check] run scoreboard players set @a[tag=searcher,limit=1] InteractionType 3
-execute if block 656 20 -13 minecraft:trapped_chest if entity @s[x=656.5,y=20,z=-12.5,distance=..0.7,tag=sound] unless score #nanas_room_chest Searched matches 1 if entity @a[tag=searcher,limit=1,y_rotation=45..135,scores={InteractionTime=2}] run function luigis_mansion:blocks/search_sound/chest
-execute if block 656 20 -13 minecraft:trapped_chest if entity @s[x=656.5,y=20,z=-12.5,distance=..0.7,tag=!sound,tag=!check] if entity @a[tag=searcher,limit=1,y_rotation=45..135] run function luigis_mansion:room/normal/nanas_room/search/chest

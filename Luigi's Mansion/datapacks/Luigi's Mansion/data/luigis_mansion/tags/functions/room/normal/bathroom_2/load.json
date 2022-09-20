@@ -3,6 +3,6 @@
 	    "luigis_mansion:room/normal/bathroom_2/load/set_loaded",
         "luigis_mansion:room/normal/bathroom_2/load/lights",
         "luigis_mansion:room/normal/bathroom_2/load/doors",
-        "luigis_mansion:room/normal/bathroom_2/load/chest"
+        "luigis_mansion:room/normal/bathroom_2/load/room_clear_chest"
 	]
 }

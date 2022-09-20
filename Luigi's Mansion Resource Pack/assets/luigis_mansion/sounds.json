@@ -147,16 +147,6 @@
         ],
         "subtitle": "luigis_mansion:subtitles.block.chandelier.stop"
     },
-    "block.chest.spawn": {
-        "sounds": [
-            {
-                "name": "luigis_mansion:block/chest/spawn",
-                "stream": false,
-				"volume": 0.5
-            }
-        ],
-        "subtitle": "luigis_mansion:subtitles.block.chest.spawn"
-    },
     "block.clock.coo_coo": {
         "sounds": [
             {
@@ -363,6 +353,16 @@
             }
         ],
         "subtitle": "luigis_mansion:subtitles.block.moving_wall"
+    },
+    "block.room_clear_chest.spawn": {
+        "sounds": [
+            {
+                "name": "luigis_mansion:block/room_clear_chest/spawn",
+                "stream": false,
+				"volume": 0.5
+            }
+        ],
+        "subtitle": "luigis_mansion:subtitles.block.room_clear_chest.spawn"
     },
     "block.search.cello": {
         "sounds": [
