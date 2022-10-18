@@ -34,7 +34,7 @@ scoreboard players remove @s[scores={Shrunk=1..}] Shrunk 1
 scoreboard players set @s[tag=fix_health] Health 100
 tag @s remove fix_health
 execute if entity @s[tag=!joined] run function luigis_mansion:other/join_world
-execute if entity @s[scores={Offline=1..}] run function luigis_mansion:other/log_on
+execute unless entity @s[scores={Offline=0}] run function luigis_mansion:other/log_on
 execute if entity @s[scores={ChangedMansion=1}] run function luigis_mansion:entities/player/changed_mansion
 
 execute unless score @s PrevRoom = @s Room run tag @s remove seen_room_name
