@@ -122,13 +122,16 @@ execute if entity @s[scores={Dialog=1050},tag=ending] run function luigis_mansio
 execute if entity @s[scores={Dialog=1050},tag=ending] if score #temp2 Money matches 1.. run tellraw @a[tag=same_room] {"translate":"chat.type.text","with":[{"translate":"luigis_mansion:entity.mansion","color":"green"},{"translate":"luigis_mansion:message.money.high_score","with":[{"score":{"objective":"Money","name":"#temp2"}}]}]}
 execute if entity @s[scores={Dialog=1050},tag=ending] unless score #temp2 Money matches 1.. run tellraw @a[tag=same_room] {"translate":"chat.type.text","with":[{"translate":"luigis_mansion:entity.mansion","color":"green"},{"translate":"luigis_mansion:message.money.high_score.no_money"}]}
 execute if entity @s[scores={Dialog=1050..1065}] unless score #temp Money matches 0 if score #temp Dialog matches 0 as @a[tag=same_room] at @s run playsound luigis_mansion:item.count_money player @s ~ ~ ~ 1
-execute if entity @s[scores={Dialog=1050}] store result score #temp Money run data get storage luigis_mansion:data current_state.current_data.in_mansion_time
-execute if entity @s[scores={Dialog=1050}] run function luigis_mansion_3ds_remake:dialog/portrificationizing/convert_time
-execute if entity @s[scores={Dialog=1050}] run tellraw @a[tag=same_room] {"translate":"chat.type.text","with":[{"translate":"luigis_mansion:entity.mansion","color":"green"},{"translate":"luigis_mansion_3ds_remake:message.time_spent_in_mansion","with":[{"score":{"name":"#temp","objective":"Time"}},{"score":{"name":"#temp","objective":"ActionTime"}},{"score":{"name":"#temp","objective":"Money"}}]}]}
 execute if entity @s[scores={Dialog=1050}] run scoreboard players reset #temp Money
+execute if entity @s[scores={Dialog=1050}] store result score #temp Time run data get storage luigis_mansion:data current_state.current_data.in_mansion_time
+execute if entity @s[scores={Dialog=1050}] run function luigis_mansion_3ds_remake:dialog/portrificationizing/convert_time
+execute if entity @s[scores={Dialog=1050}] run tellraw @a[tag=same_room] {"translate":"chat.type.text","with":[{"translate":"luigis_mansion:entity.mansion","color":"green"},{"translate":"luigis_mansion_3ds_remake:message.time_spent_in_mansion","with":[{"score":{"name":"#temp6","objective":"Time"}},{"score":{"name":"#temp5","objective":"Time"}},{"score":{"name":"#temp4","objective":"Time"}},{"score":{"name":"#temp3","objective":"Time"}},{"score":{"name":"#temp2","objective":"Time"}},{"score":{"name":"#temp","objective":"Time"}}]}]}
 execute if entity @s[scores={Dialog=1050}] run scoreboard players reset #temp Time
-execute if entity @s[scores={Dialog=1050}] run scoreboard players reset #temp ActionTime
-execute if entity @s[scores={Dialog=1050}] run scoreboard players reset #temp2 Money
+execute if entity @s[scores={Dialog=1050}] run scoreboard players reset #temp2 Time
+execute if entity @s[scores={Dialog=1050}] run scoreboard players reset #temp3 Time
+execute if entity @s[scores={Dialog=1050}] run scoreboard players reset #temp4 Time
+execute if entity @s[scores={Dialog=1050}] run scoreboard players reset #temp5 Time
+execute if entity @s[scores={Dialog=1050}] run scoreboard players reset #temp6 Time
 teleport @s[scores={Dialog=810..1068},tag=!ending] ~ ~ ~0.1 0 0
 teleport @s[scores={Dialog=1069},tag=!ending] 774 77 14 0 0
 tag @s[scores={Dialog=1069},tag=!ending] remove walk
