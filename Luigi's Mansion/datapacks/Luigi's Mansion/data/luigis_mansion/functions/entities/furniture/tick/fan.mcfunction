@@ -6,8 +6,8 @@ execute if entity @s[tag=!in_vacuum] if score @s RotationSpeed > @s RotationSpee
 function luigis_mansion:entities/furniture/tick/turn_fan
 tag @s remove in_vacuum
 
-execute unless entity @s[scores={RotationSpeed=..999},tag=searchable_by_vacuum] if entity @s[tag=!searched] run function luigis_mansion:entities/furniture/tick/search
-execute unless entity @s[scores={RotationSpeed=..999},tag=searchable_by_vacuum] run tag @s add searched
+execute unless entity @s[scores={RotationSpeed=..999}] if entity @s[tag=!searched,tag=searchable_by_vacuum] run function luigis_mansion:entities/furniture/tick/search
+execute unless entity @s[scores={RotationSpeed=..999}] run tag @s[tag=searchable_by_vacuum] add searched
 tag @s[scores={RotationSpeed=..799}] remove searched
 execute if entity @s[tag=searchable_by_hand,tag=search] run function luigis_mansion:entities/furniture/tick/search
 tag @s[tag=!searchable_by_hand,tag=search] add open

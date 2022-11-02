@@ -1,0 +1,10 @@
+execute if score #x Steps matches 0 run function luigis_mansion:items/gameboy_horror/scan/target_furniture/hardcoded_bounding_box/x_0
+execute if score #x Steps matches 1 run function luigis_mansion:items/gameboy_horror/scan/target_furniture/hardcoded_bounding_box/x_1
+execute if score #x Steps matches 2 run function luigis_mansion:items/gameboy_horror/scan/target_furniture/hardcoded_bounding_box/x_2
+execute if score #x Steps matches 3 run function luigis_mansion:items/gameboy_horror/scan/target_furniture/hardcoded_bounding_box/x_3
+execute if score #x Steps matches 4 run function luigis_mansion:items/gameboy_horror/scan/target_furniture/hardcoded_bounding_box/x_4
+execute if score #x Steps matches 5 run function luigis_mansion:items/gameboy_horror/scan/target_furniture/hardcoded_bounding_box/x_5
+execute if score #x Steps matches 6 run function luigis_mansion:items/gameboy_horror/scan/target_furniture/hardcoded_bounding_box/x_6
+execute if score #x Steps matches 7 run function luigis_mansion:items/gameboy_horror/scan/target_furniture/hardcoded_bounding_box/x_7
+execute if score #x Steps matches 8 run function luigis_mansion:items/gameboy_horror/scan/target_furniture/hardcoded_bounding_box/x_8
+execute if score #x Steps matches 9 run function luigis_mansion:items/gameboy_horror/scan/target_furniture/hardcoded_bounding_box/x_9

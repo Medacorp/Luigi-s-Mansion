@@ -1,6 +1,6 @@
 execute store result score #temp RotationSpeed run data get entity @s Rotation[0] 10
 execute if entity @s[tag=!turn_left] store result entity @s Rotation[0] float 0.1 run scoreboard players operation #temp RotationSpeed += @s RotationSpeed
-execute if entity @s[tag=turn_left] store result entity @s Rotation[0] float 0.1 run scoreboard players operation #temp RotationSpeed += @s RotationSpeed
+execute if entity @s[tag=turn_left] store result entity @s Rotation[0] float 0.1 run scoreboard players operation #temp RotationSpeed -= @s RotationSpeed
 execute unless score #temp RotationSpeed matches -1800..1799 if entity @s[scores={RotationSpeed=..50}] run playsound luigis_mansion:block.fan block @a[tag=same_room] ~ ~ ~ 1 1
 execute unless score #temp RotationSpeed matches -1800..1799 if entity @s[scores={RotationSpeed=..175}] unless entity @s[scores={RotationSpeed=..50}] run playsound luigis_mansion:block.fan block @a[tag=same_room] ~ ~ ~ 1 1.125
 execute unless score #temp RotationSpeed matches -1800..1799 if entity @s[scores={RotationSpeed=..300}] unless entity @s[scores={RotationSpeed=..175}] run playsound luigis_mansion:block.fan block @a[tag=same_room] ~ ~ ~ 1 1.25

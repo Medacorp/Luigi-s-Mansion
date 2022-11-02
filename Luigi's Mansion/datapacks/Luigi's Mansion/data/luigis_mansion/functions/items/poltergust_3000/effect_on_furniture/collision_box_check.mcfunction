@@ -6,10 +6,10 @@ scoreboard players operation #x Time = @s FurnitureSizeX
 scoreboard players operation #x Time %= #2 Constants
 scoreboard players operation #y Steps = @s FurnitureSizeY
 execute if entity @s[tag=standing_furniture] run scoreboard players set #y Steps 0
-execute if entity @s[tag=!haning_furniture,tag=!standing_furniture] run scoreboard players operation #y Steps /= #2 Constants
+execute if entity @s[tag=!hanging_furniture,tag=!standing_furniture] run scoreboard players operation #y Steps /= #2 Constants
 scoreboard players operation #y Steps *= #10 Constants
-execute if entity @s[tag=!haning_furniture,tag=!standing_furniture] run scoreboard players operation #y Time = @s FurnitureSizeY
-execute if entity @s[tag=!haning_furniture,tag=!standing_furniture] run scoreboard players operation #y Time %= #2 Constants
+execute if entity @s[tag=!hanging_furniture,tag=!standing_furniture] run scoreboard players operation #y Time = @s FurnitureSizeY
+execute if entity @s[tag=!hanging_furniture,tag=!standing_furniture] run scoreboard players operation #y Time %= #2 Constants
 scoreboard players operation #z Steps = @s FurnitureSizeZ
 scoreboard players operation #z Steps /= #2 Constants
 scoreboard players operation #z Steps *= #10 Constants

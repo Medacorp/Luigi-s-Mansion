@@ -1,0 +1,1 @@
+execute if entity @s[tag=beta_room_clear_chest] run function luigis_beta_mansion:entities/furniture/tick/beta_room_clear_chest

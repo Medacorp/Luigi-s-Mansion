@@ -1,1 +1,2 @@
+data modify storage luigis_mansion:data furniture set value {can_hide_boo:1b,searchable:["hand","vacuum"],scan_message:'{"translate":"luigis_mansion:message.player.scan_furniture.55"}'}
 execute positioned 709.0 20 57.0 rotated -125 0 run function luigis_mansion:spawn_furniture/rocking_chair

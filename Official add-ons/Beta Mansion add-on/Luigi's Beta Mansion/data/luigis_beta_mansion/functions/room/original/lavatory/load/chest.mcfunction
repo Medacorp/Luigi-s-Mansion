@@ -1,1 +1,0 @@
-execute if data storage luigis_mansion:data current_state.current_data{money_spawned:["lavatory_chest"]} run scoreboard players set #lavatory_chest Searched 1

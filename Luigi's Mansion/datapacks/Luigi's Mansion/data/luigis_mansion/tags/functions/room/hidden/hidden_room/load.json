@@ -2,18 +2,18 @@
 	"values": [
 	    "luigis_mansion:room/hidden/hidden_room/load/set_loaded",
         "luigis_mansion:room/hidden/hidden_room/load/lights",
-        "luigis_mansion:room/hidden/hidden_room/load/chest_1",
-        "luigis_mansion:room/hidden/hidden_room/load/chest_2",
-        "luigis_mansion:room/hidden/hidden_room/load/chest_3",
-        "luigis_mansion:room/hidden/hidden_room/load/chest_4",
-        "luigis_mansion:room/hidden/hidden_room/load/chest_5",
-        "luigis_mansion:room/hidden/hidden_room/load/chest_6",
-        "luigis_mansion:room/hidden/hidden_room/load/chest_7",
         "luigis_mansion:room/hidden/hidden_room/load/painting_1",
         "luigis_mansion:room/hidden/hidden_room/load/painting_2",
         "luigis_mansion:room/hidden/hidden_room/load/painting_3",
         "luigis_mansion:room/hidden/hidden_room/load/painting_4",
         "luigis_mansion:room/hidden/hidden_room/load/painting_5",
-        "luigis_mansion:room/hidden/hidden_room/load/room_clear_chest"
+        "luigis_mansion:room/hidden/hidden_room/load/room_clear_chest",
+        "luigis_mansion:room/hidden/hidden_room/load/treasure_chest_1",
+        "luigis_mansion:room/hidden/hidden_room/load/treasure_chest_2",
+        "luigis_mansion:room/hidden/hidden_room/load/treasure_chest_3",
+        "luigis_mansion:room/hidden/hidden_room/load/treasure_chest_4",
+        "luigis_mansion:room/hidden/hidden_room/load/treasure_chest_5",
+        "luigis_mansion:room/hidden/hidden_room/load/treasure_chest_6",
+        "luigis_mansion:room/hidden/hidden_room/load/treasure_chest_7"
 	]
 }

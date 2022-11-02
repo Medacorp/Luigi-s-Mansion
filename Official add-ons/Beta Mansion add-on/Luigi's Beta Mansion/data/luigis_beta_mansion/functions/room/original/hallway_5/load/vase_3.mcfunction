@@ -1,0 +1,1 @@
+execute positioned 680 12.5 -19 rotated -90 0 run function luigis_beta_mansion:spawn_furniture/vase

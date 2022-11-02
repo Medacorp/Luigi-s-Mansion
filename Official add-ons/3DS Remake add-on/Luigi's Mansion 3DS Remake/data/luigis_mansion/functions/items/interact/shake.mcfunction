@@ -13,6 +13,8 @@ kill @e[tag=home,limit=1]
 #type 5 = chest
 #none set = randomly 2, 3 or 4
 #out of range or not facing correctly = 3
+scoreboard players reset @s YellTime
+function luigis_mansion:entities/player/animation/set/no_idle
 execute at @s[tag=1] rotated ~ 0 run summon minecraft:marker ^ ^0.1 ^1 {Tags:["interact","manual"]}
 execute at @s[tag=2] rotated ~ 0 run summon minecraft:marker ^ ^1.1 ^1 {Tags:["interact","manual"]}
 execute at @s[nbt={OnGround:1b},tag=3] rotated ~ 0 run summon minecraft:marker ^ ^2.1 ^1 {Tags:["interact","manual"]}
@@ -54,5 +56,3 @@ scoreboard players reset @s[scores={InteractionTime=17}] InteractionTime
 kill @e[tag=interact,tag=manual,limit=1]
 tag @s remove searcher
 scoreboard players reset #temp Room
-scoreboard players reset @s YellTime
-function luigis_mansion:entities/player/animation/set/no_idle

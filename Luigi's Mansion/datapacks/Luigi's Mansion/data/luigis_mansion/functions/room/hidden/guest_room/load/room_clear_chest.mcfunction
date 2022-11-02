@@ -1,3 +1,4 @@
+data modify storage luigis_mansion:data furniture set value {searchable:["hand"]}
 execute unless data storage luigis_mansion:data current_state.current_data{money_spawned:["guest_room_room_clear_chest"]} run data modify storage luigis_mansion:data furniture.loot set value {name:"guest_room_room_clear_chest",contents:{luigis_mansion:{gold_coin:20,bill:20,gold_bar:2,silver_diamond:1}}}
 execute if data storage luigis_mansion:data current_state.current_data{money_spawned:["guest_room_room_clear_chest"]} run data modify storage luigis_mansion:data furniture.open set value 1b
 execute if block 742 21 67 minecraft:redstone_lamp run data modify storage luigis_mansion:data furniture.pose set value {Head:[0.01f,0.0f,-180.0f]}

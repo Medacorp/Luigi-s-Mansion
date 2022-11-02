@@ -7136,6 +7136,94 @@
             "predicate": {
                 "damaged": 0,
                 "damage": 0.0118,
+                "custom_model_data": -1
+            },
+            "model": "luigis_mansion_3ds_remake:entity/gallery_chest/state_0"
+        },
+        {
+            "predicate": {
+                "damaged": 0,
+                "damage": 0.0118,
+                "custom_model_data": -2
+            },
+            "model": "luigis_mansion_3ds_remake:entity/gallery_chest/state_1"
+        },
+        {
+            "predicate": {
+                "damaged": 0,
+                "damage": 0.0118,
+                "custom_model_data": -3
+            },
+            "model": "luigis_mansion_3ds_remake:entity/gallery_chest/state_2"
+        },
+        {
+            "predicate": {
+                "damaged": 0,
+                "damage": 0.0118,
+                "custom_model_data": -4
+            },
+            "model": "luigis_mansion_3ds_remake:entity/gallery_chest/state_3"
+        },
+        {
+            "predicate": {
+                "damaged": 0,
+                "damage": 0.0118,
+                "custom_model_data": -5
+            },
+            "model": "luigis_mansion_3ds_remake:entity/gallery_chest/state_4"
+        },
+        {
+            "predicate": {
+                "damaged": 0,
+                "damage": 0.0118,
+                "custom_model_data": -6
+            },
+            "model": "luigis_beta_mansion:entity/room_clear_chest/state_0"
+        },
+        {
+            "predicate": {
+                "damaged": 0,
+                "damage": 0.0118,
+                "custom_model_data": -7
+            },
+            "model": "luigis_beta_mansion:entity/room_clear_chest/state_1"
+        },
+        {
+            "predicate": {
+                "damaged": 0,
+                "damage": 0.0118,
+                "custom_model_data": -8
+            },
+            "model": "luigis_beta_mansion:entity/room_clear_chest/state_2"
+        },
+        {
+            "predicate": {
+                "damaged": 0,
+                "damage": 0.0118,
+                "custom_model_data": -9
+            },
+            "model": "luigis_beta_mansion:entity/room_clear_chest/state_3"
+        },
+        {
+            "predicate": {
+                "damaged": 0,
+                "damage": 0.0118,
+                "custom_model_data": -10
+            },
+            "model": "luigis_beta_mansion:entity/room_clear_chest/state_4"
+        },
+        {
+            "predicate": {
+                "damaged": 0,
+                "damage": 0.0118,
+                "custom_model_data": -11
+            },
+            "model": "luigis_beta_mansion:entity/vase"
+        },
+        {
+            "predicate": {
+                "damaged": 0,
+                "damage": 0.0118,
                 "custom_model_data": 0
             },
             "model": "luigis_mansion:entity/cobweb/undisturbed"
@@ -7511,6 +7599,182 @@
         {
             "predicate": {
                 "damaged": 0,
+                "damage": 0.0118,
+                "custom_model_data": 47
+            },
+            "model": "luigis_mansion:entity/treasure_chest/small_state_0"
+        },
+        {
+            "predicate": {
+                "damaged": 0,
+                "damage": 0.0118,
+                "custom_model_data": 48
+            },
+            "model": "luigis_mansion:entity/treasure_chest/small_state_1"
+        },
+        {
+            "predicate": {
+                "damaged": 0,
+                "damage": 0.0118,
+                "custom_model_data": 49
+            },
+            "model": "luigis_mansion:entity/treasure_chest/small_state_2"
+        },
+        {
+            "predicate": {
+                "damaged": 0,
+                "damage": 0.0118,
+                "custom_model_data": 50
+            },
+            "model": "luigis_mansion:entity/treasure_chest/small_state_3"
+        },
+        {
+            "predicate": {
+                "damaged": 0,
+                "damage": 0.0118,
+                "custom_model_data": 51
+            },
+            "model": "luigis_mansion:entity/treasure_chest/small_state_4"
+        },
+        {
+            "predicate": {
+                "damaged": 0,
+                "damage": 0.0118,
+                "custom_model_data": 52
+            },
+            "model": "luigis_mansion:entity/treasure_chest/state_0"
+        },
+        {
+            "predicate": {
+                "damaged": 0,
+                "damage": 0.0118,
+                "custom_model_data": 53
+            },
+            "model": "luigis_mansion:entity/treasure_chest/state_1"
+        },
+        {
+            "predicate": {
+                "damaged": 0,
+                "damage": 0.0118,
+                "custom_model_data": 54
+            },
+            "model": "luigis_mansion:entity/treasure_chest/state_2"
+        },
+        {
+            "predicate": {
+                "damaged": 0,
+                "damage": 0.0118,
+                "custom_model_data": 55
+            },
+            "model": "luigis_mansion:entity/treasure_chest/state_3"
+        },
+        {
+            "predicate": {
+                "damaged": 0,
+                "damage": 0.0118,
+                "custom_model_data": 56
+            },
+            "model": "luigis_mansion:entity/treasure_chest/state_4"
+        },
+        {
+            "predicate": {
+                "damaged": 0,
+                "damage": 0.0118,
+                "custom_model_data": 57
+            },
+            "model": "luigis_mansion:entity/wooden_chest/state_0"
+        },
+        {
+            "predicate": {
+                "damaged": 0,
+                "damage": 0.0118,
+                "custom_model_data": 58
+            },
+            "model": "luigis_mansion:entity/wooden_chest/state_1"
+        },
+        {
+            "predicate": {
+                "damaged": 0,
+                "damage": 0.0118,
+                "custom_model_data": 59
+            },
+            "model": "luigis_mansion:entity/wooden_chest/state_2"
+        },
+        {
+            "predicate": {
+                "damaged": 0,
+                "damage": 0.0118,
+                "custom_model_data": 60
+            },
+            "model": "luigis_mansion:entity/wooden_chest/state_3"
+        },
+        {
+            "predicate": {
+                "damaged": 0,
+                "damage": 0.0118,
+                "custom_model_data": 61
+            },
+            "model": "luigis_mansion:entity/wooden_chest/state_4"
+        },
+        {
+            "predicate": {
+                "damaged": 0,
+                "damage": 0.0118,
+                "custom_model_data": 62
+            },
+            "model": "luigis_mansion:entity/metal_chest/state_0"
+        },
+        {
+            "predicate": {
+                "damaged": 0,
+                "damage": 0.0118,
+                "custom_model_data": 63
+            },
+            "model": "luigis_mansion:entity/metal_chest/state_1"
+        },
+        {
+            "predicate": {
+                "damaged": 0,
+                "damage": 0.0118,
+                "custom_model_data": 64
+            },
+            "model": "luigis_mansion:entity/metal_chest/state_2"
+        },
+        {
+            "predicate": {
+                "damaged": 0,
+                "damage": 0.0118,
+                "custom_model_data": 65
+            },
+            "model": "luigis_mansion:entity/metal_chest/state_3"
+        },
+        {
+            "predicate": {
+                "damaged": 0,
+                "damage": 0.0118,
+                "custom_model_data": 66
+            },
+            "model": "luigis_mansion:entity/metal_chest/state_4"
+        },
+        {
+            "predicate": {
+                "damaged": 0,
+                "damage": 0.0124,
+                "custom_model_data": -1
+            },
+            "model": "luigis_mansion_3ds_remake:entity/helicopter_mobile"
+        },
+        {
+            "predicate": {
+                "damaged": 0,
+                "damage": 0.013,
+                "custom_model_data": -1
+            },
+            "model": "luigis_mansion_3ds_remake:entity/helicopter_mobile_mirrored"
+        },
+        {
+            "predicate": {
+                "damaged": 0,
                 "damage": 0.0124,
                 "custom_model_data": 0
             },
@@ -7523,6 +7787,38 @@
                 "custom_model_data": 0
             },
             "model": "luigis_mansion:entity/fan_mirrored"
+        },
+        {
+            "predicate": {
+                "damaged": 0,
+                "damage": 0.0124,
+                "custom_model_data": 1
+            },
+            "model": "luigis_mansion:entity/helicopter_mobile"
+        },
+        {
+            "predicate": {
+                "damaged": 0,
+                "damage": 0.013,
+                "custom_model_data": 1
+            },
+            "model": "luigis_mansion:entity/helicopter_mobile_mirrored"
+        },
+        {
+            "predicate": {
+                "damaged": 0,
+                "damage": 0.0124,
+                "custom_model_data": 2
+            },
+            "model": "luigis_mansion:entity/bat_mobile"
+        },
+        {
+            "predicate": {
+                "damaged": 0,
+                "damage": 0.013,
+                "custom_model_data": 2
+            },
+            "model": "luigis_mansion:entity/bat_mobile_mirrored"
         },
         {
             "predicate": {

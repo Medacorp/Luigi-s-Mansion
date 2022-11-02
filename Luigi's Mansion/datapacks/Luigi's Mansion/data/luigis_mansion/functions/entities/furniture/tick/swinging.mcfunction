@@ -17,24 +17,24 @@ execute if entity @s[scores={FurnitureZProg=84,FurnitureZTarget=-200..200}] unle
 execute if entity @s[scores={FurnitureZProg=84,FurnitureZTarget=-300..300}] unless entity @s[scores={FurnitureZTarget=-200..200}] run playsound luigis_mansion:block.search.swing block @a[tag=same_room] ~ ~ ~ 1 0.8
 execute if entity @s[scores={FurnitureZProg=84}] unless entity @s[scores={FurnitureZTarget=-300..300}] run playsound luigis_mansion:block.search.swing block @a[tag=same_room] ~ ~ ~ 1 1
 
-scoreboard players set @s FurnitureSearch 0
-execute if entity @s[scores={FurnitureXTarget=-900..900}] run scoreboard players operation @s FurnitureSearch = @s FurnitureXTarget
-execute if score @s FurnitureSearch matches ..-1 if score @s FurnitureZTarget matches 1.. run scoreboard players operation @s FurnitureSearch *= #-1 Constants
-execute if score @s FurnitureSearch matches 1.. if score @s FurnitureZTarget matches ..-1 run scoreboard players operation @s FurnitureSearch *= #-1 Constants
-execute if score @s FurnitureSearch matches ..-1 if entity @s[scores={FurnitureZTarget=-900..900}] run scoreboard players operation @s FurnitureSearch < @s FurnitureZTarget
-execute if score @s FurnitureSearch matches 1.. if entity @s[scores={FurnitureZTarget=-900..900}] run scoreboard players operation @s FurnitureSearch > @s FurnitureZTarget
-execute if score @s FurnitureSearch matches 0 if entity @s[scores={FurnitureZTarget=-900..900}] run scoreboard players operation @s FurnitureSearch = @s FurnitureZTarget
-execute if score @s FurnitureSearch matches ..-1 run scoreboard players operation @s FurnitureSearch *= #-1 Constants
+scoreboard players set @s FurnitureVacuum 0
+execute if entity @s[scores={FurnitureXTarget=-900..900}] run scoreboard players operation @s FurnitureVacuum = @s FurnitureXTarget
+execute if score @s FurnitureVacuum matches ..-1 if score @s FurnitureZTarget matches 1.. run scoreboard players operation @s FurnitureVacuum *= #-1 Constants
+execute if score @s FurnitureVacuum matches 1.. if score @s FurnitureZTarget matches ..-1 run scoreboard players operation @s FurnitureVacuum *= #-1 Constants
+execute if score @s FurnitureVacuum matches ..-1 if entity @s[scores={FurnitureZTarget=-900..900}] run scoreboard players operation @s FurnitureVacuum < @s FurnitureZTarget
+execute if score @s FurnitureVacuum matches 1.. if entity @s[scores={FurnitureZTarget=-900..900}] run scoreboard players operation @s FurnitureVacuum > @s FurnitureZTarget
+execute if score @s FurnitureVacuum matches 0 if entity @s[scores={FurnitureZTarget=-900..900}] run scoreboard players operation @s FurnitureVacuum = @s FurnitureZTarget
+execute if score @s FurnitureVacuum matches ..-1 run scoreboard players operation @s FurnitureVacuum *= #-1 Constants
 
-execute if entity @s[tag=punching_bag,scores={FurnitureSearch=0}] align y run fill ~ ~-4 ~ ~ ~-2 ~ minecraft:light_gray_stained_glass
-execute if entity @s[tag=punching_bag] unless entity @s[scores={FurnitureSearch=0}] align y run fill ~ ~-4 ~ ~ ~-2 ~ minecraft:air
+execute if entity @s[tag=punching_bag,scores={FurnitureVacuum=0}] align y run fill ~ ~-4 ~ ~ ~-2 ~ minecraft:light_gray_stained_glass
+execute if entity @s[tag=punching_bag] unless entity @s[scores={FurnitureVacuum=0}] align y run fill ~ ~-4 ~ ~ ~-2 ~ minecraft:air
 execute if entity @s[tag=punching_bag,tag=remove_from_existence] align y run fill ~ ~-4 ~ ~ ~-2 ~ minecraft:air
 
 scoreboard players operation #temp FurnitureVacuum = @s FurnitureVacuum
 scoreboard players operation #temp FurnitureVacuum /= #2 Constants
-execute if score @s[tag=!searched] FurnitureSearch >= @s FurnitureVacuum run function luigis_mansion:entities/furniture/tick/search_swing
-execute if score @s[tag=swinging_harms] FurnitureSearch >= @s FurnitureVacuum run function luigis_mansion:entities/furniture/tick/swing/hit
-execute if score @s[tag=searched] FurnitureSearch < #temp FurnitureVacuum run tag @s remove searched
+execute if score @s[tag=!searched] FurnitureVacuum >= @s FurnitureSearch run function luigis_mansion:entities/furniture/tick/search_swing
+execute if score @s[tag=swinging_harms] FurnitureVacuum >= @s FurnitureSearch run function luigis_mansion:entities/furniture/tick/swing/hit
+execute if score @s[tag=searched] FurnitureVacuum < #temp FurnitureSearch run tag @s remove searched
 execute if entity @s[tag=searchable_by_hand,tag=search] run function luigis_mansion:entities/furniture/tick/search
 tag @s remove search
 scoreboard players reset #temp FurnitureVacuum

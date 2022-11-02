@@ -93,6 +93,9 @@ scoreboard objectives add KnockbackTime dummy
 scoreboard objectives add KnockbackType dummy
 scoreboard objectives add KnockbackX dummy
 scoreboard objectives add KnockbackZ dummy
+scoreboard objectives add LampUp dummy
+scoreboard objectives add LampForward dummy
+scoreboard objectives add LampModel dummy
 scoreboard objectives add LastFloor dummy
 scoreboard objectives add LastHealth dummy
 scoreboard objectives add LastHealthMusic dummy

@@ -1,2 +1,0 @@
-execute if block 664 12 44 minecraft:trapped_chest run scoreboard players add #lavatory_chest Searching 1
-execute if score #lavatory_chest Searching matches 20 run function luigis_beta_mansion:room/original/lavatory/search/chest

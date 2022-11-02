@@ -1,1 +1,0 @@
-scoreboard players set #the_twins_room_mobile Searched 1
