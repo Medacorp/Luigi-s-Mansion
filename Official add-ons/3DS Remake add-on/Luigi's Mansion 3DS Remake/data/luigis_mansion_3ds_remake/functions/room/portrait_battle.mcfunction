@@ -13,6 +13,8 @@ scoreboard players reset #temp5 Time
 scoreboard players reset #temp6 Time
 scoreboard players operation @s LastRoom = @s Room
 execute as @a[tag=gooigi] run function luigis_mansion_3ds_remake:entities/player/un_gooigi
+execute as @e[tag=furniture,tag=!no_dust] run data remove entity @s ArmorItems[3].tag.loot
+tag @e[tag=furniture,tag=!no_dust] add no_dust
 tag @e[tag=pearl_dropper] remove pearl_dropper
 function #luigis_mansion_3ds_remake:room/gallery/portrait_battle/tick
 execute if data storage luigis_mansion:data current_state.current_data{in_mansion_time:2} unless score #freeze_timer Selected matches 1 run function luigis_mansion_3ds_remake:room/gallery/portrait_battle/begin

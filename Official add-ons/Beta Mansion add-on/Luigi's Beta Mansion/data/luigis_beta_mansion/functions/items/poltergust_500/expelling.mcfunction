@@ -12,4 +12,5 @@ scoreboard players reset #temp MirrorX
 scoreboard players reset #temp MirrorZ
 scoreboard players reset #temp Room
 scoreboard players reset #temp ID
+scoreboard players reset #interact
 tag @s remove me

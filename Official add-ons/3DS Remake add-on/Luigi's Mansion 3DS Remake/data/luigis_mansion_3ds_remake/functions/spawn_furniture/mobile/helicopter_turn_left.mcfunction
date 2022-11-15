@@ -18,8 +18,7 @@ scoreboard players set @e[tag=this_entity,limit=1] Sound 0
 scoreboard players set @e[tag=this_entity,limit=1] ActionTime -1
 scoreboard players set @e[tag=this_entity,limit=1] RotationSpeed 0
 scoreboard players set @e[tag=this_entity,limit=1] RotationSpeedDef 0
-scoreboard players set @e[tag=this_entity,limit=1] FurnitureSizeX 3
-scoreboard players set @e[tag=this_entity,limit=1] FurnitureSizeY 4
-scoreboard players set @e[tag=this_entity,limit=1] FurnitureSizeZ 3
+scoreboard players set @e[tag=this_entity,limit=1] FurnitureSizeW 30
+scoreboard players set @e[tag=this_entity,limit=1] FurnitureSizeH 40
 scoreboard players set @e[tag=this_entity,limit=1] FurnitureUp -24
 tag @e[tag=this_entity,limit=1] remove this_entity

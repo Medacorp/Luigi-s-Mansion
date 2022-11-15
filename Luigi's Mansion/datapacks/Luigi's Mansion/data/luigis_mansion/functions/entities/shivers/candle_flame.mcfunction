@@ -52,8 +52,6 @@ scoreboard players operation #offsetz Time = #cosx Time
 scoreboard players operation #offsetz Time *= #cosy Time
 scoreboard players operation #offsetz Time /= #10 Constants
 
-tellraw @p[tag=tell_me] ["Vector: [",{"score":{"name":"#offsetx","objective":"Time"},"color":"gold"},", ",{"score":{"name":"#offsety","objective":"Time"},"color":"gold"},", ",{"score":{"name":"#offsetz","objective":"Time"},"color":"gold"},"]"]
-
 execute store result score #x Time run data get entity @s Pos[0] 10
 execute store result score #y Time run data get entity @s Pos[1] 10
 scoreboard players add #y Time 14
@@ -63,18 +61,13 @@ execute store result entity @e[tag=temp,limit=1] Pos[0] double 0.1 run scoreboar
 execute store result entity @e[tag=temp,limit=1] Pos[1] double 0.1 run scoreboard players operation #y Time += #offsety Time
 execute store result entity @e[tag=temp,limit=1] Pos[2] double 0.1 run scoreboard players operation #z Time += #offsetz Time
 
-tellraw @p[tag=tell_me] ["Pos: ",{"nbt":"Pos","entity":"@e[tag=temp,limit=1]"}]
-tellraw @p[tag=tell_me] ["Stand Pos: ",{"nbt":"Pos","entity":"@s"}]
-
 execute at @s positioned ~ ~1.4 ~ facing entity @e[tag=temp,limit=1] feet run teleport @e[tag=temp,limit=1] ~ ~ ~ ~ ~
 execute store result score #rotation Time run data get entity @s Rotation[0] 10
 execute store result score #rotation2 Time run data get entity @e[tag=temp,limit=1] Rotation[0] 10
 execute store result entity @e[tag=temp,limit=1] Rotation[0] float 0.1 run scoreboard players operation #rotation Time += #rotation2 Time
-tellraw @p[tag=tell_me] ["Rotation: ",{"nbt":"Rotation","entity":"@e[tag=temp,limit=1]"}]
 execute store result score #roll Time run data get entity @s Pose.Head[2] 10
 scoreboard players operation #roll2 Time = #roll Time
 scoreboard players add #roll2 Time 1800
-tellraw @p[tag=tell_me] ["Roll: ",{"score":{"name":"#roll","objective":"Time"},"color":"gold"}]
 execute if score #roll Time matches -900..900 as @e[tag=temp,limit=1] at @s run teleport @s ^ ^0.5 ^0.5
 execute if score #roll Time matches -900..900 store result entity @e[tag=temp,limit=1] Rotation[1] float 0.1 run scoreboard players get #roll Time
 execute unless score #roll Time matches -900..900 as @e[tag=temp,limit=1] at @s rotated ~90 ~ run teleport @s ^ ^0.5 ^0.5 ~ ~
@@ -82,9 +75,7 @@ execute unless score #roll Time matches -900..900 store result entity @e[tag=tem
 execute at @e[tag=temp,limit=1] run particle minecraft:flame ^0.16 ^ ^ 0 0 0 0 1 normal @a[tag=same_room]
 execute at @e[tag=temp,limit=1] run particle minecraft:flame ^0.06 ^ ^ 0 0 0 0 1 normal @a[tag=same_room]
 execute at @e[tag=temp,limit=1] run particle minecraft:flame ^-0.04 ^ ^ 0 0 0 0 1 normal @a[tag=same_room]
-tellraw @p[tag=tell_me] ["Rotation post-roll: ",{"nbt":"Rotation","entity":"@e[tag=temp,limit=1]"}]
 
-tag @p[tag=tell_me] remove tell_me
 scoreboard players reset #cosx Time
 scoreboard players reset #cosy Time
 scoreboard players reset #cosz Time

@@ -11,7 +11,9 @@ execute if data storage luigis_mansion:data furniture{open:1b} run scoreboard pl
 execute if data storage luigis_mansion:data furniture{can_hide_boo:1b} run tag @e[tag=this_entity,limit=1] add can_hide_boo
 data remove storage luigis_mansion:data furniture
 scoreboard players set @e[tag=this_entity,limit=1] Sound 0
-scoreboard players set @e[tag=this_entity,limit=1] FurnitureRadius 13
+scoreboard players set @e[tag=this_entity,limit=1] FurnitureSizeL 15
+scoreboard players set @e[tag=this_entity,limit=1] FurnitureSizeU 14
+scoreboard players set @e[tag=this_entity,limit=1] FurnitureSizeF 10
 scoreboard players set @e[tag=this_entity,limit=1] InteractionType 3
 scoreboard players set @e[tag=this_entity,limit=1] FurnitureUp 10
 scoreboard players set @e[tag=this_entity,limit=1] FurnitureSearch 0

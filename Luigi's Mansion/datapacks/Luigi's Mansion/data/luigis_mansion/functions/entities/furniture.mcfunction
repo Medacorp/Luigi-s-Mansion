@@ -1,1 +1,1 @@
-execute if entity @s[tag=furniture] run function #luigis_mansion:entities/furniture
+execute if entity @s[tag=furniture] run function luigis_mansion:entities/furniture/tick

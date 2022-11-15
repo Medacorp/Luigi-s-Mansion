@@ -19,7 +19,7 @@ kill @e[tag=collision_check,tag=x,limit=1]
 scoreboard players reset #temp Time
 scoreboard players reset #temp2 Time
 tag @s add me
-scoreboard players operation #y Steps = @s FurnitureSizeY
+scoreboard players operation #y Steps = @s FurnitureSizeH
 execute at @e[tag=collision_check,tag=z,limit=1] facing entity @s eyes positioned ~-0.5 ~-0.5 ~-0.5 run function luigis_mansion:entities/furniture/tick/swing/harm
 scoreboard players reset #y Steps
 tag @s remove me

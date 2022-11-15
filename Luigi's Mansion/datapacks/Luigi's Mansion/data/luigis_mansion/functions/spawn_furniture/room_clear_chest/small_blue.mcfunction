@@ -18,7 +18,9 @@ execute if data storage luigis_mansion:data furniture{searchable:["water"]} run 
 execute if data storage luigis_mansion:data furniture{searchable:["ice"]} run tag @e[tag=this_entity,limit=1] add searchable_by_ice
 data remove storage luigis_mansion:data furniture
 scoreboard players set @e[tag=this_entity,limit=1] Sound 0
-scoreboard players set @e[tag=this_entity,limit=1] FurnitureRadius 7
+scoreboard players set @e[tag=this_entity,limit=1] FurnitureSizeL 9
+scoreboard players set @e[tag=this_entity,limit=1] FurnitureSizeU 7
+scoreboard players set @e[tag=this_entity,limit=1] FurnitureSizeF 5
 scoreboard players set @e[tag=this_entity,limit=1] InteractionType 3
 scoreboard players set @e[tag=this_entity,limit=1] FurnitureUp 10
 tag @e[tag=this_entity,limit=1] remove this_entity

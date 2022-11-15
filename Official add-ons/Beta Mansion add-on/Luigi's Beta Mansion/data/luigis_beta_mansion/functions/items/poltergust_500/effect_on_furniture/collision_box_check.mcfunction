@@ -1,32 +1,26 @@
-execute at @s run summon minecraft:marker ~ ~1.2 ~ {Tags:["collision_check","remove_from_existence"]}
-scoreboard players operation #x Steps = @s FurnitureSizeX
-scoreboard players operation #x Steps /= #2 Constants
-scoreboard players operation #x Steps *= #10 Constants
-scoreboard players operation #x Time = @s FurnitureSizeX
-scoreboard players operation #x Time %= #2 Constants
-scoreboard players operation #y Steps = @s FurnitureSizeY
-execute if entity @s[tag=standing_furniture] run scoreboard players set #y Steps 0
-execute if entity @s[tag=!haning_furniture,tag=!standing_furniture] run scoreboard players operation #y Steps /= #2 Constants
-scoreboard players operation #y Steps *= #10 Constants
-execute if entity @s[tag=!haning_furniture,tag=!standing_furniture] run scoreboard players operation #y Time = @s FurnitureSizeY
-execute if entity @s[tag=!haning_furniture,tag=!standing_furniture] run scoreboard players operation #y Time %= #2 Constants
-scoreboard players operation #z Steps = @s FurnitureSizeZ
-scoreboard players operation #z Steps /= #2 Constants
-scoreboard players operation #z Steps *= #10 Constants
-scoreboard players operation #z Time = @s FurnitureSizeZ
-scoreboard players operation #z Time %= #2 Constants
-execute as @e[tag=collision_check,limit=1] run function luigis_beta_mansion:items/poltergust_500/effect_on_furniture/move
-scoreboard players operation #x Steps = @s FurnitureSizeX
-scoreboard players remove #x Steps 1
-scoreboard players operation #y Steps = @s FurnitureSizeY
-scoreboard players remove #y Steps 1
-scoreboard players operation #z Steps = @s FurnitureSizeZ
-scoreboard players remove #z Steps 1
-#only up to 10x10x10 supported, minimum of 1x1x1
-tag @s add me
-execute as @e[tag=interact,limit=1] at @e[tag=collision_check,limit=1] run function luigis_beta_mansion:items/poltergust_500/effect_on_furniture/hardcoded_bounding_box
-tag @s remove me
-scoreboard players reset #x
-scoreboard players reset #y
-scoreboard players reset #z
-kill @e[tag=collision_check,limit=1]
+scoreboard players operation #temp PosX = @s PosX
+scoreboard players operation #temp PosY = @s PosY
+scoreboard players operation #temp PosZ = @s PosZ
+scoreboard players operation #temp2 PosX = #temp PosX
+scoreboard players operation #temp2 PosY = #temp PosY
+scoreboard players operation #temp2 PosZ = #temp PosZ
+scoreboard players operation #temp FurnitureSizeW = @s FurnitureSizeW
+scoreboard players operation #temp FurnitureSizeH = @s FurnitureSizeH
+scoreboard players operation #temp FurnitureSizeW /= #2 Constants
+execute if entity @s[tag=!hanging_furniture,tag=!standing_furniture] run scoreboard players operation #temp FurnitureSizeH /= #2 Constants
+scoreboard players operation #temp FurnitureSizeZ /= #2 Constants
+scoreboard players operation #temp PosX -= #temp FurnitureSizeW
+execute if entity @s[tag=!standing_furniture] run scoreboard players operation #temp PosY -= #temp FurnitureSizeH
+scoreboard players operation #temp PosZ -= #temp FurnitureSizeW
+scoreboard players operation #temp2 PosX += #temp FurnitureSizeW
+execute if entity @s[tag=!hanging_furniture] run scoreboard players operation #temp2 PosY += #temp FurnitureSizeH
+scoreboard players operation #temp2 PosZ += #temp FurnitureSizeW
+execute if score #interact PosX >= #temp PosX if score #interact PosX <= #temp2 PosX if score #interact PosY >= #temp PosY if score #interact PosY <= #temp2 PosY if score #interact PosZ >= #temp PosZ if score #interact PosZ <= #temp2 PosZ run tag @s add hit
+scoreboard players reset #temp PosX
+scoreboard players reset #temp PosY
+scoreboard players reset #temp PosZ
+scoreboard players reset #temp FurnitureSizeW
+scoreboard players reset #temp FurnitureSizeH
+scoreboard players reset #temp2 PosX
+scoreboard players reset #temp2 PosY
+scoreboard players reset #temp2 PosZ

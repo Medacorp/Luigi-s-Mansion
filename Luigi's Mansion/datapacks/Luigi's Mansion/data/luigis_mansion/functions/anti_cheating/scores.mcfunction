@@ -39,9 +39,11 @@ scoreboard objectives add FurnitureIce dummy
 scoreboard objectives add FurnitureRadius dummy
 scoreboard objectives add FurnitureRotDef dummy
 scoreboard objectives add FurnitureSearch dummy
-scoreboard objectives add FurnitureSizeX dummy
-scoreboard objectives add FurnitureSizeY dummy
-scoreboard objectives add FurnitureSizeZ dummy
+scoreboard objectives add FurnitureSizeF dummy
+scoreboard objectives add FurnitureSizeL dummy
+scoreboard objectives add FurnitureSizeU dummy
+scoreboard objectives add FurnitureSizeW dummy
+scoreboard objectives add FurnitureSizeH dummy
 scoreboard objectives add FurnitureSound dummy
 scoreboard objectives add FurnitureSpins dummy
 scoreboard objectives add FurnitureUp dummy

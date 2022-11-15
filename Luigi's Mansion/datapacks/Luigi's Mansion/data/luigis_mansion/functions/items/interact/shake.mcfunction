@@ -46,6 +46,7 @@ execute if entity @s[scores={InteractionTime=2,InteractionType=3,Health=..40,Shr
 execute if entity @s[scores={InteractionTime=9,InteractionType=2},tag=!not_facing] at @e[tag=interact,tag=manual,limit=1] as @e[tag=furniture,tag=same_room] run function luigis_mansion:items/interact/target_furniture/shake
 execute if entity @s[scores={InteractionTime=9,InteractionType=4},tag=!not_facing] at @e[tag=interact,tag=manual,limit=1] as @e[tag=furniture,tag=same_room] run function luigis_mansion:items/interact/target_furniture/shake
 execute if entity @s[scores={InteractionTime=17},tag=!not_facing] at @e[tag=interact,tag=manual,limit=1] as @e[tag=furniture,tag=same_room] run function luigis_mansion:items/interact/target_furniture/search
+scoreboard players reset #interact
 scoreboard players set @s[scores={InteractionTime=2}] Sound 20
 tag @s[scores={InteractionTime=17}] remove not_facing
 tag @s[scores={InteractionTime=17}] remove 1
