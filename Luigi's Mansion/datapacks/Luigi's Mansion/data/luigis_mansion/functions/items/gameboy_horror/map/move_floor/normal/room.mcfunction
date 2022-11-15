@@ -3,7 +3,7 @@ title @s[scores={Room=2}] title {"translate":"luigis_mansion:location.foyer"}
 title @s[scores={Room=3}] title {"translate":"luigis_mansion:location.parlor"}
 title @s[scores={Room=4}] title {"translate":"luigis_mansion:location.anteroom"}
 title @s[scores={Room=5}] title {"translate":"luigis_mansion:location.wardrobe_room"}
-title @s[scores={Room=6}] title {"translate":"luigis_mansion:location.balcony"}
+title @s[scores={Room=6}] title {"translate":"luigis_mansion:location.balcony_1"}
 #title @s[scores={Room=7}] title {"translate":"luigis_mansion:location.hallway"}
 title @s[scores={Room=8}] title {"translate":"luigis_mansion:location.study"}
 title @s[scores={Room=9}] title {"translate":"luigis_mansion:location.master_bedroom"}
@@ -13,10 +13,10 @@ title @s[scores={Room=10}] title {"translate":"luigis_mansion:location.nursery"}
 #title @s[scores={Room=13}] title {"translate":"luigis_mansion:location.hallway"}
 #title @s[scores={Room=14}] title {"translate":"luigis_mansion:location.hallway"}
 #title @s[scores={Room=15}] title {"translate":"luigis_mansion:location.hallway"}
-title @s[scores={Room=16}] title {"translate":"luigis_mansion:location.bathroom"}
+title @s[scores={Room=16}] title {"translate":"luigis_mansion:location.bathroom_1"}
 title @s[scores={Room=17}] title {"translate":"luigis_mansion:location.ball_room"}
 title @s[scores={Room=18}] title {"translate":"luigis_mansion:location.storage_room"}
-title @s[scores={Room=19}] title {"translate":"luigis_mansion:location.washroom"}
+title @s[scores={Room=19}] title {"translate":"luigis_mansion:location.washroom_1"}
 title @s[scores={Room=20}] title {"translate":"luigis_mansion:location.fortune_tellers_room"}
 title @s[scores={Room=21}] title {"translate":"luigis_mansion:location.mirror_room"}
 title @s[scores={Room=22}] title {"translate":"luigis_mansion:location.laundry_room"}
@@ -39,8 +39,8 @@ title @s[scores={Room=34}] title {"translate":"luigis_mansion:location.tea_room"
 #title @s[scores={Room=39}] title {"translate":"luigis_mansion:location.hallway"}
 #title @s[scores={Room=40}] title {"translate":"luigis_mansion:location.hallway"}
 #title @s[scores={Room=41}] title {"translate":"luigis_mansion:location.hallway"}
-title @s[scores={Room=42}] title {"translate":"luigis_mansion:location.washroom"}
-title @s[scores={Room=43}] title {"translate":"luigis_mansion:location.bathroom"}
+title @s[scores={Room=42}] title {"translate":"luigis_mansion:location.washroom_2"}
+title @s[scores={Room=43}] title {"translate":"luigis_mansion:location.bathroom_2"}
 title @s[scores={Room=44}] title {"translate":"luigis_mansion:location.nanas_room"}
 title @s[scores={Room=45}] title {"translate":"luigis_mansion:location.astral_hall"}
 title @s[scores={Room=46}] title {"translate":"luigis_mansion:location.observatory"}
@@ -50,7 +50,7 @@ title @s[scores={Room=49}] title {"translate":"luigis_mansion:location.the_twins
 title @s[scores={Room=50}] title {"translate":"luigis_mansion:location.safari_room"}
 #title @s[scores={Room=51}] title {"translate":"luigis_mansion:location.hallway"}
 #title @s[scores={Room=52}] title {"translate":"luigis_mansion:location.hallway"}
-title @s[scores={Room=52}] title {"translate":"luigis_mansion:location.balcony"}
+title @s[scores={Room=52}] title {"translate":"luigis_mansion:location.balcony_2"}
 #title @s[scores={Room=54}] title {"translate":"luigis_mansion:location.hallway"}
 #title @s[scores={Room=55}] title {"translate":"luigis_mansion:location.hallway"}
 title @s[scores={Room=56}] title {"translate":"luigis_mansion:location.telephone_room"}
