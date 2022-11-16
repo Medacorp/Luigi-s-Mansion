@@ -30,7 +30,7 @@ playsound luigis_mansion:music.boss.boolossus music @s[scores={MusicType=17}] ~ 
 scoreboard players set @s[scores={MusicType=17}] Music 686
 playsound luigis_mansion:music.boss.king_boo music @s[scores={MusicType=18}] ~ ~ ~ 1000
 scoreboard players set @s[scores={MusicType=18}] Music 1130
-playsound luigis_mansion:music.gameboy_horror music @s[scores={MusicType=19}] ~ ~ ~ 1000
+playsound luigis_mansion:music.game_boy_horror music @s[scores={MusicType=19}] ~ ~ ~ 1000
 scoreboard players set @s[scores={MusicType=19}] Music 831
 playsound luigis_mansion:music.king_boo_warp music @s[scores={MusicType=20}] ~ ~ ~ 1000
 scoreboard players set @s[scores={MusicType=20}] Music 192
@@ -46,7 +46,7 @@ playsound luigis_mansion:music.melody_battle music @s[scores={MusicType=25}] ~ ~
 scoreboard players set @s[scores={MusicType=25}] Music 248
 playsound luigis_mansion:music.lets_play music @s[scores={MusicType=26}] ~ ~ ~ 1000
 scoreboard players set @s[scores={MusicType=26}] Music 188
-playsound luigis_mansion:music.gameboy_horror_call music @s[scores={MusicType=27}] ~ ~ ~ 1000
+playsound luigis_mansion:music.game_boy_horror_call music @s[scores={MusicType=27}] ~ ~ ~ 1000
 scoreboard players set @s[scores={MusicType=27}] Music 285
 playsound luigis_mansion:music.catching.ghost music @s[scores={MusicType=28}] ~ ~ ~ 1000
 scoreboard players set @s[scores={MusicType=28}] Music 214

@@ -1,0 +1,1 @@
+function luigis_mansion:entities/game_boy_horror_marker/teleport/normal

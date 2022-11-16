@@ -18,7 +18,7 @@ execute at @s[tag=visible] if block ~ ~-0.01 ~ #luigis_mansion:ghosts_ignore run
 execute at @s[scores={Turn=0},tag=visible] run function luigis_mansion:entities/spark/turn
 data modify entity @s[scores={SpawnTime=140}] ArmorItems[3].tag.CustomModelData set value 106
 tag @s[scores={SpawnTime=200}] add explode
-execute if entity @s[tag=explode,tag=visible] run execute as @e[distance=..3,tag=gameboy_horror_location] run function luigis_mansion:entities/gameboy_horror_location/bring_player_back
+execute if entity @s[tag=explode,tag=visible] run execute as @e[distance=..3,tag=game_boy_horror_location] run function luigis_mansion:entities/game_boy_horror_location/bring_player_back
 execute if entity @s[tag=explode,tag=visible] run effect give @a[distance=..3,tag=!spectator] minecraft:instant_damage 1 0 true
 execute if entity @s[tag=explode,tag=visible] run scoreboard players set @a[distance=..3,tag=!spectator] ForcedDamage 4
 execute if entity @s[tag=explode,tag=visible] as @a[distance=..3,tag=!spectator] run function luigis_mansion:entities/player/knockback/burn

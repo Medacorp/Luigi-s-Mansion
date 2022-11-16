@@ -157,41 +157,41 @@
         ],
         "subtitle": "luigis_mansion_3ds_remake:subtitles.entity.polterpup.swallow"
     },
-    "item.gameboy_horror.install_part": {
+    "item.game_boy_horror.install_part": {
         "sounds": [
             {
-                "name": "luigis_mansion_3ds_remake:item/gameboy_horror/install_part",
+                "name": "luigis_mansion_3ds_remake:item/game_boy_horror/install_part",
                 "stream": false
             }
         ],
-        "subtitle": "luigis_mansion_3ds_remake:subtitles.item.gameboy_horror.install_part"
+        "subtitle": "luigis_mansion_3ds_remake:subtitles.item.game_boy_horror.install_part"
     },
-    "item.gameboy_horror_part.bounce": {
+    "item.game_boy_horror_part.bounce": {
         "sounds": [
             {
                 "name": "luigis_mansion:item/mario_item/bounce",
                 "stream": false
             }
         ],
-        "subtitle": "luigis_mansion_3ds_remake:subtitles.item.gameboy_horror_part.bounce"
+        "subtitle": "luigis_mansion_3ds_remake:subtitles.item.game_boy_horror_part.bounce"
     },
-    "item.gameboy_horror_part.obtain": {
+    "item.game_boy_horror_part.obtain": {
         "sounds": [
             {
                 "name": "luigis_mansion:item/mario_item/obtain",
                 "stream": false
             }
         ],
-        "subtitle": "luigis_mansion_3ds_remake:subtitles.item.gameboy_horror_part.obtain"
+        "subtitle": "luigis_mansion_3ds_remake:subtitles.item.game_boy_horror_part.obtain"
     },
-    "item.gameboy_horror_part.spawn": {
+    "item.game_boy_horror_part.spawn": {
         "sounds": [
             {
                 "name": "luigis_mansion:item/spawn",
                 "stream": false
             }
         ],
-        "subtitle": "luigis_mansion_3ds_remake:subtitles.item.gameboy_horror_part.obtain"
+        "subtitle": "luigis_mansion_3ds_remake:subtitles.item.game_boy_horror_part.obtain"
     },
     "item.poltergust_3000.hit_floor_gooigi": {
         "sounds": [

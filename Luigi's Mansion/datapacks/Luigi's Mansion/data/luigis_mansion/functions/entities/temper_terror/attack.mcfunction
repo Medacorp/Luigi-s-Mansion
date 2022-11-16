@@ -7,7 +7,7 @@ execute at @s[scores={ActionTime=1..20}] positioned ^ ^ ^0.7 unless entity @e[ta
 execute if entity @s[scores={ActionTime=41}] run playsound luigis_mansion:entity.ghost.punch hostile @a[tag=same_room] ~ ~ ~ 1
 execute if entity @s[scores={ActionTime=41}] run playsound luigis_mansion:entity.temper_terror.attack hostile @a[tag=same_room] ~ ~ ~ 1
 teleport @s[scores={ActionTime=41..60}] ~ ~ ~ ~-18 ~
-execute at @s[scores={ActionTime=41}] as @e[distance=..1,tag=gameboy_horror_location] run function luigis_mansion:entities/gameboy_horror_location/bring_player_back
+execute at @s[scores={ActionTime=41}] as @e[distance=..1,tag=game_boy_horror_location] run function luigis_mansion:entities/game_boy_horror_location/bring_player_back
 execute at @s[scores={ActionTime=41}] run effect give @a[distance=..1,scores={Invulnerable=0},tag=!spectator] minecraft:instant_damage 1 0 true
 execute at @s[scores={ActionTime=41}] run scoreboard players set @a[distance=..1,scores={Invulnerable=0},tag=!spectator] ForcedDamage 4
 execute at @s[scores={ActionTime=41}] as @a[distance=..1,scores={Invulnerable=0},tag=!spectator] run function luigis_mansion:entities/player/knockback/large

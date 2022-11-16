@@ -81,7 +81,7 @@ execute if entity @s[scores={Dialog=1050}] run tag @a[tag=same_room,gamemode=!sp
 execute if entity @s[scores={Dialog=1050}] run stopsound @a[tag=warp_target] music
 execute if entity @s[scores={Dialog=1050}] run playsound luigis_mansion:music.warped_by_boos music @a[tag=warp_target] ~ ~ ~ 1000
 execute if entity @s[scores={Dialog=1050}] run scoreboard players set @a[tag=warp_target] Music 80
-execute if entity @s[scores={Dialog=1050..}] as @e[tag=same_room,tag=gameboy_horror_location] run function luigis_mansion:entities/gameboy_horror_location/bring_player_back
+execute if entity @s[scores={Dialog=1050..}] as @e[tag=same_room,tag=game_boy_horror_location] run function luigis_mansion:entities/game_boy_horror_location/bring_player_back
 execute if entity @s[scores={Dialog=1050..1110}] as @a[tag=warp_target] at @s unless entity @s[x=684,dx=0] run teleport @s ~0.5 ~ ~
 tag @s[scores={Dialog=1060}] remove appear
 execute if entity @s[scores={Dialog=1110}] as @a[tag=same_room,tag=!spectator,tag=!looking_at_map] run function luigis_mansion:entities/player/animation/set/none

@@ -1,3 +1,3 @@
 execute if score #butlers_room_hole Searched matches 1 run particle minecraft:dust 0.5 0.5 1 1 742 11 -40 0.2 0.2 0.2 0 4
-execute if score #butlers_room_hole Searched matches 1 as @e[x=742.5,y=11,z=-39.5,distance=..0.7,tag=gameboy_horror_location] run function luigis_mansion:entities/gameboy_horror_location/bring_player_back
+execute if score #butlers_room_hole Searched matches 1 as @e[x=742.5,y=11,z=-39.5,distance=..0.7,tag=game_boy_horror_location] run function luigis_mansion:entities/game_boy_horror_location/bring_player_back
 execute if score #butlers_room_hole Searched matches 1 as @a[x=742.5,y=11,z=-39.5,distance=..0.7] run function luigis_mansion:room/hidden/butlers_room/go_through_hole

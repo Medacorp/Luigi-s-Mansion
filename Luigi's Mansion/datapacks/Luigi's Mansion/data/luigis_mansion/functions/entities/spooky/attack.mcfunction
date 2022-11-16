@@ -19,7 +19,7 @@ execute at @s[scores={ActionTime=1..19}] positioned ^ ^ ^0.3 if entity @e[tag=sa
 scoreboard players set @s[scores={ActionTime=30}] AnimationProg 0
 tag @s[scores={ActionTime=30}] remove bite
 tag @s[scores={ActionTime=30}] add hold
-execute if entity @s[scores={ActionTime=30}] positioned ^ ^ ^0.8 as @e[distance=..0.8,tag=gameboy_horror_location] run function luigis_mansion:entities/gameboy_horror_location/bring_player_back
+execute if entity @s[scores={ActionTime=30}] positioned ^ ^ ^0.8 as @e[distance=..0.8,tag=game_boy_horror_location] run function luigis_mansion:entities/game_boy_horror_location/bring_player_back
 execute if entity @s[scores={ActionTime=30}] positioned ^ ^ ^0.8 run scoreboard players operation @s GrabbedID = @a[tag=!spectator,scores={Invulnerable=0},distance=..0.8,tag=!grabbed,limit=1] ID
 execute if entity @s[scores={ActionTime=30}] positioned ^ ^ ^0.8 run tag @a[tag=!spectator,scores={Invulnerable=0},distance=..0.8,tag=!grabbed,limit=1] add grabbed
 execute if entity @s[scores={GrabbedID=-2147483648..}] run scoreboard players operation #temp ID = @s GrabbedID

@@ -4,6 +4,6 @@ execute if entity @s[scores={Dialog=1}] run data modify storage luigis_mansion:d
 execute if entity @s[scores={Dialog=1}] run playsound luigis_mansion:entity.chauncey.cutscene_scream hostile @a 729 21 66 3
 execute if entity @s[scores={Dialog=20}] run stopsound @a music
 execute if entity @s[scores={Dialog=20}] run scoreboard players set @a Music 120
-execute if entity @s[scores={Dialog=21}] run playsound luigis_mansion:block.door.chauncey music @a ~ ~ ~ 1000
+execute if entity @s[scores={Dialog=21}] run playsound luigis_mansion:furniture.door.chauncey music @a ~ ~ ~ 1000
 tag @s[scores={Dialog=140}] remove chauncey_cry
 scoreboard players set @s[scores={Dialog=140}] Dialog 0

@@ -5,6 +5,6 @@ execute if entity @s[scores={Dialog=1..20}] store result entity @s Pose.Head[0] 
 execute if entity @s[scores={Dialog=21..60}] store result entity @s Pose.Head[0] float 0.1 run scoreboard players remove #temp Time 5
 execute if entity @s[scores={Dialog=61..80}] store result entity @s Pose.Head[0] float 0.1 run scoreboard players add #temp Time 5
 scoreboard players reset #temp Time
-execute if entity @s[scores={Dialog=30}] run playsound luigis_mansion:entity.rocking_chair.move_backward hostile @a[tag=same_room] ~ ~ ~ 1
-execute if entity @s[scores={Dialog=70}] run playsound luigis_mansion:entity.rocking_chair.move_forward hostile @a[tag=same_room] ~ ~ ~ 1
+execute if entity @s[scores={Dialog=30}] run playsound luigis_mansion:furniture.rocking_chair.move_backward hostile @a[tag=same_room] ~ ~ ~ 1
+execute if entity @s[scores={Dialog=70}] run playsound luigis_mansion:furniture.rocking_chair.move_forward hostile @a[tag=same_room] ~ ~ ~ 1
 scoreboard players set @s[scores={Dialog=80}] Dialog 0

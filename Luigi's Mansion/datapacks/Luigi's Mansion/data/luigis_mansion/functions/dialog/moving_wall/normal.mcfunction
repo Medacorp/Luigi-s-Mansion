@@ -25,7 +25,7 @@ execute if entity @s[scores={Dialog=220}] run clone 681 11 -43 689 17 -42 681 11
 execute if entity @s[scores={Dialog=230}] run clone 681 11 -42 689 17 -41 681 11 -41 replace move
 execute if entity @s[scores={Dialog=240}] run clone 681 11 -41 689 17 -40 681 11 -40 replace move
 execute if entity @s[scores={Dialog=240}] run data modify storage luigis_mansion:data current_state.current_data.technical_data merge value {moved_wall:1b}
-execute if entity @s[scores={Dialog=20}] run playsound luigis_mansion:block.moving_wall block @a[tag=same_room] 685 11 -49 2
+execute if entity @s[scores={Dialog=20}] run playsound luigis_mansion:furniture.moving_wall block @a[tag=same_room] 685 11 -49 2
 execute if entity @s[scores={Dialog=280}] run playsound luigis_mansion:music.solve_puzzle music @a[tag=same_room] ~ ~ ~ 10000
 execute if entity @s[scores={Dialog=280}] as @a[tag=same_room,tag=!spectator,tag=!looking_at_map] run function luigis_mansion:entities/player/animation/set/none
 tag @s[scores={Dialog=280}] remove move_wall

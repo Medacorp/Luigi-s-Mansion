@@ -4,7 +4,7 @@ execute if entity @s[scores={Dialog=1..139}] as @a[tag=same_room,gamemode=!spect
 execute if entity @s[scores={Dialog=1}] as @a[tag=same_room] run function luigis_mansion:other/music/set/non_overwritten_silence
 execute if entity @s[scores={Dialog=1}] run stopsound @a[tag=same_room] music
 execute if entity @s[scores={Dialog=1}] run scoreboard players set @a[tag=same_room] Music 420
-execute if entity @s[scores={Dialog=1}] run playsound luigis_mansion:block.boo_hatch block @a[tag=same_room] 685 11 -46 1
+execute if entity @s[scores={Dialog=1}] run playsound luigis_mansion:furniture.boo_hatch block @a[tag=same_room] 685 11 -46 1
 execute if entity @s[scores={Dialog=1}] run playsound luigis_mansion:music.boos_escape music @a[tag=same_room] ~ ~ ~ 1000
 execute if entity @s[scores={Dialog=1}] run function luigis_mansion:room/normal/storage_room/open_hatch
 execute if entity @s[scores={Dialog=140..}] positioned 685 10 -46 rotated -180 -90 run function luigis_mansion:dialog/release_boos/boos

@@ -1,5 +1,5 @@
 title @s subtitle ""
-execute if entity @s[tag=looking_at_map] run function luigis_mansion:items/gameboy_horror/map/close
+execute if entity @s[tag=looking_at_map] run function luigis_mansion:items/game_boy_horror/map/close
 execute in minecraft:overworld run teleport @s 760 89.9375 8.0 90 0
 execute in minecraft:overworld positioned 789 90 14 unless entity @e[distance=..0.7,tag=e_gadd,limit=1] run function luigis_mansion:spawn_entities/e_gadd
 execute in minecraft:overworld positioned 789 90 14 run scoreboard players set @e[distance=..0.7,tag=e_gadd,limit=1] Room 0

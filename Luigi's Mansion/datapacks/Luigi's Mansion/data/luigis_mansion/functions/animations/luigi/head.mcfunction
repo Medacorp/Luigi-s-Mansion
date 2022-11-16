@@ -43,7 +43,7 @@ execute at @s[tag=thinking] run function luigis_mansion:animations/luigi/thinkin
 execute at @s[tag=sigh] run function luigis_mansion:animations/luigi/sigh/head
 execute at @s[tag=enthusiastic] run function luigis_mansion:animations/luigi/enthusiastic/head
 execute at @s[tag=answer_phone] run function luigis_mansion:animations/luigi/answer_phone/head
-execute at @s[tag=gameboy_horror] run function luigis_mansion:animations/luigi/gameboy_horror/head
+execute at @s[tag=game_boy_horror] run function luigis_mansion:animations/luigi/game_boy_horror/head
 execute at @s[tag=inspect] run function luigis_mansion:animations/luigi/inspect/head
 execute at @s[tag=look] run function luigis_mansion:animations/luigi/look/head
 execute at @s[scores={KnockbackType=-8}] run function luigis_mansion:animations/luigi/search/bash/head

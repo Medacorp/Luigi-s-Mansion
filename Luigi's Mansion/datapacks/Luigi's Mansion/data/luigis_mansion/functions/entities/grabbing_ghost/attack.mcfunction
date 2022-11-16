@@ -6,7 +6,7 @@ scoreboard players set @s[scores={ActionTime=1}] AnimationProg 0
 execute if entity @s[scores={ActionTime=1..20}] run function luigis_mansion:animations/grabbing_ghost/grab
 tag @s[scores={ActionTime=1}] remove stunnable
 execute if entity @s[scores={ActionTime=1}] run playsound luigis_mansion:entity.grabbing_ghost.attack hostile @a[tag=same_room] ~ ~ ~ 1
-execute if entity @s[scores={ActionTime=1}] positioned ^ ^ ^0.8 as @e[distance=..0.8,tag=gameboy_horror_location] run function luigis_mansion:entities/gameboy_horror_location/bring_player_back
+execute if entity @s[scores={ActionTime=1}] positioned ^ ^ ^0.8 as @e[distance=..0.8,tag=game_boy_horror_location] run function luigis_mansion:entities/game_boy_horror_location/bring_player_back
 execute if entity @s[scores={ActionTime=1}] positioned ^ ^ ^0.8 run scoreboard players operation @s GrabbedID = @a[tag=!spectator,distance=..0.8,tag=!grabbed,limit=1] ID
 execute if entity @s[scores={ActionTime=1}] positioned ^ ^ ^0.8 run tag @a[tag=!spectator,distance=..0.8,tag=!grabbed,limit=1] add grabbed
 execute if entity @s[scores={GrabbedID=-2147483648..}] run scoreboard players operation #temp ID = @s GrabbedID

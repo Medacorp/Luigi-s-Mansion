@@ -1,3 +1,3 @@
-summon minecraft:painting 774 78 19 {facing:2b,Invulnerable:1b,variant:"minecraft:kebab",CustomName:'{"translate":"luigis_mansion:entity.painting"}'}
-summon minecraft:item_frame 772 77 0 {Facing:5b,Silent:1b,Invulnerable:1b,Item:{id:"minecraft:filled_map",Count:1b,tag:{map:400}},CustomName:'{"translate":"luigis_mansion:entity.painting"}',Invisible:1b,Fixed:1b}
-summon minecraft:item_frame 768 77 0 {Facing:4b,Silent:1b,Invulnerable:1b,Item:{id:"minecraft:filled_map",Count:1b,tag:{map:400}},CustomName:'{"translate":"luigis_mansion:entity.painting"}',Invisible:1b,Fixed:1b}
+summon minecraft:painting 774 78 19 {facing:2b,Invulnerable:1b,variant:"minecraft:kebab",CustomName:'{"translate":"luigis_mansion:furniture.painting"}'}
+summon minecraft:item_frame 772 77 0 {Facing:5b,Silent:1b,Invulnerable:1b,Item:{id:"minecraft:filled_map",Count:1b,tag:{map:400}},CustomName:'{"translate":"luigis_mansion:furniture.painting"}',Invisible:1b,Fixed:1b}
+summon minecraft:item_frame 768 77 0 {Facing:4b,Silent:1b,Invulnerable:1b,Item:{id:"minecraft:filled_map",Count:1b,tag:{map:400}},CustomName:'{"translate":"luigis_mansion:furniture.painting"}',Invisible:1b,Fixed:1b}

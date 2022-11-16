@@ -1,1 +1,0 @@
-execute if entity @s[tag=gameboy_horror_marker] run function luigis_mansion:entities/gameboy_horror_marker/tick

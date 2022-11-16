@@ -28,7 +28,7 @@ playsound luigis_mansion:music.training_results_intro music @s[scores={MusicType
 scoreboard players set @s[scores={MusicType=24}] Music 50
 playsound luigis_mansion:music.lets_play_intro music @s[scores={MusicType=26}] ~ ~ ~ 1000
 scoreboard players set @s[scores={MusicType=26}] Music 347
-playsound luigis_mansion:music.gameboy_horror_call_intro music @s[scores={MusicType=27}] ~ ~ ~ 1000
+playsound luigis_mansion:music.game_boy_horror_call_intro music @s[scores={MusicType=27}] ~ ~ ~ 1000
 scoreboard players set @s[scores={MusicType=27}] Music 14
 playsound luigis_mansion:music.catching.ghost_intro music @s[scores={MusicType=28}] ~ ~ ~ 1000
 scoreboard players set @s[scores={MusicType=28}] Music 247

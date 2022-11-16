@@ -1,5 +1,5 @@
 tag @e[tag=bowser,tag=can_decapitate,distance=..6] add decapitate
-execute as @e[distance=..3,tag=gameboy_horror_location] run function luigis_mansion:entities/gameboy_horror_location/bring_player_back
+execute as @e[distance=..3,tag=game_boy_horror_location] run function luigis_mansion:entities/game_boy_horror_location/bring_player_back
 effect give @a[distance=..3,scores={Invulnerable=0},tag=!spectator] minecraft:instant_damage 1 0 true
 scoreboard players set @a[distance=..3,scores={Invulnerable=0},tag=!spectator] ForcedDamage 4
 execute as @a[distance=..3,scores={Invulnerable=0},tag=!spectator] run function luigis_mansion:entities/player/knockback/burn

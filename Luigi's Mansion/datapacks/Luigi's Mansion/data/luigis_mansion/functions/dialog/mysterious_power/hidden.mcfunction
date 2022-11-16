@@ -25,7 +25,7 @@ scoreboard players set @s[scores={Dialog=1394}] AnimationProg 0
 execute if entity @s[scores={Dialog=1394}] run stopsound @a[tag=same_room,gamemode=!spectator] music
 execute if entity @s[scores={Dialog=1394}] run playsound luigis_mansion:music.warped_by_boos music @a[tag=same_room,gamemode=!spectator] ~ ~ ~ 1000
 execute if entity @s[scores={Dialog=1394}] run scoreboard players set @a[tag=same_room,gamemode=!spectator] Music 80
-execute if entity @s[scores={Dialog=1404..}] as @e[tag=same_room,tag=gameboy_horror_location] run function luigis_mansion:entities/gameboy_horror_location/bring_player_back
+execute if entity @s[scores={Dialog=1404..}] as @e[tag=same_room,tag=game_boy_horror_location] run function luigis_mansion:entities/game_boy_horror_location/bring_player_back
 execute if entity @s[scores={Dialog=1404..1464}] as @a[tag=same_room,gamemode=!spectator] at @s unless block ~-0.5 ~ ~ minecraft:black_concrete run teleport @s ~0.5 ~ ~
 execute if entity @s[scores={Dialog=1464}] as @a[tag=same_room,tag=!spectator,tag=!looking_at_map] run function luigis_mansion:entities/player/animation/set/none
 execute if entity @s[scores={Dialog=1464}] as @a[tag=same_room] run function luigis_mansion:other/music/set/silence
@@ -45,7 +45,7 @@ scoreboard players set @s[scores={Dialog=1828}] AnimationProg 0
 execute if entity @s[scores={Dialog=1828}] run stopsound @a[tag=same_room,gamemode=!spectator] music
 execute if entity @s[scores={Dialog=1828}] run playsound luigis_mansion:music.warped_by_boos music @a[tag=same_room,gamemode=!spectator] ~ ~ ~ 1000
 execute if entity @s[scores={Dialog=1828}] run scoreboard players set @a[tag=same_room,gamemode=!spectator] Music 80
-execute if entity @s[scores={Dialog=1838..}] as @e[tag=same_room,tag=gameboy_horror_location] run function luigis_mansion:entities/gameboy_horror_location/bring_player_back
+execute if entity @s[scores={Dialog=1838..}] as @e[tag=same_room,tag=game_boy_horror_location] run function luigis_mansion:entities/game_boy_horror_location/bring_player_back
 execute if entity @s[scores={Dialog=1838..1898}] as @a[tag=same_room,gamemode=!spectator] at @s unless block ~-0.5 ~ ~ minecraft:black_concrete run teleport @s ~0.5 ~ ~
 execute if entity @s[scores={Dialog=1898}] as @a[tag=same_room,tag=!spectator,tag=!looking_at_map] run function luigis_mansion:entities/player/animation/set/none
 execute if entity @s[scores={Dialog=1898}] as @a[tag=same_room] run function luigis_mansion:other/music/set/silence

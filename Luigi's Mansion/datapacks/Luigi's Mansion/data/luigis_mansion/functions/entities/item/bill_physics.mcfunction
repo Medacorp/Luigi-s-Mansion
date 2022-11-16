@@ -9,4 +9,4 @@ execute at @s positioned ~ ~1.5 ~ if block ~ ~0.6 ~ #minecraft:slabs[type=bottom
 
 execute at @s positioned ~ ~1.5 ~ if entity @e[tag=same_room,tag=!spectator,distance=..0.7,limit=1] run tag @s add picked_up
 execute at @s positioned ~ ~1.5 ~ run tag @a[tag=same_room,tag=!spectator,distance=..0.7,limit=1] add collector
-execute at @s positioned ~ ~1.5 ~ unless entity @a[tag=collector,limit=1] as @e[tag=same_room,tag=gameboy_horror_location,tag=!spectator,distance=..0.7,limit=1] run function luigis_mansion:entities/gameboy_horror_location/tag_for_collecting
+execute at @s positioned ~ ~1.5 ~ unless entity @a[tag=collector,limit=1] as @e[tag=same_room,tag=game_boy_horror_location,tag=!spectator,distance=..0.7,limit=1] run function luigis_mansion:entities/game_boy_horror_location/tag_for_collecting

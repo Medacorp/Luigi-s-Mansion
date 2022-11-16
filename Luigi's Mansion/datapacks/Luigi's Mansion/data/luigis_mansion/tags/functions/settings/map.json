@@ -2,7 +2,7 @@
 	"values": [
 		"luigis_mansion:settings/map/flashlight_type",
 		"luigis_mansion:settings/map/open_map_on_key_collect",
-		"luigis_mansion:settings/map/double_use_gameboy_horror",
+		"luigis_mansion:settings/map/double_use_game_boy_horror",
 		"luigis_mansion:settings/map/global_player_names"
 	]
 }

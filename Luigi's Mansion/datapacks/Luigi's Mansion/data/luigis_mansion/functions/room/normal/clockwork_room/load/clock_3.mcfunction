@@ -1,2 +1,2 @@
-summon minecraft:item_frame 685 121 -6 {Facing:5b,Silent:1b,Invulnerable:1b,Item:{id:"minecraft:clock",Count:1b},CustomName:'{"translate":"luigis_mansion:entity.painting"}',Invisible:1b,Fixed:1b}
-summon minecraft:item_frame 685 121 -8 {Facing:5b,Silent:1b,Invulnerable:1b,Item:{id:"minecraft:clock",Count:1b},CustomName:'{"translate":"luigis_mansion:entity.painting"}',Invisible:1b,Fixed:1b}
+summon minecraft:item_frame 685 121 -6 {Facing:5b,Silent:1b,Invulnerable:1b,Item:{id:"minecraft:clock",Count:1b},CustomName:'{"translate":"luigis_mansion:furniture.painting"}',Invisible:1b,Fixed:1b}
+summon minecraft:item_frame 685 121 -8 {Facing:5b,Silent:1b,Invulnerable:1b,Item:{id:"minecraft:clock",Count:1b},CustomName:'{"translate":"luigis_mansion:furniture.painting"}',Invisible:1b,Fixed:1b}

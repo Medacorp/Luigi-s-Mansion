@@ -1,5 +1,5 @@
 function luigis_mansion:room/normal/conservatory/turn_on_lights
-execute if entity @a[tag=looking_at_map,limit=1] run function luigis_mansion:items/gameboy_horror/map/display/normal/generate
+execute if entity @a[tag=looking_at_map,limit=1] run function luigis_mansion:items/game_boy_horror/map/display/normal/generate
 function luigis_mansion:room/normal/conservatory/stop_music
 function luigis_mansion:room/normal/conservatory/load/room_clear_chest
 execute as @a[scores={Room=25},gamemode=!spectator] run function luigis_mansion:other/music/set/light

@@ -6,5 +6,5 @@ tag @s add seen_room_name
 
 execute if data storage luigis_mansion:data current_state.current_data.rooms.projection_room{seen:0b} run function luigis_mansion:room/hidden/projection_room/set_seen
 
-execute if block 686 12 -23 minecraft:light[level=15] run playsound luigis_mansion:block.ambient.projector block @s[scores={RoomNoise=0}] 685 12 -23 1
+execute if block 686 12 -23 minecraft:light[level=15] run playsound luigis_mansion:furniture.ambient.projector block @s[scores={RoomNoise=0}] 685 12 -23 1
 execute if block 686 12 -23 minecraft:light[level=15] run scoreboard players set @s[scores={RoomNoise=0}] RoomNoise 3

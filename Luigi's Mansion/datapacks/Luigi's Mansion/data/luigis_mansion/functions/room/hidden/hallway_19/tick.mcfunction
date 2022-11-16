@@ -9,7 +9,7 @@ execute as @a[gamemode=!spectator,scores={Room=55}] run function luigis_mansion:
 function #luigis_mansion:room/hidden/hallway_19/interactions/room
 
 stopsound @a[scores={Room=55,RoomNoise=0}] ambient luigis_mansion:block.telephone.ring
-execute unless entity @a[tag=toad_5_dialog,limit=1] unless entity @a[tag=uncle_grimmly_dialog,limit=1] if data storage luigis_mansion:data current_state.current_data{blackout:1b} unless data storage luigis_mansion:data current_state.current_data.technical_data{telephone_3:1b} positioned 752 29 -26 run playsound luigis_mansion:block.telephone.ring ambient @a[scores={Room=55,RoomNoise=0}] ~ ~ ~ 1
+execute unless entity @a[tag=toad_5_dialog,limit=1] unless entity @a[tag=uncle_grimmly_dialog,limit=1] if data storage luigis_mansion:data current_state.current_data{blackout:1b} unless data storage luigis_mansion:data current_state.current_data.technical_data{telephone_3:1b} positioned 752 29 -26 run playsound luigis_mansion:furniture.telephone.ring ambient @a[scores={Room=55,RoomNoise=0}] ~ ~ ~ 1
 execute unless entity @a[tag=toad_5_dialog,limit=1] unless entity @a[tag=uncle_grimmly_dialog,limit=1] if data storage luigis_mansion:data current_state.current_data{blackout:1b} unless data storage luigis_mansion:data current_state.current_data.technical_data{telephone_3:1b} run scoreboard players set @a[scores={Room=55,RoomNoise=0}] RoomNoise 40
 
 scoreboard players set #temp Room 55

@@ -1,0 +1,1 @@
+execute if entity @s[type=minecraft:player] run function luigis_mansion:items/game_boy_horror/scan/entity/player_return

@@ -19,7 +19,7 @@ execute at @s[tag=hit_floor] if block ~ ~0.5 ~ #minecraft:slabs[type=bottom] run
 execute at @s[tag=hit_floor] unless block ~ ~ ~ #luigis_mansion:items_ignore unless block ~ ~0.4 ~ #minecraft:slabs[type=bottom] run teleport @s ~ ~0.01 ~
 tag @s remove hit_floor
 execute at @s[tag=thrown] if block ^ ^ ^0.3 #luigis_mansion:items_ignore run teleport @s ^ ^ ^0.05
-execute at @s[tag=!dead] as @e[tag=same_room,tag=!spectator,distance=..0.7,tag=gameboy_horror_location] run function luigis_mansion:entities/gameboy_horror_location/bring_player_back
+execute at @s[tag=!dead] as @e[tag=same_room,tag=!spectator,distance=..0.7,tag=game_boy_horror_location] run function luigis_mansion:entities/game_boy_horror_location/bring_player_back
 execute at @s[tag=!dead] as @a[tag=same_room,tag=!spectator,distance=..0.7] rotated as @s rotated ~ 0 positioned ^ ^ ^10 run function luigis_mansion:entities/player/knockback/slip
 execute at @s if entity @a[tag=same_room,tag=!spectator,distance=..0.7,limit=1] run tag @s add dead
 execute at @s[scores={LightX=-2147483648..}] run function luigis_mansion:other/cast_shadow/1_tall

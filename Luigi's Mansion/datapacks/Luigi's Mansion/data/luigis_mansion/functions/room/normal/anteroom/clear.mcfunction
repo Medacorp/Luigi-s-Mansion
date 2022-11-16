@@ -1,5 +1,5 @@
 function luigis_mansion:room/normal/anteroom/turn_on_lights
-execute if entity @a[tag=looking_at_map,limit=1] run function luigis_mansion:items/gameboy_horror/map/display/normal/generate
+execute if entity @a[tag=looking_at_map,limit=1] run function luigis_mansion:items/game_boy_horror/map/display/normal/generate
 tag @e[scores={Room=4},tag=door,tag=frame] remove blockade
 execute as @a[scores={Room=4},gamemode=!spectator] run function luigis_mansion:other/music/set/light
 scoreboard players set #room Room 4
