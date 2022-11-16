@@ -7734,24 +7734,6 @@
         ],
         "subtitle": "luigis_mansion:subtitles.entity.red_grabbing_ghost.spawn"
     },
-    "entity.rocking_chair.move_forward": {
-        "sounds": [
-            {
-                "name": "luigis_mansion:entity/rocking_chair/move_forward",
-                "stream": false
-            }
-        ],
-        "subtitle": "luigis_mansion:subtitles.entity.rocking_chair.rock"
-    },
-    "entity.rocking_chair.move_backward": {
-        "sounds": [
-            {
-                "name": "luigis_mansion:entity/rocking_chair/move_backward",
-                "stream": false
-            }
-        ],
-        "subtitle": "luigis_mansion:subtitles.entity.rocking_chair.rock"
-    },
     "entity.rocking_horse.charge_intro": {
         "sounds": [
             {
@@ -8958,6 +8940,24 @@
             }
         ],
         "subtitle": "luigis_mansion:subtitles.furniture.moving_wall"
+    },
+    "furniture.rocking_chair.move_forward": {
+        "sounds": [
+            {
+                "name": "luigis_mansion:furniture/rocking_chair/move_forward",
+                "stream": false
+            }
+        ],
+        "subtitle": "luigis_mansion:subtitles.furniture.rocking_chair.rock"
+    },
+    "furniture.rocking_chair.move_backward": {
+        "sounds": [
+            {
+                "name": "luigis_mansion:furniture/rocking_chair/move_backward",
+                "stream": false
+            }
+        ],
+        "subtitle": "luigis_mansion:subtitles.furniture.rocking_chair.rock"
     },
     "furniture.search.cello": {
         "sounds": [
