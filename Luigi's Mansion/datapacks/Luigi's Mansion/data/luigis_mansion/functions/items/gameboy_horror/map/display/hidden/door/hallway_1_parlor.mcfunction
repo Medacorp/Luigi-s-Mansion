@@ -1,1 +1,0 @@
-place template luigis_mansion:gameboy_horror_map/door/double_unlocked 3698 110 6

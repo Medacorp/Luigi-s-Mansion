@@ -20,7 +20,7 @@ execute at @s[tag=thinking] run function luigis_mansion:animations/luigi/thinkin
 execute at @s[tag=sigh] run function luigis_mansion:animations/luigi/sigh/chest
 execute at @s[tag=enthusiastic] run function luigis_mansion:animations/luigi/enthusiastic/chest
 execute at @s[tag=answer_phone] run function luigis_mansion:animations/luigi/answer_phone/chest
-execute at @s[tag=gameboy_horror] run function luigis_mansion:animations/luigi/gameboy_horror/chest
+execute at @s[tag=game_boy_horror] run function luigis_mansion:animations/luigi/game_boy_horror/chest
 execute at @s[tag=inspect] run function luigis_mansion:animations/luigi/inspect/chest
 execute at @s[tag=look] run function luigis_mansion:animations/luigi/look/chest
 execute at @s[scores={KnockbackType=-9}] run function luigis_mansion_3ds_remake:animations/luigi/search/chest/chest

@@ -1,1 +1,0 @@
-place template luigis_beta_mansion:gameboy_horror_map/door/single_locked 3679 160 37 clockwise_90

@@ -1,1 +1,0 @@
-execute if entity @s[tag=gameboy_horror_part] run function luigis_mansion:entities/item/physics

@@ -8,571 +8,6 @@
         ],
         "subtitle": "luigis_mansion:subtitles.ambience.parlor_wind"
     },
-    "block.ambient.projector": {
-        "sounds": [
-            {
-                "name": "luigis_mansion:block/ambient/projector",
-                "stream": false,
-                "pitch": 0.8,
-				"volume": 0.5
-            },
-            {
-                "name": "luigis_mansion:block/ambient/projector",
-                "stream": false,
-                "pitch": 0.9,
-				"volume": 0.5
-            },
-            {
-                "name": "luigis_mansion:block/ambient/projector",
-                "stream": false,
-                "pitch": 1,
-				"volume": 0.5
-            },
-            {
-                "name": "luigis_mansion:block/ambient/projector",
-                "stream": false,
-                "pitch": 1.1,
-				"volume": 0.5
-            },
-            {
-                "name": "luigis_mansion:block/ambient/projector",
-                "stream": false,
-                "pitch": 1.2,
-				"volume": 0.5
-            }
-        ],
-        "subtitle": "luigis_mansion:subtitles.block.ambient.projector"
-    },
-    "block.ball_floor.spin": {
-        "sounds": [
-            {
-                "name": "luigis_mansion:block/ball_floor/spin",
-                "stream": false
-            }
-        ],
-        "subtitle": "luigis_mansion:subtitles.block.ball_floor.spin"
-    },
-    "block.ball_floor.start_spinning": {
-        "sounds": [
-            {
-                "name": "luigis_mansion:block/ball_floor/start_spinning",
-                "stream": false
-            }
-        ],
-        "subtitle": "luigis_mansion:subtitles.block.ball_floor.spin"
-    },
-    "block.blockade.disappear": {
-        "sounds": [
-            {
-                "name": "luigis_mansion:block/blockade/spawn",
-                "stream": false
-            }
-        ],
-        "subtitle": "luigis_mansion:subtitles.block.blockade.disappear"
-    },
-    "block.blockade.spawn": {
-        "sounds": [
-            {
-                "name": "luigis_mansion:block/blockade/spawn",
-                "stream": false
-            }
-        ],
-        "subtitle": "luigis_mansion:subtitles.block.blockade.spawn"
-    },
-    "block.boo_hatch": {
-        "sounds": [
-            {
-                "name": "luigis_mansion:block/boo_hatch",
-                "stream": false
-            }
-        ],
-        "subtitle": "luigis_mansion:subtitles.block.boo_hatch"
-    },
-    "block.button.press": {
-        "sounds": [
-            {
-                "name": "luigis_mansion:block/button/press",
-                "stream": false
-            }
-        ],
-        "subtitle": "luigis_mansion:subtitles.block.button.press"
-    },
-    "block.chandelier.fall": {
-        "sounds": [
-            {
-                "name": "luigis_mansion:block/chandelier/fall",
-                "stream": false,
-				"volume": 0.5
-            }
-        ],
-        "subtitle": "luigis_mansion:subtitles.block.chandelier.spin"
-    },
-    "block.chandelier.land": {
-        "sounds": [
-            {
-                "name": "luigis_mansion:block/chandelier/land",
-                "stream": false,
-				"volume": 0.5
-            }
-        ],
-        "subtitle": "luigis_mansion:subtitles.block.chandelier.stop"
-    },
-    "block.chandelier.rise": {
-        "sounds": [
-            {
-                "name": "luigis_mansion:block/chandelier/rise",
-                "stream": false,
-				"volume": 0.5
-            }
-        ],
-        "subtitle": "luigis_mansion:subtitles.block.chandelier.spin"
-    },
-    "block.chandelier.spin": {
-        "sounds": [
-            {
-                "name": "luigis_mansion:block/chandelier/spin",
-                "stream": false,
-				"volume": 0.5
-            }
-        ],
-        "subtitle": "luigis_mansion:subtitles.block.chandelier.spin"
-    },
-    "block.chandelier.stop": {
-        "sounds": [
-            {
-                "name": "luigis_mansion:block/chandelier/stop",
-                "stream": false,
-				"volume": 0.5
-            }
-        ],
-        "subtitle": "luigis_mansion:subtitles.block.chandelier.stop"
-    },
-    "block.chest.spawn": {
-        "sounds": [
-            {
-                "name": "luigis_mansion:block/chest/spawn",
-                "stream": false,
-				"volume": 0.5
-            }
-        ],
-        "subtitle": "luigis_mansion:subtitles.block.chest.spawn"
-    },
-    "block.clock.coo_coo": {
-        "sounds": [
-            {
-                "name": "luigis_mansion:block/clock/coo_coo",
-                "stream": false
-            }
-        ],
-        "subtitle": "luigis_mansion:subtitles.block.clock"
-    },
-    "block.clock.door": {
-        "sounds": [
-            {
-                "name": "luigis_mansion:block/clock/door",
-                "stream": false
-            }
-        ],
-        "subtitle": "luigis_mansion:subtitles.block.clock"
-    },
-    "block.clock.music_box": {
-        "sounds": [
-            {
-                "name": "luigis_mansion:block/clock/music_box",
-                "stream": false
-            }
-        ],
-        "subtitle": "luigis_mansion:subtitles.block.clock"
-    },
-    "block.clock.whistle_down": {
-        "sounds": [
-            {
-                "name": "luigis_mansion:block/clock/whistle_down",
-                "stream": false
-            }
-        ],
-        "subtitle": "luigis_mansion:subtitles.block.clock"
-    },
-    "block.clock.whistle_up": {
-        "sounds": [
-            {
-                "name": "luigis_mansion:block/clock/whistle_up",
-                "stream": false
-            }
-        ],
-        "subtitle": "luigis_mansion:subtitles.block.clock"
-    },
-    "block.clock.winding_down": {
-        "sounds": [
-            {
-                "name": "luigis_mansion:block/clock/winding_down",
-                "stream": false
-            }
-        ],
-        "subtitle": "luigis_mansion:subtitles.block.clock"
-    },
-    "block.clock.winding_up": {
-        "sounds": [
-            {
-                "name": "luigis_mansion:block/clock/winding_up",
-                "stream": false
-            }
-        ],
-        "subtitle": "luigis_mansion:subtitles.block.clock"
-    },
-    "block.crystal_ball.flash": {
-        "sounds": [
-            {
-                "name": "luigis_mansion:block/crystal_ball/flash",
-                "stream": false
-            }
-        ],
-        "subtitle": "luigis_mansion:subtitles.block.crystal_ball.shine"
-    },
-    "block.crystal_ball.shine": {
-        "sounds": [
-            {
-                "name": "luigis_mansion:block/crystal_ball/shine",
-                "stream": false
-            }
-        ],
-        "subtitle": "luigis_mansion:subtitles.block.crystal_ball.shine"
-    },
-    "block.door.burn": {
-        "sounds": [
-            {
-                "name": "luigis_mansion:block/door/burn",
-                "stream": false,
-                "volume": 0.5
-            }
-        ],
-        "subtitle": "luigis_mansion:subtitles.block.door.burn"
-    },
-    "block.door.chauncey": {
-        "sounds": [
-            {
-                "name": "luigis_mansion:block/door/chauncey",
-                "stream": false
-            }
-        ]
-    },
-    "block.door.close": {
-        "sounds": [
-            {
-                "name": "luigis_mansion:block/door/close",
-                "stream": false
-            }
-        ],
-        "subtitle": "luigis_mansion:subtitles.block.door.close"
-    },
-    "block.door.crack": {
-        "sounds": [
-            {
-                "name": "luigis_mansion:block/door/crack",
-                "stream": false
-            }
-        ],
-        "subtitle": "luigis_mansion:subtitles.block.door.crack"
-    },
-    "block.door.fake_close": {
-        "sounds": [
-            {
-                "name": "luigis_mansion:block/door/fake_close",
-                "stream": false
-            }
-        ],
-        "subtitle": "luigis_mansion:subtitles.block.door.close"
-    },
-    "block.door.fake_closing": {
-        "sounds": [
-            {
-                "name": "luigis_mansion:block/door/fake_closing",
-                "stream": false
-            }
-        ],
-        "subtitle": "luigis_mansion:subtitles.block.door.close"
-    },
-    "block.door.fake_open": {
-        "sounds": [
-            {
-                "name": "luigis_mansion:block/door/fake_open",
-                "stream": false
-            }
-        ],
-        "subtitle": "luigis_mansion:subtitles.block.door.open"
-    },
-    "block.door.grab_knob": {
-        "sounds": [
-            {
-                "name": "luigis_mansion:block/door/grab_knob",
-                "stream": false
-            }
-        ],
-        "subtitle": "luigis_mansion:subtitles.block.door.grab_knob"
-    },
-    "block.door.locked": {
-        "sounds": [
-            {
-                "name": "luigis_mansion:block/door/locked",
-                "stream": false
-            }
-        ],
-        "subtitle": "luigis_mansion:subtitles.block.door.locked"
-    },
-    "block.door.open": {
-        "sounds": [
-            {
-                "name": "luigis_mansion:block/door/open",
-                "stream": false
-            }
-        ],
-        "subtitle": "luigis_mansion:subtitles.block.door.open"
-    },
-    "block.door.turn_knob": {
-        "sounds": [
-            {
-                "name": "luigis_mansion:block/door/turn_knob",
-                "stream": false
-            }
-        ],
-        "subtitle": "luigis_mansion:subtitles.block.door.turn_knob"
-    },
-    "block.dust": {
-        "sounds": [
-            {
-                "name": "luigis_mansion:block/dust",
-                "stream": false
-            }
-        ],
-        "subtitle": "luigis_mansion:subtitles.block.dust"
-    },
-    "block.moving_wall": {
-        "sounds": [
-            {
-                "name": "luigis_mansion:block/moving_wall",
-                "stream": false
-            }
-        ],
-        "subtitle": "luigis_mansion:subtitles.block.moving_wall"
-    },
-    "block.search.cello": {
-        "sounds": [
-            {
-                "name": "luigis_mansion:block/search/cello",
-                "stream": false,
-				"volume": 0.5
-            }
-        ],
-        "subtitle": "luigis_mansion:subtitles.block.search"
-    },
-    "block.search.ceramic": {
-        "sounds": [
-            {
-                "name": "luigis_mansion:block/search/ceramic",
-                "stream": false,
-				"volume": 0.5
-            }
-        ],
-        "subtitle": "luigis_mansion:subtitles.block.search"
-    },
-    "block.search.chest": {
-        "sounds": [
-            {
-                "name": "luigis_mansion:block/search/chest",
-                "stream": false,
-				"volume": 0.5
-            }
-        ],
-        "subtitle": "luigis_mansion:subtitles.block.search"
-    },
-    "block.search.concrete": {
-        "sounds": [
-            {
-                "name": "luigis_mansion:block/search/concrete",
-                "stream": false,
-				"volume": 0.5
-            }
-        ],
-        "subtitle": "luigis_mansion:subtitles.block.search"
-    },
-    "block.search.drum": {
-        "sounds": [
-            {
-                "name": "luigis_mansion:block/search/drum",
-                "stream": false,
-				"volume": 0.5
-            }
-        ],
-        "subtitle": "luigis_mansion:subtitles.block.search"
-    },
-    "block.search.fridge": {
-        "sounds": [
-            {
-                "name": "luigis_mansion:block/search/fridge",
-                "stream": false,
-				"volume": 0.5
-            }
-        ],
-        "subtitle": "luigis_mansion:subtitles.block.search"
-    },
-    "block.search.generic": {
-        "sounds": [
-            {
-                "name": "luigis_mansion:block/search/generic",
-                "stream": false,
-				"volume": 0.5
-            }
-        ],
-        "subtitle": "luigis_mansion:subtitles.block.search"
-    },
-    "block.search.harp": {
-        "sounds": [
-            {
-                "name": "luigis_mansion:block/search/harp",
-                "stream": false,
-				"volume": 0.5
-            }
-        ],
-        "subtitle": "luigis_mansion:subtitles.block.search"
-    },
-    "block.search.heavy_generic": {
-        "sounds": [
-            {
-                "name": "luigis_mansion:block/search/heavy_generic",
-                "stream": false,
-				"volume": 0.5
-            }
-        ],
-        "subtitle": "luigis_mansion:subtitles.block.search"
-    },
-    "block.search.heavy_metal": {
-        "sounds": [
-            {
-                "name": "luigis_mansion:block/search/heavy_metal",
-                "stream": false,
-				"volume": 0.5
-            }
-        ],
-        "subtitle": "luigis_mansion:subtitles.block.search"
-    },
-    "block.search.metal": {
-        "sounds": [
-            {
-                "name": "luigis_mansion:block/search/metal",
-                "stream": false,
-				"volume": 0.5
-            }
-        ],
-        "subtitle": "luigis_mansion:subtitles.block.search"
-    },
-    "block.search.open.oven": {
-        "sounds": [
-            {
-                "name": "luigis_mansion:block/search/open/oven",
-                "stream": false,
-				"volume": 0.5
-            }
-        ],
-        "subtitle": "luigis_mansion:subtitles.block.search.open"
-    },
-    "block.search.oven": {
-        "sounds": [
-            {
-                "name": "luigis_mansion:block/search/oven",
-                "stream": false,
-				"volume": 0.1
-            }
-        ],
-        "subtitle": "luigis_mansion:subtitles.block.search"
-    },
-    "block.search.plant": {
-        "sounds": [
-            {
-                "name": "luigis_mansion:block/search/plant",
-                "stream": false,
-				"volume": 0.5
-            }
-        ],
-        "subtitle": "luigis_mansion:subtitles.block.search"
-    },
-    "block.search.plate": {
-        "sounds": [
-            {
-                "name": "luigis_mansion:block/search/plate",
-                "stream": false,
-				"volume": 0.5
-            }
-        ],
-        "subtitle": "luigis_mansion:subtitles.block.search"
-    },
-    "block.search.saxophone": {
-        "sounds": [
-            {
-                "name": "luigis_mansion:block/search/saxophone",
-                "stream": false,
-				"volume": 0.5
-            }
-        ],
-        "subtitle": "luigis_mansion:subtitles.block.search"
-    },
-    "block.search.stone": {
-        "sounds": [
-            {
-                "name": "luigis_mansion:block/search/stone",
-                "stream": false,
-				"volume": 0.5
-            }
-        ],
-        "subtitle": "luigis_mansion:subtitles.block.search"
-    },
-    "block.search.wall": {
-        "sounds": [
-            {
-                "name": "luigis_mansion:block/search/wall",
-                "stream": false,
-				"volume": 0.5
-            }
-        ],
-        "subtitle": "luigis_mansion:subtitles.block.search.wall"
-    },
-    "block.search.wood": {
-        "sounds": [
-            {
-                "name": "luigis_mansion:block/search/wood",
-                "stream": false,
-				"volume": 0.5
-            }
-        ],
-        "subtitle": "luigis_mansion:subtitles.block.search"
-    },
-    "block.search.xylophone": {
-        "sounds": [
-            {
-                "name": "luigis_mansion:block/search/xylophone",
-                "stream": false,
-				"volume": 0.5
-            }
-        ],
-        "subtitle": "luigis_mansion:subtitles.block.search"
-    },
-    "block.telephone.ring": {
-        "sounds": [
-            {
-                "name": "luigis_mansion:block/telephone/ring",
-                "stream": false
-            }
-        ],
-        "subtitle": "luigis_mansion:subtitles.block.telephone.ring"
-    },
-    "block.weights.drop": {
-        "sounds": [
-            {
-                "name": "luigis_mansion:block/weights/drop",
-                "stream": false
-            }
-        ],
-        "subtitle": "luigis_mansion:subtitles.block.weights.drop"
-    },
     "entity.ball.bounce": {
         "sounds": [
             {
@@ -3702,7 +3137,7 @@
     "entity.haunted_book.spawn": {
         "sounds": [
             {
-                "name": "luigis_mansion:block.search.generic",
+                "name": "luigis_mansion:furniture.search.generic",
                 "type": "event"
             }
         ],
@@ -3738,7 +3173,7 @@
     "entity.haunted_clown_doll.spawn": {
         "sounds": [
             {
-                "name": "luigis_mansion:block.search.generic",
+                "name": "luigis_mansion:furniture.search.generic",
                 "type": "event"
             }
         ],
@@ -3774,7 +3209,7 @@
     "entity.haunted_frying_pan.spawn": {
         "sounds": [
             {
-                "name": "luigis_mansion:block.search.metal",
+                "name": "luigis_mansion:furniture.search.metal",
                 "type": "event"
             }
         ],
@@ -3810,7 +3245,7 @@
     "entity.haunted_jar.spawn": {
         "sounds": [
             {
-                "name": "luigis_mansion:block.search.ceramic",
+                "name": "luigis_mansion:furniture.search.ceramic",
                 "type": "event"
             }
         ],
@@ -3846,7 +3281,7 @@
     "entity.haunted_plate.spawn": {
         "sounds": [
             {
-                "name": "luigis_mansion:block.search.plate",
+                "name": "luigis_mansion:furniture.search.plate",
                 "type": "event"
             }
         ],
@@ -3882,7 +3317,7 @@
     "entity.haunted_teddy_bear.spawn": {
         "sounds": [
             {
-                "name": "luigis_mansion:block.search.generic",
+                "name": "luigis_mansion:furniture.search.generic",
                 "type": "event"
             }
         ],
@@ -4836,7 +4271,7 @@
     "entity.mr_luggs.hit_table": {
         "sounds": [
             {
-                "name": "luigis_mansion:block.search.heavy_generic",
+                "name": "luigis_mansion:furniture.search.heavy_generic",
                 "type": "event"
             }
         ],
@@ -9177,6 +8612,571 @@
         ],
         "subtitle": "luigis_mansion:subtitles.entity.yellow_bat.attack"
     },
+    "furniture.ambient.projector": {
+        "sounds": [
+            {
+                "name": "luigis_mansion:furniture/ambient/projector",
+                "stream": false,
+                "pitch": 0.8,
+				"volume": 0.5
+            },
+            {
+                "name": "luigis_mansion:furniture/ambient/projector",
+                "stream": false,
+                "pitch": 0.9,
+				"volume": 0.5
+            },
+            {
+                "name": "luigis_mansion:furniture/ambient/projector",
+                "stream": false,
+                "pitch": 1,
+				"volume": 0.5
+            },
+            {
+                "name": "luigis_mansion:furniture/ambient/projector",
+                "stream": false,
+                "pitch": 1.1,
+				"volume": 0.5
+            },
+            {
+                "name": "luigis_mansion:furniture/ambient/projector",
+                "stream": false,
+                "pitch": 1.2,
+				"volume": 0.5
+            }
+        ],
+        "subtitle": "luigis_mansion:subtitles.furniture.ambient.projector"
+    },
+    "furniture.ball_floor.spin": {
+        "sounds": [
+            {
+                "name": "luigis_mansion:furniture/ball_floor/spin",
+                "stream": false
+            }
+        ],
+        "subtitle": "luigis_mansion:subtitles.furniture.ball_floor.spin"
+    },
+    "furniture.ball_floor.start_spinning": {
+        "sounds": [
+            {
+                "name": "luigis_mansion:furniture/ball_floor/start_spinning",
+                "stream": false
+            }
+        ],
+        "subtitle": "luigis_mansion:subtitles.furniture.ball_floor.spin"
+    },
+    "furniture.blockade.disappear": {
+        "sounds": [
+            {
+                "name": "luigis_mansion:furniture/blockade/spawn",
+                "stream": false
+            }
+        ],
+        "subtitle": "luigis_mansion:subtitles.furniture.blockade.disappear"
+    },
+    "furniture.blockade.spawn": {
+        "sounds": [
+            {
+                "name": "luigis_mansion:furniture/blockade/spawn",
+                "stream": false
+            }
+        ],
+        "subtitle": "luigis_mansion:subtitles.furniture.blockade.spawn"
+    },
+    "furniture.boo_hatch": {
+        "sounds": [
+            {
+                "name": "luigis_mansion:furniture/boo_hatch",
+                "stream": false
+            }
+        ],
+        "subtitle": "luigis_mansion:subtitles.furniture.boo_hatch"
+    },
+    "furniture.button.press": {
+        "sounds": [
+            {
+                "name": "luigis_mansion:furniture/button/press",
+                "stream": false
+            }
+        ],
+        "subtitle": "luigis_mansion:subtitles.furniture.button.press"
+    },
+    "furniture.chandelier.fall": {
+        "sounds": [
+            {
+                "name": "luigis_mansion:furniture/chandelier/fall",
+                "stream": false,
+				"volume": 0.5
+            }
+        ],
+        "subtitle": "luigis_mansion:subtitles.furniture.chandelier.spin"
+    },
+    "furniture.chandelier.land": {
+        "sounds": [
+            {
+                "name": "luigis_mansion:furniture/chandelier/land",
+                "stream": false,
+				"volume": 0.5
+            }
+        ],
+        "subtitle": "luigis_mansion:subtitles.furniture.chandelier.stop"
+    },
+    "furniture.chandelier.rise": {
+        "sounds": [
+            {
+                "name": "luigis_mansion:furniture/chandelier/rise",
+                "stream": false,
+				"volume": 0.5
+            }
+        ],
+        "subtitle": "luigis_mansion:subtitles.furniture.chandelier.spin"
+    },
+    "furniture.chandelier.spin": {
+        "sounds": [
+            {
+                "name": "luigis_mansion:furniture/chandelier/spin",
+                "stream": false,
+				"volume": 0.5
+            }
+        ],
+        "subtitle": "luigis_mansion:subtitles.furniture.chandelier.spin"
+    },
+    "furniture.chandelier.stop": {
+        "sounds": [
+            {
+                "name": "luigis_mansion:furniture/chandelier/stop",
+                "stream": false,
+				"volume": 0.5
+            }
+        ],
+        "subtitle": "luigis_mansion:subtitles.furniture.chandelier.stop"
+    },
+    "furniture.room_clear_chest.spawn": {
+        "sounds": [
+            {
+                "name": "luigis_mansion:furniture/room_clear_chest/spawn",
+                "stream": false,
+				"volume": 0.5
+            }
+        ],
+        "subtitle": "luigis_mansion:subtitles.furniture.room_clear_chest.spawn"
+    },
+    "furniture.clock.coo_coo": {
+        "sounds": [
+            {
+                "name": "luigis_mansion:furniture/clock/coo_coo",
+                "stream": false
+            }
+        ],
+        "subtitle": "luigis_mansion:subtitles.furniture.clock"
+    },
+    "furniture.clock.door": {
+        "sounds": [
+            {
+                "name": "luigis_mansion:furniture/clock/door",
+                "stream": false
+            }
+        ],
+        "subtitle": "luigis_mansion:subtitles.furniture.clock"
+    },
+    "furniture.clock.music_box": {
+        "sounds": [
+            {
+                "name": "luigis_mansion:furniture/clock/music_box",
+                "stream": false
+            }
+        ],
+        "subtitle": "luigis_mansion:subtitles.furniture.clock"
+    },
+    "furniture.clock.whistle_down": {
+        "sounds": [
+            {
+                "name": "luigis_mansion:furniture/clock/whistle_down",
+                "stream": false
+            }
+        ],
+        "subtitle": "luigis_mansion:subtitles.furniture.clock"
+    },
+    "furniture.clock.whistle_up": {
+        "sounds": [
+            {
+                "name": "luigis_mansion:furniture/clock/whistle_up",
+                "stream": false
+            }
+        ],
+        "subtitle": "luigis_mansion:subtitles.furniture.clock"
+    },
+    "furniture.clock.winding_down": {
+        "sounds": [
+            {
+                "name": "luigis_mansion:furniture/clock/winding_down",
+                "stream": false
+            }
+        ],
+        "subtitle": "luigis_mansion:subtitles.furniture.clock"
+    },
+    "furniture.clock.winding_up": {
+        "sounds": [
+            {
+                "name": "luigis_mansion:furniture/clock/winding_up",
+                "stream": false
+            }
+        ],
+        "subtitle": "luigis_mansion:subtitles.furniture.clock"
+    },
+    "furniture.crystal_ball.flash": {
+        "sounds": [
+            {
+                "name": "luigis_mansion:furniture/crystal_ball/flash",
+                "stream": false
+            }
+        ],
+        "subtitle": "luigis_mansion:subtitles.furniture.crystal_ball.shine"
+    },
+    "furniture.crystal_ball.shine": {
+        "sounds": [
+            {
+                "name": "luigis_mansion:furniture/crystal_ball/shine",
+                "stream": false
+            }
+        ],
+        "subtitle": "luigis_mansion:subtitles.furniture.crystal_ball.shine"
+    },
+    "furniture.door.burn": {
+        "sounds": [
+            {
+                "name": "luigis_mansion:furniture/door/burn",
+                "stream": false,
+                "volume": 0.5
+            }
+        ],
+        "subtitle": "luigis_mansion:subtitles.furniture.door.burn"
+    },
+    "furniture.door.chauncey": {
+        "sounds": [
+            {
+                "name": "luigis_mansion:furniture/door/chauncey",
+                "stream": false
+            }
+        ]
+    },
+    "furniture.door.close": {
+        "sounds": [
+            {
+                "name": "luigis_mansion:furniture/door/close",
+                "stream": false
+            }
+        ],
+        "subtitle": "luigis_mansion:subtitles.furniture.door.close"
+    },
+    "furniture.door.crack": {
+        "sounds": [
+            {
+                "name": "luigis_mansion:furniture/door/crack",
+                "stream": false
+            }
+        ],
+        "subtitle": "luigis_mansion:subtitles.furniture.door.crack"
+    },
+    "furniture.door.fake_close": {
+        "sounds": [
+            {
+                "name": "luigis_mansion:furniture/door/fake_close",
+                "stream": false
+            }
+        ],
+        "subtitle": "luigis_mansion:subtitles.furniture.door.close"
+    },
+    "furniture.door.fake_closing": {
+        "sounds": [
+            {
+                "name": "luigis_mansion:furniture/door/fake_closing",
+                "stream": false
+            }
+        ],
+        "subtitle": "luigis_mansion:subtitles.furniture.door.close"
+    },
+    "furniture.door.fake_open": {
+        "sounds": [
+            {
+                "name": "luigis_mansion:furniture/door/fake_open",
+                "stream": false
+            }
+        ],
+        "subtitle": "luigis_mansion:subtitles.furniture.door.open"
+    },
+    "furniture.door.grab_knob": {
+        "sounds": [
+            {
+                "name": "luigis_mansion:furniture/door/grab_knob",
+                "stream": false
+            }
+        ],
+        "subtitle": "luigis_mansion:subtitles.furniture.door.grab_knob"
+    },
+    "furniture.door.locked": {
+        "sounds": [
+            {
+                "name": "luigis_mansion:furniture/door/locked",
+                "stream": false
+            }
+        ],
+        "subtitle": "luigis_mansion:subtitles.furniture.door.locked"
+    },
+    "furniture.door.open": {
+        "sounds": [
+            {
+                "name": "luigis_mansion:furniture/door/open",
+                "stream": false
+            }
+        ],
+        "subtitle": "luigis_mansion:subtitles.furniture.door.open"
+    },
+    "furniture.door.turn_knob": {
+        "sounds": [
+            {
+                "name": "luigis_mansion:furniture/door/turn_knob",
+                "stream": false
+            }
+        ],
+        "subtitle": "luigis_mansion:subtitles.furniture.door.turn_knob"
+    },
+    "furniture.dust": {
+        "sounds": [
+            {
+                "name": "luigis_mansion:furniture/dust",
+                "stream": false
+            }
+        ],
+        "subtitle": "luigis_mansion:subtitles.furniture.dust"
+    },
+    "furniture.moving_wall": {
+        "sounds": [
+            {
+                "name": "luigis_mansion:furniture/moving_wall",
+                "stream": false
+            }
+        ],
+        "subtitle": "luigis_mansion:subtitles.furniture.moving_wall"
+    },
+    "furniture.search.cello": {
+        "sounds": [
+            {
+                "name": "luigis_mansion:furniture/search/cello",
+                "stream": false,
+				"volume": 0.5
+            }
+        ],
+        "subtitle": "luigis_mansion:subtitles.furniture.search"
+    },
+    "furniture.search.ceramic": {
+        "sounds": [
+            {
+                "name": "luigis_mansion:furniture/search/ceramic",
+                "stream": false,
+				"volume": 0.5
+            }
+        ],
+        "subtitle": "luigis_mansion:subtitles.furniture.search"
+    },
+    "furniture.search.chest": {
+        "sounds": [
+            {
+                "name": "luigis_mansion:furniture/search/chest",
+                "stream": false,
+				"volume": 0.5
+            }
+        ],
+        "subtitle": "luigis_mansion:subtitles.furniture.search"
+    },
+    "furniture.search.concrete": {
+        "sounds": [
+            {
+                "name": "luigis_mansion:furniture/search/concrete",
+                "stream": false,
+				"volume": 0.5
+            }
+        ],
+        "subtitle": "luigis_mansion:subtitles.furniture.search"
+    },
+    "furniture.search.drum": {
+        "sounds": [
+            {
+                "name": "luigis_mansion:furniture/search/drum",
+                "stream": false,
+				"volume": 0.5
+            }
+        ],
+        "subtitle": "luigis_mansion:subtitles.furniture.search"
+    },
+    "furniture.search.fridge": {
+        "sounds": [
+            {
+                "name": "luigis_mansion:furniture/search/fridge",
+                "stream": false,
+				"volume": 0.5
+            }
+        ],
+        "subtitle": "luigis_mansion:subtitles.furniture.search"
+    },
+    "furniture.search.generic": {
+        "sounds": [
+            {
+                "name": "luigis_mansion:furniture/search/generic",
+                "stream": false,
+				"volume": 0.5
+            }
+        ],
+        "subtitle": "luigis_mansion:subtitles.furniture.search"
+    },
+    "furniture.search.harp": {
+        "sounds": [
+            {
+                "name": "luigis_mansion:furniture/search/harp",
+                "stream": false,
+				"volume": 0.5
+            }
+        ],
+        "subtitle": "luigis_mansion:subtitles.furniture.search"
+    },
+    "furniture.search.heavy_generic": {
+        "sounds": [
+            {
+                "name": "luigis_mansion:furniture/search/heavy_generic",
+                "stream": false,
+				"volume": 0.5
+            }
+        ],
+        "subtitle": "luigis_mansion:subtitles.furniture.search"
+    },
+    "furniture.search.heavy_metal": {
+        "sounds": [
+            {
+                "name": "luigis_mansion:furniture/search/heavy_metal",
+                "stream": false,
+				"volume": 0.5
+            }
+        ],
+        "subtitle": "luigis_mansion:subtitles.furniture.search"
+    },
+    "furniture.search.metal": {
+        "sounds": [
+            {
+                "name": "luigis_mansion:furniture/search/metal",
+                "stream": false,
+				"volume": 0.5
+            }
+        ],
+        "subtitle": "luigis_mansion:subtitles.furniture.search"
+    },
+    "furniture.search.open.oven": {
+        "sounds": [
+            {
+                "name": "luigis_mansion:furniture/search/open/oven",
+                "stream": false,
+				"volume": 0.5
+            }
+        ],
+        "subtitle": "luigis_mansion:subtitles.furniture.search.open"
+    },
+    "furniture.search.oven": {
+        "sounds": [
+            {
+                "name": "luigis_mansion:furniture/search/oven",
+                "stream": false,
+				"volume": 0.1
+            }
+        ],
+        "subtitle": "luigis_mansion:subtitles.furniture.search"
+    },
+    "furniture.search.plant": {
+        "sounds": [
+            {
+                "name": "luigis_mansion:furniture/search/plant",
+                "stream": false,
+				"volume": 0.5
+            }
+        ],
+        "subtitle": "luigis_mansion:subtitles.furniture.search"
+    },
+    "furniture.search.plate": {
+        "sounds": [
+            {
+                "name": "luigis_mansion:furniture/search/plate",
+                "stream": false,
+				"volume": 0.5
+            }
+        ],
+        "subtitle": "luigis_mansion:subtitles.furniture.search"
+    },
+    "furniture.search.saxophone": {
+        "sounds": [
+            {
+                "name": "luigis_mansion:furniture/search/saxophone",
+                "stream": false,
+				"volume": 0.5
+            }
+        ],
+        "subtitle": "luigis_mansion:subtitles.furniture.search"
+    },
+    "furniture.search.stone": {
+        "sounds": [
+            {
+                "name": "luigis_mansion:furniture/search/stone",
+                "stream": false,
+				"volume": 0.5
+            }
+        ],
+        "subtitle": "luigis_mansion:subtitles.furniture.search"
+    },
+    "furniture.search.wall": {
+        "sounds": [
+            {
+                "name": "luigis_mansion:furniture/search/wall",
+                "stream": false,
+				"volume": 0.5
+            }
+        ],
+        "subtitle": "luigis_mansion:subtitles.furniture.search.wall"
+    },
+    "furniture.search.wood": {
+        "sounds": [
+            {
+                "name": "luigis_mansion:furniture/search/wood",
+                "stream": false,
+				"volume": 0.5
+            }
+        ],
+        "subtitle": "luigis_mansion:subtitles.furniture.search"
+    },
+    "furniture.search.xylophone": {
+        "sounds": [
+            {
+                "name": "luigis_mansion:furniture/search/xylophone",
+                "stream": false,
+				"volume": 0.5
+            }
+        ],
+        "subtitle": "luigis_mansion:subtitles.furniture.search"
+    },
+    "furniture.telephone.ring": {
+        "sounds": [
+            {
+                "name": "luigis_mansion:furniture/telephone/ring",
+                "stream": false
+            }
+        ],
+        "subtitle": "luigis_mansion:subtitles.furniture.telephone.ring"
+    },
+    "furniture.weights.drop": {
+        "sounds": [
+            {
+                "name": "luigis_mansion:furniture/weights/drop",
+                "stream": false
+            }
+        ],
+        "subtitle": "luigis_mansion:subtitles.furniture.weights.drop"
+    },
     "item.big_pearl.bounce": {
         "sounds": [
             {
@@ -9294,95 +9294,95 @@
         ],
         "subtitle": "luigis_mansion:subtitles.item.flashlight.off"
     },
-    "item.gameboy_horror.radar": {
+    "item.game_boy_horror.radar": {
         "sounds": [
             {
-                "name": "luigis_mansion:item/gameboy_horror/radar",
+                "name": "luigis_mansion:item/game_boy_horror/radar",
                 "stream": false
             }
         ],
-        "subtitle": "luigis_mansion:subtitles.item.gameboy_horror.radar"
+        "subtitle": "luigis_mansion:subtitles.item.game_boy_horror.radar"
     },
-    "item.gameboy_horror.map.close": {
+    "item.game_boy_horror.map.close": {
         "sounds": [
             {
-                "name": "luigis_mansion:item/gameboy_horror/map/close",
+                "name": "luigis_mansion:item/game_boy_horror/map/close",
                 "stream": false
             }
         ],
-        "subtitle": "luigis_mansion:subtitles.item.gameboy_horror.off"
+        "subtitle": "luigis_mansion:subtitles.item.game_boy_horror.off"
     },
-    "item.gameboy_horror.map.down_floor": {
+    "item.game_boy_horror.map.down_floor": {
         "sounds": [
             {
-                "name": "luigis_mansion:item/gameboy_horror/map/down_floor",
+                "name": "luigis_mansion:item/game_boy_horror/map/down_floor",
                 "stream": false
             }
         ],
-        "subtitle": "luigis_mansion:subtitles.item.gameboy_horror.map.move"
+        "subtitle": "luigis_mansion:subtitles.item.game_boy_horror.map.move"
     },
-    "item.gameboy_horror.map.move": {
+    "item.game_boy_horror.map.move": {
         "sounds": [
             {
-                "name": "luigis_mansion:item/gameboy_horror/map/move",
+                "name": "luigis_mansion:item/game_boy_horror/map/move",
                 "stream": false
             }
         ],
-        "subtitle": "luigis_mansion:subtitles.item.gameboy_horror.map.move"
+        "subtitle": "luigis_mansion:subtitles.item.game_boy_horror.map.move"
     },
-    "item.gameboy_horror.map.open": {
+    "item.game_boy_horror.map.open": {
         "sounds": [
             {
-                "name": "luigis_mansion:item/gameboy_horror/map/open",
+                "name": "luigis_mansion:item/game_boy_horror/map/open",
                 "stream": false
             }
         ],
-        "subtitle": "luigis_mansion:subtitles.item.gameboy_horror.on"
+        "subtitle": "luigis_mansion:subtitles.item.game_boy_horror.on"
     },
-    "item.gameboy_horror.map.up_floor": {
+    "item.game_boy_horror.map.up_floor": {
         "sounds": [
             {
-                "name": "luigis_mansion:item/gameboy_horror/map/up_floor",
+                "name": "luigis_mansion:item/game_boy_horror/map/up_floor",
                 "stream": false
             }
         ],
-        "subtitle": "luigis_mansion:subtitles.item.gameboy_horror.map.move"
+        "subtitle": "luigis_mansion:subtitles.item.game_boy_horror.map.move"
     },
-    "item.gameboy_horror.scan": {
+    "item.game_boy_horror.scan": {
         "sounds": [
             {
-                "name": "luigis_mansion:item/gameboy_horror/scan",
+                "name": "luigis_mansion:item/game_boy_horror/scan",
                 "stream": false
             }
         ],
-        "subtitle": "luigis_mansion:subtitles.item.gameboy_horror.scan"
+        "subtitle": "luigis_mansion:subtitles.item.game_boy_horror.scan"
     },
-    "item.gameboy_horror.show_caught_ghosts": {
+    "item.game_boy_horror.show_caught_ghosts": {
         "sounds": [
             {
-                "name": "luigis_mansion:item/gameboy_horror/show_caught_ghosts",
+                "name": "luigis_mansion:item/game_boy_horror/show_caught_ghosts",
                 "stream": false
             }
         ],
-        "subtitle": "luigis_mansion:subtitles.item.gameboy_horror.on"
+        "subtitle": "luigis_mansion:subtitles.item.game_boy_horror.on"
     },
-    "item.gameboy_horror.show_items": {
+    "item.game_boy_horror.show_items": {
         "sounds": [
             {
-                "name": "luigis_mansion:item/gameboy_horror/show_items",
+                "name": "luigis_mansion:item/game_boy_horror/show_items",
                 "stream": false
             }
         ],
-        "subtitle": "luigis_mansion:subtitles.item.gameboy_horror.on"
+        "subtitle": "luigis_mansion:subtitles.item.game_boy_horror.on"
     },
-    "item.gameboy_horror.warp": {
+    "item.game_boy_horror.warp": {
         "sounds": [
             {
-                "name": "luigis_mansion:item/gameboy_horror/warp",
+                "name": "luigis_mansion:item/game_boy_horror/warp",
                 "stream": false
             }
         ],
-        "subtitle": "luigis_mansion:subtitles.item.gameboy_horror.warp"
+        "subtitle": "luigis_mansion:subtitles.item.game_boy_horror.warp"
     },
     "item.gold_bar.bounce": {
         "sounds": [
@@ -10326,28 +10326,28 @@
             }
         ]
     },
-    "music.gameboy_horror": {
+    "music.game_boy_horror": {
         "sounds": [
             {
-                "name": "luigis_mansion:music/gameboy_horror",
+                "name": "luigis_mansion:music/game_boy_horror",
                 "stream": true,
                 "volume": 0.00025
             }
         ]
     },
-    "music.gameboy_horror_call": {
+    "music.game_boy_horror_call": {
         "sounds": [
             {
-                "name": "luigis_mansion:music/gameboy_horror_call",
+                "name": "luigis_mansion:music/game_boy_horror_call",
                 "stream": true,
                 "volume": 0.00025
             }
         ]
     },
-    "music.gameboy_horror_call_intro": {
+    "music.game_boy_horror_call_intro": {
         "sounds": [
             {
-                "name": "luigis_mansion:music/gameboy_horror_call_intro",
+                "name": "luigis_mansion:music/game_boy_horror_call_intro",
                 "stream": true,
                 "volume": 0.00025
             }

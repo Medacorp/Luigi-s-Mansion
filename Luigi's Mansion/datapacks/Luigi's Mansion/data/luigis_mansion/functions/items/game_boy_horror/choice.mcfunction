@@ -1,0 +1,5 @@
+tellraw @s {"translate":"chat.type.text","with":[{"translate":"luigis_mansion:item.game_boy_horror","color":"green"},{"translate":"luigis_mansion:message.game_boy_horror.choose"}]}
+tellraw @s {"translate":"luigis_mansion:message.game_boy_horror.map","color":"green","clickEvent":{"action":"run_command","value":"/trigger GBHChoice set 1"},"extra":[{"text":"\n"},{"translate":"luigis_mansion:message.game_boy_horror.scan","clickEvent":{"action":"run_command","value":"/trigger GBHChoice set 2"}},{"text":"\n"},{"translate":"luigis_mansion:message.game_boy_horror.show_items","clickEvent":{"action":"run_command","value":"/trigger GBHChoice set 3"}},{"text":"\n"},{"translate":"luigis_mansion:message.game_boy_horror.show_caught_ghosts","clickEvent":{"action":"run_command","value":"/trigger GBHChoice set 4"}},{"text":"\n"},{"translate":"luigis_mansion:message.game_boy_horror.show_settings","color":"green","clickEvent":{"action":"run_command","value":"/trigger SettingsCheck set -1"}}]}
+scoreboard players enable @s GBHChoice
+scoreboard players reset @s UseItem
+tag @s add open_gbh_menu

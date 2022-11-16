@@ -1,4 +1,4 @@
-summon minecraft:item_frame 715 23 -37 {Facing:4b,Silent:1b,Invulnerable:1b,Item:{id:"minecraft:filled_map",Count:1b,tag:{map:291}},CustomName:'{"translate":"luigis_mansion:entity.painting"}',Invisible:1b,Fixed:1b}
-summon minecraft:item_frame 715 23 -38 {Facing:4b,Silent:1b,Invulnerable:1b,Item:{id:"minecraft:filled_map",Count:1b,tag:{map:292}},CustomName:'{"translate":"luigis_mansion:entity.painting"}',Invisible:1b,Fixed:1b}
-summon minecraft:item_frame 715 22 -37 {Facing:4b,Silent:1b,Invulnerable:1b,Item:{id:"minecraft:filled_map",Count:1b,tag:{map:293}},CustomName:'{"translate":"luigis_mansion:entity.painting"}',Invisible:1b,Fixed:1b}
-summon minecraft:item_frame 715 22 -38 {Facing:4b,Silent:1b,Invulnerable:1b,Item:{id:"minecraft:filled_map",Count:1b,tag:{map:294}},CustomName:'{"translate":"luigis_mansion:entity.painting"}',Invisible:1b,Fixed:1b}
+summon minecraft:item_frame 715 23 -37 {Facing:4b,Silent:1b,Invulnerable:1b,Item:{id:"minecraft:filled_map",Count:1b,tag:{map:291}},CustomName:'{"translate":"luigis_mansion:furniture.painting"}',Invisible:1b,Fixed:1b}
+summon minecraft:item_frame 715 23 -38 {Facing:4b,Silent:1b,Invulnerable:1b,Item:{id:"minecraft:filled_map",Count:1b,tag:{map:292}},CustomName:'{"translate":"luigis_mansion:furniture.painting"}',Invisible:1b,Fixed:1b}
+summon minecraft:item_frame 715 22 -37 {Facing:4b,Silent:1b,Invulnerable:1b,Item:{id:"minecraft:filled_map",Count:1b,tag:{map:293}},CustomName:'{"translate":"luigis_mansion:furniture.painting"}',Invisible:1b,Fixed:1b}
+summon minecraft:item_frame 715 22 -38 {Facing:4b,Silent:1b,Invulnerable:1b,Item:{id:"minecraft:filled_map",Count:1b,tag:{map:294}},CustomName:'{"translate":"luigis_mansion:furniture.painting"}',Invisible:1b,Fixed:1b}

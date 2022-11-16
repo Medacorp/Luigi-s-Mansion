@@ -20,8 +20,9 @@ execute if entity @s[scores={Dialog=664}] if score #players Totals matches 1 run
 execute if entity @s[scores={Dialog=664}] if score #players Totals matches 2.. run tellraw @a[tag=same_room] {"translate":"chat.type.text","with":[{"translate":"luigis_mansion:entity.madame_clairvoya","color":"green"},{"translate":"luigis_mansion:dialog.madame_clairvoya.item_2.2.more"}]}
 tag @s[scores={Dialog=984}] add nod
 scoreboard players set @s[scores={Dialog=984}] AnimationProg 0
-execute if entity @s[scores={Dialog=984}] if score #players Totals matches 1 run tellraw @a[tag=same_room] {"translate":"chat.type.text","with":[{"translate":"luigis_mansion:entity.madame_clairvoya","color":"green"},{"translate":"luigis_mansion:dialog.madame_clairvoya.item_2.3"}]}
-execute if entity @s[scores={Dialog=984}] if score #players Totals matches 2.. run tellraw @a[tag=same_room] {"translate":"chat.type.text","with":[{"translate":"luigis_mansion:entity.madame_clairvoya","color":"green"},{"translate":"luigis_mansion:dialog.madame_clairvoya.item_2.3.more"}]}
+execute if entity @s[scores={Dialog=984}] run tellraw @a[tag=same_room] {"translate":"chat.type.text","with":[{"translate":"luigis_mansion:entity.madame_clairvoya","color":"green"},{"translate":"luigis_mansion:dialog.madame_clairvoya.item_2.3"}]}
+execute if entity @s[scores={Dialog=1056}] if score #players Totals matches 1 run tellraw @a[tag=same_room] {"translate":"chat.type.text","with":[{"translate":"luigis_mansion:entity.madame_clairvoya","color":"green"},{"translate":"luigis_mansion:dialog.madame_clairvoya.item_2.4"}]}
+execute if entity @s[scores={Dialog=1056}] if score #players Totals matches 2.. run tellraw @a[tag=same_room] {"translate":"chat.type.text","with":[{"translate":"luigis_mansion:entity.madame_clairvoya","color":"green"},{"translate":"luigis_mansion:dialog.madame_clairvoya.item_2.4.more"}]}
 tag @s[scores={Dialog=1176}] remove nod
 execute if entity @s[scores={Dialog=1176}] as @a[tag=same_room,gamemode=!spectator,tag=!looking_at_map] run function luigis_mansion:entities/player/animation/set/none
 tag @s[scores={Dialog=1176}] remove talk

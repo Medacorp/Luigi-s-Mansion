@@ -28,7 +28,7 @@ teleport @s[scores={ActionTime=41..60}] ^ ^0.15 ^-0.1
 data modify entity @s[scores={ActionTime=86}] ArmorItems[3].tag.CustomModelData set value 91
 execute if entity @s[scores={ActionTime=86}] run playsound luigis_mansion:entity.bowser.vacuum_spit hostile @a[tag=same_room] ~ ~ ~ 3
 execute if entity @s[scores={ActionTime=90}] run scoreboard players set @a[tag=vacuumed,limit=1] Invulnerable 0
-execute if entity @s[scores={ActionTime=90}] as @a[tag=vacuumed,limit=1,tag=looking_at_map] run function luigis_mansion:items/gameboy_horror/map/close
+execute if entity @s[scores={ActionTime=90}] as @a[tag=vacuumed,limit=1,tag=looking_at_map] run function luigis_mansion:items/game_boy_horror/map/close
 execute if entity @s[scores={ActionTime=90}] if score #mirrored Selected matches 0 as @a[tag=vacuumed,limit=1] positioned as @s rotated ~-45 0 run teleport @s ~ ~2 ~ ~-180 ~
 execute if entity @s[scores={ActionTime=90}] if score #mirrored Selected matches 1 as @a[tag=vacuumed,limit=1] positioned as @s rotated ~45 0 run teleport @s ~ ~2 ~ ~-180 ~
 execute if entity @s[scores={ActionTime=90}] as @a[tag=vacuumed,limit=1] at @s positioned ^ ^ ^1 run function luigis_mansion:entities/player/knockback/large

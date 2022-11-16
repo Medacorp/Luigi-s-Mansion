@@ -1,2 +1,2 @@
-summon minecraft:item_frame 695 113 -24 {Facing:2b,Silent:1b,Invulnerable:1b,Item:{id:"minecraft:filled_map",Count:1b,tag:{map:301}},CustomName:'{"translate":"luigis_mansion:entity.painting"}',Invisible:1b,Fixed:1b}
-summon minecraft:item_frame 697 113 -24 {Facing:2b,Silent:1b,Invulnerable:1b,Item:{id:"minecraft:filled_map",Count:1b,tag:{map:302}},CustomName:'{"translate":"luigis_mansion:entity.painting"}',Invisible:1b,Fixed:1b}
+summon minecraft:item_frame 695 113 -24 {Facing:2b,Silent:1b,Invulnerable:1b,Item:{id:"minecraft:filled_map",Count:1b,tag:{map:301}},CustomName:'{"translate":"luigis_mansion:furniture.painting"}',Invisible:1b,Fixed:1b}
+summon minecraft:item_frame 697 113 -24 {Facing:2b,Silent:1b,Invulnerable:1b,Item:{id:"minecraft:filled_map",Count:1b,tag:{map:302}},CustomName:'{"translate":"luigis_mansion:furniture.painting"}',Invisible:1b,Fixed:1b}

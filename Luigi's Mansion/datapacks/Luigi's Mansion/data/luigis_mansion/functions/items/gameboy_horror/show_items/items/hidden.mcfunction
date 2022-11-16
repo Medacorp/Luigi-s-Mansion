@@ -1,1 +1,0 @@
-function luigis_mansion:items/gameboy_horror/show_items/items/normal

@@ -2,8 +2,8 @@ execute at @a[tag=flashlight,tag=same_room,tag=!spectator] positioned ^ ^ ^3 run
 scoreboard players add @s[scores={PathStep=40..}] PathStep 1
 execute unless entity @s[scores={PathStep=0..}] run scoreboard players set @s PathStep 0
 execute positioned ^ ^0.9 ^1.5 if entity @e[type=minecraft:marker,tag=flashlight_target,distance=..3,limit=1] run scoreboard players add @s[scores={PathStep=..40}] PathStep 1
-execute positioned ^ ^0.9 ^1.5 if entity @e[type=minecraft:marker,tag=flashlight_target,distance=..3,limit=1] if entity @s[scores={PathStep=1}] run playsound luigis_mansion:block.crystal_ball.flash block @a[tag=same_room] ~ ~ ~ 1
-execute positioned ^ ^0.9 ^1.5 if entity @e[type=minecraft:marker,tag=flashlight_target,distance=..3,limit=1] if entity @s[scores={PathStep=10}] run playsound luigis_mansion:block.crystal_ball.shine block @a[tag=same_room] ~ ~ ~ 1
+execute positioned ^ ^0.9 ^1.5 if entity @e[type=minecraft:marker,tag=flashlight_target,distance=..3,limit=1] if entity @s[scores={PathStep=1}] run playsound luigis_mansion:furniture.crystal_ball.flash block @a[tag=same_room] ~ ~ ~ 1
+execute positioned ^ ^0.9 ^1.5 if entity @e[type=minecraft:marker,tag=flashlight_target,distance=..3,limit=1] if entity @s[scores={PathStep=10}] run playsound luigis_mansion:furniture.crystal_ball.shine block @a[tag=same_room] ~ ~ ~ 1
 execute positioned ^ ^0.9 ^1.5 unless entity @e[type=minecraft:marker,tag=flashlight_target,distance=..3,limit=1] if entity @s[scores={PathStep=1..40}] run stopsound @a block luigis_mansion:block.crystal_ball.shine
 execute positioned ^ ^0.9 ^1.5 unless entity @e[type=minecraft:marker,tag=flashlight_target,distance=..3,limit=1] run scoreboard players set @s[scores={PathStep=..40}] PathStep 0
 kill @e[type=minecraft:marker,tag=flashlight_target]

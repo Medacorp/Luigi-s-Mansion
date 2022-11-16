@@ -12,7 +12,7 @@ tag @s[tag=spawned_particle] remove spawned_particle
 tag @s[tag=!spawned_particle,tag=!no_spawned_particle] add spawned_particle
 tag @s[tag=no_spawned_particle] remove no_spawned_particle
 execute at @s run function luigis_mansion:animations/bomb/turn
-execute at @s[scores={Move=10}] run execute as @e[distance=..3,scores={Invulnerable=0},tag=gameboy_horror_location] run function luigis_mansion:entities/gameboy_horror_location/bring_player_back
+execute at @s[scores={Move=10}] run execute as @e[distance=..3,scores={Invulnerable=0},tag=game_boy_horror_location] run function luigis_mansion:entities/game_boy_horror_location/bring_player_back
 execute at @s[scores={Move=10}] run effect give @a[distance=..3,scores={Invulnerable=0},tag=!spectator] minecraft:instant_damage 1 0 true
 execute at @s[scores={Move=10}] run scoreboard players set @a[distance=..3,scores={Invulnerable=0},tag=!spectator] ForcedDamage 4
 execute at @s[scores={Move=10}] as @a[distance=..3,scores={Invulnerable=0},tag=!spectator] run function luigis_mansion:entities/player/knockback/burn

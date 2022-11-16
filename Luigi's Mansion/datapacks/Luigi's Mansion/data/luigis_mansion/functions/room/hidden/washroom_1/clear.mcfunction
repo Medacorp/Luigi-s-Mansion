@@ -1,5 +1,5 @@
 function luigis_mansion:room/hidden/washroom_1/turn_on_lights
-execute if entity @a[tag=looking_at_map,limit=1] run function luigis_mansion:items/gameboy_horror/map/display/hidden/generate
+execute if entity @a[tag=looking_at_map,limit=1] run function luigis_mansion:items/game_boy_horror/map/display/hidden/generate
 execute unless entity @s[tag=toad] as @a[scores={Room=19},gamemode=!spectator] run function luigis_mansion:other/music/set/light
 scoreboard players set #room Room 19
 function luigis_mansion:other/music/play/group_0/cleared_room

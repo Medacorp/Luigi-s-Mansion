@@ -1,4 +1,4 @@
-execute as @a[limit=1] run function luigis_mansion:items/gameboy_horror/show_items/check_money/gold_coin
+execute as @a[limit=1] run function luigis_mansion:items/game_boy_horror/show_items/check_money/gold_coin
 scoreboard players reset #temp2 Money
 execute unless score #temp Money >= #heart_coin_count Selected run summon minecraft:armor_stand ~ ~-1 ~ {CustomName:'{"translate":"luigis_mansion:item.heart"}',Pose:{Head:[0.0f,0.0f,0.01f]},Invisible:1b,Silent:1b,NoGravity:1b,Marker:1b,ArmorItems:[{},{},{},{id:"minecraft:diamond_pickaxe",Count:1b,tag:{Unbreakable:1b,Damage:5,CustomModelData:13,luigis_mansion:{size:10}}}],Tags:["item","heart","this_entity"],DisabledSlots:2039583}
 execute if score #temp Money >= #heart_coin_count Selected run summon minecraft:armor_stand ~ ~-1 ~ {CustomName:'{"translate":"luigis_mansion:item.heart"}',Pose:{Head:[0.0f,0.0f,0.01f]},Invisible:1b,Silent:1b,NoGravity:1b,Marker:1b,ArmorItems:[{},{},{},{id:"minecraft:diamond_pickaxe",Count:1b,tag:{Unbreakable:1b,Damage:5,CustomModelData:30,luigis_mansion:{size:20}}}],Tags:["item","heart","this_entity"],DisabledSlots:2039583}

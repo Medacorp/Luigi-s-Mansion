@@ -1,1 +1,0 @@
-place template luigis_beta_mansion:gameboy_horror_map/door/single_unlocked 3705 110 41

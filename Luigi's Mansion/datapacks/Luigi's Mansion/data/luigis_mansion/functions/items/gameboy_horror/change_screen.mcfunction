@@ -1,7 +1,0 @@
-execute unless entity @s[scores={ForceScreen=1}] unless entity @a[scores={GBHDialog=1..}] if score #gbh_clock_increase Selected matches 0 if entity @s[tag=!scanning,nbt=!{Inventory:[{tag:{CustomModelData:0,luigis_mansion:{id:"luigis_mansion:gameboy_horror"}}}]}] run function luigis_mansion:items/gameboy_horror/turn_screen_off
-execute unless entity @s[scores={ForceScreen=1}] unless entity @a[scores={GBHDialog=1..}] unless score #gbh_clock_increase Selected matches 0 if entity @s[tag=!scanning,nbt={Inventory:[{tag:{luigis_mansion:{id:"luigis_mansion:gameboy_horror"}}}]}] run function luigis_mansion:items/gameboy_horror/turn_screen_to_clock
-execute unless entity @s[scores={ForceScreen=1}] unless entity @a[scores={GBHDialog=1..}] if entity @s[tag=scanning,nbt=!{Inventory:[{tag:{CustomModelData:2,luigis_mansion:{id:"luigis_mansion:gameboy_horror"}}}]}] run function luigis_mansion:items/gameboy_horror/turn_screen_to_scan
-execute unless entity @s[scores={ForceScreen=1}] if entity @a[scores={GBHDialog=1..}] if entity @s[nbt=!{Inventory:[{tag:{CustomModelData:1,luigis_mansion:{id:"luigis_mansion:gameboy_horror"}}}]}] run function luigis_mansion:items/gameboy_horror/turn_screen_to_call
-execute if entity @s[scores={ForceScreen=1},nbt=!{Inventory:[{tag:{CustomModelData:1,luigis_mansion:{id:"luigis_mansion:gameboy_horror"}}}]}] run function luigis_mansion:items/gameboy_horror/turn_screen_to_call
-tag @s[nbt=!{Inventory:[{tag:{CustomModelData:2,luigis_mansion:{id:"luigis_mansion:gameboy_horror"}}}]}] remove scanning
-scoreboard players reset @s ForceScreen

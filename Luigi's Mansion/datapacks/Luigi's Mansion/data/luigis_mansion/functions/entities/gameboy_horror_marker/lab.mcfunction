@@ -1,1 +1,0 @@
-execute if entity @a[tag=this_player,limit=1,nbt={Dimension:"minecraft:overworld"}] run function luigis_mansion:entities/gameboy_horror_marker/teleport/lab

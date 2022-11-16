@@ -1,4 +1,4 @@
-execute as @e[distance=..2,tag=gameboy_horror_location] run function luigis_mansion:entities/gameboy_horror_location/bring_player_back
+execute as @e[distance=..2,tag=game_boy_horror_location] run function luigis_mansion:entities/game_boy_horror_location/bring_player_back
 effect give @a[tag=!spectator,scores={Invulnerable=0},distance=..2] minecraft:instant_damage 1 0 true
 scoreboard players set @a[tag=!spectator,scores={Invulnerable=0},distance=..2] ForcedDamage 4
 execute as @a[tag=!spectator,scores={Invulnerable=0},distance=..2] run function luigis_mansion:entities/player/knockback/large

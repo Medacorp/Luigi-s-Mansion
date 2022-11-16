@@ -12,7 +12,7 @@ execute if entity @s[scores={ActionTime=21..121}] store result score #temp Time 
 execute if entity @s[scores={ActionTime=21..121}] if score #mirrored Selected matches 0 store result entity @s Rotation[0] float 0.1 run scoreboard players operation #temp Time -= @s Time
 execute if entity @s[scores={ActionTime=21..121}] if score #mirrored Selected matches 1 store result entity @s Rotation[0] float 0.1 run scoreboard players operation #temp Time += @s Time
 execute at @s[scores={ActionTime=21..121}] positioned ^ ^ ^5 run function luigis_mansion:spawn_entities/burning_floor
-execute at @s[scores={ActionTime=21..121}] positioned ^ ^ ^2 as @e[distance=..2,tag=gameboy_horror_location] run function luigis_mansion:entities/gameboy_horror_location/bring_player_back
+execute at @s[scores={ActionTime=21..121}] positioned ^ ^ ^2 as @e[distance=..2,tag=game_boy_horror_location] run function luigis_mansion:entities/game_boy_horror_location/bring_player_back
 execute at @s[scores={ActionTime=21..121}] positioned ^ ^ ^2 run effect give @a[tag=!spectator,scores={Invulnerable=0},distance=..2] minecraft:instant_damage 1 0 true
 execute at @s[scores={ActionTime=21..121}] positioned ^ ^ ^2 run scoreboard players set @a[tag=!spectator,scores={Invulnerable=0},distance=..2] ForcedDamage 4
 execute at @s[scores={ActionTime=21..121}] positioned ^ ^ ^2 as @a[distance=..2,scores={Invulnerable=0},tag=!spectator] positioned ^ ^ ^-2 run function luigis_mansion:entities/player/knockback/burn

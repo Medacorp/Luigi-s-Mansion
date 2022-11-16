@@ -1,4 +1,4 @@
-execute if entity @s[tag=!fake,scores={Sound=0}] run playsound luigis_mansion:block.door.burn block @a[tag=same_room] ~ ~ ~ 1
+execute if entity @s[tag=!fake,scores={Sound=0}] run playsound luigis_mansion:furniture.door.burn block @a[tag=same_room] ~ ~ ~ 1
 scoreboard players set @s[tag=!fake,scores={Sound=0}] Sound 80
 
 execute as @a[distance=..0.7,scores={Invulnerable=0},tag=!spectator,tag=!pull_open_door,tag=!push_open_door] run function luigis_mansion:entities/door/burning

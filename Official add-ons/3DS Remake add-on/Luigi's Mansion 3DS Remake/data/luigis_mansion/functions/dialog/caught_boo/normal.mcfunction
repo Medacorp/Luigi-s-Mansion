@@ -58,8 +58,8 @@ kill @e[type=minecraft:marker,tag=choice]
 execute if entity @a[scores={EGaddCallChoice=1..},limit=1] run scoreboard players add @s[scores={GBHDialog=10097..}] GBHDialog 1
 scoreboard players add @s[scores={GBHDialog=..10096}] GBHDialog 1
 execute unless entity @s[scores={GBHDialog=1..}] run scoreboard players add @s GBHDialog 1
-execute if entity @s[scores={GBHDialog=1..}] as @a[gamemode=!spectator,tag=!gameboy_horror,tag=!looking_at_map] run function luigis_mansion:entities/player/animation/set/gameboy_horror
-execute if entity @s[scores={GBHDialog=1..}] as @a run function luigis_mansion:other/music/set/gameboy_horror
+execute if entity @s[scores={GBHDialog=1..}] as @a[gamemode=!spectator,tag=!game_boy_horror,tag=!looking_at_map] run function luigis_mansion:entities/player/animation/set/game_boy_horror
+execute if entity @s[scores={GBHDialog=1..}] as @a run function luigis_mansion:other/music/set/game_boy_horror
 execute if entity @s[scores={GBHDialog=1,Variant=1}] if score #players Totals matches 1 run tellraw @a {"translate":"chat.type.text","with":[{"translate":"luigis_mansion:entity.e_gadd","color":"green"},{"translate":"luigis_mansion:dialog.caught_boo.1"}]}
 execute if entity @s[scores={GBHDialog=1,Variant=1}] if score #players Totals matches 2.. run tellraw @a {"translate":"chat.type.text","with":[{"translate":"luigis_mansion:entity.e_gadd","color":"green"},{"translate":"luigis_mansion:dialog.caught_boo.1.more"}]}
 execute if entity @s[scores={GBHDialog=1,Variant=1}] as @a[tag=same_room] at @s run playsound luigis_mansion:entity.e_gadd.talk.hap_poh_oomahkah_tatta_tatta neutral @s ~ ~ ~ 1

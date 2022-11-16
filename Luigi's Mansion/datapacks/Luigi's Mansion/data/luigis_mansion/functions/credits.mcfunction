@@ -1,5 +1,4 @@
 scoreboard players add @s CreditsTime 1
-scoreboard players set @s UseItem 0
 title @s[scores={CreditsTime=1}] times 10 70 20
 title @s[scores={CreditsTime=1}] title {"translate":"luigis_mansion:credits.map","color":"#598DC9"}
 title @s[scores={CreditsTime=100}] subtitle {"text":"Dhranios","color":"#598DC9"}

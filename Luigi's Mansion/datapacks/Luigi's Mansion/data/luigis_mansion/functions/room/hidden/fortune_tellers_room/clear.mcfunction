@@ -1,7 +1,7 @@
 function luigis_mansion:room/hidden/fortune_tellers_room/turn_on_lights
-execute if entity @a[tag=looking_at_map,limit=1] run function luigis_mansion:items/gameboy_horror/map/display/hidden/generate
+execute if entity @a[tag=looking_at_map,limit=1] run function luigis_mansion:items/game_boy_horror/map/display/hidden/generate
 tag @e[scores={Room=20},tag=door,tag=frame] remove blockade
-playsound luigis_mansion:block.chest.spawn block @a 740 11 38 2
+playsound luigis_mansion:furniture.room_clear_chest.spawn block @a 740 11 38 2
 execute as @a[scores={Room=20},gamemode=!spectator] run function luigis_mansion:other/music/set/light
 scoreboard players set #room Room 20
 function luigis_mansion:other/music/play/group_0/cleared_room

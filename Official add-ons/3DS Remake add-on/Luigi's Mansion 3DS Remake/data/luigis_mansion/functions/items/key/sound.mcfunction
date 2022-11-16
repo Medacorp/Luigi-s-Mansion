@@ -10,5 +10,5 @@ execute as @a[tag=collector,tag=!gooigi,tag=looking_at_map,limit=1,scores={Healt
 execute as @a[tag=collector,tag=!gooigi,tag=looking_at_map,limit=1,scores={Health=..40,Shrunk=1..}] at @s run playsound luigis_mansion:entity.player.show_item.low_health player @s ~ ~ ~ 1 2
 scoreboard players set @a[tag=collector,tag=!gooigi,limit=1] Sound 70
 execute as @a[tag=same_room,scores={Music=..70}] unless entity @s[scores={HealthMusic=1..}] run scoreboard players set @s Music 70
-scoreboard players set @a[tag=same_room,tag=!looking_at_map,tag=!spectator,nbt={Inventory:[{tag:{luigis_mansion:{id:"luigis_mansion:gameboy_horror"}}}]}] OpenMapTime 70
-execute as @a[tag=same_room] unless entity @s[tag=!looking_at_map,tag=!spectator,nbt={Inventory:[{tag:{luigis_mansion:{id:"luigis_mansion:gameboy_horror"}}}]}] run scoreboard players reset @s OpenMapFocus
+scoreboard players set @a[tag=same_room,tag=!looking_at_map,tag=!spectator,nbt={Inventory:[{tag:{luigis_mansion:{id:"luigis_mansion:game_boy_horror"}}}]}] OpenMapTime 70
+execute as @a[tag=same_room] unless entity @s[tag=!looking_at_map,tag=!spectator,nbt={Inventory:[{tag:{luigis_mansion:{id:"luigis_mansion:game_boy_horror"}}}]}] run scoreboard players reset @s OpenMapFocus

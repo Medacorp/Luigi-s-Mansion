@@ -15,8 +15,8 @@ execute if entity @s[scores={ScareType=1..}] store result storage luigis_mansion
 execute if entity @s[scores={KnockbackType=1..}] store result storage luigis_mansion:data luigi.animation byte 1 run scoreboard players get @s KnockbackType
 data modify storage luigis_mansion:data luigi.mainhand set from entity @s SelectedItem
 data modify storage luigis_mansion:data luigi.offhand set from entity @s Inventory[{Slot:-106b}]
-execute if entity @s[tag=gameboy_horror] run data modify storage luigis_mansion:data luigi.mainhand set from entity @s Inventory[{tag:{luigis_mansion:{id:"luigis_mansion:gameboy_horror"}}}]
-execute if entity @s[tag=gameboy_horror] run data modify storage luigis_mansion:data luigi.offhand set value {}
+execute if entity @s[tag=game_boy_horror] run data modify storage luigis_mansion:data luigi.mainhand set from entity @s Inventory[{tag:{luigis_mansion:{id:"luigis_mansion:game_boy_horror"}}}]
+execute if entity @s[tag=game_boy_horror] run data modify storage luigis_mansion:data luigi.offhand set value {}
 tag @e[type=minecraft:armor_stand,tag=gooigi_model,tag=!found_owner] add this_gooigi
 execute as @e[type=minecraft:armor_stand,tag=this_gooigi,tag=source,limit=1] run function luigis_mansion_3ds_remake:animations/gooigi/main
 execute as @e[type=minecraft:armor_stand,tag=this_gooigi,tag=!source] at @e[tag=this_gooigi,tag=source,limit=1] run function luigis_mansion_3ds_remake:animations/gooigi/main

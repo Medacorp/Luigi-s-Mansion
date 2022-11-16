@@ -23,7 +23,7 @@ execute at @s[tag=thinking] run function luigis_mansion_3ds_remake:animations/go
 execute at @s[tag=sigh] run function luigis_mansion_3ds_remake:animations/gooigi/sigh/left_leg
 execute at @s[tag=enthusiastic] run function luigis_mansion_3ds_remake:animations/gooigi/enthusiastic/left_leg
 execute at @s[tag=answer_phone] run function luigis_mansion_3ds_remake:animations/gooigi/answer_phone/left_leg
-execute at @s[tag=gameboy_horror] run function luigis_mansion_3ds_remake:animations/gooigi/gameboy_horror/left_leg
+execute at @s[tag=game_boy_horror] run function luigis_mansion_3ds_remake:animations/gooigi/game_boy_horror/left_leg
 execute at @s[tag=inspect] run function luigis_mansion_3ds_remake:animations/gooigi/inspect/left_leg
 execute at @s[tag=look] run function luigis_mansion_3ds_remake:animations/gooigi/look/left_leg
 execute at @s[scores={KnockbackType=-9}] run function luigis_mansion_3ds_remake:animations/gooigi/search/chest/left_leg
