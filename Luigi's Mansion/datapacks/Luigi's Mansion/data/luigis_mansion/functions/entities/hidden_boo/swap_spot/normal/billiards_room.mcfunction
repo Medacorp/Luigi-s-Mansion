@@ -1,0 +1,14 @@
+summon minecraft:marker 683 11 88 {Tags:["choice","hide_option"]}
+summon minecraft:marker 679 11 88 {Tags:["choice","hide_option"]}
+summon minecraft:marker 677 13 66 {Tags:["choice","hide_option"]}
+summon minecraft:marker 686 13 70 {Tags:["choice","hide_option"]}
+summon minecraft:marker 675 12 73 {Tags:["choice","hide_option"]}
+summon minecraft:marker 686 13 82 {Tags:["choice","hide_option"]}
+summon minecraft:marker 683 13 88 {Tags:["choice","hide_option"]}
+summon minecraft:marker 677 13 88 {Tags:["choice","hide_option"]}
+summon minecraft:marker 675 13 83 {Tags:["choice","hide_option"]}
+summon minecraft:marker 685 11 67 {Tags:["choice","hide_option"]}
+summon minecraft:marker 686 11 66 {Tags:["choice","hide_option"]}
+summon minecraft:marker 684 11 67 {Tags:["choice","hide_option"]}
+summon minecraft:marker 685 11 68 {Tags:["choice","hide_option"]}
+summon minecraft:marker 681 11 78 {Tags:["choice","hide_option"]}

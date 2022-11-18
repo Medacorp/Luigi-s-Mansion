@@ -1,0 +1,12 @@
+summon minecraft:marker 745 5 59 {Tags:["choice","hide_option"]}
+summon minecraft:marker 736 5 71 {Tags:["choice","hide_option"]}
+summon minecraft:marker 738 3 60 {Tags:["choice","hide_option"]}
+summon minecraft:marker 737 3 73 {Tags:["choice","hide_option"]}
+summon minecraft:marker 737 2 70 {Tags:["choice","hide_option"]}
+summon minecraft:marker 743 2 62 {Tags:["choice","hide_option"]}
+summon minecraft:marker 742 2 67 {Tags:["choice","hide_option"]}
+summon minecraft:marker 742 4 67 {Tags:["choice","hide_option"]}
+summon minecraft:marker 742 6 67 {Tags:["choice","hide_option"]}
+summon minecraft:marker 743 2 76 {Tags:["choice","hide_option"]}
+summon minecraft:marker 743 4 76 {Tags:["choice","hide_option"]}
+summon minecraft:marker 743 6 76 {Tags:["choice","hide_option"]}
