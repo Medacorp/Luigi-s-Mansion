@@ -239,7 +239,7 @@ execute at @s[scores={KnockbackType=12..13}] run function luigis_mansion:entitie
 execute at @s[scores={KnockbackTime=51..60,KnockbackType=12}] facing entity @e[type=minecraft:marker,tag=temp,limit=1] feet rotated ~-180 0 run teleport @s ^ ^ ^0.16 ~ ~
 execute at @s[scores={KnockbackTime=..50,KnockbackType=12..13}] facing entity @e[type=minecraft:marker,tag=temp,limit=1] feet rotated ~-180 0 run teleport @s ^ ^ ^0.16 ~ ~
 
-execute at @s[scores={KnockbackTime=140,KnockbackType=14},tag=gooigi] if score #debug Selected matches 1 run say [DEBUG] Gooigi triggered fake door knockback, this should not be possible!
+execute at @s[scores={KnockbackTime=140,KnockbackType=14},tag=gooigi] if score #debug_messages Selected matches 1.. run tellraw @a {"translate":"luigis_mansion:message.debug.format","with":[{"translate":"luigis_mansion:message.debug","color":"gold"},{"translate":"luigis_mansion_3ds_remake:message.debug.gooigi_fake_door"}]}
 execute at @s[scores={KnockbackTime=135,KnockbackType=14,Sound=0,Health=41..,Shrunk=0},tag=!gooigi] run playsound luigis_mansion:entity.player.scare.high_health player @a[tag=same_room] ~ ~ ~ 1
 execute at @s[scores={KnockbackTime=135,KnockbackType=14,Sound=0,Health=41..,Shrunk=1..},tag=!gooigi] run playsound luigis_mansion:entity.player.scare.high_health player @a[tag=same_room] ~ ~ ~ 1 2
 execute at @s[scores={KnockbackTime=135,KnockbackType=14,Sound=0,Health=..40,Shrunk=0},tag=!gooigi] run playsound luigis_mansion:entity.player.scare.low_health player @a[tag=same_room] ~ ~ ~ 1

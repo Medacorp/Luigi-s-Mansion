@@ -16,7 +16,7 @@ execute if data storage luigis_mansion:data furniture.sound store result score @
 data remove storage luigis_mansion:data furniture
 scoreboard players set @e[tag=this_entity,limit=1] Sound 0
 scoreboard players set @e[tag=this_entity,limit=1] ActionTime -1
-scoreboard players set @e[tag=this_entity,limit=1] FurnitureRadius 5
+scoreboard players set @e[tag=this_entity,limit=1] FurnitureRadius 4
 scoreboard players set @e[tag=this_entity,limit=1] InteractionType 3
 scoreboard players set @e[tag=this_entity,limit=1] FurnitureUp 10
 scoreboard players set @e[tag=this_entity,limit=1] FurnitureSearch 20

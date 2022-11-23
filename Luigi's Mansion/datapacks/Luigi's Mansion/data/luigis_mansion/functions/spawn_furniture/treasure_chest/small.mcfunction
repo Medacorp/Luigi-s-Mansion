@@ -20,8 +20,8 @@ execute if data storage luigis_mansion:data furniture.sound store result score @
 data remove storage luigis_mansion:data furniture
 scoreboard players set @e[tag=this_entity,limit=1] Sound 0
 scoreboard players set @e[tag=this_entity,limit=1] FurnitureSizeL 18
-scoreboard players set @e[tag=this_entity,limit=1] FurnitureSizeU 15
-scoreboard players set @e[tag=this_entity,limit=1] FurnitureSizeF 10
+scoreboard players set @e[tag=this_entity,limit=1] FurnitureSizeU 13
+scoreboard players set @e[tag=this_entity,limit=1] FurnitureSizeF 8
 scoreboard players set @e[tag=this_entity,limit=1] FurnitureUp 10
 scoreboard players set @e[tag=this_entity,limit=1] FurnitureSearch 20
 tag @e[tag=this_entity,limit=1] remove this_entity

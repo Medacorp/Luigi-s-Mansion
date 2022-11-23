@@ -2,6 +2,8 @@ scoreboard players operation #temp PosX = @s PosX
 scoreboard players operation #temp PosY = @s PosY
 scoreboard players operation #temp PosZ = @s PosZ
 scoreboard players operation #temp FurnitureRadius = @s FurnitureRadius
+execute if entity @s[tag=hanging_furniture] run scoreboard players operation #temp PosY -= #temp FurnitureRadius
+execute if entity @s[tag=standing_furniture] run scoreboard players operation #temp PosY += #temp FurnitureRadius
 scoreboard players operation #temp2 PosX = #interact PosX
 scoreboard players operation #temp2 PosY = #interact PosY
 scoreboard players operation #temp2 PosZ = #interact PosZ

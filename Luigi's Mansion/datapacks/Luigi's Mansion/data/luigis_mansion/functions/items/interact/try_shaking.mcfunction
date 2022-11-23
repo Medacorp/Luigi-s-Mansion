@@ -7,7 +7,7 @@ execute at @s[nbt={OnGround:0b,ActiveEffects:[{Id:25}]}] rotated ~ 0 run summon 
 #to delete
 execute as @e[tag=interact,tag=manual] at @s unless block ~ ~ ~ minecraft:air unless block ~ ~ ~ minecraft:barrier unless block ~ ~ ~ minecraft:light run function luigis_mansion:room/interactions
 #/to delete
-execute at @e[tag=interact,tag=manual] as @e[tag=furniture,tag=same_room] run function luigis_mansion:items/interact/target_furniture/find
+execute at @e[tag=interact,tag=manual] as @e[tag=furniture,tag=same_room,tag=!no_manual_interaction] run function luigis_mansion:items/interact/target_furniture/find
 scoreboard players reset #interact
 execute if entity @e[tag=interact,tag=manual,tag=can_interact,limit=1] run scoreboard players set @s InteractionTime 1
 execute if entity @e[tag=interact,tag=manual,tag=can_interact,tag=2,limit=1] run tag @s add 2

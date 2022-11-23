@@ -1,4 +1,5 @@
 execute unless entity @e[tag=game_boy_horror_part,limit=1] unless data storage luigis_mansion_3ds_remake:data {obtained_game_boy_horror_part:1b} run function luigis_mansion_3ds_remake:spawn_entities/item/game_boy_horror_part
+execute unless entity @e[tag=this_entity,limit=1] if score #debug_messages Selected matches 1.. run tellraw @a {"translate":"luigis_mansion:message.debug.format","with":[{"translate":"luigis_mansion:message.debug","color":"gold"},{"translate":"luigis_mansion_3ds_remake:message.debug.loot_spawn_fail.game_boy_horror_part","color":"red"}]}
 execute if data storage luigis_mansion:data drop_loot.contents.luigis_mansion_3ds_remake.game_boy_horror_part.rotation run tag @e[tag=this_entity,limit=1] add rotated
 execute if data storage luigis_mansion:data drop_loot.contents.luigis_mansion_3ds_remake.game_boy_horror_part.rotation run data modify entity @e[tag=this_entity,limit=1] Rotation set from storage luigis_mansion:data drop_loot.contents.luigis_mansion_3ds_remake.game_boy_horror_part.rotation
 tag @e[tag=this_entity,limit=1] remove this_entity

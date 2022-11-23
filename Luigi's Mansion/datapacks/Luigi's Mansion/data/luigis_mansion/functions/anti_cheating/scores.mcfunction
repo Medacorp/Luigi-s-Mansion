@@ -102,6 +102,7 @@ scoreboard objectives add LastFloor dummy
 scoreboard objectives add LastHealth dummy
 scoreboard objectives add LastHealthMusic dummy
 scoreboard objectives add LastRoom dummy
+scoreboard objectives add LastSelected dummy
 scoreboard objectives add LastTotalDamage dummy
 scoreboard objectives add LightStep dummy
 scoreboard objectives add LightX dummy
@@ -254,7 +255,22 @@ execute if score #gbh_clock_increase Selected matches 0 run scoreboard players s
 
 execute unless score #training_choice Selected matches 0..1 run scoreboard players set #training_choice Selected 0
 execute unless score #freeze_timer Selected matches 0..1 run scoreboard players set #freeze_timer Selected 0
+
 execute unless score #debug Selected matches 0..1 run scoreboard players set #debug Selected 0
+execute unless score #debug_messages Selected matches 0..1 run scoreboard players set #debug_messages Selected 0
+execute unless score #debug_furniture Selected matches 0..1 run scoreboard players set #debug_furniture Selected 0
+execute if score #debug Selected matches 1 if score #debug_messages Selected matches 0 run scoreboard players set #debug_messages Selected 2
+execute if score #debug Selected matches 1 if score #debug_furniture Selected matches 0 run scoreboard players set #debug_furniture Selected 2
+execute if score #debug Selected matches 1 if score #debug LastSelected matches 0 run tellraw @a {"translate":"luigis_mansion:message.debug.format","with":[{"translate":"luigis_mansion:message.debug","color":"gold"},{"translate":"luigis_mansion:message.debug.debugger.turned_on"}]}
+execute if score #debug Selected matches 0 if score #debug LastSelected matches 1 run tellraw @a {"translate":"luigis_mansion:message.debug.format","with":[{"translate":"luigis_mansion:message.debug","color":"gold"},{"translate":"luigis_mansion:message.debug.debugger.turned_off"}]}
+execute if score #debug_messages Selected matches 1.. if score #debug_messages LastSelected matches 0 run tellraw @a {"translate":"luigis_mansion:message.debug.format","with":[{"translate":"luigis_mansion:message.debug","color":"gold"},{"translate":"luigis_mansion:message.debug.debugger.turned_on.messages"}]}
+execute if score #debug_messages Selected matches 0 if score #debug_messages LastSelected matches 1.. run tellraw @a {"translate":"luigis_mansion:message.debug.format","with":[{"translate":"luigis_mansion:message.debug","color":"gold"},{"translate":"luigis_mansion:message.debug.debugger.turned_off.messages"}]}
+execute if score #debug_furniture Selected matches 1.. if score #debug_furniture LastSelected matches 0 run tellraw @a {"translate":"luigis_mansion:message.debug.format","with":[{"translate":"luigis_mansion:message.debug","color":"gold"},{"translate":"luigis_mansion:message.debug.debugger.turned_on.furniture"}]}
+execute if score #debug_furniture Selected matches 0 if score #debug_furniture LastSelected matches 1.. run tellraw @a {"translate":"luigis_mansion:message.debug.format","with":[{"translate":"luigis_mansion:message.debug","color":"gold"},{"translate":"luigis_mansion:message.debug.debugger.turned_off.furniture"}]}
+scoreboard players operation #debug LastSelected = #debug Selected
+scoreboard players operation #debug_messages LastSelected = #debug_messages Selected
+scoreboard players operation #debug_furniture LastSelected = #debug_furniture Selected
+
 execute unless data storage luigis_mansion:data current_state run function luigis_mansion:other/upgrade_path/newly_installed
 
 execute unless score #global_player_names Selected matches 0..1 run scoreboard players set #global_player_names Selected 1

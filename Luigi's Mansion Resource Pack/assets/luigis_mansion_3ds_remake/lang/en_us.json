@@ -194,6 +194,8 @@
 "luigis_mansion_3ds_remake:message.boolldog.2": "Most Wanted Boo!",
 "luigis_mansion_3ds_remake:message.boolldog.3": "Reckon I'm rowdy...",
 "luigis_mansion_3ds_remake:message.boolldog.4": "Let's get crazy!",
+"luigis_mansion_3ds_remake:message.debug.gooigi_fake_door": "Gooigi triggered fake door knockback, this should not be possible!",
+"luigis_mansion_3ds_remake:message.debug.loot_spawn_fail.game_boy_horror_part": "Spawning of Game Boy Horror part failed: Game Boy Horror part already obtained or exists in the world.",
 "luigis_mansion_3ds_remake:message.floating_whirlindas.scan.1": "(Let us show this fellow how we dance!)",
 "luigis_mansion_3ds_remake:message.floating_whirlindas.scan.1.more": "(Let us show them how we dance!)",
 "luigis_mansion_3ds_remake:message.gallery.boos": "List of Boos",

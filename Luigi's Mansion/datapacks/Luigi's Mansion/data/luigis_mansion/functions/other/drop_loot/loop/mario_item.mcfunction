@@ -6,6 +6,7 @@ execute if data storage luigis_mansion:data {mario_item:"star"} unless entity @e
 execute if data storage luigis_mansion:data {mario_item:"glove"} unless entity @e[tag=mario_item,tag=glove,limit=1] unless data storage luigis_mansion:data current_state.current_data.obtained_items{marios_glove:1b} run function luigis_mansion:spawn_entities/item/marios_glove
 execute if data storage luigis_mansion:data {mario_item:"shoe"} unless entity @e[tag=mario_item,tag=shoe,limit=1] unless data storage luigis_mansion:data current_state.current_data.obtained_items{marios_shoe:1b} run function luigis_mansion:spawn_entities/item/marios_shoe
 data remove storage luigis_mansion:data mario_item
+execute unless entity @e[tag=this_entity,limit=1] if score #debug_messages Selected matches 1.. run tellraw @a {"translate":"luigis_mansion:message.debug.format","with":[{"translate":"luigis_mansion:message.debug","color":"gold"},{"translate":"luigis_mansion:message.debug.loot_spawn_fail.mario_item","color":"red"}]}
 execute if data storage luigis_mansion:data drop_loot.contents.luigis_mansion.mario_item[0].rotation run tag @e[tag=this_entity,limit=1] add rotated
 execute if data storage luigis_mansion:data drop_loot.contents.luigis_mansion.mario_item[0].rotation run data modify entity @e[tag=this_entity,limit=1] Rotation set from storage luigis_mansion:data drop_loot.contents.luigis_mansion.mario_item[0].rotation
 tag @e[tag=this_entity,limit=1] remove this_entity
