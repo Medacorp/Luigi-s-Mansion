@@ -16,7 +16,7 @@
                 "stream": false
             }
         ],
-        "subtitle": "luigis_mansion:subtitles.block.fire"
+        "subtitle": "subtitles.block.fire.ambient"
     },
     "block.wooden_door.close": {
         "replace": true,
