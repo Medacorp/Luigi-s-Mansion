@@ -7985,7 +7985,7 @@
                 "stream": false
             }
         ],
-        "subtitle": "luigis_mansion:subtitles.entity.speedy_spirit.ambient"
+        "subtitle": "luigis_mansion:subtitles.entity.speedy_spirit.flee"
     },
     "entity.speedy_spirit.complain_basher": {
         "sounds": [
