@@ -9,6 +9,6 @@ execute if entity @s[tag=drop_loot] run function luigis_mansion:entities/furnitu
 tag @s remove drop_loot
 execute if entity @s[tag=open,nbt={ArmorItems:[{tag:{loot:{}}}]}] run function luigis_mansion:entities/furniture/tick/search_room_clear_chest
 
-execute if entity @s[tag=open,scores={ActionTime=0..}] run function luigis_mansion:animations/furniture/open/room_clear_chest
+execute if entity @s[tag=open,scores={ActionTime=0..}] run function luigis_mansion:animations/furniture/open/chest
 
 execute if entity @s[tag=sparkles,tag=!open] run function luigis_mansion:entities/furniture/tick/spawn_sparkles

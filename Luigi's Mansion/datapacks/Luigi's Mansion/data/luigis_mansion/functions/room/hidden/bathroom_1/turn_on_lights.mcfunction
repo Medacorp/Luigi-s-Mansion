@@ -1,4 +1,3 @@
-execute unless entity @e[type=minecraft:armor_stand,tag=key,tag=ball_room,limit=1] unless data storage luigis_mansion:data current_state.current_data{obtained_keys:["ball_room"]} run summon minecraft:armor_stand 657 16 -12 {CustomName:'{"translate":"luigis_mansion:item.key"}',Pose:{Head:[0.0f,0.0f,0.01f]},Invisible:1b,Silent:1b,ArmorItems:[{},{},{},{id:"minecraft:diamond_pickaxe",Count:1b,tag:{Unbreakable:1b,Damage:5,CustomModelData:15}}],Small:1b,NoGravity:1b,Tags:["item","key","eternal","ball_room","rotated","no_spawn_sound"],Rotation:[0.0f,90.0f],DisabledSlots:2039583}
 data modify storage luigis_mansion:data current_state.current_data.rooms.bathroom_1 merge value {cleared:1b}
 function #luigis_mansion:room/hidden/bathroom_1/turn_lights/on
 execute if data storage luigis_mansion:data current_state.current_data{boos:[{}],technical_data:{released_boos_talk:1b}} run function luigis_mansion:room/hidden/bathroom_1/load_boos

@@ -7,7 +7,8 @@ data remove storage luigis_mansion:data keys
 scoreboard players reset #temp Money
 execute unless entity @e[tag=this_entity,limit=1] if score #debug_messages Selected matches 1.. run tellraw @a {"translate":"luigis_mansion:message.debug.format","with":[{"translate":"luigis_mansion:message.debug","color":"gold"},{"translate":"luigis_mansion:message.debug.loot_spawn_fail.key","color":"red"}]}
 data modify entity @e[tag=this_entity,limit=1] Tags append from storage luigis_mansion:data drop_loot.contents.luigis_mansion.key[0].door
-execute if data storage luigis_mansion:data drop_loot.contents.luigis_mansion.key[0].rotation run tag @e[tag=this_entity,limit=1] add rotated
+execute unless data storage luigis_mansion:data drop_loot.contents.luigis_mansion.key[0].silent run playsound luigis_mansion:item.key.spawn player @a ~ ~ ~ 1
+execute unless data storage luigis_mansion:data drop_loot.contents.luigis_mansion.key[0].rotation as @e[tag=this_entity,limit=1] run function luigis_mansion:other/drop_loot/loop/key/rotate
 execute if data storage luigis_mansion:data drop_loot.contents.luigis_mansion.key[0].rotation run data modify entity @e[tag=this_entity,limit=1] Rotation set from storage luigis_mansion:data drop_loot.contents.luigis_mansion.key[0].rotation
 execute if data storage luigis_mansion:data drop_loot.contents.luigis_mansion.key[0].variant store result score #temp Money run data get storage luigis_mansion:data drop_loot.contents.luigis_mansion.key[0].variant
 execute if score #temp Money matches 1 run data modify entity @e[tag=this_entity,limit=1] ArmorItems[3].tag.CustomModelData set value 16

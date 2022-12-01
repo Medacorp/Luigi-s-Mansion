@@ -3,6 +3,7 @@
 	    "luigis_mansion:room/normal/bathroom_1/load/set_loaded",
         "luigis_mansion:room/normal/bathroom_1/load/lights",
         "luigis_mansion:room/normal/bathroom_1/load/doors",
+        "luigis_mansion:room/normal/bathroom_1/load/room_clear_loot_dropper",
         "luigis_mansion:room/normal/bathroom_1/load/water"
 	]
 }

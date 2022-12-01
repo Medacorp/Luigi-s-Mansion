@@ -1,6 +1,6 @@
 execute unless score #rec_room Ticking matches 1 run function #luigis_mansion:room/normal/rec_room/load
-execute as @a[gamemode=!spectator,x=637,y=8,z=-62,dx=12,dy=10,dz=33] unless entity @s[scores={Room=32}] run scoreboard players operation @s LastRoom = @s Room
-execute as @e[tag=!spectator,x=637,y=8,z=-62,dx=12,dy=10,dz=33] unless entity @s[tag=ghost,tag=appear] unless entity @s[tag=ghost,tag=vanish] run scoreboard players set @s Room 32
+execute as @a[gamemode=!spectator,x=637,y=8,z=-62,dx=12,dy=9,dz=33] unless entity @s[scores={Room=32}] run scoreboard players operation @s LastRoom = @s Room
+execute as @e[tag=!spectator,x=637,y=8,z=-62,dx=12,dy=9,dz=33] unless entity @s[tag=ghost,tag=appear] unless entity @s[tag=ghost,tag=vanish] run scoreboard players set @s Room 32
 scoreboard players set #temp Room 32
 
 execute as @e[scores={Room=32},type=!minecraft:marker] unless entity @s[gamemode=spectator] run scoreboard players set @s MirrorX 638

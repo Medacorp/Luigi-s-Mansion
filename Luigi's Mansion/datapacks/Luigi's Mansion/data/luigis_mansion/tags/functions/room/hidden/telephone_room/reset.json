@@ -2,9 +2,6 @@
     "values": [
         "luigis_mansion:room/hidden/telephone_room/reset/unload",
         "#luigis_mansion:room/hidden/telephone_room/turn_lights/off",
-        "luigis_mansion:room/hidden/telephone_room/reset/chest_1",
-        "luigis_mansion:room/hidden/telephone_room/reset/chest_2",
-        "luigis_mansion:room/hidden/telephone_room/reset/chest_3",
         "luigis_mansion:room/hidden/telephone_room/reset/closet_1",
         "luigis_mansion:room/hidden/telephone_room/reset/closet_2",
         "luigis_mansion:room/hidden/telephone_room/reset/couch",

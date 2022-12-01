@@ -1,6 +1,6 @@
 execute unless score #projection_room Ticking matches 1 run function #luigis_mansion:room/hidden/projection_room/load
-execute as @a[gamemode=!spectator,x=673,y=8,z=-31,dx=15,dy=10,dz=16] unless entity @s[scores={Room=48}] run scoreboard players operation @s LastRoom = @s Room
-execute as @e[tag=!spectator,x=673,y=8,z=-31,dx=15,dy=10,dz=16] unless entity @s[tag=ghost,tag=appear] unless entity @s[tag=ghost,tag=vanish] run scoreboard players set @s Room 48
+execute as @a[gamemode=!spectator,x=673,y=8,z=-31,dx=15,dy=9,dz=16] unless entity @s[scores={Room=48}] run scoreboard players operation @s LastRoom = @s Room
+execute as @e[tag=!spectator,x=673,y=8,z=-31,dx=15,dy=9,dz=16] unless entity @s[tag=ghost,tag=appear] unless entity @s[tag=ghost,tag=vanish] run scoreboard players set @s Room 48
 scoreboard players set #temp Room 48
 
 execute if block 686 12 -23 minecraft:light[level=15] run scoreboard players set @e[scores={Room=48}] LightX 68500

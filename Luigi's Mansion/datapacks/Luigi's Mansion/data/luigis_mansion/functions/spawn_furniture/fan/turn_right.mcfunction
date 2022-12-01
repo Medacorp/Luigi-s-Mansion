@@ -19,5 +19,5 @@ scoreboard players set @e[tag=this_entity,limit=1] RotationSpeed 9
 scoreboard players set @e[tag=this_entity,limit=1] RotationSpeedDef 9
 scoreboard players set @e[tag=this_entity,limit=1] FurnitureSizeW 30
 scoreboard players set @e[tag=this_entity,limit=1] FurnitureSizeH 30
-scoreboard players set @e[tag=this_entity,limit=1] FurnitureUp -24
+scoreboard players set @e[tag=this_entity,limit=1] FurnitureUp -11
 tag @e[tag=this_entity,limit=1] remove this_entity

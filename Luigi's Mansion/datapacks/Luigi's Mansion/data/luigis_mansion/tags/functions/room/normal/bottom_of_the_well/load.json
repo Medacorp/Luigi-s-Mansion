@@ -1,6 +1,7 @@
 {
 	"values": [
 	    "luigis_mansion:room/normal/bottom_of_the_well/load/set_loaded",
-        "luigis_mansion:room/normal/bottom_of_the_well/load/lights"
+        "luigis_mansion:room/normal/bottom_of_the_well/load/lights",
+        "luigis_mansion:room/normal/bottom_of_the_well/load/room_clear_loot_dropper"
 	]
 }

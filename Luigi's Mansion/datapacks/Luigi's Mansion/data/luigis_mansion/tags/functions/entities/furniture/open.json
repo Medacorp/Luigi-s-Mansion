@@ -1,5 +1,6 @@
 {
 	"values": [
-        "luigis_mansion:entities/furniture/open/treasure_chest"
+        "luigis_mansion:entities/furniture/open/chest",
+        "luigis_mansion:entities/furniture/open/wooden_chest"
 	]
 }

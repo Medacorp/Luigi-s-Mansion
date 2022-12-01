@@ -1,1 +1,1 @@
-setblock 746 11 40 minecraft:air
+fill 746 11 39 746 11 40 minecraft:air

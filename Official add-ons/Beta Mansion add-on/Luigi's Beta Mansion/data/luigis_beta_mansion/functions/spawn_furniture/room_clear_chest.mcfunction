@@ -3,17 +3,17 @@ teleport @e[tag=this_entity,limit=1] ~ ~-1.4 ~ ~ ~
 execute if data storage luigis_mansion:data furniture.loot run data modify entity @e[tag=this_entity,limit=1] ArmorItems[3].tag.loot set from storage luigis_mansion:data furniture.loot
 execute if data storage luigis_mansion:data furniture.scan_message run data modify entity @e[tag=this_entity,limit=1] ArmorItems[3].tag.scan_message set from storage luigis_mansion:data furniture.scan_message
 execute if data storage luigis_mansion:data furniture.pose run data modify entity @e[tag=this_entity,limit=1] Pose set from storage luigis_mansion:data furniture.pose
-execute if data storage luigis_mansion:data furniture{open:1b} run data modify entity @e[tag=this_entity,limit=1] ArmorItems[3].tag.CustomModelData set value -10
+execute if data storage luigis_mansion:data furniture{open:1b} run data modify entity @e[tag=this_entity,limit=1] ArmorItems[3].tag.CustomModelData set value -2
 execute if data storage luigis_mansion:data furniture{open:1b} run tag @e[tag=this_entity,limit=1] add open
-execute unless data storage luigis_mansion:data furniture{open:1b} run playsound luigis_mansion:block.room_clear_chest.spawn block @a ~ ~ ~ 2
+execute unless data storage luigis_mansion:data furniture{open:1b} run playsound luigis_mansion:furniture.room_clear_chest.spawn block @a ~ ~ ~ 2
 scoreboard players set @e[tag=this_entity,limit=1] ActionTime 0
 execute if data storage luigis_mansion:data furniture{open:1b} run scoreboard players set @e[tag=this_entity,limit=1] ActionTime -1
 execute if data storage luigis_mansion:data furniture{can_hide_boo:1b} run tag @e[tag=this_entity,limit=1] add can_hide_boo
 data remove storage luigis_mansion:data furniture
 scoreboard players set @e[tag=this_entity,limit=1] Sound 0
-scoreboard players set @e[tag=this_entity,limit=1] FurnitureSizeL 15
-scoreboard players set @e[tag=this_entity,limit=1] FurnitureSizeU 14
-scoreboard players set @e[tag=this_entity,limit=1] FurnitureSizeF 10
+scoreboard players set @e[tag=this_entity,limit=1] FurnitureSizeL 14
+scoreboard players set @e[tag=this_entity,limit=1] FurnitureSizeU 11
+scoreboard players set @e[tag=this_entity,limit=1] FurnitureSizeF 12
 scoreboard players set @e[tag=this_entity,limit=1] InteractionType 3
 scoreboard players set @e[tag=this_entity,limit=1] FurnitureUp 10
 scoreboard players set @e[tag=this_entity,limit=1] FurnitureSearch 0

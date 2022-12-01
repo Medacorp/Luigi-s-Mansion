@@ -1,0 +1,3 @@
+execute unless data storage luigis_mansion:data current_state.current_data.obtained_items{marios_star:1b} run data modify storage luigis_mansion:data furniture.loot set value {contents:{luigis_mansion:{mario_item:[{variant:"star",rotation:[-90.0f,90.0f]}]}}}
+execute unless data storage luigis_mansion:data current_state.current_data.obtained_items{marios_star:1b} positioned 642.0 20 -139.0 run function luigis_mansion:spawn_furniture/room_clear_loot_dropper
+data remove storage luigis_mansion:data furniture

@@ -6,6 +6,7 @@
         "luigis_mansion:room/hidden/fortune_tellers_room/load/crystal_ball",
         "luigis_mansion:room/hidden/fortune_tellers_room/load/cobweb",
         "luigis_mansion:room/hidden/fortune_tellers_room/load/lamp",
-        "luigis_mansion:room/hidden/fortune_tellers_room/load/room_clear_chest"
+        "luigis_mansion:room/hidden/fortune_tellers_room/load/room_clear_chest",
+        "luigis_mansion:room/hidden/fortune_tellers_room/load/room_clear_loot_dropper"
 	]
 }

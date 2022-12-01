@@ -14,9 +14,9 @@ execute if entity @s[scores={Dialog=101}] run playsound luigis_mansion:entity.ne
 scoreboard players set @s[scores={Dialog=101}] VulnerableTime 60
 scoreboard players set @s[scores={Dialog=161}] Dialog 0
 
-execute positioned ~ ~-1.85 ~ if entity @e[tag=rocking_chair,distance=..1,scores={AnimationProg=1..20},limit=1] at @s run teleport @s ^ ^ ^0.01
-execute positioned ~ ~-1.85 ~ if entity @e[tag=rocking_chair,distance=..1,scores={AnimationProg=21..60},limit=1] at @s run teleport @s ^ ^ ^-0.01
-execute positioned ~ ~-1.85 ~ if entity @e[tag=rocking_chair,distance=..1,scores={AnimationProg=61..80},limit=1] at @s run teleport @s ^ ^ ^0.01
+execute positioned ~ ~-1.85 ~ if entity @e[tag=rocking_chair,distance=..1,scores={Dialog=1..20},limit=1] at @s run teleport @s ^ ^ ^0.01
+execute positioned ~ ~-1.85 ~ if entity @e[tag=rocking_chair,distance=..1,scores={Dialog=21..60},limit=1] at @s run teleport @s ^ ^ ^-0.01
+execute positioned ~ ~-1.85 ~ if entity @e[tag=rocking_chair,distance=..1,scores={Dialog=61..80},limit=1] at @s run teleport @s ^ ^ ^0.01
 
 execute if entity @s[tag=vanish,scores={VulnerableTime=1..}] run playsound luigis_mansion:entity.neville.laugh hostile @a[tag=same_room] ~ ~ ~ 1
 execute at @s[scores={Dialog=101..160},tag=!vanish] run function luigis_mansion:animations/neville/yawn

@@ -1,4 +1,4 @@
-summon minecraft:armor_stand ~ ~-1.4 ~ {CustomName:'{"translate":"luigis_mansion:furniture.treasure_chest"}',Tags:["furniture","generic","treasure_chest","standing_furniture","scan_ignore","this_entity"],Pose:{Head:[0.0f,0.01f,0.0f]},NoGravity:1b,Marker:1b,ArmorItems:[{},{},{},{id:"minecraft:diamond_pickaxe",Count:1b,tag:{Unbreakable:1b,Damage:19,CustomModelData:47}}],Invisible:1b,DisabledSlots:2039583}
+summon minecraft:armor_stand ~ ~-1.4 ~ {CustomName:'{"translate":"luigis_mansion:furniture.treasure_chest"}',Tags:["furniture","generic","chest","standing_furniture","scan_ignore","this_entity"],Pose:{Head:[0.0f,0.01f,0.0f]},NoGravity:1b,Marker:1b,ArmorItems:[{},{},{},{id:"minecraft:diamond_pickaxe",Count:1b,tag:{Unbreakable:1b,Damage:19,CustomModelData:47}}],Invisible:1b,DisabledSlots:2039583}
 teleport @e[tag=this_entity,limit=1] ~ ~-1.4 ~ ~ ~
 execute if data storage luigis_mansion:data furniture.loot run data modify entity @e[tag=this_entity,limit=1] ArmorItems[3].tag.loot set from storage luigis_mansion:data furniture.loot
 execute if data storage luigis_mansion:data furniture.dialog run data modify entity @e[tag=this_entity,limit=1] ArmorItems[3].tag.dialog set from storage luigis_mansion:data furniture.dialog
@@ -22,6 +22,6 @@ scoreboard players set @e[tag=this_entity,limit=1] Sound 0
 scoreboard players set @e[tag=this_entity,limit=1] FurnitureSizeL 18
 scoreboard players set @e[tag=this_entity,limit=1] FurnitureSizeU 13
 scoreboard players set @e[tag=this_entity,limit=1] FurnitureSizeF 8
-scoreboard players set @e[tag=this_entity,limit=1] FurnitureUp 10
+scoreboard players set @e[tag=this_entity,limit=1] FurnitureUp 8
 scoreboard players set @e[tag=this_entity,limit=1] FurnitureSearch 20
 tag @e[tag=this_entity,limit=1] remove this_entity

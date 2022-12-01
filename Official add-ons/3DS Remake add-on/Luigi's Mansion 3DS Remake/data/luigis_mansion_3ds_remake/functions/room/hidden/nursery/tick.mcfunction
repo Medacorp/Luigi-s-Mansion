@@ -1,6 +1,6 @@
 execute unless score #nursery Ticking matches 1 run function #luigis_mansion_3ds_remake:room/hidden/nursery/load
-execute as @a[gamemode=!spectator,x=737,y=17,z=53,dx=14,dy=10,dz=20] unless entity @s[scores={Room=10}] run scoreboard players operation @s LastRoom = @s Room
-execute as @e[tag=!spectator,x=737,y=17,z=53,dx=14,dy=10,dz=20] unless entity @s[tag=ghost,tag=appear] unless entity @s[tag=ghost,tag=vanish] run scoreboard players set @s Room 10
+execute as @a[gamemode=!spectator,x=737,y=17,z=53,dx=14,dy=9,dz=20] unless entity @s[scores={Room=10}] run scoreboard players operation @s LastRoom = @s Room
+execute as @e[tag=!spectator,x=737,y=17,z=53,dx=14,dy=9,dz=20] unless entity @s[tag=ghost,tag=appear] unless entity @s[tag=ghost,tag=vanish] run scoreboard players set @s Room 10
 scoreboard players set #temp Room 10
 
 execute as @a[gamemode=!spectator,scores={Room=10}] run function luigis_mansion_3ds_remake:room/hidden/nursery/tick_per_player

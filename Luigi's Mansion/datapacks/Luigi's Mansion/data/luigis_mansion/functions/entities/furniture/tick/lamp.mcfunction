@@ -14,7 +14,7 @@ execute unless score #temp Time matches 0 as @e[tag=location,limit=1] positioned
 execute unless score #temp2 Time matches 0 as @e[tag=location,limit=1] positioned as @s run function luigis_mansion:entities/furniture/tick/spawn_contents/move_up
 scoreboard players reset #temp Time
 scoreboard players reset #temp2 Time
-execute positioned as @e[tag=location,limit=1] positioned ~ ~0.5 ~ run function luigis_mansion:entities/furniture/tick/lamp_light
+execute positioned as @e[tag=location,limit=1] run function luigis_mansion:entities/furniture/tick/lamp_light
 kill @e[tag=location,limit=1]
 
 execute if entity @s[tag=falling] run function luigis_mansion:entities/furniture/tick/lamp_fall

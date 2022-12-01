@@ -5,6 +5,6 @@ execute unless score #temp Time matches 0 as @e[tag=location,limit=1] positioned
 execute unless score #temp2 Time matches 0 as @e[tag=location,limit=1] positioned as @s run function luigis_mansion:entities/furniture/tick/spawn_contents/move_up
 scoreboard players reset #temp Time
 scoreboard players reset #temp2 Time
-tag @e[distance=..0.1,tag=hidden_boo,tag=caught_by_boo_radar] add spawn
-execute as @e[distance=..0.1,tag=hidden_boo,tag=caught_by_boo_radar] positioned as @e[tag=location,limit=1] run teleport @s ~ ~ ~
+execute positioned ~ ~1.4 ~ run tag @e[distance=..0.1,tag=hidden_boo,tag=caught_by_boo_radar] add spawn
+execute positioned ~ ~1.4 ~ as @e[distance=..0.1,tag=hidden_boo,tag=caught_by_boo_radar] positioned as @e[tag=location,limit=1] run teleport @s ~ ~ ~
 kill @e[tag=location,limit=1]
