@@ -12,7 +12,8 @@ execute if entity @s[scores={Dialog=72}] if score #players Totals matches 1 run 
 execute if entity @s[scores={Dialog=72}] if score #players Totals matches 2.. run tellraw @a[tag=same_room] {"translate":"chat.type.text","with":[{"translate":"luigis_mansion:entity.e_gadd","color":"green"},{"translate":"luigis_mansion:dialog.released_boos_talk.2.more"}]}
 execute if entity @s[scores={Dialog=72}] run playsound luigis_mansion:entity.e_gadd.talk.soy_soh_ooh_hey_hey_suu_dehkooroo_hah neutral @a[tag=same_room] ~ ~ ~ 1
 execute if entity @s[scores={Dialog=168..559}] as @a[tag=same_room,tag=!spectator,tag=!high_health_idle_no_sound,tag=!looking_at_map] run function luigis_mansion:entities/player/animation/set/high_health_idle_no_sound
-execute if entity @s[scores={Dialog=168}] run tellraw @a[tag=same_room] {"translate":"chat.type.text","with":[{"translate":"luigis_mansion:entity.e_gadd","color":"green"},{"translate":"luigis_mansion:dialog.released_boos_talk.3"}]}
+execute if entity @s[scores={Dialog=168}] if score #players Totals matches 1 run tellraw @a[tag=same_room] {"translate":"chat.type.text","with":[{"translate":"luigis_mansion:entity.e_gadd","color":"green"},{"translate":"luigis_mansion:dialog.released_boos_talk.3"}]}
+execute if entity @s[scores={Dialog=168}] if score #players Totals matches 2.. run tellraw @a[tag=same_room] {"translate":"chat.type.text","with":[{"translate":"luigis_mansion:entity.e_gadd","color":"green"},{"translate":"luigis_mansion:dialog.released_boos_talk.3.more"}]}
 execute if entity @s[scores={Dialog=168}] run playsound luigis_mansion:entity.e_gadd.talk.soy_soh_ooh_suku_suku_oydohroh_odoh neutral @a[tag=same_room] ~ ~ ~ 1
 tag @s[scores={Dialog=352}] add nod
 tag @s[scores={Dialog=352}] remove shake
