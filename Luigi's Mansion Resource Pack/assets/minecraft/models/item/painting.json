@@ -1137,30 +1137,6 @@
                 "custom_model_data": 189
             },
             "model": "luigis_mansion_3ds_remake:item/painting_frame"
-        },
-		{
-            "predicate": {
-                "custom_model_data": 190
-            },
-            "model": "thrill_tower:item/bronze_painting/master_hand_and_crazy_hand"
-        },
-		{
-            "predicate": {
-                "custom_model_data": 191
-            },
-            "model": "thrill_tower:item/silver_painting/master_hand_and_crazy_hand"
-        },
-		{
-            "predicate": {
-                "custom_model_data": 192
-            },
-            "model": "thrill_tower:item/gold_painting/master_hand_and_crazy_hand"
-        },
-		{
-            "predicate": {
-                "custom_model_data": 193
-            },
-            "model": "thrill_tower:item/platinum_painting/master_hand_and_crazy_hand"
         }
     ]
 }
