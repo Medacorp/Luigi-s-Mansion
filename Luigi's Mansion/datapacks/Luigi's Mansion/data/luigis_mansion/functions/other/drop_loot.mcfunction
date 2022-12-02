@@ -1,6 +1,6 @@
 data modify storage luigis_mansion:data drop_loot set from entity @s ArmorItems[3].tag.loot
-data modify storage luigis_mansion:data money_spawned set from storage luigis_mansion:data current_state.current_data.money_spawned
-execute if data storage luigis_mansion:data money_spawned[-1] run function luigis_mansion:other/drop_loot_search
+execute if data storage luigis_mansion:data drop_loot.name run data modify storage luigis_mansion:data money_spawned set from storage luigis_mansion:data current_state.current_data.money_spawned
+execute if data storage luigis_mansion:data drop_loot.name if data storage luigis_mansion:data money_spawned[-1] run function luigis_mansion:other/drop_loot_search
 scoreboard players reset #temp Time
 data remove entity @s ArmorItems[3].tag.loot
 execute unless data storage luigis_mansion:data drop_loot if score #debug_messages Selected matches 1.. run tellraw @a {"translate":"luigis_mansion:message.debug.format","with":[{"translate":"luigis_mansion:message.debug","color":"gold"},{"translate":"luigis_mansion:message.debug.loot_spawn_fail.previously_spawned","color":"red"}]}

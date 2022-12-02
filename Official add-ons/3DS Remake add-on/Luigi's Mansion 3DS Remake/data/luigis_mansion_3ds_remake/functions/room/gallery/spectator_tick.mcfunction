@@ -1,4 +1,4 @@
-execute unless block 772 4 -16 minecraft:dirt run function luigis_mansion_3ds_remake:room/gallery/generate
+execute unless block 736 2 -24 minecraft:barrier run function luigis_mansion_3ds_remake:room/gallery/generate
 execute unless entity @s[scores={Room=-5}] run title @s title {"translate":"luigis_mansion:location.gallery"}
 scoreboard players set @s Room -5
 scoreboard players set @s PrevRoom -5
