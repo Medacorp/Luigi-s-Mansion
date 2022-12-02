@@ -1,0 +1,1 @@
+execute if entity @s[tag=hide_and_seek_box] run function luigis_mansion:entities/furniture/tick/hide_and_seek_box

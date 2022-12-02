@@ -9,7 +9,7 @@ execute if block ~ ~ ~ #luigis_mansion:all_ignore unless entity @a[scores={GBHCa
 tag @s add me
 execute if entity @e[tag=!me,tag=!hidden,tag=!model_piece,tag=!door,distance=..0.7,limit=1] if block ~ ~ ~ #luigis_mansion:all_ignore run tag @s remove try_spawn
 execute if entity @e[tag=!me,tag=!hidden,tag=!model_piece,tag=!door,distance=..0.7,limit=1] unless entity @e[type=minecraft:item_frame,distance=..0.7,limit=1] run tag @s remove try_spawn
-execute if entity @e[tag=furniture,distance=..0.1,limit=1] run tag @s[tag=new_ghost] remove try_spawn
+execute positioned ~ ~-1.4 ~ if entity @e[tag=furniture,distance=..0.1,limit=1] run tag @s[tag=new_ghost] remove try_spawn
 tag @s remove me
 execute if entity @a[distance=..1.5] if block ~ ~ ~ #luigis_mansion:all_ignore run tag @s remove try_spawn
 tag @s[tag=try_spawn] add spawn_now

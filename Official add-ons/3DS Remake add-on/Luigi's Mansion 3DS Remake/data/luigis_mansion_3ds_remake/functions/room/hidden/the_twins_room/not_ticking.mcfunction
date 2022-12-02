@@ -11,8 +11,4 @@ setblock 742 20 46 minecraft:air
 setblock 747 20 43 minecraft:air
 setblock 747 20 37 minecraft:air
 setblock 742 20 34 minecraft:air
-scoreboard players reset #the_twins_room_box_1 Searched
-scoreboard players reset #the_twins_room_box_2 Searched
-scoreboard players reset #the_twins_room_box_3 Searched
-scoreboard players reset #the_twins_room_box_4 Searched
-scoreboard players reset #the_twins_room_box_5 Searched
+tag @e[tag=hide_and_seek_box,scores={Room=49}] add remove_from_existence

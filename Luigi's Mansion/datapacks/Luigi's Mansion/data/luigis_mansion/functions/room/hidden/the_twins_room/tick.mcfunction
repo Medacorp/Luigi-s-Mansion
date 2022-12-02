@@ -7,6 +7,8 @@ execute as @a[gamemode=!spectator,scores={Room=49}] run function luigis_mansion:
 
 function #luigis_mansion:room/hidden/the_twins_room/interactions/room
 
+execute if score #the_twins_room Wave matches 5 run function luigis_mansion:room/hidden/the_twins_room/hide_and_seek
+
 scoreboard players set #temp Room 49
 execute as @a[gamemode=!spectator,tag=!pull_open_door,tag=!push_open_door] run function #luigis_mansion:get_same_room
 scoreboard players reset #temp Room

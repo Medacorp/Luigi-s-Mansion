@@ -1,4 +1,4 @@
-summon minecraft:armor_stand ~ ~-1.4 ~ {CustomName:'{"translate":"luigis_mansion:furniture.hide_and_seek_box"}',Tags:["furniture","generic","chest","standing_furniture","scan_ignore","this_entity"],Pose:{Head:[0.0f,0.01f,0.0f]},NoGravity:1b,Marker:1b,ArmorItems:[{},{},{},{id:"minecraft:diamond_pickaxe",Count:1b,tag:{Unbreakable:1b,Damage:19,CustomModelData:77}}],Invisible:1b,DisabledSlots:2039583}
+summon minecraft:armor_stand ~ ~-1.4 ~ {CustomName:'{"translate":"luigis_mansion:furniture.hide_and_seek_box"}',Tags:["furniture","hide_and_seek_box","standing_furniture","no_dust","scan_ignore","this_entity"],Pose:{Head:[0.0f,0.01f,0.0f]},NoGravity:1b,Marker:1b,ArmorItems:[{},{},{},{id:"minecraft:diamond_pickaxe",Count:1b,tag:{Unbreakable:1b,Damage:19,CustomModelData:77}}],Invisible:1b,DisabledSlots:2039583}
 teleport @e[tag=this_entity,limit=1] ~ ~-1.4 ~ ~ ~
 execute if data storage luigis_mansion:data furniture.loot run data modify entity @e[tag=this_entity,limit=1] ArmorItems[3].tag.loot set from storage luigis_mansion:data furniture.loot
 execute if data storage luigis_mansion:data furniture.dialog run data modify entity @e[tag=this_entity,limit=1] ArmorItems[3].tag.dialog set from storage luigis_mansion:data furniture.dialog
@@ -19,8 +19,9 @@ scoreboard players set @e[tag=this_entity,limit=1] FurnitureSound 0
 execute if data storage luigis_mansion:data furniture.sound store result score @e[tag=this_entity,limit=1] FurnitureSound run data get storage luigis_mansion:data furniture.sound
 data remove storage luigis_mansion:data furniture
 scoreboard players set @e[tag=this_entity,limit=1] Sound 0
+scoreboard players set @e[tag=this_entity,limit=1] InteractionType 3
 scoreboard players set @e[tag=this_entity,limit=1] FurnitureSizeW 10
 scoreboard players set @e[tag=this_entity,limit=1] FurnitureSizeH 10
-scoreboard players set @e[tag=this_entity,limit=1] FurnitureUp 10
+scoreboard players set @e[tag=this_entity,limit=1] FurnitureUp 0
 scoreboard players set @e[tag=this_entity,limit=1] FurnitureSearch -1
 tag @e[tag=this_entity,limit=1] remove this_entity
