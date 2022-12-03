@@ -1,1 +1,1 @@
-execute if entity @s[tag=ghost,scores={VulnerableTime=2..},tag=!dead,tag=!vanish,tag=!appear,tag=!boo,tag=!boolossus,tag=!king_boo,distance=..0.7] run function luigis_mansion:items/poltergust_3000/effect_on_entity/vacuum/effect/ghost/ghost
+execute if entity @s[tag=ghost,scores={VulnerableTime=2..},tag=!dead,tag=!vanish,tag=!appear,tag=!boo,tag=!boolossus,tag=!king_boo] run function luigis_mansion:items/poltergust_3000/effect_on_entity/vacuum/effect/ghost/ghost

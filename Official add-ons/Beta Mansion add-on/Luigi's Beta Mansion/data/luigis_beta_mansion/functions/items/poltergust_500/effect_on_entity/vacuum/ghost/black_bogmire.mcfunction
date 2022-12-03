@@ -1,1 +1,0 @@
-execute if entity @s[tag=black_bogmire] run function luigis_beta_mansion:items/poltergust_500/effect_on_entity/vacuum/effect/ghost/black_bogmire

@@ -1,1 +1,1 @@
-execute positioned ~ ~-1 ~ run tag @s[tag=sue_pea,distance=..1.5] add watered
+tag @s[tag=sue_pea] add watered

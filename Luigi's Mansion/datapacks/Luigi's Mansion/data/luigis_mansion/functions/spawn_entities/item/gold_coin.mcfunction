@@ -12,3 +12,5 @@ execute as @e[tag=this_entity,limit=1] run data modify entity @s Pose.Head[0] se
 kill @e[distance=..0.7,type=minecraft:item,nbt={Item:{id:"minecraft:carved_pumpkin"}}]
 execute as @e[tag=this_entity,limit=1] store result entity @s Rotation[1] float 1 run data get entity @s Pose.Head[0]
 execute if predicate luigis_mansion:50_50 as @e[tag=this_entity,limit=1] store result entity @s Pose.Head[0] float -1 run data get entity @s Pose.Head[0]
+scoreboard players set @e[tag=this_entity,limit=1] EntitySizeRadius 7
+scoreboard players set @e[tag=this_entity,limit=1] EntityYOffset 14

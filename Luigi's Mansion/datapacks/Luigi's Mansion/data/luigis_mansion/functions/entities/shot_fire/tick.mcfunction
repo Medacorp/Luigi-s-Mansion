@@ -12,9 +12,10 @@ execute if entity @s[tag=hit] positioned ~-0.5 ~-1 ~-0.5 run scoreboard players 
 execute if entity @s[tag=hit] positioned ~-0.5 ~-1 ~-0.5 as @a[dx=0,dy=1,dz=0,scores={Invulnerable=0},tag=!spectator] positioned ~0.5 ~1 ~0.5 run function luigis_mansion:entities/player/knockback/burn
 tag @s[tag=hit] add dead
 execute at @s[tag=dead] run playsound luigis_mansion:item.poltergust_3000.shoot.fire.hit hostile @a[tag=same_room] ~ ~ ~ 1
-execute at @s positioned ~-0.5 ~-1 ~-0.5 as @e[dx=0,dy=1,dz=0,tag=!shot_fire] run function luigis_mansion:items/poltergust_3000/effect_on_entity/fire
-execute at @s unless block ~ ~ ~ minecraft:air run function luigis_mansion:items/poltergust_3000/effect_on_block/fire
-execute at @s run function luigis_mansion:items/poltergust_3000/interact
-execute at @s[tag=dead] run particle minecraft:flame ~ ~1 ~ 0.2 0.2 0.2 0 1
+execute at @s run function luigis_mansion:items/poltergust_3000/fire
+scoreboard players reset #interact PosX
+scoreboard players reset #interact PosY
+scoreboard players reset #interact PosZ
+tag @e[tag=hit_by_poltergust] remove hit_by_poltergust
 scoreboard players reset #temp ID
 tag @s remove me

@@ -5,4 +5,7 @@ execute as @e[tag=this_entity,tag=e_gadd,limit=1] store result score @s PassiveN
 execute as @e[tag=this_entity,tag=e_gadd,limit=1] store result storage luigis_mansion:data passive_nr int 1 run scoreboard players add @s PassiveNr 1
 scoreboard players operation @e[tag=this_entity,tag=model_piece] PassiveNr = @e[tag=this_entity,tag=e_gadd,limit=1] PassiveNr
 execute as @e[tag=this_entity,tag=e_gadd,limit=1] store result score @s HomeY run data get entity @s Pos[1] 100
+scoreboard players set @e[tag=this_entity,limit=1] EntitySizeW 8
+scoreboard players set @e[tag=this_entity,limit=1] EntitySizeH 16
+scoreboard players set @e[tag=this_entity,limit=1] EntityYOffset 14
 tag @e[tag=this_entity] remove this_entity

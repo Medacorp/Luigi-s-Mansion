@@ -2,4 +2,6 @@ summon minecraft:armor_stand ~ ~-0.94 ~ {CustomName:'{"translate":"luigis_mansio
 teleport @e[tag=this_entity,limit=1] ~ ~-0.94 ~ ~ ~
 execute as @e[tag=this_entity,limit=1] run data modify entity @s Pose.Head[0] set from entity @s Rotation[1]
 scoreboard players set @e[tag=this_entity,limit=1] VacuumTime 0
+scoreboard players set @e[tag=this_entity,limit=1] EntitySizeRadius 5
+scoreboard players set @e[tag=this_entity,limit=1] EntityYOffset 14
 tag @e[tag=this_entity,limit=1] remove this_entity

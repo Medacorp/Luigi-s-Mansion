@@ -2,8 +2,8 @@ summon minecraft:armor_stand ~ ~ ~ {CustomName:'{"translate":"luigis_mansion:ent
 execute as @e[tag=this_entity,limit=1] store result score @s GhostNr run data get storage luigis_mansion:data ghost_nr
 execute as @e[tag=this_entity,limit=1] store result storage luigis_mansion:data ghost_nr int 1 run scoreboard players add @s GhostNr 1
 execute as @e[tag=this_entity,limit=1] store result score @s Health store result score @s LastHealth run data get storage luigis_mansion:data current_state.current_data.ghosts.ceiling_surprise.health
-execute as @e[tag=this_entity,limit=1] store result score @s Move run data get storage luigis_mansion:data current_state.current_data.ghosts.ceiling_ghost.speed
-execute as @e[tag=this_entity,limit=1] store result score @s MoveFlee run data get storage luigis_mansion:data current_state.current_data.ghosts.ceiling_ghost.flee_speed
+execute as @e[tag=this_entity,limit=1] store result score @s Move run data get storage luigis_mansion:data current_state.current_data.ghosts.ceiling_surprise.speed
+execute as @e[tag=this_entity,limit=1] store result score @s MoveFlee run data get storage luigis_mansion:data current_state.current_data.ghosts.ceiling_surprise.flee_speed
 data modify entity @e[tag=this_entity,limit=1] ArmorItems[3].tag.loot set from storage luigis_mansion:data current_state.current_data.ghosts.ceiling_surprise.loot
 teleport @e[tag=this_entity,limit=1] ~ ~ ~ facing entity @p[gamemode=!spectator]
 execute as @e[tag=this_entity,limit=1] store result score @s HomeX run data get entity @s Pos[0] 100
@@ -18,4 +18,7 @@ scoreboard players set @e[tag=this_entity,limit=1] ElementHurtTime 0
 scoreboard players set @e[tag=this_entity,limit=1] SecondFleeDamage -1
 scoreboard players set @e[tag=this_entity,limit=1] HeartOffset 8
 scoreboard players set @e[tag=this_entity,limit=1] SpawnTime 160
+scoreboard players set @e[tag=this_entity,limit=1] EntitySizeW 8
+scoreboard players set @e[tag=this_entity,limit=1] EntitySizeH 20
+scoreboard players set @e[tag=this_entity,limit=1] EntityYOffset 20
 tag @e[tag=this_entity,limit=1] remove this_entity

@@ -1,1 +1,1 @@
-execute positioned ~ ~-1.3 ~ run tag @s[tag=boolossus,tag=split,tag=!fleeing,scores={Wave=..599},distance=..0.7] add frozen
+tag @s[tag=boolossus,tag=split,tag=!fleeing,scores={Wave=..599}] add frozen

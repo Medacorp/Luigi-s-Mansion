@@ -1,1 +1,1 @@
-execute positioned ~ ~-1.4 ~ positioned as @s[distance=..1.4,tag=heart] run function luigis_mansion:items/poltergust_3000/effect_on_entity/vacuum/effect/item/heart
+execute positioned as @s[tag=heart] run function luigis_mansion:items/poltergust_3000/effect_on_entity/vacuum/effect/item/heart

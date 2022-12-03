@@ -1,1 +1,1 @@
-execute positioned ~ ~-1.4 ~ positioned as @s[tag=vacuumable,distance=..1.4,tag=item,tag=gold_coin] run function luigis_mansion:entities/item/pull_gold_coin
+execute positioned as @s[tag=vacuumable,tag=item,tag=gold_coin] run function luigis_mansion:entities/item/pull_gold_coin

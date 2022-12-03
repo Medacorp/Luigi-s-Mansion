@@ -3,4 +3,6 @@ execute as @e[tag=this_entity,limit=1] store result score @s HomeX run data get 
 execute as @e[tag=this_entity,limit=1] store result score @s HomeY run data get entity @s Pos[1] 100
 execute as @e[tag=this_entity,limit=1] store result score @s HomeZ run data get entity @s Pos[2] 100
 data modify entity @e[tag=this_entity,limit=1] ArmorItems[3].tag.loot set from storage luigis_mansion:data current_state.current_data.ghosts.shining_ghost.loot
+scoreboard players set @e[tag=this_entity,limit=1] EntitySizeRadius 7
+scoreboard players set @e[tag=this_entity,limit=1] EntityYOffset 14
 tag @e[tag=this_entity,limit=1] remove this_entity

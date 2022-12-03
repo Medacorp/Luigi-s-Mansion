@@ -1,2 +1,2 @@
-execute if entity @s[tag=!dying,scores={HurtTime=1..,Health=1..},tag=!already_hurt] run function luigis_mansion:entities/king_boo/harm
+execute if entity @s[tag=!dying,scores={HurtTime=1..,Health=1..}] run function luigis_mansion:entities/king_boo/harm
 function luigis_mansion:items/poltergust_3000/effect_on_entity/vacuum/effect/ghost/generic_boo

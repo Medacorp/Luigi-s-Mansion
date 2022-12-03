@@ -1,0 +1,2 @@
+execute if entity @s[scores={EntitySizeW=1..}] run function luigis_mansion:items/poltergust_3000/effect_on_entity/collision_box_check
+execute if entity @s[scores={EntitySizeRadius=1..}] run function luigis_mansion:items/poltergust_3000/effect_on_entity/collision_radius_check

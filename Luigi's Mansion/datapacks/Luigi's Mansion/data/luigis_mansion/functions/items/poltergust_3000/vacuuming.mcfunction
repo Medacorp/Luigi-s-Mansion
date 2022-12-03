@@ -50,6 +50,6 @@ execute if entity @s[scores={DamagePitch=6..,DamagePitchTimer=6}] run playsound 
 scoreboard players set @s[scores={DamagePitchTimer=0}] DamagePitch 0
 scoreboard players remove @s[scores={DamagePitchTimer=1..}] DamagePitchTimer 1
 tag @s remove me
-tag @e[tag=already_hurt] remove already_hurt
+tag @e[tag=hit_by_poltergust] remove hit_by_poltergust
 kill @e[type=minecraft:marker,tag=interact,limit=1]
 kill @e[type=minecraft:marker,tag=position,limit=1]

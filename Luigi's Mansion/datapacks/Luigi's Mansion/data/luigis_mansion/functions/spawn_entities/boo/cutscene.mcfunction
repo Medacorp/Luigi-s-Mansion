@@ -9,4 +9,6 @@ execute if entity @e[distance=..0.7,type=minecraft:item,nbt={Item:{id:"minecraft
 kill @e[distance=..0.7,type=minecraft:item,nbt={Item:{id:"minecraft:carved_pumpkin"}}]
 scoreboard players set @e[tag=this_entity,limit=1] Move 30
 scoreboard players set @e[tag=this_entity,limit=1] Sound 0
+scoreboard players set @e[tag=this_entity,limit=1] EntitySizeRadius 5
+scoreboard players set @e[tag=this_entity,limit=1] EntityYOffset 14
 tag @e[tag=this_entity,limit=1] remove this_entity

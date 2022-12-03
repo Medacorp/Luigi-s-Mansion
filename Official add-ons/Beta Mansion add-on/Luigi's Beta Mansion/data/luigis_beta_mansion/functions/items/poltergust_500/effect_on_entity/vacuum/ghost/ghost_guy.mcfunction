@@ -1,1 +1,0 @@
-tag @s[tag=ghost_guy,tag=!maskless,distance=..0.7] add in_vacuum

@@ -1,1 +1,0 @@
-tag @s[tag=bomb,distance=..0.7] add dead

@@ -31,6 +31,7 @@ tag @s remove fire
 tag @s remove water
 tag @s remove ice
 kill @e[type=minecraft:marker,tag=interact,limit=1]
+tag @e[tag=hit_by_poltergust] remove hit_by_poltergust
 scoreboard players reset #temp MirrorX
 scoreboard players reset #temp MirrorZ
 scoreboard players reset #temp Room
