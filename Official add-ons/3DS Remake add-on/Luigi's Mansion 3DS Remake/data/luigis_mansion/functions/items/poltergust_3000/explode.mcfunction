@@ -1,5 +1,6 @@
 effect give @s minecraft:instant_damage 1 0 true
 scoreboard players set @s ForcedDamage 4
+scoreboard players set @s[scores={Invulnerable=1..2}] Invulnerable 0
 execute at @s positioned ^ ^ ^1 run function luigis_mansion:entities/player/knockback/medium_forward
 playsound luigis_mansion:item.poltergust_3000.explode player @a[tag=same_room] ~ ~ ~ 1
 execute at @s[scores={Health=41..,Shrunk=0},tag=!gooigi] run playsound luigis_mansion:entity.player.exploding_poltergust.high_health player @a[tag=same_room] ~ ~ ~ 1

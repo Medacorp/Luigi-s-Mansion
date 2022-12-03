@@ -1,1 +1,1 @@
-scoreboard players set @s[tag=bomb,distance=..0.7] Move 9
+scoreboard players set @s[tag=bomb] Move 9

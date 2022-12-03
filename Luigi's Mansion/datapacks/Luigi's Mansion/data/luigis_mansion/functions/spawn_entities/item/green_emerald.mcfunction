@@ -10,5 +10,7 @@ kill @e[distance=..0.7,type=minecraft:item,nbt={Item:{id:"minecraft:carved_pumpk
 loot spawn ~ ~ ~ loot luigis_mansion:gameplay/0_90
 execute as @e[tag=this_entity,limit=1] run data modify entity @s Rotation[1] set from entity @e[distance=..0.7,type=minecraft:item,nbt={Item:{id:"minecraft:carved_pumpkin"}},limit=1] Item.tag.Value
 kill @e[distance=..0.7,type=minecraft:item,nbt={Item:{id:"minecraft:carved_pumpkin"}}]
+scoreboard players set @e[tag=this_entity,limit=1] EntitySizeRadius 7
+scoreboard players set @e[tag=this_entity,limit=1] EntityYOffset 14
 tag @e[tag=this_entity,limit=1] remove this_entity
 playsound luigis_mansion:item.green_emerald.spawn player @a ~ ~ ~ 1

@@ -17,5 +17,8 @@ scoreboard players set @e[tag=this_entity,tag=mr_bones,limit=1] VulnerableTime 0
 scoreboard players set @e[tag=this_entity,tag=mr_bones,limit=1] TopVacuumDamage 0
 scoreboard players set @e[tag=this_entity,tag=mr_bones,limit=1] ElementHurtTime 0
 scoreboard players set @e[tag=this_entity,tag=mr_bones,limit=1] HeartOffset 3
-scoreboard players set @e[tag=this_entity,limit=1] SpawnTime 160
+scoreboard players set @e[tag=this_entity,tag=mr_bones,limit=1] SpawnTime 160
+scoreboard players set @e[tag=this_entity,tag=mr_bones,limit=1] EntitySizeW 8
+scoreboard players set @e[tag=this_entity,tag=mr_bones,limit=1] EntitySizeH 20
+scoreboard players set @e[tag=this_entity,tag=mr_bones,limit=1] EntityYOffset 10
 tag @e[tag=this_entity] remove this_entity

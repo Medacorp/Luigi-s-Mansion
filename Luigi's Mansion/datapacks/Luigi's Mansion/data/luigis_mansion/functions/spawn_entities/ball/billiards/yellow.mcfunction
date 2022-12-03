@@ -2,5 +2,7 @@ summon minecraft:armor_stand ~ ~-1.1875 ~ {CustomName:'{"translate":"luigis_mans
 execute as @e[tag=this_entity,limit=1] store result score @s HomeX run data get entity @s Pos[0] 100
 execute as @e[tag=this_entity,limit=1] store result score @s HomeY run data get entity @s Pos[1] 100
 execute as @e[tag=this_entity,limit=1] store result score @s HomeZ run data get entity @s Pos[2] 100
+scoreboard players set @e[tag=this_entity,limit=1] EntitySizeRadius 3
+scoreboard players set @e[tag=this_entity,limit=1] EntityYOffset 14
 scoreboard players set @e[tag=this_entity,limit=1] SpawnTime 0
 tag @e[tag=this_entity,limit=1] remove this_entity

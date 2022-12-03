@@ -48,6 +48,6 @@ scoreboard players remove @s[scores={DamagePitchTimer=1..}] DamagePitchTimer 1
 scoreboard players reset #temp MirrorX
 scoreboard players reset #temp MirrorZ
 tag @s remove me
-tag @e[tag=already_hurt] remove already_hurt
+tag @e[tag=hit_by_poltergust] remove hit_by_poltergust
 kill @e[type=minecraft:marker,tag=interact,limit=1]
 kill @e[type=minecraft:marker,tag=position,limit=1]

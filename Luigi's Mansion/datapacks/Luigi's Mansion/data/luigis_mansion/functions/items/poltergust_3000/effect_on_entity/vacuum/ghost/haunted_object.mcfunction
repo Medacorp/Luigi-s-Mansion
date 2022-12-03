@@ -1,1 +1,1 @@
-execute positioned as @s[tag=haunted_object,distance=..0.7] unless entity @s[tag=!moving,tag=!haunted_music_sheet] unless entity @s[tag=haunted_music_sheet,scores={WaitTime=..0}] run function luigis_mansion:items/poltergust_3000/effect_on_entity/vacuum/effect/ghost/haunted_object
+execute positioned as @s[tag=haunted_object] unless entity @s[tag=!moving,tag=!haunted_music_sheet] unless entity @s[tag=haunted_music_sheet,scores={WaitTime=..0}] run function luigis_mansion:items/poltergust_3000/effect_on_entity/vacuum/effect/ghost/haunted_object

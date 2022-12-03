@@ -18,5 +18,21 @@ data merge entity @e[tag=this_entity,limit=1,scores={ActionTime=12}] {ArmorItems
 data merge entity @e[tag=this_entity,limit=1,scores={ActionTime=13}] {ArmorItems:[{},{},{},{id:"minecraft:diamond_pickaxe",Count:1b,tag:{Unbreakable:1b,Damage:1,CustomModelData:60}}],HandItems:[{id:"minecraft:diamond_pickaxe",Count:1b,tag:{Unbreakable:1b,Damage:2,CustomModelData:60}},{id:"minecraft:diamond_pickaxe",Count:1b,tag:{Unbreakable:1b,Damage:3,CustomModelData:60}}]}
 data merge entity @e[tag=this_entity,limit=1,scores={ActionTime=14}] {ArmorItems:[{},{},{},{id:"minecraft:diamond_pickaxe",Count:1b,tag:{Unbreakable:1b,Damage:1,CustomModelData:61}}],HandItems:[{id:"minecraft:diamond_pickaxe",Count:1b,tag:{Unbreakable:1b,Damage:2,CustomModelData:61}},{id:"minecraft:diamond_pickaxe",Count:1b,tag:{Unbreakable:1b,Damage:3,CustomModelData:61}}]}
 execute as @e[tag=this_entity,limit=1] store result score @s Move run data get storage luigis_mansion:data current_state.current_data.portrait_ghosts.boolossus.merged_speed
+scoreboard players set @e[tag=this_entity,limit=1,scores={ActionTime=1}] EntitySizeRadius 5
+scoreboard players set @e[tag=this_entity,limit=1,scores={ActionTime=2}] EntitySizeRadius 10
+scoreboard players set @e[tag=this_entity,limit=1,scores={ActionTime=3}] EntitySizeRadius 11
+scoreboard players set @e[tag=this_entity,limit=1,scores={ActionTime=4}] EntitySizeRadius 12
+scoreboard players set @e[tag=this_entity,limit=1,scores={ActionTime=5}] EntitySizeRadius 13
+scoreboard players set @e[tag=this_entity,limit=1,scores={ActionTime=6}] EntitySizeRadius 14
+scoreboard players set @e[tag=this_entity,limit=1,scores={ActionTime=7}] EntitySizeRadius 15
+scoreboard players set @e[tag=this_entity,limit=1,scores={ActionTime=8}] EntitySizeRadius 16
+scoreboard players set @e[tag=this_entity,limit=1,scores={ActionTime=9}] EntitySizeRadius 17
+scoreboard players set @e[tag=this_entity,limit=1,scores={ActionTime=10}] EntitySizeRadius 18
+scoreboard players set @e[tag=this_entity,limit=1,scores={ActionTime=11}] EntitySizeRadius 19
+scoreboard players set @e[tag=this_entity,limit=1,scores={ActionTime=12}] EntitySizeRadius 20
+scoreboard players set @e[tag=this_entity,limit=1,scores={ActionTime=13}] EntitySizeRadius 21
+scoreboard players set @e[tag=this_entity,limit=1,scores={ActionTime=14}] EntitySizeRadius 22
+scoreboard players set @e[tag=this_entity,limit=1,scores={ActionTime=15..}] EntitySizeRadius 23
+scoreboard players set @e[tag=this_entity,limit=1] EntityYOffset 14
 scoreboard players set @e[tag=this_entity,limit=1] Sound 0
 tag @e[tag=this_entity,limit=1] remove this_entity

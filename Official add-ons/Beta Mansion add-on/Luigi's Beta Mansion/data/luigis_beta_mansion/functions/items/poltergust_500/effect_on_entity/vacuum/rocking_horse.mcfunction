@@ -1,1 +1,0 @@
-execute positioned ~ ~-1.25 ~ run tag @s[tag=rocking_horse,tag=!battle,distance=..0.7] add in_vacuum

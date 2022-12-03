@@ -22,4 +22,7 @@ scoreboard players set @e[tag=henry,tag=this_entity,limit=1] StunTime 0
 scoreboard players set @e[tag=henry,tag=this_entity,limit=1] VulnerableTime 0
 scoreboard players set @e[tag=henry,tag=this_entity,limit=1] SecondFleeDamage -1
 scoreboard players set @e[tag=henry,tag=this_entity,limit=1] HeartOffset -2
+scoreboard players set @e[tag=henry,tag=this_entity,limit=1] EntitySizeW 10
+scoreboard players set @e[tag=henry,tag=this_entity,limit=1] EntitySizeH 18
+scoreboard players set @e[tag=henry,tag=this_entity,limit=1] EntityYOffset 9
 tag @e[tag=this_entity] remove this_entity

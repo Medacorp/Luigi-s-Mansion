@@ -20,4 +20,7 @@ scoreboard players set @e[tag=chauncey,tag=this_entity,limit=1] StunTime 0
 scoreboard players set @e[tag=chauncey,tag=this_entity,limit=1] VulnerableTime 0
 scoreboard players set @e[tag=chauncey,tag=this_entity,limit=1] SecondFleeDamage 3500
 scoreboard players set @e[tag=chauncey,tag=this_entity,limit=1] HeartOffset -2
+scoreboard players set @e[tag=chauncey,tag=this_entity,limit=1] EntitySizeW 20
+scoreboard players set @e[tag=chauncey,tag=this_entity,limit=1] EntitySizeH 36
+scoreboard players set @e[tag=chauncey,tag=this_entity,limit=1] EntityYOffset 18
 tag @e[tag=this_entity] remove this_entity

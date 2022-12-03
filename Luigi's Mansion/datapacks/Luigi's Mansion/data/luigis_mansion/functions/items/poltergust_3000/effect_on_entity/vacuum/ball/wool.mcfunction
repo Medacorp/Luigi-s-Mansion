@@ -1,1 +1,1 @@
-execute positioned ~ ~-1.1875 ~ positioned as @s[tag=wool,scores={SpawnTime=20..},distance=..0.7] positioned ~ ~1.1875 ~ run function luigis_mansion:items/poltergust_3000/effect_on_entity/vacuum/effect/ball
+execute positioned as @s[tag=wool,scores={SpawnTime=20..}] run function luigis_mansion:items/poltergust_3000/effect_on_entity/vacuum/effect/ball

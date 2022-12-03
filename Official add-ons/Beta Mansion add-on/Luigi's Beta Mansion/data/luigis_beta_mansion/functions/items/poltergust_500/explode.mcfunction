@@ -1,5 +1,6 @@
 effect give @s minecraft:instant_damage 1 0 true
 scoreboard players set @s ForcedDamage 4
+scoreboard players set @s[scores={Invulnerable=1..2}] Invulnerable 0
 execute at @s positioned ^ ^ ^1 run function luigis_mansion:entities/player/knockback/large
 execute if entity @s[scores={OverheatMeter=300..}] if data storage luigis_beta_mansion:data current_state.trophy{task_7:0b} run function luigis_beta_mansion:room/gallery/clear_task/task_7
 experience add @s -300 levels

@@ -1,1 +1,1 @@
-tag @s[tag=door,tag=!fake,tag=!barricade,distance=..0.7] add in_vacuum
+tag @s[tag=door,tag=!fake,tag=!barricade] add in_vacuum

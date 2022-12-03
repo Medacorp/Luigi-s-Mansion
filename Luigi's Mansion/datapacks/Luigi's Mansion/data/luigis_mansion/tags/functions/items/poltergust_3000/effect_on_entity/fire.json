@@ -1,7 +1,6 @@
 {
 	"values": [
         "luigis_mansion:items/poltergust_3000/effect_on_entity/fire/ball",
-        "luigis_mansion:items/poltergust_3000/effect_on_entity/fire/big_ball",
         "luigis_mansion:items/poltergust_3000/effect_on_entity/fire/haunted_object",
         "luigis_mansion:items/poltergust_3000/effect_on_entity/fire/spark",
         "luigis_mansion:items/poltergust_3000/effect_on_entity/fire/shivers",

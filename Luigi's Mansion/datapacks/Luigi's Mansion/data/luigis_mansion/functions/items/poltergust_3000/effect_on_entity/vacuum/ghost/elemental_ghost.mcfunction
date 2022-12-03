@@ -1,1 +1,1 @@
-execute positioned as @s[tag=elemental_ghost,scores={SpawnTime=21..},distance=..0.7] run function luigis_mansion:items/poltergust_3000/effect_on_entity/vacuum/effect/ghost/elemental_ghost
+execute positioned as @s[tag=elemental_ghost,scores={SpawnTime=21..}] run function luigis_mansion:items/poltergust_3000/effect_on_entity/vacuum/effect/ghost/elemental_ghost

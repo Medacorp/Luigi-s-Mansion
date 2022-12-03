@@ -75,7 +75,7 @@ execute store result score #temp Time run data get entity @s Pose.Head[0]
 execute if entity @s[tag=!head] store result entity @s Pose.Head[0] float 1 run scoreboard players operation #temp Time += @s IncreaseAmount
 scoreboard players reset #temp Time
 execute if data storage luigis_mansion:data luigi{invulnerable:1b} run function luigis_mansion_3ds_remake:animations/gooigi/invulnerability_blink
-execute if data storage luigis_mansion:data luigi{invulnerable:0b} if entity @s[nbt={ArmorItems:[{id:"minecraft:stone_button"}]}] run data modify entity @s ArmorItems[3].id set value "minecraft:diamond_pickaxe"
+execute if data storage luigis_mansion:data luigi{invulnerable:0b} if entity @s[execute if data storage luigis_mansion:data luigi{invulnerable:0b} if entity @s[tag=was_invisible] run function luigis_mansion_3ds_remake:animations/gooigi/invulnerability_blink
 scoreboard players operation @s ScareType = @s KnockbackType
 tag @s[tag=low_health] add was_low_health
 tag @s[tag=!low_health] remove was_low_health

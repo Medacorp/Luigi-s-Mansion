@@ -1,1 +1,1 @@
-execute positioned ~ ~-1.1 ~ positioned as @s[distance=..1.4,tag=gold_diamond] run function luigis_mansion:items/poltergust_3000/effect_on_entity/vacuum/effect/item/generic
+execute positioned as @s[tag=gold_diamond] run function luigis_mansion:items/poltergust_3000/effect_on_entity/vacuum/effect/item/generic

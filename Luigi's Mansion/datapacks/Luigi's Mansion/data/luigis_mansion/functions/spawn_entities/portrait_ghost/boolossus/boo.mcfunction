@@ -7,4 +7,6 @@ scoreboard players operation @e[tag=this_entity,limit=1] Room = #temp Room
 scoreboard players set @e[tag=this_entity,limit=1] Dialog 0
 execute as @e[tag=this_entity,limit=1] store result score @s Move run data get storage luigis_mansion:data current_state.current_data.portrait_ghosts.boolossus.speed
 scoreboard players set @e[tag=this_entity,limit=1] Sound 0
+scoreboard players set @e[tag=this_entity,limit=1] EntitySizeRadius 5
+scoreboard players set @e[tag=this_entity,limit=1] EntityYOffset 14
 tag @e[tag=this_entity,limit=1] remove this_entity

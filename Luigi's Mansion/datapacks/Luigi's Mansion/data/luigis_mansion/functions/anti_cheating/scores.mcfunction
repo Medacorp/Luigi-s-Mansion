@@ -26,6 +26,10 @@ scoreboard objectives add EGaddGallChoice trigger
 scoreboard objectives add EGaddGPRChoice trigger
 scoreboard objectives add EGaddLabChoice trigger
 scoreboard objectives add EGaddTrainChoice trigger
+scoreboard objectives add EntitySizeRadius dummy
+scoreboard objectives add EntitySizeW dummy
+scoreboard objectives add EntitySizeH dummy
+scoreboard objectives add EntityYOffset dummy
 scoreboard objectives add ErrorTime dummy
 scoreboard objectives add FlashlightType dummy
 scoreboard objectives add FlyTime dummy

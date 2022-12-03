@@ -17,4 +17,3 @@ tag @s remove attack
 tag @s remove laugh
 tag @s remove complain
 tag @s remove hurt
-tag @s add already_hurt

@@ -5,4 +5,7 @@ execute as @e[tag=this_entity] positioned as @s run teleport @s ~ ~ ~ ~ ~
 scoreboard players set @e[tag=this_entity] Sound 0
 scoreboard players set @e[tag=this_entity] AnimationProg 0
 execute as @e[tag=this_entity,tag=frame,limit=1] store result score @s Health store result score @s LastHealth run data get storage luigis_mansion:data current_state.current_data.ghosts.fake_door.health
+scoreboard players set @e[tag=this_entity,tag=frame,limit=1] EntitySizeW 10
+scoreboard players set @e[tag=this_entity,tag=frame,limit=1] EntitySizeH 20
+scoreboard players set @e[tag=this_entity,tag=frame,limit=1] EntityYOffset 10
 tag @e[tag=this_entity] remove this_entity
