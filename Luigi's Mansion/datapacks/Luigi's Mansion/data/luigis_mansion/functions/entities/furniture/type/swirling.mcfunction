@@ -1,0 +1,1 @@
+execute if entity @s[tag=swirling] run function luigis_mansion:entities/furniture/type/tick/swirling

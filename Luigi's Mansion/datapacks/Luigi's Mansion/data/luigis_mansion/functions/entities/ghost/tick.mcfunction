@@ -39,4 +39,6 @@ tag @s[tag=in_vacuum] remove in_vacuum
 execute at @s[tag=!portrait_ghost,tag=disappear] run function luigis_mansion:entities/ghost/disappear
 execute if entity @s[tag=portrait_ghost,tag=disappear] run function luigis_mansion:entities/ghost/disappear_portrait_ghost
 scoreboard players reset #temp Move
-kill @s[tag=spawn]
+tag @s[tag=!spawn] remove spawn_last_tick
+kill @s[tag=spawn_last_tick]
+tag @s[tag=spawn] add spawn_last_tick

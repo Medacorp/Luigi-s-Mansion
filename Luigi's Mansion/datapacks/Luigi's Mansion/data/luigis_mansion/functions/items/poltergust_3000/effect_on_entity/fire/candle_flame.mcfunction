@@ -1,1 +1,1 @@
-execute positioned ~ ~-1.4 ~ run tag @s[tag=candle_flame,tag=!lit,distance=..0.3] add lit
+tag @s[tag=candle_flame,tag=!lit] add lit

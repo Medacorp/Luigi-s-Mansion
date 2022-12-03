@@ -3,6 +3,8 @@ teleport @s ~ ~ ~
 scoreboard players add @s[scores={Dialog=171..}] Dialog 1
 execute positioned ~ ~-1 ~ if entity @e[type=minecraft:armor_stand,tag=ball,tag=spit,distance=..0.7] run scoreboard players add @s[scores={Dialog=170}] Dialog 1
 scoreboard players add @s[scores={Dialog=50..169}] Dialog 1
+execute if entity @e[tag=rocking_horse,scores={Room=10},tag=was_in_vacuum,limit=1] run scoreboard players add @s[scores={Dialog=1..49}] Dialog 1
+execute unless entity @e[tag=rocking_horse,scores={Room=10},tag=was_in_vacuum,limit=1] run scoreboard players remove @e[tag=chauncey,tag=!fight,scores={Dialog=2..49},limit=1] Dialog 3
 execute unless entity @s[scores={Dialog=1..}] run scoreboard players add @s Dialog 1
 tag @s[scores={Dialog=1}] add sleep
 scoreboard players set @s[scores={Dialog=1},tag=wake_up] AnimationProg 0

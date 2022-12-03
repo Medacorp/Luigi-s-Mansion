@@ -1,1 +1,0 @@
-execute positioned ~ ~-1.4 ~ run tag @s[tag=candle_flame,tag=lit,distance=..0.3] remove lit

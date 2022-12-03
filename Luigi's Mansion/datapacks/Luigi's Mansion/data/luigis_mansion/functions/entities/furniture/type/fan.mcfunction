@@ -1,0 +1,1 @@
+execute if entity @s[tag=fan] run function luigis_mansion:entities/furniture/type/tick/fan

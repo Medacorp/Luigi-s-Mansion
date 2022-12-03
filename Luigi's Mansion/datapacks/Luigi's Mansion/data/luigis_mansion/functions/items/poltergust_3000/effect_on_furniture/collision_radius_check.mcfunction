@@ -15,8 +15,9 @@ scoreboard players operation #temp2 PosY *= #temp2 PosY
 scoreboard players operation #temp2 PosZ *= #temp2 PosZ
 scoreboard players operation #temp2 PosX += #temp2 PosY
 scoreboard players operation #temp2 PosX += #temp2 PosZ
+scoreboard players add #temp FurnitureRadius 5
 scoreboard players operation #temp FurnitureRadius *= #temp FurnitureRadius
-execute if score #temp2 PosX <= #temp FurnitureRadius run tag @s add hit
+execute if score #temp2 PosX <= #temp FurnitureRadius run tag @s add hit_by_poltergust
 scoreboard players reset #temp PosX
 scoreboard players reset #temp PosY
 scoreboard players reset #temp PosZ

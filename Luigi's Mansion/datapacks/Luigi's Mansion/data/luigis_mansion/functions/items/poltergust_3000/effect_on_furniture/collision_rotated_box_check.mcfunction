@@ -88,7 +88,29 @@ execute if entity @s[tag=!standing_furniture] run scoreboard players operation #
 execute if entity @s[tag=hanging_furniture] run scoreboard players set #temp PosY 0
 scoreboard players operation #temp2 PosZ -= #temp PosZ
 
-execute if score #temp FurnitureSizeL >= #temp2 PosX if score #temp FurnitureSizeL <= #temp PosX if score #temp FurnitureSizeU >= #temp2 PosY if score #temp FurnitureSizeU <= #temp PosY if score #temp FurnitureSizeF >= #temp2 PosZ if score #temp FurnitureSizeF <= #temp PosZ run tag @s add hit
+scoreboard players operation #temp3 PosX = #temp FurnitureSizeL
+scoreboard players operation #temp3 PosX < #temp PosX
+scoreboard players operation #temp3 PosX > #temp2 PosX
+scoreboard players operation #temp3 PosY = #temp FurnitureSizeU
+scoreboard players operation #temp3 PosY < #temp PosY
+scoreboard players operation #temp3 PosY > #temp2 PosY
+scoreboard players operation #temp3 PosZ = #temp FurnitureSizeF
+scoreboard players operation #temp3 PosZ < #temp PosZ
+scoreboard players operation #temp3 PosZ > #temp2 PosZ
+
+scoreboard players operation #temp PosX = #temp FurnitureSizeL
+scoreboard players operation #temp PosY = #temp FurnitureSizeU
+scoreboard players operation #temp PosZ = #temp FurnitureSizeF
+scoreboard players operation #temp PosX -= #temp3 PosX
+scoreboard players operation #temp PosY -= #temp3 PosY
+scoreboard players operation #temp PosZ -= #temp3 PosZ
+scoreboard players operation #temp PosX *= #temp PosX
+scoreboard players operation #temp PosY *= #temp PosY
+scoreboard players operation #temp PosZ *= #temp PosZ
+scoreboard players operation #temp PosX += #temp PosY
+scoreboard players operation #temp PosX += #temp PosZ
+execute if score #temp PosX matches ..25 run tag @s add hit_by_poltergust
+
 scoreboard players reset #cosx
 scoreboard players reset #cosy
 scoreboard players reset #sinx
@@ -102,6 +124,6 @@ scoreboard players reset #temp FurnitureSizeF
 scoreboard players reset #temp2 PosX
 scoreboard players reset #temp2 PosY
 scoreboard players reset #temp2 PosZ
-scoreboard players reset #temp2 FurnitureSizeL
-scoreboard players reset #temp2 FurnitureSizeU
-scoreboard players reset #temp2 FurnitureSizeF
+scoreboard players reset #temp3 PosX
+scoreboard players reset #temp3 PosY
+scoreboard players reset #temp3 PosZ

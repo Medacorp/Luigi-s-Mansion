@@ -1,1 +1,0 @@
-execute if entity @s[tag=rocking_chair] run function luigis_mansion:entities/furniture/tick/rocking_chair

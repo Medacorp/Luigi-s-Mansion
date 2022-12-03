@@ -3,4 +3,5 @@ execute if data storage luigis_mansion:data furniture.loot run data modify entit
 execute unless data storage luigis_mansion:data furniture.loot run tag @e[tag=this_entity,limit=1] add remove_from_existence
 execute unless data storage luigis_mansion:data furniture.loot if score #debug_messages Selected matches 1.. run tellraw @a {"translate":"luigis_mansion:message.debug.format","with":[{"translate":"luigis_mansion:message.debug","color":"gold"},{"translate":"luigis_mansion:message.debug.room_clear_loot_dropper","color":"red"}]}
 data remove storage luigis_mansion:data furniture
+scoreboard players set @e[tag=this_entity,limit=1] FurnitureUp 0
 tag @e[tag=this_entity,limit=1] remove this_entity
