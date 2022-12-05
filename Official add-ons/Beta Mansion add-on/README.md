@@ -8,9 +8,6 @@
 # Changes
 * "Open map when collecting a key" defaults to "Off" for new players
 
-# Functions and tags of interest
-* `#luigis_beta_mansion:items/poltergust_500/` same contents as `#luigis_mansion:items/poltergust_3000/`, excluding ice, fire and dust related files. Not parented for technical reasons.
-
 # Changes to other add-ons
 Extensive Training:
 * Bashers added to the endless program spawn pool; only spawn after the basher Speedy Spirit has spawned.
