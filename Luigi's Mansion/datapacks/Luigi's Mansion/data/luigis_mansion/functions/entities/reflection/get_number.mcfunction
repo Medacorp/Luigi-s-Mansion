@@ -1,0 +1,2 @@
+execute store result score @s ReflectionNr run data get storage luigis_mansion:data reflection_nr
+execute store result storage luigis_mansion:data reflection_nr int 1 run scoreboard players add @s ReflectionNr 1
