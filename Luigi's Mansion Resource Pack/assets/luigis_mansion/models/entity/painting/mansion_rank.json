@@ -1,0 +1,72 @@
+{
+	"credit": "Made with Blockbench",
+	"textures": {
+		"frame": "luigis_mansion:block/painting/mansion_rank_frame",
+		"image": "luigis_mansion:block/painting/empty",
+		"image_back": "luigis_mansion:block/painting/empty",
+		"particle": "#image"
+	},
+	"elements": [
+		{
+			"from": [-2, 0, 7.5],
+			"to": [0, 16, 8.5],
+			"faces": {
+				"north": {"uv": [0, 4.5, 8, 5.5], "rotation": 270, "texture": "#frame"},
+				"east": {"uv": [0, 4, 8, 4.5], "rotation": 270, "texture": "#frame"},
+				"south": {"uv": [0, 3, 8, 4], "rotation": 270, "texture": "#frame"},
+				"west": {"uv": [0, 5.5, 8, 6], "rotation": 270, "texture": "#frame"},
+				"up": {"uv": [8, 3, 8.5, 4], "rotation": 90, "texture": "#frame"},
+				"down": {"uv": [8, 2, 8.5, 3], "rotation": 90, "texture": "#frame"}
+			}
+		},
+		{
+			"from": [0, 14, 7.5],
+			"to": [16, 16, 8.5],
+			"faces": {
+				"north": {"uv": [0, 9, 8, 10], "texture": "#frame"},
+				"south": {"uv": [0, 10.5, 8, 11.5], "rotation": 180, "texture": "#frame"},
+				"up": {"uv": [0, 11.5, 8, 12], "rotation": 180, "texture": "#frame"},
+				"down": {"uv": [0, 10, 8, 10.5], "rotation": 180, "texture": "#frame"}
+			}
+		},
+		{
+			"from": [0, 0, 7.5],
+			"to": [16, 2, 8.5],
+			"faces": {
+				"north": {"uv": [0, 6, 8, 7], "texture": "#frame"},
+				"south": {"uv": [0, 7.5, 8, 8.5], "rotation": 180, "texture": "#frame"},
+				"up": {"uv": [0, 8.5, 8, 9], "rotation": 180, "texture": "#frame"},
+				"down": {"uv": [0, 7, 8, 7.5], "rotation": 180, "texture": "#frame"}
+			}
+		},
+		{
+			"from": [16, 0, 7.5],
+			"to": [18, 16, 8.5],
+			"faces": {
+				"north": {"uv": [0, 1.5, 8, 2.5], "rotation": 270, "texture": "#frame"},
+				"east": {"uv": [0, 1, 8, 1.5], "rotation": 270, "texture": "#frame"},
+				"south": {"uv": [0, 0, 8, 1], "rotation": 270, "texture": "#frame"},
+				"west": {"uv": [0, 2.5, 8, 3], "rotation": 270, "texture": "#frame"},
+				"up": {"uv": [8, 1, 8.5, 2], "rotation": 90, "texture": "#frame"},
+				"down": {"uv": [8, 0, 8.5, 1], "rotation": 90, "texture": "#frame"}
+			}
+		},
+		{
+			"from": [0, 2, 8],
+			"to": [16, 14, 8.5],
+			"faces": {
+				"north": {"uv": [0, 0, 16, 16], "texture": "#image"},
+				"south": {"uv": [0, 0, 16, 16], "texture": "#image_back"}
+			}
+		}
+	],
+	"display": {
+		"gui": {
+			"rotation": [25, -135, 0]
+		},
+		"fixed": {
+			"translation": [0, 0, -1],
+			"scale": [2, 2, 2]
+		}
+	}
+}

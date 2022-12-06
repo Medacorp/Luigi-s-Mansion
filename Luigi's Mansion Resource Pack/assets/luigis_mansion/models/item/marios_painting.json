@@ -2,8 +2,8 @@
 	"credit": "Made with Blockbench",
 	"ambientocclusion": false,
 	"textures": {
-		"front_1": "luigis_mansion:painting/mario_top",
-		"front_2": "luigis_mansion:painting/mario_bottom"
+		"front_1": "luigis_mansion:block/painting/mario_top",
+		"front_2": "luigis_mansion:block/painting/mario_bottom"
 	},
 	"elements": [
 		{

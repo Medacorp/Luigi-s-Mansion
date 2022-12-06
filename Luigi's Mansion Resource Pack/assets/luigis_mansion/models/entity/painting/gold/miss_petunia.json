@@ -1,0 +1,6 @@
+{
+	"parent": "luigis_mansion:entity/painting/gold",
+	"textures": {
+		"image": "luigis_mansion:block/painting/gold/miss_petunia"
+	}
+}

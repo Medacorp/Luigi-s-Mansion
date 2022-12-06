@@ -1,6 +1,6 @@
 {
 	"parent": "luigis_mansion:entity/door_frame/arched",
 	"textures": {
-		"door": "luigis_mansion:entity/door_frame/stone_arch"
+		"door": "luigis_mansion:block/door_frame/stone_arch"
 	}
 }

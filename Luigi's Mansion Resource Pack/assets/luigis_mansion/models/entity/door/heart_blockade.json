@@ -1,6 +1,6 @@
 {
 	"parent": "luigis_mansion:entity/door/heart",
 	"textures": {
-		"overlay": "luigis_mansion:entity/door/blockade"
+		"overlay": "luigis_mansion:block/door/blockade"
 	}
 }

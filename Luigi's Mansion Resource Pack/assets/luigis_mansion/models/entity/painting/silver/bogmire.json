@@ -1,0 +1,6 @@
+{
+	"parent": "luigis_mansion:entity/painting/silver_boss",
+	"textures": {
+		"image": "luigis_mansion:block/painting/silver/bogmire"
+	}
+}

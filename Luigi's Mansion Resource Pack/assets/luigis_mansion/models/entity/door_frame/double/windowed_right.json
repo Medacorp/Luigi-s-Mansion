@@ -2,7 +2,7 @@
 	"credit": "Made with Blockbench",
 	"parent": "luigis_mansion:entity/door_frame",
 	"textures": {
-		"door": "luigis_mansion:entity/door_frame/windowed"
+		"door": "luigis_mansion:block/door_frame/windowed"
 	},
 	"elements": [
 		{

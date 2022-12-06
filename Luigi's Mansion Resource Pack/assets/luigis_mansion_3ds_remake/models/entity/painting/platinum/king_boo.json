@@ -1,0 +1,6 @@
+{
+	"parent": "luigis_mansion_3ds_remake:entity/painting/platinum_king_boo",
+	"textures": {
+		"image": "luigis_mansion_3ds_remake:block/painting/platinum/king_boo"
+	}
+}

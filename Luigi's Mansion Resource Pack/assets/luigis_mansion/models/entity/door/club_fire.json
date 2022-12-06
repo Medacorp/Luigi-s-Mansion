@@ -1,6 +1,6 @@
 {
 	"parent": "luigis_mansion:entity/door/club",
 	"textures": {
-		"overlay": "luigis_mansion:entity/door/fire"
+		"overlay": "luigis_mansion:block/door/fire"
 	}
 }
