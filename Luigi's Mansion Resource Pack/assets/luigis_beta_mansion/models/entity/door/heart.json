@@ -1,6 +1,6 @@
 {
 	"parent": "luigis_mansion:entity/door",
 	"textures": {
-		"door": "luigis_beta_mansion:entity/door/heart"
+		"door": "luigis_beta_mansion:block/door/heart"
 	}
 }

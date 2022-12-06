@@ -1,6 +1,6 @@
 {
 	"parent": "luigis_mansion:entity/door",
 	"textures": {
-		"door": "luigis_mansion_3ds_remake:entity/door/new_gallery"
+		"door": "luigis_mansion_3ds_remake:block/door/new_gallery"
 	}
 }

@@ -3434,7 +3434,7 @@
                 "damage": 0.0032,
                 "custom_model_data": 31
             },
-            "model": "luigis_mansion_3ds_remake:entity/gameboy_horror_part"
+            "model": "luigis_mansion_3ds_remake:entity/game_boy_horror_part"
         },
         {
             "predicate": {

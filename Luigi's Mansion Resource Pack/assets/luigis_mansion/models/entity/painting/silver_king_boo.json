@@ -1,0 +1,6 @@
+{
+	"parent": "luigis_mansion:entity/painting/king_boo_frame",
+	"textures": {
+		"frame": "luigis_mansion:block/painting/silver_king_boo_frame"
+	}
+}

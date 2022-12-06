@@ -1,0 +1,6 @@
+{
+	"parent": "luigis_mansion:entity/painting/boss_frame",
+	"textures": {
+		"frame": "luigis_mansion:block/painting/gold_boss_frame"
+	}
+}

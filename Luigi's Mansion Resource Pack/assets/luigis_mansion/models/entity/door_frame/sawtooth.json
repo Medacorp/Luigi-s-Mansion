@@ -1,6 +1,6 @@
 {
 	"parent": "luigis_mansion:entity/door_frame/none",
 	"textures": {
-		"door": "luigis_mansion:entity/door_frame/sawtooth"
+		"door": "luigis_mansion:block/door_frame/sawtooth"
 	}
 }

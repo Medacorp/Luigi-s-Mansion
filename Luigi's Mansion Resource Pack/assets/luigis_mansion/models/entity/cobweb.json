@@ -1,6 +1,6 @@
 {
 	"textures": {
-		"0": "luigis_mansion:entity/cobweb",
+		"0": "luigis_mansion:block/cobweb",
 		"particle": "#0"
 	},
 	"display": {

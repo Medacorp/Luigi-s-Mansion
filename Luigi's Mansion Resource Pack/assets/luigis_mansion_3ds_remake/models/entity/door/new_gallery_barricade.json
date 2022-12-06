@@ -1,6 +1,6 @@
 {
 	"parent": "luigis_mansion_3ds_remake:entity/door/new_gallery",
 	"textures": {
-		"barricade_double": "luigis_mansion:entity/door/barricade"
+		"barricade_double": "luigis_mansion:block/door/barricade"
 	}
 }

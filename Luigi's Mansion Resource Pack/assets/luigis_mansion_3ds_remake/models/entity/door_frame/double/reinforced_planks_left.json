@@ -2,7 +2,7 @@
 	"credit": "Made with Blockbench",
 	"parent": "luigis_mansion:entity/door_frame",
 	"textures": {
-		"door": "luigis_mansion_3ds_remake:entity/door_frame/reinforced_planks"
+		"door": "luigis_mansion_3ds_remake:block/door_frame/reinforced_planks"
 	},
 	"elements": [
 		{

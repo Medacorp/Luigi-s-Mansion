@@ -1,0 +1,77 @@
+{
+	"credit": "Made with Blockbench",
+	"textures": {
+		"frame": "luigis_mansion_3ds_remake:block/painting/empty_king_boo_frame",
+		"image": "luigis_mansion_3ds_remake:block/painting/empty",
+		"image_back": "luigis_mansion_3ds_remake:block/painting/empty",
+		"particle": "#image"
+	},
+	"elements": [
+		{
+			"from": [0, 0, 7.5],
+			"to": [16, 2, 8.5],
+			"faces": {
+				"north": {"uv": [0, 4.5, 8, 5.5], "texture": "#frame"},
+				"east": {"uv": [8, 2, 8.5, 3], "texture": "#frame"},
+				"south": {"uv": [0, 3, 8, 4], "rotation": 180, "texture": "#frame"},
+				"west": {"uv": [8, 3, 8.5, 4], "texture": "#frame"},
+				"up": {"uv": [0, 4, 8, 4.5], "rotation": 180, "texture": "#frame"},
+				"down": {"uv": [0, 5.5, 8, 6], "rotation": 180, "texture": "#frame"}
+			}
+		},
+		{
+			"from": [0, 2, 7.5],
+			"to": [2, 14, 8.5],
+			"faces": {
+				"north": {"uv": [0, 9, 6, 10], "rotation": 90, "texture": "#frame"},
+				"east": {"uv": [0, 10, 6, 10.5], "rotation": 90, "texture": "#frame"},
+				"south": {"uv": [0, 10.5, 6, 11.5], "rotation": 90, "texture": "#frame"},
+				"west": {"uv": [0, 11.5, 6, 12], "rotation": 90, "texture": "#frame"}
+			}
+		},
+		{
+			"from": [14, 2, 7.5],
+			"to": [16, 14, 8.5],
+			"faces": {
+				"north": {"uv": [0, 6, 6, 7], "rotation": 90, "texture": "#frame"},
+				"east": {"uv": [0, 7, 6, 7.5], "rotation": 90, "texture": "#frame"},
+				"south": {"uv": [0, 7.5, 6, 8.5], "rotation": 90, "texture": "#frame"},
+				"west": {"uv": [0, 8.5, 6, 9], "rotation": 90, "texture": "#frame"}
+			}
+		},
+		{
+			"from": [0, 14, 7.5],
+			"to": [16, 16, 8.5],
+			"faces": {
+				"north": {"uv": [0, 1.5, 8, 2.5], "texture": "#frame"},
+				"east": {"uv": [8, 0, 8.5, 1], "texture": "#frame"},
+				"south": {"uv": [0, 0, 8, 1], "rotation": 180, "texture": "#frame"},
+				"west": {"uv": [8, 1, 8.5, 2], "texture": "#frame"},
+				"up": {"uv": [0, 1, 8, 1.5], "rotation": 180, "texture": "#frame"},
+				"down": {"uv": [0, 2.5, 8, 3], "rotation": 180, "texture": "#frame"}
+			}
+		},
+		{
+			"from": [2, 2, 8],
+			"to": [14, 14, 8.5],
+			"faces": {
+				"north": {"uv": [0, 0, 16, 16], "texture": "#image"},
+				"south": {"uv": [0, 0, 16, 16], "texture": "#image_back"}
+			}
+		}
+	],
+	"display": {
+		"gui": {
+			"rotation": [25, -135, 0]
+		},
+		"head": {
+			"rotation": [90, 0, 0],
+			"translation": [0, -5.5, 0],
+			"scale": [1.6, 1.6, 1.6]
+		},
+		"fixed": {
+			"translation": [-16, 16, -2],
+			"scale": [4, 4, 4]
+		}
+	}
+}

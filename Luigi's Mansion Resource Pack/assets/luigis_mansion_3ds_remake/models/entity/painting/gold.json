@@ -1,0 +1,6 @@
+{
+	"parent": "luigis_mansion_3ds_remake:entity/painting/frame",
+	"textures": {
+		"frame": "luigis_mansion_3ds_remake:block/painting/gold_frame"
+	}
+}

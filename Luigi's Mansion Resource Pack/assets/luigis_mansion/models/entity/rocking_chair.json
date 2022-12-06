@@ -2,8 +2,8 @@
 	"credit": "Made with Blockbench",
 	"texture_size": [64, 64],
 	"textures": {
-		"0": "luigis_mansion:entity/rocking_chair",
-		"particle": "luigis_mansion:entity/rocking_chair"
+		"0": "luigis_mansion:block/rocking_chair",
+		"particle": "luigis_mansion:block/rocking_chair"
 	},
 	"elements": [
 		{

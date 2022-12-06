@@ -1,6 +1,6 @@
 {
 	"parent": "luigis_mansion:entity/door/training",
 	"textures": {
-		"barricade_single": "luigis_mansion:entity/door/barricade"
+		"barricade_single": "luigis_mansion:block/door/barricade"
 	}
 }

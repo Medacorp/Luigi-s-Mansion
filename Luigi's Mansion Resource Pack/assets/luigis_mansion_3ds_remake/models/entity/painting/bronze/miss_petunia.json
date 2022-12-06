@@ -1,0 +1,6 @@
+{
+	"parent": "luigis_mansion_3ds_remake:entity/painting/bronze",
+	"textures": {
+		"image": "luigis_mansion_3ds_remake:block/painting/bronze/miss_petunia"
+	}
+}

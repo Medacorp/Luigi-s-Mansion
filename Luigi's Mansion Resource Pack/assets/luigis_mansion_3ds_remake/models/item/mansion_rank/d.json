@@ -1,6 +1,0 @@
-{
-	"parent": "luigis_mansion_3ds_remake:item/mansion_rank_painting",
-	"textures": {
-		"image": "luigis_mansion_3ds_remake:painting/mansion_rank/d"
-	}
-}

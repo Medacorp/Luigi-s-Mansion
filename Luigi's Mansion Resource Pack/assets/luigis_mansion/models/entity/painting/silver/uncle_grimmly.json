@@ -1,0 +1,6 @@
+{
+	"parent": "luigis_mansion:entity/painting/silver",
+	"textures": {
+		"image": "luigis_mansion:block/painting/silver/uncle_grimmly"
+	}
+}
