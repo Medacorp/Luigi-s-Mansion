@@ -18,7 +18,8 @@ data modify storage luigis_mansion:data RightHandItem set from entity @s HandIte
 data modify storage luigis_mansion:data LeftHandItem set from entity @s HandItems[1]
 function #luigis_mansion:entities/reflection/swap_model
 
-execute unless data storage luigis_mansion:data mirror.data{Tags:["immobile"]} run function luigis_mansion:entities/reflection/mobile_entity
+execute if entity @s[tag=!immobile] run function luigis_mansion:entities/reflection/mobile_entity
+execute if data storage luigis_mansion:data mirror.data{Tags:["immobile"]} run tag @s add immobile
 
 execute if data storage luigis_mansion:data mirror.data{Tags:["static"]} run tag @s add static
 
