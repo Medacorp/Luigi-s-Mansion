@@ -8,9 +8,3 @@ Additional new hidden mansion (later referred to as 3DS Hidden), taking the plac
 == Known issues ==
 
 None known
-
-== Supported languages ==
-English (US)
-Nederlands (Nederland)
-
-To get more supported, go to https://crowdin.com/project/medacorp-projects and help translate the map to more languages.

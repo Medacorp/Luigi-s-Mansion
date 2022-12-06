@@ -10,9 +10,5 @@ The hallways, bath room and back yard cannot be cleared.
 == Known issues ==
 
 * Beta mansion theme doesn't transition between different health values smoothly.
-
-== Supported languages ==
-English (US)
-Nederlands (Nederland)
-
-To get more supported, go to https://crowdin.com/project/medacorp-projects and help translate the map to more languages.
+* Body slammers are missing several sounds.
+* Poltergust 500 misses a few sounds.

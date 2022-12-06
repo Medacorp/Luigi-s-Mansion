@@ -19,9 +19,3 @@ When all tasks are cleared (3DS Remake add-on), you unlock the Koopa amiibo, whi
 == Known issues ==
 
 None known
-
-== Supported languages ==
-English (US)
-Nederlands (Nederland)
-
-To get more supported, go to https://crowdin.com/project/medacorp-projects and help translate the map to more languages.
