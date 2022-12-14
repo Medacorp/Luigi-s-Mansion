@@ -1,6 +1,13 @@
 v2.3.1:
-* Fixed a 1.19.3 bug fix broke initial data setting. Old maps could be updated fine, but new ones broke immediately. This is now resolved.
+* Removed github data from download, drastically reducing size.
+* Fixed a 1.19.3 bug fix broke initial data setting. Old maps could be updated fine, but new ones broke immediately.
+* Fixed doors don't register as unlocked
+* Fixed non-ghost entities don't react to poltergust
+* Fixed entity files for dimensions exist
+* Fixed mansion region files were replaced with furniture-models branch variant
 
+3DS Remake:
+* Fixed game boy horror part not ticked
 
 
 v2.3:

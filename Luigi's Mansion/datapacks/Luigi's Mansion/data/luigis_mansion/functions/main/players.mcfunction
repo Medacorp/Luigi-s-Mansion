@@ -10,8 +10,7 @@ tag @s[tag=!loaded_chunk_triggered] remove loaded_chunks
 tag @s remove loaded_chunk_triggered
 
 scoreboard players operation #temp Room = @s Room
-execute as @a run function #luigis_mansion:get_same_room
-execute as @e[tag=ghost] run function #luigis_mansion:get_same_room
+execute as @e run function #luigis_mansion:get_same_room
 scoreboard players reset #temp Room
 
 function luigis_mansion:dialog/try
