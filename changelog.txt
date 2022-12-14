@@ -1,3 +1,44 @@
+v2.3.1:
+* Removed github data from download, drastically reducing size.
+* Fixed a 1.19.3 bug fix broke initial data setting. Old maps could be updated fine, but new ones broke immediately.
+* Fixed doors don't register as unlocked
+* Fixed non-ghost entities don't react to poltergust
+* Fixed entity files for dimensions exist
+* Fixed mansion region files were replaced with furniture-models branch variant
+
+3DS Remake:
+* Fixed game boy horror part not ticked
+
+
+v2.3:
+* Updated to 1.19.3
+* Changed flashlight's visual range (behavior range is identical to before)
+* Changed how poltergust internally works, optimizing it
+* Fixed being grabbed at same time as reeling in ghost results in half-grabbed behavior
+* Fixed bills didn't drop correctly from speedy spirits and gold mice, leading to missing money
+* Fixed some typos in the text of the map
+* Fixed Game Boy Horror was called Gameboy Horror
+* Fixed Henry and Orville's scans were swapped
+* Fixed item obtain subtitles to be in the same format as others
+* Fixed some poltergust body and held item rendering issues
+* Fixed Boo Woods music can cut off opening music
+* Fixed ceiling surprise doesn't get speed values from storage correctly
+* Fixed exploding poltergust from catching a spark deals no knockback
+* Fixed uninstalling the 3DS Remake add-on with strobulb selected breaks the flashlight
+* Removed flashlight overlay
+
+3DS Remake:
+* Changed time display from H:M:S to HH:MM:SS
+* Fixed 3DS gallery doors didn't animate when opened from the other side
+* Fixed Strobulb flashlight is non-functional
+* Fixed Vincent Van Gore didn't have his 3DS Remake title
+* Fixed interaction non-functional in 3DS gallery
+
+Extensive Training:
+* Changed time display from H:M:S to HH:MM:SS
+
+
+
 v2.2.2:
 * Fixed Biff Atlas breaks when leaving and re-entering the room
 * Fixed Luigi/Gooigi model leaks a temporary value, breaking the non-interact search of the twins room boxes

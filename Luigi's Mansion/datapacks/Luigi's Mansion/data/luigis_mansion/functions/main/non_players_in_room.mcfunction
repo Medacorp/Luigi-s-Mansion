@@ -20,4 +20,4 @@ scoreboard players reset @s LightZ
 scoreboard players reset @s MirrorX
 scoreboard players reset @s MirrorZ
 
-tag @a[tag=same_room] remove same_room
+tag @e[tag=same_room] remove same_room
