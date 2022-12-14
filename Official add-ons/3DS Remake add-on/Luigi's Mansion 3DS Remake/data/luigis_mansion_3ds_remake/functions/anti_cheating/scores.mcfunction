@@ -20,5 +20,5 @@ execute if data storage luigis_mansion_3ds_remake:data current_state.trophy.easy
 execute if data storage luigis_mansion_3ds_remake:data current_state.trophy.normal{done:0b} run scoreboard players set #boo_amiibo Selected 0
 execute if data storage luigis_mansion_3ds_remake:data current_state.trophy.hard{done:0b} run scoreboard players set #luigi_amiibo Selected 0
 
-execute unless data storage luigis_mansion_3ds_remake:data current_state if entity @a[limit=1] run function luigis_mansion_3ds_remake:other/upgrade_path/newly_installed
-execute unless data storage luigis_mansion:data current_state.current_data.tracking_boos run data modify storage luigis_mansion:data current_state.current_data.tracking_boos set value []
+execute if data storage luigis_mansion:data current_state unless data storage luigis_mansion_3ds_remake:data current_state if entity @a[limit=1] run function luigis_mansion_3ds_remake:other/upgrade_path/newly_installed
+execute if data storage luigis_mansion:data current_state unless data storage luigis_mansion:data current_state.current_data.tracking_boos run data modify storage luigis_mansion:data current_state.current_data.tracking_boos set value []
