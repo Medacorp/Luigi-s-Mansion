@@ -1,0 +1,3 @@
+teleport @s ^ ^0.1 ^
+scoreboard players add @s FurnitureSizeU 1
+execute at @s unless score @s Steps = @s FurnitureSizeU run function luigis_mansion:entities/furniture/type/tick/swinging/hit_pos/set_to_highest_y

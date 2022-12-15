@@ -7,9 +7,9 @@ execute positioned ~-0.5 ~-1.1875 ~-0.5 if entity @e[type=minecraft:armor_stand,
 execute positioned ~-0.5 ~-1.1875 ~-0.5 run tag @e[type=minecraft:armor_stand,tag=billiards_ball,dx=0,dy=3,dz=0] add collision
 execute unless entity @s[scores={Dialog=1..}] run scoreboard players add @s Dialog 1
 execute if entity @s[tag=!visible] run function luigis_mansion:entities/slim_bankshot/turn_visible
-execute if entity @s[scores={Dialog=1}] at @e[tag=same_room,tag=!spectator] positioned ^ ^ ^8 if entity @s[distance=..8] run function luigis_mansion:entities/slim_bankshot/turn_invisible
-execute if entity @s[scores={Dialog=21}] at @e[tag=same_room,tag=!spectator] positioned ^ ^ ^8 if entity @s[distance=..8] run function luigis_mansion:entities/slim_bankshot/turn_invisible
-execute if entity @s[scores={Dialog=41}] at @e[tag=same_room,tag=!spectator] positioned ^ ^ ^8 if entity @s[distance=..8] run function luigis_mansion:entities/slim_bankshot/turn_invisible
+execute if entity @s[scores={Dialog=1}] at @e[tag=same_room,tag=!spectator,tag=player] positioned ^ ^ ^8 if entity @s[distance=..8] run function luigis_mansion:entities/slim_bankshot/turn_invisible
+execute if entity @s[scores={Dialog=21}] at @e[tag=same_room,tag=!spectator,tag=player] positioned ^ ^ ^8 if entity @s[distance=..8] run function luigis_mansion:entities/slim_bankshot/turn_invisible
+execute if entity @s[scores={Dialog=41}] at @e[tag=same_room,tag=!spectator,tag=player] positioned ^ ^ ^8 if entity @s[distance=..8] run function luigis_mansion:entities/slim_bankshot/turn_invisible
 execute if entity @s[scores={Dialog=1}] run function luigis_mansion_3ds_remake:entities/slim_bankshot/tick/hidden/path
 execute if entity @s[scores={Dialog=2}] run playsound luigis_mansion:entity.slim_bankshot.scream hostile @a[tag=same_room] ~ ~ ~ 1
 scoreboard players set @s[scores={Dialog=2}] AnimationProg 0

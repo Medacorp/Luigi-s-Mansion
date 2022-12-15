@@ -1,7 +1,6 @@
 {
 	"values": [
         "luigis_mansion:items/poltergust_3000/effect_on_entity/dust/ball",
-        "luigis_mansion:items/poltergust_3000/effect_on_entity/dust/haunted_object",
-        "luigis_mansion:items/poltergust_3000/effect_on_entity/dust/candle_flame"
+        "luigis_mansion:items/poltergust_3000/effect_on_entity/dust/haunted_object"
 	]
 }

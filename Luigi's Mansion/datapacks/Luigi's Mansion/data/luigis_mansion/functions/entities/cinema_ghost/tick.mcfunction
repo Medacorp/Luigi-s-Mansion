@@ -15,14 +15,14 @@ execute if entity @s[scores={Sound=0},tag=fleeing,tag=!dying] run playsound luig
 execute if entity @s[scores={Sound=0},tag=!vanish,tag=!fleeing,tag=!attack,tag=!laugh,tag=!complain,tag=!appear,tag=!basher] run playsound luigis_mansion:entity.cinema_ghost.ambient hostile @a[tag=same_room] ~ ~ ~ 1
 scoreboard players set @s[scores={Sound=0}] Sound 40
 
-execute if entity @e[tag=same_room,tag=!spectator,distance=..0.7,limit=1] unless entity @s[tag=!element_hurt,tag=!complain,tag=!laugh] if entity @s[tag=!vanish,tag=!appear,tag=!basher,tag=!attack,tag=!dying,tag=!dead,tag=!captured,tag=!removed_from_existence,tag=!hurt,tag=!fleeing,tag=!element_hurt] run function luigis_mansion:entities/cinema_ghost/collide
+execute if entity @e[tag=same_room,tag=!spectator,tag=player,distance=..0.7,limit=1] unless entity @s[tag=!element_hurt,tag=!complain,tag=!laugh] if entity @s[tag=!vanish,tag=!appear,tag=!basher,tag=!attack,tag=!dying,tag=!dead,tag=!captured,tag=!removed_from_existence,tag=!hurt,tag=!fleeing,tag=!element_hurt] run function luigis_mansion:entities/cinema_ghost/collide
 execute if entity @s[tag=!visible,tag=!vanish,tag=!basher] unless entity @s[tag=!element_hurt,tag=!attack,tag=!collided,tag=!laugh,tag=!complain,scores={VulnerableTime=0}] run function luigis_mansion:entities/cinema_ghost/turn_visible
 execute if entity @s[tag=visible,tag=!vanish,tag=!basher] if entity @s[tag=!element_hurt,tag=!attack,tag=!collided,tag=!laugh,tag=!complain,scores={VulnerableTime=0}] run function luigis_mansion:entities/cinema_ghost/turn_invisible
 
 execute if entity @s[tag=!basher] run function luigis_mansion:entities/cinema_ghost/select_attack/grab
 execute if entity @s[tag=basher] run function luigis_mansion:entities/cinema_ghost/select_attack/basher
 
-execute at @s[tag=!hurt,tag=!element_hurt,tag=!fleeing,tag=!attack,tag=!collided,tag=!vanish,scores={StunTime=0}] facing entity @e[tag=same_room,tag=!spectator,sort=nearest,limit=1] feet rotated ~ 0 run teleport @s ~ ~ ~ ~ ~
+execute at @s[tag=!hurt,tag=!element_hurt,tag=!fleeing,tag=!attack,tag=!collided,tag=!vanish,scores={StunTime=0}] facing entity @e[tag=same_room,tag=!spectator,tag=player,sort=nearest,limit=1] feet rotated ~ 0 run teleport @s ~ ~ ~ ~ ~
 execute at @s[tag=!hurt,tag=!element_hurt,tag=!fleeing,tag=!attack,tag=!collided,tag=!vanish,tag=!laugh,tag=!complain,tag=!appear,scores={StunTime=0}] run function luigis_mansion:entities/ghost/move
 execute if entity @s[tag=!hurt,tag=!element_hurt,tag=!fleeing,tag=!attack,tag=!collided,tag=laugh,scores={StunTime=0}] run function luigis_mansion:entities/cinema_ghost/laugh
 execute if entity @s[tag=!hurt,tag=!element_hurt,tag=!fleeing,tag=!attack,tag=!collided,tag=complain,scores={StunTime=0}] run function luigis_mansion:entities/cinema_ghost/complain

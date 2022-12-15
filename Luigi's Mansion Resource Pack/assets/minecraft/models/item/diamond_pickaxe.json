@@ -7959,6 +7959,22 @@
         {
             "predicate": {
                 "damaged": 0,
+                "damage": 0.0118,
+                "custom_model_data": 92
+            },
+            "model": "luigis_mansion:entity/candle_flame_fueled"
+        },
+        {
+            "predicate": {
+                "damaged": 0,
+                "damage": 0.0118,
+                "custom_model_data": 93
+            },
+            "model": "luigis_mansion:entity/candle_flame_purple_fueled"
+        },
+        {
+            "predicate": {
+                "damaged": 0,
                 "damage": 0.0124,
                 "custom_model_data": -1
             },

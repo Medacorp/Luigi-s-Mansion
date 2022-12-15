@@ -48,6 +48,6 @@ execute at @s unless block ~0.3 ~1.6 ~-0.3 #luigis_mansion:item_pull_ignore if b
 execute at @s unless block ~-0.3 ~1.6 ~0.3 #luigis_mansion:item_pull_ignore if block ~0.3 ~1.6 ~-0.3 #luigis_mansion:item_pull_ignore run teleport @s ~0.3 ~ ~-0.3
 execute at @s unless block ~-0.3 ~1.6 ~-0.3 #luigis_mansion:item_pull_ignore if block ~0.3 ~1.6 ~0.3 #luigis_mansion:item_pull_ignore run teleport @s ~0.3 ~ ~0.3
 
-execute at @s positioned ~ ~1.6 ~ if entity @e[tag=same_room,tag=!spectator,distance=..0.7,limit=1] run tag @s add picked_up
+execute at @s positioned ~ ~1.6 ~ if entity @e[tag=same_room,tag=!spectator,tag=player,distance=..0.7,limit=1] run tag @s add picked_up
 execute at @s positioned ~ ~1.6 ~ run tag @a[tag=same_room,tag=!spectator,distance=..0.7,limit=1] add collector
-execute at @s positioned ~ ~1.6 ~ unless entity @a[tag=collector,limit=1] as @e[tag=same_room,tag=game_boy_horror_location,tag=!spectator,distance=..0.7,limit=1] run function luigis_mansion:entities/game_boy_horror_location/tag_for_collecting
+execute at @s positioned ~ ~1.6 ~ unless entity @a[tag=collector,limit=1] as @e[tag=same_room,tag=game_boy_horror_location,tag=!spectator,tag=player,distance=..0.7,limit=1] run function luigis_mansion:entities/game_boy_horror_location/tag_for_collecting

@@ -1,6 +1,6 @@
 execute if entity @s[tag=dead] run teleport @s ~ -100 ~
 
-execute if entity @e[tag=same_room,tag=!spectator,distance=..0.7,limit=1] if entity @s[tag=!in_vacuum,tag=!can_spit_2,tag=!spit] if entity @s[tag=!dead,tag=!removed_from_existence] run function luigis_mansion:entities/shining_ghost/collide
+execute if entity @e[tag=same_room,tag=!spectator,tag=player,distance=..0.7,limit=1] if entity @s[tag=!in_vacuum,tag=!can_spit_2,tag=!spit] if entity @s[tag=!dead,tag=!removed_from_existence] run function luigis_mansion:entities/shining_ghost/collide
 
 execute if entity @s[tag=spit] run scoreboard players set #temp Move 10
 execute if entity @s[tag=!spit] run scoreboard players set #temp Move 5
@@ -12,11 +12,11 @@ execute if entity @s[tag=collision,tag=spit] run function luigis_mansion:other/d
 tag @s[tag=collision,tag=spit] add dead
 tag @s[tag=collision] remove spit
 tag @s[tag=collision] remove collision
-execute at @s[tag=in_vacuum] unless entity @a[distance=..1.5,tag=!spectator,tag=vacuuming] facing entity @p[tag=!spectator,tag=vacuuming] feet run teleport @s ^ ^ ^0.3 ~ ~
-execute at @s[tag=in_vacuum] at @p[distance=..1.5,tag=!spectator,tag=vacuuming] positioned ~ ~0.5 ~ run teleport @s ^ ^ ^0.3 ~ ~
-execute at @s[tag=in_vacuum] run scoreboard players operation @s KillerID = @p[distance=..1.5,tag=!spectator,tag=vacuuming] ID
-execute at @s if entity @p[distance=..1.5,tag=!spectator,tag=vacuuming] run tag @s[tag=in_vacuum] add can_spit
-execute at @s if entity @p[distance=..1.5,tag=!spectator,tag=vacuuming] run tag @s[tag=in_vacuum] add can_spit_2
+execute at @s[tag=in_vacuum] unless entity @a[distance=..1.5,tag=!spectator,tag=vacuuming] facing entity @p[tag=!spectator,tag=player,tag=vacuuming] feet run teleport @s ^ ^ ^0.3 ~ ~
+execute at @s[tag=in_vacuum] at @p[distance=..1.5,tag=!spectator,tag=player,tag=vacuuming] positioned ~ ~0.5 ~ run teleport @s ^ ^ ^0.3 ~ ~
+execute at @s[tag=in_vacuum] run scoreboard players operation @s KillerID = @p[distance=..1.5,tag=!spectator,tag=player,tag=vacuuming] ID
+execute at @s if entity @p[distance=..1.5,tag=!spectator,tag=player,tag=vacuuming] run tag @s[tag=in_vacuum] add can_spit
+execute at @s if entity @p[distance=..1.5,tag=!spectator,tag=player,tag=vacuuming] run tag @s[tag=in_vacuum] add can_spit_2
 tag @s[tag=!can_spit] remove can_spit_2
 tag @s[tag=!in_vacuum,tag=can_spit_2] add spit
 tag @s[tag=!in_vacuum] remove can_spit

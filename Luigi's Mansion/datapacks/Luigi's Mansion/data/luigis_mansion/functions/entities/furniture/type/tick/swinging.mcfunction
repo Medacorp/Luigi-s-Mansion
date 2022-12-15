@@ -1,5 +1,5 @@
 tag @s add no_visible_shake
-tag @s remove long_shake
+tag @s[tag=!searchable_by_hand] remove long_shake
 execute if entity @s[tag=shake] run function luigis_mansion:entities/furniture/shake
 execute unless data entity @s Pose.Head[1] run data merge entity @s {Pose:{Head:[0.0f,0.001f,0.0f]}}
 
@@ -34,7 +34,7 @@ scoreboard players operation #temp FurnitureVacuum = @s FurnitureVacuum
 scoreboard players operation #temp FurnitureVacuum /= #2 Constants
 execute if score @s[tag=!searched] FurnitureVacuum >= @s FurnitureSearch run function luigis_mansion:entities/furniture/search/swing
 execute if score @s[tag=swinging_harms] FurnitureVacuum >= @s FurnitureSearch run function luigis_mansion:entities/furniture/type/tick/swinging/hit
-execute if score @s[tag=searched] FurnitureVacuum < #temp FurnitureSearch run tag @s remove searched
+execute if score @s[tag=searched] FurnitureVacuum < @s FurnitureSearch run tag @s remove searched
 execute if entity @s[tag=searchable_by_hand,tag=search] run function luigis_mansion:entities/furniture/search/generic
 tag @s remove search
 scoreboard players reset #temp FurnitureVacuum

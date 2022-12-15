@@ -16,7 +16,7 @@ execute at @s[tag=activated,tag=was_activated,tag=!attack,tag=!vanish,scores={Vu
 execute at @s[tag=!activated,tag=!vanish] run function luigis_mansion:animations/clockwork_soldier/wait
 execute at @s[tag=!vanish,scores={VulnerableTime=1..}] run function luigis_mansion:entities/clockwork_soldier/complain
 
-execute if entity @s[tag=was_activated,tag=!vanish,tag=!complain,tag=!attack,tag=!windless,scores={WaitTime=0}] positioned ^ ^ ^0.7 if entity @e[tag=same_room,tag=!spectator,distance=..1,limit=1] run tag @s add attack
+execute if entity @s[tag=was_activated,tag=!vanish,tag=!complain,tag=!attack,tag=!windless,scores={WaitTime=0}] positioned ^ ^ ^0.7 if entity @e[tag=same_room,tag=!spectator,tag=player,distance=..1,limit=1] run tag @s add attack
 execute if entity @s[tag=was_activated,tag=!vanish,tag=attack,tag=!windless,scores={StunTime=0}] run function luigis_mansion:entities/clockwork_soldier/attack
 
 scoreboard players set @s[tag=attack] Distance 0

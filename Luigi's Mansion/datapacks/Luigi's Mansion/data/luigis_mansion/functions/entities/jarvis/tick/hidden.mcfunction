@@ -5,9 +5,9 @@ teleport @s[tag=!visible,tag=!pop_out,tag=!pop_in] ~ 27.5 ~
 scoreboard players add @s[scores={Dialog=620..},tag=!vanish] Dialog 1
 execute if entity @a[scores={JarvisChoice=1..},limit=1] run scoreboard players add @s[scores={Dialog=555..619}] Dialog 1
 scoreboard players add @s[scores={Dialog=1..554}] Dialog 1
-execute if entity @e[tag=same_room,tag=!spectator,distance=..4,limit=1] if entity @s[tag=!tried_to_appear] unless entity @s[scores={Dialog=1..}] if predicate luigis_mansion:jarvis_appear_chance run scoreboard players add @s Dialog 1
-execute if entity @e[tag=same_room,tag=!spectator,distance=..4,limit=1] if entity @s[tag=!tried_to_appear] unless entity @s[scores={Dialog=1..}] run tag @s add tried_to_appear
-execute unless entity @e[tag=same_room,tag=!spectator,distance=..4,limit=1] if entity @s[tag=tried_to_appear] unless entity @s[scores={Dialog=1..}] run tag @s remove tried_to_appear
+execute if entity @e[tag=same_room,tag=!spectator,tag=player,distance=..4,limit=1] if entity @s[tag=!tried_to_appear] unless entity @s[scores={Dialog=1..}] if predicate luigis_mansion:jarvis_appear_chance run scoreboard players add @s Dialog 1
+execute if entity @e[tag=same_room,tag=!spectator,tag=player,distance=..4,limit=1] if entity @s[tag=!tried_to_appear] unless entity @s[scores={Dialog=1..}] run tag @s add tried_to_appear
+execute unless entity @e[tag=same_room,tag=!spectator,tag=player,distance=..4,limit=1] if entity @s[tag=tried_to_appear] unless entity @s[scores={Dialog=1..}] run tag @s remove tried_to_appear
 
 tag @s[scores={Dialog=1}] add pop_out
 execute if entity @s[scores={Dialog=1..619}] as @a[tag=same_room,gamemode=!spectator,scores={IdleTime=0..},tag=!looking_at_map] run function luigis_mansion:entities/player/animation/set/stand_still

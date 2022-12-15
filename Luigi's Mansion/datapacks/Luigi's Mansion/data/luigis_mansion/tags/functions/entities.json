@@ -39,7 +39,6 @@
         "luigis_mansion:entities/vacuumable_object",
         "luigis_mansion:entities/cobweb",
         "luigis_mansion:entities/revive_detection",
-        "luigis_mansion:entities/furniture",
-        "luigis_mansion:entities/candle_flame"
+        "luigis_mansion:entities/furniture"
 	]
 }

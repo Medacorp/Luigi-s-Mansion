@@ -8,7 +8,7 @@ execute if entity @s[scores={ActionTime=30}] run playsound luigis_mansion:entity
 execute at @s[scores={ActionTime=30..49}] run teleport @s ~ ~1 ~
 execute at @s[scores={ActionTime=30..49}] as @e[tag=this_model,tag=right_leg,limit=1] at @s run teleport @s ~ ~1 ~
 execute at @s[scores={ActionTime=30..49}] as @e[tag=this_model,tag=left_leg,limit=1] at @s run teleport @s ~ ~1 ~
-execute if entity @s[scores={ActionTime=50}] at @e[tag=same_room,tag=!spectator,sort=random,limit=1] run teleport @s ~ 70 ~ ~ 0
+execute if entity @s[scores={ActionTime=50}] at @e[tag=same_room,tag=!spectator,tag=player,sort=random,limit=1] run teleport @s ~ 70 ~ ~ 0
 scoreboard players set @s[scores={ActionTime=41..50}] AnimationProg 0
 execute at @s[scores={ActionTime=51..80}] as @e[tag=this_model,tag=right_leg,limit=1] at @s run teleport @s ~ ~-1 ~
 execute at @s[scores={ActionTime=51..80}] as @e[tag=this_model,tag=left_leg,limit=1] at @s run teleport @s ~ ~-1 ~

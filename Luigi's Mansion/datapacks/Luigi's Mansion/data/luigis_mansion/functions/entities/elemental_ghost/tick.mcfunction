@@ -1,6 +1,6 @@
-execute if entity @s[tag=dead,tag=fire] as @p[tag=!spectator,tag=vacuuming] run function luigis_mansion:items/poltergust_3000/fire_element
-execute if entity @s[tag=dead,tag=water] as @p[tag=!spectator,tag=vacuuming] run function luigis_mansion:items/poltergust_3000/water_element
-execute if entity @s[tag=dead,tag=ice] as @p[tag=!spectator,tag=vacuuming] run function luigis_mansion:items/poltergust_3000/ice_element
+execute if entity @s[tag=dead,tag=fire] as @p[tag=!spectator,tag=player,tag=vacuuming] run function luigis_mansion:items/poltergust_3000/fire_element
+execute if entity @s[tag=dead,tag=water] as @p[tag=!spectator,tag=player,tag=vacuuming] run function luigis_mansion:items/poltergust_3000/water_element
+execute if entity @s[tag=dead,tag=ice] as @p[tag=!spectator,tag=player,tag=vacuuming] run function luigis_mansion:items/poltergust_3000/ice_element
 execute if entity @s[tag=dead] run function luigis_mansion:other/drop_loot
 scoreboard players add @s SpawnTime 1
 execute if entity @s[scores={SpawnTime=1}] run function luigis_mansion:entities/elemental_ghost/initial_rotation
@@ -32,6 +32,6 @@ execute at @s[scores={SpawnTime=80..}] unless block ~ ~-0.1 ~ #luigis_mansion:it
 tag @s[scores={SpawnTime=280},tag=!normal_death] add dead
 scoreboard players set @s[scores={SpawnTime=60}] SpawnTime 20
 scoreboard players remove @s Turn 1
-execute if entity @s[tag=!dead,tag=!was_hurt,scores={SpawnTime=21..}] positioned ~ ~0.8 ~ if entity @e[tag=same_room,tag=!spectator,distance=..0.7,limit=1] run function luigis_mansion:entities/elemental_ghost/attack
-execute if entity @s[tag=!dead,tag=!was_hurt,scores={SpawnTime=21..}] positioned ~ ~-0.2 ~ if entity @e[tag=same_room,tag=!spectator,distance=..0.7,limit=1] run function luigis_mansion:entities/elemental_ghost/attack
+execute if entity @s[tag=!dead,tag=!was_hurt,scores={SpawnTime=21..}] positioned ~ ~0.8 ~ if entity @e[tag=same_room,tag=!spectator,tag=player,distance=..0.7,limit=1] run function luigis_mansion:entities/elemental_ghost/attack
+execute if entity @s[tag=!dead,tag=!was_hurt,scores={SpawnTime=21..}] positioned ~ ~-0.2 ~ if entity @e[tag=same_room,tag=!spectator,tag=player,distance=..0.7,limit=1] run function luigis_mansion:entities/elemental_ghost/attack
 execute at @s[scores={LightX=-2147483648..}] run function luigis_mansion:other/cast_shadow/1_tall

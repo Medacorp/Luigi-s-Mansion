@@ -25,7 +25,7 @@ scoreboard players set @s[scores={Sound=0},tag=fleeing,tag=!dying] Sound 40
 
 scoreboard players operation #temp RoomSection = @s RoomSection
 
-execute if entity @e[tag=!spectator,distance=..0.7,limit=1] if entity @s[tag=!dying,tag=!dead,tag=!captured,tag=!removed_from_existence,tag=!appear] run function luigis_mansion:entities/boo/collide
+execute if entity @e[tag=!spectator,tag=player,distance=..0.7,limit=1] if entity @s[tag=!dying,tag=!dead,tag=!captured,tag=!removed_from_existence,tag=!appear] run function luigis_mansion:entities/boo/collide
 execute if entity @s[tag=!fleeing,tag=!attack,tag=can_attack,tag=!laugh,tag=!taunt,tag=!dying,tag=!dead,tag=!captured,tag=!removed_from_existence,tag=!appear,tag=!frozen] if predicate luigis_mansion:boo_attack_chance run tag @s add attack
 tag @s[tag=fleeing] remove attack
 execute if entity @s[tag=!fleeing,tag=attack,tag=!laugh,tag=!taunt,tag=!dying,tag=!dead,tag=!captured,tag=!removed_from_existence,tag=!appear] run function luigis_mansion:entities/boo/attack
@@ -34,7 +34,7 @@ tag @s[tag=boo_hurt] remove rotated
 tag @s[tag=attack] remove rotated
 tag @s[tag=laugh] remove rotated
 tag @s[tag=taunt] remove rotated
-execute at @s unless entity @s[tag=!laugh,tag=!taunt] facing entity @e[tag=same_room,tag=!spectator,sort=nearest,limit=1] feet run teleport @s ~ ~ ~ ~ ~
+execute at @s unless entity @s[tag=!laugh,tag=!taunt] facing entity @e[tag=same_room,tag=!spectator,tag=player,sort=nearest,limit=1] feet run teleport @s ~ ~ ~ ~ ~
 execute at @s[tag=!attack,tag=!laugh,tag=!taunt,tag=!boo_hurt,tag=!rotated,tag=!appear,tag=!wall] run function luigis_mansion:entities/boo/rotate
 execute if entity @s[scores={Time=600..},tag=!attack,tag=!appear,tag=no_escape] run function luigis_mansion:entities/boo/turn
 execute if score #temp Move matches 1.. at @s[tag=!fleeing,tag=!attack,tag=!laugh,tag=!taunt,tag=!boo_hurt,tag=!appear,tag=move_up] unless entity @s[tag=up,x_rotation=-90] run function luigis_mansion:entities/boo/move_up

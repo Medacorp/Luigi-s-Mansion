@@ -7,7 +7,7 @@ scoreboard players add @s[scores={Dialog=245..304}] Dialog 1
 scoreboard players add @s[scores={Dialog=244},tag=watered] Dialog 1
 scoreboard players add @s[scores={Dialog=1..243}] Dialog 1
 tag @s[tag=watered] remove watered
-execute if entity @e[tag=same_room,tag=!spectator,limit=1] unless entity @s[scores={Dialog=1..}] run scoreboard players add @s Dialog 1
+execute if entity @e[tag=same_room,tag=!spectator,tag=player,limit=1] unless entity @s[scores={Dialog=1..}] run scoreboard players add @s Dialog 1
 execute if data storage luigis_mansion:data current_state.current_data.technical_data{sue_pea_spoke:1b} run scoreboard players set @s[scores={Dialog=1}] Dialog 243
 execute if entity @s[scores={Dialog=1}] as @a[tag=same_room,tag=!spectator] run function luigis_mansion:other/music/set/room
 execute if entity @s[scores={Dialog=1}] run stopsound @a[tag=same_room,tag=!spectator] music
@@ -19,7 +19,7 @@ execute if entity @s[scores={Dialog=175}] run tellraw @a[tag=same_room] {"transl
 execute if entity @s[scores={Dialog=175}] run data modify storage luigis_mansion:data current_state.current_data.technical_data merge value {sue_pea_spoke:1b}
 execute if entity @s[scores={Dialog=..242},tag=!visible,tag=!vanish] run function luigis_mansion:entities/sue_pea/turn_visible
 execute if entity @s[scores={Dialog=243..366},tag=visible,tag=!vanish] run function luigis_mansion:entities/sue_pea/turn_invisible
-execute if entity @s[scores={Dialog=243..366}] at @e[tag=same_room,tag=!spectator] positioned ^ ^ ^8 if entity @s[distance=..8] run function luigis_mansion:entities/sue_pea/turn_visible
+execute if entity @s[scores={Dialog=243..366}] at @e[tag=same_room,tag=!spectator,tag=player] positioned ^ ^ ^8 if entity @s[distance=..8] run function luigis_mansion:entities/sue_pea/turn_visible
 scoreboard players set @s[scores={Dialog=245}] AnimationProg 0
 execute if entity @s[scores={Dialog=245}] run playsound luigis_mansion:entity.sue_pea.complain hostile @a[tag=same_room] ~ ~ ~ 1000
 teleport @s[scores={Dialog=245..264}] ^ ^-0.05 ^0.05

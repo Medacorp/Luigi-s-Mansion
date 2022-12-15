@@ -25,7 +25,7 @@ data modify entity @e[tag=temp,limit=1] Rotation[0] set from entity @s Rotation[
 execute as @e[tag=temp,limit=1] at @s positioned 0.0 0.0 0.0 run teleport @s ^ ^ ^-1
 execute store result score #siny Time run data get entity @e[tag=temp,limit=1] Pos[0] 10
 
-kill @e[tag=temp]
+kill @e[tag=temp,limit=1]
 
 #-Left = Cos(jaw)PosX + Sin(jaw)Cos(pitch)PosZ - Sin(jaw)*-Sin(pitch)PosY
 scoreboard players operation #temp FurnitureSizeL = #cosy Time

@@ -37,6 +37,9 @@ scoreboard objectives add ForcedDamage dummy
 scoreboard objectives add ForceRadar dummy
 scoreboard objectives add ForceScreen dummy
 scoreboard objectives add FurnitureDust dummy
+scoreboard objectives add FurnitureElemenF dummy
+scoreboard objectives add FurnitureElemenT dummy
+scoreboard objectives add FurnitureElemenU dummy
 scoreboard objectives add FurnitureFire dummy
 scoreboard objectives add FurnitureForward dummy
 scoreboard objectives add FurnitureIce dummy

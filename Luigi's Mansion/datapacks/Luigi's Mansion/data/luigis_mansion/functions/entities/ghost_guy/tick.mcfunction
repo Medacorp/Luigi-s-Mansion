@@ -17,8 +17,8 @@ execute if entity @s[scores={Sound=0},tag=fleeing,tag=!dying] run playsound luig
 scoreboard players set @s[scores={Sound=0},tag=fleeing,tag=!dying] Sound 40
 
 scoreboard players remove @s[scores={WaitTime=1..}] WaitTime 1
-execute if entity @e[tag=same_room,tag=!spectator,distance=..0.7,limit=1] if entity @s[tag=!vanish,tag=!appear,tag=!dying,tag=!dead,tag=!captured,tag=!removed_from_existence,tag=!hurt,tag=!fleeing,tag=!element_hurt] run function luigis_mansion:entities/ghost_guy/collide
-execute if entity @s[tag=!element_hurt,tag=!fleeing,tag=!complain,tag=!attack,tag=!collided,tag=!maskless,tag=stop_dancing,tag=!vanish,tag=!appear,scores={WaitTime=0}] positioned ^ ^ ^0.7 if entity @e[tag=same_room,tag=!spectator,distance=..0.7,limit=1] run tag @s add attack
+execute if entity @e[tag=same_room,tag=!spectator,tag=player,distance=..0.7,limit=1] if entity @s[tag=!vanish,tag=!appear,tag=!dying,tag=!dead,tag=!captured,tag=!removed_from_existence,tag=!hurt,tag=!fleeing,tag=!element_hurt] run function luigis_mansion:entities/ghost_guy/collide
+execute if entity @s[tag=!element_hurt,tag=!fleeing,tag=!complain,tag=!attack,tag=!collided,tag=!maskless,tag=stop_dancing,tag=!vanish,tag=!appear,scores={WaitTime=0}] positioned ^ ^ ^0.7 if entity @e[tag=same_room,tag=!spectator,tag=player,distance=..0.7,limit=1] run tag @s add attack
 execute if entity @s[tag=!element_hurt,tag=!fleeing,tag=!collided,tag=attack,tag=!maskless,scores={StunTime=0}] run function luigis_mansion:entities/ghost_guy/attack
 execute if entity @s[tag=!element_hurt,tag=!fleeing,tag=!collided,tag=dodge,tag=!maskless,scores={StunTime=0}] run function luigis_mansion:entities/ghost_guy/dodge
 

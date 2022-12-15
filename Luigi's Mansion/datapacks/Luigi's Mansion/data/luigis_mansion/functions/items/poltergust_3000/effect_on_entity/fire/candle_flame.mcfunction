@@ -1,1 +1,0 @@
-tag @s[tag=candle_flame,tag=!lit] add lit

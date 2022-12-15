@@ -11,7 +11,6 @@
         "luigis_mansion:items/poltergust_3000/effect_on_entity/water/spike_ball",
         "luigis_mansion:items/poltergust_3000/effect_on_entity/water/bomb",
         "luigis_mansion:items/poltergust_3000/effect_on_entity/water/door",
-        "luigis_mansion:items/poltergust_3000/effect_on_entity/water/burning_floor",
-        "luigis_mansion:items/poltergust_3000/effect_on_entity/water/candle_flame"
-	]
+        "luigis_mansion:items/poltergust_3000/effect_on_entity/water/burning_floor"
+    ]
 }

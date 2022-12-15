@@ -1,3 +1,0 @@
-execute if entity @s[tag=lit,tag=!purple] run data modify entity @s ArmorItems[3] set value {id:"minecraft:diamond_pickaxe",Count:1b,tag:{Unbreakable:1b,Damage:19,CustomModelData:5}}
-execute if entity @s[tag=lit,tag=purple] run data modify entity @s ArmorItems[3] set value {id:"minecraft:diamond_pickaxe",Count:1b,tag:{Unbreakable:1b,Damage:19,CustomModelData:6}}
-execute if entity @s[tag=!lit] run data modify entity @s ArmorItems[3] set value {}

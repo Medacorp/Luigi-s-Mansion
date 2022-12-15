@@ -1,6 +1,6 @@
 scoreboard players add @s ActionTime 1
-execute if entity @s[scores={ActionTime=1}] at @e[tag=same_room,tag=!spectator,sort=nearest,limit=1] rotated ~ 0 positioned ^ ^ ^-0.7 if block ~ ~ ~ #luigis_mansion:ghosts_ignore run teleport @s ~ ~ ~ ~ ~
-execute if entity @s[scores={ActionTime=1}] at @e[tag=same_room,tag=!spectator,sort=nearest,limit=1] rotated ~ 0 positioned ^ ^ ^-0.7 unless block ~ ~ ~ #luigis_mansion:ghosts_ignore run scoreboard players set @s ActionTime 0
+execute if entity @s[scores={ActionTime=1}] at @e[tag=same_room,tag=!spectator,tag=player,sort=nearest,limit=1] rotated ~ 0 positioned ^ ^ ^-0.7 if block ~ ~ ~ #luigis_mansion:ghosts_ignore run teleport @s ~ ~ ~ ~ ~
+execute if entity @s[scores={ActionTime=1}] at @e[tag=same_room,tag=!spectator,tag=player,sort=nearest,limit=1] rotated ~ 0 positioned ^ ^ ^-0.7 unless block ~ ~ ~ #luigis_mansion:ghosts_ignore run scoreboard players set @s ActionTime 0
 tag @s[scores={ActionTime=0}] remove attack
 scoreboard players set @s[scores={ActionTime=1}] AnimationProg 0
 execute if entity @s[scores={ActionTime=1..40}] run function luigis_mansion:animations/ghost/basher_stun
@@ -21,7 +21,7 @@ data modify entity @s[scores={ActionTime=41}] ArmorItems[3].id set value "minecr
 data modify entity @s[scores={ActionTime=41}] HandItems[0].id set value "minecraft:leather_chestplate"
 data modify entity @s[scores={ActionTime=41}] HandItems[1].id set value "minecraft:leather_chestplate"
 data modify entity @s[scores={ActionTime=41}] CustomNameVisible set value 1b
-execute if entity @s[scores={ActionTime=41}] run summon minecraft:armor_stand ~ ~0.5 ~ {CustomName:'{"translate":"luigis_mansion:message.basher_scare","color":"yellow","bold":true}',Marker:1b,Invisible:1b,NoGravity:1b,CustomNameVisible:1b,Fire:32767s,Tags:["basher_scare"]}
+execute if entity @s[scores={ActionTime=41}] run summon minecraft:armor_stand ~ ~0.5 ~ {CustomName:'{"translate":"luigis_mansion:message.basher_scare","color":"yellow","bold":true}',Marker:1b,Invisible:1b,NoGravity:1b,CustomNameVisible:1b,HasVisualFire:1b,Tags:["basher_scare"]}
 execute if entity @s[scores={ActionTime=41}] as @e[distance=..5,tag=game_boy_horror_location] run function luigis_mansion:entities/game_boy_horror_location/bring_player_back
 execute if entity @s[scores={ActionTime=41}] as @a[distance=3..5,scores={Invulnerable=0},tag=!spectator] run function luigis_mansion:entities/player/scare/normal
 execute if entity @s[scores={ActionTime=41}] as @a[distance=..3,scores={Invulnerable=0},tag=!spectator] run function luigis_mansion:entities/player/scare/bash

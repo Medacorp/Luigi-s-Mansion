@@ -10,6 +10,13 @@ execute if data storage luigis_mansion:data furniture{searchable:["dust"]} run t
 execute if data storage luigis_mansion:data furniture{searchable:["fire"]} run tag @e[tag=this_entity,limit=1] add searchable_by_fire
 execute if data storage luigis_mansion:data furniture{searchable:["water"]} run tag @e[tag=this_entity,limit=1] add searchable_by_water
 execute if data storage luigis_mansion:data furniture{searchable:["ice"]} run tag @e[tag=this_entity,limit=1] add searchable_by_ice
+execute if data storage luigis_mansion:data furniture.elemental_source run tag @e[tag=this_entity,limit=1] add elemental_source
+execute if data storage luigis_mansion:data furniture.elemental_source{type:"fire"} run tag @e[tag=this_entity,limit=1] add fire_elemental_source
+execute if data storage luigis_mansion:data furniture.elemental_source{type:"water"} run tag @e[tag=this_entity,limit=1] add water_elemental_source
+execute if data storage luigis_mansion:data furniture.elemental_source{type:"ice"} run tag @e[tag=this_entity,limit=1] add ice_elemental_source
+execute if data storage luigis_mansion:data furniture.elemental_source{must_vacuum:1b} run tag @e[tag=this_entity,limit=1] add elemental_must_vacuum
+execute if data storage luigis_mansion:data furniture.elemental_source{always_spawn:1b} run tag @e[tag=this_entity,limit=1] add elemental_always_spawn
+execute if data storage luigis_mansion:data furniture.elemental_source{timer:1b} run tag @e[tag=this_entity,limit=1] add elemental_timer
 scoreboard players set @e[tag=this_entity,limit=1] FurnitureSound 0
 execute if data storage luigis_mansion:data furniture.sound store result score @e[tag=this_entity,limit=1] FurnitureSound run data get storage luigis_mansion:data furniture.sound
 data remove storage luigis_mansion:data furniture
@@ -19,5 +26,7 @@ scoreboard players set @e[tag=this_entity,limit=1] FurnitureSizeW 10
 scoreboard players set @e[tag=this_entity,limit=1] FurnitureSizeH 10
 scoreboard players set @e[tag=this_entity,limit=1] InteractionType 3
 scoreboard players set @e[tag=this_entity,limit=1] FurnitureUp 10
+scoreboard players set @e[tag=this_entity,limit=1] FurnitureElemenU 10
+scoreboard players set @e[tag=this_entity,limit=1] FurnitureElemenF 0
 scoreboard players set @e[tag=this_entity,limit=1] FurnitureSearch 20
 tag @e[tag=this_entity,limit=1] remove this_entity

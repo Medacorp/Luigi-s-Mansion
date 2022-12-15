@@ -3,7 +3,7 @@ scoreboard players set @s[scores={ActionTime=1}] AnimationProg 0
 execute at @s run function luigis_mansion:animations/ghost/attack
 
 teleport @s[scores={ActionTime=1..39},tag=!dialog] ^ ^ ^0.0125
-execute at @s[scores={ActionTime=1..20},tag=!dialog] positioned ^ ^ ^0.7 unless entity @e[tag=same_room,tag=!spectator,distance=..0.7,limit=1] run tag @s add stop_attack
+execute at @s[scores={ActionTime=1..20},tag=!dialog] positioned ^ ^ ^0.7 unless entity @e[tag=same_room,tag=!spectator,tag=player,distance=..0.7,limit=1] run tag @s add stop_attack
 execute if entity @s[scores={ActionTime=41}] run playsound luigis_mansion:entity.ghost.punch hostile @a[tag=same_room] ~ ~ ~ 1
 execute if entity @s[scores={ActionTime=41}] run playsound luigis_beta_mansion:entity.ghost.attack hostile @a[tag=same_room] ~ ~ ~ 1
 execute if entity @s[scores={ActionTime=41..60}] if score #mirrored Selected matches 0 run teleport @s ~ ~ ~ ~-18 ~

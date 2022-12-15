@@ -27,7 +27,7 @@ clear @s[advancements={luigis_mansion:lab/lab=true}] minecraft:diamond_pickaxe{l
 
 execute if entity @s[scores={Health=1..}] store result score @s Damage run data get entity @s Health -1
 scoreboard players add @s[scores={Health=1..}] Damage 100
-execute if entity @s[scores={Damage=1..},tag=!spectator] run function luigis_mansion:entities/player/take_damage
+execute if entity @s[scores={Damage=1..},tag=!spectator,tag=player] run function luigis_mansion:entities/player/take_damage
 execute unless entity @s[scores={Invulnerable=0..}] run scoreboard players set @s Invulnerable 0
 scoreboard players remove @s[scores={Invulnerable=1..}] Invulnerable 1
 effect give @s[scores={Food=3..}] minecraft:hunger 1 255 true
@@ -38,8 +38,8 @@ execute unless entity @s[scores={MaxHealth=100}] unless entity @s[scores={Walk=0
 scoreboard players set @s[scores={MaxHealthTime=200}] MaxHealth 100
 scoreboard players reset @s[scores={MaxHealthTime=200}] MaxHealthTime
 
-execute if entity @s[scores={Walk=0,Run=0,Sneak=0,Jump=0,IdleTime=0..},tag=!sneak_pos,tag=!spectator,tag=!warp,tag=!scanning,tag=!poltergust_selected,tag=!riding_poltergust] run function luigis_mansion:entities/player/idle
-execute unless entity @s[scores={IdleTime=..-1},tag=!idle] unless entity @s[scores={Walk=0,Run=0,Sneak=0,Jump=0},tag=!sneak_pos,tag=!spectator,tag=!warp,tag=!scanning,tag=!poltergust_selected,tag=!riding_poltergust] run function luigis_mansion:entities/player/animation/set/none_ignore_yell
+execute if entity @s[scores={Walk=0,Run=0,Sneak=0,Jump=0,IdleTime=0..},tag=!sneak_pos,tag=!spectator,tag=player,tag=!warp,tag=!scanning,tag=!poltergust_selected,tag=!riding_poltergust] run function luigis_mansion:entities/player/idle
+execute unless entity @s[scores={IdleTime=..-1},tag=!idle] unless entity @s[scores={Walk=0,Run=0,Sneak=0,Jump=0},tag=!sneak_pos,tag=!spectator,tag=player,tag=!warp,tag=!scanning,tag=!poltergust_selected,tag=!riding_poltergust] run function luigis_mansion:entities/player/animation/set/none_ignore_yell
 execute if entity @s[scores={IdleTime=..-1},tag=!idle,tag=!looking_at_map] run function luigis_mansion:entities/player/animation/freeze_player
 execute if entity @s[scores={IdleTime=..-1}] run function luigis_mansion:entities/player/idle
 

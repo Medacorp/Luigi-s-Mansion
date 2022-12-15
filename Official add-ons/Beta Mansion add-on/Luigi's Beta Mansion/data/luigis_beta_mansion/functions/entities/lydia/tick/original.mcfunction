@@ -4,7 +4,7 @@ execute store result entity @s[scores={Dialog=0}] Pos[2] double 0.01 run scorebo
 scoreboard players set @s[scores={Dialog=0}] AnimationProg 0
 scoreboard players set @s[scores={Dialog=0}] Dialog 1
 scoreboard players add @s Dialog 1
-execute if entity @s[scores={Dialog=1..100}] at @e[tag=same_room,tag=!spectator] positioned ^ ^ ^8 run scoreboard players set @s[distance=..8] Dialog 1
+execute if entity @s[scores={Dialog=1..100}] at @e[tag=same_room,tag=!spectator,tag=player] positioned ^ ^ ^8 run scoreboard players set @s[distance=..8] Dialog 1
 execute if entity @s[scores={Dialog=1},tag=visible] run function luigis_mansion:entities/lydia/turn_invisible
 execute if entity @s[scores={Dialog=2},tag=!visible] run function luigis_mansion:entities/lydia/turn_visible
 execute if score #bed_room_1 Wave matches 1 run scoreboard players set @s[scores={Dialog=101}] Dialog 1

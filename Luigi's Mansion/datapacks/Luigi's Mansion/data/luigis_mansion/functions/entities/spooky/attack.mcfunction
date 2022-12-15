@@ -14,7 +14,7 @@ tag @s[scores={ActionTime=20}] add breathe
 scoreboard players set @s[scores={ActionTime=20}] Move 15
 scoreboard players set @s[scores={ActionTime=20}] Dialog 20
 scoreboard players reset @s[scores={ActionTime=20}] ActionTime
-execute at @s[scores={ActionTime=1..19}] positioned ^ ^ ^0.3 if entity @e[tag=same_room,tag=!spectator,scores={Invulnerable=0},distance=..0.7,tag=!grabbed,limit=1] run scoreboard players set @s ActionTime 30
+execute at @s[scores={ActionTime=1..19}] positioned ^ ^ ^0.3 if entity @e[tag=same_room,tag=!spectator,tag=player,scores={Invulnerable=0},distance=..0.7,tag=!grabbed,limit=1] run scoreboard players set @s ActionTime 30
 
 scoreboard players set @s[scores={ActionTime=30}] AnimationProg 0
 tag @s[scores={ActionTime=30}] remove bite

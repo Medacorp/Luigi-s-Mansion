@@ -1,6 +1,6 @@
 execute if entity @s[scores={Dialog=1..422}] run scoreboard players set #freeze_timer Selected 1
 execute if entity @s[tag=!visible,tag=!vanish] run function luigis_mansion:entities/sir_weston/turn_visible
-execute unless entity @s[scores={Dialog=1..}] at @e[tag=same_room,tag=!spectator] positioned ^ ^ ^8 if entity @s[distance=..8] run function luigis_mansion:entities/sir_weston/turn_invisible
+execute unless entity @s[scores={Dialog=1..}] at @e[tag=same_room,tag=!spectator,tag=player] positioned ^ ^ ^8 if entity @s[distance=..8] run function luigis_mansion:entities/sir_weston/turn_invisible
 scoreboard players add @s[scores={Dialog=483..},tag=!vanish] Dialog 1
 scoreboard players add @s[scores={Dialog=423..482},tag=melt] Dialog 1
 tag @s remove melt
@@ -9,7 +9,7 @@ execute unless entity @s[scores={Dialog=1..}] if block ^2.7 ^ ^2.7 minecraft:sou
 execute if entity @s[scores={Dialog=1}] run playsound luigis_mansion:music.solve_puzzle music @a[tag=same_room] ~ ~ ~ 1000
 execute if entity @s[scores={Dialog=1}] run scoreboard players set @a[tag=same_room,tag=!spectator,scores={Music=..30}] Music 30
 execute if entity @s[scores={Dialog=30}] if data storage luigis_mansion:data current_state.current_data.technical_data{sir_weston_spoke:1b} run scoreboard players set @s Dialog 422
-execute if entity @s[scores={Dialog=31..421}] facing entity @e[tag=same_room,tag=!spectator,sort=nearest,limit=1] feet rotated ~ 0 run teleport @s ~ ~ ~ ~ ~
+execute if entity @s[scores={Dialog=31..421}] facing entity @e[tag=same_room,tag=!spectator,tag=player,sort=nearest,limit=1] feet rotated ~ 0 run teleport @s ~ ~ ~ ~ ~
 execute if entity @s[scores={Dialog=31..421}] as @a[tag=same_room,tag=!spectator] run function luigis_mansion:other/music/set/talking_ghost
 execute if entity @s[scores={Dialog=30..420}] as @a[tag=same_room,gamemode=!spectator,scores={IdleTime=0..},tag=!looking_at_map] run function luigis_mansion:entities/player/animation/set/stand_still
 execute if entity @s[scores={Dialog=30..197}] as @a[tag=same_room,gamemode=!spectator,tag=!high_health_idle,tag=!looking_at_map] run function luigis_mansion:entities/player/animation/set/high_health_idle_no_sound
@@ -29,7 +29,7 @@ execute if entity @s[scores={Dialog=422..}] as @a[tag=same_room,tag=!spectator] 
 scoreboard players set @s[scores={Dialog=422}] AnimationProg 0
 scoreboard players add @s[scores={Dialog=423..482}] PathStep 1
 execute at @s[scores={PathStep=20},tag=!vanish] run playsound luigis_mansion:entity.sir_weston.attack hostile @a[tag=same_room] ~ ~ ~ 1
-execute if entity @s[scores={PathStep=20..50,VulnerableTime=0},tag=!vanish] facing entity @e[tag=same_room,tag=!spectator,sort=nearest,limit=1] feet rotated ~ 0 run teleport @s ~ ~ ~ ~ ~
+execute if entity @s[scores={PathStep=20..50,VulnerableTime=0},tag=!vanish] facing entity @e[tag=same_room,tag=!spectator,tag=player,sort=nearest,limit=1] feet rotated ~ 0 run teleport @s ~ ~ ~ ~ ~
 execute at @s[scores={PathStep=60},tag=!vanish] rotated ~ 0 run function luigis_mansion:entities/sir_weston/attack
 scoreboard players set @s[scores={PathStep=80}] PathStep 0
 execute if entity @s[scores={Dialog=483},tag=!vanish] run playsound luigis_mansion:entity.sir_weston.complain hostile @a[tag=same_room] ~ ~ ~ 1

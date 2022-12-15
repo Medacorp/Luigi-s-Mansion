@@ -7,7 +7,7 @@ scoreboard players add @s DeathTime 1
 tag @s[scores={DeathTime=1}] add me
 execute if entity @s[scores={DeathTime=1}] as @a run function luigis_mansion:entities/ghost/find_vacuumers
 tag @s[scores={DeathTime=1}] remove me
-execute if entity @s[scores={DeathTime=1}] run scoreboard players operation @s KillerID = @p[tag=!spectator,tag=vacuuming_this_ghost] ID
+execute if entity @s[scores={DeathTime=1}] run scoreboard players operation @s KillerID = @p[tag=!spectator,tag=player,tag=vacuuming_this_ghost] ID
 execute if entity @s[scores={DeathTime=1}] run tag @a remove vacuuming_this_ghost
 
 scoreboard players operation #temp KillerID = @s KillerID

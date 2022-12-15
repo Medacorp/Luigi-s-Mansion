@@ -9,7 +9,7 @@ execute if entity @s[scores={Sound=0},tag=fleeing,tag=!dying] run playsound luig
 execute if entity @s[scores={Sound=0},tag=!vanish,tag=!fleeing,tag=!place_food] run playsound luigis_mansion:entity.waiter.ambient hostile @a[tag=same_room] ~ ~ ~ 1
 scoreboard players set @s[scores={Sound=0}] Sound 10
 
-execute if entity @e[tag=same_room,tag=!spectator,distance=..0.7,limit=1] if entity @s[tag=!vanish,tag=!dying,tag=!dead,tag=!captured,tag=!removed_from_existence,tag=!hurt,tag=!fleeing,tag=!element_hurt] run function luigis_mansion:entities/waiter/collide
+execute if entity @e[tag=same_room,tag=!spectator,tag=player,distance=..0.7,limit=1] if entity @s[tag=!vanish,tag=!dying,tag=!dead,tag=!captured,tag=!removed_from_existence,tag=!hurt,tag=!fleeing,tag=!element_hurt] run function luigis_mansion:entities/waiter/collide
 
 execute if entity @s[tag=!vanish,tag=!fleeing,tag=!hurt,tag=!complain,scores={StunTime=0}] run function #luigis_mansion:entities/waiter/path
 execute if entity @s[tag=vanish] run function luigis_mansion:entities/waiter/vanish

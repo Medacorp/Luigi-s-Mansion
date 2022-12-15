@@ -1,6 +1,6 @@
 execute if entity @s[tag=!carless] as @e[tag=car,scores={GhostNr=-2147483648..}] if score @s GhostNr = #temp GhostNr run tag @s add this_car
 
-execute if entity @e[tag=same_room,tag=!spectator,distance=..0.7,limit=1] if entity @s[scores={VulnerableTime=0},tag=!vanish,tag=!hurt,tag=!fleeing] run function luigis_mansion:entities/henry/collide
+execute if entity @e[tag=same_room,tag=!spectator,tag=player,distance=..0.7,limit=1] if entity @s[scores={VulnerableTime=0},tag=!vanish,tag=!hurt,tag=!fleeing] run function luigis_mansion:entities/henry/collide
 
 tag @s[tag=in_vacuum,scores={WaitTime=..39}] remove in_vacuum
 scoreboard players add @s[tag=in_vacuum,scores={WaitTime=40..}] VacuumTime 1
@@ -20,7 +20,7 @@ execute at @s[tag=laugh] run function luigis_mansion:entities/henry/laugh
 execute at @s[tag=grab_vehicle] run function luigis_mansion:entities/henry/grab_vehicle
 execute at @s[tag=!carless,tag=!in_vacuum,tag=!vanish,tag=!laugh] run function luigis_mansion:animations/henry/drive
 
-execute at @s[tag=!vanish,scores={StunTime=0},tag=!carless,tag=!grab_vehicle] facing entity @e[tag=same_room,tag=!spectator,sort=nearest,limit=1] feet rotated ~ 0 run teleport @s ~ ~ ~ ~ ~
+execute at @s[tag=!vanish,scores={StunTime=0},tag=!carless,tag=!grab_vehicle] facing entity @e[tag=same_room,tag=!spectator,tag=player,sort=nearest,limit=1] feet rotated ~ 0 run teleport @s ~ ~ ~ ~ ~
 execute at @s run tp @s ~ ~0.2 ~
 execute at @s[tag=!vanish,tag=!laugh,tag=!carless,tag=!grab_vehicle,scores={StunTime=0}] run function luigis_mansion:entities/henry/move
 execute at @s run tp @s ~ ~-0.2 ~

@@ -8,7 +8,6 @@
         "luigis_mansion:items/poltergust_3000/effect_on_entity/ice/bat",
         "luigis_mansion:items/poltergust_3000/effect_on_entity/ice/mouse",
         "luigis_mansion:items/poltergust_3000/effect_on_entity/ice/flying_fish",
-        "luigis_mansion:items/poltergust_3000/effect_on_entity/ice/ghost",
-        "luigis_mansion:items/poltergust_3000/effect_on_entity/ice/candle_flame"
+        "luigis_mansion:items/poltergust_3000/effect_on_entity/ice/ghost"
 	]
 }

@@ -1,5 +1,5 @@
-execute if entity @s[tag=!dialog,tag=!big] if entity @e[tag=same_room,tag=!spectator,distance=..2,limit=1] if entity @s[tag=!dying,tag=!dead,tag=!captured,tag=!removed_from_existence,tag=!hurt,tag=!fleeing,tag=!element_hurt] run function luigis_mansion:entities/rocking_horse/collide
-execute if entity @s[tag=!dialog,tag=big] if entity @e[tag=same_room,tag=!spectator,distance=..3,limit=1] if entity @s[tag=!dying,tag=!dead,tag=!captured,tag=!removed_from_existence] run function luigis_mansion:entities/rocking_horse/collide_big
+execute if entity @s[tag=!dialog,tag=!big] if entity @e[tag=same_room,tag=!spectator,tag=player,distance=..2,limit=1] if entity @s[tag=!dying,tag=!dead,tag=!captured,tag=!removed_from_existence,tag=!hurt,tag=!fleeing,tag=!element_hurt] run function luigis_mansion:entities/rocking_horse/collide
+execute if entity @s[tag=!dialog,tag=big] if entity @e[tag=same_room,tag=!spectator,tag=player,distance=..3,limit=1] if entity @s[tag=!dying,tag=!dead,tag=!captured,tag=!removed_from_existence] run function luigis_mansion:entities/rocking_horse/collide_big
 execute if entity @s[tag=!attack,tag=!intro] run function luigis_mansion:animations/rocking_horse
 execute if entity @s[tag=attack] run function luigis_mansion:entities/rocking_horse/attack
 execute rotated ~ 0 unless block ^ ^ ^0.6 #luigis_mansion:all_ignore run tag @s[tag=!intro] add dead
