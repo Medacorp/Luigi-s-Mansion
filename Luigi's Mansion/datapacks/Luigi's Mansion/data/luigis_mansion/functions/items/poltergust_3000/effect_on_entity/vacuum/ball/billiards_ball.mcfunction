@@ -1,1 +1,1 @@
-execute positioned as @s[tag=billiards_ball,scores={SpawnTime=20..}] run function luigis_mansion:items/poltergust_3000/effect_on_entity/vacuum/effect/ball
+execute positioned as @s[tag=billiards_ball,scores={SpawnTime=20..}] positioned ~ ~1.4 ~ run function luigis_mansion:items/poltergust_3000/effect_on_entity/vacuum/effect/ball

@@ -1,3 +1,16 @@
+v2.3.2:
+* Fixed big balls don't react to vacuum
+* Fixed pulling nana's wool is difficult
+* Fixed softlock when using interact as the map is getting auto-opened
+* Fixed spike balls don't get size scores
+* Fixed shining ghost triggers observatory moon blowing up, when flying through the wall into the astral hall
+* Fixed biff atlas spams heartbeat as he vanishes
+* Fixed nursery rocking horse doesn't animate
+* Fixed boolossus' boos were difficult to pull into the vacuum, and fell through the floor
+* Fixed boolossus' boos, when frozen while idle, would continue their animation, and visually un-freeze
+
+
+
 v2.3.1:
 * Removed github data from download, drastically reducing size.
 * Fixed a 1.19.3 bug fix broke initial data setting. Old maps could be updated fine, but new ones broke immediately.
@@ -8,6 +21,7 @@ v2.3.1:
 
 3DS Remake:
 * Fixed game boy horror part not ticked
+
 
 
 v2.3:

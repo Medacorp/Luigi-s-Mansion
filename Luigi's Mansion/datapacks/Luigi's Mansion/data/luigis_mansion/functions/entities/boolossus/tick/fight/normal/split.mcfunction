@@ -23,14 +23,15 @@ scoreboard players remove @s[scores={Dialog=1..}] Dialog 1
 scoreboard players set @s[scores={Wave=600..}] Dialog 0
 data merge entity @s[scores={Dialog=1..},tag=!vacuumable] {ArmorItems:[{},{},{},{id:"minecraft:diamond_pickaxe",Count:1b,tag:{Unbreakable:1b,Damage:1,CustomModelData:47}}],HandItems:[{id:"minecraft:diamond_pickaxe",Count:1b,tag:{Unbreakable:1b,Damage:2,CustomModelData:47}},{id:"minecraft:diamond_pickaxe",Count:1b,tag:{Unbreakable:1b,Damage:3,CustomModelData:47}}],Pose:{RightArm:[-90.0f,90.0f,0.0f],LeftArm:[-90.0f,-90.0f,0.0f],Head:[0.0f,0.0f,0.01f]}}
 data merge entity @s[scores={Dialog=0},tag=vacuumable] {ArmorItems:[{},{},{},{id:"minecraft:diamond_pickaxe",Count:1b,tag:{Unbreakable:1b,Damage:1,CustomModelData:48}}],HandItems:[{id:"minecraft:diamond_pickaxe",Count:1b,tag:{Unbreakable:1b,Damage:2,CustomModelData:48}},{id:"minecraft:diamond_pickaxe",Count:1b,tag:{Unbreakable:1b,Damage:3,CustomModelData:48}}],Pose:{RightArm:[-90.0f,90.0f,0.0f],LeftArm:[-90.0f,-90.0f,0.0f],Head:[0.0f,0.0f,0.01f]}}
-execute if entity @s[tag=vacuumable] if block ~ ~0.8 ~ #luigis_mansion:ghosts_ignore run teleport @s ~ ~-0.2 ~
+execute if entity @s[tag=vacuumable] if block ~ ~0.8 ~ #luigis_mansion:ghosts_ignore run teleport @s ~ ~-0.1 ~
+execute if entity @s[tag=vacuumable] if block ~ ~0.8 ~ #luigis_mansion:ghosts_ignore run teleport @s ~ ~-0.1 ~
 tag @s[scores={Dialog=1..}] add vacuumable
 tag @s[scores={Dialog=0}] remove vacuumable
 tag @s remove frozen
 
 execute if entity @s[tag=fleeing,tag=!laugh,tag=!attack,scores={Dialog=0,Wave=..599}] run function luigis_mansion:entities/boolossus/flee
 
-execute at @s[tag=!fleeing,tag=!laugh,tag=!attack] run function luigis_mansion:animations/boo/idle
+execute at @s[tag=!fleeing,tag=!laugh,tag=!attack,scores={Dialog=0}] run function luigis_mansion:animations/boo/idle
 
 tag @s[tag=!fleeing] remove fleeing_no_target
 tag @s[tag=fleeing] remove fleeing
