@@ -1,5 +1,5 @@
 scoreboard players add @s ActionTime 1
-execute if entity @s[scores={ActionTime=1}] run playsound luigis_mansion:entity.black_bogmire.vacuumed hostile @a[tag=same_room] ~ ~ ~ 1
+execute if entity @s[scores={ActionTime=1}] run playsound luigis_mansion:entity.black_bogmire.succumb hostile @a[tag=same_room] ~ ~ ~ 1
 scoreboard players set @s[scores={ActionTime=1}] AnimationProg 0
 execute at @s run function luigis_mansion:animations/bogmire/vanish
 execute at @s run teleport @s[scores={ActionTime=21..30}] ~ ~-0.1 ~

@@ -2,4 +2,6 @@ summon minecraft:armor_stand ~ ~-0.4 ~ {CustomName:'{"translate":"luigis_mansion
 teleport @e[tag=this_entity,limit=1] ~ ~-0.4 ~ facing ^ ^ ^2
 scoreboard players set @e[tag=this_entity,limit=1] ActionTime 0
 scoreboard players set @e[tag=this_entity,limit=1] Move 100
+scoreboard players set @e[tag=this_entity,limit=1] EntitySizeRadius 15
+scoreboard players set @e[tag=this_entity,limit=1] EntityYOffset 14
 tag @e[tag=this_entity,limit=1] remove this_entity
