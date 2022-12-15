@@ -53,6 +53,15 @@
         ],
         "subtitle": "luigis_mansion:subtitles.entity.biff_atlas.complain"
     },
+    "entity.biff_atlas.disappear": {
+        "sounds": [
+            {
+                "name": "luigis_mansion:entity/generic/disappear",
+                "stream": false
+            }
+        ],
+        "subtitle": "luigis_mansion:subtitles.entity.biff_atlas.disappear"
+    },
     "entity.biff_atlas.flee": {
         "sounds": [
             {
@@ -1080,6 +1089,15 @@
         ],
         "subtitle": "luigis_mansion:subtitles.entity.chauncey.scream"
     },
+    "entity.chauncey.disappear": {
+        "sounds": [
+            {
+                "name": "luigis_mansion:entity/generic/disappear",
+                "stream": false
+            }
+        ],
+        "subtitle": "luigis_mansion:subtitles.entity.chauncey.disappear"
+    },
     "entity.chauncey.flee": {
         "sounds": [
             {
@@ -1285,6 +1303,15 @@
             }
         ],
         "subtitle": "luigis_mansion:subtitles.entity.cinema_ghost.spawn"
+    },
+    "entity.clockwork_soldiers.activate": {
+        "sounds": [
+            {
+                "name": "luigis_mansion:entity/clockwork_soldier/activate",
+                "stream": false
+            }
+        ],
+        "subtitle": "luigis_mansion:subtitles.entity.clockwork_soldier.activate"
     },
     "entity.clockwork_soldiers.ambient": {
         "sounds": [
