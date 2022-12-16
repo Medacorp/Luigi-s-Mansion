@@ -1,4 +1,5 @@
 v2.3.3:
+* Added fireworks to the training room
 * Players now have the invulnerability blink whenever they are not in a knockback or scare animation
 * Players now only take damage when in knockback or a scare animation; suffocation in a block no longer deals damage
 * Fixed training results music doesn't play
