@@ -176,8 +176,8 @@ execute at @s[scores={KnockbackTime=2..,KnockbackType=8..9,GrabbedShake=5..}] ru
 execute at @s[scores={KnockbackTime=2..,KnockbackType=10,GrabbedShake=10..}] run scoreboard players reset @e[tag=this_ghost,limit=1] GrabbedID
 execute at @s[scores={KnockbackTime=2..,KnockbackType=8..10}] run tag @s remove struggle
 scoreboard players set @s[scores={KnockbackTime=2..,KnockbackType=9..10,Invulnerable=6..}] Invulnerable 5
-execute at @s[scores={KnockbackTime=2..,KnockbackType=9..10}] run effect give @s minecraft:instant_damage 1 0 true
-execute at @s[scores={KnockbackTime=2..,KnockbackType=9..10}] run scoreboard players set @s ForcedDamage -5
+execute at @s[scores={KnockbackTime=2..9,KnockbackType=9..10}] run effect give @s minecraft:instant_damage 1 0 true
+execute at @s[scores={KnockbackTime=2..9,KnockbackType=9..10}] run scoreboard players set @s ForcedDamage -5
 execute at @s[scores={KnockbackTime=2..,KnockbackType=8..10}] run effect give @s minecraft:slowness 1 0 true
 execute at @s[scores={KnockbackTime=1,KnockbackType=8..10}] run effect clear @s minecraft:slowness
 execute at @s[scores={KnockbackTime=1,KnockbackType=8..10}] run scoreboard players reset @e[tag=this_ghost,limit=1] GrabbedID
@@ -279,8 +279,6 @@ execute at @s unless entity @s[scores={KnockbackType=14}] unless block ~ ~ ~-0.3
 kill @e[type=minecraft:marker,tag=temp,limit=1]
 scoreboard players remove @s KnockbackTime 1
 tag @s[scores={KnockbackType=2..}] remove vacuuming_ghost
-execute unless entity @s[scores={KnockbackType=8..10}] run scoreboard players reset @s GrabbedShake
-execute unless entity @s[scores={KnockbackType=8..10}] run tag @s remove grabbed
 scoreboard players reset @s[scores={KnockbackTime=0}] KnockbackX
 scoreboard players reset @s[scores={KnockbackTime=0}] KnockbackZ
 scoreboard players set @s[scores={KnockbackTime=0}] KnockbackType 0

@@ -6,7 +6,7 @@ execute if entity @s[tag=low_health_idle] run data modify storage luigis_mansion
 execute if entity @s[scores={Health=..30},tag=!attack] run data modify storage luigis_mansion:data luigi.tags append value "low_health"
 data modify storage luigis_mansion:data luigi.gliding set from entity @s FallFlying
 execute store result storage luigis_mansion:data luigi.swimming byte 1 if entity @s[tag=swimming]
-execute store result storage luigis_mansion:data luigi.invulnerable byte 1 if entity @s[scores={Invulnerable=1..60}]
+execute unless entity @s[scores={KnockbackType=1..}] unless entity @s[scores={ScareType=1..}] store result storage luigis_mansion:data luigi.invulnerable byte 1 if entity @s[scores={Invulnerable=2..}]
 execute if entity @s[scores={YellTime=1..}] run data modify storage luigis_mansion:data luigi.tags append value "yelling"
 scoreboard players operation #temp InteractionType = @s InteractionType
 scoreboard players add #temp InteractionType 4
