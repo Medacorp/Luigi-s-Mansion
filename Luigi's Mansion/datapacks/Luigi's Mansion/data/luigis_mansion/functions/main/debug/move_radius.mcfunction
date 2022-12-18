@@ -1,0 +1,3 @@
+execute unless score #temp2 FurnitureSizeL matches 0 positioned as @s run function luigis_mansion:main/debug/move/radius_x
+execute unless score #temp2 FurnitureSizeU matches 0 positioned as @s run function luigis_mansion:main/debug/move/radius_y
+execute unless score #temp2 FurnitureSizeF matches 0 positioned as @s run function luigis_mansion:main/debug/move/radius_z

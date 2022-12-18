@@ -16,6 +16,8 @@ execute if score #temp Money matches 2 run data modify entity @e[tag=this_entity
 execute if score #temp Money matches 3 run data modify entity @e[tag=this_entity,limit=1] ArmorItems[3].tag.CustomModelData set value 18
 execute if score #temp Money matches 4 run data modify entity @e[tag=this_entity,limit=1] ArmorItems[3].tag.CustomModelData set value 19
 scoreboard players reset #temp Money
+scoreboard players set @e[tag=this_entity,limit=1] EntitySizeRadius 5
+scoreboard players set @e[tag=this_entity,limit=1] EntityYOffset 7
 tag @e[tag=this_entity,limit=1] remove this_entity
 data remove storage luigis_mansion:data drop_loot.contents.luigis_mansion.key[0]
 execute if data storage luigis_mansion:data drop_loot.contents.luigis_mansion.key[0] run function luigis_mansion:other/drop_loot/loop/key

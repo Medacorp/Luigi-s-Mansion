@@ -19,4 +19,7 @@ scoreboard players reset @s LightZ
 scoreboard players reset @s MirrorX
 scoreboard players reset @s MirrorZ
 
+execute if entity @s[tag=!furniture,tag=debug_entity] run function luigis_mansion:main/debug
+execute if entity @s[tag=!furniture,tag=!debug_entity] if score #debug_entities Selected matches 1.. run function luigis_mansion:main/debug
+
 tag @e[tag=same_room] remove same_room

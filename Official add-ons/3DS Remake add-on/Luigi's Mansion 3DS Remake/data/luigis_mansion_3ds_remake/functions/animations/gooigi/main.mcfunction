@@ -146,5 +146,6 @@ tag @s[tag=stop_model] remove stop_model
 tag @s remove gooigi
 tag @s remove flashlight
 tag @s remove moved
+tag @s remove player
 execute unless entity @e[tag=gooigi,scores={Shrunk=1..},limit=1] run tag @s add found_owner
 execute if entity @e[tag=gooigi,scores={Shrunk=1..},limit=1] run tag @s add found_shrunk_owner
