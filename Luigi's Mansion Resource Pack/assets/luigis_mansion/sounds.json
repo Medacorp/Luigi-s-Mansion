@@ -9633,7 +9633,7 @@
                 "stream": false
             }
         ],
-        "subtitle": "luigis_mansion:subtitles.item.mario_item.obtain"
+        "subtitle": "luigis_mansion:subtitles.item.mario_item.spawn"
     },
     "item.medium_pearl.bounce": {
         "sounds": [

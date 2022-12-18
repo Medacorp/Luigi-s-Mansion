@@ -23,5 +23,5 @@ scoreboard players set @e[tag=bogmire,tag=this_entity,limit=1] SecondFleeDamage 
 scoreboard players set @e[tag=bogmire,tag=this_entity,limit=1] HeartOffset -2
 scoreboard players set @e[tag=bogmire,tag=this_entity,limit=1] EntitySizeW 10
 scoreboard players set @e[tag=bogmire,tag=this_entity,limit=1] EntitySizeH 18
-scoreboard players set @e[tag=bogmire,tag=this_entity,limit=1] EntityYOffset 9
+scoreboard players set @e[tag=bogmire,tag=this_entity,limit=1] EntityYOffset 14
 tag @e[tag=this_entity] remove this_entity

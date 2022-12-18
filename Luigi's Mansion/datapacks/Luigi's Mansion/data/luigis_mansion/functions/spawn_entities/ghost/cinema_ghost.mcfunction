@@ -17,7 +17,7 @@ scoreboard players set @e[tag=this_entity,limit=1] ElementHurtTime 0
 scoreboard players set @e[tag=this_entity,limit=1] SecondFleeDamage -1
 scoreboard players set @e[tag=this_entity,limit=1] HeartOffset 0
 scoreboard players set @e[tag=this_entity,limit=1] SpawnTime 160
-scoreboard players set @e[tag=this_entity,limit=1] EntitySizeW 8
-scoreboard players set @e[tag=this_entity,limit=1] EntitySizeH 20
-scoreboard players set @e[tag=this_entity,limit=1] EntityYOffset 10
+scoreboard players set @e[tag=this_entity,limit=1] EntitySizeW 12
+scoreboard players set @e[tag=this_entity,limit=1] EntitySizeH 8
+scoreboard players set @e[tag=this_entity,limit=1] EntityYOffset 15
 tag @e[tag=this_entity,limit=1] remove this_entity
