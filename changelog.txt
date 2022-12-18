@@ -3,7 +3,7 @@ v2.3.4:
 * Fixed weird body offset on Boolossus
 * Fixed Boolossus health turns to 1 after one of its Boos gets caught, making it only spawn 1 boo when another player triggers the battle later
 * Fixed Jarvis has no hitbox
-* Fixed balcony 2 shows name as "luigis_mansion:location.balcont when 3DS Remake is installed
+* Fixed balcony 2 shows name as "luigis_mansion:location.balcony" when 3DS Remake is installed
 * Fixed a Mario item spawning displays the obtaining subtitle
 * Fixed hurt elemental ghosts ignore slabs
 
