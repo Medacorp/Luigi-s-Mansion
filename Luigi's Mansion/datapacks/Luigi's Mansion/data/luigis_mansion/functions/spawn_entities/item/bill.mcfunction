@@ -26,5 +26,5 @@ execute as @e[tag=this_entity,limit=1] at @s positioned ~ ~0.4 ~ if block ~1 ~ ~
 execute as @e[tag=this_entity,limit=1] at @s positioned ~ ~0.4 ~ rotated ~ 0 unless block ^ ^ ^1 #luigis_mansion:ghosts_ignore at @s run tp @s ~ ~ ~ ~-180 ~
 execute as @e[tag=this_entity,limit=1] store result entity @s Pose.Head[0] float 1 run data get entity @s Rotation[1]
 execute if predicate luigis_mansion:50_50 as @e[tag=this_entity,limit=1] store result entity @s Pose.Head[0] float -1 run data get entity @s Pose.Head[0]
-scoreboard players set @e[tag=this_entity,limit=1] EntitySizeRadius 7
+scoreboard players set @e[tag=this_entity,limit=1] EntitySizeRadius 3
 scoreboard players set @e[tag=this_entity,limit=1] EntityYOffset 14

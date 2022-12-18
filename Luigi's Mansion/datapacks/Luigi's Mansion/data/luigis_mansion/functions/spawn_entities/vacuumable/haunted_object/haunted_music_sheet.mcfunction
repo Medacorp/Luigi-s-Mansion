@@ -10,6 +10,6 @@ data modify entity @e[tag=this_entity,limit=1] ArmorItems[3].tag.loot set from s
 execute as @e[tag=this_entity,limit=1] store result score @s HomeRotX run data get entity @s Rotation[0] 1
 execute as @e[tag=this_entity,limit=1] store result score @s HomeRotY run data get entity @s Rotation[1] 1
 scoreboard players set @e[tag=this_entity,limit=1] WaitTime 0
-scoreboard players set @e[tag=this_entity,limit=1] EntitySizeRadius 7
-scoreboard players set @e[tag=this_entity,limit=1] EntityYOffset 14
+scoreboard players set @e[tag=this_entity,limit=1] EntitySizeRadius 3
+scoreboard players set @e[tag=this_entity,limit=1] EntityYOffset 7
 tag @e[tag=this_entity,limit=1] remove this_entity

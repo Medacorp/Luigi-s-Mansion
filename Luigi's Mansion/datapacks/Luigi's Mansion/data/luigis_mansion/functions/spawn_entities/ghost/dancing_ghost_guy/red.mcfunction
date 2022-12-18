@@ -22,8 +22,8 @@ scoreboard players set @e[tag=this_entity,limit=1] SecondFleeDamage -1
 scoreboard players set @e[tag=this_entity,limit=1] HeartOffset -2
 scoreboard players set @e[tag=this_entity,limit=1] SpawnTime 160
 scoreboard players set @e[tag=this_entity,limit=1] EntitySizeW 8
-scoreboard players set @e[tag=this_entity,limit=1] EntitySizeH 20
-scoreboard players set @e[tag=this_entity,limit=1] EntityYOffset 10
+scoreboard players set @e[tag=this_entity,limit=1] EntitySizeH 12
+scoreboard players set @e[tag=this_entity,limit=1] EntityYOffset 13
 scoreboard players operation @e[tag=this_entity,limit=1] GhostGuyCouple > @e[tag=ghost_guy,tag=!this_entity] GhostGuyCouple
 scoreboard players add @e[tag=this_entity,limit=1] GhostGuyCouple 1
 scoreboard players operation @e[tag=this_entity,limit=1] GhostGuyCouple = @e[tag=ghost_guy,distance=..2,tag=!this_entity,limit=1] GhostGuyCouple

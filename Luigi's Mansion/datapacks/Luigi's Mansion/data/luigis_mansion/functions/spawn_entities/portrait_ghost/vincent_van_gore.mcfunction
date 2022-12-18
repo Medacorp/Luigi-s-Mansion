@@ -23,7 +23,7 @@ scoreboard players set @e[tag=vincent_van_gore,tag=this_entity,limit=1] StunTime
 scoreboard players set @e[tag=vincent_van_gore,tag=this_entity,limit=1] VulnerableTime 0
 scoreboard players set @e[tag=vincent_van_gore,tag=this_entity,limit=1] SecondFleeDamage -1
 scoreboard players set @e[tag=vincent_van_gore,tag=this_entity,limit=1] HeartOffset -2
-scoreboard players set @e[tag=vincent_van_gore,tag=this_entity,limit=1] EntitySizeW 20
-scoreboard players set @e[tag=vincent_van_gore,tag=this_entity,limit=1] EntitySizeH 36
-scoreboard players set @e[tag=vincent_van_gore,tag=this_entity,limit=1] EntityYOffset 18
+scoreboard players set @e[tag=vincent_van_gore,tag=this_entity,limit=1] EntitySizeW 10
+scoreboard players set @e[tag=vincent_van_gore,tag=this_entity,limit=1] EntitySizeH 25
+scoreboard players set @e[tag=vincent_van_gore,tag=this_entity,limit=1] EntityYOffset 10
 tag @e[tag=this_entity] remove this_entity

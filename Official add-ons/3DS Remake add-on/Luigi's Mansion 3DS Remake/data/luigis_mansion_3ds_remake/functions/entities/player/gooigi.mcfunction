@@ -20,6 +20,7 @@ execute if entity @s[scores={IdleTime=..-1}] run function luigis_mansion_3ds_rem
 # Gooigi cannot speak, so he cannot choose
 trigger ClairvoyaChoice add 0
 trigger EGaddCallChoice add 0
+trigger EGaddGallChoice add 0
 trigger EGaddGPRChoice add 0
 trigger EGaddLabChoice add 0
 trigger EGaddTrainChoice add 0

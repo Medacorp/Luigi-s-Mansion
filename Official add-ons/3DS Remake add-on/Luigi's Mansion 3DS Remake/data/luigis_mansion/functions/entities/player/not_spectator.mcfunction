@@ -8,7 +8,7 @@ tag @s[scores={Health=1..}] remove already_added_to_list
 scoreboard players reset @s[scores={OpenMapTime=1..},tag=stop_map_on_key_collect] OpenMapFocus
 scoreboard players reset @s[scores={OpenMapTime=1..},tag=stop_map_on_key_collect] OpenMapTime
 scoreboard players remove @s[scores={OpenMapTime=1..}] OpenMapTime 1
-execute if entity @s[scores={OpenMapTime=0}] run function luigis_mansion:items/game_boy_horror/map/open
+execute if entity @s[scores={OpenMapTime=0}] unless entity @s[scores={KnockbackType=1..}] unless entity @s[scores={ScareType=1..}] run function luigis_mansion:items/game_boy_horror/map/open
 function #luigis_mansion:items
 execute if entity @s[tag=!death_animation,tag=!revive_animation,tag=!polterpup_reviving] unless entity @s[scores={KnockbackType=2..}] unless entity @s[scores={ScareType=2..}] run function luigis_mansion:blocks/gravity_swap
 execute if entity @s[tag=warp] run function luigis_mansion:items/game_boy_horror/warp
@@ -54,6 +54,8 @@ tag @s[tag=!death_animation,tag=!revive_animation,tag=!polterpup_reviving] remov
 effect give @s minecraft:invisibility 1000000 0 true
 execute at @s[tag=!camera,tag=!gooigi] run function luigis_mansion:animations/luigi
 execute if entity @s[scores={KnockbackTime=1..}] run function luigis_mansion:entities/player/knockback
+execute unless entity @s[scores={KnockbackType=8..10}] run scoreboard players reset @s GrabbedShake
+execute unless entity @s[scores={KnockbackType=8..10}] run tag @s remove grabbed
 execute if entity @s[scores={ScareTime=1..}] run function luigis_mansion:entities/player/scared
 execute if entity @s[tag=death_animation,tag=!gooigi] run function luigis_mansion:entities/player/death_animation
 execute if entity @s[tag=revive_animation] run function luigis_mansion:entities/player/revive_animation

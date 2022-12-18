@@ -1,5 +1,4 @@
 function luigis_mansion:spawn_entities/portrait_ghost/boolossus/fight
-scoreboard players operation #temp Room = @s Room
-execute as @e[tag=boolossus,tag=!split,limit=1] run function luigis_mansion:entities/boolossus/get_merge_count
+scoreboard players operation @e[tag=boolossus,tag=!split,limit=1] Room = @s Room
+tag @e[tag=boolossus,tag=!split,limit=1] add intro_done
 tag @e[tag=boolossus,tag=split,tag=!remove_from_existence] add remove_from_existence
-scoreboard players reset #temp Room

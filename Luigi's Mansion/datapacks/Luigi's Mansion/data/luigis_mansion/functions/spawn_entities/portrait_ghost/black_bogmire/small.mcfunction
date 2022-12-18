@@ -14,5 +14,5 @@ data modify entity @e[tag=black_bogmire,tag=this_entity,limit=1] ArmorItems[3].t
 scoreboard players set @e[tag=black_bogmire,tag=this_entity,limit=1] Sound 0
 scoreboard players set @e[tag=black_bogmire,tag=this_entity,limit=1] EntitySizeW 10
 scoreboard players set @e[tag=black_bogmire,tag=this_entity,limit=1] EntitySizeH 18
-scoreboard players set @e[tag=black_bogmire,tag=this_entity,limit=1] EntityYOffset 9
+scoreboard players set @e[tag=black_bogmire,tag=this_entity,limit=1] EntityYOffset 14
 tag @e[tag=this_entity] remove this_entity

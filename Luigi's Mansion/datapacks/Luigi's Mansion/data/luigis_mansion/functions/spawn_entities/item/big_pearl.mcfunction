@@ -4,6 +4,6 @@ tag @e[tag=this_entity,limit=1] remove ghost
 tag @e[tag=this_entity,limit=1] remove portrait_ghost
 tag @e[tag=this_entity,limit=1] remove portrait_ghost_pop
 tag @e[tag=this_entity,limit=1] remove pearl_dropper
-scoreboard players set @e[tag=this_entity,limit=1] EntitySizeRadius 7
-scoreboard players set @e[tag=this_entity,limit=1] EntityYOffset 14
+scoreboard players set @e[tag=this_entity,limit=1] EntitySizeRadius 5
+scoreboard players set @e[tag=this_entity,limit=1] EntityYOffset 15
 playsound luigis_mansion:item.big_pearl.spawn player @a ~ ~ ~ 1

@@ -3,6 +3,6 @@ scoreboard players set @e[tag=this_entity,limit=1] WaitTime 0
 execute as @e[tag=this_entity,limit=1] store result score @s HomeY run data get entity @s Pos[1] 100
 execute as @e[tag=this_entity,limit=1] store result score @s Move run data get storage luigis_mansion:data current_state.current_data.ghosts.green_flying_fish.speed
 data modify entity @e[tag=this_entity,limit=1] ArmorItems[3].tag.loot set from storage luigis_mansion:data current_state.current_data.ghosts.green_flying_fish.loot
-scoreboard players set @e[tag=this_entity,limit=1] EntitySizeRadius 7
+scoreboard players set @e[tag=this_entity,limit=1] EntitySizeRadius 4
 scoreboard players set @e[tag=this_entity,limit=1] EntityYOffset 14
 tag @e[tag=this_entity,limit=1] remove this_entity

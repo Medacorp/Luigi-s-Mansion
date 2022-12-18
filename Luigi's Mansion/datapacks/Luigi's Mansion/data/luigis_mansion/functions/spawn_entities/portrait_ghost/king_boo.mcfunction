@@ -16,6 +16,6 @@ scoreboard players set @e[tag=this_entity,limit=1] StunTime 0
 scoreboard players set @e[tag=this_entity,limit=1] VulnerableTime 0
 scoreboard players set @e[tag=this_entity,limit=1] SecondFleeDamage -1
 scoreboard players set @e[tag=this_entity,limit=1] HeartOffset -2
-scoreboard players set @e[tag=this_entity,limit=1] EntitySizeRadius 10
+scoreboard players set @e[tag=this_entity,limit=1] EntitySizeRadius 7
 scoreboard players set @e[tag=this_entity,limit=1] EntityYOffset 14
 tag @e[tag=this_entity,limit=1] remove this_entity

@@ -1,2 +1,3 @@
-function luigis_mansion:items/poltergust_3000/effect_on_entity/vacuum/effect/ghost/pull_and_capture
+execute positioned ~ ~-0.5 ~ facing entity @a[tag=me,limit=1] feet positioned ~ ~0.5 ~ if block ^ ^ ^0.3 #luigis_mansion:item_pull_ignore unless entity @a[tag=me,distance=..1.2,limit=1] positioned as @s run teleport @s ^ ^ ^0.2
+execute if entity @a[tag=me,distance=..1.2,limit=1] run function luigis_mansion:items/poltergust_3000/effect_on_entity/vacuum/effect/ghost/capture
 tag @s add hurt_elemental_ghost

@@ -46,6 +46,51 @@
         ],
         "subtitle": "subtitles.entity.lightning_bolt.thunder"
     },
+    "entity.player.hurt": {
+        "replace": true,
+        "sounds": [
+            {
+                "name": "luigis_mansion:no_sound",
+                "stream": false
+            }
+        ]
+    },
+    "entity.player.hurt_drown": {
+        "replace": true,
+        "sounds": [
+            {
+                "name": "luigis_mansion:no_sound",
+                "stream": false
+            }
+        ]
+    },
+    "entity.player.hurt_freeze": {
+        "replace": true,
+        "sounds": [
+            {
+                "name": "luigis_mansion:no_sound",
+                "stream": false
+            }
+        ]
+    },
+    "entity.player.hurt_on_fire": {
+        "replace": true,
+        "sounds": [
+            {
+                "name": "luigis_mansion:no_sound",
+                "stream": false
+            }
+        ]
+    },
+    "entity.player.hurt_sweet_berry_bush": {
+        "replace": true,
+        "sounds": [
+            {
+                "name": "luigis_mansion:no_sound",
+                "stream": false
+            }
+        ]
+    },
     "entity.player.levelup": {
         "replace": true,
         "sounds": [
