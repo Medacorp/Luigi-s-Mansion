@@ -1,6 +1,7 @@
 scoreboard objectives add ActionTime dummy
 scoreboard objectives add Angle dummy
 scoreboard objectives add AnimationProg dummy
+scoreboard objectives add AttackType dummy
 scoreboard objectives add BananaDropTime dummy
 scoreboard objectives add BookChoice trigger
 scoreboard objectives add Boos dummy

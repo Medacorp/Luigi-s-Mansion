@@ -16,7 +16,8 @@ execute if entity @s[tag=vanish] run function luigis_mansion:entities/waiter/van
 execute if entity @s[tag=complain] run function luigis_mansion:entities/waiter/complain
 execute at @s[tag=placing_food,scores={StunTime=0}] run function luigis_mansion:animations/waiter/place_food
 execute at @s[tag=!element_hurt,tag=!fleeing,tag=!collided,tag=!vanish,tag=!placing_food,scores={StunTime=0}] run function luigis_mansion:animations/waiter/haunt
-execute at @s[tag=fleeing] run function luigis_mansion:animations/waiter/flee
+execute at @s[tag=fleeing,tag=!second_flee_state] run function luigis_mansion:animations/waiter/flee
+execute at @s[tag=fleeing,tag=second_flee_state] run function luigis_mansion:entities/waiter/second_flee_state
 execute at @s[tag=!fleeing,tag=hurt] run function luigis_mansion:animations/waiter/hurt
 execute at @s[tag=!hurt,tag=element_hurt] run function luigis_mansion:animations/waiter/hurt
 execute at @s[scores={LightX=-2147483648..}] run function luigis_mansion:other/cast_shadow/2_tall

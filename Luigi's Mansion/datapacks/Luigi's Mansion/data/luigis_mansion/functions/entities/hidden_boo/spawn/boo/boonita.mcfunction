@@ -1,1 +1,1 @@
-execute if entity @s[tag=boonita] run function luigis_mansion:spawn_entities/boo/boonita
+execute if entity @s[tag=boonita] run function luigis_mansion:spawn_entities/ghost/boo/boonita

@@ -1,2 +1,2 @@
-execute if entity @s[tag=fight] run function luigis_mansion_3ds_remake:entities/boolossus/tick/fight/hidden
-execute if entity @s[tag=!fight,tag=!split] run function luigis_mansion_3ds_remake:entities/boolossus/tick/balcony/hidden
+execute at @s[scores={Room=53}] run function luigis_mansion_3ds_remake:entities/boolossus/tick/balcony/hidden
+execute at @s[scores={Room=75}] run function luigis_mansion_3ds_remake:entities/boolossus/tick/fight/hidden

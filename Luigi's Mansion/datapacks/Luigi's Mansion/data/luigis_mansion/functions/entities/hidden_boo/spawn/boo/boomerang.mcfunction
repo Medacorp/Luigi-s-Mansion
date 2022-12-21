@@ -1,1 +1,1 @@
-execute if entity @s[tag=boomerang] run function luigis_mansion:spawn_entities/boo/boomerang
+execute if entity @s[tag=boomerang] run function luigis_mansion:spawn_entities/ghost/boo/boomerang

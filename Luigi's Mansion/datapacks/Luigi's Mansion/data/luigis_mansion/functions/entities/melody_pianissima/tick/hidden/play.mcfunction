@@ -71,6 +71,7 @@ execute if entity @s[scores={Dialog=2140}] if score #players Totals matches 2.. 
 scoreboard players set @s[scores={Dialog=2228}] AnimationProg 0
 tag @s[scores={Dialog=2228}] remove nod
 execute if entity @s[scores={Dialog=2228}] as @a[tag=same_room,tag=!spectator,tag=!looking_at_map] run function luigis_mansion:entities/player/animation/set/none
+execute if entity @s[scores={Dialog=2228}] run data modify entity @s ArmorItems[3].tag.scan_message set value {sender:"me",message:'{"translate":"luigis_mansion:message.melody_pianissima.scan.2"}',plural_message:'{"translate":"luigis_mansion:message.melody_pianissima.scan.2.more"}'}
 execute if entity @s[scores={Dialog=2228}] run scoreboard players set #conservatory Wave 4
 execute if entity @s[scores={Dialog=2228}] positioned 657 11 40 rotated -180 0 run function luigis_mansion:spawn_entities/vacuumable/haunted_object/haunted_music_sheet
 execute if entity @s[scores={Dialog=2228}] positioned 657 11 41 rotated -180 0 run function luigis_mansion:spawn_entities/vacuumable/haunted_object/haunted_music_sheet

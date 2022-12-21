@@ -87,6 +87,7 @@ execute if entity @s[scores={Dialog=68}] run teleport @s 725.5 20 31.1 2.25 0
 execute if entity @s[scores={Dialog=69}] run teleport @s 725.5 20 31.2 0 0
 execute if entity @s[scores={Dialog=70}] run teleport @s 725.5 20 31.3 0 0
 execute if entity @s[scores={Dialog=71..81}] run teleport @s 725.5 20 31.4 0 0
+execute if entity @s[scores={Dialog=72}] run data modify storage luigis_mansion:data entity set value {can_talk_to:0b}
 execute if entity @s[scores={Dialog=72}] positioned 718 20 35 run function luigis_mansion:spawn_entities/e_gadd
 execute if entity @s[scores={Dialog=72}] positioned 718 20 35 run tag @e[distance=..0.1,tag=e_gadd] add dialog
 execute if entity @s[scores={Dialog=72}] positioned 718 20 35 run tag @e[distance=..0.1,tag=e_gadd_head] add dialog
@@ -187,17 +188,17 @@ execute if entity @s[scores={Dialog=1045}] if score #players Totals matches 2.. 
 execute if entity @s[scores={Dialog=1045}] at @e[tag=e_gadd,tag=dialog,limit=1] run playsound luigis_mansion:entity.e_gadd.talk.oui_oydohroh_tahmentahkeh neutral @a[tag=same_room] ~ ~ ~ 1
 execute if entity @s[scores={Dialog=1187}] run tag @e[tag=e_gadd,tag=dialog,limit=1] remove nod
 execute if entity @s[scores={Dialog=1187}] run scoreboard players set @e[tag=e_gadd_head,tag=dialog,limit=1] AnimationProg 0
+execute if entity @s[scores={Dialog=1187}] run data modify storage luigis_mansion:data entity set value {appear_type:"beta"}
 execute if entity @s[scores={Dialog=1187}] positioned 718 20 29 run function luigis_mansion:spawn_entities/ghost/forced_spawn/gold_ghost
 execute if entity @s[scores={Dialog=1187}] positioned 718 20 29 run tag @e[distance=..0.1,tag=gold_ghost] add dialog
-execute if entity @s[scores={Dialog=1187}] positioned 718 20 29 run tag @e[distance=..0.1,tag=gold_ghost] add beta_appear
 execute if entity @s[scores={Dialog=1187}] positioned 718 20 29 as @e[distance=..0.1,tag=gold_ghost,tag=dialog] at @s facing entity @e[tag=e_gadd,tag=dialog,limit=1] feet rotated ~ 0 run teleport @s ~ ~ ~ ~ ~
+execute if entity @s[scores={Dialog=1199}] run data modify storage luigis_mansion:data entity set value {appear_type:"beta"}
 execute if entity @s[scores={Dialog=1199}] positioned 718 20 26 run function luigis_mansion:spawn_entities/ghost/forced_spawn/gold_ghost
 execute if entity @s[scores={Dialog=1199}] positioned 718 20 26 run tag @e[distance=..0.1,tag=gold_ghost] add dialog
-execute if entity @s[scores={Dialog=1199}] positioned 718 20 26 run tag @e[distance=..0.1,tag=gold_ghost] add beta_appear
 execute if entity @s[scores={Dialog=1199}] positioned 718 20 26 as @e[distance=..0.1,tag=gold_ghost,tag=dialog] at @s facing entity @e[tag=e_gadd,tag=dialog,limit=1] feet rotated ~ 0 run teleport @s ~ ~ ~ ~ ~
+execute if entity @s[scores={Dialog=1212}] run data modify storage luigis_mansion:data entity set value {appear_type:"beta"}
 execute if entity @s[scores={Dialog=1212}] positioned 720 20 27 run function luigis_mansion:spawn_entities/ghost/forced_spawn/gold_ghost
 execute if entity @s[scores={Dialog=1212}] positioned 720 20 27 run tag @e[distance=..0.1,tag=gold_ghost] add dialog
-execute if entity @s[scores={Dialog=1212}] positioned 720 20 27 run tag @e[distance=..0.1,tag=gold_ghost] add beta_appear
 execute if entity @s[scores={Dialog=1212}] positioned 720 20 27 as @e[distance=..0.1,tag=gold_ghost,tag=dialog] at @s facing entity @e[tag=e_gadd,tag=dialog,limit=1] feet rotated ~ 0 run teleport @s ~ ~ ~ ~ ~
 execute if entity @s[scores={Dialog=1252}] as @e[tag=gold_ghost,tag=dialog] at @s run playsound luigis_mansion:entity.gold_ghost.ambient hostile @a[tag=same_room] ~ ~ ~ 1
 execute if entity @s[scores={Dialog=1272}] as @e[tag=gold_ghost,tag=dialog] at @s run playsound luigis_mansion:entity.gold_ghost.ambient hostile @a[tag=same_room] ~ ~ ~ 1

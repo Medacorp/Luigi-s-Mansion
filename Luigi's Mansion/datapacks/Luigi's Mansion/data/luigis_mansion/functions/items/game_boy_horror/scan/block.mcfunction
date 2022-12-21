@@ -1,2 +1,2 @@
 function luigis_mansion:room/interactions
-tag @s add target
+tag @s add scanned_block

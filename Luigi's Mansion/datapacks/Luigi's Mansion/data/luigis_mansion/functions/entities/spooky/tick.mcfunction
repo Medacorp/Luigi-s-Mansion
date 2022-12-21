@@ -17,7 +17,8 @@ scoreboard players set @s[scores={Sound=0},tag=fleeing,tag=!dying] Sound 40
 execute at @s[tag=!fleeing,tag=!hurt,scores={StunTime=0}] run function #luigis_mansion:entities/spooky/tick
 
 execute at @s[tag=vanish] run function luigis_mansion:entities/spooky/vanish
-execute at @s[tag=fleeing] run function luigis_mansion:animations/spooky/flee
+execute at @s[tag=fleeing,tag=!second_flee_state] run function luigis_mansion:animations/spooky/flee
+execute at @s[tag=fleeing,tag=second_flee_state] run function luigis_mansion:entities/spooky/second_flee_state
 execute at @s[tag=!fleeing,tag=hurt] run function luigis_mansion:animations/spooky/hurt
 
 execute at @s run teleport @s ~ ~-0.6 ~

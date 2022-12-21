@@ -11,7 +11,8 @@ scoreboard players set @s[scores={Sound=0},tag=fleeing,tag=!dying] Sound 40
 execute if entity @s[tag=!fleeing,tag=!hurt,scores={StunTime=0}] run function #luigis_mansion:entities/jarvis/tick
 
 execute if entity @s[tag=vanish] run function luigis_mansion:entities/jarvis/vanish
-execute at @s[tag=fleeing] run function luigis_mansion:animations/jarvis/flee
+execute at @s[tag=fleeing,tag=!second_flee_state] run function luigis_mansion:animations/jarvis/flee
+execute at @s[tag=fleeing,tag=second_flee_state] run function luigis_mansion:entities/jarvis/second_flee_state
 execute at @s[tag=!fleeing,tag=hurt] run function luigis_mansion:animations/jarvis/hurt
 
 execute at @s[scores={LightX=-2147483648..}] run function luigis_mansion:other/cast_shadow/1_tall

@@ -16,7 +16,8 @@ execute if entity @e[tag=same_room,tag=!spectator,tag=player,distance=..1.6,limi
 execute if entity @s[tag=!fleeing,tag=!hurt,scores={StunTime=0}] run function #luigis_mansion:entities/shivers/tick
 
 execute if entity @s[tag=vanish] run function luigis_mansion:entities/shivers/vanish
-execute at @s[tag=fleeing] run function luigis_mansion:animations/shivers/flee
+execute at @s[tag=fleeing,tag=!second_flee_state] run function luigis_mansion:animations/shivers/flee
+execute at @s[tag=fleeing,tag=second_flee_state] run function luigis_mansion:entities/shivers/second_flee_state
 execute at @s[tag=!fleeing,tag=hurt] run function luigis_mansion:animations/shivers/hurt
 
 scoreboard players reset #temp GhostNr

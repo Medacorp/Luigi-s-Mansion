@@ -15,11 +15,11 @@ execute if entity @s[scores={Sound=0},tag=fleeing,tag=!dying] run playsound luig
 execute if entity @s[scores={Sound=0},tag=!vanish,tag=!fleeing,tag=!attack,tag=!laugh,tag=!complain,tag=!appear,tag=!basher] run playsound luigis_mansion:entity.blue_twirler.ambient hostile @a[tag=same_room] ~ ~ ~ 1
 scoreboard players set @s[scores={Sound=0}] Sound 40
 
-execute if entity @a[tag=!spectator,distance=..0.7,limit=1] if entity @s[tag=!vanish,tag=!appear,tag=!dying,tag=!dead,tag=!captured,tag=!removed_from_existence,tag=!basher,tag=!hurt,tag=!fleeing,tag=!element_hurt] unless entity @s[tag=attack,tag=body_slam] run function luigis_mansion:entities/blue_twirler/collide
-execute if entity @s[tag=!punch,tag=!body_slam,tag=!basher] run function luigis_mansion:entities/blue_twirler/select_attack/earthquake
-execute if entity @s[tag=punch] run function luigis_mansion:entities/blue_twirler/select_attack/punch
-execute if entity @s[tag=body_slam] run function luigis_mansion:entities/blue_twirler/select_attack/body_slam
-execute if entity @s[tag=basher] run function luigis_mansion:entities/blue_twirler/select_attack/basher
+execute if entity @a[tag=!spectator,distance=..0.7,limit=1] if entity @s[tag=!vanish,tag=!appear,tag=!dying,tag=!dead,tag=!captured,tag=!removed_from_existence,tag=!basher,tag=!hurt,tag=!fleeing,tag=!element_hurt] unless entity @s[tag=attack,scores={AttackType=2}] run function luigis_mansion:entities/blue_twirler/collide
+execute if entity @s[scores={AttackType=0}] run function luigis_mansion:entities/blue_twirler/select_attack/punch
+execute if entity @s[scores={AttackType=1}] run function luigis_mansion:entities/blue_twirler/select_attack/basher
+execute if entity @s[scores={AttackType=2}] run function luigis_mansion:entities/blue_twirler/select_attack/body_slam
+execute if entity @s[scores={AttackType=3}] run function luigis_mansion:entities/blue_twirler/select_attack/earthquake
 
 execute at @s[tag=!hurt,tag=!element_hurt,tag=!fleeing,tag=!attack,tag=!collided,tag=!vanish,scores={StunTime=0}] unless entity @s[tag=appear,tag=beta_appear] facing entity @e[tag=same_room,tag=!spectator,tag=player,sort=nearest,limit=1] feet rotated ~ 0 run teleport @s ~ ~ ~ ~ ~
 execute at @s[tag=!hurt,tag=!element_hurt,tag=!fleeing,tag=!attack,tag=!collided,tag=!vanish,tag=!laugh,tag=!complain,tag=!appear,scores={StunTime=0}] run function luigis_mansion:entities/ghost/move
@@ -31,7 +31,8 @@ execute if entity @s[tag=vanish] run function luigis_mansion:entities/blue_twirl
 execute if entity @s[tag=appear,tag=!beta_appear] run function luigis_mansion:entities/blue_twirler/appear
 execute if entity @s[tag=appear,tag=beta_appear] run function luigis_mansion:entities/blue_twirler/beta_appear
 execute at @s[tag=!hurt,tag=!element_hurt,tag=!fleeing,tag=!attack,tag=!collided,tag=!vanish,tag=!laugh,tag=!complain,tag=!appear,scores={StunTime=0}] run function luigis_mansion:animations/twirler/haunt
-execute at @s[tag=fleeing] run function luigis_mansion:animations/twirler/flee
+execute at @s[tag=fleeing,tag=!second_flee_state] run function luigis_mansion:animations/twirler/flee
+execute at @s[tag=fleeing,tag=second_flee_state] run function luigis_mansion:entities/blue_twirler/second_flee_state
 execute at @s[tag=!fleeing,tag=hurt] run function luigis_mansion:animations/twirler/hurt
 execute at @s[tag=!hurt,tag=element_hurt] run function luigis_mansion:animations/twirler/hurt
 execute at @s[scores={LightX=-2147483648..}] run function luigis_mansion:other/cast_shadow/2_tall

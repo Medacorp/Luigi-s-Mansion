@@ -2,7 +2,7 @@ execute positioned 741 20 57 run function luigis_mansion:spawn_entities/ghost/ca
 execute positioned 740 20 61 run function luigis_mansion:spawn_entities/ghost/can_spawn_now/gold_ghost
 execute positioned 747 20 63 run function luigis_mansion:spawn_entities/ghost/can_spawn_now/gold_ghost
 execute positioned 744 20 68 run function luigis_mansion:spawn_entities/ghost/can_spawn_now/purple_puncher
+execute unless data storage luigis_mansion:data current_state.current_data{money_spawned:["nursery_speedy_spirit"]} run function luigis_mansion:entities/speedy_spirit/give_money/bills
+execute unless data storage luigis_mansion:data current_state.current_data{money_spawned:["nursery_speedy_spirit"]} run data modify storage luigis_mansion:data entity.loot.name set value "nursery_speedy_spirit"
 execute unless data storage luigis_mansion:data current_state.current_data{money_spawned:["nursery_speedy_spirit"]} positioned 741 20 67 run function luigis_mansion:spawn_entities/ghost/can_spawn_now/speedy_spirit
-execute positioned 741 20 67 as @e[tag=speedy_spirit,distance=..0.7] run function luigis_mansion:entities/speedy_spirit/give_money/bills
-execute positioned 741 20 67 as @e[tag=speedy_spirit,distance=..0.7] run data modify entity @s ArmorItems[3].tag.loot merge value {name:"nursery_speedy_spirit"}
 scoreboard players set #nursery Wave 100

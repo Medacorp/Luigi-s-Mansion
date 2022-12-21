@@ -7,8 +7,8 @@ execute as @e[scores={Room=32},type=!minecraft:marker] unless entity @s[gamemode
 
 execute as @a[gamemode=!spectator,scores={Room=32}] run function luigis_mansion:room/hidden/rec_room/tick_per_player
 
-execute at @s[tag=punching_bag,scores={Room=32,FurnitureSearch=0}] align y run fill ~ ~-4 ~ ~ ~-2 ~ minecraft:light_gray_stained_glass
-execute as @s[tag=punching_bag,scores={Room=32}] unless entity @s[scores={FurnitureSearch=0}] at @s align y run fill ~ ~-4 ~ ~ ~-2 ~ minecraft:air
+execute at @e[tag=punching_bag,scores={Room=32,FurnitureSearch=0}] align y run fill ~ ~-4 ~ ~ ~-2 ~ minecraft:light_gray_stained_glass
+execute as @e[tag=punching_bag,scores={Room=32}] unless entity @s[scores={FurnitureSearch=0}] at @s align y run fill ~ ~-4 ~ ~ ~-2 ~ minecraft:air
 
 function #luigis_mansion:room/hidden/rec_room/interactions/room
 

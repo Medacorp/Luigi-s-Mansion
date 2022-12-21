@@ -14,11 +14,11 @@ execute if entity @s[scores={GrabbedID=-2147483648..}] as @a[tag=grabbed] if sco
 execute if entity @s[scores={GrabbedID=-2147483648..}] if entity @a[tag=still_grabbed,limit=1] as @e[tag=chest] if score @s ID = #temp ID run tag @s add grabbed_model
 execute if entity @s[scores={ActionTime=1..20}] if score #mirrored Selected matches 0 run function luigis_mansion:entities/mirror_ghost/grab/normal
 execute if entity @s[scores={ActionTime=1..20}] if score #mirrored Selected matches 1 run function luigis_mansion:entities/mirror_ghost/grab/mirrored
-execute if entity @s[scores={ActionTime=20},tag=harmless] as @a[tag=still_grabbed,limit=1] run function luigis_mansion:entities/player/knockback/harmless_grab
-execute if entity @s[scores={ActionTime=20},tag=!harmless] as @a[tag=still_grabbed,limit=1] run function luigis_mansion:entities/player/knockback/harmfull_grab
+execute if entity @s[scores={ActionTime=20,AttackType=0}] as @a[tag=still_grabbed,limit=1] run function luigis_mansion:entities/player/knockback/harmless_grab
+execute if entity @s[scores={ActionTime=20,AttackType=1}] as @a[tag=still_grabbed,limit=1] run function luigis_mansion:entities/player/knockback/harmfull_grab
 execute if entity @s[scores={ActionTime=20..40}] unless entity @a[tag=still_grabbed,limit=1] run scoreboard players set @s ActionTime 41
 execute if entity @s[scores={ActionTime=20..40}] at @e[tag=grabbed_model,limit=1] run teleport @s ^ ^ ^-0.65 ~ ~
-execute if entity @s[scores={ActionTime=40},tag=!harmless] run scoreboard players add @a[tag=still_grabbed,limit=1] GrabbedShake 1
+execute if entity @s[scores={ActionTime=40,AttackType=1}] run scoreboard players add @a[tag=still_grabbed,limit=1] GrabbedShake 1
 tag @a[tag=still_grabbed,limit=1] remove still_grabbed
 tag @e[tag=grabbed_model,limit=1] remove grabbed_model
 scoreboard players reset #temp ID

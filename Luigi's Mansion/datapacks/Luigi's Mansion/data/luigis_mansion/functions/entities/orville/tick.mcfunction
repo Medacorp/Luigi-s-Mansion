@@ -14,7 +14,8 @@ scoreboard players set @s[scores={Sound=0},tag=fleeing,tag=!dying] Sound 40
 execute if entity @s[tag=!fleeing,tag=!hurt,scores={StunTime=0}] run function #luigis_mansion:entities/orville/tick
 
 execute if entity @s[tag=vanish] run function luigis_mansion:entities/orville/vanish
-execute at @s[tag=fleeing] run function luigis_mansion:animations/orville/flee
+execute at @s[tag=fleeing,tag=!second_flee_state] run function luigis_mansion:animations/orville/flee
+execute at @s[tag=fleeing,tag=second_flee_state] run function luigis_mansion:entities/orville/second_flee_state
 execute at @s[tag=!fleeing,tag=hurt] run function luigis_mansion:animations/orville/hurt
 
 scoreboard players reset #temp GhostNr

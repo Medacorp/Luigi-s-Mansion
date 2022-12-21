@@ -16,8 +16,8 @@ execute if entity @s[scores={Sound=0},tag=!vanish,tag=!fleeing,tag=!attack,tag=!
 scoreboard players set @s[scores={Sound=0}] Sound 40
 
 execute if entity @e[tag=same_room,tag=!spectator,tag=player,distance=..0.7,limit=1] unless entity @s[tag=!element_hurt,tag=!complain,tag=!laugh] if entity @s[tag=!vanish,tag=!appear,tag=!attack,tag=!basher,tag=!dying,tag=!dead,tag=!captured,tag=!removed_from_existence,tag=!hurt,tag=!fleeing,tag=!element_hurt] run function luigis_mansion:entities/red_grabbing_ghost/collide
-execute if entity @s[tag=!basher] run function luigis_mansion:entities/red_grabbing_ghost/select_attack/grab
-execute if entity @s[tag=basher] run function luigis_mansion:entities/red_grabbing_ghost/select_attack/basher
+execute if entity @s[scores={AttackType=0..1}] run function luigis_mansion:entities/red_grabbing_ghost/select_attack/grab
+execute if entity @s[scores={AttackType=2}] run function luigis_mansion:entities/red_grabbing_ghost/select_attack/basher
 
 execute at @s[tag=!hurt,tag=!element_hurt,tag=!fleeing,tag=!attack,tag=!collided,tag=!vanish,scores={StunTime=0}] facing entity @e[tag=same_room,tag=!spectator,tag=player,sort=nearest,limit=1] feet rotated ~ 0 run teleport @s ~ ~ ~ ~ ~
 execute at @s[tag=!hurt,tag=!element_hurt,tag=!fleeing,tag=!attack,tag=!collided,tag=!vanish,tag=!laugh,tag=!complain,tag=!appear,scores={StunTime=0}] run function luigis_mansion:entities/ghost/move
@@ -27,7 +27,8 @@ execute if entity @s[tag=!element_hurt,tag=!fleeing,tag=collided,scores={StunTim
 execute if entity @s[tag=vanish] run function luigis_mansion:entities/red_grabbing_ghost/vanish
 execute if entity @s[tag=appear] run function luigis_mansion:entities/red_grabbing_ghost/appear
 execute at @s[tag=!hurt,tag=!element_hurt,tag=!fleeing,tag=!attack,tag=!collided,tag=!vanish,tag=!laugh,tag=!complain,tag=!appear,scores={StunTime=0}] run function luigis_mansion:animations/grabbing_ghost/haunt
-execute at @s[tag=fleeing] run function luigis_mansion:animations/grabbing_ghost/flee
+execute at @s[tag=fleeing,tag=!second_flee_state] run function luigis_mansion:animations/grabbing_ghost/flee
+execute at @s[tag=fleeing,tag=second_flee_state] run function luigis_mansion:entities/red_grabbing_ghost/second_flee_state
 execute at @s[tag=!fleeing,tag=hurt] run function luigis_mansion:animations/grabbing_ghost/hurt
 execute at @s[tag=!hurt,tag=element_hurt] run function luigis_mansion:animations/grabbing_ghost/hurt
 execute at @s[scores={LightX=-2147483648..}] run function luigis_mansion:other/cast_shadow/1_tall

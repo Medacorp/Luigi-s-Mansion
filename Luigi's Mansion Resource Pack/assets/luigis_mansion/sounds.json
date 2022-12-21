@@ -990,6 +990,15 @@
         ],
         "subtitle": "luigis_mansion:subtitles.entity.bowser.attack"
     },
+    "entity.ceiling_surprise.attack": {
+        "sounds": [
+            {
+                "name": "luigis_mansion:entity/ceiling_ghost/attack",
+                "stream": false
+            }
+        ],
+        "subtitle": "luigis_mansion:subtitles.entity.ceiling_surprise.attack"
+    },
     "entity.ceiling_surprise.complain": {
         "sounds": [
             {
@@ -8013,6 +8022,15 @@
             }
         ],
         "subtitle": "luigis_mansion:subtitles.entity.speedy_spirit.flee"
+    },
+    "entity.speedy_spirit.complain": {
+        "sounds": [
+            {
+                "name": "luigis_mansion:entity/ghost/complain",
+                "stream": false
+            }
+        ],
+        "subtitle": "luigis_mansion:subtitles.entity.speedy_spirit.complain"
     },
     "entity.speedy_spirit.complain_basher": {
         "sounds": [

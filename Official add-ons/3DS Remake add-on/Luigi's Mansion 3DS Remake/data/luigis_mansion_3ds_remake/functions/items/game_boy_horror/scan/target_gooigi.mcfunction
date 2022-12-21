@@ -2,9 +2,11 @@ teleport @s ~ ~ ~ ~ ~
 execute store result score #interact PosX run data get entity @s Pos[0] 10
 execute store result score #interact PosY run data get entity @s Pos[1] 10
 execute store result score #interact PosZ run data get entity @s Pos[2] 10
-execute as @e[tag=furniture,tag=same_room] if data entity @s ArmorItems[3].tag.scan_message run function luigis_mansion:items/game_boy_horror/scan/target_furniture/root
-execute at @s[tag=!furniture_scanned] positioned ~-0.5 ~-0.5 ~-0.5 run tag @e[dx=0,dy=0,dz=0,tag=!scan_ignore,tag=!scanning_player,tag=!model_piece,tag=!hidden,tag=!interact,tag=!spectator,type=!minecraft:item_frame,nbt=!{Marker:1b},limit=1] add target
-execute at @s[tag=!furniture_scanned] unless entity @e[tag=target,limit=1] if block ~ ~ ~ minecraft:oak_button[face=floor] run function luigis_mansion:items/game_boy_horror/scan/block
-execute at @s[tag=!furniture_scanned] unless entity @e[tag=target,limit=1] if block ~ ~ ~ minecraft:oak_button[face=floor] run scoreboard players set #temp Steps 1
+execute as @e[tag=!furniture,tag=same_room] if data entity @s ArmorItems[3].tag.scan_message run function luigis_mansion:items/game_boy_horror/scan/target_entity/root
+execute at @s[tag=!entity_scanned] as @a[tag=same_room,tag=!scanning_player] run function luigis_mansion:items/game_boy_horror/scan/target_entity/player_root
+execute at @s[tag=!entity_scanned] as @e[tag=furniture,tag=same_room] if data entity @s ArmorItems[3].tag.scan_message run function luigis_mansion:items/game_boy_horror/scan/target_furniture/root
+execute at @s[tag=!furniture_scanned,tag=!entity_scanned] if block ~ ~ ~ minecraft:oak_button[face=floor] run function luigis_mansion:items/game_boy_horror/scan/block
+execute at @s[tag=!furniture_scanned,tag=!entity_scanned,tag=!scanned_block] if block ~ ~ ~ minecraft:oak_button[face=floor] run scoreboard players set #temp Steps 1
 scoreboard players add #temp Move 1
-execute at @s[tag=!furniture_scanned] if block ~ ~ ~ minecraft:air unless entity @e[tag=target,limit=1] positioned ^ ^ ^0.5 if score #temp Move matches ..200 run function luigis_mansion_3ds_remake:items/game_boy_horror/scan/target_gooigi
+execute at @s[tag=!furniture_scanned,tag=!entity_scanned,tag=!scanned_block] if score #temp Move matches 201 if entity @s[y_rotation=87..93,x_rotation=-23..-16] run tellraw @a[tag=same_room] {"translate":"chat.type.text","with":[{"selector":"@p[tag=scanning_player,gamemode=!spectator]","color":"green"},{"translate":"luigis_mansion_3ds_remake:message.player.scan_furniture.11"}]}
+execute at @s[tag=!furniture_scanned,tag=!entity_scanned,tag=!scanned_block] if block ~ ~ ~ minecraft:air positioned ^ ^ ^0.5 if score #temp Move matches ..200 run function luigis_mansion_3ds_remake:items/game_boy_horror/scan/target_gooigi

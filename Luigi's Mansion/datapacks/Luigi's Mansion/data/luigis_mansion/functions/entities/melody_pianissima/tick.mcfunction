@@ -14,7 +14,8 @@ scoreboard players set @s[scores={Sound=0},tag=fleeing,tag=!dying] Sound 40
 execute if entity @s[tag=!fleeing,tag=!hurt,scores={StunTime=0}] run function #luigis_mansion:entities/melody_pianissima/tick
 
 execute if entity @s[tag=vanish] run function luigis_mansion:entities/melody_pianissima/vanish
-execute at @s[tag=fleeing] run function luigis_mansion:animations/melody_pianissima/flee
+execute at @s[tag=fleeing,tag=!second_flee_state] run function luigis_mansion:animations/melody_pianissima/flee
+execute at @s[tag=fleeing,tag=second_flee_state] run function luigis_mansion:entities/melody_pianissima/second_flee_state
 execute at @s[tag=!fleeing,tag=hurt] run function luigis_mansion:animations/melody_pianissima/hurt
 
 scoreboard players reset #temp GhostNr

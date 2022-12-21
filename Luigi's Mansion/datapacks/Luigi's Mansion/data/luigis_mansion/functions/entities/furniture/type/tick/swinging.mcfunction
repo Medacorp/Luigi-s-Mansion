@@ -26,10 +26,6 @@ execute if score @s FurnitureVacuum matches 1.. if entity @s[scores={FurnitureZT
 execute if score @s FurnitureVacuum matches 0 if entity @s[scores={FurnitureZTarget=-900..900}] run scoreboard players operation @s FurnitureVacuum = @s FurnitureZTarget
 execute if score @s FurnitureVacuum matches ..-1 run scoreboard players operation @s FurnitureVacuum *= #-1 Constants
 
-execute if entity @s[tag=punching_bag,scores={FurnitureVacuum=0}] align y run fill ~ ~-4 ~ ~ ~-2 ~ minecraft:light_gray_stained_glass
-execute if entity @s[tag=punching_bag] unless entity @s[scores={FurnitureVacuum=0}] align y run fill ~ ~-4 ~ ~ ~-2 ~ minecraft:air
-execute if entity @s[tag=punching_bag,tag=remove_from_existence] align y run fill ~ ~-4 ~ ~ ~-2 ~ minecraft:air
-
 scoreboard players operation #temp FurnitureVacuum = @s FurnitureVacuum
 scoreboard players operation #temp FurnitureVacuum /= #2 Constants
 execute if score @s[tag=!searched] FurnitureVacuum >= @s FurnitureSearch run function luigis_mansion:entities/furniture/search/swing

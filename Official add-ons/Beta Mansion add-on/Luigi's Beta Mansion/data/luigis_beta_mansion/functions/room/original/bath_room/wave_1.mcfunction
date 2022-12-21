@@ -1,3 +1,4 @@
+data modify storage luigis_mansion:data entity set value {scan_message:{sender:"me",message:'{"translate":"luigis_mansion:message.miss_petunia.scan"}'}}
 execute positioned 651 12 23 run function luigis_mansion:spawn_entities/portrait_ghost/miss_petunia
 execute positioned 658 11 27 run function luigis_beta_mansion:spawn_entities/vacuumable/boo
 execute positioned 658 11 27 run function luigis_beta_mansion:spawn_entities/vacuumable/boo

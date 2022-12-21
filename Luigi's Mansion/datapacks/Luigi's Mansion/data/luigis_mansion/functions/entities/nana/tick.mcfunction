@@ -17,7 +17,8 @@ execute if entity @s[tag=!fleeing,tag=!hurt,scores={StunTime=0}] run function #l
 
 execute if entity @s[tag=!vanish,tag=!fleeing,tag=!hurt,tag=!visible_rocking_chair] run function luigis_mansion:entities/nana/show_rocking_chair
 execute if entity @s[tag=vanish] run function luigis_mansion:entities/nana/vanish
-execute at @s[tag=fleeing] run function luigis_mansion:animations/nana/flee
+execute at @s[tag=fleeing,tag=!second_flee_state] run function luigis_mansion:animations/nana/flee
+execute at @s[tag=fleeing,tag=second_flee_state] run function luigis_mansion:entities/nana/second_flee_state
 execute if entity @s[tag=!fleeing,tag=hurt] run function luigis_mansion:entities/nana/drop_stuff
 execute at @s[tag=!fleeing,tag=hurt] run function luigis_mansion:animations/nana/hurt
 

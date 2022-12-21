@@ -16,7 +16,7 @@ execute if entity @s[scores={AnimationProg=1..8}] store result entity @e[tag=thi
 execute if entity @s[scores={AnimationProg=9..16}] store result entity @e[tag=this_model,limit=1] Pose.Head[0] float 1 run scoreboard players remove #temp Time 1
 scoreboard players reset #temp Time
 scoreboard players set @s[scores={AnimationProg=16..}] AnimationProg 0
-data modify entity @s[scores={AnimationProg=4},tag=!fight] ArmorItems[3].tag merge value {CustomModelData:12}
-data modify entity @s[scores={AnimationProg=12},tag=!fight] ArmorItems[3].tag merge value {CustomModelData:10}
-data modify entity @s[scores={AnimationProg=4},tag=fight] ArmorItems[3].tag merge value {CustomModelData:15}
-data modify entity @s[scores={AnimationProg=12},tag=fight] ArmorItems[3].tag merge value {CustomModelData:13}
+data modify entity @s[scores={AnimationProg=4},tag=!big] ArmorItems[3].tag merge value {CustomModelData:12}
+data modify entity @s[scores={AnimationProg=12},tag=!big] ArmorItems[3].tag merge value {CustomModelData:10}
+data modify entity @s[scores={AnimationProg=4},tag=big] ArmorItems[3].tag merge value {CustomModelData:15}
+data modify entity @s[scores={AnimationProg=12},tag=big] ArmorItems[3].tag merge value {CustomModelData:13}

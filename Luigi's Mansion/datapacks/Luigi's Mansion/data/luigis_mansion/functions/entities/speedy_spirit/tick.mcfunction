@@ -26,7 +26,8 @@ execute if entity @s[tag=vanish] run function luigis_mansion:entities/speedy_spi
 execute if entity @s[tag=appear,tag=!beta_appear] run function luigis_mansion:entities/speedy_spirit/appear
 execute if entity @s[tag=appear,tag=beta_appear] run function luigis_mansion:entities/speedy_spirit/beta_appear
 execute at @s[tag=!hurt,tag=!element_hurt,tag=!fleeing,tag=!attack,tag=!collided,tag=!vanish,tag=!laugh,tag=!appear,scores={StunTime=0}] run function luigis_mansion:animations/ghost/flee
-execute at @s[tag=fleeing] run function luigis_mansion:animations/ghost/flee
+execute at @s[tag=fleeing,tag=!second_flee_state] run function luigis_mansion:animations/ghost/flee
+execute at @s[tag=fleeing,tag=second_flee_state] run function luigis_mansion:entities/speedy_spirit/second_flee_state
 execute at @s[tag=!fleeing,tag=hurt] run function luigis_mansion:animations/ghost/hurt
 execute at @s[tag=!hurt,tag=element_hurt] run function luigis_mansion:animations/ghost/hurt
 execute at @s[scores={LightX=-2147483648..}] run function luigis_mansion:other/cast_shadow/2_tall

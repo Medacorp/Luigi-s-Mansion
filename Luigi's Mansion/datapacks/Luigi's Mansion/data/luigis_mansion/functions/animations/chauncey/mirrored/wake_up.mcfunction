@@ -11,5 +11,5 @@ execute if entity @s[scores={AnimationProg=16..20}] store result entity @s Pose.
 scoreboard players reset #temp Time
 execute if entity @s[scores={AnimationProg=20..}] run function luigis_mansion:animations/chauncey/bring_home
 scoreboard players set @s[scores={AnimationProg=20..}] AnimationProg 0
-data modify entity @s[scores={AnimationProg=1},tag=!fight] ArmorItems[3].tag merge value {CustomModelData:10}
-data modify entity @s[scores={AnimationProg=1},tag=fight] ArmorItems[3].tag merge value {CustomModelData:13}
+data modify entity @s[scores={AnimationProg=1},tag=!big] ArmorItems[3].tag merge value {CustomModelData:10}
+data modify entity @s[scores={AnimationProg=1},tag=big] ArmorItems[3].tag merge value {CustomModelData:13}

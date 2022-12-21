@@ -5,4 +5,6 @@ setblock ~ ~1 ~ minecraft:moving_piston
 execute as @e[tag=this_entity,tag=mario,limit=1] store result score @s PassiveNr run data get storage luigis_mansion:data passive_nr
 execute as @e[tag=this_entity,tag=mario,limit=1] store result storage luigis_mansion:data passive_nr int 1 run scoreboard players add @s PassiveNr 1
 scoreboard players operation @e[tag=this_entity,tag=model_piece,limit=1] PassiveNr = @e[tag=this_entity,tag=mario,limit=1] PassiveNr
+data modify entity @e[tag=this_entity,tag=mario,limit=1] ArmorItems[3].tag.scan_message set from storage luigis_mansion:data entity.scan_message
 tag @e[tag=this_entity] remove this_entity
+data remove storage luigis_mansion:data entity

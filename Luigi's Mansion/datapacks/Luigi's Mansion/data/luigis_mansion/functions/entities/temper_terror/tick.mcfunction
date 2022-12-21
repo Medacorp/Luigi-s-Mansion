@@ -15,10 +15,10 @@ execute if entity @s[scores={Sound=0},tag=fleeing,tag=!dying] run playsound luig
 execute if entity @s[scores={Sound=0},tag=!vanish,tag=!fleeing,tag=!attack,tag=!smug,tag=!laugh,tag=!complain,tag=!appear,tag=!basher] run playsound luigis_mansion:entity.temper_terror.ambient hostile @a[tag=same_room] ~ ~ ~ 1
 scoreboard players set @s[scores={Sound=0}] Sound 40
 
-execute if entity @e[tag=same_room,tag=!spectator,tag=player,distance=..0.7,limit=1] if entity @s[tag=!vanish,tag=!appear,tag=!dying,tag=!dead,tag=!captured,tag=!removed_from_existence,tag=!basher,tag=!no_attack,tag=!hurt,tag=!fleeing,tag=!element_hurt] run function luigis_mansion:entities/temper_terror/collide
-execute if entity @s[tag=!basher,tag=!no_attack] run function luigis_mansion:entities/temper_terror/select_attack/punch
-execute if entity @s[tag=basher] run function luigis_mansion:entities/temper_terror/select_attack/basher
-execute if entity @s[tag=no_attack] run function luigis_mansion:entities/temper_terror/select_attack/laugh
+execute if entity @e[tag=same_room,tag=!spectator,tag=player,distance=..0.7,limit=1] if entity @s[tag=!vanish,tag=!appear,tag=!dying,tag=!dead,tag=!captured,tag=!removed_from_existence,scores={AttackType=0},tag=!hurt,tag=!fleeing,tag=!element_hurt] run function luigis_mansion:entities/temper_terror/collide
+execute if entity @s[scores={AttackType=0}] run function luigis_mansion:entities/temper_terror/select_attack/punch
+execute if entity @s[scores={AttackType=1}] run function luigis_mansion:entities/temper_terror/select_attack/basher
+execute if entity @s[scores={AttackType=2}] run function luigis_mansion:entities/temper_terror/select_attack/laugh
 
 execute at @s[tag=!hurt,tag=!element_hurt,tag=!fleeing,tag=!attack,tag=!collided,tag=!vanish,scores={StunTime=0}] unless entity @s[tag=appear,tag=beta_appear] facing entity @e[tag=same_room,tag=!spectator,tag=player,sort=nearest,limit=1] feet rotated ~ 0 run teleport @s ~ ~ ~ ~ ~
 execute at @s[tag=!hurt,tag=!element_hurt,tag=!fleeing,tag=!attack,tag=!collided,tag=!smug,tag=!vanish,tag=!laugh,tag=!complain,tag=!appear,scores={StunTime=0}] run function luigis_mansion:entities/ghost/move
@@ -31,7 +31,8 @@ execute if entity @s[tag=smug] run function luigis_mansion:entities/temper_terro
 execute if entity @s[tag=appear,tag=!beta_appear] run function luigis_mansion:entities/temper_terror/appear
 execute if entity @s[tag=appear,tag=beta_appear] run function luigis_mansion:entities/temper_terror/beta_appear
 execute at @s[tag=!hurt,tag=!element_hurt,tag=!fleeing,tag=!attack,tag=!collided,tag=!smug,tag=!vanish,tag=!laugh,tag=!complain,tag=!appear,scores={StunTime=0}] run function luigis_mansion:animations/ghost/haunt
-execute at @s[tag=fleeing] run function luigis_mansion:animations/ghost/flee
+execute at @s[tag=fleeing,tag=!second_flee_state] run function luigis_mansion:animations/ghost/flee
+execute at @s[tag=fleeing,tag=second_flee_state] run function luigis_mansion:entities/temper_terror/second_flee_state
 execute at @s[tag=!fleeing,tag=hurt] run function luigis_mansion:animations/ghost/hurt
 execute at @s[tag=!hurt,tag=element_hurt] run function luigis_mansion:animations/ghost/hurt
 execute at @s[scores={LightX=-2147483648..}] run function luigis_mansion:other/cast_shadow/2_tall

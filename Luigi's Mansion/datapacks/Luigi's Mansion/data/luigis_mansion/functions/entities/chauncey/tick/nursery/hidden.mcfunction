@@ -25,10 +25,11 @@ execute if entity @s[scores={Dialog=10},tag=scream_wake] run playsound luigis_ma
 execute if entity @s[scores={Dialog=30},tag=scream_wake] run playsound luigis_mansion:entity.chauncey.scream_wake hostile @a[tag=same_room] ~ ~ ~ 1
 scoreboard players set @s[scores={Dialog=51}] AnimationProg 0
 execute if entity @s[scores={Dialog=51}] run tag @e[scores={Room=10},tag=door,tag=frame] add blockade
+execute if entity @s[scores={Dialog=51..168}] as @a[tag=same_room,gamemode=!spectator,scores={IdleTime=0..},tag=!looking_at_map] run function luigis_mansion:entities/player/animation/set/stand_still
+data modify entity @s ArmorItems[3].tag.scan_message set value {sender:"me",message:'{"translate":"luigis_mansion:message.chauncey.scan.2"}'}
 tag @s[scores={Dialog=51}] remove wake_up
 tag @s[scores={Dialog=51}] remove scream_wake
 tag @s[scores={Dialog=51}] add yawn
-execute if entity @s[scores={Dialog=51..169}] as @a[tag=same_room,gamemode=!spectator,scores={IdleTime=0..},tag=!looking_at_map] run function luigis_mansion:entities/player/animation/set/stand_still
 execute if entity @s[scores={Dialog=51}] run teleport @s 748 21 -55
 execute if entity @s[scores={Dialog=51..168}] as @a[tag=same_room,tag=!spectator,scores={MusicType=7}] run function luigis_mansion:other/music/set/lets_play
 execute if entity @s[scores={Dialog=52..},tag=!attack,tag=!vanish] facing entity @e[tag=same_room,tag=!spectator,tag=player,sort=nearest,limit=1] feet rotated ~ 0 run teleport @s ~ ~ ~ ~ ~

@@ -1,4 +1,5 @@
 tag @s add visible
+data modify storage luigis_mansion:data tag set from entity @s ArmorItems[3].tag
 data modify entity @s[tag=blue_clockwork_soldier] ArmorItems[3] set value {id:"minecraft:diamond_pickaxe",Count:1b,tag:{Unbreakable:1b,Damage:1,CustomModelData:71}}
 execute if entity @s[tag=blue_clockwork_soldier] run data modify entity @e[tag=this_model,tag=body,limit=1] ArmorItems[3] set value {id:"minecraft:diamond_pickaxe",Count:1b,tag:{Unbreakable:1b,Damage:1,CustomModelData:73}}
 execute if score #mirrored Selected matches 0 if entity @s[tag=blue_clockwork_soldier] run data modify entity @e[tag=this_model,tag=right_arm,limit=1] ArmorItems[3] set value {id:"minecraft:diamond_pickaxe",Count:1b,tag:{Unbreakable:1b,Damage:2,CustomModelData:72}}
@@ -26,3 +27,5 @@ execute if score #mirrored Selected matches 1 if entity @s[tag=green_clockwork_s
 execute if entity @s[tag=green_clockwork_soldier] run data modify entity @e[tag=this_model,tag=right_leg,limit=1] ArmorItems[3] set value {id:"minecraft:diamond_pickaxe",Count:1b,tag:{Unbreakable:1b,Damage:2,CustomModelData:76}}
 execute if entity @s[tag=green_clockwork_soldier] run data modify entity @e[tag=this_model,tag=left_leg,limit=1] ArmorItems[3] set value {id:"minecraft:diamond_pickaxe",Count:1b,tag:{Unbreakable:1b,Damage:3,CustomModelData:76}}
 data modify entity @s CustomNameVisible set value 1b
+data modify entity @s ArmorItems[3].tag set from storage luigis_mansion:data tag
+data remove storage luigis_mansion:data tag

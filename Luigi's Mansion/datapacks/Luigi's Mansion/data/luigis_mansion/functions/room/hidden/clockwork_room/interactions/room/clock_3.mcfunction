@@ -10,7 +10,7 @@ execute if score #clockwork_room_clock_3 Searched matches 800 run playsound luig
 execute if score #clockwork_room_clock_3 Searched matches 790 run playsound luigis_mansion:furniture.clock.winding_up block @a[scores={Room=62}] 684 121 22 1
 execute if score #clockwork_room_clock_3 Searched matches 780 run playsound luigis_mansion:furniture.clock.winding_up block @a[scores={Room=62}] 684 121 22 1
 execute if score #clockwork_room_clock_3 Searched matches 770 run playsound luigis_mansion:furniture.clock.winding_up block @a[scores={Room=62}] 684 121 22 1
-execute if score #clockwork_room_clock_3 Searched matches 40 run stopsound @a block luigis_mansion:block.clock.music_box
+execute if score #clockwork_room_clock_3 Searched matches 40 run stopsound @a[tag=same_room] block luigis_mansion:block.clock.music_box
 execute if score #clockwork_room_clock_3 Searched matches 40 run playsound luigis_mansion:furniture.clock.winding_down block @a[scores={Room=62}] 684 121 22 1
 execute if score #clockwork_room_clock_3 Searched matches 30 run playsound luigis_mansion:furniture.clock.winding_down block @a[scores={Room=62}] 684 121 22 1
 execute if score #clockwork_room_clock_3 Searched matches 20 run playsound luigis_mansion:furniture.clock.winding_down block @a[scores={Room=62}] 684 121 22 1

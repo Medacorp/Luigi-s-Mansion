@@ -9,6 +9,7 @@ execute if entity @s[scores={Sound=0},tag=fleeing,tag=!dying] run playsound luig
 scoreboard players set @s[scores={Sound=0},tag=fleeing,tag=!dying] Sound 40
 
 execute if entity @e[tag=same_room,tag=!spectator,tag=player,distance=..0.7,limit=1] if entity @s[tag=!vanish,tag=!appear] if entity @s[tag=!dying,tag=!dead,tag=!captured,tag=!removed_from_existence,tag=!hurt,tag=!fleeing,tag=!element_hurt] run function luigis_mansion:entities/ceiling_surprise/collide
+execute if entity @s[tag=!element_hurt,tag=!fleeing,tag=!collided,tag=attack,scores={StunTime=0}] run function luigis_mansion:entities/ceiling_surprise/attack
 
 execute at @s[tag=!hurt,tag=!element_hurt,tag=!fleeing,tag=!collided,tag=!appear,tag=!vanish,scores={StunTime=0,SpawnTime=20..}] facing entity @e[tag=same_room,tag=!spectator,tag=player,sort=nearest,limit=1] feet rotated ~ 0 run teleport @s ~ ~ ~ ~ ~
 execute if entity @s[tag=!hurt,tag=!element_hurt,tag=!fleeing,tag=!collided,tag=laugh,tag=!vanish,scores={StunTime=0}] run function luigis_mansion:entities/ceiling_surprise/laugh
@@ -17,7 +18,8 @@ execute if entity @s[tag=!element_hurt,tag=!fleeing,tag=collided,tag=!vanish,sco
 execute if entity @s[tag=vanish] run function luigis_mansion:entities/ceiling_surprise/vanish
 execute if entity @s[tag=appear] run function luigis_mansion:entities/ceiling_surprise/appear
 execute at @s[tag=!hurt,tag=!element_hurt,tag=!fleeing,tag=!collided,tag=!vanish,tag=!laugh,tag=!complain,tag=!appear,scores={StunTime=0}] run function luigis_mansion:animations/ceiling_ghost/haunt
-execute at @s[tag=fleeing] run function luigis_mansion:animations/ceiling_ghost/flee
+execute at @s[tag=fleeing,tag=!second_flee_state] run function luigis_mansion:animations/ceiling_ghost/flee
+execute at @s[tag=fleeing,tag=second_flee_state] run function luigis_mansion:entities/ceiling_surprise/second_flee_state
 execute at @s[tag=!fleeing,tag=hurt] run function luigis_mansion:animations/ceiling_ghost/hurt
 execute at @s[tag=!hurt,tag=element_hurt] run function luigis_mansion:animations/ceiling_ghost/hurt
 execute at @s[scores={LightX=-2147483648..}] run function luigis_mansion:other/cast_shadow/ceiling_ghost

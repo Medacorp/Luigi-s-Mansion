@@ -8,7 +8,6 @@ scoreboard players operation #temp FurnitureSizeW = @s FurnitureSizeW
 scoreboard players operation #temp FurnitureSizeH = @s FurnitureSizeH
 scoreboard players operation #temp FurnitureSizeW /= #2 Constants
 execute if entity @s[tag=!hanging_furniture,tag=!standing_furniture] run scoreboard players operation #temp FurnitureSizeH /= #2 Constants
-scoreboard players operation #temp FurnitureSizeZ /= #2 Constants
 scoreboard players operation #temp PosX -= #temp FurnitureSizeW
 execute if entity @s[tag=!standing_furniture] run scoreboard players operation #temp PosY -= #temp FurnitureSizeH
 scoreboard players operation #temp PosZ -= #temp FurnitureSizeW

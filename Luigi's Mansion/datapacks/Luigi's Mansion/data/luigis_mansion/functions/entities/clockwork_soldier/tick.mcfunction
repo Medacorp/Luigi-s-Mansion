@@ -18,7 +18,8 @@ scoreboard players set @s[scores={Sound=0},tag=fleeing,tag=!dying] Sound 40
 execute if entity @s[tag=!hurt,tag=!fleeing,scores={StunTime=0}] run function #luigis_mansion:entities/clockwork_soldier/tick
 
 execute if entity @s[tag=vanish] run function luigis_mansion:entities/clockwork_soldier/vanish
-execute at @s[tag=fleeing] run function luigis_mansion:animations/clockwork_soldier/flee
+execute at @s[tag=fleeing,tag=!second_flee_state] run function luigis_mansion:animations/clockwork_soldier/flee
+execute at @s[tag=fleeing,tag=second_flee_state] run function luigis_mansion:entities/clockwork_soldier/second_flee_state
 execute if entity @s[tag=!fleeing,tag=hurt] run function luigis_mansion:entities/clockwork_soldier/lose_legs
 execute at @s[tag=!fleeing,tag=hurt] run function luigis_mansion:animations/clockwork_soldier/hurt
 

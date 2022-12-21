@@ -1,4 +1,4 @@
-summon minecraft:armor_stand ~ ~0.6 ~ {CustomName:'{"translate":"luigis_mansion:entity.clockwork_soldiers"}',Invisible:1b,NoGravity:1b,Marker:0b,CustomNameVisible:0b,Invulnerable:1b,ArmorItems:[{},{},{},{}],Pose:{Head:[0.0f,0.0f,0.01f]},Tags:["clockwork_soldier","blue_clockwork_soldier","portrait_ghost","portrait_ghost_pop","pearl_dropper","ghost","this_entity"],DisabledSlots:2039583}
+summon minecraft:armor_stand ~ ~0.6 ~ {CustomName:'{"translate":"luigis_mansion:entity.clockwork_soldiers"}',Invisible:1b,NoGravity:1b,Marker:0b,CustomNameVisible:0b,Invulnerable:1b,ArmorItems:[{},{},{},{id:"minecraft:stone_button",Count:1b}],Pose:{Head:[0.0f,0.0f,0.01f]},Tags:["clockwork_soldier","blue_clockwork_soldier","portrait_ghost","portrait_ghost_pop","pearl_dropper","affected_by_vacuum","ghost","this_entity"],DisabledSlots:2039583}
 summon minecraft:armor_stand ~ ~0.6 ~ {CustomName:'{"translate":"luigis_mansion:entity.clockwork_soldiers"}',Invisible:1b,NoGravity:1b,Marker:1b,CustomNameVisible:0b,Invulnerable:1b,ArmorItems:[{},{},{},{}],Pose:{Head:[0.0f,0.0f,0.01f]},Tags:["model_piece","found_owner","body","this_entity"],DisabledSlots:2039583}
 summon minecraft:armor_stand ~ ~0.6 ~ {CustomName:'{"translate":"luigis_mansion:entity.clockwork_soldiers"}',Invisible:1b,NoGravity:1b,Marker:1b,CustomNameVisible:0b,Invulnerable:1b,ArmorItems:[{},{},{},{}],Pose:{Head:[0.0f,0.0f,0.01f]},Tags:["model_piece","found_owner","right_arm","this_entity"],DisabledSlots:2039583}
 summon minecraft:armor_stand ~ ~0.6 ~ {CustomName:'{"translate":"luigis_mansion:entity.clockwork_soldiers"}',Invisible:1b,NoGravity:1b,Marker:1b,CustomNameVisible:0b,Invulnerable:1b,ArmorItems:[{},{},{},{}],Pose:{Head:[0.0f,0.0f,0.01f]},Tags:["model_piece","found_owner","left_arm","this_entity"],DisabledSlots:2039583}
@@ -28,4 +28,16 @@ scoreboard players set @e[tag=clockwork_soldier,tag=this_entity,limit=1] HeartOf
 scoreboard players set @e[tag=clockwork_soldier,tag=this_entity,limit=1] EntitySizeW 10
 scoreboard players set @e[tag=clockwork_soldier,tag=this_entity,limit=1] EntitySizeH 28
 scoreboard players set @e[tag=clockwork_soldier,tag=this_entity,limit=1] EntityYOffset 8
+data modify entity @e[tag=clockwork_soldier,tag=this_entity,limit=1] ArmorItems[3].tag.scan_message set from storage luigis_mansion:data entity.scan_message
+execute if data storage luigis_mansion:data entity{can_talk_to:1b} run tag @e[tag=clockwork_soldier,tag=this_entity,limit=1] add can_talk_to
+execute if data storage luigis_mansion:data entity{drops_pearls:0b} run tag @e[tag=clockwork_soldier,tag=this_entity,limit=1] remove pearl_dropper
+execute if data storage luigis_mansion:data entity{drops_poison_mushrooms:0b} run tag @e[tag=clockwork_soldier,tag=this_entity,limit=1] add no_poison_mushroom_dropping
+execute if data storage luigis_mansion:data entity.health as @e[tag=clockwork_soldier,tag=this_entity,limit=1] store result score @s Health store result score @s LastHealth store result score @s PrevHealth run data get storage luigis_mansion:data entity.health
+execute if data storage luigis_mansion:data entity.max_health as @e[tag=clockwork_soldier,tag=this_entity,limit=1] store result score @s MaxHealth run data get storage luigis_mansion:data entity.max_health
+execute if data storage luigis_mansion:data entity.top_vacuum_damage as @e[tag=clockwork_soldier,tag=this_entity,limit=1] store result score @s TopVacuumDamage run data get storage luigis_mansion:data entity.top_vacuum_damage
+execute if data storage luigis_mansion:data entity.speed as @e[tag=clockwork_soldier,tag=this_entity,limit=1] store result score @s Move run data get storage luigis_mansion:data entity.speed
+execute if data storage luigis_mansion:data entity.flee_speed as @e[tag=clockwork_soldier,tag=this_entity,limit=1] store result score @s MoveFlee run data get storage luigis_mansion:data entity.flee_speed
+execute if data storage luigis_mansion:data entity.loot run data modify entity @e[tag=clockwork_soldier,tag=this_entity,limit=1] ArmorItems[3].tag.loot set from storage luigis_mansion:data entity.loot
+execute if data storage luigis_mansion:data entity.second_flee_damage as @e[tag=clockwork_soldier,tag=this_entity,limit=1] store result score @s SecondFleeDamage run data get storage luigis_mansion:data entity.second_flee_damage
 tag @e[tag=this_entity] remove this_entity
+data remove storage luigis_mansion:data entity

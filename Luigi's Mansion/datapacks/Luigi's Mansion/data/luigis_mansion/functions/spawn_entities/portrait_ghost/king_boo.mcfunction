@@ -1,4 +1,4 @@
-summon minecraft:armor_stand ~ ~ ~ {CustomName:'{"translate":"luigis_mansion:entity.king_boo"}',Invisible:1b,NoGravity:1b,Marker:0b,CustomNameVisible:1b,Invulnerable:1b,ArmorItems:[{},{},{},{id:"minecraft:diamond_pickaxe",Count:1b,tag:{Unbreakable:1b,Damage:1,CustomModelData:86}}],HandItems:[{id:"minecraft:diamond_pickaxe",Count:1b,tag:{Unbreakable:1b,Damage:2,CustomModelData:86}},{id:"minecraft:diamond_pickaxe",Count:1b,tag:{Unbreakable:1b,Damage:3,CustomModelData:86}}],Pose:{RightArm:[0.0f,0.0f,90.0f],RightArm:[0.0f,0.0f,-90.0f],Head:[0.0f,0.0f,0.0f]},Tags:["king_boo","ghost","visible","portrait_ghost","this_entity"]}
+summon minecraft:armor_stand ~ ~ ~ {CustomName:'{"translate":"luigis_mansion:entity.king_boo"}',Invisible:1b,NoGravity:1b,Marker:0b,CustomNameVisible:1b,Invulnerable:1b,ArmorItems:[{},{},{},{id:"minecraft:diamond_pickaxe",Count:1b,tag:{Unbreakable:1b,Damage:1,CustomModelData:86}}],HandItems:[{id:"minecraft:diamond_pickaxe",Count:1b,tag:{Unbreakable:1b,Damage:2,CustomModelData:86}},{id:"minecraft:diamond_pickaxe",Count:1b,tag:{Unbreakable:1b,Damage:3,CustomModelData:86}}],Pose:{RightArm:[0.0f,0.0f,90.0f],RightArm:[0.0f,0.0f,-90.0f],Head:[0.0f,0.0f,0.0f]},Tags:["king_boo","affected_by_vacuum","show_health","ghost","visible","portrait_ghost","this_entity"]}
 teleport @e[tag=this_entity,limit=1] ~ ~ ~ ~ ~
 execute as @e[tag=this_entity,limit=1] store result score @s GhostNr run data get storage luigis_mansion:data ghost_nr
 execute as @e[tag=this_entity,limit=1] store result storage luigis_mansion:data ghost_nr int 1 run scoreboard players add @s GhostNr 1
@@ -18,4 +18,12 @@ scoreboard players set @e[tag=this_entity,limit=1] SecondFleeDamage -1
 scoreboard players set @e[tag=this_entity,limit=1] HeartOffset -2
 scoreboard players set @e[tag=this_entity,limit=1] EntitySizeRadius 7
 scoreboard players set @e[tag=this_entity,limit=1] EntityYOffset 14
+execute if data storage luigis_mansion:data entity{show_health:0b} run tag @e[tag=this_entity,limit=1] remove show_health
+execute if data storage luigis_mansion:data entity{show_health:0b} run tag @e[tag=this_entity,limit=1] remove affected_by_vacuum
+execute if data storage luigis_mansion:data entity.health as @e[tag=this_entity,limit=1] store result score @s Health store result score @s LastHealth store result score @s PrevHealth run data get storage luigis_mansion:data entity.health
+execute if data storage luigis_mansion:data entity.max_health as @e[tag=this_entity,limit=1] store result score @s MaxHealth run data get storage luigis_mansion:data entity.max_health
+execute if data storage luigis_mansion:data entity.speed as @e[tag=this_entity,limit=1] store result score @s Move run data get storage luigis_mansion:data entity.speed
+execute if data storage luigis_mansion:data entity.loot run data modify entity @e[tag=this_entity,limit=1] ArmorItems[3].tag.loot set from storage luigis_mansion:data entity.loot
+data modify entity @e[tag=this_entity,limit=1] Tags append from storage luigis_mansion:data entity.other_data[]
 tag @e[tag=this_entity,limit=1] remove this_entity
+data remove storage luigis_mansion:data entity

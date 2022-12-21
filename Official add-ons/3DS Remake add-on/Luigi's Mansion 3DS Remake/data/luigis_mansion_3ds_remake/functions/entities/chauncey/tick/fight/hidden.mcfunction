@@ -34,6 +34,8 @@ tag @s[scores={Dialog=21},tag=intro_done] add rambling
 scoreboard players set @s[scores={Dialog=22},tag=intro_done] AnimationProg 0
 tag @s[scores={Dialog=22},tag=intro_done] remove rambling
 tag @s[scores={Dialog=22},tag=intro_done] add attack
+execute if entity @s[scores={Dialog=22},tag=intro_done] run tag @e[tag=rocking_horse,limit=1] add attack
+scoreboard players set @s[scores={Dialog=22},tag=intro_done] ActionTime 11
 teleport @s[scores={Dialog=61..80},tag=left,tag=intro_done] ~ ~ ~ 0 0
 teleport @s[scores={Dialog=61..80},tag=!left,tag=intro_done] ~ ~ ~ -180 0
 execute if entity @s[scores={Dialog=80},tag=left,tag=intro_done] positioned ~-2.5 ~1 ~11.5 rotated -180 0 run function luigis_mansion:spawn_entities/rocking_horse/big
@@ -45,6 +47,8 @@ tag @s[scores={Dialog=81},tag=intro_done] add rambling
 scoreboard players set @s[scores={Dialog=82},tag=intro_done] AnimationProg 0
 tag @s[scores={Dialog=82},tag=intro_done] remove rambling
 tag @s[scores={Dialog=82},tag=intro_done] add attack
+execute if entity @s[scores={Dialog=82},tag=intro_done] run tag @e[tag=rocking_horse,limit=1] add attack
+scoreboard players set @s[scores={Dialog=82},tag=intro_done] ActionTime 11
 teleport @s[scores={Dialog=121..140},tag=intro_done] ~ ~ ~ -90 0
 execute if entity @s[scores={Dialog=140},tag=intro_done] positioned ~-2.5 ~1 ~-11.5 rotated 0 0 run function luigis_mansion:spawn_entities/rocking_horse/big
 execute if entity @s[scores={Dialog=140},tag=intro_done] positioned ~-2.5 ~1 ~-11.5 run scoreboard players operation @e[distance=..0.7,limit=1,tag=rocking_horse] Owner = @s GhostNr
@@ -55,6 +59,8 @@ tag @s[scores={Dialog=141},tag=intro_done] add rambling
 scoreboard players set @s[scores={Dialog=182},tag=intro_done] AnimationProg 0
 tag @s[scores={Dialog=182},tag=intro_done] remove rambling
 tag @s[scores={Dialog=182},tag=intro_done] add attack
+execute if entity @s[scores={Dialog=182},tag=intro_done] run tag @e[tag=rocking_horse,limit=1] add attack
+scoreboard players set @s[scores={Dialog=182},tag=intro_done] ActionTime 11
 tag @s[scores={Dialog=240},tag=intro_done] add rambling
 tag @s[scores={Dialog=260},tag=intro_done] remove rambling
 tag @s[scores={Dialog=260},tag=intro_done] add grab_rambler

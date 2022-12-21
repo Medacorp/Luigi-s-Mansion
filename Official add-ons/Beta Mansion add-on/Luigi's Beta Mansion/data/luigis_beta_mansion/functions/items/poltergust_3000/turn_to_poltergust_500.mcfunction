@@ -1,3 +1,7 @@
+function luigis_mansion:entities/player/memory/get
+data modify storage luigis_mansion:data my_memory.poltergust_element set value "none"
+data modify storage luigis_mansion:data memory append from storage luigis_mansion:data my_memory
+data remove storage luigis_mansion:data my_memory
 scoreboard players remove @s ElementMeter 0
 function luigis_mansion:items/poltergust_3000/sync_element_meter
 scoreboard players reset @s[scores={ElementMeter=..0}] ElementMeter
