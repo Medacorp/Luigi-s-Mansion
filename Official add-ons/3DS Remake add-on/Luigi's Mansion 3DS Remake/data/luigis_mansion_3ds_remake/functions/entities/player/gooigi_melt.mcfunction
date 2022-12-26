@@ -1,3 +1,4 @@
-execute unless entity @s[nbt={Fire:-20s}] run function luigis_mansion:entities/player/knockback/burn
-execute if block ~ ~ ~ #minecraft:campfires[lit=true] run function luigis_mansion:entities/player/knockback/burn
-execute if block ~ ~-1 ~ minecraft:magma_block run function luigis_mansion:entities/player/knockback/burn
+execute unless entity @s[nbt={Fire:-20s}] run data modify storage luigis_mansion:data damage set value {method:"luigis_mansion_3ds_remake:melt",knockback:"burn"}
+execute if block ~ ~ ~ #minecraft:campfires[lit=true] run data modify storage luigis_mansion:data damage set value {method:"luigis_mansion_3ds_remake:melt",knockback:"burn"}
+execute if block ~ ~-1 ~ minecraft:magma_block run data modify storage luigis_mansion:data damage set value {method:"luigis_mansion_3ds_remake:melt",knockback:"burn"}
+execute if data luigis_mansion:data damage{method:"luigis_mansion_3ds_remake:melt"} run function luigis_mansion:entities/player/take_damage

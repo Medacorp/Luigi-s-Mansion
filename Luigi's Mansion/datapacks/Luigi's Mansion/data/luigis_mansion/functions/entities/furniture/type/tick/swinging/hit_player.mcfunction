@@ -1,4 +1,3 @@
-effect give @s minecraft:instant_damage 1 0 true
-scoreboard players set @s ForcedDamage -1
-function luigis_mansion:entities/player/knockback/large
+data modify storage luigis_mansion:data damage set value {method:"luigis_mansion:swinging_furniture",amount:10,knockback:"large"}
+function luigis_mansion:entities/player/take_damage
 tag @s remove hit_by_swinging_furniture

@@ -7,12 +7,13 @@ scoreboard players add @s ActionTime 1
 tag @s[scores={ActionTime=200}] add dead
 execute if entity @s[tag=!player_shot] positioned ~-0.5 ~-1 ~-0.5 as @e[dx=0,dy=1,dz=0,tag=game_boy_horror_location] run function luigis_mansion:entities/game_boy_horror_location/bring_player_back
 execute positioned ~-0.5 ~-1 ~-0.5 if entity @a[dx=0,dy=1,dz=0,scores={Invulnerable=0},tag=!spectator] run tag @s[tag=!player_shot] add hit
-execute if entity @s[tag=hit] positioned ~-0.5 ~-1 ~-0.5 run effect give @a[dx=0,dy=1,dz=0,scores={Invulnerable=0},tag=!spectator] minecraft:instant_damage 1 0 true
-execute if entity @s[tag=hit] positioned ~-0.5 ~-1 ~-0.5 run scoreboard players set @a[dx=0,dy=1,dz=0,scores={Invulnerable=0},tag=!spectator] ForcedDamage -1
-execute if entity @s[tag=hit] positioned ~-0.5 ~-1 ~-0.5 as @a[dx=0,dy=1,dz=0,scores={Invulnerable=0},tag=!spectator] positioned ~0.5 ~1 ~0.5 run function luigis_mansion:entities/player/knockback/soak
+execute if entity @s[tag=hit] run data modify storage luigis_mansion:data damage set value {method:"luigis_mansion:water",amount:10,knockback:"soak",attacker:-1,no_delete:1b}
+execute if entity @s[tag=hit] store result storage luigis_mansion:data damage.attacker int 1 run scoreboard players get @s Owner
+execute if entity @s[tag=hit] positioned ~-0.5 ~-1 ~-0.5 as @a[dx=0,dy=1,dz=0,gamemode=!spectator] run function luigis_mansion:entities/player/take_damage
+execute if entity @s[tag=hit] run data remove storage luigis_mansion:data damage
 tag @s[tag=hit] add dead
 execute at @s[tag=dead] run playsound luigis_mansion:item.poltergust_3000.shoot.water.hit hostile @a[tag=same_room] ~ ~ ~ 1
-execute at @s run function luigis_mansion:items/poltergust_3000/water
+execute at @s positioned ~ ~1.4 ~ run function luigis_mansion:items/poltergust_3000/water
 scoreboard players reset #interact PosX
 scoreboard players reset #interact PosY
 scoreboard players reset #interact PosZ

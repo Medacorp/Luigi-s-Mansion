@@ -17,14 +17,15 @@ execute if entity @s[scores={ActionTime=41}] run playsound luigis_beta_mansion:e
 execute if entity @s[scores={ActionTime=41},tag=visible] run function luigis_mansion:entities/ghost/turn_visible
 execute if entity @s[scores={ActionTime=41}] run summon minecraft:armor_stand ~ ~0.5 ~ {CustomName:'{"translate":"luigis_mansion:message.basher_scare","color":"yellow","bold":true}',Marker:1b,Invisible:1b,NoGravity:1b,CustomNameVisible:1b,HasVisualFire:1b,Tags:["basher_scare"]}
 execute if entity @s[scores={ActionTime=41}] as @e[distance=..5,tag=game_boy_horror_location] run function luigis_mansion:entities/game_boy_horror_location/bring_player_back
-execute if entity @s[scores={ActionTime=41}] as @a[distance=3..5,scores={Invulnerable=0},tag=!spectator] run function luigis_mansion:entities/player/scare/normal
-execute if entity @s[scores={ActionTime=41}] as @a[distance=..3,scores={Invulnerable=0},tag=!spectator] run function luigis_mansion:entities/player/scare/bash
-execute if entity @s[scores={ActionTime=41}] as @a[distance=..5,scores={Invulnerable=1..},tag=!spectator] run function luigis_mansion:entities/player/scare/normal
-execute if entity @s[scores={ActionTime=41}] run scoreboard players set @a[distance=..5,scores={Invulnerable=0},tag=!spectator] MaxHealth 70
-execute if entity @s[scores={ActionTime=41}] run scoreboard players set @a[distance=..3,scores={Invulnerable=0},tag=!spectator] MaxHealth 50
-execute if entity @s[scores={ActionTime=41}] run effect give @a[distance=..5,scores={Invulnerable=0},tag=!spectator] minecraft:instant_damage 1 0 true
-execute if entity @s[scores={ActionTime=41}] run scoreboard players set @a[distance=..5,scores={Invulnerable=0},tag=!spectator] ForcedDamage 4
 execute if entity @s[scores={ActionTime=41}] if entity @a[distance=..5,tag=!spectator] run tag @s add laugh
+execute if entity @s[scores={ActionTime=41}] as @a[distance=..5,scores={Invulnerable=1..},tag=!spectator] run function luigis_mansion:entities/player/scare/normal
+execute if entity @s[scores={ActionTime=41}] run data modify storage luigis_mansion:data damage set value {method:"luigis_mansion:scare",amount:0,limit_health:70,knockback:"scare",attacker:-1,no_delete:1b}
+execute if entity @s[scores={ActionTime=41}] run data modify storage luigis_mansion:data damage.amount set from entity @s ArmorItems[3].tag.damage.attack
+execute if entity @s[scores={ActionTime=41}] store result storage luigis_mansion:data damage.attacker int 1 run scoreboard players get @s GhostNr
+execute if entity @s[scores={ActionTime=41}] as @a[distance=..3,gamemode=!spectator] run function luigis_mansion:entities/player/take_damage
+execute if entity @s[scores={ActionTime=41}] run data modify storage luigis_mansion:data damage merge value {limit_health:50,knockback:"bash_scare"}
+execute if entity @s[scores={ActionTime=41}] as @a[distance=3..5,gamemode=!spectator] run function luigis_mansion:entities/player/take_damage
+execute if entity @s[scores={ActionTime=41}] run data remove storage luigis_mansion:data damage
 tag @s[scores={ActionTime=60},tag=laugh] remove attack
 scoreboard players set @s[scores={ActionTime=60},tag=laugh] AnimationProg 0
 scoreboard players set @s[scores={ActionTime=60},tag=laugh] ActionTime 0

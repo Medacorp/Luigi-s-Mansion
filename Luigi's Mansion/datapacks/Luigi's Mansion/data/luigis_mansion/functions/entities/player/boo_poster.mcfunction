@@ -1,3 +1,3 @@
-effect give @s minecraft:instant_damage 1 0 true
-scoreboard players set @s ForcedDamage -1
-execute as @s run function luigis_mansion:entities/player/knockback/large
+data modify storage luigis_mansion:data damage set value {method:"luigis_mansion:poster",amount:5,knockback:"large"}
+function luigis_mansion:entities/player/take_damage
+data remove storage luigis_mansion:data damage

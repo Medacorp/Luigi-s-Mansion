@@ -12,10 +12,10 @@ execute if entity @s[scores={ActionTime=51,Sound=0}] align xz run playsound luig
 scoreboard players set @s[scores={ActionTime=51,Sound=0}] Sound 10
 teleport @s[scores={ActionTime=51}] ~ ~-1 ~
 execute at @s[scores={ActionTime=1..51}] align xz as @e[distance=..2,tag=game_boy_horror_location] run function luigis_mansion:entities/game_boy_horror_location/bring_player_back
-execute at @s[scores={ActionTime=1..51}] align xz run effect give @a[distance=..2,scores={Invulnerable=0},tag=!spectator] minecraft:instant_damage 1 0 true
-execute at @s[scores={ActionTime=1..51}] align xz run scoreboard players set @a[distance=..2,scores={Invulnerable=0},tag=!spectator] ForcedDamage 4
-execute at @s[scores={ActionTime=1..51}] align xz as @a[distance=..2,scores={Invulnerable=0},tag=!spectator] run function luigis_mansion:entities/player/knockback/large
 execute at @s[scores={ActionTime=1..51}] align xz if entity @a[distance=..2,scores={Invulnerable=0},tag=!spectator] run tag @s add hit
+execute at @s[scores={ActionTime=1..52}] run data modify storage luigis_mansion:data damage set value {method:"luigis_mansion:chandelier",amount:10,knockback:"large",no_delete:1b}
+execute at @s[scores={ActionTime=1..52}] align xz as @a[distance=..2,gamemode=!spectator] run function luigis_mansion:entities/player/take_damage
+execute at @s[scores={ActionTime=1..52}] run data remove storage luigis_mansion:data damage
 execute at @s[scores={ActionTime=51}] unless block ~ ~-1 ~ minecraft:air run scoreboard players add @s ActionTime 1
 execute if entity @s[scores={ActionTime=52}] align xz run playsound luigis_mansion:block.chandelier.land hostile @a[tag=same_room] ~ ~ ~ 2
 execute if entity @s[scores={ActionTime=72},tag=hit] align xz run playsound luigis_mansion:entity.ghost.laugh hostile @a[tag=same_room] ~ ~ ~ 2

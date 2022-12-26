@@ -20,3 +20,7 @@ execute if entity @s[scores={ActionTime=141..180}] run function luigis_mansion:a
 tag @s[scores={ActionTime=180}] remove headless_run
 scoreboard players set @s[scores={ActionTime=180}] AnimationProg 0
 scoreboard players reset @s[scores={ActionTime=180}] ActionTime
+execute positioned ^ ^-2 ^-1 as @e[distance=..3,tag=game_boy_horror_location] run function luigis_mansion:entities/game_boy_horror_location/bring_player_back
+execute positioned ^ ^-2 ^-1 if entity @s[tag=!dead,tag=!captured,tag=!removed_from_existence] as @a[distance=..3,scores={Invulnerable=0},tag=!spectator,tag=!vacuumed] positioned ^ ^-2 ^-1 run function luigis_mansion:entities/bowser/stomped_on
+execute positioned ^ ^ ^-2 as @e[distance=..3,tag=game_boy_horror_location] run function luigis_mansion:entities/game_boy_horror_location/bring_player_back
+execute positioned ^ ^ ^-2 if entity @s[tag=!dead,tag=!captured,tag=!removed_from_existence] as @a[distance=..3,scores={Invulnerable=0},tag=!spectator,tag=!vacuumed] positioned ^ ^ ^-2 run function luigis_mansion:entities/bowser/stomped_on

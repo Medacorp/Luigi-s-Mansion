@@ -1,4 +1,3 @@
-effect give @s minecraft:instant_damage 1 0 true
-scoreboard players set @s ForcedDamage -1
 execute positioned ^ ^ ^0.5 rotated ~-180 ~ align xz run teleport @a[tag=try_opening_door,limit=1,sort=nearest] ~0.5 ~ ~0.5 ~ ~
-execute positioned ^ ^ ^-0.5 align xz positioned ~0.5 ~ ~0.5 run function luigis_mansion:entities/player/knockback/medium
+data modify storage luigis_mansion:data damage set value {method:"luigis_mansion:blockade",amount:5,knockback:"medium"}
+execute positioned ^ ^ ^-0.5 align xz positioned ~0.5 ~ ~0.5 as @a[tag=try_opening_door,limit=1,sort=nearest] run function luigis_mansion:entities/player/take_damage
