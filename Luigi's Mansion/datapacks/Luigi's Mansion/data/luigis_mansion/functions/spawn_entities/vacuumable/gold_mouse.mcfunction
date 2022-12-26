@@ -1,8 +1,15 @@
 summon minecraft:armor_stand ~ ~-1.3 ~ {CustomName:'{"translate":"luigis_mansion:entity.gold_mouse"}',Invisible:1b,NoGravity:1b,Marker:1b,CustomNameVisible:0b,Invulnerable:1b,ArmorItems:[{},{},{},{id:"minecraft:leather_chestplate",Count:1b,tag:{Unbreakable:1b,Damage:1,CustomModelData:13,display:{color:16759040}}}],Pose:{Head:[0.01f,0.0f,0.0f]},Tags:["gold_mouse","affected_by_vacuum","affected_by_fire","affected_by_water","affected_by_ice","ghost","optional_ghost","vacuumable","visible","mouse","this_entity"],DisabledSlots:2039583}
-execute if block ~ ~ ~ minecraft:oak_button[face=floor] run tag @e[tag=this_entity,limit=1] add cheese
+execute as @e[tag=this_entity,limit=1] store result score @s GhostNr run data get storage luigis_mansion:data ghost_nr
+execute as @e[tag=this_entity,limit=1] store result storage luigis_mansion:data ghost_nr int 1 run scoreboard players add @s GhostNr 1
 execute as @e[tag=this_entity,limit=1] store result score @s Move run data get storage luigis_mansion:data current_state.current_data.ghosts.gold_mouse.speed
 data modify entity @e[tag=this_entity,limit=1] ArmorItems[3].tag.loot set from storage luigis_mansion:data current_state.current_data.ghosts.gold_mouse.loot
+data modify entity @e[tag=this_entity,limit=1] ArmorItems[3].tag.damage set from storage luigis_mansion:data current_state.current_data.ghosts.gold_mouse.damage
 scoreboard players set @e[tag=this_entity,limit=1] EntitySizeRadius 3
 scoreboard players set @e[tag=this_entity,limit=1] EntityYOffset 14
+execute if data storage luigis_mansion:data entity.training_room_score as @e[tag=this_entity,limit=1] store result score @s GhostCaught run data get storage luigis_mansion:data entity.training_room_score
+execute if data storage luigis_mansion:data entity.speed as @e[tag=this_entity,limit=1] store result score @s Move run data get storage luigis_mansion:data entity.speed
+execute if data storage luigis_mansion:data entity.loot run data modify entity @e[tag=this_entity,limit=1] ArmorItems[3].tag.loot set from storage luigis_mansion:data entity.loot
+execute if data storage luigis_mansion:data entity.damage run data modify entity @e[tag=this_entity,limit=1] ArmorItems[3].tag.damage set from storage luigis_mansion:data entity.damage
 tag @e[tag=this_entity,limit=1] remove this_entity
+data remove storage luigis_mansion:data entity
 playsound luigis_mansion:music.solve_puzzle neutral @a ~ ~ ~ 1000

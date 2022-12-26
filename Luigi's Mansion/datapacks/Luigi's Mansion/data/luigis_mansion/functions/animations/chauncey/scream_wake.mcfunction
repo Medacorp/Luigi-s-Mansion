@@ -34,12 +34,12 @@ execute if entity @s[scores={AnimationProg=26..35}] store result entity @e[tag=t
 execute if entity @s[scores={AnimationProg=36..40}] store result entity @e[tag=this_model,limit=1] Pose.Head[0] float 1 run scoreboard players remove #temp Time 3
 scoreboard players reset #temp Time
 execute if entity @s[scores={AnimationProg=40..}] run function luigis_mansion:animations/chauncey/bring_home
-data modify entity @s[scores={AnimationProg=6},tag=!big] ArmorItems[3].tag merge value {CustomModelData:12}
-data modify entity @s[scores={AnimationProg=20},tag=!big] ArmorItems[3].tag merge value {CustomModelData:10}
-data modify entity @s[scores={AnimationProg=26},tag=!big] ArmorItems[3].tag merge value {CustomModelData:12}
-data modify entity @s[scores={AnimationProg=40},tag=!big] ArmorItems[3].tag merge value {CustomModelData:10}
-data modify entity @s[scores={AnimationProg=6},tag=big] ArmorItems[3].tag merge value {CustomModelData:15}
-data modify entity @s[scores={AnimationProg=20},tag=big] ArmorItems[3].tag merge value {CustomModelData:13}
-data modify entity @s[scores={AnimationProg=26},tag=big] ArmorItems[3].tag merge value {CustomModelData:15}
-data modify entity @s[scores={AnimationProg=40},tag=big] ArmorItems[3].tag merge value {CustomModelData:13}
+data modify entity @s[scores={AnimationProg=6},tag=!big] ArmorItems[3].tag.CustomModelData set from entity @s ArmorItems[3].tag.variants.screaming
+data modify entity @s[scores={AnimationProg=20},tag=!big] ArmorItems[3].tag.CustomModelData set from entity @s ArmorItems[3].tag.variants.default
+data modify entity @s[scores={AnimationProg=26},tag=!big] ArmorItems[3].tag.CustomModelData set from entity @s ArmorItems[3].tag.variants.screaming
+data modify entity @s[scores={AnimationProg=40},tag=!big] ArmorItems[3].tag.CustomModelData set from entity @s ArmorItems[3].tag.variants.default
+data modify entity @s[scores={AnimationProg=6},tag=big] ArmorItems[3].tag.CustomModelData set from entity @s ArmorItems[3].tag.variants.big_screaming
+data modify entity @s[scores={AnimationProg=20},tag=big] ArmorItems[3].tag.CustomModelData set from entity @s ArmorItems[3].tag.variants.big
+data modify entity @s[scores={AnimationProg=26},tag=big] ArmorItems[3].tag.CustomModelData set from entity @s ArmorItems[3].tag.variants.big_screaming
+data modify entity @s[scores={AnimationProg=40},tag=big] ArmorItems[3].tag.CustomModelData set from entity @s ArmorItems[3].tag.variants.big
 scoreboard players set @s[scores={AnimationProg=40..}] AnimationProg 0

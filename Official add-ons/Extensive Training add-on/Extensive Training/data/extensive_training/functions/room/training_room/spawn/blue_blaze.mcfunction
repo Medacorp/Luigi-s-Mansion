@@ -1,3 +1,2 @@
-data modify storage luigis_mansion:data entity set value {appear_type:"none",disappear_on_vanish:1b,health:3000,speed:5,flee_speed:20}
+data modify storage luigis_mansion:data entity set value {appear_type:"none",disappear_on_vanish:1b,health:3000,speed:5,flee_speed:20,vanish_time:180,loot:{},damage:{collision:5,attack:10},training_room_score:7}
 function luigis_mansion:spawn_entities/ghost/forced_spawn/blue_blaze
-scoreboard players set @e[distance=..1,tag=hidden,limit=1] GhostCaught 7

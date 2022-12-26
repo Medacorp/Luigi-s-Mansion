@@ -1,3 +1,2 @@
-data modify storage luigis_mansion:data entity set value {appear_type:"none",disappear_on_vanish:1b,health:2000,speed:15,flee_speed:20}
+data modify storage luigis_mansion:data entity set value {appear_type:"none",disappear_on_vanish:1b,health:2000,speed:15,flee_speed:20,vanish_time:120,loot:{},damage:{collision:5,attack:10},training_room_score:5}
 function luigis_mansion:spawn_entities/ghost/forced_spawn/purple_puncher
-scoreboard players set @e[distance=..1,tag=hidden,limit=1] GhostCaught 5

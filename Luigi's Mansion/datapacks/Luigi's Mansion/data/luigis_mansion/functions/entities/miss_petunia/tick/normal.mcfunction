@@ -3,9 +3,9 @@ execute positioned ~3 ~ ~ if block ^ ^ ^2 minecraft:air run scoreboard players a
 execute unless block ~3 ~ ~ minecraft:air unless entity @s[tag=vanish] as @e[tag=this_model,tag=miss_petunia_shadow,tag=!body,tag=!right_arm,tag=!left_arm,tag=!visible,limit=1] run function luigis_mansion:entities/miss_petunia/turn_shadow_visible
 execute if block ~3 ~ ~ minecraft:air as @e[tag=this_model,tag=miss_petunia_shadow,tag=!body,tag=!right_arm,tag=!left_arm,tag=visible,limit=1] run function luigis_mansion:entities/miss_petunia/turn_shadow_invisible
 execute unless entity @s[scores={Dialog=1..}] run scoreboard players add @s Dialog 1
-execute unless entity @s[scores={Dialog=3..59}] run function luigis_mansion:entities/miss_petunia/turn_visible
-execute if entity @s[scores={Dialog=1},tag=visible] at @e[tag=same_room,tag=!spectator,tag=player] positioned ^ ^ ^8 if entity @s[distance=..8] run function luigis_mansion:entities/miss_petunia/turn_invisible
-execute if entity @s[scores={Dialog=61,VulnerableTime=0},tag=visible] at @e[tag=same_room,tag=!spectator,tag=player] positioned ^ ^ ^8 if entity @s[distance=..8] run function luigis_mansion:entities/miss_petunia/turn_invisible
+execute unless entity @s[scores={Dialog=3..59},tag=!visible] run function luigis_mansion:entities/ghost/turn_visible
+execute if entity @s[scores={Dialog=1},tag=visible] at @e[tag=same_room,tag=!spectator,tag=player] positioned ^ ^ ^8 if entity @s[distance=..8] run function luigis_mansion:entities/ghost/turn_invisible
+execute if entity @s[scores={Dialog=61,VulnerableTime=0},tag=visible] at @e[tag=same_room,tag=!spectator,tag=player] positioned ^ ^ ^8 if entity @s[distance=..8] run function luigis_mansion:entities/ghost/turn_invisible
 scoreboard players set @s[scores={Dialog=20}] AnimationProg 0
 execute if entity @s[scores={Dialog=20}] run playsound luigis_mansion:entity.miss_petunia.scream hostile @a[tag=same_room] ~ ~ ~ 1
 execute if entity @s[scores={Dialog=20..59}] facing entity @e[tag=same_room,tag=!spectator,tag=player,sort=nearest,limit=1] feet run teleport @s ~ ~ ~ ~ ~

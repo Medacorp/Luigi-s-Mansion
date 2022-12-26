@@ -23,7 +23,7 @@ execute if entity @s[scores={Dialog=120}] positioned ~-30.5 ~10 ~3.5 run functio
 execute if entity @s[scores={Dialog=120}] run scoreboard players set @e[tag=rocking_horse,tag=intro] Room 73
 execute if entity @s[scores={Dialog=140}] as @a[tag=same_room] run function luigis_mansion:entities/player/scare/bash_no_move
 execute if entity @s[scores={Dialog=140..629}] run scoreboard players set @a[tag=same_room,scores={ScareTime=20}] ScareTime 21
-execute if entity @s[scores={Dialog=330}] run function luigis_mansion:entities/chauncey/turn_visible_big
+execute if entity @s[scores={Dialog=330}] run function luigis_mansion:entities/ghost/turn_visible_big
 execute if entity @s[scores={Dialog=330..420}] run teleport @s ~ ~0.1 ~
 scoreboard players set @s[scores={Dialog=400}] AnimationProg 0
 tag @s[scores={Dialog=400}] add look_down

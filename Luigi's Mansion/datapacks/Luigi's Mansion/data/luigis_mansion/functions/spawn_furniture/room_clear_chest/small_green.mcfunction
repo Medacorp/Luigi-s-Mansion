@@ -4,9 +4,9 @@ function luigis_mansion:spawn_furniture/setup/loot
 function luigis_mansion:spawn_furniture/setup/dialog
 function luigis_mansion:spawn_furniture/setup/scan_message
 function luigis_mansion:spawn_furniture/setup/pose
-execute if data storage luigis_mansion:data furniture{open:1b} run data modify entity @e[tag=this_entity,limit=1] ArmorItems[3].tag.CustomModelData set value 16
-execute unless data storage luigis_mansion:data furniture{open:1b} run playsound luigis_mansion:furniture.room_clear_chest.spawn block @a ~ ~ ~ 2
-function luigis_mansion:spawn_furniture/setup/open
+execute if data storage luigis_mansion:data furniture{searched:1b,no_search_animation:1b} run data modify entity @e[tag=this_entity,limit=1] ArmorItems[3].tag.CustomModelData set value 16
+function luigis_mansion:spawn_furniture/setup/room_clear_chest_spawn_sound
+function luigis_mansion:spawn_furniture/setup/searched
 function luigis_mansion:spawn_furniture/setup/can_hide_boo
 execute if data storage luigis_mansion:data furniture{searchable:["hand"]} run tag @e[tag=this_entity,limit=1] add searchable_by_hand
 function luigis_mansion:spawn_furniture/setup/elemental_source

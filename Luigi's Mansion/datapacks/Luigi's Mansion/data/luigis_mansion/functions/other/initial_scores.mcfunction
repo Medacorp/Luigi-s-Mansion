@@ -1,9 +1,6 @@
-scoreboard players set @s ForcedDamage 0
 scoreboard players set @s Health 100
 scoreboard players set @s MaxHealth 100
 function luigis_mansion:other/music/set/silence
-scoreboard players set @s ForcedDamage 0
-scoreboard players set @s Damage 0
 scoreboard players set @s TotalDamage 0
 scoreboard players set @s LastTotalDamage 0
 scoreboard players set @s PoltergustSound 0

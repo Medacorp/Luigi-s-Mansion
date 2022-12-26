@@ -11,6 +11,8 @@
 "luigis_mansion_3ds_remake:advancements.lab.unlocked_gcn_hidden_mansion": "Unlocked GCN Hidden Mansion",
 "luigis_mansion_3ds_remake:advancements.lab.unlocked_gcn_hidden_mansion.description": "The original GCN hidden mansion",
 "luigis_mansion_3ds_remake:data_pack.description": "Luigi's Mansion 3DS Remake data pack",
+"luigis_mansion_3ds_remake:death.melt": "%s was molten",
+"luigis_mansion_3ds_remake:death.melt.killer": "%s was molten by %s",
 "luigis_mansion_3ds_remake:dialog.caught_boo.17": "It looks like you are on a roll, %s! By the way, you haven't forgotten about the Game Boy Horror's search function, have you? If you find a suspicious spot, you should go ahead and search!",
 "luigis_mansion_3ds_remake:dialog.caught_boo.17.more": "It looks like you are on a roll, kiddos! By the way, you haven't forgotten about the Game Boy Horrors' search function, have you? If you find a suspicious spot, you should go ahead and search!",
 "luigis_mansion_3ds_remake:dialog.caught_boo.18": "Well done, %s! By the way, have you ever been tricked by a fake door? If something looks suspicious, try using the Poltergust 3000 on it! You'll find out if it's real or fake.",

@@ -5,7 +5,7 @@ execute if score #conservatory Wave matches 3 run scoreboard players add @s[tag=
 execute if entity @a[scores={MelodyChoice=1}] run scoreboard players set @s[scores={Dialog=..999}] Dialog 1000
 execute if entity @a[scores={MelodyChoice=2}] run scoreboard players set @s[scores={Dialog=..999}] Dialog 2000
 tag @s[scores={Dialog=1}] add talk
-execute if entity @s[scores={Dialog=1},tag=!visible] run function luigis_mansion:entities/melody_pianissima/turn_visible
+execute if entity @s[scores={Dialog=1},tag=!visible] run function luigis_mansion:entities/ghost/turn_visible
 execute if entity @s[scores={Dialog=1..1271}] as @a[tag=same_room,gamemode=!spectator,scores={IdleTime=0..},tag=!looking_at_map] run function luigis_mansion:entities/player/animation/set/stand_still
 execute if entity @s[scores={Dialog=2000..2227}] as @a[tag=same_room,gamemode=!spectator,scores={IdleTime=0..},tag=!looking_at_map] run function luigis_mansion:entities/player/animation/set/stand_still
 execute if entity @s[scores={Dialog=80..439}] as @a[tag=same_room,tag=!spectator,tag=!high_health_idle,tag=!looking_at_map] run function luigis_mansion:entities/player/animation/set/high_health_idle_no_sound

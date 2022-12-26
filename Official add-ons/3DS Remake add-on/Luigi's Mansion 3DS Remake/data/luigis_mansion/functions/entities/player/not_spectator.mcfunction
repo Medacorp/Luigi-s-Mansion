@@ -25,9 +25,9 @@ execute unless entity @a[scores={GBHCall=1..},limit=1] rotated ~ 0 positioned ^ 
 function luigis_mansion:entities/player/health_display
 clear @s[advancements={luigis_mansion:lab/lab=true}] minecraft:diamond_pickaxe{luigis_mansion:{id:"luigis_mansion:contest_reward_map"}}
 
-execute if entity @s[scores={Health=1..}] store result score @s Damage run data get entity @s Health -1
-scoreboard players add @s[scores={Health=1..}] Damage 100
-execute if entity @s[scores={Damage=1..},tag=!spectator,tag=player] run function luigis_mansion:entities/player/take_damage
+execute if entity @s[scores={Health=1..}] store result score @s Damage run data get entity @s Health
+execute if entity @s[scores={Damage=..99}] run function luigis_mansion:entities/player/heal
+scoreboard players reset @s Damage
 execute unless entity @s[scores={Invulnerable=0..}] run scoreboard players set @s Invulnerable 0
 scoreboard players remove @s[scores={Invulnerable=1..}] Invulnerable 1
 effect give @s[scores={Food=3..}] minecraft:hunger 1 255 true

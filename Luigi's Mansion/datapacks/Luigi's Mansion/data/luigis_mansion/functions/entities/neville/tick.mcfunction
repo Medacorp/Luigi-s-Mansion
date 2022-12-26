@@ -18,7 +18,7 @@ execute if entity @s[tag=!fleeing,tag=!hurt,scores={StunTime=0}] run function #l
 execute if entity @s[tag=vanish] run function luigis_mansion:entities/neville/vanish
 execute at @s[tag=fleeing,tag=!second_flee_state] run function luigis_mansion:animations/neville/flee
 execute at @s[tag=fleeing,tag=second_flee_state] run function luigis_mansion:entities/neville/second_flee_state
-execute if entity @s[tag=!fleeing,tag=hurt] run function luigis_mansion:entities/neville/drop_book
+execute if entity @s[tag=!fleeing,tag=hurt] run function luigis_mansion:entities/ghost/turn_visible_no_equipment
 execute at @s[tag=!fleeing,tag=hurt] run function luigis_mansion:animations/neville/hurt
 
 scoreboard players reset #temp GhostNr

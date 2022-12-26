@@ -1,7 +1,7 @@
 teleport @e[tag=this_model,tag=body,limit=1] ~ ~ ~ ~ ~
 teleport @e[tag=this_model,tag=right_arm,limit=1] ^-0.92 ^-0.4 ^ ~ ~
 teleport @e[tag=this_model,tag=left_arm,limit=1] ^0.92 ^-0.4 ^ ~ ~
-execute if entity @s[tag=visible,tag=!big] run function luigis_mansion:entities/uncle_grimmly/turn_visible_big
+execute if entity @s[tag=visible,tag=!big] run function luigis_mansion:entities/ghost/turn_visible_big
 scoreboard players add @s AnimationProg 1
 data merge entity @s[scores={AnimationProg=1}] {Pose:{Head:[0.0f,0.01f,0.0f]}}
 execute if entity @s[scores={AnimationProg=1}] run data merge entity @e[tag=this_model,tag=body,limit=1] {Pose:{Head:[20.0f,0.0f,0.01f]}}

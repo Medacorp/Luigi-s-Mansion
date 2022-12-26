@@ -1,3 +1,2 @@
-data modify storage luigis_mansion:data entity set value {appear_type:"none",disappear_on_vanish:1b,health:2000,speed:10,flee_speed:20}
+data modify storage luigis_mansion:data entity set value {appear_type:"none",disappear_on_vanish:1b,health:2000,speed:10,flee_speed:20,vanish_time:-1,loot:{},damage:{collision:5,attack:5},training_room_score:5}
 function luigis_mansion:spawn_entities/ghost/forced_spawn/red_grabbing_ghost
-scoreboard players set @e[distance=..1,tag=hidden,limit=1] GhostCaught 5

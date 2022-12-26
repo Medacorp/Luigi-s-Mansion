@@ -30,7 +30,6 @@ execute at @s[tag=!hurt,tag=!element_hurt,tag=!fleeing,tag=!attack,tag=!collided
 execute if entity @s[tag=!hurt,tag=!element_hurt,tag=!fleeing,tag=!attack,tag=!collided,tag=laugh,scores={StunTime=0}] run function luigis_beta_mansion:entities/beta_body_slammer/laugh
 execute if entity @s[tag=!hurt,tag=!element_hurt,tag=!fleeing,tag=!attack,tag=!collided,tag=complain,scores={StunTime=0}] run function luigis_beta_mansion:entities/beta_body_slammer/complain
 execute if entity @s[tag=!element_hurt,tag=!fleeing,tag=collided,scores={StunTime=0}] if entity @s[tag=!dying,tag=!dead,tag=!captured,tag=!removed_from_existence] run function luigis_mansion:entities/ghost/collided
-tag @s[tag=!hurt,tag=!element_hurt,tag=!fleeing,tag=!attack,tag=!collided,tag=!laugh,tag=!complain,scores={StunTime=0,SpawnTime=180..}] add vanish
 execute if entity @s[tag=vanish] run function luigis_beta_mansion:entities/beta_body_slammer/vanish
 execute if entity @s[tag=appear,tag=!beta_appear] run function luigis_beta_mansion:entities/beta_body_slammer/appear
 execute if entity @s[tag=appear,tag=beta_appear] run function luigis_beta_mansion:entities/beta_body_slammer/beta_appear

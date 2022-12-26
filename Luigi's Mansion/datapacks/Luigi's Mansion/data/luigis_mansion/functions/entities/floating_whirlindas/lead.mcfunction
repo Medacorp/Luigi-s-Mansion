@@ -1,7 +1,7 @@
 scoreboard players add @s Dialog 1
-execute if entity @s[scores={Dialog=..299}] run function luigis_mansion:entities/floating_whirlindas/turn_visible
-execute if entity @s[scores={Dialog=..300}] at @a[tag=same_room,tag=!spectator] unless entity @e[tag=ball_floor,distance=..4.999999,limit=1] run function luigis_mansion:entities/floating_whirlindas/turn_invisible
-execute if entity @s[scores={Dialog=..300}] at @a[tag=same_room,tag=!spectator] positioned ^ ^ ^8 if entity @s[distance=..8] run function luigis_mansion:entities/floating_whirlindas/turn_invisible
+execute if entity @s[scores={Dialog=..299},tag=visible] run function luigis_mansion:entities/ghost/turn_visible
+execute if entity @s[scores={Dialog=..300}] at @a[tag=same_room,tag=!spectator] unless entity @e[tag=ball_floor,distance=..4.999999,limit=1] run function luigis_mansion:entities/ghost/turn_invisible
+execute if entity @s[scores={Dialog=..300}] at @a[tag=same_room,tag=!spectator] positioned ^ ^ ^8 if entity @s[distance=..8] run function luigis_mansion:entities/ghost/turn_invisible
 
 execute if entity @s[scores={Dialog=1}] positioned ^ ^ ^-0.7 run teleport @s ~ ~ ~ ~ ~
 execute if entity @s[scores={Dialog=1}] positioned ^ ^ ^0.7 run teleport @e[tag=this_model,tag=floating_whirlindas_female,tag=main,limit=1] ~ ~ ~ ~-180 ~

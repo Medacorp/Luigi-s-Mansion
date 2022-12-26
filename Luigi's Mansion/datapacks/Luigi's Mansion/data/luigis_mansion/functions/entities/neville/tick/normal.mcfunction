@@ -7,8 +7,8 @@ execute if entity @s[scores={Dialog=0}] positioned ~ ~-1.85 ~ if entity @e[tag=r
 scoreboard players set @s[scores={Dialog=0}] Dialog 1
 scoreboard players add @s Dialog 1
 execute if entity @s[scores={Dialog=1..100}] at @e[tag=same_room,tag=!spectator,tag=player] positioned ^ ^ ^8 run scoreboard players set @s[distance=..8] Dialog 1
-execute if entity @s[scores={Dialog=1},tag=visible] run function luigis_mansion:entities/neville/turn_invisible
-execute if entity @s[scores={Dialog=2},tag=!visible] run function luigis_mansion:entities/neville/turn_visible
+execute if entity @s[scores={Dialog=1},tag=visible] run function luigis_mansion:entities/ghost/turn_invisible
+execute if entity @s[scores={Dialog=2},tag=!visible] run function luigis_mansion:entities/ghost/turn_visible
 scoreboard players set @s[scores={Dialog=101}] AnimationProg 0
 execute if entity @s[scores={Dialog=101}] run playsound luigis_mansion:entity.neville.yawn hostile @a[tag=same_room] ~ ~ ~ 1
 scoreboard players set @s[scores={Dialog=101}] VulnerableTime 60

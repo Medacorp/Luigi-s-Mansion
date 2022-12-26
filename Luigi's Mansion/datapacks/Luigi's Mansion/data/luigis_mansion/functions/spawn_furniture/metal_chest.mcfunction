@@ -4,8 +4,8 @@ function luigis_mansion:spawn_furniture/setup/loot
 function luigis_mansion:spawn_furniture/setup/dialog
 function luigis_mansion:spawn_furniture/setup/scan_message
 function luigis_mansion:spawn_furniture/setup/pose
-execute if data storage luigis_mansion:data furniture{open:1b} run data modify entity @e[tag=this_entity,limit=1] ArmorItems[3].tag.CustomModelData set value 66
-function luigis_mansion:spawn_furniture/setup/open
+execute if data storage luigis_mansion:data furniture{searched:1b,no_search_animation:1b} run data modify entity @e[tag=this_entity,limit=1] ArmorItems[3].tag.CustomModelData set value 66
+function luigis_mansion:spawn_furniture/setup/searched
 function luigis_mansion:spawn_furniture/setup/can_hide_boo
 function luigis_mansion:spawn_furniture/setup/searchable
 function luigis_mansion:spawn_furniture/setup/elemental_source

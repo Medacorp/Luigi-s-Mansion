@@ -24,7 +24,6 @@ execute at @s[tag=!hurt,tag=!element_hurt,tag=!fleeing,tag=!attack,tag=!collided
 execute if entity @s[tag=!hurt,tag=!element_hurt,tag=!fleeing,tag=!attack,tag=!collided,tag=!smug,tag=laugh,scores={StunTime=0}] run function luigis_mansion:entities/flash/laugh
 execute if entity @s[tag=!hurt,tag=!element_hurt,tag=!fleeing,tag=!attack,tag=!collided,tag=!smug,tag=complain,scores={StunTime=0}] run function luigis_mansion:entities/flash/complain
 execute if entity @s[tag=!element_hurt,tag=!fleeing,tag=collided,scores={StunTime=0}] if entity @s[tag=!dying,tag=!dead,tag=!captured,tag=!removed_from_existence] run function luigis_mansion:entities/ghost/collided
-tag @s[tag=!hurt,tag=!element_hurt,tag=!fleeing,tag=!attack,tag=!collided,tag=!laugh,tag=!complain,tag=!smug,scores={StunTime=0,SpawnTime=120..}] add vanish
 execute if entity @s[tag=vanish] run function luigis_mansion:entities/flash/vanish
 execute if entity @s[tag=smug] run function luigis_mansion:entities/flash/smug
 execute if entity @s[tag=appear,tag=!beta_appear] run function luigis_mansion:entities/flash/appear

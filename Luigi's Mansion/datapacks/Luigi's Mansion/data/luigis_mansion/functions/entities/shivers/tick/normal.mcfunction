@@ -1,5 +1,5 @@
-execute if entity @s[scores={PathStep=1..2},tag=visible,tag=!vanish] run function luigis_mansion:entities/shivers/turn_invisible
-execute if entity @s[scores={PathStep=3..},tag=!visible,tag=!vanish] run function luigis_mansion:entities/shivers/turn_visible
+execute if entity @s[scores={PathStep=1..2},tag=!partially_invisible,tag=!vanish] run function luigis_mansion:entities/ghost/turn_invisible_partially
+execute if entity @s[scores={PathStep=3..},tag=!visible,tag=!vanish] run function luigis_mansion:entities/ghost/turn_visible
 execute unless entity @s[scores={PathStep=1..}] run scoreboard players set @s PathStep 1
 teleport @s[scores={PathStep=1}] ~ ~ ~ facing 682 11.6 -14
 scoreboard players set @s[x=682.5,y=11.6,z=-13.5,distance=..0.7,scores={PathStep=1}] PathStep 2

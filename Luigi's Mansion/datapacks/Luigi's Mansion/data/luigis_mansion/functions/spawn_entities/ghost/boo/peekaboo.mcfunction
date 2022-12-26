@@ -3,4 +3,5 @@ data modify storage luigis_mansion:data entity.health set from storage luigis_ma
 data modify storage luigis_mansion:data entity.room set from storage luigis_mansion:data current_state.current_data.boos[{name:"peekaboo"}].room
 data modify storage luigis_mansion:data entity.speed set from storage luigis_mansion:data current_state.current_data.boos[{name:"peekaboo"}].speed
 data modify storage luigis_mansion:data entity.loot set from storage luigis_mansion:data current_state.current_data.boos[{name:"peekaboo"}].loot
+data modify storage luigis_mansion:data entity.damage set from storage luigis_mansion:data current_state.current_data.boos[{name:"peekaboo"}].damage
 function luigis_mansion:spawn_entities/ghost/boo

@@ -1,4 +1,4 @@
-execute if score #mirrored Selected matches 0 run data modify entity @s[tag=!big] HandItems set value [{id:"minecraft:diamond_pickaxe",Count:1b,tag:{Unbreakable:1b,Damage:2,CustomModelData:11}},{id:"minecraft:diamond_pickaxe",Count:1b,tag:{Unbreakable:1b,Damage:3,CustomModelData:10}}]
-execute if score #mirrored Selected matches 1 run data modify entity @s[tag=!big] HandItems set value [{id:"minecraft:diamond_pickaxe",Count:1b,tag:{Unbreakable:1b,Damage:2,CustomModelData:10}},{id:"minecraft:diamond_pickaxe",Count:1b,tag:{Unbreakable:1b,Damage:3,CustomModelData:11}}]
-execute if score #mirrored Selected matches 0 run data modify entity @s[tag=big] HandItems set value [{id:"minecraft:diamond_pickaxe",Count:1b,tag:{Unbreakable:1b,Damage:2,CustomModelData:14}},{id:"minecraft:diamond_pickaxe",Count:1b,tag:{Unbreakable:1b,Damage:3,CustomModelData:13}}]
-execute if score #mirrored Selected matches 1 run data modify entity @s[tag=big] HandItems set value [{id:"minecraft:diamond_pickaxe",Count:1b,tag:{Unbreakable:1b,Damage:2,CustomModelData:13}},{id:"minecraft:diamond_pickaxe",Count:1b,tag:{Unbreakable:1b,Damage:3,CustomModelData:14}}]
+data modify entity @s[tag=!big] HandItems[0].tag.CustomModelData set from entity @s HandItems[0].tag.variants.rambler
+data modify entity @s[tag=!big] HandItems[1].tag.CustomModelData set from entity @s HandItems[1].tag.variants.rambler
+data modify entity @s[tag=big] HandItems[0].tag.CustomModelData set from entity @s HandItems[0].tag.variants.rambler
+data modify entity @s[tag=big] HandItems[1].tag.CustomModelData set from entity @s HandItems[1].tag.variants.rambler

@@ -1,6 +1,7 @@
 scoreboard objectives add ActionTime dummy
 scoreboard objectives add Angle dummy
 scoreboard objectives add AnimationProg dummy
+scoreboard objectives add AttackerMemory dummy
 scoreboard objectives add AttackType dummy
 scoreboard objectives add BananaDropTime dummy
 scoreboard objectives add BookChoice trigger
@@ -34,7 +35,6 @@ scoreboard objectives add ErrorTime dummy
 scoreboard objectives add FlashlightType dummy
 scoreboard objectives add FlyTime dummy
 scoreboard objectives add Food food
-scoreboard objectives add ForcedDamage dummy
 scoreboard objectives add ForceRadar dummy
 scoreboard objectives add ForceScreen dummy
 scoreboard objectives add FurnitureDust dummy
@@ -99,6 +99,7 @@ scoreboard objectives add Jump minecraft.custom:minecraft.jump
 scoreboard objectives add JumpHeight dummy
 scoreboard objectives add Keys dummy
 scoreboard objectives add KillerID dummy
+scoreboard objectives add KnockbackDamage dummy
 scoreboard objectives add KnockbackTime dummy
 scoreboard objectives add KnockbackType dummy
 scoreboard objectives add KnockbackX dummy
@@ -209,6 +210,7 @@ scoreboard objectives add UseItem minecraft.used:minecraft.carrot_on_a_stick
 scoreboard objectives add Vacuumables dummy
 scoreboard objectives add VacuumErrors dummy
 scoreboard objectives add VacuumTime dummy
+scoreboard objectives add VanishTime dummy
 scoreboard objectives add Variant dummy
 scoreboard objectives add VulnerableTime dummy
 scoreboard objectives add WaitTime dummy

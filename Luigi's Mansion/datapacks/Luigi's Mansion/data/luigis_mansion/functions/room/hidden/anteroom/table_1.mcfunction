@@ -1,3 +1,3 @@
-execute unless data storage luigis_mansion:data current_state.current_data{money_spawned:["anteroom_table_1"]} run function luigis_mansion:spawn_entities/item/gold_bar
-execute if data storage luigis_mansion:data current_state.current_data{money_spawned:["anteroom_table_1"]} run tag @e[tag=selected] add nothing
-execute unless data storage luigis_mansion:data current_state.current_data{money_spawned:["anteroom_table_1"]} run data modify storage luigis_mansion:data current_state.current_data.money_spawned append value "anteroom_table_1"
+execute unless data storage luigis_mansion:data current_state.current_data{money_spawned:["anteroom_nightstand_mounted_vase1"]} run function luigis_mansion:spawn_entities/item/gold_bar
+execute if data storage luigis_mansion:data current_state.current_data{money_spawned:["anteroom_nightstand_mounted_vase1"]} run tag @e[tag=selected] add nothing
+execute unless data storage luigis_mansion:data current_state.current_data{money_spawned:["anteroom_nightstand_mounted_vase1"]} run data modify storage luigis_mansion:data current_state.current_data.money_spawned append value "anteroom_nightstand_mounted_vase1"

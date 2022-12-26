@@ -4,7 +4,7 @@ scoreboard players reset #nursery Vacuumables
 
 tag @e[scores={Room=10},tag=haunted_teddy_bear] remove enabled
 execute as @e[scores={Room=10},tag=chauncey] run function luigis_mansion:entities/ghost/go_to_home
-execute as @e[scores={Room=10},tag=chauncey] run function luigis_mansion:entities/chauncey/drop_rambler
+execute as @e[scores={Room=10},tag=chauncey] run function luigis_mansion:entities/ghost/turn_visible
 scoreboard players set @e[scores={Room=10},tag=chauncey] Dialog 0
 scoreboard players set @e[scores={Room=10},tag=chauncey] AnimationProg 0
 scoreboard players set @e[scores={Room=10},tag=chauncey] ActionTime 0

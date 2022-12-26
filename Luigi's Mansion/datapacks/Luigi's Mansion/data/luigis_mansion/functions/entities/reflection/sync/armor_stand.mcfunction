@@ -13,7 +13,7 @@ data modify entity @s Small set from storage luigis_mansion:data mirror.data.Sma
 data modify entity @s ArmorItems set from storage luigis_mansion:data mirror.data.ArmorItems
 data modify entity @s HandItems[0] set from storage luigis_mansion:data mirror.data.HandItems[1]
 data modify entity @s HandItems[1] set from storage luigis_mansion:data mirror.data.HandItems[0]
-execute unless data storage luigis_mansion:data mirror.data{Tags:["portrait_ghost"]} unless data storage luigis_mansion:data mirror.data{Tags:["hidden"]} unless data storage luigis_mansion:data mirror.data{Tags:["visible"]} unless data storage luigis_mansion:data mirror.data{Tags:["vacuumable"]} if data storage luigis_mansion:data mirror.data.ArmorItems[{id:"minecraft:oak_button"}] run function luigis_mansion:entities/reflection/ghost_reflection
+execute unless data storage luigis_mansion:data mirror.data{Tags:["portrait_ghost"]} unless data storage luigis_mansion:data mirror.data{Tags:["hidden"]} unless data storage luigis_mansion:data mirror.data{Tags:["visible"]} unless data storage luigis_mansion:data mirror.data{Tags:["vacuumable"]} run function luigis_mansion:entities/reflection/ghost_reflection
 data modify storage luigis_mansion:data RightHandItem set from entity @s HandItems[0]
 data modify storage luigis_mansion:data LeftHandItem set from entity @s HandItems[1]
 function #luigis_mansion:entities/reflection/swap_model

@@ -1,7 +1,7 @@
-execute if entity @s[tag=!visible,tag=!vanish] run function luigis_mansion:entities/mr_luggs/turn_visible
+execute if entity @s[tag=!visible,tag=!vanish] run function luigis_mansion:entities/ghost/turn_visible
 execute if entity @s[tag=!visible] unless entity @e[tag=this_food] positioned ^ ^0.9 ^2 run scoreboard players operation @e[tag=food,distance=..0.7,limit=1] GhostNr = @s GhostNr
 execute unless entity @s[scores={Dialog=1..}] run scoreboard players set @s Dialog 0
-execute unless entity @s[scores={Dialog=1..}] at @e[tag=same_room,tag=!spectator,tag=player] positioned ^ ^ ^8 if entity @s[distance=..8] run function luigis_mansion:entities/mr_luggs/turn_invisible
+execute unless entity @s[scores={Dialog=1..}] at @e[tag=same_room,tag=!spectator,tag=player] positioned ^ ^ ^8 if entity @s[distance=..8] run function luigis_mansion:entities/ghost/turn_invisible
 execute unless entity @s[scores={Dialog=2..}] if entity @s[tag=visible] run item replace entity @e[tag=this_food,limit=1] armor.head with minecraft:diamond_pickaxe{Unbreakable:1b,Damage:4,CustomModelData:11}
 execute if entity @s[tag=!visible] run item replace entity @e[tag=this_food,limit=1] armor.head with minecraft:air
 execute unless entity @s[scores={Dialog=1..}] if block ^3 ^1.9 ^2 minecraft:slime_block if block ^-3 ^1.9 ^2 minecraft:slime_block run playsound luigis_mansion:music.solve_puzzle music @a[tag=same_room] ~ ~ ~ 10000

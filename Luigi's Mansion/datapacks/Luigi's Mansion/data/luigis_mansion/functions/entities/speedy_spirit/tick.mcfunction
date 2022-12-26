@@ -21,7 +21,7 @@ execute if entity @s[tag=!element_hurt,tag=!hurt,tag=!fleeing,tag=attack,tag=bas
 execute at @s[tag=!hurt,tag=!element_hurt,tag=!fleeing,tag=!attack,tag=!vanish,tag=!laugh,scores={StunTime=0}] unless entity @s[tag=appear,tag=beta_appear] facing entity @e[tag=same_room,tag=!spectator,tag=player,sort=nearest,limit=1] feet rotated ~ 0 run teleport @s ~ ~ ~ ~ ~
 execute at @s[tag=!hurt,tag=!element_hurt,tag=!fleeing,tag=!attack,tag=!vanish,tag=!laugh,tag=!appear,tag=basher,scores={StunTime=0}] run function luigis_mansion:entities/ghost/move
 execute if entity @s[tag=!hurt,tag=!element_hurt,tag=!fleeing,tag=!attack,tag=laugh,scores={StunTime=0}] run function luigis_mansion:entities/speedy_spirit/laugh
-execute at @s[tag=!element_hurt,tag=!fleeing,tag=!vanish,tag=!attack,tag=!laugh,tag=!appear,tag=!basher,scores={StunTime=0,SpawnTime=20..}] run function luigis_mansion:entities/speedy_spirit/flee
+execute at @s[tag=!element_hurt,tag=!fleeing,tag=!vanish,tag=!attack,tag=!laugh,tag=!appear,tag=!basher,scores={StunTime=0}] run function luigis_mansion:entities/speedy_spirit/flee
 execute if entity @s[tag=vanish] run function luigis_mansion:entities/speedy_spirit/vanish
 execute if entity @s[tag=appear,tag=!beta_appear] run function luigis_mansion:entities/speedy_spirit/appear
 execute if entity @s[tag=appear,tag=beta_appear] run function luigis_mansion:entities/speedy_spirit/beta_appear

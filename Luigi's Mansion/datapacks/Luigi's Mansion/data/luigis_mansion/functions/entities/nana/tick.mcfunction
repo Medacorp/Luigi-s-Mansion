@@ -19,7 +19,8 @@ execute if entity @s[tag=!vanish,tag=!fleeing,tag=!hurt,tag=!visible_rocking_cha
 execute if entity @s[tag=vanish] run function luigis_mansion:entities/nana/vanish
 execute at @s[tag=fleeing,tag=!second_flee_state] run function luigis_mansion:animations/nana/flee
 execute at @s[tag=fleeing,tag=second_flee_state] run function luigis_mansion:entities/nana/second_flee_state
-execute if entity @s[tag=!fleeing,tag=hurt] run function luigis_mansion:entities/nana/drop_stuff
+execute if entity @s[tag=!fleeing,tag=hurt] run function luigis_mansion:entities/ghost/turn_visible_no_equipment
+execute if entity @s[tag=!fleeing,tag=hurt] run function luigis_mansion:entities/nana/hide_rocking_chair
 execute at @s[tag=!fleeing,tag=hurt] run function luigis_mansion:animations/nana/hurt
 
 scoreboard players reset #temp GhostNr

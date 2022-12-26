@@ -13,5 +13,6 @@ data remove storage luigis_mansion:data inventories
 data remove storage luigis_mansion:data obtained_parlor_key
 data remove storage luigis_mansion:data used_parlor_key
 scoreboard objectives remove Attack
+scoreboard objectives remove ForcedDamage
 scoreboard players operation #heart_money_count Selected = #heart_coin_count Selected
 scoreboard players reset #heart_coin_count Selected

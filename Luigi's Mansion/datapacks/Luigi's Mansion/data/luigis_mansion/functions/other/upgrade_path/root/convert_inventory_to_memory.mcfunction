@@ -1,6 +1,6 @@
 data modify storage luigis_mansion:data this_memory set from storage luigis_mansion:data memory
 data modify storage luigis_mansion:data new_memory set value []
-data modify storage luigis_mansion:data temp set from entity luigis_mansion:data inventories[-1].uuid
+data modify storage luigis_mansion:data temp set from storage luigis_mansion:data inventories[-1].uuid
 execute if data storage luigis_mansion:data this_memory[-1] run function luigis_mansion:entities/player/memory/search
 data remove storage luigis_mansion:data temp
 scoreboard players reset #temp Time

@@ -1,5 +1,5 @@
 execute unless data storage luigis_mansion:data current_state.current_data{data_version:2} run function luigis_beta_mansion:other/upgrade_path/current_data/v2.0
-data modify storage luigis_mansion:data current_state.current_data merge value {data_version:3}
+data modify storage luigis_mansion:data current_state.current_data merge value {data_version:3,portrait_ghosts:{neville:{loot:{drop_at_0:1b,contents:{luigis_beta_mansion:{ghost_coin:10}}},damage:{collision:0}},lydia:{loot:{drop_at_0:1b,contents:{luigis_beta_mansion:{ghost_coin:10}}},damage:{}},miss_petunia{loot:{drop_at_0:1b,contents:{luigis_beta_mansion:{ghost_coin:10}}},damage:{}},spooky:{loot:{drop_at_0:1b,contents:{luigis_beta_mansion:{ghost_coin:10}}},damage:{}}},ghosts:{beta_ghost:{loot:{drop_at_0:1b,contents:{luigis_beta_mansion:{ghost_coin:3}}},vanish_time:120,damage:{collision:5,attack:10}},beta_puncher:{loot:{drop_at_0:1b,contents:{luigis_beta_mansion:{ghost_coin:3}}},vanish_time:120,damage:{collision:5,attack:10}},beta_body_slammer:{loot:{drop_at_0:1b,contents:{luigis_beta_mansion:{ghost_coin:3}}},vanish_time:180,damage:{collision:5,attack:10}},beta_basher:{loot:{drop_at_0:1b,contents:{luigis_beta_mansion:{ghost_coin:2}}},vanish_time:120,damage:{collision:5,attack:10}},beta_bat:{damage:{collision:5}},beta_mouse:{damage:{collision:5}},beta_shining_ghost:{damage:{collision:5}},beta_boo:{damage:{collision:5}},beta_flying_fish:{damage:{collision:5}},haunted_teddy_bear:{damage:{}},haunted_frying_pan:{damage:{}}}}
 data modify storage luigis_mansion:data obtained_keys set from storage luigis_mansion:data current_state.current_data.obtained_keys
 data modify storage luigis_mansion:data current_state.current_data.obtained_keys set value []
 execute if data storage luigis_mansion:data obtained_keys{parlor:1b} run data modify storage luigis_mansion:data current_state.current_data.obtained_keys append value "living_room"
@@ -21,12 +21,4 @@ execute if data storage luigis_mansion:data money_spawned{lavatory_chest:1b} run
 execute if data storage luigis_mansion:data money_spawned{dining_room_chest:1b} run data modify storage luigis_mansion:data current_state.current_data.money_spawned append value "dining_room_room_clear_chest"
 execute if data storage luigis_mansion:data money_spawned{kitchen_chest:1b} run data modify storage luigis_mansion:data current_state.current_data.money_spawned append value "kitchen_room_clear_chest"
 data remove storage luigis_mansion:data money_spawned
-data modify storage luigis_mansion:data current_state.current_data.portrait_ghosts.neville.loot set value {drop_at_0:1b,contents:{luigis_beta_mansion:{ghost_coin:10}}}
-data modify storage luigis_mansion:data current_state.current_data.portrait_ghosts.lydia.loot set value {drop_at_0:1b,contents:{luigis_beta_mansion:{ghost_coin:10}}}
-data modify storage luigis_mansion:data current_state.current_data.portrait_ghosts.miss_petunia.loot set value {drop_at_0:1b,contents:{luigis_beta_mansion:{ghost_coin:10}}}
-data modify storage luigis_mansion:data current_state.current_data.portrait_ghosts.spooky.loot set value {drop_at_0:1b,contents:{luigis_beta_mansion:{ghost_coin:10}}}
-data modify storage luigis_mansion:data current_state.current_data.ghosts.beta_ghost.loot set value {drop_at_0:1b,contents:{luigis_beta_mansion:{ghost_coin:3}}}
-data modify storage luigis_mansion:data current_state.current_data.ghosts.beta_puncher.loot set value {drop_at_0:1b,contents:{luigis_beta_mansion:{ghost_coin:3}}}
-data modify storage luigis_mansion:data current_state.current_data.ghosts.beta_body_slammer.loot set value {drop_at_0:1b,contents:{luigis_beta_mansion:{ghost_coin:3}}}
-data modify storage luigis_mansion:data current_state.current_data.ghosts.beta_basher.loot set value {drop_at_0:1b,contents:{luigis_beta_mansion:{ghost_coin:2}}}
 scoreboard objectives remove Attack

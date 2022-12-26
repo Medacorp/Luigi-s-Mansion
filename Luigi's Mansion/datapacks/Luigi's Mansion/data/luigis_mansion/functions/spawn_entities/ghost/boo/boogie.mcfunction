@@ -3,4 +3,5 @@ data modify storage luigis_mansion:data entity.health set from storage luigis_ma
 data modify storage luigis_mansion:data entity.room set from storage luigis_mansion:data current_state.current_data.boos[{name:"boogie"}].room
 data modify storage luigis_mansion:data entity.speed set from storage luigis_mansion:data current_state.current_data.boos[{name:"boogie"}].speed
 data modify storage luigis_mansion:data entity.loot set from storage luigis_mansion:data current_state.current_data.boos[{name:"boogie"}].loot
+data modify storage luigis_mansion:data entity.damage set from storage luigis_mansion:data current_state.current_data.boos[{name:"boogie"}].damage
 function luigis_mansion:spawn_entities/ghost/boo

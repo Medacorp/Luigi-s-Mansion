@@ -11,16 +11,10 @@ execute if entity @s[scores={ActionTime=61..90}] run function luigis_mansion:ani
 
 tag @s[scores={ActionTime=1}] add stunnable
 tag @s[scores={ActionTime=1}] add visible
-data modify entity @s[scores={ActionTime=1..40}] ArmorItems[3].id set value "minecraft:oak_button"
-data modify entity @s[scores={ActionTime=1..40}] HandItems[0].id set value "minecraft:oak_button"
-data modify entity @s[scores={ActionTime=1..40}] HandItems[1].id set value "minecraft:oak_button"
-data modify entity @s[scores={ActionTime=1..40}] CustomNameVisible set value 0b
+execute if entity @s[scores={ActionTime=1..40},tag=visible] run function luigis_mansion:entities/ghost/turn_invisible
 execute at @s[scores={ActionTime=1..40}] run particle minecraft:dust 0.7 1 1 1 ~-0.2 ~0.2 ~-0.2 0.4 0.4 0.4 0 50 force
 execute if entity @s[scores={ActionTime=41}] run playsound luigis_mansion:entity.gold_ghost.spawn hostile @a[tag=same_room] ~ ~ ~ 1
-data modify entity @s[scores={ActionTime=41}] ArmorItems[3].id set value "minecraft:leather_chestplate"
-data modify entity @s[scores={ActionTime=41}] HandItems[0].id set value "minecraft:leather_chestplate"
-data modify entity @s[scores={ActionTime=41}] HandItems[1].id set value "minecraft:leather_chestplate"
-data modify entity @s[scores={ActionTime=41}] CustomNameVisible set value 1b
+execute if entity @s[scores={ActionTime=41},tag=visible] run function luigis_mansion:entities/ghost/turn_visible
 execute if entity @s[scores={ActionTime=41}] run summon minecraft:armor_stand ~ ~0.5 ~ {CustomName:'{"translate":"luigis_mansion:message.basher_scare","color":"yellow","bold":true}',Marker:1b,Invisible:1b,NoGravity:1b,CustomNameVisible:1b,HasVisualFire:1b,Tags:["basher_scare"]}
 execute if entity @s[scores={ActionTime=41}] as @e[distance=..5,tag=game_boy_horror_location] run function luigis_mansion:entities/game_boy_horror_location/bring_player_back
 execute if entity @s[scores={ActionTime=41}] as @a[distance=3..5,scores={Invulnerable=0},tag=!spectator] run function luigis_mansion:entities/player/scare/normal

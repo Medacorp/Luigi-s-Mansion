@@ -1,4 +1,4 @@
-data modify storage luigis_mansion:data memory append value {uuid:[I;],inventory:{},model:{color:0,variant:0b},hurt_by:{method:"",attacker:-1,self:0b},poltergust_element:"none"}
+data modify storage luigis_mansion:data memory append value {uuid:[I;],inventory:{},model:{color:0,variant:0b},hurt_by:{method:""},poltergust_element:"none"}
 data modify storage luigis_mansion:data memory[-1].uuid set from storage luigis_mansion:data luigi_colors[-1].uuid
 data modify storage luigis_mansion:data memory[-1].model.color set from storage luigis_mansion:data luigi_colors[-1].color
 execute store result storage luigis_mansion:data memory[-1].model.variant byte 1 run data get storage luigis_mansion:data luigi_colors[-1].variant

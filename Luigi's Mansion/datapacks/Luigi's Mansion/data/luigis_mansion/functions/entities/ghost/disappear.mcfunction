@@ -1,17 +1,4 @@
-execute if data entity @s ArmorItems[{id:"minecraft:leather_chestplate"}] run data modify entity @s ArmorItems[3].id set value "minecraft:oak_button"
-execute if data entity @s HandItems[{id:"minecraft:leather_chestplate"}] run data modify entity @s HandItems[0].id set value "minecraft:oak_button"
-execute if data entity @s HandItems[{id:"minecraft:leather_chestplate"}] run data modify entity @s HandItems[1].id set value "minecraft:oak_button"
-execute if data entity @s ArmorItems[{id:"minecraft:diamond_pickaxe"}] run data modify entity @s ArmorItems[3].id set value "minecraft:stone_button"
-execute if data entity @s HandItems[{id:"minecraft:diamond_pickaxe"}] run data modify entity @s HandItems[0].id set value "minecraft:stone_button"
-execute if data entity @s HandItems[{id:"minecraft:diamond_pickaxe"}] run data modify entity @s HandItems[1].id set value "minecraft:stone_button"
-data modify entity @s CustomNameVisible set value 0b
-data modify entity @s Marker set value 1b
-execute as @e[tag=this_model] if data entity @s ArmorItems[{id:"minecraft:leather_chestplate"}] run data modify entity @s ArmorItems[3].id set value "minecraft:oak_button"
-execute as @e[tag=this_model] if data entity @s HandItems[{id:"minecraft:leather_chestplate"}] run data modify entity @s HandItems[0].id set value "minecraft:oak_button"
-execute as @e[tag=this_model] if data entity @s HandItems[{id:"minecraft:leather_chestplate"}] run data modify entity @s HandItems[1].id set value "minecraft:oak_button"
-execute as @e[tag=this_model] if data entity @s ArmorItems[{id:"minecraft:diamond_pickaxe"}] run data modify entity @s ArmorItems[3].id set value "minecraft:stone_button"
-execute as @e[tag=this_model] if data entity @s HandItems[{id:"minecraft:diamond_pickaxe"}] run data modify entity @s HandItems[0].id set value "minecraft:stone_button"
-execute as @e[tag=this_model] if data entity @s HandItems[{id:"minecraft:diamond_pickaxe"}] run data modify entity @s HandItems[1].id set value "minecraft:stone_button"
+function luigis_mansion:entities/ghost/turn_invisible
 execute if entity @s[tag=no_hidden_move] run teleport @s ~ ~ ~ ~ 90
 execute if entity @s[tag=!no_hidden_move] run teleport @s ~ ~ ~ ~ 0
 execute if entity @s[scores={HomeX=-2147483648..}] store result entity @s Pos[0] double 0.01 run scoreboard players get @s HomeX

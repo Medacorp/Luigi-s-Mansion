@@ -1,6 +1,6 @@
 execute if entity @s[scores={Dialog=1..422}] run scoreboard players set #freeze_timer Selected 1
-execute if entity @s[tag=!visible,tag=!vanish] run function luigis_mansion:entities/sir_weston/turn_visible
-execute unless entity @s[scores={Dialog=1..}] at @e[tag=same_room,tag=!spectator,tag=player] positioned ^ ^ ^8 if entity @s[distance=..8] run function luigis_mansion:entities/sir_weston/turn_invisible
+execute unless entity @s[scores={Dialog=483..}] if entity @s[tag=!visible,tag=!vanish] run function luigis_mansion:entities/ghost/turn_visible
+execute unless entity @s[scores={Dialog=1..}] at @e[tag=same_room,tag=!spectator,tag=player] positioned ^ ^ ^8 if entity @s[distance=..8] run function luigis_mansion:entities/ghost/turn_invisible
 scoreboard players add @s[scores={Dialog=483..},tag=!vanish] Dialog 1
 scoreboard players add @s[scores={Dialog=423..482},tag=melt] Dialog 1
 tag @s remove melt

@@ -3,9 +3,9 @@ teleport @e[tag=this_entity,limit=1] ~ ~-1.4 ~ ~ ~
 function luigis_mansion:spawn_furniture/setup/loot
 function luigis_mansion:spawn_furniture/setup/scan_message
 function luigis_mansion:spawn_furniture/setup/pose
-execute if data storage luigis_mansion:data furniture{open:1b} run data modify entity @e[tag=this_entity,limit=1] ArmorItems[3].tag.CustomModelData set value -2
-execute unless data storage luigis_mansion:data furniture{open:1b} run playsound luigis_mansion:furniture.room_clear_chest.spawn block @a ~ ~ ~ 2
-function luigis_mansion:spawn_furniture/setup/open
+execute if data storage luigis_mansion:data furniture{searched:1b,no_search_animation:1b} run data modify entity @e[tag=this_entity,limit=1] ArmorItems[3].tag.CustomModelData set value -2
+function luigis_mansion:spawn_furniture/setup/room_clear_chest_spawn_sound
+function luigis_mansion:spawn_furniture/setup/searched
 function luigis_mansion:spawn_furniture/setup/can_hide_boo
 function luigis_mansion:spawn_furniture/setup/elemental_source
 scoreboard players set @e[tag=this_entity,limit=1] Sound 0

@@ -6,13 +6,15 @@ execute if entity @s[tag=!dead,tag=dying,tag=element_hurt,tag=!element_death,tag
 scoreboard players operation #temp Move = @s Move
 execute if entity @s[tag=!hidden,scores={LightX=-2147483648..}] run function luigis_mansion:other/cast_shadow
 execute if entity @s[tag=!freeze,tag=!captured] run function #luigis_mansion:entities/ghosts
-scoreboard players add @s[scores={StunTime=0},tag=!hidden] SpawnTime 1
+scoreboard players add @s[scores={StunTime=0},tag=!hidden,tag=!dialog] SpawnTime 1
 scoreboard players set @s[tag=attack,scores={SpawnTime=21..},tag=!hidden] SpawnTime 20
 scoreboard players set @s[tag=fleeing,scores={SpawnTime=21..},tag=!hidden] SpawnTime 20
 scoreboard players set @s[tag=collided,scores={SpawnTime=21..},tag=!hidden] SpawnTime 20
+scoreboard players set @s[tag=smug,scores={SpawnTime=21..},tag=!hidden] SpawnTime 20
 scoreboard players set @s[tag=laugh,scores={SpawnTime=21..},tag=!hidden] SpawnTime 20
 scoreboard players set @s[tag=complain,scores={SpawnTime=21..},tag=!hidden] SpawnTime 20
 scoreboard players set @s[tag=element_hurt,scores={SpawnTime=21..},tag=!hidden] SpawnTime 20
+execute if entity @s[scores={VanishTime=1..}] if entity @s SpawnTime = @s VanishTime run tag @s add vanish
 scoreboard players reset @s[tag=vanish] HurtTime
 scoreboard players remove @s[tag=!dying,scores={StunTime=1..}] StunTime 1
 execute unless entity @s[tag=portrait_ghost,scores={StunTime=1..}] run scoreboard players remove @s[tag=!dying,scores={VulnerableTime=1..},tag=!hurt] VulnerableTime 1

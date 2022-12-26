@@ -8,8 +8,8 @@ scoreboard players add @s[scores={Dialog=121},tag=!vanish,tag=hit_by_swinging_fu
 scoreboard players add @s[scores={Dialog=2..120},tag=!vanish] Dialog 1
 scoreboard players add @s[scores={Dialog=1},tag=!vanish,tag=hit_by_swinging_furniture] Dialog 1
 execute unless entity @s[scores={Dialog=1..}] run scoreboard players add @s Dialog 1
-execute if entity @s[scores={Dialog=1..2}] run function luigis_mansion:entities/biff_atlas/turn_visible
-execute if entity @s[scores={Dialog=1}] at @e[tag=same_room,tag=!spectator,tag=player] positioned ^ ^ ^8 if entity @s[distance=..8] run function luigis_mansion:entities/biff_atlas/turn_invisible
+execute if entity @s[scores={Dialog=1..2},tag=visible] run function luigis_mansion:entities/ghost/turn_visible
+execute if entity @s[scores={Dialog=1}] at @e[tag=same_room,tag=!spectator,tag=player] positioned ^ ^ ^8 if entity @s[distance=..8] run function luigis_mansion:entities/ghost/turn_invisible
 execute if entity @s[scores={Dialog=1}] run function luigis_mansion:entities/biff_atlas/idle
 execute if entity @s[scores={Dialog=2}] as @e[tag=these_weights,limit=1] run function luigis_mansion:entities/biff_atlas/move_weights/home
 scoreboard players set @s[scores={Dialog=2}] AnimationProg 0
