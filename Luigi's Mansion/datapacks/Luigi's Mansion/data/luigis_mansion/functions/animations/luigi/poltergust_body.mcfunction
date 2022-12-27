@@ -44,6 +44,9 @@ execute at @s[tag=exploding_poltergust] run particle minecraft:flame ~ ~1.5 ~ 0.
 tag @s remove exploding_poltergust
 
 execute at @s[tag=yelling] run function luigis_mansion:animations/luigi/yelling/chest
+execute at @s[tag=talk_animation,tag=!low_health] run function luigis_mansion:animations/luigi/talk/high_health/chest
+execute at @s[tag=talk_animation,tag=low_health] run function luigis_mansion:animations/luigi/talk/low_health/chest
+execute at @s[tag=revive] run function luigis_mansion:animations/luigi/revive/chest
 execute at @s[tag=nod] run function luigis_mansion:animations/luigi/nod/chest
 execute at @s[tag=thinking] run function luigis_mansion:animations/luigi/thinking/chest
 execute at @s[tag=sigh] run function luigis_mansion:animations/luigi/sigh/chest

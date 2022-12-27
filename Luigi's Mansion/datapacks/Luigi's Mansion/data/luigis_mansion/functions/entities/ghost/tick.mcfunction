@@ -14,7 +14,7 @@ scoreboard players set @s[tag=smug,scores={SpawnTime=21..},tag=!hidden] SpawnTim
 scoreboard players set @s[tag=laugh,scores={SpawnTime=21..},tag=!hidden] SpawnTime 20
 scoreboard players set @s[tag=complain,scores={SpawnTime=21..},tag=!hidden] SpawnTime 20
 scoreboard players set @s[tag=element_hurt,scores={SpawnTime=21..},tag=!hidden] SpawnTime 20
-execute if entity @s[scores={VanishTime=1..}] if entity @s SpawnTime = @s VanishTime run tag @s add vanish
+execute if entity @s[scores={VanishTime=1..},tag=!hidden] if score @s SpawnTime = @s VanishTime run tag @s add vanish
 scoreboard players reset @s[tag=vanish] HurtTime
 scoreboard players remove @s[tag=!dying,scores={StunTime=1..}] StunTime 1
 execute unless entity @s[tag=portrait_ghost,scores={StunTime=1..}] run scoreboard players remove @s[tag=!dying,scores={VulnerableTime=1..},tag=!hurt] VulnerableTime 1

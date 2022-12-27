@@ -15,6 +15,7 @@ data modify entity @s[tag=was_flipped,tag=!flipped_gravity] Pose.Head[2] set val
 data modify entity @s[tag=!was_flipped,tag=flipped_gravity] Pose.Head[2] set value -180.0f
 
 execute at @s[tag=yelling] run function luigis_mansion_3ds_remake:animations/gooigi/wave/chest
+execute at @s[tag=revive] run function luigis_mansion_3ds_remake:animations/gooigi/revive/chest
 execute at @s[tag=nod] run function luigis_mansion_3ds_remake:animations/gooigi/nod/chest
 execute at @s[tag=thinking] run function luigis_mansion_3ds_remake:animations/gooigi/thinking/chest
 execute at @s[tag=sigh] run function luigis_mansion_3ds_remake:animations/gooigi/sigh/chest

@@ -41,6 +41,9 @@ execute at @s[tag=pull_locked_door,tag=left_door] unless entity @s[tag=held_item
 execute at @s[tag=push_unlock_door,tag=left_door] unless entity @s[tag=held_item,tag=holding_poltergust] run function luigis_mansion:animations/luigi/door/push/unlock/left_arm
 execute at @s[tag=pull_unlock_door,tag=left_door] unless entity @s[tag=held_item,tag=holding_poltergust] run function luigis_mansion:animations/luigi/door/pull/unlock/left_arm
 execute at @s[tag=yelling] unless entity @s[tag=held_item,tag=holding_poltergust] run function luigis_mansion:animations/luigi/yelling/left_arm
+execute at @s[tag=talk_animation,tag=!low_health] unless entity @s[tag=held_item,tag=holding_poltergust] run function luigis_mansion:animations/luigi/talk/high_health/left_arm
+execute at @s[tag=talk_animation,tag=low_health] unless entity @s[tag=held_item,tag=holding_poltergust] run function luigis_mansion:animations/luigi/talk/low_health/left_arm
+execute at @s[tag=revive] unless entity @s[tag=held_item,tag=holding_poltergust] run function luigis_mansion:animations/luigi/revive/left_arm
 execute at @s[tag=nod] unless entity @s[tag=held_item,tag=holding_poltergust] run function luigis_mansion:animations/luigi/nod/left_arm
 execute at @s[tag=thinking] unless entity @s[tag=held_item,tag=holding_poltergust] run function luigis_mansion:animations/luigi/thinking/left_arm
 execute at @s[tag=sigh] unless entity @s[tag=held_item,tag=holding_poltergust] run function luigis_mansion:animations/luigi/sigh/left_arm

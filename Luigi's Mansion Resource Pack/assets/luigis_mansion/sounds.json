@@ -6597,6 +6597,24 @@
         ],
         "subtitle": "luigis_mansion:subtitles.entity.player.recover"
     },
+    "entity.player.revive.high_health": {
+        "sounds": [
+            {
+                "name": "luigis_mansion:entity/player/revive/high_health",
+                "stream": false
+            }
+        ],
+        "subtitle": "luigis_mansion:subtitles.entity.player.revive"
+    },
+    "entity.player.revive.low_health": {
+        "sounds": [
+            {
+                "name": "luigis_mansion:entity/player/revive/low_health",
+                "stream": false
+            }
+        ],
+        "subtitle": "luigis_mansion:subtitles.entity.player.revive"
+    },
     "entity.player.scare.high_health": {
         "sounds": [
             {
@@ -6772,6 +6790,32 @@
             }
         ],
         "subtitle": "luigis_mansion:subtitles.entity.player.slip"
+    },
+    "entity.player.talk.high_health": {
+        "sounds": [
+            {
+                "name": "luigis_mansion:entity/player/talk/high_health1",
+                "stream": false
+            },
+            {
+                "name": "luigis_mansion:entity/player/talk/high_health2",
+                "stream": false
+            }
+        ],
+        "subtitle": "luigis_mansion:subtitles.entity.player.talk"
+    },
+    "entity.player.talk.low_health": {
+        "sounds": [
+            {
+                "name": "luigis_mansion:entity/player/talk/low_health1",
+                "stream": false
+            },
+            {
+                "name": "luigis_mansion:entity/player/talk/low_health2",
+                "stream": false
+            }
+        ],
+        "subtitle": "luigis_mansion:subtitles.entity.player.cry"
     },
     "entity.player.whistle.1": {
         "sounds": [

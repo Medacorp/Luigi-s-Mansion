@@ -1,0 +1,2 @@
+execute if entity @s[tag=!attacker_exists] run function luigis_mansion:other/death_message/send_message/no_killer
+execute if entity @s[tag=attacker_exists] run function luigis_mansion:other/death_message/send_message/one_killer

@@ -18,6 +18,9 @@ execute if entity @s[tag=walking,tag=!stop_model,tag=!riding_poltergust] run fun
 execute if entity @s[tag=running,tag=!stop_model,tag=!riding_poltergust] run function luigis_mansion:animations/luigi/running/left_leg
 execute if entity @s[tag=swimming,tag=!stop_model,tag=!riding_poltergust] run function luigis_mansion:animations/luigi/swimming/left_leg
 
+execute at @s[tag=talk_animation,tag=!low_health] run function luigis_mansion:animations/luigi/talk/high_health/left_leg
+execute at @s[tag=talk_animation,tag=low_health] run function luigis_mansion:animations/luigi/talk/low_health/left_leg
+execute at @s[tag=revive] run function luigis_mansion:animations/luigi/revive/left_leg
 execute at @s[tag=nod] run function luigis_mansion:animations/luigi/nod/left_leg
 execute at @s[tag=thinking] run function luigis_mansion:animations/luigi/thinking/left_leg
 execute at @s[tag=sigh] run function luigis_mansion:animations/luigi/sigh/left_leg

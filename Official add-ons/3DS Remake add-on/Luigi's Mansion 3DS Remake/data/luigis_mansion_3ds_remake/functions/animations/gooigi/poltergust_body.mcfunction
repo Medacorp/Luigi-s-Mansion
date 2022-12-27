@@ -44,6 +44,7 @@ execute at @s[tag=exploding_poltergust] run particle minecraft:flame ~ ~1.5 ~ 0.
 tag @s remove exploding_poltergust
 
 execute at @s[tag=yelling] run function luigis_mansion_3ds_remake:animations/gooigi/wave/chest
+execute at @s[tag=revive] run function luigis_mansion_3ds_remake:animations/gooigi/revive/chest
 execute at @s[tag=nod] run function luigis_mansion_3ds_remake:animations/gooigi/nod/chest
 execute at @s[tag=thinking] run function luigis_mansion_3ds_remake:animations/gooigi/thinking/chest
 execute at @s[tag=sigh] run function luigis_mansion_3ds_remake:animations/gooigi/sigh/chest

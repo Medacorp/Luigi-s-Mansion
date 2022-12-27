@@ -5,6 +5,7 @@ execute at @s[scores={Shrunk=0},tag=!show_credits] unless entity @s[scores={Open
 execute at @s[scores={Shrunk=0},tag=!show_credits,tag=!try_opening_door] unless entity @s[scores={OpenMapTime=1..}] rotated ~ 0 positioned ^ ^1.1 ^2 if entity @e[distance=..2,tag=can_talk_to,tag=!talk,tag=!ghost,limit=1] run function luigis_mansion:items/interact/try_talking
 execute at @s[scores={Shrunk=0},tag=!show_credits,tag=!try_opening_door,tag=!talk] unless entity @s[scores={OpenMapTime=1..}] rotated ~ 0 positioned ^ ^1.1 ^2 if entity @e[distance=..2,tag=can_talk_to,tag=!talk,tag=ghost,tag=visible,limit=1] run function luigis_mansion:items/interact/try_talking_with_ghost
 execute at @s[scores={Shrunk=0},tag=!show_credits,tag=!try_opening_door,tag=!talk] unless entity @s[scores={OpenMapTime=1..}] run function luigis_mansion:items/interact/try_shaking
+execute unless entity @s[scores={InteractionTime=1..}] at @s[scores={Shrunk=0},tag=!show_credits,tag=!try_opening_door,tag=!talk] unless entity @s[scores={OpenMapTime=1..}] rotated ~ 0 positioned ^ ^1.1 ^2 if entity @a[distance=..2,tag=!camera,limit=1] run function luigis_mansion:items/interact/try_interacting_with_player
 execute unless entity @s[scores={InteractionTime=1..}] if entity @s[scores={Sound=0},tag=!show_credits,tag=!try_opening_door,tag=!talk] run function #luigis_mansion:room/yell
 scoreboard players reset #temp Room
 tag @s remove talk

@@ -38,7 +38,6 @@
         "luigis_mansion:entities/basher_scare",
         "luigis_mansion:entities/vacuumable_object",
         "luigis_mansion:entities/cobweb",
-        "luigis_mansion:entities/revive_detection",
         "luigis_mansion:entities/furniture"
 	]
 }

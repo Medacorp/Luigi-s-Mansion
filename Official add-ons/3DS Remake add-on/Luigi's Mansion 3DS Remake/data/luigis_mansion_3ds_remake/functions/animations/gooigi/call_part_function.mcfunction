@@ -21,4 +21,4 @@ execute if entity @s[tag=left_arm,tag=spawn_animation] run function luigis_mansi
 execute if entity @s[tag=right_arm,tag=spawn_animation] run function luigis_mansion_3ds_remake:animations/gooigi/spawn/right_arm
 execute if entity @s[tag=chest,tag=spawn_animation] run function luigis_mansion_3ds_remake:animations/gooigi/spawn/chest
 execute if entity @s[tag=head,tag=spawn_animation] run function luigis_mansion_3ds_remake:animations/gooigi/spawn/head
-execute if entity @s[tag=poltergust_body,tag=revive_animation] run function luigis_mansion_3ds_remake:animations/gooigi/revive/chest
+execute if entity @s[tag=poltergust_body,tag=revive_animation] run function luigis_mansion_3ds_remake:animations/gooigi/spawn/chest
