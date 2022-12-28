@@ -12,6 +12,7 @@ execute if entity @s[scores={ActionTime=21..121}] store result score #temp Time 
 execute if entity @s[scores={ActionTime=21..121}] if score #mirrored Selected matches 0 store result entity @s Rotation[0] float 0.1 run scoreboard players operation #temp Time -= @s Time
 execute if entity @s[scores={ActionTime=21..121}] if score #mirrored Selected matches 1 store result entity @s Rotation[0] float 0.1 run scoreboard players operation #temp Time += @s Time
 execute at @s[scores={ActionTime=21..121}] positioned ^ ^ ^5 run function luigis_mansion:spawn_entities/burning_floor
+execute at @s[scores={ActionTime=21..121}] positioned ^ ^ ^5 run data modify entity @e[distance=..0.1,tag=burning_floor,limit=1] ArmorItems[3].tag.damage set value {attack:10}
 execute at @s[scores={ActionTime=21..121}] positioned ^ ^ ^5 as @e[distance=..0.1,tag=burning_floor] unless entity @s[scores={Owner=-2147483648..}] positioned ^ ^ ^-5 run scoreboard players operation @s Owner = @e[tag=bowser,distance=..0.1] GhostNr
 execute at @s[scores={ActionTime=21..121}] positioned ^ ^ ^2 as @e[distance=..2,tag=game_boy_horror_location] run function luigis_mansion:entities/game_boy_horror_location/bring_player_back
 execute at @s[scores={ActionTime=21..121}] run data modify storage luigis_mansion:data damage set value {method:"luigis_mansion:fire",amount:10,knockback:"burn",attacker:-1,no_delete:1b}

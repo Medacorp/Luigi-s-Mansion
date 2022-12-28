@@ -1,5 +1,5 @@
 scoreboard players add @s ActionTime 1
-execute if entity @s[scores={ActionTime=1}] run data modify entity @s ArmorItems[3].tag.CustomModelData set from entity @s ArmorItems[3].tag.variants.frozen
+execute if entity @s[scores={ActionTime=1}] run data modify entity @s ArmorItems[3] merge from entity @s ArmorItems[3].tag.variants.frozen
 execute if entity @s[scores={ActionTime=1}] run playsound luigis_mansion:entity.jarvis.freeze hostile @a[tag=same_room] ~ ~ ~ 1
 scoreboard players set @s[scores={ActionTime=1}] AnimationProg 0
 execute at @s run function luigis_mansion:animations/jarvis/got_frozen

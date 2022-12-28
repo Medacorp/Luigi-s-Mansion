@@ -1,7 +1,15 @@
 tag @s remove dark_room
 function #luigis_mansion:room/dark_room
+tag @s add new_poltergust_grabbed
+function #luigis_mansion:entities/player/overwrite_poltergust_grabbed
+execute if entity @s[tag=was_putting_away_poltergust] run function luigis_mansion:entities/player/put_poltergust_away
+execute if entity @s[tag=was_grabbing_poltergust] run function luigis_mansion:entities/player/grab_poltergust
+execute if entity @s[tag=!was_grabbing_poltergust,tag=!was_putting_away_poltergust,tag=!new_poltergust_grabbed,tag=poltergust_grabbed,tag=!pull_open_door,tag=!push_open_door] run function luigis_mansion:entities/player/put_poltergust_away
+execute if entity @s[tag=!was_grabbing_poltergust,tag=!was_putting_away_poltergust,tag=new_poltergust_grabbed,tag=!poltergust_grabbed,tag=!pull_open_door,tag=!push_open_door] run function luigis_mansion:entities/player/grab_poltergust
+tag @s remove instant_poltergust_grab
+tag @s remove instant_poltergust_put_away
 
-execute if entity @s[scores={Health=..0},tag=!death_animation,tag=!revive_animation] run function luigis_mansion:entities/player/death
+execute if entity @s[scores={Health=..0},tag=!death_animation,tag=!revive_animation] unless entity @s[scores={KnockbackTime=1..}] unless entity @s[scores={ScareTime=1..}] run function luigis_mansion:entities/player/death
 execute if entity @s[scores={Health=1..},tag=already_added_to_list] run function luigis_mansion:entities/player/remove_dead_entry
 tag @s[scores={Health=1..}] remove already_added_to_list
 
@@ -34,6 +42,7 @@ effect give @s[scores={Food=3..}] minecraft:hunger 1 255 true
 effect give @s[scores={Food=..0}] minecraft:saturation 1 0 true
 execute unless entity @s[scores={MaxHealth=100}] run scoreboard players add @s MaxHealthTime 1
 execute if entity @s[scores={MaxHealthTime=1}] if score @s MaxHealth < @s Health run function luigis_mansion:entities/player/reduce_health_to_max
+execute unless entity @s[scores={Health=0}] run scoreboard players set @s MaxHealthTime 100
 execute unless entity @s[scores={MaxHealth=100}] unless entity @s[scores={Walk=0..2,Run=0..2,Sneak=0}] run scoreboard players add @s MaxHealthTime 1
 scoreboard players set @s[scores={MaxHealthTime=200}] MaxHealth 100
 scoreboard players reset @s[scores={MaxHealthTime=200}] MaxHealthTime

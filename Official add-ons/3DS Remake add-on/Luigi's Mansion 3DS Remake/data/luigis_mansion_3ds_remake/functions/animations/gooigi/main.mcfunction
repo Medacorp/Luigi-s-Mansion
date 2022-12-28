@@ -34,6 +34,7 @@ execute if entity @s[tag=!was_looking] if data storage luigis_mansion:data luigi
 execute if entity @s[tag=was_looking] unless data storage luigis_mansion:data luigi{tags:["look"]} run function luigis_mansion_3ds_remake:animations/gooigi/reset_pose
 execute if entity @s[tag=!was_reviving] if data storage luigis_mansion:data luigi{tags:["revive"]} run function luigis_mansion:animations/luigi/reset_pose
 execute if entity @s[tag=was_reviving] unless data storage luigis_mansion:data luigi{tags:["revive"]} run function luigis_mansion:animations/luigi/reset_pose
+execute store result score @s PoltergustTime run data get storage luigis_mansion:data luigi.poltergust_time
 execute store result score @s KnockbackType run data get storage luigis_mansion:data luigi.animation
 execute unless score @s ScareType = @s KnockbackType run function luigis_mansion_3ds_remake:animations/gooigi/reset_pose
 data modify entity @s Tags append from storage luigis_mansion:data luigi.tags[]
@@ -154,5 +155,6 @@ tag @s remove gooigi
 tag @s remove flashlight
 tag @s remove moved
 tag @s remove player
+tag @s remove poltergust_grabbed
 execute unless entity @e[tag=gooigi,scores={Shrunk=1..},limit=1] run tag @s add found_owner
 execute if entity @e[tag=gooigi,scores={Shrunk=1..},limit=1] run tag @s add found_shrunk_owner

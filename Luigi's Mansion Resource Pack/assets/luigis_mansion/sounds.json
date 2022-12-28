@@ -4697,6 +4697,15 @@
         ],
         "subtitle": "luigis_mansion:subtitles.entity.player.flee"
     },
+    "entity.player.grab_poltergust": {
+        "sounds": [
+            {
+                "name": "luigis_mansion:entity/player/grab_poltergust",
+                "stream": false
+            }
+        ],
+        "subtitle": "luigis_mansion:subtitles.entity.player.grab_poltergust"
+    },
     "entity.player.grabbed.high_health": {
         "sounds": [
             {
@@ -6569,6 +6578,15 @@
             }
         ],
         "subtitle": "luigis_mansion:subtitles.entity.player.punch"
+    },
+    "entity.player.put_poltergust_away": {
+        "sounds": [
+            {
+                "name": "luigis_mansion:entity/player/put_poltergust_away",
+                "stream": false
+            }
+        ],
+        "subtitle": "luigis_mansion:subtitles.entity.player.put_poltergust_away"
     },
     "entity.player.recover.high_health": {
         "sounds": [

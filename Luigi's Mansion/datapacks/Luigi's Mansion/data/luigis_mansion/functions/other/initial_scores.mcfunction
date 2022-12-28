@@ -17,4 +17,5 @@ scoreboard players set @s KnockbackType 0
 scoreboard players set @s Shrunk 0
 scoreboard players set @s Dialog 0
 scoreboard players set @s FlashlightType 0
+scoreboard players set @s PoltergustTime 0
 scoreboard players set @s GBHDoubleUse 2

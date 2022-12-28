@@ -1,4 +1,6 @@
 execute unless entity @s[scores={Dialog=0..}] run function luigis_mansion:other/initial_scores
+execute if entity @s[scores={ClearInventory=1}] run clear @s
+scoreboard players reset @s ClearInventory
 scoreboard players set @s Music 0
 scoreboard players set @s GradualMusic 0
 scoreboard players set @s HealthMusic 0

@@ -48,6 +48,7 @@ execute if entity @s[tag=!was_pulling_unlock_door] unless entity @s[tag=!right_a
 execute if entity @s[tag=was_pulling_unlock_door] unless entity @s[tag=!right_arm,tag=!left_arm] unless data storage luigis_mansion:data luigi{tags:["pull_unlock_door"]} run function luigis_mansion:animations/luigi/reset_pose
 execute if entity @s[tag=!was_pushing_unlock_door] unless entity @s[tag=!right_arm,tag=!left_arm] if data storage luigis_mansion:data luigi{tags:["push_unlock_door"]} run function luigis_mansion:animations/luigi/reset_pose
 execute if entity @s[tag=was_pushing_unlock_door] unless entity @s[tag=!right_arm,tag=!left_arm] unless data storage luigis_mansion:data luigi{tags:["push_unlock_door"]} run function luigis_mansion:animations/luigi/reset_pose
+execute store result score @s PoltergustTime run data get storage luigis_mansion:data luigi.poltergust_time
 execute store result score @s KnockbackType run data get storage luigis_mansion:data luigi.animation
 execute unless score @s ScareType = @s KnockbackType run function luigis_mansion:animations/luigi/reset_pose
 data modify entity @s Tags append from storage luigis_mansion:data luigi.tags[]
@@ -203,5 +204,6 @@ tag @s remove dark_room
 tag @s remove flashlight
 tag @s remove moved
 tag @s remove player
+tag @s remove poltergust_grabbed
 execute unless entity @a[tag=this_luigi,scores={Shrunk=1..},limit=1] run tag @s add found_owner
 execute if entity @a[tag=this_luigi,scores={Shrunk=1..},limit=1] run tag @s add found_shrunk_owner

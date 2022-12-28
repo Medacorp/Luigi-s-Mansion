@@ -20,4 +20,4 @@ execute if entity @s[scores={AnimationProg=6..15}] store result entity @s Pose.H
 execute if entity @s[scores={AnimationProg=16..20}] store result entity @s Pose.Head[1] float 1 run scoreboard players add #temp Time 3
 scoreboard players reset #temp Time
 scoreboard players set @s[scores={AnimationProg=20..}] AnimationProg 0
-data modify entity @s[scores={AnimationProg=1},tag=visible] ArmorItems[3].tag.CustomModelData set from entity @s ArmorItems[3].tag.variants.screaming
+data modify entity @s[scores={AnimationProg=1},tag=visible] ArmorItems[3] merge from entity @s ArmorItems[3].tag.variants.screaming

@@ -21,14 +21,14 @@ tag @s remove wall
 scoreboard players set @s[tag=frozen,scores={Dialog=0,Wave=41..599}] Dialog 100
 scoreboard players remove @s[scores={Dialog=1..}] Dialog 1
 scoreboard players set @s[scores={Wave=600..}] Dialog 0
-data modify entity @s[scores={Dialog=1..},tag=!vacuumable] ArmorItems[3].tag.CustomModelData set from entity @s ArmorItems[3].tag.variants.frozen
-data modify entity @s[scores={Dialog=1..},tag=!vacuumable] HandItems[0].tag.CustomModelData set from entity @s HandItems[0].tag.variants.frozen
-data modify entity @s[scores={Dialog=1..},tag=!vacuumable] HandItems[1].tag.CustomModelData set from entity @s HandItems[1].tag.variants.frozen
+data modify entity @s[scores={Dialog=1..},tag=!vacuumable] ArmorItems[3] merge from entity @s ArmorItems[3].tag.variants.frozen
+data modify entity @s[scores={Dialog=1..},tag=!vacuumable] HandItems[0] merge from entity @s HandItems[0].tag.variants.frozen
+data modify entity @s[scores={Dialog=1..},tag=!vacuumable] HandItems[1] merge from entity @s HandItems[1].tag.variants.frozen
 data modify entity @s[scores={Dialog=1..},tag=!vacuumable] HandItems[0].id set from entity @s HandItems[0].tag.visible
 data modify entity @s[scores={Dialog=1..},tag=!vacuumable] HandItems[1].id set from entity @s HandItems[1].tag.visible
-data modify entity @s[scores={Dialog=0},tag=vacuumable] ArmorItems[3].tag.CustomModelData set from entity @s ArmorItems[3].tag.variants.default
-data modify entity @s[scores={Dialog=0},tag=vacuumable] HandItems[0].tag.CustomModelData set from entity @s HandItems[0].tag.variants.default
-data modify entity @s[scores={Dialog=0},tag=vacuumable] HandItems[1].tag.CustomModelData set from entity @s HandItems[1].tag.variants.default
+data modify entity @s[scores={Dialog=0},tag=vacuumable] ArmorItems[3] merge from entity @s ArmorItems[3].tag.variants.default
+data modify entity @s[scores={Dialog=0},tag=vacuumable] HandItems[0] merge from entity @s HandItems[0].tag.variants.default
+data modify entity @s[scores={Dialog=0},tag=vacuumable] HandItems[1] merge from entity @s HandItems[1].tag.variants.default
 execute if entity @s[tag=vacuumable] if block ~ ~0.8 ~ #luigis_mansion:ghosts_ignore run teleport @s ~ ~-0.1 ~
 execute if entity @s[tag=vacuumable] if block ~ ~0.8 ~ #luigis_mansion:ghosts_ignore run teleport @s ~ ~-0.1 ~
 tag @s[scores={Dialog=1..}] add vacuumable

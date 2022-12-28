@@ -1,0 +1,6 @@
+{
+	"parent": "luigis_beta_mansion:item/poltergust_500/idle_right",
+	"textures": {
+		"0": "luigis_beta_mansion:item/poltergust_gooigi"
+	}
+}

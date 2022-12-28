@@ -10,6 +10,7 @@ scoreboard objectives add BooTimer dummy
 scoreboard objectives add ChangedMansion dummy
 scoreboard objectives add ClairvoyaChoice trigger
 scoreboard objectives add ClairvoyaSpoke dummy
+scoreboard objectives add ClearInventory dummy
 scoreboard objectives add ClickEventCheck trigger
 scoreboard objectives add Constants dummy
 scoreboard objectives add CreditsTime dummy
@@ -146,6 +147,7 @@ scoreboard objectives add PassiveNr dummy
 scoreboard objectives add PathStep dummy
 scoreboard objectives add PlayerRotation dummy
 scoreboard objectives add PoltergustSound dummy
+scoreboard objectives add PoltergustTime dummy
 scoreboard objectives add PosX dummy
 scoreboard objectives add PosY dummy
 scoreboard objectives add PosZ dummy

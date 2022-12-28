@@ -26,18 +26,14 @@ data modify entity @s[tag=riding_poltergust,tag=!flipped_gravity] Pose.Head set 
 data modify entity @s[tag=riding_poltergust,tag=flipped_gravity] Pose.Head set value [-90.0f,0.0f,-180.0f]
 
 execute if entity @s[tag=riding_poltergust,tag=!was_riding_poltergust] run tag @a[tag=gooigi,limit=1] add poltergust_floor_sound
-execute unless data storage luigis_mansion:data luigi.mainhand.tag.luigis_mansion.poltergust_model_data unless data storage luigis_mansion:data luigi.offhand.tag.luigis_mansion.poltergust_model_data run data remove entity @s[tag=!stop_model,tag=!riding_poltergust,scores={KnockbackType=0}] ArmorItems[3]
-execute if data storage luigis_mansion:data luigi.mainhand.tag.luigis_mansion.poltergust_model_data run data modify entity @s[tag=!stop_model] ArmorItems[3] set value {id:"minecraft:diamond_pickaxe",Count:1b,tag:{Unbreakable:1b,Damage:6,CustomModelData:0}}
-execute if data storage luigis_mansion:data luigi.mainhand.tag.luigis_mansion.poltergust_model_data store result score #temp Time run data get storage luigis_mansion:data luigi.mainhand.tag.luigis_mansion.poltergust_model_data
-execute if data storage luigis_mansion:data luigi.mainhand.tag.luigis_mansion.poltergust_model_data if score #mirrored Selected matches 1 run scoreboard players add #temp Time 1
-execute if data storage luigis_mansion:data luigi.offhand.tag.luigis_mansion.poltergust_model_data run data modify entity @s[tag=!stop_model] ArmorItems[3] set value {id:"minecraft:diamond_pickaxe",Count:1b,tag:{Unbreakable:1b,Damage:6,CustomModelData:0}}
-execute if data storage luigis_mansion:data luigi.offhand.tag.luigis_mansion.poltergust_model_data store result score #temp Time run data get storage luigis_mansion:data luigi.offhand.tag.luigis_mansion.poltergust_model_data
-execute if data storage luigis_mansion:data luigi.offhand.tag.luigis_mansion.poltergust_model_data if score #mirrored Selected matches 0 run scoreboard players add #temp Time 1
-execute if entity @s[tag=riding_poltergust,scores={KnockbackType=0}] run scoreboard players add #temp Time 2
-execute unless data storage luigis_mansion:data luigi.mainhand.tag.luigis_mansion.poltergust_model_data unless data storage luigis_mansion:data luigi.offhand.tag.luigis_mansion.poltergust_model_data run tag @s add not_held
-execute store result entity @s[tag=!stop_model,tag=!not_held] ArmorItems[3].tag.CustomModelData int 1 run scoreboard players get #temp Time
-scoreboard players reset #temp Time
-tag @s remove not_held
+
+data modify entity @s ArmorItems[3] set from storage luigis_mansion:data luigi.poltergust
+execute if score #mirrored Selected matches 0 if entity @s[scores={PoltergustTime=..5}] run data modify entity @s[tag=!riding_poltergust] ArmorItems[3] merge from storage luigis_mansion:data luigi.poltergust.tag.luigis_mansion.model.idle_right
+execute if score #mirrored Selected matches 0 if entity @s[scores={PoltergustTime=6..}] run data modify entity @s[tag=!riding_poltergust] ArmorItems[3] merge from storage luigis_mansion:data luigi.poltergust.tag.luigis_mansion.model.body_right
+execute if score #mirrored Selected matches 0 run data modify entity @s[tag=riding_poltergust] ArmorItems[3] merge from storage luigis_mansion:data luigi.poltergust.tag.luigis_mansion.model.sat_on_right
+execute if score #mirrored Selected matches 1 if entity @s[scores={PoltergustTime=..5}] run data modify entity @s[tag=!riding_poltergust] ArmorItems[3] merge from storage luigis_mansion:data luigi.poltergust.tag.luigis_mansion.model.idle_left
+execute if score #mirrored Selected matches 1 if entity @s[scores={PoltergustTime=6..}] run data modify entity @s[tag=!riding_poltergust] ArmorItems[3] merge from storage luigis_mansion:data luigi.poltergust.tag.luigis_mansion.model.body_left
+execute if score #mirrored Selected matches 1 run data modify entity @s[tag=riding_poltergust] ArmorItems[3] merge from storage luigis_mansion:data luigi.poltergust.tag.luigis_mansion.model.sat_on_left
 
 execute at @s[tag=exploding_poltergust] run particle minecraft:large_smoke ~ ~1.5 ~ 0.3 0.3 0.3 0 10 normal @a[tag=same_room]
 execute at @s[tag=exploding_poltergust] run particle minecraft:flame ~ ~1.5 ~ 0.3 0.3 0.3 0 10 normal @a[tag=same_room]
