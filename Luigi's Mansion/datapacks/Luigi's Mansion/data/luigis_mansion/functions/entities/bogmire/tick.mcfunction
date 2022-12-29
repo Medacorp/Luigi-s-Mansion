@@ -6,7 +6,7 @@ execute at @s as @e[tag=this_model] run teleport @s ~ ~0.5 ~
 
 execute if entity @s[tag=dying,scores={DeathTime=1}] run tag @e[tag=black_bogmire] add remove_from_existence
 execute if entity @s[tag=dying,scores={DeathTime=1}] run playsound luigis_mansion:entity.bogmire.succumb hostile @a[tag=same_room] ~ ~ ~ 1
-execute if entity @s[tag=dying,scores={DeathTime=1}] if data storage luigis_mansion:data current_state.current_data.portrait_ghosts.bogmire{loot_at_0:1b} run function luigis_mansion:entities/bogmire/drop_loot
+execute if entity @s[tag=dying,scores={DeathTime=1}] if data entity @s ArmorItems[3].tag.loot{drop_at_0:1b} run function luigis_mansion:other/drop_loot
 execute if entity @s[tag=dead] run function luigis_mansion:entities/bogmire/at_death
 execute if entity @s[tag=vanish] store result storage luigis_mansion:data current_state.current_data.portrait_ghosts.bogmire.health int 1 run scoreboard players operation @s LastHealth = @s Health
 execute if entity @s[tag=vanish] store result storage luigis_mansion:data current_state.current_data.portrait_ghosts.bogmire.top_vacuum_damage int 1 run scoreboard players get @s TopVacuumDamage
@@ -21,7 +21,8 @@ scoreboard players set @s[scores={Sound=0},tag=!hurt,tag=!fleeing,tag=visible] S
 execute if entity @s[tag=!fleeing,tag=!hurt,tag=!vanish,scores={StunTime=0}] run function #luigis_mansion:entities/bogmire/tick
 
 execute at @s[tag=vanish] run function luigis_mansion:entities/bogmire/vanish
-execute at @s[tag=fleeing] run function luigis_mansion:animations/bogmire/flee
+execute at @s[tag=fleeing,tag=!second_flee_state] run function luigis_mansion:animations/bogmire/flee
+execute at @s[tag=fleeing,tag=second_flee_state] run function luigis_mansion:entities/bogmire/second_flee_state
 execute at @s[tag=!fleeing,tag=hurt] run tag @e[tag=bogmires_shadow] add dead
 execute at @s[tag=!fleeing,tag=hurt] run function luigis_mansion:animations/bogmire/hurt
 tag @s[tag=hurt] remove shadow_hit

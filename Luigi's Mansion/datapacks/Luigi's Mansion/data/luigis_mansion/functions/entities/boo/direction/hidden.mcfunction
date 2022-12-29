@@ -5,9 +5,9 @@ tag @s remove north
 tag @s remove up
 tag @s remove down
 execute if data storage luigis_mansion:data current_state.current_data.rooms.parlor{cleared:1b} run tag @s add area_1
-execute if data storage luigis_mansion:data current_state.current_data.used_keys{hallway_3:1b} run tag @s add area_2
-execute if data storage luigis_mansion:data current_state.current_data.used_keys{courtyard:1b} run tag @s add area_3
-execute if data storage luigis_mansion:data current_state.current_data.used_keys{hallway_18:1b} run tag @s add area_4
+execute if data storage luigis_mansion:data current_state.current_data{used_keys:["hallway_3"]} run tag @s add area_2
+execute if data storage luigis_mansion:data current_state.current_data{used_keys:["courtyard"]} run tag @s add area_3
+execute if data storage luigis_mansion:data current_state.current_data{used_keys:["hallway_18"]} run tag @s add area_4
 
 # wardrobe room
 scoreboard players set @s[x=677,y=20,z=-47,dx=10,dy=6,dz=6] RoomSection 1

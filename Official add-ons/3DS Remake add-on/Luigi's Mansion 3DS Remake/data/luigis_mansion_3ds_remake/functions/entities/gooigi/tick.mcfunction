@@ -1,5 +1,5 @@
 # This is lab-gooigi, not player-gooigi
-execute facing entity @e[tag=same_room,tag=!spectator,sort=nearest,limit=1] feet run teleport @s ~ ~ ~ ~ ~
+execute facing entity @e[tag=same_room,tag=!spectator,tag=player,sort=nearest,limit=1] feet run teleport @s ~ ~ ~ ~ ~
 
 execute if entity @a[tag=gooigi,limit=1] run kill @s
 

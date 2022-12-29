@@ -1,6 +1,6 @@
 execute if entity @s[tag=!planeless] as @e[tag=plane,scores={GhostNr=-2147483648..}] if score @s GhostNr = #temp GhostNr run tag @s add this_plane
 
-execute if entity @e[tag=same_room,tag=!spectator,distance=..0.7,limit=1] if entity @s[scores={VulnerableTime=0},tag=!vanish,tag=!hurt,tag=!fleeing] run function luigis_mansion:entities/orville/collide
+execute if entity @e[tag=same_room,tag=!spectator,tag=player,distance=..0.7,limit=1] if entity @s[scores={VulnerableTime=0},tag=!vanish,tag=!hurt,tag=!fleeing] run function luigis_mansion:entities/orville/collide
 
 tag @s[tag=in_vacuum,scores={WaitTime=..39}] remove in_vacuum
 scoreboard players add @s[tag=in_vacuum,scores={WaitTime=40..}] VacuumTime 1
@@ -20,7 +20,7 @@ execute at @s[tag=laugh] run function luigis_mansion:entities/orville/laugh
 execute at @s[tag=grab_vehicle] run function luigis_mansion:entities/orville/grab_vehicle
 execute at @s[tag=!planeless,tag=!in_vacuum,tag=!vanish,tag=!laugh] run function luigis_mansion:animations/orville/drive
 
-execute if entity @s[scores={WaitTime=0},tag=laugh] facing entity @e[tag=same_room,tag=!spectator,sort=nearest,limit=1] feet rotated ~ 0 run teleport @s ~ ~ ~ ~ ~
+execute if entity @s[scores={WaitTime=0},tag=laugh] facing entity @e[tag=same_room,tag=!spectator,tag=player,sort=nearest,limit=1] feet rotated ~ 0 run teleport @s ~ ~ ~ ~ ~
 execute at @s run tp @s ~ ~0.2 ~
 execute at @s at @s[tag=!laugh,tag=!vanish,tag=!planeless,tag=!grab_vehicle,scores={StunTime=0}] run function luigis_mansion:entities/orville/move
 execute at @s run tp @s ~ ~-0.2 ~

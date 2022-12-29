@@ -1,14 +1,8 @@
-tellraw @a[scores={Room=49}] {"translate":"chat.type.text","with":[{"translate":"luigis_mansion:entity.henry","color":"green"},{"translate":"luigis_mansion:dialog.twins.game.0"}]}
-execute as @a[scores={Room=49},gamemode=!spectator] run function luigis_mansion:other/music/set/room
-stopsound @a[scores={Room=49},gamemode=!spectator] music
-playsound luigis_mansion:music.mini_game_failure music @a[scores={Room=49},gamemode=!spectator] ~ ~ ~ 1000
-scoreboard players set @a[scores={Room=49},gamemode=!spectator] Music 40
-scoreboard players set #temp Time 1
+setblock 738 20 -25 minecraft:air
+setblock 742 20 -31 minecraft:air
+setblock 747 20 -28 minecraft:air
+setblock 747 20 -22 minecraft:air
+setblock 742 20 -19 minecraft:air
+tag @e[tag=hide_and_seek_box,scores={Room=49}] add remove_from_existence
+scoreboard players reset #the_twins_room Time
 scoreboard players set #the_twins_room Wave 7
-function luigis_mansion:room/hidden/the_twins_room/search/box_1
-function luigis_mansion:room/hidden/the_twins_room/search/box_2
-function luigis_mansion:room/hidden/the_twins_room/search/box_3
-function luigis_mansion:room/hidden/the_twins_room/search/box_4
-function luigis_mansion:room/hidden/the_twins_room/search/box_5
-kill @e[scores={Room=49},type=minecraft:marker,tag=ghost]
-scoreboard players reset #temp Time

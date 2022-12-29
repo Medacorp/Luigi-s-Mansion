@@ -1,0 +1,1 @@
+execute if entity @s[tag=chest] run function luigis_mansion:animations/furniture/open/chest

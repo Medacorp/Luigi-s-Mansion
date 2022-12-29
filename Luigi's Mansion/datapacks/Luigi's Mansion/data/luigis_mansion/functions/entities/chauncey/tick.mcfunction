@@ -1,7 +1,7 @@
 scoreboard players operation #temp GhostNr = @s GhostNr
 execute as @e[tag=model_piece,scores={GhostNr=-2147483648..}] if score @s GhostNr = #temp GhostNr run tag @s add this_model
 
-execute if entity @s[tag=dying,scores={DeathTime=1}] if data storage luigis_mansion:data current_state.current_data.portrait_ghosts.chauncey{loot_at_0:1b} run function luigis_mansion:entities/chauncey/drop_loot
+execute if entity @s[tag=dying,scores={DeathTime=1}] if data entity @s ArmorItems[3].tag.loot{drop_at_0:1b} run function luigis_mansion:other/drop_loot
 execute if entity @s[tag=dead] run function luigis_mansion:entities/chauncey/at_death
 execute if entity @s[tag=vanish] store result storage luigis_mansion:data current_state.current_data.portrait_ghosts.chauncey.health int 1 run scoreboard players operation @s LastHealth = @s Health
 execute if entity @s[tag=vanish] store result storage luigis_mansion:data current_state.current_data.portrait_ghosts.chauncey.top_vacuum_damage int 1 run scoreboard players get @s TopVacuumDamage
@@ -15,7 +15,8 @@ execute if entity @s[tag=!fleeing,tag=!hurt,scores={StunTime=0}] run function #l
 execute if entity @s[tag=vanish] run function luigis_mansion:entities/chauncey/vanish
 execute at @s[tag=fleeing,tag=!second_flee_state] run function luigis_mansion:animations/chauncey/flee
 execute at @s[tag=fleeing,tag=second_flee_state] run function luigis_mansion:entities/chauncey/second_flee_state
-execute if entity @s[tag=!fleeing,tag=hurt] run function luigis_mansion:entities/chauncey/drop_rambler
+execute if entity @s[tag=!fleeing,tag=hurt,tag=!big] run function luigis_mansion:entities/ghost/turn_visible
+execute if entity @s[tag=!fleeing,tag=hurt,tag=big] run function luigis_mansion:entities/ghost/turn_visible_big
 execute at @s[tag=!fleeing,tag=hurt] run function luigis_mansion:animations/chauncey/hurt
 
 scoreboard players reset #temp GhostNr

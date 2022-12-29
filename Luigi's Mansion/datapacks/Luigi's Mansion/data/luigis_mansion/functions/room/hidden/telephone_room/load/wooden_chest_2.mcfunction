@@ -1,0 +1,2 @@
+data modify storage luigis_mansion:data furniture set value {searchable:["hand","vacuum"],sound:0,can_hide_boo:1b,scan_message:'{"translate":"luigis_mansion:message.player.scan_furniture.11"}'}
+execute positioned 751.0 29 12 rotated -160 0 run function luigis_mansion:spawn_furniture/wooden_chest

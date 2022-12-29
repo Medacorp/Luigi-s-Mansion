@@ -1,9 +1,9 @@
 teleport @s ~ ~1.3 ~
-execute at @s[tag=dead] run function luigis_mansion:entities/blue_mouse/drop_loot
+execute at @s[tag=dead] run function luigis_mansion:other/drop_loot
 
 execute if entity @s[tag=visible] if predicate luigis_mansion:blue_mouse/start_squeeking run tag @s add squeek
 
-execute at @s[tag=visible,tag=!dead,tag=!removed_from_existence] if entity @e[tag=same_room,tag=!spectator,distance=..0.7,limit=1] run function luigis_mansion:entities/blue_mouse/collide
+execute at @s[tag=visible,tag=!dead,tag=!removed_from_existence] if entity @e[tag=same_room,tag=!spectator,tag=player,distance=..0.7,limit=1] run function luigis_mansion:entities/blue_mouse/collide
 
 tag @s[tag=fleeing] remove squeek
 tag @s remove fleeing
@@ -16,7 +16,7 @@ scoreboard players reset #temp HomeY
 
 execute store result score #temp Room run scoreboard players get @s Room
 execute as @e[tag=blue_mouse,tag=visible] if score @s Room = #temp Room run scoreboard players add #temp ActionTime 1
-execute unless score #temp ActionTime matches 3.. unless entity @e[distance=..0.7,tag=same_room,tag=!spectator,limit=1] unless entity @e[tag=blue_mouse,tag=visible,distance=..0.7] run tag @s add visible
+execute unless score #temp ActionTime matches 3.. unless entity @e[distance=..0.7,tag=same_room,tag=!spectator,tag=player,limit=1] unless entity @e[tag=blue_mouse,tag=visible,distance=..0.7] run tag @s add visible
 scoreboard players reset #temp ActionTime
 scoreboard players reset #temp Room
 

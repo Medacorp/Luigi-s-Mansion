@@ -1,0 +1,3 @@
+execute unless score #temp2 FurnitureSizeL matches 0 positioned as @s run function luigis_mansion:entities/furniture/debug/move/width_x
+execute unless score #temp2 FurnitureSizeU matches 0 positioned as @s run function luigis_mansion:entities/furniture/debug/move/height
+execute unless score #temp2 FurnitureSizeF matches 0 positioned as @s run function luigis_mansion:entities/furniture/debug/move/width_z

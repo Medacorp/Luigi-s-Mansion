@@ -8,7 +8,6 @@ scoreboard players operation #temp EntitySizeW = @s EntitySizeW
 scoreboard players operation #temp EntitySizeH = @s EntitySizeH
 scoreboard players operation #temp EntitySizeW /= #2 Constants
 scoreboard players operation #temp EntitySizeH /= #2 Constants
-scoreboard players operation #temp EntitySizeZ /= #2 Constants
 scoreboard players operation #temp PosX -= #temp EntitySizeW
 scoreboard players operation #temp PosY -= #temp EntitySizeH
 scoreboard players operation #temp PosZ -= #temp EntitySizeW

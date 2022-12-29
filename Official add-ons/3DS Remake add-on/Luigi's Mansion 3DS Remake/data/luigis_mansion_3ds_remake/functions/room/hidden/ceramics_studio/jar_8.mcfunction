@@ -1,3 +1,3 @@
-execute unless data storage luigis_mansion:data current_state.current_data.money_spawned{ceramics_studio_jar_8:1b} run function luigis_mansion:spawn_entities/item/gold_bar
-execute if data storage luigis_mansion:data current_state.current_data.money_spawned{ceramics_studio_jar_8:1b} run tag @e[tag=selected] add nothing
-data modify storage luigis_mansion:data current_state.current_data.money_spawned merge value {ceramics_studio_jar_8:1b}
+execute unless data storage luigis_mansion:data current_state.current_data{money_spawned:["ceramics_studio_porcelain_vase"]} run function luigis_mansion:spawn_entities/item/gold_bar
+execute if data storage luigis_mansion:data current_state.current_data{money_spawned:["ceramics_studio_porcelain_vase"]} run tag @e[tag=selected] add nothing
+execute unless data storage luigis_mansion:data current_state.current_data{money_spawned:["ceramics_studio_porcelain_vase"]} run data modify storage luigis_mansion:data current_state.current_data.money_spawned append value "ceramics_studio_porcelain_vase"

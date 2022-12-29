@@ -1,0 +1,2 @@
+scoreboard players remove @s[scores={RotationSpeed=..1010}] RotationSpeed 5
+execute if score @s RotationSpeed < @s RotationSpeedDef run scoreboard players operation @s RotationSpeed = @s RotationSpeedDef

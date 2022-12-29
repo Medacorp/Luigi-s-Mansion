@@ -6,7 +6,7 @@ gamemode adventure @a[gamemode=spectator]
 scoreboard players set @a Health 100
 scoreboard players set @s Room -4
 scoreboard players set @s LastRoom -4
-function luigis_mansion:items/poltergust_3000/no_element
+function luigis_mansion:items/poltergust_3000/reset_element
 bossbar set luigis_mansion_3ds_remake:portrait_battle players
 schedule function luigis_mansion_3ds_remake:room/gallery/portrait_battle/load_current_data 2t
 

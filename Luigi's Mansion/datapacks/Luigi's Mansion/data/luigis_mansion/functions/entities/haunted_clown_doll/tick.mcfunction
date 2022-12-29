@@ -1,4 +1,4 @@
-execute if entity @s[tag=dead] run function luigis_mansion:entities/haunted_clown_doll/drop_loot
+execute if entity @s[tag=dead] run function luigis_mansion:other/drop_loot
 execute if entity @s[tag=collision] run playsound luigis_mansion:entity.haunted_clown_doll.hit hostile @a[tag=same_room] ~ ~ ~ 1
 execute unless entity @s[tag=!dead,tag=!collision] run function luigis_mansion:entities/haunted_object/collision
 

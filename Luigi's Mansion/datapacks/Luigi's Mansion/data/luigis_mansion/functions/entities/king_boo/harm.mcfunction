@@ -13,4 +13,3 @@ execute unless score #temp LastHealth = #temp Health at @s run particle minecraf
 scoreboard players reset #temp LastHealth
 scoreboard players reset #temp Health
 tag @s remove hurt
-tag @s add already_hurt

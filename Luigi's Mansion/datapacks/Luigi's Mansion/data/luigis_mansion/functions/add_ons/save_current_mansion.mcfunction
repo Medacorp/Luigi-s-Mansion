@@ -145,7 +145,7 @@ execute in minecraft:overworld run setblock 615 101 -66 minecraft:redstone_block
 execute in minecraft:overworld run fill 615 100 -66 615 101 -66 minecraft:air
 execute in minecraft:overworld run forceload remove 749 -66 615 81
 
-forceload add 773 -57 773 -25
+execute in minecraft:overworld run forceload add 773 -57 773 -25
 execute in minecraft:overworld run setblock 773 115 -57 minecraft:command_block[facing=down]{Command:"execute positioned ~-0.5 ~1 ~-0.5 run kill @e[type=!player,dx=48,dy=48,dz=72]"}
 execute in minecraft:overworld run setblock 773 114 -57 minecraft:chain_command_block[facing=down]{Command:"execute positioned ~ ~2 ~2 run function luigis_mansion:add_ons/clear_save_to_file_area"}
 execute in minecraft:overworld run setblock 774 115 -57 minecraft:stone_button[face=wall,facing=east]
@@ -173,4 +173,4 @@ execute in minecraft:overworld run setblock 773 115 -35 minecraft:structure_bloc
 execute in minecraft:overworld run setblock 773 115 -34 minecraft:structure_block[mode=load]{mode:"LOAD",name:"luigis_mansion:mansion/22",posY:1,ignoreEntities:0b}
 execute in minecraft:overworld run setblock 773 115 -33 minecraft:structure_block[mode=load]{mode:"LOAD",name:"luigis_mansion:mansion/23",posY:1,ignoreEntities:0b}
 execute in minecraft:overworld run setblock 773 115 -32 minecraft:structure_block[mode=load]{mode:"LOAD",name:"luigis_mansion:mansion/24",posY:1,ignoreEntities:0b}
-forceload remove 773 -57 773 -25
+execute in minecraft:overworld run forceload remove 773 -57 773 -25

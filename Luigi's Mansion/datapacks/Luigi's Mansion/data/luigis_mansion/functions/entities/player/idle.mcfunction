@@ -26,3 +26,5 @@ execute if entity @s[tag=push_locked_door] run function luigis_mansion:entities/
 execute if entity @s[tag=pull_locked_door] run function luigis_mansion:entities/player/animation/door/locked/pull
 execute if entity @s[tag=push_unlock_door] run function luigis_mansion:entities/player/animation/door/unlock/push
 execute if entity @s[tag=pull_unlock_door] run function luigis_mansion:entities/player/animation/door/unlock/pull
+execute if entity @s[tag=talk_animation] run function luigis_mansion:entities/player/animation/talk
+execute if entity @s[tag=revive] run function luigis_mansion:entities/player/animation/revive

@@ -28,7 +28,7 @@ data modify storage luigis_mansion:data current_state.current_data.ghosts_caught
 data remove storage luigis_mansion:data current_state.ghost_caught
 data remove storage luigis_mansion:data current_state.new_ghosts_caught
 
-execute unless entity @a[tag=killer,limit=1] if score #debug Selected matches 1 run say [DEBUG] The ghost couldn't find who killed it; an empty UUID is now present in the ghosts caught list, this should never happen!
+execute unless entity @a[tag=killer,limit=1] if score #debug_messages Selected matches 1.. run tellraw @a {"translate":"luigis_mansion:message.debug.format","with":[{"translate":"luigis_mansion:message.debug","color":"gold"},{"translate":"luigis_mansion:message.debug.empty_uuid.ghost","color":"red"}]}
 
 execute if entity @a[tag=killer,tag=gooigi,limit=1] run function luigis_mansion_3ds_remake:entities/ghost/capture_gooigi
 execute if data storage luigis_mansion_3ds_remake:data current_state.trophy.master{task_1:0b} if data storage luigis_mansion:data current_state.ghosts_caught[0] run function luigis_mansion_3ds_remake:room/gallery/interact_with_trophy/get_ghost_count/total

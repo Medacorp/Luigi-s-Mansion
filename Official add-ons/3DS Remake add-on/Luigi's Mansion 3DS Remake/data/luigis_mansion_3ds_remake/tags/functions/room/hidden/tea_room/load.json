@@ -9,8 +9,8 @@
 		"luigis_mansion_3ds_remake:room/hidden/tea_room/load/chair_2",
 		"luigis_mansion_3ds_remake:room/hidden/tea_room/load/chair_3",
 		"luigis_mansion_3ds_remake:room/hidden/tea_room/load/chair_6",
-        "luigis_mansion_3ds_remake:room/hidden/tea_room/load/chest",
         "luigis_mansion_3ds_remake:room/hidden/tea_room/load/ice",
-        "luigis_mansion_3ds_remake:room/hidden/tea_room/load/ice_bucket"
+        "luigis_mansion_3ds_remake:room/hidden/tea_room/load/ice_bucket",
+        "luigis_mansion_3ds_remake:room/hidden/tea_room/load/room_clear_chest"
 	]
 }

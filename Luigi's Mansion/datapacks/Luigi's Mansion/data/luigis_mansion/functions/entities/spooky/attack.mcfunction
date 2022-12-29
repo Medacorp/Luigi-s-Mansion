@@ -14,7 +14,7 @@ tag @s[scores={ActionTime=20}] add breathe
 scoreboard players set @s[scores={ActionTime=20}] Move 15
 scoreboard players set @s[scores={ActionTime=20}] Dialog 20
 scoreboard players reset @s[scores={ActionTime=20}] ActionTime
-execute at @s[scores={ActionTime=1..19}] positioned ^ ^ ^0.3 if entity @e[tag=same_room,tag=!spectator,scores={Invulnerable=0},distance=..0.7,tag=!grabbed,limit=1] run scoreboard players set @s ActionTime 30
+execute at @s[scores={ActionTime=1..19}] positioned ^ ^ ^0.3 if entity @e[tag=same_room,tag=!spectator,tag=player,scores={Invulnerable=0},distance=..0.7,tag=!grabbed,limit=1] run scoreboard players set @s ActionTime 30
 
 scoreboard players set @s[scores={ActionTime=30}] AnimationProg 0
 tag @s[scores={ActionTime=30}] remove bite
@@ -25,7 +25,10 @@ execute if entity @s[scores={ActionTime=30}] positioned ^ ^ ^0.8 run tag @a[tag=
 execute if entity @s[scores={GrabbedID=-2147483648..}] run scoreboard players operation #temp ID = @s GrabbedID
 execute if entity @s[scores={GrabbedID=-2147483648..}] as @a[tag=grabbed] if score @s ID = #temp ID run tag @s add still_grabbed
 execute if entity @s[scores={GrabbedID=-2147483648..}] if entity @a[tag=still_grabbed,limit=1] as @e[tag=chest] if score @s ID = #temp ID run tag @s add grabbed_model
-execute if entity @s[scores={ActionTime=30}] as @a[tag=still_grabbed,limit=1] run function luigis_mansion:entities/player/knockback/bite
+execute if entity @s[scores={ActionTime=30}] run data modify storage luigis_mansion:data damage set value {method:"luigis_mansion:bite",amount:0,knockback:"bite",attacker:-1}
+execute if entity @s[scores={ActionTime=30}] run data modify storage luigis_mansion:data damage.amount set from entity @s ArmorItems[3].tag.damage.attack
+execute if entity @s[scores={ActionTime=30}] store result storage luigis_mansion:data damage.attacker int 1 run scoreboard players get @s GhostNr
+execute if entity @s[scores={ActionTime=30}] as @a[tag=still_grabbed,limit=1] run function luigis_mansion:entities/player/take_damage
 execute if entity @s[scores={ActionTime=30..51,Sound=0}] run playsound luigis_mansion:entity.spooky.attack hostile @a[tag=same_room] ~ ~ ~ 1 1
 execute if entity @s[scores={ActionTime=30..51,Sound=0}] run scoreboard players set @s Sound 20
 execute if entity @s[scores={ActionTime=30..51}] unless entity @a[tag=still_grabbed,limit=1] run scoreboard players set @s ActionTime 53

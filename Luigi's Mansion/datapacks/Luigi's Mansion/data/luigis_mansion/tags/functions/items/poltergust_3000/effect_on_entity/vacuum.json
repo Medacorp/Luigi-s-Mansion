@@ -2,7 +2,6 @@
 	"values": [
 		"luigis_mansion:items/poltergust_3000/effect_on_entity/vacuum/item",
         "luigis_mansion:items/poltergust_3000/effect_on_entity/vacuum/ball",
-        "luigis_mansion:items/poltergust_3000/effect_on_entity/vacuum/rocking_horse",
         "luigis_mansion:items/poltergust_3000/effect_on_entity/vacuum/ghost",
         "luigis_mansion:items/poltergust_3000/effect_on_entity/vacuum/banana_peel",
         "luigis_mansion:items/poltergust_3000/effect_on_entity/vacuum/vacuumable_object",

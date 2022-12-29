@@ -10,7 +10,6 @@
         "luigis_mansion:room/hidden/study/interactions/manual/bookshelf_6",
 		"luigis_mansion:room/hidden/study/interactions/manual/bottled_ship",
 		"luigis_mansion:room/hidden/study/interactions/manual/chair",
-		"luigis_mansion:room/hidden/study/interactions/manual/chest",
 		"luigis_mansion:room/hidden/study/interactions/manual/hat_rack",
 		"luigis_mansion:room/hidden/study/interactions/manual/lamp_1",
 		"luigis_mansion:room/hidden/study/interactions/manual/lamp_2",
@@ -19,7 +18,6 @@
 		"luigis_mansion:room/hidden/study/interactions/manual/painting_3",
 		"luigis_mansion:room/hidden/study/interactions/manual/painting_4",
 		"luigis_mansion:room/hidden/study/interactions/manual/painting_5",
-		"luigis_mansion:room/hidden/study/interactions/manual/rocking_chair",
 		"luigis_mansion:room/hidden/study/interactions/manual/table"
 	]
 }

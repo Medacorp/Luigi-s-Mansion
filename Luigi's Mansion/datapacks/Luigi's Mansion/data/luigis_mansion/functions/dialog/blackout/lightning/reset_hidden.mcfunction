@@ -54,11 +54,11 @@ execute if score #balcony_2 Ticking matches 1 run function #luigis_mansion:room/
 execute if score #hallway_18 Ticking matches 1 run function #luigis_mansion:room/hidden/hallway_18/turn_lights/off
 execute if score #hallway_19 Ticking matches 1 run function #luigis_mansion:room/hidden/hallway_19/turn_lights/off
 execute if score #telephone_room Ticking matches 1 run function #luigis_mansion:room/hidden/telephone_room/turn_lights/off
-execute if score #breaker_room Ticking matches 1 unless data storage luigis_mansion:data current_state.current_data.used_keys{breaker_room:1b} run teleport @a[scores={Room=57},tag=!looking_at_map] 714 2 62
-execute if score #breaker_room Ticking matches 1 unless data storage luigis_mansion:data current_state.current_data.used_keys{breaker_room:1b} run scoreboard players set @a[scores={Room=57},tag=looking_at_map] HomeX 71450
-execute if score #breaker_room Ticking matches 1 unless data storage luigis_mansion:data current_state.current_data.used_keys{breaker_room:1b} run scoreboard players set @a[scores={Room=57},tag=looking_at_map] HomeY 200
-execute if score #breaker_room Ticking matches 1 unless data storage luigis_mansion:data current_state.current_data.used_keys{breaker_room:1b} run scoreboard players set @a[scores={Room=57},tag=looking_at_map] HomeZ 6250
-execute if entity @a[tag=looking_at_map,limit=1] run function luigis_mansion:items/game_boy_horror/map/display/hidden/generate
+execute if score #breaker_room Ticking matches 1 unless data storage luigis_mansion:data current_state.current_data{used_keys:["breaker_room"]} run teleport @a[scores={Room=57},tag=!looking_at_map] 714 2 62
+execute if score #breaker_room Ticking matches 1 unless data storage luigis_mansion:data current_state.current_data{used_keys:["breaker_room"]} run scoreboard players set @a[scores={Room=57},tag=looking_at_map] HomeX 71450
+execute if score #breaker_room Ticking matches 1 unless data storage luigis_mansion:data current_state.current_data{used_keys:["breaker_room"]} run scoreboard players set @a[scores={Room=57},tag=looking_at_map] HomeY 200
+execute if score #breaker_room Ticking matches 1 unless data storage luigis_mansion:data current_state.current_data{used_keys:["breaker_room"]} run scoreboard players set @a[scores={Room=57},tag=looking_at_map] HomeZ 6250
+execute unless data storage luigis_mansion:data current_state.current_data{used_keys:["breaker_room"]} if entity @a[tag=looking_at_map,limit=1] run function luigis_mansion:items/game_boy_horror/map/display/hidden/generate
 execute if score #breaker_room Ticking matches 1 run function #luigis_mansion:room/hidden/breaker_room/turn_lights/off
 execute if score #cellar Ticking matches 1 run function #luigis_mansion:room/hidden/cellar/turn_lights/off
 execute if score #hallway_20 Ticking matches 1 run function #luigis_mansion:room/hidden/hallway_20/turn_lights/off

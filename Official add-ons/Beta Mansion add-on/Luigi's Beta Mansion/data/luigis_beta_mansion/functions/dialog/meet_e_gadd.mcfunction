@@ -87,11 +87,12 @@ execute if entity @s[scores={Dialog=68}] run teleport @s 725.5 20 31.1 2.25 0
 execute if entity @s[scores={Dialog=69}] run teleport @s 725.5 20 31.2 0 0
 execute if entity @s[scores={Dialog=70}] run teleport @s 725.5 20 31.3 0 0
 execute if entity @s[scores={Dialog=71..81}] run teleport @s 725.5 20 31.4 0 0
+execute if entity @s[scores={Dialog=72}] run data modify storage luigis_mansion:data entity set value {can_talk_to:0b}
 execute if entity @s[scores={Dialog=72}] positioned 718 20 35 run function luigis_mansion:spawn_entities/e_gadd
 execute if entity @s[scores={Dialog=72}] positioned 718 20 35 run tag @e[distance=..0.1,tag=e_gadd] add dialog
 execute if entity @s[scores={Dialog=72}] positioned 718 20 35 run tag @e[distance=..0.1,tag=e_gadd_head] add dialog
+execute if entity @s[scores={Dialog=72}] run data modify storage luigis_mansion:data entity set value {appear_type:"normal"}
 execute if entity @s[scores={Dialog=72}] positioned 725 20 34.9 run function luigis_beta_mansion:spawn_entities/ghost/forced_spawn/ghost/white
-execute if entity @s[scores={Dialog=72}] positioned 725 20 34.9 run tag @e[distance=..0.1,tag=beta_ghost] remove beta_appear
 execute if entity @s[scores={Dialog=72}] positioned 725 20 34.9 run scoreboard players set @e[distance=..0.1,tag=beta_ghost] SpawnTime 20
 execute if entity @s[scores={Dialog=72}] positioned 725 20 34.9 run tag @e[distance=..0.1,tag=beta_ghost] add dialog
 execute if entity @s[scores={Dialog=72}] run teleport @s 725.5 20 31.4 facing entity @e[tag=beta_ghost,tag=dialog,limit=1] feet

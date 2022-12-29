@@ -1,6 +1,6 @@
 execute unless score #study Ticking matches 1 run function #luigis_mansion:room/hidden/study/load
-execute as @a[gamemode=!spectator,x=700,y=17,z=-48,dx=17,dy=10,dz=21] unless entity @s[scores={Room=8}] run scoreboard players operation @s LastRoom = @s Room
-execute as @e[tag=!spectator,x=700,y=17,z=-48,dx=17,dy=10,dz=21] unless entity @s[tag=ghost,tag=appear] unless entity @s[tag=ghost,tag=vanish] run scoreboard players set @s Room 8
+execute as @a[gamemode=!spectator,x=700,y=17,z=-48,dx=17,dy=9,dz=21] unless entity @s[scores={Room=8}] run scoreboard players operation @s LastRoom = @s Room
+execute as @e[tag=!spectator,x=700,y=17,z=-48,dx=17,dy=9,dz=21] unless entity @s[tag=ghost,tag=appear] unless entity @s[tag=ghost,tag=vanish] run scoreboard players set @s Room 8
 scoreboard players set #temp Room 8
 
 execute as @a[gamemode=!spectator,scores={Room=8}] run function luigis_mansion:room/hidden/study/tick_per_player

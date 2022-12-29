@@ -5,7 +5,7 @@ execute if score #conservatory Wave matches 3 run scoreboard players add @s[tag=
 execute if entity @a[scores={MelodyChoice=1}] run scoreboard players set @s[scores={Dialog=..999}] Dialog 1000
 execute if entity @a[scores={MelodyChoice=2}] run scoreboard players set @s[scores={Dialog=..999}] Dialog 2000
 tag @s[scores={Dialog=1}] add talk
-execute if entity @s[scores={Dialog=1},tag=!visible] run function luigis_mansion:entities/melody_pianissima/turn_visible
+execute if entity @s[scores={Dialog=1},tag=!visible] run function luigis_mansion:entities/ghost/turn_visible
 execute if entity @s[scores={Dialog=1..1303}] as @a[tag=same_room,gamemode=!spectator,scores={IdleTime=0..},tag=!looking_at_map] run function luigis_mansion:entities/player/animation/set/stand_still
 execute if entity @s[scores={Dialog=2000..2227}] as @a[tag=same_room,gamemode=!spectator,scores={IdleTime=0..},tag=!looking_at_map] run function luigis_mansion:entities/player/animation/set/stand_still
 execute if entity @s[scores={Dialog=80..439}] as @a[tag=same_room,tag=!spectator,tag=!high_health_idle,tag=!looking_at_map] run function luigis_mansion:entities/player/animation/set/high_health_idle_no_sound
@@ -71,6 +71,7 @@ execute if entity @s[scores={Dialog=2140}] if score #players Totals matches 2.. 
 scoreboard players set @s[scores={Dialog=2228}] AnimationProg 0
 tag @s[scores={Dialog=2228}] remove nod
 execute if entity @s[scores={Dialog=2228}] as @a[tag=same_room,tag=!spectator,tag=!looking_at_map] run function luigis_mansion:entities/player/animation/set/none
+execute if entity @s[scores={Dialog=2228}] run data modify entity @s ArmorItems[3].tag.scan_message set value {sender:"me",message:'{"translate":"luigis_mansion:message.melody_pianissima.scan.2"}',plural_message:'{"translate":"luigis_mansion:message.melody_pianissima.scan.2.more"}'}
 execute if entity @s[scores={Dialog=2228}] run scoreboard players set #conservatory Wave 4
 execute if entity @s[scores={Dialog=2228}] positioned 657 11 -25 rotated 0 0 run function luigis_mansion:spawn_entities/vacuumable/haunted_object/haunted_music_sheet
 execute if entity @s[scores={Dialog=2228}] positioned 657 11 -26 rotated 0 0 run function luigis_mansion:spawn_entities/vacuumable/haunted_object/haunted_music_sheet

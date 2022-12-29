@@ -5,13 +5,13 @@ execute unless entity @s[scores={Dialog=1..}] run scoreboard players add @s[tag=
 scoreboard players add @s[tag=intro_done,scores={VulnerableTime=0,Dialog=..109},tag=!shadow_hit] Dialog 1
 scoreboard players add @s[tag=intro_done,scores={VulnerableTime=0,Dialog=181..},tag=!shadow_hit] Dialog 1
 tag @s[scores={Dialog=2}] remove vanish_flee
-execute if entity @s[tag=intro_done,scores={Dialog=70},tag=!shadow_hit] run function luigis_mansion:entities/bogmire/turn_invisible
+execute if entity @s[tag=intro_done,scores={Dialog=70},tag=!shadow_hit] run function luigis_mansion:entities/ghost/turn_invisible
 execute if entity @s[tag=intro_done,scores={Dialog=110},tag=!shadow_hit] run function luigis_mansion:entities/bogmire/warp/normal
 execute if entity @s[tag=intro_done,scores={Dialog=182}] run tag @e[tag=black_bogmire] add dead
 execute if entity @s[tag=intro_done,scores={Dialog=182}] run tag @e[tag=ball,tag=shadow] add dead
 execute if entity @s[tag=intro_done,scores={Dialog=182}] run function luigis_mansion:entities/bogmire/instant_spawn/normal
 execute if entity @s[tag=intro_done,scores={Dialog=202}] run function luigis_mansion:entities/bogmire/instant_spawn/normal
-execute if entity @s[tag=intro_done,scores={Dialog=212},tag=!shadow_hit] run function luigis_mansion:entities/bogmire/turn_invisible
+execute if entity @s[tag=intro_done,scores={Dialog=212},tag=!shadow_hit] run function luigis_mansion:entities/ghost/turn_invisible
 execute if entity @s[tag=intro_done,scores={Dialog=222}] run function luigis_mansion:entities/bogmire/instant_spawn/normal
 execute if entity @s[tag=intro_done,scores={Dialog=242}] run function luigis_mansion:entities/bogmire/instant_spawn/normal
 execute if entity @s[tag=intro_done,scores={Dialog=262}] run function luigis_mansion:entities/bogmire/instant_spawn/normal

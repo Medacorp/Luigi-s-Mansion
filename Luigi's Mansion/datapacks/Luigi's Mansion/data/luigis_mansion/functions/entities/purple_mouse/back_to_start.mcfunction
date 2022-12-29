@@ -8,5 +8,5 @@ tag @s remove walk_down_wall
 tag @s remove walked_on_ceiling
 tag @s remove disappear
 tag @s remove visible
-data modify entity @s ArmorItems[3].id set value "minecraft:oak_button"
+function luigis_mansion:entities/ghost/turn_invisible
 execute at @s run teleport @s ~ ~1.3 ~

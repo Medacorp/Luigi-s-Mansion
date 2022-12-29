@@ -12,10 +12,13 @@ execute if entity @s[scores={ActionTime=21..121}] store result score #temp Time 
 execute if entity @s[scores={ActionTime=21..121}] if score #mirrored Selected matches 0 store result entity @s Rotation[0] float 0.1 run scoreboard players operation #temp Time -= @s Time
 execute if entity @s[scores={ActionTime=21..121}] if score #mirrored Selected matches 1 store result entity @s Rotation[0] float 0.1 run scoreboard players operation #temp Time += @s Time
 execute at @s[scores={ActionTime=21..121}] positioned ^ ^ ^5 run function luigis_mansion:spawn_entities/burning_floor
+execute at @s[scores={ActionTime=21..121}] positioned ^ ^ ^5 run data modify entity @e[distance=..0.1,tag=burning_floor,limit=1] ArmorItems[3].tag.damage set value {attack:10}
+execute at @s[scores={ActionTime=21..121}] positioned ^ ^ ^5 as @e[distance=..0.1,tag=burning_floor] unless entity @s[scores={Owner=-2147483648..}] positioned ^ ^ ^-5 run scoreboard players operation @s Owner = @e[tag=bowser,distance=..0.1] GhostNr
 execute at @s[scores={ActionTime=21..121}] positioned ^ ^ ^2 as @e[distance=..2,tag=game_boy_horror_location] run function luigis_mansion:entities/game_boy_horror_location/bring_player_back
-execute at @s[scores={ActionTime=21..121}] positioned ^ ^ ^2 run effect give @a[tag=!spectator,scores={Invulnerable=0},distance=..2] minecraft:instant_damage 1 0 true
-execute at @s[scores={ActionTime=21..121}] positioned ^ ^ ^2 run scoreboard players set @a[tag=!spectator,scores={Invulnerable=0},distance=..2] ForcedDamage 4
-execute at @s[scores={ActionTime=21..121}] positioned ^ ^ ^2 as @a[distance=..2,scores={Invulnerable=0},tag=!spectator] positioned ^ ^ ^-2 run function luigis_mansion:entities/player/knockback/burn
+execute at @s[scores={ActionTime=21..121}] run data modify storage luigis_mansion:data damage set value {method:"luigis_mansion:fire",amount:10,knockback:"burn",attacker:-1,no_delete:1b}
+execute at @s[scores={ActionTime=21..121}] store result storage luigis_mansion:data damage.attacker int 1 run scoreboard players get @s GhostNr
+execute at @s[scores={ActionTime=21..121}] positioned ^ ^ ^2 as @a[distance=..2,gamemode=!spectator] run function luigis_mansion:entities/player/take_damage
+execute at @s[scores={ActionTime=21..121}] run data remove storage luigis_mansion:data damage
 execute at @s[scores={ActionTime=21}] run playsound luigis_mansion:entity.bowser.fire hostile @a[tag=same_room] ~ ~ ~ 3
 execute at @s[scores={ActionTime=21..121}] run particle minecraft:block minecraft:fire ^1 ^0.5 ^5 0 0 0 0 1 normal @a[tag=same_room]
 execute at @s[scores={ActionTime=21..121}] run particle minecraft:block minecraft:fire ^ ^0.5 ^6 0 0 0 0 1 normal @a[tag=same_room]

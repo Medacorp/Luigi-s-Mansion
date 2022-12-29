@@ -8,7 +8,7 @@ execute if entity @s[scores={Room=-3},tag=talk] if data storage luigis_mansion:d
 
 execute store result entity @s Pos[1] double 0.01 run scoreboard players get @s HomeY
 
-execute at @s facing entity @e[tag=same_room,tag=!spectator,sort=nearest,limit=1] feet rotated ~ 0 run teleport @s[tag=!portrificationizing,tag=!mario_to_normal,scores={Room=..-1}] ~ ~ ~ ~ ~
+execute at @s facing entity @e[tag=same_room,tag=!spectator,tag=player,sort=nearest,limit=1] feet rotated ~ 0 run teleport @s[tag=!portrificationizing,tag=!mario_to_normal,scores={Room=..-1}] ~ ~ ~ ~ ~
 
 execute at @s[tag=listen] run function luigis_mansion:animations/e_gadd/listen
 execute at @s[tag=nod] run function luigis_mansion:animations/e_gadd/nod

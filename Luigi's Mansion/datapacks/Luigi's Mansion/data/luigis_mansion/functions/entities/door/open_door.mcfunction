@@ -17,8 +17,8 @@ execute if entity @s[tag=pull,tag=forced_animation] as @e[tag=this_model,limit=1
 execute if entity @s[tag=pull,tag=!forced_animation] as @e[tag=this_model,limit=1] run function luigis_mansion:animations/door/open/pull
 execute if entity @s[tag=!pull,tag=forced_animation] as @e[tag=this_model,limit=1] run function luigis_mansion:animations/door/open/pull
 
-tag @s[scores={AnimationProg=50}] remove open_door
-tag @s[scores={AnimationProg=50}] remove forced_animation
-execute if entity @s[scores={AnimationProg=50}] run tag @e[tag=this_model,limit=1] remove forced_animation
-execute if entity @s[scores={AnimationProg=50}] run scoreboard players reset @e[tag=this_model,limit=1] AnimationProg
-scoreboard players reset @s[scores={AnimationProg=50}] AnimationProg
+tag @s[scores={AnimationProg=50..}] remove open_door
+tag @s[scores={AnimationProg=50..}] remove forced_animation
+execute if entity @s[scores={AnimationProg=50..}] run tag @e[tag=this_model,limit=1] remove forced_animation
+execute if entity @s[scores={AnimationProg=50..}] run scoreboard players reset @e[tag=this_model,limit=1] AnimationProg
+scoreboard players reset @s[scores={AnimationProg=50..}] AnimationProg

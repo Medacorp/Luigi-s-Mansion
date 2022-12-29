@@ -1,1 +1,1 @@
-execute if entity @s[tag=boo,tag=!dead,tag=!appear] run function luigis_mansion:items/poltergust_3000/effect_on_entity/vacuum/effect/ghost/boo
+execute if entity @s[tag=boo,tag=show_health,tag=!dead,tag=!appear] run function luigis_mansion:items/poltergust_3000/effect_on_entity/vacuum/effect/ghost/boo

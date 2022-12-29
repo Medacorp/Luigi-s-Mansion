@@ -12,5 +12,6 @@ tag @s remove death_animation
 tag @s[scores={DeathTime=0}] remove revive_animation
 execute if entity @s[scores={DeathTime=0}] run function luigis_mansion:other/music/set/force/silence
 execute if entity @s[scores={DeathTime=20}] run playsound luigis_mansion:entity.player.revive player @a[tag=same_room] ~ ~ ~ 1
+execute if entity @s[scores={DeathTime=60}] run function luigis_mansion:other/revive_message
 scoreboard players set @s[scores={DeathTime=0}] Health 100
 scoreboard players reset @s[scores={DeathTime=0}] DeathTime

@@ -5,11 +5,11 @@
         "luigis_mansion:room/normal/nursery/load/doors",
         "luigis_mansion:room/normal/nursery/load/ball",
         "luigis_mansion:room/normal/nursery/load/spawn_money",
-        "luigis_mansion:room/normal/nursery/load/chest",
         "luigis_mansion:room/normal/nursery/load/painting_1",
         "luigis_mansion:room/normal/nursery/load/painting_2",
         "luigis_mansion:room/normal/nursery/load/painting_3",
         "luigis_mansion:room/normal/nursery/load/rocking_horse",
+        "luigis_mansion:room/normal/nursery/load/room_clear_chest",
         "luigis_mansion:room/normal/nursery/load/cobweb_1",
         "luigis_mansion:room/normal/nursery/load/cobweb_2"
 	]

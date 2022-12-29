@@ -1,13 +1,14 @@
-setblock 27 0 0 minecraft:shulker_box{Items:[{Slot:0b,id:"minecraft:stone_button",Count:1b,tag:{luigis_mansion:{id:"luigis_mansion:inventory",items:[]},Enchantments:[{id:"minecraft:binding_curse",lvl:1s}]}}]}
-data modify block 27 0 0 Items[0].tag.luigis_mansion.items set from entity @s Inventory
 execute store result score #temp Time run data get entity @s Inventory[{tag:{luigis_mansion:{id:"luigis_mansion:flashlight"}}}].Slot
 execute store result score #temp2 Time run data get entity @s Inventory[{tag:{luigis_mansion:{id:"luigis_mansion:interact"}}}].Slot
+
+
+function luigis_mansion:entities/player/memory/get
+data modify storage luigis_mansion:data my_memory.inventory set value {inventory:[],flashlight_on:1b}
+data modify storage luigis_mansion:data my_memory.inventory.inventory set from entity @s Inventory
+execute unless entity @s[tag=flashlight,tag=!flashlight_off] run data modify storage luigis_mansion:data my_memory.inventory.flashlight_on set value 0b
+data modify storage luigis_mansion:data memory append from storage luigis_mansion:data my_memory
+data remove storage luigis_mansion:data my_memory
 clear @s
-data modify storage luigis_mansion:data inventories append value {inventory:[],uuid:[I;],flashlight_on:1b}
-data modify storage luigis_mansion:data inventories[-1].inventory set from block 27 0 0 Items[0].tag.luigis_mansion.items
-data modify storage luigis_mansion:data inventories[-1].uuid set from entity @s UUID
-execute unless entity @s[tag=flashlight,tag=!flashlight_off] run data modify storage luigis_mansion:data inventories[-1].flashlight_on set value 0b
-setblock 27 0 0 minecraft:bedrock
 
 execute if score #temp Time matches 0 run item replace entity @s[tag=flashlight] hotbar.0 with minecraft:carrot_on_a_stick{HideFlags:63,Unbreakable:1b,Damage:1,CustomModelData:1,display:{Name:'{"italic":false,"color":"white","translate":"luigis_mansion:item.flashlight"}'},luigis_mansion:{id:"luigis_mansion:flashlight"}}
 execute if score #temp Time matches 0 run item replace entity @s[tag=!flashlight] hotbar.0 with minecraft:carrot_on_a_stick{HideFlags:63,Unbreakable:1b,Damage:1,CustomModelData:2,display:{Name:'{"italic":false,"color":"white","translate":"luigis_mansion:item.flashlight"}'},luigis_mansion:{id:"luigis_mansion:flashlight"}}
@@ -135,6 +136,6 @@ execute if score #temp2 Time matches 103 run item replace entity @s armor.head w
 execute if score #temp2 Time matches -106 run item replace entity @s weapon.offhand with minecraft:carrot_on_a_stick{HideFlags:63,Unbreakable:1b,Damage:6,CustomModelData:0,display:{Name:'{"italic":false,"color":"white","translate":"luigis_mansion:item.interact"}'},luigis_mansion:{id:"luigis_mansion:interact"}}
 scoreboard players reset #temp2 Time
 tag @s remove poltergust_selected
-scoreboard players set @s[tag=!poltergust_selected] VacuumErrors 0
-scoreboard players set @s[tag=!poltergust_selected] Pull 0
-tag @s[tag=!poltergust_selected] remove made_error
+scoreboard players set @s VacuumErrors 0
+scoreboard players set @s Pull 0
+tag @s remove made_error

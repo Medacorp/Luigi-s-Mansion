@@ -6,7 +6,6 @@ execute if entity @s[scores={MirrorZ=-2147483648..}] run scoreboard players oper
 tag @s add me
 scoreboard players set @s[scores={ErrorTime=0}] Pull 0
 scoreboard players set @s[tag=capturing_ghost] Invulnerable 2
-tag @s[tag=capturing_ghost] remove grabbed
 tag @s remove capturing_ghost
 execute as @e[tag=ghost,tag=same_room,scores={VulnerableTime=1..}] run function luigis_beta_mansion:items/poltergust_500/attacking_ghost
 execute if score #temp GhostCount > @s GhostCount run scoreboard players operation @s GhostCount = #temp GhostCount
@@ -26,11 +25,15 @@ execute if score #temp GhostCount matches 1.. run tag @s add vacuuming_ghost
 execute if score #temp GhostCount matches 1.. at @s rotated ~ 0 run function luigis_beta_mansion:items/poltergust_500/vacuuming/attack_ghost
 execute as @e[distance=..3,tag=captured,tag=!element_death] at @s run function luigis_beta_mansion:items/poltergust_500/vacuuming/capture
 scoreboard players reset #temp GhostCount
+scoreboard players reset #temp MirrorX
+scoreboard players reset #temp MirrorZ
 scoreboard players reset #temp Room
 scoreboard players reset #temp ID
+scoreboard players reset #interact
 scoreboard players add @s OverheatMeter 1
 function luigis_beta_mansion:items/poltergust_500/sync_overheat_meter
 tag @e[tag=being_vacuumed] remove being_vacuumed
+tag @e[tag=furniture,tag=hit] remove hit
 tag @s add vacuuming
 tag @s remove expelling_water
 execute if entity @s[scores={DamagePitch=1,DamagePitchTimer=6}] run playsound luigis_beta_mansion:item.poltergust_500.damage hostile @a ~ ~ ~ 1 1
@@ -41,8 +44,6 @@ execute if entity @s[scores={DamagePitch=5,DamagePitchTimer=6}] run playsound lu
 execute if entity @s[scores={DamagePitch=6..,DamagePitchTimer=6}] run playsound luigis_beta_mansion:item.poltergust_500.damage hostile @a ~ ~ ~ 1 2
 scoreboard players set @s[scores={DamagePitchTimer=0}] DamagePitch 0
 scoreboard players remove @s[scores={DamagePitchTimer=1..}] DamagePitchTimer 1
-scoreboard players reset #temp MirrorX
-scoreboard players reset #temp MirrorZ
 tag @s remove me
 tag @e[tag=already_hurt] remove already_hurt
 kill @e[type=minecraft:marker,tag=interact,limit=1]

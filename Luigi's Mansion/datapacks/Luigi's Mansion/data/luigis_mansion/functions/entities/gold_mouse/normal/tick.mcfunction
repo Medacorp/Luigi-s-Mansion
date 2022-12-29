@@ -3,8 +3,8 @@ execute if entity @s[scores={Room=11..14}] run function luigis_mansion:entities/
 execute if entity @s[scores={Room=20}] run function luigis_mansion:entities/gold_mouse/normal/fortune_tellers_room
 execute if entity @s[scores={Room=26}] run function luigis_mansion:entities/gold_mouse/normal/dining_room
 execute if entity @s[scores={Room=27}] run function luigis_mansion:entities/gold_mouse/normal/kitchen
-execute if entity @s[scores={Room=34},tag=!cheese] run function luigis_mansion:entities/gold_mouse/normal/tea_room_random
-execute if entity @s[scores={Room=34},tag=cheese] run function luigis_mansion:entities/gold_mouse/normal/tea_room_cheese
+execute if entity @s[scores={Room=34},nbt={ArmorItems:[{tag:{loot:{name:"tea_room_random_gold_mouse"}}}]}] run function luigis_mansion:entities/gold_mouse/normal/tea_room_random
+execute if entity @s[scores={Room=34},nbt={ArmorItems:[{tag:{loot:{name:"tea_room_cheese_gold_mouse"}}}]}] run function luigis_mansion:entities/gold_mouse/normal/tea_room_cheese
 execute if entity @s[scores={Room=35..41}] run function luigis_mansion:entities/gold_mouse/normal/hallway_9_hallway_15
 execute if entity @s[scores={Room=50}] run function luigis_mansion:entities/gold_mouse/normal/safari_room
 execute if entity @s[scores={Room=66}] run function luigis_mansion:entities/gold_mouse/normal/sealed_room

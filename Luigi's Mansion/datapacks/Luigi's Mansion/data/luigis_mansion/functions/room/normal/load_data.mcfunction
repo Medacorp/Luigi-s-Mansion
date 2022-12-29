@@ -8,7 +8,7 @@ scoreboard players set #mansion_data_index Selected 0
 execute unless score #mansion_data_index Selected = #previous_mansion_index Selected if data storage luigis_mansion:data current_state.mansion_data[-1] run function luigis_mansion:room/load_mansion_data
 function #luigis_mansion:room/reset_variable_to_default
 scoreboard players set #can_warp Selected 1
-scoreboard players set #heart_coin_count Selected 200
+scoreboard players set #heart_money_count Selected 200
 scoreboard players reset * Ticking
 scoreboard players set #underground_lab Ticking 1
 scoreboard players reset * Wave

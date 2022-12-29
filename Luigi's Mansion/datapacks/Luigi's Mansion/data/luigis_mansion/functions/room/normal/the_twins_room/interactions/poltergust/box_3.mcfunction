@@ -1,1 +1,0 @@
-execute if entity @s[x=738.5,y=20,z=40.5,distance=..0.7,tag=vacuum] positioned 738 20 40 if block ~ ~ ~ minecraft:chest if entity @e[distance=..0.7,tag=ghost,tag=hidden] unless score #the_twins_room_box_3 Search matches 1 store success score #the_twins_room_box_3 Search run scoreboard players add #the_twins_room_box_3 Searching 1

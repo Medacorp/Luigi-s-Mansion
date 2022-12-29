@@ -188,25 +188,25 @@ execute at @e[tag=this_model,tag=body,limit=1] run teleport @e[tag=this_model,ta
 execute at @e[tag=this_model,tag=body,limit=1] run teleport @e[tag=this_model,tag=right_leg,limit=1] ^0.275 ^ ^-0.8 ~ ~
 execute at @e[tag=this_model,tag=body,limit=1] run teleport @e[tag=this_model,tag=left_leg,limit=1] ^-0.275 ^ ^-0.8 ~ ~
 
-data modify entity @s[scores={AnimationProg=38}] ArmorItems[3].tag merge value {CustomModelData:152}
-data modify entity @s[scores={AnimationProg=42}] ArmorItems[3].tag merge value {CustomModelData:149}
-data modify entity @s[scores={AnimationProg=145}] ArmorItems[3].tag merge value {CustomModelData:152}
-execute if entity @s[scores={AnimationProg=145}] run data modify entity @e[tag=this_model,tag=gold_bone,limit=1] ArmorItems[3] set value {id:"minecraft:diamond_pickaxe",Count:1b,tag:{Unbreakable:1b,Damage:5,CustomModelData:33}}
-data modify entity @s[scores={AnimationProg=185}] ArmorItems[3].tag merge value {CustomModelData:149}
-data modify entity @s[scores={AnimationProg=200}] ArmorItems[3].tag merge value {CustomModelData:152}
-data modify entity @s[scores={AnimationProg=220}] ArmorItems[3].tag merge value {CustomModelData:149}
-execute if entity @s[scores={AnimationProg=225}] run data modify entity @e[tag=this_model,tag=gold_bone,limit=1] ArmorItems[3] set value {}
-data modify entity @s[scores={AnimationProg=240}] ArmorItems[3].tag merge value {Damage:2,CustomModelData:153}
-data modify entity @s[scores={AnimationProg=250}] ArmorItems[3].tag merge value {Damage:1,CustomModelData:149}
-data modify entity @s[scores={AnimationProg=278}] ArmorItems[3].tag merge value {CustomModelData:153}
-data modify entity @s[scores={AnimationProg=297}] ArmorItems[3].tag merge value {CustomModelData:152}
-data modify entity @s[scores={AnimationProg=302}] ArmorItems[3].tag merge value {CustomModelData:149}
-data modify entity @s[scores={AnimationProg=305}] ArmorItems[3].tag merge value {CustomModelData:152}
-data modify entity @s[scores={AnimationProg=310}] ArmorItems[3].tag merge value {CustomModelData:149}
-data modify entity @s[scores={AnimationProg=317}] ArmorItems[3].tag merge value {CustomModelData:152}
-data modify entity @s[scores={AnimationProg=322}] ArmorItems[3].tag merge value {CustomModelData:149}
-data modify entity @s[scores={AnimationProg=325}] ArmorItems[3].tag merge value {CustomModelData:152}
-data modify entity @s[scores={AnimationProg=330}] ArmorItems[3].tag merge value {CustomModelData:149}
+data modify entity @s[scores={AnimationProg=38}] ArmorItems[3] merge from entity @s ArmorItems[3].tag.variants.bark
+data modify entity @s[scores={AnimationProg=42}] ArmorItems[3] merge from entity @s ArmorItems[3].tag.variants.default
+data modify entity @s[scores={AnimationProg=145}] ArmorItems[3] merge from entity @s ArmorItems[3].tag.variants.bark
+execute if entity @s[scores={AnimationProg=145}] as @e[tag=this_model,tag=gold_bone,limit=1] run data modify entity @s ArmorItems[3].id set from entity @s ArmorItems[3].tag.visible
+data modify entity @s[scores={AnimationProg=185}] ArmorItems[3] merge from entity @s ArmorItems[3].tag.variants.default
+data modify entity @s[scores={AnimationProg=200}] ArmorItems[3] merge from entity @s ArmorItems[3].tag.variants.bark
+data modify entity @s[scores={AnimationProg=220}] ArmorItems[3] merge from entity @s ArmorItems[3].tag.variants.default
+execute if entity @s[scores={AnimationProg=225}] as @e[tag=this_model,tag=gold_bone,limit=1] run data modify entity @s ArmorItems[3].id set from entity @s ArmorItems[3].tag.invisible
+data modify entity @s[scores={AnimationProg=240}] ArmorItems[3] merge from entity @s ArmorItems[3].tag.variants.tongue_out_side
+data modify entity @s[scores={AnimationProg=250}] ArmorItems[3] merge from entity @s ArmorItems[3].tag.variants.default
+data modify entity @s[scores={AnimationProg=278}] ArmorItems[3] merge from entity @s ArmorItems[3].tag.variants.tongue_out
+data modify entity @s[scores={AnimationProg=297}] ArmorItems[3] merge from entity @s ArmorItems[3].tag.variants.bark
+data modify entity @s[scores={AnimationProg=302}] ArmorItems[3] merge from entity @s ArmorItems[3].tag.variants.default
+data modify entity @s[scores={AnimationProg=305}] ArmorItems[3] merge from entity @s ArmorItems[3].tag.variants.bark
+data modify entity @s[scores={AnimationProg=310}] ArmorItems[3] merge from entity @s ArmorItems[3].tag.variants.default
+data modify entity @s[scores={AnimationProg=317}] ArmorItems[3] merge from entity @s ArmorItems[3].tag.variants.bark
+data modify entity @s[scores={AnimationProg=322}] ArmorItems[3] merge from entity @s ArmorItems[3].tag.variants.default
+data modify entity @s[scores={AnimationProg=325}] ArmorItems[3] merge from entity @s ArmorItems[3].tag.variants.bark
+data modify entity @s[scores={AnimationProg=330}] ArmorItems[3] merge from entity @s ArmorItems[3].tag.variants.default
 execute if entity @s[scores={AnimationProg=40}] run playsound luigis_mansion_3ds_remake:entity.polterpup.first_bark neutral @a[tag=same_room] ~ ~ ~ 1
 execute if entity @s[scores={AnimationProg=60}] run playsound luigis_mansion_3ds_remake:entity.polterpup.sniff neutral @a[tag=same_room] ~ ~ ~ 0.5
 execute if entity @s[scores={AnimationProg=65}] run playsound luigis_mansion_3ds_remake:entity.polterpup.sniff neutral @a[tag=same_room] ~ ~ ~ 0.5

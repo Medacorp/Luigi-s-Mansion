@@ -64,6 +64,7 @@ execute if score #clockwork_room Ticking matches 1 if data storage luigis_mansio
 execute if score #roof Ticking matches 1 if data storage luigis_mansion:data current_state.current_data.rooms.roof{cleared:1b} run function luigis_mansion:room/normal/roof/clear
 execute if score #armory Ticking matches 1 if data storage luigis_mansion:data current_state.current_data.rooms.armory{cleared:1b} run function luigis_mansion:room/normal/armory/clear
 execute if score #ceramics_studio Ticking matches 1 if data storage luigis_mansion:data current_state.current_data.rooms.ceramics_studio{cleared:1b} run function luigis_mansion:room/normal/ceramics_studio/clear
+execute if score #ceramics_studio Wave matches 100.. run scoreboard players set #ceramics_studio Wave 1
 execute if score #sealed_room Ticking matches 1 if data storage luigis_mansion:data current_state.current_data.rooms.sealed_room{cleared:1b} run function luigis_mansion:room/normal/sealed_room/clear
 execute if score #pipe_room Ticking matches 1 if data storage luigis_mansion:data current_state.current_data.rooms.pipe_room{cleared:1b} run function luigis_mansion:room/normal/pipe_room/clear
 execute if score #cold_storage Ticking matches 1 if data storage luigis_mansion:data current_state.current_data.rooms.cold_storage{cleared:1b} run function luigis_mansion:room/normal/cold_storage/clear

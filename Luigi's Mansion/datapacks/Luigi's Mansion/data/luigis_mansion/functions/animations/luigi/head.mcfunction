@@ -38,6 +38,9 @@ execute if entity @s[tag=!stop_model] store result entity @s Pose.Head[0] float 
 scoreboard players reset #temp Time
 
 execute at @s[tag=yelling] run function luigis_mansion:animations/luigi/yelling/head
+execute at @s[tag=talk_animation,tag=!low_health] run function luigis_mansion:animations/luigi/talk/high_health/head
+execute at @s[tag=talk_animation,tag=low_health] run function luigis_mansion:animations/luigi/talk/low_health/head
+execute at @s[tag=revive] run function luigis_mansion:animations/luigi/revive/head
 execute at @s[tag=nod] run function luigis_mansion:animations/luigi/nod/head
 execute at @s[tag=thinking] run function luigis_mansion:animations/luigi/thinking/head
 execute at @s[tag=sigh] run function luigis_mansion:animations/luigi/sigh/head

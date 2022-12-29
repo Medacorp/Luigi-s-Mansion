@@ -3,11 +3,11 @@
 	    "luigis_mansion:room/hidden/armory/load/set_loaded",
         "luigis_mansion:room/hidden/armory/load/lights",
         "luigis_mansion:room/hidden/armory/load/doors",
-        "luigis_mansion:room/hidden/armory/load/chest_1",
-        "luigis_mansion:room/hidden/armory/load/chest_2",
-        "luigis_mansion:room/hidden/armory/load/chest_3",
-        "luigis_mansion:room/hidden/armory/load/chest_4",
-        "luigis_mansion:room/hidden/armory/load/chest_5",
-        "luigis_mansion:room/hidden/armory/load/chest_6"
+        "luigis_mansion:room/hidden/armory/load/metal_chest_1",
+        "luigis_mansion:room/hidden/armory/load/metal_chest_2",
+        "luigis_mansion:room/hidden/armory/load/metal_chest_3",
+        "luigis_mansion:room/hidden/armory/load/metal_chest_4",
+        "luigis_mansion:room/hidden/armory/load/metal_chest_5",
+        "luigis_mansion:room/hidden/armory/load/room_clear_chest"
 	]
 }

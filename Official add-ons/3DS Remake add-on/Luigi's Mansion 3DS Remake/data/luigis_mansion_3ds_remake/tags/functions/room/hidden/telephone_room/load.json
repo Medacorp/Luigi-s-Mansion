@@ -3,12 +3,12 @@
 	    "luigis_mansion_3ds_remake:room/hidden/telephone_room/load/set_loaded",
         "luigis_mansion_3ds_remake:room/hidden/telephone_room/load/lights",
         "luigis_mansion_3ds_remake:room/hidden/telephone_room/load/doors",
-        "luigis_mansion_3ds_remake:room/hidden/telephone_room/load/chest_1",
-        "luigis_mansion_3ds_remake:room/hidden/telephone_room/load/chest_2",
-        "luigis_mansion_3ds_remake:room/hidden/telephone_room/load/chest_3",
-        "luigis_mansion_3ds_remake:room/hidden/telephone_room/load/chest_4",
-        "luigis_mansion_3ds_remake:room/hidden/telephone_room/load/vacuumable_2",
         "luigis_mansion_3ds_remake:room/hidden/telephone_room/load/cobweb_1",
-        "luigis_mansion_3ds_remake:room/hidden/telephone_room/load/cobweb_2"
+        "luigis_mansion_3ds_remake:room/hidden/telephone_room/load/cobweb_2",
+        "luigis_mansion_3ds_remake:room/hidden/telephone_room/load/room_clear_chest",
+        "luigis_mansion_3ds_remake:room/hidden/telephone_room/load/vacuumable_2",
+        "luigis_mansion_3ds_remake:room/hidden/telephone_room/load/wooden_chest_1",
+        "luigis_mansion_3ds_remake:room/hidden/telephone_room/load/wooden_chest_2",
+        "luigis_mansion_3ds_remake:room/hidden/telephone_room/load/wooden_chest_3"
 	]
 }

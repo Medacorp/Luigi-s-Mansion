@@ -1,7 +1,8 @@
 scoreboard objectives add ActionTime dummy
 scoreboard objectives add Angle dummy
 scoreboard objectives add AnimationProg dummy
-scoreboard objectives add Attack minecraft.custom:minecraft.damage_dealt
+scoreboard objectives add AttackerMemory dummy
+scoreboard objectives add AttackType dummy
 scoreboard objectives add BananaDropTime dummy
 scoreboard objectives add BookChoice trigger
 scoreboard objectives add Boos dummy
@@ -9,6 +10,7 @@ scoreboard objectives add BooTimer dummy
 scoreboard objectives add ChangedMansion dummy
 scoreboard objectives add ClairvoyaChoice trigger
 scoreboard objectives add ClairvoyaSpoke dummy
+scoreboard objectives add ClearInventory dummy
 scoreboard objectives add ClickEventCheck trigger
 scoreboard objectives add Constants dummy
 scoreboard objectives add CreditsTime dummy
@@ -34,9 +36,34 @@ scoreboard objectives add ErrorTime dummy
 scoreboard objectives add FlashlightType dummy
 scoreboard objectives add FlyTime dummy
 scoreboard objectives add Food food
-scoreboard objectives add ForcedDamage dummy
 scoreboard objectives add ForceRadar dummy
 scoreboard objectives add ForceScreen dummy
+scoreboard objectives add FurnitureDust dummy
+scoreboard objectives add FurnitureElemenF dummy
+scoreboard objectives add FurnitureElemenT dummy
+scoreboard objectives add FurnitureElemenU dummy
+scoreboard objectives add FurnitureFire dummy
+scoreboard objectives add FurnitureForward dummy
+scoreboard objectives add FurnitureIce dummy
+scoreboard objectives add FurnitureRadius dummy
+scoreboard objectives add FurnitureRotDef dummy
+scoreboard objectives add FurnitureSearch dummy
+scoreboard objectives add FurnitureSizeF dummy
+scoreboard objectives add FurnitureSizeL dummy
+scoreboard objectives add FurnitureSizeU dummy
+scoreboard objectives add FurnitureSizeW dummy
+scoreboard objectives add FurnitureSizeH dummy
+scoreboard objectives add FurnitureSound dummy
+scoreboard objectives add FurnitureSpins dummy
+scoreboard objectives add FurnitureUp dummy
+scoreboard objectives add FurnitureVacuum dummy
+scoreboard objectives add FurnitureWater dummy
+scoreboard objectives add FurnitureXProg dummy
+scoreboard objectives add FurnitureXOrigin dummy
+scoreboard objectives add FurnitureXTarget dummy
+scoreboard objectives add FurnitureZProg dummy
+scoreboard objectives add FurnitureZOrigin dummy
+scoreboard objectives add FurnitureZTarget dummy
 scoreboard objectives add GBHCall dummy
 scoreboard objectives add GBHChoice trigger
 scoreboard objectives add GBHDialog dummy
@@ -54,6 +81,7 @@ scoreboard objectives add Health dummy
 scoreboard objectives add HealthMusic dummy
 scoreboard objectives add HeartOffset dummy
 scoreboard objectives add HideTime dummy
+scoreboard objectives add HitFurnitureDir dummy
 scoreboard objectives add HomeRot dummy
 scoreboard objectives add HomeRotX dummy
 scoreboard objectives add HomeRotY dummy
@@ -72,14 +100,19 @@ scoreboard objectives add Jump minecraft.custom:minecraft.jump
 scoreboard objectives add JumpHeight dummy
 scoreboard objectives add Keys dummy
 scoreboard objectives add KillerID dummy
+scoreboard objectives add KnockbackDamage dummy
 scoreboard objectives add KnockbackTime dummy
 scoreboard objectives add KnockbackType dummy
 scoreboard objectives add KnockbackX dummy
 scoreboard objectives add KnockbackZ dummy
+scoreboard objectives add LampUp dummy
+scoreboard objectives add LampForward dummy
+scoreboard objectives add LampModel dummy
 scoreboard objectives add LastFloor dummy
 scoreboard objectives add LastHealth dummy
 scoreboard objectives add LastHealthMusic dummy
 scoreboard objectives add LastRoom dummy
+scoreboard objectives add LastSelected dummy
 scoreboard objectives add LastTotalDamage dummy
 scoreboard objectives add LightStep dummy
 scoreboard objectives add LightX dummy
@@ -114,6 +147,7 @@ scoreboard objectives add PassiveNr dummy
 scoreboard objectives add PathStep dummy
 scoreboard objectives add PlayerRotation dummy
 scoreboard objectives add PoltergustSound dummy
+scoreboard objectives add PoltergustTime dummy
 scoreboard objectives add PosX dummy
 scoreboard objectives add PosY dummy
 scoreboard objectives add PosZ dummy
@@ -132,6 +166,8 @@ scoreboard objectives add Room dummy
 scoreboard objectives add RoomNoise dummy
 scoreboard objectives add RoomSection dummy
 scoreboard objectives add RotationDif dummy
+scoreboard objectives add RotationSpeed dummy
+scoreboard objectives add RotationSpeedDef dummy
 scoreboard objectives add RotX dummy
 scoreboard objectives add RotY dummy
 scoreboard objectives add Run minecraft.custom:minecraft.sprint_one_cm
@@ -139,6 +175,7 @@ scoreboard objectives add ScareType dummy
 scoreboard objectives add ScareTime dummy
 scoreboard objectives add Search dummy
 scoreboard objectives add Searched dummy
+scoreboard objectives add SearcherID dummy
 scoreboard objectives add Searching dummy
 scoreboard objectives add SecondFleeDamage dummy
 scoreboard objectives add SecondFleeState dummy
@@ -175,6 +212,7 @@ scoreboard objectives add UseItem minecraft.used:minecraft.carrot_on_a_stick
 scoreboard objectives add Vacuumables dummy
 scoreboard objectives add VacuumErrors dummy
 scoreboard objectives add VacuumTime dummy
+scoreboard objectives add VanishTime dummy
 scoreboard objectives add Variant dummy
 scoreboard objectives add VulnerableTime dummy
 scoreboard objectives add WaitTime dummy
@@ -222,14 +260,34 @@ execute unless score #multiply_hurt Selected matches 0.. run scoreboard players 
 execute unless score #multiply_damage Selected matches 0.. run scoreboard players set #multiply_damage Selected 100
 execute unless score #changing_max_health Selected matches 0..1 run scoreboard players set #changing_max_health Selected 0
 execute unless score #radar_type Selected matches 0.. run scoreboard players set #radar_type Selected 0
-execute unless score #heart_coin_count Selected matches 0.. run scoreboard players set #ghost_heart_size Selected 200
+execute unless score #heart_money_count Selected matches 0.. run scoreboard players set #ghost_money_count Selected 200
 execute unless score #gbh_clock Selected matches -2147483648.. run scoreboard players set #gbh_clock Selected 0
 execute unless score #gbh_clock_increase Selected matches -2147483648.. run scoreboard players set #gbh_clock_increase Selected 0
 execute if score #gbh_clock_increase Selected matches 0 run scoreboard players set #gbh_clock Selected 0
 
 execute unless score #training_choice Selected matches 0..1 run scoreboard players set #training_choice Selected 0
 execute unless score #freeze_timer Selected matches 0..1 run scoreboard players set #freeze_timer Selected 0
+
 execute unless score #debug Selected matches 0..1 run scoreboard players set #debug Selected 0
+execute unless score #debug_messages Selected matches 0..1 run scoreboard players set #debug_messages Selected 0
+execute unless score #debug_furniture Selected matches 0..1 run scoreboard players set #debug_furniture Selected 0
+execute unless score #debug_entities Selected matches 0..1 run scoreboard players set #debug_entities Selected 0
+execute if score #debug Selected matches 1 if score #debug_messages Selected matches 0 run scoreboard players set #debug_messages Selected 2
+execute if score #debug Selected matches 1 if score #debug_furniture Selected matches 0 run scoreboard players set #debug_furniture Selected 2
+execute if score #debug Selected matches 1 if score #debug_entities Selected matches 0 run scoreboard players set #debug_entities Selected 2
+execute if score #debug Selected matches 1 if score #debug LastSelected matches 0 run tellraw @a {"translate":"luigis_mansion:message.debug.format","with":[{"translate":"luigis_mansion:message.debug","color":"gold"},{"translate":"luigis_mansion:message.debug.debugger.turned_on"}]}
+execute if score #debug Selected matches 0 if score #debug LastSelected matches 1 run tellraw @a {"translate":"luigis_mansion:message.debug.format","with":[{"translate":"luigis_mansion:message.debug","color":"gold"},{"translate":"luigis_mansion:message.debug.debugger.turned_off"}]}
+execute if score #debug_messages Selected matches 1.. if score #debug_messages LastSelected matches 0 run tellraw @a {"translate":"luigis_mansion:message.debug.format","with":[{"translate":"luigis_mansion:message.debug","color":"gold"},{"translate":"luigis_mansion:message.debug.debugger.turned_on.messages"}]}
+execute if score #debug_messages Selected matches 0 if score #debug_messages LastSelected matches 1.. run tellraw @a {"translate":"luigis_mansion:message.debug.format","with":[{"translate":"luigis_mansion:message.debug","color":"gold"},{"translate":"luigis_mansion:message.debug.debugger.turned_off.messages"}]}
+execute if score #debug_furniture Selected matches 1.. if score #debug_furniture LastSelected matches 0 run tellraw @a {"translate":"luigis_mansion:message.debug.format","with":[{"translate":"luigis_mansion:message.debug","color":"gold"},{"translate":"luigis_mansion:message.debug.debugger.turned_on.furniture"}]}
+execute if score #debug_furniture Selected matches 0 if score #debug_furniture LastSelected matches 1.. run tellraw @a {"translate":"luigis_mansion:message.debug.format","with":[{"translate":"luigis_mansion:message.debug","color":"gold"},{"translate":"luigis_mansion:message.debug.debugger.turned_off.furniture"}]}
+execute if score #debug_entities Selected matches 1.. if score #debug_entities LastSelected matches 0 run tellraw @a {"translate":"luigis_mansion:message.debug.format","with":[{"translate":"luigis_mansion:message.debug","color":"gold"},{"translate":"luigis_mansion:message.debug.debugger.turned_on.entities"}]}
+execute if score #debug_entities Selected matches 0 if score #debug_entities LastSelected matches 1.. run tellraw @a {"translate":"luigis_mansion:message.debug.format","with":[{"translate":"luigis_mansion:message.debug","color":"gold"},{"translate":"luigis_mansion:message.debug.debugger.turned_off.entities"}]}
+scoreboard players operation #debug LastSelected = #debug Selected
+scoreboard players operation #debug_messages LastSelected = #debug_messages Selected
+scoreboard players operation #debug_furniture LastSelected = #debug_furniture Selected
+scoreboard players operation #debug_entities LastSelected = #debug_entities Selected
+
 execute unless data storage luigis_mansion:data current_state run function luigis_mansion:other/upgrade_path/newly_installed
 
 execute unless score #global_player_names Selected matches 0..1 run scoreboard players set #global_player_names Selected 1

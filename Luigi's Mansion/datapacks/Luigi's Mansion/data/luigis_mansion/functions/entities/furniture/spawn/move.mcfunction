@@ -1,0 +1,2 @@
+execute unless score #temp Time matches 0 run function luigis_mansion:entities/furniture/spawn/move/forward
+execute unless score #temp2 Time matches 0 run function luigis_mansion:entities/furniture/spawn/move/up

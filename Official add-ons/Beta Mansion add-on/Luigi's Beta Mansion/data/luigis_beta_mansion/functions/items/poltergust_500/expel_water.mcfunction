@@ -10,3 +10,4 @@ execute if entity @s[tag=!expelling_water] run playsound luigis_beta_mansion:ite
 scoreboard players set @s[tag=!expelling_water] PoltergustSound 10
 execute if entity @s[tag=expelling_water,scores={PoltergustSound=0}] run playsound luigis_beta_mansion:item.poltergust_500.expelling.water player @a[tag=same_room] ~ ~ ~ 1
 scoreboard players set @s[tag=expelling_water,scores={PoltergustSound=0}] PoltergustSound 20
+tag @e[tag=furniture,tag=hit] remove hit

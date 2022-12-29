@@ -2,7 +2,7 @@ teleport @e[tag=this_model,tag=body,limit=1] ~ ~ ~ ~ ~
 teleport @e[tag=this_model,tag=right_arm,limit=1] ^0.35 ^0.1 ^ ~ ~
 teleport @e[tag=this_model,tag=left_arm,limit=1] ^-0.35 ^0.1 ^ ~ ~
 scoreboard players add @s AnimationProg 1
-data modify entity @s[tag=visible] ArmorItems[3].tag.CustomModelData set value 83
+data modify entity @s[tag=visible] ArmorItems[3] merge from entity @s ArmorItems[3].tag.variants.waking
 data merge entity @s[scores={AnimationProg=1}] {Pose:{Head:[-20.0f,0.0f,180.01f]}}
 execute if entity @s[scores={AnimationProg=1}] run data merge entity @e[tag=this_model,tag=body,limit=1] {Pose:{Head:[0.0f,0.0f,180.01f]}}
 execute if entity @s[scores={AnimationProg=1}] run data merge entity @e[tag=this_model,tag=right_arm,limit=1] {Pose:{Head:[-90.0f,40.0f,180.01f]}}

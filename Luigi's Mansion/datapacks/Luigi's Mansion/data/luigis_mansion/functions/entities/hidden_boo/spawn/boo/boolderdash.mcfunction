@@ -1,1 +1,1 @@
-execute if entity @s[tag=boolderdash] run function luigis_mansion:spawn_entities/boo/boolderdash
+execute if entity @s[tag=boolderdash] run function luigis_mansion:spawn_entities/ghost/boo/boolderdash

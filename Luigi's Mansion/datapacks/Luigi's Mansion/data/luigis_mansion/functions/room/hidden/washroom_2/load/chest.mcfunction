@@ -1,1 +1,0 @@
-execute if data storage luigis_mansion:data current_state.current_data.money_spawned{washroom_2_chest:1b} run scoreboard players set #washroom_2_chest Searched 1

@@ -29,9 +29,13 @@ execute if entity @s[tag=catch_portrait_ghost] as @a[tag=same_room,scores={Room=
 execute if entity @s[tag=!catch_portrait_ghost,tag=catch_ghost] as @a[tag=same_room,scores={Room=1..}] unless entity @s[tag=spectator,tag=!camera] run function luigis_mansion:other/music/set/catching_ghost
 execute as @e[distance=..3,tag=captured,tag=!element_death] at @s run function luigis_mansion:items/poltergust_3000/vacuuming/capture
 scoreboard players reset #temp GhostCount
+scoreboard players reset #temp MirrorX
+scoreboard players reset #temp MirrorZ
 scoreboard players reset #temp Room
 scoreboard players reset #temp ID
+scoreboard players reset #interact
 tag @e[tag=being_vacuumed] remove being_vacuumed
+tag @e[tag=furniture,tag=hit] remove hit
 tag @s add vacuuming
 tag @s remove expelling_dust
 tag @s remove expelling_fire
@@ -45,8 +49,6 @@ execute if entity @s[scores={DamagePitch=5,DamagePitchTimer=6}] run playsound lu
 execute if entity @s[scores={DamagePitch=6..,DamagePitchTimer=6}] run playsound luigis_mansion:item.poltergust_3000.damage hostile @a ~ ~ ~ 1 2
 scoreboard players set @s[scores={DamagePitchTimer=0}] DamagePitch 0
 scoreboard players remove @s[scores={DamagePitchTimer=1..}] DamagePitchTimer 1
-scoreboard players reset #temp MirrorX
-scoreboard players reset #temp MirrorZ
 tag @s remove me
 tag @e[tag=hit_by_poltergust] remove hit_by_poltergust
 kill @e[type=minecraft:marker,tag=interact,limit=1]

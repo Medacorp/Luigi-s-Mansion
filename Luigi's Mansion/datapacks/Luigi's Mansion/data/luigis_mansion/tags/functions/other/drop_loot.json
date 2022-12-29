@@ -1,0 +1,22 @@
+{
+	"values": [
+        "luigis_mansion:other/drop_loot/gold_coin",
+        "luigis_mansion:other/drop_loot/bill",
+        "luigis_mansion:other/drop_loot/gold_bar",
+        "luigis_mansion:other/drop_loot/blue_sapphire",
+        "luigis_mansion:other/drop_loot/green_emerald",
+        "luigis_mansion:other/drop_loot/red_ruby",
+        "luigis_mansion:other/drop_loot/red_diamond",
+        "luigis_mansion:other/drop_loot/silver_diamond",
+        "luigis_mansion:other/drop_loot/gold_diamond",
+        "luigis_mansion:other/drop_loot/small_pearl",
+        "luigis_mansion:other/drop_loot/medium_pearl",
+        "luigis_mansion:other/drop_loot/big_pearl",
+        "luigis_mansion:other/drop_loot/small_heart",
+        "luigis_mansion:other/drop_loot/big_heart",
+        "luigis_mansion:other/drop_loot/poison_mushroom",
+        "luigis_mansion:other/drop_loot/key",
+        "luigis_mansion:other/drop_loot/element_medal",
+        "luigis_mansion:other/drop_loot/mario_item"
+	]
+}

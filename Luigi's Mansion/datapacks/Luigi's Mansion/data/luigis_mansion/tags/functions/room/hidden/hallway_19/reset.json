@@ -1,6 +1,5 @@
 {
     "values": [
-        "luigis_mansion:room/hidden/hallway_19/reset/unload",
-        "#luigis_mansion:room/hidden/hallway_19/turn_lights/off"
+        "luigis_mansion:room/hidden/hallway_19/reset/unload"
     ]
 }

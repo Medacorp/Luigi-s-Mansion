@@ -13,13 +13,15 @@ tag @s[tag=!spawned_particle,tag=!no_spawned_particle] add spawned_particle
 tag @s[tag=no_spawned_particle] remove no_spawned_particle
 execute at @s run function luigis_mansion:animations/bomb/turn
 execute at @s[scores={Move=10}] run execute as @e[distance=..3,scores={Invulnerable=0},tag=game_boy_horror_location] run function luigis_mansion:entities/game_boy_horror_location/bring_player_back
-execute at @s[scores={Move=10}] run effect give @a[distance=..3,scores={Invulnerable=0},tag=!spectator] minecraft:instant_damage 1 0 true
-execute at @s[scores={Move=10}] run scoreboard players set @a[distance=..3,scores={Invulnerable=0},tag=!spectator] ForcedDamage 4
-execute at @s[scores={Move=10}] as @a[distance=..3,scores={Invulnerable=0},tag=!spectator] run function luigis_mansion:entities/player/knockback/burn
+execute at @s[scores={Move=10}] run data modify storage luigis_mansion:data damage set value {method:"luigis_mansion:explosion",amount:10,knockback:"burn",no_delete:1b}
+execute at @s[scores={Move=10}] if data entity @s ArmorItems[3].tag.damage.attack run data modify storage luigis_mansion:data damage.amount set from entity @s ArmorItems[3].tag.damage.attack
+execute at @s[scores={Move=10}] store result storage luigis_mansion:data damage.attacker int 1 run scoreboard players get @s Owner
+execute at @s[scores={Move=10}] as @a[distance=..3,gamemode=!spectator] run function luigis_mansion:entities/player/take_damage
+execute at @s[scores={Move=10}] run data remove storage luigis_mansion:data damage
 execute at @s[scores={Move=10}] run particle minecraft:explosion ~ ~ ~ 0.2 0.2 0.2 1 4 force @a[tag=same_room]
 execute at @s[scores={Move=10}] run playsound luigis_mansion:entity.ghost.explode hostile @a[tag=same_room] ~ ~ ~ 1
 execute at @s[scores={Move=10}] run data remove entity @s ArmorItems[3]
-execute if entity @s[scores={Move=10,Owner=-2147483648..}] if entity @a[distance=..3,scores={Invulnerable=0},tag=!spectator,limit=1] run tag @s add make_laugh
+execute if entity @s[scores={Move=10,Owner=-2147483648..}] if entity @a[distance=..3,tag=!spectator,limit=1] run tag @s add make_laugh
 execute if entity @s[scores={Move=30,Owner=-2147483648..}] run scoreboard players operation #temp GhostNr = @s Owner
 execute if entity @s[scores={Move=30,Owner=-2147483648..}] as @e[tag=!model_piece,tag=ghost] if score @s GhostNr = #temp GhostNr run scoreboard players set @s AnimationProg 0
 execute if entity @s[scores={Move=30,Owner=-2147483648..},tag=make_laugh] as @e[tag=!model_piece,tag=ghost] if score @s GhostNr = #temp GhostNr run tag @s add laugh

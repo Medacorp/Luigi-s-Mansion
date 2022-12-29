@@ -5,35 +5,31 @@ execute if entity @s[scores={MirrorZ=-2147483648..}] run scoreboard players oper
 tag @s add me
 tag @s remove vacuuming
 summon minecraft:marker ~ ~ ~ {Tags:["interact","poltergust"]}
-execute unless entity @s[scores={ElementMeter=1..}] unless entity @s[nbt={SelectedItem:{tag:{luigis_mansion:{id:"luigis_mansion:poltergust_3000",element:{type:0b}}}}}] run function luigis_mansion:items/poltergust_3000/no_element
-execute if entity @s[scores={ElementMeter=1..},nbt={SelectedItem:{tag:{luigis_mansion:{id:"luigis_mansion:poltergust_3000",element:{type:0b}}}}}] run function luigis_mansion:items/poltergust_3000/no_element
-tag @s[nbt={SelectedItem:{tag:{luigis_mansion:{id:"luigis_mansion:poltergust_3000",element:{type:1b}}}}}] add fire
-tag @s[nbt={SelectedItem:{tag:{luigis_mansion:{id:"luigis_mansion:poltergust_3000",element:{type:2b}}}}}] add water
-tag @s[nbt={SelectedItem:{tag:{luigis_mansion:{id:"luigis_mansion:poltergust_3000",element:{type:3b}}}}}] add ice
-execute if entity @s[tag=!fire,tag=!water,tag=!ice] run tag @e[tag=interact,limit=1] add dust
-execute if entity @s[tag=fire] run tag @e[type=minecraft:marker,tag=interact,limit=1] add fire
-execute if entity @s[tag=water] run tag @e[type=minecraft:marker,tag=interact,limit=1] add water
-execute if entity @s[tag=ice] run tag @e[type=minecraft:marker,tag=interact,limit=1] add ice
-execute if entity @s[tag=!fire,tag=!water,tag=!ice] run function luigis_mansion:items/poltergust_3000/expel_dust
-execute if entity @s[tag=fire] unless entity @s[scores={SneakTime=1..20}] run function luigis_mansion:items/poltergust_3000/expel_fire
-execute if entity @s[tag=water] unless entity @s[scores={SneakTime=1..20}] run function luigis_mansion:items/poltergust_3000/expel_water
-execute if entity @s[tag=ice] unless entity @s[scores={SneakTime=1..20}] run function luigis_mansion:items/poltergust_3000/expel_ice
-execute if entity @s[tag=fire,scores={SneakTime=1}] run function luigis_mansion:items/poltergust_3000/shoot_fire
-execute if entity @s[tag=water,scores={SneakTime=1}] run function luigis_mansion:items/poltergust_3000/shoot_water
-execute if entity @s[tag=ice,scores={SneakTime=1}] run function luigis_mansion:items/poltergust_3000/shoot_ice
-execute unless entity @s[scores={SneakTime=1..20}] unless entity @s[nbt={SelectedItem:{tag:{luigis_mansion:{id:"luigis_mansion:poltergust_3000",element:{type:0b}}}}}] run function luigis_mansion:items/poltergust_3000/reduce_element
-execute if entity @s[scores={SneakTime=1}] unless entity @s[nbt={SelectedItem:{tag:{luigis_mansion:{id:"luigis_mansion:poltergust_3000",element:{type:0b}}}}}] run function luigis_mansion:items/poltergust_3000/reduce_element_shoot
-tag @s[tag=!fire,tag=!water,tag=!ice] add expelling_dust
-tag @s[tag=fire] add expelling_fire
-tag @s[tag=water] add expelling_water
-tag @s[tag=ice] add expelling_ice
-tag @s remove fire
-tag @s remove water
-tag @s remove ice
+function luigis_mansion:entities/player/memory/get
+execute if data storage luigis_mansion:data my_memory{poltergust_element:"none"} run tag @e[tag=interact,limit=1] add dust
+execute if data storage luigis_mansion:data my_memory{poltergust_element:"none"} run function luigis_mansion:items/poltergust_3000/expel_dust
+execute if data storage luigis_mansion:data my_memory{poltergust_element:"none"} run tag @s add expelling_dust
+execute if data storage luigis_mansion:data my_memory{poltergust_element:"fire"} run tag @e[tag=interact,limit=1] add fire
+execute if data storage luigis_mansion:data my_memory{poltergust_element:"fire"} unless entity @s[scores={SneakTime=1..20}] run function luigis_mansion:items/poltergust_3000/expel_fire
+execute if data storage luigis_mansion:data my_memory{poltergust_element:"fire"} if entity @s[scores={SneakTime=1}] run function luigis_mansion:items/poltergust_3000/shoot_fire
+execute if data storage luigis_mansion:data my_memory{poltergust_element:"fire"} run tag @s add expelling_fire
+execute if data storage luigis_mansion:data my_memory{poltergust_element:"water"} run tag @e[tag=interact,limit=1] add water
+execute if data storage luigis_mansion:data my_memory{poltergust_element:"water"} unless entity @s[scores={SneakTime=1..20}] run function luigis_mansion:items/poltergust_3000/expel_water
+execute if data storage luigis_mansion:data my_memory{poltergust_element:"water"} if entity @s[scores={SneakTime=1}] run function luigis_mansion:items/poltergust_3000/shoot_water
+execute if data storage luigis_mansion:data my_memory{poltergust_element:"water"} run tag @s add expelling_water
+execute if data storage luigis_mansion:data my_memory{poltergust_element:"ice"} run tag @e[tag=interact,limit=1] add ice
+execute if data storage luigis_mansion:data my_memory{poltergust_element:"ice"} unless entity @s[scores={SneakTime=1..20}] run function luigis_mansion:items/poltergust_3000/expel_ice
+execute if data storage luigis_mansion:data my_memory{poltergust_element:"ice"} if entity @s[scores={SneakTime=1}] run function luigis_mansion:items/poltergust_3000/shoot_ice
+execute if data storage luigis_mansion:data my_memory{poltergust_element:"ice"} run tag @s add expelling_ice
+execute unless entity @s[scores={SneakTime=1..20}] unless data storage luigis_mansion:data my_memory{poltergust_element:"none"} run function luigis_mansion:items/poltergust_3000/reduce_element
+execute if entity @s[scores={SneakTime=1}] unless data storage luigis_mansion:data my_memory{poltergust_element:"none"} run function luigis_mansion:items/poltergust_3000/reduce_element_shoot
+data modify storage luigis_mansion:data memory append from storage luigis_mansion:data my_memory
+data remove storage luigis_mansion:data my_memory
 kill @e[type=minecraft:marker,tag=interact,limit=1]
 tag @e[tag=hit_by_poltergust] remove hit_by_poltergust
 scoreboard players reset #temp MirrorX
 scoreboard players reset #temp MirrorZ
 scoreboard players reset #temp Room
 scoreboard players reset #temp ID
+scoreboard players reset #interact
 tag @s remove me

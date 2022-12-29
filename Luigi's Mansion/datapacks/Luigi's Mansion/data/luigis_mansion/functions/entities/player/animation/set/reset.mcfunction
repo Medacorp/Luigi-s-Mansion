@@ -10,6 +10,8 @@ tag @s remove answer_phone
 tag @s remove sigh
 tag @s remove stand_still
 tag @s remove look
+tag @s remove talk_animation
+tag @s remove revive
 tag @s remove pull_open_door
 tag @s remove push_open_door
 tag @s remove pull_locked_door

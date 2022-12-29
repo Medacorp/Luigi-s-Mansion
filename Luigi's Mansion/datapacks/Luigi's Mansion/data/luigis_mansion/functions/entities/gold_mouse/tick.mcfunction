@@ -1,6 +1,5 @@
 teleport @s ~ ~1.3 ~
-execute at @s[tag=dead] run function #luigis_mansion:entities/gold_mouse/spawn_money
-execute at @s[tag=dead] run function luigis_mansion:entities/gold_mouse/drop_loot
+execute at @s[tag=dead] run function luigis_mansion:other/drop_loot
 execute at @s[tag=disappear] run tag @s add remove_from_existence
 
 execute at @s[tag=fleeing,tag=!played_sound] run playsound luigis_mansion:entity.gold_mouse.ambient hostile @a[tag=same_room] ~ ~ ~ 1

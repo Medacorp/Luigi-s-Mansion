@@ -1,0 +1,1 @@
+fill 746 11 39 746 11 40 minecraft:air

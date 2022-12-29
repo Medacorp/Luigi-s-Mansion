@@ -37,5 +37,3 @@ execute if entity @s[scores={Room=68}] run function luigis_mansion_3ds_remake:en
 execute if entity @s[scores={Room=69}] run function luigis_mansion_3ds_remake:entities/hidden_boo/swap_spot/hidden/sitting_room
 execute if entity @s[scores={Room=70}] run function luigis_mansion_3ds_remake:entities/hidden_boo/swap_spot/hidden/guest_room
 execute if entity @s[scores={Room=71}] run function luigis_mansion_3ds_remake:entities/hidden_boo/swap_spot/hidden/the_artists_studio
-execute at @s[tag=caught_by_boo_radar,tag=can_play_sound] run playsound luigis_mansion:entity.boo.hide hostile @a[tag=same_room] ~ ~ ~ 1
-scoreboard players set @s[tag=caught_by_boo_radar] HideTime 600

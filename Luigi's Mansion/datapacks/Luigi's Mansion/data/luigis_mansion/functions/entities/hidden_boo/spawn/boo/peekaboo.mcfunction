@@ -1,1 +1,1 @@
-execute if entity @s[tag=peekaboo] run function luigis_mansion:spawn_entities/boo/peekaboo
+execute if entity @s[tag=peekaboo] run function luigis_mansion:spawn_entities/ghost/boo/peekaboo

@@ -7,7 +7,6 @@
         "luigis_mansion:room/normal/ceramics_studio/reset/box_3",
         "luigis_mansion:room/normal/ceramics_studio/reset/box_4",
         "luigis_mansion:room/normal/ceramics_studio/reset/chair",
-        "luigis_mansion:room/normal/ceramics_studio/reset/chest",
         "luigis_mansion:room/normal/ceramics_studio/reset/crate_1",
         "luigis_mansion:room/normal/ceramics_studio/reset/crate_2",
         "luigis_mansion:room/normal/ceramics_studio/reset/crate_3",
@@ -32,6 +31,7 @@
         "luigis_mansion:room/normal/ceramics_studio/reset/jar_7",
         "luigis_mansion:room/normal/ceramics_studio/reset/jar_8",
         "luigis_mansion:room/normal/ceramics_studio/reset/lamp",
+        "luigis_mansion:room/normal/ceramics_studio/reset/room_clear_chest",
         "luigis_mansion:room/normal/ceramics_studio/reset/table"
     ]
 }

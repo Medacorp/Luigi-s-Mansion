@@ -1,3 +1,4 @@
+data modify storage luigis_mansion:data entity set value {scan_message:{sender:"me",message:'{"translate":"luigis_mansion:message.madame_clairvoya.scan"}'},can_talk_to:1b}
 execute positioned 740.0 10.5 -29 rotated -90 0 run function luigis_mansion:spawn_entities/portrait_ghost/madame_clairvoya
 execute positioned 740.0 10.5 -29 run scoreboard players set @e[tag=madame_clairvoya,distance=..0.7,limit=1] ClairvoyaSpoke 0
 execute positioned 740.0 10.5 -29 if data storage luigis_mansion:data current_state.current_data.technical_data{shown_marios_hat:1b} run scoreboard players add @e[tag=madame_clairvoya,distance=..0.7,limit=1] ClairvoyaSpoke 1

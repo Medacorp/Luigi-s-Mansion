@@ -1,2 +1,2 @@
-execute if entity @s[tag=fight] run function luigis_mansion:entities/boolossus/tick/fight/normal
-execute if entity @s[tag=!fight,tag=!split] run function luigis_mansion:entities/boolossus/tick/balcony/normal
+execute at @s[scores={Room=53}] run function luigis_mansion:entities/boolossus/tick/balcony/normal
+execute at @s[scores={Room=75}] run function luigis_mansion:entities/boolossus/tick/fight/normal

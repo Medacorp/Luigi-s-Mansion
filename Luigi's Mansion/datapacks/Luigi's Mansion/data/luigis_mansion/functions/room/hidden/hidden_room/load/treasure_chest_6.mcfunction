@@ -1,0 +1,3 @@
+data modify storage luigis_mansion:data furniture set value {can_hide_boo:1b,sound:0,searchable:["hand","vacuum"],scan_message:'{"translate":"luigis_mansion:message.player.scan_furniture.11"}'}
+execute unless data storage luigis_mansion:data current_state.current_data{money_spawned:["hidden_room_treasure_chest_6"]} run data modify storage luigis_mansion:data furniture.loot set value {name:"hidden_room_treasure_chest_6",contents:{luigis_mansion:{gold_coin:15,bill:15}}}
+execute positioned 739 13 -19.0 rotated -90 0 run function luigis_mansion:spawn_furniture/treasure_chest/small

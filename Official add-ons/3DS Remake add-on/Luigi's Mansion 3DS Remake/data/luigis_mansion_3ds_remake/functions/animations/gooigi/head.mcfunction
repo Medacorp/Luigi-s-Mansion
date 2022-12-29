@@ -38,6 +38,7 @@ execute if entity @s[tag=!stop_model] store result entity @s Pose.Head[0] float 
 scoreboard players reset #temp Time
 
 execute at @s[tag=yelling] run function luigis_mansion_3ds_remake:animations/gooigi/wave/head
+execute at @s[tag=revive] run function luigis_mansion_3ds_remake:animations/gooigi/revive/head
 execute at @s[tag=nod] run function luigis_mansion_3ds_remake:animations/gooigi/nod/head
 execute at @s[tag=thinking] run function luigis_mansion_3ds_remake:animations/gooigi/thinking/head
 execute at @s[tag=sigh] run function luigis_mansion_3ds_remake:animations/gooigi/sigh/head

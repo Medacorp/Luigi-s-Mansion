@@ -32,6 +32,10 @@ execute if entity @s[tag=!was_inspecting] if data storage luigis_mansion:data lu
 execute if entity @s[tag=was_inspecting] unless data storage luigis_mansion:data luigi{tags:["inspect"]} run function luigis_mansion:animations/luigi/reset_pose
 execute if entity @s[tag=!was_looking] if data storage luigis_mansion:data luigi{tags:["look"]} run function luigis_mansion:animations/luigi/reset_pose
 execute if entity @s[tag=was_looking] unless data storage luigis_mansion:data luigi{tags:["look"]} run function luigis_mansion:animations/luigi/reset_pose
+execute if entity @s[tag=!was_talking] if data storage luigis_mansion:data luigi{tags:["talk_animation"]} run function luigis_mansion:animations/luigi/reset_pose
+execute if entity @s[tag=was_talking] unless data storage luigis_mansion:data luigi{tags:["talk_animation"]} run function luigis_mansion:animations/luigi/reset_pose
+execute if entity @s[tag=!was_reviving] if data storage luigis_mansion:data luigi{tags:["revive"]} run function luigis_mansion:animations/luigi/reset_pose
+execute if entity @s[tag=was_reviving] unless data storage luigis_mansion:data luigi{tags:["revive"]} run function luigis_mansion:animations/luigi/reset_pose
 execute if entity @s[tag=!was_pulling_open_door] unless entity @s[tag=!right_arm,tag=!left_arm] if data storage luigis_mansion:data luigi{tags:["pull_open_door"]} run function luigis_mansion:animations/luigi/reset_pose
 execute if entity @s[tag=was_pulling_open_door] unless entity @s[tag=!right_arm,tag=!left_arm] unless data storage luigis_mansion:data luigi{tags:["pull_open_door"]} run function luigis_mansion:animations/luigi/reset_pose
 execute if entity @s[tag=!was_pushing_open_door] unless entity @s[tag=!right_arm,tag=!left_arm] if data storage luigis_mansion:data luigi{tags:["push_open_door"]} run function luigis_mansion:animations/luigi/reset_pose
@@ -44,6 +48,7 @@ execute if entity @s[tag=!was_pulling_unlock_door] unless entity @s[tag=!right_a
 execute if entity @s[tag=was_pulling_unlock_door] unless entity @s[tag=!right_arm,tag=!left_arm] unless data storage luigis_mansion:data luigi{tags:["pull_unlock_door"]} run function luigis_mansion:animations/luigi/reset_pose
 execute if entity @s[tag=!was_pushing_unlock_door] unless entity @s[tag=!right_arm,tag=!left_arm] if data storage luigis_mansion:data luigi{tags:["push_unlock_door"]} run function luigis_mansion:animations/luigi/reset_pose
 execute if entity @s[tag=was_pushing_unlock_door] unless entity @s[tag=!right_arm,tag=!left_arm] unless data storage luigis_mansion:data luigi{tags:["push_unlock_door"]} run function luigis_mansion:animations/luigi/reset_pose
+execute store result score @s PoltergustTime run data get storage luigis_mansion:data luigi.poltergust_time
 execute store result score @s KnockbackType run data get storage luigis_mansion:data luigi.animation
 execute unless score @s ScareType = @s KnockbackType run function luigis_mansion:animations/luigi/reset_pose
 data modify entity @s Tags append from storage luigis_mansion:data luigi.tags[]
@@ -57,6 +62,7 @@ tag @s[tag=inspect] remove sneak_pos
 tag @s[tag=look] remove sneak_pos
 tag @s[tag=game_boy_horror] remove sneak_pos
 tag @s[tag=inspect] remove sneak_pos
+tag @s[tag=revive] remove sneak_pos
 tag @s[tag=pull_open_door] remove sneak_pos
 tag @s[tag=push_open_door] remove sneak_pos
 tag @s[tag=pull_locked_door] remove sneak_pos
@@ -72,6 +78,7 @@ tag @s[tag=enthusiastic] remove low_health
 tag @s[tag=answer_phone] remove low_health
 tag @s[tag=inspect] remove low_health
 tag @s[tag=look] remove low_health
+tag @s[tag=revive] remove low_health
 tag @s[tag=game_boy_horror] remove low_health
 tag @s[tag=inspect] remove low_health
 tag @s[tag=pull_open_door] remove low_health
@@ -162,6 +169,12 @@ tag @s[tag=inspect] remove inspect
 tag @s[tag=look] add was_looking
 tag @s[tag=!look] remove was_looking
 tag @s[tag=look] remove look
+tag @s[tag=talk_animation] add was_talking
+tag @s[tag=!talk_animation] remove was_talking
+tag @s[tag=talk_animation] remove talk_animation
+tag @s[tag=revive] add was_reviving
+tag @s[tag=!revive] remove was_reviving
+tag @s[tag=revive] remove revive
 tag @s[tag=left_door] remove left_door
 tag @s[tag=push_open_door] add was_pushing_open_door
 tag @s[tag=!push_open_door] remove was_pushing_open_door
@@ -190,5 +203,7 @@ tag @s[tag=stop_model] remove stop_model
 tag @s remove dark_room
 tag @s remove flashlight
 tag @s remove moved
+tag @s remove player
+tag @s remove poltergust_grabbed
 execute unless entity @a[tag=this_luigi,scores={Shrunk=1..},limit=1] run tag @s add found_owner
 execute if entity @a[tag=this_luigi,scores={Shrunk=1..},limit=1] run tag @s add found_shrunk_owner

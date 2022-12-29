@@ -1,0 +1,6 @@
+{
+	"parent": "luigis_mansion:entity/helicopter_mobile_mirrored",
+	"textures": {
+		"0": "luigis_mansion_3ds_remake:block/helicopter_mobile"
+	}
+}

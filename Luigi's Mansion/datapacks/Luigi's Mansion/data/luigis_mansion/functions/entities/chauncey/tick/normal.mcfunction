@@ -1,10 +1,11 @@
-execute if entity @s[tag=!fight,tag=!vanish] positioned ~ ~1 ~ run function luigis_mansion:entities/chauncey/tick/nursery/normal
-execute if entity @s[tag=fight,tag=!vanish] run function luigis_mansion:entities/chauncey/tick/fight/normal
+execute at @s[scores={Room=10},tag=!vanish] positioned ~ ~1 ~ run function luigis_mansion:entities/chauncey/tick/nursery/normal
+execute at @s[scores={Room=73},tag=!vanish] run function luigis_mansion:entities/chauncey/tick/fight/normal
 
-tag @s[tag=vanish,tag=fight] add disappear
-tag @s[tag=vanish,tag=fight] remove vanish
+tag @s[tag=vanish,scores={Room=73}] add disappear
+tag @s[tag=vanish,scores={Room=73}] remove vanish
 
-execute if entity @s[tag=attack] run function luigis_mansion:entities/chauncey/attack
+execute if entity @s[scores={Room=10},tag=attack] run function luigis_mansion:entities/chauncey/attack
+execute if entity @s[scores={Room=73},tag=attack] run function luigis_mansion:entities/chauncey/fake_attack
 execute if entity @s[tag=!attack,tag=laugh] run function luigis_mansion:entities/chauncey/laugh
 execute if entity @s[tag=!attack,tag=complain] run function luigis_mansion:entities/chauncey/complain
 execute at @s[tag=sleep] run function luigis_mansion:animations/chauncey/sleep

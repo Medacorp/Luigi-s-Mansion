@@ -1,1 +1,1 @@
-execute if entity @s[tag=booris] run function luigis_mansion:spawn_entities/boo/booris
+execute if entity @s[tag=booris] run function luigis_mansion:spawn_entities/ghost/boo/booris

@@ -1,0 +1,3 @@
+execute if entity @s[scores={FurnitureSizeW=1..}] run function luigis_mansion:items/poltergust_3000/effect_on_furniture/collision_box_check
+execute if entity @s[scores={FurnitureSizeF=1..}] run function luigis_mansion:items/poltergust_3000/effect_on_furniture/collision_rotated_box_check
+execute if entity @s[scores={FurnitureRadius=1..}] run function luigis_mansion:items/poltergust_3000/effect_on_furniture/collision_radius_check

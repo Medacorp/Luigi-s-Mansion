@@ -2,7 +2,6 @@
     "values": [
         "luigis_mansion:room/hidden/kitchen/reset/unload",
         "#luigis_mansion:room/hidden/kitchen/turn_lights/off",
-        "luigis_mansion:room/hidden/kitchen/reset/chest",
         "luigis_mansion:room/hidden/kitchen/reset/closet",
         "luigis_mansion:room/hidden/kitchen/reset/dish_washer",
         "luigis_mansion:room/hidden/kitchen/reset/fridge",
@@ -13,6 +12,7 @@
         "luigis_mansion:room/hidden/kitchen/reset/painting_1",
         "luigis_mansion:room/hidden/kitchen/reset/painting_2",
         "luigis_mansion:room/hidden/kitchen/reset/painting_3",
+        "luigis_mansion:room/hidden/kitchen/reset/room_clear_chest",
         "luigis_mansion:room/hidden/kitchen/reset/shelf_1",
         "luigis_mansion:room/hidden/kitchen/reset/shelf_2",
         "luigis_mansion:room/hidden/kitchen/reset/shelf_3",

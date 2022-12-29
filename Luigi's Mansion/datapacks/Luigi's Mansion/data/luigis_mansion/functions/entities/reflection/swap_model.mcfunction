@@ -1,0 +1,3 @@
+execute if data entity @s ArmorItems[3].tag.mirror run data modify entity @s ArmorItems[3] merge from entity @s ArmorItems[3].tag.mirror
+execute if data entity @s HandItems[0].tag.mirror run data modify entity @s HandItems[0] merge from entity @s HandItems[0].tag.mirror
+execute if data entity @s HandItems[1].tag.mirror run data modify entity @s HandItems[1] merge from entity @s HandItems[1].tag.mirror

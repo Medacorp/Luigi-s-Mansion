@@ -3,8 +3,8 @@
 	    "luigis_beta_mansion:room/original/study/load/set_loaded",
         "luigis_beta_mansion:room/original/study/load/lights",
         "luigis_beta_mansion:room/original/study/load/doors",
-        "luigis_beta_mansion:room/original/study/load/chest",
         "luigis_beta_mansion:room/original/study/load/fire",
-        "luigis_beta_mansion:room/original/study/load/rocking_chair"
+        "luigis_beta_mansion:room/original/study/load/rocking_chair",
+        "luigis_beta_mansion:room/original/study/load/room_clear_chest"
 	]
 }

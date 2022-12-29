@@ -1,10 +1,3 @@
+data modify storage luigis_mansion:data entity set value {appear_type:"none",attack_type:"basher",disappear_on_vanish:1b,health:1000,speed:20,flee_speed:20,vanish_time:-1,loot:{},damage:{attack:10},training_room_score:3}
 function luigis_mansion:spawn_entities/ghost/speedy_spirit
-tag @e[distance=..1,tag=hidden,limit=1] add no_appear
-tag @e[distance=..1,tag=hidden,limit=1] add basher
-tag @e[distance=..1,tag=hidden,limit=1] add disappear_on_vanish
-scoreboard players set @e[distance=..1,tag=hidden,limit=1] Health 1000
-scoreboard players set @e[distance=..1,tag=hidden,limit=1] LastHealth 1000
-scoreboard players set @e[distance=..1,tag=hidden,limit=1] Move 20
-scoreboard players set @e[distance=..1,tag=hidden,limit=1] MoveFlee 20
-scoreboard players set @e[distance=..1,tag=hidden,limit=1] GhostCaught 3
 scoreboard players set #training_room Selected 1

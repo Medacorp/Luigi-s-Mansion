@@ -990,6 +990,15 @@
         ],
         "subtitle": "luigis_mansion:subtitles.entity.bowser.attack"
     },
+    "entity.ceiling_surprise.attack": {
+        "sounds": [
+            {
+                "name": "luigis_mansion:entity/ceiling_ghost/attack",
+                "stream": false
+            }
+        ],
+        "subtitle": "luigis_mansion:subtitles.entity.ceiling_surprise.attack"
+    },
     "entity.ceiling_surprise.complain": {
         "sounds": [
             {
@@ -4688,6 +4697,15 @@
         ],
         "subtitle": "luigis_mansion:subtitles.entity.player.flee"
     },
+    "entity.player.grab_poltergust": {
+        "sounds": [
+            {
+                "name": "luigis_mansion:entity/player/grab_poltergust",
+                "stream": false
+            }
+        ],
+        "subtitle": "luigis_mansion:subtitles.entity.player.grab_poltergust"
+    },
     "entity.player.grabbed.high_health": {
         "sounds": [
             {
@@ -6561,6 +6579,15 @@
         ],
         "subtitle": "luigis_mansion:subtitles.entity.player.punch"
     },
+    "entity.player.put_poltergust_away": {
+        "sounds": [
+            {
+                "name": "luigis_mansion:entity/player/put_poltergust_away",
+                "stream": false
+            }
+        ],
+        "subtitle": "luigis_mansion:subtitles.entity.player.put_poltergust_away"
+    },
     "entity.player.recover.high_health": {
         "sounds": [
             {
@@ -6587,6 +6614,24 @@
             }
         ],
         "subtitle": "luigis_mansion:subtitles.entity.player.recover"
+    },
+    "entity.player.revive.high_health": {
+        "sounds": [
+            {
+                "name": "luigis_mansion:entity/player/revive/high_health",
+                "stream": false
+            }
+        ],
+        "subtitle": "luigis_mansion:subtitles.entity.player.revive"
+    },
+    "entity.player.revive.low_health": {
+        "sounds": [
+            {
+                "name": "luigis_mansion:entity/player/revive/low_health",
+                "stream": false
+            }
+        ],
+        "subtitle": "luigis_mansion:subtitles.entity.player.revive"
     },
     "entity.player.scare.high_health": {
         "sounds": [
@@ -6763,6 +6808,32 @@
             }
         ],
         "subtitle": "luigis_mansion:subtitles.entity.player.slip"
+    },
+    "entity.player.talk.high_health": {
+        "sounds": [
+            {
+                "name": "luigis_mansion:entity/player/talk/high_health1",
+                "stream": false
+            },
+            {
+                "name": "luigis_mansion:entity/player/talk/high_health2",
+                "stream": false
+            }
+        ],
+        "subtitle": "luigis_mansion:subtitles.entity.player.talk"
+    },
+    "entity.player.talk.low_health": {
+        "sounds": [
+            {
+                "name": "luigis_mansion:entity/player/talk/low_health1",
+                "stream": false
+            },
+            {
+                "name": "luigis_mansion:entity/player/talk/low_health2",
+                "stream": false
+            }
+        ],
+        "subtitle": "luigis_mansion:subtitles.entity.player.cry"
     },
     "entity.player.whistle.1": {
         "sounds": [
@@ -8013,6 +8084,15 @@
             }
         ],
         "subtitle": "luigis_mansion:subtitles.entity.speedy_spirit.flee"
+    },
+    "entity.speedy_spirit.complain": {
+        "sounds": [
+            {
+                "name": "luigis_mansion:entity/ghost/complain",
+                "stream": false
+            }
+        ],
+        "subtitle": "luigis_mansion:subtitles.entity.speedy_spirit.complain"
     },
     "entity.speedy_spirit.complain_basher": {
         "sounds": [

@@ -1,1 +1,0 @@
-execute if block 742 2 -59 minecraft:trapped_chest unless block 742 2 -59 minecraft:trapped_chest{LootTable:"luigis_mansion:search"} run function luigis_mansion_3ds_remake:room/hidden/cellar/search/chest

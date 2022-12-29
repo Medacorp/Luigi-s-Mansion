@@ -1,1 +1,0 @@
-function luigis_mansion:spawn_entities/item/blue_sapphire

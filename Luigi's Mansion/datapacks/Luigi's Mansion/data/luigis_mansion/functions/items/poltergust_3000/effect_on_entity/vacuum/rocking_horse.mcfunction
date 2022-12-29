@@ -1,1 +1,0 @@
-tag @s[tag=rocking_horse,tag=!battle] add in_vacuum

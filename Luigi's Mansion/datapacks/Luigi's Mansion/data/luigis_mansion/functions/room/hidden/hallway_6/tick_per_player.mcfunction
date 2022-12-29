@@ -5,6 +5,6 @@ tag @s add seen_room_name
 
 execute if data storage luigis_mansion:data current_state.current_data.rooms.hallway_6{seen:0b} run function luigis_mansion:room/hidden/hallway_6/set_seen
 
-execute if entity @s[x=669.5,y=11,z=7.5,distance=..4] if data storage luigis_mansion:data current_state.current_data.obtained_keys{courtyard:1b} run function luigis_mansion:room/hidden/hallway_6/clear_blockade
+execute if entity @s[x=669.5,y=11,z=7.5,distance=..4] if data storage luigis_mansion:data current_state.current_data{obtained_keys:["courtyard"]} run function luigis_mansion:room/hidden/hallway_6/clear_blockade
 
 scoreboard players set @s RoomNoise 0

@@ -1,0 +1,2 @@
+execute store result score @s ElementalNr run data get storage luigis_mansion:data elemental_source_nr
+execute store result storage luigis_mansion:data elemental_source_nr int 1 run scoreboard players add @s ElementalNr 1

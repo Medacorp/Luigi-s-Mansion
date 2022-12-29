@@ -1,3 +1,5 @@
-execute positioned 695 21 -77 run function luigis_mansion:spawn_entities/ghost/empty_marker
-execute unless data storage luigis_mansion:data current_state.current_data.money_spawned{sealed_room_speedy_spirit:1b} positioned 707 20 -80 run function luigis_mansion:spawn_entities/ghost/speedy_spirit
+execute positioned 696.0 21 -77.0 run function luigis_mansion:spawn_entities/ghost/empty_marker
+execute unless data storage luigis_mansion:data current_state.current_data{money_spawned:["sealed_room_speedy_spirit"]} run function luigis_mansion:entities/speedy_spirit/give_money/green_emerald
+execute unless data storage luigis_mansion:data current_state.current_data{money_spawned:["sealed_room_speedy_spirit"]} run data modify storage luigis_mansion:data entity.loot.name set value "sealed_room_speedy_spirit"
+execute unless data storage luigis_mansion:data current_state.current_data{money_spawned:["sealed_room_speedy_spirit"]} positioned 708.0 18.6 -80 run function luigis_mansion:spawn_entities/ghost/speedy_spirit
 scoreboard players set #sealed_room Wave 1

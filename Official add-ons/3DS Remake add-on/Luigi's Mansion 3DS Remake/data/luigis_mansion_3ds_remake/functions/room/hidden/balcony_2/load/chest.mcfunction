@@ -1,1 +1,0 @@
-execute if data storage luigis_mansion:data current_state.current_data.obtained_keys{hallway_18:1b} run scoreboard players set #balcony_2_chest Searched 1

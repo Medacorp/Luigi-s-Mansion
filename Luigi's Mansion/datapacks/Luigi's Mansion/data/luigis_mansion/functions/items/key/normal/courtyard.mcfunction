@@ -1,4 +1,4 @@
-data modify storage luigis_mansion:data current_state.current_data.obtained_keys merge value {courtyard:1b}
+data modify storage luigis_mansion:data current_state.current_data.obtained_keys append value "courtyard"
 scoreboard players set @a[tag=same_room,tag=!looking_at_map,nbt={Inventory:[{tag:{luigis_mansion:{id:"luigis_mansion:game_boy_horror"}}}]}] OpenMapFocus 13
 scoreboard players set @a GBHCall 8
 execute as @a run function luigis_mansion:other/music/set/game_boy_horror_calling

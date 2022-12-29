@@ -1,13 +1,13 @@
 execute unless score #hallway_2 Ticking matches 1 run function #luigis_mansion:room/hidden/hallway_2/load
-execute as @a[gamemode=!spectator,x=722,y=17,z=-65,dx=8,dy=10,dz=38] unless entity @s[scores={Room=7}] run scoreboard players operation @s LastRoom = @s Room
-execute as @e[tag=!spectator,x=722,y=17,z=-65,dx=8,dy=10,dz=38] unless entity @s[tag=ghost,tag=appear] unless entity @s[tag=ghost,tag=vanish] run scoreboard players set @s Room 7
+execute as @a[gamemode=!spectator,x=722,y=17,z=-65,dx=8,dy=9,dz=38] unless entity @s[scores={Room=7}] run scoreboard players operation @s LastRoom = @s Room
+execute as @e[tag=!spectator,x=722,y=17,z=-65,dx=8,dy=9,dz=38] unless entity @s[tag=ghost,tag=appear] unless entity @s[tag=ghost,tag=vanish] run scoreboard players set @s Room 7
 scoreboard players set #temp Room 7
 tag @e[tag=ghost,scores={Room=7}] add no_hidden_move
 
 execute as @a[gamemode=!spectator,scores={Room=7}] run function luigis_mansion:room/hidden/hallway_2/tick_per_player
 
 execute as @e[tag=eternal_gold_coin,scores={Room=7}] run scoreboard players add #temp Wave 1
-execute if score #temp Wave matches ..10 run data modify storage luigis_mansion:data current_state.current_data.money_spawned merge value {hallway_2_money:1b}
+execute if score #temp Wave matches ..10 unless data storage luigis_mansion:data current_state.current_data{money_spawned:["hallway_2_money"]} run data modify storage luigis_mansion:data current_state.current_data.money_spawned append value "hallway_2_money"
 scoreboard players reset #temp Wave
 
 function #luigis_mansion:room/hidden/hallway_2/interactions/room

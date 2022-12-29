@@ -8,7 +8,7 @@ execute unless entity @s[scores={Boos=1000..}] run scoreboard players operation 
 execute unless entity @s[scores={Boos=1000..}] run scoreboard players add @s Boos 14
 scoreboard players add @s[scores={Boos=1000..}] Boos 1
 scoreboard players set @s[scores={Boos=560..999}] Boos 1000
-execute at @s[scores={Boos=1..1000}] facing entity @e[tag=same_room,tag=!spectator,sort=nearest,limit=1] feet run teleport @s ~ ~ ~ ~ ~
+execute at @s[scores={Boos=1..1000}] facing entity @e[tag=same_room,tag=!spectator,tag=player,sort=nearest,limit=1] feet run teleport @s ~ ~ ~ ~ ~
 execute if entity @s[scores={Boos=1..999,Sound=0}] run playsound luigis_mansion:entity.boo.laugh hostile @a[tag=same_room] ~ ~ ~ 1
 scoreboard players set @s[scores={Boos=1..999,Sound=0}] Sound 20
 execute at @s[scores={Boos=1..999}] run function luigis_mansion:animations/boo/laugh

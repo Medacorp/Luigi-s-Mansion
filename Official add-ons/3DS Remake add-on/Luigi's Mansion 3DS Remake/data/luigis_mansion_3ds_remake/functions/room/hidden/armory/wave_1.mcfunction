@@ -1,5 +1,5 @@
-execute positioned 761 29 74 run function luigis_mansion:spawn_entities/ghost/flash
-execute positioned 747 29 71 run function luigis_mansion:spawn_entities/ghost/flash
+execute positioned 761.0 29 74.0 run function luigis_mansion:spawn_entities/ghost/flash
+execute positioned 747.7 29 71.0 run function luigis_mansion:spawn_entities/ghost/flash
 execute positioned 757 29 72 run function luigis_mansion:spawn_entities/ghost/empty_marker
 execute positioned 759 29 67 run function luigis_mansion:spawn_entities/ghost/empty_marker
 execute positioned 753 29 61 run function luigis_mansion:spawn_entities/ghost/empty_marker

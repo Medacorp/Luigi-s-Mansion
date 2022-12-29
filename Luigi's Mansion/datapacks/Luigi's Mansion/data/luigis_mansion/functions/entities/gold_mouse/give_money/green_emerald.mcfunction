@@ -1,0 +1,4 @@
+execute unless data storage luigis_mansion:data entity.loot run data modify storage luigis_mansion:data entity.loot set from storage luigis_mansion:data current_state.current_data.ghosts.gold_mouse.loot
+execute store result score #temp Time run data get storage luigis_mansion:data entity.loot.contents.luigis_mansion.green_emerald
+execute store result storage luigis_mansion:data entity.loot.contents.luigis_mansion.green_emerald int 1 run scoreboard players add #temp Time 1
+scoreboard players reset #temp Time

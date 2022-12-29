@@ -7,14 +7,10 @@ execute if entity @s[scores={AnimationProg=55..124}] store result entity @s Pose
 execute if entity @s[scores={AnimationProg=125..134}] store result entity @s Pose.Head[2] float 1 run scoreboard players add #temp Time 2
 execute if entity @s[scores={AnimationProg=135..154}] store result entity @s Pose.Head[2] float 1 run scoreboard players add #temp Time 1
 scoreboard players reset #temp Time
-data modify entity @s[scores={AnimationProg=1},tag=boo] ArmorItems[3].tag merge value {CustomModelData:100}
-data modify entity @s[scores={AnimationProg=1},tag=boolossus,tag=split] ArmorItems[3].tag merge value {CustomModelData:63}
-data modify entity @s[scores={AnimationProg=1},tag=king_boo] ArmorItems[3].tag merge value {CustomModelData:87}
-data modify entity @s[scores={AnimationProg=1}] HandItems[0].id set value "minecraft:stone_button"
-data modify entity @s[scores={AnimationProg=1}] HandItems[1].id set value "minecraft:stone_button"
-data modify entity @s[scores={AnimationProg=160},tag=boo] ArmorItems[3].tag merge value {CustomModelData:99}
-data modify entity @s[scores={AnimationProg=160},tag=boolossus,tag=split] ArmorItems[3].tag merge value {CustomModelData:48}
-data modify entity @s[scores={AnimationProg=160},tag=king_boo] ArmorItems[3].tag merge value {CustomModelData:86}
-data modify entity @s[scores={AnimationProg=160}] HandItems[0].id set value "minecraft:diamond_pickaxe"
-data modify entity @s[scores={AnimationProg=160}] HandItems[1].id set value "minecraft:diamond_pickaxe"
+data modify entity @s[scores={AnimationProg=1}] ArmorItems[3] merge from entity @s ArmorItems[3].tag.variants.attacking
+data modify entity @s[scores={AnimationProg=1}] HandItems[0].id set from entity @s ArmorItems[3].tag.invisible
+data modify entity @s[scores={AnimationProg=1}] HandItems[1].id set from entity @s ArmorItems[3].tag.invisible
+data modify entity @s[scores={AnimationProg=160}] ArmorItems[3] merge from entity @s ArmorItems[3].tag.variants.default
+data modify entity @s[scores={AnimationProg=160}] HandItems[0].id set from entity @s ArmorItems[3].tag.visible
+data modify entity @s[scores={AnimationProg=160}] HandItems[1].id set from entity @s ArmorItems[3].tag.visible
 scoreboard players set @s[scores={AnimationProg=160}] AnimationProg 0

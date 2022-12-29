@@ -26,7 +26,7 @@ To define a new mansion, you need to set the mansion_type value, mansion_data_in
 * `#multiply_hurt` (int): Multiplies base damage taken by this value where 100 = 1x. Does not affect non-mansion rooms (there values is always treated as 100).
 * `#multiply_damage` (int): Multiplies base damage dealt by this value where 100 = 1x. Does not affect non-mansion rooms (there values is always treated as 100).
 * `#changing_max_health` (bool): Whether players' max health is displayed. ("<Health>/<MAX> Health")
-* `#heart_coin_count` (int): The amount of gold coins needed for small hearts to change from healing 10 HP to 20 HP. 0 disables small hearts altogether. Does not affect non-mansion rooms (there values is always treated as 0).
+* `#heart_money_count` (int): The amount of gold coins needed for small hearts to change from healing 10 HP to 20 HP. 0 disables small hearts altogether. Does not affect non-mansion rooms (there values is always treated as 0).
 * `#radar_type` (int): Defines what type of radar the Gameboy Horror has.
 * `#gbh_clock` (int): The current time shown by the Gameboy Horror.
 * `#gbh_clock_increase` (int): The `#gbh_clock` value increases by this value every tick, as long as the `in_mansion_time` value also increases. (When 0 the clock is not shown.)

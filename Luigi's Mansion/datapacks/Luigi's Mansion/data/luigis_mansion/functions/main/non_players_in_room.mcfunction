@@ -1,6 +1,5 @@
 execute store result score #temp Room run scoreboard players get @s Room
-execute as @a run function #luigis_mansion:get_same_room
-execute as @e[tag=game_boy_horror_location] run function #luigis_mansion:get_same_room
+execute as @e run function #luigis_mansion:get_same_room
 scoreboard players reset #temp Room
 
 execute if entity @s[tag=first_key,tag=play] run function luigis_mansion:dialog/first_key
@@ -19,5 +18,8 @@ scoreboard players reset @s LightY
 scoreboard players reset @s LightZ
 scoreboard players reset @s MirrorX
 scoreboard players reset @s MirrorZ
+
+execute if entity @s[tag=!furniture,tag=debug_entity] run function luigis_mansion:main/debug
+execute if entity @s[tag=!furniture,tag=!debug_entity] if score #debug_entities Selected matches 1.. run function luigis_mansion:main/debug
 
 tag @e[tag=same_room] remove same_room

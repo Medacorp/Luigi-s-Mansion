@@ -1,4 +1,3 @@
-tag @s remove scanning_player
 execute if entity @s[tag=scanning] unless entity @s[scores={WarpTime=95..96}] run function luigis_mansion:items/game_boy_horror/freeze_player
 execute if entity @a[limit=1,scores={GBHCall=1..}] if entity @s[tag=!warp] unless entity @s[scores={ScareType=2..}] run function luigis_mansion:items/game_boy_horror/freeze_player
 

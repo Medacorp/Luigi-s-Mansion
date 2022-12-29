@@ -1,4 +1,4 @@
-execute unless data storage luigis_mansion:data current_state.current_data.portrait_ghosts.clockwork_soldiers{loot_at_0:1b} run function luigis_mansion:entities/clockwork_soldier/drop_loot
+execute unless data entity @s ArmorItems[3].tag.loot{drop_at_0:1b} run function luigis_mansion:other/drop_loot
 execute if entity @s[tag=blue_clockwork_soldier] store result storage luigis_mansion:data current_state.current_data.portrait_ghosts.clockwork_soldiers.blue.health int 1 run scoreboard players set @s Health 0
 execute if entity @s[tag=blue_clockwork_soldier] store result storage luigis_mansion:data current_state.current_data.portrait_ghosts.clockwork_soldiers.blue.top_vacuum_damage int 1 run scoreboard players get @s TopVacuumDamage
 execute if entity @s[tag=green_clockwork_soldier] store result storage luigis_mansion:data current_state.current_data.portrait_ghosts.clockwork_soldiers.green.health int 1 run scoreboard players set @s Health 0

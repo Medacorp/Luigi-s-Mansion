@@ -1,1 +1,0 @@
-scoreboard players reset #armory_chest_6

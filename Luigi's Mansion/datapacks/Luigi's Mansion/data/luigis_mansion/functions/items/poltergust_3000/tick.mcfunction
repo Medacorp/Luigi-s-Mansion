@@ -20,6 +20,7 @@ tag @s remove poltergust_floor_sound
 tag @s remove poltergust_wall_sound
 execute if entity @s[tag=exploding_poltergust] run function luigis_mansion:items/poltergust_3000/explode
 execute unless entity @s[scores={IdleTime=..-1},tag=!idle] run tag @s[tag=!poltergust_malfunction,nbt={SelectedItem:{tag:{luigis_mansion:{id:"luigis_mansion:poltergust_3000"}}}}] add poltergust_selected
+execute if entity @s[nbt={Inventory:[{tag:{luigis_mansion:{id:"luigis_mansion:poltergust_3000",sync_element:1b}}}]}] run function luigis_mansion:items/poltergust_3000/sync_element
 tag @s[tag=!poltergust_selected] remove expelling
 scoreboard players set @s[tag=!poltergust_selected] VacuumErrors 0
 scoreboard players set @s[tag=!poltergust_selected] Pull 0
@@ -30,8 +31,8 @@ tag @s[tag=poltergust_selected,tag=!vacuuming_ghost,scores={UseItem=1..},tag=!to
 tag @s[tag=toggle_expelling] remove toggle_expelling
 scoreboard players set @s[scores={UseItem=1..},tag=poltergust_selected] UseItem 0
 tag @s remove vacuuming_ghost
-execute if entity @s[tag=!expelling,tag=poltergust_selected] positioned ~ ~0.5 ~ run function luigis_mansion:items/poltergust_3000/vacuuming
-execute if entity @s[tag=expelling,tag=poltergust_selected] positioned ~ ~0.5 ~ run function luigis_mansion:items/poltergust_3000/expelling
+execute if entity @s[tag=!expelling,tag=poltergust_selected,scores={PoltergustTime=11}] positioned ~ ~0.5 ~ run function luigis_mansion:items/poltergust_3000/vacuuming
+execute if entity @s[tag=expelling,tag=poltergust_selected,scores={PoltergustTime=11}] positioned ~ ~0.5 ~ run function luigis_mansion:items/poltergust_3000/expelling
 execute if entity @s[tag=vaporizing_ghost] as @e[tag=captured,tag=element_death] at @s run function luigis_mansion:items/poltergust_3000/vaporize
 tag @s remove vaporizing_ghost
 scoreboard players set @s[tag=!vacuuming_ghost] GhostCount 0

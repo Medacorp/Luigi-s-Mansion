@@ -1,6 +1,7 @@
 tag @e[tag=door,tag=!frame,type=minecraft:armor_stand,distance=..0.7,limit=1] add this_model
 
-execute if entity @s[scores={Health=..0},tag=!dead,tag=!captured] run function luigis_mansion:entities/door/drop_loot
+execute if entity @s[scores={Health=..0},tag=!dead,tag=!captured] run function luigis_mansion:other/drop_loot
+execute if entity @s[scores={Health=..0},tag=!dead,tag=!captured] run function luigis_mansion:entities/ghost/death_element
 
 execute if entity @s[tag=!burning,tag=!blockade,tag=!area_blockade] run data modify entity @e[tag=this_model,limit=1] HandItems[{tag:{}}].tag.Damage set value 11
 execute if entity @s[tag=burning] run data modify entity @e[tag=this_model,limit=1] HandItems[{tag:{}}].tag.Damage set value 12

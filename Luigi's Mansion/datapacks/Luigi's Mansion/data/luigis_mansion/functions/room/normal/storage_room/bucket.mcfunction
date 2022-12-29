@@ -1,7 +1,7 @@
-execute unless data storage luigis_mansion:data current_state.current_data.money_spawned{storage_room_bucket:1b} run function luigis_mansion:spawn_entities/item/gold_coin
-execute unless data storage luigis_mansion:data current_state.current_data.money_spawned{storage_room_bucket:1b} run function luigis_mansion:spawn_entities/item/gold_coin
-execute unless data storage luigis_mansion:data current_state.current_data.money_spawned{storage_room_bucket:1b} run function luigis_mansion:spawn_entities/item/gold_coin
-execute unless data storage luigis_mansion:data current_state.current_data.money_spawned{storage_room_bucket:1b} run function luigis_mansion:spawn_entities/item/gold_coin
-execute unless data storage luigis_mansion:data current_state.current_data.money_spawned{storage_room_bucket:1b} run function luigis_mansion:spawn_entities/item/gold_coin
-execute if data storage luigis_mansion:data current_state.current_data.money_spawned{storage_room_bucket:1b} run tag @e[tag=selected] add nothing
-data modify storage luigis_mansion:data current_state.current_data.money_spawned merge value {storage_room_bucket:1b}
+execute unless data storage luigis_mansion:data current_state.current_data{money_spawned:["storage_room_metal_bucket"]} run function luigis_mansion:spawn_entities/item/gold_coin
+execute unless data storage luigis_mansion:data current_state.current_data{money_spawned:["storage_room_metal_bucket"]} run function luigis_mansion:spawn_entities/item/gold_coin
+execute unless data storage luigis_mansion:data current_state.current_data{money_spawned:["storage_room_metal_bucket"]} run function luigis_mansion:spawn_entities/item/gold_coin
+execute unless data storage luigis_mansion:data current_state.current_data{money_spawned:["storage_room_metal_bucket"]} run function luigis_mansion:spawn_entities/item/gold_coin
+execute unless data storage luigis_mansion:data current_state.current_data{money_spawned:["storage_room_metal_bucket"]} run function luigis_mansion:spawn_entities/item/gold_coin
+execute if data storage luigis_mansion:data current_state.current_data{money_spawned:["storage_room_metal_bucket"]} run tag @e[tag=selected] add nothing
+execute unless data storage luigis_mansion:data current_state.current_data{money_spawned:["storage_room_metal_bucket"]} run data modify storage luigis_mansion:data current_state.current_data.money_spawned append value "storage_room_metal_bucket"

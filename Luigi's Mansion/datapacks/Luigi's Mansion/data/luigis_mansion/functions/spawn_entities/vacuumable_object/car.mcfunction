@@ -1,4 +1,4 @@
-summon minecraft:armor_stand ~ ~ ~ {CustomName:'{"translate":"luigis_mansion:entity.car"}',Invisible:1b,NoGravity:1b,Marker:1b,CustomNameVisible:0b,Invulnerable:1b,ArmorItems:[{},{},{},{id:"minecraft:diamond_pickaxe",Count:1b,tag:{Unbreakable:1b,Damage:4,CustomModelData:22}}],Pose:{Head:[0.0f,0.0f,1.01f]},Tags:["car","vacuumable_object","this_entity"],DisabledSlots:2039583}
+summon minecraft:armor_stand ~ ~ ~ {CustomName:'{"translate":"luigis_mansion:entity.car"}',Invisible:1b,NoGravity:1b,Marker:1b,CustomNameVisible:0b,Invulnerable:1b,ArmorItems:[{},{},{},{id:"minecraft:diamond_pickaxe",Count:1b,tag:{Unbreakable:1b,Damage:4,CustomModelData:22}}],Pose:{Head:[0.0f,0.0f,1.01f]},Tags:["car","affected_by_vacuum","vacuumable_object","this_entity"],DisabledSlots:2039583}
 execute as @e[tag=this_entity,limit=1] run teleport @s ~ ~ ~ ~ ~
 scoreboard players set @e[tag=this_entity,limit=1] EntitySizeW 14
 scoreboard players set @e[tag=this_entity,limit=1] EntitySizeH 8

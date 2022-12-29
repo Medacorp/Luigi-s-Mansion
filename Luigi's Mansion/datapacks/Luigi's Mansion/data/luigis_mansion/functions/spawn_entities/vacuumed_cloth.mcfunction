@@ -1,1 +1,1 @@
-summon minecraft:marker ~ ~ ~ {Tags:["captured","vacuumable"]}
+summon minecraft:marker ~ ~ ~ {Tags:["captured","vacuumable","affected_by_vacuum"]}

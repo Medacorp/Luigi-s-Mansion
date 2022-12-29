@@ -7,7 +7,7 @@ scoreboard players add @s DeathTime 1
 tag @s[scores={DeathTime=1}] add me
 execute if entity @s[scores={DeathTime=1}] as @a run function luigis_mansion:entities/ghost/find_vacuumers
 tag @s[scores={DeathTime=1}] remove me
-execute if entity @s[scores={DeathTime=1}] run scoreboard players operation @s KillerID = @p[tag=!spectator,tag=vacuuming_this_ghost] ID
+execute if entity @s[scores={DeathTime=1}] run scoreboard players operation @s KillerID = @p[tag=!spectator,tag=player,tag=vacuuming_this_ghost] ID
 execute if entity @s[scores={DeathTime=1}] run tag @a remove vacuuming_this_ghost
 
 scoreboard players operation #temp KillerID = @s KillerID
@@ -23,7 +23,8 @@ scoreboard players reset #temp HomeRot
 scoreboard players set @s[scores={DeathTime=1}] Move 0
 execute at @s run teleport @s ^ ^ ^-0.4
 
-execute at @s[scores={DeathTime=2,Health=-2147483648..},tag=!dont_drop_heart,tag=!dead,tag=!remove_from_existence] unless entity @s[scores={Room=..-1}] if entity @a[tag=killer,limit=1,scores={GhostCount=2..}] if score #heart_coin_count Selected matches 1.. run function luigis_mansion:spawn_entities/item/small_heart
+execute at @s[scores={DeathTime=2,Health=-2147483648..},tag=!dont_drop_heart,tag=!dead,tag=!remove_from_existence] unless entity @s[scores={Room=..-1}] if entity @a[tag=killer,limit=1,scores={GhostCount=2..}] if score #heart_money_count Selected matches 1.. run function luigis_mansion:spawn_entities/item/small_heart
+tag @e[tag=this_entity,limit=1] remove this_entity
 execute at @s[scores={DeathTime=1,Room=1..},tag=!dead,tag=!remove_from_existence] unless entity @s[scores={Health=-2147483648..}] run function luigis_mansion:entities/ghost/capture
 execute at @s[scores={DeathTime=2..,Room=1..,Health=-2147483648..},tag=!dead,tag=!remove_from_existence] if entity @a[tag=killer,distance=..0.7] run function luigis_mansion:entities/ghost/capture
 execute at @s[scores={DeathTime=2..,Room=-2},tag=!dead,tag=!remove_from_existence] if entity @a[tag=killer,distance=..0.7] run scoreboard players add #training_room GhostCaught 1

@@ -3,9 +3,10 @@
 	    "luigis_mansion:room/hidden/the_twins_room/load/set_loaded",
         "luigis_mansion:room/hidden/the_twins_room/load/lights",
         "luigis_mansion:room/hidden/the_twins_room/load/doors",
-        "luigis_mansion:room/hidden/the_twins_room/load/chest",
+        "luigis_mansion:room/hidden/the_twins_room/load/helicopter_mobile",
         "luigis_mansion:room/hidden/the_twins_room/load/painting_1",
         "luigis_mansion:room/hidden/the_twins_room/load/painting_2",
+        "luigis_mansion:room/hidden/the_twins_room/load/room_clear_chest",
         "luigis_mansion:room/hidden/the_twins_room/load/vacuumable",
         "luigis_mansion:room/hidden/the_twins_room/load/cobweb_1",
         "luigis_mansion:room/hidden/the_twins_room/load/cobweb_2"

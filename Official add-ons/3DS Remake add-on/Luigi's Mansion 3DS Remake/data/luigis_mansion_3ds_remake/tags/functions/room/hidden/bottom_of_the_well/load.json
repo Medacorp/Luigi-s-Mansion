@@ -1,6 +1,7 @@
 {
 	"values": [
 	    "luigis_mansion_3ds_remake:room/hidden/bottom_of_the_well/load/set_loaded",
-        "luigis_mansion_3ds_remake:room/hidden/bottom_of_the_well/load/lights"
+        "luigis_mansion_3ds_remake:room/hidden/bottom_of_the_well/load/lights",
+        "luigis_mansion_3ds_remake:room/hidden/bottom_of_the_well/load/room_clear_loot_dropper"
 	]
 }

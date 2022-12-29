@@ -1,3 +1,4 @@
+tag @s add player
 tag @s[tag=camera,gamemode=!spectator] remove spectator
 execute unless block ~ ~ ~ minecraft:air{loaded:0b} unless block ~-48 ~ ~ minecraft:air{loaded:0b} unless block ~48 ~ ~ minecraft:air{loaded:0b} unless block ~ ~ ~-48 minecraft:air{loaded:0b} unless block ~ ~ ~48 minecraft:air{loaded:0b} unless block ~48 ~ ~48 minecraft:air{loaded:0b} unless block ~48 ~ ~-48 minecraft:air{loaded:0b} unless block ~-48 ~ ~48 minecraft:air{loaded:0b} unless block ~-48 ~ ~-48 minecraft:air{loaded:0b} run function luigis_mansion:main/loaded_chunks
 execute if entity @s[scores={Jump=1..}] unless block ~ ~ ~ #minecraft:climbable run function luigis_mansion:main/prevent_jump
@@ -10,7 +11,8 @@ tag @s[tag=!loaded_chunk_triggered] remove loaded_chunks
 tag @s remove loaded_chunk_triggered
 
 scoreboard players operation #temp Room = @s Room
-execute as @e run function #luigis_mansion:get_same_room
+execute as @a run function #luigis_mansion:get_same_room
+execute as @e[tag=!model_piece,tag=!reflection,type=!minecraft:player] run function #luigis_mansion:get_same_room
 scoreboard players reset #temp Room
 
 function luigis_mansion:dialog/try
@@ -30,15 +32,17 @@ execute if entity @s[gamemode=spectator] run function luigis_mansion:entities/pl
 execute if entity @s[scores={Shrunk=1}] run function luigis_mansion:items/poison_mushroom/readd_inventory
 scoreboard players remove @s[scores={Shrunk=1..}] Shrunk 1
 
-scoreboard players set @s[tag=fix_health] Health 100
-tag @s remove fix_health
 execute if entity @s[tag=!joined] run function luigis_mansion:other/join_world
 execute unless entity @s[scores={Offline=0}] run function luigis_mansion:other/log_on
 execute if entity @s[scores={ChangedMansion=1}] run function luigis_mansion:entities/player/changed_mansion
 
 execute unless score @s PrevRoom = @s Room run tag @s remove seen_room_name
+execute unless score @s PrevRoom = @s Room if score #debug_messages Selected matches 1.. run tellraw @a {"translate":"luigis_mansion:message.debug.format","with":[{"translate":"luigis_mansion:message.debug","color":"gold"},{"translate":"luigis_mansion:message.debug.room_number","with":[{"selector":"@s"},{"score":{"name":"@s","objective":"PrevRoom"}},{"score":{"name":"@s","objective":"Room"}}]}]}
 scoreboard players operation @s PrevRoom = @s Room
 execute unless entity @s[scores={Room=1..}] run scoreboard players set @s LastFloor -2
+
+scoreboard players remove @s[scores={AttackerMemory=1..}] AttackerMemory 1
+execute if entity @s[scores={AttackerMemory=0}] run function luigis_mansion:entities/player/memory/clear_attacker
 
 scoreboard players set @s UseItem 0
 scoreboard players add @s[scores={SneakTime=1..}] SneakTime 1
@@ -77,9 +81,6 @@ tag @s[scores={Sneak=1..},tag=!looking_at_map] add sneaking
 scoreboard players set @s[scores={Sneak=1..}] Sneak 0
 tag @s[tag=walking,tag=sneak_pos] add sneaking
 tag @s[tag=walking,tag=sneak_pos] remove walking
-tag @s[tag=attacking] remove attacking
-tag @s[scores={Attack=1..}] add attacking
-scoreboard players set @s[scores={Attack=1..}] Attack 0
 
 execute if entity @a[tag=!same_room,tag=!looking_at_map,scores={Room=1..},limit=1] run scoreboard players set #freeze_timer Selected 0
 tag @e[tag=same_room] remove same_room

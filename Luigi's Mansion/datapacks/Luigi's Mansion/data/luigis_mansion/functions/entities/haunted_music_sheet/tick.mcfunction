@@ -1,4 +1,4 @@
-execute if entity @s[tag=dead] run function luigis_mansion:entities/haunted_music_sheet/drop_loot
+execute if entity @s[tag=dead] run function luigis_mansion:other/drop_loot
 execute if entity @s[tag=dead] run function luigis_mansion:entities/haunted_music_sheet/captured
 
 scoreboard players set @s[tag=fleeing] WaitTime 1

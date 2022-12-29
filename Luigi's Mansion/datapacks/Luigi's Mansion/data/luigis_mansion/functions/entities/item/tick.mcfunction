@@ -1,8 +1,6 @@
-execute unless entity @s[scores={ActionTime=0..}] if entity @s[tag=key,tag=!no_spawn_sound] run playsound luigis_mansion:item.key.spawn player @a ~ ~ ~ 1
 execute unless entity @s[scores={ActionTime=0..}] run scoreboard players set @s ActionTime 0
-execute if entity @s[tag=key,tag=!rotated,tag=!display] run function luigis_mansion:entities/item/key_rotate
 scoreboard players add @s SpawnTime 1
-tag @s[scores={SpawnTime=20}] add vacuumable
+tag @s[scores={SpawnTime=40}] add vacuumable
 tag @s[scores={SpawnTime=600},tag=!eternal] add dead
 tag @s remove item_is_pulled
 tag @s[scores={SpawnTime=..19}] add item_is_pulled

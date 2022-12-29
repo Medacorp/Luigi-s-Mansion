@@ -6,7 +6,7 @@ execute if entity @s[scores={Dialog=60..199}] as @a[tag=same_room,tag=!spectator
 execute if entity @s[scores={Dialog=200}] as @a[tag=same_room,tag=!spectator,tag=!stand_still,tag=!looking_at_map] run function luigis_mansion:entities/player/animation/set/stand_still
 execute if entity @s[scores={Dialog=100}] run teleport @s ~ ~ ~ -90 0
 execute if entity @s[scores={Dialog=200}] run summon minecraft:lightning_bolt ~ ~ ~
-execute if entity @s[scores={Dialog=200}] run function luigis_mansion:entities/bogmire/turn_visible
+execute if entity @s[scores={Dialog=200}] run function luigis_mansion:entities/ghost/turn_visible
 execute if entity @s[scores={Dialog=201}] positioned ~0.35 ~-1.43 ~ run function luigis_mansion:entities/bogmire/create_shadow_intro
 execute if entity @s[scores={Dialog=202}] positioned ~0.7 ~-1.43 ~ run function luigis_mansion:entities/bogmire/create_shadow_intro
 execute if entity @s[scores={Dialog=203}] positioned ~1.05 ~-1.43 ~ run function luigis_mansion:entities/bogmire/create_shadow_intro
@@ -50,7 +50,7 @@ execute if entity @s[scores={Dialog=240}] positioned ~14 ~ ~ run function luigis
 execute if entity @s[scores={Dialog=240}] as @a[tag=same_room] at @s facing entity @e[tag=bogmire,scores={Dialog=240},limit=1] feet rotated ~ 0 positioned ^ ^ ^1 run function luigis_mansion:entities/player/scare/normal
 execute if entity @s[scores={Dialog=240}] run tag @e[tag=bogmires_shadow] add vanish
 execute if entity @s[scores={Dialog=241..460}] run scoreboard players set @e[tag=black_bogmire,limit=1] SpawnTime 60
-execute if entity @s[scores={Dialog=320}] run function luigis_mansion:entities/bogmire/turn_invisible
+execute if entity @s[scores={Dialog=320}] run function luigis_mansion:entities/ghost/turn_invisible
 execute if entity @s[scores={Dialog=460}] as @a[tag=same_room,tag=!spectator,tag=!looking_at_map] run function luigis_mansion:entities/player/animation/set/none
 tag @s[scores={Dialog=460}] add intro_done
 scoreboard players reset @s[scores={Dialog=460}] Dialog

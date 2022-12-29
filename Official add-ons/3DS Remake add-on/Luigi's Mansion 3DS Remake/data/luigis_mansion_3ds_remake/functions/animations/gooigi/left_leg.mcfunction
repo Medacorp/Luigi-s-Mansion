@@ -18,6 +18,7 @@ execute if entity @s[tag=walking,tag=!stop_model] run function luigis_mansion_3d
 execute if entity @s[tag=running,tag=!stop_model] run function luigis_mansion_3ds_remake:animations/gooigi/running/left_leg
 execute if entity @s[tag=swimming,tag=!stop_model] run function luigis_mansion_3ds_remake:animations/gooigi/swimming/left_leg
 
+execute at @s[tag=revive] run function luigis_mansion_3ds_remake:animations/gooigi/revive/left_leg
 execute at @s[tag=nod] run function luigis_mansion_3ds_remake:animations/gooigi/nod/left_leg
 execute at @s[tag=thinking] run function luigis_mansion_3ds_remake:animations/gooigi/thinking/left_leg
 execute at @s[tag=sigh] run function luigis_mansion_3ds_remake:animations/gooigi/sigh/left_leg

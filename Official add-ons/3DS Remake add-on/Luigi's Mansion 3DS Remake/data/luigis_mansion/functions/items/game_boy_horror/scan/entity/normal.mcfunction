@@ -1,7 +1,7 @@
 execute if entity @s[tag=e_gadd] run tellraw @a {"translate":"chat.type.text","with":[{"selector":"@s","color":"green"},{"translate":"luigis_mansion:message.player.scan_furniture.57"}]}
-execute if entity @s[tag=toad] run tellraw @a {"translate":"chat.type.text","with":[{"selector":"@s","color":"green"},{"translate":"luigis_mansion:message.player.scan_furniture.6"}]}
-execute if entity @s[tag=mario,tag=panic] run tellraw @a {"translate":"chat.type.text","with":[{"selector":"@s","color":"green"},{"translate":"luigis_mansion:message.player.scan_furniture.51"}]}
-execute as @s[type=minecraft:player] run function luigis_mansion:items/game_boy_horror/scan/entity/player_return
+execute if entity @s[tag=toad] run tellraw @a {"translate":"chat.type.text","with":[{"selector":"@p[tag=scanning_player,gamemode=!spectator]","color":"green"},{"translate":"luigis_mansion:message.player.scan_furniture.6"}]}
+execute if entity @s[tag=mario,tag=panic] run tellraw @a {"translate":"chat.type.text","with":[{"selector":"@p[tag=scanning_player,gamemode=!spectator]","color":"green"},{"translate":"luigis_mansion:message.player.scan_furniture.51"}]}
+execute if entity @s[type=minecraft:player] run function luigis_mansion:items/game_boy_horror/scan/entity/player_return
 execute if entity @s[tag=biff_atlas] if score #players Totals matches 1 run tellraw @a {"translate":"chat.type.text","with":[{"translate":"luigis_mansion:entity.biff_atlas","color":"green"},{"translate":"luigis_mansion:message.biff_atlas.scan"}]}
 execute if entity @s[tag=biff_atlas] if score #players Totals matches 2.. run tellraw @a {"translate":"chat.type.text","with":[{"translate":"luigis_mansion:entity.biff_atlas","color":"green"},{"translate":"luigis_mansion:message.biff_atlas.scan.more"}]}
 execute if entity @s[tag=chauncey,tag=sleep,tag=!fight] run tellraw @a {"translate":"chat.type.text","with":[{"translate":"luigis_mansion:entity.chauncey","color":"green"},{"translate":"luigis_mansion:message.chauncey.scan.1"}]}

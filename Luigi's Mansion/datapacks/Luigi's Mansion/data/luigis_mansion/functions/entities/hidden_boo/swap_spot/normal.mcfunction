@@ -37,5 +37,3 @@ execute if entity @s[scores={Room=68}] run function luigis_mansion:entities/hidd
 execute if entity @s[scores={Room=69}] run function luigis_mansion:entities/hidden_boo/swap_spot/normal/sitting_room
 execute if entity @s[scores={Room=70}] run function luigis_mansion:entities/hidden_boo/swap_spot/normal/guest_room
 execute if entity @s[scores={Room=71}] run function luigis_mansion:entities/hidden_boo/swap_spot/normal/the_artists_studio
-execute at @s[tag=caught_by_boo_radar,tag=can_play_sound] run playsound luigis_mansion:entity.boo.hide hostile @a[tag=same_room] ~ ~ ~ 1
-scoreboard players set @s[tag=caught_by_boo_radar] HideTime 600
