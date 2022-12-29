@@ -1,5 +1,5 @@
 execute unless data storage luigis_mansion:data {data_version:3} run function luigis_mansion:other/upgrade_path/root/v2.0
-data modify storage luigis_mansion:data {} merge value {data_version:4,memory:[]}
+data modify storage luigis_mansion:data {} merge value {data_version:4,memory:[],dancing_ghost_guy_couple_nr:0}
 execute if data storage luigis_mansion:data luigi_colors[-1] run function luigis_mansion:other/upgrade_path/root/convert_color_to_memory
 execute if data storage luigis_mansion:data inventories[-1] run function luigis_mansion:other/upgrade_path/root/convert_inventory_to_memory
 execute if data storage luigis_mansion:data {obtained_parlor_key:1b} run data modify storage luigis_mansion:data current_state.current_data.obtained_keys merge value {parlor:1b}

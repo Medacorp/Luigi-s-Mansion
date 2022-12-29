@@ -38,8 +38,11 @@ execute if data storage luigis_mansion:data entity.vanish_time as @e[tag=this_en
 execute if data storage luigis_mansion:data entity.training_room_score as @e[tag=this_entity,limit=1] store result score @s GhostCaught run data get storage luigis_mansion:data entity.training_room_score
 execute if data storage luigis_mansion:data entity.loot run data modify entity @e[tag=this_entity,limit=1] ArmorItems[3].tag.loot set from storage luigis_mansion:data entity.loot
 execute if data storage luigis_mansion:data entity.damage run data modify entity @e[tag=this_entity,limit=1] ArmorItems[3].tag.damage set from storage luigis_mansion:data entity.damage
-scoreboard players operation @e[tag=this_entity,limit=1] GhostGuyCouple > @e[tag=ghost_guy,tag=!this_entity] GhostGuyCouple
-scoreboard players add @e[tag=this_entity,limit=1] GhostGuyCouple 1
-scoreboard players operation @e[tag=this_entity,limit=1] GhostGuyCouple = @e[tag=ghost_guy,distance=..2,tag=!this_entity,limit=1] GhostGuyCouple
+execute if data storage luigis_mansion:data entity.path store result score @e[tag=this_entity,limit=1] Path run data get storage luigis_mansion:data entity.path
+execute unless entity @e[tag=ghost_guy,distance=..2,tag=!this_entity,limit=1] store result score @e[tag=this_entity,limit=1] GhostGuyCouple run data get storage luigis_mansion:data dancing_ghost_guy_couple_nr
+execute unless entity @e[tag=ghost_guy,distance=..2,tag=!this_entity,limit=1] store result storage luigis_mansion:data dancing_ghost_guy_couple_nr int 1 run scoreboard players add @e[tag=this_entity,limit=1] GhostGuyCouple 1
+execute if entity @e[tag=ghost_guy,distance=..2,tag=!this_entity,tag=!has_partner,limit=1] run scoreboard players operation @e[tag=this_entity,limit=1] GhostGuyCouple = @e[tag=ghost_guy,distance=..2,tag=!this_entity,tag=!has_partner,limit=1] GhostGuyCouple
+execute if entity @e[tag=ghost_guy,distance=..2,tag=!this_entity,tag=!has_partner,limit=1] run tag @e[tag=this_entity,limit=1] add has_partner
+tag @e[tag=ghost_guy,distance=..2,tag=!this_entity,tag=!has_partner,limit=1] add has_partner
 tag @e[tag=this_entity,limit=1] remove this_entity
 data remove storage luigis_mansion:data entity
