@@ -9,8 +9,8 @@ summon minecraft:armor_stand ~ ~-0.8 ~ {CustomName:'{"translate":"luigis_mansion
 summon minecraft:armor_stand ~ ~-0.8 ~ {CustomName:'{"translate":"luigis_mansion_3ds_remake:entity.polterpup"}',Invisible:1b,NoGravity:1b,CustomNameVisible:0b,Marker:1b,Invulnerable:1b,ArmorItems:[{},{},{},{id:"minecraft:stone_button",Count:1b,tag:{visible:"minecraft:diamond_pickaxe",invisible:"minecraft:stone_button",Unbreakable:1b,Damage:5,CustomModelData:33}}],Pose:{Head:[0.0f,0.0f,0.01f]},Tags:["model_piece","found_owner","gold_bone","this_entity"],DisabledSlots:2039583}
 teleport @e[tag=polterpup,tag=this_entity,limit=1] ~ ~-0.8 ~ ~ ~
 teleport @e[tag=model_piece,tag=this_entity] ~ ~-0.8 ~ ~ ~
-execute as @e[tag=polterpup,tag=this_entity,limit=1] store result score @s GhostNr run data get storage luigis_mansion:data ghost_nr
-execute as @e[tag=polterpup,tag=this_entity,limit=1] store result storage luigis_mansion:data ghost_nr int 1 run scoreboard players add @s GhostNr 1
+execute as @e[tag=polterpup,tag=this_entity,limit=1] store result score @s GhostNr run data get storage luigis_mansion:data unique_id.ghost
+execute as @e[tag=polterpup,tag=this_entity,limit=1] store result storage luigis_mansion:data unique_id.ghost int 1 run scoreboard players add @s GhostNr 1
 scoreboard players operation @e[tag=model_piece,tag=this_entity] GhostNr = @e[tag=polterpup,tag=this_entity,limit=1] GhostNr
 scoreboard players set @e[tag=polterpup,tag=this_entity,limit=1] Move 20
 scoreboard players set @e[tag=polterpup,tag=this_entity,limit=1] Sound 0

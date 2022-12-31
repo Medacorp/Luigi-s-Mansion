@@ -6,8 +6,8 @@ summon minecraft:armor_stand ~ ~0.3 ~ {CustomName:'{"translate":"luigis_mansion:
 teleport @e[tag=sir_weston,tag=this_entity,limit=1] ~ ~0.6 ~ ~ ~
 teleport @e[tag=model_piece,tag=this_entity] ~ ~0.6 ~ ~ ~
 teleport @e[tag=sir_weston_ice,tag=this_entity] ~ ~0.3 ~ ~ ~
-execute as @e[tag=sir_weston,tag=this_entity,limit=1] store result score @s GhostNr run data get storage luigis_mansion:data ghost_nr
-execute as @e[tag=sir_weston,tag=this_entity,limit=1] store result storage luigis_mansion:data ghost_nr int 1 run scoreboard players add @s GhostNr 1
+execute as @e[tag=sir_weston,tag=this_entity,limit=1] store result score @s GhostNr run data get storage luigis_mansion:data unique_id.ghost
+execute as @e[tag=sir_weston,tag=this_entity,limit=1] store result storage luigis_mansion:data unique_id.ghost int 1 run scoreboard players add @s GhostNr 1
 scoreboard players operation @e[tag=model_piece,tag=this_entity] GhostNr = @e[tag=sir_weston,tag=this_entity,limit=1] GhostNr
 execute as @e[tag=sir_weston,tag=this_entity,limit=1] store result score @s HomeX run data get entity @s Pos[0] 100
 execute as @e[tag=sir_weston,tag=this_entity,limit=1] store result score @s HomeY run data get entity @s Pos[1] 100

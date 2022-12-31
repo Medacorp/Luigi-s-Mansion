@@ -52,7 +52,7 @@ execute positioned 678 106 -28 run function luigis_mansion:spawn_entities/item/b
 execute positioned 677 105 -28 run function luigis_mansion:spawn_entities/item/gold_bar
 execute positioned 678 105 -27 run function luigis_mansion:spawn_entities/item/gold_bar
 execute positioned 678 105 -28 run function luigis_mansion:spawn_entities/item/gold_diamond
-execute unless data storage luigis_mansion:data current_state.current_data{money_spawned:["boneyard_plant"]} run data modify storage luigis_mansion:data current_state.current_data.money_spawned append value "boneyard_plant"
+execute unless data storage luigis_mansion:data current_state.current_data{money_spawned:["boneyard_flower"]} run data modify storage luigis_mansion:data current_state.current_data.money_spawned append value "boneyard_flower"
 playsound luigis_mansion:music.solve_puzzle music @a[scores={Room=28}] ~ ~ ~ 1000
 scoreboard players set @a[scores={Room=28,Music=..29}] Music 30
 function luigis_mansion_3ds_remake:room/gallery/clear_task/normal/task_6

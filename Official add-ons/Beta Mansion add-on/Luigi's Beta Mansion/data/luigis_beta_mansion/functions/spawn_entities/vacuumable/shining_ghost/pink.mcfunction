@@ -1,6 +1,6 @@
 summon minecraft:armor_stand ~ ~ ~ {CustomName:'{"translate":"luigis_mansion:entity.shining_ghost"}',Invisible:1b,NoGravity:1b,CustomNameVisible:0b,Marker:0b,Invulnerable:1b,Small:1b,ArmorItems:[{},{},{},{id:"minecraft:stone_button",Count:1b,tag:{invisible:"minecraft:stone_button",visible:"minecraft:leather_chestplate",Unbreakable:1b,Damage:1,CustomModelData:17,display:{color:16711796}}}],Pose:{Head:[0.0f,0.0f,0.01f]},Tags:["beta_shining_ghost","optional_ghost","affected_by_vacuum","affected_by_fire","affected_by_water","affected_by_ice","ghost","vacuumable","this_entity"],DisabledSlots:2039583}
-execute as @e[tag=this_entity,limit=1] store result score @s GhostNr run data get storage luigis_mansion:data ghost_nr
-execute as @e[tag=this_entity,limit=1] store result storage luigis_mansion:data ghost_nr int 1 run scoreboard players add @s GhostNr 1
+execute as @e[tag=this_entity,limit=1] store result score @s GhostNr run data get storage luigis_mansion:data unique_id.ghost
+execute as @e[tag=this_entity,limit=1] store result storage luigis_mansion:data unique_id.ghost int 1 run scoreboard players add @s GhostNr 1
 execute as @e[tag=this_entity,limit=1] store result score @s HomeX run data get entity @s Pos[0] 100
 execute as @e[tag=this_entity,limit=1] store result score @s HomeY run data get entity @s Pos[1] 100
 execute as @e[tag=this_entity,limit=1] store result score @s HomeZ run data get entity @s Pos[2] 100

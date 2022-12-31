@@ -1,6 +1,6 @@
 summon minecraft:armor_stand ~ ~-0.4 ~ {CustomName:'{"translate":"luigis_mansion:entity.haunted_jar"}',Invisible:1b,NoGravity:1b,Marker:1b,CustomNameVisible:0b,Invulnerable:0b,Small:1b,ArmorItems:[{},{},{},{id:"minecraft:diamond_pickaxe",Count:1b,tag:{Unbreakable:1b,Damage:1,CustomModelData:123}}],Pose:{Head:[0.0f,0.0f,1.01f]},Tags:["haunted_object","affected_by_vacuum","affected_by_dust","affected_by_fire","affected_by_water","affected_by_ice","ghost","vacuumable","haunted_jar","optional_ghost","no_remove_on_non_ticking","this_entity"],DisabledSlots:2039583}
-execute as @e[tag=this_entity,limit=1] store result score @s GhostNr run data get storage luigis_mansion:data ghost_nr
-execute as @e[tag=this_entity,limit=1] store result storage luigis_mansion:data ghost_nr int 1 run scoreboard players add @s GhostNr 1
+execute as @e[tag=this_entity,limit=1] store result score @s GhostNr run data get storage luigis_mansion:data unique_id.ghost
+execute as @e[tag=this_entity,limit=1] store result storage luigis_mansion:data unique_id.ghost int 1 run scoreboard players add @s GhostNr 1
 execute as @e[tag=this_entity,limit=1] run teleport @s ~ ~-0.4 ~ ~ ~
 execute as @e[tag=this_entity,limit=1] run data modify entity @s Pose.Head[0] set from entity @s Rotation[1]
 execute as @e[tag=this_entity,limit=1] store result score @s HomeX run data get entity @s Pos[0] 100
