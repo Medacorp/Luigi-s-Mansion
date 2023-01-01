@@ -4,6 +4,7 @@ tag @s[tag=!lit,tag=in_fire] add lit
 tag @s[tag=lit,tag=in_water] remove lit
 tag @s[tag=lit,tag=in_ice] add extinguish
 tag @s[tag=extinguish,tag=!cannot_extinguish] remove lit
+tag @s[tag=extinguish,tag=cannot_extinguish] add large_flame
 tag @s[tag=!lit,tag=large_flame] add lit
 execute if entity @s[tag=!purple,tag=large_flame] run data modify entity @s ArmorItems[3] set value {id:"minecraft:diamond_pickaxe",Count:1b,tag:{Unbreakable:1b,Damage:19,CustomModelData:92}}
 execute if entity @s[tag=purple,tag=large_flame] run data modify entity @s ArmorItems[3] set value {id:"minecraft:diamond_pickaxe",Count:1b,tag:{Unbreakable:1b,Damage:19,CustomModelData:93}}

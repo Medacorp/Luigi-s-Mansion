@@ -9,9 +9,7 @@ function luigis_mansion:spawn_furniture/setup/searchable
 function luigis_mansion:spawn_furniture/setup/sound
 scoreboard players set @e[tag=this_entity,limit=1] ActionTime -1
 scoreboard players set @e[tag=this_entity,limit=1] Sound 0
-scoreboard players set @e[tag=this_entity,limit=1] FurnitureSizeL 14
-scoreboard players set @e[tag=this_entity,limit=1] FurnitureSizeU 16
-scoreboard players set @e[tag=this_entity,limit=1] FurnitureSizeF 10
+scoreboard players set @e[tag=this_entity,limit=1] FurnitureRadius 6
 scoreboard players set @e[tag=this_entity,limit=1] FurnitureUp 0
 scoreboard players set @e[tag=this_entity,limit=1] FurnitureForward 0
 scoreboard players set @e[tag=this_entity,limit=1] FurnitureSearch 20

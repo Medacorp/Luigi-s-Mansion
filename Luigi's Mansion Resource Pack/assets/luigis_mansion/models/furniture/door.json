@@ -1,9 +1,9 @@
 {
 	"credit": "Made with Blockbench",
 	"textures": {
-		"barricade_double": "luigis_mansion:furniture/empty",
-		"barricade_single": "luigis_mansion:furniture/empty",
-		"overlay": "luigis_mansion:furniture/empty",
+		"barricade_double": "luigis_mansion:block/empty",
+		"barricade_single": "luigis_mansion:block/empty",
+		"overlay": "luigis_mansion:block/empty",
 		"particle": "#door"
 	},
 	"elements": [

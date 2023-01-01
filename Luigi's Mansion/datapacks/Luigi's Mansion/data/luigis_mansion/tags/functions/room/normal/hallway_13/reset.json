@@ -2,11 +2,6 @@
     "values": [
         "luigis_mansion:room/normal/hallway_13/reset/unload",
         "#luigis_mansion:room/normal/hallway_13/turn_lights/off",
-        "luigis_mansion:room/normal/hallway_13/reset/candle_1",
-        "luigis_mansion:room/normal/hallway_13/reset/candle_2",
-        "luigis_mansion:room/normal/hallway_13/reset/candle_3",
-        "luigis_mansion:room/normal/hallway_13/reset/candle_4",
-        "luigis_mansion:room/normal/hallway_13/reset/candle_5",
         "luigis_mansion:room/normal/hallway_13/reset/lamp"
     ]
 }

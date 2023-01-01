@@ -1,6 +1,6 @@
 {
 	"parent": "luigis_mansion:furniture/door/club",
 	"textures": {
-		"overlay": "luigis_mansion:furniture/door/furnitureade_area"
+		"overlay": "luigis_mansion:furniture/door/blockade_area"
 	}
 }

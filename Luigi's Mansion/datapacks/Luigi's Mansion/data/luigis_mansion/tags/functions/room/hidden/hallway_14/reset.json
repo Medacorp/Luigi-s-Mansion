@@ -2,8 +2,6 @@
     "values": [
         "luigis_mansion:room/hidden/hallway_14/reset/unload",
         "#luigis_mansion:room/hidden/hallway_14/turn_lights/off",
-        "luigis_mansion:room/hidden/hallway_14/reset/candle_1",
-        "luigis_mansion:room/hidden/hallway_14/reset/candle_2",
         "luigis_mansion:room/hidden/hallway_14/reset/lamp"
     ]
 }

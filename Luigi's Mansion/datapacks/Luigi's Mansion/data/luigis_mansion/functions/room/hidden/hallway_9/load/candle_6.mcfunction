@@ -1,1 +1,0 @@
-setblock 680 22 31 minecraft:redstone_wall_torch[facing=east,lit=true]

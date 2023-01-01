@@ -2,7 +2,7 @@
 	"credit": "Made with Blockbench",
 	"parent": "luigis_mansion:furniture/door_frame",
 	"textures": {
-		"door": "luigis_mansion:furniture/empty"
+		"door": "luigis_mansion:block/empty"
 	},
 	"elements": [
 		{

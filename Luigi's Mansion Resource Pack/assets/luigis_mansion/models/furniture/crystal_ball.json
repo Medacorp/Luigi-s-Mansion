@@ -1,0 +1,12 @@
+{
+	"parent": "luigis_mansion:entity/ball",
+	"textures": {
+		"north": "luigis_mansion:furniture/crystal_ball"
+	},
+	"display": {
+		"head": {
+			"translation": [0, -7.25, 0],
+			"scale": [0.7, 0.7, 0.7]
+		}
+	}
+}
