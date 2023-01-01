@@ -1,0 +1,12 @@
+{
+	"textures": {
+		"0": "luigis_mansion:furniture/cobweb",
+		"particle": "#0"
+	},
+	"display": {
+		"head": {
+			"translation": [0, -6.5, 0],
+			"scale": [1.6, 1.6, 1.6]
+		}
+	}
+}

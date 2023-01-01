@@ -1,0 +1,6 @@
+{
+	"parent": "luigis_mansion:furniture/door",
+	"textures": {
+		"door": "luigis_beta_mansion:furniture/door/star"
+	}
+}

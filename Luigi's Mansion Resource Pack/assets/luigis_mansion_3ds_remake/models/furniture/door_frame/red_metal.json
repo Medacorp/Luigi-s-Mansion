@@ -1,0 +1,6 @@
+{
+	"parent": "luigis_mansion:furniture/door_frame/none",
+	"textures": {
+		"door": "luigis_mansion_3ds_remake:furniture/door_frame/red_metal"
+	}
+}

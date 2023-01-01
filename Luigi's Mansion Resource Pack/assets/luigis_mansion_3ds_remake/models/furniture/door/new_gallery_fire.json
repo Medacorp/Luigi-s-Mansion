@@ -1,0 +1,6 @@
+{
+	"parent": "luigis_mansion_3ds_remake:furniture/door/new_gallery",
+	"textures": {
+		"overlay": "luigis_mansion:furniture/door/fire"
+	}
+}

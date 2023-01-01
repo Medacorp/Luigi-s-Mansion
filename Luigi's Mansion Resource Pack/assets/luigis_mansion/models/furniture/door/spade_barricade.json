@@ -1,0 +1,6 @@
+{
+	"parent": "luigis_mansion:furniture/door/spade",
+	"textures": {
+		"barricade_single": "luigis_mansion:furniture/door/barricade"
+	}
+}

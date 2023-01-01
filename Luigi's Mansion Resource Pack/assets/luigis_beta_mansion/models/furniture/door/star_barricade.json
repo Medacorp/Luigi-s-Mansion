@@ -1,0 +1,6 @@
+{
+	"parent": "luigis_beta_mansion:furniture/door/star",
+	"textures": {
+		"barricade_single": "luigis_mansion:furniture/door/barricade"
+	}
+}

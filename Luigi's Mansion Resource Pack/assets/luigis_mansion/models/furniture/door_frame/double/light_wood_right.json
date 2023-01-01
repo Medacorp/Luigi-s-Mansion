@@ -1,0 +1,6 @@
+{
+	"parent": "luigis_mansion:furniture/door_frame/double/basic_right",
+	"textures": {
+		"door": "luigis_mansion:furniture/door_frame/light_wood"
+	}
+}

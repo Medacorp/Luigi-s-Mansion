@@ -8,7 +8,6 @@ execute if data storage luigis_mansion:data furniture{searched:1b,no_search_anim
 function luigis_mansion:spawn_furniture/setup/searched
 function luigis_mansion:spawn_furniture/setup/can_hide_boo
 function luigis_mansion:spawn_furniture/setup/searchable
-function luigis_mansion:spawn_furniture/setup/elemental_source
 function luigis_mansion:spawn_furniture/setup/sound
 scoreboard players set @e[tag=this_entity,limit=1] Sound 0
 scoreboard players set @e[tag=this_entity,limit=1] FurnitureSizeL 20
@@ -17,7 +16,5 @@ scoreboard players set @e[tag=this_entity,limit=1] FurnitureSizeF 12
 scoreboard players set @e[tag=this_entity,limit=1] FurnitureUp 6
 scoreboard players set @e[tag=this_entity,limit=1] FurnitureForward 0
 scoreboard players set @e[tag=this_entity,limit=1] FurnitureSearch 20
-scoreboard players set @e[tag=this_entity,limit=1] FurnitureElemenU 6
-scoreboard players set @e[tag=this_entity,limit=1] FurnitureElemenF 0
 tag @e[tag=this_entity,limit=1] remove this_entity
 data remove storage luigis_mansion:data furniture

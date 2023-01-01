@@ -1,6 +1,0 @@
-{
-	"parent": "luigis_beta_mansion:entity/door/heart",
-	"textures": {
-		"overlay": "luigis_mansion:block/door/fire"
-	}
-}

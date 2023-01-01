@@ -1,0 +1,6 @@
+{
+	"parent": "luigis_mansion:furniture/room_clear_chest/small_state_2",
+	"textures": {
+		"0": "luigis_mansion:furniture/room_clear_chest/green"
+	}
+}

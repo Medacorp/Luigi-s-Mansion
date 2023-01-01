@@ -1,0 +1,6 @@
+{
+	"parent": "luigis_mansion:furniture/door/mansion/entrance",
+	"textures": {
+		"overlay": "luigis_mansion:furniture/door/fire"
+	}
+}

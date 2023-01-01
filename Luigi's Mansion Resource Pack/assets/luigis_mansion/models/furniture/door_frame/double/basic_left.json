@@ -1,0 +1,72 @@
+{
+	"credit": "Made with Blockbench",
+	"parent": "luigis_mansion:furniture/door_frame",
+	"textures": {
+		"door": "luigis_mansion:furniture/door_frame/basic"
+	},
+	"elements": [
+		{
+			"from": [-3, -15.1, 7],
+			"to": [0, 19.9, 11],
+			"rotation": {"angle": 0, "axis": "y", "origin": [16, 0, 0]},
+			"faces": {
+				"north": {"uv": [4.5, 2.75, 5.25, 11.5], "texture": "#door"},
+				"east": {"uv": [3.5, 2.75, 4.5, 11.5], "texture": "#door"},
+				"south": {"uv": [6.25, 2.75, 7, 11.5], "texture": "#door"},
+				"west": {"uv": [5.25, 2.75, 6.25, 11.5], "texture": "#door"},
+				"up": {"uv": [4.5, 1.75, 5.25, 2.75], "texture": "#door"},
+				"down": {"uv": [5.25, 1.75, 6, 2.75], "rotation": 180, "texture": "#door"}
+			}
+		},
+		{
+			"from": [0, 16.9, 7],
+			"to": [16, 19.9, 11],
+			"faces": {
+				"north": {"uv": [1, 14.5, 5, 15.25], "texture": "#door"},
+				"east": {"uv": [0, 14.5, 1, 15.25], "texture": "#door"},
+				"south": {"uv": [6, 14.5, 10, 15.25], "texture": "#door"},
+				"up": {"uv": [1, 13.5, 5, 14.5], "texture": "#door"},
+				"down": {"uv": [5, 13.5, 9, 14.5], "rotation": 180, "texture": "#door"}
+			}
+		},
+		{
+			"from": [0.075, -15.1, 10],
+			"to": [0.075, 16.9, 26],
+			"rotation": {"angle": 0, "axis": "y", "origin": [16, 0, 0]},
+			"faces": {
+				"east": {"uv": [0, 0, 16, 16], "texture": "#frame_box"}
+			}
+		},
+		{
+			"from": [0, -15.025, 10],
+			"to": [16, -15.025, 26],
+			"faces": {
+				"up": {"uv": [0, 0, 16, 16], "texture": "#frame_box"}
+			}
+		},
+		{
+			"from": [0, 16.85, 10],
+			"to": [16, 16.85, 26],
+			"faces": {
+				"down": {"uv": [0, 0, 16, 16], "rotation": 180, "texture": "#frame_box"}
+			}
+		},
+		{
+			"from": [0, -15.1, 26],
+			"to": [16, 16.9, 26],
+			"faces": {
+				"north": {"uv": [0, 0, 16, 16], "texture": "#frame_box"}
+			}
+		}
+	],
+	"groups": [
+		0,
+		1,
+		{
+			"name": "box",
+			"origin": [8, 8, 8],
+			"color": 0,
+			"children": [2, 3, 4, 5]
+		}
+	]
+}

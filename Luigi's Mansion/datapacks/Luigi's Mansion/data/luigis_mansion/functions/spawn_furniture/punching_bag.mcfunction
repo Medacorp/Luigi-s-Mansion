@@ -5,7 +5,6 @@ function luigis_mansion:spawn_furniture/setup/dialog
 function luigis_mansion:spawn_furniture/setup/scan_message
 function luigis_mansion:spawn_furniture/setup/can_hide_boo
 function luigis_mansion:spawn_furniture/setup/searchable
-function luigis_mansion:spawn_furniture/setup/elemental_source
 function luigis_mansion:spawn_furniture/setup/sound
 scoreboard players set @e[tag=this_entity,limit=1] Sound 0
 scoreboard players set @e[tag=this_entity,limit=1] ActionTime -1
@@ -16,8 +15,6 @@ scoreboard players set @e[tag=this_entity,limit=1] FurnitureXOrigin 0
 scoreboard players set @e[tag=this_entity,limit=1] FurnitureZOrigin 0
 scoreboard players set @e[tag=this_entity,limit=1] FurnitureUp -10
 scoreboard players set @e[tag=this_entity,limit=1] FurnitureForward 0
-scoreboard players set @e[tag=this_entity,limit=1] FurnitureElemenU -10
-scoreboard players set @e[tag=this_entity,limit=1] FurnitureElemenF 0
 scoreboard players set @e[tag=this_entity,limit=1] FurnitureSearch 100
 tag @e[tag=this_entity,limit=1] remove this_entity
 data remove storage luigis_mansion:data furniture

@@ -1,0 +1,6 @@
+{
+	"parent": "luigis_mansion:furniture/door",
+	"textures": {
+		"door": "luigis_mansion:furniture/door/mansion/wooden"
+	}
+}

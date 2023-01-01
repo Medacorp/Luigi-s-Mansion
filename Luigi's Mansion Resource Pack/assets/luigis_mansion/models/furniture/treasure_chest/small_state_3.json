@@ -1,0 +1,9 @@
+{
+	"parent": "luigis_mansion:furniture/treasure_chest/state_3",
+	"display": {
+		"head": {
+			"translation": [0, 14.75, 0],
+			"scale": [2.75, 2.75, 2.75]
+		}
+	}
+}

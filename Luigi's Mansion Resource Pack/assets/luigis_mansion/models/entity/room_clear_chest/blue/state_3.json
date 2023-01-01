@@ -1,6 +1,0 @@
-{
-	"parent": "luigis_mansion:entity/room_clear_chest/state_3",
-	"textures": {
-		"0": "luigis_mansion:block/room_clear_chest/blue"
-	}
-}

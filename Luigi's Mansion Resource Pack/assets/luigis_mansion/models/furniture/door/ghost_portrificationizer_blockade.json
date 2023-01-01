@@ -1,0 +1,6 @@
+{
+	"parent": "luigis_mansion:furniture/door/ghost_portrificationizer",
+	"textures": {
+		"overlay": "luigis_mansion:furniture/door/furnitureade"
+	}
+}

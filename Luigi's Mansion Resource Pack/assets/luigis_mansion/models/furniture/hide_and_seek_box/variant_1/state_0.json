@@ -1,0 +1,6 @@
+{
+	"parent": "luigis_mansion:furniture/hide_and_seek_box/state_0",
+	"textures": {
+		"0": "luigis_mansion:furniture/hide_and_seek_box/variant_1"
+	}
+}

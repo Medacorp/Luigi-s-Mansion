@@ -1,6 +1,0 @@
-{
-	"parent": "luigis_mansion:entity/door/spade",
-	"textures": {
-		"barricade_single": "luigis_mansion:block/door/barricade"
-	}
-}

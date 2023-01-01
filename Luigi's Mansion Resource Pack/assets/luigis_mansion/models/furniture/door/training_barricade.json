@@ -1,0 +1,6 @@
+{
+	"parent": "luigis_mansion:furniture/door/training",
+	"textures": {
+		"barricade_single": "luigis_mansion:furniture/door/barricade"
+	}
+}

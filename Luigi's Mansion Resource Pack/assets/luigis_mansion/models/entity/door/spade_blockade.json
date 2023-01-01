@@ -1,6 +1,0 @@
-{
-	"parent": "luigis_mansion:entity/door/spade",
-	"textures": {
-		"overlay": "luigis_mansion:block/door/blockade"
-	}
-}

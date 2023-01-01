@@ -1,0 +1,6 @@
+{
+	"parent": "luigis_mansion:furniture/door/training",
+	"textures": {
+		"overlay": "luigis_mansion:furniture/door/furnitureade"
+	}
+}

@@ -1,6 +1,0 @@
-{
-	"parent": "luigis_mansion:entity/door/ghost_portrificationizer",
-	"textures": {
-		"overlay": "luigis_mansion:block/door/blockade"
-	}
-}

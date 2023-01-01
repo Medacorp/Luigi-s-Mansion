@@ -1,0 +1,6 @@
+{
+	"parent": "luigis_mansion:furniture/door_frame/windowed",
+	"textures": {
+		"door": "luigis_mansion:furniture/door_frame/blue_stones"
+	}
+}

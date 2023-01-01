@@ -1,0 +1,6 @@
+{
+	"parent": "luigis_mansion:furniture/door/mansion/metal",
+	"textures": {
+		"overlay": "luigis_mansion:furniture/door/furnitureade"
+	}
+}
