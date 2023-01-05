@@ -1,5 +1,5 @@
 summon minecraft:armor_stand ~ ~-1.4 ~ {CustomName:'{"translate":"luigis_mansion:furniture.hide_and_seek_box"}',Tags:["furniture","affected_by_interact","no_manual_shake","hide_and_seek_box","standing_furniture","no_dust","this_entity"],Pose:{Head:[0.0f,0.01f,0.0f]},NoGravity:1b,Marker:1b,ArmorItems:[{},{},{},{id:"minecraft:diamond_pickaxe",Count:1b,tag:{Unbreakable:1b,Damage:19,CustomModelData:67}}],Invisible:1b,DisabledSlots:2039583}
-teleport @e[tag=this_entity,limit=1] ~ ~-1.4 ~ ~ ~
+teleport @e[tag=this_entity,limit=1] ~ ~-1.4 ~ ~ 0
 function luigis_mansion:spawn_furniture/setup/loot
 function luigis_mansion:spawn_furniture/setup/dialog
 function luigis_mansion:spawn_furniture/setup/scan_message

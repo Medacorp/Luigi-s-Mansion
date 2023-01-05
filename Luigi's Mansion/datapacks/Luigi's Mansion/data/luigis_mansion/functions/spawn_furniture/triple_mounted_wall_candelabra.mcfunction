@@ -1,4 +1,4 @@
-summon minecraft:armor_stand ~ ~-1.4 ~ {CustomName:'{"translate":"luigis_mansion:furniture.lonely_wall_candelabra"}',Tags:["furniture","generic","immobile","this_entity"],Pose:{Head:[0.0f,0.01f,0.0f]},NoGravity:1b,Marker:1b,ArmorItems:[{},{},{},{id:"minecraft:diamond_pickaxe",Count:1b,tag:{Unbreakable:1b,Damage:19,CustomModelData:94}}],Invisible:1b,DisabledSlots:2039583}
+summon minecraft:armor_stand ~ ~-1.4 ~ {CustomName:'{"translate":"luigis_mansion:furniture.triple_mounted_wall_candelabra"}',Tags:["furniture","generic","immobile","this_entity"],Pose:{Head:[0.0f,0.01f,0.0f]},NoGravity:1b,Marker:1b,ArmorItems:[{},{},{},{id:"minecraft:diamond_pickaxe",Count:1b,tag:{Unbreakable:1b,Damage:19,CustomModelData:95}}],Invisible:1b,DisabledSlots:2039583}
 teleport @e[tag=this_entity,limit=1] ~ ~-1.4 ~ ~ 0
 function luigis_mansion:spawn_furniture/setup/pose
 execute store result score #temp Time run data get entity @e[tag=this_entity,limit=1] Pose.Head[2]
@@ -6,8 +6,8 @@ scoreboard players operation #temp2 Time = #temp Time
 execute if score #temp2 Time matches ..-91 run scoreboard players add #temp2 Time 180
 execute if score #temp2 Time matches 91.. run scoreboard players remove #temp2 Time 180
 execute store result entity @e[tag=this_entity,limit=1] Rotation[0] float 1 run scoreboard players get #temp2 Time
-execute if score #temp2 Time = #temp Time rotated ~ 0 positioned ^ ^ ^0.444 rotated as @e[tag=this_entity,limit=1] rotated ~90 ~ positioned ^ ^0.415 ^ rotated ~-90 0 run function luigis_mansion:spawn_furniture/setup/candle_flame
-execute unless score #temp2 Time = #temp Time rotated ~ 0 positioned ^ ^ ^0.444 rotated as @e[tag=this_entity,limit=1] rotated ~-90 ~ positioned ^ ^-0.415 ^ rotated ~90 0 run function luigis_mansion:spawn_furniture/setup/candle_flame
+execute if score #temp2 Time = #temp Time rotated ~ 0 positioned ^ ^ ^0.23 rotated as @e[tag=this_entity,limit=1] rotated ~90 ~ positioned ^ ^0.82 ^ rotated ~-90 0 run function luigis_mansion:spawn_furniture/setup/candle_flame
+execute unless score #temp2 Time = #temp Time rotated ~ 0 positioned ^ ^ ^0.23 rotated as @e[tag=this_entity,limit=1] rotated ~-90 ~ positioned ^ ^-0.82 ^ rotated ~90 0 run function luigis_mansion:spawn_furniture/setup/candle_flame
 scoreboard players reset #temp Time
 scoreboard players reset #temp2 Time
 teleport @e[tag=this_entity,limit=1] ~ ~-1.4 ~ ~ 0
