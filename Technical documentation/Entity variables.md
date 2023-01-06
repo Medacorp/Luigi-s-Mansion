@@ -23,9 +23,9 @@ entity: {
         drop_at_0:1b, //When set, spawns the loot the moment health drops to 0, otherwise spawns it the moment the ghost is reeled in.
         //See loot documentation for other variables.
     },
-    speed:0, //The movement speed of the ghost.
-    flee_speed:20, //The movement speed of the ghost while fleeing from the Poltergust.
-    vanish_time:-1, //How many ticks the ghost can stay in the world, haunting, but not attacking, laughing, complaining, being collided with, etc. before it vanishes. -1 means never.
+    speed:X, //The movement speed of the ghost.
+    flee_speed:X, //The movement speed of the ghost while fleeing from the Poltergust.
+    vanish_time:X, //How many ticks the ghost can stay in the world, haunting, but not attacking, laughing, complaining, being collided with, etc. before it vanishes. -1 means never.
     damage:{ //Damage values the ghost uses in its functions.
         <type>:X //The amount of damage dealt. Type is usually collision and attack (also used by created projectiles), but can be other values.
     }
@@ -46,7 +46,7 @@ Type          | Ghosts
 none          | Gold Ghost, Temper Terror, Ceiling Surprise(default), Purple Bomber
 punch         | Gold Ghost(default), Temper Terror(default), Blue Twirler, Blue Blaze, Beta Ghost(default), Beta Basher, Beta Body Slammer
 uppercut      | Purple Puncher(default), Flash(default), Beta Puncher(default)
-basher        | Gold Ghost, Temper Terror, Speedy Spirit, Purple Puncher, Flash, Blue Twirler, Blue Blaze, Grabbing Ghost, Red Grabbing Ghost, Mirror Ghost, Cinema Ghost, Beta Ghost, Beta Basher(default)
+basher        | Gold Ghost, Temper Terror, Speedy Spirit, Purple Puncher, Flash, Blue Twirler, Blue Blaze, Grabbing Ghost, Red Grabbing Ghost, Mirror Ghost, Cinema Ghost, Beta Ghost, Beta Basher(default), Beta Puncher, Beta Body Slammer
 body_slam     | Blue Twirler, Blue Blaze, Beta Body Slammer(default)
 earthquake    | Blue Twirler(default), Blue Blaze(default), Beta Body Slammer
 stab          | Ghost Guy(default), Dancing Ghost Guy

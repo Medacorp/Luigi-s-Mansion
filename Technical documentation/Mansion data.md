@@ -80,9 +80,9 @@ Mansion data is a massive collection of info storing everything the map needs to
                 drop_at_0:1b, //When set, spawns the loot the moment health drops to 0, otherwise spawns it the moment the ghost is reeled in. Default = 0b.
                 //See loot documentation for other variables.
             },
-            speed:0, //The movement speed of the ghost.
-            flee_speed:20, //The movement speed of the ghost while fleeing from the Poltergust.
-            vanish_time:-1, //How many ticks the ghost can stay in the world, haunting, but not attacking, laughing, complaining, being collided with, etc. before it vanishes. -1 means never. Default = -1.
+            speed:X, //The movement speed of the ghost.
+            flee_speed:X, //The movement speed of the ghost while fleeing from the Poltergust.
+            vanish_time:X, //How many ticks the ghost can stay in the world, haunting, but not attacking, laughing, complaining, being collided with, etc. before it vanishes. -1 means never. Default = -1.
             damage:{ //Damage values the ghost uses in its functions.
                 <type>:X //The amount of damage dealt. Type is usually collision and attack (also used by created projectiles), but can be other values. Default = 0.
             }
@@ -91,7 +91,7 @@ Mansion data is a massive collection of info storing everything the map needs to
             loot:{ //Loot this ghost drops upon defeat.
                 //See loot documentation for other variables.
             },
-            speed:0, //The movement speed of the ghost.
+            speed:X, //The movement speed of the ghost.
             damage:{ //Damage values the ghost uses in its functions.
                 <type>:X //The amount of damage dealt. Type is usually attack or collision, but can be other values. Default = 0.
             }
