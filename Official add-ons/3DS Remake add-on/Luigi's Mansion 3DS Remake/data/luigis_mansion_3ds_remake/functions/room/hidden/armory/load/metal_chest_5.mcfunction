@@ -1,3 +1,3 @@
-data modify storage luigis_mansion:data furniture set value {can_hide_boo:1b,sound:0,searchable:["hand","vacuum"],scan_message:'{"translate":"luigis_mansion:message.player.scan_furniture.11"}'}
+data modify storage luigis_mansion:data furniture set value {can_hide_boo:1b,sound:0,searchable:["interact","vacuum"],shake_animation:["interact","vacuum"],scan_message:'{"translate":"luigis_mansion:message.player.scan_furniture.11"}'}
 execute unless data storage luigis_mansion:data current_state.current_data{money_spawned:["armory_metal_chest_5"]} run data modify storage luigis_mansion:data furniture.loot set value {name:"armory_metal_chest_5",contents:{luigis_mansion:{gold_coin:20,bill:20}}}
 execute positioned 747.7 29 63.0 rotated -80 0 run function luigis_mansion:spawn_furniture/metal_chest

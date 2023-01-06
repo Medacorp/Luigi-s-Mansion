@@ -1,3 +1,4 @@
-tag @s add in_vacuum
-execute if entity @s[tag=swinging] run function luigis_mansion:items/poltergust_3000/effect_on_furniture/swing_pull
-execute if entity @s[tag=swirling] run function luigis_mansion:items/poltergust_3000/effect_on_furniture/swirl
+tag @s[tag=searchable_by_vacuum] add in_vacuum
+tag @s[tag=shaken_by_vacuum,tag=!rolling] add shake
+execute if entity @s[tag=searchable_by_vacuum,tag=swinging] run function luigis_mansion:items/poltergust_3000/effect_on_furniture/swing_pull
+execute if entity @s[tag=searchable_by_vacuum,tag=swirling] run function luigis_mansion:items/poltergust_3000/effect_on_furniture/swirl

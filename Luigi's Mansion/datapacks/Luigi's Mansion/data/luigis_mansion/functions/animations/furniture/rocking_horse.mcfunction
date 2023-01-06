@@ -9,3 +9,5 @@ scoreboard players reset #temp Time
 execute if entity @s[scores={Dialog=15}] run playsound luigis_mansion:furniture.rocking_horse.move_backward hostile @a[tag=same_room] ~ ~ ~ 1
 execute if entity @s[scores={Dialog=35}] run playsound luigis_mansion:furniture.rocking_horse.move_forward hostile @a[tag=same_room] ~ ~ ~ 1
 scoreboard players set @s[scores={Dialog=40}] Dialog 0
+tag @s[scores={Dialog=1}] add was_shaking
+tag @s[scores={Dialog=0}] remove was_shaking

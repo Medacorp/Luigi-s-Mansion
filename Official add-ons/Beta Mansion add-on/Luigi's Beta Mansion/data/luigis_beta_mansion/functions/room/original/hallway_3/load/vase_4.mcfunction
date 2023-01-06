@@ -1,2 +1,2 @@
-data modify storage luigis_mansion:data furniture{searchable:["vacuum"],scan_message:'{"translate":"luigis_mansion:message.player.scan_furniture.73"}'}
+data modify storage luigis_mansion:data furniture{shake_animation:["interact","vacuum"],scan_message:'{"translate":"luigis_mansion:message.player.scan_furniture.73"}'}
 execute positioned 714 12.5 -28 rotated -90 0 run function luigis_beta_mansion:spawn_furniture/vase

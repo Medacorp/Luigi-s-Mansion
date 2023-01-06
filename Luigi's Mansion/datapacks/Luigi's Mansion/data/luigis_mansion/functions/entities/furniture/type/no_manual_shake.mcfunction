@@ -1,1 +1,0 @@
-execute if entity @s[tag=no_manual_shake] run function luigis_mansion:entities/furniture/type/tick/no_manual_shake

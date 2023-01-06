@@ -1,6 +1,4 @@
-tag @s add no_visible_shake
-tag @s[tag=!searchable_by_hand] remove long_shake
-execute if entity @s[tag=shake] run function luigis_mansion:entities/furniture/shake
+execute if entity @s[tag=shake,tag=long_shake] run function luigis_mansion:entities/furniture/shake
 execute unless data entity @s Pose.Head[1] run data merge entity @s {Pose:{Head:[0.0f,0.001f,0.0f]}}
 
 execute if entity @s[scores={FurnitureXTarget=-900..900}] run function luigis_mansion:entities/furniture/type/tick/swinging/x
@@ -26,15 +24,18 @@ execute if score @s FurnitureVacuum matches 1.. if entity @s[scores={FurnitureZT
 execute if score @s FurnitureVacuum matches 0 if entity @s[scores={FurnitureZTarget=-900..900}] run scoreboard players operation @s FurnitureVacuum = @s FurnitureZTarget
 execute if score @s FurnitureVacuum matches ..-1 run scoreboard players operation @s FurnitureVacuum *= #-1 Constants
 
+execute if score @s FurnitureSearch >= @s FurnitureTime run scoreboard players add @s[tag=searchable_by_time] FurnitureTime 5
+
 scoreboard players operation #temp FurnitureVacuum = @s FurnitureVacuum
 scoreboard players operation #temp FurnitureVacuum /= #2 Constants
+execute if score @s[tag=searchable_by_time,tag=!open] FurnitureSearch <= @s FurnitureTime run function luigis_mansion:entities/furniture/search/generic
 execute if score @s[tag=!searched] FurnitureVacuum >= @s FurnitureSearch run function luigis_mansion:entities/furniture/search/swing
 execute if score @s[tag=swinging_harms] FurnitureVacuum >= @s FurnitureSearch run function luigis_mansion:entities/furniture/type/tick/swinging/hit
 execute if score @s[tag=searched] FurnitureVacuum < @s FurnitureSearch run tag @s remove searched
-execute if entity @s[tag=searchable_by_hand,tag=search] run function luigis_mansion:entities/furniture/search/generic
-tag @s remove search
+execute if entity @s[tag=searchable_by_interact,tag=search] run function luigis_mansion:entities/furniture/search/generic
 scoreboard players reset #temp FurnitureVacuum
 execute if entity @s[tag=drop_loot] run function luigis_mansion:entities/furniture/search/swing
-tag @s remove drop_loot
 
-tag @s remove in_vacuum
+execute if entity @s[tag=open,scores={ActionTime=0..}] run function #luigis_mansion:entities/furniture/open
+
+execute if entity @s[tag=sparkles,tag=!open] run function luigis_mansion:entities/furniture/spawn/sparkles

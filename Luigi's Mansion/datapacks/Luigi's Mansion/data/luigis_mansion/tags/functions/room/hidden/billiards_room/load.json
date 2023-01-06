@@ -3,7 +3,8 @@
 	    "luigis_mansion:room/hidden/billiards_room/load/set_loaded",
         "luigis_mansion:room/hidden/billiards_room/load/lights",
         "luigis_mansion:room/hidden/billiards_room/load/doors",
-        "luigis_mansion:room/hidden/billiards_room/load/billiard_balls",
+        "luigis_mansion:room/hidden/billiards_room/load/cobweb_1",
+        "luigis_mansion:room/hidden/billiards_room/load/cobweb_2",
         "luigis_mansion:room/hidden/billiards_room/load/fan",
         "luigis_mansion:room/hidden/billiards_room/load/painting_1",
         "luigis_mansion:room/hidden/billiards_room/load/painting_2",
@@ -11,8 +12,6 @@
         "luigis_mansion:room/hidden/billiards_room/load/painting_4",
         "luigis_mansion:room/hidden/billiards_room/load/painting_5",
         "luigis_mansion:room/hidden/billiards_room/load/painting_6",
-        "luigis_mansion:room/hidden/billiards_room/load/room_clear_chest",
-        "luigis_mansion:room/hidden/billiards_room/load/cobweb_1",
-        "luigis_mansion:room/hidden/billiards_room/load/cobweb_2"
+        "luigis_mansion:room/hidden/billiards_room/load/room_clear_chest"
 	]
 }

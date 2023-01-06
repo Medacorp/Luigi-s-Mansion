@@ -48,6 +48,7 @@ scoreboard objectives add FurnitureIce dummy
 scoreboard objectives add FurnitureRadius dummy
 scoreboard objectives add FurnitureRotDef dummy
 scoreboard objectives add FurnitureSearch dummy
+scoreboard objectives add FurnitureShake dummy
 scoreboard objectives add FurnitureSizeF dummy
 scoreboard objectives add FurnitureSizeL dummy
 scoreboard objectives add FurnitureSizeU dummy
@@ -98,7 +99,6 @@ scoreboard objectives add Invulnerable dummy
 scoreboard objectives add JarvisChoice trigger
 scoreboard objectives add Jump minecraft.custom:minecraft.jump
 scoreboard objectives add JumpHeight dummy
-scoreboard objectives add Keys dummy
 scoreboard objectives add KillerID dummy
 scoreboard objectives add KnockbackDamage dummy
 scoreboard objectives add KnockbackTime dummy
@@ -158,7 +158,6 @@ scoreboard objectives add PrevRoom dummy
 scoreboard objectives add PrevTotalDamage dummy
 scoreboard objectives add Pull dummy
 scoreboard objectives add PullStrength dummy
-scoreboard objectives add PunchingBag dummy
 scoreboard objectives add Range dummy
 scoreboard objectives add ReflectionNr dummy
 scoreboard objectives add ResetChoice trigger
@@ -222,7 +221,6 @@ scoreboard objectives add WalkOnWater minecraft.custom:minecraft.walk_on_water_o
 scoreboard objectives add WalkUnderWater minecraft.custom:minecraft.walk_under_water_one_cm
 scoreboard objectives add WarpTime dummy
 scoreboard objectives add Wave dummy
-scoreboard objectives add Wool dummy
 scoreboard objectives add YellTime dummy
 
 scoreboard players set #-1 Constants -1
@@ -244,6 +242,8 @@ scoreboard players set #1000 Constants 1000
 scoreboard players set #2000 Constants 2000
 scoreboard players set #10000 Constants 10000
 scoreboard players set #20000 Constants 20000
+execute store result score #players Totals if entity @a[gamemode=!spectator]
+execute store result score #all_players Totals if entity @a
 
 scoreboard objectives setdisplay list Health
 

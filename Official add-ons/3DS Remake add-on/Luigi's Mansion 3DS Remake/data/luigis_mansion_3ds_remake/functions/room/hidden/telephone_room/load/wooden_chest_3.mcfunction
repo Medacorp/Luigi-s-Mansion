@@ -1,3 +1,3 @@
-data modify storage luigis_mansion:data furniture set value {searchable:["hand","vacuum"],sound:0,can_hide_boo:1b,scan_message:'{"translate":"luigis_mansion:message.player.scan_furniture.11"}'}
+data modify storage luigis_mansion:data furniture set value {searchable:["interact","vacuum"],shake_animation:["interact","vacuum"],sound:0,can_hide_boo:1b,scan_message:'{"translate":"luigis_mansion:message.player.scan_furniture.11"}'}
 execute unless data storage luigis_mansion:data current_state.current_data{money_spawned:["telephone_room_wooden_chest_3"]} run data modify storage luigis_mansion:data furniture.loot set value {name:"telephone_room_wooden_chest_3",contents:{luigis_mansion:{gold_coin:20,bill:20}}}
 execute positioned 754.0 29 4 rotated -20 0 run function luigis_mansion:spawn_furniture/wooden_chest

@@ -24,7 +24,7 @@ scoreboard players set @e[tag=this_entity,limit=1] EntitySizeW 16
 scoreboard players set @e[tag=this_entity,limit=1] EntitySizeH 26
 scoreboard players set @e[tag=this_entity,limit=1] EntityYOffset 20
 scoreboard players set @e[tag=this_entity,limit=1] AttackType 0
-execute if data storage luigis_mansion:data entity{attack_type:"attack"} run scoreboard players set @e[tag=this_entity,limit=1] AttackType 1
+execute if data storage luigis_mansion:data entity{attack_type:"drop_bomb"} run scoreboard players set @e[tag=this_entity,limit=1] AttackType 1
 execute if data storage luigis_mansion:data entity{appear_type:"none"} run tag @e[tag=this_entity,limit=1] add no_appear
 execute if data storage luigis_mansion:data entity{disappear_on_vanish:1b} run tag @e[tag=this_entity,limit=1] add disappear_on_vanish
 execute if data storage luigis_mansion:data entity.health as @e[tag=this_entity,limit=1] store result score @s Health store result score @s LastHealth run data get storage luigis_mansion:data entity.health

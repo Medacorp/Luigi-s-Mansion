@@ -11,8 +11,8 @@ tag @s remove in_water
 
 execute if entity @s[scores={FurnitureSearch=40},tag=searchable_by_water] run function luigis_mansion_3ds_remake:room/gallery/clear_task/beginner/task_5
 execute if entity @s[scores={FurnitureSearch=40},tag=searchable_by_water] run function luigis_mansion:entities/furniture/search/generic
-execute if entity @s[tag=searchable_by_hand,tag=search] run function luigis_mansion:entities/furniture/search/generic
-tag @s[tag=!searchable_by_hand,tag=search] add open
+execute if entity @s[tag=searchable_by_interact,tag=search] run function luigis_mansion:entities/furniture/search/generic
+tag @s[tag=!searchable_by_interact,tag=search] add open
 tag @s remove search
 execute if entity @s[tag=drop_loot] run function luigis_mansion:entities/furniture/search/generic
 tag @s remove drop_loot

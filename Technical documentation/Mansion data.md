@@ -1,0 +1,117 @@
+Mansion data is a massive collection of info storing everything the map needs to know
+
+```
+{
+    data_version:X, //Used by upgrade paths to convert old save-data to the newer format.
+    data_index:X, //The mansion save data index.
+    can_clear_hidden:1b, //Used by the GCN hidden mansion. It is set to 0b the moment the data had to be looked for in the mansion_data list.
+    in_mansion_time:X, //How many ticks have been spent in this mansion.
+    lowest_health_moment:X, //The lowest anyone's health has ever been in this mansion.
+    boo_counter:X, //How many Boos are caught, to show on the boo counter and use to determine what caught Boo call variant you get.
+    drop_item_on_damage:"<namespaced item ID>", //The item type dropped on damage, and the item type looked at by the heart_money_count global variable.
+    blackout:0b, //Whether the mansion is currently in the blackout.
+    dead_players:[], //Player UUIDs that have died.
+    ghosts_caught:[], //The mansion-local ghosts caught by player list, see save data documentation for more info.
+    money_grabbed:[], //The mansion-local money grabbed by player list, see save data documentation for more info.
+    technical_data:{}, //Flags set by the mansion to remember if certain events happened or not, where absent = not.
+    used_keys:[], //List of door names of keys that have been used.
+    obtained_keys:[], //List of door names of keys that have been collected.
+    obtained_items:{}, //Flags of specific items that have been collected, where absent = not. (Mario items, boo radar, element medals)
+    money_spawned:[], //List of loot names of loot that has been spawned before. Also contains entries for room clear chests opened, and "_money" entries for collecting any eternal coin in a room.
+    tracking_boos:[], //3DS REMAKE ADD-ON ONLY; a list of at most 3 Boo names to show on the map. Added when spawned, removed when captured.
+    gooigi_stats:{//3DS REMAKE ADD-ON ONLY; Gooigi's money and ghost count.
+        ghosts:X, //How many ghosts Gooigi has defeated.
+        money:X //How many Gs worth of money Gooigi has collected, excluding the last 3 0s.
+    }, 
+    rooms:{ //Room data.
+        <name>:{ //A room.
+            seen:0b, //Whether the room has been entered before. Used by the map to mark rooms light gray or hallways lime.
+            cleared:0b //Whether the room is cleared. Turns on lamps (if blackout is 0b) and colors the room on the map.
+            time_spend_in:X //ORIGINAL MANSION ONLY; a local timer like in_mansion_time, specific to this room. Used to determine how many coins you get from the room clear chest.
+        }
+    },
+    portrait_ghosts:{ //Portrait ghost data.
+        <name>:{ //A portrait ghost.
+            portrificationized:0b, //BASE; When health is 0, and this is 0b, the ghost can be portrificationized and turned into a painting. It is then set to 1b.
+            rank:-1b, //BASE; The rank you're obtained. Default = -1b, which is bronze, just like 0b; 1b is silver, 2b and above is gold, and 3b and above is platinum if 3DS Remake add-on is installed.
+            top_vacuum_damage:0, //The highest amount of damage dealt in 1 suction.
+            max_health:X, //The max health. Together with health, used to determine the pearl size to drop.
+            //See also HP-having ghost data below
+        },
+        henry_and_orville:{ //Save format for henry and orville.
+            henry:{ //Henry's values.
+                //Non-base portrait ghost data.
+            },
+            orville:{ //Orville's values.
+                //Non-base portrait ghost data.
+            },
+            //BASE portrait ghost data.
+        },
+        clockwork_soldiers:{ //Save format for clockwork soldiers.
+            blue:{ //Blue soldier's values.
+                //Non-base portrait ghost data.
+            },
+            pink:{ //Pink soldier's values.
+                //Non-base portrait ghost data.
+            },
+            green:{ //Green soldier's values.
+                //Non-base portrait ghost data.
+            },
+            //BASE portrait ghost data.
+        },
+        boolossus:{ //Boolossus' data; speed is treated differently for him, flee_speed doesn't exist.
+            speed:70, //The sum of all split Boos' speed. The more Boos, the slower. The value represents the speed a single split boo would have if Boolossus popped with a current health of 1.
+            merged_speed:30, //The speed the merged Boolossus form has.
+            //Other portrait ghost data.
+        }
+    },
+    boos:[
+        {
+            name:"<name>", //The name of this Boo.
+            room:X, //The room number this Boo is in.
+            trap_found:0b, //Whether or not the trap from this Boo has been found before.
+            //See also HP-having ghost data below, all fields except flee_speed and vanish_time.
+        }
+    ],
+    ghosts:{ //Normal ghost variables.
+        <HP-having ghost>:{ //A ghost with HP (eg a gold ghost).
+            health:X, //Health at spawn.
+            loot:{ //Loot this ghost drops upon defeat.
+                drop_at_0:1b, //When set, spawns the loot the moment health drops to 0, otherwise spawns it the moment the ghost is reeled in. Default = 0b.
+                //See loot documentation for other variables.
+            },
+            speed:0, //The movement speed of the ghost.
+            flee_speed:20, //The movement speed of the ghost while fleeing from the Poltergust.
+            vanish_time:-1, //How many ticks the ghost can stay in the world, haunting, but not attacking, laughing, complaining, being collided with, etc. before it vanishes. -1 means never. Default = -1.
+            damage:{ //Damage values the ghost uses in its functions.
+                <type>:X //The amount of damage dealt. Type is usually collision and attack (also used by created projectiles), but can be other values. Default = 0.
+            }
+        },
+        <no-HP-having ghost>:{ //A ghost without HP (eg a bat).
+            loot:{ //Loot this ghost drops upon defeat.
+                //See loot documentation for other variables.
+            },
+            speed:0, //The movement speed of the ghost.
+            damage:{ //Damage values the ghost uses in its functions.
+                <type>:X //The amount of damage dealt. Type is usually attack or collision, but can be other values. Default = 0.
+            }
+        }
+        black_bogmire:{ //Values used by black bogmires.
+            small_loot:{ //Loot small ones drops upon defeat.
+                //See loot documentation for other variables.
+            },
+            big_loot:{ //Loot big ones drops upon defeat.
+                //See loot documentation for other variables.
+            },
+            small_speed:X, //The movement speed of the small ones.
+            big_speed:X, //The movement speed of the big ones.
+            small_damage:{ //Damage values the small ones use in its functions.
+                collision:X //The amount of damage dealt. Default = 0.
+            },
+            big_damage:{ //Damage values the big ones use in its functions.
+                collision:X //The amount of damage dealt. Default = 0.
+            }
+        }
+    }
+}
+```

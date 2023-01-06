@@ -15,4 +15,6 @@ execute if entity @s[scores={FurnitureSound=13}] run function luigis_mansion:blo
 execute if entity @s[scores={FurnitureSound=14}] run function luigis_mansion:blocks/search_sound/harp
 execute if entity @s[scores={FurnitureSound=15}] run function luigis_mansion:blocks/search_sound/saxophone
 execute if entity @s[scores={FurnitureSound=16}] run function luigis_mansion:blocks/search_sound/xylophone
+execute if entity @s[scores={FurnitureSound=17}] run function luigis_mansion:blocks/search_sound/chest
 scoreboard players set @s Sound 3
+scoreboard players set @s[scores={FurnitureSound=17}] Sound 20
