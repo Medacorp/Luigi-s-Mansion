@@ -16,5 +16,8 @@ function luigis_mansion:spawn_furniture/setup/dialog
 function luigis_mansion:spawn_furniture/setup/boo_can_hide_in
 function luigis_mansion:spawn_furniture/setup/scan_message
 
+# Other
+function luigis_mansion:spawn_furniture/setup/tags
+
 # If it never can be affected by anything, it never animates, and as such its reflection doesn't need updates
 function luigis_mansion:spawn_furniture/setup/static

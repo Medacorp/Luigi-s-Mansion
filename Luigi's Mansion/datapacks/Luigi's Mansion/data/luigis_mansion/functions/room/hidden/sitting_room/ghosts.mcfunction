@@ -1,5 +1,5 @@
 execute if score #sitting_room Wave matches 2 unless entity @e[tag=ghost,tag=!optional_ghost,scores={Room=69},limit=1] run function luigis_mansion:room/hidden/sitting_room/clear
-execute if score #sitting_room Wave matches 1 if block 736 22 40 minecraft:redstone_wall_torch if block 736 22 42 minecraft:redstone_wall_torch run function luigis_mansion:room/hidden/sitting_room/wave_2
+execute if score #sitting_room Wave matches 1 unless entity @e[tag=light_me,tag=!lit,scores={Room=69},limit=1] run function luigis_mansion:room/hidden/sitting_room/wave_2
 execute if score #sitting_room Wave matches 1 if score #sitting_room_candle_3 Searched matches 1 run tag @e[x=736.5,y=20,z=49.5,distance=..0.7,tag=door,tag=frame] remove blockade
 execute if score #sitting_room Wave matches 1..2 if entity @e[x=736.5,y=20,z=49.5,distance=..0.7,tag=door,tag=frame,tag=!blockade] run scoreboard players set #sitting_room Wave -1
 execute unless data storage luigis_mansion:data current_state.current_data.rooms.sitting_room{cleared:1b} if data storage luigis_mansion:data current_state.current_data{blackout:0b} unless score #sitting_room Wave matches -1.. run function luigis_mansion:room/hidden/sitting_room/wave_1

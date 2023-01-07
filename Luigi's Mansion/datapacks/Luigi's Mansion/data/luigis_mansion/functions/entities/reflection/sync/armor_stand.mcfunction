@@ -10,6 +10,7 @@ execute store result entity @s Pose.RightLeg[2] float 0.01 run data get storage 
 execute store result entity @s Pose.LeftLeg[1] float 0.01 run data get storage luigis_mansion:data mirror.data.Pose.LeftLeg[1] -100
 execute store result entity @s Pose.LeftLeg[2] float 0.01 run data get storage luigis_mansion:data mirror.data.Pose.LeftLeg[2] -100
 data modify entity @s Small set from storage luigis_mansion:data mirror.data.Small
+data modify entity @s HasVisualFire set from storage luigis_mansion:data mirror.data.HasVisualFire
 data modify entity @s ArmorItems set from storage luigis_mansion:data mirror.data.ArmorItems
 data modify entity @s HandItems[0] set from storage luigis_mansion:data mirror.data.HandItems[1]
 data modify entity @s HandItems[1] set from storage luigis_mansion:data mirror.data.HandItems[0]
