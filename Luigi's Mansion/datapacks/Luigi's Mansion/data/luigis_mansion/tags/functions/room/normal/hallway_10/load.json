@@ -3,8 +3,8 @@
 	    "luigis_mansion:room/normal/hallway_10/load/set_loaded",
         "luigis_mansion:room/normal/hallway_10/load/lights",
         "luigis_mansion:room/normal/hallway_10/load/doors",
-        "luigis_mansion:room/normal/hallway_10/load/lonely_wall_candelabra_1",
-        "luigis_mansion:room/normal/hallway_10/load/lonely_wall_candelabra_2",
-        "luigis_mansion:room/normal/hallway_10/load/painting"
+        "luigis_mansion:room/normal/hallway_10/load/painting",
+        "luigis_mansion:room/normal/hallway_10/load/simple_wall_candelabra_1",
+        "luigis_mansion:room/normal/hallway_10/load/simple_wall_candelabra_2"
 	]
 }

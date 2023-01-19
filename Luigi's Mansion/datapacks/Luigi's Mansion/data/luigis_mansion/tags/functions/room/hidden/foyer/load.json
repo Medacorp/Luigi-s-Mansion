@@ -4,12 +4,12 @@
         "luigis_mansion:room/hidden/foyer/load/lights",
         "luigis_mansion:room/hidden/foyer/load/doors",
         "luigis_mansion:room/hidden/foyer/load/spawn_toad",
-        "luigis_mansion:room/hidden/foyer/load/candle_1",
         "luigis_mansion:room/hidden/foyer/load/candle_2",
         "luigis_mansion:room/hidden/foyer/load/candle_3",
-        "luigis_mansion:room/hidden/foyer/load/candle_4",
         "luigis_mansion:room/hidden/foyer/load/cobweb_1",
         "luigis_mansion:room/hidden/foyer/load/cobweb_2",
-        "luigis_mansion:room/hidden/foyer/load/scan_area"
+        "luigis_mansion:room/hidden/foyer/load/scan_area",
+        "luigis_mansion:room/hidden/foyer/load/simple_triple_wall_candelabra_1",
+        "luigis_mansion:room/hidden/foyer/load/simple_triple_wall_candelabra_2"
 	]
 }

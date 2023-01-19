@@ -3,9 +3,9 @@
 	    "luigis_mansion:room/hidden/hallway_20/load/set_loaded",
         "luigis_mansion:room/hidden/hallway_20/load/lights",
         "luigis_mansion:room/hidden/hallway_20/load/doors",
-        "luigis_mansion:room/hidden/hallway_20/load/candle_1",
-        "luigis_mansion:room/hidden/hallway_20/load/candle_2",
         "luigis_mansion:room/hidden/hallway_20/load/cobweb",
-        "luigis_mansion:room/hidden/hallway_20/load/lamp"
+        "luigis_mansion:room/hidden/hallway_20/load/lamp",
+        "luigis_mansion:room/hidden/hallway_20/load/stone_bowl_wall_candelabra_1",
+        "luigis_mansion:room/hidden/hallway_20/load/stone_bowl_wall_candelabra_2"
 	]
 }

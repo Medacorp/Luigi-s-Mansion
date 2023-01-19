@@ -21,7 +21,7 @@ teleport @s[scores={Dialog=216..255}] ~ ~ ~0.2
 execute if entity @s[scores={Dialog=242}] positioned 751 13 14 run function luigis_mansion:spawn_furniture/unlit_candles
 teleport @s[scores={Dialog=255..274}] ~-0.2 ~0.2 ~
 teleport @s[scores={Dialog=275..294}] ~-0.1 ~ ~-0.1
-execute if entity @s[scores={Dialog=280}] run setblock 744 18 16 minecraft:tripwire_hook[facing=east]
+execute if entity @s[scores={Dialog=270..290}] positioned ~ ~-1.4 ~ run tag @e[tag=candle_flame,distance=..2.5] add extinguish
 teleport @s[scores={Dialog=295..319}] ~ ~0.16 ~-0.2
 teleport @s[scores={Dialog=320..339}] ~ ~ ~-0.05
 teleport @s[scores={Dialog=340..359}] ~-0.4 ~ ~

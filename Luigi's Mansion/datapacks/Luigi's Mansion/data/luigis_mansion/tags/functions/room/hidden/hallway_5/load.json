@@ -4,18 +4,13 @@
         "luigis_mansion:room/hidden/hallway_5/load/lights",
         "luigis_mansion:room/hidden/hallway_5/load/doors",
         "luigis_mansion:room/hidden/hallway_5/load/spawn_shivers",
-        "luigis_mansion:room/hidden/hallway_5/load/lonely_wall_candelabra_1",
-        "luigis_mansion:room/hidden/hallway_5/load/lonely_wall_candelabra_2",
-        "luigis_mansion:room/hidden/hallway_5/load/lonely_wall_candelabra_3",
-        "luigis_mansion:room/hidden/hallway_5/load/lonely_wall_candelabra_4",
-        "luigis_mansion:room/hidden/hallway_5/load/lonely_wall_candelabra_5",
-        "luigis_mansion:room/hidden/hallway_5/load/lonely_wall_candelabra_6",
-        "luigis_mansion:room/hidden/hallway_5/load/lonely_wall_candelabra_7",
-        "luigis_mansion:room/hidden/hallway_5/load/lonely_wall_candelabra_8",
-        "luigis_mansion:room/hidden/hallway_5/load/lonely_wall_candelabra_9",
         "luigis_mansion:room/hidden/hallway_5/load/painting",
         "luigis_mansion:room/hidden/hallway_5/load/ringed_vase_1",
         "luigis_mansion:room/hidden/hallway_5/load/ringed_vase_2",
-        "luigis_mansion:room/hidden/hallway_5/load/ringed_vase_3"
+        "luigis_mansion:room/hidden/hallway_5/load/ringed_vase_3",
+        "luigis_mansion:room/hidden/hallway_5/load/simple_wall_candelabra_1",
+        "luigis_mansion:room/hidden/hallway_5/load/simple_wall_candelabra_2",
+        "luigis_mansion:room/hidden/hallway_5/load/simple_wall_candelabra_3",
+        "luigis_mansion:room/hidden/hallway_5/load/simple_wall_candelabra_4"
 	]
 }

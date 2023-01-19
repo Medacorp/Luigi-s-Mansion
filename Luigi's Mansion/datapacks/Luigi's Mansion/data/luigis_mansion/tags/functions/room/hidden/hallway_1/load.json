@@ -6,9 +6,9 @@
         "luigis_mansion:room/hidden/hallway_1/load/spawn_money",
         "luigis_mansion:room/hidden/hallway_1/load/cobweb_1",
         "luigis_mansion:room/hidden/hallway_1/load/cobweb_2",
-        "luigis_mansion:room/hidden/hallway_1/load/lonely_wall_candelabra_1",
-        "luigis_mansion:room/hidden/hallway_1/load/lonely_wall_candelabra_2",
         "luigis_mansion:room/hidden/hallway_1/load/ringed_vase_1",
-        "luigis_mansion:room/hidden/hallway_1/load/ringed_vase_2"
+        "luigis_mansion:room/hidden/hallway_1/load/ringed_vase_2",
+        "luigis_mansion:room/hidden/hallway_1/load/simple_wall_candelabra_1",
+        "luigis_mansion:room/hidden/hallway_1/load/simple_wall_candelabra_2"
 	]
 }

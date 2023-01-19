@@ -3,7 +3,7 @@
 	    "luigis_beta_mansion:room/original/hallway_4/load/set_loaded",
         "luigis_beta_mansion:room/original/hallway_4/load/lights",
         "luigis_beta_mansion:room/original/hallway_4/load/doors",
-        "luigis_beta_mansion:room/original/hallway_4/load/lonely_wall_candelabra_1",
-        "luigis_beta_mansion:room/original/hallway_4/load/lonely_wall_candelabra_2"
+        "luigis_beta_mansion:room/original/hallway_4/load/simple_wall_candelabra_1",
+        "luigis_beta_mansion:room/original/hallway_4/load/simple_wall_candelabra_2"
 	]
 }

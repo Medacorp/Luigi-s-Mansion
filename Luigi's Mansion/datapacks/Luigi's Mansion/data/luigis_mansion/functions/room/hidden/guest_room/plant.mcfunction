@@ -1,3 +1,3 @@
-execute unless data storage luigis_mansion:data current_state.current_data{money_spawned:["guest_room_column_mounted_fern"]} run function luigis_mansion:spawn_entities/item/blue_sapphire
-execute if data storage luigis_mansion:data current_state.current_data{money_spawned:["guest_room_column_mounted_fern"]} run tag @e[tag=selected] add nothing
-execute unless data storage luigis_mansion:data current_state.current_data{money_spawned:["guest_room_column_mounted_fern"]} run data modify storage luigis_mansion:data current_state.current_data.money_spawned append value "guest_room_column_mounted_fern"
+execute unless data storage luigis_mansion:data current_state.current_data{money_spawned:["guest_room_column_mounted_blue_potted_fern"]} run function luigis_mansion:spawn_entities/item/blue_sapphire
+execute if data storage luigis_mansion:data current_state.current_data{money_spawned:["guest_room_column_mounted_blue_potted_fern"]} run tag @e[tag=selected] add nothing
+execute unless data storage luigis_mansion:data current_state.current_data{money_spawned:["guest_room_column_mounted_blue_potted_fern"]} run data modify storage luigis_mansion:data current_state.current_data.money_spawned append value "guest_room_column_mounted_blue_potted_fern"
