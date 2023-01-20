@@ -1808,7 +1808,7 @@
 "luigis_mansion:settings.game.music": "Music is assigned to the music slider, and the Ambience slider if there's multiple tracks at once. Luigi's humming is controlled via the Player slider.",
 "luigis_mansion:settings.game.server": "Make sure that these are the values for the following fields, in case you run this map on a server:",
 "luigis_mansion:settings.game.sounds": "Sounds are assigned to their proper slider, ghosts assigned to Hostile Creatures, E. Gadd to Friendly Creatures, etc.",
-"luigis_mansion:settings.global_player_names": "(Global setting) Player names",
+"luigis_mansion:settings.global_player_names": "(Global) Player names",
 "luigis_mansion:settings.map": "Check map settings.",
 "luigis_mansion:settings.modified": "Set \"%s\" to \"%s\".",
 "luigis_mansion:settings.modified_global": "%s set \"%s\" to \"%s\".",

@@ -1,5 +1,6 @@
 Q. Is the map multiplayer compatible?
 A. Absolutely! The map even provides different translation strings based on player count so languages can properly pluralize them.
+It is problematic when ping is too high though, so it's recommended to play LAN if you want to play multiplayer.
 
 Q. How do I scan furniture?
 A. 1. Use the Gameboy Horror, and choose the scan furniture option.
