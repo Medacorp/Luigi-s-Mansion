@@ -2,6 +2,7 @@ execute at @s run summon minecraft:marker ~ ~ ~ {Tags:["temp","remove_from_exist
 execute store result entity @e[type=minecraft:marker,tag=temp,limit=1] Pos[0] double 0.01 run scoreboard players get @s PosX
 execute store result entity @e[type=minecraft:marker,tag=temp,limit=1] Pos[2] double 0.01 run scoreboard players get @s PosZ
 
+scoreboard players set @s[scores={ScareTime=20,ScareType=1}] Animation 39
 execute at @s[scores={ScareTime=20,ScareType=1,Health=41..,Shrunk=0}] run playsound luigis_mansion:entity.player.scare.high_health player @a[tag=same_room] ~ ~ ~ 1
 execute at @s[scores={ScareTime=20,ScareType=1,Health=41..,Shrunk=1..}] run playsound luigis_mansion:entity.player.scare.high_health player @a[tag=same_room] ~ ~ ~ 1 2
 execute at @s[scores={ScareTime=20,ScareType=1,Health=..40,Shrunk=0}] run playsound luigis_mansion:entity.player.scare.low_health player @a[tag=same_room] ~ ~ ~ 1
@@ -11,6 +12,7 @@ execute at @s[scores={ScareTime=1..,ScareType=1}] positioned as @e[type=minecraf
 execute at @s[scores={ScareTime=1..,ScareType=1}] positioned as @e[type=minecraft:marker,tag=temp,limit=1] run teleport @s ~ ~ ~
 scoreboard players remove @s[scores={ScareType=1}] ScareTime 1
 
+scoreboard players set @s[scores={ScareTime=100,ScareType=2}] Animation 40
 execute at @s[scores={ScareTime=100,ScareType=2,Health=41..,Shrunk=0}] run playsound luigis_mansion:entity.player.scare_freeze.high_health player @a[tag=same_room] ~ ~ ~ 1
 execute at @s[scores={ScareTime=100,ScareType=2,Health=41..,Shrunk=1..}] run playsound luigis_mansion:entity.player.scare_freeze.high_health player @a[tag=same_room] ~ ~ ~ 1 2
 execute at @s[scores={ScareTime=100,ScareType=2,Health=..40,Shrunk=0}] run playsound luigis_mansion:entity.player.scare_freeze.low_health player @a[tag=same_room] ~ ~ ~ 1
@@ -60,6 +62,7 @@ execute at @s[scores={ScareTime=62,ScareType=2},tag=flipped_gravity] facing enti
 execute at @s[scores={ScareTime=..61,ScareType=2},tag=flipped_gravity] facing entity @e[type=minecraft:marker,tag=temp,limit=1] feet rotated ~ 0 run teleport @s ^ ^ ^ ~ ~90
 scoreboard players remove @s[scores={ScareType=2}] ScareTime 1
 
+scoreboard players set @s[scores={ScareTime=51,ScareType=3..4}] Animation 41
 execute at @s[scores={ScareTime=51,ScareType=3..4,Health=41..,Shrunk=0}] run playsound luigis_mansion:entity.player.scare_bashed.high_health player @a[tag=same_room] ~ ~ ~ 1
 execute at @s[scores={ScareTime=51,ScareType=3..4,Health=41..,Shrunk=1..}] run playsound luigis_mansion:entity.player.scare_bashed.high_health player @a[tag=same_room] ~ ~ ~ 1 2
 execute at @s[scores={ScareTime=51,ScareType=3..4,Health=..40,Shrunk=0}] run playsound luigis_mansion:entity.player.scare_bashed.low_health player @a[tag=same_room] ~ ~ ~ 1

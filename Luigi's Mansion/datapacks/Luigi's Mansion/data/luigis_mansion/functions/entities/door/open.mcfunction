@@ -17,4 +17,4 @@ execute if entity @s[tag=unlock] positioned ^ ^ ^0.5 rotated ~-180 ~ align xz ru
 execute if entity @s[tag=unlock,tag=!pull] as @a[tag=try_opening_door,limit=1,sort=nearest] run function luigis_mansion:entities/player/animation/set/door/unlock/push
 execute if entity @s[tag=unlock,tag=pull] as @a[tag=try_opening_door,limit=1,sort=nearest] run function luigis_mansion:entities/player/animation/set/door/unlock/pull
 
-execute if entity @s[tag=left] run tag @a[tag=try_opening_door,limit=1,sort=nearest] add left_door
+execute if entity @s[tag=left] as @a[tag=try_opening_door,limit=1,sort=nearest] run scoreboard players add @s[scores={Animation=13..23}] Animation 1

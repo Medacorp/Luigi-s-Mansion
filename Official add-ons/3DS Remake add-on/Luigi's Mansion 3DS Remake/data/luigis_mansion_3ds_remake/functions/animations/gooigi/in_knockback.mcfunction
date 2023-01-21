@@ -10,7 +10,5 @@ tag @s remove was_swimming
 tag @s remove swimming
 tag @s remove was_sneak_posing
 tag @s remove sneak_pos
-tag @s remove was_looking_at_map
-tag @s remove looking_at_map
 tag @s remove riding_poltergust
 scoreboard players set @s Time 0

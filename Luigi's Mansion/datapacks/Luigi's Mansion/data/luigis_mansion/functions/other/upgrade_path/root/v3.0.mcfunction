@@ -22,12 +22,12 @@ data remove storage luigis_mansion:data elemental_source_nr
 data remove storage luigis_mansion:data reflection_nr
 scoreboard objectives remove Attack
 scoreboard objectives remove ForcedDamage
+scoreboard objectives remove InteractionType
 scoreboard objectives remove Keys
 scoreboard objectives remove PunchingBag
 scoreboard objectives remove Wool
+scoreboard objectives remove YellTime
 scoreboard objectives add ClearInventory dummy
-scoreboard objectives add PoltergustTime dummy
 scoreboard players set * ClearInventory 1
-scoreboard players set * PoltergustTime 0
 scoreboard players operation #heart_money_count Selected = #heart_coin_count Selected
 scoreboard players reset #heart_coin_count Selected

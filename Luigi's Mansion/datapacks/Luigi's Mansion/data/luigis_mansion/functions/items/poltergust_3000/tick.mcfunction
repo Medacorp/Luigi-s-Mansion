@@ -23,7 +23,7 @@ execute unless entity @s[scores={IdleTime=..-1},tag=!idle] run tag @s[tag=!polte
 execute if entity @s[nbt={Inventory:[{tag:{luigis_mansion:{id:"luigis_mansion:poltergust_3000",sync_element:1b}}}]}] run function luigis_mansion:items/poltergust_3000/sync_element
 tag @s[tag=!poltergust_selected] remove expelling
 scoreboard players set @s[tag=!poltergust_selected] VacuumErrors 0
-scoreboard players set @s[tag=!poltergust_selected] Pull 0
+scoreboard players set @s[tag=!poltergust_selected,scores={Animation=-4}] Animation 0
 tag @s[tag=!poltergust_selected] remove made_error
 tag @s[tag=poltergust_selected,tag=!vacuuming_ghost,scores={UseItem=1..},tag=!expelling] add toggle_expelling
 tag @s[tag=poltergust_selected,tag=!vacuuming_ghost,tag=toggle_expelling] add expelling
@@ -36,4 +36,4 @@ execute if entity @s[tag=expelling,tag=poltergust_selected,scores={PoltergustTim
 execute if entity @s[tag=vaporizing_ghost] as @e[tag=captured,tag=element_death] at @s run function luigis_mansion:items/poltergust_3000/vaporize
 tag @s remove vaporizing_ghost
 scoreboard players set @s[tag=!vacuuming_ghost] GhostCount 0
-scoreboard players set @s[tag=!vacuuming_ghost] Pull 0
+scoreboard players set @s[tag=!vacuuming_ghost,scores={Animation=-4}] Animation 0

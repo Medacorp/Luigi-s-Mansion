@@ -2,12 +2,14 @@ summon minecraft:marker ^ ^-1 ^ {Tags:["temp","remove_from_existence"]}
 execute store result entity @e[type=minecraft:marker,tag=temp,limit=1] Pos[0] double 0.01 run scoreboard players get @s KnockbackX
 execute store result entity @e[type=minecraft:marker,tag=temp,limit=1] Pos[2] double 0.01 run scoreboard players get @s KnockbackZ
 
+scoreboard players set @s[scores={KnockbackTime=10,KnockbackType=1}] Animation 27
 execute at @s[scores={KnockbackTime=10,KnockbackType=1,Sound=0,Shrunk=0},tag=!gooigi] run playsound luigis_mansion:entity.player.hurt_little player @a[tag=same_room] ~ ~ ~ 1
 execute at @s[scores={KnockbackTime=10,KnockbackType=1,Sound=0,Shrunk=1..},tag=!gooigi] run playsound luigis_mansion:entity.player.hurt_little player @a[tag=same_room] ~ ~ ~ 1 2
 scoreboard players set @s[scores={KnockbackTime=10,KnockbackType=1,Sound=0},tag=!gooigi] Sound 20
 execute at @s[scores={KnockbackTime=2..,KnockbackType=1}] facing entity @e[type=minecraft:marker,tag=temp,limit=1] feet rotated ~ ~ run teleport @s ^ ^ ^ ~ ~
 execute at @s[scores={KnockbackTime=1,KnockbackType=1}] facing entity @e[type=minecraft:marker,tag=temp,limit=1] feet rotated ~ 0 run teleport @s ^ ^ ^ ~ ~
 
+scoreboard players set @s[scores={KnockbackTime=20,KnockbackType=2..3}] Animation 28
 execute at @s[scores={KnockbackType=2..3}] run function luigis_mansion:entities/player/knockback_lock_position
 execute at @s[scores={KnockbackTime=20,KnockbackType=2..3,Sound=0,Shrunk=0},tag=!gooigi] run playsound luigis_mansion:entity.player.hurt_little player @a[tag=same_room] ~ ~ ~ 1
 execute at @s[scores={KnockbackTime=20,KnockbackType=2..3,Sound=0,Shrunk=1..},tag=!gooigi] run playsound luigis_mansion:entity.player.hurt_little player @a[tag=same_room] ~ ~ ~ 1 2
@@ -49,6 +51,7 @@ execute at @s[scores={KnockbackTime=3,KnockbackType=2..3},tag=flipped_gravity] f
 execute at @s[scores={KnockbackType=2}] rotated ~ 0 run teleport @s ^ ^ ^-0.05
 execute at @s[scores={KnockbackType=3}] rotated ~ 0 run teleport @s ^ ^ ^0.05
 
+scoreboard players set @s[scores={KnockbackTime=60,KnockbackType=4}] Animation 29
 execute at @s[scores={KnockbackTime=60,KnockbackType=4,Sound=0,Health=41..,Shrunk=0},tag=!gooigi] run playsound luigis_mansion:entity.player.hurt_scare.high_health player @a[tag=same_room] ~ ~ ~ 1
 execute at @s[scores={KnockbackTime=60,KnockbackType=4,Sound=0,Health=41..,Shrunk=1..},tag=!gooigi] run playsound luigis_mansion:entity.player.hurt_scare.high_health player @a[tag=same_room] ~ ~ ~ 1 2
 execute at @s[scores={KnockbackTime=60,KnockbackType=4,Sound=0,Health=..40,Shrunk=0},tag=!gooigi] run playsound luigis_mansion:entity.player.hurt_scare.low_health player @a[tag=same_room] ~ ~ ~ 1
@@ -67,6 +70,7 @@ scoreboard players set @s[scores={KnockbackTime=10,KnockbackType=4,Sound=0},tag=
 execute at @s[scores={KnockbackType=4}] run function luigis_mansion:entities/player/knockback_lock_position
 execute at @s[scores={KnockbackTime=31..,KnockbackType=4}] facing entity @e[type=minecraft:marker,tag=temp,limit=1] feet rotated ~ 0 run teleport @s ^ ^ ^-0.16 ~ ~
 
+scoreboard players set @s[scores={KnockbackTime=60,KnockbackType=5}] Animation 30
 execute at @s[scores={KnockbackTime=60,KnockbackType=5,Sound=0,Shrunk=0},tag=!gooigi] run playsound luigis_mansion:entity.player.hurt_burn player @a[tag=same_room] ~ ~ ~ 1
 execute at @s[scores={KnockbackTime=60,KnockbackType=5,Sound=0,Shrunk=1..},tag=!gooigi] run playsound luigis_mansion:entity.player.hurt_burn player @a[tag=same_room] ~ ~ ~ 1 2
 scoreboard players set @s[scores={KnockbackTime=60,KnockbackType=5,Sound=0},tag=!gooigi] Sound 55
@@ -89,6 +93,7 @@ execute at @s[scores={KnockbackType=5},tag=gooigi] run kill @e[tag=home,limit=1]
 scoreboard players set @s[scores={KnockbackTime=2..,KnockbackType=5},tag=gooigi] Health 1
 scoreboard players set @s[scores={KnockbackTime=1,KnockbackType=5},tag=gooigi] Health 0
 
+scoreboard players set @s[scores={KnockbackTime=40,KnockbackType=6}] Animation 31
 execute at @s[scores={KnockbackTime=40,KnockbackType=6,Sound=0,Health=41..,Shrunk=0},tag=!gooigi] run playsound luigis_mansion:entity.player.hurt_scare.high_health player @a[tag=same_room] ~ ~ ~ 1
 execute at @s[scores={KnockbackTime=40,KnockbackType=6,Sound=0,Health=41..,Shrunk=1..},tag=!gooigi] run playsound luigis_mansion:entity.player.hurt_scare.high_health player @a[tag=same_room] ~ ~ ~ 1 2
 execute at @s[scores={KnockbackTime=40,KnockbackType=6,Sound=0,Health=..40,Shrunk=0},tag=!gooigi] run playsound luigis_mansion:entity.player.hurt_scare.low_health player @a[tag=same_room] ~ ~ ~ 1
@@ -109,6 +114,7 @@ execute at @s[scores={KnockbackType=6}] at @e[tag=home,limit=1] run tp @s ~ 0 ~ 
 execute at @s[scores={KnockbackType=6}] at @e[tag=home,limit=1] run tp @s ~ ~ ~ ~ ~
 execute at @s[scores={KnockbackType=6}] run kill @e[tag=home,limit=1]
 
+scoreboard players set @s[scores={KnockbackTime=80,KnockbackType=7}] Animation 32
 execute at @s[scores={KnockbackTime=80,KnockbackType=7,Sound=0,Shrunk=0},tag=!gooigi] run playsound luigis_mansion:entity.player.hurt_freeze player @a[tag=same_room] ~ ~ ~ 1
 execute at @s[scores={KnockbackTime=80,KnockbackType=7,Sound=0,Shrunk=1..},tag=!gooigi] run playsound luigis_mansion:entity.player.hurt_freeze player @a[tag=same_room] ~ ~ ~ 1 2
 scoreboard players set @s[scores={KnockbackTime=10..,KnockbackType=7,Sound=0},tag=!gooigi] Sound 2
@@ -137,6 +143,8 @@ execute at @s[scores={KnockbackTime=8,KnockbackType=7,Sound=0,Health=..40,Shrunk
 scoreboard players set @s[scores={KnockbackTime=8,KnockbackType=7,Sound=0},tag=!gooigi] Sound 15
 execute at @s[scores={KnockbackType=7}] run kill @e[tag=home,limit=1]
 
+scoreboard players set @s[scores={KnockbackTime=10,KnockbackType=8..9}] Animation 33
+scoreboard players set @s[scores={KnockbackTime=10,KnockbackType=10}] Animation 34
 execute at @s[scores={KnockbackTime=10,KnockbackType=8..9,Sound=0,Health=41..,Shrunk=0},tag=!gooigi] run playsound luigis_mansion:entity.player.grabbed.high_health player @a[tag=same_room] ~ ~ ~ 1
 execute at @s[scores={KnockbackTime=10,KnockbackType=8..9,Sound=0,Health=41..,Shrunk=1..},tag=!gooigi] run playsound luigis_mansion:entity.player.grabbed.high_health player @a[tag=same_room] ~ ~ ~ 1 2
 execute at @s[scores={KnockbackTime=10,KnockbackType=8..9,Sound=0,Health=..40,Shrunk=0},tag=!gooigi] run playsound luigis_mansion:entity.player.grabbed.low_health player @a[tag=same_room] ~ ~ ~ 1
@@ -187,6 +195,7 @@ tag @s[scores={KnockbackTime=1,KnockbackType=8..10}] remove grabbed
 execute at @s[scores={KnockbackType=8..10}] run tag @e[tag=this_ghost,limit=1] remove this_ghost
 execute at @s[scores={KnockbackType=8..10}] run scoreboard players reset #temp GrabbedID
 
+scoreboard players set @s[scores={KnockbackTime=60,KnockbackType=11}] Animation 35
 execute at @s[scores={KnockbackTime=60,KnockbackType=11}] run playsound luigis_mansion:entity.player.slip player @a[tag=same_room] ~ ~ ~ 1
 execute at @s[scores={KnockbackTime=60,KnockbackType=11,Sound=0,Health=41..,Shrunk=0},tag=!gooigi] run playsound luigis_mansion:entity.player.hurt_scare.high_health player @a[tag=same_room] ~ ~ ~ 1
 execute at @s[scores={KnockbackTime=60,KnockbackType=11,Sound=0,Health=41..,Shrunk=1..},tag=!gooigi] run playsound luigis_mansion:entity.player.hurt_scare.high_health player @a[tag=same_room] ~ ~ ~ 1 2
@@ -215,6 +224,7 @@ execute at @s[scores={KnockbackTime=41..50,KnockbackType=11},tag=!flipped_gravit
 execute at @s[scores={KnockbackTime=51..60,KnockbackType=11},tag=flipped_gravity] facing entity @e[type=minecraft:marker,tag=temp,limit=1] feet if block ~ ~-0.1 ~ #luigis_mansion:all_ignore run teleport @s ~ ~-0.15 ~
 execute at @s[scores={KnockbackTime=41..50,KnockbackType=11},tag=flipped_gravity] facing entity @e[type=minecraft:marker,tag=temp,limit=1] feet if block ~ ~2 ~ #luigis_mansion:all_ignore run teleport @s ~ ~0.15 ~
 
+scoreboard players set @s[scores={KnockbackTime=60,KnockbackType=12..13}] Animation 36
 execute at @s[scores={KnockbackTime=60,KnockbackType=12..13,Sound=0,Health=41..,Shrunk=0},tag=!gooigi] run playsound luigis_mansion:entity.player.flee.high_health player @a[tag=same_room] ~ ~ ~ 1
 execute at @s[scores={KnockbackTime=60,KnockbackType=12..13,Sound=0,Health=41..,Shrunk=1..},tag=!gooigi] run playsound luigis_mansion:entity.player.flee.high_health player @a[tag=same_room] ~ ~ ~ 1 2
 execute at @s[scores={KnockbackTime=60,KnockbackType=12..13,Sound=0,Health=..40,Shrunk=0},tag=!gooigi] run playsound luigis_mansion:entity.player.flee.low_health player @a[tag=same_room] ~ ~ ~ 1

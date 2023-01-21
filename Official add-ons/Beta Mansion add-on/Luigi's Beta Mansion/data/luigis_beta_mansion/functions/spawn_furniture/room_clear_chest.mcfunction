@@ -6,7 +6,8 @@ scoreboard players set @e[tag=this_entity,limit=1] Sound 0
 scoreboard players set @e[tag=this_entity,limit=1] FurnitureSizeL 14
 scoreboard players set @e[tag=this_entity,limit=1] FurnitureSizeU 11
 scoreboard players set @e[tag=this_entity,limit=1] FurnitureSizeF 12
-scoreboard players set @e[tag=this_entity,limit=1] InteractionType 3
+execute unless score #3ds_remake Loaded matches 1.. run scoreboard players set @e[tag=this_entity,limit=1] InteractionTime 43
+execute if score #3ds_remake Loaded matches 1.. run scoreboard players set @e[tag=this_entity,limit=1] InteractionTime 45
 scoreboard players set @e[tag=this_entity,limit=1] FurnitureUp 7
 scoreboard players set @e[tag=this_entity,limit=1] FurnitureForward 0
 scoreboard players set @e[tag=this_entity,limit=1] FurnitureSearch 40

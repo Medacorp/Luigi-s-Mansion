@@ -5,7 +5,6 @@ tag @s[scores={KnockbackType=4..},tag=gooigi] remove new_poltergust_grabbed
 tag @s[scores={KnockbackType=4..},tag=gooigi] add instant_poltergust_put_away
 tag @s[scores={ScareType=2..}] remove new_poltergust_grabbed
 tag @s[scores={ScareType=2..}] add instant_poltergust_put_away
-tag @s[scores={IdleTime=..-1},tag=!idle] remove new_poltergust_grabbed
-tag @s[scores={IdleTime=..-1},tag=!idle] add instant_poltergust_put_away
-tag @s[tag=stand_still] remove instant_poltergust_put_away
+tag @s[scores={Animation=1..},tag=!idle] remove new_poltergust_grabbed
+tag @s[scores={Animation=1..},tag=!idle] add instant_poltergust_put_away
 tag @s[tag=capturing_ghost] add new_poltergust_grabbed

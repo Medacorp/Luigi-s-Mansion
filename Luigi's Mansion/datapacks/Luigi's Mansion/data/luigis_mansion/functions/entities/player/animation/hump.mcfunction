@@ -1,0 +1,4 @@
+execute if entity @s[scores={InteractionTime=2,Animation=43,Health=41..,Shrunk=0}] run playsound luigis_mansion:entity.player.search.high_health player @a[tag=same_room] ~ ~ ~ 1
+execute if entity @s[scores={InteractionTime=2,Animation=43,Health=41..,Shrunk=1..}] run playsound luigis_mansion:entity.player.search.high_health player @a[tag=same_room] ~ ~ ~ 1 2
+execute if entity @s[scores={InteractionTime=2,Animation=43,Health=..40,Shrunk=0}] run playsound luigis_mansion:entity.player.search.low_health player @a[tag=same_room] ~ ~ ~ 1
+execute if entity @s[scores={InteractionTime=2,Animation=43,Health=..40,Shrunk=1..}] run playsound luigis_mansion:entity.player.search.low_health player @a[tag=same_room] ~ ~ ~ 1 2

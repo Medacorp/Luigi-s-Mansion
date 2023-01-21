@@ -49,11 +49,14 @@ tag @s add me
 execute if entity @s[scores={FurnitureSizeH=1..}] run scoreboard players operation #forward Steps = @s FurnitureSizeH
 execute if entity @s[scores={FurnitureSizeU=1..}] run scoreboard players operation #forward Steps = @s FurnitureSizeU
 execute if entity @s[tag=!hanging_furniture,tag=!standing_furniture] run scoreboard players operation #forward Steps /= #2 Constants
+execute if entity @s[scores={FurnitureRadius=1..}] run scoreboard players set #forward Steps 0
+execute if entity @s[scores={FurnitureRadius=1..}] run scoreboard players operation #temp FurnitureRadius = @s FurnitureRadius
 execute at @e[tag=collision_check,tag=z,limit=1] facing entity @s feet as @e[tag=collision_check,tag=z,limit=1] run function luigis_mansion:entities/furniture/type/tick/swinging/harm
 scoreboard players reset #swinging PosX
 scoreboard players reset #swinging PosY
 scoreboard players reset #swinging PosZ
 scoreboard players reset #forward Steps
+scoreboard players reset #temp FurnitureRadius
 tag @s remove me
 teleport @s ~ ~ ~
 scoreboard players reset @e[tag=collision_check,tag=x,limit=1]

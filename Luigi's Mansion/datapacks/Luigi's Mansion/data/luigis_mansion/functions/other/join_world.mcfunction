@@ -5,5 +5,5 @@ effect give @s minecraft:instant_health 1 19 true
 gamemode adventure @s
 title @s times 40 40 40
 tag @s add joined
-function luigis_mansion:other/save_luigi_color
+function luigis_mansion:entities/player/save_color
 function luigis_mansion:other/log_on

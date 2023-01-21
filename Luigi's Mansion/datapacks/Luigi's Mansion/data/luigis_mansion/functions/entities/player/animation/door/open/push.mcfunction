@@ -13,7 +13,6 @@ execute if entity @s[scores={AnimationProg=10,Health=41..,Shrunk=0}] run playsou
 execute if entity @s[scores={AnimationProg=10,Health=41..,Shrunk=1..}] run playsound luigis_mansion:entity.player.open_door.self.high_health player @s ~ ~ ~ 1000 2
 execute if entity @s[scores={AnimationProg=10,Health=..40,Shrunk=0}] run playsound luigis_mansion:entity.player.open_door.self.low_health player @s ~ ~ ~ 1000
 execute if entity @s[scores={AnimationProg=10,Health=..40,Shrunk=1..}] run playsound luigis_mansion:entity.player.open_door.self.low_health player @s ~ ~ ~ 1000 2
-scoreboard players set @s[scores={AnimationProg=7..26}] Walk 1
 execute at @s run teleport @s[scores={AnimationProg=7..26}] ^ ^ ^0.1
 execute if entity @s[scores={AnimationProg=11}] run function #luigis_mansion:entities/door/go_through
 execute at @s[distance=..0.7] run teleport @s[scores={AnimationProg=11}] ^ ^ ^2.1

@@ -2,10 +2,8 @@ tag @s remove dark_room
 function #luigis_mansion:room/dark_room
 tag @s add new_poltergust_grabbed
 function #luigis_mansion:entities/player/overwrite_poltergust_grabbed
-execute if entity @s[tag=was_putting_away_poltergust] run function luigis_mansion:entities/player/put_poltergust_away
-execute if entity @s[tag=was_grabbing_poltergust] run function luigis_mansion:entities/player/grab_poltergust
-execute if entity @s[tag=!was_grabbing_poltergust,tag=!was_putting_away_poltergust,tag=!new_poltergust_grabbed,tag=poltergust_grabbed,tag=!pull_open_door,tag=!push_open_door] run function luigis_mansion:entities/player/put_poltergust_away
-execute if entity @s[tag=!was_grabbing_poltergust,tag=!was_putting_away_poltergust,tag=new_poltergust_grabbed,tag=!poltergust_grabbed,tag=!pull_open_door,tag=!push_open_door] run function luigis_mansion:entities/player/grab_poltergust
+execute if entity @s[tag=!new_poltergust_grabbed,tag=poltergust_grabbed,scores={Animation=0..4}] run function luigis_mansion:entities/player/animation/set/put_poltergust_away
+execute if entity @s[tag=new_poltergust_grabbed,tag=!poltergust_grabbed,scores={Animation=0..4}] run function luigis_mansion:entities/player/animation/set/grab_poltergust
 tag @s remove instant_poltergust_grab
 tag @s remove instant_poltergust_put_away
 
@@ -51,7 +49,7 @@ scoreboard players reset @s[scores={MaxHealthTime=200}] MaxHealthTime
 
 execute if entity @s[scores={Walk=0,Run=0,Sneak=0,Jump=0,IdleTime=0..},tag=!sneak_pos,tag=!spectator,tag=player,tag=!warp,tag=!scanning,tag=!poltergust_selected,tag=!riding_poltergust,tag=!gooigi] run function luigis_mansion:entities/player/idle
 execute if entity @s[tag=!gooigi] unless entity @s[scores={IdleTime=..-1},tag=!idle] unless entity @s[scores={Walk=0,Run=0,Sneak=0,Jump=0},tag=!sneak_pos,tag=!spectator,tag=player,tag=!warp,tag=!scanning,tag=!poltergust_selected,tag=!riding_poltergust] run function luigis_mansion:entities/player/animation/set/none_ignore_yell
-execute if entity @s[scores={IdleTime=..-1},tag=!idle,tag=!looking_at_map,tag=!gooigi] run function luigis_mansion:entities/player/animation/freeze_player
+execute if entity @s[scores={Animation=1..},tag=!idle,tag=!looking_at_map,tag=!gooigi] run function luigis_mansion:entities/player/animation/freeze_player
 execute if entity @s[scores={IdleTime=..-1},tag=!gooigi] run function luigis_mansion:entities/player/idle
 
 execute if entity @s[tag=gooigi] run function luigis_mansion_3ds_remake:entities/player/gooigi

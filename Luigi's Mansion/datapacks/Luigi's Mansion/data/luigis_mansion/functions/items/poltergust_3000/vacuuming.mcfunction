@@ -4,7 +4,7 @@ scoreboard players operation #temp ID = @s ID
 execute if entity @s[scores={MirrorX=-2147483648..}] run scoreboard players operation #temp MirrorX = @s MirrorX
 execute if entity @s[scores={MirrorZ=-2147483648..}] run scoreboard players operation #temp MirrorZ = @s MirrorZ
 tag @s add me
-scoreboard players set @s[scores={ErrorTime=0}] Pull 0
+scoreboard players set @s[scores={ErrorTime=0,Animation=-4}] Animation 0
 scoreboard players set @s[tag=capturing_ghost] Invulnerable 2
 tag @s[tag=capturing_ghost] remove grabbed
 tag @s remove capturing_ghost

@@ -7,8 +7,7 @@ scoreboard players reset #temp Time
 data modify storage luigis_mansion:data memory set from storage luigis_mansion:data new_memory
 data remove storage luigis_mansion:data this_memory
 data remove storage luigis_mansion:data new_memory
-data modify storage luigis_mansion:data my_memory.inventory.inventory set from storage luigis_mansion:data inventories[-1].inventory
-data modify storage luigis_mansion:data my_memory.inventory.flashlight_on set from storage luigis_mansion:data inventories[-1].flashlight_on
+data modify storage luigis_mansion:data my_memory.inventory set from storage luigis_mansion:data inventories[-1].inventory
 data modify storage luigis_mansion:data memory append from storage luigis_mansion:data my_memory
 data remove storage luigis_mansion:data my_memory
 data remove storage luigis_mansion:data inventories[-1]

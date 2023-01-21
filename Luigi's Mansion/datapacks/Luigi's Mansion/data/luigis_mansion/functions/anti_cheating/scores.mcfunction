@@ -1,5 +1,6 @@
 scoreboard objectives add ActionTime dummy
 scoreboard objectives add Angle dummy
+scoreboard objectives add Animation dummy
 scoreboard objectives add AnimationProg dummy
 scoreboard objectives add AttackerMemory dummy
 scoreboard objectives add AttackType dummy
@@ -94,7 +95,6 @@ scoreboard objectives add ID dummy
 scoreboard objectives add IdleTime dummy
 scoreboard objectives add IncreaseAmount dummy
 scoreboard objectives add InteractionTime dummy
-scoreboard objectives add InteractionType dummy
 scoreboard objectives add Invulnerable dummy
 scoreboard objectives add JarvisChoice trigger
 scoreboard objectives add Jump minecraft.custom:minecraft.jump
@@ -148,10 +148,10 @@ scoreboard objectives add Path dummy
 scoreboard objectives add PathStep dummy
 scoreboard objectives add PlayerRotation dummy
 scoreboard objectives add PoltergustSound dummy
-scoreboard objectives add PoltergustTime dummy
 scoreboard objectives add PosX dummy
 scoreboard objectives add PosY dummy
 scoreboard objectives add PosZ dummy
+scoreboard objectives add PrevAnimation dummy
 scoreboard objectives add PrevHealth dummy
 scoreboard objectives add PrevMusicType dummy
 scoreboard objectives add PrevRoom dummy
@@ -221,7 +221,6 @@ scoreboard objectives add WalkOnWater minecraft.custom:minecraft.walk_on_water_o
 scoreboard objectives add WalkUnderWater minecraft.custom:minecraft.walk_under_water_one_cm
 scoreboard objectives add WarpTime dummy
 scoreboard objectives add Wave dummy
-scoreboard objectives add YellTime dummy
 
 scoreboard players set #-1 Constants -1
 scoreboard players set #2 Constants 2
