@@ -1,6 +1,6 @@
 # Rotate if moving
-execute if entity @s[scores={KnockbackType=..-5}] run scoreboard players reset @s PlayerRotation
-execute unless entity @s[tag=!push_open_door,tag=!pull_open_door,tag=!push_locked_door,tag=!pull_locked_door,tag=!pull_unlock_door,tag=!push_unlock_door] run scoreboard players reset @s PlayerRotation
+scoreboard players reset @s[scores={Animation=13..23}] PlayerRotation
+scoreboard players reset @s[scores={Animation=41..}] PlayerRotation
 execute store result score @s PosX run scoreboard players get @a[tag=this_luigi,limit=1] PosX
 execute store result score @s PosZ run scoreboard players get @a[tag=this_luigi,limit=1] PosZ
 execute store result score @s HomeX run scoreboard players get @a[tag=this_luigi,limit=1] OtherX
