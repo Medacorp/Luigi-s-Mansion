@@ -3,8 +3,8 @@ teleport @e[tag=this_entity,limit=1] ~ ~-1.4 ~ ~ 0
 function luigis_mansion:spawn_furniture/setup/get_angle_for_candle
 execute if score #temp2 Time = #temp Time rotated ~ 0 positioned ^ ^ ^0.444 rotated as @e[tag=candle_flame_rotation,limit=1] rotated ~90 ~ positioned ^ ^0.415 ^ rotated ~-90 0 run function luigis_mansion:spawn_furniture/setup/candle_flame
 execute unless score #temp2 Time = #temp Time rotated ~ 0 positioned ^ ^ ^0.444 rotated as @e[tag=candle_flame_rotation,limit=1] rotated ~-90 ~ positioned ^ ^-0.415 ^ rotated ~90 0 run function luigis_mansion:spawn_furniture/setup/candle_flame
-execute if score #temp2 Time = #temp Time rotated ~ 0 positioned ^ ^ ^0.444 rotated as @e[tag=candle_flame_rotation,limit=1] rotated ~90 ~ positioned ^ ^0.287 ^-0.383 rotated ~-90 0 run function luigis_mansion:spawn_furniture/setup/candle_flame
-execute unless score #temp2 Time = #temp Time rotated ~ 0 positioned ^ ^ ^0.444 rotated as @e[tag=candle_flame_rotation,limit=1] rotated ~-90 ~ positioned ^ ^-0.287 ^0.383 rotated ~90 0 run function luigis_mansion:spawn_furniture/setup/candle_flame
+execute if score #temp2 Time = #temp Time rotated ~ 0 positioned ^ ^ ^0.444 rotated as @e[tag=candle_flame_rotation,limit=1] rotated ~90 ~ positioned ^ ^0.288 ^-0.375 rotated ~-90 0 run function luigis_mansion:spawn_furniture/setup/candle_flame
+execute unless score #temp2 Time = #temp Time rotated ~ 0 positioned ^ ^ ^0.444 rotated as @e[tag=candle_flame_rotation,limit=1] rotated ~-90 ~ positioned ^ ^-0.288 ^0.375 rotated ~90 0 run function luigis_mansion:spawn_furniture/setup/candle_flame
 kill @e[tag=candle_flame_rotation,limit=1]
 scoreboard players reset #temp Time
 scoreboard players reset #temp2 Time

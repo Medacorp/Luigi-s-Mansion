@@ -3,8 +3,8 @@
 	    "luigis_mansion_3ds_remake:room/hidden/secret_altar/load/set_loaded",
         "luigis_mansion_3ds_remake:room/hidden/secret_altar/load/lights",
         "luigis_mansion_3ds_remake:room/hidden/secret_altar/load/doors",
-        "luigis_mansion_3ds_remake:room/hidden/secret_altar/load/candle_1",
-        "luigis_mansion_3ds_remake:room/hidden/secret_altar/load/candle_6",
-        "luigis_mansion_3ds_remake:room/hidden/secret_altar/load/marios_painting"
+        "luigis_mansion_3ds_remake:room/hidden/secret_altar/load/marios_painting",
+        "luigis_mansion_3ds_remake:room/hidden/secret_altar/load/old_triple_wall_candelabra_1",
+        "luigis_mansion_3ds_remake:room/hidden/secret_altar/load/old_triple_wall_candelabra_2"
 	]
 }

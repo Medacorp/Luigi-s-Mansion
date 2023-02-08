@@ -67,9 +67,9 @@ execute at @s[scores={Animation=43}] run function luigis_mansion:animations/luig
 execute at @s[scores={Animation=44}] run function luigis_mansion:animations/luigi/search/bash/chest
 
 data modify entity @s ArmorItems[3] set from storage luigis_mansion:data luigi.poltergust
-execute if score #mirrored Selected matches 0 unless entity @s[scores={Animation=-3,AnimationProg=6..}] run data modify entity @s[tag=!riding_poltergust] ArmorItems[3] merge from storage luigis_mansion:data luigi.poltergust.tag.luigis_mansion.model.idle_right
-execute if score #mirrored Selected matches 0 if entity @s[scores={Animation=-2,AnimationProg=6..}] run data modify entity @s[tag=!riding_poltergust] ArmorItems[3] merge from storage luigis_mansion:data luigi.poltergust.tag.luigis_mansion.model.body_right
+execute if score #mirrored Selected matches 0 run data modify entity @s[tag=!riding_poltergust,tag=!poltergust_grabbed] ArmorItems[3] merge from storage luigis_mansion:data luigi.poltergust.tag.luigis_mansion.model.idle_right
+execute if score #mirrored Selected matches 0 run data modify entity @s[tag=!riding_poltergust,tag=poltergust_grabbed] ArmorItems[3] merge from storage luigis_mansion:data luigi.poltergust.tag.luigis_mansion.model.body_right
 execute if score #mirrored Selected matches 0 run data modify entity @s[tag=riding_poltergust] ArmorItems[3] merge from storage luigis_mansion:data luigi.poltergust.tag.luigis_mansion.model.sat_on_right
-execute if score #mirrored Selected matches 1 if entity @s[scores={Animation=-3,AnimationProg=6..}] run data modify entity @s[tag=!riding_poltergust] ArmorItems[3] merge from storage luigis_mansion:data luigi.poltergust.tag.luigis_mansion.model.idle_left
-execute if score #mirrored Selected matches 1 if entity @s[scores={Animation=-2,AnimationProg=6..}] run data modify entity @s[tag=!riding_poltergust] ArmorItems[3] merge from storage luigis_mansion:data luigi.poltergust.tag.luigis_mansion.model.body_left
+execute if score #mirrored Selected matches 1 run data modify entity @s[tag=!riding_poltergust,tag=!poltergust_grabbed] ArmorItems[3] merge from storage luigis_mansion:data luigi.poltergust.tag.luigis_mansion.model.idle_left
+execute if score #mirrored Selected matches 1 run data modify entity @s[tag=!riding_poltergust,tag=poltergust_grabbed] ArmorItems[3] merge from storage luigis_mansion:data luigi.poltergust.tag.luigis_mansion.model.body_left
 execute if score #mirrored Selected matches 1 run data modify entity @s[tag=riding_poltergust] ArmorItems[3] merge from storage luigis_mansion:data luigi.poltergust.tag.luigis_mansion.model.sat_on_left

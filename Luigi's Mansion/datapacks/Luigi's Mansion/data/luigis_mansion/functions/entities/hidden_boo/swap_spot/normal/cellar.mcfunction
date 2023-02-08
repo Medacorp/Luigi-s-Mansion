@@ -1,5 +1,3 @@
-summon minecraft:marker 745 5 -44 {Tags:["choice","hide_option"]}
-summon minecraft:marker 736 5 -56 {Tags:["choice","hide_option"]}
 summon minecraft:marker 738 3 -45 {Tags:["choice","hide_option"]}
 summon minecraft:marker 737 3 -58 {Tags:["choice","hide_option"]}
 summon minecraft:marker 737 2 -55 {Tags:["choice","hide_option"]}

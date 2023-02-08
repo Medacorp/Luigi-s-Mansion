@@ -1,14 +1,18 @@
-data modify entity @s Pose set from storage luigis_mansion:data mirror.data.Pose
+execute store result entity @s Pose.Head[0] float 0.01 run data get storage luigis_mansion:data mirror.data.Pose.Head[0] 100
 execute store result entity @s Pose.Head[1] float 0.01 run data get storage luigis_mansion:data mirror.data.Pose.Head[1] -100
 execute store result entity @s Pose.Head[2] float 0.01 run data get storage luigis_mansion:data mirror.data.Pose.Head[2] -100
-execute store result entity @s Pose.RightArm[1] float 0.01 run data get storage luigis_mansion:data mirror.data.Pose.RightArm[1] -100
-execute store result entity @s Pose.RightArm[2] float 0.01 run data get storage luigis_mansion:data mirror.data.Pose.RightArm[2] -100
-execute store result entity @s Pose.LeftArm[1] float 0.01 run data get storage luigis_mansion:data mirror.data.Pose.LeftArm[1] -100
-execute store result entity @s Pose.LeftArm[2] float 0.01 run data get storage luigis_mansion:data mirror.data.Pose.LeftArm[2] -100
-execute store result entity @s Pose.RightLeg[1] float 0.01 run data get storage luigis_mansion:data mirror.data.Pose.RightLeg[1] -100
-execute store result entity @s Pose.RightLeg[2] float 0.01 run data get storage luigis_mansion:data mirror.data.Pose.RightLeg[2] -100
-execute store result entity @s Pose.LeftLeg[1] float 0.01 run data get storage luigis_mansion:data mirror.data.Pose.LeftLeg[1] -100
-execute store result entity @s Pose.LeftLeg[2] float 0.01 run data get storage luigis_mansion:data mirror.data.Pose.LeftLeg[2] -100
+execute store result entity @s Pose.LeftArm[0] float 0.01 run data get storage luigis_mansion:data mirror.data.Pose.RightArm[0] 100
+execute store result entity @s Pose.LeftArm[1] float 0.01 run data get storage luigis_mansion:data mirror.data.Pose.RightArm[1] -100
+execute store result entity @s Pose.LeftArm[2] float 0.01 run data get storage luigis_mansion:data mirror.data.Pose.RightArm[2] -100
+execute store result entity @s Pose.RightArm[0] float 0.01 run data get storage luigis_mansion:data mirror.data.Pose.LeftArm[0] 100
+execute store result entity @s Pose.RightArm[1] float 0.01 run data get storage luigis_mansion:data mirror.data.Pose.LeftArm[1] -100
+execute store result entity @s Pose.RightArm[2] float 0.01 run data get storage luigis_mansion:data mirror.data.Pose.LeftArm[2] -100
+execute store result entity @s Pose.LeftLeg[0] float 0.01 run data get storage luigis_mansion:data mirror.data.Pose.RightLeg[0] 100
+execute store result entity @s Pose.LeftLeg[1] float 0.01 run data get storage luigis_mansion:data mirror.data.Pose.RightLeg[1] -100
+execute store result entity @s Pose.LeftLeg[2] float 0.01 run data get storage luigis_mansion:data mirror.data.Pose.RightLeg[2] -100
+execute store result entity @s Pose.RightLeg[0] float 0.01 run data get storage luigis_mansion:data mirror.data.Pose.LeftLeg[0] 100
+execute store result entity @s Pose.RightLeg[1] float 0.01 run data get storage luigis_mansion:data mirror.data.Pose.LeftLeg[1] -100
+execute store result entity @s Pose.RightLeg[2] float 0.01 run data get storage luigis_mansion:data mirror.data.Pose.LeftLeg[2] -100
 data modify entity @s Small set from storage luigis_mansion:data mirror.data.Small
 data modify entity @s HasVisualFire set from storage luigis_mansion:data mirror.data.HasVisualFire
 data modify entity @s ArmorItems set from storage luigis_mansion:data mirror.data.ArmorItems

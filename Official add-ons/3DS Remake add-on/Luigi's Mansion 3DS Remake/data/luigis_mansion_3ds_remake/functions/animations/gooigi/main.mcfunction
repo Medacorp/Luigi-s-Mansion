@@ -59,6 +59,7 @@ tag @s[tag=holding_poltergust] remove holding_poltergust
 tag @s[tag=death_animation] remove death_animation
 tag @s[tag=spawn_animation] remove spawn_animation
 tag @s[tag=stop_model] remove stop_model
+tag @s[tag=poltergust_grabbed] remove poltergust_grabbed
 tag @s remove gooigi
 tag @s remove flashlight
 tag @s remove moved

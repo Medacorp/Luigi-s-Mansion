@@ -7,4 +7,4 @@ execute at @e[tag=home,limit=1] run tp @s ~ 0 ~
 execute at @e[tag=home,limit=1] run tp @s ~ ~ ~
 kill @e[tag=home,limit=1]
 execute if entity @s[scores={IdleTime=-10}] run playsound luigis_mansion:entity.player.grab_poltergust player @a[tag=same_room] ~ ~ ~ 1
-tag @s[scores={IdleTime=-1}] add poltergust_grabbed
+tag @s[scores={IdleTime=-6..-1}] add poltergust_grabbed

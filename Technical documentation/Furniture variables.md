@@ -12,7 +12,7 @@ furniture: {
     
     //search details
     searchable: ["<method>"], //Sets what method can result in searching. If "interact" is absent here, but provided in shake_animation, interact will still try to shake it, and trigger the search animaton it, but it won't actually get searched. Methods: time(will search automatically), interact, vacuum, dust, fire, water, ice. Default = none.
-    shake_animation: [<method>], //Sets what method can result in the furniture shaking. Methods: interact, vacuum, dust, fire, water, ice. Default = none.
+    shake_animation: ["<method>"], //Sets what method can result in the furniture shaking. Methods: interact, vacuum, dust, fire, water, ice. Default = none.
     searched:1b, //When set the furniture should spawn triggering its searched animation. If set for room clear chests, also stops the spawn sound from playing. Default = 0b.
     no_search_animation:1b, //When set the furniture has no search animation at all (eg on a chest doesn't open it). If set alongside searched, the furniture spawns in in the searched state, skipping the animation. Default = 0b.
     must_face:1b, //When set requires the player to face the opposite direction compared to this furniture (with 90 degree total range) in other to manually search it. Default = 0b.
@@ -25,7 +25,7 @@ furniture: {
         no_roll:1b, //When set will not spawn from non-manual/time search of rolling furniture. Default = 0b.
         //See loot documentation for other variables.
     },
-    dialog:"<name>", //Dialog to trigger on manual search (requires searchable to have hand option). Default = none.
+    dialog:"<name>", //Dialog to trigger on manual search (requires searchable to have "interact" method). Default = none.
     can_hide_boo:1b, //If this furniture is randomly selected by boos to hide in. Default = 0b.
     scan_message:'{"translate":"..."}', //Message as a result from GBH scan. When set to "warp" warps the scanner if they're not Gooigi, not in a dialog, and the can_warp global variable is turned on (if conditions are not met, will send the message "Huh...?" instead). Gooigi scan always results in the "......." string when set to warp. Not provided = ignored by scan. Empty string = blocks scan.
     

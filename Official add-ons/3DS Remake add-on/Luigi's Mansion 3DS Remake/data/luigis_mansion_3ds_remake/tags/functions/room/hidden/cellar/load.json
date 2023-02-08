@@ -3,8 +3,6 @@
 	    "luigis_mansion_3ds_remake:room/hidden/cellar/load/set_loaded",
         "luigis_mansion_3ds_remake:room/hidden/cellar/load/lights",
         "luigis_mansion_3ds_remake:room/hidden/cellar/load/doors",
-        "luigis_mansion_3ds_remake:room/hidden/cellar/load/candle_1",
-        "luigis_mansion_3ds_remake:room/hidden/cellar/load/candle_2",
         "luigis_mansion_3ds_remake:room/hidden/cellar/load/dust_1",
         "luigis_mansion_3ds_remake:room/hidden/cellar/load/dust_2",
         "luigis_mansion_3ds_remake:room/hidden/cellar/load/dust_3",
@@ -13,6 +11,8 @@
         "luigis_mansion_3ds_remake:room/hidden/cellar/load/dust_6",
         "luigis_mansion_3ds_remake:room/hidden/cellar/load/dust_7",
         "luigis_mansion_3ds_remake:room/hidden/cellar/load/dust_8",
-        "luigis_mansion_3ds_remake:room/hidden/cellar/load/room_clear_chest"
+        "luigis_mansion_3ds_remake:room/hidden/cellar/load/room_clear_chest",
+        "luigis_mansion_3ds_remake:room/hidden/cellar/load/old_triple_wall_candelabra_1",
+        "luigis_mansion_3ds_remake:room/hidden/cellar/load/old_triple_wall_candelabra_2"
 	]
 }
