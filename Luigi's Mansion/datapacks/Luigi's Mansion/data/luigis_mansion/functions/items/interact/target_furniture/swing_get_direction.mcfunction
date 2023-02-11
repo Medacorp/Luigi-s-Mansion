@@ -71,10 +71,6 @@ scoreboard players operation #temp2 FurnitureSizeF /= #10 Constants
 scoreboard players operation #temp FurnitureSizeF += #temp2 FurnitureSizeF
 scoreboard players reset #temp2 FurnitureSizeF
 
-tellraw @a[tag=searcher] ["[",{"score":{"name":"#interact","objective":"PosX"}},", ",{"score":{"name":"#interact","objective":"PosY"}},", ",{"score":{"name":"#interact","objective":"PosZ"}},"]"]
-tellraw @a[tag=searcher] ["[",{"score":{"name":"@s","objective":"PosX"}},", ",{"score":{"name":"@s","objective":"PosY"}},", ",{"score":{"name":"@s","objective":"PosZ"}},"]"]
-tellraw @a[tag=searcher] ["[",{"score":{"name":"#temp","objective":"FurnitureSizeL"}},", ",{"score":{"name":"#temp","objective":"FurnitureSizeU"}},", ",{"score":{"name":"#temp","objective":"FurnitureSizeF"}},"]"]
-
 execute as @e[tag=temp,limit=1] at @s run function luigis_mansion:items/interact/target_furniture/swing_get_direction_angles
 
 kill @e[tag=temp,limit=1]

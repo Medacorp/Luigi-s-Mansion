@@ -40,13 +40,14 @@ effect give @s[scores={Food=3..}] minecraft:hunger 1 255 true
 effect give @s[scores={Food=..0}] minecraft:saturation 1 0 true
 execute unless entity @s[scores={MaxHealth=100}] run scoreboard players add @s MaxHealthTime 1
 execute if entity @s[scores={MaxHealthTime=1}] if score @s MaxHealth < @s Health run function luigis_mansion:entities/player/reduce_health_to_max
-execute unless entity @s[scores={Health=0}] run scoreboard players set @s MaxHealthTime 100
+execute if entity @s[scores={Health=0}] run scoreboard players set @s MaxHealthTime 200
 execute unless entity @s[scores={MaxHealth=100}] unless entity @s[scores={Walk=0..2,Run=0..2,Sneak=0}] run scoreboard players add @s MaxHealthTime 1
 scoreboard players set @s[scores={MaxHealthTime=200}] MaxHealth 100
 scoreboard players reset @s[scores={MaxHealthTime=200}] MaxHealthTime
 
 execute if entity @s[scores={Walk=0,Run=0,Sneak=0,Jump=0,IdleTime=0..},tag=!sneak_pos,tag=!spectator,tag=player,tag=!warp,tag=!scanning,tag=!poltergust_selected,tag=!riding_poltergust] run function luigis_mansion:entities/player/idle
-execute unless entity @s[scores={IdleTime=..-1},tag=!idle] unless entity @s[scores={Walk=0,Run=0,Sneak=0,Jump=0},tag=!sneak_pos,tag=!spectator,tag=player,tag=!warp,tag=!scanning,tag=!poltergust_selected,tag=!riding_poltergust] run function luigis_mansion:entities/player/animation/set/none_ignore_yell
+execute if entity @s[scores={Animation=1..},tag=idle] unless entity @s[scores={Walk=0,Run=0,Sneak=0,Jump=0},tag=!sneak_pos,tag=!spectator,tag=player,tag=!warp,tag=!scanning,tag=!poltergust_selected,tag=!riding_poltergust] run function luigis_mansion:entities/player/animation/set/none
+execute if entity @s[scores={IdleTime=1..}] unless entity @s[scores={Walk=0,Run=0,Sneak=0,Jump=0},tag=!sneak_pos,tag=!spectator,tag=player,tag=!warp,tag=!scanning,tag=!poltergust_selected,tag=!riding_poltergust] run scoreboard players set @s IdleTime 0
 execute if entity @s[scores={Animation=1..},tag=!idle,tag=!looking_at_map] run function luigis_mansion:entities/player/animation/freeze_player
 execute if entity @s[scores={IdleTime=..-1}] run function luigis_mansion:entities/player/idle
 

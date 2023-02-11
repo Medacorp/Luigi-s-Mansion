@@ -16,11 +16,11 @@ execute at @s[nbt={OnGround:0b},tag=3] rotated ~ 0 run summon minecraft:marker ^
 tag @s add searcher
 scoreboard players add @s InteractionTime 1
 execute if entity @s[scores={InteractionTime=2}] at @e[tag=interact,tag=manual,limit=1] as @e[tag=furniture,tag=same_room,tag=affected_by_interact] run function luigis_mansion:items/interact/target_furniture/get_animation
-execute unless entity @s[scores={Animation=1..}] if predicate luigis_mansion:1_3 run scoreboard players set @s[scores={IdleTime=0..}] Animation 42
-execute unless entity @s[scores={Animation=1..}] if predicate luigis_mansion:50_50 run scoreboard players set @s[scores={IdleTime=0..}] Animation 43
-execute unless entity @s[scores={Animation=1..}] run scoreboard players set @s[scores={IdleTime=0..}] Animation 44
+execute unless entity @s[scores={Animation=1..}] if predicate luigis_mansion:1_3 run scoreboard players set @s[scores={InteractionTime=2,IdleTime=0..}] Animation 42
+execute unless entity @s[scores={Animation=1..}] if predicate luigis_mansion:50_50 run scoreboard players set @s[scores={InteractionTime=2,IdleTime=0..}] Animation 43
+execute unless entity @s[scores={Animation=1..}] run scoreboard players set @s[scores={InteractionTime=2,IdleTime=0..}] Animation 44
 scoreboard players operation #temp Room = @s Room
-execute if entity @s[scores={Animation=3}] run tag @e[tag=interact,tag=manual,limit=1] add long_shake
+execute if entity @s[scores={Animation=43}] run tag @e[tag=interact,tag=manual,limit=1] add long_shake
 #to delete
 execute if entity @s[scores={InteractionTime=..16}] run tag @e[tag=interact,tag=manual,limit=1] add sound
 execute if entity @s[scores={InteractionTime=2}] as @e[tag=interact,tag=manual,limit=1] at @s run function luigis_mansion:room/interactions

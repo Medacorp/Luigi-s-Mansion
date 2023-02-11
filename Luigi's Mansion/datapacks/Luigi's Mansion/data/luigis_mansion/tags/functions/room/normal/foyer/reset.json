@@ -2,8 +2,6 @@
     "values": [
         "luigis_mansion:room/normal/foyer/reset/unload",
         "#luigis_mansion:room/normal/foyer/turn_lights/off",
-        "luigis_mansion:room/normal/foyer/reset/candle_2",
-        "luigis_mansion:room/normal/foyer/reset/candle_3",
         "luigis_mansion:room/normal/foyer/reset/chandelier",
         "luigis_mansion:room/normal/foyer/reset/lamp",
         "luigis_mansion:room/normal/foyer/reset/mirror",

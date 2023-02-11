@@ -9,10 +9,6 @@ teleport @s[tag=sneak_pos,nbt=!{Small:1b},tag=flipped_gravity] ^-0.35 ^-0.34 ^ ~
 teleport @s[tag=!sneak_pos,nbt={Small:1b},tag=flipped_gravity] ^-0.24 ^0.4 ^ ~ ~
 teleport @s[tag=sneak_pos,nbt={Small:1b},tag=flipped_gravity] ^-0.24 ^0.46 ^ ~ ~
 
-execute if entity @s[scores={Animation=13..24}] run data modify entity @s[tag=held_item] ArmorItems[3] set value {}
-execute if entity @s[scores={Animation=13..24}] if score #mirrored Selected matches 0 if data storage luigis_mansion:data luigi.offhand.tag.luigis_mansion.is_nozzle run tag @s add holding_poltergust
-execute if entity @s[scores={Animation=13..24}] if score #mirrored Selected matches 1 if data storage luigis_mansion:data luigi.mainhand.tag.luigis_mansion.is_nozzle run tag @s add holding_poltergust
-
 data modify entity @s[tag=was_sneak_posing,tag=!sneak_pos,tag=!low_health] Pose.Head[0] set value 0.001f
 data modify entity @s[tag=!was_sneak_posing,tag=sneak_pos,tag=!low_health] Pose.Head[0] set value 20.0f
 data modify entity @s[tag=was_flipped,tag=!flipped_gravity] Pose.Head[2] set value 0.0f
@@ -68,6 +64,9 @@ execute at @s[scores={Animation=42}] unless entity @s[tag=held_item,tag=holding_
 execute at @s[scores={Animation=43}] unless entity @s[tag=held_item,tag=holding_poltergust] run function luigis_mansion:animations/luigi/search/hump/left_arm
 execute at @s[scores={Animation=44}] unless entity @s[tag=held_item,tag=holding_poltergust] run function luigis_mansion:animations/luigi/search/bash/left_arm
 
-execute if score #mirrored Selected matches 0 run data modify entity @s[tag=held_item,tag=!stop_model] ArmorItems[3] set from storage luigis_mansion:data luigi.offhand
-execute if entity @s[scores={Animation=-3,AnimationProg=6..}] if score #mirrored Selected matches 1 unless data storage luigis_mansion:data luigi.mainhand.tag.luigis_mansion.is_nozzle run data modify entity @s[tag=held_item,tag=!stop_model] ArmorItems[3] set from storage luigis_mansion:data luigi.mainhand
-execute if entity @s[scores={Animation=-2,AnimationProg=6..}] if score #mirrored Selected matches 1 if data storage luigis_mansion:data luigi.mainhand.tag.luigis_mansion.is_nozzle run data modify entity @s[tag=held_item,tag=!stop_model] ArmorItems[3] set from storage luigis_mansion:data luigi.mainhand
+data modify entity @s[tag=held_item] ArmorItems[3] set value {}
+execute unless entity @s[scores={Animation=13..24}] unless entity @s[scores={Animation=37..38}] if score #mirrored Selected matches 0 if data storage luigis_mansion:data luigi.offhand.tag.luigis_mansion.is_nozzle run tag @s add holding_poltergust
+execute unless entity @s[scores={Animation=13..24}] unless entity @s[scores={Animation=37..38}] if score #mirrored Selected matches 1 if data storage luigis_mansion:data luigi.mainhand.tag.luigis_mansion.is_nozzle run tag @s add holding_poltergust
+execute unless entity @s[scores={Animation=13..24}] unless entity @s[scores={Animation=37..38}] if score #mirrored Selected matches 0 run data modify entity @s[tag=held_item,tag=!stop_model] ArmorItems[3] set from storage luigis_mansion:data luigi.offhand
+execute if entity @s[tag=!poltergust_grabbed] if score #mirrored Selected matches 1 unless data storage luigis_mansion:data luigi.mainhand.tag.luigis_mansion.is_nozzle run data modify entity @s[tag=held_item,tag=!stop_model] ArmorItems[3] set from storage luigis_mansion:data luigi.mainhand
+execute if entity @s[tag=poltergust_grabbed] if score #mirrored Selected matches 1 if data storage luigis_mansion:data luigi.mainhand.tag.luigis_mansion.is_nozzle run data modify entity @s[tag=held_item,tag=!stop_model] ArmorItems[3] set from storage luigis_mansion:data luigi.mainhand

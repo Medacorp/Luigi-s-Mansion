@@ -101,6 +101,8 @@ execute at @s unless block ~ ~ ~-0.3 #luigis_mansion:all_ignore if block ~ ~ ~ #
 kill @e[type=minecraft:marker,tag=temp,limit=1]
 tag @s[scores={ScareType=2..}] remove vacuuming_ghost
 scoreboard players reset @s[scores={ScareTime=0}] ScareType
+scoreboard players set @s[scores={ScareTime=0}] Animation 0
 scoreboard players reset @s[scores={ScareTime=0}] ScareTime
 
-function luigis_mansion:entities/player/animation/set/none
+scoreboard players set @s IdleTime 0
+tag @s remove idle

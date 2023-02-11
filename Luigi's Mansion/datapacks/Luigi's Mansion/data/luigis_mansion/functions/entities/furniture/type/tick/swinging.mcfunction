@@ -4,16 +4,14 @@ execute unless data entity @s Pose.Head[1] run data merge entity @s {Pose:{Head:
 execute if entity @s[scores={FurnitureXTarget=-900..900}] run function luigis_mansion:entities/furniture/type/tick/swinging/x
 execute if entity @s[scores={FurnitureZTarget=-900..900}] run function luigis_mansion:entities/furniture/type/tick/swinging/z
 
-execute if entity @s[scores={FurnitureXProg=84,FurnitureXTarget=-50..50}] unless entity @s[scores={FurnitureXTarget=-5..5}] run playsound luigis_mansion:block.search.swing block @a[tag=same_room] ~ ~ ~ 1 0.2
-execute if entity @s[scores={FurnitureXProg=84,FurnitureXTarget=-100..100}] unless entity @s[scores={FurnitureXTarget=-50..50}] run playsound luigis_mansion:block.search.swing block @a[tag=same_room] ~ ~ ~ 1 0.4
-execute if entity @s[scores={FurnitureXProg=84,FurnitureXTarget=-200..200}] unless entity @s[scores={FurnitureXTarget=-100..100}] run playsound luigis_mansion:block.search.swing block @a[tag=same_room] ~ ~ ~ 1 0.6
-execute if entity @s[scores={FurnitureXProg=84,FurnitureXTarget=-300..300}] unless entity @s[scores={FurnitureXTarget=-200..200}] run playsound luigis_mansion:block.search.swing block @a[tag=same_room] ~ ~ ~ 1 0.8
-execute if entity @s[scores={FurnitureXProg=84}] unless entity @s[scores={FurnitureXTarget=-300..300}] run playsound luigis_mansion:block.search.swing block @a[tag=same_room] ~ ~ ~ 1 1
-execute if entity @s[scores={FurnitureZProg=84,FurnitureZTarget=-50..50}] unless entity @s[scores={FurnitureZTarget=-5..5}] run playsound luigis_mansion:block.search.swing block @a[tag=same_room] ~ ~ ~ 1 0.2
-execute if entity @s[scores={FurnitureZProg=84,FurnitureZTarget=-100..100}] unless entity @s[scores={FurnitureZTarget=-50..50}] run playsound luigis_mansion:block.search.swing block @a[tag=same_room] ~ ~ ~ 1 0.4
-execute if entity @s[scores={FurnitureZProg=84,FurnitureZTarget=-200..200}] unless entity @s[scores={FurnitureZTarget=-100..100}] run playsound luigis_mansion:block.search.swing block @a[tag=same_room] ~ ~ ~ 1 0.6
-execute if entity @s[scores={FurnitureZProg=84,FurnitureZTarget=-300..300}] unless entity @s[scores={FurnitureZTarget=-200..200}] run playsound luigis_mansion:block.search.swing block @a[tag=same_room] ~ ~ ~ 1 0.8
-execute if entity @s[scores={FurnitureZProg=84}] unless entity @s[scores={FurnitureZTarget=-300..300}] run playsound luigis_mansion:block.search.swing block @a[tag=same_room] ~ ~ ~ 1 1
+execute if entity @s[scores={FurnitureXProg=84,FurnitureXTarget=-100..100}] unless entity @s[scores={FurnitureXTarget=-50..50}] run playsound luigis_mansion:furniture.search.swing block @a[tag=same_room] ~ ~ ~ 1 0.4
+execute if entity @s[scores={FurnitureXProg=84,FurnitureXTarget=-200..200}] unless entity @s[scores={FurnitureXTarget=-100..100}] run playsound luigis_mansion:furniture.search.swing block @a[tag=same_room] ~ ~ ~ 1 0.6
+execute if entity @s[scores={FurnitureXProg=84,FurnitureXTarget=-300..300}] unless entity @s[scores={FurnitureXTarget=-200..200}] run playsound luigis_mansion:furniture.search.swing block @a[tag=same_room] ~ ~ ~ 1 0.8
+execute if entity @s[scores={FurnitureXProg=84}] unless entity @s[scores={FurnitureXTarget=-300..300}] run playsound luigis_mansion:furniture.search.swing block @a[tag=same_room] ~ ~ ~ 1 1
+execute if entity @s[scores={FurnitureZProg=84,FurnitureZTarget=-100..100}] unless entity @s[scores={FurnitureZTarget=-50..50}] run playsound luigis_mansion:furniture.search.swing block @a[tag=same_room] ~ ~ ~ 1 0.4
+execute if entity @s[scores={FurnitureZProg=84,FurnitureZTarget=-200..200}] unless entity @s[scores={FurnitureZTarget=-100..100}] run playsound luigis_mansion:furniture.search.swing block @a[tag=same_room] ~ ~ ~ 1 0.6
+execute if entity @s[scores={FurnitureZProg=84,FurnitureZTarget=-300..300}] unless entity @s[scores={FurnitureZTarget=-200..200}] run playsound luigis_mansion:furniture.search.swing block @a[tag=same_room] ~ ~ ~ 1 0.8
+execute if entity @s[scores={FurnitureZProg=84}] unless entity @s[scores={FurnitureZTarget=-300..300}] run playsound luigis_mansion:furniture.search.swing block @a[tag=same_room] ~ ~ ~ 1 1
 
 scoreboard players set @s FurnitureVacuum 0
 execute if entity @s[scores={FurnitureXTarget=-900..900}] run scoreboard players operation @s FurnitureVacuum = @s FurnitureXTarget

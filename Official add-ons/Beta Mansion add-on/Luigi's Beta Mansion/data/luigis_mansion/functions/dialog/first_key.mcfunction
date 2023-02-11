@@ -18,18 +18,17 @@ execute if entity @s[scores={Dialog=232}] run data merge entity @e[tag=living_ro
 execute if entity @s[scores={Dialog=233}] as @e[tag=living_room_key,limit=1] at @s run teleport @s ~0.35 ~-0.3 ~0.35
 execute if entity @s[scores={Dialog=233}] run data merge entity @e[tag=living_room_key,limit=1] {Pose:{Head:[90.0f,0.0f,0.01f]},Rotation:[-45.0f,0.0f]}
 teleport @s[scores={Dialog=216..255}] ~ ~ ~0.2
-execute if entity @s[scores={Dialog=242}] positioned 751 13 14 run function luigis_mansion:spawn_furniture/unlit_candles
+execute if entity @s[scores={Dialog=232..252}] positioned ~ ~-0.9 ~ run tag @e[tag=candle_flame,distance=..1.5] add extinguish
 teleport @s[scores={Dialog=255..274}] ~-0.2 ~0.2 ~
 teleport @s[scores={Dialog=275..294}] ~-0.1 ~ ~-0.1
-execute if entity @s[scores={Dialog=270..290}] positioned ~ ~-1.4 ~ run tag @e[tag=candle_flame,distance=..2.5] add extinguish
+execute if entity @s[scores={Dialog=270..290}] positioned ~ ~-0.9 ~ run tag @e[tag=candle_flame,distance=..2.5] add extinguish
 teleport @s[scores={Dialog=295..319}] ~ ~0.16 ~-0.2
-teleport @s[scores={Dialog=320..339}] ~ ~ ~-0.05
-teleport @s[scores={Dialog=340..359}] ~-0.4 ~ ~
-teleport @s[scores={Dialog=360..364}] ~0.4 ~ ~
+teleport @s[scores={Dialog=320..339}] ~-0.4 ~ ~-0.05
+teleport @s[scores={Dialog=340..348}] ~0.2 ~ ~
 teleport @s[scores={Dialog=365..369}] ~-0.4 ~ ~
 teleport @s[scores={Dialog=369..374}] ~-0.4 ~0.2 ~
 execute if entity @s[scores={Dialog=469}] run teleport @s ~ ~-100 ~
 execute if entity @s[scores={Dialog=469}] at @e[tag=living_room_key,limit=1] run summon minecraft:armor_stand ~-0.7 ~0.9 ~-0.7 {CustomName:'{"translate":"luigis_mansion:item.key"}',Pose:{Head:[0.0f,-90.0f,0.01f]},Invisible:1b,Silent:1b,ArmorItems:[{},{},{},{id:"minecraft:diamond_pickaxe",Count:1b,tag:{Unbreakable:1b,Damage:5,CustomModelData:15}}],Small:1b,NoGravity:1b,Tags:["item","key","eternal","living_room","rotated","bounce","no_spawn_sound"],Rotation:[-90.0f,0.0f],DisabledSlots:2039583}
-execute if entity @s[scores={Dialog=469}] run scoreboard players set @e[tag=key,tag=parlor,limit=1] ActionTime 4
+execute if entity @s[scores={Dialog=469}] run scoreboard players set @e[tag=key,tag=living_room,limit=1] ActionTime 4
 execute if entity @s[scores={Dialog=469}] run kill @e[tag=living_room_key,limit=1]
 execute if entity @s[scores={Dialog=470}] run tag @s add dead

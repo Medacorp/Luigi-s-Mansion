@@ -4,11 +4,11 @@
         "luigis_mansion_3ds_remake:room/hidden/foyer/load/lights",
         "luigis_mansion_3ds_remake:room/hidden/foyer/load/doors",
         "luigis_mansion_3ds_remake:room/hidden/foyer/load/spawn_toad",
-        "luigis_mansion_3ds_remake:room/hidden/foyer/load/candle_2",
-        "luigis_mansion_3ds_remake:room/hidden/foyer/load/candle_3",
         "luigis_mansion_3ds_remake:room/hidden/foyer/load/cobweb_1",
         "luigis_mansion_3ds_remake:room/hidden/foyer/load/cobweb_2",
         "luigis_mansion_3ds_remake:room/hidden/foyer/load/scan_area",
+        "luigis_mansion_3ds_remake:room/hidden/foyer/load/simple_triple_candelabra_1",
+        "luigis_mansion_3ds_remake:room/hidden/foyer/load/simple_triple_candelabra_2",
         "luigis_mansion_3ds_remake:room/hidden/foyer/load/simple_triple_wall_candelabra_1",
         "luigis_mansion_3ds_remake:room/hidden/foyer/load/simple_triple_wall_candelabra_2"
 	]

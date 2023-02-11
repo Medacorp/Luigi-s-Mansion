@@ -12,6 +12,7 @@ execute if entity @s[scores={IdleTime=200..,Health=16..},tag=!cold_room,tag=!hig
 execute if entity @s[scores={Animation=-4}] run function luigis_mansion:entities/player/animation/pulled
 execute if entity @s[scores={Animation=-3}] run function luigis_mansion:entities/player/animation/put_poltergust_away
 execute if entity @s[scores={Animation=-2}] run function luigis_mansion:entities/player/animation/grab_poltergust
+execute if entity @s[scores={Animation=-1}] run function luigis_mansion:entities/player/animation/yelling
 execute if entity @s[scores={Animation=1}] run function luigis_mansion:entities/player/animation/stand_still
 execute if entity @s[scores={Animation=2}] run function luigis_mansion:entities/player/animation/low_health_idle
 execute if entity @s[scores={Animation=3}] run function luigis_mansion:entities/player/animation/cold_room_idle

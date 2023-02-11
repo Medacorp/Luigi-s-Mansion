@@ -9039,6 +9039,15 @@
         ],
         "subtitle": "luigis_mansion:subtitles.furniture.dust"
     },
+    "furniture.fan": {
+        "sounds": [
+            {
+                "name": "luigis_mansion:furniture/fan",
+                "stream": false
+            }
+        ],
+        "subtitle": "luigis_mansion:subtitles.furniture.fan"
+    },
     "furniture.moving_wall": {
         "sounds": [
             {
@@ -9216,6 +9225,16 @@
         ],
         "subtitle": "luigis_mansion:subtitles.furniture.search"
     },
+    "furniture.search.roll": {
+        "sounds": [
+            {
+                "name": "luigis_mansion:furniture/search/roll",
+                "stream": false,
+				"volume": 0.5
+            }
+        ],
+        "subtitle": "luigis_mansion:subtitles.furniture.search.roll"
+    },
     "furniture.search.saxophone": {
         "sounds": [
             {
@@ -9235,6 +9254,16 @@
             }
         ],
         "subtitle": "luigis_mansion:subtitles.furniture.search"
+    },
+    "furniture.search.swing": {
+        "sounds": [
+            {
+                "name": "luigis_mansion:furniture/search/swing",
+                "stream": false,
+				"volume": 0.5
+            }
+        ],
+        "subtitle": "luigis_mansion:subtitles.furniture.search.swing"
     },
     "furniture.search.wall": {
         "sounds": [

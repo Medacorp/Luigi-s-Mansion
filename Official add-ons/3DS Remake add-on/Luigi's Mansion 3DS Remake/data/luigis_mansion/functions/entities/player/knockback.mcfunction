@@ -299,9 +299,10 @@ scoreboard players reset @s[scores={KnockbackTime=0}] KnockbackDamage
 scoreboard players reset @s[scores={KnockbackTime=0}] KnockbackX
 scoreboard players reset @s[scores={KnockbackTime=0}] KnockbackZ
 scoreboard players set @s[scores={KnockbackTime=0}] KnockbackType 0
+scoreboard players set @s[scores={KnockbackTime=0}] Animation 0
 scoreboard players reset @s[scores={KnockbackTime=0}] KnockbackTime
 
-tag @e[tag=attacker,limit=1] remove attacker
 scoreboard players reset @s ScareType
 scoreboard players reset @s ScareTime
-function luigis_mansion:entities/player/animation/set/none
+scoreboard players set @s IdleTime 0
+tag @s remove idle
