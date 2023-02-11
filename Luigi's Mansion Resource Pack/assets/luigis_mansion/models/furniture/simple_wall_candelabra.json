@@ -2,6 +2,7 @@
 	"credit": "Made with Blockbench",
 	"textures": {
 		"0": "luigis_mansion:furniture/simple_wall_candelabra",
+		"1": "luigis_mansion:furniture/candle",
 		"particle": "luigis_mansion:furniture/simple_wall_candelabra"
 	},
 	"elements": [
@@ -45,16 +46,15 @@
 			}
 		},
 		{
-			"from": [7.01, 2.065, 0.8875],
+			"from": [7.01, 6.565, 0.8875],
 			"to": [8.99, 12.565, 2.8875],
 			"rotation": {"angle": 0, "axis": "y", "origin": [14, 5, 6.25]},
 			"faces": {
-				"north": {"uv": [9, 10.75, 10, 16], "texture": "#0"},
-				"east": {"uv": [8, 10.75, 9, 16], "texture": "#0"},
-				"south": {"uv": [11, 10.75, 12, 16], "texture": "#0"},
-				"west": {"uv": [10, 10.75, 11, 16], "texture": "#0"},
-				"up": {"uv": [9, 9.75, 10, 10.75], "texture": "#0"},
-				"down": {"uv": [10, 9.75, 11, 10.75], "texture": "#0"}
+				"north": {"uv": [8, 1, 10, 7], "texture": "#1"},
+				"east": {"uv": [6, 1, 8, 7], "texture": "#1"},
+				"south": {"uv": [12, 1, 14, 7], "texture": "#1"},
+				"west": {"uv": [10, 1, 12, 7], "texture": "#1"},
+				"up": {"uv": [4, 5, 6, 7], "texture": "#1"}
 			}
 		},
 		{
@@ -89,6 +89,18 @@
 				"east": {"uv": [0, 0.75, 0.75, 2.25], "texture": "#0"},
 				"south": {"uv": [2.25, 0.75, 3, 2.25], "texture": "#0"},
 				"west": {"uv": [1.5, 0.75, 2.25, 2.25], "texture": "#0"}
+			}
+		},
+		{
+			"from": [7.01, 1.565, 0.8875],
+			"to": [8.99, 5.565, 2.8875],
+			"rotation": {"angle": 0, "axis": "y", "origin": [14, 5, 6.25]},
+			"faces": {
+				"north": {"uv": [9, 14, 10, 16], "texture": "#0"},
+				"east": {"uv": [8, 14, 9, 16], "texture": "#0"},
+				"south": {"uv": [11, 14, 12, 16], "texture": "#0"},
+				"west": {"uv": [10, 14, 11, 16], "texture": "#0"},
+				"down": {"uv": [10, 13, 11, 14], "texture": "#0"}
 			}
 		}
 	],
