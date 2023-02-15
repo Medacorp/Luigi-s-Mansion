@@ -3,8 +3,8 @@
 	    "luigis_mansion:room/hidden/dining_room/load/set_loaded",
         "luigis_mansion:room/hidden/dining_room/load/lights",
         "luigis_mansion:room/hidden/dining_room/load/doors",
-        "luigis_mansion:room/hidden/dining_room/load/candle_1",
-        "luigis_mansion:room/hidden/dining_room/load/candle_2",
+        "luigis_mansion:room/hidden/dining_room/load/cobweb_1",
+        "luigis_mansion:room/hidden/dining_room/load/cobweb_2",
         "luigis_mansion:room/hidden/dining_room/load/fire_1",
         "luigis_mansion:room/hidden/dining_room/load/fire_2",
         "luigis_mansion:room/hidden/dining_room/load/painting_1",
@@ -12,7 +12,7 @@
         "luigis_mansion:room/hidden/dining_room/load/painting_3",
         "luigis_mansion:room/hidden/dining_room/load/painting_4",
         "luigis_mansion:room/hidden/dining_room/load/room_clear_chest",
-        "luigis_mansion:room/hidden/dining_room/load/cobweb_1",
-        "luigis_mansion:room/hidden/dining_room/load/cobweb_2"
+        "luigis_mansion:room/hidden/dining_room/load/wooden_triple_huge_candelabra_1",
+        "luigis_mansion:room/hidden/dining_room/load/wooden_triple_huge_candelabra_2"
 	]
 }

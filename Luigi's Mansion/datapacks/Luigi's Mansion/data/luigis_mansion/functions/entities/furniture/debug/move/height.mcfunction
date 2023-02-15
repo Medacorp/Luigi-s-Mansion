@@ -1,5 +1,4 @@
-execute if score #temp2 FurnitureSizeU matches 1.. run teleport @s ~ ~0.1 ~
-execute if score #temp2 FurnitureSizeU matches 1.. run scoreboard players remove #temp2 FurnitureSizeU 1
-execute if score #temp2 FurnitureSizeU matches ..-1 run teleport @s ~ ~-0.1 ~
-execute if score #temp2 FurnitureSizeU matches ..-1 run scoreboard players add #temp2 FurnitureSizeU 1
-execute unless score #temp2 FurnitureSizeU matches 0 positioned as @s run function luigis_mansion:entities/furniture/debug/move/height
+execute store result score #temp Time run data get entity @s Pos[1] 100
+execute store result entity @s Pos[1] double 0.01 run scoreboard players operation #temp Time += #temp2 FurnitureSizeU
+scoreboard players reset #temp Time
+scoreboard players reset #temp2 FurnitureSizeU

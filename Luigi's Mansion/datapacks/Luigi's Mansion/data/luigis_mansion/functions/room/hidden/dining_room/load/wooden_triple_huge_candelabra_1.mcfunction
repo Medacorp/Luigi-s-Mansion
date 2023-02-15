@@ -1,0 +1,2 @@
+data modify storage luigis_mansion:data furniture set value {candle_flames:[{lit:0b,purple:1b,tags:["light_me"]},{lit:0b,purple:1b,tags:["light_me"]},{lit:1b,purple:1b,always_burn:1b,tags:["light_me"]}],searchable:["interact","vacuum"],shake_animation:["interact","vacuum"],sound:1,scan_message:'{"translate":"luigis_mansion:message.player.scan_furniture.88"}'}
+execute positioned 704 12 -31 rotated -90 0 run function luigis_mansion:spawn_furniture/wooden_triple_huge_candelabra

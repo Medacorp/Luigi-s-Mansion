@@ -50,7 +50,7 @@ scoreboard players reset @s[scores={MaxHealthTime=200}] MaxHealthTime
 execute if entity @s[scores={Walk=0,Run=0,Sneak=0,Jump=0,IdleTime=0..},tag=!sneak_pos,tag=!spectator,tag=player,tag=!warp,tag=!scanning,tag=!poltergust_selected,tag=!riding_poltergust,tag=!gooigi] run function luigis_mansion:entities/player/idle
 execute if entity @s[scores={Animation=1..},tag=idle,tag=!gooigi] unless entity @s[scores={Walk=0,Run=0,Sneak=0,Jump=0},tag=!sneak_pos,tag=!spectator,tag=player,tag=!warp,tag=!scanning,tag=!poltergust_selected,tag=!riding_poltergust] run function luigis_mansion:entities/player/animation/set/none
 execute if entity @s[scores={IdleTime=1..}] unless entity @s[scores={Walk=0,Run=0,Sneak=0,Jump=0},tag=!sneak_pos,tag=!spectator,tag=player,tag=!warp,tag=!scanning,tag=!poltergust_selected,tag=!riding_poltergust] run scoreboard players set @s IdleTime 0
-execute if entity @s[scores={Animation=1..},tag=!idle,tag=!looking_at_map,tag=!gooigi] run function luigis_mansion:entities/player/animation/freeze_player
+execute if entity @s[scores={Animation=1..},tag=!idle,tag=!looking_at_map,tag=!gooigi] unless entity @s[scores={KnockbackTime=1..}] unless entity @s[scores={ScareTime=1..}] run function luigis_mansion:entities/player/animation/freeze_player
 execute if entity @s[scores={IdleTime=..-1},tag=!gooigi] run function luigis_mansion:entities/player/idle
 
 execute if entity @s[tag=gooigi] run function luigis_mansion_3ds_remake:entities/player/gooigi

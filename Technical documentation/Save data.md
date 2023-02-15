@@ -57,7 +57,7 @@ The 3DS Remake add-on save data contains some more info. It is loaded at `luigis
         ]
     },
     selected_portraits:{
-        <name>:Xb //A portrait in the gallery its selected frame type. -1b is not obtained.
+        <name>:Xb //A portrait in the gallery and its selected frame type. -1b is not obtained.
     },
     boos_caught:{}, //Flags of Boo names that have been captured, to show them in the Boo painting.
     trophy:{ //The trophy progress.
@@ -84,7 +84,7 @@ The Extensive Training add-on save data contains some more info. It is loaded at
 ```
 {
     endless_record:X, //The record set in the endless training room program. -1 when no record is set.
-    speedrun_record:X, //The record set in the endless training room program. -1 when no record is set.
+    speedrun_record:X, //The record set in the speedrun training room program. -1 when no record is set.
     trophy:{ //The trophy progress.
         done:Xb, //Whether the category is completed.
         task_X:Xb //Wether the Xth entry in the list is completed.

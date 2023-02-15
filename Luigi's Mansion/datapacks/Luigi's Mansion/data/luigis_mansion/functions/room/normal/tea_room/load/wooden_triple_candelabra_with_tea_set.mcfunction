@@ -1,0 +1,2 @@
+data modify storage luigis_mansion:data furniture set value {candle_flames:[{lit:1b},{lit:1b},{lit:1b}],searchable:["interact","vacuum"],shake_animation:["interact","vacuum"],sound:1,scan_message:'{"translate":"luigis_mansion:message.player.scan_furniture.64"}'}
+execute positioned 643 21 -54.0 rotated 90 0 run function luigis_mansion:spawn_furniture/wooden_triple_candelabra_with_tea_set/right

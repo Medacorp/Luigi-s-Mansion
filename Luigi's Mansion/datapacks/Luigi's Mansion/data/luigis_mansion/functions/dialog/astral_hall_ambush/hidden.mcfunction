@@ -1,25 +1,30 @@
 scoreboard players set #freeze_timer Selected 1
 scoreboard players add @s Dialog 1
 execute if entity @s[scores={Dialog=1..120}] as @a[tag=same_room,gamemode=!spectator,scores={IdleTime=0..},tag=!looking_at_map] run function luigis_mansion:entities/player/animation/set/high_health_idle_no_sound
-execute if entity @s[scores={Dialog=2}] run stopsound @a[scores={Room=45}] music
-execute if entity @s[scores={Dialog=2}] run scoreboard players set @a[scores={Room=45}] Music 140
-execute if entity @s[scores={Dialog=3}] run playsound luigis_mansion:music.mansion.room.astral_hall music @a[scores={Room=45}] ~ ~ ~ 1000
-execute if entity @s[scores={Dialog=20}] positioned 665 22 93 run function luigis_mansion:spawn_furniture/purple_candles
-execute if entity @s[scores={Dialog=35}] positioned 669 22 95 run function luigis_mansion:spawn_furniture/purple_candles
-execute if entity @s[scores={Dialog=50}] positioned 669 22 99 run function luigis_mansion:spawn_furniture/purple_candles
-execute if entity @s[scores={Dialog=65}] positioned 665 22 101 run function luigis_mansion:spawn_furniture/purple_candles
-execute if entity @s[scores={Dialog=80}] positioned 662 22 97 run function luigis_mansion:spawn_furniture/purple_candles
-execute if entity @s[scores={Dialog=60}] positioned 665 22 93 run function luigis_mansion:spawn_furniture/unlit_candles
-execute if entity @s[scores={Dialog=75}] positioned 669 22 95 run function luigis_mansion:spawn_furniture/unlit_candles
-execute if entity @s[scores={Dialog=90}] positioned 669 22 99 run function luigis_mansion:spawn_furniture/unlit_candles
-execute if entity @s[scores={Dialog=105}] positioned 665 22 101 run function luigis_mansion:spawn_furniture/unlit_candles
-execute if entity @s[scores={Dialog=119}] positioned 662 22 97 run function luigis_mansion:spawn_furniture/unlit_candles
-execute if entity @s[scores={Dialog=120}] positioned 665 22 93 run function luigis_mansion:spawn_furniture/lit_candles
-execute if entity @s[scores={Dialog=120}] positioned 669 22 95 run function luigis_mansion:spawn_furniture/lit_candles
-execute if entity @s[scores={Dialog=120}] positioned 669 22 99 run function luigis_mansion:spawn_furniture/lit_candles
-execute if entity @s[scores={Dialog=120}] positioned 665 22 101 run function luigis_mansion:spawn_furniture/lit_candles
-execute if entity @s[scores={Dialog=120}] positioned 662 22 97 run function luigis_mansion:spawn_furniture/lit_candles
+execute if entity @s[scores={Dialog=2}] run stopsound @a[tag=same_room] music
+execute if entity @s[scores={Dialog=2}] run scoreboard players set @a[tag=same_room] Music 140
+execute if entity @s[scores={Dialog=3}] run playsound luigis_mansion:music.mansion.room.astral_hall music @a[tag=same_room] ~ ~ ~ 1000
+execute if entity @s[scores={Dialog=10}] run tag @e[x=665.5,y=20,z=92.5,tag=light_me,tag=!purple,tag=same_room,sort=nearest,limit=1] add large_flame
+execute if entity @s[scores={Dialog=15}] run tag @e[x=665.5,y=20,z=92.5,tag=light_me,tag=!purple,tag=same_room,sort=nearest,limit=1] add large_flame
+execute if entity @s[scores={Dialog=20}] run tag @e[x=665.5,y=20,z=92.5,tag=light_me,tag=!purple,tag=same_room,sort=nearest,limit=1] add large_flame
+execute if entity @s[scores={Dialog=25}] run tag @e[x=670.5,y=20,z=95.5,tag=light_me,tag=!purple,tag=same_room,sort=nearest,limit=1] add large_flame
+execute if entity @s[scores={Dialog=30}] run tag @e[x=670.5,y=20,z=95.5,tag=light_me,tag=!purple,tag=same_room,sort=nearest,limit=1] add large_flame
+execute if entity @s[scores={Dialog=35}] run tag @e[x=670.5,y=20,z=95.5,tag=light_me,tag=!purple,tag=same_room,sort=nearest,limit=1] add large_flame
+execute if entity @s[scores={Dialog=40}] run tag @e[x=670.5,y=20,z=99.5,tag=light_me,tag=!purple,tag=same_room,sort=nearest,limit=1] add large_flame
+execute if entity @s[scores={Dialog=45}] run tag @e[x=670.5,y=20,z=99.5,tag=light_me,tag=!purple,tag=same_room,sort=nearest,limit=1] add large_flame
+execute if entity @s[scores={Dialog=50}] run tag @e[x=670.5,y=20,z=99.5,tag=light_me,tag=!purple,tag=same_room,sort=nearest,limit=1] add large_flame
+execute if entity @s[scores={Dialog=55}] run tag @e[x=665.5,y=20,z=102.5,tag=light_me,tag=!purple,tag=same_room,sort=nearest,limit=1] add large_flame
+execute if entity @s[scores={Dialog=60}] run tag @e[x=665.5,y=20,z=102.5,tag=light_me,tag=!purple,tag=same_room,sort=nearest,limit=1] add large_flame
+execute if entity @s[scores={Dialog=65}] run tag @e[x=665.5,y=20,z=102.5,tag=light_me,tag=!purple,tag=same_room,sort=nearest,limit=1] add large_flame
+execute if entity @s[scores={Dialog=70}] run tag @e[x=661.5,y=20,z=97.5,tag=light_me,tag=!purple,tag=same_room,sort=nearest,limit=1] add large_flame
+execute if entity @s[scores={Dialog=75}] run tag @e[x=661.5,y=20,z=97.5,tag=light_me,tag=!purple,tag=same_room,sort=nearest,limit=1] add large_flame
+execute if entity @s[scores={Dialog=80}] run tag @e[x=661.5,y=20,z=97.5,tag=light_me,tag=!purple,tag=same_room,sort=nearest,limit=1] add large_flame
+execute at @e[tag=light_me,tag=same_room,tag=!purple,tag=large_flame] run playsound luigis_mansion:furniture.candle_flame.change_color block @a[tag=same_room] ~ ~ ~ 1
+tag @e[tag=light_me,tag=same_room,tag=!purple,tag=large_flame] add purple
+tag @e[tag=light_me,tag=same_room,tag=purple,tag=!large_flame] remove lit
 execute if entity @s[scores={Dialog=120}] run function luigis_mansion:room/hidden/astral_hall/wave_1
 execute if entity @s[scores={Dialog=120}] run tag @a[tag=same_room,gamemode=!spectator,tag=high_health_idle,tag=!looking_at_map] add idle
-tag @s[scores={Dialog=120}] remove astral_hall_ambush
-scoreboard players set @s[scores={Dialog=120}] Dialog 0
+execute if entity @s[scores={Dialog=130}] run tag @e[tag=light_me,tag=same_room] remove purple
+execute if entity @s[scores={Dialog=130}] run tag @e[tag=light_me,tag=same_room] add lit
+tag @s[scores={Dialog=130}] remove astral_hall_ambush
+scoreboard players set @s[scores={Dialog=130}] Dialog 0

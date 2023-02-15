@@ -5,6 +5,7 @@ summon minecraft:marker ~ ~1.4 ~ {Tags:["temp","remove_from_existence","right"]}
 summon minecraft:marker ~ ~1.4 ~ {Tags:["temp","remove_from_existence","up"]}
 summon minecraft:marker ~ ~1.4 ~ {Tags:["temp","remove_from_existence","down"]}
 scoreboard players operation #temp FurnitureRadius = @s FurnitureRadius
+scoreboard players operation #temp FurnitureRadius *= #10 Constants
 
 scoreboard players set #temp2 FurnitureSizeL 0
 scoreboard players set #temp2 FurnitureSizeU 0

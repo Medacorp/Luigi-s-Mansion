@@ -3,11 +3,11 @@
 	    "luigis_mansion:room/normal/astral_hall/load/set_loaded",
         "luigis_mansion:room/normal/astral_hall/load/lights",
         "luigis_mansion:room/normal/astral_hall/load/doors",
-        "luigis_mansion:room/normal/astral_hall/load/candle_1",
-        "luigis_mansion:room/normal/astral_hall/load/candle_2",
-        "luigis_mansion:room/normal/astral_hall/load/candle_3",
-        "luigis_mansion:room/normal/astral_hall/load/candle_4",
-        "luigis_mansion:room/normal/astral_hall/load/candle_5",
-        "luigis_mansion:room/normal/astral_hall/load/cobweb"
+        "luigis_mansion:room/normal/astral_hall/load/cobweb",
+        "luigis_mansion:room/normal/astral_hall/load/tall_wooden_triple_candelabra_1",
+        "luigis_mansion:room/normal/astral_hall/load/tall_wooden_triple_candelabra_2",
+        "luigis_mansion:room/normal/astral_hall/load/tall_wooden_triple_candelabra_3",
+        "luigis_mansion:room/normal/astral_hall/load/tall_wooden_triple_candelabra_4",
+        "luigis_mansion:room/normal/astral_hall/load/tall_wooden_triple_candelabra_5"
 	]
 }

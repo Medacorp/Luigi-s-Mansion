@@ -1,0 +1,3 @@
+data modify storage luigis_mansion:data furniture set value {candle_flames:[{lit:0b,tags:["light_me"]},{lit:0b,tags:["light_me"]},{lit:0b,tags:["light_me"],}],searchable:["interact","vacuum"],shake_animation:["interact","vacuum"],sound:1,can_hide_boo:1b,scan_message:'{"translate":"luigis_mansion:message.player.scan_furniture.39"}'}
+execute if data storage luigis_mansion:data current_state.current_data.rooms.astral_hall{cleared:1b} run data modify storage luigis_mansion:data furniture.candle_flames[].lit set value 1b
+execute positioned 665 20.5 94 rotated -90 0 run function luigis_mansion:spawn_furniture/tall_wooden_triple_candelabra

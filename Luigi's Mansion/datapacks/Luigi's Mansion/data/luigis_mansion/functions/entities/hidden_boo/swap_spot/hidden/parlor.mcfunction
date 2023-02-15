@@ -9,9 +9,6 @@ summon minecraft:marker 721 20 -8 {Tags:["choice","hide_option"]}
 summon minecraft:marker 719 20 -17 {Tags:["choice","hide_option"]}
 summon minecraft:marker 721 20 -17 {Tags:["choice","hide_option"]}
 summon minecraft:marker 714 20 -12 {Tags:["choice","hide_option"]}
-summon minecraft:marker 714 22 -14 {Tags:["choice","hide_option"]}
-summon minecraft:marker 714 22 -11 {Tags:["choice","hide_option"]}
 summon minecraft:marker 714 20 -19 {Tags:["choice","hide_option"]}
 summon minecraft:marker 721 20 -4 {Tags:["choice","hide_option"]}
 summon minecraft:marker 727 21 -4 {Tags:["choice","hide_option"]}
-summon minecraft:marker 720 21 -8 {Tags:["choice","hide_option"]}

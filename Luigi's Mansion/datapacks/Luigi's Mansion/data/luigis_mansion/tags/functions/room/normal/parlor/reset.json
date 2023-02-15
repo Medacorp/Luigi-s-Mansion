@@ -2,9 +2,6 @@
     "values": [
         "luigis_mansion:room/normal/parlor/reset/unload",
         "#luigis_mansion:room/normal/parlor/turn_lights/off",
-        "luigis_mansion:room/normal/parlor/reset/candle_1",
-        "luigis_mansion:room/normal/parlor/reset/candle_2",
-        "luigis_mansion:room/normal/parlor/reset/candle_3",
         "luigis_mansion:room/normal/parlor/reset/chair",
         "luigis_mansion:room/normal/parlor/reset/closet",
         "luigis_mansion:room/normal/parlor/reset/couch",

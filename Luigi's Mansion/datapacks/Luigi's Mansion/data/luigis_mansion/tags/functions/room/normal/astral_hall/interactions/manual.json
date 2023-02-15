@@ -1,10 +1,5 @@
 {
 	"values": [
-		"luigis_mansion:room/normal/astral_hall/interactions/manual/candle_1",
-		"luigis_mansion:room/normal/astral_hall/interactions/manual/candle_2",
-		"luigis_mansion:room/normal/astral_hall/interactions/manual/candle_3",
-		"luigis_mansion:room/normal/astral_hall/interactions/manual/candle_4",
-		"luigis_mansion:room/normal/astral_hall/interactions/manual/candle_5",
 		"luigis_mansion:room/normal/astral_hall/interactions/manual/lamp",
 		"luigis_mansion:room/normal/astral_hall/interactions/manual/table_1",
 		"luigis_mansion:room/normal/astral_hall/interactions/manual/table_2"

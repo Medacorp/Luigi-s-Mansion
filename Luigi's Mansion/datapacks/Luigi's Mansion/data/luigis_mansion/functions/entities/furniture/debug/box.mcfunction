@@ -12,6 +12,9 @@ scoreboard players operation #temp FurnitureSizeF = @s FurnitureSizeW
 scoreboard players operation #temp FurnitureSizeL /= #2 Constants
 execute if entity @s[tag=!hanging_furniture,tag=!standing_furniture] run scoreboard players operation #temp FurnitureSizeU /= #2 Constants
 scoreboard players operation #temp FurnitureSizeF /= #2 Constants
+scoreboard players operation #temp FurnitureSizeL *= #10 Constants
+scoreboard players operation #temp FurnitureSizeU *= #10 Constants
+scoreboard players operation #temp FurnitureSizeF *= #10 Constants
 
 scoreboard players set #temp2 FurnitureSizeL 0
 scoreboard players set #temp2 FurnitureSizeU 0

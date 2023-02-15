@@ -1,1 +1,0 @@
-scoreboard players reset #parlor_candle_3

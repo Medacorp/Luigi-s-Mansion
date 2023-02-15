@@ -1,1 +1,0 @@
-execute if data storage luigis_mansion:data current_state.current_data.rooms.astral_hall{cleared:1b} positioned 669 22 -80 run function luigis_mansion:spawn_furniture/lit_candles

@@ -8790,6 +8790,15 @@
         ],
         "subtitle": "luigis_mansion:subtitles.furniture.button.press"
     },
+    "furniture.candle_flame.change_color": {
+        "sounds": [
+            {
+                "name": "luigis_mansion:furniture/candle_flame/change_color",
+                "stream": false
+            }
+        ],
+        "subtitle": "luigis_mansion:subtitles.furniture.candle_flame.change_color"
+    },
     "furniture.chandelier.fall": {
         "sounds": [
             {

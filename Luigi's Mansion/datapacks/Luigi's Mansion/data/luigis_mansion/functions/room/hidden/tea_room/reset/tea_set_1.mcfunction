@@ -1,1 +1,0 @@
-scoreboard players reset #tea_room_tea_set_1
