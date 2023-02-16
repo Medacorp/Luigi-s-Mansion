@@ -1,0 +1,2 @@
+execute if entity @s[nbt={ArmorItems:[{tag:{shake_sound:"luigis_mansion:wood"}}]}] run function luigis_mansion:blocks/search_sound/wood
+scoreboard players set @s[nbt={ArmorItems:[{tag:{shake_sound:"luigis_mansion:wood"}}]}] Sound 3

@@ -12,6 +12,7 @@ execute if entity @s[tag=!furniture] store result score @s PosY run data get ent
 execute if entity @s[tag=!furniture] store result score @s PosZ run data get entity @s Pos[2] 10
 execute if entity @s[tag=!furniture] run scoreboard players operation @s PosY += @s EntityYOffset
 
+tag @s remove scanned
 tag @s[tag=remove_from_existence] add dead
 teleport @s[tag=dead,tag=!captured] ~ ~-100 ~
 scoreboard players reset @s[tag=dead,tag=!captured]

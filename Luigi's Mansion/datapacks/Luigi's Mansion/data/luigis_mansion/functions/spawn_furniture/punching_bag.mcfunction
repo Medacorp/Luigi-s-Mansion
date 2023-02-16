@@ -4,7 +4,6 @@ scoreboard players set @e[tag=this_entity,limit=1] Sound 0
 scoreboard players set @e[tag=this_entity,limit=1] ActionTime -1
 scoreboard players set @e[tag=this_entity,limit=1] FurnitureSizeW 10
 scoreboard players set @e[tag=this_entity,limit=1] FurnitureSizeH 60
-scoreboard players set @e[tag=this_entity,limit=1] InteractionTime 7
 scoreboard players set @e[tag=this_entity,limit=1] FurnitureXOrigin 0
 scoreboard players set @e[tag=this_entity,limit=1] FurnitureZOrigin 0
 scoreboard players set @e[tag=this_entity,limit=1] FurnitureUp -10

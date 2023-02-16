@@ -8,7 +8,8 @@ furniture: {
     no_short_shake:1b, //When set disables the short shaking animation from manual search. Default = 0b.
     no_visual_shake:1b, //When set disables the shaking animations visually; sound will still play. Default = 0b.
     use_medium_shake:1b, //When set forces a shake animation used by room clear chests, rather than the other 2. Default = 0b.
-    sound:6, //What furniture shake sound. Defaults to 0.
+    sound:"luigis_mansion:heavy_generic", //What furniture shake sound. See below for options. Defaults to luigis_mansion:heavy_generic.
+    interact_animation:7, //What animation gets used when using the interact method. Enthusiastic animation (7) aditionally has a punch sound and will swing swinging furniture. Overrides default animation selecting. Default = none, except for room clear chests which use 45 or 43 when the 3DS Remake add-on is or is not installed respectively.
     
     //search details
     searchable: ["<method>"], //Sets what method can result in searching. If "interact" is absent here, but provided in shake_animation, interact will still try to shake it, and trigger the search animaton it, but it won't actually get searched. Methods: time(will search automatically), interact, vacuum, dust, fire, water, ice. Default = none.
@@ -52,23 +53,23 @@ furniture: {
 
 Furniture shake sounds:
 ```
-value | sound type
-0     | heavy_generic
-1     | generic
-2     | heavy_metal
-3     | metal
-4     | stone
-5     | wood
-6     | ceramic
-7     | plant
-8     | fridge
-9     | oven
-10    | plate
-11    | concrete
-12    | cello
-13    | drum
-14    | harp
-15    | saxophone
-16    | xylophone
-17    | chest
+Value                        | Sound type
+luigis_mansion:cello         | Cello
+luigis_mansion:ceramic       | Ceramic
+luigis_mansion:chest         | Chest
+luigis_mansion:concrete      | Concrete
+luigis_mansion:drum          | Drum
+luigis_mansion:fridge        | Fridge
+luigis_mansion:generic       | Generic
+luigis_mansion:harp          | Harp
+luigis_mansion:heavy_generic | Heavy generic
+luigis_mansion:heavy_metal   | Heavy metal
+luigis_mansion:metal         | Metal
+luigis_mansion:oven          | Oven
+luigis_mansion:plant         | Plant
+luigis_mansion:plate         | Plate
+luigis_mansion:saxophone     | Saxophone
+luigis_mansion:stone         | Stone
+luigis_mansion:wood          | Wood
+luigis_mansion:xylophone     | Xylophone
 ```

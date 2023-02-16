@@ -2,7 +2,7 @@
 	"credit": "Made with Blockbench",
 	"textures": {
 		"0": "luigis_mansion:furniture/wooden_candelabra",
-		"1": "luigis_mansion:furniture/candle",
+		"1": "luigis_mansion:furniture/candle/blank",
 		"particle": "luigis_mansion:furniture/wooden_candelabra"
 	},
 	"elements": [
@@ -73,11 +73,11 @@
 			"to": [9, 13, 9],
 			"rotation": {"angle": 0, "axis": "y", "origin": [8, 5, 7]},
 			"faces": {
-				"north": {"uv": [8, 1, 10, 7], "texture": "#1"},
-				"east": {"uv": [6, 1, 8, 7], "texture": "#1"},
-				"south": {"uv": [12, 1, 14, 7], "texture": "#1"},
-				"west": {"uv": [10, 1, 12, 7], "texture": "#1"},
-				"up": {"uv": [4, 5, 6, 7], "texture": "#1"}
+				"north": {"uv": [4, 4, 8, 16], "texture": "#1"},
+				"east": {"uv": [0, 4, 4, 16], "texture": "#1"},
+				"south": {"uv": [12, 4, 16, 16], "texture": "#1"},
+				"west": {"uv": [8, 4, 12, 16], "texture": "#1"},
+				"up": {"uv": [4, 0, 8, 4], "texture": "#1"}
 			}
 		},
 		{

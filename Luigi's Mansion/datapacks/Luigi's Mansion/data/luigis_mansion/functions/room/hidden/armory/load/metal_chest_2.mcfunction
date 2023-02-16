@@ -1,2 +1,2 @@
-data modify storage luigis_mansion:data furniture set value {can_hide_boo:1b,sound:0,searchable:["interact","vacuum"],shake_animation:["interact","vacuum"],scan_message:'{"translate":"luigis_mansion:message.player.scan_furniture.11"}'}
+data modify storage luigis_mansion:data furniture set value {can_hide_boo:1b,sound:"luigis_mansion:heavy_generic",searchable:["interact","vacuum"],shake_animation:["interact","vacuum"],scan_message:'{"translate":"luigis_mansion:message.player.scan_furniture.11"}'}
 execute positioned 761.0 29 -58.0 rotated -10 0 run function luigis_mansion:spawn_furniture/metal_chest

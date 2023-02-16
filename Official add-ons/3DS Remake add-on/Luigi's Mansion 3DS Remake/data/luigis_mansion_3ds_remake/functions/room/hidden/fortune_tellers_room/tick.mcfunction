@@ -7,7 +7,7 @@ execute as @a[gamemode=!spectator,scores={Room=20}] run function luigis_mansion_
 
 function #luigis_mansion_3ds_remake:room/hidden/fortune_tellers_room/interactions/room
 
-execute if block 746 13 -37 minecraft:brewing_stand[has_bottle_0=true,has_bottle_1=true,has_bottle_2=true] if block 736 13 -37 minecraft:brewing_stand[has_bottle_0=true,has_bottle_1=true,has_bottle_2=true] if block 736 13 -21 minecraft:brewing_stand[has_bottle_0=true,has_bottle_1=true,has_bottle_2=true] if block 746 13 -21 minecraft:brewing_stand[has_bottle_0=true,has_bottle_1=true,has_bottle_2=true] unless entity @e[type=minecraft:armor_stand,tag=key,tag=laundry_room,limit=1] unless data storage luigis_mansion:data current_state.current_data{obtained_keys:["laundry_room"]} run tag @s[scores={Room=20},tag=room_clear_loot_dropper] add drop_loot
+execute unless entity @e[tag=light_me,tag=!lit,scores={Room=20},limit=1] run tag @e[scores={Room=20},tag=room_clear_loot_dropper] add drop_loot
 
 scoreboard players set #temp Room 20
 execute as @a[gamemode=!spectator,tag=!pull_open_door,tag=!push_open_door] run function #luigis_mansion:get_same_room

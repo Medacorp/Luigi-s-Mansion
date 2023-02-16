@@ -1,2 +1,2 @@
-scoreboard players set @e[tag=this_entity,limit=1] FurnitureSound 0
-execute if data storage luigis_mansion:data furniture.sound store result score @e[tag=this_entity,limit=1] FurnitureSound run data get storage luigis_mansion:data furniture.sound
+data modify entity @e[tag=this_entity,limit=1] ArmorItems[3].tag.shake_sound set value "luigis_mansion:heavy_generic"
+execute if data storage luigis_mansion:data furniture.sound run data modify entity @e[tag=this_entity,limit=1] ArmorItems[3].tag.shake_sound set from storage luigis_mansion:data furniture.sound

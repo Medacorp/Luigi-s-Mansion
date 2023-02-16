@@ -22,3 +22,6 @@ execute if entity @s[scores={Animation=21..22}] run function luigis_mansion:enti
 execute if entity @s[scores={Animation=23..24}] run function luigis_mansion:entities/player/animation/set/door/unlock/pull
 execute if entity @s[scores={Animation=25}] run function luigis_mansion:entities/player/animation/set/talk
 execute if entity @s[scores={Animation=26}] run function luigis_mansion:entities/player/animation/set/revive
+execute if entity @s[scores={Animation=42}] run function luigis_mansion:entities/player/animation/set/knock
+execute if entity @s[scores={Animation=43}] run function luigis_mansion:entities/player/animation/set/hump
+execute if entity @s[scores={Animation=44}] run function luigis_mansion:entities/player/animation/set/bash

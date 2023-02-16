@@ -19,7 +19,7 @@ execute if entity @s[tag=poltergust_wall_sound,scores={Shrunk=1..}] run playsoun
 tag @s remove poltergust_floor_sound
 tag @s remove poltergust_wall_sound
 execute if entity @s[tag=exploding_poltergust] run function luigis_mansion:items/poltergust_3000/explode
-execute unless entity @s[scores={IdleTime=..-1},tag=!idle] run tag @s[tag=!poltergust_malfunction,nbt={SelectedItem:{tag:{luigis_mansion:{id:"luigis_mansion:poltergust_3000"}}}}] add poltergust_selected
+execute unless entity @s[scores={Animation=1..},tag=!idle] run tag @s[tag=!poltergust_malfunction,nbt={SelectedItem:{tag:{luigis_mansion:{id:"luigis_mansion:poltergust_3000"}}}}] add poltergust_selected
 execute if entity @s[nbt={Inventory:[{tag:{luigis_mansion:{id:"luigis_mansion:poltergust_3000",sync_element:1b}}}]}] run function luigis_mansion:items/poltergust_3000/sync_element
 tag @s[tag=!poltergust_selected] remove expelling
 scoreboard players set @s[tag=!poltergust_selected] VacuumErrors 0

@@ -232,7 +232,5 @@ execute if score #missingno_57 Ticking matches 1 unless entity @a[x=635,y=91,z=-
 execute if predicate luigis_mansion:lightning_strike_chance run function luigis_mansion:other/lightning_strike
 execute in minecraft:overworld if predicate luigis_mansion:lightning_strike_chance run function luigis_mansion:other/lightning_strike
 tag @e[tag=portrait_ghost] add no_poison_mushroom_dropping
-tag @e[tag=furniture,scores={FurnitureSearch=1..}] add no_dust
-scoreboard players set @e[tag=furniture,scores={FurnitureSearch=1..}] FurnitureSearch -1
 execute if score #gbh_clock Selected matches 108000.. unless entity @a[tag=e_gadd_call,limit=1] run tag @r[scores={Room=0..},tag=!spectator] add e_gadd_call
 scoreboard players set #temp Time 1

@@ -1,2 +1,2 @@
-data modify storage luigis_mansion:data furniture{shake_animation:["interact","vacuum"],no_visual_shake:1b,scan_message:'{"translate":"luigis_mansion:message.player.scan_furniture.55"}'}
+data modify storage luigis_mansion:data furniture set value {shake_animation:["interact","vacuum"],no_visual_shake:1b,scan_message:'{"translate":"luigis_mansion:message.player.scan_furniture.55"}'}
 execute positioned 709.0 20 57.0 rotated -125 0 run function luigis_mansion:spawn_furniture/rocking_chair

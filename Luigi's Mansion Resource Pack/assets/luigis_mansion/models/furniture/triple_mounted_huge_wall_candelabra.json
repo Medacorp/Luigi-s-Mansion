@@ -2,7 +2,7 @@
 	"credit": "Made with Blockbench",
 	"textures": {
 		"0": "luigis_mansion:furniture/triple_mounted_wall_candlabra",
-		"1": "luigis_mansion:furniture/candle",
+		"1": "luigis_mansion:furniture/candle/huge_blank",
 		"particle": "luigis_mansion:furniture/triple_mounted_wall_candlabra"
 	},
 	"elements": [
@@ -178,11 +178,11 @@
 			"to": [9.25, 19.73, 6.55],
 			"rotation": {"angle": 0, "axis": "x", "origin": [8, 10, 8.825]},
 			"faces": {
-				"north": {"uv": [8.5, 7, 11, 16], "texture": "#1"},
-				"east": {"uv": [6, 7, 8.5, 16], "texture": "#1"},
-				"south": {"uv": [13.5, 7, 16, 16], "texture": "#1"},
-				"west": {"uv": [11, 7, 13.5, 16], "texture": "#1"},
-				"up": {"uv": [3.5, 13.5, 6, 16], "rotation": 180, "texture": "#1"}
+				"north": {"uv": [2.5, 2.5, 5, 11.5], "texture": "#1"},
+				"east": {"uv": [0, 2.5, 2.5, 11.5], "texture": "#1"},
+				"south": {"uv": [7.45, 2.5, 9.95, 11.5], "texture": "#1"},
+				"west": {"uv": [5, 2.5, 7.5, 11.5], "texture": "#1"},
+				"up": {"uv": [2.5, 0, 5, 2.5], "rotation": 180, "texture": "#1"}
 			}
 		},
 		{

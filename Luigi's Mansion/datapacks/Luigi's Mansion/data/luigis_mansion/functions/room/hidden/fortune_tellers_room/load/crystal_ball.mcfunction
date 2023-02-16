@@ -1,2 +1,2 @@
-data modify storage luigis_mansion:data furniture set value {searchable:[],scan_message:'{"translate":"luigis_mansion:message.player.scan_furniture.94"}'}
-execute positioned 741 12 44 run function luigis_mansion:spawn_furniture/crystal_ball
+data modify storage luigis_mansion:data furniture set value {shake_animation:["interact"],interact_animation:43,no_long_shake:1b,scan_message:'{"translate":"luigis_mansion:message.player.scan_furniture.94"}'}
+execute positioned 741 12 44 rotated -90 0 run function luigis_mansion:spawn_furniture/crystal_ball

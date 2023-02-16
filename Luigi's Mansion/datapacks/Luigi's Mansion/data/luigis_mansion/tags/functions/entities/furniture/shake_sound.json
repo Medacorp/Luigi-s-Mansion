@@ -1,0 +1,22 @@
+{
+	"values": [
+        "luigis_mansion:entities/furniture/shake_sound/cello",
+        "luigis_mansion:entities/furniture/shake_sound/ceramic",
+        "luigis_mansion:entities/furniture/shake_sound/chest",
+        "luigis_mansion:entities/furniture/shake_sound/concrete",
+        "luigis_mansion:entities/furniture/shake_sound/drum",
+        "luigis_mansion:entities/furniture/shake_sound/fridge",
+        "luigis_mansion:entities/furniture/shake_sound/generic",
+        "luigis_mansion:entities/furniture/shake_sound/harp",
+        "luigis_mansion:entities/furniture/shake_sound/heavy_generic",
+        "luigis_mansion:entities/furniture/shake_sound/heavy_metal",
+        "luigis_mansion:entities/furniture/shake_sound/metal",
+        "luigis_mansion:entities/furniture/shake_sound/oven",
+        "luigis_mansion:entities/furniture/shake_sound/plant",
+        "luigis_mansion:entities/furniture/shake_sound/plate",
+        "luigis_mansion:entities/furniture/shake_sound/saxophone",
+        "luigis_mansion:entities/furniture/shake_sound/stone",
+        "luigis_mansion:entities/furniture/shake_sound/wood",
+        "luigis_mansion:entities/furniture/shake_sound/xylophone"
+	]
+}
