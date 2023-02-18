@@ -1,4 +1,4 @@
-execute if entity @a[scores={EGaddGPRChoice=1..},limit=1] run scoreboard players add @s[scores={Dialog=1071..}] Dialog 1
+execute if entity @a[scores={EGaddGhostPortrificationizerRoomChoice=1..},limit=1] run scoreboard players add @s[scores={Dialog=1071..}] Dialog 1
 execute unless entity @e[tag=portrificationizing_ghost,limit=1] run scoreboard players add @s[scores={Dialog=665..1070}] Dialog 1
 scoreboard players add @s[scores={Dialog=..664}] Dialog 1
 execute unless entity @s[scores={Dialog=1..}] run scoreboard players add @s Dialog 1
@@ -8,7 +8,7 @@ execute if entity @s[scores={Dialog=1}] as @a[tag=same_room] run function luigis
 execute if entity @s[scores={Dialog=1}] run function #luigis_mansion:portrificationize_ghosts
 teleport @s[scores={Dialog=1}] ~ ~ ~ facing 771 77 15
 tag @s[scores={Dialog=201}] add jump
-scoreboard players set @s[scores={Dialog=201}] AnimationProg 0
+scoreboard players set @s[scores={Dialog=201}] AnimationProgress 0
 teleport @s[scores={Dialog=201..210}] ~ ~0.05 ~
 teleport @s[scores={Dialog=211..220}] ~ ~-0.05 ~
 teleport @s[scores={Dialog=221..230}] ~ ~0.05 ~
@@ -18,30 +18,30 @@ teleport @s[scores={Dialog=251..260}] ~ ~-0.05 ~
 teleport @s[scores={Dialog=261..270}] ~ ~0.05 ~
 teleport @s[scores={Dialog=271..280}] ~ ~-0.05 ~
 tag @s[scores={Dialog=280}] remove jump
-scoreboard players set @s[scores={Dialog=280}] AnimationProg 0
+scoreboard players set @s[scores={Dialog=280}] AnimationProgress 0
 tag @s[scores={Dialog=300}] add walk
-scoreboard players set @s[scores={Dialog=300}] AnimationProg 0
+scoreboard players set @s[scores={Dialog=300}] AnimationProgress 0
 teleport @s[scores={Dialog=300..335}] ~ ~ ~-0.2 -180 0
 tag @s[scores={Dialog=335}] remove walk
-scoreboard players set @s[scores={Dialog=335}] AnimationProg 0
+scoreboard players set @s[scores={Dialog=335}] AnimationProgress 0
 execute if entity @s[scores={Dialog=336..359}] facing entity @e[tag=portrificationizing_ghost,sort=nearest,limit=1] feet rotated ~ 0 run teleport @s ~ ~ ~ ~ ~
 tag @s[scores={Dialog=360}] add walk
-scoreboard players set @s[scores={Dialog=360}] AnimationProg 0
+scoreboard players set @s[scores={Dialog=360}] AnimationProgress 0
 teleport @s[scores={Dialog=360..395}] ~ ~ ~-0.115 -180 0
 tag @s[scores={Dialog=395}] remove walk
-scoreboard players set @s[scores={Dialog=395}] AnimationProg 0
+scoreboard players set @s[scores={Dialog=395}] AnimationProgress 0
 execute if entity @s[scores={Dialog=396..439}] facing entity @e[tag=portrificationizing_ghost,sort=nearest,limit=1] feet rotated ~ 0 run teleport @s ~ ~ ~ ~ ~
 tag @s[scores={Dialog=440}] add walk
-scoreboard players set @s[scores={Dialog=440}] AnimationProg 0
+scoreboard players set @s[scores={Dialog=440}] AnimationProgress 0
 teleport @s[scores={Dialog=440..475}] ~ ~ ~-0.171 -180 0
 tag @s[scores={Dialog=475}] remove walk
-scoreboard players set @s[scores={Dialog=475}] AnimationProg 0
+scoreboard players set @s[scores={Dialog=475}] AnimationProgress 0
 execute if entity @s[scores={Dialog=476..519}] facing entity @e[tag=portrificationizing_ghost,sort=nearest,limit=1] feet rotated ~ 0 run teleport @s ~ ~ ~ ~ ~
 tag @s[scores={Dialog=520}] add walk
-scoreboard players set @s[scores={Dialog=520}] AnimationProg 0
+scoreboard players set @s[scores={Dialog=520}] AnimationProgress 0
 teleport @s[scores={Dialog=520..555}] ~ ~ ~-0.228 -180 0
 tag @s[scores={Dialog=555}] remove walk
-scoreboard players set @s[scores={Dialog=555}] AnimationProg 0
+scoreboard players set @s[scores={Dialog=555}] AnimationProgress 0
 teleport @s[scores={Dialog=556..809}] ~ ~ ~ facing 770 77 -12
 execute if entity @s[scores={Dialog=360}] run tellraw @a[tag=same_room] {"translate":"chat.type.text","with":[{"translate":"luigis_mansion:entity.e_gadd","color":"green"},{"translate":"luigis_mansion:dialog.ghost_portrificationizer_room.portrificationizing.1"}]}
 execute if entity @s[scores={Dialog=360}] run playsound luigis_mansion:entity.e_gadd.talk.seedapee_ohyah neutral @a[tag=same_room] ~ ~ ~ 1
@@ -52,7 +52,7 @@ execute if entity @s[scores={Dialog=520}] run playsound luigis_mansion:entity.e_
 execute if entity @s[scores={Dialog=600}] run tellraw @a[tag=same_room] {"translate":"chat.type.text","with":[{"translate":"luigis_mansion:entity.e_gadd","color":"green"},{"translate":"luigis_mansion:dialog.ghost_portrificationizer_room.portrificationizing.4"}]}
 execute if entity @s[scores={Dialog=600}] run playsound luigis_mansion:entity.e_gadd.talk.keekehrookukukay neutral @a[tag=same_room] ~ ~ ~ 1
 tag @s[scores={Dialog=666}] add nod
-scoreboard players set @s[scores={Dialog=666}] AnimationProg 0
+scoreboard players set @s[scores={Dialog=666}] AnimationProgress 0
 execute if entity @s[scores={Dialog=666}] run tellraw @a[tag=same_room] {"translate":"chat.type.text","with":[{"translate":"luigis_mansion:entity.e_gadd","color":"green"},{"translate":"luigis_mansion:dialog.ghost_portrificationizer_room.portrificationizing.5"}]}
 execute if entity @s[scores={Dialog=666}] run playsound luigis_mansion:entity.e_gadd.talk.jeemee_jeemee neutral @a[tag=same_room] ~ ~ ~ 1
 execute if entity @s[scores={Dialog=674},tag=!ending] if score #players Totals matches 1 run tellraw @a[tag=same_room] {"translate":"chat.type.text","with":[{"translate":"luigis_mansion:entity.e_gadd","color":"green"},{"translate":"luigis_mansion:dialog.ghost_portrificationizer_room.portrificationizing.6","with":[{"selector":"@p[gamemode=!spectator]"}]}]}
@@ -63,7 +63,7 @@ execute if entity @s[scores={Dialog=674},tag=ending] run playsound luigis_mansio
 execute if entity @s[scores={Dialog=802},tag=ending] run scoreboard players set @s Dialog 810
 tag @s[scores={Dialog=810}] remove nod
 tag @s[scores={Dialog=810},tag=!ending] add walk
-scoreboard players set @s[scores={Dialog=810}] AnimationProg 0
+scoreboard players set @s[scores={Dialog=810}] AnimationProgress 0
 execute if entity @s[scores={Dialog=810}] as @a[tag=same_room] run function luigis_mansion:other/music/set/portraits
 execute if entity @s[scores={Dialog=810}] run function luigis_mansion:dialog/portrificationizing/get_gold_coin
 execute if entity @s[scores={Dialog=810}] unless score #temp Money matches 0 run tellraw @a[tag=same_room] {"translate":"chat.type.text","with":[{"translate":"luigis_mansion:entity.mansion","color":"green"},{"translate":"luigis_mansion:message.money","with":[{"translate":"luigis_mansion:item.gold_coin"},{"score":{"objective":"Money","name":"#temp"}},{"score":{"objective":"Money","name":"#temp2"}}]}]}
@@ -136,15 +136,15 @@ teleport @s[scores={Dialog=810..1068},tag=!ending] ~ ~ ~0.1 0 0
 teleport @s[scores={Dialog=1069},tag=!ending] 774 77 14 0 0
 tag @s[scores={Dialog=1069},tag=!ending] remove walk
 execute at @s[scores={Dialog=1069..},tag=!ending] facing entity @e[tag=same_room,tag=!spectator,sort=nearest,limit=1] feet rotated ~ 0 run teleport @s ~ ~ ~ ~ ~
-scoreboard players set @s[scores={Dialog=1069},tag=!ending] AnimationProg 0
-execute if entity @s[scores={Dialog=1070},tag=!ending] run tellraw @a[tag=same_room] {"translate":"luigis_mansion:message.save.yes","color":"green","clickEvent":{"action":"run_command","value":"/trigger EGaddGPRChoice set 1"},"extra":[{"text":"\n"},{"translate":"luigis_mansion:message.save.no","clickEvent":{"action":"run_command","value":"/trigger EGaddGPRChoice set 2"}}]}
-execute if entity @s[scores={Dialog=1070},tag=!ending] run scoreboard players enable @a[tag=same_room] EGaddGPRChoice
-execute if entity @s[scores={Dialog=1070},tag=ending] run scoreboard players set @a[tag=same_room,limit=1] EGaddGPRChoice 2
+scoreboard players set @s[scores={Dialog=1069},tag=!ending] AnimationProgress 0
+execute if entity @s[scores={Dialog=1070},tag=!ending] run tellraw @a[tag=same_room] {"translate":"luigis_mansion:message.save.yes","color":"green","clickEvent":{"action":"run_command","value":"/trigger EGaddGhostPortrificationizerRoomChoice set 1"},"extra":[{"text":"\n"},{"translate":"luigis_mansion:message.save.no","clickEvent":{"action":"run_command","value":"/trigger EGaddGhostPortrificationizerRoomChoice set 2"}}]}
+execute if entity @s[scores={Dialog=1070},tag=!ending] run scoreboard players enable @a[tag=same_room] EGaddGhostPortrificationizerRoomChoice
+execute if entity @s[scores={Dialog=1070},tag=ending] run scoreboard players set @a[tag=same_room,limit=1] EGaddGhostPortrificationizerRoomChoice 2
 execute if entity @s[scores={Dialog=1070}] unless entity @a[tag=same_room,limit=1] run scoreboard players set @s Dialog 1072
-execute if entity @s[scores={Dialog=1072}] as @a[scores={EGaddGPRChoice=1},limit=1] run function luigis_mansion:data/save
+execute if entity @s[scores={Dialog=1072}] as @a[scores={EGaddGhostPortrificationizerRoomChoice=1},limit=1] run function luigis_mansion:data/save
 tag @s[scores={Dialog=1072}] remove portrificationizing
 tag @s[scores={Dialog=1072},tag=ending] add mario_to_normal
 tag @s[scores={Dialog=1072}] remove ending
-execute if entity @s[scores={Dialog=1072}] run scoreboard players reset @a EGaddGPRChoice
+execute if entity @s[scores={Dialog=1072}] run scoreboard players reset @a EGaddGhostPortrificationizerRoomChoice
 scoreboard players set @s[scores={Dialog=1072}] Dialog 0
 scoreboard players reset #temp Dialog

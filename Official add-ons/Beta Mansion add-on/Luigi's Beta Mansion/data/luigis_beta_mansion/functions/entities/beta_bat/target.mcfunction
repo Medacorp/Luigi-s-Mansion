@@ -5,5 +5,5 @@ execute if entity @s[tag=!targetted] run playsound luigis_beta_mansion:entity.ba
 data modify entity @s[tag=!targetted] HandItems[0].tag.CustomModelData set value 14
 data modify entity @s[tag=!targetted] HandItems[1].tag.CustomModelData set value 14
 data merge entity @s[tag=!targetted] {Pose:{RightArm:[30.0f,0.0f,0.01f],LeftArm:[30.0f,0.0f,0.01f],Head:[30.0f,0.0f,0.01f]}}
-scoreboard players set @s[tag=!targetted] AnimationProg 0
+scoreboard players set @s[tag=!targetted] AnimationProgress 0
 tag @s add targetted

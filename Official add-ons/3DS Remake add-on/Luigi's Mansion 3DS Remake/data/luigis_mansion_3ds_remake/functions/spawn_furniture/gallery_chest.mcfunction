@@ -2,11 +2,11 @@ summon minecraft:armor_stand ~ ~-1.4 ~ {CustomName:'{"translate":"luigis_mansion
 teleport @e[tag=this_entity,limit=1] ~ ~-1.4 ~ ~ 0
 execute if data storage luigis_mansion:data furniture{searched:1b,no_search_animation:1b} run data modify entity @e[tag=this_entity,limit=1] ArmorItems[3].tag.CustomModelData set value -7
 scoreboard players set @e[tag=this_entity,limit=1] Sound 0
-scoreboard players set @e[tag=this_entity,limit=1] FurnitureSizeL 22
-scoreboard players set @e[tag=this_entity,limit=1] FurnitureSizeU 14
-scoreboard players set @e[tag=this_entity,limit=1] FurnitureSizeF 14
-scoreboard players set @e[tag=this_entity,limit=1] FurnitureUp 6
-scoreboard players set @e[tag=this_entity,limit=1] FurnitureForward 0
+scoreboard players set @e[tag=this_entity,limit=1] FurnitureSizeLeft 22
+scoreboard players set @e[tag=this_entity,limit=1] FurnitureSizeUp 14
+scoreboard players set @e[tag=this_entity,limit=1] FurnitureSizeForward 14
+scoreboard players set @e[tag=this_entity,limit=1] FurnitureContentUp 6
+scoreboard players set @e[tag=this_entity,limit=1] FurnitureContentForward 0
 scoreboard players set @e[tag=this_entity,limit=1] FurnitureSearch 20
 function luigis_mansion:spawn_furniture/setup/default
 tag @e[tag=this_entity,limit=1] remove this_entity

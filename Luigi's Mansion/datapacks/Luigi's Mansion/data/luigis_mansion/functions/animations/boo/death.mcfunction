@@ -2,10 +2,10 @@ tag @s remove boo_hurt
 tag @s add boo_death
 
 execute facing entity @p[gamemode=!spectator] feet run teleport @s ~ ~ ~ ~-180 ~
-execute store result score #temp HomeRot run data get entity @s Rotation[1] 100
-scoreboard players operation #temp HomeRot *= #-1 Constants
-execute store result entity @s Rotation[1] float 0.01 run scoreboard players get #temp HomeRot
-scoreboard players reset #temp HomeRot
+execute store result score #temp HomeRotation run data get entity @s Rotation[1] 100
+scoreboard players operation #temp HomeRotation *= #-1 Constants
+execute store result entity @s Rotation[1] float 0.01 run scoreboard players get #temp HomeRotation
+scoreboard players reset #temp HomeRotation
 
 scoreboard players set @s[scores={HurtTime=1}] HurtTime 2
 execute unless entity @s[scores={HurtTime=1..}] run scoreboard players set @s HurtTime 1

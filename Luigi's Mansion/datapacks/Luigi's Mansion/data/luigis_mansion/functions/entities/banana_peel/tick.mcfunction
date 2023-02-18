@@ -1,8 +1,8 @@
 teleport @s[tag=!was_in_vacuum] ~ ~0.25 ~
 teleport @s[tag=was_in_vacuum] ~ ~0.5 ~
 execute unless entity @s[nbt={Pose:{Head:[0.01f]}}] run data merge entity @s {Pose:{Head:[0.0f,0.0f,0.01f]}}
-execute store result score @s HomeRot run data get entity @s Pose.Head[1]
-execute at @s[tag=!was_in_vacuum] if block ~ ~-0.01 ~ #luigis_mansion:items_ignore store result entity @s Pose.Head[1] float 1 run scoreboard players add @s HomeRot 10
+execute store result score @s HomeRotation run data get entity @s Pose.Head[1]
+execute at @s[tag=!was_in_vacuum] if block ~ ~-0.01 ~ #luigis_mansion:items_ignore store result entity @s Pose.Head[1] float 1 run scoreboard players add @s HomeRotation 10
 execute if entity @s[tag=was_in_vacuum] run data modify entity @s Pose.Head set value [90.0f,0.0f,0.0f]
 scoreboard players add @s ActionTime 1
 tag @s remove item_is_pulled

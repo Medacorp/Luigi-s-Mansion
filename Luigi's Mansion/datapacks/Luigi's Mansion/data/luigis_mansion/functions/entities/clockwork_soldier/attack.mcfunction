@@ -1,5 +1,5 @@
 scoreboard players add @s ActionTime 1
-scoreboard players set @s[scores={ActionTime=1}] AnimationProg 0
+scoreboard players set @s[scores={ActionTime=1}] AnimationProgress 0
 function luigis_mansion:animations/clockwork_soldier/attack
 execute if entity @s[scores={ActionTime=20}] run playsound luigis_mansion:entity.clockwork_soldier.attack hostile @a[tag=same_room] ~ ~ ~ 1
 execute at @s[scores={ActionTime=20}] positioned ^ ^-1 ^0.7 as @e[distance=..1,tag=game_boy_horror_location] run function luigis_mansion:entities/game_boy_horror_location/bring_player_back
@@ -12,5 +12,5 @@ execute at @s[scores={ActionTime=20}] store result storage luigis_mansion:data d
 execute at @s[scores={ActionTime=20}] positioned ^ ^-1 ^0.7 as @a[distance=..1,gamemode=!spectator] run function luigis_mansion:entities/player/take_damage
 execute at @s[scores={ActionTime=20}] run data remove storage luigis_mansion:data damage
 tag @s[scores={ActionTime=40}] remove attack
-scoreboard players set @s[scores={ActionTime=40}] AnimationProg 0
+scoreboard players set @s[scores={ActionTime=40}] AnimationProgress 0
 scoreboard players set @s[scores={ActionTime=40}] ActionTime 0

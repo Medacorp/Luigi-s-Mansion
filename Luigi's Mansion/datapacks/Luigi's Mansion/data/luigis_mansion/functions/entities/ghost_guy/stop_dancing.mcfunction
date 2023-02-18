@@ -1,4 +1,4 @@
-scoreboard players set @s AnimationProg 0
+scoreboard players set @s AnimationProgress 0
 scoreboard players set @s ActionTime 0
 scoreboard players set @s PathStep 0
 tag @s add stop_dancing
@@ -12,7 +12,7 @@ tag @e[tag=ghost_guy,tag=dancing,tag=partner,limit=1] add stop_dancing
 execute as @e[tag=ghost_guy,tag=dancing,tag=partner,limit=1] at @s run teleport @s[tag=dodge] ~ ~1 ~
 tag @e[tag=ghost_guy,tag=dancing,tag=partner,limit=1] remove dodge
 data merge entity @e[tag=ghost_guy,tag=dancing,tag=partner,limit=1] {Pose:{RightArm:[-90.0f,90.0f,0.0f],LeftArm:[-90.0f,-90.0f,0.0f],Head:[0.0f,0.0f,0.0f]}}
-scoreboard players set @e[tag=ghost_guy,tag=dancing,tag=partner,limit=1] AnimationProg 0
+scoreboard players set @e[tag=ghost_guy,tag=dancing,tag=partner,limit=1] AnimationProgress 0
 scoreboard players set @e[tag=ghost_guy,tag=dancing,tag=partner,limit=1] ActionTime 0
 scoreboard players set @e[tag=ghost_guy,tag=dancing,tag=partner,limit=1] PathStep 0
 tag @e[tag=ghost_guy,tag=dancing,tag=partner,limit=1] remove partner

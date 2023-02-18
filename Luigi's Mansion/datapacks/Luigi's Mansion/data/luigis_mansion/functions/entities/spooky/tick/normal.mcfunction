@@ -5,7 +5,7 @@ execute unless entity @s[scores={Dialog=1..}] at @e[tag=same_room,tag=!spectator
 execute unless entity @s[scores={Dialog=1..}] if entity @e[tag=spooky_bone,limit=1] run scoreboard players set @s Dialog 1
 execute unless entity @s[scores={Dialog=1..}] if entity @e[tag=same_room,tag=!spectator,tag=player,distance=..4,limit=1] run scoreboard players set @s Dialog 1
 execute if entity @s[scores={Dialog=1}] run playsound luigis_mansion:entity.spooky.wake_up hostile @a[tag=same_room] ~ ~ ~ 1
-scoreboard players set @s[scores={Dialog=1}] AnimationProg 0
+scoreboard players set @s[scores={Dialog=1}] AnimationProgress 0
 tag @s[scores={Dialog=1}] add wake_up
 execute if entity @s[scores={Dialog=21}] run playsound luigis_mansion:entity.spooky.pant hostile @a[tag=same_room] ~ ~ ~ 1
 execute if entity @s[scores={Dialog=31}] run playsound luigis_mansion:entity.spooky.pant hostile @a[tag=same_room] ~ ~ ~ 1
@@ -39,7 +39,7 @@ execute if entity @s[scores={Dialog=162}] store result entity @e[type=minecraft:
 execute if entity @s[scores={Dialog=162}] store result entity @e[type=minecraft:marker,tag=target,limit=1] Pos[2] double 0.01 run scoreboard players get @s HomeZ
 execute at @s[scores={Dialog=162}] facing entity @e[type=minecraft:marker,tag=target,limit=1] feet rotated ~ 0 run teleport @s ~ ~ ~ ~ ~
 execute at @s[scores={Dialog=162}] run teleport @s ^ ^ ^0.15
-execute at @s[scores={Dialog=162}] if entity @e[type=minecraft:marker,tag=target,limit=1,distance=..0.2] store result entity @s Rotation[0] float 1 run scoreboard players get @s HomeRot
+execute at @s[scores={Dialog=162}] if entity @e[type=minecraft:marker,tag=target,limit=1,distance=..0.2] store result entity @s Rotation[0] float 1 run scoreboard players get @s HomeRotation
 execute at @s[scores={Dialog=162}] if entity @e[type=minecraft:marker,tag=target,limit=1,distance=..0.2] run tag @s remove move
 execute at @s[scores={Dialog=162}] if entity @e[type=minecraft:marker,tag=target,limit=1,distance=..0.2] run tag @s remove moved_up
 execute at @s[scores={Dialog=162}] if entity @e[type=minecraft:marker,tag=target,limit=1,distance=..0.2] store result entity @s Pos[1] double 0.01 run scoreboard players get @s HomeY

@@ -1,5 +1,5 @@
 scoreboard players set @s Room 15
-scoreboard players set @s PrevRoom 15
+scoreboard players set @s PreviousRoom 15
 
 teleport @s[scores={HomeY=11..15,HomeX=719}] ~17 ~ ~
 teleport @s[scores={HomeY=7..10,HomeX=719}] ~-1 ~ ~

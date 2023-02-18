@@ -33,10 +33,10 @@ execute at @s[tag=bounce,scores={ActionTime=4..}] positioned ~ ~1.3 ~ if block ~
 execute at @s[tag=bounce,scores={ActionTime=4..}] positioned ~ ~1.3 ~ if block ~ ~ ~ #minecraft:stairs[half=bottom,facing=west] at @s run teleport @s ~ ~ ~ -90 ~
 execute at @s[tag=bounce,scores={ActionTime=4..}] positioned ~ ~1.3 ~ if block ~ ~ ~ #minecraft:stairs[half=bottom] run scoreboard players set @s ActionTime 2
 
-execute store result score @s HomeRot run data get entity @s Pose.Head[0] 1
-data modify entity @s[tag=bounce,scores={ActionTime=4..,HomeRot=0..}] Pose.Head[0] set value 90.0f
-data modify entity @s[tag=bounce,scores={ActionTime=4..,HomeRot=..-1}] Pose.Head[0] set value -90.0f
-execute unless entity @s[tag=bounce,scores={ActionTime=4..}] store result entity @s Pose.Head[0] float 1 run scoreboard players add @s HomeRot 10
+execute store result score @s HomeRotation run data get entity @s Pose.Head[0] 1
+data modify entity @s[tag=bounce,scores={ActionTime=4..,HomeRotation=0..}] Pose.Head[0] set value 90.0f
+data modify entity @s[tag=bounce,scores={ActionTime=4..,HomeRotation=..-1}] Pose.Head[0] set value -90.0f
+execute unless entity @s[tag=bounce,scores={ActionTime=4..}] store result entity @s Pose.Head[0] float 1 run scoreboard players add @s HomeRotation 10
 
 tag @s remove in_wall
 execute at @s unless block ~ ~1.6 ~0.3 #luigis_mansion:item_pull_ignore if block ~ ~1.6 ~-0.3 #luigis_mansion:item_pull_ignore run teleport @s ~ ~ ~-0.3

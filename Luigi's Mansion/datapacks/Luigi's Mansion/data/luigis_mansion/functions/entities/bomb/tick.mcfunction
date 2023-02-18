@@ -23,7 +23,7 @@ execute at @s[scores={Move=10}] run playsound luigis_mansion:entity.ghost.explod
 execute at @s[scores={Move=10}] run data remove entity @s ArmorItems[3]
 execute if entity @s[scores={Move=10,Owner=-2147483648..}] if entity @a[distance=..3,tag=!spectator,limit=1] run tag @s add make_laugh
 execute if entity @s[scores={Move=30,Owner=-2147483648..}] run scoreboard players operation #temp GhostNr = @s Owner
-execute if entity @s[scores={Move=30,Owner=-2147483648..}] as @e[tag=!model_piece,tag=ghost] if score @s GhostNr = #temp GhostNr run scoreboard players set @s AnimationProg 0
+execute if entity @s[scores={Move=30,Owner=-2147483648..}] as @e[tag=!model_piece,tag=ghost] if score @s GhostNr = #temp GhostNr run scoreboard players set @s AnimationProgress 0
 execute if entity @s[scores={Move=30,Owner=-2147483648..},tag=make_laugh] as @e[tag=!model_piece,tag=ghost] if score @s GhostNr = #temp GhostNr run tag @s add laugh
 execute if entity @s[scores={Move=30,Owner=-2147483648..},tag=!make_laugh] as @e[tag=!model_piece,tag=ghost] if score @s GhostNr = #temp GhostNr run tag @s add complain
 scoreboard players reset #temp GhostNr

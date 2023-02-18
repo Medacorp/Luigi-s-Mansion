@@ -13,7 +13,7 @@ execute if entity @s[scores={Dialog=80}] if data storage luigis_mansion:data cur
 execute if entity @s[scores={Dialog=80}] run playsound luigis_mansion:entity.melody_pianissima.laugh hostile @a[tag=same_room] ~ ~ ~ 1
 execute if entity @s[scores={Dialog=80}] run tellraw @a[tag=same_room] {"translate":"chat.type.text","with":[{"translate":"luigis_mansion:entity.melody_pianissima","color":"green"},{"translate":"luigis_mansion:dialog.melody_pianissima.1"}]}
 execute if entity @s[scores={Dialog=192}] run tellraw @a[tag=same_room] {"translate":"chat.type.text","with":[{"translate":"luigis_mansion:entity.melody_pianissima","color":"green"},{"translate":"luigis_mansion:dialog.melody_pianissima.2"}]}
-scoreboard players set @s[scores={Dialog=304}] AnimationProg 0
+scoreboard players set @s[scores={Dialog=304}] AnimationProgress 0
 tag @s[scores={Dialog=304}] add nod
 execute if entity @s[scores={Dialog=304}] run data modify storage luigis_mansion:data current_state.current_data.technical_data merge value {melody_pianissima_spoke:1b}
 execute if entity @s[scores={Dialog=304}] if score #players Totals matches 1 run tellraw @a[tag=same_room] {"translate":"chat.type.text","with":[{"translate":"luigis_mansion:entity.melody_pianissima","color":"green"},{"translate":"luigis_mansion:dialog.melody_pianissima.3"}]}
@@ -37,39 +37,39 @@ tag @s[scores={Dialog=1000..}] remove 2
 execute if entity @s[scores={Dialog=1000..}] run scoreboard players reset @a MelodyChoice
 
 execute if entity @s[scores={Dialog=1000}] as @a[tag=same_room,tag=!spectator,tag=!nod,tag=!looking_at_map] run function luigis_mansion:entities/player/animation/set/nod
-scoreboard players set @s[scores={Dialog=1000}] AnimationProg 0
+scoreboard players set @s[scores={Dialog=1000}] AnimationProgress 0
 tag @s[scores={Dialog=1000}] remove listen
 tag @s[scores={Dialog=1000}] add rage
 execute if entity @s[scores={Dialog=1000}] run tellraw @a[tag=same_room] {"translate":"chat.type.text","with":[{"translate":"luigis_mansion:entity.melody_pianissima","color":"green"},{"translate":"luigis_mansion:dialog.melody_pianissima.no.1"}]}
 execute if entity @s[scores={Dialog=1048}] if score #players Totals matches 1 run tellraw @a[tag=same_room] {"translate":"chat.type.text","with":[{"translate":"luigis_mansion:entity.melody_pianissima","color":"green"},{"translate":"luigis_mansion:dialog.melody_pianissima.no.2"}]}
 execute if entity @s[scores={Dialog=1048}] if score #players Totals matches 2.. run tellraw @a[tag=same_room] {"translate":"chat.type.text","with":[{"translate":"luigis_mansion:entity.melody_pianissima","color":"green"},{"translate":"luigis_mansion:dialog.melody_pianissima.no.2.more"}]}
-scoreboard players set @s[scores={Dialog=1200}] AnimationProg 0
+scoreboard players set @s[scores={Dialog=1200}] AnimationProgress 0
 tag @s[scores={Dialog=1200}] add nod
 tag @s[scores={Dialog=1200}] remove rage
 execute if entity @s[scores={Dialog=1200}] if score #players Totals matches 1 run tellraw @a[tag=same_room] {"translate":"chat.type.text","with":[{"translate":"luigis_mansion:entity.melody_pianissima","color":"green"},{"translate":"luigis_mansion_3ds_remake:dialog.melody_pianissima.no.3"}]}
 execute if entity @s[scores={Dialog=1200}] if score #players Totals matches 2.. run tellraw @a[tag=same_room] {"translate":"chat.type.text","with":[{"translate":"luigis_mansion:entity.melody_pianissima","color":"green"},{"translate":"luigis_mansion_3ds_remake:dialog.melody_pianissima.no.3.more"}]}
 execute if entity @s[scores={Dialog=1304}] run scoreboard players set #conservatory Wave -1
 execute if entity @s[scores={Dialog=1304}] as @a[scores={MusicType=23},tag=!spectator] run function luigis_mansion:other/music/set/room
-scoreboard players set @s[scores={Dialog=1304}] AnimationProg 0
+scoreboard players set @s[scores={Dialog=1304}] AnimationProgress 0
 tag @s[scores={Dialog=1304}] add vanish
 execute if entity @s[scores={Dialog=1304}] as @a[tag=same_room,tag=!spectator,tag=!looking_at_map] run function luigis_mansion:entities/player/animation/set/none
 
 execute if entity @s[scores={Dialog=2000}] as @a[tag=same_room,tag=!spectator,tag=!enthusiastic,tag=!looking_at_map] run function luigis_mansion:entities/player/animation/set/enthusiastic
 execute if entity @s[scores={Dialog=2020..2227}] as @a[tag=same_room,tag=!spectator,tag=!high_health_idle,tag=!looking_at_map] run function luigis_mansion:entities/player/animation/set/high_health_idle_no_sound
-scoreboard players set @s[scores={Dialog=2020}] AnimationProg 0
+scoreboard players set @s[scores={Dialog=2020}] AnimationProgress 0
 tag @s[scores={Dialog=2020}] remove listen
 tag @s[scores={Dialog=2020}] add laugh
 execute if entity @s[scores={Dialog=2020}] run playsound luigis_mansion:entity.melody_pianissima.laugh hostile @a[tag=same_room] ~ ~ ~ 1
 execute if entity @s[scores={Dialog=2020}] if score #players Totals matches 1 run tellraw @a[tag=same_room] {"translate":"chat.type.text","with":[{"translate":"luigis_mansion:entity.melody_pianissima","color":"green"},{"translate":"luigis_mansion:dialog.melody_pianissima.yes.1"}]}
 execute if entity @s[scores={Dialog=2020}] if score #players Totals matches 2.. run tellraw @a[tag=same_room] {"translate":"chat.type.text","with":[{"translate":"luigis_mansion:entity.melody_pianissima","color":"green"},{"translate":"luigis_mansion:dialog.melody_pianissima.yes.1.more"}]}
-scoreboard players set @s[scores={Dialog=2060}] AnimationProg 0
+scoreboard players set @s[scores={Dialog=2060}] AnimationProgress 0
 tag @s[scores={Dialog=2060}] add nod
 tag @s[scores={Dialog=2060}] remove laugh
 execute if entity @s[scores={Dialog=2060}] if score #players Totals matches 1 run tellraw @a[tag=same_room] {"translate":"chat.type.text","with":[{"translate":"luigis_mansion:entity.melody_pianissima","color":"green"},{"translate":"luigis_mansion:dialog.melody_pianissima.yes.2"}]}
 execute if entity @s[scores={Dialog=2060}] if score #players Totals matches 2.. run tellraw @a[tag=same_room] {"translate":"chat.type.text","with":[{"translate":"luigis_mansion:entity.melody_pianissima","color":"green"},{"translate":"luigis_mansion:dialog.melody_pianissima.yes.2.more"}]}
 execute if entity @s[scores={Dialog=2140}] if score #players Totals matches 1 run tellraw @a[tag=same_room] {"translate":"chat.type.text","with":[{"translate":"luigis_mansion:entity.melody_pianissima","color":"green"},{"translate":"luigis_mansion:dialog.melody_pianissima.yes.3"}]}
 execute if entity @s[scores={Dialog=2140}] if score #players Totals matches 2.. run tellraw @a[tag=same_room] {"translate":"chat.type.text","with":[{"translate":"luigis_mansion:entity.melody_pianissima","color":"green"},{"translate":"luigis_mansion:dialog.melody_pianissima.yes.3.more"}]}
-scoreboard players set @s[scores={Dialog=2228}] AnimationProg 0
+scoreboard players set @s[scores={Dialog=2228}] AnimationProgress 0
 tag @s[scores={Dialog=2228}] remove nod
 execute if entity @s[scores={Dialog=2228}] as @a[tag=same_room,tag=!spectator,tag=!looking_at_map] run function luigis_mansion:entities/player/animation/set/none
 execute if entity @s[scores={Dialog=2228}] run data modify entity @s ArmorItems[3].tag.scan_message set value {sender:"me",message:'{"translate":"luigis_mansion:message.melody_pianissima.scan.2"}',plural_message:'{"translate":"luigis_mansion:message.melody_pianissima.scan.2.more"}'}

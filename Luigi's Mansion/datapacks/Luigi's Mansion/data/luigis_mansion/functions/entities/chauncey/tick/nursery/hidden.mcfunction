@@ -7,23 +7,23 @@ execute if entity @e[tag=rocking_horse,scores={Room=10},tag=was_in_vacuum,limit=
 execute unless entity @e[tag=rocking_horse,scores={Room=10},tag=was_in_vacuum,limit=1] run scoreboard players remove @e[tag=chauncey,tag=!fight,scores={Dialog=2..49},limit=1] Dialog 3
 execute unless entity @s[scores={Dialog=1..}] run scoreboard players add @s Dialog 1
 tag @s[scores={Dialog=1}] add sleep
-scoreboard players set @s[scores={Dialog=1},tag=wake_up] AnimationProg 0
-scoreboard players set @s[scores={Dialog=1},tag=scream_wake] AnimationProg 0
+scoreboard players set @s[scores={Dialog=1},tag=wake_up] AnimationProgress 0
+scoreboard players set @s[scores={Dialog=1},tag=scream_wake] AnimationProgress 0
 tag @s[scores={Dialog=1}] remove wake_up
 tag @s[scores={Dialog=1}] remove scream_wake
 execute if entity @s[scores={Dialog=1..50},tag=!visible] run function luigis_mansion:entities/ghost/turn_visible
 execute if entity @s[scores={Dialog=1..48}] at @e[tag=same_room,tag=!spectator,tag=player] positioned ^ ^ ^8 if entity @s[distance=..8] run function luigis_mansion:entities/ghost/turn_invisible
 execute if entity @s[scores={Dialog=2}] if predicate luigis_mansion:50_50 run tag @s add wake_up
 tag @s[scores={Dialog=2},tag=wake_up] remove sleep
-scoreboard players set @s[scores={Dialog=2},tag=wake_up] AnimationProg 0
+scoreboard players set @s[scores={Dialog=2},tag=wake_up] AnimationProgress 0
 tag @s[scores={Dialog=10},tag=!wake_up] remove sleep
 tag @s[scores={Dialog=10},tag=!wake_up] add scream_wake
-scoreboard players set @s[scores={Dialog=10},tag=!wake_up] AnimationProg 0
+scoreboard players set @s[scores={Dialog=10},tag=!wake_up] AnimationProgress 0
 execute if entity @s[scores={Dialog=10},tag=wake_up] run playsound luigis_mansion:entity.chauncey.cry_wake hostile @a[tag=same_room] ~ ~ ~ 1
 execute if entity @s[scores={Dialog=30},tag=wake_up] run playsound luigis_mansion:entity.chauncey.cry_wake hostile @a[tag=same_room] ~ ~ ~ 1
 execute if entity @s[scores={Dialog=10},tag=scream_wake] run playsound luigis_mansion:entity.chauncey.scream_wake hostile @a[tag=same_room] ~ ~ ~ 1
 execute if entity @s[scores={Dialog=30},tag=scream_wake] run playsound luigis_mansion:entity.chauncey.scream_wake hostile @a[tag=same_room] ~ ~ ~ 1
-scoreboard players set @s[scores={Dialog=51}] AnimationProg 0
+scoreboard players set @s[scores={Dialog=51}] AnimationProgress 0
 execute if entity @s[scores={Dialog=51}] run tag @e[scores={Room=10},tag=door,tag=frame] add blockade
 execute if entity @s[scores={Dialog=51..168}] as @a[tag=same_room,gamemode=!spectator,scores={IdleTime=0..},tag=!looking_at_map] run function luigis_mansion:entities/player/animation/set/stand_still
 data modify entity @s ArmorItems[3].tag.scan_message set value {sender:"me",message:'{"translate":"luigis_mansion:message.chauncey.scan.2"}'}
@@ -47,7 +47,7 @@ execute if entity @s[scores={Dialog=170}] unless entity @s[tag=!laugh,tag=!compl
 execute if entity @s[scores={Dialog=170}] unless entity @s[tag=!laugh,tag=!complain,tag=!attack] run tag @s remove rambling
 execute if entity @s[scores={Dialog=170},tag=!laugh,tag=!rambling,tag=!grab_rambler] run function luigis_mansion:entities/ghost/turn_visible_no_equipment
 tag @s[scores={Dialog=170},tag=!attack,tag=!laugh,tag=!complain,tag=!rambling,tag=!grab_rambler] add move
-execute if entity @s[scores={Dialog=170}] if entity @e[tag=haunted_teddy_bear,scores={WaitTime=60}] run scoreboard players set @s AnimationProg 0
+execute if entity @s[scores={Dialog=170}] if entity @e[tag=haunted_teddy_bear,scores={WaitTime=60}] run scoreboard players set @s AnimationProgress 0
 execute if entity @s[scores={Dialog=170}] if entity @e[tag=haunted_teddy_bear,scores={WaitTime=60..79}] run tag @s remove move
 execute if entity @s[scores={Dialog=170}] if entity @e[tag=haunted_teddy_bear,scores={WaitTime=60..79}] run tag @s add grab_rambler
 execute if entity @s[scores={Dialog=170}] if entity @e[tag=haunted_teddy_bear,scores={WaitTime=80..}] run tag @s remove grab_rambler
@@ -63,7 +63,7 @@ tag @s[scores={Dialog=170},tag=attack] remove move
 execute at @s[scores={Dialog=170},tag=!attack,tag=!rambling,tag=!laugh,tag=!complain] run function luigis_mansion:entities/ghost/move
 execute if entity @s[scores={Dialog=171}] run scoreboard players set @e[tag=haunted_teddy_bear,scores={WaitTime=..100}] WaitTime 0
 execute if entity @s[scores={Dialog=171}] run tag @e[tag=haunted_teddy_bear] remove enabled
-scoreboard players set @s[scores={Dialog=171}] AnimationProg 0
+scoreboard players set @s[scores={Dialog=171}] AnimationProgress 0
 scoreboard players set @s[scores={Dialog=171}] ActionTime 0
 tag @s[scores={Dialog=171}] remove attack
 tag @s[scores={Dialog=171}] remove rambling
@@ -94,7 +94,7 @@ execute if entity @s[scores={Dialog=562}] run tellraw @a[tag=same_room] {"transl
 tag @s[scores={Dialog=642}] remove laugh
 tag @s[scores={Dialog=642}] add vanish
 execute if entity @s[scores={Dialog=642}] as @a[tag=same_room,tag=!spectator,tag=!looking_at_map] run function luigis_mansion:entities/player/animation/set/none
-scoreboard players set @s[scores={Dialog=642}] AnimationProg 0
+scoreboard players set @s[scores={Dialog=642}] AnimationProgress 0
 scoreboard players set @s[scores={Dialog=642}] ActionTime 0
 
 execute at @s run teleport @s ~ ~-1 ~

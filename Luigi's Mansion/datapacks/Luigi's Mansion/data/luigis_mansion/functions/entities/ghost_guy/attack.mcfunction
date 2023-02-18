@@ -1,5 +1,5 @@
 scoreboard players add @s ActionTime 1
-scoreboard players set @s[scores={ActionTime=1}] AnimationProg 0
+scoreboard players set @s[scores={ActionTime=1}] AnimationProgress 0
 execute at @s[scores={AttackType=0}] run function luigis_mansion:animations/ghost_guy/stab_attack
 execute at @s[scores={AttackType=1}] run function luigis_mansion:animations/ghost_guy/spin_attack
 
@@ -24,5 +24,5 @@ execute at @s[scores={ActionTime=20,AttackType=0}] store result storage luigis_m
 execute at @s[scores={ActionTime=20,AttackType=0}] positioned ^ ^ ^0.7 as @a[distance=..1,gamemode=!spectator] run function luigis_mansion:entities/player/take_damage
 execute at @s[scores={ActionTime=20,AttackType=0}] run data remove storage luigis_mansion:data damage
 tag @s[scores={ActionTime=30}] remove attack
-scoreboard players set @s[scores={ActionTime=30}] AnimationProg 0
+scoreboard players set @s[scores={ActionTime=30}] AnimationProgress 0
 scoreboard players set @s[scores={ActionTime=30}] ActionTime 0

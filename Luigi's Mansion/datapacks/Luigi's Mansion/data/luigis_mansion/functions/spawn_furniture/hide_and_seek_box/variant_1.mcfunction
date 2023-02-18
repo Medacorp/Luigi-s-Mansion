@@ -3,10 +3,10 @@ teleport @e[tag=this_entity,limit=1] ~ ~-1.4 ~ ~ 0
 execute if data storage luigis_mansion:data furniture{searched:1b,no_search_animation:1b} run data modify entity @e[tag=this_entity,limit=1] ArmorItems[3].tag.CustomModelData set value 76
 scoreboard players set @e[tag=this_entity,limit=1] Sound 0
 scoreboard players set @e[tag=this_entity,limit=1] InteractionType 3
-scoreboard players set @e[tag=this_entity,limit=1] FurnitureSizeW 10
-scoreboard players set @e[tag=this_entity,limit=1] FurnitureSizeH 10
-scoreboard players set @e[tag=this_entity,limit=1] FurnitureUp 0
-scoreboard players set @e[tag=this_entity,limit=1] FurnitureForward 0
+scoreboard players set @e[tag=this_entity,limit=1] FurnitureSizeWidth 10
+scoreboard players set @e[tag=this_entity,limit=1] FurnitureSizeHeight 10
+scoreboard players set @e[tag=this_entity,limit=1] FurnitureContentUp 0
+scoreboard players set @e[tag=this_entity,limit=1] FurnitureContentForward 0
 scoreboard players set @e[tag=this_entity,limit=1] FurnitureSearch -1
 function luigis_mansion:spawn_furniture/setup/default
 tag @e[tag=this_entity,limit=1] remove this_entity

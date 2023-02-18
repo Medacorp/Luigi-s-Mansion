@@ -1,5 +1,5 @@
 scoreboard players add @s ActionTime 1
-scoreboard players set @s[scores={ActionTime=1}] AnimationProg 0
+scoreboard players set @s[scores={ActionTime=1}] AnimationProgress 0
 execute at @s run function luigis_mansion:animations/puncher/attack
 
 scoreboard players set #temp Move 30
@@ -16,5 +16,5 @@ execute at @s[scores={ActionTime=41..60}] as @a[distance=..1,gamemode=!spectator
 execute at @s[scores={ActionTime=41..60}] run data remove storage luigis_mansion:data damage
 tag @s[scores={ActionTime=60},tag=!laugh] add complain
 tag @s[scores={ActionTime=60}] remove attack
-scoreboard players set @s[scores={ActionTime=60}] AnimationProg 0
+scoreboard players set @s[scores={ActionTime=60}] AnimationProgress 0
 scoreboard players set @s[scores={ActionTime=60}] ActionTime 0

@@ -1,5 +1,5 @@
 scoreboard players add @s[scores={Dialog=700..}] Dialog 1
-execute if entity @a[scores={EGaddTrainChoice=1..},limit=1] run scoreboard players add @s[scores={Dialog=603..}] Dialog 1
+execute if entity @a[scores={EGaddTrainingRoomChoice=1..},limit=1] run scoreboard players add @s[scores={Dialog=603..}] Dialog 1
 scoreboard players add @s[scores={Dialog=488..602}] Dialog 1
 execute if score #training_room Wave matches 10.. unless entity @e[tag=ghost,scores={Room=-2},limit=1] run scoreboard players set @s[scores={Dialog=487}] Dialog 488
 scoreboard players add @s[scores={Dialog=..486}] Dialog 1
@@ -33,19 +33,19 @@ execute if entity @s[scores={Dialog=487}] if score #temp Time matches 1 run scor
 execute as @a[scores={Health=..0},tag=same_room,tag=looking_at_map] run function luigis_mansion:items/game_boy_horror/map/close
 execute as @a[scores={Health=..0},tag=same_room] run function luigis_mansion:entities/player/animation/set/low_health_idle
 tag @a[scores={Health=..0},tag=same_room] remove idle
-scoreboard players reset @a[scores={Health=..0},tag=same_room] GhostCaught
+scoreboard players reset @a[scores={Health=..0},tag=same_room] TrainingRoomScore
 scoreboard players reset @a[scores={Health=..0},tag=same_room] DeathTime
 tag @a[scores={Health=..0},tag=same_room] remove death_animation
 execute as @a[scores={Health=..0},tag=same_room,tag=vacuuming_ghost] at @s run function luigis_mansion:entities/player/poltergust_breakage
 tellraw @a[scores={Health=..0},tag=same_room] {"translate":"chat.type.text","with":[{"translate":"luigis_mansion:entity.e_gadd","color":"green"},{"translate":"extensive_training:dialog.pvp.death"}]}
 execute as @a[scores={Health=..0},tag=same_room] at @s run playsound luigis_mansion:entity.e_gadd.talk.jeemee_jeemee neutral @s ~ ~ ~ 1
 scoreboard players set @a[scores={Health=..0},tag=same_room] Health 100
-execute if entity @s[scores={Dialog=488}] run scoreboard players reset #training_room GhostCaught
-execute if entity @s[scores={Dialog=488}] run scoreboard players add @a[tag=same_room] GhostCaught 0
-execute if entity @s[scores={Dialog=488}] run scoreboard players operation #training_room GhostCaught > @a[tag=same_room,tag=!spectator] GhostCaught
-execute if entity @s[scores={Dialog=488}] as @a[tag=same_room,tag=!spectator] if score @s GhostCaught = #training_room GhostCaught run tag @s add finalist
+execute if entity @s[scores={Dialog=488}] run scoreboard players reset #training_room TrainingRoomScore
+execute if entity @s[scores={Dialog=488}] run scoreboard players add @a[tag=same_room] TrainingRoomScore 0
+execute if entity @s[scores={Dialog=488}] run scoreboard players operation #training_room TrainingRoomScore > @a[tag=same_room,tag=!spectator] TrainingRoomScore
+execute if entity @s[scores={Dialog=488}] as @a[tag=same_room,tag=!spectator] if score @s TrainingRoomScore = #training_room TrainingRoomScore run tag @s add finalist
 execute if entity @s[scores={Dialog=488}] store result score #temp Time if entity @a[tag=finalist]
-execute if entity @s[scores={Dialog=488}] run scoreboard players reset #training_room GhostCaught
+execute if entity @s[scores={Dialog=488}] run scoreboard players reset #training_room TrainingRoomScore
 execute if entity @s[scores={Dialog=488}] if score #temp Time matches 2.. run tellraw @a[tag=same_room,tag=finalist] {"translate":"chat.type.text","with":[{"translate":"luigis_mansion:entity.e_gadd","color":"green"},{"translate":"extensive_training:dialog.pvp.tie.it"}]}
 execute if entity @s[scores={Dialog=488}] if score #temp Time matches 2.. run tellraw @a[tag=same_room,tag=!finalist] {"translate":"chat.type.text","with":[{"translate":"luigis_mansion:entity.e_gadd","color":"green"},{"translate":"extensive_training:dialog.pvp.tie.not_it"}]}
 execute if entity @s[scores={Dialog=488}] if score #temp Time matches 2.. as @a[tag=same_room] at @s run playsound luigis_mansion:entity.e_gadd.talk.jeemee_jeemee neutral @s ~ ~ ~ 1
@@ -62,40 +62,40 @@ execute if entity @s[scores={Dialog=490}] as @a[tag=same_room,gamemode=!spectato
 execute if entity @s[scores={Dialog=490}] run tellraw @a[tag=same_room] {"translate":"chat.type.text","with":[{"translate":"luigis_mansion:entity.e_gadd","color":"green"},{"translate":"extensive_training:dialog.pvp.8"}]}
 execute if entity @s[scores={Dialog=490}] as @a[tag=same_room] at @s run playsound luigis_mansion:entity.e_gadd.talk.ohyah_mee neutral @s ~ ~ ~ 1
 execute if entity @s[scores={Dialog=522}] run function luigis_mansion:room/training_room/turn_lights/on
-execute if entity @s[scores={Dialog=522}] run scoreboard players operation #training_room GhostCaught > @a[tag=same_room,tag=!spectator] GhostCaught
+execute if entity @s[scores={Dialog=522}] run scoreboard players operation #training_room TrainingRoomScore > @a[tag=same_room,tag=!spectator] TrainingRoomScore
 execute if entity @s[scores={Dialog=522}] run summon minecraft:firework_rocket 788 80 -8 {LifeTime:0,Life:0,FireworksItem:{id:"minecraft:firework_rocket",Count:1b,tag:{Fireworks:{Flight:0b,Explosions:[{Colors:[I;14862336],Type:0b,Trail:0b,Flicker:0b}]}}}}
 execute if entity @s[scores={Dialog=527}] run summon minecraft:firework_rocket 788 80 -4 {LifeTime:0,Life:0,FireworksItem:{id:"minecraft:firework_rocket",Count:1b,tag:{Fireworks:{Flight:0b,Explosions:[{Colors:[I;14862336],Type:0b,Trail:0b,Flicker:0b}]}}}}
 execute if entity @s[scores={Dialog=532}] run summon minecraft:firework_rocket 788 80 -12 {LifeTime:0,Life:0,FireworksItem:{id:"minecraft:firework_rocket",Count:1b,tag:{Fireworks:{Flight:0b,Explosions:[{Colors:[I;14862336],Type:0b,Trail:0b,Flicker:0b}]}}}}
-execute if entity @s[scores={Dialog=537}] if score #training_room GhostCaught matches 50.. run summon minecraft:firework_rocket 788 81 -10 {LifeTime:0,Life:0,FireworksItem:{id:"minecraft:firework_rocket",Count:1b,tag:{Fireworks:{Flight:0b,Explosions:[{Colors:[I;14853494],Type:0b,Trail:0b,Flicker:0b}]}}}}
-execute if entity @s[scores={Dialog=542}] if score #training_room GhostCaught matches 50.. run summon minecraft:firework_rocket 788 81 -6 {LifeTime:0,Life:0,FireworksItem:{id:"minecraft:firework_rocket",Count:1b,tag:{Fireworks:{Flight:0b,Explosions:[{Colors:[I;14853494],Type:0b,Trail:0b,Flicker:0b}]}}}}
-execute if entity @s[scores={Dialog=547}] if score #training_room GhostCaught matches 90.. run summon minecraft:firework_rocket 788 80 -8 {LifeTime:0,Life:0,FireworksItem:{id:"minecraft:firework_rocket",Count:1b,tag:{Fireworks:{Flight:0b,Explosions:[{Colors:[I;2993378],Type:0b,Trail:0b,Flicker:0b}]}}}}
-execute if entity @s[scores={Dialog=552}] if score #training_room GhostCaught matches 90.. run summon minecraft:firework_rocket 788 80 -4 {LifeTime:0,Life:0,FireworksItem:{id:"minecraft:firework_rocket",Count:1b,tag:{Fireworks:{Flight:0b,Explosions:[{Colors:[I;2993378],Type:0b,Trail:0b,Flicker:0b}]}}}}
-execute if entity @s[scores={Dialog=557}] if score #training_room GhostCaught matches 90.. run summon minecraft:firework_rocket 788 80 -12 {LifeTime:0,Life:0,FireworksItem:{id:"minecraft:firework_rocket",Count:1b,tag:{Fireworks:{Flight:0b,Explosions:[{Colors:[I;2993378],Type:0b,Trail:0b,Flicker:0b}]}}}}
-execute if entity @s[scores={Dialog=562}] if score #training_room GhostCaught matches 90.. run summon minecraft:firework_rocket 788 81 -10 {LifeTime:0,Life:0,FireworksItem:{id:"minecraft:firework_rocket",Count:1b,tag:{Fireworks:{Flight:0b,Explosions:[{Colors:[I;2993378],Type:0b,Trail:0b,Flicker:0b}]}}}}
-execute if entity @s[scores={Dialog=567}] if score #training_room GhostCaught matches 90.. run summon minecraft:firework_rocket 788 81 -6 {LifeTime:0,Life:0,FireworksItem:{id:"minecraft:firework_rocket",Count:1b,tag:{Fireworks:{Flight:0b,Explosions:[{Colors:[I;2993378],Type:0b,Trail:0b,Flicker:0b}]}}}}
-execute if entity @s[scores={Dialog=522}] as @a[tag=same_room,tag=!spectator] if score @s GhostCaught = #training_room GhostCaught run tag @s add winner
-execute if entity @s[scores={Dialog=522}] run tellraw @a[tag=same_room] {"translate":"chat.type.text","with":[{"translate":"luigis_mansion:entity.e_gadd","color":"green"},{"translate":"extensive_training:dialog.pvp.9","with":[{"selector":"@a[tag=winner,limit=1]"},{"score":{"objective":"GhostCaught","name":"@a[tag=winner,limit=1]"}}]}]}
+execute if entity @s[scores={Dialog=537}] if score #training_room TrainingRoomScore matches 50.. run summon minecraft:firework_rocket 788 81 -10 {LifeTime:0,Life:0,FireworksItem:{id:"minecraft:firework_rocket",Count:1b,tag:{Fireworks:{Flight:0b,Explosions:[{Colors:[I;14853494],Type:0b,Trail:0b,Flicker:0b}]}}}}
+execute if entity @s[scores={Dialog=542}] if score #training_room TrainingRoomScore matches 50.. run summon minecraft:firework_rocket 788 81 -6 {LifeTime:0,Life:0,FireworksItem:{id:"minecraft:firework_rocket",Count:1b,tag:{Fireworks:{Flight:0b,Explosions:[{Colors:[I;14853494],Type:0b,Trail:0b,Flicker:0b}]}}}}
+execute if entity @s[scores={Dialog=547}] if score #training_room TrainingRoomScore matches 90.. run summon minecraft:firework_rocket 788 80 -8 {LifeTime:0,Life:0,FireworksItem:{id:"minecraft:firework_rocket",Count:1b,tag:{Fireworks:{Flight:0b,Explosions:[{Colors:[I;2993378],Type:0b,Trail:0b,Flicker:0b}]}}}}
+execute if entity @s[scores={Dialog=552}] if score #training_room TrainingRoomScore matches 90.. run summon minecraft:firework_rocket 788 80 -4 {LifeTime:0,Life:0,FireworksItem:{id:"minecraft:firework_rocket",Count:1b,tag:{Fireworks:{Flight:0b,Explosions:[{Colors:[I;2993378],Type:0b,Trail:0b,Flicker:0b}]}}}}
+execute if entity @s[scores={Dialog=557}] if score #training_room TrainingRoomScore matches 90.. run summon minecraft:firework_rocket 788 80 -12 {LifeTime:0,Life:0,FireworksItem:{id:"minecraft:firework_rocket",Count:1b,tag:{Fireworks:{Flight:0b,Explosions:[{Colors:[I;2993378],Type:0b,Trail:0b,Flicker:0b}]}}}}
+execute if entity @s[scores={Dialog=562}] if score #training_room TrainingRoomScore matches 90.. run summon minecraft:firework_rocket 788 81 -10 {LifeTime:0,Life:0,FireworksItem:{id:"minecraft:firework_rocket",Count:1b,tag:{Fireworks:{Flight:0b,Explosions:[{Colors:[I;2993378],Type:0b,Trail:0b,Flicker:0b}]}}}}
+execute if entity @s[scores={Dialog=567}] if score #training_room TrainingRoomScore matches 90.. run summon minecraft:firework_rocket 788 81 -6 {LifeTime:0,Life:0,FireworksItem:{id:"minecraft:firework_rocket",Count:1b,tag:{Fireworks:{Flight:0b,Explosions:[{Colors:[I;2993378],Type:0b,Trail:0b,Flicker:0b}]}}}}
+execute if entity @s[scores={Dialog=522}] as @a[tag=same_room,tag=!spectator] if score @s TrainingRoomScore = #training_room TrainingRoomScore run tag @s add winner
+execute if entity @s[scores={Dialog=522}] run tellraw @a[tag=same_room] {"translate":"chat.type.text","with":[{"translate":"luigis_mansion:entity.e_gadd","color":"green"},{"translate":"extensive_training:dialog.pvp.9","with":[{"selector":"@a[tag=winner,limit=1]"},{"score":{"objective":"TrainingRoomScore","name":"@a[tag=winner,limit=1]"}}]}]}
 execute if entity @s[scores={Dialog=522}] as @a[tag=same_room] at @s run playsound luigis_mansion:entity.e_gadd.talk.tatta_tatta_tatta neutral @s ~ ~ ~ 1
 execute if entity @s[scores={Dialog=522}] run tag @a remove winner
-execute if entity @s[scores={Dialog=570}] run scoreboard players reset #training_room GhostCaught
+execute if entity @s[scores={Dialog=570}] run scoreboard players reset #training_room TrainingRoomScore
 execute if entity @s[scores={Dialog=570}] run tellraw @a[tag=same_room] {"translate":"chat.type.text","with":[{"translate":"luigis_mansion:entity.e_gadd","color":"green"},{"translate":"extensive_training:dialog.pvp.10"}]}
 execute if entity @s[scores={Dialog=570}] as @a[tag=same_room] at @s run playsound luigis_mansion:entity.e_gadd.talk.oui_soh_suu_suhm_ck_ck_yuuohh neutral @s ~ ~ ~ 1
 execute if entity @s[scores={Dialog=602..603}] as @a[tag=same_room,gamemode=!spectator,tag=!thinking,tag=!looking_at_map] run function luigis_mansion:entities/player/animation/set/thinking
-execute if entity @s[scores={Dialog=602}] run tellraw @a[tag=same_room] {"translate":"extensive_training:dialog.pvp.yes","color":"green","clickEvent":{"action":"run_command","value":"/trigger EGaddTrainChoice set 1"},"extra":[{"text":"\n"},{"translate":"extensive_training:dialog.pvp.no","clickEvent":{"action":"run_command","value":"/trigger EGaddTrainChoice set 2"}}]}
-execute if entity @s[scores={Dialog=602}] run scoreboard players enable @a[tag=same_room] EGaddTrainChoice
+execute if entity @s[scores={Dialog=602}] run tellraw @a[tag=same_room] {"translate":"extensive_training:dialog.pvp.yes","color":"green","clickEvent":{"action":"run_command","value":"/trigger EGaddTrainingRoomChoice set 1"},"extra":[{"text":"\n"},{"translate":"extensive_training:dialog.pvp.no","clickEvent":{"action":"run_command","value":"/trigger EGaddTrainingRoomChoice set 2"}}]}
+execute if entity @s[scores={Dialog=602}] run scoreboard players enable @a[tag=same_room] EGaddTrainingRoomChoice
 execute if entity @s[scores={Dialog=604}] as @a[tag=same_room,gamemode=!spectator,tag=!nod,tag=!looking_at_map] run function luigis_mansion:entities/player/animation/set/nod
-execute if entity @s[scores={Dialog=604}] if entity @a[scores={EGaddTrainChoice=1..}] as @a[scores={EGaddTrainChoice=0}] run trigger EGaddTrainChoice set 0
-execute if entity @s[scores={Dialog=604..628}] if entity @a[scores={EGaddTrainChoice=1}] as @a[tag=same_room] run function luigis_mansion:other/music/set/training
-execute if entity @s[scores={Dialog=604}] if entity @a[scores={EGaddTrainChoice=1}] run tellraw @a[tag=same_room] {"translate":"chat.type.text","with":[{"translate":"luigis_mansion:entity.e_gadd","color":"green"},{"translate":"extensive_training:dialog.pvp.yes.1"}]}
-execute if entity @s[scores={Dialog=604}] if entity @a[scores={EGaddTrainChoice=1}] as @a[tag=same_room] at @s run playsound luigis_mansion:entity.e_gadd.talk.seedapee_ohyah neutral @s ~ ~ ~ 1
-execute if entity @s[scores={Dialog=604}] if entity @a[scores={EGaddTrainChoice=1}] run scoreboard players reset @a[tag=same_room] GhostCaught
-execute if entity @s[scores={Dialog=604}] if entity @a[scores={EGaddTrainChoice=1}] run scoreboard players set @a[tag=same_room] Health 100
+execute if entity @s[scores={Dialog=604}] if entity @a[scores={EGaddTrainingRoomChoice=1..}] as @a[scores={EGaddTrainingRoomChoice=0}] run trigger EGaddTrainingRoomChoice set 0
+execute if entity @s[scores={Dialog=604..628}] if entity @a[scores={EGaddTrainingRoomChoice=1}] as @a[tag=same_room] run function luigis_mansion:other/music/set/training
+execute if entity @s[scores={Dialog=604}] if entity @a[scores={EGaddTrainingRoomChoice=1}] run tellraw @a[tag=same_room] {"translate":"chat.type.text","with":[{"translate":"luigis_mansion:entity.e_gadd","color":"green"},{"translate":"extensive_training:dialog.pvp.yes.1"}]}
+execute if entity @s[scores={Dialog=604}] if entity @a[scores={EGaddTrainingRoomChoice=1}] as @a[tag=same_room] at @s run playsound luigis_mansion:entity.e_gadd.talk.seedapee_ohyah neutral @s ~ ~ ~ 1
+execute if entity @s[scores={Dialog=604}] if entity @a[scores={EGaddTrainingRoomChoice=1}] run scoreboard players reset @a[tag=same_room] TrainingRoomScore
+execute if entity @s[scores={Dialog=604}] if entity @a[scores={EGaddTrainingRoomChoice=1}] run scoreboard players set @a[tag=same_room] Health 100
 execute if entity @s[scores={Dialog=628}] run scoreboard players set @s 477
-execute if entity @s[scores={Dialog=604}] if entity @a[scores={EGaddTrainChoice=2}] run tellraw @a[tag=same_room] {"translate":"chat.type.text","with":[{"translate":"luigis_mansion:entity.e_gadd","color":"green"},{"translate":"extensive_training:dialog.pvp.no.1"}]}
-execute if entity @s[scores={Dialog=604}] if entity @a[scores={EGaddTrainChoice=2}] as @a[tag=same_room] at @s run playsound luigis_mansion:entity.e_gadd.talk.soy_soh_ooh neutral @s ~ ~ ~ 1
-execute if entity @s[scores={Dialog=620}] if entity @a[scores={EGaddTrainChoice=2}] as @a[tag=same_room,gamemode=!spectator,tag=game_boy_horror,tag=!looking_at_map] run function luigis_mansion:entities/player/animation/set/none
-execute if entity @s[scores={Dialog=620}] if entity @a[scores={EGaddTrainChoice=2}] as @a[tag=same_room] run function luigis_mansion:room/underground_lab/warp_to
-execute if entity @s[scores={Dialog=620}] run scoreboard players reset @a EGaddTrainChoice
+execute if entity @s[scores={Dialog=604}] if entity @a[scores={EGaddTrainingRoomChoice=2}] run tellraw @a[tag=same_room] {"translate":"chat.type.text","with":[{"translate":"luigis_mansion:entity.e_gadd","color":"green"},{"translate":"extensive_training:dialog.pvp.no.1"}]}
+execute if entity @s[scores={Dialog=604}] if entity @a[scores={EGaddTrainingRoomChoice=2}] as @a[tag=same_room] at @s run playsound luigis_mansion:entity.e_gadd.talk.soy_soh_ooh neutral @s ~ ~ ~ 1
+execute if entity @s[scores={Dialog=620}] if entity @a[scores={EGaddTrainingRoomChoice=2}] as @a[tag=same_room,gamemode=!spectator,tag=game_boy_horror,tag=!looking_at_map] run function luigis_mansion:entities/player/animation/set/none
+execute if entity @s[scores={Dialog=620}] if entity @a[scores={EGaddTrainingRoomChoice=2}] as @a[tag=same_room] run function luigis_mansion:room/underground_lab/warp_to
+execute if entity @s[scores={Dialog=620}] run scoreboard players reset @a EGaddTrainingRoomChoice
 
 execute if entity @s[scores={Dialog=700}] run tag @e[tag=ghost,scores={Room=-2}] add vanish
 execute if entity @s[scores={Dialog=700}] run tag @e[tag=ghost,scores={Room=-2}] add disappear_on_vanish

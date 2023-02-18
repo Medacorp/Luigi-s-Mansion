@@ -5,4 +5,4 @@ execute if data storage luigis_mansion:data current_state.current_data.portrait_
 tag @e[tag=e_gadd,tag=portrificationize_dialog] remove portrificationizing
 tag @e[tag=e_gadd,tag=portrificationizing,tag=!portrificationize_dialog] remove talk
 scoreboard players set @e[tag=e_gadd,tag=portrificationizing,tag=!portrificationize_dialog] Dialog 0
-execute if entity @e[tag=e_gadd,tag=portrificationizing,tag=!portrificationize_dialog] as @a run trigger EGaddGPRChoice set 0
+execute if entity @e[tag=e_gadd,tag=portrificationizing,tag=!portrificationize_dialog] as @a run trigger EGaddGhostPortrificationizerRoomChoice set 0

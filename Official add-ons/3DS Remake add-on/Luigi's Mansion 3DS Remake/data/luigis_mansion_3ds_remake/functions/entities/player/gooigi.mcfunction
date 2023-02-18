@@ -20,10 +20,10 @@ execute if entity @s[scores={IdleTime=..-1}] run function luigis_mansion_3ds_rem
 # Gooigi cannot speak, so he cannot choose
 trigger ClairvoyaChoice add 0
 trigger EGaddCallChoice add 0
-trigger EGaddGallChoice add 0
-trigger EGaddGPRChoice add 0
-trigger EGaddLabChoice add 0
-trigger EGaddTrainChoice add 0
+trigger EGaddGalleryChoice add 0
+trigger EGaddGhostPortrificationizerRoomChoice add 0
+trigger EGaddUndergroundLabChoice add 0
+trigger EGaddTrainingRoomChoice add 0
 trigger JarvisChoice add 0
 trigger MansionChoice add 0
 trigger MelodyChoice add 0
@@ -33,7 +33,7 @@ trigger Toad2Choice add 0
 trigger Toad3Choice add 0
 trigger Toad4Choice add 0
 trigger Toad5Choice add 0
-trigger TrainingOption add 0
+trigger TrainingRoomOption add 0
 trigger TwinsChoice add 0
 
 execute if entity @s[tag=death_animation] run function luigis_mansion_3ds_remake:entities/player/gooigi_death_animation

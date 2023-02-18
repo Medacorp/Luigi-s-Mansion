@@ -1,5 +1,5 @@
 scoreboard players add @s ActionTime 1
-scoreboard players set @s[scores={ActionTime=1}] AnimationProg 0
+scoreboard players set @s[scores={ActionTime=1}] AnimationProgress 0
 execute if entity @s[scores={ActionTime=1}] run playsound luigis_mansion:entity.biff_atlas.attack hostile @a[tag=same_room] ~ ~ ~ 1
 execute if entity @s[scores={ActionTime=5}] run playsound luigis_mansion:entity.biff_atlas.attack hostile @a[tag=same_room] ~ ~ ~ 1
 execute as @e[distance=..1.6,tag=game_boy_horror_location] run function luigis_mansion:entities/game_boy_horror_location/bring_player_back

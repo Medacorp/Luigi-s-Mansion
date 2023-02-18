@@ -8,5 +8,5 @@ execute if score #mirrored Selected matches 1 run teleport @s[scores={ActionTime
 execute if score #mirrored Selected matches 0 at @s run teleport @s ~ ~-0.1 ~ ~-10 ~
 execute if score #mirrored Selected matches 1 at @s run teleport @s ~ ~-0.1 ~ ~10 ~
 tag @s[scores={ActionTime=20}] remove appear
-scoreboard players set @s[scores={ActionTime=20}] AnimationProg 0
+scoreboard players set @s[scores={ActionTime=20}] AnimationProgress 0
 scoreboard players set @s[scores={ActionTime=20}] ActionTime 0

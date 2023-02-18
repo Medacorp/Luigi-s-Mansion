@@ -3,10 +3,11 @@ teleport @e[tag=this_entity,tag=candle_flame,limit=1] ~ ~-1.4 ~ ~ 0
 execute unless data storage luigis_mansion:data furniture.candle_flames[0] unless score #candle_flames Selected matches 1 if score #debug_messages Selected matches 1.. run tellraw @a {"translate":"luigis_mansion:message.debug.format","with":[{"translate":"luigis_mansion:message.debug","color":"gold"},{"translate":"luigis_mansion:message.debug.candle_flame.too_few","color":"red"}]}
 execute unless data storage luigis_mansion:data furniture.candle_flames[0] unless score #candle_flames Selected matches 1 if score #debug_messages Selected matches 1.. run scoreboard players set #candle_flames Selected 1
 execute if data storage luigis_mansion:data furniture.candle_flames[0] run data modify storage luigis_mansion:data candle_flame set from storage luigis_mansion:data furniture.candle_flames[0]
+execute if data storage luigis_mansion:data candle_flame{type:"incense"} run data modify entity @e[tag=this_entity,tag=candle_flame,limit=1] Tags set value ["furniture","candle_flame","incense","static","this_entity"]
+execute if data storage luigis_mansion:data candle_flame{type:"purple"} run tag @e[tag=this_entity,tag=candle_flame,limit=1] add purple
 execute if data storage luigis_mansion:data candle_flame{lit:1b} run tag @e[tag=this_entity,tag=candle_flame,limit=1] add lit
-execute if data storage luigis_mansion:data candle_flame{purple:1b} run tag @e[tag=this_entity,tag=candle_flame,limit=1] add purple
-execute if data storage luigis_mansion:data candle_flame{cannot_extinguish:1b} run tag @e[tag=this_entity,tag=candle_flame,limit=1] add cannot_extinguish
-execute if data storage luigis_mansion:data candle_flame{always_burn:1b} run tag @e[tag=this_entity,tag=candle_flame,limit=1] add always_burn
+execute unless data storage luigis_mansion:data candle_flame{type:"incense"} if data storage luigis_mansion:data candle_flame{cannot_extinguish:1b} run tag @e[tag=this_entity,tag=candle_flame,limit=1] add cannot_extinguish
+execute unless data storage luigis_mansion:data candle_flame{type:"incense"} if data storage luigis_mansion:data candle_flame{always_burn:1b} run tag @e[tag=this_entity,tag=candle_flame,limit=1] add always_burn
 execute if data storage luigis_mansion:data candle_flame.fire_elemental_source run tag @e[tag=this_entity,tag=candle_flame,limit=1] add elemental_source
 execute if data storage luigis_mansion:data candle_flame.fire_elemental_source run tag @e[tag=this_entity,tag=candle_flame,limit=1] add fire_elemental_source
 execute if data storage luigis_mansion:data candle_flame.fire_elemental_source{must_vacuum:1b} run tag @e[tag=this_entity,tag=candle_flame,limit=1] add elemental_must_vacuum
@@ -18,5 +19,9 @@ data remove storage luigis_mansion:data furniture.candle_flames[0]
 execute if data storage luigis_mansion:data furniture.pose run data modify entity @e[tag=this_entity,tag=candle_flame,limit=1] Pose.Head set from storage luigis_mansion:data furniture.pose
 data modify entity @e[tag=this_entity,tag=candle_flame,limit=1] Pose.Head[1] set value 0.01f
 execute as @e[tag=this_entity,tag=candle_flame,limit=1] run data modify entity @s Rotation[1] set from entity @s Pose.Head[0]
-scoreboard players set @e[tag=this_entity,tag=candle_flame,limit=1] FurnitureRadius 1
+scoreboard players set @e[tag=this_entity,tag=candle_flame,limit=1] FurnitureSizeRadius 1
+execute as @e[tag=this_entity,tag=candle_flame,limit=1] store result score @s PosX run data get entity @s Pos[0] 10
+execute as @e[tag=this_entity,tag=candle_flame,limit=1] store result score @s PosY run data get entity @s Pos[1] 10
+execute as @e[tag=this_entity,tag=candle_flame,limit=1] store result score @s PosZ run data get entity @s Pos[2] 10
+scoreboard players add @e[tag=this_entity,tag=candle_flame,limit=1] PosY 14
 tag @e[tag=this_entity,tag=candle_flame,limit=1] remove this_entity

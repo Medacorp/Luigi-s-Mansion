@@ -2,11 +2,11 @@ scoreboard players add @s ActionTime 1
 execute if entity @s[scores={ActionTime=1}] at @e[tag=same_room,tag=!spectator,tag=player,sort=nearest,limit=1] rotated ~ 0 positioned ^ ^ ^-0.7 if block ~ ~ ~ #luigis_mansion:ghosts_ignore run teleport @s ~ ~ ~ ~ ~
 execute if entity @s[scores={ActionTime=1}] at @e[tag=same_room,tag=!spectator,tag=player,sort=nearest,limit=1] rotated ~ 0 positioned ^ ^ ^-0.7 unless block ~ ~ ~ #luigis_mansion:ghosts_ignore run scoreboard players set @s ActionTime 0
 tag @s[scores={ActionTime=0}] remove attack
-scoreboard players set @s[scores={ActionTime=1}] AnimationProg 0
+scoreboard players set @s[scores={ActionTime=1}] AnimationProgress 0
 execute if entity @s[scores={ActionTime=1..40}] run function luigis_mansion:animations/ghost/basher_stun
-scoreboard players set @s[scores={ActionTime=41}] AnimationProg 0
+scoreboard players set @s[scores={ActionTime=41}] AnimationProgress 0
 execute if entity @s[scores={ActionTime=41..60}] run function luigis_mansion:animations/ghost/basher_appear
-scoreboard players set @s[scores={ActionTime=61}] AnimationProg 0
+scoreboard players set @s[scores={ActionTime=61}] AnimationProgress 0
 execute if entity @s[scores={ActionTime=61..90}] run function luigis_mansion:animations/ghost/basher_complain
 
 tag @s[scores={ActionTime=1},tag=!burning_heart] add stunnable
@@ -27,10 +27,10 @@ execute if entity @s[scores={ActionTime=41}] run data modify storage luigis_mans
 execute if entity @s[scores={ActionTime=41}] as @a[distance=3..5,gamemode=!spectator] run function luigis_mansion:entities/player/take_damage
 execute if entity @s[scores={ActionTime=41}] run data remove storage luigis_mansion:data damage
 tag @s[scores={ActionTime=60},tag=laugh] remove attack
-scoreboard players set @s[scores={ActionTime=60},tag=laugh] AnimationProg 0
+scoreboard players set @s[scores={ActionTime=60},tag=laugh] AnimationProgress 0
 scoreboard players set @s[scores={ActionTime=60},tag=laugh] ActionTime 0
 execute if entity @s[scores={ActionTime=81}] run playsound luigis_mansion:entity.temper_terror.complain_basher hostile @a[tag=same_room] ~ ~ ~ 1
 tag @s[scores={ActionTime=90}] add vanish
 tag @s[scores={ActionTime=90}] remove attack
-scoreboard players set @s[scores={ActionTime=90}] AnimationProg 0
+scoreboard players set @s[scores={ActionTime=90}] AnimationProgress 0
 scoreboard players set @s[scores={ActionTime=90}] ActionTime 0

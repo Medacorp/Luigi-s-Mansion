@@ -1,2 +1,2 @@
-scoreboard players add @s AnimationProg 1
-scoreboard players add @s[scores={AnimationProg=10}] AnimationProg 0
+scoreboard players add @s AnimationProgress 1
+scoreboard players add @s[scores={AnimationProgress=10}] AnimationProgress 0

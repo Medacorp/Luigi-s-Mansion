@@ -26,7 +26,7 @@ execute if entity @s[scores={Dialog=390}] if score #players Totals matches 2.. r
 execute if entity @s[scores={Dialog=421}] as @a[tag=same_room,tag=!spectator,tag=!looking_at_map] run function luigis_mansion:entities/player/animation/set/none
 execute if entity @s[scores={Dialog=422}] run data modify storage luigis_mansion:data current_state.current_data.technical_data merge value {sir_weston_spoke:1b}
 execute if entity @s[scores={Dialog=422..}] as @a[tag=same_room,tag=!spectator] run function luigis_mansion:other/music/set/danger
-scoreboard players set @s[scores={Dialog=422}] AnimationProg 0
+scoreboard players set @s[scores={Dialog=422}] AnimationProgress 0
 scoreboard players add @s[scores={Dialog=423..482}] PathStep 1
 execute at @s[scores={PathStep=20},tag=!vanish] run playsound luigis_mansion:entity.sir_weston.attack hostile @a[tag=same_room] ~ ~ ~ 1
 execute if entity @s[scores={PathStep=20..50,VulnerableTime=0},tag=!vanish] facing entity @e[tag=same_room,tag=!spectator,tag=player,sort=nearest,limit=1] feet rotated ~ 0 run teleport @s ~ ~ ~ ~ ~
@@ -36,10 +36,10 @@ execute if entity @s[scores={Dialog=483},tag=!vanish] run playsound luigis_mansi
 execute if entity @s[scores={Dialog=483},tag=!vanish] run particle minecraft:block minecraft:ice ~ ~1.2 ~ 0.6 0.6 0.6 0 30
 execute if entity @s[scores={Dialog=483},tag=!vanish] run data modify entity @e[tag=this_model,tag=sir_weston_ice,limit=1] ArmorItems[3] set value {}
 scoreboard players set @s[scores={Dialog=483},tag=!vanish] VulnerableTime 40
-scoreboard players set @s[scores={Dialog=483},tag=!vanish] AnimationProg 0
+scoreboard players set @s[scores={Dialog=483},tag=!vanish] AnimationProgress 0
 scoreboard players set @s[scores={Dialog=483}] PathStep 0
 execute if entity @s[scores={Dialog=523},tag=!vanish] run data modify entity @e[tag=this_model,tag=sir_weston_ice,limit=1] ArmorItems[3] set value {id:"minecraft:diamond_pickaxe",Count:1b,tag:{Unbreakable:1b,Damage:4,CustomModelData:42}}
-scoreboard players set @s[scores={Dialog=523},tag=!vanish] AnimationProg 0
+scoreboard players set @s[scores={Dialog=523},tag=!vanish] AnimationProgress 0
 scoreboard players set @s[scores={Dialog=523}] Dialog 463
 
 execute if entity @s[scores={Dialog=422..482},tag=!vanish] run function luigis_mansion:animations/sir_weston/attack

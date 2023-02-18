@@ -1,4 +1,4 @@
-execute unless entity @s[scores={ActionTime=1}] run scoreboard players set @s AnimationProg 0
+execute unless entity @s[scores={ActionTime=1}] run scoreboard players set @s AnimationProgress 0
 execute unless entity @s[scores={ActionTime=1}] facing entity @p[tag=same_room,tag=!spectator] feet rotated ~ 0 run teleport @s ~ ~ ~ ~ ~
 execute unless entity @s[scores={ActionTime=1}] store result score #temp Time run data get entity @s Rotation[0]
 execute unless entity @s[scores={ActionTime=1}] run teleport @s ~ ~ ~ ~ ~
@@ -19,7 +19,7 @@ execute if score #temp Time matches ..-181 run scoreboard players add #temp Time
 execute if score #temp Time matches 180.. run scoreboard players remove #temp Time 360
 execute if score #temp Time matches -3..3 run tag @s remove turn_left
 execute if score #temp Time matches -3..3 run tag @s remove turn_around
-execute if score #temp Time matches -3..3 run scoreboard players set @s AnimationProg 0
+execute if score #temp Time matches -3..3 run scoreboard players set @s AnimationProgress 0
 execute if score #temp Time matches -3..3 run scoreboard players reset @s ActionTime
 scoreboard players reset #temp Time
 scoreboard players reset #temp2 Time

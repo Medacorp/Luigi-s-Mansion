@@ -1,8 +1,8 @@
 execute unless entity @s[scores={Room=0}] store result score @s HomeX run data get entity @s Pos[0] 100
 execute unless entity @s[scores={Room=0}] store result score @s HomeY run data get entity @s Pos[1] 100
 execute unless entity @s[scores={Room=0}] store result score @s HomeZ run data get entity @s Pos[2] 100
-execute unless entity @s[scores={Room=0}] store result score @s HomeRotX run data get entity @s Rotation[0] 1
-execute unless entity @s[scores={Room=0}] store result score @s HomeRotY run data get entity @s Rotation[1] 1
+execute unless entity @s[scores={Room=0}] store result score @s HomeRotationX run data get entity @s Rotation[0] 1
+execute unless entity @s[scores={Room=0}] store result score @s HomeRotationY run data get entity @s Rotation[1] 1
 execute unless entity @s[scores={Room=0}] run tag @s add opening_map
 execute unless entity @s[scores={Room=0}] rotated as @s run function luigis_mansion:spawn_entities/game_boy_horror_location
 execute unless entity @a[tag=looking_at_map,limit=1] unless entity @s[scores={Room=0}] rotated as @s run function luigis_mansion:spawn_entities/game_boy_horror_marker

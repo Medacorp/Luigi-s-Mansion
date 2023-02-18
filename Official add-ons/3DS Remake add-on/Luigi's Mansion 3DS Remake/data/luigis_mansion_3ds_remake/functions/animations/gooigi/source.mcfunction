@@ -14,16 +14,16 @@ scoreboard players remove @s[scores={PlayerRotation=360000..}] PlayerRotation 36
 scoreboard players add @s[scores={PlayerRotation=..-1}] PlayerRotation 360000
 
 # Get rotation
-execute store result score @s HomeRot run data get entity @e[tag=gooigi,limit=1] Rotation[0] 1000
-scoreboard players add @s[scores={HomeRot=..0}] HomeRot 360000
-execute unless entity @s[scores={PlayerRotation=..2147483647}] run scoreboard players operation @s PlayerRotation = @s HomeRot
-scoreboard players operation @s RotationDif = @s PlayerRotation
+execute store result score @s HomeRotation run data get entity @e[tag=gooigi,limit=1] Rotation[0] 1000
+scoreboard players add @s[scores={HomeRotation=..0}] HomeRotation 360000
+execute unless entity @s[scores={PlayerRotation=..2147483647}] run scoreboard players operation @s PlayerRotation = @s HomeRotation
+scoreboard players operation @s RotationDifference = @s PlayerRotation
 
 # Rotated based on looking direction
-execute if entity @s[scores={RotationDif=..90000,HomeRot=270000..}] run scoreboard players add @s RotationDif 360000
-execute if entity @s[scores={RotationDif=270000..,HomeRot=..90000}] run scoreboard players remove @s RotationDif 360000
-scoreboard players operation @s RotationDif -= @s HomeRot
-execute unless entity @s[scores={RotationDif=-50000..50000},tag=!stop_model] run function luigis_mansion_3ds_remake:animations/gooigi/rotate_body
+execute if entity @s[scores={RotationDifference=..90000,HomeRotation=270000..}] run scoreboard players add @s RotationDifference 360000
+execute if entity @s[scores={RotationDifference=270000..,HomeRotation=..90000}] run scoreboard players remove @s RotationDifference 360000
+scoreboard players operation @s RotationDifference -= @s HomeRotation
+execute unless entity @s[scores={RotationDifference=-50000..50000},tag=!stop_model] run function luigis_mansion_3ds_remake:animations/gooigi/rotate_body
 scoreboard players remove @s[scores={PlayerRotation=360000..}] PlayerRotation 360000
 scoreboard players add @s[scores={PlayerRotation=..0}] PlayerRotation 360000
 execute store result entity @s[tag=!stop_model,tag=!moving_backwards] Rotation[0] float 0.001 run scoreboard players get @s PlayerRotation

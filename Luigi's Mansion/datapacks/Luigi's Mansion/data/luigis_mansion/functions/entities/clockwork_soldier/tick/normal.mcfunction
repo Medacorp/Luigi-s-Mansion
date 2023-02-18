@@ -1,7 +1,7 @@
 execute if entity @s[tag=!windless] as @e[tag=wind,scores={GhostNr=-2147483648..}] if score @s GhostNr = #temp GhostNr run tag @s add this_wind
 
 execute if entity @s[tag=activated,tag=!was_activated,scores={WaitTime=0}] run function luigis_mansion:entities/clockwork_soldier/activate
-scoreboard players set @s[tag=activated,tag=!was_activated,scores={WaitTime=1}] AnimationProg 0
+scoreboard players set @s[tag=activated,tag=!was_activated,scores={WaitTime=1}] AnimationProgress 0
 tag @s[tag=activated,tag=!was_activated,scores={WaitTime=1}] add was_activated
 
 scoreboard players add @s[tag=was_activated,tag=in_vacuum] VacuumTime 1

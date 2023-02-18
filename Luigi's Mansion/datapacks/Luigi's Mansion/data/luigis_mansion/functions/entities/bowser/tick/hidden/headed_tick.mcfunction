@@ -13,7 +13,7 @@ execute if score #temp Time matches -3..3 if entity @s[tag=intro_done] unless en
 execute if score #temp Time matches -90..90 unless score #temp Time matches -3..3 if entity @s[tag=intro_done] unless entity @s[scores={ActionTime=1..}] run tag @s add turn_around
 execute unless score #temp Time matches -90..90 if entity @s[tag=intro_done] unless entity @s[scores={ActionTime=1..}] positioned ^ ^-3 ^-4 if entity @e[tag=same_room,tag=!spectator,tag=player,distance=..3,limit=1] run tag @s add tail_attack
 execute unless score #temp Time matches -90..90 if entity @s[tag=intro_done,tag=!tail_attack] unless entity @s[scores={ActionTime=1..}] run tag @s add look_around
-execute if entity @s[tag=!headless_run] unless entity @s[scores={ActionTime=1..}] run scoreboard players operation @s HomeRot = #temp Time
+execute if entity @s[tag=!headless_run] unless entity @s[scores={ActionTime=1..}] run scoreboard players operation @s HomeRotation = #temp Time
 scoreboard players reset #temp Time
 
 execute unless entity @s[tag=!walk,tag=!run] positioned ^ ^ ^2 unless block ~ ~ ~ minecraft:clay unless block ~ ~ ~ minecraft:air run function luigis_mansion:entities/bowser/stop_moving

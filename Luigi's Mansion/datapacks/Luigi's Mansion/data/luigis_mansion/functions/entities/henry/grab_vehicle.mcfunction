@@ -1,6 +1,6 @@
 scoreboard players add @s ActionTime 1
 execute if entity @s[scores={ActionTime=1}] run playsound luigis_mansion:entity.henry.grab_vehicle hostile @a[tag=same_room] ~ ~ ~ 1
-scoreboard players set @s[scores={ActionTime=1}] AnimationProg 0
+scoreboard players set @s[scores={ActionTime=1}] AnimationProgress 0
 execute if entity @s[scores={ActionTime=1}] run function luigis_mansion:entities/ghost/turn_visible
 execute if entity @s[scores={ActionTime=1}] run function luigis_mansion:spawn_entities/vacuumable_object/car
 execute if entity @s[scores={ActionTime=1}] run scoreboard players operation @e[distance=..0.7,tag=car] GhostNr = @s GhostNr

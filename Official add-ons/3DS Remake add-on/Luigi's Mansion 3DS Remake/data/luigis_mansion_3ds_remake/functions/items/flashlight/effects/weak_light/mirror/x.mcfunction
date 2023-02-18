@@ -8,8 +8,8 @@ execute at @s run teleport @e[type=minecraft:marker,tag=weak_flashlight,tag=refl
 execute as @e[type=minecraft:marker,tag=weak_flashlight,tag=reflected,tag=new,limit=1] store result entity @s Rotation[0] float -0.01 run data get entity @s Rotation[0] 100
 scoreboard players operation @e[type=minecraft:marker,tag=weak_flashlight,tag=reflected,tag=new,limit=1] Room = @s Room
 scoreboard players operation @e[type=minecraft:marker,tag=weak_flashlight,tag=reflected,tag=new,limit=1] PathStep = @s PathStep
-execute as @e[type=minecraft:marker,tag=weak_flashlight,tag=reflected,tag=new,limit=1] store result score @s HomeRotX run data get entity @s Rotation[0] 100
-execute as @e[type=minecraft:marker,tag=weak_flashlight,tag=reflected,tag=new,limit=1] store result score @s HomeRotY run data get entity @s Rotation[1] 100
+execute as @e[type=minecraft:marker,tag=weak_flashlight,tag=reflected,tag=new,limit=1] store result score @s HomeRotationX run data get entity @s Rotation[0] 100
+execute as @e[type=minecraft:marker,tag=weak_flashlight,tag=reflected,tag=new,limit=1] store result score @s HomeRotationY run data get entity @s Rotation[1] 100
 execute as @e[type=minecraft:marker,tag=weak_flashlight,tag=reflected,tag=new,limit=1] store result score @s HomeX run data get entity @s Pos[0] 100
 execute as @e[type=minecraft:marker,tag=weak_flashlight,tag=reflected,tag=new,limit=1] store result score @s HomeY run data get entity @s Pos[1] 100
 execute as @e[type=minecraft:marker,tag=weak_flashlight,tag=reflected,tag=new,limit=1] store result score @s HomeZ run data get entity @s Pos[2] 100

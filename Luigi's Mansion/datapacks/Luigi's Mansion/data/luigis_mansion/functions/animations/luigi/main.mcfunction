@@ -2,12 +2,12 @@ execute if entity @s[tag=was_sneaking,tag=!was_swimming,tag=!riding_poltergust] 
 execute if entity @s[tag=was_walking,tag=!was_swimming,tag=!riding_poltergust] unless entity @s[scores={Animation=-4}] unless entity @s[scores={Animation=-1},tag=!right_leg,tag=!left_leg] unless data storage luigis_mansion:data luigi{tags:["walking"]} run function luigis_mansion:animations/luigi/reset_pose
 execute if entity @s[tag=was_running,tag=!was_swimming,tag=!riding_poltergust] unless entity @s[scores={Animation=-4}] unless entity @s[scores={Animation=-1},tag=!right_leg,tag=!left_leg] unless data storage luigis_mansion:data luigi{tags:["running"]} run function luigis_mansion:animations/luigi/reset_pose
 execute if entity @s[tag=was_swimming] unless data storage luigis_mansion:data luigi{tags:["swimming"]} run function luigis_mansion:animations/luigi/reset_pose
-execute if entity @s[scores={AnimationProg=0},tag=was_swimming] store result entity @s Pose.Head[0] float 1 run scoreboard players get @s IncreaseAmount
+execute if entity @s[scores={AnimationProgress=0},tag=was_swimming] store result entity @s Pose.Head[0] float 1 run scoreboard players get @s IncreaseAmount
 execute if entity @s[tag=!was_swimming] if data storage luigis_mansion:data luigi{tags:["swimming"]} run function luigis_mansion:animations/luigi/reset_pose
 execute if entity @s[tag=!was_riding_poltergust] if data storage luigis_mansion:data luigi{tags:["riding_poltergust"]} run function luigis_mansion:animations/luigi/reset_pose
 execute if entity @s[tag=was_riding_poltergust] unless data storage luigis_mansion:data luigi{tags:["riding_poltergust"]} run function luigis_mansion:animations/luigi/reset_pose
 execute store result score @s Animation run data get storage luigis_mansion:data luigi.animation
-execute unless score @s PrevAnimation = @s Animation run function luigis_mansion:animations/luigi/reset_pose
+execute unless score @s PreviousAnimation = @s Animation run function luigis_mansion:animations/luigi/reset_pose
 data modify entity @s Tags append from storage luigis_mansion:data luigi.tags[]
 execute unless entity @s[scores={Animation=-3..-2}] unless entity @s[scores={Animation=0..2}] run tag @s remove sneak_pos
 execute unless entity @s[scores={Animation=-3..-2}] unless entity @s[scores={Animation=0..2}] run tag @s remove low_health
@@ -30,7 +30,7 @@ execute if entity @s[tag=!head] store result entity @s Pose.Head[0] float 1 run 
 scoreboard players reset #temp Time
 execute if data storage luigis_mansion:data luigi{invulnerable:1b} run function luigis_mansion:animations/luigi/invulnerability_blink
 execute if data storage luigis_mansion:data luigi{invulnerable:0b} if entity @s[tag=was_invisible] run function luigis_mansion:animations/luigi/invulnerability_blink
-scoreboard players operation @s PrevAnimation = @s Animation
+scoreboard players operation @s PreviousAnimation = @s Animation
 tag @s[tag=low_health] add was_low_health
 tag @s[tag=!low_health] remove was_low_health
 tag @s[tag=low_health] remove low_health

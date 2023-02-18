@@ -9,7 +9,7 @@ execute if entity @s[tag=!boo_hurt,tag=fleeing,tag=!dying] run function luigis_m
 execute if entity @s[tag=boo_hurt,tag=!dying] run function luigis_mansion:entities/boo/hurt
 execute at @s[tag=fleeing,tag=!dying] run function luigis_mansion:entities/boo/flee
 
-execute unless entity @s[scores={Dialog=1..}] run scoreboard players set @s[tag=frozen] AnimationProg 0
+execute unless entity @s[scores={Dialog=1..}] run scoreboard players set @s[tag=frozen] AnimationProgress 0
 execute unless entity @s[scores={Dialog=1..}] run scoreboard players set @s[tag=frozen] Dialog 40
 execute if entity @s[tag=frozen] run scoreboard players operation #temp Move /= #3 Constants
 scoreboard players remove @s[tag=frozen] Dialog 1

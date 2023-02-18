@@ -1,7 +1,7 @@
 execute unless block 736 2 -24 minecraft:barrier run function luigis_mansion_3ds_remake:room/gallery/generate
 execute unless entity @s[scores={Room=-5}] run title @s title {"translate":"luigis_mansion:location.gallery"}
 scoreboard players set @s Room -5
-scoreboard players set @s PrevRoom -5
+scoreboard players set @s PreviousRoom -5
 
 teleport @s[scores={HomeZ=-16,HomeX=765..775,HomeY=1..6}] ~ ~75 ~2
 teleport @s[scores={HomeZ=-16,HomeX=765..775,HomeY=7..25}] ~ ~ ~-1

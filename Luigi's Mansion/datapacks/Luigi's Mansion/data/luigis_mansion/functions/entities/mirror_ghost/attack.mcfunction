@@ -2,7 +2,7 @@ scoreboard players add @s[scores={ActionTime=41..}] ActionTime 1
 scoreboard players set @s[scores={ActionTime=40}] ActionTime 33
 scoreboard players add @s[scores={ActionTime=1..39}] ActionTime 1
 execute unless entity @s[scores={ActionTime=1..}] run scoreboard players set @s ActionTime 1
-scoreboard players set @s[scores={ActionTime=1}] AnimationProg 0
+scoreboard players set @s[scores={ActionTime=1}] AnimationProgress 0
 execute if entity @s[scores={ActionTime=1..20}] run function luigis_mansion:animations/grabbing_ghost/grab
 tag @s[scores={ActionTime=1}] remove stunnable
 execute if entity @s[scores={ActionTime=1}] run playsound luigis_mansion:entity.mirror_ghost.attack hostile @a[tag=same_room] ~ ~ ~ 1
@@ -28,11 +28,11 @@ tag @e[tag=grabbed_model,limit=1] remove grabbed_model
 scoreboard players reset #temp ID
 tag @s[scores={ActionTime=40}] add laugh
 tag @s[scores={ActionTime=41}] add stunnable
-scoreboard players set @s[scores={ActionTime=41}] AnimationProg 0
+scoreboard players set @s[scores={ActionTime=41}] AnimationProgress 0
 scoreboard players reset @s[scores={ActionTime=41}] GrabbedID
 execute if entity @s[scores={ActionTime=41}] run playsound luigis_mansion:entity.mirror_ghost.let_go hostile @a[tag=same_room] ~ ~ ~ 1
 execute if entity @s[scores={ActionTime=41..61}] run function luigis_mansion:animations/grabbing_ghost/let_go
 tag @s[scores={ActionTime=61},tag=!laugh] add complain
 tag @s[scores={ActionTime=61}] remove attack
-scoreboard players set @s[scores={ActionTime=61}] AnimationProg 0
+scoreboard players set @s[scores={ActionTime=61}] AnimationProgress 0
 scoreboard players set @s[scores={ActionTime=61}] ActionTime 0

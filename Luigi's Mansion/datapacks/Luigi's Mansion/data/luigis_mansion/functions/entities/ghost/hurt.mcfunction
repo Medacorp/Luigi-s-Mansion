@@ -1,6 +1,6 @@
 scoreboard players set @s[scores={HurtTime=1..},tag=!hurt_animation] ActionTime 0
 scoreboard players set @s[scores={HurtTime=1..},tag=!hurt_animation] HurtTime 0
-scoreboard players set @s[scores={AnimationProg=1..},tag=!hurt_animation] AnimationProg 0
+scoreboard players set @s[scores={AnimationProgress=1..},tag=!hurt_animation] AnimationProgress 0
 scoreboard players add @s[scores={HurtTime=1..29}] HurtTime 1
 execute unless entity @s[scores={HurtTime=1..}] run scoreboard players set @s HurtTime 1
 tag @s[scores={HurtTime=1}] remove attack
@@ -18,5 +18,5 @@ tag @s[tag=!in_vacuum,tag=!dialog] add vanish
 tag @s[tag=!in_vacuum,tag=!dialog] remove fleeing
 tag @s[tag=!in_vacuum,tag=!dialog] remove hurt
 execute if entity @s[tag=!in_vacuum] run data modify entity @s ArmorItems[3].tag merge value {attacked_by:[]}
-scoreboard players set @s[tag=vanish] AnimationProg 0
+scoreboard players set @s[tag=vanish] AnimationProgress 0
 scoreboard players set @s[tag=vanish] ActionTime 0

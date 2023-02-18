@@ -41,4 +41,4 @@ scoreboard players set @s[scores={MusicType=38}] Music 173
 playsound luigis_mansion:music.boo_woods_intro music @s[scores={MusicType=39}] ~ ~ ~ 1000
 scoreboard players set @s[scores={MusicType=39}] Music 79
 
-scoreboard players operation @s[scores={Music=0}] PrevMusicType = @s MusicType
+scoreboard players operation @s[scores={Music=0}] PreviousMusicType = @s MusicType

@@ -4,16 +4,16 @@ scoreboard players operation #temp PosZ = @s PosZ
 scoreboard players operation #temp2 PosX = #temp PosX
 scoreboard players operation #temp2 PosY = #temp PosY
 scoreboard players operation #temp2 PosZ = #temp PosZ
-scoreboard players operation #temp FurnitureSizeW = @s FurnitureSizeW
-scoreboard players operation #temp FurnitureSizeH = @s FurnitureSizeH
-scoreboard players operation #temp FurnitureSizeW /= #2 Constants
-execute if entity @s[tag=!hanging_furniture,tag=!standing_furniture] run scoreboard players operation #temp FurnitureSizeH /= #2 Constants
-scoreboard players operation #temp PosX -= #temp FurnitureSizeW
-execute if entity @s[tag=!standing_furniture] run scoreboard players operation #temp PosY -= #temp FurnitureSizeH
-scoreboard players operation #temp PosZ -= #temp FurnitureSizeW
-scoreboard players operation #temp2 PosX += #temp FurnitureSizeW
-execute if entity @s[tag=!hanging_furniture] run scoreboard players operation #temp2 PosY += #temp FurnitureSizeH
-scoreboard players operation #temp2 PosZ += #temp FurnitureSizeW
+scoreboard players operation #temp FurnitureSizeWidth = @s FurnitureSizeWidth
+scoreboard players operation #temp FurnitureSizeHeight = @s FurnitureSizeHeight
+scoreboard players operation #temp FurnitureSizeWidth /= #2 Constants
+execute if entity @s[tag=!hanging_furniture,tag=!standing_furniture] run scoreboard players operation #temp FurnitureSizeHeight /= #2 Constants
+scoreboard players operation #temp PosX -= #temp FurnitureSizeWidth
+execute if entity @s[tag=!standing_furniture] run scoreboard players operation #temp PosY -= #temp FurnitureSizeHeight
+scoreboard players operation #temp PosZ -= #temp FurnitureSizeWidth
+scoreboard players operation #temp2 PosX += #temp FurnitureSizeWidth
+execute if entity @s[tag=!hanging_furniture] run scoreboard players operation #temp2 PosY += #temp FurnitureSizeHeight
+scoreboard players operation #temp2 PosZ += #temp FurnitureSizeWidth
 
 scoreboard players operation #temp3 PosX = #interact PosX
 scoreboard players operation #temp3 PosX < #temp2 PosX
@@ -41,8 +41,8 @@ execute if score #temp PosX matches ..25 run tag @s add hit_by_poltergust
 scoreboard players reset #temp PosX
 scoreboard players reset #temp PosY
 scoreboard players reset #temp PosZ
-scoreboard players reset #temp FurnitureSizeW
-scoreboard players reset #temp FurnitureSizeH
+scoreboard players reset #temp FurnitureSizeWidth
+scoreboard players reset #temp FurnitureSizeHeight
 scoreboard players reset #temp2 PosX
 scoreboard players reset #temp2 PosY
 scoreboard players reset #temp2 PosZ

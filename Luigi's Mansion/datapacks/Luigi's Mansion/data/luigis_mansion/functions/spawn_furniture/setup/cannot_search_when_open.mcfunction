@@ -1,2 +1,0 @@
-execute if data storage luigis_mansion:data furniture{cannot_search_when_open:1b} run tag @e[tag=this_entity,limit=1] add cannot_search_when_open
-execute if data storage luigis_mansion:data furniture{cannot_search_when_open:1b,searched:1b} run tag @e[tag=this_entity,limit=1] add drop_loot

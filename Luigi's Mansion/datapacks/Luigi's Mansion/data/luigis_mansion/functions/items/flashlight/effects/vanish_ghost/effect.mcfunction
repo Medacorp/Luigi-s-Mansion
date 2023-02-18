@@ -2,4 +2,4 @@ playsound luigis_mansion:entity.ghost.flash_vanish hostile @a[tag=same_room] ~ ~
 function luigis_mansion:entities/ghost/turn_invisible
 tag @s add vanish
 scoreboard players set @s ActionTime 0
-scoreboard players set @s AnimationProg 0
+scoreboard players set @s AnimationProgress 0

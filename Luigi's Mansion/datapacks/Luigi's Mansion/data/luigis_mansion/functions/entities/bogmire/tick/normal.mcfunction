@@ -3,7 +3,7 @@ execute at @s[scores={Room=74},tag=!vanish] run function luigis_mansion:entities
 
 tag @s[tag=vanish,scores={Room=74}] add disappear
 scoreboard players set @s[tag=vanish,scores={Room=74}] ActionTime 0
-scoreboard players set @s[tag=vanish,scores={Room=74}] AnimationProg 0
+scoreboard players set @s[tag=vanish,scores={Room=74}] AnimationProgress 0
 tag @s[tag=vanish,scores={Room=74}] remove vanish
 
 execute at @s[tag=appear] run function luigis_mansion:entities/bogmire/appear

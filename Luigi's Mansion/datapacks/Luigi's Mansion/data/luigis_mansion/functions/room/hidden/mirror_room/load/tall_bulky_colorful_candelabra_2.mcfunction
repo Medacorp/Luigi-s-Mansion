@@ -1,0 +1,2 @@
+data modify storage luigis_mansion:data furniture set value {candle_flames:[{lit:0b,tags:["light_me"]},{lit:0b,tags:["light_me"]},{lit:0b,tags:["light_me"]}],searchable:["interact","vacuum"],shake_animation:["interact","vacuum"],sound:"luigis_mansion:heavy_generic",can_hide_boo:1b,scan_message:'{"translate":"luigis_mansion:message.player.scan_furniture.59"}'}
+execute positioned 736 11 76 rotated -90 0 run function luigis_mansion:spawn_furniture/tall_bulky_colorful_candelabra/red_green_blue

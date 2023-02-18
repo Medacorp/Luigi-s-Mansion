@@ -9,13 +9,13 @@ execute as @e[tag=this_entity,limit=1] store result score @s HomeZ run data get 
 execute as @e[tag=this_entity,limit=1] store result score @s Move run data get storage luigis_mansion:data current_state.current_data.ghosts.haunted_clown_doll.speed
 data modify entity @e[tag=this_entity,limit=1] ArmorItems[3].tag.loot set from storage luigis_mansion:data current_state.current_data.ghosts.haunted_clown_doll.loot
 data modify entity @e[tag=this_entity,limit=1] ArmorItems[3].tag.damage set from storage luigis_mansion:data current_state.current_data.ghosts.haunted_clown_doll.damage
-execute as @e[tag=this_entity,limit=1] store result score @s HomeRotX run data get entity @s Rotation[0] 1
-execute as @e[tag=this_entity,limit=1] store result score @s HomeRotY run data get entity @s Rotation[1] 1
+execute as @e[tag=this_entity,limit=1] store result score @s HomeRotationX run data get entity @s Rotation[0] 1
+execute as @e[tag=this_entity,limit=1] store result score @s HomeRotationY run data get entity @s Rotation[1] 1
 scoreboard players set @e[tag=this_entity,limit=1] WaitTime 0
 scoreboard players set @e[tag=this_entity,limit=1] Sound 0
 scoreboard players set @e[tag=this_entity,limit=1] EntitySizeRadius 5
 scoreboard players set @e[tag=this_entity,limit=1] EntityYOffset 7
-execute if data storage luigis_mansion:data entity.training_room_score as @e[tag=this_entity,limit=1] store result score @s GhostCaught run data get storage luigis_mansion:data entity.training_room_score
+execute if data storage luigis_mansion:data entity.training_room_score as @e[tag=this_entity,limit=1] store result score @s TrainingRoomScore run data get storage luigis_mansion:data entity.training_room_score
 execute if data storage luigis_mansion:data entity.speed as @e[tag=this_entity,limit=1] store result score @s Move run data get storage luigis_mansion:data entity.speed
 execute if data storage luigis_mansion:data entity.loot run data modify entity @e[tag=this_entity,limit=1] ArmorItems[3].tag.loot set from storage luigis_mansion:data entity.loot
 execute if data storage luigis_mansion:data entity.damage run data modify entity @e[tag=this_entity,limit=1] ArmorItems[3].tag.damage set from storage luigis_mansion:data entity.damage

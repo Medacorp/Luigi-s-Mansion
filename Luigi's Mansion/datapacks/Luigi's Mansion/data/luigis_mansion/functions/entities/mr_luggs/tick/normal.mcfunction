@@ -33,18 +33,18 @@ execute if entity @s[scores={Dialog=..99,ActionTime=61}] run particle minecraft:
 execute if entity @s[scores={Dialog=..99,ActionTime=61}] run playsound luigis_mansion:entity.mr_luggs.eat hostile @a[tag=same_room] ^ ^1 ^1 4
 execute if entity @s[scores={Dialog=..99,ActionTime=71}] run particle minecraft:dust 1 0.9 0 1 ^-0.3 ^1.1 ^1 0.3 0.3 0.3 0 5
 execute if entity @s[scores={Dialog=..99,ActionTime=71}] run playsound luigis_mansion:entity.mr_luggs.eat hostile @a[tag=same_room] ^ ^1 ^1 4
-scoreboard players set @s[scores={Dialog=..99,ActionTime=80}] AnimationProg 0
+scoreboard players set @s[scores={Dialog=..99,ActionTime=80}] AnimationProgress 0
 tag @s[scores={Dialog=..99,ActionTime=80}] add hit_table
 execute if entity @s[scores={Dialog=..99,ActionTime=80}] run playsound luigis_mansion:entity.mr_luggs.hit_table hostile @a[tag=same_room] ^ ^ ^2 4
 execute if entity @s[scores={Dialog=..99,ActionTime=100}] run playsound luigis_mansion:entity.mr_luggs.hit_table hostile @a[tag=same_room] ^ ^ ^2 4
 execute if entity @s[scores={Dialog=..99,ActionTime=120}] run playsound luigis_mansion:entity.mr_luggs.hit_table hostile @a[tag=same_room] ^ ^ ^2 4
 execute if entity @s[scores={Dialog=..99,ActionTime=140}] run playsound luigis_mansion:entity.mr_luggs.hit_table hostile @a[tag=same_room] ^ ^ ^2 4
-scoreboard players set @s[scores={Dialog=..99,ActionTime=150}] AnimationProg 0
+scoreboard players set @s[scores={Dialog=..99,ActionTime=150}] AnimationProgress 0
 scoreboard players set @s[scores={Dialog=..99,ActionTime=150}] ActionTime 0
 scoreboard players set @s[scores={Dialog=101}] ActionTime 0
 tag @s[scores={ActionTime=0}] remove hit_table
 
-scoreboard players set @s[scores={Dialog=101}] AnimationProg 0
+scoreboard players set @s[scores={Dialog=101}] AnimationProgress 0
 tag @s[scores={Dialog=101}] add complain
 execute if entity @s[scores={Dialog=101}] run playsound luigis_mansion:entity.mr_luggs.complain hostile @a[tag=same_room] ~ ~ ~ 1
 tag @s[scores={Dialog=141}] remove complain
@@ -103,7 +103,7 @@ tag @s[scores={Dialog=761}] add sigh
 tag @s[scores={Dialog=761}] remove spit
 execute if entity @s[scores={Dialog=761}] run playsound luigis_mansion:entity.mr_luggs.sigh hostile @a[tag=same_room] ~ ~ ~ 1
 execute if entity @s[scores={Dialog=781}] run scoreboard players set @s VulnerableTime 80
-execute if entity @s[scores={Dialog=861}] run scoreboard players set @s AnimationProg 0
+execute if entity @s[scores={Dialog=861}] run scoreboard players set @s AnimationProgress 0
 tag @s[scores={Dialog=861}] add complain
 tag @s[scores={Dialog=861}] remove sigh
 execute if entity @s[scores={Dialog=881}] run playsound luigis_mansion:entity.mr_luggs.complain_repeat hostile @a[tag=same_room] ~ ~ ~ 1

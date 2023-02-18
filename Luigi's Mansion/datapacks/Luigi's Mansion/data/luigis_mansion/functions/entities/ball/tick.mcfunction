@@ -32,11 +32,11 @@ tag @s[tag=collision,tag=chauncey,tag=spit,tag=vacuumable] add dead
 tag @s[tag=collision,tag=chauncey,tag=!vacuumable] remove in_vacuum
 tag @s[tag=shadow,tag=!spit,tag=!in_vacuum,tag=!can_spit_2,tag=!first_tick] add dead
 tag @s[tag=shadow,tag=first_tick] remove first_tick
-execute store result score @s HomeRot run data get entity @s Pose.Head[0] 1
-execute if entity @s[tag=in_vacuum,tag=!can_spit_2] store result entity @s Pose.Head[0] float 1 run scoreboard players add @s HomeRot 10
-execute if entity @s[tag=spit] store result entity @s Pose.Head[0] float 1 run scoreboard players add @s HomeRot 10
-execute if entity @s[tag=chauncey,tag=!vacuumable] store result entity @s Pose.Head[0] float 1 run scoreboard players add @s HomeRot 10
-execute if entity @s[tag=spike_ball,scores={Move=1..}] store result entity @s Pose.Head[0] float 1 run scoreboard players add @s HomeRot 10
+execute store result score @s HomeRotation run data get entity @s Pose.Head[0] 1
+execute if entity @s[tag=in_vacuum,tag=!can_spit_2] store result entity @s Pose.Head[0] float 1 run scoreboard players add @s HomeRotation 10
+execute if entity @s[tag=spit] store result entity @s Pose.Head[0] float 1 run scoreboard players add @s HomeRotation 10
+execute if entity @s[tag=chauncey,tag=!vacuumable] store result entity @s Pose.Head[0] float 1 run scoreboard players add @s HomeRotation 10
+execute if entity @s[tag=spike_ball,scores={Move=1..}] store result entity @s Pose.Head[0] float 1 run scoreboard players add @s HomeRotation 10
 scoreboard players remove @s[scores={Move=1..}] Move 5
 execute unless entity @s[scores={Move=0..}] run scoreboard players set @s Move 0
 scoreboard players set @s[tag=can_spit_2,tag=spike_ball] Move 0
@@ -56,7 +56,7 @@ execute at @s[tag=!in_vacuum,tag=chauncey] store result storage luigis_mansion:d
 execute at @s[tag=!in_vacuum,tag=chauncey] as @a[distance=..1,gamemode=!spectator] run function luigis_mansion:entities/player/take_damage
 execute at @s[tag=!in_vacuum,tag=chauncey] run data remove storage luigis_mansion:data damage
 execute at @s[tag=!in_vacuum,tag=chauncey,scores={Owner=-2147483648..}] run scoreboard players operation #temp GhostNr = @s Owner
-execute at @s[tag=!in_vacuum,tag=chauncey,scores={Owner=-2147483648..}] if entity @a[distance=..1,tag=!spectator,limit=1] as @e[tag=!model_piece,tag=ghost] if score @s GhostNr = #temp GhostNr run scoreboard players set @s AnimationProg 0
+execute at @s[tag=!in_vacuum,tag=chauncey,scores={Owner=-2147483648..}] if entity @a[distance=..1,tag=!spectator,limit=1] as @e[tag=!model_piece,tag=ghost] if score @s GhostNr = #temp GhostNr run scoreboard players set @s AnimationProgress 0
 execute at @s[tag=!in_vacuum,tag=chauncey,scores={Owner=-2147483648..}] if entity @a[distance=..1,tag=!spectator,limit=1] as @e[tag=!model_piece,tag=ghost] if score @s GhostNr = #temp GhostNr run tag @s add laugh
 scoreboard players reset #temp GhostNr
 execute at @p[tag=!spectator,tag=player,tag=vacuuming] if block ^ ^ ^1 #luigis_mansion:all_ignore run teleport @s[tag=big,tag=can_spit] ^ ^ ^1 ~ ~

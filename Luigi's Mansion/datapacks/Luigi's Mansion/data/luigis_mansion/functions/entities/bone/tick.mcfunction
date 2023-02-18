@@ -10,7 +10,7 @@ execute if entity @s[tag=dead] store result storage luigis_mansion:data damage.a
 execute if entity @s[tag=dead] as @a[distance=..0.7,gamemode=!spectator] run function luigis_mansion:entities/player/take_damage
 execute if entity @s[tag=dead] run data remove storage luigis_mansion:data damage
 execute if entity @s[tag=dead,scores={Owner=-2147483648..}] run scoreboard players operation #temp GhostNr = @s Owner
-execute if entity @s[tag=dead,scores={Owner=-2147483648..}] as @e[tag=!model_piece,tag=ghost] if score @s GhostNr = #temp GhostNr run scoreboard players set @s AnimationProg 0
+execute if entity @s[tag=dead,scores={Owner=-2147483648..}] as @e[tag=!model_piece,tag=ghost] if score @s GhostNr = #temp GhostNr run scoreboard players set @s AnimationProgress 0
 execute if entity @s[tag=dead,scores={Owner=-2147483648..}] if entity @a[distance=..0.7,tag=!spectator,limit=1] as @e[tag=!model_piece,tag=ghost] if score @s GhostNr = #temp GhostNr run tag @s add laugh
 execute if entity @s[tag=dead,scores={Owner=-2147483648..}] unless entity @a[distance=..0.7,tag=!spectator,limit=1] as @e[tag=!model_piece,tag=ghost] if score @s GhostNr = #temp GhostNr run tag @s add complain
 scoreboard players reset #temp GhostID

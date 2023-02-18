@@ -4,8 +4,8 @@ item replace entity @s[scores={ActionTime=3}] armor.head with minecraft:air
 execute store result entity @s[scores={ActionTime=4}] Pos[0] double 0.01 run scoreboard players get @s HomeX
 execute store result entity @s[scores={ActionTime=4}] Pos[1] double 0.01 run scoreboard players get @s HomeY
 execute store result entity @s[scores={ActionTime=4}] Pos[2] double 0.01 run scoreboard players get @s HomeZ
-execute store result entity @s[scores={ActionTime=4}] Rotation[0] float 1 run scoreboard players get @s HomeRotX
-execute store result entity @s[scores={ActionTime=4}] Rotation[1] float 1 run scoreboard players get @s HomeRotY
+execute store result entity @s[scores={ActionTime=4}] Rotation[0] float 1 run scoreboard players get @s HomeRotationX
+execute store result entity @s[scores={ActionTime=4}] Rotation[1] float 1 run scoreboard players get @s HomeRotationY
 item replace entity @s[scores={ActionTime=7}] armor.head with minecraft:diamond_pickaxe{Unbreakable:1b,Damage:4,CustomModelData:25}
 execute at @s[scores={ActionTime=6}] run teleport @s ~ ~1.4 ~
 teleport @s[scores={ActionTime=7..20}] ~ ~-0.1 ~

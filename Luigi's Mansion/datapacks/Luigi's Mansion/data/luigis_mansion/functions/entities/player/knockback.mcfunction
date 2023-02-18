@@ -97,8 +97,8 @@ execute at @s[scores={KnockbackType=6}] run summon minecraft:marker ~ ~ ~ {Tags:
 execute at @s[scores={KnockbackType=6}] store result entity @e[tag=home,limit=1] Pos[0] double 0.01 run scoreboard players get @s PosX
 execute at @s[scores={KnockbackType=6}] store result entity @e[tag=home,limit=1] Pos[1] double 0.01 run scoreboard players get @s PosY
 execute at @s[scores={KnockbackType=6}] store result entity @e[tag=home,limit=1] Pos[2] double 0.01 run scoreboard players get @s PosZ
-execute at @s[scores={KnockbackType=6}] store result entity @e[tag=home,limit=1] Rotation[0] float 0.01 run scoreboard players get @s RotY
-execute at @s[scores={KnockbackType=6}] store result entity @e[tag=home,limit=1] Rotation[1] float 0.01 run scoreboard players get @s RotX
+execute at @s[scores={KnockbackType=6}] store result entity @e[tag=home,limit=1] Rotation[0] float 0.01 run scoreboard players get @s RotationY
+execute at @s[scores={KnockbackType=6}] store result entity @e[tag=home,limit=1] Rotation[1] float 0.01 run scoreboard players get @s RotationX
 execute at @s[scores={KnockbackType=6}] at @e[tag=home,limit=1] run tp @s ~ 0 ~ ~ ~
 execute at @s[scores={KnockbackType=6}] at @e[tag=home,limit=1] run tp @s ~ ~ ~ ~ ~
 execute at @s[scores={KnockbackType=6}] run kill @e[tag=home,limit=1]
@@ -111,8 +111,8 @@ execute at @s[scores={KnockbackType=7}] run summon minecraft:marker ~ ~ ~ {Tags:
 execute at @s[scores={KnockbackType=7}] store result entity @e[tag=home,limit=1] Pos[0] double 0.01 run scoreboard players get @s PosX
 execute at @s[scores={KnockbackType=7}] store result entity @e[tag=home,limit=1] Pos[1] double 0.01 run scoreboard players get @s PosY
 execute at @s[scores={KnockbackType=7}] store result entity @e[tag=home,limit=1] Pos[2] double 0.01 run scoreboard players get @s PosZ
-execute at @s[scores={KnockbackType=7}] store result entity @e[tag=home,limit=1] Rotation[0] float 0.01 run scoreboard players get @s RotY
-execute at @s[scores={KnockbackType=7}] store result entity @e[tag=home,limit=1] Rotation[1] float 0.01 run scoreboard players get @s RotX
+execute at @s[scores={KnockbackType=7}] store result entity @e[tag=home,limit=1] Rotation[0] float 0.01 run scoreboard players get @s RotationY
+execute at @s[scores={KnockbackType=7}] store result entity @e[tag=home,limit=1] Rotation[1] float 0.01 run scoreboard players get @s RotationX
 execute at @s[scores={KnockbackTime=10..,KnockbackType=7}] unless entity @e[tag=home,limit=1,distance=..0.1] run scoreboard players remove @s KnockbackTime 2
 execute at @s[scores={KnockbackType=7}] at @e[tag=home,limit=1] run tp @s ~ 0 ~ ~ ~
 execute at @s[scores={KnockbackType=7}] at @e[tag=home,limit=1] run tp @s ~ ~ ~ ~ ~
@@ -255,8 +255,8 @@ execute at @s[scores={KnockbackType=14}] run summon minecraft:marker ~ ~ ~ {Tags
 execute at @s[scores={KnockbackType=14}] store result entity @e[tag=home,limit=1] Pos[0] double 0.01 run scoreboard players get @s PosX
 execute at @s[scores={KnockbackType=14}] store result entity @e[tag=home,limit=1] Pos[1] double 0.01 run scoreboard players get @s PosY
 execute at @s[scores={KnockbackType=14}] store result entity @e[tag=home,limit=1] Pos[2] double 0.01 run scoreboard players get @s PosZ
-execute at @s[scores={KnockbackType=14}] store result entity @e[tag=home,limit=1] Rotation[0] float 0.01 run scoreboard players get @s RotY
-execute at @s[scores={KnockbackType=14}] store result entity @e[tag=home,limit=1] Rotation[1] float 0.01 run scoreboard players get @s RotX
+execute at @s[scores={KnockbackType=14}] store result entity @e[tag=home,limit=1] Rotation[0] float 0.01 run scoreboard players get @s RotationY
+execute at @s[scores={KnockbackType=14}] store result entity @e[tag=home,limit=1] Rotation[1] float 0.01 run scoreboard players get @s RotationX
 execute at @s[scores={KnockbackType=14}] at @e[tag=home,limit=1] run tp @s ~ 0 ~ ~ ~
 execute at @s[scores={KnockbackType=14}] at @e[tag=home,limit=1] run tp @s ~ ~ ~ ~ ~
 execute at @s[scores={KnockbackTime=126..135,KnockbackType=14},tag=left_door] rotated ~-18 0 run teleport @s ^ ^ ^-0.15 ~ ~

@@ -16,8 +16,8 @@ execute if entity @s[scores={Dialog=300..319}] if score #mirrored Selected match
 execute if entity @s[scores={Dialog=300..319}] if score #mirrored Selected matches 0 positioned ^ ^ ^0.7 as @e[tag=this_model,tag=floating_whirlindas_female,tag=main,limit=1] rotated as @s run teleport @s ~ ~ ~ ~18 ~
 execute if entity @s[scores={Dialog=300..319}] if score #mirrored Selected matches 1 positioned ^ ^ ^-0.7 rotated as @s run teleport @s ~ ~ ~ ~-18 ~
 execute if entity @s[scores={Dialog=300..319}] if score #mirrored Selected matches 1 positioned ^ ^ ^0.7 as @e[tag=this_model,tag=floating_whirlindas_female,tag=main,limit=1] rotated as @s run teleport @s ~ ~ ~ ~-18 ~
-execute if entity @s[scores={Dialog=300}] run scoreboard players set @s AnimationProg 0
-execute if entity @s[scores={Dialog=300}] run scoreboard players set @e[tag=this_model,tag=floating_whirlindas_female,tag=main,limit=1] AnimationProg 0
+execute if entity @s[scores={Dialog=300}] run scoreboard players set @s AnimationProgress 0
+execute if entity @s[scores={Dialog=300}] run scoreboard players set @e[tag=this_model,tag=floating_whirlindas_female,tag=main,limit=1] AnimationProgress 0
 execute if entity @s[scores={Dialog=400},tag=bow] run playsound luigis_mansion:entity.floating_whirlindas.male.bow hostile @a[tag=same_room] ~ ~ ~ 1
 execute if entity @s[scores={Dialog=400},tag=!bow] run playsound luigis_mansion:entity.floating_whirlindas.male.dance hostile @a[tag=same_room] ~ ~ ~ 1
 execute if entity @s[scores={Dialog=400},tag=!bow] at @e[tag=this_model,tag=floating_whirlindas_female,tag=main,limit=1] run playsound luigis_mansion:entity.floating_whirlindas.female.dance hostile @a[tag=same_room] ~ ~ ~ 1

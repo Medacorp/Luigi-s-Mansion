@@ -7,5 +7,5 @@ execute if score #mirrored Selected matches 0 at @s run teleport @s ~ ~-0.1 ~ ~-
 execute if score #mirrored Selected matches 1 at @s run teleport @s ~ ~-0.1 ~ ~10 ~
 data merge entity @s[scores={ActionTime=40}] {Pose:{RightArm:[-90.0f,0.0f,0.0f],LeftArm:[-90.0f,0.0f,0.0f]}}
 tag @s[scores={ActionTime=40}] remove appear
-scoreboard players set @s[scores={ActionTime=40}] AnimationProg 0
+scoreboard players set @s[scores={ActionTime=40}] AnimationProgress 0
 scoreboard players set @s[scores={ActionTime=40}] ActionTime 0

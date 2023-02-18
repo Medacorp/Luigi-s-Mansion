@@ -20,14 +20,33 @@ data remove storage luigis_mansion:data ghost_nr
 data remove storage luigis_mansion:data passive_nr
 data remove storage luigis_mansion:data elemental_source_nr
 data remove storage luigis_mansion:data reflection_nr
-scoreboard objectives remove Attack
-scoreboard objectives remove ForcedDamage
-scoreboard objectives remove InteractionType
-scoreboard objectives remove Keys
-scoreboard objectives remove PunchingBag
-scoreboard objectives remove Wool
-scoreboard objectives remove YellTime
 scoreboard objectives add ClearInventory dummy
 scoreboard players set * ClearInventory 1
+scoreboard objectives remove AnimationProg
+scoreboard objectives remove Attack
+scoreboard objectives remove EGaddGallChoice
+scoreboard objectives remove EGaddGPRChoice
+scoreboard objectives remove EGaddLabChoice
+scoreboard objectives remove EGaddTrainChoice
+scoreboard objectives remove EntitySizeW
+scoreboard objectives remove EntitySizeH
+scoreboard objectives remove ForcedDamage
+scoreboard objectives remove GhostCaught
+scoreboard objectives remove HomeRot
+scoreboard objectives remove HomeRotX
+scoreboard objectives remove HomeRotY
+scoreboard objectives remove InteractionType
+scoreboard objectives remove Keys
+scoreboard objectives remove PrevHealth
+scoreboard objectives remove PrevMusicType
+scoreboard objectives remove PrevRoom
+scoreboard objectives remove PrevTotalDamage
+scoreboard objectives remove PunchingBag
+scoreboard objectives remove RotationDif
+scoreboard objectives remove RotX
+scoreboard objectives remove RotY
+scoreboard objectives remove TrainingOption
+scoreboard objectives remove Wool
+scoreboard objectives remove YellTime
 scoreboard players operation #heart_money_count Selected = #heart_coin_count Selected
 scoreboard players reset #heart_coin_count Selected

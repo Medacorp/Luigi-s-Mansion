@@ -2,10 +2,10 @@ scoreboard players add @s[scores={ActionTime=31..}] ActionTime 1
 scoreboard players add @s[scores={ActionTime=1..29}] ActionTime 1
 execute unless entity @s[scores={ActionTime=1..}] run scoreboard players set @s ActionTime 1
 scoreboard players reset #temp Time
-scoreboard players set @s[scores={ActionTime=1}] AnimationProg 0
+scoreboard players set @s[scores={ActionTime=1}] AnimationProgress 0
 execute if entity @s[scores={ActionTime=1}] run playsound luigis_mansion:entity.bowser.vacuum_start hostile @a[tag=same_room] ~ ~ ~ 3
 data modify entity @s[scores={ActionTime=15}] ArmorItems[3].tag.CustomModelData set value 91
-scoreboard players set @s[scores={ActionTime=20}] AnimationProg 0
+scoreboard players set @s[scores={ActionTime=20}] AnimationProgress 0
 teleport @s[scores={ActionTime=1..20}] ^ ^-0.15 ^0.1
 tag @s[scores={ActionTime=20}] add can_decapitate
 execute if entity @s[scores={ActionTime=21..30,Sound=0}] run playsound luigis_mansion:entity.bowser.vacuum hostile @a[tag=same_room] ~ ~ ~ 3
@@ -18,7 +18,7 @@ execute if entity @s[scores={ActionTime=30..89}] run scoreboard players set @a[t
 execute if entity @s[scores={ActionTime=30..89}] run scoreboard players set @a[tag=vacuumed,limit=1] Invulnerable 1
 execute if entity @a[tag=got_sucked,distance=..4] run scoreboard players set @s[scores={ActionTime=21..30}] ActionTime 31
 execute if entity @s[scores={ActionTime=30}] unless entity @a[tag=got_sucked] run scoreboard players set @s ActionTime 120
-scoreboard players set @s[scores={ActionTime=31}] AnimationProg 0
+scoreboard players set @s[scores={ActionTime=31}] AnimationProgress 0
 execute if entity @s[scores={ActionTime=32..89}] at @e[tag=this_model,tag=right_leg] run teleport @a[tag=vacuumed,limit=1] ~ 0 ~
 execute if entity @s[scores={ActionTime=32..89}] at @e[tag=this_model,tag=right_leg] run teleport @a[tag=vacuumed,limit=1] ^0.63 ^2.45 ^0.2
 data modify entity @s[scores={ActionTime=32}] ArmorItems[3].tag.CustomModelData set value 88
@@ -37,15 +37,15 @@ execute if entity @s[scores={ActionTime=90}] as @a[tag=vacuumed,limit=1] run fun
 execute if entity @s[scores={ActionTime=90}] run tag @a[tag=vacuumed] remove vacuumed
 data modify entity @s[scores={ActionTime=94}] ArmorItems[3].tag.CustomModelData set value 88
 tag @s[scores={ActionTime=110}] remove vacuum
-scoreboard players set @s[scores={ActionTime=110}] AnimationProg 0
+scoreboard players set @s[scores={ActionTime=110}] AnimationProgress 0
 scoreboard players reset @s[scores={ActionTime=110}] ActionTime
 
 tag @s[scores={ActionTime=121}] remove can_decapitate
-scoreboard players set @s[scores={ActionTime=121}] AnimationProg 0
+scoreboard players set @s[scores={ActionTime=121}] AnimationProgress 0
 data modify entity @s[scores={ActionTime=125}] ArmorItems[3].tag.CustomModelData set value 88
 teleport @s[scores={ActionTime=121..140}] ^ ^0.15 ^-0.1
 tag @s[scores={ActionTime=140}] remove vacuum
-scoreboard players set @s[scores={ActionTime=140}] AnimationProg 0
+scoreboard players set @s[scores={ActionTime=140}] AnimationProgress 0
 scoreboard players reset @s[scores={ActionTime=140}] ActionTime
 tag @a[tag=got_sucked] remove got_sucked
 tag @a[tag=pulled] remove pulled

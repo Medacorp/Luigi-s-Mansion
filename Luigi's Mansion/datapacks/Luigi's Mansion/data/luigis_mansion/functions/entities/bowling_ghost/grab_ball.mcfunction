@@ -1,5 +1,5 @@
 scoreboard players add @s ActionTime 1
-scoreboard players set @s[scores={ActionTime=1}] AnimationProg 0
+scoreboard players set @s[scores={ActionTime=1}] AnimationProgress 0
 execute at @s run function luigis_mansion:animations/bowling_ghost/grab_ball
 
 execute if entity @s[scores={ActionTime=10}] run playsound luigis_mansion:entity.bowling_ghost.grab_ball hostile @a[tag=same_room] ~ ~ ~ 1
@@ -9,6 +9,6 @@ execute if entity @s[scores={ActionTime=10}] positioned ^ ^0.2 ^ as @e[distance=
 execute if entity @s[scores={ActionTime=11..20}] if score #mirrored Selected matches 0 run function luigis_mansion:entities/bowling_ghost/ball_position/normal
 execute if entity @s[scores={ActionTime=11..20}] if score #mirrored Selected matches 1 run function luigis_mansion:entities/bowling_ghost/ball_position/mirrored
 tag @s[scores={ActionTime=20}] add grabbed_ball
-scoreboard players set @s[scores={ActionTime=20..}] AnimationProg 0
+scoreboard players set @s[scores={ActionTime=20..}] AnimationProgress 0
 scoreboard players set @s[scores={ActionTime=20..}] Sound 2
 scoreboard players set @s[scores={ActionTime=20..}] ActionTime 0

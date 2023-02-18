@@ -6,7 +6,7 @@ data modify entity @e[tag=this_entity,limit=1] ArmorItems[3].tag.loot set from s
 data modify entity @e[tag=this_entity,limit=1] ArmorItems[3].tag.damage set from storage luigis_mansion:data current_state.current_data.ghosts.fire_elemental_ghost.damage
 scoreboard players set @e[tag=this_entity,limit=1] EntitySizeRadius 2
 scoreboard players set @e[tag=this_entity,limit=1] EntityYOffset 7
-execute if data storage luigis_mansion:data entity.training_room_score as @e[tag=this_entity,limit=1] store result score @s GhostCaught run data get storage luigis_mansion:data entity.training_room_score
+execute if data storage luigis_mansion:data entity.training_room_score as @e[tag=this_entity,limit=1] store result score @s TrainingRoomScore run data get storage luigis_mansion:data entity.training_room_score
 execute if data storage luigis_mansion:data entity.loot run data modify entity @e[tag=this_entity,limit=1] ArmorItems[3].tag.loot set from storage luigis_mansion:data entity.loot
 execute if data storage luigis_mansion:data entity.damage run data modify entity @e[tag=this_entity,limit=1] ArmorItems[3].tag.damage set from storage luigis_mansion:data entity.damage
 tag @e[tag=this_entity,limit=1] remove this_entity

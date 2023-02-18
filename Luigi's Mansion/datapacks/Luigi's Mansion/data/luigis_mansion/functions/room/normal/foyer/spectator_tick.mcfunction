@@ -1,6 +1,6 @@
 execute unless entity @s[scores={Room=1}] run title @s title {"translate":"luigis_mansion:location.foyer"}
 scoreboard players set @s Room 1
-scoreboard players set @s PrevRoom 1
+scoreboard players set @s PreviousRoom 1
 
 execute in minecraft:overworld run teleport @s[scores={HomeX=755}] 790 77 15 45 0
 teleport @s[scores={HomeX=743,HomeY=10..15}] ~-25 ~ ~-14

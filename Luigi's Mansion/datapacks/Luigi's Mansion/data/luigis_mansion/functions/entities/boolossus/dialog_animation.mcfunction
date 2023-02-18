@@ -1,10 +1,10 @@
 execute unless entity @s[scores={ActionTime=82..}] run scoreboard players add @s ActionTime 1
 scoreboard players add @s[scores={ActionTime=83..}] ActionTime 1
-execute if entity @s[scores={ActionTime=1}] store result score @s HomeRot run data get entity @s Rotation[0]
+execute if entity @s[scores={ActionTime=1}] store result score @s HomeRotation run data get entity @s Rotation[0]
 execute if entity @s[scores={ActionTime=1}] run playsound luigis_mansion:entity.boo.laugh_2 hostile @a[tag=same_room] ~ ~ ~ 1
 execute if entity @s[scores={ActionTime=1..80}] facing entity @a[tag=target,limit=1] feet run teleport @s ~ ~ ~ ~ ~
 
-execute if entity @s[scores={ActionTime=81}] store result entity @s Rotation[0] float 1 run scoreboard players get @s HomeRot
+execute if entity @s[scores={ActionTime=81}] store result entity @s Rotation[0] float 1 run scoreboard players get @s HomeRotation
 execute if entity @s[scores={ActionTime=81..100}] positioned as @a[tag=target,limit=1] rotated as @s run teleport @s ^ ^ ^-2.5 ~ ~
 execute if entity @s[scores={ActionTime=101..}] at @s facing entity @a[tag=target,limit=1] feet rotated ~80 0 run teleport @s ~ ~ ~ ~ ~
 execute if entity @s[scores={ActionTime=101..108}] facing entity @a[tag=target,limit=1] feet positioned as @a[tag=target,limit=1] rotated ~-2 ~ run teleport @s ^ ^ ^-2.5

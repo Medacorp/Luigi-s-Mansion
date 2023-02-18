@@ -2,7 +2,7 @@ execute as @e[distance=..0.7,tag=game_boy_horror_location] run function luigis_m
 advancement grant @a[tag=!spectator,scores={Invulnerable=0},distance=..0.7] only luigis_mansion:challenges/waluigi_pinball ghost_guy
 execute if entity @a[tag=!spectator,scores={Invulnerable=0},distance=..0.7] if entity @s[tag=!stop_dancing] run function luigis_mansion:entities/ghost_guy/stop_dancing
 execute if entity @a[tag=!spectator,scores={Invulnerable=0},distance=..0.7] run scoreboard players set @s[tag=!appear] ActionTime 0
-execute if entity @a[tag=!spectator,scores={Invulnerable=0},distance=..0.7] run scoreboard players set @s AnimationProg 0
+execute if entity @a[tag=!spectator,scores={Invulnerable=0},distance=..0.7] run scoreboard players set @s AnimationProgress 0
 execute if entity @a[tag=!spectator,scores={Invulnerable=0},distance=..0.7] run data merge entity @s {Pose:{RightArm:[-90.0f,90.0f,0.0f],LeftArm:[-90.0f,-90.0f,0.0f],Head:[0.0f,0.0f,0.0f]}}
 execute if entity @a[tag=!spectator,scores={Invulnerable=0},distance=..0.7] run teleport @s[tag=dodge] ~ ~1.1 ~
 execute if entity @a[tag=!spectator,scores={Invulnerable=0},distance=..0.7] run tag @s remove dodge

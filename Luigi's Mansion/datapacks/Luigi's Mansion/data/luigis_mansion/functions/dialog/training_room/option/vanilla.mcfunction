@@ -1,3 +1,3 @@
 tellraw @s {"translate":"chat.type.text","with":[{"translate":"luigis_mansion:entity.e_gadd","color":"green"},{"translate":"luigis_mansion:message.training_type"}]}
 playsound luigis_mansion:entity.e_gadd.talk.oui_oydohroh_tahmentahkeh2 neutral @s ~ ~ ~ 1
-tellraw @s {"translate":"luigis_mansion:message.training_type.vanilla","color":"green","clickEvent":{"action":"run_command","value":"/trigger TrainingOption set 0"}}
+tellraw @s {"translate":"luigis_mansion:message.training_type.vanilla","color":"green","clickEvent":{"action":"run_command","value":"/trigger TrainingRoomOption set 0"}}

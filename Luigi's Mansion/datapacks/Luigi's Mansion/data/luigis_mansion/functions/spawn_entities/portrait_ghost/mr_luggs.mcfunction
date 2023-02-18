@@ -12,8 +12,8 @@ scoreboard players operation @e[tag=food,tag=this_entity,limit=1] GhostNr = @e[t
 execute as @e[tag=mr_luggs,tag=this_entity,limit=1] store result score @s HomeX run data get entity @s Pos[0] 100
 execute as @e[tag=mr_luggs,tag=this_entity,limit=1] store result score @s HomeY run data get entity @s Pos[1] 100
 execute as @e[tag=mr_luggs,tag=this_entity,limit=1] store result score @s HomeZ run data get entity @s Pos[2] 100
-execute as @e[tag=mr_luggs,tag=this_entity,limit=1] store result score @s HomeRot run data get entity @s Rotation[0]
-execute as @e[tag=mr_luggs,tag=this_entity,limit=1] store result score @s PrevHealth store result score @s LastHealth store result score @s Health run data get storage luigis_mansion:data current_state.current_data.portrait_ghosts.mr_luggs.health
+execute as @e[tag=mr_luggs,tag=this_entity,limit=1] store result score @s HomeRotation run data get entity @s Rotation[0]
+execute as @e[tag=mr_luggs,tag=this_entity,limit=1] store result score @s PreviousHealth store result score @s LastHealth store result score @s Health run data get storage luigis_mansion:data current_state.current_data.portrait_ghosts.mr_luggs.health
 execute as @e[tag=mr_luggs,tag=this_entity,limit=1] store result score @s MaxHealth run data get storage luigis_mansion:data current_state.current_data.portrait_ghosts.mr_luggs.max_health
 execute as @e[tag=mr_luggs,tag=this_entity,limit=1] store result score @s TopVacuumDamage run data get storage luigis_mansion:data current_state.current_data.portrait_ghosts.mr_luggs.top_vacuum_damage
 execute as @e[tag=mr_luggs,tag=this_entity,limit=1] store result score @s Move run data get storage luigis_mansion:data current_state.current_data.portrait_ghosts.mr_luggs.speed
@@ -27,14 +27,14 @@ scoreboard players set @e[tag=mr_luggs,tag=this_entity,limit=1] StunTime 0
 scoreboard players set @e[tag=mr_luggs,tag=this_entity,limit=1] VulnerableTime 0
 scoreboard players set @e[tag=mr_luggs,tag=this_entity,limit=1] SecondFleeDamage -1
 scoreboard players set @e[tag=mr_luggs,tag=this_entity,limit=1] HeartOffset -2
-scoreboard players set @e[tag=mr_luggs,tag=this_entity,limit=1] EntitySizeW 10
-scoreboard players set @e[tag=mr_luggs,tag=this_entity,limit=1] EntitySizeH 25
+scoreboard players set @e[tag=mr_luggs,tag=this_entity,limit=1] EntitySizeWidth 10
+scoreboard players set @e[tag=mr_luggs,tag=this_entity,limit=1] EntitySizeHeight 25
 scoreboard players set @e[tag=mr_luggs,tag=this_entity,limit=1] EntityYOffset 10
 data modify entity @e[tag=mr_luggs,tag=this_entity,limit=1] ArmorItems[3].tag.scan_message set from storage luigis_mansion:data entity.scan_message
 execute if data storage luigis_mansion:data entity{can_talk_to:1b} run tag @e[tag=mr_luggs,tag=this_entity,limit=1] add can_talk_to
 execute if data storage luigis_mansion:data entity{drops_pearls:0b} run tag @e[tag=mr_luggs,tag=this_entity,limit=1] remove pearl_dropper
 execute if data storage luigis_mansion:data entity{drops_poison_mushrooms:0b} run tag @e[tag=mr_luggs,tag=this_entity,limit=1] add no_poison_mushroom_dropping
-execute if data storage luigis_mansion:data entity.health as @e[tag=mr_luggs,tag=this_entity,limit=1] store result score @s Health store result score @s LastHealth store result score @s PrevHealth run data get storage luigis_mansion:data entity.health
+execute if data storage luigis_mansion:data entity.health as @e[tag=mr_luggs,tag=this_entity,limit=1] store result score @s Health store result score @s LastHealth store result score @s PreviousHealth run data get storage luigis_mansion:data entity.health
 execute if data storage luigis_mansion:data entity.max_health as @e[tag=mr_luggs,tag=this_entity,limit=1] store result score @s MaxHealth run data get storage luigis_mansion:data entity.max_health
 execute if data storage luigis_mansion:data entity.top_vacuum_damage as @e[tag=mr_luggs,tag=this_entity,limit=1] store result score @s TopVacuumDamage run data get storage luigis_mansion:data entity.top_vacuum_damage
 execute if data storage luigis_mansion:data entity.speed as @e[tag=mr_luggs,tag=this_entity,limit=1] store result score @s Move run data get storage luigis_mansion:data entity.speed

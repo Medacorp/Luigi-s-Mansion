@@ -13,7 +13,7 @@ execute if entity @s[scores={Dialog=122}] if entity @a[scores={Toad3Choice=1}] a
 execute if entity @s[scores={Dialog=122}] if entity @a[scores={Toad3Choice=1..}] as @a[scores={Toad3Choice=0}] run trigger Toad3Choice set 0
 execute if entity @s[scores={Dialog=122}] if entity @a[scores={Toad3Choice=1}] run tag @s add happy
 execute if entity @s[scores={Dialog=122}] if entity @a[scores={Toad3Choice=1}] run tag @s add turning_on_lights
-execute if entity @s[scores={Dialog=122}] if entity @a[scores={Toad3Choice=1}] run scoreboard players set @s AnimationProg 0
+execute if entity @s[scores={Dialog=122}] if entity @a[scores={Toad3Choice=1}] run scoreboard players set @s AnimationProgress 0
 execute if entity @s[scores={Dialog=122}] if entity @a[scores={Toad3Choice=1}] run playsound luigis_mansion:entity.toad.wow neutral @a[tag=same_room] ~ ~ ~ 1
 execute if entity @s[scores={Dialog=142}] if entity @a[scores={Toad3Choice=1}] if score #players Totals matches 1 run tellraw @a[tag=same_room] {"translate":"chat.type.text","with":[{"translate":"luigis_mansion:entity.toad","color":"green"},{"translate":"luigis_mansion:dialog.toad_3.yes.1","with":[{"selector":"@p[gamemode=!spectator]"}]}]}
 execute if entity @s[scores={Dialog=142}] if entity @a[scores={Toad3Choice=1}] if score #players Totals matches 2.. run tellraw @a[tag=same_room] {"translate":"chat.type.text","with":[{"translate":"luigis_mansion:entity.toad","color":"green"},{"translate":"luigis_mansion:dialog.toad_3.yes.1.more"}]}
@@ -31,8 +31,8 @@ execute unless entity @e[tag=same_room,tag=!spectator,distance=..7,limit=1] run 
 tag @s[tag=!talk] remove turning_on_lights
 execute if entity @s[tag=!talk] as @a[tag=same_room] run function luigis_mansion:other/music/set/silence
 execute if entity @s[tag=!talk] run scoreboard players reset @a[scores={Toad3Choice=0..}] Toad3Choice
-scoreboard players set @s[tag=!talk,tag=explaining] AnimationProg 0
-execute if entity @s[tag=!talk,scores={Dialog=..421},tag=happy] run scoreboard players set @s AnimationProg 0
+scoreboard players set @s[tag=!talk,tag=explaining] AnimationProgress 0
+execute if entity @s[tag=!talk,scores={Dialog=..421},tag=happy] run scoreboard players set @s AnimationProgress 0
 tag @s[tag=!talk] remove explaining
 tag @s[tag=!talk,scores={Dialog=..421}] remove happy
 scoreboard players set @s[tag=!talk] Dialog 0

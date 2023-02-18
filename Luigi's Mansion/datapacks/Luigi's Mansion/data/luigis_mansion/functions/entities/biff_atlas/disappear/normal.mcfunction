@@ -1,10 +1,10 @@
 execute store result entity @s Pos[0] double 0.01 run scoreboard players get @s HomeX
 execute store result entity @s Pos[1] double 0.01 run scoreboard players get @s HomeY
 execute store result entity @s Pos[2] double 0.01 run scoreboard players get @s HomeZ
-execute store result entity @s Rotation[0] float 1 run scoreboard players get @s HomeRot
+execute store result entity @s Rotation[0] float 1 run scoreboard players get @s HomeRotation
 scoreboard players set @s Time 0
 scoreboard players set @s Dialog 0
-scoreboard players set @s[tag=!vanish] AnimationProg 0
+scoreboard players set @s[tag=!vanish] AnimationProgress 0
 scoreboard players set @s[tag=!vanish] ActionTime 0
 tag @s remove lift_fail
 tag @s remove lift_succeed

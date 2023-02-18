@@ -1,6 +1,6 @@
 {
 	"credit": "Made with Blockbench",
-	"parent": "luigis_mansion:entity/rocking_horse/normal",
+	"parent": "luigis_mansion:furniture/rocking_horse",
 	"display": {
 		"head": {
 			"translation": [0, 0.75, 0],

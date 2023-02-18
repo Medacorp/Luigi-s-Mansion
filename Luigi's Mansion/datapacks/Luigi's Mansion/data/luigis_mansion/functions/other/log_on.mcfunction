@@ -10,7 +10,7 @@ scoreboard players set @s GradualMusic 0
 scoreboard players set @s HealthMusic 0
 scoreboard players set @s LastHealthMusic 1
 scoreboard players set @s Offline 0
-scoreboard players set @s PrevMusicType 0
+scoreboard players set @s PreviousMusicType 0
 scoreboard players set @s RoomNoise 0
 scoreboard players set @s LoadedChunks 0
 scoreboard players set @s CreditsTime 0

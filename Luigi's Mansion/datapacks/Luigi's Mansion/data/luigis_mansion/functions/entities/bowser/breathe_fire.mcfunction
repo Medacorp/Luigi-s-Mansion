@@ -1,5 +1,5 @@
 scoreboard players add @s ActionTime 1
-scoreboard players set @s[scores={ActionTime=1}] AnimationProg 0
+scoreboard players set @s[scores={ActionTime=1}] AnimationProgress 0
 execute if entity @s[scores={ActionTime=1}] run playsound luigis_mansion:entity.bowser.breathe_fire hostile @a[tag=same_room] ~ ~ ~ 3
 teleport @s[scores={ActionTime=1..20}] ^ ^-0.15 ^0.1
 data modify entity @s[scores={ActionTime=15}] ArmorItems[3].tag.CustomModelData set value 91
@@ -42,7 +42,7 @@ data modify entity @s[scores={ActionTime=125}] ArmorItems[3].tag.CustomModelData
 tag @s[scores={ActionTime=120}] remove can_decapitate
 teleport @s[scores={ActionTime=121..140}] ^ ^0.15 ^-0.1
 tag @s[scores={ActionTime=140}] remove breathe_fire
-scoreboard players set @s[scores={ActionTime=140}] AnimationProg 0
+scoreboard players set @s[scores={ActionTime=140}] AnimationProgress 0
 scoreboard players reset @s[scores={ActionTime=140}] ActionTime
 
 function luigis_mansion:animations/bowser/breathe_fire

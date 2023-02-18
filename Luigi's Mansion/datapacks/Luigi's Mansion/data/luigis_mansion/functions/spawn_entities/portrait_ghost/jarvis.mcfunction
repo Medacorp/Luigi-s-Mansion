@@ -5,8 +5,8 @@ execute as @e[tag=this_entity,limit=1] store result storage luigis_mansion:data 
 execute as @e[tag=this_entity,limit=1] store result score @s HomeX run data get entity @s Pos[0] 100
 execute as @e[tag=this_entity,limit=1] store result score @s HomeY run data get entity @s Pos[1] 100
 execute as @e[tag=this_entity,limit=1] store result score @s HomeZ run data get entity @s Pos[2] 100
-execute as @e[tag=this_entity,limit=1] store result score @s HomeRot run data get entity @s Rotation[0]
-execute as @e[tag=this_entity,limit=1] store result score @s PrevHealth store result score @s LastHealth store result score @s Health run data get storage luigis_mansion:data current_state.current_data.portrait_ghosts.jarvis.health
+execute as @e[tag=this_entity,limit=1] store result score @s HomeRotation run data get entity @s Rotation[0]
+execute as @e[tag=this_entity,limit=1] store result score @s PreviousHealth store result score @s LastHealth store result score @s Health run data get storage luigis_mansion:data current_state.current_data.portrait_ghosts.jarvis.health
 execute as @e[tag=this_entity,limit=1] store result score @s MaxHealth run data get storage luigis_mansion:data current_state.current_data.portrait_ghosts.jarvis.max_health
 execute as @e[tag=this_entity,limit=1] store result score @s TopVacuumDamage run data get storage luigis_mansion:data current_state.current_data.portrait_ghosts.jarvis.top_vacuum_damage
 execute as @e[tag=this_entity,limit=1] store result score @s Move run data get storage luigis_mansion:data current_state.current_data.portrait_ghosts.jarvis.speed
@@ -26,7 +26,7 @@ data modify entity @e[tag=this_entity,limit=1] ArmorItems[3].tag.scan_message se
 execute if data storage luigis_mansion:data entity{can_talk_to:1b} run tag @e[tag=this_entity,limit=1] add can_talk_to
 execute if data storage luigis_mansion:data entity{drops_pearls:0b} run tag @e[tag=this_entity,limit=1] remove pearl_dropper
 execute if data storage luigis_mansion:data entity{drops_poison_mushrooms:0b} run tag @e[tag=this_entity,limit=1] add no_poison_mushroom_dropping
-execute if data storage luigis_mansion:data entity.health as @e[tag=this_entity,limit=1] store result score @s Health store result score @s LastHealth store result score @s PrevHealth run data get storage luigis_mansion:data entity.health
+execute if data storage luigis_mansion:data entity.health as @e[tag=this_entity,limit=1] store result score @s Health store result score @s LastHealth store result score @s PreviousHealth run data get storage luigis_mansion:data entity.health
 execute if data storage luigis_mansion:data entity.max_health as @e[tag=this_entity,limit=1] store result score @s MaxHealth run data get storage luigis_mansion:data entity.max_health
 execute if data storage luigis_mansion:data entity.top_vacuum_damage as @e[tag=this_entity,limit=1] store result score @s TopVacuumDamage run data get storage luigis_mansion:data entity.top_vacuum_damage
 execute if data storage luigis_mansion:data entity.speed as @e[tag=this_entity,limit=1] store result score @s Move run data get storage luigis_mansion:data entity.speed

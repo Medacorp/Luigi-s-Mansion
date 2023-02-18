@@ -30,7 +30,7 @@ execute if entity @s[scores={Dialog=1588}] run tellraw @a[tag=same_room] {"trans
 execute if entity @s[scores={Dialog=1588..1598}] run teleport @s ~0.1 ~ ~
 execute if entity @s[scores={Dialog=1598}] run teleport @s 640 93 -18
 tag @s[scores={Dialog=1612}] add magic
-scoreboard players set @s[scores={Dialog=1612}] AnimationProg 0
+scoreboard players set @s[scores={Dialog=1612}] AnimationProgress 0
 execute if entity @s[scores={Dialog=1612}] run function #luigis_mansion:room/normal/secret_altar/turn_lights/off
 execute if entity @s[scores={Dialog=1612}] run playsound luigis_mansion:entity.king_boo.magic hostile @a[tag=same_room] ~ ~ ~ 1
 execute if entity @s[scores={Dialog=1612}] run stopsound @a[tag=same_room] music
@@ -49,7 +49,7 @@ execute if entity @s[scores={Dialog=1742..1761}] run effect give @a[tag=same_roo
 execute if entity @s[scores={Dialog=1762..1781}] run effect give @a[tag=same_room] minecraft:nausea 2 0 true
 execute if entity @s[scores={Dialog=1782..1801}] run effect give @a[tag=same_room] minecraft:nausea 1 0 true
 tag @s[scores={Dialog=1772}] remove magic
-scoreboard players set @s[scores={Dialog=1771}] AnimationProg 0
+scoreboard players set @s[scores={Dialog=1771}] AnimationProgress 0
 execute if entity @s[scores={Dialog=1801..1822}] facing 633 94 -18 run teleport @s ^ ^ ^0.3 ~ ~
 execute if entity @s[scores={Dialog=1822}] run tag @e[tag=bowser,scores={Room=72}] add animate
 execute if entity @s[scores={Dialog=1911}] as @a[tag=same_room,tag=!spectator,tag=!looking_at_map] run function luigis_mansion:entities/player/animation/set/none

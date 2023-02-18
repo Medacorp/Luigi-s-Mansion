@@ -9,10 +9,7 @@ execute as @a[gamemode=!spectator,scores={Room=21}] run function luigis_mansion_
 
 function #luigis_mansion_3ds_remake:room/hidden/mirror_room/interactions/room
 
-clone 736 13 -61 736 13 -61 734 13 -61
-clone 736 13 -44 736 13 -44 734 13 -44
-
-execute if block 736 13 -61 minecraft:brewing_stand[has_bottle_0=true,has_bottle_1=true,has_bottle_2=true] if block 736 13 -44 minecraft:brewing_stand[has_bottle_0=true,has_bottle_1=true,has_bottle_2=true] run tag @e[scores={Room=21},tag=door,tag=frame] remove blockade
+execute unless entity @e[tag=light_me,tag=!lit,scores={Room=21},limit=1] run tag @e[scores={Room=21},tag=door,tag=frame] remove blockade
 
 scoreboard players set #temp Room 21
 execute as @a[gamemode=!spectator,tag=!pull_open_door,tag=!push_open_door] run function #luigis_mansion:get_same_room

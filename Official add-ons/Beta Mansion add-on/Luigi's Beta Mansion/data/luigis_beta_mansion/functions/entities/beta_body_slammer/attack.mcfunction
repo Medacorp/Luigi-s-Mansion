@@ -1,5 +1,5 @@
 scoreboard players add @s ActionTime 1
-scoreboard players set @s[scores={ActionTime=1}] AnimationProg 0
+scoreboard players set @s[scores={ActionTime=1}] AnimationProgress 0
 execute at @s run function luigis_mansion:animations/twirler/attack
 
 execute if entity @s[scores={ActionTime=1}] run playsound luigis_beta_mansion:entity.body_slammer.attack hostile @a[tag=same_room] ~ ~ ~ 1
@@ -18,5 +18,5 @@ execute at @s[scores={ActionTime=41}] run data remove storage luigis_mansion:dat
 tag @s[scores={ActionTime=41},tag=!laugh] add complain
 tag @s[scores={ActionTime=60}] remove attack
 teleport @s[scores={ActionTime=60}] ~ ~1 ~
-scoreboard players set @s[scores={ActionTime=60}] AnimationProg 0
+scoreboard players set @s[scores={ActionTime=60}] AnimationProgress 0
 scoreboard players set @s[scores={ActionTime=60}] ActionTime 0

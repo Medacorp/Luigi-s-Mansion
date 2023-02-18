@@ -17,8 +17,8 @@ data modify entity @s[tag=visible] HandItems[1].id set value "minecraft:diamond_
 
 tag @s remove shy
 execute if entity @s[tag=visible] at @e[tag=same_room,tag=!spectator,tag=player] positioned ^ ^ ^5 run tag @s[distance=..5] add shy
-scoreboard players set @s[tag=shy,tag=!was_shy] AnimationProg 0
-scoreboard players set @s[tag=!shy,tag=was_shy] AnimationProg 0
+scoreboard players set @s[tag=shy,tag=!was_shy] AnimationProgress 0
+scoreboard players set @s[tag=!shy,tag=was_shy] AnimationProgress 0
 execute at @s[tag=!fleeing,tag=!shy,tag=visible] run function luigis_mansion:animations/boo/idle
 execute at @s[tag=!fleeing,tag=shy,tag=visible] run function luigis_beta_mansion:animations/boo/shy
 execute at @s[tag=fleeing,tag=visible] run function luigis_mansion:animations/boo/flee

@@ -6,7 +6,7 @@ execute at @s[scores={WarpTime=50..130}] run particle minecraft:dust 0.5 0.5 1 1
 execute if score #mirrored Selected matches 0 at @s[scores={WarpTime=70..129}] run teleport @s ~ ~ ~ ~54 ~
 execute if score #mirrored Selected matches 1 at @s[scores={WarpTime=70..129}] run teleport @s ~ ~ ~ ~-54 ~
 execute if entity @s[scores={WarpTime=95}] run scoreboard players operation @s LastRoom = @s Room
-execute if entity @s[scores={WarpTime=96}] run scoreboard players operation @s PrevRoom = @s Room
+execute if entity @s[scores={WarpTime=96}] run scoreboard players operation @s PreviousRoom = @s Room
 execute if entity @s[scores={WarpTime=96}] if score @s Room = @s LastRoom run tag @s add was_in_room
 tag @s[scores={WarpTime=130},tag=!was_in_room] remove seen_room_name
 scoreboard players set @s[scores={Dialog=1..}] WarpTime 130

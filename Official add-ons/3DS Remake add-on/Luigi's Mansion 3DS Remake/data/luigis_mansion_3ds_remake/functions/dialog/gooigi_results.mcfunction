@@ -1,4 +1,4 @@
-execute if entity @a[scores={EGaddGPRChoice=1..},limit=1] run scoreboard players add @s[scores={Dialog=562..}] Dialog 1
+execute if entity @a[scores={EGaddGhostPortrificationizerRoomChoice=1..},limit=1] run scoreboard players add @s[scores={Dialog=562..}] Dialog 1
 scoreboard players add @s[scores={Dialog=1..561}] Dialog 1
 execute unless entity @s[scores={Dialog=1..}] run scoreboard players add @s Dialog 1
 scoreboard players set @a[tag=same_room] ForceScreen 1
@@ -36,12 +36,12 @@ execute if entity @s[scores={Dialog=560}] run function luigis_mansion:entities/m
 execute if entity @s[scores={Dialog=560}] run scoreboard players set #mansion_type Selected -1
 execute if entity @s[scores={Dialog=560}] run scoreboard players set #mansion_data_index Selected -1
 execute if entity @s[scores={Dialog=560}] run scoreboard players set #previous_mansion_index Selected -1
-execute if entity @s[scores={Dialog=561}] run tellraw @a[tag=same_room] {"translate":"luigis_mansion:message.save.yes","color":"green","clickEvent":{"action":"run_command","value":"/trigger EGaddGPRChoice set 1"},"extra":[{"text":"\n"},{"translate":"luigis_mansion:message.save.no","clickEvent":{"action":"run_command","value":"/trigger EGaddGPRChoice set 2"}}]}
-execute if entity @s[scores={Dialog=561}] run scoreboard players enable @a[tag=same_room] EGaddGPRChoice
+execute if entity @s[scores={Dialog=561}] run tellraw @a[tag=same_room] {"translate":"luigis_mansion:message.save.yes","color":"green","clickEvent":{"action":"run_command","value":"/trigger EGaddGhostPortrificationizerRoomChoice set 1"},"extra":[{"text":"\n"},{"translate":"luigis_mansion:message.save.no","clickEvent":{"action":"run_command","value":"/trigger EGaddGhostPortrificationizerRoomChoice set 2"}}]}
+execute if entity @s[scores={Dialog=561}] run scoreboard players enable @a[tag=same_room] EGaddGhostPortrificationizerRoomChoice
 execute if entity @s[scores={Dialog=561}] run tag @a add show_credits
 execute if entity @s[scores={Dialog=562}] unless entity @a[tag=same_room,limit=1] run scoreboard players set @s Dialog 563
-execute if entity @s[scores={Dialog=563}] as @a[scores={EGaddGPRChoice=1},limit=1] run function luigis_mansion:data/save
+execute if entity @s[scores={Dialog=563}] as @a[scores={EGaddGhostPortrificationizerRoomChoice=1},limit=1] run function luigis_mansion:data/save
 execute if entity @s[scores={Dialog=563}] as @a[tag=same_room,gamemode=!spectator,tag=!looking_at_map] run function luigis_mansion:entities/player/animation/set/none
 tag @s[scores={Dialog=563}] remove gooigi_results
-execute if entity @s[scores={Dialog=563}] run scoreboard players reset @a[tag=same_room] EGaddGPRChoice
+execute if entity @s[scores={Dialog=563}] run scoreboard players reset @a[tag=same_room] EGaddGhostPortrificationizerRoomChoice
 scoreboard players reset @s[scores={Dialog=563}] Dialog

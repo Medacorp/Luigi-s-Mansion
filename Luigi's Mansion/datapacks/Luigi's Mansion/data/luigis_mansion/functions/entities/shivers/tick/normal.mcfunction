@@ -8,7 +8,7 @@ scoreboard players set @s[x=682.5,y=11.6,z=2.5,distance=..0.7,scores={PathStep=2
 scoreboard players add @s[scores={PathStep=3..43}] PathStep 1
 data modify entity @s[tag=burning,scores={PathStep=1..2}] ArmorItems[3].tag.scan_message set value {sender:"me",message:'{"translate":"luigis_mansion:message.shivers.scan.2"}'}
 scoreboard players set @s[tag=burning,scores={PathStep=1..2}] PathStep 3
-scoreboard players set @s[scores={PathStep=3}] AnimationProg 0
+scoreboard players set @s[scores={PathStep=3}] AnimationProgress 0
 tag @s[scores={PathStep=3}] add look_around
 execute if entity @s[scores={PathStep=3}] unless data storage luigis_mansion:data current_state.current_data.technical_data{shivers_spoke:1b} run tellraw @a[tag=same_room] {"translate":"chat.type.text","with":[{"translate":"luigis_mansion:entity.shivers","color":"green"},{"translate":"luigis_mansion:message.shivers.fire"}]}
 execute if entity @s[scores={PathStep=3}] run data modify storage luigis_mansion:data current_state.current_data.technical_data merge value {shivers_spoke:1b}
@@ -42,7 +42,7 @@ teleport @s[scores={PathStep=52}] ~ ~ ~ facing 745 11.6 67
 execute if entity @s[scores={PathStep=53..},tag=!vanish] run scoreboard players add @s PathStep 1
 scoreboard players set @s[x=745.5,y=11.6,z=67.5,distance=..0.7,scores={PathStep=52}] PathStep 53
 execute at @s[scores={PathStep=..52},tag=!vanish] unless entity @s[scores={PathStep=3..43}] run function luigis_mansion:entities/shivers/move_forward
-scoreboard players set @s[scores={PathStep=53}] AnimationProg 0
+scoreboard players set @s[scores={PathStep=53}] AnimationProgress 0
 tag @s[scores={PathStep=53}] remove run
 tag @s[scores={PathStep=53}] add look_around
 tag @s[scores={PathStep=73}] remove look_around
@@ -52,7 +52,7 @@ tag @s[scores={PathStep=93}] remove sit_down
 execute if entity @s[scores={PathStep=73..93}] run scoreboard players set #temp Move 5
 execute at @s[scores={PathStep=73..93},tag=!vanish] facing 745 11.6 66 run function luigis_mansion:entities/shivers/move_forward
 tag @s[scores={PathStep=93}] add burn
-scoreboard players set @s[scores={PathStep=173}] AnimationProg 0
+scoreboard players set @s[scores={PathStep=173}] AnimationProgress 0
 tag @s[scores={PathStep=173}] remove burn
 tag @s[scores={PathStep=173}] add look_around
 tag @s[scores={PathStep=233}] remove look_around

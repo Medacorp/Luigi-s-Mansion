@@ -1,5 +1,5 @@
-scoreboard players set @s EntitySizeW 8
-scoreboard players set @s EntitySizeH 20
+scoreboard players set @s EntitySizeWidth 8
+scoreboard players set @s EntitySizeHeight 20
 execute store result score @s PosX run data get entity @s Pos[0] 10
 execute store result score @s PosY run data get entity @s Pos[1] 10
 execute store result score @s PosZ run data get entity @s Pos[2] 10

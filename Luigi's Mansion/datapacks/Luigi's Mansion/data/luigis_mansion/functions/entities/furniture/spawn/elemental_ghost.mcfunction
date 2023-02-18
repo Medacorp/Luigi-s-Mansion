@@ -1,6 +1,6 @@
 summon minecraft:marker ~ ~1.4 ~ {Tags:["location","remove_from_existence"]}
-scoreboard players operation #temp Time = @s FurnitureElemenU
-scoreboard players operation #temp2 Time = @s FurnitureElemenF
+scoreboard players operation #temp Time = @s FurnitureElementUp
+scoreboard players operation #temp2 Time = @s FurnitureElementForward
 execute as @e[tag=location,limit=1] positioned as @s run function luigis_mansion:entities/furniture/spawn/move
 scoreboard players reset #temp Time
 scoreboard players reset #temp2 Time

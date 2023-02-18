@@ -1,7 +1,7 @@
 scoreboard players add @s Dialog 1
 tag @s[scores={Dialog=1}] add nod
 execute if entity @s[scores={Dialog=1..419}] as @a[tag=same_room,gamemode=!spectator,scores={IdleTime=0..},tag=!looking_at_map] run function luigis_mansion:entities/player/animation/set/stand_still
-scoreboard players set @s[scores={Dialog=1}] AnimationProg 0
+scoreboard players set @s[scores={Dialog=1}] AnimationProgress 0
 execute if entity @s[scores={Dialog=1}] run tellraw @a[tag=same_room] {"translate":"chat.type.text","with":[{"translate":"luigis_mansion:entity.e_gadd","color":"green"},{"translate":"luigis_mansion_3ds_remake:dialog.gallery.repeat.after.1"}]}
 execute if entity @s[scores={Dialog=1}] run playsound luigis_mansion:entity.e_gadd.talk.suku_suku_ck_ck_yahboh_yahboh neutral @a[tag=same_room] ~ ~ ~ 1
 execute if entity @s[scores={Dialog=128}] as @a at @s run playsound luigis_mansion_3ds_remake:item.game_boy_horror.install_part neutral @s ~ ~ ~ 1
@@ -14,4 +14,4 @@ execute if entity @s[scores={Dialog=480}] as @a[tag=same_room,tag=!spectator,tag
 tag @s[scores={Dialog=480}] remove talk
 scoreboard players set @s[tag=!talk] Dialog 0
 tag @s[tag=!talk] remove nod
-scoreboard players set @s[tag=!talk] AnimationProg 0
+scoreboard players set @s[tag=!talk] AnimationProgress 0

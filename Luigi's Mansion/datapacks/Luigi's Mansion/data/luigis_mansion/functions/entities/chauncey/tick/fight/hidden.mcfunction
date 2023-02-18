@@ -31,7 +31,7 @@ execute if entity @s[scores={Dialog=20},tag=!left,tag=intro_done] positioned ~-2
 execute if entity @s[scores={Dialog=20},tag=!left,tag=intro_done] positioned ~-2.5 ~1 ~11.5 run scoreboard players operation @e[distance=..0.7,limit=1,tag=rocking_horse] Owner = @s GhostNr
 execute if entity @s[scores={Dialog=21},tag=intro_done] facing entity @e[tag=same_room,tag=!spectator,tag=player,sort=nearest,limit=1] feet run teleport @s ~ ~ ~ ~ 0
 tag @s[scores={Dialog=21},tag=intro_done] add rambling
-scoreboard players set @s[scores={Dialog=22},tag=intro_done] AnimationProg 0
+scoreboard players set @s[scores={Dialog=22},tag=intro_done] AnimationProgress 0
 tag @s[scores={Dialog=22},tag=intro_done] remove rambling
 tag @s[scores={Dialog=22},tag=intro_done] add attack
 execute if entity @s[scores={Dialog=22},tag=intro_done] run tag @e[tag=rocking_horse,limit=1] add attack
@@ -44,7 +44,7 @@ execute if entity @s[scores={Dialog=80},tag=!left,tag=intro_done] positioned ~-2
 execute if entity @s[scores={Dialog=80},tag=!left,tag=intro_done] positioned ~-2.5 ~1 ~-11.5 run scoreboard players operation @e[distance=..0.7,limit=1,tag=rocking_horse] Owner = @s GhostNr
 execute if entity @s[scores={Dialog=81},tag=intro_done] facing entity @e[tag=same_room,tag=!spectator,tag=player,sort=nearest,limit=1] feet run teleport @s ~ ~ ~ ~ 0
 tag @s[scores={Dialog=81},tag=intro_done] add rambling
-scoreboard players set @s[scores={Dialog=82},tag=intro_done] AnimationProg 0
+scoreboard players set @s[scores={Dialog=82},tag=intro_done] AnimationProgress 0
 tag @s[scores={Dialog=82},tag=intro_done] remove rambling
 tag @s[scores={Dialog=82},tag=intro_done] add attack
 execute if entity @s[scores={Dialog=82},tag=intro_done] run tag @e[tag=rocking_horse,limit=1] add attack
@@ -56,7 +56,7 @@ execute if entity @s[scores={Dialog=140},tag=intro_done] positioned ~-2.5 ~1 ~11
 execute if entity @s[scores={Dialog=140},tag=intro_done] positioned ~-2.5 ~1 ~11.5 run scoreboard players operation @e[distance=..0.7,limit=1,tag=rocking_horse] Owner = @s GhostNr
 execute if entity @s[scores={Dialog=141..381},tag=intro_done] facing entity @e[tag=same_room,tag=!spectator,tag=player,sort=nearest,limit=1] feet run teleport @s ~ ~ ~ ~ 0
 tag @s[scores={Dialog=141},tag=intro_done] add rambling
-scoreboard players set @s[scores={Dialog=182},tag=intro_done] AnimationProg 0
+scoreboard players set @s[scores={Dialog=182},tag=intro_done] AnimationProgress 0
 tag @s[scores={Dialog=182},tag=intro_done] remove rambling
 tag @s[scores={Dialog=182},tag=intro_done] add attack
 execute if entity @s[scores={Dialog=182},tag=intro_done] run tag @e[tag=rocking_horse,limit=2] add attack
@@ -70,7 +70,7 @@ execute if entity @s[scores={Dialog=280},tag=!laugh,tag=intro_done] positioned ~
 execute if entity @s[scores={Dialog=280},tag=!laugh,tag=intro_done] positioned ~17 ~2.6 ~-6.5 run scoreboard players operation @e[distance=..0.7,limit=1,tag=ball] Owner = @s GhostNr
 execute if entity @s[scores={Dialog=300},tag=!laugh,tag=intro_done] positioned ~17 ~3 ~6.5 facing entity @e[tag=same_room,tag=!spectator,tag=player,sort=nearest,limit=1] feet rotated ~ 0 run function luigis_mansion:spawn_entities/ball/chauncey/big
 execute if entity @s[scores={Dialog=300},tag=!laugh,tag=intro_done] positioned ~17 ~2.6 ~6.5 run scoreboard players operation @e[distance=..0.7,limit=1,tag=ball] Owner = @s GhostNr
-scoreboard players set @s[scores={Dialog=310},tag=!laugh,tag=intro_done] AnimationProg 0
+scoreboard players set @s[scores={Dialog=310},tag=!laugh,tag=intro_done] AnimationProgress 0
 tag @s[scores={Dialog=310},tag=!laugh,tag=intro_done] remove rambling
 tag @s[scores={Dialog=310},tag=!laugh,tag=intro_done] add grab_rambler
 tag @s[scores={Dialog=330},tag=!laugh,tag=intro_done] remove grab_rambler
@@ -81,7 +81,7 @@ execute if entity @s[scores={Dialog=340},tag=!laugh,tag=intro_done] positioned ~
 execute if entity @s[scores={Dialog=340},tag=!laugh,tag=intro_done] positioned ~17 ~2.6 ~-6.5 run scoreboard players operation @e[distance=..0.7,limit=1,tag=ball] Owner = @s GhostNr
 execute if entity @s[scores={Dialog=360},tag=!laugh,tag=intro_done] positioned ~17 ~3 ~6.5 facing entity @e[tag=same_room,tag=!spectator,tag=player,sort=nearest,limit=1] feet rotated ~ 0 run function luigis_mansion:spawn_entities/ball/chauncey/big
 execute if entity @s[scores={Dialog=360},tag=!laugh,tag=intro_done] positioned ~17 ~2.6 ~6.5 run scoreboard players operation @e[distance=..0.7,limit=1,tag=ball] Owner = @s GhostNr
-scoreboard players set @s[scores={Dialog=380},tag=intro_done] AnimationProg 0
+scoreboard players set @s[scores={Dialog=380},tag=intro_done] AnimationProgress 0
 tag @s[scores={Dialog=380},tag=intro_done] remove rambling
 tag @s[scores={Dialog=380..539},tag=intro_done] add laugh
 scoreboard players set @s[scores={Dialog=381..539},tag=intro_done] ActionTime 2
@@ -93,7 +93,7 @@ tag @s[scores={Dialog=561},tag=intro_done] add grab_rambler
 tag @s[scores={Dialog=581},tag=intro_done] remove grab_rambler
 execute if entity @s[scores={Dialog=581},tag=intro_done] run tag @e[type=minecraft:armor_stand,tag=ball,scores={Room=73}] add dead
 scoreboard players set @s[scores={Dialog=582},tag=intro_done] VulnerableTime 240
-scoreboard players set @s[scores={Dialog=582},tag=intro_done] AnimationProg 0
+scoreboard players set @s[scores={Dialog=582},tag=intro_done] AnimationProgress 0
 tag @s[scores={Dialog=582},tag=intro_done] remove laugh
 tag @s[scores={Dialog=582},tag=intro_done] add dizzy
 execute if entity @s[scores={Dialog=582},tag=intro_done] run playsound luigis_mansion:entity.chauncey.hit_by_ball hostile @a[tag=same_room] ~ ~ ~ 1
@@ -107,7 +107,7 @@ tag @s[scores={Dialog=1662}] remove left
 execute at @s[scores={Dialog=1662}] run tag @s[z=-56.0,dz=7] add left
 teleport @s[scores={Dialog=1662}] 796.0 20 ~
 execute if entity @s[scores={Dialog=1722..1781}] facing entity @e[tag=same_room,tag=!spectator,tag=player,sort=nearest,limit=1] feet run teleport @s ~ ~ ~ ~ 0
-scoreboard players set @s[scores={Dialog=1722}] AnimationProg 0
+scoreboard players set @s[scores={Dialog=1722}] AnimationProgress 0
 tag @s[scores={Dialog=1722}] add scream
 execute if entity @s[scores={Dialog=1722}] run playsound luigis_mansion:entity.chauncey.scream hostile @a[tag=same_room] ~ ~ ~ 3
 execute if entity @s[scores={Dialog=1742}] run playsound luigis_mansion:entity.chauncey.scream hostile @a[tag=same_room] ~ ~ ~ 3
@@ -135,9 +135,9 @@ execute at @s[y_rotation=45..135,scores={Dialog=1783},x=792.0,dx=1] run scoreboa
 scoreboard players set @s[scores={Dialog=1783,PathStep=10}] PathStep 0
 teleport @s[scores={Dialog=1784}] 792.0 20 -48.0
 execute if entity @s[scores={Dialog=1785..}] facing entity @e[tag=same_room,tag=!spectator,tag=player,sort=nearest,limit=1] feet run teleport @s ~ ~ ~ ~ 0
-scoreboard players set @s[scores={Dialog=1785}] AnimationProg 0
+scoreboard players set @s[scores={Dialog=1785}] AnimationProgress 0
 tag @s[scores={Dialog=1785}] remove fast_bounce
-scoreboard players set @s[scores={Dialog=1814}] AnimationProg 0
+scoreboard players set @s[scores={Dialog=1814}] AnimationProgress 0
 tag @s[scores={Dialog=1814}] add scream
 execute if entity @s[scores={Dialog=1814}] run playsound luigis_mansion:entity.chauncey.scream hostile @a[tag=same_room] ~ ~ ~ 3
 tag @s[scores={Dialog=1834}] remove scream

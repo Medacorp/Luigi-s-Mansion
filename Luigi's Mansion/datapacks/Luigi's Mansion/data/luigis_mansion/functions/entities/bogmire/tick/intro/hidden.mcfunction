@@ -7,7 +7,7 @@ execute if entity @s[scores={Dialog=60}] run summon minecraft:lightning_bolt 651
 execute if entity @s[scores={Dialog=70}] run summon minecraft:lightning_bolt 651 103 -32
 execute if entity @s[scores={Dialog=80}] run summon minecraft:lightning_bolt 651 103 -32
 execute if entity @s[scores={Dialog=90}] run summon minecraft:lightning_bolt 651 103 -32
-scoreboard players set @s[scores={Dialog=80}] AnimationProg 0
+scoreboard players set @s[scores={Dialog=80}] AnimationProgress 0
 tag @s[scores={Dialog=80}] add appear
 execute if entity @s[scores={Dialog=100}] as @a[tag=same_room] run function luigis_mansion:entities/player/scare/bash_no_move
 execute if entity @s[scores={Dialog=100..240}] run scoreboard players set @a[tag=same_room,scores={ScareTime=20}] ScareTime 21

@@ -1,4 +1,4 @@
-scoreboard players set @s AnimationProg 0
+scoreboard players set @s AnimationProgress 0
 scoreboard players set @s Pull 0
 scoreboard players set @s ScareTime 0
 scoreboard players set @s Time 0

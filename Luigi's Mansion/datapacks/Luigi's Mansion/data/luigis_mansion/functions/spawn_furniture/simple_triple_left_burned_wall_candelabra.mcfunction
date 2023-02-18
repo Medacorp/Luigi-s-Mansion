@@ -12,9 +12,9 @@ scoreboard players reset #temp Time
 scoreboard players reset #temp2 Time
 scoreboard players set @e[tag=this_entity,limit=1] ActionTime -1
 scoreboard players set @e[tag=this_entity,limit=1] Sound 0
-scoreboard players set @e[tag=this_entity,limit=1] FurnitureRadius 6
-scoreboard players set @e[tag=this_entity,limit=1] FurnitureUp 0
-scoreboard players set @e[tag=this_entity,limit=1] FurnitureForward 0
+scoreboard players set @e[tag=this_entity,limit=1] FurnitureSizeRadius 6
+scoreboard players set @e[tag=this_entity,limit=1] FurnitureContentUp 0
+scoreboard players set @e[tag=this_entity,limit=1] FurnitureContentForward 0
 scoreboard players set @e[tag=this_entity,limit=1] FurnitureSearch 20
 function luigis_mansion:spawn_furniture/setup/default
 tag @e[tag=this_entity,limit=1] remove this_entity

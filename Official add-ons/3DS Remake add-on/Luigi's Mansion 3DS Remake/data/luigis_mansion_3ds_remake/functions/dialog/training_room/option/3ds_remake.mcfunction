@@ -1,1 +1,1 @@
-tellraw @s {"translate":"luigis_mansion_3ds_remake:message.training_type.3ds_remake","color":"green","clickEvent":{"action":"run_command","value":"/trigger TrainingOption set 1"}}
+tellraw @s {"translate":"luigis_mansion_3ds_remake:message.training_type.3ds_remake","color":"green","clickEvent":{"action":"run_command","value":"/trigger TrainingRoomOption set 1"}}

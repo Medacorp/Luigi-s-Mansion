@@ -41,9 +41,9 @@ furniture: {
     candle_flames:[ //Variables for the flames this candlabra has, one entry per flame. Default = empty object per flame.
         {
             lit:1b, //Whether this flame is lit. Default = 0b.
-            purple:1b, //Whether this flame is purple. Default = 0b.
-            cannot_extinguish:1b, //Whether this flame can be turned off by vacuum, dust and ice (water will still turn it off). Default = 0b.
-            always_burn:1b, //Whether this flame can be turned off by anything at all. Default = 0b.
+            type:"red", //Whether this flame is red, purple or incense. Incense flames react differently to elements, not extinguishing, but drawing the flame to the origin. Default = red.
+            cannot_extinguish:1b, //Whether this flame can be turned off by vacuum, dust and ice (water will still turn it off). Default = 0b. Not applicable to incense flames.
+            always_burn:1b, //Whether this flame can be turned off by anything at all. Default = 0b. Not applicable to incense flames.
             fire_elemental_source:{}, //See <type>_elemental_source, above. Default = none.
             tags: [] //A list of tags to append to the flame's default tags, used to target the flame in functions. Default = none.
         }

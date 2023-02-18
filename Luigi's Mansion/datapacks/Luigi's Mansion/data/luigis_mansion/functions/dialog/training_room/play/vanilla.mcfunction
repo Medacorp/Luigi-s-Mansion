@@ -1,1 +1,1 @@
-execute if entity @a[scores={TrainingOption=0}] run function luigis_mansion:dialog/training_room/play
+execute if entity @a[scores={TrainingRoomOption=0}] run function luigis_mansion:dialog/training_room/play

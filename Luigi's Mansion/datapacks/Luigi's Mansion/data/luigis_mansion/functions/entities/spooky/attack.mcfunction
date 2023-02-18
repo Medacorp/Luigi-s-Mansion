@@ -3,7 +3,7 @@ scoreboard players set @s[scores={ActionTime=51}] ActionTime 44
 scoreboard players add @s[scores={ActionTime=1..50}] ActionTime 1
 execute unless entity @s[scores={ActionTime=1..}] run scoreboard players set @s ActionTime 1
 scoreboard players set #temp Move 25
-scoreboard players set @s[scores={ActionTime=1}] AnimationProg 0
+scoreboard players set @s[scores={ActionTime=1}] AnimationProgress 0
 tag @s[scores={ActionTime=1}] add bite
 tag @s[scores={ActionTime=1}] remove move
 execute if entity @s[scores={ActionTime=1}] run playsound luigis_mansion:entity.spooky.attack hostile @a[tag=same_room] ~ ~ ~ 1
@@ -16,7 +16,7 @@ scoreboard players set @s[scores={ActionTime=20}] Dialog 20
 scoreboard players reset @s[scores={ActionTime=20}] ActionTime
 execute at @s[scores={ActionTime=1..19}] positioned ^ ^ ^0.3 if entity @e[tag=same_room,tag=!spectator,tag=player,scores={Invulnerable=0},distance=..0.7,tag=!grabbed,limit=1] run scoreboard players set @s ActionTime 30
 
-scoreboard players set @s[scores={ActionTime=30}] AnimationProg 0
+scoreboard players set @s[scores={ActionTime=30}] AnimationProgress 0
 tag @s[scores={ActionTime=30}] remove bite
 tag @s[scores={ActionTime=30}] add hold
 execute if entity @s[scores={ActionTime=30}] positioned ^ ^ ^0.8 as @e[distance=..0.8,tag=game_boy_horror_location] run function luigis_mansion:entities/game_boy_horror_location/bring_player_back
@@ -38,7 +38,7 @@ execute if entity @s[scores={ActionTime=51}] run scoreboard players add @a[tag=s
 tag @a[tag=still_grabbed,limit=1] remove still_grabbed
 tag @e[tag=grabbed_model,limit=1] remove grabbed_model
 scoreboard players reset #temp ID
-scoreboard players set @s[scores={ActionTime=53}] AnimationProg 0
+scoreboard players set @s[scores={ActionTime=53}] AnimationProgress 0
 scoreboard players reset @s[scores={ActionTime=53}] GrabbedID
 tag @s[scores={ActionTime=53}] remove hold
 tag @s[scores={ActionTime=53}] add let_go

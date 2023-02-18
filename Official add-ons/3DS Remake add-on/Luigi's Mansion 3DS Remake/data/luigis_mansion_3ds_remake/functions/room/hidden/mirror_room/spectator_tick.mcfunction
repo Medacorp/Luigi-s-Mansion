@@ -1,6 +1,6 @@
 execute unless entity @s[scores={Room=21}] run title @s title {"translate":"luigis_mansion:location.mirror_room"}
 scoreboard players set @s Room 21
-scoreboard players set @s PrevRoom 21
+scoreboard players set @s PreviousRoom 21
 
 teleport @s[scores={HomeX=735}] ~-17 ~ ~
 teleport @s[scores={HomeX=747}] ~-1 ~ ~

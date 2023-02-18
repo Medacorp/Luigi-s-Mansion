@@ -7,7 +7,7 @@ tag @e[scores={Room=16},tag=spooky_bone] add remove_from_existence
 tag @e[scores={Room=16},tag=mr_bones] add remove_from_existence
 execute as @e[scores={Room=16},tag=spooky] run function luigis_mansion:entities/ghost/go_to_home
 scoreboard players set @e[scores={Room=16},tag=spooky] Dialog 0
-scoreboard players set @e[scores={Room=16},tag=spooky] AnimationProg 0
+scoreboard players set @e[scores={Room=16},tag=spooky] AnimationProgress 0
 scoreboard players set @e[scores={Room=16},tag=spooky] PathStep 0
 tag @e[scores={Room=16},tag=spooky] add sleep
 tag @e[scores={Room=16},tag=spooky] remove wake_up

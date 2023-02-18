@@ -28,55 +28,55 @@ execute store result score #siny Time run data get entity @e[tag=temp,limit=1] P
 kill @e[tag=temp,limit=1]
 
 #-Left = Cos(jaw)PosX + Sin(jaw)Cos(pitch)PosZ - Sin(jaw)*-Sin(pitch)PosY
-scoreboard players operation #temp FurnitureSizeL = #cosy Time
-scoreboard players operation #temp FurnitureSizeL *= #temp2 PosX
-scoreboard players operation #temp FurnitureSizeL /= #10 Constants
-scoreboard players operation #temp2 FurnitureSizeL = #siny Time
-scoreboard players operation #temp2 FurnitureSizeL *= #cosx Time
-scoreboard players operation #temp2 FurnitureSizeL /= #10 Constants
-scoreboard players operation #temp2 FurnitureSizeL *= #temp2 PosZ
-scoreboard players operation #temp2 FurnitureSizeL /= #10 Constants
-scoreboard players operation #temp FurnitureSizeL += #temp2 FurnitureSizeL
-scoreboard players reset #temp2 FurnitureSizeL
-scoreboard players operation #temp2 FurnitureSizeL -= #sinx Time
-scoreboard players operation #temp2 FurnitureSizeL *= #siny Time
-scoreboard players operation #temp2 FurnitureSizeL /= #10 Constants
-scoreboard players operation #temp2 FurnitureSizeL *= #temp2 PosY
-scoreboard players operation #temp2 FurnitureSizeL /= #10 Constants
-scoreboard players operation #temp FurnitureSizeL -= #temp2 FurnitureSizeL
-scoreboard players reset #temp2 FurnitureSizeL
+scoreboard players operation #temp FurnitureSizeLeft = #cosy Time
+scoreboard players operation #temp FurnitureSizeLeft *= #temp2 PosX
+scoreboard players operation #temp FurnitureSizeLeft /= #10 Constants
+scoreboard players operation #temp2 FurnitureSizeLeft = #siny Time
+scoreboard players operation #temp2 FurnitureSizeLeft *= #cosx Time
+scoreboard players operation #temp2 FurnitureSizeLeft /= #10 Constants
+scoreboard players operation #temp2 FurnitureSizeLeft *= #temp2 PosZ
+scoreboard players operation #temp2 FurnitureSizeLeft /= #10 Constants
+scoreboard players operation #temp FurnitureSizeLeft += #temp2 FurnitureSizeLeft
+scoreboard players reset #temp2 FurnitureSizeLeft
+scoreboard players operation #temp2 FurnitureSizeLeft -= #sinx Time
+scoreboard players operation #temp2 FurnitureSizeLeft *= #siny Time
+scoreboard players operation #temp2 FurnitureSizeLeft /= #10 Constants
+scoreboard players operation #temp2 FurnitureSizeLeft *= #temp2 PosY
+scoreboard players operation #temp2 FurnitureSizeLeft /= #10 Constants
+scoreboard players operation #temp FurnitureSizeLeft -= #temp2 FurnitureSizeLeft
+scoreboard players reset #temp2 FurnitureSizeLeft
 #Up = Cos(pitch)PosY - Sin(pitch)PosZ
-scoreboard players operation #temp FurnitureSizeU = #cosx Time
-scoreboard players operation #temp FurnitureSizeU *= #temp2 PosY
-scoreboard players operation #temp FurnitureSizeU /= #10 Constants
-scoreboard players operation #temp2 FurnitureSizeU = #sinx Time
-scoreboard players operation #temp2 FurnitureSizeU *= #temp2 PosZ
-scoreboard players operation #temp2 FurnitureSizeU /= #10 Constants
-scoreboard players operation #temp FurnitureSizeU -= #temp2 FurnitureSizeU
-scoreboard players reset #temp2 FurnitureSizeU
+scoreboard players operation #temp FurnitureSizeUp = #cosx Time
+scoreboard players operation #temp FurnitureSizeUp *= #temp2 PosY
+scoreboard players operation #temp FurnitureSizeUp /= #10 Constants
+scoreboard players operation #temp2 FurnitureSizeUp = #sinx Time
+scoreboard players operation #temp2 FurnitureSizeUp *= #temp2 PosZ
+scoreboard players operation #temp2 FurnitureSizeUp /= #10 Constants
+scoreboard players operation #temp FurnitureSizeUp -= #temp2 FurnitureSizeUp
+scoreboard players reset #temp2 FurnitureSizeUp
 #Forward = Cos(jaw)Cos(pitch)PosZ - Sin(jaw)PosX + Cos(jaw)Sin(pitch)PosY
-scoreboard players operation #temp FurnitureSizeF = #cosy Time
-scoreboard players operation #temp FurnitureSizeF *= #cosx Time
-scoreboard players operation #temp FurnitureSizeF /= #10 Constants
-scoreboard players operation #temp FurnitureSizeF *= #temp2 PosZ
-scoreboard players operation #temp FurnitureSizeF /= #10 Constants
-scoreboard players operation #temp2 FurnitureSizeF = #siny Time
-scoreboard players operation #temp2 FurnitureSizeF *= #temp2 PosX
-scoreboard players operation #temp2 FurnitureSizeF /= #10 Constants
-scoreboard players operation #temp FurnitureSizeF -= #temp2 FurnitureSizeF
-scoreboard players reset #temp2 FurnitureSizeF
-scoreboard players operation #temp2 FurnitureSizeF -= #cosy Time
-scoreboard players operation #temp2 FurnitureSizeF *= #sinx Time
-scoreboard players operation #temp2 FurnitureSizeF /= #10 Constants
-scoreboard players operation #temp2 FurnitureSizeF *= #temp2 PosY
-scoreboard players operation #temp2 FurnitureSizeF /= #10 Constants
-scoreboard players operation #temp FurnitureSizeF += #temp2 FurnitureSizeF
-scoreboard players reset #temp2 FurnitureSizeF
+scoreboard players operation #temp FurnitureSizeForward = #cosy Time
+scoreboard players operation #temp FurnitureSizeForward *= #cosx Time
+scoreboard players operation #temp FurnitureSizeForward /= #10 Constants
+scoreboard players operation #temp FurnitureSizeForward *= #temp2 PosZ
+scoreboard players operation #temp FurnitureSizeForward /= #10 Constants
+scoreboard players operation #temp2 FurnitureSizeForward = #siny Time
+scoreboard players operation #temp2 FurnitureSizeForward *= #temp2 PosX
+scoreboard players operation #temp2 FurnitureSizeForward /= #10 Constants
+scoreboard players operation #temp FurnitureSizeForward -= #temp2 FurnitureSizeForward
+scoreboard players reset #temp2 FurnitureSizeForward
+scoreboard players operation #temp2 FurnitureSizeForward -= #cosy Time
+scoreboard players operation #temp2 FurnitureSizeForward *= #sinx Time
+scoreboard players operation #temp2 FurnitureSizeForward /= #10 Constants
+scoreboard players operation #temp2 FurnitureSizeForward *= #temp2 PosY
+scoreboard players operation #temp2 FurnitureSizeForward /= #10 Constants
+scoreboard players operation #temp FurnitureSizeForward += #temp2 FurnitureSizeForward
+scoreboard players reset #temp2 FurnitureSizeForward
 
 
-scoreboard players operation #temp PosX = @s FurnitureSizeL
-scoreboard players operation #temp PosY = @s FurnitureSizeU
-scoreboard players operation #temp PosZ = @s FurnitureSizeF
+scoreboard players operation #temp PosX = @s FurnitureSizeLeft
+scoreboard players operation #temp PosY = @s FurnitureSizeUp
+scoreboard players operation #temp PosZ = @s FurnitureSizeForward
 scoreboard players operation #temp PosX /= #2 Constants
 execute if entity @s[tag=!hanging_furniture,tag=!standing_furniture] run scoreboard players operation #temp PosY /= #2 Constants
 scoreboard players operation #temp PosZ /= #2 Constants
@@ -88,19 +88,19 @@ execute if entity @s[tag=!standing_furniture] run scoreboard players operation #
 execute if entity @s[tag=hanging_furniture] run scoreboard players set #temp PosY 0
 scoreboard players operation #temp2 PosZ -= #temp PosZ
 
-scoreboard players operation #temp3 PosX = #temp FurnitureSizeL
+scoreboard players operation #temp3 PosX = #temp FurnitureSizeLeft
 scoreboard players operation #temp3 PosX < #temp PosX
 scoreboard players operation #temp3 PosX > #temp2 PosX
-scoreboard players operation #temp3 PosY = #temp FurnitureSizeU
+scoreboard players operation #temp3 PosY = #temp FurnitureSizeUp
 scoreboard players operation #temp3 PosY < #temp PosY
 scoreboard players operation #temp3 PosY > #temp2 PosY
-scoreboard players operation #temp3 PosZ = #temp FurnitureSizeF
+scoreboard players operation #temp3 PosZ = #temp FurnitureSizeForward
 scoreboard players operation #temp3 PosZ < #temp PosZ
 scoreboard players operation #temp3 PosZ > #temp2 PosZ
 
-scoreboard players operation #temp PosX = #temp FurnitureSizeL
-scoreboard players operation #temp PosY = #temp FurnitureSizeU
-scoreboard players operation #temp PosZ = #temp FurnitureSizeF
+scoreboard players operation #temp PosX = #temp FurnitureSizeLeft
+scoreboard players operation #temp PosY = #temp FurnitureSizeUp
+scoreboard players operation #temp PosZ = #temp FurnitureSizeForward
 scoreboard players operation #temp PosX -= #temp3 PosX
 scoreboard players operation #temp PosY -= #temp3 PosY
 scoreboard players operation #temp PosZ -= #temp3 PosZ
@@ -118,9 +118,9 @@ scoreboard players reset #siny
 scoreboard players reset #temp PosX
 scoreboard players reset #temp PosY
 scoreboard players reset #temp PosZ
-scoreboard players reset #temp FurnitureSizeL
-scoreboard players reset #temp FurnitureSizeU
-scoreboard players reset #temp FurnitureSizeF
+scoreboard players reset #temp FurnitureSizeLeft
+scoreboard players reset #temp FurnitureSizeUp
+scoreboard players reset #temp FurnitureSizeForward
 scoreboard players reset #temp2 PosX
 scoreboard players reset #temp2 PosY
 scoreboard players reset #temp2 PosZ

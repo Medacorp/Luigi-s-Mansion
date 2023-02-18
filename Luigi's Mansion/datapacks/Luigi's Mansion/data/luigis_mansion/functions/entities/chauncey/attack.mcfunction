@@ -1,6 +1,6 @@
 scoreboard players add @s[scores={ActionTime=1..30}] ActionTime 1
 execute unless entity @s[scores={ActionTime=1..}] run scoreboard players set @s ActionTime 1
-scoreboard players set @s[scores={ActionTime=1}] AnimationProg 0
+scoreboard players set @s[scores={ActionTime=1}] AnimationProgress 0
 
 teleport @s[scores={ActionTime=1..10}] ^ ^ ^0.04
 execute if entity @s[scores={ActionTime=11}] run playsound luigis_mansion:entity.ghost.punch hostile @a[tag=same_room] ~ ~ ~ 1
@@ -16,5 +16,5 @@ execute at @s[scores={ActionTime=11}] run data remove storage luigis_mansion:dat
 tag @s[scores={ActionTime=11},tag=!laugh] add complain
 execute at @s run function luigis_mansion:animations/chauncey/attack
 tag @s[scores={ActionTime=30}] remove attack
-scoreboard players set @s[scores={ActionTime=30}] AnimationProg 0
+scoreboard players set @s[scores={ActionTime=30}] AnimationProgress 0
 scoreboard players set @s[scores={ActionTime=30}] ActionTime 0

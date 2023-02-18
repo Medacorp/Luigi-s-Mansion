@@ -3,13 +3,13 @@ execute if entity @s[tag=!dead,tag=!remove_from_existence] run function #luigis_
 execute unless entity @s[tag=!dead,tag=!remove_from_existence] run tag @s add dark_room
 
 execute store result score #temp Time run data get entity @s ArmorItems[3].tag.CustomModelData
-execute if entity @s[tag=was_dark_room,tag=!dark_room] store result entity @s ArmorItems[3].tag.CustomModelData int 1 run scoreboard players operation #temp Time += @s LampModel
-execute if entity @s[tag=!was_dark_room,tag=dark_room] store result entity @s ArmorItems[3].tag.CustomModelData int 1 run scoreboard players operation #temp Time -= @s LampModel
+execute if entity @s[tag=was_dark_room,tag=!dark_room] store result entity @s ArmorItems[3].tag.CustomModelData int 1 run scoreboard players operation #temp Time += @s FurnitureLampModel
+execute if entity @s[tag=!was_dark_room,tag=dark_room] store result entity @s ArmorItems[3].tag.CustomModelData int 1 run scoreboard players operation #temp Time -= @s FurnitureLampModel
 scoreboard players reset #temp Time
 
 summon minecraft:marker ~ ~1.4 ~ {Tags:["location","remove_from_existence"]}
-scoreboard players operation #temp Time = @s LampForward
-scoreboard players operation #temp2 Time = @s LampUp
+scoreboard players operation #temp Time = @s FurnitureLampForward
+scoreboard players operation #temp2 Time = @s FurnitureLampUp
 execute as @e[tag=location,limit=1] positioned as @s run function luigis_mansion:entities/furniture/spawn/move
 scoreboard players reset #temp Time
 scoreboard players reset #temp2 Time

@@ -20,8 +20,8 @@ scoreboard players set @e[tag=this_entity,limit=1] ElementHurtTime 0
 scoreboard players set @e[tag=this_entity,limit=1] SecondFleeDamage -1
 scoreboard players set @e[tag=this_entity,limit=1] HeartOffset 8
 scoreboard players set @e[tag=this_entity,limit=1] SpawnTime 160
-scoreboard players set @e[tag=this_entity,limit=1] EntitySizeW 16
-scoreboard players set @e[tag=this_entity,limit=1] EntitySizeH 26
+scoreboard players set @e[tag=this_entity,limit=1] EntitySizeWidth 16
+scoreboard players set @e[tag=this_entity,limit=1] EntitySizeHeight 26
 scoreboard players set @e[tag=this_entity,limit=1] EntityYOffset 20
 scoreboard players set @e[tag=this_entity,limit=1] AttackType 1
 execute if data storage luigis_mansion:data entity{attack_type:"none"} run scoreboard players set @e[tag=this_entity,limit=1] AttackType 0
@@ -32,7 +32,7 @@ execute if data storage luigis_mansion:data entity.speed as @e[tag=this_entity,l
 execute if data storage luigis_mansion:data entity.flee_speed as @e[tag=this_entity,limit=1] store result score @s MoveFlee run data get storage luigis_mansion:data entity.flee_speed
 execute if data storage luigis_mansion:data entity.second_flee_damage as @e[tag=this_entity,limit=1] store result score @s SecondFleeDamage run data get storage luigis_mansion:data entity.second_flee_damage
 execute if data storage luigis_mansion:data entity.vanish_time as @e[tag=this_entity,limit=1] store result score @s VanishTime run data get storage luigis_mansion:data entity.vanish_time
-execute if data storage luigis_mansion:data entity.training_room_score as @e[tag=this_entity,limit=1] store result score @s GhostCaught run data get storage luigis_mansion:data entity.training_room_score
+execute if data storage luigis_mansion:data entity.training_room_score as @e[tag=this_entity,limit=1] store result score @s TrainingRoomScore run data get storage luigis_mansion:data entity.training_room_score
 execute if data storage luigis_mansion:data entity.loot run data modify entity @e[tag=this_entity,limit=1] ArmorItems[3].tag.loot set from storage luigis_mansion:data entity.loot
 execute if data storage luigis_mansion:data entity.damage run data modify entity @e[tag=this_entity,limit=1] ArmorItems[3].tag.damage set from storage luigis_mansion:data entity.damage
 tag @e[tag=this_entity,limit=1] remove this_entity

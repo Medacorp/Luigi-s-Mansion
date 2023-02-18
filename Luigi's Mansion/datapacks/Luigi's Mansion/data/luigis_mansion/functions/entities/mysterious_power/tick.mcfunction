@@ -6,7 +6,7 @@ execute as @e[tag=ghost] if score #temp Room = @s Room run tag @s add same_room_
 scoreboard players reset #temp Room
 tag @e[tag=hidden,tag=same_room_ghost] add remove_from_existence
 scoreboard players set @e[tag=same_room_ghost,tag=!vanish] ActionTime 0
-scoreboard players set @e[tag=same_room_ghost,tag=!vanish] AnimationProg 0
+scoreboard players set @e[tag=same_room_ghost,tag=!vanish] AnimationProgress 0
 tag @e[tag=same_room_ghost] add vanish
 tag @e[tag=same_room_ghost] remove laugh
 tag @e[tag=same_room_ghost] remove complain

@@ -16,7 +16,7 @@ scoreboard players set @s[x=683.5,y=11.6,z=81.5,distance=..0.7,scores={PathStep=
 teleport @s[scores={PathStep=8}] ~ ~ ~ facing 680 11.6 82
 scoreboard players add @s[x=680.5,y=11.6,z=82.5,distance=..0.7,scores={PathStep=8..100}] PathStep 1
 teleport @s[scores={PathStep=9}] ~ ~ ~ facing 681 11.6 79
-scoreboard players set @s[scores={PathStep=40}] AnimationProg 0
+scoreboard players set @s[scores={PathStep=40}] AnimationProgress 0
 execute if entity @s[scores={PathStep=40}] positioned 681 10.8125 79 unless entity @e[tag=billiards_ball,distance=..0.7,limit=1] positioned ~ ~1.1875 ~ rotated -165 0 run function luigis_mansion:spawn_entities/ball/billiards/white
 execute at @s[scores={PathStep=..8}] run function luigis_mansion:entities/slim_bankshot/move_forward
 execute if entity @s[scores={PathStep=80}] run playsound luigis_mansion:entity.slim_bankshot.shoot hostile @a[tag=same_room] ~ ~ ~ 1

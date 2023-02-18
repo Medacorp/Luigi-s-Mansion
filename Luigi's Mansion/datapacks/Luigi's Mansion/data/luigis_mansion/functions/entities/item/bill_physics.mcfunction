@@ -2,8 +2,8 @@ execute at @s positioned ~ ~1.5 ~ align y unless block ~ ~ ~ #luigis_mansion:ite
 
 execute positioned ~ ~1.3 ~ if block ^ ^ ^0.3 #luigis_mansion:items_ignore unless block ^ ^ ^0.3 #minecraft:slabs at @s run teleport @s ^ ^ ^0.1
 
-execute store result score @s HomeRot run data get entity @s Pose.Head[0] 1
-execute positioned ~ ~1.3 ~ if block ^ ^ ^0.3 #luigis_mansion:items_ignore unless block ^ ^ ^0.3 #minecraft:slabs store result entity @s Pose.Head[0] float 1 run scoreboard players add @s HomeRot 10
+execute store result score @s HomeRotation run data get entity @s Pose.Head[0] 1
+execute positioned ~ ~1.3 ~ if block ^ ^ ^0.3 #luigis_mansion:items_ignore unless block ^ ^ ^0.3 #minecraft:slabs store result entity @s Pose.Head[0] float 1 run scoreboard players add @s HomeRotation 10
 
 execute at @s positioned ~ ~1.5 ~ if block ~ ~0.6 ~ #minecraft:slabs[type=bottom] run teleport @s ~ ~0.1 ~
 

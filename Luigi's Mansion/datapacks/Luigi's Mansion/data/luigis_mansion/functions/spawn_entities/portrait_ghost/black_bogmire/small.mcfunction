@@ -8,13 +8,13 @@ scoreboard players operation @e[tag=model_piece,tag=this_entity,limit=1] GhostNr
 execute as @e[tag=black_bogmire,tag=this_entity,limit=1] store result score @s HomeX run data get entity @s Pos[0] 100
 execute as @e[tag=black_bogmire,tag=this_entity,limit=1] store result score @s HomeY run data get entity @s Pos[1] 100
 execute as @e[tag=black_bogmire,tag=this_entity,limit=1] store result score @s HomeZ run data get entity @s Pos[2] 100
-execute as @e[tag=black_bogmire,tag=this_entity,limit=1] store result score @s HomeRot run data get entity @s Rotation[0]
+execute as @e[tag=black_bogmire,tag=this_entity,limit=1] store result score @s HomeRotation run data get entity @s Rotation[0]
 execute as @e[tag=black_bogmire,tag=this_entity,limit=1] store result score @s Move run data get storage luigis_mansion:data current_state.current_data.ghosts.black_bogmire.small_speed
 execute as @e[tag=black_bogmire,tag=this_entity,limit=1] store result score @s VanishTime run data get storage luigis_mansion:data current_state.current_data.ghosts.black_bogmire.small_vanish_time
 data modify entity @e[tag=black_bogmire,tag=this_entity,limit=1] ArmorItems[3].tag.loot set from storage luigis_mansion:data current_state.current_data.portrait_ghosts.black_bogmire.small_loot
 data modify entity @e[tag=black_bogmire,tag=this_entity,limit=1] ArmorItems[3].tag.damage set from storage luigis_mansion:data current_state.current_data.portrait_ghosts.black_bogmire.small_damage
 scoreboard players set @e[tag=black_bogmire,tag=this_entity,limit=1] Sound 0
-scoreboard players set @e[tag=black_bogmire,tag=this_entity,limit=1] EntitySizeW 10
-scoreboard players set @e[tag=black_bogmire,tag=this_entity,limit=1] EntitySizeH 18
+scoreboard players set @e[tag=black_bogmire,tag=this_entity,limit=1] EntitySizeWidth 10
+scoreboard players set @e[tag=black_bogmire,tag=this_entity,limit=1] EntitySizeHeight 18
 scoreboard players set @e[tag=black_bogmire,tag=this_entity,limit=1] EntityYOffset 14
 tag @e[tag=this_entity] remove this_entity

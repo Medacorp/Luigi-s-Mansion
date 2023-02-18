@@ -5,8 +5,8 @@ execute as @e[tag=this_entity,tag=e_gadd,limit=1] store result score @s PassiveN
 execute as @e[tag=this_entity,tag=e_gadd,limit=1] store result storage luigis_mansion:data unique_id.passive int 1 run scoreboard players add @s PassiveNr 1
 scoreboard players operation @e[tag=this_entity,tag=model_piece] PassiveNr = @e[tag=this_entity,tag=e_gadd,limit=1] PassiveNr
 execute as @e[tag=this_entity,tag=e_gadd,limit=1] store result score @s HomeY run data get entity @s Pos[1] 100
-scoreboard players set @e[tag=this_entity,tag=e_gadd,limit=1] EntitySizeW 8
-scoreboard players set @e[tag=this_entity,tag=e_gadd,limit=1] EntitySizeH 18
+scoreboard players set @e[tag=this_entity,tag=e_gadd,limit=1] EntitySizeWidth 8
+scoreboard players set @e[tag=this_entity,tag=e_gadd,limit=1] EntitySizeHeight 18
 scoreboard players set @e[tag=this_entity,tag=e_gadd,limit=1] EntityYOffset 12
 data modify entity @e[tag=this_entity,tag=e_gadd,limit=1] ArmorItems[3].tag.scan_message set from storage luigis_mansion:data entity.scan_message
 execute if data storage luigis_mansion:data entity{can_talk_to:0b} run tag @e[tag=this_entity,limit=1] remove can_talk_to

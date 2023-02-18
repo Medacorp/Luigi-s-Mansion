@@ -1,7 +1,7 @@
 scoreboard players add @s Dialog 1
 tag @s remove can_decapitate
 scoreboard players reset @s[scores={Dialog=1}] ActionTime
-scoreboard players set @s[scores={Dialog=1}] AnimationProg 0
+scoreboard players set @s[scores={Dialog=1}] AnimationProgress 0
 data modify entity @s[scores={Dialog=1}] ArmorItems[3].tag.CustomModelData set value 88
 tag @s[scores={Dialog=1}] remove vacuum
 tag @s[scores={Dialog=1}] remove breathe_fire

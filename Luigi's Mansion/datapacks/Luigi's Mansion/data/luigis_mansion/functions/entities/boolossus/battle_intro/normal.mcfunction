@@ -12,11 +12,11 @@ execute if entity @s[scores={Dialog=260}] as @a[tag=same_room] run function luig
 execute if entity @s[scores={Dialog=260..349}] run scoreboard players set @a[tag=same_room,scores={ScareType=4}] ScareTime 21
 execute if entity @s[scores={Dialog=260}] run playsound luigis_mansion:entity.boolossus.bounce hostile @a[tag=same_room] ~ ~ ~ 3
 teleport @s[scores={Dialog=290..300}] ~ ~0.2 ~ ~ ~-4.5
-execute if entity @s[scores={Dialog=..300}] store result score @s HomeRot run data get entity @s Rotation[1] 100
+execute if entity @s[scores={Dialog=..300}] store result score @s HomeRotation run data get entity @s Rotation[1] 100
 execute at @s facing entity @e[tag=same_room,tag=!spectator,tag=player,sort=nearest,limit=1] feet run teleport @s ~ ~ ~ ~ ~
-execute if entity @s[scores={Dialog=..300}] store result entity @s Rotation[1] float 0.01 run scoreboard players get @s HomeRot
+execute if entity @s[scores={Dialog=..300}] store result entity @s Rotation[1] float 0.01 run scoreboard players get @s HomeRotation
 tag @s[scores={Dialog=320}] add laugh
-scoreboard players set @s[scores={Dialog=320}] AnimationProg 0
+scoreboard players set @s[scores={Dialog=320}] AnimationProgress 0
 execute at @s[scores={Dialog=320..440}] run function luigis_mansion:animations/boo/laugh
 execute if entity @s[scores={Dialog=320}] run playsound luigis_mansion:entity.boolossus.laugh hostile @a[tag=same_room] ~ ~ ~ 3
 execute if entity @s[scores={Dialog=340}] run playsound luigis_mansion:entity.boolossus.laugh hostile @a[tag=same_room] ~ ~ ~ 3
@@ -26,5 +26,5 @@ execute if entity @s[scores={Dialog=400}] run playsound luigis_mansion:entity.bo
 execute if entity @s[scores={Dialog=420}] run playsound luigis_mansion:entity.boolossus.laugh hostile @a[tag=same_room] ~ ~ ~ 3
 tag @s[scores={Dialog=440}] remove laugh
 tag @s[scores={Dialog=440}] add intro_done
-scoreboard players set @s[scores={Dialog=440}] AnimationProg 0
+scoreboard players set @s[scores={Dialog=440}] AnimationProgress 0
 scoreboard players reset @s[scores={Dialog=440}] Dialog
