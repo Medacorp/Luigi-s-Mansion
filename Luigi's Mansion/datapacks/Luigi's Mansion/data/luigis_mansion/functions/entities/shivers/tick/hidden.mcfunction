@@ -45,12 +45,13 @@ execute at @s[scores={PathStep=..52},tag=!vanish] unless entity @s[scores={PathS
 scoreboard players set @s[scores={PathStep=53}] AnimationProgress 0
 tag @s[scores={PathStep=53}] remove run
 tag @s[scores={PathStep=53}] add look_around
+teleport @s[scores={PathStep=53}] ~ ~ ~ -120 0
 tag @s[scores={PathStep=73}] remove look_around
 execute if entity @s[scores={PathStep=73}] run playsound luigis_mansion:entity.shivers.calm_down hostile @a[tag=same_room] ~ ~ ~ 1
 tag @s[scores={PathStep=73}] add sit_down
 tag @s[scores={PathStep=93}] remove sit_down
-execute if entity @s[scores={PathStep=73..93}] run scoreboard players set #temp Move 5
-execute at @s[scores={PathStep=73..93},tag=!vanish] facing 745 11.6 -51 run function luigis_mansion:entities/shivers/move_forward
+execute if entity @s[scores={PathStep=70..93}] run scoreboard players set #temp Move 5
+execute at @s[scores={PathStep=70..93},tag=!vanish] facing 744.3 11.3 -51 run function luigis_mansion:entities/shivers/move_forward
 tag @s[scores={PathStep=93}] add burn
 scoreboard players set @s[scores={PathStep=173}] AnimationProgress 0
 tag @s[scores={PathStep=173}] remove burn

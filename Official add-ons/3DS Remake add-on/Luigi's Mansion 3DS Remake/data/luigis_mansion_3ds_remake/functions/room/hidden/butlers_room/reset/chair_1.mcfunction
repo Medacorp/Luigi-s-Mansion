@@ -1,1 +1,0 @@
-scoreboard players reset #butlers_room_chair_1

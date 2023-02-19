@@ -1,11 +1,6 @@
 {
 	"values": [
 		"luigis_mansion:room/hidden/butlers_room/interactions/manual/bucket",
-		"luigis_mansion:room/hidden/butlers_room/interactions/manual/chair_1",
-		"luigis_mansion:room/hidden/butlers_room/interactions/manual/chair_2",
-		"luigis_mansion:room/hidden/butlers_room/interactions/manual/chair_3",
-		"luigis_mansion:room/hidden/butlers_room/interactions/manual/chair_4",
-		"luigis_mansion:room/hidden/butlers_room/interactions/manual/chair_5",
 		"luigis_mansion:room/hidden/butlers_room/interactions/manual/closet",
 		"luigis_mansion:room/hidden/butlers_room/interactions/manual/ironing_table",
 		"luigis_mansion:room/hidden/butlers_room/interactions/manual/lamp",

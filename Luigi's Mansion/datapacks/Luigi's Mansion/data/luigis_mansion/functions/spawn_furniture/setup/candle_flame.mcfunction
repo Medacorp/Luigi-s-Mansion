@@ -10,6 +10,7 @@ execute unless data storage luigis_mansion:data candle_flame{type:"incense"} if 
 execute unless data storage luigis_mansion:data candle_flame{type:"incense"} if data storage luigis_mansion:data candle_flame{always_burn:1b} run tag @e[tag=this_entity,tag=candle_flame,limit=1] add always_burn
 execute if data storage luigis_mansion:data candle_flame.fire_elemental_source run tag @e[tag=this_entity,tag=candle_flame,limit=1] add elemental_source
 execute if data storage luigis_mansion:data candle_flame.fire_elemental_source run tag @e[tag=this_entity,tag=candle_flame,limit=1] add fire_elemental_source
+execute if data storage luigis_mansion:data candle_flame.fire_elemental_source run tag @e[tag=this_entity,tag=candle_flame,limit=1] add enabled
 execute if data storage luigis_mansion:data candle_flame.fire_elemental_source{must_vacuum:1b} run tag @e[tag=this_entity,tag=candle_flame,limit=1] add elemental_must_vacuum
 execute if data storage luigis_mansion:data candle_flame.fire_elemental_source{always_spawn:1b} run tag @e[tag=this_entity,tag=candle_flame,limit=1] add elemental_always_spawn
 execute if data storage luigis_mansion:data candle_flame.fire_elemental_source{timer:1b} run tag @e[tag=this_entity,tag=candle_flame,limit=1] add elemental_timer
@@ -19,6 +20,8 @@ data remove storage luigis_mansion:data furniture.candle_flames[0]
 execute if data storage luigis_mansion:data furniture.pose run data modify entity @e[tag=this_entity,tag=candle_flame,limit=1] Pose.Head set from storage luigis_mansion:data furniture.pose
 data modify entity @e[tag=this_entity,tag=candle_flame,limit=1] Pose.Head[1] set value 0.01f
 execute as @e[tag=this_entity,tag=candle_flame,limit=1] run data modify entity @s Rotation[1] set from entity @s Pose.Head[0]
+scoreboard players set @e[tag=this_entity,tag=candle_flame,limit=1] FurnitureElementUp 0
+scoreboard players set @e[tag=this_entity,tag=candle_flame,limit=1] FurnitureElementForward 0
 scoreboard players set @e[tag=this_entity,tag=candle_flame,limit=1] FurnitureSizeRadius 1
 execute as @e[tag=this_entity,tag=candle_flame,limit=1] store result score @s PosX run data get entity @s Pos[0] 10
 execute as @e[tag=this_entity,tag=candle_flame,limit=1] store result score @s PosY run data get entity @s Pos[1] 10

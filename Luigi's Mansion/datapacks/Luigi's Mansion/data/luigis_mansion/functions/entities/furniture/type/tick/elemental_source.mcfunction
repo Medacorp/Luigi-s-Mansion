@@ -1,4 +1,4 @@
-execute unless entity @s[scores={ElmentalNr=-2147483648..}] run function luigis_mansion:entities/furniture/type/tick/elemental_source/new_score
+execute unless entity @s[scores={ElementalNr=-2147483648..}] run function luigis_mansion:entities/furniture/type/tick/elemental_source/new_score
 scoreboard players operation #temp ElementalNr = @s ElementalNr
 execute as @e[tag=elemental_ghost] if score @s ElementalNr = #temp ElementalNr run tag @s add this_elemental_ghost
 
@@ -8,7 +8,8 @@ execute if entity @s[tag=ice_elemental_source,tag=enabled] unless entity @s[tag=
 
 scoreboard players add @s[tag=!enabled,tag=elemental_timer] FurnitureElementTimer 1
 tag @s[tag=!enabled,tag=elemental_timer,scores={FurnitureElementTimer=600}] add enabled
-scoreboard players reset @s[tag=enabled,tag=elemental_timer,scores={FurnitureElementTimer=600}] FurnitureElementTimer
+tag @s[tag=enabled] add lit
+scoreboard players reset @s[tag=enabled] FurnitureElementTimer
 
 scoreboard players reset #temp ElementalNr
 tag @e remove this_elemental_ghost

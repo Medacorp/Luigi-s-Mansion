@@ -4,9 +4,13 @@
         "luigis_mansion:room/normal/butlers_room/load/lights",
         "luigis_mansion:room/normal/butlers_room/load/doors",
         "luigis_mansion:room/normal/butlers_room/load/bucket",
-        "luigis_mansion:room/normal/butlers_room/load/candle",
         "luigis_mansion:room/normal/butlers_room/load/room_clear_chest",
         "luigis_mansion:room/normal/butlers_room/load/vacuumable_2",
-        "luigis_mansion:room/normal/butlers_room/load/water_bucket"
+        "luigis_mansion:room/normal/butlers_room/load/water_bucket",
+        "luigis_mansion:room/normal/butlers_room/load/wooden_stool_1",
+        "luigis_mansion:room/normal/butlers_room/load/wooden_stool_2",
+        "luigis_mansion:room/normal/butlers_room/load/wooden_stool_3",
+        "luigis_mansion:room/normal/butlers_room/load/wooden_stool_4",
+        "luigis_mansion:room/normal/butlers_room/load/wooden_stool_mounted_candelabra"
 	]
 }
