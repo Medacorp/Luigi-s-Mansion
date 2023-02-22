@@ -9,11 +9,6 @@ execute as @a[gamemode=!spectator,scores={Room=66}] run function luigis_mansion:
 
 function #luigis_mansion:room/hidden/sealed_room/interactions/room
 
-clone 695 24 76 695 24 76 693 24 76
-clone 695 24 80 695 24 80 693 24 80
-clone 704 22 81 704 22 81 684 22 81
-clone 704 22 85 704 22 85 684 22 85
-
 scoreboard players set #temp Room 66
 execute as @a[gamemode=!spectator,tag=!pull_open_door,tag=!push_open_door] run function #luigis_mansion:get_same_room
 scoreboard players reset #temp Room

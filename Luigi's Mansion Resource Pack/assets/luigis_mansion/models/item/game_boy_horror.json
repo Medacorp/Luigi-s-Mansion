@@ -83,7 +83,7 @@
 			"to": [13.75, 24.5, 4.975],
 			"rotation": {"angle": 0, "axis": "y", "origin": [20, 35, 29]},
 			"faces": {
-				"north": {"uv": [0, 0, 5.5, 3], "texture": "#time_apm"}
+				"north": {"uv": [0, 0, 11, 6], "texture": "#time_apm"}
 			}
 		},
 		{

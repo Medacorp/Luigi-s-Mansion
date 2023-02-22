@@ -1,0 +1,6 @@
+{
+	"parent": "luigis_mansion:furniture/wooden_triple_candelabra",
+	"textures": {
+		"0": "luigis_mansion:furniture/golden_candelabra"
+	}
+}

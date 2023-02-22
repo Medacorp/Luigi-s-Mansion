@@ -8,7 +8,7 @@ execute if entity @s[tag=ice_elemental_source,tag=enabled] unless entity @s[tag=
 
 scoreboard players add @s[tag=!enabled,tag=elemental_timer] FurnitureElementTimer 1
 tag @s[tag=!enabled,tag=elemental_timer,scores={FurnitureElementTimer=600}] add enabled
-tag @s[tag=enabled] add lit
+execute unless entity @s[tag=!remove_from_existence,tag=!dead] run tag @s[tag=enabled] add lit
 scoreboard players reset @s[tag=enabled] FurnitureElementTimer
 
 scoreboard players reset #temp ElementalNr

@@ -2,10 +2,6 @@
     "values": [
         "luigis_mansion:room/normal/sealed_room/reset/unload",
         "#luigis_mansion:room/normal/sealed_room/turn_lights/off",
-        "luigis_mansion:room/normal/sealed_room/reset/candle_1",
-        "luigis_mansion:room/normal/sealed_room/reset/candle_2",
-        "luigis_mansion:room/normal/sealed_room/reset/candle_3",
-        "luigis_mansion:room/normal/sealed_room/reset/candle_4",
         "luigis_mansion:room/normal/sealed_room/reset/disk_1",
         "luigis_mansion:room/normal/sealed_room/reset/disk_2",
         "luigis_mansion:room/normal/sealed_room/reset/lamp",

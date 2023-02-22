@@ -20,6 +20,7 @@ data remove storage luigis_mansion:data furniture.candle_flames[0]
 execute if data storage luigis_mansion:data furniture.pose run data modify entity @e[tag=this_entity,tag=candle_flame,limit=1] Pose.Head set from storage luigis_mansion:data furniture.pose
 data modify entity @e[tag=this_entity,tag=candle_flame,limit=1] Pose.Head[1] set value 0.01f
 execute as @e[tag=this_entity,tag=candle_flame,limit=1] run data modify entity @s Rotation[1] set from entity @s Pose.Head[0]
+scoreboard players set @e[tag=this_entity,tag=candle_flame,limit=1] FurnitureElementLeft 0
 scoreboard players set @e[tag=this_entity,tag=candle_flame,limit=1] FurnitureElementUp 0
 scoreboard players set @e[tag=this_entity,tag=candle_flame,limit=1] FurnitureElementForward 0
 scoreboard players set @e[tag=this_entity,tag=candle_flame,limit=1] FurnitureSizeRadius 1

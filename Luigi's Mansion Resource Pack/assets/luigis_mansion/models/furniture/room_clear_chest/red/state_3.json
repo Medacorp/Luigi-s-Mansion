@@ -1,6 +1,6 @@
 {
 	"parent": "luigis_mansion:furniture/room_clear_chest/state_3",
 	"textures": {
-		"0": "luigis_mansion:furniture/room_clear_chest/red"
+		"outside": "luigis_mansion:furniture/room_clear_chest/red"
 	}
 }

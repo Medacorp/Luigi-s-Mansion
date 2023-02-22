@@ -8,8 +8,15 @@ scoreboard players set @e[tag=this_entity,limit=1] FurnitureSizeUp 11
 scoreboard players set @e[tag=this_entity,limit=1] FurnitureSizeForward 12
 execute unless score #3ds_remake Loaded matches 1.. run scoreboard players set @e[tag=this_entity,limit=1] InteractionTime 43
 execute if score #3ds_remake Loaded matches 1.. run scoreboard players set @e[tag=this_entity,limit=1] InteractionTime 45
+scoreboard players set @e[tag=this_entity,limit=1] FurnitureDustLeft 0
+scoreboard players set @e[tag=this_entity,limit=1] FurnitureDustUp 7
+scoreboard players set @e[tag=this_entity,limit=1] FurnitureDustForward 0
+scoreboard players set @e[tag=this_entity,limit=1] FurnitureContentLeft 0
 scoreboard players set @e[tag=this_entity,limit=1] FurnitureContentUp 7
 scoreboard players set @e[tag=this_entity,limit=1] FurnitureContentForward 0
+scoreboard players set @e[tag=this_entity,limit=1] FurnitureGhostLeft 0
+scoreboard players set @e[tag=this_entity,limit=1] FurnitureGhostUp 7
+scoreboard players set @e[tag=this_entity,limit=1] FurnitureGhostForward 0
 scoreboard players set @e[tag=this_entity,limit=1] FurnitureSearch 40
 function luigis_mansion:spawn_furniture/setup/default
 tag @e[tag=this_entity,limit=1] remove this_entity

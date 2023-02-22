@@ -1,2 +1,0 @@
-execute if entity @s[tag=dark_room] run particle minecraft:block_marker minecraft:light[level=0] ~ ~ ~ 0 0 0 0 1 force @a[tag=same_room]
-execute if entity @s[tag=!dark_room] run particle minecraft:block_marker minecraft:light[level=15] ~ ~ ~ 0 0 0 0 1 force @a[tag=same_room]

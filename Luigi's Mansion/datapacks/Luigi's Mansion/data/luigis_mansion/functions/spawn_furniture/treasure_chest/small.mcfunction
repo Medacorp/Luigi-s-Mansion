@@ -5,8 +5,15 @@ scoreboard players set @e[tag=this_entity,limit=1] Sound 0
 scoreboard players set @e[tag=this_entity,limit=1] FurnitureSizeLeft 18
 scoreboard players set @e[tag=this_entity,limit=1] FurnitureSizeUp 13
 scoreboard players set @e[tag=this_entity,limit=1] FurnitureSizeForward 8
+scoreboard players set @e[tag=this_entity,limit=1] FurnitureDustLeft 0
+scoreboard players set @e[tag=this_entity,limit=1] FurnitureDustUp 8
+scoreboard players set @e[tag=this_entity,limit=1] FurnitureDustForward 0
+scoreboard players set @e[tag=this_entity,limit=1] FurnitureContentLeft 0
 scoreboard players set @e[tag=this_entity,limit=1] FurnitureContentUp 8
 scoreboard players set @e[tag=this_entity,limit=1] FurnitureContentForward 0
+scoreboard players set @e[tag=this_entity,limit=1] FurnitureGhostLeft 0
+scoreboard players set @e[tag=this_entity,limit=1] FurnitureGhostUp 8
+scoreboard players set @e[tag=this_entity,limit=1] FurnitureGhostForward 0
 scoreboard players set @e[tag=this_entity,limit=1] FurnitureSearch 20
 function luigis_mansion:spawn_furniture/setup/default
 tag @e[tag=this_entity,limit=1] remove this_entity

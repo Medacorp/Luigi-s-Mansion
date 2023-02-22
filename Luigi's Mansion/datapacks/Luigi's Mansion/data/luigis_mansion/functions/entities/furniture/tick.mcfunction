@@ -1,4 +1,6 @@
+execute unless entity @s[tag=!remove_from_existence,tag=!dead] run tag @s remove lit
 function #luigis_mansion:entities/furniture/type
+execute if entity @s[scores={FurnitureLightStrength=0..15}] run function luigis_mansion:entities/furniture/spawn/light
 tag @s remove in_vacuum
 tag @s remove in_dust
 tag @s remove in_fire

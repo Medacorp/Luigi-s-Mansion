@@ -1,1 +1,0 @@
-particle minecraft:dust 1 0 0 1 ~ ~ ~ 0 0 0 0 1 force @a[tag=same_room]
