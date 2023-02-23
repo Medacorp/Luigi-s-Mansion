@@ -1,7 +1,7 @@
 scoreboard players add @s AnimationProgress 1
 execute at @s run summon minecraft:marker ~ ~ ~ {Tags:["home","remove_from_existence"]}
-execute store result entity @e[tag=home,limit=1] Pos[0] double 0.01 run scoreboard players get @s PosX
-execute store result entity @e[tag=home,limit=1] Pos[2] double 0.01 run scoreboard players get @s PosZ
+execute store result entity @e[tag=home,limit=1] Pos[0] double 0.01 run scoreboard players get @s PositionX
+execute store result entity @e[tag=home,limit=1] Pos[2] double 0.01 run scoreboard players get @s PositionZ
 execute store result entity @e[tag=home,limit=1] Rotation[0] float 1 run scoreboard players get @s HomeRotation
 execute at @e[tag=home,limit=1] run tp @s ~ ~ ~ ~ 0
 kill @e[tag=home,limit=1]
@@ -14,8 +14,9 @@ execute if entity @s[scores={AnimationProgress=10,Health=41..,Shrunk=1..}] run p
 execute if entity @s[scores={AnimationProgress=10,Health=..40,Shrunk=0}] run playsound luigis_mansion:entity.player.open_door.self.low_health player @s ~ ~ ~ 1000
 execute if entity @s[scores={AnimationProgress=10,Health=..40,Shrunk=1..}] run playsound luigis_mansion:entity.player.open_door.self.low_health player @s ~ ~ ~ 1000 2
 execute at @s run teleport @s[scores={AnimationProgress=7..26}] ^ ^ ^0.1
-execute if entity @s[scores={AnimationProgress=11}] run function #luigis_mansion:entities/door/go_through
-execute at @s[distance=..0.7] run teleport @s[scores={AnimationProgress=11}] ^ ^ ^2.1
+tag @s[scores={AnimationProgress=13}] add wall_warp
+execute if entity @s[scores={AnimationProgress=13}] run function #luigis_mansion:entities/door/go_through
+tag @s[scores={AnimationProgress=14}] remove wall_warp
 execute if entity @e[tag=door,tag=frame,tag=!open_door,tag=!forced_animation,distance=..0.7] run function luigis_mansion:entities/door/force_animation
 scoreboard players set @s Sound 10
 scoreboard players set @s Invulnerable 1000

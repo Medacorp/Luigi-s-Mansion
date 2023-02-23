@@ -159,9 +159,12 @@ scoreboard objectives add Path dummy
 scoreboard objectives add PathStep dummy
 scoreboard objectives add PlayerRotation dummy
 scoreboard objectives add PoltergustSound dummy
-scoreboard objectives add PosX dummy
-scoreboard objectives add PosY dummy
-scoreboard objectives add PosZ dummy
+scoreboard objectives add PositionIntX dummy
+scoreboard objectives add PositionIntY dummy
+scoreboard objectives add PositionIntZ dummy
+scoreboard objectives add PositionX dummy
+scoreboard objectives add PositionY dummy
+scoreboard objectives add PositionZ dummy
 scoreboard objectives add PreviousAnimation dummy
 scoreboard objectives add PreviousHealth dummy
 scoreboard objectives add PreviousMusicType dummy

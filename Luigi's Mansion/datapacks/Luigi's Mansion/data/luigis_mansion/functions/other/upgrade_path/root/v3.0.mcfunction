@@ -37,6 +37,9 @@ scoreboard objectives remove HomeRotX
 scoreboard objectives remove HomeRotY
 scoreboard objectives remove InteractionType
 scoreboard objectives remove Keys
+scoreboard objectives remove PosX
+scoreboard objectives remove PosY
+scoreboard objectives remove PosZ
 scoreboard objectives remove PrevHealth
 scoreboard objectives remove PrevMusicType
 scoreboard objectives remove PrevRoom

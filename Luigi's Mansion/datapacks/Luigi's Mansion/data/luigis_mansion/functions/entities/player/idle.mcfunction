@@ -2,12 +2,12 @@ scoreboard players add @s IdleTime 1
 tag @s remove cold_room
 function #luigis_mansion:room/cold_room
 execute if entity @s[scores={IdleTime=0}] run function luigis_mansion:entities/player/animation/set/none
-tag @s[scores={IdleTime=20..,Health=..30},tag=!high_health_idle,tag=!low_health_idle,tag=!cold_room_idle] add trigger_idle
-execute if entity @s[scores={IdleTime=20..,Health=..30},tag=!high_health_idle,tag=!low_health_idle,tag=!cold_room_idle] run function luigis_mansion:entities/player/animation/set/low_health_idle
-tag @s[scores={IdleTime=20..,Health=31..},tag=cold_room,tag=!cold_room_idle,tag=!high_health_idle,tag=!low_health_idle] add trigger_idle
-execute if entity @s[scores={IdleTime=20..,Health=31..},tag=cold_room,tag=!cold_room_idle,tag=!high_health_idle,tag=!low_health_idle] run function luigis_mansion:entities/player/animation/set/cold_room_idle
-tag @s[scores={IdleTime=200..,Health=31..},tag=!cold_room,tag=!high_health_idle,tag=!low_health_idle,tag=!cold_room_idle] add trigger_idle
-execute if entity @s[scores={IdleTime=200..,Health=31..},tag=!cold_room,tag=!high_health_idle,tag=!low_health_idle,tag=!cold_room_idle] run function luigis_mansion:entities/player/animation/set/high_health_idle
+tag @s[scores={IdleTime=20..,Health=..30}] add trigger_idle
+execute if entity @s[scores={IdleTime=20..,Health=..30}] run function luigis_mansion:entities/player/animation/set/low_health_idle
+tag @s[scores={IdleTime=20..,Health=31..},tag=cold_room] add trigger_idle
+execute if entity @s[scores={IdleTime=20..,Health=31..},tag=cold_room] run function luigis_mansion:entities/player/animation/set/cold_room_idle
+tag @s[scores={IdleTime=200..,Health=31..},tag=!cold_room] add trigger_idle
+execute if entity @s[scores={IdleTime=200..,Health=31..},tag=!cold_room] run function luigis_mansion:entities/player/animation/set/high_health_idle
 tag @s[tag=trigger_idle] add idle
 tag @s remove trigger_idle
 

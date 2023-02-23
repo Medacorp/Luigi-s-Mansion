@@ -1,6 +1,6 @@
 data modify storage luigis_mansion:data luigi set value {tags:[],gliding:0b,swimming:0b,invulnerable:0b,animation:0b,mainhand:{},offhand:{},poltergust:{}}
 data modify storage luigis_mansion:data luigi.tags set from entity @s Tags
-execute if entity @s[tag=low_health_idle] run data modify storage luigis_mansion:data luigi.tags append value "low_health"
+execute if entity @s[scores={Animation=2}] run data modify storage luigis_mansion:data luigi.tags append value "low_health"
 execute if entity @s[scores={Health=..15}] run data modify storage luigis_mansion:data luigi.tags append value "low_health"
 data modify storage luigis_mansion:data luigi.gliding set from entity @s FallFlying
 execute store result storage luigis_mansion:data luigi.swimming byte 1 if entity @s[tag=swimming]

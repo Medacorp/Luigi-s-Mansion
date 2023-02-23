@@ -1,18 +1,13 @@
-execute unless entity @s[scores={Room=14}] run title @s title {"translate":"luigis_beta_mansion:location.dining_room"}
-scoreboard players set @s Room 14
-scoreboard players set @s PreviousRoom 14
 
-teleport @s[scores={HomeX=698,HomeZ=30..42}] ~-12 ~ ~2
-teleport @s[scores={HomeX=698,HomeZ=43..44}] ~1 ~ ~
-teleport @s[scores={HomeX=698,HomeZ=45..56}] ~-12 ~ ~21
-teleport @s[scores={HomeX=710}] ~4 ~ ~-44
-teleport @s[scores={HomeZ=29}] ~2 ~ ~-46
-teleport @s[scores={HomeZ=57}] ~ ~ ~6
+teleport @s[scores={PositionIntX=698,PositionIntZ=30..42}] ~-12 ~ ~2
+teleport @s[scores={PositionIntX=698,PositionIntZ=43..44}] ~1 ~ ~
+teleport @s[scores={PositionIntX=698,PositionIntZ=45..56}] ~-12 ~ ~21
+teleport @s[scores={PositionIntX=710}] ~4 ~ ~-44
+teleport @s[scores={PositionIntZ=29}] ~2 ~ ~-46
+teleport @s[scores={PositionIntZ=57}] ~ ~ ~6
 
-teleport @s[scores={HomeY=9,HomeZ=30..32}] ~-11 ~-3 ~-22
-teleport @s[scores={HomeY=9,HomeZ=33..56}] ~ ~1 ~
-teleport @s[scores={HomeY=16,HomeZ=50..56}] ~6 ~3 ~-6
-teleport @s[scores={HomeY=16,HomeZ=48..49}] ~ ~-1 ~
-teleport @s[scores={HomeY=16,HomeZ=30..47}] ~18 ~3 ~-11
-
-tag @s add already_ticked
+teleport @s[scores={PositionIntY=9,PositionIntZ=30..32}] ~-11 ~-3 ~-22
+teleport @s[scores={PositionIntY=9,PositionIntZ=33..56}] ~ ~1 ~
+teleport @s[scores={PositionIntY=16,PositionIntZ=50..56}] ~6 ~3 ~-6
+teleport @s[scores={PositionIntY=16,PositionIntZ=48..49}] ~ ~-1 ~
+teleport @s[scores={PositionIntY=16,PositionIntZ=30..47}] ~18 ~3 ~-11

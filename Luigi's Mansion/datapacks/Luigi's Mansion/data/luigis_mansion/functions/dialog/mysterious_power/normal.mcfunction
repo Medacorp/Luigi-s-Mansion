@@ -1,7 +1,7 @@
 scoreboard players set #freeze_timer Selected 1
 scoreboard players add @s Dialog 1
 scoreboard players set @a[tag=same_room,gamemode=!spectator] Invulnerable 10
-execute if entity @s[scores={Dialog=1..}] as @a[tag=same_room,gamemode=!spectator,scores={IdleTime=0..},tag=!looking_at_map] run function luigis_mansion:entities/player/animation/set/stand_still
+execute if entity @s[scores={Dialog=1..}] as @a[tag=same_room,gamemode=!spectator,tag=!looking_at_map] run function luigis_mansion:entities/player/animation/set/stand_still
 execute if entity @s[scores={Dialog=1..2096}] as @a[tag=same_room,gamemode=!spectator] run function luigis_mansion:other/music/set/mysterious_power
 execute if data storage luigis_mansion:data current_state.current_data.technical_data{mysterious_power:1b} run scoreboard players set @s[scores={Dialog=1}] Dialog 1466
 execute if entity @s[scores={Dialog=1}] run playsound luigis_mansion:entity.boo.laugh_2 hostile @a[tag=same_room] ~ ~ ~ 1

@@ -2,7 +2,7 @@ execute if entity @a[scores={EGaddGhostPortrificationizerRoomChoice=1..},limit=1
 scoreboard players add @s[scores={Dialog=..700}] Dialog 1
 execute unless entity @s[scores={Dialog=1..}] run scoreboard players add @s Dialog 1
 tag @s[scores={Dialog=1}] add nod
-execute if entity @s[scores={Dialog=1..457}] as @a[tag=same_room,gamemode=!spectator,scores={IdleTime=0..},tag=!looking_at_map] run function luigis_mansion:entities/player/animation/set/stand_still
+execute if entity @s[scores={Dialog=1..457}] as @a[tag=same_room,gamemode=!spectator,tag=!looking_at_map] run function luigis_mansion:entities/player/animation/set/stand_still
 scoreboard players set @s[scores={Dialog=1}] AnimationProgress 0
 execute if entity @s[scores={Dialog=1}] if score #players Totals matches 1 run tellraw @a[tag=same_room] {"translate":"chat.type.text","with":[{"translate":"luigis_mansion:entity.e_gadd","color":"green"},{"translate":"luigis_beta_mansion:dialog.just_money.1","with":[{"selector":"@p[gamemode=!spectator]"}]}]}
 execute if entity @s[scores={Dialog=1}] if score #players Totals matches 2.. run tellraw @a[tag=same_room] {"translate":"chat.type.text","with":[{"translate":"luigis_mansion:entity.e_gadd","color":"green"},{"translate":"luigis_beta_mansion:dialog.just_money.1.more"}]}

@@ -4,6 +4,10 @@ execute if data storage luigis_mansion:data current_state.current_data{blackout:
 title @s[tag=!seen_room_name] title {"translate":"luigis_mansion:location.kitchen"}
 tag @s add seen_room_name
 
-execute if data storage luigis_mansion:data current_state.current_data.rooms.kitchen{seen:0b} run function luigis_mansion:room/hidden/kitchen/set_seen
+execute if data storage luigis_mansion:data current_state.current_data.rooms.kitchen{seen:0b} unless entity @s[gamemode=spectator] run function luigis_mansion:room/hidden/kitchen/set_seen
+
+execute unless entity @s[tag=!wall_warp,gamemode=!spectator] if entity @s[tag=!already_ticked] run function luigis_mansion:room/hidden/kitchen/spectator_tick
+
+tag @s add already_ticked
 
 execute unless data storage luigis_mansion:data current_state.current_data.rooms.dining_room{cleared:1b} if data storage luigis_mansion:data current_state.current_data{blackout:0b} at @s run function luigis_mansion:room/hidden/kitchen/dining_room_noise

@@ -19,8 +19,8 @@ execute if entity @s[scores={Dialog=1}] if score #players Totals matches 2.. run
 execute if entity @s[scores={Dialog=1}] as @a[tag=same_room] at @s run playsound luigis_mansion:entity.e_gadd.talk.mee_oomahkah_suku_suku_yahboh_yahboh neutral @s ~ ~ ~ 1
 execute if entity @s[scores={Dialog=232}] run tellraw @a[tag=same_room] {"translate":"chat.type.text","with":[{"translate":"luigis_mansion:entity.e_gadd","color":"green"},{"translate":"luigis_mansion:dialog.training_room.2"}]}
 execute if entity @s[scores={Dialog=232}] as @a[tag=same_room] at @s run playsound luigis_mansion:entity.e_gadd.talk.yahboh_yahboh_hoo_hoo_hoo neutral @s ~ ~ ~ 1
-execute if entity @s[scores={Dialog=328}] as @a[tag=same_room,gamemode=!spectator,tag=game_boy_horror,tag=!looking_at_map] run function luigis_mansion:entities/player/animation/set/none
-execute if entity @s[scores={Dialog=428..1287}] as @a[tag=same_room,gamemode=!spectator,tag=!stand_still,tag=!looking_at_map] run function luigis_mansion:entities/player/animation/set/stand_still
+execute if entity @s[scores={Dialog=328}] as @a[tag=same_room,gamemode=!spectator,tag=!looking_at_map] run function luigis_mansion:entities/player/animation/set/none
+execute if entity @s[scores={Dialog=428..1287}] as @a[tag=same_room,gamemode=!spectator,tag=!looking_at_map] run function luigis_mansion:entities/player/animation/set/stand_still
 execute if entity @s[scores={Dialog=428}] if score #players Totals matches 1 run tellraw @a[tag=same_room] {"translate":"chat.type.text","with":[{"translate":"luigis_mansion:entity.e_gadd","color":"green"},{"translate":"luigis_mansion:dialog.training_room.3"}]}
 execute if entity @s[scores={Dialog=428}] if score #players Totals matches 2.. run tellraw @a[tag=same_room] {"translate":"chat.type.text","with":[{"translate":"luigis_mansion:entity.e_gadd","color":"green"},{"translate":"luigis_mansion:dialog.training_room.3.more"}]}
 execute if entity @s[scores={Dialog=428}] as @a[tag=same_room] at @s run playsound luigis_mansion:entity.e_gadd.talk.hey_hey_suu_dehkooroo_hah neutral @s ~ ~ ~ 1
@@ -44,36 +44,36 @@ execute if entity @s[scores={Dialog=1100}] as @a[tag=same_room] at @s run playso
 execute if entity @s[scores={Dialog=1244}] if score #players Totals matches 1 run tellraw @a[tag=same_room] {"translate":"chat.type.text","with":[{"translate":"luigis_mansion:entity.e_gadd","color":"green"},{"translate":"luigis_mansion:dialog.training_room.10"}]}
 execute if entity @s[scores={Dialog=1244}] if score #players Totals matches 2.. run tellraw @a[tag=same_room] {"translate":"chat.type.text","with":[{"translate":"luigis_mansion:entity.e_gadd","color":"green"},{"translate":"luigis_mansion:dialog.training_room.10.more"}]}
 execute if entity @s[scores={Dialog=1244}] as @a[tag=same_room] at @s run playsound luigis_mansion:entity.e_gadd.talk.suku_suku_ck_ck neutral @s ~ ~ ~ 1
-execute if entity @s[scores={Dialog=1388}] as @a[tag=same_room,gamemode=!spectator,tag=stand_still,tag=!looking_at_map] run function luigis_mansion:entities/player/animation/set/none
+execute if entity @s[scores={Dialog=1388}] as @a[tag=same_room,gamemode=!spectator,tag=!looking_at_map] run function luigis_mansion:entities/player/animation/set/none
 execute if entity @s[scores={Dialog=1388}] run function luigis_mansion:room/training_room/turn_lights/off
 execute if entity @s[scores={Dialog=1389}] unless entity @e[tag=ghost,scores={Room=-2},limit=1] unless score #training_room TrainingRoomScore matches 1 run function luigis_mansion:room/training_room/spawn_1_ghost
-execute if entity @s[scores={Dialog=1390..1469}] as @a[tag=same_room,gamemode=!spectator,tag=!stand_still,tag=!looking_at_map] run function luigis_mansion:entities/player/animation/set/stand_still
+execute if entity @s[scores={Dialog=1390..1469}] as @a[tag=same_room,gamemode=!spectator,tag=!looking_at_map] run function luigis_mansion:entities/player/animation/set/stand_still
 execute if entity @s[scores={Dialog=1390}] if score #players Totals matches 1 run tellraw @a[tag=same_room] {"translate":"chat.type.text","with":[{"translate":"luigis_mansion:entity.e_gadd","color":"green"},{"translate":"luigis_mansion_3ds_remake:dialog.training_room.11","with":[{"selector":"@a[gamemode=!spectator]"}]}]}
 execute if entity @s[scores={Dialog=1390}] if score #players Totals matches 2.. run tellraw @a[tag=same_room] {"translate":"chat.type.text","with":[{"translate":"luigis_mansion:entity.e_gadd","color":"green"},{"translate":"luigis_mansion_3ds_remake:dialog.training_room.11.more"}]}
 execute if entity @s[scores={Dialog=1390}] as @a[tag=same_room] at @s run playsound luigis_mansion:entity.e_gadd.talk.hey_hey_suu_dehkooroo_hah neutral @s ~ ~ ~ 1
-execute if entity @s[scores={Dialog=1470}] as @a[tag=same_room,gamemode=!spectator,tag=stand_still,tag=!looking_at_map] run function luigis_mansion:entities/player/animation/set/none
+execute if entity @s[scores={Dialog=1470}] as @a[tag=same_room,gamemode=!spectator,tag=!looking_at_map] run function luigis_mansion:entities/player/animation/set/none
 execute if entity @s[scores={Dialog=1471}] unless entity @e[tag=ghost,scores={Room=-2},limit=1] if score #training_room TrainingRoomScore matches 1 run function luigis_mansion:room/training_room/spawn_1_ghost
-execute if entity @s[scores={Dialog=1472..1663}] as @a[tag=same_room,gamemode=!spectator,tag=!stand_still,tag=!looking_at_map] run function luigis_mansion:entities/player/animation/set/stand_still
+execute if entity @s[scores={Dialog=1472..1663}] as @a[tag=same_room,gamemode=!spectator,tag=!looking_at_map] run function luigis_mansion:entities/player/animation/set/stand_still
 execute if entity @s[scores={Dialog=1472}] if score #players Totals matches 1 run tellraw @a[tag=same_room] {"translate":"chat.type.text","with":[{"translate":"luigis_mansion:entity.e_gadd","color":"green"},{"translate":"luigis_mansion_3ds_remake:dialog.training_room.12"}]}
 execute if entity @s[scores={Dialog=1472}] if score #players Totals matches 2.. run tellraw @a[tag=same_room] {"translate":"chat.type.text","with":[{"translate":"luigis_mansion:entity.e_gadd","color":"green"},{"translate":"luigis_mansion_3ds_remake:dialog.training_room.12.more"}]}
 execute if entity @s[scores={Dialog=1472}] as @a[tag=same_room] at @s run playsound luigis_mansion:entity.e_gadd.talk.yahboh_yahboh_hoo_hoo_hoo neutral @s ~ ~ ~ 1
 execute if entity @s[scores={Dialog=1616}] run tellraw @a[tag=same_room] {"translate":"chat.type.text","with":[{"translate":"luigis_mansion:entity.e_gadd","color":"green"},{"translate":"luigis_mansion_3ds_remake:dialog.training_room.13"}]}
 execute if entity @s[scores={Dialog=1616}] as @a[tag=same_room] at @s run playsound luigis_mansion:entity.e_gadd.talk.oui_soh_suu_suhm_ck_ck neutral @s ~ ~ ~ 1
 execute if entity @s[scores={Dialog=1664}] run scoreboard players set #training_room TrainingRoomScore 0
-execute if entity @s[scores={Dialog=1664}] as @a[tag=same_room,gamemode=!spectator,tag=stand_still,tag=!looking_at_map] run function luigis_mansion:entities/player/animation/set/none
+execute if entity @s[scores={Dialog=1664}] as @a[tag=same_room,gamemode=!spectator,tag=!looking_at_map] run function luigis_mansion:entities/player/animation/set/none
 execute if entity @s[scores={Dialog=1664}] run function luigis_mansion:room/training_room/spawn_1_ghost
-execute if entity @s[scores={Dialog=1666..1810}] as @a[tag=same_room,gamemode=!spectator,tag=!stand_still,tag=!looking_at_map] run function luigis_mansion:entities/player/animation/set/stand_still
+execute if entity @s[scores={Dialog=1666..1810}] as @a[tag=same_room,gamemode=!spectator,tag=!looking_at_map] run function luigis_mansion:entities/player/animation/set/stand_still
 execute if entity @s[scores={Dialog=1667}] if score #players Totals matches 1 run tellraw @a[tag=same_room] {"translate":"chat.type.text","with":[{"translate":"luigis_mansion:entity.e_gadd","color":"green"},{"translate":"luigis_mansion_3ds_remake:dialog.training_room.14"}]}
 execute if entity @s[scores={Dialog=1667}] if score #players Totals matches 2.. run tellraw @a[tag=same_room] {"translate":"chat.type.text","with":[{"translate":"luigis_mansion:entity.e_gadd","color":"green"},{"translate":"luigis_mansion_3ds_remake:dialog.training_room.14.more"}]}
 execute if entity @s[scores={Dialog=1667}] as @a[tag=same_room] at @s run playsound luigis_mansion:entity.e_gadd.talk.oui_suu_soy_soh_ooh neutral @s ~ ~ ~ 1
-execute if entity @s[scores={Dialog=1811}] as @a[tag=same_room,gamemode=!spectator,tag=stand_still,tag=!looking_at_map] run function luigis_mansion:entities/player/animation/set/none
+execute if entity @s[scores={Dialog=1811}] as @a[tag=same_room,gamemode=!spectator,tag=!looking_at_map] run function luigis_mansion:entities/player/animation/set/none
 execute if entity @s[scores={Dialog=1811}] run function luigis_mansion:room/training_room/spawn_2_ghosts
-execute if entity @s[scores={Dialog=1813..1940}] as @a[tag=same_room,gamemode=!spectator,tag=!stand_still,tag=!looking_at_map] run function luigis_mansion:entities/player/animation/set/stand_still
+execute if entity @s[scores={Dialog=1813..1940}] as @a[tag=same_room,gamemode=!spectator,tag=!looking_at_map] run function luigis_mansion:entities/player/animation/set/stand_still
 execute if entity @s[scores={Dialog=1813}] run tellraw @a[tag=same_room] {"translate":"chat.type.text","with":[{"translate":"luigis_mansion:entity.e_gadd","color":"green"},{"translate":"luigis_mansion_3ds_remake:dialog.training_room.15"}]}
 execute if entity @s[scores={Dialog=1813}] as @a[tag=same_room] at @s run playsound luigis_mansion:entity.e_gadd.talk.longlaugh neutral @s ~ ~ ~ 1
-execute if entity @s[scores={Dialog=1941}] as @a[tag=same_room,gamemode=!spectator,tag=stand_still,tag=!looking_at_map] run function luigis_mansion:entities/player/animation/set/none
+execute if entity @s[scores={Dialog=1941}] as @a[tag=same_room,gamemode=!spectator,tag=!looking_at_map] run function luigis_mansion:entities/player/animation/set/none
 execute if entity @s[scores={Dialog=1941}] run function luigis_mansion:room/training_room/spawn_2_ghosts
-execute if entity @s[scores={Dialog=1943..2094}] as @a[tag=same_room,gamemode=!spectator,tag=!stand_still,tag=!looking_at_map] run function luigis_mansion:entities/player/animation/set/stand_still
+execute if entity @s[scores={Dialog=1943..2094}] as @a[tag=same_room,gamemode=!spectator,tag=!looking_at_map] run function luigis_mansion:entities/player/animation/set/stand_still
 execute if entity @s[scores={Dialog=1943}] if score #training_room TrainingRoomScore matches ..2 if score #players Totals matches 1 run tellraw @a[tag=same_room] {"translate":"chat.type.text","with":[{"translate":"luigis_mansion:entity.e_gadd","color":"green"},{"translate":"luigis_mansion_3ds_remake:dialog.training_room.16.bad"}]}
 execute if entity @s[scores={Dialog=1943}] if score #training_room TrainingRoomScore matches ..2 if score #players Totals matches 2.. run tellraw @a[tag=same_room] {"translate":"chat.type.text","with":[{"translate":"luigis_mansion:entity.e_gadd","color":"green"},{"translate":"luigis_mansion_3ds_remake:dialog.training_room.16.bad.more"}]}
 execute if entity @s[scores={Dialog=1943}] if score #training_room TrainingRoomScore matches ..2 as @a[tag=same_room] at @s run playsound luigis_mansion:entity.e_gadd.talk.suu_mee_soy_soh_ooh neutral @s ~ ~ ~ 1
@@ -81,9 +81,9 @@ execute if entity @s[scores={Dialog=1943}] if score #training_room TrainingRoomS
 execute if entity @s[scores={Dialog=1943}] if score #training_room TrainingRoomScore matches 3.. if score #players Totals matches 2.. run tellraw @a[tag=same_room] {"translate":"chat.type.text","with":[{"translate":"luigis_mansion:entity.e_gadd","color":"green"},{"translate":"luigis_mansion_3ds_remake:dialog.training_room.16.good.more"}]}
 execute if entity @s[scores={Dialog=1943}] if score #training_room TrainingRoomScore matches 3.. as @a[tag=same_room] at @s run playsound luigis_mansion:entity.e_gadd.talk.soy_soh_ooh_tahmentahkeh neutral @s ~ ~ ~ 1
 execute if entity @s[scores={Dialog=1943}] if score #training_room TrainingRoomScore matches 3.. run scoreboard players add @s Dialog 32
-execute if entity @s[scores={Dialog=2095}] as @a[tag=same_room,gamemode=!spectator,tag=stand_still,tag=!looking_at_map] run function luigis_mansion:entities/player/animation/set/none
+execute if entity @s[scores={Dialog=2095}] as @a[tag=same_room,gamemode=!spectator,tag=!looking_at_map] run function luigis_mansion:entities/player/animation/set/none
 execute if entity @s[scores={Dialog=2095}] run function luigis_mansion:room/training_room/spawn_5_ghosts
-execute if entity @s[scores={Dialog=2097..2716}] as @a[tag=same_room,gamemode=!spectator,tag=!stand_still,tag=!looking_at_map] run function luigis_mansion:entities/player/animation/set/stand_still
+execute if entity @s[scores={Dialog=2097..2716}] as @a[tag=same_room,gamemode=!spectator,tag=!looking_at_map] run function luigis_mansion:entities/player/animation/set/stand_still
 execute if entity @s[scores={Dialog=..2097}] if score #training_room TrainingRoomScore matches 3.. run function luigis_mansion_3ds_remake:room/gallery/clear_task/beginner/task_7
 execute if entity @s[scores={Dialog=..2097}] if score #training_room TrainingRoomScore matches 10 run function luigis_mansion_3ds_remake:room/gallery/clear_task/easy/task_7
 execute if entity @s[scores={Dialog=2097}] if score #players Totals matches 1 run tellraw @a[tag=same_room] {"translate":"chat.type.text","with":[{"translate":"luigis_mansion:entity.e_gadd","color":"green"},{"translate":"luigis_mansion:dialog.training_room.20"}]}
@@ -158,7 +158,7 @@ execute if entity @s[scores={Dialog=2421}] if score #training_room TrainingRoomS
 execute if entity @s[scores={Dialog=2421}] if score #training_room TrainingRoomScore matches 8.. as @a[tag=same_room] at @s run playsound luigis_mansion:entity.e_gadd.talk.oui_soh_suu_suhm_ck_ck neutral @s ~ ~ ~ 1
 execute if entity @s[scores={Dialog=2501}] run scoreboard players set @a[tag=same_room] Health 100
 execute if entity @s[scores={Dialog=2501}] if data storage luigis_mansion:data rooms.training_room{cleared:1b} as @a[tag=same_room,tag=looking_at_map] run function luigis_mansion:items/game_boy_horror/map/close
-execute if entity @s[scores={Dialog=2501}] if data storage luigis_mansion:data rooms.training_room{cleared:1b} as @a[tag=same_room,gamemode=!spectator,tag=stand_still,tag=!looking_at_map] run function luigis_mansion:entities/player/animation/set/none
+execute if entity @s[scores={Dialog=2501}] if data storage luigis_mansion:data rooms.training_room{cleared:1b} as @a[tag=same_room,gamemode=!spectator,tag=!looking_at_map] run function luigis_mansion:entities/player/animation/set/none
 execute if entity @s[scores={Dialog=2501}] if data storage luigis_mansion:data rooms.training_room{cleared:1b} as @a[tag=same_room] run function luigis_mansion:room/underground_lab/warp_to
 execute if entity @s[scores={Dialog=2501}] if data storage luigis_mansion:data rooms.training_room{cleared:0b} if score #players Totals matches 1 run tellraw @a[tag=same_room] {"translate":"chat.type.text","with":[{"translate":"luigis_mansion:entity.e_gadd","color":"green"},{"translate":"luigis_mansion:dialog.training_room.25"}]}
 execute if entity @s[scores={Dialog=2501}] if data storage luigis_mansion:data rooms.training_room{cleared:0b} if score #players Totals matches 2.. run tellraw @a[tag=same_room] {"translate":"chat.type.text","with":[{"translate":"luigis_mansion:entity.e_gadd","color":"green"},{"translate":"luigis_mansion:dialog.training_room.25.more"}]}
@@ -170,11 +170,11 @@ execute if entity @s[scores={Dialog=2717}] run data modify storage luigis_mansio
 execute if entity @s[scores={Dialog=2717}] run advancement grant @a[tag=same_room] until luigis_mansion:lab/training_room
 execute if entity @s[scores={Dialog=2717}] if entity @a[tag=looking_at_map,limit=1] run function luigis_mansion:items/game_boy_horror/map/display/lab/generate
 execute if entity @s[scores={Dialog=2717}] as @a[tag=same_room,tag=looking_at_map] run function luigis_mansion:items/game_boy_horror/map/close
-execute if entity @s[scores={Dialog=2717}] as @a[tag=same_room,gamemode=!spectator,tag=stand_still,tag=!looking_at_map] run function luigis_mansion:entities/player/animation/set/none
+execute if entity @s[scores={Dialog=2717}] as @a[tag=same_room,gamemode=!spectator,tag=!looking_at_map] run function luigis_mansion:entities/player/animation/set/none
 execute if entity @s[scores={Dialog=2717}] as @a[tag=same_room] run function luigis_mansion_3ds_remake:room/gallery/warp_to
 execute if entity @s[scores={Dialog=2718}] run tag @e[tag=e_gadd,scores={Room=-5}] add talk
 execute if entity @s[scores={Dialog=2944}] run function luigis_mansion:room/training_room/turn_lights/on
-execute if entity @s[scores={Dialog=2944..}] as @a[tag=same_room,gamemode=!spectator,tag=!game_boy_horror,tag=!looking_at_map] run function luigis_mansion:entities/player/animation/set/game_boy_horror
+execute if entity @s[scores={Dialog=2944..}] as @a[tag=same_room,gamemode=!spectator,tag=!looking_at_map] run function luigis_mansion:entities/player/animation/set/game_boy_horror
 execute if entity @s[scores={Dialog=2944}] run scoreboard players set @a[tag=same_room] Health 100
 execute if entity @s[scores={Dialog=2944}] run scoreboard players set @a[tag=same_room] Pull 0
 execute if entity @s[scores={Dialog=2944}] run scoreboard players set #training_room TrainingRoomScore 0

@@ -1,12 +1,7 @@
-scoreboard players set @s Room 75
-scoreboard players set @s PreviousRoom 75
+teleport @s[scores={PositionIntX=..572}] ~1 ~ ~
+teleport @s[scores={PositionIntX=600..}] ~-1 ~ ~
+teleport @s[scores={PositionIntZ=68..}] ~ ~ ~-1
+teleport @s[scores={PositionIntZ=..1}] ~ ~ ~1
 
-teleport @s[scores={HomeX=..572}] ~1 ~ ~
-teleport @s[scores={HomeX=600..}] ~-1 ~ ~
-teleport @s[scores={HomeZ=68..}] ~ ~ ~-1
-teleport @s[scores={HomeZ=..1}] ~ ~ ~1
-
-teleport @s[scores={HomeY=..25}] ~ ~1 ~
-teleport @s[scores={HomeY=47..}] ~ ~-1 ~
-
-tag @s add already_ticked
+teleport @s[scores={PositionIntY=..25}] ~ ~1 ~
+teleport @s[scores={PositionIntY=47..}] ~ ~-1 ~

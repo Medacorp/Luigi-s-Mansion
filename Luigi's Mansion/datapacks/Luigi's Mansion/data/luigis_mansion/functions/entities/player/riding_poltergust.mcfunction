@@ -5,8 +5,8 @@ scoreboard players reset #temp Time
 
 execute store result score @s SlipX run data get entity @s Pos[0] 100
 execute store result score @s SlipZ run data get entity @s Pos[2] 100
-scoreboard players operation @s SlipX -= @s PosX
-scoreboard players operation @s SlipZ -= @s PosZ
+scoreboard players operation @s SlipX -= @s PositionX
+scoreboard players operation @s SlipZ -= @s PositionZ
 scoreboard players reset #temp SlipX
 scoreboard players reset #temp SlipZ
 scoreboard players set @s[tag=x_stop] SlipX 0

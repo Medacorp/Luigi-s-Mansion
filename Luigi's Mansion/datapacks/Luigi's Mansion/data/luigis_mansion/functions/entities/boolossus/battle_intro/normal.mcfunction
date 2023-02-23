@@ -1,7 +1,7 @@
 scoreboard players set #freeze_timer Selected 1
 scoreboard players add @s Dialog 1
 scoreboard players set @s[tag=fleeing] Dialog 440
-execute if entity @s[scores={Dialog=1..99}] as @a[tag=same_room,gamemode=!spectator,scores={IdleTime=0..},tag=!looking_at_map] unless entity @s[scores={ScareTime=1..}] run function luigis_mansion:entities/player/animation/set/high_health_idle_no_sound
+execute if entity @s[scores={Dialog=1..99}] as @a[tag=same_room,gamemode=!spectator,tag=!looking_at_map] unless entity @s[scores={ScareTime=1..}] run function luigis_mansion:entities/player/animation/set/high_health_idle_no_sound
 execute if entity @s[scores={Dialog=100}] as @a[tag=same_room,gamemode=!spectator,tag=!looking_at_map] run function luigis_mansion:entities/player/animation/set/none
 execute if entity @s[scores={Dialog=100}] run playsound luigis_mansion:entity.boolossus.laugh_2 hostile @a[tag=same_room] ~ ~ ~ 30
 execute if entity @s[scores={Dialog=100}] as @a[tag=same_room] run function luigis_mansion:entities/player/scare/freeze

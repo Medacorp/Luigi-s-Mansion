@@ -1,7 +1,7 @@
 teleport @s ~ ~ ~ ~ ~
-execute store result score #interact PosX run data get entity @s Pos[0] 10
-execute store result score #interact PosY run data get entity @s Pos[1] 10
-execute store result score #interact PosZ run data get entity @s Pos[2] 10
+execute store result score #interact PositionX run data get entity @s Pos[0] 10
+execute store result score #interact PositionY run data get entity @s Pos[1] 10
+execute store result score #interact PositionZ run data get entity @s Pos[2] 10
 execute as @e[tag=!furniture,tag=same_room] if data entity @s ArmorItems[3].tag.scan_message run function luigis_mansion:items/game_boy_horror/scan/target_entity/root
 execute at @s[tag=!entity_scanned] as @a[tag=same_room,tag=!scanning_player] run function luigis_mansion:items/game_boy_horror/scan/target_entity/player_root
 execute at @s[tag=!entity_scanned] as @e[tag=furniture,tag=same_room] if data entity @s ArmorItems[3].tag.scan_message run function luigis_mansion:items/game_boy_horror/scan/target_furniture/root

@@ -1,33 +1,28 @@
-execute unless entity @s[scores={Room=63}] run title @s title {"translate":"luigis_mansion:location.roof"}
-scoreboard players set @s Room 63
-scoreboard players set @s PreviousRoom 63
 
-teleport @s[scores={HomeX=683}] ~1 ~ ~
-teleport @s[scores={HomeX=712}] ~-1 ~ ~
-teleport @s[scores={HomeZ=45}] ~ ~ ~-1
-teleport @s[scores={HomeZ=-30}] ~ ~ ~1
+teleport @s[scores={PositionIntX=683}] ~1 ~ ~
+teleport @s[scores={PositionIntX=712}] ~-1 ~ ~
+teleport @s[scores={PositionIntZ=45}] ~ ~ ~-1
+teleport @s[scores={PositionIntZ=-30}] ~ ~ ~1
 
-teleport @s[scores={HomeY=143}] ~ ~-1 ~
-teleport @s[scores={HomeY=129,HomeX=684..687,HomeZ=38..44}] ~5 ~-96 ~39
-teleport @s[scores={HomeY=129,HomeX=684..687,HomeZ=33..37}] ~ ~1 ~
-teleport @s[scores={HomeY=129,HomeX=688..697,HomeZ=33..44}] ~5 ~-96 ~39
-teleport @s[scores={HomeY=129,HomeZ=31..32}] ~ ~1 ~
-teleport @s[scores={HomeY=129,HomeZ=26..30}] ~42 ~-96 ~
-teleport @s[scores={HomeY=129,HomeZ=24..25}] ~ ~1 ~
-teleport @s[scores={HomeY=129,HomeX=684..697,HomeZ=-8..23}] ~ ~-5 ~
-teleport @s[scores={HomeY=129,HomeZ=-10..-9}] ~ ~1 ~
-teleport @s[scores={HomeY=129,HomeZ=-15..-11}] ~41 ~-96 ~-16
-teleport @s[scores={HomeY=129,HomeZ=-17..-16}] ~ ~1 ~
-teleport @s[scores={HomeY=129,HomeX=684..687,HomeZ=-29..-23}] ~14 ~-96 ~-25
-teleport @s[scores={HomeY=129,HomeX=684..687,HomeZ=-22..-18}] ~ ~1 ~
-teleport @s[scores={HomeY=129,HomeX=688..697,HomeZ=-29..-18}] ~14 ~-96 ~-25
-teleport @s[scores={HomeY=129,HomeX=698..699,HomeZ=33..44}] ~ ~1 ~
-teleport @s[scores={HomeY=129,HomeX=698..699,HomeZ=-8..23}] ~ ~1 ~
-teleport @s[scores={HomeY=129,HomeX=698..699,HomeZ=-29..-18}] ~ ~1 ~
-teleport @s[scores={HomeY=129,HomeX=700..704,HomeZ=33..44}] ~14 ~-96 ~13
-teleport @s[scores={HomeY=129,HomeX=700..711,HomeZ=-8..23}] ~38 ~-96 ~-10
-teleport @s[scores={HomeY=129,HomeX=700..711,HomeZ=-29..-18}] ~46 ~-96 ~-23
-teleport @s[scores={HomeY=129,HomeX=705..706,HomeZ=33..44}] ~ ~1 ~
-teleport @s[scores={HomeY=129,HomeX=707..711,HomeZ=33..44}] ~27 ~-96 ~18
-
-tag @s add already_ticked
+teleport @s[scores={PositionIntY=143}] ~ ~-1 ~
+teleport @s[scores={PositionIntY=129,PositionIntX=684..687,PositionIntZ=38..44}] ~5 ~-96 ~39
+teleport @s[scores={PositionIntY=129,PositionIntX=684..687,PositionIntZ=33..37}] ~ ~1 ~
+teleport @s[scores={PositionIntY=129,PositionIntX=688..697,PositionIntZ=33..44}] ~5 ~-96 ~39
+teleport @s[scores={PositionIntY=129,PositionIntZ=31..32}] ~ ~1 ~
+teleport @s[scores={PositionIntY=129,PositionIntZ=26..30}] ~42 ~-96 ~
+teleport @s[scores={PositionIntY=129,PositionIntZ=24..25}] ~ ~1 ~
+teleport @s[scores={PositionIntY=129,PositionIntX=684..697,PositionIntZ=-8..23}] ~ ~-5 ~
+teleport @s[scores={PositionIntY=129,PositionIntZ=-10..-9}] ~ ~1 ~
+teleport @s[scores={PositionIntY=129,PositionIntZ=-15..-11}] ~41 ~-96 ~-16
+teleport @s[scores={PositionIntY=129,PositionIntZ=-17..-16}] ~ ~1 ~
+teleport @s[scores={PositionIntY=129,PositionIntX=684..687,PositionIntZ=-29..-23}] ~14 ~-96 ~-25
+teleport @s[scores={PositionIntY=129,PositionIntX=684..687,PositionIntZ=-22..-18}] ~ ~1 ~
+teleport @s[scores={PositionIntY=129,PositionIntX=688..697,PositionIntZ=-29..-18}] ~14 ~-96 ~-25
+teleport @s[scores={PositionIntY=129,PositionIntX=698..699,PositionIntZ=33..44}] ~ ~1 ~
+teleport @s[scores={PositionIntY=129,PositionIntX=698..699,PositionIntZ=-8..23}] ~ ~1 ~
+teleport @s[scores={PositionIntY=129,PositionIntX=698..699,PositionIntZ=-29..-18}] ~ ~1 ~
+teleport @s[scores={PositionIntY=129,PositionIntX=700..704,PositionIntZ=33..44}] ~14 ~-96 ~13
+teleport @s[scores={PositionIntY=129,PositionIntX=700..711,PositionIntZ=-8..23}] ~38 ~-96 ~-10
+teleport @s[scores={PositionIntY=129,PositionIntX=700..711,PositionIntZ=-29..-18}] ~46 ~-96 ~-23
+teleport @s[scores={PositionIntY=129,PositionIntX=705..706,PositionIntZ=33..44}] ~ ~1 ~
+teleport @s[scores={PositionIntY=129,PositionIntX=707..711,PositionIntZ=33..44}] ~27 ~-96 ~18

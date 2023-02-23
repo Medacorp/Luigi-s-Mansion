@@ -1,26 +1,26 @@
-scoreboard players operation #temp PosX = @s PosX
-scoreboard players operation #temp PosY = @s PosY
-scoreboard players operation #temp PosZ = @s PosZ
-scoreboard players operation #temp2 PosX = #temp PosX
-scoreboard players operation #temp2 PosY = #temp PosY
-scoreboard players operation #temp2 PosZ = #temp PosZ
+scoreboard players operation #temp PositionX = @s PositionX
+scoreboard players operation #temp PositionY = @s PositionY
+scoreboard players operation #temp PositionZ = @s PositionZ
+scoreboard players operation #temp2 PositionX = #temp PositionX
+scoreboard players operation #temp2 PositionY = #temp PositionY
+scoreboard players operation #temp2 PositionZ = #temp PositionZ
 scoreboard players operation #temp FurnitureSizeWidth = @s FurnitureSizeWidth
 scoreboard players operation #temp FurnitureSizeHeight = @s FurnitureSizeHeight
 scoreboard players operation #temp FurnitureSizeWidth /= #2 Constants
 execute if entity @s[tag=!hanging_furniture,tag=!standing_furniture] run scoreboard players operation #temp FurnitureSizeHeight /= #2 Constants
 scoreboard players operation #temp FurnitureSizeZ /= #2 Constants
-scoreboard players operation #temp PosX -= #temp FurnitureSizeWidth
-execute if entity @s[tag=!standing_furniture] run scoreboard players operation #temp PosY -= #temp FurnitureSizeHeight
-scoreboard players operation #temp PosZ -= #temp FurnitureSizeWidth
-scoreboard players operation #temp2 PosX += #temp FurnitureSizeWidth
-execute if entity @s[tag=!hanging_furniture] run scoreboard players operation #temp2 PosY += #temp FurnitureSizeHeight
-scoreboard players operation #temp2 PosZ += #temp FurnitureSizeWidth
-execute if score #interact PosX >= #temp PosX if score #interact PosX <= #temp2 PosX if score #interact PosY >= #temp PosY if score #interact PosY <= #temp2 PosY if score #interact PosZ >= #temp PosZ if score #interact PosZ <= #temp2 PosZ run tag @s add hit
-scoreboard players reset #temp PosX
-scoreboard players reset #temp PosY
-scoreboard players reset #temp PosZ
+scoreboard players operation #temp PositionX -= #temp FurnitureSizeWidth
+execute if entity @s[tag=!standing_furniture] run scoreboard players operation #temp PositionY -= #temp FurnitureSizeHeight
+scoreboard players operation #temp PositionZ -= #temp FurnitureSizeWidth
+scoreboard players operation #temp2 PositionX += #temp FurnitureSizeWidth
+execute if entity @s[tag=!hanging_furniture] run scoreboard players operation #temp2 PositionY += #temp FurnitureSizeHeight
+scoreboard players operation #temp2 PositionZ += #temp FurnitureSizeWidth
+execute if score #interact PositionX >= #temp PositionX if score #interact PositionX <= #temp2 PositionX if score #interact PositionY >= #temp PositionY if score #interact PositionY <= #temp2 PositionY if score #interact PositionZ >= #temp PositionZ if score #interact PositionZ <= #temp2 PositionZ run tag @s add hit
+scoreboard players reset #temp PositionX
+scoreboard players reset #temp PositionY
+scoreboard players reset #temp PositionZ
 scoreboard players reset #temp FurnitureSizeWidth
 scoreboard players reset #temp FurnitureSizeHeight
-scoreboard players reset #temp2 PosX
-scoreboard players reset #temp2 PosY
-scoreboard players reset #temp2 PosZ
+scoreboard players reset #temp2 PositionX
+scoreboard players reset #temp2 PositionY
+scoreboard players reset #temp2 PositionZ

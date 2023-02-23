@@ -2,7 +2,7 @@ scoreboard players set #freeze_timer Selected 1
 execute if entity @a[scores={Toad5Choice=1..},limit=1] run scoreboard players add @s[scores={Dialog=93..}] Dialog 1
 scoreboard players add @s[scores={Dialog=..92}] Dialog 1
 execute unless entity @s[scores={Dialog=1..}] run scoreboard players add @s Dialog 1
-execute if entity @s[scores={Dialog=1..863,IdleTime=0..},tag=!looking_at_map] run function luigis_mansion:entities/player/animation/set/answer_phone
+execute if entity @s[scores={Dialog=1..863},tag=!looking_at_map] run function luigis_mansion:entities/player/animation/set/answer_phone
 execute if entity @s[scores={Dialog=20}] run tellraw @a[scores={Room=56}] {"translate":"chat.type.text","with":[{"translate":"luigis_mansion:entity.unknown","color":"green"},{"translate":"luigis_mansion:dialog.toad_5.1"}]}
 execute if entity @s[scores={Dialog=92}] unless data storage luigis_mansion:data current_state.current_data.technical_data{telephone_1:1b} run tellraw @a[scores={Room=56}] {"translate":"luigis_mansion:dialog.toad_5.yes","color":"green","with":[{"selector":"@s","clickEvent":{"action":"run_command","value":"/trigger Toad5Choice set 1"}}],"clickEvent":{"action":"run_command","value":"/trigger Toad5Choice set 1"},"extra":[{"text":"\n"},{"translate":"luigis_mansion:dialog.toad_5.no","clickEvent":{"action":"run_command","value":"/trigger Toad5Choice set 2"}}]}
 execute if entity @s[scores={Dialog=92}] unless data storage luigis_mansion:data current_state.current_data.technical_data{telephone_1:1b} run scoreboard players enable @s Toad5Choice

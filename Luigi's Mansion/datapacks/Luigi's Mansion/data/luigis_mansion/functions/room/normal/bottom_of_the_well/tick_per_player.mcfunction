@@ -4,4 +4,8 @@ execute if data storage luigis_mansion:data current_state.current_data{blackout:
 title @s[tag=!seen_room_name] title {"translate":"luigis_mansion:location.bottom_of_the_well"}
 tag @s add seen_room_name
 
-execute if data storage luigis_mansion:data current_state.current_data.rooms.bottom_of_the_well{seen:0b} run function luigis_mansion:room/normal/bottom_of_the_well/set_seen
+execute if data storage luigis_mansion:data current_state.current_data.rooms.bottom_of_the_well{seen:0b} unless entity @s[gamemode=spectator] run function luigis_mansion:room/normal/bottom_of_the_well/set_seen
+
+execute unless entity @s[tag=!wall_warp,gamemode=!spectator] if entity @s[tag=!already_ticked] run function luigis_mansion:room/normal/bottom_of_the_well/spectator_tick
+
+tag @s add already_ticked

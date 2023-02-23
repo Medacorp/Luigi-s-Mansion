@@ -2,9 +2,9 @@ execute if entity @s[scores={IdleTime=..-1},tag=idle] run function luigis_mansio
 scoreboard players add @s[scores={PoltergustTime=..10}] PoltergustTime 1
 scoreboard players set @s[tag=instant_poltergust_grab] PoltergustTime 11
 summon minecraft:marker ~ ~ ~ {Tags:["home","remove_from_existence"]}
-execute store result entity @e[tag=home,limit=1] Pos[0] double 0.01 run scoreboard players get @s PosX
-execute store result entity @e[tag=home,limit=1] Pos[1] double 0.01 run scoreboard players get @s PosY
-execute store result entity @e[tag=home,limit=1] Pos[2] double 0.01 run scoreboard players get @s PosZ
+execute store result entity @e[tag=home,limit=1] Pos[0] double 0.01 run scoreboard players get @s PositionX
+execute store result entity @e[tag=home,limit=1] Pos[1] double 0.01 run scoreboard players get @s PositionY
+execute store result entity @e[tag=home,limit=1] Pos[2] double 0.01 run scoreboard players get @s PositionZ
 execute at @e[tag=home,limit=1] run tp @s ~ 0 ~
 execute at @e[tag=home,limit=1] run tp @s ~ ~ ~
 kill @e[tag=home,limit=1]

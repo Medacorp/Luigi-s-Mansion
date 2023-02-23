@@ -1,6 +1,6 @@
 scoreboard players set #freeze_timer Selected 1
 scoreboard players add @s Dialog 1
-execute if entity @s[scores={Dialog=1..252,IdleTime=0..},tag=!looking_at_map] run function luigis_mansion:entities/player/animation/set/stand_still
+execute if entity @s[scores={Dialog=1..252},tag=!looking_at_map] run function luigis_mansion:entities/player/animation/set/stand_still
 execute if entity @s[scores={Dialog=1}] as @a[tag=same_room] run function luigis_mansion:other/music/set/non_overwritten_silence
 execute if entity @s[scores={Dialog=1}] run stopsound @a music
 execute if entity @s[scores={Dialog=1}] run playsound luigis_mansion:music.marios_painting_repeat music @a ~ ~ ~ 1000

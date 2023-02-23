@@ -1,6 +1,6 @@
 scoreboard players set #freeze_timer Selected 1
 scoreboard players add @s Dialog 1
-execute if entity @s[scores={Dialog=1..1239,IdleTime=0..},tag=!looking_at_map] run function luigis_mansion:entities/player/animation/set/answer_phone
+execute if entity @s[scores={Dialog=1..1239},tag=!looking_at_map] run function luigis_mansion:entities/player/animation/set/answer_phone
 execute if entity @s[scores={Dialog=20}] run tellraw @a[tag=same_room] {"translate":"chat.type.text","with":[{"translate":"luigis_mansion:entity.unknown","color":"green"},{"translate":"luigis_mansion:dialog.uncle_grimmly.1"}]}
 execute if entity @s[scores={Dialog=44}] if score #players Totals matches 1 run tellraw @a[tag=same_room] {"translate":"chat.type.text","with":[{"translate":"luigis_mansion:entity.e_gadd","color":"green"},{"translate":"luigis_mansion:dialog.uncle_grimmly.2"}]}
 execute if entity @s[scores={Dialog=44}] if score #players Totals matches 2.. run tellraw @a[tag=same_room] {"translate":"chat.type.text","with":[{"translate":"luigis_mansion:entity.e_gadd","color":"green"},{"translate":"luigis_mansion:dialog.uncle_grimmly.2.more"}]}

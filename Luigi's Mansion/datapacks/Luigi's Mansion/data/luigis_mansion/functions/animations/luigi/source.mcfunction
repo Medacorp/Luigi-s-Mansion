@@ -1,12 +1,12 @@
 # Rotate if moving
 scoreboard players reset @s[scores={Animation=13..23}] PlayerRotation
 scoreboard players reset @s[scores={Animation=41..}] PlayerRotation
-execute store result score @s PosX run scoreboard players get @a[tag=this_luigi,limit=1] PosX
-execute store result score @s PosZ run scoreboard players get @a[tag=this_luigi,limit=1] PosZ
+execute store result score @s PositionX run scoreboard players get @a[tag=this_luigi,limit=1] PositionX
+execute store result score @s PositionZ run scoreboard players get @a[tag=this_luigi,limit=1] PositionZ
 execute store result score @s HomeX run scoreboard players get @a[tag=this_luigi,limit=1] OtherX
 execute store result score @s HomeZ run scoreboard players get @a[tag=this_luigi,limit=1] OtherZ
-scoreboard players operation @s HomeX -= @s PosX
-scoreboard players operation @s HomeZ -= @s PosZ
+scoreboard players operation @s HomeX -= @s PositionX
+scoreboard players operation @s HomeZ -= @s PositionZ
 execute unless entity @s[scores={HomeX=0,HomeZ=0}] at @s[tag=!stop_model] positioned ^ ^-1.65 ^.25 rotated as @a[tag=this_luigi,limit=1] rotated ~ 0 positioned ^ ^ ^-0.5 if entity @a[tag=this_luigi,limit=1,distance=..0.49] run tag @s add moving_backwards
 execute unless entity @s[scores={HomeX=0,HomeZ=0}] at @s[tag=!stop_model,tag=!moving_backwards] facing entity @a[tag=this_luigi,limit=1] feet rotated ~ 0 run teleport @s ~ ~ ~ ~ ~
 execute at @s[tag=!stop_model,tag=moving_backwards] rotated as @a[tag=this_luigi,limit=1] rotated ~ 0 run teleport @s ~ ~ ~ ~ ~

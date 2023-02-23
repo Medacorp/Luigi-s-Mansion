@@ -1,6 +1,6 @@
 scoreboard players set #freeze_timer Selected 1
 scoreboard players add @s Dialog 1
-execute if entity @s[scores={Dialog=1..120}] as @a[tag=same_room,gamemode=!spectator,scores={IdleTime=0..},tag=!looking_at_map] run function luigis_mansion:entities/player/animation/set/high_health_idle_no_sound
+execute if entity @s[scores={Dialog=1..120}] as @a[tag=same_room,gamemode=!spectator,tag=!looking_at_map] run function luigis_mansion:entities/player/animation/set/high_health_idle_no_sound
 execute if entity @s[scores={Dialog=2}] run stopsound @a[tag=same_room] music
 execute if entity @s[scores={Dialog=2}] run scoreboard players set @a[tag=same_room] Music 140
 execute if entity @s[scores={Dialog=3}] run playsound luigis_mansion:music.mansion.room.astral_hall music @a[tag=same_room] ~ ~ ~ 1000
@@ -23,7 +23,7 @@ execute at @e[tag=light_me,tag=same_room,tag=!purple,tag=large_flame] run playso
 tag @e[tag=light_me,tag=same_room,tag=!purple,tag=large_flame] add purple
 tag @e[tag=light_me,tag=same_room,tag=purple,tag=!large_flame] remove lit
 execute if entity @s[scores={Dialog=120}] run function luigis_mansion:room/hidden/astral_hall/wave_1
-execute if entity @s[scores={Dialog=120}] run tag @a[tag=same_room,gamemode=!spectator,tag=high_health_idle,tag=!looking_at_map] add idle
+execute if entity @s[scores={Dialog=120}] run tag @a[tag=same_room,gamemode=!spectator,tag=!looking_at_map] add idle
 execute if entity @s[scores={Dialog=130}] run tag @e[tag=light_me,tag=same_room] remove purple
 execute if entity @s[scores={Dialog=130}] run tag @e[tag=light_me,tag=same_room] add lit
 tag @s[scores={Dialog=130}] remove astral_hall_ambush

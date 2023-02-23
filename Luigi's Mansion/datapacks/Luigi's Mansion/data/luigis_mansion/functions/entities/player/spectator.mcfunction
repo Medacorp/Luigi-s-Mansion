@@ -36,7 +36,3 @@ execute at @e[tag=target,tag=!hidden] run particle minecraft:dust 0.7 1 0 1 ~ ~1
 tag @e[tag=target] remove target
 scoreboard players reset #temp Room
 tag @s add spectator
-
-execute store result score @s HomeX run data get entity @s Pos[0]
-execute store result score @s HomeY run data get entity @s Pos[1]
-execute store result score @s HomeZ run data get entity @s Pos[2]

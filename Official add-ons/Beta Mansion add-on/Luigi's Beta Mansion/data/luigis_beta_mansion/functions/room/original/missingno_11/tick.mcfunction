@@ -1,9 +1,9 @@
 execute unless score #missingno_11 Ticking matches 1 run function #luigis_beta_mansion:room/original/missingno_11/load
 execute as @a[gamemode=!spectator,x=713,y=26,z=-42,dx=7,dy=9,dz=13] unless entity @s[scores={Room=27}] run scoreboard players operation @s LastRoom = @s Room
-execute as @e[tag=!spectator,x=713,y=26,z=-42,dx=7,dy=9,dz=13] unless entity @s[tag=ghost,tag=appear] unless entity @s[tag=ghost,tag=vanish] run scoreboard players set @s Room 27
+execute as @e[x=713,y=26,z=-42,dx=7,dy=9,dz=13] unless entity @s[tag=ghost,tag=appear] unless entity @s[tag=ghost,tag=vanish] run scoreboard players set @s Room 27
 scoreboard players set #temp Room 27
 
-execute as @a[gamemode=!spectator,scores={Room=27}] run function luigis_beta_mansion:room/original/missingno_11/tick_per_player
+execute as @a[scores={Room=27}] run function luigis_beta_mansion:room/original/missingno_11/tick_per_player
 
 function #luigis_beta_mansion:room/original/missingno_11/interactions/room
 

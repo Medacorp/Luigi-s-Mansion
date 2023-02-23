@@ -4,7 +4,11 @@ execute unless data storage luigis_mansion:data current_state.current_data.rooms
 title @s[tag=!seen_room_name] title {"translate":"luigis_mansion:location.nursery"}
 tag @s add seen_room_name
 
-execute if data storage luigis_mansion:data current_state.current_data.rooms.nursery{seen:0b} run function luigis_mansion:room/normal/nursery/set_seen
+execute if data storage luigis_mansion:data current_state.current_data.rooms.nursery{seen:0b} unless entity @s[gamemode=spectator] run function luigis_mansion:room/normal/nursery/set_seen
+
+execute unless entity @s[tag=!wall_warp,gamemode=!spectator] if entity @s[tag=!already_ticked] run function luigis_mansion:room/normal/nursery/spectator_tick
+
+tag @s add already_ticked
 
 execute unless data storage luigis_mansion:data current_state.current_data.rooms.nursery{cleared:1b} if entity @s[scores={MusicType=7}] run playsound luigis_mansion:music.mansion.room.nursery ambient @s[scores={RoomNoise=0}] ~ ~ ~ 1000
 execute unless data storage luigis_mansion:data current_state.current_data.rooms.nursery{cleared:1b} if entity @s[scores={MusicType=7}] run scoreboard players set @s[scores={RoomNoise=0}] RoomNoise 978

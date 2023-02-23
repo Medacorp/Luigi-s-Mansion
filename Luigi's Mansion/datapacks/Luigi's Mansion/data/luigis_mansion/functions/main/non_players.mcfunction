@@ -7,10 +7,10 @@ execute if entity @s[type=minecraft:item] run function luigis_mansion:main/items
 # Fix multiple lightning loading in
 execute if entity @s[type=minecraft:lightning_bolt] run kill @e[type=minecraft:lightning_bolt,distance=0.1..]
 
-execute if entity @s[tag=!furniture] store result score @s PosX run data get entity @s Pos[0] 10
-execute if entity @s[tag=!furniture] store result score @s PosY run data get entity @s Pos[1] 10
-execute if entity @s[tag=!furniture] store result score @s PosZ run data get entity @s Pos[2] 10
-execute if entity @s[tag=!furniture] run scoreboard players operation @s PosY += @s EntityYOffset
+execute if entity @s[tag=!furniture] store result score @s PositionX run data get entity @s Pos[0] 10
+execute if entity @s[tag=!furniture] store result score @s PositionY run data get entity @s Pos[1] 10
+execute if entity @s[tag=!furniture] store result score @s PositionZ run data get entity @s Pos[2] 10
+execute if entity @s[tag=!furniture] run scoreboard players operation @s PositionY += @s EntityYOffset
 
 tag @s remove scanned
 tag @s[tag=remove_from_existence] add dead

@@ -1,6 +1,6 @@
 scoreboard players set #freeze_timer Selected 1
 scoreboard players add @s GBHDialog 1
-execute if entity @s[scores={GBHDialog=1..775}] as @a[gamemode=!spectator,tag=!game_boy_horror,tag=!looking_at_map] run function luigis_mansion:entities/player/animation/set/game_boy_horror
+execute if entity @s[scores={GBHDialog=1..775}] as @a[gamemode=!spectator,tag=!looking_at_map] run function luigis_mansion:entities/player/animation/set/game_boy_horror
 execute if entity @s[scores={GBHDialog=1..}] as @a run function luigis_mansion:other/music/set/game_boy_horror
 execute if entity @s[scores={GBHDialog=1}] if score #players Totals matches 1 run tellraw @a {"translate":"chat.type.text","with":[{"translate":"luigis_mansion:entity.e_gadd","color":"green"},{"translate":"luigis_mansion:dialog.portrait_ghosts.1","with":[{"selector":"@p[gamemode=!spectator]"}]}]}
 execute if entity @s[scores={GBHDialog=1}] if score #players Totals matches 2.. run tellraw @a {"translate":"chat.type.text","with":[{"translate":"luigis_mansion:entity.e_gadd","color":"green"},{"translate":"luigis_mansion:dialog.portrait_ghosts.1.more"}]}
@@ -24,7 +24,7 @@ execute if entity @s[scores={GBHDialog=688}] if score #players Totals matches 1 
 execute if entity @s[scores={GBHDialog=688}] if score #players Totals matches 2.. run tellraw @a {"translate":"chat.type.text","with":[{"translate":"luigis_mansion:entity.e_gadd","color":"green"},{"translate":"luigis_mansion:dialog.portrait_ghosts.8.more"}]}
 execute if entity @s[scores={GBHDialog=688}] as @a at @s run playsound luigis_mansion:entity.e_gadd.talk.ohmayah_luigi neutral @s ~ ~ ~ 1
 execute if entity @s[scores={GBHDialog=776}] as @a run function luigis_mansion:other/music/set/silence
-execute if entity @s[scores={GBHDialog=776}] as @a[gamemode=!spectator,tag=game_boy_horror,tag=!looking_at_map] run function luigis_mansion:entities/player/animation/set/none
+execute if entity @s[scores={GBHDialog=776}] as @a[gamemode=!spectator,tag=!looking_at_map] run function luigis_mansion:entities/player/animation/set/none
 scoreboard players set @s[scores={GBHDialog=776}] GBHCall 0
 scoreboard players set @s[scores={GBHDialog=776}] GBHWait 0
 scoreboard players reset @s[scores={GBHDialog=776}] GBHDialog

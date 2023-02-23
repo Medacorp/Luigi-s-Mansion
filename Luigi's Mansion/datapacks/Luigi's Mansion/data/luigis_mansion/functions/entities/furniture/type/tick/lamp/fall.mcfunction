@@ -40,6 +40,6 @@ scoreboard players reset #temp Time
 scoreboard players reset #temp2 Time
 scoreboard players reset #temp3 Time
 execute positioned as @e[tag=location,limit=1] run function luigis_mansion:entities/furniture/type/tick/lamp/light
-execute if entity @s[scores={MirrorX=-2147483648..}] as @e[tag=location,limit=1] at @s run function luigis_mansion::entities/furniture/type/tick/lamp/mirror_x
-execute if entity @s[scores={MirrorZ=-2147483648..}] as @e[tag=location,limit=1] at @s run function luigis_mansion::entities/furniture/type/tick/lamp/mirror_z
+execute if entity @s[scores={MirrorX=-2147483648..}] as @e[tag=location,limit=1] at @s run function luigis_mansion:entities/furniture/type/tick/lamp/mirror_x
+execute if entity @s[scores={MirrorZ=-2147483648..}] as @e[tag=location,limit=1] at @s run function luigis_mansion:entities/furniture/type/tick/lamp/mirror_z
 kill @e[tag=location,limit=1]

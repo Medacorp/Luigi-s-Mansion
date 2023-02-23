@@ -39,7 +39,3 @@ tag @s add spectator
 
 scoreboard players add @s[tag=gooigi,scores={RespawnTimer=..99}] RespawnTimer 1
 execute if entity @s[tag=gooigi,scores={RespawnTimer=100}] if entity @a[distance=..0.1,tag=!gooigi,tag=!portrait_battle] run function luigis_mansion_3ds_remake:entities/player/gooigi_respawn
-
-execute store result score @s HomeX run data get entity @s Pos[0]
-execute store result score @s HomeY run data get entity @s Pos[1]
-execute store result score @s HomeZ run data get entity @s Pos[2]

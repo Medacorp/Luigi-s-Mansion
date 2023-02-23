@@ -47,9 +47,9 @@ execute at @s run teleport @s[scores={Dialog=261}] ^ ^ ^3.1
 execute at @s run teleport @s[scores={Dialog=262..299}] ^ ^ ^3.2
 execute at @s[scores={Dialog=22..299}] run particle minecraft:end_rod ~ ~ ~ 5 5 5 0 5 force @s
 teleport @s[scores={Dialog=300..340}] 643 20 -80 -180 0
-execute store result score @s PosX run data get entity @s Pos[0] 100
-execute store result score @s PosY run data get entity @s Pos[1] 100
-execute store result score @s PosZ run data get entity @s Pos[2] 100
+execute store result score @s PositionX run data get entity @s Pos[0] 100
+execute store result score @s PositionY run data get entity @s Pos[1] 100
+execute store result score @s PositionZ run data get entity @s Pos[2] 100
 execute if entity @s[scores={Dialog=300}] run playsound luigis_mansion:music.solve_puzzle music @a[tag=same_room,gamemode=!spectator] ~ ~ ~ 1000
 tag @s[scores={Dialog=340}] remove observatory_dialog
 execute if entity @s[scores={Dialog=340}] run function luigis_mansion:entities/player/animation/set/none

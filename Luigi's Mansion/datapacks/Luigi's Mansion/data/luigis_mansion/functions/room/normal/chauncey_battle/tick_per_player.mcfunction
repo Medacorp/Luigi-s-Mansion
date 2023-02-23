@@ -3,5 +3,9 @@ execute if data storage luigis_mansion:data current_state.current_data.portrait_
 tag @s add seen_room_name
 scoreboard players set @s LastFloor 1
 
-execute if data storage luigis_mansion:data current_state.current_data.rooms.nursery{seen:0b} run function luigis_mansion:room/normal/nursery/set_seen
+execute if data storage luigis_mansion:data current_state.current_data.rooms.nursery{seen:0b} unless entity @s[gamemode=spectator] run function luigis_mansion:room/normal/nursery/set_seen
+
+execute unless entity @s[tag=!wall_warp,gamemode=!spectator] if entity @s[tag=!already_ticked] run function luigis_mansion:room/normal/nursery/spectator_tick
+
+tag @s add already_ticked
 execute if data storage luigis_mansion:data current_state.current_data.rooms.nursery{cleared:1b} run function luigis_mansion:room/normal/chauncey_battle/clear_nursery

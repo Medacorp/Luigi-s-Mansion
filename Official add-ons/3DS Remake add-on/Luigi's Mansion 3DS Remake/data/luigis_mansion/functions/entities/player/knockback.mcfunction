@@ -82,9 +82,9 @@ execute at @s[scores={KnockbackTime=5,KnockbackType=5,Sound=0,Health=..40,Shrunk
 execute at @s[scores={KnockbackTime=5,KnockbackType=5,Sound=0,Health=..40,Shrunk=1..},tag=!gooigi] run playsound luigis_mansion:entity.player.recover.low_health player @a[tag=same_room] ~ ~ ~ 1 2
 scoreboard players set @s[scores={KnockbackTime=5,KnockbackType=5,Sound=0},tag=!gooigi] Sound 10
 execute at @s[scores={KnockbackType=5},tag=gooigi] run summon minecraft:marker ~ ~ ~ {Tags:["home","remove_from_existence"]}
-execute at @s[scores={KnockbackType=5},tag=gooigi] store result entity @e[tag=home,limit=1] Pos[0] double 0.01 run scoreboard players get @s PosX
-execute at @s[scores={KnockbackType=5},tag=gooigi] store result entity @e[tag=home,limit=1] Pos[1] double 0.01 run scoreboard players get @s PosY
-execute at @s[scores={KnockbackType=5},tag=gooigi] store result entity @e[tag=home,limit=1] Pos[2] double 0.01 run scoreboard players get @s PosZ
+execute at @s[scores={KnockbackType=5},tag=gooigi] store result entity @e[tag=home,limit=1] Pos[0] double 0.01 run scoreboard players get @s PositionX
+execute at @s[scores={KnockbackType=5},tag=gooigi] store result entity @e[tag=home,limit=1] Pos[1] double 0.01 run scoreboard players get @s PositionY
+execute at @s[scores={KnockbackType=5},tag=gooigi] store result entity @e[tag=home,limit=1] Pos[2] double 0.01 run scoreboard players get @s PositionZ
 execute at @s[scores={KnockbackType=5},tag=gooigi] store result entity @e[tag=home,limit=1] Rotation[0] float 0.01 run scoreboard players get @s RotationY
 execute at @s[scores={KnockbackType=5},tag=gooigi] store result entity @e[tag=home,limit=1] Rotation[1] float 0.01 run scoreboard players get @s RotationX
 execute at @s[scores={KnockbackType=5},tag=gooigi] at @e[tag=home,limit=1] run tp @s ~ 0 ~ ~ ~
@@ -105,9 +105,9 @@ execute at @s[scores={KnockbackTime=10,KnockbackType=6,Sound=0,Health=..40,Shrun
 execute at @s[scores={KnockbackTime=10,KnockbackType=6,Sound=0,Health=..40,Shrunk=1..},tag=!gooigi] run playsound luigis_mansion:entity.player.hurt_soak.low_health player @a[tag=same_room] ~ ~ ~ 1 2
 scoreboard players set @s[scores={KnockbackTime=10,KnockbackType=6,Sound=0},tag=!gooigi] Sound 20
 execute at @s[scores={KnockbackType=6}] run summon minecraft:marker ~ ~ ~ {Tags:["home","remove_from_existence"]}
-execute at @s[scores={KnockbackType=6}] store result entity @e[tag=home,limit=1] Pos[0] double 0.01 run scoreboard players get @s PosX
-execute at @s[scores={KnockbackType=6}] store result entity @e[tag=home,limit=1] Pos[1] double 0.01 run scoreboard players get @s PosY
-execute at @s[scores={KnockbackType=6}] store result entity @e[tag=home,limit=1] Pos[2] double 0.01 run scoreboard players get @s PosZ
+execute at @s[scores={KnockbackType=6}] store result entity @e[tag=home,limit=1] Pos[0] double 0.01 run scoreboard players get @s PositionX
+execute at @s[scores={KnockbackType=6}] store result entity @e[tag=home,limit=1] Pos[1] double 0.01 run scoreboard players get @s PositionY
+execute at @s[scores={KnockbackType=6}] store result entity @e[tag=home,limit=1] Pos[2] double 0.01 run scoreboard players get @s PositionZ
 execute at @s[scores={KnockbackType=6}] store result entity @e[tag=home,limit=1] Rotation[0] float 0.01 run scoreboard players get @s RotationY
 execute at @s[scores={KnockbackType=6}] store result entity @e[tag=home,limit=1] Rotation[1] float 0.01 run scoreboard players get @s RotationX
 execute at @s[scores={KnockbackType=6}] at @e[tag=home,limit=1] run tp @s ~ 0 ~ ~ ~
@@ -119,9 +119,9 @@ execute at @s[scores={KnockbackTime=80,KnockbackType=7,Sound=0,Shrunk=0},tag=!go
 execute at @s[scores={KnockbackTime=80,KnockbackType=7,Sound=0,Shrunk=1..},tag=!gooigi] run playsound luigis_mansion:entity.player.hurt_freeze player @a[tag=same_room] ~ ~ ~ 1 2
 scoreboard players set @s[scores={KnockbackTime=10..,KnockbackType=7,Sound=0},tag=!gooigi] Sound 2
 execute at @s[scores={KnockbackType=7}] run summon minecraft:marker ~ ~ ~ {Tags:["home","remove_from_existence"]}
-execute at @s[scores={KnockbackType=7}] store result entity @e[tag=home,limit=1] Pos[0] double 0.01 run scoreboard players get @s PosX
-execute at @s[scores={KnockbackType=7}] store result entity @e[tag=home,limit=1] Pos[1] double 0.01 run scoreboard players get @s PosY
-execute at @s[scores={KnockbackType=7}] store result entity @e[tag=home,limit=1] Pos[2] double 0.01 run scoreboard players get @s PosZ
+execute at @s[scores={KnockbackType=7}] store result entity @e[tag=home,limit=1] Pos[0] double 0.01 run scoreboard players get @s PositionX
+execute at @s[scores={KnockbackType=7}] store result entity @e[tag=home,limit=1] Pos[1] double 0.01 run scoreboard players get @s PositionY
+execute at @s[scores={KnockbackType=7}] store result entity @e[tag=home,limit=1] Pos[2] double 0.01 run scoreboard players get @s PositionZ
 execute at @s[scores={KnockbackType=7}] store result entity @e[tag=home,limit=1] Rotation[0] float 0.01 run scoreboard players get @s RotationY
 execute at @s[scores={KnockbackType=7}] store result entity @e[tag=home,limit=1] Rotation[1] float 0.01 run scoreboard players get @s RotationX
 execute at @s[scores={KnockbackTime=10..,KnockbackType=7}] unless entity @e[tag=home,limit=1,distance=..0.1] run scoreboard players remove @s KnockbackTime 2
@@ -157,24 +157,24 @@ scoreboard players set @s[scores={KnockbackType=8..10,Sound=0},tag=!gooigi] Soun
 execute at @s[scores={KnockbackType=8..10}] run scoreboard players operation #temp GrabbedID = @s ID
 execute at @s[scores={KnockbackType=8..10}] as @e[tag=ghost,scores={GrabbedID=-2147483648..}] if score @s GrabbedID = #temp GrabbedID run tag @s add this_ghost
 execute if entity @e[tag=this_ghost,limit=1,scores={VulnerableTime=0}] run scoreboard players add @s[scores={KnockbackTime=1,KnockbackType=8..10}] KnockbackTime 1
-execute at @s[scores={KnockbackTime=2..,KnockbackType=8..10}] store result score #temp PosX run data get entity @s Pos[0] 100
-execute at @s[scores={KnockbackTime=2..,KnockbackType=8..10}] store result score #temp PosZ run data get entity @s Pos[2] 100
-execute at @s[scores={KnockbackTime=2..,KnockbackType=8..10}] run scoreboard players operation #temp PosX -= @s PosX
-execute at @s[scores={KnockbackTime=2..,KnockbackType=8..10}] run scoreboard players operation #temp PosZ -= @s PosZ
-execute at @s[scores={KnockbackTime=2..,KnockbackType=8..10},tag=!positive_x] if score #temp PosX matches 8.. run tag @s add struggle
-execute at @s[scores={KnockbackTime=2..,KnockbackType=8..10},tag=!positive_z] if score #temp PosZ matches 8.. run tag @s add struggle
-execute at @s[scores={KnockbackTime=2..,KnockbackType=8..10},tag=!negative_x] if score #temp PosX matches ..-8 run tag @s add struggle
-execute at @s[scores={KnockbackTime=2..,KnockbackType=8..10},tag=!negative_z] if score #temp PosZ matches ..-8 run tag @s add struggle
-execute at @s[scores={KnockbackType=8..10}] if score #temp PosX matches -8..8 if score #temp PosZ matches -8..8 run tag @s add didnt_move
+execute at @s[scores={KnockbackTime=2..,KnockbackType=8..10}] store result score #temp PositionX run data get entity @s Pos[0] 100
+execute at @s[scores={KnockbackTime=2..,KnockbackType=8..10}] store result score #temp PositionZ run data get entity @s Pos[2] 100
+execute at @s[scores={KnockbackTime=2..,KnockbackType=8..10}] run scoreboard players operation #temp PositionX -= @s PositionX
+execute at @s[scores={KnockbackTime=2..,KnockbackType=8..10}] run scoreboard players operation #temp PositionZ -= @s PositionZ
+execute at @s[scores={KnockbackTime=2..,KnockbackType=8..10},tag=!positive_x] if score #temp PositionX matches 8.. run tag @s add struggle
+execute at @s[scores={KnockbackTime=2..,KnockbackType=8..10},tag=!positive_z] if score #temp PositionZ matches 8.. run tag @s add struggle
+execute at @s[scores={KnockbackTime=2..,KnockbackType=8..10},tag=!negative_x] if score #temp PositionX matches ..-8 run tag @s add struggle
+execute at @s[scores={KnockbackTime=2..,KnockbackType=8..10},tag=!negative_z] if score #temp PositionZ matches ..-8 run tag @s add struggle
+execute at @s[scores={KnockbackType=8..10}] if score #temp PositionX matches -8..8 if score #temp PositionZ matches -8..8 run tag @s add didnt_move
 execute at @s[scores={KnockbackType=8..10}] run tag @s[tag=!didnt_move] remove positive_x
 execute at @s[scores={KnockbackType=8..10}] run tag @s[tag=!didnt_move] remove positive_z
 execute at @s[scores={KnockbackType=8..10}] run tag @s[tag=!didnt_move] remove negative_x
 execute at @s[scores={KnockbackType=8..10}] run tag @s[tag=!didnt_move] remove negative_z
 execute at @s[scores={KnockbackType=8..10}] run tag @s remove didnt_move
-execute at @s[scores={KnockbackTime=2..,KnockbackType=8..10}] if score #temp PosX matches 8.. run tag @s add positive_x
-execute at @s[scores={KnockbackTime=2..,KnockbackType=8..10}] if score #temp PosZ matches 8.. run tag @s add positive_z
-execute at @s[scores={KnockbackTime=2..,KnockbackType=8..10}] if score #temp PosX matches ..-8 run tag @s add negative_x
-execute at @s[scores={KnockbackTime=2..,KnockbackType=8..10}] if score #temp PosZ matches ..-8 run tag @s add negative_z
+execute at @s[scores={KnockbackTime=2..,KnockbackType=8..10}] if score #temp PositionX matches 8.. run tag @s add positive_x
+execute at @s[scores={KnockbackTime=2..,KnockbackType=8..10}] if score #temp PositionZ matches 8.. run tag @s add positive_z
+execute at @s[scores={KnockbackTime=2..,KnockbackType=8..10}] if score #temp PositionX matches ..-8 run tag @s add negative_x
+execute at @s[scores={KnockbackTime=2..,KnockbackType=8..10}] if score #temp PositionZ matches ..-8 run tag @s add negative_z
 execute at @s[scores={KnockbackTime=2..,KnockbackType=8..10},tag=struggle] run scoreboard players add @s GrabbedShake 1
 execute at @s[scores={KnockbackTime=2..,KnockbackType=8..9},tag=struggle] run scoreboard players set @e[tag=this_ghost,limit=1] ActionTime 20
 execute at @s[scores={KnockbackTime=2..,KnockbackType=10},tag=struggle] run scoreboard players set @e[tag=this_ghost,limit=1] ActionTime 31
@@ -264,9 +264,9 @@ execute if entity @s[scores={KnockbackTime=125,KnockbackType=14}] store result s
 execute if entity @s[scores={KnockbackTime=125,KnockbackType=14}] run data modify storage luigis_mansion:data damage.attacker set from storage luigis_mansion:data my_memory.hurt_by.attacker
 execute if entity @s[scores={KnockbackTime=125,KnockbackType=14}] run function luigis_mansion:entities/player/take_damage
 execute at @s[scores={KnockbackType=14}] run summon minecraft:marker ~ ~ ~ {Tags:["home","remove_from_existence"]}
-execute at @s[scores={KnockbackType=14}] store result entity @e[tag=home,limit=1] Pos[0] double 0.01 run scoreboard players get @s PosX
-execute at @s[scores={KnockbackType=14}] store result entity @e[tag=home,limit=1] Pos[1] double 0.01 run scoreboard players get @s PosY
-execute at @s[scores={KnockbackType=14}] store result entity @e[tag=home,limit=1] Pos[2] double 0.01 run scoreboard players get @s PosZ
+execute at @s[scores={KnockbackType=14}] store result entity @e[tag=home,limit=1] Pos[0] double 0.01 run scoreboard players get @s PositionX
+execute at @s[scores={KnockbackType=14}] store result entity @e[tag=home,limit=1] Pos[1] double 0.01 run scoreboard players get @s PositionY
+execute at @s[scores={KnockbackType=14}] store result entity @e[tag=home,limit=1] Pos[2] double 0.01 run scoreboard players get @s PositionZ
 execute at @s[scores={KnockbackType=14}] store result entity @e[tag=home,limit=1] Rotation[0] float 0.01 run scoreboard players get @s RotationY
 execute at @s[scores={KnockbackType=14}] store result entity @e[tag=home,limit=1] Rotation[1] float 0.01 run scoreboard players get @s RotationX
 execute at @s[scores={KnockbackType=14}] at @e[tag=home,limit=1] run tp @s ~ 0 ~ ~ ~

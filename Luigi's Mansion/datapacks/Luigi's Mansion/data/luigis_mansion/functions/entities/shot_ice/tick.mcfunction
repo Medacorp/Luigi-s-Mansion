@@ -15,9 +15,9 @@ execute if entity @s[tag=hit] run data remove storage luigis_mansion:data damage
 tag @s[tag=hit] add dead
 execute at @s[tag=dead] run playsound luigis_mansion:item.poltergust_3000.shoot.ice.hit hostile @a[tag=same_room] ~ ~ ~ 1
 execute at @s positioned ~ ~1.4 ~ run function luigis_mansion:items/poltergust_3000/ice
-scoreboard players reset #interact PosX
-scoreboard players reset #interact PosY
-scoreboard players reset #interact PosZ
+scoreboard players reset #interact PositionX
+scoreboard players reset #interact PositionY
+scoreboard players reset #interact PositionZ
 tag @e[tag=hit_by_poltergust] remove hit_by_poltergust
 scoreboard players reset #temp ID
 tag @s remove me

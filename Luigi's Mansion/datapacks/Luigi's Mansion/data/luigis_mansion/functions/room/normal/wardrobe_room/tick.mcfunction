@@ -1,11 +1,11 @@
 execute unless score #wardrobe_room Ticking matches 1 run function #luigis_mansion:room/normal/wardrobe_room/load
 execute as @a[gamemode=!spectator,x=676,y=17,z=55,dx=12,dy=9,dz=21] unless entity @s[scores={Room=5}] run scoreboard players operation @s LastRoom = @s Room
-execute as @e[tag=!spectator,x=676,y=17,z=55,dx=12,dy=9,dz=21] unless entity @s[tag=ghost,tag=appear] unless entity @s[tag=ghost,tag=vanish] run scoreboard players set @s Room 5
+execute as @e[x=676,y=17,z=55,dx=12,dy=9,dz=21] unless entity @s[tag=ghost,tag=appear] unless entity @s[tag=ghost,tag=vanish] run scoreboard players set @s Room 5
 scoreboard players set #temp Room 5
 
 execute as @e[scores={Room=5},type=!minecraft:marker] unless entity @s[gamemode=spectator] run scoreboard players set @s MirrorX 677
 
-execute as @a[gamemode=!spectator,scores={Room=5}] run function luigis_mansion:room/normal/wardrobe_room/tick_per_player
+execute as @a[scores={Room=5}] run function luigis_mansion:room/normal/wardrobe_room/tick_per_player
 
 function #luigis_mansion:room/normal/wardrobe_room/interactions/room
 

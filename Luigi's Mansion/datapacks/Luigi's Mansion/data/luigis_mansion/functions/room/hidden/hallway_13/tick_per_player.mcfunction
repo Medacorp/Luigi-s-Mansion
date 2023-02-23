@@ -3,8 +3,12 @@ execute unless data storage luigis_mansion:data current_state.current_data.rooms
 execute if data storage luigis_mansion:data current_state.current_data{blackout:1b} unless entity @s[x=697,y=19,z=31,dx=15,dy=8,dz=8] unless entity @s[x=712,y=19,z=58,dx=8,dy=17,dz=12] run function luigis_mansion:other/music/set/hallway
 tag @s add seen_room_name
 
-execute if data storage luigis_mansion:data current_state.current_data.rooms.hallway_13{seen:0b} run function luigis_mansion:room/hidden/hallway_13/set_seen
+execute if data storage luigis_mansion:data current_state.current_data.rooms.hallway_13{seen:0b} unless entity @s[gamemode=spectator] run function luigis_mansion:room/hidden/hallway_13/set_seen
 
-execute if entity @s[x=718,y=20,z=34,distance=..9,tag=!chance_check] if data storage luigis_mansion:data current_state.current_data{blackout:0b} unless data storage luigis_mansion:data current_state.current_data.rooms.hallway_13{cleared:1b} unless data storage luigis_mansion:data current_state.current_data{money_spawned:["hallway_9_hallway_15_gold_mouse"]} unless entity @e[tag=gold_mouse,scores={Room=35..41},limit=1] run function luigis_mansion:room/hidden/hallway_13/gold_mouse
-execute if entity @s[x=718,y=20,z=34,distance=..9,tag=!chance_check] if data storage luigis_mansion:data current_state.current_data{blackout:1b} unless data storage luigis_mansion:data current_state.current_data{money_spawned:["hallway_9_hallway_15_gold_mouse"]} unless entity @e[tag=gold_mouse,scores={Room=35..41},limit=1] run function luigis_mansion:room/hidden/hallway_13/gold_mouse
-tag @s[x=718,y=20,z=34,distance=9..10,tag=chance_check] remove chance_check
+execute unless entity @s[tag=!wall_warp,gamemode=!spectator] if entity @s[tag=!already_ticked] run function luigis_mansion:room/hidden/hallway_13/spectator_tick
+
+tag @s add already_ticked
+
+execute if entity @s[x=718,y=20,z=34,tag=!spectator,distance=..9,tag=!chance_check] if data storage luigis_mansion:data current_state.current_data{blackout:0b} unless data storage luigis_mansion:data current_state.current_data.rooms.hallway_13{cleared:1b} unless data storage luigis_mansion:data current_state.current_data{money_spawned:["hallway_9_hallway_15_gold_mouse"]} unless entity @e[tag=gold_mouse,scores={Room=35..41},limit=1] run function luigis_mansion:room/hidden/hallway_13/gold_mouse
+execute if entity @s[x=718,y=20,z=34,tag=!spectator,distance=..9,tag=!chance_check] if data storage luigis_mansion:data current_state.current_data{blackout:1b} unless data storage luigis_mansion:data current_state.current_data{money_spawned:["hallway_9_hallway_15_gold_mouse"]} unless entity @e[tag=gold_mouse,scores={Room=35..41},limit=1] run function luigis_mansion:room/hidden/hallway_13/gold_mouse
+tag @s[x=718,y=20,z=34,tag=!spectator,distance=9..10,tag=chance_check] remove chance_check

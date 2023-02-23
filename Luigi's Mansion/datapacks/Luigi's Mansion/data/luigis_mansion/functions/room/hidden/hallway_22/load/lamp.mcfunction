@@ -1,1 +1,1 @@
-execute positioned 670 8 33 run function luigis_mansion:spawn_furniture/lamp/no_model
+execute positioned 670 8 33 run function luigis_mansion:spawn_furniture/lamp

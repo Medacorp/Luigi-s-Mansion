@@ -1,13 +1,8 @@
-execute unless entity @s[scores={Room=44}] run title @s title {"translate":"luigis_mansion:location.nanas_room"}
-scoreboard players set @s Room 44
-scoreboard players set @s PreviousRoom 44
 
-teleport @s[scores={HomeX=653}] ~1 ~ ~
-teleport @s[scores={HomeX=663}] ~17 ~ ~-6
-teleport @s[scores={HomeZ=17}] ~15 ~ ~-8
-teleport @s[scores={HomeZ=43}] ~-15 ~ ~3
+teleport @s[scores={PositionIntX=653}] ~1 ~ ~
+teleport @s[scores={PositionIntX=663}] ~17 ~ ~-6
+teleport @s[scores={PositionIntZ=17}] ~15 ~ ~-8
+teleport @s[scores={PositionIntZ=43}] ~-15 ~ ~3
 
-teleport @s[scores={HomeY=18}] ~ ~-3 ~
-teleport @s[scores={HomeY=25}] ~1 ~94 ~-19
-
-tag @s add already_ticked
+teleport @s[scores={PositionIntY=18}] ~ ~-3 ~
+teleport @s[scores={PositionIntY=25}] ~1 ~94 ~-19

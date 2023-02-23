@@ -74,8 +74,8 @@ execute at @s[scores={Animation=45}] run function luigis_mansion_3ds_remake:anim
 
 tag @s[tag=low_health] add dark_room_head
 tag @s[scores={Animation=2..4}] add dark_room_head
-execute unless entity @s[scores={KnockbackType=0}] run tag @s add dark_room_head
-execute if data storage luigis_mansion:data luigi.mainhand.tag.luigis_mansion.poltergust_model_data run tag @s add dark_room_head
+tag @s[scores={Animation=27..}] add dark_room_head
+tag @s[tag=poltergust_grabbed] add dark_room_head
 execute if entity @s[tag=dark_room] if entity @s[scores={Animation=0..1}] run function luigis_mansion:animations/luigi/idle/head_dark_room
 execute if entity @s[tag=!dark_room] run function luigis_mansion:animations/luigi/idle/head
 tag @s remove dark_room_head

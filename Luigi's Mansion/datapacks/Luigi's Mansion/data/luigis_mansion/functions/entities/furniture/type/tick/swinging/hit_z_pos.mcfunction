@@ -11,11 +11,11 @@ execute if entity @s[tag=standing_furniture,scores={FurnitureSizeRadius=1..}] ru
 execute as @e[tag=collision_check,tag=z,limit=1] at @s unless score #forward Steps matches 0 run function luigis_mansion:entities/furniture/type/tick/swinging/hit_pos/move_forward
 execute store result entity @e[tag=collision_check,tag=z,limit=1] Rotation[0] float 0.1 run scoreboard players get #temp3 Time
 execute store result entity @e[tag=collision_check,tag=z,limit=1] Rotation[1] float 0.1 run scoreboard players get #temp2 Time
-execute as @e[tag=collision_check,tag=z,limit=1] store result score @s PosX run data get entity @s Pos[0] 10
-execute as @e[tag=collision_check,tag=z,limit=1] store result score @s PosY run data get entity @s Pos[1] 10
-execute as @e[tag=collision_check,tag=z,limit=1] store result score @s PosZ run data get entity @s Pos[2] 10
-scoreboard players operation @e[tag=collision_check,tag=z,limit=1] PosX -= @s PosX
-scoreboard players operation @e[tag=collision_check,tag=z,limit=1] PosY -= @s PosY
-scoreboard players operation @e[tag=collision_check,tag=z,limit=1] PosZ -= @s PosZ
+execute as @e[tag=collision_check,tag=z,limit=1] store result score @s PositionX run data get entity @s Pos[0] 10
+execute as @e[tag=collision_check,tag=z,limit=1] store result score @s PositionY run data get entity @s Pos[1] 10
+execute as @e[tag=collision_check,tag=z,limit=1] store result score @s PositionZ run data get entity @s Pos[2] 10
+scoreboard players operation @e[tag=collision_check,tag=z,limit=1] PositionX -= @s PositionX
+scoreboard players operation @e[tag=collision_check,tag=z,limit=1] PositionY -= @s PositionY
+scoreboard players operation @e[tag=collision_check,tag=z,limit=1] PositionZ -= @s PositionZ
 
 execute as @e[tag=collision_check,tag=z,limit=1] run function luigis_mansion:entities/furniture/type/tick/swinging/hit_pos/make_pos_relative

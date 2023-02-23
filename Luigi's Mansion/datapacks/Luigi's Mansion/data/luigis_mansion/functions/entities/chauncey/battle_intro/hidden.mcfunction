@@ -1,6 +1,6 @@
 scoreboard players set #freeze_timer Selected 1
 scoreboard players add @s Dialog 1
-execute if entity @s[scores={Dialog=1..139}] as @a[tag=same_room,tag=!spectator,tag=!high_health_idle,tag=!looking_at_map] run function luigis_mansion:entities/player/animation/set/high_health_idle_no_sound
+execute if entity @s[scores={Dialog=1..139}] as @a[tag=same_room,tag=!spectator,tag=!looking_at_map] run function luigis_mansion:entities/player/animation/set/high_health_idle_no_sound
 execute if entity @s[scores={Dialog=110}] run teleport @s ~ ~ ~ -90 0
 execute if entity @s[scores={Dialog=120}] run playsound luigis_mansion:entity.chauncey.cutscene_scream hostile @a[tag=same_room] ~ ~ ~ 3
 execute if entity @s[scores={Dialog=120}] positioned ~-2.5 ~11 ~3.5 run function luigis_mansion:spawn_entities/rocking_horse/intro
@@ -43,7 +43,7 @@ tag @s[scores={Dialog=590}] remove wink
 tag @s[scores={Dialog=590}] add rambling
 tag @s[scores={Dialog=630}] remove rambling
 tag @s[scores={Dialog=630}] add attack
-execute if entity @s[scores={Dialog=650..669}] as @a[tag=same_room,tag=!spectator,tag=!stand_still,tag=!looking_at_map] run function luigis_mansion:entities/player/animation/set/stand_still
+execute if entity @s[scores={Dialog=650..669}] as @a[tag=same_room,tag=!spectator,tag=!looking_at_map] run function luigis_mansion:entities/player/animation/set/stand_still
 tag @s[scores={Dialog=670}] add intro_done
 execute if entity @s[scores={Dialog=670}] as @a[tag=same_room,tag=!spectator,tag=!looking_at_map] run function luigis_mansion:entities/player/animation/set/none
 scoreboard players set @s[scores={Dialog=670}] Dialog 0

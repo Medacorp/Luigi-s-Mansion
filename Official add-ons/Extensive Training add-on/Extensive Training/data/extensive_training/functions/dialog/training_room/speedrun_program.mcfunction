@@ -37,11 +37,11 @@ execute if entity @s[scores={Dialog=192}] run scoreboard players reset #temp4 Ti
 execute if entity @s[scores={Dialog=192}] run scoreboard players reset #temp5 Time
 execute if entity @s[scores={Dialog=192}] run scoreboard players reset #temp6 Time
 execute if entity @s[scores={Dialog=296}] run function luigis_mansion:room/training_room/turn_lights/off
-execute if entity @s[scores={Dialog=296}] as @a[tag=same_room,gamemode=!spectator,tag=game_boy_horror,tag=!looking_at_map] run function luigis_mansion:entities/player/animation/set/none
+execute if entity @s[scores={Dialog=296}] as @a[tag=same_room,gamemode=!spectator,tag=!looking_at_map] run function luigis_mansion:entities/player/animation/set/none
 execute if entity @s[scores={Dialog=297}] unless entity @e[tag=ghost,scores={Room=-2},limit=1] unless entity @a[x=795.0,y=77,z=-8.0,distance=..5,limit=1] run particle minecraft:crit 795.0 77 -8.0 2.5 2.5 2.5 0 10 force @a[tag=same_room]
 execute if entity @s[scores={Dialog=297}] unless entity @e[tag=ghost,scores={Room=-2},limit=1] if entity @a[x=795.0,y=77,z=-8.0,distance=..5,limit=1] run function extensive_training:room/training_room/spawn_wave/speedrun
 execute if entity @s[scores={Dialog=297}] if entity @e[tag=ghost,scores={Room=-2},limit=1] run scoreboard players add #training_room Time 1
-execute if entity @s[scores={Dialog=298..699}] as @a[tag=same_room,gamemode=!spectator,tag=!stand_still,tag=!looking_at_map] run function luigis_mansion:entities/player/animation/set/stand_still
+execute if entity @s[scores={Dialog=298..699}] as @a[tag=same_room,gamemode=!spectator,tag=!looking_at_map] run function luigis_mansion:entities/player/animation/set/stand_still
 execute if entity @s[scores={Dialog=298}] run function luigis_mansion:room/training_room/turn_lights/on
 execute if entity @s[scores={Dialog=298}] run scoreboard players set @a[tag=same_room] Health 100
 execute if entity @s[scores={Dialog=298}] if score #players Totals matches 1 run tellraw @a[tag=same_room] {"translate":"chat.type.text","with":[{"translate":"luigis_mansion:entity.e_gadd","color":"green"},{"translate":"extensive_training:dialog.speedrun.4"}]}
@@ -98,10 +98,10 @@ execute if entity @s[scores={Dialog=554}] run scoreboard players reset #temp3 Ti
 execute if entity @s[scores={Dialog=554}] run scoreboard players reset #temp4 Time
 execute if entity @s[scores={Dialog=554}] run scoreboard players reset #temp5 Time
 execute if entity @s[scores={Dialog=554}] run scoreboard players reset #temp6 Time
-execute if entity @s[scores={Dialog=650}] as @a[tag=same_room,gamemode=!spectator,tag=stand_still,tag=!looking_at_map] run function luigis_mansion:entities/player/animation/set/none
+execute if entity @s[scores={Dialog=650}] as @a[tag=same_room,gamemode=!spectator,tag=!looking_at_map] run function luigis_mansion:entities/player/animation/set/none
 execute if entity @s[scores={Dialog=650}] as @a[tag=same_room] run function luigis_mansion:room/underground_lab/warp_to
 execute if entity @s[scores={Dialog=700}] run function luigis_mansion:room/training_room/turn_lights/on
-execute if entity @s[scores={Dialog=700..827}] as @a[tag=same_room,gamemode=!spectator,tag=game_boy_horror,tag=!looking_at_map] run function luigis_mansion:entities/player/animation/set/none
+execute if entity @s[scores={Dialog=700..827}] as @a[tag=same_room,gamemode=!spectator,tag=!looking_at_map] run function luigis_mansion:entities/player/animation/set/none
 execute if entity @s[scores={Dialog=700}] run scoreboard players reset @a[tag=same_room] DeathTime
 execute if entity @s[scores={Dialog=700}] run scoreboard players set @a[tag=same_room] Health 100
 execute if entity @s[scores={Dialog=700}] run tag @a[tag=same_room] remove death_animation
@@ -112,5 +112,5 @@ execute if entity @s[scores={Dialog=700}] if score #players Totals matches 2.. r
 execute if entity @s[scores={Dialog=700}] as @a[tag=same_room] at @s run playsound luigis_mansion:entity.e_gadd.talk.hmmm_nohjeebeedoggy_ohmoogah neutral @s ~ ~ ~ 1
 execute if entity @s[scores={Dialog=748}] run tellraw @a[tag=same_room] {"translate":"chat.type.text","with":[{"translate":"luigis_mansion:entity.e_gadd","color":"green"},{"translate":"extensive_training:dialog.speedrun.defeat.2"}]}
 execute if entity @s[scores={Dialog=748}] as @a[tag=same_room] at @s run playsound luigis_mansion:entity.e_gadd.talk.oh_tohmah_poheh_jeemee_jeemee neutral @s ~ ~ ~ 1
-execute if entity @s[scores={Dialog=828}] as @a[tag=same_room,gamemode=!spectator,tag=game_boy_horror,tag=!looking_at_map] run function luigis_mansion:entities/player/animation/set/none
+execute if entity @s[scores={Dialog=828}] as @a[tag=same_room,gamemode=!spectator,tag=!looking_at_map] run function luigis_mansion:entities/player/animation/set/none
 execute if entity @s[scores={Dialog=828}] as @a[tag=same_room] run function luigis_mansion:room/underground_lab/warp_to

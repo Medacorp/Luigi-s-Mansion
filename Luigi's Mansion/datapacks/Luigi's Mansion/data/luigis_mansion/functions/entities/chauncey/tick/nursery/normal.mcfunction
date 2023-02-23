@@ -25,7 +25,7 @@ execute if entity @s[scores={Dialog=10},tag=scream_wake] run playsound luigis_ma
 execute if entity @s[scores={Dialog=30},tag=scream_wake] run playsound luigis_mansion:entity.chauncey.scream_wake hostile @a[tag=same_room] ~ ~ ~ 1
 scoreboard players set @s[scores={Dialog=51}] AnimationProgress 0
 execute if entity @s[scores={Dialog=51}] run tag @e[scores={Room=10},tag=door,tag=frame] add blockade
-execute if entity @s[scores={Dialog=51..168}] as @a[tag=same_room,gamemode=!spectator,scores={IdleTime=0..},tag=!looking_at_map] run function luigis_mansion:entities/player/animation/set/stand_still
+execute if entity @s[scores={Dialog=51..168}] as @a[tag=same_room,gamemode=!spectator,tag=!looking_at_map] run function luigis_mansion:entities/player/animation/set/stand_still
 data modify entity @s ArmorItems[3].tag.scan_message set value {sender:"me",message:'{"translate":"luigis_mansion:message.chauncey.scan.2"}'}
 tag @s[scores={Dialog=51}] remove wake_up
 tag @s[scores={Dialog=51}] remove scream_wake
@@ -79,7 +79,7 @@ tag @s[scores={Dialog=211}] remove knocked_back
 execute if entity @s[scores={Dialog=211}] run function luigis_mansion:entities/ghost/turn_visible_no_equipment
 tag @s[scores={Dialog=290}] remove move
 tag @s[scores={Dialog=290}] add rambling
-execute if entity @s[scores={Dialog=290..641}] as @a[tag=same_room,gamemode=!spectator,scores={IdleTime=0..},tag=!looking_at_map] run function luigis_mansion:entities/player/animation/set/stand_still
+execute if entity @s[scores={Dialog=290..641}] as @a[tag=same_room,gamemode=!spectator,tag=!looking_at_map] run function luigis_mansion:entities/player/animation/set/stand_still
 execute if entity @s[scores={Dialog=290}] run function luigis_mansion:entities/chauncey/grab_rambler
 execute if entity @s[scores={Dialog=290}] if score #players Totals matches 1 run tellraw @a[tag=same_room] {"translate":"chat.type.text","with":[{"translate":"luigis_mansion:entity.chauncey","color":"green"},{"translate":"luigis_mansion:dialog.chauncey.1"}]}
 execute if entity @s[scores={Dialog=290}] if score #players Totals matches 2.. run tellraw @a[tag=same_room] {"translate":"chat.type.text","with":[{"translate":"luigis_mansion:entity.chauncey","color":"green"},{"translate":"luigis_mansion:dialog.chauncey.1.more"}]}

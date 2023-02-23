@@ -3,5 +3,9 @@ execute if data storage luigis_mansion:data current_state.current_data.portrait_
 tag @s add seen_room_name
 scoreboard players set @s LastFloor 3
 
-execute if data storage luigis_mansion:data current_state.current_data.rooms.secret_altar{seen:0b} run function luigis_mansion_3ds_remake:room/hidden/secret_altar/set_seen
+execute if data storage luigis_mansion:data current_state.current_data.rooms.secret_altar{seen:0b} unless entity @s[gamemode=spectator] run function luigis_mansion_3ds_remake:room/hidden/secret_altar/set_seen
+
+execute unless entity @s[tag=!wall_warp,gamemode=!spectator] if entity @s[tag=!already_ticked] run function luigis_mansion_3ds_remake:room/hidden/secret_altar/spectator_tick
+
+tag @s add already_ticked
 execute if data storage luigis_mansion:data current_state.current_data.rooms.secret_altar{cleared:1b} run function luigis_mansion_3ds_remake:room/hidden/king_boo_battle/clear_secret_altar

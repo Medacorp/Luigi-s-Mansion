@@ -1,7 +1,7 @@
 execute at @s positioned ~ ~1.4 ~ facing entity @a[tag=searcher,limit=1] feet rotated ~ 0 run teleport @e[tag=interact,limit=1] ^ ^-1 ^1
-execute store result score #interact PosX run data get entity @e[tag=interact,limit=1] Pos[0] 10
-execute store result score #interact PosY run data get entity @e[tag=interact,limit=1] Pos[1] 10
-execute store result score #interact PosZ run data get entity @e[tag=interact,limit=1] Pos[2] 10
+execute store result score #interact PositionX run data get entity @e[tag=interact,limit=1] Pos[0] 10
+execute store result score #interact PositionY run data get entity @e[tag=interact,limit=1] Pos[1] 10
+execute store result score #interact PositionZ run data get entity @e[tag=interact,limit=1] Pos[2] 10
 teleport @e[tag=interact,limit=1] ~ ~ ~
 function luigis_mansion:items/interact/target_furniture/swing_get_direction
 scoreboard players set @s FurnitureXProgress 0

@@ -1,6 +1,6 @@
 execute at @s run summon minecraft:marker ~ ~ ~ {Tags:["temp","remove_from_existence"]}
-execute store result entity @e[type=minecraft:marker,tag=temp,limit=1] Pos[0] double 0.01 run scoreboard players get @s PosX
-execute store result entity @e[type=minecraft:marker,tag=temp,limit=1] Pos[2] double 0.01 run scoreboard players get @s PosZ
+execute store result entity @e[type=minecraft:marker,tag=temp,limit=1] Pos[0] double 0.01 run scoreboard players get @s PositionX
+execute store result entity @e[type=minecraft:marker,tag=temp,limit=1] Pos[2] double 0.01 run scoreboard players get @s PositionZ
 
 scoreboard players set @s[scores={ScareTime=20,ScareType=1}] Animation 39
 execute at @s[scores={ScareTime=20,ScareType=1,Health=41..,Shrunk=0}] run playsound luigis_mansion:entity.player.scare.high_health player @a[tag=same_room] ~ ~ ~ 1

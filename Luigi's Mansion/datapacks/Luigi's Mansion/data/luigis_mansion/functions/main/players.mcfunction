@@ -19,12 +19,12 @@ function luigis_mansion:dialog/try
 execute if entity @s[tag=show_credits] run function luigis_mansion:credits
 function #luigis_mansion:player_tag_dialogs
 execute at @s[gamemode=!spectator] run function luigis_mansion:entities/player/not_spectator
-execute if entity @s[gamemode=!spectator,scores={Shrunk=1..}] unless entity @s[scores={ScareTime=20,ScareType=2..3}] run scoreboard players operation @s OtherX = @s PosX
-execute if entity @s[gamemode=!spectator,scores={Shrunk=1..}] unless entity @s[scores={ScareTime=20,ScareType=2..3}] run scoreboard players operation @s OtherY = @s PosY
-execute if entity @s[gamemode=!spectator,scores={Shrunk=1..}] unless entity @s[scores={ScareTime=20,ScareType=2..3}] run scoreboard players operation @s OtherZ = @s PosZ
-execute if entity @s[gamemode=!spectator,scores={Shrunk=1..}] unless entity @s[scores={ScareTime=20,ScareType=2..3}] store result score @s PosX run data get entity @s Pos[0] 100
-execute if entity @s[gamemode=!spectator,scores={Shrunk=1..}] unless entity @s[scores={ScareTime=20,ScareType=2..3}] store result score @s PosY run data get entity @s Pos[1] 100
-execute if entity @s[gamemode=!spectator,scores={Shrunk=1..}] unless entity @s[scores={ScareTime=20,ScareType=2..3}] store result score @s PosZ run data get entity @s Pos[2] 100
+execute if entity @s[gamemode=!spectator,scores={Shrunk=1..}] unless entity @s[scores={ScareTime=20,ScareType=2..3}] run scoreboard players operation @s OtherX = @s PositionX
+execute if entity @s[gamemode=!spectator,scores={Shrunk=1..}] unless entity @s[scores={ScareTime=20,ScareType=2..3}] run scoreboard players operation @s OtherY = @s PositionY
+execute if entity @s[gamemode=!spectator,scores={Shrunk=1..}] unless entity @s[scores={ScareTime=20,ScareType=2..3}] run scoreboard players operation @s OtherZ = @s PositionZ
+execute if entity @s[gamemode=!spectator,scores={Shrunk=1..}] unless entity @s[scores={ScareTime=20,ScareType=2..3}] store result score @s PositionX run data get entity @s Pos[0] 100
+execute if entity @s[gamemode=!spectator,scores={Shrunk=1..}] unless entity @s[scores={ScareTime=20,ScareType=2..3}] store result score @s PositionY run data get entity @s Pos[1] 100
+execute if entity @s[gamemode=!spectator,scores={Shrunk=1..}] unless entity @s[scores={ScareTime=20,ScareType=2..3}] store result score @s PositionZ run data get entity @s Pos[2] 100
 execute if entity @s[gamemode=!spectator,scores={Shrunk=1..}] unless entity @s[scores={ScareTime=20,ScareType=2..3}] run tag @s add small_second_run
 execute at @s[gamemode=!spectator,scores={Shrunk=1..}] unless entity @s[scores={ScareTime=20,ScareType=2..3}] run function luigis_mansion:entities/player/not_spectator
 tag @s remove small_second_run
@@ -60,8 +60,8 @@ tag @s[scores={WalkOnWater=1..},tag=!looking_at_map] add walking
 tag @s[scores={WalkUnderWater=1..},tag=!looking_at_map] add walking
 execute if entity @s[nbt={OnGround:0b},tag=!flipped_gravity,tag=!looking_at_map] if block ~ ~-0.01 ~ #luigis_mansion:ghosts_ignore run tag @s add walking
 execute if entity @s[nbt={OnGround:0b},tag=flipped_gravity,tag=!looking_at_map] if block ~ ~1.8 ~ #luigis_mansion:ghosts_ignore run tag @s add walking
-execute if entity @s[nbt={OnGround:0b},tag=flipped_gravity,tag=!looking_at_map] unless score @s PosX = @s OtherX run tag @s add walking
-execute if entity @s[nbt={OnGround:0b},tag=flipped_gravity,tag=!looking_at_map] unless score @s PosZ = @s OtherZ run tag @s add walking
+execute if entity @s[nbt={OnGround:0b},tag=flipped_gravity,tag=!looking_at_map] unless score @s PositionX = @s OtherX run tag @s add walking
+execute if entity @s[nbt={OnGround:0b},tag=flipped_gravity,tag=!looking_at_map] unless score @s PositionZ = @s OtherZ run tag @s add walking
 execute if entity @s[scores={Room=0},tag=walking,tag=!played_opening_music] run function luigis_mansion:other/play_opening_music
 scoreboard players set @s[scores={Walk=1..}] Walk 0
 scoreboard players set @s[scores={WalkOnWater=1..}] WalkOnWater 0
@@ -84,7 +84,6 @@ tag @s[tag=walking,tag=sneak_pos] remove walking
 
 execute if entity @a[tag=!same_room,tag=!looking_at_map,scores={Room=1..},limit=1] run scoreboard players set #freeze_timer Selected 0
 tag @e[tag=same_room] remove same_room
-tag @s remove already_ticked
 
 tellraw @s[scores={ClickEventCheck=1}] {"translate":"chat.type.text","with":[{"translate":"luigis_mansion:entity.mansion","color":"green"},{"translate":"luigis_mansion:message.format_explanation.check"}]}
 scoreboard players set @s ClickEventCheck 0
