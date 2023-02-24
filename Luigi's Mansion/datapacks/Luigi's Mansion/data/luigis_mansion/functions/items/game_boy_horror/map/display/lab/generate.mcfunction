@@ -8,4 +8,5 @@ function luigis_mansion:items/game_boy_horror/map/display/lab/door/underground_l
 function luigis_mansion:items/game_boy_horror/map/display/lab/door/ghost_portrificationizer_room_gallery
 function luigis_mansion:items/game_boy_horror/map/display/lab/door/gallery_1
 function luigis_mansion:items/game_boy_horror/map/display/lab/door/gallery_2
+execute if score #extra_gallery Selected matches 1 run function luigis_mansion:items/game_boy_horror/map/display/lab/door/extra_gallery
 function luigis_mansion:items/game_boy_horror/map/display/lab/stairs/underground_lab

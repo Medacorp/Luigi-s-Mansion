@@ -8,6 +8,7 @@ teleport @s[scores={PositionIntZ=-41,PositionIntX=766..775,PositionIntY=11..25}]
 teleport @s[scores={PositionIntZ=-41,PositionIntX=745..765}] ~ ~ ~1
 teleport @s[scores={PositionIntZ=-42}] ~ ~ ~2
 teleport @s[scores={PositionIntZ=-60}] ~ ~ ~1
+execute if score #extra_gallery Selected matches 1 run tag @s[scores={PositionIntZ=-60}] add extra_gallery_door
 teleport @s[scores={PositionIntZ=-31,PositionIntX=747..762,PositionIntY=1..3}] ~ ~ ~1
 teleport @s[scores={PositionIntZ=-26,PositionIntX=747..762,PositionIntY=1..3}] ~ ~ ~-1
 teleport @s[scores={PositionIntZ=-23,PositionIntX=742}] ~ ~ ~-1

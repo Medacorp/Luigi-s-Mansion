@@ -2,6 +2,7 @@ tellraw @a {"translate":"chat.type.text","with":[{"translate":"luigis_mansion:en
 
 scoreboard players reset * Loaded
 scoreboard players set #training_choice Selected 0
+scoreboard players set #extra_gallery Selected 0
 function #luigis_mansion:loaded_add_ons
 function #luigis_mansion:post_loaded_add_ons
 

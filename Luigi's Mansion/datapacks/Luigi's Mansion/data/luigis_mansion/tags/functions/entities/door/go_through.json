@@ -1,5 +1,6 @@
 {
 	"values": [
+		"luigis_mansion:entities/door/lab_go_through",
 		"luigis_mansion:entities/door/normal_go_through",
 		"luigis_mansion:entities/door/hidden_go_through"
 	]

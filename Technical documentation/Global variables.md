@@ -18,3 +18,4 @@ There are also global variables not set by the mansion, but other instances:
 
 * `#freeze_timer` (bool): Whether the `in_mansion_time` value is frozen this tick. (If there's players in different rooms not connected with viewpoints, this is set back to 0. (Room tick is after player tick but before value update, so if a room sets this to 1, do check if there's only players in that room.))
 * `#training_choice` (bool): Whether multiple training room programs are installed. Is reset unpon reload.
+* `#extra_gallery` (bool): Whether multiple galleries are present, and the door leading to others should be spawned. Is reset unpon reload.

@@ -1,0 +1,1 @@
+execute unless entity @a[tag=extra_gallery_door,gamemode=!spectator] run tag @a[tag=try_opening_door,limit=1,sort=nearest] add extra_gallery_door

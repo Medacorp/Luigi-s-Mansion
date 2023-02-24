@@ -506,7 +506,6 @@
 				"east": {"uv": [7.75, 15, 8, 16], "rotation": 90, "texture": "#0"},
 				"south": {"uv": [7.75, 14.75, 8.75, 15], "rotation": 180, "texture": "#0"},
 				"west": {"uv": [6.5, 15, 6.75, 16], "rotation": 270, "texture": "#0"},
-				"up": {"uv": [0, 0, 0, 0], "texture": "#0"},
 				"down": {"uv": [8, 15, 9, 16], "rotation": 180, "texture": "#0"}
 			}
 		},

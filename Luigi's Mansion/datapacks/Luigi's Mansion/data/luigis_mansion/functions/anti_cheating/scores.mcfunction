@@ -81,6 +81,7 @@ scoreboard objectives add FurnitureXTarget dummy
 scoreboard objectives add FurnitureZProgress dummy
 scoreboard objectives add FurnitureZOrigin dummy
 scoreboard objectives add FurnitureZTarget dummy
+scoreboard objectives add GalleryChoice trigger
 scoreboard objectives add GBHCall dummy
 scoreboard objectives add GBHChoice trigger
 scoreboard objectives add GBHDialog dummy
@@ -277,6 +278,7 @@ execute unless score #gbh_clock Selected matches -2147483648.. run scoreboard pl
 execute unless score #gbh_clock_increase Selected matches -2147483648.. run scoreboard players set #gbh_clock_increase Selected 0
 execute if score #gbh_clock_increase Selected matches 0 run scoreboard players set #gbh_clock Selected 0
 
+execute unless score #extra_gallery Selected matches 0..1 run scoreboard players set #extra_gallery Selected 0
 execute unless score #training_choice Selected matches 0..1 run scoreboard players set #training_choice Selected 0
 execute unless score #freeze_timer Selected matches 0..1 run scoreboard players set #freeze_timer Selected 0
 

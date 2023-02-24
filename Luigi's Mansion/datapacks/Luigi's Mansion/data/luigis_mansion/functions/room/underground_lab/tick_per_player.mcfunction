@@ -4,6 +4,6 @@ tag @s add seen_room_name
 
 execute if data storage luigis_mansion:data rooms.underground_lab{seen:0b} unless entity @s[gamemode=spectator] run function luigis_mansion:room/underground_lab/set_seen
 
-execute unless entity @s[tag=!wall_warp,gamemode=!spectator] if entity @s[tag=!already_ticked] run function luigis_mansion:room/underground_lab/spectator_tick
+execute unless entity @s[tag=!wall_warp,gamemode=!spectator] if entity @s[tag=!already_ticked] run function luigis_mansion:room/underground_lab/wall_warp
 
 tag @s add already_ticked

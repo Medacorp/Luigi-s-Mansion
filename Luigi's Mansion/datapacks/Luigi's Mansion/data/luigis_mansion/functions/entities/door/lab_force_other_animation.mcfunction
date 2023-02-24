@@ -1,1 +1,1 @@
-execute in minecraft:overworld run function luigis_mansion:entities/door/force_other_animation_lab
+function luigis_mansion:entities/door/lab/force_other_animation

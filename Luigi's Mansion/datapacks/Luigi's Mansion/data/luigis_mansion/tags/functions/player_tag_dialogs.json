@@ -1,5 +1,6 @@
 {
 	"values": [
+		"luigis_mansion:dialog/player_tag/lab",
 		"luigis_mansion:dialog/player_tag/normal",
 		"luigis_mansion:dialog/player_tag/hidden"
 	]

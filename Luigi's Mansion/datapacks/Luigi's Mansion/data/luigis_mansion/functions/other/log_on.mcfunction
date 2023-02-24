@@ -14,6 +14,9 @@ scoreboard players set @s PreviousMusicType 0
 scoreboard players set @s RoomNoise 0
 scoreboard players set @s LoadedChunks 0
 scoreboard players set @s CreditsTime 0
+scoreboard players set @s[tag=extra_gallery_door] Dialog 0
+scoreboard players reset @s[tag=extra_gallery_door] GalleryChoice
+tag @s[tag=extra_gallery_door] remove extra_gallery_door
 execute unless entity @s[scores={FlashlightType=0..2}] run scoreboard players set @s FlashlightType 0
 function luigis_mansion:entities/player/animation/set/none
 scoreboard players set @s SettingsCheck -1
