@@ -1,3 +1,6 @@
+v2.3.5:
+* Updated to 1.19.4
+
 v2.3.4:
 * Changed Elemental ghosts, now keep a bit more distance from the ceiling, allowing you to reach them in the mirror room again
 * Fixed weird body offset on Boolossus

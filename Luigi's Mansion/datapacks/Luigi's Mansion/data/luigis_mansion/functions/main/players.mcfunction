@@ -1,6 +1,6 @@
 tag @s add player
 tag @s[tag=camera,gamemode=!spectator] remove spectator
-execute unless block ~ ~ ~ minecraft:air{loaded:0b} unless block ~-48 ~ ~ minecraft:air{loaded:0b} unless block ~48 ~ ~ minecraft:air{loaded:0b} unless block ~ ~ ~-48 minecraft:air{loaded:0b} unless block ~ ~ ~48 minecraft:air{loaded:0b} unless block ~48 ~ ~48 minecraft:air{loaded:0b} unless block ~48 ~ ~-48 minecraft:air{loaded:0b} unless block ~-48 ~ ~48 minecraft:air{loaded:0b} unless block ~-48 ~ ~-48 minecraft:air{loaded:0b} run function luigis_mansion:main/loaded_chunks
+execute if loaded ~ ~ ~ if loaded ~-48 ~ ~ if loaded ~48 ~ ~ if loaded ~ ~ ~-48 if loaded ~ ~ ~48 if loaded ~48 ~ ~48 if loaded ~48 ~ ~-48 if loaded ~-48 ~ ~48 if loaded ~-48 ~ ~-48 run function luigis_mansion:main/loaded_chunks
 execute if entity @s[scores={Jump=1..}] unless block ~ ~ ~ #minecraft:climbable run function luigis_mansion:main/prevent_jump
 execute if entity @s[tag=flipped_gravity] run function luigis_mansion:entities/player/correct_flipped_position
 execute unless entity @s[scores={Health=-1000..}] run scoreboard players set @s Health 100
