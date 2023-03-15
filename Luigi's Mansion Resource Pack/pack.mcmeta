@@ -1,8 +1,9 @@
 {
     "pack": {
-        "pack_format": 12,
+        "pack_format": 13,
         "description": {
-			"translate": "Luigi's Mansion resource pack"
+			"translate": "luigis_mansion:resource_pack.description",
+			"fallback": "Luigi's Mansion resource pack"
 		}
     }
 }

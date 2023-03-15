@@ -1,5 +1,4 @@
 {
-"Luigi's Mansion resource pack": "Luigi's Mansion resource pack",
 "luigis_mansion:advancements.challenges.exterminator": "Exterminator!",
 "luigis_mansion:advancements.challenges.exterminator.description": "Defeat 400 mice",
 "luigis_mansion:advancements.challenges.full_to_bursting_you_say": "Full to bursting you say?",
@@ -1800,6 +1799,7 @@
 "luigis_mansion:message.use_interact_during_credits": "Interact usage is disabled while credits are showing, please wait for them to finish first.",
 "luigis_mansion:message.vincent_van_gore.scan": "(Now does he grasp zee power of my creations?)",
 "luigis_mansion:message.vincent_van_gore.scan.more": "(Now do you grasp zee power of my creations?)",
+"luigis_mansion:resource_pack.description": "Luigi's Mansion resource pack",
 "luigis_mansion:settings.double_use_game_boy_horror": "Double use Game Boy Horror",
 "luigis_mansion:settings.flashlight_type": "Flashlight type",
 "luigis_mansion:settings.game": "Check game settings.",

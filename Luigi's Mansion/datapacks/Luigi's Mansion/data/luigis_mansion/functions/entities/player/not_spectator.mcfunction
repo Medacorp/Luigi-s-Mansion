@@ -49,7 +49,7 @@ execute at @s[scores={LightX=-2147483648..}] unless entity @s[scores={Shrunk=1..
 execute at @s[scores={LightX=-2147483648..,Shrunk=1..}] run function luigis_mansion:other/cast_shadow/1_tall
 tag @s[tag=!death_animation,tag=!revive_animation] remove spectator
 
-effect give @s minecraft:invisibility 1000000 0 true
+effect give @s minecraft:invisibility infinite 0 true
 execute if entity @s[tag=!camera] run function luigis_mansion:animations/luigi
 execute if entity @s[scores={KnockbackTime=1..}] run function luigis_mansion:entities/player/knockback
 execute unless entity @s[scores={KnockbackType=8..10}] run scoreboard players reset @s GrabbedShake
