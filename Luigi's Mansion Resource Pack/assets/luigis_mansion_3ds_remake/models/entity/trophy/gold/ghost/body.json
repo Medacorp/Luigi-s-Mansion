@@ -1,8 +1,6 @@
 {
 	"parent": "luigis_mansion:entity/ghost/body",
 	"textures": {
-		"0": "luigis_mansion_3ds_remake:entity/trophy/gold/ghost",
-		"1": "luigis_mansion:block/empty",
-		"particle": "luigis_mansion_3ds_remake:entity/trophy/gold/ghost"
+		"0": "luigis_mansion_3ds_remake:entity/trophy/gold/ghost"
 	}
 }

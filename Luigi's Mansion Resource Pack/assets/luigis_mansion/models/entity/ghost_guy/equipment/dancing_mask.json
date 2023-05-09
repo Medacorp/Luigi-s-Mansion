@@ -1,7 +1,6 @@
 {
-	"credit": "Made with Blockbench",
 	"parent": "luigis_mansion:entity/ghost_guy/body",
 	"textures": {
-		"mask": "luigis_mansion:entity/ghost_guy/dancing_mask"
+		"1": "luigis_mansion:entity/ghost_guy/dancing_mask"
 	}
 }

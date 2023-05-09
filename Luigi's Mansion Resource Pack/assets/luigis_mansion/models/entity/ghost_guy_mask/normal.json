@@ -1,8 +1,8 @@
 {
 	"credit": "Made with Blockbench",
 	"textures": {
-		"0": "luigis_mansion:entity/ghost_guy/mask",
-		"particle": "luigis_mansion:entity/ghost_guy/mask"
+		"0": "luigis_mansion:entity/ghost_guy/mask"
+		"particle": "#0"
 	},
 	"elements": [
 		{
@@ -10,8 +10,8 @@
 			"to": [15, 14, 8],
 			"rotation": {"angle": 0, "axis": "x", "origin": [8, 8, 8]},
 			"faces": {
-				"north": {"uv": [0.25, 0.25, 4.25, 4.25], "texture": "#0"},
-				"south": {"uv": [0.25, 0.25, 4.25, 4.25], "texture": "#0"}
+				"north": {"uv": [0, 0, 9, 8], "texture": "#0"},
+				"south": {"uv": [9, 0, 0, 8], "texture": "#0"}
 			}
 		}
 	],

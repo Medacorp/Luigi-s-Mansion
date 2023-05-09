@@ -1,8 +1,6 @@
 {
-	"credit": "Made with Blockbench",
 	"parent": "luigis_mansion:entity/gold_coin",
 	"textures": {
-		"0": "luigis_beta_mansion:entity/ghost_coin",
-		"particle": "luigis_beta_mansion:entity/ghost_coin"
+		"0": "luigis_beta_mansion:entity/ghost_coin"
 	}
 }

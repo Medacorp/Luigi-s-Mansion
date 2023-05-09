@@ -2,30 +2,30 @@
 	"credit": "Made with Blockbench",
 	"textures": {
 		"0": "luigis_mansion:entity/gold_bar",
-		"particle": "luigis_mansion:entity/gold_bar"
+		"particle": "#0"
 	},
 	"elements": [
 		{
 			"from": [6, 6, 3.5],
 			"to": [10, 7, 12.5],
 			"faces": {
-				"north": {"uv": [5, 4.25, 7, 4.75], "texture": "#0"},
-				"east": {"uv": [0, 4.25, 4.5, 4.75], "texture": "#0"},
-				"south": {"uv": [12.5, 4.25, 14.5, 4.75], "texture": "#0"},
-				"west": {"uv": [7.5, 4.25, 12, 4.75], "texture": "#0"},
-				"up": {"uv": [5, 0, 7, 4.25], "rotation": 180, "texture": "#0"}
+				"north": {"uv": [10, 8.5, 14, 9.5], "texture": "#0"},
+				"east": {"uv": [0, 8.5, 9, 9.5], "texture": "#0"},
+				"south": {"uv": [10, 11.5, 14, 12.5], "texture": "#0"},
+				"west": {"uv": [0, 11.5, 9, 12.5], "texture": "#0"},
+				"up": {"uv": [1, 0, 5, 8.5], "rotation": 180, "texture": "#0"}
 			}
 		},
 		{
 			"from": [5, 4, 3.5],
 			"to": [11, 6, 12.5],
 			"faces": {
-				"north": {"uv": [4.5, 4.75, 7.5, 5.75], "texture": "#0"},
-				"east": {"uv": [0, 4.75, 4.5, 5.75], "texture": "#0"},
-				"south": {"uv": [12, 4.75, 15, 5.75], "texture": "#0"},
-				"west": {"uv": [7.5, 4.75, 12, 5.75], "texture": "#0"},
-				"up": {"uv": [4.5, 0, 7.5, 4.25], "rotation": 180, "texture": "#0"},
-				"down": {"uv": [7.5, 0, 10.5, 4.25], "rotation": 180, "texture": "#0"}
+				"north": {"uv": [9, 9.5, 15, 11.5], "texture": "#0"},
+				"east": {"uv": [0, 9.5, 9, 11.5], "texture": "#0"},
+				"south": {"uv": [9, 12.5, 15, 14.5], "texture": "#0"},
+				"west": {"uv": [0, 12.5, 9, 14.5], "texture": "#0"},
+				"up": {"uv": [0, 0, 6, 8.5], "rotation": 180, "texture": "#0"},
+				"down": {"uv": [6, 0, 12, 8.5], "rotation": 180, "texture": "#0"}
 			}
 		}
 	],

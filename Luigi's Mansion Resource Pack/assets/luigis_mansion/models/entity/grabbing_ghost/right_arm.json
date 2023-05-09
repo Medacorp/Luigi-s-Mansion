@@ -1,9 +1,6 @@
 {
-	"credit": "Made with Blockbench",
 	"parent": "luigis_mansion:entity/ghost/right_arm",
 	"textures": {
-		"0": "luigis_mansion:entity/grabbing_ghost/base",
-		"1": "luigis_mansion:entity/grabbing_ghost/overlay",
-		"particle": "luigis_mansion:entity/grabbing_ghost/base"
+		"0": "luigis_mansion:entity/grabbing_ghost"
 	}
 }
