@@ -2,7 +2,7 @@ execute unless score #cellar_shelf_1 Searched matches 1 run summon minecraft:mar
 execute unless score #cellar_shelf_1 Searched matches 1 run summon minecraft:marker ~ ~ ~ {Tags:["chance","big_heart"],Duration:1}
 execute unless score #cellar_shelf_1 Searched matches 1 run summon minecraft:marker ~ ~ ~ {Tags:["chance","big_heart"],Duration:1}
 execute unless score #cellar_shelf_1 Searched matches 1 run summon minecraft:marker ~ ~ ~ {Tags:["chance","big_heart"],Duration:1}
-execute unless score #cellar_shelf_2 Searched matches 1 run summon minecraft:marker ~ ~ ~ {Tags:["chance","money"],Duration:1}
+execute unless score #cellar_shelf_content_old_junk_1 Searched matches 1 run summon minecraft:marker ~ ~ ~ {Tags:["chance","money"],Duration:1}
 execute unless score #cellar_shelf_1 Searched matches 1 run tag @e[type=minecraft:marker,tag=chance,sort=random,limit=1] add selected
 execute if entity @e[type=minecraft:marker,tag=chance,tag=selected,tag=big_heart] positioned 741 3 -52 run function luigis_mansion:spawn_entities/item/room_search/big_heart
 execute if entity @e[type=minecraft:marker,tag=chance,tag=selected,tag=money] positioned 741 3 -52 run function luigis_mansion:room/normal/cellar/shelf_1

@@ -2,7 +2,7 @@ execute unless score #cellar_shelf_1 Searched matches 1 run summon minecraft:mar
 execute unless score #cellar_shelf_1 Searched matches 1 run summon minecraft:marker ~ ~ ~ {Tags:["chance","poison_mushroom"],Duration:1}
 execute unless score #cellar_shelf_1 Searched matches 1 run summon minecraft:marker ~ ~ ~ {Tags:["chance","poison_mushroom"],Duration:1}
 execute unless score #cellar_shelf_1 Searched matches 1 run summon minecraft:marker ~ ~ ~ {Tags:["chance","poison_mushroom"],Duration:1}
-execute unless score #cellar_shelf_2 Searched matches 1 run summon minecraft:marker ~ ~ ~ {Tags:["chance","money"],Duration:1}
+execute unless score #cellar_shelf_content_old_junk_1 Searched matches 1 run summon minecraft:marker ~ ~ ~ {Tags:["chance","money"],Duration:1}
 execute unless score #cellar_shelf_1 Searched matches 1 run tag @e[type=minecraft:marker,tag=chance,sort=random,limit=1] add selected
 execute if entity @e[type=minecraft:marker,tag=chance,tag=selected,tag=poison_mushroom] positioned 741 3 -52 run function luigis_mansion:spawn_entities/item/room_search/poison_mushroom
 execute if entity @e[type=minecraft:marker,tag=chance,tag=selected,tag=money] positioned 741 3 -52 run function luigis_mansion_3ds_remake:room/hidden/cellar/shelf_1

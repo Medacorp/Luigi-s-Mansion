@@ -1,1 +1,1 @@
-scoreboard players reset #cellar_shelf_5
+scoreboard players reset #cellar_shelf_content_old_junk_2
