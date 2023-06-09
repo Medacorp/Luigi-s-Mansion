@@ -26,15 +26,6 @@
         ],
         "subtitle": "luigis_mansion:subtitles.entity.ball.bounce"
     },
-    "entity.ball.explode": {
-        "sounds": [
-            {
-                "name": "luigis_mansion:entity/ball/explode",
-                "stream": false
-            }
-        ],
-        "subtitle": "subtitles.entity.generic.explode"
-    },
     "entity.biff_atlas.attack": {
         "sounds": [
             {
@@ -989,6 +980,15 @@
             }
         ],
         "subtitle": "luigis_mansion:subtitles.entity.bowser.attack"
+    },
+    "entity.ceiling_surprise.clap": {
+        "sounds": [
+            {
+                "name": "luigis_mansion:entity/ceiling_ghost/clap",
+                "stream": false
+            }
+        ],
+        "subtitle": "luigis_mansion:subtitles.entity.ceiling_surprise.laugh"
     },
     "entity.ceiling_surprise.complain": {
         "sounds": [
@@ -2414,7 +2414,11 @@
     "entity.fire_elemental_ghost.bounce": {
         "sounds": [
             {
-                "name": "luigis_mansion:entity/elemental_ghost/bounce",
+                "name": "luigis_mansion:entity/elemental_ghost/bounce1",
+                "stream": false
+            },
+            {
+                "name": "luigis_mansion:entity/elemental_ghost/bounce2",
                 "stream": false
             }
         ],
@@ -2755,18 +2759,70 @@
         ],
         "subtitle": "luigis_mansion:subtitles.entity.ghost.complain"
     },
-    "entity.ghost.earthquake": {
+    "entity.ghost.explosion": {
         "sounds": [
             {
-                "name": "luigis_mansion:entity/generic/earthquake",
+                "name": "luigis_mansion:entity/generic/explosion1",
                 "stream": false
-            }
-        ]
-    },
-    "entity.ghost.explode": {
-        "sounds": [
+            },
             {
-                "name": "luigis_mansion:entity/generic/explode",
+                "name": "luigis_mansion:entity/generic/explosion2",
+                "stream": false
+            },
+            {
+                "name": "luigis_mansion:entity/generic/explosion3",
+                "stream": false
+            },
+            {
+                "name": "luigis_mansion:entity/generic/explosion4",
+                "stream": false
+            },
+            {
+                "name": "luigis_mansion:entity/generic/explosion5",
+                "stream": false
+            },
+            {
+                "name": "luigis_mansion:entity/generic/explosion6",
+                "stream": false
+            },
+            {
+                "name": "luigis_mansion:entity/generic/explosion7",
+                "stream": false
+            },
+            {
+                "name": "luigis_mansion:entity/generic/explosion8",
+                "stream": false
+            },
+            {
+                "name": "luigis_mansion:entity/generic/explosion9",
+                "stream": false
+            },
+            {
+                "name": "luigis_mansion:entity/generic/explosion10",
+                "stream": false
+            },
+            {
+                "name": "luigis_mansion:entity/generic/explosion11",
+                "stream": false
+            },
+            {
+                "name": "luigis_mansion:entity/generic/explosion12",
+                "stream": false
+            },
+            {
+                "name": "luigis_mansion:entity/generic/explosion13",
+                "stream": false
+            },
+            {
+                "name": "luigis_mansion:entity/generic/explosion14",
+                "stream": false
+            },
+            {
+                "name": "luigis_mansion:entity/generic/explosion15",
+                "stream": false
+            },
+            {
+                "name": "luigis_mansion:entity/generic/explosion16",
                 "stream": false
             }
         ],
@@ -2804,6 +2860,14 @@
         "sounds": [
             {
                 "name": "luigis_mansion:entity/generic/punch",
+                "stream": false
+            }
+        ]
+    },
+    "entity.ghost.short_charge_up": {
+        "sounds": [
+            {
+                "name": "luigis_mansion:entity/generic/short_charge_up",
                 "stream": false
             }
         ]
@@ -3487,7 +3551,11 @@
     "entity.ice_elemental_ghost.bounce": {
         "sounds": [
             {
-                "name": "luigis_mansion:entity/elemental_ghost/bounce",
+                "name": "luigis_mansion:entity/elemental_ghost/bounce1",
+                "stream": false
+            },
+            {
+                "name": "luigis_mansion:entity/elemental_ghost/bounce2",
                 "stream": false
             }
         ],
@@ -3510,6 +3578,24 @@
             }
         ],
         "subtitle": "luigis_mansion:subtitles.entity.ice_elemental_ghost.spawn"
+    },
+    "entity.ice_spike.fall": {
+        "sounds": [
+            {
+                "name": "luigis_mansion:entity/ice_spike/fall",
+                "stream": false
+            }
+        ],
+        "subtitle": "luigis_mansion:subtitles.entity.ice_spike.fall"
+    },
+    "entity.ice_spike.shatter": {
+        "sounds": [
+            {
+                "name": "luigis_mansion:entity/ice_spike/shatter",
+                "stream": false
+            }
+        ],
+        "subtitle": "luigis_mansion:subtitles.entity.ice_spike.shatter"
     },
     "entity.jarvis.disappear": {
         "sounds": [
@@ -7474,6 +7560,15 @@
         ],
         "subtitle": "luigis_mansion:subtitles.entity.purple_bomber.attack"
     },
+    "entity.purple_bomber.clap": {
+        "sounds": [
+            {
+                "name": "luigis_mansion:entity/ceiling_ghost/clap",
+                "stream": false
+            }
+        ],
+        "subtitle": "luigis_mansion:subtitles.entity.purple_bomber.laugh"
+    },
     "entity.purple_bomber.complain": {
         "sounds": [
             {
@@ -7787,6 +7882,15 @@
             }
         ],
         "subtitle": "luigis_mansion:subtitles.entity.shining_ghost.ambient"
+    },
+    "entity.shining_ghost.spit": {
+        "sounds": [
+            {
+                "name": "luigis_mansion:entity/shining_ghost/spit",
+                "stream": false
+            }
+        ],
+        "subtitle": "luigis_mansion:subtitles.entity.shining_ghost.spit"
     },
     "entity.shivers.ambient": {
         "sounds": [
@@ -8588,7 +8692,11 @@
     "entity.water_elemental_ghost.bounce": {
         "sounds": [
             {
-                "name": "luigis_mansion:entity/elemental_ghost/bounce",
+                "name": "luigis_mansion:entity/elemental_ghost/bounce1",
+                "stream": false
+            },
+            {
+                "name": "luigis_mansion:entity/elemental_ghost/bounce2",
                 "stream": false
             }
         ],
@@ -8673,6 +8781,16 @@
             }
         ],
         "subtitle": "luigis_mansion:subtitles.furniture.ball_floor.spin"
+    },
+    "furniture.blackout_lights": {
+        "sounds": [
+            {
+                "name": "luigis_mansion:furniture/blackout_lights",
+                "stream": false,
+				"volume": 0.5
+            }
+        ],
+        "subtitle": "luigis_mansion:subtitles.furniture.blackout_lights"
     },
     "furniture.blockade.disappear": {
         "sounds": [
@@ -8759,16 +8877,6 @@
             }
         ],
         "subtitle": "luigis_mansion:subtitles.furniture.chandelier.stop"
-    },
-    "furniture.room_clear_chest.spawn": {
-        "sounds": [
-            {
-                "name": "luigis_mansion:furniture/room_clear_chest/spawn",
-                "stream": false,
-				"volume": 0.5
-            }
-        ],
-        "subtitle": "luigis_mansion:subtitles.furniture.room_clear_chest.spawn"
     },
     "furniture.clock.coo_coo": {
         "sounds": [
@@ -8985,6 +9093,16 @@
             }
         ],
         "subtitle": "luigis_mansion:subtitles.furniture.rocking_chair.rock"
+    },
+    "furniture.room_clear_chest.spawn": {
+        "sounds": [
+            {
+                "name": "luigis_mansion:furniture/room_clear_chest/spawn",
+                "stream": false,
+				"volume": 0.5
+            }
+        ],
+        "subtitle": "luigis_mansion:subtitles.furniture.room_clear_chest.spawn"
     },
     "furniture.search.cello": {
         "sounds": [
@@ -9203,6 +9321,15 @@
             }
         ],
         "subtitle": "luigis_mansion:subtitles.furniture.weights.drop"
+    },
+    "furniture.wind_warp": {
+        "sounds": [
+            {
+                "name": "luigis_mansion:furniture/wind_warp",
+                "stream": false
+            }
+        ],
+        "subtitle": "luigis_mansion:subtitles.furniture.wind_warp"
     },
     "item.big_pearl.bounce": {
         "sounds": [

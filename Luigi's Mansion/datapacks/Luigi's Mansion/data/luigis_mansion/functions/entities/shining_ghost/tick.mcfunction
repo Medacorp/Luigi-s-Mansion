@@ -5,6 +5,8 @@ execute if entity @e[tag=same_room,tag=!spectator,distance=..0.7,limit=1] if ent
 execute if entity @s[tag=spit] run scoreboard players set #temp Move 10
 execute if entity @s[tag=!spit] run scoreboard players set #temp Move 5
 execute if entity @s[tag=spit] run function luigis_mansion:entities/shining_ghost/spit
+execute if entity @s[tag=spit,tag=!played_spit_sound] run playsound luigis_mansion:entity.shining_ghost.spit hostile @a[tag=same_room] ~ ~ ~ 1
+tag @s[tag=spit] add played_spit_sound
 execute if entity @s[tag=spit] at @s run function luigis_mansion:animations/shining_ghost/spit
 execute if entity @s[tag=!in_vacuum,tag=!spit] run function luigis_mansion:entities/shining_ghost/move
 execute if entity @s[tag=collision,tag=spit] run function luigis_mansion:entities/shining_ghost/capture
@@ -23,6 +25,7 @@ tag @s[tag=!in_vacuum] remove can_spit
 tag @s[tag=in_vacuum] remove in_vacuum
 execute at @s[tag=!played_sound] run playsound luigis_mansion:entity.shining_ghost.ambient hostile @a[tag=same_room] ~ ~ ~ 1
 tag @s add played_sound
+particle minecraft:dust 1 0.909 0 1 ~ ~ ~ 0 0 0 1 1 normal @a[tag=same_room]
 tag @s[scores={Dialog=1000}] add disappear
-execute if entity @s[tag=disappear] run function luigis_mansion:entities/shining_ghost/back_to_start
+execute if entity @s[tag=disappear] positioned ~ ~0.7 ~ run function luigis_mansion:entities/shining_ghost/back_to_start
 execute at @s[scores={LightX=-2147483648..}] run function luigis_mansion:other/cast_shadow/1_tall

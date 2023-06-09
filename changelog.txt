@@ -1,3 +1,15 @@
+v2.3.6:
+* Updated to 1.20
+* Added new explosion sounds
+* Corrected blue twirler charge up sound, and added part of the earthquake sound
+* Added ceiling ghosts' laughing sound
+* Added ice spike sounds
+* Added shining ghost shooting sound
+* Added shining ghost trail
+* Added elemental ghost bouncing sound
+* Added blacking out lights sound
+* Added scanned hole sound
+
 v2.3.5:
 * Updated to 1.19.4
 
@@ -6,7 +18,7 @@ v2.3.4:
 * Fixed weird body offset on Boolossus
 * Fixed Boolossus health turns to 1 after one of its Boos gets caught, making it only spawn 1 boo when another player triggers the battle later
 * Fixed Jarvis has no hitbox
-* Fixed balcony 2 shows name as "luigis_mansion:location.balcont when 3DS Remake is installed
+* Fixed balcony 2 shows name as "luigis_mansion:location.balcony" when 3DS Remake is installed
 * Fixed a Mario item spawning displays the obtaining subtitle
 * Fixed hurt elemental ghosts ignore slabs
 

@@ -8,7 +8,13 @@ execute if entity @s[scores={Dialog=30}] run summon minecraft:lightning_bolt 691
 execute if entity @s[scores={Dialog=30}] run scoreboard players set @a[x=691.5,y=100,z=81.5,distance=..6,scores={Invulnerable=0..1}] Invulnerable 20
 execute if entity @s[scores={Dialog=70}] run summon minecraft:lightning_bolt 687 151 8.0
 execute if entity @s[scores={Dialog=70}] run scoreboard players set @a[x=691.5,y=151,z=8.0,distance=..6,scores={Invulnerable=0..1}] Invulnerable 20
-execute if entity @s[scores={Dialog=70..}] run function luigis_mansion:dialog/blackout/lightning/particles_hidden
+execute if entity @s[scores={Dialog=70..90}] run function luigis_mansion:dialog/blackout/lightning/particles_hidden
+execute if entity @s[scores={Dialog=110..130}] run function luigis_mansion:dialog/blackout/lightning/particles_hidden
+execute if entity @s[scores={Dialog=150..180}] run function luigis_mansion:dialog/blackout/lightning/particles_hidden
+execute if entity @s[scores={Dialog=70}] run function luigis_mansion:dialog/blackout/lightning/sound_hidden
+execute if entity @s[scores={Dialog=110}] run function luigis_mansion:dialog/blackout/lightning/sound_hidden
+execute if entity @s[scores={Dialog=150}] run function luigis_mansion:dialog/blackout/lightning/sound_hidden
+execute if entity @s[scores={Dialog=160}] run function luigis_mansion:dialog/blackout/lightning/sound_hidden
 execute if entity @s[scores={Dialog=130}] as @e[type=!minecraft:player,limit=1] run function luigis_mansion:dialog/blackout/lightning/reset_hidden
 execute if entity @s[scores={Dialog=130}] run data modify storage luigis_mansion:data current_state.current_data.blackout set value 1b
 execute if entity @s[scores={Dialog=130..}] run scoreboard players set @e[tag=ghost,tag=hidden,tag=can_spawn] SpawnTime 102

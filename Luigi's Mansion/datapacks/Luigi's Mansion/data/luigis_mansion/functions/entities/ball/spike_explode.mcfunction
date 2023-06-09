@@ -4,6 +4,6 @@ effect give @a[distance=..3,scores={Invulnerable=0},tag=!spectator] minecraft:in
 scoreboard players set @a[distance=..3,scores={Invulnerable=0},tag=!spectator] ForcedDamage 4
 execute as @a[distance=..3,scores={Invulnerable=0},tag=!spectator] run function luigis_mansion:entities/player/knockback/burn
 particle minecraft:explosion ~ ~ ~ 0.2 0.2 0.2 1 4 force @a[tag=same_room]
-playsound luigis_mansion:entity.ball.explode hostile @a[tag=same_room] ~ ~ ~ 1
+playsound luigis_mansion:entity.ghost.explosion hostile @a[tag=same_room] ~ ~ ~ 1
 function luigis_mansion:spawn_entities/burning_floor
 tag @s add dead

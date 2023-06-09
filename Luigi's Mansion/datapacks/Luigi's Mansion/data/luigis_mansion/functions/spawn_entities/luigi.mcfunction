@@ -12,8 +12,8 @@ scoreboard players operation #temp ID = @s ID
 execute at @s as @e[tag=luigi_model,tag=new] run scoreboard players operation @s ID = #temp ID
 scoreboard players reset #temp ID
 loot spawn ~ ~ ~ loot luigis_mansion:gameplay/get_player_name
-execute in minecraft:overworld run setblock 27 0 0 minecraft:oak_sign{Text1:'{"entity":"@e[type=minecraft:item,nbt={Item:{id:\\"minecraft:player_head\\"}},limit=1]","nbt":"Item.tag.SkullOwner.Name"}'}
-execute in minecraft:overworld run data modify entity @e[tag=luigi_model,tag=source,tag=new,limit=1] CustomName set from block 27 0 0 Text1
+execute in minecraft:overworld run setblock 27 0 0 minecraft:oak_sign{front_text:{messages:['{"entity":"@e[type=minecraft:item,nbt={Item:{id:\\"minecraft:player_head\\"}},limit=1]","nbt":"Item.tag.SkullOwner.Name"}','{"text":""}','{"text":""}','{"text":""}']}}
+execute in minecraft:overworld run data modify entity @e[tag=luigi_model,tag=source,tag=new,limit=1] CustomName set from block 27 0 0 front_text.messages[0]
 execute in minecraft:overworld run setblock 27 0 0 minecraft:bedrock
 kill @e[distance=..0.1,type=minecraft:item,limit=1]
 execute if score #global_player_names Selected matches 0 run data merge entity @e[tag=luigi_model,tag=source,tag=new,limit=1] {CustomNameVisible:0b}
