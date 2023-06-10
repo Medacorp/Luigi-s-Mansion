@@ -6,7 +6,7 @@ execute store result storage luigis_mansion:data damage.attacker int 1 run score
 execute as @a[distance=..1,gamemode=!spectator] run function luigis_mansion:entities/player/take_damage
 data remove storage luigis_mansion:data damage
 particle minecraft:explosion ~ ~ ~ 0.2 0.2 0.2 1 4 force @a[tag=same_room]
-playsound luigis_mansion:entity.ball.explode hostile @a[tag=same_room] ~ ~ ~ 1
+playsound luigis_mansion:entity.ghost.explosion hostile @a[tag=same_room] ~ ~ ~ 1
 function luigis_mansion:spawn_entities/burning_floor
 execute if data entity @s ArmorItems[3].tag.damage.attack run data modify entity @e[distance=..0.1,tag=burning_floor,limit=1] ArmorItems[3].tag.damage set from entity @s ArmorItems[3].tag.damage
 execute if entity @s[scores={Owner=-2147483648..}] as @e[distance=..0.1,tag=burning_floor] unless entity @s[scores={Owner=-2147483648..}] run scoreboard players operation @s Owner = @e[tag=spike_ball,distance=..0.1] GhostNr

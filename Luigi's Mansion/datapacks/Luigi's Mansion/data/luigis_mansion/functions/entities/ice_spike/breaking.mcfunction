@@ -1,4 +1,5 @@
 scoreboard players add @s ActionTime 1
+execute if entity @s[scores={ActionTime=1}] run playsound luigis_mansion:entity.ice_spike.shatter hostile @a[tag=same_room] ~ ~ ~ 1
 item replace entity @s[scores={ActionTime=1}] armor.head with minecraft:diamond_pickaxe{Unbreakable:1b,Damage:4,CustomModelData:26}
 item replace entity @s[scores={ActionTime=3}] armor.head with minecraft:air
 execute store result entity @s[scores={ActionTime=4}] Pos[0] double 0.01 run scoreboard players get @s HomeX

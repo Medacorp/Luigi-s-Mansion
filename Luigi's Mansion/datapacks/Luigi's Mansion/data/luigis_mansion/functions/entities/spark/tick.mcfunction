@@ -25,7 +25,7 @@ execute if entity @s[tag=explode,tag=visible] store result storage luigis_mansio
 execute if entity @s[tag=explode,tag=visible] as @a[distance=..3,gamemode=!spectator] run function luigis_mansion:entities/player/take_damage
 execute if entity @s[tag=explode,tag=visible] run data remove storage luigis_mansion:data damage
 execute if entity @s[tag=explode,tag=visible] run particle minecraft:explosion ~ ~ ~ 0.2 0.2 0.2 1 4 force @a[tag=same_room]
-execute if entity @s[tag=explode,tag=visible] run playsound luigis_mansion:entity.ghost.explode hostile @a[tag=same_room] ~ ~ ~ 1
+execute if entity @s[tag=explode,tag=visible] run playsound luigis_mansion:entity.ghost.explosion hostile @a[tag=same_room] ~ ~ ~ 1
 tag @s[tag=explode,tag=visible] add dead
 tag @s[tag=explode,tag=!visible] remove explode
 scoreboard players remove @s[scores={Turn=1..},tag=visible] Turn 1

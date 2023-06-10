@@ -13,7 +13,6 @@ Do NOT turn chat off, or you will get stuck. The map requires players to click o
 ** Poltergust expelling dust, vacuuming with ball held, exploding
 ** Blue Twirler/Blue Blaze
 ** Ceiling Surprise/Purple Bomber
-** Elemental Ghost bounce
 ** Slim Bankshot
 ** Henry and Orville
 ** Clockwork Soldiers
@@ -76,10 +75,6 @@ Then close the world or server, and remove the data pack from the world.
 
 == Server properties requirements ==
 gamemode=adventure
-difficulty=normal
-spawn-monsters=true
-spawn-npcs=true
-spawn-animals=true
 
 == Credits ==
 Made by: Dhranios
