@@ -2,6 +2,7 @@ This add-on adds 2 new training room programs: endless and speedrun.
 
 In the endless program the goal is to catch as many ghosts as you can until any player runs out of health.
 In the speedrun program the goal is to clear all waves, letting not a single ghost escape.
+In the player VS player program the goal is to get more points than other players, and can only be pyed in multiplaer.
 
 Ghosts that vanish without moving (Garbage Can Ghost, Bowling Ghost, Ceiling Surprise, Purple Bomber) use their spawn animation and sound to notify the player and give them some more time to catch them.
 
@@ -12,6 +13,11 @@ Speedun:
 If a ghost escapes, all ghosts vanish, and you have to redo that wave, and the wave before it.
 E. Gadd pauses his timer in between waves; you need to go to the center area to go to the next wave.
 There's 20 waves.
+
+Player VS Player:
+Every ghost is worth 2 point per 10 HP they have +1 (So a Purple Puncher is worth 5 points a Gold Ghost 3 and a Bowling Ghos 1), with the exception of the tiebreaker whch only grants 1 point.
+Defeat disqualifies the player.
+There's 10 waves (excluding tiebreaker), but it may be cut short if only 1 player is left standing.
 
 Amiibo:
 When all tasks are cleared (3DS Remake add-on), you unlock the Koopa amiibo, which prevents you from taking dragging damage within the mansion.
