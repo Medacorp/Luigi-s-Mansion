@@ -7,6 +7,7 @@ tag @s remove vacuuming
 summon minecraft:marker ~ ~ ~ {Tags:["interact","poltergust","water"]}
 function luigis_beta_mansion:items/poltergust_500/expel_water
 tag @s add expelling_water
+tag @e[tag=hit_by_poltergust] remove hit_by_poltergust
 kill @e[type=minecraft:marker,tag=interact,limit=1]
 scoreboard players reset #temp MirrorX
 scoreboard players reset #temp MirrorZ

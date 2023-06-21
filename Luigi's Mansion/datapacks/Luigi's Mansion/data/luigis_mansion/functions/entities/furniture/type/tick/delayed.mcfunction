@@ -1,12 +1,13 @@
 execute if entity @s[tag=!saved_default_orientation] run function luigis_mansion:entities/furniture/save_default_orientation
 execute unless entity @s[tag=!shake,tag=!long_shake] run function luigis_mansion:entities/furniture/shake
-execute if entity @s[tag=!shake,tag=!long_shake,tag=was_shaking] run function luigis_mansion:entities/furniture/revert_to_default_orientation
+execute if entity @s[tag=!shake,tag=!long_shake,tag=was_shaking,tag=!rock] run function luigis_mansion:entities/furniture/revert_to_default_orientation
 
 scoreboard players operation @s FurnitureShake = @s FurnitureSearch
 scoreboard players remove @s FurnitureShake 20
 
-execute if score @s FurnitureTime >= @s FurnitureShake unless score @s FurnitureTime >= @s FurnitureSearch run tag @s add shake
+execute if score @s FurnitureTime >= @s FurnitureShake unless score @s FurnitureTime >= @s FurnitureSearch run tag @s[tag=!open] add shake
 execute if score @s FurnitureSearch >= @s FurnitureTime run scoreboard players add @s[tag=searchable_by_time] FurnitureTime 1
+execute unless entity @s[scores={FurnitureTime=1..}] run scoreboard players add @s[tag=searchable_by_time] FurnitureTime 1
 execute if score @s FurnitureVacuum >= @s FurnitureShake unless score @s FurnitureVacuum >= @s FurnitureSearch run tag @s add shake
 execute if score @s FurnitureVacuum >= @s FurnitureShake run scoreboard players add @s[tag=searchable_by_vacuum] FurnitureVacuum 1
 execute if score @s FurnitureVacuum >= @s FurnitureSearch run scoreboard players set @s[tag=!in_vacuum,tag=searchable_by_vacuum] FurnitureVacuum 0

@@ -1,7 +1,7 @@
 {
 	"credit": "Made with Blockbench",
 	"textures": {
-		"0": "luigis_mansion:entity/ghost_guy/mask"
+		"0": "luigis_mansion:entity/ghost_guy/mask",
 		"particle": "#0"
 	},
 	"elements": [

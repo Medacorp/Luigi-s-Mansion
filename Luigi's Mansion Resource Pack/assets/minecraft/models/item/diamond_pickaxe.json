@@ -7200,6 +7200,14 @@
             "predicate": {
                 "damaged": 0,
                 "damage": 0.0118,
+                "custom_model_data": -12
+            },
+            "model": "luigis_beta_mansion:furniture/silver_candelabra"
+        },
+        {
+            "predicate": {
+                "damaged": 0,
+                "damage": 0.0118,
                 "custom_model_data": -11
             },
             "model": "luigis_mansion_3ds_remake:furniture/gallery_chest/state_0"

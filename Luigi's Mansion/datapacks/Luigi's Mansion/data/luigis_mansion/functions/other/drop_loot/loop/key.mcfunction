@@ -1,4 +1,4 @@
-summon minecraft:armor_stand ~ ~ ~ {CustomName:'{"translate":"luigis_mansion:item.key"}',Pose:{Head:[0.0f,0.0f,0.01f]},Invisible:1b,Silent:1b,ArmorItems:[{},{},{},{id:"minecraft:diamond_pickaxe",Count:1b,tag:{Unbreakable:1b,Damage:5,CustomModelData:15}}],Small:1b,NoGravity:1b,Tags:["item","key","eternal","this_entity"],DisabledSlots:2039583}
+summon minecraft:armor_stand ~ ~ ~ {CustomName:'{"translate":"luigis_mansion:item.key"}',Pose:{Head:[0.0f,0.0f,0.01f]},Invisible:1b,Silent:1b,ArmorItems:[{},{},{},{id:"minecraft:diamond_pickaxe",Count:1b,tag:{Unbreakable:1b,Damage:5,CustomModelData:15}}],Small:1b,NoGravity:1b,Tags:["item","key","eternal","affected_by_vacuum","this_entity"],DisabledSlots:2039583}
 data modify storage luigis_mansion:data keys set value []
 data modify storage luigis_mansion:data keys set from storage luigis_mansion:data current_state.current_data.obtained_keys
 execute as @e[tag=key,tag=!this_entity,tag=!display] run data modify storage luigis_mansion:data keys append from entity @s Tags[]

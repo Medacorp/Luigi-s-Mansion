@@ -2,7 +2,7 @@
 	"credit": "Made with Blockbench",
 	"textures": {
 		"0": "luigis_beta_mansion:entity/ghost",
-		"particle": "#0"
+		"particle": "luigis_beta_mansion:entity/ghost"
 	},
 	"elements": [
 		{
@@ -42,16 +42,6 @@
 			"rotation": {"angle": 0, "axis": "y", "origin": [8, 20, 8]},
 			"faces": {
 				"north": {"uv": [11, 3, 14, 4], "texture": "#0"}
-			}
-		},
-		{
-			"from": [2, 15, 2],
-			"to": [14, 19, 2],
-			"rotation": {"angle": 0, "axis": "y", "origin": [8, 20, 8]},
-			"color": 0,
-			"faces": {
-				"north": {"uv": [11, 3, 14, 4], "texture": "#missing", "tintindex": 0},
-				"down": {"uv": [0, 8, 0.125, 8.125], "texture": "#missing", "tintindex": 0}
 			}
 		},
 		{

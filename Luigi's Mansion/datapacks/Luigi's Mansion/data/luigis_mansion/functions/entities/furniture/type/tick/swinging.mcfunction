@@ -23,6 +23,7 @@ execute if score @s FurnitureVacuum matches 0 if entity @s[scores={FurnitureZTar
 execute if score @s FurnitureVacuum matches ..-1 run scoreboard players operation @s FurnitureVacuum *= #-1 Constants
 
 execute if score @s FurnitureSearch >= @s FurnitureTime run scoreboard players add @s[tag=searchable_by_time] FurnitureTime 5
+execute unless entity @s[scores={FurnitureTime=1..}] run scoreboard players add @s[tag=searchable_by_time] FurnitureTime 5
 
 scoreboard players operation #temp FurnitureVacuum = @s FurnitureVacuum
 scoreboard players operation #temp FurnitureVacuum /= #2 Constants

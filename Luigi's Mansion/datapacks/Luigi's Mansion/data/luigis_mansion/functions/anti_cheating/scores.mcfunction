@@ -73,6 +73,7 @@ scoreboard objectives add FurnitureSizeRadius dummy
 scoreboard objectives add FurnitureSizeUp dummy
 scoreboard objectives add FurnitureSizeWidth dummy
 scoreboard objectives add FurnitureSpins dummy
+scoreboard objectives add FurnitureTime dummy
 scoreboard objectives add FurnitureVacuum dummy
 scoreboard objectives add FurnitureWater dummy
 scoreboard objectives add FurnitureXProgress dummy

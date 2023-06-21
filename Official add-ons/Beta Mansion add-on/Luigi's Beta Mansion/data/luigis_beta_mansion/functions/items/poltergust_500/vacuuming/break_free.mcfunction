@@ -1,7 +1,6 @@
 tag @s add vanish
 tag @s remove hurt
 tag @s remove fleeing
-scoreboard players set @s VulnerableTime 0
 scoreboard players set @s AnimaptionProg 0
 scoreboard players set @s ActionTime 0
 scoreboard players set @s HurtTime 0
