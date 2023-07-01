@@ -1,4 +1,3 @@
-tag @s[tag=chauncey] add collision
 tag @s[tag=bounced] add collision
 tag @s[tag=boo] add remove_from_existence
 execute store result entity @s Rotation[1] float -0.01 run data get entity @s Rotation[1] 100

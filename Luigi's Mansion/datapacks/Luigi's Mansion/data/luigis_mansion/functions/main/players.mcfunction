@@ -98,6 +98,6 @@ scoreboard players reset @s LightZ
 execute unless entity @s[scores={SettingsCheck=0}] run function luigis_mansion:settings/menu
 
 tag @s add me
-execute as @a[distance=..0.4,tag=!me,tag=!spectator,limit=1] run function luigis_mansion:entities/player/collide
+execute as @a[distance=..0.4,tag=!me,tag=!spectator,tag=!pull_locked_door,tag=!push_locked_door,tag=!pull_unlock_door,tag=!push_unlock_door,tag=!pull_open_door,tag=!push_unlock_door,limit=1] run function luigis_mansion:entities/player/collide
 tag @s remove me
 tag @s[tag=camera] add spectator

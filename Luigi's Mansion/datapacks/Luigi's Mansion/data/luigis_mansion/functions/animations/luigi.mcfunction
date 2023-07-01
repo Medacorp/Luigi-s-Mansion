@@ -6,7 +6,7 @@ execute if entity @s[tag=low_health_idle] run data modify storage luigis_mansion
 execute if entity @s[scores={Health=..30},tag=!attack] run data modify storage luigis_mansion:data luigi.tags append value "low_health"
 data modify storage luigis_mansion:data luigi.gliding set from entity @s FallFlying
 execute store result storage luigis_mansion:data luigi.swimming byte 1 if entity @s[tag=swimming]
-execute unless entity @s[scores={KnockbackType=1..}] unless entity @s[scores={ScareType=1..}] store result storage luigis_mansion:data luigi.invulnerable byte 1 if entity @s[scores={Invulnerable=2..},tag=!push_open_door,tag=!pull_open_door,tag=!push_locked_door,tag=!pull_locked_door,tag=!push_unlocked_door,tag=!pull_unlocked_door]
+execute unless entity @s[scores={KnockbackType=1..}] unless entity @s[scores={ScareType=1..}] store result storage luigis_mansion:data luigi.invulnerable byte 1 if entity @s[scores={Invulnerable=2..},tag=!push_open_door,tag=!pull_open_door,tag=!push_locked_door,tag=!pull_locked_door,tag=!push_unlock_door,tag=!pull_unlock_door]
 execute if entity @s[scores={YellTime=1..}] run data modify storage luigis_mansion:data luigi.tags append value "yelling"
 scoreboard players operation #temp InteractionType = @s InteractionType
 scoreboard players add #temp InteractionType 4
@@ -23,8 +23,8 @@ execute as @e[type=minecraft:armor_stand,tag=this_luigi,tag=!source] at @e[tag=t
 execute unless entity @e[tag=this_luigi,tag=source,limit=1] as @e[type=minecraft:armor_stand,tag=this_luigi,tag=!source] at @s run function luigis_mansion:animations/luigi/main
 scoreboard players reset #temp ID
 tag @s remove this_luigi
-execute store result score #temp Time if entity @e[tag=this_luigi,tag=source,limit=1]
-execute if score #temp Time matches 2.. run tag @e[tag=this_luigi] add dead
+execute store result score #temp Time if entity @e[tag=this_luigi]
+execute unless score #temp Time matches 10 run tag @e[tag=this_luigi] add dead
 scoreboard players reset #temp Time
 execute if entity @e[tag=this_luigi,limit=1] run scoreboard players set @s ModelTime 0
 execute unless entity @e[tag=this_luigi,limit=1] run scoreboard players add @s ModelTime 1
