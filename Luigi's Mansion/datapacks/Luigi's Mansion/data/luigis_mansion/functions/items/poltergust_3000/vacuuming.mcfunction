@@ -35,7 +35,6 @@ scoreboard players reset #temp Room
 scoreboard players reset #temp ID
 scoreboard players reset #interact
 tag @e[tag=being_vacuumed] remove being_vacuumed
-tag @e[tag=hit_by_poltergust] remove hit_by_poltergust
 tag @s add vacuuming
 tag @s remove expelling_dust
 tag @s remove expelling_fire

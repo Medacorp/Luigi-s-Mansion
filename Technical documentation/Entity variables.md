@@ -8,7 +8,7 @@ entity: {
         message:'{"translate":"..."}', //The message to send.
         plural_message:'{"translate":"..."}' //The message used when more than 1 player is present; only used is sender is set to "me".
     }, 
-    female_scan_message:{}, //The message spoken when scanning the female floating whirlinda, same format as above.
+    female_scan_message:{}, //The message spoken when scanning the female floating whirlinda, same format as above. Only applies to the floating whirlindas (obviously).
     can_talk_to:1b, //Whether Toad, E. Gadd or this portrait ghost can be talked to.
     disappear_on_vanish:1b, //Whether this ghost disappears when it vanishes.
     appear_type:"<type>", //Ghost appear type to use, differs per ghost.
@@ -18,9 +18,9 @@ entity: {
     path:X, //Path number to use in a room; used by wool and dancing ghost guys only.
     
     //Overwriting data
-    health:X, //Health at spawn.
+    health:X, //Health at spawn. Only applies to ghost types that have health.
     loot:{ //Loot this ghost drops upon defeat.
-        drop_at_0:1b, //When set, spawns the loot the moment health drops to 0, otherwise spawns it the moment the ghost is reeled in.
+        drop_at_0:1b, //When set, spawns the loot the moment health drops to 0, otherwise spawns it the moment the ghost is reeled in. Only applies to ghost types that have health.
         //See loot documentation for other variables.
     },
     speed:X, //The movement speed of the ghost.
@@ -35,7 +35,7 @@ entity: {
 Appear type:
 ```
 Type   | Ghosts
-normal | All ghosts except Waiter; default for all except Beta Ghost, Beta Basher, Beta Puncher, and Beta Body Slammer
+normal | All ghost types that have health except Waiter; default for all except Beta Ghost, Beta Basher, Beta Puncher, and Beta Body Slammer
 none   | All ghosts; default for Waiter
 beta   | Gold Ghost, Temper Terror, Speedy Spirit, Purple Puncher, Flash, Blue Twirler, Blue Blaze, Beta Ghost(default), Beta Basher(default), Beta Puncher(default), Beta Body Slammer(default)
 ```

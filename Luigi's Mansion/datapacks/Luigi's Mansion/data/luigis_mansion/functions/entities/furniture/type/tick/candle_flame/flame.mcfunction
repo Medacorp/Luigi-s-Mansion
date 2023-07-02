@@ -20,11 +20,6 @@ execute if entity @s[tag=lit,tag=purple,tag=!large_flame,tag=!extinguish] run da
 
 execute if entity @s[tag=!lit,tag=!large_flame] run data modify entity @s ArmorItems[3] set value {}
 tag @s remove extinguish
-tag @s remove in_vacuum
-tag @s remove in_dust
-tag @s remove in_water
-tag @s remove in_ice
-tag @s remove in_fire
 scoreboard players add @s[tag=large_flame] ActionTime 1
 tag @s[scores={ActionTime=40}] remove large_flame
 scoreboard players reset @s[scores={ActionTime=40}] ActionTime

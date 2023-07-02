@@ -8167,6 +8167,14 @@
         {
             "predicate": {
                 "damaged": 0,
+                "damage": 0.0118,
+                "custom_model_data": 109
+            },
+            "model": "luigis_mansion:furniture/candle_flame_incense"
+        },
+        {
+            "predicate": {
+                "damaged": 0,
                 "damage": 0.0124,
                 "custom_model_data": -5
             },

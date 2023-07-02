@@ -1,3 +1,3 @@
-execute unless data storage luigis_mansion:data current_state.current_data{money_spawned:["courtyard_plant_3"]} run function luigis_mansion:spawn_entities/item/green_emerald
-execute if data storage luigis_mansion:data current_state.current_data{money_spawned:["courtyard_plant_3"]} run tag @e[tag=selected] add nothing
-execute unless data storage luigis_mansion:data current_state.current_data{money_spawned:["courtyard_plant_3"]} run data modify storage luigis_mansion:data current_state.current_data.money_spawned append value "courtyard_plant_3"
+execute unless data storage luigis_mansion:data current_state.current_data{money_spawned:["courtyard_stone_bowl_potted_fern_3"]} run function luigis_mansion:spawn_entities/item/green_emerald
+execute if data storage luigis_mansion:data current_state.current_data{money_spawned:["courtyard_stone_bowl_potted_fern_3"]} run tag @e[tag=selected] add nothing
+execute unless data storage luigis_mansion:data current_state.current_data{money_spawned:["courtyard_stone_bowl_potted_fern_3"]} run data modify storage luigis_mansion:data current_state.current_data.money_spawned append value "courtyard_stone_bowl_potted_fern_3"

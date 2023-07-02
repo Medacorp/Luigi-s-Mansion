@@ -5,4 +5,4 @@ execute if entity @s[scores={PortraitBattle=1}] in luigis_mansion:hidden run tel
 execute if entity @s[scores={PortraitBattle=1}] run function luigis_mansion:items/poltergust_3000/water_element
 execute if entity @s[scores={PortraitBattle=1}] run data modify storage luigis_mansion:data current_state.current_data.obtained_items merge value {water_element_medal:1b}
 execute if entity @s[scores={PortraitBattle=1}] run data modify storage luigis_mansion:data current_state.current_data.technical_data merge value {sue_pea_spoke:1b}
-execute if entity @s[scores={PortraitBattle=1}] run data modify storage luigis_mansion:data current_state.current_data.money_spawned merge value {guest_room_table_2:1b,guest_room_plant:1b}
+execute if entity @s[scores={PortraitBattle=1}] run data modify storage luigis_mansion:data current_state.current_data.money_spawned set value ["guest_room_nightstand","guest_room_column_mounted_blue_potted_fern"]

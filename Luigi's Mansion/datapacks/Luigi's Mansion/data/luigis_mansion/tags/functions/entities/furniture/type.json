@@ -6,6 +6,7 @@
 		"luigis_mansion:entities/furniture/type/swinging",
 		"luigis_mansion:entities/furniture/type/lamp",
 		"luigis_mansion:entities/furniture/type/delayed",
+		"luigis_mansion:entities/furniture/type/mirror",
 		"luigis_mansion:entities/furniture/type/room_clear_loot_dropper",
 		"luigis_mansion:entities/furniture/type/rocking_chair",
 		"luigis_mansion:entities/furniture/type/elemental_source",

@@ -13,9 +13,10 @@ reflections:[
         room:X, //The room score of the reflected entity, the reflection will get the score too.
         mirror:{ //Information about the mirror.
             z:0b //Whether or not the mirror score is MirrorZ, if 0b, it's MirrorX.
-            value:X //The value of the mirror score.
+            value:X, //The value of the mirror score.
+            set_by_furniture_entity:1b //Temporary addition until all mirrors are converted the entities; whether this mirror is a furniture entity; changes the calculation slightly.
         },
-        entity_id:"<id>", //The Minecraft entity ID used to spawn the correct entity type. Only allows armor stand or item frame.
+        entity_id:"<id>", //The Minecraft entity ID used to spawn the correct entity type. Only allows armor stand or item frame. The item frame option will be removed once all paintings and posters are converted to furniture entities.
         data: { //The entity's data
             Pose:{}, //Armor stand pose data, jaw and roll will be inverted.
             HandItems:[] //Items held in hand, will be swapped.

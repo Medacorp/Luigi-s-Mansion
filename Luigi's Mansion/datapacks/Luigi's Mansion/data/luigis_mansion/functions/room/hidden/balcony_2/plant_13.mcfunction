@@ -1,7 +1,7 @@
-execute unless data storage luigis_mansion:data current_state.current_data{money_spawned:["balcony_2_plant_13"]} run function luigis_mansion:spawn_entities/item/gold_coin
-execute unless data storage luigis_mansion:data current_state.current_data{money_spawned:["balcony_2_plant_13"]} run function luigis_mansion:spawn_entities/item/gold_coin
-execute unless data storage luigis_mansion:data current_state.current_data{money_spawned:["balcony_2_plant_13"]} run function luigis_mansion:spawn_entities/item/gold_coin
-execute unless data storage luigis_mansion:data current_state.current_data{money_spawned:["balcony_2_plant_13"]} run function luigis_mansion:spawn_entities/item/gold_coin
-execute unless data storage luigis_mansion:data current_state.current_data{money_spawned:["balcony_2_plant_13"]} run function luigis_mansion:spawn_entities/item/gold_coin
-execute if data storage luigis_mansion:data current_state.current_data{money_spawned:["balcony_2_plant_13"]} run tag @e[tag=selected] add nothing
-execute unless data storage luigis_mansion:data current_state.current_data{money_spawned:["balcony_2_plant_13"]} run data modify storage luigis_mansion:data current_state.current_data.money_spawned append value "balcony_2_plant_13"
+execute unless data storage luigis_mansion:data current_state.current_data{money_spawned:["balcony_2_potted_dying_blue_flower_5"]} run function luigis_mansion:spawn_entities/item/gold_coin
+execute unless data storage luigis_mansion:data current_state.current_data{money_spawned:["balcony_2_potted_dying_blue_flower_5"]} run function luigis_mansion:spawn_entities/item/gold_coin
+execute unless data storage luigis_mansion:data current_state.current_data{money_spawned:["balcony_2_potted_dying_blue_flower_5"]} run function luigis_mansion:spawn_entities/item/gold_coin
+execute unless data storage luigis_mansion:data current_state.current_data{money_spawned:["balcony_2_potted_dying_blue_flower_5"]} run function luigis_mansion:spawn_entities/item/gold_coin
+execute unless data storage luigis_mansion:data current_state.current_data{money_spawned:["balcony_2_potted_dying_blue_flower_5"]} run function luigis_mansion:spawn_entities/item/gold_coin
+execute if data storage luigis_mansion:data current_state.current_data{money_spawned:["balcony_2_potted_dying_blue_flower_5"]} run tag @e[tag=selected] add nothing
+execute unless data storage luigis_mansion:data current_state.current_data{money_spawned:["balcony_2_potted_dying_blue_flower_5"]} run data modify storage luigis_mansion:data current_state.current_data.money_spawned append value "balcony_2_potted_dying_blue_flower_5"

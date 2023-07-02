@@ -21,19 +21,19 @@ Some item types have additional options when in the list format, they are as lis
 luigis_mansion:bill
 ```
 {
-    variant:1, //Sets the bill color, 0 is green, 1 is gold; default = random
+    variant:1 //Sets the bill color, 0 is green, 1 is gold; default = random
 }
 ```
 luigis_mansion:element_medal
 ```
 {
-    variant:"<type>", //REQUIRED; Sets which element medal this is. Must be "fire", "water" or "ice". If the element medal of this type has already been obtained, or exists in the world, it will not spawn.
+    variant:"<type>" //REQUIRED; Sets which element medal this is. Must be "fire", "water" or "ice". If the element medal of this type has already been obtained, or exists in the world, it will not spawn.
 }
 ```
 luigis_mansion:mario_item
 ```
 {
-    variant:"<type>", //REQUIRED; Sets which item this is. Must be "hat", "letter", "star", "glove" or "shoe". If the item of this type has already been obtained, or exists in the world, it will not spawn.
+    variant:"<type>" //REQUIRED; Sets which item this is. Must be "hat", "letter", "star", "glove" or "shoe". If the item of this type has already been obtained, or exists in the world, it will not spawn.
 }
 ```
 luigis_mansion:key
@@ -41,7 +41,7 @@ luigis_mansion:key
 {
     variant:1, //Sets what model to use. 0 is normal, 1 is heart, 2 is club, 3 is diamond, 4 is spade. Default = 0.
     door:"<name>", //REQUIRED; Sets which door this key belongs to. If the key for this door has already been obtained, or exists in the world, it will not spawn.
-    silent:1b, //When set, makes no spawn sound for this key. Used by room clear loot droppers. Default = 0b.
+    silent:1b //When set, makes no spawn sound for this key. Used by room clear loot droppers. Default = 0b.
 }
 ```
 

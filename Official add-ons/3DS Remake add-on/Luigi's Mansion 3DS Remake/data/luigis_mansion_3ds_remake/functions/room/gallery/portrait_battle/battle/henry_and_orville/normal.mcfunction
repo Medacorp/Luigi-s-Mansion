@@ -2,4 +2,4 @@ execute if entity @s[scores={PortraitBattle=0}] run function luigis_mansion_3ds_
 execute if entity @s[scores={PortraitBattle=0}] run function luigis_mansion_3ds_remake:room/gallery/portrait_battle/prepare_mansion/normal
 execute if entity @s[scores={PortraitBattle=0}] run data modify storage luigis_mansion_3ds_remake:data loaded_mansion.high_scores set from storage luigis_mansion_3ds_remake:data current_state.portrait_ghosts_defeated_in.henry_and_orville[{data_index:0,mansion_type:0}]
 execute if entity @s[scores={PortraitBattle=0}] in luigis_mansion:normal run teleport @a 739 20 44 -90 0
-execute if entity @s[scores={PortraitBattle=0}] run data modify storage luigis_mansion:data current_state.current_data.money_spawned merge value {the_twins_room_lamp:1b,the_twins_room_table_1:1b,the_twins_room_speedy_spirit:1b}
+execute if entity @s[scores={PortraitBattle=0}] run data modify storage luigis_mansion:data current_state.current_data.money_spawned set value ["the_twins_room_star_lamp","the_twins_room_speedy_spirit","the_twins_room_cabinet_mounted_globe"]

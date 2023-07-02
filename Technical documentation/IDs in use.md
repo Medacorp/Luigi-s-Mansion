@@ -15,11 +15,12 @@ Trill Tower  | 3    | 3     | 2        | trill_tower  | trill_tower             
 Training room programs:
 
 ```
-Program    | Value | Add-on              | Namespace                 | Data pack name
-Vanilla    | 0     | vanilla             | luigis_mansion            | "file/Luigi's Mansion"
-3DS Remake | 1     | 3ds_remake          | luigis_mansion_3ds_remake | "file/Luigi's Mansion 3DS Remake"
-Endless    | 2     | extensive_training  | extensive_training        | "file/Extensive Training"
-Speedrun   | 3     | extensive_training  | extensive_training        | "file/Extensive Training"
+Program          | Value | Add-on              | Namespace                 | Data pack name
+Vanilla          | 0     | vanilla             | luigis_mansion            | "file/Luigi's Mansion"
+3DS Remake       | 1     | 3ds_remake          | luigis_mansion_3ds_remake | "file/Luigi's Mansion 3DS Remake"
+Endless          | 2     | extensive_training  | extensive_training        | "file/Extensive Training"
+Speedrun         | 3     | extensive_training  | extensive_training        | "file/Extensive Training"
+Player VS Player | 4     | extensive_training  | extensive_training        | "file/Extensive Training"
 ```
 
 Music groups:
@@ -60,7 +61,7 @@ The 3DS Remake Values column refers to the SelectedFrame score.
 Numbers shown | 3DS Remake Values | Add-on             | Namespace                 | Data pack name
 1-23          | 1-23 and 25       | vanilla            | luigis_mansion            | "file/Luigi's Mansion"
               | 24 and 26         | 3ds_remake         | luigis_mansion_3ds_remake | "file/Luigi's Mansion 3DS Remake"
-24            | 27                | trill_tower        | trill_tower               | "file/Thrill Tower"
+              | 27                | trill_tower        | trill_tower               | "file/Thrill Tower"
 ```
 
 Trophy tasks
