@@ -5,7 +5,7 @@
 * Fixed unlocking a door shows invulnerability blinking
 * Fixed chauncey repeats a single animation during others if ball was spit, but missed at the right moment
 * Fixed you get given player heads when re-entering the world
-# Fixed having multiple or incomplete luigi models doesn't remove/replace them
+* Fixed having multiple or incomplete luigi models doesn't remove/replace them
 * Separated some small and big ball logic to account for the size difference better
 
 
