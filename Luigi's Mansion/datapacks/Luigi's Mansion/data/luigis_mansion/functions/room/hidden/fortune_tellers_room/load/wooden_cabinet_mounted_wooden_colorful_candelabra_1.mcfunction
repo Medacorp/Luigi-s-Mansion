@@ -1,4 +1,4 @@
-data modify storage luigis_mansion:data furniture set value {candle_flames:[{lit:0b,tags:["light_me"]},{lit:0b,tags:["light_me"]},{lit:0b,tags:["light_me"]}],searchable:["interact","vacuum"],shake_animation:["interact","vacuum"],sound:"luigis_mansion:heavy_generic",scan_message:'{"translate":"luigis_mansion:message.player.scan_furniture.28"}'}
+data modify storage luigis_mansion:data furniture set value {can_hide_boo:1b,candle_flames:[{lit:0b,tags:["light_me"]},{lit:0b,tags:["light_me"]},{lit:0b,tags:["light_me"]}],searchable:["interact","vacuum"],shake_animation:["interact","vacuum"],sound:"luigis_mansion:heavy_generic",scan_message:'{"translate":"luigis_mansion:message.player.scan_furniture.28"}'}
 summon minecraft:marker ~ ~ ~ {Tags:["chance","nothing"],Duration:1}
 summon minecraft:marker ~ ~ ~ {Tags:["chance","nothing"],Duration:1}
 summon minecraft:marker ~ ~ ~ {Tags:["chance","nothing"],Duration:1}

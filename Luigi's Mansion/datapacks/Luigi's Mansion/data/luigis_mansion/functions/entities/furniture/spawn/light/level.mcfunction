@@ -32,6 +32,6 @@ execute if entity @s[tag=lit,scores={FurnitureLightStrength=14}] run fill ~-0.4 
 execute if entity @s[tag=lit,scores={FurnitureLightStrength=14}] run fill ~-0.4 ~-0.4 ~-0.4 ~0.4 ~0.4 ~0.4 minecraft:light[level=14,waterlogged=true] replace minecraft:water[level=0]
 execute if entity @s[tag=lit,scores={FurnitureLightStrength=15}] run fill ~-0.4 ~-0.4 ~-0.4 ~0.4 ~0.4 ~0.4 minecraft:light[level=15,waterlogged=false] replace minecraft:air
 execute if entity @s[tag=lit,scores={FurnitureLightStrength=15}] run fill ~-0.4 ~-0.4 ~-0.4 ~0.4 ~0.4 ~0.4 minecraft:light[level=15,waterlogged=true] replace minecraft:water[level=0]
-execute if entity @s[tag=lit,scores={FurnitureLightStrength=1..},tag=cast_shadow] store result entity @e[tag=same_room,tag=!furniture] LightX run data get entity @e[tag=location,limit=1] Pos[0] 100
-execute if entity @s[tag=lit,scores={FurnitureLightStrength=1..},tag=cast_shadow] store result entity @e[tag=same_room,tag=!furniture] LightY run data get entity @e[tag=location,limit=1] Pos[1] 100
-execute if entity @s[tag=lit,scores={FurnitureLightStrength=1..},tag=cast_shadow] store result entity @e[tag=same_room,tag=!furniture] LightZ run data get entity @e[tag=location,limit=1] Pos[2] 100
+execute if entity @s[tag=lit,scores={FurnitureLightStrength=1..},tag=cast_shadow] store result score @e[tag=same_room,tag=!furniture] LightX run data get entity @e[tag=location,limit=1] Pos[0] 100
+execute if entity @s[tag=lit,scores={FurnitureLightStrength=1..},tag=cast_shadow] store result score @e[tag=same_room,tag=!furniture] LightY run data get entity @e[tag=location,limit=1] Pos[1] 100
+execute if entity @s[tag=lit,scores={FurnitureLightStrength=1..},tag=cast_shadow] store result score @e[tag=same_room,tag=!furniture] LightZ run data get entity @e[tag=location,limit=1] Pos[2] 100

@@ -1,3 +1,23 @@
+stopsound @a[scores={PositionIntX=737}] ambient luigis_mansion:block.telephone.ring
+scoreboard players set @a[scores={PositionIntX=737}] RoomNoise 0
+stopsound @a[scores={PositionIntZ=-19}] ambient luigis_mansion:block.telephone.ring
+scoreboard players set @a[scores={PositionIntZ=-19}] RoomNoise 0
+stopsound @a[scores={PositionIntZ=14}] ambient luigis_mansion:block.telephone.ring
+scoreboard players set @a[scores={PositionIntZ=14}] RoomNoise 0
+
+stopsound @a[scores={PositionIntY=27,PositionIntX=738..742,PositionIntZ=-18..-14}] ambient luigis_mansion:block.telephone.ring
+scoreboard players set @a[scores={PositionIntY=27,PositionIntX=738..742,PositionIntZ=-18..-14}] RoomNoise 0
+stopsound @a[scores={PositionIntY=27,PositionIntX=745..755,PositionIntZ=-18..-14}] ambient luigis_mansion:block.telephone.ring
+scoreboard players set @a[scores={PositionIntY=27,PositionIntX=745..755,PositionIntZ=-18..-14}] RoomNoise 0
+stopsound @a[scores={PositionIntY=27,PositionIntX=738..755,PositionIntZ=-11..6}] ambient luigis_mansion:block.telephone.ring
+scoreboard players set @a[scores={PositionIntY=27,PositionIntX=738..755,PositionIntZ=-11..6}] RoomNoise 0
+stopsound @a[scores={PositionIntY=27,PositionIntX=738..742,PositionIntZ=9..13}] ambient luigis_mansion:block.telephone.ring
+scoreboard players set @a[scores={PositionIntY=27,PositionIntX=738..742,PositionIntZ=9..13}] RoomNoise 0
+stopsound @a[scores={PositionIntY=27,PositionIntX=745..755,PositionIntZ=9..13}] ambient luigis_mansion:block.telephone.ring
+scoreboard players set @a[scores={PositionIntY=27,PositionIntX=745..755,PositionIntZ=9..13}] RoomNoise 0
+
+stopsound @a[scores={PositionIntY=34,PositionIntX=739..749}] ambient luigis_mansion:block.telephone.ring
+scoreboard players set @a[scores={PositionIntY=34,PositionIntX=739..749}] RoomNoise 0
 
 teleport @s[scores={PositionIntX=737}] ~-40 ~91 ~10
 teleport @s[scores={PositionIntX=756,PositionIntZ=-18..-6}] ~-1 ~ ~

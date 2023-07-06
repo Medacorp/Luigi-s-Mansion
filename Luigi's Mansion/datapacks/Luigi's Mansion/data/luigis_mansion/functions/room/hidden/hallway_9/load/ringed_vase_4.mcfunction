@@ -1,4 +1,4 @@
-data modify storage luigis_mansion:data furniture set value {searchable:["interact","vacuum"],shake_animation:["interact","vacuum"],sound:"luigis_mansion:ceramic",scan_message:'{"translate":"luigis_mansion:message.player.scan_furniture.73"}'}
+data modify storage luigis_mansion:data furniture set value {searchable:["interact","vacuum"],shake_animation:["interact","vacuum"],sound:"luigis_mansion:heavy_generic",scan_message:'{"translate":"luigis_mansion:message.player.scan_furniture.73"}'}
 summon minecraft:marker ~ ~ ~ {Tags:["chance","nothing"],Duration:1}
 summon minecraft:marker ~ ~ ~ {Tags:["chance","nothing"],Duration:1}
 summon minecraft:marker ~ ~ ~ {Tags:["chance","nothing"],Duration:1}
