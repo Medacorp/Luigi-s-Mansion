@@ -18,8 +18,8 @@ execute as @e[type=minecraft:armor_stand,tag=this_luigi,tag=!source] at @e[tag=t
 execute unless entity @e[tag=this_luigi,tag=source,limit=1] as @e[type=minecraft:armor_stand,tag=this_luigi,tag=!source] at @s run function luigis_mansion:animations/luigi/main
 scoreboard players reset #temp ID
 tag @s remove this_luigi
-execute store result score #temp Time if entity @e[tag=this_luigi,tag=source,limit=1]
-execute if score #temp Time matches 2.. run tag @e[tag=this_luigi] add dead
+execute store result score #temp Time if entity @e[tag=this_luigi]
+execute unless score #temp Time matches 10 run tag @e[tag=this_luigi] add dead
 scoreboard players reset #temp Time
 execute if entity @e[tag=this_luigi,limit=1] run scoreboard players set @s ModelTime 0
 execute unless entity @e[tag=this_luigi,limit=1] run scoreboard players add @s ModelTime 1

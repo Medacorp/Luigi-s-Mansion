@@ -22,6 +22,7 @@ execute unless entity @s[scores={Dialog=1..}] run scoreboard players add @s[tag=
 execute if entity @s[scores={Dialog=1},tag=intro_done] run tag @s remove laugh
 scoreboard players set @s[scores={Dialog=1},tag=intro_done] ActionTime 0
 execute if entity @s[scores={Dialog=1},tag=intro_done] run function luigis_mansion:entities/chauncey/grab_rambler
+tag @s[scores={Dialog=1},tag=intro_done] remove grab_rambler
 tag @s[scores={Dialog=1,Health=5001..},tag=intro_done] add left
 teleport @s[scores={Dialog=1..20},tag=left,tag=intro_done] ~ ~ ~ -180 0
 teleport @s[scores={Dialog=1..20},tag=!left,tag=intro_done] ~ ~ ~ 0 0

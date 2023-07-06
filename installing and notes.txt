@@ -1,5 +1,5 @@
 == NOTICE ==
-This map requires 1.19.3.
+This map requires 1.20-1.20.1.
 
 Bugs should be reported on the github here: https://github.com/Medacorp/Luigi-s-Mansion/issues
 Please do look if it's already reported.

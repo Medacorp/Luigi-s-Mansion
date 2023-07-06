@@ -7,7 +7,7 @@ Please do look if it's already reported.
 
 The 11 ghosts by yourself in the training room advancement is not granted for this add-on's training room program. Select vanilla to try to get that instead.
 
-This add-on will force a load order, the first world load with this add-on enabled while others are enabled too may take a while to load due to how this works. (There's nothing I can do to imrpove this.)
+This add-on will force a load order, the first world load with this add-on enabled while others are enabled too may take a while to load due to how this works. (There's nothing I can do to improve this.)
 
 == How to install ==
 1. Open the Luigi's Mansion world.
