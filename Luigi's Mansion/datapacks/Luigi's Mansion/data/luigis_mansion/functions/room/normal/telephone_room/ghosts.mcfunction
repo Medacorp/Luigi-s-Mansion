@@ -1,3 +1,3 @@
 execute if score #telephone_room Wave matches 1 unless entity @e[tag=ghost,scores={Room=56},tag=!optional_ghost] run function luigis_mansion:room/normal/telephone_room/clear
-execute unless data storage luigis_mansion:data current_state.current_data.rooms.telephone_room{cleared:1b} if data storage luigis_mansion:data current_state.current_data{blackout:0b} unless score #telephone_room Wave matches 1.. run function luigis_mansion:room/normal/telephone_room/wave_1
+execute unless data storage luigis_mansion:data current_state.current_data.rooms.telephone_room{cleared:1b} if data storage luigis_mansion:data current_state.current_data{blackout:0b} unless score #telephone_room Wave matches 1..99 run function luigis_mansion:room/normal/telephone_room/wave_1
 execute if score #telephone_room Wave matches 100 unless entity @e[tag=ghost,scores={Room=56},tag=!optional_ghost] run function luigis_mansion:room/normal/telephone_room/blackout_clear

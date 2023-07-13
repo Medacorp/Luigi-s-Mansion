@@ -7,6 +7,7 @@ summon minecraft:armor_stand ~ ~ ~ {NoGravity:1b,Invisible:1b,Marker:1b,Tags:["l
 summon minecraft:armor_stand ~ ~ ~ {NoGravity:1b,Invisible:1b,Marker:1b,Tags:["right_leg","gooigi_model","model_piece","found_owner"],CustomName:'{"translate":"luigis_mansion_3ds_remake:entity.gooigi"}',ArmorItems:[{},{},{},{id:"minecraft:diamond_pickaxe",Count:1b,tag:{Unbreakable:1b,Damage:2,CustomModelData:148,mirror:{tag:{Damage:3}}}}]}
 summon minecraft:armor_stand ~ ~ ~ {NoGravity:1b,Invisible:1b,Marker:1b,Tags:["left_leg","gooigi_model","model_piece","found_owner"],CustomName:'{"translate":"luigis_mansion_3ds_remake:entity.gooigi"}',ArmorItems:[{},{},{},{id:"minecraft:diamond_pickaxe",Count:1b,tag:{Unbreakable:1b,Damage:3,CustomModelData:148,mirror:{tag:{Damage:2}}}}]}
 summon minecraft:armor_stand ~ ~ ~ {NoGravity:1b,Invisible:1b,Marker:1b,Tags:["poltergust_body","gooigi_model","model_piece","new","found_owner"],CustomName:'{"translate":"luigis_mansion_3ds_remake:entity.gooigi"}',ArmorItems:[{},{},{},{}]}
+teleport @e[tag=this_entity,limit=1] ~ ~ ~ ~ ~
 scoreboard players set @e[tag=this_entity,limit=1] EntitySizeWidth 8
 scoreboard players set @e[tag=this_entity,limit=1] EntitySizeHeight 20
 scoreboard players set @e[tag=this_entity,limit=1] EntityYOffset 10

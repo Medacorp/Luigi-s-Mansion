@@ -1,10 +1,10 @@
-scoreboard players set @s[scores={PositionIntZ=-22,PositionIntX=687..695}] RoomNoise 0
-scoreboard players set @s[scores={PositionIntZ=-22,PositionIntX=698..711}] RoomNoise 0
-scoreboard players set @s[scores={PositionIntZ=-16,PositionIntX=687..698}] RoomNoise 0
-scoreboard players set @s[scores={PositionIntZ=-16,PositionIntX=701..711}] RoomNoise 0
+scoreboard players set @s[scores={PositionIntZ=-22,PositionIntX=687..695}] RoomNoise 1
+scoreboard players set @s[scores={PositionIntZ=-22,PositionIntX=698..711}] RoomNoise 1
+scoreboard players set @s[scores={PositionIntZ=-16,PositionIntX=687..698}] RoomNoise 1
+scoreboard players set @s[scores={PositionIntZ=-16,PositionIntX=701..711}] RoomNoise 1
 
-scoreboard players set @s[scores={PositionIntY=16}] RoomNoise 0
-scoreboard players set @s[scores={PositionIntY=9,PositionIntX=701..711}] RoomNoise 0
+scoreboard players set @s[scores={PositionIntY=16}] RoomNoise 1
+scoreboard players set @s[scores={PositionIntY=9,PositionIntX=701..711}] RoomNoise 1
 
 teleport @s[scores={PositionIntZ=-22,PositionIntX=686}] ~ ~ ~1
 teleport @s[scores={PositionIntZ=-22,PositionIntX=687..695}] ~-6 ~ ~-17

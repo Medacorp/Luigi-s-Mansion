@@ -1,1 +1,0 @@
-scoreboard players reset #secret_altar_candle_5

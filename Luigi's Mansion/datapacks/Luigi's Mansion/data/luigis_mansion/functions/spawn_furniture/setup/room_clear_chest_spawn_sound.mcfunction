@@ -1,1 +1,1 @@
-execute unless data storage luigis_mansion:data furniture{searched:1b} run playsound luigis_mansion:furniture.room_clear_chest.spawn block @a ~ ~ ~ 2
+execute unless data storage luigis_mansion:data furniture{searched:1b} unless data storage luigis_mansion:data furniture{no_spawn_sound:1b} run playsound luigis_mansion:furniture.room_clear_chest.spawn block @a ~ ~ ~ 2

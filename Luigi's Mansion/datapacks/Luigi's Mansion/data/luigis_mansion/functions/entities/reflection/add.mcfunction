@@ -1,5 +1,5 @@
 execute unless data storage luigis_mansion:data reflections run data modify storage luigis_mansion:data reflections set value []
-data modify storage luigis_mansion:data reflections append value {id:0,room:0,mirror:{value:0,z:0b},data:{},entity_id:"minecraft:armor_stand",mirror.set_by_furniture_entity:0b}
+data modify storage luigis_mansion:data reflections append value {id:0,room:0,mirror:{value:0,z:0b,set_by_furniture_entity:0b},data:{},entity_id:"minecraft:armor_stand"}
 execute store result storage luigis_mansion:data reflections[-1].room int 1 run scoreboard players get @s Room
 execute if score @s MirrorX matches -2147483648.. store result storage luigis_mansion:data reflections[-1].mirror.value int 1 run scoreboard players get @s MirrorX
 execute if score @s MirrorZ matches -2147483648.. store result storage luigis_mansion:data reflections[-1].mirror.value int 1 run scoreboard players get @s MirrorZ

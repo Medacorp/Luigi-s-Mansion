@@ -1,18 +1,18 @@
 stopsound @s[scores={PositionIntX=653,PositionIntZ=26..36}] neutral luigis_mansion:entity.mario.hey_whats_the_hold_up
-scoreboard players set @s[scores={PositionIntX=653,PositionIntZ=26..36}] RoomNoise 0
+scoreboard players set @s[scores={PositionIntX=653,PositionIntZ=26..36}] RoomNoise 1
 stopsound @s[scores={PositionIntX=653,PositionIntZ=19..23}] neutral luigis_mansion:entity.mario.hey_whats_the_hold_up
-scoreboard players set @s[scores={PositionIntX=653,PositionIntZ=19..23}] RoomNoise 0
+scoreboard players set @s[scores={PositionIntX=653,PositionIntZ=19..23}] RoomNoise 1
 stopsound @s[scores={PositionIntX=653,PositionIntZ=-8..16}] neutral luigis_mansion:entity.mario.hey_whats_the_hold_up
-scoreboard players set @s[scores={PositionIntX=653,PositionIntZ=-8..16}] RoomNoise 0
+scoreboard players set @s[scores={PositionIntX=653,PositionIntZ=-8..16}] RoomNoise 1
 stopsound @s[scores={PositionIntX=653,PositionIntZ=-40..-11}] neutral luigis_mansion:entity.mario.hey_whats_the_hold_up
-scoreboard players set @s[scores={PositionIntX=653,PositionIntZ=-40..-11}] RoomNoise 0
+scoreboard players set @s[scores={PositionIntX=653,PositionIntZ=-40..-11}] RoomNoise 1
 stopsound @s[scores={PositionIntZ=37}] neutral luigis_mansion:entity.mario.hey_whats_the_hold_up
-scoreboard players set @s[scores={PositionIntZ=37}] RoomNoise 0
+scoreboard players set @s[scores={PositionIntZ=37}] RoomNoise 1
 
 stopsound @s[scores={PositionIntY=100,PositionIntZ=-10..-5,PositionIntX=648}] neutral luigis_mansion:entity.mario.hey_whats_the_hold_up
-scoreboard players set @s[scores={PositionIntY=100,PositionIntZ=-10..-5,PositionIntX=648}] RoomNoise 0
+scoreboard players set @s[scores={PositionIntY=100,PositionIntZ=-10..-5,PositionIntX=648}] RoomNoise 1
 stopsound @s[scores={PositionIntY=100,PositionIntZ=-25..-11}] neutral luigis_mansion:entity.mario.hey_whats_the_hold_up
-scoreboard players set @s[scores={PositionIntY=100,PositionIntZ=-25..-11}] RoomNoise 0
+scoreboard players set @s[scores={PositionIntY=100,PositionIntZ=-25..-11}] RoomNoise 1
 
 teleport @s[scores={PositionIntX=644}] ~1 ~ ~
 teleport @s[scores={PositionIntX=653,PositionIntZ=37}] ~-1 ~ ~

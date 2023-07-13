@@ -1,2 +1,2 @@
-execute unless data storage luigis_mansion:data current_state.current_data.rooms.secret_altar{cleared:1b} if data storage luigis_mansion:data current_state.current_data{blackout:0b} unless score #secret_altar Wave matches 1.. run function luigis_mansion:room/hidden/secret_altar/wave_1
+execute unless data storage luigis_mansion:data current_state.current_data.rooms.secret_altar{cleared:1b} if data storage luigis_mansion:data current_state.current_data{blackout:0b} unless score #secret_altar Wave matches 1..99 run function luigis_mansion:room/hidden/secret_altar/wave_1
 execute if data storage luigis_mansion:data current_state.current_data{blackout:1b} unless score #secret_altar Wave matches 1.. run function luigis_mansion:room/hidden/secret_altar/blackout

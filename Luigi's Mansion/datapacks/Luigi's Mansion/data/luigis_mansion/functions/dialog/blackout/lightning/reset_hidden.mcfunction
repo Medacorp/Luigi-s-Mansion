@@ -78,3 +78,5 @@ execute if score #guest_room Ticking matches 1 run function #luigis_mansion:room
 execute if score #the_artists_studio Ticking matches 1 run function #luigis_mansion:room/hidden/the_artists_studio/turn_lights/off
 execute if score #secret_altar Ticking matches 1 run function #luigis_mansion:room/hidden/secret_altar/turn_lights/off
 tag @e[tag=toad] add remove_from_existence
+tag @e[x=755.0,y=11,z=7.5,distance=..0.7,tag=door,tag=frame,limit=1] add unopenable
+tag @e[x=755.0,y=11,z=6.5,distance=..0.7,tag=door,tag=frame,limit=1] add unopenable

@@ -1,5 +1,5 @@
 execute if score #sealed_room Wave matches 2 unless entity @e[tag=ghost,tag=!optional_ghost,scores={Room=66}] run function luigis_mansion:room/hidden/sealed_room/clear
 execute if score #sealed_room Wave matches 1 unless entity @e[tag=ghost,tag=!optional_ghost,scores={Room=66}] run function luigis_mansion:room/hidden/sealed_room/wave_2
-execute unless data storage luigis_mansion:data current_state.current_data.rooms.sealed_room{cleared:1b} if data storage luigis_mansion:data current_state.current_data{blackout:0b} unless score #sealed_room Wave matches 1.. run function luigis_mansion:room/hidden/sealed_room/wave_1
+execute unless data storage luigis_mansion:data current_state.current_data.rooms.sealed_room{cleared:1b} if data storage luigis_mansion:data current_state.current_data{blackout:0b} unless score #sealed_room Wave matches 1..99 run function luigis_mansion:room/hidden/sealed_room/wave_1
 execute if data storage luigis_mansion:data current_state.current_data{blackout:1b} unless score #sealed_room Wave matches 1.. run function luigis_mansion:room/hidden/sealed_room/blackout
 execute unless entity @a[scores={ScareType=3..4,Room=66},limit=1] run function luigis_mansion:room/hidden/sealed_room/load_vacuumable_ghosts

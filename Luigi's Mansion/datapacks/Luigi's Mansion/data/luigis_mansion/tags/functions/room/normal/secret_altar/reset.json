@@ -2,10 +2,6 @@
     "values": [
         "luigis_mansion:room/normal/secret_altar/reset/unload",
         "#luigis_mansion:room/normal/secret_altar/turn_lights/off",
-        "luigis_mansion:room/normal/secret_altar/reset/candle_2",
-        "luigis_mansion:room/normal/secret_altar/reset/candle_3",
-        "luigis_mansion:room/normal/secret_altar/reset/candle_4",
-        "luigis_mansion:room/normal/secret_altar/reset/candle_5",
         "luigis_mansion:room/normal/secret_altar/reset/lamp_1",
         "luigis_mansion:room/normal/secret_altar/reset/lamp_2",
         "luigis_mansion:room/normal/secret_altar/reset/lamp_3",

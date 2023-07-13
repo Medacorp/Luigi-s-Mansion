@@ -9,7 +9,7 @@ entity: {
         plural_message:'{"translate":"..."}' //The message used when more than 1 player is present; only used is sender is set to "me".
     }, 
     female_scan_message:{}, //The message spoken when scanning the female floating whirlinda, same format as above. Only applies to the floating whirlindas (obviously).
-    can_talk_to:1b, //Whether Toad, E. Gadd or this portrait ghost can be talked to.
+    can_talk_to:1b, //Whether Toad, E. Gadd or this portrait ghost can be talked to. Default = 1b for non-portrait ghosts and 0b for portrait ghosts
     disappear_on_vanish:1b, //Whether this ghost disappears when it vanishes.
     appear_type:"<type>", //Ghost appear type to use, differs per ghost.
     attack_type:"<type>", //Ghost attack type to use, differs per ghost.

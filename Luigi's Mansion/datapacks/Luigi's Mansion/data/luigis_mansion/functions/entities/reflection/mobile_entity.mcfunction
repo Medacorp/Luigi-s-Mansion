@@ -3,8 +3,9 @@ execute store result score #temp HomeZ run data get storage luigis_mansion:data 
 execute store result score #temp MirrorX run data get storage luigis_mansion:data mirror.mirror.value
 execute store result score #temp MirrorZ run data get storage luigis_mansion:data mirror.mirror.z
 
-scoreboard players operation #temp MirrorX *= #100 Constants
-scoreboard players add #temp MirrorX 50
+execute if data storage luigis_mansion:data mirror.mirror{set_by_furniture_entity:1b} run scoreboard players operation #temp MirrorX *= #10 Constants
+execute unless data storage luigis_mansion:data mirror.mirror{set_by_furniture_entity:1b} run scoreboard players operation #temp MirrorX *= #100 Constants
+execute unless data storage luigis_mansion:data mirror.mirror{set_by_furniture_entity:1b} run scoreboard players add #temp MirrorX 50
 
 data modify entity @s Rotation set from storage luigis_mansion:data mirror.data.Rotation
 data modify entity @s Pos set from storage luigis_mansion:data mirror.data.Pos

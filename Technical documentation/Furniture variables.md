@@ -43,6 +43,7 @@ furniture: {
         cast_shadow:1b //Whether the light source creates shadows. Default = 0b.
     },
     mirror_reflection:1b, //Whether the mirror will actually reflect the room, otherwise gets a solid glass texture. Valid for mirrors only. Default = 1b. Forced to 0b if the rotation is not a multiple of 90.
+    no_spawn_sound:1b, //Whether the unsearched room clear chest sound is disabled, searched room clear chests always have it disabled, regardless of this value. Valid for room clear chests only. Default = 0b.
     candle_flames:[ //Variables for the flames this candlabra has, one entry per flame. Default = empty object per flame.
         {
             lit:1b, //Whether this flame is lit. If this candle flame is also a fire elemental source, its lit state will match whether it can spawn fire elemental ghosts. Default = 0b.

@@ -13,7 +13,7 @@ execute if entity @s[scores={MushroomTimer=0},tag=portrait_ghost,tag=!no_poison_
 tag @s[scores={HurtTime=30},tag=!dialog] add fleeing
 execute at @s[scores={HurtTime=1..21},tag=!ground_bound,tag=!ceiling_ghost] run function luigis_mansion:entities/ghost/hurt_move
 tag @s[tag=remove_from_existence] remove in_vacuum
-execute if entity @s[tag=!in_vacuum,tag=!dialog] if score #debug_messages Selected matches 1.. run tellraw @a {"translate":"luigis_mansion:message.debug.format","with":[{"translate":"luigis_mansion:message.debug","color":"gold"},{"translate":"luigis_mansion:message.debug.ghost_escape.vacuum"}]}
+execute if entity @s[tag=!in_vacuum,tag=!dialog] if score #debug_messages Selected matches 1 run tellraw @a {"translate":"luigis_mansion:message.debug.format","with":[{"translate":"luigis_mansion:message.debug","color":"gold"},{"translate":"luigis_mansion:message.debug.ghost_escape.vacuum"}]}
 tag @s[tag=!in_vacuum,tag=!dialog] add vanish
 tag @s[tag=!in_vacuum,tag=!dialog] remove fleeing
 tag @s[tag=!in_vacuum,tag=!dialog] remove hurt
