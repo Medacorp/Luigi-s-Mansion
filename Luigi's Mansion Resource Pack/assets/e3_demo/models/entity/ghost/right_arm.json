@@ -1,0 +1,6 @@
+{
+	"parent": "luigis_mansion:entity/ghost/right_arm",
+	"textures": {
+		"0": "e3_demo:entity/ghost"
+	}
+}

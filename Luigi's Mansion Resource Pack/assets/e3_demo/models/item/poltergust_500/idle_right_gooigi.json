@@ -1,0 +1,6 @@
+{
+	"parent": "e3_demo:item/poltergust_500/idle_right",
+	"textures": {
+		"0": "e3_demo:item/poltergust_gooigi"
+	}
+}

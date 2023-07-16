@@ -1,0 +1,14 @@
+{
+	"values": [
+	    "3ds_remake:room/hidden/the_twins_room/load/set_loaded",
+        "3ds_remake:room/hidden/the_twins_room/load/lights",
+        "3ds_remake:room/hidden/the_twins_room/load/doors",
+        "3ds_remake:room/hidden/the_twins_room/load/helicopter_mobile",
+        "3ds_remake:room/hidden/the_twins_room/load/painting_1",
+        "3ds_remake:room/hidden/the_twins_room/load/painting_2",
+        "3ds_remake:room/hidden/the_twins_room/load/room_clear_chest",
+        "3ds_remake:room/hidden/the_twins_room/load/vacuumable",
+        "3ds_remake:room/hidden/the_twins_room/load/cobweb_1",
+        "3ds_remake:room/hidden/the_twins_room/load/cobweb_2"
+	]
+}

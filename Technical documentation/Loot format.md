@@ -45,7 +45,7 @@ luigis_mansion:key
 }
 ```
 
-luigis_mansion_3ds_remake:gameboy_horror_part
+3ds_remake:gameboy_horror_part
 ```
 {
     //If the item of this type has already been obtained, or exists in the world, it will not spawn. Will only ever attempt to spawn one, even with the count format.

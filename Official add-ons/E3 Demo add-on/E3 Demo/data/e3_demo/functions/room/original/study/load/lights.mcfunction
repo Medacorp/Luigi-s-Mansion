@@ -1,0 +1,1 @@
+execute if data storage luigis_mansion:data current_state.current_data.rooms.study{cleared:1b} run function e3_demo:room/original/study/turn_on_lights

@@ -1,6 +1,0 @@
-{
-	"parent": "luigis_beta_mansion:item/poltergust_500/nozzle",
-	"textures": {
-		"0": "luigis_beta_mansion:item/poltergust_gooigi"
-	}
-}

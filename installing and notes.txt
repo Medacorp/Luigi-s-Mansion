@@ -71,7 +71,7 @@ The best way to uninstall add-ons is as follows:
 Then close the world or server, and remove the data pack from the world.
 1. Go to the "Luigi's Mansion" world folder
 2. Go to the "datapacks" folder
-3. Delete the desired add-ons. (Do NOT delete the "Luigi's Mansion" folder, as that's the base map behavior.)
+3. Delete the desired add-ons. (Do NOT delete the "MEDACORP" folder, as that's the base map behavior.)
 
 == Server properties requirements ==
 gamemode=adventure

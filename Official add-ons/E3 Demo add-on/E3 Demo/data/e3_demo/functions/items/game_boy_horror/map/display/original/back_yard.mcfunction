@@ -1,0 +1,3 @@
+execute if data storage luigis_mansion:data current_state.current_data.rooms.back_yard{seen:0b} run function e3_demo:items/game_boy_horror/map/display/original/back_yard/unseen
+execute if data storage luigis_mansion:data current_state.current_data.rooms.back_yard{seen:1b,cleared:0b} run function e3_demo:items/game_boy_horror/map/display/original/back_yard/seen
+execute if data storage luigis_mansion:data current_state.current_data.rooms.back_yard{cleared:1b} run function e3_demo:items/game_boy_horror/map/display/original/back_yard/cleared

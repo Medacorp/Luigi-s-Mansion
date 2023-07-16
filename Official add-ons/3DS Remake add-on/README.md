@@ -9,7 +9,7 @@ Ghost behavioral changes the add-on applies:
 
 Room -4 is the gallery, regardless of add-on or not. The add-on will simply teleport players in the old gallery to the new one, and never start ticking the old one.
 
-The new gallery's functions are under `luigis_mansion_3ds_remake:room/gallery/`.
+The new gallery's functions are under `3ds_remake:room/gallery/`.
 
 A second hidden mansion is added, only a small amount of the original files are overwritten, so other add-ons can change both separately.
 
@@ -17,7 +17,7 @@ If you make any add-ons that change the hidden mansion, and the file is overwrit
 `execute unless score #3ds_remake Loaded matches 1.. run function <vanilla version>'
 `execute if score #3ds_remake Loaded matches 1.. run function <3ds version>'
 
-The 3DS hidden mansion's functions are under `luigis_mansion_3ds_remake:room/hidden/`.
+The 3DS hidden mansion's functions are under `3ds_remake:room/hidden/`.
 
 The 3DS hidden mansion simply re-uses the `luigis_mansion:normal` dimension.
 

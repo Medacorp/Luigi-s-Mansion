@@ -1,0 +1,8 @@
+{
+    "pack": {
+        "pack_format": 15,
+        "description": {
+			"translate": "e3_demo:data_pack.description"
+		}
+    }
+}

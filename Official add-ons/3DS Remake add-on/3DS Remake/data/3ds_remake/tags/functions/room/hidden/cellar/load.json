@@ -1,0 +1,18 @@
+{
+	"values": [
+	    "3ds_remake:room/hidden/cellar/load/set_loaded",
+        "3ds_remake:room/hidden/cellar/load/lights",
+        "3ds_remake:room/hidden/cellar/load/doors",
+        "3ds_remake:room/hidden/cellar/load/dust_1",
+        "3ds_remake:room/hidden/cellar/load/dust_2",
+        "3ds_remake:room/hidden/cellar/load/dust_3",
+        "3ds_remake:room/hidden/cellar/load/dust_4",
+        "3ds_remake:room/hidden/cellar/load/dust_5",
+        "3ds_remake:room/hidden/cellar/load/dust_6",
+        "3ds_remake:room/hidden/cellar/load/dust_7",
+        "3ds_remake:room/hidden/cellar/load/dust_8",
+        "3ds_remake:room/hidden/cellar/load/room_clear_chest",
+        "3ds_remake:room/hidden/cellar/load/old_triple_wall_candelabra_1",
+        "3ds_remake:room/hidden/cellar/load/old_triple_wall_candelabra_2"
+	]
+}

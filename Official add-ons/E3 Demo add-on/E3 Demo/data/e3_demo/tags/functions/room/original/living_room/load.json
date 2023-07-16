@@ -1,0 +1,18 @@
+{
+	"values": [
+	    "e3_demo:room/original/living_room/load/set_loaded",
+        "e3_demo:room/original/living_room/load/lights",
+        "e3_demo:room/original/living_room/load/doors",
+        "e3_demo:room/original/living_room/load/painting_1",
+        "e3_demo:room/original/living_room/load/painting_2",
+        "e3_demo:room/original/living_room/load/painting_3",
+        "e3_demo:room/original/living_room/load/painting_4",
+        "e3_demo:room/original/living_room/load/painting_5",
+        "e3_demo:room/original/living_room/load/painting_6",
+        "e3_demo:room/original/living_room/load/painting_7",
+        "e3_demo:room/original/living_room/load/room_clear_chest",
+        "e3_demo:room/original/living_room/load/silver_candelabra_1",
+        "e3_demo:room/original/living_room/load/silver_candelabra_2",
+        "e3_demo:room/original/living_room/load/silver_candelabra_3"
+	]
+}

@@ -1,0 +1,24 @@
+{
+    "values": [
+        "3ds_remake:room/hidden/safari_room/reset/unload",
+        "#3ds_remake:room/hidden/safari_room/turn_lights/off",
+        "3ds_remake:room/hidden/safari_room/reset/chair",
+        "3ds_remake:room/hidden/safari_room/reset/crate_1",
+        "3ds_remake:room/hidden/safari_room/reset/crate_2",
+        "3ds_remake:room/hidden/safari_room/reset/crate_3",
+        "3ds_remake:room/hidden/safari_room/reset/crate_4",
+        "3ds_remake:room/hidden/safari_room/reset/crate_5",
+        "3ds_remake:room/hidden/safari_room/reset/crate_6",
+        "3ds_remake:room/hidden/safari_room/reset/deer_head_1",
+        "3ds_remake:room/hidden/safari_room/reset/deer_head_2",
+        "3ds_remake:room/hidden/safari_room/reset/deer_head_3",
+        "3ds_remake:room/hidden/safari_room/reset/lamp_1",
+        "3ds_remake:room/hidden/safari_room/reset/lamp_2",
+        "3ds_remake:room/hidden/safari_room/reset/mirror",
+        "3ds_remake:room/hidden/safari_room/reset/room_clear_chest",
+        "3ds_remake:room/hidden/safari_room/reset/shelf_1",
+        "3ds_remake:room/hidden/safari_room/reset/shelf_2",
+        "3ds_remake:room/hidden/safari_room/reset/table",
+        "3ds_remake:room/hidden/safari_room/reset/tiger_rug_2"
+    ]
+}

@@ -1,0 +1,1 @@
+execute if entity @s[tag=beta_puncher] run function e3_demo:entities/ghost/capture/caught/beta_puncher

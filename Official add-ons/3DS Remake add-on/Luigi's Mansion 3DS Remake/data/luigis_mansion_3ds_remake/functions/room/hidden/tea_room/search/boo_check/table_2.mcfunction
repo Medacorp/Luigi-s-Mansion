@@ -1,2 +1,0 @@
-execute unless entity @e[x=643.5,y=20,z=-51.5,distance=..0.7,tag=hidden_boo,tag=caught_by_boo_radar] run function luigis_mansion_3ds_remake:room/hidden/tea_room/search/table_2
-execute unless block 642 20 -56 minecraft:white_wool run tag @e[x=643.5,y=20,z=-51.5,distance=..0.7,tag=hidden_boo,tag=caught_by_boo_radar] add spawn

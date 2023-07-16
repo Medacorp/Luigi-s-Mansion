@@ -158,163 +158,163 @@
             "predicate": {
                 "custom_model_data": 30
             },
-            "model": "luigis_mansion_3ds_remake:entity/trophy/silver/ghost/body"
+            "model": "3ds_remake:entity/trophy/silver/ghost/body"
         },
         {
             "predicate": {
                 "custom_model_data": 31
             },
-            "model": "luigis_mansion_3ds_remake:entity/trophy/silver/ghost/right_arm"
+            "model": "3ds_remake:entity/trophy/silver/ghost/right_arm"
         },
         {
             "predicate": {
                 "custom_model_data": 32
             },
-            "model": "luigis_mansion_3ds_remake:entity/trophy/silver/ghost/left_arm"
+            "model": "3ds_remake:entity/trophy/silver/ghost/left_arm"
         },
         {
             "predicate": {
                 "custom_model_data": 33
             },
-            "model": "luigis_mansion_3ds_remake:entity/trophy/silver/puncher/body"
+            "model": "3ds_remake:entity/trophy/silver/puncher/body"
         },
         {
             "predicate": {
                 "custom_model_data": 34
             },
-            "model": "luigis_mansion_3ds_remake:entity/trophy/silver/puncher/right_arm"
+            "model": "3ds_remake:entity/trophy/silver/puncher/right_arm"
         },
         {
             "predicate": {
                 "custom_model_data": 35
             },
-            "model": "luigis_mansion_3ds_remake:entity/trophy/silver/puncher/left_arm"
+            "model": "3ds_remake:entity/trophy/silver/puncher/left_arm"
         },
         {
             "predicate": {
                 "custom_model_data": 36
             },
-            "model": "luigis_mansion_3ds_remake:entity/trophy/silver/twirler/body"
+            "model": "3ds_remake:entity/trophy/silver/twirler/body"
         },
         {
             "predicate": {
                 "custom_model_data": 37
             },
-            "model": "luigis_mansion_3ds_remake:entity/trophy/silver/twirler/right_arm"
+            "model": "3ds_remake:entity/trophy/silver/twirler/right_arm"
         },
         {
             "predicate": {
                 "custom_model_data": 38
             },
-            "model": "luigis_mansion_3ds_remake:entity/trophy/silver/twirler/left_arm"
+            "model": "3ds_remake:entity/trophy/silver/twirler/left_arm"
         },
         {
             "predicate": {
                 "custom_model_data": 39
             },
-            "model": "luigis_mansion_3ds_remake:entity/trophy/silver/garbage_can_ghost/body"
+            "model": "3ds_remake:entity/trophy/silver/garbage_can_ghost/body"
         },
         {
             "predicate": {
                 "custom_model_data": 40
             },
-            "model": "luigis_mansion_3ds_remake:entity/trophy/silver/garbage_can_ghost/right_arm"
+            "model": "3ds_remake:entity/trophy/silver/garbage_can_ghost/right_arm"
         },
         {
             "predicate": {
                 "custom_model_data": 41
             },
-            "model": "luigis_mansion_3ds_remake:entity/trophy/silver/garbage_can_ghost/left_arm"
+            "model": "3ds_remake:entity/trophy/silver/garbage_can_ghost/left_arm"
         },
 		{
             "predicate": {
                 "custom_model_data": 42
             },
-            "model": "luigis_mansion_3ds_remake:entity/trophy/gold/ghost/body"
+            "model": "3ds_remake:entity/trophy/gold/ghost/body"
         },
         {
             "predicate": {
                 "custom_model_data": 43
             },
-            "model": "luigis_mansion_3ds_remake:entity/trophy/gold/ghost/right_arm"
+            "model": "3ds_remake:entity/trophy/gold/ghost/right_arm"
         },
         {
             "predicate": {
                 "custom_model_data": 44
             },
-            "model": "luigis_mansion_3ds_remake:entity/trophy/gold/ghost/left_arm"
+            "model": "3ds_remake:entity/trophy/gold/ghost/left_arm"
         },
         {
             "predicate": {
                 "custom_model_data": 45
             },
-            "model": "luigis_mansion_3ds_remake:entity/trophy/gold/puncher/body"
+            "model": "3ds_remake:entity/trophy/gold/puncher/body"
         },
         {
             "predicate": {
                 "custom_model_data": 46
             },
-            "model": "luigis_mansion_3ds_remake:entity/trophy/gold/puncher/right_arm"
+            "model": "3ds_remake:entity/trophy/gold/puncher/right_arm"
         },
         {
             "predicate": {
                 "custom_model_data": 47
             },
-            "model": "luigis_mansion_3ds_remake:entity/trophy/gold/puncher/left_arm"
+            "model": "3ds_remake:entity/trophy/gold/puncher/left_arm"
         },
         {
             "predicate": {
                 "custom_model_data": 48
             },
-            "model": "luigis_mansion_3ds_remake:entity/trophy/gold/twirler/body"
+            "model": "3ds_remake:entity/trophy/gold/twirler/body"
         },
         {
             "predicate": {
                 "custom_model_data": 49
             },
-            "model": "luigis_mansion_3ds_remake:entity/trophy/gold/twirler/right_arm"
+            "model": "3ds_remake:entity/trophy/gold/twirler/right_arm"
         },
         {
             "predicate": {
                 "custom_model_data": 50
             },
-            "model": "luigis_mansion_3ds_remake:entity/trophy/gold/twirler/left_arm"
+            "model": "3ds_remake:entity/trophy/gold/twirler/left_arm"
         },
         {
             "predicate": {
                 "custom_model_data": 51
             },
-            "model": "luigis_mansion_3ds_remake:entity/trophy/gold/garbage_can_ghost/body"
+            "model": "3ds_remake:entity/trophy/gold/garbage_can_ghost/body"
         },
         {
             "predicate": {
                 "custom_model_data": 52
             },
-            "model": "luigis_mansion_3ds_remake:entity/trophy/gold/garbage_can_ghost/right_arm"
+            "model": "3ds_remake:entity/trophy/gold/garbage_can_ghost/right_arm"
         },
         {
             "predicate": {
                 "custom_model_data": 53
             },
-            "model": "luigis_mansion_3ds_remake:entity/trophy/gold/garbage_can_ghost/left_arm"
+            "model": "3ds_remake:entity/trophy/gold/garbage_can_ghost/left_arm"
         },
         {
             "predicate": {
                 "custom_model_data": 54
             },
-            "model": "luigis_mansion_3ds_remake:entity/trophy/gold/grabbing_ghost/body"
+            "model": "3ds_remake:entity/trophy/gold/grabbing_ghost/body"
         },
         {
             "predicate": {
                 "custom_model_data": 55
             },
-            "model": "luigis_mansion_3ds_remake:entity/trophy/gold/grabbing_ghost/right_arm"
+            "model": "3ds_remake:entity/trophy/gold/grabbing_ghost/right_arm"
         },
         {
             "predicate": {
                 "custom_model_data": 56
             },
-            "model": "luigis_mansion_3ds_remake:entity/trophy/gold/grabbing_ghost/left_arm"
+            "model": "3ds_remake:entity/trophy/gold/grabbing_ghost/left_arm"
         }
 	]
 }

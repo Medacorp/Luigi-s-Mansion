@@ -1,1 +1,0 @@
-execute unless entity @e[tag=eternal_gold_coin,scores={Room=10}] unless data storage luigis_mansion:data current_state.current_data{money_spawned:["nursery_money"]} run function luigis_mansion_3ds_remake:room/hidden/nursery/money

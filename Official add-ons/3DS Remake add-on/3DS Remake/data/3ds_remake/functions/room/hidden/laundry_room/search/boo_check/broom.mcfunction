@@ -1,0 +1,2 @@
+execute unless entity @e[x=714.5,y=11,z=62.5,distance=..0.7,tag=hidden_boo,tag=caught_by_boo_radar] run function 3ds_remake:room/hidden/laundry_room/search/broom
+tag @e[x=714.5,y=11,z=62.5,distance=..0.7,tag=hidden_boo,tag=caught_by_boo_radar] add spawn

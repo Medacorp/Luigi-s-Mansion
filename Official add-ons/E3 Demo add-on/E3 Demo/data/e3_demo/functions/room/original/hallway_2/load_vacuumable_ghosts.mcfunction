@@ -1,0 +1,1 @@
+execute unless score #hallway_2 Vacuumables matches 1 unless data storage luigis_mansion:data current_state.current_data.rooms.hallway_2{cleared:1b} run function e3_demo:room/original/hallway_2/vacuumable_ghosts

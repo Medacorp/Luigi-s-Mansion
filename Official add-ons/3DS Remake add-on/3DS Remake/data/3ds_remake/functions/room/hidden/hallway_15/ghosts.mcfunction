@@ -1,0 +1,2 @@
+execute if data storage luigis_mansion:data current_state.current_data{blackout:1b} unless score #hallway_15 Wave matches 1.. run function 3ds_remake:room/hidden/hallway_15/blackout
+function 3ds_remake:room/hidden/hallway_15/load_vacuumable_ghosts

@@ -1,0 +1,11 @@
+{
+    "values": [
+        "3ds_remake:room/hidden/balcony_1/reset/unload",
+        "#3ds_remake:room/hidden/balcony_1/turn_lights/off",
+        "3ds_remake:room/hidden/balcony_1/reset/lamp",
+        "3ds_remake:room/hidden/balcony_1/reset/plant_1",
+        "3ds_remake:room/hidden/balcony_1/reset/plant_2",
+        "3ds_remake:room/hidden/balcony_1/reset/plant_3",
+        "3ds_remake:room/hidden/balcony_1/reset/plant_4"
+    ]
+}

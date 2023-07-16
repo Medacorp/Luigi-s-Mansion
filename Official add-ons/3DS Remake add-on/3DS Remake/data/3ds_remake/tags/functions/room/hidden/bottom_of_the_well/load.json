@@ -1,0 +1,7 @@
+{
+	"values": [
+	    "3ds_remake:room/hidden/bottom_of_the_well/load/set_loaded",
+        "3ds_remake:room/hidden/bottom_of_the_well/load/lights",
+        "3ds_remake:room/hidden/bottom_of_the_well/load/room_clear_loot_dropper"
+	]
+}

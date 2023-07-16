@@ -1,1 +1,0 @@
-execute positioned as @s[distance=..1.4,tag=element_medal] run function luigis_mansion_3ds_remake:items/poltergust_3000/effect_on_entity/vacuum/effect/item/generic_no_gooigi

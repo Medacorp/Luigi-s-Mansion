@@ -1,0 +1,1 @@
+execute if data storage luigis_mansion:data drop_loot.contents.3ds_remake.game_boy_horror_part run function 3ds_remake:other/drop_loot/loop/game_boy_horror_part

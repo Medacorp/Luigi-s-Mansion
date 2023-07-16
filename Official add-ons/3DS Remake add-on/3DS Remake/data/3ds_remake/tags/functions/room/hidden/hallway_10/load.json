@@ -1,0 +1,10 @@
+{
+	"values": [
+	    "3ds_remake:room/hidden/hallway_10/load/set_loaded",
+        "3ds_remake:room/hidden/hallway_10/load/lights",
+        "3ds_remake:room/hidden/hallway_10/load/doors",
+        "3ds_remake:room/hidden/hallway_10/load/painting",
+        "3ds_remake:room/hidden/hallway_10/load/simple_wall_candelabra_1",
+        "3ds_remake:room/hidden/hallway_10/load/simple_wall_candelabra_2"
+	]
+}

@@ -1,0 +1,1 @@
+execute if data storage luigis_mansion:data current_state.current_data{blackout:1b} unless score #balcony_1 Wave matches 1.. run function 3ds_remake:room/hidden/balcony_1/blackout

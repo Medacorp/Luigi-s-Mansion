@@ -1,1 +1,0 @@
-execute if data storage luigis_mansion:data current_state.current_data.rooms.cold_storage{cleared:1b} if data storage luigis_mansion:data current_state.current_data{blackout:0b} run function luigis_mansion_3ds_remake:room/hidden/cold_storage/turn_on_lights

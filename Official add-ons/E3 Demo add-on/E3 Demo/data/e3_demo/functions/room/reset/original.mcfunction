@@ -1,0 +1,1 @@
+execute if score #mansion_type Selected matches 2 in luigis_mansion:normal run function e3_demo:room/original/reset

@@ -1,0 +1,15 @@
+{
+	"values": [
+		"3ds_remake:room/hidden/cold_storage/interactions/poltergust/barrel_1",
+		"3ds_remake:room/hidden/cold_storage/interactions/poltergust/barrel_2",
+		"3ds_remake:room/hidden/cold_storage/interactions/poltergust/campfire_1",
+		"3ds_remake:room/hidden/cold_storage/interactions/poltergust/campfire_2",
+		"3ds_remake:room/hidden/cold_storage/interactions/poltergust/campfire_3",
+		"3ds_remake:room/hidden/cold_storage/interactions/poltergust/crate_1",
+		"3ds_remake:room/hidden/cold_storage/interactions/poltergust/crate_2",
+		"3ds_remake:room/hidden/cold_storage/interactions/poltergust/fire",
+		"3ds_remake:room/hidden/cold_storage/interactions/poltergust/junk",
+		"3ds_remake:room/hidden/cold_storage/interactions/poltergust/shelf_1",
+		"3ds_remake:room/hidden/cold_storage/interactions/poltergust/shelf_2"
+	]
+}

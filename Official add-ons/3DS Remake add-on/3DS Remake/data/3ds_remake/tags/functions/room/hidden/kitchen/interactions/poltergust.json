@@ -1,0 +1,23 @@
+{
+	"values": [
+		"3ds_remake:room/hidden/kitchen/interactions/poltergust/closet",
+		"3ds_remake:room/hidden/kitchen/interactions/poltergust/dish_washer",
+		"3ds_remake:room/hidden/kitchen/interactions/poltergust/fridge",
+		"3ds_remake:room/hidden/kitchen/interactions/poltergust/ice",
+		"3ds_remake:room/hidden/kitchen/interactions/poltergust/lamp_1",
+		"3ds_remake:room/hidden/kitchen/interactions/poltergust/lamp_2",
+		"3ds_remake:room/hidden/kitchen/interactions/poltergust/oven",
+		"3ds_remake:room/hidden/kitchen/interactions/poltergust/painting_1",
+		"3ds_remake:room/hidden/kitchen/interactions/poltergust/painting_2",
+		"3ds_remake:room/hidden/kitchen/interactions/poltergust/painting_3",
+		"3ds_remake:room/hidden/kitchen/interactions/poltergust/shelf_1",
+		"3ds_remake:room/hidden/kitchen/interactions/poltergust/shelf_2",
+		"3ds_remake:room/hidden/kitchen/interactions/poltergust/shelf_3",
+		"3ds_remake:room/hidden/kitchen/interactions/poltergust/shelf_4",
+		"3ds_remake:room/hidden/kitchen/interactions/poltergust/shelf_5",
+		"3ds_remake:room/hidden/kitchen/interactions/poltergust/table",
+		"3ds_remake:room/hidden/kitchen/interactions/poltergust/tool_rack",
+		"3ds_remake:room/hidden/kitchen/interactions/poltergust/vacuumable",
+		"3ds_remake:room/hidden/kitchen/interactions/poltergust/water"
+	]
+}

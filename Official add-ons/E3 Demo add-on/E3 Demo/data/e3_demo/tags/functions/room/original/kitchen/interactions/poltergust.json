@@ -1,0 +1,19 @@
+{
+	"values": [
+		"e3_demo:room/original/kitchen/interactions/poltergust/closet",
+		"e3_demo:room/original/kitchen/interactions/poltergust/dish_washer",
+		"e3_demo:room/original/kitchen/interactions/poltergust/fridge",
+		"e3_demo:room/original/kitchen/interactions/poltergust/lamp_1",
+		"e3_demo:room/original/kitchen/interactions/poltergust/lamp_2",
+		"e3_demo:room/original/kitchen/interactions/poltergust/oven",
+		"e3_demo:room/original/kitchen/interactions/poltergust/painting_1",
+		"e3_demo:room/original/kitchen/interactions/poltergust/painting_2",
+		"e3_demo:room/original/kitchen/interactions/poltergust/shelf_1",
+		"e3_demo:room/original/kitchen/interactions/poltergust/shelf_2",
+		"e3_demo:room/original/kitchen/interactions/poltergust/shelf_3",
+		"e3_demo:room/original/kitchen/interactions/poltergust/shelf_4",
+		"e3_demo:room/original/kitchen/interactions/poltergust/shelf_5",
+		"e3_demo:room/original/kitchen/interactions/poltergust/table",
+		"e3_demo:room/original/kitchen/interactions/poltergust/tool_rack"
+	]
+}

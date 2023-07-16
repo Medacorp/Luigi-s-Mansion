@@ -1,0 +1,17 @@
+{
+	"values": [
+	    "3ds_remake:room/hidden/tea_room/load/set_loaded",
+        "3ds_remake:room/hidden/tea_room/load/lights",
+        "3ds_remake:room/hidden/tea_room/load/doors",
+        "3ds_remake:room/hidden/tea_room/load/haunted_objects",
+		"3ds_remake:room/hidden/tea_room/load/chair_2",
+		"3ds_remake:room/hidden/tea_room/load/chair_3",
+		"3ds_remake:room/hidden/tea_room/load/chair_6",
+        "3ds_remake:room/hidden/tea_room/load/ice",
+        "3ds_remake:room/hidden/tea_room/load/ice_bucket",
+        "3ds_remake:room/hidden/tea_room/load/room_clear_chest",
+        "3ds_remake:room/hidden/tea_room/load/tea_set",
+        "3ds_remake:room/hidden/tea_room/load/wooden_triple_candelabra",
+        "3ds_remake:room/hidden/tea_room/load/wooden_triple_candelabra_with_tea_set"
+	]
+}

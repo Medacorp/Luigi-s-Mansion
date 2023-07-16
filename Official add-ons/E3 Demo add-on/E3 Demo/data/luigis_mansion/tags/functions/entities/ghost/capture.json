@@ -1,0 +1,13 @@
+{
+	"values": [
+        "e3_demo:entities/ghost/capture/beta_boo",
+        "e3_demo:entities/ghost/capture/beta_flying_fish",
+        "e3_demo:entities/ghost/capture/beta_shining_ghost",
+        "e3_demo:entities/ghost/capture/beta_mouse",
+        "e3_demo:entities/ghost/capture/beta_bat",
+        "e3_demo:entities/ghost/capture/beta_ghost",
+        "e3_demo:entities/ghost/capture/beta_puncher",
+        "e3_demo:entities/ghost/capture/beta_body_slammer",
+        "e3_demo:entities/ghost/capture/beta_basher"
+	]
+}

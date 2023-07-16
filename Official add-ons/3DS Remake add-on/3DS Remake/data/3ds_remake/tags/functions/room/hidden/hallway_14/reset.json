@@ -1,0 +1,7 @@
+{
+    "values": [
+        "3ds_remake:room/hidden/hallway_14/reset/unload",
+        "#3ds_remake:room/hidden/hallway_14/turn_lights/off",
+        "3ds_remake:room/hidden/hallway_14/reset/lamp"
+    ]
+}

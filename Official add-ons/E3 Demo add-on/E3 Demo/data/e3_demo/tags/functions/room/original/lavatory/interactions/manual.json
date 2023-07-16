@@ -1,0 +1,15 @@
+{
+	"values": [
+		"e3_demo:room/original/lavatory/interactions/manual/cabinet",
+		"e3_demo:room/original/lavatory/interactions/manual/lamp",
+		"e3_demo:room/original/lavatory/interactions/manual/mirror",
+		"e3_demo:room/original/lavatory/interactions/manual/painting_1",
+		"e3_demo:room/original/lavatory/interactions/manual/painting_2",
+		"e3_demo:room/original/lavatory/interactions/manual/radiator",
+		"e3_demo:room/original/lavatory/interactions/manual/shelf",
+		"e3_demo:room/original/lavatory/interactions/manual/sink",
+		"e3_demo:room/original/lavatory/interactions/manual/toilet",
+		"e3_demo:room/original/lavatory/interactions/manual/toilet_paper",
+		"e3_demo:room/original/lavatory/interactions/manual/toilet_storage"
+	]
+}

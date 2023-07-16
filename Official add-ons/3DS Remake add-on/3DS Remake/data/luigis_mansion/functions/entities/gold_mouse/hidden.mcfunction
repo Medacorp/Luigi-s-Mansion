@@ -1,0 +1,2 @@
+execute if score #mansion_type Selected matches 1 if score #mansion_data_index Selected matches 1 run function 3ds_remake:entities/gold_mouse/hidden/tick
+execute if score #mansion_type Selected matches 1 if score #mansion_data_index Selected matches 0 run function luigis_mansion:entities/gold_mouse/hidden/tick

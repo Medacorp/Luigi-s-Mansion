@@ -42,7 +42,7 @@ The main save data contains a bunch of info. It is loaded at `luigis_mansion:dat
 }
 ```
 
-The 3DS Remake add-on save data contains some more info. It is loaded at `luigis_mansion_3ds_remake:data current_state` and `luigis_mansion_3ds_remake:data saved_state`.
+The 3DS Remake add-on save data contains some more info. It is loaded at `3ds_remake:data current_state` and `3ds_remake:data saved_state`.
 ```
 {
     mansion_rank_s_achieved:Xb, //If the S Rank mansion has been obtained.
@@ -70,7 +70,7 @@ The 3DS Remake add-on save data contains some more info. It is loaded at `luigis
 }
 ```
 
-The Beta Mansion add-on save data contains some more info. It is loaded at `luigis_beta_mansion:data current_state` and `luigis_beta_mansion:data saved_state`.
+The E3 Demo add-on save data contains some more info. It is loaded at `e3_demo:data current_state` and `e3_demo:data saved_state`.
 ```
 {
     trophy:{ //The trophy progress.

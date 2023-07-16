@@ -12,7 +12,7 @@ This add-on will force a load order, the first world load with this add-on enabl
 == How to install ==
 1. Open the Luigi's Mansion world.
 2. Open the "datapacks" folder
-3. Drop the data pack folder (named "Luigi's Mansion 3DS Remake") in this folder
+3. Drop the data pack folder (named "3DS Remake") in this folder
 
 == Updates ==
 When updating the map, delete the existing 3DS Remake add-on and re-install the latest version.

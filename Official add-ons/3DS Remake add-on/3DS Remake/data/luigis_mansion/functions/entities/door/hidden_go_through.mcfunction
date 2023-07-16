@@ -1,0 +1,2 @@
+execute if score #mansion_type Selected matches 1 if score #mansion_data_index Selected matches 1 in luigis_mansion:normal run function 3ds_remake:entities/door/hidden/go_through
+execute if score #mansion_type Selected matches 1 if score #mansion_data_index Selected matches 0 in luigis_mansion:hidden run function luigis_mansion:entities/door/hidden/go_through

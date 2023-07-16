@@ -1,0 +1,2 @@
+execute if score #mario_amiibo Selected matches 0 run function 3ds_remake:spawn_entities/item/poison_mushroom
+execute if score #mario_amiibo Selected matches 1 run function 3ds_remake:spawn_entities/item/super_mushroom

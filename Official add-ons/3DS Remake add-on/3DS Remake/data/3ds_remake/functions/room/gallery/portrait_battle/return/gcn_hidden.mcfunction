@@ -1,0 +1,1 @@
+function 3ds_remake:room/gallery/portrait_battle/return/normal

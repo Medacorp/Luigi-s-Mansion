@@ -1,0 +1,1 @@
+place template e3_demo:game_boy_horror_map/door/single_unlocked 3698 110 50

@@ -11,7 +11,7 @@
             "translate": "extensive_training:dialog.underground_lab.change_amiibo.koopa.hover"
         }
     },
-	"parent": "luigis_mansion_3ds_remake:amiibo/root",
+	"parent": "3ds_remake:amiibo/root",
     "criteria": {
         "obtained": {
             "trigger": "minecraft:impossible"

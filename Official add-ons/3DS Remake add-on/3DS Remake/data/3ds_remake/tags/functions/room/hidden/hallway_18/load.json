@@ -1,0 +1,9 @@
+{
+	"values": [
+	    "3ds_remake:room/hidden/hallway_18/load/set_loaded",
+        "3ds_remake:room/hidden/hallway_18/load/lights",
+        "3ds_remake:room/hidden/hallway_18/load/doors",
+        "3ds_remake:room/hidden/hallway_18/load/cobweb",
+        "3ds_remake:room/hidden/hallway_18/load/lamp"
+	]
+}

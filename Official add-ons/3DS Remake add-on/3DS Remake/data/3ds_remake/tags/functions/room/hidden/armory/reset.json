@@ -1,0 +1,31 @@
+{
+    "values": [
+        "3ds_remake:room/hidden/armory/reset/unload",
+        "#3ds_remake:room/hidden/armory/turn_lights/off",
+        "3ds_remake:room/hidden/armory/reset/armor_1",
+        "3ds_remake:room/hidden/armory/reset/armor_2",
+        "3ds_remake:room/hidden/armory/reset/armor_3",
+        "3ds_remake:room/hidden/armory/reset/armor_4",
+        "3ds_remake:room/hidden/armory/reset/armor_5",
+        "3ds_remake:room/hidden/armory/reset/armor_6",
+        "3ds_remake:room/hidden/armory/reset/armor_7",
+        "3ds_remake:room/hidden/armory/reset/armor_8",
+        "3ds_remake:room/hidden/armory/reset/armor_9",
+        "3ds_remake:room/hidden/armory/reset/crate_1",
+        "3ds_remake:room/hidden/armory/reset/crate_2",
+        "3ds_remake:room/hidden/armory/reset/crate_3",
+        "3ds_remake:room/hidden/armory/reset/crate_4",
+        "3ds_remake:room/hidden/armory/reset/crate_5",
+        "3ds_remake:room/hidden/armory/reset/crate_6",
+        "3ds_remake:room/hidden/armory/reset/crate_7",
+        "3ds_remake:room/hidden/armory/reset/crate_8",
+        "3ds_remake:room/hidden/armory/reset/crate_9",
+        "3ds_remake:room/hidden/armory/reset/crate_10",
+        "3ds_remake:room/hidden/armory/reset/crate_11",
+        "3ds_remake:room/hidden/armory/reset/lamp",
+        "3ds_remake:room/hidden/armory/reset/mirror",
+        "3ds_remake:room/hidden/armory/reset/room_clear_chest",
+        "3ds_remake:room/hidden/armory/reset/shield",
+        "3ds_remake:room/hidden/armory/reset/vacuumable"
+    ]
+}

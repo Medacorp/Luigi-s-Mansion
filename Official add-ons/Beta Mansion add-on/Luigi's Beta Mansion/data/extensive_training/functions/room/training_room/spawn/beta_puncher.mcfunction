@@ -1,2 +1,0 @@
-data modify storage luigis_mansion:data entity set value {appear_type:"none",disappear_on_vanish:1b,health:1000,speed:10,flee_speed:20,vanish_time:120,loot:{},damage:{collision:5,attack:10},training_room_score:3}
-function luigis_beta_mansion:spawn_entities/ghost/forced_spawn/puncher

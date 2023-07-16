@@ -1,0 +1,33 @@
+{
+    "values": [
+        "3ds_remake:room/hidden/balcony_2/reset/unload",
+        "#3ds_remake:room/hidden/balcony_2/turn_lights/off",
+        "3ds_remake:room/hidden/balcony_2/reset/bench_1",
+        "3ds_remake:room/hidden/balcony_2/reset/bench_2",
+        "3ds_remake:room/hidden/balcony_2/reset/lamp_1",
+        "3ds_remake:room/hidden/balcony_2/reset/lamp_2",
+        "3ds_remake:room/hidden/balcony_2/reset/lamp_3",
+        "3ds_remake:room/hidden/balcony_2/reset/lamp_4",
+        "3ds_remake:room/hidden/balcony_2/reset/lamp_5",
+        "3ds_remake:room/hidden/balcony_2/reset/lamp_6",
+        "3ds_remake:room/hidden/balcony_2/reset/plant_1",
+        "3ds_remake:room/hidden/balcony_2/reset/plant_2",
+        "3ds_remake:room/hidden/balcony_2/reset/plant_3",
+        "3ds_remake:room/hidden/balcony_2/reset/plant_4",
+        "3ds_remake:room/hidden/balcony_2/reset/plant_5",
+        "3ds_remake:room/hidden/balcony_2/reset/plant_6",
+        "3ds_remake:room/hidden/balcony_2/reset/plant_7",
+        "3ds_remake:room/hidden/balcony_2/reset/plant_8",
+        "3ds_remake:room/hidden/balcony_2/reset/plant_9",
+        "3ds_remake:room/hidden/balcony_2/reset/plant_10",
+        "3ds_remake:room/hidden/balcony_2/reset/plant_11",
+        "3ds_remake:room/hidden/balcony_2/reset/plant_12",
+        "3ds_remake:room/hidden/balcony_2/reset/plant_13",
+        "3ds_remake:room/hidden/balcony_2/reset/plant_14",
+        "3ds_remake:room/hidden/balcony_2/reset/plant_15",
+        "3ds_remake:room/hidden/balcony_2/reset/plant_16",
+        "3ds_remake:room/hidden/balcony_2/reset/room_clear_chest",
+        "3ds_remake:room/hidden/balcony_2/reset/statue_1",
+        "3ds_remake:room/hidden/balcony_2/reset/statue_2"
+    ]
+}

@@ -1,0 +1,1 @@
+execute if entity @s[tag=beta_bat] run function e3_demo:entities/ghost/capture/caught/beta_bat

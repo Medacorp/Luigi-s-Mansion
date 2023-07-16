@@ -1,0 +1,21 @@
+{
+    "values": [
+        "3ds_remake:room/hidden/washroom_2/reset/unload",
+        "#3ds_remake:room/hidden/washroom_2/turn_lights/off",
+        "3ds_remake:room/hidden/washroom_2/reset/lamp",
+        "3ds_remake:room/hidden/washroom_2/reset/mirror",
+        "3ds_remake:room/hidden/washroom_2/reset/painting_1",
+        "3ds_remake:room/hidden/washroom_2/reset/painting_2",
+        "3ds_remake:room/hidden/washroom_2/reset/painting_3",
+        "3ds_remake:room/hidden/washroom_2/reset/poster",
+        "3ds_remake:room/hidden/washroom_2/reset/radiator",
+        "3ds_remake:room/hidden/washroom_2/reset/room_clear_chest",
+        "3ds_remake:room/hidden/washroom_2/reset/shelf",
+        "3ds_remake:room/hidden/washroom_2/reset/sink",
+        "3ds_remake:room/hidden/washroom_2/reset/toilet",
+        "3ds_remake:room/hidden/washroom_2/reset/toilet_paper",
+        "3ds_remake:room/hidden/washroom_2/reset/toilet_storage",
+        "3ds_remake:room/hidden/washroom_2/reset/vacuumable",
+        "3ds_remake:room/hidden/washroom_2/reset/water"
+    ]
+}

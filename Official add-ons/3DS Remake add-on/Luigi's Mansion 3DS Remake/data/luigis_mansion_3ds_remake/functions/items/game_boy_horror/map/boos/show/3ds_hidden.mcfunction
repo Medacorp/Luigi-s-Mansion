@@ -1,1 +1,0 @@
-function luigis_mansion_3ds_remake:items/game_boy_horror/map/boos/show/normal

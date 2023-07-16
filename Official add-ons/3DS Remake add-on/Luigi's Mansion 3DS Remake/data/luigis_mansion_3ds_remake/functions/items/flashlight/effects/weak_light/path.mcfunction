@@ -1,2 +1,0 @@
-scoreboard players add @s PathStep 1
-execute unless score @s PathStep matches 5 positioned ^ ^ ^1 if block ~ ~ ~ #luigis_mansion:flashlight_path run function luigis_mansion_3ds_remake:items/flashlight/effects/weak_light/path

@@ -1,0 +1,1 @@
+execute if score #mansion_type Selected matches 1 run function 3ds_remake:entities/boo/track/track_boo/hidden

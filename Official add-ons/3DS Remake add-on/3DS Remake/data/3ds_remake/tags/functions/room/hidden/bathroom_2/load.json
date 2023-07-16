@@ -1,0 +1,9 @@
+{
+	"values": [
+	    "3ds_remake:room/hidden/bathroom_2/load/set_loaded",
+        "3ds_remake:room/hidden/bathroom_2/load/lights",
+        "3ds_remake:room/hidden/bathroom_2/load/doors",
+        "3ds_remake:room/hidden/bathroom_2/load/ice_bucket",
+        "3ds_remake:room/hidden/bathroom_2/load/room_clear_chest"
+	]
+}

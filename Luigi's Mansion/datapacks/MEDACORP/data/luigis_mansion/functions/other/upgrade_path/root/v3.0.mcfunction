@@ -1,0 +1,1 @@
+say Upgrading is not supported, you must reinstal the map completely

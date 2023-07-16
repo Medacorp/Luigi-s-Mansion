@@ -1,0 +1,1 @@
+execute if data storage 3ds_remake:data current_state.boos_caught{boo_b_hatch:1b} run scoreboard players add #temp Time 1

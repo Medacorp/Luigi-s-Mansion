@@ -1,0 +1,6 @@
+{
+	"parent": "luigis_mansion:entity/gold_coin",
+	"textures": {
+		"0": "e3_demo:entity/ghost_coin"
+	}
+}

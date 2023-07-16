@@ -1,1 +1,0 @@
-execute if entity @s[tag=beta_shining_ghost] run function luigis_beta_mansion:entities/beta_shining_ghost/tick

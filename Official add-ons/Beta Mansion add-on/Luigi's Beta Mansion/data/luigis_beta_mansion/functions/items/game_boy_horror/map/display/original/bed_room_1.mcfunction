@@ -1,3 +1,0 @@
-execute if data storage luigis_mansion:data current_state.current_data.rooms.bed_room_1{seen:0b} run function luigis_beta_mansion:items/game_boy_horror/map/display/original/bed_room_1/unseen
-execute if data storage luigis_mansion:data current_state.current_data.rooms.bed_room_1{seen:1b,cleared:0b} run function luigis_beta_mansion:items/game_boy_horror/map/display/original/bed_room_1/seen
-execute if data storage luigis_mansion:data current_state.current_data.rooms.bed_room_1{cleared:1b} run function luigis_beta_mansion:items/game_boy_horror/map/display/original/bed_room_1/cleared

@@ -1,0 +1,1 @@
+place template 3ds_remake:new_gallery 733 1 -60

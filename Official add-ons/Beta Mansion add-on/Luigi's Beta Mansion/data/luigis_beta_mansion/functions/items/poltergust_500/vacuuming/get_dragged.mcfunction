@@ -1,2 +1,0 @@
-execute unless entity @s[scores={Animation=-4}] run function luigis_mansion:entities/player/animation/set/dragged
-execute if entity @s[scores={IdleTime=-21..},gamemode=!creative] run function luigis_beta_mansion:items/poltergust_500/vacuuming/dragged_damageng/dragged_damage

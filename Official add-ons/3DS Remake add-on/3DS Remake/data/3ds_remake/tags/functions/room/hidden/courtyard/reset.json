@@ -1,0 +1,19 @@
+{
+    "values": [
+        "3ds_remake:room/hidden/courtyard/reset/unload",
+        "#3ds_remake:room/hidden/courtyard/turn_lights/off",
+        "3ds_remake:room/hidden/courtyard/reset/close_door",
+        "3ds_remake:room/hidden/courtyard/reset/bird_house",
+        "3ds_remake:room/hidden/courtyard/reset/lamp_1",
+        "3ds_remake:room/hidden/courtyard/reset/lamp_2",
+        "3ds_remake:room/hidden/courtyard/reset/plant_1",
+        "3ds_remake:room/hidden/courtyard/reset/plant_2",
+        "3ds_remake:room/hidden/courtyard/reset/plant_3",
+        "3ds_remake:room/hidden/courtyard/reset/plant_4",
+        "3ds_remake:room/hidden/courtyard/reset/room_clear_chest",
+        "3ds_remake:room/hidden/courtyard/reset/statue_1",
+        "3ds_remake:room/hidden/courtyard/reset/statue_2",
+        "3ds_remake:room/hidden/courtyard/reset/vacuumable",
+        "3ds_remake:room/hidden/courtyard/reset/water"
+    ]
+}

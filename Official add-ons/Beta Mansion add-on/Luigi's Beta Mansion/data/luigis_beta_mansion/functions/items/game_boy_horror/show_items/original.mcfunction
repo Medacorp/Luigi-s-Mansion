@@ -1,1 +1,0 @@
-execute if score #mansion_type Selected matches 2 run function luigis_beta_mansion:items/game_boy_horror/show_items/items/original

@@ -1,0 +1,14 @@
+summon minecraft:marker ~ ~ ~ {Tags:["gooigi","spawn_animation","this_entity"],CustomName:'{"translate":"3ds_remake:entity.gooigi"}'}
+summon minecraft:armor_stand ~ ~ ~ {NoGravity:1b,Invisible:1b,Marker:1b,Tags:["source","gooigi_model","model_piece","not_player","found_owner"],CustomName:'{"translate":"3ds_remake:entity.gooigi"}',CustomNameVisible:1b}
+summon minecraft:armor_stand ~ ~ ~ {NoGravity:1b,Invisible:1b,Marker:1b,Tags:["head","gooigi_model","model_piece","found_owner"],CustomName:'{"translate":"3ds_remake:entity.gooigi"}',ArmorItems:[{},{},{},{id:"minecraft:diamond_pickaxe",Count:1b,tag:{Unbreakable:1b,Damage:1,CustomModelData:147}}]}
+summon minecraft:armor_stand ~ ~ ~ {NoGravity:1b,Invisible:1b,Marker:1b,Tags:["chest","gooigi_model","model_piece","found_owner"],CustomName:'{"translate":"3ds_remake:entity.gooigi"}',ArmorItems:[{},{},{},{id:"minecraft:diamond_pickaxe",Count:1b,tag:{Unbreakable:1b,Damage:1,CustomModelData:148}}]}
+summon minecraft:armor_stand ~ ~ ~ {NoGravity:1b,Invisible:1b,Marker:1b,Tags:["right_arm","gooigi_model","model_piece","found_owner"],CustomName:'{"translate":"3ds_remake:entity.gooigi"}',ArmorItems:[{},{},{},{id:"minecraft:diamond_pickaxe",Count:1b,tag:{Unbreakable:1b,Damage:2,CustomModelData:147,mirror:{tag:{Damage:3}}}}]}
+summon minecraft:armor_stand ~ ~ ~ {NoGravity:1b,Invisible:1b,Marker:1b,Tags:["left_arm","gooigi_model","model_piece","found_owner"],CustomName:'{"translate":"3ds_remake:entity.gooigi"}',ArmorItems:[{},{},{},{id:"minecraft:diamond_pickaxe",Count:1b,tag:{Unbreakable:1b,Damage:3,CustomModelData:147,mirror:{tag:{Damage:2}}}}]}
+summon minecraft:armor_stand ~ ~ ~ {NoGravity:1b,Invisible:1b,Marker:1b,Tags:["right_leg","gooigi_model","model_piece","found_owner"],CustomName:'{"translate":"3ds_remake:entity.gooigi"}',ArmorItems:[{},{},{},{id:"minecraft:diamond_pickaxe",Count:1b,tag:{Unbreakable:1b,Damage:2,CustomModelData:148,mirror:{tag:{Damage:3}}}}]}
+summon minecraft:armor_stand ~ ~ ~ {NoGravity:1b,Invisible:1b,Marker:1b,Tags:["left_leg","gooigi_model","model_piece","found_owner"],CustomName:'{"translate":"3ds_remake:entity.gooigi"}',ArmorItems:[{},{},{},{id:"minecraft:diamond_pickaxe",Count:1b,tag:{Unbreakable:1b,Damage:3,CustomModelData:148,mirror:{tag:{Damage:2}}}}]}
+summon minecraft:armor_stand ~ ~ ~ {NoGravity:1b,Invisible:1b,Marker:1b,Tags:["poltergust_body","gooigi_model","model_piece","new","found_owner"],CustomName:'{"translate":"3ds_remake:entity.gooigi"}',ArmorItems:[{},{},{},{}]}
+teleport @e[tag=this_entity,limit=1] ~ ~ ~ ~ ~
+scoreboard players set @e[tag=this_entity,limit=1] EntitySizeWidth 8
+scoreboard players set @e[tag=this_entity,limit=1] EntitySizeHeight 20
+scoreboard players set @e[tag=this_entity,limit=1] EntityYOffset 10
+tag @e[tag=this_entity,limit=1] remove this_entity

@@ -1,0 +1,13 @@
+{
+	"values": [
+	    "e3_demo:room/original/lavatory/load/set_loaded",
+        "e3_demo:room/original/lavatory/load/lights",
+        "e3_demo:room/original/lavatory/load/doors",
+        "e3_demo:room/original/lavatory/load/painting_1",
+        "e3_demo:room/original/lavatory/load/painting_2",
+        "e3_demo:room/original/lavatory/load/room_clear_chest",
+        "e3_demo:room/original/lavatory/load/sink",
+        "e3_demo:room/original/lavatory/load/toilet",
+        "e3_demo:room/original/lavatory/load/toilet_paper"
+	]
+}

@@ -1,0 +1,1 @@
+data modify storage e3_demo:data saved_state set from storage e3_demo:data current_state

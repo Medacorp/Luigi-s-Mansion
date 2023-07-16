@@ -1,0 +1,3 @@
+execute if data storage luigis_mansion:data current_state.current_data{drop_item_on_damage:"e3_demo:ghost_coin"} run function e3_demo:entities/player/damage/ghost_coin/get
+execute if data storage luigis_mansion:data current_state.current_data{drop_item_on_damage:"e3_demo:ghost_coin"} if score #temp ActionTime matches 1.. run function e3_demo:entities/player/damage/ghost_coin/drop
+execute if data storage luigis_mansion:data current_state.current_data{drop_item_on_damage:"e3_demo:ghost_coin"} run function e3_demo:entities/player/damage/ghost_coin/reduce

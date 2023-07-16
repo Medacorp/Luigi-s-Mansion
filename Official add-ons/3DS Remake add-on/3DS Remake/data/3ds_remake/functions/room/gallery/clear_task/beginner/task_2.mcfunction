@@ -1,0 +1,3 @@
+execute if data storage 3ds_remake:data current_state.trophy.beginner{task_2:0b} run tellraw @a {"translate":"chat.type.text","with":[{"translate":"luigis_mansion:entity.mansion","color":"green"},{"translate":"3ds_remake:message.gallery.trophy.clear_task","color":"gold","with":[{"translate":"luigis_mansion:message.hover_event","color":"white","with":[{"translate":"3ds_remake:message.gallery.trophy.beginner.rich","color":"gold","hoverEvent":{"action":"show_text","contents":[{"translate":"3ds_remake:message.gallery.trophy.beginner.rich.description"}]}}]}]}]}
+data modify storage 3ds_remake:data current_state.trophy.beginner.task_2 set value 1b
+function 3ds_remake:room/gallery/clear_task/clear_collection

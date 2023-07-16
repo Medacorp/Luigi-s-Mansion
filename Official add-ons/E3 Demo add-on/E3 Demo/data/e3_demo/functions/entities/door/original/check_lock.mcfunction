@@ -1,0 +1,9 @@
+execute if entity @s[scores={Room=0}] in e3_demo:original if block 753 11 9 minecraft:air run tag @s add not_locked
+tag @s[scores={Room=0},tag=!not_locked] add locked
+execute if entity @s[scores={Room=0},tag=!not_locked] run tellraw @a[tag=same_room] {"translate":"chat.type.text","with":[{"translate":"luigis_mansion:entity.mansion","color":"green"},{"translate":"e3_demo:message.no_mansion_inside_found"}]}
+execute if entity @s[tag=hallway_1_living_room] unless data storage luigis_mansion:data current_state.current_data{obtained_keys:["living_room"]} run tag @s add locked
+execute if entity @s[tag=hallway_1_living_room] if data storage luigis_mansion:data current_state.current_data{obtained_keys:["living_room"]} unless data storage luigis_mansion:data current_state.current_data{used_keys:["living_room"]} run tag @s add unlock
+execute if entity @s[tag=hallway_1_hallway_2] unless data storage luigis_mansion:data current_state.current_data{obtained_keys:["hallway_2"]} run tag @s add locked
+execute if entity @s[tag=hallway_1_hallway_2] if data storage luigis_mansion:data current_state.current_data{obtained_keys:["hallway_2"]} unless data storage luigis_mansion:data current_state.current_data{used_keys:["hallway_2"]} run tag @s add unlock
+execute if entity @s[tag=entrance_hallway_3] unless data storage luigis_mansion:data current_state.current_data{obtained_keys:["hallway_3"]} run tag @s add locked
+execute if entity @s[tag=entrance_hallway_3] if data storage luigis_mansion:data current_state.current_data{obtained_keys:["hallway_3"]} unless data storage luigis_mansion:data current_state.current_data{used_keys:["hallway_3"]} run tag @s add unlock

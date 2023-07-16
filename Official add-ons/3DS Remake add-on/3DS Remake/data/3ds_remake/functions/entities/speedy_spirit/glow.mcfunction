@@ -1,0 +1,2 @@
+execute unless entity @s[tag=!spawn,tag=!dead,tag=!remove_from_existence] run function 3ds_remake:entities/speedy_spirit/glow/remove
+execute if entity @s[tag=!spawn] run function 3ds_remake:entities/speedy_spirit/glow/add

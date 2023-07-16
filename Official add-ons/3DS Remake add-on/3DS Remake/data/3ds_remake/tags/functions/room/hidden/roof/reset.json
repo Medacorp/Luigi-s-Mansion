@@ -1,0 +1,22 @@
+{
+    "values": [
+        "3ds_remake:room/hidden/roof/reset/unload",
+        "#3ds_remake:room/hidden/roof/turn_lights/off",
+        "3ds_remake:room/hidden/roof/reset/elevator",
+        "3ds_remake:room/hidden/roof/reset/fire",
+        "3ds_remake:room/hidden/roof/reset/lamp",
+        "3ds_remake:room/hidden/roof/reset/pillar_1",
+        "3ds_remake:room/hidden/roof/reset/pillar_2",
+        "3ds_remake:room/hidden/roof/reset/pillar_3",
+        "3ds_remake:room/hidden/roof/reset/pillar_4",
+        "3ds_remake:room/hidden/roof/reset/pillar_5",
+        "3ds_remake:room/hidden/roof/reset/pillar_6",
+        "3ds_remake:room/hidden/roof/reset/pillar_7",
+        "3ds_remake:room/hidden/roof/reset/pillar_8",
+        "3ds_remake:room/hidden/roof/reset/pillar_9",
+        "3ds_remake:room/hidden/roof/reset/pillar_10",
+        "3ds_remake:room/hidden/roof/reset/pillar_11",
+        "3ds_remake:room/hidden/roof/reset/pillar_12",
+        "3ds_remake:room/hidden/roof/reset/room_clear_chest"
+    ]
+}

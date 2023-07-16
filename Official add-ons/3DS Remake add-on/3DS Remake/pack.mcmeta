@@ -1,0 +1,8 @@
+{
+    "pack": {
+        "pack_format": 15,
+        "description": {
+			"translate": "3ds_remake:data_pack.description"
+		}
+    }
+}

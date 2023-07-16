@@ -1,0 +1,24 @@
+{
+    "values": [
+        "3ds_remake:room/hidden/wardrobe_room/reset/unload",
+        "#3ds_remake:room/hidden/wardrobe_room/turn_lights/off",
+        "3ds_remake:room/hidden/wardrobe_room/reset/closet_1",
+        "3ds_remake:room/hidden/wardrobe_room/reset/closet_2",
+        "3ds_remake:room/hidden/wardrobe_room/reset/closet_3",
+        "3ds_remake:room/hidden/wardrobe_room/reset/clothes_1",
+        "3ds_remake:room/hidden/wardrobe_room/reset/clothes_2",
+        "3ds_remake:room/hidden/wardrobe_room/reset/clothes_3",
+        "3ds_remake:room/hidden/wardrobe_room/reset/clothes_4",
+        "3ds_remake:room/hidden/wardrobe_room/reset/clothes_5",
+        "3ds_remake:room/hidden/wardrobe_room/reset/clothes_6",
+        "3ds_remake:room/hidden/wardrobe_room/reset/clothes_7",
+        "3ds_remake:room/hidden/wardrobe_room/reset/clothes_8",
+        "3ds_remake:room/hidden/wardrobe_room/reset/hat_rack",
+        "3ds_remake:room/hidden/wardrobe_room/reset/lamp",
+        "3ds_remake:room/hidden/wardrobe_room/reset/mirror",
+        "3ds_remake:room/hidden/wardrobe_room/reset/painting_1",
+        "3ds_remake:room/hidden/wardrobe_room/reset/painting_2",
+        "3ds_remake:room/hidden/wardrobe_room/reset/room_clear_chest",
+        "3ds_remake:room/hidden/wardrobe_room/reset/shoe_stand"
+    ]
+}

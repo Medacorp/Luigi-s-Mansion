@@ -1,0 +1,27 @@
+{
+    "values": [
+        "3ds_remake:room/hidden/conservatory/reset/unload",
+        "#3ds_remake:room/hidden/conservatory/turn_lights/off",
+        "3ds_remake:room/hidden/conservatory/reset/chair_1",
+        "3ds_remake:room/hidden/conservatory/reset/chair_2",
+        "3ds_remake:room/hidden/conservatory/reset/chair_3",
+        "3ds_remake:room/hidden/conservatory/reset/cello",
+        "3ds_remake:room/hidden/conservatory/reset/closet",
+        "3ds_remake:room/hidden/conservatory/reset/drum_1",
+        "3ds_remake:room/hidden/conservatory/reset/drum_2",
+        "3ds_remake:room/hidden/conservatory/reset/drum_3",
+        "3ds_remake:room/hidden/conservatory/reset/harp",
+        "3ds_remake:room/hidden/conservatory/reset/lamp",
+        "3ds_remake:room/hidden/conservatory/reset/lectern_1",
+        "3ds_remake:room/hidden/conservatory/reset/lectern_2",
+        "3ds_remake:room/hidden/conservatory/reset/painting_1",
+        "3ds_remake:room/hidden/conservatory/reset/painting_2",
+        "3ds_remake:room/hidden/conservatory/reset/painting_3",
+        "3ds_remake:room/hidden/conservatory/reset/painting_4",
+        "3ds_remake:room/hidden/conservatory/reset/piano",
+        "3ds_remake:room/hidden/conservatory/reset/room_clear_chest",
+        "3ds_remake:room/hidden/conservatory/reset/saxophone",
+        "3ds_remake:room/hidden/conservatory/reset/vacuumable",
+        "3ds_remake:room/hidden/conservatory/reset/xylophone"
+    ]
+}

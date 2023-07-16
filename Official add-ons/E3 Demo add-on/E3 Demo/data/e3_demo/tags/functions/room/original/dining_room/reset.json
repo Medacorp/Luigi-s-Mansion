@@ -1,0 +1,21 @@
+{
+    "values": [
+        "e3_demo:room/original/dining_room/reset/unload",
+        "#e3_demo:room/original/dining_room/turn_lights/off",
+        "e3_demo:room/original/dining_room/reset/chair_1",
+        "e3_demo:room/original/dining_room/reset/chair_2",
+        "e3_demo:room/original/dining_room/reset/chair_3",
+        "e3_demo:room/original/dining_room/reset/chair_4",
+        "e3_demo:room/original/dining_room/reset/chair_5",
+        "e3_demo:room/original/dining_room/reset/chair_6",
+        "e3_demo:room/original/dining_room/reset/chair_7",
+        "e3_demo:room/original/dining_room/reset/clock",
+        "e3_demo:room/original/dining_room/reset/closet",
+        "e3_demo:room/original/dining_room/reset/lamp_1",
+        "e3_demo:room/original/dining_room/reset/lamp_2",
+        "e3_demo:room/original/dining_room/reset/lamp_3",
+        "e3_demo:room/original/dining_room/reset/lamp_4",
+        "e3_demo:room/original/dining_room/reset/lamp_5",
+        "e3_demo:room/original/dining_room/reset/table"
+    ]
+}

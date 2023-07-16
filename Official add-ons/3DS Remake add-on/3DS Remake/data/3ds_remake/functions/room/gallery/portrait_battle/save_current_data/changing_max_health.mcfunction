@@ -1,0 +1,1 @@
+execute store result storage 3ds_remake:data loaded_mansion.settings.changing_max_health int 1 run scoreboard players get #changing_max_health Selected

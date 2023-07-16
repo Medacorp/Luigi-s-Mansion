@@ -1,0 +1,1 @@
+execute store result score #mansion_type Selected run data get storage 3ds_remake:data loaded_mansion.settings.mansion_type

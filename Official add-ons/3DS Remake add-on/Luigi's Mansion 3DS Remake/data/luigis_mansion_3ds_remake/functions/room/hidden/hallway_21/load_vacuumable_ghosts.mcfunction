@@ -1,2 +1,0 @@
-execute unless score #hallway_21 Vacuumables matches 1 unless data storage luigis_mansion:data current_state.current_data.rooms.hallway_21{cleared:1b} if data storage luigis_mansion:data current_state.current_data{blackout:0b} run function luigis_mansion_3ds_remake:room/hidden/hallway_21/vacuumable_ghosts
-execute unless score #hallway_21 Vacuumables matches 1 if data storage luigis_mansion:data current_state.current_data{blackout:1b} run function luigis_mansion_3ds_remake:room/hidden/hallway_21/vacuumable_ghosts

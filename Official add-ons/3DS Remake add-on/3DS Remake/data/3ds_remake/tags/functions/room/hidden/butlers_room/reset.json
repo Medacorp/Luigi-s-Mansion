@@ -1,0 +1,18 @@
+{
+    "values": [
+        "3ds_remake:room/hidden/butlers_room/reset/unload",
+        "#3ds_remake:room/hidden/butlers_room/turn_lights/off",
+        "3ds_remake:room/hidden/butlers_room/reset/bucket",
+        "3ds_remake:room/hidden/butlers_room/reset/closet",
+        "3ds_remake:room/hidden/butlers_room/reset/hole",
+        "3ds_remake:room/hidden/butlers_room/reset/ironing_table",
+        "3ds_remake:room/hidden/butlers_room/reset/lamp",
+        "3ds_remake:room/hidden/butlers_room/reset/room_clear_chest",
+        "3ds_remake:room/hidden/butlers_room/reset/sewing_machine",
+        "3ds_remake:room/hidden/butlers_room/reset/table",
+        "3ds_remake:room/hidden/butlers_room/reset/toilet_paper",
+        "3ds_remake:room/hidden/butlers_room/reset/vacuumable_1",
+        "3ds_remake:room/hidden/butlers_room/reset/vacuumable_2",
+        "3ds_remake:room/hidden/butlers_room/reset/water_bucket"
+    ]
+}

@@ -1,0 +1,1 @@
+execute if entity @s[tag=ghost_coin] run function e3_demo:items/ghost_coin

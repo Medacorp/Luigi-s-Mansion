@@ -1,0 +1,1 @@
+execute as @a[tag=portrait_battle] at @s run function 3ds_remake:room/portrait_battle

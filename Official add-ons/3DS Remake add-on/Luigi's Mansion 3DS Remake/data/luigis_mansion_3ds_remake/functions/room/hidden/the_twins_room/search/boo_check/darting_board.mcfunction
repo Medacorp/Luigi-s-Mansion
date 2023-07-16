@@ -1,2 +1,0 @@
-execute unless entity @e[x=738.5,y=22,z=42.5,distance=..0.7,tag=hidden_boo,tag=caught_by_boo_radar] run function luigis_mansion_3ds_remake:room/hidden/the_twins_room/search/darting_board
-tag @e[x=738.5,y=22,z=42.5,distance=..0.7,tag=hidden_boo,tag=caught_by_boo_radar] add spawn

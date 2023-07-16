@@ -1,1 +1,0 @@
-place template luigis_mansion_3ds_remake:new_gallery 733 1 -60

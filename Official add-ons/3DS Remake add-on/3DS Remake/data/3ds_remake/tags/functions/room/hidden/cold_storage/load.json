@@ -1,0 +1,10 @@
+{
+	"values": [
+	    "3ds_remake:room/hidden/cold_storage/load/set_loaded",
+        "3ds_remake:room/hidden/cold_storage/load/lights",
+        "3ds_remake:room/hidden/cold_storage/load/doors",
+        "3ds_remake:room/hidden/cold_storage/load/fire",
+        "3ds_remake:room/hidden/cold_storage/load/lamp",
+        "3ds_remake:room/hidden/cold_storage/load/room_clear_chest"
+	]
+}

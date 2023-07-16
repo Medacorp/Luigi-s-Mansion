@@ -1,0 +1,1 @@
+execute if score #mansion_type Selected matches 2 run function e3_demo:dialog/player_tag/original_tags

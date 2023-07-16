@@ -1,0 +1,1 @@
+execute store result storage 3ds_remake:data loaded_mansion.settings.heart_money_count int 1 run scoreboard players get #heart_money_count Selected

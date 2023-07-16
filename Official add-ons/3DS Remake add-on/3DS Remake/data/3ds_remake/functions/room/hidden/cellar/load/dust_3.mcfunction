@@ -1,0 +1,1 @@
+execute if data storage luigis_mansion:data current_state.current_data{blackout:0b} positioned 746 2 -56 run function 3ds_remake:room/hidden/cellar/spawn_dust

@@ -1,1 +1,0 @@
-execute if score #boo_amiibo Selected matches 1 unless data storage luigis_mansion:data current_state.current_data.tracking_boos[2] run function #luigis_mansion_3ds_remake:entities/boo/track

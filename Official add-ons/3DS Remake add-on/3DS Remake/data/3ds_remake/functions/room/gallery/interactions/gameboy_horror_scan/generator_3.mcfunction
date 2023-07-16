@@ -1,0 +1,1 @@
+execute if entity @s[x=745.0,y=17,z=-38.0,dx=0,dy=6,dz=2] run tellraw @a[tag=same_room] {"translate":"chat.type.text","with":[{"selector":"@p[tag=scanning_player,gamemode=!spectator]","color":"green"},{"translate":"3ds_remake:message.player.scan_furniture.9"}]}

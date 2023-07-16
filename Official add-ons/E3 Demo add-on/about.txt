@@ -1,0 +1,14 @@
+This add-on adds a mansion that matched the E3 2001 demo of the game.
+
+This is a separate mansion with separate save-data.
+A max health counter will display in the mansion, you'll figure out why it's there when in the "area 2" hallway.
+The Poltergust 500 will overheat when you vacuum for too long, keep that in mind.
+New money type: Ghost Coin.
+New ghost types: Ghost, Puncher, Body Slammer, Basher, Bat, Boo, Shining Ghost, Flying Fish and Mouse.
+The hallways, bath room and back yard cannot be cleared.
+
+== Known issues ==
+
+* E3 Demo theme doesn't transition between different health values smoothly.
+* Body slammers are missing several sounds.
+* Poltergust 500 misses a few sounds.

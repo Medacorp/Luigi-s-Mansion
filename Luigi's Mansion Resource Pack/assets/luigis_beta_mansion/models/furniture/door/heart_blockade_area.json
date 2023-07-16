@@ -1,6 +1,0 @@
-{
-	"parent": "luigis_beta_mansion:furniture/door/heart",
-	"textures": {
-		"overlay": "luigis_mansion:furniture/door/blockade_area"
-	}
-}

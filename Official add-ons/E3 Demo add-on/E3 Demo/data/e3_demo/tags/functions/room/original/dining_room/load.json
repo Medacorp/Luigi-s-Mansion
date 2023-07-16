@@ -1,0 +1,11 @@
+{
+	"values": [
+	    "e3_demo:room/original/dining_room/load/set_loaded",
+        "e3_demo:room/original/dining_room/load/lights",
+        "e3_demo:room/original/dining_room/load/doors",
+        "e3_demo:room/original/dining_room/load/clock",
+        "e3_demo:room/original/dining_room/load/room_clear_chest",
+        "e3_demo:room/original/dining_room/load/simple_triple_candelabra_1",
+        "e3_demo:room/original/dining_room/load/simple_triple_candelabra_2"
+	]
+}

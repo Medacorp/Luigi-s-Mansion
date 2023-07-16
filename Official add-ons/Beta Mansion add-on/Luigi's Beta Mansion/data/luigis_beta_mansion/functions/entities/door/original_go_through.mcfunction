@@ -1,1 +1,0 @@
-execute if score #mansion_type Selected matches 2 in luigis_beta_mansion:original run function luigis_beta_mansion:entities/door/original/go_through

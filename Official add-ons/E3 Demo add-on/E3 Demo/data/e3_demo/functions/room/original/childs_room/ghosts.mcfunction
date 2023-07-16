@@ -1,0 +1,2 @@
+execute if score #childs_room Wave matches 1.. unless entity @e[tag=ghost,scores={Room=7},tag=!optional_ghost] run function e3_demo:room/original/childs_room/clear
+execute unless data storage luigis_mansion:data current_state.current_data.rooms.childs_room{cleared:1b} unless score #childs_room Wave matches 1.. run function e3_demo:room/original/childs_room/wave_1

@@ -1,0 +1,10 @@
+{
+	"values": [
+	    "3ds_remake:room/hidden/graveyard/load/set_loaded",
+        "3ds_remake:room/hidden/graveyard/load/lights",
+        "3ds_remake:room/hidden/graveyard/load/fire_1",
+        "3ds_remake:room/hidden/graveyard/load/fire_2",
+        "3ds_remake:room/hidden/graveyard/load/lamp",
+        "3ds_remake:room/hidden/graveyard/load/room_clear_chest"
+	]
+}

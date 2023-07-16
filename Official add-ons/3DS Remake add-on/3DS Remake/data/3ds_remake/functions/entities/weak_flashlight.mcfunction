@@ -1,0 +1,1 @@
+execute if entity @s[tag=weak_flashlight] run function 3ds_remake:entities/weak_flashlight/tick

@@ -1,0 +1,23 @@
+{
+    "values": [
+        "3ds_remake:room/hidden/nanas_room/reset/unload",
+        "#3ds_remake:room/hidden/nanas_room/turn_lights/off",
+        "3ds_remake:room/hidden/nanas_room/reset/bookshelf",
+        "3ds_remake:room/hidden/nanas_room/reset/chair",
+        "3ds_remake:room/hidden/nanas_room/reset/closet",
+        "3ds_remake:room/hidden/nanas_room/reset/couch",
+        "3ds_remake:room/hidden/nanas_room/reset/curtain_1",
+        "3ds_remake:room/hidden/nanas_room/reset/curtain_2",
+        "3ds_remake:room/hidden/nanas_room/reset/curtain_3",
+        "3ds_remake:room/hidden/nanas_room/reset/curtain_4",
+        "3ds_remake:room/hidden/nanas_room/reset/lamp",
+        "3ds_remake:room/hidden/nanas_room/reset/loom",
+        "3ds_remake:room/hidden/nanas_room/reset/painting",
+        "3ds_remake:room/hidden/nanas_room/reset/paintings",
+        "3ds_remake:room/hidden/nanas_room/reset/room_clear_chest",
+        "3ds_remake:room/hidden/nanas_room/reset/sewing_machine",
+        "3ds_remake:room/hidden/nanas_room/reset/shelf",
+        "3ds_remake:room/hidden/nanas_room/reset/table_1",
+        "3ds_remake:room/hidden/nanas_room/reset/table_2"
+    ]
+}

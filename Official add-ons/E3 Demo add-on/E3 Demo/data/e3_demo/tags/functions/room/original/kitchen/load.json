@@ -1,0 +1,11 @@
+{
+	"values": [
+	    "e3_demo:room/original/kitchen/load/set_loaded",
+        "e3_demo:room/original/kitchen/load/lights",
+        "e3_demo:room/original/kitchen/load/doors",
+        "e3_demo:room/original/kitchen/load/haunted_objects",
+        "e3_demo:room/original/kitchen/load/painting_1",
+        "e3_demo:room/original/kitchen/load/painting_2",
+        "e3_demo:room/original/kitchen/load/room_clear_chest"
+	]
+}

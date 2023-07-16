@@ -1,2 +1,0 @@
-data modify storage luigis_mansion:data furniture set value {shake_animation:["interact","vacuum"],sound:"luigis_mansion:ceramic",scan_message:'{"translate":"luigis_mansion:message.player.scan_furniture.73"}'}
-execute positioned 680 12.5 -10 rotated -90 0 run function luigis_beta_mansion:spawn_furniture/vase

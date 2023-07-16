@@ -1,0 +1,20 @@
+{
+    "display": {
+        "icon": {
+            "item": "minecraft:diamond_pickaxe",
+			"nbt": "{Unbreakable:1b,Damage:5,CustomModelData:13}"
+        },
+        "title": {
+            "translate": "3ds_remake:advancements.amiibo.toad"
+        },
+        "description": {
+            "translate": "3ds_remake:dialog.underground_lab.change_amiibo.toad.hover"
+        }
+    },
+	"parent": "3ds_remake:amiibo/root",
+    "criteria": {
+        "obtained": {
+            "trigger": "minecraft:impossible"
+        }
+    }
+}

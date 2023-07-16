@@ -1,0 +1,1 @@
+execute if score #mansion_type Selected matches 2 run function e3_demo:room/ghost_portrificationizer_room/portrificationize/original

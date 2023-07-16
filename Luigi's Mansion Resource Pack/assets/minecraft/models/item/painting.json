@@ -506,637 +506,637 @@
             "predicate": {
                 "custom_model_data": 84
             },
-            "model": "luigis_mansion_3ds_remake:entity/painting/frame"
+            "model": "3ds_remake:entity/painting/frame"
         },
 		{
             "predicate": {
                 "custom_model_data": 85
             },
-            "model": "luigis_mansion_3ds_remake:entity/painting/boss_frame"
+            "model": "3ds_remake:entity/painting/boss_frame"
         },
 		{
             "predicate": {
                 "custom_model_data": 86
             },
-            "model": "luigis_mansion_3ds_remake:entity/painting/king_boo_frame"
+            "model": "3ds_remake:entity/painting/king_boo_frame"
         },
 		{
             "predicate": {
                 "custom_model_data": 87
             },
-            "model": "luigis_mansion_3ds_remake:entity/painting/bronze/neville"
+            "model": "3ds_remake:entity/painting/bronze/neville"
         },
 		{
             "predicate": {
                 "custom_model_data": 88
             },
-            "model": "luigis_mansion_3ds_remake:entity/painting/silver/neville"
+            "model": "3ds_remake:entity/painting/silver/neville"
         },
 		{
             "predicate": {
                 "custom_model_data": 89
             },
-            "model": "luigis_mansion_3ds_remake:entity/painting/gold/neville"
+            "model": "3ds_remake:entity/painting/gold/neville"
         },
 		{
             "predicate": {
                 "custom_model_data": 90
             },
-            "model": "luigis_mansion_3ds_remake:entity/painting/platinum/neville"
+            "model": "3ds_remake:entity/painting/platinum/neville"
         },
 		{
             "predicate": {
                 "custom_model_data": 91
             },
-            "model": "luigis_mansion_3ds_remake:entity/painting/bronze/lydia"
+            "model": "3ds_remake:entity/painting/bronze/lydia"
         },
 		{
             "predicate": {
                 "custom_model_data": 92
             },
-            "model": "luigis_mansion_3ds_remake:entity/painting/silver/lydia"
+            "model": "3ds_remake:entity/painting/silver/lydia"
         },
 		{
             "predicate": {
                 "custom_model_data": 93
             },
-            "model": "luigis_mansion_3ds_remake:entity/painting/gold/lydia"
+            "model": "3ds_remake:entity/painting/gold/lydia"
         },
 		{
             "predicate": {
                 "custom_model_data": 94
             },
-            "model": "luigis_mansion_3ds_remake:entity/painting/platinum/lydia"
+            "model": "3ds_remake:entity/painting/platinum/lydia"
         },
 		{
             "predicate": {
                 "custom_model_data": 95
             },
-            "model": "luigis_mansion_3ds_remake:entity/painting/bronze/chauncey"
+            "model": "3ds_remake:entity/painting/bronze/chauncey"
         },
 		{
             "predicate": {
                 "custom_model_data": 96
             },
-            "model": "luigis_mansion_3ds_remake:entity/painting/silver/chauncey"
+            "model": "3ds_remake:entity/painting/silver/chauncey"
         },
 		{
             "predicate": {
                 "custom_model_data": 97
             },
-            "model": "luigis_mansion_3ds_remake:entity/painting/gold/chauncey"
+            "model": "3ds_remake:entity/painting/gold/chauncey"
         },
 		{
             "predicate": {
                 "custom_model_data": 98
             },
-            "model": "luigis_mansion_3ds_remake:entity/painting/platinum/chauncey"
+            "model": "3ds_remake:entity/painting/platinum/chauncey"
         },
 		{
             "predicate": {
                 "custom_model_data": 99
             },
-            "model": "luigis_mansion_3ds_remake:entity/painting/bronze/floating_whirlindas"
+            "model": "3ds_remake:entity/painting/bronze/floating_whirlindas"
         },
 		{
             "predicate": {
                 "custom_model_data": 100
             },
-            "model": "luigis_mansion_3ds_remake:entity/painting/silver/floating_whirlindas"
+            "model": "3ds_remake:entity/painting/silver/floating_whirlindas"
         },
 		{
             "predicate": {
                 "custom_model_data": 101
             },
-            "model": "luigis_mansion_3ds_remake:entity/painting/gold/floating_whirlindas"
+            "model": "3ds_remake:entity/painting/gold/floating_whirlindas"
         },
 		{
             "predicate": {
                 "custom_model_data": 102
             },
-            "model": "luigis_mansion_3ds_remake:entity/painting/platinum/floating_whirlindas"
+            "model": "3ds_remake:entity/painting/platinum/floating_whirlindas"
         },
 		{
             "predicate": {
                 "custom_model_data": 103
             },
-            "model": "luigis_mansion_3ds_remake:entity/painting/bronze/shivers"
+            "model": "3ds_remake:entity/painting/bronze/shivers"
         },
 		{
             "predicate": {
                 "custom_model_data": 104
             },
-            "model": "luigis_mansion_3ds_remake:entity/painting/silver/shivers"
+            "model": "3ds_remake:entity/painting/silver/shivers"
         },
 		{
             "predicate": {
                 "custom_model_data": 105
             },
-            "model": "luigis_mansion_3ds_remake:entity/painting/gold/shivers"
+            "model": "3ds_remake:entity/painting/gold/shivers"
         },
 		{
             "predicate": {
                 "custom_model_data": 106
             },
-            "model": "luigis_mansion_3ds_remake:entity/painting/platinum/shivers"
+            "model": "3ds_remake:entity/painting/platinum/shivers"
         },
 		{
             "predicate": {
                 "custom_model_data": 107
             },
-            "model": "luigis_mansion_3ds_remake:entity/painting/bronze/melody_pianissima"
+            "model": "3ds_remake:entity/painting/bronze/melody_pianissima"
         },
 		{
             "predicate": {
                 "custom_model_data": 108
             },
-            "model": "luigis_mansion_3ds_remake:entity/painting/silver/melody_pianissima"
+            "model": "3ds_remake:entity/painting/silver/melody_pianissima"
         },
 		{
             "predicate": {
                 "custom_model_data": 109
             },
-            "model": "luigis_mansion_3ds_remake:entity/painting/gold/melody_pianissima"
+            "model": "3ds_remake:entity/painting/gold/melody_pianissima"
         },
 		{
             "predicate": {
                 "custom_model_data": 110
             },
-            "model": "luigis_mansion_3ds_remake:entity/painting/platinum/melody_pianissima"
+            "model": "3ds_remake:entity/painting/platinum/melody_pianissima"
         },
 		{
             "predicate": {
                 "custom_model_data": 111
             },
-            "model": "luigis_mansion_3ds_remake:entity/painting/bronze/mr_luggs"
+            "model": "3ds_remake:entity/painting/bronze/mr_luggs"
         },
 		{
             "predicate": {
                 "custom_model_data": 112
             },
-            "model": "luigis_mansion_3ds_remake:entity/painting/silver/mr_luggs"
+            "model": "3ds_remake:entity/painting/silver/mr_luggs"
         },
 		{
             "predicate": {
                 "custom_model_data": 113
             },
-            "model": "luigis_mansion_3ds_remake:entity/painting/gold/mr_luggs"
+            "model": "3ds_remake:entity/painting/gold/mr_luggs"
         },
 		{
             "predicate": {
                 "custom_model_data": 114
             },
-            "model": "luigis_mansion_3ds_remake:entity/painting/platinum/mr_luggs"
+            "model": "3ds_remake:entity/painting/platinum/mr_luggs"
         },
 		{
             "predicate": {
                 "custom_model_data": 115
             },
-            "model": "luigis_mansion_3ds_remake:entity/painting/bronze/spooky"
+            "model": "3ds_remake:entity/painting/bronze/spooky"
         },
 		{
             "predicate": {
                 "custom_model_data": 116
             },
-            "model": "luigis_mansion_3ds_remake:entity/painting/silver/spooky"
+            "model": "3ds_remake:entity/painting/silver/spooky"
         },
 		{
             "predicate": {
                 "custom_model_data": 117
             },
-            "model": "luigis_mansion_3ds_remake:entity/painting/gold/spooky"
+            "model": "3ds_remake:entity/painting/gold/spooky"
         },
 		{
             "predicate": {
                 "custom_model_data": 118
             },
-            "model": "luigis_mansion_3ds_remake:entity/painting/platinum/spooky"
+            "model": "3ds_remake:entity/painting/platinum/spooky"
         },
 		{
             "predicate": {
                 "custom_model_data": 119
             },
-            "model": "luigis_mansion_3ds_remake:entity/painting/bronze/bogmire"
+            "model": "3ds_remake:entity/painting/bronze/bogmire"
         },
 		{
             "predicate": {
                 "custom_model_data": 120
             },
-            "model": "luigis_mansion_3ds_remake:entity/painting/silver/bogmire"
+            "model": "3ds_remake:entity/painting/silver/bogmire"
         },
 		{
             "predicate": {
                 "custom_model_data": 121
             },
-            "model": "luigis_mansion_3ds_remake:entity/painting/gold/bogmire"
+            "model": "3ds_remake:entity/painting/gold/bogmire"
         },
 		{
             "predicate": {
                 "custom_model_data": 122
             },
-            "model": "luigis_mansion_3ds_remake:entity/painting/platinum/bogmire"
+            "model": "3ds_remake:entity/painting/platinum/bogmire"
         },
 		{
             "predicate": {
                 "custom_model_data": 123
             },
-            "model": "luigis_mansion_3ds_remake:entity/painting/bronze/biff_atlas"
+            "model": "3ds_remake:entity/painting/bronze/biff_atlas"
         },
 		{
             "predicate": {
                 "custom_model_data": 124
             },
-            "model": "luigis_mansion_3ds_remake:entity/painting/silver/biff_atlas"
+            "model": "3ds_remake:entity/painting/silver/biff_atlas"
         },
 		{
             "predicate": {
                 "custom_model_data": 125
             },
-            "model": "luigis_mansion_3ds_remake:entity/painting/gold/biff_atlas"
+            "model": "3ds_remake:entity/painting/gold/biff_atlas"
         },
 		{
             "predicate": {
                 "custom_model_data": 126
             },
-            "model": "luigis_mansion_3ds_remake:entity/painting/platinum/biff_atlas"
+            "model": "3ds_remake:entity/painting/platinum/biff_atlas"
         },
 		{
             "predicate": {
                 "custom_model_data": 127
             },
-            "model": "luigis_mansion_3ds_remake:entity/painting/bronze/miss_petunia"
+            "model": "3ds_remake:entity/painting/bronze/miss_petunia"
         },
 		{
             "predicate": {
                 "custom_model_data": 128
             },
-            "model": "luigis_mansion_3ds_remake:entity/painting/silver/miss_petunia"
+            "model": "3ds_remake:entity/painting/silver/miss_petunia"
         },
 		{
             "predicate": {
                 "custom_model_data": 129
             },
-            "model": "luigis_mansion_3ds_remake:entity/painting/gold/miss_petunia"
+            "model": "3ds_remake:entity/painting/gold/miss_petunia"
         },
 		{
             "predicate": {
                 "custom_model_data": 130
             },
-            "model": "luigis_mansion_3ds_remake:entity/painting/platinum/miss_petunia"
+            "model": "3ds_remake:entity/painting/platinum/miss_petunia"
         },
 		{
             "predicate": {
                 "custom_model_data": 131
             },
-            "model": "luigis_mansion_3ds_remake:entity/painting/bronze/nana"
+            "model": "3ds_remake:entity/painting/bronze/nana"
         },
 		{
             "predicate": {
                 "custom_model_data": 132
             },
-            "model": "luigis_mansion_3ds_remake:entity/painting/silver/nana"
+            "model": "3ds_remake:entity/painting/silver/nana"
         },
 		{
             "predicate": {
                 "custom_model_data": 133
             },
-            "model": "luigis_mansion_3ds_remake:entity/painting/gold/nana"
+            "model": "3ds_remake:entity/painting/gold/nana"
         },
 		{
             "predicate": {
                 "custom_model_data": 134
             },
-            "model": "luigis_mansion_3ds_remake:entity/painting/platinum/nana"
+            "model": "3ds_remake:entity/painting/platinum/nana"
         },
 		{
             "predicate": {
                 "custom_model_data": 135
             },
-            "model": "luigis_mansion_3ds_remake:entity/painting/bronze/slim_bankshot"
+            "model": "3ds_remake:entity/painting/bronze/slim_bankshot"
         },
 		{
             "predicate": {
                 "custom_model_data": 136
             },
-            "model": "luigis_mansion_3ds_remake:entity/painting/silver/slim_bankshot"
+            "model": "3ds_remake:entity/painting/silver/slim_bankshot"
         },
 		{
             "predicate": {
                 "custom_model_data": 137
             },
-            "model": "luigis_mansion_3ds_remake:entity/painting/gold/slim_bankshot"
+            "model": "3ds_remake:entity/painting/gold/slim_bankshot"
         },
 		{
             "predicate": {
                 "custom_model_data": 138
             },
-            "model": "luigis_mansion_3ds_remake:entity/painting/platinum/slim_bankshot"
+            "model": "3ds_remake:entity/painting/platinum/slim_bankshot"
         },
 		{
             "predicate": {
                 "custom_model_data": 139
             },
-            "model": "luigis_mansion_3ds_remake:entity/painting/bronze/henry_and_orville"
+            "model": "3ds_remake:entity/painting/bronze/henry_and_orville"
         },
 		{
             "predicate": {
                 "custom_model_data": 140
             },
-            "model": "luigis_mansion_3ds_remake:entity/painting/silver/henry_and_orville"
+            "model": "3ds_remake:entity/painting/silver/henry_and_orville"
         },
 		{
             "predicate": {
                 "custom_model_data": 141
             },
-            "model": "luigis_mansion_3ds_remake:entity/painting/gold/henry_and_orville"
+            "model": "3ds_remake:entity/painting/gold/henry_and_orville"
         },
 		{
             "predicate": {
                 "custom_model_data": 142
             },
-            "model": "luigis_mansion_3ds_remake:entity/painting/platinum/henry_and_orville"
+            "model": "3ds_remake:entity/painting/platinum/henry_and_orville"
         },
 		{
             "predicate": {
                 "custom_model_data": 143
             },
-            "model": "luigis_mansion_3ds_remake:entity/painting/bronze/madame_clairvoya"
+            "model": "3ds_remake:entity/painting/bronze/madame_clairvoya"
         },
 		{
             "predicate": {
                 "custom_model_data": 144
             },
-            "model": "luigis_mansion_3ds_remake:entity/painting/silver/madame_clairvoya"
+            "model": "3ds_remake:entity/painting/silver/madame_clairvoya"
         },
 		{
             "predicate": {
                 "custom_model_data": 145
             },
-            "model": "luigis_mansion_3ds_remake:entity/painting/gold/madame_clairvoya"
+            "model": "3ds_remake:entity/painting/gold/madame_clairvoya"
         },
 		{
             "predicate": {
                 "custom_model_data": 146
             },
-            "model": "luigis_mansion_3ds_remake:entity/painting/platinum/madame_clairvoya"
+            "model": "3ds_remake:entity/painting/platinum/madame_clairvoya"
         },
 		{
             "predicate": {
                 "custom_model_data": 147
             },
-            "model": "luigis_mansion_3ds_remake:entity/painting/bronze/boolossus"
+            "model": "3ds_remake:entity/painting/bronze/boolossus"
         },
 		{
             "predicate": {
                 "custom_model_data": 148
             },
-            "model": "luigis_mansion_3ds_remake:entity/painting/silver/boolossus"
+            "model": "3ds_remake:entity/painting/silver/boolossus"
         },
 		{
             "predicate": {
                 "custom_model_data": 149
             },
-            "model": "luigis_mansion_3ds_remake:entity/painting/gold/boolossus"
+            "model": "3ds_remake:entity/painting/gold/boolossus"
         },
 		{
             "predicate": {
                 "custom_model_data": 150
             },
-            "model": "luigis_mansion_3ds_remake:entity/painting/platinum/boolossus"
+            "model": "3ds_remake:entity/painting/platinum/boolossus"
         },
 		{
             "predicate": {
                 "custom_model_data": 151
             },
-            "model": "luigis_mansion_3ds_remake:entity/painting/bronze/uncle_grimmly"
+            "model": "3ds_remake:entity/painting/bronze/uncle_grimmly"
         },
 		{
             "predicate": {
                 "custom_model_data": 152
             },
-            "model": "luigis_mansion_3ds_remake:entity/painting/silver/uncle_grimmly"
+            "model": "3ds_remake:entity/painting/silver/uncle_grimmly"
         },
 		{
             "predicate": {
                 "custom_model_data": 153
             },
-            "model": "luigis_mansion_3ds_remake:entity/painting/gold/uncle_grimmly"
+            "model": "3ds_remake:entity/painting/gold/uncle_grimmly"
         },
 		{
             "predicate": {
                 "custom_model_data": 154
             },
-            "model": "luigis_mansion_3ds_remake:entity/painting/platinum/uncle_grimmly"
+            "model": "3ds_remake:entity/painting/platinum/uncle_grimmly"
         },
 		{
             "predicate": {
                 "custom_model_data": 155
             },
-            "model": "luigis_mansion_3ds_remake:entity/painting/bronze/clockwork_soldiers"
+            "model": "3ds_remake:entity/painting/bronze/clockwork_soldiers"
         },
 		{
             "predicate": {
                 "custom_model_data": 156
             },
-            "model": "luigis_mansion_3ds_remake:entity/painting/silver/clockwork_soldiers"
+            "model": "3ds_remake:entity/painting/silver/clockwork_soldiers"
         },
 		{
             "predicate": {
                 "custom_model_data": 157
             },
-            "model": "luigis_mansion_3ds_remake:entity/painting/gold/clockwork_soldiers"
+            "model": "3ds_remake:entity/painting/gold/clockwork_soldiers"
         },
 		{
             "predicate": {
                 "custom_model_data": 158
             },
-            "model": "luigis_mansion_3ds_remake:entity/painting/platinum/clockwork_soldiers"
+            "model": "3ds_remake:entity/painting/platinum/clockwork_soldiers"
         },
 		{
             "predicate": {
                 "custom_model_data": 159
             },
-            "model": "luigis_mansion_3ds_remake:entity/painting/bronze/sue_pea"
+            "model": "3ds_remake:entity/painting/bronze/sue_pea"
         },
 		{
             "predicate": {
                 "custom_model_data": 160
             },
-            "model": "luigis_mansion_3ds_remake:entity/painting/silver/sue_pea"
+            "model": "3ds_remake:entity/painting/silver/sue_pea"
         },
 		{
             "predicate": {
                 "custom_model_data": 161
             },
-            "model": "luigis_mansion_3ds_remake:entity/painting/gold/sue_pea"
+            "model": "3ds_remake:entity/painting/gold/sue_pea"
         },
 		{
             "predicate": {
                 "custom_model_data": 162
             },
-            "model": "luigis_mansion_3ds_remake:entity/painting/platinum/sue_pea"
+            "model": "3ds_remake:entity/painting/platinum/sue_pea"
         },
 		{
             "predicate": {
                 "custom_model_data": 163
             },
-            "model": "luigis_mansion_3ds_remake:entity/painting/bronze/jarvis"
+            "model": "3ds_remake:entity/painting/bronze/jarvis"
         },
 		{
             "predicate": {
                 "custom_model_data": 164
             },
-            "model": "luigis_mansion_3ds_remake:entity/painting/silver/jarvis"
+            "model": "3ds_remake:entity/painting/silver/jarvis"
         },
 		{
             "predicate": {
                 "custom_model_data": 165
             },
-            "model": "luigis_mansion_3ds_remake:entity/painting/gold/jarvis"
+            "model": "3ds_remake:entity/painting/gold/jarvis"
         },
 		{
             "predicate": {
                 "custom_model_data": 166
             },
-            "model": "luigis_mansion_3ds_remake:entity/painting/platinum/jarvis"
+            "model": "3ds_remake:entity/painting/platinum/jarvis"
         },
 		{
             "predicate": {
                 "custom_model_data": 167
             },
-            "model": "luigis_mansion_3ds_remake:entity/painting/bronze/sir_weston"
+            "model": "3ds_remake:entity/painting/bronze/sir_weston"
         },
 		{
             "predicate": {
                 "custom_model_data": 168
             },
-            "model": "luigis_mansion_3ds_remake:entity/painting/silver/sir_weston"
+            "model": "3ds_remake:entity/painting/silver/sir_weston"
         },
 		{
             "predicate": {
                 "custom_model_data": 169
             },
-            "model": "luigis_mansion_3ds_remake:entity/painting/gold/sir_weston"
+            "model": "3ds_remake:entity/painting/gold/sir_weston"
         },
 		{
             "predicate": {
                 "custom_model_data": 170
             },
-            "model": "luigis_mansion_3ds_remake:entity/painting/platinum/sir_weston"
+            "model": "3ds_remake:entity/painting/platinum/sir_weston"
         },
 		{
             "predicate": {
                 "custom_model_data": 171
             },
-            "model": "luigis_mansion_3ds_remake:entity/painting/bronze/vincent_van_gore"
+            "model": "3ds_remake:entity/painting/bronze/vincent_van_gore"
         },
 		{
             "predicate": {
                 "custom_model_data": 172
             },
-            "model": "luigis_mansion_3ds_remake:entity/painting/silver/vincent_van_gore"
+            "model": "3ds_remake:entity/painting/silver/vincent_van_gore"
         },
 		{
             "predicate": {
                 "custom_model_data": 173
             },
-            "model": "luigis_mansion_3ds_remake:entity/painting/gold/vincent_van_gore"
+            "model": "3ds_remake:entity/painting/gold/vincent_van_gore"
         },
 		{
             "predicate": {
                 "custom_model_data": 174
             },
-            "model": "luigis_mansion_3ds_remake:entity/painting/platinum/vincent_van_gore"
+            "model": "3ds_remake:entity/painting/platinum/vincent_van_gore"
         },
 		{
             "predicate": {
                 "custom_model_data": 175
             },
-            "model": "luigis_mansion_3ds_remake:entity/painting/bronze/king_boo"
+            "model": "3ds_remake:entity/painting/bronze/king_boo"
         },
 		{
             "predicate": {
                 "custom_model_data": 176
             },
-            "model": "luigis_mansion_3ds_remake:entity/painting/silver/king_boo"
+            "model": "3ds_remake:entity/painting/silver/king_boo"
         },
 		{
             "predicate": {
                 "custom_model_data": 177
             },
-            "model": "luigis_mansion_3ds_remake:entity/painting/gold/king_boo"
+            "model": "3ds_remake:entity/painting/gold/king_boo"
         },
 		{
             "predicate": {
                 "custom_model_data": 178
             },
-            "model": "luigis_mansion_3ds_remake:entity/painting/platinum/king_boo"
+            "model": "3ds_remake:entity/painting/platinum/king_boo"
         },
 		{
             "predicate": {
                 "custom_model_data": 179
             },
-            "model": "luigis_mansion_3ds_remake:entity/painting/mansion_rank"
+            "model": "3ds_remake:entity/painting/mansion_rank"
         },
 		{
             "predicate": {
                 "custom_model_data": 180
             },
-            "model": "luigis_mansion_3ds_remake:entity/painting/mansion_rank/s"
+            "model": "3ds_remake:entity/painting/mansion_rank/s"
         },
 		{
             "predicate": {
                 "custom_model_data": 181
             },
-            "model": "luigis_mansion_3ds_remake:entity/painting/mansion_rank/a"
+            "model": "3ds_remake:entity/painting/mansion_rank/a"
         },
 		{
             "predicate": {
                 "custom_model_data": 182
             },
-            "model": "luigis_mansion_3ds_remake:entity/painting/mansion_rank/b"
+            "model": "3ds_remake:entity/painting/mansion_rank/b"
         },
 		{
             "predicate": {
                 "custom_model_data": 183
             },
-            "model": "luigis_mansion_3ds_remake:entity/painting/mansion_rank/c"
+            "model": "3ds_remake:entity/painting/mansion_rank/c"
         },
 		{
             "predicate": {
                 "custom_model_data": 184
             },
-            "model": "luigis_mansion_3ds_remake:entity/painting/mansion_rank/d"
+            "model": "3ds_remake:entity/painting/mansion_rank/d"
         },
 		{
             "predicate": {
                 "custom_model_data": 185
             },
-            "model": "luigis_mansion_3ds_remake:entity/painting/mansion_rank/e"
+            "model": "3ds_remake:entity/painting/mansion_rank/e"
         },
 		{
             "predicate": {
                 "custom_model_data": 186
             },
-            "model": "luigis_mansion_3ds_remake:entity/painting/mansion_rank/f"
+            "model": "3ds_remake:entity/painting/mansion_rank/f"
         },
 		{
             "predicate": {
                 "custom_model_data": 187
             },
-            "model": "luigis_mansion_3ds_remake:entity/painting/mansion_rank/g"
+            "model": "3ds_remake:entity/painting/mansion_rank/g"
         },
 		{
             "predicate": {
                 "custom_model_data": 188
             },
-            "model": "luigis_mansion_3ds_remake:entity/painting/mansion_rank/h"
+            "model": "3ds_remake:entity/painting/mansion_rank/h"
         },
 		{
             "predicate": {
                 "custom_model_data": 189
             },
-            "model": "luigis_mansion_3ds_remake:entity/painting/hollow_frame"
+            "model": "3ds_remake:entity/painting/hollow_frame"
         }
     ]
 }

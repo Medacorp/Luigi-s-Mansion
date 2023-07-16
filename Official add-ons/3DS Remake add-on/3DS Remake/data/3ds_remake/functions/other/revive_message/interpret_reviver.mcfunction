@@ -1,0 +1,1 @@
+execute if data storage luigis_mansion:data my_memory{revived_by:"3ds_remake:polterpup"} run data modify storage luigis_mansion:data my_memory.revived_by set value '{"translate":"3ds_remake:entity.polterpup"}'

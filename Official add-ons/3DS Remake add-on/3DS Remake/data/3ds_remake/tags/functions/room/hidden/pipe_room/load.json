@@ -1,0 +1,12 @@
+{
+	"values": [
+	    "3ds_remake:room/hidden/pipe_room/load/set_loaded",
+        "3ds_remake:room/hidden/pipe_room/load/lights",
+        "3ds_remake:room/hidden/pipe_room/load/doors",
+        "3ds_remake:room/hidden/pipe_room/load/pipe",
+        "3ds_remake:room/hidden/pipe_room/load/bucket",
+        "3ds_remake:room/hidden/pipe_room/load/ice",
+        "3ds_remake:room/hidden/pipe_room/load/room_clear_chest",
+        "3ds_remake:room/hidden/pipe_room/load/sewage"
+	]
+}

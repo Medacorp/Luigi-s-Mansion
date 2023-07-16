@@ -1,0 +1,1 @@
+execute if score #temp Room matches -5 run function #3ds_remake:room/gallery/interactions/poltergust

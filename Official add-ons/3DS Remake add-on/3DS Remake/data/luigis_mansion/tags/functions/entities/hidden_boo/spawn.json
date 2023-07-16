@@ -1,0 +1,7 @@
+{
+	"values": [
+		"3ds_remake:entities/hidden_boo/spawn/boo/boolldog",
+		"3ds_remake:entities/hidden_boo/spawn/trap/boolldog",
+		"3ds_remake:entities/boo/stop_tracking"
+	]
+}

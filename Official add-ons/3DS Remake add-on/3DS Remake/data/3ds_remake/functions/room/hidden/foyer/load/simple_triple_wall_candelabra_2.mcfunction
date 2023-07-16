@@ -1,0 +1,2 @@
+data modify storage luigis_mansion:data furniture set value {candle_flames:[{lit:1b}]}
+execute positioned 744.0 17.5 1 rotated -90 0 run function 3ds_remake:spawn_furniture/simple_triple_wall_candelabra/left_burned

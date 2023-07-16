@@ -1,0 +1,1 @@
+execute unless entity @e[tag=eternal_gold_coin,scores={Room=2}] if data storage luigis_mansion:data {found_e_gadd:1b} unless data storage luigis_mansion:data current_state.current_data{money_spawned:["hallway_1_money"]} run function 3ds_remake:room/hidden/hallway_1/money

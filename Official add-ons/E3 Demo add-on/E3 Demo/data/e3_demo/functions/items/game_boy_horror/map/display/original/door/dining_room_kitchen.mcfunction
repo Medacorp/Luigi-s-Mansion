@@ -1,0 +1,1 @@
+place template e3_demo:game_boy_horror_map/door/double_unlocked 3694 60 26 clockwise_90

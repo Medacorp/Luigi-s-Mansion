@@ -1,2 +1,0 @@
-execute if entity @a[distance=0..,scores={PositionIntX=732..777,PositionIntY=-1..29,PositionIntZ=-61..-15}] run function luigis_mansion_3ds_remake:room/gallery/tick
-execute if score #3ds_gallery Ticking matches 1 unless entity @a[distance=0..,scores={PositionIntX=732..777,PositionIntY=-1..29,PositionIntZ=-61..-15}] unless entity @a[scores={Room=-5}] run function luigis_mansion_3ds_remake:room/gallery/not_ticking

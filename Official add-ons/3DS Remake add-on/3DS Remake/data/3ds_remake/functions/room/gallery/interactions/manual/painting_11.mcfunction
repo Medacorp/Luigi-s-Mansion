@@ -1,0 +1,3 @@
+execute if entity @s[x=733.0,y=6,z=-29.0,dx=0,dy=1,dz=1,tag=check] as @a[tag=searcher,limit=1] run function luigis_mansion:entities/player/animation/set/inspect
+execute if entity @s[x=733.0,y=6,z=-29.0,dx=0,dy=1,dz=1,tag=check] run function 3ds_remake:room/gallery/check_portrait/king_boo
+execute if entity @s[x=733.0,y=6,z=-29.0,dx=0,dy=1,dz=1,tag=check] run kill @e[tag=interact,tag=manual,tag=check]

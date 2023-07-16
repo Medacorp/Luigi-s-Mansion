@@ -1,0 +1,2 @@
+execute unless data storage luigis_mansion:data current_state.current_data.rooms.hallway_17{cleared:1b} if data storage luigis_mansion:data current_state.current_data{blackout:0b} unless score #hallway_17 Wave matches 1..99 run function 3ds_remake:room/hidden/hallway_17/wave_1
+execute if data storage luigis_mansion:data current_state.current_data{blackout:1b} unless score #hallway_17 Wave matches 1.. run function 3ds_remake:room/hidden/hallway_17/blackout

@@ -1,0 +1,16 @@
+{
+	"values": [
+	    "3ds_remake:room/hidden/washroom_2/load/set_loaded",
+        "3ds_remake:room/hidden/washroom_2/load/lights",
+        "3ds_remake:room/hidden/washroom_2/load/doors",
+        "3ds_remake:room/hidden/washroom_2/load/painting_1",
+        "3ds_remake:room/hidden/washroom_2/load/painting_2",
+        "3ds_remake:room/hidden/washroom_2/load/painting_3",
+        "3ds_remake:room/hidden/washroom_2/load/poster",
+        "3ds_remake:room/hidden/washroom_2/load/room_clear_chest",
+        "3ds_remake:room/hidden/washroom_2/load/sink",
+        "3ds_remake:room/hidden/washroom_2/load/toilet",
+        "3ds_remake:room/hidden/washroom_2/load/toilet_paper",
+        "3ds_remake:room/hidden/washroom_2/load/water"
+	]
+}

@@ -1,2 +1,0 @@
-execute unless entity @e[x=714.5,y=11,z=61.5,distance=..0.7,tag=hidden_boo,tag=caught_by_boo_radar] run function luigis_mansion_3ds_remake:room/hidden/laundry_room/search/bucket
-tag @e[x=714.5,y=11,z=61.5,distance=..0.7,tag=hidden_boo,tag=caught_by_boo_radar] add spawn

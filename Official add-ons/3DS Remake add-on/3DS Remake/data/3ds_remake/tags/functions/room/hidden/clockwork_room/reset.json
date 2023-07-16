@@ -1,0 +1,29 @@
+{
+    "values": [
+        "3ds_remake:room/hidden/clockwork_room/reset/unload",
+        "#3ds_remake:room/hidden/clockwork_room/turn_lights/off",
+        "3ds_remake:room/hidden/clockwork_room/reset/elevator",
+        "3ds_remake:room/hidden/clockwork_room/reset/chair_1",
+        "3ds_remake:room/hidden/clockwork_room/reset/chair_2",
+        "3ds_remake:room/hidden/clockwork_room/reset/chair_3",
+        "3ds_remake:room/hidden/clockwork_room/reset/chair_4",
+        "3ds_remake:room/hidden/clockwork_room/reset/chair_5",
+        "3ds_remake:room/hidden/clockwork_room/reset/clock_1",
+        "3ds_remake:room/hidden/clockwork_room/reset/clock_2",
+        "3ds_remake:room/hidden/clockwork_room/reset/clock_3",
+        "3ds_remake:room/hidden/clockwork_room/reset/lamp_1",
+        "3ds_remake:room/hidden/clockwork_room/reset/lamp_2",
+        "3ds_remake:room/hidden/clockwork_room/reset/puppet_1",
+        "3ds_remake:room/hidden/clockwork_room/reset/puppet_2",
+        "3ds_remake:room/hidden/clockwork_room/reset/small_door_1",
+        "3ds_remake:room/hidden/clockwork_room/reset/small_door_2",
+        "3ds_remake:room/hidden/clockwork_room/reset/small_door_3",
+        "3ds_remake:room/hidden/clockwork_room/reset/small_door_4",
+        "3ds_remake:room/hidden/clockwork_room/reset/small_door_5",
+        "3ds_remake:room/hidden/clockwork_room/reset/small_door_6",
+        "3ds_remake:room/hidden/clockwork_room/reset/table_1",
+        "3ds_remake:room/hidden/clockwork_room/reset/table_2",
+        "3ds_remake:room/hidden/clockwork_room/reset/table_3",
+        "3ds_remake:room/hidden/clockwork_room/reset/table_4"
+    ]
+}

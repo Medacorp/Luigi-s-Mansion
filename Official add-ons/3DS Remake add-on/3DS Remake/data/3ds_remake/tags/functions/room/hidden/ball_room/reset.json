@@ -1,0 +1,21 @@
+{
+    "values": [
+        "3ds_remake:room/hidden/ball_room/reset/unload",
+        "#3ds_remake:room/hidden/ball_room/turn_lights/off",
+        "3ds_remake:room/hidden/ball_room/reset/chair_1",
+        "3ds_remake:room/hidden/ball_room/reset/chair_2",
+        "3ds_remake:room/hidden/ball_room/reset/chair_3",
+        "3ds_remake:room/hidden/ball_room/reset/chair_4",
+        "3ds_remake:room/hidden/ball_room/reset/chair_5",
+        "3ds_remake:room/hidden/ball_room/reset/chair_6",
+        "3ds_remake:room/hidden/ball_room/reset/chair_7",
+        "3ds_remake:room/hidden/ball_room/reset/chair_8",
+        "3ds_remake:room/hidden/ball_room/reset/lamp_1",
+        "3ds_remake:room/hidden/ball_room/reset/lamp_2",
+        "3ds_remake:room/hidden/ball_room/reset/painting_1",
+        "3ds_remake:room/hidden/ball_room/reset/painting_2",
+        "3ds_remake:room/hidden/ball_room/reset/painting_3",
+        "3ds_remake:room/hidden/ball_room/reset/painting_4",
+        "3ds_remake:room/hidden/ball_room/reset/room_clear_chest"
+    ]
+}

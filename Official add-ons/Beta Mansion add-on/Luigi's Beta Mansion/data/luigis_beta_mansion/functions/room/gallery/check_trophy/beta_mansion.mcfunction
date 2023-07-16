@@ -1,1 +1,0 @@
-tellraw @p[tag=!spectator] {"translate":"luigis_beta_mansion:message.gallery.trophy.beta_mansion","color":"green","clickEvent":{"action":"run_command","value":"/trigger FrameChoice set 6"}}

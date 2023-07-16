@@ -1,1 +1,0 @@
-execute if data storage luigis_mansion_3ds_remake:data {spoke_with_future_e_gadd:1b} unless entity @a[tag=gooigi,limit=1] positioned 784 77 12 rotated -60 0 run function luigis_mansion_3ds_remake:spawn_entities/gooigi/lab

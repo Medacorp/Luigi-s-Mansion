@@ -1,0 +1,21 @@
+{
+    "values": [
+        "3ds_remake:room/hidden/guest_room/reset/unload",
+        "#3ds_remake:room/hidden/guest_room/turn_lights/off",
+        "3ds_remake:room/hidden/guest_room/reset/flip",
+        "3ds_remake:room/hidden/guest_room/reset/bed",
+        "3ds_remake:room/hidden/guest_room/reset/chair",
+        "3ds_remake:room/hidden/guest_room/reset/lamp",
+        "3ds_remake:room/hidden/guest_room/reset/painting_1",
+        "3ds_remake:room/hidden/guest_room/reset/painting_2",
+        "3ds_remake:room/hidden/guest_room/reset/painting_3",
+        "3ds_remake:room/hidden/guest_room/reset/painting_4",
+        "3ds_remake:room/hidden/guest_room/reset/painting_5",
+        "3ds_remake:room/hidden/guest_room/reset/plant",
+        "3ds_remake:room/hidden/guest_room/reset/room_clear_chest",
+        "3ds_remake:room/hidden/guest_room/reset/table_1",
+        "3ds_remake:room/hidden/guest_room/reset/table_2",
+        "3ds_remake:room/hidden/guest_room/reset/table_3",
+        "3ds_remake:room/hidden/guest_room/reset/vacuumable"
+    ]
+}

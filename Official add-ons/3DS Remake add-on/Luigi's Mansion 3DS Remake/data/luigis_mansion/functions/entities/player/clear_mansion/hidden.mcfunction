@@ -1,3 +1,0 @@
-execute if score #mansion_type Selected matches 1 if score #mansion_data_index Selected matches 1 run advancement grant @a only luigis_mansion_3ds_remake:lab/cleared_hidden_mansion
-execute if score #mansion_type Selected matches 1 if score #mansion_data_index Selected matches 0 if data storage luigis_mansion:data current_state.current_data{can_clear_hidden:1b} run advancement grant @a only luigis_mansion:lab/cleared_hidden_mansion
-execute if score #mansion_type Selected matches 1 run function luigis_mansion_3ds_remake:room/gallery/clear_task/hard/task_5

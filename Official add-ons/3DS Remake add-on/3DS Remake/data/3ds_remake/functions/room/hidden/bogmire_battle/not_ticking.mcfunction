@@ -1,0 +1,1 @@
+function #3ds_remake:room/hidden/bogmire_battle/reset

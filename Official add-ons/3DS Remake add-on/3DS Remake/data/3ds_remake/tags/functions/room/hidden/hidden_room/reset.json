@@ -1,0 +1,17 @@
+{
+    "values": [
+        "3ds_remake:room/hidden/hidden_room/reset/unload",
+        "#3ds_remake:room/hidden/hidden_room/turn_lights/off",
+        "3ds_remake:room/hidden/hidden_room/reset/hole",
+        "3ds_remake:room/hidden/hidden_room/reset/lamp",
+        "3ds_remake:room/hidden/hidden_room/reset/mirror",
+        "3ds_remake:room/hidden/hidden_room/reset/painting_1",
+        "3ds_remake:room/hidden/hidden_room/reset/painting_2",
+        "3ds_remake:room/hidden/hidden_room/reset/painting_3",
+        "3ds_remake:room/hidden/hidden_room/reset/painting_4",
+        "3ds_remake:room/hidden/hidden_room/reset/painting_5",
+        "3ds_remake:room/hidden/hidden_room/reset/room_clear_chest",
+        "3ds_remake:room/hidden/hidden_room/reset/trophy_1",
+        "3ds_remake:room/hidden/hidden_room/reset/trophy_2"
+    ]
+}

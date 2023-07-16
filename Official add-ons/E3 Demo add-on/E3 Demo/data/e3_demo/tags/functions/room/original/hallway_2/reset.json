@@ -1,0 +1,7 @@
+{
+    "values": [
+        "e3_demo:room/original/hallway_2/reset/unload",
+        "#e3_demo:room/original/hallway_2/turn_lights/off",
+        "e3_demo:room/original/hallway_2/reset/lamp"
+    ]
+}

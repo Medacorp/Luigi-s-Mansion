@@ -1,0 +1,1 @@
+execute store result score #multiply_hurt Selected run data get storage 3ds_remake:data loaded_mansion.settings.multiply_hurt

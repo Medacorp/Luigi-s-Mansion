@@ -1,0 +1,10 @@
+{
+	"values": [
+	    "3ds_remake:room/hidden/nanas_room/load/set_loaded",
+        "3ds_remake:room/hidden/nanas_room/load/lights",
+        "3ds_remake:room/hidden/nanas_room/load/doors",
+        "3ds_remake:room/hidden/nanas_room/load/painting",
+        "3ds_remake:room/hidden/nanas_room/load/paintings",
+        "3ds_remake:room/hidden/nanas_room/load/room_clear_chest"
+	]
+}

@@ -1,0 +1,2 @@
+data modify storage luigis_mansion:data furniture set value {candle_flames:[{lit:1b}],shake_animation:["interact","vacuum"],sound:"luigis_mansion:generic",scan_message:'{"translate":"luigis_mansion:message.player.scan_furniture.55"}'}
+execute positioned 721 21 32 rotated -90 0 run function e3_demo:spawn_furniture/silver_candelabra

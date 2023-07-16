@@ -1,0 +1,1 @@
+execute store result storage 3ds_remake:data loaded_mansion.settings.mansion_type int 1 run scoreboard players get #mansion_type Selected

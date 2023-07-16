@@ -1,3 +1,14 @@
+3.0:
+WARNING! Updating old data to this version is NOT supported.
+* Renamed things to reduce file path length
+** "Luigi's Mansion" data pack renamed to "MEDACORP"
+** "Luigi's Mansion 3DS Remake" data pack and namespace renamed to "3DS Remake"
+** "Luigi's Beta Mansion" data pack and namespace renamed to "E3 Demo"
+* Several instances of furniture have been replaced with models
+* Added death messages
+* Added revive messages
+* Rewrote a lot
+
 2.3.7:
 * Fixed players can push other players that are interacting with doors, softlocking them
 * Fixed when the 3DS Remake is installed having the poltergust selected while the game boy horror map opens (from collecting a key) softlocks the player in the map area

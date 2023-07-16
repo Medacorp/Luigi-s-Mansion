@@ -1,0 +1,18 @@
+{
+    "values": [
+        "3ds_remake:room/hidden/rec_room/reset/unload",
+        "#3ds_remake:room/hidden/rec_room/turn_lights/off",
+        "3ds_remake:room/hidden/rec_room/reset/bike_1",
+        "3ds_remake:room/hidden/rec_room/reset/bike_2",
+        "3ds_remake:room/hidden/rec_room/reset/lamp_1",
+        "3ds_remake:room/hidden/rec_room/reset/lamp_2",
+        "3ds_remake:room/hidden/rec_room/reset/room_clear_chest",
+        "3ds_remake:room/hidden/rec_room/reset/swords_1",
+        "3ds_remake:room/hidden/rec_room/reset/swords_2",
+        "3ds_remake:room/hidden/rec_room/reset/swords_3",
+        "3ds_remake:room/hidden/rec_room/reset/swords_4",
+        "3ds_remake:room/hidden/rec_room/reset/table",
+        "3ds_remake:room/hidden/rec_room/reset/threadmill",
+        "3ds_remake:room/hidden/rec_room/reset/weights"
+    ]
+}

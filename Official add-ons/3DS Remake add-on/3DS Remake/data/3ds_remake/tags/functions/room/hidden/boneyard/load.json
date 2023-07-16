@@ -1,0 +1,10 @@
+{
+	"values": [
+	    "3ds_remake:room/hidden/boneyard/load/set_loaded",
+        "3ds_remake:room/hidden/boneyard/load/lights",
+        "3ds_remake:room/hidden/boneyard/load/doors",
+        "3ds_remake:room/hidden/boneyard/load/lamp",
+        "3ds_remake:room/hidden/boneyard/load/plant",
+        "3ds_remake:room/hidden/boneyard/load/water"
+	]
+}

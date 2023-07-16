@@ -1,0 +1,1 @@
+execute store result score #mirrored Selected run data get storage 3ds_remake:data loaded_mansion.settings.mirrored

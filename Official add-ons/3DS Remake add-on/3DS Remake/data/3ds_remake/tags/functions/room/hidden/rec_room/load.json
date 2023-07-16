@@ -1,0 +1,12 @@
+{
+	"values": [
+	    "3ds_remake:room/hidden/rec_room/load/set_loaded",
+        "3ds_remake:room/hidden/rec_room/load/lights",
+        "3ds_remake:room/hidden/rec_room/load/doors",
+        "3ds_remake:room/hidden/rec_room/load/punching_bag_1",
+        "3ds_remake:room/hidden/rec_room/load/punching_bag_2",
+        "3ds_remake:room/hidden/rec_room/load/punching_bag_3",
+        "3ds_remake:room/hidden/rec_room/load/room_clear_chest",
+        "3ds_remake:room/hidden/rec_room/load/weights"
+	]
+}

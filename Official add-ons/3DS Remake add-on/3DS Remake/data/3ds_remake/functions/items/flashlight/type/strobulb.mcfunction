@@ -1,0 +1,1 @@
+execute if entity @s[scores={FlashlightType=3}] run function 3ds_remake:items/flashlight/strobulb

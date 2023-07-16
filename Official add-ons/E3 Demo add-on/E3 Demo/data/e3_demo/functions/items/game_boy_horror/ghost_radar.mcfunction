@@ -1,0 +1,1 @@
+execute if score #radar_type Selected matches 1 run function e3_demo:items/game_boy_horror/update_ghost_radar

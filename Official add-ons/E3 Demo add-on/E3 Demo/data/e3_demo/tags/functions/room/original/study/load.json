@@ -1,0 +1,10 @@
+{
+	"values": [
+	    "e3_demo:room/original/study/load/set_loaded",
+        "e3_demo:room/original/study/load/lights",
+        "e3_demo:room/original/study/load/doors",
+        "e3_demo:room/original/study/load/fire",
+        "e3_demo:room/original/study/load/rocking_chair",
+        "e3_demo:room/original/study/load/room_clear_chest"
+	]
+}

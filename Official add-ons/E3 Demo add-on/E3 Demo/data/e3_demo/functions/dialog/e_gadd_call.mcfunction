@@ -1,0 +1,22 @@
+scoreboard players add @s Dialog 1
+tag @e[tag=ghost,tag=!hidden,tag=!normal_death,tag=!element_death,scores={Room=1..}] add vanish
+tag @e[tag=ghost,scores={Room=1..}] add only_forced_spawn
+scoreboard players set @a[scores={Room=0..}] ForceScreen 1
+execute if entity @s[scores={Dialog=1}] if score #players Totals matches 1 run tellraw @a[scores={Room=0..}] {"translate":"chat.type.text","with":[{"translate":"luigis_mansion:entity.e_gadd","color":"green"},{"translate":"e3_demo:dialog.e_gadd_call.1","with":[{"selector":"@p[gamemode=!spectator]"}]}]}
+execute if entity @s[scores={Dialog=1}] if score #players Totals matches 2.. run tellraw @a[scores={Room=0..}] {"translate":"chat.type.text","with":[{"translate":"luigis_mansion:entity.e_gadd","color":"green"},{"translate":"e3_demo:dialog.e_gadd_call.1.more"}]}
+execute if entity @s[scores={Dialog=56}] if score #players Totals matches 1 run tellraw @a[scores={Room=0..}] {"translate":"chat.type.text","with":[{"translate":"luigis_mansion:entity.e_gadd","color":"green"},{"translate":"e3_demo:dialog.e_gadd_call.2"}]}
+execute if entity @s[scores={Dialog=56}] if score #players Totals matches 2.. run tellraw @a[scores={Room=0..}] {"translate":"chat.type.text","with":[{"translate":"luigis_mansion:entity.e_gadd","color":"green"},{"translate":"e3_demo:dialog.e_gadd_call.2.more"}]}
+execute if entity @s[scores={Dialog=136}] if score #players Totals matches 1 run tellraw @a[scores={Room=0..}] {"translate":"chat.type.text","with":[{"translate":"luigis_mansion:entity.e_gadd","color":"green"},{"translate":"e3_demo:dialog.e_gadd_call.3","with":[{"selector":"@p[gamemode=!spectator]"}]}]}
+execute if entity @s[scores={Dialog=136}] if score #players Totals matches 2.. run tellraw @a[scores={Room=0..}] {"translate":"chat.type.text","with":[{"translate":"luigis_mansion:entity.e_gadd","color":"green"},{"translate":"e3_demo:dialog.e_gadd_call.3.more"}]}
+execute if entity @s[scores={Dialog=176}] run tellraw @a[scores={Room=0..}] {"translate":"chat.type.text","with":[{"translate":"luigis_mansion:entity.e_gadd","color":"green"},{"translate":"e3_demo:dialog.e_gadd_call.4"}]}
+execute if entity @s[scores={Dialog=216}] unless entity @a[tag=portrait_battle,limit=1] unless score #loaded_exterior Selected matches -1 in minecraft:overworld run function luigis_mansion:room/load_exterior/empty
+execute if entity @s[scores={Dialog=216}] unless entity @a[tag=portrait_battle,limit=1] as @a run function luigis_mansion:room/ghost_portrificationizer_room/warp_to
+execute if entity @s[scores={Dialog=218}] unless entity @a[tag=portrait_battle,limit=1] if data storage luigis_mansion:data current_state.current_data.portrait_ghosts.neville{portrificationized:0b,health:0} run tag @e[tag=e_gadd,scores={Room=-3},limit=1] add portrificationize_dialog
+execute if entity @s[scores={Dialog=218}] unless entity @a[tag=portrait_battle,limit=1] if data storage luigis_mansion:data current_state.current_data.portrait_ghosts.lydia{portrificationized:0b,health:0} run tag @e[tag=e_gadd,scores={Room=-3},limit=1] add portrificationize_dialog
+execute if entity @s[scores={Dialog=218}] unless entity @a[tag=portrait_battle,limit=1] if data storage luigis_mansion:data current_state.current_data.portrait_ghosts.miss_petunia{portrificationized:0b,health:0} run tag @e[tag=e_gadd,scores={Room=-3},limit=1] add portrificationize_dialog
+execute if entity @s[scores={Dialog=218}] unless entity @a[tag=portrait_battle,limit=1] if data storage luigis_mansion:data current_state.current_data.portrait_ghosts.spooky{portrificationized:0b,health:0} run tag @e[tag=e_gadd,scores={Room=-3},limit=1] add portrificationize_dialog
+execute if entity @s[scores={Dialog=218}] unless entity @a[tag=portrait_battle,limit=1] run tag @e[tag=e_gadd,scores={Room=-3},limit=1,tag=!portrificationize_dialog] add just_money_dialog
+execute if entity @s[scores={Dialog=218}] run tag @a[tag=portrait_battle,limit=1] remove catching_the_portrait_ghost
+execute if entity @s[scores={Dialog=218}] run gamemode spectator @a[tag=portrait_battle,limit=1]
+tag @s[scores={Dialog=218}] remove e_gadd_call
+scoreboard players set @s[scores={Dialog=218}] Dialog 0

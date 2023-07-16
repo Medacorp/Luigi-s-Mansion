@@ -1,0 +1,6 @@
+execute if score #astral_hall Wave matches 4 unless entity @e[tag=ghost,scores={Room=45},tag=!optional_ghost] run function 3ds_remake:room/hidden/astral_hall/clear
+execute if score #astral_hall Wave matches 3 unless entity @e[tag=ghost,scores={Room=45},tag=!optional_ghost] run function 3ds_remake:room/hidden/astral_hall/wave_4
+execute if score #astral_hall Wave matches 2 unless entity @e[tag=ghost,scores={Room=45},tag=!optional_ghost] run function 3ds_remake:room/hidden/astral_hall/wave_3
+execute unless score #astral_hall Wave matches 2.. unless data storage luigis_mansion:data current_state.current_data.rooms.astral_hall{cleared:1b} unless entity @e[scores={Room=45},tag=light_me,tag=!lit] unless entity @a[tag=astral_hall_ambush,limit=1] run tag @a[x=666.5,y=20.5,z=-81.5,distance=..1,gamemode=!spectator,limit=1] add astral_hall_ambush
+execute unless score #astral_hall Wave matches 1..99 unless entity @e[tag=ghost,scores={Room=45},tag=!optional_ghost] run function 3ds_remake:room/hidden/astral_hall/wave_1
+execute if data storage luigis_mansion:data current_state.current_data{blackout:1b} unless score #astral_hall Wave matches 1.. run function 3ds_remake:room/hidden/astral_hall/blackout

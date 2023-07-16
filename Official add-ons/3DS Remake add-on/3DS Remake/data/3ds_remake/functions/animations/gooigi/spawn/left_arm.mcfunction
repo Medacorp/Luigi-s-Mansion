@@ -1,0 +1,1 @@
+function 3ds_remake:animations/gooigi/left_arm

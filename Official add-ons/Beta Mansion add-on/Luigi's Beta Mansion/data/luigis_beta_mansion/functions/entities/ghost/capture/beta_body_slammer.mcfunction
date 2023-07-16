@@ -1,1 +1,0 @@
-execute if entity @s[tag=beta_body_slammer] run function luigis_beta_mansion:entities/ghost/capture/caught/beta_body_slammer

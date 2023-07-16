@@ -1,0 +1,1 @@
+execute positioned 496 37 -26 run function 3ds_remake:room/hidden/king_boo_battle/remove_pillar

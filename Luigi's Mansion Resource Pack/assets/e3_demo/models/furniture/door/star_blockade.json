@@ -1,0 +1,6 @@
+{
+	"parent": "e3_demo:furniture/door/star",
+	"textures": {
+		"overlay": "luigis_mansion:furniture/door/blockade"
+	}
+}

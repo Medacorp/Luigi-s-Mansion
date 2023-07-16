@@ -507,7 +507,7 @@
                 "damage": 0.0125,
                 "custom_model_data": 26
             },
-            "model": "luigis_beta_mansion:entity/ghost/body"
+            "model": "e3_demo:entity/ghost/body"
         },
         {
             "predicate": {
@@ -515,7 +515,7 @@
                 "damage": 0.025,
                 "custom_model_data": 26
             },
-            "model": "luigis_beta_mansion:entity/ghost/right_arm"
+            "model": "e3_demo:entity/ghost/right_arm"
         },
         {
             "predicate": {
@@ -523,7 +523,7 @@
                 "damage": 0.0375,
                 "custom_model_data": 26
             },
-            "model": "luigis_beta_mansion:entity/ghost/left_arm"
+            "model": "e3_demo:entity/ghost/left_arm"
         },
         {
             "predicate": {
@@ -531,7 +531,7 @@
                 "damage": 0.0125,
                 "custom_model_data": 27
             },
-            "model": "luigis_beta_mansion:entity/puncher/body"
+            "model": "e3_demo:entity/puncher/body"
         },
         {
             "predicate": {
@@ -539,7 +539,7 @@
                 "damage": 0.025,
                 "custom_model_data": 27
             },
-            "model": "luigis_beta_mansion:entity/puncher/right_arm"
+            "model": "e3_demo:entity/puncher/right_arm"
         },
         {
             "predicate": {
@@ -547,7 +547,7 @@
                 "damage": 0.0375,
                 "custom_model_data": 27
             },
-            "model": "luigis_beta_mansion:entity/puncher/left_arm"
+            "model": "e3_demo:entity/puncher/left_arm"
         },
         {
             "predicate": {
@@ -555,7 +555,7 @@
                 "damage": 0.0125,
                 "custom_model_data": 28
             },
-            "model": "luigis_beta_mansion:entity/body_slammer/body"
+            "model": "e3_demo:entity/body_slammer/body"
         },
         {
             "predicate": {
@@ -563,7 +563,7 @@
                 "damage": 0.025,
                 "custom_model_data": 28
             },
-            "model": "luigis_beta_mansion:entity/body_slammer/right_arm"
+            "model": "e3_demo:entity/body_slammer/right_arm"
         },
         {
             "predicate": {
@@ -571,7 +571,7 @@
                 "damage": 0.0375,
                 "custom_model_data": 28
             },
-            "model": "luigis_beta_mansion:entity/body_slammer/left_arm"
+            "model": "e3_demo:entity/body_slammer/left_arm"
         },
         {
             "predicate": {

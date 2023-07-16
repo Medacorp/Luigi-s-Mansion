@@ -1,0 +1,1 @@
+execute if entity @s[tag=gooigi] run function 3ds_remake:entities/gooigi/tick

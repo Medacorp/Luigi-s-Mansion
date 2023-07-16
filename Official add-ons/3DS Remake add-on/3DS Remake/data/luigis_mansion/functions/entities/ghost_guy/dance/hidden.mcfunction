@@ -1,0 +1,4 @@
+execute if score #mansion_type Selected matches 1 if score #mansion_data_index Selected matches 1 if entity @s[scores={Room=17},tag=leader] run function 3ds_remake:entities/ghost_guy/dance/ball_room/hidden
+execute if score #mansion_type Selected matches 1 if score #mansion_data_index Selected matches 0 if entity @s[scores={Room=17},tag=leader] run function luigis_mansion:entities/ghost_guy/dance/ball_room/hidden
+execute if score #mansion_type Selected matches 1 if score #mansion_data_index Selected matches 1 if entity @s[scores={Room=63},tag=leader] run function 3ds_remake:entities/ghost_guy/dance/roof/hidden
+execute if score #mansion_type Selected matches 1 if score #mansion_data_index Selected matches 0 if entity @s[scores={Room=63},tag=leader] run function luigis_mansion:entities/ghost_guy/dance/roof/hidden

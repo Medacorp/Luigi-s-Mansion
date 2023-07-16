@@ -1,0 +1,7 @@
+{
+	"values": [
+	    "3ds_remake:room/hidden/anteroom/load/set_loaded",
+        "3ds_remake:room/hidden/anteroom/load/lights",
+        "3ds_remake:room/hidden/anteroom/load/doors"
+	]
+}

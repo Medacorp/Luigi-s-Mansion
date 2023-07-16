@@ -1,0 +1,1 @@
+execute unless entity @s[tag=beta_boo] run function e3_demo:entities/ghost/capture/caught/beta_boo
