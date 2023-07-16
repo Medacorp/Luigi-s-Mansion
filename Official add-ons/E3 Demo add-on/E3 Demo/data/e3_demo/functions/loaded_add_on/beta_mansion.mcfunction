@@ -1,2 +1,2 @@
-scoreboard players operation #beta_mansion Loaded > * Loaded
-scoreboard players add #beta_mansion Loaded 1
+scoreboard players operation #e3_demo Loaded > * Loaded
+scoreboard players add #e3_demo Loaded 1

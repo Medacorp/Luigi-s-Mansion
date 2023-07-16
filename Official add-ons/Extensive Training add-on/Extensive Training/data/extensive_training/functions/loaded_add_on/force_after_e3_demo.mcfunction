@@ -1,0 +1,3 @@
+# Needed because of the koopa amiibo, it disabled dragging damage for poltergust 500 too
+execute if score #e3_demo Loaded matches 1.. unless score #extensive_training Loaded > #e3_demo Loaded run datapack disable "file/Extensive Training"
+execute if score #e3_demo Loaded matches 1.. unless score #extensive_training Loaded > #e3_demo Loaded run datapack enable "file/Extensive Training" after "file/E3 Demo"
