@@ -30,7 +30,7 @@
     "e3_demo:dialog.meet_e_gadd.5": "Huh? You own this mansion? You say your name is %s? Well, I've never heard of you...",
     "e3_demo:dialog.meet_e_gadd.5.more": "Huh? You own this mansion? Those are your names? Well, I've never heard of you...",
     "e3_demo:dialog.meet_e_gadd.6": "...Who? Me? I'm professor Elvin Gadd, the ghost researcher.",
-    "e3_demo:dialog.meet_e_gadd.7": "I thought this was a secret house, so I've been living here for some time, I do apologise!",
+    "e3_demo:dialog.meet_e_gadd.7": "I thought this was a secret house, so I've been living here for some time, I do apologize!",
     "e3_demo:dialog.meet_e_gadd.8": "This is a famous haunted house, so it's perfect for my research. Please excuse me.",
     "e3_demo:dialog.meet_e_gadd.9": "Booooooooo!!!",
     "e3_demo:dialog.portrificationize.1": "You've done well in the original mansion, %s my boy!",
@@ -56,6 +56,7 @@
     "e3_demo:entity.ghost": "Ghost",
     "e3_demo:entity.mouse": "Mouse",
     "e3_demo:entity.puncher": "Puncher",
+    "e3_demo:furniture.silver_candelabra": "Silver Candelabra",
     "e3_demo:furniture.simple_triple_candelabra": "Simple Triple Candelabra",
     "e3_demo:furniture.vase": "Vase",
     "e3_demo:item.ghost_coin": "Ghost Coin",
@@ -72,9 +73,9 @@
     "e3_demo:message.gallery.portrait_battle.mansion.original": "Battle in original mansion.",
     "e3_demo:message.gallery.trophy.all_done": "All done?",
     "e3_demo:message.gallery.trophy.all_done.description": "Clear all clearable rooms in the original mansion before E. Gadd calls.",
-    "e3_demo:message.gallery.trophy.e3_demo": "E3 Demo.",
     "e3_demo:message.gallery.trophy.cant_touch_this": "Can't Touch This!",
     "e3_demo:message.gallery.trophy.cant_touch_this.description": "Get no damage in the original mansion until E. Gadd calls.",
+    "e3_demo:message.gallery.trophy.e3_demo": "E3 Demo.",
     "e3_demo:message.gallery.trophy.ghost_cash": "Ghost Cash!",
     "e3_demo:message.gallery.trophy.ghost_cash.description": "Get a total of 1.500 ghost coins.",
     "e3_demo:message.gallery.trophy.hone_skills": "Hone Skills!",
@@ -127,7 +128,7 @@
     "e3_demo:subtitles.entity.puncher.laugh": "Puncher laughs",
     "e3_demo:subtitles.entity.puncher.spawn": "Puncher spawns",
     "e3_demo:subtitles.item.ghost_coin.bounce": "Ghost Coin bounces",
-    "e3_demo:subtitles.item.ghost_coin.obtain": "Ghost Coin obtained",
+    "e3_demo:subtitles.item.ghost_coin.obtain": "Player obtains Ghost Coin",
     "e3_demo:subtitles.item.poltergust_500.catch": "Poltergust 500 swallows",
     "e3_demo:subtitles.item.poltergust_500.clogged": "Poltergust 500 gets clogged",
     "e3_demo:subtitles.item.poltergust_500.damage": "Poltergust 500 drains energy",
@@ -136,5 +137,5 @@
     "e3_demo:subtitles.item.poltergust_500.hit": "Poltergust 500 bonks",
     "e3_demo:subtitles.item.poltergust_500.reel_in": "Poltergust 500 reels in",
     "e3_demo:subtitles.item.poltergust_500.vacuuming": "Poltergust 500 vacuums",
-    "e3_demo:subtitles.item.poltergust_500.vaporize": "Poltergust 500 vaporises"
+    "e3_demo:subtitles.item.poltergust_500.vaporize": "Poltergust 500 vaporizes ghost"
 }
