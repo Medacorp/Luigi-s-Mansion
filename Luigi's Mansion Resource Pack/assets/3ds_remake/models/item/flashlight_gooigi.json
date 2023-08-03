@@ -1,6 +1,6 @@
 {
 	"parent": "luigis_mansion:item/flashlight",
 	"textures": {
-		"flashlight": "luigis_mansion_3ds_remake:item/flashlight_gooigi"
+		"flashlight": "3ds_remake:item/flashlight_gooigi"
 	}
 }

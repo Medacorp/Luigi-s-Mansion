@@ -43,7 +43,7 @@ beta   | Gold Ghost, Temper Terror, Speedy Spirit, Purple Puncher, Flash, Blue T
 Attack type:
 ```
 Type          | Ghosts
-none          | Gold Ghost, Temper Terror, Ceiling Surprise(default), Purple Bomber
+none          | Gold Ghost, Temper Terror, Ceiling Surprise(default), Purple Bomber, Beta Ghost, Beta Basher
 punch         | Gold Ghost(default), Temper Terror(default), Blue Twirler, Blue Blaze, Beta Ghost(default), Beta Basher, Beta Body Slammer
 uppercut      | Purple Puncher(default), Flash(default), Beta Puncher(default)
 basher        | Gold Ghost, Temper Terror, Speedy Spirit, Purple Puncher, Flash, Blue Twirler, Blue Blaze, Grabbing Ghost, Red Grabbing Ghost, Mirror Ghost, Cinema Ghost, Beta Ghost, Beta Basher(default), Beta Puncher, Beta Body Slammer

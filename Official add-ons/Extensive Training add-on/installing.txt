@@ -2,9 +2,6 @@
 This is an official add-on, it is made by the map creator and will be updated alongside the map.
 Any compatibility issues with this add-on should be reported to the conflicting add-on.
 
-Issues with this add-on itself should be reported on the github here: https://github.com/Medacorp/Extensive-Training/issues
-Please do look if it's already reported.
-
 The 11 ghosts by yourself in the training room advancement is not granted for this add-on's training room programs. Select vanilla to try to get that instead.
 The capturing of ghosts in the training room tasks from the 3DS Remake add-on will not be granted for this add-on's training room programs. Select 3DS Remake to try to get that instead.
 

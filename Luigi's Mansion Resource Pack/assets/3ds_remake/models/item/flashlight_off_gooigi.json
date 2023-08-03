@@ -1,7 +1,7 @@
 {
 	"parent": "luigis_mansion:item/flashlight",
 	"textures": {
-		"particle": "luigis_mansion_3ds_remake:item/flashlight_off_gooigi",
-		"flashlight": "luigis_mansion_3ds_remake:item/flashlight_off_gooigi"
+		"particle": "3ds_remake:item/flashlight_off_gooigi",
+		"flashlight": "3ds_remake:item/flashlight_off_gooigi"
 	}
 }

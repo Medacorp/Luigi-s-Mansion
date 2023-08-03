@@ -22,4 +22,4 @@ execute in minecraft:overworld run fill 27 0 0 26 0 0 minecraft:bedrock
 data modify storage luigis_mansion:data current_state.current_data.money_grabbed set from storage luigis_mansion:data current_state.new_money_grabbed
 data remove storage luigis_mansion:data current_state.new_money_grabbed
 
-execute unless entity @a[tag=collector,limit=1] if score #debug_messages Selected matches 1 run tellraw @a {"translate":"luigis_mansion:message.debug.format","with":[{"translate":"luigis_mansion:message.debug","color":"gold"},{"translate":"luigis_mansion:message.debug.empty_uuid.cash","color":"red"}]}
+execute unless entity @a[tag=collector,limit=1] if score #debug_messages Selected matches 1.. run tellraw @a {"translate":"luigis_mansion:message.debug.format","with":[{"translate":"luigis_mansion:message.debug","color":"gold"},{"translate":"luigis_mansion:message.debug.empty_uuid.cash","color":"red"}]}

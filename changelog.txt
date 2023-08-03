@@ -1,5 +1,5 @@
 3.0:
-WARNING! Updating old data to this version is NOT supported.
+WARNING! When updating an old save version, be sure to delete the entire contents of the save's "datapacks" folder before drag-and-drop updating, if you don't, the map will malfunction
 * Renamed things to reduce file path length
 ** "Luigi's Mansion" data pack renamed to "MEDACORP"
 ** "Luigi's Mansion 3DS Remake" data pack and namespace renamed to "3DS Remake"

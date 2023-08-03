@@ -1,6 +1,6 @@
 {
-	"parent": "luigis_mansion_3ds_remake:entity/painting/gold",
+	"parent": "3ds_remake:entity/painting/gold",
 	"textures": {
-		"image": "luigis_mansion_3ds_remake:block/painting/gold/madame_clairvoya"
+		"image": "3ds_remake:block/painting/gold/madame_clairvoya"
 	}
 }

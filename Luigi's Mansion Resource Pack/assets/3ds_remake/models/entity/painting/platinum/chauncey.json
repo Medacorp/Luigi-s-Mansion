@@ -1,6 +1,6 @@
 {
-	"parent": "luigis_mansion_3ds_remake:entity/painting/platinum_boss",
+	"parent": "3ds_remake:entity/painting/platinum_boss",
 	"textures": {
-		"image": "luigis_mansion_3ds_remake:block/painting/platinum/chauncey"
+		"image": "3ds_remake:block/painting/platinum/chauncey"
 	}
 }

@@ -1,5 +1,5 @@
 {
-	"parent": "luigis_mansion_3ds_remake:entity/painting/mansion_rank",
+	"parent": "3ds_remake:entity/painting/mansion_rank",
 	"textures": {
 		"image": "luigis_mansion:block/empty",
 		"image_back": "luigis_mansion:block/empty"

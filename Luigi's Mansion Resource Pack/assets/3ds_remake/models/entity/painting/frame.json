@@ -1,9 +1,9 @@
 {
 	"credit": "Made with Blockbench",
 	"textures": {
-		"frame": "luigis_mansion_3ds_remake:block/painting/empty_frame",
-		"image": "luigis_mansion_3ds_remake:block/painting/empty",
-		"image_back": "luigis_mansion_3ds_remake:block/painting/empty",
+		"frame": "3ds_remake:block/painting/empty_frame",
+		"image": "3ds_remake:block/painting/empty",
+		"image_back": "3ds_remake:block/painting/empty",
 		"particle": "#image"
 	},
 	"elements": [

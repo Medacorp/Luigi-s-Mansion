@@ -1,6 +1,6 @@
 {
 	"parent": "luigis_mansion:entity/twirler/body",
 	"textures": {
-		"0": "luigis_mansion_3ds_remake:entity/trophy/gold/twirler"
+		"0": "3ds_remake:entity/trophy/gold/twirler"
 	}
 }

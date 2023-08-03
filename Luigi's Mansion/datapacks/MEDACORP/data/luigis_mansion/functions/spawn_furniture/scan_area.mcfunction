@@ -3,17 +3,17 @@ teleport @e[tag=this_entity,limit=1] ~ ~-1.4 ~ ~ 0
 function luigis_mansion:spawn_furniture/setup/scan_message
 function luigis_mansion:spawn_furniture/setup/tags
 function luigis_mansion:spawn_furniture/setup/position
-execute if data storage luigis_mansion:data furniture.scan_area.radius store result score @e[tag=this_entity,limit=1] FurnitureSizeRadius run data get storage luigis_mansion:data furniture.scan_area.radius
-execute if data storage luigis_mansion:data furniture.scan_area.box store result score @e[tag=this_entity,limit=1] FurnitureSizeWidth run data get storage luigis_mansion:data furniture.scan_area.box.width
-execute if data storage luigis_mansion:data furniture.scan_area.box store result score @e[tag=this_entity,limit=1] FurnitureSizeHeight run data get storage luigis_mansion:data furniture.scan_area.box.height
-execute if data storage luigis_mansion:data furniture.scan_area.rotated_box store result score @e[tag=this_entity,limit=1] FurnitureSizeLeft run data get storage luigis_mansion:data furniture.scan_area.rotated_box.left
-execute if data storage luigis_mansion:data furniture.scan_area.rotated_box store result score @e[tag=this_entity,limit=1] FurnitureSizeUp run data get storage luigis_mansion:data furniture.scan_area.rotated_box.up
-execute if data storage luigis_mansion:data furniture.scan_area.rotated_box store result score @e[tag=this_entity,limit=1] FurnitureSizeForward run data get storage luigis_mansion:data furniture.scan_area.rotated_box.forward
-execute if data storage luigis_mansion:data furniture.scan_area{type:"hanging"} run tag @e[tag=this_entity,limit=1] add hanging_furniture
-execute if data storage luigis_mansion:data furniture.scan_area{type:"standing"} run tag @e[tag=this_entity,limit=1] add standing_furniture
+execute if data storage luigis_mansion:data furniture.hitbox.radius store result score @e[tag=this_entity,limit=1] FurnitureSizeRadius run data get storage luigis_mansion:data furniture.hitbox.radius
+execute if data storage luigis_mansion:data furniture.hitbox.box store result score @e[tag=this_entity,limit=1] FurnitureSizeWidth run data get storage luigis_mansion:data furniture.hitbox.box.width
+execute if data storage luigis_mansion:data furniture.hitbox.box store result score @e[tag=this_entity,limit=1] FurnitureSizeHeight run data get storage luigis_mansion:data furniture.hitbox.box.height
+execute if data storage luigis_mansion:data furniture.hitbox.rotated_box store result score @e[tag=this_entity,limit=1] FurnitureSizeLeft run data get storage luigis_mansion:data furniture.hitbox.rotated_box.left
+execute if data storage luigis_mansion:data furniture.hitbox.rotated_box store result score @e[tag=this_entity,limit=1] FurnitureSizeUp run data get storage luigis_mansion:data furniture.hitbox.rotated_box.up
+execute if data storage luigis_mansion:data furniture.hitbox.rotated_box store result score @e[tag=this_entity,limit=1] FurnitureSizeForward run data get storage luigis_mansion:data furniture.hitbox.rotated_box.forward
+execute if data storage luigis_mansion:data furniture.hitbox{type:"hanging"} run tag @e[tag=this_entity,limit=1] add hanging_furniture
+execute if data storage luigis_mansion:data furniture.hitbox{type:"standing"} run tag @e[tag=this_entity,limit=1] add standing_furniture
 # type hanging -> align the top of the area with the provided coordinate, type standing -> same but bottom, other/none provided -> area is centered in height
-execute unless data storage luigis_mansion:data furniture.scan_area.radius unless data storage luigis_mansion:data furniture.scan_area.box unless data storage luigis_mansion:data furniture.scan_area.rotated_box run tag @e[tag=this_entity,limit=1] add remove_from_existence
-execute unless data storage luigis_mansion:data furniture.scan_area.radius unless data storage luigis_mansion:data furniture.scan_area.box unless data storage luigis_mansion:data furniture.scan_area.rotated_box if score #debug_messages Selected matches 1 run tellraw @a {"translate":"luigis_mansion:message.debug.format","with":[{"translate":"luigis_mansion:message.debug","color":"gold"},{"translate":"luigis_mansion:message.debug.scan_area","color":"red"}]}
-execute if entity @e[tag=this_entity,tag=!remove_from_existence,limit=1] if score #debug_messages Selected matches 1 run tellraw @a {"translate":"luigis_mansion:message.debug.format","with":[{"translate":"luigis_mansion:message.debug","color":"gold"},{"translate":"luigis_mansion:message.debug.spawned_furniture","with":[{"selector":"@e[tag=this_entity,limit=1]"}]}]}
+execute unless data storage luigis_mansion:data furniture.hitbox.radius unless data storage luigis_mansion:data furniture.hitbox.box unless data storage luigis_mansion:data furniture.hitbox.rotated_box run tag @e[tag=this_entity,limit=1] add remove_from_existence
+execute unless data storage luigis_mansion:data furniture.hitbox.radius unless data storage luigis_mansion:data furniture.hitbox.box unless data storage luigis_mansion:data furniture.hitbox.rotated_box if score #debug_messages Selected matches 1.. run tellraw @a {"translate":"luigis_mansion:message.debug.format","with":[{"translate":"luigis_mansion:message.debug","color":"gold"},{"translate":"luigis_mansion:message.debug.scan_area","color":"red"}]}
+execute if entity @e[tag=this_entity,tag=!remove_from_existence,limit=1] if score #debug_messages Selected matches 2.. run tellraw @a {"translate":"luigis_mansion:message.debug.format","with":[{"translate":"luigis_mansion:message.debug","color":"gold"},{"translate":"luigis_mansion:message.debug.spawned_furniture","with":[{"selector":"@e[tag=this_entity,limit=1]"}]}]}
 tag @e[tag=this_entity,limit=1] remove this_entity
 data remove storage luigis_mansion:data furniture

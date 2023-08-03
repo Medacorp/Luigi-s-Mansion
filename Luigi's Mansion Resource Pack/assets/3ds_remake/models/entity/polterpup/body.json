@@ -1,7 +1,7 @@
 {
 	"credit": "Made with Blockbench",
 	"textures": {
-		"#0": "luigis_mansion_3ds_remake:entity/polterpup"
+		"#0": "3ds_remake:entity/polterpup"
 	},
 	"elements": [
 		{

@@ -1,6 +1,6 @@
 {
-	"parent": "luigis_mansion_3ds_remake:entity/painting/silver_king_boo",
+	"parent": "3ds_remake:entity/painting/silver_king_boo",
 	"textures": {
-		"image": "luigis_mansion_3ds_remake:block/painting/silver/king_boo"
+		"image": "3ds_remake:block/painting/silver/king_boo"
 	}
 }

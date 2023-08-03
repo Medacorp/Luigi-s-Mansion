@@ -1,9 +1,9 @@
 {
 	"credit": "Made with Blockbench",
 	"textures": {
-		"0": "luigis_mansion_3ds_remake:entity/game_boy_horror_part/icon",
+		"0": "3ds_remake:entity/game_boy_horror_part/icon",
 		"1": "luigis_mansion:item/game_boy_horror/logo",
-		"2": "luigis_mansion_3ds_remake:entity/game_boy_horror_part/card",
+		"2": "3ds_remake:entity/game_boy_horror_part/card",
 		"particle": "#2"
 	},
 	"elements": [

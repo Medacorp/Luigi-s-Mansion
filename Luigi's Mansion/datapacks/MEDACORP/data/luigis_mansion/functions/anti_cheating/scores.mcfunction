@@ -274,7 +274,7 @@ execute unless score #multiply_hurt Selected matches 0.. run scoreboard players 
 execute unless score #multiply_damage Selected matches 0.. run scoreboard players set #multiply_damage Selected 100
 execute unless score #changing_max_health Selected matches 0..1 run scoreboard players set #changing_max_health Selected 0
 execute unless score #radar_type Selected matches 0.. run scoreboard players set #radar_type Selected 0
-execute unless score #heart_money_count Selected matches 0.. run scoreboard players set #ghost_money_count Selected 200
+execute unless score #heart_money_count Selected matches 0.. run scoreboard players set #heart_money_count Selected 200
 execute unless score #gbh_clock Selected matches -2147483648.. run scoreboard players set #gbh_clock Selected 0
 execute unless score #gbh_clock_increase Selected matches -2147483648.. run scoreboard players set #gbh_clock_increase Selected 0
 execute if score #gbh_clock_increase Selected matches 0 run scoreboard players set #gbh_clock Selected 0
@@ -283,15 +283,16 @@ execute unless score #extra_gallery Selected matches 0..1 run scoreboard players
 execute unless score #training_choice Selected matches 0..1 run scoreboard players set #training_choice Selected 0
 execute unless score #freeze_timer Selected matches 0..1 run scoreboard players set #freeze_timer Selected 0
 
-execute unless score #debug_messages Selected matches 0..1 run scoreboard players set #debug_messages Selected 0
+execute unless score #debug_messages Selected matches 0..2 run scoreboard players set #debug_messages Selected 0
 execute unless score #debug_furniture Selected matches 0..1 run scoreboard players set #debug_furniture Selected 0
 execute unless score #debug_entities Selected matches 0..1 run scoreboard players set #debug_entities Selected 0
-execute if score #debug_messages Selected matches 1 if score #debug_messages LastSelected matches 0 run tellraw @a {"translate":"luigis_mansion:message.debug.format","with":[{"translate":"luigis_mansion:message.debug","color":"gold"},{"translate":"luigis_mansion:message.debug.debugger.turned_on.messages"}]}
-execute if score #debug_messages Selected matches 0 if score #debug_messages LastSelected matches 1.. run tellraw @a {"translate":"luigis_mansion:message.debug.format","with":[{"translate":"luigis_mansion:message.debug","color":"gold"},{"translate":"luigis_mansion:message.debug.debugger.turned_off.messages"}]}
-execute if score #debug_furniture Selected matches 1 if score #debug_furniture LastSelected matches 0 run tellraw @a {"translate":"luigis_mansion:message.debug.format","with":[{"translate":"luigis_mansion:message.debug","color":"gold"},{"translate":"luigis_mansion:message.debug.debugger.turned_on.furniture"}]}
-execute if score #debug_furniture Selected matches 0 if score #debug_furniture LastSelected matches 1.. run tellraw @a {"translate":"luigis_mansion:message.debug.format","with":[{"translate":"luigis_mansion:message.debug","color":"gold"},{"translate":"luigis_mansion:message.debug.debugger.turned_off.furniture"}]}
-execute if score #debug_entities Selected matches 1 if score #debug_entities LastSelected matches 0 run tellraw @a {"translate":"luigis_mansion:message.debug.format","with":[{"translate":"luigis_mansion:message.debug","color":"gold"},{"translate":"luigis_mansion:message.debug.debugger.turned_on.entities"}]}
-execute if score #debug_entities Selected matches 0 if score #debug_entities LastSelected matches 1.. run tellraw @a {"translate":"luigis_mansion:message.debug.format","with":[{"translate":"luigis_mansion:message.debug","color":"gold"},{"translate":"luigis_mansion:message.debug.debugger.turned_off.entities"}]}
+execute if score #debug_messages Selected matches 0 unless score #debug_messages LastSelected matches 0 run tellraw @a {"translate":"luigis_mansion:message.debug.format","with":[{"translate":"luigis_mansion:message.debug","color":"gold"},{"translate":"luigis_mansion:message.debug.debugger.turned_off.messages"}]}
+execute if score #debug_messages Selected matches 1 unless score #debug_messages LastSelected matches 1 run tellraw @a {"translate":"luigis_mansion:message.debug.format","with":[{"translate":"luigis_mansion:message.debug","color":"gold"},{"translate":"luigis_mansion:message.debug.debugger.turned_on.messages.errors"}]}
+execute if score #debug_messages Selected matches 2 unless score #debug_messages LastSelected matches 2 run tellraw @a {"translate":"luigis_mansion:message.debug.format","with":[{"translate":"luigis_mansion:message.debug","color":"gold"},{"translate":"luigis_mansion:message.debug.debugger.turned_on.messages"}]}
+execute if score #debug_furniture Selected matches 0 unless score #debug_furniture LastSelected matches 0 run tellraw @a {"translate":"luigis_mansion:message.debug.format","with":[{"translate":"luigis_mansion:message.debug","color":"gold"},{"translate":"luigis_mansion:message.debug.debugger.turned_off.furniture"}]}
+execute if score #debug_furniture Selected matches 1 unless score #debug_furniture LastSelected matches 1 run tellraw @a {"translate":"luigis_mansion:message.debug.format","with":[{"translate":"luigis_mansion:message.debug","color":"gold"},{"translate":"luigis_mansion:message.debug.debugger.turned_on.furniture"}]}
+execute if score #debug_entities Selected matches 0 unless score #debug_entities LastSelected matches 0 run tellraw @a {"translate":"luigis_mansion:message.debug.format","with":[{"translate":"luigis_mansion:message.debug","color":"gold"},{"translate":"luigis_mansion:message.debug.debugger.turned_off.entities"}]}
+execute if score #debug_entities Selected matches 1 unless score #debug_entities LastSelected matches 1 run tellraw @a {"translate":"luigis_mansion:message.debug.format","with":[{"translate":"luigis_mansion:message.debug","color":"gold"},{"translate":"luigis_mansion:message.debug.debugger.turned_on.entities"}]}
 scoreboard players operation #debug_messages LastSelected = #debug_messages Selected
 scoreboard players operation #debug_furniture LastSelected = #debug_furniture Selected
 scoreboard players operation #debug_entities LastSelected = #debug_entities Selected

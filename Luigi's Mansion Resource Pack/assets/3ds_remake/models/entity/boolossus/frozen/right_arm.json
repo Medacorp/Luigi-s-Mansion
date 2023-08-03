@@ -1,7 +1,7 @@
 {
 	"parent": "luigis_mansion:entity/boolossus/frozen/right_arm",
 	"textures": {
-		"particle": "luigis_mansion_3ds_remake:entity/boolossus/frozen",
-		"0": "luigis_mansion_3ds_remake:entity/boolossus/frozen"
+		"particle": "3ds_remake:entity/boolossus/frozen",
+		"0": "3ds_remake:entity/boolossus/frozen"
 	}
 }

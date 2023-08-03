@@ -2,6 +2,6 @@
 	"parent": "luigis_mansion:entity/luigi/left_leg",
 	"textures": {
 		"0": "luigis_mansion:item/empty",
-		"1": "luigis_mansion_3ds_remake:entity/gooigi"
+		"1": "3ds_remake:entity/gooigi"
 	}
 }

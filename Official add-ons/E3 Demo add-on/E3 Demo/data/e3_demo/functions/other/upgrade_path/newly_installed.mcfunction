@@ -1,2 +1,2 @@
-data merge storage e3_demo:data {saved_state:{trophy:{done:0b,task_1:0b,task_2:0b,task_3:0b,task_4:0b,task_5:0b,task_6:0b,task_7:0b,task_8:0b,task_9:0b}},current_state:{trophy:{done:0b,task_1:0b,task_2:0b,task_3:0b,task_4:0b,task_5:0b,task_6:0b,task_7:0b,task_8:0b,task_9:0b}}}
+data merge storage e3_demo:data {data_version:2,saved_state:{trophy:{done:0b,task_1:0b,task_2:0b,task_3:0b,task_4:0b,task_5:0b,task_6:0b,task_7:0b,task_8:0b,task_9:0b}},current_state:{trophy:{done:0b,task_1:0b,task_2:0b,task_3:0b,task_4:0b,task_5:0b,task_6:0b,task_7:0b,task_8:0b,task_9:0b}}}
 execute if score #mansion_type Selected matches 0 if data storage luigis_mansion:data {found_e_gadd:0b} run function e3_demo:other/upgrade_path/switch_mansion

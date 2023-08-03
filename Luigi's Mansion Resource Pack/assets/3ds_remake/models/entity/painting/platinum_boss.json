@@ -1,6 +1,6 @@
 {
-	"parent": "luigis_mansion_3ds_remake:entity/painting/boss_frame",
+	"parent": "3ds_remake:entity/painting/boss_frame",
 	"textures": {
-		"frame": "luigis_mansion_3ds_remake:block/painting/platinum_boss_frame"
+		"frame": "3ds_remake:block/painting/platinum_boss_frame"
 	}
 }

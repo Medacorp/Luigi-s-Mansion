@@ -2,169 +2,169 @@
 	"entity.gooigi.death": {
         "sounds": [
             {
-                "name": "luigis_mansion_3ds_remake:entity/gooigi/death",
+                "name": "3ds_remake:entity/gooigi/death",
                 "stream": false
             }
         ],
-        "subtitle": "luigis_mansion_3ds_remake:subtitles.entity.gooigi.death"
+        "subtitle": "3ds_remake:subtitles.entity.gooigi.death"
     },
     "entity.gooigi.spawn": {
         "sounds": [
             {
-                "name": "luigis_mansion_3ds_remake:entity/gooigi/spawn",
+                "name": "3ds_remake:entity/gooigi/spawn",
                 "stream": false
             }
         ],
-        "subtitle": "luigis_mansion_3ds_remake:subtitles.entity.gooigi.spawn"
+        "subtitle": "3ds_remake:subtitles.entity.gooigi.spawn"
     },
     "entity.gooigi.vanish": {
         "sounds": [
             {
-                "name": "luigis_mansion_3ds_remake:entity/gooigi/vanish",
+                "name": "3ds_remake:entity/gooigi/vanish",
                 "stream": false
             }
         ],
-        "subtitle": "luigis_mansion_3ds_remake:subtitles.entity.gooigi.vanish"
+        "subtitle": "3ds_remake:subtitles.entity.gooigi.vanish"
     },
     "entity.gooigi.walk": {
         "sounds": [
             {
-                "name": "luigis_mansion_3ds_remake:entity/gooigi/walk1",
+                "name": "3ds_remake:entity/gooigi/walk1",
                 "stream": false
             },
             {
-                "name": "luigis_mansion_3ds_remake:entity/gooigi/walk2",
+                "name": "3ds_remake:entity/gooigi/walk2",
                 "stream": false
             },
             {
-                "name": "luigis_mansion_3ds_remake:entity/gooigi/walk3",
+                "name": "3ds_remake:entity/gooigi/walk3",
                 "stream": false
             },
             {
-                "name": "luigis_mansion_3ds_remake:entity/gooigi/walk4",
+                "name": "3ds_remake:entity/gooigi/walk4",
                 "stream": false
             },
             {
-                "name": "luigis_mansion_3ds_remake:entity/gooigi/walk5",
+                "name": "3ds_remake:entity/gooigi/walk5",
                 "stream": false
             }
         ],
-        "subtitle": "luigis_mansion_3ds_remake:subtitles.entity.gooigi.walk"
+        "subtitle": "3ds_remake:subtitles.entity.gooigi.walk"
     },
     "entity.polterpup.first_bark": {
         "sounds": [
             {
-                "name": "luigis_mansion_3ds_remake:entity/polterpup/first_bark",
+                "name": "3ds_remake:entity/polterpup/first_bark",
                 "stream": false
             }
         ],
-        "subtitle": "luigis_mansion_3ds_remake:subtitles.entity.polterpup.bark"
+        "subtitle": "3ds_remake:subtitles.entity.polterpup.bark"
     },
     "entity.polterpup.jump_bark": {
         "sounds": [
             {
-                "name": "luigis_mansion_3ds_remake:entity/polterpup/jump_bark",
+                "name": "3ds_remake:entity/polterpup/jump_bark",
                 "stream": false
             }
         ],
-        "subtitle": "luigis_mansion_3ds_remake:subtitles.entity.polterpup.bark"
+        "subtitle": "3ds_remake:subtitles.entity.polterpup.bark"
     },
     "entity.polterpup.last_bark": {
         "sounds": [
             {
-                "name": "luigis_mansion_3ds_remake:entity/polterpup/last_bark",
+                "name": "3ds_remake:entity/polterpup/last_bark",
                 "stream": false
             }
         ],
-        "subtitle": "luigis_mansion_3ds_remake:subtitles.entity.polterpup.bark"
+        "subtitle": "3ds_remake:subtitles.entity.polterpup.bark"
     },
     "entity.polterpup.lick": {
         "sounds": [
             {
-                "name": "luigis_mansion_3ds_remake:entity/polterpup/lick",
+                "name": "3ds_remake:entity/polterpup/lick",
                 "stream": false
             }
         ],
-        "subtitle": "luigis_mansion_3ds_remake:subtitles.entity.polterpup.lick"
+        "subtitle": "3ds_remake:subtitles.entity.polterpup.lick"
     },
     "entity.polterpup.lick2": {
         "sounds": [
             {
-                "name": "luigis_mansion_3ds_remake:entity/polterpup/lick2",
+                "name": "3ds_remake:entity/polterpup/lick2",
                 "stream": false
             }
         ],
-        "subtitle": "luigis_mansion_3ds_remake:subtitles.entity.polterpup.lick"
+        "subtitle": "3ds_remake:subtitles.entity.polterpup.lick"
     },
     "entity.polterpup.playful_growl": {
         "sounds": [
             {
-                "name": "luigis_mansion_3ds_remake:entity/polterpup/playful_growl",
+                "name": "3ds_remake:entity/polterpup/playful_growl",
                 "stream": false
             }
         ],
-        "subtitle": "luigis_mansion_3ds_remake:subtitles.entity.polterpup.playful_growl"
+        "subtitle": "3ds_remake:subtitles.entity.polterpup.playful_growl"
     },
     "entity.polterpup.playful_growl2": {
         "sounds": [
             {
-                "name": "luigis_mansion_3ds_remake:entity/polterpup/playful_growl2",
+                "name": "3ds_remake:entity/polterpup/playful_growl2",
                 "stream": false
             }
         ],
-        "subtitle": "luigis_mansion_3ds_remake:subtitles.entity.polterpup.playful_growl"
+        "subtitle": "3ds_remake:subtitles.entity.polterpup.playful_growl"
     },
     "entity.polterpup.search": {
         "sounds": [
             {
-                "name": "luigis_mansion_3ds_remake:entity/polterpup/search",
+                "name": "3ds_remake:entity/polterpup/search",
                 "stream": false
             }
         ],
-        "subtitle": "luigis_mansion_3ds_remake:subtitles.entity.polterpup.search"
+        "subtitle": "3ds_remake:subtitles.entity.polterpup.search"
     },
     "entity.polterpup.sniff": {
         "sounds": [
             {
-                "name": "luigis_mansion_3ds_remake:entity/polterpup/sniff1",
+                "name": "3ds_remake:entity/polterpup/sniff1",
                 "stream": false
             },
 			{
-                "name": "luigis_mansion_3ds_remake:entity/polterpup/sniff2",
+                "name": "3ds_remake:entity/polterpup/sniff2",
                 "stream": false
             },
 			{
-                "name": "luigis_mansion_3ds_remake:entity/polterpup/sniff3",
+                "name": "3ds_remake:entity/polterpup/sniff3",
                 "stream": false
             },
 			{
-                "name": "luigis_mansion_3ds_remake:entity/polterpup/sniff4",
+                "name": "3ds_remake:entity/polterpup/sniff4",
                 "stream": false
             },
 			{
-                "name": "luigis_mansion_3ds_remake:entity/polterpup/sniff5",
+                "name": "3ds_remake:entity/polterpup/sniff5",
                 "stream": false
             }
         ],
-        "subtitle": "luigis_mansion_3ds_remake:subtitles.entity.polterpup.sniff"
+        "subtitle": "3ds_remake:subtitles.entity.polterpup.sniff"
     },
     "entity.polterpup.swallow": {
         "sounds": [
             {
-                "name": "luigis_mansion_3ds_remake:entity/polterpup/swallow",
+                "name": "3ds_remake:entity/polterpup/swallow",
                 "stream": false
             }
         ],
-        "subtitle": "luigis_mansion_3ds_remake:subtitles.entity.polterpup.swallow"
+        "subtitle": "3ds_remake:subtitles.entity.polterpup.swallow"
     },
     "item.game_boy_horror.install_part": {
         "sounds": [
             {
-                "name": "luigis_mansion_3ds_remake:item/game_boy_horror/install_part",
+                "name": "3ds_remake:item/game_boy_horror/install_part",
                 "stream": false
             }
         ],
-        "subtitle": "luigis_mansion_3ds_remake:subtitles.item.game_boy_horror.install_part"
+        "subtitle": "3ds_remake:subtitles.item.game_boy_horror.install_part"
     },
     "item.game_boy_horror_part.bounce": {
         "sounds": [
@@ -173,7 +173,7 @@
                 "stream": false
             }
         ],
-        "subtitle": "luigis_mansion_3ds_remake:subtitles.item.game_boy_horror_part.bounce"
+        "subtitle": "3ds_remake:subtitles.item.game_boy_horror_part.bounce"
     },
     "item.game_boy_horror_part.obtain": {
         "sounds": [
@@ -182,7 +182,7 @@
                 "stream": false
             }
         ],
-        "subtitle": "luigis_mansion_3ds_remake:subtitles.item.game_boy_horror_part.obtain"
+        "subtitle": "3ds_remake:subtitles.item.game_boy_horror_part.obtain"
     },
     "item.game_boy_horror_part.spawn": {
         "sounds": [
@@ -191,28 +191,28 @@
                 "stream": false
             }
         ],
-        "subtitle": "luigis_mansion_3ds_remake:subtitles.item.game_boy_horror_part.obtain"
+        "subtitle": "3ds_remake:subtitles.item.game_boy_horror_part.obtain"
     },
     "item.poltergust_3000.hit_floor_gooigi": {
         "sounds": [
             {
-                "name": "luigis_mansion_3ds_remake:entity/gooigi/walk1",
+                "name": "3ds_remake:entity/gooigi/walk1",
                 "stream": false
             },
             {
-                "name": "luigis_mansion_3ds_remake:entity/gooigi/walk2",
+                "name": "3ds_remake:entity/gooigi/walk2",
                 "stream": false
             },
             {
-                "name": "luigis_mansion_3ds_remake:entity/gooigi/walk3",
+                "name": "3ds_remake:entity/gooigi/walk3",
                 "stream": false
             },
             {
-                "name": "luigis_mansion_3ds_remake:entity/gooigi/walk4",
+                "name": "3ds_remake:entity/gooigi/walk4",
                 "stream": false
             },
             {
-                "name": "luigis_mansion_3ds_remake:entity/gooigi/walk5",
+                "name": "3ds_remake:entity/gooigi/walk5",
                 "stream": false
             }
         ],
@@ -221,23 +221,23 @@
     "item.poltergust_3000.hit_wall_gooigi": {
         "sounds": [
             {
-                "name": "luigis_mansion_3ds_remake:entity/gooigi/walk1",
+                "name": "3ds_remake:entity/gooigi/walk1",
                 "stream": false
             },
             {
-                "name": "luigis_mansion_3ds_remake:entity/gooigi/walk2",
+                "name": "3ds_remake:entity/gooigi/walk2",
                 "stream": false
             },
             {
-                "name": "luigis_mansion_3ds_remake:entity/gooigi/walk3",
+                "name": "3ds_remake:entity/gooigi/walk3",
                 "stream": false
             },
             {
-                "name": "luigis_mansion_3ds_remake:entity/gooigi/walk4",
+                "name": "3ds_remake:entity/gooigi/walk4",
                 "stream": false
             },
             {
-                "name": "luigis_mansion_3ds_remake:entity/gooigi/walk5",
+                "name": "3ds_remake:entity/gooigi/walk5",
                 "stream": false
             }
         ],
@@ -250,7 +250,7 @@
                 "stream": false
             }
         ],
-        "subtitle": "luigis_mansion_3ds_remake:subtitles.item.super_mushroom.bounce"
+        "subtitle": "3ds_remake:subtitles.item.super_mushroom.bounce"
     },
     "item.super_mushroom.obtain": {
         "sounds": [
@@ -259,7 +259,7 @@
                 "stream": false
             }
         ],
-        "subtitle": "luigis_mansion_3ds_remake:subtitles.item.super_mushroom.obtain"
+        "subtitle": "3ds_remake:subtitles.item.super_mushroom.obtain"
     },
     "item.super_mushroom.spawn": {
         "sounds": [
@@ -268,12 +268,12 @@
                 "stream": false
             }
         ],
-        "subtitle": "luigis_mansion_3ds_remake:subtitles.item.super_mushroom.spawn"
+        "subtitle": "3ds_remake:subtitles.item.super_mushroom.spawn"
     },
     "music.future_e_gadd": {
         "sounds": [
             {
-                "name": "luigis_mansion_3ds_remake:music/future_e_gadd",
+                "name": "3ds_remake:music/future_e_gadd",
                 "stream": true,
                 "volume": 0.00025
             }
@@ -282,7 +282,7 @@
     "music.polterpup": {
         "sounds": [
             {
-                "name": "luigis_mansion_3ds_remake:music/polterpup",
+                "name": "3ds_remake:music/polterpup",
                 "stream": true,
                 "volume": 0.00025
             }

@@ -37,7 +37,7 @@ execute unless entity @s[scores={Offline=0}] run function luigis_mansion:other/l
 execute if entity @s[scores={ChangedMansion=1}] run function luigis_mansion:entities/player/changed_mansion
 
 execute unless score @s PreviousRoom = @s Room run tag @s remove seen_room_name
-execute unless score @s PreviousRoom = @s Room if score #debug_messages Selected matches 1 run tellraw @a {"translate":"luigis_mansion:message.debug.format","with":[{"translate":"luigis_mansion:message.debug","color":"gold"},{"translate":"luigis_mansion:message.debug.room_number","with":[{"selector":"@s"},{"score":{"name":"@s","objective":"PreviousRoom"}},{"score":{"name":"@s","objective":"Room"}}]}]}
+execute unless score @s PreviousRoom = @s Room if score #debug_messages Selected matches 2.. run tellraw @a {"translate":"luigis_mansion:message.debug.format","with":[{"translate":"luigis_mansion:message.debug","color":"gold"},{"translate":"luigis_mansion:message.debug.room_number","with":[{"selector":"@s"},{"score":{"name":"@s","objective":"PreviousRoom"}},{"score":{"name":"@s","objective":"Room"}}]}]}
 scoreboard players operation @s PreviousRoom = @s Room
 execute unless entity @s[scores={Room=1..}] run scoreboard players set @s LastFloor -2
 

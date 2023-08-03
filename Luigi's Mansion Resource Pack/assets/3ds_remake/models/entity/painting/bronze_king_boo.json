@@ -1,6 +1,6 @@
 {
-	"parent": "luigis_mansion_3ds_remake:entity/painting/king_boo_frame",
+	"parent": "3ds_remake:entity/painting/king_boo_frame",
 	"textures": {
-		"frame": "luigis_mansion_3ds_remake:block/painting/bronze_king_boo_frame"
+		"frame": "3ds_remake:block/painting/bronze_king_boo_frame"
 	}
 }

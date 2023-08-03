@@ -28,4 +28,4 @@ data modify storage luigis_mansion:data current_state.current_data.ghosts_caught
 data remove storage luigis_mansion:data current_state.ghost_caught
 data remove storage luigis_mansion:data current_state.new_ghosts_caught
 
-execute unless entity @a[tag=killer,limit=1] if score #debug_messages Selected matches 1 run tellraw @a {"translate":"luigis_mansion:message.debug.format","with":[{"translate":"luigis_mansion:message.debug","color":"gold"},{"translate":"luigis_mansion:message.debug.empty_uuid.ghost","color":"red"}]}
+execute unless entity @a[tag=killer,limit=1] if score #debug_messages Selected matches 1.. run tellraw @a {"translate":"luigis_mansion:message.debug.format","with":[{"translate":"luigis_mansion:message.debug","color":"gold"},{"translate":"luigis_mansion:message.debug.empty_uuid.ghost","color":"red"}]}

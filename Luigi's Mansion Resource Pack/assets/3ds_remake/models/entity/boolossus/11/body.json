@@ -1,7 +1,7 @@
 {
 	"parent": "luigis_mansion:entity/boolossus/11/body",
 	"textures": {
-		"particle": "luigis_mansion_3ds_remake:entity/boolossus/boolossus",
-		"0": "luigis_mansion_3ds_remake:entity/boolossus/boolossus"
+		"particle": "3ds_remake:entity/boolossus/boolossus",
+		"0": "3ds_remake:entity/boolossus/boolossus"
 	}
 }

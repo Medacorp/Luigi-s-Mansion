@@ -1,6 +1,6 @@
 {
-	"parent": "luigis_mansion_3ds_remake:entity/painting/gold_boss",
+	"parent": "3ds_remake:entity/painting/gold_boss",
 	"textures": {
-		"image": "luigis_mansion_3ds_remake:block/painting/gold/boolossus"
+		"image": "3ds_remake:block/painting/gold/boolossus"
 	}
 }

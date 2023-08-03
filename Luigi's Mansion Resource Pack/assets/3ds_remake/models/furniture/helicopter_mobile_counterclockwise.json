@@ -1,6 +1,6 @@
 {
 	"parent": "luigis_mansion:furniture/helicopter_mobile_counterclockwise",
 	"textures": {
-		"0": "luigis_mansion_3ds_remake:furniture/helicopter_mobile"
+		"0": "3ds_remake:furniture/helicopter_mobile"
 	}
 }
