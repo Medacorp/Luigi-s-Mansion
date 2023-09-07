@@ -1,6 +1,5 @@
 {
 	"values": [
-		"3ds_remake:room/hidden/sitting_room/interactions/room/candle_3",
 		"3ds_remake:room/hidden/sitting_room/interactions/room/chair",
 		"3ds_remake:room/hidden/sitting_room/interactions/room/coat_rack",
 		"3ds_remake:room/hidden/sitting_room/interactions/room/couch",
@@ -12,7 +11,6 @@
 		"3ds_remake:room/hidden/sitting_room/interactions/room/painting_5",
 		"3ds_remake:room/hidden/sitting_room/interactions/room/plant",
 		"3ds_remake:room/hidden/sitting_room/interactions/room/table_1",
-		"3ds_remake:room/hidden/sitting_room/interactions/room/table_2",
 		"3ds_remake:room/hidden/sitting_room/interactions/room/vacuumable",
 		"3ds_remake:room/hidden/sitting_room/interactions/room/water"
 	]

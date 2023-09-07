@@ -1,6 +1,5 @@
 {
 	"values": [
-		"luigis_mansion:room/hidden/sitting_room/interactions/poltergust/candle_3",
 		"luigis_mansion:room/hidden/sitting_room/interactions/poltergust/chair",
 		"luigis_mansion:room/hidden/sitting_room/interactions/poltergust/coat_rack",
 		"luigis_mansion:room/hidden/sitting_room/interactions/poltergust/couch",
@@ -12,7 +11,6 @@
 		"luigis_mansion:room/hidden/sitting_room/interactions/poltergust/painting_5",
 		"luigis_mansion:room/hidden/sitting_room/interactions/poltergust/plant",
 		"luigis_mansion:room/hidden/sitting_room/interactions/poltergust/table_1",
-		"luigis_mansion:room/hidden/sitting_room/interactions/poltergust/table_2",
 		"luigis_mansion:room/hidden/sitting_room/interactions/poltergust/vacuumable",
 		"luigis_mansion:room/hidden/sitting_room/interactions/poltergust/water"
 	]
