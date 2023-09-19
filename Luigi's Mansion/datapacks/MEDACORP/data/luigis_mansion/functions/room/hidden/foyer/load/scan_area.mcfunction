@@ -1,4 +1,4 @@
-data modify storage luigis_mansion:data furniture.scan_area set value {type:"standing",box:{width:20,height:20}}
+data modify storage luigis_mansion:data furniture.hitbox set value {type:"standing",box:{width:20,height:20}}
 execute unless data storage luigis_mansion:data current_state.current_data{obtained_keys:["hallway_3"]} run data modify storage luigis_mansion:data furniture.scan_message set value '{"translate":"luigis_mansion:message.player.scan_furniture.112"}'
 execute if data storage luigis_mansion:data current_state.current_data{obtained_keys:["hallway_3"]} run data modify storage luigis_mansion:data furniture.scan_message set value '{"translate":"luigis_mansion:message.player.scan_furniture.55"}'
 execute positioned 744.0 11 7.0 run function luigis_mansion:spawn_furniture/scan_area

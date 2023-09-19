@@ -1,15 +1,18 @@
+*_old
+/*.bat
+/*.jar
+/*.json
+/*.properties
 /Future add-ons/
-/libraries/
-/logs/
+/Luigi's Mansion/DIM-1/
+/Luigi's Mansion/DIM1/
 /Luigi's Mansion/advancements/
 /Luigi's Mansion/data/chunks.dat
 /Luigi's Mansion/data/command_storage_*
-/Luigi's Mansion/data/scoreboard.dat
 /Luigi's Mansion/data/raids.dat
+/Luigi's Mansion/data/scoreboard.dat
 /Luigi's Mansion/datapacks/*
 !/Luigi's Mansion/datapacks/MEDACORP/
-/Luigi's Mansion/DIM1/
-/Luigi's Mansion/DIM-1/
 /Luigi's Mansion/dimensions/*
 !/Luigi's Mansion/dimensions/luigis_mansion/
 /Luigi's Mansion/dimensions/luigis_mansion/*/data/chunks.dat
@@ -24,11 +27,9 @@
 /Official add-ons/*/Dimension/*/*/data/raids.dat
 /Official add-ons/*/Dimension/*/*/entities/
 /Official add-ons/*/Dimension/*/*/poi/
-/versions/
-*_old
-session.lock
+/allowed_symlinks.txt
 /eula.txt
-/*.json
-/*.properties
-/*.bat
-/*.jar
+/libraries/
+/logs/
+/versions/
+session.lock
