@@ -1,6 +1,7 @@
 {
     "pack": {
-        "pack_format": 15,
+        "pack_format": 18,
+        "supported_formats": [18,18],
         "description": {
 			"translate": "extensive_training:data_pack.description"
 		}
