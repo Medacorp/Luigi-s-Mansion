@@ -52,7 +52,8 @@ execute at @s[scores={LightX=-2147483648..,Shrunk=1..}] run function luigis_mans
 tag @s[tag=!death_animation,tag=!revive_animation,tag=!polterpup_reviving] remove spectator
 
 effect give @s minecraft:invisibility infinite 0 true
-execute if entity @s[tag=!camera,tag=!gooigi] run function luigis_mansion:animations/luigi
+execute store result storage luigis_mansion:data macro.id int 1 run scoreboard players get @s ID
+execute if entity @s[tag=!camera,tag=!gooigi] run function luigis_mansion:animations/luigi with storage luigis_mansion:data macro
 execute if entity @s[scores={KnockbackTime=1..}] run function luigis_mansion:entities/player/knockback
 execute unless entity @s[scores={KnockbackType=8..10}] run scoreboard players reset @s GrabbedShake
 execute unless entity @s[scores={KnockbackType=8..10}] run tag @s remove grabbed

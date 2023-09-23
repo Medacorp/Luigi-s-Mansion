@@ -1,5 +1,5 @@
 playsound luigis_mansion:item.bill.obtain player @a[tag=same_room] ~ ~ ~ 1
-function luigis_mansion:items/get_player_money/get
+function luigis_mansion:items/get_player_money with entity @a[tag=collector,limit=1]
 execute store result score #temp Time run data get storage luigis_mansion:data current_state.my_money.money.luigis_mansion.bill
 execute unless score #temp ActionTime matches 2147483647 store result storage luigis_mansion:data current_state.my_money.money.luigis_mansion.bill int 1 run scoreboard players add #temp Time 1
 execute store result score #temp Time run data get storage luigis_mansion:data current_state.my_money.total

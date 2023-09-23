@@ -1,3 +1,8 @@
+2.3.8:
+* Updated to 1.20.2
+* Added few optimizations using macros
+
+
 2.3.7:
 * Fixed players can push other players that are interacting with doors, softlocking them
 * Fixed when the 3DS Remake is installed having the poltergust selected while the game boy horror map opens (from collecting a key) softlocks the player in the map area

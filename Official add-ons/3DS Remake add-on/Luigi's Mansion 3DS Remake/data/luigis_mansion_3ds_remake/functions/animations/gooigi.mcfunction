@@ -17,11 +17,9 @@ data modify storage luigis_mansion:data luigi.mainhand set from entity @s Select
 data modify storage luigis_mansion:data luigi.offhand set from entity @s Inventory[{Slot:-106b}]
 execute if entity @s[tag=game_boy_horror] run data modify storage luigis_mansion:data luigi.mainhand set from entity @s Inventory[{tag:{luigis_mansion:{id:"luigis_mansion:game_boy_horror"}}}]
 execute if entity @s[tag=game_boy_horror] run data modify storage luigis_mansion:data luigi.offhand set value {}
-tag @e[type=minecraft:armor_stand,tag=gooigi_model,tag=!found_owner] add this_gooigi
-execute as @e[type=minecraft:armor_stand,tag=this_gooigi,tag=source,limit=1] run function luigis_mansion_3ds_remake:animations/gooigi/main
-execute as @e[type=minecraft:armor_stand,tag=this_gooigi,tag=!source] at @e[tag=this_gooigi,tag=source,limit=1] run function luigis_mansion_3ds_remake:animations/gooigi/main
-execute unless entity @e[tag=this_gooigi,tag=source,limit=1] as @e[type=minecraft:armor_stand,tag=this_gooigi,tag=!source] at @s run function luigis_mansion_3ds_remake:animations/gooigi/main
-execute store result score #temp Time if entity @e[tag=this_gooigi]
-execute unless score #temp Time matches 10 run tag @e[tag=this_gooigi] add dead
+execute as @e[type=minecraft:armor_stand,tag=gooigi_model,tag=source,limit=1] run function luigis_mansion_3ds_remake:animations/gooigi/main
+execute as @e[type=minecraft:armor_stand,tag=gooigi_model,tag=!source] at @e[tag=this_gooigi,tag=source,limit=1] run function luigis_mansion_3ds_remake:animations/gooigi/main
+execute store result score #temp Time if entity @e[type=minecraft:armor_stand,tag=gooigi_model]
+execute unless score #temp Time matches 10 run tag @e[type=minecraft:armor_stand,tag=gooigi_model] add dead
 scoreboard players reset #temp Time
 tag @e[tag=this_gooigi] remove this_gooigi
