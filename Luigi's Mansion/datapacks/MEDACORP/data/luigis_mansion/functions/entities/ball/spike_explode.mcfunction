@@ -3,7 +3,7 @@ execute as @e[distance=..3,tag=game_boy_horror_location] run function luigis_man
 data modify storage luigis_mansion:data damage set value {method:"luigis_mansion:explosion",amount:10,knockback:"burn",no_delete:1b}
 execute if data entity @s ArmorItems[3].tag.damage.attack run data modify storage luigis_mansion:data damage.amount set from entity @s ArmorItems[3].tag.damage.attack
 execute store result storage luigis_mansion:data damage.attacker int 1 run scoreboard players get @s Owner
-execute as @a[distance=..1,gamemode=!spectator] run function luigis_mansion:entities/player/take_damage
+execute as @a[distance=..1,gamemode=!spectator] run function luigis_mansion:entities/player/damage
 data remove storage luigis_mansion:data damage
 particle minecraft:explosion ~ ~ ~ 0.2 0.2 0.2 1 4 force @a[tag=same_room]
 playsound luigis_mansion:entity.ghost.explosion hostile @a[tag=same_room] ~ ~ ~ 1

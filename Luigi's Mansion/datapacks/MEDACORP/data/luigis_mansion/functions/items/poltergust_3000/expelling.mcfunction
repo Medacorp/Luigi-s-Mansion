@@ -1,11 +1,12 @@
 scoreboard players operation #temp Room = @s Room
 scoreboard players operation #temp ID = @s ID
+execute store result storage luigis_mansion:data macro.id int 1 run scoreboard players get #temp ID
 execute if entity @s[scores={MirrorX=-2147483648..}] run scoreboard players operation #temp MirrorX = @s MirrorX
 execute if entity @s[scores={MirrorZ=-2147483648..}] run scoreboard players operation #temp MirrorZ = @s MirrorZ
 tag @s add me
 tag @s remove vacuuming
 summon minecraft:marker ~ ~ ~ {Tags:["interact","poltergust"]}
-function luigis_mansion:entities/player/memory/get
+function luigis_mansion:entities/player/memory/get with entity @s
 execute if data storage luigis_mansion:data my_memory{poltergust_element:"none"} run tag @e[tag=interact,limit=1] add dust
 execute if data storage luigis_mansion:data my_memory{poltergust_element:"none"} run function luigis_mansion:items/poltergust_3000/expel_dust
 execute if data storage luigis_mansion:data my_memory{poltergust_element:"none"} run tag @s add expelling_dust

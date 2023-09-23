@@ -21,9 +21,9 @@ execute if entity @s[scores={ActionTime=41}] as @a[distance=..5,scores={Invulner
 execute if entity @s[scores={ActionTime=41}] run data modify storage luigis_mansion:data damage set value {method:"luigis_mansion:scare",amount:0,limit_health:50,knockback:"bash_scare",attacker:-1,no_delete:1b}
 execute if entity @s[scores={ActionTime=41}] run data modify storage luigis_mansion:data damage.amount set from entity @s ArmorItems[3].tag.damage.attack
 execute if entity @s[scores={ActionTime=41}] store result storage luigis_mansion:data damage.attacker int 1 run scoreboard players get @s GhostNr
-execute if entity @s[scores={ActionTime=41}] as @a[distance=..3,gamemode=!spectator] run function luigis_mansion:entities/player/take_damage
+execute if entity @s[scores={ActionTime=41}] as @a[distance=..3,gamemode=!spectator] run function luigis_mansion:entities/player/damage
 execute if entity @s[scores={ActionTime=41}] run data modify storage luigis_mansion:data damage merge value {limit_health:70,knockback:"scare"}
-execute if entity @s[scores={ActionTime=41}] as @a[distance=3..5,gamemode=!spectator] run function luigis_mansion:entities/player/take_damage
+execute if entity @s[scores={ActionTime=41}] as @a[distance=3..5,gamemode=!spectator] run function luigis_mansion:entities/player/damage
 execute if entity @s[scores={ActionTime=41}] run data remove storage luigis_mansion:data damage
 tag @s[scores={ActionTime=60},tag=laugh] remove attack
 scoreboard players set @s[scores={ActionTime=60},tag=laugh] AnimationProgress 0

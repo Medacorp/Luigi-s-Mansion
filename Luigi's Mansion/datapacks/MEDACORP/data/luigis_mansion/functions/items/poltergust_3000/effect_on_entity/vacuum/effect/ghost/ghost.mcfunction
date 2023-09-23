@@ -3,4 +3,4 @@ execute if entity @s[tag=!being_vacuumed] if entity @a[tag=me,limit=1,tag=!flipp
 execute if entity @s[tag=!being_vacuumed] if entity @a[tag=me,limit=1,tag=flipped_gravity] run scoreboard players remove @s TargetY 20
 tag @s add hurt
 tag @s add in_vacuum
-execute if entity @s[tag=!being_vacuumed] run function luigis_mansion:items/poltergust_3000/latch_onto_ghost
+execute if entity @s[tag=!being_vacuumed] run function luigis_mansion:items/poltergust_3000/latch_onto_ghost with storage luigis_mansion:data macro

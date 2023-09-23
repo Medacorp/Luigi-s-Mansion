@@ -7,7 +7,7 @@ execute if entity @a[distance=..0.7,tag=!spectator] run tag @s[tag=!spooky_bone]
 execute if entity @s[tag=dead] run data modify storage luigis_mansion:data damage set value {method:"luigis_mansion:bone",amount:5,knockback:"small",no_delete:1b}
 execute if entity @s[tag=dead] if data entity @s ArmorItems[3].tag.damage.attack run data modify storage luigis_mansion:data damage.amount set from entity @s ArmorItems[3].tag.damage.attack
 execute if entity @s[tag=dead] store result storage luigis_mansion:data damage.attacker int 1 run scoreboard players get @s Owner
-execute if entity @s[tag=dead] as @a[distance=..0.7,gamemode=!spectator] run function luigis_mansion:entities/player/take_damage
+execute if entity @s[tag=dead] as @a[distance=..0.7,gamemode=!spectator] run function luigis_mansion:entities/player/damage
 execute if entity @s[tag=dead] run data remove storage luigis_mansion:data damage
 execute if entity @s[tag=dead,scores={Owner=-2147483648..}] run scoreboard players operation #temp GhostNr = @s Owner
 execute if entity @s[tag=dead,scores={Owner=-2147483648..}] as @e[tag=!model_piece,tag=ghost] if score @s GhostNr = #temp GhostNr run scoreboard players set @s AnimationProgress 0

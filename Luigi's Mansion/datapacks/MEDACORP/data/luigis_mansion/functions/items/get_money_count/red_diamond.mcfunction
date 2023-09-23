@@ -1,5 +1,1 @@
-scoreboard players set #temp Money 0
-execute if data storage luigis_mansion:data current_state.current_data.money_grabbed[0] run function luigis_mansion:items/get_money_count/loop/red_diamond
-execute if data storage luigis_mansion:data current_state.current_data.new_money_grabbed run data modify storage luigis_mansion:data current_state.current_data.money_grabbed set from storage luigis_mansion:data current_state.current_data.new_money_grabbed
-data remove storage luigis_mansion:data current_state.current_data.new_money_grabbed
-scoreboard players reset #temp Time
+execute if data storage luigis_mansion:data current_state.current_data{drop_item_on_damage:"luigis_mansion:red_diamond"} run function luigis_mansion:items/get_money_count/search/select {namespace:luigis_mansion,id:red_diamond}

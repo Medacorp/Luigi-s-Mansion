@@ -1,5 +1,5 @@
 3.0:
-WARNING! When updating an old save version, be sure to delete the entire contents of the save's "datapacks" folder before drag-and-drop updating, if you don't, the map will malfunction
+WARNING! When updating an old save version, be sure to delete the entire contents of the save's "datapacks" folder before drag-and-droping updating, if you don't, the map will malfunction
 * Renamed things to reduce file path length
 ** "Luigi's Mansion" data pack renamed to "MEDACORP"
 ** "Luigi's Mansion 3DS Remake" data pack and namespace renamed to "3DS Remake"
@@ -8,6 +8,12 @@ WARNING! When updating an old save version, be sure to delete the entire content
 * Added death messages
 * Added revive messages
 * Rewrote a lot
+* Fixed poison mushrooms don't make players drop coins
+
+2.3.8:
+* Updated to 1.20.2
+* Added few optimizations using macros
+
 
 2.3.7:
 * Fixed players can push other players that are interacting with doors, softlocking them

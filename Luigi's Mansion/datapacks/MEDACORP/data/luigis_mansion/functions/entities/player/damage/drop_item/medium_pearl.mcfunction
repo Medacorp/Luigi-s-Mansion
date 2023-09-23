@@ -1,0 +1,1 @@
+execute if data storage luigis_mansion:data current_state.current_data{drop_item_on_damage:"luigis_mansion:medium_pearl"} run function luigis_mansion:entities/player/damage/drop_item/select/trigger {namespace:luigis_mansion,id:medium_pearl,value:100}

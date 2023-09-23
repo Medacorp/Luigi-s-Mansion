@@ -6,5 +6,5 @@ scoreboard players reset #temp GhostNr
 tag @s add dead
 data modify storage luigis_mansion:data damage set value {method:"luigis_mansion:rocking_horse",amount:10,knockback:"medium",no_delete:1b}
 execute store result storage luigis_mansion:data damage.attacker int 1 run scoreboard players get @s Owner
-execute as @a[distance=..0.7,gamemode=!spectator] run function luigis_mansion:entities/player/take_damage
+execute as @a[distance=..0.7,gamemode=!spectator] run function luigis_mansion:entities/player/damage
 data remove storage luigis_mansion:data damage

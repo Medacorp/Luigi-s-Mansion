@@ -11,5 +11,5 @@ execute if entity @s[tag=attack] run data modify storage luigis_mansion:data dam
 execute if entity @s[tag=!attack] run data modify storage luigis_mansion:data damage.amount set from entity @s ArmorItems[3].tag.damage.collision
 execute if entity @s[tag=attack] run data modify storage luigis_mansion:data damage.amount set from entity @s ArmorItems[3].tag.damage.attack
 execute store result storage luigis_mansion:data damage.attacker int 1 run scoreboard players get @s GhostNr
-execute as @a[distance=..0.7,gamemode=!spectator] run function luigis_mansion:entities/player/take_damage
+execute as @a[distance=..0.7,gamemode=!spectator] run function luigis_mansion:entities/player/damage
 data remove storage luigis_mansion:data damage

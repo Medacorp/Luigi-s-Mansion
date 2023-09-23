@@ -1,1 +1,0 @@
-execute if data storage luigis_mansion:data current_state.current_data{drop_item_on_damage:"e3_demo:ghost_coin"} run function e3_demo:items/get_money_count/ghost_coin

@@ -124,7 +124,7 @@ teleport @s[scores={Dialog=1783,PathStep=6..10}] ^ ^-0.4 ^0.4
 execute at @s[scores={Dialog=1783,PathStep=10}] as @e[distance=..1,tag=game_boy_horror_location] run function luigis_mansion:entities/game_boy_horror_location/bring_player_back
 execute at @s[scores={Dialog=1783,PathStep=10}] run data modify storage luigis_mansion:data damage set value {method:"luigis_mansion:bounced_on",amount:10,knockback:"large",attacker:-1,no_delete:1b}
 execute at @s[scores={Dialog=1783,PathStep=10}] store result storage luigis_mansion:data damage.attacker int 1 run scoreboard players get @s GhostNr
-execute at @s[scores={Dialog=1783,PathStep=10}] as @a[distance=..1,gamemode=!spectator] run function luigis_mansion:entities/player/take_damage
+execute at @s[scores={Dialog=1783,PathStep=10}] as @a[distance=..1,gamemode=!spectator] run function luigis_mansion:entities/player/damage
 execute at @s[scores={Dialog=1783,PathStep=10}] run data remove storage luigis_mansion:data damage
 execute at @s[y_rotation=135..-135,scores={Dialog=1783},tag=!left] unless block ^ ^1 ^2 #luigis_mansion:all_ignore run teleport @s ~ ~ ~ ~90 0
 execute at @s[y_rotation=-135..-45,scores={Dialog=1783},tag=!left] unless block ^ ^1 ^2 #luigis_mansion:all_ignore run teleport @s ~ ~ ~ ~90 0

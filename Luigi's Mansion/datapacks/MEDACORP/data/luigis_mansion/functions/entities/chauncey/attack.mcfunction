@@ -11,7 +11,7 @@ execute at @s[scores={ActionTime=11}] positioned ~ ~1 ~ if entity @a[distance=..
 execute at @s[scores={ActionTime=11}] run data modify storage luigis_mansion:data damage set value {method:"luigis_mansion:punch",amount:0,knockback:"large",attacker:-1,no_delete:1b}
 execute at @s[scores={ActionTime=11}] run data modify storage luigis_mansion:data damage.amount set from entity @s ArmorItems[3].tag.damage.attack
 execute at @s[scores={ActionTime=11}] store result storage luigis_mansion:data damage.attacker int 1 run scoreboard players get @s GhostNr
-execute at @s[scores={ActionTime=11}] positioned ~ ~1 ~ as @a[distance=..1,gamemode=!spectator] run function luigis_mansion:entities/player/take_damage
+execute at @s[scores={ActionTime=11}] positioned ~ ~1 ~ as @a[distance=..1,gamemode=!spectator] run function luigis_mansion:entities/player/damage
 execute at @s[scores={ActionTime=11}] run data remove storage luigis_mansion:data damage
 tag @s[scores={ActionTime=11},tag=!laugh] add complain
 execute at @s run function luigis_mansion:animations/chauncey/attack

@@ -1,16 +1,16 @@
 {
 	"values": [
-		"luigis_mansion:items/get_money_count/select/gold_coin",
-		"luigis_mansion:items/get_money_count/select/bill",
-		"luigis_mansion:items/get_money_count/select/gold_bar",
-		"luigis_mansion:items/get_money_count/select/blue_sapphire",
-		"luigis_mansion:items/get_money_count/select/green_emerald",
-		"luigis_mansion:items/get_money_count/select/red_ruby",
-		"luigis_mansion:items/get_money_count/select/red_diamond",
-		"luigis_mansion:items/get_money_count/select/silver_diamond",
-		"luigis_mansion:items/get_money_count/select/gold_diamond",
-		"luigis_mansion:items/get_money_count/select/small_pearl",
-		"luigis_mansion:items/get_money_count/select/medium_pearl",
-		"luigis_mansion:items/get_money_count/select/big_pearl"
+		"luigis_mansion:items/get_money_count/gold_coin",
+		"luigis_mansion:items/get_money_count/bill",
+		"luigis_mansion:items/get_money_count/gold_bar",
+		"luigis_mansion:items/get_money_count/blue_sapphire",
+		"luigis_mansion:items/get_money_count/green_emerald",
+		"luigis_mansion:items/get_money_count/red_ruby",
+		"luigis_mansion:items/get_money_count/red_diamond",
+		"luigis_mansion:items/get_money_count/silver_diamond",
+		"luigis_mansion:items/get_money_count/gold_diamond",
+		"luigis_mansion:items/get_money_count/small_pearl",
+		"luigis_mansion:items/get_money_count/medium_pearl",
+		"luigis_mansion:items/get_money_count/big_pearl"
 	]
 }

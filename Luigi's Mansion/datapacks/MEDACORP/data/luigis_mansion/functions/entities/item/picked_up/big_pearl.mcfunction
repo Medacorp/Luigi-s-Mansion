@@ -1,1 +1,1 @@
-execute if entity @s[tag=big_pearl] run function luigis_mansion:items/big_pearl
+execute if entity @s[tag=big_pearl] run function luigis_mansion:items/money/assigns_rank {rank:3,size:small,namespace:luigis_mansion,id:big_pearl,value:1000}

@@ -57,7 +57,7 @@ execute at @s[tag=in_vacuum,tag=big] at @p[distance=..3,tag=!spectator,tag=playe
 execute at @s[tag=!in_vacuum,tag=chauncey] as @e[distance=..1,tag=game_boy_horror_location] run function luigis_mansion:entities/game_boy_horror_location/bring_player_back
 execute at @s[tag=!in_vacuum,tag=chauncey] run data modify storage luigis_mansion:data damage set value {method:"luigis_mansion:ball",amount:10,knockback:"large",no_delete:1b}
 execute at @s[tag=!in_vacuum,tag=chauncey] store result storage luigis_mansion:data damage.attacker int 1 run scoreboard players get @s Owner
-execute at @s[tag=!in_vacuum,tag=chauncey] as @a[distance=..1,gamemode=!spectator] run function luigis_mansion:entities/player/take_damage
+execute at @s[tag=!in_vacuum,tag=chauncey] as @a[distance=..1,gamemode=!spectator] run function luigis_mansion:entities/player/damage
 execute at @s[tag=!in_vacuum,tag=chauncey] run data remove storage luigis_mansion:data damage
 execute at @s[tag=!in_vacuum,tag=chauncey,scores={Owner=-2147483648..}] run scoreboard players operation #temp GhostNr = @s Owner
 execute at @s[tag=!in_vacuum,tag=chauncey,scores={Owner=-2147483648..}] if entity @a[distance=..1,tag=!spectator,limit=1] as @e[tag=!model_piece,tag=ghost] if score @s GhostNr = #temp GhostNr run scoreboard players set @s AnimationProgress 0

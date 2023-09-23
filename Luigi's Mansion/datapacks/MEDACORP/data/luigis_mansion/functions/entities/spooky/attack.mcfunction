@@ -28,7 +28,7 @@ execute if entity @s[scores={GrabbedID=-2147483648..}] if entity @a[tag=still_gr
 execute if entity @s[scores={ActionTime=30}] run data modify storage luigis_mansion:data damage set value {method:"luigis_mansion:bite",amount:0,knockback:"bite",attacker:-1}
 execute if entity @s[scores={ActionTime=30}] run data modify storage luigis_mansion:data damage.amount set from entity @s ArmorItems[3].tag.damage.attack
 execute if entity @s[scores={ActionTime=30}] store result storage luigis_mansion:data damage.attacker int 1 run scoreboard players get @s GhostNr
-execute if entity @s[scores={ActionTime=30}] as @a[tag=still_grabbed,limit=1] run function luigis_mansion:entities/player/take_damage
+execute if entity @s[scores={ActionTime=30}] as @a[tag=still_grabbed,limit=1] run function luigis_mansion:entities/player/damage
 execute if entity @s[scores={ActionTime=30..51,Sound=0}] run playsound luigis_mansion:entity.spooky.attack hostile @a[tag=same_room] ~ ~ ~ 1 1
 execute if entity @s[scores={ActionTime=30..51,Sound=0}] run scoreboard players set @s Sound 20
 execute if entity @s[scores={ActionTime=30..51}] unless entity @a[tag=still_grabbed,limit=1] run scoreboard players set @s ActionTime 53

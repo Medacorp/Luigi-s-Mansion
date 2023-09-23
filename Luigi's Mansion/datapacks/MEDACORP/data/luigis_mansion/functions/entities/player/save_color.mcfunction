@@ -1,6 +1,6 @@
 execute store result score #temp ID run data get storage luigis_mansion:data memory
 scoreboard players set #temp2 Time 0
-function luigis_mansion:entities/player/memory/get
+function luigis_mansion:entities/player/memory/get with entity @s
 execute if score #temp ID matches 0 run scoreboard players set #temp Time 37129
 execute if score #temp ID matches 1 run scoreboard players set #temp Time 4882943
 execute if score #temp ID matches 2 run scoreboard players set #temp Time 16726271

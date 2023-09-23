@@ -1,2 +1,2 @@
-execute unless score #vanilla Loaded matches 1 run datapack disable "file/Luigi's Mansion"
-execute unless score #vanilla Loaded matches 1 run datapack enable "file/Luigi's Mansion" first
+execute unless score #vanilla Loaded matches 1 run datapack disable "file/MEDACORP"
+execute unless score #vanilla Loaded matches 1 run datapack enable "file/MEDACORP" first

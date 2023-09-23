@@ -24,49 +24,49 @@ scoreboard players set #temp2 FurnitureSizeForward 0
 scoreboard players operation #temp2 FurnitureSizeLeft = #temp FurnitureSizeLeft
 scoreboard players operation #temp2 FurnitureSizeUp += #temp FurnitureSizeUp
 scoreboard players operation #temp2 FurnitureSizeForward = #temp FurnitureSizeForward
-execute as @e[tag=temp,tag=left_up_forward,limit=1] run function luigis_mansion:main/debug/move_box
+execute as @e[tag=temp,tag=left_up_forward,limit=1] run function luigis_mansion:main/debug/move
 
 scoreboard players operation #temp2 FurnitureSizeLeft -= #temp FurnitureSizeLeft
 scoreboard players operation #temp2 FurnitureSizeUp = #temp EntityYOffset
 scoreboard players operation #temp2 FurnitureSizeUp += #temp FurnitureSizeUp
 scoreboard players operation #temp2 FurnitureSizeForward = #temp FurnitureSizeForward
-execute as @e[tag=temp,tag=right_up_forward,limit=1] run function luigis_mansion:main/debug/move_box
+execute as @e[tag=temp,tag=right_up_forward,limit=1] run function luigis_mansion:main/debug/move
 
 scoreboard players operation #temp2 FurnitureSizeLeft = #temp FurnitureSizeLeft
 scoreboard players operation #temp2 FurnitureSizeUp = #temp EntityYOffset
 scoreboard players operation #temp2 FurnitureSizeUp += #temp FurnitureSizeUp
 scoreboard players operation #temp2 FurnitureSizeForward -= #temp FurnitureSizeForward
-execute as @e[tag=temp,tag=left_up_backward,limit=1] run function luigis_mansion:main/debug/move_box
+execute as @e[tag=temp,tag=left_up_backward,limit=1] run function luigis_mansion:main/debug/move
 
 scoreboard players operation #temp2 FurnitureSizeLeft -= #temp FurnitureSizeLeft
 scoreboard players operation #temp2 FurnitureSizeUp = #temp EntityYOffset
 scoreboard players operation #temp2 FurnitureSizeUp += #temp FurnitureSizeUp
 scoreboard players operation #temp2 FurnitureSizeForward -= #temp FurnitureSizeForward
-execute as @e[tag=temp,tag=right_up_backward,limit=1] run function luigis_mansion:main/debug/move_box
+execute as @e[tag=temp,tag=right_up_backward,limit=1] run function luigis_mansion:main/debug/move
 
 scoreboard players operation #temp2 FurnitureSizeLeft = #temp FurnitureSizeLeft
 scoreboard players operation #temp2 FurnitureSizeUp = #temp EntityYOffset
 scoreboard players operation #temp2 FurnitureSizeUp -= #temp FurnitureSizeUp
 scoreboard players operation #temp2 FurnitureSizeForward = #temp FurnitureSizeForward
-execute as @e[tag=temp,tag=left_down_forward,limit=1] run function luigis_mansion:main/debug/move_box
+execute as @e[tag=temp,tag=left_down_forward,limit=1] run function luigis_mansion:main/debug/move
 
 scoreboard players operation #temp2 FurnitureSizeLeft -= #temp FurnitureSizeLeft
 scoreboard players operation #temp2 FurnitureSizeUp = #temp EntityYOffset
 scoreboard players operation #temp2 FurnitureSizeUp -= #temp FurnitureSizeUp
 scoreboard players operation #temp2 FurnitureSizeForward = #temp FurnitureSizeForward
-execute as @e[tag=temp,tag=right_down_forward,limit=1] run function luigis_mansion:main/debug/move_box
+execute as @e[tag=temp,tag=right_down_forward,limit=1] run function luigis_mansion:main/debug/move
 
 scoreboard players operation #temp2 FurnitureSizeLeft = #temp FurnitureSizeLeft
 scoreboard players operation #temp2 FurnitureSizeUp = #temp EntityYOffset
 scoreboard players operation #temp2 FurnitureSizeUp -= #temp FurnitureSizeUp
 scoreboard players operation #temp2 FurnitureSizeForward -= #temp FurnitureSizeForward
-execute as @e[tag=temp,tag=left_down_backward,limit=1] run function luigis_mansion:main/debug/move_box
+execute as @e[tag=temp,tag=left_down_backward,limit=1] run function luigis_mansion:main/debug/move
 
 scoreboard players operation #temp2 FurnitureSizeLeft -= #temp FurnitureSizeLeft
 scoreboard players operation #temp2 FurnitureSizeUp = #temp EntityYOffset
 scoreboard players operation #temp2 FurnitureSizeUp -= #temp FurnitureSizeUp
 scoreboard players operation #temp2 FurnitureSizeForward -= #temp FurnitureSizeForward
-execute as @e[tag=temp,tag=right_down_backward,limit=1] run function luigis_mansion:main/debug/move_box
+execute as @e[tag=temp,tag=right_down_backward,limit=1] run function luigis_mansion:main/debug/move
 
 execute at @e[tag=temp] run function luigis_mansion:main/debug/highlight
 execute at @e[tag=temp,tag=left_up_forward,limit=1] facing entity @e[tag=temp,tag=right_up_forward,limit=1] feet positioned ^ ^ ^0.1 unless entity @e[tag=temp,distance=..0.09,limit=1] run function luigis_mansion:main/debug/highlight_trail

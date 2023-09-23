@@ -131,10 +131,10 @@ execute at @s[scores={KnockbackTime=80,KnockbackType=7}] anchored eyes run summo
 execute at @s[scores={KnockbackTime=8..10,KnockbackType=7}] anchored eyes positioned ^ ^ ^ run tag @e[tag=luigi_ice,distance=..0.1,limit=1] add remove_from_existence
 execute at @s[scores={KnockbackTime=8..10,KnockbackType=7}] anchored eyes run particle minecraft:item minecraft:diamond_pickaxe{Unbreakable:1b,Damage:4,CustomModelData:47} ^ ^ ^ 0.3 0.3 0.3 0 50 force @a[tag=same_room]
 scoreboard players set @s[scores={KnockbackTime=10..,KnockbackType=7,Invulnerable=6..}] Invulnerable 5
-execute at @s[scores={KnockbackTime=10..,KnockbackType=7,Invulnerable=0}] run function luigis_mansion:entities/player/memory/get
+execute at @s[scores={KnockbackTime=10..,KnockbackType=7,Invulnerable=0}] run function luigis_mansion:entities/player/memory/get with entity @s
 execute at @s[scores={KnockbackTime=10..,KnockbackType=7,Invulnerable=0}] run data modify storage luigis_mansion:data damage set value {amount:1,attacker:-1}
 execute if entity @s[scores={KnockbackTime=10..,KnockbackType=7,Invulnerable=0}] run data modify storage luigis_mansion:data damage.attacker set from storage luigis_mansion:data my_memory.hurt_by.attacker
-execute at @s[scores={KnockbackTime=10..,KnockbackType=7,Invulnerable=0}] run function luigis_mansion:entities/player/take_damage
+execute at @s[scores={KnockbackTime=10..,KnockbackType=7,Invulnerable=0}] run function luigis_mansion:entities/player/damage
 scoreboard players set @s[scores={KnockbackTime=10,KnockbackType=7}] Invulnerable 70
 execute at @s[scores={KnockbackTime=8,KnockbackType=7,Sound=0,Health=41..,Shrunk=0},tag=!gooigi] run playsound luigis_mansion:entity.player.sigh.high_health player @a[tag=same_room] ~ ~ ~ 1
 execute at @s[scores={KnockbackTime=8,KnockbackType=7,Sound=0,Health=41..,Shrunk=1..},tag=!gooigi] run playsound luigis_mansion:entity.player.sigh.high_health player @a[tag=same_room] ~ ~ ~ 1 2
@@ -182,10 +182,10 @@ execute at @s[scores={KnockbackTime=2..,KnockbackType=8..9,GrabbedShake=5..}] ru
 execute at @s[scores={KnockbackTime=2..,KnockbackType=10,GrabbedShake=10..}] run scoreboard players reset @e[tag=this_ghost,limit=1] GrabbedID
 execute at @s[scores={KnockbackTime=2..,KnockbackType=8..10}] run tag @s remove struggle
 scoreboard players set @s[scores={KnockbackTime=2..,KnockbackType=9..10,Invulnerable=6..}] Invulnerable 5
-execute at @s[scores={KnockbackTime=2..9,KnockbackType=9..10,Invulnerable=0}] run function luigis_mansion:entities/player/memory/get
+execute at @s[scores={KnockbackTime=2..9,KnockbackType=9..10,Invulnerable=0}] run function luigis_mansion:entities/player/memory/get with entity @s
 execute at @s[scores={KnockbackTime=2..9,KnockbackType=9..10,Invulnerable=0}] run data modify storage luigis_mansion:data damage set value {amount:1,attacker:-1}
 execute if entity @s[scores={KnockbackTime=2..9,KnockbackType=9..10,Invulnerable=0}] run data modify storage luigis_mansion:data damage.attacker set from storage luigis_mansion:data my_memory.hurt_by.attacker
-execute at @s[scores={KnockbackTime=2..9,KnockbackType=9..10,Invulnerable=0}] run function luigis_mansion:entities/player/take_damage
+execute at @s[scores={KnockbackTime=2..9,KnockbackType=9..10,Invulnerable=0}] run function luigis_mansion:entities/player/damage
 execute at @s[scores={KnockbackTime=2..,KnockbackType=8..10}] run effect give @s minecraft:slowness 1 0 true
 execute at @s[scores={KnockbackTime=1,KnockbackType=8..10}] run effect clear @s minecraft:slowness
 execute at @s[scores={KnockbackTime=1,KnockbackType=8..10}] run scoreboard players reset @e[tag=this_ghost,limit=1] GrabbedID
@@ -207,11 +207,11 @@ execute at @s[scores={KnockbackTime=40,KnockbackType=11,Sound=0,Health=41..,Shru
 execute at @s[scores={KnockbackTime=40,KnockbackType=11,Sound=0,Health=..40,Shrunk=0},tag=!gooigi] run playsound luigis_mansion:entity.player.hurt_bounce.low_health player @a[tag=same_room] ~ ~ ~ 1
 execute at @s[scores={KnockbackTime=40,KnockbackType=11,Sound=0,Health=..40,Shrunk=1..},tag=!gooigi] run playsound luigis_mansion:entity.player.hurt_bounce.low_health player @a[tag=same_room] ~ ~ ~ 1 2
 scoreboard players set @s[scores={KnockbackTime=40,KnockbackType=11,Sound=0},tag=!gooigi] Sound 20
-execute if entity @s[scores={KnockbackTime=40,KnockbackType=11}] run function luigis_mansion:entities/player/memory/get
+execute if entity @s[scores={KnockbackTime=40,KnockbackType=11}] run function luigis_mansion:entities/player/memory/get with entity @s
 execute if entity @s[scores={KnockbackTime=40,KnockbackType=11}] run data modify storage luigis_mansion:data damage set value {amount:0,attacker:-1}
 execute if entity @s[scores={KnockbackTime=40,KnockbackType=11}] store result storage luigis_mansion:data damage.amount int 1 run scoreboard players get @s KnockbackDamage
 execute if entity @s[scores={KnockbackTime=40,KnockbackType=11}] run data modify storage luigis_mansion:data damage.attacker set from storage luigis_mansion:data my_memory.hurt_by.attacker
-execute if entity @s[scores={KnockbackTime=40,KnockbackType=11}] run function luigis_mansion:entities/player/take_damage
+execute if entity @s[scores={KnockbackTime=40,KnockbackType=11}] run function luigis_mansion:entities/player/damage
 execute at @s[scores={KnockbackTime=10,KnockbackType=11,Sound=0,Health=41..,Shrunk=0},tag=!gooigi] run playsound luigis_mansion:entity.player.recover.high_health player @a[tag=same_room] ~ ~ ~ 1
 execute at @s[scores={KnockbackTime=10,KnockbackType=11,Sound=0,Health=41..,Shrunk=1..},tag=!gooigi] run playsound luigis_mansion:entity.player.recover.high_health player @a[tag=same_room] ~ ~ ~ 1 2
 execute at @s[scores={KnockbackTime=10,KnockbackType=11,Sound=0,Health=..40,Shrunk=0},tag=!gooigi] run playsound luigis_mansion:entity.player.recover.low_health player @a[tag=same_room] ~ ~ ~ 1
@@ -258,11 +258,11 @@ execute at @s[scores={KnockbackTime=135,KnockbackType=14,Sound=0,Health=41..,Shr
 execute at @s[scores={KnockbackTime=135,KnockbackType=14,Sound=0,Health=..40,Shrunk=0},tag=!gooigi] run playsound luigis_mansion:entity.player.scare.low_health player @a[tag=same_room] ~ ~ ~ 1
 execute at @s[scores={KnockbackTime=135,KnockbackType=14,Sound=0,Health=..40,Shrunk=1..},tag=!gooigi] run playsound luigis_mansion:entity.player.scare.low_health player @a[tag=same_room] ~ ~ ~ 1 2
 scoreboard players set @s[scores={KnockbackTime=135,KnockbackType=14,Sound=0},tag=!gooigi] Sound 8
-execute if entity @s[scores={KnockbackTime=125,KnockbackType=14}] run function luigis_mansion:entities/player/memory/get
+execute if entity @s[scores={KnockbackTime=125,KnockbackType=14}] run function luigis_mansion:entities/player/memory/get with entity @s
 execute if entity @s[scores={KnockbackTime=125,KnockbackType=14}] run data modify storage luigis_mansion:data damage set value {amount:0,attacker:-1}
 execute if entity @s[scores={KnockbackTime=125,KnockbackType=14}] store result storage luigis_mansion:data damage.amount int 1 run scoreboard players get @s KnockbackDamage
 execute if entity @s[scores={KnockbackTime=125,KnockbackType=14}] run data modify storage luigis_mansion:data damage.attacker set from storage luigis_mansion:data my_memory.hurt_by.attacker
-execute if entity @s[scores={KnockbackTime=125,KnockbackType=14}] run function luigis_mansion:entities/player/take_damage
+execute if entity @s[scores={KnockbackTime=125,KnockbackType=14}] run function luigis_mansion:entities/player/damage
 execute at @s[scores={KnockbackType=14}] run summon minecraft:marker ~ ~ ~ {Tags:["home","remove_from_existence"]}
 execute at @s[scores={KnockbackType=14}] store result entity @e[tag=home,limit=1] Pos[0] double 0.01 run scoreboard players get @s PositionX
 execute at @s[scores={KnockbackType=14}] store result entity @e[tag=home,limit=1] Pos[1] double 0.01 run scoreboard players get @s PositionY

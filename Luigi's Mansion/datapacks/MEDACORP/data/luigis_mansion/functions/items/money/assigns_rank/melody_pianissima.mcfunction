@@ -1,0 +1,3 @@
+execute if entity @s[tag=melody_pianissima] store result score #temp Time run data get storage luigis_mansion:data current_state.current_data.portrait_ghosts.melody_pianissima.rank
+$execute if entity @s[tag=melody_pianissima] if score #temp Time matches ..$(rank) run data modify storage luigis_mansion:data current_state.current_data.portrait_ghosts.melody_pianissima.rank set value $(rank)
+scoreboard players reset #temp Time

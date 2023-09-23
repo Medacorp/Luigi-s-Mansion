@@ -12,10 +12,8 @@ execute if entity @s[nbt={Inventory:[{tag:{luigis_mansion:{is_poltergust:1b}}}]}
 data modify storage luigis_mansion:data luigi.mainhand set from entity @s[tag=dark_room] Inventory[{tag:{luigis_mansion:{id:"luigis_mansion:flashlight"}}}]
 execute if entity @s[nbt=!{SelectedItem:{tag:{luigis_mansion:{id:"luigis_mansion:flashlight"}}}},nbt=!{SelectedItem:{tag:{luigis_mansion:{id:"luigis_mansion:game_boy_horror"}}}},nbt=!{SelectedItem:{tag:{luigis_mansion:{id:"luigis_mansion:interact"}}}}] run data modify storage luigis_mansion:data luigi.mainhand set from entity @s SelectedItem
 execute if entity @s[nbt={Inventory:[{tag:{luigis_mansion:{id:"luigis_mansion:game_boy_horror"}}}]}] run data modify storage luigis_mansion:data luigi.offhand set from entity @s Inventory[{tag:{luigis_mansion:{id:"luigis_mansion:game_boy_horror"}}}]
-execute as @e[type=minecraft:armor_stand,tag=luigi_model,tag=!found_owner] if score @s ID = #temp ID run tag @s add this_luigi
-execute as @e[type=minecraft:armor_stand,tag=this_luigi,tag=source,limit=1] run function luigis_mansion:animations/luigi/main
-execute as @e[type=minecraft:armor_stand,tag=this_luigi,tag=!source] at @e[tag=this_luigi,tag=source,limit=1] run function luigis_mansion:animations/luigi/main
-execute unless entity @e[tag=this_luigi,tag=source,limit=1] as @e[type=minecraft:armor_stand,tag=this_luigi,tag=!source] at @s run function luigis_mansion:animations/luigi/main
+$execute as @e[type=minecraft:armor_stand,tag=luigi_model,scores={ID=$(id)},tag=source,limit=1] run function luigis_mansion:animations/luigi/main
+$execute as @e[type=minecraft:armor_stand,tag=luigi_model,scores={ID=$(id)},tag=!source] at @e[tag=this_luigi,tag=source,limit=1] run function luigis_mansion:animations/luigi/main
 scoreboard players reset #temp ID
 tag @s remove this_luigi
 execute store result score #temp Time if entity @e[tag=this_luigi]

@@ -1,0 +1,3 @@
+execute if entity @s[tag=clockwork_soldier] store result score #temp Time run data get storage luigis_mansion:data current_state.current_data.portrait_ghosts.clockwork_soldiers.rank
+$execute if entity @s[tag=clockwork_soldier] if score #temp Time matches ..$(rank) run data modify storage luigis_mansion:data current_state.current_data.portrait_ghosts.clockwork_soldiers.rank set value $(rank)
+scoreboard players reset #temp Time

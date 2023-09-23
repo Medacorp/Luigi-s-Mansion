@@ -1,0 +1,7 @@
+$data modify storage luigis_mansion:data current_state.my_money set value {uuid:$(UUID),total:0,money:{}}
+$execute if data storage luigis_mansion:data current_state.money_grabbed[{uuid:$(UUID)}] run data modify storage luigis_mansion:data current_state.my_money set from storage luigis_mansion:data current_state.money_grabbed[{uuid:$(UUID)}]
+$execute if data storage luigis_mansion:data current_state.money_grabbed[{uuid:$(UUID)}] run data remove storage luigis_mansion:data current_state.money_grabbed[{uuid:$(UUID)}]
+
+$data modify storage luigis_mansion:data current_state.my_money_data set value {uuid:$(UUID),total:0,money:{}}
+$execute if data storage luigis_mansion:data current_state.current_data.money_grabbed[{uuid:$(UUID)}] run data modify storage luigis_mansion:data current_state.my_money_data set from storage luigis_mansion:data current_state.current_data.money_grabbed[{uuid:$(UUID)}]
+$execute if data storage luigis_mansion:data current_state.current_data.money_grabbed[{uuid:$(UUID)}] run data remove storage luigis_mansion:data current_state.current_data.money_grabbed[{uuid:$(UUID)}]

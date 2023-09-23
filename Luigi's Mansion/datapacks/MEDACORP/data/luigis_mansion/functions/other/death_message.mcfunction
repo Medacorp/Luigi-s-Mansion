@@ -1,4 +1,4 @@
-function luigis_mansion:entities/player/memory/get
+function luigis_mansion:entities/player/memory/get with entity @s
 data modify storage luigis_mansion:data memory append from storage luigis_mansion:data my_memory
 execute store result storage luigis_mansion:data temp int 1 run data get storage luigis_mansion:data my_memory.hurt_by.attacker
 execute if data storage luigis_mansion:data my_memory.hurt_by.attacker store success score #temp Time run data modify storage luigis_mansion:data temp set from storage luigis_mansion:data my_memory.hurt_by.attacker

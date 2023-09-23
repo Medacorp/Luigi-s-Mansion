@@ -3,7 +3,7 @@ scoreboard players operation #temp ID = @s ID
 execute as @e[tag=model_piece,nbt={Small:1b}] if score @s ID = #temp ID run data merge entity @s {Small:0b}
 scoreboard players reset #temp ID
 
-function luigis_mansion:entities/player/memory/get
+function luigis_mansion:entities/player/memory/get with entity @s
 data modify storage luigis_mansion:data inventory set from storage luigis_mansion:data my_memory.inventory
 data modify storage luigis_mansion:data inventory[{tag:{luigis_mansion:{id:"luigis_mansion:flashlight"}}}].tag set from entity @s Inventory[{tag:{luigis_mansion:{id:"luigis_mansion:flashlight"}}}].tag
 data modify storage luigis_mansion:data inventory[{tag:{luigis_mansion:{id:"luigis_mansion:interact"}}}].tag set from entity @s Inventory[{tag:{luigis_mansion:{id:"luigis_mansion:interact"}}}].tag

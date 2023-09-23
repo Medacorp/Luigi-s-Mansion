@@ -33,7 +33,7 @@ execute if entity @s[scores={ActionTime=90}] if score #mirrored Selected matches
 execute if entity @s[scores={ActionTime=90}] if score #mirrored Selected matches 1 as @a[tag=vacuumed,limit=1] positioned as @s rotated ~45 0 run teleport @s ~ ~2 ~ ~-180 ~
 execute if entity @s[scores={ActionTime=90}] run data modify storage luigis_mansion:data damage set value {method:"luigis_mansion:swallow",amount:30,knockback:"large",attacker:-1}
 execute if entity @s[scores={ActionTime=90}] store result storage luigis_mansion:data damage.attacker int 1 run scoreboard players get @s GhostNr
-execute if entity @s[scores={ActionTime=90}] as @a[tag=vacuumed,limit=1] run function luigis_mansion:entities/player/take_damage
+execute if entity @s[scores={ActionTime=90}] as @a[tag=vacuumed,limit=1] run function luigis_mansion:entities/player/damage
 execute if entity @s[scores={ActionTime=90}] run tag @a[tag=vacuumed] remove vacuumed
 data modify entity @s[scores={ActionTime=94}] ArmorItems[3].tag.CustomModelData set value 88
 tag @s[scores={ActionTime=110}] remove vacuum

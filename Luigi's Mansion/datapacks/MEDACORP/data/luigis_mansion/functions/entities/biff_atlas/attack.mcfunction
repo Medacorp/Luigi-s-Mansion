@@ -7,7 +7,7 @@ execute if entity @a[distance=..1.6,scores={Invulnerable=0},tag=!spectator] run 
 data modify storage luigis_mansion:data damage set value {method:"luigis_mansion:punch",amount:0,knockback:"large",attacker:-1,no_delete:1b}
 data modify storage luigis_mansion:data damage.amount set from entity @s ArmorItems[3].tag.damage.attack
 execute store result storage luigis_mansion:data damage.attacker int 1 run scoreboard players get @s GhostNr
-execute as @a[distance=..1.6,gamemode=!spectator] run function luigis_mansion:entities/player/take_damage
+execute as @a[distance=..1.6,gamemode=!spectator] run function luigis_mansion:entities/player/damage
 data remove storage luigis_mansion:data damage
 function luigis_mansion:animations/biff_atlas/attack
 tag @s[scores={ActionTime=10}] remove attack

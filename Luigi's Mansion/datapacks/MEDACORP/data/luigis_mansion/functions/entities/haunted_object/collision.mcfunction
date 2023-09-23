@@ -2,7 +2,7 @@ execute if entity @s[tag=!dead] as @e[distance=..1,tag=game_boy_horror_location]
 execute if entity @s[tag=!dead] run data modify storage luigis_mansion:data damage set value {method:"luigis_mansion:haunted_object",amount:0,knockback:"small",attacker:-1}
 execute if entity @s[tag=!dead] run data modify storage luigis_mansion:data damage.amount set from entity @s ArmorItems[3].tag.damage.collision
 execute if entity @s[tag=!dead] store result storage luigis_mansion:data damage.attacker int 1 run scoreboard players get @s GhostNr
-execute if entity @s[tag=!dead] as @a[distance=..1,gamemode=!spectator,sort=nearest,limit=1] run function luigis_mansion:entities/player/take_damage
+execute if entity @s[tag=!dead] as @a[distance=..1,gamemode=!spectator,sort=nearest,limit=1] run function luigis_mansion:entities/player/damage
 execute if entity @s[scores={Owner=-2147483648..}] run scoreboard players operation #temp GhostNr = @s Owner
 execute if entity @s[scores={Owner=-2147483648..}] as @e[tag=!model_piece,tag=ghost] if score @s GhostNr = #temp GhostNr run scoreboard players set @s AnimationProgress 0
 execute if entity @s[tag=!dead,scores={Owner=-2147483648..}] if entity @a[distance=..1,tag=!spectator,limit=1] as @e[tag=!model_piece,tag=ghost] if score @s GhostNr = #temp GhostNr run tag @s add laugh

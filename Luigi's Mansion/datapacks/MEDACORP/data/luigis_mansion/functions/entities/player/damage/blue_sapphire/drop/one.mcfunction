@@ -1,8 +1,0 @@
-execute if block ~ ~ ~ #luigis_mansion:all_ignore run function luigis_mansion:spawn_entities/item/blue_sapphire
-execute unless block ~ ~ ~ #luigis_mansion:all_ignore positioned ~1 ~ ~ if block ~ ~ ~ #luigis_mansion:all_ignore run function luigis_mansion:spawn_entities/item/blue_sapphire
-execute unless block ~ ~ ~ #luigis_mansion:all_ignore positioned ~1 ~ ~ unless block ~ ~ ~ #luigis_mansion:all_ignore positioned ~-2 ~ ~ if block ~ ~ ~ #luigis_mansion:all_ignore run function luigis_mansion:spawn_entities/item/blue_sapphire
-execute unless block ~ ~ ~ #luigis_mansion:all_ignore positioned ~1 ~ ~ unless block ~ ~ ~ #luigis_mansion:all_ignore positioned ~-2 ~ ~ unless block ~ ~ ~ #luigis_mansion:all_ignore positioned ~-1 ~ ~1 if block ~ ~ ~ #luigis_mansion:all_ignore run function luigis_mansion:spawn_entities/item/blue_sapphire
-execute unless block ~ ~ ~ #luigis_mansion:all_ignore positioned ~1 ~ ~ unless block ~ ~ ~ #luigis_mansion:all_ignore positioned ~-2 ~ ~ unless block ~ ~ ~ #luigis_mansion:all_ignore positioned ~-1 ~ ~1 unless block ~ ~ ~ #luigis_mansion:all_ignore positioned ~ ~ ~-2 if block ~ ~ ~ #luigis_mansion:all_ignore run function luigis_mansion:spawn_entities/item/blue_sapphire
-execute unless block ~ ~ ~ #luigis_mansion:all_ignore positioned ~1 ~ ~ unless block ~ ~ ~ #luigis_mansion:all_ignore positioned ~-2 ~ ~ unless block ~ ~ ~ #luigis_mansion:all_ignore positioned ~-1 ~ ~1 unless block ~ ~ ~ #luigis_mansion:all_ignore positioned ~ ~ ~-2 unless block ~ ~ ~ #luigis_mansion:all_ignore positioned ~ ~ ~1 run function luigis_mansion:spawn_entities/item/blue_sapphire
-scoreboard players set @e[tag=this_entity,limit=1] SpawnedTime 100
-tag @e[tag=this_entity,limit=1] remove this_entity

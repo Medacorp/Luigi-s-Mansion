@@ -7,7 +7,7 @@ execute at @s[tag=!held] as @e[distance=..1,tag=game_boy_horror_location] run fu
 execute at @s[tag=!held] run data modify storage luigis_mansion:data damage set value {method:"luigis_mansion:bowling_ball",amount:5,knockback:"small",no_delete:1b}
 execute at @s[tag=!held] if data entity @s ArmorItems[3].tag.damage.attack run data modify storage luigis_mansion:data damage.amount set from entity @s ArmorItems[3].tag.damage.attack
 execute at @s[tag=!held] store result storage luigis_mansion:data damage.attacker int 1 run scoreboard players get @s Owner
-execute at @s[tag=!held] as @a[distance=..1,gamemode=!spectator] run function luigis_mansion:entities/player/take_damage
+execute at @s[tag=!held] as @a[distance=..1,gamemode=!spectator] run function luigis_mansion:entities/player/damage
 execute at @s[tag=!held] run data remove storage luigis_mansion:data damage
 execute at @s[tag=!held] if entity @a[distance=..1,tag=!spectator,limit=1] run tag @s add dead
 execute at @s[tag=!held] if entity @a[distance=..1,tag=!spectator,limit=1] run playsound luigis_mansion:entity.bowling_ball.clap hostile @a[tag=same_room] ~ ~ ~ 1

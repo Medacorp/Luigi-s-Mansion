@@ -1,7 +1,7 @@
 execute as @e[distance=..3,tag=game_boy_horror_location] run function luigis_mansion:entities/game_boy_horror_location/bring_player_back
 data modify storage luigis_mansion:data damage set value {method:"luigis_mansion:rocking_horse",amount:10,knockback:"large",no_delete:1b}
 execute store result storage luigis_mansion:data damage.attacker int 1 run scoreboard players get @s Owner
-execute as @a[distance=..3,gamemode=!spectator] run function luigis_mansion:entities/player/take_damage
+execute as @a[distance=..3,gamemode=!spectator] run function luigis_mansion:entities/player/damage
 data remove storage luigis_mansion:data damage
 execute if entity @s[scores={Owner=-2147483648..}] run scoreboard players operation #temp GhostNr = @s Owner
 execute if entity @s[scores={Owner=-2147483648..}] if entity @a[distance=..3,tag=!spectator,limit=1] as @e[tag=!model_piece,tag=ghost] if score @s GhostNr = #temp GhostNr run scoreboard players set @s AnimationProgress 0

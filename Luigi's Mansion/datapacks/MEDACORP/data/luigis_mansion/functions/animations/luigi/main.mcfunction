@@ -66,3 +66,4 @@ tag @s remove moved
 tag @s remove player
 execute unless entity @a[tag=this_luigi,scores={Shrunk=1..},limit=1] run tag @s add found_owner
 execute if entity @a[tag=this_luigi,scores={Shrunk=1..},limit=1] run tag @s add found_shrunk_owner
+tag @s add this_luigi

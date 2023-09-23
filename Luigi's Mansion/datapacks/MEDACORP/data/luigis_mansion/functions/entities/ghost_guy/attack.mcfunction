@@ -13,7 +13,7 @@ execute at @s[scores={ActionTime=20,AttackType=1},tag=stop_dancing] if entity @a
 execute at @s[scores={ActionTime=20,AttackType=1}] run data modify storage luigis_mansion:data damage set value {method:"luigis_mansion:cut",amount:0,knockback:"large",attacker:-1,no_delete:1b}
 execute at @s[scores={ActionTime=20,AttackType=1}] run data modify storage luigis_mansion:data damage.amount set from entity @s ArmorItems[3].tag.damage.attack
 execute at @s[scores={ActionTime=20,AttackType=1}] store result storage luigis_mansion:data damage.attacker int 1 run scoreboard players get @s GhostNr
-execute at @s[scores={ActionTime=20,AttackType=1}] as @a[distance=..2,gamemode=!spectator] run function luigis_mansion:entities/player/take_damage
+execute at @s[scores={ActionTime=20,AttackType=1}] as @a[distance=..2,gamemode=!spectator] run function luigis_mansion:entities/player/damage
 execute at @s[scores={ActionTime=20,AttackType=1}] run data remove storage luigis_mansion:data damage
 execute at @s[scores={ActionTime=20,AttackType=0}] positioned ^ ^ ^0.7 as @e[distance=..1,tag=game_boy_horror_location] run function luigis_mansion:entities/game_boy_horror_location/bring_player_back
 execute at @s[scores={ActionTime=20,AttackType=0},tag=stop_dancing] positioned ^ ^ ^0.7 unless entity @a[distance=..1,scores={Invulnerable=0},tag=!spectator] run tag @s add complain
@@ -21,7 +21,7 @@ execute at @s[scores={ActionTime=20,AttackType=0},tag=stop_dancing] positioned ^
 execute at @s[scores={ActionTime=20,AttackType=0}] run data modify storage luigis_mansion:data damage set value {method:"luigis_mansion:stab",amount:0,knockback:"large",attacker:-1,no_delete:1b}
 execute at @s[scores={ActionTime=20,AttackType=0}] run data modify storage luigis_mansion:data damage.amount set from entity @s ArmorItems[3].tag.damage.attack
 execute at @s[scores={ActionTime=20,AttackType=0}] store result storage luigis_mansion:data damage.attacker int 1 run scoreboard players get @s GhostNr
-execute at @s[scores={ActionTime=20,AttackType=0}] positioned ^ ^ ^0.7 as @a[distance=..1,gamemode=!spectator] run function luigis_mansion:entities/player/take_damage
+execute at @s[scores={ActionTime=20,AttackType=0}] positioned ^ ^ ^0.7 as @a[distance=..1,gamemode=!spectator] run function luigis_mansion:entities/player/damage
 execute at @s[scores={ActionTime=20,AttackType=0}] run data remove storage luigis_mansion:data damage
 tag @s[scores={ActionTime=30}] remove attack
 scoreboard players set @s[scores={ActionTime=30}] AnimationProgress 0

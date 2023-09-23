@@ -1,4 +1,4 @@
-function luigis_mansion:entities/player/memory/get
+function luigis_mansion:entities/player/memory/get with entity @s
 execute if entity @s[scores={ElementMeter=0}] run data modify storage luigis_mansion:data my_memory.poltergust_element set value "none"
 data modify storage luigis_mansion:data inventory set from entity @s Inventory
 execute if data storage luigis_mansion:data my_memory{poltergust_element:"none"} run data modify storage luigis_mansion:data inventory[{tag:{luigis_mansion:{id:"luigis_mansion:poltergust_3000"}}}].tag merge value {display:{Lore:['{"italic":false,"color":"gray","translate":"luigis_mansion:item.poltergust_3000.element","with":[{"translate":"luigis_mansion:item.poltergust_3000.element.none","color":"gray"}]}']}}

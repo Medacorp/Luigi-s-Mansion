@@ -1,4 +1,4 @@
-function luigis_mansion:entities/player/memory/get
+function luigis_mansion:entities/player/memory/get with entity @s
 execute store result score @s ID run data get storage luigis_mansion:data my_memory.id
 data modify storage luigis_mansion:data memory append from storage luigis_mansion:data my_memory
 data remove storage luigis_mansion:data my_memory

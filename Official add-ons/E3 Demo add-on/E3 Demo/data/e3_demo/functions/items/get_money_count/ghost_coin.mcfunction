@@ -1,5 +1,1 @@
-scoreboard players set #temp Money 0
-execute if data storage luigis_mansion:data current_state.current_data.money_grabbed[0] run function e3_demo:items/get_money_count/loop/ghost_coin
-execute if data storage luigis_mansion:data current_state.current_data.new_money_grabbed run data modify storage luigis_mansion:data current_state.current_data.money_grabbed set from storage luigis_mansion:data current_state.current_data.new_money_grabbed
-data remove storage luigis_mansion:data current_state.current_data.new_money_grabbed
-scoreboard players reset #temp Time
+execute if data storage luigis_mansion:data current_state.current_data{drop_item_on_damage:"e3_demo:ghost_coin"} run function luigis_mansion:items/get_money_count/search/select {namespace:e3_demo,id:ghost_coin}

@@ -7,7 +7,8 @@ tag @s add me
 scoreboard players set @s[scores={ErrorTime=0,Animation=-4}] Animation 0
 scoreboard players set @s[tag=capturing_ghost] Invulnerable 2
 tag @s remove capturing_ghost
-execute as @e[tag=ghost,tag=same_room,scores={VulnerableTime=1..}] run function e3_demo:items/poltergust_500/attacking_ghost
+execute store result storage luigis_mansion:data macro.id int 1 run scoreboard players get #temp ID
+function e3_demo:items/poltergust_500/attacking_ghost with storage luigis_mansion:data macro
 execute if score #temp GhostCount > @s GhostCount run scoreboard players operation @s GhostCount = #temp GhostCount
 execute if score #temp GhostCount matches 1.. run function e3_demo:items/poltergust_500/get_old_position
 execute if score #temp GhostCount matches 1.. run function e3_demo:items/poltergust_500/face_ghost

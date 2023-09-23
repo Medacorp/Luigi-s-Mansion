@@ -2,4 +2,4 @@ execute unless entity @a[tag=me,distance=..1.2,limit=1] if predicate luigis_mans
 execute unless entity @a[tag=me,distance=..1.2,limit=1] run tag @s add is_pulled
 tag @s add boo_hurt
 tag @s add in_vacuum
-execute if entity @s[scores={Health=..0}] run function luigis_mansion:items/poltergust_3000/latch_onto_ghost
+execute if entity @s[scores={Health=..0}] run function luigis_mansion:items/poltergust_3000/latch_onto_ghost with storage luigis_mansion:data macro

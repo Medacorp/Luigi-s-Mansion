@@ -22,10 +22,6 @@ execute if entity @s[tag=riding_poltergust,scores={KnockbackType=0},tag=!looking
 execute unless entity @s[tag=riding_poltergust,scores={KnockbackType=0},tag=!looking_at_map,tag=!death_animation,tag=!revive_animation] run scoreboard players set @s SlipX 0
 execute unless entity @s[tag=riding_poltergust,scores={KnockbackType=0},tag=!looking_at_map,tag=!death_animation,tag=!revive_animation] run scoreboard players set @s SlipZ 0
 
-tag @s remove talked_to_villager
-execute if entity @s[scores={Talk=1..},tag=!death_animation,tag=!revive_animation] unless entity @s[scores={IdleTime=..-1},tag=!idle] unless entity @s[scores={KnockbackType=1..}] unless entity @s[scores={ScareType=1..}] unless entity @s[scores={Dialog=1..}] run function luigis_mansion:target_villager
-scoreboard players set @s[scores={Talk=1..}] Talk 0
-
 execute unless entity @a[scores={GBHCall=1..},limit=1] rotated ~ 0 positioned ^ ^ ^-4 run function luigis_mansion:entities/player/spawn_ghosts
 
 function luigis_mansion:entities/player/health_display
@@ -58,7 +54,8 @@ execute at @s[scores={LightX=-2147483648..,Shrunk=1..}] run function luigis_mans
 tag @s[tag=!death_animation,tag=!revive_animation] remove spectator
 
 effect give @s minecraft:invisibility infinite 0 true
-execute at @s[tag=!camera] run function luigis_mansion:animations/luigi
+execute store result storage luigis_mansion:data macro.id int 1 run scoreboard players get @s ID
+execute if entity @s[tag=!camera] run function luigis_mansion:animations/luigi with storage luigis_mansion:data macro
 execute if entity @s[scores={KnockbackTime=1..}] run function luigis_mansion:entities/player/knockback
 execute unless entity @s[scores={KnockbackType=8..10}] run scoreboard players reset @s GrabbedShake
 execute unless entity @s[scores={KnockbackType=8..10}] run tag @s remove grabbed

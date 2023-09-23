@@ -1,1 +1,1 @@
-execute if entity @s[tag=blue_sapphire] run function luigis_mansion:items/blue_sapphire
+execute if entity @s[tag=blue_sapphire] run function luigis_mansion:items/money/big {namespace:luigis_mansion,id:blue_sapphire,value:500}

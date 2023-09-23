@@ -1,1 +1,1 @@
-execute if entity @s[tag=gold_bar] run function luigis_mansion:items/gold_bar
+execute if entity @s[tag=gold_bar] run function luigis_mansion:items/money/small {namespace:luigis_mansion,id:gold_bar,value:100}

@@ -13,7 +13,7 @@ execute at @s[scores={ActionTime=41}] if entity @a[distance=..2,scores={Invulner
 execute at @s[scores={ActionTime=41}] run data modify storage luigis_mansion:data damage set value {method:"luigis_mansion:earthquake",amount:0,knockback:"large",attacker:-1,no_delete:1b}
 execute at @s[scores={ActionTime=41}] run data modify storage luigis_mansion:data damage.amount set from entity @s ArmorItems[3].tag.damage.attack
 execute at @s[scores={ActionTime=41}] store result storage luigis_mansion:data damage.attacker int 1 run scoreboard players get @s GhostNr
-execute at @s[scores={ActionTime=41}] as @a[distance=..2,gamemode=!spectator] run function luigis_mansion:entities/player/take_damage
+execute at @s[scores={ActionTime=41}] as @a[distance=..2,gamemode=!spectator] run function luigis_mansion:entities/player/damage
 execute at @s[scores={ActionTime=41}] run data remove storage luigis_mansion:data damage
 tag @s[scores={ActionTime=41},tag=!laugh] add complain
 tag @s[scores={ActionTime=60}] remove attack
