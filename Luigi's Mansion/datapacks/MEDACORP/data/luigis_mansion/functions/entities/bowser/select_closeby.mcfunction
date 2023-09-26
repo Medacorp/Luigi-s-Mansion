@@ -1,6 +1,4 @@
-summon minecraft:marker ~ ~ ~ {Tags:["breathe_fire","random_select"]}
-summon minecraft:marker ~ ~ ~ {Tags:["vacuum","random_select"]}
-tag @e[type=minecraft:marker,tag=random_select,sort=random,limit=1] add selected
-execute if entity @e[type=minecraft:marker,tag=random_select,tag=selected,tag=breathe_fire,limit=1] run tag @s add breathe_fire
-execute if entity @e[type=minecraft:marker,tag=random_select,tag=selected,tag=vacuum,limit=1] run tag @s add vacuum
-kill @e[type=minecraft:marker,tag=random_select]
+execute store result score #temp Time run random value 1..2
+execute if score #temp Time matches 1 run tag @s add breathe_fire
+execute if score #temp Time matches 2 run tag @s add vacuum
+scoreboard players reset #temp Time

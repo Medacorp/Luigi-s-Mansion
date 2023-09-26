@@ -4,14 +4,7 @@ scoreboard players add @s[scores={Dialog=301..}] Dialog 1
 execute unless entity @e[tag=portrificationizing_ghost,scores={Dialog=301..380},limit=1] run scoreboard players add @s[scores={Dialog=300}] Dialog 1
 scoreboard players add @s[scores={Dialog=..299}] Dialog 1
 execute unless entity @s[scores={Dialog=1..}] run scoreboard players add @s Dialog 1
-execute if entity @s[scores={Dialog=1}] run loot spawn ~ ~ ~ loot luigis_mansion:gameplay/0_90
-execute if entity @s[scores={Dialog=1}] run data modify entity @s Rotation[0] set from entity @e[distance=..0.7,type=minecraft:item,nbt={Item:{id:"minecraft:carved_pumpkin"}},limit=1] Item.tag.Value
-execute if entity @s[scores={Dialog=1}] run kill @e[distance=..0.7,type=minecraft:item,nbt={Item:{id:"minecraft:carved_pumpkin"}}]
-execute if entity @s[scores={Dialog=1}] run loot spawn ~ ~ ~ loot luigis_mansion:gameplay/0_3
-execute if entity @s[scores={Dialog=1}] if entity @e[distance=..0.7,type=minecraft:item,nbt={Item:{id:"minecraft:carved_pumpkin",tag:{Value:1}}}] at @s run teleport @s ~ ~ ~ ~90 ~
-execute if entity @s[scores={Dialog=1}] if entity @e[distance=..0.7,type=minecraft:item,nbt={Item:{id:"minecraft:carved_pumpkin",tag:{Value:2}}}] at @s run teleport @s ~ ~ ~ ~180 ~
-execute if entity @s[scores={Dialog=1}] if entity @e[distance=..0.7,type=minecraft:item,nbt={Item:{id:"minecraft:carved_pumpkin",tag:{Value:3}}}] at @s run teleport @s ~ ~ ~ ~-90 ~
-execute if entity @s[scores={Dialog=1}] run kill @e[distance=..0.7,type=minecraft:item,nbt={Item:{id:"minecraft:carved_pumpkin"}}]
+execute if entity @s[scores={Dialog=1}] store result entity @s Rotation[0] float 1 run random value -180..179
 data modify entity @s[scores={Dialog=1}] Pose.Head set value [45.0f,0.0f,0.0f]
 execute at @s[scores={Dialog=40}] run teleport @s ~ ~-1 ~
 execute at @s[scores={Dialog=41..100}] if predicate luigis_mansion:50_50 run teleport @s ~ ~-0.067 ~

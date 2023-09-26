@@ -24,16 +24,9 @@ execute if entity @s[scores={Dialog=471..1000}] as @a[tag=same_room,tag=!spectat
 execute if entity @s[scores={Dialog=471}] if score #mansion_data_index Selected matches 1 run function 3ds_remake:room/hidden/conservatory/stop_music
 execute if entity @s[scores={Dialog=471}] if score #mansion_data_index Selected matches 0 run function luigis_mansion:room/hidden/conservatory/stop_music
 execute if entity @s[scores={Dialog=472}] run scoreboard players set #conservatory Wave 3
-execute if entity @s[scores={Dialog=472}] run summon minecraft:marker ~ ~ ~ {"Tags":["1","option"]}
-execute if entity @s[scores={Dialog=472}] run summon minecraft:marker ~ ~ ~ {"Tags":["2","option"]}
-execute if entity @s[scores={Dialog=472}] run tag @e[type=minecraft:marker,tag=option,sort=random,limit=1] add selected
-execute if entity @s[scores={Dialog=472}] if entity @e[type=minecraft:marker,tag=option,tag=selected,tag=1,limit=1] run tag @s add 1
-execute if entity @s[scores={Dialog=472}] if entity @e[type=minecraft:marker,tag=option,tag=selected,tag=2,limit=1] run tag @s add 2
-execute if entity @s[scores={Dialog=472}] run kill @e[type=minecraft:marker,tag=option]
-execute if entity @s[scores={Dialog=472..998},tag=1] run function luigis_mansion:entities/melody_pianissima/composer
-execute if entity @s[scores={Dialog=472..998},tag=2] run function luigis_mansion:entities/melody_pianissima/game
-tag @s[scores={Dialog=1000..}] remove 1
-tag @s[scores={Dialog=1000..}] remove 2
+execute if entity @s[scores={Dialog=472}] store result score @s Variant run roll value 1..2
+execute if entity @s[scores={Dialog=472..998,Variant=1}] run function luigis_mansion:entities/melody_pianissima/composer
+execute if entity @s[scores={Dialog=472..998,Variant=2}] run function luigis_mansion:entities/melody_pianissima/game
 execute if entity @s[scores={Dialog=1000..}] run scoreboard players reset @a MelodyChoice
 
 execute if entity @s[scores={Dialog=1000}] as @a[tag=same_room,tag=!spectator,tag=!looking_at_map] run function luigis_mansion:entities/player/animation/set/nod

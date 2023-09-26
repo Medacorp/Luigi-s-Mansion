@@ -9,50 +9,7 @@ execute unless entity @s[scores={Variant=-10..}] if score #temp Boos matches 20 
 execute unless entity @s[scores={Variant=-10..}] if score #temp Boos matches 21 run scoreboard players set @s Variant -5
 execute unless entity @s[scores={Variant=-10..}] if score #temp Boos matches 50 run scoreboard players set @s Variant -8
 scoreboard players reset #temp Boos
-execute unless entity @s[scores={Variant=-10..}] run summon minecraft:marker ~ ~ ~ {Tags:["choice","1"]}
-execute unless entity @s[scores={Variant=-10..}] run summon minecraft:marker ~ ~ ~ {Tags:["choice","2"]}
-execute unless entity @s[scores={Variant=-10..}] run summon minecraft:marker ~ ~ ~ {Tags:["choice","3"]}
-execute unless entity @s[scores={Variant=-10..}] run summon minecraft:marker ~ ~ ~ {Tags:["choice","4"]}
-execute unless entity @s[scores={Variant=-10..}] run summon minecraft:marker ~ ~ ~ {Tags:["choice","5"]}
-execute unless entity @s[scores={Variant=-10..}] run summon minecraft:marker ~ ~ ~ {Tags:["choice","6"]}
-execute unless entity @s[scores={Variant=-10..}] run summon minecraft:marker ~ ~ ~ {Tags:["choice","7"]}
-execute unless entity @s[scores={Variant=-10..}] run summon minecraft:marker ~ ~ ~ {Tags:["choice","8"]}
-execute unless entity @s[scores={Variant=-10..}] run summon minecraft:marker ~ ~ ~ {Tags:["choice","9"]}
-execute unless entity @s[scores={Variant=-10..}] run summon minecraft:marker ~ ~ ~ {Tags:["choice","10"]}
-execute unless entity @s[scores={Variant=-10..}] run summon minecraft:marker ~ ~ ~ {Tags:["choice","11"]}
-execute unless entity @s[scores={Variant=-10..}] run summon minecraft:marker ~ ~ ~ {Tags:["choice","12"]}
-execute unless entity @s[scores={Variant=-10..}] run summon minecraft:marker ~ ~ ~ {Tags:["choice","13"]}
-execute unless entity @s[scores={Variant=-10..}] run summon minecraft:marker ~ ~ ~ {Tags:["choice","14"]}
-execute unless entity @s[scores={Variant=-10..}] run summon minecraft:marker ~ ~ ~ {Tags:["choice","15"]}
-execute unless entity @s[scores={Variant=-10..}] run summon minecraft:marker ~ ~ ~ {Tags:["choice","16"]}
-execute unless entity @s[scores={Variant=-10..}] run tag @e[type=minecraft:marker,tag=choice,limit=1,sort=random] add selected
-execute unless entity @s[scores={Variant=-10..}] if entity @e[type=minecraft:marker,tag=choice,tag=selected,tag=1,limit=1] run scoreboard players set @s Variant 1
-execute unless entity @s[scores={Variant=-10..}] if entity @e[type=minecraft:marker,tag=choice,tag=selected,tag=2,limit=1] run scoreboard players set @s Variant 2
-execute unless entity @s[scores={Variant=-10..}] if entity @e[type=minecraft:marker,tag=choice,tag=selected,tag=3,limit=1] run scoreboard players set @s Variant 3
-execute unless entity @s[scores={Variant=-10..}] if entity @e[type=minecraft:marker,tag=choice,tag=selected,tag=4,limit=1] run scoreboard players set @s Variant 4
-execute unless entity @s[scores={Variant=-10..}] if entity @e[type=minecraft:marker,tag=choice,tag=selected,tag=5,limit=1] run scoreboard players set @s Variant 5
-execute unless entity @s[scores={Variant=-10..}] if entity @e[type=minecraft:marker,tag=choice,tag=selected,tag=6,limit=1] run scoreboard players set @s Variant 6
-execute unless entity @s[scores={Variant=-10..}] if entity @e[type=minecraft:marker,tag=choice,tag=selected,tag=7,limit=1] run scoreboard players set @s Variant 7
-execute unless entity @s[scores={Variant=-10..}] if entity @e[type=minecraft:marker,tag=choice,tag=selected,tag=8,limit=1] run scoreboard players set @s Variant 8
-execute unless entity @s[scores={Variant=-10..}] if entity @e[type=minecraft:marker,tag=choice,tag=selected,tag=9,limit=1] run scoreboard players set @s Variant 9
-execute unless entity @s[scores={Variant=-10..}] if entity @e[type=minecraft:marker,tag=choice,tag=selected,tag=10,limit=1] run scoreboard players set @s Variant 10
-execute unless entity @s[scores={Variant=-10..}] if entity @e[type=minecraft:marker,tag=choice,tag=selected,tag=11,limit=1] run scoreboard players set @s Variant 11
-execute unless entity @s[scores={Variant=-10..}] if entity @e[type=minecraft:marker,tag=choice,tag=selected,tag=12,limit=1] run scoreboard players set @s Variant 12
-execute unless entity @s[scores={Variant=-10..}] if entity @e[type=minecraft:marker,tag=choice,tag=selected,tag=13,limit=1] run scoreboard players set @s Variant 13
-execute unless entity @s[scores={Variant=-10..}] if entity @e[type=minecraft:marker,tag=choice,tag=selected,tag=14,limit=1] run scoreboard players set @s Variant 14
-execute unless entity @s[scores={Variant=-10..}] if entity @e[type=minecraft:marker,tag=choice,tag=selected,tag=15,limit=1] run scoreboard players set @s Variant 15
-execute unless entity @s[scores={Variant=-10..}] if entity @e[type=minecraft:marker,tag=choice,tag=selected,tag=16,limit=1] run scoreboard players set @s Variant 16
-execute unless entity @s[scores={Variant=-10..}] if entity @e[type=minecraft:marker,tag=choice,tag=selected,tag=16,limit=1] run scoreboard players set @s Variant 17
-execute unless entity @s[scores={Variant=-10..}] if entity @e[type=minecraft:marker,tag=choice,tag=selected,tag=16,limit=1] run scoreboard players set @s Variant 18
-execute unless entity @s[scores={Variant=-10..}] if entity @e[type=minecraft:marker,tag=choice,tag=selected,tag=16,limit=1] run scoreboard players set @s Variant 19
-execute unless entity @s[scores={Variant=-10..}] if entity @e[type=minecraft:marker,tag=choice,tag=selected,tag=16,limit=1] run scoreboard players set @s Variant 20
-execute unless entity @s[scores={Variant=-10..}] if entity @e[type=minecraft:marker,tag=choice,tag=selected,tag=16,limit=1] run scoreboard players set @s Variant 21
-execute unless entity @s[scores={Variant=-10..}] if entity @e[type=minecraft:marker,tag=choice,tag=selected,tag=16,limit=1] run scoreboard players set @s Variant 22
-execute unless entity @s[scores={Variant=-10..}] if entity @e[type=minecraft:marker,tag=choice,tag=selected,tag=16,limit=1] run scoreboard players set @s Variant 23
-execute unless entity @s[scores={Variant=-10..}] if entity @e[type=minecraft:marker,tag=choice,tag=selected,tag=16,limit=1] run scoreboard players set @s Variant 24
-execute unless entity @s[scores={Variant=-10..}] if entity @e[type=minecraft:marker,tag=choice,tag=selected,tag=16,limit=1] run scoreboard players set @s Variant 25
-execute unless entity @s[scores={Variant=-10..}] if entity @e[type=minecraft:marker,tag=choice,tag=selected,tag=16,limit=1] run scoreboard players set @s Variant 26
-execute unless entity @s[scores={Variant=-10..}] if entity @e[type=minecraft:marker,tag=choice,tag=selected,tag=16,limit=1] run scoreboard players set @s Variant 27
+execute unless entity @s[scores={Variant=-10..}] store result score @s Variant run roll value 1..27
 kill @e[type=minecraft:marker,tag=choice]
 
 execute if entity @a[scores={EGaddCallChoice=1..},limit=1] run scoreboard players add @s[scores={GBHDialog=10097..}] GBHDialog 1
