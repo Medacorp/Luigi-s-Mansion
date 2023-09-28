@@ -7,10 +7,10 @@ teleport @s[scores={PathStep=3}] ~ ~ ~ facing 700 11 45
 scoreboard players set @s[x=700.5,y=11,z=45.5,distance=..0.7,scores={PathStep=3}] PathStep 4
 teleport @s[scores={PathStep=4}] ~ ~ ~ facing 702 11 45
 scoreboard players add @s[x=702.5,y=11,z=45.5,distance=..0.7,scores={PathStep=4..13}] PathStep 1
-execute if entity @e[tag=mr_luggs,scores={Dialog=..100}] run tag @s[scores={PathStep=5}] add placing_food
-execute if entity @e[tag=mr_luggs,scores={Dialog=101..}] run tag @s[scores={PathStep=5}] add complain
+execute if entity @e[nbt={ArmorItems:[{tag:{namespace:"luigis_mansion",id:"mr_luggs"}}]},scores={Dialog=..100}] run tag @s[scores={PathStep=5}] add placing_food
+execute if entity @e[nbt={ArmorItems:[{tag:{namespace:"luigis_mansion",id:"mr_luggs"}}]},scores={Dialog=101..}] run tag @s[scores={PathStep=5}] add complain
 scoreboard players set @s[scores={PathStep=5}] AnimationProgress 0
-execute if entity @s[scores={PathStep=7}] run scoreboard players set @e[tag=mr_luggs,scores={Dialog=2..99},limit=1] Dialog 1
+execute if entity @s[scores={PathStep=7}] run scoreboard players set @e[nbt={ArmorItems:[{tag:{namespace:"luigis_mansion",id:"mr_luggs"}}]},scores={Dialog=2..99},limit=1] Dialog 1
 teleport @s[scores={PathStep=14}] ~ ~ ~ facing 701 11 48
 scoreboard players set @s[x=701.5,y=11,z=48.5,distance=..0.7,scores={PathStep=14}] PathStep 15
 teleport @s[scores={PathStep=15}] ~ ~ ~ facing 701 11 53

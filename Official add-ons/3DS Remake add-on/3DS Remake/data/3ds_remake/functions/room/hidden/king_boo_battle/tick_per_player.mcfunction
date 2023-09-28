@@ -1,5 +1,5 @@
-execute unless data storage luigis_mansion:data current_state.current_data.portrait_ghosts.king_boo{health:0} run function luigis_mansion:other/music/set/king_boo_battle_skip_intro
-execute if data storage luigis_mansion:data current_state.current_data.portrait_ghosts.king_boo{health:0} run function luigis_mansion:other/music/set/area_boss_defeated
+execute unless data storage luigis_mansion:data current_state.current_data.portrait_ghosts.luigis_mansion.king_boo{health:0} run function luigis_mansion:other/music/set/king_boo_battle_skip_intro
+execute if data storage luigis_mansion:data current_state.current_data.portrait_ghosts.luigis_mansion.king_boo{health:0} run function luigis_mansion:other/music/set/area_boss_defeated
 tag @s add seen_room_name
 scoreboard players set @s LastFloor 3
 

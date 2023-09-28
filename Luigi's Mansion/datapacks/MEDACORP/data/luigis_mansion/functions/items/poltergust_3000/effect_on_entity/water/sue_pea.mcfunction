@@ -1,1 +1,1 @@
-tag @s[tag=sue_pea] add watered
+tag @s[nbt={ArmorItems:[{tag:{namespace:"luigis_mansion",id:"sue_pea"}}]}] add watered

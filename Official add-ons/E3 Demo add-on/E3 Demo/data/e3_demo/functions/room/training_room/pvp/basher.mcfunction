@@ -1,0 +1,2 @@
+execute if entity @e[type=minecraft:marker,tag=selected,nbt={data:{namespace:"e3_demo",id:"basher"}},limit=1] run function e3_demo:room/training_room/spawn/basher
+execute unless entity @e[type=minecraft:marker,tag=selected,limit=1] run summon minecraft:marker ~ ~ ~ {Tags:["select_ghost"],data:{namespace:"e3_demo",id:"basher"}}

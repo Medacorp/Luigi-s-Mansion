@@ -1,1 +1,1 @@
-tag @s[tag=black_bogmire] add in_vacuum
+tag @s[nbt={ArmorItems:[{tag:{namespace:"luigis_mansion",id:"black_bogmire"}}]}] add in_vacuum

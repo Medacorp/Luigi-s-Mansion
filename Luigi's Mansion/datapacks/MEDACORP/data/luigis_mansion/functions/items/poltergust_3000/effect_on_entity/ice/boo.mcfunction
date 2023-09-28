@@ -1,1 +1,1 @@
-tag @s[tag=boo] add frozen
+tag @s[nbt={ArmorItems:[{tag:{namespace:"luigis_mansion",id:"boo"}}]}] add frozen

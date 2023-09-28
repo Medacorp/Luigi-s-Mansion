@@ -1,1 +1,0 @@
-execute if entity @s[tag=blue_blaze] run function luigis_mansion:entities/ghost/capture/caught/blue_blaze

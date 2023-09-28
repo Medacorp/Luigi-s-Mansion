@@ -1,2 +1,2 @@
-tag @s[tag=vacuumable,tag=spark,tag=visible] add element_death
-execute if entity @s[tag=vacuumable,tag=spark,tag=visible] run function luigis_mansion:items/poltergust_3000/latch_onto_ghost with storage luigis_mansion:data macro
+tag @s[tag=vacuumable,nbt={ArmorItems:[{tag:{namespace:"luigis_mansion",id:"spark"}}]},tag=visible] add element_death
+execute if entity @s[tag=vacuumable,nbt={ArmorItems:[{tag:{namespace:"luigis_mansion",id:"spark"}}]},tag=visible] run function luigis_mansion:items/poltergust_3000/latch_onto_ghost with storage luigis_mansion:data macro

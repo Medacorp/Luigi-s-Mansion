@@ -1,8 +1,8 @@
 {
     "values": [
-        "extensive_training:room/training_room/pvp/beta_basher",
-        "extensive_training:room/training_room/pvp/beta_body_slammer",
-        "extensive_training:room/training_room/pvp/beta_ghost",
-        "extensive_training:room/training_room/pvp/beta_puncher"
+        "e3_demo:room/training_room/pvp/basher",
+        "e3_demo:room/training_room/pvp/body_slammer",
+        "e3_demo:room/training_room/pvp/ghost",
+        "e3_demo:room/training_room/pvp/puncher"
     ]
 }

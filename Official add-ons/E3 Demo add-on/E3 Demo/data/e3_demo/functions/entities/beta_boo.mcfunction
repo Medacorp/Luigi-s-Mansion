@@ -1,1 +1,0 @@
-execute if entity @s[tag=beta_boo] run function e3_demo:entities/beta_boo/tick

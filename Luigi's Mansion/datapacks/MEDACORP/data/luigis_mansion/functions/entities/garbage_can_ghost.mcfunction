@@ -1,2 +1,2 @@
-execute if entity @s[tag=garbage_can_ghost,tag=!hidden] run function luigis_mansion:entities/garbage_can_ghost/tick
-execute if entity @s[tag=garbage_can_ghost,tag=hidden] run function luigis_mansion:entities/garbage_can_ghost/hidden_tick
+execute if entity @s[nbt={ArmorItems:[{tag:{namespace:"luigis_mansion",id:"garbage_can_ghost"}}]},tag=!hidden] run function luigis_mansion:entities/garbage_can_ghost/tick
+execute if entity @s[nbt={ArmorItems:[{tag:{namespace:"luigis_mansion",id:"garbage_can_ghost"}}]},tag=hidden] run function luigis_mansion:entities/garbage_can_ghost/hidden_tick

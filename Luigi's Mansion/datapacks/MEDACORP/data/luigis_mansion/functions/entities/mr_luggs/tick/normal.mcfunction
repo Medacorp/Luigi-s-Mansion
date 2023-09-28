@@ -14,7 +14,7 @@ execute if entity @s[scores={Dialog=51..80}] run teleport @e[tag=this_food,limit
 execute if entity @s[scores={Dialog=81..99}] run teleport @e[tag=this_food,limit=1] ^ ^-0.2 ^2
 scoreboard players add @s[scores={Dialog=100..}] Dialog 1
 execute if entity @s[scores={Dialog=101}] run kill @e[tag=this_food,limit=1]
-execute if entity @s[scores={Dialog=2..99}] run tag @e[tag=hidden,tag=waiter] add spawn
+execute if entity @s[scores={Dialog=2..99}] run tag @e[tag=hidden,nbt={ArmorItems:[{tag:{namespace:"luigis_mansion",id:"waiter"}}]}] add spawn
 
 execute unless entity @s[scores={Dialog=100..},tag=!vanish] run scoreboard players add @s ActionTime 1
 execute if entity @s[scores={Dialog=..99,ActionTime=1}] run particle minecraft:dust 1 0.9 0 1 ^0.3 ^1.1 ^1 0.3 0.3 0.3 0 5

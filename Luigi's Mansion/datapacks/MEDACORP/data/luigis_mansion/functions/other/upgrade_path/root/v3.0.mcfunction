@@ -12,6 +12,16 @@ execute if data storage luigis_mansion:data {obtained_parlor_key:1b} run data mo
 execute if data storage luigis_mansion:data {used_parlor_key:1b} run data modify storage luigis_mansion:data current_state.current_data.used_keys merge value {parlor:1b}
 execute if data storage luigis_mansion:data {used_parlor_key:1b} run data modify storage luigis_mansion:data current_state.mansion_data[].used_keys merge value {parlor:1b}
 execute if data storage luigis_mansion:data {used_parlor_key:1b} run data modify storage luigis_mansion:data saved_state.mansion_data[].used_keys merge value {parlor:1b}
+data modify storage luigis_mansion:data ghosts_caught set from storage luigis_mansion:data current_state.ghosts_caught
+function luigis_mansion:other/upgrade_path/change_up_ghost_data
+data modify storage luigis_mansion:data current_state.ghosts_caught set from storage luigis_mansion:data new_ghosts_caught
+data remove storage luigis_mansion:data ghosts_caught
+data remove storage luigis_mansion:data new_ghosts_caught
+data modify storage luigis_mansion:data ghosts_caught set from storage luigis_mansion:data saved_state.ghosts_caught
+function luigis_mansion:other/upgrade_path/change_up_ghost_data
+data modify storage luigis_mansion:data saved_state.ghosts_caught set from storage luigis_mansion:data new_ghosts_caught
+data remove storage luigis_mansion:data ghosts_caught
+data remove storage luigis_mansion:data new_ghosts_caught
 data remove storage luigis_mansion:data luigi_colors
 data remove storage luigis_mansion:data inventories
 data remove storage luigis_mansion:data obtained_parlor_key

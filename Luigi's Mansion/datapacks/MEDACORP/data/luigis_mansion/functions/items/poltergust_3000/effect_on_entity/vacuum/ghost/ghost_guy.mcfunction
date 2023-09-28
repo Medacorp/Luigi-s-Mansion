@@ -1,1 +1,2 @@
-tag @s[tag=ghost_guy,tag=!maskless] add in_vacuum
+tag @s[nbt={ArmorItems:[{tag:{namespace:"luigis_mansion",id:"ghost_guy"}}]},tag=!maskless] add in_vacuum
+tag @s[nbt={ArmorItems:[{tag:{namespace:"luigis_mansion",id:"dancing_ghost_guy"}}]},tag=!maskless] add in_vacuum

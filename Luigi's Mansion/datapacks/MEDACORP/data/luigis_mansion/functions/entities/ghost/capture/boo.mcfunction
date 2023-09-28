@@ -1,1 +1,2 @@
-execute unless entity @s[tag=!boo,tag=!boolossus] run function luigis_mansion:entities/ghost/capture/caught/boo
+execute if entity @s[nbt={ArmorItems:[{tag:{namespace:"luigis_mansion",id:"boo"}}]}] if score #firstRun Selected matches 1 run function #luigis_mansion:entities/boo/captured
+execute if entity @s[nbt={ArmorItems:[{tag:{namespace:"luigis_mansion",id:"boolossus"}}]}] if score #firstRun Selected matches 1 run function #luigis_mansion:entities/boo/captured

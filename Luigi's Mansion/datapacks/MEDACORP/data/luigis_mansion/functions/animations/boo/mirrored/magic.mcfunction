@@ -8,9 +8,9 @@ execute if entity @s[scores={AnimationProgress=125..134}] store result entity @s
 execute if entity @s[scores={AnimationProgress=135..154}] store result entity @s Pose.Head[2] float 1 run scoreboard players add #temp Time 1
 scoreboard players reset #temp Time
 data modify entity @s[scores={AnimationProgress=1}] ArmorItems[3] merge from entity @s ArmorItems[3].tag.variants.attacking
-data modify entity @s[scores={AnimationProgress=1}] HandItems[0].id set from entity @s ArmorItems[3].tag.invisible
-data modify entity @s[scores={AnimationProgress=1}] HandItems[1].id set from entity @s ArmorItems[3].tag.invisible
+data modify entity @s[scores={AnimationProgress=1}] HandItems[0].id set from entity @s HandItems[0].tag.invisible
+data modify entity @s[scores={AnimationProgress=1}] HandItems[1].id set from entity @s HandItems[1].tag.invisible
 data modify entity @s[scores={AnimationProgress=160}] ArmorItems[3] merge from entity @s ArmorItems[3].tag.variants.default
-data modify entity @s[scores={AnimationProgress=160}] HandItems[0].id set from entity @s ArmorItems[3].tag.visible
-data modify entity @s[scores={AnimationProgress=160}] HandItems[1].id set from entity @s ArmorItems[3].tag.visible
+data modify entity @s[scores={AnimationProgress=160}] HandItems[0].id set from entity @s HandItems[0].tag.visible
+data modify entity @s[scores={AnimationProgress=160}] HandItems[1].id set from entity @s HandItems[1].tag.visible
 scoreboard players set @s[scores={AnimationProgress=160}] AnimationProgress 0

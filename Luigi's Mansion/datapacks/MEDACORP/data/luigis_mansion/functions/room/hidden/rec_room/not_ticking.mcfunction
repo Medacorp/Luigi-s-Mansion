@@ -1,6 +1,6 @@
 execute unless entity @a[scores={LastRoom=32},limit=1] run function #luigis_mansion:room/hidden/rec_room/reset
-execute as @e[scores={Room=32},tag=ghost,tag=!portrait_ghost,tag=!boo] run function luigis_mansion:entities/ghost/non_ticking_room
+execute as @e[scores={Room=32},tag=ghost,tag=!portrait_ghost,nbt=!{ArmorItems:[{tag:{namespace:"luigis_mansion",id:"boo"}}]}] run function luigis_mansion:entities/ghost/non_ticking_room
 scoreboard players reset #rec_room Vacuumables
 
-execute as @e[scores={Room=32},tag=biff_atlas] run function luigis_mansion:entities/biff_atlas/disappear/hidden
-tag @e[scores={Room=32},tag=biff_atlas] remove ko
+execute as @e[scores={Room=32},nbt={ArmorItems:[{tag:{namespace:"luigis_mansion",id:"biff_atlas"}}]}] run function luigis_mansion:entities/biff_atlas/disappear/hidden
+tag @e[scores={Room=32},nbt={ArmorItems:[{tag:{namespace:"luigis_mansion",id:"biff_atlas"}}]}] remove ko

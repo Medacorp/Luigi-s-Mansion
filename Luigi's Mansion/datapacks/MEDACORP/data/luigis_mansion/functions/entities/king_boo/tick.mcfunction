@@ -28,7 +28,7 @@ tag @s remove fleeing
 
 function #luigis_mansion:entities/king_boo/tick
 tag @s[tag=vanish] add dead
-execute if entity @s[tag=vanish] store result storage luigis_mansion:data current_state.current_data.portrait_ghosts.king_boo.health int 1 run scoreboard players get @s Health
+execute if entity @s[tag=vanish] store result storage luigis_mansion:data current_state.current_data.portrait_ghosts.luigis_mansion.king_boo.health int 1 run scoreboard players get @s Health
 tag @s remove boo_hurt
 tag @s remove in_vacuum
 tag @s remove is_pulled

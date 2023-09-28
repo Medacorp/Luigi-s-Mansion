@@ -1,1 +1,0 @@
-execute if entity @s[tag=beta_shining_ghost] run function e3_demo:entities/ghost/capture/caught/beta_shining_ghost

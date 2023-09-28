@@ -7,6 +7,6 @@ scoreboard players set @e[tag=shot_fire,tag=new,limit=1] Move 10
 execute if entity @s[scores={Dialog=441..481}] run scoreboard players set @e[tag=shot_fire,tag=new,limit=1] Move 15
 execute if entity @s[scores={Dialog=541..601}] run scoreboard players set @e[tag=shot_fire,tag=new,limit=1] Move 20
 execute if entity @s[scores={Dialog=681..761}] run scoreboard players set @e[tag=shot_fire,tag=new,limit=1] Move 25
-execute as @e[tag=shot_fire,tag=new,limit=1] at @s rotated as @e[tag=mr_luggs,limit=1] run teleport @s ~ ~ ~ ~ ~
+execute as @e[tag=shot_fire,tag=new,limit=1] at @s rotated as @e[nbt={ArmorItems:[{tag:{namespace:"luigis_mansion",id:"mr_luggs"}}]},limit=1] run teleport @s ~ ~ ~ ~ ~
 execute as @e[tag=shot_fire,tag=new,limit=1] run data modify entity @s Pose.Head[0] set from entity @s Rotation[1]
 tag @e[tag=shot_fire,tag=new,limit=1] remove new

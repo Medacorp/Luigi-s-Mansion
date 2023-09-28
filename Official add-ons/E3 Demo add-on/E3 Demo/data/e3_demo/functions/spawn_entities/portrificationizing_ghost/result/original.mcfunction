@@ -1,4 +1,4 @@
-execute if data storage luigis_mansion:data current_state.current_data.portrait_ghosts.neville{portrificationized:0b,health:0} run function luigis_mansion:spawn_entities/portrificationizing_ghost/ghost/neville
-execute if data storage luigis_mansion:data current_state.current_data.portrait_ghosts.lydia{portrificationized:0b,health:0} run function luigis_mansion:spawn_entities/portrificationizing_ghost/ghost/lydia
-execute if data storage luigis_mansion:data current_state.current_data.portrait_ghosts.spooky{portrificationized:0b,health:0} run function luigis_mansion:spawn_entities/portrificationizing_ghost/ghost/spooky
-execute if data storage luigis_mansion:data current_state.current_data.portrait_ghosts.miss_petunia{portrificationized:0b,health:0} run function luigis_mansion:spawn_entities/portrificationizing_ghost/ghost/miss_petunia
+execute if data storage luigis_mansion:data current_state.current_data.portrait_ghosts.luigis_mansion.neville{portrificationized:0b,health:0} run function luigis_mansion:spawn_entities/portrificationizing_ghost/ghost/neville
+execute if data storage luigis_mansion:data current_state.current_data.portrait_ghosts.luigis_mansion.lydia{portrificationized:0b,health:0} run function luigis_mansion:spawn_entities/portrificationizing_ghost/ghost/lydia
+execute if data storage luigis_mansion:data current_state.current_data.portrait_ghosts.luigis_mansion.spooky{portrificationized:0b,health:0} run function luigis_mansion:spawn_entities/portrificationizing_ghost/ghost/spooky
+execute if data storage luigis_mansion:data current_state.current_data.portrait_ghosts.luigis_mansion.miss_petunia{portrificationized:0b,health:0} run function luigis_mansion:spawn_entities/portrificationizing_ghost/ghost/miss_petunia

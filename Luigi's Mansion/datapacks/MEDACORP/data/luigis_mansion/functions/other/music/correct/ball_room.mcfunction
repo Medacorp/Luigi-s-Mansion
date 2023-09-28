@@ -1,2 +1,2 @@
-execute if entity @s[scores={MusicType=12,MusicGroup=0}] if entity @e[tag=floating_whirlindas,tag=same_room,limit=1] run function luigis_mansion:other/music/set/force/floating_whirlindas
-execute if entity @s[scores={MusicType=13,MusicGroup=0}] unless entity @e[tag=floating_whirlindas,tag=same_room,limit=1] run function luigis_mansion:other/music/set/force/ball_room
+execute if entity @s[scores={MusicType=12,MusicGroup=0}] if entity @e[nbt={ArmorItems:[{tag:{namespace:"luigis_mansion",id:"floating_whirlindas"}}]},tag=same_room,limit=1] run function luigis_mansion:other/music/set/force/floating_whirlindas
+execute if entity @s[scores={MusicType=13,MusicGroup=0}] unless entity @e[nbt={ArmorItems:[{tag:{namespace:"luigis_mansion",id:"floating_whirlindas"}}]},tag=same_room,limit=1] run function luigis_mansion:other/music/set/force/ball_room

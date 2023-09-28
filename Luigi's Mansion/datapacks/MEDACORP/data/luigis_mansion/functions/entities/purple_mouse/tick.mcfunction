@@ -20,8 +20,8 @@ execute if score #temp HomeY <= @s HomeY run tag @s add on_floor
 scoreboard players reset #temp HomeY
 
 execute store result score #temp Room run scoreboard players get @s Room
-execute as @e[tag=purple_mouse,tag=visible] if score @s Room = #temp Room run scoreboard players add #temp ActionTime 1
-execute unless score #temp ActionTime matches 2.. unless entity @e[distance=..0.7,tag=same_room,tag=!spectator,tag=player,limit=1] unless entity @e[tag=purple_mouse,tag=visible,distance=..0.7] run tag @s add visible
+execute as @e[nbt={ArmorItems:[{tag:{namespace:"luigis_mansion",id:"purple_mouse"}}]},tag=visible] if score @s Room = #temp Room run scoreboard players add #temp ActionTime 1
+execute unless score #temp ActionTime matches 2.. unless entity @e[distance=..0.7,tag=same_room,tag=!spectator,tag=player,limit=1] unless entity @e[nbt={ArmorItems:[{tag:{namespace:"luigis_mansion",id:"purple_mouse"}}]},tag=visible,distance=..0.7] run tag @s add visible
 scoreboard players reset #temp ActionTime
 scoreboard players reset #temp Room
 

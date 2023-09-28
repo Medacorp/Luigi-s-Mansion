@@ -1,0 +1,2 @@
+execute if entity @s[nbt={ArmorItems:[{tag:{namespace:"e3_demo",id:"body_slammer"}}]},tag=!hidden] run function e3_demo:entities/body_slammer/tick
+execute if entity @s[nbt={ArmorItems:[{tag:{namespace:"e3_demo",id:"body_slammer"}}]},tag=hidden] run function e3_demo:entities/body_slammer/hidden_tick

@@ -4,6 +4,6 @@ data modify entity @e[tag=shot_water,tag=new,limit=1] ArmorItems[3].tag.damage s
 scoreboard players operation @e[tag=show_water,tag=new,limit=1] Owner = @s GhostNr
 scoreboard players operation @e[tag=shot_water,tag=new,limit=1] Room = @s Room
 scoreboard players set @e[tag=shot_water,tag=new,limit=1] Move 25
-execute as @e[tag=shot_water,tag=new,limit=1] at @s rotated as @e[tag=miss_petunia,limit=1] run teleport @s ~ ~ ~ ~ ~
+execute as @e[tag=shot_water,tag=new,limit=1] at @s rotated as @e[nbt={ArmorItems:[{tag:{namespace:"luigis_mansion",id:"miss_petunia"}}]},limit=1] run teleport @s ~ ~ ~ ~ ~
 execute as @e[tag=shot_water,tag=new,limit=1] run data modify entity @s Pose.Head[0] set from entity @s Rotation[1]
 tag @e[tag=shot_water,tag=new,limit=1] remove new

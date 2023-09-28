@@ -14,6 +14,6 @@ execute if entity @s[scores={AnimationProgress=4..7}] store result entity @s Pos
 execute if entity @s[scores={AnimationProgress=9..10}] store result entity @s Pose.LeftArm[0] float 1 run scoreboard players add #temp Time 10
 scoreboard players reset #temp Time
 data modify entity @s[scores={AnimationProgress=1}] ArmorItems[3] merge from entity @s ArmorItems[3].tag.variants.default
-data modify entity @s[scores={AnimationProgress=1}] HandItems[0].id set from entity @s ArmorItems[3].tag.visible
-data modify entity @s[scores={AnimationProgress=1}] HandItems[1].id set from entity @s ArmorItems[3].tag.visible
+data modify entity @s[scores={AnimationProgress=1}] HandItems[0].id set from entity @s HandItems[0].tag.visible
+data modify entity @s[scores={AnimationProgress=1}] HandItems[1].id set from entity @s HandItems[1].tag.visible
 scoreboard players set @s[scores={AnimationProgress=10}] AnimationProgress 0

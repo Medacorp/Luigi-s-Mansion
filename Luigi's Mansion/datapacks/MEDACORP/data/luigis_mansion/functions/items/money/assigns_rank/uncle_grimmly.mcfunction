@@ -1,3 +1,0 @@
-execute if entity @s[tag=uncle_grimmly] store result score #temp Time run data get storage luigis_mansion:data current_state.current_data.portrait_ghosts.uncle_grimmly.rank
-$execute if entity @s[tag=uncle_grimmly] if score #temp Time matches ..$(rank) run data modify storage luigis_mansion:data current_state.current_data.portrait_ghosts.uncle_grimmly.rank set value $(rank)
-scoreboard players reset #temp Time

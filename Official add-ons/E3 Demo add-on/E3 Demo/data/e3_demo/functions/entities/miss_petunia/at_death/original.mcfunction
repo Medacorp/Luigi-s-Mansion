@@ -1,1 +1,1 @@
-data modify storage luigis_mansion:data current_state.current_data.portrait_ghosts.miss_petunia.rank set value 0b
+data modify storage luigis_mansion:data current_state.current_data.portrait_ghosts.luigis_mansion.miss_petunia.rank set value 0b

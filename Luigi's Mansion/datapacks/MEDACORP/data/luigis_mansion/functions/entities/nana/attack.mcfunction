@@ -5,6 +5,6 @@ data modify entity @e[tag=shot_needle,tag=new,limit=1] ArmorItems[3].tag.damage 
 scoreboard players operation @e[tag=shot_needle,tag=new,limit=1] Owner = @s GhostNr
 scoreboard players operation @e[tag=shot_needle,tag=new,limit=1] Room = @s Room
 scoreboard players set @e[tag=shot_needle,tag=new,limit=1] Move 25
-execute as @e[tag=shot_needle,tag=new,limit=1] at @s rotated as @e[tag=nana,limit=1] run teleport @s ~ ~ ~ ~ ~
+execute as @e[tag=shot_needle,tag=new,limit=1] at @s rotated as @e[nbt={ArmorItems:[{tag:{namespace:"luigis_mansion",id:"nana"}}]},limit=1] run teleport @s ~ ~ ~ ~ ~
 execute as @e[tag=shot_needle,tag=new,limit=1] run data modify entity @s Pose.Head[0] set from entity @s Rotation[1]
 tag @e[tag=shot_needle,tag=new,limit=1] remove new

@@ -1,1 +1,1 @@
-tag @s[tag=shivers] add burning
+tag @s[nbt={ArmorItems:[{tag:{namespace:"luigis_mansion",id:"shivers"}}]}] add burning

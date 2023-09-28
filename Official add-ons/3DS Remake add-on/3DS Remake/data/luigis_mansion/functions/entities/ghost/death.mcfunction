@@ -26,12 +26,14 @@ execute at @s run teleport @s ^ ^ ^-0.4
 execute at @s[scores={DeathTime=2,Health=-2147483648..},tag=!dont_drop_heart,tag=!dead,tag=!remove_from_existence] unless entity @s[scores={Room=..-1}] if entity @a[tag=killer,limit=1,scores={GhostCount=2..}] if score #heart_money_count Selected matches 1.. run function luigis_mansion:spawn_entities/item/small_heart
 tag @e[tag=this_entity,limit=1] remove this_entity
 execute at @s[scores={DeathTime=2,Health=-2147483648..},tag=!dead,tag=!remove_from_existence] if entity @a[tag=killer,limit=1,scores={GhostCount=2..}] if data storage 3ds_remake:data current_state.trophy.easy{task_4:0b} run function 3ds_remake:room/gallery/clear_task/easy/task_4
-execute at @s[scores={DeathTime=1,Room=1..},tag=!dead,tag=!remove_from_existence] unless entity @s[scores={Health=-2147483648..}] run function luigis_mansion:entities/ghost/capture
-execute at @s[scores={DeathTime=2..,Room=1..,Health=-2147483648..},tag=!dead,tag=!remove_from_existence] if entity @a[tag=!spectator,distance=..0.7] run function luigis_mansion:entities/ghost/capture
-execute at @s[scores={DeathTime=2..,Room=-2},tag=!dead,tag=!remove_from_existence] if entity @a[tag=!spectator,distance=..0.7] run scoreboard players add #training_room TrainingRoomScore 1
+execute at @s[scores={DeathTime=1,Room=1..},tag=!dead,tag=!remove_from_existence] unless entity @s[scores={Health=-2147483648..}] run function luigis_mansion:entities/ghost/capture with entity @a[tag=killer,limit=1]
+execute at @s[scores={DeathTime=2..,Room=1..,Health=-2147483648..},tag=!dead,tag=!remove_from_existence] if entity @a[tag=killer,distance=..0.7] run function luigis_mansion:entities/ghost/capture with entity @a[tag=killer,limit=1]
+execute at @s[scores={DeathTime=2..,Room=-2},tag=!dead,tag=!remove_from_existence] if entity @a[tag=killer,distance=..0.7] run scoreboard players add #training_room TrainingRoomScore 1
 execute at @s[scores={DeathTime=2..,Room=-2,TrainingRoomScore=1..},tag=!dead,tag=!remove_from_existence] run scoreboard players operation @a[tag=killer,distance=..0.7] TrainingRoomScore += @s TrainingRoomScore
-execute at @s[scores={DeathTime=2..},tag=!dead,tag=!remove_from_existence] if entity @a[tag=!spectator,distance=..0.7] run tag @s add captured
-tag @a[tag=killer,limit=1] add capturing_ghost
+execute at @s[scores={DeathTime=2..},tag=!dead,tag=!remove_from_existence] if entity @a[tag=killer,distance=..0.7] run tag @s add captured
 tag @a[tag=killer,limit=1] remove killer
 
 execute if entity @s[scores={DeathTime=1},tag=!dead,tag=!remove_from_existence] unless entity @s[scores={Health=-2147483648..}] run tag @s add captured
+
+execute if entity @s[scores={KillerID=-2147483648..}] run data modify entity @s ArmorItems[3].tag.attacked_by set value [0]
+execute if entity @s[scores={KillerID=-2147483648..}] store result entity @s ArmorItems[3].tag.attacked_by[0] int 1 run scoreboard players get @s KillerID

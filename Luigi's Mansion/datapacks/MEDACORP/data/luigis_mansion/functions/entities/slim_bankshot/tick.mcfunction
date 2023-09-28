@@ -3,8 +3,8 @@ execute as @e[tag=model_piece,scores={GhostNr=-2147483648..}] if score @s GhostN
 
 execute if entity @s[tag=dying,scores={DeathTime=1}] if data entity @s ArmorItems[3].tag.loot{drop_at_0:1b} run function luigis_mansion:other/drop_loot
 execute if entity @s[tag=dead] run function luigis_mansion:entities/slim_bankshot/at_death
-execute if entity @s[tag=vanish] store result storage luigis_mansion:data current_state.current_data.portrait_ghosts.slim_bankshot.health int 1 run scoreboard players operation @s LastHealth = @s Health
-execute if entity @s[tag=vanish] store result storage luigis_mansion:data current_state.current_data.portrait_ghosts.slim_bankshot.top_vacuum_damage int 1 run scoreboard players get @s TopVacuumDamage
+execute if entity @s[tag=vanish] store result storage luigis_mansion:data current_state.current_data.portrait_ghosts.luigis_mansion.slim_bankshot.health int 1 run scoreboard players operation @s LastHealth = @s Health
+execute if entity @s[tag=vanish] store result storage luigis_mansion:data current_state.current_data.portrait_ghosts.luigis_mansion.slim_bankshot.top_vacuum_damage int 1 run scoreboard players get @s TopVacuumDamage
 
 execute if entity @s[scores={HurtTime=1},tag=hurt,tag=!fleeing,tag=!dying] run playsound luigis_mansion:entity.slim_bankshot.hurt hostile @a[tag=same_room] ~ ~ ~ 1
 scoreboard players set @s[scores={HurtTime=1},tag=hurt,tag=!fleeing,tag=!dying] Sound 40

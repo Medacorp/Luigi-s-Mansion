@@ -1,1 +1,0 @@
-execute if entity @s[tag=ceiling_surprise] run function luigis_mansion:entities/ghost/capture/caught/ceiling_surprise

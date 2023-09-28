@@ -10,9 +10,9 @@ execute if entity @s[tag=!dead,scores={Owner=-2147483648..}] unless entity @a[di
 execute if entity @s[tag=dead,scores={Owner=-2147483648..}] as @e[tag=!model_piece,tag=ghost] if score @s GhostNr = #temp GhostNr run tag @s add complain
 scoreboard players reset #temp GhostNr
 scoreboard players operation #temp Room = @s Room
-execute as @e[tag=haunted_object] if score @s Room = #temp Room run scoreboard players set @s WaitTime 0
-execute as @e[tag=haunted_object] if score @s Room = #temp Room run scoreboard players set @s AnimationProgress 0
-execute as @e[tag=haunted_object] if score @s Room = #temp Room store result entity @s Pose.Head[0] float 1 run scoreboard players get @s HomeRotationY
+execute as @e[nbt={ArmorItems:[{tag:{namespace:"luigis_mansion",id:"haunted_object"}}]}] if score @s Room = #temp Room run scoreboard players set @s WaitTime 0
+execute as @e[nbt={ArmorItems:[{tag:{namespace:"luigis_mansion",id:"haunted_object"}}]}] if score @s Room = #temp Room run scoreboard players set @s AnimationProgress 0
+execute as @e[nbt={ArmorItems:[{tag:{namespace:"luigis_mansion",id:"haunted_object"}}]}] if score @s Room = #temp Room store result entity @s Pose.Head[0] float 1 run scoreboard players get @s HomeRotationY
 scoreboard players reset @s Room
 execute if entity @s[tag=!dead] store result entity @s Pos[0] double 0.01 run scoreboard players get @s HomeX
 execute if entity @s[tag=!dead] store result entity @s Pos[1] double 0.01 run scoreboard players get @s HomeY

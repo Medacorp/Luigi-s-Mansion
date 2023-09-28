@@ -1,1 +1,1 @@
-execute if entity @s[tag=shivers] run function luigis_mansion:entities/shivers/tick
+execute if entity @s[nbt={ArmorItems:[{tag:{namespace:"luigis_mansion",id:"shivers"}}]}] run function luigis_mansion:entities/shivers/tick

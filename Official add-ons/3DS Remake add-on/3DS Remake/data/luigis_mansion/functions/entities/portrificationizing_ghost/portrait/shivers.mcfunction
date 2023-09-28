@@ -1,4 +1,4 @@
-execute store result score #temp ActionTime run data get storage luigis_mansion:data current_state.current_data.portrait_ghosts.shivers.rank
+execute store result score #temp ActionTime run data get storage luigis_mansion:data current_state.current_data.portrait_ghosts.luigis_mansion.shivers.rank
 execute store result score #temp Time run data get storage luigis_mansion:data current_state.portrait_ghost_ranks.shivers
 execute if score #temp ActionTime matches -1..0 if score #global_3ds_remake_gallery Selected matches 1 unless entity @a[tag=portrait_battle,limit=1] run data modify entity @s ArmorItems[3] set value {id:"painting",Count:1b,tag:{CustomModelData:103}}
 execute if score #temp ActionTime matches 1 if score #global_3ds_remake_gallery Selected matches 1 unless entity @a[tag=portrait_battle,limit=1] run data modify entity @s ArmorItems[3] set value {id:"painting",Count:1b,tag:{CustomModelData:104}}
@@ -13,4 +13,4 @@ execute if score #temp ActionTime matches 2 unless score #temp Time matches 3.. 
 execute if score #temp ActionTime matches 3 unless score #temp Time matches 4.. run data modify storage luigis_mansion:data current_state.portrait_ghost_ranks.shivers set value 3b
 scoreboard players reset #temp ActionTime
 scoreboard players reset #temp Time
-data modify storage luigis_mansion:data current_state.current_data.portrait_ghosts.shivers.portrificationized set value 1b
+data modify storage luigis_mansion:data current_state.current_data.portrait_ghosts.luigis_mansion.shivers.portrificationized set value 1b

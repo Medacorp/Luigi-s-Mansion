@@ -1,1 +1,0 @@
-execute if entity @s[tag=haunted_object] run function luigis_mansion:entities/ghost/capture/caught/haunted_object

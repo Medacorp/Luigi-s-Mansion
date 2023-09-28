@@ -1,4 +1,4 @@
-execute at @e[tag=king_boo,limit=1] run tag @e[tag=same_room,tag=!spectator,tag=player,sort=nearest,limit=1] add bowser_target
+execute at @e[nbt={ArmorItems:[{tag:{namespace:"luigis_mansion",id:"king_boo"}}]},limit=1] run tag @e[tag=same_room,tag=!spectator,tag=player,sort=nearest,limit=1] add bowser_target
 scoreboard players set #temp Move 50
 execute at @s facing entity @a[tag=bowser_target,limit=1] feet run teleport @s ~ ~ ~ ~ ~
 execute at @s unless entity @a[tag=bowser_target,limit=1,distance=..8] rotated ~ 0 run function luigis_mansion:entities/bowser/move_forward

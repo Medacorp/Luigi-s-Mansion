@@ -1,5 +1,5 @@
 scoreboard players operation #temp Room = @s Room
-execute as @e[tag=haunted_object] if score @s Room = #temp Room run tag @s add select_me
+execute as @e[nbt={ArmorItems:[{tag:{namespace:"luigis_mansion",id:"haunted_object"}}]}] if score @s Room = #temp Room run tag @s add select_me
 execute unless entity @e[tag=select_me,tag=moving,limit=1] at @e[tag=same_room,tag=!spectator,tag=player,sort=random,limit=1] run tag @e[tag=select_me,sort=nearest,limit=1] add add_moving
 scoreboard players set @e[tag=add_moving] AnimationProgress 0
 tag @e[tag=add_moving] add moving

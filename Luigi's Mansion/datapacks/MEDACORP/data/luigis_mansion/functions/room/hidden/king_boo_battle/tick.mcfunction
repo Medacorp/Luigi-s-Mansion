@@ -3,7 +3,7 @@ execute as @a[gamemode=!spectator,x=465,y=23,z=-40,dx=49,dy=61,dz=85] run scoreb
 execute as @e[x=465,y=23,z=-40,dx=49,dy=61,dz=85] unless entity @s[tag=ghost,tag=appear] unless entity @s[tag=ghost,tag=vanish] run scoreboard players set @s Room 76
 scoreboard players set #temp Room 76
 
-execute if data storage luigis_mansion:data current_state.current_data.portrait_ghosts.king_boo{health:0} run scoreboard players add #king_boo_battle ReturnTimer 1
+execute if data storage luigis_mansion:data current_state.current_data.portrait_ghosts.luigis_mansion.king_boo{health:0} run scoreboard players add #king_boo_battle ReturnTimer 1
 execute if score #king_boo_battle ReturnTimer matches 100.. as @a[gamemode=!spectator,scores={Room=76}] run function luigis_mansion:room/hidden/king_boo_battle/clear_secret_altar
 
 execute as @a[scores={Room=76}] run function luigis_mansion:room/hidden/king_boo_battle/tick_per_player

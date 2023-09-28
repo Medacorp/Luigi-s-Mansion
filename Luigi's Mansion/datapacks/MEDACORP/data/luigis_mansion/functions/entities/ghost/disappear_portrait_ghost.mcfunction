@@ -1,4 +1,4 @@
-function #luigis_mansion:entities/ghost/disappear
+$function #$(namespace):entities/$(id)/disappear
 tag @s remove fleeing
 tag @s remove hurt
 tag @s remove hurt_animation

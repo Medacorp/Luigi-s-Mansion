@@ -1,13 +1,13 @@
 {
 	"values": [
-		"e3_demo:entities/beta_boo",
-        "e3_demo:entities/beta_flying_fish",
-        "e3_demo:entities/beta_shining_ghost",
-        "e3_demo:entities/beta_bat",
-        "e3_demo:entities/beta_mouse",
-        "e3_demo:entities/beta_ghost",
-        "e3_demo:entities/beta_puncher",
-        "e3_demo:entities/beta_body_slammer",
-        "e3_demo:entities/beta_basher"
+        "e3_demo:entities/boo",
+        "e3_demo:entities/flying_fish",
+        "e3_demo:entities/shining_ghost",
+        "e3_demo:entities/bat",
+        "e3_demo:entities/mouse",
+        "e3_demo:entities/ghost",
+        "e3_demo:entities/puncher",
+        "e3_demo:entities/body_slammer",
+        "e3_demo:entities/basher"
 	]
 }

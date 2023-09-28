@@ -1,2 +1,0 @@
-execute if entity @s[tag=beta_body_slammer,tag=!hidden] run function e3_demo:entities/beta_body_slammer/tick
-execute if entity @s[tag=beta_body_slammer,tag=hidden] run function e3_demo:entities/beta_body_slammer/hidden_tick

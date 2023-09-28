@@ -1,2 +1,2 @@
 execute unless data storage luigis_mansion:data current_state.portrait_ghost_ranks{boolossus:-1b} run scoreboard players add #temp Time 15
-execute if data storage luigis_mansion:data current_state.portrait_ghost_ranks{boolossus:-1b} if data storage luigis_mansion:data current_state.current_data.portrait_ghosts.boolossus{health:0} run scoreboard players add #temp Time 15
+execute if data storage luigis_mansion:data current_state.portrait_ghost_ranks{boolossus:-1b} if data storage luigis_mansion:data current_state.current_data.portrait_ghosts.luigis_mansion.boolossus{health:0} run scoreboard players add #temp Time 15

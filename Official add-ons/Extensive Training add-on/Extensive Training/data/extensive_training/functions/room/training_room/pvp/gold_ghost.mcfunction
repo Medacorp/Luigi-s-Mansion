@@ -1,2 +1,2 @@
-execute if entity @e[type=minecraft:marker,tag=selected,tag=gold_ghost,limit=1] run function extensive_training:room/training_room/spawn/gold_ghost
-execute unless entity @e[type=minecraft:marker,tag=selected,limit=1] run summon minecraft:marker ~ ~ ~ {Tags:["select_ghost","gold_ghost"]}
+execute if entity @e[type=minecraft:marker,tag=selected,nbt={data:{namespace:"luigis_mansion",id:"gold_ghost"}},limit=1] run function extensive_training:room/training_room/spawn/gold_ghost
+execute unless entity @e[type=minecraft:marker,tag=selected,limit=1] run summon minecraft:marker ~ ~ ~ {Tags:["select_ghost"],data:{namespace:"luigis_mansion",id:"gold_ghost"}}

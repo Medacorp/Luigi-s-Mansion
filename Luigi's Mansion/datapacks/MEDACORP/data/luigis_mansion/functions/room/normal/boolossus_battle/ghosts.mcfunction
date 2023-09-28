@@ -1,2 +1,2 @@
 execute if score #boolossus_battle Wave matches 1 unless entity @e[tag=ghost,scores={Room=75},tag=!optional_ghost] run function luigis_mansion:room/normal/boolossus_battle/clear
-execute unless data storage luigis_mansion:data current_state.current_data.portrait_ghosts.boolossus{health:0} unless score #boolossus_battle Wave matches 1..99 run function luigis_mansion:room/normal/boolossus_battle/wave_1
+execute unless data storage luigis_mansion:data current_state.current_data.portrait_ghosts.luigis_mansion.boolossus{health:0} unless score #boolossus_battle Wave matches 1..99 run function luigis_mansion:room/normal/boolossus_battle/wave_1

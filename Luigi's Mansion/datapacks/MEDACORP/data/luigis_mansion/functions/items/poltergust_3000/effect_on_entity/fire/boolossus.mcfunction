@@ -1,1 +1,1 @@
-scoreboard players set @s[tag=vacuumable,tag=boolossus] Dialog 0
+scoreboard players set @s[tag=vacuumable,nbt={ArmorItems:[{tag:{namespace:"luigis_mansion",id:"boolossus"}}]}] Dialog 0

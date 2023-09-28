@@ -1,1 +1,1 @@
-execute positioned as @s[tag=vacuumable,tag=spark,tag=visible] run function luigis_mansion:items/poltergust_3000/effect_on_entity/vacuum/effect/ghost/spark
+execute positioned as @s[tag=vacuumable,nbt={ArmorItems:[{tag:{namespace:"luigis_mansion",id:"spark"}}]},tag=visible] run function luigis_mansion:items/poltergust_3000/effect_on_entity/vacuum/effect/ghost/spark

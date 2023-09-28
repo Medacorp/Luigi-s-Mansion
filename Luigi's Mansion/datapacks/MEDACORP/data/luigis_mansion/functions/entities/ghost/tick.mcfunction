@@ -23,10 +23,10 @@ execute if entity @s[tag=!spawned_heart,tag=!hidden,tag=visible] unless entity @
 execute if entity @s[scores={StunTime=1..},tag=!spawned_health_display,tag=!dialog,tag=!vanish] run function luigis_mansion:entities/ghost/spawn_health_display
 execute if entity @s[tag=hurt,tag=!spawned_health_display,tag=!dialog,tag=!vanish] run function luigis_mansion:entities/ghost/spawn_health_display
 execute if entity @s[tag=element_hurt,tag=!spawned_health_display,tag=!dialog,tag=!vanish] run function luigis_mansion:entities/ghost/spawn_health_display
-execute if entity @s[tag=boo,tag=show_health,tag=!spawned_health_display,tag=!dialog,tag=!vanish] run function luigis_mansion:entities/ghost/spawn_health_display
-execute if entity @s[tag=king_boo,tag=show_health,tag=!spawned_health_display,tag=!dialog,tag=!vanish] run function luigis_mansion:entities/ghost/spawn_health_display
+execute if entity @s[nbt={ArmorItems:[{tag:{namespace:"luigis_mansion",id:"boo"}}]},tag=show_health,tag=!spawned_health_display,tag=!dialog,tag=!vanish] run function luigis_mansion:entities/ghost/spawn_health_display
+execute if entity @s[nbt={ArmorItems:[{tag:{namespace:"luigis_mansion",id:"king_boo"}}]},tag=show_health,tag=!spawned_health_display,tag=!dialog,tag=!vanish] run function luigis_mansion:entities/ghost/spawn_health_display
 tag @s[scores={VulnerableTime=0},tag=spawned_heart,tag=!burning_heart,tag=!watery_heart,tag=!frozen_heart] remove spawned_heart
-tag @s[scores={StunTime=0},tag=!hurt,tag=!fleeing,tag=!element_hurt,tag=!boo,tag=!king_boo,tag=spawned_health_display] remove spawned_health_display
+tag @s[scores={StunTime=0},tag=!hurt,tag=!fleeing,tag=!element_hurt,nbt=!{ArmorItems:[{tag:{namespace:"luigis_mansion",id:"boo"}}]},nbt=!{ArmorItems:[{tag:{namespace:"luigis_mansion",id:"king_boo"}}]},tag=spawned_health_display] remove spawned_health_display
 tag @s[tag=hidden] remove spawned_heart
 tag @s[tag=vanish] remove spawned_heart
 tag @s[tag=vanish] remove spawned_health_display
@@ -39,7 +39,7 @@ execute if entity @s[tag=!hurt,tag=!disappear,tag=element_hurt,tag=!dying,scores
 execute if entity @s[tag=fleeing,tag=!vanish,tag=!disappear,tag=!vacuumable,tag=!dialog,tag=!dying] run function luigis_mansion:entities/ghost/flee
 tag @s[tag=in_vacuum] remove in_vacuum
 execute at @s[tag=!portrait_ghost,tag=disappear] run function luigis_mansion:entities/ghost/disappear
-execute if entity @s[tag=portrait_ghost,tag=disappear] run function luigis_mansion:entities/ghost/disappear_portrait_ghost
+execute if entity @s[tag=portrait_ghost,tag=disappear] run function luigis_mansion:entities/ghost/disappear_portrait_ghost with entity @s ArmorItems[3].tag
 scoreboard players reset #temp Move
 tag @s[tag=!spawn] remove spawn_last_tick
 kill @s[tag=spawn_last_tick]

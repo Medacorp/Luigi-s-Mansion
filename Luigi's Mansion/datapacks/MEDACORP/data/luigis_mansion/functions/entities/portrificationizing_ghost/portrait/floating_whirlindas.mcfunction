@@ -1,4 +1,4 @@
-execute store result score #temp ActionTime run data get storage luigis_mansion:data current_state.current_data.portrait_ghosts.floating_whirlindas.rank
+execute store result score #temp ActionTime run data get storage luigis_mansion:data current_state.current_data.portrait_ghosts.luigis_mansion.floating_whirlindas.rank
 execute store result score #temp Time run data get storage luigis_mansion:data current_state.portrait_ghost_ranks.floating_whirlindas
 execute if score #temp ActionTime matches -1..0 run data modify entity @s ArmorItems[3] set value {id:"minecraft:painting",Count:1b,tag:{CustomModelData:33}}
 execute if score #temp ActionTime matches 1 run data modify entity @s ArmorItems[3] set value {id:"minecraft:painting",Count:1b,tag:{CustomModelData:34}}
@@ -8,4 +8,4 @@ execute if score #temp ActionTime matches 1 unless score #temp Time matches 2.. 
 execute if score #temp ActionTime matches 2 unless score #temp Time matches 3.. run data modify storage luigis_mansion:data current_state.portrait_ghost_ranks.floating_whirlindas set value 2b
 scoreboard players reset #temp ActionTime
 scoreboard players reset #temp Time
-data modify storage luigis_mansion:data current_state.current_data.portrait_ghosts.floating_whirlindas.portrificationized set value 1b
+data modify storage luigis_mansion:data current_state.current_data.portrait_ghosts.luigis_mansion.floating_whirlindas.portrificationized set value 1b

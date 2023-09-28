@@ -1,1 +1,1 @@
-tag @s[tag=boolossus,tag=split,tag=!fleeing,scores={Wave=..599}] add frozen
+tag @s[nbt={ArmorItems:[{tag:{namespace:"luigis_mansion",id:"boolossus"}}]},tag=split,tag=!fleeing,scores={Wave=..599}] add frozen
