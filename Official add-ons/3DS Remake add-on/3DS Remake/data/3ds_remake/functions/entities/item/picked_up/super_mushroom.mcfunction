@@ -1,1 +1,1 @@
-execute if entity @s[tag=super_mushroom] run function 3ds_remake:items/super_mushroom
+function 3ds_remake:items/super_mushroom

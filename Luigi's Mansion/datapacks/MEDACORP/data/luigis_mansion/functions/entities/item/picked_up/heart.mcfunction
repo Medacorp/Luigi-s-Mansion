@@ -1,1 +1,1 @@
-execute if entity @s[tag=heart] run function luigis_mansion:items/heart
+function luigis_mansion:items/heart

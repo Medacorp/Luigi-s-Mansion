@@ -23,7 +23,7 @@ execute if entity @s[scores={Dialog=440}] run tellraw @a[tag=same_room] {"transl
 execute if entity @s[scores={Dialog=471..1000}] as @a[tag=same_room,tag=!spectator,tag=!looking_at_map] run function luigis_mansion:entities/player/animation/set/thinking
 execute if entity @s[scores={Dialog=471}] run function luigis_mansion:room/normal/conservatory/stop_music
 execute if entity @s[scores={Dialog=472}] run scoreboard players set #conservatory Wave 3
-execute if entity @s[scores={Dialog=472}] store result score @s Variant run roll value 1..2
+execute if entity @s[scores={Dialog=472}] store result score @s Variant run random value 1..2
 execute if entity @s[scores={Dialog=472..998,Variant=1}] run function luigis_mansion:entities/melody_pianissima/composer
 execute if entity @s[scores={Dialog=472..998,Variant=2}] run function luigis_mansion:entities/melody_pianissima/game
 execute if entity @s[scores={Dialog=1000..}] run scoreboard players reset @a MelodyChoice

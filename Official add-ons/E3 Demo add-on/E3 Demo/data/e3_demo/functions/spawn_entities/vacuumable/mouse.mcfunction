@@ -1,4 +1,4 @@
-execute store result score #temp Variant run roll value 1..10
+execute store result score #temp Variant run random value 1..10
 execute if score #temp Variant matches 1 run function e3_demo:spawn_entities/vacuumable/mouse/blue
 execute if score #temp Variant matches 2 run function e3_demo:spawn_entities/vacuumable/mouse/brown
 execute if score #temp Variant matches 3 run function e3_demo:spawn_entities/vacuumable/mouse/green

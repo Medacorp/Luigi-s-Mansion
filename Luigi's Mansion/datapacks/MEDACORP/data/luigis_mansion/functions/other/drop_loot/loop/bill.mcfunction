@@ -3,7 +3,6 @@ execute if data storage luigis_mansion:data drop_loot.contents.luigis_mansion.bi
 execute if score #temp Money matches 0 run data modify entity @e[tag=this_entity,limit=1] ArmorItems[3].tag.CustomModelData set value 10
 execute if score #temp Money matches 1 run data modify entity @e[tag=this_entity,limit=1] ArmorItems[3].tag.CustomModelData set value 11
 scoreboard players reset #temp Money
-execute if data storage luigis_mansion:data drop_loot.contents.luigis_mansion.bill[0].rotation run tag @e[tag=this_entity,limit=1] add rotated
 execute if data storage luigis_mansion:data drop_loot.contents.luigis_mansion.bill[0].rotation run data modify entity @e[tag=this_entity,limit=1] Rotation set from storage luigis_mansion:data drop_loot.contents.luigis_mansion.bill[0].rotation
 tag @e[tag=this_entity,limit=1] remove this_entity
 data remove storage luigis_mansion:data drop_loot.contents.luigis_mansion.bill[0]

@@ -1,1 +1,1 @@
-execute if entity @s[tag=green_emerald] run function luigis_mansion:items/money/big {namespace:luigis_mansion,id:green_emerald,value:800}
+function luigis_mansion:items/money/big {namespace:luigis_mansion,id:green_emerald,value:800}

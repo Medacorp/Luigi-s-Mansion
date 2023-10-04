@@ -1,6 +1,6 @@
 {
 	"values": [
-		"luigis_mansion:items/key_normal",
-		"luigis_mansion:items/key_hidden"
+		"luigis_mansion:items/key/normal",
+		"luigis_mansion:items/key/hidden"
 	]
 }

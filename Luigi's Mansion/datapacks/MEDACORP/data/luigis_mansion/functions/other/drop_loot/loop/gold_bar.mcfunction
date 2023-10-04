@@ -1,5 +1,4 @@
 function luigis_mansion:spawn_entities/item/gold_bar
-execute if data storage luigis_mansion:data drop_loot.contents.luigis_mansion.gold_bar[0].rotation run tag @e[tag=this_entity,limit=1] add rotated
 execute if data storage luigis_mansion:data drop_loot.contents.luigis_mansion.gold_bar[0].rotation run data modify entity @e[tag=this_entity,limit=1] Rotation set from storage luigis_mansion:data drop_loot.contents.luigis_mansion.gold_bar[0].rotation
 tag @e[tag=this_entity,limit=1] remove this_entity
 data remove storage luigis_mansion:data drop_loot.contents.luigis_mansion.gold_bar[0]

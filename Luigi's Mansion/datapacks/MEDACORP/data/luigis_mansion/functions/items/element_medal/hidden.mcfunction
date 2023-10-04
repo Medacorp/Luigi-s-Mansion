@@ -1,3 +1,1 @@
-execute if entity @s[tag=fire] unless data storage luigis_mansion:data current_state.current_data.obtained_items{fire_element_medal:1b} run function luigis_mansion:items/element_medal/hidden/fire
-execute if entity @s[tag=water] unless data storage luigis_mansion:data current_state.current_data.obtained_items{water_element_medal:1b} run function luigis_mansion:items/element_medal/hidden/water
-execute if entity @s[tag=ice] unless data storage luigis_mansion:data current_state.current_data.obtained_items{ice_element_medal:1b} run function luigis_mansion:items/element_medal/hidden/ice
+$execute if score #mansion_type Selected matches 1 unless data storage luigis_mansion:data current_state.current_data.obtained_items{$(variant)_element_medal:1b} run function luigis_mansion:items/element_medal/hidden/$(variant)

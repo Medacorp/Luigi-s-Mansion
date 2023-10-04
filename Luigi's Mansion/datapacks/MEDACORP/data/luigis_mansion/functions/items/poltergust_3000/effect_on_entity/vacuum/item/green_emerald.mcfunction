@@ -1,1 +1,0 @@
-execute positioned as @s[tag=green_emerald] run function luigis_mansion:items/poltergust_3000/effect_on_entity/vacuum/effect/item/generic

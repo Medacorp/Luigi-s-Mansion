@@ -1,1 +1,0 @@
-execute if entity @s[tag=poison_mushroom] run playsound luigis_mansion:item.poison_mushroom.bounce player @a[tag=same_room] ~ ~ ~ 1

@@ -1,1 +1,1 @@
-execute if entity @s[tag=element_medal] run function #luigis_mansion:items/element_medal
+function #luigis_mansion:items/element_medal with entity @s ArmorItems[3].tag

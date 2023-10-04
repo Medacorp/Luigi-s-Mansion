@@ -1,0 +1,1 @@
+execute if entity @s[tag=paper] run function luigis_mansion:entities/item/paper_physics

@@ -1,23 +1,23 @@
-execute if data storage luigis_mansion:data current_state.current_data.portrait_ghosts.luigis_mansion.chauncey{portrificationized:0b,health:0} run function luigis_mansion:spawn_entities/portrificationizing_ghost/ghost/chauncey
-execute if data storage luigis_mansion:data current_state.current_data.portrait_ghosts.luigis_mansion.bogmire{portrificationized:0b,health:0} run function luigis_mansion:spawn_entities/portrificationizing_ghost/ghost/bogmire
-execute if data storage luigis_mansion:data current_state.current_data.portrait_ghosts.luigis_mansion.boolossus{portrificationized:0b,health:0} run function luigis_mansion:spawn_entities/portrificationizing_ghost/ghost/boolossus
-execute if data storage luigis_mansion:data current_state.current_data.portrait_ghosts.luigis_mansion.king_boo{portrificationized:0b,health:0} run function luigis_mansion:spawn_entities/portrificationizing_ghost/ghost/king_boo
-execute if data storage luigis_mansion:data current_state.current_data.portrait_ghosts.luigis_mansion.neville{portrificationized:0b,health:0} run function luigis_mansion:spawn_entities/portrificationizing_ghost/ghost/neville
-execute if data storage luigis_mansion:data current_state.current_data.portrait_ghosts.luigis_mansion.lydia{portrificationized:0b,health:0} run function luigis_mansion:spawn_entities/portrificationizing_ghost/ghost/lydia
-execute if data storage luigis_mansion:data current_state.current_data.portrait_ghosts.luigis_mansion.floating_whirlindas{portrificationized:0b,health:0} run function luigis_mansion:spawn_entities/portrificationizing_ghost/ghost/floating_whirlindas
-execute if data storage luigis_mansion:data current_state.current_data.portrait_ghosts.luigis_mansion.madame_clairvoya{portrificationized:0b,health:0} run function luigis_mansion:spawn_entities/portrificationizing_ghost/ghost/madame_clairvoya
-execute if data storage luigis_mansion:data current_state.current_data.portrait_ghosts.luigis_mansion.shivers{portrificationized:0b,health:0} run function luigis_mansion:spawn_entities/portrificationizing_ghost/ghost/shivers
-execute if data storage luigis_mansion:data current_state.current_data.portrait_ghosts.luigis_mansion.melody_pianissima{portrificationized:0b,health:0} run function luigis_mansion:spawn_entities/portrificationizing_ghost/ghost/melody_pianissima
-execute if data storage luigis_mansion:data current_state.current_data.portrait_ghosts.luigis_mansion.mr_luggs{portrificationized:0b,health:0} run function luigis_mansion:spawn_entities/portrificationizing_ghost/ghost/mr_luggs
-execute if data storage luigis_mansion:data current_state.current_data.portrait_ghosts.luigis_mansion.spooky{portrificationized:0b,health:0} run function luigis_mansion:spawn_entities/portrificationizing_ghost/ghost/spooky
-execute if data storage luigis_mansion:data current_state.current_data.portrait_ghosts.luigis_mansion.biff_atlas{portrificationized:0b,health:0} run function luigis_mansion:spawn_entities/portrificationizing_ghost/ghost/biff_atlas
-execute if data storage luigis_mansion:data current_state.current_data.portrait_ghosts.luigis_mansion.slim_bankshot{portrificationized:0b,health:0} run function luigis_mansion:spawn_entities/portrificationizing_ghost/ghost/slim_bankshot
-execute if data storage luigis_mansion:data current_state.current_data.portrait_ghosts.luigis_mansion.miss_petunia{portrificationized:0b,health:0} run function luigis_mansion:spawn_entities/portrificationizing_ghost/ghost/miss_petunia
-execute if data storage luigis_mansion:data current_state.current_data.portrait_ghosts.luigis_mansion.nana{portrificationized:0b,health:0} run function luigis_mansion:spawn_entities/portrificationizing_ghost/ghost/nana
-execute if data storage luigis_mansion:data current_state.current_data.portrait_ghosts.luigis_mansion.henry_and_orville{portrificationized:0b,henry:{health:0},orville:{health:0}} run function luigis_mansion:spawn_entities/portrificationizing_ghost/ghost/henry_and_orville
-execute if data storage luigis_mansion:data current_state.current_data.portrait_ghosts.luigis_mansion.jarvis{portrificationized:0b,health:0} run function luigis_mansion:spawn_entities/portrificationizing_ghost/ghost/jarvis
-execute if data storage luigis_mansion:data current_state.current_data.portrait_ghosts.luigis_mansion.sue_pea{portrificationized:0b,health:0} run function luigis_mansion:spawn_entities/portrificationizing_ghost/ghost/sue_pea
-execute if data storage luigis_mansion:data current_state.current_data.portrait_ghosts.luigis_mansion.vincent_van_gore{portrificationized:0b,health:0} run function luigis_mansion:spawn_entities/portrificationizing_ghost/ghost/vincent_van_gore
-execute if data storage luigis_mansion:data current_state.current_data.portrait_ghosts.luigis_mansion.uncle_grimmly{portrificationized:0b,health:0} run function luigis_mansion:spawn_entities/portrificationizing_ghost/ghost/uncle_grimmly
-execute if data storage luigis_mansion:data current_state.current_data.portrait_ghosts.luigis_mansion.clockwork_soldiers{portrificationized:0b,pink:{health:0},blue:{health:0},green:{health:0}} run function luigis_mansion:spawn_entities/portrificationizing_ghost/ghost/clockwork_soldiers
-execute if data storage luigis_mansion:data current_state.current_data.portrait_ghosts.luigis_mansion.sir_weston{portrificationized:0b,health:0} run function luigis_mansion:spawn_entities/portrificationizing_ghost/ghost/sir_weston
+function luigis_mansion:spawn_entities/portrificationizing_ghost/ghost/chauncey
+function luigis_mansion:spawn_entities/portrificationizing_ghost/ghost/bogmire
+function luigis_mansion:spawn_entities/portrificationizing_ghost/ghost/boolossus
+function luigis_mansion:spawn_entities/portrificationizing_ghost/ghost/king_boo
+function luigis_mansion:spawn_entities/portrificationizing_ghost/ghost/neville
+function luigis_mansion:spawn_entities/portrificationizing_ghost/ghost/lydia
+function luigis_mansion:spawn_entities/portrificationizing_ghost/ghost/floating_whirlindas
+function luigis_mansion:spawn_entities/portrificationizing_ghost/ghost/madame_clairvoya
+function luigis_mansion:spawn_entities/portrificationizing_ghost/ghost/shivers
+function luigis_mansion:spawn_entities/portrificationizing_ghost/ghost/melody_pianissima
+function luigis_mansion:spawn_entities/portrificationizing_ghost/ghost/mr_luggs
+function luigis_mansion:spawn_entities/portrificationizing_ghost/ghost/spooky
+function luigis_mansion:spawn_entities/portrificationizing_ghost/ghost/biff_atlas
+function luigis_mansion:spawn_entities/portrificationizing_ghost/ghost/slim_bankshot
+function luigis_mansion:spawn_entities/portrificationizing_ghost/ghost/miss_petunia
+function luigis_mansion:spawn_entities/portrificationizing_ghost/ghost/nana
+function luigis_mansion:spawn_entities/portrificationizing_ghost/ghost/henry_and_orville
+function luigis_mansion:spawn_entities/portrificationizing_ghost/ghost/jarvis
+function luigis_mansion:spawn_entities/portrificationizing_ghost/ghost/sue_pea
+function luigis_mansion:spawn_entities/portrificationizing_ghost/ghost/vincent_van_gore
+function luigis_mansion:spawn_entities/portrificationizing_ghost/ghost/uncle_grimmly
+function luigis_mansion:spawn_entities/portrificationizing_ghost/ghost/clockwork_soldiers
+function luigis_mansion:spawn_entities/portrificationizing_ghost/ghost/sir_weston

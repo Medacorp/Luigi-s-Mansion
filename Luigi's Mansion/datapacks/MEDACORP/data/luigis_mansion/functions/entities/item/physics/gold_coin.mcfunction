@@ -1,2 +1,0 @@
-execute if entity @s[tag=gold_coin] run function luigis_mansion:entities/item/gold_coin_physics
-execute at @s[tag=gold_coin] if predicate luigis_mansion:gold_coin_sparkle run function luigis_mansion:entities/item/particle/sparkle

@@ -1,6 +1,6 @@
 {
 	"values": [
-		"luigis_mansion:items/mario_item_normal",
-		"luigis_mansion:items/mario_item_hidden"
+		"luigis_mansion:items/mario_item/normal",
+		"luigis_mansion:items/mario_item/hidden"
 	]
 }

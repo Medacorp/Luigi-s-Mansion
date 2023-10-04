@@ -9,7 +9,7 @@ execute unless entity @s[scores={Variant=-10..}] if score #temp Boos matches 20 
 execute unless entity @s[scores={Variant=-10..}] if score #temp Boos matches 21 run scoreboard players set @s Variant -5
 execute unless entity @s[scores={Variant=-10..}] if score #temp Boos matches 50 run scoreboard players set @s Variant -8
 scoreboard players reset #temp Boos
-execute unless entity @s[scores={Variant=-10..}] store result score @s Variant run roll value 1..27
+execute unless entity @s[scores={Variant=-10..}] store result score @s Variant run random value 1..27
 kill @e[type=minecraft:marker,tag=choice]
 
 execute if entity @a[scores={EGaddCallChoice=1..},limit=1] run scoreboard players add @s[scores={GBHDialog=10097..}] GBHDialog 1

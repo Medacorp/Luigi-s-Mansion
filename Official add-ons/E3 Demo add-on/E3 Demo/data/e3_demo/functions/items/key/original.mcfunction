@@ -1,3 +1,1 @@
-execute if entity @s[tag=living_room] unless data storage luigis_mansion:data current_state.current_data{obtained_keys:["living_room"]} run function e3_demo:items/key/original/living_room
-execute if entity @s[tag=hallway_2] unless data storage luigis_mansion:data current_state.current_data{obtained_keys:["hallway_2"]} run function e3_demo:items/key/original/hallway_2
-execute if entity @s[tag=hallway_3] unless data storage luigis_mansion:data current_state.current_data{obtained_keys:["hallway_3"]} run function e3_demo:items/key/original/hallway_3
+$execute if score #mansion_type Selected matches 2 unless data storage luigis_mansion:data current_state.current_data{obtained_keys:[$(variant)]} run function e3_demo:items/key/original/$(variant)

@@ -1,1 +1,0 @@
-execute positioned as @s[tag=bill] run function luigis_mansion:entities/item/pull_bill

@@ -27,6 +27,7 @@ execute unless score #temp Health = #temp PreviousHealth if score #temp2 Health 
 execute unless score #temp Health = #temp PreviousHealth if score #temp2 Health matches 0 unless score #temp MaxHealth = #temp LastHealth if score #temp2 LastHealth matches ..4 run function luigis_mansion:spawn_entities/item/small_pearl
 execute unless score #temp Health = #temp PreviousHealth if score #temp2 Health matches 0 unless score #temp MaxHealth = #temp LastHealth if score #temp2 LastHealth matches 5.. run function luigis_mansion:spawn_entities/item/medium_pearl
 execute unless score #temp Health = #temp PreviousHealth if score #temp2 Health matches 0 if score #temp MaxHealth = #temp LastHealth run function luigis_mansion:spawn_entities/item/big_pearl
+execute as @e[tag=this_entity,limit=1] at @s run teleport @s ~ ~ ~ 0 -90
 tag @e[tag=this_entity,limit=1] remove this_entity
 scoreboard players operation @s PreviousHealth = @s Health
 scoreboard players reset #temp MaxHealth

@@ -1,3 +1,9 @@
+tag @e[tag=portrificationizing_ghost] add remove_from_existence
+execute if entity @e[tag=e_gadd,tag=portrificationizing,limit=1] run scoreboard players reset @a EGaddGhostPortrificationizerRoomChoice
+scoreboard players set @e[tag=e_gadd,tag=portrificationizing,limit=1] Dialog 0
+tag @e[tag=e_gadd,tag=portrificationizing,limit=1] remove ending
+tag @e[tag=e_gadd,tag=portrificationizing,limit=1] remove portrificationizing
+
 data modify storage luigis_mansion:data current_state.current_data set value {nothing_loaded:1b}
 data modify storage luigis_mansion:data current_state.mansion_data set from storage luigis_mansion:data saved_state.mansion_data
 data modify storage luigis_mansion:data current_state.ghosts_caught set from storage luigis_mansion:data saved_state.ghosts_caught

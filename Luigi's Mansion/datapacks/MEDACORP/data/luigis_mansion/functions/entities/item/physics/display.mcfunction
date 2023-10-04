@@ -1,0 +1,1 @@
+execute at @s[tag=display] run function luigis_mansion:animations/money/rotate

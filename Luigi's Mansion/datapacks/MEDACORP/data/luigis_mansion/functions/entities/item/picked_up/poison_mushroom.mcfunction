@@ -1,1 +1,1 @@
-execute if entity @s[tag=poison_mushroom] run function luigis_mansion:items/poison_mushroom
+function luigis_mansion:items/poison_mushroom

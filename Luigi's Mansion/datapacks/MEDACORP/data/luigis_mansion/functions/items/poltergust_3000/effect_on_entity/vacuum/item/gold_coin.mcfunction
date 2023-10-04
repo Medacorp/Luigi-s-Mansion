@@ -1,1 +1,0 @@
-execute positioned as @s[tag=vacuumable,tag=item,tag=gold_coin] run function luigis_mansion:entities/item/pull_gold_coin

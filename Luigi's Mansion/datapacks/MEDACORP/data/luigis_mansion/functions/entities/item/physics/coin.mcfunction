@@ -1,0 +1,1 @@
+execute if entity @s[tag=coin] run function luigis_mansion:entities/item/coin_physics

@@ -1,5 +1,5 @@
 data modify storage luigis_mansion:data furniture set value {can_hide_boo:1b,candle_flames:[{lit:0b,tags:["light_me"]},{lit:0b,tags:["light_me"]},{lit:0b,tags:["light_me"]}],searchable:["interact","vacuum"],shake_animation:["interact","vacuum"],sound:"luigis_mansion:heavy_generic",scan_message:'{"translate":"luigis_mansion:message.player.scan_furniture.28"}'}
-execute store result score #temp Variant run roll value 1..5
+execute store result score #temp Variant run random value 1..5
 execute if score #temp Variant matches 5 unless data storage luigis_mansion:data current_state.current_data{money_spawned:["fortune_tellers_room_wooden_cabinet_mounted_wooden_colorful_candelabra_2"]} run data modify storage luigis_mansion:data furniture.loot set value {name:"fortune_tellers_room_wooden_cabinet_mounted_wooden_colorful_candelabra_2",contents:{luigis_mansion:{gold_bar:1}}}
 scoreboard players reset #temp Variant
 execute positioned 736 11 -35.8 rotated -90 0 run function luigis_mansion:spawn_furniture/wooden_cabinet_mounted_wooden_colorful_candelabra/blue_green_red

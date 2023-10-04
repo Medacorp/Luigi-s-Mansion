@@ -1,2 +1,2 @@
-execute positioned ~ ~1.1 ~ if entity @e[tag=same_room,tag=!spectator,tag=player,distance=..0.8,limit=1,tag=gooigi] run tag @s[tag=mario_item] remove picked_up
-execute if entity @s[tag=mario_item,tag=picked_up] run function #luigis_mansion:items/mario_item
+execute positioned ~ ~1.1 ~ if entity @e[tag=same_room,tag=!spectator,tag=player,distance=..0.8,limit=1,tag=gooigi] run tag @s remove picked_up
+execute if entity @s[tag=picked_up] run function #luigis_mansion:items/mario_item with entity @s ArmorItems[3].tag
