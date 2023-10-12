@@ -13,3 +13,5 @@ execute unless data storage luigis_mansion:data current_state.current_data.rooms
 execute unless data storage luigis_mansion:data current_state.current_data.rooms.conservatory{cleared:1b} run scoreboard players set @s[x=680,y=11,z=4,dx=4,dy=6,dz=39,scores={RoomNoise=0}] RoomNoise 850
 execute unless entity @s[x=680,y=11,z=4,dx=4,dy=6,dz=39] run stopsound @s ambient luigis_mansion:music.mansion.melody
 execute unless entity @s[x=680,y=11,z=4,dx=4,dy=6,dz=39] run scoreboard players set @s RoomNoise 0
+
+tag @s[x=682.5,y=11.0,z=5.5,scores={IdleTime=-40,Animation=17..20}] add washroom_toad

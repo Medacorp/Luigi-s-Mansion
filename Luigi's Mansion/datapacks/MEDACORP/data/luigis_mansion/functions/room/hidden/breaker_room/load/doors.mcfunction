@@ -1,3 +1,3 @@
-execute positioned 699 2 62 rotated 90 0 run function luigis_mansion:spawn_furniture/door/left/push/mansion/wooden
-execute positioned 699 2 62 rotated 90 0 run function luigis_mansion:spawn_furniture/door_frame/stone
-tag @e[x=699.0,y=2,z=62.5,distance=..0.7,tag=door,tag=frame,limit=1] add hallway_7_breaker_room
+data modify storage luigis_mansion:data furniture set value {sound:{namespace:"luigis_mansion",id:"heavy_generic"},door:{model:{namespace:"luigis_mansion",id:"mansion/wooden"},frame:{namespace:"luigis_mansion",id:"stone"},left_hinge:1b,push:1b,other_end:{x:713,y:2,z:62}}}
+execute if data storage luigis_mansion:data current_state.current_data{blackout:1b} run data modify storage luigis_mansion:data furniture.door.key set value "breaker_room"
+execute positioned 699 2 62 rotated 90 0 run function luigis_mansion:spawn_furniture/door

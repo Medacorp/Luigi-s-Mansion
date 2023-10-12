@@ -1,1 +1,0 @@
-execute if entity @s[tag=door,tag=frame] run function luigis_mansion:entities/door/tick

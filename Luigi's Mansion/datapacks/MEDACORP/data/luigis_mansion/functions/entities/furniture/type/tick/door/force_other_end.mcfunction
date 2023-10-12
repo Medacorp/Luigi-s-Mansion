@@ -1,0 +1,1 @@
+$execute positioned $(x) $(y) $(z) positioned ^ ^ ^-0.44 run tag @e[distance=..0.7,tag=furniture,tag=door,tag=!open_door,tag=!forced_animation,limit=1] add forced_animation

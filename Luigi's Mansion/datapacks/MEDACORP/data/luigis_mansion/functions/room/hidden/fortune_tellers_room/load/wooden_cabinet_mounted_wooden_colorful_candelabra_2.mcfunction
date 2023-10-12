@@ -1,4 +1,4 @@
-data modify storage luigis_mansion:data furniture set value {can_hide_boo:1b,candle_flames:[{lit:0b,tags:["light_me"]},{lit:0b,tags:["light_me"]},{lit:0b,tags:["light_me"]}],searchable:["interact","vacuum"],shake_animation:["interact","vacuum"],sound:"luigis_mansion:heavy_generic",scan_message:'{"translate":"luigis_mansion:message.player.scan_furniture.28"}'}
+data modify storage luigis_mansion:data furniture set value {can_hide_boo:1b,candle_flames:[{lit:0b,tags:["light_me"]},{lit:0b,tags:["light_me"]},{lit:0b,tags:["light_me"]}],searchable:["interact","vacuum"],shake_animation:["interact","vacuum"],sound:{namespace:"luigis_mansion",id:"heavy_generic"},scan_message:'{"translate":"luigis_mansion:message.player.scan_furniture.28"}'}
 execute store result score #temp Variant run random value 1..5
 execute if score #temp Variant matches 3 run data modify storage luigis_mansion:data furniture.loot set value {contents:{luigis_mansion:{poison_mushroom:1}}}
 execute if score #temp Variant matches 4 run data modify storage luigis_mansion:data furniture.loot set value {contents:{luigis_mansion:{small_heart:1}}}

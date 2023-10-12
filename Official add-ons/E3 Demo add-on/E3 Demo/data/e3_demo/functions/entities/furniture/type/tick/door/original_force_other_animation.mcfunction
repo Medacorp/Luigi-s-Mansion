@@ -1,0 +1,1 @@
+execute if score #mansion_type Selected matches 2 in e3_demo:original run function e3_demo:entities/furniture/type/tick/door/original/force_other_animation

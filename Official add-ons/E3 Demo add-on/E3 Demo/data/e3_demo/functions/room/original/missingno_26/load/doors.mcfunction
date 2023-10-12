@@ -1,2 +1,2 @@
-execute positioned 664 20 35 rotated 0 0 run function luigis_mansion:spawn_furniture/door/left/push/mansion/1
-tag @e[x=664.5,y=20,z=36.0,distance=..0.7,tag=door,tag=frame,limit=1] add barricade
+data modify storage luigis_mansion:data furniture set value {sound:{namespace:"luigis_mansion",id:"heavy_generic"},door:{model:{namespace:"luigis_mansion",id:"mansion/1"},left_hinge:1b,push:1b,blocked:3b,other_end:{x:682,y:20,z:11}}}
+execute positioned 664 20 35 rotated 0 0 run function luigis_mansion:spawn_furniture/door

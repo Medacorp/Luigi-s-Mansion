@@ -1,3 +1,2 @@
-execute positioned 735 2 20 rotated -180 0 run function luigis_mansion:spawn_furniture/door/right/pull/mansion/wooden
-execute positioned 735 2 20 rotated -180 0 run function luigis_mansion:spawn_furniture/door_frame/frozen
-tag @e[x=735.5,y=2,z=20.0,distance=..0.7,tag=door,tag=frame,limit=1] add hallway_20_cold_storage
+data modify storage luigis_mansion:data furniture set value {sound:{namespace:"luigis_mansion",id:"heavy_generic"},door:{model:{namespace:"luigis_mansion",id:"mansion/wooden"},frame:{namespace:"luigis_mansion",id:"frozen"},key:"cold_storage",other_end:{x:726,y:2,z:30}}}
+execute positioned 735 2 20 rotated -180 0 run function luigis_mansion:spawn_furniture/door

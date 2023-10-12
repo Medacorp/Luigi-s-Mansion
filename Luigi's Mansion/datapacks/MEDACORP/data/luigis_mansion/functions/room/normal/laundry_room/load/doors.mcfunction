@@ -1,9 +1,7 @@
-execute positioned 716 11 58 rotated 0 0 run function luigis_mansion:spawn_furniture/door/left/pull/mansion/1
-execute positioned 716 11 58 rotated 0 0 run function luigis_mansion:spawn_furniture/door_frame/blue_stones
-tag @e[x=716.5,y=11,z=59.0,distance=..0.7,tag=door,tag=frame,limit=1] add hallway_3_laundry_room
-execute positioned 719 11 65 rotated 90 0 run function luigis_mansion:spawn_furniture/door/right/push/mansion/1
-execute positioned 719 11 65 rotated 90 0 run function luigis_mansion:spawn_furniture/door_frame/blue_stones
+data modify storage luigis_mansion:data furniture set value {sound:{namespace:"luigis_mansion",id:"heavy_generic"},door:{model:{namespace:"luigis_mansion",id:"mansion/1"},frame:{namespace:"luigis_mansion",id:"blue_stones"},left_hinge:1b,key:"laundry_room",other_end:{x:716,y:11,z:24}}}
+execute positioned 716 11 58 rotated 0 0 run function luigis_mansion:spawn_furniture/door
+data modify storage luigis_mansion:data furniture set value {sound:{namespace:"luigis_mansion",id:"heavy_generic"},door:{model:{namespace:"luigis_mansion",id:"mansion/1"},frame:{namespace:"luigis_mansion",id:"blue_stones"},push:1b,other_end:{x:738,y:11,z:61}}}
+execute positioned 719 11 65 rotated 90 0 run function luigis_mansion:spawn_furniture/door
 
-execute positioned 713 11 65 rotated -90 0 run function luigis_mansion:spawn_furniture/door/left/pull/mansion/3
-execute positioned 713 11 65 rotated -90 0 run function luigis_mansion:spawn_furniture/door_frame/blue_stones
-tag @e[x=714.0,y=11,z=65.5,distance=..0.7,tag=door,tag=frame,limit=1] add fake
+data modify storage luigis_mansion:data entity set value {door:{model:{namespace:"luigis_mansion",id:"mansion/3"},frame:{namespace:"luigis_mansion",id:"blue_stones"},left_hinge:1b}}
+execute positioned 713 11 65 rotated -90 0 run function luigis_mansion:spawn_entities/fake_door

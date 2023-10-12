@@ -1,5 +1,6 @@
 {
 	"values": [
+		"luigis_mansion:entities/furniture/type/door",
         "luigis_mansion:entities/furniture/type/generic",
 		"luigis_mansion:entities/furniture/type/candle_flame",
 		"luigis_mansion:entities/furniture/type/rolling",

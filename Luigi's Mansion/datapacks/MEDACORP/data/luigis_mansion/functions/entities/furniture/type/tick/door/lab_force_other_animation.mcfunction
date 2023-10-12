@@ -1,0 +1,1 @@
+function luigis_mansion:entities/furniture/type/tick/door/lab/force_other_animation

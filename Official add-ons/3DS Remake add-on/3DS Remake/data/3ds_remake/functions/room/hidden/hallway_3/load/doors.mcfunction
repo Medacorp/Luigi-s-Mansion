@@ -1,21 +1,15 @@
-execute positioned 719 11 -6 rotated 90 0 run function luigis_mansion:spawn_furniture/door/right/pull/heart
-execute positioned 719 11 -6 rotated 90 0 run function luigis_mansion:spawn_furniture/door_frame/double_windowed
-tag @e[x=719.0,y=11,z=-5.5,distance=..0.7,tag=door,tag=frame,limit=1] add foyer_hallway_3
-execute positioned 719 11 -5 rotated 90 0 run function luigis_mansion:spawn_furniture/door/left/push/heart
-execute positioned 719 11 -5 rotated 90 0 run function luigis_mansion:spawn_furniture/door_frame/double_windowed
-tag @e[x=719.0,y=11,z=-4.5,distance=..0.7,tag=door,tag=frame,limit=1] add foyer_hallway_3
-execute positioned 716 11 -34 rotated 0 0 run function luigis_mansion:spawn_furniture/door/left/pull/mansion/1
-execute positioned 716 11 -34 rotated 0 0 run function luigis_mansion:spawn_furniture/door_frame/normal
-execute positioned 719 11 -28 rotated 90 0 run function luigis_mansion:spawn_furniture/door/right/push/mansion/1
-execute positioned 719 11 -28 rotated 90 0 run function luigis_mansion:spawn_furniture/door_frame/normal
-tag @e[x=719.0,y=11,z=-27.5,distance=..0.7,tag=door,tag=frame,limit=1] add hallway_3_fortune_tellers_room
-execute positioned 716 11 24 rotated -180 0 run function luigis_mansion:spawn_furniture/door/right/push/mansion/1
-execute positioned 716 11 24 rotated -180 0 run function luigis_mansion:spawn_furniture/door_frame/normal
-tag @e[x=716.5,y=11,z=24.0,distance=..0.7,tag=door,tag=frame,limit=1] add hallway_3_laundry_room
+data modify storage luigis_mansion:data furniture set value {sound:{namespace:"luigis_mansion",id:"heavy_generic"},door:{model:{namespace:"luigis_mansion",id:"heart"},frame:{namespace:"luigis_mansion",id:"double/windowed"},key:"hallway_3",other_end:{x:743,y:11,z:8}}}
+execute positioned 719 11 -6 rotated 90 0 run function luigis_mansion:spawn_furniture/door
+data modify storage luigis_mansion:data furniture set value {sound:{namespace:"luigis_mansion",id:"heavy_generic"},door:{model:{namespace:"luigis_mansion",id:"heart"},frame:{namespace:"luigis_mansion",id:"double/windowed"},left_hinge:1b,push:1b,key:"hallway_3",other_end:{x:743,y:11,z:9}}}
+execute positioned 719 11 -5 rotated 90 0 run function luigis_mansion:spawn_furniture/door
+data modify storage luigis_mansion:data furniture set value {sound:{namespace:"luigis_mansion",id:"heavy_generic"},door:{model:{namespace:"luigis_mansion",id:"mansion/1"},frame:{namespace:"luigis_mansion",id:"normal"},left_hinge:1b,other_end:{x:716,y:11,z:-43}}}
+execute positioned 716 11 -34 rotated 0 0 run function luigis_mansion:spawn_furniture/door
+data modify storage luigis_mansion:data furniture set value {sound:{namespace:"luigis_mansion",id:"heavy_generic"},door:{model:{namespace:"luigis_mansion",id:"mansion/1"},frame:{namespace:"luigis_mansion",id:"normal"},push:1b,key:"fortune_tellers_room",other_end:{x:735,y:11,z:-32}}}
+execute positioned 719 11 -28 rotated 90 0 run function luigis_mansion:spawn_furniture/door
+data modify storage luigis_mansion:data furniture set value {sound:{namespace:"luigis_mansion",id:"heavy_generic"},door:{model:{namespace:"luigis_mansion",id:"mansion/1"},frame:{namespace:"luigis_mansion",id:"normal"},push:1b,key:"laundry_room",other_end:{x:716,y:11,z:58}}}
+execute positioned 716 11 24 rotated -180 0 run function luigis_mansion:spawn_furniture/door
 
-execute positioned 713 11 -11 rotated -90 0 run function luigis_mansion:spawn_furniture/door/left/pull/mansion/1
-execute positioned 713 11 -11 rotated -90 0 run function luigis_mansion:spawn_furniture/door_frame/normal
-tag @e[x=714.0,y=11,z=-10.5,distance=..0.7,tag=door,tag=frame,limit=1] add fake
-execute if data storage luigis_mansion:data current_state.current_data{blackout:1b} positioned 713 11 10 rotated -90 0 run function luigis_mansion:spawn_furniture/door/left/pull/mansion/1
-execute if data storage luigis_mansion:data current_state.current_data{blackout:1b} positioned 713 11 10 rotated -90 0 run function luigis_mansion:spawn_furniture/door_frame/normal
-execute if data storage luigis_mansion:data current_state.current_data{blackout:1b} run tag @e[x=714.0,y=11,z=10.5,distance=..0.7,tag=door,tag=frame,limit=1] add fake
+data modify storage luigis_mansion:data entity set value {door:{model:{namespace:"luigis_mansion",id:"mansion/1"},frame:{namespace:"luigis_mansion",id:"normal"},left_hinge:1b}}
+execute positioned 713 11 -11 rotated -90 0 run function luigis_mansion:spawn_entities/fake_door
+execute if data storage luigis_mansion:data current_state.current_data{blackout:1b} run data modify storage luigis_mansion:data entity set value {door:{model:{namespace:"luigis_mansion",id:"mansion/1"},frame:{namespace:"luigis_mansion",id:"normal"},left_hinge:1b}}
+execute if data storage luigis_mansion:data current_state.current_data{blackout:1b} positioned 713 11 10 rotated -90 0 run function luigis_mansion:spawn_entities/fake_door

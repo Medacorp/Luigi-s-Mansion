@@ -1,4 +1,5 @@
 function #luigis_mansion:mansion_reset
+function e3_demo:room/original/front_door
 function e3_demo:room/original/forceload_chunks
 scoreboard players set #mansion_type Selected 2
 execute unless score #mansion_data_index Selected matches 2 if data storage luigis_mansion:data current_state.current_data.data_index run function luigis_mansion:room/save_mansion_data

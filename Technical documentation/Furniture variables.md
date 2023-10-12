@@ -8,7 +8,10 @@ furniture: {
     no_short_shake:1b, //When set disables the short shaking animation from manual search. Default = 0b.
     no_visual_shake:1b, //When set disables the shaking animations visually; sound will still play. Default = 0b.
     use_medium_shake:1b, //When set forces a shake animation used by room clear chests, rather than the other 2. Default = 0b.
-    sound:"luigis_mansion:heavy_generic", //What furniture shake sound. See below for options. Defaults to luigis_mansion:heavy_generic.
+    sound:{ //The ID of the furniture shake sound. See IDs in use for valid IDs.
+        namespace:"luigis_mansion", //The namespace of the furniture shake sound. Defaults to "luigis_mansion".
+        id:"heavy_generic" //The ID of the furniture shake sound. Defaults to "heavy_generic".
+    },
     interact_animation:7, //What animation gets used when using the interact method. Enthusiastic animation (7) aditionally has a punch sound and will swing swinging furniture. Overrides default animation selecting. Default = none, except for room clear chests which use 45 when the 3DS Remake add-on is installed or not, and 43 when not.
         
     //search details
@@ -67,29 +70,28 @@ furniture: {
             tags: [] //A list of tags to append to the flame's default tags, used to target the flame in functions. Default = none.
         }
     ],
+    door:{ //Required for and used only by doors
+        model: { //Required, the ID of the door model. See IDs in use for valid IDs.
+            namespace:"luigis_mansion", //Required, the namespace of the door model.
+            id:"mansion/1" //Required, the ID of the door model.
+        },
+        frame: { //Optional, the ID of the frame model. See IDs in use for valid IDs.
+            namespace:"luigis_mansion", //The namespace of the frame model.
+            id:"normal" //The ID of the frame model.
+        },
+        left_hinge:1b, //If the hinge is on the left of the door itself (your right when facing it). Default = 0b.
+        push:1b, //If the door is pushed open, rather than pulled. Default = 0b.
+        blocked:1b, //How the door is blocked, 0b = not, 1b = blockade, 2b = arena blockade, 3b = barricade, 4b = uninteractable. Default = 0b.
+        burning:"extinguish_kitchen_door", //Only if the door is burning, the save data field to write on extinguish. If it's already written, the door won't burn. Default = none.
+        key:"parlor", //What key this door needs. Default = none.
+        go_through_command:"<command>", //A command this door needs to run at the moment of warping the player. Used by the front door and some special cases. Default = none.
+        other_end: { //Coordinates of the door on the other side to trigger opening animation for; does not affect warping. Default = none.
+            dimension:"luigis_mansion:normal", //The dimension of the door. Default = the dimension of this door.
+            x:X, //The integer X coordinate
+            y:X, //The integer Y coordinate
+            z:X //The integer Z coordinate
+        }
+    }
     tags: [] //A list of tags to append to the furniture's default tags used to target the furniture in functions. Default = none.
 }
-```
-
-Furniture shake sounds:
-```
-Value                        | Sound type
-luigis_mansion:cello         | Cello
-luigis_mansion:ceramic       | Ceramic
-luigis_mansion:chest         | Chest
-luigis_mansion:concrete      | Concrete
-luigis_mansion:drum          | Drum
-luigis_mansion:fridge        | Fridge
-luigis_mansion:generic       | Generic
-luigis_mansion:harp          | Harp
-luigis_mansion:heavy_generic | Heavy generic
-luigis_mansion:heavy_metal   | Heavy metal
-luigis_mansion:metal         | Metal
-luigis_mansion:oven          | Oven
-luigis_mansion:plant         | Plant
-luigis_mansion:plate         | Plate
-luigis_mansion:saxophone     | Saxophone
-luigis_mansion:stone         | Stone
-luigis_mansion:wood          | Wood
-luigis_mansion:xylophone     | Xylophone
 ```

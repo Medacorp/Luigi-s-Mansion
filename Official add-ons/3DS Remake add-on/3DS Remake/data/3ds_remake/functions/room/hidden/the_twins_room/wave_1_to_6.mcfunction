@@ -10,7 +10,7 @@ execute at @e[type=minecraft:marker,tag=option,tag=selected,limit=1] run telepor
 kill @e[type=minecraft:marker,tag=option]
 scoreboard players set #the_twins_room Wave 6
 execute as @a[scores={Room=49},gamemode=!spectator] run function luigis_mansion:other/music/set/danger
-tag @e[scores={Room=49},tag=door,tag=frame] add blockade
+tag @e[scores={Room=49},tag=furniture,tag=door] add blockade
 
 execute unless data storage luigis_mansion:data current_state.current_data.portrait_ghosts.luigis_mansion.henry_and_orville.orville{health:0} run data modify storage luigis_mansion:data entity set value {scan_message:{sender:"me",message:'{"translate":"luigis_mansion:message.orville.scan"}'}}
 execute unless data storage luigis_mansion:data current_state.current_data.portrait_ghosts.luigis_mansion.henry_and_orville.orville{health:0} at @e[tag=me,limit=1] run function luigis_mansion:spawn_entities/portrait_ghost/orville

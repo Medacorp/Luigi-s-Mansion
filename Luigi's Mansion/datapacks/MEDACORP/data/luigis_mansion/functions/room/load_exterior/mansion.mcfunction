@@ -32,11 +32,5 @@ place template luigis_mansion:mansion/mansion/4 616 90 79
 place template luigis_mansion:mansion/mansion/3 616 90 31
 place template luigis_mansion:mansion/mansion/2 616 90 -17
 place template luigis_mansion:mansion/mansion/1 616 90 -65
-tag @e[scores={Room=0},tag=door] add remove_from_existence
-execute positioned 720 102 7 rotated -90 0 run function luigis_mansion:spawn_furniture/door/left/pull/mansion/entrance
-execute positioned 720 102 7 rotated -90 0 run function luigis_mansion:spawn_furniture/door_frame/double_basic
-execute positioned 720 102 8 rotated -90 0 run function luigis_mansion:spawn_furniture/door/right/push/mansion/entrance
-execute positioned 720 102 8 rotated -90 0 run function luigis_mansion:spawn_furniture/door_frame/double_basic
-scoreboard players set @e[x=720.5,y=102,z=8.0,distance=..3,tag=door] Room 0
 forceload remove 749 -66 615 81
 tellraw @a {"translate":"chat.type.text","with":[{"translate":"luigis_mansion:entity.mansion","color":"green"},{"translate":"luigis_mansion:message.load_mansion.stop"}]}

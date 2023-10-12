@@ -1,9 +1,6 @@
-execute positioned 728 20 27 rotated 90 0 run function luigis_mansion:spawn_furniture/door/right/pull/mansion/4
-execute positioned 728 20 27 rotated 90 0 run function luigis_mansion:spawn_furniture/door_frame/double_windowed
-tag @e[x=728.0,y=20,z=27.5,distance=..0.7,tag=door,tag=frame,limit=1] add hallway_1_parlor
-execute positioned 728 20 28 rotated 90 0 run function luigis_mansion:spawn_furniture/door/left/push/mansion/4
-execute positioned 728 20 28 rotated 90 0 run function luigis_mansion:spawn_furniture/door_frame/double_windowed
-tag @e[x=728.0,y=20,z=28.5,distance=..0.7,tag=door,tag=frame,limit=1] add hallway_1_parlor
-execute positioned 713 20 21 rotated -90 0 run function luigis_mansion:spawn_furniture/door/left/pull/mansion/3
-execute positioned 713 20 21 rotated -90 0 run function luigis_mansion:spawn_furniture/door_frame/windowed
-tag @e[x=714.0,y=20,z=21.5,distance=..0.7,tag=door,tag=frame,limit=1] add parlor_anteroom
+data modify storage luigis_mansion:data furniture set value {sound:{namespace:"luigis_mansion",id:"heavy_generic"},door:{model:{namespace:"luigis_mansion",id:"mansion/4"},frame:{namespace:"luigis_mansion",id:"double/windowed"},key:"parlor",other_end:{x:736,y:20,z:8}}}
+execute positioned 728 20 27 rotated 90 0 run function luigis_mansion:spawn_furniture/door
+data modify storage luigis_mansion:data furniture set value {sound:{namespace:"luigis_mansion",id:"heavy_generic"},door:{model:{namespace:"luigis_mansion",id:"mansion/4"},frame:{namespace:"luigis_mansion",id:"double/windowed"},left_hinge:1b,push:1b,key:"parlor",other_end:{x:736,y:20,z:9}}}
+execute positioned 728 20 28 rotated 90 0 run function luigis_mansion:spawn_furniture/door
+data modify storage luigis_mansion:data furniture set value {sound:{namespace:"luigis_mansion",id:"heavy_generic"},door:{model:{namespace:"luigis_mansion",id:"mansion/3"},frame:{namespace:"luigis_mansion",id:"windowed"},left_hinge:1b,key:"anteroom",other_end:{x:694,y:20,z:26}}}
+execute positioned 713 20 21 rotated -90 0 run function luigis_mansion:spawn_furniture/door

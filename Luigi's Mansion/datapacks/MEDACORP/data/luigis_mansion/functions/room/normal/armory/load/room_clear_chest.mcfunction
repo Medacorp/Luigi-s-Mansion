@@ -1,4 +1,4 @@
-data modify storage luigis_mansion:data furniture set value {searchable:["interact"],shake_animation:["interact"],no_dust:1b,must_face:1b,cannot_search_when_open:1b,use_medium_shake:1b,sound:"luigis_mansion:chest"}
+data modify storage luigis_mansion:data furniture set value {searchable:["interact"],shake_animation:["interact"],no_dust:1b,must_face:1b,cannot_search_when_open:1b,use_medium_shake:1b,sound:{namespace:"luigis_mansion",id:"chest"}}
 execute unless data storage luigis_mansion:data current_state.current_data{obtained_keys:["pipe_room"]} run data modify storage luigis_mansion:data furniture.loot set value {contents:{luigis_mansion:{key:[{door:"pipe_room",variant:0b,rotation:[45.0f,0.0f]}]}}}
 execute unless data storage luigis_mansion:data current_state.current_data{money_spawned:["armory_room_clear_chest"]} run data modify storage luigis_mansion:data furniture.loot.name set value "armory_room_clear_chest"
 execute if data storage luigis_mansion:data current_state.current_data{money_spawned:["armory_room_clear_chest"]} run data modify storage luigis_mansion:data furniture merge value {searched:1b,no_search_animation:1b}

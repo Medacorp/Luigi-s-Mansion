@@ -1,0 +1,1 @@
+tag @s[nbt={ArmorItems:[{tag:{namespace:"luigis_mansion",id:"fake_door"}}]},tag=burning] add extinguish

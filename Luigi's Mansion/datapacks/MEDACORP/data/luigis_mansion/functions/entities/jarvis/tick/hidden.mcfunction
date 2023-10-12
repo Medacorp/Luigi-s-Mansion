@@ -48,7 +48,7 @@ execute if entity @s[scores={Dialog=620}] if entity @a[scores={JarvisChoice=2}] 
 execute if entity @s[scores={Dialog=620}] if entity @a[scores={JarvisChoice=2}] run scoreboard players set #ceramics_studio Wave -1
 execute if entity @s[scores={Dialog=620}] run scoreboard players reset @a JarvisChoice
 
-execute if entity @s[scores={Dialog=865}] run tag @e[scores={Room=65},tag=door,tag=frame] add blockade
+execute if entity @s[scores={Dialog=865}] run tag @e[scores={Room=65},tag=furniture,tag=door] add blockade
 execute if entity @s[scores={Dialog=865..1519}] as @a[tag=same_room,tag=!spectator] run function luigis_mansion:other/music/set/mini_game
 tag @s[scores={Dialog=865}] add can_freeze
 scoreboard players set @s[scores={Dialog=865}] Wave 0

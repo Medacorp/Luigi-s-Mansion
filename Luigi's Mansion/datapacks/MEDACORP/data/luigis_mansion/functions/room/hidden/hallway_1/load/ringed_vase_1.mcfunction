@@ -1,2 +1,2 @@
-data modify storage luigis_mansion:data furniture set value {searchable:["interact","vacuum"],shake_animation:["interact","vacuum"],sound:"luigis_mansion:ceramic",scan_message:'{"translate":"luigis_mansion:message.player.scan_furniture.29"}'}
+data modify storage luigis_mansion:data furniture set value {searchable:["interact","vacuum"],shake_animation:["interact","vacuum"],sound:{namespace:"luigis_mansion",id:"ceramic"},scan_message:'{"translate":"luigis_mansion:message.player.scan_furniture.29"}'}
 execute positioned 737 21.5 0 rotated -90 0 run function luigis_mansion:spawn_furniture/ringed_vase

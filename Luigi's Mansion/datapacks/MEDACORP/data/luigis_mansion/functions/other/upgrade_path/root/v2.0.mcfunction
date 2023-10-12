@@ -15,10 +15,4 @@ execute unless score #loaded_exterior Selected matches -1 run forceload add 749 
 execute unless score #loaded_exterior Selected matches -1 run fill 720 102 9 720 103 9 minecraft:lapis_block
 execute unless score #loaded_exterior Selected matches -1 run fill 720 102 7 720 103 8 minecraft:air
 execute unless score #loaded_exterior Selected matches -1 run fill 720 102 6 720 103 6 minecraft:lapis_block
-execute unless score #loaded_exterior Selected matches -1 run tag @e[scores={Room=0},tag=door] add remove_from_existence
-execute unless score #loaded_exterior Selected matches -1 positioned 720 102 7 rotated -90 0 run function luigis_mansion:spawn_furniture/door/left/pull/mansion/entrance
-execute unless score #loaded_exterior Selected matches -1 positioned 720 102 7 rotated -90 0 run function luigis_mansion:spawn_furniture/door_frame/double_basic
-execute unless score #loaded_exterior Selected matches -1 positioned 720 102 8 rotated -90 0 run function luigis_mansion:spawn_furniture/door/right/push/mansion/entrance
-execute unless score #loaded_exterior Selected matches -1 positioned 720 102 8 rotated -90 0 run function luigis_mansion:spawn_furniture/door_frame/double_basic
-execute unless score #loaded_exterior Selected matches -1 run scoreboard players set @e[x=720.5,y=102,z=8.0,distance=..3,tag=door] Room 0
 execute unless score #loaded_exterior Selected matches -1 run forceload remove 749 -66 615 81

@@ -1,6 +1,4 @@
-execute positioned 653 102 21 rotated 90 0 run function luigis_mansion:spawn_furniture/door/right/push/club
-execute positioned 653 102 21 rotated 90 0 run function luigis_mansion:spawn_furniture/door_frame/mansion_wall
-tag @e[x=653.0,y=102,z=21.5,distance=..0.7,tag=door,tag=frame,limit=1] add hallway_6_courtyard
-execute positioned 653 102 -38 rotated 90 0 run function luigis_mansion:spawn_furniture/door/right/push/mansion/1
-execute positioned 653 102 -38 rotated 90 0 run function luigis_mansion:spawn_furniture/door_frame/mansion_wall
-tag @e[x=653.0,y=102,z=-37.5,distance=..0.7,tag=door,tag=frame,limit=1] add courtyard_rec_room
+data modify storage luigis_mansion:data furniture set value {sound:{namespace:"luigis_mansion",id:"heavy_generic"},door:{model:{namespace:"luigis_mansion",id:"club"},frame:{namespace:"luigis_mansion",id:"mansion_wall"},push:1b,key:"courtyard",other_end:{x:668,y:11,z:8}}}
+execute positioned 653 102 21 rotated 90 0 run function luigis_mansion:spawn_furniture/door
+data modify storage luigis_mansion:data furniture set value {sound:{namespace:"luigis_mansion",id:"heavy_generic"},door:{model:{namespace:"luigis_mansion",id:"mansion/1"},frame:{namespace:"luigis_mansion",id:"mansion_wall"},push:1b,key:"rec_room",other_end:{x:638,y:11,z:-58}}}
+execute positioned 653 102 -38 rotated 90 0 run function luigis_mansion:spawn_furniture/door

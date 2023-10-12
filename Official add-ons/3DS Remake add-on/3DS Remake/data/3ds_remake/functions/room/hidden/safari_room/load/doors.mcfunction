@@ -1,5 +1,4 @@
-execute positioned 733 29 -39 rotated -90 0 run function luigis_mansion:spawn_furniture/door/left/pull/mansion/wooden
-execute positioned 733 29 -39 rotated -90 0 run function luigis_mansion:spawn_furniture/door_frame/planks
-tag @e[x=734.0,y=29,z=-38.5,distance=..0.7,tag=door,tag=frame,limit=1] add hallway_15_safari_room
-execute positioned 738 29 -35 rotated -180 0 run function luigis_mansion:spawn_furniture/door/right/push/mansion/wooden
-execute positioned 738 29 -35 rotated -180 0 run function luigis_mansion:spawn_furniture/door_frame/planks
+data modify storage luigis_mansion:data furniture set value {sound:{namespace:"luigis_mansion",id:"heavy_generic"},door:{model:{namespace:"luigis_mansion",id:"mansion/wooden"},frame:{namespace:"luigis_mansion",id:"planks"},left_hinge:1b,key:"safari_room",other_end:{x:719,y:29,z:-34}}}
+execute positioned 733 29 -39 rotated -90 0 run function luigis_mansion:spawn_furniture/door
+data modify storage luigis_mansion:data furniture set value {sound:{namespace:"luigis_mansion",id:"heavy_generic"},door:{model:{namespace:"luigis_mansion",id:"mansion/wooden"},frame:{namespace:"luigis_mansion",id:"planks"},push:1b,other_end:{x:753,y:29,z:-16}}}
+execute positioned 738 29 -35 rotated -180 0 run function luigis_mansion:spawn_furniture/door

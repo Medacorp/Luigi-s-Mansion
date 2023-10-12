@@ -1,12 +1,10 @@
-execute positioned 755 11 8 rotated 90 0 run function luigis_mansion:spawn_furniture/door/right/push/mansion/entrance
-execute positioned 755 11 8 rotated 90 0 run function luigis_mansion:spawn_furniture/door_frame/double_windowed
-execute if data storage luigis_mansion:data current_state.current_data{blackout:1b} run tag @e[x=755.0,y=11,z=8.5,distance=..0.7,tag=door,tag=frame,limit=1] add unopenable
-execute positioned 755 11 9 rotated 90 0 run function luigis_mansion:spawn_furniture/door/left/pull/mansion/entrance
-execute positioned 755 11 9 rotated 90 0 run function luigis_mansion:spawn_furniture/door_frame/double_windowed
-execute if data storage luigis_mansion:data current_state.current_data{blackout:1b} run tag @e[x=755.0,y=11,z=9.5,distance=..0.7,tag=door,tag=frame,limit=1] add unopenable
-execute positioned 743 11 8 rotated -90 0 run function luigis_mansion:spawn_furniture/door/left/push/heart
-execute positioned 743 11 8 rotated -90 0 run function luigis_mansion:spawn_furniture/door_frame/double_windowed
-tag @e[x=744.0,y=11,z=8.5,distance=..0.7,tag=door,tag=frame,limit=1] add foyer_hallway_3
-execute positioned 743 11 9 rotated -90 0 run function luigis_mansion:spawn_furniture/door/right/pull/heart
-execute positioned 743 11 9 rotated -90 0 run function luigis_mansion:spawn_furniture/door_frame/double_windowed
-tag @e[x=744.0,y=11,z=9.5,distance=..0.7,tag=door,tag=frame,limit=1] add foyer_hallway_3
+data modify storage luigis_mansion:data furniture set value {sound:{namespace:"luigis_mansion",id:"heavy_generic"},door:{model:{namespace:"luigis_mansion",id:"mansion/entrance"},frame:{namespace:"luigis_mansion",id:"double/windowed"},push:1b,other_end:{dimension:"minecraft:overworld",x:720,y:102,z:7},go_through_command:"luigis_mansion:room/normal/exit"}}
+execute if data storage luigis_mansion:data current_state.current_data{blackout:1b} run data modify storage luigis_mansion:data furniture.door.blocked set value 4b
+execute positioned 755 11 8 rotated 90 0 run function luigis_mansion:spawn_furniture/door
+data modify storage luigis_mansion:data furniture set value {sound:{namespace:"luigis_mansion",id:"heavy_generic"},door:{model:{namespace:"luigis_mansion",id:"mansion/entrance"},frame:{namespace:"luigis_mansion",id:"double/windowed"},left_hinge:1b,other_end:{dimension:"minecraft:overworld",x:720,y:102,z:8},go_through_command:"luigis_mansion:room/normal/exit"}}
+execute if data storage luigis_mansion:data current_state.current_data{blackout:1b} run data modify storage luigis_mansion:data furniture.door.blocked set value 4b
+execute positioned 755 11 9 rotated 90 0 run function luigis_mansion:spawn_furniture/door
+data modify storage luigis_mansion:data furniture set value {sound:{namespace:"luigis_mansion",id:"heavy_generic"},door:{model:{namespace:"luigis_mansion",id:"heart"},frame:{namespace:"luigis_mansion",id:"double/windowed"},left_hinge:1b,push:1b,key:"hallway_3",other_end:{x:719,y:11,z:-6}}}
+execute positioned 743 11 8 rotated -90 0 run function luigis_mansion:spawn_furniture/door
+data modify storage luigis_mansion:data furniture set value {sound:{namespace:"luigis_mansion",id:"heavy_generic"},door:{model:{namespace:"luigis_mansion",id:"heart"},frame:{namespace:"luigis_mansion",id:"double/windowed"},key:"hallway_3",other_end:{x:719,y:11,z:-5}}}
+execute positioned 743 11 9 rotated -90 0 run function luigis_mansion:spawn_furniture/door

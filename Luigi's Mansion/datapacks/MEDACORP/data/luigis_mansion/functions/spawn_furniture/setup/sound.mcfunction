@@ -1,2 +1,3 @@
-data modify entity @e[tag=this_entity,limit=1] ArmorItems[3].tag.shake_sound set value "luigis_mansion:heavy_generic"
-execute if data storage luigis_mansion:data furniture.sound run data modify entity @e[tag=this_entity,limit=1] ArmorItems[3].tag.shake_sound set from storage luigis_mansion:data furniture.sound
+data modify entity @e[tag=this_entity,limit=1] ArmorItems[3].tag.shake_sound set value {namespace:"luigis_mansion",id:"heavy_generic"}
+execute if data storage luigis_mansion:data furniture.sound.namespace run data modify entity @e[tag=this_entity,limit=1] ArmorItems[3].tag.shake_sound.namespace set from storage luigis_mansion:data furniture.sound.namespace
+execute if data storage luigis_mansion:data furniture.sound.id run data modify entity @e[tag=this_entity,limit=1] ArmorItems[3].tag.shake_sound.id set from storage luigis_mansion:data furniture.sound.id

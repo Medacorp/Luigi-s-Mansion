@@ -1,1 +1,1 @@
-tag @e[scores={Room=56},tag=door,tag=frame] remove blockade
+tag @e[scores={Room=56},tag=furniture,tag=door] remove blockade

@@ -1,0 +1,2 @@
+data modify entity @s[tag=!left] HandItems[1] set value {id:"minecraft:diamond_pickaxe",Count:1b,tag:{Unbreakable:1b,Damage:17,CustomModelData:1,mirror:{tag:{Damage:18}}}}
+data modify entity @s[tag=left] HandItems[0] set value {id:"minecraft:diamond_pickaxe",Count:1b,tag:{Unbreakable:1b,Damage:18,CustomModelData:1,mirror:{tag:{Damage:17}}}}

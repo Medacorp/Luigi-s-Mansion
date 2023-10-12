@@ -1,4 +1,5 @@
 function #luigis_mansion:mansion_reset
+function 3ds_remake:room/hidden/front_door
 function 3ds_remake:room/hidden/forceload_chunks
 scoreboard players set #mansion_type Selected 1
 execute unless score #mansion_data_index Selected matches 1 if data storage luigis_mansion:data current_state.current_data.data_index run function luigis_mansion:room/save_mansion_data

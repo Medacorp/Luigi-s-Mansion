@@ -1,4 +1,4 @@
-execute positioned 778 77 16 rotated 90 0 run function luigis_mansion:spawn_furniture/door/right/push/ghost_portrificationizer
-tag @e[x=778.0,y=77,z=16.5,distance=..0.7,tag=door,tag=frame,limit=1] add unopenable
-execute positioned 772 77 -15 rotated 0 0 run function luigis_mansion:spawn_furniture/door/left/pull/lab
-tag @e[x=772.5,y=77,z=-14.0,distance=..0.7,tag=door,tag=frame,limit=1] add unopenable
+data modify storage luigis_mansion:data furniture set value {sound:{namespace:"luigis_mansion",id:"heavy_generic"},door:{model:{namespace:"luigis_mansion",id:"ghost_portrificationizer"},push:1b,blocked:4b,other_end:{x:779,y:77,z:16}}}
+execute positioned 778 77 16 rotated 90 0 run function luigis_mansion:spawn_furniture/door
+data modify storage luigis_mansion:data furniture set value {sound:{namespace:"luigis_mansion",id:"heavy_generic"},door:{model:{namespace:"luigis_mansion",id:"lab"},left_hinge:1b,blocked:4b,other_end:{x:772,y:77,z:-16}}}
+execute positioned 772 77 -15 rotated 0 0 run function luigis_mansion:spawn_furniture/door

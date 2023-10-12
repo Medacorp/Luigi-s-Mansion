@@ -1,1 +1,0 @@
-execute if score #mansion_type Selected matches 2 in e3_demo:original run function e3_demo:entities/door/original/go_through

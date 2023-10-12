@@ -1,8 +1,7 @@
-execute positioned 716 11 -43 rotated -180 0 run function luigis_mansion:spawn_furniture/door/right/push/mansion/1
-execute positioned 716 11 -43 rotated -180 0 run function luigis_mansion:spawn_furniture/door_frame/rotten
-execute positioned 713 2 -47 rotated -90 0 run function luigis_mansion:spawn_furniture/door/left/pull/mansion/wooden
-execute positioned 713 2 -47 rotated -90 0 run function luigis_mansion:spawn_furniture/door_frame/exposed_bricks
-tag @e[x=714.0,y=2,z=-46.5,distance=..0.7,tag=door,tag=frame,limit=1] add hallway_7_breaker_room
-execute positioned 719 2 -47 rotated 90 0 run function luigis_mansion:spawn_furniture/door/right/push/mansion/wooden
-execute positioned 719 2 -47 rotated 90 0 run function luigis_mansion:spawn_furniture/door_frame/exposed_bricks
-tag @e[x=719.0,y=2,z=-46.5,distance=..0.7,tag=door,tag=frame,limit=1] add hallway_7_cellar
+data modify storage luigis_mansion:data furniture set value {sound:{namespace:"luigis_mansion",id:"heavy_generic"},door:{model:{namespace:"luigis_mansion",id:"mansion/1"},frame:{namespace:"luigis_mansion",id:"rotten"},push:1b,other_end:{x:716,y:11,z:-34}}}
+execute positioned 716 11 -43 rotated -180 0 run function luigis_mansion:spawn_furniture/door
+data modify storage luigis_mansion:data furniture set value {sound:{namespace:"luigis_mansion",id:"heavy_generic"},door:{model:{namespace:"luigis_mansion",id:"mansion/wooden"},frame:{namespace:"luigis_mansion",id:"exposed_bricks"},left_hinge:1b,other_end:{x:699,y:2,z:-47}}}
+execute if data storage luigis_mansion:data current_state.current_data{blackout:1b} run data modify storage luigis_mansion:data furniture.door.key set value "breaker_room"
+execute positioned 713 2 -47 rotated -90 0 run function luigis_mansion:spawn_furniture/door
+data modify storage luigis_mansion:data furniture set value {sound:{namespace:"luigis_mansion",id:"heavy_generic"},door:{model:{namespace:"luigis_mansion",id:"mansion/wooden"},frame:{namespace:"luigis_mansion",id:"exposed_bricks"},push:1b,key:"cellar",other_end:{x:735,y:2,z:-47}}}
+execute positioned 719 2 -47 rotated 90 0 run function luigis_mansion:spawn_furniture/door

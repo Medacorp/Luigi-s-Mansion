@@ -1,6 +1,8 @@
 3.0:
-WARNING! When updating an old save version, be sure to delete the entire contents of the save's "datapacks" folder before drag-and-droping updating, if you don't, the map will malfunction
-* Renamed things to reduce file path length
+WARNING! When updating an old save version, be sure to:
+1. delete the entire contents of the save's "datapacks" folder before drag-and-droping updating, or the map will malfunction
+2. follow the "How to update" steps, or you'll be softlocked in whatever room you were in or be brought to the wrong dimension
+* Renamed the data packs/add-ons
 ** "Luigi's Mansion" data pack renamed to "MEDACORP"
 ** "Luigi's Mansion 3DS Remake" data pack and namespace renamed to "3DS Remake"
 ** "Luigi's Beta Mansion" data pack and namespace renamed to "E3 Demo"
@@ -8,7 +10,8 @@ WARNING! When updating an old save version, be sure to delete the entire content
 * Added death messages
 * Added revive messages
 * Rewrote a lot
-* Fixed poison mushrooms don't make players drop coins
+* Fixed poison mushrooms don't make players drop coins since v2.0
+
 
 2.3.8:
 * Updated to 1.20.2

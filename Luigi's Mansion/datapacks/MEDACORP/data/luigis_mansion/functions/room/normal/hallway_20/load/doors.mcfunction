@@ -1,5 +1,4 @@
-execute positioned 726 2 -21 rotated 0 0 run function luigis_mansion:spawn_furniture/door/left/pull/mansion/wooden
-execute positioned 726 2 -21 rotated 0 0 run function luigis_mansion:spawn_furniture/door_frame/stone
-execute positioned 726 2 -15 rotated -180 0 run function luigis_mansion:spawn_furniture/door/right/push/mansion/wooden
-execute positioned 726 2 -15 rotated -180 0 run function luigis_mansion:spawn_furniture/door_frame/stone
-tag @e[x=726.5,y=2,z=-15.0,distance=..0.7,tag=door,tag=frame,limit=1] add hallway_20_cold_storage
+data modify storage luigis_mansion:data furniture set value {sound:{namespace:"luigis_mansion",id:"heavy_generic"},door:{model:{namespace:"luigis_mansion",id:"mansion/wooden"},frame:{namespace:"luigis_mansion",id:"stone"},left_hinge:1b,other_end:{x:741,y:2,z:-43}}}
+execute positioned 726 2 -21 rotated 0 0 run function luigis_mansion:spawn_furniture/door
+data modify storage luigis_mansion:data furniture set value {sound:{namespace:"luigis_mansion",id:"heavy_generic"},door:{model:{namespace:"luigis_mansion",id:"mansion/wooden"},frame:{namespace:"luigis_mansion",id:"stone"},push:1b,key:"cold_storage",other_end:{x:735,y:2,z:-5}}}
+execute positioned 726 2 -15 rotated -180 0 run function luigis_mansion:spawn_furniture/door

@@ -1,2 +1,0 @@
-scoreboard players operation @e[distance=..0.7,tag=door,tag=frame,tag=!open_door,tag=!forced_animation,limit=1] AnimationProgress = @s AnimationProgress
-tag @e[distance=..0.7,tag=door,tag=frame,tag=!open_door,tag=!forced_animation,limit=1] add forced_animation

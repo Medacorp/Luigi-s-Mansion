@@ -1,2 +1,2 @@
-execute positioned 741 20 -43 rotated -180 0 run function luigis_mansion:spawn_furniture/door/right/push/mansion/1
-execute positioned 741 20 -43 rotated -180 0 run function luigis_mansion:spawn_furniture/door_frame/columned
+data modify storage luigis_mansion:data furniture set value {sound:{namespace:"luigis_mansion",id:"heavy_generic"},door:{model:{namespace:"luigis_mansion",id:"mansion/1"},frame:{namespace:"luigis_mansion",id:"columned"},push:1b,other_end:{x:741,y:20,z:-38}}}
+execute positioned 741 20 -43 rotated -180 0 run function luigis_mansion:spawn_furniture/door

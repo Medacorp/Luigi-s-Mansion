@@ -1,3 +1,2 @@
-execute positioned 698 111 51 rotated 90 0 run function luigis_mansion:spawn_furniture/door/right/push/mansion/1
-execute positioned 698 111 51 rotated 90 0 run function luigis_mansion:spawn_furniture/door_frame/windowed_2
-tag @e[x=698.0,y=111,z=51.5,distance=..0.7,tag=door,tag=frame,limit=1] add hallway_2_master_bedroom
+data modify storage luigis_mansion:data furniture set value {sound:{namespace:"luigis_mansion",id:"heavy_generic"},door:{model:{namespace:"luigis_mansion",id:"mansion/1"},frame:{namespace:"luigis_mansion",id:"windowed_2"},push:1b,key:"master_bedroom",other_end:{x:723,y:20,z:75}}}
+execute positioned 698 111 51 rotated 90 0 run function luigis_mansion:spawn_furniture/door

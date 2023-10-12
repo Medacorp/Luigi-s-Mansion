@@ -71,4 +71,6 @@ execute if score #cold_storage Ticking matches 1 if data storage luigis_mansion:
 execute if score #sitting_room Ticking matches 1 if data storage luigis_mansion:data current_state.current_data.rooms.sitting_room{cleared:1b} run function luigis_mansion:room/hidden/sitting_room/clear
 execute if score #guest_room Ticking matches 1 if data storage luigis_mansion:data current_state.current_data.rooms.guest_room{cleared:1b} run function luigis_mansion:room/hidden/guest_room/clear
 execute if score #the_artists_studio Ticking matches 1 if data storage luigis_mansion:data current_state.current_data.rooms.the_artists_studio{cleared:1b} run function luigis_mansion:room/hidden/the_artists_studio/clear
-execute if score #secret_altar Ticking matches 1 run function luigis_mansion:room/hidden/secret_altar/clear
+execute if score #secret_altar Ticking matches 1 run function #luigis_mansion:room/hidden/secret_altar/turn_lights/on
+tag @e[x=755.0,y=11,z=7.5,distance=..0.7,tag=furniture,tag=door,limit=1] add unopenable
+tag @e[x=755.0,y=11,z=6.5,distance=..0.7,tag=furniture,tag=door,limit=1] add unopenable

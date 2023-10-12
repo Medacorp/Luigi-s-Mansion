@@ -16,9 +16,11 @@ execute if entity @s[scores={AnimationProgress=10,Health=..40,Shrunk=1..}] run p
 execute at @s run teleport @s[scores={AnimationProgress=5..14}] ^ ^ ^-0.1
 execute at @s run teleport @s[scores={AnimationProgress=15..34}] ^ ^ ^0.1
 tag @s[scores={AnimationProgress=31}] add wall_warp
-execute if entity @s[scores={AnimationProgress=31}] run function #luigis_mansion:entities/door/go_through
+execute if entity @s[scores={AnimationProgress=31}] if data entity @e[tag=furniture,tag=door,tag=open_door,distance=..0.7,limit=1] ArmorItems[3].tag.go_through_command run function luigis_mansion:entities/furniture/type/tick/door/go_through with entity @e[tag=furniture,tag=door,tag=open_door,distance=..0.7,limit=1] ArmorItems[3].tag
+scoreboard players set @s[scores={AnimationProgress=32}] RoomNoise 0
+stopsound @s[scores={AnimationProgress=32}] ambient
 tag @s[scores={AnimationProgress=32}] remove wall_warp
-execute if entity @e[tag=door,tag=frame,tag=!open_door,tag=!forced_animation,distance=..0.7] run function luigis_mansion:entities/door/force_animation
+execute if entity @e[tag=furniture,tag=door,tag=!open_door,tag=!forced_animation,distance=..0.7] run function luigis_mansion:entities/furniture/type/tick/door/force_animation
 scoreboard players set @s Sound 10
 scoreboard players set @s Invulnerable 1000
 tag @s[scores={IdleTime=-1}] remove left_door

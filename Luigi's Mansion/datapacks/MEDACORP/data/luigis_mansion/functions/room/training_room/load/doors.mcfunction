@@ -1,3 +1,2 @@
-execute positioned 791 77 4 rotated -180 0 run function luigis_mansion:spawn_furniture/door/right/push/training
-execute positioned 791 77 4 rotated -180 0 run function luigis_mansion:spawn_furniture/door_frame/stacked_blocks
-tag @e[x=791.5,y=77,z=4.0,distance=..0.7,tag=door,tag=frame,limit=1] add unopenable
+data modify storage luigis_mansion:data furniture set value {sound:{namespace:"luigis_mansion",id:"heavy_generic"},door:{model:{namespace:"luigis_mansion",id:"training"},frame:{namespace:"luigis_mansion",id:"stacked_blocks"},push:1b,blocked:4b,other_end:{x:791,y:77,z:5}}}
+execute positioned 791 77 4 rotated -180 0 run function luigis_mansion:spawn_furniture/door

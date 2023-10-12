@@ -1,0 +1,1 @@
+$function $(namespace):spawn_furniture/door/frame/$(id)

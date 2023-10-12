@@ -1,5 +1,5 @@
 scoreboard players add @s Dialog 1
-execute if entity @s[scores={Dialog=1},tag=next_wave] run tag @e[scores={Room=49},tag=door,tag=frame] add blockade
+execute if entity @s[scores={Dialog=1},tag=next_wave] run tag @e[scores={Room=49},tag=furniture,tag=door] add blockade
 execute if entity @s[scores={Dialog=59}] run tag @e[nbt={ArmorItems:[{tag:{namespace:"luigis_mansion",id:"orville"}}]},limit=1] add to_remove
 
 execute if entity @s[scores={Dialog=120},tag=next_wave] run data modify storage luigis_mansion:data entity set value {scan_message:{sender:"me",message:'{"translate":"luigis_mansion:message.orville.scan"}'}}

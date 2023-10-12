@@ -1,7 +1,6 @@
-execute positioned 704 11 29 rotated 0 0 run function luigis_mansion:spawn_furniture/door/left/pull/mansion/1
-execute positioned 704 11 29 rotated 0 0 run function luigis_mansion:spawn_furniture/door_frame/light_wood
-tag @e[x=704.5,y=11,z=30.0,distance=..0.7,tag=door,tag=frame,limit=1] add hallway_4_dining_room
-execute positioned 705 11 57 rotated -180 0 run function luigis_mansion:spawn_furniture/door/right/push/mansion/4
-execute positioned 705 11 57 rotated -180 0 run function luigis_mansion:spawn_furniture/door_frame/double_light_wood
-execute positioned 704 11 57 rotated -180 0 run function luigis_mansion:spawn_furniture/door/left/pull/mansion/4
-execute positioned 704 11 57 rotated -180 0 run function luigis_mansion:spawn_furniture/door_frame/double_light_wood
+data modify storage luigis_mansion:data furniture set value {sound:{namespace:"luigis_mansion",id:"heavy_generic"},door:{model:{namespace:"luigis_mansion",id:"mansion/1"},frame:{namespace:"luigis_mansion",id:"light_wood"},left_hinge:1b,key:"dining_room",other_end:{x:706,y:11,z:-16}}}
+execute positioned 704 11 29 rotated 0 0 run function luigis_mansion:spawn_furniture/door
+data modify storage luigis_mansion:data furniture set value {sound:{namespace:"luigis_mansion",id:"heavy_generic"},door:{model:{namespace:"luigis_mansion",id:"mansion/4"},frame:{namespace:"luigis_mansion",id:"double/light_wood"},push:1b,other_end:{x:705,y:11,z:62}}}
+execute positioned 705 11 57 rotated -180 0 run function luigis_mansion:spawn_furniture/door
+data modify storage luigis_mansion:data furniture set value {sound:{namespace:"luigis_mansion",id:"heavy_generic"},door:{model:{namespace:"luigis_mansion",id:"mansion/4"},frame:{namespace:"luigis_mansion",id:"double/light_wood"},left_hinge:1b,other_end:{x:704,y:11,z:62}}}
+execute positioned 704 11 57 rotated -180 0 run function luigis_mansion:spawn_furniture/door

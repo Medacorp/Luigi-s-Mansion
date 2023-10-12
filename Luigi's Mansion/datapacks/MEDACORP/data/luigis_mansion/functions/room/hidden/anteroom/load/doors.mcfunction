@@ -1,5 +1,4 @@
-execute positioned 694 20 -11 rotated 90 0 run function luigis_mansion:spawn_furniture/door/left/push/mansion/3
-execute positioned 694 20 -11 rotated 90 0 run function luigis_mansion:spawn_furniture/door_frame/fancy
-tag @e[x=694.0,y=20,z=-10.5,distance=..0.7,tag=door,tag=frame,limit=1] add parlor_anteroom
-execute positioned 689 20 -27 rotated 0 0 run function luigis_mansion:spawn_furniture/door/left/push/mansion/1
-execute positioned 689 20 -27 rotated 0 0 run function luigis_mansion:spawn_furniture/door_frame/fancy
+data modify storage luigis_mansion:data furniture set value {sound:{namespace:"luigis_mansion",id:"heavy_generic"},door:{model:{namespace:"luigis_mansion",id:"mansion/3"},frame:{namespace:"luigis_mansion",id:"fancy"},left_hinge:1b,push:1b,key:"anteroom",other_end:{x:713,y:20,z:-6}}}
+execute positioned 694 20 -11 rotated 90 0 run function luigis_mansion:spawn_furniture/door
+data modify storage luigis_mansion:data furniture set value {sound:{namespace:"luigis_mansion",id:"heavy_generic"},door:{model:{namespace:"luigis_mansion",id:"mansion/1"},frame:{namespace:"luigis_mansion",id:"fancy"},left_hinge:1b,push:1b,other_end:{x:682,y:20,z:-41}}}
+execute positioned 689 20 -27 rotated 0 0 run function luigis_mansion:spawn_furniture/door

@@ -1,4 +1,5 @@
 function #luigis_mansion:mansion_reset
+function luigis_mansion:room/hidden/front_door
 function luigis_mansion:room/hidden/forceload_chunks
 execute unless score #mansion_type Selected matches 1 run scoreboard players set #temp Time 1
 execute unless score #mansion_data_index Selected matches 0 run scoreboard players set #temp Time 1

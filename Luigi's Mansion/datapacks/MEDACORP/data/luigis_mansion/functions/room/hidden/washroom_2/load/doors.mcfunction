@@ -1,2 +1,2 @@
-execute positioned 664 20 -20 rotated -180 0 run function luigis_mansion:spawn_furniture/door/right/push/mansion/1
-execute positioned 664 20 -20 rotated -180 0 run function luigis_mansion:spawn_furniture/door_frame/emblemized
+data modify storage luigis_mansion:data furniture set value {sound:{namespace:"luigis_mansion",id:"heavy_generic"},door:{model:{namespace:"luigis_mansion",id:"mansion/1"},frame:{namespace:"luigis_mansion",id:"emblemized"},push:1b,other_end:{x:682,y:20,z:4}}}
+execute positioned 664 20 -20 rotated -180 0 run function luigis_mansion:spawn_furniture/door

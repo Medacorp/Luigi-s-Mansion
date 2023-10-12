@@ -9,7 +9,7 @@ execute as @a[scores={Room=21}] run function luigis_mansion:room/hidden/mirror_r
 
 function #luigis_mansion:room/hidden/mirror_room/interactions/room
 
-execute unless entity @e[tag=light_me,tag=!lit,scores={Room=21},limit=1] run tag @e[scores={Room=21},tag=door,tag=frame] remove blockade
+execute unless entity @e[tag=light_me,tag=!lit,scores={Room=21},limit=1] run tag @e[scores={Room=21},tag=furniture,tag=door] remove blockade
 
 scoreboard players set #temp Room 21
 execute as @a[gamemode=!spectator,tag=!pull_open_door,tag=!push_open_door] run function #luigis_mansion:get_same_room

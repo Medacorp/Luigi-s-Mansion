@@ -5,3 +5,5 @@ execute unless entity @s[scores={OpenMapFocus=1..}] unless entity @s[scores={Wal
 execute unless entity @s[scores={OpenMapFocus=1..}] run function #luigis_mansion:items/game_boy_horror/map/move_floor
 execute as @a[tag=!looking_at_map,distance=1..] at @s run function luigis_mansion:items/game_boy_horror/map/ensure_marker_shows
 execute unless entity @a[tag=!looking_at_map,scores={Room=1..}] run scoreboard players set #freeze_timer Selected 1
+execute if entity @s[tag=regenerate_map] run function #luigis_mansion:items/game_boy_horror/map/warp
+tag @s remove regenerate_map

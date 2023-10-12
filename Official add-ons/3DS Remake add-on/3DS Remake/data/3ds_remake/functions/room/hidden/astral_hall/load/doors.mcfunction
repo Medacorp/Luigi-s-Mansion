@@ -1,4 +1,5 @@
-execute positioned 666 20 -72 rotated -180 0 run function luigis_mansion:spawn_furniture/door/right/push/mansion/1
-execute positioned 666 20 -72 rotated -180 0 run function luigis_mansion:spawn_furniture/door_frame/astral_decoration
-execute positioned 666 20 -92 rotated 0 0 run function luigis_mansion:spawn_furniture/door/left/pull/mansion/1
-execute positioned 666 20 -92 rotated 0 0 run function luigis_mansion:spawn_furniture/door_frame/astral_decoration
+data modify storage luigis_mansion:data furniture set value {sound:{namespace:"luigis_mansion",id:"heavy_generic"},door:{model:{namespace:"luigis_mansion",id:"mansion/1"},frame:{namespace:"luigis_mansion",id:"astral_decoration"},push:1b,other_end:{x:691,y:20,z:-22}}}
+execute positioned 666 20 -72 rotated -180 0 run function luigis_mansion:spawn_furniture/door
+data modify storage luigis_mansion:data furniture set value {sound:{namespace:"luigis_mansion",id:"heavy_generic"},door:{model:{namespace:"luigis_mansion",id:"mansion/1"},frame:{namespace:"luigis_mansion",id:"astral_decoration"},left_hinge:1b,other_end:{x:645,y:20,z:-73}}}
+execute unless data storage luigis_mansion:data current_state.current_data.rooms.astral_hall{cleared:1b} run data modify storage luigis_mansion:data furniture.door merge value {other_end:{x:666,y:20,z:-72},go_through_command:"function 3ds_remake:room/hidden/astral_hall/trick_door"}
+execute positioned 666 20 -92 rotated 0 0 run function luigis_mansion:spawn_furniture/door

@@ -1,2 +1,2 @@
-data modify storage luigis_mansion:data furniture set value {candle_flames:[{lit:1b,type:"incense"}],sound:"luigis_mansion:heavy_generic",searchable:["interact","vacuum"],shake_animation:["interact","vacuum"],scan_message:'{"translate":"luigis_mansion:message.player.scan_furniture.53"}'}
+data modify storage luigis_mansion:data furniture set value {candle_flames:[{lit:1b,type:"incense"}],sound:{namespace:"luigis_mansion",id:"heavy_generic"},searchable:["interact","vacuum"],shake_animation:["interact","vacuum"],scan_message:'{"translate":"luigis_mansion:message.player.scan_furniture.53"}'}
 execute positioned 640 93 31 rotated -90 0 run function luigis_mansion:spawn_furniture/stone_bowl_candelabra

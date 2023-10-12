@@ -1,4 +1,5 @@
-execute positioned 685 2 33 rotated 90 0 run function luigis_mansion:spawn_furniture/door/left/push/mansion/metal
-execute positioned 654 2 33 rotated -90 0 run function luigis_mansion:spawn_furniture/door/right/pull/spade
-tag @e[x=655.0,y=2,z=33.5,distance=..0.7,tag=door,tag=frame,limit=1] add hallway_22_secret_altar
-execute unless data storage luigis_mansion:data current_state.current_data.technical_data{cleared_king_boo_blockade:1b} run tag @e[x=655.0,y=2,z=33.5,distance=..0.7,tag=door,tag=frame,limit=1] add area_blockade
+data modify storage luigis_mansion:data furniture set value {sound:{namespace:"luigis_mansion",id:"heavy_generic"},door:{model:{namespace:"luigis_mansion",id:"mansion/metal"},left_hinge:1b,push:1b,other_end:{x:700,y:2,z:33}}}
+execute positioned 685 2 33 rotated 90 0 run function luigis_mansion:spawn_furniture/door
+data modify storage luigis_mansion:data furniture set value {sound:{namespace:"luigis_mansion",id:"heavy_generic"},door:{model:{namespace:"luigis_mansion",id:"spade"},key:"secret_altar",other_end:{x:653,y:93,z:33}}}
+execute unless data storage luigis_mansion:data current_state.current_data.technical_data{cleared_king_boo_blockade:1b} run data modify storage luigis_mansion:data furniture.blockade set value 2b
+execute positioned 654 2 33 rotated -90 0 run function luigis_mansion:spawn_furniture/door

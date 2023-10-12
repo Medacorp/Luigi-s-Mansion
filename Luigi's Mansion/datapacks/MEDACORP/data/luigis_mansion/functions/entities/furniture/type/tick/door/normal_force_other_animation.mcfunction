@@ -1,0 +1,1 @@
+execute if score #mansion_type Selected matches 0 in luigis_mansion:normal run function luigis_mansion:entities/furniture/type/tick/door/normal/force_other_animation

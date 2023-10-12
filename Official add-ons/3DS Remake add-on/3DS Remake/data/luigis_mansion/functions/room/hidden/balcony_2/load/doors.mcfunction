@@ -1,6 +1,4 @@
-execute positioned 682 120 28 rotated 90 0 run function luigis_mansion:spawn_furniture/door/left/push/mansion/wooden
-execute positioned 682 120 28 rotated 90 0 run function luigis_mansion:spawn_furniture/door_frame/planks
-tag @e[x=682.0,y=120,z=28.5,distance=..0.7,tag=door,tag=frame,limit=1] add hallway_17_balcony_2
-execute positioned 682 120 -13 rotated 90 0 run function luigis_mansion:spawn_furniture/door/left/push/diamond
-execute positioned 682 120 -13 rotated 90 0 run function luigis_mansion:spawn_furniture/door_frame/planks
-tag @e[x=682.0,y=120,z=-12.5,distance=..0.7,tag=door,tag=frame,limit=1] add balcony_2_hallway_18
+data modify storage luigis_mansion:data furniture set value {sound:{namespace:"luigis_mansion",id:"heavy_generic"},door:{model:{namespace:"luigis_mansion",id:"mansion/wooden"},frame:{namespace:"luigis_mansion",id:"planks"},left_hinge:1b,push:1b,key:"balcony_2",other_end:{x:725,y:29,z:28}}}
+execute positioned 682 120 28 rotated 90 0 run function luigis_mansion:spawn_furniture/door
+data modify storage luigis_mansion:data furniture set value {sound:{namespace:"luigis_mansion",id:"heavy_generic"},door:{model:{namespace:"luigis_mansion",id:"diamond"},frame:{namespace:"luigis_mansion",id:"planks"},left_hinge:1b,push:1b,key:"hallway_18",other_end:{x:724,y:29,z:-29}}}
+execute positioned 682 120 -13 rotated 90 0 run function luigis_mansion:spawn_furniture/door

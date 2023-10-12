@@ -1,3 +1,2 @@
-execute positioned 663 11 21 rotated 90 0 run function luigis_mansion:spawn_furniture/door/left/push/mansion/1
-execute positioned 663 11 21 rotated 90 0 run function luigis_mansion:spawn_furniture/door_frame/normal
-tag @e[x=663.0,y=11,z=21.5,distance=..0.7,tag=door,tag=frame,limit=1] add hallway_5_conservatory
+data modify storage luigis_mansion:data furniture set value {sound:{namespace:"luigis_mansion",id:"heavy_generic"},door:{model:{namespace:"luigis_mansion",id:"mansion/1"},frame:{namespace:"luigis_mansion",id:"normal"},left_hinge:1b,push:1b,key:"conservatory",other_end:{x:679,y:11,z:15},go_through_command:"scoreboard players reset @s Time"}}
+execute positioned 663 11 21 rotated 90 0 run function luigis_mansion:spawn_furniture/door

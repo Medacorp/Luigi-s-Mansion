@@ -1,2 +1,2 @@
-data modify storage luigis_mansion:data furniture set value {can_hide_boo:1b,sound:"luigis_mansion:generic",searchable:["interact","vacuum"],shake_animation:["interact","vacuum"],scan_message:'{"translate":"luigis_mansion:message.player.scan_furniture.11"}'}
+data modify storage luigis_mansion:data furniture set value {can_hide_boo:1b,sound:{namespace:"luigis_mansion",id:"generic"},searchable:["interact","vacuum"],shake_animation:["interact","vacuum"],scan_message:'{"translate":"luigis_mansion:message.player.scan_furniture.11"}'}
 execute positioned 744.0 11 33 rotated 0 0 run function luigis_mansion:spawn_furniture/treasure_chest/big

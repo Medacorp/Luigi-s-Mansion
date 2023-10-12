@@ -1,4 +1,4 @@
-tag @e[scores={Room=56},tag=door,tag=frame] add blockade
+tag @e[scores={Room=56},tag=furniture,tag=door] add blockade
 execute positioned 748 29 10 run function luigis_mansion:spawn_entities/ghost/forced_spawn/purple_puncher
 execute positioned 752 29 10 run function luigis_mansion:spawn_entities/ghost/forced_spawn/purple_puncher
 execute positioned 743 29 2 run function luigis_mansion:spawn_entities/ghost/can_spawn_now/gold_ghost

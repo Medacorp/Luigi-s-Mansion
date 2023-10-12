@@ -1,1 +1,0 @@
-function luigis_mansion:entities/door/normal/check_lock
