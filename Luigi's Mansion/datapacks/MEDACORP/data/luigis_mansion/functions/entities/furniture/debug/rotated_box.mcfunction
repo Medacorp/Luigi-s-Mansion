@@ -1,11 +1,14 @@
-summon minecraft:marker ~ ~1.4 ~ {Tags:["temp","remove_from_existence","left_up_forward"]}
-summon minecraft:marker ~ ~1.4 ~ {Tags:["temp","remove_from_existence","right_up_forward"]}
-summon minecraft:marker ~ ~1.4 ~ {Tags:["temp","remove_from_existence","left_up_backward"]}
-summon minecraft:marker ~ ~1.4 ~ {Tags:["temp","remove_from_existence","right_up_backward"]}
-summon minecraft:marker ~ ~1.4 ~ {Tags:["temp","remove_from_existence","left_down_forward"]}
-summon minecraft:marker ~ ~1.4 ~ {Tags:["temp","remove_from_existence","right_down_forward"]}
-summon minecraft:marker ~ ~1.4 ~ {Tags:["temp","remove_from_existence","left_down_backward"]}
-summon minecraft:marker ~ ~1.4 ~ {Tags:["temp","remove_from_existence","right_down_backward"]}
+summon minecraft:marker ~ ~ ~ {Tags:["temp","remove_from_existence","left_up_forward"]}
+summon minecraft:marker ~ ~ ~ {Tags:["temp","remove_from_existence","right_up_forward"]}
+summon minecraft:marker ~ ~ ~ {Tags:["temp","remove_from_existence","left_up_backward"]}
+summon minecraft:marker ~ ~ ~ {Tags:["temp","remove_from_existence","right_up_backward"]}
+summon minecraft:marker ~ ~ ~ {Tags:["temp","remove_from_existence","left_down_forward"]}
+summon minecraft:marker ~ ~ ~ {Tags:["temp","remove_from_existence","right_down_forward"]}
+summon minecraft:marker ~ ~ ~ {Tags:["temp","remove_from_existence","left_down_backward"]}
+summon minecraft:marker ~ ~ ~ {Tags:["temp","remove_from_existence","right_down_backward"]}
+tag @s add me
+execute as @e[tag=temp] store result entity @s Pos[1] double 0.1 run scoreboard players get @e[tag=me,limit=1] PositionY
+tag @s remove me
 scoreboard players operation #temp FurnitureSizeLeft = @s FurnitureSizeLeft
 scoreboard players operation #temp FurnitureSizeUp = @s FurnitureSizeUp
 scoreboard players operation #temp FurnitureSizeForward = @s FurnitureSizeForward

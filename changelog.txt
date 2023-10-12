@@ -10,7 +10,7 @@ WARNING! When updating an old save version, be sure to:
 * Added death messages
 * Added revive messages
 * Rewrote a lot
-* Fixed poison mushrooms don't make players drop coins since v2.0
+* Bug fixes
 
 
 2.3.8:

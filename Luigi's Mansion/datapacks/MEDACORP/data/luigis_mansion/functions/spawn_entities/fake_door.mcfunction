@@ -21,4 +21,4 @@ execute if data storage luigis_mansion:data entity.loot run data modify entity @
 execute if data storage luigis_mansion:data entity.damage run data modify entity @e[tag=this_entity,tag=!fake_door,limit=1] ArmorItems[3].tag.damage set from storage luigis_mansion:data entity.damage
 execute if entity @e[tag=this_entity,tag=!fake_door,tag=dead,limit=1] if score #debug_messages Selected matches 1.. run tellraw @a {"translate":"luigis_mansion:message.debug.format","with":[{"translate":"luigis_mansion:message.debug","color":"gold"},{"translate":"luigis_mansion:message.debug.door","with":[{"selector":"@e[tag=this_entity,limit=1]"},{"selector":"@e[tag=this_entity,limit=1]"}]}]}
 data remove storage luigis_mansion:data entity
-tag @e[tag=this_entity,tag=!fake_door,limit=1] remove this_entity
+tag @e[tag=this_entity] remove this_entity

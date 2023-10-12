@@ -1,4 +1,4 @@
-$execute if entity @s ArmorItems[3].tag{attacked_by:[$(id)]} run tag @s add already_included
+$execute if data entity @s ArmorItems[3].tag{attacked_by:[$(id)]} run tag @s add already_included
 
 execute if entity @s[tag=!already_included] unless data entity @s ArmorItems[3].id run item replace entity @s armor.head with minecraft:stone_button{attacked_by:[]}
 execute if entity @s[tag=!already_included] unless data entity @s ArmorItems[3].tag.attacked_by run data modify entity @s ArmorItems[3].tag merge value {attacked_by:[]}

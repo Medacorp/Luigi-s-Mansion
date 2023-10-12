@@ -7,7 +7,7 @@ tag @s remove me
 tag @s remove looking_at_map
 tag @s remove stop_model
 function luigis_mansion:entities/player/animation/set/none
-execute unless entity @a[tag=looking_at_map,limit=1] run kill @e[type=minecraft:armor_stand,tag=key,tag=display]
+execute unless entity @a[tag=looking_at_map,limit=1] run kill @e[type=minecraft:armor_stand,tag=display]
 tag @s add seen_room_name
 title @s subtitle ""
 scoreboard players set @s UseItem 0

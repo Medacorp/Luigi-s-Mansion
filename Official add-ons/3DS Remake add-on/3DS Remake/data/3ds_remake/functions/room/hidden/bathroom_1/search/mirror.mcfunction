@@ -5,6 +5,7 @@ execute unless score #bathroom_1_mirror Searched matches 1 run summon minecraft:
 execute unless score #bathroom_1_mirror Searched matches 1 run summon minecraft:marker ~ ~ ~ {Tags:["chance","nothing"],Duration:1}
 execute unless score #bathroom_1_mirror Searched matches 1 run tag @e[type=minecraft:marker,tag=chance,sort=random,limit=1] add selected
 execute if entity @e[type=minecraft:marker,tag=chance,tag=selected,tag=poison_mushroom] positioned 651 12 18 run function luigis_mansion:spawn_entities/item/room_search/poison_mushroom
+tag @e[tag=this_entity,limit=1] remove this_entity
 execute unless entity @e[type=minecraft:marker,tag=chance,tag=selected,tag=!nothing] positioned 651.0 12 18 run function luigis_mansion:blocks/dust
 execute unless entity @e[type=minecraft:marker,tag=chance,tag=selected,tag=!nothing] positioned 648.0 12 18 run function luigis_mansion:blocks/dust_no_sound
 kill @e[type=minecraft:marker,tag=chance]

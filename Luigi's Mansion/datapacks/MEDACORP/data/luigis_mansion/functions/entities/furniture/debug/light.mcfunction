@@ -1,4 +1,5 @@
-summon minecraft:marker ~ ~1.4 ~ {Tags:["temp","remove_from_existence"]}
+summon minecraft:marker ~ ~ ~ {Tags:["temp","remove_from_existence"]}
+execute store result entity @e[tag=temp,limit=1] Pos[1] double 0.1 run scoreboard players get @s PositionY
 scoreboard players operation #temp2 FurnitureSizeLeft = @s FurnitureLightLeft
 scoreboard players operation #temp2 FurnitureSizeUp = @s FurnitureLightUp
 scoreboard players operation #temp2 FurnitureSizeForward = @s FurnitureLightForward

@@ -22,7 +22,6 @@ tag @s[scores={AnimationProgress=14}] remove wall_warp
 execute if entity @e[tag=furniture,tag=door,tag=!open_door,tag=!forced_animation,distance=..0.7] run function luigis_mansion:entities/furniture/type/tick/door/force_animation
 scoreboard players set @s Sound 10
 scoreboard players set @s Invulnerable 1000
-tag @s[scores={IdleTime=-1}] remove left_door
 execute unless entity @a[tag=!spectator,distance=0.1..,limit=1] run scoreboard players set #freeze_timer Selected 1
 scoreboard players set @s[scores={IdleTime=-1}] Invulnerable 0
 scoreboard players reset @s[scores={IdleTime=-1}] AnimationProgress

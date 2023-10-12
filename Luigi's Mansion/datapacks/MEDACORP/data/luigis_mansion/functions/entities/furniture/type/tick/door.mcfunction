@@ -1,8 +1,13 @@
-execute if entity @s[tag=!burning,tag=!blockade,tag=!area_blockade] run data modify entity @s HandItems[{tag:{}}] merge from entity @s HandItems[{tag:{}}].tag.variants.normal
-execute if entity @s[tag=burning] run data modify entity @s HandItems[{tag:{}}] merge from entity @s HandItems[{tag:{}}].tag.variants.burning
-execute if entity @s[tag=barricade] run data modify entity @s HandItems[{tag:{}}] merge from entity @s HandItems[{tag:{}}].tag.variants.barricade
-execute if entity @s[tag=blockade,tag=!burning,tag=!fake] run data modify entity @s HandItems[{tag:{}}] merge from entity @s HandItems[{tag:{}}].tag.variants.blockade
-execute if entity @s[tag=area_blockade,tag=!burning,tag=!fake] run data modify entity @s HandItems[{tag:{}}] merge from entity @s HandItems[{tag:{}}].tag.variants.area_blockade
+execute if entity @s[tag=!burning,tag=!blockade,tag=!area_blockade,tag=left] run data modify entity @s HandItems[1] merge from entity @s HandItems[1].tag.variants.normal
+execute if entity @s[tag=burning,tag=left] run data modify entity @s HandItems[1] merge from entity @s HandItems[1].tag.variants.burning
+execute if entity @s[tag=barricade,tag=left] run data modify entity @s HandItems[1] merge from entity @s HandItems[1].tag.variants.barricade
+execute if entity @s[tag=blockade,tag=!burning,tag=left] run data modify entity @s HandItems[1] merge from entity @s HandItems[1].tag.variants.blockade
+execute if entity @s[tag=area_blockade,tag=!burning,tag=left] run data modify entity @s HandItems[1] merge from entity @s HandItems[1].tag.variants.area_blockade
+execute if entity @s[tag=!burning,tag=!blockade,tag=!area_blockade,tag=!left] run data modify entity @s HandItems[0] merge from entity @s HandItems[0].tag.variants.normal
+execute if entity @s[tag=burning,tag=!left] run data modify entity @s HandItems[0] merge from entity @s HandItems[0].tag.variants.burning
+execute if entity @s[tag=barricade,tag=!left] run data modify entity @s HandItems[0] merge from entity @s HandItems[0].tag.variants.barricade
+execute if entity @s[tag=blockade,tag=!burning,tag=!left] run data modify entity @s HandItems[0] merge from entity @s HandItems[0].tag.variants.blockade
+execute if entity @s[tag=area_blockade,tag=!burning,tag=!left] run data modify entity @s HandItems[0] merge from entity @s HandItems[0].tag.variants.area_blockade
 
 execute if entity @s[tag=in_water,tag=burning] run function luigis_mansion:entities/furniture/type/tick/door/extinguish with entity @s ArmorItems[3].tag
 execute if entity @s[tag=burning] run function luigis_mansion:entities/furniture/type/tick/door/burn

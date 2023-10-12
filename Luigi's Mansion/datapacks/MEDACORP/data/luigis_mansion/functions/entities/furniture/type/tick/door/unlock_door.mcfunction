@@ -6,8 +6,8 @@ execute if entity @s[scores={AnimationProgress=180}] run playsound luigis_mansio
 execute if entity @s[scores={AnimationProgress=200}] run playsound luigis_mansion:furniture.door.turn_knob block @a[tag=same_room] ~ ~ ~ 1
 execute if entity @s[scores={AnimationProgress=240}] run playsound luigis_mansion:furniture.door.crack block @a[tag=same_room] ~ ~ ~ 1
 
-execute if entity @s[tag=push] run function luigis_mansion:animations/door_unlock/push
-execute if entity @s[tag=!push] run function luigis_mansion:animations/door_unlock/pull
+execute if entity @s[tag=push] run function luigis_mansion:animations/furniture/unlock_door/push
+execute if entity @s[tag=!push] run function luigis_mansion:animations/furniture/unlock_door/pull
 
 tag @s[scores={AnimationProgress=260}] remove unlock_door
 tag @s[scores={AnimationProgress=260}] add open_door

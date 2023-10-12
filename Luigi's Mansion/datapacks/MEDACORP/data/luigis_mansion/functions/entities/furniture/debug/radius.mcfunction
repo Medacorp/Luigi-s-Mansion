@@ -1,9 +1,12 @@
-summon minecraft:marker ~ ~1.4 ~ {Tags:["temp","remove_from_existence","front"]}
-summon minecraft:marker ~ ~1.4 ~ {Tags:["temp","remove_from_existence","back"]}
-summon minecraft:marker ~ ~1.4 ~ {Tags:["temp","remove_from_existence","left"]}
-summon minecraft:marker ~ ~1.4 ~ {Tags:["temp","remove_from_existence","right"]}
-summon minecraft:marker ~ ~1.4 ~ {Tags:["temp","remove_from_existence","up"]}
-summon minecraft:marker ~ ~1.4 ~ {Tags:["temp","remove_from_existence","down"]}
+summon minecraft:marker ~ ~ ~ {Tags:["temp","remove_from_existence","front"]}
+summon minecraft:marker ~ ~ ~ {Tags:["temp","remove_from_existence","back"]}
+summon minecraft:marker ~ ~ ~ {Tags:["temp","remove_from_existence","left"]}
+summon minecraft:marker ~ ~ ~ {Tags:["temp","remove_from_existence","right"]}
+summon minecraft:marker ~ ~ ~ {Tags:["temp","remove_from_existence","up"]}
+summon minecraft:marker ~ ~ ~ {Tags:["temp","remove_from_existence","down"]}
+tag @s add me
+execute as @e[tag=temp] store result entity @s Pos[1] double 0.1 run scoreboard players get @e[tag=me,limit=1] PositionY
+tag @s remove me
 scoreboard players operation #temp FurnitureSizeRadius = @s FurnitureSizeRadius
 scoreboard players operation #temp FurnitureSizeRadius *= #10 Constants
 

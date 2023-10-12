@@ -1,5 +1,5 @@
 == NOTICE ==
-This map requires 1.20-1.20.1.
+This map requires 1.20-1.20.2.
 
 Bugs should be reported on the github here: https://github.com/Medacorp/Luigi-s-Mansion/issues
 Please do look if it's already reported.
@@ -12,7 +12,7 @@ Do NOT turn chat off, or you will get stuck. The map requires players to click o
 ** Conservatory instrument music
 ** Poltergust expelling dust, vacuuming with ball held, exploding
 ** Blue Twirler/Blue Blaze
-** Ceiling Surprise/Purple Bomber
+** Ceiling Surprise/Purple Bomber hurt/flee/complain
 ** Slim Bankshot
 ** Henry and Orville
 ** Clockwork Soldiers
@@ -20,11 +20,8 @@ Do NOT turn chat off, or you will get stuck. The map requires players to click o
 ** Ghost Portrificationizer
 * Lots of entities in rooms with mirrors cause quite some lag (just grab the money quickly while I try to find ways to reduce the lag)
 * Some instances of rapid teleportation may make client-server communication difficult. (Such as being pulled by a ghost)
-** When on the ball room floors, if affected, disconnect and let the player with the best connection clear the room, then the floors stop
 ** https://bugs.mojang.com/browse/MC-197855 was made about this, but Mojang decided not to track this as a bug. A rewrite of the system was planned when Mojang was last asked.
-* Sometimes entities don't show rotated correctly (Mainly noticable with Neville)
-** If this affects doors, don't worry, you can still use them and go through to the correct side.
-** Vote for https://bugs.mojang.com/browse/MC-103800 to get this fixed!
+** Until Mojang adressed this issue, it's recommended to play this map in singleplayer
 
 == Supported languages ==
 English (US) is the base language of the map, all other languages are worked on via Crowdin. (https://crowdin.com/project/medacorp-projects)

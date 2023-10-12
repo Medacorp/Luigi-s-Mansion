@@ -259,10 +259,10 @@ execute at @s[scores={KnockbackType=14}] store result entity @e[tag=home,limit=1
 execute at @s[scores={KnockbackType=14}] store result entity @e[tag=home,limit=1] Rotation[1] float 0.01 run scoreboard players get @s RotationX
 execute at @s[scores={KnockbackType=14}] at @e[tag=home,limit=1] run tp @s ~ 0 ~ ~ ~
 execute at @s[scores={KnockbackType=14}] at @e[tag=home,limit=1] run tp @s ~ ~ ~ ~ ~
-execute at @s[scores={KnockbackTime=126..135,KnockbackType=14},tag=left_door] rotated ~-18 0 run teleport @s ^ ^ ^-0.15 ~ ~
-execute at @s[scores={KnockbackTime=126..135,KnockbackType=14},tag=!left_door] rotated ~18 0 run teleport @s ^ ^ ^-0.15 ~ ~
-execute at @s[scores={KnockbackTime=125,KnockbackType=14,Sound=0,Shrunk=0}] run playsound luigis_mansion:entity.player.hurt_fake_door.high_health player @a[tag=same_room] ~ ~ ~ 1
-execute at @s[scores={KnockbackTime=125,KnockbackType=14,Sound=0,Shrunk=1..}] run playsound luigis_mansion:entity.player.hurt_fake_door.high_health player @a[tag=same_room] ~ ~ ~ 1 2
+execute at @s[scores={KnockbackTime=126..135,KnockbackType=14,Animation=37}] rotated ~18 0 run teleport @s ^ ^ ^-0.15 ~ ~
+execute at @s[scores={KnockbackTime=126..135,KnockbackType=14,Animation=38}] rotated ~-18 0 run teleport @s ^ ^ ^-0.15 ~ ~
+execute at @s[scores={KnockbackTime=125,KnockbackType=14,Sound=0,Shrunk=0}] run playsound luigis_mansion:entity.player.hurt_little player @a[tag=same_room] ~ ~ ~ 1
+execute at @s[scores={KnockbackTime=125,KnockbackType=14,Sound=0,Shrunk=1..}] run playsound luigis_mansion:entity.player.hurt_little player @a[tag=same_room] ~ ~ ~ 1 2
 scoreboard players set @s[scores={KnockbackTime=125,KnockbackType=14,Sound=0}] Sound 105
 execute at @s[scores={KnockbackTime=50..79,KnockbackType=14}] rotated ~ 0 run teleport @s ^ ^ ^0.05
 execute at @s[scores={KnockbackTime=50..79,KnockbackType=14}] run teleport @s ^ ^ ^ ~ ~3
@@ -272,7 +272,6 @@ execute at @s[scores={KnockbackTime=20,KnockbackType=14,Sound=0,Health=41..,Shru
 execute at @s[scores={KnockbackTime=20,KnockbackType=14,Sound=0,Health=..40,Shrunk=0}] run playsound luigis_mansion:entity.player.sigh.low_health player @a[tag=same_room] ~ ~ ~ 1
 execute at @s[scores={KnockbackTime=20,KnockbackType=14,Sound=0,Health=..40,Shrunk=1..}] run playsound luigis_mansion:entity.player.sigh.low_health player @a[tag=same_room] ~ ~ ~ 1 2
 scoreboard players set @s[scores={KnockbackTime=20,KnockbackType=14,Sound=0}] Sound 20
-tag @s[scores={KnockbackTime=1,KnockbackType=14}] remove left_door
 
 execute at @s unless entity @s[scores={KnockbackType=14}] if block ~ ~2 ~ #luigis_mansion:players_ignore unless block ~ ~1.9 ~ #luigis_mansion:players_ignore run teleport @s ~ ~-0.16 ~
 execute at @s unless entity @s[scores={KnockbackType=14}] unless block ~ ~ ~ #luigis_mansion:players_ignore if block ~ ~0.1 ~ #luigis_mansion:players_ignore run teleport @s ~ ~0.16 ~

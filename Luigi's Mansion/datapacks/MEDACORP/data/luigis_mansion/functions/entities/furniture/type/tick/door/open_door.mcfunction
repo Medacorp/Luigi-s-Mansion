@@ -7,15 +7,15 @@ fill ^ ^ ^-0.5 ^ ^1 ^-0.5 minecraft:air replace minecraft:light_gray_stained_gla
 execute if entity @s[scores={AnimationProgress=1},tag=!forced_animation] run function luigis_mansion:entities/furniture/type/tick/door/force_other_end with entity @s ArmorItems[3].tag.other_end
 execute if entity @s[scores={AnimationProgress=1},tag=!forced_animation] if data entity @s ArmorItems[3].tag.other_end.dimension run function luigis_mansion:entities/furniture/type/tick/door/end_dimension with entity @s ArmorItems[3].tag.other_end
 execute if entity @s[scores={AnimationProgress=10}] run playsound luigis_mansion:furniture.door.open block @a[tag=same_room] ~ ~ ~ 1
-execute if entity @s[scores={AnimationProgress=30},tag=!pull,tag=!forced_animation] run playsound luigis_mansion:furniture.door.close block @a[tag=same_room] ~ ~ ~ 1
-execute if entity @s[scores={AnimationProgress=30},tag=pull,tag=forced_animation] run playsound luigis_mansion:furniture.door.close block @a[tag=same_room] ~ ~ ~ 1
-execute if entity @s[scores={AnimationProgress=35},tag=pull,tag=!forced_animation] run playsound luigis_mansion:furniture.door.close block @a[tag=same_room] ~ ~ ~ 1
-execute if entity @s[scores={AnimationProgress=35},tag=!pull,tag=forced_animation] run playsound luigis_mansion:furniture.door.close block @a[tag=same_room] ~ ~ ~ 1
+execute if entity @s[scores={AnimationProgress=30},tag=push,tag=!forced_animation] run playsound luigis_mansion:furniture.door.close block @a[tag=same_room] ~ ~ ~ 1
+execute if entity @s[scores={AnimationProgress=30},tag=!push,tag=forced_animation] run playsound luigis_mansion:furniture.door.close block @a[tag=same_room] ~ ~ ~ 1
+execute if entity @s[scores={AnimationProgress=35},tag=!push,tag=!forced_animation] run playsound luigis_mansion:furniture.door.close block @a[tag=same_room] ~ ~ ~ 1
+execute if entity @s[scores={AnimationProgress=35},tag=push,tag=forced_animation] run playsound luigis_mansion:furniture.door.close block @a[tag=same_room] ~ ~ ~ 1
 
-execute if entity @s[tag=push,tag=!forced_animation] run function luigis_mansion:animations/furniture/door_open/push
-execute if entity @s[tag=!push,tag=forced_animation] run function luigis_mansion:animations/furniture/door_open/push
-execute if entity @s[tag=!push,tag=!forced_animation] run function luigis_mansion:animations/furniture/door_open/pull
-execute if entity @s[tag=push,tag=forced_animation] run function luigis_mansion:animations/furniture/door_open/pull
+execute if entity @s[tag=push,tag=!forced_animation] run function luigis_mansion:animations/furniture/open_door/push
+execute if entity @s[tag=!push,tag=forced_animation] run function luigis_mansion:animations/furniture/open_door/push
+execute if entity @s[tag=!push,tag=!forced_animation] run function luigis_mansion:animations/furniture/open_door/pull
+execute if entity @s[tag=push,tag=forced_animation] run function luigis_mansion:animations/furniture/open_door/pull
 
 tag @s[scores={AnimationProgress=50..}] remove open_door
 tag @s[scores={AnimationProgress=50..}] remove forced_animation
