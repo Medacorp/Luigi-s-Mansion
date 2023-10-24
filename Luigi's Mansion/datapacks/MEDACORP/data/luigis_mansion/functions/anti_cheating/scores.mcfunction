@@ -239,6 +239,7 @@ scoreboard objectives add Wave dummy
 scoreboard players set #-1 Constants -1
 scoreboard players set #2 Constants 2
 scoreboard players set #3 Constants 3
+scoreboard players set #4 Constants 4
 scoreboard players set #5 Constants 5
 scoreboard players set #8 Constants 8
 scoreboard players set #10 Constants 10
@@ -255,8 +256,10 @@ scoreboard players set #1000 Constants 1000
 scoreboard players set #2000 Constants 2000
 scoreboard players set #10000 Constants 10000
 scoreboard players set #20000 Constants 20000
+
 execute store result score #players Totals if entity @a[gamemode=!spectator]
 execute store result score #all_players Totals if entity @a
+execute store result score #difficulty Selected run difficulty
 
 scoreboard objectives setdisplay list Health
 

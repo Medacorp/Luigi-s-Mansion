@@ -1,9 +1,0 @@
-#gallery 1
-execute if entity @s[x=744.0,y=77,z=-23.5,distance=..0.7,tag=furniture,tag=door] run tag @e[x=742.0,y=77,z=-23.5,distance=..0.7,tag=furniture,tag=door,limit=1] add forced_animation
-execute if entity @s[x=742.0,y=77,z=-23.5,distance=..0.7,tag=furniture,tag=door] run tag @e[x=744.0,y=77,z=-23.5,distance=..0.7,tag=furniture,tag=door,limit=1] add forced_animation
-#gallery 2
-execute if entity @s[x=744.0,y=77,z=-32.5,distance=..0.7,tag=furniture,tag=door] run tag @e[x=742.0,y=77,z=-32.5,distance=..0.7,tag=furniture,tag=door,limit=1] add forced_animation
-execute if entity @s[x=742.0,y=77,z=-32.5,distance=..0.7,tag=furniture,tag=door] run tag @e[x=744.0,y=77,z=-32.5,distance=..0.7,tag=furniture,tag=door,limit=1] add forced_animation
-#extra gallery
-execute if entity @s[tag=extra_gallery_leave,tag=furniture,tag=door] run tag @e[x=772.5,y=77,z=-40.0,distance=..0.7,tag=furniture,tag=door,limit=1] add forced_animation
-execute if entity @s[tag=extra_gallery,tag=furniture,tag=door] run function #luigis_mansion:entities/door/lab/extra_gallery/force_other_animation

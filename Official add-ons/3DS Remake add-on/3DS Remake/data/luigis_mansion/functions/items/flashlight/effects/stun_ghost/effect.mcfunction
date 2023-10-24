@@ -4,7 +4,7 @@ scoreboard players operation #temp VulnerableTime *= #temp PathStep
 scoreboard players remove #temp VulnerableTime 16
 execute unless score #difficulty Selected matches 3 run scoreboard players set @s VulnerableTime 80
 execute if score #difficulty Selected matches 3 run scoreboard players set @s VulnerableTime 20
-scoreboard players operation @s VulnerableTime -= #temp VulnerableTime
+execute unless score #strobulb Selected matches 1 run scoreboard players operation @s VulnerableTime -= #temp VulnerableTime
 scoreboard players set @s[scores={VulnerableTime=..0}] VulnerableTime 2
 scoreboard players operation @s StunTime = @s VulnerableTime
 scoreboard players reset #temp VulnerableTime

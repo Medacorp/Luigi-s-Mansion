@@ -29,7 +29,7 @@ execute if data storage luigis_mansion:data damage{knockback:"freeze_scare"} run
 scoreboard players operation @s LastHealth = @s Health
 execute if entity @s[scores={Damage=1..,Invulnerable=0},gamemode=!creative,gamemode=!spectator] run function luigis_mansion:entities/player/damage/hurt
 execute if data storage luigis_mansion:data damage.limit_health store result score @s Damage run data get storage luigis_mansion:data damage.limit_health
-execute if data storage luigis_mansion:data damage.limit_health run scoreboard players operation @s MaxHealth < @s Damage
+execute if data storage luigis_mansion:data damage.limit_health unless score #difficulty Selected matches 0 run scoreboard players operation @s MaxHealth < @s Damage
 execute if data storage luigis_mansion:data damage.limit_health run scoreboard players reset @s Damage
 data modify storage luigis_mansion:data memory append from storage luigis_mansion:data my_memory
 data remove storage luigis_mansion:data my_memory

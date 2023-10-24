@@ -1,1 +1,0 @@
-function luigis_mansion:entities/furniture/type/tick/door/normal/force_other_animation

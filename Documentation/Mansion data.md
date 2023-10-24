@@ -7,6 +7,7 @@ Mansion data is a massive collection of info storing everything the map needs to
     can_clear_hidden:1b, //Used by the GCN hidden mansion. It is set to 0b the moment the data had to be looked for in the mansion_data list.
     in_mansion_time:X, //How many ticks have been spent in this mansion.
     lowest_health_moment:X, //The lowest anyone's health has ever been in this mansion.
+    lowest_difficulty:X, //The lowest difficulty that has ever been selected in this mansion; used for score multiplier.
     boo_counter:X, //How many Boos are caught, to show on the boo counter and use to determine what caught Boo call variant you get.
     drop_item_on_damage:"<namespaced item ID>", //The item type dropped on damage, and the item type looked at by the heart_money_count global variable.
     blackout:0b, //Whether the mansion is currently in the blackout.

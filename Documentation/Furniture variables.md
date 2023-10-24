@@ -91,7 +91,7 @@ furniture: {
             y:X, //The integer Y coordinate
             z:X //The integer Z coordinate
         }
-    }
+    },
     tags: [] //A list of tags to append to the furniture's default tags used to target the furniture in functions. Default = none.
 }
 ```
