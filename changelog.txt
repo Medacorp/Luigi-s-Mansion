@@ -9,6 +9,7 @@ WARNING! When updating an old save version, be sure to:
 * Several instances of furniture have been replaced with models
 * Added death messages
 * Added revive messages
+* Added difficulty effects; the higher the difficulty, the harder; total score gets a multiplier based on the lowest selected difficulty in the mansion
 * Rewrote a lot
 * Bug fixes
 
