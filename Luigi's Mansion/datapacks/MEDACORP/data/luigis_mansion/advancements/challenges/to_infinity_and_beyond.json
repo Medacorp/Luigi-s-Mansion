@@ -1,0 +1,24 @@
+{
+    "display": {
+        "icon": {
+            "item": "minecraft:diamond_pickaxe",
+			"nbt": "{Unbreakable:1b,Damage:5,CustomModelData:26}"
+        },
+        "title": {
+            "translate": "luigis_mansion:advancements.challenges.to_infinity_and_beyond"
+        },
+        "description": {
+            "translate": "luigis_mansion:advancements.challenges.to_infinity_and_beyond.description"
+        },
+        "hidden": true
+    },
+	"parent": "luigis_mansion:challenges/root",
+    "criteria": {
+        "scan_moon": {
+            "trigger": "minecraft:impossible"
+        }
+    },
+	"rewards": {
+		"function": "luigis_mansion:advancements/challenges/to_infinity_and_beyond"
+	}
+}

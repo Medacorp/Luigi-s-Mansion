@@ -9,7 +9,8 @@
         },
         "description": {
             "translate": "luigis_mansion:advancements.challenges.making_wario_jealous.description"
-        }
+        },
+        "hidden": true
     },
 	"parent": "luigis_mansion:challenges/root",
     "criteria": {

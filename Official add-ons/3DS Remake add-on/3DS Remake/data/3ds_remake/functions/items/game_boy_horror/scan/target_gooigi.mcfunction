@@ -8,4 +8,5 @@ execute at @s[tag=!entity_scanned] as @e[tag=furniture,tag=same_room] if data en
 execute at @s[tag=!furniture_scanned,tag=!entity_scanned] if block ~ ~ ~ minecraft:oak_button[face=floor] run function luigis_mansion:items/game_boy_horror/scan/block
 scoreboard players add #temp Move 1
 execute at @s[tag=!furniture_scanned,tag=!entity_scanned,tag=!scanned_block] if score #temp Move matches 201 if entity @s[y_rotation=87..93,x_rotation=-23..-16] run tellraw @a[tag=same_room] {"translate":"chat.type.text","with":[{"selector":"@p[tag=scanning_player,gamemode=!spectator]","color":"green"},{"translate":"3ds_remake:message.player.scan_furniture.11"}]}
+execute at @s[tag=!furniture_scanned,tag=!entity_scanned,tag=!scanned_block] if score #temp Move matches 201 if entity @s[y_rotation=87..93,x_rotation=-23..-16] run advancement grant @p[tag=scanning_player,gamemode=!spectator] only luigis_mansion:challenges/to_infinity_and_beyond
 execute at @s[tag=!furniture_scanned,tag=!entity_scanned,tag=!scanned_block] if block ~ ~ ~ minecraft:air positioned ^ ^ ^0.5 if score #temp Move matches ..200 run function 3ds_remake:items/game_boy_horror/scan/target_gooigi

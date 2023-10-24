@@ -9,7 +9,8 @@
         },
         "description": {
             "translate": "luigis_mansion:advancements.challenges.spare_some_change.description"
-        }
+        },
+        "hidden": true
     },
 	"parent": "luigis_mansion:challenges/root",
     "criteria": {

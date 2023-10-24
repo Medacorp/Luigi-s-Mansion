@@ -9,7 +9,8 @@
         },
         "description": {
             "translate": "luigis_mansion:advancements.challenges.scrooge_mcduck_it_up.description"
-        }
+        },
+        "hidden": true
     },
 	"parent": "luigis_mansion:challenges/making_wario_jealous",
     "criteria": {

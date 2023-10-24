@@ -8,7 +8,8 @@
         },
         "description": {
             "translate": "luigis_mansion:advancements.challenges.full_to_bursting_you_say.description"
-        }
+        },
+        "hidden": true
     },
 	"parent": "luigis_mansion:challenges/root",
     "criteria": {
