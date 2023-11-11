@@ -4,6 +4,7 @@ scoreboard objectives add Animation dummy
 scoreboard objectives add AnimationProgress dummy
 scoreboard objectives add AttackerMemory dummy
 scoreboard objectives add AttackType dummy
+scoreboard objectives add AvailableSlot dummy
 scoreboard objectives add BananaDropTime dummy
 scoreboard objectives add BookChoice trigger
 scoreboard objectives add Boos dummy
@@ -241,6 +242,8 @@ scoreboard players set #2 Constants 2
 scoreboard players set #3 Constants 3
 scoreboard players set #4 Constants 4
 scoreboard players set #5 Constants 5
+scoreboard players set #6 Constants 6
+scoreboard players set #7 Constants 7
 scoreboard players set #8 Constants 8
 scoreboard players set #10 Constants 10
 scoreboard players set #20 Constants 20
@@ -259,9 +262,11 @@ scoreboard players set #20000 Constants 20000
 
 execute store result score #players Totals if entity @a[gamemode=!spectator]
 execute store result score #all_players Totals if entity @a
-execute store result score #difficulty Selected run difficulty
 
 scoreboard objectives setdisplay list Health
+
+execute store result score #global_difficulty Selected run difficulty
+execute unless score #global_player_names Selected matches 0..1 run scoreboard players set #global_player_names Selected 1
 
 bossbar add luigis_mansion:boo_counter {"translate":"luigis_mansion:message.boo_counter","color":"white","with":["0","0"]}
 bossbar set luigis_mansion:boo_counter color white
@@ -301,8 +306,6 @@ scoreboard players operation #debug_furniture LastSelected = #debug_furniture Se
 scoreboard players operation #debug_entities LastSelected = #debug_entities Selected
 
 execute unless data storage luigis_mansion:data current_state run function luigis_mansion:other/upgrade_path/newly_installed
-
-execute unless score #global_player_names Selected matches 0..1 run scoreboard players set #global_player_names Selected 1
 
 gamerule doTileDrops false
 gamerule doEntityDrops false

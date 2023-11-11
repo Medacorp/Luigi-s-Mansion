@@ -1,0 +1,25 @@
+{
+    "criteria": {
+        "select_item": {
+            "trigger": "minecraft:inventory_changed",
+			"conditions": {
+				"player": [
+					{
+						"condition": "minecraft:entity_properties",
+						"entity": "this",
+						"predicate": {
+							"nbt": "{Tags:[\"using_selection_menu\"]}"
+						}
+					},
+                    {
+                        "condition": "minecraft:reference",
+                        "name": "luigis_mansion:advancement/system_triggers/disabled_inventory_change_check"
+                    }
+				]
+			}
+        }
+    },
+	"rewards": {
+		"function": "luigis_mansion:entities/player/selection_menu/option_selected"
+	}
+}

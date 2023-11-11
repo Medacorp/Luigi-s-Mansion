@@ -90,7 +90,6 @@ Then close the world or server, and remove the data pack from the world.
 3. Delete the desired add-ons. (Do NOT delete the "MEDACORP" folder, as that's the base map behavior.)
 
 == Server properties requirements ==
-gamemode=adventure
 difficulty=<desired difficulty>
 
 == Credits ==

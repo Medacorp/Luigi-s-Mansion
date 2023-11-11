@@ -1,9 +1,9 @@
 {
 	"credit": "Made with Blockbench",
 	"textures": {
-		"0": "e3_demo:furniture/silver_candelabra",
+		"0": "luigis_mansion:furniture/silver_candelabra",
 		"1": "luigis_mansion:furniture/candle/blank",
-		"particle": "e3_demo:furniture/silver_candelabra"
+		"particle": "luigis_mansion:furniture/silver_candelabra"
 	},
 	"elements": [
 		{

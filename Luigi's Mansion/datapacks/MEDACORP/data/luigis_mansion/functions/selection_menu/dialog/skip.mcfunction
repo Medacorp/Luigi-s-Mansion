@@ -1,0 +1,1 @@
+tag @s add skip_dialog

@@ -1,8 +1,8 @@
 {
     "display": {
         "icon": {
-            "item": "minecraft:brick",
-			"nbt": "{CustomModelData:26}"
+            "item": "minecraft:diamond_pickaxe",
+			"nbt": "{Damage:22,Unbreakable:1b,CustomModelData:16}"
         },
         "title": {
             "translate": "luigis_mansion:advancements.challenges.scrooge_mcduck_it_up"

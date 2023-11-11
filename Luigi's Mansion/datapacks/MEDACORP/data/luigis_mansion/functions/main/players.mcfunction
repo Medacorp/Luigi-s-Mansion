@@ -1,3 +1,6 @@
+execute if entity @s[tag=using_selection_menu,tag=fetch_option_result] run function luigis_mansion:entities/player/selection_menu/get_selected_option
+execute if entity @s[tag=using_selection_menu,tag=!selection_menu_free_to_move] run function luigis_mansion:entities/player/selection_menu/freeze_in_place
+
 tag @s add player
 tag @s[tag=camera,gamemode=!spectator] remove spectator
 execute if loaded ~ ~ ~ if loaded ~-48 ~ ~ if loaded ~48 ~ ~ if loaded ~ ~ ~-48 if loaded ~ ~ ~48 if loaded ~48 ~ ~48 if loaded ~48 ~ ~-48 if loaded ~-48 ~ ~48 if loaded ~-48 ~ ~-48 run function luigis_mansion:main/loaded_chunks
@@ -101,3 +104,4 @@ tag @s add me
 execute as @a[distance=..0.4,tag=!me,tag=!spectator,tag=!pull_locked_door,tag=!push_locked_door,tag=!pull_unlock_door,tag=!push_unlock_door,tag=!pull_open_door,tag=!push_unlock_door,limit=1] run function luigis_mansion:entities/player/collide
 tag @s remove me
 tag @s[tag=camera] add spectator
+data remove storage dark_moon:data selected_option

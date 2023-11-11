@@ -15,7 +15,8 @@ scoreboard players reset @s[scores={OpenMapTime=1..},tag=stop_map_on_key_collect
 scoreboard players reset @s[scores={OpenMapTime=1..},tag=stop_map_on_key_collect] OpenMapTime
 scoreboard players remove @s[scores={OpenMapTime=1..}] OpenMapTime 1
 execute if entity @s[scores={OpenMapTime=0}] unless entity @s[scores={KnockbackType=1..}] unless entity @s[scores={ScareType=1..}] run function luigis_mansion:items/game_boy_horror/map/open
-function #luigis_mansion:items
+execute if entity @s[tag=!using_selection_menu] run function #luigis_mansion:items
+execute if entity @s[tag=using_selection_menu] run function luigis_mansion:selection_menu/tick
 execute if entity @s[tag=!death_animation,tag=!revive_animation,tag=!polterpup_reviving] unless entity @s[scores={KnockbackType=2..}] unless entity @s[scores={ScareType=2..}] run function luigis_mansion:blocks/gravity_swap
 execute if entity @s[tag=warp] run function luigis_mansion:items/game_boy_horror/warp
 execute if entity @s[tag=riding_poltergust,scores={KnockbackType=0},tag=!looking_at_map,tag=!death_animation,tag=!revive_animation,tag=!polterpup_reviving] run function luigis_mansion:entities/player/riding_poltergust

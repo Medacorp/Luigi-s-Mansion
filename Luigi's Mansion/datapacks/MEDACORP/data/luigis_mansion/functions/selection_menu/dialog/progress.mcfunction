@@ -1,0 +1,1 @@
+tag @s add next_dialog_line

@@ -1,9 +1,9 @@
 {
 	"credit": "Made with Blockbench",
 	"textures": {
-		"0": "luigis_mansion:furniture/triple_mounted_wall_candlabra",
+		"0": "luigis_mansion:furniture/triple_mounted_huge_wall_candlabra",
 		"1": "luigis_mansion:furniture/candle/huge_blank",
-		"particle": "luigis_mansion:furniture/triple_mounted_wall_candlabra"
+		"particle": "luigis_mansion:furniture/triple_mounted_huge_wall_candlabra"
 	},
 	"elements": [
 		{

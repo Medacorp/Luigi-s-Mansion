@@ -3,16 +3,9 @@ execute as @a[gamemode=!spectator,x=734,y=17,z=57,dx=14,dy=9,dz=21] unless entit
 execute as @e[x=734,y=17,z=57,dx=14,dy=9,dz=21] unless entity @s[tag=ghost,tag=appear] unless entity @s[tag=ghost,tag=vanish] run scoreboard players set @s Room 70
 scoreboard players set #temp Room 70
 
-execute as @e[scores={Room=70},type=!minecraft:marker] unless entity @s[gamemode=spectator] run scoreboard players set @s MirrorX 735
-
 execute as @a[scores={Room=70}] run function luigis_mansion:room/hidden/guest_room/tick_per_player
 
 function #luigis_mansion:room/hidden/guest_room/interactions/room
-
-execute if block 736 23 68 minecraft:redstone_wall_torch run setblock 734 23 68 minecraft:redstone_wall_torch[facing=west,lit=true]
-execute if block 736 23 68 minecraft:tripwire_hook run setblock 734 23 68 minecraft:tripwire_hook[facing=west]
-execute if block 736 23 66 minecraft:redstone_wall_torch run setblock 734 23 66 minecraft:redstone_wall_torch[facing=west,lit=true]
-execute if block 736 23 66 minecraft:tripwire_hook run setblock 734 23 66 minecraft:tripwire_hook[facing=west]
 
 scoreboard players set #temp Room 70
 execute as @a[gamemode=!spectator,tag=!pull_open_door,tag=!push_open_door] run function #luigis_mansion:get_same_room
