@@ -11,6 +11,7 @@ execute if entity @e[tag=!me,tag=!hidden,tag=!model_piece,tag=!door,distance=..0
 execute if entity @e[tag=!me,tag=!hidden,tag=!model_piece,tag=!door,distance=..0.7,limit=1] unless entity @e[type=minecraft:item_frame,distance=..0.7,limit=1] run tag @s remove try_spawn
 scoreboard players operation #temp PositionX = @s PositionX
 scoreboard players operation #temp PositionY = @s PositionY
+scoreboard players operation #temp PositionY -= @s EntityYOffset
 scoreboard players operation #temp PositionZ = @s PositionZ
 execute as @e[tag=furniture,tag=same_room] if score @s PositionX = #temp PositionX if score @s PositionY = #temp PositionY if score @s PositionZ = #temp PositionZ run tag @e[tag=me,limit=1] remove try_spawn
 tag @s remove me

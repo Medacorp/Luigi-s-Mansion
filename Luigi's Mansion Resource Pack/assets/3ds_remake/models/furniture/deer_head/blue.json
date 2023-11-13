@@ -1,0 +1,6 @@
+{
+	"parent": "luigis_mansion:furniture/deer_head",
+	"textures": {
+		"0": "3ds_remake:furniture/deer_head/blue"
+	}
+}

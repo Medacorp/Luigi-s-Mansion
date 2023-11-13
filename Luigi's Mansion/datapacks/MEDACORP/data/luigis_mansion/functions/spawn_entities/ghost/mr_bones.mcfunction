@@ -34,5 +34,5 @@ execute if data storage luigis_mansion:data entity.vanish_time as @e[tag=this_en
 execute if data storage luigis_mansion:data entity.training_room_score as @e[tag=this_entity,tag=!model_piece,limit=1] store result score @s TrainingRoomScore run data get storage luigis_mansion:data entity.training_room_score
 execute if data storage luigis_mansion:data entity.loot run data modify entity @e[tag=this_entity,tag=!model_piece,limit=1] ArmorItems[3].tag.loot set from storage luigis_mansion:data entity.loot
 execute if data storage luigis_mansion:data entity.damage run data modify entity @e[tag=this_entity,tag=!model_piece,limit=1] ArmorItems[3].tag.damage set from storage luigis_mansion:data entity.damage
-tag @e[tag=this_entity,limit=1] remove this_entity
+tag @e[tag=this_entity] remove this_entity
 data remove storage luigis_mansion:data entity

@@ -3,22 +3,23 @@ Furniture spawning takes certain variables, they are classified and listed below
 ```
 furniture: {
     // Display and sound
-    pose:[0.0f,0.01f,0.0f], //The pose the furniture armor stand's head gets. The jaw is ignored and the pitch is copied over to the armor stand, ignoring execution rotation pitch. Default = 0.0f,0.01f,0.0f
+    pose:[0.0f,0.01f,0.0f], //The pose the furniture armor stand's head gets. The jaw is ignored, and the pitch is clamped to -90..90 and copied over to the armor stand, ignoring execution rotation pitch. Default = defined by furniture, generally 0.0f,0.01f,0.0f
     no_long_shake:1b, //When set disables the long shaking animation from manual search. Default = 0b.
     no_short_shake:1b, //When set disables the short shaking animation from manual search. Default = 0b.
     no_visual_shake:1b, //When set disables the shaking animations visually; sound will still play. Default = 0b.
-    use_medium_shake:1b, //When set forces a shake animation used by room clear chests, rather than the other 2. Default = 0b.
+    use_medium_shake:1b, //When set forces a shake animation used by room clear chests, rather than the long and short ones. Default = 0b.
     sound:{ //The ID of the furniture shake sound. See IDs in use for valid IDs.
         namespace:"luigis_mansion", //The namespace of the furniture shake sound. Defaults to "luigis_mansion".
         id:"heavy_generic" //The ID of the furniture shake sound. Defaults to "heavy_generic".
     },
-    interact_animation:7, //What animation gets used when using the interact method. Enthusiastic animation (7) aditionally has a punch sound and will swing swinging furniture. Overrides default animation selecting. Default = none, except for room clear chests which use 45 when the 3DS Remake add-on is installed or not, and 43 when not.
+    interact_animation:7, //What animation gets used when using the interact method. Enthusiastic animation (7) aditionally has a punch sound and will swing swinging furniture. Overrides default animation selecting. Default = none, except for room clear chests which use 45 when the 3DS Remake add-on is installed.
+    inverted_swing:1b, //Swinging furniture only, whether the swinging angles are inverted for searching methods. Default = 0b.
         
     //search details
-    searchable: ["<method>"], //Sets what method can result in searching. If "interact" is absent here, but provided in shake_animation, interact will still try to shake it, and trigger the search animaton it, but it won't actually get searched. Methods: time(will search automatically), interact, vacuum, dust, fire, water, ice. Default = none.
+    searchable: ["<method>"], //Sets what method can result in searching. If "interact" is absent here, but provided in shake_animation, interact will still try to shake it, and trigger the search animaton, but it won't actually get searched. Methods: time(will search automatically), interact, vacuum, dust, fire, water, ice. Default = none.
     shake_animation: ["<method>"], //Sets what method can result in the furniture shaking. Methods: interact, vacuum, dust, fire, water, ice. Default = none.
-    searched:1b, //When set the furniture should spawn triggering its searched animation. If set for room clear chests, also stops the spawn sound from playing. Default = 0b.
-    no_search_animation:1b, //When set the furniture has no search animation at all (eg on a chest doesn't open it). If set alongside searched, the furniture spawns in in the searched state, skipping the animation. Default = 0b.
+    searched:1b, //When set the furniture should spawn triggering its searched animation. Default = 0b.
+    no_search_animation:1b, //When set the furniture has no search animation at all (eg on a chest doesn't open it). If set alongside searched, the furniture spawns in the searched state, skipping the animation. Default = 0b.
     must_face:1b, //When set requires the player to face the opposite direction compared to this furniture (with 90 degree total range) in other to manually search it. Default = 0b.
     cannot_search_when_open:1b, //When set prevents the furniture from searching again if it has been opened. If set alongside searched, makes loot drop immedietly on spawn. Default = 0b.
     
@@ -31,7 +32,11 @@ furniture: {
     },
     dialog:"<name>", //Dialog to trigger on manual search (requires searchable to have "interact" method). Default = none.
     can_hide_boo:1b, //If this furniture is randomly selected by boos to hide in. Default = 0b.
-    scan_message:'{"translate":"..."}', //Message as a result from GBH scan. When set to "warp" warps the scanner if they're not Gooigi, not in a dialog, and the can_warp global variable is turned on (if conditions are not met, will send the message "Huh...?" instead). Gooigi scan always results in the "......." string when set to warp. Not provided = ignored by scan. Empty string = blocks scan.
+    scan_message: //Result from GBH scan. Not provided = ignored by scan. Has several formats and behaviors.
+        * '{"translate":"..."}', //Message as a result from GBH scan. Gooigi scan always results in the "......." string.
+        * "warp", //Warps the scanner on GBH scan if they're not Gooigi, not in a dialog, and the can_warp global variable is turned on (if conditions are not met, will send the message "Huh...?" instead). Gooigi scan always results in the "......." string.
+        * "", //Prevents GBH scan from passing through, but has no result.
+        * "spawn_ghost", //Spawns the ghost positioned in the furniture.
     
     //non-default setup
     <type>_elemental_source:{ //Elemental source data, can only be applied to furniture supporting that elemental type. Default = none.

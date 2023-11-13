@@ -1,1 +1,2 @@
-data merge block 733 32 61 {LootTable:"luigis_mansion:search"}
+data modify storage luigis_mansion:data furniture set value {inverted_swing:1b,searchable:["vacuum"],shake_animation:["interact","vacuum"],sound:{namespace:"luigis_mansion",id:"heavy_generic"},scan_message:'{"translate":"luigis_mansion:message.player.scan_furniture.26"}'}
+execute positioned 734.1 32.5 61 rotated -90 0 run function luigis_mansion:spawn_furniture/deer_head

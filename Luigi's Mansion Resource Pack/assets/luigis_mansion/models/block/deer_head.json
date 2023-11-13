@@ -1,8 +1,0 @@
-{
-    "parent": "minecraft:block/orientable",
-    "textures": {
-        "top": "minecraft:block/oak_planks",
-        "front": "luigis_mansion:block/deer_head",
-        "side": "minecraft:block/oak_planks"
-    }
-}

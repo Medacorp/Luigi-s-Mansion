@@ -1,3 +1,2 @@
 data modify storage luigis_mansion:data furniture set value {searched:1b,no_search_animation:1b,shake_animation:["interact","vacuum"],sound:{namespace:"luigis_mansion",id:"heavy_generic"},scan_message:'{"translate":"luigis_mansion:message.player.scan_furniture.64"}'}
 execute positioned 664 11 44 rotated -160 0 run function luigis_mansion:spawn_furniture/toilet
-data remove storage luigis_mansion:data furniture

@@ -1,4 +1,4 @@
-summon minecraft:armor_stand ~ ~-1.4 ~ {CustomName:'{"translate":"luigis_mansion:furniture.candle_flame"}',Pose:{Head:[0.0f,0.0f,0.0f]},HasVisualFire:1b,Marker:1b,NoGravity:1b,Invisible:1b,Silent:1b,ArmorItems:[{},{},{},{}],Tags:["furniture","candle_flame","immobile","can_be_fire_elemental_source","affected_by_vacuum","affected_by_dust","affected_by_fire","affected_by_water","affected_by_ice","searchable_by_vacuum","searchable_by_dust","searchable_by_fire","searchable_by_water","searchable_by_ice","this_entity"],DisabledSlots:2039583}
+summon minecraft:armor_stand ~ ~-1.4 ~ {CustomName:'{"translate":"luigis_mansion:furniture.candle_flame"}',HasVisualFire:1b,Marker:1b,NoGravity:1b,Invisible:1b,Silent:1b,ArmorItems:[{},{},{},{}],Tags:["furniture","candle_flame","immobile","can_be_fire_elemental_source","affected_by_vacuum","affected_by_dust","affected_by_fire","affected_by_water","affected_by_ice","searchable_by_vacuum","searchable_by_dust","searchable_by_fire","searchable_by_water","searchable_by_ice","this_entity"],DisabledSlots:2039583}
 teleport @e[tag=this_entity,tag=candle_flame,limit=1] ~ ~-1.4 ~ ~ 0
 execute unless data storage luigis_mansion:data furniture.candle_flames[0] unless score #candle_flames Selected matches 1 if score #debug_messages Selected matches 1.. run tellraw @a {"translate":"luigis_mansion:message.debug.format","with":[{"translate":"luigis_mansion:message.debug","color":"gold"},{"translate":"luigis_mansion:message.debug.candle_flame.too_few","color":"red"}]}
 execute unless data storage luigis_mansion:data furniture.candle_flames[0] run scoreboard players set #candle_flames Selected 1
@@ -17,8 +17,7 @@ execute if data storage luigis_mansion:data candle_flame.fire_elemental_source{t
 execute if data storage luigis_mansion:data candle_flame.tags run data modify entity @e[tag=this_entity,tag=candle_flame,limit=1] Tags append from storage luigis_mansion:data candle_flame.tags[]
 data remove storage luigis_mansion:data candle_flame
 data remove storage luigis_mansion:data furniture.candle_flames[0]
-execute if data storage luigis_mansion:data furniture.pose run data modify entity @e[tag=this_entity,tag=candle_flame,limit=1] Pose.Head set from storage luigis_mansion:data furniture.pose
-data modify entity @e[tag=this_entity,tag=candle_flame,limit=1] Pose.Head[1] set value 0.01f
+data modify entity @e[tag=this_entity,tag=candle_flame,limit=1] Pose.Head set from storage luigis_mansion:data furniture.pose
 execute as @e[tag=this_entity,tag=candle_flame,limit=1] run data modify entity @s Rotation[1] set from entity @s Pose.Head[0]
 scoreboard players set @e[tag=this_entity,tag=candle_flame,limit=1] FurnitureElementLeft 0
 scoreboard players set @e[tag=this_entity,tag=candle_flame,limit=1] FurnitureElementUp 0

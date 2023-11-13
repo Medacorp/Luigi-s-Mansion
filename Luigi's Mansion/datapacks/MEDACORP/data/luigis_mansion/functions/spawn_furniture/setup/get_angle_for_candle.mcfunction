@@ -1,4 +1,4 @@
-function luigis_mansion:spawn_furniture/setup/pose
+execute if entity @e[tag=this_entity,type=minecraft:armor_stand,limit=1] run function luigis_mansion:spawn_furniture/setup/pose
 execute store result score #temp Time run data get entity @e[tag=this_entity,limit=1] Pose.Head[2]
 scoreboard players operation #temp2 Time = #temp Time
 execute if score #temp2 Time matches ..-91 run scoreboard players add #temp2 Time 180
