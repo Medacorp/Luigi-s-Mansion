@@ -9,7 +9,6 @@ execute as @a[scores={Room=19}] run function 3ds_remake:room/hidden/washroom_1/t
 
 function #3ds_remake:room/hidden/washroom_1/interactions/room
 
-clone 664 12 44 664 12 44 658 12 44
 execute if block 663 14 37 minecraft:oak_trapdoor[open=true] run setblock 659 14 37 minecraft:oak_trapdoor[open=true,facing=west,half=top]
 execute if block 663 14 37 minecraft:oak_trapdoor[open=false] run setblock 659 14 37 minecraft:oak_trapdoor[open=false,facing=west,half=top]
 execute if block 663 14 36 minecraft:oak_trapdoor[open=true] run setblock 659 14 36 minecraft:oak_trapdoor[open=true,facing=west,half=top]

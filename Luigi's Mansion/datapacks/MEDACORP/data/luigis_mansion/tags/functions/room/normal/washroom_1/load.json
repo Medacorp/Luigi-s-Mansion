@@ -4,10 +4,10 @@
         "luigis_mansion:room/normal/washroom_1/load/lights",
         "luigis_mansion:room/normal/washroom_1/load/doors",
         "luigis_mansion:room/normal/washroom_1/load/spawn_toad",
+        "luigis_mansion:room/normal/washroom_1/load/legged_sink",
         "luigis_mansion:room/normal/washroom_1/load/painting_1",
         "luigis_mansion:room/normal/washroom_1/load/painting_2",
         "luigis_mansion:room/normal/washroom_1/load/painting_3",
-        "luigis_mansion:room/normal/washroom_1/load/sink",
         "luigis_mansion:room/normal/washroom_1/load/toilet",
         "luigis_mansion:room/normal/washroom_1/load/toilet_paper"
 	]

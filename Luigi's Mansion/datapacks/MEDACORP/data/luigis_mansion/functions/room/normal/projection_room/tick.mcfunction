@@ -3,10 +3,6 @@ execute as @a[gamemode=!spectator,x=673,y=8,z=30,dx=15,dy=9,dz=16] unless entity
 execute as @e[x=673,y=8,z=30,dx=15,dy=9,dz=16] unless entity @s[tag=ghost,tag=appear] unless entity @s[tag=ghost,tag=vanish] run scoreboard players set @s Room 48
 scoreboard players set #temp Room 48
 
-execute if block 686 12 38 minecraft:light[level=15] run scoreboard players set @e[scores={Room=48}] LightX 68500
-execute if block 686 12 38 minecraft:light[level=15] run scoreboard players set @e[scores={Room=48}] LightY 1230
-execute if block 686 12 38 minecraft:light[level=15] run scoreboard players set @e[scores={Room=48}] LightZ 3850
-
 execute as @a[scores={Room=48}] run function luigis_mansion:room/normal/projection_room/tick_per_player
 
 function #luigis_mansion:room/normal/projection_room/interactions/room

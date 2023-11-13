@@ -9,8 +9,6 @@ execute as @a[scores={Room=42}] run function luigis_mansion:room/hidden/washroom
 
 function #luigis_mansion:room/hidden/washroom_2/interactions/room
 
-clone 664 21 -29 664 21 -29 658 21 -29
-
 scoreboard players set #temp Room 42
 execute as @a[gamemode=!spectator,tag=!pull_open_door,tag=!push_open_door] run function #luigis_mansion:get_same_room
 scoreboard players reset #temp Room

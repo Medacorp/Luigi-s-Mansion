@@ -1,7 +1,0 @@
-{
-	"parent": "luigis_mansion:furniture/wooden_cabinet_mounted_wooden_colorful_candelabra/state_2",
-	"textures": {
-		"2": "luigis_mansion:furniture/candle/red",
-		"3": "luigis_mansion:furniture/candle/blue"
-	}
-}

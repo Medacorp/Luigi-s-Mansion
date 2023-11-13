@@ -1,5 +1,4 @@
-execute store result score #temp Room run scoreboard players get @s Room
-execute as @e[tag=furniture,tag=same_room,tag=can_hide_boo] if score @s Room = #temp Room at @s positioned ~ ~1.4 ~ unless entity @e[distance=..0.1,tag=hidden_boo,tag=caught_by_boo_radar,limit=1] run tag @s add hide_option
+execute as @e[tag=furniture,tag=same_room,tag=can_hide_boo] run function luigis_mansion:entities/hidden_boo/get_options
 # todelete
 function #luigis_mansion:entities/hidden_boo/swap_spot
 execute as @e[type=minecraft:marker,tag=choice] at @s if entity @e[tag=hidden_boo,distance=..0.1,tag=caught_by_boo_radar,limit=1] run kill @s
@@ -13,4 +12,6 @@ scoreboard players set @s[tag=caught_by_boo_radar] HideTime 600
 kill @e[type=minecraft:marker,tag=choice]
 # /todelete
 tag @e[tag=hide_option] remove hide_option
-scoreboard players reset #temp Room
+scoreboard players reset #temp PositionX
+scoreboard players reset #temp PositionY
+scoreboard players reset #temp PositionZ

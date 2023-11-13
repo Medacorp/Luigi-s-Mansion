@@ -1,6 +1,0 @@
-{
-	"parent": "luigis_mansion:furniture/candle_flame_fueled",
-	"textures": {
-		"0": "luigis_mansion:furniture/candle/flame/purple"
-	}
-}

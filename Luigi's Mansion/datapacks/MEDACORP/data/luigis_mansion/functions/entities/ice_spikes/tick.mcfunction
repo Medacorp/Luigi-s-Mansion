@@ -7,3 +7,4 @@ execute store result storage luigis_mansion:data damage.attacker int 1 run score
 execute positioned ~-1 ~ ~-1 as @a[dx=1,dy=1,dz=1,gamemode=!spectator] run function luigis_mansion:entities/player/damage
 data remove storage luigis_mansion:data damage
 tag @s[scores={ActionTime=27}] add dead
+execute at @s[scores={LightX=-2147483648..}] run function luigis_mansion:other/cast_shadow/2_tall

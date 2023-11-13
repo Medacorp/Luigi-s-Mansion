@@ -1,0 +1,6 @@
+{
+	"parent": "luigis_mansion:furniture/helicopter_mobile/clockwise",
+	"textures": {
+		"0": "3ds_remake:furniture/helicopter_mobile"
+	}
+}

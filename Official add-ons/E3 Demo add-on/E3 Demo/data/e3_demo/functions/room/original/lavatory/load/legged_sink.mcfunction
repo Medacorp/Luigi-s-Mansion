@@ -1,0 +1,3 @@
+data modify storage luigis_mansion:data furniture set value {shake_animation:["interact","vacuum"],sound:{namespace:"luigis_mansion",id:"stone"},scan_message:'{"translate":"luigis_mansion:message.player.scan_furniture.80"}'}
+execute positioned 662.6 11 40 rotated -90 0 run function luigis_mansion:spawn_furniture/legged_sink
+data remove storage luigis_mansion:data furniture

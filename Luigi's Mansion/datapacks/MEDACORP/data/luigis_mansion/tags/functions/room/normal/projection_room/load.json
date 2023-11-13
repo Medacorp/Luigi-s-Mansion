@@ -3,6 +3,7 @@
 	    "luigis_mansion:room/normal/projection_room/load/set_loaded",
         "luigis_mansion:room/normal/projection_room/load/lights",
         "luigis_mansion:room/normal/projection_room/load/doors",
+        "luigis_mansion:room/normal/projection_room/load/projector",
         "luigis_mansion:room/normal/projection_room/load/room_clear_chest"
 	]
 }

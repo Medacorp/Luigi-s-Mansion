@@ -1,3 +1,4 @@
+execute unless data storage luigis_mansion:data furniture.pose run data modify storage luigis_mansion:data furniture.pose set value [0.0f,0.0f,0.0f]
 execute store result score #temp Time run data get storage luigis_mansion:data furniture.pose[0]
 execute if score #temp Time matches ..-90 run data modify storage luigis_mansion:data furniture.pose[0] set value -90.0f
 execute if score #temp Time matches 90.. run data modify storage luigis_mansion:data furniture.pose[0] set value 90.0f

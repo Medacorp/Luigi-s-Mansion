@@ -9,7 +9,6 @@ execute as @a[scores={Room=19}] run function luigis_mansion:room/hidden/washroom
 
 function #luigis_mansion:room/hidden/washroom_1/interactions/room
 
-clone 664 12 -29 664 12 -29 658 12 -29
 execute if block 663 14 -22 minecraft:oak_trapdoor[open=true] run setblock 659 14 -22 minecraft:oak_trapdoor[open=true,facing=west,half=top]
 execute if block 663 14 -22 minecraft:oak_trapdoor[open=false] run setblock 659 14 -22 minecraft:oak_trapdoor[open=false,facing=west,half=top]
 execute if block 663 14 -21 minecraft:oak_trapdoor[open=true] run setblock 659 14 -21 minecraft:oak_trapdoor[open=true,facing=west,half=top]

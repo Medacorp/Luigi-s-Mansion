@@ -3,6 +3,7 @@
 	    "3ds_remake:room/hidden/projection_room/load/set_loaded",
         "3ds_remake:room/hidden/projection_room/load/lights",
         "3ds_remake:room/hidden/projection_room/load/doors",
+        "3ds_remake:room/hidden/projection_room/load/projector",
         "3ds_remake:room/hidden/projection_room/load/room_clear_chest"
     ]
 }
