@@ -1,6 +1,0 @@
-{
-    "parent": "luigis_mansion:item/menu",
-    "textures": {
-        "layer0": "e3_demo:item/menu/game_boy_horror/show_items/ghost_coin"
-    }
-}

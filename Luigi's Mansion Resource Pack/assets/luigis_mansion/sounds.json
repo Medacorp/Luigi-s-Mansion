@@ -9620,6 +9620,24 @@
         ],
         "subtitle": "luigis_mansion:subtitles.item.game_boy_horror.map.move"
     },
+    "item.game_boy_horror.map.zoom_in": {
+        "sounds": [
+            {
+                "name": "luigis_mansion:item/game_boy_horror/map/zoom_in",
+                "stream": false
+            }
+        ],
+        "subtitle": "luigis_mansion:subtitles.item.game_boy_horror.map.move"
+    },
+    "item.game_boy_horror.map.zoom_out": {
+        "sounds": [
+            {
+                "name": "luigis_mansion:item/game_boy_horror/map/zoom_out",
+                "stream": false
+            }
+        ],
+        "subtitle": "luigis_mansion:subtitles.item.game_boy_horror.map.move"
+    },
     "item.game_boy_horror.scan": {
         "sounds": [
             {
@@ -9629,19 +9647,19 @@
         ],
         "subtitle": "luigis_mansion:subtitles.item.game_boy_horror.scan"
     },
-    "item.game_boy_horror.show_caught_ghosts": {
+    "item.game_boy_horror.show_caught_portrait_ghosts": {
         "sounds": [
             {
-                "name": "luigis_mansion:item/game_boy_horror/show_caught_ghosts",
+                "name": "luigis_mansion:item/game_boy_horror/show_caught_portrait_ghosts",
                 "stream": false
             }
         ],
         "subtitle": "luigis_mansion:subtitles.item.game_boy_horror.on"
     },
-    "item.game_boy_horror.show_items": {
+    "item.game_boy_horror.show_inventory": {
         "sounds": [
             {
-                "name": "luigis_mansion:item/game_boy_horror/show_items",
+                "name": "luigis_mansion:item/game_boy_horror/show_inventory",
                 "stream": false
             }
         ],

@@ -1,3 +1,0 @@
-execute if data storage luigis_mansion:data current_state.current_data.rooms.lavatory{seen:0b} run function e3_demo:items/game_boy_horror/map/display/original/lavatory/unseen
-execute if data storage luigis_mansion:data current_state.current_data.rooms.lavatory{seen:1b,cleared:0b} run function e3_demo:items/game_boy_horror/map/display/original/lavatory/seen
-execute if data storage luigis_mansion:data current_state.current_data.rooms.lavatory{cleared:1b} run function e3_demo:items/game_boy_horror/map/display/original/lavatory/cleared

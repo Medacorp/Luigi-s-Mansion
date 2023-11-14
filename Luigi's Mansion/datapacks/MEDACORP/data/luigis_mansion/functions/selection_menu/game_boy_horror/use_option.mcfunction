@@ -1,1 +1,1 @@
-$execute if entity @s[tag=game_boy_horror_menu] run function luigis_mansion:selection_menu/game_boy_horror/$(id)
+$execute if entity @s[tag=game_boy_horror_menu] run function $(namespace):selection_menu/game_boy_horror/$(id)

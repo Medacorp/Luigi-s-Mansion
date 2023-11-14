@@ -1,4 +1,4 @@
-execute if entity @s[tag=looking_at_map] run function luigis_mansion:items/game_boy_horror/map/close
+execute if entity @s[tag=looking_at_map] run function luigis_mansion:selection_menu/game_boy_horror/exit
 execute unless entity @s[scores={Animation=13..24}] unless entity @s[scores={KnockbackTime=1..}] unless entity @s[scores={ScareType=3..,ScareTime=22..}] run effect give @s minecraft:slowness 1 9 true
 execute unless entity @s[scores={Animation=13..24}] unless entity @s[scores={KnockbackTime=1..}] unless entity @s[scores={ScareType=3..,ScareTime=22..}] run scoreboard players set @s ScareTime 51
 execute unless entity @s[scores={Animation=13..24}] unless entity @s[scores={KnockbackTime=1..}] unless entity @s[scores={ScareType=3..,ScareTime=22..}] run summon minecraft:marker ~ ~ ~ {Tags:["temp","remove_from_existence"]}

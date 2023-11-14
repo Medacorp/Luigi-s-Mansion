@@ -1,3 +1,0 @@
-execute if data storage luigis_mansion:data current_state.current_data.rooms.hallway_3{seen:0b} run function e3_demo:items/game_boy_horror/map/display/original/hallway_3/unseen
-execute if data storage luigis_mansion:data current_state.current_data.rooms.hallway_3{seen:1b,cleared:0b} run function e3_demo:items/game_boy_horror/map/display/original/hallway_3/seen
-execute if data storage luigis_mansion:data current_state.current_data.rooms.hallway_3{cleared:1b} run function e3_demo:items/game_boy_horror/map/display/original/hallway_3/cleared

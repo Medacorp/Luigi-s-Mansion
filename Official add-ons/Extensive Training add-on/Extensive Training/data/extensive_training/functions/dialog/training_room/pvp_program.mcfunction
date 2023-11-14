@@ -30,7 +30,7 @@ execute if entity @s[scores={Dialog=487}] store result score #temp Time if entit
 execute if entity @s[scores={Dialog=487}] store result score #temp2 Time if entity @a[tag=same_room,scores={Animation=2},tag=!idle]
 execute if entity @s[scores={Dialog=487}] run scoreboard players operation #temp Time -= #temp2 Time
 execute if entity @s[scores={Dialog=487}] if score #temp Time matches 1 run scoreboard players set @s Dialog 489
-execute as @a[scores={Health=..0},tag=same_room,tag=looking_at_map] run function luigis_mansion:items/game_boy_horror/map/close
+execute as @a[scores={Health=..0},tag=same_room,tag=looking_at_map] at @s run function luigis_mansion:selection_menu/game_boy_horror/map/exit
 execute as @a[scores={Health=..0},tag=same_room] run function luigis_mansion:entities/player/animation/set/low_health_idle
 tag @a[scores={Health=..0},tag=same_room] remove idle
 scoreboard players reset @a[scores={Health=..0},tag=same_room] TrainingRoomScore
@@ -49,7 +49,7 @@ execute if entity @s[scores={Dialog=488}] run scoreboard players reset #training
 execute if entity @s[scores={Dialog=488}] if score #temp Time matches 2.. run tellraw @a[tag=same_room,tag=finalist] {"translate":"chat.type.text","with":[{"translate":"luigis_mansion:entity.e_gadd","color":"green"},{"translate":"extensive_training:dialog.pvp.tie.it"}]}
 execute if entity @s[scores={Dialog=488}] if score #temp Time matches 2.. run tellraw @a[tag=same_room,tag=!finalist] {"translate":"chat.type.text","with":[{"translate":"luigis_mansion:entity.e_gadd","color":"green"},{"translate":"extensive_training:dialog.pvp.tie.not_it"}]}
 execute if entity @s[scores={Dialog=488}] if score #temp Time matches 2.. as @a[tag=same_room] at @s run playsound luigis_mansion:entity.e_gadd.talk.jeemee_jeemee neutral @s ~ ~ ~ 1
-execute if entity @s[scores={Dialog=488}] if score #temp Time matches 2.. as @a[tag=same_room,gamemode=!spectator,tag=!finalist,tag=looking_at_map] run function luigis_mansion:items/game_boy_horror/map/close
+execute if entity @s[scores={Dialog=488}] if score #temp Time matches 2.. as @a[tag=same_room,gamemode=!spectator,tag=!finalist,tag=looking_at_map] at @s run function luigis_mansion:selection_menu/game_boy_horror/map/exit
 execute if entity @s[scores={Dialog=488}] if score #temp Time matches 2.. as @a[tag=same_room,gamemode=!spectator,tag=!finalist] run function luigis_mansion:entities/player/animation/set/low_health_idle
 execute if entity @s[scores={Dialog=488}] if score #temp Time matches 2.. run tag @a[tag=!finalist] remove idle
 execute if entity @s[scores={Dialog=488}] if score #temp Time matches 2.. run tag @a[tag=finalist] remove finalist

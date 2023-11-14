@@ -1,2 +1,2 @@
 data modify storage luigis_mansion:data current_state.current_data.rooms.missingno_49 merge value {seen:1b}
-execute if entity @a[tag=looking_at_map,limit=1] run function e3_demo:items/game_boy_horror/map/display/original/generate
+tag @a[tag=looking_at_map,nbt={Dimension:"e3_demo:original"},limit=1] add regenerate_map

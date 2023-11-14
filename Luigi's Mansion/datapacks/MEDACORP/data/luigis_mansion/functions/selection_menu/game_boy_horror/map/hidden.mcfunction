@@ -1,0 +1,1 @@
+execute if score #mansion_type Selected matches 1 in luigis_mansion:hidden run function luigis_mansion:selection_menu/game_boy_horror/map/display/hidden/warp

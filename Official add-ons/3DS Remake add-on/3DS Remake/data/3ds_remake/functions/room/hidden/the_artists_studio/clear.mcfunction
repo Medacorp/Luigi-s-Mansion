@@ -1,5 +1,5 @@
 function 3ds_remake:room/hidden/the_artists_studio/turn_on_lights
-execute if entity @a[tag=looking_at_map,limit=1] run function luigis_mansion:items/game_boy_horror/map/display/normal/generate
+tag @a[tag=looking_at_map,nbt={Dimension:"luigis_mansion:normal"},limit=1] add regenerate_map
 tag @e[scores={Room=71},tag=furniture,tag=door] remove blockade
 execute as @a[scores={Room=71},gamemode=!spectator] run function luigis_mansion:other/music/set/light
 scoreboard players set #room Room 71

@@ -1,5 +1,5 @@
 function luigis_mansion:room/normal/mirror_room/turn_on_lights
-execute if entity @a[tag=looking_at_map,limit=1] run function luigis_mansion:items/game_boy_horror/map/display/normal/generate
+tag @a[tag=looking_at_map,nbt={Dimension:"luigis_mansion:normal"},limit=1] add regenerate_map
 execute if data storage luigis_mansion:data current_state.current_data{blackout:1b} run tag @e[scores={Room=21},tag=furniture,tag=door] remove blockade
 function luigis_mansion:room/normal/mirror_room/load/room_clear_chest
 execute as @a[scores={Room=21},gamemode=!spectator] run function luigis_mansion:other/music/set/light

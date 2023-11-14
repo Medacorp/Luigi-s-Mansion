@@ -1,5 +1,5 @@
 function luigis_mansion:room/hidden/bathroom_1/turn_on_lights
-execute if entity @a[tag=looking_at_map,limit=1] run function luigis_mansion:items/game_boy_horror/map/display/hidden/generate
+tag @a[tag=looking_at_map,nbt={Dimension:"luigis_mansion:hidden"},limit=1] add regenerate_map
 execute as @a unless entity @s[scores={MusicGroup=0,MusicType=19}] unless entity @s[scores={MusicGroup=0,MusicType=27}] run function luigis_mansion:other/music/set/game_boy_horror_calling
 scoreboard players set @a GBHCall 3
 scoreboard players set #room Room 16

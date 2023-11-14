@@ -1,0 +1,4 @@
+function luigis_mansion:selection_menu/game_boy_horror/show_caught_portrait_ghosts/entry/neville
+function luigis_mansion:selection_menu/game_boy_horror/show_caught_portrait_ghosts/entry/lydia
+function luigis_mansion:selection_menu/game_boy_horror/show_caught_portrait_ghosts/entry/miss_petunia
+function luigis_mansion:selection_menu/game_boy_horror/show_caught_portrait_ghosts/entry/spooky

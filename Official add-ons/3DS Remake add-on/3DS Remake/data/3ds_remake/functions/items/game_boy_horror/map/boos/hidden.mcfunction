@@ -1,2 +1,0 @@
-execute if score #mansion_type Selected matches 1 if score #mansion_data_index Selected matches 1 run function 3ds_remake:items/game_boy_horror/map/boos/show/3ds_hidden
-execute if score #mansion_type Selected matches 1 if score #mansion_data_index Selected matches 0 run function 3ds_remake:items/game_boy_horror/map/boos/show/gcn_hidden

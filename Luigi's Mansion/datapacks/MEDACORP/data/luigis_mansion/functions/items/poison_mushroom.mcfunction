@@ -1,2 +1,2 @@
-execute as @a[tag=collector,tag=looking_at_map,limit=1] run function luigis_mansion:items/game_boy_horror/map/close
+execute as @a[tag=collector,tag=looking_at_map,limit=1] at @s run function luigis_mansion:selection_menu/game_boy_horror/exit
 execute as @a[tag=collector,tag=!catching_ghost,limit=1] at @s run function luigis_mansion:items/poison_mushroom/hit

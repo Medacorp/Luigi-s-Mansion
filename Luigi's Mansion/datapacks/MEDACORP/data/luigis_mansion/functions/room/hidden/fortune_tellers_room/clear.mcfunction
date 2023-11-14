@@ -1,5 +1,5 @@
 function luigis_mansion:room/hidden/fortune_tellers_room/turn_on_lights
-execute if entity @a[tag=looking_at_map,limit=1] run function luigis_mansion:items/game_boy_horror/map/display/hidden/generate
+tag @a[tag=looking_at_map,nbt={Dimension:"luigis_mansion:hidden"},limit=1] add regenerate_map
 tag @e[scores={Room=20},tag=furniture,tag=door] remove blockade
 tag @e[scores={Room=20},tag=candle_flame,tag=incense] remove lit
 function luigis_mansion:room/hidden/fortune_tellers_room/load/room_clear_chest

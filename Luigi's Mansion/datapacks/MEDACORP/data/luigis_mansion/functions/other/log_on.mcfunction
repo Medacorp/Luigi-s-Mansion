@@ -19,7 +19,6 @@ scoreboard players reset @s[tag=extra_gallery_door] GalleryChoice
 tag @s[tag=extra_gallery_door] remove extra_gallery_door
 execute unless entity @s[scores={FlashlightType=0..2}] run scoreboard players set @s FlashlightType 0
 function luigis_mansion:entities/player/animation/set/none
-scoreboard players set @s SettingsCheck -1
 execute if entity @s[scores={Room=-2}] run function luigis_mansion:room/underground_lab/warp_to
 tag @s remove loaded_chunks
 tag @s remove seen_room_name

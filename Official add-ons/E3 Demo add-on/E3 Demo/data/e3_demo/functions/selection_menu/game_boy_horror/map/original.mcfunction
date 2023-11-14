@@ -1,0 +1,1 @@
+execute if score #mansion_type Selected matches 2 in e3_demo:original run function e3_demo:selection_menu/game_boy_horror/map/display/original/warp

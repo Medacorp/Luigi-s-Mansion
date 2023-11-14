@@ -1,2 +1,2 @@
 execute if entity @s[tag=!looking_at_map,tag=!death_animation,tag=!revive_animation,nbt={Inventory:[{tag:{luigis_mansion:{id:"luigis_mansion:interact"}}}]}] unless entity @s[scores={KnockbackType=1..}] unless entity @s[scores={ScareType=2..}] run function luigis_mansion:items/interact/tick
-execute if entity @s[nbt=!{Inventory:[{tag:{luigis_mansion:{id:"luigis_mansion:interact"}}}]}] run function luigis_mansion:items/interact/give
+execute if entity @s[nbt=!{Inventory:[{tag:{luigis_mansion:{id:"luigis_mansion:interact"}}}]},tag=!using_selection_menu] run function luigis_mansion:items/interact/give

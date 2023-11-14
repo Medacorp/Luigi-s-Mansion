@@ -1,0 +1,1 @@
+execute if entity @s[nbt={Dimension:"luigis_mansion:hidden"},y=41,dy=153] run function luigis_mansion:selection_menu/game_boy_horror/map/move_up_floor/move/hidden

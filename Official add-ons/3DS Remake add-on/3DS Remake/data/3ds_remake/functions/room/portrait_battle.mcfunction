@@ -1,5 +1,5 @@
-execute unless score #freeze_timer Selected matches 1 run gamemode spectator @s[scores={GBHChoice=5}]
-execute unless score #freeze_timer Selected matches 1 run scoreboard players reset @s[scores={GBHChoice=5}] GBHChoice
+execute unless score #freeze_timer Selected matches 1 run gamemode spectator @s[tag=stop_portrait_battle]
+execute unless score #freeze_timer Selected matches 1 run tag @s remove stop_portrait_battle
 execute store result score #temp Time run data get storage luigis_mansion:data current_state.current_data.in_mansion_time
 execute unless entity @s[scores={MusicGroup=0,MusicType=14}] store result bossbar 3ds_remake:portrait_battle value run scoreboard players get #temp Money
 execute unless entity @s[scores={MusicGroup=0,MusicType=14}] run function 3ds_remake:room/gallery/portrait_battle/convert_time

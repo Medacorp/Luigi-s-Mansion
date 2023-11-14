@@ -8784,6 +8784,14 @@
             "predicate": {
                 "damaged": 0,
                 "damage": 0.0136,
+                "custom_model_data": -7
+            },
+            "model": "3ds_remake:item/menu/game_boy_horror/stop_portrait_battle"
+        },
+        {
+            "predicate": {
+                "damaged": 0,
+                "damage": 0.0136,
                 "custom_model_data": -6
             },
             "model": "3ds_remake:item/menu/game_boy_horror/show_settings/flashlight_type_strobulb"
@@ -8810,7 +8818,7 @@
                 "damage": 0.0136,
                 "custom_model_data": -3
             },
-            "model": "e3_demo:item/menu/game_boy_horror/show_items/ghost_coin"
+            "model": "e3_demo:item/menu/game_boy_horror/show_inventory/ghost_coin"
         },
         {
             "predicate": {
@@ -8898,7 +8906,7 @@
                 "damage": 0.0136,
                 "custom_model_data": 8
             },
-            "model": "luigis_mansion:item/menu/game_boy_horror/show_items/gold_coin"
+            "model": "luigis_mansion:item/menu/game_boy_horror/show_inventory/gold_coin"
         },
         {
             "predicate": {
@@ -8906,7 +8914,7 @@
                 "damage": 0.0136,
                 "custom_model_data": 9
             },
-            "model": "luigis_mansion:item/menu/game_boy_horror/show_items/bill"
+            "model": "luigis_mansion:item/menu/game_boy_horror/show_inventory/bill"
         },
         {
             "predicate": {
@@ -8914,7 +8922,7 @@
                 "damage": 0.0136,
                 "custom_model_data": 10
             },
-            "model": "luigis_mansion:item/menu/game_boy_horror/show_items/gold_bar"
+            "model": "luigis_mansion:item/menu/game_boy_horror/show_inventory/gold_bar"
         },
         {
             "predicate": {
@@ -8922,7 +8930,7 @@
                 "damage": 0.0136,
                 "custom_model_data": 11
             },
-            "model": "luigis_mansion:item/menu/game_boy_horror/show_items/blue_sapphire"
+            "model": "luigis_mansion:item/menu/game_boy_horror/show_inventory/blue_sapphire"
         },
         {
             "predicate": {
@@ -8930,7 +8938,7 @@
                 "damage": 0.0136,
                 "custom_model_data": 12
             },
-            "model": "luigis_mansion:item/menu/game_boy_horror/show_items/green_emerald"
+            "model": "luigis_mansion:item/menu/game_boy_horror/show_inventory/green_emerald"
         },
         {
             "predicate": {
@@ -8938,7 +8946,7 @@
                 "damage": 0.0136,
                 "custom_model_data": 13
             },
-            "model": "luigis_mansion:item/menu/game_boy_horror/show_items/red_ruby"
+            "model": "luigis_mansion:item/menu/game_boy_horror/show_inventory/red_ruby"
         },
         {
             "predicate": {
@@ -8946,7 +8954,7 @@
                 "damage": 0.0136,
                 "custom_model_data": 14
             },
-            "model": "luigis_mansion:item/menu/game_boy_horror/show_items/red_diamond"
+            "model": "luigis_mansion:item/menu/game_boy_horror/show_inventory/red_diamond"
         },
         {
             "predicate": {
@@ -8954,7 +8962,7 @@
                 "damage": 0.0136,
                 "custom_model_data": 15
             },
-            "model": "luigis_mansion:item/menu/game_boy_horror/show_items/silver_diamond"
+            "model": "luigis_mansion:item/menu/game_boy_horror/show_inventory/silver_diamond"
         },
         {
             "predicate": {
@@ -8962,7 +8970,7 @@
                 "damage": 0.0136,
                 "custom_model_data": 16
             },
-            "model": "luigis_mansion:item/menu/game_boy_horror/show_items/gold_diamond"
+            "model": "luigis_mansion:item/menu/game_boy_horror/show_inventory/gold_diamond"
         },
         {
             "predicate": {
@@ -8970,7 +8978,7 @@
                 "damage": 0.0136,
                 "custom_model_data": 17
             },
-            "model": "luigis_mansion:item/menu/game_boy_horror/show_items/small_pearl"
+            "model": "luigis_mansion:item/menu/game_boy_horror/show_inventory/small_pearl"
         },
         {
             "predicate": {
@@ -8978,7 +8986,7 @@
                 "damage": 0.0136,
                 "custom_model_data": 18
             },
-            "model": "luigis_mansion:item/menu/game_boy_horror/show_items/medium_pearl"
+            "model": "luigis_mansion:item/menu/game_boy_horror/show_inventory/medium_pearl"
         },
         {
             "predicate": {
@@ -8986,7 +8994,7 @@
                 "damage": 0.0136,
                 "custom_model_data": 19
             },
-            "model": "luigis_mansion:item/menu/game_boy_horror/show_items/big_pearl"
+            "model": "luigis_mansion:item/menu/game_boy_horror/show_inventory/big_pearl"
         },
         {
             "predicate": {
@@ -8994,7 +9002,7 @@
                 "damage": 0.0136,
                 "custom_model_data": 20
             },
-            "model": "luigis_mansion:item/menu/game_boy_horror/show_items/fire_element_medal"
+            "model": "luigis_mansion:item/menu/game_boy_horror/show_inventory/fire_element_medal"
         },
         {
             "predicate": {
@@ -9002,7 +9010,7 @@
                 "damage": 0.0136,
                 "custom_model_data": 21
             },
-            "model": "luigis_mansion:item/menu/game_boy_horror/show_items/water_element_medal"
+            "model": "luigis_mansion:item/menu/game_boy_horror/show_inventory/water_element_medal"
         },
         {
             "predicate": {
@@ -9010,7 +9018,7 @@
                 "damage": 0.0136,
                 "custom_model_data": 22
             },
-            "model": "luigis_mansion:item/menu/game_boy_horror/show_items/ice_element_medal"
+            "model": "luigis_mansion:item/menu/game_boy_horror/show_inventory/ice_element_medal"
         },
         {
             "predicate": {
@@ -9018,7 +9026,7 @@
                 "damage": 0.0136,
                 "custom_model_data": 23
             },
-            "model": "luigis_mansion:item/menu/game_boy_horror/show_items/marios_hat"
+            "model": "luigis_mansion:item/menu/game_boy_horror/show_inventory/marios_hat"
         },
         {
             "predicate": {
@@ -9026,7 +9034,7 @@
                 "damage": 0.0136,
                 "custom_model_data": 24
             },
-            "model": "luigis_mansion:item/menu/game_boy_horror/show_items/marios_letter"
+            "model": "luigis_mansion:item/menu/game_boy_horror/show_inventory/marios_letter"
         },
         {
             "predicate": {
@@ -9034,7 +9042,7 @@
                 "damage": 0.0136,
                 "custom_model_data": 25
             },
-            "model": "luigis_mansion:item/menu/game_boy_horror/show_items/marios_star"
+            "model": "luigis_mansion:item/menu/game_boy_horror/show_inventory/marios_star"
         },
         {
             "predicate": {
@@ -9042,7 +9050,7 @@
                 "damage": 0.0136,
                 "custom_model_data": 26
             },
-            "model": "luigis_mansion:item/menu/game_boy_horror/show_items/marios_glove"
+            "model": "luigis_mansion:item/menu/game_boy_horror/show_inventory/marios_glove"
         },
         {
             "predicate": {
@@ -9050,7 +9058,7 @@
                 "damage": 0.0136,
                 "custom_model_data": 27
             },
-            "model": "luigis_mansion:item/menu/game_boy_horror/show_items/marios_shoe"
+            "model": "luigis_mansion:item/menu/game_boy_horror/show_inventory/marios_shoe"
         },
         {
             "predicate": {
@@ -9058,7 +9066,7 @@
                 "damage": 0.0136,
                 "custom_model_data": 28
             },
-            "model": "luigis_mansion:item/menu/game_boy_horror/show_portrait_ghosts/neville"
+            "model": "luigis_mansion:item/menu/game_boy_horror/show_caught_portrait_ghosts/neville"
         },
         {
             "predicate": {
@@ -9066,7 +9074,7 @@
                 "damage": 0.0136,
                 "custom_model_data": 29
             },
-            "model": "luigis_mansion:item/menu/game_boy_horror/show_portrait_ghosts/lydia"
+            "model": "luigis_mansion:item/menu/game_boy_horror/show_caught_portrait_ghosts/lydia"
         },
         {
             "predicate": {
@@ -9074,7 +9082,7 @@
                 "damage": 0.0136,
                 "custom_model_data": 30
             },
-            "model": "luigis_mansion:item/menu/game_boy_horror/show_portrait_ghosts/chauncey"
+            "model": "luigis_mansion:item/menu/game_boy_horror/show_caught_portrait_ghosts/chauncey"
         },
         {
             "predicate": {
@@ -9082,7 +9090,7 @@
                 "damage": 0.0136,
                 "custom_model_data": 31
             },
-            "model": "luigis_mansion:item/menu/game_boy_horror/show_portrait_ghosts/floating_whirlindas"
+            "model": "luigis_mansion:item/menu/game_boy_horror/show_caught_portrait_ghosts/floating_whirlindas"
         },
         {
             "predicate": {
@@ -9090,7 +9098,7 @@
                 "damage": 0.0136,
                 "custom_model_data": 32
             },
-            "model": "luigis_mansion:item/menu/game_boy_horror/show_portrait_ghosts/shivers"
+            "model": "luigis_mansion:item/menu/game_boy_horror/show_caught_portrait_ghosts/shivers"
         },
         {
             "predicate": {
@@ -9098,7 +9106,7 @@
                 "damage": 0.0136,
                 "custom_model_data": 33
             },
-            "model": "luigis_mansion:item/menu/game_boy_horror/show_portrait_ghosts/melody_pianissima"
+            "model": "luigis_mansion:item/menu/game_boy_horror/show_caught_portrait_ghosts/melody_pianissima"
         },
         {
             "predicate": {
@@ -9106,7 +9114,7 @@
                 "damage": 0.0136,
                 "custom_model_data": 34
             },
-            "model": "luigis_mansion:item/menu/game_boy_horror/show_portrait_ghosts/mr_luggs"
+            "model": "luigis_mansion:item/menu/game_boy_horror/show_caught_portrait_ghosts/mr_luggs"
         },
         {
             "predicate": {
@@ -9114,7 +9122,7 @@
                 "damage": 0.0136,
                 "custom_model_data": 35
             },
-            "model": "luigis_mansion:item/menu/game_boy_horror/show_portrait_ghosts/spooky"
+            "model": "luigis_mansion:item/menu/game_boy_horror/show_caught_portrait_ghosts/spooky"
         },
         {
             "predicate": {
@@ -9122,7 +9130,7 @@
                 "damage": 0.0136,
                 "custom_model_data": 36
             },
-            "model": "luigis_mansion:item/menu/game_boy_horror/show_portrait_ghosts/bogmire"
+            "model": "luigis_mansion:item/menu/game_boy_horror/show_caught_portrait_ghosts/bogmire"
         },
         {
             "predicate": {
@@ -9130,7 +9138,7 @@
                 "damage": 0.0136,
                 "custom_model_data": 37
             },
-            "model": "luigis_mansion:item/menu/game_boy_horror/show_portrait_ghosts/biff_atlas"
+            "model": "luigis_mansion:item/menu/game_boy_horror/show_caught_portrait_ghosts/biff_atlas"
         },
         {
             "predicate": {
@@ -9138,7 +9146,7 @@
                 "damage": 0.0136,
                 "custom_model_data": 38
             },
-            "model": "luigis_mansion:item/menu/game_boy_horror/show_portrait_ghosts/miss_petunia"
+            "model": "luigis_mansion:item/menu/game_boy_horror/show_caught_portrait_ghosts/miss_petunia"
         },
         {
             "predicate": {
@@ -9146,7 +9154,7 @@
                 "damage": 0.0136,
                 "custom_model_data": 39
             },
-            "model": "luigis_mansion:item/menu/game_boy_horror/show_portrait_ghosts/nana"
+            "model": "luigis_mansion:item/menu/game_boy_horror/show_caught_portrait_ghosts/nana"
         },
         {
             "predicate": {
@@ -9154,7 +9162,7 @@
                 "damage": 0.0136,
                 "custom_model_data": 40
             },
-            "model": "luigis_mansion:item/menu/game_boy_horror/show_portrait_ghosts/slim_bankshot"
+            "model": "luigis_mansion:item/menu/game_boy_horror/show_caught_portrait_ghosts/slim_bankshot"
         },
         {
             "predicate": {
@@ -9162,7 +9170,7 @@
                 "damage": 0.0136,
                 "custom_model_data": 41
             },
-            "model": "luigis_mansion:item/menu/game_boy_horror/show_portrait_ghosts/henry_and_orville"
+            "model": "luigis_mansion:item/menu/game_boy_horror/show_caught_portrait_ghosts/henry_and_orville"
         },
         {
             "predicate": {
@@ -9170,7 +9178,7 @@
                 "damage": 0.0136,
                 "custom_model_data": 42
             },
-            "model": "luigis_mansion:item/menu/game_boy_horror/show_portrait_ghosts/madame_clairvoya"
+            "model": "luigis_mansion:item/menu/game_boy_horror/show_caught_portrait_ghosts/madame_clairvoya"
         },
         {
             "predicate": {
@@ -9178,7 +9186,7 @@
                 "damage": 0.0136,
                 "custom_model_data": 43
             },
-            "model": "luigis_mansion:item/menu/game_boy_horror/show_portrait_ghosts/boolossus"
+            "model": "luigis_mansion:item/menu/game_boy_horror/show_caught_portrait_ghosts/boolossus"
         },
         {
             "predicate": {
@@ -9186,7 +9194,7 @@
                 "damage": 0.0136,
                 "custom_model_data": 44
             },
-            "model": "luigis_mansion:item/menu/game_boy_horror/show_portrait_ghosts/uncle_grimmly"
+            "model": "luigis_mansion:item/menu/game_boy_horror/show_caught_portrait_ghosts/uncle_grimmly"
         },
         {
             "predicate": {
@@ -9194,7 +9202,7 @@
                 "damage": 0.0136,
                 "custom_model_data": 45
             },
-            "model": "luigis_mansion:item/menu/game_boy_horror/show_portrait_ghosts/clockwork_soldiers"
+            "model": "luigis_mansion:item/menu/game_boy_horror/show_caught_portrait_ghosts/clockwork_soldiers"
         },
         {
             "predicate": {
@@ -9202,7 +9210,7 @@
                 "damage": 0.0136,
                 "custom_model_data": 46
             },
-            "model": "luigis_mansion:item/menu/game_boy_horror/show_portrait_ghosts/jarvis"
+            "model": "luigis_mansion:item/menu/game_boy_horror/show_caught_portrait_ghosts/jarvis"
         },
         {
             "predicate": {
@@ -9210,7 +9218,7 @@
                 "damage": 0.0136,
                 "custom_model_data": 47
             },
-            "model": "luigis_mansion:item/menu/game_boy_horror/show_portrait_ghosts/sir_weston"
+            "model": "luigis_mansion:item/menu/game_boy_horror/show_caught_portrait_ghosts/sir_weston"
         },
         {
             "predicate": {
@@ -9218,7 +9226,7 @@
                 "damage": 0.0136,
                 "custom_model_data": 48
             },
-            "model": "luigis_mansion:item/menu/game_boy_horror/show_portrait_ghosts/sue_pea"
+            "model": "luigis_mansion:item/menu/game_boy_horror/show_caught_portrait_ghosts/sue_pea"
         },
         {
             "predicate": {
@@ -9226,7 +9234,7 @@
                 "damage": 0.0136,
                 "custom_model_data": 49
             },
-            "model": "luigis_mansion:item/menu/game_boy_horror/show_portrait_ghosts/vincent_van_gore"
+            "model": "luigis_mansion:item/menu/game_boy_horror/show_caught_portrait_ghosts/vincent_van_gore"
         },
         {
             "predicate": {
@@ -9234,7 +9242,7 @@
                 "damage": 0.0136,
                 "custom_model_data": 50
             },
-            "model": "luigis_mansion:item/menu/game_boy_horror/show_portrait_ghosts"
+            "model": "luigis_mansion:item/menu/game_boy_horror/show_caught_portrait_ghosts"
         },
         {
             "predicate": {
@@ -9242,7 +9250,7 @@
                 "damage": 0.0136,
                 "custom_model_data": 51
             },
-            "model": "luigis_mansion:item/menu/game_boy_horror/show_items"
+            "model": "luigis_mansion:item/menu/game_boy_horror/show_inventory"
         },
         {
             "predicate": {
@@ -9250,7 +9258,7 @@
                 "damage": 0.0136,
                 "custom_model_data": 52
             },
-            "model": "luigis_mansion:item/menu/game_boy_horror/open_map"
+            "model": "luigis_mansion:item/menu/game_boy_horror/map"
         },
         {
             "predicate": {
@@ -9315,6 +9323,158 @@
                 "custom_model_data": 60
             },
             "model": "luigis_mansion:item/menu/game_boy_horror/show_settings/open_map_when_collecting_key_on"
+        },
+        {
+            "predicate": {
+                "damaged": 0,
+                "damage": 0.0136,
+                "custom_model_data": 61
+            },
+            "model": "luigis_mansion:item/menu/game_boy_horror/show_settings"
+        },
+        {
+            "predicate": {
+                "damaged": 0,
+                "damage": 0.0136,
+                "custom_model_data": 62
+            },
+            "model": "luigis_mansion:item/menu/game_boy_horror/map/move_up_floor"
+        },
+        {
+            "predicate": {
+                "damaged": 0,
+                "damage": 0.0136,
+                "custom_model_data": 63
+            },
+            "model": "luigis_mansion:item/menu/game_boy_horror/map/move_down_floor"
+        },
+        {
+            "predicate": {
+                "damaged": 0,
+                "damage": 0.0136,
+                "custom_model_data": 64
+            },
+            "model": "luigis_mansion:item/menu/game_boy_horror/map/zoom"
+        },
+        {
+            "predicate": {
+                "damaged": 0,
+                "damage": 0.0136,
+                "custom_model_data": 65
+            },
+            "model": "luigis_mansion:item/menu/game_boy_horror/show_settings/global_difficulty_peaceful"
+        },
+        {
+            "predicate": {
+                "damaged": 0,
+                "damage": 0.0136,
+                "custom_model_data": 66
+            },
+            "model": "luigis_mansion:item/menu/game_boy_horror/show_settings/global_difficulty_easy"
+        },
+        {
+            "predicate": {
+                "damaged": 0,
+                "damage": 0.0136,
+                "custom_model_data": 67
+            },
+            "model": "luigis_mansion:item/menu/game_boy_horror/show_settings/global_difficulty_normal"
+        },
+        {
+            "predicate": {
+                "damaged": 0,
+                "damage": 0.0136,
+                "custom_model_data": 68
+            },
+            "model": "luigis_mansion:item/menu/game_boy_horror/show_settings/global_difficulty_hard"
+        },
+        {
+            "predicate": {
+                "damaged": 0,
+                "damage": 0.0136,
+                "custom_model_data": 69
+            },
+            "model": "luigis_mansion:item/menu/game_boy_horror/show_settings/game"
+        },
+        {
+            "predicate": {
+                "damaged": 0,
+                "damage": 0.0136,
+                "custom_model_data": 70
+            },
+            "model": "luigis_mansion:item/menu/game_boy_horror/show_settings/map"
+        },
+        {
+            "predicate": {
+                "damaged": 0,
+                "damage": 0.0136,
+                "custom_model_data": 71
+            },
+            "model": "luigis_mansion:item/menu/game_boy_horror/show_settings/brightness"
+        },
+        {
+            "predicate": {
+                "damaged": 0,
+                "damage": 0.0136,
+                "custom_model_data": 72
+            },
+            "model": "luigis_mansion:item/menu/game_boy_horror/show_settings/music"
+        },
+        {
+            "predicate": {
+                "damaged": 0,
+                "damage": 0.0136,
+                "custom_model_data": 73
+            },
+            "model": "luigis_mansion:item/menu/game_boy_horror/show_settings/sounds"
+        },
+        {
+            "predicate": {
+                "damaged": 0,
+                "damage": 0.0136,
+                "custom_model_data": 74
+            },
+            "model": "luigis_mansion:item/menu/game_boy_horror/show_settings/gui_scale"
+        },
+        {
+            "predicate": {
+                "damaged": 0,
+                "damage": 0.0136,
+                "custom_model_data": 75
+            },
+            "model": "luigis_mansion:item/menu/game_boy_horror/show_settings/debug"
+        },
+        {
+            "predicate": {
+                "damaged": 0,
+                "damage": 0.0136,
+                "custom_model_data": 76
+            },
+            "model": "luigis_mansion:item/menu/game_boy_horror/show_settings/debug_off"
+        },
+        {
+            "predicate": {
+                "damaged": 0,
+                "damage": 0.0136,
+                "custom_model_data": 77
+            },
+            "model": "luigis_mansion:item/menu/game_boy_horror/show_settings/debug_on"
+        },
+        {
+            "predicate": {
+                "damaged": 0,
+                "damage": 0.0136,
+                "custom_model_data": 78
+            },
+            "model": "luigis_mansion:item/menu/game_boy_horror/show_settings/debug_on_2"
+        },
+        {
+            "predicate": {
+                "damaged": 0,
+                "damage": 0.0136,
+                "custom_model_data": 79
+            },
+            "model": "luigis_mansion:item/menu/game_boy_horror/show_settings/debug_toggle"
         },
         {
             "predicate": {

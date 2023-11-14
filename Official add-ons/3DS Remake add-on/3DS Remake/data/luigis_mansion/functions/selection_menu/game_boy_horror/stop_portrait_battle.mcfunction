@@ -1,0 +1,2 @@
+tag @s add stop_portrait_battle
+function luigis_mansion:selection_menu/game_boy_horror/exit

@@ -1,1 +1,0 @@
-execute if data storage luigis_mansion:data current_state.current_data.obtained_items{marios_star:1b} run tellraw @s {"translate":"chat.type.text","with":[{"translate":"luigis_mansion:item.game_boy_horror","color":"green"},{"translate":"luigis_mansion:item.marios_star"}]}

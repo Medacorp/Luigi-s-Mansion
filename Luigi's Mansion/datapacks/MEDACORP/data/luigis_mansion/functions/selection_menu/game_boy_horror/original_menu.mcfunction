@@ -1,0 +1,13 @@
+execute unless entity @s[scores={WarpTime=1..}] run tag @s remove scanning
+execute unless entity @s[scores={WarpTime=1..}] run tag @s add game_boy_horror_menu
+
+execute unless entity @s[scores={WarpTime=1..}] run data modify storage luigis_mansion:data menu_options set value {options:[]}
+execute unless entity @s[scores={WarpTime=1..}] run data modify storage luigis_mansion:data menu_options.options append value {id:"minecraft:diamond_pickaxe",Count:1b,tag:{Damage:22,Unbreakable:1b,CustomModelData:52,HideFlags:63,AttributeModifiers:[],display:{Name:'{"italic":false,"color":"white","translate":"luigis_mansion:item.menu.game_boy_horror.map"}'},luigis_mansion:{option:{id:"map/open"}}}}
+execute unless entity @s[scores={WarpTime=1..}] run data modify storage luigis_mansion:data menu_options.options append value {id:"minecraft:diamond_pickaxe",Count:1b,tag:{Damage:22,Unbreakable:1b,CustomModelData:53,HideFlags:63,AttributeModifiers:[],display:{Name:'{"italic":false,"color":"white","translate":"luigis_mansion:item.menu.game_boy_horror.scan_furniture"}'},luigis_mansion:{option:{id:"scan_furniture"}}}}
+execute unless entity @s[scores={WarpTime=1..}] run data modify storage luigis_mansion:data menu_options.options append value {id:"minecraft:diamond_pickaxe",Count:1b,tag:{Damage:22,Unbreakable:1b,CustomModelData:51,HideFlags:63,AttributeModifiers:[],display:{Name:'{"italic":false,"color":"white","translate":"luigis_mansion:item.menu.game_boy_horror.show_inventory"}'},luigis_mansion:{option:{id:"show_inventory"}}}}
+execute unless entity @s[scores={WarpTime=1..}] run data modify storage luigis_mansion:data menu_options.options append value {id:"minecraft:diamond_pickaxe",Count:1b,tag:{Damage:22,Unbreakable:1b,CustomModelData:50,HideFlags:63,AttributeModifiers:[],display:{Name:'{"italic":false,"color":"white","translate":"luigis_mansion:item.menu.game_boy_horror.show_caught_portrait_ghosts"}'},luigis_mansion:{option:{id:"show_caught_portrait_ghosts"}}}}
+execute unless entity @s[scores={WarpTime=1..}] run data modify storage luigis_mansion:data menu_options.options append value {id:"minecraft:diamond_pickaxe",Count:1b,tag:{Damage:22,Unbreakable:1b,CustomModelData:61,HideFlags:63,AttributeModifiers:[],display:{Name:'{"italic":false,"color":"white","translate":"luigis_mansion:item.menu.game_boy_horror.show_settings"}'},luigis_mansion:{option:{id:"show_settings"}}}}
+
+execute unless entity @s[scores={WarpTime=1..}] run function luigis_mansion:entities/player/animation/set/game_boy_horror
+
+execute unless entity @s[scores={WarpTime=1..}] run function luigis_mansion:entities/player/selection_menu/load

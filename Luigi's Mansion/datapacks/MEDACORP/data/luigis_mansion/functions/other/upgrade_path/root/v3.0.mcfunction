@@ -44,6 +44,8 @@ scoreboard objectives remove EGaddTrainChoice
 scoreboard objectives remove EntitySizeW
 scoreboard objectives remove EntitySizeH
 scoreboard objectives remove ForcedDamage
+scoreboard objectives remove GBHChoice
+scoreboard objectives remove GBHDoubleUse
 scoreboard objectives remove GhostCaught
 scoreboard objectives remove HomeRot
 scoreboard objectives remove HomeRotX
@@ -61,6 +63,7 @@ scoreboard objectives remove PunchingBag
 scoreboard objectives remove RotationDif
 scoreboard objectives remove RotX
 scoreboard objectives remove RotY
+scoreboard objectives remove SettingsCheck
 scoreboard objectives remove TrainingOption
 scoreboard objectives remove Wool
 scoreboard objectives remove YellTime

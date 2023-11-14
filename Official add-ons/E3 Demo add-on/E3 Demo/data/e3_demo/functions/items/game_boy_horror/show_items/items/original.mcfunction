@@ -1,1 +1,0 @@
-function e3_demo:items/game_boy_horror/show_items/items/item/ghost_coin

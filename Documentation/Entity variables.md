@@ -5,8 +5,8 @@ entity: {
     //New data
     scan_message:{ //The message spoken when scanning this Toad, E. Gadd, portrait ghost or fake door.
         sender:"me", //Who speaks when scanning this entity. Either "scanner" or "me". If set to scanner, and the scan is from Gooigi, sends the usual "......" message instead.
-        message:'{"translate":"..."}', //The message to send.
-        plural_message:'{"translate":"..."}' //The message used when more than 1 player is present; only used is sender is set to "me".
+        message:..., //See furniture variable scan_message; "spawn_ghost" not accepted.
+        plural_message:'{"translate":"..."}' //The message used when more than 1 player is present; only used if sender is set to "me" and message is not set to "" or "warp".
     }, 
     female_scan_message:{}, //The message spoken when scanning the female floating whirlinda, same format as above. Only applies to the floating whirlindas (obviously).
     can_talk_to:1b, //Whether Toad, E. Gadd or this portrait ghost can be talked to. Default = 1b for non-portrait ghosts and 0b for portrait ghosts

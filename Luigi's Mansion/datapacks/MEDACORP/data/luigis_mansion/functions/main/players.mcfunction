@@ -98,10 +98,11 @@ scoreboard players reset @s LightX
 scoreboard players reset @s LightY
 scoreboard players reset @s LightZ
 
-execute unless entity @s[scores={SettingsCheck=0}] run function luigis_mansion:settings/menu
-
 tag @s add me
 execute as @a[distance=..0.4,tag=!me,tag=!spectator,tag=!pull_locked_door,tag=!push_locked_door,tag=!pull_unlock_door,tag=!push_unlock_door,tag=!pull_open_door,tag=!push_unlock_door,limit=1] run function luigis_mansion:entities/player/collide
 tag @s remove me
+#to remove
+tag @s remove mirror_set_by_furniture_entity
+#/to remove
 tag @s[tag=camera] add spectator
-data remove storage dark_moon:data selected_option
+data remove storage luigis_mansion:data selected_option

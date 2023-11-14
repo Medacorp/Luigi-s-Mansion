@@ -1,5 +1,5 @@
 function 3ds_remake:room/hidden/the_twins_room/turn_on_lights
-execute if entity @a[tag=looking_at_map,limit=1] run function luigis_mansion:items/game_boy_horror/map/display/normal/generate
+tag @a[tag=looking_at_map,nbt={Dimension:"luigis_mansion:normal"},limit=1] add regenerate_map
 tag @e[scores={Room=49},tag=furniture,tag=door] remove blockade
 function 3ds_remake:room/hidden/the_twins_room/load/room_clear_chest
 execute as @a[scores={Room=49},gamemode=!spectator] run function luigis_mansion:other/music/set/light

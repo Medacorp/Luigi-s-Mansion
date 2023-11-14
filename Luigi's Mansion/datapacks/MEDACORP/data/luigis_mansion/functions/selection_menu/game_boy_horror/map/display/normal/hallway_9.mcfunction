@@ -1,0 +1,2 @@
+execute if data storage luigis_mansion:data current_state.current_data.rooms.hallway_9{seen:0b} run function luigis_mansion:selection_menu/game_boy_horror/map/display/normal/hallway_9/unseen
+execute if data storage luigis_mansion:data current_state.current_data.rooms.hallway_9{seen:1b} run function luigis_mansion:selection_menu/game_boy_horror/map/display/normal/hallway_9/seen

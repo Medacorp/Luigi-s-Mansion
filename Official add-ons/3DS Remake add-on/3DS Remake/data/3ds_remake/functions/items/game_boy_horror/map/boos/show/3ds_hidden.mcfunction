@@ -1,1 +1,0 @@
-function 3ds_remake:items/game_boy_horror/map/boos/show/normal

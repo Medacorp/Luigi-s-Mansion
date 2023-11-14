@@ -1,1 +1,0 @@
-execute if entity @s[nbt={Dimension:"e3_demo:original"}] run function e3_demo:items/game_boy_horror/map/move_floor/original/move

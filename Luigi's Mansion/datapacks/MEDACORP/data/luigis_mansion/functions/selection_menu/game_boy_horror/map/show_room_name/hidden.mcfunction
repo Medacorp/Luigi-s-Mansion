@@ -1,0 +1,1 @@
+function luigis_mansion:selection_menu/game_boy_horror/map/show_room_name/normal

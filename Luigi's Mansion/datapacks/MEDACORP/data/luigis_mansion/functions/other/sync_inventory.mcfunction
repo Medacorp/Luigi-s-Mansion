@@ -71,3 +71,4 @@ execute in minecraft:overworld run setblock 27 0 0 minecraft:bedrock
 execute in minecraft:overworld run setblock 27 1 0 minecraft:stone
 execute in minecraft:overworld run setblock 27 0 1 minecraft:bedrock
 execute in minecraft:overworld run setblock 28 0 0 minecraft:bedrock
+tag @s remove modifying_inventory

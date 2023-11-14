@@ -1,1 +1,1 @@
-$execute if entity @s[tag=dialog_menu] run function luigis_mansion:selection_menu/dialog/$(id)
+$execute if entity @s[tag=dialog_menu] run function $(namespace):selection_menu/dialog/$(id)

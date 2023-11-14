@@ -1,0 +1,3 @@
+execute if data storage luigis_mansion:data current_state.current_data.rooms.bath_room{seen:0b} run function e3_demo:selection_menu/game_boy_horror/map/display/original/bath_room/unseen
+execute if data storage luigis_mansion:data current_state.current_data.rooms.bath_room{seen:1b,cleared:0b} run function e3_demo:selection_menu/game_boy_horror/map/display/original/bath_room/seen
+execute if data storage luigis_mansion:data current_state.current_data.rooms.bath_room{cleared:1b} run function e3_demo:selection_menu/game_boy_horror/map/display/original/bath_room/cleared

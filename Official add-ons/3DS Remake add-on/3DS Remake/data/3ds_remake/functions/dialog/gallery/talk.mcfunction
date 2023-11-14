@@ -17,7 +17,7 @@ execute if entity @s[scores={Dialog=864}] if score #players Totals matches 2.. r
 execute if entity @s[scores={Dialog=864}] run playsound luigis_mansion:entity.e_gadd.talk.oui_longlaugh neutral @a[tag=same_room] ~ ~ ~ 1
 execute if entity @s[scores={Dialog=1086}] run data modify storage luigis_mansion:data rooms.gallery merge value {cleared:1b}
 execute if entity @s[scores={Dialog=1086}] run advancement grant @a until luigis_mansion:lab/gallery
-execute if entity @s[scores={Dialog=1086}] if entity @a[tag=looking_at_map,limit=1] run function luigis_mansion:items/game_boy_horror/map/display/lab/generate
+execute if entity @s[scores={Dialog=1086}] run tag @a[tag=looking_at_map,nbt={Dimension:"minecraft:overworld"},limit=1] add regenerate_map
 execute if entity @s[scores={Dialog=1086}] as @a[tag=same_room,tag=!spectator,tag=!looking_at_map] run function luigis_mansion:entities/player/animation/set/none
 tag @s[scores={Dialog=1086}] remove talk
 scoreboard players set @s[tag=!talk] Dialog 0
