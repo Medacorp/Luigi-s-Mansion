@@ -1,0 +1,3 @@
+data modify storage luigis_mansion:data furniture set value {sound:{namespace:"luigis_mansion",id:"heavy_generic"},door:{model:{namespace:"luigis_mansion",id:"mansion/wooden"},frame:{namespace:"luigis_mansion",id:"exposed_bricks"},other_end:{x:699,y:2,z:62}}}
+execute if data storage luigis_mansion:data current_state.current_data{blackout:1b} run data modify storage luigis_mansion:data furniture.door.key set value "breaker_room"
+execute positioned 713 2 62 rotated -90 0 run function luigis_mansion:spawn_furniture/door

@@ -1,8 +1,11 @@
 {
 	"values": [
 	    "luigis_mansion:room/gallery/load/set_loaded",
-	    "luigis_mansion:room/gallery/load/spawn_e_gadd",
-	    "luigis_mansion:room/gallery/load/doors",
+	    "luigis_mansion:room/gallery/load/door_1",
+	    "luigis_mansion:room/gallery/load/door_2",
+	    "luigis_mansion:room/gallery/load/e_gadd",
+	    "luigis_mansion:room/gallery/load/extra_gallery_door",
+	    "luigis_mansion:room/gallery/load/ghost_portrificationizer_room_door",
 	    "luigis_mansion:room/gallery/load/painting_1",
 	    "luigis_mansion:room/gallery/load/painting_2",
 	    "luigis_mansion:room/gallery/load/painting_3",

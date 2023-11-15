@@ -2,9 +2,10 @@
 	"values": [
 	    "3ds_remake:room/hidden/hallway_19/load/set_loaded",
         "3ds_remake:room/hidden/hallway_19/load/lights",
-        "3ds_remake:room/hidden/hallway_19/load/doors",
+        "3ds_remake:room/hidden/hallway_19/load/armory_door",
         "3ds_remake:room/hidden/hallway_19/load/cobweb_1",
         "3ds_remake:room/hidden/hallway_19/load/cobweb_2",
-        "3ds_remake:room/hidden/hallway_19/load/lamp"
+        "3ds_remake:room/hidden/hallway_19/load/lamp",
+        "3ds_remake:room/hidden/hallway_19/load/telephone_room_door"
 	]
 }

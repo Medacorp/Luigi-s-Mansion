@@ -1,7 +1,0 @@
-data modify storage luigis_mansion:data furniture set value {sound:{namespace:"luigis_mansion",id:"heavy_generic"},door:{model:{namespace:"luigis_mansion",id:"mansion/1"},frame:{namespace:"luigis_mansion",id:"blue_stones"},key:"laundry_room",other_end:{x:716,y:11,z:-9}}}
-execute positioned 716 11 -43 rotated -180 0 run function luigis_mansion:spawn_furniture/door
-data modify storage luigis_mansion:data furniture set value {sound:{namespace:"luigis_mansion",id:"heavy_generic"},door:{model:{namespace:"luigis_mansion",id:"mansion/1"},frame:{namespace:"luigis_mansion",id:"blue_stones"},left_hinge:1b,push:1b,other_end:{x:738,y:11,z:-46}}}
-execute positioned 719 11 -50 rotated 90 0 run function luigis_mansion:spawn_furniture/door
-
-data modify storage luigis_mansion:data entity set value {door:{model:{namespace:"luigis_mansion",id:"mansion/3"},frame:{namespace:"luigis_mansion",id:"blue_stones"}}}
-execute positioned 713 11 -50 rotated -90 0 run function luigis_mansion:spawn_entities/fake_door

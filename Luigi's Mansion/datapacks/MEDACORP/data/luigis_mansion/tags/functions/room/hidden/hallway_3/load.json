@@ -2,7 +2,12 @@
 	"values": [
 	    "luigis_mansion:room/hidden/hallway_3/load/set_loaded",
         "luigis_mansion:room/hidden/hallway_3/load/lights",
-        "luigis_mansion:room/hidden/hallway_3/load/doors",
+        "luigis_mansion:room/hidden/hallway_3/load/dining_room_blackout_fake_door",
+        "luigis_mansion:room/hidden/hallway_3/load/dining_room_fake_door",
+        "luigis_mansion:room/hidden/hallway_3/load/fortune_tellers_room_door",
+        "luigis_mansion:room/hidden/hallway_3/load/foyer_door",
+        "luigis_mansion:room/hidden/hallway_3/load/hallway_7_door",
+        "luigis_mansion:room/hidden/hallway_3/load/laundry_room_door",
         "luigis_mansion:room/hidden/hallway_3/load/ringed_vase_1",
         "luigis_mansion:room/hidden/hallway_3/load/ringed_vase_2",
         "luigis_mansion:room/hidden/hallway_3/load/ringed_vase_3",

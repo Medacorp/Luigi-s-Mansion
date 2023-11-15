@@ -1,0 +1,1 @@
+execute positioned 704.0 11 -60.0 run function luigis_mansion:spawn_furniture/ball_floor

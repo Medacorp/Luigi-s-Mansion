@@ -1,7 +1,7 @@
 {
 	"values": [
 	    "luigis_mansion:room/training_room/load/set_loaded",
-	    "luigis_mansion:room/training_room/load/spawn_e_gadd",
-	    "luigis_mansion:room/training_room/load/doors"
+	    "luigis_mansion:room/training_room/load/e_gadd",
+	    "luigis_mansion:room/training_room/load/underground_lab_door"
 	]
 }

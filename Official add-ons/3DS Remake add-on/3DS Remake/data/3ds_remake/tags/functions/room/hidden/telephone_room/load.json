@@ -2,9 +2,10 @@
 	"values": [
 	    "3ds_remake:room/hidden/telephone_room/load/set_loaded",
         "3ds_remake:room/hidden/telephone_room/load/lights",
-        "3ds_remake:room/hidden/telephone_room/load/doors",
+        "3ds_remake:room/hidden/telephone_room/load/clockwork_room_door",
         "3ds_remake:room/hidden/telephone_room/load/cobweb_1",
         "3ds_remake:room/hidden/telephone_room/load/cobweb_2",
+        "3ds_remake:room/hidden/telephone_room/load/hallway_19_door",
         "3ds_remake:room/hidden/telephone_room/load/room_clear_chest",
         "3ds_remake:room/hidden/telephone_room/load/vacuumable_2",
         "3ds_remake:room/hidden/telephone_room/load/wooden_chest_1",

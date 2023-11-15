@@ -2,11 +2,11 @@
 	"values": [
 	    "luigis_mansion:room/normal/sealed_room/load/set_loaded",
         "luigis_mansion:room/normal/sealed_room/load/lights",
-        "luigis_mansion:room/normal/sealed_room/load/doors",
         "luigis_mansion:room/normal/sealed_room/load/golden_triple_candelabra_1",
         "luigis_mansion:room/normal/sealed_room/load/golden_triple_candelabra_2",
         "luigis_mansion:room/normal/sealed_room/load/golden_triple_candelabra_3",
         "luigis_mansion:room/normal/sealed_room/load/golden_triple_candelabra_4",
+        "luigis_mansion:room/normal/sealed_room/load/hallway_12_door",
         "luigis_mansion:room/normal/sealed_room/load/painting_1",
         "luigis_mansion:room/normal/sealed_room/load/painting_2",
         "luigis_mansion:room/normal/sealed_room/load/painting_3",

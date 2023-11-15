@@ -2,7 +2,7 @@
 	"values": [
 	    "luigis_mansion:room/normal/tea_room/load/set_loaded",
         "luigis_mansion:room/normal/tea_room/load/lights",
-        "luigis_mansion:room/normal/tea_room/load/doors",
+        "luigis_mansion:room/normal/tea_room/load/hallway_8_door",
         "luigis_mansion:room/normal/tea_room/load/haunted_objects",
         "luigis_mansion:room/normal/tea_room/load/ice",
         "luigis_mansion:room/normal/tea_room/load/ice_bucket",

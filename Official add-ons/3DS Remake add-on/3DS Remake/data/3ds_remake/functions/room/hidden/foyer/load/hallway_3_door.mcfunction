@@ -1,0 +1,6 @@
+data modify storage luigis_mansion:data furniture set value {sound:{namespace:"luigis_mansion",id:"heavy_generic"},door:{model:{namespace:"luigis_mansion",id:"heart"},frame:{namespace:"luigis_mansion",id:"double/windowed"},left_hinge:1b,push:1b,key:"hallway_3",other_end:{x:719,y:11,z:-6}},scan_message:'{"translate":"3ds_remake:message.player.scan_furniture.10"}'}
+execute if data storage luigis_mansion:data current_state.current_data{obtained_keys:["hallway_3"]} run data modify storage luigis_mansion:data furniture.scan_message set value '{"translate":"luigis_mansion:message.player.scan_furniture.55"}'
+execute positioned 743 11 8 rotated -90 0 run function luigis_mansion:spawn_furniture/door
+data modify storage luigis_mansion:data furniture set value {sound:{namespace:"luigis_mansion",id:"heavy_generic"},door:{model:{namespace:"luigis_mansion",id:"heart"},frame:{namespace:"luigis_mansion",id:"double/windowed"},key:"hallway_3",other_end:{x:719,y:11,z:-5}},scan_message:'{"translate":"3ds_remake:message.player.scan_furniture.10"}'}
+execute if data storage luigis_mansion:data current_state.current_data{obtained_keys:["hallway_3"]} run data modify storage luigis_mansion:data furniture.scan_message set value '{"translate":"luigis_mansion:message.player.scan_furniture.55"}'
+execute positioned 743 11 9 rotated -90 0 run function luigis_mansion:spawn_furniture/door

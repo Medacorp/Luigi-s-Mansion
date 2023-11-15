@@ -2,16 +2,16 @@
 	"values": [
 	    "3ds_remake:room/hidden/study/load/set_loaded",
         "3ds_remake:room/hidden/study/load/lights",
-        "3ds_remake:room/hidden/study/load/doors",
+        "3ds_remake:room/hidden/study/load/cobweb_1",
+        "3ds_remake:room/hidden/study/load/cobweb_2",
         "3ds_remake:room/hidden/study/load/fire",
+        "3ds_remake:room/hidden/study/load/hallway_2_door",
         "3ds_remake:room/hidden/study/load/painting_1",
         "3ds_remake:room/hidden/study/load/painting_2",
         "3ds_remake:room/hidden/study/load/painting_3",
         "3ds_remake:room/hidden/study/load/painting_4",
         "3ds_remake:room/hidden/study/load/painting_5",
         "3ds_remake:room/hidden/study/load/rocking_chair",
-        "3ds_remake:room/hidden/study/load/room_clear_chest",
-        "3ds_remake:room/hidden/study/load/cobweb_1",
-        "3ds_remake:room/hidden/study/load/cobweb_2"
+        "3ds_remake:room/hidden/study/load/room_clear_chest"
 	]
 }

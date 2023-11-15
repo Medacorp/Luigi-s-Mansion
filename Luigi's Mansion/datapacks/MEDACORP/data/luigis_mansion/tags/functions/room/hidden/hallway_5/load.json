@@ -2,15 +2,18 @@
 	"values": [
 	    "luigis_mansion:room/hidden/hallway_5/load/set_loaded",
         "luigis_mansion:room/hidden/hallway_5/load/lights",
-        "luigis_mansion:room/hidden/hallway_5/load/doors",
-        "luigis_mansion:room/hidden/hallway_5/load/spawn_shivers",
+        "luigis_mansion:room/hidden/hallway_5/load/billiards_room_door",
+        "luigis_mansion:room/hidden/hallway_5/load/conservatory_door",
+        "luigis_mansion:room/hidden/hallway_5/load/hallway_8_door",
         "luigis_mansion:room/hidden/hallway_5/load/painting",
         "luigis_mansion:room/hidden/hallway_5/load/ringed_vase_1",
         "luigis_mansion:room/hidden/hallway_5/load/ringed_vase_2",
         "luigis_mansion:room/hidden/hallway_5/load/ringed_vase_3",
+        "luigis_mansion:room/hidden/hallway_5/load/shivers",
         "luigis_mansion:room/hidden/hallway_5/load/simple_wall_candelabra_1",
         "luigis_mansion:room/hidden/hallway_5/load/simple_wall_candelabra_2",
         "luigis_mansion:room/hidden/hallway_5/load/simple_wall_candelabra_3",
-        "luigis_mansion:room/hidden/hallway_5/load/simple_wall_candelabra_4"
+        "luigis_mansion:room/hidden/hallway_5/load/simple_wall_candelabra_4",
+        "luigis_mansion:room/hidden/hallway_5/load/washroom_1_door"
 	]
 }

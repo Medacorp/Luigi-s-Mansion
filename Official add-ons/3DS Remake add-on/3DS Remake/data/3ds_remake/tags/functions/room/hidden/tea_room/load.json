@@ -2,7 +2,7 @@
 	"values": [
 	    "3ds_remake:room/hidden/tea_room/load/set_loaded",
         "3ds_remake:room/hidden/tea_room/load/lights",
-        "3ds_remake:room/hidden/tea_room/load/doors",
+        "3ds_remake:room/hidden/tea_room/load/hallway_8_door",
         "3ds_remake:room/hidden/tea_room/load/haunted_objects",
 		"3ds_remake:room/hidden/tea_room/load/chair_2",
 		"3ds_remake:room/hidden/tea_room/load/chair_3",

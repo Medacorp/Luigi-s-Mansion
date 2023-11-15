@@ -4,7 +4,7 @@
 	    "3ds_remake:room/hidden/observatory/load/destroy",
 	    "3ds_remake:room/hidden/observatory/load/path",
         "3ds_remake:room/hidden/observatory/load/lights",
-        "3ds_remake:room/hidden/observatory/load/doors",
+        "3ds_remake:room/hidden/observatory/load/astral_hall_door",
         "3ds_remake:room/hidden/observatory/load/room_clear_loot_dropper"
 	]
 }

@@ -1,8 +1,8 @@
 {
 	"values": [
 	    "luigis_mansion:room/hidden/hallway_9/load/set_loaded",
-        "luigis_mansion:room/hidden/hallway_9/load/doors",
         "luigis_mansion:room/hidden/hallway_9/load/lights",
+        "luigis_mansion:room/hidden/hallway_9/load/hallway_8_door",
         "luigis_mansion:room/hidden/hallway_9/load/ringed_vase_1",
         "luigis_mansion:room/hidden/hallway_9/load/ringed_vase_2",
         "luigis_mansion:room/hidden/hallway_9/load/ringed_vase_3",
@@ -10,6 +10,7 @@
         "luigis_mansion:room/hidden/hallway_9/load/simple_wall_candelabra_1",
         "luigis_mansion:room/hidden/hallway_9/load/simple_wall_candelabra_2",
         "luigis_mansion:room/hidden/hallway_9/load/simple_wall_candelabra_3",
-        "luigis_mansion:room/hidden/hallway_9/load/simple_wall_candelabra_4"
+        "luigis_mansion:room/hidden/hallway_9/load/simple_wall_candelabra_4",
+        "luigis_mansion:room/hidden/hallway_9/load/washroom_2_door"
 	]
 }

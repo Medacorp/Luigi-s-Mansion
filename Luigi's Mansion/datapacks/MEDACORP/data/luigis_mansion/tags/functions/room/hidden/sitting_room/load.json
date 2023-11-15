@@ -2,7 +2,8 @@
 	"values": [
 	    "luigis_mansion:room/hidden/sitting_room/load/set_loaded",
         "luigis_mansion:room/hidden/sitting_room/load/lights",
-        "luigis_mansion:room/hidden/sitting_room/load/doors",
+        "luigis_mansion:room/hidden/sitting_room/load/guest_room_door",
+        "luigis_mansion:room/hidden/sitting_room/load/hallway_13_door",
         "luigis_mansion:room/hidden/sitting_room/load/painting_1",
         "luigis_mansion:room/hidden/sitting_room/load/painting_2",
         "luigis_mansion:room/hidden/sitting_room/load/painting_3",

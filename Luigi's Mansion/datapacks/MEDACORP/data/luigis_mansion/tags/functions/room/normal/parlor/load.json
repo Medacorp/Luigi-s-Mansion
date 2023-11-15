@@ -2,10 +2,11 @@
 	"values": [
 	    "luigis_mansion:room/normal/parlor/load/set_loaded",
         "luigis_mansion:room/normal/parlor/load/lights",
-        "luigis_mansion:room/normal/parlor/load/doors",
-        "luigis_mansion:room/normal/parlor/load/spawn_money",
+        "luigis_mansion:room/normal/parlor/load/anteroom_door",
         "luigis_mansion:room/normal/parlor/load/cobweb_1",
         "luigis_mansion:room/normal/parlor/load/cobweb_2",
+        "luigis_mansion:room/normal/parlor/load/hallway_1_door",
+        "luigis_mansion:room/normal/parlor/load/money",
         "luigis_mansion:room/normal/parlor/load/painting_1",
         "luigis_mansion:room/normal/parlor/load/painting_2",
         "luigis_mansion:room/normal/parlor/load/painting_3",

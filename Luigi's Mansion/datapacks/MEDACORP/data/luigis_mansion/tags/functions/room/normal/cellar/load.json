@@ -2,7 +2,6 @@
 	"values": [
 	    "luigis_mansion:room/normal/cellar/load/set_loaded",
         "luigis_mansion:room/normal/cellar/load/lights",
-        "luigis_mansion:room/normal/cellar/load/doors",
         "luigis_mansion:room/normal/cellar/load/dust_1",
         "luigis_mansion:room/normal/cellar/load/dust_2",
         "luigis_mansion:room/normal/cellar/load/dust_3",
@@ -11,6 +10,8 @@
         "luigis_mansion:room/normal/cellar/load/dust_6",
         "luigis_mansion:room/normal/cellar/load/dust_7",
         "luigis_mansion:room/normal/cellar/load/dust_8",
+        "luigis_mansion:room/normal/cellar/load/hallway_7_door",
+        "luigis_mansion:room/normal/cellar/load/hallway_20_door",
         "luigis_mansion:room/normal/cellar/load/room_clear_chest",
         "luigis_mansion:room/normal/cellar/load/old_triple_wall_candelabra_1",
         "luigis_mansion:room/normal/cellar/load/old_triple_wall_candelabra_2"

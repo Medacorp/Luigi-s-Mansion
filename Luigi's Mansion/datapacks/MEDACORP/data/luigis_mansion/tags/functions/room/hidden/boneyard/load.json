@@ -2,7 +2,7 @@
 	"values": [
 	    "luigis_mansion:room/hidden/boneyard/load/set_loaded",
         "luigis_mansion:room/hidden/boneyard/load/lights",
-        "luigis_mansion:room/hidden/boneyard/load/doors",
+        "luigis_mansion:room/hidden/boneyard/load/kitchen_door",
         "luigis_mansion:room/hidden/boneyard/load/lamp",
         "luigis_mansion:room/hidden/boneyard/load/plant",
         "luigis_mansion:room/hidden/boneyard/load/water"

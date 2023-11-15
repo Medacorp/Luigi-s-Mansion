@@ -2,8 +2,10 @@
 	"values": [
 	    "3ds_remake:room/hidden/hallway_17/load/set_loaded",
         "3ds_remake:room/hidden/hallway_17/load/lights",
-        "3ds_remake:room/hidden/hallway_17/load/doors",
+        "3ds_remake:room/hidden/hallway_17/load/balcony_2_door",
+        "3ds_remake:room/hidden/hallway_17/load/clockwork_room_fake_door",
         "3ds_remake:room/hidden/hallway_17/load/cobweb",
-        "3ds_remake:room/hidden/hallway_17/load/lamp"
+        "3ds_remake:room/hidden/hallway_17/load/lamp",
+        "3ds_remake:room/hidden/hallway_17/load/the_artists_studio_door"
 	]
 }

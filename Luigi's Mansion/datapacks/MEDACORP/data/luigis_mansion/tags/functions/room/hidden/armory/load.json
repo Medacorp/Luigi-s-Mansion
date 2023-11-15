@@ -2,7 +2,8 @@
 	"values": [
 	    "luigis_mansion:room/hidden/armory/load/set_loaded",
         "luigis_mansion:room/hidden/armory/load/lights",
-        "luigis_mansion:room/hidden/armory/load/doors",
+        "luigis_mansion:room/hidden/armory/load/ceramics_studio_door",
+        "luigis_mansion:room/hidden/armory/load/hallway_19_door",
         "luigis_mansion:room/hidden/armory/load/metal_chest_1",
         "luigis_mansion:room/hidden/armory/load/metal_chest_2",
         "luigis_mansion:room/hidden/armory/load/metal_chest_3",

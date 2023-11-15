@@ -1,0 +1,2 @@
+data modify storage luigis_mansion:data entity set value {door:{model:{namespace:"luigis_mansion",id:"mansion/1"},frame:{namespace:"luigis_mansion",id:"normal"},left_hinge:1b}}
+execute positioned 723 20 66 rotated -90 0 run function luigis_mansion:spawn_entities/fake_door

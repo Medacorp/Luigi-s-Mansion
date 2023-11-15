@@ -2,8 +2,11 @@
 	"values": [
 	    "luigis_mansion:room/hidden/hallway_4/load/set_loaded",
         "luigis_mansion:room/hidden/hallway_4/load/lights",
-        "luigis_mansion:room/hidden/hallway_4/load/doors",
+        "luigis_mansion:room/hidden/hallway_4/load/ball_room_door",
+        "luigis_mansion:room/hidden/hallway_4/load/dining_room_door",
+        "luigis_mansion:room/hidden/hallway_4/load/projection_room_blackout_fake_door",
         "luigis_mansion:room/hidden/hallway_4/load/simple_wall_candelabra_1",
-        "luigis_mansion:room/hidden/hallway_4/load/simple_wall_candelabra_2"
+        "luigis_mansion:room/hidden/hallway_4/load/simple_wall_candelabra_2",
+        "luigis_mansion:room/hidden/hallway_4/load/storage_room_blackout_fake_door"
 	]
 }

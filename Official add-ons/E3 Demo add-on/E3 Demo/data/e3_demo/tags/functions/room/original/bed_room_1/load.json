@@ -2,8 +2,8 @@
 	"values": [
 	    "e3_demo:room/original/bed_room_1/load/set_loaded",
         "e3_demo:room/original/bed_room_1/load/lights",
-        "e3_demo:room/original/bed_room_1/load/doors",
         "e3_demo:room/original/bed_room_1/load/fan",
+        "e3_demo:room/original/bed_room_1/load/hallway_2_door",
         "e3_demo:room/original/bed_room_1/load/painting_1",
         "e3_demo:room/original/bed_room_1/load/painting_2",
         "e3_demo:room/original/bed_room_1/load/painting_3",

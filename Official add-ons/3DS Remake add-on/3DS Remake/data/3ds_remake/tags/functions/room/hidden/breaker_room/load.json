@@ -2,8 +2,8 @@
 	"values": [
 	    "3ds_remake:room/hidden/breaker_room/load/set_loaded",
         "3ds_remake:room/hidden/breaker_room/load/lights",
-        "3ds_remake:room/hidden/breaker_room/load/doors",
         "3ds_remake:room/hidden/breaker_room/load/cobweb",
+        "3ds_remake:room/hidden/breaker_room/load/hallway_7_door",
         "3ds_remake:room/hidden/breaker_room/load/room_clear_chest"
 	]
 }

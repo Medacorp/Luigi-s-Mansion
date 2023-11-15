@@ -2,8 +2,8 @@
 	"values": [
 	    "luigis_mansion:room/normal/butlers_room/load/set_loaded",
         "luigis_mansion:room/normal/butlers_room/load/lights",
-        "luigis_mansion:room/normal/butlers_room/load/doors",
         "luigis_mansion:room/normal/butlers_room/load/bucket",
+        "luigis_mansion:room/normal/butlers_room/load/laundry_room_door",
         "luigis_mansion:room/normal/butlers_room/load/room_clear_chest",
         "luigis_mansion:room/normal/butlers_room/load/vacuumable_2",
         "luigis_mansion:room/normal/butlers_room/load/water_bucket",

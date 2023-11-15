@@ -2,10 +2,11 @@
 	"values": [
 	    "3ds_remake:room/hidden/fortune_tellers_room/load/set_loaded",
         "3ds_remake:room/hidden/fortune_tellers_room/load/lights",
-        "3ds_remake:room/hidden/fortune_tellers_room/load/doors",
         "3ds_remake:room/hidden/fortune_tellers_room/load/cobweb",
         "3ds_remake:room/hidden/fortune_tellers_room/load/crystal_ball",
         "3ds_remake:room/hidden/fortune_tellers_room/load/lamp",
+        "3ds_remake:room/hidden/fortune_tellers_room/load/hallway_3_door",
+        "3ds_remake:room/hidden/fortune_tellers_room/load/mirror_room_door",
         "3ds_remake:room/hidden/fortune_tellers_room/load/mystifying_table",
         "3ds_remake:room/hidden/fortune_tellers_room/load/room_clear_chest",
         "3ds_remake:room/hidden/fortune_tellers_room/load/room_clear_loot_dropper",

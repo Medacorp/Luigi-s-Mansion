@@ -4,7 +4,6 @@
 	    "luigis_mansion:room/hidden/guest_room/load/flip",
         "luigis_mansion:room/hidden/guest_room/load/lights",
         "luigis_mansion:room/hidden/guest_room/load/desk_mirror",
-        "luigis_mansion:room/hidden/guest_room/load/doors",
         "luigis_mansion:room/hidden/guest_room/load/diary_writing_desk",
         "luigis_mansion:room/hidden/guest_room/load/haunted_objects",
 	    "luigis_mansion:room/hidden/guest_room/load/painting_1",
@@ -13,6 +12,7 @@
 	    "luigis_mansion:room/hidden/guest_room/load/painting_4",
 	    "luigis_mansion:room/hidden/guest_room/load/painting_5",
 	    "luigis_mansion:room/hidden/guest_room/load/room_clear_chest",
+        "luigis_mansion:room/hidden/guest_room/load/sitting_room_door",
         "luigis_mansion:room/hidden/guest_room/load/triple_mounted_wall_candelabra_1",
         "luigis_mansion:room/hidden/guest_room/load/triple_mounted_wall_candelabra_2"
 	]

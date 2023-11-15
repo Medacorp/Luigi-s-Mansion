@@ -2,7 +2,8 @@
 	"values": [
 	    "3ds_remake:room/hidden/armory/load/set_loaded",
         "3ds_remake:room/hidden/armory/load/lights",
-        "3ds_remake:room/hidden/armory/load/doors",
+        "3ds_remake:room/hidden/armory/load/ceramics_studio_door",
+        "3ds_remake:room/hidden/armory/load/hallway_19_door",
         "3ds_remake:room/hidden/armory/load/metal_chest_1",
         "3ds_remake:room/hidden/armory/load/metal_chest_2",
         "3ds_remake:room/hidden/armory/load/metal_chest_3",

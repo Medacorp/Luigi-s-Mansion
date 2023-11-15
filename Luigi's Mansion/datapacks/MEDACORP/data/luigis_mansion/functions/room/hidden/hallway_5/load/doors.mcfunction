@@ -1,8 +1,0 @@
-data modify storage luigis_mansion:data furniture set value {sound:{namespace:"luigis_mansion",id:"heavy_generic"},door:{model:{namespace:"luigis_mansion",id:"mansion/1"},frame:{namespace:"luigis_mansion",id:"normal"},left_hinge:1b,key:"washroom_1",other_end:{x:664,y:11,z:-20}}}
-execute positioned 682 11 4 rotated 0 0 run function luigis_mansion:spawn_furniture/door
-data modify storage luigis_mansion:data furniture set value {sound:{namespace:"luigis_mansion",id:"heavy_generic"},door:{model:{namespace:"luigis_mansion",id:"mansion/1"},frame:{namespace:"luigis_mansion",id:"normal"},key:"conservatory",other_end:{x:663,y:11,z:21}}}
-execute positioned 679 11 15 rotated -90 0 run function luigis_mansion:spawn_furniture/door
-data modify storage luigis_mansion:data furniture set value {sound:{namespace:"luigis_mansion",id:"heavy_generic"},door:{model:{namespace:"luigis_mansion",id:"mansion/1"},frame:{namespace:"luigis_mansion",id:"normal"},key:"hallway_8",other_end:{x:663,y:11,z:52}}}
-execute positioned 682 11 44 rotated -180 0 run function luigis_mansion:spawn_furniture/door
-data modify storage luigis_mansion:data furniture set value {sound:{namespace:"luigis_mansion",id:"heavy_generic"},door:{model:{namespace:"luigis_mansion",id:"mansion/1"},frame:{namespace:"luigis_mansion",id:"normal"},left_hinge:1b,push:1b,key:"billiards_room",other_end:{x:674,y:11,z:-55}}}
-execute positioned 685 11 10 rotated 90 0 run function luigis_mansion:spawn_furniture/door

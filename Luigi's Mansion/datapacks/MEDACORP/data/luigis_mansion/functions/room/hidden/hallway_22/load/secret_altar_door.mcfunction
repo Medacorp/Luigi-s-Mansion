@@ -1,0 +1,3 @@
+data modify storage luigis_mansion:data furniture set value {sound:{namespace:"luigis_mansion",id:"heavy_generic"},door:{model:{namespace:"luigis_mansion",id:"spade"},key:"secret_altar",other_end:{x:653,y:93,z:33}}}
+execute unless data storage luigis_mansion:data current_state.current_data.technical_data{cleared_king_boo_blockade:1b} run data modify storage luigis_mansion:data furniture.blockade set value 2b
+execute positioned 654 2 33 rotated -90 0 run function luigis_mansion:spawn_furniture/door

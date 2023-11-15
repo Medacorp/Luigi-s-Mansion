@@ -2,7 +2,8 @@
 	"values": [
 	    "e3_demo:room/original/hallway_5/load/set_loaded",
         "e3_demo:room/original/hallway_5/load/lights",
-        "e3_demo:room/original/hallway_5/load/doors",
+        "e3_demo:room/original/hallway_5/load/lavatory_door",
+        "e3_demo:room/original/hallway_5/load/missingno_31_door",
         "e3_demo:room/original/hallway_5/load/simple_wall_candelabra_1",
         "e3_demo:room/original/hallway_5/load/simple_wall_candelabra_2",
         "e3_demo:room/original/hallway_5/load/simple_wall_candelabra_3",

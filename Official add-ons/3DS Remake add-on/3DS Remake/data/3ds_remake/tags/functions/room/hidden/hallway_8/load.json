@@ -2,10 +2,13 @@
 	"values": [
 	    "3ds_remake:room/hidden/hallway_8/load/set_loaded",
         "3ds_remake:room/hidden/hallway_8/load/lights",
-        "3ds_remake:room/hidden/hallway_8/load/doors",
         "3ds_remake:room/hidden/hallway_8/load/cobweb_1",
         "3ds_remake:room/hidden/hallway_8/load/cobweb_2",
+        "3ds_remake:room/hidden/hallway_8/load/hallway_5_door",
+        "3ds_remake:room/hidden/hallway_8/load/hallway_9_door",
+        "3ds_remake:room/hidden/hallway_8/load/rec_room_door",
         "3ds_remake:room/hidden/hallway_8/load/simple_wall_candelabra_1",
-        "3ds_remake:room/hidden/hallway_8/load/simple_wall_candelabra_2"
+        "3ds_remake:room/hidden/hallway_8/load/simple_wall_candelabra_2",
+        "3ds_remake:room/hidden/hallway_8/load/tea_room_door"
 	]
 }

@@ -2,7 +2,7 @@
 	"values": [
 	    "e3_demo:room/original/lavatory/load/set_loaded",
         "e3_demo:room/original/lavatory/load/lights",
-        "e3_demo:room/original/lavatory/load/doors",
+        "e3_demo:room/original/lavatory/load/hallway_5_door",
         "e3_demo:room/original/lavatory/load/legged_sink",
         "e3_demo:room/original/lavatory/load/painting_1",
         "e3_demo:room/original/lavatory/load/painting_2",

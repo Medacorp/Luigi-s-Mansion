@@ -2,12 +2,13 @@
 	"values": [
 	    "luigis_mansion:room/normal/foyer/load/set_loaded",
         "luigis_mansion:room/normal/foyer/load/lights",
-        "luigis_mansion:room/normal/foyer/load/doors",
-        "luigis_mansion:room/normal/foyer/load/spawn_toad",
         "luigis_mansion:room/normal/foyer/load/cobweb_1",
         "luigis_mansion:room/normal/foyer/load/cobweb_2",
+        "luigis_mansion:room/normal/foyer/load/front_door",
+        "luigis_mansion:room/normal/foyer/load/hallway_3_door",
         "luigis_mansion:room/normal/foyer/load/simple_triple_wall_candelabra_1",
         "luigis_mansion:room/normal/foyer/load/simple_triple_wall_candelabra_2",
+        "luigis_mansion:room/normal/foyer/load/toad",
         "luigis_mansion:room/normal/foyer/load/tall_simple_triple_candelabra_1",
         "luigis_mansion:room/normal/foyer/load/tall_simple_triple_candelabra_2"
 	]

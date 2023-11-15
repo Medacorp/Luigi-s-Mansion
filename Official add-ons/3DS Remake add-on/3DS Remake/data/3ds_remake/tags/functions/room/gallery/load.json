@@ -1,8 +1,12 @@
 {
 	"values": [
 	    "3ds_remake:room/gallery/load/set_loaded",
-        "3ds_remake:room/gallery/load/spawn_e_gadd",
-        "3ds_remake:room/gallery/load/doors",
+        "3ds_remake:room/gallery/load/door_1",
+        "3ds_remake:room/gallery/load/door_2",
+        "3ds_remake:room/gallery/load/door_3",
+        "3ds_remake:room/gallery/load/e_gadd",
+        "3ds_remake:room/gallery/load/extra_gallery_door",
+        "3ds_remake:room/gallery/load/ghost_portrificationizer_room_door",
         "3ds_remake:room/gallery/load/gallery_chest",
         "3ds_remake:room/gallery/load/painting_1",
         "3ds_remake:room/gallery/load/painting_2",

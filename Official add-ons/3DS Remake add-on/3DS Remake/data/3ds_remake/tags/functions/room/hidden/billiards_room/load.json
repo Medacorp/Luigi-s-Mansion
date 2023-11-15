@@ -2,10 +2,11 @@
 	"values": [
 	    "3ds_remake:room/hidden/billiards_room/load/set_loaded",
         "3ds_remake:room/hidden/billiards_room/load/lights",
-        "3ds_remake:room/hidden/billiards_room/load/doors",
         "3ds_remake:room/hidden/billiards_room/load/cobweb_1",
         "3ds_remake:room/hidden/billiards_room/load/cobweb_2",
         "3ds_remake:room/hidden/billiards_room/load/fan",
+        "3ds_remake:room/hidden/billiards_room/load/hallway_5_door",
+        "3ds_remake:room/hidden/billiards_room/load/projection_room_door",
         "3ds_remake:room/hidden/billiards_room/load/painting_1",
         "3ds_remake:room/hidden/billiards_room/load/painting_2",
         "3ds_remake:room/hidden/billiards_room/load/painting_3",

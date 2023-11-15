@@ -1,0 +1,4 @@
+data modify storage luigis_mansion:data furniture set value {sound:{namespace:"luigis_mansion",id:"heavy_generic"},door:{model:{namespace:"luigis_mansion",id:"mansion/entrance"},frame:{namespace:"luigis_mansion",id:"double/windowed"},push:1b,other_end:{dimension:"minecraft:overworld",x:720,y:102,z:7},go_through_command:"function e3_demo:room/original/exit"}}
+execute positioned 755 11 8 rotated 90 0 run function luigis_mansion:spawn_furniture/door
+data modify storage luigis_mansion:data furniture set value {sound:{namespace:"luigis_mansion",id:"heavy_generic"},door:{model:{namespace:"luigis_mansion",id:"mansion/entrance"},frame:{namespace:"luigis_mansion",id:"double/windowed"},left_hinge:1b,other_end:{dimension:"minecraft:overworld",x:720,y:102,z:8},go_through_command:"function e3_demo:room/original/exit"}}
+execute positioned 755 11 9 rotated 90 0 run function luigis_mansion:spawn_furniture/door

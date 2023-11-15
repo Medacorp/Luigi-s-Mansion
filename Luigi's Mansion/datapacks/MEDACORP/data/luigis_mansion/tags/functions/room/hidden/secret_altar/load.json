@@ -2,7 +2,7 @@
 	"values": [
 	    "luigis_mansion:room/hidden/secret_altar/load/set_loaded",
         "luigis_mansion:room/hidden/secret_altar/load/lights",
-        "luigis_mansion:room/hidden/secret_altar/load/doors",
+        "luigis_mansion:room/hidden/secret_altar/load/hallway_22_door",
         "luigis_mansion:room/hidden/secret_altar/load/marios_painting",
         "luigis_mansion:room/hidden/secret_altar/load/old_triple_wall_candelabra_1",
         "luigis_mansion:room/hidden/secret_altar/load/old_triple_wall_candelabra_2",

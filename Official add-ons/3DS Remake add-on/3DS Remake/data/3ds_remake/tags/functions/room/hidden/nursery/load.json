@@ -2,15 +2,15 @@
 	"values": [
 	    "3ds_remake:room/hidden/nursery/load/set_loaded",
         "3ds_remake:room/hidden/nursery/load/lights",
-        "3ds_remake:room/hidden/nursery/load/doors",
         "3ds_remake:room/hidden/nursery/load/ball",
-        "3ds_remake:room/hidden/nursery/load/spawn_money",
+        "3ds_remake:room/hidden/nursery/load/cobweb_1",
+        "3ds_remake:room/hidden/nursery/load/cobweb_2",
+        "3ds_remake:room/hidden/nursery/load/hallway_2_door",
+        "3ds_remake:room/hidden/nursery/load/money",
         "3ds_remake:room/hidden/nursery/load/painting_1",
         "3ds_remake:room/hidden/nursery/load/painting_2",
         "3ds_remake:room/hidden/nursery/load/painting_3",
         "3ds_remake:room/hidden/nursery/load/rocking_horse",
-        "3ds_remake:room/hidden/nursery/load/room_clear_chest",
-        "3ds_remake:room/hidden/nursery/load/cobweb_1",
-        "3ds_remake:room/hidden/nursery/load/cobweb_2"
+        "3ds_remake:room/hidden/nursery/load/room_clear_chest"
 	]
 }

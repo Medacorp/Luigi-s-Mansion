@@ -2,10 +2,10 @@
 	"values": [
 	    "luigis_mansion:room/hidden/pipe_room/load/set_loaded",
         "luigis_mansion:room/hidden/pipe_room/load/lights",
-        "luigis_mansion:room/hidden/pipe_room/load/doors",
-        "luigis_mansion:room/hidden/pipe_room/load/pipe",
         "luigis_mansion:room/hidden/pipe_room/load/bucket",
+        "luigis_mansion:room/hidden/pipe_room/load/hallway_21_door",
         "luigis_mansion:room/hidden/pipe_room/load/ice",
+        "luigis_mansion:room/hidden/pipe_room/load/pipe",
         "luigis_mansion:room/hidden/pipe_room/load/room_clear_chest",
         "luigis_mansion:room/hidden/pipe_room/load/sewage"
 	]

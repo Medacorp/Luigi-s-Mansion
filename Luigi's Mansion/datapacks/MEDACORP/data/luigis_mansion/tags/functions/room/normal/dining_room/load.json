@@ -2,11 +2,12 @@
 	"values": [
 	    "luigis_mansion:room/normal/dining_room/load/set_loaded",
         "luigis_mansion:room/normal/dining_room/load/lights",
-        "luigis_mansion:room/normal/dining_room/load/doors",
         "luigis_mansion:room/normal/dining_room/load/cobweb_1",
         "luigis_mansion:room/normal/dining_room/load/cobweb_2",
         "luigis_mansion:room/normal/dining_room/load/fire_1",
         "luigis_mansion:room/normal/dining_room/load/fire_2",
+        "luigis_mansion:room/normal/dining_room/load/hallway_4_door",
+        "luigis_mansion:room/normal/dining_room/load/kitchen_door",
         "luigis_mansion:room/normal/dining_room/load/painting_1",
         "luigis_mansion:room/normal/dining_room/load/painting_2",
         "luigis_mansion:room/normal/dining_room/load/painting_3",

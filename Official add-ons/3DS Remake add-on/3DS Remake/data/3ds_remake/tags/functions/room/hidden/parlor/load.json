@@ -2,10 +2,11 @@
 	"values": [
 	    "3ds_remake:room/hidden/parlor/load/set_loaded",
         "3ds_remake:room/hidden/parlor/load/lights",
-        "3ds_remake:room/hidden/parlor/load/doors",
-        "3ds_remake:room/hidden/parlor/load/spawn_money",
+        "3ds_remake:room/hidden/parlor/load/anteroom_door",
         "3ds_remake:room/hidden/parlor/load/cobweb_1",
         "3ds_remake:room/hidden/parlor/load/cobweb_2",
+        "3ds_remake:room/hidden/parlor/load/hallway_1_door",
+        "3ds_remake:room/hidden/parlor/load/money",
         "3ds_remake:room/hidden/parlor/load/painting_1",
         "3ds_remake:room/hidden/parlor/load/painting_2",
         "3ds_remake:room/hidden/parlor/load/painting_3",

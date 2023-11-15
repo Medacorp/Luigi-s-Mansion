@@ -4,7 +4,7 @@
         "luigis_mansion:room/normal/storage_room/load/move_wall",
         "luigis_mansion:room/normal/storage_room/load/open_hatch",
         "luigis_mansion:room/normal/storage_room/load/lights",
-        "luigis_mansion:room/normal/storage_room/load/doors",
+        "luigis_mansion:room/normal/storage_room/load/ball_room_door",
         "luigis_mansion:room/normal/storage_room/load/bucket"
 	]
 }

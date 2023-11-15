@@ -2,8 +2,9 @@
 	"values": [
 	    "3ds_remake:room/hidden/astral_hall/load/set_loaded",
         "3ds_remake:room/hidden/astral_hall/load/lights",
-        "3ds_remake:room/hidden/astral_hall/load/doors",
         "3ds_remake:room/hidden/astral_hall/load/cobweb",
+        "3ds_remake:room/hidden/astral_hall/load/hallway_11_door",
+        "3ds_remake:room/hidden/astral_hall/load/observatory_door",
         "3ds_remake:room/hidden/astral_hall/load/tall_wooden_triple_candelabra_1",
         "3ds_remake:room/hidden/astral_hall/load/tall_wooden_triple_candelabra_2",
         "3ds_remake:room/hidden/astral_hall/load/tall_wooden_triple_candelabra_3",

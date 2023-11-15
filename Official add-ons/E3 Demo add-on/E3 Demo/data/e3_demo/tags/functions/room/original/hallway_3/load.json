@@ -2,7 +2,11 @@
 	"values": [
 	    "e3_demo:room/original/hallway_3/load/set_loaded",
         "e3_demo:room/original/hallway_3/load/lights",
-        "e3_demo:room/original/hallway_3/load/doors",
+        "e3_demo:room/original/hallway_3/load/dining_room_door",
+        "e3_demo:room/original/hallway_3/load/entrance_door",
+        "e3_demo:room/original/hallway_3/load/missingno_12_door",
+        "e3_demo:room/original/hallway_3/load/missingno_15_door",
+        "e3_demo:room/original/hallway_3/load/missingno_17_door",
         "e3_demo:room/original/hallway_3/load/simple_wall_candelabra_1",
         "e3_demo:room/original/hallway_3/load/simple_wall_candelabra_2",
         "e3_demo:room/original/hallway_3/load/simple_wall_candelabra_3",
