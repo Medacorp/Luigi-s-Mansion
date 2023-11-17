@@ -4,8 +4,8 @@ execute if entity @s[x_rotation=-90..0] store result entity @s Rotation[1] float
 
 $execute at @s positioned ~ ~$(physics_offset) ~ if block ^ ^ ^0.3 #luigis_mansion:items_ignore unless block ^ ^ ^0.3 #minecraft:slabs at @s run teleport @s ^ ^ ^0.1
 $execute at @s positioned ~ ~$(physics_offset) ~ unless block ^ ^ ^0.3 #luigis_mansion:items_ignore at @s run teleport @s ~ ~ ~ ~ 90
-$execute at @s positioned ~ ~$(physics_offset) ~ align y if block ~ ~ ~ #luigis_mansion:items_ignore unless block ~ ~ ~ #minecraft:slabs[type=bottom] run teleport @s ~ ~-$(physics_offset) ~
-$execute at @s positioned ~ ~$(physics_offset) ~ align y if block ~ ~ ~ #minecraft:slabs[type=bottom] positioned ~ ~0.5 ~ run teleport @s ~ ~-$(physics_offset) ~
+$execute at @s positioned ~ ~$(physics_offset) ~ unless block ~ ~-0.1 ~ #luigis_mansion:items_ignore align y if block ~ ~ ~ #luigis_mansion:items_ignore unless block ~ ~ ~ #minecraft:slabs[type=bottom] run teleport @s ~ ~-$(physics_offset) ~
+$execute at @s positioned ~ ~$(physics_offset) ~ unless block ~ ~-0.1 ~ #luigis_mansion:items_ignore align y if block ~ ~ ~ #minecraft:slabs[type=bottom] positioned ~ ~0.5 ~ run teleport @s ~ ~-$(physics_offset) ~
 
 execute at @s run teleport @s ~ ~ ~ ~ ~1
 
