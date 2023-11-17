@@ -1,1 +1,0 @@
-execute positioned as @s[tag=paper] run function luigis_mansion:entities/item/pull_paper

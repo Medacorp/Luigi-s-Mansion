@@ -1,1 +1,1 @@
-function #luigis_mansion:items/mario_item with entity @s ArmorItems[3].tag
+function #luigis_mansion:items/mario_item with entity @s ArmorItems[3].tag.luigis_mansion

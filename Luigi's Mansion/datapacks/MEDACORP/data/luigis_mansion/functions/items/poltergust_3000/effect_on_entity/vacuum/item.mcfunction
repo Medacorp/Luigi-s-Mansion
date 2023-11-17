@@ -1,1 +1,1 @@
-execute if entity @s[tag=item] run function #luigis_mansion:items/poltergust_3000/effect_on_entity/vacuum/item
+execute if entity @s[tag=item] run function #luigis_mansion:items/poltergust_3000/effect_on_entity/vacuum/effect/item with entity @s ArmorItems[3].tag.luigis_mansion

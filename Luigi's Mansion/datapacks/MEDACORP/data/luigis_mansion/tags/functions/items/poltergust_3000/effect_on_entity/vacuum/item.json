@@ -1,9 +1,0 @@
-{
-	"values": [
-		"luigis_mansion:items/poltergust_3000/effect_on_entity/vacuum/item/coin",
-        "luigis_mansion:items/poltergust_3000/effect_on_entity/vacuum/item/paper",
-        "luigis_mansion:items/poltergust_3000/effect_on_entity/vacuum/item/generic",
-        "luigis_mansion:items/poltergust_3000/effect_on_entity/vacuum/item/heart",
-        "luigis_mansion:items/poltergust_3000/effect_on_entity/vacuum/item/key"
-	]
-}

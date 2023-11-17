@@ -1,2 +1,0 @@
-execute positioned ~ ~1.1 ~ if entity @e[tag=same_room,tag=!spectator,tag=player,distance=..0.8,limit=1,tag=gooigi] run tag @s remove picked_up
-execute if entity @s[tag=picked_up] run function #luigis_mansion:items/element_medal with entity @s ArmorItems[3].tag

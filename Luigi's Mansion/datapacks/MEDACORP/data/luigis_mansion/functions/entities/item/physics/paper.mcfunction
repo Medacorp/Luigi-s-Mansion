@@ -1,1 +1,1 @@
-execute if entity @s[tag=paper] run function luigis_mansion:entities/item/paper_physics
+execute if entity @s[tag=paper] run function luigis_mansion:entities/item/physics_paper with entity @s ArmorItems[3].tag.luigis_mansion

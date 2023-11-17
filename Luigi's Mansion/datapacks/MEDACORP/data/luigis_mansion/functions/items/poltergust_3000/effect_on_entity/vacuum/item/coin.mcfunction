@@ -1,1 +1,0 @@
-execute positioned as @s[tag=coin] run function luigis_mansion:entities/item/pull_coin

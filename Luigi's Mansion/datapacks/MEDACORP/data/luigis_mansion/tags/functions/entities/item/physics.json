@@ -3,8 +3,6 @@
 		"luigis_mansion:entities/item/physics/coin",
         "luigis_mansion:entities/item/physics/paper",
         "luigis_mansion:entities/item/physics/generic",
-        "luigis_mansion:entities/item/physics/heart",
-        "luigis_mansion:entities/item/physics/key",
         "luigis_mansion:entities/item/physics/display"
 	]
 }

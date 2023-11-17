@@ -203,7 +203,7 @@
 	],
 	"display": {
 		"head": {
-			"translation": [0, -7, 0],
+			"translation": [0, 1.5, 0],
 			"scale": [4, 4, 4]
 		}
 	}

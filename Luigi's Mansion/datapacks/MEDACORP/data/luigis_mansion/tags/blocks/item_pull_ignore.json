@@ -1,7 +1,6 @@
 {
     "values": [
-        "#luigis_mansion:item_bounce_ignore",
-        "minecraft:chest",
-        "minecraft:trapped_chest"
+        "#luigis_mansion:items_ignore",
+        "#minecraft:slabs"
     ]
 }

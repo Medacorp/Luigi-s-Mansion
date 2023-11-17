@@ -1,1 +1,0 @@
-execute if entity @s[tag=key] run function luigis_mansion:entities/item/key_physics
