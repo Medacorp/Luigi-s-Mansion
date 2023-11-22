@@ -1,0 +1,24 @@
+{
+    "display": {
+        "icon": {
+            "item": "minecraft:leather_chestplate",
+			"nbt": "{Unbreakable:1b,Damage:4,CustomModelData:9,display:{color:6881535}}"
+        },
+        "frame": "challenge",
+        "title": {
+            "translate": "e3_demo:advancements.e3_demo.heavy_heart"
+        },
+        "description": {
+            "translate": "e3_demo:advancements.e3_demo.heavy_heart.description"
+        }
+    },
+	"parent": "e3_demo:e3_demo/root",
+    "criteria": {
+        "clear": {
+            "trigger": "minecraft:impossible"
+        }
+    },
+	"rewards": {
+		"function": "luigis_mansion:advancements/e3_demo/heavy_heart"
+	}
+}

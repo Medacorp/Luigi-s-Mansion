@@ -2,7 +2,7 @@
 	"credit": "Made with Blockbench",
 	"textures": {
 		"0": "luigis_mansion:entity/fire_elemental_ghost",
-		"particle": "#0"
+		"particle": "luigis_mansion:entity/fire_elemental_ghost"
 	},
 	"elements": [
 		{
@@ -85,6 +85,9 @@
 		}
 	],
 	"display": {
+		"gui": {
+			"rotation": [12, -145, 0]
+		},
 		"head": {
 			"translation": [0, -6.25, 0]
 		}

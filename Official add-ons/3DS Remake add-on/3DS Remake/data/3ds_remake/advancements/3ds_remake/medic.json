@@ -1,0 +1,24 @@
+{
+    "display": {
+        "icon": {
+            "item": "minecraft:diamond_pickaxe",
+			"nbt": "{Unbreakable:1b,Damage:5,CustomModelData:32}"
+        },
+        "frame": "challenge",
+        "title": {
+            "translate": "3ds_remake:advancements.3ds_remake.medic"
+        },
+        "description": {
+            "translate": "3ds_remake:advancements.3ds_remake.medic.description"
+        }
+    },
+	"parent": "3ds_remake:3ds_remake/clear_hidden_mansion",
+    "criteria": {
+        "clear": {
+            "trigger": "minecraft:impossible"
+        }
+    },
+	"rewards": {
+		"function": "luigis_mansion:advancements/3ds_remake/medic"
+	}
+}

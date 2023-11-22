@@ -1,0 +1,22 @@
+{
+    "display": {
+        "icon": {
+            "item": "minecraft:blaze_powder"
+        },
+        "title": {
+            "translate": "luigis_mansion:advancements.vanilla.extremist"
+        },
+        "description": {
+            "translate": "3ds_remake:advancements.vanilla.extremist.description"
+        }
+    },
+	"parent": "luigis_mansion:vanilla/clear_hidden_mansion",
+    "criteria": {
+        "clear": {
+            "trigger": "minecraft:impossible"
+        }
+    },
+	"rewards": {
+		"function": "luigis_mansion:advancements/vanilla/extremist"
+	}
+}

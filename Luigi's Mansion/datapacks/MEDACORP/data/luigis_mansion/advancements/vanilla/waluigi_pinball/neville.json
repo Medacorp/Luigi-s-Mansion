@@ -1,0 +1,25 @@
+{
+    "display": {
+        "icon": {
+            "item": "minecraft:diamond_pickaxe",
+			"nbt": "{Unbreakable:1b,Damage:1,CustomModelData:6}"
+        },
+        "show_toast": false,
+        "announce_to_chat": false,
+        "title": {
+            "translate": "luigis_mansion:entity.neville"
+        },
+        "description": {
+            "translate": "luigis_mansion:advancements.vanilla.waluigi_pinball.sub_description"
+        }
+    },
+	"parent": "luigis_mansion:vanilla/waluigi_pinball",
+    "criteria": {
+        "bumped_into": {
+            "trigger": "minecraft:impossible"
+        }
+    },
+	"rewards": {
+		"function": "luigis_mansion:advancements/vanilla/waluigi_pinball/neville"
+	}
+}

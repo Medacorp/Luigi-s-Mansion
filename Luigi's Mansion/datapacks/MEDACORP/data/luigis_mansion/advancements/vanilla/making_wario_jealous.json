@@ -1,0 +1,24 @@
+{
+    "display": {
+        "icon": {
+            "item": "minecraft:diamond_pickaxe",
+			"nbt": "{Damage:22,Unbreakable:1b,CustomModelData:15}"
+        },
+        "title": {
+            "translate": "luigis_mansion:advancements.vanilla.making_wario_jealous"
+        },
+        "description": {
+            "translate": "luigis_mansion:advancements.vanilla.making_wario_jealous.description"
+        },
+        "hidden": true
+    },
+	"parent": "luigis_mansion:vanilla/root",
+    "criteria": {
+        "reached_score": {
+            "trigger": "minecraft:impossible"
+        }
+    },
+	"rewards": {
+		"function": "luigis_mansion:advancements/vanilla/making_wario_jealous"
+	}
+}

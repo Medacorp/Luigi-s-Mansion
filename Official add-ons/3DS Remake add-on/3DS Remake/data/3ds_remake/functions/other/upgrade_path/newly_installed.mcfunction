@@ -111,11 +111,12 @@ execute if score #temp Time matches ..216000 if data storage 3ds_remake:data cur
 scoreboard players reset #temp Time
 scoreboard players reset #temp Money
 scoreboard players set #can_get_platinum_boss Selected 0
-execute if score #mansion_type Selected matches 1 if entity @a[advancements={luigis_mansion:lab/cleared_hidden_mansion=false}] run function 3ds_remake:other/upgrade_path/convert_hidden_data
-execute if entity @a[advancements={luigis_mansion:lab/cleared_hidden_mansion=true}] unless data storage luigis_mansion:data current_state.high_scores[{data_index:1}] run data modify storage 3ds_remake:data current_state.trophy.hard.task_5 set value 1b
-execute if entity @a[advancements={luigis_mansion:lab/cleared_hidden_mansion=true}] unless data storage luigis_mansion:data current_state.high_scores[{data_index:1}] if data storage luigis_mansion:data current_state.high_scores[{data_index:0}] run function 3ds_remake:other/upgrade_path/clone_high_score
-execute if entity @a[advancements={luigis_mansion:lab/cleared_hidden_mansion=true}] run advancement grant @a only 3ds_remake:lab/unlocked_gcn_hidden_mansion
-execute if data storage 3ds_remake:data current_state.trophy.hard{task_5:1b} run advancement grant @a only 3ds_remake:lab/cleared_hidden_mansion
+execute if score #mansion_type Selected matches 1 if entity @a[advancements={luigis_mansion:vanilla/clear_hidden_mansion=false}] run function 3ds_remake:other/upgrade_path/convert_hidden_data
+execute if entity @a[advancements={luigis_mansion:vanilla/clear_hidden_mansion=true}] unless data storage luigis_mansion:data current_state.high_scores[{data_index:1}] run data modify storage 3ds_remake:data current_state.trophy.hard.task_5 set value 1b
+execute if entity @a[advancements={luigis_mansion:vanilla/clear_hidden_mansion=true}] unless data storage luigis_mansion:data current_state.high_scores[{data_index:1}] if data storage luigis_mansion:data current_state.high_scores[{data_index:0}] run function 3ds_remake:other/upgrade_path/clone_high_score
+execute if entity @a[advancements={luigis_mansion:vanilla/unlock_hidden_mansion=true}] run advancement grant @a only 3ds_remake:3ds_remake/unlock_hidden_mansion
+execute if entity @a[advancements={luigis_mansion:vanilla/unlock_hidden_mansion=true,luigis_mansion:vanilla/clear_hidden_mansion=false}] run advancement revoke @a only luigis_mansion:vanilla/unlock_hidden_mansion
+execute if data storage 3ds_remake:data current_state.trophy.hard{task_5:1b} run advancement grant @a only 3ds_remake:3ds_remake/clear_hidden_mansion
 execute if data storage luigis_mansion:data rooms.training_room{cleared:1b} run data merge storage 3ds_remake:data {obtained_gameboy_horror_part:1b,shown_gameboy_horror_part:1b,spoke_with_future_e_gadd:1b}
 execute if data storage luigis_mansion:data saved_state.mansion_data[{data_index:0}].boos[{name:"booligan"}] run data modify storage luigis_mansion:data saved_state.mansion_data[{data_index:0}].boos[{name:"booligan"}].name set value boolldog
 execute if data storage luigis_mansion:data current_state.mansion_data[{data_index:0}].boos[{name:"booligan"}] run data modify storage luigis_mansion:data current_state.mansion_data[{data_index:0}].boos[{name:"booligan"}].name set value boolldog

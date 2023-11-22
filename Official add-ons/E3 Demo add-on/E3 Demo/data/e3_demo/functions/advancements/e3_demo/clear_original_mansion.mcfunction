@@ -1,0 +1,1 @@
+advancement grant @s only e3_demo:e3_demo/root

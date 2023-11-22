@@ -1,0 +1,25 @@
+{
+    "display": {
+        "icon": {
+            "item": "minecraft:leather_chestplate",
+            "nbt": "{Unbreakable:1b,Damage:1,CustomModelData:20,display:{color:37129}}"
+        },
+        "show_toast": false,
+        "hidden": true,
+        "title": {
+            "translate": "e3_demo:advancements.e3_demo.unlock_original_mansion"
+        },
+        "description": {
+            "translate": "e3_demo:advancements.e3_demo.unlock_original_mansion.description"
+        }
+    },
+	"parent": "luigis_mansion:e3_demo/root",
+    "criteria": {
+        "unlocked": {
+            "trigger": "minecraft:impossible"
+        }
+    },
+	"rewards": {
+		"function": "e3_demo:advancements/e3_demo/unlock_original_mansion"
+	}
+}

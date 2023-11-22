@@ -13,7 +13,6 @@ execute if entity @s[scores={Dialog=328}] if score #players Totals matches 1 run
 execute if entity @s[scores={Dialog=328}] if score #players Totals matches 2.. run tellraw @a[tag=same_room] {"translate":"chat.type.text","with":[{"translate":"luigis_mansion:entity.e_gadd","color":"green"},{"translate":"luigis_mansion:dialog.ghost_portrificationizer_room.3.more"}]}
 execute if entity @s[scores={Dialog=328}] run playsound luigis_mansion:entity.e_gadd.talk.mm_poheh_oyahmah_oydohroh neutral @a[tag=same_room] ~ ~ ~ 1
 execute if entity @s[scores={Dialog=528}] run data modify storage luigis_mansion:data rooms.ghost_portrificationizer_room merge value {cleared:1b}
-execute if entity @s[scores={Dialog=528}] run advancement grant @a until luigis_mansion:lab/ghost_portrificationizer_room
 execute if entity @s[scores={Dialog=528}] run tag @a[tag=looking_at_map,nbt={Dimension:"minecraft:overworld"},limit=1] add regenerate_map
 execute if entity @s[scores={Dialog=528}] as @a[tag=same_room,tag=!spectator,tag=!looking_at_map] run function luigis_mansion:entities/player/animation/set/none
 tag @s[scores={Dialog=528}] remove talk

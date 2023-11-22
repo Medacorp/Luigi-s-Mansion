@@ -1,0 +1,25 @@
+{
+    "display": {
+        "icon": {
+            "item": "minecraft:leather_chestplate",
+			"nbt": "{Unbreakable:1b,Damage:4,CustomModelData:0,display:{color:16711912}}"
+        },
+        "show_toast": false,
+        "announce_to_chat": false,
+        "title": {
+            "translate": "luigis_mansion:entity.purple_bat"
+        },
+        "description": {
+            "translate": "luigis_mansion:advancements.vanilla.waluigi_pinball.sub_description"
+        }
+    },
+	"parent": "luigis_mansion:vanilla/waluigi_pinball/purple_mouse",
+    "criteria": {
+        "bumped_into": {
+            "trigger": "minecraft:impossible"
+        }
+    },
+	"rewards": {
+		"function": "luigis_mansion:advancements/vanilla/waluigi_pinball/purple_bat"
+	}
+}

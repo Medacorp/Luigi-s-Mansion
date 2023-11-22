@@ -1,0 +1,24 @@
+{
+    "display": {
+        "icon": {
+            "item": "minecraft:leather_chestplate",
+            "nbt": "{Unbreakable:1b,Damage:1,CustomModelData:18,display:{color:37129}}"
+        },
+        "frame": "challenge",
+        "title": {
+            "translate": "extensive_training:advancements.extensive_training.is_that_al_you_got"
+        },
+        "description": {
+            "translate": "extensive_training:advancements.extensive_training.is_that_al_you_got.description"
+        }
+    },
+	"parent": "extensive_training:extensive_training/root",
+    "criteria": {
+        "clear": {
+            "trigger": "minecraft:impossible"
+        }
+    },
+	"rewards": {
+		"function": "luigis_mansion:advancements/extensive_training/is_that_al_you_got"
+	}
+}

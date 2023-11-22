@@ -1,0 +1,21 @@
+{
+    "display": {
+        "icon": {
+            "item": "minecraft:diamond_pickaxe",
+            "nbt": "{Unbreakable:1b,Damage:1,CustomModelData:0}"
+        },
+        "show_toast": false,
+        "title": {
+            "translate": "3ds_remake:advancements.3ds_remake.root"
+        },
+        "description": {
+            "translate": "3ds_remake:advancements.3ds_remake.root.description"
+        },
+		"background": "3ds_remake:textures/gui/advancements/background/3ds_remake.png"
+    },
+    "criteria": {
+        "unlock": {
+            "trigger": "minecraft:impossible"
+        }
+    }
+}

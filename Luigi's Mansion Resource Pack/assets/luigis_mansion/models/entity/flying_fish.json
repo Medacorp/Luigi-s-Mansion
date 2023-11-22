@@ -2,7 +2,7 @@
 	"credit": "Made with Blockbench",
 	"textures": {
 		"0": "luigis_mansion:entity/flying_fish",
-		"particle": "#0"
+		"particle": "luigis_mansion:entity/flying_fish"
 	},
 	"elements": [
 		{
@@ -90,6 +90,10 @@
 		}
 	],
 	"display": {
+		"gui": {
+			"rotation": [12, -145, 0],
+			"scale": [1.5, 1.5, 1.5]
+		},
 		"head": {
 			"translation": [0, -7.35, 1.25],
 			"scale": [1.5, 1.5, 1.5]

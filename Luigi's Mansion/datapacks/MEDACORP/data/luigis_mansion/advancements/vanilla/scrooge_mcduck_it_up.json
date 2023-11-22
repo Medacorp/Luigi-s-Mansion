@@ -1,0 +1,24 @@
+{
+    "display": {
+        "icon": {
+            "item": "minecraft:diamond_pickaxe",
+			"nbt": "{Damage:22,Unbreakable:1b,CustomModelData:16}"
+        },
+        "title": {
+            "translate": "luigis_mansion:advancements.vanilla.scrooge_mcduck_it_up"
+        },
+        "description": {
+            "translate": "luigis_mansion:advancements.vanilla.scrooge_mcduck_it_up.description"
+        },
+        "hidden": true
+    },
+	"parent": "luigis_mansion:vanilla/making_wario_jealous",
+    "criteria": {
+        "reached_score": {
+            "trigger": "minecraft:impossible"
+        }
+    },
+	"rewards": {
+		"function": "luigis_mansion:advancements/vanilla/scrooge_mcduck_it_up"
+	}
+}

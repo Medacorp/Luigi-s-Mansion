@@ -2,7 +2,7 @@
 	"credit": "Made with Blockbench",
 	"textures": {
 		"0": "luigis_mansion:entity/spark/normal",
-		"particle": "#0"
+		"particle": "luigis_mansion:entity/spark/normal"
 	},
 	"elements": [
 		{
@@ -379,6 +379,10 @@
 		}
 	],
 	"display": {
+		"gui": {
+			"rotation": [12, -145, 0],
+			"translation": [0, 0.75, 0]
+		},
 		"head": {
 			"translation": [0, -6.25, 0]
 		}

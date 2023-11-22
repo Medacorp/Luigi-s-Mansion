@@ -1,8 +1,7 @@
 {
 	"credit": "Made with Blockbench",
 	"textures": {
-		"0": "luigis_mansion:entity/shining_ghost",
-		"psrticle": "#0"
+		"0": "luigis_mansion:entity/shining_ghost"
 	},
 	"elements": [
 		{
@@ -145,6 +144,9 @@
 		}
 	],
 	"display": {
+		"gui": {
+			"rotation": [12, -145, 0]
+		},
 		"head": {
 			"translation": [0, -7.25, 0],
 			"scale": [1.3, 1.3, 1.3]

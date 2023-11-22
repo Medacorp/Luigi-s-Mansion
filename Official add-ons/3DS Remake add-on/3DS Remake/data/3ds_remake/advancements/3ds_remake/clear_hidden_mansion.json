@@ -1,0 +1,21 @@
+{
+    "display": {
+        "icon": {
+            "item": "minecraft:diamond_pickaxe",
+			"nbt": "{Unbreakable:1b,Damage:1,CustomModelData:88}"
+        },
+        "frame": "challenge",
+        "title": {
+            "translate": "luigis_mansion:advancements.vanilla.clear_hidden_mansion"
+        },
+        "description": {
+            "translate": "3ds_remake:advancements.3ds_remake.clear_hidden_mansion.description"
+        }
+    },
+	"parent": "3ds_remake:3ds_remake/unlock_hidden_mansion",
+    "criteria": {
+        "clear": {
+            "trigger": "minecraft:impossible"
+        }
+    }
+}

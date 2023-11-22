@@ -1,0 +1,21 @@
+{
+    "display": {
+        "icon": {
+            "item": "minecraft:diamond_pickaxe",
+            "nbt": "{Damage:6,Unbreakable:1b,CustomModelData:4}"
+        },
+        "show_toast": false,
+        "title": {
+            "translate": "luigis_mansion:advancements.vanilla.root"
+        },
+        "description": {
+            "translate": "luigis_mansion:advancements.vanilla.root.description"
+        },
+		"background": "luigis_mansion:textures/gui/advancements/background/vanilla.png"
+    },
+    "criteria": {
+        "unlock": {
+            "trigger": "minecraft:impossible"
+        }
+    }
+}

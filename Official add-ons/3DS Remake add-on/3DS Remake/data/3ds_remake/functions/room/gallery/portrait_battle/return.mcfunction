@@ -22,3 +22,9 @@ execute if data storage 3ds_remake:data current_state.trophy.master{task_8:0b} r
 execute if score #temp Time matches 23 if data storage 3ds_remake:data current_state.trophy.master{task_8:0b} run function 3ds_remake:room/gallery/clear_task/master/task_8
 scoreboard players reset #temp Time
 scoreboard players reset #temp Money
+function 3ds_remake:room/gallery/interact_with_trophy/get_portrait_hard_count
+execute if score #temp Time matches 23 run advancement grant @a 3ds_remake:3ds_remake/hard_labor
+scoreboard players reset #temp Time
+function 3ds_remake:room/gallery/interact_with_trophy/get_portrait_no_damage_count
+execute if score #temp Time matches 23 run advancement grant @a 3ds_remake:3ds_remake/no_touchy
+scoreboard players reset #temp Time

@@ -1,0 +1,24 @@
+{
+    "display": {
+        "icon": {
+            "item": "minecraft:glass_pane"
+        },
+        "show_toast": false,
+        "hidden": true,
+        "title": {
+            "translate": "luigis_mansion:advancements.vanilla.unlock_hidden_mansion"
+        },
+        "description": {
+            "translate": "luigis_mansion:advancements.vanilla.unlock_hidden_mansion.description"
+        }
+    },
+	"parent": "luigis_mansion:vanilla/clear_mansion",
+    "criteria": {
+        "unlock": {
+            "trigger": "minecraft:impossible"
+        }
+    },
+	"rewards": {
+		"function": "luigis_mansion:advancements/vanilla/unlock_hidden_mansion"
+	}
+}

@@ -13,7 +13,7 @@ execute if score #training_room TrainingRoomScore matches 1 unless entity @e[tag
 scoreboard players add @s[scores={Dialog=..1388}] Dialog 1
 execute if entity @a[scores={Health=1},tag=same_room] run scoreboard players set @s[scores={Dialog=..2944}] Dialog 2944
 execute unless entity @s[scores={Dialog=1..}] run scoreboard players add @s Dialog 1
-execute if entity @s[scores={Dialog=1}] if entity @a[advancements={luigis_mansion:lab/training_room=true}] run scoreboard players set @s Dialog 844
+execute if entity @s[scores={Dialog=1}] if data storage luigis_mansion:data rooms.training_room{cleared:1b} run scoreboard players set @s Dialog 844
 execute if entity @s[scores={Dialog=1}] if score #players Totals matches 1 run tellraw @a[tag=same_room] {"translate":"chat.type.text","with":[{"translate":"luigis_mansion:entity.e_gadd","color":"green"},{"translate":"luigis_mansion:dialog.training_room.1"}]}
 execute if entity @s[scores={Dialog=1}] if score #players Totals matches 2.. run tellraw @a[tag=same_room] {"translate":"chat.type.text","with":[{"translate":"luigis_mansion:entity.e_gadd","color":"green"},{"translate":"luigis_mansion:dialog.training_room.1.more"}]}
 execute if entity @s[scores={Dialog=1}] as @a[tag=same_room] at @s run playsound luigis_mansion:entity.e_gadd.talk.mee_oomahkah_suku_suku_yahboh_yahboh neutral @s ~ ~ ~ 1
@@ -167,7 +167,6 @@ execute if entity @s[scores={Dialog=2589}] if score #players Totals matches 1 ru
 execute if entity @s[scores={Dialog=2589}] if score #players Totals matches 2.. run tellraw @a[tag=same_room] {"translate":"chat.type.text","with":[{"translate":"luigis_mansion:entity.e_gadd","color":"green"},{"translate":"luigis_mansion:dialog.training_room.26.more"}]}
 execute if entity @s[scores={Dialog=2589}] as @a[tag=same_room] at @s run playsound luigis_mansion:entity.e_gadd.talk.soy_soh_ooh_oh_tohmah_tahmehno_tahkeh_bohh neutral @s ~ ~ ~ 1
 execute if entity @s[scores={Dialog=2717}] run data modify storage luigis_mansion:data rooms.training_room merge value {cleared:1b}
-execute if entity @s[scores={Dialog=2717}] run advancement grant @a[tag=same_room] until luigis_mansion:lab/training_room
 execute if entity @s[scores={Dialog=2717}] run tag @a[tag=looking_at_map,nbt={Dimension:"minecraft:overworld"},limit=1] add regenerate_map
 execute if entity @s[scores={Dialog=2717}] as @a[tag=same_room,tag=looking_at_map] at @s run function luigis_mansion:selection_menu/game_boy_horror/map/exit
 execute if entity @s[scores={Dialog=2717}] as @a[tag=same_room,gamemode=!spectator,tag=!looking_at_map] run function luigis_mansion:entities/player/animation/set/none

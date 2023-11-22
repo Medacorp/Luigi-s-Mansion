@@ -1,0 +1,26 @@
+{
+    "display": {
+        "icon": {
+            "item": "minecraft:diamond_pickaxe",
+            "nbt": "{Unbreakable:1b,Damage:1,CustomModelData:0}"
+        },
+        "show_toast": false,
+        "hidden": false,
+        "frame": "goal",
+        "title": {
+            "translate": "e3_demo:advancements.e3_demo.clear_original_mansion"
+        },
+        "description": {
+            "translate": "e3_demo:advancements.e3_demo.clear_original_mansion.description"
+        }
+    },
+	"parent": "e3_demo:e3_demo/unlock_original_mansion",
+    "criteria": {
+        "cleared": {
+            "trigger": "minecraft:impossible"
+        }
+    },
+	"rewards": {
+		"function": "e3_demo:advancements/e3_demo/clear_original_mansion"
+	}
+}

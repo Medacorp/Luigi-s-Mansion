@@ -2858,7 +2858,7 @@
                 "damage": 0.0025,
                 "custom_model_data": 7
             },
-            "model": "minecraft:item/diamond_pickaxe"
+            "model": "luigis_mansion:entity/black_bogmire/icon"
         },
         {
             "predicate": {
@@ -3074,7 +3074,7 @@
                 "damage": 0.0025,
                 "custom_model_data": 34
             },
-            "model": "minecraft:item/diamond_pickaxe"
+            "model": "luigis_mansion:entity/boo/icon"
         },
         {
             "predicate": {
@@ -3082,7 +3082,7 @@
                 "damage": 0.0025,
                 "custom_model_data": 35
             },
-            "model": "minecraft:item/diamond_pickaxe"
+            "model": "luigis_mansion:entity/waiter/icon"
         },
         {
             "predicate": {

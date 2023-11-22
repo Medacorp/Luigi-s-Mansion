@@ -1,0 +1,23 @@
+{
+    "display": {
+        "icon": {
+            "item": "minecraft:diamond_pickaxe",
+			"nbt": "{Unbreakable:1b,Damage:5,CustomModelData:13}"
+        },
+        "title": {
+            "translate": "3ds_remake:advancements.3ds_remake.no_touchy"
+        },
+        "description": {
+            "translate": "3ds_remake:advancements.3ds_remake.no_touchy.description"
+        }
+    },
+	"parent": "3ds_remake:3ds_remake/root",
+    "criteria": {
+        "clear": {
+            "trigger": "minecraft:impossible"
+        }
+    },
+	"rewards": {
+		"function": "luigis_mansion:advancements/3ds_remake/no_touchy"
+	}
+}

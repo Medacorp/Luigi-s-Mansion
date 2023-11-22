@@ -1,0 +1,24 @@
+{
+    "display": {
+        "icon": {
+            "item": "minecraft:diamond_pickaxe",
+			"nbt": "{Damage:22,Unbreakable:1b,CustomModelData:14}"
+        },
+        "title": {
+            "translate": "luigis_mansion:advancements.vanilla.spare_some_change"
+        },
+        "description": {
+            "translate": "luigis_mansion:advancements.vanilla.spare_some_change.description"
+        },
+        "hidden": true
+    },
+	"parent": "luigis_mansion:vanilla/root",
+    "criteria": {
+        "only_king_boo_red_diamond": {
+            "trigger": "minecraft:impossible"
+        }
+    },
+	"rewards": {
+		"function": "luigis_mansion:advancements/vanilla/spare_some_change"
+	}
+}

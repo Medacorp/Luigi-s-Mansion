@@ -1,0 +1,22 @@
+
+{
+    "display": {
+        "icon": {
+            "item": "minecraft:diamond_pickaxe",
+            "nbt": "{Damage:6,Unbreakable:1b,CustomModelData:16}"
+        },
+        "show_toast": false,
+        "title": {
+            "translate": "e3_demo:advancements.e3_demo.root"
+        },
+        "description": {
+            "translate": "e3_demo:advancements.e3_demo.root.description"
+        },
+		"background": "e3_demo:textures/gui/advancements/background/e3_demo.png"
+    },
+    "criteria": {
+        "unlock": {
+            "trigger": "minecraft:impossible"
+        }
+    }
+}

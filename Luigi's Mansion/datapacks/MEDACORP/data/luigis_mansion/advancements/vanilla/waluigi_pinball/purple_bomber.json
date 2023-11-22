@@ -1,0 +1,25 @@
+{
+    "display": {
+        "icon": {
+            "item": "minecraft:leather_chestplate",
+			"nbt": "{Unbreakable:1b,Damage:4,CustomModelData:7,display:{color:12255436}}"
+        },
+        "show_toast": false,
+        "announce_to_chat": false,
+        "title": {
+            "translate": "luigis_mansion:entity.purple_bomber"
+        },
+        "description": {
+            "translate": "luigis_mansion:advancements.vanilla.waluigi_pinball.sub_description"
+        }
+    },
+	"parent": "luigis_mansion:vanilla/waluigi_pinball/ceiling_surprise",
+    "criteria": {
+        "bumped_into": {
+            "trigger": "minecraft:impossible"
+        }
+    },
+	"rewards": {
+		"function": "luigis_mansion:advancements/vanilla/waluigi_pinball/purple_bomber"
+	}
+}

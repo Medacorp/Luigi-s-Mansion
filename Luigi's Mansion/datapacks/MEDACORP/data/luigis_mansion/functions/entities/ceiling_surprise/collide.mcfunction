@@ -1,4 +1,4 @@
-advancement grant @a[tag=!spectator,scores={Invulnerable=0},distance=..0.7] only luigis_mansion:challenges/waluigi_pinball ceiling_surprise
+advancement grant @a[tag=!spectator,scores={Invulnerable=0},distance=..0.7] only luigis_mansion:vanilla/waluigi_pinball/ceiling_surprise
 execute if entity @a[tag=!spectator,scores={Invulnerable=0},distance=..0.7] run scoreboard players set @s[tag=!appear] ActionTime 0
 execute if entity @a[tag=!spectator,scores={Invulnerable=0},distance=..0.7] run tag @s[scores={AttackType=1}] remove laugh
 execute if entity @a[tag=!spectator,scores={Invulnerable=0},distance=..0.7] run tag @s remove complain

@@ -1,4 +1,4 @@
-execute if entity @s[scores={Dialog=56}] run tellraw @a[tag=same_room,advancements={luigis_mansion:lab/unlocked_hidden_mansion=true}] {"translate":"luigis_mansion:dialog.underground_lab.hidden","color":"green","clickEvent":{"action":"run_command","value":"/trigger MansionChoice set 1"}}
+execute if entity @s[scores={Dialog=56}] run tellraw @a[tag=same_room,advancements={luigis_mansion:vanilla/unlock_hidden_mansion=true}] {"translate":"luigis_mansion:dialog.underground_lab.hidden","color":"green","clickEvent":{"action":"run_command","value":"/trigger MansionChoice set 1"}}
 execute if entity @s[scores={Dialog=58}] if entity @a[scores={MansionChoice=1},limit=1] unless score #mansion_type Selected matches 1 run tag @s add changing_mansion
 execute if entity @s[scores={Dialog=58}] if entity @a[scores={MansionChoice=1},limit=1] unless score #mansion_data_index Selected matches 0 run tag @s add changing_mansion
 execute if entity @s[scores={Dialog=58},tag=changing_mansion] if entity @a[scores={MansionChoice=1},limit=1] if entity @a[scores={Room=1..},gamemode=!spectator,limit=1] run tag @s add cannot_change

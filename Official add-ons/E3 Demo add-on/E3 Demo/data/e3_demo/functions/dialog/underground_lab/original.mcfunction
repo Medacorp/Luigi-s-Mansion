@@ -1,4 +1,4 @@
-execute if entity @s[scores={Dialog=56}] run tellraw @a[tag=same_room,advancements={e3_demo:lab/unlocked_original_mansion=true}] {"translate":"e3_demo:dialog.underground_lab.original","color":"green","clickEvent":{"action":"run_command","value":"/trigger MansionChoice set 2"}}
+execute if entity @s[scores={Dialog=56}] run tellraw @a[tag=same_room,advancements={e3_demo:e3_demo/unlock_original_mansion=true}] {"translate":"e3_demo:dialog.underground_lab.original","color":"green","clickEvent":{"action":"run_command","value":"/trigger MansionChoice set 2"}}
 execute if entity @s[scores={Dialog=58}] if entity @a[scores={MansionChoice=2},limit=1] unless score #mansion_type Selected matches 2 run tag @s add changing_mansion
 execute if entity @s[scores={Dialog=58}] if entity @a[scores={MansionChoice=2},limit=1] unless score #mansion_data_index Selected matches 2 run tag @s add changing_mansion
 execute if entity @s[scores={Dialog=58},tag=changing_mansion] if entity @a[scores={MansionChoice=2},limit=1] if entity @a[scores={Room=1..},gamemode=!spectator,limit=1] run tag @s add cannot_change

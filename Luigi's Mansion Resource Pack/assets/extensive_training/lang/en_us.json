@@ -1,5 +1,11 @@
 { 
-"extensive_training:advancements.amiibo.koopa": "Koopa",
+"extensive_training:advancements.3ds_remake.amiibo.koopa": "Koopa",
+"extensive_training:advancements.extensive_training.is_that_all_you_got": "Is That All You Got?",
+"extensive_training:advancements.extensive_training.is_that_all_you_got.description": "Get 150 ghosts in the Endless training room program on hard difficulty",
+"extensive_training:advancements.extensive_training.mastermind": "Mastermind!",
+"extensive_training:advancements.extensive_training.mastermind.description": "Clear the Speedrun training room program without getting damage on easy or higher difficulty",
+"extensive_training:advancements.extensive_training.root": "Extensive Training",
+"extensive_training:advancements.extensive_training.root.description": "Advancements part of the Extensive Training add-on",
 "extensive_training:data_pack.description": "Extensive Training data pack",
 "extensive_training:dialog.endless.1": "Catch as many ghosts as you can, %s!",
 "extensive_training:dialog.endless.1.more": "Catch as many ghosts as you can, kiddos!",

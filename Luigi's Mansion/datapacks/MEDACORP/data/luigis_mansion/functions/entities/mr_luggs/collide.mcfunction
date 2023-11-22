@@ -1,4 +1,4 @@
-advancement grant @a[tag=!spectator,scores={Invulnerable=0},distance=..1.6] only luigis_mansion:challenges/waluigi_pinball mr_luggs
+advancement grant @a[tag=!spectator,scores={Invulnerable=0},distance=..1.6] only luigis_mansion:vanilla/waluigi_pinball/mr_luggs
 data modify storage luigis_mansion:data damage set value {method:"luigis_mansion:walked_into",amount:0,knockback:"medium",attacker:-1,no_delete:1b}
 data modify storage luigis_mansion:data damage.amount set from entity @s ArmorItems[3].tag.damage.collision
 execute store result storage luigis_mansion:data damage.attacker int 1 run scoreboard players get @s GhostNr

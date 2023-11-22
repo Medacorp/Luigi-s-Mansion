@@ -25,10 +25,10 @@ execute if entity @s[scores={GBHDialog=440}] as @a[tag=same_room] at @s run play
 execute if entity @s[scores={GBHDialog=504}] as @a[gamemode=!spectator,tag=!looking_at_map] run function luigis_mansion:entities/player/animation/set/nod
 execute if entity @s[scores={GBHDialog=524}] as @a[gamemode=!spectator,tag=!looking_at_map] run function luigis_mansion:entities/player/animation/set/none
 execute if entity @s[scores={GBHDialog=524}] as @a run function luigis_mansion:room/ghost_portrificationizer_room/warp_to
-execute if entity @s[scores={GBHDialog=526},advancements={luigis_mansion:lab/ghost_portrificationizer_room=true}] run tag @e[tag=e_gadd,scores={Room=-3},limit=1] add return_dialog
-execute if entity @s[scores={GBHDialog=526},advancements={luigis_mansion:lab/ghost_portrificationizer_room=false}] run tag @e[tag=e_gadd,scores={Room=-3},limit=1] add talk
-execute if entity @s[scores={GBHDialog=526},advancements={luigis_mansion:lab/ghost_portrificationizer_room=false}] run tag @e[tag=e_gadd,scores={Room=-3},limit=1] add ghost_portrificationizer_room_dialog
-execute if entity @s[scores={GBHDialog=526},advancements={luigis_mansion:lab/ghost_portrificationizer_room=false}] run scoreboard players set @e[tag=e_gadd,scores={Room=-3},limit=1] Dialog 529
+execute if entity @s[scores={GBHDialog=526}] if data storage luigis_mansion:data rooms.ghost_portrificationizer_room{cleared:1b} run tag @e[tag=e_gadd,scores={Room=-3},limit=1] add return_dialog
+execute if entity @s[scores={GBHDialog=526}] if data storage luigis_mansion:data rooms.ghost_portrificationizer_room{cleared:0b} run tag @e[tag=e_gadd,scores={Room=-3},limit=1] add talk
+execute if entity @s[scores={GBHDialog=526}] if data storage luigis_mansion:data rooms.ghost_portrificationizer_room{cleared:0b} run tag @e[tag=e_gadd,scores={Room=-3},limit=1] add ghost_portrificationizer_room_dialog
+execute if entity @s[scores={GBHDialog=526}] if data storage luigis_mansion:data rooms.ghost_portrificationizer_room{cleared:0b} run scoreboard players set @e[tag=e_gadd,scores={Room=-3},limit=1] Dialog 529
 scoreboard players set @s[scores={GBHDialog=526}] GBHCall 0
 scoreboard players set @s[scores={GBHDialog=526}] GBHWait 0
 scoreboard players reset @s[scores={GBHDialog=526}] GBHDialog

@@ -1,0 +1,25 @@
+{
+    "display": {
+        "icon": {
+            "item": "minecraft:leather_chestplate",
+			"nbt": "{Unbreakable:1b,Damage:4,CustomModelData:6,display:{color:16717824}}"
+        },
+        "show_toast": false,
+        "announce_to_chat": false,
+        "title": {
+            "translate": "luigis_mansion:entity.ghost_guy"
+        },
+        "description": {
+            "translate": "luigis_mansion:advancements.vanilla.waluigi_pinball.sub_description"
+        }
+    },
+	"parent": "luigis_mansion:vanilla/waluigi_pinball/garbage_can_ghost",
+    "criteria": {
+        "bumped_into": {
+            "trigger": "minecraft:impossible"
+        }
+    },
+	"rewards": {
+		"function": "luigis_mansion:advancements/vanilla/waluigi_pinball/ghost_guy"
+	}
+}

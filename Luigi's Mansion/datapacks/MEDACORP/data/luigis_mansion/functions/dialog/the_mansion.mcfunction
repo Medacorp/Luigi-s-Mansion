@@ -65,5 +65,5 @@ execute if entity @s[scores={Dialog=1552}] run playsound luigis_mansion:entity.e
 execute if entity @s[scores={Dialog=1712}] as @a[tag=same_room,tag=!spectator,tag=!looking_at_map] run function luigis_mansion:entities/player/animation/set/enthusiastic
 execute if entity @s[scores={Dialog=1732}] as @a run function luigis_mansion:room/training_room/warp_to
 execute if entity @s[scores={Dialog=1732}] run data modify storage luigis_mansion:data rooms.underground_lab merge value {cleared:1b}
-execute if entity @s[scores={Dialog=1732}] run advancement grant @a until luigis_mansion:lab/underground_lab
+execute if entity @s[scores={Dialog=1732}] run advancement grant @a only luigis_mansion:vanilla/unlock_mansion
 execute if entity @s[scores={Dialog=1732}] run tag @a[tag=looking_at_map,nbt={Dimension:"minecraft:overworld"},limit=1] add regenerate_map

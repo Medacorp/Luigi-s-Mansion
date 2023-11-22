@@ -1,0 +1,22 @@
+
+{
+    "display": {
+        "icon": {
+            "item": "minecraft:diamond_pickaxe",
+            "nbt": "{Damage:6,Unbreakable:1b,CustomModelData:4}"
+        },
+        "show_toast": false,
+        "title": {
+            "translate": "extensive_training:advancements.extensive_training.root"
+        },
+        "description": {
+            "translate": "extensive_training:advancements.extensive_training.root.description"
+        },
+		"background": "extensive_training:textures/gui/advancements/background/extensive_training.png"
+    },
+    "criteria": {
+        "unlock": {
+            "trigger": "minecraft:impossible"
+        }
+    }
+}

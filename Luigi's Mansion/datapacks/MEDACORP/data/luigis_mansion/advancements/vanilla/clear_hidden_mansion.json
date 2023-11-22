@@ -1,0 +1,25 @@
+{
+    "display": {
+        "icon": {
+            "item": "minecraft:diamond_pickaxe",
+			"nbt": "{Unbreakable:1b,Damage:4,CustomModelData:34}"
+        },
+        "show_toast": false,
+        "frame": "challenge",
+        "title": {
+            "translate": "luigis_mansion:advancements.vanilla.clear_hidden_mansion"
+        },
+        "description": {
+            "translate": "luigis_mansion:advancements.vanilla.clear_hidden_mansion.description"
+        }
+    },
+	"parent": "luigis_mansion:vanilla/unlock_hidden_mansion",
+    "criteria": {
+        "clear": {
+            "trigger": "minecraft:impossible"
+        }
+    },
+	"rewards": {
+		"function": "luigis_mansion:advancements/vanilla/clear_hidden_mansion"
+	}
+}

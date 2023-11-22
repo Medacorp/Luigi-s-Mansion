@@ -1,3 +1,4 @@
+execute store result score #global_difficulty Selected run data get storage luigis_mansion:data current_state.current_data.lowest_difficulty
 execute unless score #freeze_timer Selected matches 1 run gamemode spectator @s[tag=stop_portrait_battle]
 execute unless score #freeze_timer Selected matches 1 run tag @s remove stop_portrait_battle
 execute store result score #temp Time run data get storage luigis_mansion:data current_state.current_data.in_mansion_time

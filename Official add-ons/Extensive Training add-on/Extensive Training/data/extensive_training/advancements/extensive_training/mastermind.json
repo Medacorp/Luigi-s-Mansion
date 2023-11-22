@@ -1,0 +1,24 @@
+{
+    "display": {
+        "icon": {
+            "item": "minecraft:diamond_pickaxe",
+			"nbt": "{Unbreakable:1b,Damage:5,CustomModelData:13}"
+        },
+        "frame": "challenge",
+        "title": {
+            "translate": "extensive_training:advancements.extensive_training.mastermind"
+        },
+        "description": {
+            "translate": "extensive_training:advancements.extensive_training.mastermind.description"
+        }
+    },
+	"parent": "extensive_training:extensive_training/root",
+    "criteria": {
+        "clear": {
+            "trigger": "minecraft:impossible"
+        }
+    },
+	"rewards": {
+		"function": "luigis_mansion:advancements/extensive_training/mastermind"
+	}
+}

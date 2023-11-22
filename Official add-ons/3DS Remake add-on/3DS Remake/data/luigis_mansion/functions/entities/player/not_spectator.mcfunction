@@ -25,7 +25,7 @@ execute unless entity @s[tag=riding_poltergust,scores={KnockbackType=0},tag=!loo
 execute unless entity @a[scores={GBHCall=1..},limit=1] rotated ~ 0 positioned ^ ^ ^-4 run function luigis_mansion:entities/player/spawn_ghosts
 
 function luigis_mansion:entities/player/health_display
-clear @s[advancements={luigis_mansion:lab/lab=true}] minecraft:diamond_pickaxe{luigis_mansion:{id:"luigis_mansion:contest_reward_map"}}
+execute if data storage luigis_mansion:data rooms.underground_lab{cleared:1b} run clear @s minecraft:diamond_pickaxe{luigis_mansion:{id:"luigis_mansion:contest_reward_map"}}
 
 execute if entity @s[scores={Health=1..}] store result score @s Damage run data get entity @s Health
 execute if entity @s[scores={Damage=..99}] run function luigis_mansion:entities/player/heal

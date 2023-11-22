@@ -3,6 +3,7 @@ execute if entity @a[scores={Health=..0},tag=same_room] run scoreboard players s
 scoreboard players add @s[scores={Dialog=..264}] Dialog 1
 execute unless entity @s[scores={Dialog=1..}] run scoreboard players add @s Dialog 1
 execute if entity @s[scores={Dialog=1..345}] as @a[tag=same_room] run function luigis_mansion:other/music/set/training
+execute if entity @s[scores={Dialog=1}] run scoreboard players set #training_room Selected 3
 execute if entity @s[scores={Dialog=1}] if score #players Totals matches 1 run tellraw @a[tag=same_room] {"translate":"chat.type.text","with":[{"translate":"luigis_mansion:entity.e_gadd","color":"green"},{"translate":"extensive_training:dialog.endless.1","with":[{"selector":"@p[gamemode=!spectator]"}]}]}
 execute if entity @s[scores={Dialog=1}] if score #players Totals matches 2.. run tellraw @a[tag=same_room] {"translate":"chat.type.text","with":[{"translate":"luigis_mansion:entity.e_gadd","color":"green"},{"translate":"extensive_training:dialog.endless.1.more"}]}
 execute if entity @s[scores={Dialog=1}] as @a[tag=same_room] at @s run playsound luigis_mansion:entity.e_gadd.talk.ohyahmah_luigi_ck_ck neutral @s ~ ~ ~ 1
@@ -35,6 +36,8 @@ execute if entity @s[scores={Dialog=298}] if score #players Totals matches 1 run
 execute if entity @s[scores={Dialog=298}] if score #players Totals matches 2.. run tellraw @a[tag=same_room] {"translate":"chat.type.text","with":[{"translate":"luigis_mansion:entity.e_gadd","color":"green"},{"translate":"extensive_training:dialog.endless.5.more"}]}
 execute if entity @s[scores={Dialog=298}] as @a[tag=same_room] at @s run playsound luigis_mansion:entity.e_gadd.talk.oui_oomahkah neutral @s ~ ~ ~ 1
 execute if entity @s[scores={Dialog=346..}] as @a[tag=same_room] run function luigis_mansion:other/music/set/training_results
+scoreboard players operation #training_room Selected < #global_difficulty Selected
+execute if entity @s[scores={Dialog=346}] if score #training_room TrainingRoomScore matches 150.. if score #training_room Selected matches 3 run advancement grant @a[tag=same_room] extensive_training:extensive_training/is_that_all_you_got
 execute if entity @s[scores={Dialog=346}] if score #training_room TrainingRoomScore matches 1.. run summon minecraft:firework_rocket 788 80 -8 {LifeTime:0,Life:0,FireworksItem:{id:"minecraft:firework_rocket",Count:1b,tag:{Fireworks:{Flight:0b,Explosions:[{Colors:[I;14862336],Type:0b,Trail:0b,Flicker:0b}]}}}}
 execute if entity @s[scores={Dialog=351}] if score #training_room TrainingRoomScore matches 1.. run summon minecraft:firework_rocket 788 80 -4 {LifeTime:0,Life:0,FireworksItem:{id:"minecraft:firework_rocket",Count:1b,tag:{Fireworks:{Flight:0b,Explosions:[{Colors:[I;14862336],Type:0b,Trail:0b,Flicker:0b}]}}}}
 execute if entity @s[scores={Dialog=356}] if score #training_room TrainingRoomScore matches 50.. run summon minecraft:firework_rocket 788 80 -12 {LifeTime:0,Life:0,FireworksItem:{id:"minecraft:firework_rocket",Count:1b,tag:{Fireworks:{Flight:0b,Explosions:[{Colors:[I;14862336],Type:0b,Trail:0b,Flicker:0b}]}}}}

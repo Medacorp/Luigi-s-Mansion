@@ -575,6 +575,86 @@
         },
         {
             "predicate": {
+                "damaged": 0,
+                "damage": 0.05,
+                "custom_model_data": 0
+            },
+            "model": "luigis_mansion:entity/bat/icon"
+        },
+        {
+            "predicate": {
+                "damaged": 0,
+                "damage": 0.05,
+                "custom_model_data": 1
+            },
+            "model": "luigis_mansion:entity/bowling_ghost/icon"
+        },
+        {
+            "predicate": {
+                "damaged": 0,
+                "damage": 0.05,
+                "custom_model_data": 2
+            },
+            "model": "luigis_mansion:entity/ghost/icon"
+        },
+        {
+            "predicate": {
+                "damaged": 0,
+                "damage": 0.05,
+                "custom_model_data": 3
+            },
+            "model": "luigis_mansion:entity/puncher/icon"
+        },
+        {
+            "predicate": {
+                "damaged": 0,
+                "damage": 0.05,
+                "custom_model_data": 4
+            },
+            "model": "luigis_mansion:entity/twirler/icon"
+        },
+        {
+            "predicate": {
+                "damaged": 0,
+                "damage": 0.05,
+                "custom_model_data": 5
+            },
+            "model": "luigis_mansion:entity/grabbing_ghost/icon"
+        },
+        {
+            "predicate": {
+                "damaged": 0,
+                "damage": 0.05,
+                "custom_model_data": 6
+            },
+            "model": "luigis_mansion:entity/ghost_guy/icon"
+        },
+        {
+            "predicate": {
+                "damaged": 0,
+                "damage": 0.05,
+                "custom_model_data": 7
+            },
+            "model": "luigis_mansion:entity/ceiling_ghost/icon"
+        },
+        {
+            "predicate": {
+                "damaged": 0,
+                "damage": 0.05,
+                "custom_model_data": 8
+            },
+            "model": "luigis_mansion:entity/garbage_can_ghost/icon"
+        },
+        {
+            "predicate": {
+                "damaged": 0,
+                "damage": 0.05,
+                "custom_model_data": 9
+            },
+            "model": "e3_demo:entity/ghost/icon"
+        },
+        {
+            "predicate": {
                 "damaged": 1
             },
             "model": "minecraft:item/leather_chestplate"

@@ -1,0 +1,23 @@
+{
+    "display": {
+        "icon": {
+            "item": "minecraft:painting"
+        },
+        "title": {
+            "translate": "luigis_mansion:advancements.vanilla.full_to_bursting_you_say"
+        },
+        "description": {
+            "translate": "luigis_mansion:advancements.vanilla.full_to_bursting_you_say.description"
+        },
+        "hidden": true
+    },
+	"parent": "luigis_mansion:vanilla/root",
+    "criteria": {
+        "portrificationize_all": {
+            "trigger": "minecraft:impossible"
+        }
+    },
+	"rewards": {
+		"function": "luigis_mansion:advancements/vanilla/full_to_bursting_you_say"
+	}
+}

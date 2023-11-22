@@ -1,0 +1,20 @@
+{
+    "display": {
+        "icon": {
+            "item": "minecraft:blaze_powder"
+        },
+        "frame": "challenge",
+        "title": {
+            "translate": "3ds_remake:advancements.vanilla.clear_gcn_hidden_mansion"
+        },
+        "description": {
+            "translate": "3ds_remake:advancements.vanilla.clear_gcn_hidden_mansion.description"
+        }
+    },
+	"parent": "luigis_mansion:vanilla/unlock_hidden_mansion",
+    "criteria": {
+        "cleared": {
+            "trigger": "minecraft:impossible"
+        }
+    }
+}
