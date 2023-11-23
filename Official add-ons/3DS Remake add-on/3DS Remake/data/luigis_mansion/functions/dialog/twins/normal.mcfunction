@@ -53,6 +53,6 @@ execute if entity @s[scores={Dialog=334}] run scoreboard players set @a TwinsCho
 tag @s[scores={Dialog=334}] add remove_from_existence
 execute if entity @s[tag=remove_from_existence] as @a[tag=same_room] run function luigis_mansion:other/music/set/silence
 execute if entity @s[tag=remove_from_existence] run scoreboard players reset @a[scores={TwinsChoice=0..}] TwinsChoice
-execute if entity @s[tag=remove_from_existence] run tag @e[nbt={ArmorItems:[{tag:{namespace:"luigis_mansion",id:"henry"}}]},tag=dialog,limit=1] add remove_from_existence
-execute if entity @s[tag=remove_from_existence] run teleport @e[nbt={ArmorItems:[{tag:{namespace:"luigis_mansion",id:"henry"}}]},tag=dialog,limit=1] ~ ~-100 ~
+execute if entity @s[tag=remove_from_existence] run tag @e[nbt={ArmorItems:[{tag:{namespace:"luigis_mansion",id:"henry"}}]},tag=no_ai,limit=1] add remove_from_existence
+execute if entity @s[tag=remove_from_existence] run teleport @e[nbt={ArmorItems:[{tag:{namespace:"luigis_mansion",id:"henry"}}]},tag=no_ai,limit=1] ~ ~-100 ~
 teleport @s[tag=remove_from_existence] ~ ~-100 ~

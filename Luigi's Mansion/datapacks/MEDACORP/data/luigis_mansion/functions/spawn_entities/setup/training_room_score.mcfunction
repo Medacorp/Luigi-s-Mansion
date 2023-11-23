@@ -1,0 +1,1 @@
+execute if data storage luigis_mansion:data entity.training_room_score store result score @e[tag=this_entity,limit=1] TrainingRoomScore run data get storage luigis_mansion:data entity.training_room_score

@@ -142,7 +142,7 @@ teleport @s[scores={Dialog=500}] 770 81 15
 execute if entity @s[scores={Dialog=590}] run playsound luigis_mansion:entity.mario.wohh_hoo_hoo neutral @a[tag=same_room] ~ ~ ~ 1
 execute if entity @s[scores={Dialog=630}] run playsound luigis_mansion:entity.mario.oof neutral @a[tag=same_room] ~ ~ ~ 1
 execute if entity @s[scores={Dialog=630}] run particle minecraft:cloud 774 78.5 19.8 0.2 0.2 0 0 10
-execute if entity @s[scores={Dialog=690}] positioned 774 77 20 run function luigis_mansion:spawn_entities/mario/normal
+execute if entity @s[scores={Dialog=690}] positioned 774 77 20 rotated -180 0 run function luigis_mansion:spawn_entities/mario/normal
 tag @s[scores={Dialog=690}] add dead
 execute at @s run teleport @s ~ ~-0.4 ~
 scoreboard players reset #temp Time

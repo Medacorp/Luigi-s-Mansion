@@ -7,8 +7,8 @@ execute if entity @s[tag=water_elemental_source,tag=enabled] unless entity @s[ta
 execute if entity @s[tag=ice_elemental_source,tag=enabled] unless entity @s[tag=elemental_must_be_searched,scores={ActionTime=0..}] run function luigis_mansion:entities/furniture/type/tick/elemental_source/ice
 
 scoreboard players add @s[tag=!enabled,tag=elemental_timer] FurnitureElementTimer 1
-tag @s[tag=!enabled,tag=elemental_timer,scores={FurnitureElementTimer=600}] add enabled
-execute unless entity @s[tag=!remove_from_existence,tag=!dead] run tag @s[tag=enabled] add lit
+tag @s[tag=!enabled,tag=elemental_timer,scores={FurnitureElementTimer=100}] add enabled
+tag @s[tag=enabled,tag=!remove_from_existence,tag=!dead] add lit
 scoreboard players reset @s[tag=enabled] FurnitureElementTimer
 
 scoreboard players reset #temp ElementalNr

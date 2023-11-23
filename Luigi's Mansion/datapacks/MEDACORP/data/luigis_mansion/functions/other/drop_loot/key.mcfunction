@@ -1,1 +1,1 @@
-execute if data storage luigis_mansion:data drop_loot.contents.luigis_mansion.key[0] run function luigis_mansion:other/drop_loot/loop/key with storage luigis_mansion:data drop_loot.contents.luigis_mansion.key[0]
+execute if data storage luigis_mansion:data drop_loot.contents.luigis_mansion.key[0] run function luigis_mansion:other/drop_loot/loop/key

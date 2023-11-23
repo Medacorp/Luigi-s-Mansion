@@ -4,8 +4,6 @@
         "3ds_remake:room/hidden/dining_room/load/lights",
         "3ds_remake:room/hidden/dining_room/load/cobweb_1",
         "3ds_remake:room/hidden/dining_room/load/cobweb_2",
-        "3ds_remake:room/hidden/dining_room/load/fire_1",
-        "3ds_remake:room/hidden/dining_room/load/fire_2",
         "3ds_remake:room/hidden/dining_room/load/hallway_4_door",
         "3ds_remake:room/hidden/dining_room/load/kitchen_door",
         "3ds_remake:room/hidden/dining_room/load/painting_1",
@@ -13,6 +11,8 @@
         "3ds_remake:room/hidden/dining_room/load/painting_3",
         "3ds_remake:room/hidden/dining_room/load/painting_4",
         "3ds_remake:room/hidden/dining_room/load/room_clear_chest",
+        "3ds_remake:room/hidden/dining_room/load/torch_1",
+        "3ds_remake:room/hidden/dining_room/load/torch_2",
         "3ds_remake:room/hidden/dining_room/load/wooden_triple_huge_candelabra_1",
         "3ds_remake:room/hidden/dining_room/load/wooden_triple_huge_candelabra_2"
 	]

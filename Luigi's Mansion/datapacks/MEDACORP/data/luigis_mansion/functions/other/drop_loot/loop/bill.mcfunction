@@ -1,10 +1,5 @@
+data modify storage luigis_mansion:data entity set from storage luigis_mansion:data drop_loot.contents.luigis_mansion.bill[0]
 function luigis_mansion:spawn_entities/item/bill
-execute if data storage luigis_mansion:data drop_loot.contents.luigis_mansion.bill[0].variant store result score #temp Money run data get storage luigis_mansion:data drop_loot.contents.luigis_mansion.bill[0].variant
-execute if score #temp Money matches 0 run data modify entity @e[tag=this_entity,limit=1] ArmorItems[3].tag.CustomModelData set value 10
-execute if score #temp Money matches 1 run data modify entity @e[tag=this_entity,limit=1] ArmorItems[3].tag.CustomModelData set value 11
-scoreboard players reset #temp Money
-execute if data storage luigis_mansion:data drop_loot.contents.luigis_mansion.bill[0].rotation run data modify entity @e[tag=this_entity,limit=1] Rotation set from storage luigis_mansion:data drop_loot.contents.luigis_mansion.bill[0].rotation
-tag @e[tag=this_entity,limit=1] remove this_entity
 data remove storage luigis_mansion:data drop_loot.contents.luigis_mansion.bill[0]
 scoreboard players remove #temp Time 1
 execute if data storage luigis_mansion:data drop_loot.contents.luigis_mansion.bill[0] run function luigis_mansion:other/drop_loot/loop/bill

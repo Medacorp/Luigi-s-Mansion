@@ -1,0 +1,1 @@
+execute if data storage luigis_mansion:data entity.max_health store result score @e[tag=this_entity,limit=1] MaxHealth run data get storage luigis_mansion:data entity.max_health

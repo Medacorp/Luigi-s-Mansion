@@ -12,18 +12,6 @@ scoreboard players set @e[tag=this_entity,limit=1] SecondFleeDamage -1
 scoreboard players set @e[tag=this_entity,limit=1] EntitySizeRadius 5
 scoreboard players set @e[tag=this_entity,limit=1] EntityYOffset 14
 execute if entity @s[tag=hidden_boo] run tag @e[tag=this_entity,limit=1] add say_message
-data modify entity @e[tag=this_entity,limit=1] Tags append from storage luigis_mansion:data entity.id
-data modify entity @e[tag=this_entity,limit=1] CustomName set from storage luigis_mansion:data entity.name
-data modify entity @e[tag=this_entity,limit=1] Rotation set from storage luigis_mansion:data entity.rotation
-execute if data storage luigis_mansion:data entity{can_attack:1b} run tag @e[tag=this_entity,limit=1] add can_attack
-execute if data storage luigis_mansion:data entity{show_health:0b} run tag @e[tag=this_entity,limit=1] remove show_health
-execute if data storage luigis_mansion:data entity{show_health:0b} run tag @e[tag=this_entity,limit=1] remove affected_by_vacuum
-execute if data storage luigis_mansion:data entity{show_health:0b} run tag @e[tag=this_entity,limit=1] remove affected_by_ice
-execute as @e[tag=this_entity,limit=1] store result score @s Health store result score @s LastHealth run data get storage luigis_mansion:data entity.health
-execute as @e[tag=this_entity,limit=1] store result score @s Room run data get storage luigis_mansion:data entity.room
-execute as @e[tag=this_entity,limit=1] store result score @s Move run data get storage luigis_mansion:data entity.speed
-execute if data storage luigis_mansion:data entity.loot run data modify entity @e[tag=this_entity,limit=1] ArmorItems[3].tag.loot set from storage luigis_mansion:data entity.loot
-execute if data storage luigis_mansion:data entity.damage run data modify entity @e[tag=this_entity,limit=1] ArmorItems[3].tag.damage set from storage luigis_mansion:data entity.damage
-data modify entity @e[tag=this_entity,limit=1] Tags append from storage luigis_mansion:data entity.other_data[]
+function luigis_mansion:spawn_entities/setup/default
 tag @e[tag=this_entity,limit=1] remove this_entity
 data remove storage luigis_mansion:data entity

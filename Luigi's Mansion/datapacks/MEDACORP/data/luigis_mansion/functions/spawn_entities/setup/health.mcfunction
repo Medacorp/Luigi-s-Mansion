@@ -1,0 +1,2 @@
+execute if data storage luigis_mansion:data entity.health as @e[tag=this_entity,limit=1] store result score @s Health store result score @s LastHealth run data get storage luigis_mansion:data entity.health
+execute if data storage luigis_mansion:data entity.health store result score @e[tag=this_entity,tag=portrait_ghost,limit=1] PreviousHealth run data get storage luigis_mansion:data entity.health

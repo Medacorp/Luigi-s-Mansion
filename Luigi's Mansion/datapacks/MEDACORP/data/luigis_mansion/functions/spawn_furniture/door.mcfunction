@@ -24,6 +24,6 @@ execute as @e[tag=this_entity,limit=1] store result score @s PositionY run data 
 execute as @e[tag=this_entity,limit=1] store result score @s PositionZ run data get entity @s Pos[2] 10
 #scoreboard players add @e[tag=this_entity,type=minecraft:armor_stand,limit=1] PositionY 14
 execute if entity @e[tag=this_entity,tag=dead,limit=1] if score #debug_messages Selected matches 1.. run tellraw @a {"translate":"luigis_mansion:message.debug.format","with":[{"translate":"luigis_mansion:message.debug","color":"gold"},{"translate":"luigis_mansion:message.debug.door","with":[{"selector":"@e[tag=this_entity,limit=1]"},{"selector":"@e[tag=this_entity,limit=1]"}]}]}
-execute unless entity @e[tag=this_entity,tag=dead,limit=1] if score #debug_messages Selected matches 2.. run tellraw @a {"translate":"luigis_mansion:message.debug.format","with":[{"translate":"luigis_mansion:message.debug","color":"gold"},{"translate":"luigis_mansion:message.debug.spawned_furniture","with":[{"selector":"@e[tag=this_entity,limit=1]"}]}]}
+execute unless entity @e[tag=this_entity,tag=dead,limit=1] run function luigis_mansion:spawn_furniture/setup/debug_spawn
 data remove storage luigis_mansion:data furniture
 tag @e[tag=this_entity,limit=1] remove this_entity

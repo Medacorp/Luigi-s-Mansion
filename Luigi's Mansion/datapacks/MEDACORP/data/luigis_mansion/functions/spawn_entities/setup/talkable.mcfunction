@@ -1,0 +1,2 @@
+execute if data storage luigis_mansion:data entity{can_talk_to:0b} run tag @e[tag=this_entity,limit=1] remove can_talk_to
+execute if data storage luigis_mansion:data entity{can_talk_to:1b} run tag @e[tag=this_entity,limit=1] add can_talk_to

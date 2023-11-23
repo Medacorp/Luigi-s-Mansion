@@ -10,6 +10,7 @@ execute as @e[tag=temp,tag=to_spawn_location,limit=1] positioned as @s run funct
 scoreboard players reset #temp Time
 scoreboard players reset #temp2 Time
 scoreboard players reset #temp3 Time
+execute positioned as @e[tag=temp,tag=!to_spawn_location,limit=1] if entity @e[distance=..0.1,tag=ghost,tag=hidden,tag=new_ghost] run playsound luigis_mansion:music.solve_puzzle ambient @a[tag=same_room] ~ ~ ~ 1000
 execute positioned as @e[tag=temp,tag=!to_spawn_location,limit=1] run tag @e[distance=..0.1,tag=ghost,tag=hidden,tag=new_ghost] add spawn
 execute positioned as @e[tag=temp,tag=!to_spawn_location,limit=1] as @e[distance=..0.1,tag=ghost,tag=hidden,tag=new_ghost] store result score @s HomeX run data get entity @e[tag=temp,tag=to_spawn_location,limit=1] Pos[0] 100
 execute positioned as @e[tag=temp,tag=!to_spawn_location,limit=1] as @e[distance=..0.1,tag=ghost,tag=hidden,tag=new_ghost] store result score @s HomeY run data get entity @e[tag=temp,tag=to_spawn_location,limit=1] Pos[1] 100

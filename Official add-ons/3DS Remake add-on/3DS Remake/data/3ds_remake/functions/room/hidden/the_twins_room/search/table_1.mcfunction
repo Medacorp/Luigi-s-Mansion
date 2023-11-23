@@ -5,7 +5,6 @@ execute unless score #the_twins_room_table_1 Searched matches 1 run summon minec
 execute unless score #the_twins_room_table_1 Searched matches 1 run summon minecraft:marker ~ ~ ~ {Tags:["chance","money"],Duration:1}
 execute unless score #the_twins_room_table_1 Searched matches 1 run tag @e[type=minecraft:marker,tag=chance,sort=random,limit=1] add selected
 execute if entity @e[type=minecraft:marker,tag=chance,tag=selected,tag=poison_mushroom] positioned 738 21 48.0 run function luigis_mansion:spawn_entities/item/room_search/poison_mushroom
-tag @e[tag=this_entity,limit=1] remove this_entity
 execute if entity @e[type=minecraft:marker,tag=chance,tag=selected,tag=money] positioned 738 21 48.0 run function 3ds_remake:room/hidden/the_twins_room/table_1
 execute unless entity @e[type=minecraft:marker,tag=chance,tag=selected,tag=!nothing] positioned 738 20 48.0 run function luigis_mansion:blocks/dust
 kill @e[type=minecraft:marker,tag=chance]

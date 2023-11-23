@@ -27,18 +27,9 @@ scoreboard players set @e[tag=this_entity,limit=1] EntitySizeWidth 8
 scoreboard players set @e[tag=this_entity,limit=1] EntitySizeHeight 12
 scoreboard players set @e[tag=this_entity,limit=1] EntityYOffset 13
 scoreboard players set @e[tag=this_entity,limit=1] AttackType 1
-execute if data storage luigis_mansion:data entity{attack_type:"stab"} run scoreboard players set @e[tag=this_entity,limit=1] AttackType 0
-execute if data storage luigis_mansion:data entity{appear_type:"none"} run tag @e[tag=this_entity,limit=1] add no_appear
-execute if data storage luigis_mansion:data entity{disappear_on_vanish:1b} run tag @e[tag=this_entity,limit=1] add disappear_on_vanish
-execute if data storage luigis_mansion:data entity.health as @e[tag=this_entity,limit=1] store result score @s Health store result score @s LastHealth run data get storage luigis_mansion:data entity.health
-execute if data storage luigis_mansion:data entity.speed as @e[tag=this_entity,limit=1] store result score @s Move run data get storage luigis_mansion:data entity.speed
-execute if data storage luigis_mansion:data entity.flee_speed as @e[tag=this_entity,limit=1] store result score @s MoveFlee run data get storage luigis_mansion:data entity.flee_speed
-execute if data storage luigis_mansion:data entity.second_flee_damage as @e[tag=this_entity,limit=1] store result score @s SecondFleeDamage run data get storage luigis_mansion:data entity.second_flee_damage
-execute if data storage luigis_mansion:data entity.vanish_time as @e[tag=this_entity,limit=1] store result score @s VanishTime run data get storage luigis_mansion:data entity.vanish_time
-execute if data storage luigis_mansion:data entity.training_room_score as @e[tag=this_entity,limit=1] store result score @s TrainingRoomScore run data get storage luigis_mansion:data entity.training_room_score
-execute if data storage luigis_mansion:data entity.loot run data modify entity @e[tag=this_entity,limit=1] ArmorItems[3].tag.loot set from storage luigis_mansion:data entity.loot
-execute if data storage luigis_mansion:data entity.damage run data modify entity @e[tag=this_entity,limit=1] ArmorItems[3].tag.damage set from storage luigis_mansion:data entity.damage
-execute if data storage luigis_mansion:data entity.path store result score @e[tag=this_entity,limit=1] Path run data get storage luigis_mansion:data entity.path
+execute if data storage luigis_mansion:data entity.attack_type run function luigis_mansion:spawn_entities/setup/attack_type/ghost_guy
+execute if data storage luigis_mansion:data entity.appear_type run function luigis_mansion:spawn_entities/setup/attack_type/none
+function luigis_mansion:spawn_entities/setup/default
 execute unless entity @e[nbt={ArmorItems:[{tag:{namespace:"luigis_mansion",id:"dancing_ghost_guy"}}]},distance=..2,tag=!this_entity,limit=1] store result score @e[tag=this_entity,limit=1] GhostGuyCouple run data get storage luigis_mansion:data unique_id.dancing_ghost_guy_couple
 execute unless entity @e[nbt={ArmorItems:[{tag:{namespace:"luigis_mansion",id:"dancing_ghost_guy"}}]},distance=..2,tag=!this_entity,limit=1] store result storage luigis_mansion:data unique_id.dancing_ghost_guy_couple int 1 run scoreboard players add @e[tag=this_entity,limit=1] GhostGuyCouple 1
 execute if entity @e[nbt={ArmorItems:[{tag:{namespace:"luigis_mansion",id:"dancing_ghost_guy"}}]},distance=..2,tag=!this_entity,tag=!has_partner,limit=1] run scoreboard players operation @e[tag=this_entity,limit=1] GhostGuyCouple = @e[nbt={ArmorItems:[{tag:{namespace:"luigis_mansion",id:"dancing_ghost_guy"}}]},distance=..2,tag=!this_entity,tag=!has_partner,limit=1] GhostGuyCouple

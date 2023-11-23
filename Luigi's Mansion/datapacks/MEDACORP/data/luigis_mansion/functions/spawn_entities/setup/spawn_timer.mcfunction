@@ -1,0 +1,2 @@
+execute if data storage luigis_mansion:data entity{spawn:1b} run tag @e[tag=this_entity,limit=1] add spawn
+execute if data storage luigis_mansion:data entity{spawn:2b} run tag @e[tag=this_entity,limit=1] add can_spawn

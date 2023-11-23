@@ -22,18 +22,6 @@ scoreboard players set @e[tag=this_entity,limit=1] SecondFleeDamage -1
 scoreboard players set @e[tag=this_entity,limit=1] HeartOffset 3
 scoreboard players set @e[tag=this_entity,limit=1] EntitySizeRadius 7
 scoreboard players set @e[tag=this_entity,limit=1] EntityYOffset 16
-data modify entity @e[tag=this_entity,limit=1] ArmorItems[3].tag.scan_message set from storage luigis_mansion:data entity.scan_message
-execute if data storage luigis_mansion:data entity{can_talk_to:1b} run tag @e[tag=this_entity,limit=1] add can_talk_to
-execute if data storage luigis_mansion:data entity{drops_pearls:0b} run tag @e[tag=this_entity,limit=1] remove pearl_dropper
-execute if data storage luigis_mansion:data entity{drops_poison_mushrooms:0b} run tag @e[tag=this_entity,limit=1] add no_poison_mushroom_dropping
-execute if data storage luigis_mansion:data entity.health as @e[tag=this_entity,limit=1] store result score @s Health store result score @s LastHealth store result score @s PreviousHealth run data get storage luigis_mansion:data entity.health
-execute if data storage luigis_mansion:data entity.max_health as @e[tag=this_entity,limit=1] store result score @s MaxHealth run data get storage luigis_mansion:data entity.max_health
-execute if data storage luigis_mansion:data entity.top_vacuum_damage as @e[tag=this_entity,limit=1] store result score @s TopVacuumDamage run data get storage luigis_mansion:data entity.top_vacuum_damage
-execute if data storage luigis_mansion:data entity.speed as @e[tag=this_entity,limit=1] store result score @s Move run data get storage luigis_mansion:data entity.speed
-execute if data storage luigis_mansion:data entity.flee_speed as @e[tag=this_entity,limit=1] store result score @s MoveFlee run data get storage luigis_mansion:data entity.flee_speed
-execute if data storage luigis_mansion:data entity.loot run data modify entity @e[tag=this_entity,limit=1] ArmorItems[3].tag.loot set from storage luigis_mansion:data entity.loot
-execute if data storage luigis_mansion:data entity.damage run data modify entity @e[tag=this_entity,limit=1] ArmorItems[3].tag.loot set from storage luigis_mansion:data entity.damage
-execute if data storage luigis_mansion:data entity.second_flee_damage as @e[tag=this_entity,limit=1] store result score @s SecondFleeDamage run data get storage luigis_mansion:data entity.second_flee_damage
-execute if data storage luigis_mansion:data entity.vanish_time as @e[tag=this_entity,limit=1] store result score @s VanishTime run data get storage luigis_mansion:data entity.vanish_time
+function luigis_mansion:spawn_entities/setup/default
 tag @e[tag=this_entity,limit=1] remove this_entity
 data remove storage luigis_mansion:data entity

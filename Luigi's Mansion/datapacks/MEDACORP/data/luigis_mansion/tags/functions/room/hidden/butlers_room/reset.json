@@ -2,7 +2,6 @@
     "values": [
         "luigis_mansion:room/hidden/butlers_room/reset/unload",
         "#luigis_mansion:room/hidden/butlers_room/turn_lights/off",
-        "luigis_mansion:room/hidden/butlers_room/reset/bucket",
         "luigis_mansion:room/hidden/butlers_room/reset/closet",
         "luigis_mansion:room/hidden/butlers_room/reset/hole",
         "luigis_mansion:room/hidden/butlers_room/reset/ironing_table",

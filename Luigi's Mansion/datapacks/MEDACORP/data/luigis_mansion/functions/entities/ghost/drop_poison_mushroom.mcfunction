@@ -1,4 +1,3 @@
 scoreboard players set @s MushroomTimer 200
+data modify storage luigis_mansion:data entity.rotation set from entity @s Rotation
 execute at @s run function luigis_mansion:spawn_entities/item/poison_mushroom
-execute as @e[tag=this_entity,limit=1] positioned as @s run teleport @s ~ ~ ~ ~ ~
-tag @e[tag=this_entity,limit=1] remove this_entity

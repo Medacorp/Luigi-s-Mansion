@@ -16,8 +16,8 @@ tag @s[tag=mirrored] remove mirrored
 scoreboard players reset @s LightX
 scoreboard players reset @s LightY
 scoreboard players reset @s LightZ
-scoreboard players reset @s MirrorX
-scoreboard players reset @s MirrorZ
+scoreboard players reset @s[tag=!furniture] MirrorX
+scoreboard players reset @s[tag=!furniture] MirrorZ
 
 execute if entity @s[tag=!furniture,tag=debug_entity] run function luigis_mansion:main/debug
 execute if entity @s[tag=!furniture,tag=!debug_entity] if score #debug_entities Selected matches 1.. run function luigis_mansion:main/debug

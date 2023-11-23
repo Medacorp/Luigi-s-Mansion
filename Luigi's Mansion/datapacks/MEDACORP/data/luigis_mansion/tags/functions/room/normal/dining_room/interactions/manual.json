@@ -16,8 +16,6 @@
 		"luigis_mansion:room/normal/dining_room/interactions/manual/painting_2",
 		"luigis_mansion:room/normal/dining_room/interactions/manual/painting_3",
 		"luigis_mansion:room/normal/dining_room/interactions/manual/painting_4",
-		"luigis_mansion:room/normal/dining_room/interactions/manual/table",
-		"luigis_mansion:room/normal/dining_room/interactions/manual/torch_1",
-		"luigis_mansion:room/normal/dining_room/interactions/manual/torch_2"
+		"luigis_mansion:room/normal/dining_room/interactions/manual/table"
 	]
 }

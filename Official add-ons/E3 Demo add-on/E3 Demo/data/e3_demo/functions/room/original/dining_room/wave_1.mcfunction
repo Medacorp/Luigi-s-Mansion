@@ -1,5 +1,9 @@
-execute positioned 706 12 37 run function e3_demo:spawn_entities/ghost/can_spawn_now/ghost/pink
-execute positioned 706 12 41 run function e3_demo:spawn_entities/ghost/can_spawn_now/body_slammer/purple
-execute positioned 706 12 45 run function e3_demo:spawn_entities/ghost/can_spawn_now/puncher/white
-execute positioned 706 12 49 run function e3_demo:spawn_entities/ghost/can_spawn_now/ghost/orange
+data modify storage luigis_mansion:data entity set value {spawn:2b}
+execute positioned 706 12 37 run function e3_demo:spawn_entities/ghost/ghost/pink
+data modify storage luigis_mansion:data entity set value {spawn:2b}
+execute positioned 706 12 41 run function e3_demo:spawn_entities/ghost/body_slammer/purple
+data modify storage luigis_mansion:data entity set value {spawn:2b}
+execute positioned 706 12 45 run function e3_demo:spawn_entities/ghost/puncher/white
+data modify storage luigis_mansion:data entity set value {spawn:2b}
+execute positioned 706 12 49 run function e3_demo:spawn_entities/ghost/ghost/orange
 scoreboard players set #dining_room Wave 1

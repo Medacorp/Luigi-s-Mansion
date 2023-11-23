@@ -1,2 +1,2 @@
-data modify storage luigis_mansion:data entity set value {appear_type:"none",disappear_on_vanish:1b,health:2000,speed:10,flee_speed:20,vanish_time:-1,loot:{},damage:{collision:5,attack:5},training_room_score:5}
-function luigis_mansion:spawn_entities/ghost/forced_spawn/mirror_ghost
+data modify storage luigis_mansion:data entity set value {spawn:1b,appear_type:"none",disappear_on_vanish:1b,health:2000,speed:10,flee_speed:20,vanish_time:-1,loot:{},damage:{collision:5,attack:5},training_room_score:5}
+function luigis_mansion:spawn_entities/ghost/mirror_ghost

@@ -3,36 +3,29 @@ summon minecraft:armor_stand ~ ~ ~ {CustomName:'{"translate":"luigis_mansion:ent
 execute as @e[tag=this_entity,tag=!model_piece,limit=1] store result score @s GhostNr run data get storage luigis_mansion:data unique_id.ghost
 execute as @e[tag=this_entity,tag=!model_piece,limit=1] store result storage luigis_mansion:data unique_id.ghost int 1 run scoreboard players add @s GhostNr 1
 scoreboard players operation @e[tag=this_entity,tag=model_piece,limit=1] GhostNr = @e[tag=this_entity,tag=!model_piece,limit=1] GhostNr
-execute as @e[tag=this_entity,tag=!model_piece,limit=1] store result score @s Health store result score @s LastHealth run data get storage luigis_mansion:data current_state.current_data.ghosts.luigis_mansion.mr_bones.health
-execute as @e[tag=this_entity,tag=!model_piece,limit=1] store result score @s Move run data get storage luigis_mansion:data current_state.current_data.ghosts.luigis_mansion.mr_bones.speed
-execute as @e[tag=this_entity,tag=!model_piece,limit=1] store result score @s MoveFlee run data get storage luigis_mansion:data current_state.current_data.ghosts.luigis_mansion.mr_bones.flee_speed
-execute as @e[tag=this_entity,tag=!model_piece,limit=1] store result score @s VanishTime run data get storage luigis_mansion:data current_state.current_data.ghosts.luigis_mansion.mr_bones.vanish_time
-data modify entity @e[tag=this_entity,tag=!model_piece,limit=1] ArmorItems[3].tag.loot set from storage luigis_mansion:data current_state.current_data.ghosts.luigis_mansion.mr_bones.loot
-data modify entity @e[tag=this_entity,tag=!model_piece,limit=1] ArmorItems[3].tag.damage set from storage luigis_mansion:data current_state.current_data.ghosts.luigis_mansion.mr_bones.damage
-teleport @e[tag=this_entity,tag=!model_piece,limit=1] ~ ~ ~ facing entity @p[gamemode=!spectator]
-execute as @e[tag=this_entity,tag=!model_piece,limit=1] store result score @s HomeX run data get entity @s Pos[0] 100
-execute as @e[tag=this_entity,tag=!model_piece,limit=1] store result score @s HomeY run data get entity @s Pos[1] 100
-execute as @e[tag=this_entity,tag=!model_piece,limit=1] store result score @s HomeZ run data get entity @s Pos[2] 100
-scoreboard players set @e[tag=this_entity,tag=!model_piece,limit=1] PullStrength 15
-scoreboard players set @e[tag=this_entity,tag=!model_piece,limit=1] Sound 0
-scoreboard players set @e[tag=this_entity,tag=!model_piece,limit=1] StunTime 0
-scoreboard players set @e[tag=this_entity,tag=!model_piece,limit=1] VulnerableTime 0
-scoreboard players set @e[tag=this_entity,tag=!model_piece,limit=1] TopVacuumDamage 0
-scoreboard players set @e[tag=this_entity,tag=!model_piece,limit=1] ElementHurtTime 0
-scoreboard players set @e[tag=this_entity,tag=!model_piece,limit=1] HeartOffset 3
-scoreboard players set @e[tag=this_entity,tag=!model_piece,limit=1] SpawnTime 160
-scoreboard players set @e[tag=this_entity,tag=!model_piece,limit=1] EntitySizeWidth 8
-scoreboard players set @e[tag=this_entity,tag=!model_piece,limit=1] EntitySizeHeight 12
-scoreboard players set @e[tag=this_entity,tag=!model_piece,limit=1] EntityYOffset 13
-execute if data storage luigis_mansion:data entity{appear_type:"none"} run tag @e[tag=this_entity,tag=!model_piece,limit=1] add no_appear
-execute if data storage luigis_mansion:data entity{disappear_on_vanish:1b} run tag @e[tag=this_entity,tag=!model_piece,limit=1] add disappear_on_vanish
-execute if data storage luigis_mansion:data entity.health as @e[tag=this_entity,tag=!model_piece,limit=1] store result score @s Health store result score @s LastHealth run data get storage luigis_mansion:data entity.health
-execute if data storage luigis_mansion:data entity.speed as @e[tag=this_entity,tag=!model_piece,limit=1] store result score @s Move run data get storage luigis_mansion:data entity.speed
-execute if data storage luigis_mansion:data entity.flee_speed as @e[tag=this_entity,tag=!model_piece,limit=1] store result score @s MoveFlee run data get storage luigis_mansion:data entity.flee_speed
-execute if data storage luigis_mansion:data entity.second_flee_damage as @e[tag=this_entity,tag=!model_piece,limit=1] store result score @s SecondFleeDamage run data get storage luigis_mansion:data entity.second_flee_damage
-execute if data storage luigis_mansion:data entity.vanish_time as @e[tag=this_entity,tag=!model_piece,limit=1] store result score @s VanishTime run data get storage luigis_mansion:data entity.vanish_time
-execute if data storage luigis_mansion:data entity.training_room_score as @e[tag=this_entity,tag=!model_piece,limit=1] store result score @s TrainingRoomScore run data get storage luigis_mansion:data entity.training_room_score
-execute if data storage luigis_mansion:data entity.loot run data modify entity @e[tag=this_entity,tag=!model_piece,limit=1] ArmorItems[3].tag.loot set from storage luigis_mansion:data entity.loot
-execute if data storage luigis_mansion:data entity.damage run data modify entity @e[tag=this_entity,tag=!model_piece,limit=1] ArmorItems[3].tag.damage set from storage luigis_mansion:data entity.damage
-tag @e[tag=this_entity] remove this_entity
+tag @e[tag=this_entity,tag=model_piece,limit=1] remove this_entity
+execute as @e[tag=this_entity,limit=1] store result score @s Health store result score @s LastHealth run data get storage luigis_mansion:data current_state.current_data.ghosts.luigis_mansion.mr_bones.health
+execute as @e[tag=this_entity,limit=1] store result score @s Move run data get storage luigis_mansion:data current_state.current_data.ghosts.luigis_mansion.mr_bones.speed
+execute as @e[tag=this_entity,limit=1] store result score @s MoveFlee run data get storage luigis_mansion:data current_state.current_data.ghosts.luigis_mansion.mr_bones.flee_speed
+execute as @e[tag=this_entity,limit=1] store result score @s VanishTime run data get storage luigis_mansion:data current_state.current_data.ghosts.luigis_mansion.mr_bones.vanish_time
+data modify entity @e[tag=this_entity,limit=1] ArmorItems[3].tag.loot set from storage luigis_mansion:data current_state.current_data.ghosts.luigis_mansion.mr_bones.loot
+data modify entity @e[tag=this_entity,limit=1] ArmorItems[3].tag.damage set from storage luigis_mansion:data current_state.current_data.ghosts.luigis_mansion.mr_bones.damage
+teleport @e[tag=this_entity,limit=1] ~ ~ ~ facing entity @p[gamemode=!spectator]
+execute as @e[tag=this_entity,limit=1] store result score @s HomeX run data get entity @s Pos[0] 100
+execute as @e[tag=this_entity,limit=1] store result score @s HomeY run data get entity @s Pos[1] 100
+execute as @e[tag=this_entity,limit=1] store result score @s HomeZ run data get entity @s Pos[2] 100
+scoreboard players set @e[tag=this_entity,limit=1] PullStrength 15
+scoreboard players set @e[tag=this_entity,limit=1] Sound 0
+scoreboard players set @e[tag=this_entity,limit=1] StunTime 0
+scoreboard players set @e[tag=this_entity,limit=1] VulnerableTime 0
+scoreboard players set @e[tag=this_entity,limit=1] TopVacuumDamage 0
+scoreboard players set @e[tag=this_entity,limit=1] ElementHurtTime 0
+scoreboard players set @e[tag=this_entity,limit=1] HeartOffset 3
+scoreboard players set @e[tag=this_entity,limit=1] SpawnTime 160
+scoreboard players set @e[tag=this_entity,limit=1] EntitySizeWidth 8
+scoreboard players set @e[tag=this_entity,limit=1] EntitySizeHeight 12
+scoreboard players set @e[tag=this_entity,limit=1] EntityYOffset 13
+execute if data storage luigis_mansion:data entity.appear_type run function luigis_mansion:spawn_entities/setup/attack_type/none
+function luigis_mansion:spawn_entities/setup/default
+tag @e[tag=this_entity,limit=1] remove this_entity
 data remove storage luigis_mansion:data entity

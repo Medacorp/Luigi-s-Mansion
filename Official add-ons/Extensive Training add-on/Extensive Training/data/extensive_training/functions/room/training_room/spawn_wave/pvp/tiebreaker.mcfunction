@@ -1,2 +1,2 @@
-data modify storage luigis_mansion:data entity set value {disappear_on_vanish:0b,health:25000,speed:100,flee_speed:100,vanish_time:-1,loot:{},damage:{},training_room_score:1}
-function luigis_mansion:spawn_entities/ghost/forced_spawn/speedy_spirit
+data modify storage luigis_mansion:data entity set value {spawn:1b,disappear_on_vanish:0b,health:25000,speed:100,flee_speed:100,vanish_time:-1,loot:{},damage:{},training_room_score:1}
+function luigis_mansion:spawn_entities/ghost/speedy_spirit

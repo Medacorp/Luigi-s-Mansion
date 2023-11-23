@@ -1,8 +1,6 @@
 {
     "values": [
         "luigis_mansion:room/normal/graveyard/reset/unload",
-        "luigis_mansion:room/normal/graveyard/reset/fire_1",
-        "luigis_mansion:room/normal/graveyard/reset/fire_2",
         "luigis_mansion:room/normal/graveyard/reset/gravestone_1",
         "luigis_mansion:room/normal/graveyard/reset/gravestone_2",
         "luigis_mansion:room/normal/graveyard/reset/gravestone_3",
@@ -12,8 +10,6 @@
         "luigis_mansion:room/normal/graveyard/reset/gravestone_7",
         "luigis_mansion:room/normal/graveyard/reset/rain_pipe",
         "luigis_mansion:room/normal/graveyard/reset/room_clear_chest",
-        "luigis_mansion:room/normal/graveyard/reset/torch_1",
-        "luigis_mansion:room/normal/graveyard/reset/torch_2",
         "luigis_mansion:room/normal/graveyard/reset/tree_trunk"
     ]
 }

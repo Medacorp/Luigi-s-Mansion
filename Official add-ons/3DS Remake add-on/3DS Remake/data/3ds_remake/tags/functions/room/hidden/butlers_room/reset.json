@@ -2,7 +2,6 @@
     "values": [
         "3ds_remake:room/hidden/butlers_room/reset/unload",
         "#3ds_remake:room/hidden/butlers_room/turn_lights/off",
-        "3ds_remake:room/hidden/butlers_room/reset/bucket",
         "3ds_remake:room/hidden/butlers_room/reset/closet",
         "3ds_remake:room/hidden/butlers_room/reset/hole",
         "3ds_remake:room/hidden/butlers_room/reset/ironing_table",

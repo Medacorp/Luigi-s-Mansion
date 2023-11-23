@@ -1,0 +1,6 @@
+{
+	"parent": "luigis_mansion:furniture/torch/counterclockwise",
+	"textures": {
+		"1": "luigis_mansion:furniture/torch/gray"
+	}
+}

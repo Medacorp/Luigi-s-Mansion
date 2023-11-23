@@ -1,0 +1,1 @@
+data modify entity @e[tag=this_entity,limit=1] Rotation set from storage luigis_mansion:data entity.rotation

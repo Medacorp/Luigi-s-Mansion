@@ -2,7 +2,7 @@
 	"values": [
 	    "3ds_remake:room/hidden/anteroom/load/set_loaded",
         "3ds_remake:room/hidden/anteroom/load/lights",
-        "3ds_remake:room/hidden/anteroom/load/parlor_door"
+        "3ds_remake:room/hidden/anteroom/load/parlor_door",
         "3ds_remake:room/hidden/anteroom/load/wardrobe_room_door"
 	]
 }

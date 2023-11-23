@@ -7,6 +7,7 @@ kill @e[tag=candle_flame_rotation,limit=1]
 scoreboard players reset #temp Time
 scoreboard players reset #temp2 Time
 scoreboard players set @e[tag=this_entity,limit=1] Sound 0
+scoreboard players set @e[tag=this_entity,limit=1] ActionTime -1
 scoreboard players set @e[tag=this_entity,limit=1] FurnitureSizeRadius 6
 scoreboard players set @e[tag=this_entity,limit=1] FurnitureDustLeft 0
 scoreboard players set @e[tag=this_entity,limit=1] FurnitureDustUp 0

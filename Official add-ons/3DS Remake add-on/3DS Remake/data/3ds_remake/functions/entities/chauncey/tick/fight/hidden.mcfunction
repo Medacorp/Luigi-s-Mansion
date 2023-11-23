@@ -23,13 +23,13 @@ execute if entity @s[scores={Dialog=1},tag=intro_done] run tag @s remove laugh
 scoreboard players set @s[scores={Dialog=1},tag=intro_done] ActionTime 0
 execute if entity @s[scores={Dialog=1},tag=intro_done] run function luigis_mansion:entities/chauncey/grab_rambler
 tag @s[scores={Dialog=1},tag=intro_done] remove grab_rambler
-tag @s[scores={Dialog=1,Health=5001..},tag=intro_done] add left
-teleport @s[scores={Dialog=1..20},tag=left,tag=intro_done] ~ ~ ~ -180 0
-teleport @s[scores={Dialog=1..20},tag=!left,tag=intro_done] ~ ~ ~ 0 0
-execute if entity @s[scores={Dialog=20},tag=left,tag=intro_done] positioned ~-2.5 ~1 ~-11.5 rotated 0 0 run function luigis_mansion:spawn_entities/rocking_horse/big
-execute if entity @s[scores={Dialog=20},tag=left,tag=intro_done] positioned ~-2.5 ~1 ~-11.5 run scoreboard players operation @e[distance=..0.7,limit=1,tag=rocking_horse] Owner = @s GhostNr
-execute if entity @s[scores={Dialog=20},tag=!left,tag=intro_done] positioned ~-2.5 ~1 ~11.5 rotated -180 0 run function luigis_mansion:spawn_entities/rocking_horse/big
-execute if entity @s[scores={Dialog=20},tag=!left,tag=intro_done] positioned ~-2.5 ~1 ~11.5 run scoreboard players operation @e[distance=..0.7,limit=1,tag=rocking_horse] Owner = @s GhostNr
+teleport @s[scores={Dialog=1..20,Health=..5000},tag=intro_done] ~ ~ ~ -180 0
+teleport @s[scores={Dialog=1..20,Health=5001..},tag=intro_done] ~ ~ ~ 0 0
+execute if entity @s[scores={Dialog=20,Health=..5001},tag=intro_done] run data modify storage luigis_mansion:data entity set value {tags:["zigzag_left"]}
+execute if entity @s[scores={Dialog=20,Health=..5000},tag=intro_done] positioned ~-2.5 ~1 ~-11.5 rotated 0 0 run function luigis_mansion:spawn_entities/rocking_horse/big
+execute if entity @s[scores={Dialog=20,Health=..5000},tag=intro_done] positioned ~-2.5 ~1 ~-11.5 run scoreboard players operation @e[distance=..0.7,limit=1,tag=rocking_horse] Owner = @s GhostNr
+execute if entity @s[scores={Dialog=20,Health=5001..},tag=intro_done] positioned ~-2.5 ~1 ~11.5 rotated -180 0 run function luigis_mansion:spawn_entities/rocking_horse/big
+execute if entity @s[scores={Dialog=20,Health=5001..},tag=intro_done] positioned ~-2.5 ~1 ~11.5 run scoreboard players operation @e[distance=..0.7,limit=1,tag=rocking_horse] Owner = @s GhostNr
 execute if entity @s[scores={Dialog=21},tag=intro_done] facing entity @e[tag=same_room,tag=!spectator,tag=player,sort=nearest,limit=1] feet run teleport @s ~ ~ ~ ~ 0
 tag @s[scores={Dialog=21},tag=intro_done] add rambling
 scoreboard players set @s[scores={Dialog=22},tag=intro_done] AnimationProgress 0
@@ -37,12 +37,13 @@ tag @s[scores={Dialog=22},tag=intro_done] remove rambling
 tag @s[scores={Dialog=22},tag=intro_done] add attack
 execute if entity @s[scores={Dialog=22},tag=intro_done] run tag @e[tag=rocking_horse,limit=1] add attack
 scoreboard players set @s[scores={Dialog=22},tag=intro_done] ActionTime 11
-teleport @s[scores={Dialog=61..80},tag=left,tag=intro_done] ~ ~ ~ 0 0
-teleport @s[scores={Dialog=61..80},tag=!left,tag=intro_done] ~ ~ ~ -180 0
-execute if entity @s[scores={Dialog=80},tag=left,tag=intro_done] positioned ~-2.5 ~1 ~11.5 rotated -180 0 run function luigis_mansion:spawn_entities/rocking_horse/big
-execute if entity @s[scores={Dialog=80},tag=left,tag=intro_done] positioned ~-2.5 ~1 ~11.5 run scoreboard players operation @e[distance=..0.7,limit=1,tag=rocking_horse] Owner = @s GhostNr
-execute if entity @s[scores={Dialog=80},tag=!left,tag=intro_done] positioned ~-2.5 ~1 ~-11.5 rotated 0 0 run function luigis_mansion:spawn_entities/rocking_horse/big
-execute if entity @s[scores={Dialog=80},tag=!left,tag=intro_done] positioned ~-2.5 ~1 ~-11.5 run scoreboard players operation @e[distance=..0.7,limit=1,tag=rocking_horse] Owner = @s GhostNr
+teleport @s[scores={Dialog=61..80,Health=..5000},tag=intro_done] ~ ~ ~ 0 0
+teleport @s[scores={Dialog=61..80,Health=5001..},tag=intro_done] ~ ~ ~ -180 0
+execute if entity @s[scores={Dialog=80,Health=..5000},tag=intro_done] positioned ~-2.5 ~1 ~11.5 rotated -180 0 run function luigis_mansion:spawn_entities/rocking_horse/big
+execute if entity @s[scores={Dialog=80,Health=..5000},tag=intro_done] positioned ~-2.5 ~1 ~11.5 run scoreboard players operation @e[distance=..0.7,limit=1,tag=rocking_horse] Owner = @s GhostNr
+execute if entity @s[scores={Dialog=80,Health=5001..},tag=intro_done] run data modify storage luigis_mansion:data entity set value {tags:["zigzag_left"]}
+execute if entity @s[scores={Dialog=80,Health=5001..},tag=intro_done] positioned ~-2.5 ~1 ~-11.5 rotated 0 0 run function luigis_mansion:spawn_entities/rocking_horse/big
+execute if entity @s[scores={Dialog=80,Health=5001..},tag=intro_done] positioned ~-2.5 ~1 ~-11.5 run scoreboard players operation @e[distance=..0.7,limit=1,tag=rocking_horse] Owner = @s GhostNr
 execute if entity @s[scores={Dialog=81},tag=intro_done] facing entity @e[tag=same_room,tag=!spectator,tag=player,sort=nearest,limit=1] feet run teleport @s ~ ~ ~ ~ 0
 tag @s[scores={Dialog=81},tag=intro_done] add rambling
 scoreboard players set @s[scores={Dialog=82},tag=intro_done] AnimationProgress 0
@@ -51,8 +52,10 @@ tag @s[scores={Dialog=82},tag=intro_done] add attack
 execute if entity @s[scores={Dialog=82},tag=intro_done] run tag @e[tag=rocking_horse,limit=1] add attack
 scoreboard players set @s[scores={Dialog=82},tag=intro_done] ActionTime 11
 teleport @s[scores={Dialog=121..140},tag=intro_done] ~ ~ ~ -90 0
+execute if entity @s[scores={Dialog=140,Health=..5001},tag=intro_done] run data modify storage luigis_mansion:data entity set value {tags:["zigzag_left"]}
 execute if entity @s[scores={Dialog=140},tag=intro_done] positioned ~-2.5 ~1 ~-11.5 rotated 0 0 run function luigis_mansion:spawn_entities/rocking_horse/big
 execute if entity @s[scores={Dialog=140},tag=intro_done] positioned ~-2.5 ~1 ~-11.5 run scoreboard players operation @e[distance=..0.7,limit=1,tag=rocking_horse] Owner = @s GhostNr
+execute if entity @s[scores={Dialog=140,Health=..5001},tag=intro_done] run data modify storage luigis_mansion:data entity set value {tags:["zigzag_left"]}
 execute if entity @s[scores={Dialog=140},tag=intro_done] positioned ~-2.5 ~1 ~11.5 rotated -180 0 run function luigis_mansion:spawn_entities/rocking_horse/big
 execute if entity @s[scores={Dialog=140},tag=intro_done] positioned ~-2.5 ~1 ~11.5 run scoreboard players operation @e[distance=..0.7,limit=1,tag=rocking_horse] Owner = @s GhostNr
 execute if entity @s[scores={Dialog=141..381},tag=intro_done] facing entity @e[tag=same_room,tag=!spectator,tag=player,sort=nearest,limit=1] feet run teleport @s ~ ~ ~ ~ 0
@@ -104,7 +107,6 @@ execute if entity @s[scores={Dialog=802}] run playsound luigis_mansion:entity.ch
 tag @s[scores={Dialog=822}] remove dizzy
 teleport @s[scores={Dialog=822}] 792.0 20 64.0
 scoreboard players set @s[scores={Dialog=822}] Dialog 0
-tag @s[scores={Dialog=1662}] remove left
 execute at @s[scores={Dialog=1662}] run tag @s[z=56.0,dz=7] add left
 teleport @s[scores={Dialog=1662}] 796.0 20 ~
 execute if entity @s[scores={Dialog=1722..1781}] facing entity @e[tag=same_room,tag=!spectator,tag=player,sort=nearest,limit=1] feet run teleport @s ~ ~ ~ ~ 0

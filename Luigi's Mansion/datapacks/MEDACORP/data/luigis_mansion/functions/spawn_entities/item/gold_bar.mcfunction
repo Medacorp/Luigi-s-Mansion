@@ -3,4 +3,7 @@ execute store result entity @e[tag=this_entity,limit=1] Rotation[0] float 1 run 
 execute store result entity @e[tag=this_entity,limit=1] Rotation[1] float 1 run random value -90..0
 scoreboard players set @e[tag=this_entity,limit=1] EntitySizeRadius 4
 scoreboard players set @e[tag=this_entity,limit=1] EntityYOffset 12
-playsound luigis_mansion:item.gold_bar.spawn player @a ~ ~ ~ 1
+execute unless data storage luigis_mansion:data entity{silent:1b} run playsound luigis_mansion:item.gold_bar.spawn player @a[tag=same_room] ~ ~ ~ 1
+function luigis_mansion:spawn_entities/setup/default
+tag @e[tag=this_entity,limit=1] remove this_entity
+data remove storage luigis_mansion:data entity

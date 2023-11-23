@@ -1,7 +1,5 @@
 {
 	"values": [
-		"luigis_mansion:room/normal/graveyard/interactions/room/fire_1",
-		"luigis_mansion:room/normal/graveyard/interactions/room/fire_2",
 		"luigis_mansion:room/normal/graveyard/interactions/room/gravestone_1",
 		"luigis_mansion:room/normal/graveyard/interactions/room/gravestone_2",
 		"luigis_mansion:room/normal/graveyard/interactions/room/gravestone_3",
@@ -10,8 +8,6 @@
 		"luigis_mansion:room/normal/graveyard/interactions/room/gravestone_6",
 		"luigis_mansion:room/normal/graveyard/interactions/room/gravestone_7",
 		"luigis_mansion:room/normal/graveyard/interactions/room/rain_pipe",
-		"luigis_mansion:room/normal/graveyard/interactions/room/torch_1",
-		"luigis_mansion:room/normal/graveyard/interactions/room/torch_2",
 		"luigis_mansion:room/normal/graveyard/interactions/room/tree_trunk"
 	]
 }

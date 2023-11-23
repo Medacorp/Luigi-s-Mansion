@@ -2,8 +2,8 @@
 	"values": [
 	    "3ds_remake:room/hidden/butlers_room/load/set_loaded",
         "3ds_remake:room/hidden/butlers_room/load/lights",
-        "3ds_remake:room/hidden/butlers_room/load/bucket",
         "3ds_remake:room/hidden/butlers_room/load/laundry_room_door",
+        "3ds_remake:room/hidden/butlers_room/load/metal_bucket",
         "3ds_remake:room/hidden/butlers_room/load/room_clear_chest",
         "3ds_remake:room/hidden/butlers_room/load/vacuumable_2",
         "3ds_remake:room/hidden/butlers_room/load/water_bucket",

@@ -1,2 +1,2 @@
-data modify storage luigis_mansion:data entity set value {appear_type:"none",attack_type:"none",disappear_on_vanish:1b,health:1000,speed:10,flee_speed:20}
-function luigis_mansion:spawn_entities/ghost/forced_spawn/gold_ghost
+data modify storage luigis_mansion:data entity set value {spawn:1b,appear_type:"none",attack_type:"none",disappear_on_vanish:1b,health:1000,speed:10,flee_speed:20}
+function luigis_mansion:spawn_entities/ghost/gold_ghost

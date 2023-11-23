@@ -10,3 +10,8 @@ execute as @e[tag=this_entity,limit=1] store result entity @s Pose.Head[0] float
 execute if predicate luigis_mansion:50_50 as @e[tag=this_entity,limit=1] store result entity @s Pose.Head[0] float -1 run data get entity @s Pose.Head[0]
 scoreboard players set @e[tag=this_entity,limit=1] EntitySizeRadius 3
 scoreboard players set @e[tag=this_entity,limit=1] EntityYOffset 14
+execute if data storage luigis_mansion:data entity{variant:0b} run data modify entity @e[tag=this_entity,limit=1] ArmorItems[3].tag.CustomModelData set value 10
+execute if data storage luigis_mansion:data entity{variant:1b} run data modify entity @e[tag=this_entity,limit=1] ArmorItems[3].tag.CustomModelData set value 11
+function luigis_mansion:spawn_entities/setup/default
+tag @e[tag=this_entity,limit=1] remove this_entity
+data remove storage luigis_mansion:data entity

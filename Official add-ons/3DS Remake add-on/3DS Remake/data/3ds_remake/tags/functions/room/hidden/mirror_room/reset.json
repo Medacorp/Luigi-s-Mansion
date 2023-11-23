@@ -2,12 +2,10 @@
     "values": [
         "3ds_remake:room/hidden/mirror_room/reset/unload",
         "#3ds_remake:room/hidden/mirror_room/turn_lights/off",
-        "3ds_remake:room/hidden/mirror_room/reset/fire",
         "3ds_remake:room/hidden/mirror_room/reset/lamp_1",
         "3ds_remake:room/hidden/mirror_room/reset/lamp_2",
         "3ds_remake:room/hidden/mirror_room/reset/painting",
         "3ds_remake:room/hidden/mirror_room/reset/room_clear_chest",
-        "3ds_remake:room/hidden/mirror_room/reset/table",
-        "3ds_remake:room/hidden/mirror_room/reset/torch"
+        "3ds_remake:room/hidden/mirror_room/reset/table"
     ]
 }

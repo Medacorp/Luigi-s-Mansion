@@ -22,13 +22,15 @@ scoreboard players remove #temp PreviousHealth 1
 scoreboard players operation #temp Health /= #1000 Constants
 scoreboard players operation #temp PreviousHealth /= #1000 Constants
 
+data modify storage luigis_mansion:data entity set value {rotation:[0.0f,-90.0f],assign_rank:{namespace:"luigis_mansion",id:"null"}}
+data modify storage luigis_mansion:data entity.assign_rank.namespace set from entity @s ArmorItems[3].tag.namespace
+data modify storage luigis_mansion:data entity.assign_rank.id set from entity @s ArmorItems[3].tag.id
 execute unless score #temp Health = #temp PreviousHealth if score #temp2 Health matches 1.. if score #temp2 LastHealth matches ..4 run function luigis_mansion:spawn_entities/item/small_pearl
 execute unless score #temp Health = #temp PreviousHealth if score #temp2 Health matches 1.. if score #temp2 LastHealth matches 5.. run function luigis_mansion:spawn_entities/item/medium_pearl
 execute unless score #temp Health = #temp PreviousHealth if score #temp2 Health matches 0 unless score #temp MaxHealth = #temp LastHealth if score #temp2 LastHealth matches ..4 run function luigis_mansion:spawn_entities/item/small_pearl
 execute unless score #temp Health = #temp PreviousHealth if score #temp2 Health matches 0 unless score #temp MaxHealth = #temp LastHealth if score #temp2 LastHealth matches 5.. run function luigis_mansion:spawn_entities/item/medium_pearl
 execute unless score #temp Health = #temp PreviousHealth if score #temp2 Health matches 0 if score #temp MaxHealth = #temp LastHealth run function luigis_mansion:spawn_entities/item/big_pearl
-execute as @e[tag=this_entity,limit=1] at @s run teleport @s ~ ~ ~ 0 -90
-tag @e[tag=this_entity,limit=1] remove this_entity
+data remove storage luigis_mansion:data entity
 scoreboard players operation @s PreviousHealth = @s Health
 scoreboard players reset #temp MaxHealth
 scoreboard players reset #temp LastHealth

@@ -11,4 +11,3 @@ execute if entity @a[distance=0..,scores={PositionIntX=727..779,PositionIntY=74.
 execute if score #gallery Ticking matches 1 unless entity @a[distance=0..,scores={PositionIntX=727..779,PositionIntY=74..87,PositionIntZ=-42..-15}] unless entity @a[scores={Room=-4}] run function luigis_mansion:room/gallery/not_ticking
 scoreboard players reset #temp Room
 execute if data storage luigis_mansion:data {found_e_gadd:1b} if entity @a[scores={Room=1..},gamemode=!spectator] run function luigis_mansion:room/update_stats
-tag @e[tag=this_entity] remove this_entity

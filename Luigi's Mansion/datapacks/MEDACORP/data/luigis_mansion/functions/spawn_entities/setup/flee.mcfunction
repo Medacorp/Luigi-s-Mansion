@@ -1,0 +1,2 @@
+execute if data storage luigis_mansion:data entity.flee_speed store result score @e[tag=this_entity,limit=1] MoveFlee run data get storage luigis_mansion:data entity.flee_speed
+execute if data storage luigis_mansion:data entity.second_flee_damage store result score @e[tag=this_entity,limit=1] SecondFleeDamage run data get storage luigis_mansion:data entity.second_flee_damage

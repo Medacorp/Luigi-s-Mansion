@@ -5,7 +5,6 @@ execute unless score #washroom_1_lamp Searched matches 1 run summon minecraft:ma
 execute unless score #washroom_1_lamp Searched matches 1 run summon minecraft:marker ~ ~ ~ {Tags:["chance","money"],Duration:1}
 execute unless score #washroom_1_lamp Searched matches 1 run tag @e[type=minecraft:marker,tag=chance,sort=random,limit=1] add selected
 execute if entity @e[type=minecraft:marker,tag=chance,tag=selected,tag=poison_mushroom] positioned 664 15 41 run function luigis_mansion:spawn_entities/item/room_search/poison_mushroom
-tag @e[tag=this_entity,limit=1] remove this_entity
 execute if entity @e[type=minecraft:marker,tag=chance,tag=selected,tag=money] positioned 664 15 41 run function 3ds_remake:room/hidden/washroom_1/lamp
 execute unless entity @e[type=minecraft:marker,tag=chance,tag=selected,tag=!nothing] positioned 664 16 41 run function luigis_mansion:blocks/dust
 execute unless entity @e[type=minecraft:marker,tag=chance,tag=selected,tag=!nothing] positioned 658 16 41 run function luigis_mansion:blocks/dust_no_sound

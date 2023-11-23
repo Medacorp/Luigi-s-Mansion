@@ -1,0 +1,1 @@
+execute if data storage luigis_mansion:data entity.top_vacuum_damage store result score @e[tag=this_entity,limit=1] TopVacuumDamage run data get storage luigis_mansion:data entity.top_vacuum_damage

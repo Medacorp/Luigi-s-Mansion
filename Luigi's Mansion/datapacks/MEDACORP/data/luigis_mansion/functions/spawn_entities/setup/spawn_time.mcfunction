@@ -1,0 +1,1 @@
+execute if data storage luigis_mansion:data entity.spawn_time as @e[tag=this_entity,limit=1] store result score @s SpawnTime run data get storage luigis_mansion:data entity.spawn_time

@@ -2,12 +2,12 @@
 	"values": [
 	    "luigis_mansion:room/hidden/laundry_room/load/set_loaded",
         "luigis_mansion:room/hidden/laundry_room/load/lights",
-        "luigis_mansion:room/hidden/laundry_room/load/bucket",
         "luigis_mansion:room/hidden/laundry_room/load/butlers_room_door",
         "luigis_mansion:room/hidden/laundry_room/load/cobweb_1",
         "luigis_mansion:room/hidden/laundry_room/load/cobweb_2",
         "luigis_mansion:room/hidden/laundry_room/load/hallway_3_door",
         "luigis_mansion:room/hidden/laundry_room/load/kitchen_fake_door",
+        "luigis_mansion:room/hidden/laundry_room/load/metal_bucket",
         "luigis_mansion:room/hidden/laundry_room/load/room_clear_chest",
         "luigis_mansion:room/hidden/laundry_room/load/vacuumable_1",
         "luigis_mansion:room/hidden/laundry_room/load/vacuumable_2"

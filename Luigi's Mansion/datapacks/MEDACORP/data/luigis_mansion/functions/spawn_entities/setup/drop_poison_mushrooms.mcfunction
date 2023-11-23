@@ -1,0 +1,1 @@
+execute if data storage luigis_mansion:data entity{drops_poison_mushrooms:0b} run tag @e[tag=this_entity,limit=1] add no_poison_mushroom_dropping

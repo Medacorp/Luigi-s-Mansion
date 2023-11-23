@@ -24,7 +24,6 @@ scoreboard players set @s[scores={DeathTime=1}] Move 0
 execute at @s run teleport @s ^ ^ ^-0.4
 
 execute at @s[scores={DeathTime=2,Health=-2147483648..},tag=!dont_drop_heart,tag=!dead,tag=!remove_from_existence] unless entity @s[scores={Room=..-1}] if entity @a[tag=killer,limit=1,scores={GhostCount=2..}] if score #heart_money_count Selected matches 1.. run function luigis_mansion:spawn_entities/item/small_heart
-tag @e[tag=this_entity,limit=1] remove this_entity
 execute at @s[scores={DeathTime=2,Health=-2147483648..},tag=!dead,tag=!remove_from_existence] if entity @a[tag=killer,limit=1,scores={GhostCount=2..}] if data storage 3ds_remake:data current_state.trophy.easy{task_4:0b} run function 3ds_remake:room/gallery/clear_task/easy/task_4
 execute at @s[scores={DeathTime=1,Room=1..},tag=!dead,tag=!remove_from_existence] unless entity @s[scores={Health=-2147483648..}] run function luigis_mansion:entities/ghost/capture with entity @a[tag=killer,limit=1]
 execute at @s[scores={DeathTime=2..,Room=1..,Health=-2147483648..},tag=!dead,tag=!remove_from_existence] if entity @a[tag=killer,distance=..0.7] run function luigis_mansion:entities/ghost/capture with entity @a[tag=killer,limit=1]

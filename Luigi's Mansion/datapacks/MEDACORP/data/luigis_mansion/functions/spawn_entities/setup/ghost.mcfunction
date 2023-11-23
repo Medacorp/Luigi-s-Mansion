@@ -1,0 +1,2 @@
+function luigis_mansion:spawn_entities/setup/speed
+function luigis_mansion:spawn_entities/setup/training_room_score

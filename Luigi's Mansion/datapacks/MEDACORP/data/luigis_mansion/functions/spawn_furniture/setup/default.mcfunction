@@ -1,5 +1,6 @@
 scoreboard players reset #candle_flames Selected
-execute if data storage luigis_mansion:data furniture.candle_flames[0] if entity @e[tag=this_entity,tag=candelabra,limit=1] if score #debug_messages Selected matches 1.. run tellraw @a {"translate":"luigis_mansion:message.debug.format","with":[{"translate":"luigis_mansion:message.debug","color":"gold"},{"translate":"luigis_mansion:message.debug.candle_flame.too_many","color":"red"}]}
+execute if data storage luigis_mansion:data furniture.candle_flames_edit[0] if entity @e[tag=this_entity,tag=candelabra,limit=1] if score #debug_messages Selected matches 1.. run tellraw @a {"translate":"luigis_mansion:message.debug.format","with":[{"translate":"luigis_mansion:message.debug","color":"gold"},{"translate":"luigis_mansion:message.debug.candle_flame.too_many","color":"red"}]}
+data remove storage luigis_mansion:data furniture.candle_flames_edit
 # Display and sound
 execute if entity @e[tag=this_entity,tag=!candelabra,type=minecraft:armor_stand,limit=1] run function luigis_mansion:spawn_furniture/setup/pose
 function luigis_mansion:spawn_furniture/setup/search_animations
@@ -26,7 +27,7 @@ execute if entity @e[tag=this_entity,tag=mirror,limit=1] run function luigis_man
 execute if entity @e[tag=this_entity,tag=room_clear_chest,limit=1] run function luigis_mansion:spawn_furniture/setup/room_clear_chest_spawn_sound
 function luigis_mansion:spawn_furniture/setup/tags
 function luigis_mansion:spawn_furniture/setup/position
-execute if score #debug_messages Selected matches 2.. run tellraw @a {"translate":"luigis_mansion:message.debug.format","with":[{"translate":"luigis_mansion:message.debug","color":"gold"},{"translate":"luigis_mansion:message.debug.spawned_furniture","with":[{"selector":"@e[tag=this_entity,limit=1]"}]}]}
+function luigis_mansion:spawn_furniture/setup/debug_spawn
 
 # If it never can be affected by anything, it never animates, and as such its reflection doesn't need updates
 function luigis_mansion:spawn_furniture/setup/static

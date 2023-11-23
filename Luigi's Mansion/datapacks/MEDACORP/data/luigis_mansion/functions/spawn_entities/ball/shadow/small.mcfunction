@@ -2,4 +2,5 @@ summon minecraft:armor_stand ~ ~-1 ~ {CustomName:'{"translate":"luigis_mansion:e
 teleport @e[tag=this_entity,limit=1] ~ ~-1 ~ ~ ~
 scoreboard players set @e[tag=this_entity,limit=1] EntitySizeRadius 5
 scoreboard players set @e[tag=this_entity,limit=1] EntityYOffset 14
+function luigis_mansion:spawn_entities/setup/default
 tag @e[tag=this_entity,limit=1] remove this_entity

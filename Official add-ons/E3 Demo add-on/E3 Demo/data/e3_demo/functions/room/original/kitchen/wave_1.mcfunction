@@ -1,4 +1,5 @@
-execute positioned 702 11 65 run function e3_demo:spawn_entities/ghost/can_spawn_now/puncher/pink
+data modify storage luigis_mansion:data entity set value {spawn:2b}
+execute positioned 702 11 65 run function e3_demo:spawn_entities/ghost/puncher/pink
 execute positioned 701 11 73 run function e3_demo:spawn_entities/vacuumable/mouse/white
 execute positioned 701 11 86 run function e3_demo:spawn_entities/vacuumable/mouse/white
 execute positioned 701 11 79 run function e3_demo:spawn_entities/vacuumable/mouse/white

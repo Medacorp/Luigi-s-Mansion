@@ -1,4 +1,4 @@
-data modify storage luigis_mansion:data entity{id:"booripedes",name:'{"translate":"luigis_mansion:entity.booripedes"}',can_attack:0b,health:1,room:0,speed:0,loot:{}}
+data modify storage luigis_mansion:data entity merge value {id:"booripedes",name:'{"translate":"luigis_mansion:entity.booripedes"}',can_attack:0b,health:1,room:0,speed:0,loot:{}}
 data modify storage luigis_mansion:data entity.health set from storage luigis_mansion:data current_state.current_data.boos[{name:"booripedes"}].health
 data modify storage luigis_mansion:data entity.room set from storage luigis_mansion:data current_state.current_data.boos[{name:"booripedes"}].room
 data modify storage luigis_mansion:data entity.speed set from storage luigis_mansion:data current_state.current_data.boos[{name:"booripedes"}].speed

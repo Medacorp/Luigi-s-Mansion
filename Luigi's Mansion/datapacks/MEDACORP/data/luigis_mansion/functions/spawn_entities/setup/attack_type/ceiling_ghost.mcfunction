@@ -1,0 +1,2 @@
+execute if data storage luigis_mansion:data entity{attack_type:"none"} run scoreboard players set @e[tag=this_entity,limit=1] AttackType 0
+execute if data storage luigis_mansion:data entity{attack_type:"drop_bomb"} run scoreboard players set @e[tag=this_entity,limit=1] AttackType 1
