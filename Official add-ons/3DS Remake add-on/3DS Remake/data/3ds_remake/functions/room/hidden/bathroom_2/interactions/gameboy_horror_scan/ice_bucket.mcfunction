@@ -1,1 +1,0 @@
-execute if entity @a[tag=portrait_battle,limit=1] if entity @s[x=658.5,y=20,z=17.5,distance=..0.7] run tellraw @a[tag=same_room] {"translate":"chat.type.text","with":[{"selector":"@p[tag=scanning_player,gamemode=!spectator]","color":"green"},{"translate":"luigis_mansion:message.player.scan_furniture.48"}]}

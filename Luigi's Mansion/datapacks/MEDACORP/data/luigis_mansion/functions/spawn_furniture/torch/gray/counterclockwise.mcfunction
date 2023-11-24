@@ -2,7 +2,6 @@ summon minecraft:armor_stand ~ ~-1.4 ~ {CustomName:'{"translate":"luigis_mansion
 teleport @e[tag=this_entity,limit=1] ~ ~-1.4 ~ ~ 0
 scoreboard players set @e[tag=this_entity,limit=1] Sound 0
 scoreboard players set @e[tag=this_entity,limit=1] ActionTime -1
-scoreboard players set @e[tag=this_entity,limit=1] PoltergustSound 0
 scoreboard players set @e[tag=this_entity,limit=1] FurnitureSizeWidth 10
 scoreboard players set @e[tag=this_entity,limit=1] FurnitureSizeHeight 30
 scoreboard players set @e[tag=this_entity,limit=1] FurnitureDustLeft 0

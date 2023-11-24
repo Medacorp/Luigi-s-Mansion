@@ -1,2 +1,3 @@
-execute if entity @a[tag=portrait_battle,limit=1] run setblock 658 20 -1 minecraft:hopper[enabled=false]{LootTable:"luigis_mansion:search",CustomName:'{"translate":"luigis_mansion:block.hopper.ice_bucket"}'}
-execute if entity @a[tag=portrait_battle,limit=1] positioned 658 20 -2 run function luigis_mansion:spawn_entities/ghost/ice_elemental_source
+execute if entity @a[tag=portrait_battle,limit=1] run data modify storage luigis_mansion:data furniture set value {ice_elemental_source:{cannot_disable:1b},can_hide_boo:1b,no_dust:1b,searchable:["interact","vacuum"],shake_animation:["interact","vacuum"],sound:{namespace:"luigis_mansion",id:"metal"},scan_message:'{"translate":"luigis_mansion:message.player.scan_furniture.48"}'}
+execute if entity @a[tag=portrait_battle,limit=1] positioned 658 20 -2 rotated -180 0 run function luigis_mansion:spawn_furniture/ice_bucket
+execute if entity @a[tag=portrait_battle,limit=1] run setblock 658 20 -2 minecraft:barrier

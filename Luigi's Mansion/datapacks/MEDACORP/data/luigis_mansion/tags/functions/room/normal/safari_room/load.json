@@ -2,6 +2,7 @@
 	"values": [
 	    "luigis_mansion:room/normal/safari_room/load/set_loaded",
         "luigis_mansion:room/normal/safari_room/load/lights",
+        "luigis_mansion:room/normal/safari_room/load/cheese",
         "luigis_mansion:room/normal/safari_room/load/cobweb",
         "luigis_mansion:room/normal/safari_room/load/deer_head_1",
         "luigis_mansion:room/normal/safari_room/load/deer_head_2",

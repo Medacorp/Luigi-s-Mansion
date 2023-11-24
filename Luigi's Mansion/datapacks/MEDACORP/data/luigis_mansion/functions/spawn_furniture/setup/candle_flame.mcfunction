@@ -11,6 +11,7 @@ execute unless data storage luigis_mansion:data candle_flame{type:"incense"} if 
 execute if data storage luigis_mansion:data candle_flame.fire_elemental_source run tag @e[tag=this_entity,tag=candle_flame,limit=1] add elemental_source
 execute if data storage luigis_mansion:data candle_flame.fire_elemental_source run tag @e[tag=this_entity,tag=candle_flame,limit=1] add fire_elemental_source
 execute if data storage luigis_mansion:data candle_flame.fire_elemental_source run tag @e[tag=this_entity,tag=candle_flame,limit=1] add enabled
+execute if data storage luigis_mansion:data candle_flame.fire_elemental_source{cannot_disable:1b} run tag @e[tag=this_entity,limit=1] add elemental_cannot_disable
 execute if data storage luigis_mansion:data candle_flame.fire_elemental_source{must_vacuum:1b} run tag @e[tag=this_entity,tag=candle_flame,limit=1] add elemental_must_vacuum
 execute if data storage luigis_mansion:data candle_flame.fire_elemental_source{always_spawn:1b} run tag @e[tag=this_entity,tag=candle_flame,limit=1] add elemental_always_spawn
 execute if data storage luigis_mansion:data candle_flame.fire_elemental_source{timer:1b} run tag @e[tag=this_entity,tag=candle_flame,limit=1] add elemental_timer

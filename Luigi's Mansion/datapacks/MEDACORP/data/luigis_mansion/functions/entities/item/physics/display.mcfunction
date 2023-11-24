@@ -1,1 +1,1 @@
-execute at @s[tag=display] run function luigis_mansion:animations/money/rotate
+execute at @s[tag=display] run function luigis_mansion:entities/item/physics_display

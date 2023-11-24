@@ -3,8 +3,8 @@ execute if entity @s[scores={Room=11..14}] run function 3ds_remake:entities/gold
 execute if entity @s[scores={Room=20}] run function 3ds_remake:entities/gold_mouse/hidden/fortune_tellers_room
 execute if entity @s[scores={Room=26}] run function 3ds_remake:entities/gold_mouse/hidden/dining_room
 execute if entity @s[scores={Room=27}] run function 3ds_remake:entities/gold_mouse/hidden/kitchen
-execute if entity @s[scores={Room=34},tag=!cheese] run function 3ds_remake:entities/gold_mouse/hidden/tea_room_random
-execute if entity @s[scores={Room=34},tag=cheese] run function 3ds_remake:entities/gold_mouse/hidden/tea_room_cheese
+execute if entity @s[scores={Room=34,Path=1}] run function 3ds_remake:entities/gold_mouse/hidden/tea_room_random
+execute if entity @s[scores={Room=34,Path=2}] run function 3ds_remake:entities/gold_mouse/hidden/tea_room_cheese
 execute if entity @s[scores={Room=35..41}] run function 3ds_remake:entities/gold_mouse/hidden/hallway_9_hallway_15
 execute if entity @s[scores={Room=50}] run function 3ds_remake:entities/gold_mouse/hidden/safari_room
 execute if entity @s[scores={Room=66}] run function 3ds_remake:entities/gold_mouse/hidden/sealed_room

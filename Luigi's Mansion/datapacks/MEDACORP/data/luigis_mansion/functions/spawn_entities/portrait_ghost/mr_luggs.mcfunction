@@ -8,6 +8,7 @@ execute as @e[tag=!model_piece,tag=this_entity,limit=1] store result score @s Gh
 execute as @e[tag=!model_piece,tag=this_entity,limit=1] store result storage luigis_mansion:data unique_id.ghost int 1 run scoreboard players add @s GhostNr 1
 scoreboard players operation @e[tag=model_piece,tag=this_entity] GhostNr = @e[tag=!model_piece,tag=this_entity,limit=1] GhostNr
 scoreboard players operation @e[tag=food,tag=this_entity,limit=1] GhostNr = @e[tag=!model_piece,tag=this_entity,limit=1] GhostNr
+tag @e[tag=this_entity,tag=food] remove this_entity
 tag @e[tag=this_entity,tag=model_piece] remove this_entity
 execute as @e[tag=this_entity,limit=1] store result score @s HomeX run data get entity @s Pos[0] 100
 execute as @e[tag=this_entity,limit=1] store result score @s HomeY run data get entity @s Pos[1] 100

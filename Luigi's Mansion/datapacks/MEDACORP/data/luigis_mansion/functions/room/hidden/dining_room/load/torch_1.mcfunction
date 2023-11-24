@@ -1,2 +1,2 @@
 data modify storage luigis_mansion:data furniture set value {ambient_light:{lit:1b},fire_elemental_source:{timer:1b},can_hide_boo:1b,searchable:["interact","vacuum"],shake_animation:["interact","vacuum"],sound:{namespace:"luigis_mansion",id:"heavy_generic"},scan_message:'{"translate":"luigis_mansion:message.player.scan_furniture.81"}'}
-execute positioned 699 11 -41 rotated 90 0 run function luigis_mansion:spawn_furniture/torch/bage/counterclockwise
+execute positioned 699 11 -41 rotated -90 0 run function luigis_mansion:spawn_furniture/torch/bage/counterclockwise

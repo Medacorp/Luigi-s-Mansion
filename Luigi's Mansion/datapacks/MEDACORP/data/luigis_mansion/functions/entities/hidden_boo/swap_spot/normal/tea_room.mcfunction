@@ -6,7 +6,6 @@ summon minecraft:marker 641 20 -50 {Tags:["choice","hide_option"]}
 summon minecraft:marker 645 20 -50 {Tags:["choice","hide_option"]}
 summon minecraft:marker 641 20 -54 {Tags:["choice","hide_option"]}
 summon minecraft:marker 645 20 -54 {Tags:["choice","hide_option"]}
-summon minecraft:marker 643 21 -48 {Tags:["choice","hide_option"]}
 summon minecraft:marker 643 21 -52 {Tags:["choice","hide_option"]}
 summon minecraft:marker 643 20 -31 {Tags:["choice","hide_option"]}
 summon minecraft:marker 643 20 -60 {Tags:["choice","hide_option"]}

@@ -1,2 +1,2 @@
-data merge block 643 21 63 {LootTable:"luigis_mansion:search"}
-setblock 643 21 63 minecraft:hopper[enabled=false]
+data modify storage luigis_mansion:data furniture set value {ice_elemental_source:{cannot_disable:1b},can_hide_boo:1b,searchable:["interact","vacuum"],shake_animation:["interact","vacuum"],sound:{namespace:"luigis_mansion",id:"metal"},scan_message:'{"translate":"luigis_mansion:message.player.scan_furniture.55"}'}
+execute positioned 643 21 63 rotated -180 0 run function luigis_mansion:spawn_furniture/ice_bucket

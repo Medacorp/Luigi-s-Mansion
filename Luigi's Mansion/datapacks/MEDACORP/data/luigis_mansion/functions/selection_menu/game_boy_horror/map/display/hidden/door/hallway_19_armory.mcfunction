@@ -2,4 +2,5 @@ execute unless data storage luigis_mansion:data current_state.current_data{used_
 execute if data storage luigis_mansion:data current_state.current_data{used_keys:["armory"]} run place template luigis_mansion:game_boy_horror_map/door/single_unlocked 3712 160 31 clockwise_90
 tag @e[tag=armory,tag=display] add dead
 execute if data storage luigis_mansion:data current_state.current_data{obtained_keys:["armory"]} unless data storage luigis_mansion:data current_state.current_data{used_keys:["armory"]} run data modify storage luigis_mansion:data entity set value {tags:["armory"]}
+execute if data storage luigis_mansion:data current_state.current_data{obtained_keys:["armory"]} unless data storage luigis_mansion:data current_state.current_data{used_keys:["armory"]} if entity @s[scores={OpenMapFocus=23}] run data modify storage luigis_mansion:data entity.sparkle set value 1b
 execute if data storage luigis_mansion:data current_state.current_data{obtained_keys:["armory"]} unless data storage luigis_mansion:data current_state.current_data{used_keys:["armory"]} positioned 3712 160 31 run function luigis_mansion:selection_menu/game_boy_horror/map/spawn_key/variant_0/single_90

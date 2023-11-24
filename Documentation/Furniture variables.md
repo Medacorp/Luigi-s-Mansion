@@ -44,6 +44,7 @@ furniture: {
         must_vacuum:1b, //When set the elemental ghost only pops up when vacuuming nearby. Ignored if always_spawn is set. Default = 0b.
         must_be_searched:1b, //When set the elemental ghost only pops up when the furniture has triggered it's searched animation (ignored if it has none, or it is disabled). Default = 0b.
         timer:1b //When set it turns the spawning back on after 30 seconds of being disabled. Default = 0b.
+        cannot_disable:1b //When set prevents being disabled. Default = 0b.
     },
     ambient_light: { //Ambient light data, can only be applied to furniture which can cast light, that's not a lamp (eg a torch or a projector). Default = none.
         lit:1b, //Whether the light source is currently lit. If this light source is also a fire elemental source, its lit state will match whether it can spawn fire elemental ghosts. Default = 0b.
