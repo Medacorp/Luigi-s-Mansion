@@ -1,1 +1,0 @@
-scoreboard players reset #billiards_room_table_1

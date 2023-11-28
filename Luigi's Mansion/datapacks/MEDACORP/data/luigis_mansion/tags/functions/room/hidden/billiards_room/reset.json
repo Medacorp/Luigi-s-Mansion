@@ -14,8 +14,6 @@
         "luigis_mansion:room/hidden/billiards_room/reset/painting_4",
         "luigis_mansion:room/hidden/billiards_room/reset/painting_5",
         "luigis_mansion:room/hidden/billiards_room/reset/painting_6",
-        "luigis_mansion:room/hidden/billiards_room/reset/room_clear_chest",
-        "luigis_mansion:room/hidden/billiards_room/reset/table_1",
-        "luigis_mansion:room/hidden/billiards_room/reset/table_2"
+        "luigis_mansion:room/hidden/billiards_room/reset/room_clear_chest"
     ]
 }

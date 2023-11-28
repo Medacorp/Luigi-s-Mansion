@@ -1,0 +1,2 @@
+data modify storage luigis_mansion:data furniture set value {shake_animation:["interact","vacuum"],sound:{namespace:"luigis_mansion",id:"heavy_generic"},scan_message:'{"translate":"luigis_mansion:message.player.scan_furniture.28"}'}
+execute positioned 685 111 47 rotated -90 0 run function luigis_mansion:spawn_furniture/nightstand

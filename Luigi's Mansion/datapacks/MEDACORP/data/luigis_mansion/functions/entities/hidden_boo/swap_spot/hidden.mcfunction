@@ -1,5 +1,4 @@
 execute if entity @s[scores={Room=3}] run function luigis_mansion:entities/hidden_boo/swap_spot/hidden/parlor
-execute if entity @s[scores={Room=4}] run function luigis_mansion:entities/hidden_boo/swap_spot/hidden/anteroom
 execute if entity @s[scores={Room=5}] run function luigis_mansion:entities/hidden_boo/swap_spot/hidden/wardrobe_room
 execute if entity @s[scores={Room=8}] run function luigis_mansion:entities/hidden_boo/swap_spot/hidden/study
 execute if entity @s[scores={Room=9}] run function luigis_mansion:entities/hidden_boo/swap_spot/hidden/master_bedroom

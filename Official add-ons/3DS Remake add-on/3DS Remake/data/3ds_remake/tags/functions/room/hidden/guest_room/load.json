@@ -6,6 +6,8 @@
         "3ds_remake:room/hidden/guest_room/load/desk_mirror",
         "3ds_remake:room/hidden/guest_room/load/diary_writing_desk",
         "3ds_remake:room/hidden/guest_room/load/haunted_objects",
+        "3ds_remake:room/hidden/guest_room/load/nightstand",
+        "3ds_remake:room/hidden/guest_room/load/nightstand_mounted_fishbowl",
         "3ds_remake:room/hidden/guest_room/load/painting_1",
         "3ds_remake:room/hidden/guest_room/load/painting_2",
         "3ds_remake:room/hidden/guest_room/load/painting_3",
@@ -13,7 +15,6 @@
         "3ds_remake:room/hidden/guest_room/load/painting_5",
 	    "3ds_remake:room/hidden/guest_room/load/room_clear_chest",
         "3ds_remake:room/hidden/guest_room/load/sitting_room_door",
-        "3ds_remake:room/hidden/guest_room/load/table_3",
         "3ds_remake:room/hidden/guest_room/load/triple_mounted_wall_candelabra_1",
         "3ds_remake:room/hidden/guest_room/load/triple_mounted_wall_candelabra_2"
 	]

@@ -4,15 +4,14 @@
         "luigis_mansion:room/normal/sitting_room/load/lights",
         "luigis_mansion:room/normal/sitting_room/load/guest_room_door",
         "luigis_mansion:room/normal/sitting_room/load/hallway_13_door",
+        "luigis_mansion:room/normal/sitting_room/load/nightstand_mounted_fishbowl",
         "luigis_mansion:room/normal/sitting_room/load/painting_1",
         "luigis_mansion:room/normal/sitting_room/load/painting_2",
         "luigis_mansion:room/normal/sitting_room/load/painting_3",
         "luigis_mansion:room/normal/sitting_room/load/painting_4",
         "luigis_mansion:room/normal/sitting_room/load/painting_5",
-        "luigis_mansion:room/normal/sitting_room/load/table",
         "luigis_mansion:room/normal/sitting_room/load/table_mounted_tea_set_and_huge_candelabra",
         "luigis_mansion:room/normal/sitting_room/load/triple_mounted_huge_wall_candelabra_1",
-        "luigis_mansion:room/normal/sitting_room/load/triple_mounted_huge_wall_candelabra_2",
-        "luigis_mansion:room/normal/sitting_room/load/water"
+        "luigis_mansion:room/normal/sitting_room/load/triple_mounted_huge_wall_candelabra_2"
 	]
 }

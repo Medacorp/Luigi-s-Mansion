@@ -3,9 +3,6 @@
         "luigis_mansion:room/hidden/anteroom/reset/unload",
         "#luigis_mansion:room/hidden/anteroom/turn_lights/off",
         "luigis_mansion:room/hidden/anteroom/reset/lamp_1",
-        "luigis_mansion:room/hidden/anteroom/reset/lamp_2",
-        "luigis_mansion:room/hidden/anteroom/reset/table_1",
-        "luigis_mansion:room/hidden/anteroom/reset/table_2",
-        "luigis_mansion:room/hidden/anteroom/reset/table_3"
+        "luigis_mansion:room/hidden/anteroom/reset/lamp_2"
     ]
 }

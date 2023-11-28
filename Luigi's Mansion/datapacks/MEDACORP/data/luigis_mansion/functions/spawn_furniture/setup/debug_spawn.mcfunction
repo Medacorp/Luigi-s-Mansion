@@ -1,3 +1,4 @@
+data modify storage luigis_mansion:data furniture merge value {}
 execute in minecraft:overworld run setblock 27 0 0 minecraft:oak_sign{front_text:{messages:['{"translate":"luigis_mansion:message.hover_event","with":[{"selector":"@e[tag=this_entity,limit=1]","hoverEvent":{"action":"show_text","contents":{"storage":"luigis_mansion:data","nbt":"furniture"}}}]}','{"text":""}','{"text":""}','{"text":""}']}}
 execute in minecraft:overworld run data modify storage luigis_mansion:data debug_message.spawned_furniture append from block 27 0 0 front_text.messages[0]
 execute in minecraft:overworld run setblock 27 0 0 minecraft:bedrock

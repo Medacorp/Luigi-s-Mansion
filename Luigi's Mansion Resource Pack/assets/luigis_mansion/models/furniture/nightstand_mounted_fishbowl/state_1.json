@@ -1,0 +1,6 @@
+{
+	"parent": "luigis_mansion:furniture/nightstand/state_1",
+	"textures": {
+		"fishbowl": "luigis_mansion:furniture/fishbowl"
+	}
+}

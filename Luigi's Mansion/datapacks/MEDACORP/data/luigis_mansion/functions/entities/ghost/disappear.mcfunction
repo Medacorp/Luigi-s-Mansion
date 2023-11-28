@@ -20,4 +20,7 @@ tag @s remove vanish
 tag @s remove visible
 tag @s remove second_flee_state
 tag @s remove smug
+tag @s remove laugh
+tag @s remove attack
+tag @s remove complain
 tag @s add hidden

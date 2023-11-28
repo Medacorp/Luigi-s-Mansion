@@ -1,2 +1,0 @@
-execute if entity @a[tag=portrait_battle,limit=1] run tag @s[x=746.0,y=25,z=-44.0,dx=0,dy=1,dz=0,tag=check] add can_interact
-execute if entity @a[tag=portrait_battle,limit=1] if entity @s[x=746.0,y=25,z=-44.0,dx=0,dy=1,dz=0,tag=sound] run function luigis_mansion:blocks/search_sound/wood

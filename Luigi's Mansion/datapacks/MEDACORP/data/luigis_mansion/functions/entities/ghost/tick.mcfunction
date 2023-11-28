@@ -15,7 +15,8 @@ scoreboard players set @s[tag=complain,scores={SpawnTime=21..},tag=!hidden] Spaw
 scoreboard players set @s[tag=element_hurt,scores={SpawnTime=21..},tag=!hidden] SpawnTime 20
 execute if entity @s[scores={VanishTime=1..},tag=!hidden] if score @s SpawnTime = @s VanishTime run tag @s add vanish
 scoreboard players reset @s[tag=vanish] HurtTime
-scoreboard players remove @s[tag=!dying,scores={StunTime=1..}] StunTime 1
+scoreboard players remove @s[tag=!dying,scores={StunTime=1},tag=!hurt] StunTime 1
+scoreboard players remove @s[tag=!dying,scores={StunTime=2..}] StunTime 1
 execute unless entity @s[tag=portrait_ghost,scores={StunTime=1..}] run scoreboard players remove @s[tag=!dying,scores={VulnerableTime=1..},tag=!hurt] VulnerableTime 1
 execute if entity @s[scores={VulnerableTime=1..},tag=!spawned_heart] run function luigis_mansion:entities/ghost/spawn_heart
 execute if entity @s[scores={StunTime=0..},tag=!spawned_heart,tag=!hidden,tag=visible] unless entity @s[tag=!burning_heart,tag=!watery_heart,tag=!frozen_heart] run function luigis_mansion:entities/ghost/spawn_heart

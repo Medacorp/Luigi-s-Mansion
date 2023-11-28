@@ -46,10 +46,10 @@ execute if entity @a[distance=0..,scores={PositionIntX=677..721,PositionIntY=17.
 execute if score #missingno_5 Ticking matches 1 unless entity @a[distance=0..,scores={PositionIntX=666..686,PositionIntY=17..27,PositionIntZ=-55..13}] unless entity @a[distance=0..,scores={PositionIntX=677..721,PositionIntY=17..27,PositionIntZ=-24..-14}] unless entity @a[scores={Room=21}] run function e3_demo:room/original/missingno_5/not_ticking
 execute if entity @a[distance=0..,scores={PositionIntX=666..686,PositionIntY=17..27,PositionIntZ=-31..13}] run function e3_demo:room/original/missingno_6/tick
 execute if score #missingno_6 Ticking matches 1 unless entity @a[distance=0..,scores={PositionIntX=666..686,PositionIntY=17..27,PositionIntZ=-31..13}] unless entity @a[scores={Room=22}] run function e3_demo:room/original/missingno_6/not_ticking
-execute if entity @a[distance=0..,scores={PositionIntX=678..721,PositionIntY=17..27,PositionIntZ=-44..25}] run function e3_demo:room/original/missingno_7/tick
-execute if score #missingno_7 Ticking matches 1 unless entity @a[distance=0..,scores={PositionIntX=678..721,PositionIntY=17..27,PositionIntZ=-44..25}] unless entity @a[scores={Room=23}] run function e3_demo:room/original/missingno_7/not_ticking
-execute if entity @a[distance=0..,scores={PositionIntX=678..721,PositionIntY=17..27,PositionIntZ=-44..25}] run function e3_demo:room/original/missingno_8/tick
-execute if score #missingno_8 Ticking matches 1 unless entity @a[distance=0..,scores={PositionIntX=678..721,PositionIntY=17..27,PositionIntZ=-44..25}] unless entity @a[scores={Room=24}] run function e3_demo:room/original/missingno_8/not_ticking
+execute if entity @a[distance=0..,scores={PositionIntX=678..721,PositionIntY=17..27,PositionIntZ=-43..13}] run function e3_demo:room/original/missingno_7/tick
+execute if score #missingno_7 Ticking matches 1 unless entity @a[distance=0..,scores={PositionIntX=678..721,PositionIntY=17..27,PositionIntZ=-43..13}] unless entity @a[scores={Room=23}] run function e3_demo:room/original/missingno_7/not_ticking
+execute if entity @a[distance=0..,scores={PositionIntX=678..721,PositionIntY=17..27,PositionIntZ=-43..13}] run function e3_demo:room/original/missingno_8/tick
+execute if score #missingno_8 Ticking matches 1 unless entity @a[distance=0..,scores={PositionIntX=678..721,PositionIntY=17..27,PositionIntZ=-43..13}] unless entity @a[scores={Room=24}] run function e3_demo:room/original/missingno_8/not_ticking
 execute if entity @a[distance=0..,scores={PositionIntX=712..721,PositionIntY=17..27,PositionIntZ=-43..-14}] run function e3_demo:room/original/missingno_9/tick
 execute if entity @a[distance=0..,scores={PositionIntX=677..721,PositionIntY=17..27,PositionIntZ=-24..-14}] run function e3_demo:room/original/missingno_9/tick
 execute if entity @a[distance=0..,scores={PositionIntX=711..721,PositionIntY=17..36,PositionIntZ=-56..-42}] run function e3_demo:room/original/missingno_9/tick

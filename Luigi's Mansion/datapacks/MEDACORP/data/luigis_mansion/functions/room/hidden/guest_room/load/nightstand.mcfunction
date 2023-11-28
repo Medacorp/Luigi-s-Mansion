@@ -1,0 +1,7 @@
+data modify storage luigis_mansion:data furniture set value {searchable:["interact","vacuum"],can_hide_boo:1b,shake_animation:["interact","vacuum"],sound:{namespace:"luigis_mansion",id:"wood"},scan_message:'{"translate":"luigis_mansion:message.player.scan_furniture.15"}'}
+execute if data storage luigis_mansion:data current_state.current_data.rooms.guest_room{cleared:1b} store result score #temp Variant run random value 1..5
+execute if score #temp Variant matches 5 unless data storage luigis_mansion:data current_state.current_data{money_spawned:["guest_room_nightstand"]} run data modify storage luigis_mansion:data furniture.loot set value {name:"guest_room_nightstand",contents:{luigis_mansion:{gold_coin:10,bill:10}}}
+scoreboard players reset #temp Variant
+execute unless data storage luigis_mansion:data current_state.current_data.rooms.guest_room{cleared:1b} run data modify storage luigis_mansion:data furniture.pose set value [0.0f,0.01f,-180.0f]
+execute unless data storage luigis_mansion:data current_state.current_data.rooms.guest_room{cleared:1b} positioned 744 27 76 rotated -180 0 run function luigis_mansion:spawn_furniture/nightstand
+execute if data storage luigis_mansion:data current_state.current_data.rooms.guest_room{cleared:1b} positioned 744 20 76 rotated -180 0 run function luigis_mansion:spawn_furniture/nightstand

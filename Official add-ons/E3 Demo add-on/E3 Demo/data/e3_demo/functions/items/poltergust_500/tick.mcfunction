@@ -16,7 +16,9 @@ execute if entity @s[tag=poltergust_floor_sound,tag=gooigi,scores={Shrunk=1..}] 
 execute if entity @s[tag=poltergust_wall_sound,tag=gooigi,scores={Shrunk=1..}] run playsound e3_demo:item.poltergust_500.hit_wall_gooigi player @a[tag=same_room] ~ ~ ~ 1 2
 tag @s remove poltergust_floor_sound
 tag @s remove poltergust_wall_sound
-execute unless entity @s[scores={Animation=1..},tag=!idle] run tag @s[tag=!poltergust_malfunction,nbt={SelectedItem:{tag:{luigis_mansion:{id:"e3_demo:poltergust_500"}}}}] add poltergust_selected
+execute if entity @s[scores={Animation=1..},tag=!idle,nbt={Inventory:[{tag:{luigis_mansion:{id:"e3_demo:poltergust_500"}}}]}] unless entity @s[scores={ScareType=1}] unless entity @s[scores={KnockbackType=1..2}] run tag @s add turned_off_for_animation
+tag @s[tag=!turned_off_for_animation,tag=!poltergust_malfunction,nbt={SelectedItem:{tag:{luigis_mansion:{id:"e3_demo:poltergust_500"}}}}] add poltergust_selected
+tag @s remove turned_off_for_animation
 tag @s[tag=!poltergust_selected] remove expelling
 execute if entity @s[scores={OverheatMeter=300..}] run function e3_demo:items/poltergust_500/explode
 execute if entity @s[tag=exploding_poltergust] run function e3_demo:items/poltergust_500/explode

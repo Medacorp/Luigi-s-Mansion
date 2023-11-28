@@ -75,10 +75,10 @@ execute if entity @a[distance=0..,scores={PositionIntX=677..721,PositionIntY=17.
 execute if score #hallway_9 Ticking matches 1 unless entity @a[distance=0..,scores={PositionIntX=666..686,PositionIntY=17..27,PositionIntZ=2..46}] unless entity @a[distance=0..,scores={PositionIntX=677..721,PositionIntY=17..27,PositionIntZ=29..39}] unless entity @a[scores={Room=35}] run function luigis_mansion:room/hidden/hallway_9/not_ticking
 execute if entity @a[distance=0..,scores={PositionIntX=666..686,PositionIntY=17..27,PositionIntZ=2..46}] run function luigis_mansion:room/hidden/hallway_10/tick
 execute if score #hallway_10 Ticking matches 1 unless entity @a[distance=0..,scores={PositionIntX=666..686,PositionIntY=17..27,PositionIntZ=2..46}] unless entity @a[scores={Room=36}] run function luigis_mansion:room/hidden/hallway_10/not_ticking
-execute if entity @a[distance=0..,scores={PositionIntX=678..721,PositionIntY=17..27,PositionIntZ=2..71}] run function luigis_mansion:room/hidden/hallway_11/tick
-execute if score #hallway_11 Ticking matches 1 unless entity @a[distance=0..,scores={PositionIntX=678..721,PositionIntY=17..27,PositionIntZ=2..71}] unless entity @a[scores={Room=37}] run function luigis_mansion:room/hidden/hallway_11/not_ticking
-execute if entity @a[distance=0..,scores={PositionIntX=678..721,PositionIntY=17..27,PositionIntZ=2..71}] run function luigis_mansion:room/hidden/hallway_12/tick
-execute if score #hallway_12 Ticking matches 1 unless entity @a[distance=0..,scores={PositionIntX=678..721,PositionIntY=17..27,PositionIntZ=2..71}] unless entity @a[scores={Room=38}] run function luigis_mansion:room/hidden/hallway_12/not_ticking
+execute if entity @a[distance=0..,scores={PositionIntX=678..721,PositionIntY=17..27,PositionIntZ=2..58}] run function luigis_mansion:room/hidden/hallway_11/tick
+execute if score #hallway_11 Ticking matches 1 unless entity @a[distance=0..,scores={PositionIntX=678..721,PositionIntY=17..27,PositionIntZ=2..58}] unless entity @a[scores={Room=37}] run function luigis_mansion:room/hidden/hallway_11/not_ticking
+execute if entity @a[distance=0..,scores={PositionIntX=678..721,PositionIntY=17..27,PositionIntZ=2..58}] run function luigis_mansion:room/hidden/hallway_12/tick
+execute if score #hallway_12 Ticking matches 1 unless entity @a[distance=0..,scores={PositionIntX=678..721,PositionIntY=17..27,PositionIntZ=2..58}] unless entity @a[scores={Room=38}] run function luigis_mansion:room/hidden/hallway_12/not_ticking
 execute if entity @a[distance=0..,scores={PositionIntX=712..721,PositionIntY=17..27,PositionIntZ=29..58}] run function luigis_mansion:room/hidden/hallway_13/tick
 execute if entity @a[distance=0..,scores={PositionIntX=677..721,PositionIntY=17..27,PositionIntZ=29..39}] run function luigis_mansion:room/hidden/hallway_13/tick
 execute if entity @a[distance=0..,scores={PositionIntX=711..721,PositionIntY=17..36,PositionIntZ=57..71}] run function luigis_mansion:room/hidden/hallway_13/tick

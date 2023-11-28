@@ -1,1 +1,0 @@
-scoreboard players reset #anteroom_table_1

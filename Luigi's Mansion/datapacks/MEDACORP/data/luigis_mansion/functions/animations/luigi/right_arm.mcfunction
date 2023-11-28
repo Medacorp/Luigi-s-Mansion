@@ -18,10 +18,10 @@ execute unless entity @s[tag=low_health,tag=!holding_poltergust] if entity @s[sc
 execute if entity @s[tag=low_health,tag=!holding_poltergust] if entity @s[scores={Animation=0..1}] run function luigis_mansion:animations/luigi/idle/hunched/right_arm
 
 # Move animations
-execute if entity @s[tag=sneaking,tag=!stop_model,tag=!riding_poltergust,tag=!holding_poltergust,tag=!low_health,scores={Animation=..0}] run function luigis_mansion:animations/luigi/sneaking/right_arm
-execute if entity @s[tag=walking,tag=!stop_model,tag=!riding_poltergust,tag=!holding_poltergust,tag=!low_health,scores={Animation=..0}] run function luigis_mansion:animations/luigi/walking/right_arm
-execute if entity @s[tag=running,tag=!stop_model,tag=!riding_poltergust,tag=!holding_poltergust,tag=!low_health,scores={Animation=..0}] run function luigis_mansion:animations/luigi/running/right_arm
-execute if entity @s[tag=swimming,tag=!stop_model,tag=!riding_poltergust,tag=!holding_poltergust,scores={Animation=..0}] run function luigis_mansion:animations/luigi/swimming/right_arm
+execute if entity @s[tag=sneaking,tag=!stop_model,tag=!riding_poltergust,tag=!holding_poltergust,tag=!low_health,scores={Animation=0}] run function luigis_mansion:animations/luigi/sneaking/right_arm
+execute if entity @s[tag=walking,tag=!stop_model,tag=!riding_poltergust,tag=!holding_poltergust,tag=!low_health,scores={Animation=0}] run function luigis_mansion:animations/luigi/walking/right_arm
+execute if entity @s[tag=running,tag=!stop_model,tag=!riding_poltergust,tag=!holding_poltergust,tag=!low_health,scores={Animation=0}] run function luigis_mansion:animations/luigi/running/right_arm
+execute if entity @s[tag=swimming,tag=!stop_model,tag=!riding_poltergust,tag=!holding_poltergust,scores={Animation=0}] run function luigis_mansion:animations/luigi/swimming/right_arm
 
 execute at @s[scores={Animation=-4}] unless entity @s[tag=held_item,tag=holding_poltergust] run function luigis_mansion:animations/luigi/pulled/right_arm
 execute at @s[scores={Animation=-3..-2}] if score #mirrored Selected matches 0 run function luigis_mansion:animations/luigi/move_nozzle/right_arm
