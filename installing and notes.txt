@@ -21,7 +21,7 @@ Do NOT turn chat off, or you will get stuck. The map requires players to click o
 * Lots of entities in rooms with mirrors cause quite some lag (just grab the money quickly while I try to find ways to reduce the lag)
 * Some instances of rapid teleportation may make client-server communication difficult. (Such as being pulled by a ghost)
 ** https://bugs.mojang.com/browse/MC-197855 was made about this, but Mojang decided not to track this as a bug. A rewrite of the system was planned when Mojang was last asked.
-** Until Mojang adressed this issue, it's recommended to play this map in singleplayer
+** Until Mojang adresses this issue, it's recommended to play this map in singleplayer
 
 == Supported languages ==
 English (US) is the base language of the map, all other languages are worked on via Crowdin. (https://crowdin.com/project/medacorp-projects)
