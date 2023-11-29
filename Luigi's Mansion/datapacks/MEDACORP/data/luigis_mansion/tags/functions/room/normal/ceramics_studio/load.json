@@ -10,11 +10,11 @@
         "luigis_mansion:room/normal/ceramics_studio/load/jar_1",
         "luigis_mansion:room/normal/ceramics_studio/load/jar_2",
         "luigis_mansion:room/normal/ceramics_studio/load/jar_3",
-        "luigis_mansion:room/normal/ceramics_studio/load/jar_4",
         "luigis_mansion:room/normal/ceramics_studio/load/jar_5",
         "luigis_mansion:room/normal/ceramics_studio/load/jar_6",
         "luigis_mansion:room/normal/ceramics_studio/load/jar_7",
         "luigis_mansion:room/normal/ceramics_studio/load/jar_8",
-        "luigis_mansion:room/normal/ceramics_studio/load/room_clear_chest"
+        "luigis_mansion:room/normal/ceramics_studio/load/room_clear_chest",
+        "luigis_mansion:room/normal/ceramics_studio/load/small_trophy"
 	]
 }

@@ -21,7 +21,6 @@ summon minecraft:marker 700 29 -57 {Tags:["choice","hide_option"]}
 summon minecraft:marker 703 29 -58 {Tags:["choice","hide_option"]}
 summon minecraft:marker 709 29 -58 {Tags:["choice","hide_option"]}
 summon minecraft:marker 701 29 -55 {Tags:["choice","hide_option"]}
-summon minecraft:marker 710 29 -55 {Tags:["choice","hide_option"]}
 summon minecraft:marker 701 29 -52 {Tags:["choice","hide_option"]}
 summon minecraft:marker 711 29 -52 {Tags:["choice","hide_option"]}
 summon minecraft:marker 701 29 -49 {Tags:["choice","hide_option"]}
