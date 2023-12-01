@@ -9,6 +9,7 @@ execute as @e[tag=this_entity,limit=1] store result score @s HomeY run data get 
 scoreboard players set @e[tag=this_entity,limit=1] EntitySizeWidth 8
 scoreboard players set @e[tag=this_entity,limit=1] EntitySizeHeight 18
 scoreboard players set @e[tag=this_entity,limit=1] EntityYOffset 14
+execute if data storage luigis_mansion:data entity{happy:1b} run tag @e[tag=this_entity,limit=1] add happy
 function luigis_mansion:spawn_entities/setup/default
 tag @e[tag=this_entity,limit=1] remove this_entity
 data remove storage luigis_mansion:data entity

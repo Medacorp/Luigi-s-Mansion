@@ -206,7 +206,7 @@ execute if data storage luigis_mansion:data money_spawned{breaker_room_speedy_sp
 execute if data storage luigis_mansion:data money_spawned{cellar_shelf_1:1b} run data modify storage luigis_mansion:data update_data.money_spawned append value "cellar_shelf_1"
 execute if data storage luigis_mansion:data money_spawned{cellar_shelf_2:1b} run data modify storage luigis_mansion:data update_data.money_spawned append value "cellar_shelf_content_old_junk_1"
 execute if data storage luigis_mansion:data money_spawned{cellar_shelf_3:1b} run data modify storage luigis_mansion:data update_data.money_spawned append value "cellar_shelf_content_trophies_1"
-execute if data storage luigis_mansion:data money_spawned{cellar_shelf_4:1b} run data modify storage luigis_mansion:data update_data.money_spawned append value "cellar_shelf_content_jars_2"
+execute if data storage luigis_mansion:data money_spawned{cellar_shelf_4:1b} run data modify storage luigis_mansion:data update_data.money_spawned append value "cellar_shelf_content_vases_2"
 execute if data storage luigis_mansion:data money_spawned{cellar_shelf_5:1b} run data modify storage luigis_mansion:data update_data.money_spawned append value "cellar_shelf_content_old_junk_2"
 execute if data storage luigis_mansion:data money_spawned{cellar_shelf_6:1b} run data modify storage luigis_mansion:data update_data.money_spawned append value "cellar_shelf_content_trophies_2"
 execute if data storage luigis_mansion:data money_spawned{clockwork_room_lamp_1:1b} run data modify storage luigis_mansion:data update_data.money_spawned append value "clockwork_room_hook_suspended_encased_lamp_1"

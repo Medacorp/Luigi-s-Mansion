@@ -1,7 +1,7 @@
 Furniture spawning takes certain variables, they are classified and listed below. The variables are saved in the storage "luigis_mansion:data furniture" object.
 
 ```
-furniture: {
+furniture:{
     // Display and sound
     pose:[0.0f,0.01f,0.0f], //The pose the furniture armor stand's head gets. The jaw is ignored, and the pitch is clamped to -90..90 and copied over to the armor stand, ignoring execution rotation pitch. Default = defined by furniture, generally 0.0f,0.01f,0.0f
     no_long_shake:1b, //When set disables the long shaking animation from manual search. Default = 0b.
@@ -16,8 +16,19 @@ furniture: {
     inverted_swing:1b, //Swinging furniture only, whether the swinging angles are inverted for searching methods. Default = 0b.
         
     //search details
-    searchable: ["<method>"], //Sets what method can result in searching. If "interact" is absent here, but provided in shake_animation, interact will still try to shake it, and trigger the search animaton, but it won't actually get searched. Methods: time(will search automatically), interact, vacuum, dust, fire, water, ice. Default = none.
-    shake_animation: ["<method>"], //Sets what method can result in the furniture shaking. Methods: interact, vacuum, dust, fire, water, ice. Default = none.
+    type:{ //Overwrites the default furniture type of this furniture.
+        value:"<type>", //Required if type is present, what type to use. Types:delayed, fan, generic, rolling, swinging, swirling.
+        search_value:X, //Optional, what search value is needed. The default may be different for the default type of the furniture.
+            * For delayed and generic, it's how long the poltergust must be used. Default = 20.
+            * For fan, it's the default spinning speed in degrees/10. Default = 0.
+            * For generic, it's how long the poltergust must be used. Default = 20.
+            * For rolling it's how long the poltergust. Default = 20.
+            * For swinging the angle in degrees*10. Default = 100.
+            * For swirling the amount of spinds it needs to have made. Default = 5.
+        turn_left:0b //Optional if value is "fan", wether the fan turns left rather than right.
+    },
+    searchable:["<method>"], //Sets what method can result in searching. If "interact" is absent here, but provided in shake_animation, interact will still try to shake it, and trigger the search animaton, but it won't actually get searched. Methods: time(will search automatically), interact, vacuum, dust, fire, water, ice. Default = none.
+    shake_animation:["<method>"], //Sets what method can result in the furniture shaking. Methods: interact, vacuum, dust, fire, water, ice. Default = none.
     searched:1b, //When set the furniture should spawn triggering its searched animation. Default = 0b.
     no_search_animation:1b, //When set the furniture has no search animation at all (eg on a chest doesn't open it). If set alongside searched, the furniture spawns in the searched state, skipping the animation. Default = 0b.
     must_face:1b, //When set requires the player to face the opposite direction compared to this furniture (with 90 degree total range) in other to manually search it. Default = 0b.
@@ -46,21 +57,21 @@ furniture: {
         timer:1b //When set it turns the spawning back on after 30 seconds of being disabled. Default = 0b.
         cannot_disable:1b //When set prevents being disabled. Default = 0b.
     },
-    ambient_light: { //Ambient light data, can only be applied to furniture which can cast light, that's not a lamp (eg a torch or a projector). Default = none.
+    ambient_light:{ //Ambient light data, can only be applied to furniture which can cast light, that's not a lamp (eg a torch or a projector). Default = none.
         lit:1b, //Whether the light source is currently lit. If this light source is also a fire elemental source, its lit state will match whether it can spawn fire elemental ghosts. Default = 0b.
         light_on_search:1b, //Whether the light source turns on when searched. Default = 0b.
         cast_shadow:1b //Whether the light source creates shadows. Default = 0b.
     },
     mirror_reflection:1b, //Whether the mirror will actually reflect the room, otherwise gets a solid glass texture. Valid for mirrors only. Default = 1b. Forced to 0b if the rotation is not a multiple of 90.
     no_spawn_sound:1b, //Whether the unsearched room clear chest sound is disabled, searched room clear chests always have it disabled, regardless of this value. Valid for room clear chests only. Default = 0b.
-    hitbox: { //The size of the hitbox, only applies and required for scan areas and elemental sources.
+    hitbox:{ //The size of the hitbox, only applies and required for scan areas and elemental sources.
         type:"standing", //How the hibox is aligned to the spawn position, "standing" is bottom aligned, "hanging" is top aligned. Default = centered.
         radius:X, //A ball hitbox, value is the radius in tenths of a block.
-        box: { //A box shaped hitbox.
+        box:{ //A box shaped hitbox.
             height:X, //The height in tenths of a block.
             width:X //The width in tenths of a block.
         },
-        rotated_box: { //A box shaped hitbox that rotates with the entity.
+        rotated_box:{ //A box shaped hitbox that rotates with the entity.
             left:X, //The left to right size in tenths of a block.
             up:X, //The height in tenths of a block.
             forward:X //The front to back size in tenths of a block.
@@ -73,15 +84,15 @@ furniture: {
             cannot_extinguish:1b, //Whether this flame can be turned off by vacuum, dust and ice (water will still turn it off). Default = 0b. Not applicable to incense flames.
             always_burn:1b, //Whether this flame can be turned off by anything at all. Default = 0b. Not applicable to incense flames.
             fire_elemental_source:{}, //See <type>_elemental_source, above. Default = none.
-            tags: [] //A list of tags to append to the flame's default tags, used to target the flame in functions. Default = none.
+            tags:[] //A list of tags to append to the flame's default tags, used to target the flame in functions. Default = none.
         }
     ],
     door:{ //Required for and used only by doors
-        model: { //Required, the ID of the door model. See IDs in use for valid IDs.
+        model:{ //Required, the ID of the door model. See IDs in use for valid IDs.
             namespace:"luigis_mansion", //Required, the namespace of the door model.
             id:"mansion/1" //Required, the ID of the door model.
         },
-        frame: { //Optional, the ID of the frame model. See IDs in use for valid IDs.
+        frame:{ //Optional, the ID of the frame model. See IDs in use for valid IDs.
             namespace:"luigis_mansion", //The namespace of the frame model.
             id:"normal" //The ID of the frame model.
         },
@@ -91,13 +102,13 @@ furniture: {
         burning:"extinguish_kitchen_door", //Only if the door is burning, the save data field to write on extinguish. If it's already written, the door won't burn. Default = none.
         key:"parlor", //What key this door needs. Default = none.
         go_through_command:"<command>", //A command this door needs to run at the moment of warping the player. Used by the front door and some special cases. Default = none.
-        other_end: { //Coordinates of the door on the other side to trigger opening animation for; does not affect warping. Default = none.
+        other_end:{ //Coordinates of the door on the other side to trigger opening animation for; does not affect warping. Default = none.
             dimension:"luigis_mansion:normal", //The dimension of the door. Default = the dimension of this door.
             x:X, //The integer X coordinate
             y:X, //The integer Y coordinate
             z:X //The integer Z coordinate
         }
     },
-    tags: [] //A list of tags to append to the furniture's default tags used to target the furniture in functions. Default = none.
+    tags:[] //A list of tags to append to the furniture's default tags used to target the furniture in functions. Default = none.
 }
 ```

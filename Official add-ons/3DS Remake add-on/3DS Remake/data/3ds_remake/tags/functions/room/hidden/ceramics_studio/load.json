@@ -4,17 +4,16 @@
         "3ds_remake:room/hidden/ceramics_studio/load/lights",
         "3ds_remake:room/hidden/ceramics_studio/load/armory_door",
         "3ds_remake:room/hidden/ceramics_studio/load/cobweb",
+        "3ds_remake:room/hidden/ceramics_studio/load/frozen_vase",
         "3ds_remake:room/hidden/ceramics_studio/load/haunted_objects",
-        "3ds_remake:room/hidden/ceramics_studio/load/frozen_jar",
-        "3ds_remake:room/hidden/ceramics_studio/load/ice",
-        "3ds_remake:room/hidden/ceramics_studio/load/jar_1",
-        "3ds_remake:room/hidden/ceramics_studio/load/jar_2",
-        "3ds_remake:room/hidden/ceramics_studio/load/jar_3",
-        "3ds_remake:room/hidden/ceramics_studio/load/jar_5",
-        "3ds_remake:room/hidden/ceramics_studio/load/jar_6",
-        "3ds_remake:room/hidden/ceramics_studio/load/jar_7",
-        "3ds_remake:room/hidden/ceramics_studio/load/jar_8",
+        "3ds_remake:room/hidden/ceramics_studio/load/metal_vase",
+        "3ds_remake:room/hidden/ceramics_studio/load/orange_stained_vase",
+        "3ds_remake:room/hidden/ceramics_studio/load/porcelain_vase",
         "3ds_remake:room/hidden/ceramics_studio/load/room_clear_chest",
-        "3ds_remake:room/hidden/ceramics_studio/load/small_trophy"
+        "3ds_remake:room/hidden/ceramics_studio/load/rose_painted_vase",
+        "3ds_remake:room/hidden/ceramics_studio/load/small_red_stained_vase",
+        "3ds_remake:room/hidden/ceramics_studio/load/small_trophy",
+        "3ds_remake:room/hidden/ceramics_studio/load/tall_neck_vase",
+        "3ds_remake:room/hidden/ceramics_studio/load/terracotta_vase"
 	]
 }

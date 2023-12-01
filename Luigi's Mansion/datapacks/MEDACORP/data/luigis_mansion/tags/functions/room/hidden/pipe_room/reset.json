@@ -2,7 +2,6 @@
     "values": [
         "luigis_mansion:room/hidden/pipe_room/reset/unload",
         "#luigis_mansion:room/hidden/pipe_room/turn_lights/off",
-        "luigis_mansion:room/hidden/pipe_room/reset/bucket",
         "luigis_mansion:room/hidden/pipe_room/reset/crate",
         "luigis_mansion:room/hidden/pipe_room/reset/frozen_barrel",
         "luigis_mansion:room/hidden/pipe_room/reset/ice",

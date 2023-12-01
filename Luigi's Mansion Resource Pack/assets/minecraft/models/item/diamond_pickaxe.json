@@ -7304,14 +7304,6 @@
             "predicate": {
                 "damaged": 0,
                 "damage": 0.0118,
-                "custom_model_data": -1
-            },
-            "model": "e3_demo:furniture/vase"
-        },
-        {
-            "predicate": {
-                "damaged": 0,
-                "damage": 0.0118,
                 "custom_model_data": 0
             },
             "model": "luigis_mansion:furniture/cobweb/undisturbed"
@@ -8779,6 +8771,102 @@
                 "custom_model_data": 183
             },
             "model": "luigis_mansion:furniture/wooden_stool_mounted_small_trophy"
+        },
+        {
+            "predicate": {
+                "damaged": 0,
+                "damage": 0.0118,
+                "custom_model_data": 184
+            },
+            "model": "luigis_mansion:furniture/gold_vase"
+        },
+        {
+            "predicate": {
+                "damaged": 0,
+                "damage": 0.0118,
+                "custom_model_data": 185
+            },
+            "model": "luigis_mansion:furniture/gray_vase"
+        },
+        {
+            "predicate": {
+                "damaged": 0,
+                "damage": 0.0118,
+                "custom_model_data": 186
+            },
+            "model": "luigis_mansion:furniture/frozen_vase"
+        },
+        {
+            "predicate": {
+                "damaged": 0,
+                "damage": 0.0118,
+                "custom_model_data": 187
+            },
+            "model": "luigis_mansion:furniture/terracotta_vase"
+        },
+        {
+            "predicate": {
+                "damaged": 0,
+                "damage": 0.0118,
+                "custom_model_data": 188
+            },
+            "model": "luigis_mansion:furniture/orange_stained_vase"
+        },
+        {
+            "predicate": {
+                "damaged": 0,
+                "damage": 0.0118,
+                "custom_model_data": 189
+            },
+            "model": "luigis_mansion:furniture/wooden_stool_mounted_orange_stained_vase"
+        },
+        {
+            "predicate": {
+                "damaged": 0,
+                "damage": 0.0118,
+                "custom_model_data": 190
+            },
+            "model": "luigis_mansion:furniture/tall_neck_vase"
+        },
+        {
+            "predicate": {
+                "damaged": 0,
+                "damage": 0.0118,
+                "custom_model_data": 191
+            },
+            "model": "luigis_mansion:furniture/rose_painted_vase"
+        },
+        {
+            "predicate": {
+                "damaged": 0,
+                "damage": 0.0118,
+                "custom_model_data": 192
+            },
+            "model": "luigis_mansion:furniture/red_stained_vase"
+        },
+        {
+            "predicate": {
+                "damaged": 0,
+                "damage": 0.0118,
+                "custom_model_data": 193
+            },
+            "model": "luigis_mansion:furniture/small_red_stained_vase"
+        },
+        {
+            "predicate": {
+                "damaged": 0,
+                "damage": 0.0118,
+                "custom_model_data": 194
+            },
+            "model": "luigis_mansion:furniture/porcelain_vase"
+        },
+        {
+            "predicate": {
+                "damaged": 0,
+                "damage": 0.0118,
+                "custom_model_data": 195
+            },
+            "model": "luigis_mansion:furniture/metal_vase"
         },
         {
             "predicate": {

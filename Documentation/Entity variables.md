@@ -1,7 +1,7 @@
 Entity spawning takes certain variables, they are listed and categorized below. The variables are saved in the storage "luigis_mansion:data entity" object and overwrite the values provided by mansion data
 
 ```
-entity: {
+entity:{
     //Interaction
     scan_message:{ //The message spoken when scanning this Toad, E. Gadd, portrait ghost or fake door.
         sender:"me", //Who speaks when scanning this entity. Either "scanner" or "me". If set to scanner, and the scan is from Gooigi, sends the usual "......" message instead.
@@ -37,11 +37,11 @@ entity: {
     //Non-default setup
     training_room_score:X, //Score granted to the one who reeled in the ghost in the training room.
     door:{ //Required for and used only by fake doors
-        model: { //Required, the ID of the door model. See IDs in use for valid IDs.
+        model:{ //Required, the ID of the door model. See IDs in use for valid IDs.
             namespace:"luigis_mansion", //Required, the namespace of the door model.
             id:"mansion/1" //Required, the id of the door model.
         },
-        frame: { //Optional, the ID of the frame model. See IDs in use for valid IDs.
+        frame:{ //Optional, the ID of the frame model. See IDs in use for valid IDs.
             namespace:"luigis_mansion", //The namespace of the frame model.
             id:"normal" //The ID of the frame model.
         },
@@ -54,7 +54,8 @@ entity: {
     room:X, //Room number that this boo is in. Default = 0
     can_attack:1b, //Whether or not this boo can attack. Default = 0b
     show_health:1b, //Whether or not this boo shows health and is affected by the poltergust. Default = 1b
-    tags: [] //A list of tags to append to the entity's default tags used to target the entity in functions. Default = none.
+    happy:1b, //Whether or not this toad is happy and not crying. Default = 0b
+    tags:[] //A list of tags to append to the entity's default tags used to target the entity in functions. Default = none.
 }
 ```
 

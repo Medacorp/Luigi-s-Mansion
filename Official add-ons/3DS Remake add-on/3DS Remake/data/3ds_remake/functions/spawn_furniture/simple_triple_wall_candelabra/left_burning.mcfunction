@@ -7,7 +7,6 @@ kill @e[tag=candle_flame_rotation,limit=1]
 scoreboard players reset #temp Time
 scoreboard players reset #temp2 Time
 scoreboard players set @e[tag=this_entity,limit=1] ActionTime -1
-scoreboard players set @e[tag=this_entity,limit=1] Sound 0
 scoreboard players set @e[tag=this_entity,limit=1] FurnitureSizeRadius 6
 scoreboard players set @e[tag=this_entity,limit=1] FurnitureDustLeft 0
 scoreboard players set @e[tag=this_entity,limit=1] FurnitureDustUp 0
@@ -18,7 +17,6 @@ scoreboard players set @e[tag=this_entity,limit=1] FurnitureContentForward 0
 scoreboard players set @e[tag=this_entity,limit=1] FurnitureGhostLeft 0
 scoreboard players set @e[tag=this_entity,limit=1] FurnitureGhostUp 0
 scoreboard players set @e[tag=this_entity,limit=1] FurnitureGhostForward 0
-scoreboard players set @e[tag=this_entity,limit=1] FurnitureSearch 20
 function luigis_mansion:spawn_furniture/setup/default
 tag @e[tag=this_entity,limit=1] remove this_entity
 data remove storage luigis_mansion:data furniture

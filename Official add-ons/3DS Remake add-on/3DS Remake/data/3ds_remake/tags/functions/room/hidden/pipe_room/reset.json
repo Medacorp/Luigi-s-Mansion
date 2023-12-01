@@ -2,7 +2,6 @@
     "values": [
         "3ds_remake:room/hidden/pipe_room/reset/unload",
         "#3ds_remake:room/hidden/pipe_room/turn_lights/off",
-        "3ds_remake:room/hidden/pipe_room/reset/bucket",
         "3ds_remake:room/hidden/pipe_room/reset/crate",
         "3ds_remake:room/hidden/pipe_room/reset/frozen_barrel",
         "3ds_remake:room/hidden/pipe_room/reset/ice",

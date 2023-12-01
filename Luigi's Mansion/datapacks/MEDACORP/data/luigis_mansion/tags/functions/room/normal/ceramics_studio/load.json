@@ -4,17 +4,16 @@
         "luigis_mansion:room/normal/ceramics_studio/load/lights",
         "luigis_mansion:room/normal/ceramics_studio/load/armory_door",
         "luigis_mansion:room/normal/ceramics_studio/load/cobweb",
+        "luigis_mansion:room/normal/ceramics_studio/load/frozen_vase",
         "luigis_mansion:room/normal/ceramics_studio/load/haunted_objects",
-        "luigis_mansion:room/normal/ceramics_studio/load/frozen_jar",
-        "luigis_mansion:room/normal/ceramics_studio/load/ice",
-        "luigis_mansion:room/normal/ceramics_studio/load/jar_1",
-        "luigis_mansion:room/normal/ceramics_studio/load/jar_2",
-        "luigis_mansion:room/normal/ceramics_studio/load/jar_3",
-        "luigis_mansion:room/normal/ceramics_studio/load/jar_5",
-        "luigis_mansion:room/normal/ceramics_studio/load/jar_6",
-        "luigis_mansion:room/normal/ceramics_studio/load/jar_7",
-        "luigis_mansion:room/normal/ceramics_studio/load/jar_8",
+        "luigis_mansion:room/normal/ceramics_studio/load/metal_vase",
+        "luigis_mansion:room/normal/ceramics_studio/load/orange_stained_vase",
+        "luigis_mansion:room/normal/ceramics_studio/load/porcelain_vase",
         "luigis_mansion:room/normal/ceramics_studio/load/room_clear_chest",
-        "luigis_mansion:room/normal/ceramics_studio/load/small_trophy"
+        "luigis_mansion:room/normal/ceramics_studio/load/rose_painted_vase",
+        "luigis_mansion:room/normal/ceramics_studio/load/small_red_stained_vase",
+        "luigis_mansion:room/normal/ceramics_studio/load/small_trophy",
+        "luigis_mansion:room/normal/ceramics_studio/load/tall_neck_vase",
+        "luigis_mansion:room/normal/ceramics_studio/load/terracotta_vase"
 	]
 }

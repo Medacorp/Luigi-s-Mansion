@@ -4,6 +4,10 @@
         "e3_demo:room/original/hallway_3/load/lights",
         "e3_demo:room/original/hallway_3/load/dining_room_door",
         "e3_demo:room/original/hallway_3/load/entrance_door",
+        "e3_demo:room/original/hallway_3/load/gray_vase_1",
+        "e3_demo:room/original/hallway_3/load/gray_vase_2",
+        "e3_demo:room/original/hallway_3/load/gray_vase_3",
+        "e3_demo:room/original/hallway_3/load/gray_vase_4",
         "e3_demo:room/original/hallway_3/load/missingno_12_door",
         "e3_demo:room/original/hallway_3/load/missingno_15_door",
         "e3_demo:room/original/hallway_3/load/missingno_17_door",
@@ -11,10 +15,6 @@
         "e3_demo:room/original/hallway_3/load/simple_wall_candelabra_2",
         "e3_demo:room/original/hallway_3/load/simple_wall_candelabra_3",
         "e3_demo:room/original/hallway_3/load/simple_wall_candelabra_4",
-        "e3_demo:room/original/hallway_3/load/simple_wall_candelabra_5",
-        "e3_demo:room/original/hallway_3/load/vase_1",
-        "e3_demo:room/original/hallway_3/load/vase_2",
-        "e3_demo:room/original/hallway_3/load/vase_3",
-        "e3_demo:room/original/hallway_3/load/vase_4"
+        "e3_demo:room/original/hallway_3/load/simple_wall_candelabra_5"
 	]
 }

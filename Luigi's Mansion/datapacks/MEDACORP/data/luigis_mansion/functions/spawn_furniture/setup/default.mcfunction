@@ -7,6 +7,7 @@ function luigis_mansion:spawn_furniture/setup/search_animations
 function luigis_mansion:spawn_furniture/setup/sound
 
 # Search details
+function luigis_mansion:spawn_furniture/setup/overwrite_type
 function luigis_mansion:spawn_furniture/setup/searchable_by
 function luigis_mansion:spawn_furniture/setup/searched_status
 function luigis_mansion:spawn_furniture/setup/must_face_to_search

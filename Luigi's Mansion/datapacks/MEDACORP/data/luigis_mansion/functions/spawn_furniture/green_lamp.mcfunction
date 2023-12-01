@@ -1,7 +1,6 @@
 summon minecraft:armor_stand ~ ~-1.4 ~ {CustomName:'{"translate":"luigis_mansion:furniture.green_lamp"}',Tags:["furniture","standing_furniture","generic","lamp","was_dark_room","dark_room","immobile","this_entity"],NoGravity:1b,Marker:1b,ArmorItems:[{},{},{},{id:"minecraft:diamond_pickaxe",Count:1b,tag:{Unbreakable:1b,Damage:19,CustomModelData:128}}],Invisible:1b,DisabledSlots:2039583}
 teleport @e[tag=this_entity,limit=1] ~ ~-1.4 ~ ~ 0
 scoreboard players set @e[tag=this_entity,limit=1] ActionTime -1
-scoreboard players set @e[tag=this_entity,limit=1] Sound 0
 scoreboard players set @e[tag=this_entity,limit=1] FurnitureSizeWidth 10
 scoreboard players set @e[tag=this_entity,limit=1] FurnitureSizeHeight 12
 scoreboard players set @e[tag=this_entity,limit=1] FurnitureDustLeft 0
@@ -13,7 +12,6 @@ scoreboard players set @e[tag=this_entity,limit=1] FurnitureContentForward 0
 scoreboard players set @e[tag=this_entity,limit=1] FurnitureGhostLeft 0
 scoreboard players set @e[tag=this_entity,limit=1] FurnitureGhostUp 0
 scoreboard players set @e[tag=this_entity,limit=1] FurnitureGhostForward 0
-scoreboard players set @e[tag=this_entity,limit=1] FurnitureSearch 20
 scoreboard players set @e[tag=this_entity,limit=1] FurnitureLightLeft 0
 scoreboard players set @e[tag=this_entity,limit=1] FurnitureLightUp 5
 scoreboard players set @e[tag=this_entity,limit=1] FurnitureLightForward 0

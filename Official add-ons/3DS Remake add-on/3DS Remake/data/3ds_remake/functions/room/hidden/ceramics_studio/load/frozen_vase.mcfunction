@@ -1,0 +1,2 @@
+data modify storage luigis_mansion:data furniture set value {searchable:["interact","vacuum"],ice_elemental_source:{},can_hide_boo:1b,shake_animation:["interact","vacuum"],sound:{namespace:"luigis_mansion",id:"stone"},scan_message:'{"translate":"luigis_mansion:message.player.scan_furniture.9"}'}
+execute positioned 707 29 61 rotated -90 0 run function luigis_mansion:spawn_furniture/frozen_vase
