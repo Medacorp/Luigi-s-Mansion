@@ -19,8 +19,6 @@ tag @s[scores={Dialog=1}] add intro
 scoreboard players set @s[scores={Dialog=1}] AnimationProgress 0
 scoreboard players set @s[scores={Dialog=21}] AnimationProgress 0
 scoreboard players set @s[scores={Dialog=41..250}] AnimationProgress 0
-data modify entity @s[scores={Dialog=250}] ArmorItems[3].tag.CustomModelData set value 91
-data modify entity @s[scores={Dialog=290}] ArmorItems[3].tag.CustomModelData set value 88
 execute if entity @s[scores={Dialog=1..20}] run function luigis_mansion:animations/bowser/idle
 execute if entity @s[scores={Dialog=21..40}] run function luigis_mansion:animations/bowser/duck
 execute if entity @s[scores={Dialog=41..289}] run function luigis_mansion:animations/bowser/roar

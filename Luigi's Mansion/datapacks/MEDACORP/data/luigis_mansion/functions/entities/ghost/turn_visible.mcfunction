@@ -5,18 +5,18 @@ tag @s add visible
 tag @s remove big
 tag @s remove dropped_equipment
 tag @s remove partially_invisible
-data modify entity @s ArmorItems[3].id set from entity @s ArmorItems[3].tag.visible
-data modify entity @s HandItems[0].id set from entity @s HandItems[0].tag.visible
-data modify entity @s HandItems[1].id set from entity @s HandItems[1].tag.visible
-execute as @e[tag=change_this_model] run data modify entity @s ArmorItems[3].id set from entity @s ArmorItems[3].tag.visible
-execute as @e[tag=change_this_model] run data modify entity @s HandItems[0].id set from entity @s HandItems[0].tag.visible
-execute as @e[tag=change_this_model] run data modify entity @s HandItems[1].id set from entity @s HandItems[1].tag.visible
-data modify entity @s ArmorItems[3] merge from entity @s ArmorItems[3].tag.variants.default
-data modify entity @s HandItems[0] merge from entity @s HandItems[0].tag.variants.default
-data modify entity @s HandItems[1] merge from entity @s HandItems[1].tag.variants.default
-execute as @e[tag=change_this_model] run data modify entity @s ArmorItems[3] merge from entity @s ArmorItems[3].tag.variants.default
-execute as @e[tag=change_this_model] run data modify entity @s HandItems[0] merge from entity @s HandItems[0].tag.variants.default
-execute as @e[tag=change_this_model] run data modify entity @s HandItems[1] merge from entity @s HandItems[1].tag.variants.default
+data modify entity @s ArmorItems[3].id set from entity @s ArmorItems[3].tag.luigis_mansion.visible
+data modify entity @s HandItems[0].id set from entity @s HandItems[0].tag.luigis_mansion.visible
+data modify entity @s HandItems[1].id set from entity @s HandItems[1].tag.luigis_mansion.visible
+execute as @e[tag=change_this_model] run data modify entity @s ArmorItems[3].id set from entity @s ArmorItems[3].tag.luigis_mansion.visible
+execute as @e[tag=change_this_model] run data modify entity @s HandItems[0].id set from entity @s HandItems[0].tag.luigis_mansion.visible
+execute as @e[tag=change_this_model] run data modify entity @s HandItems[1].id set from entity @s HandItems[1].tag.luigis_mansion.visible
+data modify entity @s ArmorItems[3] merge from entity @s ArmorItems[3].tag.luigis_mansion.model_data.default
+data modify entity @s HandItems[0] merge from entity @s HandItems[0].tag.luigis_mansion.model_data.default
+data modify entity @s HandItems[1] merge from entity @s HandItems[1].tag.luigis_mansion.model_data.default
+execute as @e[tag=change_this_model] run data modify entity @s ArmorItems[3] merge from entity @s ArmorItems[3].tag.luigis_mansion.model_data.default
+execute as @e[tag=change_this_model] run data modify entity @s HandItems[0] merge from entity @s HandItems[0].tag.luigis_mansion.model_data.default
+execute as @e[tag=change_this_model] run data modify entity @s HandItems[1] merge from entity @s HandItems[1].tag.luigis_mansion.model_data.default
 data modify entity @s CustomNameVisible set value 1b
 data modify entity @s Marker set value 0b
 execute as @e[tag=change_this_model,tag=make_name_visible] run data modify entity @s CustomNameVisible set value 1b

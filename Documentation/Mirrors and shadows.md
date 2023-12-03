@@ -12,7 +12,7 @@ reflections:[
             set_by_furniture_entity:0b //Temporary addition until all mirrors are converted the entities; whether this mirror is a furniture entity; changes the calculation slightly.
         },
         entity_id:"<id>", //The Minecraft entity ID used to spawn the correct entity type. Only allows armor stand or item frame. The item frame option will be removed once all paintings and posters are converted to furniture entities.
-        data: { //The entity's data
+        data:{ //The entity's data
             Pose:{}, //Armor stand pose data, jaw and roll will be inverted.
             HandItems:[] //Items held in hand, will be swapped.
         }
@@ -24,9 +24,11 @@ Items stored in the reflections' data have an additional field:
 {
     id:"<id>", //The item's ID.
     Count:Xb, //The item's count.
-    tag: { //The item's tag NBT.
-        mirror: {} //The data to merge with the root of the item object for the reflection. Used to change what model is displayed, and to make invisible ghosts' reflections visible.
-        //Example: mirror ghosts' left arm mirror contents are {id:"minecraft:leather_chestplate",tag:{Damage:1}}, changing the ID and Damage values to turn the ghost visible, and make it the right arm model.
+    tag:{ //The item's tag NBT.
+        luigis_mansion:{ //The map's unique item data
+            mirror:{} //The data to merge with the root of the item object for the reflection. Used to change what model is displayed, and to make invisible ghosts' reflections visible.
+            //Example: mirror ghosts' left arm mirror contents are {id:"minecraft:leather_chestplate",tag:{Damage:1}}, changing the ID and Damage values to turn the ghost visible, and make it the right arm model.
+        }
     }
 }
 ```

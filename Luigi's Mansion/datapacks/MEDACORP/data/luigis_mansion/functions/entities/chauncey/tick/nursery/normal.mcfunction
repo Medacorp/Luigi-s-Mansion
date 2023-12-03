@@ -26,7 +26,7 @@ execute if entity @s[scores={Dialog=30},tag=scream_wake] run playsound luigis_ma
 scoreboard players set @s[scores={Dialog=51}] AnimationProgress 0
 execute if entity @s[scores={Dialog=51}] run tag @e[scores={Room=10},tag=furniture,tag=door] add blockade
 execute if entity @s[scores={Dialog=51..168}] as @a[tag=same_room,gamemode=!spectator,tag=!looking_at_map] run function luigis_mansion:entities/player/animation/set/stand_still
-data modify entity @s ArmorItems[3].tag.scan_message set value {sender:"me",message:'{"translate":"luigis_mansion:message.chauncey.scan.2"}'}
+data modify entity @s ArmorItems[3].tag.luigis_mansion.scan_message set value {sender:"me",message:'{"translate":"luigis_mansion:message.chauncey.scan.2"}'}
 tag @s[scores={Dialog=51}] remove wake_up
 tag @s[scores={Dialog=51}] remove scream_wake
 tag @s[scores={Dialog=51}] add yawn

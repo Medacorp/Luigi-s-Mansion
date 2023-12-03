@@ -188,25 +188,25 @@ execute at @e[tag=this_model,tag=body,limit=1] run teleport @e[tag=this_model,ta
 execute at @e[tag=this_model,tag=body,limit=1] run teleport @e[tag=this_model,tag=right_leg,limit=1] ^0.275 ^ ^-0.8 ~ ~
 execute at @e[tag=this_model,tag=body,limit=1] run teleport @e[tag=this_model,tag=left_leg,limit=1] ^-0.275 ^ ^-0.8 ~ ~
 
-data modify entity @s[scores={AnimationProgress=38}] ArmorItems[3] merge from entity @s ArmorItems[3].tag.variants.bark
-data modify entity @s[scores={AnimationProgress=42}] ArmorItems[3] merge from entity @s ArmorItems[3].tag.variants.default
-data modify entity @s[scores={AnimationProgress=145}] ArmorItems[3] merge from entity @s ArmorItems[3].tag.variants.bark
-execute if entity @s[scores={AnimationProgress=145}] as @e[tag=this_model,tag=gold_bone,limit=1] run data modify entity @s ArmorItems[3].id set from entity @s ArmorItems[3].tag.visible
-data modify entity @s[scores={AnimationProgress=185}] ArmorItems[3] merge from entity @s ArmorItems[3].tag.variants.default
-data modify entity @s[scores={AnimationProgress=200}] ArmorItems[3] merge from entity @s ArmorItems[3].tag.variants.bark
-data modify entity @s[scores={AnimationProgress=220}] ArmorItems[3] merge from entity @s ArmorItems[3].tag.variants.default
-execute if entity @s[scores={AnimationProgress=225}] as @e[tag=this_model,tag=gold_bone,limit=1] run data modify entity @s ArmorItems[3].id set from entity @s ArmorItems[3].tag.invisible
-data modify entity @s[scores={AnimationProgress=240}] ArmorItems[3] merge from entity @s ArmorItems[3].tag.variants.tongue_out_side
-data modify entity @s[scores={AnimationProgress=250}] ArmorItems[3] merge from entity @s ArmorItems[3].tag.variants.default
-data modify entity @s[scores={AnimationProgress=278}] ArmorItems[3] merge from entity @s ArmorItems[3].tag.variants.tongue_out
-data modify entity @s[scores={AnimationProgress=297}] ArmorItems[3] merge from entity @s ArmorItems[3].tag.variants.bark
-data modify entity @s[scores={AnimationProgress=302}] ArmorItems[3] merge from entity @s ArmorItems[3].tag.variants.default
-data modify entity @s[scores={AnimationProgress=305}] ArmorItems[3] merge from entity @s ArmorItems[3].tag.variants.bark
-data modify entity @s[scores={AnimationProgress=310}] ArmorItems[3] merge from entity @s ArmorItems[3].tag.variants.default
-data modify entity @s[scores={AnimationProgress=317}] ArmorItems[3] merge from entity @s ArmorItems[3].tag.variants.bark
-data modify entity @s[scores={AnimationProgress=322}] ArmorItems[3] merge from entity @s ArmorItems[3].tag.variants.default
-data modify entity @s[scores={AnimationProgress=325}] ArmorItems[3] merge from entity @s ArmorItems[3].tag.variants.bark
-data modify entity @s[scores={AnimationProgress=330}] ArmorItems[3] merge from entity @s ArmorItems[3].tag.variants.default
+data modify entity @s[scores={AnimationProgress=38}] ArmorItems[3] merge from entity @s ArmorItems[3].tag.luigis_mansion.model_data.bark
+data modify entity @s[scores={AnimationProgress=42}] ArmorItems[3] merge from entity @s ArmorItems[3].tag.luigis_mansion.model_data.default
+data modify entity @s[scores={AnimationProgress=145}] ArmorItems[3] merge from entity @s ArmorItems[3].tag.luigis_mansion.model_data.bark
+execute if entity @s[scores={AnimationProgress=145}] as @e[tag=this_model,tag=gold_bone,limit=1] run data modify entity @s ArmorItems[3].id set from entity @s ArmorItems[3].tag.luigis_mansion.visible
+data modify entity @s[scores={AnimationProgress=185}] ArmorItems[3] merge from entity @s ArmorItems[3].tag.luigis_mansion.model_data.default
+data modify entity @s[scores={AnimationProgress=200}] ArmorItems[3] merge from entity @s ArmorItems[3].tag.luigis_mansion.model_data.bark
+data modify entity @s[scores={AnimationProgress=220}] ArmorItems[3] merge from entity @s ArmorItems[3].tag.luigis_mansion.model_data.default
+execute if entity @s[scores={AnimationProgress=225}] as @e[tag=this_model,tag=gold_bone,limit=1] run data modify entity @s ArmorItems[3].id set from entity @s ArmorItems[3].tag.luigis_mansion.invisible
+data modify entity @s[scores={AnimationProgress=240}] ArmorItems[3] merge from entity @s ArmorItems[3].tag.luigis_mansion.model_data.tongue_out_side
+data modify entity @s[scores={AnimationProgress=250}] ArmorItems[3] merge from entity @s ArmorItems[3].tag.luigis_mansion.model_data.default
+data modify entity @s[scores={AnimationProgress=278}] ArmorItems[3] merge from entity @s ArmorItems[3].tag.luigis_mansion.model_data.tongue_out
+data modify entity @s[scores={AnimationProgress=297}] ArmorItems[3] merge from entity @s ArmorItems[3].tag.luigis_mansion.model_data.bark
+data modify entity @s[scores={AnimationProgress=302}] ArmorItems[3] merge from entity @s ArmorItems[3].tag.luigis_mansion.model_data.default
+data modify entity @s[scores={AnimationProgress=305}] ArmorItems[3] merge from entity @s ArmorItems[3].tag.luigis_mansion.model_data.bark
+data modify entity @s[scores={AnimationProgress=310}] ArmorItems[3] merge from entity @s ArmorItems[3].tag.luigis_mansion.model_data.default
+data modify entity @s[scores={AnimationProgress=317}] ArmorItems[3] merge from entity @s ArmorItems[3].tag.luigis_mansion.model_data.bark
+data modify entity @s[scores={AnimationProgress=322}] ArmorItems[3] merge from entity @s ArmorItems[3].tag.luigis_mansion.model_data.default
+data modify entity @s[scores={AnimationProgress=325}] ArmorItems[3] merge from entity @s ArmorItems[3].tag.luigis_mansion.model_data.bark
+data modify entity @s[scores={AnimationProgress=330}] ArmorItems[3] merge from entity @s ArmorItems[3].tag.luigis_mansion.model_data.default
 execute if entity @s[scores={AnimationProgress=40}] run playsound 3ds_remake:entity.polterpup.first_bark neutral @a[tag=same_room] ~ ~ ~ 1
 execute if entity @s[scores={AnimationProgress=60}] run playsound 3ds_remake:entity.polterpup.sniff neutral @a[tag=same_room] ~ ~ ~ 0.5
 execute if entity @s[scores={AnimationProgress=65}] run playsound 3ds_remake:entity.polterpup.sniff neutral @a[tag=same_room] ~ ~ ~ 0.5

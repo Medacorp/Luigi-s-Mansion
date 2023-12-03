@@ -55,4 +55,7 @@ execute if entity @s[scores={AnimationProgress=21..121}] if score #temp Animatio
 execute if entity @s[scores={AnimationProgress=21..121}] if score #temp AnimationProgress matches 1 store result entity @e[tag=this_model,tag=tail,limit=1] Pose.Head[0] float 1 run scoreboard players remove #temp Time 1
 scoreboard players reset #temp Time
 scoreboard players reset #temp AnimationProgress
+execute if entity @s[scores={AnimationProgress=1}] run data modify entity @s ArmorItems[3] merge from entity @s ArmorItems[3].tag.luigis_mansion.model_data.default
+execute if entity @s[scores={AnimationProgress=15}] run data modify entity @s ArmorItems[3] merge from entity @s ArmorItems[3].tag.luigis_mansion.model_data.open_mouth
+execute if entity @s[scores={AnimationProgress=125}] run data modify entity @s ArmorItems[3] merge from entity @s ArmorItems[3].tag.luigis_mansion.model_data.default
 scoreboard players set @s[scores={AnimationProgress=140}] AnimationProgress 0

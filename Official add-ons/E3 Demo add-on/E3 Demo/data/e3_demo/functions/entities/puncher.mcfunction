@@ -1,2 +1,2 @@
-execute if entity @s[nbt={ArmorItems:[{tag:{namespace:"e3_demo",id:"puncher"}}]},tag=!hidden] run function e3_demo:entities/puncher/tick
-execute if entity @s[nbt={ArmorItems:[{tag:{namespace:"e3_demo",id:"puncher"}}]},tag=hidden] run function e3_demo:entities/puncher/hidden_tick
+execute if entity @s[nbt={ArmorItems:[{tag:{luigis_mansion:{namespace:"e3_demo",id:"puncher"}}}]},tag=!hidden] run function e3_demo:entities/puncher/tick
+execute if entity @s[nbt={ArmorItems:[{tag:{luigis_mansion:{namespace:"e3_demo",id:"puncher"}}}]},tag=hidden] run function e3_demo:entities/puncher/hidden_tick

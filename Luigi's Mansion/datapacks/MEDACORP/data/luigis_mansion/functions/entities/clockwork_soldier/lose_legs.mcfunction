@@ -1,3 +1,3 @@
-execute as @e[tag=this_model,tag=body,limit=1] run data modify entity @s ArmorItems[3] merge from entity @s ArmorItems[3].tag.variants.no_legs
-execute as @e[tag=this_model,tag=right_leg,limit=1] run data modify entity @s ArmorItems[3].id set from entity @s ArmorItems[3].tag.invisible
-execute as @e[tag=this_model,tag=left_leg,limit=1] run data modify entity @s ArmorItems[3].id set from entity @s ArmorItems[3].tag.invisible
+execute as @e[tag=this_model,tag=body,limit=1] run data modify entity @s ArmorItems[3] merge from entity @s ArmorItems[3].tag.luigis_mansion.model_data.no_legs
+execute as @e[tag=this_model,tag=right_leg,limit=1] run data modify entity @s ArmorItems[3].id set from entity @s ArmorItems[3].tag.luigis_mansion.invisible
+execute as @e[tag=this_model,tag=left_leg,limit=1] run data modify entity @s ArmorItems[3].id set from entity @s ArmorItems[3].tag.luigis_mansion.invisible

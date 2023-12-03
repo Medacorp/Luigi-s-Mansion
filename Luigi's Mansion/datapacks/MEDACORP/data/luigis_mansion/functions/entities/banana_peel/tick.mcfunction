@@ -21,7 +21,7 @@ tag @s remove hit_floor
 execute at @s[tag=thrown] if block ^ ^ ^0.3 #luigis_mansion:items_ignore run teleport @s ^ ^ ^0.05
 execute at @s[tag=!dead] as @e[distance=..0.7,tag=game_boy_horror_location] run function luigis_mansion:entities/game_boy_horror_location/bring_player_back
 execute at @s[tag=!dead] run data modify storage luigis_mansion:data damage set value {method:"luigis_mansion:bannana",durning_knockback_amount:5,knockback:"slip",no_delete:1b}
-execute at @s[tag=!dead] if data entity @s ArmorItems[3].tag.damage.attack run data modify storage luigis_mansion:data damage.during_knockback_amount set from entity @s ArmorItems[3].tag.damage.attack
+execute at @s[tag=!dead] if data entity @s ArmorItems[3].tag.luigis_mansion.damage.attack run data modify storage luigis_mansion:data damage.during_knockback_amount set from entity @s ArmorItems[3].tag.luigis_mansion.damage.attack
 execute at @s[tag=!dead] store result storage luigis_mansion:data damage.attacker int 1 run scoreboard players get @s Owner
 execute at @s[tag=!dead] as @a[distance=..0.7,gamemode=!spectator] rotated as @s rotated ~ 0 positioned ^ ^ ^10 run function luigis_mansion:entities/player/damage
 execute at @s[tag=!dead] run data remove storage luigis_mansion:data damage

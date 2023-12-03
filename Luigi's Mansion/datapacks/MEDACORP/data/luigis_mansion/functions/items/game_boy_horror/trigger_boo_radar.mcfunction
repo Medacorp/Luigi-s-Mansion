@@ -7,5 +7,5 @@ execute if entity @e[tag=radar_detect,distance=5..6] run scoreboard players add 
 execute if entity @s[scores={GBHRadar=40..}] unless score #freeze_timer Selected matches 1 run playsound luigis_mansion:item.game_boy_horror.radar player @s ~ ~ ~ 0.5
 scoreboard players set @s[scores={GBHRadar=40..}] GBHRadar 0
 
-execute unless entity @e[tag=radar_detect,distance=..4] if entity @s[nbt=!{Inventory:[{tag:{Damage:4,luigis_mansion:{id:"luigis_mansion:game_boy_horror"}}}]}] run function luigis_mansion:items/game_boy_horror/turn_radar_yellow
-execute if entity @e[tag=radar_detect,distance=..4] if entity @s[nbt=!{Inventory:[{tag:{Damage:5,luigis_mansion:{id:"luigis_mansion:game_boy_horror"}}}]}] run function luigis_mansion:items/game_boy_horror/turn_radar_red
+execute unless entity @e[tag=radar_detect,distance=..4] if entity @s[nbt=!{Inventory:[{tag:{Damage:4,luigis_mansion:{namespace:"luigis_mansion",id:"game_boy_horror"}}}]}] run function luigis_mansion:items/game_boy_horror/turn_radar_yellow
+execute if entity @e[tag=radar_detect,distance=..4] if entity @s[nbt=!{Inventory:[{tag:{Damage:5,luigis_mansion:{namespace:"luigis_mansion",id:"game_boy_horror"}}}]}] run function luigis_mansion:items/game_boy_horror/turn_radar_red

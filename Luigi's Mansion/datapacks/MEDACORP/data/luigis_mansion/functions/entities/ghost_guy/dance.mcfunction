@@ -1,5 +1,5 @@
 scoreboard players operation #temp GhostGuyCouple = @s GhostGuyCouple
-execute as @e[nbt={ArmorItems:[{tag:{namespace:"luigis_mansion",id:"dancing_ghost_guy"}}]},tag=dancing,distance=0.1..] if score @s GhostGuyCouple = #temp GhostGuyCouple run tag @s add partner
+execute as @e[nbt={ArmorItems:[{tag:{luigis_mansion:{namespace:"luigis_mansion",id:"dancing_ghost_guy"}}}]},tag=dancing,distance=0.1..] if score @s GhostGuyCouple = #temp GhostGuyCouple run tag @s add partner
 scoreboard players reset #temp GhostGuyCouple
 
 

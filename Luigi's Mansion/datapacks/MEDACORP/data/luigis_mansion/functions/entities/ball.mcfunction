@@ -1,1 +1,1 @@
-execute if entity @s[tag=ball,tag=!wool,nbt=!{ArmorItems:[{tag:{namespace:"luigis_mansion",id:"shining_ghost"}}]},tag=!billiards_ball] run function luigis_mansion:entities/ball/tick
+execute if entity @s[tag=ball,tag=!wool,tag=!ghost,tag=!billiards_ball] run function luigis_mansion:entities/ball/tick

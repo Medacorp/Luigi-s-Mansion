@@ -27,4 +27,5 @@ execute if entity @s[scores={AnimationProgress=11..20}] store result entity @e[t
 execute if entity @s[scores={AnimationProgress=21..30}] store result entity @e[tag=this_model,tag=left_arm,limit=1] Pose.Head[0] float 0.1 run scoreboard players add #temp Time 5
 execute if entity @s[scores={AnimationProgress=31..40}] store result entity @e[tag=this_model,tag=left_arm,limit=1] Pose.Head[0] float 0.1 run scoreboard players remove #temp Time 5
 scoreboard players reset #temp Time
+execute if entity @s[scores={AnimationProgress=1}] run data modify entity @s ArmorItems[3] merge from entity @s ArmorItems[3].tag.luigis_mansion.model_data.default
 scoreboard players set @s[scores={AnimationProgress=40}] AnimationProgress 0

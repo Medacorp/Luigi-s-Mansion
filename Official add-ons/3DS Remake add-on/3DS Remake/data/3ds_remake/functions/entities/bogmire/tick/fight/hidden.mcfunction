@@ -7,7 +7,7 @@ scoreboard players add @s[tag=intro_done,scores={VulnerableTime=0,Dialog=181..},
 tag @s[scores={Dialog=2}] remove vanish_flee
 execute if entity @s[tag=intro_done,scores={Dialog=70},tag=!shadow_hit] run function luigis_mansion:entities/ghost/turn_invisible
 execute if entity @s[tag=intro_done,scores={Dialog=110},tag=!shadow_hit] run function luigis_mansion:entities/bogmire/warp/normal
-execute if entity @s[tag=intro_done,scores={Dialog=182}] run tag @e[nbt={ArmorItems:[{tag:{namespace:"luigis_mansion",id:"black_bogmire"}}]}] add dead
+execute if entity @s[tag=intro_done,scores={Dialog=182}] run tag @e[nbt={ArmorItems:[{tag:{luigis_mansion:{namespace:"luigis_mansion",id:"black_bogmire"}}}]}] add dead
 execute if entity @s[tag=intro_done,scores={Dialog=182}] run tag @e[tag=ball,tag=shadow] add dead
 execute if entity @s[tag=intro_done,scores={Dialog=182}] run function luigis_mansion:entities/bogmire/instant_spawn/normal
 execute if entity @s[tag=intro_done,scores={Dialog=202}] run function luigis_mansion:entities/bogmire/instant_spawn/normal
@@ -15,7 +15,7 @@ execute if entity @s[tag=intro_done,scores={Dialog=212},tag=!shadow_hit] run fun
 execute if entity @s[tag=intro_done,scores={Dialog=222}] run function luigis_mansion:entities/bogmire/instant_spawn/normal
 execute if entity @s[tag=intro_done,scores={Dialog=242}] run function luigis_mansion:entities/bogmire/instant_spawn/normal
 execute if entity @s[tag=intro_done,scores={Dialog=262}] run function luigis_mansion:entities/bogmire/instant_spawn/normal
-execute if entity @s[tag=intro_done,scores={Dialog=182..}] run scoreboard players set @e[nbt={ArmorItems:[{tag:{namespace:"luigis_mansion",id:"black_bogmire"}}]},limit=1,scores={SpawnTime=..120}] SpawnTime 120
+execute if entity @s[tag=intro_done,scores={Dialog=182..}] run scoreboard players set @e[nbt={ArmorItems:[{tag:{luigis_mansion:{namespace:"luigis_mansion",id:"black_bogmire"}}}]},limit=1,scores={SpawnTime=..120}] SpawnTime 120
 execute if entity @s[tag=intro_done,scores={Dialog=281}] run scoreboard players set @s Dialog 109
 
 execute align xyz if entity @e[dx=0,dy=2,dz=0,tag=shadow,tag=ball] if entity @s[tag=visible,tag=!shadow_hit] run playsound luigis_mansion:entity.bogmire.hit_by_shadow_ball hostile @a[tag=same_room] ~ ~ ~ 1

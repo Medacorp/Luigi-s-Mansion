@@ -1,2 +1,2 @@
-execute if entity @s[nbt={ArmorItems:[{tag:{namespace:"luigis_mansion",id:"boo"}}]}] if score #firstRun Selected matches 1 run function #luigis_mansion:entities/boo/captured
-execute if entity @s[nbt={ArmorItems:[{tag:{namespace:"luigis_mansion",id:"boolossus"}}]}] if score #firstRun Selected matches 1 run function #luigis_mansion:entities/boo/captured
+execute if entity @s[nbt={ArmorItems:[{tag:{luigis_mansion:{namespace:"luigis_mansion",id:"boo"}}}]}] if score #firstRun Selected matches 1 run function #luigis_mansion:entities/boo/captured
+execute if entity @s[nbt={ArmorItems:[{tag:{luigis_mansion:{namespace:"luigis_mansion",id:"boolossus"}}}]}] if score #firstRun Selected matches 1 run function #luigis_mansion:entities/boo/captured

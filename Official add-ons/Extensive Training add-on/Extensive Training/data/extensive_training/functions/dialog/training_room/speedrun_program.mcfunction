@@ -1,4 +1,4 @@
-execute if entity @e[tag=ghost,scores={Room=-2},tag=vanish,limit=1] as @e[tag=ghost,scores={Room=-2},tag=!dying] run data modify entity @s ArmorItems[3].tag merge value {attacked_by:[]}
+execute if entity @e[tag=ghost,scores={Room=-2},tag=vanish,limit=1] as @e[tag=ghost,scores={Room=-2},tag=!dying] run data modify entity @s ArmorItems[3].tag.luigis_mansion.attacked_by set value []
 execute if entity @e[tag=ghost,scores={Room=-2},tag=vanish,limit=1] run scoreboard players reset @e[tag=ghost,scores={Room=-2},tag=!dying] HurtTime
 execute if entity @e[tag=ghost,scores={Room=-2},tag=vanish,limit=1] run scoreboard players set @e[tag=ghost,scores={Room=-2},tag=!dying,tag=!vanish] ActionTime 0
 execute if entity @e[tag=ghost,scores={Room=-2},tag=vanish,limit=1] run scoreboard players set @e[tag=ghost,scores={Room=-2},tag=!dying] VulnerableTime 0

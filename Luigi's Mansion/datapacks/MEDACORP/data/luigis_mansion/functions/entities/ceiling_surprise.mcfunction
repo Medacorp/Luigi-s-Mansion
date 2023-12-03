@@ -1,2 +1,2 @@
-execute if entity @s[nbt={ArmorItems:[{tag:{namespace:"luigis_mansion",id:"ceiling_surprise"}}]},tag=!hidden] run function luigis_mansion:entities/ceiling_surprise/tick
-execute if entity @s[nbt={ArmorItems:[{tag:{namespace:"luigis_mansion",id:"ceiling_surprise"}}]},tag=hidden] run function luigis_mansion:entities/ceiling_surprise/hidden_tick
+execute if entity @s[nbt={ArmorItems:[{tag:{luigis_mansion:{namespace:"luigis_mansion",id:"ceiling_surprise"}}}]},tag=!hidden] run function luigis_mansion:entities/ceiling_surprise/tick
+execute if entity @s[nbt={ArmorItems:[{tag:{luigis_mansion:{namespace:"luigis_mansion",id:"ceiling_surprise"}}}]},tag=hidden] run function luigis_mansion:entities/ceiling_surprise/hidden_tick

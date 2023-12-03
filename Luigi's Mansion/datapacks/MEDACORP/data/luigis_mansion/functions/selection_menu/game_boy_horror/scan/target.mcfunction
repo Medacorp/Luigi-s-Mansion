@@ -2,9 +2,9 @@ teleport @s ~ ~ ~ ~ ~
 execute store result score #interact PositionX run data get entity @s Pos[0] 10
 execute store result score #interact PositionY run data get entity @s Pos[1] 10
 execute store result score #interact PositionZ run data get entity @s Pos[2] 10
-execute as @e[tag=!furniture,tag=same_room] if data entity @s ArmorItems[3].tag.scan_message run function luigis_mansion:selection_menu/game_boy_horror/scan/target_entity/root
+execute as @e[tag=!furniture,tag=same_room] if data entity @s ArmorItems[3].tag.luigis_mansion.scan_message run function luigis_mansion:selection_menu/game_boy_horror/scan/target_entity/root
 execute at @s[tag=!entity_scanned] as @a[tag=same_room,tag=!scanning_player] run function luigis_mansion:selection_menu/game_boy_horror/scan/target_entity/player_root
-execute at @s[tag=!entity_scanned] as @e[tag=furniture,tag=same_room] if data entity @s ArmorItems[3].tag.scan_message run function luigis_mansion:selection_menu/game_boy_horror/scan/target_furniture/root
+execute at @s[tag=!entity_scanned] as @e[tag=furniture,tag=same_room] if data entity @s ArmorItems[3].tag.luigis_mansion.scan_message run function luigis_mansion:selection_menu/game_boy_horror/scan/target_furniture/root
 execute at @s[tag=!entity_scanned,tag=!furniture_scanned] if block ~ ~ ~ #luigis_mansion:game_boy_horror_warp if score #can_warp Selected matches 1 unless entity @s[scores={Dialog=1..}] run tag @s add warp
 execute at @s[tag=!entity_scanned,tag=!warp,tag=!furniture_scanned] unless block ~ ~ ~ #luigis_mansion:game_boy_horror_warp unless block ~ ~ ~ #luigis_mansion:game_boy_horror_path unless block ~ ~ ~ minecraft:stone_button[powered=true] run function luigis_mansion:selection_menu/game_boy_horror/scan/block
 execute at @s[tag=!entity_scanned,tag=!warp,tag=!furniture_scanned,tag=!scanned_block] if block ~ ~ ~ minecraft:barrier if entity @e[type=minecraft:armor_stand,distance=..3,limit=1] run function luigis_mansion:selection_menu/game_boy_horror/scan/block

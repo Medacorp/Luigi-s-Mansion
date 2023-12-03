@@ -16,7 +16,7 @@ execute if entity @s[scores={AnimationProgress=8..13}] store result entity @s Po
 execute if entity @s[scores={AnimationProgress=18..20}] store result entity @s Pose.LeftArm[0] float 1 run scoreboard players add #temp Time 1
 scoreboard players reset #temp Time
 scoreboard players set @s[scores={AnimationProgress=20..}] AnimationProgress 0
-data modify entity @s[scores={AnimationProgress=3},tag=!big] ArmorItems[3] merge from entity @s ArmorItems[3].tag.variants.screaming
-data modify entity @s[scores={AnimationProgress=13},tag=!big] ArmorItems[3] merge from entity @s ArmorItems[3].tag.variants.default
-data modify entity @s[scores={AnimationProgress=3},tag=big] ArmorItems[3] merge from entity @s ArmorItems[3].tag.variants.big_screaming
-data modify entity @s[scores={AnimationProgress=13},tag=big] ArmorItems[3] merge from entity @s ArmorItems[3].tag.variants.big
+data modify entity @s[scores={AnimationProgress=3},tag=!big] ArmorItems[3] merge from entity @s ArmorItems[3].tag.luigis_mansion.model_data.screaming
+data modify entity @s[scores={AnimationProgress=13},tag=!big] ArmorItems[3] merge from entity @s ArmorItems[3].tag.luigis_mansion.model_data.default
+data modify entity @s[scores={AnimationProgress=3},tag=big] ArmorItems[3] merge from entity @s ArmorItems[3].tag.luigis_mansion.model_data.big_screaming
+data modify entity @s[scores={AnimationProgress=13},tag=big] ArmorItems[3] merge from entity @s ArmorItems[3].tag.luigis_mansion.model_data.big

@@ -13,7 +13,7 @@ execute if entity @s[scores={AnimationProgress=1..5}] store result entity @s Pos
 execute if entity @s[scores={AnimationProgress=6..15}] store result entity @s Pose.Head[2] float 1 run scoreboard players add #temp Time 2
 execute if entity @s[scores={AnimationProgress=16..20}] store result entity @s Pose.Head[2] float 1 run scoreboard players remove #temp Time 2
 scoreboard players reset #temp Time
-data modify entity @s[scores={AnimationProgress=1}] ArmorItems[3] merge from entity @s ArmorItems[3].tag.variants.default
-data modify entity @s[scores={AnimationProgress=1}] HandItems[0].id set from entity @s HandItems[0].tag.visible
-data modify entity @s[scores={AnimationProgress=1}] HandItems[1].id set from entity @s HandItems[1].tag.visible
+data modify entity @s[scores={AnimationProgress=1}] ArmorItems[3] merge from entity @s ArmorItems[3].tag.luigis_mansion.model_data.default
+data modify entity @s[scores={AnimationProgress=1}] HandItems[0].id set from entity @s HandItems[0].tag.luigis_mansion.visible
+data modify entity @s[scores={AnimationProgress=1}] HandItems[1].id set from entity @s HandItems[1].tag.luigis_mansion.visible
 scoreboard players set @s[scores={AnimationProgress=20}] AnimationProgress 0

@@ -1,1 +1,1 @@
-execute positioned ~ ~-1.3 ~ if entity @s[nbt={ArmorItems:[{tag:{namespace:"e3_demo",id:"boo"}}]},distance=..0.7] run function e3_demo:items/poltergust_3000/effect_on_entity/vacuum/effect/ghost/boo
+execute positioned ~ ~-1.3 ~ if entity @s[nbt={ArmorItems:[{tag:{luigis_mansion:{namespace:"e3_demo",id:"boo"}}}]},distance=..0.7] run function e3_demo:items/poltergust_3000/effect_on_entity/vacuum/effect/ghost/boo

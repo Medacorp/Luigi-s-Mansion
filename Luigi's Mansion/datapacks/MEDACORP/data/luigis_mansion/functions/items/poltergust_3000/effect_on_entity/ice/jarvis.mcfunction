@@ -1,1 +1,1 @@
-tag @s[nbt={ArmorItems:[{tag:{namespace:"luigis_mansion",id:"jarvis"}}]},tag=can_freeze,tag=!got_frozen,tag=!pop_out,tag=!pop_in,tag=visible] add frozen
+tag @s[nbt={ArmorItems:[{tag:{luigis_mansion:{namespace:"luigis_mansion",id:"jarvis"}}}]},tag=can_freeze,tag=!got_frozen,tag=!pop_out,tag=!pop_in,tag=visible] add frozen

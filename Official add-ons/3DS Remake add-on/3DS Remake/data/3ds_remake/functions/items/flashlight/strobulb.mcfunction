@@ -1,6 +1,6 @@
 tag @s remove flashlight
 tag @s remove flashlight_selected
-tag @s[tag=!poltergust_selected,nbt={SelectedItem:{tag:{luigis_mansion:{id:"luigis_mansion:flashlight"}}}}] add flashlight_selected
+tag @s[tag=!poltergust_selected,nbt={SelectedItem:{tag:{luigis_mansion:{namespace:"luigis_mansion",id:"flashlight"}}}}] add flashlight_selected
 tag @s[tag=flashlight_selected,scores={UseItem=1..,StrobulbCharge=0},tag=!grabbed] add flashlight_off
 tag @s[tag=flashlight_selected,scores={UseItem=1..,StrobulbCharge=1..},tag=!grabbed] remove flashlight_off
 tag @s[tag=!flashlight_selected,scores={StrobulbCharge=1..}] remove flashlight_off

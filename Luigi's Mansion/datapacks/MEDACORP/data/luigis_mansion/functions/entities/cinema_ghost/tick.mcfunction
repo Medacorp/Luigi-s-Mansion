@@ -1,9 +1,9 @@
-execute if entity @s[tag=dying,scores={DeathTime=1}] if data entity @s ArmorItems[3].tag.loot{drop_at_0:1b} run function luigis_mansion:other/drop_loot
-execute if entity @s[tag=dead] unless data entity @s ArmorItems[3].tag.loot{drop_at_0:1b} run function luigis_mansion:other/drop_loot
+execute if entity @s[tag=dying,scores={DeathTime=1}] if data entity @s ArmorItems[3].tag.luigis_mansion.loot{drop_at_0:1b} run function luigis_mansion:other/drop_loot
+execute if entity @s[tag=dead] unless data entity @s ArmorItems[3].tag.luigis_mansion.loot{drop_at_0:1b} run function luigis_mansion:other/drop_loot
 
 tag @s[tag=!basher,tag=attack,scores={ActionTime=1..40}] remove hurt
 tag @s[tag=!basher,tag=attack,scores={ActionTime=1..40}] remove element_hurt
-data modify entity @s[tag=!basher,tag=attack,scores={ActionTime=1..40}] ArmorItems[3].tag merge value {attacked_by:[]}
+data modify entity @s[tag=!basher,tag=attack,scores={ActionTime=1..40}] ArmorItems[3].tag.luigis_mansion.attacked_by set value []
 scoreboard players set @s[tag=!basher,tag=attack,scores={ActionTime=1..40}] StunTime 0
 scoreboard players set @s[tag=!basher,tag=attack,scores={ActionTime=1..40}] VulnerableTime 0
 

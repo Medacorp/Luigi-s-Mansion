@@ -5,7 +5,7 @@ tag @s[tag=capturing_ghost] add poltergust_selected
 tag @s remove is_pulling
 tag @s remove catch_portrait_ghost
 tag @s remove catch_ghost
-execute if entity @s[nbt=!{Inventory:[{tag:{luigis_mansion:{id:"e3_demo:poltergust_500",gooigi_variant:1b}}}]},tag=gooigi] run function e3_demo:items/poltergust_500/gooigi
+execute if entity @s[nbt=!{Inventory:[{tag:{luigis_mansion:{namespace:"e3_demo",id:"poltergust_500",gooigi_variant:1b}}}]},tag=gooigi] run function e3_demo:items/poltergust_500/gooigi
 execute if entity @s[tag=poltergust_floor_sound,tag=!gooigi,scores={Shrunk=0}] run playsound e3_demo:item.poltergust_500.hit_floor player @a[tag=same_room] ~ ~ ~ 1
 execute if entity @s[tag=poltergust_wall_sound,tag=!gooigi,scores={Shrunk=0}] run playsound e3_demo:item.poltergust_500.hit_wall player @a[tag=same_room] ~ ~ ~ 1
 execute if entity @s[tag=poltergust_floor_sound,tag=!gooigi,scores={Shrunk=1..}] run playsound e3_demo:item.poltergust_500.hit_floor player @a[tag=same_room] ~ ~ ~ 1 2
@@ -16,8 +16,8 @@ execute if entity @s[tag=poltergust_floor_sound,tag=gooigi,scores={Shrunk=1..}] 
 execute if entity @s[tag=poltergust_wall_sound,tag=gooigi,scores={Shrunk=1..}] run playsound e3_demo:item.poltergust_500.hit_wall_gooigi player @a[tag=same_room] ~ ~ ~ 1 2
 tag @s remove poltergust_floor_sound
 tag @s remove poltergust_wall_sound
-execute if entity @s[scores={Animation=1..},tag=!idle,nbt={Inventory:[{tag:{luigis_mansion:{id:"e3_demo:poltergust_500"}}}]}] unless entity @s[scores={ScareType=1}] unless entity @s[scores={KnockbackType=1..2}] run tag @s add turned_off_for_animation
-tag @s[tag=!turned_off_for_animation,tag=!poltergust_malfunction,nbt={SelectedItem:{tag:{luigis_mansion:{id:"e3_demo:poltergust_500"}}}}] add poltergust_selected
+execute if entity @s[scores={Animation=1..},tag=!idle,nbt={Inventory:[{tag:{luigis_mansion:{namespace:"e3_demo",id:"poltergust_500"}}}]}] unless entity @s[scores={ScareType=1}] unless entity @s[scores={KnockbackType=1..2}] run tag @s add turned_off_for_animation
+tag @s[tag=!turned_off_for_animation,tag=!poltergust_malfunction,nbt={SelectedItem:{tag:{luigis_mansion:{namespace:"e3_demo",id:"poltergust_500"}}}}] add poltergust_selected
 tag @s remove turned_off_for_animation
 tag @s[tag=!poltergust_selected] remove expelling
 execute if entity @s[scores={OverheatMeter=300..}] run function e3_demo:items/poltergust_500/explode

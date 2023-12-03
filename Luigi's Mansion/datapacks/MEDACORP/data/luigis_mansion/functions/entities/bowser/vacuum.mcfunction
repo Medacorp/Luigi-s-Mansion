@@ -4,7 +4,6 @@ execute unless entity @s[scores={ActionTime=1..}] run scoreboard players set @s 
 scoreboard players reset #temp Time
 scoreboard players set @s[scores={ActionTime=1}] AnimationProgress 0
 execute if entity @s[scores={ActionTime=1}] run playsound luigis_mansion:entity.bowser.vacuum_start hostile @a[tag=same_room] ~ ~ ~ 3
-data modify entity @s[scores={ActionTime=15}] ArmorItems[3].tag.CustomModelData set value 91
 scoreboard players set @s[scores={ActionTime=20}] AnimationProgress 0
 teleport @s[scores={ActionTime=1..20}] ^ ^-0.15 ^0.1
 tag @s[scores={ActionTime=20}] add can_decapitate
@@ -21,11 +20,9 @@ execute if entity @s[scores={ActionTime=30}] unless entity @a[tag=got_sucked] ru
 scoreboard players set @s[scores={ActionTime=31}] AnimationProgress 0
 execute if entity @s[scores={ActionTime=32..89}] at @e[tag=this_model,tag=right_leg] run teleport @a[tag=vacuumed,limit=1] ~ 0 ~
 execute if entity @s[scores={ActionTime=32..89}] at @e[tag=this_model,tag=right_leg] run teleport @a[tag=vacuumed,limit=1] ^0.63 ^2.45 ^0.2
-data modify entity @s[scores={ActionTime=32}] ArmorItems[3].tag.CustomModelData set value 88
 execute if entity @a[tag=vacuumed,limit=1] run tag @s remove can_decapitate
 tag @s[scores={ActionTime=40}] remove can_decapitate
 teleport @s[scores={ActionTime=41..60}] ^ ^0.15 ^-0.1
-data modify entity @s[scores={ActionTime=86}] ArmorItems[3].tag.CustomModelData set value 91
 execute if entity @s[scores={ActionTime=86}] run playsound luigis_mansion:entity.bowser.vacuum_spit hostile @a[tag=same_room] ~ ~ ~ 3
 execute if entity @s[scores={ActionTime=90}] run scoreboard players set @a[tag=vacuumed,limit=1] Invulnerable 0
 execute if entity @s[scores={ActionTime=90}] as @a[tag=vacuumed,limit=1,tag=looking_at_map] at @s run function luigis_mansion:selection_menu/game_boy_horror/map/exit
@@ -35,14 +32,12 @@ execute if entity @s[scores={ActionTime=90}] run data modify storage luigis_mans
 execute if entity @s[scores={ActionTime=90}] store result storage luigis_mansion:data damage.attacker int 1 run scoreboard players get @s GhostNr
 execute if entity @s[scores={ActionTime=90}] as @a[tag=vacuumed,limit=1] run function luigis_mansion:entities/player/damage
 execute if entity @s[scores={ActionTime=90}] run tag @a[tag=vacuumed] remove vacuumed
-data modify entity @s[scores={ActionTime=94}] ArmorItems[3].tag.CustomModelData set value 88
 tag @s[scores={ActionTime=110}] remove vacuum
 scoreboard players set @s[scores={ActionTime=110}] AnimationProgress 0
 scoreboard players reset @s[scores={ActionTime=110}] ActionTime
 
 tag @s[scores={ActionTime=121}] remove can_decapitate
 scoreboard players set @s[scores={ActionTime=121}] AnimationProgress 0
-data modify entity @s[scores={ActionTime=125}] ArmorItems[3].tag.CustomModelData set value 88
 teleport @s[scores={ActionTime=121..140}] ^ ^0.15 ^-0.1
 tag @s[scores={ActionTime=140}] remove vacuum
 scoreboard players set @s[scores={ActionTime=140}] AnimationProgress 0
@@ -51,7 +46,7 @@ tag @a[tag=got_sucked] remove got_sucked
 tag @a[tag=pulled] remove pulled
 scoreboard players reset #temp Time
 
-execute if entity @s[scores={ActionTime=1..20}] run function luigis_mansion:animations/bowser/duck
+execute if entity @s[scores={ActionTime=1..20}] run function luigis_mansion:animations/bowser/vacuum_prepare
 execute if entity @s[scores={ActionTime=21..30}] run function luigis_mansion:animations/bowser/vacuum
 execute if entity @s[scores={ActionTime=31..110}] run function luigis_mansion:animations/bowser/chew
-execute if entity @s[scores={ActionTime=121..140}] run function luigis_mansion:animations/bowser/get_up
+execute if entity @s[scores={ActionTime=121..140}] run function luigis_mansion:animations/bowser/vacuum_cancel

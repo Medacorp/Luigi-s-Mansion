@@ -1,1 +1,1 @@
-tag @s[nbt={ArmorItems:[{tag:{namespace:"luigis_mansion",id:"sir_weston"}}]},scores={Dialog=423..}] add melt
+tag @s[nbt={ArmorItems:[{tag:{luigis_mansion:{namespace:"luigis_mansion",id:"sir_weston"}}}]},scores={Dialog=423..}] add melt

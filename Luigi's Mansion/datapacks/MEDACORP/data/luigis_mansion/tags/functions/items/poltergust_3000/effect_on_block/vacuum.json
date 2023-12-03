@@ -4,8 +4,6 @@
 		"luigis_mansion:items/poltergust_3000/effect_on_block/vacuum/light",
         "luigis_mansion:items/poltergust_3000/effect_on_block/vacuum/water",
         "luigis_mansion:items/poltergust_3000/effect_on_block/vacuum/campfires",
-        "luigis_mansion:items/poltergust_3000/effect_on_block/vacuum/standing_candles",
-        "luigis_mansion:items/poltergust_3000/effect_on_block/vacuum/wall_candles",
         "luigis_mansion:items/poltergust_3000/effect_on_block/vacuum/interact"
 	]
 }

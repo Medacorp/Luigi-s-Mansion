@@ -1,1 +1,1 @@
-execute at @s[nbt={ArmorItems:[{tag:{namespace:"luigis_mansion",id:"floating_whirlindas"}}]}] run function luigis_mansion:entities/floating_whirlindas/tick
+execute at @s[nbt={ArmorItems:[{tag:{luigis_mansion:{namespace:"luigis_mansion",id:"floating_whirlindas"}}}]}] run function luigis_mansion:entities/floating_whirlindas/tick

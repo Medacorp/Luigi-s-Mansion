@@ -1,5 +1,5 @@
 execute unless entity @s[scores={GBHDialog=1..}] as @a[scores={Animation=4}] run function luigis_mansion:entities/player/animation/set/none
-tag @s[nbt=!{SelectedItem:{tag:{luigis_mansion:{id:"luigis_mansion:game_boy_horror"}}}}] add hang_up
+tag @s[nbt=!{SelectedItem:{tag:{luigis_mansion:{namespace:"luigis_mansion",id:"game_boy_horror"}}}}] add hang_up
 tag @s add me
 scoreboard players set @a[tag=!me] GBHCall 0
 scoreboard players set @a GBHWait 0

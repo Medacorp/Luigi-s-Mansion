@@ -17,6 +17,6 @@ execute if entity @s[tag=!in_vacuum,tag=!no_ai] if score #debug_messages Selecte
 tag @s[tag=!in_vacuum,tag=!no_ai] add vanish
 tag @s[tag=!in_vacuum,tag=!no_ai] remove fleeing
 tag @s[tag=!in_vacuum,tag=!no_ai] remove hurt
-execute if entity @s[tag=!in_vacuum] run data modify entity @s ArmorItems[3].tag merge value {attacked_by:[]}
+execute if entity @s[tag=!in_vacuum] run data modify entity @s ArmorItems[3].tag.luigis_mansion.attacked_by set value []
 scoreboard players set @s[tag=vanish] AnimationProgress 0
 scoreboard players set @s[tag=vanish] ActionTime 0

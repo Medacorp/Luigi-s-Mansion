@@ -1,2 +1,2 @@
-execute if entity @s[nbt={ArmorItems:[{tag:{namespace:"luigis_mansion",id:"blue_twirler"}}]},tag=!hidden] run function luigis_mansion:entities/blue_twirler/tick
-execute if entity @s[nbt={ArmorItems:[{tag:{namespace:"luigis_mansion",id:"blue_twirler"}}]},tag=hidden] run function luigis_mansion:entities/blue_twirler/hidden_tick
+execute if entity @s[nbt={ArmorItems:[{tag:{luigis_mansion:{namespace:"luigis_mansion",id:"blue_twirler"}}}]},tag=!hidden] run function luigis_mansion:entities/blue_twirler/tick
+execute if entity @s[nbt={ArmorItems:[{tag:{luigis_mansion:{namespace:"luigis_mansion",id:"blue_twirler"}}}]},tag=hidden] run function luigis_mansion:entities/blue_twirler/hidden_tick

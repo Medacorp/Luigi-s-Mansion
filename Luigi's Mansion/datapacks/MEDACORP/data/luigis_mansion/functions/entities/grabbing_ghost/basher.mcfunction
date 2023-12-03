@@ -19,7 +19,7 @@ execute if entity @s[scores={ActionTime=41}] run summon minecraft:armor_stand ~ 
 execute if entity @s[scores={ActionTime=41}] if entity @a[distance=..5,tag=!spectator] run tag @s add laugh
 execute if entity @s[scores={ActionTime=41}] as @a[distance=..5,scores={Invulnerable=1..},tag=!spectator] run function luigis_mansion:entities/player/scare/normal
 execute if entity @s[scores={ActionTime=41}] run data modify storage luigis_mansion:data damage set value {method:"luigis_mansion:scare",amount:0,limit_health:50,knockback:"bash_scare",attacker:-1,no_delete:1b}
-execute if entity @s[scores={ActionTime=41}] run data modify storage luigis_mansion:data damage.amount set from entity @s ArmorItems[3].tag.damage.attack
+execute if entity @s[scores={ActionTime=41}] run data modify storage luigis_mansion:data damage.amount set from entity @s ArmorItems[3].tag.luigis_mansion.damage.attack
 execute if entity @s[scores={ActionTime=41}] store result storage luigis_mansion:data damage.attacker int 1 run scoreboard players get @s GhostNr
 execute if entity @s[scores={ActionTime=41}] as @a[distance=..3,gamemode=!spectator] run function luigis_mansion:entities/player/damage
 execute if entity @s[scores={ActionTime=41}] run data modify storage luigis_mansion:data damage merge value {limit_health:70,knockback:"scare"}

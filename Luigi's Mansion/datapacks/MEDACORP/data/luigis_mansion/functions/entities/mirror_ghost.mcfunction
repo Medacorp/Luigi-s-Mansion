@@ -1,2 +1,2 @@
-execute if entity @s[nbt={ArmorItems:[{tag:{namespace:"luigis_mansion",id:"mirror_ghost"}}]},tag=!hidden] run function luigis_mansion:entities/mirror_ghost/tick
-execute if entity @s[nbt={ArmorItems:[{tag:{namespace:"luigis_mansion",id:"mirror_ghost"}}]},tag=hidden] run function luigis_mansion:entities/mirror_ghost/hidden_tick
+execute if entity @s[nbt={ArmorItems:[{tag:{luigis_mansion:{namespace:"luigis_mansion",id:"mirror_ghost"}}}]},tag=!hidden] run function luigis_mansion:entities/mirror_ghost/tick
+execute if entity @s[nbt={ArmorItems:[{tag:{luigis_mansion:{namespace:"luigis_mansion",id:"mirror_ghost"}}}]},tag=hidden] run function luigis_mansion:entities/mirror_ghost/hidden_tick

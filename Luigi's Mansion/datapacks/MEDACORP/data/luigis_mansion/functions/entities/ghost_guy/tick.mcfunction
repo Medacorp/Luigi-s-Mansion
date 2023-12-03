@@ -1,10 +1,10 @@
-execute if entity @s[tag=dying,tag=!dancing,scores={DeathTime=1}] if data entity @s ArmorItems[3].tag.loot{drop_at_0:1b} run function luigis_mansion:other/drop_loot
-execute if entity @s[tag=dying,tag=dancing,scores={DeathTime=1}] if data entity @s ArmorItems[3].tag.loot{drop_at_0:1b} run function luigis_mansion:other/drop_loot
-execute if entity @s[tag=dead,tag=!dancing] unless data entity @s ArmorItems[3].tag.loot{drop_at_0:1b} run function luigis_mansion:other/drop_loot
-execute if entity @s[tag=dead,tag=dancing] unless data entity @s ArmorItems[3].tag.loot{drop_at_0:1b} run function luigis_mansion:other/drop_loot
+execute if entity @s[tag=dying,tag=!dancing,scores={DeathTime=1}] if data entity @s ArmorItems[3].tag.luigis_mansion.loot{drop_at_0:1b} run function luigis_mansion:other/drop_loot
+execute if entity @s[tag=dying,tag=dancing,scores={DeathTime=1}] if data entity @s ArmorItems[3].tag.luigis_mansion.loot{drop_at_0:1b} run function luigis_mansion:other/drop_loot
+execute if entity @s[tag=dead,tag=!dancing] unless data entity @s ArmorItems[3].tag.luigis_mansion.loot{drop_at_0:1b} run function luigis_mansion:other/drop_loot
+execute if entity @s[tag=dead,tag=dancing] unless data entity @s ArmorItems[3].tag.luigis_mansion.loot{drop_at_0:1b} run function luigis_mansion:other/drop_loot
 execute if entity @s[tag=dead] run scoreboard players operation #temp GhostGuyCouple = @s GhostGuyCouple
-execute if entity @s[tag=dead] as @e[nbt={ArmorItems:[{tag:{namespace:"luigis_mansion",id:"dancing_ghost_guy"}}]}] if score @s GhostGuyCouple = #temp GhostGuyCouple run tag @s add partner_died
-execute if entity @s[tag=dead] as @e[nbt={ArmorItems:[{tag:{namespace:"luigis_mansion",id:"dancing_ghost_guy"}}]}] if score @s GhostGuyCouple = #temp GhostGuyCouple run scoreboard players reset @s GhostGuyCouple
+execute if entity @s[tag=dead] as @e[nbt={ArmorItems:[{tag:{luigis_mansion:{namespace:"luigis_mansion",id:"dancing_ghost_guy"}}}]}] if score @s GhostGuyCouple = #temp GhostGuyCouple run tag @s add partner_died
+execute if entity @s[tag=dead] as @e[nbt={ArmorItems:[{tag:{luigis_mansion:{namespace:"luigis_mansion",id:"dancing_ghost_guy"}}}]}] if score @s GhostGuyCouple = #temp GhostGuyCouple run scoreboard players reset @s GhostGuyCouple
 execute if entity @s[tag=dead] run scoreboard players reset #temp GhostGuyCouple
 
 execute if entity @s[scores={HurtTime=1},tag=hurt,tag=!fleeing,tag=!dying] run playsound luigis_mansion:entity.ghost_guy.hurt hostile @a[tag=same_room] ~ ~ ~ 1

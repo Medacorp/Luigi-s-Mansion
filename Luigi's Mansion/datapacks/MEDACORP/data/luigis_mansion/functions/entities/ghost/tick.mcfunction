@@ -23,10 +23,10 @@ execute if entity @s[scores={StunTime=0..},tag=!spawned_heart,tag=!hidden,tag=vi
 execute if entity @s[scores={StunTime=1..},tag=!spawned_health_display,tag=!no_ai,tag=!vanish] run function luigis_mansion:entities/ghost/spawn_health_display
 execute if entity @s[tag=hurt,tag=!spawned_health_display,tag=!no_ai,tag=!vanish] run function luigis_mansion:entities/ghost/spawn_health_display
 execute if entity @s[tag=element_hurt,tag=!spawned_health_display,tag=!no_ai,tag=!vanish] run function luigis_mansion:entities/ghost/spawn_health_display
-execute if entity @s[nbt={ArmorItems:[{tag:{namespace:"luigis_mansion",id:"boo"}}]},tag=show_health,tag=!spawned_health_display,tag=!no_ai,tag=!vanish] run function luigis_mansion:entities/ghost/spawn_health_display
-execute if entity @s[nbt={ArmorItems:[{tag:{namespace:"luigis_mansion",id:"king_boo"}}]},tag=show_health,tag=!spawned_health_display,tag=!no_ai,tag=!vanish] run function luigis_mansion:entities/ghost/spawn_health_display
+execute if entity @s[nbt={ArmorItems:[{tag:{luigis_mansion:{namespace:"luigis_mansion",id:"boo"}}}]},tag=show_health,tag=!spawned_health_display,tag=!no_ai,tag=!vanish] run function luigis_mansion:entities/ghost/spawn_health_display
+execute if entity @s[nbt={ArmorItems:[{tag:{luigis_mansion:{namespace:"luigis_mansion",id:"king_boo"}}}]},tag=show_health,tag=!spawned_health_display,tag=!no_ai,tag=!vanish] run function luigis_mansion:entities/ghost/spawn_health_display
 tag @s[scores={VulnerableTime=0},tag=spawned_heart,tag=!burning_heart,tag=!watery_heart,tag=!frozen_heart] remove spawned_heart
-tag @s[scores={StunTime=0},tag=!hurt,tag=!fleeing,tag=!element_hurt,nbt=!{ArmorItems:[{tag:{namespace:"luigis_mansion",id:"boo"}}]},nbt=!{ArmorItems:[{tag:{namespace:"luigis_mansion",id:"king_boo"}}]},tag=spawned_health_display] remove spawned_health_display
+tag @s[scores={StunTime=0},tag=!hurt,tag=!fleeing,tag=!element_hurt,nbt=!{ArmorItems:[{tag:{luigis_mansion:{namespace:"luigis_mansion",id:"boo"}}}]},nbt=!{ArmorItems:[{tag:{luigis_mansion:{namespace:"luigis_mansion",id:"king_boo"}}}]},tag=spawned_health_display] remove spawned_health_display
 tag @s[tag=hidden] remove spawned_heart
 tag @s[tag=vanish] remove spawned_heart
 tag @s[tag=vanish] remove spawned_health_display
