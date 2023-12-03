@@ -31,7 +31,7 @@ execute if entity @s[scores={Dialog=1000..}] run scoreboard players reset @a Mel
 
 execute if entity @s[scores={Dialog=1000}] as @a[tag=same_room,tag=!spectator,tag=!looking_at_map] run function luigis_mansion:entities/player/animation/set/nod
 scoreboard players set @s[scores={Dialog=1000}] AnimationProgress 0
-tag @s[scores={Dialog=1000}] remove listen
+tag @s[scores={Dialog=1000}] remove nod
 tag @s[scores={Dialog=1000}] add rage
 execute if entity @s[scores={Dialog=1000}] run tellraw @a[tag=same_room] {"translate":"chat.type.text","with":[{"translate":"luigis_mansion:entity.melody_pianissima","color":"green"},{"translate":"luigis_mansion:dialog.melody_pianissima.no.1"}]}
 execute if entity @s[scores={Dialog=1048}] if score #players Totals matches 1 run tellraw @a[tag=same_room] {"translate":"chat.type.text","with":[{"translate":"luigis_mansion:entity.melody_pianissima","color":"green"},{"translate":"luigis_mansion:dialog.melody_pianissima.no.2"}]}
@@ -50,7 +50,7 @@ execute if entity @s[scores={Dialog=1304}] as @a[tag=same_room,tag=!spectator,ta
 execute if entity @s[scores={Dialog=2000}] as @a[tag=same_room,tag=!spectator,tag=!looking_at_map] run function luigis_mansion:entities/player/animation/set/enthusiastic
 execute if entity @s[scores={Dialog=2020..2227}] as @a[tag=same_room,tag=!spectator,tag=!looking_at_map] run function luigis_mansion:entities/player/animation/set/high_health_idle_no_sound
 scoreboard players set @s[scores={Dialog=2020}] AnimationProgress 0
-tag @s[scores={Dialog=2020}] remove listen
+tag @s[scores={Dialog=2020}] remove nod
 tag @s[scores={Dialog=2020}] add laugh
 execute if entity @s[scores={Dialog=2020}] run playsound luigis_mansion:entity.melody_pianissima.laugh hostile @a[tag=same_room] ~ ~ ~ 1
 execute if entity @s[scores={Dialog=2020}] if score #players Totals matches 1 run tellraw @a[tag=same_room] {"translate":"chat.type.text","with":[{"translate":"luigis_mansion:entity.melody_pianissima","color":"green"},{"translate":"luigis_mansion:dialog.melody_pianissima.yes.1"}]}

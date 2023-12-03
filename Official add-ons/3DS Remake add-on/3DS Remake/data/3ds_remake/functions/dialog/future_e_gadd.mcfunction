@@ -14,14 +14,12 @@ scoreboard players set @s[scores={Dialog=56}] AnimationProgress 0
 execute if entity @s[scores={Dialog=56..168}] as @a[tag=same_room] run function luigis_mansion:other/music/set/non_overwritten_silence
 execute if entity @s[scores={Dialog=56..168}] if score #temp Dialog matches 0..4 run scoreboard players set @a[tag=same_room] ForceScreen 1
 execute if entity @s[scores={Dialog=169..1564}] run scoreboard players set @a[tag=same_room] ForceScreen 1
-tag @s[scores={Dialog=96}] add listen
-scoreboard players set @s[scores={Dialog=96}] AnimationProgress 0
 execute if entity @s[scores={Dialog=96}] run tellraw @a[tag=same_room] {"translate":"chat.type.text","with":[{"translate":"luigis_mansion:entity.e_gadd","color":"green"},{"translate":"3ds_remake:dialog.future_e_gadd.2"}]}
 execute if entity @s[scores={Dialog=96}] run playsound luigis_mansion:entity.e_gadd.talk.soy_soh_ooh_hey_hey_suu_dehkooroo_hah neutral @a[tag=same_room] ~ ~ ~ 1
 execute if entity @s[scores={Dialog=168..1564}] as @a[tag=same_room] run function 3ds_remake:other/music/set/future_e_gadd
 execute if entity @s[scores={Dialog=208}] run tellraw @a[tag=same_room] {"translate":"chat.type.text","with":[{"translate":"3ds_remake:entity.future_e_gadd","color":"green"},{"translate":"3ds_remake:dialog.future_e_gadd.3"}]}
 execute if entity @s[scores={Dialog=208}] as @a[tag=same_room] at @s run playsound luigis_mansion:entity.e_gadd.talk.shortlaugh neutral @s ~ ~ ~ 1
-tag @s[scores={Dialog=228}] remove listen
+tag @s[scores={Dialog=228}] remove nod
 tag @s[scores={Dialog=228}] add hit
 execute if entity @s[scores={Dialog=228}] as @a[tag=same_room,tag=!spectator] run function luigis_mansion:entities/player/scare/bash_no_move
 scoreboard players set @s[scores={Dialog=228}] AnimationProgress 0
