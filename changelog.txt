@@ -17,7 +17,7 @@ WARNING! When updating an old save version, be sure to:
 
 2.3.9:
 * Updated to 1.20.3
-* Applied new JSON text component optimizating fields "type" and "source"
+* Applied new JSON text component optimizing fields "type" and "source"
 
 
 2.3.8:

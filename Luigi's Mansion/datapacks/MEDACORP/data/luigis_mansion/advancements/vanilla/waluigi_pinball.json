@@ -5,10 +5,10 @@
 			"nbt": "{Unbreakable:1b,Damage:4,CustomModelData:20}"
         },
         "title": {
-            "translate": "luigis_mansion:advancements.vanilla.waluigi_pinball"
+            "type": "translatable", "translate": "luigis_mansion:advancements.vanilla.waluigi_pinball"
         },
         "description": {
-            "translate": "luigis_mansion:advancements.vanilla.waluigi_pinball.description"
+            "type": "translatable", "translate": "luigis_mansion:advancements.vanilla.waluigi_pinball.description"
         }
     },
 	"parent": "luigis_mansion:vanilla/root",

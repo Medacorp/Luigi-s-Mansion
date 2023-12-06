@@ -6,10 +6,10 @@
         },
         "frame": "challenge",
         "title": {
-            "translate": "extensive_training:advancements.extensive_training.mastermind"
+            "type": "translatable", "translate": "extensive_training:advancements.extensive_training.mastermind"
         },
         "description": {
-            "translate": "extensive_training:advancements.extensive_training.mastermind.description"
+            "type": "translatable", "translate": "extensive_training:advancements.extensive_training.mastermind.description"
         }
     },
 	"parent": "extensive_training:extensive_training/root",

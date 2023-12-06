@@ -8,10 +8,10 @@
         "hidden": true,
         "frame": "goal",
         "title": {
-            "translate": "luigis_mansion:advancements.vanilla.clear_mansion"
+            "type": "translatable", "translate": "luigis_mansion:advancements.vanilla.clear_mansion"
         },
         "description": {
-            "translate": "luigis_mansion:advancements.vanilla.clear_mansion.description"
+            "type": "translatable", "translate": "luigis_mansion:advancements.vanilla.clear_mansion.description"
         }
     },
 	"parent": "luigis_mansion:vanilla/unlock_mansion",

@@ -3,7 +3,7 @@
         "pack_format": 26,
         "supported_formats": [26,26],
         "description": {
-			"translate": "3ds_remake:data_pack.description"
+			"type": "translatable", "translate": "3ds_remake:data_pack.description"
 		}
     }
 }

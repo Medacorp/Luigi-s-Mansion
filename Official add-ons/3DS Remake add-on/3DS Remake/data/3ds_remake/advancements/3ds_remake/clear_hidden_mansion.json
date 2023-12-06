@@ -6,10 +6,10 @@
         },
         "frame": "challenge",
         "title": {
-            "translate": "luigis_mansion:advancements.vanilla.clear_hidden_mansion"
+            "type": "translatable", "translate": "luigis_mansion:advancements.vanilla.clear_hidden_mansion"
         },
         "description": {
-            "translate": "3ds_remake:advancements.3ds_remake.clear_hidden_mansion.description"
+            "type": "translatable", "translate": "3ds_remake:advancements.3ds_remake.clear_hidden_mansion.description"
         }
     },
 	"parent": "3ds_remake:3ds_remake/unlock_hidden_mansion",

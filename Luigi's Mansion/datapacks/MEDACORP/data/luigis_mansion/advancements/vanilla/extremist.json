@@ -6,10 +6,10 @@
         },
         "frame": "challenge",
         "title": {
-            "translate": "luigis_mansion:advancements.vanilla.extremist"
+            "type": "translatable", "translate": "luigis_mansion:advancements.vanilla.extremist"
         },
         "description": {
-            "translate": "luigis_mansion:advancements.vanilla.extremist.description"
+            "type": "translatable", "translate": "luigis_mansion:advancements.vanilla.extremist.description"
         }
     },
 	"parent": "luigis_mansion:vanilla/clear_hidden_mansion",

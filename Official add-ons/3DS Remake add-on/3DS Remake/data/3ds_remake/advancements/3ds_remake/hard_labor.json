@@ -6,10 +6,10 @@
         },
         "frame": "challenge",
         "title": {
-            "translate": "3ds_remake:advancements.3ds_remake.hard_labor"
+            "type": "translatable", "translate": "3ds_remake:advancements.3ds_remake.hard_labor"
         },
         "description": {
-            "translate": "3ds_remake:advancements.3ds_remake.hard_labor.description"
+            "type": "translatable", "translate": "3ds_remake:advancements.3ds_remake.hard_labor.description"
         }
     },
 	"parent": "3ds_remake:3ds_remake/root",

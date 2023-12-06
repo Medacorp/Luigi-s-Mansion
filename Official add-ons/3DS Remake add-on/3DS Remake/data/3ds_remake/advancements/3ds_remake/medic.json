@@ -6,10 +6,10 @@
         },
         "frame": "challenge",
         "title": {
-            "translate": "3ds_remake:advancements.3ds_remake.medic"
+            "type": "translatable", "translate": "3ds_remake:advancements.3ds_remake.medic"
         },
         "description": {
-            "translate": "3ds_remake:advancements.3ds_remake.medic.description"
+            "type": "translatable", "translate": "3ds_remake:advancements.3ds_remake.medic.description"
         }
     },
 	"parent": "3ds_remake:3ds_remake/clear_hidden_mansion",

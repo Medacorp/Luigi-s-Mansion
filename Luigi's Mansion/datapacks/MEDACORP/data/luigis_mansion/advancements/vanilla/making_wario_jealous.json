@@ -5,10 +5,10 @@
 			"nbt": "{Damage:22,Unbreakable:1b,CustomModelData:15}"
         },
         "title": {
-            "translate": "luigis_mansion:advancements.vanilla.making_wario_jealous"
+            "type": "translatable", "translate": "luigis_mansion:advancements.vanilla.making_wario_jealous"
         },
         "description": {
-            "translate": "luigis_mansion:advancements.vanilla.making_wario_jealous.description"
+            "type": "translatable", "translate": "luigis_mansion:advancements.vanilla.making_wario_jealous.description"
         },
         "hidden": true
     },

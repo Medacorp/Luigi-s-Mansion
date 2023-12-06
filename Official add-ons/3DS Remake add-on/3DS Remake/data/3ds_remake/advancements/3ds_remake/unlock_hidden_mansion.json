@@ -6,10 +6,10 @@
         },
         "hidden": true,
         "title": {
-            "translate": "luigis_mansion:advancements.vanilla.unlock_hidden_mansion"
+            "type": "translatable", "translate": "luigis_mansion:advancements.vanilla.unlock_hidden_mansion"
         },
         "description": {
-            "translate": "luigis_mansion:advancements.vanilla.unlock_hidden_mansion.description"
+            "type": "translatable", "translate": "luigis_mansion:advancements.vanilla.unlock_hidden_mansion.description"
         }
     },
 	"parent": "3ds_remake:3ds_remake/root",

@@ -6,10 +6,10 @@
         },
         "frame": "challenge",
         "title": {
-            "translate": "e3_demo:advancements.e3_demo.heavy_heart"
+            "type": "translatable", "translate": "e3_demo:advancements.e3_demo.heavy_heart"
         },
         "description": {
-            "translate": "e3_demo:advancements.e3_demo.heavy_heart.description"
+            "type": "translatable", "translate": "e3_demo:advancements.e3_demo.heavy_heart.description"
         }
     },
 	"parent": "e3_demo:e3_demo/root",

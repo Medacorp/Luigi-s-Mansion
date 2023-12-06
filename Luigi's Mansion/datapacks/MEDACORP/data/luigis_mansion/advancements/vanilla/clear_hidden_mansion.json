@@ -7,10 +7,10 @@
         "show_toast": false,
         "frame": "challenge",
         "title": {
-            "translate": "luigis_mansion:advancements.vanilla.clear_hidden_mansion"
+            "type": "translatable", "translate": "luigis_mansion:advancements.vanilla.clear_hidden_mansion"
         },
         "description": {
-            "translate": "luigis_mansion:advancements.vanilla.clear_hidden_mansion.description"
+            "type": "translatable", "translate": "luigis_mansion:advancements.vanilla.clear_hidden_mansion.description"
         }
     },
 	"parent": "luigis_mansion:vanilla/unlock_hidden_mansion",

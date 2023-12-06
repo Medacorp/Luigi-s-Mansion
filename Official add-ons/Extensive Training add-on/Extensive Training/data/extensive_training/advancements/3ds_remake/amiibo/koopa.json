@@ -5,10 +5,10 @@
 			"nbt": "{Unbreakable:1b,Damage:5,CustomModelData:13}"
         },
         "title": {
-            "translate": "extensive_training:advancements.3ds_remake.amiibo.koopa"
+            "type": "translatable", "translate": "extensive_training:advancements.3ds_remake.amiibo.koopa"
         },
         "description": {
-            "translate": "extensive_training:dialog.underground_lab.change_amiibo.koopa.hover"
+            "type": "translatable", "translate": "extensive_training:dialog.underground_lab.change_amiibo.koopa.hover"
         }
     },
 	"parent": "3ds_remake:3ds_remake/amiibo",

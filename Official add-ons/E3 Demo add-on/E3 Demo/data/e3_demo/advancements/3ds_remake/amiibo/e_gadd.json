@@ -5,10 +5,10 @@
 			"nbt": "{Unbreakable:1b,Damage:1,CustomModelData:0}"
         },
         "title": {
-            "translate": "e3_demo:advancements.3ds_remake.amiibo.e_gadd"
+            "type": "translatable", "translate": "e3_demo:advancements.3ds_remake.amiibo.e_gadd"
         },
         "description": {
-            "translate": "e3_demo:dialog.underground_lab.change_amiibo.e_gadd.hover"
+            "type": "translatable", "translate": "e3_demo:dialog.underground_lab.change_amiibo.e_gadd.hover"
         }
     },
 	"parent": "3ds_remake:3ds_remake/amiibo",

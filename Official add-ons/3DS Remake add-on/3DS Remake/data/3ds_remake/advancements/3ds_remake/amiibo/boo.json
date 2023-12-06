@@ -5,10 +5,10 @@
 			"nbt": "{Unbreakable:1b,Damage:2,CustomModelData:0}"
         },
         "title": {
-            "translate": "3ds_remake:advancements.3ds_remake.amiibo.boo"
+            "type": "translatable", "translate": "3ds_remake:advancements.3ds_remake.amiibo.boo"
         },
         "description": {
-            "translate": "3ds_remake:dialog.underground_lab.change_amiibo.boo.hover"
+            "type": "translatable", "translate": "3ds_remake:dialog.underground_lab.change_amiibo.boo.hover"
         }
     },
 	"parent": "3ds_remake:3ds_remake/amiibo/mario",

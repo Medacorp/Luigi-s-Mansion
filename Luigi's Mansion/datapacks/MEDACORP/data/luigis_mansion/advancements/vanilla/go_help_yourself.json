@@ -5,10 +5,10 @@
 			"nbt": "{Unbreakable:1b,Damage:5,CustomModelData:20}"
         },
         "title": {
-            "translate": "luigis_mansion:advancements.vanilla.go_help_yourself"
+            "type": "translatable", "translate": "luigis_mansion:advancements.vanilla.go_help_yourself"
         },
         "description": {
-            "translate": "luigis_mansion:advancements.vanilla.go_help_yourself.description"
+            "type": "translatable", "translate": "luigis_mansion:advancements.vanilla.go_help_yourself.description"
         }
     },
 	"parent": "luigis_mansion:vanilla/root",

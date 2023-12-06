@@ -7,10 +7,10 @@
         "show_toast": false,
         "hidden": true,
         "title": {
-            "translate": "luigis_mansion:advancements.vanilla.unlock_mansion"
+            "type": "translatable", "translate": "luigis_mansion:advancements.vanilla.unlock_mansion"
         },
         "description": {
-            "translate": "luigis_mansion:advancements.vanilla.unlock_mansion.description"
+            "type": "translatable", "translate": "luigis_mansion:advancements.vanilla.unlock_mansion.description"
         }
     },
 	"parent": "luigis_mansion:vanilla/root",

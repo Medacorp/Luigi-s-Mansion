@@ -6,10 +6,10 @@
         },
         "show_toast": false,
         "title": {
-            "translate": "luigis_mansion:advancements.vanilla.root"
+            "type": "translatable", "translate": "luigis_mansion:advancements.vanilla.root"
         },
         "description": {
-            "translate": "luigis_mansion:advancements.vanilla.root.description"
+            "type": "translatable", "translate": "luigis_mansion:advancements.vanilla.root.description"
         },
 		"background": "luigis_mansion:textures/gui/advancements/background/vanilla.png"
     },

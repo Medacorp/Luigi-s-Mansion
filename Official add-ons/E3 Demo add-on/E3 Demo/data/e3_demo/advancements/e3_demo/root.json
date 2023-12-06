@@ -7,10 +7,10 @@
         },
         "show_toast": false,
         "title": {
-            "translate": "e3_demo:advancements.e3_demo.root"
+            "type": "translatable", "translate": "e3_demo:advancements.e3_demo.root"
         },
         "description": {
-            "translate": "e3_demo:advancements.e3_demo.root.description"
+            "type": "translatable", "translate": "e3_demo:advancements.e3_demo.root.description"
         },
 		"background": "e3_demo:textures/gui/advancements/background/e3_demo.png"
     },

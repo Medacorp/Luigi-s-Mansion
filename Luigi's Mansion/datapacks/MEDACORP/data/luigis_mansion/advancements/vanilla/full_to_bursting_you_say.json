@@ -4,10 +4,10 @@
             "item": "minecraft:painting"
         },
         "title": {
-            "translate": "luigis_mansion:advancements.vanilla.full_to_bursting_you_say"
+            "type": "translatable", "translate": "luigis_mansion:advancements.vanilla.full_to_bursting_you_say"
         },
         "description": {
-            "translate": "luigis_mansion:advancements.vanilla.full_to_bursting_you_say.description"
+            "type": "translatable", "translate": "luigis_mansion:advancements.vanilla.full_to_bursting_you_say.description"
         },
         "hidden": true
     },

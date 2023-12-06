@@ -5,10 +5,10 @@
 			"nbt": "{Damage:22,Unbreakable:1b,CustomModelData:16}"
         },
         "title": {
-            "translate": "luigis_mansion:advancements.vanilla.scrooge_mcduck_it_up"
+            "type": "translatable", "translate": "luigis_mansion:advancements.vanilla.scrooge_mcduck_it_up"
         },
         "description": {
-            "translate": "luigis_mansion:advancements.vanilla.scrooge_mcduck_it_up.description"
+            "type": "translatable", "translate": "luigis_mansion:advancements.vanilla.scrooge_mcduck_it_up.description"
         },
         "hidden": true
     },

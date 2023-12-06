@@ -7,10 +7,10 @@
         "show_toast": false,
         "announce_to_chat": false,
         "title": {
-            "translate": "luigis_mansion:entity.yellow_bat"
+            "type": "translatable", "translate": "luigis_mansion:entity.yellow_bat"
         },
         "description": {
-            "translate": "luigis_mansion:advancements.vanilla.waluigi_pinball.sub_description"
+            "type": "translatable", "translate": "luigis_mansion:advancements.vanilla.waluigi_pinball.sub_description"
         }
     },
 	"parent": "luigis_mansion:vanilla/waluigi_pinball/purple_bat",

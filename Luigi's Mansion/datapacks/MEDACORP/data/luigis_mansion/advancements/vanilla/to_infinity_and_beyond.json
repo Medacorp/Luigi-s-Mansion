@@ -5,10 +5,10 @@
 			"nbt": "{Unbreakable:1b,Damage:5,CustomModelData:26}"
         },
         "title": {
-            "translate": "luigis_mansion:advancements.vanilla.to_infinity_and_beyond"
+            "type": "translatable", "translate": "luigis_mansion:advancements.vanilla.to_infinity_and_beyond"
         },
         "description": {
-            "translate": "luigis_mansion:advancements.vanilla.to_infinity_and_beyond.description"
+            "type": "translatable", "translate": "luigis_mansion:advancements.vanilla.to_infinity_and_beyond.description"
         },
         "hidden": true
     },

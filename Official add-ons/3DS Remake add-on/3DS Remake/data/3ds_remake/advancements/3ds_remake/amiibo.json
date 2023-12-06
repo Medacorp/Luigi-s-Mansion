@@ -5,10 +5,10 @@
             "nbt": "{Unbreakable:1b,Damage:1,CustomModelData:0}"
         },
         "title": {
-            "translate": "3ds_remake:advancements.3ds_remake.amiibo"
+            "type": "translatable", "translate": "3ds_remake:advancements.3ds_remake.amiibo"
         },
         "description": {
-            "translate": "3ds_remake:advancements.3ds_remake.amiibo.description"
+            "type": "translatable", "translate": "3ds_remake:advancements.3ds_remake.amiibo.description"
         }
     },
 	"parent": "3ds_remake:3ds_remake/root",

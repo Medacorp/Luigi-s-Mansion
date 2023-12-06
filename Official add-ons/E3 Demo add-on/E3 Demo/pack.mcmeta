@@ -3,7 +3,7 @@
         "pack_format": 26,
         "supported_formats": [26,26],
         "description": {
-			"translate": "e3_demo:data_pack.description"
+			"type": "translatable", "translate": "e3_demo:data_pack.description"
 		}
     }
 }

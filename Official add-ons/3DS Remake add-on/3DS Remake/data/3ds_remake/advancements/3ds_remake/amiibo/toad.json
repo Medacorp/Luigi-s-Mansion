@@ -5,10 +5,10 @@
 			"nbt": "{Unbreakable:1b,Damage:5,CustomModelData:13}"
         },
         "title": {
-            "translate": "3ds_remake:advancements.3ds_remake.amiibo.toad"
+            "type": "translatable", "translate": "3ds_remake:advancements.3ds_remake.amiibo.toad"
         },
         "description": {
-            "translate": "3ds_remake:dialog.underground_lab.change_amiibo.toad.hover"
+            "type": "translatable", "translate": "3ds_remake:dialog.underground_lab.change_amiibo.toad.hover"
         }
     },
 	"parent": "3ds_remake:3ds_remake/amiibo",

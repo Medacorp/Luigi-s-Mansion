@@ -3,7 +3,7 @@
         "pack_format": 22,
         "supported_formats": [22,22],
         "description": {
-			"translate": "luigis_mansion:resource_pack.description",
+			"type": "translatable", "translate": "luigis_mansion:resource_pack.description",
 			"fallback": "Luigi's Mansion resource pack"
 		}
     }

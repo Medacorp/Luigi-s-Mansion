@@ -6,10 +6,10 @@
         },
         "frame": "challenge",
         "title": {
-            "translate": "luigis_mansion:advancements.vanilla.hardcore"
+            "type": "translatable", "translate": "luigis_mansion:advancements.vanilla.hardcore"
         },
         "description": {
-            "translate": "luigis_mansion:advancements.vanilla.hardcore.description"
+            "type": "translatable", "translate": "luigis_mansion:advancements.vanilla.hardcore.description"
         }
     },
 	"parent": "luigis_mansion:vanilla/clear_mansion",
