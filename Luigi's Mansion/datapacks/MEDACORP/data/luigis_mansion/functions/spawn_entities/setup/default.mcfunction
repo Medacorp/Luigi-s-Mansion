@@ -1,7 +1,7 @@
-execute if entity @s[tag=ghost] run function luigis_mansion:spawn_entities/setup/ghost
-execute if entity @s[tag=ghost,tag=!vacuumable,tag=!portrait_ghost,tag=!boo] run function luigis_mansion:spawn_entities/setup/ghost_with_health
-execute if entity @s[tag=portrait_ghost,tag=!boo] run function luigis_mansion:spawn_entities/setup/portrait_ghost
-execute if entity @s[tag=boo] run function luigis_mansion:spawn_entities/setup/boo
+execute if entity @e[tag=this_entity,limit=1,tag=ghost] run function luigis_mansion:spawn_entities/setup/ghost
+execute if entity @e[tag=this_entity,limit=1,tag=ghost,tag=!vacuumable,tag=!portrait_ghost,tag=!boo] run function luigis_mansion:spawn_entities/setup/ghost_with_health
+execute if entity @e[tag=this_entity,limit=1,tag=portrait_ghost,tag=!boo] run function luigis_mansion:spawn_entities/setup/portrait_ghost
+execute if entity @e[tag=this_entity,limit=1,tag=boo] run function luigis_mansion:spawn_entities/setup/boo
 
 function luigis_mansion:spawn_entities/setup/spawn_time
 function luigis_mansion:spawn_entities/setup/rotation

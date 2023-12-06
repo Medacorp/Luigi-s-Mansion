@@ -25,7 +25,7 @@ scoreboard players set @e[tag=this_entity,limit=1] EntitySizeHeight 26
 scoreboard players set @e[tag=this_entity,limit=1] EntityYOffset 20
 scoreboard players set @e[tag=this_entity,limit=1] AttackType 0
 execute if data storage luigis_mansion:data entity.attack_type run function luigis_mansion:spawn_entities/setup/attack_type/ceiling_ghost
-execute if data storage luigis_mansion:data entity.appear_type run function luigis_mansion:spawn_entities/setup/attack_type/none
+execute if data storage luigis_mansion:data entity.appear_type run function luigis_mansion:spawn_entities/setup/appear_type/none
 function luigis_mansion:spawn_entities/setup/default
 tag @e[tag=this_entity,limit=1] remove this_entity
 data remove storage luigis_mansion:data entity

@@ -28,7 +28,7 @@ scoreboard players set @e[tag=this_entity,limit=1] EntitySizeHeight 12
 scoreboard players set @e[tag=this_entity,limit=1] EntityYOffset 13
 scoreboard players set @e[tag=this_entity,limit=1] AttackType 1
 execute if data storage luigis_mansion:data entity.attack_type run function luigis_mansion:spawn_entities/setup/attack_type/ghost_guy
-execute if data storage luigis_mansion:data entity.appear_type run function luigis_mansion:spawn_entities/setup/attack_type/none
+execute if data storage luigis_mansion:data entity.appear_type run function luigis_mansion:spawn_entities/setup/appear_type/none
 function luigis_mansion:spawn_entities/setup/default
 execute unless entity @e[nbt={ArmorItems:[{tag:{luigis_mansion:{namespace:"luigis_mansion",id:"dancing_ghost_guy"}}}]},distance=..2,tag=!this_entity,limit=1] store result score @e[tag=this_entity,limit=1] GhostGuyCouple run data get storage luigis_mansion:data unique_id.dancing_ghost_guy_couple
 execute unless entity @e[nbt={ArmorItems:[{tag:{luigis_mansion:{namespace:"luigis_mansion",id:"dancing_ghost_guy"}}}]},distance=..2,tag=!this_entity,limit=1] store result storage luigis_mansion:data unique_id.dancing_ghost_guy_couple int 1 run scoreboard players add @e[tag=this_entity,limit=1] GhostGuyCouple 1

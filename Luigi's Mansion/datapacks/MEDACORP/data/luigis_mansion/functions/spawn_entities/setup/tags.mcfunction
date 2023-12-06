@@ -1,0 +1,1 @@
+execute if data storage luigis_mansion:data entity.tags run data modify entity @e[tag=this_entity,limit=1] Tags append from storage luigis_mansion:data entity.tags[]

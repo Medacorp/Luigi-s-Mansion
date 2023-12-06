@@ -14,7 +14,7 @@ tag @e[tag=this_entity,tag=model_piece] remove this_entity
 execute as @e[tag=this_entity,limit=1] store result score @s HomeY run data get entity @s Pos[1] 100
 scoreboard players set @e[tag=this_entity,limit=1] EntitySizeWidth 8
 scoreboard players set @e[tag=this_entity,limit=1] EntitySizeHeight 18
-scoreboard players set @e[tag=this_entity,limit=1] EntityYOffset 12
+scoreboard players set @e[tag=this_entity,limit=1] EntityYOffset 9
 function luigis_mansion:spawn_entities/setup/default
 tag @e[tag=this_entity,limit=1] remove this_entity
 data remove storage luigis_mansion:data entity
