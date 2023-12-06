@@ -208,7 +208,7 @@ scoreboard players set #20000 Constants 20000
 
 scoreboard objectives setdisplay list Health
 
-bossbar add luigis_mansion:boo_counter {"translate":"luigis_mansion:message.boo_counter","color":"white","with":["0","0"]}
+bossbar add luigis_mansion:boo_counter {"type":"translatable","translate":"luigis_mansion:message.boo_counter","color":"white","with":["0","0"]}
 bossbar set luigis_mansion:boo_counter color white
 
 execute unless score #loaded_exterior Selected matches -2147483648.. run scoreboard players set #loaded_exterior Selected 0
@@ -238,3 +238,4 @@ gamerule doTileDrops false
 gamerule doEntityDrops false
 gamerule fallDamage false
 gamerule maxCommandChainLength 2147483647
+gamerule maxCommandForkCount 2147483647

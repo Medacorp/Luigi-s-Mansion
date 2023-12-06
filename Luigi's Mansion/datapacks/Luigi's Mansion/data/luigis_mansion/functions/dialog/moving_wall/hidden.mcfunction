@@ -17,7 +17,7 @@ execute if entity @s[scores={Dialog=100}] run clone 681 11 65 689 17 64 681 11 6
 execute if entity @s[scores={Dialog=120}] run clone 681 11 64 689 17 63 681 11 62 replace move
 execute if entity @s[scores={Dialog=140}] run clone 681 11 63 689 17 62 681 11 61 replace move
 execute if entity @s[scores={Dialog=160}] run clone 681 11 62 689 17 61 681 11 60 replace move
-execute if entity @s[scores={Dialog=160}] run summon minecraft:item_frame 681 13 61 {Facing:5b,CustomName:'{"translate":"luigis_mansion:entity.poster"}',Fixed:1b,Invisible:1b,Silent:1b,Item:{id:"minecraft:filled_map",Count:1b,tag:{map:314}},Tags:["poster"]}
+execute if entity @s[scores={Dialog=160}] run summon minecraft:item_frame 681 13 61 {Facing:5b,CustomName:'{"type":"translatable","translate":"luigis_mansion:entity.poster"}',Fixed:1b,Invisible:1b,Silent:1b,Item:{id:"minecraft:filled_map",Count:1b,tag:{map:314}},Tags:["poster"]}
 execute if entity @s[scores={Dialog=180}] run clone 681 11 61 689 17 60 681 11 59 replace move
 execute if entity @s[scores={Dialog=200}] run clone 681 11 60 689 17 59 681 11 58 replace move
 execute if entity @s[scores={Dialog=210}] run clone 681 11 59 689 17 58 681 11 57 replace move
@@ -43,7 +43,7 @@ execute if entity @s[scores={Dialog=100}] run clone 671 11 65 679 17 64 671 11 6
 execute if entity @s[scores={Dialog=120}] run clone 671 11 64 679 17 63 671 11 62 replace move
 execute if entity @s[scores={Dialog=140}] run clone 671 11 63 679 17 62 671 11 61 replace move
 execute if entity @s[scores={Dialog=160}] run clone 671 11 62 679 17 61 671 11 60 replace move
-execute if entity @s[scores={Dialog=160}] run summon minecraft:item_frame 679 13 61 {Facing:4b,CustomName:'{"translate":"luigis_mansion:entity.poster"}',Fixed:1b,Invisible:1b,Silent:1b,Item:{id:"minecraft:filled_map",Count:1b,tag:{map:151}},Tags:["poster"]}
+execute if entity @s[scores={Dialog=160}] run summon minecraft:item_frame 679 13 61 {Facing:4b,CustomName:'{"type":"translatable","translate":"luigis_mansion:entity.poster"}',Fixed:1b,Invisible:1b,Silent:1b,Item:{id:"minecraft:filled_map",Count:1b,tag:{map:151}},Tags:["poster"]}
 execute if entity @s[scores={Dialog=180}] run clone 671 11 61 679 17 60 671 11 59 replace move
 execute if entity @s[scores={Dialog=200}] run clone 671 11 60 679 17 59 671 11 58 replace move
 execute if entity @s[scores={Dialog=210}] run clone 671 11 59 679 17 58 671 11 57 replace move

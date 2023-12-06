@@ -7,10 +7,10 @@
         "show_toast": false,
         "hidden": true,
         "title": {
-            "translate": "luigis_beta_mansion:advancements.lab.unlocked_original_mansion"
+            "type": "translatable", "translate": "luigis_beta_mansion:advancements.lab.unlocked_original_mansion"
         },
         "description": {
-            "translate": "luigis_beta_mansion:advancements.lab.unlocked_original_mansion.description"
+            "type": "translatable", "translate": "luigis_beta_mansion:advancements.lab.unlocked_original_mansion.description"
         }
     },
 	"parent": "luigis_mansion:lab/underground_lab",

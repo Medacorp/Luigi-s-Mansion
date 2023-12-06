@@ -34,7 +34,7 @@ execute if entity @s[scores={Dialog=90}] run playsound luigis_mansion:entity.cha
 tag @s[scores={Dialog=130}] remove yawn
 tag @s[scores={Dialog=130}] add move
 execute if entity @s[scores={Dialog=130}] if data storage luigis_mansion:data current_state.current_data.technical_data{chauncey_spoke:1b} run scoreboard players set @s Dialog 170
-execute if entity @s[scores={Dialog=130}] run tellraw @a[tag=same_room] {"translate":"chat.type.text","with":[{"translate":"luigis_mansion:entity.chauncey","color":"green"},{"translate":"luigis_mansion:message.chauncey.play"}]}
+execute if entity @s[scores={Dialog=130}] run tellraw @a[tag=same_room] {"type":"translatable","translate":"chat.type.text","with":[{"type":"translatable","translate":"luigis_mansion:entity.chauncey","color":"green"},{"type":"translatable","translate":"luigis_mansion:message.chauncey.play"}]}
 execute if entity @s[scores={Dialog=169}] as @a[tag=same_room,tag=!spectator,tag=!looking_at_map] run function luigis_mansion:entities/player/animation/set/none
 execute if entity @s[scores={Dialog=170}] run data modify storage luigis_mansion:data current_state.current_data.technical_data merge value {chauncey_spoke:1b}
 execute if entity @s[scores={Dialog=170..}] as @a[tag=same_room,tag=!spectator] run function luigis_mansion:other/music/set/danger
@@ -78,16 +78,16 @@ tag @s[scores={Dialog=290}] remove move
 tag @s[scores={Dialog=290}] add rambling
 execute if entity @s[scores={Dialog=290..641}] as @a[tag=same_room,gamemode=!spectator,scores={IdleTime=0..},tag=!looking_at_map] run function luigis_mansion:entities/player/animation/set/stand_still
 execute if entity @s[scores={Dialog=290}] run function luigis_mansion:entities/chauncey/grab_rambler
-execute if entity @s[scores={Dialog=290}] if score #players Totals matches 1 run tellraw @a[tag=same_room] {"translate":"chat.type.text","with":[{"translate":"luigis_mansion:entity.chauncey","color":"green"},{"translate":"luigis_mansion:dialog.chauncey.1"}]}
-execute if entity @s[scores={Dialog=290}] if score #players Totals matches 2.. run tellraw @a[tag=same_room] {"translate":"chat.type.text","with":[{"translate":"luigis_mansion:entity.chauncey","color":"green"},{"translate":"luigis_mansion:dialog.chauncey.1.more"}]}
+execute if entity @s[scores={Dialog=290}] if score #players Totals matches 1 run tellraw @a[tag=same_room] {"type":"translatable","translate":"chat.type.text","with":[{"type":"translatable","translate":"luigis_mansion:entity.chauncey","color":"green"},{"type":"translatable","translate":"luigis_mansion:dialog.chauncey.1"}]}
+execute if entity @s[scores={Dialog=290}] if score #players Totals matches 2.. run tellraw @a[tag=same_room] {"type":"translatable","translate":"chat.type.text","with":[{"type":"translatable","translate":"luigis_mansion:entity.chauncey","color":"green"},{"type":"translatable","translate":"luigis_mansion:dialog.chauncey.1.more"}]}
 tag @s[scores={Dialog=338}] remove rambling
-execute if entity @s[scores={Dialog=338}] if score #players Totals matches 1 run tellraw @a[tag=same_room] {"translate":"chat.type.text","with":[{"translate":"luigis_mansion:entity.chauncey","color":"green"},{"translate":"luigis_mansion:dialog.chauncey.2"}]}
-execute if entity @s[scores={Dialog=338}] if score #players Totals matches 2.. run tellraw @a[tag=same_room] {"translate":"chat.type.text","with":[{"translate":"luigis_mansion:entity.chauncey","color":"green"},{"translate":"luigis_mansion:dialog.chauncey.2.more"}]}
-execute if entity @s[scores={Dialog=426}] if score #players Totals matches 1 run tellraw @a[tag=same_room] {"translate":"chat.type.text","with":[{"translate":"luigis_mansion:entity.chauncey","color":"green"},{"translate":"luigis_mansion:dialog.chauncey.3"}]}
-execute if entity @s[scores={Dialog=426}] if score #players Totals matches 2.. run tellraw @a[tag=same_room] {"translate":"chat.type.text","with":[{"translate":"luigis_mansion:entity.chauncey","color":"green"},{"translate":"luigis_mansion:dialog.chauncey.3.more"}]}
+execute if entity @s[scores={Dialog=338}] if score #players Totals matches 1 run tellraw @a[tag=same_room] {"type":"translatable","translate":"chat.type.text","with":[{"type":"translatable","translate":"luigis_mansion:entity.chauncey","color":"green"},{"type":"translatable","translate":"luigis_mansion:dialog.chauncey.2"}]}
+execute if entity @s[scores={Dialog=338}] if score #players Totals matches 2.. run tellraw @a[tag=same_room] {"type":"translatable","translate":"chat.type.text","with":[{"type":"translatable","translate":"luigis_mansion:entity.chauncey","color":"green"},{"type":"translatable","translate":"luigis_mansion:dialog.chauncey.2.more"}]}
+execute if entity @s[scores={Dialog=426}] if score #players Totals matches 1 run tellraw @a[tag=same_room] {"type":"translatable","translate":"chat.type.text","with":[{"type":"translatable","translate":"luigis_mansion:entity.chauncey","color":"green"},{"type":"translatable","translate":"luigis_mansion:dialog.chauncey.3"}]}
+execute if entity @s[scores={Dialog=426}] if score #players Totals matches 2.. run tellraw @a[tag=same_room] {"type":"translatable","translate":"chat.type.text","with":[{"type":"translatable","translate":"luigis_mansion:entity.chauncey","color":"green"},{"type":"translatable","translate":"luigis_mansion:dialog.chauncey.3.more"}]}
 tag @s[scores={Dialog=530..641}] add laugh
-execute if entity @s[scores={Dialog=530}] run tellraw @a[tag=same_room] {"translate":"chat.type.text","with":[{"translate":"luigis_mansion:entity.chauncey","color":"green"},{"translate":"luigis_mansion:dialog.chauncey.4"}]}
-execute if entity @s[scores={Dialog=562}] run tellraw @a[tag=same_room] {"translate":"chat.type.text","with":[{"translate":"luigis_mansion:entity.chauncey","color":"green"},{"translate":"luigis_mansion:dialog.chauncey.5"}]}
+execute if entity @s[scores={Dialog=530}] run tellraw @a[tag=same_room] {"type":"translatable","translate":"chat.type.text","with":[{"type":"translatable","translate":"luigis_mansion:entity.chauncey","color":"green"},{"type":"translatable","translate":"luigis_mansion:dialog.chauncey.4"}]}
+execute if entity @s[scores={Dialog=562}] run tellraw @a[tag=same_room] {"type":"translatable","translate":"chat.type.text","with":[{"type":"translatable","translate":"luigis_mansion:entity.chauncey","color":"green"},{"type":"translatable","translate":"luigis_mansion:dialog.chauncey.5"}]}
 tag @s[scores={Dialog=642}] remove laugh
 tag @s[scores={Dialog=642}] add vanish
 execute if entity @s[scores={Dialog=642}] as @a[tag=same_room,tag=!spectator,tag=!looking_at_map] run function luigis_mansion:entities/player/animation/set/none

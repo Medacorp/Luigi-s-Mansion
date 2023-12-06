@@ -1,2 +1,2 @@
 data merge entity @e[x=768.5,y=79,z=-16.5,type=minecraft:item_frame,distance=..0.7,limit=1] {Item:{id:"minecraft:painting",Count:1b,tag:{CustomModelData:72}}}
-data modify block 768 78 -17 front_text.messages[0] set value '{"text":""}'
+data modify block 768 78 -17 front_text.messages[0] set value '{"type":"text","text":""}'

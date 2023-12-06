@@ -1,3 +1,3 @@
-execute if data storage luigis_mansion:data current_state.current_data.boos[{name:"booligan",trap_found:0b}] unless entity @e[tag=booligan_trap,limit=1] run summon minecraft:marker 704 11 -61.0 {CustomName:'{"translate":"luigis_mansion:entity.hidden_boo"}',Tags:["hidden_boo","booligan_trap","trap","new"]}
+execute if data storage luigis_mansion:data current_state.current_data.boos[{name:"booligan",trap_found:0b}] unless entity @e[tag=booligan_trap,limit=1] run summon minecraft:marker 704 11 -61.0 {CustomName:'{"type":"translatable","translate":"luigis_mansion:entity.hidden_boo"}',Tags:["hidden_boo","booligan_trap","trap","new"]}
 scoreboard players set #temp Room 27
 execute positioned 704 11 -61.0 run function luigis_mansion:entities/boo/hiding_in_room/load

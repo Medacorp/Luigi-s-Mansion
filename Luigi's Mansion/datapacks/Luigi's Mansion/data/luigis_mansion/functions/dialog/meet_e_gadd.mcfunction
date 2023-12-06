@@ -162,28 +162,28 @@ execute if entity @s[scores={Dialog=452}] run tag @e[tag=e_gadd,tag=dialog,limit
 execute if entity @s[scores={Dialog=452}] run tag @e[tag=e_gadd,tag=dialog,limit=1] add sitting
 execute if entity @s[scores={Dialog=452}] run scoreboard players set @e[tag=e_gadd_head,tag=dialog,limit=1] AnimationProg 0
 execute if entity @s[scores={Dialog=533}] at @e[tag=e_gadd,tag=dialog,limit=1] run playsound luigis_mansion:entity.e_gadd.complain neutral @a[tag=same_room] ~ ~ ~ 1
-execute if entity @s[scores={Dialog=580}] run tellraw @a[tag=same_room] {"translate":"chat.type.text","with":[{"translate":"luigis_mansion:entity.e_gadd","color":"green"},{"translate":"luigis_mansion:dialog.meet_e_gadd.1"}]}
+execute if entity @s[scores={Dialog=580}] run tellraw @a[tag=same_room] {"type":"translatable","translate":"chat.type.text","with":[{"type":"translatable","translate":"luigis_mansion:entity.e_gadd","color":"green"},{"type":"translatable","translate":"luigis_mansion:dialog.meet_e_gadd.1"}]}
 execute if entity @s[scores={Dialog=580}] at @e[tag=e_gadd,tag=dialog,limit=1] run playsound luigis_mansion:entity.e_gadd.talk.ehdeedee neutral @a[tag=same_room] ~ ~ ~ 1
 execute if entity @s[scores={Dialog=649}] run tag @e[tag=e_gadd,tag=dialog,limit=1] remove sitting
 execute if entity @s[scores={Dialog=649}] run tag @e[tag=e_gadd,tag=dialog,limit=1] add get_up
 execute if entity @s[scores={Dialog=649}] run scoreboard players set @e[tag=e_gadd_head,tag=dialog,limit=1] AnimationProg 0
-execute if entity @s[scores={Dialog=649}] run tellraw @a[tag=same_room] {"translate":"chat.type.text","with":[{"translate":"luigis_mansion:entity.e_gadd","color":"green"},{"translate":"luigis_mansion:dialog.meet_e_gadd.2"}]}
+execute if entity @s[scores={Dialog=649}] run tellraw @a[tag=same_room] {"type":"translatable","translate":"chat.type.text","with":[{"type":"translatable","translate":"luigis_mansion:entity.e_gadd","color":"green"},{"type":"translatable","translate":"luigis_mansion:dialog.meet_e_gadd.2"}]}
 execute if entity @s[scores={Dialog=649}] at @e[tag=e_gadd,tag=dialog,limit=1] run playsound luigis_mansion:entity.e_gadd.talk.hoo_hoo_jeemee_jeemee_kehkeh neutral @a[tag=same_room] ~ ~ ~ 1
 execute if entity @s[scores={Dialog=669..824}] at @e[tag=e_gadd,tag=dialog,limit=1] facing entity @s feet run teleport @e[tag=e_gadd,tag=dialog,limit=1] ~ ~ ~ ~ ~
 execute if entity @s[scores={Dialog=669}] run tag @e[tag=e_gadd,tag=dialog,limit=1] remove get_up
 execute if entity @s[scores={Dialog=669}] run tag @e[tag=e_gadd,tag=dialog,limit=1] add nod
 execute if entity @s[scores={Dialog=669}] run scoreboard players set @e[tag=e_gadd_head,tag=dialog,limit=1] AnimationProg 0
-execute if entity @s[scores={Dialog=765}] run tellraw @a[tag=same_room] {"translate":"chat.type.text","with":[{"translate":"luigis_mansion:entity.e_gadd","color":"green"},{"translate":"luigis_mansion:dialog.meet_e_gadd.3"}]}
+execute if entity @s[scores={Dialog=765}] run tellraw @a[tag=same_room] {"type":"translatable","translate":"chat.type.text","with":[{"type":"translatable","translate":"luigis_mansion:entity.e_gadd","color":"green"},{"type":"translatable","translate":"luigis_mansion:dialog.meet_e_gadd.3"}]}
 execute if entity @s[scores={Dialog=765}] at @e[tag=e_gadd,tag=dialog,limit=1] run playsound luigis_mansion:entity.e_gadd.talk.gay_roon_ehdeedee_odoh_tahmentahkeh neutral @a[tag=same_room] ~ ~ ~ 1
-execute if entity @s[scores={Dialog=860}] if score #players Totals matches 1 run tellraw @a[tag=same_room] {"translate":"chat.type.text","with":[{"translate":"luigis_mansion:entity.e_gadd","color":"green"},{"translate":"luigis_mansion:dialog.meet_e_gadd.4"}]}
-execute if entity @s[scores={Dialog=860}] if score #players Totals matches 2.. run tellraw @a[tag=same_room] {"translate":"chat.type.text","with":[{"translate":"luigis_mansion:entity.e_gadd","color":"green"},{"translate":"luigis_mansion:dialog.meet_e_gadd.4.more"}]}
+execute if entity @s[scores={Dialog=860}] if score #players Totals matches 1 run tellraw @a[tag=same_room] {"type":"translatable","translate":"chat.type.text","with":[{"type":"translatable","translate":"luigis_mansion:entity.e_gadd","color":"green"},{"type":"translatable","translate":"luigis_mansion:dialog.meet_e_gadd.4"}]}
+execute if entity @s[scores={Dialog=860}] if score #players Totals matches 2.. run tellraw @a[tag=same_room] {"type":"translatable","translate":"chat.type.text","with":[{"type":"translatable","translate":"luigis_mansion:entity.e_gadd","color":"green"},{"type":"translatable","translate":"luigis_mansion:dialog.meet_e_gadd.4.more"}]}
 execute if entity @s[scores={Dialog=860}] at @e[tag=e_gadd,tag=dialog,limit=1] run playsound luigis_mansion:entity.e_gadd.talk.ohyah_ohyahmah_hey_hey_oui neutral @a[tag=same_room] ~ ~ ~ 1
 execute if entity @s[scores={Dialog=926}] as @e[tag=e_gadd,tag=dialog,limit=1] at @s run teleport @s ~ ~ ~ facing 724 20 36
-execute if entity @s[scores={Dialog=946}] run tellraw @a[tag=same_room] {"translate":"chat.type.text","with":[{"translate":"luigis_mansion:entity.e_gadd","color":"green"},{"translate":"luigis_mansion:dialog.meet_e_gadd.5"}]}
+execute if entity @s[scores={Dialog=946}] run tellraw @a[tag=same_room] {"type":"translatable","translate":"chat.type.text","with":[{"type":"translatable","translate":"luigis_mansion:entity.e_gadd","color":"green"},{"type":"translatable","translate":"luigis_mansion:dialog.meet_e_gadd.5"}]}
 execute if entity @s[scores={Dialog=946}] at @e[tag=e_gadd,tag=dialog,limit=1] run playsound luigis_mansion:entity.e_gadd.talk.keeyehroo_suu_suku_suku neutral @a[tag=same_room] ~ ~ ~ 1
 execute if entity @s[scores={Dialog=946..1187}] as @e[tag=e_gadd,tag=dialog,limit=1] at @s run teleport @s ~ ~ ~ ~0.309917 ~
-execute if entity @s[scores={Dialog=1045}] if score #players Totals matches 1 run tellraw @a[tag=same_room] {"translate":"chat.type.text","with":[{"translate":"luigis_mansion:entity.e_gadd","color":"green"},{"translate":"luigis_mansion:dialog.meet_e_gadd.6"}]}
-execute if entity @s[scores={Dialog=1045}] if score #players Totals matches 2.. run tellraw @a[tag=same_room] {"translate":"chat.type.text","with":[{"translate":"luigis_mansion:entity.e_gadd","color":"green"},{"translate":"luigis_mansion:dialog.meet_e_gadd.6.more"}]}
+execute if entity @s[scores={Dialog=1045}] if score #players Totals matches 1 run tellraw @a[tag=same_room] {"type":"translatable","translate":"chat.type.text","with":[{"type":"translatable","translate":"luigis_mansion:entity.e_gadd","color":"green"},{"type":"translatable","translate":"luigis_mansion:dialog.meet_e_gadd.6"}]}
+execute if entity @s[scores={Dialog=1045}] if score #players Totals matches 2.. run tellraw @a[tag=same_room] {"type":"translatable","translate":"chat.type.text","with":[{"type":"translatable","translate":"luigis_mansion:entity.e_gadd","color":"green"},{"type":"translatable","translate":"luigis_mansion:dialog.meet_e_gadd.6.more"}]}
 execute if entity @s[scores={Dialog=1045}] at @e[tag=e_gadd,tag=dialog,limit=1] run playsound luigis_mansion:entity.e_gadd.talk.oui_oydohroh_tahmentahkeh neutral @a[tag=same_room] ~ ~ ~ 1
 execute if entity @s[scores={Dialog=1187}] run tag @e[tag=e_gadd,tag=dialog,limit=1] remove nod
 execute if entity @s[scores={Dialog=1187}] run scoreboard players set @e[tag=e_gadd_head,tag=dialog,limit=1] AnimationProg 0
@@ -205,11 +205,11 @@ execute if entity @s[scores={Dialog=1312}] as @e[tag=gold_ghost,tag=dialog] at @
 execute if entity @s[scores={Dialog=1332}] as @e[tag=gold_ghost,tag=dialog] at @s run playsound luigis_mansion:entity.gold_ghost.ambient hostile @a[tag=same_room] ~ ~ ~ 1
 execute if entity @s[scores={Dialog=1262}] run tag @e[tag=e_gadd,tag=dialog,limit=1] add shake
 execute if entity @s[scores={Dialog=1262}] run scoreboard players set @e[tag=e_gadd_head,tag=dialog,limit=1] AnimationProg 0
-execute if entity @s[scores={Dialog=1262}] run tellraw @a[tag=same_room] {"translate":"chat.type.text","with":[{"translate":"luigis_mansion:entity.e_gadd","color":"green"},{"translate":"luigis_mansion:dialog.meet_e_gadd.7"}]}
+execute if entity @s[scores={Dialog=1262}] run tellraw @a[tag=same_room] {"type":"translatable","translate":"chat.type.text","with":[{"type":"translatable","translate":"luigis_mansion:entity.e_gadd","color":"green"},{"type":"translatable","translate":"luigis_mansion:dialog.meet_e_gadd.7"}]}
 execute if entity @s[scores={Dialog=1262}] at @e[tag=e_gadd,tag=dialog,limit=1] run playsound luigis_mansion:entity.e_gadd.talk.tatta_tatta neutral @a[tag=same_room] ~ ~ ~ 1
 execute if entity @s[scores={Dialog=1262..1386}] as @e[tag=gold_ghost,tag=dialog] at @s facing entity @e[tag=e_gadd,tag=dialog,limit=1] feet run teleport @s ^ ^ ^0.025
-execute if entity @s[scores={Dialog=1319}] if score #players Totals matches 1 run tellraw @a[tag=same_room] {"translate":"chat.type.text","with":[{"translate":"luigis_mansion:entity.e_gadd","color":"green"},{"translate":"luigis_mansion:dialog.meet_e_gadd.8"}]}
-execute if entity @s[scores={Dialog=1319}] if score #players Totals matches 2.. run tellraw @a[tag=same_room] {"translate":"chat.type.text","with":[{"translate":"luigis_mansion:entity.e_gadd","color":"green"},{"translate":"luigis_mansion:dialog.meet_e_gadd.8.more"}]}
+execute if entity @s[scores={Dialog=1319}] if score #players Totals matches 1 run tellraw @a[tag=same_room] {"type":"translatable","translate":"chat.type.text","with":[{"type":"translatable","translate":"luigis_mansion:entity.e_gadd","color":"green"},{"type":"translatable","translate":"luigis_mansion:dialog.meet_e_gadd.8"}]}
+execute if entity @s[scores={Dialog=1319}] if score #players Totals matches 2.. run tellraw @a[tag=same_room] {"type":"translatable","translate":"chat.type.text","with":[{"type":"translatable","translate":"luigis_mansion:entity.e_gadd","color":"green"},{"type":"translatable","translate":"luigis_mansion:dialog.meet_e_gadd.8.more"}]}
 execute if entity @s[scores={Dialog=1319}] at @e[tag=e_gadd,tag=dialog,limit=1] run playsound luigis_mansion:entity.e_gadd.talk.tatta_tatta_tatta neutral @a[tag=same_room] ~ ~ ~ 1
 execute if entity @s[scores={Dialog=1387}] run teleport @e[tag=dialog,limit=1] ~ ~-100 ~
 execute if entity @s[scores={Dialog=1388}] run tag @e[tag=dialog] add remove_from_existence

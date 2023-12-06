@@ -8,10 +8,10 @@
         "hidden": false,
         "frame": "goal",
         "title": {
-            "translate": "luigis_beta_mansion:advancements.lab.cleared_original_mansion"
+            "type": "translatable", "translate": "luigis_beta_mansion:advancements.lab.cleared_original_mansion"
         },
         "description": {
-            "translate": "luigis_beta_mansion:advancements.lab.cleared_original_mansion.description"
+            "type": "translatable", "translate": "luigis_beta_mansion:advancements.lab.cleared_original_mansion.description"
         }
     },
 	"parent": "luigis_beta_mansion:lab/unlocked_original_mansion",

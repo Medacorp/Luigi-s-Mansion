@@ -1,4 +1,4 @@
-scoreboard players set * ChangedMansion
+scoreboard players set * ChangedMansion 1
 scoreboard players reset @e ChangedMansion
 function #luigis_mansion:mansion_reset
 function luigis_mansion:data/load

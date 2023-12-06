@@ -5,10 +5,10 @@
 			"nbt": "{Unbreakable:1b,Damage:1,CustomModelData:13,display:{color:38911}}"
         },
         "title": {
-            "translate": "luigis_mansion:advancements.challenges.exterminator"
+            "type": "translatable", "translate": "luigis_mansion:advancements.challenges.exterminator"
         },
         "description": {
-            "translate": "luigis_mansion:advancements.challenges.exterminator.description"
+            "type": "translatable", "translate": "luigis_mansion:advancements.challenges.exterminator.description"
         }
     },
 	"parent": "luigis_mansion:challenges/root",

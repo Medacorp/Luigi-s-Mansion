@@ -85,7 +85,7 @@ execute if entity @a[tag=!same_room,tag=!looking_at_map,scores={Room=1..},limit=
 tag @e[tag=same_room] remove same_room
 tag @s remove already_ticked
 
-tellraw @s[scores={ClickEventCheck=1}] {"translate":"chat.type.text","with":[{"translate":"luigis_mansion:entity.mansion","color":"green"},{"translate":"luigis_mansion:message.format_explanation.check"}]}
+tellraw @s[scores={ClickEventCheck=1}] {"type":"translatable","translate":"chat.type.text","with":[{"type":"translatable","translate":"luigis_mansion:entity.mansion","color":"green"},{"type":"translatable","translate":"luigis_mansion:message.format_explanation.check"}]}
 scoreboard players set @s ClickEventCheck 0
 scoreboard players enable @s ClickEventCheck
 

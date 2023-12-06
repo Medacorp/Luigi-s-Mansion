@@ -1,2 +1,2 @@
-summon minecraft:item_frame 693 30 83 {Facing:5b,Silent:1b,Invulnerable:1b,Item:{id:"minecraft:filled_map",Count:1b,tag:{map:254}},CustomName:'{"translate":"luigis_mansion:furniture.painting"}',Invisible:1b,Fixed:1b}
+summon minecraft:item_frame 693 30 83 {Facing:5b,Silent:1b,Invulnerable:1b,Item:{id:"minecraft:filled_map",Count:1b,tag:{map:254}},CustomName:'{"type":"translatable","translate":"luigis_mansion:furniture.painting"}',Invisible:1b,Fixed:1b}
 execute if data storage luigis_mansion:data current_state.current_data.rooms.the_artists_studio{cleared:1b} run data modify entity @e[x=693.5,y=30,z=83.5,distance=..0.7,limit=1] Item.tag.map set value 253

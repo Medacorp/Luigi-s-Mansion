@@ -1,4 +1,4 @@
-tellraw @a {"text":"[Server] Reloaded"}
+tellraw @a {"type":"text","text":"[Server] Reloaded"}
 
 scoreboard players add * Offline 1
 scoreboard players reset @e Offline

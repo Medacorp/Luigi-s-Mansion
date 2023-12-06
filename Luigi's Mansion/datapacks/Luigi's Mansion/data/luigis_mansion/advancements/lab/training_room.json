@@ -6,10 +6,10 @@
         },
         "show_toast": false,
         "title": {
-            "translate": "luigis_mansion:location.training_room"
+            "type": "translatable", "translate": "luigis_mansion:location.training_room"
         },
         "description": {
-            "translate": "luigis_mansion:advancements.lab.training_room.description"
+            "type": "translatable", "translate": "luigis_mansion:advancements.lab.training_room.description"
         }
     },
 	"parent": "luigis_mansion:lab/lab",

@@ -1,4 +1,4 @@
-scoreboard players set * ChangedMansion
+scoreboard players set * ChangedMansion 1
 scoreboard players reset @e ChangedMansion
 function #luigis_mansion:mansion_reset
 data modify storage luigis_mansion:data current_state.current_data set value {nothing_loaded:1b}

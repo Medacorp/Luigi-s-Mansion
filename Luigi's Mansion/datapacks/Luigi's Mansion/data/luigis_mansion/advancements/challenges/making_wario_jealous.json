@@ -5,10 +5,10 @@
 			"nbt": "{CustomModelData:25}"
         },
         "title": {
-            "translate": "luigis_mansion:advancements.challenges.making_wario_jealous"
+            "type": "translatable", "translate": "luigis_mansion:advancements.challenges.making_wario_jealous"
         },
         "description": {
-            "translate": "luigis_mansion:advancements.challenges.making_wario_jealous.description"
+            "type": "translatable", "translate": "luigis_mansion:advancements.challenges.making_wario_jealous.description"
         }
     },
 	"parent": "luigis_mansion:challenges/root",

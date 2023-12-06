@@ -5,10 +5,10 @@
         },
         "show_toast": false,
         "title": {
-            "translate": "luigis_mansion:location.underground_lab"
+            "type": "translatable", "translate": "luigis_mansion:location.underground_lab"
         },
         "description": {
-            "translate": "luigis_mansion:advancements.lab.underground_lab.description"
+            "type": "translatable", "translate": "luigis_mansion:advancements.lab.underground_lab.description"
         }
     },
 	"parent": "luigis_mansion:lab/lab",

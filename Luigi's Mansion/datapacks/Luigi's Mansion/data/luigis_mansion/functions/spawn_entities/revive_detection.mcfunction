@@ -1,3 +1,3 @@
-summon minecraft:villager ~ ~ ~ {CustomName:'{"translate":"luigis_mansion:entity.revive_detection"}',NoAI:1b,CustomNameVisible:0b,Invulnerable:1b,Silent:1b,Offers:{},HandDropChances:[1.0f,1.0f],active_effects:[{id:"minecraft:invisibility",ambient:1b,duration:-1,amplifier:0b,show_particles:0b}],ArmorDropChances:[0.0f,0.0f,0.0f,0.0f],PersistenceRequired:1b,LeftHanded:0b,Tags:["revive_detection","this_entity"]}
+summon minecraft:villager ~ ~ ~ {CustomName:'{"type":"translatable","translate":"luigis_mansion:entity.revive_detection"}',NoAI:1b,CustomNameVisible:0b,Invulnerable:1b,Silent:1b,Offers:{},HandDropChances:[1.0f,1.0f],active_effects:[{id:"minecraft:invisibility",ambient:1b,duration:-1,amplifier:0b,show_particles:0b}],ArmorDropChances:[0.0f,0.0f,0.0f,0.0f],PersistenceRequired:1b,LeftHanded:0b,Tags:["revive_detection","this_entity"]}
 scoreboard players operation @e[tag=this_entity,tag=revive_detection,limit=1] ID = @s ID
 tag @e[tag=this_entity] remove this_entity

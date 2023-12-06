@@ -1,4 +1,4 @@
-execute unless entity @s[scores={Room=28}] run title @s title {"translate":"luigis_mansion:location.boneyard"}
+execute unless entity @s[scores={Room=28}] run title @s title {"type":"translatable","translate":"luigis_mansion:location.boneyard"}
 scoreboard players set @s Room 28
 scoreboard players set @s PrevRoom 28
 

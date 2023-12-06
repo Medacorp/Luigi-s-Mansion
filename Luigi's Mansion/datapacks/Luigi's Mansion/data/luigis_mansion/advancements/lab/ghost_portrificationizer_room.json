@@ -5,10 +5,10 @@
         },
         "show_toast": false,
         "title": {
-            "translate": "luigis_mansion:location.ghost_portrificationizer_room"
+            "type": "translatable", "translate": "luigis_mansion:location.ghost_portrificationizer_room"
         },
         "description": {
-            "translate": "luigis_mansion:advancements.lab.ghost_portrificationizer_room.description"
+            "type": "translatable", "translate": "luigis_mansion:advancements.lab.ghost_portrificationizer_room.description"
         }
     },
 	"parent": "luigis_mansion:lab/lab",

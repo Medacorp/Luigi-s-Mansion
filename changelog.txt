@@ -1,3 +1,8 @@
+2.3.9:
+* Updated to 1.20.3
+* Applied new JSON text component optimizating fields "type" and "source"
+
+
 2.3.8:
 * Updated to 1.20.2
 * Added few optimizations using macros

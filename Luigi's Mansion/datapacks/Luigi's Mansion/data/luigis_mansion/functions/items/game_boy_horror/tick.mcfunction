@@ -7,7 +7,7 @@ execute if entity @s[tag=looking_at_map] run function luigis_mansion:items/game_
 execute if entity @s[scores={UseItem=1..},tag=game_boy_horror_selected,tag=looking_at_map] run function luigis_mansion:items/game_boy_horror/map/close
 execute if entity @s[scores={UseItem=1..,KnockbackType=0},tag=open_gbh_menu,tag=game_boy_horror_selected,tag=!looking_at_map,tag=!scanning] unless entity @s[scores={ScareType=1..}] unless entity @s[scores={IdleTime=..-1},tag=!idle] run function luigis_mansion:items/game_boy_horror/double_use
 execute if entity @s[scores={UseItem=1..,KnockbackType=0},tag=!open_gbh_menu,tag=game_boy_horror_selected,tag=!looking_at_map,tag=!scanning] unless entity @s[scores={ScareType=1..}] unless entity @s[scores={IdleTime=..-1},tag=!idle] run function luigis_mansion:items/game_boy_horror/choice
-tellraw @s[scores={GBHChoice=1},tag=show_credits] {"translate":"chat.type.text","with":[{"translate":"luigis_mansion:entity.mansion","color":"green"},{"translate":"luigis_mansion:message.use_game_boy_horror_during_credits"}]}
+tellraw @s[scores={GBHChoice=1},tag=show_credits] {"type":"translatable","translate":"chat.type.text","with":[{"type":"translatable","translate":"luigis_mansion:entity.mansion","color":"green"},{"type":"translatable","translate":"luigis_mansion:message.use_game_boy_horror_during_credits"}]}
 scoreboard players enable @s[scores={GBHChoice=1},tag=show_credits] GBHChoice
 scoreboard players set @s[scores={GBHChoice=1},tag=show_credits] GBHChoice 0
 execute if entity @s[scores={GBHChoice=1}] run function luigis_mansion:items/game_boy_horror/map/open
@@ -28,7 +28,7 @@ execute unless entity @s[scores={KnockbackType=0},tag=game_boy_horror_selected,t
 execute if entity @s[scores={ScareType=1..}] run trigger GBHChoice set 0
 execute if entity @s[scores={IdleTime=..-1},tag=!idle] run trigger GBHChoice set 0
 execute unless entity @s[scores={GBHCall=0..}] run scoreboard players set @s GBHCall 0
-execute if entity @s[scores={GBHCall=1..,GBHWait=20}] run tellraw @a[tag=same_room] {"translate":"chat.type.text","with":[{"selector":"@s","color":"green"},{"translate":"luigis_mansion:message.player.ringing_game_boy_horror"}]}
+execute if entity @s[scores={GBHCall=1..,GBHWait=20}] run tellraw @a[tag=same_room] {"type":"translatable","translate":"chat.type.text","with":[{"type":"selector","selector":"@s","color":"green"},{"type":"translatable","translate":"luigis_mansion:message.player.ringing_game_boy_horror"}]}
 execute if entity @s[scores={GBHCall=1..,GBHWait=20..},tag=!high_health_idle,tag=!looking_at_map] run function luigis_mansion:entities/player/animation/set/high_health_idle_no_sound
 execute if entity @s[scores={GBHCall=1..}] run function luigis_mansion:other/music/set/game_boy_horror_calling
 scoreboard players add @s[scores={GBHCall=1..},tag=!game_boy_horror_selected] GBHWait 1

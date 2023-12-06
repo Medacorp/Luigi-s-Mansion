@@ -9,7 +9,7 @@ scoreboard players add @s[scores={PathStep=3..43}] PathStep 1
 scoreboard players set @s[tag=burning,scores={PathStep=1..2}] PathStep 3
 scoreboard players set @s[scores={PathStep=3}] AnimationProg 0
 tag @s[scores={PathStep=3}] add look_around
-execute if entity @s[scores={PathStep=3}] unless data storage luigis_mansion:data current_state.current_data.technical_data{shivers_spoke:1b} run tellraw @a[tag=same_room] {"translate":"chat.type.text","with":[{"translate":"luigis_mansion:entity.shivers","color":"green"},{"translate":"luigis_mansion:message.shivers.fire"}]}
+execute if entity @s[scores={PathStep=3}] unless data storage luigis_mansion:data current_state.current_data.technical_data{shivers_spoke:1b} run tellraw @a[tag=same_room] {"type":"translatable","translate":"chat.type.text","with":[{"type":"translatable","translate":"luigis_mansion:entity.shivers","color":"green"},{"type":"translatable","translate":"luigis_mansion:message.shivers.fire"}]}
 execute if entity @s[scores={PathStep=3}] run data modify storage luigis_mansion:data current_state.current_data.technical_data merge value {shivers_spoke:1b}
 execute if entity @s[scores={PathStep=3}] run playsound luigis_mansion:music.solve_puzzle music @a[tag=same_room] ~ ~ ~ 10000 
 execute if entity @s[scores={PathStep=3}] as @a[tag=same_room,scores={Music=..30}] unless entity @s[scores={HealthMusic=1..}] run scoreboard players set @s Music 30

@@ -5,10 +5,10 @@
 			"nbt": "{CustomModelData:26}"
         },
         "title": {
-            "translate": "luigis_mansion:advancements.challenges.scrooge_mcduck_it_up"
+            "type": "translatable", "translate": "luigis_mansion:advancements.challenges.scrooge_mcduck_it_up"
         },
         "description": {
-            "translate": "luigis_mansion:advancements.challenges.scrooge_mcduck_it_up.description"
+            "type": "translatable", "translate": "luigis_mansion:advancements.challenges.scrooge_mcduck_it_up.description"
         }
     },
 	"parent": "luigis_mansion:challenges/making_wario_jealous",

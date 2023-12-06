@@ -1,1 +1,1 @@
-summon minecraft:item_frame 741 21 48 {Facing:2b,Silent:1b,Invulnerable:1b,Item:{id:"minecraft:filled_map",Count:1b,tag:{map:222}},CustomName:'{"translate":"luigis_mansion:furniture.painting"}',Invisible:1b,Fixed:1b}
+summon minecraft:item_frame 741 21 48 {Facing:2b,Silent:1b,Invulnerable:1b,Item:{id:"minecraft:filled_map",Count:1b,tag:{map:222}},CustomName:'{"type":"translatable","translate":"luigis_mansion:furniture.painting"}',Invisible:1b,Fixed:1b}

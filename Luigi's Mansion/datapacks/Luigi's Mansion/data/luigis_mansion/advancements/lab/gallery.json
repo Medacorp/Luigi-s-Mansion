@@ -5,10 +5,10 @@
         },
         "show_toast": false,
         "title": {
-            "translate": "luigis_mansion:location.gallery"
+            "type": "translatable", "translate": "luigis_mansion:location.gallery"
         },
         "description": {
-            "translate": "luigis_mansion:advancements.lab.gallery.description"
+            "type": "translatable", "translate": "luigis_mansion:advancements.lab.gallery.description"
         }
     },
 	"parent": "luigis_mansion:lab/lab",

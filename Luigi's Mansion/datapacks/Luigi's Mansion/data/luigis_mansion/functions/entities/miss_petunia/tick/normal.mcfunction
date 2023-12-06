@@ -20,7 +20,7 @@ execute if entity @s[scores={Dialog=2..,VulnerableTime=0},tag=frozen,tag=!vanish
 scoreboard players set @s[scores={Dialog=2..},tag=frozen,tag=!vanish] VulnerableTime 60
 scoreboard players set @s[scores={Dialog=2..60},tag=frozen,tag=!vanish] Dialog 61
 execute if entity @s[scores={Dialog=61,VulnerableTime=1..}] facing entity @e[tag=same_room,tag=!spectator,sort=nearest,limit=1] feet run teleport @s ~ ~ ~ ~ ~
-execute if entity @s[scores={Dialog=61},tag=frozen] unless data storage luigis_mansion:data current_state.current_data.technical_data{miss_petunia_spoke:1b} run tellraw @a[tag=same_room] {"translate":"chat.type.text","with":[{"translate":"luigis_mansion:entity.miss_petunia","color":"green"},{"translate":"luigis_mansion:message.miss_petunia.freeze"}]}
+execute if entity @s[scores={Dialog=61},tag=frozen] unless data storage luigis_mansion:data current_state.current_data.technical_data{miss_petunia_spoke:1b} run tellraw @a[tag=same_room] {"type":"translatable","translate":"chat.type.text","with":[{"type":"translatable","translate":"luigis_mansion:entity.miss_petunia","color":"green"},{"type":"translatable","translate":"luigis_mansion:message.miss_petunia.freeze"}]}
 execute if entity @s[scores={Dialog=61},tag=frozen] run data modify storage luigis_mansion:data current_state.current_data.technical_data merge value {miss_petunia_spoke:1b}
 tag @s remove frozen
 
