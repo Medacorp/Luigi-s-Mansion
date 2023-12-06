@@ -22,7 +22,7 @@ scoreboard players reset #temp HomeX
 scoreboard players reset #temp HomeZ
 scoreboard players reset #temp ActionTime
 
-execute at @e[tag=temp,limit=1] run summon minecraft:armor_stand ~ ~ ~ {CustomName:'{"translate":"luigis_mansion:entity.reflection"}',Tags:["reflection","new"],Marker:1b,NoGravity:1b}
+execute at @e[tag=temp,limit=1] run summon minecraft:armor_stand ~ ~ ~ {CustomName:'{"type":"translatable","translate":"luigis_mansion:entity.reflection"}',Tags:["reflection","new"],Marker:1b,NoGravity:1b}
 kill @e[tag=temp,limit=1]
 execute store result score @e[tag=new,limit=1] Room run data get storage luigis_mansion:data mirror.room
 execute store result score @e[tag=new,limit=1] ReflectionNr run data get storage luigis_mansion:data mirror.id

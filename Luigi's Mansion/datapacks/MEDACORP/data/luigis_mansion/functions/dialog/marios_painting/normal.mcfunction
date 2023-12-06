@@ -7,8 +7,8 @@ execute if entity @s[scores={Dialog=1}] run stopsound @a music
 execute if entity @s[scores={Dialog=1}] run scoreboard players set @a Music 480
 execute if entity @s[scores={Dialog=1..}] positioned 648 93 -10 run function 3ds_remake:entities/player/set_position
 execute if entity @s[scores={Dialog=2}] run playsound luigis_mansion:music.marios_painting music @a ~ ~ ~ 1000
-execute if entity @s[scores={Dialog=340}] run tellraw @a[tag=same_room] {"translate":"chat.type.text","with":[{"translate":"luigis_mansion:entity.mario","color":"green"},{"translate":"luigis_mansion:dialog.marios_painting.1"}]}
-execute if entity @s[scores={Dialog=420}] run tellraw @a[tag=same_room] {"translate":"chat.type.text","with":[{"selector":"@s","color":"green"},{"translate":"luigis_mansion:dialog.marios_painting.2"}]}
+execute if entity @s[scores={Dialog=340}] run tellraw @a[tag=same_room] {"type":"translatable","translate":"chat.type.text","with":[{"type":"translatable","translate":"luigis_mansion:entity.mario","color":"green"},{"type":"translatable","translate":"luigis_mansion:dialog.marios_painting.1"}]}
+execute if entity @s[scores={Dialog=420}] run tellraw @a[tag=same_room] {"type":"translatable","translate":"chat.type.text","with":[{"type":"selector","selector":"@s","color":"green"},{"type":"translatable","translate":"luigis_mansion:dialog.marios_painting.2"}]}
 execute if entity @s[scores={Dialog=480}] as @a[scores={MusicType=-1}] run function luigis_mansion:other/music/set/silence
 execute if entity @s[scores={Dialog=480},tag=!looking_at_map] run function luigis_mansion:entities/player/animation/set/none
 tag @s[scores={Dialog=480}] remove marios_painting

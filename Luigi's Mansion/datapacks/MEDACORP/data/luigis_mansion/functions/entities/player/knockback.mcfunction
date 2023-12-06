@@ -116,7 +116,7 @@ execute at @s[scores={KnockbackType=7}] store result entity @e[tag=home,limit=1]
 execute at @s[scores={KnockbackTime=10..,KnockbackType=7}] unless entity @e[tag=home,limit=1,distance=..0.1] run scoreboard players remove @s KnockbackTime 2
 execute at @s[scores={KnockbackType=7}] at @e[tag=home,limit=1] run tp @s ~ 0 ~ ~ ~
 execute at @s[scores={KnockbackType=7}] at @e[tag=home,limit=1] run tp @s ~ ~ ~ ~ ~
-execute at @s[scores={KnockbackTime=80,KnockbackType=7}] anchored eyes run summon minecraft:armor_stand ^ ^ ^ {CustomName:'{"translate":"luigis_mansion:entity.luigi"}',Tags:["luigi_ice"],Invisible:1b,Marker:1b,Pose:{Head:[0.0f,0.0f,0.01f]},ArmorItems:[{},{},{},{id:"minecraft:diamond_pickaxe",Count:1b,tag:{Unbreakable:1b,Damage:4,CustomModelData:47}}]}
+execute at @s[scores={KnockbackTime=80,KnockbackType=7}] anchored eyes run summon minecraft:armor_stand ^ ^ ^ {CustomName:'{"type":"translatable","translate":"luigis_mansion:entity.luigi"}',Tags:["luigi_ice"],Invisible:1b,Marker:1b,Pose:{Head:[0.0f,0.0f,0.01f]},ArmorItems:[{},{},{},{id:"minecraft:diamond_pickaxe",Count:1b,tag:{Unbreakable:1b,Damage:4,CustomModelData:47}}]}
 execute at @s[scores={KnockbackTime=8..10,KnockbackType=7}] anchored eyes positioned ^ ^ ^ run tag @e[tag=luigi_ice,distance=..0.1,limit=1] add remove_from_existence
 execute at @s[scores={KnockbackTime=8..10,KnockbackType=7}] anchored eyes run particle minecraft:item minecraft:diamond_pickaxe{Unbreakable:1b,Damage:4,CustomModelData:47} ^ ^ ^ 0.3 0.3 0.3 0 50 force @a[tag=same_room]
 scoreboard players set @s[scores={KnockbackTime=10..,KnockbackType=7,Invulnerable=6..}] Invulnerable 5

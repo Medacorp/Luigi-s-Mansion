@@ -8,5 +8,5 @@ execute at @s[scores={ActionTime=20}] run teleport @s ~ ~-4.8 ~
 execute if entity @s[scores={ActionTime=20}] if score #mirrored Selected matches 0 run data modify entity @s HandItems[1].tag.CustomModelData set value 9
 execute if entity @s[scores={ActionTime=20}] if score #mirrored Selected matches 1 run data modify entity @s HandItems[0].tag.CustomModelData set value 9
 scoreboard players set @s[scores={ActionTime=1}] AnimationProgress 0
-execute at @s run function luigis_mansion:animations/garbage_can_ghost/vanish
+execute at @s run function luigis_mansion:old_animations/garbage_can_ghost/vanish
 tag @s[scores={ActionTime=20}] add disappear

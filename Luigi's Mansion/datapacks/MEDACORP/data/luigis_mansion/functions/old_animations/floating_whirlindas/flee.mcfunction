@@ -1,0 +1,2 @@
+function luigis_mansion:old_animations/floating_whirlindas/male/flee
+execute as @e[tag=this_model,tag=floating_whirlindas_female,tag=main,limit=1] at @s run function luigis_mansion:old_animations/floating_whirlindas/female/flee

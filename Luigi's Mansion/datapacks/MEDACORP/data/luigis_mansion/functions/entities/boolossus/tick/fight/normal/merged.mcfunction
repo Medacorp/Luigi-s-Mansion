@@ -12,7 +12,7 @@ execute at @s[tag=!fleeing,tag=intro_done] facing entity @e[tag=same_room,tag=!s
 execute unless entity @s[scores={Wave=1..}] store result score @s HomeRotation run data get entity @s Rotation[0]
 execute unless entity @s[scores={Wave=1..}] run scoreboard players set @s[tag=intro_done] Wave 1
 
-execute at @s[tag=!fleeing,tag=!laugh] run function luigis_mansion:animations/boo/idle
+execute at @s[tag=!fleeing,tag=!laugh] run function luigis_mansion:old_animations/boo/idle
 
 execute at @s[tag=intro_done,tag=!fleeing,tag=!attack,tag=!laugh,tag=move_up] rotated ~ 0 run function luigis_mansion:entities/boolossus/move_up
 execute at @s[tag=intro_done,tag=!fleeing,tag=!attack,tag=!laugh,tag=!move_up] rotated ~ 0 run function luigis_mansion:entities/boolossus/move_down

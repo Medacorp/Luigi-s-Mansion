@@ -6,7 +6,7 @@ execute if score #the_twins_room Time matches 40 as @e[tag=hide_and_seek_box,tag
 execute if score #the_twins_room Time matches 40 run tag @e[tag=hide_and_seek_box,scores={Room=49}] add open
 execute if score #the_twins_room Time matches 40 at @e[tag=ghost,type=minecraft:marker,scores={Room=49}] run function luigis_mansion:room/normal/the_twins_room/right_box
 execute if score #the_twins_room Time matches 40 run tag @e[tag=ghost,type=minecraft:marker,scores={Room=49}] add remove_from_existence
-execute if score #the_twins_room Time matches 80 run tellraw @a[scores={Room=49}] {"translate":"chat.type.text","with":[{"translate":"luigis_mansion:entity.henry","color":"green"},{"translate":"luigis_mansion:dialog.twins.game.0"}]}
+execute if score #the_twins_room Time matches 80 run tellraw @a[scores={Room=49}] {"type":"translatable","translate":"chat.type.text","with":[{"type":"translatable","translate":"luigis_mansion:entity.henry","color":"green"},{"type":"translatable","translate":"luigis_mansion:dialog.twins.game.0"}]}
 execute if score #the_twins_room Time matches 80 run stopsound @a[scores={Room=49},gamemode=!spectator] music
 execute if score #the_twins_room Time matches 80 run playsound luigis_mansion:music.mini_game_failure music @a[scores={Room=49},gamemode=!spectator] ~ ~ ~ 1000
 execute if score #the_twins_room Time matches 80 run scoreboard players set @a[scores={Room=49},gamemode=!spectator] Music 40

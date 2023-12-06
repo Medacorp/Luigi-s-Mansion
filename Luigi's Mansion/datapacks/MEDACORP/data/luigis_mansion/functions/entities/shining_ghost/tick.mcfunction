@@ -7,7 +7,7 @@ execute if entity @s[tag=!spit] run scoreboard players set #temp Move 5
 execute if entity @s[tag=spit] run function luigis_mansion:entities/shining_ghost/spit
 execute if entity @s[tag=spit,tag=!played_spit_sound] run playsound luigis_mansion:entity.shining_ghost.spit hostile @a[tag=same_room] ~ ~ ~ 1
 tag @s[tag=spit] add played_spit_sound
-execute if entity @s[tag=spit] at @s run function luigis_mansion:animations/shining_ghost/spit
+execute if entity @s[tag=spit] at @s run function luigis_mansion:old_animations/shining_ghost/spit
 execute if entity @s[tag=!in_vacuum,tag=!spit] run function luigis_mansion:entities/shining_ghost/move
 execute if entity @s[tag=collision,tag=spit] run function luigis_mansion:entities/shining_ghost/capture
 execute if entity @s[tag=collision,tag=spit] run function luigis_mansion:other/drop_loot

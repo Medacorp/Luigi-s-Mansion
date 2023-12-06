@@ -1,5 +1,5 @@
 function luigis_mansion:other/music/set/foyer
-title @s[tag=!seen_room_name] title {"translate":"luigis_mansion:location.foyer"}
+title @s[tag=!seen_room_name] title {"type":"translatable","translate":"luigis_mansion:location.foyer"}
 tag @s add seen_room_name
 
 execute if data storage luigis_mansion:data current_state.current_data.rooms.foyer{seen:0b} unless entity @s[gamemode=spectator] run function 3ds_remake:room/hidden/foyer/set_seen

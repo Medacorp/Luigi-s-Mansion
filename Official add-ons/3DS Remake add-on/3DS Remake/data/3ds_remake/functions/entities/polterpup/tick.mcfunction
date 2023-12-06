@@ -4,7 +4,7 @@ execute as @e[tag=model_piece,scores={GhostNr=-2147483648..}] if score @s GhostN
 execute at @s run teleport @s ~ ~0.6 ~
 execute as @e[tag=this_model] at @s run teleport @s ~ ~0.6 ~
 
-execute at @s run function 3ds_remake:animations/polterpup/save_luigi
+execute at @s run function 3ds_remake:old_animations/polterpup/save_luigi
 
 execute at @s run teleport @s ~ ~-0.6 ~
 execute as @e[tag=this_model] at @s run teleport @s ~ ~-0.6 ~

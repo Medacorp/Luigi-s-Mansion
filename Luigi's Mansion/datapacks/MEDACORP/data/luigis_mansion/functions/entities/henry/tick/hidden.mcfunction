@@ -3,6 +3,6 @@ execute if entity @s[tag=!no_ai,tag=!hide_and_seek] run function luigis_mansion:
 execute if entity @s[tag=hide_and_seek] run function luigis_mansion:entities/henry/hide_and_seek/hidden
 
 execute at @s[tag=appear] run function luigis_mansion:entities/henry/appear
-execute at @s[tag=nod] run function luigis_mansion:animations/henry/nod
-execute at @s[tag=shake] run function luigis_mansion:animations/henry/shake
-execute at @s[tag=!nod,tag=!shake,tag=!appear,tag=!vanish] unless entity @s[tag=!hide_and_seek,tag=!no_ai] run function luigis_mansion:animations/henry/idle
+execute at @s[tag=nod] run function luigis_mansion:old_animations/henry/nod
+execute at @s[tag=shake] run function luigis_mansion:old_animations/henry/shake
+execute at @s[tag=!nod,tag=!shake,tag=!appear,tag=!vanish] unless entity @s[tag=!hide_and_seek,tag=!no_ai] run function luigis_mansion:old_animations/henry/idle

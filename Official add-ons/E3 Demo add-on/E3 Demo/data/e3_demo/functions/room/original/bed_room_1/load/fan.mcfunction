@@ -1,2 +1,2 @@
-data modify storage luigis_mansion:data furniture set value {shake_animation:["interact","vacuum"],no_visual_shake:1b,scan_message:'{"translate":"luigis_mansion:message.player.scan_furniture.21"}'}
+data modify storage luigis_mansion:data furniture set value {shake_animation:["interact","vacuum"],no_visual_shake:1b,scan_message:'{"type":"translatable","translate":"luigis_mansion:message.player.scan_furniture.21"}'}
 execute positioned 691.0 117 47.0 rotated -90 0 run function luigis_mansion:spawn_furniture/fan/counterclockwise

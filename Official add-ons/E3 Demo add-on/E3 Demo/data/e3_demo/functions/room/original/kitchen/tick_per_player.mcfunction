@@ -1,6 +1,6 @@
 execute if data storage luigis_mansion:data current_state.current_data.rooms.kitchen{cleared:1b} run function e3_demo:other/music/set/light
 execute unless data storage luigis_mansion:data current_state.current_data.rooms.kitchen{cleared:1b} run function e3_demo:other/music/set/room
-title @s[tag=!seen_room_name] title {"translate":"luigis_mansion:location.kitchen"}
+title @s[tag=!seen_room_name] title {"type":"translatable","translate":"luigis_mansion:location.kitchen"}
 tag @s add seen_room_name
 
 execute if data storage luigis_mansion:data current_state.current_data.rooms.kitchen{seen:0b} unless entity @s[gamemode=spectator] run function e3_demo:room/original/kitchen/set_seen

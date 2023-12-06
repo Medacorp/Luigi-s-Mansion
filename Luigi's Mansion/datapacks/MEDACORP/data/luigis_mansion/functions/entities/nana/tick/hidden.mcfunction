@@ -37,8 +37,8 @@ execute if entity @s[scores={Dialog=25}] run tag @e[tag=wool] add dead
 execute if entity @s[scores={Dialog=55}] run function luigis_mansion:entities/ghost/turn_invisible
 tag @s[scores={Dialog=65}] add remove_from_existence
 
-execute if entity @s[scores={Dialog=3..11}] run function luigis_mansion:animations/nana/scream
-execute if entity @s[scores={Dialog=13..21}] run function luigis_mansion:animations/nana/scream
-execute if entity @s[scores={Dialog=23..24},tag=!vanish] run function luigis_mansion:animations/nana/complain
-execute if entity @s[scores={Dialog=25..}] run function luigis_mansion:animations/nana/laugh
-execute unless entity @s[scores={Dialog=3..11}] unless entity @s[scores={Dialog=13..21}] unless entity @s[scores={Dialog=23..}] run function luigis_mansion:animations/nana/idle
+execute if entity @s[scores={Dialog=3..11}] run function luigis_mansion:old_animations/nana/scream
+execute if entity @s[scores={Dialog=13..21}] run function luigis_mansion:old_animations/nana/scream
+execute if entity @s[scores={Dialog=23..24},tag=!vanish] run function luigis_mansion:old_animations/nana/complain
+execute if entity @s[scores={Dialog=25..}] run function luigis_mansion:old_animations/nana/laugh
+execute unless entity @s[scores={Dialog=3..11}] unless entity @s[scores={Dialog=13..21}] unless entity @s[scores={Dialog=23..}] run function luigis_mansion:old_animations/nana/idle

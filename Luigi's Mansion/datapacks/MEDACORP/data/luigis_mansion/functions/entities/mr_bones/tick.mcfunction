@@ -29,12 +29,12 @@ execute if entity @s[tag=!element_hurt,tag=!fleeing,tag=collided,tag=!vanish,tag
 
 execute at @s[tag=vanish] run function luigis_mansion:entities/mr_bones/vanish
 execute at @s[tag=appear] run function luigis_mansion:entities/mr_bones/appear
-execute at @s[tag=!hurt,tag=!element_hurt,tag=!fleeing,tag=!attack,tag=!collided,tag=!vanish,tag=!laugh,tag=!complain,tag=!appear,scores={StunTime=0}] run function luigis_mansion:animations/mr_bones/haunt
-execute at @s[tag=fleeing,tag=!second_flee_state] run function luigis_mansion:animations/mr_bones/flee
+execute at @s[tag=!hurt,tag=!element_hurt,tag=!fleeing,tag=!attack,tag=!collided,tag=!vanish,tag=!laugh,tag=!complain,tag=!appear,scores={StunTime=0}] run function luigis_mansion:old_animations/mr_bones/haunt
+execute at @s[tag=fleeing,tag=!second_flee_state] run function luigis_mansion:old_animations/mr_bones/flee
 execute at @s[tag=fleeing,tag=second_flee_state] run function luigis_mansion:entities/mr_bones/second_flee_state
-execute at @s[tag=!fleeing,tag=hurt] run function luigis_mansion:animations/mr_bones/hurt
+execute at @s[tag=!fleeing,tag=hurt] run function luigis_mansion:old_animations/mr_bones/hurt
 data merge entity @s[tag=!fleeing,tag=hurt] {HandItems:[{id:"minecraft:diamond_pickaxe",Count:1b,tag:{Unbreakable:1b,Damage:2,CustomModelData:96}},{id:"minecraft:diamond_pickaxe",Count:1b,tag:{Unbreakable:1b,Damage:3,CustomModelData:96}}]}
-execute at @s[tag=!hurt,tag=element_hurt] run function luigis_mansion:animations/mr_bones/hurt
+execute at @s[tag=!hurt,tag=element_hurt] run function luigis_mansion:old_animations/mr_bones/hurt
 
 scoreboard players reset #temp GhostNr
 tag @e[tag=this_model] add found_owner

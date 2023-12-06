@@ -5,6 +5,6 @@ tag @s[tag=vanish,scores={Room=74}] add disappear
 tag @s[tag=vanish,scores={Room=74}] remove vanish
 
 execute at @s[tag=appear] run function luigis_mansion:entities/bogmire/appear
-execute at @s[tag=shadow_hit] run function luigis_mansion:animations/bogmire/hurt
-execute at @s[tag=vanish_flee] run function luigis_mansion:animations/bogmire/flee
-execute at @s[tag=!appear,tag=!shadow_hit,tag=!vanish_flee] run function luigis_mansion:animations/bogmire/idle
+execute at @s[tag=shadow_hit] run function luigis_mansion:old_animations/bogmire/hurt
+execute at @s[tag=vanish_flee] run function luigis_mansion:old_animations/bogmire/flee
+execute at @s[tag=!appear,tag=!shadow_hit,tag=!vanish_flee] run function luigis_mansion:old_animations/bogmire/idle

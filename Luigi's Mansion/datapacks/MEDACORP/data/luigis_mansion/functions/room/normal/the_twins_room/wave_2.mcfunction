@@ -1,5 +1,5 @@
-data modify storage luigis_mansion:data entity set value {tags:[no_ai],scan_message:{sender:"me",message:'{"translate":"luigis_mansion:message.orville.scan"}'}}
+data modify storage luigis_mansion:data entity set value {tags:[no_ai],scan_message:{sender:"me",message:'{"type":"translatable","translate":"luigis_mansion:message.orville.scan"}'}}
 execute positioned 741 20 40 run function luigis_mansion:spawn_entities/portrait_ghost/orville
-data modify storage luigis_mansion:data entity set value {tags:[no_ai],scan_message:{sender:"me",message:'{"translate":"luigis_mansion:message.henry.scan"}'}}
+data modify storage luigis_mansion:data entity set value {tags:[no_ai],scan_message:{sender:"me",message:'{"type":"translatable","translate":"luigis_mansion:message.henry.scan"}'}}
 execute positioned 743 20 41 run function luigis_mansion:spawn_entities/portrait_ghost/henry
 scoreboard players set #the_twins_room Wave 2

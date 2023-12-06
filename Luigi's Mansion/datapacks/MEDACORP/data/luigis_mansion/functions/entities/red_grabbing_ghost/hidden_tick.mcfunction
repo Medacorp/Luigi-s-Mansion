@@ -1,5 +1,5 @@
 tag @s[tag=basher,tag=can_spawn] add spawn
 execute at @s run function luigis_mansion:entities/ghost/hidden_tick
-execute at @s run function luigis_mansion:animations/grabbing_ghost/idle
+execute at @s run function luigis_mansion:old_animations/grabbing_ghost/idle
 tag @s[tag=spawn,tag=!basher,tag=!no_appear] add appear
 tag @s remove spawn

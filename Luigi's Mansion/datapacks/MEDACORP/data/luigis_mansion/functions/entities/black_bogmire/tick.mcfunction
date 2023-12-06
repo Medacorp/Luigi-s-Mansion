@@ -33,9 +33,9 @@ execute at @s[tag=fleeing,tag=!shadow_death] run function luigis_mansion:entitie
 
 execute at @s[tag=vanish] run function luigis_mansion:entities/black_bogmire/vanish
 execute at @s[tag=new_black_bogmire] run function luigis_mansion:entities/black_bogmire/appear
-execute at @s[tag=vanish_flee] run function luigis_mansion:animations/bogmire/flee
-execute at @s[tag=!fleeing,tag=!spawn,tag=!vanish,tag=!shadow_death] run function luigis_mansion:animations/bogmire/idle
-execute at @s[tag=fleeing,tag=!shadow_death] run function luigis_mansion:animations/bogmire/flee
+execute at @s[tag=vanish_flee] run function luigis_mansion:old_animations/bogmire/flee
+execute at @s[tag=!fleeing,tag=!spawn,tag=!vanish,tag=!shadow_death] run function luigis_mansion:old_animations/bogmire/idle
+execute at @s[tag=fleeing,tag=!shadow_death] run function luigis_mansion:old_animations/bogmire/flee
 
 execute at @s[tag=!big] run teleport @s ~ ~-0.5 ~
 execute if entity @s[tag=!big] as @e[tag=this_model] at @s run teleport @s ~ ~-0.5 ~

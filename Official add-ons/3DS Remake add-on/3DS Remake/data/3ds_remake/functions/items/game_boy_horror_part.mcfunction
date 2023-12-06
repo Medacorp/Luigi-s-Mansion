@@ -1,6 +1,6 @@
 data merge storage 3ds_remake:data {obtained_gameboy_horror_part:1b}
-execute if score #players Totals matches 1 run tellraw @a {"translate":"chat.type.text","with":[{"translate":"luigis_mansion:entity.mansion","color":"green"},{"translate":"3ds_remake:message.player.game_boy_horror_part"}]}
-execute if score #players Totals matches 2.. run tellraw @a {"translate":"chat.type.text","with":[{"translate":"luigis_mansion:entity.mansion","color":"green"},{"translate":"3ds_remake:message.player.game_boy_horror_part.more"}]}
+execute if score #players Totals matches 1 run tellraw @a {"type":"translatable","translate":"chat.type.text","with":[{"type":"translatable","translate":"luigis_mansion:entity.mansion","color":"green"},{"type":"translatable","translate":"3ds_remake:message.player.game_boy_horror_part"}]}
+execute if score #players Totals matches 2.. run tellraw @a {"type":"translatable","translate":"chat.type.text","with":[{"type":"translatable","translate":"luigis_mansion:entity.mansion","color":"green"},{"type":"translatable","translate":"3ds_remake:message.player.game_boy_horror_part.more"}]}
 playsound 3ds_remake:item.game_boy_horror_part.obtain player @a[tag=same_room] ~ ~ ~ 1
 playsound luigis_mansion:item.item.get music @a[tag=same_room] ~ ~ ~ 1
 execute if entity @a[tag=collector,tag=!gooigi,limit=1,scores={Health=41..,Shrunk=0}] run playsound luigis_mansion:entity.player.show_item.high_health player @a[tag=same_room] ~ ~ ~ 1

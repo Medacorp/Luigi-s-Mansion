@@ -1,1 +1,1 @@
-execute if entity @s[tag=nightstand] run function luigis_mansion:animations/furniture/open/nightstand
+execute if entity @s[tag=nightstand] run function luigis_mansion:old_animations/furniture/open/nightstand

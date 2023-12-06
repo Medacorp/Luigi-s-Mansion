@@ -52,10 +52,10 @@ execute if entity @s[tag=!dead,tag=wall] run function luigis_mansion:entities/bo
 execute if entity @s[tag=!fleeing,tag=taunt] run function luigis_mansion:entities/boo/taunt
 execute if entity @s[tag=!fleeing,tag=laugh] run function luigis_mansion:entities/boo/laugh
 execute if entity @s[tag=appear] run function luigis_mansion:entities/boo/appear
-execute at @s[tag=!fleeing,tag=!boo_hurt,tag=!laugh,tag=!taunt,tag=!appear,tag=!attack,tag=!frozen] run function luigis_mansion:animations/boo/idle
-execute at @s[tag=frozen] run function luigis_mansion:animations/boo/frozen
-execute at @s[tag=fleeing,tag=!frozen] run function luigis_mansion:animations/boo/flee
-execute at @s[tag=!fleeing,tag=boo_hurt,tag=!frozen] run function luigis_mansion:animations/boo/hurt
+execute at @s[tag=!fleeing,tag=!boo_hurt,tag=!laugh,tag=!taunt,tag=!appear,tag=!attack,tag=!frozen] run function luigis_mansion:old_animations/boo/idle
+execute at @s[tag=frozen] run function luigis_mansion:old_animations/boo/frozen
+execute at @s[tag=fleeing,tag=!frozen] run function luigis_mansion:old_animations/boo/flee
+execute at @s[tag=!fleeing,tag=boo_hurt,tag=!frozen] run function luigis_mansion:old_animations/boo/hurt
 tag @s[tag=!up,tag=!down,tag=!north,tag=!south,tag=!east,tag=!west] add no_escape
 tag @s[tag=no_escape] add can_attack
 

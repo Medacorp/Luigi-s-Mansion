@@ -13,13 +13,13 @@ scoreboard players set @s[scores={HurtTime=1},tag=boo_hurt,tag=!fleeing] Sound 4
 execute if entity @s[scores={Sound=0},tag=fleeing,tag=!dying] run playsound luigis_mansion:entity.king_boo.flee hostile @a[tag=same_room] ~ ~ ~ 1
 scoreboard players set @s[scores={Sound=0}] Sound 40
 
-execute at @s[tag=magic] run function luigis_mansion:animations/boo/magic
+execute at @s[tag=magic] run function luigis_mansion:old_animations/boo/magic
 execute at @s[tag=laugh] run function luigis_mansion:entities/king_boo/laugh
-execute at @s[tag=complain] run function luigis_mansion:animations/boo/hurt
-execute at @s[tag=appear] run function luigis_mansion:animations/boo/appear
-execute at @s[tag=fleeing] run function luigis_mansion:animations/boo/flee
-execute at @s[tag=!fleeing,tag=boo_hurt] run function luigis_mansion:animations/boo/hurt
-execute at @s[tag=!fleeing,tag=!boo_hurt,tag=!magic,tag=!complain,tag=!appear,tag=!laugh] run function luigis_mansion:animations/boo/idle
+execute at @s[tag=complain] run function luigis_mansion:old_animations/boo/hurt
+execute at @s[tag=appear] run function luigis_mansion:old_animations/boo/appear
+execute at @s[tag=fleeing] run function luigis_mansion:old_animations/boo/flee
+execute at @s[tag=!fleeing,tag=boo_hurt] run function luigis_mansion:old_animations/boo/hurt
+execute at @s[tag=!fleeing,tag=!boo_hurt,tag=!magic,tag=!complain,tag=!appear,tag=!laugh] run function luigis_mansion:old_animations/boo/idle
 
 scoreboard players set @s[tag=!boo_hurt,tag=!fleeing,tag=!attack,tag=!laugh,tag=!taunt,tag=!dying,tag=!cutscene] ActionTime 0
 scoreboard players reset @s[tag=!boo_hurt,tag=!fleeing,tag=!attack,tag=!laugh,tag=!taunt,tag=!dying] HurtTime

@@ -40,7 +40,7 @@ execute unless entity @s[scores={Offline=0}] run function luigis_mansion:other/l
 execute if entity @s[scores={ChangedMansion=1}] run function luigis_mansion:entities/player/changed_mansion
 
 execute unless score @s PreviousRoom = @s Room run tag @s remove seen_room_name
-execute unless score @s PreviousRoom = @s Room if score #debug_messages Selected matches 2.. run tellraw @a {"translate":"luigis_mansion:message.debug.format","with":[{"translate":"luigis_mansion:message.debug","color":"gold"},{"translate":"luigis_mansion:message.debug.room_number","with":[{"selector":"@s"},{"score":{"name":"@s","objective":"PreviousRoom"}},{"score":{"name":"@s","objective":"Room"}}]}]}
+execute unless score @s PreviousRoom = @s Room if score #debug_messages Selected matches 2.. run tellraw @a {"type":"translatable","translate":"luigis_mansion:message.debug.format","with":[{"type":"translatable","translate":"luigis_mansion:message.debug","color":"gold"},{"type":"translatable","translate":"luigis_mansion:message.debug.room_number","with":[{"type":"selector","selector":"@s"},{"type":"score","score":{"name":"@s","objective":"PreviousRoom"}},{"type":"score","score":{"name":"@s","objective":"Room"}}]}]}
 scoreboard players operation @s PreviousRoom = @s Room
 execute unless entity @s[scores={Room=1..}] run scoreboard players set @s LastFloor -2
 
@@ -88,7 +88,7 @@ tag @s[tag=walking,tag=sneak_pos] remove walking
 execute if entity @a[tag=!same_room,tag=!looking_at_map,scores={Room=1..},limit=1] run scoreboard players set #freeze_timer Selected 0
 tag @e[tag=same_room] remove same_room
 
-tellraw @s[scores={ClickEventCheck=1}] {"translate":"chat.type.text","with":[{"translate":"luigis_mansion:entity.mansion","color":"green"},{"translate":"luigis_mansion:message.format_explanation.check"}]}
+tellraw @s[scores={ClickEventCheck=1}] {"type":"translatable","translate":"chat.type.text","with":[{"type":"translatable","translate":"luigis_mansion:entity.mansion","color":"green"},{"type":"translatable","translate":"luigis_mansion:message.format_explanation.check"}]}
 scoreboard players set @s ClickEventCheck 0
 scoreboard players enable @s ClickEventCheck
 

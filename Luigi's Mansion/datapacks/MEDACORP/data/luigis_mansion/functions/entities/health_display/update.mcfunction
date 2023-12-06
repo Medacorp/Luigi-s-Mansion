@@ -6,7 +6,7 @@ execute unless score #temp Time matches 0 at @s run function luigis_mansion:enti
 scoreboard players operation #temp Health = @e[tag=this_ghost,tag=!body] Health
 scoreboard players add #temp Health 98
 scoreboard players operation #temp Health /= #100 Constants
-execute unless score @s Health = #temp Health in minecraft:overworld run setblock 27 0 0 minecraft:oak_sign{front_text:{messages:['{"score":{"objective":"Health","name":"#temp"},"color":"light_purple"}','{"text":""}','{"text":""}','{"text":""}']}}
+execute unless score @s Health = #temp Health in minecraft:overworld run setblock 27 0 0 minecraft:oak_sign{front_text:{messages:['{"type":"score","score":{"objective":"Health","name":"#temp"},"color":"light_purple"}','{"type":"text","text":""}','{"type":"text","text":""}','{"type":"text","text":""}']}}
 execute unless score @s Health = #temp Health in minecraft:overworld run data modify entity @s CustomName set from block 27 0 0 front_text.messages[0]
 execute unless score @s Health = #temp Health in minecraft:overworld run setblock 27 0 0 minecraft:bedrock
 scoreboard players operation @s Health = #temp Health

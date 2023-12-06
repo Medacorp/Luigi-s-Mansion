@@ -1,2 +1,2 @@
-data modify storage luigis_mansion:data furniture set value {candle_flames:[{lit:1b},{lit:1b}],searchable:["interact","vacuum"],shake_animation:["interact","vacuum"],sound:{namespace:"luigis_mansion",id:"generic"},scan_message:'{"translate":"luigis_mansion:message.player.scan_furniture.59"}'}
+data modify storage luigis_mansion:data furniture set value {candle_flames:[{lit:1b},{lit:1b}],searchable:["interact","vacuum"],shake_animation:["interact","vacuum"],sound:{namespace:"luigis_mansion",id:"generic"},scan_message:'{"type":"translatable","translate":"luigis_mansion:message.player.scan_furniture.59"}'}
 execute positioned 751 11 12 rotated -90 0 run function 3ds_remake:spawn_furniture/tall_simple_triple_candelabra/left_burned

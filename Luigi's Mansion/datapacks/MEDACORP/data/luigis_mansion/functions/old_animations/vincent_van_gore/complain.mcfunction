@@ -1,0 +1,2 @@
+execute if score #mirrored Selected matches 0 run function luigis_mansion:old_animations/vincent_van_gore/normal/complain
+execute if score #mirrored Selected matches 1 run function luigis_mansion:old_animations/vincent_van_gore/mirrored/complain

@@ -14,10 +14,10 @@ scoreboard players set @s[scores={Sound=0},tag=fleeing,tag=!dying] Sound 40
 execute if entity @s[tag=!fleeing,tag=!hurt,scores={StunTime=0}] run function #luigis_mansion:entities/lydia/tick
 
 execute if entity @s[tag=vanish] run function luigis_mansion:entities/lydia/vanish
-execute at @s[tag=fleeing,tag=!second_flee_state] run function luigis_mansion:animations/lydia/flee
+execute at @s[tag=fleeing,tag=!second_flee_state] run function luigis_mansion:old_animations/lydia/flee
 execute at @s[tag=fleeing,tag=second_flee_state] run function luigis_mansion:entities/lydia/second_flee_state
 execute if entity @s[tag=!fleeing,tag=hurt] run function luigis_mansion:entities/ghost/turn_visible_no_equipment
-execute at @s[tag=!fleeing,tag=hurt] run function luigis_mansion:animations/lydia/hurt
+execute at @s[tag=!fleeing,tag=hurt] run function luigis_mansion:old_animations/lydia/hurt
 
 scoreboard players reset #temp GhostNr
 tag @e[tag=this_model] add found_owner

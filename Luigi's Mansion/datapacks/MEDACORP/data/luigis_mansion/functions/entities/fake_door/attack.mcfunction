@@ -5,7 +5,7 @@ execute if entity @s[scores={AnimationProgress=70}] run playsound luigis_mansion
 execute if entity @s[scores={AnimationProgress=100}] run playsound luigis_mansion:entity.ghost.laugh block @a[tag=same_room] ~ ~ ~ 1
 
 scoreboard players operation @e[tag=this_model,limit=1] AnimationProgress = @s AnimationProgress
-execute as @e[tag=this_model,limit=1] run function luigis_mansion:animations/fake_door/attack
+execute as @e[tag=this_model,limit=1] run function luigis_mansion:old_animations/fake_door/attack
 
 tag @s[scores={AnimationProgress=100}] remove attack
 execute if entity @s[scores={AnimationProgress=100}] run scoreboard players reset @e[tag=this_model,limit=1] AnimationProgress

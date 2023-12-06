@@ -1,5 +1,5 @@
 execute if entity @s[tag=!saved_default_orientation] run function luigis_mansion:entities/furniture/save_default_orientation
-execute unless entity @s[tag=!shake,tag=!long_shake] run function luigis_mansion:animations/furniture/rocking_horse
+execute unless entity @s[tag=!shake,tag=!long_shake] run function luigis_mansion:old_animations/furniture/rocking_horse
 execute if entity @s[tag=!shake,tag=!long_shake,tag=was_shaking] run function luigis_mansion:entities/furniture/revert_to_default_orientation
 
 execute if score @s FurnitureSearch >= @s FurnitureTime run scoreboard players add @s[tag=searchable_by_time] FurnitureTime 1

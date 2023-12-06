@@ -7,9 +7,9 @@ execute store result entity @s Pos[1] double 0.01 run scoreboard players get @s 
 
 execute at @s unless entity @s[tag=!happy,tag=!talk] facing entity @e[tag=same_room,tag=!spectator,tag=player,sort=nearest,limit=1] feet rotated ~ 0 run teleport @s ~ ~ ~ ~ ~
 
-execute at @s[tag=happy,tag=!explaining] run function luigis_mansion:animations/toad/happy
-execute at @s[tag=explaining] run function luigis_mansion:animations/toad/explaining
-execute at @s[tag=!happy,tag=!explaining] run function luigis_mansion:animations/toad/crying
+execute at @s[tag=happy,tag=!explaining] run function luigis_mansion:old_animations/toad/happy
+execute at @s[tag=explaining] run function luigis_mansion:old_animations/toad/explaining
+execute at @s[tag=!happy,tag=!explaining] run function luigis_mansion:old_animations/toad/crying
 
 scoreboard players reset #temp PassiveNr
 tag @e[tag=this_model] add found_owner

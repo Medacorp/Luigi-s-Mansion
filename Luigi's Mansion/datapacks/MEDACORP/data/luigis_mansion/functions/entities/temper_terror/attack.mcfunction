@@ -1,6 +1,6 @@
 scoreboard players add @s ActionTime 1
 scoreboard players set @s[scores={ActionTime=1}] AnimationProgress 0
-execute at @s run function luigis_mansion:animations/ghost/attack
+execute at @s run function luigis_mansion:old_animations/ghost/attack
 
 teleport @s[scores={ActionTime=1..39}] ^ ^ ^0.0125
 execute at @s[scores={ActionTime=1..20}] positioned ^ ^ ^0.7 unless entity @e[tag=same_room,tag=!spectator,tag=player,distance=..0.7,limit=1] run tag @s add stop_attack

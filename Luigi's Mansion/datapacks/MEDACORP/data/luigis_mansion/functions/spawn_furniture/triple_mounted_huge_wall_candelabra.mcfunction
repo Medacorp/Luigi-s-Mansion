@@ -1,4 +1,4 @@
-summon minecraft:armor_stand ~ ~-1.4 ~ {CustomName:'{"translate":"luigis_mansion:furniture.triple_mounted_huge_wall_candelabra"}',Tags:["furniture","generic","candelabra","immobile","this_entity"],NoGravity:1b,Marker:1b,ArmorItems:[{},{},{},{id:"minecraft:diamond_pickaxe",Count:1b,tag:{Unbreakable:1b,Damage:19,CustomModelData:96}}],Invisible:1b,DisabledSlots:2039583}
+summon minecraft:armor_stand ~ ~-1.4 ~ {CustomName:'{"type":"translatable","translate":"luigis_mansion:furniture.triple_mounted_huge_wall_candelabra"}',Tags:["furniture","generic","candelabra","immobile","this_entity"],NoGravity:1b,Marker:1b,ArmorItems:[{},{},{},{id:"minecraft:diamond_pickaxe",Count:1b,tag:{Unbreakable:1b,Damage:19,CustomModelData:96}}],Invisible:1b,DisabledSlots:2039583}
 teleport @e[tag=this_entity,limit=1] ~ ~-1.4 ~ ~ 0
 function luigis_mansion:spawn_furniture/setup/get_angle_for_candle
 execute if score #temp2 Time = #temp Time rotated ~ 0 positioned ^ ^ ^0.23 rotated as @e[tag=candle_flame_rotation,limit=1] rotated ~90 ~ positioned ^ ^1.016 ^ rotated ~-90 0 run function luigis_mansion:spawn_furniture/setup/candle_flame

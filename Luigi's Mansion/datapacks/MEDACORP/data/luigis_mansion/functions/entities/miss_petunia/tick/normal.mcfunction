@@ -20,15 +20,15 @@ execute if entity @s[scores={Dialog=2..,VulnerableTime=0},tag=frozen,tag=!vanish
 scoreboard players set @s[scores={Dialog=2..},tag=frozen,tag=!vanish] VulnerableTime 60
 scoreboard players set @s[scores={Dialog=2..60},tag=frozen,tag=!vanish] Dialog 61
 execute if entity @s[scores={Dialog=61,VulnerableTime=1..}] facing entity @e[tag=same_room,tag=!spectator,tag=player,sort=nearest,limit=1] feet run teleport @s ~ ~ ~ ~ ~
-execute if entity @s[scores={Dialog=61},tag=frozen] unless data storage luigis_mansion:data current_state.current_data.technical_data{miss_petunia_spoke:1b} run tellraw @a[tag=same_room] {"translate":"chat.type.text","with":[{"translate":"luigis_mansion:entity.miss_petunia","color":"green"},{"translate":"luigis_mansion:message.miss_petunia.freeze"}]}
+execute if entity @s[scores={Dialog=61},tag=frozen] unless data storage luigis_mansion:data current_state.current_data.technical_data{miss_petunia_spoke:1b} run tellraw @a[tag=same_room] {"type":"translatable","translate":"chat.type.text","with":[{"type":"translatable","translate":"luigis_mansion:entity.miss_petunia","color":"green"},{"type":"translatable","translate":"luigis_mansion:message.miss_petunia.freeze"}]}
 execute if entity @s[scores={Dialog=61},tag=frozen] run data modify storage luigis_mansion:data current_state.current_data.technical_data merge value {miss_petunia_spoke:1b}
 tag @s remove frozen
 
-execute at @s[scores={Dialog=20..49}] run function luigis_mansion:animations/miss_petunia/panic
-execute at @s[scores={Dialog=50..59}] run function luigis_mansion:animations/miss_petunia/spit
-execute at @s[scores={VulnerableTime=1..}] run function luigis_mansion:animations/miss_petunia/shiver
-execute at @s[scores={VulnerableTime=0},tag=!vanish] unless entity @s[scores={Dialog=20..59}] run function luigis_mansion:animations/miss_petunia/idle
-execute as @e[tag=this_model,tag=miss_petunia_shadow,tag=!body,tag=!right_arm,tag=!left_arm,limit=1] positioned ~3.5 ~ ~ run function luigis_mansion:animations/miss_petunia/shadow
+execute at @s[scores={Dialog=20..49}] run function luigis_mansion:old_animations/miss_petunia/panic
+execute at @s[scores={Dialog=50..59}] run function luigis_mansion:old_animations/miss_petunia/spit
+execute at @s[scores={VulnerableTime=1..}] run function luigis_mansion:old_animations/miss_petunia/shiver
+execute at @s[scores={VulnerableTime=0},tag=!vanish] unless entity @s[scores={Dialog=20..59}] run function luigis_mansion:old_animations/miss_petunia/idle
+execute as @e[tag=this_model,tag=miss_petunia_shadow,tag=!body,tag=!right_arm,tag=!left_arm,limit=1] positioned ~3.5 ~ ~ run function luigis_mansion:old_animations/miss_petunia/shadow
 
 execute if entity @s[scores={VulnerableTime=0,Sound=0},tag=!vanish] unless entity @s[scores={Dialog=20..59}] run playsound luigis_mansion:entity.miss_petunia.ambient hostile @a[tag=same_room] ~ ~ ~ 1
 execute unless entity @s[scores={Dialog=20..59}] run scoreboard players set @s[scores={VulnerableTime=0,Sound=0},tag=!vanish] Sound 40

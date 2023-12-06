@@ -8,7 +8,7 @@ execute unless entity @s[scores={ActionTime=1}] if score #temp Time matches ..-1
 execute unless entity @s[scores={ActionTime=1}] if score #temp Time matches 180.. run scoreboard players remove #temp Time 360
 execute unless entity @s[scores={ActionTime=1}] if score #temp Time matches ..-1 run tag @s add turn_left
 scoreboard players set @s ActionTime 1
-function luigis_mansion:animations/bowser/walk
+function luigis_mansion:old_animations/bowser/walk
 execute if score #temp Time matches -3..3 facing entity @p[tag=same_room,tag=!spectator] feet rotated ~ 0 run teleport @s ~ ~ ~ ~ ~
 execute if score #temp Time matches -3..3 store result score #temp Time run data get entity @s Rotation[0]
 execute if score #temp Time matches -3..3 run teleport @s[tag=turn_left] ~ ~ ~ ~-5 ~

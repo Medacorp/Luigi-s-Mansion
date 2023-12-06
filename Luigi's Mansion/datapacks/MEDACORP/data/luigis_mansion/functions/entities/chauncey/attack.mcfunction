@@ -14,7 +14,7 @@ execute at @s[scores={ActionTime=11}] store result storage luigis_mansion:data d
 execute at @s[scores={ActionTime=11}] positioned ~ ~1 ~ as @a[distance=..1,gamemode=!spectator] run function luigis_mansion:entities/player/damage
 execute at @s[scores={ActionTime=11}] run data remove storage luigis_mansion:data damage
 tag @s[scores={ActionTime=11},tag=!laugh] add complain
-execute at @s run function luigis_mansion:animations/chauncey/attack
+execute at @s run function luigis_mansion:old_animations/chauncey/attack
 tag @s[scores={ActionTime=30}] remove attack
 scoreboard players set @s[scores={ActionTime=30}] AnimationProgress 0
 scoreboard players set @s[scores={ActionTime=30}] ActionTime 0

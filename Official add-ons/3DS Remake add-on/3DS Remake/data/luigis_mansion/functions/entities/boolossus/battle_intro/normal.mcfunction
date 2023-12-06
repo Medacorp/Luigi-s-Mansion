@@ -17,7 +17,7 @@ execute at @s facing entity @e[tag=same_room,tag=!spectator,tag=player,sort=near
 execute if entity @s[scores={Dialog=..300}] store result entity @s Rotation[1] float 0.01 run scoreboard players get @s HomeRotation
 tag @s[scores={Dialog=320}] add laugh
 scoreboard players set @s[scores={Dialog=320}] AnimationProgress 0
-execute at @s[scores={Dialog=320..440}] run function luigis_mansion:animations/boo/laugh
+execute at @s[scores={Dialog=320..440}] run function luigis_mansion:old_animations/boo/laugh
 execute if entity @s[scores={Dialog=320}] run playsound luigis_mansion:entity.boolossus.laugh hostile @a[tag=same_room] ~ ~ ~ 3
 execute if entity @s[scores={Dialog=340}] run playsound luigis_mansion:entity.boolossus.laugh hostile @a[tag=same_room] ~ ~ ~ 3
 execute if entity @s[scores={Dialog=360}] run playsound luigis_mansion:entity.boolossus.laugh hostile @a[tag=same_room] ~ ~ ~ 3

@@ -11,5 +11,5 @@ scoreboard players set @s[scores={Dialog=20}] Dialog 0
 scoreboard players set @s[scores={Dialog=..19,VulnerableTime=1}] AnimationProgress 0
 scoreboard players set @s[scores={Dialog=..19,VulnerableTime=1}] VulnerableTime 0
 
-execute if entity @s[scores={VulnerableTime=0},tag=!vanish] run function luigis_mansion:animations/uncle_grimmly/idle
-execute if entity @s[scores={VulnerableTime=1..},tag=!vanish] run function luigis_mansion:animations/uncle_grimmly/scare
+execute if entity @s[scores={VulnerableTime=0},tag=!vanish] run function luigis_mansion:old_animations/uncle_grimmly/idle
+execute if entity @s[scores={VulnerableTime=1..},tag=!vanish] run function luigis_mansion:old_animations/uncle_grimmly/scare

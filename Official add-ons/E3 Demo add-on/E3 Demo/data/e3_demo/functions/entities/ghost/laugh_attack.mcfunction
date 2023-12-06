@@ -2,7 +2,7 @@ scoreboard players add @s ActionTime 1
 execute if entity @s[scores={ActionTime=1}] run playsound e3_demo:entity.ghost.laugh hostile @a[tag=same_room] ~ ~ ~ 1
 scoreboard players set @s[scores={ActionTime=1}] AnimationProgress 0
 execute if score #3ds_remake Loaded matches 1.. run scoreboard players set @s Move 5
-execute at @s run function luigis_mansion:animations/ghost/normal/laugh
+execute at @s run function luigis_mansion:old_animations/ghost/normal/laugh
 tag @s[scores={ActionTime=40}] add vanish
 tag @s[scores={ActionTime=40}] remove attack
 scoreboard players set @s[scores={ActionTime=40}] ActionTime 0

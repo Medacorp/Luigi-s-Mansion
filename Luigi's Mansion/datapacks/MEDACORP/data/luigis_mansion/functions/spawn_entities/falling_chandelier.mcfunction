@@ -1,1 +1,1 @@
-summon minecraft:marker ~ ~ ~ {CustomName:'{"translate":"luigis_mansion:furniture.chandelier"}',Tags:["chandelier"]}
+summon minecraft:marker ~ ~ ~ {CustomName:'{"type":"translatable","translate":"luigis_mansion:furniture.chandelier"}',Tags:["chandelier"]}

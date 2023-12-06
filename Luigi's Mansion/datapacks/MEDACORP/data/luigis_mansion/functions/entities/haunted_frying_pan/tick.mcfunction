@@ -12,5 +12,5 @@ scoreboard players set @s[scores={WaitTime=100},tag=moving] Sound 14
 execute if entity @s[scores={WaitTime=101..,Sound=0},tag=moving] run playsound luigis_mansion:entity.haunted_frying_pan.flying hostile @a[tag=same_room] ~ ~ ~ 1
 scoreboard players set @s[scores={WaitTime=101..,Sound=0},tag=moving] Sound 14
 execute if entity @s[scores={WaitTime=100..},tag=moving] run function luigis_mansion:entities/haunted_object/move
-execute at @s[scores={WaitTime=60..},tag=!moving] run function luigis_mansion:animations/haunted_object/shake
-execute at @s[scores={WaitTime=100..},tag=moving] run function luigis_mansion:animations/haunted_object/move_horizontal
+execute at @s[scores={WaitTime=60..},tag=!moving] run function luigis_mansion:old_animations/haunted_object/shake
+execute at @s[scores={WaitTime=100..},tag=moving] run function luigis_mansion:old_animations/haunted_object/move_horizontal

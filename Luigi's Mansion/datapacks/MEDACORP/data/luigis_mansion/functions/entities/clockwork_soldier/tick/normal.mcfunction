@@ -11,9 +11,9 @@ tag @s[tag=in_vacuum] add in_vacuum_2
 execute if entity @s[tag=!windless,scores={VacuumTime=40..}] run function luigis_mansion:entities/clockwork_soldier/lose_wind
 
 execute at @s[tag=!vanish,scores={VulnerableTime=0},tag=!visible] run function luigis_mansion:entities/clockwork_soldier/get_wind
-execute at @s[tag=activated,tag=!was_activated,tag=!vanish] run function luigis_mansion:animations/clockwork_soldier/activate
-execute at @s[tag=activated,tag=was_activated,tag=!attack,tag=!vanish,scores={VulnerableTime=0}] run function luigis_mansion:animations/clockwork_soldier/walk
-execute at @s[tag=!activated,tag=!vanish] run function luigis_mansion:animations/clockwork_soldier/wait
+execute at @s[tag=activated,tag=!was_activated,tag=!vanish] run function luigis_mansion:old_animations/clockwork_soldier/activate
+execute at @s[tag=activated,tag=was_activated,tag=!attack,tag=!vanish,scores={VulnerableTime=0}] run function luigis_mansion:old_animations/clockwork_soldier/walk
+execute at @s[tag=!activated,tag=!vanish] run function luigis_mansion:old_animations/clockwork_soldier/wait
 execute at @s[tag=!vanish,scores={VulnerableTime=1..}] run function luigis_mansion:entities/clockwork_soldier/complain
 
 execute if entity @s[tag=was_activated,tag=!vanish,tag=!complain,tag=!attack,tag=!windless,scores={WaitTime=0}] positioned ^ ^ ^0.7 if entity @e[tag=same_room,tag=!spectator,tag=player,distance=..1,limit=1] run tag @s add attack

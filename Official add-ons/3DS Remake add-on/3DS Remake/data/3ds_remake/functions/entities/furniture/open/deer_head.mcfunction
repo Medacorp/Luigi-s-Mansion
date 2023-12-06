@@ -1,1 +1,1 @@
-execute if entity @s[tag=deer_head] run function 3ds_remake:animations/furniture/deer_head
+execute if entity @s[tag=deer_head] run function 3ds_remake:old_animations/furniture/deer_head

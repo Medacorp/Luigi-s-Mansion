@@ -3,6 +3,6 @@ execute if entity @s[scores={ActionTime=1},tag=visible] run playsound luigis_man
 scoreboard players set @s[scores={ActionTime=1}] AnimationProgress 0
 execute if score #mirrored Selected matches 0 run teleport @s[scores={ActionTime=..40}] ~ ~0.05 ~ ~20 ~
 execute if score #mirrored Selected matches 1 run teleport @s[scores={ActionTime=..40}] ~ ~0.05 ~ ~-20 ~
-execute at @s run function luigis_mansion:animations/shivers/vanish
+execute at @s run function luigis_mansion:old_animations/shivers/vanish
 execute if entity @s[scores={ActionTime=40}] run function luigis_mansion:entities/ghost/turn_invisible
 tag @s[scores={ActionTime=120}] add disappear

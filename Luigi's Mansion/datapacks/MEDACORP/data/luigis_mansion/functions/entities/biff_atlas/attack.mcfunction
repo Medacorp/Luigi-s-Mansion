@@ -9,6 +9,6 @@ data modify storage luigis_mansion:data damage.amount set from entity @s ArmorIt
 execute store result storage luigis_mansion:data damage.attacker int 1 run scoreboard players get @s GhostNr
 execute as @a[distance=..1.6,gamemode=!spectator] run function luigis_mansion:entities/player/damage
 data remove storage luigis_mansion:data damage
-function luigis_mansion:animations/biff_atlas/attack
+function luigis_mansion:old_animations/biff_atlas/attack
 tag @s[scores={ActionTime=10}] remove attack
 scoreboard players set @s[scores={ActionTime=10}] ActionTime 0

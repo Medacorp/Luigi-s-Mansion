@@ -1,2 +1,0 @@
-function luigis_mansion:animations/floating_whirlindas/male/vanish
-execute as @e[tag=this_model,tag=floating_whirlindas_female,tag=main,limit=1] at @s run function luigis_mansion:animations/floating_whirlindas/female/vanish

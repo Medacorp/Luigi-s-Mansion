@@ -28,6 +28,6 @@ teleport @s[scores={Dialog=340..348}] ~0.2 ~ ~
 teleport @s[scores={Dialog=365..369}] ~-0.4 ~ ~
 teleport @s[scores={Dialog=369..374}] ~-0.4 ~0.2 ~
 execute if entity @s[scores={Dialog=469}] run teleport @s ~ ~-100 ~
-execute if entity @s[scores={Dialog=469}] at @e[tag=parlor_key,limit=1] run summon minecraft:armor_stand ~-0.7 ~0.9 ~-0.7 {CustomName:'{"translate":"luigis_mansion:item.key"}',Pose:{Head:[0.0f,-90.0f,0.01f]},Invisible:1b,Silent:1b,ArmorItems:[{},{},{},{id:"minecraft:diamond_pickaxe",Count:1b,tag:{luigis_mansion:{namespace:"luigis_mansion",id:"key",physics_offset:1.1d,pick_up_range:0.7f,variant:"parlor"},Unbreakable:1b,Damage:5,CustomModelData:15}}],Small:1b,NoGravity:1b,Tags:["item","generic","no_shrunk","affected_by_vacuum","eternal"],Rotation:[-90.0f,0.0f],DisabledSlots:2039583}
+execute if entity @s[scores={Dialog=469}] at @e[tag=parlor_key,limit=1] run summon minecraft:armor_stand ~-0.7 ~0.9 ~-0.7 {CustomName:'{"type":"translatable","translate":"luigis_mansion:item.key"}',Pose:{Head:[0.0f,-90.0f,0.01f]},Invisible:1b,Silent:1b,ArmorItems:[{},{},{},{id:"minecraft:diamond_pickaxe",Count:1b,tag:{luigis_mansion:{namespace:"luigis_mansion",id:"key",physics_offset:1.1d,pick_up_range:0.7f,variant:"parlor"},Unbreakable:1b,Damage:5,CustomModelData:15}}],Small:1b,NoGravity:1b,Tags:["item","generic","no_shrunk","affected_by_vacuum","eternal"],Rotation:[-90.0f,0.0f],DisabledSlots:2039583}
 execute if entity @s[scores={Dialog=469}] run kill @e[tag=parlor_key,limit=1]
 execute if entity @s[scores={Dialog=470}] run tag @s add dead

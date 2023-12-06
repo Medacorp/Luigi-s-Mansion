@@ -10,7 +10,7 @@ execute unless score #temp ActionTime matches 2.. unless entity @e[distance=..0.
 scoreboard players reset #temp ActionTime
 scoreboard players reset #temp Room
 
-function e3_demo:animations/shining_ghost/bounce
+function e3_demo:old_animations/shining_ghost/bounce
 
 data modify entity @s[tag=visible] ArmorItems[3].id set value "minecraft:leather_chestplate"
 execute at @s[tag=visible] facing entity @e[tag=same_room,tag=!spectator,tag=player,sort=nearest,limit=1] feet rotated ~ 0 run teleport @s ~ ~ ~ ~ ~

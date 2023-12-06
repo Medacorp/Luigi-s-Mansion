@@ -1,2 +1,2 @@
-execute if data storage luigis_mansion:data my_memory.hurt_by{method:"3ds_remake:melt"} run tellraw @a {"translate":"3ds_remake:death.melt.killer","with":[{"selector":"@s"},{"nbt":"my_memory.hurt_by.attacker","storage":"luigis_mansion:data","interpret":true}]}
+execute if data storage luigis_mansion:data my_memory.hurt_by{method:"3ds_remake:melt"} run tellraw @a {"type":"translatable","translate":"3ds_remake:death.melt.killer","with":[{"type":"selector","selector":"@s"},{"type":"nbt","nbt":"my_memory.hurt_by.attacker","source":"storage","storage":"luigis_mansion:data","interpret":true}]}
 execute if data storage luigis_mansion:data my_memory.hurt_by{method:"3ds_remake:melt"} run data remove storage luigis_mansion:data my_memory.hurt_by.method

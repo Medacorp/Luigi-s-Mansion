@@ -14,9 +14,9 @@ scoreboard players set @s[scores={Sound=0},tag=fleeing,tag=!dying] Sound 40
 execute if entity @s[tag=!fleeing,tag=!hurt,scores={StunTime=0}] run function #luigis_mansion:entities/madame_clairvoya/tick
 
 execute if entity @s[tag=vanish] run function luigis_mansion:entities/madame_clairvoya/vanish
-execute at @s[tag=fleeing,tag=!second_flee_state] run function luigis_mansion:animations/madame_clairvoya/flee
+execute at @s[tag=fleeing,tag=!second_flee_state] run function luigis_mansion:old_animations/madame_clairvoya/flee
 execute at @s[tag=fleeing,tag=second_flee_state] run function luigis_mansion:entities/madame_clairvoya/second_flee_state
-execute at @s[tag=!fleeing,tag=hurt] run function luigis_mansion:animations/madame_clairvoya/hurt
+execute at @s[tag=!fleeing,tag=hurt] run function luigis_mansion:old_animations/madame_clairvoya/hurt
 
 scoreboard players reset #temp GhostNr
 tag @e[tag=this_model] add found_owner

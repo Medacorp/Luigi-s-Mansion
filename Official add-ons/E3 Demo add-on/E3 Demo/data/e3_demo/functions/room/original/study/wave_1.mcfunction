@@ -1,4 +1,4 @@
-data modify storage luigis_mansion:data entity set value {drop_pearls:0b,drop_poison_mushrooms:0b,scan_message:{sender:"me",message:'{"translate":"luigis_mansion:message.neville.scan"}',plural_message:'{"translate":"luigis_mansion:message.neville.scan.more"}'}}
+data modify storage luigis_mansion:data entity set value {drop_pearls:0b,drop_poison_mushrooms:0b,scan_message:{sender:"me",message:'{"type":"translatable","translate":"luigis_mansion:message.neville.scan"}',plural_message:'{"type":"translatable","translate":"luigis_mansion:message.neville.scan.more"}'}}
 execute positioned 709.0 20 57.0 rotated -125 0 run function luigis_mansion:spawn_entities/portrait_ghost/neville
 execute positioned 703 20 49 run function e3_demo:spawn_entities/vacuumable/boo
 execute positioned 703 20 49 run function e3_demo:spawn_entities/vacuumable/boo

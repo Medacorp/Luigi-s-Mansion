@@ -1,6 +1,6 @@
 execute if entity @s[tag=!intro,tag=!big] if entity @e[tag=same_room,tag=!spectator,tag=player,distance=..2,limit=1] if entity @s[tag=!dying,tag=!dead,tag=!captured,tag=!removed_from_existence,tag=!hurt,tag=!fleeing,tag=!element_hurt] run function luigis_mansion:entities/rocking_horse/collide
 execute if entity @s[tag=!intro,tag=big] if entity @e[tag=same_room,tag=!spectator,tag=player,distance=..3,limit=1] if entity @s[tag=!dying,tag=!dead,tag=!captured,tag=!removed_from_existence] run function luigis_mansion:entities/rocking_horse/collide_big
-execute if entity @s[tag=!attack,tag=!intro] run function luigis_mansion:animations/rocking_horse
+execute if entity @s[tag=!attack,tag=!intro] run function luigis_mansion:old_animations/rocking_horse
 execute if entity @s[tag=attack] run function luigis_mansion:entities/rocking_horse/attack
 execute rotated ~ 0 unless block ^ ^ ^0.6 #luigis_mansion:all_ignore run tag @s[tag=!intro] add dead
 execute rotated ~ 0 if block ^ ^ ^0.6 minecraft:barrier run tag @s add dead

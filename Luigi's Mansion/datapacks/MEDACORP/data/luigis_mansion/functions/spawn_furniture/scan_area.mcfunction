@@ -1,4 +1,4 @@
-summon minecraft:armor_stand ~ ~-1.4 ~ {CustomName:'{"translate":"luigis_mansion:furniture.scan_area"}',Tags:["furniture","no_reflection","scan_area","this_entity"],Marker:1b,ArmorItems:[{},{},{},{id:"minecraft:stone_button",Count:1b,tag:{}}],NoGravity:1b,Invisible:1b,DisabledSlots:2039583}
+summon minecraft:armor_stand ~ ~-1.4 ~ {CustomName:'{"type":"translatable","translate":"luigis_mansion:furniture.scan_area"}',Tags:["furniture","no_reflection","scan_area","this_entity"],Marker:1b,ArmorItems:[{},{},{},{id:"minecraft:stone_button",Count:1b,tag:{}}],NoGravity:1b,Invisible:1b,DisabledSlots:2039583}
 teleport @e[tag=this_entity,limit=1] ~ ~-1.4 ~ ~ 0
 function luigis_mansion:spawn_furniture/setup/scan_message
 function luigis_mansion:spawn_furniture/setup/tags
@@ -13,7 +13,7 @@ execute if data storage luigis_mansion:data furniture.hitbox{type:"hanging"} run
 execute if data storage luigis_mansion:data furniture.hitbox{type:"standing"} run tag @e[tag=this_entity,limit=1] add standing_furniture
 # type hanging -> align the top of the area with the provided coordinate, type standing -> same but bottom, other/none provided -> area is centered in height
 execute unless data storage luigis_mansion:data furniture.hitbox.radius unless data storage luigis_mansion:data furniture.hitbox.box unless data storage luigis_mansion:data furniture.hitbox.rotated_box run tag @e[tag=this_entity,limit=1] add remove_from_existence
-execute unless data storage luigis_mansion:data furniture.hitbox.radius unless data storage luigis_mansion:data furniture.hitbox.box unless data storage luigis_mansion:data furniture.hitbox.rotated_box if score #debug_messages Selected matches 1.. run tellraw @a {"translate":"luigis_mansion:message.debug.format","with":[{"translate":"luigis_mansion:message.debug","color":"gold"},{"translate":"luigis_mansion:message.debug.scan_area","color":"red"}]}
+execute unless data storage luigis_mansion:data furniture.hitbox.radius unless data storage luigis_mansion:data furniture.hitbox.box unless data storage luigis_mansion:data furniture.hitbox.rotated_box if score #debug_messages Selected matches 1.. run tellraw @a {"type":"translatable","translate":"luigis_mansion:message.debug.format","with":[{"type":"translatable","translate":"luigis_mansion:message.debug","color":"gold"},{"type":"translatable","translate":"luigis_mansion:message.debug.scan_area","color":"red"}]}
 execute if entity @e[tag=this_entity,tag=!remove_from_existence,limit=1] run function luigis_mansion:spawn_furniture/setup/debug_spawn
 tag @e[tag=this_entity,limit=1] remove this_entity
 data remove storage luigis_mansion:data furniture

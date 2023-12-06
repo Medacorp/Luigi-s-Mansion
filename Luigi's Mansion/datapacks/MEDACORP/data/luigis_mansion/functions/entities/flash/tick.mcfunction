@@ -28,9 +28,9 @@ execute if entity @s[tag=vanish] run function luigis_mansion:entities/flash/vani
 execute if entity @s[tag=smug] run function luigis_mansion:entities/flash/smug
 execute if entity @s[tag=appear,tag=!beta_appear] run function luigis_mansion:entities/flash/appear
 execute if entity @s[tag=appear,tag=beta_appear] run function luigis_mansion:entities/flash/beta_appear
-execute at @s[tag=!hurt,tag=!element_hurt,tag=!fleeing,tag=!attack,tag=!collided,tag=!smug,tag=!vanish,tag=!laugh,tag=!complain,tag=!appear,scores={StunTime=0}] run function luigis_mansion:animations/puncher/haunt
-execute at @s[tag=fleeing,tag=!second_flee_state] run function luigis_mansion:animations/puncher/flee
+execute at @s[tag=!hurt,tag=!element_hurt,tag=!fleeing,tag=!attack,tag=!collided,tag=!smug,tag=!vanish,tag=!laugh,tag=!complain,tag=!appear,scores={StunTime=0}] run function luigis_mansion:old_animations/puncher/haunt
+execute at @s[tag=fleeing,tag=!second_flee_state] run function luigis_mansion:old_animations/puncher/flee
 execute at @s[tag=fleeing,tag=second_flee_state] run function luigis_mansion:entities/flash/second_flee_state
-execute at @s[tag=!fleeing,tag=hurt] run function luigis_mansion:animations/puncher/hurt
-execute at @s[tag=!hurt,tag=element_hurt] run function luigis_mansion:animations/puncher/hurt
+execute at @s[tag=!fleeing,tag=hurt] run function luigis_mansion:old_animations/puncher/hurt
+execute at @s[tag=!hurt,tag=element_hurt] run function luigis_mansion:old_animations/puncher/hurt
 execute at @s[scores={LightX=-2147483648..}] run function luigis_mansion:other/cast_shadow/2_tall

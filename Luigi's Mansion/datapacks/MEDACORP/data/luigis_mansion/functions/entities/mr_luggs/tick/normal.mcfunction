@@ -111,9 +111,9 @@ tag @s[scores={Dialog=901}] remove complain
 tag @s[scores={Dialog=901}] add rage
 scoreboard players set @s[scores={Dialog=901}] Dialog 601
 
-execute at @s[tag=hit_table] run function luigis_mansion:animations/mr_luggs/hit_table
-execute at @s[tag=complain] run function luigis_mansion:animations/mr_luggs/complain
-execute at @s[tag=rage] run function luigis_mansion:animations/mr_luggs/rage
-execute at @s[tag=spit] run function luigis_mansion:animations/mr_luggs/spit
-execute at @s[tag=sigh,tag=!vanish] run function luigis_mansion:animations/mr_luggs/sigh
-execute at @s[tag=!sigh,tag=!complain,tag=!hit_table,tag=!rage,tag=!spit,tag=!vanish] run function luigis_mansion:animations/mr_luggs/idle
+execute at @s[tag=hit_table] run function luigis_mansion:old_animations/mr_luggs/hit_table
+execute at @s[tag=complain] run function luigis_mansion:old_animations/mr_luggs/complain
+execute at @s[tag=rage] run function luigis_mansion:old_animations/mr_luggs/rage
+execute at @s[tag=spit] run function luigis_mansion:old_animations/mr_luggs/spit
+execute at @s[tag=sigh,tag=!vanish] run function luigis_mansion:old_animations/mr_luggs/sigh
+execute at @s[tag=!sigh,tag=!complain,tag=!hit_table,tag=!rage,tag=!spit,tag=!vanish] run function luigis_mansion:old_animations/mr_luggs/idle

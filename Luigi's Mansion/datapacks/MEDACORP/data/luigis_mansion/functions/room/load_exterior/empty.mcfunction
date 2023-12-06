@@ -2,7 +2,7 @@ scoreboard players set #loaded_exterior Selected -1
 scoreboard players set * ChangedMansion 1
 scoreboard players reset @e ChangedMansion
 
-tellraw @a {"translate":"chat.type.text","with":[{"translate":"luigis_mansion:entity.mansion","color":"green"},{"translate":"luigis_mansion:message.load_mansion.start"}]}
+tellraw @a {"type":"translatable","translate":"chat.type.text","with":[{"type":"translatable","translate":"luigis_mansion:entity.mansion","color":"green"},{"type":"translatable","translate":"luigis_mansion:message.load_mansion.start"}]}
 forceload add 774 9
 setblock 771 97 13 minecraft:air
 setblock 771 97 2 minecraft:air
@@ -34,4 +34,4 @@ place template luigis_mansion:mansion/empty/2 616 90 -17
 place template luigis_mansion:mansion/empty/1 616 90 -65
 tag @e[scores={Room=0},tag=door] add remove_from_existence
 forceload remove 749 -66 615 81
-tellraw @a {"translate":"chat.type.text","with":[{"translate":"luigis_mansion:entity.mansion","color":"green"},{"translate":"luigis_mansion:message.load_mansion.stop"}]}
+tellraw @a {"type":"translatable","translate":"chat.type.text","with":[{"type":"translatable","translate":"luigis_mansion:entity.mansion","color":"green"},{"type":"translatable","translate":"luigis_mansion:message.load_mansion.stop"}]}

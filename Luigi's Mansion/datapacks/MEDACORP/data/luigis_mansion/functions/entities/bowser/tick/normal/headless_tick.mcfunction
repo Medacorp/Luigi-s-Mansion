@@ -8,4 +8,4 @@ execute if entity @s[scores={ActionTime=20}] run function luigis_mansion:entitie
 scoreboard players set @s[scores={ActionTime=40}] ActionTime 0
 data modify entity @s Pose.Head[0] set from entity @s Rotation[1]
 tag @a[tag=bowser_target] remove bowser_target
-function luigis_mansion:animations/bowser/decapitated
+function luigis_mansion:old_animations/bowser/decapitated

@@ -17,6 +17,6 @@ execute at @s[tag=!attack,tag=!fleeing] facing entity @e[tag=same_room,tag=!spec
 tag @e[tag=this_room] remove this_room
 scoreboard players reset #temp Room
 
-execute at @s[tag=!attack] run function luigis_mansion:animations/bat/idle
-execute at @s[tag=attack] run function luigis_mansion:animations/bat/flying
+execute at @s[tag=!attack] run function luigis_mansion:old_animations/bat/idle
+execute at @s[tag=attack] run function luigis_mansion:old_animations/bat/flying
 execute at @s[scores={LightX=-2147483648..}] run function luigis_mansion:other/cast_shadow/1_tall

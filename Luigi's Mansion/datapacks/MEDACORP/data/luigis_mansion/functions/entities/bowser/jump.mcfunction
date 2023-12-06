@@ -25,8 +25,8 @@ tag @s[scores={ActionTime=140}] remove jump
 scoreboard players set @s[scores={ActionTime=140}] AnimationProgress 0
 scoreboard players reset @s[scores={ActionTime=140}] ActionTime
 
-execute at @s[scores={ActionTime=1..20}] run function luigis_mansion:animations/bowser/duck
-execute at @s[scores={ActionTime=21..40}] run function luigis_mansion:animations/bowser/get_up
-execute at @s[scores={ActionTime=41..50}] run function luigis_mansion:animations/bowser/idle
-execute at @s[scores={ActionTime=51..72}] run function luigis_mansion:animations/bowser/duck
-execute at @s[scores={ActionTime=73..140}] run function luigis_mansion:animations/bowser/roar
+execute at @s[scores={ActionTime=1..20}] run function luigis_mansion:old_animations/bowser/duck
+execute at @s[scores={ActionTime=21..40}] run function luigis_mansion:old_animations/bowser/get_up
+execute at @s[scores={ActionTime=41..50}] run function luigis_mansion:old_animations/bowser/idle
+execute at @s[scores={ActionTime=51..72}] run function luigis_mansion:old_animations/bowser/duck
+execute at @s[scores={ActionTime=73..140}] run function luigis_mansion:old_animations/bowser/roar

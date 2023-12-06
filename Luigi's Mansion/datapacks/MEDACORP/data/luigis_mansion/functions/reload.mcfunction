@@ -1,4 +1,4 @@
-tellraw @a {"translate":"chat.type.text","with":[{"translate":"luigis_mansion:entity.mansion","color":"green"},{"translate":"luigis_mansion:message.reloaded"}]}
+tellraw @a {"type":"translatable","translate":"chat.type.text","with":[{"type":"translatable","translate":"luigis_mansion:entity.mansion","color":"green"},{"type":"translatable","translate":"luigis_mansion:message.reloaded"}]}
 
 scoreboard players reset * Loaded
 scoreboard players set #training_choice Selected 0

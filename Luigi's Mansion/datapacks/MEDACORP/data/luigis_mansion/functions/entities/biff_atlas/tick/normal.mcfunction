@@ -52,9 +52,9 @@ scoreboard players set @s[scores={Dialog=372}] Dialog 240
 tag @s[tag=angry,tag=attack] remove angry
 execute at @s[tag=laugh] run function luigis_mansion:entities/biff_atlas/laugh
 execute at @s[tag=attack] run function luigis_mansion:entities/biff_atlas/attack
-execute at @s[tag=knocked_back] run function luigis_mansion:animations/biff_atlas/knocked_back
-execute at @s[tag=!knocked_back,tag=!knocked_out,tag=!attack,tag=!laugh,tag=!strech_neck,tag=!lift_succeed,tag=!lift_fail] run function luigis_mansion:animations/biff_atlas/idle
-execute at @s[tag=knocked_out,tag=!attack,tag=!vanish] run function luigis_mansion:animations/biff_atlas/ko
-execute at @s[tag=lift_fail] run function luigis_mansion:animations/biff_atlas/lift_fail
-execute at @s[tag=lift_succeed] run function luigis_mansion:animations/biff_atlas/lift_succeed
-execute at @s[tag=strech_neck] run function luigis_mansion:animations/biff_atlas/strech_neck
+execute at @s[tag=knocked_back] run function luigis_mansion:old_animations/biff_atlas/knocked_back
+execute at @s[tag=!knocked_back,tag=!knocked_out,tag=!attack,tag=!laugh,tag=!strech_neck,tag=!lift_succeed,tag=!lift_fail] run function luigis_mansion:old_animations/biff_atlas/idle
+execute at @s[tag=knocked_out,tag=!attack,tag=!vanish] run function luigis_mansion:old_animations/biff_atlas/ko
+execute at @s[tag=lift_fail] run function luigis_mansion:old_animations/biff_atlas/lift_fail
+execute at @s[tag=lift_succeed] run function luigis_mansion:old_animations/biff_atlas/lift_succeed
+execute at @s[tag=strech_neck] run function luigis_mansion:old_animations/biff_atlas/strech_neck

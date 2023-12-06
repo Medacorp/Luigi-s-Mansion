@@ -29,9 +29,9 @@ execute if entity @s[tag=!element_hurt,tag=!fleeing,tag=collided,scores={StunTim
 execute if entity @s[tag=vanish] run function luigis_mansion:entities/blue_twirler/vanish
 execute if entity @s[tag=appear,tag=!beta_appear] run function luigis_mansion:entities/blue_twirler/appear
 execute if entity @s[tag=appear,tag=beta_appear] run function luigis_mansion:entities/blue_twirler/beta_appear
-execute at @s[tag=!hurt,tag=!element_hurt,tag=!fleeing,tag=!attack,tag=!collided,tag=!vanish,tag=!laugh,tag=!complain,tag=!appear,scores={StunTime=0}] run function luigis_mansion:animations/twirler/haunt
-execute at @s[tag=fleeing,tag=!second_flee_state] run function luigis_mansion:animations/twirler/flee
+execute at @s[tag=!hurt,tag=!element_hurt,tag=!fleeing,tag=!attack,tag=!collided,tag=!vanish,tag=!laugh,tag=!complain,tag=!appear,scores={StunTime=0}] run function luigis_mansion:old_animations/twirler/haunt
+execute at @s[tag=fleeing,tag=!second_flee_state] run function luigis_mansion:old_animations/twirler/flee
 execute at @s[tag=fleeing,tag=second_flee_state] run function luigis_mansion:entities/blue_twirler/second_flee_state
-execute at @s[tag=!fleeing,tag=hurt] run function luigis_mansion:animations/twirler/hurt
-execute at @s[tag=!hurt,tag=element_hurt] run function luigis_mansion:animations/twirler/hurt
+execute at @s[tag=!fleeing,tag=hurt] run function luigis_mansion:old_animations/twirler/hurt
+execute at @s[tag=!hurt,tag=element_hurt] run function luigis_mansion:old_animations/twirler/hurt
 execute at @s[scores={LightX=-2147483648..}] run function luigis_mansion:other/cast_shadow/2_tall

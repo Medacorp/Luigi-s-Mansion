@@ -1,1 +1,1 @@
-execute if entity @s[tag=wooden_chest] run function luigis_mansion:animations/furniture/open/wooden_chest
+execute if entity @s[tag=wooden_chest] run function luigis_mansion:old_animations/furniture/open/wooden_chest

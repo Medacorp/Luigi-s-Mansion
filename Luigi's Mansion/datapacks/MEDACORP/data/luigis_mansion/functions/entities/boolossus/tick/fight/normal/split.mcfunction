@@ -37,7 +37,7 @@ tag @s remove frozen
 
 execute if entity @s[tag=fleeing,tag=!laugh,tag=!attack,scores={Dialog=0,Wave=..599}] run function luigis_mansion:entities/boolossus/flee
 
-execute at @s[tag=!fleeing,tag=!laugh,tag=!attack,scores={Dialog=0}] run function luigis_mansion:animations/boo/idle
+execute at @s[tag=!fleeing,tag=!laugh,tag=!attack,scores={Dialog=0}] run function luigis_mansion:old_animations/boo/idle
 
 tag @s[tag=!fleeing] remove fleeing_no_target
 tag @s[tag=fleeing] remove fleeing

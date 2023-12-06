@@ -14,10 +14,10 @@ scoreboard players set @s[scores={Sound=0},tag=fleeing,tag=!dying] Sound 40
 execute if entity @s[tag=!fleeing,tag=!hurt,scores={StunTime=0}] run function #luigis_mansion:entities/miss_petunia/tick
 
 execute if entity @s[tag=vanish] run function luigis_mansion:entities/miss_petunia/vanish
-execute at @s[tag=fleeing,tag=!second_flee_state] run function luigis_mansion:animations/miss_petunia/flee
+execute at @s[tag=fleeing,tag=!second_flee_state] run function luigis_mansion:old_animations/miss_petunia/flee
 execute at @s[tag=fleeing,tag=second_flee_state] run function luigis_mansion:entities/miss_petunia/second_flee_state
 execute at @s[tag=!fleeing,tag=hurt] as @e[tag=this_model,tag=miss_petunia_shadow,tag=!body,tag=!right_arm,tag=!left_arm,tag=visible,limit=1] run function luigis_mansion:entities/miss_petunia/turn_shadow_invisible
-execute at @s[tag=!fleeing,tag=hurt] run function luigis_mansion:animations/miss_petunia/hurt
+execute at @s[tag=!fleeing,tag=hurt] run function luigis_mansion:old_animations/miss_petunia/hurt
 
 scoreboard players reset #temp GhostNr
 tag @e[tag=this_model] add found_owner

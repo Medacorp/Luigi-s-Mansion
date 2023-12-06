@@ -32,9 +32,9 @@ execute if entity @s[tag=!element_hurt,tag=!fleeing,tag=collided,scores={StunTim
 execute if entity @s[tag=vanish] run function e3_demo:entities/ghost/vanish
 execute if entity @s[tag=appear,tag=!beta_appear] run function e3_demo:entities/ghost/appear
 execute if entity @s[tag=appear,tag=beta_appear] run function e3_demo:entities/ghost/beta_appear
-execute at @s[tag=!hurt,tag=!element_hurt,tag=!fleeing,tag=!attack,tag=!collided,tag=!vanish,tag=!laugh,tag=!complain,tag=!appear,scores={StunTime=0}] run function luigis_mansion:animations/ghost/haunt
-execute at @s[tag=fleeing,tag=!second_flee_state] run function luigis_mansion:animations/ghost/flee
+execute at @s[tag=!hurt,tag=!element_hurt,tag=!fleeing,tag=!attack,tag=!collided,tag=!vanish,tag=!laugh,tag=!complain,tag=!appear,scores={StunTime=0}] run function luigis_mansion:old_animations/ghost/haunt
+execute at @s[tag=fleeing,tag=!second_flee_state] run function luigis_mansion:old_animations/ghost/flee
 execute at @s[tag=fleeing,tag=second_flee_state] run function luigis_mansion:entities/ghost/second_flee_state
-execute at @s[tag=!fleeing,tag=hurt] run function luigis_mansion:animations/ghost/hurt
-execute at @s[tag=!hurt,tag=element_hurt] run function luigis_mansion:animations/ghost/hurt
+execute at @s[tag=!fleeing,tag=hurt] run function luigis_mansion:old_animations/ghost/hurt
+execute at @s[tag=!hurt,tag=element_hurt] run function luigis_mansion:old_animations/ghost/hurt
 execute at @s[scores={LightX=-2147483648..}] run function luigis_mansion:other/cast_shadow/2_tall

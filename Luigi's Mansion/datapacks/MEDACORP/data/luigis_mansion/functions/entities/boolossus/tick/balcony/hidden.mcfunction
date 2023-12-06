@@ -5,6 +5,6 @@ execute unless entity @e[nbt={ArmorItems:[{tag:{luigis_mansion:{namespace:"luigi
 execute unless entity @e[nbt={ArmorItems:[{tag:{luigis_mansion:{namespace:"luigis_mansion",id:"boolossus"}}}]},tag=talk,limit=1] if entity @a[tag=target,limit=1] run tag @s add talk
 execute as @a[tag=target] run trigger GBHChoice set 0
 
-function luigis_mansion:animations/boo/idle
+function luigis_mansion:old_animations/boo/idle
 execute if entity @s[tag=talk] run function luigis_mansion:dialog/boolossus/hidden
 execute if entity @s[tag=dialog_animation_start] run function luigis_mansion:entities/boolossus/dialog_animation

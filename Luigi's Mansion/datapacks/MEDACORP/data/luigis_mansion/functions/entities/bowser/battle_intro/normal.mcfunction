@@ -19,11 +19,11 @@ tag @s[scores={Dialog=1}] add intro
 scoreboard players set @s[scores={Dialog=1}] AnimationProgress 0
 scoreboard players set @s[scores={Dialog=21}] AnimationProgress 0
 scoreboard players set @s[scores={Dialog=41..250}] AnimationProgress 0
-execute if entity @s[scores={Dialog=1..20}] run function luigis_mansion:animations/bowser/idle
-execute if entity @s[scores={Dialog=21..40}] run function luigis_mansion:animations/bowser/duck
-execute if entity @s[scores={Dialog=41..289}] run function luigis_mansion:animations/bowser/roar
+execute if entity @s[scores={Dialog=1..20}] run function luigis_mansion:old_animations/bowser/idle
+execute if entity @s[scores={Dialog=21..40}] run function luigis_mansion:old_animations/bowser/duck
+execute if entity @s[scores={Dialog=41..289}] run function luigis_mansion:old_animations/bowser/roar
 scoreboard players set @s[scores={Dialog=290}] AnimationProgress 0
-execute if entity @s[scores={Dialog=290..329}] run function luigis_mansion:animations/bowser/grab_head
+execute if entity @s[scores={Dialog=290..329}] run function luigis_mansion:old_animations/bowser/grab_head
 tag @s[scores={Dialog=329}] remove intro
 scoreboard players set @s[scores={Dialog=329}] AnimationProgress 0
 tag @s[scores={Dialog=370}] add breathe_fire

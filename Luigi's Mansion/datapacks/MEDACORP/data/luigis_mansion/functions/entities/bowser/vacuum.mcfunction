@@ -46,7 +46,7 @@ tag @a[tag=got_sucked] remove got_sucked
 tag @a[tag=pulled] remove pulled
 scoreboard players reset #temp Time
 
-execute if entity @s[scores={ActionTime=1..20}] run function luigis_mansion:animations/bowser/vacuum_prepare
-execute if entity @s[scores={ActionTime=21..30}] run function luigis_mansion:animations/bowser/vacuum
-execute if entity @s[scores={ActionTime=31..110}] run function luigis_mansion:animations/bowser/chew
-execute if entity @s[scores={ActionTime=121..140}] run function luigis_mansion:animations/bowser/vacuum_cancel
+execute if entity @s[scores={ActionTime=1..20}] run function luigis_mansion:old_animations/bowser/vacuum_prepare
+execute if entity @s[scores={ActionTime=21..30}] run function luigis_mansion:old_animations/bowser/vacuum
+execute if entity @s[scores={ActionTime=31..110}] run function luigis_mansion:old_animations/bowser/chew
+execute if entity @s[scores={ActionTime=121..140}] run function luigis_mansion:old_animations/bowser/vacuum_cancel

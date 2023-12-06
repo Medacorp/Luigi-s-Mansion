@@ -10,8 +10,14 @@ WARNING! When updating an old save version, be sure to:
 * Added death messages
 * Added revive messages
 * Added difficulty effects; the higher the difficulty, the harder; total score gets a multiplier based on the lowest selected difficulty in the mansion
+* Changed E. Gadd model
 * Rewrote a lot
 * Bug fixes
+
+
+2.3.9:
+* Updated to 1.20.3
+* Applied new JSON text component optimizating fields "type" and "source"
 
 
 2.3.8:

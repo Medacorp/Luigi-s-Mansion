@@ -44,7 +44,7 @@ furniture:{
     dialog:"<name>", //Dialog to trigger on manual search (requires searchable to have "interact" method). Default = none.
     can_hide_boo:1b, //If this furniture is randomly selected by boos to hide in. Default = 0b.
     scan_message: //Result from GBH scan. Not provided = ignored by scan. Has several formats and behaviors.
-        * '{"translate":"..."}', //Message as a result from GBH scan. Gooigi scan always results in the "......." string.
+        * 'JSON', //Message as a result from GBH scan. Gooigi scan always results in the "......." string.
         * "warp", //Warps the scanner on GBH scan if they're not Gooigi, not in a dialog, and the can_warp global variable is turned on (if conditions are not met, will send the message "Huh...?" instead). Gooigi scan always results in the "......." string.
         * "", //Prevents GBH scan from passing through, but has no result.
         * "spawn_ghost", //Spawns the ghost positioned in the furniture.

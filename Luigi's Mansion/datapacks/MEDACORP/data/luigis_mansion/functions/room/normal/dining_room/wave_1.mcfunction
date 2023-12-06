@@ -7,7 +7,7 @@ execute positioned 708 11 40 run function luigis_mansion:spawn_entities/banana_p
 execute positioned 707 11 51 run function luigis_mansion:spawn_entities/banana_peel
 execute positioned 708 11 55 run function luigis_mansion:spawn_entities/banana_peel
 execute positioned 703 11 54 run function luigis_mansion:spawn_entities/banana_peel
-data modify storage luigis_mansion:data entity set value {scan_message:{sender:"me",message:'{"translate":"luigis_mansion:message.mr_luggs.scan"}'}}
+data modify storage luigis_mansion:data entity set value {scan_message:{sender:"me",message:'{"type":"translatable","translate":"luigis_mansion:message.mr_luggs.scan"}'}}
 execute positioned 702 11 43 rotated -90 0 run function luigis_mansion:spawn_entities/portrait_ghost/mr_luggs
 execute positioned 700 11 56 run function luigis_mansion:spawn_entities/ghost/waiter
 tag @e[x=700.5,y=11,z=56.5,distance=..1,nbt={ArmorItems:[{tag:{namespace:"luigis_mansion",id:"waiter"}}]}] add kitchen_waiter

@@ -13,7 +13,7 @@ execute if entity @s[scores={ActionTime=30}] run playsound luigis_mansion:entity
 execute if entity @s[scores={ActionTime=31}] run playsound luigis_mansion:entity.ceiling_surprise.laugh hostile @a[tag=same_room] ~ ~ ~ 1
 execute if entity @s[scores={ActionTime=36}] run playsound luigis_mansion:entity.ceiling_surprise.laugh hostile @a[tag=same_room] ~ ~ ~ 1
 execute if entity @s[scores={ActionTime=38}] run playsound luigis_mansion:entity.ceiling_surprise.clap hostile @a[tag=same_room] ~ ~ ~ 1
-execute at @s run function luigis_mansion:animations/ceiling_ghost/laugh
+execute at @s run function luigis_mansion:old_animations/ceiling_ghost/laugh
 tag @s[scores={ActionTime=40}] remove laugh
 tag @s[scores={ActionTime=40}] add vanish
 scoreboard players set @s[scores={ActionTime=40}] AnimationProgress 0

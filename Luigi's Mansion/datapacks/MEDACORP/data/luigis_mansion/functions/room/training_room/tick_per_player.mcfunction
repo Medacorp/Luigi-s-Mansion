@@ -1,5 +1,5 @@
 function luigis_mansion:other/music/set/training_option
-title @s[tag=!seen_room_name] title {"translate":"luigis_mansion:location.training_room"}
+title @s[tag=!seen_room_name] title {"type":"translatable","translate":"luigis_mansion:location.training_room"}
 tag @s add seen_room_name
 
 tag @s[scores={Animation=2},tag=!idle] add spectator

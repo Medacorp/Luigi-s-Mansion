@@ -1,2 +1,0 @@
-execute if score #mirrored Selected matches 0 run function luigis_mansion:animations/vincent_van_gore/normal/paint
-execute if score #mirrored Selected matches 1 run function luigis_mansion:animations/vincent_van_gore/mirrored/paint

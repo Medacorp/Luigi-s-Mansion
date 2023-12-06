@@ -11,10 +11,10 @@ scoreboard players set @s[scores={Boos=560..999}] Boos 1000
 execute at @s[scores={Boos=1..1000}] facing entity @e[tag=same_room,tag=!spectator,tag=player,sort=nearest,limit=1] feet run teleport @s ~ ~ ~ ~ ~
 execute if entity @s[scores={Boos=1..999,Sound=0}] run playsound luigis_mansion:entity.boo.laugh hostile @a[tag=same_room] ~ ~ ~ 1
 scoreboard players set @s[scores={Boos=1..999,Sound=0}] Sound 20
-execute at @s[scores={Boos=1..999}] run function luigis_mansion:animations/boo/laugh
+execute at @s[scores={Boos=1..999}] run function luigis_mansion:old_animations/boo/laugh
 scoreboard players set @s[scores={Boos=1000}] AnimationProgress 0
 execute if entity @s[scores={Boos=1000}] run stopsound @a[tag=same_room] hostile luigis_mansion:entity.boo.laugh
-execute at @s[scores={Boos=1000..}] run function luigis_mansion:animations/boo/attack
+execute at @s[scores={Boos=1000..}] run function luigis_mansion:old_animations/boo/attack
 scoreboard players operation #temp Move = @s Move
 scoreboard players operation #temp Move *= #3 Constants
 execute at @s[scores={Boos=1000..}] run function luigis_mansion:entities/boo/move_forward

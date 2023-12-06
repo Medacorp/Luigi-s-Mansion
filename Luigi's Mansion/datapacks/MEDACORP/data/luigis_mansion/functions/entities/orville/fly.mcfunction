@@ -15,10 +15,10 @@ execute if entity @s[tag=!planeless,scores={VacuumTime=40}] run function luigis_
 tag @s[tag=planeless,scores={VulnerableTime=0}] add vanish
 
 tag @s[tag=!visible] add grab_vehicle
-execute unless entity @s[tag=!planeless,tag=!in_vacuum] at @s[tag=!vanish,tag=!grab_vehicle,scores={WaitTime=40..}] run function luigis_mansion:animations/orville/complain
+execute unless entity @s[tag=!planeless,tag=!in_vacuum] at @s[tag=!vanish,tag=!grab_vehicle,scores={WaitTime=40..}] run function luigis_mansion:old_animations/orville/complain
 execute at @s[tag=laugh] run function luigis_mansion:entities/orville/laugh
 execute at @s[tag=grab_vehicle] run function luigis_mansion:entities/orville/grab_vehicle
-execute at @s[tag=!planeless,tag=!in_vacuum,tag=!vanish,tag=!laugh] run function luigis_mansion:animations/orville/drive
+execute at @s[tag=!planeless,tag=!in_vacuum,tag=!vanish,tag=!laugh] run function luigis_mansion:old_animations/orville/drive
 
 execute if entity @s[scores={WaitTime=0},tag=laugh] facing entity @e[tag=same_room,tag=!spectator,tag=player,sort=nearest,limit=1] feet rotated ~ 0 run teleport @s ~ ~ ~ ~ ~
 execute at @s run tp @s ~ ~0.2 ~

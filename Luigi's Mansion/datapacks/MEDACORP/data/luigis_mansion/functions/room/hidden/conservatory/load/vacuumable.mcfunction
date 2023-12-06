@@ -1,1 +1,1 @@
-summon minecraft:item_frame 661 13 42 {Facing:2b,Fixed:1b,Invisible:1b,Silent:1b,CustomName:'{"translate":"luigis_mansion:entity.poster"}',Item:{id:"minecraft:filled_map",Count:1b,tag:{map:156}},Tags:["poster"]}
+summon minecraft:item_frame 661 13 42 {Facing:2b,Fixed:1b,Invisible:1b,Silent:1b,CustomName:'{"type":"translatable","translate":"luigis_mansion:entity.poster"}',Item:{id:"minecraft:filled_map",Count:1b,tag:{map:156}},Tags:["poster"]}

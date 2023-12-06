@@ -1,3 +1,3 @@
-data modify storage luigis_mansion:data furniture set value {searchable:["interact","vacuum"],shake_animation:["interact","vacuum"],sound:{namespace:"luigis_mansion",id:"heavy_generic"},scan_message:'{"translate":"luigis_mansion:message.player.scan_furniture.11"}'}
+data modify storage luigis_mansion:data furniture set value {searchable:["interact","vacuum"],shake_animation:["interact","vacuum"],sound:{namespace:"luigis_mansion",id:"heavy_generic"},scan_message:'{"type":"translatable","translate":"luigis_mansion:message.player.scan_furniture.11"}'}
 execute unless data storage luigis_mansion:data current_state.current_data{money_spawned:["sealed_room_treasure_chest_7"]} run data modify storage luigis_mansion:data furniture.loot set value {name:"sealed_room_treasure_chest_7",contents:{luigis_mansion:{green_emerald:1}}}
 execute positioned 703.0 21 -84 rotated 0 0 run function luigis_mansion:spawn_furniture/treasure_chest/big

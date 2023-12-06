@@ -1,6 +1,6 @@
-execute if entity @s[tag=!long_shake,tag=!use_medium_shake] run function luigis_mansion:animations/furniture/shake
-execute if entity @s[tag=use_medium_shake] run function luigis_mansion:animations/furniture/medium_shake
-execute if entity @s[tag=long_shake,tag=!use_medium_shake] run function luigis_mansion:animations/furniture/long_shake
+execute if entity @s[tag=!long_shake,tag=!use_medium_shake] run function luigis_mansion:old_animations/furniture/shake
+execute if entity @s[tag=use_medium_shake] run function luigis_mansion:old_animations/furniture/medium_shake
+execute if entity @s[tag=long_shake,tag=!use_medium_shake] run function luigis_mansion:old_animations/furniture/long_shake
 execute if entity @s[scores={Sound=0}] unless entity @s[tag=!long_shake,tag=!use_medium_shake,scores={AnimationProgress=3}] unless entity @s[scores={AnimationProgress=0}] unless entity @s[tag=use_medium_shake,scores={AnimationProgress=2..5}] unless entity @s[tag=use_medium_shake,scores={AnimationProgress=7..10}] unless entity @s[tag=use_medium_shake,scores={AnimationProgress=12..15}] unless entity @s[tag=use_medium_shake,scores={AnimationProgress=17..20}] unless entity @s[tag=long_shake,tag=!use_medium_shake,scores={AnimationProgress=2..10}] unless entity @s[tag=long_shake,tag=!use_medium_shake,scores={AnimationProgress=12..16}] run function luigis_mansion:entities/furniture/shake_sound with entity @s ArmorItems[3].tag.shake_sound
 tag @s[scores={AnimationProgress=0}] remove shake
 tag @s[scores={AnimationProgress=0}] remove long_shake

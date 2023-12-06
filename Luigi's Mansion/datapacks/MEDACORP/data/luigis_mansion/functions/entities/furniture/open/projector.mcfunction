@@ -1,1 +1,1 @@
-execute if entity @s[tag=projector] run function luigis_mansion:animations/furniture/projector
+execute if entity @s[tag=projector] run function luigis_mansion:old_animations/furniture/projector

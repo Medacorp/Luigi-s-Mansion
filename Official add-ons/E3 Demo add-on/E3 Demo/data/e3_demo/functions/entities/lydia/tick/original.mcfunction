@@ -14,5 +14,5 @@ execute if entity @s[scores={Dialog=101}] run playsound luigis_mansion:entity.ly
 scoreboard players set @s[scores={Dialog=101}] VulnerableTime 40
 scoreboard players set @s[scores={Dialog=141}] Dialog 0
 
-execute at @s[scores={Dialog=101..140},tag=!vanish] run function luigis_mansion:animations/lydia/turn_around
-execute at @s[tag=!vanish] unless entity @s[scores={Dialog=101..140}] run function luigis_mansion:animations/lydia/idle
+execute at @s[scores={Dialog=101..140},tag=!vanish] run function luigis_mansion:old_animations/lydia/turn_around
+execute at @s[tag=!vanish] unless entity @s[scores={Dialog=101..140}] run function luigis_mansion:old_animations/lydia/idle

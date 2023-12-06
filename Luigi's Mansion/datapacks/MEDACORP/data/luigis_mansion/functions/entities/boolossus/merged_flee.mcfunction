@@ -8,4 +8,4 @@ execute if entity @s[scores={Wave=90}] run scoreboard players set #temp Move 20
 scoreboard players set @s[scores={Wave=90}] Wave 30
 execute if entity @s[scores={Wave=30..}] run tag @s remove hit_floor
 execute if score #temp Move matches 1.. at @s run function luigis_mansion:entities/boo/move_forward
-execute at @s run function luigis_mansion:animations/boo/flee
+execute at @s run function luigis_mansion:old_animations/boo/flee

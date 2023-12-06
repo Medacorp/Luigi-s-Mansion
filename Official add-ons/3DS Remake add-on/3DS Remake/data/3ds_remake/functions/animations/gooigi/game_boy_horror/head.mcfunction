@@ -1,6 +1,6 @@
 scoreboard players add @s AnimationProgress 1
-data modify entity @s[scores={AnimationProgress=1}] {Pose:{Head:[30.0f,0.0f,0.01f]}}
-data modify entity @s[scores={AnimationProgress=1},tag=flipped_gravity] {Pose:{Head:[30.0f,0.0f,-180.0f]}}
+data merge entity @s[scores={AnimationProgress=1}] {Pose:{Head:[30.0f,0.0f,0.01f]}}
+data merge entity @s[scores={AnimationProgress=1},tag=flipped_gravity] {Pose:{Head:[30.0f,0.0f,-180.0f]}}
 execute store result score #temp Time run data get entity @s Pose.Head[0] 10
 execute if entity @s[scores={AnimationProgress=1}] store result entity @s Pose.Head[0] float 0.1 run scoreboard players set #temp Time 302
 execute if entity @s[scores={AnimationProgress=2}] store result entity @s Pose.Head[0] float 0.1 run scoreboard players set #temp Time 304

@@ -1,2 +1,0 @@
-execute if score #mirrored Selected matches 0 run function luigis_mansion:animations/lydia/normal/turn_around
-execute if score #mirrored Selected matches 1 run function luigis_mansion:animations/lydia/mirrored/turn_around

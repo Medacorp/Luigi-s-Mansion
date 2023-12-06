@@ -13,11 +13,11 @@ scoreboard players set @s[scores={Sound=0},tag=fleeing,tag=!dying] Sound 40
 
 execute if entity @s[tag=!fleeing,tag=!hurt,scores={StunTime=0}] run function #luigis_mansion:entities/chauncey/tick
 execute if entity @s[tag=vanish] run function luigis_mansion:entities/chauncey/vanish
-execute at @s[tag=fleeing,tag=!second_flee_state] run function luigis_mansion:animations/chauncey/flee
+execute at @s[tag=fleeing,tag=!second_flee_state] run function luigis_mansion:old_animations/chauncey/flee
 execute at @s[tag=fleeing,tag=second_flee_state] run function luigis_mansion:entities/chauncey/second_flee_state
 execute if entity @s[tag=!fleeing,tag=hurt,tag=!big] run function luigis_mansion:entities/ghost/turn_visible
 execute if entity @s[tag=!fleeing,tag=hurt,tag=big] run function luigis_mansion:entities/ghost/turn_visible_big
-execute at @s[tag=!fleeing,tag=hurt] run function luigis_mansion:animations/chauncey/hurt
+execute at @s[tag=!fleeing,tag=hurt] run function luigis_mansion:old_animations/chauncey/hurt
 
 scoreboard players reset #temp GhostNr
 tag @e[tag=this_model,limit=1] add found_owner

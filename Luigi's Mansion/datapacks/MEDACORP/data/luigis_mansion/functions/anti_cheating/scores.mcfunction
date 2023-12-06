@@ -267,7 +267,7 @@ execute unless score #debug_messages Selected matches 0..2 run scoreboard player
 execute unless score #debug_furniture Selected matches 0..1 run scoreboard players set #debug_furniture Selected 0
 execute unless score #debug_entities Selected matches 0..1 run scoreboard players set #debug_entities Selected 0
 
-bossbar add luigis_mansion:boo_counter {"translate":"luigis_mansion:message.boo_counter","color":"white","with":["0","0"]}
+bossbar add luigis_mansion:boo_counter {"type":"translatable","translate":"luigis_mansion:message.boo_counter","color":"white","with":["0","0"]}
 bossbar set luigis_mansion:boo_counter color white
 
 execute unless score #loaded_exterior Selected matches -2147483648.. run scoreboard players set #loaded_exterior Selected 0
@@ -296,3 +296,4 @@ gamerule doTileDrops false
 gamerule doEntityDrops false
 gamerule fallDamage false
 gamerule maxCommandChainLength 2147483647
+gamerule maxCommandForkCount 2147483647

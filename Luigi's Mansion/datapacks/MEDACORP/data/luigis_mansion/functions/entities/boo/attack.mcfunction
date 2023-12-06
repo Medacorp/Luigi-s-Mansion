@@ -1,6 +1,6 @@
 scoreboard players add @s ActionTime 1
 scoreboard players set @s[scores={ActionTime=1}] AnimationProgress 0
-execute at @s run function luigis_mansion:animations/boo/attack
+execute at @s run function luigis_mansion:old_animations/boo/attack
 execute at @s[scores={ActionTime=1}] facing entity @e[tag=same_room,tag=!spectator,tag=player,sort=nearest,limit=1] feet run teleport @s ~ ~ ~ ~ ~
 execute at @s run function luigis_mansion:entities/boo/move_forward
 execute at @s[tag=wall] facing entity @e[tag=same_room,tag=!spectator,tag=player,sort=nearest,limit=1] feet run teleport @s ~ ~ ~ ~ ~

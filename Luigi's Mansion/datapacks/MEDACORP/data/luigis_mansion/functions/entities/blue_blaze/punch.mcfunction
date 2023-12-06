@@ -1,6 +1,6 @@
 scoreboard players add @s ActionTime 1
 scoreboard players set @s[scores={ActionTime=1}] AnimationProgress 0
-execute at @s run function luigis_mansion:animations/twirler/punch
+execute at @s run function luigis_mansion:old_animations/twirler/punch
 
 teleport @s[scores={ActionTime=1..39}] ^ ^ ^0.0125
 execute if entity @s[scores={ActionTime=41}] run playsound luigis_mansion:entity.ghost.punch hostile @a[tag=same_room] ~ ~ ~ 1

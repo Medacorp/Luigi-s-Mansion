@@ -1,6 +1,6 @@
 execute anchored eyes facing entity @a[tag=target,limit=1] feet anchored feet positioned ^ ^0.5 ^ run teleport @s ~ ~ ~ ~ ~
 playsound luigis_mansion:entity.bowser.spit hostile @a[tag=same_room] ~ ~ ~ 1
-execute anchored eyes run summon minecraft:armor_stand ^ ^-0.2 ^0.3 {CustomName:'{"translate":"luigis_mansion:entity.shot_ice"}',Pose:{Head:[0.0f,0.0f,0.01f]},HasVisualFire:1b,Marker:1b,Invulnerable:1b,Tags:["shot_ice","new"],ArmorItems:[{},{},{},{id:"minecraft:diamond_pickaxe",Count:1b,tag:{Unbreakable:1b,Damage:4,CustomModelData:14}}],Invisible:1b,DisabledSlots:2039583,Small:1b}
+execute anchored eyes run summon minecraft:armor_stand ^ ^-0.2 ^0.3 {CustomName:'{"type":"translatable","translate":"luigis_mansion:entity.shot_ice"}',Pose:{Head:[0.0f,0.0f,0.01f]},HasVisualFire:1b,Marker:1b,Invulnerable:1b,Tags:["shot_ice","new"],ArmorItems:[{},{},{},{id:"minecraft:diamond_pickaxe",Count:1b,tag:{Unbreakable:1b,Damage:4,CustomModelData:14}}],Invisible:1b,DisabledSlots:2039583,Small:1b}
 data modify entity @e[tag=shot_ice,tag=new,limit=1] ArmorItems[3].tag.luigis_mansion.damage set value {attack:5}
 scoreboard players operation @e[tag=shot_ice,tag=new,limit=1] Owner = @s GhostNr
 scoreboard players operation @e[tag=shot_ice,tag=new,limit=1] Room = @s Room

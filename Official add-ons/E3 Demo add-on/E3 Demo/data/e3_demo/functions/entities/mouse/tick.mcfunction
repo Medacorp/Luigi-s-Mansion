@@ -28,7 +28,7 @@ data modify entity @s[tag=visible] ArmorItems[3].id set value "minecraft:leather
 execute at @s[tag=!rotated,tag=visible] run function e3_demo:entities/mouse/move
 execute at @s[tag=rotated,tag=!squeek] rotated ~ 0 run function e3_demo:entities/mouse/move_forward
 execute if entity @s[tag=disappear,tag=!dead,tag=!squeek] run function e3_demo:entities/mouse/back_to_start
-execute at @s[tag=visible,tag=!squeek] run function luigis_mansion:animations/mouse/idle
+execute at @s[tag=visible,tag=!squeek] run function luigis_mansion:old_animations/mouse/idle
 execute if entity @s[tag=squeek] run function e3_demo:entities/mouse/squeek
 execute at @s[tag=visible,scores={LightX=-2147483648..}] run function luigis_mansion:other/cast_shadow/1_tall
 execute at @s run teleport @s ~ ~-1.3 ~

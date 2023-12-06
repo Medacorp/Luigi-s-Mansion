@@ -28,7 +28,7 @@ scoreboard players set @s[scores={Dialog=142}] Dialog 41
 execute if entity @s[scores={Dialog=40..,Sound=0}] run playsound luigis_mansion:entity.slim_bankshot.complain2 hostile @a[tag=same_room] ~ ~ ~ 1
 execute if entity @s[scores={Dialog=40..,Sound=0}] run scoreboard players set @s Sound 10
 
-execute if entity @s[scores={Dialog=2..20}] run function luigis_mansion:animations/slim_bankshot/hit
-execute if entity @s[scores={Dialog=22..40}] run function luigis_mansion:animations/slim_bankshot/hit
-execute if entity @s[scores={Dialog=42..81}] run function luigis_mansion:animations/slim_bankshot/ko
-execute if entity @s[scores={Dialog=82..141}] run function luigis_mansion:animations/slim_bankshot/complain
+execute if entity @s[scores={Dialog=2..20}] run function luigis_mansion:old_animations/slim_bankshot/hit
+execute if entity @s[scores={Dialog=22..40}] run function luigis_mansion:old_animations/slim_bankshot/hit
+execute if entity @s[scores={Dialog=42..81}] run function luigis_mansion:old_animations/slim_bankshot/ko
+execute if entity @s[scores={Dialog=82..141}] run function luigis_mansion:old_animations/slim_bankshot/complain

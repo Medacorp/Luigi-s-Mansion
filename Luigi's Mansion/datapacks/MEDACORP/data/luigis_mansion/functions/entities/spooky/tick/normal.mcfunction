@@ -52,12 +52,12 @@ kill @e[tag=target,limit=1,type=minecraft:marker]
 execute at @s run teleport @s[scores={Dialog=37..},tag=!moved_up] ~ ~0.6 ~
 scoreboard players reset @s[scores={Dialog=37..},tag=!moved_up] Dialog
 
-execute at @s[tag=wake_up] run function luigis_mansion:animations/spooky/wake_up
-execute at @s[tag=bark] run function luigis_mansion:animations/spooky/bark
-execute at @s[tag=move] run function luigis_mansion:animations/spooky/move
-execute at @s[tag=bite] run function luigis_mansion:animations/spooky/bite
-execute at @s[tag=hold] run function luigis_mansion:animations/spooky/hold
-execute at @s[tag=let_go] run function luigis_mansion:animations/spooky/let_go
-execute at @s[tag=breathe] run function luigis_mansion:animations/spooky/breathe
-execute at @s[tag=lick,tag=!vanish] run function luigis_mansion:animations/spooky/lick
-execute at @s[tag=!wake_up,tag=!bark,tag=!move,tag=!bite,tag=!hold,tag=!let_go,tag=!breathe,tag=!lick,tag=!vanish] run function luigis_mansion:animations/spooky/idle
+execute at @s[tag=wake_up] run function luigis_mansion:old_animations/spooky/wake_up
+execute at @s[tag=bark] run function luigis_mansion:old_animations/spooky/bark
+execute at @s[tag=move] run function luigis_mansion:old_animations/spooky/move
+execute at @s[tag=bite] run function luigis_mansion:old_animations/spooky/bite
+execute at @s[tag=hold] run function luigis_mansion:old_animations/spooky/hold
+execute at @s[tag=let_go] run function luigis_mansion:old_animations/spooky/let_go
+execute at @s[tag=breathe] run function luigis_mansion:old_animations/spooky/breathe
+execute at @s[tag=lick,tag=!vanish] run function luigis_mansion:old_animations/spooky/lick
+execute at @s[tag=!wake_up,tag=!bark,tag=!move,tag=!bite,tag=!hold,tag=!let_go,tag=!breathe,tag=!lick,tag=!vanish] run function luigis_mansion:old_animations/spooky/idle

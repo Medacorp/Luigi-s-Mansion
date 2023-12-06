@@ -1,2 +1,2 @@
-data modify storage luigis_mansion:data furniture set value {searchable:["interact","vacuum","dust","fire","water","ice"],interact_animation:7,scan_message:'{"translate":"luigis_mansion:message.player.scan_furniture.40"}'}
+data modify storage luigis_mansion:data furniture set value {searchable:["interact","vacuum","dust","fire","water","ice"],interact_animation:7,scan_message:'{"type":"translatable","translate":"luigis_mansion:message.player.scan_furniture.40"}'}
 execute positioned 644 18 62 run function luigis_mansion:spawn_furniture/punching_bag

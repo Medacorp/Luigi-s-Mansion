@@ -1,1 +1,1 @@
-tellraw @s {"translate":"extensive_training:message.training_type.pvp","color":"green","clickEvent":{"action":"run_command","value":"/trigger TrainingRoomOption set 4"}}
+tellraw @s {"type":"translatable","translate":"extensive_training:message.training_type.pvp","color":"green","clickEvent":{"action":"run_command","value":"/trigger TrainingRoomOption set 4"}}

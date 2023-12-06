@@ -6,6 +6,6 @@ execute if entity @s[tag=say] run say @e[tag=same_room]
 tag @s remove say
 
 execute at @s[tag=appear] run function luigis_mansion:entities/henry/appear
-execute at @s[tag=nod] run function luigis_mansion:animations/henry/nod
-execute at @s[tag=shake] run function luigis_mansion:animations/henry/shake
-execute at @s[tag=!nod,tag=!shake,tag=!appear,tag=!vanish] unless entity @s[tag=!hide_and_seek,tag=!no_ai] run function luigis_mansion:animations/henry/idle
+execute at @s[tag=nod] run function luigis_mansion:old_animations/henry/nod
+execute at @s[tag=shake] run function luigis_mansion:old_animations/henry/shake
+execute at @s[tag=!nod,tag=!shake,tag=!appear,tag=!vanish] unless entity @s[tag=!hide_and_seek,tag=!no_ai] run function luigis_mansion:old_animations/henry/idle

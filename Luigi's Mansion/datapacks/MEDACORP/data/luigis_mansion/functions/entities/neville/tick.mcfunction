@@ -16,10 +16,10 @@ execute if entity @e[tag=same_room,tag=!spectator,tag=player,distance=..1.6,limi
 execute if entity @s[tag=!fleeing,tag=!hurt,scores={StunTime=0}] run function #luigis_mansion:entities/neville/tick
 
 execute if entity @s[tag=vanish] run function luigis_mansion:entities/neville/vanish
-execute at @s[tag=fleeing,tag=!second_flee_state] run function luigis_mansion:animations/neville/flee
+execute at @s[tag=fleeing,tag=!second_flee_state] run function luigis_mansion:old_animations/neville/flee
 execute at @s[tag=fleeing,tag=second_flee_state] run function luigis_mansion:entities/neville/second_flee_state
 execute if entity @s[tag=!fleeing,tag=hurt] run function luigis_mansion:entities/ghost/turn_visible_no_equipment
-execute at @s[tag=!fleeing,tag=hurt] run function luigis_mansion:animations/neville/hurt
+execute at @s[tag=!fleeing,tag=hurt] run function luigis_mansion:old_animations/neville/hurt
 
 scoreboard players reset #temp GhostNr
 tag @e[tag=this_model] add found_owner

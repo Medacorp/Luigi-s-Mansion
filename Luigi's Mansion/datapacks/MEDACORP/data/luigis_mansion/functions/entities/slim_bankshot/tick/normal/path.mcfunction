@@ -23,5 +23,5 @@ execute if entity @s[scores={PathStep=80}] run playsound luigis_mansion:entity.s
 execute if entity @s[scores={PathStep=80}] run tag @e[tag=billiards_ball,tag=white,limit=1] add move
 scoreboard players set @s[scores={PathStep=101}] PathStep 1
 
-execute unless entity @s[scores={PathStep=40..99}] run function luigis_mansion:animations/slim_bankshot/move
-execute if entity @s[scores={PathStep=40..99}] run function luigis_mansion:animations/slim_bankshot/play
+execute unless entity @s[scores={PathStep=40..99}] run function luigis_mansion:old_animations/slim_bankshot/move
+execute if entity @s[scores={PathStep=40..99}] run function luigis_mansion:old_animations/slim_bankshot/play

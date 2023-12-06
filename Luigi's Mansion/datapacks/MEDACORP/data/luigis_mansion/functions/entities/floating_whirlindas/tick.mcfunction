@@ -19,9 +19,9 @@ execute at @s[tag=!fleeing,tag=!hurt,scores={StunTime=0}] run function #luigis_m
 execute at @s unless entity @s[tag=!fleeing,tag=!hurt] run teleport @e[tag=floating_whirlindas_female,tag=this_model,limit=1] ^-0.5 ^ ^1 ~ ~
 
 execute if entity @s[tag=vanish] run function luigis_mansion:entities/floating_whirlindas/vanish
-execute at @s[tag=fleeing,tag=!second_flee_state] run function luigis_mansion:animations/floating_whirlindas/flee
+execute at @s[tag=fleeing,tag=!second_flee_state] run function luigis_mansion:old_animations/floating_whirlindas/flee
 execute at @s[tag=fleeing,tag=second_flee_state] run function luigis_mansion:entities/floating_whirlindas/second_flee_state
-execute at @s[tag=!fleeing,tag=hurt] run function luigis_mansion:animations/floating_whirlindas/hurt
+execute at @s[tag=!fleeing,tag=hurt] run function luigis_mansion:old_animations/floating_whirlindas/hurt
 
 execute at @s[scores={LightX=-2147483648..}] run function luigis_mansion:other/cast_shadow/2_tall
 execute at @s[scores={LightX=-2147483648..}] at @e[tag=floating_whirlindas_female,limit=1] run function luigis_mansion:other/cast_shadow/2_tall

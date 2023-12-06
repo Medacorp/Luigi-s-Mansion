@@ -7,7 +7,7 @@ execute if entity @s[scores={ActionTime=1}] as @e[tag=same_room,tag=game_boy_hor
 execute if entity @s[scores={ActionTime=1}] as @a[tag=!spectator,distance=..5] run function luigis_mansion:entities/player/scare/normal
 execute at @s[scores={ActionTime=2..13}] run particle minecraft:block minecraft:dirt ~ ~0.6 ~ 0.3 0.6 0.3 0 3
 scoreboard players set @s[scores={ActionTime=1}] AnimationProgress 0
-execute at @s run function luigis_mansion:animations/mr_bones/appear
+execute at @s run function luigis_mansion:old_animations/mr_bones/appear
 tag @s[scores={ActionTime=20}] remove appear
 scoreboard players set @s[scores={ActionTime=20}] AnimationProgress 0
 scoreboard players set @s[scores={ActionTime=20}] ActionTime 0

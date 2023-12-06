@@ -1,2 +1,2 @@
-data modify storage luigis_mansion:data furniture set value {searchable:["vacuum"],shake_animation:["interact"],no_visual_shake:1b,no_dust:1b,scan_message:'{"translate":"luigis_mansion:message.player.scan_furniture.104"}'}
+data modify storage luigis_mansion:data furniture set value {searchable:["vacuum"],shake_animation:["interact"],no_visual_shake:1b,no_dust:1b,scan_message:'{"type":"translatable","translate":"luigis_mansion:message.player.scan_furniture.104"}'}
 execute positioned 745 27 -20 rotated -90 0 run function 3ds_remake:spawn_furniture/mobile/helicopter/clockwise

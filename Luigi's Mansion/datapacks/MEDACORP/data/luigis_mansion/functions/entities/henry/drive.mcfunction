@@ -15,10 +15,10 @@ execute if entity @s[tag=!carless,scores={VacuumTime=40}] run function luigis_ma
 tag @s[tag=carless,scores={VulnerableTime=0}] add vanish
 
 tag @s[tag=!visible] add grab_vehicle
-execute unless entity @s[tag=!carless,tag=!in_vacuum] at @s[tag=!vanish,tag=!grab_vehicle,scores={WaitTime=40..}] run function luigis_mansion:animations/henry/complain
+execute unless entity @s[tag=!carless,tag=!in_vacuum] at @s[tag=!vanish,tag=!grab_vehicle,scores={WaitTime=40..}] run function luigis_mansion:old_animations/henry/complain
 execute at @s[tag=laugh] run function luigis_mansion:entities/henry/laugh
 execute at @s[tag=grab_vehicle] run function luigis_mansion:entities/henry/grab_vehicle
-execute at @s[tag=!carless,tag=!in_vacuum,tag=!vanish,tag=!laugh] run function luigis_mansion:animations/henry/drive
+execute at @s[tag=!carless,tag=!in_vacuum,tag=!vanish,tag=!laugh] run function luigis_mansion:old_animations/henry/drive
 
 execute at @s[tag=!vanish,scores={StunTime=0},tag=!carless,tag=!grab_vehicle] facing entity @e[tag=same_room,tag=!spectator,tag=player,sort=nearest,limit=1] feet rotated ~ 0 run teleport @s ~ ~ ~ ~ ~
 execute at @s run tp @s ~ ~0.2 ~

@@ -26,6 +26,6 @@ data modify entity @s[tag=visible] ArmorItems[3].id set value "minecraft:leather
 scoreboard players add @s[tag=visible] SpawnTime 1
 execute at @s[tag=!dead,scores={SpawnTime=20..}] run function #luigis_mansion:entities/gold_mouse/tick
 execute at @s[tag=!dead,scores={SpawnTime=20..}] run function luigis_mansion:entities/gold_mouse/move_forward
-execute at @s run function luigis_mansion:animations/mouse/idle
+execute at @s run function luigis_mansion:old_animations/mouse/idle
 execute at @s[tag=visible,scores={LightX=-2147483648..}] run function luigis_mansion:other/cast_shadow/1_tall
 execute at @s[tag=visible] run teleport @s ~ ~-1.3 ~

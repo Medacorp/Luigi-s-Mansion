@@ -1,5 +1,5 @@
 execute at @s run function luigis_mansion:entities/ghost/hidden_tick
-execute at @s run function luigis_mansion:animations/bowling_ghost/idle
+execute at @s run function luigis_mansion:old_animations/bowling_ghost/idle
 tag @s[tag=spawn,tag=!no_appear] add appear
 tag @s remove attack
 tag @s remove grabbed_ball

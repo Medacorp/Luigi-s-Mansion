@@ -21,10 +21,10 @@ scoreboard players set @s[scores={Sound=0},tag=!hurt,tag=!fleeing,tag=visible] S
 execute if entity @s[tag=!fleeing,tag=!hurt,tag=!vanish,scores={StunTime=0}] run function #luigis_mansion:entities/bogmire/tick
 
 execute at @s[tag=vanish] run function luigis_mansion:entities/bogmire/vanish
-execute at @s[tag=fleeing,tag=!second_flee_state] run function luigis_mansion:animations/bogmire/flee
+execute at @s[tag=fleeing,tag=!second_flee_state] run function luigis_mansion:old_animations/bogmire/flee
 execute at @s[tag=fleeing,tag=second_flee_state] run function luigis_mansion:entities/bogmire/second_flee_state
 execute at @s[tag=!fleeing,tag=hurt] run tag @e[tag=bogmires_shadow] add dead
-execute at @s[tag=!fleeing,tag=hurt] run function luigis_mansion:animations/bogmire/hurt
+execute at @s[tag=!fleeing,tag=hurt] run function luigis_mansion:old_animations/bogmire/hurt
 tag @s[tag=hurt] remove shadow_hit
 tag @s[tag=hurt] remove big_shadow
 execute if entity @s[tag=shadow_hit,tag=!big_shadow] run item replace entity @e[tag=bogmire_shadow_blob,tag=this_model,limit=1] armor.head with minecraft:diamond_pickaxe{Unbreakable:1,Damage:4,CustomModelData:5}

@@ -43,4 +43,4 @@ tag @s[scores={ActionTime=140}] remove breathe_fire
 scoreboard players set @s[scores={ActionTime=140}] AnimationProgress 0
 scoreboard players reset @s[scores={ActionTime=140}] ActionTime
 
-function luigis_mansion:animations/bowser/breathe_fire
+function luigis_mansion:old_animations/bowser/breathe_fire

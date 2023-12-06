@@ -1,3 +1,3 @@
-summon minecraft:armor_stand ~ ~0.01 ~ {CustomName:'{"translate":"luigis_mansion:furniture.ball_floor"}',Pose:{RightArm:[0.0f,0.0f,0.0f]},Marker:1b,NoGravity:1b,Invisible:1b,HandItems:[{id:"minecraft:diamond_pickaxe",Count:1b,tag:{Unbreakable:1b,Damage:4,CustomModelData:17}},{}],Tags:["ball_floor","immobile","this_entity"],DisabledSlots:2039583}
+summon minecraft:armor_stand ~ ~0.01 ~ {CustomName:'{"type":"translatable","translate":"luigis_mansion:furniture.ball_floor"}',Pose:{RightArm:[0.0f,0.0f,0.0f]},Marker:1b,NoGravity:1b,Invisible:1b,HandItems:[{id:"minecraft:diamond_pickaxe",Count:1b,tag:{Unbreakable:1b,Damage:4,CustomModelData:17}},{}],Tags:["ball_floor","immobile","this_entity"],DisabledSlots:2039583}
 execute store result entity @e[tag=this_entity,limit=1] Rotation[0] float 1 run random value -180..179
 tag @e[tag=this_entity,limit=1] remove this_entity

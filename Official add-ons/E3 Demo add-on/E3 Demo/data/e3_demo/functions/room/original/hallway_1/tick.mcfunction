@@ -7,7 +7,7 @@ tag @e[tag=ghost,scores={Room=2}] add no_hidden_move
 execute as @a[scores={Room=2}] run function e3_demo:room/original/hallway_1/tick_per_player
 
 execute unless entity @e[type=minecraft:armor_stand,tag=key,tag=living_room,limit=1] unless entity @e[type=minecraft:armor_stand,tag=first_key,limit=1] unless data storage luigis_mansion:data current_state.current_data{obtained_keys:["living_room"]} if entity @e[x=736,y=18,z=8,dx=0,dy=3,dz=1,tag=door,scores={AnimationProgress=39}] run playsound luigis_mansion:entity.ghost.mumble hostile @a 751.0 13 9.0 3
-execute unless entity @e[type=minecraft:armor_stand,tag=key,tag=living_room,limit=1] unless entity @e[type=minecraft:armor_stand,tag=first_key,limit=1] unless data storage luigis_mansion:data current_state.current_data{obtained_keys:["living_room"]} if entity @e[x=736,y=18,z=8,dx=0,dy=3,dz=1,tag=door,scores={AnimationProgress=39}] run summon minecraft:armor_stand 751.0 13 9.0 {CustomName:'{"translate":"luigis_mansion:entity.gold_ghost"}',Tags:["first_key"],NoGravity:1b,Invulnerable:1b,Silent:1b,Invisible:1b,DisabledSlots:2039583}
+execute unless entity @e[type=minecraft:armor_stand,tag=key,tag=living_room,limit=1] unless entity @e[type=minecraft:armor_stand,tag=first_key,limit=1] unless data storage luigis_mansion:data current_state.current_data{obtained_keys:["living_room"]} if entity @e[x=736,y=18,z=8,dx=0,dy=3,dz=1,tag=door,scores={AnimationProgress=39}] run summon minecraft:armor_stand 751.0 13 9.0 {CustomName:'{"type":"translatable","translate":"luigis_mansion:entity.gold_ghost"}',Tags:["first_key"],NoGravity:1b,Invulnerable:1b,Silent:1b,Invisible:1b,DisabledSlots:2039583}
 
 function #e3_demo:room/original/hallway_1/interactions/room
 

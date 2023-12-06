@@ -1,7 +1,7 @@
 scoreboard players add @s ActionTime 1
 scoreboard players set @s[scores={ActionTime=1}] AnimationProgress 0
-execute at @s[scores={AttackType=0}] run function luigis_mansion:animations/ghost_guy/stab_attack
-execute at @s[scores={AttackType=1}] run function luigis_mansion:animations/ghost_guy/spin_attack
+execute at @s[scores={AttackType=0}] run function luigis_mansion:old_animations/ghost_guy/stab_attack
+execute at @s[scores={AttackType=1}] run function luigis_mansion:old_animations/ghost_guy/spin_attack
 
 execute if entity @s[scores={ActionTime=20,AttackType=1}] run playsound luigis_mansion:entity.ghost_guy.spin_attack hostile @a[tag=same_room] ~ ~ ~ 1
 execute if entity @s[scores={ActionTime=20,AttackType=0}] run playsound luigis_mansion:entity.ghost_guy.attack hostile @a[tag=same_room] ~ ~ ~ 1

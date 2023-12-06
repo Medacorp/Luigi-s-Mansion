@@ -96,24 +96,22 @@ execute if entity @s[scores={Dialog=72}] run teleport @e[tag=ghost,tag=no_ai,lim
 execute if entity @s[scores={Dialog=72}] as @a[tag=same_room] at @e[tag=ghost,tag=no_ai,limit=1] run function luigis_mansion:entities/player/scare/bash
 scoreboard players set @s[scores={Dialog=72}] ScareType 4
 execute if entity @s[scores={Dialog=72..190}] run scoreboard players set @a[tag=same_room,scores={ScareTime=..20}] ScareTime 21
-execute if entity @s[scores={Dialog=72}] run tellraw @a[tag=same_room] {"translate":"chat.type.text","with":[{"selector":"@s","color":"green"},{"translate":"e3_demo:dialog.meet_e_gadd.1"}]}
+execute if entity @s[scores={Dialog=72}] run tellraw @a[tag=same_room] {"type":"translatable","translate":"chat.type.text","with":[{"type":"selector","selector":"@s","color":"green"},{"type":"translatable","translate":"e3_demo:dialog.meet_e_gadd.1"}]}
 execute if entity @s[scores={Dialog=92..149}] at @e[tag=ghost,tag=no_ai,limit=1] positioned ^ ^ ^3.5 rotated ~-180 ~ run function luigis_mansion:entities/player/scared_bashed_force_move
 execute if entity @s[scores={Dialog=92..149}] as @e[tag=ghost,tag=no_ai,limit=1] at @s run teleport @s ^ ^ ^0.11 ~ ~
 execute if entity @s[scores={Dialog=98}] as @e[tag=e_gadd,tag=no_ai,limit=1] at @s run teleport @s ~ ~ ~ facing 718 20 31
-execute if entity @s[scores={Dialog=98}] run tag @e[tag=e_gadd,tag=no_ai,limit=1] add walk
-execute if entity @s[scores={Dialog=98}] run scoreboard players set @e[tag=e_gadd_head,tag=no_ai,limit=1] AnimationProgress 0
+execute if entity @s[scores={Dialog=98}] run data modify entity @e[tag=e_gadd,tag=no_ai,limit=1] data.animation set value {namespace:"luigis_mansion",id:"walk"}
 execute if entity @s[scores={Dialog=99..129}] as @e[tag=e_gadd,tag=no_ai,limit=1] at @s run teleport @s ^ ^ ^0.13
 execute if entity @s[scores={Dialog=130}] as @e[tag=e_gadd,tag=no_ai,limit=1] at @s run teleport @s ~ ~ ~ facing 722 20 29
 execute if entity @s[scores={Dialog=131..150}] as @e[tag=e_gadd,tag=no_ai,limit=1] at @s run teleport @s ^ ^ ^0.125
-execute if entity @s[scores={Dialog=150}] run tag @e[tag=e_gadd,tag=no_ai,limit=1] remove walk
-execute if entity @s[scores={Dialog=150}] run tag @e[tag=e_gadd,tag=no_ai,limit=1] add poltergust_500
-execute if entity @s[scores={Dialog=150}] run scoreboard players set @e[tag=e_gadd_head,tag=no_ai,limit=1] AnimationProgress 0
+execute if entity @s[scores={Dialog=150}] run data remove entity @e[tag=e_gadd,tag=no_ai,limit=1] data.animation
+execute if entity @s[scores={Dialog=150}] run data modify entity @e[tag=e_gadd,tag=no_ai,limit=1] data.poltergust set value {id:"minecraft:carrot_on_a_stick",Count:1b,tag:{Unbreakable:1b,Damage:0,CustomModelData:2}}
 execute if entity @s[scores={Dialog=150..459}] at @e[tag=e_gadd,tag=no_ai,limit=1] positioned ~ ~0.5 ~ positioned ^ ^ ^0.5 as @e[tag=ghost,tag=no_ai,limit=1] facing entity @s feet run function luigis_mansion:items/poltergust_3000/vacuuming/e_gadd
 execute if entity @s[scores={Dialog=150}] run scoreboard players set @e[tag=ghost,tag=no_ai,limit=1] AnimationProgress 0
 execute if entity @s[scores={Dialog=150}] run tag @e[tag=ghost,tag=no_ai,limit=1] add hurt
 scoreboard players set @s[scores={Dialog=150}] ScareType 3
 execute if entity @s[scores={Dialog=150}] at @e[tag=ghost,tag=no_ai,limit=1] run playsound e3_demo:entity.ghost.hurt hostile @a[tag=same_room] ~ ~ ~ 1
-execute if entity @s[scores={Dialog=150}] run tellraw @a[tag=same_room] {"translate":"chat.type.text","with":[{"translate":"e3_demo:entity.ghost","color":"green"},{"translate":"e3_demo:dialog.meet_e_gadd.2"}]}
+execute if entity @s[scores={Dialog=150}] run tellraw @a[tag=same_room] {"type":"translatable","translate":"chat.type.text","with":[{"type":"translatable","translate":"e3_demo:entity.ghost","color":"green"},{"type":"translatable","translate":"e3_demo:dialog.meet_e_gadd.2"}]}
 execute if entity @s[scores={Dialog=170}] at @e[tag=e_gadd,tag=no_ai,limit=1] run playsound luigis_mansion:entity.e_gadd.talk.soy_soh_ooh neutral @a[tag=same_room] ~ ~ ~ 1
 execute if entity @s[scores={Dialog=233}] at @e[tag=e_gadd,tag=no_ai,limit=1] run playsound luigis_mansion:entity.e_gadd.dragged neutral @a[tag=same_room] ~ ~ ~ 1
 execute if entity @s[scores={Dialog=220}] run tag @e[tag=ghost,tag=no_ai,limit=1] add fleeing
@@ -141,58 +139,47 @@ execute if entity @s[scores={Dialog=391}] run tag @e[tag=ghost,tag=no_ai,limit=1
 execute if entity @s[scores={Dialog=391..494}] run tag @e[tag=ghost,tag=no_ai,limit=1] remove complain
 execute if entity @s[scores={Dialog=391}] run tag @e[tag=ghost,tag=no_ai,limit=1] add laugh
 execute if entity @s[scores={Dialog=391..593}] as @e[tag=ghost,tag=no_ai,tag=!attack,tag=!vanish,limit=1] at @s run teleport @s ~ ~ ~ facing entity @e[tag=e_gadd,tag=no_ai,limit=1] feet
-execute if entity @s[scores={Dialog=258}] run tag @e[tag=e_gadd,tag=no_ai,limit=1] add walk_backwards
-execute if entity @s[scores={Dialog=258}] run scoreboard players set @e[tag=e_gadd_head,tag=no_ai,limit=1] AnimationProgress 0
+execute if entity @s[scores={Dialog=258}] run data modify entity @e[tag=e_gadd,tag=no_ai,limit=1] data.animation set value {namespace:"luigis_mansion",id:"walk_backwards"}
 execute if entity @s[scores={Dialog=258..287}] as @e[tag=e_gadd,tag=no_ai,limit=1] at @s facing 718 20 31 rotated ~ 0 run teleport @s ^ ^ ^0.13
 execute if entity @s[scores={Dialog=288..317}] as @e[tag=e_gadd,tag=no_ai,limit=1] at @s facing 718 20 35 rotated ~ 0 run teleport @s ^ ^ ^0.13
-execute if entity @s[scores={Dialog=317}] run tag @e[tag=e_gadd,tag=no_ai,limit=1] remove walk_backwards
-execute if entity @s[scores={Dialog=317}] run tag @e[tag=e_gadd,tag=no_ai,limit=1] add dragged
-execute if entity @s[scores={Dialog=317}] run scoreboard players set @e[tag=e_gadd_head,tag=no_ai,limit=1] AnimationProgress 0
+execute if entity @s[scores={Dialog=317}] run data modify entity @e[tag=e_gadd,tag=no_ai,limit=1] data.animation set value {namespace:"luigis_mansion",id:"dragged"}
 execute if entity @s[scores={Dialog=318..347}] as @e[tag=e_gadd,tag=no_ai,limit=1] at @s facing 723 20 35 rotated ~ 0 run teleport @s ^ ^ ^0.125
 execute if entity @s[scores={Dialog=348..367}] as @e[tag=e_gadd,tag=no_ai,limit=1] at @s facing 725 20 32 rotated ~ 0 run teleport @s ^ ^ ^0.2
 execute if entity @s[scores={Dialog=367..396}] as @e[tag=e_gadd,tag=no_ai,limit=1] at @s facing 723 20 26 rotated ~ 0 run teleport @s ^ ^ ^0.2
 execute if entity @s[scores={Dialog=397..432}] as @e[tag=e_gadd,tag=no_ai,limit=1] at @s facing 719 20 26 rotated ~ 0 run teleport @s ^ ^ ^0.1
-execute if entity @s[scores={Dialog=433}] run tag @e[tag=e_gadd,tag=no_ai,limit=1] remove dragged
-execute if entity @s[scores={Dialog=433}] run tag @e[tag=e_gadd,tag=no_ai,limit=1] add hit
+execute if entity @s[scores={Dialog=433}] run data modify entity @e[tag=e_gadd,tag=no_ai,limit=1] data.animation set value {namespace:"luigis_mansion",id:"hit"}
+execute if entity @s[scores={Dialog=433}] run data modify entity @e[tag=e_gadd,tag=no_ai,limit=1] data.poltergust set value {id:"minecraft:diamond_pickaxe",Count:1b,tag:{Damage:6,Unbreakable:1b,CustomModelData:16,luigis_mansion:{mirror:{tag:{CustomModelData:17}}}}}
 execute if entity @s[scores={Dialog=433}] at @e[tag=e_gadd,tag=no_ai,limit=1] run playsound luigis_mansion:entity.e_gadd.hurt neutral @a[tag=same_room] ~ ~ ~ 1
-execute if entity @s[scores={Dialog=433}] run scoreboard players set @e[tag=e_gadd_head,tag=no_ai,limit=1] AnimationProgress 0
 execute if entity @s[scores={Dialog=433..452}] as @e[tag=e_gadd,tag=no_ai,limit=1] at @s facing 725 20 26 rotated ~ 0 run teleport @s ^ ^ ^0.25
 execute if entity @s[scores={Dialog=150..452}] as @e[tag=e_gadd,tag=no_ai,limit=1] at @s run teleport @s ~ ~ ~ facing entity @e[tag=ghost,tag=no_ai,limit=1] feet
-execute if entity @s[scores={Dialog=452}] run tag @e[tag=e_gadd,tag=no_ai,limit=1] remove hit
-execute if entity @s[scores={Dialog=452}] run tag @e[tag=e_gadd,tag=no_ai,limit=1] add sitting
-execute if entity @s[scores={Dialog=452}] run scoreboard players set @e[tag=e_gadd_head,tag=no_ai,limit=1] AnimationProgress 0
+execute if entity @s[scores={Dialog=452}] run data modify entity @e[tag=e_gadd,tag=no_ai,limit=1] data.animation set value {namespace:"luigis_mansion",id:"sitting"}
 execute if entity @s[scores={Dialog=533}] at @e[tag=e_gadd,tag=no_ai,limit=1] run playsound luigis_mansion:entity.e_gadd.complain neutral @a[tag=same_room] ~ ~ ~ 1
-execute if entity @s[scores={Dialog=580}] run tellraw @a[tag=same_room] {"translate":"chat.type.text","with":[{"translate":"luigis_mansion:entity.e_gadd","color":"green"},{"translate":"e3_demo:dialog.meet_e_gadd.3"}]}
+execute if entity @s[scores={Dialog=580}] run tellraw @a[tag=same_room] {"type":"translatable","translate":"chat.type.text","with":[{"type":"translatable","translate":"luigis_mansion:entity.e_gadd","color":"green"},{"type":"translatable","translate":"e3_demo:dialog.meet_e_gadd.3"}]}
 execute if entity @s[scores={Dialog=580}] at @e[tag=e_gadd,tag=no_ai,limit=1] run playsound luigis_mansion:entity.e_gadd.talk.ehdeedee neutral @a[tag=same_room] ~ ~ ~ 1
-execute if entity @s[scores={Dialog=649}] run tag @e[tag=e_gadd,tag=no_ai,limit=1] remove sitting
-execute if entity @s[scores={Dialog=649}] run tag @e[tag=e_gadd,tag=no_ai,limit=1] add get_up
-execute if entity @s[scores={Dialog=649}] run scoreboard players set @e[tag=e_gadd_head,tag=no_ai,limit=1] AnimationProgress 0
-execute if entity @s[scores={Dialog=649}] if score #players Totals matches 1 run tellraw @a[tag=same_room] {"translate":"chat.type.text","with":[{"translate":"luigis_mansion:entity.e_gadd","color":"green"},{"translate":"e3_demo:dialog.meet_e_gadd.4"}]}
-execute if entity @s[scores={Dialog=649}] if score #players Totals matches 2.. run tellraw @a[tag=same_room] {"translate":"chat.type.text","with":[{"translate":"luigis_mansion:entity.e_gadd","color":"green"},{"translate":"e3_demo:dialog.meet_e_gadd.4.more"}]}
+execute if entity @s[scores={Dialog=649}] run data modify entity @e[tag=e_gadd,tag=no_ai,limit=1] data.animation set value {namespace:"luigis_mansion",id:"get_up"}
+execute if entity @s[scores={Dialog=649}] if score #players Totals matches 1 run tellraw @a[tag=same_room] {"type":"translatable","translate":"chat.type.text","with":[{"type":"translatable","translate":"luigis_mansion:entity.e_gadd","color":"green"},{"type":"translatable","translate":"e3_demo:dialog.meet_e_gadd.4"}]}
+execute if entity @s[scores={Dialog=649}] if score #players Totals matches 2.. run tellraw @a[tag=same_room] {"type":"translatable","translate":"chat.type.text","with":[{"type":"translatable","translate":"luigis_mansion:entity.e_gadd","color":"green"},{"type":"translatable","translate":"e3_demo:dialog.meet_e_gadd.4.more"}]}
 execute if entity @s[scores={Dialog=649}] at @e[tag=e_gadd,tag=no_ai,limit=1] run playsound luigis_mansion:entity.e_gadd.talk.hoo_hoo_jeemee_jeemee_kehkeh neutral @a[tag=same_room] ~ ~ ~ 1
 execute if entity @s[scores={Dialog=669..824}] at @e[tag=e_gadd,tag=no_ai,limit=1] facing entity @s feet run teleport @e[tag=e_gadd,tag=no_ai,limit=1] ~ ~ ~ ~ ~
-execute if entity @s[scores={Dialog=669}] run tag @e[tag=e_gadd,tag=no_ai,limit=1] remove get_up
-execute if entity @s[scores={Dialog=669}] run tag @e[tag=e_gadd,tag=no_ai,limit=1] add nod
-execute if entity @s[scores={Dialog=669}] run scoreboard players set @e[tag=e_gadd_head,tag=no_ai,limit=1] AnimationProgress 0
-execute if entity @s[scores={Dialog=765}] if score #players Totals matches 1 run tellraw @a[tag=same_room] {"translate":"chat.type.text","with":[{"translate":"luigis_mansion:entity.e_gadd","color":"green"},{"translate":"e3_demo:dialog.meet_e_gadd.5","with":[{"selector":"@a[tag=!spectator]"}]}]}
-execute if entity @s[scores={Dialog=765}] if score #players Totals matches 2.. run tellraw @a[tag=same_room] {"translate":"chat.type.text","with":[{"translate":"luigis_mansion:entity.e_gadd","color":"green"},{"translate":"e3_demo:dialog.meet_e_gadd.5.more"}]}
+execute if entity @s[scores={Dialog=669}] run data modify entity @e[tag=e_gadd,tag=no_ai,limit=1] data.animation set value {namespace:"luigis_mansion",id:"nod"}
+execute if entity @s[scores={Dialog=765}] if score #players Totals matches 1 run tellraw @a[tag=same_room] {"type":"translatable","translate":"chat.type.text","with":[{"type":"translatable","translate":"luigis_mansion:entity.e_gadd","color":"green"},{"type":"translatable","translate":"e3_demo:dialog.meet_e_gadd.5","with":[{"type":"selector","selector":"@a[tag=!spectator]"}]}]}
+execute if entity @s[scores={Dialog=765}] if score #players Totals matches 2.. run tellraw @a[tag=same_room] {"type":"translatable","translate":"chat.type.text","with":[{"type":"translatable","translate":"luigis_mansion:entity.e_gadd","color":"green"},{"type":"translatable","translate":"e3_demo:dialog.meet_e_gadd.5.more"}]}
 execute if entity @s[scores={Dialog=765}] at @e[tag=e_gadd,tag=no_ai,limit=1] run playsound luigis_mansion:entity.e_gadd.talk.gay_roon_ehdeedee_odoh_tahmentahkeh neutral @a[tag=same_room] ~ ~ ~ 1
-execute if entity @s[scores={Dialog=860}] run tellraw @a[tag=same_room] {"translate":"chat.type.text","with":[{"translate":"luigis_mansion:entity.e_gadd","color":"green"},{"translate":"e3_demo:dialog.meet_e_gadd.6"}]}
+execute if entity @s[scores={Dialog=860}] run tellraw @a[tag=same_room] {"type":"translatable","translate":"chat.type.text","with":[{"type":"translatable","translate":"luigis_mansion:entity.e_gadd","color":"green"},{"type":"translatable","translate":"e3_demo:dialog.meet_e_gadd.6"}]}
 execute if entity @s[scores={Dialog=860}] at @e[tag=e_gadd,tag=no_ai,limit=1] run playsound luigis_mansion:entity.e_gadd.talk.ohyah_ohyahmah_hey_hey_oui neutral @a[tag=same_room] ~ ~ ~ 1
 execute if entity @s[scores={Dialog=926}] as @e[tag=e_gadd,tag=no_ai,limit=1] at @s run teleport @s ~ ~ ~ facing 724 20 36
-execute if entity @s[scores={Dialog=946}] run tellraw @a[tag=same_room] {"translate":"chat.type.text","with":[{"translate":"luigis_mansion:entity.e_gadd","color":"green"},{"translate":"e3_demo:dialog.meet_e_gadd.7"}]}
+execute if entity @s[scores={Dialog=946}] run tellraw @a[tag=same_room] {"type":"translatable","translate":"chat.type.text","with":[{"type":"translatable","translate":"luigis_mansion:entity.e_gadd","color":"green"},{"type":"translatable","translate":"e3_demo:dialog.meet_e_gadd.7"}]}
 execute if entity @s[scores={Dialog=946}] at @e[tag=e_gadd,tag=no_ai,limit=1] run playsound luigis_mansion:entity.e_gadd.talk.keeyehroo_suu_suku_suku neutral @a[tag=same_room] ~ ~ ~ 1
 execute if entity @s[scores={Dialog=946..1187}] as @e[tag=e_gadd,tag=no_ai,limit=1] at @s run teleport @s ~ ~ ~ ~0.309917 ~
-execute if entity @s[scores={Dialog=1045}] run tellraw @a[tag=same_room] {"translate":"chat.type.text","with":[{"translate":"luigis_mansion:entity.e_gadd","color":"green"},{"translate":"e3_demo:dialog.meet_e_gadd.8"}]}
+execute if entity @s[scores={Dialog=1045}] run tellraw @a[tag=same_room] {"type":"translatable","translate":"chat.type.text","with":[{"type":"translatable","translate":"luigis_mansion:entity.e_gadd","color":"green"},{"type":"translatable","translate":"e3_demo:dialog.meet_e_gadd.8"}]}
 execute if entity @s[scores={Dialog=1045}] at @e[tag=e_gadd,tag=no_ai,limit=1] run playsound luigis_mansion:entity.e_gadd.talk.oui_oydohroh_tahmentahkeh neutral @a[tag=same_room] ~ ~ ~ 1
-execute if entity @s[scores={Dialog=1187}] run tag @e[tag=e_gadd,tag=no_ai,limit=1] remove nod
-execute if entity @s[scores={Dialog=1187}] run scoreboard players set @e[tag=e_gadd_head,tag=no_ai,limit=1] AnimationProgress 0
+execute if entity @s[scores={Dialog=1187}] run data remove entity @e[tag=e_gadd,tag=no_ai,limit=1] data.animation
 execute if entity @s[scores={Dialog=1187}] run data modify storage luigis_mansion:data entity set value {spawn:1b,tags:["no_ai"]}
 execute if entity @s[scores={Dialog=1187}] positioned 718 20 29 run function e3_demo:spawn_entities/ghost/ghost/white
 execute if entity @s[scores={Dialog=1187}] positioned 718 20 29 as @e[distance=..0.1,tag=ghost,tag=no_ai] at @s facing entity @e[tag=e_gadd,tag=no_ai,limit=1] feet rotated ~ 0 run teleport @s ~ ~ ~ ~ ~
 execute if entity @s[scores={Dialog=1199}] run data modify storage luigis_mansion:data entity set value {spawn:1b,tags:["no_ai"]}
 execute if entity @s[scores={Dialog=1199}] positioned 718 20 26 run function e3_demo:spawn_entities/ghost/ghost/white
-execute if entity @s[scores={Dialog=1199}] run tellraw @a[tag=same_room] {"translate":"chat.type.text","with":[{"translate":"e3_demo:entity.ghost","color":"green"},{"translate":"e3_demo:dialog.meet_e_gadd.9"}]}
+execute if entity @s[scores={Dialog=1199}] run tellraw @a[tag=same_room] {"type":"translatable","translate":"chat.type.text","with":[{"type":"translatable","translate":"e3_demo:entity.ghost","color":"green"},{"type":"translatable","translate":"e3_demo:dialog.meet_e_gadd.9"}]}
 execute if entity @s[scores={Dialog=1199}] positioned 718 20 26 as @e[distance=..0.1,tag=ghost,tag=no_ai] at @s facing entity @e[tag=e_gadd,tag=no_ai,limit=1] feet rotated ~ 0 run teleport @s ~ ~ ~ ~ ~
 execute if entity @s[scores={Dialog=1212}] run data modify storage luigis_mansion:data entity set value {spawn:1b,tags:["no_ai"]}
 execute if entity @s[scores={Dialog=1212}] positioned 720 20 27 run function e3_demo:spawn_entities/ghost/ghost/white
@@ -201,13 +188,12 @@ execute if entity @s[scores={Dialog=1252}] as @e[tag=ghost,tag=no_ai] at @s run 
 execute if entity @s[scores={Dialog=1272}] as @e[tag=ghost,tag=no_ai] at @s run playsound e3_demo:entity.ghost.ambient hostile @a[tag=same_room] ~ ~ ~ 1
 execute if entity @s[scores={Dialog=1312}] as @e[tag=ghost,tag=no_ai] at @s run playsound e3_demo:entity.ghost.ambient hostile @a[tag=same_room] ~ ~ ~ 1
 execute if entity @s[scores={Dialog=1332}] as @e[tag=ghost,tag=no_ai] at @s run playsound e3_demo:entity.ghost.ambient hostile @a[tag=same_room] ~ ~ ~ 1
-execute if entity @s[scores={Dialog=1262}] run tag @e[tag=e_gadd,tag=no_ai,limit=1] add shake
-execute if entity @s[scores={Dialog=1262}] run scoreboard players set @e[tag=e_gadd_head,tag=no_ai,limit=1] AnimationProgress 0
-execute if entity @s[scores={Dialog=1262}] run tellraw @a[tag=same_room] {"translate":"chat.type.text","with":[{"translate":"luigis_mansion:entity.e_gadd","color":"green"},{"translate":"e3_demo:dialog.meet_e_gadd.10"}]}
+execute if entity @s[scores={Dialog=1262}] run data modify entity @e[tag=e_gadd,tag=no_ai,limit=1] data.animation set value {namespace:"luigis_mansion",id:"shake"}
+execute if entity @s[scores={Dialog=1262}] run tellraw @a[tag=same_room] {"type":"translatable","translate":"chat.type.text","with":[{"type":"translatable","translate":"luigis_mansion:entity.e_gadd","color":"green"},{"type":"translatable","translate":"e3_demo:dialog.meet_e_gadd.10"}]}
 execute if entity @s[scores={Dialog=1262}] at @e[tag=e_gadd,tag=no_ai,limit=1] run playsound luigis_mansion:entity.e_gadd.talk.tatta_tatta neutral @a[tag=same_room] ~ ~ ~ 1
 execute if entity @s[scores={Dialog=1262..1386}] as @e[tag=ghost,tag=no_ai] at @s facing entity @e[tag=e_gadd,tag=no_ai,limit=1] feet run teleport @s ^ ^ ^0.025
-execute if entity @s[scores={Dialog=1319}] if score #players Totals matches 1 run tellraw @a[tag=same_room] {"translate":"chat.type.text","with":[{"translate":"luigis_mansion:entity.e_gadd","color":"green"},{"translate":"e3_demo:dialog.meet_e_gadd.11","with":[{"selector":"@a[tag=!spectator]"}]}]}
-execute if entity @s[scores={Dialog=1319}] if score #players Totals matches 2.. run tellraw @a[tag=same_room] {"translate":"chat.type.text","with":[{"translate":"luigis_mansion:entity.e_gadd","color":"green"},{"translate":"e3_demo:dialog.meet_e_gadd.11.more"}]}
+execute if entity @s[scores={Dialog=1319}] if score #players Totals matches 1 run tellraw @a[tag=same_room] {"type":"translatable","translate":"chat.type.text","with":[{"type":"translatable","translate":"luigis_mansion:entity.e_gadd","color":"green"},{"type":"translatable","translate":"e3_demo:dialog.meet_e_gadd.11","with":[{"type":"selector","selector":"@a[tag=!spectator]"}]}]}
+execute if entity @s[scores={Dialog=1319}] if score #players Totals matches 2.. run tellraw @a[tag=same_room] {"type":"translatable","translate":"chat.type.text","with":[{"type":"translatable","translate":"luigis_mansion:entity.e_gadd","color":"green"},{"type":"translatable","translate":"e3_demo:dialog.meet_e_gadd.11.more"}]}
 execute if entity @s[scores={Dialog=1319}] at @e[tag=e_gadd,tag=no_ai,limit=1] run playsound luigis_mansion:entity.e_gadd.talk.tatta_tatta_tatta neutral @a[tag=same_room] ~ ~ ~ 1
 execute if entity @s[scores={Dialog=1387}] run teleport @e[tag=no_ai,limit=1] ~ ~-100 ~
 execute if entity @s[scores={Dialog=1388}] run tag @e[tag=no_ai] add remove_from_existence
