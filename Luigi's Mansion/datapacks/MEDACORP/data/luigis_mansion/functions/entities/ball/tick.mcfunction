@@ -32,7 +32,7 @@ tag @s[tag=collision,tag=chauncey,tag=spit,tag=vacuumable] add dead
 tag @s[tag=collision,tag=chauncey,tag=!vacuumable] remove in_vacuum
 tag @s[tag=shadow,tag=!spit,tag=!in_vacuum,tag=!can_spit_2,tag=!first_tick] add dead
 tag @s[tag=shadow,tag=first_tick] remove first_tick
-execute store result score @s HomeRotation run data get entity @s Pose.Head[0] 1
+execute store result score @s HomeRotation run data get entity @s Pose.Head[0]
 execute if entity @s[tag=in_vacuum,tag=!can_spit_2] store result entity @s Pose.Head[0] float 1 run scoreboard players add @s HomeRotation 10
 execute if entity @s[tag=spit] store result entity @s Pose.Head[0] float 1 run scoreboard players add @s HomeRotation 10
 execute if entity @s[tag=chauncey,tag=!vacuumable] store result entity @s Pose.Head[0] float 1 run scoreboard players add @s HomeRotation 10

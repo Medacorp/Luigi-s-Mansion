@@ -85,8 +85,8 @@ execute at @s[scores={KnockbackType=5},tag=gooigi] run summon minecraft:marker ~
 execute at @s[scores={KnockbackType=5},tag=gooigi] store result entity @e[tag=home,limit=1] Pos[0] double 0.01 run scoreboard players get @s PositionX
 execute at @s[scores={KnockbackType=5},tag=gooigi] store result entity @e[tag=home,limit=1] Pos[1] double 0.01 run scoreboard players get @s PositionY
 execute at @s[scores={KnockbackType=5},tag=gooigi] store result entity @e[tag=home,limit=1] Pos[2] double 0.01 run scoreboard players get @s PositionZ
-execute at @s[scores={KnockbackType=5},tag=gooigi] store result entity @e[tag=home,limit=1] Rotation[0] float 0.01 run scoreboard players get @s RotationY
-execute at @s[scores={KnockbackType=5},tag=gooigi] store result entity @e[tag=home,limit=1] Rotation[1] float 0.01 run scoreboard players get @s RotationX
+execute at @s[scores={KnockbackType=5},tag=gooigi] store result entity @e[tag=home,limit=1] Rotation[0] float 1 run scoreboard players get @s RotationY
+execute at @s[scores={KnockbackType=5},tag=gooigi] store result entity @e[tag=home,limit=1] Rotation[1] float 1 run scoreboard players get @s RotationX
 execute at @s[scores={KnockbackType=5},tag=gooigi] at @e[tag=home,limit=1] run tp @s ~ 0 ~ ~ ~
 execute at @s[scores={KnockbackType=5},tag=gooigi] at @e[tag=home,limit=1] run tp @s ~ ~ ~ ~ ~
 execute at @s[scores={KnockbackType=5},tag=gooigi] run kill @e[tag=home,limit=1]
@@ -108,8 +108,8 @@ execute at @s[scores={KnockbackType=6}] run summon minecraft:marker ~ ~ ~ {Tags:
 execute at @s[scores={KnockbackType=6}] store result entity @e[tag=home,limit=1] Pos[0] double 0.01 run scoreboard players get @s PositionX
 execute at @s[scores={KnockbackType=6}] store result entity @e[tag=home,limit=1] Pos[1] double 0.01 run scoreboard players get @s PositionY
 execute at @s[scores={KnockbackType=6}] store result entity @e[tag=home,limit=1] Pos[2] double 0.01 run scoreboard players get @s PositionZ
-execute at @s[scores={KnockbackType=6}] store result entity @e[tag=home,limit=1] Rotation[0] float 0.01 run scoreboard players get @s RotationY
-execute at @s[scores={KnockbackType=6}] store result entity @e[tag=home,limit=1] Rotation[1] float 0.01 run scoreboard players get @s RotationX
+execute at @s[scores={KnockbackType=6}] store result entity @e[tag=home,limit=1] Rotation[0] float 1 run scoreboard players get @s RotationY
+execute at @s[scores={KnockbackType=6}] store result entity @e[tag=home,limit=1] Rotation[1] float 1 run scoreboard players get @s RotationX
 execute at @s[scores={KnockbackType=6}] at @e[tag=home,limit=1] run tp @s ~ 0 ~ ~ ~
 execute at @s[scores={KnockbackType=6}] at @e[tag=home,limit=1] run tp @s ~ ~ ~ ~ ~
 execute at @s[scores={KnockbackType=6}] run kill @e[tag=home,limit=1]
@@ -122,12 +122,12 @@ execute at @s[scores={KnockbackType=7}] run summon minecraft:marker ~ ~ ~ {Tags:
 execute at @s[scores={KnockbackType=7}] store result entity @e[tag=home,limit=1] Pos[0] double 0.01 run scoreboard players get @s PositionX
 execute at @s[scores={KnockbackType=7}] store result entity @e[tag=home,limit=1] Pos[1] double 0.01 run scoreboard players get @s PositionY
 execute at @s[scores={KnockbackType=7}] store result entity @e[tag=home,limit=1] Pos[2] double 0.01 run scoreboard players get @s PositionZ
-execute at @s[scores={KnockbackType=7}] store result entity @e[tag=home,limit=1] Rotation[0] float 0.01 run scoreboard players get @s RotationY
-execute at @s[scores={KnockbackType=7}] store result entity @e[tag=home,limit=1] Rotation[1] float 0.01 run scoreboard players get @s RotationX
+execute at @s[scores={KnockbackType=7}] store result entity @e[tag=home,limit=1] Rotation[0] float 1 run scoreboard players get @s RotationY
+execute at @s[scores={KnockbackType=7}] store result entity @e[tag=home,limit=1] Rotation[1] float 1 run scoreboard players get @s RotationX
 execute at @s[scores={KnockbackTime=10..,KnockbackType=7}] unless entity @e[tag=home,limit=1,distance=..0.1] run scoreboard players remove @s KnockbackTime 2
 execute at @s[scores={KnockbackType=7}] at @e[tag=home,limit=1] run tp @s ~ 0 ~ ~ ~
 execute at @s[scores={KnockbackType=7}] at @e[tag=home,limit=1] run tp @s ~ ~ ~ ~ ~
-execute at @s[scores={KnockbackTime=80,KnockbackType=7}] anchored eyes run summon minecraft:armor_stand ^ ^ ^ {CustomName:'{"type":"translatable","translate":"luigis_mansion:entity.luigi"}',Tags:["luigi_ice"],Invisible:1b,Marker:1b,Pose:{Head:[0.0f,0.0f,0.01f]},ArmorItems:[{},{},{},{id:"minecraft:diamond_pickaxe",Count:1b,tag:{Unbreakable:1b,Damage:4,CustomModelData:47}}]}
+execute at @s[scores={KnockbackTime=80,KnockbackType=7}] anchored eyes run summon minecraft:armor_stand ^ ^ ^ {CustomName:'{"type":"translatable","translate":"luigis_mansion:entity.luigi"}',Tags:["luigi_ice"],Invisible:1b,Marker:1b,Pose:{Head:[0.0f,0.0f,0.01f]},ArmorItems:[{},{},{},{id:"minecraft:diamond_pickaxe",Count:1b,tag:{Unbreakable:1b,Damage:4,CustomModelData:38}}]}
 execute at @s[scores={KnockbackTime=8..10,KnockbackType=7}] anchored eyes positioned ^ ^ ^ run tag @e[tag=luigi_ice,distance=..0.1,limit=1] add remove_from_existence
 execute at @s[scores={KnockbackTime=8..10,KnockbackType=7}] anchored eyes run particle minecraft:item minecraft:diamond_pickaxe{Unbreakable:1b,Damage:4,CustomModelData:47} ^ ^ ^ 0.3 0.3 0.3 0 50 force @a[tag=same_room]
 scoreboard players set @s[scores={KnockbackTime=10..,KnockbackType=7,Invulnerable=6..}] Invulnerable 5
@@ -267,8 +267,8 @@ execute at @s[scores={KnockbackType=14}] run summon minecraft:marker ~ ~ ~ {Tags
 execute at @s[scores={KnockbackType=14}] store result entity @e[tag=home,limit=1] Pos[0] double 0.01 run scoreboard players get @s PositionX
 execute at @s[scores={KnockbackType=14}] store result entity @e[tag=home,limit=1] Pos[1] double 0.01 run scoreboard players get @s PositionY
 execute at @s[scores={KnockbackType=14}] store result entity @e[tag=home,limit=1] Pos[2] double 0.01 run scoreboard players get @s PositionZ
-execute at @s[scores={KnockbackType=14}] store result entity @e[tag=home,limit=1] Rotation[0] float 0.01 run scoreboard players get @s RotationY
-execute at @s[scores={KnockbackType=14}] store result entity @e[tag=home,limit=1] Rotation[1] float 0.01 run scoreboard players get @s RotationX
+execute at @s[scores={KnockbackType=14}] store result entity @e[tag=home,limit=1] Rotation[0] float 1 run scoreboard players get @s RotationY
+execute at @s[scores={KnockbackType=14}] store result entity @e[tag=home,limit=1] Rotation[1] float 1 run scoreboard players get @s RotationX
 execute at @s[scores={KnockbackType=14}] at @e[tag=home,limit=1] run tp @s ~ 0 ~ ~ ~
 execute at @s[scores={KnockbackType=14}] at @e[tag=home,limit=1] run tp @s ~ ~ ~ ~ ~
 execute at @s[scores={KnockbackTime=126..135,KnockbackType=14,Animation=37}] rotated ~18 0 run teleport @s ^ ^ ^-0.15 ~ ~

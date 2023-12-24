@@ -19,7 +19,7 @@ execute if entity @s[scores={AnimationProgress=51..60}] store result entity @s P
 execute if entity @s[scores={AnimationProgress=121..140}] store result entity @s Pose.Head[0] float 0.1 run scoreboard players add #temp Time 8
 execute if entity @s[scores={AnimationProgress=141..150}] store result entity @s Pose.Head[0] float 0.1 run scoreboard players add #temp Time 24
 execute if entity @s[scores={AnimationProgress=141..160}] store result entity @s Pose.Head[0] float 0.1 run scoreboard players remove #temp Time 8
-execute store result score #temp Time run data get entity @e[tag=this_model,tag=right_arm,limit=1] Pose.Head[0] 1
+execute store result score #temp Time run data get entity @e[tag=this_model,tag=right_arm,limit=1] Pose.Head[0]
 execute if entity @s[scores={AnimationProgress=1..20}] store result entity @e[tag=this_model,tag=right_arm,limit=1] Pose.Head[0] float 1 run scoreboard players add #temp Time 3
 execute if entity @s[scores={AnimationProgress=21..40}] store result entity @e[tag=this_model,tag=right_arm,limit=1] Pose.Head[0] float 1 run scoreboard players remove #temp Time 2
 execute if entity @s[scores={AnimationProgress=46..55}] store result entity @e[tag=this_model,tag=right_arm,limit=1] Pose.Head[0] float 1 run scoreboard players remove #temp Time 8
@@ -31,7 +31,7 @@ execute if entity @s[scores={AnimationProgress=106..115}] store result entity @e
 execute if entity @s[scores={AnimationProgress=116..125}] store result entity @e[tag=this_model,tag=right_arm,limit=1] Pose.Head[0] float 1 run scoreboard players add #temp Time 2
 execute if entity @s[scores={AnimationProgress=126..140}] store result entity @e[tag=this_model,tag=right_arm,limit=1] Pose.Head[0] float 1 run scoreboard players add #temp Time 8
 execute if entity @s[scores={AnimationProgress=141..160}] store result entity @e[tag=this_model,tag=right_arm,limit=1] Pose.Head[0] float 1 run scoreboard players remove #temp Time 3
-execute store result score #temp Time run data get entity @e[tag=this_model,tag=left_arm,limit=1] Pose.Head[0] 1
+execute store result score #temp Time run data get entity @e[tag=this_model,tag=left_arm,limit=1] Pose.Head[0]
 execute if entity @s[scores={AnimationProgress=1..20}] store result entity @e[tag=this_model,tag=left_arm,limit=1] Pose.Head[0] float 1 run scoreboard players add #temp Time 3
 execute if entity @s[scores={AnimationProgress=21..40}] store result entity @e[tag=this_model,tag=left_arm,limit=1] Pose.Head[0] float 1 run scoreboard players remove #temp Time 2
 execute if entity @s[scores={AnimationProgress=46..55}] store result entity @e[tag=this_model,tag=left_arm,limit=1] Pose.Head[0] float 1 run scoreboard players remove #temp Time 8

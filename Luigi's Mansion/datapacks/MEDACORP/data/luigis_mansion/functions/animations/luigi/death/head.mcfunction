@@ -12,7 +12,7 @@ execute at @s[scores={DeathTime=31..40}] if score #mirrored Selected matches 0 r
 execute at @s[scores={DeathTime=31..40}] if score #mirrored Selected matches 0 run teleport @s[tag=flipped_gravity] ^-0.125 ^0.1 ^
 execute at @s[scores={DeathTime=31..40}] if score #mirrored Selected matches 1 run teleport @s[tag=!flipped_gravity] ^-0.125 ^-0.1 ^
 execute at @s[scores={DeathTime=31..40}] if score #mirrored Selected matches 1 run teleport @s[tag=flipped_gravity] ^0.125 ^0.1 ^
-execute store result score #temp Time run data get entity @s Pose.Head[2] 1
+execute store result score #temp Time run data get entity @s Pose.Head[2]
 execute if entity @s[scores={DeathTime=31..40}] if score #mirrored Selected matches 0 store result entity @s Pose.Head[2] float 1 run scoreboard players add #temp Time 11
 execute if entity @s[scores={DeathTime=31..40}] if score #mirrored Selected matches 1 store result entity @s Pose.Head[2] float 1 run scoreboard players remove #temp Time 11
 scoreboard players reset #temp Time

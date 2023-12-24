@@ -1,6 +1,6 @@
 execute at @s run teleport @s ~ ~1 ~
 scoreboard players set #temp Move 40
-execute store result score @s HomeRotation run data get entity @s Pose.Head[0] 1
+execute store result score @s HomeRotation run data get entity @s Pose.Head[0]
 execute if entity @s[tag=!held] store result entity @s Pose.Head[0] float 1 run scoreboard players add @s HomeRotation 10
 execute at @s[tag=!held] run function luigis_mansion:entities/bowling_ball/move_forward
 execute at @s[tag=!held] as @e[distance=..1,tag=game_boy_horror_location] run function luigis_mansion:entities/game_boy_horror_location/bring_player_back

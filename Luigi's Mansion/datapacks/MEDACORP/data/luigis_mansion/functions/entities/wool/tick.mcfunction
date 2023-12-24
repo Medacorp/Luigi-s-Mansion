@@ -5,7 +5,7 @@ scoreboard players set @s[tag=!vacuumable] SpawnTime 0
 scoreboard players add @s[tag=vacuumable] SpawnTime 1
 execute at @s[tag=spit] run function luigis_mansion:entities/wool/spit
 execute at @s[tag=!in_vacuum,tag=!can_spit_2,tag=vacuumable,tag=!spit] run function luigis_mansion:entities/wool/path
-execute store result score @s HomeRotation run data get entity @s Pose.Head[0] 1
+execute store result score @s HomeRotation run data get entity @s Pose.Head[0]
 execute if entity @s[tag=!can_spit_2,tag=vacuumable] store result entity @s Pose.Head[0] float 1 run scoreboard players add @s HomeRotation 10
 tag @s[tag=collision,tag=spit] add dead
 tag @s[tag=collision] remove spit

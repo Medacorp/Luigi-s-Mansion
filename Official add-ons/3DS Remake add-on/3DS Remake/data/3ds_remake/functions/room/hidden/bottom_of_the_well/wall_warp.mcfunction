@@ -8,5 +8,5 @@ teleport @s[scores={PositionIntZ=-5,PositionIntY=92..94,PositionIntX=647}] ~ ~ ~
 teleport @s[scores={PositionIntZ=-5,PositionIntY=95..101}] ~ ~ ~1
 teleport @s[scores={PositionIntZ=-5,PositionIntY=92..94,PositionIntX=649}] ~ ~ ~1
 
-teleport @s[scores={PositionIntY=91}] ~ ~1 ~
-teleport @s[scores={PositionIntY=94,PositionIntZ=-9..-6}] ~ ~7 ~
+teleport @s[scores={PositionIntY=92}] ~ ~1 ~
+teleport @s[scores={PositionIntY=95,PositionIntZ=-9..-6}] ~ ~7 ~

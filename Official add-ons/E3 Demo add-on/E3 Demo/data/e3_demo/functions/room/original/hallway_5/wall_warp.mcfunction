@@ -11,6 +11,6 @@ teleport @s[scores={PositionIntX=685,PositionIntZ=1..10}] ~-10 ~ ~65
 teleport @s[scores={PositionIntZ=11,PositionIntX=680..684}] ~-18 ~ ~25
 teleport @s[scores={PositionIntZ=11,PositionIntX=679}] ~ ~ ~-1
 
-teleport @s[scores={PositionIntY=9,PositionIntZ=-28..10}] ~ ~1 ~
-teleport @s[scores={PositionIntY=9,PositionIntZ=-29}] ~-14 ~-3 ~13
-teleport @s[scores={PositionIntY=16}] ~ ~3 ~
+teleport @s[scores={PositionIntY=10,PositionIntZ=-28..10}] ~ ~1 ~
+teleport @s[scores={PositionIntY=10,PositionIntZ=-29}] ~-14 ~-2 ~13
+teleport @s[scores={PositionIntY=18}] ~ ~2 ~

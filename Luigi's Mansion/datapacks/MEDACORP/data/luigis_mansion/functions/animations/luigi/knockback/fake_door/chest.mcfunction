@@ -39,10 +39,10 @@ data modify entity @s[scores={AnimationProgress=15..109,Animation=38},nbt={Armor
 data modify entity @s[scores={AnimationProgress=15..109,Animation=38},nbt={ArmorItems:[{tag:{CustomModelData:23}}]}] ArmorItems[3].tag merge value {Damage:2,CustomModelData:24}
 data modify entity @s[scores={AnimationProgress=15..109,Animation=37},nbt={ArmorItems:[{tag:{CustomModelData:19}}]}] ArmorItems[3].tag merge value {Damage:3,CustomModelData:20}
 data modify entity @s[scores={AnimationProgress=15..109,Animation=37},nbt={ArmorItems:[{tag:{CustomModelData:23}}]}] ArmorItems[3].tag merge value {Damage:3,CustomModelData:24}
-execute store result score #temp Time run data get entity @s Pose.Head[0] 1
+execute store result score #temp Time run data get entity @s Pose.Head[0]
 execute if entity @s[scores={AnimationProgress=63..92}] store result entity @s Pose.Head[0] float 1 run scoreboard players add #temp Time 3
 execute if entity @s[scores={AnimationProgress=111..120}] store result entity @s Pose.Head[0] float 1 run scoreboard players remove #temp Time 9
-execute store result score #temp Time run data get entity @s Pose.Head[2] 1
+execute store result score #temp Time run data get entity @s Pose.Head[2]
 execute if entity @s[scores={AnimationProgress=91..92}] store result entity @s Pose.Head[2] float 1 run scoreboard players add #temp Time 2
 execute if entity @s[scores={AnimationProgress=93..96}] store result entity @s Pose.Head[2] float 1 run scoreboard players remove #temp Time 2
 execute if entity @s[scores={AnimationProgress=97..100}] store result entity @s Pose.Head[2] float 1 run scoreboard players add #temp Time 2

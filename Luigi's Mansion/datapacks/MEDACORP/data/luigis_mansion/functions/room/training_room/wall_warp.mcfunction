@@ -4,5 +4,5 @@ teleport @s[scores={PositionIntX=796..798,PositionIntZ=4}] ~ ~ ~-1
 teleport @s[scores={PositionIntX=799}] ~-1 ~ ~
 teleport @s[scores={PositionIntX=782}] ~1 ~ ~
 
-teleport @s[scores={PositionIntY=75}] ~ ~1 ~
-teleport @s[scores={PositionIntY=82}] ~ ~-1 ~
+teleport @s[scores={PositionIntY=76}] ~ ~1 ~
+teleport @s[scores={PositionIntY=84}] ~ ~-1 ~

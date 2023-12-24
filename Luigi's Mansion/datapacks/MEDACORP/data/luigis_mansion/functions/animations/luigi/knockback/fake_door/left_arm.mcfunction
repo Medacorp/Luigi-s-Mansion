@@ -14,7 +14,7 @@ data modify entity @s[scores={AnimationProgress=15..109}] ArmorItems[3].id set v
 data merge entity @s[scores={AnimationProgress=80,Animation=38}] {Pose:{Head:[90.0f,45.0f,0.01f]}}
 data merge entity @s[scores={AnimationProgress=80,Animation=37}] {Pose:{Head:[90.0f,22.5f,0.01f]}}
 data modify entity @s[scores={AnimationProgress=110}] ArmorItems[3].id set value "minecraft:leather_chestplate"
-execute store result score #temp Time run data get entity @s Pose.Head[0] 1
+execute store result score #temp Time run data get entity @s Pose.Head[0]
 execute if entity @s[scores={AnimationProgress=1..5,Animation=38}] store result entity @s Pose.Head[0] float 1 run scoreboard players remove #temp Time 12
 execute if entity @s[scores={AnimationProgress=111..120}] store result entity @s Pose.Head[0] float 1 run scoreboard players remove #temp Time 9
 execute store result score #temp Time run data get entity @s Pose.Head[1] 100

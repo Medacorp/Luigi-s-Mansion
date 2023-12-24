@@ -19,8 +19,8 @@ teleport @s[scores={PositionIntX=764,PositionIntZ=-21..-16}] ~1 ~ ~
 teleport @s[scores={PositionIntX=743}] ~-2 ~ ~
 teleport @s[scores={PositionIntX=728}] ~1 ~ ~
 
-teleport @s[scores={PositionIntY=75}] ~ ~1 ~
-teleport @s[scores={PositionIntY=82}] ~ ~-1 ~
+teleport @s[scores={PositionIntY=76}] ~ ~1 ~
+teleport @s[scores={PositionIntY=84}] ~ ~-1 ~
 
 execute if score #global_3ds_remake_gallery Selected matches 1 run teleport @s ~ ~-75 ~
 execute if score #global_3ds_remake_gallery Selected matches 1 unless block 772 4 -16 minecraft:dirt run function 3ds_remake:room/gallery/generate

@@ -9,7 +9,7 @@ execute at @s[scores={SpawnTime=1},tag=vacuumable] run function luigis_mansion:e
 execute at @s[tag=!in_vacuum,tag=vacuumable] run function luigis_mansion:entities/billiards_ball/move_forward
 execute at @s[tag=move] run function luigis_mansion:entities/billiards_ball/move_forward
 execute at @s[tag=move] run function luigis_mansion:entities/billiards_ball/move_forward
-execute store result score @s HomeRotation run data get entity @s Pose.Head[0] 1
+execute store result score @s HomeRotation run data get entity @s Pose.Head[0]
 execute if entity @s[tag=!can_spit_2,tag=vacuumable] store result entity @s Pose.Head[0] float 1 run scoreboard players add @s HomeRotation 10
 execute if entity @s[tag=move] store result entity @s Pose.Head[0] float 1 run scoreboard players add @s HomeRotation 20
 execute at @s[tag=move,scores={SpawnTime=8}] run tag @e[tag=billiards_ball,distance=..2] add vacuumable

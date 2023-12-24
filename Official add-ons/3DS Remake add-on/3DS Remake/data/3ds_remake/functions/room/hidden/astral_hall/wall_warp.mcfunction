@@ -6,5 +6,5 @@ teleport @s[scores={PositionIntX=661,PositionIntZ=-91..-79}] ~4 ~ ~42
 teleport @s[scores={PositionIntZ=-72}] ~25 ~ ~51
 teleport @s[scores={PositionIntZ=-92}] ~-21 ~ ~18
 
-teleport @s[scores={PositionIntY=25}] ~11 ~94 ~62
-teleport @s[scores={PositionIntY=18}] ~19 ~-3 ~34
+teleport @s[scores={PositionIntY=27}] ~11 ~93 ~62
+teleport @s[scores={PositionIntY=19}] ~19 ~-2 ~34

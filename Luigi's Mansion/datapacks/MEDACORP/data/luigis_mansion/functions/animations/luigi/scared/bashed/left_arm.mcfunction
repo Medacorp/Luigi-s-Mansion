@@ -77,7 +77,7 @@ teleport @s[scores={ScareTime=2},tag=flipped_gravity,nbt={Small:1b}] ~ ~0.05 ~ ~
 teleport @s[scores={ScareTime=1},tag=flipped_gravity,nbt={Small:1b}] ~ ~0.025 ~ ~ ~
 data merge entity @s[scores={ScareTime=51}] {Pose:{Head:[-180.0f,0.0f,0.01f]}}
 data merge entity @s[scores={ScareTime=51},tag=flipped_gravity] {Pose:{Head:[-180.0f,0.0f,-180.0f]}}
-execute store result score #temp Time run data get entity @s Pose.Head[0] 1
+execute store result score #temp Time run data get entity @s Pose.Head[0]
 execute if entity @s[scores={ScareTime=22..31}] store result entity @s Pose.Head[0] float 1 run scoreboard players add #temp Time 18
 scoreboard players set @s[scores={ScareTime=22}] AnimationProgress 0
 scoreboard players set @s[scores={ScareTime=21},tag=!moved] AnimationProgress 0
