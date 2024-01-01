@@ -31,8 +31,8 @@ execute unless entity @e[tag=same_room,tag=!spectator,distance=..7,limit=1] run 
 tag @s[tag=!talk] remove turning_on_lights
 execute if entity @s[tag=!talk] as @a[tag=same_room] run function luigis_mansion:other/music/set/silence
 execute if entity @s[tag=!talk] run scoreboard players reset @a[scores={Toad3Choice=0..}] Toad3Choice
-scoreboard players set @s[tag=!talk,tag=explaining] AnimationProgress 0
+scoreboard players set @s[tag=!talk,tag=explain] AnimationProgress 0
 execute if entity @s[tag=!talk,scores={Dialog=..421},tag=happy] run scoreboard players set @s AnimationProgress 0
-tag @s[tag=!talk] remove explaining
+tag @s[tag=!talk] remove explain
 tag @s[tag=!talk,scores={Dialog=..421}] remove happy
 scoreboard players set @s[tag=!talk] Dialog 0

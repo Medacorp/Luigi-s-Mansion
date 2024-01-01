@@ -10,18 +10,20 @@ teleport @s[scores={Dialog=1}] ~ ~ ~ facing 771 77 15
 data modify entity @s[scores={Dialog=201}] data.animation set value {namespace:"luigis_mansion",id:"jump"}
 data remove entity @s[scores={Dialog=280}] data.animation
 data modify entity @s[scores={Dialog=300}] data.animation set value {namespace:"luigis_mansion",id:"walk"}
-teleport @s[scores={Dialog=300..335}] ~ ~ ~-0.2 -180 0
+data modify entity @s[scores={Dialog=310}] data.animation set value {namespace:"luigis_mansion",id:"run"}
+teleport @s[scores={Dialog=300..309}] ~ ~ ~-0.1 -180 0
+teleport @s[scores={Dialog=310..335}] ~ ~ ~-0.248 -180 0
 data remove entity @s[scores={Dialog=335}] data.animation
 execute if entity @s[scores={Dialog=336..359}] facing entity @e[tag=portrificationizing_ghost,sort=nearest,limit=1] feet rotated ~ 0 run teleport @s ~ ~ ~ ~ ~
-data modify entity @s[scores={Dialog=360}] data.animation set value {namespace:"luigis_mansion",id:"walk"}
+data modify entity @s[scores={Dialog=360}] data.animation set value {namespace:"luigis_mansion",id:"run"}
 teleport @s[scores={Dialog=360..395}] ~ ~ ~-0.115 -180 0
 data remove entity @s[scores={Dialog=395}] data.animation
 execute if entity @s[scores={Dialog=396..439}] facing entity @e[tag=portrificationizing_ghost,sort=nearest,limit=1] feet rotated ~ 0 run teleport @s ~ ~ ~ ~ ~
-data modify entity @s[scores={Dialog=440}] data.animation set value {namespace:"luigis_mansion",id:"walk"}
+data modify entity @s[scores={Dialog=440}] data.animation set value {namespace:"luigis_mansion",id:"run"}
 teleport @s[scores={Dialog=440..475}] ~ ~ ~-0.171 -180 0
 data remove entity @s[scores={Dialog=475}] data.animation
 execute if entity @s[scores={Dialog=476..519}] facing entity @e[tag=portrificationizing_ghost,sort=nearest,limit=1] feet rotated ~ 0 run teleport @s ~ ~ ~ ~ ~
-data modify entity @s[scores={Dialog=520}] data.animation set value {namespace:"luigis_mansion",id:"walk"}
+data modify entity @s[scores={Dialog=520}] data.animation set value {namespace:"luigis_mansion",id:"run"}
 teleport @s[scores={Dialog=520..555}] ~ ~ ~-0.228 -180 0
 data remove entity @s[scores={Dialog=555}] data.animation
 teleport @s[scores={Dialog=556..809}] ~ ~ ~ facing 770 77 -12
@@ -33,7 +35,6 @@ execute if entity @s[scores={Dialog=520}] run tellraw @a[tag=same_room] {"type":
 execute if entity @s[scores={Dialog=520}] run playsound luigis_mansion:entity.e_gadd.talk.hoo_hoo_hoo neutral @a[tag=same_room] ~ ~ ~ 1
 execute if entity @s[scores={Dialog=600}] run tellraw @a[tag=same_room] {"type":"translatable","translate":"chat.type.text","with":[{"type":"translatable","translate":"luigis_mansion:entity.e_gadd","color":"green"},{"type":"translatable","translate":"luigis_mansion:dialog.ghost_portrificationizer_room.portrificationizing.4"}]}
 execute if entity @s[scores={Dialog=600}] run playsound luigis_mansion:entity.e_gadd.talk.keekehrookukukay neutral @a[tag=same_room] ~ ~ ~ 1
-data modify entity @s[scores={Dialog=666}] data.animation set value {namespace:"luigis_mansion",id:"nod"}
 execute if entity @s[scores={Dialog=666}] run tellraw @a[tag=same_room] {"type":"translatable","translate":"chat.type.text","with":[{"type":"translatable","translate":"luigis_mansion:entity.e_gadd","color":"green"},{"type":"translatable","translate":"luigis_mansion:dialog.ghost_portrificationizer_room.portrificationizing.5"}]}
 execute if entity @s[scores={Dialog=666}] run playsound luigis_mansion:entity.e_gadd.talk.jeemee_jeemee neutral @a[tag=same_room] ~ ~ ~ 1
 execute if entity @s[scores={Dialog=674},tag=!ending] if score #players Totals matches 1 run tellraw @a[tag=same_room] {"type":"translatable","translate":"chat.type.text","with":[{"type":"translatable","translate":"luigis_mansion:entity.e_gadd","color":"green"},{"type":"translatable","translate":"luigis_mansion:dialog.ghost_portrificationizer_room.portrificationizing.6","with":[{"type":"selector","selector":"@p[gamemode=!spectator]"}]}]}

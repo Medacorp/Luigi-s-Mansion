@@ -19,6 +19,8 @@ execute if entity @s[scores={Dialog=56}] if entity @a[tag=gooigi,limit=1] run te
 execute if entity @s[scores={Dialog=56}] run scoreboard players set @a[tag=same_room] MansionChoice -1
 execute if entity @s[scores={Dialog=56}] run scoreboard players enable @a[tag=same_room] MansionChoice
 execute if entity @s[scores={Dialog=56}] run scoreboard players enable @a[tag=same_room] EGaddUndergroundLabChoice
+data remove entity @s[scores={Dialog=56}] data.animation
+data modify entity @s[scores={Dialog=58}] data.animation set value {namespace:"luigis_mansion",id:"nod"}
 execute if entity @s[scores={Dialog=58}] as @a[tag=same_room,tag=!spectator,tag=!looking_at_map] run function luigis_mansion:entities/player/animation/set/nod
 execute if entity @s[scores={Dialog=58}] unless entity @a[scores={MansionChoice=-1},limit=1] as @a[scores={MansionChoice=-1}] run trigger MansionChoice set -1
 execute if entity @s[scores={Dialog=58}] if entity @a[scores={EGaddUndergroundLabChoice=1..},limit=1] as @a[scores={EGaddUndergroundLabChoice=0}] run trigger EGaddUndergroundLabChoice set 0
@@ -45,6 +47,8 @@ execute if entity @s[scores={Dialog=130}] if entity @a[scores={EGaddUndergroundL
 execute if entity @s[scores={Dialog=130}] if entity @a[scores={EGaddUndergroundLabChoice=4},limit=1] run scoreboard players enable @a[tag=same_room] EGaddUndergroundLabChoice
 execute if entity @s[scores={Dialog=130}] if entity @a[scores={EGaddUndergroundLabChoice=4},limit=1] run scoreboard players set @a EGaddUndergroundLabChoice 0
 execute if entity @s[scores={Dialog=130}] if entity @a[scores={EGaddUndergroundLabChoice=0},limit=1] run scoreboard players set @s Dialog 131
+execute if entity @s[scores={Dialog=130}] if entity @a[scores={EGaddUndergroundLabChoice=0},limit=1] run data remove entity @s data.animation
+execute if entity @s[scores={Dialog=132}] if entity @a[scores={EGaddUndergroundLabChoice=1..2},limit=1] run data modify entity @s data.animation set value {namespace:"luigis_mansion",id:"nod"}
 execute if entity @s[scores={Dialog=132}] if entity @a[scores={EGaddUndergroundLabChoice=1..2},limit=1] as @a[tag=same_room,tag=!spectator,tag=!looking_at_map] run function luigis_mansion:entities/player/animation/set/nod
 execute if entity @s[scores={Dialog=132}] as @a[scores={EGaddUndergroundLabChoice=1},limit=1] run function luigis_mansion:data/load
 execute if entity @s[scores={Dialog=132}] if entity @a[scores={EGaddUndergroundLabChoice=2},limit=1] run tellraw @a[tag=same_room] {"type":"translatable","translate":"chat.type.text","with":[{"type":"translatable","translate":"luigis_mansion:entity.e_gadd","color":"green"},{"type":"translatable","translate":"luigis_mansion:dialog.underground_lab.old_data.no.1"}]}
@@ -83,6 +87,8 @@ execute if entity @a[scores={EGaddUndergroundLabChoice=8},limit=1] if entity @s[
 execute if entity @s[scores={Dialog=124}] if entity @a[scores={EGaddUndergroundLabChoice=8},limit=1] as @a[tag=same_room,tag=!spectator,tag=!looking_at_map] run function luigis_mansion:entities/player/animation/set/nod
 execute if entity @s[scores={Dialog=124}] if entity @a[scores={EGaddUndergroundLabChoice=8},limit=1] run tellraw @a[tag=same_room] {"type":"translatable","translate":"luigis_mansion:dialog.underground_lab.nowhere","color":"green","clickEvent":{"action":"run_command","value":"/trigger AmiiboChoice set 1"}}
 execute if entity @s[scores={Dialog=124}] if entity @a[scores={EGaddUndergroundLabChoice=8},limit=1] run scoreboard players enable @a[tag=same_room] AmiiboChoice
+execute if entity @s[scores={Dialog=124}] if entity @a[scores={EGaddUndergroundLabChoice=8},limit=1] run data remove entity @s data.animation
+execute if entity @s[scores={Dialog=126}] if entity @a[scores={EGaddUndergroundLabChoice=8},limit=1] run data modify entity @s data.animation set value {namespace:"luigis_mansion",id:"nod"}
 execute if entity @s[scores={Dialog=126}] if entity @a[scores={EGaddUndergroundLabChoice=8},limit=1] if entity @a[scores={AmiiboChoice=1..},limit=1] as @a[tag=same_room,tag=!spectator,tag=!looking_at_map] run function luigis_mansion:entities/player/animation/set/nod
 execute if entity @s[scores={Dialog=126}] if entity @a[scores={EGaddUndergroundLabChoice=8},limit=1] if entity @a[scores={AmiiboChoice=1},limit=1] run scoreboard players set @a EGaddUndergroundLabChoice 5
 execute if entity @s[scores={Dialog=126}] if entity @a[scores={EGaddUndergroundLabChoice=8},limit=1] if entity @a[scores={AmiiboChoice=1},limit=1] run scoreboard players set @s Dialog 57
