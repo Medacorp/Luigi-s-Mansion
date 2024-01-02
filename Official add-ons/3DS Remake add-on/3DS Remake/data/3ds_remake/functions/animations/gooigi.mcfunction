@@ -14,6 +14,6 @@ execute if entity @s[nbt={Inventory:[{tag:{luigis_mansion:{id:"luigis_mansion:ga
 execute as @e[type=minecraft:armor_stand,tag=gooigi_model,tag=source,limit=1] run function 3ds_remake:animations/gooigi/main
 execute as @e[type=minecraft:armor_stand,tag=gooigi_model,tag=!source] at @e[tag=this_gooigi,tag=source,limit=1] run function 3ds_remake:animations/gooigi/main
 execute store result score #temp Time if entity @e[tag=this_gooigi]
-execute unless score #temp Time matches 10 run tag @e[tag=this_gooigi] add dead
+execute if entity @s[type=minecraft:player] unless score #temp Time matches 10 run tag @e[tag=this_gooigi] add dead
 scoreboard players reset #temp Time
 tag @e[tag=this_gooigi] remove this_gooigi
