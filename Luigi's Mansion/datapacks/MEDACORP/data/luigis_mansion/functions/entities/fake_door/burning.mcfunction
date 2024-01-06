@@ -1,2 +1,2 @@
-data modify storage luigis_mansion:data damage set value {method:"luigis_mansion:burning_door",amount:10,knockback:"burn"}
+data modify storage luigis_mansion:data damage set value {method:{namespace:"luigis_mansion",id:"burning_door"},amount:10,animation:"knockback/burn"}
 execute positioned ^ ^ ^-0.5 align xz positioned ~0.5 ~ ~0.5 run function luigis_mansion:entities/player/damage

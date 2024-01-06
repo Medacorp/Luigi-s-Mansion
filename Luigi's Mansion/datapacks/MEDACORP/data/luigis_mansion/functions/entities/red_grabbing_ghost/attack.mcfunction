@@ -14,8 +14,8 @@ execute if entity @s[scores={GrabbedID=-2147483648..,ActionTime=21..}] as @a[tag
 execute if entity @s[scores={GrabbedID=-2147483648..}] if entity @a[tag=still_grabbed,limit=1] as @e[tag=chest] if score @s ID = #temp ID run tag @s add grabbed_model
 execute if entity @s[scores={ActionTime=1..20}] if score #mirrored Selected matches 0 run function luigis_mansion:entities/red_grabbing_ghost/grab/normal
 execute if entity @s[scores={ActionTime=1..20}] if score #mirrored Selected matches 1 run function luigis_mansion:entities/red_grabbing_ghost/grab/mirrored
-execute if entity @s[scores={ActionTime=20,AttackType=0}] run data modify storage luigis_mansion:data damage set value {method:"luigis_mansion:grabbed",amount:0,knockback:"harmless_grab",attacker:-1}
-execute if entity @s[scores={ActionTime=20,AttackType=1}] run data modify storage luigis_mansion:data damage set value {method:"luigis_mansion:grabbed",amount:0,knockback:"harmfull_grab",attacker:-1}
+execute if entity @s[scores={ActionTime=20,AttackType=0}] run data modify storage luigis_mansion:data damage set value {method:{namespace:"luigis_mansion",id:"grabbed"},amount:0,animation:"knockback/harmless_grab",attacker:-1}
+execute if entity @s[scores={ActionTime=20,AttackType=1}] run data modify storage luigis_mansion:data damage set value {method:{namespace:"luigis_mansion",id:"grabbed"},amount:0,animation:"knockback/harmfull_grab",attacker:-1}
 execute if entity @s[scores={ActionTime=20,AttackType=1}] run data modify storage luigis_mansion:data damage.amount set from entity @s ArmorItems[3].tag.luigis_mansion.damage.attack
 execute if entity @s[scores={ActionTime=20}] store result storage luigis_mansion:data damage.attacker int 1 run scoreboard players get @s GhostNr
 execute if entity @s[scores={ActionTime=20}] as @a[tag=still_grabbed,limit=1] run function luigis_mansion:entities/player/damage

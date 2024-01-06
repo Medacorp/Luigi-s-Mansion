@@ -13,7 +13,7 @@ tag @s[tag=!spawned_particle,tag=!no_spawned_particle] add spawned_particle
 tag @s[tag=no_spawned_particle] remove no_spawned_particle
 execute at @s run function luigis_mansion:old_animations/bomb/turn
 execute at @s[scores={Move=10}] run execute as @e[distance=..3,scores={Invulnerable=0},tag=game_boy_horror_location] run function luigis_mansion:entities/game_boy_horror_location/bring_player_back
-execute at @s[scores={Move=10}] run data modify storage luigis_mansion:data damage set value {method:"luigis_mansion:explosion",amount:10,knockback:"burn",no_delete:1b}
+execute at @s[scores={Move=10}] run data modify storage luigis_mansion:data damage set value {method:{namespace:"luigis_mansion",id:"explosion"},amount:10,animation:"knockback/burn",no_delete:1b}
 execute at @s[scores={Move=10}] if data entity @s ArmorItems[3].tag.luigis_mansion.damage.attack run data modify storage luigis_mansion:data damage.amount set from entity @s ArmorItems[3].tag.luigis_mansion.damage.attack
 execute at @s[scores={Move=10}] store result storage luigis_mansion:data damage.attacker int 1 run scoreboard players get @s Owner
 execute at @s[scores={Move=10}] as @a[distance=..3,gamemode=!spectator] run function luigis_mansion:entities/player/damage

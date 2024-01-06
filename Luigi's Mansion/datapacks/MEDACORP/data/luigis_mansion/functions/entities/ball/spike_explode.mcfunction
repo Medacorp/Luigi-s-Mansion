@@ -1,6 +1,6 @@
 tag @e[tag=bowser,tag=can_decapitate,distance=..6] add decapitate
 execute as @e[distance=..3,tag=game_boy_horror_location] run function luigis_mansion:entities/game_boy_horror_location/bring_player_back
-data modify storage luigis_mansion:data damage set value {method:"luigis_mansion:explosion",amount:10,knockback:"burn",no_delete:1b}
+data modify storage luigis_mansion:data damage set value {method:{namespace:"luigis_mansion",id:"explosion"},amount:10,animation:"knockback/burn",no_delete:1b}
 execute if data entity @s ArmorItems[3].tag.luigis_mansion.damage.attack run data modify storage luigis_mansion:data damage.amount set from entity @s ArmorItems[3].tag.luigis_mansion.damage.attack
 execute store result storage luigis_mansion:data damage.attacker int 1 run scoreboard players get @s Owner
 execute as @a[distance=..1,gamemode=!spectator] run function luigis_mansion:entities/player/damage

@@ -55,7 +55,7 @@ execute at @s[tag=in_vacuum,tag=big] unless entity @a[distance=..3,tag=!spectato
 execute at @s[tag=in_vacuum,tag=big] unless entity @a[distance=..3,tag=!spectator,tag=vacuuming] facing entity @p[tag=!spectator,tag=player,tag=vacuuming] feet unless block ^ ^ ^0.3 #luigis_mansion:all_ignore rotated ~ 0 unless block ^ ^ ^0.3 #luigis_mansion:all_ignore run teleport @s ~ ~ ~ ~ ~
 execute at @s[tag=in_vacuum,tag=big] at @p[distance=..3,tag=!spectator,tag=player,tag=vacuuming] positioned ~ ~0.5 ~ run teleport @s ^ ^ ^0.2 ~ ~
 execute at @s[tag=!in_vacuum,tag=chauncey] as @e[distance=..1,tag=game_boy_horror_location] run function luigis_mansion:entities/game_boy_horror_location/bring_player_back
-execute at @s[tag=!in_vacuum,tag=chauncey] run data modify storage luigis_mansion:data damage set value {method:"luigis_mansion:ball",amount:10,knockback:"large",no_delete:1b}
+execute at @s[tag=!in_vacuum,tag=chauncey] run data modify storage luigis_mansion:data damage set value {method:{namespace:"luigis_mansion",id:"ball"},amount:10,animation:"knockback/large",no_delete:1b}
 execute at @s[tag=!in_vacuum,tag=chauncey] store result storage luigis_mansion:data damage.attacker int 1 run scoreboard players get @s Owner
 execute at @s[tag=!in_vacuum,tag=chauncey] as @a[distance=..1,gamemode=!spectator] run function luigis_mansion:entities/player/damage
 execute at @s[tag=!in_vacuum,tag=chauncey] run data remove storage luigis_mansion:data damage

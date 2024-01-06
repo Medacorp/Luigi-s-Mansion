@@ -22,6 +22,7 @@ function luigis_mansion:entities/player/animation/set/none
 execute if entity @s[scores={Room=-2}] run function luigis_mansion:room/underground_lab/warp_to
 tag @s remove loaded_chunks
 tag @s remove seen_room_name
+tag @s remove got_selection_menu_how_to
 execute if entity @a[name=Dhranios] run gamerule sendCommandFeedback true
 execute unless entity @a[name=Dhranios] run gamerule sendCommandFeedback false
 title @s[tag=!looking_at_map] times 40 40 40

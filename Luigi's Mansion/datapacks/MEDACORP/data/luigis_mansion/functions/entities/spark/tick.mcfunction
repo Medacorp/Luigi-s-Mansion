@@ -19,7 +19,7 @@ execute at @s[scores={Turn=0},tag=visible] run function luigis_mansion:entities/
 data modify entity @s[scores={SpawnTime=140}] ArmorItems[3].tag.CustomModelData set value 106
 tag @s[scores={SpawnTime=200}] add explode
 execute if entity @s[tag=explode,tag=visible] run execute as @e[distance=..3,tag=game_boy_horror_location] run function luigis_mansion:entities/game_boy_horror_location/bring_player_back
-execute if entity @s[tag=explode,tag=visible] run data modify storage luigis_mansion:data damage set value {method:"luigis_mansion:explosion",amount:0,knockback:"burn",attacker:-1,no_delete:1b}
+execute if entity @s[tag=explode,tag=visible] run data modify storage luigis_mansion:data damage set value {method:{namespace:"luigis_mansion",id:"explosion"},amount:0,animation:"knockback/burn",attacker:-1,no_delete:1b}
 execute if entity @s[tag=explode,tag=visible] run data modify storage luigis_mansion:data damage.amount set from entity @s ArmorItems[3].tag.luigis_mansion.damage.collision
 execute if entity @s[tag=explode,tag=visible] store result storage luigis_mansion:data damage.attacker int 1 run scoreboard players get @s GhostNr
 execute if entity @s[tag=explode,tag=visible] as @a[distance=..3,gamemode=!spectator] run function luigis_mansion:entities/player/damage

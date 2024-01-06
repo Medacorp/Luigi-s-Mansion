@@ -1,5 +1,5 @@
 execute if entity @s[tag=!dead] as @e[distance=..1,tag=game_boy_horror_location] run function luigis_mansion:entities/game_boy_horror_location/bring_player_back
-execute if entity @s[tag=!dead] run data modify storage luigis_mansion:data damage set value {method:"luigis_mansion:haunted_object",amount:0,knockback:"small",attacker:-1}
+execute if entity @s[tag=!dead] run data modify storage luigis_mansion:data damage set value {method:{namespace:"luigis_mansion",id:"haunted_object"},amount:0,animation:"knockback/small",attacker:-1}
 execute if entity @s[tag=!dead] run data modify storage luigis_mansion:data damage.amount set from entity @s ArmorItems[3].tag.luigis_mansion.damage.collision
 execute if entity @s[tag=!dead] store result storage luigis_mansion:data damage.attacker int 1 run scoreboard players get @s GhostNr
 execute if entity @s[tag=!dead] as @a[distance=..1,gamemode=!spectator,sort=nearest,limit=1] run function luigis_mansion:entities/player/damage

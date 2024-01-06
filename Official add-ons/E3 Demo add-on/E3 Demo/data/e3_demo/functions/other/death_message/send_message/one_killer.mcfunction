@@ -1,2 +1,0 @@
-execute if data storage luigis_mansion:data my_memory.hurt_by{method:"e3_demo:boo"} run tellraw @a {"type":"translatable","translate":"e3_demo:death.boo.killer","with":[{"type":"selector","selector":"@s"},{"type":"nbt","nbt":"my_memory.hurt_by.attacker","source":"storage","storage":"luigis_mansion:data","interpret":true}]}
-execute if data storage luigis_mansion:data my_memory.hurt_by{method:"e3_demo:boo"} run data remove storage luigis_mansion:data my_memory.hurt_by.method
