@@ -4,7 +4,7 @@ execute if entity @s[scores={Animation=2}] run data modify storage luigis_mansio
 execute if entity @s[scores={Health=..15}] run data modify storage luigis_mansion:data luigi.tags append value "low_health"
 data modify storage luigis_mansion:data luigi.gliding set from entity @s FallFlying
 execute store result storage luigis_mansion:data luigi.swimming byte 1 if entity @s[tag=swimming]
-execute unless entity @s[scores={KnockbackTime=1..}] unless entity @s[scores={ScareTime=1..}] unless entity @s[scores={IdleTime=..-1},tag=!idle] store result storage luigis_mansion:data luigi.invulnerable byte 1 if entity @s[scores={Invulnerable=1..},tag=!capturing_ghost]
+execute unless entity @s[scores={IdleTime=..-1},tag=!idle] store result storage luigis_mansion:data luigi.invulnerable byte 1 if entity @s[scores={Invulnerable=1..},tag=!capturing_ghost]
 execute store result storage luigis_mansion:data luigi.animation byte 1 run scoreboard players get @s Animation
 execute if entity @s[nbt={Inventory:[{tag:{luigis_mansion:{is_poltergust:1b}}}]}] run data modify storage luigis_mansion:data luigi.poltergust set from entity @s Inventory[{tag:{luigis_mansion:{is_poltergust:1b}}}]
 data modify storage luigis_mansion:data luigi.mainhand set from entity @s[tag=dark_room] Inventory[{tag:{luigis_mansion:{id:"luigis_mansion:flashlight"}}}]

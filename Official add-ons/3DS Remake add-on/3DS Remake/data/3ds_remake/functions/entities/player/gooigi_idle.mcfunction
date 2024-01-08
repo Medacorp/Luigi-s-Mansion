@@ -35,20 +35,20 @@ execute if entity @s[scores={Animation=21..22}] run function luigis_mansion:enti
 execute if entity @s[scores={Animation=23..24}] run function luigis_mansion:entities/player/animation/door/unlock/pull
 execute if entity @s[scores={Animation=25}] run function luigis_mansion:entities/player/animation/talk
 execute if entity @s[scores={Animation=26}] run function luigis_mansion:entities/player/animation/revive
-# 27 = small knockback
-# 28 = medium knockback
-# 29 = large knockback
-# 30 = burn knockback
-# 31 = soak knockback
-# 32 = freeze knockback
-# 33 = grabb knockback
-# 34 = bite knockback
-# 35 = slip knockback
-# 36 = flee knockback
-# 37..38 = fake door knockback
-# 39 = scare
-# 40 = freeze
-# 41 = bashed
+execute if entity @s[scores={Animation=27}] run function luigis_mansion:entities/player/animation/knockback/small
+execute if entity @s[scores={Animation=28}] run function luigis_mansion:entities/player/animation/knockback/medium
+execute if entity @s[scores={Animation=29}] run function luigis_mansion:entities/player/animation/knockback/large
+execute if entity @s[scores={Animation=30}] run function luigis_mansion:entities/player/animation/knockback/melt
+execute if entity @s[scores={Animation=31}] run function luigis_mansion:entities/player/animation/knockback/soak
+execute if entity @s[scores={Animation=32}] run function luigis_mansion:entities/player/animation/knockback/freeze
+execute if entity @s[scores={Animation=33}] run function luigis_mansion:entities/player/animation/knockback/grab
+execute if entity @s[scores={Animation=34}] run function luigis_mansion:entities/player/animation/knockback/bite
+execute if entity @s[scores={Animation=35}] run function luigis_mansion:entities/player/animation/knockback/slip
+execute if entity @s[scores={Animation=36}] run function luigis_mansion:entities/player/animation/knockback/flee
+execute if entity @s[scores={Animation=37..38}] run function luigis_mansion:entities/player/animation/knockback/fake_door
+execute if entity @s[scores={Animation=39}] run function luigis_mansion:entities/player/animation/scare/normal
+execute if entity @s[scores={Animation=40}] run function luigis_mansion:entities/player/animation/scare/freeze
+execute if entity @s[scores={Animation=41}] run function luigis_mansion:entities/player/animation/scare/bash
 # 42 = knock search
 execute if entity @s[scores={Animation=43}] run function luigis_mansion:entities/player/animation/hump
 # 44 = bash search

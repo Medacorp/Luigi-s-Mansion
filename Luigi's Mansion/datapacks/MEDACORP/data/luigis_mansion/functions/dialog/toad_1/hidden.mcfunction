@@ -14,16 +14,12 @@ execute if entity @s[scores={Dialog=112}] as @a[tag=same_room,tag=!spectator,tag
 execute if entity @s[scores={Dialog=112}] run playsound luigis_mansion:entity.toad.wow neutral @a[tag=same_room] ~ ~ ~ 1
 execute if entity @s[scores={Dialog=112}] if score #players Totals matches 1 run tellraw @a[tag=same_room] {"type":"translatable","translate":"chat.type.text","with":[{"type":"translatable","translate":"luigis_mansion:entity.toad","color":"green"},{"type":"translatable","translate":"luigis_mansion:dialog.toad_1.3","with":[{"type":"selector","selector":"@p[gamemode=!spectator]"}]}]}
 execute if entity @s[scores={Dialog=112}] if score #players Totals matches 2.. run tellraw @a[tag=same_room] {"type":"translatable","translate":"chat.type.text","with":[{"type":"translatable","translate":"luigis_mansion:entity.toad","color":"green"},{"type":"translatable","translate":"luigis_mansion:dialog.toad_1.3.more"}]}
-tag @s[scores={Dialog=112}] add happy
-scoreboard players set @s[scores={Dialog=112}] AnimationProgress 0
+data remove entity @s[scores={Dialog=112}] data.animation
 execute if entity @s[scores={Dialog=224}] if score #players Totals matches 1 run tellraw @a[tag=same_room] {"type":"translatable","translate":"chat.type.text","with":[{"type":"translatable","translate":"luigis_mansion:entity.toad","color":"green"},{"type":"translatable","translate":"luigis_mansion:dialog.toad_1.4"}]}
 execute if entity @s[scores={Dialog=224}] if score #players Totals matches 2.. run tellraw @a[tag=same_room] {"type":"translatable","translate":"chat.type.text","with":[{"type":"translatable","translate":"luigis_mansion:entity.toad","color":"green"},{"type":"translatable","translate":"luigis_mansion:dialog.toad_1.4.more"}]}
-tag @s[scores={Dialog=224}] add explain
-scoreboard players set @s[scores={Dialog=224}] AnimationProgress 0
+data remove entity @s[scores={Dialog=224}] data.animation
 execute if entity @s[scores={Dialog=440}] run tellraw @a[tag=same_room] {"type":"translatable","translate":"chat.type.text","with":[{"type":"translatable","translate":"luigis_mansion:entity.toad","color":"green"},{"type":"translatable","translate":"luigis_mansion:dialog.toad_1.5"}]}
-tag @s[scores={Dialog=728}] remove explain
-tag @s[scores={Dialog=728}] remove happy
-scoreboard players set @s[scores={Dialog=728}] AnimationProgress 0
+data modify entity @s[scores={Dialog=112}] data.animation set value {namespace:"luigis_mansion",id:"cry"}
 execute if entity @s[scores={Dialog=728}] run data modify storage luigis_mansion:data current_state.current_data.technical_data merge value {toad_1_spoke:1b}
 execute if entity @s[scores={Dialog=728}] run playsound luigis_mansion:entity.toad.cry_1 neutral @a[tag=same_room] ~ ~ ~ 1
 execute if entity @s[scores={Dialog=728}] if score #players Totals matches 1 run tellraw @a[tag=same_room] {"type":"translatable","translate":"chat.type.text","with":[{"type":"translatable","translate":"luigis_mansion:entity.toad","color":"green"},{"type":"translatable","translate":"luigis_mansion:dialog.toad_1.6"}]}
@@ -33,20 +29,17 @@ execute if entity @s[scores={Dialog=944}] run tellraw @a[tag=same_room] {"type":
 execute if entity @s[scores={Dialog=944}] run scoreboard players enable @a[tag=same_room] Toad1Choice
 execute if entity @s[scores={Dialog=946}] if entity @a[scores={Toad1Choice=1..}] as @a[scores={Toad1Choice=0}] run trigger Toad1Choice set 0
 execute if entity @s[scores={Dialog=946}] if entity @a[scores={Toad1Choice=1}] as @a[tag=same_room,tag=!spectator,tag=!looking_at_map] run function luigis_mansion:entities/player/animation/set/enthusiastic
-execute if entity @s[scores={Dialog=946}] if entity @a[scores={Toad1Choice=1}] run tag @s add happy
+execute if entity @s[scores={Dialog=946}] if entity @a[scores={Toad1Choice=1}] run data remove entity @s data.animation
 execute if entity @s[scores={Dialog=946}] if entity @a[scores={Toad1Choice=1}] run tag @s add turning_on_lights
-execute if entity @s[scores={Dialog=946}] if entity @a[scores={Toad1Choice=1}] run scoreboard players set @s AnimationProgress 0
 execute if entity @s[scores={Dialog=966}] if entity @a[scores={Toad1Choice=1}] run playsound luigis_mansion:entity.toad.yahoo neutral @a[tag=same_room] ~ ~ ~ 1
 execute if entity @s[scores={Dialog=966}] if entity @a[scores={Toad1Choice=1}] if score #players Totals matches 1 run tellraw @a[tag=same_room] {"type":"translatable","translate":"chat.type.text","with":[{"type":"translatable","translate":"luigis_mansion:entity.toad","color":"green"},{"type":"translatable","translate":"luigis_mansion:dialog.toad_1.yes.1","with":[{"type":"selector","selector":"@p[gamemode=!spectator]"}]}]}
 execute if entity @s[scores={Dialog=966}] if entity @a[scores={Toad1Choice=1}] if score #players Totals matches 2.. run tellraw @a[tag=same_room] {"type":"translatable","translate":"chat.type.text","with":[{"type":"translatable","translate":"luigis_mansion:entity.toad","color":"green"},{"type":"translatable","translate":"luigis_mansion:dialog.toad_1.yes.1.more"}]}
 execute if entity @s[scores={Dialog=1062}] run function luigis_mansion:room/hidden/foyer/clear
 execute if entity @s[scores={Dialog=1062}] run function luigis_mansion:room/hidden/hallway_1/clear
-tag @s[scores={Dialog=1082}] add explain
-scoreboard players set @s[scores={Dialog=1082}] AnimationProgress 0
+data modify entity @s[scores={Dialog=1082}] data.animation set value {namespace:"luigis_mansion",id:"explain"}
 execute if entity @s[scores={Dialog=1082}] if score #players Totals matches 1 run tellraw @a[tag=same_room] {"type":"translatable","translate":"chat.type.text","with":[{"type":"translatable","translate":"luigis_mansion:entity.toad","color":"green"},{"type":"translatable","translate":"luigis_mansion:dialog.toad_1.yes.2"}]}
 execute if entity @s[scores={Dialog=1082}] if score #players Totals matches 2.. run tellraw @a[tag=same_room] {"type":"translatable","translate":"chat.type.text","with":[{"type":"translatable","translate":"luigis_mansion:entity.toad","color":"green"},{"type":"translatable","translate":"luigis_mansion:dialog.toad_1.yes.2.more"}]}
-tag @s[scores={Dialog=1234}] remove explain
-scoreboard players set @s[scores={Dialog=1234}] AnimationProgress 0
+data remove entity @s[scores={Dialog=1234}] data.animation
 execute if entity @s[scores={Dialog=1234}] run scoreboard players set @a Toad1Choice 0
 execute if entity @s[scores={Dialog=1234}] run tellraw @a[tag=same_room] {"type":"translatable","translate":"luigis_mansion:message.save.yes","color":"green","clickEvent":{"action":"run_command","value":"/trigger Toad1Choice set 1"},"extra":[{"type":"text","text":"\n"},{"type":"translatable","translate":"luigis_mansion:message.save.no","clickEvent":{"action":"run_command","value":"/trigger Toad1Choice set 2"}}]}
 execute if entity @s[scores={Dialog=1234}] run scoreboard players enable @a[tag=same_room] Toad1Choice
@@ -65,8 +58,6 @@ execute unless entity @e[tag=same_room,tag=!spectator,distance=..7,limit=1] run 
 tag @s[tag=!talk] remove turning_on_lights
 execute if entity @s[tag=!talk] as @a[tag=same_room] run function luigis_mansion:other/music/set/silence
 execute if entity @s[tag=!talk] run scoreboard players reset @a[scores={Toad1Choice=0..}] Toad1Choice
-scoreboard players set @s[tag=!talk,tag=explain] AnimationProgress 0
-execute if entity @s[tag=!talk,scores={Dialog=..1061},tag=happy] run scoreboard players set @s AnimationProgress 0
-tag @s[tag=!talk] remove explain
-tag @s[tag=!talk,scores={Dialog=..1061}] remove happy
+data remove entity @s[tag=!talk,scores={Dialog=1062..}] data.animation
+data modify entity @s[tag=!talk,scores={Dialog=..1061}] data.animation set value {namespace:"luigis_mansion",id:"cry"}
 scoreboard players set @s[tag=!talk] Dialog 0

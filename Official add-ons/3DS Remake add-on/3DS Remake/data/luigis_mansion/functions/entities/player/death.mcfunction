@@ -1,10 +1,6 @@
 stopsound @s[tag=!gooigi] music
 playsound luigis_mansion:music.game_over music @s[tag=!portrait_battle,tag=!gooigi] ~ ~ ~ 1000
 scoreboard players set @s[tag=!gooigi] Music 121
-scoreboard players set @s KnockbackType 0
-scoreboard players reset @s KnockbackTime 
-scoreboard players reset @s ScareType
-scoreboard players reset @s ScareTime 
 tag @s add death_animation
 tag @s add spectator
 scoreboard players operation #temp ID = @s ID

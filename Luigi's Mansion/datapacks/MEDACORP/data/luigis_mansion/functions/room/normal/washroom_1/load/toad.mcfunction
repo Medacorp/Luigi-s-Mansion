@@ -1,3 +1,3 @@
 execute if data storage luigis_mansion:data current_state.current_data{blackout:0b} run data modify storage luigis_mansion:data entity set value {scan_message:{sender:"scanner",message:'{"type":"translatable","translate":"luigis_mansion:message.player.scan_furniture.6"}'}}
 execute if data storage luigis_mansion:data current_state.current_data{blackout:0b} if data storage luigis_mansion:data current_state.current_data.rooms.washroom_1{cleared:1b} run data modify storage luigis_mansion:data entity.happy set value 1b
-execute if data storage luigis_mansion:data current_state.current_data{blackout:0b} positioned 662 11 43 rotated -90 0 run function luigis_mansion:spawn_entities/toad
+execute if data storage luigis_mansion:data current_state.current_data{blackout:0b} positioned 662 11 43 rotated -90 0 run function luigis_mansion:spawn_entities/toad/red

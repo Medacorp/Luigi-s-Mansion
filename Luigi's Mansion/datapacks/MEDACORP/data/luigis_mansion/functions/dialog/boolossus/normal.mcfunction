@@ -27,10 +27,10 @@ execute if entity @s[scores={Dialog=382}] run tag @e[nbt={ArmorItems:[{tag:{luig
 execute if entity @s[scores={Dialog=386}] run tag @e[nbt={ArmorItems:[{tag:{luigis_mansion:{namespace:"luigis_mansion",id:"boolossus"}}}]},sort=random,tag=!dialog_animation_start,limit=1] add dialog_animation_start
 execute if entity @s[scores={Dialog=390}] run tag @e[nbt={ArmorItems:[{tag:{luigis_mansion:{namespace:"luigis_mansion",id:"boolossus"}}}]},sort=random,tag=!dialog_animation_start,limit=1] add dialog_animation_start
 execute if entity @s[scores={Dialog=434}] as @a[tag=same_room,tag=!spectator,tag=!looking_at_map] run function luigis_mansion:entities/player/animation/set/none
-execute if entity @s[scores={Dialog=434}] as @a[tag=boolossus_target,limit=1] at @s positioned ^ ^ ^1 run function luigis_mansion:entities/player/scare/bash_no_move
-execute if entity @s[scores={Dialog=435..554}] if score #mirrored Selected matches 0 as @a[tag=boolossus_target,scores={ScareTime=20},limit=1] at @s rotated ~-5 0 run function luigis_mansion:entities/player/scared_bashed_force_move
-execute if entity @s[scores={Dialog=435..554}] if score #mirrored Selected matches 1 as @a[tag=boolossus_target,scores={ScareTime=20},limit=1] at @s rotated ~5 0 run function luigis_mansion:entities/player/scared_bashed_force_move
-execute if entity @s[scores={Dialog=435..593}] run scoreboard players set @a[tag=boolossus_target,limit=1,scores={ScareTime=20}] ScareTime 21
+execute if entity @s[scores={Dialog=434}] as @a[tag=boolossus_target,limit=1] at @s positioned ^ ^ ^1 run function luigis_mansion:entities/player/animation/set/scare/bash_no_move
+execute if entity @s[scores={Dialog=435..554}] if score #mirrored Selected matches 0 as @a[tag=boolossus_target,scores={IdleTime=-21},limit=1] at @s rotated ~-5 0 run function luigis_mansion:entities/player/animation/scare/bash_force_move
+execute if entity @s[scores={Dialog=435..554}] if score #mirrored Selected matches 1 as @a[tag=boolossus_target,scores={IdleTime=-21},limit=1] at @s rotated ~5 0 run function luigis_mansion:entities/player/animation/scare/bash_force_move
+execute if entity @s[scores={Dialog=435..593}] run scoreboard players set @a[tag=boolossus_target,limit=1,scores={IdleTime=-21}] IdleTime -22
 execute if entity @s[scores={Dialog=472}] run scoreboard players add @e[nbt={ArmorItems:[{tag:{luigis_mansion:{namespace:"luigis_mansion",id:"boolossus"}}}]}] ActionTime 1
 execute if entity @s[scores={Dialog=574..}] as @e[nbt={ArmorItems:[{tag:{luigis_mansion:{namespace:"luigis_mansion",id:"boolossus"}}}]}] at @s run teleport @s ~ ~1 ~
 execute if entity @s[scores={Dialog=574}] as @a[tag=boolossus_target,limit=1] at @s run teleport @s ~ 120 ~
@@ -56,5 +56,5 @@ execute if entity @s[scores={Dialog=593}] as @a[tag=boolossus_target,limit=1] at
 execute if entity @s[scores={Dialog=594}] as @a[tag=boolossus_target,limit=1] at @s run teleport @s ~ 140 ~
 execute if entity @s[scores={Dialog=595}] run tag @e[nbt={ArmorItems:[{tag:{luigis_mansion:{namespace:"luigis_mansion",id:"boolossus"}}}]},tag=!merged] add remove_from_existence
 execute if entity @s[scores={Dialog=595}] run tag @e[tag=boolossus_target] remove boolossus_target
-execute if entity @s[scores={Dialog=594..}] run scoreboard players set @a[tag=boolossus_target,limit=1] ScareTime 1
+execute if entity @s[scores={Dialog=594..}] run scoreboard players set @a[tag=boolossus_target,limit=1] IdleTime -1
 execute if entity @s[scores={Dialog=595}] as @a run function luigis_mansion:room/normal/boolossus_battle/warp_to

@@ -23,7 +23,7 @@ execute if entity @s[tag=unlock_door] run function luigis_mansion:entities/furni
 execute unless entity @s[tag=!remove_from_existence,tag=!dead] run setblock ^ ^ ^0.5 minecraft:air
 
 execute if entity @s[tag=blockade_sounds_can_play,tag=blockade,tag=!had_blockade] as @a[tag=same_room,tag=looking_at_map] at @s run function luigis_mansion:selection_menu/game_boy_horror/map/exit
-execute if entity @s[tag=blockade_sounds_can_play,tag=blockade,tag=!had_blockade] as @a[tag=same_room,tag=!spectator] run function luigis_mansion:entities/player/scare/normal
+execute if entity @s[tag=blockade_sounds_can_play,tag=blockade,tag=!had_blockade] as @a[tag=same_room,tag=!spectator] run function luigis_mansion:entities/player/animation/set/scare/normal
 execute if entity @s[tag=blockade_sounds_can_play,tag=blockade,tag=!had_blockade] run playsound luigis_mansion:furniture.blockade.spawn block @a[tag=same_room] ~ ~ ~ 1
 execute if entity @s[tag=blockade_sounds_can_play,tag=!blockade,tag=!area_blockade,tag=had_blockade] run playsound luigis_mansion:furniture.blockade.disappear block @a[tag=same_room] ~ ~ ~ 1
 tag @s remove had_blockade

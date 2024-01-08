@@ -1,3 +1,3 @@
-execute unless entity @s[tag=poltergust_selected,tag=!expelling] unless entity @s[scores={KnockbackType=2..}] unless entity @s[scores={ScareType=2..}] run function e3_demo:items/poltergust_500/cool_down
-execute if entity @s[scores={KnockbackType=2..}] unless entity @s[scores={ScareType=2..}] run function e3_demo:items/poltergust_500/cool_down
-execute if entity @s[scores={ScareType=2..}] run function e3_demo:items/poltergust_500/cool_down
+execute unless entity @s[tag=poltergust_selected,tag=!expelling] unless entity @s[scores={Animation=28..38}] unless entity @s[scores={Animation=40..41}] run function e3_demo:items/poltergust_500/cool_down
+execute if entity @s[scores={Animation=28..38}] unless entity @s[scores={Animation=40..41}] run function e3_demo:items/poltergust_500/cool_down
+execute if entity @s[scores={Animation=40..41}] run function e3_demo:items/poltergust_500/cool_down

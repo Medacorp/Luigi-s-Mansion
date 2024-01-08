@@ -7,20 +7,20 @@ execute if entity @s[tag=new_poltergust_grabbed,tag=!poltergust_grabbed,scores={
 tag @s remove instant_poltergust_grab
 tag @s remove instant_poltergust_put_away
 
-execute if entity @s[scores={Health=..0},tag=!death_animation,tag=!revive_animation] unless entity @s[scores={KnockbackTime=1..}] unless entity @s[scores={ScareTime=1..}] run function luigis_mansion:entities/player/death
+execute if entity @s[scores={Health=..0},tag=!death_animation,tag=!revive_animation] unless entity @s[scores={Animation=27..41}] run function luigis_mansion:entities/player/death
 execute if entity @s[scores={Health=1..},tag=already_added_to_list] run function luigis_mansion:entities/player/remove_dead_entry
 tag @s[scores={Health=1..}] remove already_added_to_list
 
 scoreboard players reset @s[scores={OpenMapTime=1..},tag=stop_map_on_key_collect] OpenMapFocus
 scoreboard players reset @s[scores={OpenMapTime=1..},tag=stop_map_on_key_collect] OpenMapTime
 scoreboard players remove @s[scores={OpenMapTime=1..}] OpenMapTime 1
-execute if entity @s[scores={OpenMapTime=0}] unless entity @s[scores={KnockbackType=1..}] unless entity @s[scores={ScareType=1..}] run function luigis_mansion:selection_menu/game_boy_horror/map/open
+execute if entity @s[scores={OpenMapTime=0}] unless entity @s[scores={Animation=27..41}] run function luigis_mansion:selection_menu/game_boy_horror/map/open
 execute if entity @s[tag=!using_selection_menu] run function #luigis_mansion:items
 execute if entity @s[tag=using_selection_menu] run function luigis_mansion:selection_menu/tick
-execute if entity @s[tag=!death_animation,tag=!revive_animation] unless entity @s[scores={KnockbackType=2..}] unless entity @s[scores={ScareType=2..}] run function luigis_mansion:blocks/gravity_swap
-execute if entity @s[tag=riding_poltergust,scores={KnockbackType=0},tag=!looking_at_map,tag=!death_animation,tag=!revive_animation] run function luigis_mansion:entities/player/riding_poltergust
-execute unless entity @s[tag=riding_poltergust,scores={KnockbackType=0},tag=!looking_at_map,tag=!death_animation,tag=!revive_animation] run scoreboard players set @s SlipX 0
-execute unless entity @s[tag=riding_poltergust,scores={KnockbackType=0},tag=!looking_at_map,tag=!death_animation,tag=!revive_animation] run scoreboard players set @s SlipZ 0
+execute if entity @s[tag=!death_animation,tag=!revive_animation] unless entity @s[scores={Animation=28..38}] unless entity @s[scores={Animation=40..41}] run function luigis_mansion:blocks/gravity_swap
+execute if entity @s[tag=riding_poltergust,tag=!looking_at_map,tag=!death_animation,tag=!revive_animation] unless entity @s[scores={Animation=27..38}] run function luigis_mansion:entities/player/riding_poltergust
+execute unless entity @s[tag=riding_poltergust,tag=!looking_at_map,tag=!death_animation,tag=!revive_animation] unless entity @s[scores={Animation=27..38}] run scoreboard players set @s SlipX 0
+execute unless entity @s[tag=riding_poltergust,tag=!looking_at_map,tag=!death_animation,tag=!revive_animation] unless entity @s[scores={Animation=27..38}] run scoreboard players set @s SlipZ 0
 
 execute unless entity @a[scores={GBHCall=1..},limit=1] rotated ~ 0 positioned ^ ^ ^-4 run function luigis_mansion:entities/player/spawn_ghosts
 
@@ -44,7 +44,7 @@ scoreboard players reset @s[scores={MaxHealthTime=200}] MaxHealthTime
 execute if entity @s[scores={Walk=0,Run=0,Sneak=0,Jump=0,IdleTime=0..},tag=!sneak_pos,tag=!spectator,tag=player,tag=!warp,tag=!scanning,tag=!poltergust_selected,tag=!riding_poltergust] run function luigis_mansion:entities/player/idle
 execute if entity @s[scores={Animation=1..},tag=idle] unless entity @s[scores={Walk=0,Run=0,Sneak=0,Jump=0},tag=!sneak_pos,tag=!spectator,tag=player,tag=!warp,tag=!scanning,tag=!poltergust_selected,tag=!riding_poltergust] run function luigis_mansion:entities/player/animation/set/none
 execute if entity @s[scores={IdleTime=1..}] unless entity @s[scores={Walk=0,Run=0,Sneak=0,Jump=0},tag=!sneak_pos,tag=!spectator,tag=player,tag=!warp,tag=!scanning,tag=!poltergust_selected,tag=!riding_poltergust] run scoreboard players set @s IdleTime 0
-execute if entity @s[scores={Animation=1..},tag=!idle,tag=!looking_at_map] unless entity @s[scores={KnockbackTime=1..}] unless entity @s[scores={ScareTime=1..}] run function luigis_mansion:entities/player/animation/freeze_player
+execute if entity @s[scores={Animation=1..},tag=!idle,tag=!animation_may_move,tag=!looking_at_map] run function luigis_mansion:entities/player/animation/freeze_player
 execute if entity @s[scores={IdleTime=..-1}] run function luigis_mansion:entities/player/idle
 
 execute unless entity @s[scores={Walk=0,Run=0,Sneak=0}] if entity @s[tag=!looking_at_map] run function luigis_mansion:entities/player/walk_dust
@@ -56,9 +56,5 @@ tag @s[tag=!death_animation,tag=!revive_animation] remove spectator
 effect give @s minecraft:invisibility infinite 0 true
 execute store result storage luigis_mansion:data macro.id int 1 run scoreboard players get @s ID
 execute if entity @s[tag=!camera] run function luigis_mansion:animations/luigi with storage luigis_mansion:data macro
-execute if entity @s[scores={KnockbackTime=1..}] run function luigis_mansion:entities/player/knockback
-execute unless entity @s[scores={KnockbackType=8..10}] run scoreboard players reset @s GrabbedShake
-execute unless entity @s[scores={KnockbackType=8..10}] run tag @s remove grabbed
-execute if entity @s[scores={ScareTime=1..}] run function luigis_mansion:entities/player/scared
 execute if entity @s[tag=death_animation] run function luigis_mansion:entities/player/death_animation
 execute if entity @s[tag=revive_animation] run function luigis_mansion:entities/player/revive_animation

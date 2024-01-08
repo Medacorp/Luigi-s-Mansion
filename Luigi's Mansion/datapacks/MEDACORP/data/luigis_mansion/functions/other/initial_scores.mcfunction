@@ -13,8 +13,6 @@ scoreboard players set @s Sneak 0
 scoreboard players set @s Sneaking 0
 scoreboard players set @s SneakTime 0
 scoreboard players set @s Room 0
-scoreboard players set @s KnockbackType 0
-scoreboard players set @s ScareType 0
 scoreboard players set @s Shrunk 0
 scoreboard players set @s Dialog 0
 scoreboard players set @s FlashlightType 0

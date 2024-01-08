@@ -8,8 +8,8 @@ execute if entity @s[scores={Dialog=1}] run playsound luigis_mansion:furniture.b
 execute if entity @s[scores={Dialog=1}] run playsound luigis_mansion:music.boos_escape music @a[tag=same_room] ~ ~ ~ 1000
 execute if entity @s[scores={Dialog=1}] run function luigis_mansion:room/normal/storage_room/open_hatch
 execute if entity @s[scores={Dialog=140..}] positioned 685 10 -46 rotated -180 -90 run function luigis_mansion:dialog/release_boos/boos
-execute if entity @s[scores={Dialog=140}] as @a[tag=same_room] positioned 685 10 -46 run function luigis_mansion:entities/player/scare/bash_no_move
-execute if entity @s[scores={Dialog=140..440}] run scoreboard players set @a[tag=same_room,scores={ScareTime=..20}] ScareTime 21
+execute if entity @s[scores={Dialog=140}] as @a[tag=same_room] positioned 685 10 -46 run function luigis_mansion:entities/player/animation/set/scare/bash_no_move
+execute if entity @s[scores={Dialog=140..440}] run scoreboard players set @a[tag=same_room,scores={IdleTime=-21..}] IdleTime -22
 execute if entity @s[scores={Dialog=140}] run tellraw @a[tag=same_room] {"type":"translatable","translate":"chat.type.text","with":[{"type":"translatable","translate":"luigis_mansion:entity.boo","color":"green"},{"type":"translatable","translate":"luigis_mansion:dialog.release_boos.1"}]}
 execute if entity @s[scores={Dialog=190}] if score #players Totals matches 1 run tellraw @a[tag=same_room] {"type":"translatable","translate":"chat.type.text","with":[{"type":"translatable","translate":"luigis_mansion:entity.boo","color":"green"},{"type":"translatable","translate":"luigis_mansion:dialog.release_boos.2","with":[{"type":"selector","selector":"@p[gamemode=!spectator]"},{"type":"selector","selector":"@p[gamemode=!spectator]"}]}]}
 execute if entity @s[scores={Dialog=190}] if score #players Totals matches 2.. run tellraw @a[tag=same_room] {"type":"translatable","translate":"chat.type.text","with":[{"type":"translatable","translate":"luigis_mansion:entity.boo","color":"green"},{"type":"translatable","translate":"luigis_mansion:dialog.release_boos.2.more"}]}

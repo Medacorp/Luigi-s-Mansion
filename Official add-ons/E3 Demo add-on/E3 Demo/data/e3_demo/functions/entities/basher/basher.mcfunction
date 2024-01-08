@@ -18,7 +18,7 @@ execute if entity @s[scores={ActionTime=41},tag=!visible] run function luigis_ma
 execute if entity @s[scores={ActionTime=41}] run summon minecraft:armor_stand ~ ~0.5 ~ {CustomName:'{"type":"translatable","translate":"luigis_mansion:message.basher_scare","color":"yellow","bold":true}',Marker:1b,Invisible:1b,NoGravity:1b,CustomNameVisible:1b,HasVisualFire:1b,Tags:["basher_scare"]}
 execute if entity @s[scores={ActionTime=41}] as @e[distance=..5,tag=game_boy_horror_location] run function luigis_mansion:entities/game_boy_horror_location/bring_player_back
 execute if entity @s[scores={ActionTime=41}] if entity @a[distance=..5,tag=!spectator] run tag @s add laugh
-execute if entity @s[scores={ActionTime=41}] as @a[distance=..5,scores={Invulnerable=1..},tag=!spectator] run function luigis_mansion:entities/player/scare/normal
+execute if entity @s[scores={ActionTime=41}] as @a[distance=..5,scores={Invulnerable=1..},tag=!spectator] run function luigis_mansion:entities/player/animation/set/scare/normal
 execute if entity @s[scores={ActionTime=41}] run data modify storage luigis_mansion:data damage set value {method:{namespace:"luigis_mansion",id:"scare"},amount:0,limit_health:50,animation:"scare/bash",attacker:-1,no_delete:1b}
 execute if entity @s[scores={ActionTime=41}] run data modify storage luigis_mansion:data damage.amount set from entity @s ArmorItems[3].tag.luigis_mansion.damage.attack
 execute if entity @s[scores={ActionTime=41}] store result storage luigis_mansion:data damage.attacker int 1 run scoreboard players get @s GhostNr

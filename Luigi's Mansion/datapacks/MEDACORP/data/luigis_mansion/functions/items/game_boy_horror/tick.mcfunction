@@ -1,4 +1,4 @@
-execute if entity @a[limit=1,scores={GBHCall=1..}] unless entity @s[scores={ScareType=2..}] run function luigis_mansion:items/game_boy_horror/freeze_player
+execute if entity @a[limit=1,scores={GBHCall=1..}] unless entity @s[scores={Animation=40..41}] run function luigis_mansion:items/game_boy_horror/freeze_player
 
 tag @s remove game_boy_horror_selected
 tag @s[tag=!poltergust_selected,nbt={SelectedItem:{tag:{luigis_mansion:{namespace:"luigis_mansion",id:"game_boy_horror"}}}}] add game_boy_horror_selected
@@ -17,6 +17,6 @@ execute unless entity @s[scores={ForceRadar=1}] if entity @s[nbt={Inventory:[{ta
 execute if entity @s[scores={ForceRadar=1},nbt={Inventory:[{tag:{luigis_mansion:{namespace:"luigis_mansion",id:"game_boy_horror"}}}]},nbt=!{Inventory:[{tag:{Damage:5,luigis_mansion:{namespace:"luigis_mansion",id:"game_boy_horror"}}}]}] run function luigis_mansion:items/game_boy_horror/turn_radar_red
 execute if entity @s[scores={ForceRadar=1}] unless score #freeze_timer Selected matches 1 run playsound luigis_mansion:item.game_boy_horror.radar player @s ~ ~ ~ 0.5
 scoreboard players reset @s ForceRadar
-execute if entity @s[scores={UseItem=1..,KnockbackType=0},tag=game_boy_horror_selected,tag=!show_credits] unless entity @s[scores={ScareType=1..}] unless entity @s[scores={IdleTime=..-1},tag=!idle] run function luigis_mansion:selection_menu/game_boy_horror/original_menu
+execute if entity @s[scores={UseItem=1..},tag=game_boy_horror_selected,tag=!show_credits] unless entity @s[scores={Animation=27..41}] unless entity @s[scores={IdleTime=..-1},tag=!idle] run function luigis_mansion:selection_menu/game_boy_horror/original_menu
 tellraw @s[scores={UseItem=1..},tag=game_boy_horror_selected,tag=show_credits] {"type":"translatable","translate":"chat.type.text","with":[{"type":"translatable","translate":"luigis_mansion:entity.mansion","color":"green"},{"type":"translatable","translate":"luigis_mansion:message.use_game_boy_horror_during_credits"}]}
 scoreboard players set @s[scores={UseItem=1..},tag=game_boy_horror_selected] UseItem 0

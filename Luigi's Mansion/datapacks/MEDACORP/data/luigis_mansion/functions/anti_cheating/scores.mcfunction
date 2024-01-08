@@ -116,8 +116,6 @@ scoreboard objectives add Jump minecraft.custom:minecraft.jump
 scoreboard objectives add JumpHeight dummy
 scoreboard objectives add KillerID dummy
 scoreboard objectives add KnockbackDamage dummy
-scoreboard objectives add KnockbackTime dummy
-scoreboard objectives add KnockbackType dummy
 scoreboard objectives add KnockbackX dummy
 scoreboard objectives add KnockbackZ dummy
 scoreboard objectives add LastFloor dummy
@@ -182,8 +180,6 @@ scoreboard objectives add RotationDifference dummy
 scoreboard objectives add RotationX dummy
 scoreboard objectives add RotationY dummy
 scoreboard objectives add Run minecraft.custom:minecraft.sprint_one_cm
-scoreboard objectives add ScareType dummy
-scoreboard objectives add ScareTime dummy
 scoreboard objectives add Search dummy
 scoreboard objectives add Searched dummy
 scoreboard objectives add SearcherID dummy

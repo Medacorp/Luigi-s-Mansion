@@ -19,7 +19,7 @@ execute if entity @s[tag=poltergust_wall_sound,scores={Shrunk=1..}] run playsoun
 tag @s remove poltergust_floor_sound
 tag @s remove poltergust_wall_sound
 execute if entity @s[tag=exploding_poltergust] run function luigis_mansion:items/poltergust_3000/explode
-execute if entity @s[scores={Animation=1..},tag=!idle,nbt={Inventory:[{tag:{luigis_mansion:{namespace:"luigis_mansion",id:"poltergust_3000"}}}]}] unless entity @s[scores={ScareType=1}] unless entity @s[scores={KnockbackType=1..2}] run tag @s add turned_off_for_animation
+execute if entity @s[scores={Animation=1..},tag=!idle,nbt={Inventory:[{tag:{luigis_mansion:{namespace:"luigis_mansion",id:"poltergust_3000"}}}]}] unless entity @s[scores={Animation=39}] unless entity @s[scores={Animation=27..28}] run tag @s add turned_off_for_animation
 tag @s[tag=!turned_off_for_animation,tag=!poltergust_malfunction,nbt={SelectedItem:{tag:{luigis_mansion:{namespace:"luigis_mansion",id:"poltergust_3000"}}}}] add poltergust_selected
 tag @s remove turned_off_for_animation
 execute if entity @s[nbt={Inventory:[{tag:{luigis_mansion:{namespace:"luigis_mansion",id:"poltergust_3000",sync_element:1b}}}]}] run function luigis_mansion:items/poltergust_3000/sync_element

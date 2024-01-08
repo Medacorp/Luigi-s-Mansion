@@ -1,7 +1,4 @@
-execute if entity @s[scores={Invulnerable=0}] unless entity @s[scores={KnockbackType=1..}] run scoreboard players set @s KnockbackTime 140
-execute if entity @s[scores={Invulnerable=0}] unless entity @s[scores={KnockbackType=1..}] run scoreboard players set @s Sound 0
-execute if entity @s[scores={Invulnerable=0}] unless entity @s[scores={KnockbackType=1..}] run summon minecraft:marker ~ ~ ~ {Tags:["temp"]}
-execute if entity @s[scores={Invulnerable=0}] unless entity @s[scores={KnockbackType=1..}] store result score @s KnockbackX run data get entity @e[type=minecraft:marker,tag=temp,limit=1] Pos[0] 100
-execute if entity @s[scores={Invulnerable=0}] unless entity @s[scores={KnockbackType=1..}] store result score @s KnockbackZ run data get entity @e[type=minecraft:marker,tag=temp,limit=1] Pos[2] 100
-execute if entity @s[scores={Invulnerable=0}] unless entity @s[scores={KnockbackType=1..}] run kill @e[type=minecraft:marker,tag=temp,limit=1]
-execute if entity @s[scores={Invulnerable=0}] unless entity @s[scores={KnockbackType=1..}] run scoreboard players set @s KnockbackType 14
+execute if entity @s[scores={Invulnerable=0}] unless entity @s[scores={Animation=27..38}] run scoreboard players set @s IdleTime -141
+execute if entity @s[scores={Invulnerable=0}] unless entity @s[scores={Animation=27..38}] run scoreboard players set @s Sound 0
+execute if entity @s[scores={Invulnerable=0}] unless entity @s[scores={Animation=27..38}] run scoreboard players set @s Animation 37
+execute if entity @s[scores={Invulnerable=0}] unless entity @s[scores={Animation=27..38}] run scoreboard players set @s[tag=left_door] Animation 38

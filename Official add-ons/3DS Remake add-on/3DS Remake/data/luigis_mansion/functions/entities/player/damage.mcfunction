@@ -5,29 +5,11 @@ execute if data storage luigis_mansion:data damage.amount run scoreboard players
 execute if data storage luigis_mansion:data damage.durning_knockback_amount store result score @s KnockbackDamage run data get storage luigis_mansion:data damage.durning_knockback_amount
 execute if data storage luigis_mansion:data damage.method if entity @s[scores={Damage=1..,Invulnerable=0}] run data modify storage luigis_mansion:data my_memory.hurt_by.method set from storage luigis_mansion:data damage.method
 execute if data storage luigis_mansion:data damage.method if entity @s[scores={KnockbackDamage=1..,Invulnerable=0}] run data modify storage luigis_mansion:data my_memory.hurt_by.method set from storage luigis_mansion:data damage.method
-execute if data storage luigis_mansion:data damage{animation:"knockback/burn"} if entity @s[scores={Damage=1..,Invulnerable=0},tag=gooigi] run data modify storage luigis_mansion:data my_memory.hurt_by.method set value "3ds_remake:melt"
-execute if data storage luigis_mansion:data damage{animation:"knockback/burn"} if entity @s[scores={KnockbackDamage=1..,Invulnerable=0},tag=gooigi] run data modify storage luigis_mansion:data my_memory.hurt_by.method set value "3ds_remake:melt"
+execute if data storage luigis_mansion:data damage{animation:"knockback/burn"} if entity @s[scores={Invulnerable=0},tag=gooigi] unless entity @s[scores={Animation=27..33}] run data modify storage luigis_mansion:data my_memory.hurt_by.method set value {namespace:"3ds_remake",id:"melt"}
 execute if data storage luigis_mansion:data damage.attacker if entity @s[scores={Damage=1..,Invulnerable=0}] run data modify storage luigis_mansion:data my_memory.hurt_by.attacker set from storage luigis_mansion:data damage.attacker
 execute if data storage luigis_mansion:data damage.attacker if entity @s[scores={KnockbackDamage=1..,Invulnerable=0}] run data modify storage luigis_mansion:data my_memory.hurt_by.attacker set from storage luigis_mansion:data damage.attacker
 execute if data storage luigis_mansion:data damage.attacker run scoreboard players set @s AttackerMemory 200
-execute if data storage luigis_mansion:data damage{animation:"knockback/small"} run function luigis_mansion:entities/player/knockback/small
-execute if data storage luigis_mansion:data damage{animation:"knockback/medium"} run function luigis_mansion:entities/player/knockback/medium
-execute if data storage luigis_mansion:data damage{animation:"knockback/medium_forward"} run function luigis_mansion:entities/player/knockback/medium_forward
-execute if data storage luigis_mansion:data damage{animation:"knockback/large"} run function luigis_mansion:entities/player/knockback/large
-execute if data storage luigis_mansion:data damage{animation:"knockback/burn"} run function luigis_mansion:entities/player/knockback/burn
-execute if data storage luigis_mansion:data damage{animation:"knockback/soak"} run function luigis_mansion:entities/player/knockback/soak
-execute if data storage luigis_mansion:data damage{animation:"knockback/freeze"} run function luigis_mansion:entities/player/knockback/freeze
-execute if data storage luigis_mansion:data damage{animation:"knockback/harmless_grab"} run function luigis_mansion:entities/player/knockback/harmless_grab
-execute if data storage luigis_mansion:data damage{animation:"knockback/harmfull_grab"} run function luigis_mansion:entities/player/knockback/harmfull_grab
-execute if data storage luigis_mansion:data damage{animation:"knockback/bite"} run function luigis_mansion:entities/player/knockback/bite
-execute if data storage luigis_mansion:data damage{animation:"knockback/slip"} run function luigis_mansion:entities/player/knockback/slip
-execute if data storage luigis_mansion:data damage{animation:"knockback/fake_door"} run function luigis_mansion:entities/player/knockback/fake_door
-execute if data storage luigis_mansion:data damage{animation:"knockback/flee"} run function luigis_mansion:entities/player/knockback/flee
-execute if data storage luigis_mansion:data damage{animation:"knockback/flee_look_up"} run function luigis_mansion:entities/player/knockback/flee_look_up
-execute if data storage luigis_mansion:data damage{animation:"scare/normal"} run function luigis_mansion:entities/player/scare/normal
-execute if data storage luigis_mansion:data damage{animation:"scare/bash"} run function luigis_mansion:entities/player/scare/bash
-execute if data storage luigis_mansion:data damage{animation:"scare/bash_no_move"} run function luigis_mansion:entities/player/scare/bash_no_move
-execute if data storage luigis_mansion:data damage{animation:"scare/freeze"} run function luigis_mansion:entities/player/scare/freeze
+execute if data storage luigis_mansion:data damage.animation run function luigis_mansion:entities/player/damage/animation with storage luigis_mansion:data damage.animation
 scoreboard players operation @s LastHealth = @s Health
 execute if entity @s[scores={Damage=1..,Invulnerable=0},gamemode=!creative,gamemode=!spectator] run function luigis_mansion:entities/player/damage/hurt
 execute if data storage luigis_mansion:data damage.limit_health store result score @s Damage run data get storage luigis_mansion:data damage.limit_health

@@ -93,10 +93,10 @@ execute if entity @s[scores={Dialog=72}] run data modify storage luigis_mansion:
 execute if entity @s[scores={Dialog=72}] positioned 725 20 34.9 run function luigis_mansion:spawn_entities/ghost/gold_ghost
 execute if entity @s[scores={Dialog=72}] run teleport @s 725.5 20 31.4 facing entity @e[tag=ghost,tag=no_ai,limit=1] feet
 execute if entity @s[scores={Dialog=72}] run teleport @e[tag=ghost,tag=no_ai,limit=1] 725 20 34.9 -180 0
-execute if entity @s[scores={Dialog=72}] as @a[tag=same_room] at @e[tag=ghost,tag=no_ai,limit=1] run function luigis_mansion:entities/player/scare/bash
-scoreboard players set @s[scores={Dialog=72}] ScareType 4
-execute if entity @s[scores={Dialog=72..190}] run scoreboard players set @a[tag=same_room,scores={ScareTime=..20}] ScareTime 21
-execute if entity @s[scores={Dialog=92..149}] at @e[tag=ghost,tag=no_ai,limit=1] positioned ^ ^ ^3.5 rotated ~-180 ~ run function luigis_mansion:entities/player/scared_bashed_force_move
+execute if entity @s[scores={Dialog=72}] as @a[tag=same_room] at @e[tag=ghost,tag=no_ai,limit=1] run function luigis_mansion:entities/player/animation/set/scare/bash
+tag @s[scores={Dialog=72}] add bash_no_move
+execute if entity @s[scores={Dialog=72..190}] run scoreboard players set @a[tag=same_room,scores={IdleTime=-21..}] IdleTime -22
+execute if entity @s[scores={Dialog=92..149}] at @e[tag=ghost,tag=no_ai,limit=1] positioned ^ ^ ^3.5 rotated ~-180 ~ run function luigis_mansion:entities/player/animation/scare/bash_force_move
 execute if entity @s[scores={Dialog=92..149}] as @e[tag=ghost,tag=no_ai,limit=1] at @s run teleport @s ^ ^ ^0.11 ~ ~
 execute if entity @s[scores={Dialog=98}] as @e[tag=e_gadd,tag=no_ai,limit=1] at @s run teleport @s ~ ~ ~ facing 718 20 31
 execute if entity @s[scores={Dialog=98}] run data modify entity @e[tag=e_gadd,tag=no_ai,limit=1] data.animation set value {namespace:"luigis_mansion",id:"walk"}
@@ -108,7 +108,7 @@ execute if entity @s[scores={Dialog=150}] run data modify entity @e[tag=e_gadd,t
 execute if entity @s[scores={Dialog=150..459}] at @e[tag=e_gadd,tag=no_ai,limit=1] positioned ~ ~0.25 ~ positioned ^ ^ ^0.5 as @e[tag=ghost,tag=no_ai,limit=1] facing entity @s feet run function luigis_mansion:items/poltergust_3000/vacuuming/e_gadd
 execute if entity @s[scores={Dialog=150}] run scoreboard players set @e[tag=ghost,tag=no_ai,limit=1] AnimationProgress 0
 execute if entity @s[scores={Dialog=150}] run tag @e[tag=ghost,tag=no_ai,limit=1] add hurt
-scoreboard players set @s[scores={Dialog=150}] ScareType 3
+tag @s[scores={Dialog=150}] remove bash_no_move
 execute if entity @s[scores={Dialog=150}] at @e[tag=ghost,tag=no_ai,limit=1] run playsound luigis_mansion:entity.gold_ghost.hurt hostile @a[tag=same_room] ~ ~ ~ 1
 execute if entity @s[scores={Dialog=170}] at @e[tag=e_gadd,tag=no_ai,limit=1] run playsound luigis_mansion:entity.e_gadd.talk.soy_soh_ooh neutral @a[tag=same_room] ~ ~ ~ 1
 execute if entity @s[scores={Dialog=233}] at @e[tag=e_gadd,tag=no_ai,limit=1] run playsound luigis_mansion:entity.e_gadd.dragged neutral @a[tag=same_room] ~ ~ ~ 1

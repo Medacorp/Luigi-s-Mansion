@@ -54,7 +54,7 @@ scoreboard players set @s[scores={Dialog=1771}] AnimationProgress 0
 execute if entity @s[scores={Dialog=1801..1822}] facing 633 94 33 run teleport @s ^ ^ ^0.3 ~ ~
 execute if entity @s[scores={Dialog=1822}] run tag @e[tag=bowser,scores={Room=72}] add animate
 execute if entity @s[scores={Dialog=1911}] as @a[tag=same_room,tag=!spectator,tag=!looking_at_map] run function luigis_mansion:entities/player/animation/set/none
-execute if entity @s[scores={Dialog=1911}] as @a[tag=same_room] run function luigis_mansion:entities/player/knockback/flee
+execute if entity @s[scores={Dialog=1911}] as @a[tag=same_room] run function luigis_mansion:entities/player/animation/set/knockback/flee
 execute if entity @s[scores={Dialog=1911..}] run scoreboard players set @a[tag=same_room] Invulnerable 10
 execute if entity @s[scores={Dialog=1911..}] positioned 635 94 33 as @a[tag=same_room] facing entity @s feet run function luigis_mansion:dialog/king_boo/suck
 execute if entity @s[scores={Dialog=1911..}] positioned 635 94 33 if entity @a[distance=..0.7,gamemode=!spectator,limit=1] run tag @s add remove_from_existence

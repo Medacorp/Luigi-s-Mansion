@@ -52,6 +52,8 @@ scoreboard objectives remove HomeRotX
 scoreboard objectives remove HomeRotY
 scoreboard objectives remove InteractionType
 scoreboard objectives remove Keys
+scoreboard objectives remove KnockbackType
+scoreboard objectives remove KnockbackTime
 scoreboard objectives remove PosX
 scoreboard objectives remove PosY
 scoreboard objectives remove PosZ
@@ -63,6 +65,8 @@ scoreboard objectives remove PunchingBag
 scoreboard objectives remove RotationDif
 scoreboard objectives remove RotX
 scoreboard objectives remove RotY
+scoreboard objectives remove ScareType
+scoreboard objectives remove ScareTime
 scoreboard objectives remove SettingsCheck
 scoreboard objectives remove TrainingOption
 scoreboard objectives remove Wool
