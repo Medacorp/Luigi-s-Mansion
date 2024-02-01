@@ -1,4 +1,10 @@
-execute if entity @s[scores={Invulnerable=0}] unless entity @s[scores={Animation=27..38}] run scoreboard players set @s IdleTime -141
-execute if entity @s[scores={Invulnerable=0}] unless entity @s[scores={Animation=27..38}] run scoreboard players set @s Sound 0
-execute if entity @s[scores={Invulnerable=0}] unless entity @s[scores={Animation=27..38}] run scoreboard players set @s Animation 37
-execute if entity @s[scores={Invulnerable=0}] unless entity @s[scores={Animation=27..38}] run scoreboard players set @s[tag=left_door] Animation 38
+execute if data storage luigis_mansion:data my_memory run tag @s add keep_memory
+execute if entity @s[tag=!keep_memory] run function luigis_mansion:entities/player/memory/get with entity @s
+execute unless data storage luigis_mansion:data my_memory.animation{namespace:"luigis_mansion",id:"knockback/fake_door/right"} unless data storage luigis_mansion:data my_memory.animation{namespace:"luigis_mansion",id:"knockback/fake_door/left"} run function luigis_mansion:entities/player/animation/set/none
+execute unless data storage luigis_mansion:data my_memory.animation{namespace:"luigis_mansion",id:"knockback/fake_door/right"} unless data storage luigis_mansion:data my_memory.animation{namespace:"luigis_mansion",id:"knockback/fake_door/left"} run scoreboard players set @s Sound 0
+data modify storage luigis_mansion:data my_memory.animation set value {namespace:"luigis_mansion",id:"knockback/fake_door/right"}
+execute if entity @s[tag=left_door] run data modify storage luigis_mansion:data my_memory.animation set value {namespace:"luigis_mansion",id:"knockback/fake_door/left"}
+tag @s remove left_door
+execute if entity @s[tag=!keep_memory] run data modify storage luigis_mansion:data memory append from storage luigis_mansion:data my_memory
+execute if entity @s[tag=!keep_memory] run data remove storage luigis_mansion:data my_memory
+tag @s remove keep_memory

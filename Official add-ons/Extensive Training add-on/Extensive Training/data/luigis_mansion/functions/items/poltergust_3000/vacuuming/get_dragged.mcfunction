@@ -1,3 +1,3 @@
-execute unless entity @s[scores={Animation=-4}] run function luigis_mansion:entities/player/animation/set/pulled
+function luigis_mansion:entities/player/animation/set/pulled
 execute if score #koopa_amiibo Selected matches 0 if entity @s[scores={IdleTime=-21..},gamemode=!creative] run function luigis_mansion:items/poltergust_3000/vacuuming/dragged_damage
 execute if score #koopa_amiibo Selected matches 1 if entity @s[scores={IdleTime=-21..,Room=..0},gamemode=!creative] run function luigis_mansion:items/poltergust_3000/vacuuming/dragged_damage

@@ -14,4 +14,7 @@ execute unless data storage luigis_mansion:data current_state.current_data.rooms
 execute unless entity @s[x=680,y=11,z=4,dx=4,dy=6,dz=39] run stopsound @s ambient luigis_mansion:music.mansion.melody
 execute unless entity @s[x=680,y=11,z=4,dx=4,dy=6,dz=39] run scoreboard players set @s RoomNoise 0
 
-tag @s[x=682.5,y=11.0,z=5.5,scores={IdleTime=-40,Animation=17..20}] add washroom_toad
+function luigis_mansion:entities/player/memory/get with entity @s
+execute if data storage luigis_mansion:data my_memory.animation{namespace:"luigis_mansion",id:"door/locked/pull/left"} run tag @s[x=682.5,y=11.0,z=5.5,scores={IdleTime=-40}] add washroom_toad
+data modify storage luigis_mansion:data memory append from storage luigis_mansion:data my_memory
+data remove storage luigis_mansion:data my_memory

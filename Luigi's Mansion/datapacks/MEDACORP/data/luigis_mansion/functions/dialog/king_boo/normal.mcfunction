@@ -3,7 +3,7 @@ scoreboard players add @s Dialog 1
 execute unless entity @s[scores={Dialog=1588..}] as @a[tag=same_room,distance=..5.9,limit=1] run teleport @s 645 93 -18 90 0
 execute if entity @s[scores={Dialog=1}] run scoreboard players set #can_warp Selected 0
 execute if entity @s[scores={Dialog=1}] run tag @e[x=654.0,y=93,z=-17.5,distance=..0.7,tag=furniture,tag=door,limit=1] add unopenable
-execute if entity @s[scores={Dialog=1..1910}] as @a[tag=same_room,gamemode=!spectator,tag=!looking_at_map] run function luigis_mansion:entities/player/animation/set/stand_still
+execute if entity @s[scores={Dialog=1..1910}] as @a[tag=same_room,gamemode=!spectator,tag=!looking_at_map] run function luigis_mansion:entities/player/animation/set/idle
 execute if entity @s[scores={Dialog=1..1612}] as @a[tag=same_room] run function luigis_mansion:other/music/set/talking_king_boo
 execute if entity @s[scores={Dialog=1}] run tellraw @a[tag=same_room] {"type":"translatable","translate":"chat.type.text","with":[{"type":"translatable","translate":"luigis_mansion:entity.king_boo","color":"green"},{"type":"translatable","translate":"luigis_mansion:dialog.king_boo.1"}]}
 execute if entity @s[scores={Dialog=224}] run tellraw @a[tag=same_room] {"type":"translatable","translate":"chat.type.text","with":[{"type":"translatable","translate":"luigis_mansion:entity.king_boo","color":"green"},{"type":"translatable","translate":"luigis_mansion:dialog.king_boo.2"}]}

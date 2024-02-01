@@ -1,1 +1,0 @@
-scoreboard players set @s AnimationProgress 1

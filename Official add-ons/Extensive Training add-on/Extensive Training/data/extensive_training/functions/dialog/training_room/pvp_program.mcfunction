@@ -28,7 +28,7 @@ execute if entity @s[scores={Dialog=486}] run function luigis_mansion:room/train
 execute if entity @s[scores={Dialog=487}] run tag @e[tag=ghost,scores={Room=-2},tag=hidden,tag=can_spawn,limit=1] add spawn
 execute if entity @s[scores={Dialog=487}] unless entity @e[tag=ghost,scores={Room=-2},limit=1] run function extensive_training:room/training_room/spawn_wave/pvp
 execute if entity @s[scores={Dialog=487}] store result score #temp Time if entity @a[tag=same_room]
-execute if entity @s[scores={Dialog=487}] store result score #temp2 Time if entity @a[tag=same_room,scores={Animation=2},tag=!idle]
+execute if entity @s[scores={Dialog=487}] store result score #temp2 Time if entity @a[tag=same_room,scores={AnimationProgress=1..},tag=!idle]
 execute if entity @s[scores={Dialog=487}] run scoreboard players operation #temp Time -= #temp2 Time
 execute if entity @s[scores={Dialog=487}] if score #temp Time matches 1 run scoreboard players set @s Dialog 489
 execute as @a[scores={Health=..0},tag=same_room,tag=looking_at_map] at @s run function luigis_mansion:selection_menu/game_boy_horror/map/exit
@@ -81,7 +81,7 @@ execute if entity @s[scores={Dialog=522}] run tag @a remove winner
 execute if entity @s[scores={Dialog=570}] run scoreboard players reset #training_room TrainingRoomScore
 execute if entity @s[scores={Dialog=570}] run tellraw @a[tag=same_room] {"type":"translatable","translate":"chat.type.text","with":[{"type":"translatable","translate":"luigis_mansion:entity.e_gadd","color":"green"},{"type":"translatable","translate":"extensive_training:dialog.pvp.10"}]}
 execute if entity @s[scores={Dialog=570}] as @a[tag=same_room] at @s run playsound luigis_mansion:entity.e_gadd.talk.oui_soh_suu_suhm_ck_ck_yuuohh neutral @s ~ ~ ~ 1
-execute if entity @s[scores={Dialog=602..603}] as @a[tag=same_room,gamemode=!spectator,tag=!looking_at_map] run function luigis_mansion:entities/player/animation/set/thinking
+execute if entity @s[scores={Dialog=602..603}] as @a[tag=same_room,gamemode=!spectator,tag=!looking_at_map] run function luigis_mansion:entities/player/animation/set/think
 execute if entity @s[scores={Dialog=602}] run tellraw @a[tag=same_room] {"type":"translatable","translate":"extensive_training:dialog.pvp.yes","color":"green","clickEvent":{"action":"run_command","value":"/trigger EGaddTrainingRoomChoice set 1"},"extra":[{"type":"text","text":"\n"},{"type":"translatable","translate":"extensive_training:dialog.pvp.no","clickEvent":{"action":"run_command","value":"/trigger EGaddTrainingRoomChoice set 2"}}]}
 execute if entity @s[scores={Dialog=602}] run scoreboard players enable @a[tag=same_room] EGaddTrainingRoomChoice
 execute if entity @s[scores={Dialog=604}] as @a[tag=same_room,gamemode=!spectator,tag=!looking_at_map] run function luigis_mansion:entities/player/animation/set/nod

@@ -41,5 +41,5 @@ execute if entity @s[scores={AnimationProgress=316..325}] store result entity @s
 execute if entity @s[scores={AnimationProgress=326..335}] store result entity @s Pose.Head[0] float 1 run scoreboard players remove #temp Time 5
 execute if entity @s[scores={AnimationProgress=336..340}] store result entity @s Pose.Head[0] float 1 run scoreboard players add #temp Time 5
 execute if entity @s[scores={AnimationProgress=331..340}] store result entity @s Pose.Head[0] float 1 run scoreboard players add #temp Time 9
-scoreboard players set @s[scores={AnimationProgress=340..}] AnimationProgress 0
 scoreboard players reset #temp Time
+scoreboard players set @s[scores={AnimationProgress=340..}] AnimationProgress 0

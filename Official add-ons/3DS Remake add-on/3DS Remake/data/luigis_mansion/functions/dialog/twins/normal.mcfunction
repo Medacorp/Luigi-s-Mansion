@@ -4,7 +4,7 @@ scoreboard players add @s[scores={Dialog=..268}] Dialog 1
 execute unless entity @s[scores={Dialog=1..}] run scoreboard players add @s Dialog 1
 execute if entity @s[scores={Dialog=1}] run tag @e[nbt={ArmorItems:[{tag:{luigis_mansion:{namespace:"luigis_mansion",id:"henry"}}}]},limit=1] add appear
 tag @s[scores={Dialog=1}] add appear
-execute if entity @s[scores={Dialog=1..333}] as @a[tag=same_room,gamemode=!spectator,tag=!looking_at_map] run function luigis_mansion:entities/player/animation/set/stand_still
+execute if entity @s[scores={Dialog=1..333}] as @a[tag=same_room,gamemode=!spectator,tag=!looking_at_map] run function luigis_mansion:entities/player/animation/set/idle
 execute if entity @s[scores={Dialog=30}] run playsound luigis_mansion:music.solve_puzzle music @a[tag=same_room] ~ ~ ~ 10000
 execute if entity @s[scores={Dialog=30}] run scoreboard players set @a[tag=same_room,scores={Music=..30}] Music 30
 execute if entity @s[scores={Dialog=61..334}] as @a[tag=same_room] run function luigis_mansion:other/music/set/talking_ghost

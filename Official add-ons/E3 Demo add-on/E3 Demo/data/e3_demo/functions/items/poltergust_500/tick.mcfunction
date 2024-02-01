@@ -16,14 +16,11 @@ execute if entity @s[tag=poltergust_floor_sound,tag=gooigi,scores={Shrunk=1..}] 
 execute if entity @s[tag=poltergust_wall_sound,tag=gooigi,scores={Shrunk=1..}] run playsound e3_demo:item.poltergust_500.hit_wall_gooigi player @a[tag=same_room] ~ ~ ~ 1 2
 tag @s remove poltergust_floor_sound
 tag @s remove poltergust_wall_sound
-execute if entity @s[scores={Animation=1..},tag=!idle,nbt={Inventory:[{tag:{luigis_mansion:{namespace:"e3_demo",id:"poltergust_500"}}}]}] unless entity @s[scores={Animation=39}] unless entity @s[scores={Animation=27..28}] run tag @s add turned_off_for_animation
-tag @s[tag=!turned_off_for_animation,tag=!poltergust_malfunction,nbt={SelectedItem:{tag:{luigis_mansion:{namespace:"e3_demo",id:"poltergust_500"}}}}] add poltergust_selected
-tag @s remove turned_off_for_animation
+tag @s[tag=!poltergust_malfunction,nbt={SelectedItem:{tag:{luigis_mansion:{namespace:"e3_demo",id:"poltergust_500"}}}}] add poltergust_selected
 tag @s[tag=!poltergust_selected] remove expelling
 execute if entity @s[scores={OverheatMeter=300..}] run function e3_demo:items/poltergust_500/explode
 execute if entity @s[tag=exploding_poltergust] run function e3_demo:items/poltergust_500/explode
 scoreboard players set @s[tag=!poltergust_selected] VacuumErrors 0
-scoreboard players set @s[tag=!poltergust_selected,scores={Animation=-4}] Animation 0
 tag @s[tag=!poltergust_selected] remove made_error
 tag @s[tag=poltergust_selected,tag=!vacuuming_ghost,scores={UseItem=1..},tag=!expelling] add toggle_expelling
 tag @s[tag=poltergust_selected,tag=!vacuuming_ghost,tag=toggle_expelling] add expelling
@@ -36,4 +33,3 @@ execute if entity @s[tag=expelling,tag=poltergust_selected,tag=poltergust_grabbe
 execute if entity @s[tag=vaporizing_ghost] as @e[tag=captured,tag=element_death] at @s run function e3_demo:items/poltergust_500/vaporize
 tag @s remove vaporizing_ghost
 scoreboard players set @s[tag=!vacuuming_ghost] GhostCount 0
-scoreboard players set @s[tag=!vacuuming_ghost,scores={Animation=-4}] Animation 0

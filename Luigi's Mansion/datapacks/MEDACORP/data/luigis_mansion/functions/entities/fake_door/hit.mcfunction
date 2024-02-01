@@ -1,4 +1,3 @@
-scoreboard players set @a[tag=try_opening_door,limit=1,sort=nearest] Animation 0
 scoreboard players set @a[tag=try_opening_door,limit=1,sort=nearest] Invulnerable 0
 
 tag @s add attack

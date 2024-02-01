@@ -1,6 +1,6 @@
 scoreboard players set #freeze_timer Selected 1
 scoreboard players add @s Dialog 1
-execute if entity @s[scores={Dialog=1..279}] as @a[tag=same_room,gamemode=!spectator,tag=!looking_at_map] run function luigis_mansion:entities/player/animation/set/stand_still
+execute if entity @s[scores={Dialog=1..279}] as @a[tag=same_room,gamemode=!spectator,tag=!looking_at_map] run function luigis_mansion:entities/player/animation/set/idle
 execute if entity @s[scores={Dialog=1..89}] run stopsound @a[tag=same_room] music
 execute if entity @s[scores={Dialog=1}] run scoreboard players set @a[tag=same_room] Music 310
 execute if entity @s[scores={Dialog=40}] run fill 682 11 67 682 12 67 minecraft:air

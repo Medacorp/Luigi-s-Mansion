@@ -1,0 +1,2 @@
+execute if entity @s[tag=!gooigi_model] if score #mirrored Selected matches 0 run function luigis_mansion:animations/luigi/yell/normal/left_arm
+execute if entity @s[tag=gooigi_model] run function 3ds_remake:animations/gooigi/wave/left_arm

@@ -1,3 +1,4 @@
+tag @s[type=minecraft:player] add dark_room
 execute unless data storage luigis_mansion:data current_state.current_data.rooms.entrance{cleared:1b} run tag @s[scores={Room=1}] add dark_room
 execute unless data storage luigis_mansion:data current_state.current_data.rooms.hallway_1{cleared:1b} run tag @s[scores={Room=2}] add dark_room
 execute unless data storage luigis_mansion:data current_state.current_data.rooms.living_room{cleared:1b} run tag @s[scores={Room=3}] add dark_room

@@ -10,8 +10,8 @@ execute if entity @e[tag=same_room,tag=!spectator,tag=player,distance=..4,limit=
 execute unless entity @e[tag=same_room,tag=!spectator,tag=player,distance=..4,limit=1] if entity @s[tag=tried_to_appear] unless entity @s[scores={Dialog=1..}] run tag @s remove tried_to_appear
 
 tag @s[scores={Dialog=1}] add pop_out
-execute if entity @s[scores={Dialog=1..619}] as @a[tag=same_room,gamemode=!spectator,tag=!looking_at_map] run function luigis_mansion:entities/player/animation/set/stand_still
-execute if entity @s[scores={Dialog=1..863}] if entity @a[scores={JarvisChoice=1}] as @a[tag=same_room,gamemode=!spectator,tag=!looking_at_map] run function luigis_mansion:entities/player/animation/set/stand_still
+execute if entity @s[scores={Dialog=1..619}] as @a[tag=same_room,gamemode=!spectator,tag=!looking_at_map] run function luigis_mansion:entities/player/animation/set/idle
+execute if entity @s[scores={Dialog=1..863}] if entity @a[scores={JarvisChoice=1}] as @a[tag=same_room,gamemode=!spectator,tag=!looking_at_map] run function luigis_mansion:entities/player/animation/set/idle
 execute if entity @s[scores={Dialog=1..856}] as @a[tag=same_room,tag=!spectator] run function luigis_mansion:other/music/set/talking_ghost
 execute if entity @s[scores={Dialog=10}] if data storage luigis_mansion:data current_state.current_data.technical_data{jarvis_spoke:1b} run scoreboard players set @s Dialog 426
 execute if entity @s[scores={Dialog=10}] if score #players Totals matches 1 run tellraw @a[tag=same_room] {"type":"translatable","translate":"chat.type.text","with":[{"type":"translatable","translate":"luigis_mansion:entity.jarvis","color":"green"},{"type":"translatable","translate":"luigis_mansion:dialog.jarvis.1"}]}
@@ -88,7 +88,7 @@ tag @s[tag=frozen] remove frozen
 
 teleport @s[scores={Dialog=1834}] 701 29 -52
 tag @s[scores={Dialog=1854}] add pop_out
-execute if entity @s[scores={Dialog=1854..2241}] as @a[tag=same_room,gamemode=!spectator,tag=!looking_at_map] run function luigis_mansion:entities/player/animation/set/stand_still
+execute if entity @s[scores={Dialog=1854..2241}] as @a[tag=same_room,gamemode=!spectator,tag=!looking_at_map] run function luigis_mansion:entities/player/animation/set/idle
 execute if entity @s[scores={Dialog=1864}] if score #players Totals matches 1 run tellraw @a[tag=same_room] {"type":"translatable","translate":"chat.type.text","with":[{"type":"translatable","translate":"luigis_mansion:entity.jarvis","color":"green"},{"type":"translatable","translate":"luigis_mansion:dialog.jarvis.game.1"}]}
 execute if entity @s[scores={Dialog=1864}] if score #players Totals matches 2.. run tellraw @a[tag=same_room] {"type":"translatable","translate":"chat.type.text","with":[{"type":"translatable","translate":"luigis_mansion:entity.jarvis","color":"green"},{"type":"translatable","translate":"luigis_mansion:dialog.jarvis.game.1.more"}]}
 execute if entity @s[scores={Dialog=1888}] run tellraw @a[tag=same_room] {"type":"translatable","translate":"chat.type.text","with":[{"type":"translatable","translate":"luigis_mansion:entity.jarvis","color":"green"},{"type":"translatable","translate":"luigis_mansion:dialog.jarvis.game.2"}]}

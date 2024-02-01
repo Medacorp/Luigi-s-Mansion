@@ -4,7 +4,7 @@ execute if data storage luigis_mansion:data furniture{searched:1b,no_search_anim
 scoreboard players set @e[tag=this_entity,limit=1] FurnitureSizeLeft 14
 scoreboard players set @e[tag=this_entity,limit=1] FurnitureSizeUp 11
 scoreboard players set @e[tag=this_entity,limit=1] FurnitureSizeForward 12
-execute if score #3ds_remake Loaded matches 1.. run scoreboard players set @e[tag=this_entity,limit=1] InteractionTime 45
+execute if score #3ds_remake Loaded matches 1.. run data modify entity @e[tag=this_entity,limit=1] ArmorItems[3].tag.luigis_mansion merge value {interact_animation:{namespace:"3ds_remake",id:"search/chest"}}
 scoreboard players set @e[tag=this_entity,limit=1] FurnitureDustLeft 0
 scoreboard players set @e[tag=this_entity,limit=1] FurnitureDustUp 7
 scoreboard players set @e[tag=this_entity,limit=1] FurnitureDustForward 0

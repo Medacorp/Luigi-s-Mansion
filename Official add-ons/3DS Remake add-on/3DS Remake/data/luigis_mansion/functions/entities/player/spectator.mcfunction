@@ -8,7 +8,7 @@ execute as @a[tag=!spectator] if score @s Room = #temp Room run scoreboard playe
 scoreboard players reset #temp Room
 scoreboard players set @s Sound 0
 
-execute if entity @s[scores={IdleTime=..-1}] run function luigis_mansion:entities/player/animation/set/none
+execute if entity @s[scores={AnimationProgress=1..}] run function luigis_mansion:entities/player/animation/set/none
 
 clear @s minecraft:carved_pumpkin
 

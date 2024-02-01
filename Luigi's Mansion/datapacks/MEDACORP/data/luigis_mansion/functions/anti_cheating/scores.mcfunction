@@ -1,6 +1,5 @@
 scoreboard objectives add ActionTime dummy
 scoreboard objectives add Angle dummy
-scoreboard objectives add Animation dummy
 scoreboard objectives add AnimationProgress dummy
 scoreboard objectives add AttackerMemory dummy
 scoreboard objectives add AttackType dummy
@@ -163,7 +162,6 @@ scoreboard objectives add PositionIntZ dummy
 scoreboard objectives add PositionX dummy
 scoreboard objectives add PositionY dummy
 scoreboard objectives add PositionZ dummy
-scoreboard objectives add PreviousAnimation dummy
 scoreboard objectives add PreviousHealth dummy
 scoreboard objectives add PreviousMusicType dummy
 scoreboard objectives add PreviousRoom dummy

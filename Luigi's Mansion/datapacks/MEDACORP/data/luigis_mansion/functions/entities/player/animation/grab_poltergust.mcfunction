@@ -1,9 +1,6 @@
-summon minecraft:marker ~ ~ ~ {Tags:["home","remove_from_existence"]}
-execute store result entity @e[tag=home,limit=1] Pos[0] double 0.01 run scoreboard players get @s PositionX
-execute store result entity @e[tag=home,limit=1] Pos[1] double 0.01 run scoreboard players get @s PositionY
-execute store result entity @e[tag=home,limit=1] Pos[2] double 0.01 run scoreboard players get @s PositionZ
-execute at @e[tag=home,limit=1] run tp @s ~ 0 ~
-execute at @e[tag=home,limit=1] run tp @s ~ ~ ~
-kill @e[tag=home,limit=1]
-execute if entity @s[scores={IdleTime=-10}] run playsound luigis_mansion:entity.player.grab_poltergust player @a[tag=same_room] ~ ~ ~ 1
-tag @s[scores={IdleTime=-6..-1}] add poltergust_grabbed
+scoreboard players add @s AnimationProgress 1
+execute if entity @s[scores={AnimationProgress=1}] run playsound luigis_mansion:entity.player.grab_poltergust player @a[tag=same_room] ~ ~ ~ 1
+tag @s[scores={AnimationProgress=6..10}] add new_poltergust_grabbed
+tag @s[scores={AnimationProgress=6..10}] add poltergust_grabbed
+tag @s[scores={Health=..30}] add low_health
+execute if entity @s[scores={AnimationProgress=10}] run function luigis_mansion:entities/player/animation/set/none

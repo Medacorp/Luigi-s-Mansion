@@ -1,0 +1,2 @@
+execute if entity @s[tag=low_health] run function luigis_mansion:animations/luigi/talk/low_health/left_arm
+execute if entity @s[tag=!low_health] run function luigis_mansion:animations/luigi/talk/high_health/left_arm

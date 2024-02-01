@@ -1,0 +1,8 @@
+{
+	"values": [
+		"luigis_mansion:items/interact/reset_disable",
+		"luigis_mansion:items/flashlight/reset_disable",
+		"luigis_mansion:items/poltergust_3000/reset_disable",
+		"luigis_mansion:items/game_boy_horror/reset_disable"
+	]
+}

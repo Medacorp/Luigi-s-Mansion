@@ -9,5 +9,5 @@ data modify storage luigis_mansion:data inventory append from entity @s Inventor
 function luigis_mansion:other/sync_inventory
 tag @s remove poltergust_selected
 scoreboard players set @s VacuumErrors 0
-scoreboard players set @s[scores={Animation=-4}] Animation 0
+scoreboard players set @s ErrorTime 0
 tag @s remove made_error

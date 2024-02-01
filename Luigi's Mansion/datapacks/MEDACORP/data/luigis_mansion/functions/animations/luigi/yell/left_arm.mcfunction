@@ -1,0 +1,1 @@
+execute if score #mirrored Selected matches 0 run function luigis_mansion:animations/luigi/yell/normal/left_arm

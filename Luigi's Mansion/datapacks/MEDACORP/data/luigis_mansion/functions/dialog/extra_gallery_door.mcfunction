@@ -8,7 +8,7 @@ kill @e[tag=home,limit=1]
 execute if entity @s[scores={GalleryChoice=0..}] run scoreboard players add @s[scores={Dialog=57..}] Dialog 1
 scoreboard players add @s[scores={Dialog=..56}] Dialog 1
 execute unless entity @s[scores={Dialog=1..}] run scoreboard players add @s Dialog 1
-execute if entity @s[scores={Dialog=1..56},gamemode=!spectator,tag=!looking_at_map] run function luigis_mansion:entities/player/animation/set/thinking
+execute if entity @s[scores={Dialog=1..56},gamemode=!spectator,tag=!looking_at_map] run function luigis_mansion:entities/player/animation/set/think
 tellraw @s[scores={Dialog=1}] {"type":"translatable","translate":"chat.type.text","with":[{"type":"translatable","translate":"luigis_mansion:entity.mansion","color":"green"},{"type":"translatable","translate":"luigis_mansion:dialog.extra_gallery_door.1"}]}
 function #luigis_mansion:dialog/extra_gallery_door
 tellraw @s[scores={Dialog=56}] {"type":"translatable","translate":"luigis_mansion:dialog.extra_gallery_door.nowhere","color":"green","clickEvent":{"action":"run_command","value":"/trigger GalleryChoice set 0"}}

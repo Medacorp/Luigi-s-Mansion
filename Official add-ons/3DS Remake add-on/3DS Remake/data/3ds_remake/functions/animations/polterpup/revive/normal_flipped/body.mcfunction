@@ -88,5 +88,5 @@ execute if entity @s[scores={AnimationProgress=240}] run playsound 3ds_remake:en
 execute if entity @s[scores={AnimationProgress=260}] run playsound 3ds_remake:entity.polterpup.jump_bark neutral @a[tag=same_room] ~ ~ ~ 1
 execute if entity @s[scores={AnimationProgress=280}] run playsound 3ds_remake:entity.polterpup.lick2 neutral @a[tag=same_room] ~ ~ ~ 1
 execute if entity @s[scores={AnimationProgress=300}] run playsound 3ds_remake:entity.polterpup.last_bark neutral @a[tag=same_room] ~ ~ ~ 1
-scoreboard players set @s[scores={AnimationProgress=340..}] AnimationProgress 0
 scoreboard players reset #temp Time
+scoreboard players set @s[scores={AnimationProgress=340..}] AnimationProgress 0

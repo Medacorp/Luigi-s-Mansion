@@ -17,5 +17,5 @@ data modify entity @s[scores={AnimationProgress=180..230}] ArmorItems[3].tag.lui
 data modify entity @s[scores={AnimationProgress=180..230}] ArmorItems[3].tag.luigis_mansion.old_position.Rotation set from entity @s Rotation
 data modify entity @s[scores={AnimationProgress=145}] ArmorItems[3].id set from entity @s ArmorItems[3].tag.luigis_mansion.visible
 data modify entity @s[scores={AnimationProgress=225}] ArmorItems[3].id set from entity @s ArmorItems[3].tag.luigis_mansion.invisible
-scoreboard players set @s[scores={AnimationProgress=340..}] AnimationProgress 0
 scoreboard players reset #temp Time
+scoreboard players set @s[scores={AnimationProgress=340..}] AnimationProgress 0

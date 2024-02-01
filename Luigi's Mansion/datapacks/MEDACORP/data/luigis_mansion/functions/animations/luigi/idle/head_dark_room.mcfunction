@@ -1,9 +1,3 @@
-scoreboard players add @s Time 1
-data modify entity @s[scores={Time=1},nbt={ArmorItems:[{tag:{CustomModelData:18}}]}] ArmorItems[3].tag.CustomModelData set value 20
-data modify entity @s[scores={Time=1},nbt={ArmorItems:[{tag:{CustomModelData:22}}]}] ArmorItems[3].tag.CustomModelData set value 24
-data modify entity @s[scores={Time=1}] Pose.Head[2] set value 0.001f
-data modify entity @s[scores={Time=1},tag=flipped_gravity] Pose.Head[2] set value -180.0f
-execute store result score #temp Time run data get entity @s Pose.Head[2] 4
 execute if entity @s[scores={Time=1}] store result entity @s Pose.Head[2] float 0.25 run scoreboard players add #temp Time 1
 execute if entity @s[scores={Time=2..3}] store result entity @s Pose.Head[2] float 0.25 run scoreboard players remove #temp Time 1
 execute if entity @s[scores={Time=4..5}] store result entity @s Pose.Head[2] float 0.25 run scoreboard players add #temp Time 1
@@ -37,4 +31,4 @@ data modify entity @s Rotation[1] set value 0.0f
 execute store result entity @s Rotation[0] float 1 run scoreboard players get #temp Time
 scoreboard players reset #temp Time
 scoreboard players reset #temp2 Time
-scoreboard players set @s[scores={Time=40}] Time 0
+tag @s add dark_room_head

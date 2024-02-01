@@ -13,6 +13,8 @@ data modify storage luigis_mansion:data menu_options.options append from storage
 data remove storage luigis_mansion:data menu_options.options[0]
 execute unless data storage luigis_mansion:data menu_options{back:{}} run data modify storage luigis_mansion:data menu_options.options append from storage luigis_mansion:data menu_options.options[0]
 execute unless data storage luigis_mansion:data menu_options{back:{}} run data remove storage luigis_mansion:data menu_options.options[0]
+execute if data storage luigis_mansion:data menu_options.no_exit run data modify storage luigis_mansion:data menu_options.options append from storage luigis_mansion:data menu_options.options[0]
+execute if data storage luigis_mansion:data menu_options.no_exit run data remove storage luigis_mansion:data menu_options.options[0]
 
 function luigis_mansion:entities/player/selection_menu/load
 tag @s remove change_page

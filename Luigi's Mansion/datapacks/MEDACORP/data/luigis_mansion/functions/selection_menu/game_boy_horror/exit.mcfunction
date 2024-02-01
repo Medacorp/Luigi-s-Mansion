@@ -3,3 +3,8 @@ execute unless entity @s[scores={WarpTime=1..}] run function luigis_mansion:enti
 execute unless entity @s[scores={WarpTime=1..}] run function luigis_mansion:entities/player/animation/set/none
 execute unless entity @s[scores={WarpTime=1..}] run tag @s remove game_boy_horror_menu
 execute unless entity @s[scores={WarpTime=1..}] run tag @s remove scanning
+
+execute if entity @s[scores={WarpTime=1..}] run function luigis_mansion:entities/player/memory/get with entity @s
+execute if entity @s[scores={WarpTime=1..}] run function luigis_mansion:entities/player/selection_menu/reload
+execute if entity @s[scores={WarpTime=1..}] run data modify storage luigis_mansion:data memory append from storage luigis_mansion:data my_memory
+execute if entity @s[scores={WarpTime=1..}] run data remove storage luigis_mansion:data my_memory

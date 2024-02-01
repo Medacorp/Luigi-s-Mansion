@@ -1,1 +1,1 @@
-function 3ds_remake:animations/gooigi/right_leg
+function luigis_mansion:animations/luigi/right_leg

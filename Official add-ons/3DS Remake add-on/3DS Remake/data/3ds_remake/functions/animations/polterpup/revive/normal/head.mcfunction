@@ -100,5 +100,5 @@ data modify entity @s[scores={AnimationProgress=317}] ArmorItems[3] merge from e
 data modify entity @s[scores={AnimationProgress=322}] ArmorItems[3] merge from entity @s ArmorItems[3].tag.luigis_mansion.model_data.default
 data modify entity @s[scores={AnimationProgress=325}] ArmorItems[3] merge from entity @s ArmorItems[3].tag.luigis_mansion.model_data.bark
 data modify entity @s[scores={AnimationProgress=330}] ArmorItems[3] merge from entity @s ArmorItems[3].tag.luigis_mansion.model_data.default
-scoreboard players set @s[scores={AnimationProgress=340..}] AnimationProgress 0
 scoreboard players reset #temp Time
+scoreboard players set @s[scores={AnimationProgress=340..}] AnimationProgress 0

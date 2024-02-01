@@ -1,92 +1,95 @@
-execute at @s unless entity @s[scores={Animation=2..4}] run function 3ds_remake:items/flashlight/effects/weak_light
-execute at @s[scores={Animation=2}] rotated ~100 -10 run function 3ds_remake:items/flashlight/effects/weak_light
-execute at @s[scores={Animation=3}] rotated ~160 20 run function 3ds_remake:items/flashlight/effects/weak_light
-execute at @s[scores={Animation=4,IdleTime=-140}] rotated ~ 0 run function 3ds_remake:items/flashlight/effects/weak_light
-execute at @s[scores={Animation=4,IdleTime=-139}] rotated ~-1 0 run function 3ds_remake:items/flashlight/effects/weak_light
-execute at @s[scores={Animation=4,IdleTime=-138}] rotated ~-2 0.5 run function 3ds_remake:items/flashlight/effects/weak_light
-execute at @s[scores={Animation=4,IdleTime=-137}] rotated ~-3 1 run function 3ds_remake:items/flashlight/effects/weak_light
-execute at @s[scores={Animation=4,IdleTime=-136}] rotated ~-4 1.5 run function 3ds_remake:items/flashlight/effects/weak_light
-execute at @s[scores={Animation=4,IdleTime=-135}] rotated ~-6.5 2 run function 3ds_remake:items/flashlight/effects/weak_light
-execute at @s[scores={Animation=4,IdleTime=-134}] rotated ~-9 2.5 run function 3ds_remake:items/flashlight/effects/weak_light
-execute at @s[scores={Animation=4,IdleTime=-133}] rotated ~-11.5 3 run function 3ds_remake:items/flashlight/effects/weak_light
-execute at @s[scores={Animation=4,IdleTime=-132}] rotated ~-14 3.5 run function 3ds_remake:items/flashlight/effects/weak_light
-execute at @s[scores={Animation=4,IdleTime=-131}] rotated ~-16.5 4 run function 3ds_remake:items/flashlight/effects/weak_light
-execute at @s[scores={Animation=4,IdleTime=-130}] rotated ~-19 4.5 run function 3ds_remake:items/flashlight/effects/weak_light
-execute at @s[scores={Animation=4,IdleTime=-129}] rotated ~-26 5.5 run function 3ds_remake:items/flashlight/effects/weak_light
-execute at @s[scores={Animation=4,IdleTime=-128}] rotated ~-28.5 6 run function 3ds_remake:items/flashlight/effects/weak_light
-execute at @s[scores={Animation=4,IdleTime=-127}] rotated ~-31 6.5 run function 3ds_remake:items/flashlight/effects/weak_light
-execute at @s[scores={Animation=4,IdleTime=-126}] rotated ~-33.5 7 run function 3ds_remake:items/flashlight/effects/weak_light
-execute at @s[scores={Animation=4,IdleTime=-125}] rotated ~-36 7.5 run function 3ds_remake:items/flashlight/effects/weak_light
-execute at @s[scores={Animation=4,IdleTime=-124}] rotated ~-38.5 8 run function 3ds_remake:items/flashlight/effects/weak_light
-execute at @s[scores={Animation=4,IdleTime=-123}] rotated ~-41 8.5 run function 3ds_remake:items/flashlight/effects/weak_light
-execute at @s[scores={Animation=4,IdleTime=-122}] rotated ~-43 9 run function 3ds_remake:items/flashlight/effects/weak_light
-execute at @s[scores={Animation=4,IdleTime=-121}] rotated ~-44 9.5 run function 3ds_remake:items/flashlight/effects/weak_light
-execute at @s[scores={Animation=4,IdleTime=-120..-110}] rotated ~-45 10 run function 3ds_remake:items/flashlight/effects/weak_light
-execute at @s[scores={Animation=4,IdleTime=-109}] rotated ~-44 9 run function 3ds_remake:items/flashlight/effects/weak_light
-execute at @s[scores={Animation=4,IdleTime=-108}] rotated ~-42 8 run function 3ds_remake:items/flashlight/effects/weak_light
-execute at @s[scores={Animation=4,IdleTime=-107}] rotated ~-38.5 7 run function 3ds_remake:items/flashlight/effects/weak_light
-execute at @s[scores={Animation=4,IdleTime=-106}] rotated ~-33.5 6 run function 3ds_remake:items/flashlight/effects/weak_light
-execute at @s[scores={Animation=4,IdleTime=-105}] rotated ~-27 5 run function 3ds_remake:items/flashlight/effects/weak_light
-execute at @s[scores={Animation=4,IdleTime=-104}] rotated ~-19 3.5 run function 3ds_remake:items/flashlight/effects/weak_light
-execute at @s[scores={Animation=4,IdleTime=-103}] rotated ~-9.5 1 run function 3ds_remake:items/flashlight/effects/weak_light
-execute at @s[scores={Animation=4,IdleTime=-102}] rotated ~1.5 -1 run function 3ds_remake:items/flashlight/effects/weak_light
-execute at @s[scores={Animation=4,IdleTime=-101}] rotated ~14 -3 run function 3ds_remake:items/flashlight/effects/weak_light
-execute at @s[scores={Animation=4,IdleTime=-100}] rotated ~27.5 -5 run function 3ds_remake:items/flashlight/effects/weak_light
-execute at @s[scores={Animation=4,IdleTime=-99}] rotated ~41 -8 run function 3ds_remake:items/flashlight/effects/weak_light
-execute at @s[scores={Animation=4,IdleTime=-98}] rotated ~53.5 -10 run function 3ds_remake:items/flashlight/effects/weak_light
-execute at @s[scores={Animation=4,IdleTime=-97}] rotated ~64.5 -12 run function 3ds_remake:items/flashlight/effects/weak_light
-execute at @s[scores={Animation=4,IdleTime=-96}] rotated ~74 -13.5 run function 3ds_remake:items/flashlight/effects/weak_light
-execute at @s[scores={Animation=4,IdleTime=-95}] rotated ~82 -15 run function 3ds_remake:items/flashlight/effects/weak_light
-execute at @s[scores={Animation=4,IdleTime=-94}] rotated ~88.5 -16 run function 3ds_remake:items/flashlight/effects/weak_light
-execute at @s[scores={Animation=4,IdleTime=-93}] rotated ~93.5 -17 run function 3ds_remake:items/flashlight/effects/weak_light
-execute at @s[scores={Animation=4,IdleTime=-92}] rotated ~97 -18 run function 3ds_remake:items/flashlight/effects/weak_light
-execute at @s[scores={Animation=4,IdleTime=-91}] rotated ~99 -19 run function 3ds_remake:items/flashlight/effects/weak_light
-execute at @s[scores={Animation=4,IdleTime=-90..-70}] rotated ~100 -20 run function 3ds_remake:items/flashlight/effects/weak_light
-execute at @s[scores={Animation=4,IdleTime=-69}] rotated ~95 -19 run function 3ds_remake:items/flashlight/effects/weak_light
-execute at @s[scores={Animation=4,IdleTime=-68}] rotated ~90 -18 run function 3ds_remake:items/flashlight/effects/weak_light
-execute at @s[scores={Animation=4,IdleTime=-67}] rotated ~80 -17 run function 3ds_remake:items/flashlight/effects/weak_light
-execute at @s[scores={Animation=4,IdleTime=-66}] rotated ~65 -16 run function 3ds_remake:items/flashlight/effects/weak_light
-execute at @s[scores={Animation=4,IdleTime=-65}] rotated ~45 -15 run function 3ds_remake:items/flashlight/effects/weak_light
-execute at @s[scores={Animation=4,IdleTime=-64}] rotated ~25 -14 run function 3ds_remake:items/flashlight/effects/weak_light
-execute at @s[scores={Animation=4,IdleTime=-63}] rotated ~10 -13 run function 3ds_remake:items/flashlight/effects/weak_light
-execute at @s[scores={Animation=4,IdleTime=-62}] rotated ~ -12 run function 3ds_remake:items/flashlight/effects/weak_light
-execute at @s[scores={Animation=4,IdleTime=-61}] rotated ~-5 -11 run function 3ds_remake:items/flashlight/effects/weak_light
-execute at @s[scores={Animation=4,IdleTime=-60}] rotated ~-10 -10 run function 3ds_remake:items/flashlight/effects/weak_light
-execute at @s[scores={Animation=4,IdleTime=-59}] rotated ~-10 -9 run function 3ds_remake:items/flashlight/effects/weak_light
-execute at @s[scores={Animation=4,IdleTime=-58}] rotated ~-10 -8 run function 3ds_remake:items/flashlight/effects/weak_light
-execute at @s[scores={Animation=4,IdleTime=-57}] rotated ~-10 -7 run function 3ds_remake:items/flashlight/effects/weak_light
-execute at @s[scores={Animation=4,IdleTime=-56}] rotated ~-10 -6 run function 3ds_remake:items/flashlight/effects/weak_light
-execute at @s[scores={Animation=4,IdleTime=-55}] rotated ~-10 -5 run function 3ds_remake:items/flashlight/effects/weak_light
-execute at @s[scores={Animation=4,IdleTime=-54}] rotated ~-10 -4 run function 3ds_remake:items/flashlight/effects/weak_light
-execute at @s[scores={Animation=4,IdleTime=-53}] rotated ~-10 -3 run function 3ds_remake:items/flashlight/effects/weak_light
-execute at @s[scores={Animation=4,IdleTime=-52}] rotated ~-10 -2 run function 3ds_remake:items/flashlight/effects/weak_light
-execute at @s[scores={Animation=4,IdleTime=-51}] rotated ~-10 -1 run function 3ds_remake:items/flashlight/effects/weak_light
-execute at @s[scores={Animation=4,IdleTime=-50}] rotated ~-10 1 run function 3ds_remake:items/flashlight/effects/weak_light
-execute at @s[scores={Animation=4,IdleTime=-49}] rotated ~-10 2 run function 3ds_remake:items/flashlight/effects/weak_light
-execute at @s[scores={Animation=4,IdleTime=-48}] rotated ~-10 3 run function 3ds_remake:items/flashlight/effects/weak_light
-execute at @s[scores={Animation=4,IdleTime=-47}] rotated ~-10 4 run function 3ds_remake:items/flashlight/effects/weak_light
-execute at @s[scores={Animation=4,IdleTime=-46}] rotated ~-10 5 run function 3ds_remake:items/flashlight/effects/weak_light
-execute at @s[scores={Animation=4,IdleTime=-45}] rotated ~-10 6 run function 3ds_remake:items/flashlight/effects/weak_light
-execute at @s[scores={Animation=4,IdleTime=-44}] rotated ~-10 7 run function 3ds_remake:items/flashlight/effects/weak_light
-execute at @s[scores={Animation=4,IdleTime=-43}] rotated ~-10 8 run function 3ds_remake:items/flashlight/effects/weak_light
-execute at @s[scores={Animation=4,IdleTime=-42}] rotated ~-10 9 run function 3ds_remake:items/flashlight/effects/weak_light
-execute at @s[scores={Animation=4,IdleTime=-41..-40}] rotated ~-10 10 run function 3ds_remake:items/flashlight/effects/weak_light
-execute at @s[scores={Animation=4,IdleTime=-39}] rotated ~-9 9 run function 3ds_remake:items/flashlight/effects/weak_light
-execute at @s[scores={Animation=4,IdleTime=-38}] rotated ~-5.5 8 run function 3ds_remake:items/flashlight/effects/weak_light
-execute at @s[scores={Animation=4,IdleTime=-37}] rotated ~ 7 run function 3ds_remake:items/flashlight/effects/weak_light
-execute at @s[scores={Animation=4,IdleTime=-36}] rotated ~7.5 6 run function 3ds_remake:items/flashlight/effects/weak_light
-execute at @s[scores={Animation=4,IdleTime=-35}] rotated ~17.5 5 run function 3ds_remake:items/flashlight/effects/weak_light
-execute at @s[scores={Animation=4,IdleTime=-34}] rotated ~27.5 4 run function 3ds_remake:items/flashlight/effects/weak_light
-execute at @s[scores={Animation=4,IdleTime=-33}] rotated ~35 3 run function 3ds_remake:items/flashlight/effects/weak_light
-execute at @s[scores={Animation=4,IdleTime=-32}] rotated ~40.5 2 run function 3ds_remake:items/flashlight/effects/weak_light
-execute at @s[scores={Animation=4,IdleTime=-31}] rotated ~44 1 run function 3ds_remake:items/flashlight/effects/weak_light
-execute at @s[scores={Animation=4,IdleTime=-30..-10}] rotated ~45 0 run function 3ds_remake:items/flashlight/effects/weak_light
-execute at @s[scores={Animation=4,IdleTime=-9}] rotated ~42.5 0 run function 3ds_remake:items/flashlight/effects/weak_light
-execute at @s[scores={Animation=4,IdleTime=-8}] rotated ~37.5 0 run function 3ds_remake:items/flashlight/effects/weak_light
-execute at @s[scores={Animation=4,IdleTime=-7}] rotated ~32.5 0 run function 3ds_remake:items/flashlight/effects/weak_light
-execute at @s[scores={Animation=4,IdleTime=-6}] rotated ~27.5 0 run function 3ds_remake:items/flashlight/effects/weak_light
-execute at @s[scores={Animation=4,IdleTime=-5}] rotated ~22.5 0 run function 3ds_remake:items/flashlight/effects/weak_light
-execute at @s[scores={Animation=4,IdleTime=-4}] rotated ~17.5 0 run function 3ds_remake:items/flashlight/effects/weak_light
-execute at @s[scores={Animation=4,IdleTime=-3}] rotated ~12.5 0 run function 3ds_remake:items/flashlight/effects/weak_light
-execute at @s[scores={Animation=4,IdleTime=-2}] rotated ~7.5 0 run function 3ds_remake:items/flashlight/effects/weak_light
-execute at @s[scores={Animation=4,IdleTime=-141}] rotated ~2.5 0 run function 3ds_remake:items/flashlight/effects/weak_light
+function luigis_mansion:entities/player/memory/get with entity @s
+execute unless data storage luigis_mansion:data my_memory.animation at @s run function 3ds_remake:items/flashlight/effects/weak_light
+execute if data storage luigis_mansion:data my_memory.animation{namespace:"luigis_mansion",id:"low_health_idle"} at @s rotated ~100 -10 run function 3ds_remake:items/flashlight/effects/weak_light
+execute if data storage luigis_mansion:data my_memory.animation{namespace:"luigis_mansion",id:"cold_room_idle"} at @s rotated ~160 20 run function 3ds_remake:items/flashlight/effects/weak_light
+execute if data storage luigis_mansion:data my_memory.animation{namespace:"luigis_mansion",id:"high_health_idle"} at @s[scores={IdleTime=-140}] rotated ~ 0 run function 3ds_remake:items/flashlight/effects/weak_light
+execute if data storage luigis_mansion:data my_memory.animation{namespace:"luigis_mansion",id:"high_health_idle"} at @s[scores={IdleTime=-139}] rotated ~-1 0 run function 3ds_remake:items/flashlight/effects/weak_light
+execute if data storage luigis_mansion:data my_memory.animation{namespace:"luigis_mansion",id:"high_health_idle"} at @s[scores={IdleTime=-138}] rotated ~-2 0.5 run function 3ds_remake:items/flashlight/effects/weak_light
+execute if data storage luigis_mansion:data my_memory.animation{namespace:"luigis_mansion",id:"high_health_idle"} at @s[scores={IdleTime=-137}] rotated ~-3 1 run function 3ds_remake:items/flashlight/effects/weak_light
+execute if data storage luigis_mansion:data my_memory.animation{namespace:"luigis_mansion",id:"high_health_idle"} at @s[scores={IdleTime=-136}] rotated ~-4 1.5 run function 3ds_remake:items/flashlight/effects/weak_light
+execute if data storage luigis_mansion:data my_memory.animation{namespace:"luigis_mansion",id:"high_health_idle"} at @s[scores={IdleTime=-135}] rotated ~-6.5 2 run function 3ds_remake:items/flashlight/effects/weak_light
+execute if data storage luigis_mansion:data my_memory.animation{namespace:"luigis_mansion",id:"high_health_idle"} at @s[scores={IdleTime=-134}] rotated ~-9 2.5 run function 3ds_remake:items/flashlight/effects/weak_light
+execute if data storage luigis_mansion:data my_memory.animation{namespace:"luigis_mansion",id:"high_health_idle"} at @s[scores={IdleTime=-133}] rotated ~-11.5 3 run function 3ds_remake:items/flashlight/effects/weak_light
+execute if data storage luigis_mansion:data my_memory.animation{namespace:"luigis_mansion",id:"high_health_idle"} at @s[scores={IdleTime=-132}] rotated ~-14 3.5 run function 3ds_remake:items/flashlight/effects/weak_light
+execute if data storage luigis_mansion:data my_memory.animation{namespace:"luigis_mansion",id:"high_health_idle"} at @s[scores={IdleTime=-131}] rotated ~-16.5 4 run function 3ds_remake:items/flashlight/effects/weak_light
+execute if data storage luigis_mansion:data my_memory.animation{namespace:"luigis_mansion",id:"high_health_idle"} at @s[scores={IdleTime=-130}] rotated ~-19 4.5 run function 3ds_remake:items/flashlight/effects/weak_light
+execute if data storage luigis_mansion:data my_memory.animation{namespace:"luigis_mansion",id:"high_health_idle"} at @s[scores={IdleTime=-129}] rotated ~-26 5.5 run function 3ds_remake:items/flashlight/effects/weak_light
+execute if data storage luigis_mansion:data my_memory.animation{namespace:"luigis_mansion",id:"high_health_idle"} at @s[scores={IdleTime=-128}] rotated ~-28.5 6 run function 3ds_remake:items/flashlight/effects/weak_light
+execute if data storage luigis_mansion:data my_memory.animation{namespace:"luigis_mansion",id:"high_health_idle"} at @s[scores={IdleTime=-127}] rotated ~-31 6.5 run function 3ds_remake:items/flashlight/effects/weak_light
+execute if data storage luigis_mansion:data my_memory.animation{namespace:"luigis_mansion",id:"high_health_idle"} at @s[scores={IdleTime=-126}] rotated ~-33.5 7 run function 3ds_remake:items/flashlight/effects/weak_light
+execute if data storage luigis_mansion:data my_memory.animation{namespace:"luigis_mansion",id:"high_health_idle"} at @s[scores={IdleTime=-125}] rotated ~-36 7.5 run function 3ds_remake:items/flashlight/effects/weak_light
+execute if data storage luigis_mansion:data my_memory.animation{namespace:"luigis_mansion",id:"high_health_idle"} at @s[scores={IdleTime=-124}] rotated ~-38.5 8 run function 3ds_remake:items/flashlight/effects/weak_light
+execute if data storage luigis_mansion:data my_memory.animation{namespace:"luigis_mansion",id:"high_health_idle"} at @s[scores={IdleTime=-123}] rotated ~-41 8.5 run function 3ds_remake:items/flashlight/effects/weak_light
+execute if data storage luigis_mansion:data my_memory.animation{namespace:"luigis_mansion",id:"high_health_idle"} at @s[scores={IdleTime=-122}] rotated ~-43 9 run function 3ds_remake:items/flashlight/effects/weak_light
+execute if data storage luigis_mansion:data my_memory.animation{namespace:"luigis_mansion",id:"high_health_idle"} at @s[scores={IdleTime=-121}] rotated ~-44 9.5 run function 3ds_remake:items/flashlight/effects/weak_light
+execute if data storage luigis_mansion:data my_memory.animation{namespace:"luigis_mansion",id:"high_health_idle"} at @s[scores={IdleTime=-120..-110}] rotated ~-45 10 run function 3ds_remake:items/flashlight/effects/weak_light
+execute if data storage luigis_mansion:data my_memory.animation{namespace:"luigis_mansion",id:"high_health_idle"} at @s[scores={IdleTime=-109}] rotated ~-44 9 run function 3ds_remake:items/flashlight/effects/weak_light
+execute if data storage luigis_mansion:data my_memory.animation{namespace:"luigis_mansion",id:"high_health_idle"} at @s[scores={IdleTime=-108}] rotated ~-42 8 run function 3ds_remake:items/flashlight/effects/weak_light
+execute if data storage luigis_mansion:data my_memory.animation{namespace:"luigis_mansion",id:"high_health_idle"} at @s[scores={IdleTime=-107}] rotated ~-38.5 7 run function 3ds_remake:items/flashlight/effects/weak_light
+execute if data storage luigis_mansion:data my_memory.animation{namespace:"luigis_mansion",id:"high_health_idle"} at @s[scores={IdleTime=-106}] rotated ~-33.5 6 run function 3ds_remake:items/flashlight/effects/weak_light
+execute if data storage luigis_mansion:data my_memory.animation{namespace:"luigis_mansion",id:"high_health_idle"} at @s[scores={IdleTime=-105}] rotated ~-27 5 run function 3ds_remake:items/flashlight/effects/weak_light
+execute if data storage luigis_mansion:data my_memory.animation{namespace:"luigis_mansion",id:"high_health_idle"} at @s[scores={IdleTime=-104}] rotated ~-19 3.5 run function 3ds_remake:items/flashlight/effects/weak_light
+execute if data storage luigis_mansion:data my_memory.animation{namespace:"luigis_mansion",id:"high_health_idle"} at @s[scores={IdleTime=-103}] rotated ~-9.5 1 run function 3ds_remake:items/flashlight/effects/weak_light
+execute if data storage luigis_mansion:data my_memory.animation{namespace:"luigis_mansion",id:"high_health_idle"} at @s[scores={IdleTime=-102}] rotated ~1.5 -1 run function 3ds_remake:items/flashlight/effects/weak_light
+execute if data storage luigis_mansion:data my_memory.animation{namespace:"luigis_mansion",id:"high_health_idle"} at @s[scores={IdleTime=-101}] rotated ~14 -3 run function 3ds_remake:items/flashlight/effects/weak_light
+execute if data storage luigis_mansion:data my_memory.animation{namespace:"luigis_mansion",id:"high_health_idle"} at @s[scores={IdleTime=-100}] rotated ~27.5 -5 run function 3ds_remake:items/flashlight/effects/weak_light
+execute if data storage luigis_mansion:data my_memory.animation{namespace:"luigis_mansion",id:"high_health_idle"} at @s[scores={IdleTime=-99}] rotated ~41 -8 run function 3ds_remake:items/flashlight/effects/weak_light
+execute if data storage luigis_mansion:data my_memory.animation{namespace:"luigis_mansion",id:"high_health_idle"} at @s[scores={IdleTime=-98}] rotated ~53.5 -10 run function 3ds_remake:items/flashlight/effects/weak_light
+execute if data storage luigis_mansion:data my_memory.animation{namespace:"luigis_mansion",id:"high_health_idle"} at @s[scores={IdleTime=-97}] rotated ~64.5 -12 run function 3ds_remake:items/flashlight/effects/weak_light
+execute if data storage luigis_mansion:data my_memory.animation{namespace:"luigis_mansion",id:"high_health_idle"} at @s[scores={IdleTime=-96}] rotated ~74 -13.5 run function 3ds_remake:items/flashlight/effects/weak_light
+execute if data storage luigis_mansion:data my_memory.animation{namespace:"luigis_mansion",id:"high_health_idle"} at @s[scores={IdleTime=-95}] rotated ~82 -15 run function 3ds_remake:items/flashlight/effects/weak_light
+execute if data storage luigis_mansion:data my_memory.animation{namespace:"luigis_mansion",id:"high_health_idle"} at @s[scores={IdleTime=-94}] rotated ~88.5 -16 run function 3ds_remake:items/flashlight/effects/weak_light
+execute if data storage luigis_mansion:data my_memory.animation{namespace:"luigis_mansion",id:"high_health_idle"} at @s[scores={IdleTime=-93}] rotated ~93.5 -17 run function 3ds_remake:items/flashlight/effects/weak_light
+execute if data storage luigis_mansion:data my_memory.animation{namespace:"luigis_mansion",id:"high_health_idle"} at @s[scores={IdleTime=-92}] rotated ~97 -18 run function 3ds_remake:items/flashlight/effects/weak_light
+execute if data storage luigis_mansion:data my_memory.animation{namespace:"luigis_mansion",id:"high_health_idle"} at @s[scores={IdleTime=-91}] rotated ~99 -19 run function 3ds_remake:items/flashlight/effects/weak_light
+execute if data storage luigis_mansion:data my_memory.animation{namespace:"luigis_mansion",id:"high_health_idle"} at @s[scores={IdleTime=-90..-70}] rotated ~100 -20 run function 3ds_remake:items/flashlight/effects/weak_light
+execute if data storage luigis_mansion:data my_memory.animation{namespace:"luigis_mansion",id:"high_health_idle"} at @s[scores={IdleTime=-69}] rotated ~95 -19 run function 3ds_remake:items/flashlight/effects/weak_light
+execute if data storage luigis_mansion:data my_memory.animation{namespace:"luigis_mansion",id:"high_health_idle"} at @s[scores={IdleTime=-68}] rotated ~90 -18 run function 3ds_remake:items/flashlight/effects/weak_light
+execute if data storage luigis_mansion:data my_memory.animation{namespace:"luigis_mansion",id:"high_health_idle"} at @s[scores={IdleTime=-67}] rotated ~80 -17 run function 3ds_remake:items/flashlight/effects/weak_light
+execute if data storage luigis_mansion:data my_memory.animation{namespace:"luigis_mansion",id:"high_health_idle"} at @s[scores={IdleTime=-66}] rotated ~65 -16 run function 3ds_remake:items/flashlight/effects/weak_light
+execute if data storage luigis_mansion:data my_memory.animation{namespace:"luigis_mansion",id:"high_health_idle"} at @s[scores={IdleTime=-65}] rotated ~45 -15 run function 3ds_remake:items/flashlight/effects/weak_light
+execute if data storage luigis_mansion:data my_memory.animation{namespace:"luigis_mansion",id:"high_health_idle"} at @s[scores={IdleTime=-64}] rotated ~25 -14 run function 3ds_remake:items/flashlight/effects/weak_light
+execute if data storage luigis_mansion:data my_memory.animation{namespace:"luigis_mansion",id:"high_health_idle"} at @s[scores={IdleTime=-63}] rotated ~10 -13 run function 3ds_remake:items/flashlight/effects/weak_light
+execute if data storage luigis_mansion:data my_memory.animation{namespace:"luigis_mansion",id:"high_health_idle"} at @s[scores={IdleTime=-62}] rotated ~ -12 run function 3ds_remake:items/flashlight/effects/weak_light
+execute if data storage luigis_mansion:data my_memory.animation{namespace:"luigis_mansion",id:"high_health_idle"} at @s[scores={IdleTime=-61}] rotated ~-5 -11 run function 3ds_remake:items/flashlight/effects/weak_light
+execute if data storage luigis_mansion:data my_memory.animation{namespace:"luigis_mansion",id:"high_health_idle"} at @s[scores={IdleTime=-60}] rotated ~-10 -10 run function 3ds_remake:items/flashlight/effects/weak_light
+execute if data storage luigis_mansion:data my_memory.animation{namespace:"luigis_mansion",id:"high_health_idle"} at @s[scores={IdleTime=-59}] rotated ~-10 -9 run function 3ds_remake:items/flashlight/effects/weak_light
+execute if data storage luigis_mansion:data my_memory.animation{namespace:"luigis_mansion",id:"high_health_idle"} at @s[scores={IdleTime=-58}] rotated ~-10 -8 run function 3ds_remake:items/flashlight/effects/weak_light
+execute if data storage luigis_mansion:data my_memory.animation{namespace:"luigis_mansion",id:"high_health_idle"} at @s[scores={IdleTime=-57}] rotated ~-10 -7 run function 3ds_remake:items/flashlight/effects/weak_light
+execute if data storage luigis_mansion:data my_memory.animation{namespace:"luigis_mansion",id:"high_health_idle"} at @s[scores={IdleTime=-56}] rotated ~-10 -6 run function 3ds_remake:items/flashlight/effects/weak_light
+execute if data storage luigis_mansion:data my_memory.animation{namespace:"luigis_mansion",id:"high_health_idle"} at @s[scores={IdleTime=-55}] rotated ~-10 -5 run function 3ds_remake:items/flashlight/effects/weak_light
+execute if data storage luigis_mansion:data my_memory.animation{namespace:"luigis_mansion",id:"high_health_idle"} at @s[scores={IdleTime=-54}] rotated ~-10 -4 run function 3ds_remake:items/flashlight/effects/weak_light
+execute if data storage luigis_mansion:data my_memory.animation{namespace:"luigis_mansion",id:"high_health_idle"} at @s[scores={IdleTime=-53}] rotated ~-10 -3 run function 3ds_remake:items/flashlight/effects/weak_light
+execute if data storage luigis_mansion:data my_memory.animation{namespace:"luigis_mansion",id:"high_health_idle"} at @s[scores={IdleTime=-52}] rotated ~-10 -2 run function 3ds_remake:items/flashlight/effects/weak_light
+execute if data storage luigis_mansion:data my_memory.animation{namespace:"luigis_mansion",id:"high_health_idle"} at @s[scores={IdleTime=-51}] rotated ~-10 -1 run function 3ds_remake:items/flashlight/effects/weak_light
+execute if data storage luigis_mansion:data my_memory.animation{namespace:"luigis_mansion",id:"high_health_idle"} at @s[scores={IdleTime=-50}] rotated ~-10 1 run function 3ds_remake:items/flashlight/effects/weak_light
+execute if data storage luigis_mansion:data my_memory.animation{namespace:"luigis_mansion",id:"high_health_idle"} at @s[scores={IdleTime=-49}] rotated ~-10 2 run function 3ds_remake:items/flashlight/effects/weak_light
+execute if data storage luigis_mansion:data my_memory.animation{namespace:"luigis_mansion",id:"high_health_idle"} at @s[scores={IdleTime=-48}] rotated ~-10 3 run function 3ds_remake:items/flashlight/effects/weak_light
+execute if data storage luigis_mansion:data my_memory.animation{namespace:"luigis_mansion",id:"high_health_idle"} at @s[scores={IdleTime=-47}] rotated ~-10 4 run function 3ds_remake:items/flashlight/effects/weak_light
+execute if data storage luigis_mansion:data my_memory.animation{namespace:"luigis_mansion",id:"high_health_idle"} at @s[scores={IdleTime=-46}] rotated ~-10 5 run function 3ds_remake:items/flashlight/effects/weak_light
+execute if data storage luigis_mansion:data my_memory.animation{namespace:"luigis_mansion",id:"high_health_idle"} at @s[scores={IdleTime=-45}] rotated ~-10 6 run function 3ds_remake:items/flashlight/effects/weak_light
+execute if data storage luigis_mansion:data my_memory.animation{namespace:"luigis_mansion",id:"high_health_idle"} at @s[scores={IdleTime=-44}] rotated ~-10 7 run function 3ds_remake:items/flashlight/effects/weak_light
+execute if data storage luigis_mansion:data my_memory.animation{namespace:"luigis_mansion",id:"high_health_idle"} at @s[scores={IdleTime=-43}] rotated ~-10 8 run function 3ds_remake:items/flashlight/effects/weak_light
+execute if data storage luigis_mansion:data my_memory.animation{namespace:"luigis_mansion",id:"high_health_idle"} at @s[scores={IdleTime=-42}] rotated ~-10 9 run function 3ds_remake:items/flashlight/effects/weak_light
+execute if data storage luigis_mansion:data my_memory.animation{namespace:"luigis_mansion",id:"high_health_idle"} at @s[scores={IdleTime=-41..-40}] rotated ~-10 10 run function 3ds_remake:items/flashlight/effects/weak_light
+execute if data storage luigis_mansion:data my_memory.animation{namespace:"luigis_mansion",id:"high_health_idle"} at @s[scores={IdleTime=-39}] rotated ~-9 9 run function 3ds_remake:items/flashlight/effects/weak_light
+execute if data storage luigis_mansion:data my_memory.animation{namespace:"luigis_mansion",id:"high_health_idle"} at @s[scores={IdleTime=-38}] rotated ~-5.5 8 run function 3ds_remake:items/flashlight/effects/weak_light
+execute if data storage luigis_mansion:data my_memory.animation{namespace:"luigis_mansion",id:"high_health_idle"} at @s[scores={IdleTime=-37}] rotated ~ 7 run function 3ds_remake:items/flashlight/effects/weak_light
+execute if data storage luigis_mansion:data my_memory.animation{namespace:"luigis_mansion",id:"high_health_idle"} at @s[scores={IdleTime=-36}] rotated ~7.5 6 run function 3ds_remake:items/flashlight/effects/weak_light
+execute if data storage luigis_mansion:data my_memory.animation{namespace:"luigis_mansion",id:"high_health_idle"} at @s[scores={IdleTime=-35}] rotated ~17.5 5 run function 3ds_remake:items/flashlight/effects/weak_light
+execute if data storage luigis_mansion:data my_memory.animation{namespace:"luigis_mansion",id:"high_health_idle"} at @s[scores={IdleTime=-34}] rotated ~27.5 4 run function 3ds_remake:items/flashlight/effects/weak_light
+execute if data storage luigis_mansion:data my_memory.animation{namespace:"luigis_mansion",id:"high_health_idle"} at @s[scores={IdleTime=-33}] rotated ~35 3 run function 3ds_remake:items/flashlight/effects/weak_light
+execute if data storage luigis_mansion:data my_memory.animation{namespace:"luigis_mansion",id:"high_health_idle"} at @s[scores={IdleTime=-32}] rotated ~40.5 2 run function 3ds_remake:items/flashlight/effects/weak_light
+execute if data storage luigis_mansion:data my_memory.animation{namespace:"luigis_mansion",id:"high_health_idle"} at @s[scores={IdleTime=-31}] rotated ~44 1 run function 3ds_remake:items/flashlight/effects/weak_light
+execute if data storage luigis_mansion:data my_memory.animation{namespace:"luigis_mansion",id:"high_health_idle"} at @s[scores={IdleTime=-30..-10}] rotated ~45 0 run function 3ds_remake:items/flashlight/effects/weak_light
+execute if data storage luigis_mansion:data my_memory.animation{namespace:"luigis_mansion",id:"high_health_idle"} at @s[scores={IdleTime=-9}] rotated ~42.5 0 run function 3ds_remake:items/flashlight/effects/weak_light
+execute if data storage luigis_mansion:data my_memory.animation{namespace:"luigis_mansion",id:"high_health_idle"} at @s[scores={IdleTime=-8}] rotated ~37.5 0 run function 3ds_remake:items/flashlight/effects/weak_light
+execute if data storage luigis_mansion:data my_memory.animation{namespace:"luigis_mansion",id:"high_health_idle"} at @s[scores={IdleTime=-7}] rotated ~32.5 0 run function 3ds_remake:items/flashlight/effects/weak_light
+execute if data storage luigis_mansion:data my_memory.animation{namespace:"luigis_mansion",id:"high_health_idle"} at @s[scores={IdleTime=-6}] rotated ~27.5 0 run function 3ds_remake:items/flashlight/effects/weak_light
+execute if data storage luigis_mansion:data my_memory.animation{namespace:"luigis_mansion",id:"high_health_idle"} at @s[scores={IdleTime=-5}] rotated ~22.5 0 run function 3ds_remake:items/flashlight/effects/weak_light
+execute if data storage luigis_mansion:data my_memory.animation{namespace:"luigis_mansion",id:"high_health_idle"} at @s[scores={IdleTime=-4}] rotated ~17.5 0 run function 3ds_remake:items/flashlight/effects/weak_light
+execute if data storage luigis_mansion:data my_memory.animation{namespace:"luigis_mansion",id:"high_health_idle"} at @s[scores={IdleTime=-3}] rotated ~12.5 0 run function 3ds_remake:items/flashlight/effects/weak_light
+execute if data storage luigis_mansion:data my_memory.animation{namespace:"luigis_mansion",id:"high_health_idle"} at @s[scores={IdleTime=-2}] rotated ~7.5 0 run function 3ds_remake:items/flashlight/effects/weak_light
+execute if data storage luigis_mansion:data my_memory.animation{namespace:"luigis_mansion",id:"high_health_idle"} at @s[scores={IdleTime=-141}] rotated ~2.5 0 run function 3ds_remake:items/flashlight/effects/weak_light
+data modify storage luigis_mansion:data memory append from storage luigis_mansion:data my_memory
+data remove storage luigis_mansion:data my_memory

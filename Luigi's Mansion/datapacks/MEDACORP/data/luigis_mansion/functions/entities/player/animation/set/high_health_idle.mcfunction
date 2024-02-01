@@ -1,8 +1,12 @@
-execute unless entity @s[scores={Animation=4}] run function luigis_mansion:entities/player/animation/set/none
-execute unless entity @s[scores={Animation=4}] if entity @s[scores={Health=41..,Shrunk=0}] run playsound luigis_mansion:entity.player.idle.high_health player @a[tag=same_room] ~ ~ ~ 1
-execute unless entity @s[scores={Animation=4}] if entity @s[scores={Health=41..,Shrunk=1..}] run playsound luigis_mansion:entity.player.idle.high_health player @a[tag=same_room] ~ ~ ~ 1 2
-execute unless entity @s[scores={Animation=4}] if entity @s[scores={Health=..40,Shrunk=0}] run playsound luigis_mansion:entity.player.idle.low_health player @a[tag=same_room] ~ ~ ~ 1
-execute unless entity @s[scores={Animation=4}] if entity @s[scores={Health=..40,Shrunk=1..}] run playsound luigis_mansion:entity.player.idle.low_health player @a[tag=same_room] ~ ~ ~ 1 2
-execute unless entity @s[scores={Animation=4}] run scoreboard players set @s Sound 20
-execute unless entity @s[scores={Animation=4}] run scoreboard players set @s IdleTime -141
-scoreboard players set @s Animation 4
+execute if data storage luigis_mansion:data my_memory run tag @s add keep_memory
+execute if entity @s[tag=!keep_memory] run function luigis_mansion:entities/player/memory/get with entity @s
+execute unless data storage luigis_mansion:data my_memory.animation{namespace:"luigis_mansion",id:"high_health_idle"} run function luigis_mansion:entities/player/animation/set/none
+execute unless data storage luigis_mansion:data my_memory.animation{namespace:"luigis_mansion",id:"high_health_idle"} if entity @s[scores={Health=41..,Shrunk=0}] run playsound luigis_mansion:entity.player.idle.high_health player @a[tag=same_room] ~ ~ ~ 1
+execute unless data storage luigis_mansion:data my_memory.animation{namespace:"luigis_mansion",id:"high_health_idle"} if entity @s[scores={Health=41..,Shrunk=1..}] run playsound luigis_mansion:entity.player.idle.high_health player @a[tag=same_room] ~ ~ ~ 1 2
+execute unless data storage luigis_mansion:data my_memory.animation{namespace:"luigis_mansion",id:"high_health_idle"} if entity @s[scores={Health=..40,Shrunk=0}] run playsound luigis_mansion:entity.player.idle.low_health player @a[tag=same_room] ~ ~ ~ 1
+execute unless data storage luigis_mansion:data my_memory.animation{namespace:"luigis_mansion",id:"high_health_idle"} if entity @s[scores={Health=..40,Shrunk=1..}] run playsound luigis_mansion:entity.player.idle.low_health player @a[tag=same_room] ~ ~ ~ 1 2
+execute unless data storage luigis_mansion:data my_memory.animation{namespace:"luigis_mansion",id:"high_health_idle"} run scoreboard players set @s Sound 20
+data modify storage luigis_mansion:data my_memory.animation set value {namespace:"luigis_mansion",id:"high_health_idle"}
+execute if entity @s[tag=!keep_memory] run data modify storage luigis_mansion:data memory append from storage luigis_mansion:data my_memory
+execute if entity @s[tag=!keep_memory] run data remove storage luigis_mansion:data my_memory
+tag @s remove keep_memory

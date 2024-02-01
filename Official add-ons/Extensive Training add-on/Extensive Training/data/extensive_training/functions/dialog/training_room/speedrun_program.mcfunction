@@ -42,7 +42,7 @@ execute if entity @s[scores={Dialog=296}] as @a[tag=same_room,gamemode=!spectato
 execute if entity @s[scores={Dialog=297}] unless entity @e[tag=ghost,scores={Room=-2},limit=1] unless entity @a[x=795.0,y=77,z=-8.0,distance=..5,limit=1] run particle minecraft:crit 795.0 77 -8.0 2.5 2.5 2.5 0 10 force @a[tag=same_room]
 execute if entity @s[scores={Dialog=297}] unless entity @e[tag=ghost,scores={Room=-2},limit=1] if entity @a[x=795.0,y=77,z=-8.0,distance=..5,limit=1] run function extensive_training:room/training_room/spawn_wave/speedrun
 execute if entity @s[scores={Dialog=297}] if entity @e[tag=ghost,scores={Room=-2},limit=1] run scoreboard players add #training_room Time 1
-execute if entity @s[scores={Dialog=298..699}] as @a[tag=same_room,gamemode=!spectator,tag=!looking_at_map] run function luigis_mansion:entities/player/animation/set/stand_still
+execute if entity @s[scores={Dialog=298..699}] as @a[tag=same_room,gamemode=!spectator,tag=!looking_at_map] run function luigis_mansion:entities/player/animation/set/idle
 execute if entity @s[scores={Dialog=298}] run function luigis_mansion:room/training_room/turn_lights/on
 execute if entity @s[scores={Dialog=298}] run scoreboard players set @a[tag=same_room] Health 100
 execute if entity @s[scores={Dialog=298}] if score #players Totals matches 1 run tellraw @a[tag=same_room] {"type":"translatable","translate":"chat.type.text","with":[{"type":"translatable","translate":"luigis_mansion:entity.e_gadd","color":"green"},{"type":"translatable","translate":"extensive_training:dialog.speedrun.4"}]}

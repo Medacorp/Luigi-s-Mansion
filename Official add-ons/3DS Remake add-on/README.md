@@ -1,4 +1,4 @@
-WARNING! This data pack will always load itself right after the Luigi's Mansion data pack! Do not create other add-ons that want this position as well (make them after this one instead).
+WARNING! This data pack will always load itself right after the MEDACORP data pack! Do not create other add-ons that want this position as well (make them after this one instead).
 
 # Changes
 Ghost behavioral changes the add-on applies:

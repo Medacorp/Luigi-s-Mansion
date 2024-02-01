@@ -1,5 +1,4 @@
 # Rotate if moving
-scoreboard players reset @s[scores={Animation=41..}] PlayerRotation
 execute store result score @s PositionX run scoreboard players get @e[tag=gooigi,limit=1] PositionX
 execute store result score @s PositionZ run scoreboard players get @e[tag=gooigi,limit=1] PositionZ
 execute store result score @s HomeX run scoreboard players get @e[tag=gooigi,limit=1] OtherX
@@ -17,6 +16,7 @@ scoreboard players add @s[scores={PlayerRotation=..-1}] PlayerRotation 360000
 execute store result score @s HomeRotation run data get entity @e[tag=gooigi,limit=1] Rotation[0] 1000
 scoreboard players add @s[scores={HomeRotation=..0}] HomeRotation 360000
 execute unless entity @s[scores={PlayerRotation=..2147483647}] run scoreboard players operation @s PlayerRotation = @s HomeRotation
+execute if data storage luigis_mansion:data luigi{reset_rotation:1b} run scoreboard players operation @s PlayerRotation = @s HomeRotation
 scoreboard players operation @s RotationDifference = @s PlayerRotation
 
 # Rotated based on looking direction

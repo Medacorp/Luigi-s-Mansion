@@ -1,1 +1,1 @@
-function 3ds_remake:animations/gooigi/chest
+function luigis_mansion:animations/luigi/chest

@@ -1,1 +1,1 @@
-$tellraw @a {"type":"translatable","translate":"$(namespace):death.$(id).killer","with":[{"type":"selector","selector":"@s"},{"type":"nbt","nbt":"my_memory.hurt_by.attacker","source":"storage","storage":"dark_moon:data","interpret":true}]}
+$tellraw @a {"type":"translatable","translate":"$(namespace):death.$(id).killer","with":[{"type":"selector","selector":"@s"},{"type":"nbt","nbt":"my_memory.hurt_by.attacker","source":"storage","storage":"luigis_mansion:data","interpret":true}]}

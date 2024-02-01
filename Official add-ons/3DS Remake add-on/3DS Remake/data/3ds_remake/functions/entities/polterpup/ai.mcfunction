@@ -1,8 +1,5 @@
 scoreboard players add @s AnimationProgress 1
-execute if score #mirrored Selected matches 0 run data modify entity @s[scores={AnimationProgress=1},tag=!flipped_gravity] data.animation set value {namespace:"3ds_remake",id:"revive/normal"}
-execute if score #mirrored Selected matches 0 run data modify entity @s[scores={AnimationProgress=1},tag=flipped_gravity] data.animation set value {namespace:"3ds_remake",id:"revive/normal_flipped"}
-execute if score #mirrored Selected matches 1 run data modify entity @s[scores={AnimationProgress=1},tag=!flipped_gravity] data.animation set value {namespace:"3ds_remake",id:"revive/mirrored"}
-execute if score #mirrored Selected matches 1 run data modify entity @s[scores={AnimationProgress=1},tag=flipped_gravity] data.animation set value {namespace:"3ds_remake",id:"revive/mirrored_flipped"}
+execute if score #mirrored Selected matches 0 run data modify entity @s[scores={AnimationProgress=1}] data.animation set value {namespace:"3ds_remake",id:"revive"}
 execute if score #mirrored Selected matches 0 run teleport @s[scores={AnimationProgress=1},tag=!flipped_gravity] ^-1.8 ^-2 ^0.5 ~-90 -90
 execute if score #mirrored Selected matches 0 run teleport @s[scores={AnimationProgress=1},tag=flipped_gravity] ^1.8 ^2.43 ^0.5 ~90 90
 execute if score #mirrored Selected matches 1 run teleport @s[scores={AnimationProgress=1},tag=!flipped_gravity] ^1.8 ^-2 ^0.5 ~90 -90

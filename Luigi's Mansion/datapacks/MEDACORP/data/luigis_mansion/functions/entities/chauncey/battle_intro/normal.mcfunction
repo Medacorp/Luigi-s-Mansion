@@ -60,7 +60,7 @@ tag @s[scores={Dialog=590}] remove wink
 tag @s[scores={Dialog=590}] add rambling
 tag @s[scores={Dialog=630}] remove rambling
 tag @s[scores={Dialog=630}] add attack
-execute if entity @s[scores={Dialog=650..669}] as @a[tag=same_room,tag=!spectator,tag=!looking_at_map] run function luigis_mansion:entities/player/animation/set/stand_still
+execute if entity @s[scores={Dialog=650..669}] as @a[tag=same_room,tag=!spectator,tag=!looking_at_map] run function luigis_mansion:entities/player/animation/set/idle
 tag @s[scores={Dialog=670}] add intro_done
 execute if entity @s[scores={Dialog=670}] as @a[tag=same_room,tag=!spectator,tag=!looking_at_map] run function luigis_mansion:entities/player/animation/set/none
 scoreboard players set @s[scores={Dialog=670}] Dialog 0

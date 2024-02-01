@@ -6,4 +6,3 @@ scoreboard players reset #temp Room
 tag @s remove made_error
 scoreboard players set @s ErrorTime 0
 scoreboard players set @s VacuumErrors 0
-scoreboard players set @s[scores={Animation=-4}] Animation 0

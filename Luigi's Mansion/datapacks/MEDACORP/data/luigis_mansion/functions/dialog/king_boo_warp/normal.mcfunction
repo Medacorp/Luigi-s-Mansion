@@ -9,7 +9,7 @@ execute if data storage luigis_mansion:data current_state.current_data.technical
 execute if entity @s[scores={Dialog=1}] run scoreboard players set @a[tag=same_room] Music 0
 tag @s[scores={Dialog=1}] add appear
 execute if entity @s[scores={Dialog=1}] run playsound luigis_mansion:entity.king_boo.laugh_2 hostile @a[tag=same_room] ~ ~ ~ 1
-execute if entity @s[scores={Dialog=1..}] as @a[tag=same_room,gamemode=!spectator,tag=!looking_at_map] run function luigis_mansion:entities/player/animation/set/stand_still
+execute if entity @s[scores={Dialog=1..}] as @a[tag=same_room,gamemode=!spectator,tag=!looking_at_map] run function luigis_mansion:entities/player/animation/set/idle
 tag @s[scores={Dialog=10}] remove appear
 execute if data storage luigis_mansion:data current_state.current_data.technical_data{king_boo_warp:1b} run scoreboard players set @s[scores={Dialog=20}] Dialog 850
 execute if entity @s[scores={Dialog=20}] run tellraw @a[tag=same_room] {"type":"translatable","translate":"chat.type.text","with":[{"type":"translatable","translate":"luigis_mansion:entity.king_boo","color":"green"},{"type":"translatable","translate":"luigis_mansion:dialog.king_boo_warp.1"}]}

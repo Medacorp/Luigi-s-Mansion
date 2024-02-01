@@ -1,4 +1,4 @@
-execute if entity @s[scores={Animation=-3..3}] run tag @s[tag=low_health,tag=!stop_model] add sneak_pos
+tag @s[tag=low_health,tag=!stop_model] add sneak_pos
 # Move with
 teleport @s[tag=!sneak_pos,nbt=!{Small:1b},tag=!flipped_gravity] ^ ^-1.67 ^
 teleport @s[tag=sneak_pos,nbt=!{Small:1b},tag=!flipped_gravity] ^ ^-1.73 ^
@@ -37,35 +37,4 @@ execute if entity @s[tag=!stop_model,tag=low_health] run scoreboard players add 
 execute if entity @s[tag=!stop_model] store result entity @s Pose.Head[0] float 1 run scoreboard players get #temp Time
 scoreboard players reset #temp Time
 
-execute at @s[scores={Animation=-4}] run function 3ds_remake:animations/gooigi/pulled/head
-execute at @s[scores={Animation=-1}] run function 3ds_remake:animations/gooigi/wave/head
-execute at @s[scores={Animation=2}] run function 3ds_remake:animations/gooigi/idle/low_health/head
-execute at @s[scores={Animation=3}] run function 3ds_remake:animations/gooigi/idle/cold_room/head
-execute at @s[scores={Animation=4}] run function 3ds_remake:animations/gooigi/idle/high_health/head
-execute at @s[scores={Animation=5}] run function 3ds_remake:animations/gooigi/nod/head
-execute at @s[scores={Animation=6}] run function 3ds_remake:animations/gooigi/thinking/head
-execute at @s[scores={Animation=7}] run function 3ds_remake:animations/gooigi/enthusiastic/head
-execute at @s[scores={Animation=8}] run function 3ds_remake:animations/gooigi/sigh/head
-execute at @s[scores={Animation=9}] run function 3ds_remake:animations/gooigi/game_boy_horror/head
-execute at @s[scores={Animation=10}] run function 3ds_remake:animations/gooigi/inspect/head
-execute at @s[scores={Animation=11}] run function 3ds_remake:animations/gooigi/look/head
-execute at @s[scores={Animation=12}] run function 3ds_remake:animations/gooigi/answer_phone/head
-execute at @s[scores={Animation=26}] run function 3ds_remake:animations/gooigi/revive/head
-execute at @s[scores={Animation=27}] run function 3ds_remake:animations/gooigi/knockback/small/head
-execute at @s[scores={Animation=28}] run function 3ds_remake:animations/gooigi/knockback/medium/head
-execute at @s[scores={Animation=29}] run function 3ds_remake:animations/gooigi/knockback/large/head
-execute at @s[scores={Animation=30}] run function 3ds_remake:animations/gooigi/knockback/burn/head
-execute at @s[scores={Animation=31}] run function 3ds_remake:animations/gooigi/knockback/soak/head
-execute at @s[scores={Animation=32}] run function 3ds_remake:animations/gooigi/knockback/freeze/head
-execute at @s[scores={Animation=33}] run function 3ds_remake:animations/gooigi/knockback/grab/head
-execute at @s[scores={Animation=34}] run function 3ds_remake:animations/gooigi/knockback/bite/head
-execute at @s[scores={Animation=35}] run function 3ds_remake:animations/gooigi/knockback/slip/head
-execute at @s[scores={Animation=36}] run function 3ds_remake:animations/gooigi/knockback/flee/head
-execute at @s[scores={Animation=37..38}] run function 3ds_remake:animations/gooigi/knockback/fake_door/head
-execute at @s[scores={Animation=39}] run function 3ds_remake:animations/gooigi/scared/head
-execute at @s[scores={Animation=40}] run function 3ds_remake:animations/gooigi/scared/freeze/head
-execute at @s[scores={Animation=41}] run function 3ds_remake:animations/gooigi/scared/bashed/head
-execute at @s[scores={Animation=42}] run function 3ds_remake:animations/gooigi/search/knock/head
-execute at @s[scores={Animation=43}] run function 3ds_remake:animations/gooigi/search/hump/head
-execute at @s[scores={Animation=44}] run function 3ds_remake:animations/gooigi/search/bash/head
-execute at @s[scores={Animation=45}] run function 3ds_remake_3ds_remake:animations/gooigi/search/chest/head
+$execute at @s run function $(namespace):animations/luigi/$(id)/head

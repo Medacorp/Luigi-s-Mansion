@@ -50,3 +50,4 @@ execute if entity @s[scores={AnimationProgress=46..55}] if score #mirrored Selec
 execute if entity @s[scores={AnimationProgress=56..60}] if score #mirrored Selected matches 1 store result entity @s Pose.Head[1] float 1 run scoreboard players remove #temp Time 5
 scoreboard players reset #temp Time
 scoreboard players set @s[scores={AnimationProgress=60..}] AnimationProgress 0
+tag @s add dark_room_head
