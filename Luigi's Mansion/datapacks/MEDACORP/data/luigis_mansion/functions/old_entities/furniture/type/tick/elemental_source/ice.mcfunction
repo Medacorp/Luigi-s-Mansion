@@ -1,0 +1,3 @@
+execute if entity @s[tag=!elemental_always_spawn,tag=elemental_must_vacuum] if entity @e[tag=same_room,tag=!spectator,tag=player,distance=..5,tag=vacuuming,limit=1] run function luigis_mansion:old_entities/furniture/spawn/elemental_ghost
+execute if entity @s[tag=!elemental_always_spawn,tag=!elemental_must_vacuum] if entity @e[tag=same_room,tag=!spectator,tag=player,distance=..5,limit=1] run function luigis_mansion:old_entities/furniture/spawn/elemental_ghost
+execute if entity @s[tag=elemental_always_spawn] run function luigis_mansion:old_entities/furniture/spawn/elemental_ghost

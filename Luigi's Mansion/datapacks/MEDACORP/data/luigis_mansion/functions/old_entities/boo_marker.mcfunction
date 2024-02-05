@@ -1,0 +1,1 @@
+execute if entity @s[tag=boo_marker] run function luigis_mansion:old_entities/boo_marker/tick

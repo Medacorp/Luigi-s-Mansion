@@ -1,2 +1,2 @@
-data modify entity @s[tag=!left] HandItems[1] set value {id:"minecraft:diamond_pickaxe",Count:1b,tag:{Unbreakable:1b,Damage:17,CustomModelData:31,luigis_mansion:{mirror:{tag:{Damage:18}}}}}
-data modify entity @s[tag=left] HandItems[0] set value {id:"minecraft:diamond_pickaxe",Count:1b,tag:{Unbreakable:1b,Damage:18,CustomModelData:31,luigis_mansion:{mirror:{tag:{Damage:17}}}}}
+data modify entity @s[tag=!left] HandItems[1] set value {id:"minecraft:diamond_pickaxe",Count:1b,tag:{Unbreakable:1b,Damage:17,CustomModelData:31,luigis_mansion:{entity:{namespace:"luigis_mansion",id:"furniture"}},luigis_mansion:{mirror:{tag:{Damage:18}}}}}
+data modify entity @s[tag=left] HandItems[0] set value {id:"minecraft:diamond_pickaxe",Count:1b,tag:{Unbreakable:1b,Damage:18,CustomModelData:31,luigis_mansion:{entity:{namespace:"luigis_mansion",id:"furniture"}},luigis_mansion:{mirror:{tag:{Damage:17}}}}}

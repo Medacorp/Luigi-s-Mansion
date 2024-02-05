@@ -36,5 +36,4 @@ tag @s remove forced_collision
 tag @s remove stuck
 scoreboard players add @s ActionTime 1
 scoreboard players add @s[tag=!collision] Time 1
-execute at @s[tag=collision,scores={ActionTime=..4}] run function luigis_mansion:entities/ghost/hidden/move
-execute at @s[tag=!collision,scores={ActionTime=..4}] run function luigis_mansion:entities/ghost/hidden/move
+execute at @s[scores={ActionTime=..4}] run function luigis_mansion:entities/ghost/hidden/move

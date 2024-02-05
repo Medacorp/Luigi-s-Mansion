@@ -1,0 +1,1 @@
+execute if entity @s[tag=banana_peel] run function luigis_mansion:old_entities/banana_peel/tick

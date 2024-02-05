@@ -1,0 +1,1 @@
+execute if entity @s[tag=furniture] run function luigis_mansion:old_entities/furniture/tick

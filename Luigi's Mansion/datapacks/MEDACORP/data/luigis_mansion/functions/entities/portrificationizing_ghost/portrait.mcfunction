@@ -1,1 +1,0 @@
-$function $(namespace):entities/portrificationizing_ghost/portrait/$(id)

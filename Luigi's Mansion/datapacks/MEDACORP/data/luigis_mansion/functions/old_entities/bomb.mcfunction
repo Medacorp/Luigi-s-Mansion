@@ -1,0 +1,1 @@
+execute if entity @s[tag=bomb] run function luigis_mansion:old_entities/bomb/tick

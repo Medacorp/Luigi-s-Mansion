@@ -1,1 +1,0 @@
-function luigis_mansion:entities/chauncey/battle_intro/normal

@@ -1,1 +1,0 @@
-execute if entity @s[tag=shot_water] run function luigis_mansion:entities/shot_water/tick

@@ -1,0 +1,1 @@
+execute if entity @s[tag=candle_flame] run function luigis_mansion:old_entities/furniture/type/tick/candle_flame

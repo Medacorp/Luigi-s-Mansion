@@ -1,1 +1,0 @@
-execute if entity @s[nbt={ArmorItems:[{tag:{luigis_mansion:{namespace:"e3_demo",id:"mouse"}}}]}] run function e3_demo:entities/mouse/tick

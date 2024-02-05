@@ -1,0 +1,1 @@
+execute if entity @s[tag=haunted_book] run function luigis_mansion:old_entities/haunted_book/tick

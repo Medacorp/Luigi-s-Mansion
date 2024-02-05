@@ -1,0 +1,1 @@
+function luigis_mansion:old_entities/furniture/trigger_dialog/normal

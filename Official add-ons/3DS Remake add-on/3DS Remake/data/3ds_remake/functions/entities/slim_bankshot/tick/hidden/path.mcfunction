@@ -1,1 +1,0 @@
-function luigis_mansion:entities/slim_bankshot/tick/normal/path

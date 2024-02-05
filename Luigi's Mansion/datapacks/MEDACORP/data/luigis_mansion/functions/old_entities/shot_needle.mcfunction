@@ -1,0 +1,1 @@
+execute if entity @s[tag=shot_needle] run function luigis_mansion:old_entities/shot_needle/tick

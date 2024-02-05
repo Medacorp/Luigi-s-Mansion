@@ -1,1 +1,0 @@
-function luigis_mansion:entities/uncle_grimmly/at_death/normal

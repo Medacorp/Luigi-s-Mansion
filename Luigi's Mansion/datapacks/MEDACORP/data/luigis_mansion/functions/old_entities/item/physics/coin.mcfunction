@@ -1,0 +1,1 @@
+execute if entity @s[tag=coin] run function luigis_mansion:old_entities/item/physics_coin with entity @s ArmorItems[3].tag.luigis_mansion

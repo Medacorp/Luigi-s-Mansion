@@ -1,0 +1,1 @@
+execute if score #temp Move matches 1.. positioned as @s run function luigis_mansion:old_entities/ghost/move_force_forward

@@ -1,3 +1,3 @@
-execute if data storage luigis_mansion:data current_state.current_data.boos[{name:"shamboo",trap_found:0b}] unless entity @e[tag=shamboo_trap,limit=1] run summon minecraft:marker 681.0 11 38 {CustomName:'{"type":"translatable","translate":"luigis_mansion:entity.hidden_boo"}',Tags:["hidden_boo","shamboo_trap","trap","new"]}
+execute if data storage luigis_mansion:data current_state.current_data.boos[{name:"shamboo",trap_found:0b}] unless entity @e[tag=shamboo_trap,limit=1] run summon minecraft:marker 681.0 11 38 {CustomName:'{"type":"translatable","translate":"luigis_mansion:entity.hidden_boo"}',data:{entity:{namespace:"luigis_mansion",id:"hidden_boo"}},Tags:["hidden_boo","shamboo_trap","trap","new"]}
 scoreboard players set #temp Room 48
-execute positioned 681.0 11 38 run function luigis_mansion:entities/boo/hiding_in_room/load
+execute positioned 681.0 11 38 run function luigis_mansion:old_entities/boo/hiding_in_room/load

@@ -1,3 +1,3 @@
-$execute positioned ~ ~$(physics_offset) ~ run function luigis_mansion:entities/item/pull
+$execute positioned ~ ~$(physics_offset) ~ run function luigis_mansion:old_entities/item/pull
 $execute at @s[tag=!no_capture_sound,tag=!no_gooigi] positioned ~ ~$(physics_offset) ~ if entity @a[tag=me,distance=..$(pick_up_range),limit=1] run tag @s add captured
 $execute at @s[tag=!no_capture_sound,tag=no_gooigi] positioned ~ ~$(physics_offset) ~ if entity @a[tag=me,tag=!gooigi,distance=..$(pick_up_range),limit=1] run tag @s add captured

@@ -1,2 +1,0 @@
-execute if entity @s[nbt={ArmorItems:[{tag:{luigis_mansion:{namespace:"e3_demo",id:"basher"}}}]},tag=!hidden] run function e3_demo:entities/basher/tick
-execute if entity @s[nbt={ArmorItems:[{tag:{luigis_mansion:{namespace:"e3_demo",id:"basher"}}}]},tag=hidden] run function e3_demo:entities/basher/hidden_tick

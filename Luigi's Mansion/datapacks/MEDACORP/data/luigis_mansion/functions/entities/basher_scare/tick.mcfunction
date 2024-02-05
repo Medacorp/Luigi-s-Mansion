@@ -1,3 +1,1 @@
-scoreboard players add @s Time 1
-teleport @s ~ ~0.1 ~
-tag @s[scores={Time=20}] add dead
+execute if entity @s[tag=!no_ai] run function luigis_mansion:entities/basher_scare/ai

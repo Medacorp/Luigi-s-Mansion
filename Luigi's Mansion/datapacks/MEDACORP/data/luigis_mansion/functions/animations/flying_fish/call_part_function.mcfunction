@@ -1,0 +1,1 @@
+function luigis_mansion:animations/flying_fish/model with storage luigis_mansion:data ghost.animation

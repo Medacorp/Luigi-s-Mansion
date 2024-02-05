@@ -1,1 +1,0 @@
-function luigis_mansion:entities/gold_mouse/normal/dining_room

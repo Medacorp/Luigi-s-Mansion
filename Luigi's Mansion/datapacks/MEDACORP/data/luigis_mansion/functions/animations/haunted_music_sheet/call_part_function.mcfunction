@@ -1,0 +1,2 @@
+execute if entity @s[tag=right_arm] run function luigis_mansion:animations/haunted_music_sheet/right_arm with storage luigis_mansion:data ghost.animation
+execute if entity @s[tag=left_arm] run function luigis_mansion:animations/haunted_music_sheet/left_arm with storage luigis_mansion:data ghost.animation

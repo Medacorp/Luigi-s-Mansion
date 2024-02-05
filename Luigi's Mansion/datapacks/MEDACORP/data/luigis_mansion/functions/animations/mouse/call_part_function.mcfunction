@@ -1,0 +1,1 @@
+function luigis_mansion:animations/mouse/model with storage luigis_mansion:data ghost.animation

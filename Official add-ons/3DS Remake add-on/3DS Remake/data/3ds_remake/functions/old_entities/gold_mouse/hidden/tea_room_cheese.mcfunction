@@ -1,0 +1,1 @@
+function luigis_mansion:old_entities/gold_mouse/normal/tea_room_cheese

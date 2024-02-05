@@ -1,0 +1,1 @@
+function luigis_mansion:old_entities/floating_whirlindas/dance_path/normal

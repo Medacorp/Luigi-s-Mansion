@@ -1,0 +1,1 @@
+function luigis_mansion:old_entities/gold_mouse/normal/hallway_3_hallway_6

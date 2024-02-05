@@ -1,0 +1,1 @@
+execute if entity @s[tag=mario] run function luigis_mansion:old_entities/mario/tick

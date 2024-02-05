@@ -1,0 +1,1 @@
+function luigis_mansion:old_entities/hidden_boo/swap_spot/normal/the_artists_studio

@@ -1,1 +1,0 @@
-execute if entity @s[tag=polterpup] run function 3ds_remake:entities/polterpup/tick

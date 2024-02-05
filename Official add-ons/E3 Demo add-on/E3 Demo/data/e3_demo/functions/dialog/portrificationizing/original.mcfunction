@@ -74,7 +74,7 @@ execute if entity @s[scores={Dialog=850},tag=ending] if score #players Totals ma
 execute if entity @s[scores={Dialog=1070},tag=ending] run tellraw @a[tag=same_room] {"type":"translatable","translate":"chat.type.text","with":[{"type":"translatable","translate":"luigis_mansion:entity.mansion","color":"green"},{"type":"translatable","translate":"luigis_mansion:message.the_end.h_rank"}]}
 execute if entity @s[scores={Dialog=1070},tag=ending] run data modify storage luigis_mansion:data current_state.mansion_ranks_achieved.h set value 1b
 execute if entity @s[scores={Dialog=1070},tag=ending] run function #luigis_mansion:cleared_mansion
-execute if entity @s[scores={Dialog=1070},tag=ending] unless score #3ds_remake Loaded matches 1.. run function luigis_mansion:entities/mario/delete_mansion_data
+execute if entity @s[scores={Dialog=1070},tag=ending] unless score #3ds_remake Loaded matches 1.. run function luigis_mansion:old_entities/mario/delete_mansion_data
 execute if entity @s[scores={Dialog=1070},tag=ending] unless score #3ds_remake Loaded matches 1.. run scoreboard players set #mansion_type Selected -1
 execute if entity @s[scores={Dialog=1070},tag=ending] unless score #3ds_remake Loaded matches 1.. run scoreboard players set #mansion_data_index Selected -1
 execute if entity @s[scores={Dialog=1070},tag=ending] unless score #3ds_remake Loaded matches 1.. run scoreboard players set #previous_mansion_index Selected -1

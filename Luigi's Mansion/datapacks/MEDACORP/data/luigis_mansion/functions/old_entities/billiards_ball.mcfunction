@@ -1,0 +1,1 @@
+execute if entity @s[tag=billiards_ball] run function luigis_mansion:old_entities/billiards_ball/tick

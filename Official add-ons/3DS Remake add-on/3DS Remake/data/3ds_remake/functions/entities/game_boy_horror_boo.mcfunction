@@ -1,1 +1,0 @@
-execute if entity @s[tag=game_boy_horror_boo] run function 3ds_remake:entities/game_boy_horror_boo/tick

@@ -1,2 +1,1 @@
-execute if entity @s[tag=enabled] run function luigis_mansion:entities/ball_floor/rotate
-tag @s[tag=!enabled] remove started
+execute if entity @s[tag=!no_ai] run function luigis_mansion:entities/ball_floor/ai

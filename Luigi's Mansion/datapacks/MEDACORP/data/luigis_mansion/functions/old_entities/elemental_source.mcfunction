@@ -1,0 +1,1 @@
+execute if entity @s[tag=elemental_source,tag=!furniture] run function luigis_mansion:old_entities/elemental_source/tick

@@ -14,13 +14,14 @@ function #luigis_mansion:dialog/extra_gallery_door
 tellraw @s[scores={Dialog=56}] {"type":"translatable","translate":"luigis_mansion:dialog.extra_gallery_door.nowhere","color":"green","clickEvent":{"action":"run_command","value":"/trigger GalleryChoice set 0"}}
 scoreboard players set @s[scores={Dialog=56}] GalleryChoice -1
 scoreboard players enable @s[scores={Dialog=56}] GalleryChoice
-execute if entity @s[scores={Dialog=58},gamemode=spectator] run function luigis_mansion:entities/door/lab/go_through
+execute if entity @s[scores={Dialog=58},gamemode=spectator] run function luigis_mansion:room/gallery/extra_gallery_door
 scoreboard players set @s[scores={Dialog=58},gamemode=spectator] Dialog 0
 execute if entity @s[scores={Dialog=58},gamemode=!spectator,tag=!looking_at_map] run function luigis_mansion:entities/player/animation/set/nod
 scoreboard players set @s[scores={Dialog=78,GalleryChoice=0}] Dialog 0
 execute if entity @s[scores={Dialog=78}] run scoreboard players operation @e[tag=furniture,tag=door,tag=extra_gallery,sort=nearest,limit=1] GalleryChoice = @s GalleryChoice
 execute if entity @s[scores={Dialog=78}] run tag @e[tag=furniture,tag=door,tag=extra_gallery,sort=nearest,limit=1] add open_door
 execute if entity @s[scores={Dialog=78}] at @e[tag=furniture,tag=door,tag=extra_gallery,sort=nearest,limit=1] positioned ^ ^ ^0.5 rotated ~-180 ~ align xz run teleport @s ~0.5 ~ ~0.5 ~ ~
+execute if entity @s[scores={Dialog=78}] at @e[tag=furniture,tag=door,tag=extra_gallery,sort=nearest,limit=1] if entity @e[distance=..0.1,tag=furniture,tag=door,tag=!locked,tag=!unlock,tag=left] run tag @s add left_door
 execute if entity @s[scores={Dialog=78}] at @e[tag=furniture,tag=door,tag=extra_gallery,sort=nearest,limit=1] if entity @e[distance=..0.1,tag=furniture,tag=door,tag=!locked,tag=!unlock,tag=!pull] run function luigis_mansion:entities/player/animation/set/door/open/push
 execute if entity @s[scores={Dialog=78}] at @e[tag=furniture,tag=door,tag=extra_gallery,sort=nearest,limit=1] if entity @e[distance=..0.1,tag=furniture,tag=door,tag=!locked,tag=!unlock,tag=pull] run function luigis_mansion:entities/player/animation/set/door/open/pull
 scoreboard players set @s[scores={Dialog=138}] Dialog 0

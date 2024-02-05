@@ -1,0 +1,2 @@
+execute if entity @s[tag=!split] run function luigis_mansion:old_entities/boolossus/tick/fight/hidden/merged
+execute if entity @s[tag=split] run function luigis_mansion:old_entities/boolossus/tick/fight/hidden/split

@@ -1,1 +1,0 @@
-execute if entity @s[tag=rocking_horse,tag=!furniture] run function luigis_mansion:entities/rocking_horse/tick

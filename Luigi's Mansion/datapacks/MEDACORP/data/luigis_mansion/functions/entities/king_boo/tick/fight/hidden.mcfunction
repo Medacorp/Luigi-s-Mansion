@@ -1,1 +1,0 @@
-function luigis_mansion:entities/king_boo/tick/fight/normal

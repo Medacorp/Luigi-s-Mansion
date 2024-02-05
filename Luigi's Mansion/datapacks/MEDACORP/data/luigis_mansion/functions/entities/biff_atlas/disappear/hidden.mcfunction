@@ -1,1 +1,0 @@
-function luigis_mansion:entities/biff_atlas/disappear/normal

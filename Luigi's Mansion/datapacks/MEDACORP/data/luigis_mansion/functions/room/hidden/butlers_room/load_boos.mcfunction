@@ -1,3 +1,3 @@
-execute if data storage luigis_mansion:data current_state.current_data.boos[{name:"peekaboo",trap_found:0b}] unless entity @e[tag=peekaboo_trap,limit=1] run summon minecraft:marker 744 11 -48 {CustomName:'{"type":"translatable","translate":"luigis_mansion:entity.hidden_boo"}',Tags:["hidden_boo","peekaboo_trap","trap","new"]}
+execute if data storage luigis_mansion:data current_state.current_data.boos[{name:"peekaboo",trap_found:0b}] unless entity @e[tag=peekaboo_trap,limit=1] run summon minecraft:marker 744 11 -48 {CustomName:'{"type":"translatable","translate":"luigis_mansion:entity.hidden_boo"}',data:{entity:{namespace:"luigis_mansion",id:"hidden_boo"}},Tags:["hidden_boo","peekaboo_trap","trap","new"]}
 scoreboard players set #temp Room 23
-execute positioned 744 11 -48 run function luigis_mansion:entities/boo/hiding_in_room/load
+execute positioned 744 11 -48 run function luigis_mansion:old_entities/boo/hiding_in_room/load

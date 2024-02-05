@@ -1,0 +1,1 @@
+function luigis_mansion:animations/jarvis/model with storage luigis_mansion:data ghost.animation

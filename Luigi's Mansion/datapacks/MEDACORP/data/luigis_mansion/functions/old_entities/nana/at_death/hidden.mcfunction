@@ -1,0 +1,1 @@
+function luigis_mansion:old_entities/nana/at_death/normal

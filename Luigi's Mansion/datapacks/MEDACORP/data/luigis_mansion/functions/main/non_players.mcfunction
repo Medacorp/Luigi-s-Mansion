@@ -13,6 +13,13 @@ execute if entity @s[tag=!furniture] store result score @s PositionZ run data ge
 execute if entity @s[tag=!furniture] run scoreboard players operation @s PositionY += @s EntityYOffset
 
 tag @s remove scanned
+tag @s remove in_vacuum
+tag @s remove in_dust
+tag @s remove in_fire
+tag @s remove in_water
+tag @s remove in_ice
+tag @e[tag=target,limit=1] remove target
+tag @e[tag=potential_target] remove potential_target
 tag @s[tag=remove_from_existence] add dead
 teleport @s[tag=dead,tag=!captured] ~ ~-100 ~
 scoreboard players reset @s[tag=dead,tag=!captured]

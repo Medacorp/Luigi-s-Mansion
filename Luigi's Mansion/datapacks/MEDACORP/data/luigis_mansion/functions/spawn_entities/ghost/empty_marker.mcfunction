@@ -1,1 +1,1 @@
-summon minecraft:marker ~ ~ ~ {Tags:["hidden","new_ghost","ghost","only_forced_spawn"]}
+summon minecraft:marker ~ ~ ~ {Tags:["hidden","new_ghost","ghost","only_forced_spawn"],data:{entity:{namespace:"luigis_mansion",id:"empty_ghost_marker"}}}

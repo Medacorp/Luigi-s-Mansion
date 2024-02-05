@@ -4,7 +4,7 @@ execute if entity @e[tag=ghost,scores={Room=-2},tag=vanish,limit=1] run scoreboa
 execute if entity @e[tag=ghost,scores={Room=-2},tag=vanish,limit=1] run scoreboard players set @e[tag=ghost,scores={Room=-2},tag=!dying] VulnerableTime 0
 execute if entity @e[tag=ghost,scores={Room=-2},tag=vanish,limit=1] run scoreboard players set @e[tag=ghost,scores={Room=-2},tag=!dying] StunTime 0
 execute if entity @e[tag=ghost,scores={Room=-2},tag=vanish,limit=1] run tag @e[tag=ghost,scores={Room=-2},tag=!dying] add vanish
-execute if entity @e[tag=ghost,scores={Room=-2},tag=vanish,limit=1] run tag @e[tag=ghost,scores={Room=-2}] remove stunnable
+execute if entity @e[tag=ghost,scores={Room=-2},tag=vanish,limit=1] run tag @e[tag=ghost,scores={Room=-2}] remove stunable
 execute if entity @e[tag=ghost,scores={Room=-2},tag=vanish,limit=1] run tag @a[tag=same_room] remove grabbed
 execute if entity @e[tag=ghost,scores={Room=-2},tag=vanish,limit=1] unless score #training_room Selected matches 1 run scoreboard players remove #training_room Wave 2
 execute if entity @e[tag=ghost,scores={Room=-2},tag=vanish,limit=1] unless score #training_room Selected matches 1 if score #training_room Wave matches ..-1 run scoreboard players set #training_room Wave 0

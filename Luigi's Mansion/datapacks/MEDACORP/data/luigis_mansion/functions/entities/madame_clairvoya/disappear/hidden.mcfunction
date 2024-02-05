@@ -1,1 +1,0 @@
-function luigis_mansion:entities/madame_clairvoya/disappear/normal

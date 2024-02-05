@@ -1,6 +1,6 @@
 execute if entity @s[tag=!flashlight,tag=had_flashlight_on] run function luigis_mansion:items/flashlight/effects/turn_off
 execute if entity @s[tag=flashlight,tag=!had_flashlight_on] run function luigis_mansion:items/flashlight/effects/turn_on
-execute if entity @s[tag=dark_room] positioned ~ ~1 ~ positioned ^ ^ ^0.8 if block ~ ~ ~ #luigis_mansion:flashlight_path run summon minecraft:marker ~ ~ ~ {Tags:["weak_flashlight","new"]}
+execute if entity @s[tag=dark_room] positioned ~ ~1 ~ positioned ^ ^ ^0.8 if block ~ ~ ~ #luigis_mansion:flashlight_path run summon minecraft:marker ~ ~ ~ {Tags:["weak_flashlight","new"],data:{entity:{namespace:"3ds_remake",id:"weak_flashlight"}}}
 execute if entity @s[tag=dark_room] positioned ~ ~1 ~ run teleport @e[type=minecraft:marker,tag=weak_flashlight,tag=new,limit=1] ~ ~ ~ ~ ~
 execute if entity @s[tag=dark_room] run scoreboard players operation @e[type=minecraft:marker,tag=weak_flashlight,tag=new,limit=1] Room = @s Room
 execute if entity @s[tag=dark_room] as @e[type=minecraft:marker,tag=weak_flashlight,tag=new,limit=1] store result score @s HomeRotationX run data get entity @s Rotation[0]

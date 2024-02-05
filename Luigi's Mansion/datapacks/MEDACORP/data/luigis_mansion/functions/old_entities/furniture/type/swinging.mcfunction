@@ -1,0 +1,1 @@
+execute if entity @s[tag=swinging] run function luigis_mansion:old_entities/furniture/type/tick/swinging

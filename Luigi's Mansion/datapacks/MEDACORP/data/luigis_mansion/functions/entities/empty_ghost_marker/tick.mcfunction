@@ -1,0 +1,1 @@
+tag @s[tag=!hidden] add remove_from_existence

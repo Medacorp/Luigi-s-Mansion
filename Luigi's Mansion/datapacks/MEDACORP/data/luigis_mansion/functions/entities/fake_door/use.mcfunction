@@ -1,2 +1,0 @@
-execute if entity @s[tag=!burning] run function luigis_mansion:entities/fake_door/hit
-execute if entity @s[tag=burning] as @a[tag=try_opening_door,limit=1,sort=nearest] run function luigis_mansion:entities/fake_door/burning

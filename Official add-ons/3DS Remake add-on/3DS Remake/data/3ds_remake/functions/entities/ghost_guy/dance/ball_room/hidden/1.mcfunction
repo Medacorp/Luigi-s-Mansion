@@ -1,1 +1,0 @@
-function luigis_mansion:entities/ghost_guy/dance/ball_room/normal/1

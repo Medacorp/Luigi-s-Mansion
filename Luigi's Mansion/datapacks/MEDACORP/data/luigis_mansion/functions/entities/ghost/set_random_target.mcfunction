@@ -1,0 +1,1 @@
+execute at @a[tag=potential_target,sort=random,limit=1] run function luigis_mansion:entities/ghost/set_target

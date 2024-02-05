@@ -10,7 +10,7 @@ function luigis_mansion:items/poltergust_3000/reset_element
 bossbar set 3ds_remake:portrait_battle players
 schedule function 3ds_remake:room/gallery/portrait_battle/load_current_data 2t
 
-function 3ds_remake:entities/portrificationizing_ghost/try_to_clear_portrait_task
+function 3ds_remake:old_entities/portrificationizing_ghost/try_to_clear_portrait_task
 scoreboard players set #temp Money 6000
 scoreboard players set #temp Time 0
 execute if data storage 3ds_remake:data current_state.trophy.normal{task_9:0b} run function 3ds_remake:room/gallery/interact_with_trophy/get_portrait_speed_count

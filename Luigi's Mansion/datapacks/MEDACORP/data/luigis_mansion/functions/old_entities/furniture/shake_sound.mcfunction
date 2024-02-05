@@ -1,0 +1,1 @@
+$function $(namespace):old_entities/furniture/shake_sound/$(id)

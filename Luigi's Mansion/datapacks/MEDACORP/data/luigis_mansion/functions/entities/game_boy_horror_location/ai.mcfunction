@@ -1,0 +1,1 @@
+execute if entity @s[tag=!no_ai] run function luigis_mansion:entities/game_boy_horror_location/ai

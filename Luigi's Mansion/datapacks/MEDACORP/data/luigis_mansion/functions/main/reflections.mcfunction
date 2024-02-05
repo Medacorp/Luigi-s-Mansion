@@ -1,4 +1,4 @@
-function luigis_mansion:entities/reflection/tick
+function luigis_mansion:old_entities/reflection/tick
 
 tag @s[tag=remove_from_existence] add dead
 teleport @s[tag=dead] ~ ~-100 ~

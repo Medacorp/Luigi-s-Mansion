@@ -1,0 +1,1 @@
+function luigis_mansion:animations/haunted_object/model with storage luigis_mansion:data ghost.animation

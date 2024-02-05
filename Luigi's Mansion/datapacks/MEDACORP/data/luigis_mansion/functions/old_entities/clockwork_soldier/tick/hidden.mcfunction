@@ -1,0 +1,1 @@
+function luigis_mansion:old_entities/clockwork_soldier/tick/normal

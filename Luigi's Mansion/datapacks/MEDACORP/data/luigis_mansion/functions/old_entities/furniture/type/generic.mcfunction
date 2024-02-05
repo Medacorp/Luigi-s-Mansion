@@ -1,0 +1,1 @@
+execute if entity @s[tag=generic] run function luigis_mansion:old_entities/furniture/type/tick/generic

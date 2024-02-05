@@ -1,1 +1,0 @@
-function luigis_mansion:entities/gold_mouse/normal/safari_room

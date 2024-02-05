@@ -1,0 +1,1 @@
+function luigis_mansion:animations/shining_ghost/model with storage luigis_mansion:data ghost.animation

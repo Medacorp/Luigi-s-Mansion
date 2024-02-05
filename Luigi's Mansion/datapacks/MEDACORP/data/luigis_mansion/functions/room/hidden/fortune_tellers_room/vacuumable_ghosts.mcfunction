@@ -1,4 +1,4 @@
-execute unless data storage luigis_mansion:data current_state.current_data{money_spawned:["fortune_tellers_room_gold_mouse"]} run function luigis_mansion:entities/gold_mouse/give_money/silver_diamond
+execute unless data storage luigis_mansion:data current_state.current_data{money_spawned:["fortune_tellers_room_gold_mouse"]} run function luigis_mansion:old_entities/gold_mouse/give_money/silver_diamond
 execute unless data storage luigis_mansion:data current_state.current_data{money_spawned:["fortune_tellers_room_gold_mouse"]} run data modify storage luigis_mansion:data entity.loot.name set value "fortune_tellers_room_gold_mouse"
 execute unless data storage luigis_mansion:data current_state.current_data{money_spawned:["fortune_tellers_room_gold_mouse"]} positioned 738 11 44 run function luigis_mansion:spawn_entities/vacuumable/gold_mouse
 scoreboard players set #fortune_tellers_room Vacuumables 1

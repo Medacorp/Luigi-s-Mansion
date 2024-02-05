@@ -1,1 +1,1 @@
-summon minecraft:marker ~ ~ ~ {Tags:["captured","vacuumable","affected_by_vacuum"]}
+summon minecraft:marker ~ ~ ~ {Tags:["captured","vacuumable","affected_by_vacuum"],data:{entity:{namespace:"luigis_mansion",id:"vacuumable_object"}}}

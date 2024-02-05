@@ -1,9 +1,9 @@
 # This is lab-gooigi, not player-gooigi
-execute facing entity @e[tag=same_room,tag=!spectator,tag=player,sort=nearest,limit=1] feet run teleport @s ~ ~ ~ ~ ~
+execute if entity @s[tag=!no_ai] run function 3ds_remake:entities/gooigi/ai
 
 execute if entity @a[tag=gooigi,limit=1] run kill @s
 
-execute if entity @s[tag=spawn_animation,scores={PositionX=1..}] run function 3ds_remake:entities/gooigi/spawn_animation
+execute at @s[scores={LightX=-2147483648..}] run function luigis_mansion:other/cast_shadow/2_tall
 
 execute if entity @s[scores={PositionX=1..}] run function 3ds_remake:animations/gooigi
 

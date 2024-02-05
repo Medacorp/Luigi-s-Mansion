@@ -1,4 +1,4 @@
-summon minecraft:marker ~ ~-1.4 ~ {CustomName:'{"type":"translatable","translate":"luigis_mansion:furniture.elemental_source"}',Tags:["furniture","elemental_source","can_be_fire_elemental_source","can_be_water_elemental_source","can_be_ice_elemental_source","no_reflection","this_entity"]}
+summon minecraft:marker ~ ~-1.4 ~ {CustomName:'{"type":"translatable","translate":"luigis_mansion:furniture.elemental_source"}',Tags:["furniture","elemental_source","can_be_fire_elemental_source","can_be_water_elemental_source","can_be_ice_elemental_source","no_reflection","this_entity"],data:{entity:{namespace:"luigis_mansion",id:"furniture"}}}
 teleport @e[tag=this_entity,limit=1] ~ ~-1.4 ~ ~ 0
 function luigis_mansion:spawn_furniture/setup/fire_elemental_source
 function luigis_mansion:spawn_furniture/setup/water_elemental_source

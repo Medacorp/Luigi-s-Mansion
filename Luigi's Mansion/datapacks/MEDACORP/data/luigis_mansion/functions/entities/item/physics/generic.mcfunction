@@ -1,1 +1,0 @@
-execute if entity @s[tag=generic] run function luigis_mansion:entities/item/physics with entity @s ArmorItems[3].tag.luigis_mansion

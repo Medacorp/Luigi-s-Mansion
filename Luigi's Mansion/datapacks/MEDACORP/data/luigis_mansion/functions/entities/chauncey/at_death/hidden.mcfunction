@@ -1,1 +1,0 @@
-function luigis_mansion:entities/chauncey/at_death/normal

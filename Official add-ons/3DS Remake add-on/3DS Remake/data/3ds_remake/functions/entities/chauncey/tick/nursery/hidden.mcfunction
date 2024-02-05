@@ -1,1 +1,0 @@
-function luigis_mansion:entities/chauncey/tick/nursery/normal

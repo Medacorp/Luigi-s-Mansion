@@ -1,1 +1,0 @@
-execute if entity @s[tag=e_gadd] run function luigis_mansion:entities/e_gadd/tick

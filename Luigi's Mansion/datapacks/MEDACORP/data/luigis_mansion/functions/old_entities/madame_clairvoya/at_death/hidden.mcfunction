@@ -1,0 +1,1 @@
+function luigis_mansion:old_entities/madame_clairvoya/at_death/normal

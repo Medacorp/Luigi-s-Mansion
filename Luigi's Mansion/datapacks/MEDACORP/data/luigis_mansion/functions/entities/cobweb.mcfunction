@@ -1,1 +1,0 @@
-execute if entity @s[tag=cobweb] run function luigis_mansion:entities/cobweb/tick

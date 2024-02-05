@@ -1,0 +1,1 @@
+function luigis_mansion:old_entities/mr_luggs/disappear/normal

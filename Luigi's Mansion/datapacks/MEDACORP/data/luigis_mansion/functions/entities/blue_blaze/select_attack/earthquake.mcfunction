@@ -1,2 +1,0 @@
-execute if entity @s[tag=!element_hurt,tag=!hurt,tag=!fleeing,tag=!attack,tag=!collided,tag=!smug,tag=!laugh,tag=!complain,tag=!vanish,tag=!appear,scores={StunTime=0}] if entity @e[tag=same_room,tag=!spectator,tag=player,distance=..1.5,limit=1] run tag @s add attack
-execute if entity @s[tag=!element_hurt,tag=!hurt,tag=!fleeing,tag=!collided,tag=!smug,tag=attack,scores={StunTime=0}] run function luigis_mansion:entities/blue_blaze/attack

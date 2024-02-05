@@ -1,4 +1,4 @@
-summon minecraft:armor_stand ~ ~ ~ {CustomName:'{"type":"translatable","translate":"luigis_mansion:entity.rocking_horse"}',Tags:["rocking_horse","battle","big","this_entity"],Pose:{Head:[0.0f,0.0f,0.01f]},NoGravity:1b,Marker:1b,ArmorItems:[{},{},{},{id:"minecraft:diamond_pickaxe",Count:1b,tag:{Unbreakable:1b,Damage:4,CustomModelData:10}}],Invisible:1b,DisabledSlots:2039583}
+summon minecraft:armor_stand ~ ~ ~ {CustomName:'{"type":"translatable","translate":"luigis_mansion:entity.rocking_horse"}',Tags:["rocking_horse","battle","big","this_entity"],Pose:{Head:[0.0f,0.0f,0.01f]},NoGravity:1b,Marker:1b,ArmorItems:[{},{},{},{id:"minecraft:diamond_pickaxe",Count:1b,tag:{Unbreakable:1b,Damage:4,CustomModelData:10,luigis_mansion:{entity:{namespace:"luigis_mansion",id:"rocking_horse"}}}}],Invisible:1b,DisabledSlots:2039583}
 execute as @e[tag=this_entity,limit=1] store result score @s GhostNr run data get storage luigis_mansion:data unique_id.ghost
 execute as @e[tag=this_entity,limit=1] store result storage luigis_mansion:data unique_id.ghost int 1 run scoreboard players add @s GhostNr 1
 teleport @e[tag=this_entity,limit=1] ~ ~ ~ ~ ~

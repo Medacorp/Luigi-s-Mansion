@@ -1,1 +1,0 @@
-function luigis_mansion:entities/miss_petunia/at_death/normal
