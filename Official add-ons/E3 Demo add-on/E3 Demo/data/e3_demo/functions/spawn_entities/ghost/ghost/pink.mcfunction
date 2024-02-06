@@ -23,7 +23,7 @@ scoreboard players set @e[tag=this_entity,limit=1] SpawnTime 160
 scoreboard players set @e[tag=this_entity,limit=1] EntitySizeWidth 8
 scoreboard players set @e[tag=this_entity,limit=1] EntitySizeHeight 12
 scoreboard players set @e[tag=this_entity,limit=1] EntityYOffset 13
-scoreboard players set @e[tag=this_entity,limit=1] AttackType 0
+scoreboard players set @e[tag=this_entity,limit=1] AttackType 1
 execute if data storage luigis_mansion:data entity.attack_type run function luigis_mansion:spawn_entities/setup/attack_type/ghost
 execute if data storage luigis_mansion:data entity.appear_type run function luigis_mansion:spawn_entities/setup/appear_type/beta
 function luigis_mansion:spawn_entities/setup/default

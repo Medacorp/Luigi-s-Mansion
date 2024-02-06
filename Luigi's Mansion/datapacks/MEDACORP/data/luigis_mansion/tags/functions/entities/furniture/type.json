@@ -1,18 +1,18 @@
 {
 	"values": [
-		"luigis_mansion:entities/furniture/type/door",
-        "luigis_mansion:entities/furniture/type/generic",
-		"luigis_mansion:entities/furniture/type/candle_flame",
-		"luigis_mansion:entities/furniture/type/rolling",
-		"luigis_mansion:entities/furniture/type/swinging",
-		"luigis_mansion:entities/furniture/type/lamp",
-		"luigis_mansion:entities/furniture/type/delayed",
-		"luigis_mansion:entities/furniture/type/mirror",
-		"luigis_mansion:entities/furniture/type/room_clear_loot_dropper",
-		"luigis_mansion:entities/furniture/type/rocking_chair",
-		"luigis_mansion:entities/furniture/type/elemental_source",
-		"luigis_mansion:entities/furniture/type/fan",
-		"luigis_mansion:entities/furniture/type/rocking_horse",
-		"luigis_mansion:entities/furniture/type/swirling"
+		"luigis_mansion:old_entities/furniture/type/door",
+        "luigis_mansion:old_entities/furniture/type/generic",
+		"luigis_mansion:old_entities/furniture/type/candle_flame",
+		"luigis_mansion:old_entities/furniture/type/rolling",
+		"luigis_mansion:old_entities/furniture/type/swinging",
+		"luigis_mansion:old_entities/furniture/type/lamp",
+		"luigis_mansion:old_entities/furniture/type/delayed",
+		"luigis_mansion:old_entities/furniture/type/mirror",
+		"luigis_mansion:old_entities/furniture/type/room_clear_loot_dropper",
+		"luigis_mansion:old_entities/furniture/type/rocking_chair",
+		"luigis_mansion:old_entities/furniture/type/elemental_source",
+		"luigis_mansion:old_entities/furniture/type/fan",
+		"luigis_mansion:old_entities/furniture/type/rocking_horse",
+		"luigis_mansion:old_entities/furniture/type/swirling"
 	]
 }

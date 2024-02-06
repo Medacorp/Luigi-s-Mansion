@@ -1,6 +1,6 @@
 {
 	"values": [
-		"luigis_mansion:entities/clockwork_soldier/normal_at_death",
-        "luigis_mansion:entities/clockwork_soldier/hidden_at_death"
+		"luigis_mansion:old_entities/clockwork_soldier/normal_at_death",
+        "luigis_mansion:old_entities/clockwork_soldier/hidden_at_death"
 	]
 }

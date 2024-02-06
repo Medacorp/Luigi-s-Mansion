@@ -1,4 +1,4 @@
-$function #$(namespace):entities/$(id)/disappear
+$function #$(namespace):entities/$(id)/reset
 tag @s remove flee
 tag @s remove hurt
 tag @s remove hurt_animation

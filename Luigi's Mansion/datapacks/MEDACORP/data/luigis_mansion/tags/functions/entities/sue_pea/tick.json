@@ -1,6 +1,6 @@
 {
 	"values": [
-		"luigis_mansion:entities/sue_pea/normal",
-        "luigis_mansion:entities/sue_pea/hidden"
+		"luigis_mansion:old_entities/sue_pea/normal",
+        "luigis_mansion:old_entities/sue_pea/hidden"
 	]
 }

@@ -1,6 +1,6 @@
 {
 	"values": [
-		"luigis_mansion:entities/madame_clairvoya/normal_at_death",
-        "luigis_mansion:entities/madame_clairvoya/hidden_at_death"
+		"luigis_mansion:old_entities/madame_clairvoya/normal_at_death",
+        "luigis_mansion:old_entities/madame_clairvoya/hidden_at_death"
 	]
 }

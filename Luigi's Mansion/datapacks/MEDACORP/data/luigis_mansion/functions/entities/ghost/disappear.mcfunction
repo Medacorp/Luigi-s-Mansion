@@ -1,4 +1,3 @@
-$function $(namespace):entities/$(id)/disappear
 function luigis_mansion:entities/ghost/go_to_home
 execute at @s positioned ~ ~0.01 ~ align y run teleport @s ~ ~ ~ ~ 0
 scoreboard players set @s Time 0
@@ -21,3 +20,4 @@ tag @s remove second_flee_state
 tag @s remove stunable
 tag @s remove visible
 tag @s add hidden
+$function $(namespace):entities/$(id)/reset

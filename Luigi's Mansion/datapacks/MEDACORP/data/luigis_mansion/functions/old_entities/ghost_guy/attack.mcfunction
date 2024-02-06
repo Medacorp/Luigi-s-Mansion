@@ -10,7 +10,7 @@ execute if score #mirrored Selected matches 1 run teleport @s[scores={ActionTime
 execute at @s[scores={ActionTime=20,AttackType=1}] as @e[distance=..2,tag=game_boy_horror_location] run function luigis_mansion:entities/game_boy_horror_location/bring_player_back
 execute at @s[scores={ActionTime=20,AttackType=1},tag=stop_dancing] unless entity @a[distance=..2,scores={Invulnerable=0},tag=!spectator] run tag @s add complain
 execute at @s[scores={ActionTime=20,AttackType=1},tag=stop_dancing] if entity @a[distance=..2,scores={Invulnerable=0},tag=!spectator] run scoreboard players set @s WaitTime 40
-execute at @s[scores={ActionTime=20,AttackType=1}] run data modify storage luigis_mansion:data damage set value {method:{namespace:"luigis_mansion",id:"cut"},amount:0,animation:"knockback/large",attacker:-1,no_delete:1b}
+execute at @s[scores={ActionTime=20,AttackType=1}] run data modify storage luigis_mansion:data damage set value {method:{namespace:"luigis_mansion",id:"cut"},amount:0,animation:{namespace:"luigis_mansion",id:"knockback/large"},attacker:-1,no_delete:1b}
 execute at @s[scores={ActionTime=20,AttackType=1}] run data modify storage luigis_mansion:data damage.amount set from entity @s ArmorItems[3].tag.luigis_mansion.damage.attack
 execute at @s[scores={ActionTime=20,AttackType=1}] store result storage luigis_mansion:data damage.attacker int 1 run scoreboard players get @s GhostNr
 execute at @s[scores={ActionTime=20,AttackType=1}] as @a[distance=..2,gamemode=!spectator] run function luigis_mansion:entities/player/damage
@@ -18,7 +18,7 @@ execute at @s[scores={ActionTime=20,AttackType=1}] run data remove storage luigi
 execute at @s[scores={ActionTime=20,AttackType=0}] positioned ^ ^ ^0.7 as @e[distance=..1,tag=game_boy_horror_location] run function luigis_mansion:entities/game_boy_horror_location/bring_player_back
 execute at @s[scores={ActionTime=20,AttackType=0},tag=stop_dancing] positioned ^ ^ ^0.7 unless entity @a[distance=..1,scores={Invulnerable=0},tag=!spectator] run tag @s add complain
 execute at @s[scores={ActionTime=20,AttackType=0},tag=stop_dancing] positioned ^ ^ ^0.7 if entity @a[distance=..1,scores={Invulnerable=0},tag=!spectator] run scoreboard players set @s WaitTime 40
-execute at @s[scores={ActionTime=20,AttackType=0}] run data modify storage luigis_mansion:data damage set value {method:{namespace:"luigis_mansion",id:"stab"},amount:0,animation:"knockback/large",attacker:-1,no_delete:1b}
+execute at @s[scores={ActionTime=20,AttackType=0}] run data modify storage luigis_mansion:data damage set value {method:{namespace:"luigis_mansion",id:"stab"},amount:0,animation:{namespace:"luigis_mansion",id:"knockback/large"},attacker:-1,no_delete:1b}
 execute at @s[scores={ActionTime=20,AttackType=0}] run data modify storage luigis_mansion:data damage.amount set from entity @s ArmorItems[3].tag.luigis_mansion.damage.attack
 execute at @s[scores={ActionTime=20,AttackType=0}] store result storage luigis_mansion:data damage.attacker int 1 run scoreboard players get @s GhostNr
 execute at @s[scores={ActionTime=20,AttackType=0}] positioned ^ ^ ^0.7 as @a[distance=..1,gamemode=!spectator] run function luigis_mansion:entities/player/damage

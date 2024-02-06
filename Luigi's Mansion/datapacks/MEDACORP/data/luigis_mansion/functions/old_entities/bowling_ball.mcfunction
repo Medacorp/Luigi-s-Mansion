@@ -1,1 +1,0 @@
-execute if entity @s[tag=bowling_ball] run function luigis_mansion:old_entities/bowling_ball/tick

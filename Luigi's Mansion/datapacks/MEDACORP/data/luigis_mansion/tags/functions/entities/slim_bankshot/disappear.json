@@ -1,6 +1,6 @@
 {
 	"values": [
-		"luigis_mansion:entities/slim_bankshot/normal_disappear",
-        "luigis_mansion:entities/slim_bankshot/hidden_disappear"
+		"luigis_mansion:old_entities/slim_bankshot/normal_disappear",
+        "luigis_mansion:old_entities/slim_bankshot/hidden_disappear"
 	]
 }

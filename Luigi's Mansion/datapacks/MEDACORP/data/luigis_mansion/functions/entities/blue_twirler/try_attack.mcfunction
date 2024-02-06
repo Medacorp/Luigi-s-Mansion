@@ -1,0 +1,3 @@
+execute if entity @s[tag=!laugh,tag=!complain] positioned ^ ^ ^0.7 at @e[tag=same_room,tag=!spectator,tag=player,distance=..0.7,limit=1] run function luigis_mansion:entities/ghost/set_target_to_attack
+execute if entity @s[scores={AttackType=2},tag=!attack,tag=!laugh,tag=!complain] positioned ^ ^ ^0.7 positioned ~ ~-6 ~ align xyz at @e[tag=same_room,tag=!spectator,tag=player,dx=0,dy=6,dz=0,limit=1] run function luigis_mansion:entities/ghost/set_target_to_attack
+execute if entity @s[tag=attack] run function luigis_mansion:entities/blue_twirler/select_attack

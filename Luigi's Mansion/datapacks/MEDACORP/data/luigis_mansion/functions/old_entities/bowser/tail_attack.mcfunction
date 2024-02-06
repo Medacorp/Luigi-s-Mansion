@@ -5,7 +5,7 @@ execute if entity @s[scores={ActionTime=11}] run data merge entity @e[tag=this_m
 execute if entity @s[scores={AnimationProgress=11}] run playsound luigis_mansion:entity.bowser.wave_tail hostile @a[tag=same_room] ~ ~ ~ 3
 execute if entity @s[scores={ActionTime=31}] run data merge entity @e[tag=this_model,tag=tail,limit=1] {Small:1b}
 execute if entity @s[scores={ActionTime=11..30}] positioned ^ ^-3 ^-4 as @e[distance=..3,tag=game_boy_horror_location] run function luigis_mansion:entities/game_boy_horror_location/bring_player_back
-execute at @s[scores={ActionTime=11..30}] run data modify storage luigis_mansion:data damage set value {method:{namespace:"luigis_mansion",id:"tail"},amount:20,animation:"knockback/large",attacker:-1,no_delete:1b}
+execute at @s[scores={ActionTime=11..30}] run data modify storage luigis_mansion:data damage set value {method:{namespace:"luigis_mansion",id:"tail"},amount:20,animation:{namespace:"luigis_mansion",id:"knockback/large"},attacker:-1,no_delete:1b}
 execute at @s[scores={ActionTime=11..30}] store result storage luigis_mansion:data damage.attacker int 1 run scoreboard players get @s GhostNr
 execute at @s[scores={ActionTime=11..30}] positioned ^ ^-3 ^-4 as @a[distance=..1,gamemode=!spectator] run function luigis_mansion:entities/player/damage
 execute at @s[scores={ActionTime=11..30}] run data remove storage luigis_mansion:data damage

@@ -1,6 +1,6 @@
 {
 	"values": [
-		"luigis_mansion:entities/chauncey/normal_disappear",
-        "luigis_mansion:entities/chauncey/hidden_disappear"
+		"luigis_mansion:old_entities/chauncey/normal_disappear",
+        "luigis_mansion:old_entities/chauncey/hidden_disappear"
 	]
 }

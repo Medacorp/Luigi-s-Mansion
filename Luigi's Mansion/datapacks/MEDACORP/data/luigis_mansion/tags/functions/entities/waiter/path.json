@@ -1,6 +1,6 @@
 {
 	"values": [
-		"luigis_mansion:entities/waiter/normal",
-        "luigis_mansion:entities/waiter/hidden"
+		"luigis_mansion:old_entities/waiter/normal",
+        "luigis_mansion:old_entities/waiter/hidden"
 	]
 }

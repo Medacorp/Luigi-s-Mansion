@@ -1,6 +1,6 @@
 {
 	"values": [
-		"luigis_mansion:entities/nana/normal",
-        "luigis_mansion:entities/nana/hidden"
+		"luigis_mansion:old_entities/nana/normal",
+        "luigis_mansion:old_entities/nana/hidden"
 	]
 }

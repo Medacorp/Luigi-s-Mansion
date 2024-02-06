@@ -1,6 +1,6 @@
 {
 	"values": [
-		"luigis_mansion:entities/madame_clairvoya/normal_disappear",
-        "luigis_mansion:entities/madame_clairvoya/hidden_disappear"
+		"luigis_mansion:old_entities/madame_clairvoya/normal_disappear",
+        "luigis_mansion:old_entities/madame_clairvoya/hidden_disappear"
 	]
 }

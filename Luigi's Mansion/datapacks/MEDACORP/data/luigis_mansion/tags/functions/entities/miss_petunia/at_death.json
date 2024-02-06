@@ -1,6 +1,6 @@
 {
 	"values": [
-		"luigis_mansion:entities/miss_petunia/normal_at_death",
-        "luigis_mansion:entities/miss_petunia/hidden_at_death"
+		"luigis_mansion:old_entities/miss_petunia/normal_at_death",
+        "luigis_mansion:old_entities/miss_petunia/hidden_at_death"
 	]
 }

@@ -1,6 +1,6 @@
 {
 	"values": [
-		"luigis_mansion:entities/mr_luggs/normal_at_death",
-        "luigis_mansion:entities/mr_luggs/hidden_at_death"
+		"luigis_mansion:old_entities/mr_luggs/normal_at_death",
+        "luigis_mansion:old_entities/mr_luggs/hidden_at_death"
 	]
 }

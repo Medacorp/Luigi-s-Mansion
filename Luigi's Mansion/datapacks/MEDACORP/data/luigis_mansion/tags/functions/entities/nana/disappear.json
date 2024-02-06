@@ -1,6 +1,6 @@
 {
 	"values": [
-		"luigis_mansion:entities/nana/normal_disappear",
-        "luigis_mansion:entities/nana/hidden_disappear"
+		"luigis_mansion:old_entities/nana/normal_disappear",
+        "luigis_mansion:old_entities/nana/hidden_disappear"
 	]
 }

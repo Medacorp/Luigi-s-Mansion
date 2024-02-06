@@ -1,6 +1,6 @@
 {
 	"values": [
-		"luigis_mansion:entities/orville/normal_at_death",
-        "luigis_mansion:entities/orville/hidden_at_death"
+		"luigis_mansion:old_entities/orville/normal_at_death",
+        "luigis_mansion:old_entities/orville/hidden_at_death"
 	]
 }

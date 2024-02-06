@@ -1,6 +1,6 @@
 {
 	"values": [
-		"luigis_mansion:entities/sir_weston/normal",
-        "luigis_mansion:entities/sir_weston/hidden"
+		"luigis_mansion:old_entities/sir_weston/normal",
+        "luigis_mansion:old_entities/sir_weston/hidden"
 	]
 }

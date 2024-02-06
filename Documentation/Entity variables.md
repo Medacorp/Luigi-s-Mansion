@@ -35,7 +35,8 @@ entity:{
     },
     
     //Non-default setup
-    training_room_score:X, //Score granted to the one who reeled in the ghost in the training room.
+    owner:X, //The GhostNr of the ghost owner of this projectile.
+	training_room_score:X, //Score granted to the one who reeled in the ghost in the training room.
     door:{ //Required for and used only by fake doors
         model:{ //Required, the ID of the door model. See IDs in use for valid IDs.
             namespace:"luigis_mansion", //Required, the namespace of the door model.

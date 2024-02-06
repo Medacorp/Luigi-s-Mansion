@@ -1,6 +1,6 @@
 {
 	"values": [
-		"luigis_mansion:entities/vincent_van_gore/normal_disappear",
-        "luigis_mansion:entities/vincent_van_gore/hidden_disappear"
+		"luigis_mansion:old_entities/vincent_van_gore/normal_disappear",
+        "luigis_mansion:old_entities/vincent_van_gore/hidden_disappear"
 	]
 }

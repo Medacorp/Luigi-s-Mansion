@@ -1,0 +1,2 @@
+execute if entity @s[scores={AttackType=0}] run function luigis_mansion:entities/purple_puncher/attack/uppercut with entity @s data.entity
+execute if entity @s[scores={AttackType=1}] run function luigis_mansion:entities/purple_puncher/attack/basher with entity @s data.entity

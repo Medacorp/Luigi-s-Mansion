@@ -124,7 +124,7 @@ scoreboard players add @s[scores={Dialog=1783}] PathStep 1
 teleport @s[scores={Dialog=1783,PathStep=1..5}] ^ ^0.4 ^0.4
 teleport @s[scores={Dialog=1783,PathStep=6..10}] ^ ^-0.4 ^0.4
 execute at @s[scores={Dialog=1783,PathStep=10}] as @e[distance=..1,tag=game_boy_horror_location] run function luigis_mansion:entities/game_boy_horror_location/bring_player_back
-execute at @s[scores={Dialog=1783,PathStep=10}] run data modify storage luigis_mansion:data damage set value {method:{namespace:"luigis_mansion",id:"bounced_on"},amount:10,animation:"knockback/large",attacker:-1,no_delete:1b}
+execute at @s[scores={Dialog=1783,PathStep=10}] run data modify storage luigis_mansion:data damage set value {method:{namespace:"luigis_mansion",id:"bounced_on"},amount:10,animation:{namespace:"luigis_mansion",id:"knockback/large"},attacker:-1,no_delete:1b}
 execute at @s[scores={Dialog=1783,PathStep=10}] store result storage luigis_mansion:data damage.attacker int 1 run scoreboard players get @s GhostNr
 execute at @s[scores={Dialog=1783,PathStep=10}] run advancement grant @a[distance=..1,gamemode=!spectator] only luigis_mansion:vanilla/waluigi_pinball/chauncey
 execute at @s[scores={Dialog=1783,PathStep=10}] as @a[distance=..1,gamemode=!spectator] run function luigis_mansion:entities/player/damage

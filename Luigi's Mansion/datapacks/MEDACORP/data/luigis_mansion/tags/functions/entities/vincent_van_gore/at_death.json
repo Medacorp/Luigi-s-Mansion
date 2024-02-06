@@ -1,6 +1,6 @@
 {
 	"values": [
-		"luigis_mansion:entities/vincent_van_gore/normal_at_death",
-        "luigis_mansion:entities/vincent_van_gore/hidden_at_death"
+		"luigis_mansion:old_entities/vincent_van_gore/normal_at_death",
+        "luigis_mansion:old_entities/vincent_van_gore/hidden_at_death"
 	]
 }

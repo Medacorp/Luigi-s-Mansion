@@ -1,2 +1,0 @@
-execute if entity @s[nbt={ArmorItems:[{tag:{luigis_mansion:{entity:{namespace:"luigis_mansion",id:"cinema_ghost"}}}}]},tag=!hidden] run function luigis_mansion:old_entities/cinema_ghost/tick
-execute if entity @s[nbt={ArmorItems:[{tag:{luigis_mansion:{entity:{namespace:"luigis_mansion",id:"cinema_ghost"}}}}]},tag=hidden] run function luigis_mansion:old_entities/cinema_ghost/hidden_tick

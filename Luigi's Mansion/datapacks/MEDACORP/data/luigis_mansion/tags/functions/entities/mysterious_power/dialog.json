@@ -1,6 +1,6 @@
 {
 	"values": [
-		"luigis_mansion:entities/mysterious_power/normal",
-        "luigis_mansion:entities/mysterious_power/hidden"
+		"luigis_mansion:old_entities/mysterious_power/normal",
+        "luigis_mansion:old_entities/mysterious_power/hidden"
 	]
 }

@@ -1,6 +1,6 @@
 {
 	"values": [
-		"luigis_mansion:entities/spooky/normal_disappear",
-        "luigis_mansion:entities/spooky/hidden_disappear"
+		"luigis_mansion:old_entities/spooky/normal_disappear",
+        "luigis_mansion:old_entities/spooky/hidden_disappear"
 	]
 }

@@ -2,6 +2,7 @@ scoreboard players set @s[scores={HurtTime=1..},tag=!hurt_animation] ActionTime 
 scoreboard players set @s[scores={HurtTime=1..},tag=!hurt_animation] HurtTime 0
 scoreboard players add @s[scores={HurtTime=1..29}] HurtTime 1
 execute unless entity @s[scores={HurtTime=1..}] run scoreboard players set @s HurtTime 1
+scoreboard players add @s SpawnTime 0
 tag @s[scores={HurtTime=1}] add hurt_animation
 tag @s[tag=remove_from_existence] remove in_vacuum
 function luigis_mansion:entities/ghost/remove_non_vacuumers

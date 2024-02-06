@@ -13,8 +13,8 @@ furniture:{
         id:"heavy_generic" //The ID of the furniture shake sound. Defaults to "heavy_generic".
     },
     interact_animation:{ //What animation gets used when using the interact method. Enthusiastic animation aditionally has a punch sound and will swing swinging furniture. Overrides default animation selecting. Default = none, except for room clear chests which use 3ds_remake:search/chest when the 3DS Remake add-on is installed.
-        namespace:"luigis_mansion", //The namespace of the furniture shake sound.
-        id:"search/hump" //The ID of the furniture shake sound.
+        namespace:"luigis_mansion", //The namespace of the animation.
+        id:"search/hump" //The ID of the animation.
     },
     inverted_swing:1b, //Swinging furniture only, whether the swinging angles are inverted for searching methods. Default = 0b.
         
@@ -22,12 +22,12 @@ furniture:{
     type:{ //Overwrites the default furniture type of this furniture.
         value:"<type>", //Required if type is present, what type to use. Types:delayed, fan, generic, rolling, swinging, swirling.
         search_value:X, //Optional, what search value is needed. The default may be different for the default type of the furniture.
-            * For delayed and generic, it's how long the poltergust must be used. Default = 20.
-            * For fan, it's the default spinning speed in degrees/10. Default = 0.
+            * For delayed, it's how long the poltergust must be used. Default = 20.
+            * For fan, it's the default spinning speed in tenths of degrees (positive values only). Default = 0.
             * For generic, it's how long the poltergust must be used. Default = 20.
-            * For rolling it's how long the poltergust. Default = 20.
+            * For rolling it's how long the poltergust must be used. Default = 20.
             * For swinging the angle in degrees*10. Default = 100.
-            * For swirling the amount of spinds it needs to have made. Default = 5.
+            * For swirling the amount of spins it needs to have made. Default = 5.
         turn_left:0b //Optional if value is "fan", wether the fan turns left rather than right.
     },
     searchable:["<method>"], //Sets what method can result in searching. If "interact" is absent here, but provided in shake_animation, interact will still try to shake it, and trigger the search animaton, but it won't actually get searched. Methods: time(will search automatically), interact, vacuum, dust, fire, water, ice. Default = none.
@@ -65,7 +65,7 @@ furniture:{
         light_on_search:1b, //Whether the light source turns on when searched. Default = 0b.
         cast_shadow:1b //Whether the light source creates shadows. Default = 0b.
     },
-    mirror_reflection:1b, //Whether the mirror will actually reflect the room, otherwise gets a solid glass texture. Valid for mirrors only. Default = 1b. Forced to 0b if the rotation is not a multiple of 90.
+    mirror_reflection:1b, //Whether the mirror will actually reflect the room, otherwise gets a solid glass texture. Valid for mirrors only. Default = 1b. Forced to 0b if the yaw rotation is not a multiple of 90, or pose pitch has a non-0 value.
     no_spawn_sound:1b, //Whether the unsearched room clear chest sound is disabled, searched room clear chests always have it disabled, regardless of this value. Valid for room clear chests only. Default = 0b.
     hitbox:{ //The size of the hitbox, only applies and required for scan areas and elemental sources.
         type:"standing", //How the hibox is aligned to the spawn position, "standing" is bottom aligned, "hanging" is top aligned. Default = centered.
@@ -106,7 +106,7 @@ furniture:{
         key:"parlor", //What key this door needs. Default = none.
         go_through_command:"<command>", //A command this door needs to run at the moment of warping the player. Used by the front door and some special cases. Default = none.
         other_end:{ //Coordinates of the door on the other side to trigger opening animation for; does not affect warping. Default = none.
-            dimension:"luigis_mansion:normal", //The dimension of the door. Default = the dimension of this door.
+            dimension:"luigis_mansion:normal", //The dimension of the other door. Default = the dimension of this door.
             x:X, //The integer X coordinate
             y:X, //The integer Y coordinate
             z:X //The integer Z coordinate

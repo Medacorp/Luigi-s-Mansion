@@ -1,0 +1,2 @@
+execute if entity @s[scores={AttackType=0..1}] run function luigis_mansion:entities/grabbing_ghost/attack/grab with entity @s data.entity
+execute if entity @s[scores={AttackType=2}] run function luigis_mansion:entities/grabbing_ghost/attack/basher with entity @s data.entity

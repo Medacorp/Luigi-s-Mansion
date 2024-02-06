@@ -9,6 +9,7 @@ function luigis_mansion:spawn_entities/setup/loot
 function luigis_mansion:spawn_entities/setup/path_number
 
 #interaction
+function luigis_mansion:spawn_entities/setup/owner
 function luigis_mansion:spawn_entities/setup/damage
 function luigis_mansion:spawn_entities/setup/talkable
 function luigis_mansion:spawn_entities/setup/scan_message

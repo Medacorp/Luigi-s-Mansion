@@ -1,6 +1,6 @@
 {
 	"values": [
-		"luigis_mansion:entities/orville/normal",
-        "luigis_mansion:entities/orville/hidden"
+		"luigis_mansion:old_entities/orville/normal",
+        "luigis_mansion:old_entities/orville/hidden"
 	]
 }

@@ -1,6 +1,6 @@
 {
 	"values": [
-		"luigis_mansion:entities/floating_whirlindas/normal_disappear",
-        "luigis_mansion:entities/floating_whirlindas/hidden_disappear"
+		"luigis_mansion:old_entities/floating_whirlindas/normal_disappear",
+        "luigis_mansion:old_entities/floating_whirlindas/hidden_disappear"
 	]
 }

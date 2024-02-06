@@ -44,15 +44,6 @@ Type | Detects                  | Add-on  | Namespace      | Data pack name
 1    | Ghosts in a small radius | e3_demo | e3_demo        | "file/E3 Demo"
 ```
 
-Map settings:
-
-```
-Values | Add-on      | Namespace      | Data pack name
-1-4    | vanilla     | luigis_mansion | "file/MEDACORP"
-5      | e3_demo     | e3_demo        | "file/E3 Demo"
-6      | music_packs | music_packs    | "file/Music Packs"
-```
-
 Ghost appear types:
 
 ```
@@ -76,10 +67,10 @@ luigis_mansion:red_grabbing_ghost | none, normal       | normal
 luigis_mansion:speedy_spirit      | none, normal, beta | normal
 luigis_mansion:temper_terror      | none, normal, beta | normal
 luigis_mansion:waiter             | none               | none
-e3_demo:ghost                     | none, normal, beta | beta
 e3_demo:basher                    | none, normal, beta | beta
-e3_demo:puncher                   | none, normal, beta | beta
 e3_demo:body_slammer              | none, normal, beta | beta
+e3_demo:ghost                     | none, normal, beta | beta
+e3_demo:puncher                   | none, normal, beta | beta
 ```
 
 Ghost attack types:
@@ -105,10 +96,10 @@ luigis_mansion:red_grabbing_ghost | basher, harmless_grab, harmfull_grab | harmf
 luigis_mansion:speedy_spirit      | none, basher                         | none
 luigis_mansion:temper_terror      | none, punch, basher                  | punch
 luigis_mansion:waiter             | none                                 | none
-e3_demo:ghost                     | none, punch, basher                  | punch
 e3_demo:basher                    | none, punch, basher                  | basher
-e3_demo:puncher                   | uppercut, basher                     | uppercut
 e3_demo:body_slammer              | punch, basher, body_slam, earthquake | body_slam
+e3_demo:ghost                     | none, punch, basher                  | punch
+e3_demo:puncher                   | uppercut, basher                     | uppercut
 ```
 
 

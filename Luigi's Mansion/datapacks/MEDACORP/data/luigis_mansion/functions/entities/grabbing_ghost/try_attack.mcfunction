@@ -1,0 +1,4 @@
+execute if entity @s[tag=!laugh,tag=!complain,scores={AttackType=0}] positioned ^ ^ ^0.7 at @e[tag=same_room,tag=!spectator,tag=player,tag=!grabbed,distance=..0.7,limit=1] run function luigis_mansion:entities/ghost/set_target_to_attack
+execute if entity @s[tag=!laugh,tag=!complain,scores={AttackType=1}] positioned ^ ^ ^0.7 at @e[tag=same_room,tag=!spectator,tag=player,tag=!grabbed,scores={Invulnerable=0},distance=..0.7,limit=1] run function luigis_mansion:entities/ghost/set_target_to_attack
+execute if entity @s[tag=!laugh,tag=!complain,scores={AttackType=2}] positioned ^ ^ ^0.7 at @e[tag=same_room,tag=!spectator,tag=player,distance=..0.7,limit=1] run function luigis_mansion:entities/ghost/set_target_to_attack
+execute if entity @s[tag=attack] run function luigis_mansion:entities/grabbing_ghost/select_attack

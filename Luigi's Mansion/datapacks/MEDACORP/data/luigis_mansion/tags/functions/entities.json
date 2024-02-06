@@ -2,7 +2,6 @@
 	"values": [
 		"luigis_mansion:old_entities/ghost",
 		"luigis_mansion:old_entities/mysterious_power",
-		"luigis_mansion:old_entities/bowling_ball",
 		"luigis_mansion:old_entities/bone",
         "luigis_mansion:old_entities/shot_fire",
         "luigis_mansion:old_entities/shot_water",
@@ -11,7 +10,6 @@
         "luigis_mansion:old_entities/moving_ice",
         "luigis_mansion:old_entities/ice_spike",
         "luigis_mansion:old_entities/ice_spikes",
-        "luigis_mansion:old_entities/bomb",
         "luigis_mansion:old_entities/wool",
         "luigis_mansion:old_entities/billiards_ball",
         "luigis_mansion:old_entities/ball",
@@ -19,7 +17,6 @@
         "luigis_mansion:old_entities/rocking_horse",
         "luigis_mansion:old_entities/boo_marker",
         "luigis_mansion:old_entities/hidden_boo",
-        "luigis_mansion:old_entities/banana_peel",
         "luigis_mansion:old_entities/portrificationizing_ghost",
         "luigis_mansion:old_entities/item",
         "luigis_mansion:old_entities/mario",

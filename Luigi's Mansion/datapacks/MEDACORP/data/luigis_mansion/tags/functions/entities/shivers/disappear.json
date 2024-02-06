@@ -1,6 +1,6 @@
 {
 	"values": [
-		"luigis_mansion:entities/shivers/normal_disappear",
-        "luigis_mansion:entities/shivers/hidden_disappear"
+		"luigis_mansion:old_entities/shivers/normal_disappear",
+        "luigis_mansion:old_entities/shivers/hidden_disappear"
 	]
 }

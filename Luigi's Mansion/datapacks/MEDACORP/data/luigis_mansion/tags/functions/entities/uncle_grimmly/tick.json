@@ -1,6 +1,6 @@
 {
 	"values": [
-		"luigis_mansion:entities/uncle_grimmly/normal",
-        "luigis_mansion:entities/uncle_grimmly/hidden"
+		"luigis_mansion:old_entities/uncle_grimmly/normal",
+        "luigis_mansion:old_entities/uncle_grimmly/hidden"
 	]
 }

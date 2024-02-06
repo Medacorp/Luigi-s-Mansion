@@ -1,6 +1,6 @@
 {
 	"values": [
-		"luigis_mansion:entities/chauncey/normal",
-        "luigis_mansion:entities/chauncey/hidden"
+		"luigis_mansion:old_entities/chauncey/normal",
+        "luigis_mansion:old_entities/chauncey/hidden"
 	]
 }
