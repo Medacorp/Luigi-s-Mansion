@@ -1,0 +1,3 @@
+$data modify entity @s data.path set from entity @s data.paths[$(index)]
+scoreboard players set @s TargetTask 5
+function luigis_mansion:entities/ghost/target_task/warp_to_first_path_step

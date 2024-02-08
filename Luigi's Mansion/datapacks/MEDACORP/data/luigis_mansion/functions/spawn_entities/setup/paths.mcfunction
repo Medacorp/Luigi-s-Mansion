@@ -1,0 +1,1 @@
+execute if data storage luigis_mansion:data entity.paths run data modify entity @e[tag=this_entity,limit=1] data.paths set from storage luigis_mansion:data entity.paths

@@ -21,8 +21,8 @@ execute if entity @s[scores={DeathTime=1,Room=-2},tag=!dead,tag=!remove_from_exi
 execute if entity @s[scores={DeathTime=1,Room=-2,TrainingRoomScore=-2147483648..},tag=!dead,tag=!remove_from_existence] run scoreboard players operation @a[tag=killer,limit=1] TrainingRoomScore += @s TrainingRoomScore
 tag @s[scores={DeathTime=1},tag=!dead,tag=!remove_from_existence] add captured
 
-execute if entity @s[scores={KillerID=-2147483648..}] run data modify entity @s ArmorItems[3].tag.luigis_mansion.attacked_by set value [0]
-execute if entity @s[scores={KillerID=-2147483648..}] store result entity @s ArmorItems[3].tag.luigis_mansion.attacked_by[0] int 1 run scoreboard players get @s KillerID
+execute if entity @s[scores={KillerID=-2147483648..}] run data modify entity @s data.attacked_by set value [0]
+execute if entity @s[scores={KillerID=-2147483648..}] store result entity @s data.attacked_by[0] int 1 run scoreboard players get @s KillerID
 tag @a[tag=killer,limit=1] add vaporizing_ghost
 tag @a[tag=killer,limit=1] remove killer
 

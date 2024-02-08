@@ -33,9 +33,21 @@ entity:{
     damage:{ //Damage values the ghost uses in its functions.
         <type>:X //The amount of damage dealt. Type is usually collision and attack (also used by created projectiles), but can be other values.
     },
+	paths:[ //Paths this entity can follow; used by the target task "follow path"; if that task is selected, but this is empty, it turns into the "do nothing" task. Default = none.
+		{ //A single option; using the "set_random_path" function selects a random option; using "set_specific_path" sets the path to the index specified in the macro "index".
+			loop:1b, //Whether this path loops or not. If not, the ghost vanishes at the end of the path. Default = 0b.
+			steps:[ //Individual path steps to go to.
+				{
+					wait:X, //The amount of ticks to stay in place when reaching the position. Default = 0.
+					position:[X,Y,Z] //The XYZ coodinates to go to. For the first step, it's an instant warp.
+				}
+			]
+		}
+	],
+	affected_by:["<method>"], //The methods this portrait ghost is affected by aside from vacuuming. Allowed values: dust, fire, water, ice. Default = none.
     
     //Non-default setup
-    owner:X, //The GhostNr of the ghost owner of this projectile.
+    owner:X, //The GhostNr of the ghost that owns this projectile.
 	training_room_score:X, //Score granted to the one who reeled in the ghost in the training room.
     door:{ //Required for and used only by fake doors
         model:{ //Required, the ID of the door model. See IDs in use for valid IDs.
@@ -60,4 +72,4 @@ entity:{
 }
 ```
 
-Additionally, spawning a key requires a macro string called "door", which matches the door this key belongs to.
+Additionally, spawning a key requires a macro string called "door", which matches the door the key belongs to.

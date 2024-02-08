@@ -7,4 +7,4 @@ execute as @a[distance=..3,scores={Invulnerable=0},gamemode=!spectator] run func
 data remove storage luigis_mansion:data damage
 particle minecraft:explosion ~ ~ ~ 0.2 0.2 0.2 1 4 force @a[tag=same_room]
 playsound luigis_mansion:entity.ghost.explosion hostile @a[tag=same_room] ~ ~ ~ 1
-data modify entity @s ArmorItems[3].id set value minecraft:stone_button
+data modify entity @s ArmorItems[3].id set value "minecraft:stone_button"

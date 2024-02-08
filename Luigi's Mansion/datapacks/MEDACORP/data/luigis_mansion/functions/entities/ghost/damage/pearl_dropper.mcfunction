@@ -23,8 +23,8 @@ scoreboard players operation #temp Health /= #1000 Constants
 scoreboard players operation #temp PreviousHealth /= #1000 Constants
 
 data modify storage luigis_mansion:data entity set value {rotation:[0.0f,-90.0f],assign_rank:{namespace:"luigis_mansion",id:"null"}}
-data modify storage luigis_mansion:data entity.assign_rank.namespace set from entity @s ArmorItems[3].tag.luigis_mansion.entity.namespace
-data modify storage luigis_mansion:data entity.assign_rank.id set from entity @s ArmorItems[3].tag.luigis_mansion.entity.id
+data modify storage luigis_mansion:data entity.assign_rank.namespace set from entity @s data.entity.namespace
+data modify storage luigis_mansion:data entity.assign_rank.id set from entity @s data.entity.id
 execute unless score #temp Health = #temp PreviousHealth if score #temp2 Health matches 1.. if score #temp2 LastHealth matches ..4 run function luigis_mansion:spawn_entities/item/small_pearl
 execute unless score #temp Health = #temp PreviousHealth if score #temp2 Health matches 1.. if score #temp2 LastHealth matches 5.. run function luigis_mansion:spawn_entities/item/medium_pearl
 execute unless score #temp Health = #temp PreviousHealth if score #temp2 Health matches 0 unless score #temp MaxHealth = #temp LastHealth if score #temp2 LastHealth matches ..4 run function luigis_mansion:spawn_entities/item/small_pearl

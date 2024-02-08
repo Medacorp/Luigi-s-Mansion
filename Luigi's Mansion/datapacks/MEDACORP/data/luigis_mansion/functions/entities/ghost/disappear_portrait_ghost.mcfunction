@@ -13,4 +13,4 @@ scoreboard players set @s ActionTime 0
 scoreboard players set @s ErrorTime 0
 scoreboard players reset @s SecondFleeState
 scoreboard players operation @s LastHealth = @s Health
-data modify entity @s ArmorItems[3].tag.luigis_mansion.attacked_by set value []
+data modify entity @s data.attacked_by set value []

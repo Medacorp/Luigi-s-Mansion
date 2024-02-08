@@ -18,7 +18,7 @@ execute if entity @s[scores={ActionTime=1..20}] if score #mirrored Selected matc
 execute if entity @s[scores={ActionTime=1..20}] if score #mirrored Selected matches 1 run function luigis_mansion:entities/grabbing_ghost/attack/grab/mirrored
 execute if entity @s[scores={ActionTime=20}] run data modify storage luigis_mansion:data damage set value {method:{namespace:"luigis_mansion",id:"grabbed"},animation:{namespace:"luigis_mansion",id:"knockback/harmless_grab"},attacker:-1}
 execute if entity @s[scores={ActionTime=20,AttackType=1}] run data modify storage luigis_mansion:data damage.animation set value {namespace:"luigis_mansion",id:"knockback/harmfull_grab"}
-execute if entity @s[scores={ActionTime=20,AttackType=1}] run data modify storage luigis_mansion:data damage.amount set from entity @s ArmorItems[3].tag.luigis_mansion.damage.attack
+execute if entity @s[scores={ActionTime=20,AttackType=1}] run data modify storage luigis_mansion:data damage.amount set from entity @s data.damage.attack
 execute if entity @s[scores={ActionTime=20}] store result storage luigis_mansion:data damage.attacker int 1 run scoreboard players get @s GhostNr
 execute if entity @s[scores={ActionTime=20}] as @a[tag=still_grabbed,limit=1] run function luigis_mansion:entities/player/damage
 execute if entity @s[scores={ActionTime=20}] run tag @a[tag=still_grabbed,limit=1] add grabbed

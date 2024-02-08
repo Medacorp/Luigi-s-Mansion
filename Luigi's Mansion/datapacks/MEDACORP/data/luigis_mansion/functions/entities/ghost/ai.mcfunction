@@ -50,6 +50,7 @@ execute at @s[tag=!hurt,tag=!flee,tag=!freeze,scores={TargetTask=1,StunTime=0,Ac
 execute at @s[tag=!hurt,tag=!flee,tag=!freeze,scores={TargetTask=2,StunTime=0,ActionTime=0}] run function luigis_mansion:entities/ghost/target_task/stay_away_from_target
 execute at @s[tag=!hurt,tag=!flee,tag=!freeze,scores={TargetTask=3,StunTime=0,ActionTime=0}] run function luigis_mansion:entities/ghost/target_task/move_to_target_pos
 execute at @s[tag=!hurt,tag=!flee,tag=!freeze,scores={TargetTask=4,StunTime=0,ActionTime=0}] run function luigis_mansion:entities/ghost/target_task/wander
+execute at @s[tag=!hurt,tag=!flee,tag=!freeze,scores={TargetTask=5,StunTime=0,ActionTime=0}] run function luigis_mansion:entities/ghost/target_task/follow_path
 
-execute at @s[tag=!portrait_ghost,tag=disappear] run function luigis_mansion:entities/ghost/disappear with entity @s ArmorItems[3].tag.luigis_mansion.entity
-execute if entity @s[tag=portrait_ghost,tag=disappear] run function luigis_mansion:entities/ghost/disappear_portrait_ghost with entity @s ArmorItems[3].tag.luigis_mansion.entity
+execute at @s[tag=!portrait_ghost,tag=disappear] run function luigis_mansion:entities/ghost/disappear with entity @s data.entity
+execute if entity @s[tag=portrait_ghost,tag=disappear] run function luigis_mansion:entities/ghost/disappear_portrait_ghost with entity @s data.entity

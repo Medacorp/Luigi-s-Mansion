@@ -4,3 +4,4 @@ function luigis_mansion:spawn_entities/setup/flee
 function luigis_mansion:spawn_entities/setup/vanish_time
 function luigis_mansion:spawn_entities/setup/drop_pearls
 function luigis_mansion:spawn_entities/setup/drop_poison_mushrooms
+function luigis_mansion:spawn_entities/setup/affected_by
