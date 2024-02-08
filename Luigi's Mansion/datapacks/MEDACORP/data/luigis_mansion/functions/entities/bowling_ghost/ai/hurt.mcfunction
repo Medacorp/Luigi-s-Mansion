@@ -8,6 +8,6 @@ execute if entity @s[tag=flee,tag=second_flee_state] run function luigis_mansion
 data modify entity @s[tag=!flee,tag=hurt] data.animation set value {namespace:"luigis_mansion",id:"hurt"}
 data modify entity @s[tag=element_hurt,tag=!freeze] data.animation set value {namespace:"luigis_mansion",id:"hurt"}
 
-$function $(namespace):entities/$(id)/disappear
+$function $(namespace):entities/$(id)/reset
 tag @e[tag=this_bowling_ball,tag=no_ai,limit=1] add drop
 tag @e[tag=this_bowling_ball,limit=1] remove no_ai

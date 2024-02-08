@@ -4,4 +4,3 @@ tag @s remove laugh
 tag @s remove complain
 tag @s remove attack
 tag @s remove smug
-tag @s[tag=!disappear,tag=!hurt,tag=!element_hurt] add collided

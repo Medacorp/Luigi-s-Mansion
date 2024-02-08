@@ -1376,6 +1376,104 @@
         ],
         "subtitle": "luigis_mansion:subtitles.entity.clockwork_soldier.hurt"
     },
+    "entity.dancing_ghost_guy.attack": {
+        "sounds": [
+            {
+                "name": "luigis_mansion:entity/ghost_guy/attack",
+                "stream": false
+            }
+        ],
+        "subtitle": "luigis_mansion:subtitles.entity.ghost_guy.attack"
+    },
+    "entity.dancing_ghost_guy.complain": {
+        "sounds": [
+            {
+                "name": "luigis_mansion:entity/ghost_guy/complain",
+                "stream": false
+            }
+        ],
+        "subtitle": "luigis_mansion:subtitles.entity.ghost_guy.complain"
+    },
+    "entity.dancing_ghost_guy.dance": {
+        "sounds": [
+            {
+                "name": "luigis_mansion:entity/ghost_guy/dance",
+                "stream": false
+            }
+        ],
+        "subtitle": "luigis_mansion:subtitles.entity.ghost_guy.dance"
+    },
+    "entity.dancing_ghost_guy.disappear": {
+        "sounds": [
+            {
+                "name": "luigis_mansion:entity/generic/disappear",
+                "stream": false
+            }
+        ],
+        "subtitle": "luigis_mansion:subtitles.entity.ghost_guy.disappear"
+    },
+    "entity.dancing_ghost_guy.element_hurt": {
+        "sounds": [
+            {
+                "name": "luigis_mansion:entity/ghost_guy/element_hurt",
+                "stream": false
+            }
+        ],
+        "subtitle": "luigis_mansion:subtitles.entity.ghost_guy.hurt"
+    },
+    "entity.dancing_ghost_guy.flee": {
+        "sounds": [
+            {
+                "name": "luigis_mansion:entity/ghost_guy/flee1",
+                "stream": false
+            },
+            {
+                "name": "luigis_mansion:entity/ghost_guy/flee2",
+                "stream": false
+            },
+            {
+                "name": "luigis_mansion:entity/ghost_guy/flee3",
+                "stream": false
+            }
+        ],
+        "subtitle": "luigis_mansion:subtitles.entity.ghost_guy.flee"
+    },
+    "entity.dancing_ghost_guy.hurt": {
+        "sounds": [
+            {
+                "name": "luigis_mansion:entity/ghost_guy/hurt",
+                "stream": false
+            }
+        ],
+        "subtitle": "luigis_mansion:subtitles.entity.ghost_guy.hurt"
+    },
+    "entity.dancing_ghost_guy.mask_shake": {
+        "sounds": [
+            {
+                "name": "luigis_mansion:entity/ghost_guy/mask_shake",
+                "stream": false
+            }
+        ],
+        "subtitle": "luigis_mansion:subtitles.entity.ghost_guy.mask_shake"
+    },
+    "entity.dancing_ghost_guy.spawn": {
+        "sounds": [
+            {
+                "name": "luigis_mansion:entity/ghost_guy/spawn",
+                "stream": false
+            }
+        ],
+        "subtitle": "luigis_mansion:subtitles.entity.ghost_guy.spawn"
+    },
+    "entity.dancing_ghost_guy.spin_attack": {
+        "sounds": [
+            {
+                "name": "luigis_mansion:entity/ghost_guy/spin_attack",
+                "stream": false
+            }
+        ],
+        "subtitle": "luigis_mansion:subtitles.entity.ghost_guy.attack"
+    },
     "entity.e_gadd.complain": {
         "sounds": [
             {
@@ -2906,15 +3004,6 @@
             }
         ],
         "subtitle": "luigis_mansion:subtitles.entity.ghost_guy.complain"
-    },
-    "entity.ghost_guy.dance": {
-        "sounds": [
-            {
-                "name": "luigis_mansion:entity/ghost_guy/dance",
-                "stream": false
-            }
-        ],
-        "subtitle": "luigis_mansion:subtitles.entity.ghost_guy.dance"
     },
     "entity.ghost_guy.disappear": {
         "sounds": [

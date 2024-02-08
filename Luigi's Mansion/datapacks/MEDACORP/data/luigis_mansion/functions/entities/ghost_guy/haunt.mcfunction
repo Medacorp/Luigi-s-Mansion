@@ -1,0 +1,1 @@
+data modify entity @s data.animation set value {namespace:"luigis_mansion",id:"haunt"}

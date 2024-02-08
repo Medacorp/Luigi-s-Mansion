@@ -38,8 +38,9 @@ entity:{
 			loop:1b, //Whether this path loops or not. If not, the ghost vanishes at the end of the path. Default = 0b.
 			steps:[ //Individual path steps to go to.
 				{
+					instant:1b, //If the entity warps to this step position, rather than progressing towards it. Default = 0b.
 					wait:X, //The amount of ticks to stay in place when reaching the position. Default = 0.
-					position:[X,Y,Z] //The XYZ coodinates to go to. For the first step, it's an instant warp.
+					position:[X,Y,Z] //The XYZ coodinates to go to.
 				}
 			]
 		}

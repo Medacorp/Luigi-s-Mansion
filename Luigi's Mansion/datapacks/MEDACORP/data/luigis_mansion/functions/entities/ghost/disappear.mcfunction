@@ -6,6 +6,11 @@ tag @s[tag=disappear_on_vanish] add remove_from_existence
 scoreboard players set @s SpawnTime 200
 scoreboard players set @s ActionTime 0
 scoreboard players set @s ErrorTime 0
+scoreboard players set @s TargetTask 0
+scoreboard players set @s TargetTime 0
+data remove entity @s data.target
+data remove entity @s data.target_pos
+data remove entity @s data.path
 scoreboard players reset @s SecondFleeState
 scoreboard players operation @s LastHealth = @s Health
 data modify entity @s data.attacked_by set value []
