@@ -1,7 +1,7 @@
 scoreboard players add @s ActionTime 1
 execute if entity @s[scores={ActionTime=1}] run playsound luigis_mansion:entity.ice_spike.shatter hostile @a[tag=same_room] ~ ~ ~ 1
 data modify entity @s[scores={ActionTime=1}] ArmorItems[3].tag.CustomModelData set value 26
-data modify entity @s[scores={ActionTime=3}] ArmorItems[3].id set value minecraft:stone_button
+data modify entity @s[scores={ActionTime=3}] ArmorItems[3].id set value "minecraft:stone_button"
 execute store result entity @s[scores={ActionTime=4}] Pos[0] double 0.01 run scoreboard players get @s HomeX
 execute store result entity @s[scores={ActionTime=4}] Pos[1] double 0.01 run scoreboard players get @s HomeY
 execute store result entity @s[scores={ActionTime=4}] Pos[2] double 0.01 run scoreboard players get @s HomeZ

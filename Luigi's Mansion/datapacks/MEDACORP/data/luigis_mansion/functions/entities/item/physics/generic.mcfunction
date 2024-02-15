@@ -8,6 +8,6 @@ $execute at @s[scores={Move=0}] positioned ~ ~$(physics_offset) ~ align y if blo
 $execute at @s[scores={Move=0}] positioned ~ ~$(physics_offset) ~ align y if block ~ ~ ~ #minecraft:slabs[type=bottom] positioned ~ ~0.5 ~ run teleport @s ~ ~-$(physics_offset) ~
 $execute at @s[tag=!wall_bounce] positioned ~ ~$(physics_offset) ~ positioned ~ ~0.1 ~ run function luigis_mansion:entities/item/physics/step/prevent_collision
 
-execute at @s run function luigis_mansion:old_animations/money/rotate
+execute at @s run function luigis_mansion:entities/item/rotate
 
 $execute at @s positioned ~ ~$(physics_offset) ~ if entity @e[tag=same_room,tag=!spectator,tag=player,distance=..$(pick_up_range),limit=1] run function luigis_mansion:entities/item/physics/step/collect {pick_up_range:$(pick_up_range)}

@@ -3,7 +3,7 @@ execute if entity @s[tag=!spit] run scoreboard players set #temp Move 10
 scoreboard players set @s[tag=!vacuumable] SpawnTime 0
 scoreboard players add @s[tag=vacuumable] SpawnTime 1
 execute if entity @s[tag=spit] run function luigis_mansion:entities/wool/spit
-execute if entity @s[tag=!in_vacuum,tag=!can_spit_2,tag=vacuumable,tag=!spit] unless entity ArmorItems[3].tag.luigis_mansion.path run function luigis_mansion:entities/wool/set_random_path
+execute if entity @s[tag=!in_vacuum,tag=!can_spit_2,tag=vacuumable,tag=!spit] unless data entity @s ArmorItems[3].tag.luigis_mansion.path run function luigis_mansion:entities/wool/set_random_path
 execute if entity @s[tag=!in_vacuum,tag=!can_spit_2,tag=vacuumable,tag=!spit] run function luigis_mansion:entities/wool/follow_path
 execute at @s[tag=!in_vacuum,tag=!can_spit_2,tag=vacuumable,tag=!spit] if entity @e[tag=!spectator,tag=player,distance=..0.7,limit=1] run function luigis_mansion:entities/wool/hit_player
 execute store result score @s HomeRotation run data get entity @s Pose.Head[0]

@@ -1,1 +1,2 @@
-#to do
+execute if score #mirrored Selected matches 0 run function luigis_mansion:animations/mr_bones/haunt/normal/left_leg
+execute if score #mirrored Selected matches 1 run function luigis_mansion:animations/mr_bones/haunt/mirrored/left_leg

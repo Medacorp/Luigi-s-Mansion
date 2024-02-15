@@ -1,1 +1,1 @@
-#to do
+data modify entity @s Pose.Head[0] set from storage luigis_mansion:data ghost.rotation[1]

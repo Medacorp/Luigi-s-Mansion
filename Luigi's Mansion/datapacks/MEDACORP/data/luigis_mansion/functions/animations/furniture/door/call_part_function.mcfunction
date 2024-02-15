@@ -1,2 +1,0 @@
-execute if entity @s[tag=right] run function luigis_mansion:animations/furniture/door/right with storage luigis_mansion:data passive.animation
-execute if entity @s[tag=left] run function luigis_mansion:animations/furniture/door/left with storage luigis_mansion:data passive.animation

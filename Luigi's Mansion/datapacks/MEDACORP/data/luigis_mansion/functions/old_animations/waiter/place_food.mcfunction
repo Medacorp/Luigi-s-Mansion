@@ -1,2 +1,0 @@
-execute if score #mirrored Selected matches 0 run function luigis_mansion:old_animations/waiter/normal/place_food
-execute if score #mirrored Selected matches 1 run function luigis_mansion:old_animations/waiter/mirrored/place_food
