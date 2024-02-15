@@ -32,9 +32,12 @@ entity:{
     damage:{ //Damage values the ghost uses in its functions.
         <type>:X //The amount of damage dealt. Type is usually collision and attack (also used by created projectiles), but can be other values.
     },
+	affected_by:["<method>"], //The methods this portrait ghost is affected by aside from vacuuming. Allowed values: dust, fire, water, ice. Default = none.
+    
+    //Non-default setup
 	paths:[ //Paths this entity can follow; used by the target task "follow path"; if that task is selected, but this is empty, it turns into the "do nothing" task. Default = none.
 		{ //A single option; using the "set_random_path" function selects a random option; using "set_specific_path" sets the path to the index specified in the macro "index".
-			loop:1b, //Whether this path loops or not. If not, the ghost vanishes at the end of the path. Default = 0b.
+			loop:1b, //Whether this path loops or not. If not, the entity stops at the end of the path. Default = 0b.
 			steps:[ //Individual path steps to go to.
 				{
 					instant:1b, //If the entity warps to this step position, rather than progressing towards it. Default = 0b.
@@ -44,9 +47,6 @@ entity:{
 			]
 		}
 	],
-	affected_by:["<method>"], //The methods this portrait ghost is affected by aside from vacuuming. Allowed values: dust, fire, water, ice. Default = none.
-    
-    //Non-default setup
     room:X, //Room number that this entity is in. Default = 0.
     owner:X, //The GhostNr of the ghost that owns this projectile.
 	training_room_score:X, //Score granted to the one who reeled in the ghost in the training room.
