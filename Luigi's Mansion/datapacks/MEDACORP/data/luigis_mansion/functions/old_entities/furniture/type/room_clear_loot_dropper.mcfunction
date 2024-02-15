@@ -1,1 +1,0 @@
-execute if entity @s[tag=room_clear_loot_dropper] run function luigis_mansion:old_entities/furniture/type/tick/room_clear_loot_dropper

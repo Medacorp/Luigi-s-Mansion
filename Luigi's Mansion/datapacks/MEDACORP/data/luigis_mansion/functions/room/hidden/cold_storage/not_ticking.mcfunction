@@ -4,5 +4,5 @@ scoreboard players reset #cold_storage Vacuumables
 
 function luigis_mansion:room/hidden/cold_storage/reset/campfire_1
 function luigis_mansion:room/hidden/cold_storage/reset/campfire_2
-scoreboard players set @e[scores={Room=68},nbt={ArmorItems:[{tag:{namespace:"luigis_mansion",id:"sir_weston"}}]}] Dialog 0
-scoreboard players set @e[scores={Room=68},nbt={ArmorItems:[{tag:{namespace:"luigis_mansion",id:"sir_weston"}}]}] PathStep 0
+scoreboard players set @e[scores={Room=68},nbt={ArmorItems:[{tag:{luigis_mansion:{entity:{namespace:"luigis_mansion",id:"sir_weston"}}}}]}] Dialog 0
+scoreboard players set @e[scores={Room=68},nbt={ArmorItems:[{tag:{luigis_mansion:{entity:{namespace:"luigis_mansion",id:"sir_weston"}}}}]}] PathStep 0

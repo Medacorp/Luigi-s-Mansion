@@ -26,7 +26,6 @@ scoreboard players reset #temp Move
 #3150/Move=angle*1000
 execute at @s[tag=reached_target] run function luigis_mansion:entity/ghost/target_task/circle_above_target_degrees with storage luigis_mansion:data macro
 execute at @s run function luigis_mansion:entities/ghost/move_forward
-execute at @s run teleport @s ~ ~ ~ ~ 0
 tag @s[tag=new_reached_target] add reached_target
 tag @s[tag=!new_reached_target] remove reached_target
 tag @s remove new_reached_target

@@ -1,2 +1,0 @@
-execute if entity @s[nbt={ArmorItems:[{tag:{luigis_mansion:{entity:{namespace:"luigis_mansion",id:"purple_bomber"}}}}]},tag=!hidden] run function luigis_mansion:old_entities/purple_bomber/tick
-execute if entity @s[nbt={ArmorItems:[{tag:{luigis_mansion:{entity:{namespace:"luigis_mansion",id:"purple_bomber"}}}}]},tag=hidden] run function luigis_mansion:old_entities/purple_bomber/hidden_tick

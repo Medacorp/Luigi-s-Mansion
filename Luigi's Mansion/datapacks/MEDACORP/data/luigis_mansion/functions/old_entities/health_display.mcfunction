@@ -1,1 +1,0 @@
-execute if entity @s[tag=health_display] run function luigis_mansion:old_entities/health_display/tick

@@ -20,7 +20,7 @@ execute if entity @s[scores={Dialog=160}] if data storage extensive_training:dat
 execute if entity @s[scores={Dialog=264}] as @a[tag=same_room,gamemode=!spectator,tag=!looking_at_map] run function luigis_mansion:entities/player/animation/set/none
 execute if entity @s[scores={Dialog=264}] run function luigis_mansion:room/training_room/turn_lights/off
 execute if entity @s[scores={Dialog=265}] unless entity @e[tag=ghost,scores={Room=-2},limit=1] run function extensive_training:room/training_room/spawn_wave/endless
-execute if entity @s[scores={Dialog=265}] if entity @e[nbt={ArmorItems:[{tag:{luigis_mansion:{namespace:"luigis_mansion",id:"speedy_spirit"}}}]},scores={Room=-2},tag=dying,limit=1] run function extensive_training:room/gallery/clear_task/task_5
+execute if entity @s[scores={Dialog=265}] if entity @e[nbt={ArmorItems:[{tag:{luigis_mansion:{entity:{namespace:"luigis_mansion",id:"speedy_spirit"}}}}]},scores={Room=-2},tag=dying,limit=1] run function extensive_training:room/gallery/clear_task/task_5
 execute if entity @s[scores={Dialog=266..553}] as @a[tag=same_room,gamemode=!spectator,tag=!looking_at_map] run function luigis_mansion:entities/player/animation/set/game_boy_horror
 execute if entity @s[scores={Dialog=266}] run function luigis_mansion:room/training_room/turn_lights/on
 execute if entity @s[scores={Dialog=266}] run scoreboard players reset @a[tag=same_room] DeathTime

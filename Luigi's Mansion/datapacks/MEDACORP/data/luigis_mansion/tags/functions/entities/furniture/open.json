@@ -1,11 +1,11 @@
 {
 	"values": [
-        "luigis_mansion:old_entities/furniture/open/nightstand",
-        "luigis_mansion:old_entities/furniture/open/chest",
-        "luigis_mansion:old_entities/furniture/open/hide_and_seek_box",
-        "luigis_mansion:old_entities/furniture/open/projector",
-        "luigis_mansion:old_entities/furniture/open/toilet",
-        "luigis_mansion:old_entities/furniture/open/wooden_cabinet",
-        "luigis_mansion:old_entities/furniture/open/wooden_chest"
+        "luigis_mansion:entities/furniture/open/nightstand",
+        "luigis_mansion:entities/furniture/open/chest",
+        "luigis_mansion:entities/furniture/open/hide_and_seek_box",
+        "luigis_mansion:entities/furniture/open/projector",
+        "luigis_mansion:entities/furniture/open/toilet",
+        "luigis_mansion:entities/furniture/open/wooden_cabinet",
+        "luigis_mansion:entities/furniture/open/wooden_chest"
 	]
 }

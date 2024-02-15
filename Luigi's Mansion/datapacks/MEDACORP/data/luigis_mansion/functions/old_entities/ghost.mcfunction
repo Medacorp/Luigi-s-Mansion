@@ -1,1 +1,0 @@
-execute if entity @s[tag=ghost] run function luigis_mansion:old_entities/ghost/tick

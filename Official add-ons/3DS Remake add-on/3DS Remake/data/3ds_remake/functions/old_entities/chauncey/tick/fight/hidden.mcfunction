@@ -35,7 +35,7 @@ tag @s[scores={Dialog=21},tag=intro_done] add rambling
 scoreboard players set @s[scores={Dialog=22},tag=intro_done] AnimationProgress 0
 tag @s[scores={Dialog=22},tag=intro_done] remove rambling
 tag @s[scores={Dialog=22},tag=intro_done] add attack
-execute if entity @s[scores={Dialog=22},tag=intro_done] run tag @e[tag=rocking_horse,limit=1] add attack
+execute if entity @s[scores={Dialog=22},tag=intro_done] rotated -90 10 as @e[tag=rocking_horse,limit=1] run function luigis_mansion:entities/rocking_horse/trigger_attack
 scoreboard players set @s[scores={Dialog=22},tag=intro_done] ActionTime 11
 teleport @s[scores={Dialog=61..80,Health=..5000},tag=intro_done] ~ ~ ~ 0 0
 teleport @s[scores={Dialog=61..80,Health=5001..},tag=intro_done] ~ ~ ~ -180 0
@@ -49,7 +49,7 @@ tag @s[scores={Dialog=81},tag=intro_done] add rambling
 scoreboard players set @s[scores={Dialog=82},tag=intro_done] AnimationProgress 0
 tag @s[scores={Dialog=82},tag=intro_done] remove rambling
 tag @s[scores={Dialog=82},tag=intro_done] add attack
-execute if entity @s[scores={Dialog=82},tag=intro_done] run tag @e[tag=rocking_horse,limit=1] add attack
+execute if entity @s[scores={Dialog=82},tag=intro_done] rotated -90 10 as @e[tag=rocking_horse,limit=1] run function luigis_mansion:entities/rocking_horse/trigger_attack
 scoreboard players set @s[scores={Dialog=82},tag=intro_done] ActionTime 11
 teleport @s[scores={Dialog=121..140},tag=intro_done] ~ ~ ~ -90 0
 execute if entity @s[scores={Dialog=140,Health=..5001},tag=intro_done] run data modify storage luigis_mansion:data entity set value {tags:["zigzag_left"]}
@@ -63,7 +63,7 @@ tag @s[scores={Dialog=141},tag=intro_done] add rambling
 scoreboard players set @s[scores={Dialog=182},tag=intro_done] AnimationProgress 0
 tag @s[scores={Dialog=182},tag=intro_done] remove rambling
 tag @s[scores={Dialog=182},tag=intro_done] add attack
-execute if entity @s[scores={Dialog=182},tag=intro_done] run tag @e[tag=rocking_horse,limit=1] add attack
+execute if entity @s[scores={Dialog=182},tag=intro_done] rotated -90 10 as @e[tag=rocking_horse,limit=2] run function luigis_mansion:entities/rocking_horse/trigger_attack
 scoreboard players set @s[scores={Dialog=182},tag=intro_done] ActionTime 11
 tag @s[scores={Dialog=240},tag=intro_done] add rambling
 tag @s[scores={Dialog=260},tag=intro_done] remove rambling

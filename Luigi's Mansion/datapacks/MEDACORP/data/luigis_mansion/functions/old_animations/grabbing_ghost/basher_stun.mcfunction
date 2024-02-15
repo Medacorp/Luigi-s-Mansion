@@ -1,2 +1,0 @@
-execute if score #mirrored Selected matches 0 run function luigis_mansion:old_animations/grabbing_ghost/normal/basher_stun
-execute if score #mirrored Selected matches 1 run function luigis_mansion:old_animations/grabbing_ghost/mirrored/basher_stun

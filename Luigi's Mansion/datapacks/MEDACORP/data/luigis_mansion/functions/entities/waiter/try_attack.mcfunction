@@ -1,0 +1,2 @@
+execute if entity @s[tag=!complain] positioned ^ ^ ^1 if entity @e[tag=same_room,tag=food,distance=..1,limit=1] run tag @s add attack
+execute if entity @s[tag=attack] run function luigis_mansion:entities/waiter/attack/drop_food_off

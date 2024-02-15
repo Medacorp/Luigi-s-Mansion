@@ -1,0 +1,1 @@
+function luigis_mansion:entities/pink_flying_fish/tick

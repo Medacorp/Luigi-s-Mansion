@@ -11,7 +11,7 @@ scoreboard players set @s[tag=vanish] HurtTime 0
 
 execute if entity @s[tag=!hurt,tag=flee,tag=!dying,scores={VulnerableTime=0..}] run function luigis_mansion:entities/ghost/hurt/vacuum
 execute if entity @s[tag=hurt,tag=!disappear,tag=!dying,scores={VulnerableTime=0..}] run function luigis_mansion:entities/ghost/hurt/vacuum
-execute if entity @s[tag=!hurt,tag=!disappear,tag=element_hurt,tag=!dying,scores={VulnerableTime=0..}] run function luigis_mansion:entities/ghost/hurt/element
+execute if entity @s[tag=!hurt,tag=!disappear,tag=!dying,tag=element_hurt] run function luigis_mansion:entities/ghost/hurt/element
 
 tag @s[tag=stunned,tag=!hurt,tag=!freeze_animation] add stun_freeze_animation
 tag @s[tag=stunned,tag=!hurt] add freeze_animation
@@ -39,10 +39,7 @@ scoreboard players reset #temp ID
 
 execute unless data entity @s data.target run function luigis_mansion:entities/ghost/set_random_target
 
-execute unless data entity @s data.target unless data entity @s data.target_pos run scoreboard players set @s[scores={TargetTask=1..}] TargetTask 4
-
 scoreboard players operation #temp Move = @s Move
-execute unless entity @s[scores={ActionTime=0..}] unless data entity @s data.animation run tag @s add appear
 execute unless entity @s[scores={ActionTime=0..}] run scoreboard players add @s ActionTime 0
 execute unless entity @s[scores={TargetTask=0..}] run scoreboard players add @s TargetTask 0
 #execute at @s[tag=!hurt,tag=!flee,tag=!freeze,scores={TargetTask=0,StunTime=0,ActionTime=0}] run function luigis_mansion:entities/ghost/target_task/do_nothing

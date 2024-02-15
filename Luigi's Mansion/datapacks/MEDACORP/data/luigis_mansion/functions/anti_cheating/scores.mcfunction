@@ -105,6 +105,7 @@ scoreboard objectives add HomeX dummy
 scoreboard objectives add HomeY dummy
 scoreboard objectives add HomeZ dummy
 scoreboard objectives add HurtTime dummy
+scoreboard objectives add IceSpikesNr dummy
 scoreboard objectives add ID dummy
 scoreboard objectives add IdleTime dummy
 scoreboard objectives add IncreaseAmount dummy

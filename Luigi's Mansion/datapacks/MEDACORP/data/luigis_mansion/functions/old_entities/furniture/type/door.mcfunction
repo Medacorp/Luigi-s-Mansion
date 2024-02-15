@@ -1,1 +1,0 @@
-execute if entity @s[tag=door] run function luigis_mansion:old_entities/furniture/type/tick/door

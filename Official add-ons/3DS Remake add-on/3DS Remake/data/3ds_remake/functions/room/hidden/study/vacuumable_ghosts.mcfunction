@@ -1,4 +1,4 @@
-execute unless data storage luigis_mansion:data current_state.current_data{money_spawned:["study_gold_mouse"]} run function luigis_mansion:old_entities/gold_mouse/give_money/green_emerald
-execute unless data storage luigis_mansion:data current_state.current_data{money_spawned:["study_gold_mouse"]} run data modify storage luigis_mansion:data entity.loot.name set value "study_gold_mouse"
+execute unless data storage luigis_mansion:data current_state.current_data{money_spawned:["study_gold_mouse"]} run data modify storage luigis_mansion:data entity set value {loot:{name:"study_gold_mouse"},paths:[{steps:[{wait:20,position:[705.5d,20.0d,49.5d]},{position:[705.5d,20.0d,45.5d]},{position:[711.5d,20.0d,45.5d]},{position:[713.5d,20.0d,49.5d]},{position:[712.5d,20.0d,53.5d]},{position:[708.5d,20.0d,54.5d]},{position:[706.5d,20.0d,57.5d]},{position:[702.5d,20.0d,57.5d]}]}]}
+execute unless data storage luigis_mansion:data current_state.current_data{money_spawned:["study_gold_mouse"]} run function luigis_mansion:entities/gold_mouse/give_money/green_emerald
 execute unless data storage luigis_mansion:data current_state.current_data{money_spawned:["study_gold_mouse"]} positioned 705 20 49 run function luigis_mansion:spawn_entities/vacuumable/gold_mouse
 scoreboard players set #study Vacuumables 1

@@ -1,1 +1,0 @@
-execute if data storage luigis_mansion:data entity.path store result score @e[tag=this_entity,limit=1] Path run data get storage luigis_mansion:data entity.path

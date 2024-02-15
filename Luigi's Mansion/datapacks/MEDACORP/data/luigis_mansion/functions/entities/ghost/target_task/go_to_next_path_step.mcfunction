@@ -1,4 +1,5 @@
-execute unless data entity @s data.path.steps[0] run tag @s add disappear
+tag @s remove reached_target
+execute unless data entity @s data.path.steps[0] run tag @s add reached_target
 execute unless data entity @s data.path.steps[0] run scoreboard players set @s TargetTask 0
 execute unless data entity @s data.path.steps[0] run data remove entity @s data.path
 execute if data entity @s data.path.steps[0] run data modify entity @s data.step set from entity @s data.path.steps[0]

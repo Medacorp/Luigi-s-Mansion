@@ -1,4 +1,4 @@
-summon minecraft:armor_stand ~ ~-1.4 ~ {CustomName:'{"type":"translatable","translate":"luigis_mansion:furniture.room_clear_loot_dropper"}',Tags:["furniture","no_reflection","this_entity","room_clear_loot_dropper","dark_room","was_dark_room"],Marker:1b,ArmorItems:[{},{},{},{id:"minecraft:stone_button",Count:1b,tag:{luigis_mansion:{entity:{namespace:"luigis_mansion",id:"furniture"}}}}],NoGravity:1b,Invisible:1b,DisabledSlots:2039583}
+summon minecraft:armor_stand ~ ~-1.4 ~ {CustomName:'{"type":"translatable","translate":"luigis_mansion:furniture.room_clear_loot_dropper"}',Tags:["furniture","no_reflection","this_entity","dark_room","was_dark_room"],Marker:1b,ArmorItems:[{},{},{},{id:"minecraft:stone_button",Count:1b,tag:{luigis_mansion:{entity:{namespace:"luigis_mansion",id:"furniture"},furniture_type:"room_clear_loot_dropper"}}}],NoGravity:1b,Invisible:1b,DisabledSlots:2039583}
 function luigis_mansion:spawn_furniture/setup/loot
 function luigis_mansion:spawn_furniture/setup/tags
 execute unless data storage luigis_mansion:data furniture.loot run tag @e[tag=this_entity,limit=1] add remove_from_existence

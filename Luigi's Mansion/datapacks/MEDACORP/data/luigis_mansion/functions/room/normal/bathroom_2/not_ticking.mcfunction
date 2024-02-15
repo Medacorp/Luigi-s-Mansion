@@ -3,4 +3,4 @@ execute as @e[scores={Room=43},tag=ghost,tag=!portrait_ghost,nbt=!{ArmorItems:[{
 scoreboard players reset #bathroom_2 Vacuumables
 
 function luigis_mansion:room/normal/bathroom_2/reset/curtain
-scoreboard players set @e[scores={Room=43},nbt={ArmorItems:[{tag:{namespace:"luigis_mansion",id:"miss_petunia"}}]}] Dialog 0
+scoreboard players set @e[scores={Room=43},nbt={ArmorItems:[{tag:{luigis_mansion:{entity:{namespace:"luigis_mansion",id:"miss_petunia"}}}}]}] Dialog 0

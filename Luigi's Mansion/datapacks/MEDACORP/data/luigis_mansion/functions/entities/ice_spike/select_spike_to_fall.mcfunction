@@ -1,0 +1,1 @@
+execute unless entity @e[tag=ice_spike,tag=exact_same_room,tag=attack,limit=1] at @e[tag=same_room,tag=!spectator,tag=player,sort=random,limit=1] run tag @e[tag=ice_spike,tag=exact_same_room,sort=nearest,limit=1] add attack

@@ -1,0 +1,1 @@
+execute unless entity @e[tag=same_room,nbt={data:{entity:{namespace:"luigis_mansion",id:"haunted_object"}}},tag=attack,limit=1] at @e[tag=same_room,tag=!spectator,tag=player,sort=random,limit=1] as @e[tag=same_room,nbt={data:{entity:{namespace:"luigis_mansion",id:"haunted_object"}}},sort=nearest,limit=1] run function luigis_mansion:entities/haunted_object/select_attack

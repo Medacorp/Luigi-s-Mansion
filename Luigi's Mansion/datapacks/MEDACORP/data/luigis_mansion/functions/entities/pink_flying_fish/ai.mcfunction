@@ -1,0 +1,2 @@
+execute if entity @s[tag=visible] run function luigis_mansion:entities/pink_flying_fish/ai/visible
+execute if entity @s[tag=!visible] run function luigis_mansion:entities/pink_flying_fish/ai/invisible with entity @s data.entity

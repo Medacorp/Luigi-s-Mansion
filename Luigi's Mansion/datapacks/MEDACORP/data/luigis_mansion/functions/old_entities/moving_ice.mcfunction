@@ -1,1 +1,0 @@
-execute if entity @s[tag=moving_ice] run function luigis_mansion:old_entities/moving_ice/tick

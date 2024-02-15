@@ -1,1 +1,0 @@
-$function $(namespace):old_entities/item/picked_up/$(id)

@@ -1,4 +1,4 @@
-execute if predicate luigis_mansion:gold_mouse_chance run function luigis_mansion:old_entities/gold_mouse/give_money/gold_bars
-execute if data storage luigis_mansion:data entity.loot run data modify storage luigis_mansion:data entity.loot.name set value "hallway_3_hallway_6_gold_mouse"
+execute if predicate luigis_mansion:gold_mouse_chance run data modify storage luigis_mansion:data entity set value {loot:{name:"hallway_3_hallway_6_gold_mouse"},paths:[{steps:[{wait:20,position:[718.5d,11.0d,-18.5d]},{position:[714.5d,11.0d,-19.5d]},{position:[710.5d,11.0d,-17.5d]},{position:[706.5d,11.0d,-19.5d]},{position:[702.5d,11.0d,-17.5d]},{position:[698.5d,11.0d,-19.5d]},{position:[694.5d,11.0d,-17.5d]},{position:[690.5d,11.0d,-19.5d]},{position:[686.5d,11.0d,-17.5d]},{position:[682.5d,11.0d,-19.5d]},{position:[679.5d,11.0d,-19.5d]}]}]}
+execute if data storage luigis_mansion:data entity.loot run function luigis_mansion:entities/gold_mouse/give_money/gold_bars
 execute if data storage luigis_mansion:data entity.loot positioned 718 11 -19 run function luigis_mansion:spawn_entities/vacuumable/gold_mouse
 tag @s add chance_check

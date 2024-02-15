@@ -3,41 +3,40 @@ scoreboard players add @s Dialog 1
 execute if entity @s[scores={Dialog=1..139}] as @a[tag=same_room,tag=!spectator,tag=!looking_at_map] run function luigis_mansion:entities/player/animation/set/high_health_idle_no_sound
 execute if entity @s[scores={Dialog=110}] run teleport @s ~ ~ ~ -90 0
 execute if entity @s[scores={Dialog=120}] run playsound luigis_mansion:entity.chauncey.cutscene_scream hostile @a[tag=same_room] ~ ~ ~ 3
-execute if entity @s[scores={Dialog=120}] run data modify storage luigis_mansion:data entity set value {tags:["intro"]}
+execute if entity @s[scores={Dialog=120}] run data modify storage luigis_mansion:data entity set value {tags:["intro","attack"],room:73}
 execute if entity @s[scores={Dialog=120}] positioned ~-2.5 ~11 ~3.5 run function luigis_mansion:spawn_entities/rocking_horse/small
-execute if entity @s[scores={Dialog=120}] run data modify storage luigis_mansion:data entity set value {tags:["intro"]}
+execute if entity @s[scores={Dialog=120}] run data modify storage luigis_mansion:data entity set value {tags:["intro","attack"],room:73}
 execute if entity @s[scores={Dialog=120}] positioned ~-8.5 ~11 ~3.5 run function luigis_mansion:spawn_entities/rocking_horse/small
-execute if entity @s[scores={Dialog=120}] run data modify storage luigis_mansion:data entity set value {tags:["intro"]}
+execute if entity @s[scores={Dialog=120}] run data modify storage luigis_mansion:data entity set value {tags:["intro","attack"],room:73}
 execute if entity @s[scores={Dialog=120}] positioned ~-14.5 ~11 ~3.5 run function luigis_mansion:spawn_entities/rocking_horse/small
-execute if entity @s[scores={Dialog=120}] run data modify storage luigis_mansion:data entity set value {tags:["intro"]}
+execute if entity @s[scores={Dialog=120}] run data modify storage luigis_mansion:data entity set value {tags:["intro","attack"],room:73}
 execute if entity @s[scores={Dialog=120}] positioned ~-2.5 ~11 ~-3.5 run function luigis_mansion:spawn_entities/rocking_horse/small
-execute if entity @s[scores={Dialog=120}] run data modify storage luigis_mansion:data entity set value {tags:["intro"]}
+execute if entity @s[scores={Dialog=120}] run data modify storage luigis_mansion:data entity set value {tags:["intro","attack"],room:73}
 execute if entity @s[scores={Dialog=120}] positioned ~-8.5 ~11 ~-3.5 run function luigis_mansion:spawn_entities/rocking_horse/small
-execute if entity @s[scores={Dialog=120}] run data modify storage luigis_mansion:data entity set value {tags:["intro"]}
+execute if entity @s[scores={Dialog=120}] run data modify storage luigis_mansion:data entity set value {tags:["intro","attack"],room:73}
 execute if entity @s[scores={Dialog=120}] positioned ~-14.5 ~11 ~-3.5 run function luigis_mansion:spawn_entities/rocking_horse/small
-execute if entity @s[scores={Dialog=120}] run data modify storage luigis_mansion:data entity set value {tags:["intro"]}
+execute if entity @s[scores={Dialog=120}] run data modify storage luigis_mansion:data entity set value {tags:["intro","attack"],room:73}
 execute if entity @s[scores={Dialog=120}] positioned ~-21.5 ~9 ~3.5 run function luigis_mansion:spawn_entities/rocking_horse/small
-execute if entity @s[scores={Dialog=120}] run data modify storage luigis_mansion:data entity set value {tags:["intro"]}
+execute if entity @s[scores={Dialog=120}] run data modify storage luigis_mansion:data entity set value {tags:["intro","attack"],room:73}
 execute if entity @s[scores={Dialog=120}] positioned ~-21.5 ~14 ~ run function luigis_mansion:spawn_entities/rocking_horse/small
-execute if entity @s[scores={Dialog=120}] run data modify storage luigis_mansion:data entity set value {tags:["intro"]}
+execute if entity @s[scores={Dialog=120}] run data modify storage luigis_mansion:data entity set value {tags:["intro","attack"],room:73}
 execute if entity @s[scores={Dialog=120}] positioned ~-21.5 ~9 ~-3.5 run function luigis_mansion:spawn_entities/rocking_horse/small
-execute if entity @s[scores={Dialog=120}] run data modify storage luigis_mansion:data entity set value {tags:["intro"]}
+execute if entity @s[scores={Dialog=120}] run data modify storage luigis_mansion:data entity set value {tags:["intro","attack"],room:73}
 execute if entity @s[scores={Dialog=120}] positioned ~-23.5 ~14 ~5.5 run function luigis_mansion:spawn_entities/rocking_horse/small
-execute if entity @s[scores={Dialog=120}] run data modify storage luigis_mansion:data entity set value {tags:["intro"]}
+execute if entity @s[scores={Dialog=120}] run data modify storage luigis_mansion:data entity set value {tags:["intro","attack"],room:73}
 execute if entity @s[scores={Dialog=120}] positioned ~-23.5 ~14 ~-5.5 run function luigis_mansion:spawn_entities/rocking_horse/small
-execute if entity @s[scores={Dialog=120}] run data modify storage luigis_mansion:data entity set value {tags:["intro"]}
+execute if entity @s[scores={Dialog=120}] run data modify storage luigis_mansion:data entity set value {tags:["intro","attack"],room:73}
 execute if entity @s[scores={Dialog=120}] positioned ~-29.5 ~9 ~3.5 run function luigis_mansion:spawn_entities/rocking_horse/small
-execute if entity @s[scores={Dialog=120}] run data modify storage luigis_mansion:data entity set value {tags:["intro"]}
+execute if entity @s[scores={Dialog=120}] run data modify storage luigis_mansion:data entity set value {tags:["intro","attack"],room:73}
 execute if entity @s[scores={Dialog=120}] positioned ~-29.5 ~9 ~-1.5 run function luigis_mansion:spawn_entities/rocking_horse/small
-execute if entity @s[scores={Dialog=120}] run data modify storage luigis_mansion:data entity set value {tags:["intro"]}
+execute if entity @s[scores={Dialog=120}] run data modify storage luigis_mansion:data entity set value {tags:["intro","attack"],room:73}
 execute if entity @s[scores={Dialog=120}] positioned ~-34.5 ~12 ~3.5 run function luigis_mansion:spawn_entities/rocking_horse/small
-execute if entity @s[scores={Dialog=120}] run data modify storage luigis_mansion:data entity set value {tags:["intro"]}
+execute if entity @s[scores={Dialog=120}] run data modify storage luigis_mansion:data entity set value {tags:["intro","attack"],room:73}
 execute if entity @s[scores={Dialog=120}] positioned ~-34.5 ~12 ~-1.5 run function luigis_mansion:spawn_entities/rocking_horse/small
-execute if entity @s[scores={Dialog=120}] run data modify storage luigis_mansion:data entity set value {tags:["intro"]}
+execute if entity @s[scores={Dialog=120}] run data modify storage luigis_mansion:data entity set value {tags:["intro","attack"],room:73}
 execute if entity @s[scores={Dialog=120}] positioned ~-30.5 ~10 ~1.5 run function luigis_mansion:spawn_entities/rocking_horse/small
-execute if entity @s[scores={Dialog=120}] run data modify storage luigis_mansion:data entity set value {tags:["intro"]}
+execute if entity @s[scores={Dialog=120}] run data modify storage luigis_mansion:data entity set value {tags:["intro","attack"],room:73}
 execute if entity @s[scores={Dialog=120}] positioned ~-30.5 ~10 ~-3.5 run function luigis_mansion:spawn_entities/rocking_horse/small
-execute if entity @s[scores={Dialog=120}] run scoreboard players set @e[tag=rocking_horse,tag=intro] Room 73
 execute if entity @s[scores={Dialog=140}] as @a[tag=same_room] run function luigis_mansion:entities/player/animation/set/scare/bash_no_move
 execute if entity @s[scores={Dialog=140..629}] run scoreboard players set @a[tag=same_room,scores={IdleTime=-21}] IdleTime -22
 execute if entity @s[scores={Dialog=330}] run function luigis_mansion:old_entities/ghost/turn_visible_big

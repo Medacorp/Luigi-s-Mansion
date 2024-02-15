@@ -1,1 +1,0 @@
-function luigis_mansion:old_entities/gold_mouse/normal/fortune_tellers_room

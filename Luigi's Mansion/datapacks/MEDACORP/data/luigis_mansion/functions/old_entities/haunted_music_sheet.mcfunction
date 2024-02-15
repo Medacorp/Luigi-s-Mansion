@@ -1,1 +1,0 @@
-execute if entity @s[tag=haunted_music_sheet] run function luigis_mansion:old_entities/haunted_music_sheet/tick

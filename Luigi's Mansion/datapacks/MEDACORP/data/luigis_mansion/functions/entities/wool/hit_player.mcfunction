@@ -1,0 +1,2 @@
+execute as @e[tag=game_boy_horror_location,distance=..0.7] run function luigis_mansion:entities/game_boy_horror_location/bring_player_back
+execute as @a[tag=!spectator,scores={Invulnerable=0},distance=..0.7] run function luigis_mansion:entities/player/animation/set/knockback/medium

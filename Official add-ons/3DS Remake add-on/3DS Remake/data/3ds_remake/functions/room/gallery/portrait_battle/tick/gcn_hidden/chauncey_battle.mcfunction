@@ -1,3 +1,3 @@
-teleport @e[nbt={ArmorItems:[{tag:{namespace:"luigis_mansion",id:"chauncey"}}]},tag=!intro_done] 792.0 20 -48.0
-execute as @e[nbt={ArmorItems:[{tag:{namespace:"luigis_mansion",id:"chauncey"}}]},tag=!intro_done] unless entity @s[scores={Dialog=330}] unless entity @s[scores={Dialog=669}] run scoreboard players set @s Dialog 329
-scoreboard players set @e[nbt={ArmorItems:[{tag:{namespace:"luigis_mansion",id:"chauncey"}}]},tag=!intro_done,scores={Dialog=330}] Dialog 669
+teleport @e[nbt={ArmorItems:[{tag:{luigis_mansion:{entity:{namespace:"luigis_mansion",id:"chauncey"}}}}]},tag=!intro_done] 792.0 20 -48.0
+execute as @e[nbt={ArmorItems:[{tag:{luigis_mansion:{entity:{namespace:"luigis_mansion",id:"chauncey"}}}}]},tag=!intro_done] unless entity @s[scores={Dialog=330}] unless entity @s[scores={Dialog=669}] run scoreboard players set @s Dialog 329
+scoreboard players set @e[nbt={ArmorItems:[{tag:{luigis_mansion:{entity:{namespace:"luigis_mansion",id:"chauncey"}}}}]},tag=!intro_done,scores={Dialog=330}] Dialog 669

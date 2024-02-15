@@ -1,1 +1,0 @@
-execute if entity @s[tag=mouse] if score #firstRun Selected matches 1 as @a[tag=killer,limit=1] run function luigis_mansion:old_entities/ghost/exterminate

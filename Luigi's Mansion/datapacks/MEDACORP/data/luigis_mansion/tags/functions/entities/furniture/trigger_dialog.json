@@ -1,6 +1,6 @@
 {
 	"values": [
-        "luigis_mansion:old_entities/furniture/normal",
-        "luigis_mansion:old_entities/furniture/hidden"
+        "luigis_mansion:entities/furniture/normal",
+        "luigis_mansion:entities/furniture/hidden"
 	]
 }

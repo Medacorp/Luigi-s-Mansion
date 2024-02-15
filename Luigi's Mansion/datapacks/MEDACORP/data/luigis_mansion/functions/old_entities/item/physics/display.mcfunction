@@ -1,1 +1,0 @@
-execute at @s[tag=display] run function luigis_mansion:old_entities/item/physics_display

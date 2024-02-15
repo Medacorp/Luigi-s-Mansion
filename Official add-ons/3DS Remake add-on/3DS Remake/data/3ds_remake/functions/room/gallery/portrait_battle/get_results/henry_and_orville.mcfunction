@@ -1,4 +1,4 @@
-function luigis_mansion:old_entities/portrificationizing_ghost/portrait/henry_and_orville
+function luigis_mansion:entities/portrificationizing_ghost/portrait/henry_and_orville
 execute unless data storage luigis_mansion:data current_state.current_data.portrait_ghosts.luigis_mansion.henry_and_orville{rank:-1b} run data modify storage 3ds_remake:data portrait_ghost set from storage 3ds_remake:data current_state.portrait_ghosts_defeated_in.henry_and_orville
 execute unless data storage luigis_mansion:data current_state.current_data.portrait_ghosts.luigis_mansion.henry_and_orville{rank:-1b} run function 3ds_remake:room/gallery/portrait_battle/save_results/save
 execute unless data storage luigis_mansion:data current_state.current_data.portrait_ghosts.luigis_mansion.henry_and_orville{rank:-1b} run data modify storage 3ds_remake:data current_state.portrait_ghosts_defeated_in.henry_and_orville set from storage 3ds_remake:data new_portrait_ghost

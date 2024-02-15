@@ -1,3 +1,0 @@
-execute if score #mansion_type Selected matches 1 if entity @s[scores={Path=1}] run function luigis_mansion:old_entities/wool/hidden/1
-execute if score #mansion_type Selected matches 1 if entity @s[scores={Path=2}] run function luigis_mansion:old_entities/wool/hidden/2
-execute if score #mansion_type Selected matches 1 if entity @s[scores={Path=3}] run function luigis_mansion:old_entities/wool/hidden/3

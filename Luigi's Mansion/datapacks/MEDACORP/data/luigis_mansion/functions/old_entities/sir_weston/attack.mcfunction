@@ -1,4 +1,4 @@
-summon minecraft:marker ^ ^-0.6 ^1 {CustomName:'{"type":"translatable","translate":"luigis_mansion:entity.ice_spike"}',Tags:["moving_ice","this_entity"],data:{entity:{namespace:"luigis_mansion",id:"moving_ice"}}}
-execute positioned ^ ^-0.6 ^1 facing entity @s feet rotated ~ 0 run teleport @e[tag=this_entity,limit=1] ~ ~ ~ ~ ~
-scoreboard players operation @e[tag=this_entity,limit=1] Owner = @s GhostNr
-tag @e[tag=this_entity,limit=1] remove this_entity
+data modify storage luigis_mansion:data entity set value {damage:{}}
+data modify storage luigis_mansion:data entity.damage set from entity @s data.damage
+execute store result storage luigis_mansion:data entity.owner run scoreboard players get @s GhostNr
+execute positioned ^ ^-0.6 ^1 run function luigis_mansion:spawn_entities/ice_spikes_spawner

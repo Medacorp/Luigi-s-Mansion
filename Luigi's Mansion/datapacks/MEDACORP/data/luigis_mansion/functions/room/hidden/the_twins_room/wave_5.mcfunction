@@ -1,7 +1,7 @@
-execute positioned 739 22 -19 run tag @e[nbt={ArmorItems:[{tag:{namespace:"luigis_mansion",id:"speedy_spirit"}}]},distance=..0.7,limit=1] add remove_from_existence
-execute unless data storage luigis_mansion:data current_state.current_data{money_spawned:["the_twins_room_speedy_spirit"]} run function luigis_mansion:old_entities/speedy_spirit/give_money/silver_diamond
+execute positioned 739 22 -19 run tag @e[nbt={ArmorItems:[{tag:{luigis_mansion:{entity:{namespace:"luigis_mansion",id:"speedy_spirit"}}}}]},distance=..0.7,limit=1] add remove_from_existence
+execute unless data storage luigis_mansion:data current_state.current_data{money_spawned:["the_twins_room_speedy_spirit"]} run function luigis_mansion:entities/speedy_spirit/give_money/silver_diamond
 execute unless data storage luigis_mansion:data current_state.current_data{money_spawned:["the_twins_room_speedy_spirit"]} run data modify storage luigis_mansion:data entity.loot.name set value "the_twins_room_speedy_spirit"
-execute unless data storage luigis_mansion:data current_state.current_data{money_spawned:["the_twins_room_speedy_spirit"]} positioned 739 22 -19 unless entity @e[nbt={ArmorItems:[{tag:{namespace:"luigis_mansion",id:"speedy_spirit"}}]},distance=..0.7,limit=1] run function luigis_mansion:spawn_entities/ghost/speedy_spirit
+execute unless data storage luigis_mansion:data current_state.current_data{money_spawned:["the_twins_room_speedy_spirit"]} positioned 739 22 -19 unless entity @e[nbt={ArmorItems:[{tag:{luigis_mansion:{entity:{namespace:"luigis_mansion",id:"speedy_spirit"}}}}]},distance=..0.7,limit=1] run function luigis_mansion:spawn_entities/ghost/speedy_spirit
 data remove storage luigis_mansion:data entity
 setblock 738 20 -25 minecraft:barrier
 setblock 742 20 -31 minecraft:barrier

@@ -1,0 +1,3 @@
+execute if entity @s[tag=frame] run function luigis_mansion:animations/fake_door/frame with storage luigis_mansion:data ghost.animation
+execute if entity @s[tag=right] run function luigis_mansion:animations/fake_door/right with storage luigis_mansion:data ghost.animation
+execute if entity @s[tag=left] run function luigis_mansion:animations/fake_door/left with storage luigis_mansion:data ghost.animation

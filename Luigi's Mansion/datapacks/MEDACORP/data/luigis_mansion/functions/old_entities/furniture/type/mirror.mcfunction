@@ -1,1 +1,0 @@
-execute if entity @s[tag=mirror,tag=reflects_entities] run function luigis_mansion:old_entities/furniture/type/tick/mirror

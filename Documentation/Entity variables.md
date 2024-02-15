@@ -21,7 +21,6 @@ entity:{
     appear_type:"<type>", //Ghost appear type to use, differs per ghost, see IDs in use for valid values.
     attack_type:"<type>", //Ghost attack type to use, differs per ghost, see IDs in use for valid values.
     second_flee_damage:X, //How much damage this ghost can take in one suction before it enters its second flee state, escaping 2.5 seconds later.
-    path:X, //Path number to use in a room.
     health:X, //Health at spawn. Only applies to ghost types that have health.
     loot:{ //Loot this ghost drops upon defeat.
         drop_at_0:1b, //When set, spawns the loot the moment health drops to 0, otherwise spawns it the moment the ghost is reeled in. Only applies to ghost types that have health.
@@ -48,6 +47,7 @@ entity:{
 	affected_by:["<method>"], //The methods this portrait ghost is affected by aside from vacuuming. Allowed values: dust, fire, water, ice. Default = none.
     
     //Non-default setup
+    room:X, //Room number that this entity is in. Default = 0.
     owner:X, //The GhostNr of the ghost that owns this projectile.
 	training_room_score:X, //Score granted to the one who reeled in the ghost in the training room.
     door:{ //Required for and used only by fake doors
@@ -65,7 +65,6 @@ entity:{
     silent:1b, //When set, makes no spawn sound for this item. Default = 0b.
     id:"boo_b_hatch", //ID of this boo. Default = none.
     name:'{"translate":"..."}', //Name of this boo. Default = '{"translate":"luigis_mansion:entity.boo"}'
-    room:X, //Room number that this boo is in. Default = 0
     can_attack:1b, //Whether or not this boo can attack. Default = 0b
     show_health:1b, //Whether or not this boo shows health and is affected by the poltergust. Default = 1b
     happy:1b, //Whether or not this toad is happy and not crying. Default = 0b

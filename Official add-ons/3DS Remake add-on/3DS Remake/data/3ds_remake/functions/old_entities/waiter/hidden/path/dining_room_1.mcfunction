@@ -1,1 +1,0 @@
-function luigis_mansion:old_entities/waiter/normal/path/dining_room_1

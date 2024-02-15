@@ -1,0 +1,4 @@
+execute unless entity @a[distance=..1.5,tag=!spectator,tag=player,tag=vacuuming] facing entity @p[tag=!spectator,tag=player,tag=vacuuming] feet if block ^ ^ ^0.3 #luigis_mansion:all_ignore run teleport @s ^ ^ ^0.3 ~ ~
+execute unless entity @a[distance=..1.5,tag=!spectator,tag=player,tag=vacuuming] facing entity @p[tag=!spectator,tag=player,tag=vacuuming] feet unless block ^ ^ ^0.3 #luigis_mansion:all_ignore rotated ~ 0 if block ^ ^ ^0.3 #luigis_mansion:all_ignore run teleport @s ^ ^ ^0.3 ~ ~
+execute unless entity @a[distance=..1.5,tag=!spectator,tag=player,tag=vacuuming] facing entity @p[tag=!spectator,tag=player,tag=vacuuming] feet unless block ^ ^ ^0.3 #luigis_mansion:all_ignore rotated ~ 0 unless block ^ ^ ^0.3 #luigis_mansion:all_ignore run teleport @s ~ ~ ~ ~ ~
+execute at @p[distance=..1.5,tag=!spectator,tag=player,tag=vacuuming] positioned ~ ~0.5 ~ run teleport @s ^ ^ ^0.2 ~ ~

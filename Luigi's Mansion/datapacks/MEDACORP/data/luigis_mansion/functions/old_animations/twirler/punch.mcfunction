@@ -1,2 +1,0 @@
-execute if score #mirrored Selected matches 0 run function luigis_mansion:old_animations/twirler/normal/punch
-execute if score #mirrored Selected matches 1 run function luigis_mansion:old_animations/twirler/mirrored/punch

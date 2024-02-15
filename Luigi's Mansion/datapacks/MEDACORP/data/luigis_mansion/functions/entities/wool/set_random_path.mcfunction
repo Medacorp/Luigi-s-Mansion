@@ -1,0 +1,4 @@
+data modify storage luigis_mansion:data macro set value {index:0,random_range:1}
+execute if data entity @s ArmorItems[3].tag.luigis_mansion.paths store result storage luigis_mansion:data macro.random_range int 1 run data get entity @s ArmorItems[3].tag.luigis_mansion.paths
+execute if data entity @s ArmorItems[3].tag.luigis_mansion.paths unless data storage luigis_mansion:data macro{random_range:1} run function luigis_mansion:entities/wool/select_random_index with storage luigis_mansion:data macro
+execute if data entity @s ArmorItems[3].tag.luigis_mansion.paths run function luigis_mansion:entities/wool/set_specific_task with storage luigis_mansion:data macro

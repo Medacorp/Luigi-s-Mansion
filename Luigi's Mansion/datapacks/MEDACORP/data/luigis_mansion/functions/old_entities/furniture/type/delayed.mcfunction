@@ -1,1 +1,0 @@
-execute if entity @s[tag=delayed] run function luigis_mansion:old_entities/furniture/type/tick/delayed

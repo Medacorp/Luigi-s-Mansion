@@ -1,4 +1,4 @@
-execute if predicate luigis_mansion:gold_mouse_chance unless data storage luigis_mansion:data current_state.current_data{money_spawned:["sealed_room_gold_mouse"]} run function luigis_mansion:old_entities/gold_mouse/give_money/silver_diamond
-execute if data storage luigis_mansion:data entity.loot run data modify storage luigis_mansion:data entity.loot.name set value "sealed_room_gold_mouse"
+execute if predicate luigis_mansion:gold_mouse_chance unless data storage luigis_mansion:data current_state.current_data{money_spawned:["sealed_room_gold_mouse"]} run data modify storage luigis_mansion:data entity set value {loot:{name:"sealed_room_gold_mouse"},paths:[{steps:[{wait:20,position:[695.5d,20.0d,82.5d]},{position:[701.5d,20.0d,83.5d]},{position:[701.5d,20.0d,90.5d]},{position:[699.5d,21.0d,92.5d]},{position:[696.5d,21.0d,94.5d]},{position:[696.5d,21.0d,98.5d]},{position:[694.5d,21.0d,98.5d]}]}]}
+execute if data storage luigis_mansion:data entity.loot run function luigis_mansion:entities/gold_mouse/give_money/silver_diamond
 execute if data storage luigis_mansion:data entity.loot positioned 695 20 82 run function luigis_mansion:spawn_entities/vacuumable/gold_mouse
 scoreboard players set #sealed_room Vacuumables 1

@@ -1,5 +1,5 @@
 execute unless data storage luigis_mansion:data {data_version:3} run function luigis_mansion:other/upgrade_path/root/v2.0
-data modify storage luigis_mansion:data {} merge value {data_version:4,memory:[],unique_id:{dancing_ghost_guy_couple:0,ghost:0,passive:0,elemental_source:0,reflection:0}}
+data modify storage luigis_mansion:data {} merge value {data_version:4,memory:[],unique_id:{dancing_ghost_guy_couple:0,ghost:0,passive:0,elemental_source:0,reflection:0,ice_spikes:0}}
 execute if data storage luigis_mansion:data luigi_colors[-1] run function luigis_mansion:other/upgrade_path/root/convert_color_to_memory
 data remove storage luigis_mansion:data luigi_colors
 execute if data storage luigis_mansion:data inventories[-1] run function luigis_mansion:other/upgrade_path/root/convert_inventory_to_memory

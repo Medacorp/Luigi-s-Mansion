@@ -1,1 +1,0 @@
-execute if entity @s[tag=portrificationizing_ghost,tag=!remove_from_existence] run function luigis_mansion:old_entities/portrificationizing_ghost/tick

@@ -4,5 +4,3 @@ execute if data storage luigis_mansion:data entity{can_attack:1b} run tag @e[tag
 execute if data storage luigis_mansion:data entity{show_health:0b} run tag @e[tag=this_entity,limit=1] remove show_health
 execute if data storage luigis_mansion:data entity{show_health:0b} run tag @e[tag=this_entity,limit=1] remove affected_by_vacuum
 execute if data storage luigis_mansion:data entity{show_health:0b} run tag @e[tag=this_entity,limit=1] remove affected_by_ice
-scoreboard players set @e[tag=this_entity,limit=1] Room 0
-execute store result score @e[tag=this_entity,limit=1] Room run data get storage luigis_mansion:data entity.room
