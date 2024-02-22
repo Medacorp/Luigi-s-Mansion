@@ -1,0 +1,1 @@
+$function $(namespace):entities/melody_pianissima/reset/$(id)

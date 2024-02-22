@@ -1,0 +1,1 @@
+$function $(namespace):entities/uncle_grimmly/reset/$(id)

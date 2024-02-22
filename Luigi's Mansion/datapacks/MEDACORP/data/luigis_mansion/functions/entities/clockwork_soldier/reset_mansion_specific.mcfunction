@@ -1,0 +1,1 @@
+$function $(namespace):entities/clockwork_soldier/reset/$(id)

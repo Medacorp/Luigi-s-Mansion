@@ -1,0 +1,1 @@
+function luigis_mansion:entities/boolossus/at_death/normal

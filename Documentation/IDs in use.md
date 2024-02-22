@@ -48,6 +48,7 @@ Ghost appear types:
 
 ```
 Ghost                             | Types              | Default
+luigis_mansion:black_bogmire      | none, normal       | normal
 luigis_mansion:blue_blaze         | none, normal, beta | normal
 luigis_mansion:blue_twirler       | none, normal, beta | normal
 luigis_mansion:bowling_ghost      | none, normal       | normal
@@ -77,6 +78,7 @@ Ghost attack types:
 
 ```
 Ghost                             | Types                                | Default
+luigis_mansion:black_bogmire      | none                                 | none
 luigis_mansion:blue_blaze         | punch, basher, body_slam, earthquake | earthquake
 luigis_mansion:blue_twirler       | punch, basher, body_slam, earthquake | earthquake
 luigis_mansion:bowling_ghost      | throw_bowling_ball                   | throw_bowling_ball

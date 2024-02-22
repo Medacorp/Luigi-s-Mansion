@@ -1,0 +1,1 @@
+$function $(namespace):entities/vincent_van_gore/reset/$(id)

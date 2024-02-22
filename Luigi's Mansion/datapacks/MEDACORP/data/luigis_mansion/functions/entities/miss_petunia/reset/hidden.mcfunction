@@ -1,0 +1,1 @@
+function luigis_mansion:entities/miss_petunia/reset/normal

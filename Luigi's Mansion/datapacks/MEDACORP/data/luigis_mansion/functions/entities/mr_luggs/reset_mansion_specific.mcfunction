@@ -1,0 +1,1 @@
+$function $(namespace):entities/mr_luggs/reset/$(id)

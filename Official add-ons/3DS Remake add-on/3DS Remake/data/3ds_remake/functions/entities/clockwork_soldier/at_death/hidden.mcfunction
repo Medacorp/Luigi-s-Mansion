@@ -1,0 +1,4 @@
+execute if entity @s[scores={TopVacuumDamage=14000..},tag=blue] run data modify storage luigis_mansion:data current_state.current_data.portrait_ghosts.luigis_mansion.clockwork_soldiers.rank set value 3b
+execute if entity @s[scores={TopVacuumDamage=9000..13999},tag=blue] run data modify storage luigis_mansion:data current_state.current_data.portrait_ghosts.luigis_mansion.clockwork_soldiers.rank set value 2b
+execute if entity @s[scores={TopVacuumDamage=5000..8999},tag=blue] run data modify storage luigis_mansion:data current_state.current_data.portrait_ghosts.luigis_mansion.clockwork_soldiers.rank set value 1b
+execute if entity @s[scores={TopVacuumDamage=..4999},tag=blue] run data modify storage luigis_mansion:data current_state.current_data.portrait_ghosts.luigis_mansion.clockwork_soldiers.rank set value 0b

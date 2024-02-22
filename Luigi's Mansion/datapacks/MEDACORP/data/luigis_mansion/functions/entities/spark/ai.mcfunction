@@ -1,0 +1,2 @@
+execute if entity @s[tag=visible] run function luigis_mansion:entities/spark/ai/visible with entity @s data.entity
+execute if entity @s[tag=!visible] run function luigis_mansion:entities/spark/ai/invisible with entity @s data.entity

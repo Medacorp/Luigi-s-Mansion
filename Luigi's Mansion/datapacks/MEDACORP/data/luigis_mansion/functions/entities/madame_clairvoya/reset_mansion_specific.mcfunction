@@ -1,0 +1,1 @@
+$function $(namespace):entities/madame_clairvoya/reset/$(id)

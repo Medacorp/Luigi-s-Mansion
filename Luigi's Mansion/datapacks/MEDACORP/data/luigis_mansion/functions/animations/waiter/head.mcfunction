@@ -1,3 +1,3 @@
-teleport @s ^ ^-0.55 ^0.08
+teleport @s ^ ^ ^
 
 $execute at @s run function $(namespace):animations/waiter/$(id)/head

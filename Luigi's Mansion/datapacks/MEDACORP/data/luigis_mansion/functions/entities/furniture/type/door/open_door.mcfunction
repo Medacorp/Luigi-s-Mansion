@@ -21,3 +21,4 @@ data remove entity @s[scores={AnimationProgress=50..}] ArmorItems[3].tag.luigis_
 tag @s[scores={AnimationProgress=50..}] remove open_door
 tag @s[scores={AnimationProgress=50..}] remove forced_animation
 scoreboard players reset @s[scores={AnimationProgress=50..}] AnimationProgress
+execute store result entity @s[tag=forced_animation] ArmorItems[3].tag.luigis_mansion.initial_animation_progress int 1 run scoreboard players get @s AnimationProgress

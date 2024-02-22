@@ -1,0 +1,1 @@
+$function $(namespace):entities/biff_atlas/reset/$(id)

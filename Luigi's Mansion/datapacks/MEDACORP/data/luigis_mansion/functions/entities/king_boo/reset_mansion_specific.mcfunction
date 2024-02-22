@@ -1,0 +1,1 @@
+$function $(namespace):entities/king_boo/reset/$(id)

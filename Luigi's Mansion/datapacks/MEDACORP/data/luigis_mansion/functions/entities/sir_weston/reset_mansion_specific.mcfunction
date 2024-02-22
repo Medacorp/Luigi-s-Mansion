@@ -1,0 +1,1 @@
+$function $(namespace):entities/sir_weston/reset/$(id)

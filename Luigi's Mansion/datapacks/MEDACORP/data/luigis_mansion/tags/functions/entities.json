@@ -1,21 +1,15 @@
 {
 	"values": [
-        "luigis_mansion:old_entities/spark",
-        "luigis_mansion:old_entities/shining_ghost",
         "luigis_mansion:old_entities/boo",
         "luigis_mansion:old_entities/boo_marker",
         "luigis_mansion:old_entities/hidden_boo",
 
-        "luigis_mansion:old_entities/neville",
-        "luigis_mansion:old_entities/lydia",
-        "luigis_mansion:old_entities/chauncey",
         "luigis_mansion:old_entities/floating_whirlindas",
         "luigis_mansion:old_entities/shivers",
         "luigis_mansion:old_entities/melody_pianissima",
         "luigis_mansion:old_entities/mr_luggs",
         "luigis_mansion:old_entities/spooky",
         "luigis_mansion:old_entities/bogmire",
-        "luigis_mansion:old_entities/black_bogmire",
         "luigis_mansion:old_entities/biff_atlas",
         "luigis_mansion:old_entities/miss_petunia",
         "luigis_mansion:old_entities/nana",

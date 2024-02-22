@@ -1,3 +1,4 @@
+scoreboard players set @s TargetTask 0
 scoreboard players add @s SpawnTime 1
 execute at @s[tag=!bounce] run teleport @s ~ ~-0.1 ~
 execute at @s[tag=bounce] if block ~ ~0.8 ~ #luigis_mansion:item_pull_ignore run teleport @s ~ ~0.1 ~

@@ -1,0 +1,1 @@
+$function $(namespace):entities/slim_bankshot/reset/$(id)

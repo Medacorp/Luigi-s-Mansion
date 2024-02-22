@@ -1,0 +1,1 @@
+function luigis_mansion:entities/king_boo/ai/mansion/normal

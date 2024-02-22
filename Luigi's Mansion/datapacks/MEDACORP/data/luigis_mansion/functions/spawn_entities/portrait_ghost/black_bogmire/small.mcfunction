@@ -1,4 +1,4 @@
-summon minecraft:marker ~ ~ ~ {CustomName:'{"type":"translatable","translate":"luigis_mansion:entity.black_bogmire"}',Tags:["affected_by_vacuum","ghost","ground_bound","new_black_bogmire","this_entity"],data:{entity:{namespace:"luigis_mansion",id:"black_bogmire"}}}
+summon minecraft:marker ~ ~ ~ {CustomName:'{"type":"translatable","translate":"luigis_mansion:entity.black_bogmire"}',Tags:["affected_by_vacuum","ghost","ground_bound","this_entity"],data:{entity:{namespace:"luigis_mansion",id:"black_bogmire"}}}
 summon minecraft:armor_stand ~ ~ ~ {CustomName:'{"type":"translatable","translate":"luigis_mansion:entity.black_bogmire"}',Invisible:1b,NoGravity:1b,Marker:1b,CustomNameVisible:0b,Invulnerable:1b,ArmorItems:[{},{},{},{id:"minecraft:diamond_pickaxe",Count:1b,tag:{Unbreakable:1b,Damage:1,CustomModelData:101}}],Pose:{Head:[0.0f,0.0f,0.01f]},Tags:["model_piece","bogmire_model","found_owner","head","this_entity"],DisabledSlots:2039583}
 summon minecraft:armor_stand ~ ~ ~ {CustomName:'{"type":"translatable","translate":"luigis_mansion:entity.black_bogmire"}',Invisible:1b,NoGravity:1b,Marker:1b,CustomNameVisible:0b,Invulnerable:1b,ArmorItems:[{},{},{},{id:"minecraft:diamond_pickaxe",Count:1b,tag:{Unbreakable:1b,Damage:2,CustomModelData:101,luigis_mansion:{mirror:{tag:{Damage:3}}}}}],Pose:{Head:[0.0f,0.0f,0.01f]},Tags:["model_piece","bogmire_model","found_owner","right_arm","this_entity"],DisabledSlots:2039583}
 summon minecraft:armor_stand ~ ~ ~ {CustomName:'{"type":"translatable","translate":"luigis_mansion:entity.black_bogmire"}',Invisible:1b,NoGravity:1b,Marker:1b,CustomNameVisible:0b,Invulnerable:1b,ArmorItems:[{},{},{},{id:"minecraft:diamond_pickaxe",Count:1b,tag:{Unbreakable:1b,Damage:3,CustomModelData:101,luigis_mansion:{mirror:{tag:{Damage:2}}}}}],Pose:{Head:[0.0f,0.0f,0.01f]},Tags:["model_piece","bogmire_model","found_owner","left_arm","this_entity"],DisabledSlots:2039583}
@@ -20,6 +20,7 @@ scoreboard players set @e[tag=this_entity,limit=1] Sound 0
 scoreboard players set @e[tag=this_entity,limit=1] EntitySizeWidth 10
 scoreboard players set @e[tag=this_entity,limit=1] EntitySizeHeight 18
 scoreboard players set @e[tag=this_entity,limit=1] EntityYOffset 14
+execute unless data storage luigis_mansion:data entity{appear_type:"none"} run tag @e[tag=this_entity,limit=1] add appear
 function luigis_mansion:spawn_entities/setup/default
 tag @e[tag=this_entity,limit=1] remove this_entity
 data remove storage luigis_mansion:data entity

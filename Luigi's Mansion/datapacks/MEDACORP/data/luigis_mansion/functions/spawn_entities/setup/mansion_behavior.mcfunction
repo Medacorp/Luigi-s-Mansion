@@ -1,0 +1,3 @@
+data modify entity @e[tag=this_entity,limit=1] data.mansion set value {namespace:"luigis_mansion",id:"empty"}
+execute if data storage luigis_mansion:data entity.mansion.namespace run data modify entity @e[tag=this_entity,limit=1] data.mansion.namespace set from storage luigis_mansion:data entity.mansion.namespace
+execute if data storage luigis_mansion:data entity.mansion.id run data modify entity @e[tag=this_entity,limit=1] data.mansion.id set from storage luigis_mansion:data entity.mansion.id

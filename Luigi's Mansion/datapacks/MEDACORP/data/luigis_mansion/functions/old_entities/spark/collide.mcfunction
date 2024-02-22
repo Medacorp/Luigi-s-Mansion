@@ -1,2 +1,0 @@
-advancement grant @a[tag=!spectator,scores={Invulnerable=0},distance=..0.7] only luigis_mansion:vanilla/waluigi_pinball/spark
-execute if entity @a[tag=!spectator,scores={Invulnerable=0},distance=..0.7] run tag @s add explode

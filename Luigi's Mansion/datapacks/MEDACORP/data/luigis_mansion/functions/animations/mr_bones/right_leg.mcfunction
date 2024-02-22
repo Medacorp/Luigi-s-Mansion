@@ -1,3 +1,3 @@
-teleport @s ^-0.25 ^-0.69 ^-0.08
+teleport @s ^ ^-0.2 ^
 
 $execute at @s run function $(namespace):animations/mr_bones/$(id)/right_leg

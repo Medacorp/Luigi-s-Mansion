@@ -1,3 +1,3 @@
-teleport @s ^-0.25 ^-0.69 ^-0.08
+teleport @s ^-0.46 ^-0.2 ^
 
 $execute at @s run function $(namespace):animations/lydia/$(id)/right_arm

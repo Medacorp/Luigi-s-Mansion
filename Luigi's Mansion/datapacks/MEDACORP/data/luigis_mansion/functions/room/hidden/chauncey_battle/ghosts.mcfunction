@@ -1,2 +1,3 @@
 execute if score #chauncey_battle Wave matches 1 unless entity @e[tag=ghost,scores={Room=73},tag=!optional_ghost] run function luigis_mansion:room/hidden/chauncey_battle/clear
+execute if score #chauncey_battle Wave matches 1 run tag @e[tag=ghost,scores={Room=73},tag=vanish] add disappear
 execute unless data storage luigis_mansion:data current_state.current_data.portrait_ghosts.luigis_mansion.chauncey{health:0} unless score #chauncey_battle Wave matches 1..99 run function luigis_mansion:room/hidden/chauncey_battle/wave_1

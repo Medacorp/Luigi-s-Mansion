@@ -1,0 +1,1 @@
+$function $(namespace):entities/miss_petunia/reset/$(id)

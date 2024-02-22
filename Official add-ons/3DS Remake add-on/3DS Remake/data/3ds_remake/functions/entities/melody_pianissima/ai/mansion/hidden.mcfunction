@@ -1,0 +1,1 @@
+function luigis_mansion:entities/melody_pianissima/ai/mansion/normal

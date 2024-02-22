@@ -1,2 +1,0 @@
-execute if score #mirrored Selected matches 0 run function luigis_mansion:old_animations/chauncey/normal/dizzy
-execute if score #mirrored Selected matches 1 run function luigis_mansion:old_animations/chauncey/mirrored/dizzy

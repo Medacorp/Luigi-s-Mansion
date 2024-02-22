@@ -1,2 +1,2 @@
-execute if score #mirrored Selected matches 0 run function luigis_mansion:old_animations/furniture/door/shake/normal/left
-execute if score #mirrored Selected matches 1 run function luigis_mansion:old_animations/furniture/door/shake/mirrored/left
+execute if score #mirrored Selected matches 0 run function luigis_mansion:animations/furniture/door/shake/normal/left
+execute if score #mirrored Selected matches 1 run function luigis_mansion:animations/furniture/door/shake/mirrored/left

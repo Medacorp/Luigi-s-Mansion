@@ -1,0 +1,2 @@
+execute if entity @s[tag=!split] store result storage luigis_mansion:data current_state.current_data.portrait_ghosts.luigis_mansion.boolossus.health int 1 run scoreboard players get @s Health
+execute if entity @s[tag=split] store result storage luigis_mansion:data current_state.current_data.portrait_ghosts.luigis_mansion.boolossus.health int 1 if entity @e[tag=boolossus,tag=exact_same_room,tag=!dead]

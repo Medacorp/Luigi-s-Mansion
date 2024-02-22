@@ -1,4 +1,4 @@
-data modify storage luigis_mansion:data entity set value {scan_message:{sender:"me",message:'{"type":"translatable","translate":"luigis_mansion:message.nana.scan"}',plural_message:'{"type":"translatable","translate":"luigis_mansion:message.nana.scan.more"}'}}
+data modify storage luigis_mansion:data entity set value {mansion:{namespace:"3ds_remake",id:"hidden"},scan_message:{sender:"me",message:'{"type":"translatable","translate":"luigis_mansion:message.nana.scan"}',plural_message:'{"type":"translatable","translate":"luigis_mansion:message.nana.scan.more"}'}}
 execute positioned 657 20 -10.0 rotated -60 0 run function luigis_mansion:spawn_entities/portrait_ghost/nana
 data modify storage luigis_mansion:data entity set value {paths:[{loop:1b,steps:[{position:[658.5d,20.0d,-12.5d]},{position:[657.5d,20.0d,-14.5d]},{position:[656.5d,20.0d,-11.5d]},{position:[658.5d,20.0d,-14.5d]},{position:[656.5d,20.0d,-11.5d]},{position:[657.5d,20.0d,-14.5d]}]}]}
 execute positioned 659.7 21.5 -11.7 run function luigis_mansion:spawn_entities/ball/wool/pink

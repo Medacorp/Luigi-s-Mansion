@@ -1,0 +1,2 @@
+execute store result storage luigis_mansion:data current_state.current_data.portrait_ghosts.luigis_mansion.lydia.health int 1 run scoreboard players operation @s LastHealth = @s Health
+execute store result storage luigis_mansion:data current_state.current_data.portrait_ghosts.luigis_mansion.lydia.top_vacuum_damage int 1 run scoreboard players get @s TopVacuumDamage

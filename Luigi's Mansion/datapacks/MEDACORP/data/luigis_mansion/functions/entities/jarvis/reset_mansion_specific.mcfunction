@@ -1,0 +1,1 @@
+$function $(namespace):entities/jarvis/reset/$(id)

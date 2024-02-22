@@ -52,8 +52,8 @@ execute if entity @s[scores={Dialog=1898}] as @a[tag=same_room] run function lui
 execute if entity @s[scores={Dialog=1898}] run teleport @a[tag=same_room,gamemode=!spectator] 751.0 11 9.0
 tag @s[scores={Dialog=1898}] add dead
 
-execute at @s[scores={Dialog=40..45}] run function luigis_mansion:old_animations/boo/taunt
-execute at @s[scores={Dialog=1506..1511}] run function luigis_mansion:old_animations/boo/taunt
-execute at @s[scores={Dialog=1394..1464}] run function luigis_mansion:old_animations/boo/hurt
-execute at @s[scores={Dialog=1828..}] run function luigis_mansion:old_animations/boo/hurt
-execute at @s unless entity @s[scores={Dialog=40..45}] unless entity @s[scores={Dialog=1394..1464}] unless entity @s[scores={Dialog=1506..1511}] unless entity @s[scores={Dialog=1828..}] run function luigis_mansion:old_animations/boo/idle
+data remove entity @s data.animation
+data modify entity @s[scores={Dialog=40..45}] data.animation set value {namespace:"luigis_mansion",id:"taunt"}
+data modify entity @s[scores={Dialog=1394..1464}] data.animation set value {namespace:"luigis_mansion",id:"hurt"}
+data modify entity @s[scores={Dialog=1506..1511}] data.animation set value {namespace:"luigis_mansion",id:"taunt"}
+data modify entity @s[scores={Dialog=1828..}] data.animation set value {namespace:"luigis_mansion",id:"hurt"}

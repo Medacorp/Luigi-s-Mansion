@@ -1,0 +1,1 @@
+$function $(namespace):entities/sue_pea/reset/$(id)

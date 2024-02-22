@@ -1,0 +1,1 @@
+$function $(namespace):entities/spooky/reset/$(id)

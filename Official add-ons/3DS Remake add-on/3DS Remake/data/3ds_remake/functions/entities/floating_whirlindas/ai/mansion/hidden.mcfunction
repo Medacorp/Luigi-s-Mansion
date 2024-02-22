@@ -1,0 +1,1 @@
+function luigis_mansion:entities/floating_whirlindas/ai/mansion/normal

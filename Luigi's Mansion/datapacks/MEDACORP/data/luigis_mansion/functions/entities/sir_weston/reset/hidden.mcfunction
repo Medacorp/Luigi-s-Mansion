@@ -1,0 +1,1 @@
+function luigis_mansion:entities/sir_weston/reset/normal
