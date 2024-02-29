@@ -1,0 +1,2 @@
+execute unless score #mirrored Selected matches 1 run function 3ds_remake:animations/boo/laugh_up/normal/right_arm
+execute if score #mirrored Selected matches 1 run function 3ds_remake:animations/boo/laugh_up/mirrored/right_arm

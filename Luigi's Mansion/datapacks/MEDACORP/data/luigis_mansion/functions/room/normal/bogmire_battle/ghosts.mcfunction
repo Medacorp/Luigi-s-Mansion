@@ -1,2 +1,4 @@
 execute if score #bogmire_battle Wave matches 1 unless entity @e[tag=ghost,scores={Room=74},tag=!optional_ghost] run function luigis_mansion:room/normal/bogmire_battle/clear
+execute if score #bogmire_battle Wave matches 1 run tag @e[tag=ghost,tag=portrait_ghost,scores={Room=74},tag=vanish] add disappear
+execute if score #bogmire_battle Wave matches 1 if entity @e[tag=ghost,tag=portrait_ghost,scores={Room=74},tag=dying] run tag @e[nbt={data:{entity:{namespace:"luigis_mansion",id:"black_bogmire"}}}] add remove_from_existence
 execute unless data storage luigis_mansion:data current_state.current_data.portrait_ghosts.luigis_mansion.bogmire{health:0} unless score #bogmire_battle Wave matches 1..99 run function luigis_mansion:room/normal/bogmire_battle/wave_1

@@ -4,7 +4,7 @@ $execute if entity @s[scores={ActionTime=1},tag=visible] run playsound $(namespa
 data modify entity @s[scores={ActionTime=1}] data.animation set value {namespace:"luigis_mansion",id:"vanish"}
 teleport @s[scores={ActionTime=1..2}] ~ ~0.4 ~
 teleport @s[scores={ActionTime=3..4}] ~ ~-0.4 ~
-execute if score #mirrored Selected matches 0 run teleport @s[scores={ActionTime=5..}] ~ ~0.3 ~ ~-8 ~
+execute unless score #mirrored Selected matches 1 run teleport @s[scores={ActionTime=5..}] ~ ~0.3 ~ ~-8 ~
 execute if score #mirrored Selected matches 1 run teleport @s[scores={ActionTime=5..}] ~ ~0.3 ~ ~8 ~
 execute at @s[scores={ActionTime=20}] run teleport @s ~ ~-4.3 ~
 tag @s[scores={ActionTime=20}] add disappear

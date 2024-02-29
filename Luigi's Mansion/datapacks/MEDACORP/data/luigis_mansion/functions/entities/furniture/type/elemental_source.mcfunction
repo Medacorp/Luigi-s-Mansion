@@ -1,6 +1,6 @@
 execute unless entity @s[scores={ElementalNr=-2147483648..}] run function luigis_mansion:entities/furniture/type/elemental_source/new_score
 scoreboard players operation #temp ElementalNr = @s ElementalNr
-execute as @e[nbt={ArmorItems:[{tag:{luigis_mansion:{entity:{namespace:"luigis_mansion",id:"elemental_ghost"}}}}]}] if score @s ElementalNr = #temp ElementalNr run tag @s add this_elemental_ghost
+execute as @e[nbt={data:{entity:{namespace:"luigis_mansion",id:"elemental_ghost"}}}] if score @s ElementalNr = #temp ElementalNr run tag @s add this_elemental_ghost
 
 execute if entity @s[tag=fire_elemental_source,tag=enabled] unless entity @s[tag=elemental_must_be_searched,scores={ActionTime=0..}] run function luigis_mansion:entities/furniture/type/elemental_source/fire
 execute if entity @s[tag=water_elemental_source,tag=enabled] unless entity @s[tag=elemental_must_be_searched,scores={ActionTime=0..}] run function luigis_mansion:entities/furniture/type/elemental_source/water

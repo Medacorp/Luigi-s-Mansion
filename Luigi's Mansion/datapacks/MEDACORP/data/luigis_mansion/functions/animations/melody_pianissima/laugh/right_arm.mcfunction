@@ -1,0 +1,2 @@
+execute unless score #mirrored Selected matches 1 run function luigis_mansion:animations/melody_pianissima/laugh/normal/right_arm
+execute if score #mirrored Selected matches 1 run function luigis_mansion:animations/melody_pianissima/laugh/mirrored/right_arm

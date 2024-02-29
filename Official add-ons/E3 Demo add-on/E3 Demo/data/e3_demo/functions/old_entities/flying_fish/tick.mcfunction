@@ -7,8 +7,8 @@ execute if entity @s[tag=dead] run teleport @s ~ -100 ~
 tag @s remove flee
 
 execute store result score #temp Room run scoreboard players get @s Room
-execute as @e[nbt={ArmorItems:[{tag:{luigis_mansion:{entity:{namespace:"e3_demo",id:"flying_fish"}}}}]},tag=visible] if score @s Room = #temp Room run scoreboard players add #temp ActionTime 1
-execute unless score #temp ActionTime matches 3.. unless entity @e[distance=..0.7,tag=same_room,tag=!spectator,tag=player,limit=1] positioned ~-0.05 ~ ~ unless entity @e[nbt={ArmorItems:[{tag:{luigis_mansion:{entity:{namespace:"e3_demo",id:"flying_fish"}}}}]},tag=visible,distance=..0.55] run tag @s add visible
+execute as @e[nbt={data:{entity:{namespace:"e3_demo",id:"flying_fish"}}},tag=visible] if score @s Room = #temp Room run scoreboard players add #temp ActionTime 1
+execute unless score #temp ActionTime matches 3.. unless entity @e[distance=..0.7,tag=same_room,tag=!spectator,tag=player,limit=1] positioned ~-0.05 ~ ~ unless entity @e[nbt={data:{entity:{namespace:"e3_demo",id:"flying_fish"}}},tag=visible,distance=..0.55] run tag @s add visible
 scoreboard players reset #temp ActionTime
 scoreboard players reset #temp Room
 

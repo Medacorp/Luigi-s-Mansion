@@ -1,7 +1,7 @@
 scoreboard players set @s[tag=!was_low_health] ActionTime 0
 scoreboard players add @s ActionTime 1
-execute if score #mirrored Selected matches 0 run data modify entity @s[scores={ActionTime=1},tag=!attack] Pose.Head[2] set value 40.001f
-execute if score #mirrored Selected matches 0 run data modify entity @s[scores={ActionTime=1},tag=flipped_gravity,tag=!attack] Pose.Head[2] set value -140.0f
+execute unless score #mirrored Selected matches 1 run data modify entity @s[scores={ActionTime=1},tag=!attack] Pose.Head[2] set value 40.001f
+execute unless score #mirrored Selected matches 1 run data modify entity @s[scores={ActionTime=1},tag=flipped_gravity,tag=!attack] Pose.Head[2] set value -140.0f
 execute if score #mirrored Selected matches 1 run data modify entity @s[scores={ActionTime=1},tag=!attack] Pose.Head[2] set value 0.001f
 execute if score #mirrored Selected matches 1 run data modify entity @s[scores={ActionTime=1},tag=flipped_gravity,tag=!attack] Pose.Head[2] set value -180.0f
 execute store result score #temp Time run data get entity @s Pose.Head[2] 4

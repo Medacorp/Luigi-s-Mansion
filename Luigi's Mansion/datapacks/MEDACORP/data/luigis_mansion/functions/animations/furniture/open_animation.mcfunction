@@ -1,0 +1,1 @@
+$function $(namespace):animations/furniture/open/$(id)

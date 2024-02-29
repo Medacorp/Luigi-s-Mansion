@@ -5,3 +5,4 @@ execute if entity @s[tag=body] run function luigis_mansion:animations/bowser/bod
 execute if entity @s[tag=right_leg] run function luigis_mansion:animations/bowser/right_leg with storage luigis_mansion:data ghost.animation
 execute if entity @s[tag=left_leg] run function luigis_mansion:animations/bowser/left_leg with storage luigis_mansion:data ghost.animation
 execute if entity @s[tag=tail] run function luigis_mansion:animations/bowser/tail with storage luigis_mansion:data ghost.animation
+execute if entity @s[tag=shadow] run function luigis_mansion:animations/bowser/shadow

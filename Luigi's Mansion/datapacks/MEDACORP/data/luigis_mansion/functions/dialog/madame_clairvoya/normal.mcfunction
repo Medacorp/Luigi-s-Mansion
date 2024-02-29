@@ -2,8 +2,7 @@ scoreboard players set #freeze_timer Selected 1
 execute if entity @a[scores={ClairvoyaChoice=1..},limit=1] run scoreboard players add @s[scores={Dialog=49..}] Dialog 1
 scoreboard players add @s[scores={Dialog=..48}] Dialog 1
 execute unless entity @s[scores={Dialog=1..}] run scoreboard players add @s Dialog 1
-tag @s[scores={Dialog=1}] add nod
-scoreboard players set @s[scores={Dialog=1}] AnimationProgress 0
+data modify entity @s[scores={Dialog=1}] data.animation set value {namespace:"luigis_mansion",id:"nod"}
 execute if entity @s[scores={Dialog=1..355}] as @a[tag=same_room,gamemode=!spectator,tag=!looking_at_map] run function luigis_mansion:entities/player/animation/set/idle
 execute if entity @s[scores={Dialog=1..49}] as @a[tag=same_room,tag=!spectator,tag=!looking_at_map] run function luigis_mansion:entities/player/animation/set/high_health_idle_no_sound
 execute if entity @s[scores={Dialog=1..356}] as @a[tag=same_room] run function luigis_mansion:other/music/set/talking_ghost
@@ -24,6 +23,3 @@ tag @s[scores={Dialog=356}] remove talk
 execute unless entity @e[tag=same_room,tag=!spectator,distance=..7,limit=1] run tag @s remove talk
 execute if entity @s[tag=!talk] as @a[tag=same_room] run function luigis_mansion:other/music/set/silence
 execute if entity @s[tag=!talk] run scoreboard players reset @a[scores={ClairvoyaChoice=0..}] ClairvoyaChoice
-scoreboard players set @s[tag=!talk] Dialog 0
-scoreboard players set @s[tag=!talk] AnimationProgress 0
-tag @s[tag=!talk] remove nod

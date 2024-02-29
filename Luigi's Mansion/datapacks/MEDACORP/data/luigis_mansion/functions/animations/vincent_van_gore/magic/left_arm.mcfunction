@@ -1,0 +1,2 @@
+execute unless score #mirrored Selected matches 1 run function luigis_mansion:animations/vincent_van_gore/magic/normal/left_arm
+execute if score #mirrored Selected matches 1 run function luigis_mansion:animations/vincent_van_gore/magic/mirrored/left_arm

@@ -8,6 +8,7 @@ function luigis_mansion:spawn_entities/setup/paths
 function luigis_mansion:spawn_entities/setup/spawn_time
 function luigis_mansion:spawn_entities/setup/rotation
 function luigis_mansion:spawn_entities/setup/loot
+function luigis_mansion:spawn_entities/setup/speed
 
 #interaction
 function luigis_mansion:spawn_entities/setup/owner

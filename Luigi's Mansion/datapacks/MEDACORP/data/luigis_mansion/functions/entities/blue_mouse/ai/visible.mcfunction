@@ -19,6 +19,6 @@ teleport @s[tag=flee] ~ ~-0.2 ~
 execute if entity @e[tag=same_room,tag=!spectator,tag=player,distance=..0.7,limit=1] if entity @s[tag=!dead,tag=!removed_from_existence] run function luigis_mansion:entities/blue_mouse/collide with entity @s data.entity
 
 execute if entity @s[tag=squeek] run function luigis_mansion:entities/blue_mouse/squeek with entity @s data.entity
-$execute if data entity @s data.path if entity @s[y_rotation=-45..45] if predicate $(namespace):$(id)/start_squeeking run tag @s add squeek
+$execute if data entity @s data.path if entity @s[y_rotation=-45..45] if predicate $(namespace):$(id)/start_squeeking_chance run tag @s add squeek
 
 execute unless data entity @s data.path.steps[0] run tag @s[tag=reached_target] remove visible

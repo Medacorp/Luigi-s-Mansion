@@ -1,4 +1,5 @@
 scoreboard players add @s TargetTime 1
+tag @s remove reached_target
 execute at @s[scores={TargetTime=1}] run function luigis_mansion:entities/ghost/target_task/initial_wander_direction
 scoreboard players set @s[scores={TargetTime=11..}] TargetTime 1
 execute at @s run function luigis_mansion:entities/ghost/move_forward

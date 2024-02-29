@@ -19,3 +19,5 @@ execute positioned ~ ~-1.85 ~ if entity @e[tag=rocking_chair,distance=..1,scores
 data modify entity @s[scores={Dialog=101..160}] data.animation set value {namespace:"luigis_mansion",id:"yawn"}
 data remove entity @s[scores={Dialog=101..160}] data.initial_animation_progress
 data remove entity @s[scores={Dialog=0..1}] data.animation
+
+execute if entity @e[tag=exact_same_room,tag=!spectator,tag=player,distance=..1.6,limit=1] run function luigis_mansion:entities/neville/collide

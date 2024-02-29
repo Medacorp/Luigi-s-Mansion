@@ -1,3 +1,4 @@
 data modify storage luigis_mansion:data entity set value {mansion:{namespace:"3ds_remake",id:"hidden"},scan_message:{sender:"me",message:'{"type":"translatable","translate":"luigis_mansion:message.miss_petunia.scan"}'}}
 execute positioned 651 21 23 rotated 0 0 run function luigis_mansion:spawn_entities/portrait_ghost/miss_petunia
+execute positioned 655.0 21 23 rotated 0 0 run function luigis_mansion:spawn_entities/showering_shadow
 scoreboard players set #bathroom_2 Wave 1

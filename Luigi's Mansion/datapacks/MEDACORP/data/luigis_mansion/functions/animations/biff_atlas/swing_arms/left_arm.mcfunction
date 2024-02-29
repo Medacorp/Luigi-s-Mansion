@@ -1,0 +1,2 @@
+execute unless score #mirrored Selected matches 1 run function luigis_mansion:animations/biff_atlas/swing_arms/normal/left_arm
+execute if score #mirrored Selected matches 1 run function luigis_mansion:animations/biff_atlas/swing_arms/mirrored/left_arm

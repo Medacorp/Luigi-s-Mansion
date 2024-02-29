@@ -4,30 +4,10 @@
         "luigis_mansion:old_entities/boo_marker",
         "luigis_mansion:old_entities/hidden_boo",
 
-        "luigis_mansion:old_entities/floating_whirlindas",
-        "luigis_mansion:old_entities/shivers",
-        "luigis_mansion:old_entities/melody_pianissima",
-        "luigis_mansion:old_entities/mr_luggs",
-        "luigis_mansion:old_entities/spooky",
-        "luigis_mansion:old_entities/bogmire",
-        "luigis_mansion:old_entities/biff_atlas",
-        "luigis_mansion:old_entities/miss_petunia",
-        "luigis_mansion:old_entities/nana",
-        "luigis_mansion:old_entities/slim_bankshot",
-        "luigis_mansion:old_entities/henry",
-        "luigis_mansion:old_entities/orville",
-        "luigis_mansion:old_entities/madame_clairvoya",
 		"luigis_mansion:old_entities/mysterious_power",
         "luigis_mansion:old_entities/boolossus",
-        "luigis_mansion:old_entities/uncle_grimmly",
-        "luigis_mansion:old_entities/clockwork_soldier",
-        "luigis_mansion:old_entities/jarvis",
-        "luigis_mansion:old_entities/sir_weston",
-        "luigis_mansion:old_entities/sue_pea",
-        "luigis_mansion:old_entities/vincent_van_gore",
         "luigis_mansion:old_entities/king_boo",
 
-        "luigis_mansion:old_entities/mario",
-        "luigis_mansion:old_entities/bowser"
+        "luigis_mansion:old_entities/mario"
 	]
 }

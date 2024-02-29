@@ -1,9 +1,9 @@
+execute if entity @s[scores={Room=..0}] if score #mirrored Selected matches 1 run scoreboard players set #mirrored Selected 2
 execute store result score #temp Room run scoreboard players get @s Room
 execute as @e run function #luigis_mansion:get_same_room
 scoreboard players reset #temp Room
 
 execute if entity @s[tag=first_key,tag=play] run function luigis_mansion:dialog/first_key
-execute if entity @s[tag=burning_floor] run function luigis_mansion:blocks/burning_floor
 
 function #luigis_mansion:entities
 execute if entity @s[type=minecraft:marker] run function luigis_mansion:entities/tick with entity @s data.entity
@@ -25,3 +25,4 @@ execute if entity @s[tag=!furniture,tag=debug_entity] run function luigis_mansio
 execute if entity @s[tag=!furniture,tag=!debug_entity] if score #debug_entities Selected matches 1.. run function luigis_mansion:main/debug
 
 tag @e[tag=same_room] remove same_room
+execute if score #mirrored Selected matches 2 run scoreboard players set #mirrored Selected 1

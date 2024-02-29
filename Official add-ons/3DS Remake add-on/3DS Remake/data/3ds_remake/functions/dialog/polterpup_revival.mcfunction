@@ -11,8 +11,8 @@ execute if entity @s[scores={AnimationProgress=100..140}] run stopsound @a[tag=s
 execute if entity @s[scores={AnimationProgress=100..140}] run scoreboard players set @a[tag=same_room] Music 320
 execute if entity @s[scores={AnimationProgress=120}] run scoreboard players operation #temp ID = @s ID
 execute if entity @s[scores={AnimationProgress=120},tag=flipped_gravity] run data modify storage luigis_mansion:data entity set value {tags:["flipped_gravity"]}
-execute at @s[scores={AnimationProgress=120},tag=!flipped_gravity] if score #mirrored Selected matches 0 as @e[type=minecraft:armor_stand,tag=luigi_model,tag=head] if score @s ID = #temp ID rotated as @s run function 3ds_remake:spawn_entities/ghost/polterpup
-execute at @s[scores={AnimationProgress=120},tag=flipped_gravity] if score #mirrored Selected matches 0 as @e[type=minecraft:armor_stand,tag=luigi_model,tag=head] if score @s ID = #temp ID rotated as @s run function 3ds_remake:spawn_entities/ghost/polterpup
+execute at @s[scores={AnimationProgress=120},tag=!flipped_gravity] unless score #mirrored Selected matches 1 as @e[type=minecraft:armor_stand,tag=luigi_model,tag=head] if score @s ID = #temp ID rotated as @s run function 3ds_remake:spawn_entities/ghost/polterpup
+execute at @s[scores={AnimationProgress=120},tag=flipped_gravity] unless score #mirrored Selected matches 1 as @e[type=minecraft:armor_stand,tag=luigi_model,tag=head] if score @s ID = #temp ID rotated as @s run function 3ds_remake:spawn_entities/ghost/polterpup
 execute at @s[scores={AnimationProgress=120},tag=!flipped_gravity] if score #mirrored Selected matches 1 as @e[type=minecraft:armor_stand,tag=luigi_model,tag=head] if score @s ID = #temp ID rotated as @s run function 3ds_remake:spawn_entities/ghost/polterpup
 execute at @s[scores={AnimationProgress=120},tag=flipped_gravity] if score #mirrored Selected matches 1 as @e[type=minecraft:armor_stand,tag=luigi_model,tag=head] if score @s ID = #temp ID rotated as @s run function 3ds_remake:spawn_entities/ghost/polterpup
 execute if entity @s[scores={AnimationProgress=120}] run scoreboard players reset #temp ID

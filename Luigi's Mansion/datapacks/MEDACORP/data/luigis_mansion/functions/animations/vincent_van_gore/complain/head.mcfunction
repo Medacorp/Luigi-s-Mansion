@@ -1,0 +1,2 @@
+execute unless score #mirrored Selected matches 1 run function luigis_mansion:animations/vincent_van_gore/complain/normal/head
+execute if score #mirrored Selected matches 1 run function luigis_mansion:animations/vincent_van_gore/complain/mirrored/head

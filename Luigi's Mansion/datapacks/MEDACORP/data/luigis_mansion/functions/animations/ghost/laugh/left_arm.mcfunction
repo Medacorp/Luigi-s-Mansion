@@ -1,2 +1,2 @@
-execute if score #mirrored Selected matches 0 run function luigis_mansion:animations/ghost/laugh/normal/left_arm
+execute unless score #mirrored Selected matches 1 run function luigis_mansion:animations/ghost/laugh/normal/left_arm
 execute if score #mirrored Selected matches 1 run function luigis_mansion:animations/ghost/laugh/mirrored/left_arm

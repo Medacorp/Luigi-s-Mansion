@@ -1,1 +1,0 @@
-execute if score #mansion_type Selected matches 0 run function luigis_mansion:old_entities/sir_weston/disappear/normal

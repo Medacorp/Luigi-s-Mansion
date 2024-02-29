@@ -1,0 +1,1 @@
+scoreboard players set @s Dialog 861

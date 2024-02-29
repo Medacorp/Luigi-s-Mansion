@@ -1,0 +1,2 @@
+execute unless score #mirrored Selected matches 1 run function luigis_mansion:animations/madame_clairvoya/explain/normal/left_arm
+execute if score #mirrored Selected matches 1 run function luigis_mansion:animations/madame_clairvoya/explain/mirrored/left_arm

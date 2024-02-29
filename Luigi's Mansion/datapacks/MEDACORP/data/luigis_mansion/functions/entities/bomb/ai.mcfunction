@@ -13,7 +13,7 @@ tag @s remove spawned_particle
 tag @s[tag=!spawned_particle,tag=!no_spawned_particle] add spawned_particle
 tag @s remove no_spawned_particle
 execute store result score #temp Time run data get entity @s Pose.Head[1]
-execute if score #mirrored Selected matches 0 store result entity @s Pose.Head[1] float 1 run scoreboard players add #temp Time 5
+execute unless score #mirrored Selected matches 1 store result entity @s Pose.Head[1] float 1 run scoreboard players add #temp Time 5
 execute if score #mirrored Selected matches 1 store result entity @s Pose.Head[1] float 1 run scoreboard players remove #temp Time 5
 scoreboard players reset #temp Time
 execute at @s[scores={Move=10}] run function luigis_mansion:entities/bomb/explode

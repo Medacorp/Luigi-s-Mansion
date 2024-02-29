@@ -1,0 +1,2 @@
+execute unless score #mirrored Selected matches 1 run function luigis_mansion:animations/henry_and_orville/complain/normal/left_arm
+execute if score #mirrored Selected matches 1 run function luigis_mansion:animations/henry_and_orville/complain/mirrored/left_arm

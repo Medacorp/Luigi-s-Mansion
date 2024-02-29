@@ -3379,7 +3379,7 @@
     "entity.henry.attack": {
         "sounds": [
             {
-                "name": "luigis_mansion:entity/henry_and_orville/attack",
+                "name": "luigis_mansion:entity/henry_and_orville/drift",
                 "stream": false
             }
         ],
@@ -3402,6 +3402,15 @@
             }
         ],
         "subtitle": "luigis_mansion:subtitles.entity.henry.disappear"
+    },
+    "entity.henry.drop_bomb": {
+        "sounds": [
+            {
+                "name": "luigis_mansion:entity/henry_and_orville/drop_bomb",
+                "stream": false
+            }
+        ],
+        "subtitle": "luigis_mansion:subtitles.entity.henry.drop_bomb"
     },
     "entity.henry.flee": {
         "sounds": [
@@ -4477,7 +4486,7 @@
     "entity.orville.attack": {
         "sounds": [
             {
-                "name": "luigis_mansion:entity/henry_and_orville/attack",
+                "name": "luigis_mansion:entity/henry_and_orville/dive",
                 "stream": false
             }
         ],

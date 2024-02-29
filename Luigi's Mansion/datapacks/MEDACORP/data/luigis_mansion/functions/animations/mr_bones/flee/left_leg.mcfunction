@@ -1,2 +1,2 @@
-execute if score #mirrored Selected matches 0 run function luigis_mansion:animations/mr_bones/flee/normal/left_leg
+execute unless score #mirrored Selected matches 1 run function luigis_mansion:animations/mr_bones/flee/normal/left_leg
 execute if score #mirrored Selected matches 1 run function luigis_mansion:animations/mr_bones/flee/mirrored/left_leg

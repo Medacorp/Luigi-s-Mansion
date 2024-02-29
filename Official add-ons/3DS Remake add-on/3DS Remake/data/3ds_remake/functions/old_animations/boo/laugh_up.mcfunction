@@ -1,2 +1,0 @@
-execute if score #mirrored Selected matches 0 run function 3ds_remake:old_animations/boo/normal/laugh
-execute if score #mirrored Selected matches 1 run function 3ds_remake:old_animations/boo/mirrored/laugh

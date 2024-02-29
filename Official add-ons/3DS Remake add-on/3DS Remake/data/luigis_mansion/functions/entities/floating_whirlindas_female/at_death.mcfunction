@@ -1,0 +1,6 @@
+function luigis_mansion:entities/floating_whirlindas_female/save_stats
+execute if data storage luigis_mansion:data current_state.current_data.portrait_ghosts.luigis_mansion.floating_whirlindas{male:{health:0},female:{health:0}} run data modify storage 3ds_remake:data portrait_ghost set from storage 3ds_remake:data current_state.portrait_ghosts_defeated_in.floating_whirlindas
+execute if data storage luigis_mansion:data current_state.current_data.portrait_ghosts.luigis_mansion.floating_whirlindas{male:{health:0},female:{health:0}} run function 3ds_remake:other/save_portrait_ghost_defeat
+execute if data storage luigis_mansion:data current_state.current_data.portrait_ghosts.luigis_mansion.floating_whirlindas{male:{health:0},female:{health:0}} run data modify storage 3ds_remake:data current_state.portrait_ghosts_defeated_in.floating_whirlindas set from storage 3ds_remake:data portrait_ghost
+execute if data storage luigis_mansion:data current_state.current_data.portrait_ghosts.luigis_mansion.floating_whirlindas{male:{health:0},female:{health:0}} run data remove storage 3ds_remake:data portrait_ghost
+$function $(namespace):entities/floating_whirlindas_female/at_death/$(id)

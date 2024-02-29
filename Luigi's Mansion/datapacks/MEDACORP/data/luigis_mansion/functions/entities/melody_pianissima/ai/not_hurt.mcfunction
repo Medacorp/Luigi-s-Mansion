@@ -1,3 +1,3 @@
 $execute if entity @s[scores={StunTime=0},tag=!vanish] run function $(namespace):entities/melody_pianissima/ai/mansion/$(id)
 
-execute if entity @s[tag=vanish] run function luigis_mansion:entities/melody_pianissima/vanish with entity @s data.entity
+execute if entity @s[tag=vanish] run function luigis_mansion:entities/melody_pianissima/vanish

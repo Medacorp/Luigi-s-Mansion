@@ -5,3 +5,4 @@ scoreboard players set @e[tag=this_entity,limit=1] EntityYOffset 14
 scoreboard players set @e[tag=this_entity,limit=1] SpawnTime 0
 function luigis_mansion:spawn_entities/setup/default
 tag @e[tag=this_entity,limit=1] remove this_entity
+data remove storage luigis_mansion:data entity

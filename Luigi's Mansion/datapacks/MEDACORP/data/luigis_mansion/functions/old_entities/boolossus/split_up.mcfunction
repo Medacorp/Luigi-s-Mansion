@@ -6,8 +6,8 @@ scoreboard players operation #temp2 Boos = @s ActionTime
 scoreboard players set #temp HomeRotation -180
 playsound luigis_mansion:entity.boolossus.pop hostile @a[tag=same_room] ~ ~ ~ 3
 function luigis_mansion:old_entities/boolossus/split_boo
-scoreboard players operation @e[nbt={ArmorItems:[{tag:{luigis_mansion:{entity:{namespace:"luigis_mansion",id:"boolossus"}}}}]},tag=split,tag=!dead] GhostCount = #temp2 Boos
-scoreboard players operation @e[nbt={ArmorItems:[{tag:{luigis_mansion:{entity:{namespace:"luigis_mansion",id:"boolossus"}}}}]},tag=split,tag=!dead] Move /= #temp2 Boos
+scoreboard players operation @e[nbt={data:{entity:{namespace:"luigis_mansion",id:"boolossus"}}},tag=split,tag=!dead] GhostCount = #temp2 Boos
+scoreboard players operation @e[nbt={data:{entity:{namespace:"luigis_mansion",id:"boolossus"}}},tag=split,tag=!dead] Move /= #temp2 Boos
 tag @s add dead
 scoreboard players reset #temp ActionTime
 scoreboard players reset #temp HomeRotation

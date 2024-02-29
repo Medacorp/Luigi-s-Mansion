@@ -1,1 +1,0 @@
-execute if entity @s[tag=toilet] run function luigis_mansion:old_animations/furniture/open/toilet

@@ -4,5 +4,5 @@ execute store result score #temp Time run data get entity @s Pose.Head[2]
 execute if entity @s[scores={AnimationProgress=1..5}] store result entity @s Pose.Head[2] float 1 run scoreboard players add #temp Time 16
 execute if entity @s[scores={AnimationProgress=6..12}] store result entity @s Pose.Head[2] float 1 run scoreboard players remove #temp Time 16
 scoreboard players reset #temp Time
-execute if score #mirrored Selected matches 0 run data modify entity @s[scores={AnimationProgress=1}] ArmorItems[3] merge from entity @s ArmorItems[3].tag.luigis_mansion.model_data.equipment
+execute unless score #mirrored Selected matches 1 run data modify entity @s[scores={AnimationProgress=1}] ArmorItems[3] merge from entity @s ArmorItems[3].tag.luigis_mansion.model_data.equipment
 scoreboard players set @s[scores={AnimationProgress=19}] AnimationProgress 0

@@ -1,0 +1,2 @@
+execute unless score #mirrored Selected matches 1 run function luigis_mansion:animations/miss_petunia/idle/normal/right_arm
+execute if score #mirrored Selected matches 1 run function luigis_mansion:animations/miss_petunia/idle/mirrored/right_arm

@@ -1,0 +1,1 @@
+data modify entity @s[tag=visible] ArmorItems[3].id set from entity @s ArmorItems[3].tag.luigis_mansion.visible

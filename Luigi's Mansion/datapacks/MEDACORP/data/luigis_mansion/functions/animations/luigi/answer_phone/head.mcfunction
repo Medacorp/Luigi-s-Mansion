@@ -1,2 +1,2 @@
-execute if score #mirrored Selected matches 0 run function luigis_mansion:animations/luigi/answer_phone/normal/head
+execute unless score #mirrored Selected matches 1 run function luigis_mansion:animations/luigi/answer_phone/normal/head
 execute if score #mirrored Selected matches 1 run function luigis_mansion:animations/luigi/answer_phone/mirrored/head

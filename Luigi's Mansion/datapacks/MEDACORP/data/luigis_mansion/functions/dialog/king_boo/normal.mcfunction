@@ -30,8 +30,7 @@ execute if entity @s[scores={Dialog=1556}] if score #players Totals matches 2.. 
 execute if entity @s[scores={Dialog=1588}] run tellraw @a[tag=same_room] {"type":"translatable","translate":"chat.type.text","with":[{"type":"translatable","translate":"luigis_mansion:entity.king_boo","color":"green"},{"type":"translatable","translate":"luigis_mansion:dialog.king_boo.13"}]}
 execute if entity @s[scores={Dialog=1588..1598}] run teleport @s ~0.1 ~ ~
 execute if entity @s[scores={Dialog=1598}] run teleport @s 640 93 -18
-tag @s[scores={Dialog=1612}] add magic
-scoreboard players set @s[scores={Dialog=1612}] AnimationProgress 0
+data modify entity @s[scores={Dialog=1612}] data.animation set value {namespace:"luigis_mansion",id:"magic"}
 execute if entity @s[scores={Dialog=1612}] run function #luigis_mansion:room/normal/secret_altar/turn_lights/off
 execute if entity @s[scores={Dialog=1612}] run playsound luigis_mansion:entity.king_boo.magic hostile @a[tag=same_room] ~ ~ ~ 1
 execute if entity @s[scores={Dialog=1612}] run stopsound @a[tag=same_room] music
@@ -49,10 +48,9 @@ execute if entity @s[scores={Dialog=1722..1741}] run effect give @a[tag=same_roo
 execute if entity @s[scores={Dialog=1742..1761}] run effect give @a[tag=same_room] minecraft:nausea 3 0 true
 execute if entity @s[scores={Dialog=1762..1781}] run effect give @a[tag=same_room] minecraft:nausea 2 0 true
 execute if entity @s[scores={Dialog=1782..1801}] run effect give @a[tag=same_room] minecraft:nausea 1 0 true
-tag @s[scores={Dialog=1772}] remove magic
-scoreboard players set @s[scores={Dialog=1771}] AnimationProgress 0
+data remove entity @s[scores={Dialog=1772}] data.animation
 execute if entity @s[scores={Dialog=1801..1822}] facing 633 94 -18 run teleport @s ^ ^ ^0.3 ~ ~
-execute if entity @s[scores={Dialog=1822}] run tag @e[tag=bowser,scores={Room=72}] add animate
+execute if entity @s[scores={Dialog=1822}] run data modify entity @e[tag=bowser,scores={Room=72},limit=1] data.animation set value {namespace:"luigis_mansion",id:"painting"}
 execute if entity @s[scores={Dialog=1911}] as @a[tag=same_room,tag=!spectator,tag=!looking_at_map] run function luigis_mansion:entities/player/animation/set/none
 execute if entity @s[scores={Dialog=1911}] as @a[tag=same_room] run function luigis_mansion:entities/player/animation/set/knockback/flee
 execute if entity @s[scores={Dialog=1911..}] run scoreboard players set @a[tag=same_room] Invulnerable 10

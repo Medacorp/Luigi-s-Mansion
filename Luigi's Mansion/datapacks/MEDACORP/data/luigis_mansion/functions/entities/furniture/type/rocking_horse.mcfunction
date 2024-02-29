@@ -1,5 +1,5 @@
 execute if entity @s[tag=!saved_default_orientation] run function luigis_mansion:entities/furniture/save_default_orientation
-execute unless entity @s[tag=!shake,tag=!long_shake] run function luigis_mansion:old_animations/furniture/rocking_horse
+execute unless entity @s[tag=!shake,tag=!long_shake] run data modify entity @s ArmorItems[3].tag.luigis_mansion.animation set value {namespace:"luigis_mansion",id:"rocking_horse"}
 execute if entity @s[tag=!shake,tag=!long_shake,tag=was_shaking] run function luigis_mansion:entities/furniture/revert_to_default_orientation
 
 execute if score @s FurnitureSearch >= @s FurnitureTime run scoreboard players add @s[tag=searchable_by_time] FurnitureTime 1
@@ -25,8 +25,5 @@ execute if score @s[tag=searchable_by_time] FurnitureSearch = @s FurnitureTime r
 execute if entity @s[tag=searchable_by_interact,tag=search] run function luigis_mansion:entities/furniture/search/generic
 tag @s[tag=!searchable_by_interact,tag=search] add open
 execute if entity @s[tag=drop_loot] run function luigis_mansion:entities/furniture/search/generic
-
-execute if entity @s[tag=open,scores={ActionTime=0..}] run function #luigis_mansion:entities/furniture/open
-scoreboard players set @s[tag=open,scores={ActionTime=0}] ActionTime -1
 
 execute if entity @s[tag=sparkles,tag=!open] run function luigis_mansion:entities/furniture/spawn/sparkles

@@ -85,8 +85,8 @@ scoreboard players add @s[scores={IdleTime=-22},tag=moved] AnimationProgress 1
 data merge entity @s[scores={IdleTime=-22,AnimationProgress=1}] {Pose:{Head:[-98.0f,5.0f,0.01f]}}
 data merge entity @s[scores={IdleTime=-22,AnimationProgress=1},tag=flipped_gravity] {Pose:{Head:[-98.0f,5.0f,-180.0f]}}
 execute store result score #temp Time run data get entity @s Pose.Head[0]
-execute if entity @s[scores={IdleTime=-22,AnimationProgress=1..4},tag=moved] if score #mirrored Selected matches 0 store result entity @s Pose.Head[0] float 1 run scoreboard players remove #temp Time 2
-execute if entity @s[scores={IdleTime=-22,AnimationProgress=5..8},tag=moved] if score #mirrored Selected matches 0 store result entity @s Pose.Head[0] float 1 run scoreboard players add #temp Time 2
+execute if entity @s[scores={IdleTime=-22,AnimationProgress=1..4},tag=moved] unless score #mirrored Selected matches 1 store result entity @s Pose.Head[0] float 1 run scoreboard players remove #temp Time 2
+execute if entity @s[scores={IdleTime=-22,AnimationProgress=5..8},tag=moved] unless score #mirrored Selected matches 1 store result entity @s Pose.Head[0] float 1 run scoreboard players add #temp Time 2
 execute if entity @s[scores={IdleTime=-22,AnimationProgress=1..4},tag=moved] if score #mirrored Selected matches 1 store result entity @s Pose.Head[0] float 1 run scoreboard players add #temp Time 2
 execute if entity @s[scores={IdleTime=-22,AnimationProgress=5..8},tag=moved] if score #mirrored Selected matches 1 store result entity @s Pose.Head[0] float 1 run scoreboard players remove #temp Time 2
 scoreboard players set @s[scores={IdleTime=-22,AnimationProgress=8},tag=moved] AnimationProgress 0

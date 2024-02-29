@@ -1,0 +1,2 @@
+execute unless score #mirrored Selected matches 1 run function luigis_mansion:animations/mr_luggs/eat/normal/left_arm
+execute if score #mirrored Selected matches 1 run function luigis_mansion:animations/mr_luggs/eat/mirrored/left_arm

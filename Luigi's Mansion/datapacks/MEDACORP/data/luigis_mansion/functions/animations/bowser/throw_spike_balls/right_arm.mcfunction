@@ -1,0 +1,2 @@
+execute unless score #mirrored Selected matches 1 run function luigis_mansion:animations/bowser/throw_spike_balls/normal/right_arm
+execute if score #mirrored Selected matches 1 run function luigis_mansion:animations/bowser/throw_spike_balls/mirrored/right_arm

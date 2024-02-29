@@ -1,1 +1,0 @@
-function luigis_mansion:old_entities/melody_pianissima/at_death/normal

@@ -1,1 +1,1 @@
-execute if score #mirrored Selected matches 0 run function 3ds_remake:animations/gooigi/wave/normal/left_arm
+execute unless score #mirrored Selected matches 1 run function 3ds_remake:animations/gooigi/wave/normal/left_arm

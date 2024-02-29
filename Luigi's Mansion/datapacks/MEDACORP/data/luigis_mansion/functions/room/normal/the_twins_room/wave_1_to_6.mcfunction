@@ -13,7 +13,7 @@ execute as @a[scores={Room=49},gamemode=!spectator] run function luigis_mansion:
 tag @e[scores={Room=49},tag=furniture,tag=door] add blockade
 
 execute unless data storage luigis_mansion:data current_state.current_data.portrait_ghosts.luigis_mansion.henry_and_orville.orville{health:0} run data modify storage luigis_mansion:data entity set value {mansion:{namespace:"luigis_mansion",id:"normal"},scan_message:{sender:"me",message:'{"type":"translatable","translate":"luigis_mansion:message.orville.scan"}'}}
-execute unless data storage luigis_mansion:data current_state.current_data.portrait_ghosts.luigis_mansion.henry_and_orville.orville{health:0} at @e[tag=me,limit=1] run function luigis_mansion:spawn_entities/portrait_ghost/orville
+execute unless data storage luigis_mansion:data current_state.current_data.portrait_ghosts.luigis_mansion.henry_and_orville.orville{health:0} at @e[tag=me,limit=1] run function luigis_mansion:spawn_entities/portrait_ghost/henry_and_orville/orville
 execute unless data storage luigis_mansion:data current_state.current_data.portrait_ghosts.luigis_mansion.henry_and_orville.henry{health:0} run data modify storage luigis_mansion:data entity set value {mansion:{namespace:"luigis_mansion",id:"normal"},scan_message:{sender:"me",message:'{"type":"translatable","translate":"luigis_mansion:message.henry.scan"}'}}
-execute unless data storage luigis_mansion:data current_state.current_data.portrait_ghosts.luigis_mansion.henry_and_orville.henry{health:0} at @e[tag=me,limit=1] run function luigis_mansion:spawn_entities/portrait_ghost/henry
+execute unless data storage luigis_mansion:data current_state.current_data.portrait_ghosts.luigis_mansion.henry_and_orville.henry{health:0} at @e[tag=me,limit=1] run function luigis_mansion:spawn_entities/portrait_ghost/henry_and_orville/henry
 kill @e[tag=me,limit=1]

@@ -20,7 +20,7 @@ furniture:{
         
     //search details
     type:{ //Overwrites the default furniture type of this furniture.
-        value:"<type>", //Required if type is present, what type to use. Types:delayed, fan, generic, rolling, swinging, swirling.
+        value:"<type>", //Required if type is present, what type to use. Allowed types (both original to change and value to change to): delayed, fan, generic, rolling, swinging, swirling.
         search_value:X, //Optional, what search value is needed. The default may be different for the default type of the furniture.
             * For delayed, it's how long the poltergust must be used. Default = 20.
             * For fan, it's the default spinning speed in tenths of degrees (positive values only). Default = 0.

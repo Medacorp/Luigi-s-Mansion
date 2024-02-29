@@ -30,7 +30,6 @@ execute if entity @s[scores={Dialog=170}] run data modify storage luigis_mansion
 execute if entity @s[scores={Dialog=170..}] as @a[tag=same_room,tag=!spectator] run function luigis_mansion:other/music/set/danger
 execute if entity @s[scores={Dialog=170},tag=!attack,tag=!laugh,tag=!complain] run tag @e[tag=haunted_teddy_bear] add enabled
 execute if entity @s[scores={Dialog=170}] unless entity @s[tag=!laugh,tag=!complain,tag=!attack] run tag @e[tag=haunted_teddy_bear] remove enabled
-execute if entity @s[scores={Dialog=170},tag=!laugh,tag=!rambling,tag=!grab_rambler] run function luigis_mansion:old_entities/ghost/turn_visible_no_equipment
 tag @s[scores={Dialog=170},tag=!attack,tag=!laugh,tag=!complain,tag=!rambling,tag=!grab_rambler] add move
 execute if entity @s[scores={Dialog=170}] if entity @e[tag=haunted_teddy_bear,scores={WaitTime=60..79}] run data modify entity @s data.animation set value {namespace:"luigis_mansion",id:"grab_rambler"}
 execute if entity @s[scores={Dialog=170}] if entity @e[tag=haunted_teddy_bear,scores={WaitTime=80..}] run data modify entity @s data.animation set value {namespace:"luigis_mansion",id:"ramble"}

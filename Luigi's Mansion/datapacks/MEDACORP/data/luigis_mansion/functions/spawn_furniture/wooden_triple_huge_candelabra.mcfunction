@@ -10,7 +10,6 @@ execute unless score #temp2 Time = #temp Time rotated ~ 0 positioned ^ ^ ^-0.284
 kill @e[tag=candle_flame_rotation,limit=1]
 scoreboard players reset #temp Time
 scoreboard players reset #temp2 Time
-scoreboard players set @e[tag=this_entity,limit=1] ActionTime -1
 scoreboard players set @e[tag=this_entity,limit=1] FurnitureSizeWidth 8
 scoreboard players set @e[tag=this_entity,limit=1] FurnitureSizeHeight 16
 scoreboard players set @e[tag=this_entity,limit=1] FurnitureDustLeft 0

@@ -1,0 +1,1 @@
+function luigis_mansion:entities/sue_pea/ai/mansion/normal

@@ -89,13 +89,15 @@ execute if entity @s[scores={Dialog=70}] run teleport @s 725.5 20 31.3 0 0
 execute if entity @s[scores={Dialog=71..81}] run teleport @s 725.5 20 31.4 0 0
 execute if entity @s[scores={Dialog=72}] run data modify storage luigis_mansion:data entity set value {can_talk_to:0b,tags:["no_ai"]}
 execute if entity @s[scores={Dialog=72}] positioned 718 20 35 run function luigis_mansion:spawn_entities/e_gadd
-execute if entity @s[scores={Dialog=72}] run data modify storage luigis_mansion:data entity set value {spawn:1b,tags:["no_ai"],appear_type:"normal"}
+execute if entity @s[scores={Dialog=72}] run data modify storage luigis_mansion:data entity set value {tags:["no_ai","visible"],animation:{namespace:"luigis_mansion",id:"appear/normal"}}
 execute if entity @s[scores={Dialog=72}] positioned 725 20 34.9 run function e3_demo:spawn_entities/ghost/ghost/white
+execute if entity @s[scores={Dialog=72}] run playsound e3_demo:entity.ghost.spawn hostile @a[tag=same_room] 725 20 34.9 1
 execute if entity @s[scores={Dialog=72}] run teleport @s 725.5 20 31.4 facing entity @e[tag=ghost,tag=no_ai,limit=1] feet
 execute if entity @s[scores={Dialog=72}] run teleport @e[tag=ghost,tag=no_ai,limit=1] 725 20 34.9 -180 0
 execute if entity @s[scores={Dialog=72}] as @a[tag=same_room] at @e[tag=ghost,tag=no_ai,limit=1] run function luigis_mansion:entities/player/animation/set/scare/bash
 tag @s[scores={Dialog=72}] add bash_no_move
 execute if entity @s[scores={Dialog=72..190}] run scoreboard players set @a[tag=same_room,scores={IdleTime=-21..}] IdleTime -22
+execute if entity @s[scores={Dialog=92}] run data modify entity @e[tag=ghost,tag=no_ai,limit=1] data.animation set value {namespace:"luigis_mansion",id:"haunt"}
 execute if entity @s[scores={Dialog=72}] run tellraw @a[tag=same_room] {"type":"translatable","translate":"chat.type.text","with":[{"type":"selector","selector":"@s","color":"green"},{"type":"translatable","translate":"e3_demo:dialog.meet_e_gadd.1"}]}
 execute if entity @s[scores={Dialog=92..149}] at @e[tag=ghost,tag=no_ai,limit=1] positioned ^ ^ ^3.5 rotated ~-180 ~ run function luigis_mansion:entities/player/animation/scare/bash_force_move
 execute if entity @s[scores={Dialog=92..149}] as @e[tag=ghost,tag=no_ai,limit=1] at @s run teleport @s ^ ^ ^0.11 ~ ~
@@ -106,15 +108,14 @@ execute if entity @s[scores={Dialog=130}] as @e[tag=e_gadd,tag=no_ai,limit=1] at
 execute if entity @s[scores={Dialog=131..150}] as @e[tag=e_gadd,tag=no_ai,limit=1] at @s run teleport @s ^ ^ ^0.125
 execute if entity @s[scores={Dialog=150}] run data modify entity @e[tag=e_gadd,tag=no_ai,limit=1] data.animation set value {namespace:"luigis_mansion",id:"vacuum"}
 execute if entity @s[scores={Dialog=150}] run data modify entity @e[tag=e_gadd,tag=no_ai,limit=1] data.poltergust set value {id:"minecraft:carrot_on_a_stick",Count:1b,tag:{Unbreakable:1b,Damage:0,CustomModelData:2}}
-execute if entity @s[scores={Dialog=150..459}] at @e[tag=e_gadd,tag=no_ai,limit=1] positioned ~ ~0.5 ~ positioned ^ ^ ^0.5 as @e[tag=ghost,tag=no_ai,limit=1] facing entity @s feet run function luigis_mansion:items/poltergust_3000/vacuuming/e_gadd
-execute if entity @s[scores={Dialog=150}] run scoreboard players set @e[tag=ghost,tag=no_ai,limit=1] AnimationProgress 0
-execute if entity @s[scores={Dialog=150}] run tag @e[tag=ghost,tag=no_ai,limit=1] add hurt
+execute if entity @s[scores={Dialog=150..459}] at @e[tag=e_gadd,tag=no_ai,limit=1] positioned ~ ~0.25 ~ positioned ^ ^ ^0.5 as @e[tag=ghost,tag=no_ai,limit=1] facing entity @s feet run function luigis_mansion:items/poltergust_3000/vacuuming/e_gadd
+execute if entity @s[scores={Dialog=150}] run data modify entity @e[tag=ghost,tag=no_ai,limit=1] data.animation set value {namespace:"luigis_mansion",id:"hurt"}
 tag @s[scores={Dialog=150}] remove bash_no_move
 execute if entity @s[scores={Dialog=150}] at @e[tag=ghost,tag=no_ai,limit=1] run playsound e3_demo:entity.ghost.hurt hostile @a[tag=same_room] ~ ~ ~ 1
 execute if entity @s[scores={Dialog=150}] run tellraw @a[tag=same_room] {"type":"translatable","translate":"chat.type.text","with":[{"type":"translatable","translate":"e3_demo:entity.ghost","color":"green"},{"type":"translatable","translate":"e3_demo:dialog.meet_e_gadd.2"}]}
 execute if entity @s[scores={Dialog=170}] at @e[tag=e_gadd,tag=no_ai,limit=1] run playsound luigis_mansion:entity.e_gadd.talk.soy_soh_ooh neutral @a[tag=same_room] ~ ~ ~ 1
 execute if entity @s[scores={Dialog=233}] at @e[tag=e_gadd,tag=no_ai,limit=1] run playsound luigis_mansion:entity.e_gadd.dragged neutral @a[tag=same_room] ~ ~ ~ 1
-execute if entity @s[scores={Dialog=220}] run tag @e[tag=ghost,tag=no_ai,limit=1] add fleeing
+execute if entity @s[scores={Dialog=220}] run data modify entity @e[tag=ghost,tag=no_ai,limit=1] data.animation set value {namespace:"luigis_mansion",id:"flee"}
 execute if entity @s[scores={Dialog=220}] as @e[tag=ghost,tag=no_ai,limit=1] at @s run playsound e3_demo:entity.ghost.cutscene_flee hostile @a[tag=same_room] ~ ~ ~ 1
 execute if entity @s[scores={Dialog=220}] as @e[tag=ghost,tag=no_ai,limit=1] at @s run teleport @s ~ ~ ~ facing 720 20.3 28
 execute if entity @s[scores={Dialog=221..250}] as @e[tag=ghost,tag=no_ai,limit=1] at @s run teleport @s ^ ^ ^0.2
@@ -125,9 +126,7 @@ execute if entity @s[scores={Dialog=272}] as @e[tag=ghost,tag=no_ai,limit=1] at 
 execute if entity @s[scores={Dialog=273..292}] as @e[tag=ghost,tag=no_ai,limit=1] at @s run teleport @s ^ ^ ^0.2
 execute if entity @s[scores={Dialog=293}] as @e[tag=ghost,tag=no_ai,limit=1] at @s run teleport @s ~ ~ ~ facing 723 20.3 35
 execute if entity @s[scores={Dialog=294..323}] as @e[tag=ghost,tag=no_ai,limit=1] at @s facing 723 20.3 35 run teleport @s ^ ^ ^0.1
-execute if entity @s[scores={Dialog=317}] run scoreboard players set @e[tag=ghost,tag=no_ai,limit=1] AnimationProgress 0
-execute if entity @s[scores={Dialog=317}] run tag @e[tag=ghost,tag=no_ai,limit=1] remove fleeing
-execute if entity @s[scores={Dialog=317}] run tag @e[tag=ghost,tag=no_ai,limit=1] remove hurt
+execute if entity @s[scores={Dialog=317}] run data modify entity @e[tag=ghost,tag=no_ai,limit=1] data.animation set value {namespace:"luigis_mansion",id:"haunt"}
 execute if entity @s[scores={Dialog=317..319}] as @e[tag=ghost,tag=no_ai,limit=1] at @s run teleport @s ~ ~ ~ ~60 ~
 execute if entity @s[scores={Dialog=320}] as @e[tag=ghost,tag=no_ai,limit=1] at @s run playsound e3_demo:entity.ghost.cutscene_pull hostile @a[tag=same_room] ~ ~ ~ 1
 execute if entity @s[scores={Dialog=340}] as @e[tag=ghost,tag=no_ai,limit=1] at @s run playsound e3_demo:entity.ghost.cutscene_pull hostile @a[tag=same_room] ~ ~ ~ 1
@@ -135,10 +134,16 @@ execute if entity @s[scores={Dialog=324..343}] as @e[tag=ghost,tag=no_ai,limit=1
 execute if entity @s[scores={Dialog=344..373}] as @e[tag=ghost,tag=no_ai,limit=1] at @s facing 723 20.3 26 rotated ~ 0 run teleport @s ^ ^ ^0.2
 execute if entity @s[scores={Dialog=374..432}] as @e[tag=ghost,tag=no_ai,limit=1] at @s facing 719 20.3 26 rotated ~ 0 run teleport @s ^ ^ ^0.077
 execute if entity @s[scores={Dialog=320..401}] as @e[tag=ghost,tag=no_ai,limit=1] at @s run teleport @s ~ ~ ~ facing entity @e[tag=e_gadd,tag=no_ai,limit=1] feet
-execute if entity @s[scores={Dialog=391}] run tag @e[tag=ghost,tag=no_ai,limit=1] add attack
-execute if entity @s[scores={Dialog=391..494}] run tag @e[tag=ghost,tag=no_ai,limit=1] remove complain
-execute if entity @s[scores={Dialog=391}] run tag @e[tag=ghost,tag=no_ai,limit=1] add laugh
-execute if entity @s[scores={Dialog=391..593}] as @e[tag=ghost,tag=no_ai,tag=!attack,tag=!vanish,limit=1] at @s run teleport @s ~ ~ ~ facing entity @e[tag=e_gadd,tag=no_ai,limit=1] feet
+execute if entity @s[scores={Dialog=391}] run data modify entity @e[tag=ghost,tag=no_ai,limit=1] data.animation set value {namespace:"luigis_mansion",id:"punch_wind_up"}
+execute if entity @s[scores={Dialog=431}] run data modify entity @e[tag=ghost,tag=no_ai,limit=1] data.animation set value {namespace:"luigis_mansion",id:"punch"}
+execute if entity @s[scores={Dialog=431}] at @e[tag=ghost,tag=no_ai,limit=1] run playsound luigis_mansion:entity.ghost.punch hostile @a[tag=same_room] ~ ~ ~ 1
+$execute if entity @s[scores={Dialog=431}] at @e[tag=ghost,tag=no_ai,limit=1] run playsound luigis_mansion:entity.gold_ghost.attack hostile @a[tag=same_room] ~ ~ ~ 1
+execute if entity @s[scores={Dialog=451}] run data modify entity @e[tag=ghost,tag=no_ai,limit=1] data.animation set value {namespace:"luigis_mansion",id:"laugh"}
+$execute if entity @s[scores={Dialog=451}] at @e[tag=ghost,tag=no_ai,limit=1] run playsound luigis_mansion:entity.gold_ghost.laugh hostile @a[tag=same_room] ~ ~ ~ 1
+execute if entity @s[scores={Dialog=491}] run data modify entity @e[tag=ghost,tag=no_ai,limit=1] data.animation set value {namespace:"luigis_mansion",id:"vanish"}
+$execute if entity @s[scores={Dialog=491}] at @e[tag=ghost,tag=no_ai,limit=1] run playsound luigis_mansion:entity.gold_ghost.disappear hostile @a[tag=same_room] ~ ~ ~ 1
+execute if entity @s[scores={Dialog=531}] run tag @e[tag=ghost,tag=no_ai,limit=1] add remove_from_existence
+execute if entity @s[scores={Dialog=391..490}] as @e[tag=ghost,tag=no_ai,limit=1] at @s run teleport @s ~ ~ ~ facing entity @e[tag=e_gadd,tag=no_ai,limit=1] feet
 execute if entity @s[scores={Dialog=258}] run data modify entity @e[tag=e_gadd,tag=no_ai,limit=1] data.animation set value {namespace:"luigis_mansion",id:"walk_backwards"}
 execute if entity @s[scores={Dialog=258..287}] as @e[tag=e_gadd,tag=no_ai,limit=1] at @s facing 718 20 31 rotated ~ 0 run teleport @s ^ ^ ^0.13
 execute if entity @s[scores={Dialog=288..317}] as @e[tag=e_gadd,tag=no_ai,limit=1] at @s facing 718 20 35 rotated ~ 0 run teleport @s ^ ^ ^0.13
@@ -173,16 +178,23 @@ execute if entity @s[scores={Dialog=946}] at @e[tag=e_gadd,tag=no_ai,limit=1] ru
 execute if entity @s[scores={Dialog=946..1187}] as @e[tag=e_gadd,tag=no_ai,limit=1] at @s run teleport @s ~ ~ ~ ~0.309917 ~
 execute if entity @s[scores={Dialog=1045}] run tellraw @a[tag=same_room] {"type":"translatable","translate":"chat.type.text","with":[{"type":"translatable","translate":"luigis_mansion:entity.e_gadd","color":"green"},{"type":"translatable","translate":"e3_demo:dialog.meet_e_gadd.8"}]}
 execute if entity @s[scores={Dialog=1045}] at @e[tag=e_gadd,tag=no_ai,limit=1] run playsound luigis_mansion:entity.e_gadd.talk.oui_oydohroh_tahmentahkeh neutral @a[tag=same_room] ~ ~ ~ 1
-execute if entity @s[scores={Dialog=1187}] run data modify storage luigis_mansion:data entity set value {spawn:1b,tags:["no_ai"]}
+execute if entity @s[scores={Dialog=1187}] run data modify storage luigis_mansion:data entity set value {tags:["no_ai","visible","ghost_1"],animation:{namespace:"luigis_mansion",id:"appear/beta"}}
 execute if entity @s[scores={Dialog=1187}] positioned 718 20 29 run function e3_demo:spawn_entities/ghost/ghost/white
-execute if entity @s[scores={Dialog=1187}] positioned 718 20 29 as @e[distance=..0.1,tag=ghost,tag=no_ai] at @s facing entity @e[tag=e_gadd,tag=no_ai,limit=1] feet rotated ~ 0 run teleport @s ~ ~ ~ ~ ~
-execute if entity @s[scores={Dialog=1199}] run data modify storage luigis_mansion:data entity set value {spawn:1b,tags:["no_ai"]}
+execute if entity @s[scores={Dialog=1187}] run playsound e3_demo:entity.ghost.spawn_beta hostile @a[tag=same_room] 718 20 29 1
+execute if entity @s[scores={Dialog=1187}] as @e[tag=ghost_1,tag=no_ai] at @s facing entity @e[tag=e_gadd,tag=no_ai,limit=1] feet rotated ~ 0 run teleport @s ~ ~ ~ ~ ~
+execute if entity @s[scores={Dialog=1227}] run data modify entity @e[tag=ghost_1,tag=no_ai,limit=1] data.animation set value {namespace:"luigis_mansion",id:"haunt"}
+execute if entity @s[scores={Dialog=1199}] run data modify storage luigis_mansion:data entity set value {tags:["no_ai","visible","ghost_2"],animation:{namespace:"luigis_mansion",id:"appear/beta"}}
 execute if entity @s[scores={Dialog=1199}] positioned 718 20 26 run function e3_demo:spawn_entities/ghost/ghost/white
+execute if entity @s[scores={Dialog=1199}] run playsound e3_demo:entity.ghost.spawn_beta hostile @a[tag=same_room] 718 20 26 1
+execute if entity @s[scores={Dialog=1199}] as @e[tag=ghost_2,tag=no_ai] at @s facing entity @e[tag=e_gadd,tag=no_ai,limit=1] feet rotated ~ 0 run teleport @s ~ ~ ~ ~ ~
+execute if entity @s[scores={Dialog=1239}] run data modify entity @e[tag=ghost_2,tag=no_ai,limit=1] data.animation set value {namespace:"luigis_mansion",id:"haunt"}
 execute if entity @s[scores={Dialog=1199}] run tellraw @a[tag=same_room] {"type":"translatable","translate":"chat.type.text","with":[{"type":"translatable","translate":"e3_demo:entity.ghost","color":"green"},{"type":"translatable","translate":"e3_demo:dialog.meet_e_gadd.9"}]}
 execute if entity @s[scores={Dialog=1199}] positioned 718 20 26 as @e[distance=..0.1,tag=ghost,tag=no_ai] at @s facing entity @e[tag=e_gadd,tag=no_ai,limit=1] feet rotated ~ 0 run teleport @s ~ ~ ~ ~ ~
-execute if entity @s[scores={Dialog=1212}] run data modify storage luigis_mansion:data entity set value {spawn:1b,tags:["no_ai"]}
+execute if entity @s[scores={Dialog=1212}] run data modify storage luigis_mansion:data entity set value {tags:["no_ai","visible","ghost_3"],animation:{namespace:"luigis_mansion",id:"appear/beta"}}
 execute if entity @s[scores={Dialog=1212}] positioned 720 20 27 run function e3_demo:spawn_entities/ghost/ghost/white
-execute if entity @s[scores={Dialog=1212}] positioned 720 20 27 as @e[distance=..0.1,tag=ghost,tag=no_ai] at @s facing entity @e[tag=e_gadd,tag=no_ai,limit=1] feet rotated ~ 0 run teleport @s ~ ~ ~ ~ ~
+execute if entity @s[scores={Dialog=1212}] run playsound e3_demo:entity.ghost.spawn_beta hostile @a[tag=same_room] 720 20 27 1
+execute if entity @s[scores={Dialog=1212}] as @e[tag=ghost_3,tag=no_ai] at @s facing entity @e[tag=e_gadd,tag=no_ai,limit=1] feet rotated ~ 0 run teleport @s ~ ~ ~ ~ ~
+execute if entity @s[scores={Dialog=1252}] run data modify entity @e[tag=ghost_3,tag=no_ai,limit=1] data.animation set value {namespace:"luigis_mansion",id:"haunt"}
 execute if entity @s[scores={Dialog=1252}] as @e[tag=ghost,tag=no_ai] at @s run playsound e3_demo:entity.ghost.ambient hostile @a[tag=same_room] ~ ~ ~ 1
 execute if entity @s[scores={Dialog=1272}] as @e[tag=ghost,tag=no_ai] at @s run playsound e3_demo:entity.ghost.ambient hostile @a[tag=same_room] ~ ~ ~ 1
 execute if entity @s[scores={Dialog=1312}] as @e[tag=ghost,tag=no_ai] at @s run playsound e3_demo:entity.ghost.ambient hostile @a[tag=same_room] ~ ~ ~ 1
@@ -200,5 +212,3 @@ execute if entity @s[scores={Dialog=1388}] run data modify storage luigis_mansio
 execute if entity @s[scores={Dialog=1388}] as @a run function luigis_mansion:room/underground_lab/warp_to
 tag @s[scores={Dialog=1388}] remove meet_e_gadd
 scoreboard players set @s[scores={Dialog=1388}] Dialog 0
-
-tag @e[tag=ghost,tag=hidden,tag=!spawn,tag=no_ai,limit=1] add dead

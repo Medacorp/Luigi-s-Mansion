@@ -1,0 +1,2 @@
+execute unless score #mirrored Selected matches 1 run function luigis_mansion:animations/furniture/animation/normal/long_shake
+execute if score #mirrored Selected matches 1 run function luigis_mansion:animations/furniture/animation/mirrored/long_shake

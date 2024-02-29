@@ -1,1 +1,0 @@
-execute if entity @s[tag=wooden_cabinet] run function luigis_mansion:old_animations/furniture/open/wooden_cabinet

@@ -1,0 +1,2 @@
+execute unless score #mirrored Selected matches 1 run function luigis_mansion:animations/sir_weston/spawn_ice_spikes/normal/head
+execute if score #mirrored Selected matches 1 run function luigis_mansion:animations/sir_weston/spawn_ice_spikes/mirrored/head

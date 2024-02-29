@@ -1,0 +1,2 @@
+execute unless score #mirrored Selected matches 1 run function luigis_mansion:animations/slim_bankshot/complain/normal/left_arm
+execute if score #mirrored Selected matches 1 run function luigis_mansion:animations/slim_bankshot/complain/mirrored/left_arm

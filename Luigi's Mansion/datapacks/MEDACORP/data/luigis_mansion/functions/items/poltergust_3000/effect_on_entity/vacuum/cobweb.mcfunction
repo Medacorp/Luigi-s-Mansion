@@ -1,1 +1,1 @@
-execute if entity @s[tag=cobweb,tag=!broken] run function luigis_mansion:items/poltergust_3000/effect_on_entity/vacuum/effect/cobweb
+execute if entity @s[nbt={ArmorItems:[{tag:{luigis_mansion:{namespace:"luigis_mansion",id:"cobweb"}}}]},tag=!broken] run function luigis_mansion:items/poltergust_3000/effect_on_entity/vacuum/effect/cobweb

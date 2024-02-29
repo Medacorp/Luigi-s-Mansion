@@ -1,1 +1,0 @@
-function luigis_mansion:old_entities/vincent_van_gore/at_death/normal

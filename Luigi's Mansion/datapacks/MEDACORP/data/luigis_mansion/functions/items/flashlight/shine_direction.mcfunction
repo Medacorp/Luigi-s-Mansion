@@ -1,4 +1,4 @@
-execute if entity @s[tag=!flipped_gravity] if score #mirrored Selected matches 0 run function luigis_mansion:items/flashlight/shine_direction/normal
-execute if entity @s[tag=flipped_gravity] if score #mirrored Selected matches 0 run function luigis_mansion:items/flashlight/shine_direction/normal_flipped
+execute if entity @s[tag=!flipped_gravity] unless score #mirrored Selected matches 1 run function luigis_mansion:items/flashlight/shine_direction/normal
+execute if entity @s[tag=flipped_gravity] unless score #mirrored Selected matches 1 run function luigis_mansion:items/flashlight/shine_direction/normal_flipped
 execute if entity @s[tag=!flipped_gravity] if score #mirrored Selected matches 1 run function luigis_mansion:items/flashlight/shine_direction/mirrored
 execute if entity @s[tag=flipped_gravity] if score #mirrored Selected matches 1 run function luigis_mansion:items/flashlight/shine_direction/mirrored_flipped

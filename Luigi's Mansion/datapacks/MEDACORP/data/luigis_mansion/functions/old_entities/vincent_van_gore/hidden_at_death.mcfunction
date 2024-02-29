@@ -1,1 +1,0 @@
-execute if score #mansion_type Selected matches 1 run function luigis_mansion:old_entities/vincent_van_gore/at_death/hidden

@@ -1,5 +1,5 @@
 execute unless entity @a[scores={LastRoom=49},limit=1] run function #luigis_mansion:room/hidden/the_twins_room/reset
-execute as @e[scores={Room=49},tag=ghost,tag=!portrait_ghost,nbt=!{ArmorItems:[{tag:{luigis_mansion:{entity:{namespace:"luigis_mansion",id:"boo"}}}}]}] run function luigis_mansion:old_entities/ghost/non_ticking_room
+execute as @e[scores={Room=49},tag=ghost,tag=!portrait_ghost,nbt=!{data:{entity:{namespace:"luigis_mansion",id:"boo"}}}] run function luigis_mansion:entities/ghost/non_ticking_room
 scoreboard players reset #the_twins_room Vacuumables
 
 execute if score #the_twins_room Wave matches 3 unless entity @a[x=729.5,y=20,z=-40.5,distance=..1,tag=pull_open_door,limit=1] if score #players Totals matches 1 run tellraw @a {"type":"translatable","translate":"chat.type.text","with":[{"type":"translatable","translate":"luigis_mansion:entity.henry","color":"green"},{"type":"translatable","translate":"luigis_mansion:dialog.twins.game.1"}]}

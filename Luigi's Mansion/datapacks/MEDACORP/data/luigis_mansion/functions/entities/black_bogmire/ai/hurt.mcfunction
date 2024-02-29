@@ -13,5 +13,5 @@ scoreboard players set @s[scores={VacuumTime=1},tag=hurt] Sound 40
 
 data modify entity @s data.animation set value {namespace:"luigis_mansion",id:"flee"}
 
-execute store result entity @s Rotation[0] float 0.01 run data get entity @p[tag=!spectator,tag=player] Rotation[0] 100
-execute if score #temp Move matches 1.. at @s run function luigis_mansion:old_entities/ghost/move_forward
+data modify entity @s Rotation set from entity @a[tag=!spectator,tag=player,tag=vacuuming,sort=nearest,limit=1] Rotation
+execute if score #temp Move matches 1.. at @s run function luigis_mansion:entities/ghost/move_forward

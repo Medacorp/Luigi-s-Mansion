@@ -1,1 +1,0 @@
-$function $(namespace):entities/floating_whirlindas/reset/$(id)

@@ -66,6 +66,7 @@ scoreboard objectives add FurnitureRotationSpeed dummy
 scoreboard objectives add FurnitureRotationSpeedDefault dummy
 scoreboard objectives add FurnitureSearch dummy
 scoreboard objectives add FurnitureShake dummy
+scoreboard objectives add FurnitureShakeTime dummy
 scoreboard objectives add FurnitureSizeForward dummy
 scoreboard objectives add FurnitureSizeHeight dummy
 scoreboard objectives add FurnitureSizeLeft dummy
@@ -135,6 +136,7 @@ scoreboard objectives add MapZoomTime dummy
 scoreboard objectives add MaxHealth dummy
 scoreboard objectives add MaxHealthTime dummy
 scoreboard objectives add MelodyChoice trigger
+scoreboard objectives add MeltProgress dummy
 scoreboard objectives add MirrorX dummy
 scoreboard objectives add MirrorZ dummy
 scoreboard objectives add ModelTime dummy

@@ -1,1 +1,1 @@
-function luigis_mansion:old_entities/bone/spooky/normal
+function luigis_mansion:entities/bone/spooky/normal

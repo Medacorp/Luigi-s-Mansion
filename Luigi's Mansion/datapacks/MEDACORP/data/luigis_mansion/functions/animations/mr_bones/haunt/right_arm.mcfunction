@@ -1,2 +1,2 @@
-execute if score #mirrored Selected matches 0 run function luigis_mansion:animations/mr_bones/haunt/normal/right_arm
+execute unless score #mirrored Selected matches 1 run function luigis_mansion:animations/mr_bones/haunt/normal/right_arm
 execute if score #mirrored Selected matches 1 run function luigis_mansion:animations/mr_bones/haunt/mirrored/right_arm

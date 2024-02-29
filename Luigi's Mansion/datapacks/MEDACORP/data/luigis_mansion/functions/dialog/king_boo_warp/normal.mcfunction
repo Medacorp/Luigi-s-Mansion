@@ -7,53 +7,47 @@ execute if entity @s[scores={Dialog=1}] run stopsound @a[tag=same_room] music
 execute unless data storage luigis_mansion:data current_state.current_data.technical_data{king_boo_warp:1b} if entity @s[scores={Dialog=1..1050}] as @a[tag=same_room] run function luigis_mansion:other/music/set/king_boo_warp
 execute if data storage luigis_mansion:data current_state.current_data.technical_data{king_boo_warp:1b} if entity @s[scores={Dialog=1..1050}] as @a[tag=same_room] run function luigis_mansion:other/music/set/mysterious_power
 execute if entity @s[scores={Dialog=1}] run scoreboard players set @a[tag=same_room] Music 0
-tag @s[scores={Dialog=1}] add appear
+data modify entity @s[scores={Dialog=1}] data.animation set value {namespace:"luigis_mansion",id:"appear"}
 execute if entity @s[scores={Dialog=1}] run playsound luigis_mansion:entity.king_boo.laugh_2 hostile @a[tag=same_room] ~ ~ ~ 1
 execute if entity @s[scores={Dialog=1..}] as @a[tag=same_room,gamemode=!spectator,tag=!looking_at_map] run function luigis_mansion:entities/player/animation/set/idle
-tag @s[scores={Dialog=10}] remove appear
+data remove entity @s[scores={Dialog=10}] data.animation
 execute if data storage luigis_mansion:data current_state.current_data.technical_data{king_boo_warp:1b} run scoreboard players set @s[scores={Dialog=20}] Dialog 850
 execute if entity @s[scores={Dialog=20}] run tellraw @a[tag=same_room] {"type":"translatable","translate":"chat.type.text","with":[{"type":"translatable","translate":"luigis_mansion:entity.king_boo","color":"green"},{"type":"translatable","translate":"luigis_mansion:dialog.king_boo_warp.1"}]}
 execute if entity @s[scores={Dialog=60}] run tellraw @a[tag=same_room] {"type":"translatable","translate":"chat.type.text","with":[{"type":"translatable","translate":"luigis_mansion:entity.king_boo","color":"green"},{"type":"translatable","translate":"luigis_mansion:dialog.king_boo_warp.2"}]}
 execute if entity @s[scores={Dialog=100}] run tellraw @a[tag=same_room] {"type":"translatable","translate":"chat.type.text","with":[{"type":"translatable","translate":"luigis_mansion:entity.king_boo","color":"green"},{"type":"translatable","translate":"luigis_mansion:dialog.king_boo_warp.3"}]}
-scoreboard players set @s[scores={Dialog=140}] AnimationProgress 0
-tag @s[scores={Dialog=140}] add complain
+data modify entity @s[scores={Dialog=140}] data.animation set value {namespace:"luigis_mansion",id:"complain"}
 execute if entity @s[scores={Dialog=140}] run playsound luigis_mansion:entity.king_boo.complain hostile @a[tag=same_room] ~ ~ ~ 1
 execute if entity @s[scores={Dialog=140}] run tellraw @a[tag=same_room] {"type":"translatable","translate":"chat.type.text","with":[{"type":"translatable","translate":"luigis_mansion:entity.king_boo","color":"green"},{"type":"translatable","translate":"luigis_mansion:dialog.king_boo_warp.4"}]}
 execute if entity @s[scores={Dialog=196}] run tellraw @a[tag=same_room] {"type":"translatable","translate":"chat.type.text","with":[{"type":"translatable","translate":"luigis_mansion:entity.king_boo","color":"green"},{"type":"translatable","translate":"luigis_mansion:dialog.king_boo_warp.5"}]}
-scoreboard players set @s[scores={Dialog=216}] AnimationProgress 0
-tag @s[scores={Dialog=216}] remove complain
+data remove entity @s[scores={Dialog=216}] data.animation
 execute if entity @s[scores={Dialog=216}] run tellraw @a[tag=same_room] {"type":"translatable","translate":"chat.type.text","with":[{"type":"translatable","translate":"luigis_mansion:entity.king_boo","color":"green"},{"type":"translatable","translate":"luigis_mansion:dialog.king_boo_warp.6"}]}
-tag @s[scores={Dialog=272}] add laugh
+data modify entity @s[scores={Dialog=272}] data.animation set value {namespace:"luigis_mansion",id:"laugh"}
 execute if entity @s[scores={Dialog=272}] if score #players Totals matches 1 run tellraw @a[tag=same_room] {"type":"translatable","translate":"chat.type.text","with":[{"type":"translatable","translate":"luigis_mansion:entity.king_boo","color":"green"},{"type":"translatable","translate":"luigis_mansion:dialog.king_boo_warp.7","with":[{"type":"selector","selector":"@p"}]}]}
 execute if entity @s[scores={Dialog=272}] if score #players Totals matches 2.. run tellraw @a[tag=same_room] {"type":"translatable","translate":"chat.type.text","with":[{"type":"translatable","translate":"luigis_mansion:entity.king_boo","color":"green"},{"type":"translatable","translate":"luigis_mansion:dialog.king_boo_warp.7.more"}]}
-tag @s[scores={Dialog=292}] remove laugh
+data remove entity @s[scores={Dialog=292}] data.animation
 execute if entity @s[scores={Dialog=416}] as @a[tag=same_room,scores={Sound=0}] unless entity @s[scores={InteractionTime=1..}] run function #luigis_mansion:room/yell
 execute if entity @s[scores={Dialog=416}] run playsound luigis_mansion:entity.king_boo.laugh_2 hostile @a[tag=same_room] ~ ~ ~ 1
-scoreboard players set @s[scores={Dialog=456}] AnimationProgress 0
+data modify entity @s[scores={Dialog=456}] data.animation set value {namespace:"luigis_mansion",id:"taunt"}
 execute if entity @s[scores={Dialog=456}] run playsound luigis_mansion:entity.king_boo.flinch hostile @a[tag=same_room] ~ ~ ~ 1
-scoreboard players set @s[scores={Dialog=460}] AnimationProgress 0
+data remove entity @s[scores={Dialog=460}] data.animation
 execute if entity @s[scores={Dialog=476}] if score #players Totals matches 1 run tellraw @a[tag=same_room] {"type":"translatable","translate":"chat.type.text","with":[{"type":"translatable","translate":"luigis_mansion:entity.king_boo","color":"green"},{"type":"translatable","translate":"luigis_mansion:dialog.king_boo_warp.8"}]}
 execute if entity @s[scores={Dialog=476}] if score #players Totals matches 2.. run tellraw @a[tag=same_room] {"type":"translatable","translate":"chat.type.text","with":[{"type":"translatable","translate":"luigis_mansion:entity.king_boo","color":"green"},{"type":"translatable","translate":"luigis_mansion:dialog.king_boo_warp.8.more"}]}
-scoreboard players set @s[scores={Dialog=540}] AnimationProgress 0
-tag @s[scores={Dialog=540}] add complain
+data modify entity @s[scores={Dialog=540}] data.animation set value {namespace:"luigis_mansion",id:"complain"}
 execute if entity @s[scores={Dialog=540}] run playsound luigis_mansion:entity.king_boo.complain hostile @a[tag=same_room] ~ ~ ~ 1
 execute if entity @s[scores={Dialog=540}] run tellraw @a[tag=same_room] {"type":"translatable","translate":"chat.type.text","with":[{"type":"translatable","translate":"luigis_mansion:entity.king_boo","color":"green"},{"type":"translatable","translate":"luigis_mansion:dialog.king_boo_warp.9"}]}
 execute if entity @s[scores={Dialog=684}] as @a[tag=same_room,gamemode=!spectator,tag=!looking_at_map] run function luigis_mansion:entities/player/animation/set/inspect
-tag @s[scores={Dialog=704}] remove complain
-scoreboard players set @s[scores={Dialog=704}] AnimationProgress 0
+data modify entity @s[scores={Dialog=704}] data.animation set value {namespace:"luigis_mansion",id:"taunt"}
 execute if entity @s[scores={Dialog=704}] run playsound luigis_mansion:entity.king_boo.flinch hostile @a[tag=same_room] ~ ~ ~ 1
-scoreboard players set @s[scores={Dialog=708}] AnimationProgress 0
+data remove entity @s[scores={Dialog=708}] data.animation
 execute if entity @s[scores={Dialog=714}] if score #players Totals matches 1 run tellraw @a[tag=same_room] {"type":"translatable","translate":"chat.type.text","with":[{"type":"translatable","translate":"luigis_mansion:entity.king_boo","color":"green"},{"type":"translatable","translate":"luigis_mansion:dialog.king_boo_warp.10"}]}
 execute if entity @s[scores={Dialog=714}] if score #players Totals matches 2.. run tellraw @a[tag=same_room] {"type":"translatable","translate":"chat.type.text","with":[{"type":"translatable","translate":"luigis_mansion:entity.king_boo","color":"green"},{"type":"translatable","translate":"luigis_mansion:dialog.king_boo_warp.10.more"}]}
 execute if entity @s[scores={Dialog=794}] run tellraw @a[tag=same_room] {"type":"translatable","translate":"chat.type.text","with":[{"type":"translatable","translate":"luigis_mansion:entity.king_boo","color":"green"},{"type":"translatable","translate":"luigis_mansion:dialog.king_boo_warp.11"}]}
-tag @s[scores={Dialog=810}] add laugh
+data modify entity @s[scores={Dialog=810}] data.animation set value {namespace:"luigis_mansion",id:"laugh"}
 execute if entity @s[scores={Dialog=810}] run tellraw @a[tag=same_room] {"type":"translatable","translate":"chat.type.text","with":[{"type":"translatable","translate":"luigis_mansion:entity.king_boo","color":"green"},{"type":"translatable","translate":"luigis_mansion:dialog.king_boo_warp.12"}]}
 execute if entity @s[scores={Dialog=850}] if score #players Totals matches 1 run tellraw @a[tag=same_room] {"type":"translatable","translate":"chat.type.text","with":[{"type":"translatable","translate":"luigis_mansion:entity.king_boo","color":"green"},{"type":"translatable","translate":"luigis_mansion:dialog.king_boo_warp.13"}]}
 execute if entity @s[scores={Dialog=850}] if score #players Totals matches 2.. run tellraw @a[tag=same_room] {"type":"translatable","translate":"chat.type.text","with":[{"type":"translatable","translate":"luigis_mansion:entity.king_boo","color":"green"},{"type":"translatable","translate":"luigis_mansion:dialog.king_boo_warp.13.more"}]}
 execute store result score @s Boos run data get storage luigis_mansion:data current_state.current_data.boo_counter
-tag @s[scores={Dialog=970}] remove laugh
-scoreboard players set @s[scores={Dialog=970}] AnimationProgress 0
-tag @s[scores={Dialog=970}] add complain
+data modify entity @s[scores={Dialog=970}] data.animation set value {namespace:"luigis_mansion",id:"complain"}
 execute if entity @s[scores={Dialog=970}] run playsound luigis_mansion:entity.king_boo.complain hostile @a[tag=same_room] ~ ~ ~ 1
 execute if entity @s[scores={Dialog=970}] unless data storage luigis_mansion:data current_state.current_data.technical_data{king_boo_warp:1b} run tellraw @a[tag=same_room] {"type":"translatable","translate":"chat.type.text","with":[{"type":"translatable","translate":"luigis_mansion:entity.king_boo","color":"green"},{"type":"translatable","translate":"luigis_mansion:dialog.king_boo_warp.14.0"}]}
 execute if entity @s[scores={Dialog=970}] if data storage luigis_mansion:data current_state.current_data.technical_data{king_boo_warp:1b} if score @s Boos matches 39 run tellraw @a[tag=same_room] {"type":"translatable","translate":"chat.type.text","with":[{"type":"translatable","translate":"luigis_mansion:entity.king_boo","color":"green"},{"type":"translatable","translate":"luigis_mansion:dialog.king_boo_warp.14.1"}]}
@@ -63,9 +57,7 @@ execute if entity @s[scores={Dialog=970}] if data storage luigis_mansion:data cu
 execute if entity @s[scores={Dialog=970}] if data storage luigis_mansion:data current_state.current_data.technical_data{king_boo_warp:1b} if score @s Boos matches 35 run tellraw @a[tag=same_room] {"type":"translatable","translate":"chat.type.text","with":[{"type":"translatable","translate":"luigis_mansion:entity.king_boo","color":"green"},{"type":"translatable","translate":"luigis_mansion:dialog.king_boo_warp.14.5"}]}
 execute if entity @s[scores={Dialog=970}] if data storage luigis_mansion:data current_state.current_data.technical_data{king_boo_warp:1b} if score @s Boos matches ..34 if score #players Totals matches 1 run tellraw @a[tag=same_room] {"type":"translatable","translate":"chat.type.text","with":[{"type":"translatable","translate":"luigis_mansion:entity.king_boo","color":"green"},{"type":"translatable","translate":"luigis_mansion:dialog.king_boo_warp.14.11"}]}
 execute if entity @s[scores={Dialog=970}] if data storage luigis_mansion:data current_state.current_data.technical_data{king_boo_warp:1b} if score @s Boos matches ..34 if score #players Totals matches 2.. run tellraw @a[tag=same_room] {"type":"translatable","translate":"chat.type.text","with":[{"type":"translatable","translate":"luigis_mansion:entity.king_boo","color":"green"},{"type":"translatable","translate":"luigis_mansion:dialog.king_boo_warp.14.11.more"}]}
-scoreboard players set @s[scores={Dialog=1050}] AnimationProgress 0
-tag @s[scores={Dialog=1050}] remove complain
-tag @s[scores={Dialog=1050}] add appear
+data modify entity @s[scores={Dialog=1050}] data.animation set value {namespace:"luigis_mansion",id:"appear"}
 execute if entity @s[scores={Dialog=1050}] unless data storage luigis_mansion:data current_state.current_data.technical_data{king_boo_warp:1b} if score #players Totals matches 1 run tellraw @a[tag=same_room] {"type":"translatable","translate":"chat.type.text","with":[{"type":"translatable","translate":"luigis_mansion:entity.king_boo","color":"green"},{"type":"translatable","translate":"luigis_mansion:dialog.king_boo_warp.15"}]}
 execute if entity @s[scores={Dialog=1050}] unless data storage luigis_mansion:data current_state.current_data.technical_data{king_boo_warp:1b} if score #players Totals matches 2.. run tellraw @a[tag=same_room] {"type":"translatable","translate":"chat.type.text","with":[{"type":"translatable","translate":"luigis_mansion:entity.king_boo","color":"green"},{"type":"translatable","translate":"luigis_mansion:dialog.king_boo_warp.15.more"}]}
 execute if entity @s[scores={Dialog=1050}] if data storage luigis_mansion:data current_state.current_data.technical_data{king_boo_warp:1b} if score @s Boos matches 35..37 if score #players Totals matches 1 run tellraw @a[tag=same_room] {"type":"translatable","translate":"chat.type.text","with":[{"type":"translatable","translate":"luigis_mansion:entity.king_boo","color":"green"},{"type":"translatable","translate":"luigis_mansion:dialog.king_boo_warp.15"}]}
@@ -78,7 +70,7 @@ execute if entity @s[scores={Dialog=1050}] run playsound luigis_mansion:music.wa
 execute if entity @s[scores={Dialog=1050}] run scoreboard players set @a[tag=warp_target] Music 80
 execute if entity @s[scores={Dialog=1050..}] as @e[tag=same_room,tag=game_boy_horror_location] run function luigis_mansion:entities/game_boy_horror_location/bring_player_back
 execute if entity @s[scores={Dialog=1050..1110}] as @a[tag=warp_target] at @s unless entity @s[x=684,dx=0] run teleport @s ~0.5 ~ ~
-tag @s[scores={Dialog=1060}] remove appear
+data remove entity @s[scores={Dialog=1060}] data.animation
 execute if entity @s[scores={Dialog=1110}] as @a[tag=same_room,tag=!spectator,tag=!looking_at_map] run function luigis_mansion:entities/player/animation/set/none
 execute if entity @s[scores={Dialog=1110}] as @a[tag=same_room] run function luigis_mansion:other/music/set/silence
 execute if entity @s[scores={Dialog=1110}] run teleport @a[tag=warp_target] 751.0 11 9.0

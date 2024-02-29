@@ -1,1 +1,0 @@
-function luigis_mansion:old_entities/slim_bankshot/at_death/normal

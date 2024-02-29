@@ -1,0 +1,1 @@
+execute if score #conservatory Wave matches -1 run tag @s add remove_from_existence

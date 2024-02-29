@@ -1,0 +1,2 @@
+execute unless score #mirrored Selected matches 1 run function luigis_mansion:animations/bowser/tail_attack/normal/tail
+execute if score #mirrored Selected matches 1 run function luigis_mansion:animations/bowser/tail_attack/mirrored/tail

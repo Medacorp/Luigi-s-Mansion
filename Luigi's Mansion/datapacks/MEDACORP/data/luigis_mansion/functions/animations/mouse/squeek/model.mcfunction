@@ -1,2 +1,2 @@
-execute if score #mirrored Selected matches 0 run function luigis_mansion:animations/mouse/squeek/normal/model
+execute unless score #mirrored Selected matches 1 run function luigis_mansion:animations/mouse/squeek/normal/model
 execute if score #mirrored Selected matches 1 run function luigis_mansion:animations/mouse/squeek/mirrored/model

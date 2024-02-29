@@ -1,2 +1,0 @@
-execute if score #mirrored Selected matches 0 run function luigis_mansion:old_animations/bowser/normal/breathe_fire
-execute if score #mirrored Selected matches 1 run function luigis_mansion:old_animations/bowser/mirrored/breathe_fire

@@ -11,7 +11,4 @@ execute if entity @s[tag=searchable_by_interact,tag=search] run function luigis_
 tag @s[tag=!searchable_by_interact,tag=search] add open
 execute if entity @s[tag=drop_loot] run function luigis_mansion:entities/furniture/search/generic
 
-execute if entity @s[tag=open,scores={ActionTime=0..}] run function #luigis_mansion:entities/furniture/open
-scoreboard players set @s[tag=open,scores={ActionTime=0}] ActionTime -1
-
 execute if entity @s[tag=sparkles,tag=!open] run function luigis_mansion:entities/furniture/spawn/sparkles

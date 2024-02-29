@@ -1,0 +1,1 @@
+$function $(namespace):entities/floating_whirlindas_female/reset/$(id)

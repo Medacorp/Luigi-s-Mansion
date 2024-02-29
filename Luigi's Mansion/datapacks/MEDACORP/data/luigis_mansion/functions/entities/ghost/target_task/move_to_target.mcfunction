@@ -1,5 +1,6 @@
 scoreboard players set @s TargetTime 0
 data remove entity @s data.target_pos
+tag @s remove reached_target
 summon minecraft:marker ~ ~ ~ {Tags:["target_pos","remove_from_existence"]}
 data modify entity @e[tag=target_pos,limit=1] Pos set from entity @e[tag=target,limit=1,sort=nearest] Pos
 execute facing entity @e[tag=target_pos,limit=1] feet run teleport @s ~ ~ ~ ~ ~

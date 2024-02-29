@@ -1,0 +1,2 @@
+execute unless score #mirrored Selected matches 1 run function luigis_mansion:animations/furniture/open/normal/projector
+execute if score #mirrored Selected matches 1 run function luigis_mansion:animations/furniture/open/mirrored/projector

@@ -6,17 +6,16 @@ Sawning a key additionally requires a macro string called "door", which matches 
 entity:{
     //Interaction
     scan_message:{ //The message spoken when scanning this Toad, E. Gadd, portrait ghost or fake door.
-        sender:"me", //Who speaks when scanning this entity. Either "scanner" or "me". If set to scanner, and the scan is from Gooigi, sends the usual "......" message instead.
         message:..., //See furniture variable scan_message; "spawn_ghost" not accepted.
-        plural_message:'JSON' //The message used when more than 1 player is present; only used if sender is set to "me" and message is not set to "" or "warp".
+        sender:"scanner", //Optional, who speaks when scanning this entity. If set to "scanner", and the scan is from Gooigi, sends the usual "......" message instead. Default = me; only used if message is 'JSON'.
+        plural_message:'JSON' //Optional, the message used when more than 1 player is present; only used if sender is set to "me" and message is 'JSON'.
     }, 
-    female_scan_message:{}, //The message spoken when scanning the female floating whirlinda, same format as above. Only applies to the floating whirlindas (obviously).
     can_talk_to:1b, //Whether this entity can be talked to. Default = 1b for Toad and E. Gadd, and 0b for everything else.
     
     //General
     rotation:[0.0f,0.0f], //Sets the direction this entity will face.
     spawn_time:X, //How much to skip in the vanish timer. Does not affect entities that cannot vanish.
-    room:X, //Room number that this entity is in. Default = 0.
+    room:X, //Room number that this entity is in. Default = room number of whoever is @s on function call, if absent = 0.
     
     //Ghosts
     spawn:1b, //How this ghost spawns: 0b = 3 second wait before it can spawn, 1b = forced spawn, 2b = can spawn immediately if under the correct conditions. Initial spawn only. Default = 0b.
@@ -62,6 +61,7 @@ entity:{
     paths:[ //Paths this entity can follow; used by the target task "follow path"; if that task is selected, but this is empty, it turns into the "do nothing" task. Default = none.
         { //A single option; using the "set_random_path" function selects a random option; using "set_specific_path" sets the path to the index specified in the macro "index".
             loop:1b, //Whether this path loops or not. If not, the entity stops at the end of the path. Default = 0b.
+            force_move:1b, //If set, the ghost will move forward, even into invalid positions such as walls. Default = 0b.
             steps:[ //Individual path steps to go to.
                 {
                     instant:1b, //If the entity warps to this step position, rather than progressing towards it. Default = 0b.

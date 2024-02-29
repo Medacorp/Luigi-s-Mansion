@@ -1,1 +1,1 @@
-function luigis_mansion:old_entities/neville/tick/normal
+function luigis_mansion:entities/neville/ai/mansion/normal

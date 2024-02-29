@@ -5,10 +5,10 @@ scoreboard players operation @e[tag=partner,limit=1] TaskTime = @s TaskTime
 
 teleport @s[scores={WaitTime=1}] ~ ~ ~ ~ ~
 execute if entity @s[scores={WaitTime=1}] positioned ^ ^ ^0.5 run teleport @e[tag=partner,limit=1] ~ ~ ~ ~-180 ~
-execute if entity @s[scores={WaitTime=..99},tag=!dance_other_direction] if score #mirrored Selected matches 0 rotated ~5.4 ~ rotated as @s run teleport @s ~ ~ ~ ~5.4 ~
-execute if entity @s[scores={WaitTime=..99},tag=!dance_other_direction] if score #mirrored Selected matches 0 rotated ~5.4 ~ positioned ^ ^ ^0.5 as @e[tag=partner,limit=1] rotated as @s run teleport @s ~ ~ ~ ~5.4 ~
-execute if entity @s[scores={WaitTime=..99},tag=dance_other_direction] if score #mirrored Selected matches 0 rotated ~-5.4 ~ rotated as @s run teleport @s ~ ~ ~ ~-5.4 ~
-execute if entity @s[scores={WaitTime=..99},tag=dance_other_direction] if score #mirrored Selected matches 0 rotated ~-5.4 ~ positioned ^ ^ ^0.5 as @e[tag=partner,limit=1] rotated as @s run teleport @s ~ ~ ~ ~-5.4 ~
+execute if entity @s[scores={WaitTime=..99},tag=!dance_other_direction] unless score #mirrored Selected matches 1 rotated ~5.4 ~ rotated as @s run teleport @s ~ ~ ~ ~5.4 ~
+execute if entity @s[scores={WaitTime=..99},tag=!dance_other_direction] unless score #mirrored Selected matches 1 rotated ~5.4 ~ positioned ^ ^ ^0.5 as @e[tag=partner,limit=1] rotated as @s run teleport @s ~ ~ ~ ~5.4 ~
+execute if entity @s[scores={WaitTime=..99},tag=dance_other_direction] unless score #mirrored Selected matches 1 rotated ~-5.4 ~ rotated as @s run teleport @s ~ ~ ~ ~-5.4 ~
+execute if entity @s[scores={WaitTime=..99},tag=dance_other_direction] unless score #mirrored Selected matches 1 rotated ~-5.4 ~ positioned ^ ^ ^0.5 as @e[tag=partner,limit=1] rotated as @s run teleport @s ~ ~ ~ ~-5.4 ~
 execute if entity @s[scores={WaitTime=..99},tag=!dance_other_direction] if score #mirrored Selected matches 1 rotated ~-5.4 ~ rotated as @s run teleport @s ~ ~ ~ ~5.4 ~
 execute if entity @s[scores={WaitTime=..99},tag=!dance_other_direction] if score #mirrored Selected matches 1 rotated ~-5.4 ~ positioned ^ ^ ^0.5 as @e[tag=partner,limit=1] rotated as @s run teleport @s ~ ~ ~ ~5.4 ~
 execute if entity @s[scores={WaitTime=..99},tag=dance_other_direction] if score #mirrored Selected matches 1 rotated ~5.4 ~ rotated as @s run teleport @s ~ ~ ~ ~-5.4 ~

@@ -1,0 +1,2 @@
+execute unless score #mirrored Selected matches 1 run function luigis_mansion:animations/clockwork_soldier/shoot/normal/right_arm
+execute if score #mirrored Selected matches 1 run function luigis_mansion:animations/clockwork_soldier/shoot/mirrored/right_arm

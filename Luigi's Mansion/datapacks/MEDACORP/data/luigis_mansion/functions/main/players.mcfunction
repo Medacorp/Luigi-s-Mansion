@@ -1,3 +1,4 @@
+execute if entity @s[scores={Room=..0}] if score #mirrored Selected matches 1 run scoreboard players set #mirrored Selected 2
 execute if entity @s[tag=using_selection_menu,tag=fetch_option_result] run function luigis_mansion:entities/player/selection_menu/get_selected_option
 execute if entity @s[tag=using_selection_menu,tag=!selection_menu_free_to_move] run function luigis_mansion:entities/player/selection_menu/freeze_in_place
 
@@ -107,3 +108,4 @@ tag @s remove mirror_set_by_furniture_entity
 #/to remove
 tag @s[tag=camera] add spectator
 data remove storage luigis_mansion:data selected_option
+execute if score #mirrored Selected matches 2 run scoreboard players set #mirrored Selected 1

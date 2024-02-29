@@ -1,1 +1,0 @@
-function luigis_mansion:old_entities/henry/disappear/normal

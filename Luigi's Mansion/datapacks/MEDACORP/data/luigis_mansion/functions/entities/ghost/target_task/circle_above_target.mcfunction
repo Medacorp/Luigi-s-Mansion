@@ -14,10 +14,10 @@ summon minecraft:marker ~ ~ ~ {Tags:["target_pos","remove_from_existence"]}
 data modify entity @e[tag=target_pos,limit=1] Pos set from entity @s data.target_pos
 execute facing entity @e[tag=target_pos,limit=1] feet run teleport @s ~ ~ ~ ~ ~
 execute if entity @e[tag=target_pos,distance=..1,limit=1] run tag @s[tag=!change_height] add new_reached_target
-execute if score #mirrored Selected matches 0 run teleport @s[tag=new_reached_target,tag=!reached_target] ~ ~ ~ ~-90 ~
+execute unless score #mirrored Selected matches 1 run teleport @s[tag=new_reached_target,tag=!reached_target] ~ ~ ~ ~-90 ~
 execute if score #mirrored Selected matches 1 run teleport @s[tag=new_reached_target,tag=!reached_target] ~ ~ ~ ~90 ~
 scoreboard players set #temp Move 3150
-execute if score #mirrored Selected matches 0 store result storage luigis_mansion:data macro.angle float 0.001 run scoreboard players operation #temp Move /= @s Move
+execute unless score #mirrored Selected matches 1 store result storage luigis_mansion:data macro.angle float 0.001 run scoreboard players operation #temp Move /= @s Move
 execute if score #mirrored Selected matches 1 store result storage luigis_mansion:data macro.angle float -0.001 run scoreboard players operation #temp Move /= @s Move
 scoreboard players reset #temp Move
 #circle circumfence = 6.3 blocks; 1 tick is Move*0.1 blocks

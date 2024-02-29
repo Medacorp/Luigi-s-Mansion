@@ -1,0 +1,2 @@
+execute unless score #mirrored Selected matches 1 run function luigis_mansion:animations/bowser/correct_head/normal/head
+execute if score #mirrored Selected matches 1 run function luigis_mansion:animations/bowser/correct_head/mirrored/head

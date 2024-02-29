@@ -1,0 +1,2 @@
+execute unless score #mirrored Selected matches 1 run function luigis_mansion:animations/sir_weston/melted/normal/head
+execute if score #mirrored Selected matches 1 run function luigis_mansion:animations/sir_weston/melted/mirrored/head

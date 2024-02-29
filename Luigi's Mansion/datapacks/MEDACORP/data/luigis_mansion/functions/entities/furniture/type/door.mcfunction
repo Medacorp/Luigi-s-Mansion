@@ -19,7 +19,3 @@ tag @s remove had_blockade
 tag @s[tag=blockade] add had_blockade
 tag @s[tag=area_blockade] add had_blockade
 tag @s add blockade_sounds_can_play
-
-data modify storage luigis_mansion:data macro set value {name:"door",passive:{namespace:"luigis_mansion",id:"furniture/door"}}
-execute store result storage luigis_mansion:data macro.id int 1 run scoreboard players get @s PassiveNr
-function luigis_mansion:animations/passive with storage luigis_mansion:data macro

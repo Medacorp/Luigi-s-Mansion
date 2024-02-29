@@ -4,4 +4,5 @@ scoreboard players set @e[tag=this_entity,limit=1] EntitySizeRadius 5
 scoreboard players set @e[tag=this_entity,limit=1] EntityYOffset 14
 function luigis_mansion:spawn_entities/setup/default
 tag @e[tag=this_entity,limit=1] remove this_entity
+data remove storage luigis_mansion:data entity
 playsound luigis_mansion:entity.boo.trap hostile @a[tag=same_room] ~ ~ ~ 1

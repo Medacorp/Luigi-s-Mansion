@@ -8,4 +8,4 @@ scoreboard players operation @s VulnerableTime -= #temp VulnerableTime
 scoreboard players set @s[scores={VulnerableTime=..0}] VulnerableTime 2
 scoreboard players operation @s StunTime = @s VulnerableTime
 scoreboard players reset #temp VulnerableTime
-execute if entity @s[tag=!visible] run function luigis_mansion:old_entities/ghost/turn_visible
+tag @s add visible

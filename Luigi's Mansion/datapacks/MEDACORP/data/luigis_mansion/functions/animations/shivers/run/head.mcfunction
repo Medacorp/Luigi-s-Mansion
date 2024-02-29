@@ -1,0 +1,2 @@
+execute unless score #mirrored Selected matches 1 run function luigis_mansion:animations/shivers/run/normal/head
+execute if score #mirrored Selected matches 1 run function luigis_mansion:animations/shivers/run/mirrored/head

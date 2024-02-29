@@ -1,2 +1,2 @@
-execute if score #mirrored Selected matches 0 run function luigis_mansion:animations/mr_bones/hurt/normal/body
+execute unless score #mirrored Selected matches 1 run function luigis_mansion:animations/mr_bones/hurt/normal/body
 execute if score #mirrored Selected matches 1 run function luigis_mansion:animations/mr_bones/hurt/mirrored/body
