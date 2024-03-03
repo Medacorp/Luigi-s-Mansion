@@ -1,1 +1,0 @@
-execute if entity @s[nbt={data:{entity:{namespace:"e3_demo",id:"boo"}}}] run function e3_demo:old_entities/boo/tick

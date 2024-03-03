@@ -1,1 +1,0 @@
-execute if entity @s[tag=boomerang] if entity @e[tag=!new,limit=1,tag=boomerang] run kill @s

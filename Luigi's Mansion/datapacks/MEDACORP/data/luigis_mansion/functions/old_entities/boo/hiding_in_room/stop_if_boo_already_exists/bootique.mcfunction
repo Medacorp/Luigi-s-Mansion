@@ -1,1 +1,0 @@
-execute if entity @s[tag=bootique] if entity @e[tag=!new,limit=1,tag=bootique] run kill @s

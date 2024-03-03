@@ -1,1 +1,0 @@
-execute if entity @s[nbt={ArmorItems:[{tag:{luigis_mansion:{namespace:"luigis_mansion",id:"item"}}}]}] run function #luigis_mansion:items/poltergust_3000/effect_on_entity/vacuum/effect/item with entity @s ArmorItems[3].tag.luigis_mansion

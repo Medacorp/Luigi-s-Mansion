@@ -1,1 +1,0 @@
-function luigis_mansion:old_entities/boo_marker/warp/normal

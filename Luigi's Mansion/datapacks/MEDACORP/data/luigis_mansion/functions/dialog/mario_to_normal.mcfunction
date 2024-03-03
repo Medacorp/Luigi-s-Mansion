@@ -14,7 +14,8 @@ execute if entity @s[scores={Dialog=20}] run teleport @e[tag=marios_painting] 77
 execute if entity @s[scores={Dialog=30}] as @a[scores={Room=-3}] run function luigis_mansion:other/music/set/non_overwritten_silence
 execute if entity @s[scores={Dialog=31}] run data merge entity @e[tag=marios_painting,limit=1] {Fixed:1b,ItemRotation:0b,Silent:1b}
 execute if entity @s[scores={Dialog=31}] run teleport @e[tag=marios_painting] 771 78 -12
-execute if entity @s[scores={Dialog=31}] run summon minecraft:armor_stand 770.99 78.47 -12 {Rotation:[-90.0f,0.0f],Pose:{Head:[90.0f,0.0f,0.0f]},Tags:["mario","portrificationizing"],Marker:1b,Invisible:1b,Silent:1b,ArmorItems:[{},{},{},{id:"minecraft:painting",Count:1b,tag:{CustomModelData:2}}],DisabledSlots:2039583}
+execute if entity @s[scores={Dialog=31}] run summon minecraft:armor_stand 770.99 78.47 -12 {Rotation:[-90.0f,0.0f],Pose:{Head:[90.0f,0.0f,0.0f]},Tags:["mario","portrificationizing"],Marker:1b,Invisible:1b,Silent:1b,ArmorItems:[{},{},{},{id:"minecraft:painting",Count:1b,tag:{CustomModelData:2,luigis_mansion:{entity:{namespace:"luigis_mansion",id:"mario"},mansion:{namespace:"luigis_mansion",id:"empty"}}}}],DisabledSlots:2039583}
+execute if entity @s[scores={Dialog=31}] run data modify entity @e[tag=mario,tag=portrificationizing,limit=1] ArmorItems[3].tag.luigis_mansion.mansion set from entity @e[tag=marios_painting,limit=1] Item.tag.luigis_mansion.mansion
 execute if entity @s[scores={Dialog=31}] run playsound luigis_mansion:music.mario_to_normal_1 music @a[scores={Room=-3}] ~ ~ ~ 1000
 execute if entity @s[scores={Dialog=31}] run scoreboard players set @a[scores={Room=-3}] Music 710
 tag @s[scores={Dialog=33}] remove mario_to_normal

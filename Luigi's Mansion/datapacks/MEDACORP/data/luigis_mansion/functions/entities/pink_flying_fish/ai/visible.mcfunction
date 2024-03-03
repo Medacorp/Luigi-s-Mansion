@@ -1,3 +1,4 @@
+tag @s[tag=in_vacuum] add flee
 function luigis_mansion:entities/ghost/ai
 
 scoreboard players set @s[tag=flee] WaitTime 0

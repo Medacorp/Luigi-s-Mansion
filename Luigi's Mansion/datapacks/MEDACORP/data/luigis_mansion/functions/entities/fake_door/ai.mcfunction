@@ -1,7 +1,8 @@
 function luigis_mansion:entities/ghost/ai
 
 execute if entity @s[tag=element_hurt] run function luigis_mansion:entities/fake_door/burn
-execute if entity @s[tag=extinguish] run function luigis_mansion:entities/fake_door/extinguish
+execute if entity @s[tag=element_hurt,tag=in_water] run function luigis_mansion:entities/fake_door/extinguish
+execute if entity @s[tag=!element_hurt] run setblock ^ ^ ^0.5 minecraft:air
 execute if entity @s[tag=try_open,tag=!attack] run function luigis_mansion:entities/fake_door/use
 tag @s remove try_open
 

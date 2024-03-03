@@ -9,13 +9,15 @@ execute unless entity @s[scores={Dialog=1..}] unless entity @e[tag=same_room,tag
 execute unless entity @s[scores={Dialog=1..}] unless entity @e[tag=same_room,tag=light_me,tag=!lit] run playsound luigis_mansion:music.solve_puzzle music @a[tag=same_room] ~ ~ ~ 10000
 execute unless entity @s[scores={Dialog=1..}] unless entity @e[tag=same_room,tag=light_me,tag=!lit] run scoreboard players set @a[tag=same_room,tag=!spectator,scores={Music=..29}] Music 30
 execute unless entity @s[scores={Dialog=1..}] unless entity @e[tag=same_room,tag=light_me,tag=!lit] run scoreboard players set @s Dialog 1
-execute if entity @s[scores={Dialog=0..20}] run teleport @e[tag=mr_luggs_food,limit=1] ^ ^0.5 ^2
-execute if entity @s[scores={Dialog=21..50}] run teleport @e[tag=mr_luggs_food,limit=1] ^ ^0.3 ^2
-execute if entity @s[scores={Dialog=51..80}] run teleport @e[tag=mr_luggs_food,limit=1] ^ ^0.1 ^2
-execute if entity @s[scores={Dialog=81..99}] run teleport @e[tag=mr_luggs_food,limit=1] ^ ^-0.1 ^2^ ^0.5 ^2
+execute if entity @s[scores={Dialog=0..20}] as @e[tag=mr_luggs_food,limit=1] run data modify entity @s ArmorItems[3] merge from entity @s ArmorItems[3].tag.luigis_mansion.model_data.default
+execute if entity @s[scores={Dialog=21..50}] as @e[tag=mr_luggs_food,limit=1] run data modify entity @s ArmorItems[3] merge from entity @s ArmorItems[3].tag.luigis_mansion.model_data.slightly_decreased
+execute if entity @s[scores={Dialog=51..80}] as @e[tag=mr_luggs_food,limit=1] run data modify entity @s ArmorItems[3] merge from entity @s ArmorItems[3].tag.luigis_mansion.model_data.decreased
+execute if entity @s[scores={Dialog=81..99}] as @e[tag=mr_luggs_food,limit=1] run data modify entity @s ArmorItems[3] merge from entity @s ArmorItems[3].tag.luigis_mansion.model_data.largely_descreased
 scoreboard players add @s[scores={Dialog=100..}] Dialog 1
-execute if entity @s[scores={Dialog=101}] run data modify entity @e[tag=mr_luggs_food,limit=1] ArmorItems[3].id set value "minecraft:stone_button"
+execute if entity @e[tag=mr_luggs_food,tag=was_in_vacuum,limit=1] run scoreboard players add @s[scores={Dialog=1..99}] Dialog 1
+execute if entity @s[scores={Dialog=100}] run data modify entity @e[tag=mr_luggs_food,limit=1] ArmorItems[3].id set value "minecraft:stone_button"
 execute if entity @s[scores={Dialog=2..99}] run tag @e[tag=hidden,nbt={data:{entity:{namespace:"luigis_mansion",id:"waiter"}}}] add spawn
+execute if entity @s[scores={Dialog=..99}] if entity @e[tag=same_room,tag=waiter,tag=attack] run scoreboard players set @s Dialog 1
 
 execute unless entity @s[scores={Dialog=100..}] run scoreboard players add @s ActionTime 1
 data modify entity @s[scores={Dialog=..99,ActionTime=1}] data.animation set value {namespace:"luigis_mansion",id:"eat"}

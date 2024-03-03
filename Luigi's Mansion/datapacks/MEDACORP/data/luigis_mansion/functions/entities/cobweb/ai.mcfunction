@@ -8,4 +8,3 @@ execute if score #temp VacuumTime matches 3..4 run data modify entity @s[tag=!br
 execute if score #temp VacuumTime matches 5..6 run data modify entity @s[tag=!broken] ArmorItems[3].tag.CustomModelData set value 2
 scoreboard players reset #temp VacuumTime
 execute if entity @s[tag=in_vacuum,scores={VacuumTime=40}] run function luigis_mansion:entities/cobweb/break
-tag @s remove in_vacuum

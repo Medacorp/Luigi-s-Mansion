@@ -9,7 +9,7 @@ execute if entity @s[scores={ActionTime=21..121}] unless score #mirrored Selecte
 execute if entity @s[scores={ActionTime=21..121}] if score #mirrored Selected matches 1 store result entity @s Rotation[0] float 0.1 run scoreboard players operation #temp Time += @s Time
 execute if entity @s[scores={ActionTime=21..121}] run data modify storage luigis_mansion:data entity set value {damage:{}}
 execute if entity @s[scores={ActionTime=21..121}] run data modify storage luigis_mansion:data entity.damage.attack set from entity @s data.damage.breathe_fire
-execute if entity @s[scores={ActionTime=21..121}] store result storage luigis_mansion:data entity.owner int 1 run scoreboard players get GhostNr
+execute if entity @s[scores={ActionTime=21..121}] store result storage luigis_mansion:data entity.owner int 1 run scoreboard players get @s GhostNr
 execute at @s[scores={ActionTime=21..121}] positioned ^ ^ ^7 run function luigis_mansion:spawn_entities/burning_floor
 execute at @s[scores={ActionTime=21..121}] positioned ^ ^ ^4 as @e[distance=..2,tag=game_boy_horror_location] run function luigis_mansion:entities/game_boy_horror_location/bring_player_back
 execute if entity @s[scores={ActionTime=21..121}] run data modify storage luigis_mansion:data damage set value {method:{namespace:"luigis_mansion",id:"fire"},amount:0,animation:{namespace:"luigis_mansion",id:"knockback/burn"},attacker:-1,no_delete:1b}

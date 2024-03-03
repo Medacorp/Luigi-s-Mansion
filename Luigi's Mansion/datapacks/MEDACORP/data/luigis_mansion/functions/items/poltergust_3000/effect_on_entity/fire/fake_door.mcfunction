@@ -1,2 +1,0 @@
-tag @s[nbt={ArmorItems:[{tag:{luigis_mansion:{namespace:"luigis_mansion",id:"fake_door"}}}]}] add burning
-execute if entity @s[nbt={ArmorItems:[{tag:{luigis_mansion:{namespace:"luigis_mansion",id:"fake_door"}}}]}] run function luigis_mansion:items/poltergust_3000/latch_onto_ghost with storage luigis_mansion:data macro

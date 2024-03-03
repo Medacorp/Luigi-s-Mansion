@@ -1,1 +1,0 @@
-execute positioned as @s[nbt={ArmorItems:[{tag:{luigis_mansion:{namespace:"luigis_mansion",id:"vacuumable_object"}}}]},tag=vacuumable] run function luigis_mansion:entities/vacuumable_object/pull

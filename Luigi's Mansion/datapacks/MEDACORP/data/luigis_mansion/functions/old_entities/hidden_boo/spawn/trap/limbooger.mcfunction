@@ -1,1 +1,0 @@
-execute if entity @s[tag=limbooger_trap] run data modify storage luigis_mansion:data current_state.current_data.boos[{name:"limbooger"}].trap_found set value 1b

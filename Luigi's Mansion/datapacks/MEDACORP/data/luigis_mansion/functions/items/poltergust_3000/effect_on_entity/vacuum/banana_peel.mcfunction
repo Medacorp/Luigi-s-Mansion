@@ -1,1 +1,0 @@
-execute positioned as @s[nbt={ArmorItems:[{tag:{luigis_mansion:{namespace:"luigis_mansion",id:"banana_peel"}}}]},tag=vacuumable] positioned ~ ~0.6 ~ run function luigis_mansion:items/poltergust_3000/effect_on_entity/vacuum/effect/banana_peel

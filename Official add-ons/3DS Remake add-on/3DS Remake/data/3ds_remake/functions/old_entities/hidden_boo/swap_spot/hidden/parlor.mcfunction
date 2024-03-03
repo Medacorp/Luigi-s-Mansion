@@ -1,1 +1,0 @@
-function luigis_mansion:old_entities/hidden_boo/swap_spot/normal/parlor

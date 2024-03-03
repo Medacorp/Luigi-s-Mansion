@@ -1,0 +1,1 @@
+$function $(namespace):entities/hidden_boo/warp/$(id)

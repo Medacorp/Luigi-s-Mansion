@@ -24,10 +24,6 @@ entity:{
     attack_type:"<type>", //Ghost attack type to use, differs per ghost, see IDs in use for valid values.
     second_flee_damage:X, //How much damage this ghost can take in one suction before it enters its second flee state, escaping 2.5 seconds later. If absent, never enters second flee state.
     affected_by:["<method>"], //The methods this portrait ghost is affected by aside from vacuuming. Allowed values: dust, fire, water, ice. Default = none.
-    mansion:{ //The mansion this portrait ghost is in, this is used to run mansion specific functions (such as AI and resetting).
-        namespace:"luigis_mansion", //The namespace of the mansion. Default = "luigis_mansion".
-        id:"empty" //The ID of the mansion. Default = "empty".
-    },
     training_room_score:X, //Score granted to the one who reeled in the ghost in the training room. Default = 0.
     
     //Ghost default overwrites
@@ -40,12 +36,21 @@ entity:{
     flee_speed:X, //The movement speed of the ghost while fleeing from the Poltergust.
     vanish_time:X, //How many ticks the ghost can stay in the world, haunting, but not attacking, laughing, complaining, being collided with, etc. before it vanishes. -1 means never.
     damage:{ //Damage values the ghost uses in its functions.
-        <type>:X //The amount of damage dealt. Type is usually collision and attack (also used by created projectiles), but can be other values.
+        <type>:X, //The amount of damage dealt. Type is usually collision and attack (also used by created projectiles), but can be other values.
+        breathe_fire:10, //Bowser's breathe fire attack and resulting burning floors
+        vacuum:10, //Bowser's vacuum attack
+        tail:10, //Bowser's tail attack
+        spike_ball:10, //Bowser's spike balls' explosion and resulting burning floor
+        spit_ice:10 //Bowser's spit ice attack (when decapitated)
     },
     
     //Boos
-    id:"boo_b_hatch", //ID of this boo. Default = none.
+    boo:{ //The boo ID to get data for.
+        namespace:"luigis_mansion", //The namespace of the boo. Default = "luigis_mansion".
+        id:"boo_b_hatch" //The ID of the boo. Default = "null".
+    },
     name:'JSON', //Name of this boo. Default = '{"translate":"luigis_mansion:entity.boo"}'.
+    say_message:1b, //Whether or not this boo says one of its messages after its appear animation. Default = 0b.
     can_attack:1b, //Whether or not this boo can attack. Default = 0b.
     show_health:1b, //Whether or not this boo shows health and is affected by the poltergust. Default = 1b.
     
@@ -71,6 +76,10 @@ entity:{
             ]
         }
     ],
+    mansion:{ //The mansion this portrait ghost, boo or mario belongs to, this is used to run mansion specific functions (such as AI and resetting).
+        namespace:"luigis_mansion", //The namespace of the mansion. Default = "luigis_mansion".
+        id:"empty" //The ID of the mansion. Default = "empty".
+    },
     owner:X, //The GhostNr of the ghost that owns this projectile. A hit of miss will add the laugh or complain tag respectively to the owner.
     door:{ //Required for and used only by fake doors.
         model:{ //Required, the ID of the door model. See IDs in use for valid IDs.

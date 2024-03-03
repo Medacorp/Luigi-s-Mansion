@@ -39,11 +39,8 @@ execute if entity @s[scores={Dialog=480}] if score #players Totals matches 1 run
 execute if entity @s[scores={Dialog=480}] if score #players Totals matches 2.. run tellraw @a[tag=same_room] {"type":"translatable","translate":"chat.type.text","with":[{"type":"translatable","translate":"luigis_mansion:entity.mansion","color":"green"},{"type":"translatable","translate":"luigis_mansion:message.the_end.more"}]}
 execute if entity @s[scores={Dialog=700}] run tellraw @a[tag=same_room] {"type":"translatable","translate":"chat.type.text","with":[{"type":"translatable","translate":"luigis_mansion:entity.mansion","color":"green"},{"type":"translatable","translate":"luigis_mansion:message.the_end.h_rank"}]}
 execute if entity @s[scores={Dialog=700}] run data modify storage luigis_mansion:data current_state.mansion_ranks_achieved.h set value 1b
-execute if entity @s[scores={Dialog=700}] run function #luigis_mansion:cleared_mansion
-execute if entity @s[scores={Dialog=700}] unless score #3ds_remake Loaded matches 1.. run function luigis_mansion:old_entities/mario/delete_mansion_data
-execute if entity @s[scores={Dialog=700}] unless score #3ds_remake Loaded matches 1.. run scoreboard players set #mansion_type Selected -1
-execute if entity @s[scores={Dialog=700}] unless score #3ds_remake Loaded matches 1.. run scoreboard players set #mansion_data_index Selected -1
-execute if entity @s[scores={Dialog=700}] unless score #3ds_remake Loaded matches 1.. run scoreboard players set #previous_mansion_index Selected -1
+execute if entity @s[scores={Dialog=700}] run function e3_demo:room/original/cleared
+execute if entity @s[scores={Dialog=700}] unless score #3ds_remake Loaded matches 1.. run function luigis_mansion:other/delete_current_mansion_data
 execute if entity @s[scores={Dialog=700}] unless score #3ds_remake Loaded matches 1.. run tellraw @a[tag=same_room] {"type":"translatable","translate":"luigis_mansion:message.save.yes","color":"green","clickEvent":{"action":"run_command","value":"/trigger EGaddGhostPortrificationizerRoomChoice set 1"},"extra":[{"type":"text","text":"\n"},{"type":"translatable","translate":"luigis_mansion:message.save.no","clickEvent":{"action":"run_command","value":"/trigger EGaddGhostPortrificationizerRoomChoice set 2"}}]}
 execute if entity @s[scores={Dialog=700}] unless score #3ds_remake Loaded matches 1.. run scoreboard players enable @a[tag=same_room] EGaddGhostPortrificationizerRoomChoice
 execute if entity @s[scores={Dialog=700}] unless score #3ds_remake Loaded matches 1.. run tag @a add show_credits

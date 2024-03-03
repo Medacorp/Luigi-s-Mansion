@@ -1,2 +1,0 @@
-tag @s[tag=vacuumable,nbt={ArmorItems:[{tag:{luigis_mansion:{namespace:"luigis_mansion",id:"spark"}}}]},tag=visible] add explode
-execute if entity @s[tag=vacuumable,nbt={ArmorItems:[{tag:{luigis_mansion:{namespace:"luigis_mansion",id:"spark"}}}]},tag=visible] run function luigis_mansion:items/poltergust_3000/latch_onto_ghost with storage luigis_mansion:data macro

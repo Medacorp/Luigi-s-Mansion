@@ -5,7 +5,6 @@ scoreboard players reset #temp Room
 
 execute if entity @s[tag=first_key,tag=play] run function luigis_mansion:dialog/first_key
 
-function #luigis_mansion:entities
 execute if entity @s[type=minecraft:marker] run function luigis_mansion:entities/tick with entity @s data.entity
 execute if entity @s[type=minecraft:armor_stand] run function luigis_mansion:entities/tick with entity @s ArmorItems[3].tag.luigis_mansion.entity
 scoreboard players reset #temp Move

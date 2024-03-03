@@ -1,4 +1,5 @@
-execute if entity @s[tag=!furniture] run function luigis_mansion:items/poltergust_3000/effect_on_entity/root
-execute if entity @s[tag=!furniture,tag=hit_by_poltergust] run function #luigis_mansion:items/poltergust_3000/effect_on_entity/vacuum
-execute if entity @s[tag=furniture] run function luigis_mansion:items/poltergust_3000/effect_on_furniture/root
-execute if entity @s[tag=furniture,tag=hit_by_poltergust] run function luigis_mansion:items/poltergust_3000/effect_on_furniture/vacuum
+tag @s add in_vacuum
+data modify entity @s[type=minecraft:armor_stand] ArmorItems[3].tag.luigis_mansion.hit_by.vacuum append value 0
+execute store result entity @s[type=minecraft:armor_stand] ArmorItems[3].tag.luigis_mansion.hit_by.vacuum int 1 run scoreboard players get #temp ID
+data modify entity @s[type=minecraft:marker] data.hit_by.vacuum append value 0
+execute store result entity @s[type=minecraft:marker] data.hit_by.vacuum int 1 run scoreboard players get #temp ID

@@ -5,4 +5,5 @@ data modify storage luigis_mansion:data damage set value {method:{namespace:"lui
 data modify storage luigis_mansion:data damage.amount set from entity @s ArmorItems[3].tag.luigis_mansion.damage.attack
 execute at @a[gamemode=!spectator,distance=..1.5] run function luigis_mansion:entities/player/damage
 data remove storage luigis_mansion:data damage
+tag @s[tag=in_water] add dead
 tag @s[scores={Time=60..}] add dead

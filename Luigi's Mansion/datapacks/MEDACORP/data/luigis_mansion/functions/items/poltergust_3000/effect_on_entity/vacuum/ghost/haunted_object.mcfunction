@@ -1,1 +1,0 @@
-execute positioned as @s[nbt={ArmorItems:[{tag:{luigis_mansion:{namespace:"luigis_mansion",id:"haunted_object"}}}]}] unless entity @s[tag=!moving,tag=!haunted_music_sheet] unless entity @s[tag=haunted_music_sheet,scores={WaitTime=..0}] run function luigis_mansion:items/poltergust_3000/effect_on_entity/vacuum/effect/ghost/haunted_object

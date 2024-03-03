@@ -32,10 +32,7 @@ execute if entity @s[scores={Dialog=456}] if score #players Totals matches 1 run
 execute if entity @s[scores={Dialog=456}] if score #players Totals matches 2.. run tellraw @a[tag=same_room] {"type":"translatable","translate":"chat.type.text","with":[{"type":"translatable","translate":"3ds_remake:entity.future_e_gadd","color":"green"},{"type":"translatable","translate":"3ds_remake:dialog.gooigi_results.3.more"}]}
 execute if entity @s[scores={Dialog=456}] as @a[tag=same_room] at @s run playsound luigis_mansion:entity.e_gadd.talk.mah_mah_mah_luigi_oui neutral @s ~ ~ ~ 1
 execute if entity @s[scores={Dialog=560..563}] as @a[tag=same_room] run function luigis_mansion:other/music/set/credits
-execute if entity @s[scores={Dialog=560}] run function luigis_mansion:old_entities/mario/delete_mansion_data
-execute if entity @s[scores={Dialog=560}] run scoreboard players set #mansion_type Selected -1
-execute if entity @s[scores={Dialog=560}] run scoreboard players set #mansion_data_index Selected -1
-execute if entity @s[scores={Dialog=560}] run scoreboard players set #previous_mansion_index Selected -1
+execute if entity @s[scores={Dialog=560}] run function luigis_mansion:other/delete_current_mansion_data
 execute if entity @s[scores={Dialog=561}] run tellraw @a[tag=same_room] {"type":"translatable","translate":"luigis_mansion:message.save.yes","color":"green","clickEvent":{"action":"run_command","value":"/trigger EGaddGhostPortrificationizerRoomChoice set 1"},"extra":[{"type":"text","text":"\n"},{"type":"translatable","translate":"luigis_mansion:message.save.no","clickEvent":{"action":"run_command","value":"/trigger EGaddGhostPortrificationizerRoomChoice set 2"}}]}
 execute if entity @s[scores={Dialog=561}] run scoreboard players enable @a[tag=same_room] EGaddGhostPortrificationizerRoomChoice
 execute if entity @s[scores={Dialog=561}] run tag @a add show_credits

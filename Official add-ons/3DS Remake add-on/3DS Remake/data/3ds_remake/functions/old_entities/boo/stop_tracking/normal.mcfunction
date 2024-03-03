@@ -1,1 +1,0 @@
-execute if score #mansion_type Selected matches 0 run function 3ds_remake:old_entities/boo/stop_tracking/stop/normal

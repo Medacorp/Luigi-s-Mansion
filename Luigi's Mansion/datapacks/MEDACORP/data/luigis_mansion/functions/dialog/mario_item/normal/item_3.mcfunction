@@ -20,6 +20,6 @@ execute if entity @s[scores={Dialog=768}] if score #players Totals matches 1 run
 execute if entity @s[scores={Dialog=768}] if score #players Totals matches 2.. run tellraw @a[tag=same_room] {"type":"translatable","translate":"chat.type.text","with":[{"type":"translatable","translate":"luigis_mansion:entity.madame_clairvoya","color":"green"},{"type":"translatable","translate":"luigis_mansion:dialog.madame_clairvoya.item_3.3.more"}]}
 data modify entity @s[scores={Dialog=1136}] data.animation set value {namespace:"luigis_mansion",id:"nod"}
 execute if entity @s[scores={Dialog=1136}] run tellraw @a[tag=same_room] {"type":"translatable","translate":"chat.type.text","with":[{"type":"translatable","translate":"luigis_mansion:entity.madame_clairvoya","color":"green"},{"type":"translatable","translate":"luigis_mansion:dialog.madame_clairvoya.item_3.4"}]}
-data modify entity @s[scores={Dialog=1232}] data.animation
+data remove entity @s[scores={Dialog=1232}] data.animation
 execute if entity @s[scores={Dialog=1232}] as @a[tag=same_room,gamemode=!spectator,tag=!looking_at_map] run function luigis_mansion:entities/player/animation/set/none
 tag @s[scores={Dialog=1232}] remove talk

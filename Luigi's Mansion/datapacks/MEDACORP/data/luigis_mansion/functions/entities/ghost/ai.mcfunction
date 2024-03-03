@@ -9,8 +9,14 @@ scoreboard players set @s[tag=vanish] VulnerableTime 0
 scoreboard players set @s[tag=vanish] StunTime 0
 scoreboard players set @s[tag=vanish] HurtTime 0
 
-execute if entity @s[tag=!hurt,tag=flee,tag=!dying,scores={VulnerableTime=0..}] run function luigis_mansion:entities/ghost/hurt/vacuum
-execute if entity @s[tag=hurt,tag=!disappear,tag=!dying,scores={VulnerableTime=0..}] run function luigis_mansion:entities/ghost/hurt/vacuum
+execute if entity @s[tag=in_fire,tag=hurt_by_fire,tag=!burning_heart,tag=!watery_heart,tag=!hurt,tag=!appear,tag=!vanish] run function luigis_mansion:entities/ghost/hurt/fire
+execute if entity @s[tag=in_water,tag=hurt_by_water,tag=!watery_heart,tag=!frozen_heart,tag=!hurt,tag=!appear,tag=!vanish] run function luigis_mansion:entities/ghost/hurt/water
+execute if entity @s[tag=in_ice,tag=hurt_by_ice,tag=!burning_heart,tag=!frozen_heart,tag=!hurt,tag=!appear,tag=!vanish] run function luigis_mansion:entities/ghost/hurt/ice
+execute if entity @s[tag=in_vacuum,tag=pulled_by_vacuum,tag=!hurt,tag=!appear,tag=!vanish] run function luigis_mansion:entities/ghost/hurt/vacuum_pull
+execute if entity @s[tag=in_vacuum,tag=vacuumable,tag=!hurt,tag=!appear,tag=!vanish] run function luigis_mansion:entities/ghost/hurt/vacuum_capture
+execute if entity @s[tag=in_vacuum,scores={VulnerableTime=1..},tag=!appear,tag=!vanish] run function luigis_mansion:entities/ghost/hurt/vacuum_attack
+
+execute if entity @s[tag=!dying,scores={VulnerableTime=0..}] unless entity @s[tag=!hurt,tag=!flee] run function luigis_mansion:entities/ghost/hurt/vacuum
 execute if entity @s[tag=!hurt,tag=!disappear,tag=!dying,tag=element_hurt] run function luigis_mansion:entities/ghost/hurt/element
 
 tag @s[tag=stunned,tag=!hurt,tag=!freeze_animation] add stun_freeze_animation
@@ -24,8 +30,9 @@ execute at @s[tag=flee,tag=!freeze] unless entity @s[scores={DeathTime=1..}] run
 execute if entity @s[scores={Health=-2147483648..}] unless entity @s[scores={StunTime=0},tag=!hurt,tag=!element_hurt,tag=!show_health,tag=!spawned_health_display] at @s run function luigis_mansion:entities/ghost/health/show
 execute if entity @s[scores={Health=-2147483648..}] unless entity @s[scores={VulnerableTime=0},tag=!burning_heart,tag=!watery_heart,tag=!frozen_heart,tag=!spawned_ghost_heart] at @s run function luigis_mansion:entities/ghost/heart/show
 
-execute at @s[scores={Health=0},tag=!element_hurt,tag=!element_death] run function luigis_mansion:entities/ghost/death
-execute at @s[scores={Health=0}] unless entity @s[tag=!element_hurt,tag=!element_death] run function luigis_mansion:entities/ghost/death_element
+execute at @s[tag=normal_death] run function luigis_mansion:entities/ghost/death
+execute at @s[scores={Health=0},tag=!element_hurt,tag=!element_death,tag=!normal_death] run function luigis_mansion:entities/ghost/death
+execute at @s unless entity @s[scores={Health=1..}] unless entity @s[tag=!element_hurt,tag=!element_death] run function luigis_mansion:entities/ghost/death_element
 
 tag @a remove vacuuming_this_ghost
 
@@ -42,7 +49,7 @@ execute unless data entity @s data.target run function luigis_mansion:entities/g
 scoreboard players operation #temp Move = @s Move
 execute unless entity @s[scores={ActionTime=0..}] run scoreboard players add @s ActionTime 0
 execute unless entity @s[scores={TargetTask=0..}] run scoreboard players add @s TargetTask 0
-#execute at @s[tag=!hurt,tag=!flee,tag=!freeze,scores={TargetTask=0,StunTime=0,ActionTime=0}] run function luigis_mansion:entities/ghost/target_task/do_nothing
+execute at @s[tag=!hurt,tag=!flee,tag=!freeze,scores={TargetTask=0,StunTime=0,ActionTime=0}] run function luigis_mansion:entities/ghost/target_task/do_nothing
 execute at @s[tag=!hurt,tag=!flee,tag=!freeze,scores={TargetTask=1,StunTime=0,ActionTime=0}] run function luigis_mansion:entities/ghost/target_task/move_to_target
 execute at @s[tag=!hurt,tag=!flee,tag=!freeze,scores={TargetTask=2,StunTime=0,ActionTime=0}] run function luigis_mansion:entities/ghost/target_task/stay_away_from_target
 execute at @s[tag=!hurt,tag=!flee,tag=!freeze,scores={TargetTask=3,StunTime=0,ActionTime=0}] run function luigis_mansion:entities/ghost/target_task/move_to_target_pos

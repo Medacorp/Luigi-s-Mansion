@@ -1,1 +1,0 @@
-execute if entity @s[tag=boolivia] if entity @e[tag=!new,limit=1,tag=boolivia] run kill @s

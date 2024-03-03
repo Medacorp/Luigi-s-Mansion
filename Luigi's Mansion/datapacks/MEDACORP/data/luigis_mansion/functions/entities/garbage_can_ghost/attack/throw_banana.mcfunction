@@ -1,5 +1,5 @@
 scoreboard players add @s TargetTask 0
-scoreboard players add @s[scores={ActionTime=41..}] SpawnTime 0
+scoreboard players add @s SpawnTime 0
 scoreboard players add @s ActionTime 1
 data modify entity @s[scores={ActionTime=1}] data.animation set value {namespace:"luigis_mansion",id:"throw_banana"}
 $execute if entity @s[scores={ActionTime=1}] run playsound $(namespace):entity.$(id).eat hostile @a[tag=same_room] ~ ~ ~ 1

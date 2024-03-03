@@ -1,5 +1,3 @@
-tag @s[tag=boo_hurt] add boo_death
-tag @s[tag=boo_hurt] remove boo_hurt
 scoreboard players add @s DeathTime 1
 
 execute if entity @s[scores={DeathTime=1}] run scoreboard players operation @s KillerID = @p[tag=vacuuming_this_ghost] ID

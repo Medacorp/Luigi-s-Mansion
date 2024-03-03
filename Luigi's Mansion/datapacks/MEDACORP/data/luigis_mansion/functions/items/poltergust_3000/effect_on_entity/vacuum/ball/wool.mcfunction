@@ -1,1 +1,0 @@
-execute positioned as @s[tag=wool,scores={SpawnTime=20..}] positioned ~ ~1.4 ~ run function luigis_mansion:items/poltergust_3000/effect_on_entity/vacuum/effect/ball

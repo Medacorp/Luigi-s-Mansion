@@ -1,2 +1,1 @@
-$execute if data storage luigis_mansion:data current_state.current_data.boos[{name:"$(id)"}] store result score #temp Time run data get storage luigis_mansion:data current_state.current_data.boos[{name:"$(id)"}].room
-$execute unless data storage luigis_mansion:data current_state.current_data.boos[{name:"$(id)"}] run scoreboard players reset #temp Time
+$execute if data storage luigis_mansion:data current_state.current_data.boos[{name:{namespace:"$(namespace)",id:"$(id)"}}] store result score #temp Time run data get storage luigis_mansion:data current_state.current_data.boos[{name:{namespace:"$(namespace)",id:"$(id)"}}].room

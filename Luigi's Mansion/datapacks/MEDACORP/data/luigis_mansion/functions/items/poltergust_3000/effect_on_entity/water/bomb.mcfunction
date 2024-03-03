@@ -1,1 +1,0 @@
-tag @s[tag=bomb] add dead

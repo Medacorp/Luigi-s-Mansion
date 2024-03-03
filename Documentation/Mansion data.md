@@ -19,7 +19,7 @@ Mansion data is a massive collection of info storing everything the map needs to
     obtained_keys:[], //List of door names of keys that have been collected.
     obtained_items:{}, //Flags of specific items that have been collected, where absent = not. (Mario items, boo radar, element medals)
     money_spawned:[], //List of loot names of loot that has been spawned before. Also contains entries for room clear chests opened, and "_money" entries for collecting any eternal coin in a room.
-    tracking_boos:[], //3DS REMAKE ADD-ON ONLY; a list of at most 3 Boo names to show on the map. Added when spawned, removed when captured.
+    tracking_boos:[], //3DS REMAKE ADD-ON ONLY; a list of at most 3 Boo IDs to show on the map. Added when spawned, removed when captured.
     gooigi_stats:{//3DS REMAKE ADD-ON ONLY; Gooigi's money and ghost count.
         ghosts:X, //How many ghosts Gooigi has defeated.
         money:X //How many Gs worth of money Gooigi has collected, excluding the last 3 0s.
@@ -38,6 +38,15 @@ Mansion data is a massive collection of info storing everything the map needs to
             top_vacuum_damage:0, //The highest amount of damage dealt in 1 suction.
             max_health:X, //The max health. Together with health, used to determine the pearl size to drop.
             //See also HP-having ghost data below
+        },
+        floating_whirlindas:{ //Save format for the floating whirlindas.
+            male:{ //Mr. Whirlinda's values.
+                //Non-base portrait ghost data.
+            },
+            female:{ //Miss. Whirlinda's values.
+                //Non-base portrait ghost data.
+            },
+            //BASE portrait ghost data.
         },
         henry_and_orville:{ //Save format for henry and orville.
             henry:{ //Henry's values.
@@ -60,22 +69,29 @@ Mansion data is a massive collection of info storing everything the map needs to
             },
             //BASE portrait ghost data.
         },
-        boolossus:{ //Boolossus' data; speed is treated differently for him, flee_speed doesn't exist.
+        boolossus:{ //Save format for boolossus.
             speed:70, //The sum of all split Boos' speed. The more Boos, the slower. The value represents the speed a single split boo would have if Boolossus popped with a current health of 1.
             merged_speed:30, //The speed the merged Boolossus form has.
-            //Other portrait ghost data.
+            max_health:X, //The max health.
+            //BASE portrait ghost data.
+            //See also HP-having ghost data below, except flee_speed
         }
     },
     boos:[
         {
-            name:"<name>", //The name of this Boo.
+            name:{ //The boo ID.
+                namespace:"luigis_mansion", //The namespace of the boo.
+                id:"boo_b_hatch" //The ID of the boo.
+            },
             room:X, //The room number this Boo is in.
             trap_found:0b, //Whether or not the trap from this Boo has been found before.
+            message:1, //Which message this boo shows upon spawning next time.
+            can_attack:1b, //Whether or not this boo can use the dash attack. Dash attack always gets enabled in a room from which a boo cannot warp away.
             //See also HP-having ghost data below, all fields except flee_speed and vanish_time.
         }
     ],
     ghosts:{ //Normal ghost variables.
-        <HP-having ghost>:{ //A ghost with HP (eg a gold ghost).
+        <HP-having ghost>:{ //A ghost with HP (for example a gold ghost).
             health:X, //Health at spawn.
             loot:{ //Loot this ghost drops upon defeat.
                 drop_at_0:1b, //When set, spawns the loot the moment health drops to 0, otherwise spawns it the moment the ghost is reeled in. Default = 0b.
@@ -88,7 +104,7 @@ Mansion data is a massive collection of info storing everything the map needs to
                 <type>:X //The amount of damage dealt. Type is usually collision and attack (also used by created projectiles), but can be other values. Default = 0.
             }
         },
-        <no-HP-having ghost>:{ //A ghost without HP (eg a bat).
+        <no-HP-having ghost>:{ //A ghost without HP (for example a bat).
             loot:{ //Loot this ghost drops upon defeat.
                 //See loot documentation for other variables.
             },

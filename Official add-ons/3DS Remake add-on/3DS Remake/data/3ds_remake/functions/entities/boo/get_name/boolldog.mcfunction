@@ -1,0 +1,1 @@
+data modify storage luigis_mansion:data entity.name set value '{"type":"translatable","translate":"3ds_remake:entity.boolldog"}'

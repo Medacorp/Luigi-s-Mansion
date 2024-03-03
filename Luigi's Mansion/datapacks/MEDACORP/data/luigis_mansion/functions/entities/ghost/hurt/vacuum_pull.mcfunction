@@ -1,0 +1,1 @@
+execute facing entity @a[tag=vacuuming_me,sort=nearest,limit=1] feet if block ^ ^ ^0.3 #luigis_mansion:ghosts_ignore unless entity @e[tag=player,tag=!spectator,distance=..1.2,limit=1] positioned as @s run teleport @s ^ ^ ^0.2

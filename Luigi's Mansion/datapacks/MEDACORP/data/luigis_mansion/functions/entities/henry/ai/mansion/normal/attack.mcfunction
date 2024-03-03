@@ -14,7 +14,7 @@ tag @s[tag=no_vehicle,scores={VulnerableTime=1}] add vanish
 
 tag @s[tag=!visible] add grab_vehicle
 execute at @s[tag=grab_vehicle] run function luigis_mansion:entities/henry/ai/mansion/normal/grab_vehicle
-data modify entity @s[tag=!no_vehicle,tag=!in_vacuum,tag=!laugh] {namespace:"luigis_mansion",id:"drive"}
+data modify entity @s[tag=!no_vehicle,tag=!in_vacuum,tag=!laugh] data.animation set value {namespace:"luigis_mansion",id:"drive"}
 
 execute at @s[tag=!no_vehicle,tag=!grab_vehicle,scores={TargetTask=0}] facing entity @e[tag=same_room,tag=!spectator,tag=player,sort=nearest,limit=1] feet rotated ~ 0 run teleport @s ~ ~ ~ ~ ~
 

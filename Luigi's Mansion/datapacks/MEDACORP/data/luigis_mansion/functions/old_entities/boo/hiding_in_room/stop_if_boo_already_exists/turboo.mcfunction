@@ -1,1 +1,0 @@
-execute if entity @s[tag=turboo] if entity @e[tag=!new,limit=1,tag=turboo] run kill @s

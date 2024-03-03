@@ -1,0 +1,5 @@
+execute if entity @s[scores={Variant=1}] run tellraw @a[tag=same_room] {"type":"translatable","translate":"chat.type.text","with":[{"type":"selector","selector":"@s","color":"green"},{"type":"translatable","translate":"luigis_mansion:message.boodacious.1"}]}
+execute if entity @s[scores={Variant=2}] run tellraw @a[tag=same_room] {"type":"translatable","translate":"chat.type.text","with":[{"type":"selector","selector":"@s","color":"green"},{"type":"translatable","translate":"luigis_mansion:message.boodacious.2"}]}
+execute if entity @s[scores={Variant=3}] run tellraw @a[tag=same_room] {"type":"translatable","translate":"chat.type.text","with":[{"type":"selector","selector":"@s","color":"green"},{"type":"translatable","translate":"luigis_mansion:message.boodacious.3"}]}
+execute if entity @s[scores={Variant=4}] run tellraw @a[tag=same_room] {"type":"translatable","translate":"chat.type.text","with":[{"type":"selector","selector":"@s","color":"green"},{"type":"translatable","translate":"luigis_mansion:message.boodacious.4"}]}
+scoreboard players set @s[scores={Variant=4}] Variant 0

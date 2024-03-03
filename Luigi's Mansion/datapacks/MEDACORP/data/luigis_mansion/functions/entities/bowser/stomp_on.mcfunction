@@ -3,4 +3,4 @@ data modify storage luigis_mansion:data damage set value {method:{namespace:"lui
 data modify storage luigis_mansion:data damage.amount set from entity @s data.damage.collide
 execute store result storage luigis_mansion:data damage.attacker int 1 run scoreboard players get @s GhostNr
 execute as @a[distance=..3,tag=!spectator] run function luigis_mansion:entities/player/damage
-data remove storage luigis_mansion:data damagefunction luigis_mansion:entities/player/damage
+data remove storage luigis_mansion:data damage

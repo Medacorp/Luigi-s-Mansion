@@ -135,11 +135,11 @@ execute if entity @s[scores={Dialog=320..401}] as @e[tag=ghost,tag=no_ai,limit=1
 execute if entity @s[scores={Dialog=391}] run data modify entity @e[tag=ghost,tag=no_ai,limit=1] data.animation set value {namespace:"luigis_mansion",id:"punch_wind_up"}
 execute if entity @s[scores={Dialog=431}] run data modify entity @e[tag=ghost,tag=no_ai,limit=1] data.animation set value {namespace:"luigis_mansion",id:"punch"}
 execute if entity @s[scores={Dialog=431}] at @e[tag=ghost,tag=no_ai,limit=1] run playsound luigis_mansion:entity.ghost.punch hostile @a[tag=same_room] ~ ~ ~ 1
-$execute if entity @s[scores={Dialog=431}] at @e[tag=ghost,tag=no_ai,limit=1] run playsound luigis_mansion:entity.gold_ghost.attack hostile @a[tag=same_room] ~ ~ ~ 1
+execute if entity @s[scores={Dialog=431}] at @e[tag=ghost,tag=no_ai,limit=1] run playsound luigis_mansion:entity.gold_ghost.attack hostile @a[tag=same_room] ~ ~ ~ 1
 execute if entity @s[scores={Dialog=451}] run data modify entity @e[tag=ghost,tag=no_ai,limit=1] data.animation set value {namespace:"luigis_mansion",id:"laugh"}
-$execute if entity @s[scores={Dialog=451}] at @e[tag=ghost,tag=no_ai,limit=1] run playsound luigis_mansion:entity.gold_ghost.laugh hostile @a[tag=same_room] ~ ~ ~ 1
+execute if entity @s[scores={Dialog=451}] at @e[tag=ghost,tag=no_ai,limit=1] run playsound luigis_mansion:entity.gold_ghost.laugh hostile @a[tag=same_room] ~ ~ ~ 1
 execute if entity @s[scores={Dialog=491}] run data modify entity @e[tag=ghost,tag=no_ai,limit=1] data.animation set value {namespace:"luigis_mansion",id:"vanish"}
-$execute if entity @s[scores={Dialog=491}] at @e[tag=ghost,tag=no_ai,limit=1] run playsound luigis_mansion:entity.gold_ghost.disappear hostile @a[tag=same_room] ~ ~ ~ 1
+execute if entity @s[scores={Dialog=491}] at @e[tag=ghost,tag=no_ai,limit=1] run playsound luigis_mansion:entity.gold_ghost.disappear hostile @a[tag=same_room] ~ ~ ~ 1
 execute if entity @s[scores={Dialog=531}] run tag @e[tag=ghost,tag=no_ai,limit=1] add remove_from_existence
 execute if entity @s[scores={Dialog=391..490}] as @e[tag=ghost,tag=no_ai,limit=1] at @s run teleport @s ~ ~ ~ facing entity @e[tag=e_gadd,tag=no_ai,limit=1] feet
 execute if entity @s[scores={Dialog=258}] run data modify entity @e[tag=e_gadd,tag=no_ai,limit=1] data.animation set value {namespace:"luigis_mansion",id:"walk_backwards"}

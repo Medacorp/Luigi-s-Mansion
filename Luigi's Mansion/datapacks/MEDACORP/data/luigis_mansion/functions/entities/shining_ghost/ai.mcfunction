@@ -14,9 +14,9 @@ execute if entity @s[tag=collision,tag=spit] run function luigis_mansion:entitie
 tag @s[tag=collision,tag=spit] add dead
 tag @s[tag=collision] remove spit
 tag @s[tag=collision] remove collision
-execute at @s[tag=in_vacuum] run function luigis_mansion:entities/shining_ghost/roll_to_player
-execute at @s[tag=in_vacuum] run scoreboard players operation @s KillerID = @p[distance=..1.5,tag=!spectator,tag=player,tag=vacuuming] ID
-execute at @s[tag=in_vacuum] if entity @p[distance=..1.5,tag=!spectator,tag=player,tag=vacuuming] run tag @s add can_spit
+execute at @s[tag=in_vacuum,tag=!spit] run function luigis_mansion:entities/shining_ghost/roll_to_player
+execute at @s[tag=in_vacuum,tag=!spit] run scoreboard players operation @s KillerID = @p[distance=..1.5,tag=!spectator,tag=player,tag=vacuuming] ID
+execute at @s[tag=in_vacuum,tag=!spit] if entity @p[distance=..1.5,tag=!spectator,tag=player,tag=vacuuming] run tag @s add can_spit
 data remove entity @s[tag=can_spit,tag=!spit] data.animation
 tag @s[tag=can_spit] add can_spit_2
 tag @s[tag=!can_spit] remove can_spit_2

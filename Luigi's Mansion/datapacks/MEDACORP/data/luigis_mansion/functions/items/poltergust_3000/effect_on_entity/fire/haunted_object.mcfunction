@@ -1,4 +1,0 @@
-tag @s[nbt={ArmorItems:[{tag:{luigis_mansion:{namespace:"luigis_mansion",id:"haunted_object"}}}]},tag=attack] add element_death
-execute if entity @s[nbt={ArmorItems:[{tag:{luigis_mansion:{namespace:"luigis_mansion",id:"haunted_object"}}}]},tag=attack] run function luigis_mansion:items/poltergust_3000/latch_onto_ghost with storage luigis_mansion:data macro
-tag @s[nbt={ArmorItems:[{tag:{luigis_mansion:{namespace:"luigis_mansion",id:"haunted_music_sheet"}}}]},scores={WaitTime=1..}] add element_death
-execute if entity @s[nbt={ArmorItems:[{tag:{luigis_mansion:{namespace:"luigis_mansion",id:"haunted_music_sheet"}}}]},scores={WaitTime=1..}] run function luigis_mansion:items/poltergust_3000/latch_onto_ghost with storage luigis_mansion:data macro

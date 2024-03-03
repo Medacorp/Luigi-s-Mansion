@@ -1,3 +1,0 @@
-execute if score #mansion_type Selected matches 0 if score #mansion_data_index Selected matches 0 run advancement grant @a only luigis_mansion:vanilla/clear_mansion
-execute if score #mansion_type Selected matches 0 if score #mansion_data_index Selected matches 0 run advancement grant @a only luigis_mansion:vanilla/unlock_hidden_mansion
-execute if score #mansion_type Selected matches 0 if score #mansion_data_index Selected matches 0 if data storage luigis_mansion:data current_state.current_data{lowest_difficulty:3} run advancement grant @a only luigis_mansion:vanilla/hardcore

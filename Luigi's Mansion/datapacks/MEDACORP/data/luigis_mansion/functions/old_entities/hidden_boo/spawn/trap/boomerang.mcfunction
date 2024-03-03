@@ -1,1 +1,0 @@
-execute if entity @s[tag=boomerang_trap] run data modify storage luigis_mansion:data current_state.current_data.boos[{name:"boomerang"}].trap_found set value 1b

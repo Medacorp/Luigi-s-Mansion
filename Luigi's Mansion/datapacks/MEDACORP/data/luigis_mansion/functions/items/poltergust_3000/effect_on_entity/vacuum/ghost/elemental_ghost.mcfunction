@@ -1,1 +1,0 @@
-execute positioned as @s[nbt={ArmorItems:[{tag:{luigis_mansion:{namespace:"luigis_mansion",id:"elemental_ghost"}}}]},scores={SpawnTime=21..}] run function luigis_mansion:items/poltergust_3000/effect_on_entity/vacuum/effect/ghost/elemental_ghost

@@ -1,1 +1,0 @@
-tag @s[tag=burning_floor] add watered

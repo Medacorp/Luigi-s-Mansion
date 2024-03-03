@@ -1,1 +1,0 @@
-execute if entity @s[tag=booripedes] run function luigis_mansion:spawn_entities/ghost/boo/booripedes

@@ -1,2 +1,0 @@
-execute if entity @s[tag=mr_boojangles] run data remove storage luigis_mansion:data current_state.current_data.boos[{name:"mr_boojangles"}]
-execute if entity @s[tag=mr_boojangles] run kill @e[tag=mr_boojangles_trap]

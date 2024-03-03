@@ -1,4 +1,5 @@
 tag @s add visible
+tag @s[tag=in_vacuum] add flee
 
 function luigis_mansion:entities/ghost/ai
 
@@ -10,8 +11,9 @@ tag @s[scores={WaitTime=3000..}] add turn_back
 tag @s[tag=flee,tag=!turn_back] add reached_target
 tag @s remove flee
 
-execute if entity @s[scores={TargetTask=0}] at @e[tag=exact_same_room,tag=!spectator,tag=player,tag=vacuuming,sort=nearest,limit=1] run function luigis_mansion:entities/yellow_bat/attack
+execute if entity @s[scores={TargetTask=0}] at @a[tag=exact_same_room,tag=vacuuming,sort=nearest,limit=1] run function luigis_mansion:entities/yellow_bat/attack
 execute if entity @s[tag=!turn_back,tag=reached_target] run function luigis_mansion:entities/purple_bat/return
+scoreboard players set @s[tag=turn_back,tag=!reached_target] TargetTask 3
 scoreboard players set @s[tag=turn_back,tag=reached_target] TargetTask 0
 execute at @s[scores={TargetTask=0}] facing entity @e[tag=same_room,tag=!spectator,tag=player,sort=nearest,limit=1] feet rotated ~ 0 run teleport @s ~ ~ ~ ~ ~
 

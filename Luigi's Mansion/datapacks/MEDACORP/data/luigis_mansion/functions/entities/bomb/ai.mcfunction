@@ -16,6 +16,8 @@ execute store result score #temp Time run data get entity @s Pose.Head[1]
 execute unless score #mirrored Selected matches 1 store result entity @s Pose.Head[1] float 1 run scoreboard players add #temp Time 5
 execute if score #mirrored Selected matches 1 store result entity @s Pose.Head[1] float 1 run scoreboard players remove #temp Time 5
 scoreboard players reset #temp Time
-execute at @s[scores={Move=10}] run function luigis_mansion:entities/bomb/explode
+scoreboard players set @s[scores={Move=..10},tag=in_fire] Move 10
+tag @s[scores={Move=..10},tag=in_water] add dead
+execute at @s[scores={Move=10},tag=!dead] run function luigis_mansion:entities/bomb/explode
 execute if entity @s[scores={Move=30,Owner=-2147483648..}] run function luigis_mansion:entities/bomb/owner_response
 tag @s[scores={Move=30}] add dead

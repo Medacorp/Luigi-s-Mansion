@@ -1,0 +1,3 @@
+execute at @s positioned ~ ~-2.5 ~ facing entity @e[nbt={data:{entity:{namespace:"luigis_mansion",id:"bowser"}}},limit=1] feet run teleport @s ~ ~2.5 ~ ~ ~
+execute at @s[tag=!flee,tag=!in_vacuum] if score #temp Move matches 1.. run function luigis_mansion:entities/ghost/move_forward_force
+execute at @s positioned ~ ~-2.5 ~ if entity @e[nbt={data:{entity:{namespace:"luigis_mansion",id:"bowser"}}},distance=..2,limit=1] run tag @s add vanish

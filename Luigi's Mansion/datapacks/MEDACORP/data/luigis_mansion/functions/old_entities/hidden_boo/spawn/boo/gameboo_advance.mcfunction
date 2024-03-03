@@ -1,1 +1,0 @@
-execute if entity @s[tag=gameboo_advance] run function luigis_mansion:spawn_entities/ghost/boo/gameboo_advance

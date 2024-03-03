@@ -1,3 +1,7 @@
+tag @s[scores={WaitTime=..0},tag=in_vacuum] add flee
+tag @s[scores={WaitTime=..0}] remove in_fire
+tag @s[scores={WaitTime=..0}] remove in_water
+tag @s[scores={WaitTime=..0}] remove in_ice
 function luigis_mansion:entities/ghost/ai
 execute if entity @s[tag=dead] run function luigis_mansion:entities/haunted_music_sheet/respawn
 

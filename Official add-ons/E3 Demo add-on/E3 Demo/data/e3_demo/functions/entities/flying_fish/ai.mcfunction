@@ -1,0 +1,2 @@
+execute if entity @s[tag=visible] run function e3_demo:entities/flying_fish/ai/visible
+execute if entity @s[tag=!visible] run function e3_demo:entities/flying_fish/ai/invisible with entity @s data.entity

@@ -1,4 +1,5 @@
 scoreboard players add @s TargetTask 0
+scoreboard players add @s SpawnTime 0
 scoreboard players add @s ActionTime 1
 data modify entity @s[scores={ActionTime=1}] data.animation set value {namespace:"luigis_mansion",id:"body_slam"}
 

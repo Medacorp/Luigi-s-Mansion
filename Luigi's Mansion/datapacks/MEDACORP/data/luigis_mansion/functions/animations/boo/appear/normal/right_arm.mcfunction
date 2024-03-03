@@ -10,3 +10,4 @@ teleport @s[scores={AnimationProgress=7}] ~ ~ ~ ~252 ~
 teleport @s[scores={AnimationProgress=8}] ~ ~ ~ ~288 ~
 teleport @s[scores={AnimationProgress=9}] ~ ~ ~ ~324 ~
 scoreboard players set @s[scores={AnimationProgress=10}] AnimationProgress 0
+execute store result entity @s Pose.Head[1] float -0.01 run data get entity @e[tag=this_entity,limit=1] Rotation[1] 100

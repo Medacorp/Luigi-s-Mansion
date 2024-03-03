@@ -1,1 +1,0 @@
-tag @s[tag=!billiards_ball,tag=!wool,tag=!spit,scores={Move=0}] add in_vacuum

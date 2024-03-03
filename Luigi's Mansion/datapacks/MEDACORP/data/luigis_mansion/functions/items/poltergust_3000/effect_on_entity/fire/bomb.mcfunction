@@ -1,1 +1,0 @@
-scoreboard players set @s[tag=bomb] Move 9

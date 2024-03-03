@@ -1,1 +1,0 @@
-execute if entity @s[tag=boolldog] run function 3ds_remake:spawn_entities/ghost/boo/boolldog

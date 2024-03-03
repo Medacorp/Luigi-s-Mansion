@@ -1,3 +1,3 @@
-execute if data storage luigis_mansion:data current_state.current_data.boos[{name:"underboo",trap_found:0b}] unless entity @e[tag=underboo_trap,limit=1] run summon minecraft:marker 754 29 66.0 {CustomName:'{"type":"translatable","translate":"luigis_mansion:entity.hidden_boo"}',data:{entity:{namespace:"luigis_mansion",id:"hidden_boo"}},Tags:["hidden_boo","underboo_trap","trap","new"]}
 scoreboard players set #temp Room 64
-execute positioned 754 29 66.0 run function luigis_mansion:old_entities/boo/hiding_in_room/load
+execute positioned 754 29 66.0 if data storage luigis_mansion:data current_state.current_data.boos[{name:{namespace:"luigis_mansion",id:"underboo"},trap_found:0b}] run function luigis_mansion:entities/hidden_boo/load_in_room/spawn_trap {mansion:{namespace:"luigis_mansion",id:"normal"},boo:{namespace:"luigis_mansion",id:"underboo"}}
+execute positioned 754 29 66.0 run function luigis_mansion:entities/hidden_boo/load_in_room {namespace:"luigis_mansion",id:"normal"}

@@ -1,1 +1,0 @@
-execute positioned as @s[nbt={ArmorItems:[{tag:{luigis_mansion:{namespace:"e3_demo",id:"shining_ghost"}}}]},distance=..0.7] run function e3_demo:items/poltergust_3000/effect_on_entity/vacuum/effect/ghost/shining_ghost

@@ -1,5 +1,7 @@
 tag @s[tag=remove_from_existence,tag=cannot_be_removed] remove remove_from_existence
 
+function luigis_mansion:main/find_hitters
+
 execute if entity @s[scores={Room=-2147483648..},tag=!captured] run function luigis_mansion:main/non_players_in_room
 
 execute if entity @s[type=minecraft:item] run function luigis_mansion:main/items
@@ -18,6 +20,16 @@ tag @s remove in_dust
 tag @s remove in_fire
 tag @s remove in_water
 tag @s remove in_ice
+
+tag @a remove vacuuming_me
+tag @a remove expelling_me
+tag @a remove dusting_me
+tag @a remove burning_me
+tag @a remove watering_me
+tag @a remove freezing_me
+data modify entity @s[type=minecraft:armor_stand] ArmorItems[3].tag.luigis_mansion.hit_by set value {vacuum:[],dust:[],fire:[],water:[],ice:[]}
+data modify entity @s[type=minecraft:marker] data.hit_by set value {vacuum:[],dust:[],fire:[],water:[],ice:[]}
+
 tag @e[tag=target,limit=1] remove target
 tag @e[tag=potential_target] remove potential_target
 tag @s[tag=remove_from_existence] add dead

@@ -1,1 +1,0 @@
-execute if entity @s[tag=boolderdash] if entity @e[tag=!new,limit=1,tag=boolderdash] run kill @s

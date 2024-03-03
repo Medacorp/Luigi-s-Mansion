@@ -3,3 +3,4 @@ execute store result entity @s data.target_pos[1] double 0.01 run scoreboard pla
 execute store result entity @s data.target_pos[2] double 0.01 run scoreboard players get @s HomeZ
 scoreboard players set @s TargetTask 3
 tag @s add turn_back
+tag @s remove reached_target

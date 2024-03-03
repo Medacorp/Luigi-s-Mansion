@@ -16,7 +16,6 @@ execute if entity @s[tag=right] run function luigis_mansion:animations/furniture
 execute if entity @s[tag=left] run function luigis_mansion:animations/furniture/door/left with storage luigis_mansion:data passive.animation
 
 execute unless data entity @s Pose.Head run data modify entity @s Pose.Head set value [0.0f,0.0001f,0.0f]
-data modify entity @s ArmorItems[3] merge from entity @s ArmorItems[3].tag.luigis_mansion.model_data.default
 
 #sync up animation for forced opening
 execute store result score #temp Time run data get storage luigis_mansion:data passive.initial_animation_progress

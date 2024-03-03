@@ -3,8 +3,8 @@
 	"textures": {
 		"0": "luigis_mansion:entity/waiter",
 		"1": "luigis_mansion:block/waiter_plate",
-		"food": "luigis_mansion:block/empty",
-		"particle": "luigis_mansion:entity/waiter"
+		"particle": "luigis_mansion:entity/waiter",
+		"food": "luigis_mansion:block/empty"
 	},
 	"elements": [
 		{
@@ -73,11 +73,11 @@
 			"to": [11, 8, -2],
 			"rotation": {"angle": 0, "axis": "y", "origin": [8, 7, 8]},
 			"faces": {
-				"north": {"uv": [3, 3, 13, 13], "texture": "#food"},
-				"east": {"uv": [3, 3, 13, 13], "texture": "#food"},
-				"west": {"uv": [3, 3, 13, 13], "texture": "#food"},
-				"up": {"uv": [3, 3, 13, 13], "texture": "#food"},
-				"down": {"uv": [3, 3, 13, 13], "texture": "#food"}
+				"north": {"uv": [4, 4, 12, 12], "texture": "#food"},
+				"east": {"uv": [4, 4, 12, 12], "texture": "#food"},
+				"west": {"uv": [4, 4, 12, 12], "texture": "#food"},
+				"up": {"uv": [4, 4, 12, 12], "texture": "#food"},
+				"down": {"uv": [4, 4, 12, 12], "texture": "#food"}
 			}
 		}
 	],

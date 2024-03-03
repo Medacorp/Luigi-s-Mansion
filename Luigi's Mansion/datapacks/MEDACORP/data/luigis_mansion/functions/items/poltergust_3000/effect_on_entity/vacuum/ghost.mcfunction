@@ -1,1 +1,0 @@
-execute if entity @s[tag=ghost,tag=!hidden] run function #luigis_mansion:items/poltergust_3000/effect_on_entity/vacuum/ghost

@@ -1,1 +1,0 @@
-function luigis_mansion:old_entities/boolossus/battle_intro/normal

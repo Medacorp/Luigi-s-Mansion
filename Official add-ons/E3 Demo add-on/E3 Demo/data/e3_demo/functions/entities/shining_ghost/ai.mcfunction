@@ -1,0 +1,2 @@
+execute if entity @s[tag=visible] run function e3_demo:entities/shining_ghost/ai/visible
+execute if entity @s[tag=!visible] run function e3_demo:entities/shining_ghost/ai/invisible with entity @s data.entity

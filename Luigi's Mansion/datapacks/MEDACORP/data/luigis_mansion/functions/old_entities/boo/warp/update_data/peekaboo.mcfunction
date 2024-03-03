@@ -1,3 +1,0 @@
-execute if entity @s[tag=peekaboo] run tag @e[tag=boo_marker,tag=new] add peekaboo
-execute if entity @s[tag=peekaboo] store result storage luigis_mansion:data current_state.current_data.boos[{name:"peekaboo"}].health int 1 run scoreboard players get @s Health
-execute if entity @s[tag=peekaboo] store result storage luigis_mansion:data current_state.current_data.boos[{name:"peekaboo"}].room int 1 run scoreboard players get @s Room

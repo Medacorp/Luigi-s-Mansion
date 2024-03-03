@@ -1,1 +1,0 @@
-execute if entity @s[tag=bootha] run function luigis_mansion:spawn_entities/ghost/boo/bootha

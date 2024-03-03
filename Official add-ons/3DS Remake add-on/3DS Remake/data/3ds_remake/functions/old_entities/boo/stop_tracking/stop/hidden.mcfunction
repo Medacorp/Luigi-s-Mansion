@@ -1,1 +1,0 @@
-function 3ds_remake:old_entities/boo/stop_tracking/stop/normal

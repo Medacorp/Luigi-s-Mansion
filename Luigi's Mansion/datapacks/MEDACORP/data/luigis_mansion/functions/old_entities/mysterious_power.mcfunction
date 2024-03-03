@@ -1,1 +1,0 @@
-execute if entity @s[tag=mysterious_power] run function luigis_mansion:old_entities/mysterious_power/tick

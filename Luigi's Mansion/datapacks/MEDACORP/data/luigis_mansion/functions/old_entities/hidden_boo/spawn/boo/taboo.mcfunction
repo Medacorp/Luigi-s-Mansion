@@ -1,1 +1,0 @@
-execute if entity @s[tag=taboo] run function luigis_mansion:spawn_entities/ghost/boo/taboo

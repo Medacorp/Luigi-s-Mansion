@@ -1,7 +1,11 @@
 data modify storage luigis_mansion:data entity set value {spawn:2b}
 execute positioned 664 11 37 run function e3_demo:spawn_entities/ghost/ghost/orange
-execute positioned 664 11 44 run function e3_demo:spawn_entities/vacuumable/flying_fish/white
-execute positioned 664 11 44 run function e3_demo:spawn_entities/vacuumable/flying_fish/white
-execute positioned 664 11 44 run function e3_demo:spawn_entities/vacuumable/flying_fish/white
-execute positioned 664 11 44 run function e3_demo:spawn_entities/vacuumable/flying_fish/white
+data modify storage luigis_mansion:data entity set value {paths:[{loop:1b,force_move:1b,steps:[{position:[664.5d,12.0d,45.9d]},{position:[665.49d,12.0d,45.49d]},{position:[665.9d,12.0d,44.5d]},{position:[665.49d,12.0d,43.51d]},{position:[664.5d,12.0d,43.1d]},{position:[663.51d,12.0d,43.51d]},{position:[663.1d,12.0d,44.5d]},{position:[663.51d,12.0d,45.49d]}]}]}
+execute positioned 664 12 44 run function e3_demo:spawn_entities/vacuumable/flying_fish/white
+data modify storage luigis_mansion:data entity set value {paths:[{loop:1b,force_move:1b,steps:[{position:[664.5d,12.0d,45.9d]},{position:[665.49d,12.0d,45.49d]},{position:[665.9d,12.0d,44.5d]},{position:[665.49d,12.0d,43.51d]},{position:[664.5d,12.0d,43.1d]},{position:[663.51d,12.0d,43.51d]},{position:[663.1d,12.0d,44.5d]},{position:[663.51d,12.0d,45.49d]}]}]}
+execute positioned 664 12 44 run function e3_demo:spawn_entities/vacuumable/flying_fish/white
+data modify storage luigis_mansion:data entity set value {paths:[{loop:1b,force_move:1b,steps:[{position:[664.5d,12.0d,45.9d]},{position:[665.49d,12.0d,45.49d]},{position:[665.9d,12.0d,44.5d]},{position:[665.49d,12.0d,43.51d]},{position:[664.5d,12.0d,43.1d]},{position:[663.51d,12.0d,43.51d]},{position:[663.1d,12.0d,44.5d]},{position:[663.51d,12.0d,45.49d]}]}]}
+execute positioned 664 12 44 run function e3_demo:spawn_entities/vacuumable/flying_fish/white
+data modify storage luigis_mansion:data entity set value {paths:[{loop:1b,force_move:1b,steps:[{position:[664.5d,12.0d,45.9d]},{position:[665.49d,12.0d,45.49d]},{position:[665.9d,12.0d,44.5d]},{position:[665.49d,12.0d,43.51d]},{position:[664.5d,12.0d,43.1d]},{position:[663.51d,12.0d,43.51d]},{position:[663.1d,12.0d,44.5d]},{position:[663.51d,12.0d,45.49d]}]}]}
+execute positioned 664 12 44 run function e3_demo:spawn_entities/vacuumable/flying_fish/white
 scoreboard players set #lavatory Wave 1

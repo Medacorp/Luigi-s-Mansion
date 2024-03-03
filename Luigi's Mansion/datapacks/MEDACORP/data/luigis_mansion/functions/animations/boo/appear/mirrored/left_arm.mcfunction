@@ -10,3 +10,4 @@ teleport @s[scores={AnimationProgress=7}] ~ ~ ~ ~-252 ~
 teleport @s[scores={AnimationProgress=8}] ~ ~ ~ ~-288 ~
 teleport @s[scores={AnimationProgress=9}] ~ ~ ~ ~-324 ~
 scoreboard players set @s[scores={AnimationProgress=10}] AnimationProgress 0
+data modify entity @s Pose.Head[1] set from entity @e[tag=this_entity,limit=1] Rotation[1]

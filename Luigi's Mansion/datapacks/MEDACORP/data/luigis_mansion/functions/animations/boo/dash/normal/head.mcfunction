@@ -5,3 +5,4 @@ execute store result entity @s Pose.Head[2] float 1 run scoreboard players remov
 scoreboard players reset #temp Time
 data modify entity @s[scores={AnimationProgress=1}] ArmorItems[3] merge from entity @s ArmorItems[3].tag.luigis_mansion.model_data.attacking
 scoreboard players set @s[scores={AnimationProgress=20}] AnimationProgress 0
+data modify entity @s Pose.Head[0] set from entity @e[tag=this_entity,limit=1] Rotation[1]

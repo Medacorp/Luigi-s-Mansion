@@ -1,3 +1,3 @@
-execute if data storage luigis_mansion:data current_state.current_data.boos[{name:"boonita",trap_found:0b}] unless entity @e[tag=boonita_trap,limit=1] run summon minecraft:marker 741 20 -52.0 {CustomName:'{"type":"translatable","translate":"luigis_mansion:entity.hidden_boo"}',data:{entity:{namespace:"luigis_mansion",id:"hidden_boo"}},Tags:["hidden_boo","boonita_trap","trap","new"]}
 scoreboard players set #temp Room 70
-execute positioned 741 20 -52.0 run function luigis_mansion:old_entities/boo/hiding_in_room/load
+execute positioned 741 20 -52.0 if data storage luigis_mansion:data current_state.current_data.boos[{name:{namespace:"luigis_mansion",id:"boonita"},trap_found:0b}] run function luigis_mansion:entities/hidden_boo/load_in_room/spawn_trap {mansion:{namespace:"luigis_mansion",id:"normal"},boo:{namespace:"luigis_mansion",id:"boonita"}}
+execute positioned 741 20 -52.0 run function luigis_mansion:entities/hidden_boo/load_in_room {namespace:"luigis_mansion",id:"normal"}

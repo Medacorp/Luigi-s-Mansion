@@ -1,1 +1,0 @@
-scoreboard players set @s[tag=spike_ball] ActionTime 199

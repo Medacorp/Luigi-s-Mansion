@@ -10,7 +10,7 @@ data modify entity @s[scores={Dialog=1}] data.animation set value {namespace:"lu
 execute if entity @s[scores={Dialog=21}] run playsound luigis_mansion:entity.spooky.pant hostile @a[tag=same_room] ~ ~ ~ 1
 execute if entity @s[scores={Dialog=31}] run playsound luigis_mansion:entity.spooky.pant hostile @a[tag=same_room] ~ ~ ~ 1
 data modify entity @s[scores={Dialog=40}] data.animation set value {namespace:"luigis_mansion",id:"bark"}
-execute if entity @s[tag=attack] run function luigis_mansion:entities/spooky/attack
+execute if entity @s[tag=attack] run function luigis_mansion:entities/spooky/ai/mansion/normal/attack
 
 execute at @s[scores={Dialog=40..80},tag=!attack] facing entity @e[tag=same_room,tag=target,sort=nearest,limit=1] feet rotated ~ 0 run teleport @s ~ ~ ~ ~ ~
 execute if entity @s[scores={Dialog=40}] run playsound luigis_mansion:entity.spooky.bark hostile @a[tag=same_room] ~ ~ ~ 1

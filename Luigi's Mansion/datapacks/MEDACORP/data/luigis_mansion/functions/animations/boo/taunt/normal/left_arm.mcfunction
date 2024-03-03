@@ -6,3 +6,4 @@ execute if entity @s[scores={AnimationProgress=4..7}] store result entity @s Pos
 execute if entity @s[scores={AnimationProgress=9..10}] store result entity @s Pose.Head[0] float 1 run scoreboard players remove #temp Time 10
 scoreboard players reset #temp Time
 scoreboard players set @s[scores={AnimationProgress=10}] AnimationProgress 0
+data modify entity @s Pose.Head[1] set from entity @e[tag=this_entity,limit=1] Rotation[1]
