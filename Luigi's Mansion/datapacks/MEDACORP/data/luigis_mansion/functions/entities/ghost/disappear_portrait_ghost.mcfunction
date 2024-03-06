@@ -1,4 +1,4 @@
-$function #$(namespace):entities/$(id)/reset
+$function $(namespace):entities/$(id)/reset
 scoreboard players set @s TargetTask 0
 scoreboard players set @s TargetTime 0
 data remove entity @s data.target
@@ -6,7 +6,6 @@ data remove entity @s data.target_pos
 data remove entity @s data.path
 tag @s remove flee
 tag @s remove hurt
-tag @s remove hurt_animation
 tag @s remove vanish
 tag @s remove disappear_next_tick
 tag @s remove disappear

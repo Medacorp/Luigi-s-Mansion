@@ -11,7 +11,7 @@ scoreboard players reset #temp Move
 
 tag @s[scores={MirrorX=-2147483648..},tag=!no_reflection] add mirrored
 tag @s[scores={MirrorZ=-2147483648..},tag=!no_reflection] add mirrored
-execute if entity @s[tag=mirrored] unless entity @s[type=!minecraft:armor_stand,type=!minecraft:item_frame] run function luigis_mansion:entities/reflection/add
+execute if entity @s[tag=mirrored,tag=!hidden] unless entity @s[type=!minecraft:armor_stand,type=!minecraft:item_frame] run function luigis_mansion:entities/reflection/add
 scoreboard players reset @s[tag=!mirrored] ReflectionNr
 tag @s[tag=mirrored] remove mirrored
 scoreboard players reset @s LightX
@@ -24,4 +24,5 @@ execute if entity @s[tag=!furniture,tag=debug_entity] run function luigis_mansio
 execute if entity @s[tag=!furniture,tag=!debug_entity] if score #debug_entities Selected matches 1.. run function luigis_mansion:main/debug
 
 tag @e[tag=same_room] remove same_room
+tag @e[tag=exact_same_room] remove exact_same_room
 execute if score #mirrored Selected matches 2 run scoreboard players set #mirrored Selected 1

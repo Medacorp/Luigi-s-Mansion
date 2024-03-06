@@ -1,2 +1,2 @@
-execute unless score #mirrored Selected matches 1 run function luigis_mansion:animations/lydia/idle/normal/head
-execute if score #mirrored Selected matches 1 run function luigis_mansion:animations/lydia/idle/mirrored/head
+execute unless score #mirrored Selected matches 1 run function luigis_mansion:animations/lydia/complain/normal/head
+execute if score #mirrored Selected matches 1 run function luigis_mansion:animations/lydia/complain/mirrored/head

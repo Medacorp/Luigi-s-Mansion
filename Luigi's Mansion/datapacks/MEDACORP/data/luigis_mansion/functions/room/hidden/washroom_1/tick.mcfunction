@@ -17,5 +17,6 @@ execute if block 663 14 -21 minecraft:oak_trapdoor[open=false] run setblock 659 
 scoreboard players set #temp Room 19
 execute as @a[gamemode=!spectator,tag=!pull_open_door,tag=!push_open_door] run function #luigis_mansion:get_same_room
 scoreboard players reset #temp Room
-execute if entity @a[tag=same_room,limit=1] run function luigis_mansion:room/hidden/washroom_1/ghosts
+execute if entity @a[tag=exact_same_room,limit=1] run function luigis_mansion:room/hidden/washroom_1/ghosts
 tag @a[tag=same_room] remove same_room
+tag @a[tag=exact_same_room] remove exact_same_room

@@ -1,9 +1,9 @@
 {
 	"credit": "Made with Blockbench",
 	"textures": {
-		"barricade_double": "luigis_mansion:block/empty",
-		"barricade_single": "luigis_mansion:block/empty",
 		"overlay": "luigis_mansion:block/empty",
+		"barricade_single": "luigis_mansion:block/empty",
+		"barricade_double": "luigis_mansion:block/empty",
 		"particle": "#door"
 	},
 	"elements": [
@@ -236,6 +236,11 @@
 		"thirdperson_lefthand": {
 			"rotation": [90, -180, 0],
 			"translation": [-8, -2.04, -3.901]
+		},
+		"head": {
+			"rotation": [0, -90, 0],
+			"translation": [0, -30.24, -12.75],
+			"scale": [1.6, 1.6, 1.6]
 		}
 	},
 	"groups": [

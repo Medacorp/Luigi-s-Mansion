@@ -2,7 +2,7 @@ execute if entity @e[tag=same_room,tag=!spectator,tag=player,distance=..1.6,limi
 
 tag @s[tag=!visible] add visible
 execute unless entity @s[scores={Dialog=1..}] run scoreboard players set @s Dialog 0
-execute unless entity @s[scores={Dialog=1..}] at @e[tag=same_room,tag=!spectator,tag=player] positioned ^ ^ ^8 run tag @s[distance=..8] add visible
+execute unless entity @s[scores={Dialog=1..}] at @e[tag=same_room,tag=!spectator,tag=player] positioned ^ ^ ^8 run tag @s[distance=..8] remove visible
 execute unless entity @s[scores={Dialog=2..}] if entity @s[tag=visible] run data modify entity @e[tag=mr_luggs_food,limit=1] ArmorItems[3].id set value "minecraft:diamond_pickaxe"
 execute if entity @s[tag=!visible] run data modify entity @e[tag=mr_luggs_food,limit=1] ArmorItems[3].id set value "minecraft:stone_button"
 execute unless entity @s[scores={Dialog=1..}] unless entity @e[tag=same_room,tag=light_me,tag=!lit] run tag @e[tag=same_room,tag=light_me,tag=lit] add large_flame
@@ -17,7 +17,7 @@ scoreboard players add @s[scores={Dialog=100..}] Dialog 1
 execute if entity @e[tag=mr_luggs_food,tag=was_in_vacuum,limit=1] run scoreboard players add @s[scores={Dialog=1..99}] Dialog 1
 execute if entity @s[scores={Dialog=100}] run data modify entity @e[tag=mr_luggs_food,limit=1] ArmorItems[3].id set value "minecraft:stone_button"
 execute if entity @s[scores={Dialog=2..99}] run tag @e[tag=hidden,nbt={data:{entity:{namespace:"luigis_mansion",id:"waiter"}}}] add spawn
-execute if entity @s[scores={Dialog=..99}] if entity @e[tag=same_room,tag=waiter,tag=attack] run scoreboard players set @s Dialog 1
+execute if entity @s[scores={Dialog=2..99}] if entity @e[tag=same_room,nbt={data:{entity:{namespace:"luigis_mansion",id:"waiter"}}},tag=attack] run scoreboard players set @s Dialog 1
 
 execute unless entity @s[scores={Dialog=100..}] run scoreboard players add @s ActionTime 1
 data modify entity @s[scores={Dialog=..99,ActionTime=1}] data.animation set value {namespace:"luigis_mansion",id:"eat"}

@@ -4,3 +4,4 @@ scoreboard players set @s[scores={HurtTime=1},tag=hurt] Sound 40
 data modify entity @s[tag=flee,tag=!second_flee_state] data.animation set value {namespace:"luigis_mansion",id:"flee"}
 execute if entity @s[tag=flee,tag=second_flee_state] run function luigis_mansion:entities/floating_whirlindas_male/second_flee_state
 data modify entity @s[tag=!flee,tag=hurt] data.animation set value {namespace:"luigis_mansion",id:"hurt"}
+tag @s remove leader

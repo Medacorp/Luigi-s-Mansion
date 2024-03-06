@@ -2,9 +2,8 @@
 	"parent": "luigis_mansion:entity/chauncey/left_arm_rambler",
 	"credit": "Made with Blockbench",
 	"display": {
-		"thirdperson_lefthand": {
-			"rotation": [90, 0, 0],
-			"translation": [-4.75, -2, 12],
+		"head": {
+			"translation": [0, -6.5, 0],
 			"scale": [1.4, 1.4, 1.4]
 		}
 	}

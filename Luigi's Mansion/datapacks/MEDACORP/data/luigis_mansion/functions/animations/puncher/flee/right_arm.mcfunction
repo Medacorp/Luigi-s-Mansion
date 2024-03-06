@@ -1,2 +1,2 @@
-execute unless score #mirrored Selected matches 1 run function luigis_mansion:aniamtions/puncher/flee/normal/right_arm
-execute if score #mirrored Selected matches 1 run function luigis_mansion:aniamtions/puncher/flee/mirrored/right_arm
+execute unless score #mirrored Selected matches 1 run function luigis_mansion:animations/puncher/flee/normal/right_arm
+execute if score #mirrored Selected matches 1 run function luigis_mansion:animations/puncher/flee/mirrored/right_arm

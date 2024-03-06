@@ -1,5 +1,5 @@
-scoreboard players add @s TargetTask 0
-scoreboard players add @s SpawnTime 0
+scoreboard players set @s TargetTask 0
+scoreboard players set @s SpawnTime 0
 scoreboard players add @s[scores={ActionTime=41..}] ActionTime 1
 scoreboard players set @s[scores={ActionTime=40}] ActionTime 33
 scoreboard players add @s[scores={ActionTime=1..39}] ActionTime 1

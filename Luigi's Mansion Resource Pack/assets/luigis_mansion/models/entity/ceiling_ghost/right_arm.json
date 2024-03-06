@@ -2,7 +2,7 @@
 	"credit": "Made with Blockbench",
 	"textures": {
 		"0": "luigis_mansion:entity/ceiling_ghost",
-		"particle": "#0"
+		"particle": "luigis_mansion:entity/ceiling_ghost"
 	},
 	"elements": [
 		{
@@ -101,6 +101,11 @@
 			"rotation": [0, 0, -180],
 			"translation": [-7.25, -8.5, 1.75],
 			"scale": [1.4, 1.4, 1.4]
+		},
+		"head": {
+			"rotation": [-90, 0, 0],
+			"translation": [16, -20.75, -10.25],
+			"scale": [2.24, 2.24, 2.24]
 		}
 	}
 }

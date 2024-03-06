@@ -1,3 +1,4 @@
+function luigis_mansion:entities/ghost/get_target
 function luigis_mansion:entities/ghost/ai
 
 scoreboard players operation #temp GhostNr = @s Owner

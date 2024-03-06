@@ -1,7 +1,5 @@
 tag @s remove dark_room
 function #luigis_mansion:room/dark_room
-tag @s add new_poltergust_grabbed
-function #luigis_mansion:entities/player/overwrite_poltergust_grabbed
 
 execute if entity @s[scores={Health=..0},tag=!death_animation,tag=!revive_animation] unless entity @s[scores={AnimationProgress=1..},tag=!idle] run function luigis_mansion:entities/player/death
 execute if entity @s[scores={Health=1..},tag=already_added_to_list] run function luigis_mansion:entities/player/remove_dead_entry

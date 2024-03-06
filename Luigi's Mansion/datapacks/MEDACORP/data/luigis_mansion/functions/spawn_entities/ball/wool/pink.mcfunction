@@ -2,5 +2,5 @@ summon minecraft:armor_stand ~ ~-1.1875 ~ {CustomName:'{"type":"translatable","t
 scoreboard players set @e[tag=this_entity,limit=1] EntitySizeRadius 3
 scoreboard players set @e[tag=this_entity,limit=1] EntityYOffset 14
 function luigis_mansion:spawn_entities/setup/default
-tag @e[tag=this_entity] remove this_entity
+tag @e[tag=this_entity,limit=1] remove this_entity
 data remove storage luigis_mansion:data entity

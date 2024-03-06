@@ -13,7 +13,8 @@ execute if data storage luigis_mansion:data current_state.current_data.rooms.nur
 scoreboard players set #temp Room 73
 execute as @a[gamemode=!spectator,tag=!pull_open_door,tag=!push_open_door] run function #luigis_mansion:get_same_room
 scoreboard players reset #temp Room
-execute if entity @a[tag=same_room,limit=1] run function 3ds_remake:room/hidden/chauncey_battle/ghosts
+execute if entity @a[tag=exact_same_room,limit=1] run function 3ds_remake:room/hidden/chauncey_battle/ghosts
 tag @a[tag=same_room] remove same_room
+tag @a[tag=exact_same_room] remove exact_same_room
 
 execute as @e[x=792,y=15,z=56,dx=2,dy=15,dz=15,tag=ball,tag=!spit,y_rotation=0..-180] at @s run teleport @s ~ ~ ~ ~-180 ~

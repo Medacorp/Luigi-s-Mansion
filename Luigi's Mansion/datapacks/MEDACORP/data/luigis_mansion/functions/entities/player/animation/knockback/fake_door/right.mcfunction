@@ -4,7 +4,6 @@ execute if entity @s[scores={AnimationProgress=5,Sound=0,Health=41..,Shrunk=1..}
 execute if entity @s[scores={AnimationProgress=5,Sound=0,Health=..40,Shrunk=0}] run playsound luigis_mansion:entity.player.scare.low_health player @a[tag=same_room] ~ ~ ~ 1
 execute if entity @s[scores={AnimationProgress=5,Sound=0,Health=..40,Shrunk=1..}] run playsound luigis_mansion:entity.player.scare.low_health player @a[tag=same_room] ~ ~ ~ 1 2
 scoreboard players set @s[scores={AnimationProgress=5,Sound=0}] Sound 8
-execute if entity @s[scores={AnimationProgress=15}] run function luigis_mansion:entities/player/memory/get with entity @s
 execute if entity @s[scores={AnimationProgress=15}] run data modify storage luigis_mansion:data damage set value {amount:0,attacker:-1}
 execute if entity @s[scores={AnimationProgress=15}] store result storage luigis_mansion:data damage.amount int 1 run scoreboard players get @s KnockbackDamage
 execute if entity @s[scores={AnimationProgress=15}] run data modify storage luigis_mansion:data damage.attacker set from storage luigis_mansion:data my_memory.hurt_by.attacker
@@ -37,4 +36,5 @@ tag @s add disable_flashlight
 tag @s add disable_game_boy_horror
 tag @s add disable_interact
 tag @s add disable_poltergust
+tag @s add animation_may_move
 execute if entity @s[scores={AnimationProgress=140}] run function luigis_mansion:entities/player/animation/set/none

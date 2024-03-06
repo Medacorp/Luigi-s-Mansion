@@ -27,7 +27,7 @@ tag @a remove dusting_me
 tag @a remove burning_me
 tag @a remove watering_me
 tag @a remove freezing_me
-data modify entity @s[type=minecraft:armor_stand] ArmorItems[3].tag.luigis_mansion.hit_by set value {vacuum:[],dust:[],fire:[],water:[],ice:[]}
+data modify entity @s[type=minecraft:armor_stand,tag=!model_piece] ArmorItems[3].tag.luigis_mansion.hit_by set value {vacuum:[],dust:[],fire:[],water:[],ice:[]}
 data modify entity @s[type=minecraft:marker] data.hit_by set value {vacuum:[],dust:[],fire:[],water:[],ice:[]}
 
 tag @e[tag=target,limit=1] remove target

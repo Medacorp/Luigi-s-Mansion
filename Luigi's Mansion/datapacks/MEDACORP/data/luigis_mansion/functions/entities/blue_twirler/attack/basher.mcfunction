@@ -1,5 +1,5 @@
-scoreboard players add @s TargetTask 0
-scoreboard players add @s SpawnTime 0
+scoreboard players set @s TargetTask 0
+scoreboard players set @s SpawnTime 0
 scoreboard players add @s ActionTime 1
 execute if entity @s[scores={ActionTime=1}] at @e[tag=same_room,tag=!spectator,tag=player,sort=nearest,limit=1] rotated ~ 0 positioned ^ ^ ^-0.7 if block ~ ~ ~ #luigis_mansion:ghosts_ignore run teleport @s ~ ~ ~ ~ ~
 execute if entity @s[scores={ActionTime=1}] at @e[tag=same_room,tag=!spectator,tag=player,sort=nearest,limit=1] rotated ~ 0 positioned ^ ^ ^-0.7 unless block ~ ~ ~ #luigis_mansion:ghosts_ignore run scoreboard players set @s ActionTime 0

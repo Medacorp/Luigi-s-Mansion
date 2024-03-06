@@ -1,4 +1,6 @@
+function luigis_mansion:entities/ghost/get_target
 function luigis_mansion:entities/ghost/ai
+tag @s add visible
 
 execute if entity @s[tag=element_hurt] run function luigis_mansion:entities/fake_door/burn
 execute if entity @s[tag=element_hurt,tag=in_water] run function luigis_mansion:entities/fake_door/extinguish

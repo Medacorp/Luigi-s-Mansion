@@ -17,3 +17,4 @@ execute as @a[gamemode=!spectator,tag=!pull_open_door,tag=!push_open_door] run f
 scoreboard players reset #temp Room
 execute if entity @a[tag=same_room,limit=1] run function 3ds_remake:room/hidden/hallway_2/ghosts
 tag @a[tag=same_room] remove same_room
+tag @a[tag=same_room] remove exact_same_room

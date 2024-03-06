@@ -14,9 +14,12 @@ tag @s remove trigger_idle
 tag @s remove low_health
 execute unless data storage luigis_mansion:data my_memory.animation run tag @s[scores={Health=..30}] add low_health
 execute if data storage luigis_mansion:data my_memory.animation run function luigis_mansion:entities/player/animation with storage luigis_mansion:data my_memory.animation
-execute unless data storage luigis_mansion:data my_memory.animation if entity @s[tag=!new_poltergust_grabbed,tag=poltergust_grabbed] run function luigis_mansion:entities/player/animation/set/put_poltergust_away
-execute unless data storage luigis_mansion:data my_memory.animation if entity @s[tag=new_poltergust_grabbed,tag=!poltergust_grabbed] run function luigis_mansion:entities/player/animation/set/grab_poltergust
+tag @s[tag=!keep_poltergust_grabbed] add new_poltergust_grabbed
+execute if entity @s[tag=!keep_poltergust_grabbed] run function #luigis_mansion:entities/player/overwrite_poltergust_grabbed
+tag @s remove keep_poltergust_grabbed
+execute if data storage luigis_mansion:data my_memory unless data storage luigis_mansion:data my_memory.animation if entity @s[tag=!new_poltergust_grabbed,tag=poltergust_grabbed] run function luigis_mansion:entities/player/animation/set/put_poltergust_away
+execute if data storage luigis_mansion:data my_memory unless data storage luigis_mansion:data my_memory.animation if entity @s[tag=new_poltergust_grabbed,tag=!poltergust_grabbed] run function luigis_mansion:entities/player/animation/set/grab_poltergust
 execute if data storage luigis_mansion:data my_memory.animation if entity @s[tag=!new_poltergust_grabbed,tag=poltergust_grabbed] if entity @s[tag=idle] run function luigis_mansion:entities/player/animation/set/put_poltergust_away
 execute if data storage luigis_mansion:data my_memory.animation if entity @s[tag=new_poltergust_grabbed,tag=!poltergust_grabbed] if entity @s[tag=idle] run function luigis_mansion:entities/player/animation/set/grab_poltergust
-data modify storage luigis_mansion:data memory append from storage luigis_mansion:data my_memory
+execute if data storage luigis_mansion:data my_memory run data modify storage luigis_mansion:data memory append from storage luigis_mansion:data my_memory
 data remove storage luigis_mansion:data my_memory

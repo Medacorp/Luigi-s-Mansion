@@ -4,6 +4,8 @@ execute if entity @s[tag=vacuum_attack] run advancement grant @a[distance=..3,ta
 data modify storage luigis_mansion:data damage set value {method:{namespace:"luigis_mansion",id:"walked_into"},amount:0,animation:{namespace:"luigis_mansion",id:"knockback/large"},attacker:-1}
 data modify storage luigis_mansion:data damage.amount set from entity @s data.damage.collide
 execute store result storage luigis_mansion:data damage.attacker int 1 run scoreboard players get @s GhostNr
-execute if entity @s[tag=!vacuum_attack] as @a[distance=..3,tag=!spectator] run function luigis_mansion:entities/player/damage
-execute if entity @s[tag=vacuum_attack] as @a[tag=!target,distance=..3,tag=!spectator] run function luigis_mansion:entities/player/damage
+tag @s add me
+execute if entity @s[tag=!vacuum_attack] as @a[distance=..3,tag=!spectator] at @e[tag=me,limit=1] run function luigis_mansion:entities/player/damage
+execute if entity @s[tag=vacuum_attack] as @a[tag=!target,distance=..3,tag=!spectator] at @e[tag=me,limit=1] run function luigis_mansion:entities/player/damage
+tag @s remove me
 data remove storage luigis_mansion:data damage

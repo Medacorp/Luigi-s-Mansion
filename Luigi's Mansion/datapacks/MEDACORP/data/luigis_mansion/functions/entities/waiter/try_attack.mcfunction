@@ -1,3 +1,3 @@
-execute if entity @s[tag=!complain] positioned ^ ^ ^1 if entity @e[tag=same_room,tag=furniture,nbt={ArmorItems:[{id:"minecraft:diamond_pickaxe",tag:{luigis_mansion:{furniture_type:"food"}}}]},distance=..1,limit=1] run tag @s add attack
-execute if entity @s[tag=!complain] positioned ^ ^ ^1 if entity @e[tag=same_room,tag=furniture,nbt={ArmorItems:[{id:"minecraft:stone_button",tag:{luigis_mansion:{furniture_type:"food"}}}]},distance=..1,limit=1] run tag @s add complain
-execute if entity @s[tag=attack] run function luigis_mansion:entities/waiter/attack/drop_food_off
+execute if entity @s[tag=!complain,tag=!attack,tag=!dropped_off_food] positioned ^ ^ ^1.5 if entity @e[tag=same_room,tag=furniture,nbt={ArmorItems:[{id:"minecraft:diamond_pickaxe",tag:{luigis_mansion:{furniture_type:"food"}}}]},distance=..1.5,limit=1] run tag @s add attack
+execute if entity @s[tag=!complain,tag=!attack,tag=!dropped_off_food] positioned ^ ^ ^1.5 if entity @e[tag=same_room,tag=furniture,nbt={ArmorItems:[{id:"minecraft:stone_button",tag:{luigis_mansion:{furniture_type:"food"}}}]},distance=..1.5,limit=1] run tag @s add complain
+execute if entity @s[tag=attack] run function luigis_mansion:entities/waiter/attack/drop_off_food with entity @s data.entity

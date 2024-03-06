@@ -2,7 +2,7 @@
 	"credit": "Made with Blockbench",
 	"textures": {
 		"0": "luigis_mansion:entity/bat",
-		"particle": "#0"
+		"particle": "luigis_mansion:entity/bat"
 	},
 	"elements": [
 		{
@@ -70,7 +70,7 @@
 	],
 	"display": {
 		"head": {
-			"scale": [2.5, 2.5, 2.5]
+			"scale": [1.25, 1.25, 1.25]
 		}
 	}
 }

@@ -6,6 +6,7 @@ execute store result entity @e[tag=home,limit=1] Rotation[0] float 1 run scorebo
 execute at @e[tag=home,limit=1] run tp @s ~ ~ ~ ~ 0
 kill @e[tag=home,limit=1]
 tag @s[scores={AnimationProgress=1}] add reset_rotation
+tag @s[scores={AnimationProgress=1}] add animation_may_move
 execute if entity @s[scores={AnimationProgress=10,Health=41..,Shrunk=0}] run playsound luigis_mansion:entity.player.open_door.high_health player @a[tag=same_room,distance=0.1..] ~ ~ ~ 1
 execute if entity @s[scores={AnimationProgress=10,Health=41..,Shrunk=1..}] run playsound luigis_mansion:entity.player.open_door.high_health player @a[tag=same_room,distance=0.1..] ~ ~ ~ 1 2
 execute if entity @s[scores={AnimationProgress=10,Health=..40,Shrunk=0}] run playsound luigis_mansion:entity.player.open_door.low_health player @a[tag=same_room,distance=0.1..] ~ ~ ~ 1

@@ -11,7 +11,7 @@ execute if entity @s[scores={ActionTime=2}] run playsound luigis_mansion:furnitu
 execute if entity @s[scores={ActionTime=6}] run playsound luigis_mansion:furniture.ambient.projector block @a[tag=same_room] ~ ~1.4 ~
 execute if entity @s[scores={ActionTime=10}] run playsound luigis_mansion:furniture.ambient.projector block @a[tag=same_room] ~ ~1.4 ~
 execute if entity @s[scores={ActionTime=14}] run playsound luigis_mansion:furniture.ambient.projector block @a[tag=same_room] ~ ~1.4 ~
-data modify entity @s[scores={ActionTime=2}] ArmorItems[3] merge from entity @s ArmorItems[3].tag.luigis_mansion.model_data.activated
+data modify entity @s[scores={ActionTime=2}] ArmorItems[3] merge from entity @s ArmorItems[3].tag.luigis_mansion.model_data.open
 scoreboard players set @s[scores={ActionTime=17}] ActionTime 1
 
 function #luigis_mansion:room/dark_room

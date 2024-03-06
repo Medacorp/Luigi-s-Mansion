@@ -1,4 +1,4 @@
-scoreboard players add @s SpawnTime 1
+tag @s add visible
 
 scoreboard players set @s[scores={TargetTask=0,ActionTime=0}] TargetTask 1
 

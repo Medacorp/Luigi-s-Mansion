@@ -1,6 +1,4 @@
-scoreboard players set @s ActionTime 0
-scoreboard players set @s TargetTask 0
-data remove entity @s data.animation
+scoreboard players set @s[tag=!collided] ActionTime 0
 tag @s remove laugh
 tag @s remove complain
 execute unless entity @e[tag=this_bowling_ball,limit=1] run tag @s[tag=!attack,tag=!disappear] remove grabbed_ball

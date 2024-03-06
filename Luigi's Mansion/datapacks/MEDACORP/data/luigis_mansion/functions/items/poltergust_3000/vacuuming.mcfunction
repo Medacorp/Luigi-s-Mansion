@@ -14,7 +14,7 @@ execute if score #temp GhostCount matches 1.. run function luigis_mansion:items/
 execute if score #temp GhostCount matches 1.. run function luigis_mansion:items/poltergust_3000/face_ghost
 execute if score #temp GhostCount matches 1.. as @e[tag=ghost,tag=being_vacuumed] run function luigis_mansion:items/poltergust_3000/catch_ghost
 execute if score #temp GhostCount matches 1.. at @e[tag=ghost,tag=being_vacuumed,scores={ErrorTime=10}] run function luigis_mansion:items/poltergust_3000/vacuuming/made_error
-execute if score #temp GhostCount matches 1.. as @e[tag=ghost,tag=being_vacuumed] facing entity @s feet run function luigis_mansion:items/poltergust_3000/vacuuming/ghost
+execute if score #temp GhostCount matches 1.. as @e[tag=ghost,tag=being_vacuumed] positioned ~ ~0.5 ~ facing entity @s feet run function luigis_mansion:items/poltergust_3000/vacuuming/ghost
 execute if score #temp GhostCount matches 1.. run scoreboard players set @s[tag=is_pulling] ErrorTime 0
 execute if score #temp GhostCount matches 1.. run scoreboard players add @s[tag=!is_pulling] ErrorTime 1
 execute if score #temp GhostCount matches 1.. if entity @s[scores={ErrorTime=10..}] run function luigis_mansion:items/poltergust_3000/vacuuming/get_dragged

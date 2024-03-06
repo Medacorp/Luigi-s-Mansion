@@ -10,4 +10,4 @@ scoreboard players set @s[tag=intro,scores={Sound=0}] Sound 40
 execute if entity @s[tag=intro] run scoreboard players set #temp Move 20
 execute if entity @s[tag=!fast] run scoreboard players set #temp Move 10
 execute if entity @s[tag=fast] run scoreboard players set #temp Move 20
-execute at @s[tag=!attack] run function luigis_mansion:entities/ghost/move_forward
+execute at @s unless entity @s[tag=attack,tag=!intro] run function luigis_mansion:entities/ghost/move_forward_force

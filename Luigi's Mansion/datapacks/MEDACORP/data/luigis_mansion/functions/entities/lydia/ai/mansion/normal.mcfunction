@@ -18,4 +18,4 @@ scoreboard players set @s[scores={Dialog=212}] Dialog 0
 
 data modify entity @s[scores={Dialog=40..99}] data.animation set value {namespace:"luigis_mansion",id:"complain"}
 data modify entity @s[scores={Dialog=100..211}] data.animation set value {namespace:"luigis_mansion",id:"move"}
-data remove entity @s[scores={Dialog=..98}] data.animation
+data remove entity @s[scores={Dialog=..39}] data.animation

@@ -1,7 +1,6 @@
 tag @s[tag=chauncey,tag=!spit,tag=!real] add dead
 tag @s[tag=chauncey,tag=!spit,tag=real] add vacuumable
 tag @s[tag=chauncey,tag=spit,tag=vacuumable] add dead
-tag @s[tag=chauncey,tag=!vacuumable] remove in_vacuum
 tag @s[tag=shadow] add dead
 tag @s[tag=boo] add dead
 tag @s[tag=spike_ball] add explode

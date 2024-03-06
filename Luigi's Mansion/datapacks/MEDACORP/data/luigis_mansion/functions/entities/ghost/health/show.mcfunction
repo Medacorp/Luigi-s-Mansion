@@ -3,6 +3,7 @@ execute as @e[tag=health_display] if score @s GhostNr = #temp GhostNr run tag @s
 scoreboard players reset #temp GhostNr
 execute if entity @s[scores={StunTime=0},tag=!hurt,tag=!element_hurt,tag=!show_health,tag=spawned_health_display] run tag @e[tag=this_health_display,limit=1] add dead
 execute if entity @s[tag=dying] run tag @e[tag=this_health_display,limit=1] add dead
+execute unless entity @s[tag=!dead,tag=!remove_from_existence] run tag @e[tag=this_health_display,limit=1] add dead
 data modify storage luigis_mansion:data macro set value {up:0d}
 execute if entity @s[scores={EntitySizeHeight=1..}] run scoreboard players operation #temp Time = @s EntitySizeHeight
 execute if entity @s[scores={EntitySizeHeight=1..}] run scoreboard players operation #temp Time /= #2 Constants

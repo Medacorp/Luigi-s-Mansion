@@ -5,6 +5,6 @@ execute as @e[nbt={data:{entity:{namespace:"luigis_mansion",id:"dancing_ghost_gu
 scoreboard players reset #temp GhostGuyCouple
 tag @s remove me
 
-execute if entity @e[tag=partner,limit=1,tag=!leader] run tag @s add leader
-execute at @s[tag=leader] facing entity @e[tag=partner,limit=1] feet rotated ~ 0 run function luigis_mansion:entities/ghost_guy/lead with entity @s data.entity
-tag @e[tag=partner,limit=1] remove partner
+execute if entity @e[tag=partner,limit=1,tag=!leader,tag=!new_leader] run tag @s add leader
+tag @s remove new_leader
+execute at @s[tag=leader] facing entity @e[tag=partner,limit=1] feet rotated ~ 0 positioned ^ ^ ^0.5 run function luigis_mansion:entities/dancing_ghost_guy/lead with entity @s data.entity

@@ -14,5 +14,5 @@ tag @e[tag=this_entity,tag=model_piece] remove this_entity
 teleport @e[tag=this_entity,limit=1] ~ ~ ~ ~ ~
 scoreboard players set @e[tag=this_entity,limit=1] Sound 0
 function luigis_mansion:spawn_entities/setup/default
-tag @e[tag=this_entity] remove this_entity
+tag @e[tag=this_entity,limit=1] remove this_entity
 data remove storage luigis_mansion:data entity

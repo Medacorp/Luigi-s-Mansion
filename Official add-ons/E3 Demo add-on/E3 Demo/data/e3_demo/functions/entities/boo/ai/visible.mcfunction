@@ -1,5 +1,6 @@
+function luigis_mansion:entities/ghost/get_target
 tag @s[tag=in_vacuum] add flee
-function luigis_mansion:entities/ghost/ai
+execute at @s run function luigis_mansion:entities/ghost/ai
 data remove entity @s data.animation
 data modify entity @s[tag=shy] data.animation set value {namespace:"e3_demo",id:"shy"}
 data modify entity @s[tag=flee] data.animation set value {namespace:"luigis_mansion",id:"flee"}

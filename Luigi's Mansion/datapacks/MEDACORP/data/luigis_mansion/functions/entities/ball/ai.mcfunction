@@ -52,7 +52,7 @@ scoreboard players set @s[tag=can_spit_2,tag=spike_ball] Move 0
 execute at @s[tag=in_vacuum,tag=!spit,tag=vacuumable] run function luigis_mansion:entities/ball/roll_to_player
 execute at @s[tag=!spit,tag=vacuumable] unless entity @s[tag=!in_dust,tag=!in_fire,tag=!in_water,tag=!in_ice] run function luigis_mansion:entities/billiards_ball/roll_away_from_player
 execute at @s[tag=!in_vacuum,tag=chauncey] if entity @e[distance=..1,tag=!spectator,tag=player,limit=1] run function luigis_mansion:entities/ball/hit_player
-execute at @s[tag=spike_ball] run function luigis_mansion:entities/ball/spike_explode
+execute at @s[tag=spike_ball] run function luigis_mansion:entities/ball/spike_ball
 
 execute at @s[tag=in_vacuum,tag=!big,tag=!spit,tag=vacuumable] if entity @p[distance=..1.5,tag=!spectator,tag=player,tag=vacuuming] run tag @s add can_spit
 execute at @s[tag=in_vacuum,tag=big,tag=!spit,tag=vacuumable] if entity @p[distance=..3,tag=!spectator,tag=player,tag=vacuuming] run tag @s add can_spit

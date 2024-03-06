@@ -1,9 +1,9 @@
 scoreboard players add @s DeathTime 1
 
-execute if entity @s[scores={DeathTime=1}] run scoreboard players operation @s KillerID = @p[tag=vacuuming_this_ghost] ID
+execute if entity @s[scores={DeathTime=1}] run scoreboard players operation @s KillerID = @p[tag=vacuuming_me] ID
 
 scoreboard players operation #temp KillerID = @s KillerID
-execute as @a[tag=vacuuming_this_ghost] if score @s ID = #temp KillerID run tag @s add killer
+execute as @a[tag=vacuuming_me] if score @s ID = #temp KillerID run tag @s add killer
 execute if entity @s[scores={DeathTime=1}] unless entity @a[tag=killer,limit=1] run function luigis_mansion:entities/ghost/cancel_death
 scoreboard players reset #temp KillerID
 execute at @s facing entity @a[tag=killer,limit=1] feet run teleport @s ~ ~ ~ ~-180 0

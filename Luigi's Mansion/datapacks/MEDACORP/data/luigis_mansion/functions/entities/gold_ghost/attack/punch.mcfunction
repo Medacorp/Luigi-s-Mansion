@@ -1,5 +1,5 @@
-scoreboard players add @s TargetTask 0
-scoreboard players add @s[scores={ActionTime=41..}] SpawnTime 0
+scoreboard players set @s TargetTask 0
+scoreboard players set @s[scores={ActionTime=21..}] SpawnTime 0
 scoreboard players add @s ActionTime 1
 data modify entity @s[scores={ActionTime=1}] data.animation set value {namespace:"luigis_mansion",id:"punch_wind_up"}
 data modify entity @s[scores={ActionTime=41}] data.animation set value {namespace:"luigis_mansion",id:"punch"}
@@ -17,7 +17,7 @@ execute at @s[scores={ActionTime=41}] run data remove storage luigis_mansion:dat
 tag @s[scores={ActionTime=41},tag=!laugh] add complain
 tag @s[scores={ActionTime=60}] remove attack
 scoreboard players set @s[scores={ActionTime=60}] ActionTime 0
-execute at @s facing entity @e[tag=target,limit=1] feet rotated ~ 0 run teleport @s ^ ^ ^0.0125 ~ 0
-execute at @s positioned ^ ^ ^0.7 unless entity @a[distance=..0.7,tag=target,limit=1] run tag @s remove attack
+execute at @s[scores={ActionTime=..20}] facing entity @e[tag=target,limit=1] feet rotated ~ 0 run teleport @s ^ ^ ^0.0125 ~ 0
+execute at @s[scores={ActionTime=..20}] positioned ^ ^ ^0.7 unless entity @a[distance=..0.7,tag=target,limit=1] run tag @s remove attack
 
 scoreboard players set @s[tag=!attack] ActionTime 0

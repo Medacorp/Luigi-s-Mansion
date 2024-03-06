@@ -1,5 +1,5 @@
-scoreboard players add @s TargetTask 0
-scoreboard players add @s SpawnTime 0
+scoreboard players set @s TargetTask 0
+scoreboard players set @s SpawnTime 0
 scoreboard players add @s ActionTime 1
 execute at @s facing entity @e[tag=same_room,tag=!spectator,tag=player,sort=nearest,limit=1] feet run teleport @s ~ ~ ~ ~ ~
 execute if entity @s[scores={ActionTime=1}] run playsound luigis_mansion:entity.boo.flinch hostile @a[tag=same_room] ~ ~ ~ 1

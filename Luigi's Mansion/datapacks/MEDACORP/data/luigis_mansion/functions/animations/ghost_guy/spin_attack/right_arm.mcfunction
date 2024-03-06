@@ -1,0 +1,2 @@
+execute unless score #mirrored Selected matches 1 run function luigis_mansion:animations/ghost_guy/spin_attack/normal/right_arm
+execute if score #mirrored Selected matches 1 run function luigis_mansion:animations/ghost_guy/spin_attack/mirrored/right_arm

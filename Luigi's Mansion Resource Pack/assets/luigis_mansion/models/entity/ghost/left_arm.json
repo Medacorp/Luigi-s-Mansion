@@ -2,7 +2,7 @@
 	"credit": "Made with Blockbench",
 	"textures": {
 		"0": "luigis_mansion:entity/ghost",
-		"particle": "#0"
+		"particle": "luigis_mansion:entity/ghost"
 	},
 	"elements": [
 		{
@@ -57,6 +57,11 @@
 	"display": {
 		"thirdperson_lefthand": {
 			"translation": [6, 2.5, 4.25]
+		},
+		"head": {
+			"rotation": [-90, 0, 0],
+			"translation": [-11.25, -17, -7.25],
+			"scale": [1.6, 1.6, 1.6]
 		}
 	}
 }

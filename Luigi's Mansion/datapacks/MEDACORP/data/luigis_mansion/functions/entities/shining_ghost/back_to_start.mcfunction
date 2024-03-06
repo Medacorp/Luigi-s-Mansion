@@ -6,7 +6,6 @@ tag @s remove disappear
 tag @s remove can_spit_2
 tag @s remove can_spit
 tag @s remove spit
-tag @s remove in_vacuum
 tag @s remove collision
 tag @s remove played_sound
 tag @s remove played_spit_sound

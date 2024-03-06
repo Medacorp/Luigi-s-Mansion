@@ -1,3 +1,3 @@
-teleport @s ^ ^ ^
+teleport @s ^0.3 ^-0.1 ^
 
 $execute at @s run function $(namespace):animations/ghost/$(id)/left_arm

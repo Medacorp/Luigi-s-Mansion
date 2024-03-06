@@ -27,7 +27,7 @@ execute if entity @s[tag=walking,tag=!stop_model,tag=!riding_poltergust,tag=!hol
 execute if entity @s[tag=running,tag=!stop_model,tag=!riding_poltergust,tag=!holding_poltergust,tag=!low_health] run function luigis_mansion:animations/luigi/run/left_arm
 execute if entity @s[tag=swimming,tag=!stop_model,tag=!riding_poltergust,tag=!holding_poltergust] run function luigis_mansion:animations/luigi/swim/left_arm
 
-$execute at @s unless entity @s[tag=held_item,tag=holding_poltergust] run function $(namespace):animations/luigi/$(id)/left_arm
+$execute at @s run function $(namespace):animations/luigi/$(id)/left_arm
 
 execute unless data entity @s ArmorItems[3].tag run data modify entity @s[tag=held_item] ArmorItems[3] set value {id:"minecraft:stone_button",Count:1b}
 data modify entity @s[tag=held_item] ArmorItems[3].tag.luigis_mansion.animation set from storage luigis_mansion:data luigi.animation

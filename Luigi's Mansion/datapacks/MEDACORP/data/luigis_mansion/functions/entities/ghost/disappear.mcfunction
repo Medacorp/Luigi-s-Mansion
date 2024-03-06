@@ -1,4 +1,5 @@
 function luigis_mansion:entities/ghost/go_to_home
+$function $(namespace):entities/$(id)/reset
 execute at @s positioned ~ ~0.01 ~ align y run teleport @s ~ ~ ~ ~ 0
 scoreboard players set @s Time 0
 scoreboard players set @s[tag=!no_hidden_move] Time 40
@@ -16,13 +17,10 @@ scoreboard players operation @s LastHealth = @s Health
 data modify entity @s data.attacked_by set value []
 tag @s remove disappear
 tag @s remove disappear_next_tick
-tag @s remove hurt_animation
 tag @s remove flee
 tag @s remove hurt
 tag @s remove element_hurt
 tag @s remove vanish
 tag @s remove second_flee_state
-tag @s remove stunable
 tag @s remove visible
 tag @s add hidden
-$function $(namespace):entities/$(id)/reset

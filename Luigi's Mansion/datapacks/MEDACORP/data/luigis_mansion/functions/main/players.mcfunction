@@ -89,6 +89,7 @@ tag @s[tag=walking,tag=sneak_pos] remove walking
 
 execute if entity @a[tag=!same_room,tag=!looking_at_map,scores={Room=1..},limit=1] run scoreboard players set #freeze_timer Selected 0
 tag @e[tag=same_room] remove same_room
+tag @e[tag=exact_same_room] remove exact_same_room
 
 tellraw @s[scores={ClickEventCheck=1}] {"type":"translatable","translate":"chat.type.text","with":[{"type":"translatable","translate":"luigis_mansion:entity.mansion","color":"green"},{"type":"translatable","translate":"luigis_mansion:message.format_explanation.check"}]}
 scoreboard players set @s ClickEventCheck 0

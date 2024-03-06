@@ -5,7 +5,7 @@ scoreboard players set @s[scores={Sound=0,Dialog=0},tag=!in_ice,tag=flee] Sound 
 
 tag @s[scores={Wave=..30}] add flee
 tag @s[scores={Wave=..30}] add flee_no_target
-execute if entity @s[scores={Wave=..30}] run scoreboard players set #temp Move 20
+execute if entity @s[scores={Wave=..30}] run scoreboard players set #temp Move 15
 execute if entity @s[tag=!flee,tag=!attack,tag=!laugh,scores={Wave=80,Health=15}] run tag @e[nbt={data:{entity:{namespace:"luigis_mansion",id:"boolossus"}}},scores={Dialog=0}] add laugh
 execute if entity @s[tag=!flee,tag=!attack,tag=!laugh,scores={Wave=80,Health=8..14}] if predicate luigis_mansion:boolossus/laugh_chance run tag @e[nbt={data:{entity:{namespace:"luigis_mansion",id:"boolossus"}}},scores={Dialog=0}] add laugh
 execute if entity @s[tag=laugh] run function luigis_mansion:entities/boolossus/laugh
@@ -39,8 +39,8 @@ tag @s[scores={Dialog=0}] remove vacuumable
 execute if entity @s[tag=flee,tag=!laugh,tag=!attack,scores={Dialog=0,Wave=..599}] run function luigis_mansion:entities/boolossus/flee_split
 
 tag @s[tag=!flee] remove flee_no_target
-tag @s remove was_fleeing
 data remove entity @s[tag=was_fleeing,tag=!flee] data.animation
+tag @s remove was_fleeing
 tag @s[tag=flee] add was_fleeing
 tag @s remove flee
 

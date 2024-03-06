@@ -1,5 +1,5 @@
 execute if entity @s[scores={Dialog=1..}] run scoreboard players set #freeze_timer Selected 1
-execute if score #conservatory Wave matches 2 run scoreboard players add @s[tag=!1,tag=!2] Dialog 1
+execute unless entity @s[scores={Variant=1..,Dialog=..999}] run scoreboard players add @s Dialog 1
 execute if entity @a[scores={MelodyChoice=1}] run scoreboard players set @s[scores={Dialog=..999}] Dialog 1000
 execute if entity @a[scores={MelodyChoice=2}] run scoreboard players set @s[scores={Dialog=..999}] Dialog 2000
 tag @s[scores={Dialog=1}] add visible

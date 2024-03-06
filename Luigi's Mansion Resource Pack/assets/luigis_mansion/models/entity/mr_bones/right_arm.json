@@ -60,6 +60,11 @@
 		"thirdperson_righthand": {
 			"translation": [6.5, 2, 5.25],
 			"scale": [0.86, 0.86, 0.86]
+		},
+		"head": {
+			"rotation": [-90, 0, 0],
+			"translation": [12.25, -16.25, -7.25],
+			"scale": [1.6, 1.6, 1.6]
 		}
 	}
 }

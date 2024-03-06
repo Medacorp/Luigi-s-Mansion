@@ -1,5 +1,5 @@
-execute if entity @s[tag=!visible,nbt=!{data:{path:{}}}] run function luigis_mansion:entities/ghost/set_specific_path {index:0}
-execute if entity @s[tag=visible,nbt=!{data:{path:{}}}] unless entity @s[scores={ActionTime=1..}] run function luigis_mansion:entities/ghost/set_specific_path {index:2}
+execute if entity @s[tag=!visible,nbt=!{data:{path:{}}},tag=!reached_target] run function luigis_mansion:entities/ghost/set_specific_path {index:0}
+execute if entity @s[tag=visible,nbt=!{data:{path:{}}},tag=!reached_target] unless entity @s[scores={ActionTime=1..}] run function luigis_mansion:entities/ghost/set_specific_path {index:2}
 scoreboard players add @s[scores={ActionTime=1..}] ActionTime 1
 scoreboard players set @s[tag=in_fire,tag=!visible] ActionTime 1
 tag @s[tag=in_fire] add visible
@@ -16,19 +16,22 @@ execute if entity @s[scores={ActionTime=41}] run function luigis_mansion:entitie
 data modify entity @s[scores={ActionTime=1}] data.animation set value {namespace:"luigis_mansion",id:"look_around"}
 data modify entity @s[scores={ActionTime=21}] data.animation set value {namespace:"luigis_mansion",id:"panic"}
 data modify entity @s[scores={ActionTime=41}] data.animation set value {namespace:"luigis_mansion",id:"run"}
-scoreboard players reset @s[scores={ActionTime=41}] ActionTime
+scoreboard players set @s[scores={ActionTime=41}] ActionTime 0
 scoreboard players set @s[tag=reached_target] ActionTime 41
-teleport @s[scores={Dialog=41}] ~ ~ ~ -60 0
-execute if entity @s[scores={Dialog=58..81}] run scoreboard players set #temp Move 5
-execute at @s[scores={Dialog=58..81}] facing 744.3 11 66 run function luigis_mansion:entities/ghost/move_forward_force
-execute if entity @s[scores={Dialog=61}] run playsound luigis_mansion:entity.shivers.calm_down hostile @a[tag=same_room] ~ ~ ~ 1
-scoreboard players set @s[scores={Dialog=81}] VulnerableTime 80
-data modify entity @s[scores={Dialog=41}] data.animation set value {namespace:"luigis_mansion",id:"look_around"}
-data modify entity @s[scores={Dialog=61}] data.animation set value {namespace:"luigis_mansion",id:"sit_down"}
-data modify entity @s[scores={Dialog=81}] data.animation set value {namespace:"luigis_mansion",id:"burn"}
-data modify entity @s[scores={Dialog=161}] data.animation set value {namespace:"luigis_mansion",id:"look_around"}
-tag @s[scores={Dialog=221}] add full_reset
-tag @s[scores={Dialog=221}] add vanish
+tag @s[tag=reached_target] add visible
+tag @s[tag=reached_target] remove reached_target
+teleport @s[scores={ActionTime=41}] ~ ~ ~ -60 0
+execute if entity @s[scores={ActionTime=58..81}] run scoreboard players set #temp Move 5
+execute at @s[scores={ActionTime=58..81}] facing 744.3 11 66 run function luigis_mansion:entities/ghost/move_forward_force
+execute if entity @s[scores={ActionTime=61}] run playsound luigis_mansion:entity.shivers.calm_down hostile @a[tag=same_room] ~ ~ ~ 1
+scoreboard players set @s[scores={ActionTime=81}] VulnerableTime 80
+data modify entity @s[scores={ActionTime=41}] data.animation set value {namespace:"luigis_mansion",id:"look_around"}
+data modify entity @s[scores={ActionTime=61}] data.animation set value {namespace:"luigis_mansion",id:"sit_down"}
+data modify entity @s[scores={ActionTime=81}] data.animation set value {namespace:"luigis_mansion",id:"burn"}
+data modify entity @s[scores={ActionTime=161}] data.animation set value {namespace:"luigis_mansion",id:"look_around"}
+tag @s[scores={ActionTime=221}] add full_reset
+tag @s[scores={ActionTime=221}] add vanish
+scoreboard players set @s[scores={ActionTime=221}] ActionTime 0
 
 execute if entity @s[scores={Sound=0},nbt={data:{animation:{namespace:"luigis_mansion",id:"run"}}}] run playsound luigis_mansion:entity.shivers.panic hostile @a[tag=same_room] ~ ~ ~ 1
 scoreboard players set @s[scores={Sound=0},nbt={data:{animation:{namespace:"luigis_mansion",id:"run"}}}] Sound 40

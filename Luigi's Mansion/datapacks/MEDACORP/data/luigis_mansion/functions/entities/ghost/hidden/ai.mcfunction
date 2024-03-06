@@ -1,21 +1,13 @@
 execute unless entity @s[scores={SpawnTime=0..}] run scoreboard players set @s SpawnTime 200
 scoreboard players remove @s[scores={SpawnTime=1..}] SpawnTime 1
-tag @s[scores={SpawnTime=100}] add can_spawn
+tag @s[scores={SpawnTime=..100},tag=!only_forced_spawn,tag=!hiding_in_furniture] add can_spawn
 execute unless entity @s[scores={SpawnTime=1..},tag=!new_ghost,tag=!no_hidden_move] facing entity @p[tag=same_room,tag=!spectator,tag=player,sort=nearest,limit=1] feet rotated ~ 0 run teleport @s ~ ~ ~ ~ ~
-scoreboard players set @s ActionTime 0
 execute if entity @s[scores={Time=40..}] run function luigis_mansion:entities/ghost/hidden/turn
 execute if block ~ ~ ~ #luigis_mansion:all_ignore unless entity @a[scores={GBHCall=1..},limit=1] if entity @e[tag=same_room,distance=..7,tag=!spectator,tag=player,limit=1] unless entity @s[tag=!burning_heart,tag=!frozen_heart,tag=!watery_heart] run tag @s[tag=can_spawn] add try_spawn
 tag @s add me
 execute if entity @e[tag=!me,tag=!hidden,tag=!model_piece,tag=!furniture,distance=..0.7,limit=1] if block ~ ~ ~ #luigis_mansion:all_ignore run tag @s remove try_spawn
 execute if entity @e[tag=!me,tag=!hidden,tag=!model_piece,tag=!furniture,distance=..0.7,limit=1] unless entity @e[type=minecraft:item_frame,distance=..0.7,limit=1] run tag @s remove try_spawn
-scoreboard players operation #temp PositionX = @s PositionX
-scoreboard players operation #temp PositionY = @s PositionY
-scoreboard players operation #temp PositionZ = @s PositionZ
-execute as @e[tag=furniture,tag=same_room,tag=!open] if score @s PositionX = #temp PositionX if score @s PositionY = #temp PositionY if score @s PositionZ = #temp PositionZ run tag @e[tag=me,limit=1] remove try_spawn
 tag @s remove me
-scoreboard players reset #temp PositionX
-scoreboard players reset #temp PositionY
-scoreboard players reset #temp PositionZ
 execute if entity @a[distance=..1.5] if block ~ ~ ~ #luigis_mansion:all_ignore run tag @s remove try_spawn
 tag @s[tag=try_spawn] add spawn
 execute if entity @s[tag=!spawn,tag=!no_height_change,tag=!new_ghost] unless block ~ ~ ~ #luigis_mansion:all_ignore run tag @s add forced_collision
@@ -23,7 +15,8 @@ execute if entity @s[tag=!spawn,tag=!no_height_change,tag=!new_ghost] if block ~
 execute if entity @s[tag=!spawn,tag=!no_height_change,tag=!new_ghost] if block ~ ~ ~ #minecraft:stairs run tag @s add forced_collision
 execute if entity @s[tag=!no_height_change,tag=!new_ghost] if block ~ ~-0.5 ~ #luigis_mansion:all_ignore run teleport @s ~ ~-0.5 ~
 execute at @s[tag=spawn,tag=!no_height_change,tag=!new_ghost] if block ~ ~-1 ~ #minecraft:slabs[type=bottom] run teleport @s ~ ~-0.5 ~
-execute at @s[tag=spawn] unless entity @s[tag=has_partner,tag=!partner_died] run function luigis_mansion:entities/ghost/hidden/appear
+execute at @s[tag=spawn] run function luigis_mansion:entities/ghost/hidden/appear
+execute at @s[tag=spawned_ghost_heart] run function luigis_mansion:entities/ghost/heart/remove
 
 execute at @s[tag=!spawn] if entity @s[scores={SpawnTime=1..},tag=!new_ghost,tag=!no_hidden_move] run function luigis_mansion:entities/ghost/hidden/move
 
@@ -34,3 +27,5 @@ scoreboard players reset @s MirrorZ
 scoreboard players reset @s LightX
 scoreboard players reset @s LightY
 scoreboard players reset @s LightZ
+scoreboard players set @s TargetTask 0
+scoreboard players set @s ActionTime 0

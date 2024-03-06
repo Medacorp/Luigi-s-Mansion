@@ -2,7 +2,7 @@
 	"credit": "Made with Blockbench",
 	"textures": {
 		"0": "luigis_mansion:entity/bat",
-		"particle": "#0"
+		"particle": "luigis_mansion:entity/bat"
 	},
 	"elements": [
 		{
@@ -29,6 +29,9 @@
 			"rotation": [90, 0, 0],
 			"translation": [-2.75, -2, 18.25],
 			"scale": [2.5, 2.5, 2.5]
+		},
+		"head": {
+			"scale": [1.25, 1.25, 1.25]
 		}
 	}
 }

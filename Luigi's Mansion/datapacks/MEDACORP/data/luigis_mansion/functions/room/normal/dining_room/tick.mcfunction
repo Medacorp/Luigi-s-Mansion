@@ -15,5 +15,6 @@ execute if block 704 13 40 minecraft:brewing_stand[has_bottle_0=true,has_bottle_
 scoreboard players set #temp Room 26
 execute as @a[gamemode=!spectator,tag=!pull_open_door,tag=!push_open_door] run function #luigis_mansion:get_same_room
 scoreboard players reset #temp Room
-execute if entity @a[tag=same_room,limit=1] run function luigis_mansion:room/normal/dining_room/ghosts
+execute if entity @a[tag=exact_same_room,limit=1] run function luigis_mansion:room/normal/dining_room/ghosts
 tag @a[tag=same_room] remove same_room
+tag @a[tag=exact_same_room] remove exact_same_room

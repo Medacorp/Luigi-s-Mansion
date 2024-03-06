@@ -1,2 +1,2 @@
-execute unless score #mirrored Selected matches 1 run function luigis_mansion:animations/neville/idle/normal/left_arm
-execute if score #mirrored Selected matches 1 run function luigis_mansion:animations/neville/idle/mirrored/left_arm
+execute unless score #mirrored Selected matches 1 run function luigis_mansion:animations/neville/yawn/normal/left_arm
+execute if score #mirrored Selected matches 1 run function luigis_mansion:animations/neville/yawn/mirrored/left_arm

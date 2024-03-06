@@ -1,9 +1,9 @@
 {
 	"credit": "Made with Blockbench",
 	"textures": {
+		"0": "luigis_mansion:entity/ghost_guy/ghost_guy",
 		"1": "luigis_mansion:item/empty",
-		"particle": "#0",
-		"0": "luigis_mansion:entity/ghost_guy/ghost_guy"
+		"particle": "luigis_mansion:entity/ghost_guy/ghost_guy"
 	},
 	"elements": [
 		{
@@ -60,6 +60,11 @@
 		"thirdperson_lefthand": {
 			"rotation": [0, 90, 0],
 			"translation": [-4.5, 2.5, 4]
+		},
+		"head": {
+			"rotation": [-90, -90, 0],
+			"translation": [7.2, -19, -7.25],
+			"scale": [1.6, 1.6, 1.6]
 		}
 	}
 }

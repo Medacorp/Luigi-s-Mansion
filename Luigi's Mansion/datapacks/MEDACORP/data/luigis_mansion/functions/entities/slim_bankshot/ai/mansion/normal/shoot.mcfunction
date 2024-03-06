@@ -1,4 +1,4 @@
-execute if entity @s[tag=!reached_target] unless data entity @s data.path.steps[0] run function luigis_mansion:entities/ghost/set_specific_path {index:0}
+execute if entity @s[tag=!reached_target] unless data entity @s data.path run function luigis_mansion:entities/ghost/set_specific_path {index:0}
 scoreboard players set @s[tag=!reached_target,scores={TargetTask=0}] TargetTask 5
 scoreboard players add @s[tag=reached_target] ActionTime 1
 teleport @s[tag=reached_target] ~ ~ ~ facing 681 11.6 79

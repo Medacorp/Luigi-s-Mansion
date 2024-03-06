@@ -13,6 +13,7 @@ execute as @a[gamemode=!spectator,tag=!pull_open_door,tag=!push_open_door] run f
 scoreboard players reset #temp Room
 execute if entity @a[tag=same_room,limit=1] run function e3_demo:room/original/hallway_6/ghosts
 tag @a[tag=same_room] remove same_room
+tag @a[tag=same_room] remove exact_same_room
 
 execute store result score #temp Time run data get storage luigis_mansion:data current_state.current_data.rooms.hallway_6.time_spent_in
 execute if entity @a[gamemode=!spectator,scores={Room=11},limit=1] if data storage luigis_mansion:data current_state.current_data.rooms.hallway_6{cleared:0b} store result storage luigis_mansion:data current_state.current_data.rooms.hallway_6.time_spent_in int 1 run scoreboard players add #temp Time 1

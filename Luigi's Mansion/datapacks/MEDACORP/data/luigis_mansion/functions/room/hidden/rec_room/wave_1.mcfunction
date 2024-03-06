@@ -1,5 +1,5 @@
+execute unless data storage luigis_mansion:data current_state.current_data{money_spawned:["rec_room_speedy_spirit"]} run data modify storage luigis_mansion:data entity set value {loot:{name:"rec_room_speedy_spirit"},tags:["hiding_in_furniture"]}
 execute unless data storage luigis_mansion:data current_state.current_data{money_spawned:["rec_room_speedy_spirit"]} run function luigis_mansion:entities/speedy_spirit/give_money/silver_diamond
-execute unless data storage luigis_mansion:data current_state.current_data{money_spawned:["rec_room_speedy_spirit"]} run data modify storage luigis_mansion:data entity.loot.name set value "rec_room_speedy_spirit"
 execute unless data storage luigis_mansion:data current_state.current_data{money_spawned:["rec_room_speedy_spirit"]} positioned 645 11 73 run function luigis_mansion:spawn_entities/ghost/speedy_spirit
 data modify storage luigis_mansion:data entity set value {mansion:{namespace:"luigis_mansion",id:"hidden"},scan_message:{sender:"me",message:'{"type":"translatable","translate":"luigis_mansion:message.biff_atlas.scan"}',plural_message:'{"type":"translatable","translate":"luigis_mansion:message.biff_atlas.scan"}'}}
 execute positioned 644 11 59 rotated -90 0 run function luigis_mansion:spawn_entities/portrait_ghost/biff_atlas

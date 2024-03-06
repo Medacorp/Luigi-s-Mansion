@@ -13,19 +13,19 @@ execute if entity @s[scores={ActionTime=21..30}] at @a[tag=got_sucked,distance=.
 execute if entity @s[scores={ActionTime=21..30}] run tag @a[tag=got_sucked,distance=..4,sort=nearest,limit=1] add vacuumed
 execute if entity @s[scores={ActionTime=21..30}] as @a[tag=vacuumed,limit=1,scores={Shrunk=0}] at @s run playsound luigis_mansion:entity.player.wind_warp player @a ~ ~ ~ 1
 execute if entity @s[scores={ActionTime=21..30}] as @a[tag=vacuumed,limit=1,scores={Shrunk=1..}] at @s run playsound luigis_mansion:entity.player.wind_warp player @a ~ ~ ~ 1 2
+execute if entity @s[scores={ActionTime=30}] unless entity @a[tag=got_sucked,limit=1] run scoreboard players set @s ActionTime 120
 execute if entity @a[tag=got_sucked,distance=..4,limit=1] run scoreboard players set @s[scores={ActionTime=21..30}] ActionTime 31
 execute if entity @s[scores={ActionTime=31}] run tag @a[tag=vacuumed,limit=1] remove vacuumed
 execute if entity @s[scores={ActionTime=31..89}] run scoreboard players set @a[tag=target,limit=1] Sound 1
 execute if entity @s[scores={ActionTime=31..89}] run scoreboard players set @a[tag=target,limit=1] Invulnerable 1
-execute if entity @s[scores={ActionTime=31}] unless entity @a[tag=target,limit=1] run scoreboard players set @s ActionTime 120
 data modify entity @s[scores={ActionTime=31}] data.animation set value {namespace:"luigis_mansion",id:"chew"}
 execute if entity @s[scores={ActionTime=32..89}] run teleport @a[tag=target,limit=1] ~ 0 ~
 execute if entity @s[scores={ActionTime=32..89}] run teleport @a[tag=target,limit=1] ^ ^2 ^-0.5
 execute if entity @s[scores={ActionTime=86}] run playsound luigis_mansion:entity.bowser.vacuum_spit hostile @a[tag=same_room] ~ ~ ~ 3
 execute if entity @s[scores={ActionTime=90}] run scoreboard players set @a[tag=target,limit=1] Invulnerable 0
 execute if entity @s[scores={ActionTime=90}] as @a[tag=target,limit=1,tag=looking_at_map] at @s run function luigis_mansion:selection_menu/game_boy_horror/map/exit
-execute if entity @s[scores={ActionTime=90}] unless score #mirrored Selected matches 1 as @a[tag=target,limit=1] positioned as @s rotated ~-45 0 run teleport @s ~ ~5 ~ ~-180 ~
-execute if entity @s[scores={ActionTime=90}] if score #mirrored Selected matches 1 as @a[tag=target,limit=1] positioned as @s rotated ~45 0 run teleport @s ~ ~5 ~ ~-180 ~
+execute if entity @s[scores={ActionTime=90}] unless score #mirrored Selected matches 1 as @a[tag=target,limit=1] positioned as @s rotated ~-45 0 run teleport @s ^ ^5 ^1 ~-180 ~
+execute if entity @s[scores={ActionTime=90}] if score #mirrored Selected matches 1 as @a[tag=target,limit=1] positioned as @s rotated ~45 0 run teleport @s ^ ^5 ^1 ~-180 ~
 execute if entity @s[scores={ActionTime=90}] run data modify storage luigis_mansion:data damage set value {method:{namespace:"luigis_mansion",id:"swallow"},amount:0,animation:{namespace:"luigis_mansion",id:"knockback/large"},attacker:-1}
 execute if entity @s[scores={ActionTime=90}] run data modify storage luigis_mansion:data damage.amount set from entity @s data.damage.vacuum
 execute if entity @s[scores={ActionTime=90}] store result storage luigis_mansion:data damage.attacker int 1 run scoreboard players get @s GhostNr

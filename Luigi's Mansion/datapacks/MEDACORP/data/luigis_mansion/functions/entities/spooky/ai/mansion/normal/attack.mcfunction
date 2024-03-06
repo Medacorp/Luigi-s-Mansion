@@ -1,5 +1,5 @@
-scoreboard players add @s TargetTask 0
-scoreboard players add @s SpawnTime 0
+scoreboard players set @s TargetTask 0
+scoreboard players set @s SpawnTime 0
 scoreboard players add @s[scores={ActionTime=52..}] ActionTime 1
 scoreboard players set @s[scores={ActionTime=51}] ActionTime 44
 scoreboard players add @s[scores={ActionTime=1..50}] ActionTime 1
@@ -38,14 +38,12 @@ scoreboard players reset @s[scores={ActionTime=53}] GrabbedID
 data modify entity @s[scores={ActionTime=53}] data.animation set value {namespace:"luigis_mansion",id:"let_go"}
 execute if entity @s[scores={ActionTime=53..112}] run scoreboard players set #temp Move 15
 execute at @s[scores={ActionTime=53}] store result entity @s Pos[1] double 0.01 run scoreboard players get @s HomeY
-execute at @s[scores={ActionTime=53}] run teleport @s ~ ~1 ~
 execute if entity @s[scores={ActionTime=53}] run playsound luigis_mansion:entity.spooky.let_go hostile @a[tag=same_room] ~ ~ ~ 1
 execute at @s[scores={ActionTime=53..92}] rotated ~-180 0 run function luigis_mansion:entities/ghost/move_forward
 execute at @s[scores={ActionTime=53..62}] run teleport @s ~ ~0.2 ~
 execute at @s[scores={ActionTime=63..72}] run teleport @s ~ ~0.1 ~
 execute at @s[scores={ActionTime=73..82}] run teleport @s ~ ~-0.1 ~
 execute at @s[scores={ActionTime=83..92}] run teleport @s ~ ~-0.2 ~
-execute at @s[scores={ActionTime=93}] run teleport @s ~ ~-0.4 ~
 tag @s[scores={ActionTime=112}] remove attack
 data modify entity @s[scores={ActionTime=112}] data.animation set value {namespace:"luigis_mansion",id:"wake_up"}
 scoreboard players reset @s[scores={ActionTime=112}] ActionTime

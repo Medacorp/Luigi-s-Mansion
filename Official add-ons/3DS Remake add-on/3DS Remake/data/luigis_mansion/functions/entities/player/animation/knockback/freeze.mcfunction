@@ -12,19 +12,18 @@ execute store result entity @e[tag=home,limit=1] Rotation[1] float 1 run scorebo
 execute at @s[scores={AnimationProgress=..70}] unless entity @e[tag=home,limit=1,distance=..0.1] run scoreboard players add @s AnimationProgress 2
 execute at @e[tag=home,limit=1] run tp @s ~ 0 ~ ~ ~
 execute at @e[tag=home,limit=1] run tp @s ~ ~ ~ ~ ~
-execute at @s[scores={AnimationProgress=70..72}] anchored eyes positioned ^ ^ ^ run tag @e[tag=luigi_ice,distance=..0.1,limit=1] add remove_from_existence
-execute at @s[scores={AnimationProgress=70..72}] anchored eyes run particle minecraft:item minecraft:diamond_pickaxe{Unbreakable:1b,Damage:4,CustomModelData:47} ^ ^ ^ 0.3 0.3 0.3 0 50 force @a[tag=same_room]
+execute at @s[scores={AnimationProgress=70..}] anchored eyes positioned ^ ^ ^ run tag @e[tag=luigi_ice,distance=..0.2,limit=1] add remove_from_existence
+execute at @s[scores={AnimationProgress=70..72}] anchored eyes run particle minecraft:item minecraft:diamond_pickaxe{Unbreakable:1b,Damage:4,CustomModelData:38} ^ ^ ^ 0.3 0.3 0.3 0 50 force @a[tag=same_room]
 scoreboard players set @s[scores={AnimationProgress=..70,Invulnerable=6..}] Invulnerable 5
-execute at @s[scores={AnimationProgress=..70,Invulnerable=0}] run function luigis_mansion:entities/player/memory/get with entity @s
 execute at @s[scores={AnimationProgress=..70,Invulnerable=0}] run data modify storage luigis_mansion:data damage set value {amount:1,attacker:-1}
 execute if entity @s[scores={AnimationProgress=..70,Invulnerable=0}] run data modify storage luigis_mansion:data damage.attacker set from storage luigis_mansion:data my_memory.hurt_by.attacker
 execute at @s[scores={AnimationProgress=..70,Invulnerable=0}] run function luigis_mansion:entities/player/damage
 scoreboard players set @s[scores={AnimationProgress=70}] Invulnerable 70
-execute at @s[scores={AnimationProgress=72,Sound=0,Health=41..,Shrunk=0},tag=!gooigi] run playsound luigis_mansion:entity.player.sigh.high_health player @a[tag=same_room] ~ ~ ~ 1
-execute at @s[scores={AnimationProgress=72,Sound=0,Health=41..,Shrunk=1..},tag=!gooigi] run playsound luigis_mansion:entity.player.sigh.high_health player @a[tag=same_room] ~ ~ ~ 1 2
-execute at @s[scores={AnimationProgress=72,Sound=0,Health=..40,Shrunk=0},tag=!gooigi] run playsound luigis_mansion:entity.player.sigh.low_health player @a[tag=same_room] ~ ~ ~ 1
-execute at @s[scores={AnimationProgress=72,Sound=0,Health=..40,Shrunk=1..},tag=!gooigi] run playsound luigis_mansion:entity.player.sigh.low_health player @a[tag=same_room] ~ ~ ~ 1 2
-scoreboard players set @s[scores={AnimationProgress=72,Sound=0},tag=!gooigi] Sound 15
+execute at @s[scores={AnimationProgress=73,Sound=0,Health=41..,Shrunk=0},tag=!gooigi] run playsound luigis_mansion:entity.player.sigh.high_health player @a[tag=same_room] ~ ~ ~ 1
+execute at @s[scores={AnimationProgress=73,Sound=0,Health=41..,Shrunk=1..},tag=!gooigi] run playsound luigis_mansion:entity.player.sigh.high_health player @a[tag=same_room] ~ ~ ~ 1 2
+execute at @s[scores={AnimationProgress=73,Sound=0,Health=..40,Shrunk=0},tag=!gooigi] run playsound luigis_mansion:entity.player.sigh.low_health player @a[tag=same_room] ~ ~ ~ 1
+execute at @s[scores={AnimationProgress=73,Sound=0,Health=..40,Shrunk=1..},tag=!gooigi] run playsound luigis_mansion:entity.player.sigh.low_health player @a[tag=same_room] ~ ~ ~ 1 2
+scoreboard players set @s[scores={AnimationProgress=73,Sound=0},tag=!gooigi] Sound 15
 kill @e[tag=home,limit=1]
 tag @s remove new_poltergust_grabbed
 tag @s remove poltergust_grabbed
@@ -33,4 +32,5 @@ tag @s add disable_flashlight
 tag @s add disable_game_boy_horror
 tag @s add disable_interact
 tag @s add disable_poltergust
+tag @s add animation_may_move
 execute if entity @s[scores={AnimationProgress=80}] run function luigis_mansion:entities/player/animation/set/none

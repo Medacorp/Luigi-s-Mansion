@@ -1,2 +1,2 @@
-execute unless score #mirrored Selected matches 1 run function luigis_mansion:aniamtions/puncher/basher_complain/normal/head
-execute if score #mirrored Selected matches 1 run function luigis_mansion:aniamtions/puncher/basher_complain/mirrored/head
+execute unless score #mirrored Selected matches 1 run function luigis_mansion:animations/puncher/basher_complain/normal/head
+execute if score #mirrored Selected matches 1 run function luigis_mansion:animations/puncher/basher_complain/mirrored/head

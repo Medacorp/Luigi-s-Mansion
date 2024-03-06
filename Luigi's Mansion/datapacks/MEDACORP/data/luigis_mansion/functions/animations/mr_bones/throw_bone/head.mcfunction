@@ -1,2 +1,2 @@
-execute unless score #mirrored Selected matches 1 run function luigis_mansion:animations/mr_bones/idle/normal/head
-execute if score #mirrored Selected matches 1 run function luigis_mansion:animations/mr_bones/idle/mirrored/head
+execute unless score #mirrored Selected matches 1 run function luigis_mansion:animations/mr_bones/throw_bone/normal/head
+execute if score #mirrored Selected matches 1 run function luigis_mansion:animations/mr_bones/throw_bone/mirrored/head

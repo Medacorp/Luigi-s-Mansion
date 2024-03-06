@@ -1,8 +1,6 @@
 {
-	"credit": "Made with Blockbench",
+	"parent": "luigis_mansion:entity/garbage_can_ghost/right_arm",
 	"textures": {
-		"0": "luigis_mansion:entity/garbage_can_ghost",
-		"particle": "#0",
 		"1": "luigis_mansion:entity/bannana_peel"
 	},
 	"elements": [
@@ -127,10 +125,5 @@
 				"down": {"uv": [5.5, 7.625, 6, 8.375], "texture": "#0", "tintindex": 0}
 			}
 		}
-	],
-	"display": {
-		"thirdperson_righthand": {
-			"translation": [6, 2.5, 4.25]
-		}
-	}
+	]
 }

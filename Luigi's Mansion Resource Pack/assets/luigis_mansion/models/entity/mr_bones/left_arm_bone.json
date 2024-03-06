@@ -1,9 +1,5 @@
 {
-	"credit": "Made with Blockbench",
-	"textures": {
-		"0": "luigis_mansion:entity/mr_bones/head_arms",
-		"particle": "luigis_mansion:entity/mr_bones/head_arms"
-	},
+	"parent": "luigis_mansion:entity/mr_bones/left_arm",
 	"elements": [
 		{
 			"from": [11, 2, 9],
@@ -70,12 +66,6 @@
 			}
 		}
 	],
-	"display": {
-		"thirdperson_lefthand": {
-			"translation": [6, 2, 5.25],
-			"scale": [0.86, 0.86, 0.86]
-		}
-	},
 	"groups": [0, 1, 2, 3,
 		{
 			"name": "bone",

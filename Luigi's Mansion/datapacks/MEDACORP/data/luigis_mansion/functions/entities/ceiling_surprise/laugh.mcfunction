@@ -1,5 +1,5 @@
-scoreboard players add @s TargetTask 0
-scoreboard players add @s SpawnTime 0
+scoreboard players set @s TargetTask 0
+scoreboard players set @s SpawnTime 0
 scoreboard players add @s ActionTime 1
 $execute if entity @s[scores={ActionTime=1}] run playsound $(namespace):entity.$(id).laugh hostile @a[tag=same_room] ~ ~ ~ 1
 $execute if entity @s[scores={ActionTime=6}] run playsound $(namespace):entity.$(id).laugh hostile @a[tag=same_room] ~ ~ ~ 1

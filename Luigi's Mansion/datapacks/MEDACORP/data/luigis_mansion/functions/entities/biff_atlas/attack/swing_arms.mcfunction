@@ -1,5 +1,5 @@
-#scoreboard players add @s TargetTask 0 //This attack supports moving around
-scoreboard players add @s SpawnTime 0
+#scoreboard players set @s TargetTask 0 //This attack supports moving around
+scoreboard players set @s SpawnTime 0
 scoreboard players add @s ActionTime 1
 data modify entity @s[scores={ActionTime=1}] data.animation set value {namespace:"luigis_mansion",id:"swing_arms"}
 execute if entity @s[scores={ActionTime=1}] run playsound luigis_mansion:entity.biff_atlas.attack hostile @a[tag=same_room] ~ ~ ~ 1

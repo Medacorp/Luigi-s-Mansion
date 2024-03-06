@@ -1,1 +1,1 @@
-tag @s[tag=!hidden] add remove_from_existence
+tag @s[tag=spawn] add remove_from_existence

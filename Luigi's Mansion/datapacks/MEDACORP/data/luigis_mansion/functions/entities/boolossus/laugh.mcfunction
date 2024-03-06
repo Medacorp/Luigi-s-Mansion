@@ -8,6 +8,6 @@ execute if entity @s[scores={ActionTime=61}] run playsound luigis_mansion:entity
 execute if entity @s[scores={ActionTime=71}] run playsound luigis_mansion:entity.boo.taunt hostile @a[tag=same_room] ~ ~ ~ 1
 data modify entity @s[scores={ActionTime=1}] data.animation set value {namespace:"luigis_mansion",id:"laugh"}
 data modify entity @s[scores={ActionTime=41}] data.animation set value {namespace:"luigis_mansion",id:"taunt"}
-data remove entity @s[scores={Dialog=80}] data.animation
+data remove entity @s[scores={ActionTime=80}] data.animation
 tag @s[scores={ActionTime=80}] remove laugh
 scoreboard players set @s[scores={ActionTime=80}] ActionTime 0

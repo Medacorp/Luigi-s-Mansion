@@ -13,5 +13,6 @@ execute if data storage luigis_mansion:data current_state.current_data.rooms.gra
 scoreboard players set #temp Room 74
 execute as @a[gamemode=!spectator,tag=!pull_open_door,tag=!push_open_door] run function #luigis_mansion:get_same_room
 scoreboard players reset #temp Room
-execute if entity @a[tag=same_room,limit=1] run function luigis_mansion:room/hidden/bogmire_battle/ghosts
+execute if entity @a[tag=exact_same_room,limit=1] run function luigis_mansion:room/hidden/bogmire_battle/ghosts
 tag @a[tag=same_room] remove same_room
+tag @a[tag=exact_same_room] remove exact_same_room

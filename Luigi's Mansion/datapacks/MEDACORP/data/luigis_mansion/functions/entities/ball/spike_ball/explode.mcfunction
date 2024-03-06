@@ -1,5 +1,5 @@
 tag @s add me
-execute as @e[tag=bowser,tag=can_decapitate,tag=same_room] at @s run function luigis_mansion:entities/ball/spike_ball/decapitate_bowser
+execute as @e[tag=can_decapitate,tag=same_room] run function luigis_mansion:entities/ball/spike_ball/decapitate_bowser
 tag @s remove me
 execute as @e[distance=..3,tag=game_boy_horror_location] run function luigis_mansion:entities/game_boy_horror_location/bring_player_back
 data modify storage luigis_mansion:data damage set value {method:{namespace:"luigis_mansion",id:"explosion"},amount:10,animation:{namespace:"luigis_mansion",id:"knockback/burn"},no_delete:1b}

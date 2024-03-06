@@ -24,5 +24,6 @@ function #luigis_mansion:room/normal/the_artists_studio/interactions/room
 scoreboard players set #temp Room 71
 execute as @a[gamemode=!spectator,tag=!pull_open_door,tag=!push_open_door] run function #luigis_mansion:get_same_room
 scoreboard players reset #temp Room
-execute if entity @a[tag=same_room,limit=1] run function luigis_mansion:room/normal/the_artists_studio/ghosts
+execute if entity @a[tag=exact_same_room,limit=1] run function luigis_mansion:room/normal/the_artists_studio/ghosts
 tag @a[tag=same_room] remove same_room
+tag @a[tag=exact_same_room] remove exact_same_room

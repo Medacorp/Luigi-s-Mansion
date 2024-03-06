@@ -14,8 +14,8 @@ tag @s remove me
 execute if entity @s[scores={Dialog=220..329}] run scoreboard players set @a[tag=same_room,limit=1,scores={IdleTime=-21}] IdleTime -22
 teleport @s[scores={Dialog=220}] ~ 37 ~
 data modify entity @s[scores={Dialog=220}] data.animation set value {namespace:"luigis_mansion",id:"roar"}
-data modify entity @s[scores={Dialog=220..250}] data.initial_animation_progress set value 0
 data modify entity @s[scores={Dialog=290}] data.animation set value {namespace:"luigis_mansion",id:"attach_head"}
+data remove entity @s[scores={Dialog=330}] data.animation
 tag @s[scores={Dialog=370}] add breathe_fire
 tag @s[scores={Dialog=530}] add intro_done
 tag @s[scores={Dialog=530}] add can_decapitate

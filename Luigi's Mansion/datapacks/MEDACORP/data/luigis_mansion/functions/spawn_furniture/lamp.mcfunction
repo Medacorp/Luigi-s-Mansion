@@ -4,5 +4,6 @@ scoreboard players set @e[tag=this_entity,limit=1] FurnitureLightUp 5
 scoreboard players set @e[tag=this_entity,limit=1] FurnitureLightForward 0
 scoreboard players set @e[tag=this_entity,limit=1] FurnitureLightStrength 15
 scoreboard players set @e[tag=this_entity,limit=1] FurnitureLightModel 0
-function luigis_mansion:spawn_furniture/setup/debug_spawn
+function luigis_mansion:spawn_furniture/setup/default
 tag @e[tag=this_entity,limit=1] remove this_entity
+data remove storage luigis_mansion:data furniture

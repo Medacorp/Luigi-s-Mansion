@@ -16,8 +16,9 @@ execute if entity @e[x=636.5,y=94,z=-17.5,distance=..0.7,type=minecraft:item_fra
 scoreboard players set #temp Room 72
 execute as @a[gamemode=!spectator,tag=!pull_open_door,tag=!push_open_door] run function #luigis_mansion:get_same_room
 scoreboard players reset #temp Room
-execute if entity @a[tag=same_room,limit=1] run function luigis_mansion:room/normal/secret_altar/ghosts
+execute if entity @a[tag=exact_same_room,limit=1] run function luigis_mansion:room/normal/secret_altar/ghosts
 tag @a[tag=same_room] remove same_room
+tag @a[tag=exact_same_room] remove exact_same_room
 
 execute as @a[gamemode=!spectator,x=648.5,y=93,z=-9.5,distance=..0.7] unless data storage luigis_mansion:data current_state.current_data.technical_data{saw_mario:1b} unless entity @a[tag=marios_painting] run tag @s add marios_painting
 execute as @a[gamemode=!spectator,x=648.5,y=93,z=-9.5,distance=..0.7] if data storage luigis_mansion:data current_state.current_data.technical_data{saw_mario:1b} unless data storage luigis_mansion:data current_state.current_data.technical_data{saw_mario_again:1b} unless entity @a[tag=marios_painting_repeat] run tag @s add marios_painting_repeat

@@ -1,6 +1,6 @@
 tag @s[tag=lit,tag=in_vacuum] add extinguish
 tag @s[tag=lit,tag=in_dust] add extinguish
-execute unless entity @s[tag=!remove_from_existence,tag=!dead] run tag @s[tag=!lit,tag=in_fire] add lit
+execute if entity @s[tag=!remove_from_existence,tag=!dead] run tag @s[tag=!lit,tag=in_fire] add lit
 tag @s[tag=lit,tag=in_water] remove lit
 tag @s[tag=lit,tag=in_ice] add extinguish
 tag @s[tag=extinguish,tag=!cannot_extinguish] remove lit

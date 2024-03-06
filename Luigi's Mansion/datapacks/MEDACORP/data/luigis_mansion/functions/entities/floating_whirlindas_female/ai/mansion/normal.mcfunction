@@ -1,7 +1,10 @@
 tag @e[nbt={data:{entity:{namespace:"luigis_mansion",id:"floating_whirlindas_male"}}},limit=1] add partner
+data remove entity @s data.animation
 data modify entity @s data.animation set from entity @e[tag=partner,limit=1] data.animation
 tag @s remove visible
+tag @s remove freeze_animation
 execute if entity @e[tag=partner,tag=visible,limit=1] run tag @s add visible
+execute if entity @e[tag=partner,tag=freeze_animation,limit=1] run tag @s add freeze_animation
 
 execute if entity @e[tag=partner,scores={HurtTime=1},limit=1] run playsound luigis_mansion:entity.floating_whirlindas.female.hurt hostile @a[tag=same_room] ~ ~ ~ 1
 execute if entity @e[tag=partner,scores={HurtTime=1},limit=1] run scoreboard players set @s Sound 40

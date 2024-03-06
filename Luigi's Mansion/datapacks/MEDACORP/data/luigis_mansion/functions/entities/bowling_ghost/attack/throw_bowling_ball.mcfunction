@@ -1,9 +1,10 @@
-scoreboard players add @s TargetTask 0
-scoreboard players add @s SpawnTime 0
+scoreboard players set @s TargetTask 0
+scoreboard players set @s SpawnTime 0
 scoreboard players add @s ActionTime 1
 data modify entity @s[scores={ActionTime=1}] data.animation set value {namespace:"luigis_mansion",id:"throw_bowling_ball"}
 data modify entity @s[scores={ActionTime=10}] data.animation set value {namespace:"luigis_mansion",id:"look"}
 
+execute if entity @s[scores={ActionTime=1}] facing entity @e[tag=same_room,tag=target,limit=1] feet rotated ~ 0 run teleport @s ~ ~ ~ ~ ~
 execute if entity @s[scores={ActionTime=1}] unless score #mirrored Selected matches 1 run teleport @e[tag=this_bowling_ball,limit=1] ^-0.3 ^0.2 ^0.4 ~ ~
 execute if entity @s[scores={ActionTime=1}] if score #mirrored Selected matches 1 run teleport @e[tag=this_bowling_ball,limit=1] ^0.3 ^0.2 ^0.4 ~ ~
 execute if entity @s[scores={ActionTime=2}] unless score #mirrored Selected matches 1 run teleport @e[tag=this_bowling_ball,limit=1] ^-0.3 ^-0.4 ^0.2 ~ ~

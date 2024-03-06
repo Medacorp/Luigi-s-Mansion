@@ -1,5 +1,6 @@
+function luigis_mansion:entities/ghost/get_target
 tag @s[tag=in_vacuum] add flee
-function luigis_mansion:entities/ghost/ai
+execute at @s run function luigis_mansion:entities/ghost/ai
 
 scoreboard players set @s[tag=flee] WaitTime 0
 tag @s remove flee

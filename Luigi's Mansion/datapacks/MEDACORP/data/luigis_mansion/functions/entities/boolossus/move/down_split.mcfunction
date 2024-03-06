@@ -6,4 +6,4 @@ tag @s[scores={JumpHeight=..-90}] add move_up_now
 execute at @s[tag=move_up_now] run teleport @s ~ ~ ~ ~ 0
 tag @s[tag=move_up_now] add move_up
 tag @s remove move_up_now
-execute if score #temp Move matches 1.. at @s run function luigis_mansion:entities/boolossus/move_forward
+execute if score #temp Move matches 1.. at @s run function luigis_mansion:entities/boolossus/move/forward

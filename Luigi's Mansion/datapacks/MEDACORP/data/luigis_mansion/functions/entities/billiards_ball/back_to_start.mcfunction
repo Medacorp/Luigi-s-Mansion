@@ -5,7 +5,6 @@ data modify entity @s Pose.Head[0] set value 0.0f
 tag @s remove can_spit_2
 tag @s remove can_spit
 tag @s remove spit
-tag @s remove in_vacuum
 tag @s remove collision
 tag @s remove vacuumable
 execute at @s run teleport @s ~ ~1.19 ~

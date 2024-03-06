@@ -14,5 +14,6 @@ execute unless entity @e[tag=light_me,tag=!lit,scores={Room=21},limit=1] run tag
 scoreboard players set #temp Room 21
 execute as @a[gamemode=!spectator,tag=!pull_open_door,tag=!push_open_door] run function #luigis_mansion:get_same_room
 scoreboard players reset #temp Room
-execute if entity @a[tag=same_room,limit=1] run function 3ds_remake:room/hidden/mirror_room/ghosts
+execute if entity @a[tag=exact_same_room,limit=1] run function 3ds_remake:room/hidden/mirror_room/ghosts
 tag @a[tag=same_room] remove same_room
+tag @a[tag=exact_same_room] remove exact_same_room

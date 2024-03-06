@@ -1,6 +1,4 @@
 scoreboard players set @s ActionTime 0
-scoreboard players set @s TargetTask 0
-data remove entity @s data.animation
 scoreboard players set @s[tag=disappear] VacuumTime 0
 tag @s[tag=disappear] remove stop_dancing
 scoreboard players set @s[tag=!stop_dancing] WaitTime 0

@@ -2,7 +2,7 @@
 	"credit": "Made with Blockbench",
 	"textures": {
 		"0": "luigis_mansion:entity/bogmire",
-		"particle": "#0"
+		"particle": "luigis_mansion:entity/bogmire"
 	},
 	"elements": [
 		{
@@ -59,6 +59,10 @@
 		"thirdperson_righthand": {
 			"rotation": [90, 0, 0],
 			"translation": [-2, -2, 11]
+		},
+		"head": {
+			"translation": [-3.25, -8, 0],
+			"scale": [1.6, 1.6, 1.6]
 		}
 	}
 }

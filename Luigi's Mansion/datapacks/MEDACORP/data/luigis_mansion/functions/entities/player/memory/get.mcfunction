@@ -1,3 +1,3 @@
-$data modify storage luigis_mansion:data my_memory set value {uuid:$(UUID),id:0,inventory:{},model:{color:0,variant:0b},hurt_by:{method:""},revived_by:"",poltergust_element:"none"}
+$data modify storage luigis_mansion:data my_memory set value {uuid:$(UUID),id:0,inventory:{},model:{color:0,variant:0b},hurt_by:{method:{}},revived_by:"",poltergust_element:"none"}
 $execute if data storage luigis_mansion:data memory[{uuid:$(UUID)}] run data modify storage luigis_mansion:data my_memory set from storage luigis_mansion:data memory[{uuid:$(UUID)}]
 $execute if data storage luigis_mansion:data memory[{uuid:$(UUID)}] run data remove storage luigis_mansion:data memory[{uuid:$(UUID)}]

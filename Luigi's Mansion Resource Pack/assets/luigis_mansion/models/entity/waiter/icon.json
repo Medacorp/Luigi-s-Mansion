@@ -2,8 +2,8 @@
 	"credit": "Made with Blockbench",
 	"textures": {
 		"0": "luigis_mansion:entity/waiter",
-		"1": "luigis_mansion:block/waiter_plate",
-		"2": "luigis_mansion:block/food",
+		"1": "luigis_mansion:entity/waiter_plate",
+		"2": "luigis_mansion:furniture/food",
 		"particle": "luigis_mansion:entity/waiter"
 	},
 	"elements": [

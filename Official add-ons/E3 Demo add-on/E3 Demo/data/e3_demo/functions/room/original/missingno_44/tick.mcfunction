@@ -10,8 +10,9 @@ function #e3_demo:room/original/missingno_44/interactions/room
 scoreboard players set #temp Room 60
 execute as @a[gamemode=!spectator,tag=!pull_open_door,tag=!push_open_door] run function #luigis_mansion:get_same_room
 scoreboard players reset #temp Room
-execute if entity @a[tag=same_room,limit=1] run function e3_demo:room/original/missingno_44/ghosts
+execute if entity @a[tag=exact_same_room,limit=1] run function e3_demo:room/original/missingno_44/ghosts
 tag @a[tag=same_room] remove same_room
+tag @a[tag=exact_same_room] remove exact_same_room
 
 execute store result score #temp Time run data get storage luigis_mansion:data current_state.current_data.rooms.missingno_44.time_spent_in
 execute if entity @a[gamemode=!spectator,scores={Room=60},limit=1] if data storage luigis_mansion:data current_state.current_data.rooms.missingno_44{cleared:0b} store result storage luigis_mansion:data current_state.current_data.rooms.missingno_44.time_spent_in int 1 run scoreboard players add #temp Time 1
