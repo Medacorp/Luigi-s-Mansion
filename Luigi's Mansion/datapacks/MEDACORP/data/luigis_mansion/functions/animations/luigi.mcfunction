@@ -12,7 +12,7 @@ data modify storage luigis_mansion:data luigi.gliding set from entity @s FallFly
 execute store result storage luigis_mansion:data luigi.alive byte 1 if entity @s[scores={Health=1..}]
 execute store result storage luigis_mansion:data luigi.reset_rotation byte 1 if entity @s[tag=reset_rotation,tag=!stop_model]
 execute store result storage luigis_mansion:data luigi.swimming byte 1 if entity @s[tag=swimming]
-execute store result storage luigis_mansion:data luigi.invulnerable byte 1 if entity @s[scores={Invulnerable=1..},tag=!capturing_ghost]
+execute store result storage luigis_mansion:data luigi.invulnerable byte 1 if entity @s[scores={Invulnerable=1..,AnimationProgress=0},tag=!capturing_ghost]
 execute if entity @s[nbt={Inventory:[{tag:{luigis_mansion:{is_poltergust:1b}}}]}] run data modify storage luigis_mansion:data luigi.poltergust set from entity @s Inventory[{tag:{luigis_mansion:{is_poltergust:1b}}}]
 data modify storage luigis_mansion:data luigi.mainhand set from entity @s[tag=dark_room] Inventory[{tag:{luigis_mansion:{namespace:"luigis_mansion",id:"flashlight"}}}]
 execute if entity @s[nbt=!{SelectedItem:{tag:{luigis_mansion:{namespace:"luigis_mansion",id:"flashlight"}}}},nbt=!{SelectedItem:{tag:{luigis_mansion:{namespace:"luigis_mansion",id:"game_boy_horror"}}}},nbt=!{SelectedItem:{tag:{luigis_mansion:{namespace:"luigis_mansion",id:"interact"}}}}] run data modify storage luigis_mansion:data luigi.mainhand set from entity @s SelectedItem
@@ -27,5 +27,5 @@ execute unless score #temp Time matches 10 run tag @e[tag=this_luigi] add dead
 scoreboard players reset #temp Time
 execute if entity @e[tag=this_luigi,limit=1] run scoreboard players set @s ModelTime 0
 execute unless entity @e[tag=this_luigi,limit=1] run scoreboard players add @s ModelTime 1
-execute unless entity @e[tag=this_luigi,limit=1] if entity @s[scores={ModelTime=10..}] run function luigis_mansion:spawn_entities/luigi
+execute unless entity @e[tag=this_luigi,limit=1] if entity @s[scores={ModelTime=3..}] run function luigis_mansion:spawn_entities/luigi
 tag @e[tag=this_luigi] remove this_luigi

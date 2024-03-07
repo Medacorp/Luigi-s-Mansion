@@ -1,18 +1,12 @@
 execute unless score #clockwork_room Ticking matches 1 run function #luigis_mansion:room/normal/clockwork_room/load
 execute as @a[gamemode=!spectator,x=682,y=117,z=-10,dx=17,dy=8,dz=35] unless entity @s[scores={Room=62}] run scoreboard players operation @s LastRoom = @s Room
-execute as @e[x=682,y=117,z=-10,dx=17,dy=8,dz=35] unless entity @s[tag=ghost,tag=appear] unless entity @s[tag=ghost,tag=vanish] run scoreboard players set @s Room 62
-scoreboard players set #temp Room 62
+execute as @e[x=682,y=117,z=-10,dx=17,dy=8,dz=35] unless entity @s[tag=ghost,tag=vanish] run scoreboard players set @s Room 62
 
 execute as @a[scores={Room=62}] run function luigis_mansion:room/normal/clockwork_room/tick_per_player
 
 function #luigis_mansion:room/normal/clockwork_room/interactions/room
 
-scoreboard players set #temp Room 62
-execute as @a[gamemode=!spectator,tag=!pull_open_door,tag=!push_open_door] run function #luigis_mansion:get_same_room
-scoreboard players reset #temp Room
-execute if entity @a[tag=exact_same_room,limit=1] run function luigis_mansion:room/normal/clockwork_room/ghosts
-tag @a[tag=same_room] remove same_room
-tag @a[tag=exact_same_room] remove exact_same_room
+execute if entity @a[gamemode=!spectator,tag=!pull_open_door,tag=!push_open_door,scores={Room=62},limit=1] run function luigis_mansion:room/normal/clockwork_room/ghosts
 
 execute unless score #clockwork_room_elevator Time matches 1.. if entity @a[gamemode=!spectator,x=685.0,y=118,z=7.0,dx=1,dy=2,dz=1,gamemode=!spectator] run scoreboard players set #clockwork_room_elevator Searched 1
 execute if score #clockwork_room_elevator Time matches 100 if entity @a[gamemode=!spectator,x=687.0,y=118,z=7.0,dx=1,dy=2,dz=1,gamemode=!spectator] run scoreboard players set #clockwork_room_elevator Searched -1

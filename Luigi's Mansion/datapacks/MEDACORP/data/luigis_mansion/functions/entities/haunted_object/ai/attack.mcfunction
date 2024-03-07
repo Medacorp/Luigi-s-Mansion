@@ -1,6 +1,7 @@
 data modify entity @s data.animation set from entity @s data.flying_animation
-execute if entity @s[tag=!dead,scores={WaitTime=100..119}] run function luigis_mansion:entities/ghost/move_forward_force
-execute if entity @s[tag=!dead,scores={WaitTime=120..}] run function luigis_mansion:entities/ghost/move_forward
+execute if entity @s[tag=!dead,scores={WaitTime=100..109}] run function luigis_mansion:entities/ghost/move_forward_force
+execute if entity @s[tag=!dead,scores={WaitTime=110..}] run function luigis_mansion:entities/ghost/move_forward
+execute at @s if block ~ ~-0.1 ~ #luigis_mansion:ghosts_ignore run teleport @s[tag=vacuumable] ~ ~-0.1 ~
 execute if entity @s[tag=in_dust] rotated as @a[tag=expelling_me,sort=nearest,limit=1] if block ^ ^ ^0.3 #luigis_mansion:ghosts_ignore run teleport @s ^ ^ ^0.1
 execute if entity @s[tag=!dead] if entity @e[tag=exact_same_room,tag=!spectator,tag=player,distance=..0.7,limit=1] run function luigis_mansion:entities/haunted_object/collide with entity @s data.entity
 execute if score #temp Move matches -1 run tag @s add collided

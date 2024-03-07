@@ -1,2 +1,2 @@
-execute unless score #mirrored Selected matches 1 run function luigis_mansion:animations/haunted_object/shake/normal/model
-execute if score #mirrored Selected matches 1 run function luigis_mansion:animations/haunted_object/shake/mirrored/model
+execute unless score #mirrored Selected matches 1 run function luigis_mansion:animations/haunted_object/spin_roll/normal/model
+execute if score #mirrored Selected matches 1 run function luigis_mansion:animations/haunted_object/spin_roll/mirrored/model

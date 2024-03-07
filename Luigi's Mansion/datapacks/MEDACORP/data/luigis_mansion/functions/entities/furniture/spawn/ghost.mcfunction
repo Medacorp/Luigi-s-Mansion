@@ -11,8 +11,5 @@ scoreboard players reset #temp Time
 scoreboard players reset #temp2 Time
 scoreboard players reset #temp3 Time
 execute positioned as @e[tag=temp,tag=!to_spawn_location,limit=1] run tag @e[distance=..0.1,tag=ghost,tag=hidden,tag=new_ghost] add spawn
-execute positioned as @e[tag=temp,tag=!to_spawn_location,limit=1] as @e[distance=..0.1,tag=ghost,tag=hidden,tag=new_ghost] store result score @s HomeX run data get entity @e[tag=temp,tag=to_spawn_location,limit=1] Pos[0] 100
-execute positioned as @e[tag=temp,tag=!to_spawn_location,limit=1] as @e[distance=..0.1,tag=ghost,tag=hidden,tag=new_ghost] store result score @s HomeY run data get entity @e[tag=temp,tag=to_spawn_location,limit=1] Pos[1] 100
-execute positioned as @e[tag=temp,tag=!to_spawn_location,limit=1] as @e[distance=..0.1,tag=ghost,tag=hidden,tag=new_ghost] store result score @s HomeZ run data get entity @e[tag=temp,tag=to_spawn_location,limit=1] Pos[2] 100
-execute positioned as @e[tag=temp,tag=!to_spawn_location,limit=1] as @e[distance=..0.1,tag=ghost,tag=hidden,tag=new_ghost] positioned as @e[tag=temp,tag=to_spawn_location,limit=1] run teleport @s ~ ~ ~
+execute positioned as @e[tag=temp,tag=!to_spawn_location,limit=1] run tag @e[distance=..0.1,tag=ghost,tag=vacuumable,tag=!visible] add spawn
 kill @e[tag=temp]

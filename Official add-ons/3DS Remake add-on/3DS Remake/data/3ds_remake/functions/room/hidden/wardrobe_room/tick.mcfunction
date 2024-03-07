@@ -1,7 +1,6 @@
 execute unless score #wardrobe_room Ticking matches 1 run function #3ds_remake:room/hidden/wardrobe_room/load
 execute as @a[gamemode=!spectator,x=676,y=17,z=55,dx=12,dy=9,dz=21] unless entity @s[scores={Room=5}] run scoreboard players operation @s LastRoom = @s Room
-execute as @e[x=676,y=17,z=55,dx=12,dy=9,dz=21] unless entity @s[tag=ghost,tag=appear] unless entity @s[tag=ghost,tag=vanish] run scoreboard players set @s Room 5
-scoreboard players set #temp Room 5
+execute as @e[x=676,y=17,z=55,dx=12,dy=9,dz=21] unless entity @s[tag=ghost,tag=vanish] run scoreboard players set @s Room 5
 
 execute as @e[scores={Room=5},type=!minecraft:marker] unless entity @s[gamemode=spectator] run scoreboard players set @s MirrorX 677
 
@@ -12,9 +11,4 @@ function #3ds_remake:room/hidden/wardrobe_room/interactions/room
 clone 678 21 64 678 22 67 676 21 64 filtered minecraft:warped_trapdoor
 clone 679 21 64 679 22 67 675 21 64 filtered minecraft:warped_trapdoor
 
-scoreboard players set #temp Room 5
-execute as @a[gamemode=!spectator,tag=!pull_open_door,tag=!push_open_door] run function #luigis_mansion:get_same_room
-scoreboard players reset #temp Room
-execute if entity @a[tag=exact_same_room,limit=1] run function 3ds_remake:room/hidden/wardrobe_room/ghosts
-tag @a[tag=same_room] remove same_room
-tag @a[tag=exact_same_room] remove exact_same_room
+execute if entity @a[gamemode=!spectator,tag=!pull_open_door,tag=!push_open_door,scores={Room=5},limit=1] run function 3ds_remake:room/hidden/wardrobe_room/ghosts
