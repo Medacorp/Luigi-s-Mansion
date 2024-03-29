@@ -1,9 +1,7 @@
 scoreboard players set * ChangedMansion 1
 scoreboard players reset @e ChangedMansion
-function #luigis_mansion:mansion_reset
-scoreboard players set #mansion_type Selected -1
+function luigis_mansion:reset_mansion with storage luigis_mansion:data current_state.current_data.mansion_id
 scoreboard players set #mansion_data_index Selected -1
-scoreboard players set #previous_mansion_index Selected -1
 data modify storage luigis_mansion:data current_state.current_data set value {nothing_loaded:1b}
 scoreboard players set @a Health 100
 gamemode adventure @a[gamemode=spectator]

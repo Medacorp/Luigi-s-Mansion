@@ -10,10 +10,10 @@ execute if entity @s[scores={ActionTime=41..60}] if block ~ ~-0.25 ~ #luigis_man
 execute if block ~ ~-0.25 ~ #luigis_mansion:ghosts_ignore run teleport @s[scores={ActionTime=41..60}] ~ ~-0.25 ~
 execute at @s[scores={ActionTime=41..60}] as @e[distance=..2,tag=game_boy_horror_location] run function luigis_mansion:entities/game_boy_horror_location/bring_player_back
 execute at @s[scores={ActionTime=41..60}] if entity @a[distance=..2,scores={Invulnerable=0},tag=!spectator] run tag @s add laugh
-execute at @s[scores={ActionTime=41..60}] run data modify storage luigis_mansion:data damage set value {method:{namespace:"luigis_mansion",id:"body_slam"},amount:0,animation:{namespace:"luigis_mansion",id:"knockback/large"},attacker:-1,no_delete:1b}
+execute at @s[scores={ActionTime=41..60}] run data modify storage luigis_mansion:data damage set value {method:{namespace:"luigis_mansion",id:"body_slam"},amount:0,animation:{namespace:"luigis_mansion",id:"knockback/large"},no_delete:1b}
 execute at @s[scores={ActionTime=41..60}] run data modify storage luigis_mansion:data damage.amount set from entity @s data.damage.attack
-execute at @s[scores={ActionTime=41..60}] store result storage luigis_mansion:data damage.attacker int 1 run scoreboard players get @s GhostNr
-execute at @s[scores={ActionTime=41..60}] as @a[distance=..2,gamemode=!spectator] run function luigis_mansion:entities/player/damage
+execute at @s[scores={ActionTime=41..60}] run data modify storage luigis_mansion:data damage.attacker set from entity @s UUID
+execute at @s[scores={ActionTime=41..60}] as @a[distance=..2,tag=!spectator] run function luigis_mansion:entities/player/damage
 execute at @s[scores={ActionTime=41..60}] run data remove storage luigis_mansion:data damage
 tag @s[scores={ActionTime=60},tag=!laugh] add complain
 tag @s[scores={ActionTime=60}] remove attack

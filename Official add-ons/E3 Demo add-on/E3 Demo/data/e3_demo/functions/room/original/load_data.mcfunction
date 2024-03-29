@@ -1,12 +1,9 @@
-function #luigis_mansion:mansion_reset
+function luigis_mansion:room/reset_mansion with storage luigis_mansion:data current_state.current_data.mansion_id
 function e3_demo:room/original/front_door
 function e3_demo:room/original/forceload_chunks
-scoreboard players set #mansion_type Selected 2
-execute unless score #mansion_data_index Selected matches 2 if data storage luigis_mansion:data current_state.current_data.data_index run function luigis_mansion:room/save_mansion_data
-execute unless score #mansion_data_index Selected matches 2 run function e3_demo:room/original/default_data
-scoreboard players operation #previous_mansion_index Selected = #mansion_data_index Selected
-scoreboard players set #mansion_data_index Selected 2
-execute unless score #mansion_data_index Selected = #previous_mansion_index Selected if data storage luigis_mansion:data current_state.mansion_data[-1] run function luigis_mansion:room/load_mansion_data
+execute unless data storage luigis_mansion:data current_state.current_data{data_index:2} if data storage luigis_mansion:data current_state.current_data.data_index run function luigis_mansion:room/save_mansion_data with storage luigis_mansion:data current_state.current_data
+execute unless data storage luigis_mansion:data current_state.current_data{data_index:2} if data storage luigis_mansion:data current_state.mansion_data[{data_index:2}] run function luigis_mansion:room/load_mansion_data {index:2}
+execute unless data storage luigis_mansion:data current_state.current_data{data_index:2} run function e3_demo:room/original/default_data
 function #luigis_mansion:room/reset_variable_to_default
 scoreboard players set #can_warp Selected 1
 scoreboard players set #gbh_clock_increase Selected 10

@@ -9,8 +9,8 @@ data modify entity @s[tag=!push,tag=forced_animation] ArmorItems[3].tag.luigis_m
 data modify entity @s[tag=!push,tag=!forced_animation] ArmorItems[3].tag.luigis_mansion.animation set value {namespace:"luigis_mansion",id:"open/pull"}
 data modify entity @s[tag=push,tag=forced_animation] ArmorItems[3].tag.luigis_mansion.animation set value {namespace:"luigis_mansion",id:"open/pull"}
 
-execute if entity @s[scores={AnimationProgress=1},tag=!forced_animation] run function luigis_mansion:entities/furniture/type/door/force_other_end with entity @s ArmorItems[3].tag.luigis_mansion.other_end
-execute if entity @s[scores={AnimationProgress=1},tag=!forced_animation] if data entity @s ArmorItems[3].tag.other_end.dimension run function luigis_mansion:entities/furniture/type/door/force_other_end_dimension with entity @s ArmorItems[3].tag.luigis_mansion.other_end
+execute if entity @s[scores={AnimationProgress=1},tag=!forced_animation] unless data entity @s ArmorItems[3].tag.luigis_mansion.other_end.dimension run function luigis_mansion:entities/furniture/type/door/force_other_end with entity @s ArmorItems[3].tag.luigis_mansion.other_end
+execute if entity @s[scores={AnimationProgress=1},tag=!forced_animation] if data entity @s ArmorItems[3].tag.luigis_mansion.other_end.dimension run function luigis_mansion:entities/furniture/type/door/force_other_end_dimension with entity @s ArmorItems[3].tag.luigis_mansion.other_end
 execute if entity @s[scores={AnimationProgress=10}] run playsound luigis_mansion:furniture.door.open block @a[tag=same_room] ~ ~ ~ 1
 execute if entity @s[scores={AnimationProgress=30},tag=push,tag=!forced_animation] run playsound luigis_mansion:furniture.door.close block @a[tag=same_room] ~ ~ ~ 1
 execute if entity @s[scores={AnimationProgress=30},tag=!push,tag=forced_animation] run playsound luigis_mansion:furniture.door.close block @a[tag=same_room] ~ ~ ~ 1

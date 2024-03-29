@@ -34,3 +34,4 @@ place template luigis_mansion:mansion/mansion/2 616 90 -17
 place template luigis_mansion:mansion/mansion/1 616 90 -65
 forceload remove 749 -66 615 81
 tellraw @a {"type":"translatable","translate":"chat.type.text","with":[{"type":"translatable","translate":"luigis_mansion:entity.mansion","color":"green"},{"type":"translatable","translate":"luigis_mansion:message.load_mansion.stop"}]}
+execute as @a[x=615,y=92,z=-68,dx=133,dy=60,dz=151,scores={Room=0},gamemode=!spectator] run function luigis_mansion:room/underground_lab/leave

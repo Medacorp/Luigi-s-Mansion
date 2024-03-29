@@ -1,0 +1,1 @@
+execute if entity @s[tag=extra_gallery_door_menu] run function luigis_mansion:selection_menu/extra_gallery_door/tick_process

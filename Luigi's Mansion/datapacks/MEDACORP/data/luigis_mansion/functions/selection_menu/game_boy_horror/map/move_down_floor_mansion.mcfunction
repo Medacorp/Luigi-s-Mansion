@@ -1,0 +1,1 @@
+$function $(namespace):selection_menu/game_boy_horror/map/move_down_floor/$(id)

@@ -1,0 +1,1 @@
+$function $(namespace):entities/game_boy_horror_marker/teleport/$(id)

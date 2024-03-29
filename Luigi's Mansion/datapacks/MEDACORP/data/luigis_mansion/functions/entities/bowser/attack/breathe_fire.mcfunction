@@ -12,10 +12,10 @@ execute if entity @s[scores={ActionTime=21..121}] run data modify storage luigis
 execute if entity @s[scores={ActionTime=21..121}] store result storage luigis_mansion:data entity.owner int 1 run scoreboard players get @s GhostNr
 execute at @s[scores={ActionTime=21..121}] positioned ^ ^ ^7 run function luigis_mansion:spawn_entities/burning_floor
 execute at @s[scores={ActionTime=21..121}] positioned ^ ^ ^4 as @e[distance=..2,tag=game_boy_horror_location] run function luigis_mansion:entities/game_boy_horror_location/bring_player_back
-execute if entity @s[scores={ActionTime=21..121}] run data modify storage luigis_mansion:data damage set value {method:{namespace:"luigis_mansion",id:"fire"},amount:0,animation:{namespace:"luigis_mansion",id:"knockback/burn"},attacker:-1,no_delete:1b}
+execute if entity @s[scores={ActionTime=21..121}] run data modify storage luigis_mansion:data damage set value {method:{namespace:"luigis_mansion",id:"fire"},amount:0,animation:{namespace:"luigis_mansion",id:"knockback/burn"},no_delete:1b}
 execute if entity @s[scores={ActionTime=21..121}] run data modify storage luigis_mansion:data damage.amount set from entity @s data.damage.breathe_fire
-execute if entity @s[scores={ActionTime=21..121}] store result storage luigis_mansion:data damage.attacker int 1 run scoreboard players get @s GhostNr
-execute at @s[scores={ActionTime=21..121}] positioned ^ ^ ^4 as @a[distance=..2,gamemode=!spectator] run function luigis_mansion:entities/player/damage
+execute if entity @s[scores={ActionTime=21..121}] run data modify storage luigis_mansion:data damage.attacker set from entity @s UUID
+execute at @s[scores={ActionTime=21..121}] positioned ^ ^ ^4 as @a[distance=..2,tag=!spectator] run function luigis_mansion:entities/player/damage
 execute if entity @s[scores={ActionTime=21..121}] run data remove storage luigis_mansion:data damage
 execute at @s[scores={ActionTime=21..121}] positioned ^ ^ ^2 run particle minecraft:block minecraft:fire ^1 ^0.5 ^5 0 0 0 0 1 normal @a[tag=same_room]
 execute at @s[scores={ActionTime=21..121}] positioned ^ ^ ^2 run particle minecraft:block minecraft:fire ^ ^0.5 ^6 0 0 0 0 1 normal @a[tag=same_room]

@@ -44,7 +44,7 @@ furniture:{
         no_roll:1b, //When set will not spawn from non-manual/time search of rolling furniture. Default = 0b.
         //See loot documentation for other variables.
     },
-    dialog:"<name>", //Dialog to trigger on manual search (requires searchable to have "interact" method). Default = none.
+    search_command:"...", //Command to trigger on manual search (requires searchable to have "interact" method). Runs as the furniture at the searcher (who's tagged "searcher"). Default = none.
     can_hide_boo:1b, //If this furniture is randomly selected by boos to hide in. Default = 0b.
     scan_message: //Result from GBH scan. Not provided = ignored by scan. Has several formats and behaviors.
         * 'JSON', //Message as a result from GBH scan. Gooigi scan always results in the "......." string.
@@ -53,7 +53,7 @@ furniture:{
         * "spawn_ghost", //Spawns the ghost positioned in the furniture.
     
     //non-default setup
-    <type>_elemental_source:{ //Elemental source data, can only be applied to furniture supporting that elemental type. Default = none.
+    <type>_elemental_source:{ //Elemental source data, can only be applied to furniture supporting that elemental type. Not provided means it's not an elemental source. Default = none.
         always_spawn:1b, //When set the elemental ghost spawns regardless of distance. Default = 0b.
         must_vacuum:1b, //When set the elemental ghost only pops up when vacuuming nearby. Ignored if always_spawn is set. Default = 0b.
         must_be_searched:1b, //When set the elemental ghost only pops up when the furniture has triggered it's searched animation (ignored if it has none, or it is disabled). Default = 0b.
@@ -68,7 +68,7 @@ furniture:{
     mirror_reflection:1b, //Whether the mirror will actually reflect the room, otherwise gets a solid glass texture. Valid for mirrors only. Default = 1b. Forced to 0b if the yaw rotation is not a multiple of 90, or pose pitch has a non-0 value.
     no_spawn_sound:1b, //Whether the unsearched room clear chest sound is disabled, searched room clear chests always have it disabled, regardless of this value. Valid for room clear chests only. Default = 0b.
     hitbox:{ //The size of the hitbox, only applies and required for scan areas and elemental sources.
-        type:"standing", //How the hibox is aligned to the spawn position, "standing" is bottom aligned, "hanging" is top aligned. Default = centered.
+        type:"standing", //How the hitbox is aligned to the spawn position, "standing" is bottom aligned, "hanging" is top aligned. Default = centered.
         radius:X, //A ball hitbox, value is the radius in tenths of a block.
         box:{ //A box shaped hitbox.
             height:X, //The height in tenths of a block.
@@ -86,7 +86,7 @@ furniture:{
             type:"red", //Whether this flame is red, purple or incense. Incense flames react differently to elements, not extinguishing, but drawing the flame to the origin. Default = red.
             cannot_extinguish:1b, //Whether this flame can be turned off by vacuum, dust and ice (water will still turn it off). Default = 0b. Not applicable to incense flames.
             always_burn:1b, //Whether this flame can be turned off by anything at all. Default = 0b. Not applicable to incense flames.
-            fire_elemental_source:{}, //See <type>_elemental_source, above. Default = none.
+            fire_elemental_source:{}, //See <type>_elemental_source, above. Not provided means it's not an elemental source. Default = none.
             tags:[] //A list of tags to append to the flame's default tags, used to target the flame in functions. Default = none.
         }
     ],
@@ -112,6 +112,7 @@ furniture:{
             z:X //The integer Z coordinate
         }
     },
+    room:X, //Room number that this furniture is in. Default = room number of whoever is @s on function call, if absent = 0.
     tags:[] //A list of tags to append to the furniture's default tags used to target the furniture in functions. Default = none.
 }
 ```

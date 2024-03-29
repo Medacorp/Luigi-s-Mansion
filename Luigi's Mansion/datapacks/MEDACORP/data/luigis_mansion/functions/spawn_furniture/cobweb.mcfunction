@@ -4,4 +4,8 @@ execute as @e[tag=this_entity,limit=1] run data modify entity @s Pose.Head[0] se
 scoreboard players set @e[tag=this_entity,limit=1] VacuumTime 0
 scoreboard players set @e[tag=this_entity,limit=1] EntitySizeRadius 5
 scoreboard players set @e[tag=this_entity,limit=1] EntityYOffset 14
+function luigis_mansion:spawn_furniture/setup/room
+function luigis_mansion:spawn_furniture/setup/tags
+function luigis_mansion:spawn_furniture/setup/debug_spawn
 tag @e[tag=this_entity,limit=1] remove this_entity
+data remove storage luigis_mansion:data furniture

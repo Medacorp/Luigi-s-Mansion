@@ -1,1 +1,0 @@
-function luigis_mansion:dialog/ice_element_medal/normal

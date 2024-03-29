@@ -15,7 +15,7 @@ execute at @e[tag=home,limit=1] run tp @s ~ ~ ~ ~ ~
 execute at @s[scores={AnimationProgress=70..}] anchored eyes positioned ^ ^ ^ run tag @e[tag=luigi_ice,distance=..0.2,limit=1] add remove_from_existence
 execute at @s[scores={AnimationProgress=70..72}] anchored eyes run particle minecraft:item minecraft:diamond_pickaxe{Unbreakable:1b,Damage:4,CustomModelData:38} ^ ^ ^ 0.3 0.3 0.3 0 50 force @a[tag=same_room]
 scoreboard players set @s[scores={AnimationProgress=..70,Invulnerable=6..}] Invulnerable 5
-execute at @s[scores={AnimationProgress=..70,Invulnerable=0}] run data modify storage luigis_mansion:data damage set value {amount:1,attacker:-1}
+execute at @s[scores={AnimationProgress=..70,Invulnerable=0}] run data modify storage luigis_mansion:data damage set value {amount:1}
 execute if entity @s[scores={AnimationProgress=..70,Invulnerable=0}] run data modify storage luigis_mansion:data damage.attacker set from storage luigis_mansion:data my_memory.hurt_by.attacker
 execute at @s[scores={AnimationProgress=..70,Invulnerable=0}] run function luigis_mansion:entities/player/damage
 scoreboard players set @s[scores={AnimationProgress=70}] Invulnerable 70

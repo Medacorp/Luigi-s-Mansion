@@ -18,4 +18,4 @@ execute if entity @s[scores={AnimationProgress=111..120}] store result entity @s
 scoreboard players reset #temp Time
 data merge entity @s[scores={AnimationProgress=140..}] {Pose:{Head:[0.0f,0.0f,0.01f]}}
 scoreboard players set @s[scores={AnimationProgress=140..}] AnimationProgress 0
-tag @s add dark_room_head
+tag @s add scared_head

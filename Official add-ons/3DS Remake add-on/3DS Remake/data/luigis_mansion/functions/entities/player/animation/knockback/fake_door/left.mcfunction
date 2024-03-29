@@ -4,11 +4,11 @@ execute if entity @s[scores={AnimationProgress=5,Sound=0,Health=41..,Shrunk=1..}
 execute if entity @s[scores={AnimationProgress=5,Sound=0,Health=..40,Shrunk=0},tag=!gooigi] run playsound luigis_mansion:entity.player.scare.low_health player @a[tag=same_room] ~ ~ ~ 1
 execute if entity @s[scores={AnimationProgress=5,Sound=0,Health=..40,Shrunk=1..},tag=!gooigi] run playsound luigis_mansion:entity.player.scare.low_health player @a[tag=same_room] ~ ~ ~ 1 2
 scoreboard players set @s[scores={AnimationProgress=5,Sound=0},tag=!gooigi] Sound 8
-execute if entity @s[scores={AnimationProgress=15}] run data modify storage luigis_mansion:data damage set value {amount:0,attacker:-1}
+execute if entity @s[scores={AnimationProgress=15}] run data modify storage luigis_mansion:data damage set value {amount:0}
 execute if entity @s[scores={AnimationProgress=15}] store result storage luigis_mansion:data damage.amount int 1 run scoreboard players get @s KnockbackDamage
 execute if entity @s[scores={AnimationProgress=15}] run data modify storage luigis_mansion:data damage.attacker set from storage luigis_mansion:data my_memory.hurt_by.attacker
 execute if entity @s[scores={AnimationProgress=15}] run function luigis_mansion:entities/player/damage
-execute run summon minecraft:marker ~ ~ ~ {Tags:["home","remove_from_existence"]}
+summon minecraft:marker ~ ~ ~ {Tags:["home","remove_from_existence"]}
 execute store result entity @e[tag=home,limit=1] Pos[0] double 0.01 run scoreboard players get @s PositionX
 execute store result entity @e[tag=home,limit=1] Pos[1] double 0.01 run scoreboard players get @s PositionY
 execute store result entity @e[tag=home,limit=1] Pos[2] double 0.01 run scoreboard players get @s PositionZ

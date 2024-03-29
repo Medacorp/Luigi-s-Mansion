@@ -1,2 +1,2 @@
-data modify storage luigis_mansion:data furniture set value {candle_flames:[{lit:1b}]}
+data modify storage luigis_mansion:data furniture set value {room:11,candle_flames:[{lit:1b}]}
 execute positioned 713 13.5 37.0 rotated -180 0 run function luigis_mansion:spawn_furniture/simple_wall_candelabra

@@ -1,15 +1,15 @@
 execute unless entity @a[tag=same_room,tag=portrait_battle] run scoreboard players set #freeze_timer Selected 1
 scoreboard players add @s Dialog 1
 scoreboard players set @s[tag=in_vacuum] Dialog 440
-execute if entity @s[scores={Dialog=1..99}] as @a[tag=same_room,gamemode=!spectator,tag=!looking_at_map,tag=!portrait_battle] unless entity @s[scores={AnimationProgress=1..}] run function luigis_mansion:entities/player/animation/set/high_health_idle_no_sound
-execute if entity @s[scores={Dialog=100}] as @a[tag=same_room,gamemode=!spectator,tag=!looking_at_map] run function luigis_mansion:entities/player/animation/set/none
+execute if entity @s[scores={Dialog=1..99}] as @a[tag=same_room,tag=!spectator,tag=!looking_at_map,tag=!portrait_battle] unless entity @s[scores={AnimationProgress=1..}] run function luigis_mansion:entities/player/animation/set/high_health_idle_no_sound
+execute if entity @s[scores={Dialog=100}] as @a[tag=same_room,tag=!spectator,tag=!looking_at_map] run function luigis_mansion:entities/player/animation/set/none
 execute if entity @s[scores={Dialog=100}] run playsound luigis_mansion:entity.boolossus.laugh_2 hostile @a[tag=same_room] ~ ~ ~ 30
 execute if entity @s[scores={Dialog=100}] as @a[tag=same_room] run function luigis_mansion:entities/player/animation/set/scare/freeze
 execute if entity @s[scores={Dialog=200}] as @a[tag=same_room] run function luigis_mansion:entities/player/animation/set/knockback/flee_look_up
 teleport @s[scores={Dialog=120..180}] ~ ~ ~ ~ ~1.5
 teleport @s[scores={Dialog=198..260}] ~ ~-1 ~
 execute if entity @s[scores={Dialog=260}] as @a[tag=same_room] run function luigis_mansion:entities/player/animation/set/scare/bash_no_move
-execute if entity @s[scores={Dialog=260..349}] run scoreboard players set @a[tag=same_room,gamemode=!spectator] IdleTime -22
+execute if entity @s[scores={Dialog=260..349}] run scoreboard players set @a[tag=same_room,tag=!spectator] IdleTime -22
 execute if entity @s[scores={Dialog=260}] run playsound luigis_mansion:entity.boolossus.bounce hostile @a[tag=same_room] ~ ~ ~ 3
 teleport @s[scores={Dialog=290..300}] ~ ~0.2 ~ ~ ~-4.5
 execute if entity @s[scores={Dialog=..300}] store result score @s HomeRotation run data get entity @s Rotation[1] 100

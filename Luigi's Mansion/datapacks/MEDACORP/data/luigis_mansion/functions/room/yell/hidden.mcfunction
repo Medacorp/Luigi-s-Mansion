@@ -1,1 +1,0 @@
-execute if score #mansion_type Selected matches 1 if entity @s[scores={Room=1..72}] run function luigis_mansion:entities/player/animation/set/yell

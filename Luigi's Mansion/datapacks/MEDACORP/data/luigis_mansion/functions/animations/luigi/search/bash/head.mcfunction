@@ -3,4 +3,4 @@ execute unless score #mirrored Selected matches 1 run data merge entity @s[score
 execute unless score #mirrored Selected matches 1 run data merge entity @s[scores={AnimationProgress=1},tag=flipped_gravity] {Pose:{Head:[0.0f,45.0f,-180.0f]}}
 execute if score #mirrored Selected matches 1 run data merge entity @s[scores={AnimationProgress=1}] {Pose:{Head:[0.0f,-45.0f,0.01f]}}
 execute if score #mirrored Selected matches 1 run data merge entity @s[scores={AnimationProgress=1},tag=flipped_gravity] {Pose:{Head:[0.0f,-45.0f,-180.0f]}}
-tag @s add dark_room_head
+tag @s add scared_head

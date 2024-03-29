@@ -1,0 +1,2 @@
+$tag @e[nbt={UUID:$(id)}] add attacker
+execute if entity @e[tag=attacker,limit=1] run data modify storage luigis_mansion:data my_memory.hurt_by.attacker set value '{"type":"selector","selector":"@e[tag=attacker,limit=1]"}'

@@ -1,1 +1,1 @@
-$execute if score #mansion_type Selected matches 2 unless data storage luigis_mansion:data current_state.current_data{obtained_keys:[$(variant)]} run function e3_demo:items/key/original/$(variant)
+$execute unless data storage luigis_mansion:data current_state.current_data{obtained_keys:["$(variant)"]} run function e3_demo:items/key/original/$(variant)

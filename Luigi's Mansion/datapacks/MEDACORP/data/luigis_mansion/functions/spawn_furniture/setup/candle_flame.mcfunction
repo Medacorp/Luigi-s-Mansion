@@ -28,4 +28,7 @@ execute as @e[tag=this_entity,tag=candle_flame,limit=1] store result score @s Po
 execute as @e[tag=this_entity,tag=candle_flame,limit=1] store result score @s PositionY run data get entity @s Pos[1] 10
 execute as @e[tag=this_entity,tag=candle_flame,limit=1] store result score @s PositionZ run data get entity @s Pos[2] 10
 scoreboard players add @e[tag=this_entity,tag=candle_flame,limit=1] PositionY 14
+scoreboard players set @e[tag=this_entity,tag=candle_flame,limit=1] Room 0
+scoreboard players operation @e[tag=this_entity,tag=candle_flame,limit=1] Room = @s Room
+execute store result score @e[tag=this_entity,tag=candle_flame,limit=1] Room run data get storage luigis_mansion:data furniture.room
 tag @e[tag=this_entity,tag=candle_flame,limit=1] remove this_entity

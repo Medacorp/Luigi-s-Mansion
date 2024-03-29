@@ -3,37 +3,27 @@ effect clear @s[tag=flipped_gravity] minecraft:levitation
 tag @s remove flipped_gravity
 tag @s remove poltergust_malfunction
 
-scoreboard players operation #temp Room = @s LastRoom
-execute as @a[tag=!spectator] if score @s Room = #temp Room run scoreboard players reset @a[distance=..0.1,limit=1] LastRoom
-scoreboard players reset #temp Room
+scoreboard players reset @s LastRoom
 scoreboard players set @s Sound 0
 
 execute if entity @s[scores={AnimationProgress=1..}] run function luigis_mansion:entities/player/animation/set/none
 
-clear @s minecraft:carved_pumpkin
+execute unless entity @a[tag=portrait_battle,limit=1] unless entity @s[scores={Offline=0}] if entity @s[tag=!gooigi] run function luigis_mansion:selection_menu/reset_mansion/original_menu
+scoreboard players set @s[scores={Offline=-1}] Offline 0
 
-tellraw @s[scores={ResetChoice=1}] {"type":"translatable","translate":"chat.type.text","with":[{"type":"translatable","translate":"luigis_mansion:entity.mansion","color":"green"},{"type":"translatable","translate":"luigis_mansion:dialog.reset_mansion.confirm.1"}]}
-tellraw @s[scores={ResetChoice=1}] {"type":"translatable","translate":"luigis_mansion:dialog.reset_mansion.confirm.yes","color":"green","clickEvent":{"action":"run_command","value":"/trigger ResetChoice set 3"},"extra":[{"type":"text","text":"\n"},{"type":"translatable","translate":"luigis_mansion:dialog.reset_mansion.confirm.no","clickEvent":{"action":"run_command","value":"/trigger ResetChoice set 4"}}]}
-scoreboard players enable @s[scores={ResetChoice=1}] ResetChoice
+scoreboard players operation #temp ID = @s ID
+execute if entity @s[tag=dead_player,tag=!gooigi] as @e[tag=death_location] if score @s ID = #temp ID run tag @s add this_death_location
+execute if entity @s[tag=dead_player,tag=!gooigi] if score #can_revive Selected matches 1 unless entity @a[tag=this_death_location,limit=1] run scoreboard players set @s Room 0
+execute if entity @s[tag=dead_player,tag=!gooigi] if score #can_revive Selected matches 1 unless entity @a[tag=this_death_location,limit=1] in minecraft:overworld positioned 758 90 8.0 rotated -90 0 run function luigis_mansion:spawn_entities/death_location
+scoreboard players reset #temp ID
+tag @a[tag=this_death_location] remove this_death_location
 
-tellraw @s[scores={ResetChoice=2}] {"type":"translatable","translate":"chat.type.text","with":[{"type":"translatable","translate":"luigis_mansion:entity.mansion","color":"green"},{"type":"translatable","translate":"luigis_mansion:dialog.reset_mansion.no.1"}]}
-execute if entity @s[scores={ResetChoice=3}] if score #all_players Totals matches 1 run tellraw @s {"type":"translatable","translate":"chat.type.text","with":[{"type":"translatable","translate":"luigis_mansion:entity.mansion","color":"green"},{"type":"translatable","translate":"luigis_mansion:dialog.reset_mansion.confirm.yes.1"}]}
-execute if entity @s[scores={ResetChoice=3}] if score #all_players Totals matches 2.. run tellraw @s {"type":"translatable","translate":"chat.type.text","with":[{"type":"translatable","translate":"luigis_mansion:entity.mansion","color":"green"},{"type":"translatable","translate":"luigis_mansion:dialog.reset_mansion.confirm.yes.1.more"}]}
-execute if entity @s[scores={ResetChoice=3}] run function luigis_mansion:entities/player/reset_mansion
-execute if entity @s[scores={ResetChoice=4}] if score #all_players Totals matches 1 run tellraw @s {"type":"translatable","translate":"chat.type.text","with":[{"type":"translatable","translate":"luigis_mansion:entity.mansion","color":"green"},{"type":"translatable","translate":"luigis_mansion:dialog.reset_mansion.confirm.no.1"}]}
-execute if entity @s[scores={ResetChoice=4}] if score #all_players Totals matches 2.. run tellraw @s {"type":"translatable","translate":"chat.type.text","with":[{"type":"translatable","translate":"luigis_mansion:entity.mansion","color":"green"},{"type":"translatable","translate":"luigis_mansion:dialog.reset_mansion.confirm.no.1.more"}]}
-scoreboard players set @s ResetChoice 0
-
-execute if entity @s[tag=!already_added_to_list] run data modify storage luigis_mansion:data current_state.current_data.dead_players append from entity @s UUID
-tag @s add already_added_to_list
-
-scoreboard players operation #temp Room = @s Room
-execute as @e[tag=ghost,tag=!visible] if score @s Room = #temp Room run tag @s add target
-execute at @e[tag=target,tag=hidden] run particle minecraft:dust 0.7 1 0.5 1 ~ ~0.6 ~ 0.3 0.3 0.3 0 5 normal @s
-execute at @e[tag=target,tag=!hidden] run particle minecraft:dust 0.7 1 0 1 ~ ~1.6 ~ 0.3 0.3 0.3 0 5 normal @s
-tag @e[tag=target] remove target
-scoreboard players reset #temp Room
+execute at @e[tag=ghost,tag=same_room,tag=!vacuumable,tag=!visible,tag=hidden] run particle minecraft:dust 0.7 1 0.5 1 ~ ~0.6 ~ 0.3 0.3 0.3 0 5 normal @s
+execute at @e[tag=ghost,tag=same_room,tag=!vacuumable,tag=!visible,tag=!vanish,tag=!hidden] run particle minecraft:dust 0.7 1 0 1 ~ ~1.6 ~ 0.3 0.3 0.3 0 5 normal @s
+tag @s add me
+execute at @a[tag=same_room,gamemode=spectator,tag=!me] run particle minecraft:dust 0.2 1 0.2 1 ~ ~1.6 ~ 0.3 0.3 0.3 0 5 normal @s
+tag @s remove me
 tag @s add spectator
 
 scoreboard players add @s[tag=gooigi,scores={RespawnTimer=..99}] RespawnTimer 1
-execute if entity @s[tag=gooigi,scores={RespawnTimer=100}] if entity @a[distance=..0.1,tag=!gooigi,tag=!portrait_battle] run function 3ds_remake:entities/player/gooigi_respawn
+execute if entity @s[tag=gooigi,scores={RespawnTimer=100}] at @e[distance=..2,tag=player,tag=!spectator,tag=!gooigi,tag=!portrait_battle] run function 3ds_remake:entities/player/gooigi_respawn

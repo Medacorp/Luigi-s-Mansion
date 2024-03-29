@@ -1,0 +1,1 @@
+$function $(namespace):room/$(id)/default_position_in_mansion

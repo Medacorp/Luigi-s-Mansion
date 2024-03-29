@@ -1,9 +1,7 @@
-tag @s remove dark_room
-function #luigis_mansion:room/dark_room
+function luigis_mansion:room/dark_room
 
-execute if entity @s[scores={Health=..0},tag=!death_animation,tag=!revive_animation] unless entity @s[scores={AnimationProgress=1..},tag=!idle] run function luigis_mansion:entities/player/death
-execute if entity @s[scores={Health=1..},tag=already_added_to_list] run function luigis_mansion:entities/player/remove_dead_entry
-tag @s[scores={Health=1..}] remove already_added_to_list
+execute if entity @s[scores={Health=..0},tag=!death_animation,tag=!revive_animation,tag=!dead_player] unless entity @s[scores={AnimationProgress=1..},tag=!idle] run function luigis_mansion:entities/player/death
+execute if entity @s[scores={Health=1..},tag=dead_player] run function luigis_mansion:entities/player/remove_dead_entry with entity @s
 
 scoreboard players reset @s[scores={OpenMapTime=1..},tag=stop_map_on_key_collect] OpenMapFocus
 scoreboard players reset @s[scores={OpenMapTime=1..},tag=stop_map_on_key_collect] OpenMapTime
@@ -15,7 +13,7 @@ execute if entity @s[tag=using_selection_menu] run function luigis_mansion:selec
 execute if entity @s[tag=!death_animation,tag=!revive_animation] unless entity @s[scores={AnimationProgress=1..},tag=!idle] run function luigis_mansion:blocks/gravity_swap
 execute if entity @s[tag=riding_poltergust] run function luigis_mansion:entities/player/riding_poltergust
 
-execute unless entity @a[scores={GBHCall=1..},limit=1] rotated ~ 0 positioned ^ ^ ^-4 run function luigis_mansion:entities/player/spawn_ghosts
+execute unless entity @s[scores={AnimationProgress=1..},tag=!idle,tag=!animation_may_move] rotated ~ 0 positioned ^ ^ ^-4 run function luigis_mansion:entities/player/spawn_ghosts
 
 function luigis_mansion:entities/player/health_display
 execute if data storage luigis_mansion:data rooms.underground_lab{cleared:1b} run clear @s minecraft:diamond_pickaxe{luigis_mansion:{namespace:"luigis_mansion",id:"contest_reward_map"}}
@@ -46,6 +44,6 @@ tag @s[tag=!death_animation,tag=!revive_animation] remove spectator
 
 effect give @s minecraft:invisibility infinite 0 true
 execute store result storage luigis_mansion:data macro.id int 1 run scoreboard players get @s ID
-execute if entity @s[tag=!camera] run function luigis_mansion:animations/luigi with storage luigis_mansion:data macro
+execute if entity @s[tag=!camera,tag=!dead_player] run function luigis_mansion:animations/luigi with storage luigis_mansion:data macro
 execute if entity @s[tag=death_animation] run function luigis_mansion:entities/player/death_animation
 execute if entity @s[tag=revive_animation] run function luigis_mansion:entities/player/revive_animation

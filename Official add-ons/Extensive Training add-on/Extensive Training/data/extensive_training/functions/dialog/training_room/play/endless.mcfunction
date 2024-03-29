@@ -1,1 +1,0 @@
-execute if entity @a[scores={TrainingRoomOption=2}] run function extensive_training:dialog/training_room/endless_program

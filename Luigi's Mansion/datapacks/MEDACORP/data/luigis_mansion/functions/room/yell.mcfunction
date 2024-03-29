@@ -1,0 +1,1 @@
+execute if entity @s[scores={Room=1..}] run function luigis_mansion:room/yell_mansion with storage luigis_mansion:data current_state.current_data.mansion_id

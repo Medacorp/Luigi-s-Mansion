@@ -1,5 +1,5 @@
 execute unless score #hallway_11 Ticking matches 1 run function #3ds_remake:room/hidden/hallway_11/load
-execute as @a[gamemode=!spectator,x=686,y=17,z=-23,dx=10,dy=9,dz=8] unless entity @s[scores={Room=37}] run scoreboard players operation @s LastRoom = @s Room
+execute as @a[x=686,y=17,z=-23,dx=10,dy=9,dz=8] unless entity @s[scores={Room=37}] run scoreboard players operation @s LastRoom = @s Room
 execute as @e[x=686,y=17,z=-23,dx=10,dy=9,dz=8] unless entity @s[tag=ghost,tag=vanish] run scoreboard players set @s Room 37
 tag @e[tag=ghost,scores={Room=37}] add no_hidden_move
 
@@ -8,7 +8,7 @@ execute as @a[scores={Room=37}] run function 3ds_remake:room/hidden/hallway_11/t
 function #3ds_remake:room/hidden/hallway_11/interactions/room
 
 scoreboard players set #temp Room 37
-execute as @a[gamemode=!spectator,tag=!pull_open_door,tag=!push_open_door] run function #luigis_mansion:get_same_room
+execute as @a[tag=!pause_dialog] run function luigis_mansion:main/get_same_room
 scoreboard players reset #temp Room
 execute if entity @a[tag=same_room,limit=1] run function 3ds_remake:room/hidden/hallway_11/ghosts
 tag @a[tag=same_room] remove same_room

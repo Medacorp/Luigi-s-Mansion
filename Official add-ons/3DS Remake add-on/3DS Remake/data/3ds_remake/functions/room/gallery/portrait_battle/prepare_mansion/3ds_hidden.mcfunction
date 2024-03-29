@@ -1,4 +1,3 @@
-scoreboard players set #mansion_type Selected 1
 function 3ds_remake:room/hidden/forceload_chunks
 function 3ds_remake:room/hidden/default_data
 scoreboard players set #mansion_data_index Selected 1

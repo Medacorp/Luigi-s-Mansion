@@ -1,1 +1,0 @@
-function luigis_mansion:dialog/marios_painting/repeat/normal

@@ -1,2 +1,2 @@
 scoreboard players set @s PathStep 0
-scoreboard players set @s Dialog 463
+scoreboard players set @s Dialog 72

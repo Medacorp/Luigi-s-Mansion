@@ -22,7 +22,7 @@ execute if entity @s[scores={AnimationProgress=21,Sound=0,Health=41..,Shrunk=1..
 execute if entity @s[scores={AnimationProgress=21,Sound=0,Health=..40,Shrunk=0},tag=!gooigi] run playsound luigis_mansion:entity.player.hurt_bounce.low_health player @a[tag=same_room] ~ ~ ~ 1
 execute if entity @s[scores={AnimationProgress=21,Sound=0,Health=..40,Shrunk=1..},tag=!gooigi] run playsound luigis_mansion:entity.player.hurt_bounce.low_health player @a[tag=same_room] ~ ~ ~ 1 2
 scoreboard players set @s[scores={AnimationProgress=21,Sound=0},tag=!gooigi] Sound 20
-execute if entity @s[scores={AnimationProgress=21}] run data modify storage luigis_mansion:data damage set value {amount:0,attacker:-1}
+execute if entity @s[scores={AnimationProgress=21}] run data modify storage luigis_mansion:data damage set value {amount:0}
 execute if entity @s[scores={AnimationProgress=21}] store result storage luigis_mansion:data damage.amount int 1 run scoreboard players get @s KnockbackDamage
 execute if entity @s[scores={AnimationProgress=21}] run data modify storage luigis_mansion:data damage.attacker set from storage luigis_mansion:data my_memory.hurt_by.attacker
 execute if entity @s[scores={AnimationProgress=21}] run function luigis_mansion:entities/player/damage

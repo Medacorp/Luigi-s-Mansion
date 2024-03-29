@@ -1,4 +1,4 @@
-execute unless entity @s[tag=!looking_at_map,tag=!death_animation,tag=!revive_animation,tag=!polterpup_reviving] run tag @s remove riding_poltergust
+execute unless entity @s[tag=!looking_at_map,tag=!death_animation,tag=!revive_animation,tag=!revived_by_polterpup] run tag @s remove riding_poltergust
 tag @s[scores={AnimationProgress=1..},tag=!idle] remove riding_poltergust
 
 execute unless score @s SlipX matches 0 at @s[tag=riding_poltergust] run function luigis_mansion:entities/player/riding_poltergust/slip_x

@@ -1,0 +1,1 @@
+$$(spectator_go_through_command)

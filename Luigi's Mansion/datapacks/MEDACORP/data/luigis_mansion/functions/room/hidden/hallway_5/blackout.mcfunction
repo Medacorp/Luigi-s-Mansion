@@ -1,5 +1,5 @@
-data modify storage luigis_mansion:data entity set value {spawn:2b}
+data modify storage luigis_mansion:data entity set value {room:13,spawn:2b}
 execute positioned 682 14 20 run function luigis_mansion:spawn_entities/ghost/ceiling_surprise
-data modify storage luigis_mansion:data entity set value {spawn:2b}
+data modify storage luigis_mansion:data entity set value {room:13,spawn:2b}
 execute positioned 682 14 17 run function luigis_mansion:spawn_entities/ghost/purple_bomber
 scoreboard players set #hallway_5 Wave 100

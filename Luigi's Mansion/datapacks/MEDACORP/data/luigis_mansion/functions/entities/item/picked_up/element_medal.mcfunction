@@ -1,1 +1,1 @@
-function #luigis_mansion:items/element_medal with entity @s ArmorItems[3].tag.luigis_mansion
+function luigis_mansion:items/element_medal with storage luigis_mansion:data current_state.current_data.mansion_id

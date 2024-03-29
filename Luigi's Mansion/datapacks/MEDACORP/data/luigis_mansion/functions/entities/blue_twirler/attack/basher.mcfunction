@@ -16,12 +16,12 @@ execute if entity @s[scores={ActionTime=41}] run summon minecraft:armor_stand ~ 
 execute if entity @s[scores={ActionTime=41}] as @e[distance=..5,tag=game_boy_horror_location] run function luigis_mansion:entities/game_boy_horror_location/bring_player_back
 execute if entity @s[scores={ActionTime=41}] if entity @a[distance=..5,tag=!spectator] run tag @s add laugh
 execute if entity @s[scores={ActionTime=41}] as @a[distance=..5,scores={Invulnerable=1..},tag=!spectator] run function luigis_mansion:entities/player/animation/set/scare/normal
-execute if entity @s[scores={ActionTime=41}] run data modify storage luigis_mansion:data damage set value {method:{namespace:"luigis_mansion",id:"scare"},amount:0,limit_health:50,animation:{namespace:"luigis_mansion",id:"scare/bash"},attacker:-1,no_delete:1b}
+execute if entity @s[scores={ActionTime=41}] run data modify storage luigis_mansion:data damage set value {method:{namespace:"luigis_mansion",id:"scare"},amount:0,limit_health:50,animation:{namespace:"luigis_mansion",id:"scare/bash"},no_delete:1b}
 execute if entity @s[scores={ActionTime=41}] run data modify storage luigis_mansion:data damage.amount set from entity @s data.damage.attack
-execute if entity @s[scores={ActionTime=41}] store result storage luigis_mansion:data damage.attacker int 1 run scoreboard players get @s GhostNr
-execute if entity @s[scores={ActionTime=41}] as @a[distance=..3,gamemode=!spectator] run function luigis_mansion:entities/player/damage
+execute if entity @s[scores={ActionTime=41}] run data modify storage luigis_mansion:data damage.attacker set from entity @s UUID
+execute if entity @s[scores={ActionTime=41}] as @a[distance=..3,tag=!spectator] run function luigis_mansion:entities/player/damage
 execute if entity @s[scores={ActionTime=41}] run data modify storage luigis_mansion:data damage merge value {limit_health:70,animation:{namespace:"luigis_mansion",id:"scare/normal"}}
-execute if entity @s[scores={ActionTime=41}] as @a[distance=3..5,gamemode=!spectator] run function luigis_mansion:entities/player/damage
+execute if entity @s[scores={ActionTime=41}] as @a[distance=3..5,tag=!spectator] run function luigis_mansion:entities/player/damage
 execute if entity @s[scores={ActionTime=41}] run data remove storage luigis_mansion:data damage
 tag @s[scores={ActionTime=60},tag=laugh] remove attack
 $execute if entity @s[scores={ActionTime=81}] run playsound $(namespace):entity.$(id).complain_basher hostile @a[tag=same_room] ~ ~ ~ 1

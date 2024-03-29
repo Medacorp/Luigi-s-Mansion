@@ -1,0 +1,1 @@
+$function $(namsepace):entities/portrificationizing_ghost/clear_rooms/$(id)

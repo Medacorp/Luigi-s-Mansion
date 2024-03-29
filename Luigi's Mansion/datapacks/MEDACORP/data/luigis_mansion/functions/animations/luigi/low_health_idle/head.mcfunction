@@ -24,4 +24,4 @@ execute if entity @s[scores={AnimationProgress=19}] store result entity @s Pose.
 execute if entity @s[scores={AnimationProgress=20}] store result entity @s Pose.Head[0] float 1 run scoreboard players set #temp Time 49
 scoreboard players reset #temp Time
 scoreboard players set @s[scores={AnimationProgress=20}] AnimationProgress 0
-tag @s add dark_room_head
+tag @s add scared_head

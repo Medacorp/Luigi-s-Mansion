@@ -1,2 +1,2 @@
-data modify storage luigis_mansion:data furniture set value {can_hide_boo:1b,searchable:["interact","vacuum"],shake_animation:["interact","vacuum"],sound:{namespace:"luigis_mansion",id:"stone"},scan_message:'{"type":"translatable","translate":"luigis_mansion:message.player.scan_furniture.64"}'}
+data modify storage luigis_mansion:data furniture set value {room:42,can_hide_boo:1b,searchable:["interact","vacuum"],shake_animation:["interact","vacuum"],sound:{namespace:"luigis_mansion",id:"stone"},scan_message:'{"type":"translatable","translate":"luigis_mansion:message.player.scan_furniture.64"}'}
 execute positioned 664 20 -29 rotated -20 0 run function luigis_mansion:spawn_furniture/toilet

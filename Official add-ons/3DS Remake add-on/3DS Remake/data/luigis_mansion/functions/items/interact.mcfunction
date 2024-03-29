@@ -1,2 +1,2 @@
-execute if entity @s[tag=!looking_at_map,tag=!death_animation,tag=!revive_animation,tag=!polterpup_reviving,nbt={Inventory:[{tag:{luigis_mansion:{namespace:"luigis_mansion",id:"interact"}}}]},tag=!disable_interact] run function luigis_mansion:items/interact/tick
+execute if entity @s[tag=!looking_at_map,tag=!death_animation,tag=!revive_animation,tag=!revived_by_polterpup,nbt={Inventory:[{tag:{luigis_mansion:{namespace:"luigis_mansion",id:"interact"}}}]},tag=!disable_interact] run function luigis_mansion:items/interact/tick
 execute if entity @s[nbt=!{Inventory:[{tag:{luigis_mansion:{namespace:"luigis_mansion",id:"interact"}}}]},tag=!using_selection_menu] run function luigis_mansion:items/interact/give

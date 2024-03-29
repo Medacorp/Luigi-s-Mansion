@@ -1,16 +1,12 @@
 scoreboard objectives add ActionTime dummy
 scoreboard objectives add Angle dummy
 scoreboard objectives add AnimationProgress dummy
-scoreboard objectives add AttackerMemory dummy
 scoreboard objectives add AttackType dummy
 scoreboard objectives add AvailableSlot dummy
 scoreboard objectives add BananaDropTime dummy
-scoreboard objectives add BookChoice trigger
 scoreboard objectives add Boos dummy
 scoreboard objectives add BooTimer dummy
 scoreboard objectives add ChangedMansion dummy
-scoreboard objectives add ClairvoyaChoice trigger
-scoreboard objectives add ClairvoyaSpoke dummy
 scoreboard objectives add ClearInventory dummy
 scoreboard objectives add ClickEventCheck trigger
 scoreboard objectives add Constants dummy
@@ -24,11 +20,6 @@ scoreboard objectives add Distance dummy
 scoreboard objectives add ElementHurtTime dummy
 scoreboard objectives add ElementMeter dummy
 scoreboard objectives add ElementalNr dummy
-scoreboard objectives add EGaddCallChoice trigger
-scoreboard objectives add EGaddGalleryChoice trigger
-scoreboard objectives add EGaddGhostPortrificationizerRoomChoice trigger
-scoreboard objectives add EGaddTrainingRoomChoice trigger
-scoreboard objectives add EGaddUndergroundLabChoice trigger
 scoreboard objectives add EntitySizeHeight dummy
 scoreboard objectives add EntitySizeRadius dummy
 scoreboard objectives add EntitySizeWidth dummy
@@ -83,12 +74,7 @@ scoreboard objectives add FurnitureXTarget dummy
 scoreboard objectives add FurnitureZProgress dummy
 scoreboard objectives add FurnitureZOrigin dummy
 scoreboard objectives add FurnitureZTarget dummy
-scoreboard objectives add GalleryChoice trigger
-scoreboard objectives add GBHCall dummy
-scoreboard objectives add GBHDialog dummy
 scoreboard objectives add GBHRadar dummy
-scoreboard objectives add GBHWait dummy
-scoreboard objectives add TrainingRoomScore dummy
 scoreboard objectives add GhostCount dummy
 scoreboard objectives add GhostNr dummy
 scoreboard objectives add GhostGuyCouple dummy
@@ -112,7 +98,6 @@ scoreboard objectives add IdleTime dummy
 scoreboard objectives add IncreaseAmount dummy
 scoreboard objectives add InteractionTime dummy
 scoreboard objectives add Invulnerable dummy
-scoreboard objectives add JarvisChoice trigger
 scoreboard objectives add Jump minecraft.custom:minecraft.jump
 scoreboard objectives add JumpHeight dummy
 scoreboard objectives add KillerID dummy
@@ -130,16 +115,19 @@ scoreboard objectives add LightY dummy
 scoreboard objectives add LightZ dummy
 scoreboard objectives add Loaded dummy
 scoreboard objectives add LoadedChunks dummy
-scoreboard objectives add MansionChoice trigger
 scoreboard objectives add MapSound dummy
 scoreboard objectives add MapZoomTime dummy
 scoreboard objectives add MaxHealth dummy
 scoreboard objectives add MaxHealthTime dummy
-scoreboard objectives add MelodyChoice trigger
 scoreboard objectives add MeltProgress dummy
 scoreboard objectives add MirrorX dummy
 scoreboard objectives add MirrorZ dummy
 scoreboard objectives add ModelTime dummy
+scoreboard objectives add ModelPositionX dummy
+scoreboard objectives add ModelPositionY dummy
+scoreboard objectives add ModelPositionZ dummy
+scoreboard objectives add ModelRotationX dummy
+scoreboard objectives add ModelRotationY dummy
 scoreboard objectives add Money dummy
 scoreboard objectives add Move dummy
 scoreboard objectives add MoveFlee dummy
@@ -153,9 +141,7 @@ scoreboard objectives add OpenMapTime dummy
 scoreboard objectives add OtherX dummy
 scoreboard objectives add OtherY dummy
 scoreboard objectives add OtherZ dummy
-scoreboard objectives add Owner dummy
 scoreboard objectives add PassiveNr dummy
-scoreboard objectives add Path dummy
 scoreboard objectives add PathStep dummy
 scoreboard objectives add PlayerRotation dummy
 scoreboard objectives add PoltergustSound dummy
@@ -172,7 +158,6 @@ scoreboard objectives add Pull dummy
 scoreboard objectives add PullStrength dummy
 scoreboard objectives add Range dummy
 scoreboard objectives add ReflectionNr dummy
-scoreboard objectives add ResetChoice trigger
 scoreboard objectives add ReturnTimer dummy
 scoreboard objectives add Room dummy
 scoreboard objectives add RoomNoise dummy
@@ -206,18 +191,11 @@ scoreboard objectives add TargetY dummy
 scoreboard objectives add TargetZ dummy
 scoreboard objectives add Ticking dummy
 scoreboard objectives add Time dummy
-scoreboard objectives add Toad1Choice trigger
-scoreboard objectives add Toad2Choice trigger
-scoreboard objectives add Toad3Choice trigger
-scoreboard objectives add Toad4Choice trigger
-scoreboard objectives add Toad5Choice trigger
 scoreboard objectives add TopVacuumDamage dummy
 scoreboard objectives add TotalDamage dummy
 scoreboard objectives add Totals dummy
-scoreboard objectives add TrainingRoomOption trigger
-scoreboard objectives add TrainingRoomScore trigger
+scoreboard objectives add TrainingRoomScore dummy
 scoreboard objectives add Turn dummy
-scoreboard objectives add TwinsChoice trigger
 scoreboard objectives add UseItem minecraft.used:minecraft.carrot_on_a_stick
 scoreboard objectives add Vacuumables dummy
 scoreboard objectives add VacuumErrors dummy
@@ -255,7 +233,7 @@ scoreboard players set #2000 Constants 2000
 scoreboard players set #10000 Constants 10000
 scoreboard players set #20000 Constants 20000
 
-execute store result score #players Totals if entity @a[gamemode=!spectator]
+execute store result score #players Totals if entity @a[tag=!spectator]
 execute store result score #all_players Totals if entity @a
 
 scoreboard objectives setdisplay list Health
@@ -271,8 +249,6 @@ bossbar set luigis_mansion:boo_counter color white
 
 execute unless score #loaded_exterior Selected matches -2147483648.. run scoreboard players set #loaded_exterior Selected 0
 execute unless score #mansion_data_index Selected matches -2147483648.. run scoreboard players set #mansion_data_index Selected 0
-execute unless score #mansion_type Selected matches -2147483648.. run scoreboard players set #mansion_type Selected 0
-execute unless score #previous_mansion_index Selected matches -2147483648.. run scoreboard players set #previous_mansion_index Selected 0
 execute unless score #mirrored Selected matches 0..1 run scoreboard players set #mirrored Selected 0
 execute unless score #can_warp Selected matches 0..1 run scoreboard players set #can_warp Selected 1
 execute unless score #can_revive Selected matches 0..1 run scoreboard players set #can_revive Selected 0

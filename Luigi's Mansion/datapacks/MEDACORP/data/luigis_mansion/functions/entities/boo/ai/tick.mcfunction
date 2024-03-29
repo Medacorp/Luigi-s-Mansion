@@ -1,7 +1,6 @@
 execute if entity @s[tag=dying] run function luigis_mansion:entities/ghost/death
 
-tag @s remove dark_room
-function #luigis_mansion:room/dark_room
+function luigis_mansion:room/dark_room
 tag @s[tag=dark_room] remove caught_by_boo_radar
 tag @s[tag=!dark_room] add caught_by_boo_radar
 

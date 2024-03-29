@@ -1,5 +1,1 @@
-execute if entity @s[scores={Room=-1}] run teleport @e[tag=me,limit=1] ~4000 ~24 ~ ~ ~
-execute if entity @s[scores={Room=-2}] run teleport @e[tag=me,limit=1] ~4000 ~24 ~ ~ ~
-execute if entity @s[scores={Room=-3}] run teleport @e[tag=me,limit=1] ~4000 ~24 ~ ~ ~
-execute if entity @s[scores={Room=-4}] run teleport @e[tag=me,limit=1] ~4000 ~24 ~ ~ ~
-execute if entity @s[scores={Room=-5}] run teleport @e[tag=me,limit=1] ~4000 ~99 ~ ~ ~
+execute if entity @s[scores={Room=-5..-1}] positioned ~4000 ~ ~ run function luigis_mansion:entities/game_boy_horror_marker/teleport/move/lab

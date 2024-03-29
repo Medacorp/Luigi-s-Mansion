@@ -3,6 +3,7 @@ execute if entity @e[tag=this_entity,limit=1,tag=ghost,tag=!vacuumable,tag=!port
 execute if entity @e[tag=this_entity,limit=1,tag=portrait_ghost,tag=!boo] run function luigis_mansion:spawn_entities/setup/portrait_ghost
 execute if entity @e[tag=this_entity,limit=1,tag=boo] run function luigis_mansion:spawn_entities/setup/boo
 
+function luigis_mansion:spawn_entities/setup/animation
 function luigis_mansion:spawn_entities/setup/room
 function luigis_mansion:spawn_entities/setup/paths
 function luigis_mansion:spawn_entities/setup/spawn_time

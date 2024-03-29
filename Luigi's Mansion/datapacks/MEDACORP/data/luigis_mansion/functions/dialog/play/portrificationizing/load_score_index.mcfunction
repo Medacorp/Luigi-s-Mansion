@@ -1,0 +1,2 @@
+$data modify storage luigis_mansion:data current_high_score set from storage luigis_mansion:data current_state.high_scores[{data_index:$(data_index)}]
+$data remove storage luigis_mansion:data current_state.high_scores[{data_index:$(data_index)}]

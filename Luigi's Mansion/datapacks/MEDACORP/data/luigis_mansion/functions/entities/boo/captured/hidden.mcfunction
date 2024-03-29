@@ -5,4 +5,4 @@ execute if data storage luigis_mansion:data current_state.current_data{boo_count
 execute store result score #temp Boos run data get storage luigis_mansion:data current_state.current_data.boo_counter
 execute store result storage luigis_mansion:data current_state.current_data.boo_counter int 1 run scoreboard players add #temp Boos 1
 scoreboard players reset #temp Boos
-execute if entity @s[nbt=!{data:{entity:{namespace:"luigis_mansion",id:"boolossus"}}}] unless entity @a[scores={GBHCall=1..},limit=1] run scoreboard players add @a GBHCall 5
+execute if entity @s[nbt=!{data:{entity:{namespace:"luigis_mansion",id:"boolossus"}}}] run data modify storage luigis_mansion:data dialogs append value {name:{namespace:"luigis_mansion",id:"caught_boo"},progress:0}

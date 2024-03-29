@@ -1,6 +1,6 @@
-data modify storage 3ds_remake:data portrait_ghost set from storage 3ds_remake:data current_state.portrait_ghosts_defeated_in.nana
+data modify storage 3ds_remake:data portrait_ghost set from storage 3ds_remake:data current_state.portrait_ghosts_defeated_in.luigis_mansion.nana
 function 3ds_remake:other/save_portrait_ghost_defeat
-data modify storage 3ds_remake:data current_state.portrait_ghosts_defeated_in.nana set from storage 3ds_remake:data portrait_ghost
+data modify storage 3ds_remake:data current_state.portrait_ghosts_defeated_in.luigis_mansion.nana set from storage 3ds_remake:data portrait_ghost
 data remove storage 3ds_remake:data portrait_ghost
 function luigis_mansion:entities/nana/save_stats
 $function $(namespace):entities/nana/at_death/$(id)

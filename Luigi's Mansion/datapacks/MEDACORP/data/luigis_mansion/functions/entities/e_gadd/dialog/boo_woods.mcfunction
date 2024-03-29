@@ -1,1 +1,0 @@
-execute if entity @s[scores={Room=0}] run function luigis_mansion:dialog/leaving_the_lab

@@ -1,1 +1,1 @@
-$execute if score #mansion_type Selected matches 1 unless data storage luigis_mansion:data current_state.current_data.obtained_items{$(variant)_element_medal:1b} run function luigis_mansion:items/element_medal/hidden/$(variant)
+$execute unless data storage luigis_mansion:data current_state.current_data.obtained_items{$(variant)_element_medal:1b} run function luigis_mansion:items/element_medal/hidden/$(variant)

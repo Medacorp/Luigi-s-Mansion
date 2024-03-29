@@ -1,0 +1,1 @@
+$function $(namespace):room/ghost_portrificationizer_room/portrificationize/$(id)

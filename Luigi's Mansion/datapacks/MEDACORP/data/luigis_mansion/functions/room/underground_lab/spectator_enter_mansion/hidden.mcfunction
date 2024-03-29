@@ -1,1 +1,0 @@
-execute if score #mansion_type Selected matches 1 in luigis_mansion:hidden run teleport @s 751.0 11 7.0

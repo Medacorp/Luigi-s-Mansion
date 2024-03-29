@@ -1,9 +1,7 @@
-tag @s remove dark_room
-function #luigis_mansion:room/dark_room
+function luigis_mansion:room/dark_room
 
-execute if entity @s[scores={Health=..0},tag=!death_animation,tag=!revive_animation] unless entity @s[scores={AnimationProgress=1..},tag=!idle] run function luigis_mansion:entities/player/death
-execute if entity @s[scores={Health=1..},tag=already_added_to_list] run function luigis_mansion:entities/player/remove_dead_entry
-tag @s[scores={Health=1..}] remove already_added_to_list
+execute if entity @s[scores={Health=..0},tag=!death_animation,tag=!revive_animation,tag=!dead_player] unless entity @s[scores={AnimationProgress=1..},tag=!idle] run function luigis_mansion:entities/player/death
+execute if entity @s[scores={Health=1..},tag=dead_player] run function luigis_mansion:entities/player/remove_dead_entry with entity @s
 
 scoreboard players reset @s[scores={OpenMapTime=1..},tag=stop_map_on_key_collect] OpenMapFocus
 scoreboard players reset @s[scores={OpenMapTime=1..},tag=stop_map_on_key_collect] OpenMapTime
@@ -12,10 +10,10 @@ execute if entity @s[scores={OpenMapTime=0}] unless entity @s[scores={AnimationP
 execute if entity @s[tag=!using_selection_menu] run function #luigis_mansion:items
 function #luigis_mansion:items/reset_disabled
 execute if entity @s[tag=using_selection_menu] run function luigis_mansion:selection_menu/tick
-execute if entity @s[tag=!death_animation,tag=!revive_animation,tag=!polterpup_reviving] unless entity @s[scores={AnimationProgress=1..},tag=!idle] run function luigis_mansion:blocks/gravity_swap
+execute if entity @s[tag=!death_animation,tag=!revive_animation,tag=!revived_by_polterpup] unless entity @s[scores={AnimationProgress=1..},tag=!idle] run function luigis_mansion:blocks/gravity_swap
 execute if entity @s[tag=riding_poltergust] run function luigis_mansion:entities/player/riding_poltergust
 
-execute unless entity @a[scores={GBHCall=1..},limit=1] rotated ~ 0 positioned ^ ^ ^-4 run function luigis_mansion:entities/player/spawn_ghosts
+execute unless entity @s[scores={AnimationProgress=1..},tag=!idle,tag=!animation_may_move] rotated ~ 0 positioned ^ ^ ^-4 run function luigis_mansion:entities/player/spawn_ghosts
 
 function luigis_mansion:entities/player/health_display
 execute if data storage luigis_mansion:data rooms.underground_lab{cleared:1b} run clear @s minecraft:diamond_pickaxe{luigis_mansion:{namespace:"luigis_mansion",id:"contest_reward_map"}}
@@ -40,15 +38,15 @@ execute if entity @s[tag=!spectator,tag=!gooigi] run function luigis_mansion:ent
 execute if entity @s[scores={AnimationProgress=1..},tag=idle,tag=!gooigi] unless entity @s[scores={Walk=0,Run=0,Sneak=0,Jump=0},tag=!sneak_pos,tag=!spectator] run function luigis_mansion:entities/player/animation/set/none
 execute if entity @s[scores={AnimationProgress=1..},tag=!idle,tag=!animation_may_move,tag=!looking_at_map,tag=!gooigi] run function luigis_mansion:entities/player/animation/freeze_player
 
-execute if entity @s[tag=gooigi] run function 3ds_remake:entities/player/gooigi
+execute if entity @s[tag=gooigi,tag=!dead_player] run function 3ds_remake:entities/player/gooigi
 
 execute at @s[scores={LightX=-2147483648..}] unless entity @s[scores={Shrunk=1..}] run function luigis_mansion:other/cast_shadow/2_tall
 execute at @s[scores={LightX=-2147483648..,Shrunk=1..}] run function luigis_mansion:other/cast_shadow/1_tall
-tag @s[tag=!death_animation,tag=!revive_animation,tag=!polterpup_reviving] remove spectator
+tag @s[tag=!death_animation,tag=!revive_animation,tag=!revived_by_polterpup] remove spectator
 
 effect give @s minecraft:invisibility infinite 0 true
 execute store result storage luigis_mansion:data macro.id int 1 run scoreboard players get @s ID
-execute if entity @s[tag=!camera,tag=!gooigi] run function luigis_mansion:animations/luigi with storage luigis_mansion:data macro
+execute if entity @s[tag=!camera,tag=!dead_player,tag=!gooigi] run function luigis_mansion:animations/luigi with storage luigis_mansion:data macro
 execute if entity @s[tag=death_animation,tag=!gooigi] run function luigis_mansion:entities/player/death_animation
 execute if entity @s[tag=revive_animation] run function luigis_mansion:entities/player/revive_animation
-execute if entity @s[tag=polterpup_reviving] run function 3ds_remake:dialog/polterpup_revival
+execute if entity @s[tag=revived_by_polterpup] run function 3ds_remake:entities/player/polterpup_revival

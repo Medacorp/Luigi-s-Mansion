@@ -1,0 +1,1 @@
+$function $(namespace):selection_menu/game_boy_horror/show_caught_portrait_ghosts/list/$(id)

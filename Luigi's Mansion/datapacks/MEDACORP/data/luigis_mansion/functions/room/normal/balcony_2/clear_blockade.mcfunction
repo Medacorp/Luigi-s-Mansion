@@ -1,3 +1,3 @@
 tag @e[scores={Room=53},tag=furniture,tag=door] remove area_blockade
 data modify storage luigis_mansion:data current_state.current_data.technical_data merge value {cleared_area_4_blockade:1b}
-execute unless entity @a[tag=blackout_lightning,limit=1] unless data storage luigis_mansion:data current_state.current_data.rooms.breaker_room{cleared:1b} if data storage luigis_mansion:data current_state.current_data{blackout:0b} run tag @s add blackout_lightning
+execute unless data storage luigis_mansion:data current_state.current_data.rooms.breaker_room{cleared:1b} if data storage luigis_mansion:data current_state.current_data{blackout:0b} run data modify storage luigis_mansion:data dialogs append value {name:{namespace:"luigis_mansion",is:"normal/blackout_lightning"},progress:0}

@@ -1,1 +1,0 @@
-function luigis_mansion:dialog/ghost_portrificationizer_room/normal/ending

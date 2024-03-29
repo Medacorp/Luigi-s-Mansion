@@ -1,1 +1,0 @@
-function luigis_mansion:dialog/portrificationizing/normal

@@ -1,0 +1,1 @@
+$execute if entity @s[tag=extra_gallery_door_menu] run function $(namespace):selection_menu/extra_gallery_door/$(id)

@@ -1,3 +1,4 @@
+tag @s remove pause_dialog
 execute if entity @s[scores={Room=..0}] if score #mirrored Selected matches 1 run scoreboard players set #mirrored Selected 2
 execute if entity @s[tag=using_selection_menu,tag=fetch_option_result] run function luigis_mansion:entities/player/selection_menu/get_selected_option
 execute if entity @s[tag=using_selection_menu,tag=!selection_menu_free_to_move] run function luigis_mansion:entities/player/selection_menu/freeze_in_place
@@ -15,13 +16,10 @@ tag @s[tag=!loaded_chunk_triggered] remove loaded_chunks
 tag @s remove loaded_chunk_triggered
 
 scoreboard players operation #temp Room = @s Room
-execute as @a run function #luigis_mansion:get_same_room
-execute as @e[tag=!model_piece,tag=!reflection,type=!minecraft:player] run function #luigis_mansion:get_same_room
+execute as @e[tag=!model_piece,tag=!reflection] run function luigis_mansion:main/get_same_room
 scoreboard players reset #temp Room
 
-function luigis_mansion:dialog/try
 execute if entity @s[tag=show_credits] run function luigis_mansion:credits
-function #luigis_mansion:player_tag_dialogs
 execute at @s[gamemode=!spectator] run function luigis_mansion:entities/player/not_spectator
 execute if entity @s[gamemode=!spectator,scores={Shrunk=1..},tag=!disable_second_small_run] run scoreboard players operation @s OtherX = @s PositionX
 execute if entity @s[gamemode=!spectator,scores={Shrunk=1..},tag=!disable_second_small_run] run scoreboard players operation @s OtherY = @s PositionY
@@ -46,8 +44,7 @@ execute unless score @s PreviousRoom = @s Room if score #debug_messages Selected
 scoreboard players operation @s PreviousRoom = @s Room
 execute unless entity @s[scores={Room=1..}] run scoreboard players set @s LastFloor -2
 
-scoreboard players remove @s[scores={AttackerMemory=1..}] AttackerMemory 1
-execute if entity @s[scores={AttackerMemory=0}] run function luigis_mansion:entities/player/memory/clear_attacker
+function luigis_mansion:entities/player/memory/forget_attacker
 
 scoreboard players set @s UseItem 0
 scoreboard players add @s[scores={SneakTime=1..}] SneakTime 1
@@ -100,9 +97,10 @@ scoreboard players reset @s MirrorZ
 scoreboard players reset @s LightX
 scoreboard players reset @s LightY
 scoreboard players reset @s LightZ
+tag @s remove in_dialog
 
 tag @s add me
-execute as @a[distance=..0.4,tag=!me,tag=!spectator,tag=!pull_locked_door,tag=!push_locked_door,tag=!pull_unlock_door,tag=!push_unlock_door,tag=!pull_open_door,tag=!push_unlock_door,limit=1] run function luigis_mansion:entities/player/collide
+execute as @a[distance=..0.4,tag=!me,tag=!spectator,tag=!pause_dialog,limit=1] run function luigis_mansion:entities/player/collide
 tag @s remove me
 #to remove
 tag @s remove mirror_set_by_furniture_entity

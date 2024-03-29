@@ -1,1 +1,0 @@
-execute if score #mansion_type Selected matches 1 if entity @a[tag=this_player,limit=1,nbt={Dimension:"luigis_mansion:hidden"}] positioned ~3000 ~ ~ run function luigis_mansion:entities/game_boy_horror_marker/teleport/hidden

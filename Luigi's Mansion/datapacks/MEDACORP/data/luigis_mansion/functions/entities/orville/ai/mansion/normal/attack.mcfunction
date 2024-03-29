@@ -1,4 +1,4 @@
-execute if entity @s[tag=!no_vehicle] as @e[tag=plane,scores={Owner=-2147483648..}] if score @s Owner = #temp GhostNr run tag @s add this_vehicle
+execute if entity @s[tag=!no_vehicle] run function luigis_mansion:entities/orville/ai/mansion/normal/find_vehicle with entity @s
 
 execute at @s[tag=no_vehicle] if block ^ ^ ^-0.4 #luigis_mansion:ghosts_ignore run teleport @s ~ ~-0.1 ~
 execute at @s[tag=no_vehicle,scores={VulnerableTime=0}] if block ~ ~-0.05 ~ #luigis_mansion:ghosts_ignore run teleport @s ~ ~-0.05 ~

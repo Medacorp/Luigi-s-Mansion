@@ -31,19 +31,19 @@ execute if entity @e[tag=this_entity,limit=1,scores={Health=13}] as @e[tag=this_
 execute if entity @e[tag=this_entity,limit=1,scores={Health=14}] as @e[tag=this_model] run data modify entity @s ArmorItems[3].tag.CustomModelData set value 61
 scoreboard players set @e[tag=this_entity,limit=1,scores={Health=1}] EntitySizeRadius 5
 scoreboard players set @e[tag=this_entity,limit=1,scores={Health=2}] EntitySizeRadius 10
-scoreboard players set @e[tag=this_entity,limit=1,scores={Health=3}] EntitySizeRadius 11
-scoreboard players set @e[tag=this_entity,limit=1,scores={Health=4}] EntitySizeRadius 12
-scoreboard players set @e[tag=this_entity,limit=1,scores={Health=5}] EntitySizeRadius 13
-scoreboard players set @e[tag=this_entity,limit=1,scores={Health=6}] EntitySizeRadius 14
-scoreboard players set @e[tag=this_entity,limit=1,scores={Health=7}] EntitySizeRadius 15
-scoreboard players set @e[tag=this_entity,limit=1,scores={Health=8}] EntitySizeRadius 16
-scoreboard players set @e[tag=this_entity,limit=1,scores={Health=9}] EntitySizeRadius 17
-scoreboard players set @e[tag=this_entity,limit=1,scores={Health=10}] EntitySizeRadius 18
-scoreboard players set @e[tag=this_entity,limit=1,scores={Health=11}] EntitySizeRadius 19
-scoreboard players set @e[tag=this_entity,limit=1,scores={Health=12}] EntitySizeRadius 20
-scoreboard players set @e[tag=this_entity,limit=1,scores={Health=13}] EntitySizeRadius 21
-scoreboard players set @e[tag=this_entity,limit=1,scores={Health=14}] EntitySizeRadius 22
-scoreboard players set @e[tag=this_entity,limit=1,scores={Health=15..}] EntitySizeRadius 23
+scoreboard players set @e[tag=this_entity,limit=1,scores={Health=3}] EntitySizeRadius 12
+scoreboard players set @e[tag=this_entity,limit=1,scores={Health=4}] EntitySizeRadius 13
+scoreboard players set @e[tag=this_entity,limit=1,scores={Health=5}] EntitySizeRadius 15
+scoreboard players set @e[tag=this_entity,limit=1,scores={Health=6}] EntitySizeRadius 17
+scoreboard players set @e[tag=this_entity,limit=1,scores={Health=7}] EntitySizeRadius 18
+scoreboard players set @e[tag=this_entity,limit=1,scores={Health=8}] EntitySizeRadius 20
+scoreboard players set @e[tag=this_entity,limit=1,scores={Health=9}] EntitySizeRadius 21
+scoreboard players set @e[tag=this_entity,limit=1,scores={Health=10}] EntitySizeRadius 26
+scoreboard players set @e[tag=this_entity,limit=1,scores={Health=11}] EntitySizeRadius 23
+scoreboard players set @e[tag=this_entity,limit=1,scores={Health=12}] EntitySizeRadius 24
+scoreboard players set @e[tag=this_entity,limit=1,scores={Health=13}] EntitySizeRadius 25
+scoreboard players set @e[tag=this_entity,limit=1,scores={Health=14}] EntitySizeRadius 27
+scoreboard players set @e[tag=this_entity,limit=1,scores={Health=15..}] EntitySizeRadius 30
 scoreboard players set @e[tag=this_entity,limit=1] EntityYOffset 14
 scoreboard players set @e[tag=this_entity,limit=1] Sound 0
 tag @e[tag=this_entity,limit=1] remove this_entity

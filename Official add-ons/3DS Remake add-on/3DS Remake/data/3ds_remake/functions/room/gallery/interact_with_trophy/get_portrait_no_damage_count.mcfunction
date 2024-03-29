@@ -1,48 +1,48 @@
-data modify storage 3ds_remake:data currently_checked set from storage 3ds_remake:data current_state.portrait_ghosts_defeated_in.neville
+data modify storage 3ds_remake:data currently_checked set from storage 3ds_remake:data current_state.portrait_ghosts_defeated_in.luigis_mansion.neville
 execute if data storage 3ds_remake:data currently_checked[-1] run function 3ds_remake:room/gallery/interact_with_trophy/get_portrait_count/no_damage
-data modify storage 3ds_remake:data currently_checked set from storage 3ds_remake:data current_state.portrait_ghosts_defeated_in.lydia
+data modify storage 3ds_remake:data currently_checked set from storage 3ds_remake:data current_state.portrait_ghosts_defeated_in.luigis_mansion.lydia
 execute if data storage 3ds_remake:data currently_checked[-1] run function 3ds_remake:room/gallery/interact_with_trophy/get_portrait_count/no_damage
-data modify storage 3ds_remake:data currently_checked set from storage 3ds_remake:data current_state.portrait_ghosts_defeated_in.chauncey
+data modify storage 3ds_remake:data currently_checked set from storage 3ds_remake:data current_state.portrait_ghosts_defeated_in.luigis_mansion.chauncey
 execute if data storage 3ds_remake:data currently_checked[-1] run function 3ds_remake:room/gallery/interact_with_trophy/get_portrait_count/no_damage
-data modify storage 3ds_remake:data currently_checked set from storage 3ds_remake:data current_state.portrait_ghosts_defeated_in.floating_whirlindas
+data modify storage 3ds_remake:data currently_checked set from storage 3ds_remake:data current_state.portrait_ghosts_defeated_in.luigis_mansion.floating_whirlindas
 execute if data storage 3ds_remake:data currently_checked[-1] run function 3ds_remake:room/gallery/interact_with_trophy/get_portrait_count/no_damage
-data modify storage 3ds_remake:data currently_checked set from storage 3ds_remake:data current_state.portrait_ghosts_defeated_in.shivers
+data modify storage 3ds_remake:data currently_checked set from storage 3ds_remake:data current_state.portrait_ghosts_defeated_in.luigis_mansion.shivers
 execute if data storage 3ds_remake:data currently_checked[-1] run function 3ds_remake:room/gallery/interact_with_trophy/get_portrait_count/no_damage
-data modify storage 3ds_remake:data currently_checked set from storage 3ds_remake:data current_state.portrait_ghosts_defeated_in.melody_pianissima
+data modify storage 3ds_remake:data currently_checked set from storage 3ds_remake:data current_state.portrait_ghosts_defeated_in.luigis_mansion.melody_pianissima
 execute if data storage 3ds_remake:data currently_checked[-1] run function 3ds_remake:room/gallery/interact_with_trophy/get_portrait_count/no_damage
-data modify storage 3ds_remake:data currently_checked set from storage 3ds_remake:data current_state.portrait_ghosts_defeated_in.mr_luggs
+data modify storage 3ds_remake:data currently_checked set from storage 3ds_remake:data current_state.portrait_ghosts_defeated_in.luigis_mansion.mr_luggs
 execute if data storage 3ds_remake:data currently_checked[-1] run function 3ds_remake:room/gallery/interact_with_trophy/get_portrait_count/no_damage
-data modify storage 3ds_remake:data currently_checked set from storage 3ds_remake:data current_state.portrait_ghosts_defeated_in.spooky
+data modify storage 3ds_remake:data currently_checked set from storage 3ds_remake:data current_state.portrait_ghosts_defeated_in.luigis_mansion.spooky
 execute if data storage 3ds_remake:data currently_checked[-1] run function 3ds_remake:room/gallery/interact_with_trophy/get_portrait_count/no_damage
-data modify storage 3ds_remake:data currently_checked set from storage 3ds_remake:data current_state.portrait_ghosts_defeated_in.bogmire
+data modify storage 3ds_remake:data currently_checked set from storage 3ds_remake:data current_state.portrait_ghosts_defeated_in.luigis_mansion.bogmire
 execute if data storage 3ds_remake:data currently_checked[-1] run function 3ds_remake:room/gallery/interact_with_trophy/get_portrait_count/no_damage
-data modify storage 3ds_remake:data currently_checked set from storage 3ds_remake:data current_state.portrait_ghosts_defeated_in.biff_atlas
+data modify storage 3ds_remake:data currently_checked set from storage 3ds_remake:data current_state.portrait_ghosts_defeated_in.luigis_mansion.biff_atlas
 execute if data storage 3ds_remake:data currently_checked[-1] run function 3ds_remake:room/gallery/interact_with_trophy/get_portrait_count/no_damage
-data modify storage 3ds_remake:data currently_checked set from storage 3ds_remake:data current_state.portrait_ghosts_defeated_in.miss_petunia
+data modify storage 3ds_remake:data currently_checked set from storage 3ds_remake:data current_state.portrait_ghosts_defeated_in.luigis_mansion.miss_petunia
 execute if data storage 3ds_remake:data currently_checked[-1] run function 3ds_remake:room/gallery/interact_with_trophy/get_portrait_count/no_damage
-data modify storage 3ds_remake:data currently_checked set from storage 3ds_remake:data current_state.portrait_ghosts_defeated_in.nana
+data modify storage 3ds_remake:data currently_checked set from storage 3ds_remake:data current_state.portrait_ghosts_defeated_in.luigis_mansion.nana
 execute if data storage 3ds_remake:data currently_checked[-1] run function 3ds_remake:room/gallery/interact_with_trophy/get_portrait_count/no_damage
-data modify storage 3ds_remake:data currently_checked set from storage 3ds_remake:data current_state.portrait_ghosts_defeated_in.slim_bankshot
+data modify storage 3ds_remake:data currently_checked set from storage 3ds_remake:data current_state.portrait_ghosts_defeated_in.luigis_mansion.slim_bankshot
 execute if data storage 3ds_remake:data currently_checked[-1] run function 3ds_remake:room/gallery/interact_with_trophy/get_portrait_count/no_damage
-data modify storage 3ds_remake:data currently_checked set from storage 3ds_remake:data current_state.portrait_ghosts_defeated_in.henry_and_orville
+data modify storage 3ds_remake:data currently_checked set from storage 3ds_remake:data current_state.portrait_ghosts_defeated_in.luigis_mansion.henry_and_orville
 execute if data storage 3ds_remake:data currently_checked[-1] run function 3ds_remake:room/gallery/interact_with_trophy/get_portrait_count/no_damage
-data modify storage 3ds_remake:data currently_checked set from storage 3ds_remake:data current_state.portrait_ghosts_defeated_in.madame_clairvoya
+data modify storage 3ds_remake:data currently_checked set from storage 3ds_remake:data current_state.portrait_ghosts_defeated_in.luigis_mansion.madame_clairvoya
 execute if data storage 3ds_remake:data currently_checked[-1] run function 3ds_remake:room/gallery/interact_with_trophy/get_portrait_count/no_damage
-data modify storage 3ds_remake:data currently_checked set from storage 3ds_remake:data current_state.portrait_ghosts_defeated_in.boolossus
+data modify storage 3ds_remake:data currently_checked set from storage 3ds_remake:data current_state.portrait_ghosts_defeated_in.luigis_mansion.boolossus
 execute if data storage 3ds_remake:data currently_checked[-1] run function 3ds_remake:room/gallery/interact_with_trophy/get_portrait_count/no_damage
-data modify storage 3ds_remake:data currently_checked set from storage 3ds_remake:data current_state.portrait_ghosts_defeated_in.uncle_grimmly
+data modify storage 3ds_remake:data currently_checked set from storage 3ds_remake:data current_state.portrait_ghosts_defeated_in.luigis_mansion.uncle_grimmly
 execute if data storage 3ds_remake:data currently_checked[-1] run function 3ds_remake:room/gallery/interact_with_trophy/get_portrait_count/no_damage
-data modify storage 3ds_remake:data currently_checked set from storage 3ds_remake:data current_state.portrait_ghosts_defeated_in.clockwork_soldiers
+data modify storage 3ds_remake:data currently_checked set from storage 3ds_remake:data current_state.portrait_ghosts_defeated_in.luigis_mansion.clockwork_soldiers
 execute if data storage 3ds_remake:data currently_checked[-1] run function 3ds_remake:room/gallery/interact_with_trophy/get_portrait_count/no_damage
-data modify storage 3ds_remake:data currently_checked set from storage 3ds_remake:data current_state.portrait_ghosts_defeated_in.sue_pea
+data modify storage 3ds_remake:data currently_checked set from storage 3ds_remake:data current_state.portrait_ghosts_defeated_in.luigis_mansion.sue_pea
 execute if data storage 3ds_remake:data currently_checked[-1] run function 3ds_remake:room/gallery/interact_with_trophy/get_portrait_count/no_damage
-data modify storage 3ds_remake:data currently_checked set from storage 3ds_remake:data current_state.portrait_ghosts_defeated_in.jarvis
+data modify storage 3ds_remake:data currently_checked set from storage 3ds_remake:data current_state.portrait_ghosts_defeated_in.luigis_mansion.jarvis
 execute if data storage 3ds_remake:data currently_checked[-1] run function 3ds_remake:room/gallery/interact_with_trophy/get_portrait_count/no_damage
-data modify storage 3ds_remake:data currently_checked set from storage 3ds_remake:data current_state.portrait_ghosts_defeated_in.sir_weston
+data modify storage 3ds_remake:data currently_checked set from storage 3ds_remake:data current_state.portrait_ghosts_defeated_in.luigis_mansion.sir_weston
 execute if data storage 3ds_remake:data currently_checked[-1] run function 3ds_remake:room/gallery/interact_with_trophy/get_portrait_count/no_damage
-data modify storage 3ds_remake:data currently_checked set from storage 3ds_remake:data current_state.portrait_ghosts_defeated_in.vincent_van_gore
+data modify storage 3ds_remake:data currently_checked set from storage 3ds_remake:data current_state.portrait_ghosts_defeated_in.luigis_mansion.vincent_van_gore
 execute if data storage 3ds_remake:data currently_checked[-1] run function 3ds_remake:room/gallery/interact_with_trophy/get_portrait_count/no_damage
-data modify storage 3ds_remake:data currently_checked set from storage 3ds_remake:data current_state.portrait_ghosts_defeated_in.king_boo
+data modify storage 3ds_remake:data currently_checked set from storage 3ds_remake:data current_state.portrait_ghosts_defeated_in.luigis_mansion.king_boo
 execute if data storage 3ds_remake:data currently_checked[-1] run function 3ds_remake:room/gallery/interact_with_trophy/get_portrait_count/no_damage
 data remove storage 3ds_remake:data currently_checked
 scoreboard players reset #temp Money

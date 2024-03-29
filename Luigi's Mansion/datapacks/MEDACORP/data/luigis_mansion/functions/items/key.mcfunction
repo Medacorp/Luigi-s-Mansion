@@ -1,0 +1,1 @@
+$function $(namsepace):items/key/$(id) with entity @s ArmorItems[3].tag.luigis_mansion

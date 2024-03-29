@@ -1,1 +1,0 @@
-execute if data storage luigis_mansion:data current_state.current_data{drop_item_on_damage:"luigis_mansion:red_diamond"} run function luigis_mansion:items/get_money_count/search/select {namespace:luigis_mansion,id:red_diamond}

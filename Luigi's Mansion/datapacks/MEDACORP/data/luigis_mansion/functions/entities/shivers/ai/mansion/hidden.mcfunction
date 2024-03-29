@@ -1,3 +1,9 @@
+scoreboard players set @s[x=713,y=8,z=-10,dx=7,dy=9,dz=60] Room 11
+scoreboard players set @s[x=686,y=8,z=30,dx=26,dy=9,dz=8] Room 12
+scoreboard players set @s[x=679,y=8,z=3,dx=6,dy=9,dz=42] Room 13
+scoreboard players set @s[x=712,y=8,z=-62,dx=8,dy=9,dz=20] Room 22
+scoreboard players set @s[x=737,y=8,z=-58,dx=14,dy=9,dz=20] Room 23
+
 execute if entity @s[tag=!visible,nbt=!{data:{path:{}}},tag=!reached_target] run function luigis_mansion:entities/ghost/set_specific_path {index:0}
 execute if entity @s[tag=visible,nbt=!{data:{path:{}}},tag=!reached_target] unless entity @s[scores={ActionTime=1..}] run function luigis_mansion:entities/ghost/set_specific_path {index:2}
 scoreboard players add @s[scores={ActionTime=1..}] ActionTime 1
@@ -21,8 +27,8 @@ scoreboard players set @s[tag=reached_target] ActionTime 41
 tag @s[tag=reached_target] add visible
 tag @s[tag=reached_target] remove reached_target
 teleport @s[scores={ActionTime=41}] ~ ~ ~ -120 0
-execute if entity @s[scores={ActionTime=58..81}] run scoreboard players set #temp Move 5
-execute at @s[scores={ActionTime=58..81}] facing 744.3 11 -51 run function luigis_mansion:entities/ghost/move_forward_force
+execute if entity @s[scores={ActionTime=58..81}] run scoreboard players set #temp Move 7
+execute at @s[scores={ActionTime=58..81}] facing 744 11 -51 run function luigis_mansion:entities/ghost/move_forward_force
 execute if entity @s[scores={ActionTime=61}] run playsound luigis_mansion:entity.shivers.calm_down hostile @a[tag=same_room] ~ ~ ~ 1
 scoreboard players set @s[scores={ActionTime=81}] VulnerableTime 80
 data modify entity @s[scores={ActionTime=41}] data.animation set value {namespace:"luigis_mansion",id:"look_around"}

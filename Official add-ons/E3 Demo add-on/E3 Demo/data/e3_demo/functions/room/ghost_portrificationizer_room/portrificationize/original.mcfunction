@@ -3,6 +3,5 @@ execute if data storage luigis_mansion:data current_state.current_data.portrait_
 execute if data storage luigis_mansion:data current_state.current_data.portrait_ghosts.luigis_mansion.miss_petunia{portrificationized:0b,health:0} run tag @e[tag=e_gadd,scores={Room=-3}] add portrificationizing
 execute if data storage luigis_mansion:data current_state.current_data.portrait_ghosts.luigis_mansion.spooky{portrificationized:0b,health:0} run tag @e[tag=e_gadd,scores={Room=-3}] add portrificationizing
 tag @e[tag=e_gadd,tag=portrificationize_dialog] remove portrificationizing
-tag @e[tag=e_gadd,tag=portrificationizing,tag=!portrificationize_dialog] remove talk
-scoreboard players set @e[tag=e_gadd,tag=portrificationizing,tag=!portrificationize_dialog] Dialog 0
-execute if entity @e[tag=e_gadd,tag=portrificationizing,tag=!portrificationize_dialog] as @a run trigger EGaddGhostPortrificationizerRoomChoice set 0
+execute if entity @e[tag=e_gadd,tag=portrificationizing] unless data storage luigis_mansion:data dialogs[{room:-3}] run data modify storage luigis_mansion:data dialogs append value {name:{namespace:"e3_demo",id:"portrificationizing"},room:-3,progress:0,portraits:{}}
+tag @e[tag=e_gadd,tag=portrificationizing] remove portrificationizing

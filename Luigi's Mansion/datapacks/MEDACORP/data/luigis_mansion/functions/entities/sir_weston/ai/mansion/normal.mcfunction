@@ -1,44 +1,29 @@
-execute if entity @s[scores={Dialog=1..422}] run scoreboard players set #freeze_timer Selected 1
-execute unless entity @s[scores={Dialog=483..}] run tag @s add visible
+execute unless entity @s[scores={Dialog=92..}] run tag @s add visible
 execute unless entity @s[scores={Dialog=1..}] at @e[tag=same_room,tag=!spectator,tag=player] positioned ^ ^ ^8 run tag @s[distance=..8] remove visible
-scoreboard players add @s[scores={Dialog=483..}] Dialog 1
-scoreboard players add @s[scores={Dialog=423..482},tag=in_fire] Dialog 1
-scoreboard players add @s[scores={Dialog=1..422}] Dialog 1
+scoreboard players add @s[scores={Dialog=92..}] Dialog 1
+scoreboard players add @s[scores={Dialog=32..91},tag=in_fire] Dialog 1
+scoreboard players add @s[scores={Dialog=1..31}] Dialog 1
 execute unless entity @s[scores={Dialog=1..}] if block ^2.7 ^ ^2.7 minecraft:soul_campfire[lit=true] if block ^-2.7 ^ ^2.7 minecraft:soul_campfire[lit=true] run scoreboard players add @s Dialog 1
 execute if entity @s[scores={Dialog=1}] run playsound luigis_mansion:music.solve_puzzle music @a[tag=same_room] ~ ~ ~ 1000
 execute if entity @s[scores={Dialog=1}] run scoreboard players set @a[tag=same_room,tag=!spectator,scores={Music=..30}] Music 30
-execute if entity @s[scores={Dialog=30}] if data storage luigis_mansion:data current_state.current_data.technical_data{sir_weston_spoke:1b} run scoreboard players set @s Dialog 422
-execute if entity @s[scores={Dialog=31..421}] facing entity @e[tag=same_room,tag=!spectator,tag=player,sort=nearest,limit=1] feet rotated ~ 0 run teleport @s ~ ~ ~ ~ ~
-execute if entity @s[scores={Dialog=31..421}] as @a[tag=same_room,tag=!spectator] run function luigis_mansion:other/music/set/talking_ghost
-execute if entity @s[scores={Dialog=30..420}] as @a[tag=same_room,gamemode=!spectator,tag=!looking_at_map] run function luigis_mansion:entities/player/animation/set/idle
-execute if entity @s[scores={Dialog=30..197}] as @a[tag=same_room,gamemode=!spectator,tag=!looking_at_map] run function luigis_mansion:entities/player/animation/set/high_health_idle_no_sound
-execute if entity @s[scores={Dialog=30}] run playsound luigis_mansion:entity.sir_weston.talk hostile @a[tag=same_room] ~ ~ ~ 1
-execute if entity @s[scores={Dialog=30}] if score #players Totals matches 1 run tellraw @a[tag=same_room] {"type":"translatable","translate":"chat.type.text","with":[{"type":"translatable","translate":"luigis_mansion:entity.sir_weston","color":"green"},{"type":"translatable","translate":"luigis_mansion:dialog.sir_weston.1"}]}
-execute if entity @s[scores={Dialog=30}] if score #players Totals matches 2.. run tellraw @a[tag=same_room] {"type":"translatable","translate":"chat.type.text","with":[{"type":"translatable","translate":"luigis_mansion:entity.sir_weston","color":"green"},{"type":"translatable","translate":"luigis_mansion:dialog.sir_weston.1.more"}]}
-execute if entity @s[scores={Dialog=110}] run tellraw @a[tag=same_room] {"type":"translatable","translate":"chat.type.text","with":[{"type":"translatable","translate":"luigis_mansion:entity.sir_weston","color":"green"},{"type":"translatable","translate":"luigis_mansion:dialog.sir_weston.2"}]}
-execute if entity @s[scores={Dialog=198}] as @a[tag=same_room,tag=!spectator,tag=!looking_at_map] run function luigis_mansion:entities/player/animation/set/idle
-execute if entity @s[scores={Dialog=198}] if score #players Totals matches 1 run tellraw @a[tag=same_room] {"type":"translatable","translate":"chat.type.text","with":[{"type":"translatable","translate":"luigis_mansion:entity.sir_weston","color":"green"},{"type":"translatable","translate":"luigis_mansion:dialog.sir_weston.3"}]}
-execute if entity @s[scores={Dialog=198}] if score #players Totals matches 2.. run tellraw @a[tag=same_room] {"type":"translatable","translate":"chat.type.text","with":[{"type":"translatable","translate":"luigis_mansion:entity.sir_weston","color":"green"},{"type":"translatable","translate":"luigis_mansion:dialog.sir_weston.3.more"}]}
-execute if entity @s[scores={Dialog=270}] run tellraw @a[tag=same_room] {"type":"translatable","translate":"chat.type.text","with":[{"type":"translatable","translate":"luigis_mansion:entity.sir_weston","color":"green"},{"type":"translatable","translate":"luigis_mansion:dialog.sir_weston.4"}]}
-execute if entity @s[scores={Dialog=390}] if score #players Totals matches 1 run tellraw @a[tag=same_room] {"type":"translatable","translate":"chat.type.text","with":[{"type":"translatable","translate":"luigis_mansion:entity.sir_weston","color":"green"},{"type":"translatable","translate":"luigis_mansion:dialog.sir_weston.5"}]}
-execute if entity @s[scores={Dialog=390}] if score #players Totals matches 2.. run tellraw @a[tag=same_room] {"type":"translatable","translate":"chat.type.text","with":[{"type":"translatable","translate":"luigis_mansion:entity.sir_weston","color":"green"},{"type":"translatable","translate":"luigis_mansion:dialog.sir_weston.5.more"}]}
-execute if entity @s[scores={Dialog=421}] as @a[tag=same_room,tag=!spectator,tag=!looking_at_map] run function luigis_mansion:entities/player/animation/set/none
-execute if entity @s[scores={Dialog=422}] run data modify storage luigis_mansion:data current_state.current_data.technical_data merge value {sir_weston_spoke:1b}
-execute if entity @s[scores={Dialog=422..}] as @a[tag=same_room,tag=!spectator] run function luigis_mansion:other/music/set/danger
-scoreboard players add @s[scores={Dialog=423..482}] PathStep 1
+execute if entity @s[scores={Dialog=30}] if data storage luigis_mansion:data current_state.current_data.technical_data{sir_weston_spoke:1b} run scoreboard players set @s Dialog 31
+execute if entity @s[scores={Dialog=30}] run data modify storage luigis_mansion:data dialogs append value {name:{namespace:"luigis_mansion",id:"sir_weston"},progress:0,room:0}
+execute if entity @s[scores={Dialog=30}] store result storage luigis_mansion:data dialogs[-1].room int 1 run scoreboard players get @s Room
+execute if entity @s[scores={Dialog=31..}] as @a[tag=same_room,tag=!spectator] run function luigis_mansion:other/music/set/danger
+scoreboard players add @s[scores={Dialog=32..91}] PathStep 1
 execute at @s[scores={PathStep=20}] run playsound luigis_mansion:entity.sir_weston.attack hostile @a[tag=same_room] ~ ~ ~ 1
 execute if entity @s[scores={PathStep=20..50,VulnerableTime=0}] facing entity @e[tag=same_room,tag=!spectator,tag=player,sort=nearest,limit=1] feet rotated ~ 0 run teleport @s ~ ~ ~ ~ ~
 execute at @s[scores={PathStep=60}] rotated ~ 0 run function luigis_mansion:entities/sir_weston/ai/mansion/normal/spawn_ice_spikes
 scoreboard players set @s[scores={PathStep=80}] PathStep 0
-execute if entity @s[scores={Dialog=483}] run playsound luigis_mansion:entity.sir_weston.complain hostile @a[tag=same_room] ~ ~ ~ 1
-execute if entity @s[scores={Dialog=483}] run particle minecraft:block minecraft:ice ~ ~1.2 ~ 0.6 0.6 0.6 0 30
-scoreboard players set @s[scores={Dialog=483}] VulnerableTime 40
-scoreboard players set @s[scores={Dialog=483}] PathStep 0
-scoreboard players set @s[scores={Dialog=523}] Dialog 463
+execute if entity @s[scores={Dialog=92}] run playsound luigis_mansion:entity.sir_weston.complain hostile @a[tag=same_room] ~ ~ ~ 1
+execute if entity @s[scores={Dialog=92}] run particle minecraft:block minecraft:ice ~ ~1.2 ~ 0.6 0.6 0.6 0 30
+scoreboard players set @s[scores={Dialog=92}] VulnerableTime 40
+scoreboard players set @s[scores={Dialog=92}] PathStep 0
+scoreboard players set @s[scores={Dialog=132}] Dialog 72
 
-data modify entity @s[scores={Dialog=422..482}] data.animation set value {namespace:"luigis_mansion",id:"spawn_ice_spikes"}
-data modify entity @s[scores={Dialog=483..}] data.animation set value {namespace:"luigis_mansion",id:"melted"}
-execute unless entity @s[scores={Dialog=422..}] run data remove entity @s data.animation
+data modify entity @s[scores={Dialog=31..91}] data.animation set value {namespace:"luigis_mansion",id:"spawn_ice_spikes"}
+data modify entity @s[scores={Dialog=92..}] data.animation set value {namespace:"luigis_mansion",id:"melted"}
+execute unless entity @s[scores={Dialog=31..}] run data remove entity @s data.animation
 
-scoreboard players operation @s[scores={Dialog=..482}] MeltProgress = @s Dialog
-scoreboard players remove @s MeltProgress 423
+scoreboard players operation @s[scores={Dialog=..91}] MeltProgress = @s Dialog
+scoreboard players remove @s MeltProgress 32

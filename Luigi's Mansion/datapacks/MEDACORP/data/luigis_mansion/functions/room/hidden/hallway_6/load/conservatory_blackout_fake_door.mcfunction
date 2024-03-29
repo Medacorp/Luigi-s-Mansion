@@ -1,2 +1,2 @@
-execute if data storage luigis_mansion:data current_state.current_data{blackout:1b} run data modify storage luigis_mansion:data entity set value {door:{model:{namespace:"luigis_mansion",id:"mansion/1"},frame:{namespace:"luigis_mansion",id:"normal"}}}
+execute if data storage luigis_mansion:data current_state.current_data{blackout:1b} run data modify storage luigis_mansion:data entity set value {room:14,door:{model:{namespace:"luigis_mansion",id:"mansion/1"},frame:{namespace:"luigis_mansion",id:"normal"}}}
 execute if data storage luigis_mansion:data current_state.current_data{blackout:1b} positioned 673 11 10 rotated -180 0 run function luigis_mansion:spawn_entities/fake_door

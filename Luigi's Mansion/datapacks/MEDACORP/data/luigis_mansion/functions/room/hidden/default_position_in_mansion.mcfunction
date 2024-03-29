@@ -1,0 +1,1 @@
+execute in luigis_mansion:hidden run teleport @s 751.0 11 7.0

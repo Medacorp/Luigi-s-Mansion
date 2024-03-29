@@ -1,3 +1,3 @@
-data modify storage luigis_mansion:data entity set value {mansion:{namespace:"luigis_mansion",id:"hidden"},paths:[{steps:[{position:[689.5d,111.0d,-27.5d]},{position:[685.5d,111.0d,-26.5d]},{position:[685.5d,111.0d,-31.5d]},{position:[689.5d,111.0d,-27.5d]},{position:[690.5d,111.0d,-25.5d]}]}],scan_message:{sender:"me",message:'{"type":"translatable","translate":"luigis_mansion:message.lydia.scan"}'}}
+data modify storage luigis_mansion:data entity set value {room:9,mansion:{namespace:"luigis_mansion",id:"hidden"},paths:[{steps:[{position:[689.5d,111.0d,-27.5d]},{position:[685.5d,111.0d,-26.5d]},{position:[685.5d,111.0d,-31.5d]},{position:[689.5d,111.0d,-27.5d]},{position:[690.5d,111.0d,-25.5d]}]}],scan_message:{sender:"me",message:'{"type":"translatable","translate":"luigis_mansion:message.lydia.scan"}'}}
 execute positioned 690 111 -26 rotated 45 0 run function luigis_mansion:spawn_entities/portrait_ghost/lydia
 scoreboard players set #master_bedroom Wave 1

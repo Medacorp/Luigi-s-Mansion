@@ -1,0 +1,1 @@
+data modify storage luigis_mansion:data my_memory.hurt_by.self set value 1b

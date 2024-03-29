@@ -1,0 +1,2 @@
+execute at @e[tag=portrait_ghost,tag=same_room,tag=!visible,tag=!vanish] run particle minecraft:dust 0.7 1 1 1 ~ ~1.6 ~ 0.3 0.3 0.3 0 5 normal @s
+execute at @a[tag=same_room,gamemode=spectator] run particle minecraft:dust 0.2 1 0.2 1 ~ ~1.6 ~ 0.3 0.3 0.3 0 5 normal @s

@@ -1,1 +1,1 @@
-function luigis_mansion:entities/game_boy_horror_marker/teleport/normal
+execute positioned ~3000 ~ ~ run function luigis_mansion:entities/game_boy_horror_marker/teleport/move/normal

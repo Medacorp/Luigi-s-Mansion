@@ -1,0 +1,55 @@
+data modify storage luigis_mansion:data entity merge value {rotation:[0.0f,-90.0f],show_health:0b,speed:30,tags:["cutscene","up","down"]}
+execute store result storage luigis_mansion:data entity.rotation[0] float 1 run random value -180..179
+execute if score #dialog Dialog matches 140 run function luigis_mansion:spawn_entities/ghost/boo
+execute if score #dialog Dialog matches 144 run function luigis_mansion:spawn_entities/ghost/boo
+execute if score #dialog Dialog matches 148 run function luigis_mansion:spawn_entities/ghost/boo
+execute if score #dialog Dialog matches 152 run function luigis_mansion:spawn_entities/ghost/boo
+execute if score #dialog Dialog matches 156 run function luigis_mansion:spawn_entities/ghost/boo
+execute if score #dialog Dialog matches 160 run function luigis_mansion:spawn_entities/ghost/boo
+execute if score #dialog Dialog matches 164 run function luigis_mansion:spawn_entities/ghost/boo
+execute if score #dialog Dialog matches 168 run function luigis_mansion:spawn_entities/ghost/boo
+execute if score #dialog Dialog matches 172 run function luigis_mansion:spawn_entities/ghost/boo
+execute if score #dialog Dialog matches 176 run function luigis_mansion:spawn_entities/ghost/boo
+execute if score #dialog Dialog matches 180 run function luigis_mansion:spawn_entities/ghost/boo
+execute if score #dialog Dialog matches 184 run function luigis_mansion:spawn_entities/ghost/boo
+execute if score #dialog Dialog matches 188 run function luigis_mansion:spawn_entities/ghost/boo
+execute if score #dialog Dialog matches 192 run function luigis_mansion:spawn_entities/ghost/boo
+execute if score #dialog Dialog matches 196 run function luigis_mansion:spawn_entities/ghost/boo
+execute if score #dialog Dialog matches 200 run function luigis_mansion:spawn_entities/ghost/boo
+execute if score #dialog Dialog matches 204 run function luigis_mansion:spawn_entities/ghost/boo
+execute if score #dialog Dialog matches 208 run function luigis_mansion:spawn_entities/ghost/boo
+execute if score #dialog Dialog matches 212 run function luigis_mansion:spawn_entities/ghost/boo
+execute if score #dialog Dialog matches 216 run function luigis_mansion:spawn_entities/ghost/boo
+execute if score #dialog Dialog matches 220 run function luigis_mansion:spawn_entities/ghost/boo
+execute if score #dialog Dialog matches 224 run function luigis_mansion:spawn_entities/ghost/boo
+execute if score #dialog Dialog matches 228 run function luigis_mansion:spawn_entities/ghost/boo
+execute if score #dialog Dialog matches 232 run function luigis_mansion:spawn_entities/ghost/boo
+execute if score #dialog Dialog matches 236 run function luigis_mansion:spawn_entities/ghost/boo
+execute if score #dialog Dialog matches 240 run function luigis_mansion:spawn_entities/ghost/boo
+execute if score #dialog Dialog matches 244 run function luigis_mansion:spawn_entities/ghost/boo
+execute if score #dialog Dialog matches 248 run function luigis_mansion:spawn_entities/ghost/boo
+execute if score #dialog Dialog matches 252 run function luigis_mansion:spawn_entities/ghost/boo
+execute if score #dialog Dialog matches 256 run function luigis_mansion:spawn_entities/ghost/boo
+execute if score #dialog Dialog matches 260 run function luigis_mansion:spawn_entities/ghost/boo
+execute if score #dialog Dialog matches 264 run data modify storage luigis_mansion:data entity set value {show_health:0b}
+execute if score #dialog Dialog matches 264 run function luigis_mansion:spawn_entities/portrait_ghost/king_boo
+execute if score #dialog Dialog matches 268 run function luigis_mansion:spawn_entities/ghost/boo
+execute if score #dialog Dialog matches 272 run function luigis_mansion:spawn_entities/ghost/boo
+execute if score #dialog Dialog matches 276 run function luigis_mansion:spawn_entities/ghost/boo
+execute if score #dialog Dialog matches 280 run function luigis_mansion:spawn_entities/ghost/boo
+execute if score #dialog Dialog matches 284 run function luigis_mansion:spawn_entities/ghost/boo
+execute if score #dialog Dialog matches 288 run function luigis_mansion:spawn_entities/ghost/boo
+execute if score #dialog Dialog matches 292 run function luigis_mansion:spawn_entities/ghost/boo
+execute if score #dialog Dialog matches 296 run function luigis_mansion:spawn_entities/ghost/boo
+execute if score #dialog Dialog matches 300 run function luigis_mansion:spawn_entities/ghost/boo
+execute if score #dialog Dialog matches 304 run function luigis_mansion:spawn_entities/ghost/boo
+execute if score #dialog Dialog matches 308 run function luigis_mansion:spawn_entities/ghost/boo
+execute if score #dialog Dialog matches 312 run function luigis_mansion:spawn_entities/ghost/boo
+execute if score #dialog Dialog matches 316 run function luigis_mansion:spawn_entities/ghost/boo
+execute if score #dialog Dialog matches 320 run function luigis_mansion:spawn_entities/ghost/boo
+execute if score #dialog Dialog matches 324 run function luigis_mansion:spawn_entities/ghost/boo
+execute if score #dialog Dialog matches 328 run function luigis_mansion:spawn_entities/ghost/boo
+execute if score #dialog Dialog matches 332 run function luigis_mansion:spawn_entities/ghost/boo
+execute if score #dialog Dialog matches 336 run function luigis_mansion:spawn_entities/ghost/boo
+execute if score #dialog Dialog matches 340 run function luigis_mansion:spawn_entities/ghost/boo
+data remove storage luigis_mansion:data entity

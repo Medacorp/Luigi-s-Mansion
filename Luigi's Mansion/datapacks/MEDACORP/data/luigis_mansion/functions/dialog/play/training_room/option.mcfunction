@@ -1,0 +1,10 @@
+execute if score #dialog Dialog matches ..1 run scoreboard players add #dialog Dialog 1
+execute if entity @a[tag=same_room,scores={Offline=1..}] run scoreboard players set #dialog Dialog 1
+execute if entity @a[tag=same_room,tag=skip_dialog,limit=1] run scoreboard players set #dialog Dialog -1
+function luigis_mansion:selection_menu/dialog/choice/training_room
+
+scoreboard players set @a[tag=same_room] ForceScreen 1
+function luigis_mansion:entities/player/animation/set/game_boy_horror
+execute if score #dialog Dialog matches 1 run stopsound @a[tag=same_room] neutral luigis_mansion:entity.e_gadd.talk.oui_oydohroh_tahmentahkeh2
+execute if score #dialog Dialog matches 1 run tellraw @a[tag=same_room] {"type":"translatable","translate":"chat.type.text","with":[{"type":"translatable","translate":"luigis_mansion:entity.e_gadd","color":"green"},{"type":"translatable","translate":"luigis_mansion:message.training_type"}]}
+execute if score #dialog Dialog matches 1 run playsound luigis_mansion:entity.e_gadd.talk.oui_oydohroh_tahmentahkeh2 neutral @a[tag=same_room] ~ ~ ~ 1

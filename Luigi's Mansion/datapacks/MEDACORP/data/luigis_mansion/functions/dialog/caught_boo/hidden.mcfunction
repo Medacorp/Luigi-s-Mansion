@@ -1,1 +1,0 @@
-function luigis_mansion:dialog/caught_boo/normal

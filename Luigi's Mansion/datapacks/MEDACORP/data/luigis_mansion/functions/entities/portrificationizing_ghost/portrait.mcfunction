@@ -1,1 +1,3 @@
 $function $(namespace):entities/portrificationizing_ghost/portrait/$(id)
+$execute if data storage luigis_mansion:data dialogs[{portraits:{}}] run data modify storage luigis_mansion:data dialogs[{portraits:{}}].portraits.$(namespace).$(id).rank set from storage luigis_mansion:data current_state.current_data.portrait_ghosts.$(namespace).$(id).rank
+$execute if data storage luigis_mansion:data dialogs[{portraits:{}}] run data modify storage luigis_mansion:data dialogs[{portraits:{}}].portraits.$(namespace).$(id).model_data set from entity @s ArmorItems[3]

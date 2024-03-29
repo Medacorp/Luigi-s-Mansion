@@ -1,1 +1,0 @@
-function luigis_mansion:dialog/king_boo/normal

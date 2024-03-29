@@ -1,0 +1,1 @@
+execute if data storage luigis_mansion:data current_state.current_data.technical_data{moved_wall:1b} run summon minecraft:item_frame 681 13 61 {Facing:5b,CustomName:'{"type":"translatable","translate":"luigis_mansion:entity.poster"}',Fixed:1b,Invisible:1b,Silent:1b,Item:{id:"minecraft:filled_map",Count:1b,tag:{map:314}},Tags:["poster"]}

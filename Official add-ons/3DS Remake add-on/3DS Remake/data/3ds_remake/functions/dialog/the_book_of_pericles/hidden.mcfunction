@@ -1,1 +1,0 @@
-function luigis_mansion:dialog/the_book_of_perciles/normal

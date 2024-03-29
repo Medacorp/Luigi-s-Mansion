@@ -1,0 +1,2 @@
+data modify storage luigis_mansion:data dialogs append value {name:{namespace:"e3_demo",id:"meet_e_gadd"},room:3,progress:0,walking_player:0}
+execute store result storage luigis_mansion:data dialogs[-1].walking_player int 1 run scoreboard players get @s ID

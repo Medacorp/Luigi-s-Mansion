@@ -26,9 +26,9 @@ execute if entity @s[scores={ActionTime=90}] run scoreboard players set @a[tag=t
 execute if entity @s[scores={ActionTime=90}] as @a[tag=target,limit=1,tag=looking_at_map] at @s run function luigis_mansion:selection_menu/game_boy_horror/map/exit
 execute if entity @s[scores={ActionTime=90}] unless score #mirrored Selected matches 1 as @a[tag=target,limit=1] positioned as @s rotated ~-45 0 run teleport @s ^ ^5 ^1 ~-180 ~
 execute if entity @s[scores={ActionTime=90}] if score #mirrored Selected matches 1 as @a[tag=target,limit=1] positioned as @s rotated ~45 0 run teleport @s ^ ^5 ^1 ~-180 ~
-execute if entity @s[scores={ActionTime=90}] run data modify storage luigis_mansion:data damage set value {method:{namespace:"luigis_mansion",id:"swallow"},amount:0,animation:{namespace:"luigis_mansion",id:"knockback/large"},attacker:-1}
+execute if entity @s[scores={ActionTime=90}] run data modify storage luigis_mansion:data damage set value {method:{namespace:"luigis_mansion",id:"swallow"},amount:0,animation:{namespace:"luigis_mansion",id:"knockback/large"}}
 execute if entity @s[scores={ActionTime=90}] run data modify storage luigis_mansion:data damage.amount set from entity @s data.damage.vacuum
-execute if entity @s[scores={ActionTime=90}] store result storage luigis_mansion:data damage.attacker int 1 run scoreboard players get @s GhostNr
+execute if entity @s[scores={ActionTime=90}] run data modify storage luigis_mansion:data damage.attacker set from entity @s UUID
 execute if entity @s[scores={ActionTime=90}] as @a[tag=target,limit=1] run function luigis_mansion:entities/player/damage
 tag @s[scores={ActionTime=110}] remove vacuum_attack
 data remove entity @s[scores={ActionTime=110}] data.animation

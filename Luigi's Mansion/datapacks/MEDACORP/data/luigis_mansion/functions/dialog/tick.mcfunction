@@ -1,0 +1,1 @@
+$function $(namespace):dialog/play/$(id)

@@ -1,1 +1,0 @@
-execute if score #mansion_type Selected matches 2 run function e3_demo:selection_menu/game_boy_horror/show_inventory/list/original

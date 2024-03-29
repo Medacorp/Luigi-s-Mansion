@@ -17,11 +17,11 @@ execute as @a[tag=gooigi] run function 3ds_remake:entities/player/un_gooigi
 execute as @e[tag=furniture,tag=!no_dust] run data remove entity @s ArmorItems[3].tag.loot
 tag @e[tag=furniture,tag=!no_dust] add no_dust
 tag @e[tag=pearl_dropper] remove pearl_dropper
-function #3ds_remake:room/gallery/portrait_battle/tick
+function 3ds_remake:room/gallery/portrait_battle/tick with storage luigis_mansion:data current_state.current_data.mansion_id
 execute if data storage luigis_mansion:data current_state.current_data{in_mansion_time:2} unless score #freeze_timer Selected matches 1 run function 3ds_remake:room/gallery/portrait_battle/begin
 execute if entity @e[tag=portrait_ghost,tag=!dying,limit=1] run tag @s add portrait_ghost_spawned
 execute if entity @e[tag=portrait_ghost,tag=dying,limit=1] run tag @s add catching_the_portrait_ghost
 execute if entity @s[tag=portrait_ghost_spawned,tag=catching_the_portrait_ghost] unless entity @s[scores={MusicGroup=0,MusicType=14}] unless entity @e[tag=portrait_ghost,limit=1] run function 3ds_remake:room/gallery/portrait_battle/clear
-execute if entity @s[tag=portrait_ghost_spawned,tag=catching_the_portrait_ghost] if entity @s[scores={MusicGroup=0,MusicType=14,PreviousMusicType=14,Music=1}] in minecraft:overworld run function #3ds_remake:room/gallery/portrait_battle/return
-execute if entity @s[tag=portrait_ghost_spawned,tag=!catching_the_portrait_ghost] unless entity @s[scores={MusicGroup=0,MusicType=14}] unless entity @e[tag=portrait_ghost,limit=1] in minecraft:overworld run function #3ds_remake:room/gallery/portrait_battle/return
-execute if entity @s[gamemode=spectator] in minecraft:overworld run function #3ds_remake:room/gallery/portrait_battle/return
+execute if entity @s[tag=portrait_ghost_spawned,tag=catching_the_portrait_ghost] if entity @s[scores={MusicGroup=0,MusicType=14,PreviousMusicType=14,Music=1}] in minecraft:overworld run function 3ds_remake:room/gallery/portrait_battle/return with storage luigis_mansion:data current_state.current_data.mansion_id
+execute if entity @s[tag=portrait_ghost_spawned,tag=!catching_the_portrait_ghost] unless entity @s[scores={MusicGroup=0,MusicType=14}] unless entity @e[tag=portrait_ghost,limit=1] in minecraft:overworld run function 3ds_remake:room/gallery/portrait_battle/return with storage luigis_mansion:data current_state.current_data.mansion_id
+execute if entity @s[tag=spectator] in minecraft:overworld run function 3ds_remake:room/gallery/portrait_battle/return with storage luigis_mansion:data current_state.current_data.mansion_id

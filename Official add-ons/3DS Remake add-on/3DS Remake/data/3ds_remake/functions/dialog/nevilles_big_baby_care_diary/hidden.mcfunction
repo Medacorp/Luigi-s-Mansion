@@ -1,1 +1,0 @@
-function luigis_mansion:dialog/nevilles_big_baby_care_diary/normal

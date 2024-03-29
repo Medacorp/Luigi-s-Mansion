@@ -1,2 +1,0 @@
-execute if score #mansion_type Selected matches 1 if score #mansion_data_index Selected matches 1 run function 3ds_remake:entities/portrificationizing_ghost/clear_rooms/hidden
-execute if score #mansion_type Selected matches 1 if score #mansion_data_index Selected matches 0 run function luigis_mansion:entities/portrificationizing_ghost/clear_rooms/hidden

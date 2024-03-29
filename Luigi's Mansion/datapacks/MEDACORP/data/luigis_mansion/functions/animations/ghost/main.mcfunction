@@ -1,3 +1,4 @@
+execute store result score @s Room run data get storage luigis_mansion:data ghost.room
 execute store success score #temp Time run data modify entity @s ArmorItems[3].tag.luigis_mansion.animation set from storage luigis_mansion:data ghost.animation
 execute if score #temp Time matches 1 run function luigis_mansion:animations/ghost/reset_pose
 scoreboard players reset #temp Time
@@ -7,9 +8,9 @@ execute if entity @s[tag=visible] unless data storage luigis_mansion:data ghost{
 execute if entity @s[tag=!visible] if data storage luigis_mansion:data ghost{tags:["visible"]} run data modify entity @s ArmorItems[3].id set from entity @s ArmorItems[3].tag.luigis_mansion.visible
 execute if entity @s[tag=!visible] if data storage luigis_mansion:data ghost{tags:["visible"]} run data modify entity @s ArmorItems[3] merge from entity @s ArmorItems[3].tag.luigis_mansion.model_data.default
 execute if entity @s[tag=!visible] if data storage luigis_mansion:data ghost{tags:["visible"]} if data storage luigis_mansion:data ghost{tags:["big"]} run data modify entity @s ArmorItems[3] merge from entity @s ArmorItems[3].tag.luigis_mansion.model_data.big
-tag @s remove hidden
+tag @s remove no_reflection
 tag @s remove visible
-execute if data storage luigis_mansion:data ghost{tags:["hidden"]} run tag @s add hidden
+execute if data storage luigis_mansion:data ghost{tags:["hidden"]} run tag @s add no_reflection
 execute if data storage luigis_mansion:data ghost{tags:["visible"]} run tag @s add visible
 execute unless data entity @s Pose.Head[0] run data merge entity @s {Pose:{Head:[0.001f,0.001f,0.001f]}}
 teleport @s ~ ~ ~ ~ ~

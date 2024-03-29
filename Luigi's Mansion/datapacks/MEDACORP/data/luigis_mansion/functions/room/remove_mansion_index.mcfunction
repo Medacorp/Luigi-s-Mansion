@@ -1,5 +1,0 @@
-execute store success score #temp ActionTime run data get storage luigis_mansion:data current_state.mansion_data[-1].data_index
-execute unless score #temp ActionTime = #mansion_data_index Selected run data modify storage luigis_mansion:data current_state.new_mansion_data append from storage luigis_mansion:data current_state.mansion_data[-1]
-data remove storage luigis_mansion:data current_state.mansion_data[-1]
-execute if score #temp ActionTime = #mansion_data_index Selected run data modify storage luigis_mansion:data current_state.new_mansion_data append from storage luigis_mansion:data current_state.mansion_data[]
-execute unless score #temp ActionTime = #mansion_data_index Selected if data storage luigis_mansion:data current_state.mansion_data[-1] run function luigis_mansion:room/remove_mansion_index

@@ -3,6 +3,7 @@ teleport @e[tag=this_entity,limit=1] ~ ~-1.4 ~ ~ 0
 function luigis_mansion:spawn_furniture/setup/fire_elemental_source
 function luigis_mansion:spawn_furniture/setup/water_elemental_source
 function luigis_mansion:spawn_furniture/setup/ice_elemental_source
+function luigis_mansion:spawn_furniture/setup/room
 function luigis_mansion:spawn_furniture/setup/tags
 function luigis_mansion:spawn_furniture/setup/position
 execute unless data storage luigis_mansion:data furniture.fire_elemental_source unless data storage luigis_mansion:data furniture.water_elemental_source unless data storage luigis_mansion:data furniture.ice_elemental_source run tag @e[tag=this_entity,limit=1] add remove_from_existence

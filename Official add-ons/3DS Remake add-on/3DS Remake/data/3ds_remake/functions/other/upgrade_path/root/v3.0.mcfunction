@@ -13,193 +13,194 @@ data modify storage 3ds_remake:data saved_state.boos_caught.3ds_remake.boolldog 
 data remove storage 3ds_remake:data new_ghosts.boolldog
 data modify storage 3ds_remake:data saved_state.boos_caught.luigis_mansion set from storage 3ds_remake:data new_ghosts
 data remove storage 3ds_remake:data new_ghosts
+#add namespace to the portrait_ghosts_defeated_in list (portrait_ghosts_defeated_in.neville -> portrait_ghosts_defeated_in.luigis_mansion.neville)
 data modify storage 3ds_remake:data new_ghosts.luigis_mansion set from storage 3ds_remake:data current_state.portrait_ghosts_defeated_in
 data modify storage 3ds_remake:data current_state.portrait_ghosts_defeated_in set from storage 3ds_remake:data new_ghosts
 data remove storage 3ds_remake:data new_ghosts
 data modify storage 3ds_remake:data new_ghosts.luigis_mansion set from storage 3ds_remake:data saved_state.portrait_ghosts_defeated_in
 data modify storage 3ds_remake:data saved_state.portrait_ghosts_defeated_in set from storage 3ds_remake:data new_ghosts
 data remove storage 3ds_remake:data new_ghosts
-data modify storage 3ds_remake:data portrait_ghost set from storage 3ds_remake:data current_state.portrait_ghosts_defeated_in.neville
+data modify storage 3ds_remake:data portrait_ghost set from storage 3ds_remake:data current_state.portrait_ghosts_defeated_in.luigis_mansion.neville
 function 3ds_remake:other/upgrade_path/v3.0/portrait_ghost_list
-data modify storage 3ds_remake:data current_state.portrait_ghosts_defeated_in.neville set from storage 3ds_remake:data portrait_ghost
+data modify storage 3ds_remake:data current_state.portrait_ghosts_defeated_in.luigis_mansion.neville set from storage 3ds_remake:data portrait_ghost
 data remove storage 3ds_remake:data portrait_ghost
-data modify storage 3ds_remake:data portrait_ghost set from storage 3ds_remake:data current_state.portrait_ghosts_defeated_in.lydia
+data modify storage 3ds_remake:data portrait_ghost set from storage 3ds_remake:data current_state.portrait_ghosts_defeated_in.luigis_mansion.lydia
 function 3ds_remake:other/upgrade_path/v3.0/portrait_ghost_list
-data modify storage 3ds_remake:data current_state.portrait_ghosts_defeated_in.lydia set from storage 3ds_remake:data portrait_ghost
+data modify storage 3ds_remake:data current_state.portrait_ghosts_defeated_in.luigis_mansion.lydia set from storage 3ds_remake:data portrait_ghost
 data remove storage 3ds_remake:data portrait_ghost
-data modify storage 3ds_remake:data portrait_ghost set from storage 3ds_remake:data current_state.portrait_ghosts_defeated_in.chauncey
+data modify storage 3ds_remake:data portrait_ghost set from storage 3ds_remake:data current_state.portrait_ghosts_defeated_in.luigis_mansion.chauncey
 function 3ds_remake:other/upgrade_path/v3.0/portrait_ghost_list
-data modify storage 3ds_remake:data current_state.portrait_ghosts_defeated_in.chauncey set from storage 3ds_remake:data portrait_ghost
+data modify storage 3ds_remake:data current_state.portrait_ghosts_defeated_in.luigis_mansion.chauncey set from storage 3ds_remake:data portrait_ghost
 data remove storage 3ds_remake:data portrait_ghost
-data modify storage 3ds_remake:data portrait_ghost set from storage 3ds_remake:data current_state.portrait_ghosts_defeated_in.floating_whirlindas
+data modify storage 3ds_remake:data portrait_ghost set from storage 3ds_remake:data current_state.portrait_ghosts_defeated_in.luigis_mansion.floating_whirlindas
 function 3ds_remake:other/upgrade_path/v3.0/portrait_ghost_list
-data modify storage 3ds_remake:data current_state.portrait_ghosts_defeated_in.floating_whirlindas set from storage 3ds_remake:data portrait_ghost
+data modify storage 3ds_remake:data current_state.portrait_ghosts_defeated_in.luigis_mansion.floating_whirlindas set from storage 3ds_remake:data portrait_ghost
 data remove storage 3ds_remake:data portrait_ghost
-data modify storage 3ds_remake:data portrait_ghost set from storage 3ds_remake:data current_state.portrait_ghosts_defeated_in.shivers
+data modify storage 3ds_remake:data portrait_ghost set from storage 3ds_remake:data current_state.portrait_ghosts_defeated_in.luigis_mansion.shivers
 function 3ds_remake:other/upgrade_path/v3.0/portrait_ghost_list
-data modify storage 3ds_remake:data current_state.portrait_ghosts_defeated_in.shivers set from storage 3ds_remake:data portrait_ghost
+data modify storage 3ds_remake:data current_state.portrait_ghosts_defeated_in.luigis_mansion.shivers set from storage 3ds_remake:data portrait_ghost
 data remove storage 3ds_remake:data portrait_ghost
-data modify storage 3ds_remake:data portrait_ghost set from storage 3ds_remake:data current_state.portrait_ghosts_defeated_in.melody_pianissima
+data modify storage 3ds_remake:data portrait_ghost set from storage 3ds_remake:data current_state.portrait_ghosts_defeated_in.luigis_mansion.melody_pianissima
 function 3ds_remake:other/upgrade_path/v3.0/portrait_ghost_list
-data modify storage 3ds_remake:data current_state.portrait_ghosts_defeated_in.melody_pianissima set from storage 3ds_remake:data portrait_ghost
+data modify storage 3ds_remake:data current_state.portrait_ghosts_defeated_in.luigis_mansion.melody_pianissima set from storage 3ds_remake:data portrait_ghost
 data remove storage 3ds_remake:data portrait_ghost
-data modify storage 3ds_remake:data portrait_ghost set from storage 3ds_remake:data current_state.portrait_ghosts_defeated_in.mr_luggs
+data modify storage 3ds_remake:data portrait_ghost set from storage 3ds_remake:data current_state.portrait_ghosts_defeated_in.luigis_mansion.mr_luggs
 function 3ds_remake:other/upgrade_path/v3.0/portrait_ghost_list
-data modify storage 3ds_remake:data current_state.portrait_ghosts_defeated_in.mr_luggs set from storage 3ds_remake:data portrait_ghost
+data modify storage 3ds_remake:data current_state.portrait_ghosts_defeated_in.luigis_mansion.mr_luggs set from storage 3ds_remake:data portrait_ghost
 data remove storage 3ds_remake:data portrait_ghost
-data modify storage 3ds_remake:data portrait_ghost set from storage 3ds_remake:data current_state.portrait_ghosts_defeated_in.spooky
+data modify storage 3ds_remake:data portrait_ghost set from storage 3ds_remake:data current_state.portrait_ghosts_defeated_in.luigis_mansion.spooky
 function 3ds_remake:other/upgrade_path/v3.0/portrait_ghost_list
-data modify storage 3ds_remake:data current_state.portrait_ghosts_defeated_in.spooky set from storage 3ds_remake:data portrait_ghost
+data modify storage 3ds_remake:data current_state.portrait_ghosts_defeated_in.luigis_mansion.spooky set from storage 3ds_remake:data portrait_ghost
 data remove storage 3ds_remake:data portrait_ghost
-data modify storage 3ds_remake:data portrait_ghost set from storage 3ds_remake:data current_state.portrait_ghosts_defeated_in.bogmire
+data modify storage 3ds_remake:data portrait_ghost set from storage 3ds_remake:data current_state.portrait_ghosts_defeated_in.luigis_mansion.bogmire
 function 3ds_remake:other/upgrade_path/v3.0/portrait_ghost_list
-data modify storage 3ds_remake:data current_state.portrait_ghosts_defeated_in.bogmire set from storage 3ds_remake:data portrait_ghost
+data modify storage 3ds_remake:data current_state.portrait_ghosts_defeated_in.luigis_mansion.bogmire set from storage 3ds_remake:data portrait_ghost
 data remove storage 3ds_remake:data portrait_ghost
-data modify storage 3ds_remake:data portrait_ghost set from storage 3ds_remake:data current_state.portrait_ghosts_defeated_in.biff_atlas
+data modify storage 3ds_remake:data portrait_ghost set from storage 3ds_remake:data current_state.portrait_ghosts_defeated_in.luigis_mansion.biff_atlas
 function 3ds_remake:other/upgrade_path/v3.0/portrait_ghost_list
-data modify storage 3ds_remake:data current_state.portrait_ghosts_defeated_in.biff_atlas set from storage 3ds_remake:data portrait_ghost
+data modify storage 3ds_remake:data current_state.portrait_ghosts_defeated_in.luigis_mansion.biff_atlas set from storage 3ds_remake:data portrait_ghost
 data remove storage 3ds_remake:data portrait_ghost
-data modify storage 3ds_remake:data portrait_ghost set from storage 3ds_remake:data current_state.portrait_ghosts_defeated_in.miss_petunia
+data modify storage 3ds_remake:data portrait_ghost set from storage 3ds_remake:data current_state.portrait_ghosts_defeated_in.luigis_mansion.miss_petunia
 function 3ds_remake:other/upgrade_path/v3.0/portrait_ghost_list
-data modify storage 3ds_remake:data current_state.portrait_ghosts_defeated_in.miss_petunia set from storage 3ds_remake:data portrait_ghost
+data modify storage 3ds_remake:data current_state.portrait_ghosts_defeated_in.luigis_mansion.miss_petunia set from storage 3ds_remake:data portrait_ghost
 data remove storage 3ds_remake:data portrait_ghost
-data modify storage 3ds_remake:data portrait_ghost set from storage 3ds_remake:data current_state.portrait_ghosts_defeated_in.nana
+data modify storage 3ds_remake:data portrait_ghost set from storage 3ds_remake:data current_state.portrait_ghosts_defeated_in.luigis_mansion.nana
 function 3ds_remake:other/upgrade_path/v3.0/portrait_ghost_list
-data modify storage 3ds_remake:data current_state.portrait_ghosts_defeated_in.nana set from storage 3ds_remake:data portrait_ghost
+data modify storage 3ds_remake:data current_state.portrait_ghosts_defeated_in.luigis_mansion.nana set from storage 3ds_remake:data portrait_ghost
 data remove storage 3ds_remake:data portrait_ghost
-data modify storage 3ds_remake:data portrait_ghost set from storage 3ds_remake:data current_state.portrait_ghosts_defeated_in.slim_bankshot
+data modify storage 3ds_remake:data portrait_ghost set from storage 3ds_remake:data current_state.portrait_ghosts_defeated_in.luigis_mansion.slim_bankshot
 function 3ds_remake:other/upgrade_path/v3.0/portrait_ghost_list
-data modify storage 3ds_remake:data current_state.portrait_ghosts_defeated_in.slim_bankshot set from storage 3ds_remake:data portrait_ghost
+data modify storage 3ds_remake:data current_state.portrait_ghosts_defeated_in.luigis_mansion.slim_bankshot set from storage 3ds_remake:data portrait_ghost
 data remove storage 3ds_remake:data portrait_ghost
-data modify storage 3ds_remake:data portrait_ghost set from storage 3ds_remake:data current_state.portrait_ghosts_defeated_in.henry_and_orville
+data modify storage 3ds_remake:data portrait_ghost set from storage 3ds_remake:data current_state.portrait_ghosts_defeated_in.luigis_mansion.henry_and_orville
 function 3ds_remake:other/upgrade_path/v3.0/portrait_ghost_list
-data modify storage 3ds_remake:data current_state.portrait_ghosts_defeated_in.henry_and_orville set from storage 3ds_remake:data portrait_ghost
+data modify storage 3ds_remake:data current_state.portrait_ghosts_defeated_in.luigis_mansion.henry_and_orville set from storage 3ds_remake:data portrait_ghost
 data remove storage 3ds_remake:data portrait_ghost
-data modify storage 3ds_remake:data portrait_ghost set from storage 3ds_remake:data current_state.portrait_ghosts_defeated_in.madame_clairvoya
+data modify storage 3ds_remake:data portrait_ghost set from storage 3ds_remake:data current_state.portrait_ghosts_defeated_in.luigis_mansion.madame_clairvoya
 function 3ds_remake:other/upgrade_path/v3.0/portrait_ghost_list
-data modify storage 3ds_remake:data current_state.portrait_ghosts_defeated_in.madame_clairvoya set from storage 3ds_remake:data portrait_ghost
+data modify storage 3ds_remake:data current_state.portrait_ghosts_defeated_in.luigis_mansion.madame_clairvoya set from storage 3ds_remake:data portrait_ghost
 data remove storage 3ds_remake:data portrait_ghost
-data modify storage 3ds_remake:data portrait_ghost set from storage 3ds_remake:data current_state.portrait_ghosts_defeated_in.boolossus
+data modify storage 3ds_remake:data portrait_ghost set from storage 3ds_remake:data current_state.portrait_ghosts_defeated_in.luigis_mansion.boolossus
 function 3ds_remake:other/upgrade_path/v3.0/portrait_ghost_list
-data modify storage 3ds_remake:data current_state.portrait_ghosts_defeated_in.boolossus set from storage 3ds_remake:data portrait_ghost
+data modify storage 3ds_remake:data current_state.portrait_ghosts_defeated_in.luigis_mansion.boolossus set from storage 3ds_remake:data portrait_ghost
 data remove storage 3ds_remake:data portrait_ghost
-data modify storage 3ds_remake:data portrait_ghost set from storage 3ds_remake:data current_state.portrait_ghosts_defeated_in.uncle_grimmly
+data modify storage 3ds_remake:data portrait_ghost set from storage 3ds_remake:data current_state.portrait_ghosts_defeated_in.luigis_mansion.uncle_grimmly
 function 3ds_remake:other/upgrade_path/v3.0/portrait_ghost_list
-data modify storage 3ds_remake:data current_state.portrait_ghosts_defeated_in.uncle_grimmly set from storage 3ds_remake:data portrait_ghost
+data modify storage 3ds_remake:data current_state.portrait_ghosts_defeated_in.luigis_mansion.uncle_grimmly set from storage 3ds_remake:data portrait_ghost
 data remove storage 3ds_remake:data portrait_ghost
-data modify storage 3ds_remake:data portrait_ghost set from storage 3ds_remake:data current_state.portrait_ghosts_defeated_in.clockwork_soldiers
+data modify storage 3ds_remake:data portrait_ghost set from storage 3ds_remake:data current_state.portrait_ghosts_defeated_in.luigis_mansion.clockwork_soldiers
 function 3ds_remake:other/upgrade_path/v3.0/portrait_ghost_list
-data modify storage 3ds_remake:data current_state.portrait_ghosts_defeated_in.clockwork_soldiers set from storage 3ds_remake:data portrait_ghost
+data modify storage 3ds_remake:data current_state.portrait_ghosts_defeated_in.luigis_mansion.clockwork_soldiers set from storage 3ds_remake:data portrait_ghost
 data remove storage 3ds_remake:data portrait_ghost
-data modify storage 3ds_remake:data portrait_ghost set from storage 3ds_remake:data current_state.portrait_ghosts_defeated_in.sue_pea
+data modify storage 3ds_remake:data portrait_ghost set from storage 3ds_remake:data current_state.portrait_ghosts_defeated_in.luigis_mansion.sue_pea
 function 3ds_remake:other/upgrade_path/v3.0/portrait_ghost_list
-data modify storage 3ds_remake:data current_state.portrait_ghosts_defeated_in.sue_pea set from storage 3ds_remake:data portrait_ghost
+data modify storage 3ds_remake:data current_state.portrait_ghosts_defeated_in.luigis_mansion.sue_pea set from storage 3ds_remake:data portrait_ghost
 data remove storage 3ds_remake:data portrait_ghost
-data modify storage 3ds_remake:data portrait_ghost set from storage 3ds_remake:data current_state.portrait_ghosts_defeated_in.jarvis
+data modify storage 3ds_remake:data portrait_ghost set from storage 3ds_remake:data current_state.portrait_ghosts_defeated_in.luigis_mansion.jarvis
 function 3ds_remake:other/upgrade_path/v3.0/portrait_ghost_list
-data modify storage 3ds_remake:data current_state.portrait_ghosts_defeated_in.jarvis set from storage 3ds_remake:data portrait_ghost
+data modify storage 3ds_remake:data current_state.portrait_ghosts_defeated_in.luigis_mansion.jarvis set from storage 3ds_remake:data portrait_ghost
 data remove storage 3ds_remake:data portrait_ghost
-data modify storage 3ds_remake:data portrait_ghost set from storage 3ds_remake:data current_state.portrait_ghosts_defeated_in.sir_weston
+data modify storage 3ds_remake:data portrait_ghost set from storage 3ds_remake:data current_state.portrait_ghosts_defeated_in.luigis_mansion.sir_weston
 function 3ds_remake:other/upgrade_path/v3.0/portrait_ghost_list
-data modify storage 3ds_remake:data current_state.portrait_ghosts_defeated_in.sir_weston set from storage 3ds_remake:data portrait_ghost
+data modify storage 3ds_remake:data current_state.portrait_ghosts_defeated_in.luigis_mansion.sir_weston set from storage 3ds_remake:data portrait_ghost
 data remove storage 3ds_remake:data portrait_ghost
-data modify storage 3ds_remake:data portrait_ghost set from storage 3ds_remake:data current_state.portrait_ghosts_defeated_in.vincent_van_gore
+data modify storage 3ds_remake:data portrait_ghost set from storage 3ds_remake:data current_state.portrait_ghosts_defeated_in.luigis_mansion.vincent_van_gore
 function 3ds_remake:other/upgrade_path/v3.0/portrait_ghost_list
-data modify storage 3ds_remake:data current_state.portrait_ghosts_defeated_in.vincent_van_gore set from storage 3ds_remake:data portrait_ghost
+data modify storage 3ds_remake:data current_state.portrait_ghosts_defeated_in.luigis_mansion.vincent_van_gore set from storage 3ds_remake:data portrait_ghost
 data remove storage 3ds_remake:data portrait_ghost
-data modify storage 3ds_remake:data portrait_ghost set from storage 3ds_remake:data current_state.portrait_ghosts_defeated_in.king_boo
+data modify storage 3ds_remake:data portrait_ghost set from storage 3ds_remake:data current_state.portrait_ghosts_defeated_in.luigis_mansion.king_boo
 function 3ds_remake:other/upgrade_path/v3.0/portrait_ghost_list
-data modify storage 3ds_remake:data current_state.portrait_ghosts_defeated_in.king_boo set from storage 3ds_remake:data portrait_ghost
+data modify storage 3ds_remake:data current_state.portrait_ghosts_defeated_in.luigis_mansion.king_boo set from storage 3ds_remake:data portrait_ghost
 data remove storage 3ds_remake:data portrait_ghost
-data modify storage 3ds_remake:data portrait_ghost set from storage 3ds_remake:data saved_state.portrait_ghosts_defeated_in.neville
+data modify storage 3ds_remake:data portrait_ghost set from storage 3ds_remake:data saved_state.portrait_ghosts_defeated_in.luigis_mansion.neville
 function 3ds_remake:other/upgrade_path/v3.0/portrait_ghost_list
-data modify storage 3ds_remake:data saved_state.portrait_ghosts_defeated_in.neville set from storage 3ds_remake:data portrait_ghost
+data modify storage 3ds_remake:data saved_state.portrait_ghosts_defeated_in.luigis_mansion.neville set from storage 3ds_remake:data portrait_ghost
 data remove storage 3ds_remake:data portrait_ghost
-data modify storage 3ds_remake:data portrait_ghost set from storage 3ds_remake:data saved_state.portrait_ghosts_defeated_in.lydia
+data modify storage 3ds_remake:data portrait_ghost set from storage 3ds_remake:data saved_state.portrait_ghosts_defeated_in.luigis_mansion.lydia
 function 3ds_remake:other/upgrade_path/v3.0/portrait_ghost_list
-data modify storage 3ds_remake:data saved_state.portrait_ghosts_defeated_in.lydia set from storage 3ds_remake:data portrait_ghost
+data modify storage 3ds_remake:data saved_state.portrait_ghosts_defeated_in.luigis_mansion.lydia set from storage 3ds_remake:data portrait_ghost
 data remove storage 3ds_remake:data portrait_ghost
-data modify storage 3ds_remake:data portrait_ghost set from storage 3ds_remake:data saved_state.portrait_ghosts_defeated_in.chauncey
+data modify storage 3ds_remake:data portrait_ghost set from storage 3ds_remake:data saved_state.portrait_ghosts_defeated_in.luigis_mansion.chauncey
 function 3ds_remake:other/upgrade_path/v3.0/portrait_ghost_list
-data modify storage 3ds_remake:data saved_state.portrait_ghosts_defeated_in.chauncey set from storage 3ds_remake:data portrait_ghost
+data modify storage 3ds_remake:data saved_state.portrait_ghosts_defeated_in.luigis_mansion.chauncey set from storage 3ds_remake:data portrait_ghost
 data remove storage 3ds_remake:data portrait_ghost
-data modify storage 3ds_remake:data portrait_ghost set from storage 3ds_remake:data saved_state.portrait_ghosts_defeated_in.floating_whirlindas
+data modify storage 3ds_remake:data portrait_ghost set from storage 3ds_remake:data saved_state.portrait_ghosts_defeated_in.luigis_mansion.floating_whirlindas
 function 3ds_remake:other/upgrade_path/v3.0/portrait_ghost_list
-data modify storage 3ds_remake:data saved_state.portrait_ghosts_defeated_in.floating_whirlindas set from storage 3ds_remake:data portrait_ghost
+data modify storage 3ds_remake:data saved_state.portrait_ghosts_defeated_in.luigis_mansion.floating_whirlindas set from storage 3ds_remake:data portrait_ghost
 data remove storage 3ds_remake:data portrait_ghost
-data modify storage 3ds_remake:data portrait_ghost set from storage 3ds_remake:data saved_state.portrait_ghosts_defeated_in.shivers
+data modify storage 3ds_remake:data portrait_ghost set from storage 3ds_remake:data saved_state.portrait_ghosts_defeated_in.luigis_mansion.shivers
 function 3ds_remake:other/upgrade_path/v3.0/portrait_ghost_list
-data modify storage 3ds_remake:data saved_state.portrait_ghosts_defeated_in.shivers set from storage 3ds_remake:data portrait_ghost
+data modify storage 3ds_remake:data saved_state.portrait_ghosts_defeated_in.luigis_mansion.shivers set from storage 3ds_remake:data portrait_ghost
 data remove storage 3ds_remake:data portrait_ghost
-data modify storage 3ds_remake:data portrait_ghost set from storage 3ds_remake:data saved_state.portrait_ghosts_defeated_in.melody_pianissima
+data modify storage 3ds_remake:data portrait_ghost set from storage 3ds_remake:data saved_state.portrait_ghosts_defeated_in.luigis_mansion.melody_pianissima
 function 3ds_remake:other/upgrade_path/v3.0/portrait_ghost_list
-data modify storage 3ds_remake:data saved_state.portrait_ghosts_defeated_in.melody_pianissima set from storage 3ds_remake:data portrait_ghost
+data modify storage 3ds_remake:data saved_state.portrait_ghosts_defeated_in.luigis_mansion.melody_pianissima set from storage 3ds_remake:data portrait_ghost
 data remove storage 3ds_remake:data portrait_ghost
-data modify storage 3ds_remake:data portrait_ghost set from storage 3ds_remake:data saved_state.portrait_ghosts_defeated_in.mr_luggs
+data modify storage 3ds_remake:data portrait_ghost set from storage 3ds_remake:data saved_state.portrait_ghosts_defeated_in.luigis_mansion.mr_luggs
 function 3ds_remake:other/upgrade_path/v3.0/portrait_ghost_list
-data modify storage 3ds_remake:data saved_state.portrait_ghosts_defeated_in.mr_luggs set from storage 3ds_remake:data portrait_ghost
+data modify storage 3ds_remake:data saved_state.portrait_ghosts_defeated_in.luigis_mansion.mr_luggs set from storage 3ds_remake:data portrait_ghost
 data remove storage 3ds_remake:data portrait_ghost
-data modify storage 3ds_remake:data portrait_ghost set from storage 3ds_remake:data saved_state.portrait_ghosts_defeated_in.spooky
+data modify storage 3ds_remake:data portrait_ghost set from storage 3ds_remake:data saved_state.portrait_ghosts_defeated_in.luigis_mansion.spooky
 function 3ds_remake:other/upgrade_path/v3.0/portrait_ghost_list
-data modify storage 3ds_remake:data saved_state.portrait_ghosts_defeated_in.spooky set from storage 3ds_remake:data portrait_ghost
+data modify storage 3ds_remake:data saved_state.portrait_ghosts_defeated_in.luigis_mansion.spooky set from storage 3ds_remake:data portrait_ghost
 data remove storage 3ds_remake:data portrait_ghost
-data modify storage 3ds_remake:data portrait_ghost set from storage 3ds_remake:data saved_state.portrait_ghosts_defeated_in.bogmire
+data modify storage 3ds_remake:data portrait_ghost set from storage 3ds_remake:data saved_state.portrait_ghosts_defeated_in.luigis_mansion.bogmire
 function 3ds_remake:other/upgrade_path/v3.0/portrait_ghost_list
-data modify storage 3ds_remake:data saved_state.portrait_ghosts_defeated_in.bogmire set from storage 3ds_remake:data portrait_ghost
+data modify storage 3ds_remake:data saved_state.portrait_ghosts_defeated_in.luigis_mansion.bogmire set from storage 3ds_remake:data portrait_ghost
 data remove storage 3ds_remake:data portrait_ghost
-data modify storage 3ds_remake:data portrait_ghost set from storage 3ds_remake:data saved_state.portrait_ghosts_defeated_in.biff_atlas
+data modify storage 3ds_remake:data portrait_ghost set from storage 3ds_remake:data saved_state.portrait_ghosts_defeated_in.luigis_mansion.biff_atlas
 function 3ds_remake:other/upgrade_path/v3.0/portrait_ghost_list
-data modify storage 3ds_remake:data saved_state.portrait_ghosts_defeated_in.biff_atlas set from storage 3ds_remake:data portrait_ghost
+data modify storage 3ds_remake:data saved_state.portrait_ghosts_defeated_in.luigis_mansion.biff_atlas set from storage 3ds_remake:data portrait_ghost
 data remove storage 3ds_remake:data portrait_ghost
-data modify storage 3ds_remake:data portrait_ghost set from storage 3ds_remake:data saved_state.portrait_ghosts_defeated_in.miss_petunia
+data modify storage 3ds_remake:data portrait_ghost set from storage 3ds_remake:data saved_state.portrait_ghosts_defeated_in.luigis_mansion.miss_petunia
 function 3ds_remake:other/upgrade_path/v3.0/portrait_ghost_list
-data modify storage 3ds_remake:data saved_state.portrait_ghosts_defeated_in.miss_petunia set from storage 3ds_remake:data portrait_ghost
+data modify storage 3ds_remake:data saved_state.portrait_ghosts_defeated_in.luigis_mansion.miss_petunia set from storage 3ds_remake:data portrait_ghost
 data remove storage 3ds_remake:data portrait_ghost
-data modify storage 3ds_remake:data portrait_ghost set from storage 3ds_remake:data saved_state.portrait_ghosts_defeated_in.nana
+data modify storage 3ds_remake:data portrait_ghost set from storage 3ds_remake:data saved_state.portrait_ghosts_defeated_in.luigis_mansion.nana
 function 3ds_remake:other/upgrade_path/v3.0/portrait_ghost_list
-data modify storage 3ds_remake:data saved_state.portrait_ghosts_defeated_in.nana set from storage 3ds_remake:data portrait_ghost
+data modify storage 3ds_remake:data saved_state.portrait_ghosts_defeated_in.luigis_mansion.nana set from storage 3ds_remake:data portrait_ghost
 data remove storage 3ds_remake:data portrait_ghost
-data modify storage 3ds_remake:data portrait_ghost set from storage 3ds_remake:data saved_state.portrait_ghosts_defeated_in.slim_bankshot
+data modify storage 3ds_remake:data portrait_ghost set from storage 3ds_remake:data saved_state.portrait_ghosts_defeated_in.luigis_mansion.slim_bankshot
 function 3ds_remake:other/upgrade_path/v3.0/portrait_ghost_list
-data modify storage 3ds_remake:data saved_state.portrait_ghosts_defeated_in.slim_bankshot set from storage 3ds_remake:data portrait_ghost
+data modify storage 3ds_remake:data saved_state.portrait_ghosts_defeated_in.luigis_mansion.slim_bankshot set from storage 3ds_remake:data portrait_ghost
 data remove storage 3ds_remake:data portrait_ghost
-data modify storage 3ds_remake:data portrait_ghost set from storage 3ds_remake:data saved_state.portrait_ghosts_defeated_in.henry_and_orville
+data modify storage 3ds_remake:data portrait_ghost set from storage 3ds_remake:data saved_state.portrait_ghosts_defeated_in.luigis_mansion.henry_and_orville
 function 3ds_remake:other/upgrade_path/v3.0/portrait_ghost_list
-data modify storage 3ds_remake:data saved_state.portrait_ghosts_defeated_in.henry_and_orville set from storage 3ds_remake:data portrait_ghost
+data modify storage 3ds_remake:data saved_state.portrait_ghosts_defeated_in.luigis_mansion.henry_and_orville set from storage 3ds_remake:data portrait_ghost
 data remove storage 3ds_remake:data portrait_ghost
-data modify storage 3ds_remake:data portrait_ghost set from storage 3ds_remake:data saved_state.portrait_ghosts_defeated_in.madame_clairvoya
+data modify storage 3ds_remake:data portrait_ghost set from storage 3ds_remake:data saved_state.portrait_ghosts_defeated_in.luigis_mansion.madame_clairvoya
 function 3ds_remake:other/upgrade_path/v3.0/portrait_ghost_list
-data modify storage 3ds_remake:data saved_state.portrait_ghosts_defeated_in.madame_clairvoya set from storage 3ds_remake:data portrait_ghost
+data modify storage 3ds_remake:data saved_state.portrait_ghosts_defeated_in.luigis_mansion.madame_clairvoya set from storage 3ds_remake:data portrait_ghost
 data remove storage 3ds_remake:data portrait_ghost
-data modify storage 3ds_remake:data portrait_ghost set from storage 3ds_remake:data saved_state.portrait_ghosts_defeated_in.boolossus
+data modify storage 3ds_remake:data portrait_ghost set from storage 3ds_remake:data saved_state.portrait_ghosts_defeated_in.luigis_mansion.boolossus
 function 3ds_remake:other/upgrade_path/v3.0/portrait_ghost_list
-data modify storage 3ds_remake:data saved_state.portrait_ghosts_defeated_in.boolossus set from storage 3ds_remake:data portrait_ghost
+data modify storage 3ds_remake:data saved_state.portrait_ghosts_defeated_in.luigis_mansion.boolossus set from storage 3ds_remake:data portrait_ghost
 data remove storage 3ds_remake:data portrait_ghost
-data modify storage 3ds_remake:data portrait_ghost set from storage 3ds_remake:data saved_state.portrait_ghosts_defeated_in.uncle_grimmly
+data modify storage 3ds_remake:data portrait_ghost set from storage 3ds_remake:data saved_state.portrait_ghosts_defeated_in.luigis_mansion.uncle_grimmly
 function 3ds_remake:other/upgrade_path/v3.0/portrait_ghost_list
-data modify storage 3ds_remake:data saved_state.portrait_ghosts_defeated_in.uncle_grimmly set from storage 3ds_remake:data portrait_ghost
+data modify storage 3ds_remake:data saved_state.portrait_ghosts_defeated_in.luigis_mansion.uncle_grimmly set from storage 3ds_remake:data portrait_ghost
 data remove storage 3ds_remake:data portrait_ghost
-data modify storage 3ds_remake:data portrait_ghost set from storage 3ds_remake:data saved_state.portrait_ghosts_defeated_in.clockwork_soldiers
+data modify storage 3ds_remake:data portrait_ghost set from storage 3ds_remake:data saved_state.portrait_ghosts_defeated_in.luigis_mansion.clockwork_soldiers
 function 3ds_remake:other/upgrade_path/v3.0/portrait_ghost_list
-data modify storage 3ds_remake:data saved_state.portrait_ghosts_defeated_in.clockwork_soldiers set from storage 3ds_remake:data portrait_ghost
+data modify storage 3ds_remake:data saved_state.portrait_ghosts_defeated_in.luigis_mansion.clockwork_soldiers set from storage 3ds_remake:data portrait_ghost
 data remove storage 3ds_remake:data portrait_ghost
-data modify storage 3ds_remake:data portrait_ghost set from storage 3ds_remake:data saved_state.portrait_ghosts_defeated_in.sue_pea
+data modify storage 3ds_remake:data portrait_ghost set from storage 3ds_remake:data saved_state.portrait_ghosts_defeated_in.luigis_mansion.sue_pea
 function 3ds_remake:other/upgrade_path/v3.0/portrait_ghost_list
-data modify storage 3ds_remake:data saved_state.portrait_ghosts_defeated_in.sue_pea set from storage 3ds_remake:data portrait_ghost
+data modify storage 3ds_remake:data saved_state.portrait_ghosts_defeated_in.luigis_mansion.sue_pea set from storage 3ds_remake:data portrait_ghost
 data remove storage 3ds_remake:data portrait_ghost
-data modify storage 3ds_remake:data portrait_ghost set from storage 3ds_remake:data saved_state.portrait_ghosts_defeated_in.jarvis
+data modify storage 3ds_remake:data portrait_ghost set from storage 3ds_remake:data saved_state.portrait_ghosts_defeated_in.luigis_mansion.jarvis
 function 3ds_remake:other/upgrade_path/v3.0/portrait_ghost_list
-data modify storage 3ds_remake:data saved_state.portrait_ghosts_defeated_in.jarvis set from storage 3ds_remake:data portrait_ghost
+data modify storage 3ds_remake:data saved_state.portrait_ghosts_defeated_in.luigis_mansion.jarvis set from storage 3ds_remake:data portrait_ghost
 data remove storage 3ds_remake:data portrait_ghost
-data modify storage 3ds_remake:data portrait_ghost set from storage 3ds_remake:data saved_state.portrait_ghosts_defeated_in.sir_weston
+data modify storage 3ds_remake:data portrait_ghost set from storage 3ds_remake:data saved_state.portrait_ghosts_defeated_in.luigis_mansion.sir_weston
 function 3ds_remake:other/upgrade_path/v3.0/portrait_ghost_list
-data modify storage 3ds_remake:data saved_state.portrait_ghosts_defeated_in.sir_weston set from storage 3ds_remake:data portrait_ghost
+data modify storage 3ds_remake:data saved_state.portrait_ghosts_defeated_in.luigis_mansion.sir_weston set from storage 3ds_remake:data portrait_ghost
 data remove storage 3ds_remake:data portrait_ghost
-data modify storage 3ds_remake:data portrait_ghost set from storage 3ds_remake:data saved_state.portrait_ghosts_defeated_in.vincent_van_gore
+data modify storage 3ds_remake:data portrait_ghost set from storage 3ds_remake:data saved_state.portrait_ghosts_defeated_in.luigis_mansion.vincent_van_gore
 function 3ds_remake:other/upgrade_path/v3.0/portrait_ghost_list
-data modify storage 3ds_remake:data saved_state.portrait_ghosts_defeated_in.vincent_van_gore set from storage 3ds_remake:data portrait_ghost
+data modify storage 3ds_remake:data saved_state.portrait_ghosts_defeated_in.luigis_mansion.vincent_van_gore set from storage 3ds_remake:data portrait_ghost
 data remove storage 3ds_remake:data portrait_ghost
-data modify storage 3ds_remake:data portrait_ghost set from storage 3ds_remake:data saved_state.portrait_ghosts_defeated_in.king_boo
+data modify storage 3ds_remake:data portrait_ghost set from storage 3ds_remake:data saved_state.portrait_ghosts_defeated_in.luigis_mansion.king_boo
 function 3ds_remake:other/upgrade_path/v3.0/portrait_ghost_list
-data modify storage 3ds_remake:data saved_state.portrait_ghosts_defeated_in.king_boo set from storage 3ds_remake:data portrait_ghost
+data modify storage 3ds_remake:data saved_state.portrait_ghosts_defeated_in.luigis_mansion.king_boo set from storage 3ds_remake:data portrait_ghost
 data remove storage 3ds_remake:data portrait_ghost

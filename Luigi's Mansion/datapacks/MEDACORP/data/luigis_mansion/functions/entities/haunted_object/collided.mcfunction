@@ -1,7 +1,5 @@
-execute if entity @s[scores={Owner=-2147483648..}] run scoreboard players operation #temp GhostNr = @s Owner
-execute if entity @s[tag=hit_player,scores={Owner=-2147483648..}] as @e[tag=!model_piece,tag=ghost] if score @s GhostNr = #temp GhostNr run tag @s add laugh
-execute if entity @s[tag=!hit_player,scores={Owner=-2147483648..}] as @e[tag=!model_piece,tag=ghost] if score @s GhostNr = #temp GhostNr run tag @s add complain
-scoreboard players reset #temp GhostNr
+execute if data entity @s[tag=hit_player] ArmorItems[3].tag.luigis_mansion.owner run function luigis_mansion:entities/ghost/owner_laugh with entity @s ArmorItems[3].tag.luigis_mansion
+execute if data entity @s[tag=!hit_player] ArmorItems[3].tag.luigis_mansion.owner run function luigis_mansion:entities/ghost/owner_complain with entity @s ArmorItems[3].tag.luigis_mansion
 scoreboard players set @e[tag=same_room,nbt={data:{entity:{namespace:"luigis_mansion",id:"haunted_object"}}}] WaitTime 0
 tag @s remove attack
 tag @s remove collided

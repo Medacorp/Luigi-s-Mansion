@@ -1,0 +1,2 @@
+execute if data storage luigis_mansion:data entity.animation run data modify entity @e[tag=this_entity,type=minecraft:marker,limit=1] data.animation set from storage luigis_mansion:data entity.animation
+execute if data storage luigis_mansion:data entity.animation run data modify entity @e[tag=this_entity,type=!minecraft:marker,limit=1] ArmorItems[3].tag.luigis_mansion.animation set from storage luigis_mansion:data entity.animation

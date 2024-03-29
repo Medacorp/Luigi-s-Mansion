@@ -1,2 +1,3 @@
-execute at @e[nbt={data:{entity:{namespace:"luigis_mansion",id:"mr_bones"}}},scores={Room=28},tag=dying] run summon minecraft:armor_stand ~ ~0.4 ~ {CustomName:'{"type":"translatable","translate":"luigis_mansion:entity.bone"}',NoGravity:1b,Tags:["bone","spooky_bone"],Pose:{Head:[0.0f,0.0f,0.01f]},ArmorItems:[{},{},{},{id:"minecraft:diamond_pickaxe",Count:1b,tag:{Unbreakable:1b,Damage:4,CustomModelData:6,luigis_mansion:{entity:{namespace:"luigis_mansion",id:"bone"}}}}],Invisible:1b,DisabledSlots:2039583,Small:1b}
+data modify storage luigis_mansion:data entity set value {room:28,tags:["spooky_bone"]}
+execute at @e[nbt={data:{entity:{namespace:"luigis_mansion",id:"mr_bones"}}},scores={Room=28},tag=dying] run function luigis_mansion:spawn_entities/bone
 scoreboard players set #boneyard Wave 7

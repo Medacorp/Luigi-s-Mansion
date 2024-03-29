@@ -1,0 +1,1 @@
+$function $(namespace):room/gallery/tick/$(id)

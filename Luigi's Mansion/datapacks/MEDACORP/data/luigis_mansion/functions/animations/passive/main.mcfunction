@@ -1,3 +1,4 @@
+execute store result score @s Room run data get storage luigis_mansion:data passive.room
 execute store success score #temp Time run data modify entity @s ArmorItems[3].tag.luigis_mansion.animation set from storage luigis_mansion:data passive.animation
 execute if score #temp Time matches 1 run function luigis_mansion:animations/passive/reset_pose
 scoreboard players reset #temp Time

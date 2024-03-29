@@ -1,1 +1,0 @@
-execute if data storage luigis_mansion:data current_state.current_data{drop_item_on_damage:"luigis_mansion:blue_sapphire"} run function luigis_mansion:entities/player/damage/drop_item/select/trigger {namespace:luigis_mansion,id:blue_sapphire,value:500}

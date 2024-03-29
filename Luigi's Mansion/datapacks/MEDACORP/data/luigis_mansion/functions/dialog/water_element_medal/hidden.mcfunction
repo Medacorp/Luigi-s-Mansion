@@ -1,1 +1,0 @@
-function luigis_mansion:dialog/water_element_medal/normal

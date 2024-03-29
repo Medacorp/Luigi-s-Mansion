@@ -1,1 +1,1 @@
-#execute if score #mansion_type Selected matches 2 if entity @s[scores={SelectedFrame=}] run function e3_demo:room/gallery/portrait_battle/tick/original/
+#execute if entity @s[scores={SelectedFrame=}] run function e3_demo:room/gallery/portrait_battle/tick/original/

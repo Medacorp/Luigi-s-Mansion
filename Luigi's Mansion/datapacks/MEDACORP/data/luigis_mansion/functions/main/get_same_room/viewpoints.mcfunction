@@ -1,0 +1,1 @@
+$function $(namespace):main/get_same_room/viewpoints/$(id)

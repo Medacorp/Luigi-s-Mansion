@@ -1,0 +1,1 @@
+$tag @e[tag=wind,nbt={ArmorItems:[{tag:{luigis_mansion:{owner:$(UUID)}}}]}] add this_wind

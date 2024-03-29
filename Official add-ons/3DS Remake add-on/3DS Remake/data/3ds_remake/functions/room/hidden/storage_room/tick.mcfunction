@@ -1,8 +1,8 @@
 execute unless score #storage_room Ticking matches 1 run function #3ds_remake:room/hidden/storage_room/load
-execute as @a[gamemode=!spectator,x=679,y=8,z=-70,dx=12,dy=9,dz=33] unless entity @s[scores={Room=18}] run scoreboard players operation @s LastRoom = @s Room
+execute as @a[x=679,y=8,z=-70,dx=12,dy=9,dz=33] unless entity @s[scores={Room=18}] run scoreboard players operation @s LastRoom = @s Room
 execute as @e[x=679,y=8,z=-70,dx=12,dy=9,dz=33] unless entity @s[tag=ghost,tag=vanish] run scoreboard players set @s Room 18
 
-execute as @e[scores={Room=18},type=!minecraft:marker] unless entity @s[gamemode=spectator] run scoreboard players set @s MirrorX 680
+execute as @e[scores={Room=18}] unless entity @s[type=!minecraft:armor_stand,type=!minecraft:item_frame] run scoreboard players set @s MirrorX 680
 
 execute as @a[scores={Room=18}] run function 3ds_remake:room/hidden/storage_room/tick_per_player
 
@@ -15,7 +15,7 @@ execute if block 681 13 -46 minecraft:stone_button[powered=false] run setblock 6
 execute if block 681 13 -46 minecraft:air run setblock 679 13 -46 minecraft:air
 fill 671 10 -68 679 18 -40 minecraft:barrier replace minecraft:air
 
-execute if block 689 13 -60 minecraft:stone_button[powered=true] if block 682 11 -52 minecraft:andesite_stairs unless entity @a[tag=move_wall,limit=1] if data storage luigis_mansion:data current_state.current_data.rooms.storage_room{cleared:1b} positioned 689 13 -60 run tag @p[gamemode=!spectator] add move_wall
-execute if block 681 13 -46 minecraft:stone_button[powered=true] if block 685 10 -46 minecraft:oak_slab unless entity @a[tag=release_boos,limit=1] unless entity @e[tag=!spectator,scores={Room=18},x=684.0,y=8,z=-47.0,dx=2,dy=9,dz=2,limit=1] positioned 681 13 -46 run tag @p[gamemode=!spectator] add release_boos
+execute if block 689 13 -60 minecraft:stone_button[powered=true] if block 682 11 -52 minecraft:andesite_stairs if data storage luigis_mansion:data current_state.current_data.rooms.storage_room{cleared:1b} unless data storage luigis_mansion:data current_state.current_data.technical_data{moved_wall:1b} unless data storage luigis_mansion:data dialogs[{room:18}] run data modify storage luigis_mansion:data dialogs append value {name:{namespace:"3ds_remake",id:"hidden/move_storage_room_wall"},room:18,progress:0}
+execute if block 681 13 -46 minecraft:stone_button[powered=true] if block 685 10 -46 minecraft:oak_slab unless entity @e[tag=!spectator,scores={Room=18},x=684.0,y=10,z=-47.0,dx=2,dy=8,dz=2,limit=1] if data storage luigis_mansion:data current_state.current_data.rooms.storage_room{cleared:1b} unless data storage luigis_mansion:data current_state.current_data.technical_data{released_boos:1b} unless data storage luigis_mansion:data dialogs[{room:18}] run data modify storage luigis_mansion:data dialogs append value {name:{namespace:"3ds_remake",id:"hidden/release_boos"},room:18,progress:0}
 
-execute if entity @a[gamemode=!spectator,tag=!pull_open_door,tag=!push_open_door,scores={Room=18},limit=1] run function 3ds_remake:room/hidden/storage_room/ghosts
+execute if entity @a[tag=!pause_dialog,scores={Room=18},limit=1] run function 3ds_remake:room/hidden/storage_room/ghosts

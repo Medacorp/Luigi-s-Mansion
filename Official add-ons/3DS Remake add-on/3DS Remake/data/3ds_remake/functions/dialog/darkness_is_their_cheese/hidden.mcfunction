@@ -1,1 +1,0 @@
-function luigis_mansion:dialog/darkness_is_their_cheese/normal

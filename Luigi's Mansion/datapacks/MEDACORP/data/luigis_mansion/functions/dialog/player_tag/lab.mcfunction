@@ -1,1 +1,0 @@
-execute if entity @s[tag=extra_gallery_door] run function luigis_mansion:dialog/extra_gallery_door

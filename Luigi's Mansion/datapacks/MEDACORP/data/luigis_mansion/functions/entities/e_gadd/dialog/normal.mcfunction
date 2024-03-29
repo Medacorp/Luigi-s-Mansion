@@ -1,4 +1,0 @@
-execute if score #mansion_type Selected matches 0 if entity @s[scores={Room=-1}] if entity @a[scores={Room=-1}] if data storage luigis_mansion:data current_state.current_data.technical_data{released_boos_call:1b} unless data storage luigis_mansion:data current_state.current_data.technical_data{released_boos_talk:1b} run function luigis_mansion:dialog/released_boos/talk/normal
-execute if score #mansion_type Selected matches 0 if entity @s[scores={Room=-3},tag=portrificationizing] run function luigis_mansion:dialog/portrificationizing/normal
-execute if score #mansion_type Selected matches 0 if entity @s[scores={Room=-3},tag=return_dialog] run function luigis_mansion:dialog/ghost_portrificationizer_room/normal/return
-execute if score #mansion_type Selected matches 0 if entity @s[scores={Room=-3},tag=ending_dialog] run function luigis_mansion:dialog/ghost_portrificationizer_room/normal/ending

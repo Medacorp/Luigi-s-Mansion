@@ -18,4 +18,4 @@ teleport @s[scores={AnimationProgress=7},nbt={Small:1b}] ^ ^ ^0.075 ~ ~
 teleport @s[scores={AnimationProgress=8},nbt={Small:1b}] ^ ^ ^0.05 ~ ~
 teleport @s[scores={AnimationProgress=9},nbt={Small:1b}] ^ ^ ^0.025 ~ ~
 scoreboard players set @s[scores={AnimationProgress=10..}] AnimationProgress 0
-tag @s add dark_room_head
+tag @s add scared_head

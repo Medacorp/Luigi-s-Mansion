@@ -1,0 +1,1 @@
+function luigis_mansion:selection_menu/dialog/select_branch_option with storage luigis_mansion:data selected_option

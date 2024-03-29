@@ -1,3 +1,4 @@
+execute store result score @s Room run data get storage luigis_mansion:data luigi.room
 execute if entity @s[tag=was_sneaking,tag=!was_swimming,tag=!riding_poltergust] unless entity @s[scores={AnimationProgress=1..}] unless data storage luigis_mansion:data luigi{tags:["sneaking"]} run function luigis_mansion:animations/luigi/reset_pose
 execute if entity @s[tag=was_walking,tag=!was_swimming,tag=!riding_poltergust] unless entity @s[scores={AnimationProgress=1..}] unless data storage luigis_mansion:data luigi{tags:["walking"]} run function luigis_mansion:animations/luigi/reset_pose
 execute if entity @s[tag=was_running,tag=!was_swimming,tag=!riding_poltergust] unless entity @s[scores={AnimationProgress=1..}] unless data storage luigis_mansion:data luigi{tags:["running"]} run function luigis_mansion:animations/luigi/reset_pose
@@ -13,6 +14,7 @@ execute if score #temp Time matches 1 run function luigis_mansion:animations/lui
 scoreboard players reset #temp Time
 data modify entity @s Tags append from storage luigis_mansion:data luigi.tags[]
 execute if data storage luigis_mansion:data luigi{alive:1b} run tag @s remove death_animation
+execute if data storage luigis_mansion:data luigi{alive:0b} run tag @s[tag=!revive_animation] add death_animation
 tag @s[tag=riding_poltergust] remove sneak_pos
 tag @s[tag=riding_poltergust] remove low_health
 execute unless data storage luigis_mansion:data luigi.animation{namespace:"luigis_mansion",id:"idle"} run tag @s remove sneak_pos

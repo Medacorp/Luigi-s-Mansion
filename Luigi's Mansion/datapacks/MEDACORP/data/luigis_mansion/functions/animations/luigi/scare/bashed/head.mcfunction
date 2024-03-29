@@ -88,4 +88,4 @@ execute if entity @s[scores={IdleTime=-15..-6}] if score #mirrored Selected matc
 execute if entity @s[scores={IdleTime=-5..-1}] if score #mirrored Selected matches 1 store result entity @s Pose.Head[1] float 1 run scoreboard players remove #temp Time 5
 scoreboard players reset #temp Time
 scoreboard players reset @s IdleTime
-tag @s add dark_room_head
+tag @s add scared_head

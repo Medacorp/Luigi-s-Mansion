@@ -1,2 +1,2 @@
-execute unless data storage luigis_mansion:data current_state.current_data{obtained_keys:["laundry_room"]} run data modify storage luigis_mansion:data furniture.loot set value {contents:{luigis_mansion:{key:[{door:"laundry_room",variant:0b,silent:1b,rotation:[-90.0f,90.0f]}]}}}
+execute unless data storage luigis_mansion:data current_state.current_data{obtained_keys:["laundry_room"]} run data modify storage luigis_mansion:data furniture set value {room:20,loot:{contents:{luigis_mansion:{key:[{door:"laundry_room",variant:0b,silent:1b,rotation:[-90.0f,90.0f]}]}}}}
 execute unless data storage luigis_mansion:data current_state.current_data{obtained_keys:["laundry_room"]} positioned 744 17 49 run function luigis_mansion:spawn_furniture/room_clear_loot_dropper

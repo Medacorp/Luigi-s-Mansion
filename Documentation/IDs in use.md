@@ -3,24 +3,13 @@ Mansions:
 The empty mansion is used when a mansion has been cleared, or previous save data got loaded, but the currently selected mansion had no save data before.
 
 ```
-Mansion      | Type | Index | Exterior | Add-on      | Namespace      | Data pack name
-Empty        | -1   | -1    | -1       | vanilla     | luigis_mansion | "file/MEDACORP"
-Normal       | 0    | 0     | 0        | vanilla     | luigis_mansion | "file/MEDACORP"
-(GCN) Hidden | 1    | 0     | 0        | vanilla     | luigis_mansion | "file/MEDACORP"
-(3DS) Hidden | 1    | 1     | 0        | 3ds_remake  | 3ds_remake     | "file/3DS Remake"
-Original     | 2    | 2     | 1        | e3_demo     | e3_demo        | "file/E3 Demo"
-Trill Tower  | 3    | 3     | 2        | trill_tower | trill_tower    | "file/Thrill Tower"
-```
-
-Training room programs:
-
-```
-Program          | Value | Add-on              | Namespace          | Data pack name
-Vanilla          | 0     | vanilla             | luigis_mansion     | "file/MEDACORP"
-3DS Remake       | 1     | 3ds_remake          | 3ds_remake         | "file/3DS Remake"
-Endless          | 2     | extensive_training  | extensive_training | "file/Extensive Training"
-Speedrun         | 3     | extensive_training  | extensive_training | "file/Extensive Training"
-Player VS Player | 4     | extensive_training  | extensive_training | "file/Extensive Training"
+Mansion      | ID                      | Index | Exterior | Data pack name
+Empty        | luigis_mansion:empty    | -1    | -1       | "file/MEDACORP"
+Normal       | luigis_mansion:normal   | 0     | 0        | "file/MEDACORP"
+(GCN) Hidden | luigis_mansion:hidden   | 0     | 0        | "file/MEDACORP"
+(3DS) Hidden | 3ds_remake:hidden       | 1     | 0        | "file/3DS Remake"
+Original     | e3_demo:original        | 2     | 1        | "file/E3 Demo"
+Trill Tower  | trill_tower:trill_tower | 3     | 2        | "file/Thrill Tower"
 ```
 
 Music groups:
@@ -222,19 +211,4 @@ Values | Add-on             | Namespace          | Data pack name
 6      | e3_demo            | e3_demo            | "file/E3 Demo"
 7      | trill_tower        | trill_tower        | "file/Thrill Tower"
 8      | extensive_training | extensive_training | "file/Extensive Training"
-```
-
-Amiibo selection:
-
-Value here refers to the AmiiboChoice score.
-
-```
-Value | Amiibo name | Add-on             | Namespace          | Data pack name
-1     | Toad        | 3ds_remake         | 3ds_remake         | "file/3DS Remake"
-2     | Mario       | 3ds_remake         | 3ds_remake         | "file/3DS Remake"
-3     | Boo         | 3ds_remake         | 3ds_remake         | "file/3DS Remake"
-4     | Luigi       | 3ds_remake         | 3ds_remake         | "file/3DS Remake"
-5     | E. Gadd     | e3_demo            | e3_demo            | "file/E3 Demo"
-6     | Polterpup   | trill_tower        | trill_tower        | "file/Thrill Tower"
-7     | Koopa       | extensive_training | extensive_training | "file/Extensive Training"
 ```

@@ -1,15 +1,6 @@
-execute if entity @a[limit=1,scores={GBHCall=1..}] run function luigis_mansion:items/game_boy_horror/freeze_player
-
 tag @s remove game_boy_horror_selected
 tag @s[tag=!poltergust_selected,nbt={SelectedItem:{tag:{luigis_mansion:{namespace:"luigis_mansion",id:"game_boy_horror"}}}}] add game_boy_horror_selected
 execute if entity @s[tag=game_boy_horror_selected] run function luigis_mansion:items/game_boy_horror/show_ghost_presence
-execute if entity @s[scores={GBHCall=1..},tag=game_boy_horror_selected] run function luigis_mansion:items/game_boy_horror/answer
-execute if entity @s[scores={GBHWait=1200}] run function luigis_mansion:items/game_boy_horror/answer
-execute unless entity @s[scores={GBHCall=0..}] run scoreboard players set @s GBHCall 0
-execute if entity @s[scores={GBHCall=1..,GBHWait=20}] run tellraw @a[tag=same_room] {"type":"translatable","translate":"chat.type.text","with":[{"type":"selector","selector":"@s","color":"green"},{"type":"translatable","translate":"luigis_mansion:message.player.ringing_game_boy_horror"}]}
-execute if entity @s[scores={GBHCall=1..,GBHWait=20..},tag=!looking_at_map] run function luigis_mansion:entities/player/animation/set/high_health_idle_no_sound
-execute if entity @s[scores={GBHCall=1..}] run function luigis_mansion:other/music/set/game_boy_horror_calling
-scoreboard players add @s[scores={GBHCall=1..},tag=!game_boy_horror_selected] GBHWait 1
 
 execute if entity @s[nbt={Inventory:[{tag:{luigis_mansion:{namespace:"luigis_mansion",id:"game_boy_horror"}}}]}] run function luigis_mansion:items/game_boy_horror/change_screen
 

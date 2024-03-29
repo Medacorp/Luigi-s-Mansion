@@ -3,13 +3,20 @@ Mansion data is a massive collection of info storing everything the map needs to
 ```
 {
     data_version:X, //Used by upgrade paths to convert old save-data to the newer format.
-    data_index:X, //The mansion save data index.
+    data_index:X, //The mansion save data index. Mansions with the same index share data.
+    mansion_id:{ //Used to run functions, unlike all other data, this is set every time a mansion is selected, and is as such not shared between save data index mansions.
+        namespace:"luigis_mansion", //The mansion namespace.
+        id:"normal" //The mansion ID.
+    },
     can_clear_hidden:1b, //Used by the GCN hidden mansion. It is set to 0b the moment the data had to be looked for in the mansion_data list.
     in_mansion_time:X, //How many ticks have been spent in this mansion.
     lowest_health_moment:X, //The lowest anyone's health has ever been in this mansion.
     lowest_difficulty:X, //The lowest difficulty that has ever been selected in this mansion; used for score multiplier.
-    boo_counter:X, //How many Boos are caught, to show on the boo counter and use to determine what caught Boo call variant you get.
-    drop_item_on_damage:"<namespaced item ID>", //The item type dropped on damage, and the item type looked at by the heart_money_count global variable.
+    boo_counter:X, //How many Boos are caught, to show on the boo counter and used to determine what caught Boo call variant you get.
+    drop_item_on_damage:{ //The item type dropped on damage, and the item type looked at by the heart_money_count global variable.
+        namespace:"luigis_mansion", //The item namespace.
+        id:"null" //The item ID.
+    },
     blackout:0b, //Whether the mansion is currently in the blackout.
     dead_players:[], //Player UUIDs that have died.
     ghosts_caught:[], //The mansion-local ghosts caught by player list, see save data documentation for more info.
@@ -27,7 +34,7 @@ Mansion data is a massive collection of info storing everything the map needs to
     rooms:{ //Room data.
         <name>:{ //A room.
             seen:0b, //Whether the room has been entered before. Used by the map to mark rooms light gray or hallways lime.
-            cleared:0b //Whether the room is cleared. Turns on lamps (if blackout is 0b) and colors the room on the map.
+            cleared:0b, //Whether the room is cleared. Turns on lamps (if blackout is 0b) and colors the room on the map.
             time_spend_in:X //ORIGINAL MANSION ONLY; a local timer like in_mansion_time, specific to this room. Used to determine how many coins you get from the room clear chest.
         }
     },

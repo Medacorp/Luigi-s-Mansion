@@ -9083,6 +9083,33 @@
         ],
         "subtitle": "luigis_mansion:subtitles.furniture.moving_wall"
     },
+    "furniture.painting.count": {
+        "sounds": [
+            {
+                "name": "luigis_mansion:furniture/painting/count",
+                "stream": false
+            }
+        ],
+        "subtitle": "luigis_mansion:subtitles.furniture.painting.count"
+    },
+    "furniture.painting.fall": {
+        "sounds": [
+            {
+                "name": "luigis_mansion:furniture/painting/fall",
+                "stream": false
+            }
+        ],
+        "subtitle": "luigis_mansion:subtitles.furniture.painting.fall"
+    },
+    "furniture.painting.land": {
+        "sounds": [
+            {
+                "name": "luigis_mansion:furniture/painting/land",
+                "stream": false
+            }
+        ],
+        "subtitle": "luigis_mansion:subtitles.furniture.painting.land"
+    },
     "furniture.rocking_chair.move_forward": {
         "sounds": [
             {
@@ -9779,6 +9806,33 @@
             }
         ],
         "subtitle": "luigis_mansion:subtitles.item.key.use"
+    },
+    "item.king_boos_crown.bounce": {
+        "sounds": [
+            {
+                "name": "luigis_mansion:item/gem_bounce",
+                "stream": false
+            }
+        ],
+        "subtitle": "luigis_mansion:subtitles.item.king_boos_crown.bounce"
+    },
+    "item.king_boos_crown.obtain": {
+        "sounds": [
+            {
+                "name": "luigis_mansion:item/gem_obtain",
+                "stream": false
+            }
+        ],
+        "subtitle": "luigis_mansion:subtitles.item.king_boos_crown.obtain"
+    },
+    "item.king_boos_crown.spawn": {
+        "sounds": [
+            {
+                "name": "luigis_mansion:item/spawn",
+                "stream": false
+            }
+        ],
+        "subtitle": "luigis_mansion:subtitles.item.king_boos_crown.spawn"
     },
     "item.mario_item.bounce": {
         "sounds": [
@@ -15541,6 +15595,15 @@
         "sounds": [
             {
                 "name": "luigis_mansion:music/training_results_intro",
+                "stream": true,
+                "volume": 0.00025
+            }
+        ]
+    },
+    "music.training_stop": {
+        "sounds": [
+            {
+                "name": "luigis_mansion:music/training_stop",
                 "stream": true,
                 "volume": 0.00025
             }

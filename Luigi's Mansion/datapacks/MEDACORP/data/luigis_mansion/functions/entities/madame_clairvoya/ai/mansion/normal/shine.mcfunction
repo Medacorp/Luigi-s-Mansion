@@ -11,9 +11,4 @@ execute if entity @s[scores={ActionTime=1..}] positioned ^ ^1.43 ^1.44 run parti
 tag @s[scores={ActionTime=100}] add visible
 execute if entity @s[scores={ActionTime=100}] run playsound luigis_mansion:music.solve_puzzle neutral @a[tag=same_room] ~ ~ ~ 1000
 scoreboard players set @s[scores={ActionTime=100}] ClairvoyaSpoke 0
-execute if data storage luigis_mansion:data current_state.current_data.technical_data{shown_marios_glove:1b} run scoreboard players add @s[scores={ActionTime=100}] ClairvoyaSpoke 1
-execute if data storage luigis_mansion:data current_state.current_data.technical_data{shown_marios_shoe:1b} run scoreboard players add @s[scores={ActionTime=100}] ClairvoyaSpoke 1
-execute if data storage luigis_mansion:data current_state.current_data.technical_data{shown_marios_letter:1b} run scoreboard players add @s[scores={ActionTime=100}] ClairvoyaSpoke 1
-execute if data storage luigis_mansion:data current_state.current_data.technical_data{shown_marios_star:1b} run scoreboard players add @s[scores={ActionTime=100}] ClairvoyaSpoke 1
-execute if data storage luigis_mansion:data current_state.current_data.technical_data{shown_marios_hat:1b} run scoreboard players add @s[scores={ActionTime=100}] ClairvoyaSpoke 1
 scoreboard players set @s[scores={ActionTime=100}] ActionTime 0

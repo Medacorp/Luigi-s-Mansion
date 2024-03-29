@@ -2,9 +2,11 @@ summon minecraft:armor_stand ~ ~ ~ {NoGravity:1b,Marker:0b,Invisible:1b,CustomNa
 teleport @e[tag=game_boy_horror_marker,tag=new,limit=1] ~ ~ ~ ~ ~
 scoreboard players operation #temp ID = @s ID
 execute as @e[tag=game_boy_horror_marker,tag=!new] if score @s ID = #temp ID run kill @e[tag=game_boy_horror_marker,tag=new,limit=1]
+scoreboard players operation @e[tag=game_boy_horror_marker,tag=new,limit=1] LastFloor = @s LastFloor
 scoreboard players operation @e[tag=game_boy_horror_marker,tag=new,limit=1] Room = @s Room
 scoreboard players operation @e[tag=game_boy_horror_marker,tag=new,limit=1] ID = #temp ID
-execute as @e[tag=head,tag=model_piece] if score #temp ID = @s ID run data modify entity @e[tag=game_boy_horror_marker,tag=new,limit=1] ArmorItems[3] set from entity @s ArmorItems[3]
+execute as @e[tag=head,tag=model_piece] if score #temp ID = @s ID run data modify entity @e[tag=game_boy_horror_marker,tag=new,limit=1] ArmorItems[3].tag.display.color set from entity @s ArmorItems[3].tag.display.color
+execute as @e[tag=head,tag=model_piece] if score #temp ID = @s ID run data modify entity @e[tag=game_boy_horror_marker,tag=new,limit=1] ArmorItems[3] merge from entity @s ArmorItems[3].tag.luigis_mansion.model_data.default
 scoreboard players reset #temp ID
 execute in minecraft:overworld run loot spawn 27 0 0 loot luigis_mansion:gameplay/get_player_name
 execute in minecraft:overworld run setblock 27 0 0 minecraft:oak_sign{front_text:{messages:['{"source":"entity","entity":"@e[type=minecraft:item,nbt={Item:{id:\\"minecraft:player_head\\"}},limit=1]","type":"nbt","nbt":"Item.tag.SkullOwner.Name"}','{"type":"text","text":""}','{"type":"text","text":""}','{"type":"text","text":""}']}}

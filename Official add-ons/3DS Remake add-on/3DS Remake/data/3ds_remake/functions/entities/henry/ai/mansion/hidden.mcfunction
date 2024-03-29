@@ -1,3 +1,3 @@
 execute if entity @s[tag=!appear] unless entity @s[tag=!hide_and_seek,tag=!initial_dialog] facing entity @e[tag=same_room,tag=!spectator,tag=player,sort=nearest,limit=1] feet rotated ~ 0 run teleport @s ~ ~ ~ ~ ~
-execute if entity @s[tag=!hide_and_seek,tag=!initial_dialog] run function luigis_mansion:entities/henry/mansion/ai/normal/attack
-execute if entity @s[tag=hide_and_seek] run function 3ds_remake:entities/henry/mansion/ai/hidden/hide_and_seek
+execute if entity @s[tag=!hide_and_seek,tag=!initial_dialog] run function luigis_mansion:entities/henry/ai/mansion/normal/attack
+execute if entity @s[tag=hide_and_seek] run function 3ds_remake:entities/henry/ai/mansion/hidden/hide_and_seek

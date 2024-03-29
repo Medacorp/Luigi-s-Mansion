@@ -1,0 +1,1 @@
+$tag @e[tag=car,nbt={ArmorItems:[{tag:{luigis_mansion:{owner:$(UUID)}}}]}] add this_vehicle

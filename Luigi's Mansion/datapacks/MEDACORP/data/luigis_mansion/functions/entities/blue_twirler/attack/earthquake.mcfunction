@@ -9,10 +9,10 @@ execute if entity @s[scores={ActionTime=40}] run playsound luigis_mansion:entity
 execute at @s[scores={ActionTime=41}] run particle minecraft:dust 0.7 0.7 0.7 1 ~-0.5 ~0.5 ~-0.5 1 1 1 0 50 force
 execute at @s[scores={ActionTime=41}] as @e[distance=..2,tag=game_boy_horror_location] run function luigis_mansion:entities/game_boy_horror_location/bring_player_back
 execute at @s[scores={ActionTime=41}] if entity @a[distance=..2,scores={Invulnerable=0},tag=!spectator] run tag @s add laugh
-execute at @s[scores={ActionTime=41}] run data modify storage luigis_mansion:data damage set value {method:{namespace:"luigis_mansion",id:"earthquake"},amount:0,animation:{namespace:"luigis_mansion",id:"knockback/large"},attacker:-1,no_delete:1b}
+execute at @s[scores={ActionTime=41}] run data modify storage luigis_mansion:data damage set value {method:{namespace:"luigis_mansion",id:"earthquake"},amount:0,animation:{namespace:"luigis_mansion",id:"knockback/large"},no_delete:1b}
 execute at @s[scores={ActionTime=41}] run data modify storage luigis_mansion:data damage.amount set from entity @s data.damage.attack
-execute at @s[scores={ActionTime=41}] store result storage luigis_mansion:data damage.attacker int 1 run scoreboard players get @s GhostNr
-execute at @s[scores={ActionTime=41}] as @a[distance=..2,gamemode=!spectator] run function luigis_mansion:entities/player/damage
+execute at @s[scores={ActionTime=41}] run data modify storage luigis_mansion:data damage.attacker set from entity @s UUID
+execute at @s[scores={ActionTime=41}] as @a[distance=..2,tag=!spectator] run function luigis_mansion:entities/player/damage
 execute at @s[scores={ActionTime=41}] run data remove storage luigis_mansion:data damage
 tag @s[scores={ActionTime=41},tag=!laugh] add complain
 tag @s[scores={ActionTime=60}] remove attack

@@ -1,0 +1,2 @@
+execute unless score #mirrored Selected matches 1 run function luigis_mansion:animations/boo/warp_to_player/normal/left_arm
+execute if score #mirrored Selected matches 1 run function luigis_mansion:animations/boo/warp_to_player/mirrored/left_arm

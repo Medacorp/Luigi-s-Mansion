@@ -2,6 +2,7 @@
 	"values": [
         "luigis_mansion:other/music/cannot_overwrite/non_overwritten_silence",
         "luigis_mansion:other/music/cannot_overwrite/training",
-        "luigis_mansion:other/music/cannot_overwrite/training_results"
+        "luigis_mansion:other/music/cannot_overwrite/training_results",
+        "luigis_mansion:other/music/cannot_overwrite/training_stop"
 	]
 }

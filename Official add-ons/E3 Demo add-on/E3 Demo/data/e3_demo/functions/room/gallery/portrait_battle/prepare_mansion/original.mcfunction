@@ -1,4 +1,3 @@
-scoreboard players set #mansion_type Selected 2
 function e3_demo:room/original/forceload_chunks
 function e3_demo:room/original/default_data
 scoreboard players set #mansion_data_index Selected 2

@@ -20,9 +20,9 @@ execute if entity @s[scores={ActionTime=30}] positioned ^ ^ ^0.8 run tag @a[tag=
 execute if entity @s[scores={GrabbedID=-2147483648..}] run scoreboard players operation #temp ID = @s GrabbedID
 execute if entity @s[scores={GrabbedID=-2147483648..}] as @a[tag=grabbed] if score @s ID = #temp ID run tag @s add still_grabbed
 execute if entity @s[scores={GrabbedID=-2147483648..}] if entity @a[tag=still_grabbed,limit=1] as @e[tag=chest] if score @s ID = #temp ID run tag @s add grabbed_model
-execute if entity @s[scores={ActionTime=30}] run data modify storage luigis_mansion:data damage set value {method:{namespace:"luigis_mansion",id:"bite"},amount:0,animation:{namespace:"luigis_mansion",id:"knockback/bite"},attacker:-1}
+execute if entity @s[scores={ActionTime=30}] run data modify storage luigis_mansion:data damage set value {method:{namespace:"luigis_mansion",id:"bite"},amount:0,animation:{namespace:"luigis_mansion",id:"knockback/bite"}}
 execute if entity @s[scores={ActionTime=30}] run data modify storage luigis_mansion:data damage.amount set from entity @s ArmorItems[3].tag.luigis_mansion.damage.attack
-execute if entity @s[scores={ActionTime=30}] store result storage luigis_mansion:data damage.attacker int 1 run scoreboard players get @s GhostNr
+execute if entity @s[scores={ActionTime=30}] run data modify storage luigis_mansion:data damage.attacker set from entity @s UUID
 execute if entity @s[scores={ActionTime=30}] as @a[tag=still_grabbed,limit=1] run function luigis_mansion:entities/player/damage
 execute if entity @s[scores={ActionTime=30..51,Sound=0}] run playsound luigis_mansion:entity.spooky.attack hostile @a[tag=same_room] ~ ~ ~ 1 1
 execute if entity @s[scores={ActionTime=30..51,Sound=0}] run scoreboard players set @s Sound 20

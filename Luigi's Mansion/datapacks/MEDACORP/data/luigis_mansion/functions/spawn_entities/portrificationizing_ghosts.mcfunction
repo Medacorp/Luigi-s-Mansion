@@ -1,0 +1,1 @@
+$function $(namespace):spawn_entities/portrificationizing_ghost/order/$(id)

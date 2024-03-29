@@ -1,1 +1,2 @@
-execute unless entity @a[tag=extra_gallery_door,gamemode=!spectator] run tag @a[tag=try_opening_door,limit=1,sort=nearest] add extra_gallery_door
+execute unless entity @a[tag=extra_gallery_door_menu,tag=!camera] positioned ^ ^ ^0.5 rotated ~-180 ~ align xz run teleport @a[tag=try_opening_door,limit=1,sort=nearest] ~0.5 ~ ~0.5 ~ ~
+execute unless entity @a[tag=extra_gallery_door_menu,tag=!camera] as @a[tag=try_opening_door,limit=1,sort=nearest] run function luigis_mansion:selection_menu/extra_gallery_door/original_menu

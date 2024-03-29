@@ -3,6 +3,7 @@
 	    "3ds_remake:room/hidden/storage_room/load/set_loaded",
         "3ds_remake:room/hidden/storage_room/load/move_wall",
         "3ds_remake:room/hidden/storage_room/load/open_hatch",
+        "3ds_remake:room/hidden/storage_room/load/poster",
         "3ds_remake:room/hidden/storage_room/load/lights",
         "3ds_remake:room/hidden/storage_room/load/ball_room_door",
         "3ds_remake:room/hidden/storage_room/load/metal_bucket"

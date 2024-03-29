@@ -1,6 +1,7 @@
 tag @e[scores={Room=4},tag=furniture,tag=door] add blockade
+data modify storage luigis_mansion:data entity set value {room:4}
 execute positioned 687 20 32.0 run function luigis_mansion:spawn_entities/ghost/blue_twirler
-execute unless data storage luigis_mansion:data current_state.current_data{money_spawned:["anteroom_speedy_spirit"]} run data modify storage luigis_mansion:data entity set value {loot:{name:"anteroom_speedy_spirit"},tags:["hiding_in_furniture"]}
+execute unless data storage luigis_mansion:data current_state.current_data{money_spawned:["anteroom_speedy_spirit"]} run data modify storage luigis_mansion:data entity set value {room:4,loot:{name:"anteroom_speedy_spirit"},tags:["hiding_in_furniture"]}
 execute unless data storage luigis_mansion:data current_state.current_data{money_spawned:["anteroom_speedy_spirit"]} run function luigis_mansion:entities/speedy_spirit/give_money/bills
 execute unless data storage luigis_mansion:data current_state.current_data{money_spawned:["anteroom_speedy_spirit"]} positioned 685 21 40 run function luigis_mansion:spawn_entities/ghost/speedy_spirit
 scoreboard players set #anteroom Wave 1

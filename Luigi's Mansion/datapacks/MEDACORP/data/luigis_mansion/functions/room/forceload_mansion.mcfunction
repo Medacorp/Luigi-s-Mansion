@@ -1,0 +1,1 @@
+$function $(namespace):room/$(id)/forceload_chunks

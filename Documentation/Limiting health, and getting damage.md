@@ -9,7 +9,7 @@ damage: {
 		namespace:"<namespace>", //The method namespace.
 		id:"<id>" //The method id.
 	},
-    attacker:X, //The attacker used in the death message, either a ghost number or a string to be interpreted when the death message triggers. Forgotten by the player after 10 seconds.
+    attacker:..., //The attacker used in the death message, either a UUID or a string to be interpreted when the death message triggers. Forgotten by the player after 10 seconds.
     animation:{ //The animation to use.
 		namespace:"<namespace>", //The animation namespace.
 		id:"<id>" //The animation id.

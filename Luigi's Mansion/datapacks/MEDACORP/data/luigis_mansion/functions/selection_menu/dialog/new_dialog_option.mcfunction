@@ -1,0 +1,3 @@
+$execute if data storage luigis_mansion:data selected_option{global:1b} run data modify storage luigis_mansion:data dialogs append value {progress:-1,name:$(value)}
+$execute unless data storage luigis_mansion:data selected_option{global:1b} run data modify storage luigis_mansion:data dialogs append value {progress:-1,name:$(value),room:0}
+execute unless data storage luigis_mansion:data selected_option{global:1b} store result storage luigis_mansion:data dialogs[-1].room int 1 run scoreboard players get @s Room

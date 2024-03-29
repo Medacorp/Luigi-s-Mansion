@@ -1,5 +1,5 @@
 execute unless score #nursery Ticking matches 1 run function #luigis_mansion:room/normal/nursery/load
-execute as @a[gamemode=!spectator,x=737,y=17,z=53,dx=14,dy=9,dz=20] unless entity @s[scores={Room=10}] run scoreboard players operation @s LastRoom = @s Room
+execute as @a[x=737,y=17,z=53,dx=14,dy=9,dz=20] unless entity @s[scores={Room=10}] run scoreboard players operation @s LastRoom = @s Room
 execute as @e[x=737,y=17,z=53,dx=14,dy=9,dz=20] unless entity @s[tag=ghost,tag=vanish] run scoreboard players set @s Room 10
 
 execute as @a[scores={Room=10}] run function luigis_mansion:room/normal/nursery/tick_per_player
@@ -10,4 +10,4 @@ scoreboard players reset #temp Wave
 
 function #luigis_mansion:room/normal/nursery/interactions/room
 
-execute if entity @a[gamemode=!spectator,tag=!pull_open_door,tag=!push_open_door,scores={Room=10},limit=1] run function luigis_mansion:room/normal/nursery/ghosts
+execute if entity @a[tag=!pause_dialog,scores={Room=10},limit=1] run function luigis_mansion:room/normal/nursery/ghosts

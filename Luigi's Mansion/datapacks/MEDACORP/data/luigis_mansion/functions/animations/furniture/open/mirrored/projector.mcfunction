@@ -14,7 +14,7 @@ execute if entity @s[scores={ActionTime=14}] run playsound luigis_mansion:furnit
 data modify entity @s[scores={ActionTime=2}] ArmorItems[3] merge from entity @s ArmorItems[3].tag.luigis_mansion.model_data.open
 scoreboard players set @s[scores={ActionTime=17}] ActionTime 1
 
-function #luigis_mansion:room/dark_room
+function luigis_mansion:room/dark_room
 scoreboard players set @s[tag=!dark_room] ActionTime 0
 data modify entity @s[tag=!dark_room] Pose set from entity @s ArmorItems[3].tag.luigis_mansion.default_orientation
 tag @s[tag=!dark_room] remove lit

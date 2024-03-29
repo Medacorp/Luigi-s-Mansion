@@ -1,3 +1,3 @@
-data modify storage luigis_mansion:data furniture set value {sound:{namespace:"luigis_mansion",id:"heavy_generic"},door:{model:{namespace:"luigis_mansion",id:"spade"},left_hinge:1b,push:1b,key:"secret_altar",other_end:{x:654,y:2,z:33}}}
+data modify storage luigis_mansion:data furniture set value {room:72,sound:{namespace:"luigis_mansion",id:"heavy_generic"},door:{model:{namespace:"luigis_mansion",id:"spade"},left_hinge:1b,push:1b,key:"secret_altar",other_end:{x:654,y:2,z:33}}}
 execute if data storage luigis_mansion:data current_state.current_data.rooms.secret_altar{cleared:1b} run data modify storage luigis_mansion:data furniture.door merge value {blocked:4b,go_through_command:"luigis_mansion:room/hidden/end"}
 execute positioned 653 93 33 rotated 90 0 run function luigis_mansion:spawn_furniture/door

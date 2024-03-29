@@ -1,4 +1,4 @@
-execute if score #graveyard Wave matches 3 if entity @a[gamemode=!spectator,x=651.5,y=103,z=47.5,distance=..4] run function luigis_mansion:room/normal/graveyard/wave_4
+execute if score #graveyard Wave matches 3 if entity @a[tag=!spectator,x=651.5,y=103,z=47.5,distance=..4] run function luigis_mansion:room/normal/graveyard/wave_4
 execute if score #graveyard Wave matches 3..4 run particle minecraft:dust 0.5 0.5 1 1 649 105 47 0.5 0.5 0.5 0 4
 execute if score #graveyard Wave matches 2 unless entity @e[tag=ghost,scores={Room=29},tag=!optional_ghost] run function luigis_mansion:room/normal/graveyard/wave_3
 execute if score #graveyard Wave matches 1 unless entity @e[tag=ghost,scores={Room=29},tag=!optional_ghost] run function luigis_mansion:room/normal/graveyard/wave_2

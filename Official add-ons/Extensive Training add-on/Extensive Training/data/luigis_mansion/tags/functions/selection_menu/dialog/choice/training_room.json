@@ -1,0 +1,7 @@
+{
+	"values": [
+		"extensive_training:selection_menu/dialog/choice/training_room/endless",
+		"extensive_training:selection_menu/dialog/choice/training_room/speedrun",
+		"extensive_training:selection_menu/dialog/choice/training_room/pvp"
+	]
+}

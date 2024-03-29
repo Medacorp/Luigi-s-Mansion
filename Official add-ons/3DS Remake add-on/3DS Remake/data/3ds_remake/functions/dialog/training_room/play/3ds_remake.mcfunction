@@ -1,1 +1,0 @@
-execute if entity @a[scores={TrainingRoomOption=1}] run function 3ds_remake:dialog/training_room/play

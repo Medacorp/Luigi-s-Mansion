@@ -1,2 +1,2 @@
-data modify storage luigis_mansion:data furniture set value {candle_flames:[{lit:1b}],searchable:["interact","vacuum"],shake_animation:["interact","vacuum"],sound:{namespace:"luigis_mansion",id:"heavy_generic"},scan_message:'{"type":"translatable","translate":"luigis_mansion:message.player.scan_furniture.55"}'}
+data modify storage luigis_mansion:data furniture set value {room:3,candle_flames:[{lit:1b}],searchable:["interact","vacuum"],shake_animation:["interact","vacuum"],sound:{namespace:"luigis_mansion",id:"heavy_generic"},scan_message:'{"type":"translatable","translate":"luigis_mansion:message.player.scan_furniture.55"}'}
 execute positioned 720 21 -8 rotated -90 0 run function luigis_mansion:spawn_furniture/wooden_candelabra

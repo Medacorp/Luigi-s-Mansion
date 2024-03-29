@@ -32,7 +32,3 @@ function #luigis_mansion:login_data_sync
 
 tellraw @s {"type":"translatable","translate":"chat.type.text","with":[{"type":"translatable","translate":"luigis_mansion:entity.mansion","color":"green"},{"type":"translatable","translate":"luigis_mansion:message.format_explanation.click","color":"green","clickEvent":{"action":"run_command","value":"/trigger ClickEventCheck set 1"}}]}
 tellraw @s {"type":"translatable","translate":"chat.type.text","with":[{"type":"translatable","translate":"luigis_mansion:entity.mansion","color":"green"},{"type":"translatable","translate":"luigis_mansion:message.hover_event","with":[{"type":"translatable","translate":"luigis_mansion:message.format_explanation.hover","hoverEvent":{"action":"show_text","contents":{"type":"translatable","translate":"luigis_mansion:message.format_explanation.check"}}}]}]}
-
-tellraw @s[gamemode=spectator] {"type":"translatable","translate":"chat.type.text","with":[{"type":"translatable","translate":"luigis_mansion:entity.mansion","color":"green"},{"type":"translatable","translate":"luigis_mansion:dialog.reset_mansion.1"}]}
-tellraw @s[gamemode=spectator] {"type":"translatable","translate":"luigis_mansion:dialog.reset_mansion.yes","color":"green","clickEvent":{"action":"run_command","value":"/trigger ResetChoice set 1"},"extra":[{"type":"text","text":"\n"},{"type":"translatable","translate":"luigis_mansion:dialog.reset_mansion.no","clickEvent":{"action":"run_command","value":"/trigger ResetChoice set 2"}}]}
-scoreboard players enable @s[gamemode=spectator] ResetChoice

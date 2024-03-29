@@ -8,6 +8,7 @@ execute at @e[tag=home,limit=1] run tp @s[scores={AnimationProgress=40}] ~ ~ ~ ~
 kill @e[tag=home,limit=1]
 scoreboard players set @s Sound 5
 scoreboard players set @s Invulnerable 1000
+tag @s add pause_dialog
 tag @s[scores={AnimationProgress=1}] add reset_rotation
 execute unless entity @a[tag=!spectator,distance=0.1..,limit=1] run scoreboard players set #freeze_timer Selected 1
 tag @s[scores={AnimationProgress=40}] remove reset_rotation

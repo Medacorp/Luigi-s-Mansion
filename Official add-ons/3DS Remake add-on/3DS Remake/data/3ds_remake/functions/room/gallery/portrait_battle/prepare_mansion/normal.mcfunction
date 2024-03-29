@@ -1,4 +1,3 @@
-scoreboard players set #mansion_type Selected 0
 function luigis_mansion:room/normal/forceload_chunks
 function luigis_mansion:room/normal/default_data
 scoreboard players set #mansion_data_index Selected 0

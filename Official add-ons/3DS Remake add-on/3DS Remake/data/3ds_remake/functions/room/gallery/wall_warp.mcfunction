@@ -7,8 +7,7 @@ teleport @s[scores={PositionIntZ=-41,PositionIntX=766..775,PositionIntY=2..11}] 
 teleport @s[scores={PositionIntZ=-41,PositionIntX=766..775,PositionIntY=12..26}] ~ ~ ~1
 teleport @s[scores={PositionIntZ=-41,PositionIntX=745..765}] ~ ~ ~1
 teleport @s[scores={PositionIntZ=-42}] ~ ~ ~2
-teleport @s[scores={PositionIntZ=-60}] ~ ~ ~1
-execute if score #extra_gallery Selected matches 1 run tag @s[scores={PositionIntZ=-60}] add extra_gallery_door
+execute if score #extra_gallery Selected matches 1 if entity @s[scores={PositionIntZ=-60}] run function luigis_mansion:selection_menu/extra_gallery_door/spectator_menu
 teleport @s[scores={PositionIntZ=-31,PositionIntX=747..762,PositionIntY=2..4}] ~ ~ ~1
 teleport @s[scores={PositionIntZ=-26,PositionIntX=747..762,PositionIntY=2..4}] ~ ~ ~-1
 teleport @s[scores={PositionIntZ=-23,PositionIntX=742}] ~ ~ ~-1

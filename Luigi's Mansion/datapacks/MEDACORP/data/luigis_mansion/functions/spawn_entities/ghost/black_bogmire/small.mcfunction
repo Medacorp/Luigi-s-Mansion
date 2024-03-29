@@ -19,7 +19,7 @@ data modify entity @e[tag=this_entity,limit=1] data.damage set from storage luig
 scoreboard players set @e[tag=this_entity,limit=1] Sound 0
 scoreboard players set @e[tag=this_entity,limit=1] EntitySizeWidth 10
 scoreboard players set @e[tag=this_entity,limit=1] EntitySizeHeight 18
-scoreboard players set @e[tag=this_entity,limit=1] EntityYOffset 14
+scoreboard players set @e[tag=this_entity,limit=1] EntityYOffset 9
 execute unless data storage luigis_mansion:data entity{appear_type:"none"} run tag @e[tag=this_entity,limit=1] add appear
 function luigis_mansion:spawn_entities/setup/default
 tag @e[tag=this_entity,limit=1] remove this_entity

@@ -1,3 +1,0 @@
-execute if score #mansion_type Selected matches 1 if score #mansion_data_index Selected matches 1 run scoreboard players add @s[scores={OpenMapFocus=1..}] OpenMapFocus 1
-execute if score #mansion_type Selected matches 1 if score #mansion_data_index Selected matches 1 in luigis_mansion:normal run function luigis_mansion:selection_menu/game_boy_horror/map/display/normal/warp
-execute if score #mansion_type Selected matches 1 if score #mansion_data_index Selected matches 0 in luigis_mansion:hidden run function luigis_mansion:selection_menu/game_boy_horror/map/display/hidden/warp

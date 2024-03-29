@@ -29,8 +29,8 @@ scoreboard players set @e[tag=this_entity,limit=1] VulnerableTime 0
 scoreboard players set @e[tag=this_entity,limit=1] SecondFleeDamage -1
 scoreboard players set @e[tag=this_entity,limit=1] HeartOffset -2
 scoreboard players set @e[tag=this_entity,limit=1] EntitySizeWidth 10
-scoreboard players set @e[tag=this_entity,limit=1] EntitySizeHeight 32
-scoreboard players set @e[tag=this_entity,limit=1] EntityYOffset 12
+scoreboard players set @e[tag=this_entity,limit=1] EntitySizeHeight 34
+scoreboard players set @e[tag=this_entity,limit=1] EntityYOffset 18
 function luigis_mansion:spawn_entities/setup/default
 tag @e[tag=this_entity,limit=1] remove this_entity
 data remove storage luigis_mansion:data entity

@@ -1,0 +1,1 @@
+function luigis_mansion:main/get_same_room/viewpoints/normal

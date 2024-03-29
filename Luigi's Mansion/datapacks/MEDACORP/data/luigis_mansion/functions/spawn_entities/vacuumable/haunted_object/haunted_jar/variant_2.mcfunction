@@ -16,7 +16,7 @@ execute as @e[tag=this_entity,limit=1] store result score @s HomeRotationY run d
 scoreboard players set @e[tag=this_entity,limit=1] WaitTime 0
 scoreboard players set @e[tag=this_entity,limit=1] Sound 0
 scoreboard players set @e[tag=this_entity,limit=1] EntitySizeRadius 5
-scoreboard players set @e[tag=this_entity,limit=1] EntityYOffset 7
+scoreboard players set @e[tag=this_entity,limit=1] EntityYOffset 0
 function luigis_mansion:spawn_entities/setup/default
 tag @e[tag=this_entity,limit=1] remove this_entity
 data remove storage luigis_mansion:data entity

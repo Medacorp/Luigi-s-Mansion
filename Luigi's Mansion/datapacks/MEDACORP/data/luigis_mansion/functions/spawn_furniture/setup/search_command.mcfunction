@@ -1,0 +1,1 @@
+execute if data storage luigis_mansion:data furniture.search_command run data modify entity @e[tag=this_entity,limit=1] ArmorItems[3].tag.luigis_mansion.search_command set from storage luigis_mansion:data furniture.search_command

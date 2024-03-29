@@ -1,1 +1,2 @@
+execute if data storage 3ds_remake:data {spoke_with_future_e_gadd:1b} unless entity @a[tag=gooigi,limit=1] run data modify storage luigis_mansion:data entity set value {room:-1}
 execute if data storage 3ds_remake:data {spoke_with_future_e_gadd:1b} unless entity @a[tag=gooigi,limit=1] positioned 784 77 12 rotated -60 0 run function 3ds_remake:spawn_entities/gooigi/lab

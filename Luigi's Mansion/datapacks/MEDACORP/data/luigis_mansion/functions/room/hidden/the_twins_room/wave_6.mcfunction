@@ -6,4 +6,4 @@ setblock 742 20 -19 minecraft:air
 tag @e[tag=hide_and_seek_box,scores={Room=49}] add remove_from_existence
 scoreboard players reset #the_twins_room Time
 scoreboard players set #the_twins_room Wave 6
-execute as @a[scores={Room=49},gamemode=!spectator] run function luigis_mansion:other/music/set/danger
+execute as @a[scores={Room=49}] run function luigis_mansion:other/music/set/danger

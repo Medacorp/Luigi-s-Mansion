@@ -1,3 +1,4 @@
+$function $(namespace):room/gallery/portrait_battle/return/$(id)
 tag @a remove portrait_battle
 tag @a remove portrait_ghost_spawned
 tag @a remove catching_the_portrait_ghost

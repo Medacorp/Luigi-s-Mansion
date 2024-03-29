@@ -58,4 +58,4 @@ scoreboard players reset #temp Time
 data merge entity @s[scores={AnimationProgress=100}] {Pose:{Head:[0.0f,0.0f,0.01f]}}
 data merge entity @s[scores={AnimationProgress=100},tag=flipped_gravity] {Pose:{Head:[0.0f,0.0f,-180.0f]}}
 scoreboard players set @s[scores={AnimationProgress=100..}] AnimationProgress 0
-tag @s add dark_room_head
+tag @s add scared_head

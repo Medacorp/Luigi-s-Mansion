@@ -1,5 +1,5 @@
 execute unless score #the_artists_studio Ticking matches 1 run function #3ds_remake:room/hidden/the_artists_studio/load
-execute as @a[gamemode=!spectator,x=687,y=26,z=-80,dx=16,dy=9,dz=25] unless entity @s[scores={Room=71}] run scoreboard players operation @s LastRoom = @s Room
+execute as @a[x=687,y=26,z=-80,dx=16,dy=9,dz=25] unless entity @s[scores={Room=71}] run scoreboard players operation @s LastRoom = @s Room
 execute as @e[x=687,y=26,z=-80,dx=16,dy=9,dz=25] unless entity @s[tag=ghost,tag=vanish] run scoreboard players set @s Room 71
 
 execute as @a[scores={Room=71}] run function 3ds_remake:room/hidden/the_artists_studio/tick_per_player
@@ -20,4 +20,4 @@ execute if score #freeze_timer Selected matches 1 as @a unless entity @s[scores=
 
 function #3ds_remake:room/hidden/the_artists_studio/interactions/room
 
-execute if entity @a[gamemode=!spectator,tag=!pull_open_door,tag=!push_open_door,scores={Room=71},limit=1] run function 3ds_remake:room/hidden/the_artists_studio/ghosts
+execute if entity @a[tag=!pause_dialog,scores={Room=71},limit=1] run function 3ds_remake:room/hidden/the_artists_studio/ghosts

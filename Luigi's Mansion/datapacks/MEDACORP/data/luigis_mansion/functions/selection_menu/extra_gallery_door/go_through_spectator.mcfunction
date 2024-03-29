@@ -1,0 +1,2 @@
+function luigis_mansion:selection_menu/extra_gallery_door/exit_spectator
+function luigis_mansion:selection_menu/extra_gallery_door/go_through_spectator_command with storage luigis_mansion:data selected_option

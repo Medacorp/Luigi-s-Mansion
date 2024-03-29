@@ -1,13 +1,25 @@
+data modify storage luigis_mansion:data entity set value {room:30}
 execute positioned 646 102 25 run function luigis_mansion:spawn_entities/vacuumable/pink_flying_fish
+data modify storage luigis_mansion:data entity set value {room:30}
 execute positioned 646 102 25 run function luigis_mansion:spawn_entities/vacuumable/pink_flying_fish
+data modify storage luigis_mansion:data entity set value {room:30}
 execute positioned 646 102 25 run function luigis_mansion:spawn_entities/vacuumable/pink_flying_fish
+data modify storage luigis_mansion:data entity set value {room:30}
 execute positioned 646 102 20 run function luigis_mansion:spawn_entities/vacuumable/pink_flying_fish
+data modify storage luigis_mansion:data entity set value {room:30}
 execute positioned 646 102 20 run function luigis_mansion:spawn_entities/vacuumable/pink_flying_fish
+data modify storage luigis_mansion:data entity set value {room:30}
 execute positioned 646 102 20 run function luigis_mansion:spawn_entities/vacuumable/pink_flying_fish
+data modify storage luigis_mansion:data entity set value {room:30}
 execute positioned 646 102 -15 run function luigis_mansion:spawn_entities/vacuumable/pink_flying_fish
+data modify storage luigis_mansion:data entity set value {room:30}
 execute positioned 646 102 -15 run function luigis_mansion:spawn_entities/vacuumable/pink_flying_fish
+data modify storage luigis_mansion:data entity set value {room:30}
 execute positioned 646 102 -15 run function luigis_mansion:spawn_entities/vacuumable/pink_flying_fish
+data modify storage luigis_mansion:data entity set value {room:30}
 execute positioned 645 102 -21 run function luigis_mansion:spawn_entities/vacuumable/pink_flying_fish
+data modify storage luigis_mansion:data entity set value {room:30}
 execute positioned 645 102 -21 run function luigis_mansion:spawn_entities/vacuumable/pink_flying_fish
+data modify storage luigis_mansion:data entity set value {room:30}
 execute positioned 645 102 -21 run function luigis_mansion:spawn_entities/vacuumable/pink_flying_fish
 scoreboard players set #courtyard Vacuumables 1

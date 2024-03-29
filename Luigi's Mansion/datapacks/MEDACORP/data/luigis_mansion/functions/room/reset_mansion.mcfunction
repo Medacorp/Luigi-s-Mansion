@@ -1,0 +1,1 @@
+$function $(namespace):room/$(id)/reset

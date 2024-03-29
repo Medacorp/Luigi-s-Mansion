@@ -1,1 +1,0 @@
-function luigis_mansion:dialog/lydias_child_care_diary/normal

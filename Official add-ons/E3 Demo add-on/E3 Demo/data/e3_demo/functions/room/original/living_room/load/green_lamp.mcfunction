@@ -1,2 +1,2 @@
-data modify storage luigis_mansion:data furniture set value {shake_animation:["interact","vacuum"],sound:{namespace:"luigis_mansion",id:"wood"},scan_message:'{"type":"translatable","translate":"luigis_mansion:message.player.scan_furniture.14"}'}
+data modify storage luigis_mansion:data furniture set value {room:3,shake_animation:["interact","vacuum"],sound:{namespace:"luigis_mansion",id:"wood"},scan_message:'{"type":"translatable","translate":"luigis_mansion:message.player.scan_furniture.14"}'}
 execute positioned 727 21.3 19 rotated 0 0 run function luigis_mansion:spawn_furniture/green_lamp

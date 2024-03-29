@@ -2,7 +2,34 @@ tag @s[tag=remove_from_existence,tag=cannot_be_removed] remove remove_from_exist
 
 function luigis_mansion:main/find_hitters
 
-execute if entity @s[scores={Room=-2147483648..},tag=!captured] run function luigis_mansion:main/non_players_in_room
+execute if entity @s[scores={Room=..0}] if score #mirrored Selected matches 1 run scoreboard players set #mirrored Selected 2
+execute store result score #temp Room run scoreboard players get @s Room
+execute as @e[tag=!model_piece,tag=!reflection] run function luigis_mansion:main/get_same_room
+scoreboard players reset #temp Room
+
+execute if entity @s[type=minecraft:marker] run function luigis_mansion:entities/tick with entity @s data.entity
+execute if entity @s[type=minecraft:armor_stand] run function luigis_mansion:entities/tick with entity @s ArmorItems[3].tag.luigis_mansion.entity
+scoreboard players reset #temp Move
+
+execute if entity @s[tag=applied_dialog_effects,tag=!in_dialog] run function luigis_mansion:dialog/unapply_effects
+tag @s remove in_dialog
+tag @s[scores={MirrorX=-2147483648..},tag=!no_reflection] add mirrored
+tag @s[scores={MirrorZ=-2147483648..},tag=!no_reflection] add mirrored
+execute if entity @s[tag=mirrored,tag=!hidden] unless entity @s[type=!minecraft:armor_stand,type=!minecraft:item_frame] run function luigis_mansion:entities/reflection/add
+scoreboard players reset @s[tag=!mirrored] ReflectionNr
+tag @s[tag=mirrored] remove mirrored
+scoreboard players reset @s LightX
+scoreboard players reset @s LightY
+scoreboard players reset @s LightZ
+scoreboard players reset @s[tag=!furniture] MirrorX
+scoreboard players reset @s[tag=!furniture] MirrorZ
+
+execute if entity @s[tag=!furniture,tag=debug_entity] run function luigis_mansion:main/debug
+execute if entity @s[tag=!furniture,tag=!debug_entity] if score #debug_entities Selected matches 1.. run function luigis_mansion:main/debug
+
+tag @e[tag=same_room] remove same_room
+tag @e[tag=exact_same_room] remove exact_same_room
+execute if score #mirrored Selected matches 2 run scoreboard players set #mirrored Selected 1
 
 execute if entity @s[type=minecraft:item] run function luigis_mansion:main/items
 

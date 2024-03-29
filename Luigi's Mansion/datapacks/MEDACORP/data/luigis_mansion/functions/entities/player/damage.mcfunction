@@ -5,9 +5,9 @@ execute if data storage luigis_mansion:data damage.amount run scoreboard players
 execute if data storage luigis_mansion:data damage.durning_knockback_amount store result score @s KnockbackDamage run data get storage luigis_mansion:data damage.durning_knockback_amount
 execute if data storage luigis_mansion:data damage.method if entity @s[scores={KnockbackDamage=1..,Invulnerable=0}] run data modify storage luigis_mansion:data my_memory.hurt_by.method set from storage luigis_mansion:data damage.method
 execute if data storage luigis_mansion:data damage.method if entity @s[scores={Damage=1..,Invulnerable=0}] run data modify storage luigis_mansion:data my_memory.hurt_by.method set from storage luigis_mansion:data damage.method
-execute if data storage luigis_mansion:data damage.attacker if entity @s[scores={KnockbackDamage=1..,Invulnerable=0}] run data modify storage luigis_mansion:data my_memory.hurt_by.attacker set from storage luigis_mansion:data damage.attacker
-execute if data storage luigis_mansion:data damage.attacker if entity @s[scores={Damage=1..,Invulnerable=0}] run data modify storage luigis_mansion:data my_memory.hurt_by.attacker set from storage luigis_mansion:data damage.attacker
-execute if data storage luigis_mansion:data damage.attacker run scoreboard players set @s AttackerMemory 200
+execute if data storage luigis_mansion:data damage.attacker if entity @s[scores={KnockbackDamage=1..,Invulnerable=0}] run data modify storage luigis_mansion:data new_attacker set from storage luigis_mansion:data damage.attacker
+execute if data storage luigis_mansion:data damage.attacker if entity @s[scores={Damage=1..,Invulnerable=0}] run data modify storage luigis_mansion:data new_attacker set from storage luigis_mansion:data damage.attacker
+execute if data storage luigis_mansion:data new_attacker run function luigis_mansion:entities/player/memory/refresh_attacker with storage luigis_mansion:data
 execute if data storage luigis_mansion:data damage.animation run function luigis_mansion:entities/player/damage/animation with storage luigis_mansion:data damage.animation
 scoreboard players operation @s LastHealth = @s Health
 execute if entity @s[scores={Damage=1..,Invulnerable=0},gamemode=!creative,gamemode=!spectator] run function luigis_mansion:entities/player/damage/hurt

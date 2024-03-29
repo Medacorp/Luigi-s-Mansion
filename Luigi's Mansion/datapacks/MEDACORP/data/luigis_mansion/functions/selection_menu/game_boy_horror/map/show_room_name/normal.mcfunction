@@ -1,3 +1,4 @@
+tag @s add showing_room_name
 execute if score #temp Room matches 1 run title @s title {"type":"translatable","translate":"luigis_mansion:location.foyer"}
 execute if score #temp Room matches 2 run title @s title {"type":"translatable","translate":"luigis_mansion:location.foyer"}
 execute if score #temp Room matches 3 run title @s title {"type":"translatable","translate":"luigis_mansion:location.parlor"}

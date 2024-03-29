@@ -1,0 +1,1 @@
+function luigis_mansion:spawn_entities/portrificationizing_ghost/order/normal

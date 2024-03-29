@@ -1,10 +1,4 @@
-teleport @s[tag=!stop_spinning] ~ ~ ~ ~-2 ~
-execute positioned ^ ^ ^2.5 rotated as @s run teleport @s[tag=!stop_spinning] ^ ^ ^-2.5 ~ ~
+teleport @s ~ ~ ~ ~-2 ~
+execute positioned ^ ^ ^2.5 rotated as @s run teleport @s ^ ^ ^-2.5 ~ ~
 
-execute unless entity @e[nbt={data:{entity:{namespace:"luigis_mansion",id:"boolossus"}}},tag=talk,limit=1] run tag @a remove boolossus_target
-execute unless entity @e[nbt={data:{entity:{namespace:"luigis_mansion",id:"boolossus"}}},tag=talk,limit=1] run tag @p[tag=!spectator,tag=player,distance=..2] add boolossus_target
-execute unless entity @e[nbt={data:{entity:{namespace:"luigis_mansion",id:"boolossus"}}},tag=talk,limit=1] if entity @a[tag=boolossus_target,limit=1] run tag @s add talk
-execute as @a[tag=boolossus_target] run trigger GBHChoice set 0
-
-execute if entity @s[tag=talk] run function 3ds_remake:dialog/boolossus/hidden
-execute if entity @s[tag=dialog_animation] run function 3ds_remake:entities/boolossus/ai/mansion/normal/dialog_animation
+execute if entity @s[tag=!remove_from_existence,tag=!dead] unless data storage luigis_mansion:data dialogs[{room:53}] as @a[tag=!spectator,distance=..2,limit=1] run function 3ds_remake:entities/boolossus/ai/mansion/hidden/trigger_dialog

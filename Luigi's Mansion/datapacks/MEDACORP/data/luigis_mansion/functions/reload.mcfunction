@@ -13,6 +13,6 @@ scoreboard players set @a Offline 0
 forceload add 4859 -101 4668 83
 forceload add 27 0 27 0
 forceload add 0 0
-function #luigis_mansion:mansion_forceload_chunks
+function luigis_mansion:forceload_mansion with storage luigis_mansion:data current_state.current_data.mansion_id
 
 function #luigis_mansion:upgrade_path

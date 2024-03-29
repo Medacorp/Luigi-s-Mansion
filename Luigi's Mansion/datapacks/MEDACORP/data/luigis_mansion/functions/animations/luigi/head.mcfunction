@@ -39,7 +39,6 @@ scoreboard players reset #temp Time
 
 $execute at @s run function $(namespace):animations/luigi/$(id)/head
 
-tag @s[tag=low_health] add dark_room_head
-tag @s[tag=poltergust_grabbed] add dark_room_head
+tag @s[tag=low_health] add scared_head
+tag @s[tag=poltergust_grabbed] add scared_head
 function luigis_mansion:animations/luigi/transform_head
-tag @s remove dark_room_head

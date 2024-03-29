@@ -1,0 +1,1 @@
+$tag @e[nbt={data:{entity:{namespace:"luigis_mansion",id:"bowser"}},UUID:$(owner)}] add this_body

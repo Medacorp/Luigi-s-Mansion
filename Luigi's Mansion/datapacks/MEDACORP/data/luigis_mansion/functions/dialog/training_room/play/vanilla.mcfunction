@@ -1,1 +1,0 @@
-execute if entity @a[scores={TrainingRoomOption=0}] run function luigis_mansion:dialog/training_room/play

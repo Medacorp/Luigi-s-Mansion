@@ -1,2 +1,2 @@
-data modify storage luigis_mansion:data furniture set value {searchable:["vacuum"],shake_animation:["interact","vacuum"],no_long_shake:1b,no_visual_shake:1b,sound:{namespace:"luigis_mansion",id:"generic"},scan_message:'{"type":"translatable","translate":"luigis_mansion:message.player.scan_furniture.71"}'}
+data modify storage luigis_mansion:data furniture set value {room:10,searchable:["vacuum"],shake_animation:["interact","vacuum"],no_long_shake:1b,no_visual_shake:1b,sound:{namespace:"luigis_mansion",id:"generic"},scan_message:'{"type":"translatable","translate":"luigis_mansion:message.player.scan_furniture.71"}'}
 execute positioned 748 20 70 rotated -45 0 run function luigis_mansion:spawn_furniture/rocking_horse

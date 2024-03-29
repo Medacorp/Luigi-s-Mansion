@@ -19,5 +19,6 @@ scoreboard players reset #temp Time
 scoreboard players set @s[scores={Move=..10},tag=in_fire] Move 10
 tag @s[scores={Move=..10},tag=in_water] add dead
 execute at @s[scores={Move=10},tag=!dead] run function luigis_mansion:entities/bomb/explode
-execute if entity @s[scores={Move=30,Owner=-2147483648..}] run function luigis_mansion:entities/bomb/owner_response
+execute if data entity @s[scores={Move=30},tag=hit] ArmorItems[3].tag.luigis_mansion.owner run function luigis_mansion:entities/ghost/owner_laugh with entity @s ArmorItems[3].tag.luigis_mansion
+execute if data entity @s[scores={Move=30},tag=!hit] ArmorItems[3].tag.luigis_mansion.owner run function luigis_mansion:entities/ghost/owner_complain with entity @s ArmorItems[3].tag.luigis_mansion
 tag @s[scores={Move=30}] add dead

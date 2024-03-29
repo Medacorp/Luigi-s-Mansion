@@ -1,5 +1,10 @@
-execute positioned 663 20 100 run function luigis_mansion:spawn_entities/ghost/grabbing_ghost
-execute positioned 663 20 94 run function luigis_mansion:spawn_entities/ghost/red_grabbing_ghost
-execute positioned 669 20 94 run function luigis_mansion:spawn_entities/ghost/grabbing_ghost
-execute positioned 669 20 100 run function luigis_mansion:spawn_entities/ghost/red_grabbing_ghost
+tag @e[scores={Room=45},tag=furniture,tag=door] add blockade
+data modify storage luigis_mansion:data entity set value {room:45,spawn:2b}
+execute positioned 662 20 98 run function luigis_mansion:spawn_entities/ghost/garbage_can_ghost
+data modify storage luigis_mansion:data entity set value {room:45,spawn:2b}
+execute positioned 670 20 96 run function luigis_mansion:spawn_entities/ghost/garbage_can_ghost
+data modify storage luigis_mansion:data entity set value {room:45,spawn:2b}
+execute positioned 666 20 93 run function luigis_mansion:spawn_entities/ghost/garbage_can_ghost
+data modify storage luigis_mansion:data entity set value {room:45,spawn:2b}
+execute positioned 666 20 101 run function luigis_mansion:spawn_entities/ghost/garbage_can_ghost
 scoreboard players set #astral_hall Wave 2

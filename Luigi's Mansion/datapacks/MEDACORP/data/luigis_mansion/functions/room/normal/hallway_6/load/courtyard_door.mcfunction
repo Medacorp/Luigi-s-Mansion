@@ -1,3 +1,3 @@
-data modify storage luigis_mansion:data furniture set value {sound:{namespace:"luigis_mansion",id:"heavy_generic"},door:{model:{namespace:"luigis_mansion",id:"club"},frame:{namespace:"luigis_mansion",id:"normal"},left_hinge:1b,key:"courtyard",other_end:{x:653,y:102,z:21}}}
+data modify storage luigis_mansion:data furniture set value {room:14,sound:{namespace:"luigis_mansion",id:"heavy_generic"},door:{model:{namespace:"luigis_mansion",id:"club"},frame:{namespace:"luigis_mansion",id:"normal"},left_hinge:1b,key:"courtyard",other_end:{x:653,y:102,z:21}}}
 execute unless data storage luigis_mansion:data current_state.current_data.technical_data{cleared_area_3_blockade:1b} run data modify storage luigis_mansion:data furniture.door.blocked set value 2b
 execute positioned 668 11 8 rotated -90 0 run function luigis_mansion:spawn_furniture/door

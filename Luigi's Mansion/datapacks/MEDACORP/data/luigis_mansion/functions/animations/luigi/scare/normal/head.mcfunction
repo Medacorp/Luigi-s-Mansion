@@ -1,1 +1,1 @@
-tag @s add dark_room_head
+tag @s add scared_head

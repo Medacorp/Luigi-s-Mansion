@@ -7,7 +7,7 @@ scoreboard objectives add RespawnTimer dummy
 scoreboard objectives add SelectedFrame dummy
 scoreboard objectives add StrobulbCharge dummy
 
-execute store result score #non_gooigis Totals if entity @a[gamemode=!spectator,tag=!gooigi]
+execute store result score #non_gooigis Totals if entity @a[tag=!spectator,tag=!gooigi]
 execute store result score #all_non_gooigis Totals if entity @a[tag=!gooigi]
 
 bossbar add 3ds_remake:portrait_battle {"type":"translatable","translate":"3ds_remake:message.gallery.portrait_battle.time","color":"white","with":["0","0","0"]}

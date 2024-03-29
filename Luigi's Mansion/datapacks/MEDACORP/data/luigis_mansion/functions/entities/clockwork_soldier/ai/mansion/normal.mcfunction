@@ -1,5 +1,5 @@
 execute unless entity @s[scores={WaitTime=0..}] run scoreboard players set @s WaitTime 0
-execute if entity @s[tag=!no_wind] as @e[tag=wind,scores={GhostNr=-2147483648..}] if score @s Owner = #temp GhostNr run tag @s add this_wind
+execute if entity @s[tag=!no_wind] run function luigis_mansion:entities/clockwork_soldier/ai/mansion/normal/find_wind with entity @s
 
 execute if entity @s[tag=activated,tag=!was_activated,scores={WaitTime=0}] run function luigis_mansion:entities/clockwork_soldier/ai/mansion/normal/activate
 tag @s[tag=activated,tag=!was_activated,scores={WaitTime=1}] add was_activated

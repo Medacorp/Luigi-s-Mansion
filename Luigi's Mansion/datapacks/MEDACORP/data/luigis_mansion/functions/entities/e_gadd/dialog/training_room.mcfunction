@@ -1,1 +1,0 @@
-execute if entity @s[scores={Room=-2}] if entity @a[tag=same_room,tag=!spectator] run function luigis_mansion:dialog/training_room/option
