@@ -248,7 +248,6 @@ bossbar add luigis_mansion:boo_counter {"type":"translatable","translate":"luigi
 bossbar set luigis_mansion:boo_counter color white
 
 execute unless score #loaded_exterior Selected matches -2147483648.. run scoreboard players set #loaded_exterior Selected 0
-execute unless score #mansion_data_index Selected matches -2147483648.. run scoreboard players set #mansion_data_index Selected 0
 execute unless score #mirrored Selected matches 0..1 run scoreboard players set #mirrored Selected 0
 execute unless score #can_warp Selected matches 0..1 run scoreboard players set #can_warp Selected 1
 execute unless score #can_revive Selected matches 0..1 run scoreboard players set #can_revive Selected 0

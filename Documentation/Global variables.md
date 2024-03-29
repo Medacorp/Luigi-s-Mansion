@@ -1,7 +1,6 @@
 When loading a mansion, a bunch of variables get set, all of which use the `Selected` score:
 
 * `#loaded_exterior` (int): ID of the outside of the mansion that's loaded. (For example -1 is no mansion, 0 is the mansion.)
-* `#mansion_data_index` (int): The save data ID that is used.
 * `#mirrored` (bool): Whether ghosts, furniture and players mirror all their animations.
 * `#can_revive` (bool): Whether dead players can be revived by other players.
 * `#can_warp` (bool): Whether the Game Boy Horror can warp players by scanning mirrors.

@@ -1,1 +1,0 @@
-execute store result score #mansion_data_index Selected run data get storage 3ds_remake:data loaded_mansion.settings.mansion_data_index

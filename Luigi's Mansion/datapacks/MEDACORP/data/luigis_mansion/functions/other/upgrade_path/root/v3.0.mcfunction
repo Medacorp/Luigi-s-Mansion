@@ -93,5 +93,6 @@ scoreboard objectives remove YellTime
 scoreboard players operation #heart_money_count Selected = #heart_coin_count Selected
 scoreboard players reset #heart_coin_count Selected
 scoreboard players reset #mansion_type Selected
+scoreboard players reset #mansion_data_index Selected
 scoreboard players reset #previous_mansion_index Selected
 execute unless score #loaded_exterior Selected matches -1 run function luigis_mansion:room/normal/front_door

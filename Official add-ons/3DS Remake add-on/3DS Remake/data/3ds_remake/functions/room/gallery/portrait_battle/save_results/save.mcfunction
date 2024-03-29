@@ -1,4 +1,4 @@
-function 3ds_remake:room/gallery/portrait_battle/save_results/find
+function 3ds_remake:room/gallery/portrait_battle/save_results/find with storage luigis_mansion:data current_state.current_data.mansion_id
 scoreboard players reset #temp Money
 execute store result score #temp Time run data get storage 3ds_remake:data this_portrait_ghost.health
 execute store result score #temp2 Time run data get storage luigis_mansion:data current_state.current_data.lowest_health_moment

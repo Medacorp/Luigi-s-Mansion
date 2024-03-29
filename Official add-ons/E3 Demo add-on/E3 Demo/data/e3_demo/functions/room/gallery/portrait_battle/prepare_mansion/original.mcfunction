@@ -1,6 +1,5 @@
 function e3_demo:room/original/forceload_chunks
 function e3_demo:room/original/default_data
-scoreboard players set #mansion_data_index Selected 2
 function #luigis_mansion:room/reset_variable_to_default
 scoreboard players set #changing_max_health Selected 1
 scoreboard players set #radar_type Selected 1
