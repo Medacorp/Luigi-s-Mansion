@@ -13,7 +13,7 @@ data modify storage luigis_mansion:data entity set value {room:26}
 execute positioned 708 11 -40 run function luigis_mansion:spawn_entities/eternal_banana_peel
 data modify storage luigis_mansion:data entity set value {room:26}
 execute positioned 703 11 -39 run function luigis_mansion:spawn_entities/eternal_banana_peel
-data modify storage luigis_mansion:data entity set value {room:26,mansion:{namespace:"luigis_mansion",id:"hidden"},scan_message:{sender:"me",message:'{"type":"translatable","translate":"luigis_mansion:message.mr_luggs.scan"}'}}
+data modify storage luigis_mansion:data entity set value {room:26,scan_message:{sender:"me",message:'{"type":"translatable","translate":"luigis_mansion:message.mr_luggs.scan"}'}}
 execute positioned 702 11 -28 rotated -90 0 run function luigis_mansion:spawn_entities/portrait_ghost/mr_luggs
 data modify storage luigis_mansion:data furniture set value {room:26,searchable_by:["vacuum"],tags:["mr_luggs_food"]}
 execute positioned 704 12 -28 rotated -90 0 run function luigis_mansion:spawn_furniture/food

@@ -22,15 +22,17 @@ execute if score #dialog Dialog matches 58..78 if entity @a[tag=same_room,tag=sk
 execute if score #dialog Dialog matches 80 if entity @a[tag=same_room,tag=skip_dialog,limit=1] run scoreboard players set #dialog Dialog 81
 execute if score #dialog Dialog matches 86..87 if entity @a[tag=same_room,tag=skip_dialog,limit=1] run scoreboard players set #dialog Dialog 88
 execute if score #dialog Dialog matches 82..84 if entity @a[tag=same_room,tag=skip_dialog,limit=1] run scoreboard players set #dialog Dialog 85
-execute if score #dialog Dialog matches ..87 unless score #dialog Dialog matches 3 unless score #dialog Dialog matches 11 unless score #dialog Dialog matches 37..57 unless score #dialog Dialog matches 79 unless score #dialog Dialog matches 81 unless score #dialog Dialog matches 85 unless score #dialog Dialog matches 88 as @a[tag=same_room,tag=!spectator] unless entity @s[tag=dialog_menu,tag=!dialog_choice_menu] run function luigis_mansion:selection_menu/dialog/original_menu
-execute if score #dialog Dialog matches 3 as @a[tag=same_room,tag=!spectator,tag=!dialog_choice_menu] run function luigis_mansion:selection_menu/dialog/choice/gallery
+execute if score #dialog Dialog matches ..87 unless score #dialog Dialog matches 3 unless score #dialog Dialog matches 11 unless score #dialog Dialog matches 37..57 unless score #dialog Dialog matches 59..79 unless score #dialog Dialog matches 81 unless score #dialog Dialog matches 85 unless score #dialog Dialog matches 88 as @a[tag=same_room,tag=!spectator] unless entity @s[tag=dialog_menu,tag=!dialog_choice_menu] unless entity @s[tag=using_selection_menu,tag=!dialog_menu] run function luigis_mansion:selection_menu/dialog/original_menu
+execute if score #dialog Dialog matches 3 as @a[tag=same_room,tag=!spectator,tag=!dialog_choice_menu] unless entity @s[tag=using_selection_menu,tag=!dialog_menu] run function luigis_mansion:selection_menu/dialog/choice/gallery
 execute if score #dialog Dialog matches 11 as @a[tag=same_room,tag=dialog_menu] run function luigis_mansion:selection_menu/dialog/exit
 execute if score #dialog Dialog matches 37..57 as @a[tag=same_room,tag=dialog_menu] run function luigis_mansion:selection_menu/dialog/exit
-execute if score #dialog Dialog matches 79 as @a[tag=same_room,tag=dialog_menu] run function luigis_mansion:selection_menu/dialog/exit
+execute if score #dialog Dialog matches 59..79 as @a[tag=same_room,tag=dialog_menu] run function luigis_mansion:selection_menu/dialog/exit
 execute if score #dialog Dialog matches 81 as @a[tag=same_room,tag=dialog_menu] run function luigis_mansion:selection_menu/dialog/exit
 execute if score #dialog Dialog matches 85 as @a[tag=same_room,tag=dialog_menu] run function luigis_mansion:selection_menu/dialog/exit
 execute if score #dialog Dialog matches 88 as @a[tag=same_room,tag=dialog_menu] run function luigis_mansion:selection_menu/dialog/exit
 
+scoreboard players reset @a[tag=same_room,tag=!spectator] WarpTime
+execute as @a[tag=same_room,tag=!spectator,tag=game_boy_horror_menu] run function luigis_mansion:selection_menu/game_boy_horror/exit
 tag @e[tag=e_gadd,tag=same_room,limit=1] remove freeze_animation
 execute if score #dialog Dialog matches 1 if data storage 3ds_remake:data {obtained_gameboy_horror_part:0b,shown_gameboy_horror_part:0b} run data modify storage luigis_mansion:data dialogs append value {name:{namespace:"3ds_remake",id:"gallery/not_found"},room:-4,progress:0}
 execute if score #dialog Dialog matches 1 if data storage 3ds_remake:data {obtained_gameboy_horror_part:1b,shown_gameboy_horror_part:0b} run data modify storage luigis_mansion:data dialogs append value {name:{namespace:"3ds_remake",id:"gallery/found"},room:-4,progress:0}

@@ -1,5 +1,0 @@
-execute if entity @s[scores={PortraitBattle=1}] run function 3ds_remake:room/gallery/portrait_battle/prepare
-execute if entity @s[scores={PortraitBattle=1}] run function 3ds_remake:room/gallery/portrait_battle/prepare_mansion/gcn_hidden
-execute if entity @s[scores={PortraitBattle=1}] run data modify storage 3ds_remake:data loaded_mansion.high_scores set from storage 3ds_remake:data current_state.portrait_ghosts_defeated_in.luigis_mansion.melody_pianissima[{mansion:{namespace:"luigis_mansion",id:"hidden"}}]
-execute if entity @s[scores={PortraitBattle=1}] in luigis_mansion:hidden run teleport @a 661 11 21 90 0
-execute if entity @s[scores={PortraitBattle=1}] run data modify storage luigis_mansion:data current_state.current_data.money_spawned set value ["conservatory_large_cabinet_mounted_potted_fern","conservatory_inversed_half_orb_lamp"]

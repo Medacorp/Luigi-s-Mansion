@@ -1,11 +1,12 @@
 scoreboard players add @s FurnitureShakeTime 1
-tag @s[scores={AnimationProgress=0}] remove shake
-tag @s[scores={AnimationProgress=0}] remove long_shake
-scoreboard players set @s[scores={AnimationProgress=0}] FurnitureShakeTime -1
+execute unless data entity @s ArmorItems[3].tag.luigis_mansion.animation{namespace:"luigis_mansion",id:"idle"} run tag @s[scores={AnimationProgress=0}] remove shake
+execute unless data entity @s ArmorItems[3].tag.luigis_mansion.animation{namespace:"luigis_mansion",id:"idle"} run tag @s[scores={AnimationProgress=0}] remove long_shake
+execute unless data entity @s ArmorItems[3].tag.luigis_mansion.animation{namespace:"luigis_mansion",id:"idle"} run scoreboard players set @s[scores={AnimationProgress=0}] FurnitureShakeTime -1
 execute if entity @s[tag=!long_shake,tag=!use_medium_shake,scores={Sound=0}] unless entity @s[scores={FurnitureShakeTime=-1..0}] unless entity @s[scores={FurnitureShakeTime=3}] run function luigis_mansion:entities/furniture/shake_sound with entity @s ArmorItems[3].tag.luigis_mansion.shake_sound
 execute if entity @s[tag=use_medium_shake,scores={Sound=0}] unless entity @s[scores={FurnitureShakeTime=-1..0}] unless entity @s[scores={FurnitureShakeTime=2..5}] unless entity @s[scores={FurnitureShakeTime=7..10}] unless entity @s[scores={FurnitureShakeTime=12..15}] unless entity @s[scores={FurnitureShakeTime=17..20}] run function luigis_mansion:entities/furniture/shake_sound with entity @s ArmorItems[3].tag.luigis_mansion.shake_sound
 execute if entity @s[tag=long_shake,tag=!use_medium_shake,scores={Sound=0}] unless entity @s[scores={FurnitureShakeTime=-1..0}] unless entity @s[scores={FurnitureShakeTime=2..5}] unless entity @s[scores={FurnitureShakeTime=7..10}] unless entity @s[scores={FurnitureShakeTime=12..16}] run function luigis_mansion:entities/furniture/shake_sound with entity @s ArmorItems[3].tag.luigis_mansion.shake_sound
-execute if entity @s[tag=!long_shake,tag=!use_medium_shake] unless data entity @s ArmorItems[3].tag.luigis_mansion.animation{namespace:"luigis_mansion",id:"idle"} run data modify entity @s ArmorItems[3].tag.luigis_mansion.animation set value {namespace:"luigis_mansion",id:"short_shake"}
-execute if entity @s[tag=use_medium_shake] unless data entity @s ArmorItems[3].tag.luigis_mansion.animation{namespace:"luigis_mansion",id:"idle"} run data modify entity @s ArmorItems[3].tag.luigis_mansion.animation set value {namespace:"luigis_mansion",id:"medium_shake"}
-execute if entity @s[tag=long_shake,tag=!use_medium_shake] unless data entity @s ArmorItems[3].tag.luigis_mansion.animation{namespace:"luigis_mansion",id:"idle"} run data modify entity @s ArmorItems[3].tag.luigis_mansion.animation set value {namespace:"luigis_mansion",id:"long_shake"}
+
+execute if entity @s[tag=!long_shake,tag=!use_medium_shake] if data entity @s ArmorItems[3].tag.luigis_mansion.animation{namespace:"luigis_mansion",id:"idle"} run data modify entity @s ArmorItems[3].tag.luigis_mansion.animation set value {namespace:"luigis_mansion",id:"short_shake"}
+execute if entity @s[tag=use_medium_shake] if data entity @s ArmorItems[3].tag.luigis_mansion.animation{namespace:"luigis_mansion",id:"idle"} run data modify entity @s ArmorItems[3].tag.luigis_mansion.animation set value {namespace:"luigis_mansion",id:"medium_shake"}
+execute if entity @s[tag=long_shake,tag=!use_medium_shake] if data entity @s ArmorItems[3].tag.luigis_mansion.animation{namespace:"luigis_mansion",id:"idle"} run data modify entity @s ArmorItems[3].tag.luigis_mansion.animation set value {namespace:"luigis_mansion",id:"long_shake"}
 execute unless entity @s[tag=rolling,scores={FurnitureVacuum=1..}] run tag @s add was_shaking

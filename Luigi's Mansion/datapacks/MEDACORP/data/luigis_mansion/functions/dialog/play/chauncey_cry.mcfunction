@@ -1,5 +1,7 @@
 scoreboard players add #dialog Dialog 1
 
+scoreboard players reset @a[tag=same_room,tag=!spectator] WarpTime
+execute as @a[tag=same_room,tag=!spectator,tag=game_boy_horror_menu] run function luigis_mansion:selection_menu/game_boy_horror/exit
 tag @e[tag=mouse,tag=same_room,limit=1] remove freeze_animation
 tag @e[tag=mouse,tag=same_room,limit=1] remove no_ai
 execute if score #dialog Dialog matches 1..140 as @a[tag=same_room] run function luigis_mansion:entities/player/animation/set/idle

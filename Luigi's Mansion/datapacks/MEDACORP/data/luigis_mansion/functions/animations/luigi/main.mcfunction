@@ -1,4 +1,9 @@
 execute store result score @s Room run data get storage luigis_mansion:data luigi.room
+execute if data storage luigis_mansion:data luigi.mirror.x store result score @s MirrorX run data get storage luigis_mansion:data luigi.mirror.x
+execute if data storage luigis_mansion:data luigi.mirror.z store result score @s MirrorZ run data get storage luigis_mansion:data luigi.mirror.z
+#to remove
+execute if data data storage luigis_mansion:data luigi.mirror{mirror_set_by_furniture_entity:1b} run tag @s add mirror_set_by_furniture_entity
+#/to remove
 execute if entity @s[tag=was_sneaking,tag=!was_swimming,tag=!riding_poltergust] unless entity @s[scores={AnimationProgress=1..}] unless data storage luigis_mansion:data luigi{tags:["sneaking"]} run function luigis_mansion:animations/luigi/reset_pose
 execute if entity @s[tag=was_walking,tag=!was_swimming,tag=!riding_poltergust] unless entity @s[scores={AnimationProgress=1..}] unless data storage luigis_mansion:data luigi{tags:["walking"]} run function luigis_mansion:animations/luigi/reset_pose
 execute if entity @s[tag=was_running,tag=!was_swimming,tag=!riding_poltergust] unless entity @s[scores={AnimationProgress=1..}] unless data storage luigis_mansion:data luigi{tags:["running"]} run function luigis_mansion:animations/luigi/reset_pose

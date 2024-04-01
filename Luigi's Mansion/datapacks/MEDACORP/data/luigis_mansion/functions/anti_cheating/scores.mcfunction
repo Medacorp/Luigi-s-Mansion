@@ -8,7 +8,6 @@ scoreboard objectives add Boos dummy
 scoreboard objectives add BooTimer dummy
 scoreboard objectives add ChangedMansion dummy
 scoreboard objectives add ClearInventory dummy
-scoreboard objectives add ClickEventCheck trigger
 scoreboard objectives add Constants dummy
 scoreboard objectives add CreditsTime dummy
 scoreboard objectives add Damage dummy

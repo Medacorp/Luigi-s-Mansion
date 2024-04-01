@@ -26,16 +26,10 @@ Mansion data is a massive collection of info storing everything the map needs to
     obtained_keys:[], //List of door names of keys that have been collected.
     obtained_items:{}, //Flags of specific items that have been collected, where absent = not. (Mario items, boo radar, element medals)
     money_spawned:[], //List of loot names of loot that has been spawned before. Also contains entries for room clear chests opened, and "_money" entries for collecting any eternal coin in a room.
-    tracking_boos:[], //3DS REMAKE ADD-ON ONLY; a list of at most 3 Boo IDs to show on the map. Added when spawned, removed when captured.
-    gooigi_stats:{//3DS REMAKE ADD-ON ONLY; Gooigi's money and ghost count.
-        ghosts:X, //How many ghosts Gooigi has defeated.
-        money:X //How many Gs worth of money Gooigi has collected, excluding the last 3 0s.
-    }, 
     rooms:{ //Room data.
         <name>:{ //A room.
             seen:0b, //Whether the room has been entered before. Used by the map to mark rooms light gray or hallways lime.
-            cleared:0b, //Whether the room is cleared. Turns on lamps (if blackout is 0b) and colors the room on the map.
-            time_spend_in:X //ORIGINAL MANSION ONLY; a local timer like in_mansion_time, specific to this room. Used to determine how many coins you get from the room clear chest.
+            cleared:0b //Whether the room is cleared. Turns on lamps (if blackout is 0b) and colors the room on the map.
         }
     },
     portrait_ghosts:{ //Portrait ghost data.
@@ -135,6 +129,49 @@ Mansion data is a massive collection of info storing everything the map needs to
             big_damage:{ //Damage values the big ones use in its functions.
                 collision:X //The amount of damage dealt. Default = 0.
             }
+        }
+    }
+}
+```
+
+3DS Remake exclusive data:
+```
+{
+    tracking_boos:[ //A list of at most 3 Boo IDs to show on the map. Added when spawned, removed when captured.
+        { //A tracked boo.
+            namespace:"luigis_mansion", //The namespace of the boo.
+            id:"boo_b_hatch" //The ID of the boo.
+        }
+    ],
+    gooigi_stats:{//Gooigi's money and ghost count.
+        ghosts:X, //How many ghosts Gooigi has defeated.
+        money:X //How many Gs worth of money Gooigi has collected, excluding the last 3 0s.
+    },
+    portrait_battle:{//What portrait battle is currently active.
+        namespace:"luigis_mansion", //The namespace of the portrait ghost.
+        id:"neville", //The id of the portrait ghost.
+        mode:'JSON', //String to use for the "mode" line after the battle.
+        position:{ //Position to return to when the battle ends.
+            dimension:"minecraft:overworld", //The dimension.
+            x:X, //The integer X coordinate.
+            y:X, //The integer Y coordinate.
+            z:X //The integer Z coordinate.
+            x_rotation:X //The X rotation.
+            x_rotation:Y //The Y rotation.
+        },
+        portraits: { //Portrait item data of the selected portrait. Used to show unlocked frames.
+            ...
+        }
+    }
+}
+```
+
+E3 Demo exclusive data:
+```
+{
+    rooms:{ //Room data.
+        <name>:{ //A room.
+            time_spend_in:X //A local timer like in_mansion_time, specific to this room. Used to determine how many coins you get from the room clear chest.
         }
     }
 }

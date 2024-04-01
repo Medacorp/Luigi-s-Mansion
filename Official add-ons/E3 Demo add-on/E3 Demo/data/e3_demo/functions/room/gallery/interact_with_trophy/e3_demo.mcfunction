@@ -1,1 +1,0 @@
-execute if entity @s[scores={FrameChoice=6}] run function e3_demo:room/gallery/interact_with_trophy/tasks

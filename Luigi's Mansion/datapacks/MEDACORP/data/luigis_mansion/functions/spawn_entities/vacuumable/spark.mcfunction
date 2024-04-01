@@ -9,6 +9,7 @@ data modify entity @e[tag=this_entity,limit=1] data.loot set from storage luigis
 data modify entity @e[tag=this_entity,limit=1] data.damage set from storage luigis_mansion:data current_state.current_data.ghosts.luigis_mansion.spark.damage
 scoreboard players set @e[tag=this_entity,limit=1] EntitySizeRadius 4
 scoreboard players set @e[tag=this_entity,limit=1] EntityYOffset 14
+scoreboard players set @e[tag=this_entity,limit=1] ActionTime 0
 function luigis_mansion:spawn_entities/setup/default
 tag @e[tag=this_entity,limit=1] remove this_entity
 data remove storage luigis_mansion:data entity

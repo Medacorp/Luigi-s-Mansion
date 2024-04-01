@@ -1,10 +1,6 @@
-scoreboard objectives add AmiiboChoice trigger
 scoreboard objectives add FollowID dummy
-scoreboard objectives add FrameChoice trigger
 scoreboard objectives add Glowing dummy
-scoreboard objectives add PortraitBattle trigger
 scoreboard objectives add RespawnTimer dummy
-scoreboard objectives add SelectedFrame dummy
 scoreboard objectives add StrobulbCharge dummy
 
 execute store result score #non_gooigis Totals if entity @a[tag=!spectator,tag=!gooigi]

@@ -1,3 +1,3 @@
 execute if data storage luigis_mansion:data current_state.current_data{can_clear_hidden:1b} run advancement grant @a only luigis_mansion:vanilla/cleared_hidden_mansion
 execute if data storage luigis_mansion:data current_state.current_data{can_clear_hidden:1b,lowest_difficulty:3} run advancement grant @a only luigis_mansion:vanilla/extremist
-function 3ds_remake:room/gallery/clear_task/hard/task_5
+function 3ds_remake:selection_menu/gallery_trophy/complete/hard/task_5

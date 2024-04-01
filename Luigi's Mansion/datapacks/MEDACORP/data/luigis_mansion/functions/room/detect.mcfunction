@@ -9,6 +9,6 @@ execute if entity @a[distance=0..,scores={PositionIntX=764..779,PositionIntY=74.
 execute if score #ghost_portrificationizer_room Ticking matches 1 unless entity @a[distance=0..,scores={PositionIntX=764..779,PositionIntY=74..84,PositionIntZ=-15..25}] unless entity @a[scores={Room=-3}] run function luigis_mansion:room/ghost_portrificationizer_room/not_ticking
 execute if entity @a[distance=0..,scores={PositionIntX=727..779,PositionIntY=74..87,PositionIntZ=-42..-15}] run function luigis_mansion:room/gallery/tick
 execute if score #gallery Ticking matches 1 unless entity @a[distance=0..,scores={PositionIntX=727..779,PositionIntY=74..87,PositionIntZ=-42..-15}] unless entity @a[scores={Room=-4}] run function luigis_mansion:room/gallery/not_ticking
-function #luigis_mansion:room/extra_detect
+function #luigis_mansion:extra_detect
 scoreboard players reset #temp Room
 execute if data storage luigis_mansion:data {found_e_gadd:1b} if entity @a[scores={Room=1..},tag=!spectator] run function luigis_mansion:room/update_stats

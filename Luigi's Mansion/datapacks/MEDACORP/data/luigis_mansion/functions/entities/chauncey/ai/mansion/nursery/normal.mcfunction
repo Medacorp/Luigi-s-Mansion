@@ -16,7 +16,7 @@ execute if entity @s[scores={Dialog=30},tag=scream_wake] run playsound luigis_ma
 data modify entity @s[scores={Dialog=51}] ArmorItems[3].tag.luigis_mansion.scan_message set value {sender:"me",message:'{"type":"translatable","translate":"luigis_mansion:message.chauncey.scan.2"}'}
 teleport @s[scores={Dialog=51}] 748 21 70
 execute if entity @s[scores={Dialog=51}] unless data storage luigis_mansion:data current_state.current_data.technical_data{chauncey_spoke:1b} run data modify storage luigis_mansion:data dialogs append value {name:{namespace:"luigis_mansion",id:"chauncey_lets_play"},progress:0}
-execute if entity @s[scores={Dialog=51}] unless data storage luigis_mansion:data current_state.current_data.technical_data{chauncey_spoke:1b} store result storage luigis_mansion:data dialogs[-1].room int 1 run data get entity @s Room
+execute if entity @s[scores={Dialog=51}] unless data storage luigis_mansion:data current_state.current_data.technical_data{chauncey_spoke:1b} store result storage luigis_mansion:data dialogs[-1].room int 1 run scoreboard players get @s Room
 execute if entity @s[scores={Dialog=51}] run tag @e[tag=exact_same_room,tag=furniture,tag=door] add blockade
 data modify entity @s[scores={Dialog=51}] data.animation set value {namespace:"luigis_mansion",id:"yawn"}
 execute if entity @s[scores={Dialog=52..},tag=!attack,tag=!vanish] facing entity @e[tag=same_room,tag=!spectator,tag=player,sort=nearest,limit=1] feet rotated ~ 0 run teleport @s ~ ~ ~ ~ ~
@@ -39,5 +39,5 @@ tag @s[scores={Dialog=132}] remove attack
 tag @s[scores={Dialog=132}] remove laugh
 tag @s[scores={Dialog=132..}] remove complain
 execute if entity @s[scores={Dialog=132}] run data modify storage luigis_mansion:data dialogs append value {name:{namespace:"luigis_mansion",id:"chauncey"},progress:0}
-execute if entity @s[scores={Dialog=132}] store result storage luigis_mansion:data dialogs[-1].room int 1 run data get entity @s Room
+execute if entity @s[scores={Dialog=132}] store result storage luigis_mansion:data dialogs[-1].room int 1 run scoreboard players get @s Room
 scoreboard players add @s[scores={Dialog=132}] Dialog 1

@@ -5,9 +5,11 @@ scoreboard players reset #temp ID
 execute if score #dialog Dialog matches 21..29 if entity @a[tag=same_room,tag=next_dialog_line,limit=1] run scoreboard players add #dialog Dialog 1
 execute if score #dialog Dialog matches ..20 run scoreboard players add #dialog Dialog 1
 execute if score #dialog Dialog matches ..29 if entity @a[tag=same_room,tag=skip_dialog,limit=1] run scoreboard players set #dialog Dialog 30
-execute if score #dialog Dialog matches 21..29 as @a[tag=same_room,tag=!spectator] unless entity @s[tag=dialog_menu,tag=!dialog_choice_menu] run function luigis_mansion:selection_menu/dialog/original_menu
+execute if score #dialog Dialog matches 21..29 as @a[tag=same_room,tag=!spectator] unless entity @s[tag=dialog_menu,tag=!dialog_choice_menu] unless entity @s[tag=using_selection_menu,tag=!dialog_menu] run function luigis_mansion:selection_menu/dialog/original_menu
 execute if score #dialog Dialog matches 30.. as @a[tag=same_room,tag=dialog_menu] run function luigis_mansion:selection_menu/dialog/exit
 
+scoreboard players reset @a[tag=same_room,tag=!spectator] WarpTime
+execute as @a[tag=same_room,tag=!spectator,tag=game_boy_horror_menu] run function luigis_mansion:selection_menu/game_boy_horror/exit
 execute if score #dialog Dialog matches 1..29 as @a[tag=same_room,tag=!spectator,tag=!phone_caller] run function luigis_mansion:entities/player/animation/set/idle
 execute if score #dialog Dialog matches 1..29 as @a[tag=same_room,tag=!spectator,tag=phone_caller] run function luigis_mansion:entities/player/animation/set/answer_phone
 execute if score #dialog Dialog matches 20 run tellraw @a[tag=same_room] {"type":"translatable","translate":"chat.type.text","with":[{"type":"translatable","translate":"luigis_mansion:entity.unknown","color":"green"},{"type":"translatable","translate":"luigis_mansion:dialog.uncle_grimmly.1"}]}

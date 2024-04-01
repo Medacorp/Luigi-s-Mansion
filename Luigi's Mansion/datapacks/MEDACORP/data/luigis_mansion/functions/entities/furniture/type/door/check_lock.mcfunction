@@ -1,3 +1,3 @@
 $execute unless data storage luigis_mansion:data current_state.current_data{obtained_keys:[$(key)]} unless data storage luigis_mansion:data current_state.current_data{used_keys:[$(key)]} run tag @s add locked
 $execute if data storage luigis_mansion:data current_state.current_data{obtained_keys:[$(key)]} unless data storage luigis_mansion:data current_state.current_data{used_keys:[$(key)]} run tag @s add unlock
-execute if entity @s[tag=!locked,tag=!unlock] run data remove entity @s ArmorItems[3].tag.key
+execute if entity @s[tag=!locked,tag=!unlock] run data remove entity @s ArmorItems[3].tag.luigis_mansion.key

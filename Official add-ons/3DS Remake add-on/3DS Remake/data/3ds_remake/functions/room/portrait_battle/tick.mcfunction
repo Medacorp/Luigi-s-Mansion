@@ -1,0 +1,1 @@
+$function $(namespace):room/portrait_battle/tick/$(id)

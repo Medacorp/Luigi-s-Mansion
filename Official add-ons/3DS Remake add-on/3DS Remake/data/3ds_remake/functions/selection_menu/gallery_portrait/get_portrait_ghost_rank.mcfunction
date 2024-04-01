@@ -1,0 +1,1 @@
+$return run data get storage $(namespace):data current_state.portrait_ghost_ranks.$(id)

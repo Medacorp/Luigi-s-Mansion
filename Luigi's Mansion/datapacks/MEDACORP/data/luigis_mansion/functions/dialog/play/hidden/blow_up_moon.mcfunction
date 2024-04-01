@@ -1,4 +1,7 @@
 scoreboard players add #dialog Dialog 1
+
+scoreboard players reset @a[tag=same_room,tag=!spectator] WarpTime
+execute as @a[tag=same_room,tag=!spectator,tag=game_boy_horror_menu] run function luigis_mansion:selection_menu/game_boy_horror/exit
 execute if score #dialog Dialog matches 1 run setblock 629 20 109 minecraft:magma_block
 execute if score #dialog Dialog matches 1 run setblock 629 21 108 minecraft:magma_block
 execute if score #dialog Dialog matches 1 run setblock 628 20 108 minecraft:magma_block

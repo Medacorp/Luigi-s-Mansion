@@ -1,0 +1,2 @@
+$execute if data storage luigis_mansion:data current_state.current_data{no_collect_animation:["$(namespace):$(id)"]} run tag @s remove no_ai
+$execute if data storage luigis_mansion:data current_state.current_data{no_collect_animation:["$(namespace):$(id)"]} run tag @s remove freeze_animation

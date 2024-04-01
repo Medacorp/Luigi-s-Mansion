@@ -1,9 +1,11 @@
 execute store result score #temp ID run data get storage luigis_mansion:data dialogs[0].walking_player
 execute as @a[tag=same_room] if score @s ID = #temp ID run tag @s add walking_player
 scoreboard players reset #temp ID
-
-tag @e[tag=same_room,limit=1] remove freeze_animation
 scoreboard players add #dialog Dialog 1
+
+scoreboard players reset @a[tag=same_room,tag=!spectator] WarpTime
+execute as @a[tag=same_room,tag=!spectator,tag=game_boy_horror_menu] run function luigis_mansion:selection_menu/game_boy_horror/exit
+tag @e[tag=same_room,tag=!no_ai_dialog] remove freeze_animation
 execute if entity @e[tag=ghost,tag=same_room] as @a[tag=same_room] unless entity @s[scores={IdleTime=18}] run scoreboard players set @s IdleTime 18
 execute if score #dialog Dialog matches ..72 run scoreboard players set @a[tag=walking_player,limit=1,scores={IdleTime=19}] IdleTime 18
 scoreboard players set @e[tag=ghost,tag=same_room] Sound -1
@@ -83,7 +85,7 @@ execute if score #dialog Dialog matches 72 run teleport @a[tag=same_room] 725.5 
 execute if score #dialog Dialog matches 72 run teleport @e[tag=ghost,tag=same_room,limit=1] 725 20 34.9 -180 0
 execute if score #dialog Dialog matches 72 as @a[tag=same_room] at @e[tag=ghost,tag=same_room,limit=1] run function luigis_mansion:entities/player/animation/set/scare/bash
 execute if score #dialog Dialog matches 72 run tag @a[tag=walking_player,limit=1] add bash_no_move
-execute if score #dialog Dialog matches 72..190 run scoreboard players set @a[tag=same_room,scores={AnimationProgress=31..}] AnimationProgress 30
+execute if score #dialog Dialog matches 72..190 run scoreboard players set @a[tag=same_room,scores={AnimationProgress=30..}] AnimationProgress 29
 execute if score #dialog Dialog matches 92 run data modify entity @e[tag=ghost,tag=same_room,limit=1] data.animation set value {namespace:"luigis_mansion",id:"haunt"}
 execute if score #dialog Dialog matches 92..149 as @a[tag=walking_player,limit=1] at @e[tag=ghost,tag=same_room,limit=1] positioned ^ ^ ^3.5 rotated ~-180 ~ run function luigis_mansion:entities/player/animation/scare/bash_force_move
 execute if score #dialog Dialog matches 92..149 as @e[tag=ghost,tag=same_room,limit=1] at @s run teleport @s ^ ^ ^0.11 ~ ~

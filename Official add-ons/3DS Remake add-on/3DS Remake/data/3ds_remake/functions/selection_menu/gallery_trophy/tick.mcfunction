@@ -1,0 +1,1 @@
+execute if entity @s[tag=gallery_trophy_menu] run function 3ds_remake:selection_menu/gallery_trophy/tick_process

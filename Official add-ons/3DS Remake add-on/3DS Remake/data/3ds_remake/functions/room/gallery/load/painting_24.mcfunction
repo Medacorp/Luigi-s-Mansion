@@ -1,2 +1,0 @@
-summon minecraft:item_frame 766 3 -47 {Facing:5b,Silent:1b,Invulnerable:1b,Item:{id:"minecraft:painting",Count:1b,tag:{CustomModelData:189}},CustomName:'{"type":"translatable","translate":"luigis_mansion:furniture.painting"}',Invisible:1b,Fixed:1b}
-function #3ds_remake:room/gallery/load_small_ghost_painting

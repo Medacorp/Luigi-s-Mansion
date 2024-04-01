@@ -1,4 +1,7 @@
 scoreboard players add #dialog Dialog 1
+
+scoreboard players reset @a[tag=same_room,tag=!spectator] WarpTime
+execute as @a[tag=same_room,tag=!spectator,tag=game_boy_horror_menu] run function luigis_mansion:selection_menu/game_boy_horror/exit
 execute if score #dialog Dialog matches 1..120 as @a[tag=same_room,tag=!spectator] run function luigis_mansion:entities/player/animation/set/high_health_idle_no_sound
 execute if score #dialog Dialog matches 1 run tag @e[tag=light_me,tag=same_room] add lit
 execute if score #dialog Dialog matches 2 run stopsound @a[tag=same_room] music

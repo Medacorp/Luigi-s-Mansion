@@ -3,4 +3,4 @@ execute if score #temp Searched matches 1 run data modify storage luigis_mansion
 execute if score #temp Searched matches 1 run function luigis_mansion:spawn_entities/item/key {door:"hallway_8"}
 execute unless score #temp Searched matches 1 run tag @e[tag=selected] add nothing
 scoreboard players reset #temp Searched
-function 3ds_remake:room/gallery/clear_task/normal/task_5
+function 3ds_remake:selection_menu/gallery_trophy/complete/normal/task_5

@@ -1,4 +1,4 @@
-summon minecraft:marker ~ ~ ~ {CustomName:'{"type":"translatable","translate":"luigis_mansion:entity.boo"}',Tags:["hidden_boo","this_entity"],data:{entity:{namespace:"luigis_mansion",id:"hidden_boo"},boo:{namespace:"luigis_mansion",id:"null"},mansion:{namespace:"luigis_mansion",id:"empty"}}}
+summon minecraft:marker ~ ~ ~ {CustomName:'{"type":"translatable","translate":"luigis_mansion:entity.boo"}',Tags:["hidden_boo","this_entity"],data:{entity:{namespace:"luigis_mansion",id:"hidden_boo"},boo:{namespace:"luigis_mansion",id:"null"}}}
 execute as @e[tag=this_entity,limit=1] store result score @s HomeX run data get entity @s Pos[0] 100
 execute as @e[tag=this_entity,limit=1] store result score @s HomeY run data get entity @s Pos[1] 100
 execute as @e[tag=this_entity,limit=1] store result score @s HomeZ run data get entity @s Pos[2] 100

@@ -204,3 +204,7 @@ data modify storage 3ds_remake:data portrait_ghost set from storage 3ds_remake:d
 function 3ds_remake:other/upgrade_path/v3.0/portrait_ghost_list
 data modify storage 3ds_remake:data saved_state.portrait_ghosts_defeated_in.luigis_mansion.king_boo set from storage 3ds_remake:data portrait_ghost
 data remove storage 3ds_remake:data portrait_ghost
+scoreboard objectives remove AmiiboChoice
+scoreboard objectives remove FrameChoice
+scoreboard objectives remove PortraitBattle
+scoreboard objectives remove SelectedFrame

@@ -11,7 +11,7 @@ execute if entity @s[scores={Dialog=220..329}] unless score #mirrored Selected m
 execute if entity @s[scores={Dialog=220..329}] if score #mirrored Selected matches 1 as @a[tag=same_room,scores={AnimationProgress=31}] at @s positioned ^ ^ ^1 unless entity @e[tag=me,distance=..3,limit=1] positioned ^ ^ ^1 unless entity @e[tag=me,distance=..3,limit=1] positioned ^ ^ ^1 unless entity @e[tag=me,distance=..3,limit=1] positioned ^ ^ ^1 unless entity @e[tag=me,distance=..3,limit=1] positioned ^ ^ ^1 unless entity @e[tag=me,distance=..3,limit=1] positioned ^ ^ ^1 unless entity @e[tag=me,distance=..3,limit=1] positioned ^ ^ ^1 unless entity @e[tag=me,distance=..3,limit=1] at @s rotated ~-5 0 positioned ^ ^ ^-0.1 run function luigis_mansion:entities/player/animation/scare/bash_force_move
 execute if entity @s[scores={Dialog=220..329}] as @a[tag=same_room,scores={AnimationProgress=31},distance=..9] at @s positioned ^ ^ ^5 if entity @e[tag=me,distance=..5,limit=1] at @s facing entity @e[tag=me,limit=1] feet rotated ~ 0 positioned ^ ^ ^-0.1 run function luigis_mansion:entities/player/animation/scare/bash_force_move
 tag @s remove me
-execute if entity @s[scores={Dialog=220..329}] run scoreboard players set @a[tag=same_room,limit=1,scores={AnimationProgress=31..}] AnimationProgress 30
+execute if entity @s[scores={Dialog=220..329}] run scoreboard players set @a[tag=same_room,limit=1,scores={AnimationProgress=30..}] AnimationProgress 29
 teleport @s[scores={Dialog=220}] ~ 37 ~
 data modify entity @s[scores={Dialog=220}] data.animation set value {namespace:"luigis_mansion",id:"roar"}
 data modify entity @s[scores={Dialog=290}] data.animation set value {namespace:"luigis_mansion",id:"attach_head"}

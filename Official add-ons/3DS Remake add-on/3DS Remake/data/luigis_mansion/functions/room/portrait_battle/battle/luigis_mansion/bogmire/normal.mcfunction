@@ -1,0 +1,1 @@
+execute in luigis_mansion:normal run teleport @a 812 18 2.0 90 0

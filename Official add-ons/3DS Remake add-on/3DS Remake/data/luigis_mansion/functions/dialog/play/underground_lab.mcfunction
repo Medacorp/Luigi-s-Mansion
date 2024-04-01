@@ -6,7 +6,7 @@ execute if score #dialog Dialog matches 138 if entity @a[tag=same_room,tag=next_
 execute if score #dialog Dialog matches 117..136 if entity @a[tag=same_room,tag=next_dialog_line,limit=1] run scoreboard players set #dialog Dialog 137
 execute if score #dialog Dialog matches 116..135 run scoreboard players add #dialog Dialog 1
 execute if score #dialog Dialog matches 114 if entity @a[tag=same_room,tag=next_dialog_line,limit=1] run scoreboard players set #dialog Dialog 92
-execute if score #dialog Dialog matches 93..114 run scoreboard players add #dialog Dialog 1
+execute if score #dialog Dialog matches 93..113 run scoreboard players add #dialog Dialog 1
 execute if score #dialog Dialog matches 92 if entity @a[tag=same_room,tag=select_dialog_branch_no,limit=1] run scoreboard players set #dialog Dialog 114
 execute if score #dialog Dialog matches 92 if entity @a[tag=same_room,tag=select_dialog_branch_yes,limit=1] run scoreboard players set #dialog Dialog 93
 execute if score #dialog Dialog matches 72..91 if entity @a[tag=same_room,tag=next_dialog_line,limit=1] run scoreboard players set #dialog Dialog 92
@@ -41,10 +41,10 @@ execute if score #dialog Dialog matches 27..47 if entity @a[tag=same_room,tag=sk
 execute if score #dialog Dialog matches 5..25 if entity @a[tag=same_room,tag=skip_dialog,limit=1] run scoreboard players set #dialog Dialog 26
 execute if score #dialog Dialog matches 3 if entity @a[tag=same_room,tag=skip_dialog,limit=1] run scoreboard players set #dialog Dialog 4
 execute if score #dialog Dialog matches ..2 if entity @a[tag=same_room,tag=skip_dialog,limit=1] run scoreboard players set #dialog Dialog 3
-execute if score #dialog Dialog matches ..147 unless score #dialog Dialog matches 3..4 unless score #dialog Dialog matches 26 unless score #dialog Dialog matches 48 unless score #dialog Dialog matches 70 unless score #dialog Dialog matches 92..113 unless score #dialog Dialog matches 115 unless score #dialog Dialog matches 137 unless score #dialog Dialog matches 139 unless score #dialog Dialog matches 141 unless score #dialog Dialog matches 143 unless score #dialog Dialog matches 145 as @a[tag=same_room,tag=!spectator] unless entity @s[tag=dialog_menu,tag=!dialog_choice_menu] run function luigis_mansion:selection_menu/dialog/original_menu
-execute if score #dialog Dialog matches 3 as @a[tag=same_room,tag=!spectator,tag=!dialog_choice_menu] run function luigis_mansion:selection_menu/dialog/choice/underground_lab
-execute if score #dialog Dialog matches 92 as @a[tag=same_room,tag=!spectator,tag=!dialog_choice_menu] run function luigis_mansion:selection_menu/dialog/choice/underground_lab_load_data
-execute if score #dialog Dialog matches 145 as @a[tag=same_room,tag=!spectator,tag=!dialog_choice_menu] run function 3ds_remake:selection_menu/dialog/choice/amiibo
+execute if score #dialog Dialog matches ..147 unless score #dialog Dialog matches 3..4 unless score #dialog Dialog matches 26 unless score #dialog Dialog matches 48 unless score #dialog Dialog matches 70 unless score #dialog Dialog matches 92..113 unless score #dialog Dialog matches 115 unless score #dialog Dialog matches 137 unless score #dialog Dialog matches 139 unless score #dialog Dialog matches 141 unless score #dialog Dialog matches 143 unless score #dialog Dialog matches 145 as @a[tag=same_room,tag=!spectator] unless entity @s[tag=dialog_menu,tag=!dialog_choice_menu] unless entity @s[tag=using_selection_menu,tag=!dialog_menu] run function luigis_mansion:selection_menu/dialog/original_menu
+execute if score #dialog Dialog matches 3 as @a[tag=same_room,tag=!spectator,tag=!dialog_choice_menu] unless entity @s[tag=using_selection_menu,tag=!dialog_menu] run function luigis_mansion:selection_menu/dialog/choice/underground_lab
+execute if score #dialog Dialog matches 92 as @a[tag=same_room,tag=!spectator,tag=!dialog_choice_menu] unless entity @s[tag=using_selection_menu,tag=!dialog_menu] run function luigis_mansion:selection_menu/dialog/choice/underground_lab_load_data
+execute if score #dialog Dialog matches 145 as @a[tag=same_room,tag=!spectator,tag=!dialog_choice_menu] unless entity @s[tag=using_selection_menu,tag=!dialog_menu] run function 3ds_remake:selection_menu/dialog/choice/amiibo
 execute if score #dialog Dialog matches 4 as @a[tag=same_room,tag=dialog_menu] run function luigis_mansion:selection_menu/dialog/exit
 execute if score #dialog Dialog matches 26 as @a[tag=same_room,tag=dialog_menu] run function luigis_mansion:selection_menu/dialog/exit
 execute if score #dialog Dialog matches 48 as @a[tag=same_room,tag=dialog_menu] run function luigis_mansion:selection_menu/dialog/exit
@@ -57,6 +57,8 @@ execute if score #dialog Dialog matches 141 as @a[tag=same_room,tag=dialog_menu]
 execute if score #dialog Dialog matches 143 as @a[tag=same_room,tag=dialog_menu] run function luigis_mansion:selection_menu/dialog/exit
 execute if score #dialog Dialog matches 148.. as @a[tag=same_room,tag=dialog_menu] run function luigis_mansion:selection_menu/dialog/exit
 
+scoreboard players reset @a[tag=same_room,tag=!spectator] WarpTime
+execute as @a[tag=same_room,tag=!spectator,tag=game_boy_horror_menu] run function luigis_mansion:selection_menu/game_boy_horror/exit
 tag @e[tag=e_gadd,tag=same_room,limit=1] remove freeze_animation
 tag @e[tag=gooigi,tag=same_room,limit=1] remove freeze_animation
 execute if score #dialog Dialog matches 1 as @e[tag=e_gadd,tag=same_room,limit=1] at @s facing entity @a[tag=same_room,tag=!spectator,sort=nearest,limit=1] feet rotated ~ 0 run teleport @s ~ ~ ~ ~ ~
@@ -119,7 +121,7 @@ execute if score #dialog Dialog matches 92 as @a[tag=same_room,tag=!spectator] r
 
 #Branch: Load Data; Branch: Yes
 execute if score #dialog Dialog matches 93 as @a[tag=same_room,tag=!spectator] run function luigis_mansion:entities/player/animation/set/nod
-execute if score #dialog Dialog matches 93 run function luigis_mansion:data/load
+execute if score #dialog Dialog matches 93 as @a[tag=select_dialog_branch_yes,limit=1] run function luigis_mansion:data/load
 execute if score #dialog Dialog matches 113 run scoreboard players set #dialog Dialog -1
 
 #Branch: Load Data; Branch: No
@@ -142,7 +144,7 @@ execute if score #dialog Dialog matches 137 run scoreboard players set #dialog D
 
 #Branch: Use Gooigi
 execute if score #dialog Dialog matches 138 if entity @a[tag=select_dialog_branch_use_gooigi,limit=1] run stopsound @a[tag=same_room] neutral luigis_mansion:entity.e_gadd.talk.luigi
-execute if score #dialog Dialog matches 138 if score #players Totals matches 1 run run scoreboard players set #dialog Dialog 140
+execute if score #dialog Dialog matches 138 if score #players Totals matches 1 run scoreboard players set #dialog Dialog 140
 execute if score #dialog Dialog matches 138 if entity @a[tag=select_dialog_branch_use_gooigi,limit=1] run tellraw @a[tag=same_room] {"type":"translatable","translate":"chat.type.text","with":[{"type":"translatable","translate":"luigis_mansion:entity.e_gadd","color":"green"},{"type":"translatable","translate":"3ds_remake:dialog.underground_lab.use_gooigi.1"}]}
 execute if score #dialog Dialog matches 138 if entity @a[tag=select_dialog_branch_use_gooigi,limit=1] run playsound luigis_mansion:entity.e_gadd.talk.tatta_tatta neutral @a[tag=same_room] ~ ~ ~ 1
 execute if score #dialog Dialog matches 138 if entity @a[tag=select_dialog_branch_use_gooigi,limit=1] run tag @e[tag=gooigi,limit=1] add remove_from_existence
@@ -161,19 +163,19 @@ execute if score #dialog Dialog matches 142 if entity @a[tag=select_dialog_branc
 execute if score #dialog Dialog matches 142 if entity @a[tag=select_dialog_branch_leave_gooigi,limit=1] run tellraw @a[tag=same_room] {"type":"translatable","translate":"chat.type.text","with":[{"type":"translatable","translate":"luigis_mansion:entity.e_gadd","color":"green"},{"type":"translatable","translate":"3ds_remake:dialog.underground_lab.leave_gooigi.1"}]}
 execute if score #dialog Dialog matches 142 if entity @a[tag=select_dialog_branch_leave_gooigi,limit=1] run playsound luigis_mansion:entity.e_gadd.talk.seedapee_ohyah neutral @a[tag=same_room] ~ ~ ~ 1
 execute if score #dialog Dialog matches 142 if entity @a[tag=select_dialog_branch_leave_gooigi,limit=1] as @a[tag=gooigi,limit=1] run function 3ds_remake:entities/player/un_gooigi
-execute if score #dialog Dialog matches 142 if entity @a[tag=select_dialog_branch_leave_gooigi,limit=1] run data modify storage luigis_mansion:data entity {room:-1,tags:["spawn_animation"]}
+execute if score #dialog Dialog matches 142 if entity @a[tag=select_dialog_branch_leave_gooigi,limit=1] run data modify storage luigis_mansion:data entity set value {room:-1,tags:["spawn_animation"]}
 execute if score #dialog Dialog matches 142 if entity @a[tag=select_dialog_branch_leave_gooigi,limit=1] positioned 784 77 12 run function 3ds_remake:spawn_entities/gooigi/lab
 
 execute if score #dialog Dialog matches 143 run scoreboard players set #dialog Dialog -1
 
 #Branch: Change Amiibo
 execute if score #dialog Dialog matches 144 if entity @a[tag=select_dialog_branch_change_amiibo,limit=1] run stopsound @a[tag=same_room] neutral luigis_mansion:entity.e_gadd.talk.luigi
-execute if score #dialog Dialog matches 144 if entity @a[tag=same_room,advancements={3ds_remake:3ds_remake/amiibo=false}] run run scoreboard players set #dialog Dialog 147
+execute if score #dialog Dialog matches 144 if entity @a[tag=same_room,advancements={3ds_remake:3ds_remake/amiibo=false}] run scoreboard players set #dialog Dialog 147
 execute if score #dialog Dialog matches 144 if score #players Totals matches 1 if entity @a[tag=select_dialog_branch_change_amiibo,limit=1] run tellraw @a[tag=same_room] {"type":"translatable","translate":"chat.type.text","with":[{"type":"translatable","translate":"luigis_mansion:entity.e_gadd","color":"green"},{"type":"translatable","translate":"3ds_remake:dialog.underground_lab.change_amiibo.1"}]}
 execute if score #dialog Dialog matches 144 if score #players Totals matches 2.. if entity @a[tag=select_dialog_branch_change_amiibo,limit=1] run tellraw @a[tag=same_room] {"type":"translatable","translate":"chat.type.text","with":[{"type":"translatable","translate":"luigis_mansion:entity.e_gadd","color":"green"},{"type":"translatable","translate":"3ds_remake:dialog.underground_lab.change_amiibo.1.more"}]}
 execute if score #dialog Dialog matches 144 if entity @a[tag=select_dialog_branch_change_amiibo,limit=1] run playsound luigis_mansion:entity.e_gadd.talk.odoh_pahn_pahn neutral @a[tag=same_room] ~ ~ ~ 1
 
-execute if score #dialog Dialog matches 145 as @a[tag=same_room,tag=!spectator,tag=!looking_at_map] run function luigis_mansion:entities/player/animation/set/think
+execute if score #dialog Dialog matches 145 as @a[tag=same_room,tag=!spectator] run function luigis_mansion:entities/player/animation/set/think
 
 execute if score #dialog Dialog matches 146 run scoreboard players set #dialog Dialog 115
 

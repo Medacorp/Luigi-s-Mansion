@@ -1,0 +1,6 @@
+{
+	"parent": "luigis_mansion:furniture/gallery_portrait/king_boo_frame",
+	"textures": {
+		"frame": "luigis_mansion:furniture/gallery_portrait/bronze_king_boo_frame"
+	}
+}

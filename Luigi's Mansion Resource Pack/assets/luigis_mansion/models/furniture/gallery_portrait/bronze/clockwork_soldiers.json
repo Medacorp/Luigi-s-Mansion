@@ -1,0 +1,6 @@
+{
+	"parent": "luigis_mansion:furniture/gallery_portrait/bronze",
+	"textures": {
+		"image": "luigis_mansion:furniture/gallery_portrait/bronze/clockwork_soldiers"
+	}
+}

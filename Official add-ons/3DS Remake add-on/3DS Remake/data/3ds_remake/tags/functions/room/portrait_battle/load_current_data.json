@@ -1,0 +1,14 @@
+{
+	"values": [
+	    "3ds_remake:room/portrait_battle/load_current_data/can_revive",
+	    "3ds_remake:room/portrait_battle/load_current_data/can_warp",
+	    "3ds_remake:room/portrait_battle/load_current_data/changing_max_health",
+	    "3ds_remake:room/portrait_battle/load_current_data/gbh_clock",
+	    "3ds_remake:room/portrait_battle/load_current_data/gbh_clock_increase",
+	    "3ds_remake:room/portrait_battle/load_current_data/heart_money_count",
+	    "3ds_remake:room/portrait_battle/load_current_data/mirrored",
+	    "3ds_remake:room/portrait_battle/load_current_data/multiply_damage",
+	    "3ds_remake:room/portrait_battle/load_current_data/multiply_hurt",
+	    "3ds_remake:room/portrait_battle/load_current_data/radar_type"
+	]
+}

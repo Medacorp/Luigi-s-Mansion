@@ -1,0 +1,2 @@
+execute in luigis_mansion:normal run teleport @a 658 20 -4 -180 0
+data modify storage luigis_mansion:data current_state.current_data.money_spawned set value ["nanas_room_stacked_drawer_cabinet","nanas_room_tulip_chandelier","nanas_room_speedy_spirit"]

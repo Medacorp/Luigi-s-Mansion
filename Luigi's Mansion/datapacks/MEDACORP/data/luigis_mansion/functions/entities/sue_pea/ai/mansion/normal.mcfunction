@@ -8,7 +8,7 @@ scoreboard players add @s[scores={Dialog=1}] Dialog 1
 execute if entity @e[tag=same_room,tag=!spectator,tag=player,limit=1] unless entity @s[scores={Dialog=1..}] run scoreboard players add @s Dialog 1
 execute if data storage luigis_mansion:data current_state.current_data.technical_data{sue_pea_spoke:1b} run scoreboard players set @s[scores={Dialog=1}] Dialog 2
 execute if entity @s[scores={Dialog=1}] run data modify storage luigis_mansion:data dialogs append value {name:{namespace:"luigis_mansion",id:"sue_pea"},progress:0}
-execute if entity @s[scores={Dialog=1}] store result storage luigis_mansion:data dialogs[-1].room int 1 run data get entity @s Room
+execute if entity @s[scores={Dialog=1}] store result storage luigis_mansion:data dialogs[-1].room int 1 run scoreboard players get @s Room
 tag @s[scores={Dialog=2..124}] remove visible
 execute if entity @s[scores={Dialog=2..124}] at @e[tag=same_room,tag=!spectator,tag=player] positioned ^ ^ ^8 run tag @s[distance=..8] add visible
 execute if entity @s[scores={Dialog=3}] run playsound luigis_mansion:entity.sue_pea.complain hostile @a[tag=same_room] ~ ~ ~ 1000

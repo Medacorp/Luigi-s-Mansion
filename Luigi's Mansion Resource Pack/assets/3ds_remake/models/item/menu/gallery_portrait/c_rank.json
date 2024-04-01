@@ -1,0 +1,6 @@
+{
+    "parent": "luigis_mansion:item/menu",
+    "textures": {
+        "layer0": "3ds_remake:item/menu/gallery_portrait/c_rank"
+    }
+}

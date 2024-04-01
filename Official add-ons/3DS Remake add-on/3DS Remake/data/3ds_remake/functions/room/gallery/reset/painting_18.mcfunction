@@ -1,1 +1,0 @@
-data merge entity @e[x=745.5,y=19,z=-32.5,type=minecraft:item_frame,distance=..0.7,limit=1] {Item:{id:"minecraft:painting",Count:1b,tag:{CustomModelData:81}}}

@@ -1,6 +1,8 @@
 scoreboard players add #dialog Dialog 1
 execute if score #dialog Dialog matches ..331 if entity @a[tag=same_room,tag=skip_dialog,limit=1] run scoreboard players set #dialog Dialog 332
 
+scoreboard players reset @a[tag=same_room,tag=!spectator] WarpTime
+execute as @a[tag=same_room,tag=!spectator,tag=game_boy_horror_menu] run function luigis_mansion:selection_menu/game_boy_horror/exit
 tag @e[nbt={data:{entity:{namespace:"luigis_mansion",id:"vincent_van_gore"}}},tag=same_room,limit=1] remove freeze_animation
 tag @e[nbt={data:{entity:{namespace:"luigis_mansion",id:"vincent_van_gore"}}},tag=same_room,limit=1] add visible
 execute if score #dialog Dialog matches 1..331 as @a[tag=same_room] run function luigis_mansion:other/music/set/talking_ghost

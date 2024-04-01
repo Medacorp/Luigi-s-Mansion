@@ -1,2 +1,2 @@
 advancement grant @a only e3_demo:e3_demo/clear_original_mansion
-execute if data storage luigis_mansion:data current_state.current_data{lowest_health_moment:100} if data storage e3_demo:data current_state.trophy{task_3:0b} run function e3_demo:room/gallery/clear_task/task_3
+execute if data storage luigis_mansion:data current_state.current_data{lowest_health_moment:100} if data storage e3_demo:data current_state.trophy{task_3:0b} run function e3_demo:selection_menu/gallery_trophy/complete/task_3

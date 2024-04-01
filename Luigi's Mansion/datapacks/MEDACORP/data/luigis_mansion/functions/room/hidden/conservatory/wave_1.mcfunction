@@ -1,3 +1,3 @@
-data modify storage luigis_mansion:data entity set value {room:25,mansion:{namespace:"luigis_mansion",id:"hidden"},scan_message:{sender:"me",message:'{"type":"translatable","translate":"luigis_mansion:message.melody_pianissima.scan.1"}',plural_message:'{"type":"translatable","translate":"luigis_mansion:message.melody_pianissima.scan.1.more"}'}}
+data modify storage luigis_mansion:data entity set value {room:25,scan_message:{sender:"me",message:'{"type":"translatable","translate":"luigis_mansion:message.melody_pianissima.scan.1"}',plural_message:'{"type":"translatable","translate":"luigis_mansion:message.melody_pianissima.scan.1.more"}'}}
 execute positioned 660.2 10.5 38.8 rotated 135 0 run function luigis_mansion:spawn_entities/portrait_ghost/melody_pianissima
 scoreboard players set #conservatory Wave 1

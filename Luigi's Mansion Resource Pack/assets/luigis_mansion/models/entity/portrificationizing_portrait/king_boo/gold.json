@@ -1,0 +1,6 @@
+{
+	"parent": "luigis_mansion:entity/portrificationizing_portrait/gold",
+	"textures": {
+		"image": "luigis_mansion:furniture/gallery_portrait/gold/king_boo"
+	}
+}

@@ -4,11 +4,13 @@ execute if score #dialog Dialog matches 2..5 if entity @a[tag=same_room,tag=next
 execute if score #dialog Dialog matches ..1 run scoreboard players add #dialog Dialog 1
 execute if score #dialog Dialog matches ..5 if entity @a[tag=same_room,tag=skip_dialog,limit=1] run scoreboard players set #dialog Dialog 6
 execute if score #dialog Dialog matches 7 if entity @a[tag=same_room,tag=skip_dialog,limit=1] run scoreboard players set #dialog Dialog 8
-execute if score #dialog Dialog matches ..6 as @a[tag=same_room,tag=!spectator] unless entity @s[tag=dialog_menu,tag=!dialog_choice_menu] run function luigis_mansion:selection_menu/dialog/original_menu
-execute if score #dialog Dialog matches 7 as @a[tag=same_room,tag=!spectator,tag=!dialog_choice_menu] run function luigis_mansion:selection_menu/dialog/choice/save
+execute if score #dialog Dialog matches ..6 as @a[tag=same_room,tag=!spectator] unless entity @s[tag=dialog_menu,tag=!dialog_choice_menu] unless entity @s[tag=using_selection_menu,tag=!dialog_menu] run function luigis_mansion:selection_menu/dialog/original_menu
+execute if score #dialog Dialog matches 7 as @a[tag=same_room,tag=!spectator,tag=!dialog_choice_menu] unless entity @s[tag=using_selection_menu,tag=!dialog_menu] run function luigis_mansion:selection_menu/dialog/choice/save
 execute if score #dialog Dialog matches 8.. as @a[tag=same_room,tag=dialog_menu] run function luigis_mansion:selection_menu/dialog/exit
 
-execute if score #dialog Dialog matches 1..5 scoreboard players set @a[tag=same_room] ForceScreen 1
+scoreboard players reset @a[tag=same_room,tag=!spectator] WarpTime
+execute as @a[tag=same_room,tag=!spectator,tag=game_boy_horror_menu] run function luigis_mansion:selection_menu/game_boy_horror/exit
+execute if score #dialog Dialog matches 1..5 run scoreboard players set @a[tag=same_room] ForceScreen 1
 execute if score #dialog Dialog matches 1..5 as @a[tag=same_room,tag=!spectator] run function luigis_mansion:entities/player/animation/set/game_boy_horror
 execute if score #dialog Dialog matches 1..5 as @a[tag=same_room] run function 3ds_remake:other/music/set/future_e_gadd
 execute if score #dialog Dialog matches 1 if score #players Totals matches 1 run tellraw @a[tag=same_room] {"type":"translatable","translate":"chat.type.text","with":[{"type":"translatable","translate":"3ds_remake:entity.future_e_gadd","color":"green"},{"type":"translatable","translate":"3ds_remake:dialog.gooigi_results.1","with":[{"type":"selector","selector":"@a[tag=!spectator]"}]}]}

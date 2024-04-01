@@ -1,5 +1,0 @@
-execute if entity @s[scores={PortraitBattle=0}] run function 3ds_remake:room/gallery/portrait_battle/prepare
-execute if entity @s[scores={PortraitBattle=0}] run function 3ds_remake:room/gallery/portrait_battle/prepare_mansion/normal
-execute if entity @s[scores={PortraitBattle=0}] run data modify storage 3ds_remake:data loaded_mansion.high_scores set from storage 3ds_remake:data current_state.portrait_ghosts_defeated_in.luigis_mansion.henry_and_orville[{mansion:{namespace:"luigis_mansion",id:"normal"}}]
-execute if entity @s[scores={PortraitBattle=0}] in luigis_mansion:normal run teleport @a 739 20 44 -90 0
-execute if entity @s[scores={PortraitBattle=0}] run data modify storage luigis_mansion:data current_state.current_data.money_spawned set value ["the_twins_room_star_lamp","the_twins_room_speedy_spirit","the_twins_room_cabinet_mounted_globe"]

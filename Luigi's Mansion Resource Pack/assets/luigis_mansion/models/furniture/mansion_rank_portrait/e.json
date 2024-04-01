@@ -1,0 +1,6 @@
+{
+	"parent": "luigis_mansion:furniture/mansion_rank_portrait",
+	"textures": {
+		"image": "luigis_mansion:furniture/mansion_rank_portrait/e"
+	}
+}

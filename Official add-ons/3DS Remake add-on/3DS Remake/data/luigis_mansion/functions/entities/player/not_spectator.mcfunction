@@ -36,13 +36,13 @@ scoreboard players reset @s[scores={MaxHealthTime=200}] MaxHealthTime
 
 execute if entity @s[tag=!spectator,tag=!gooigi] run function luigis_mansion:entities/player/idle
 execute if entity @s[scores={AnimationProgress=1..},tag=idle,tag=!gooigi] unless entity @s[scores={Walk=0,Run=0,Sneak=0,Jump=0},tag=!sneak_pos,tag=!spectator] run function luigis_mansion:entities/player/animation/set/none
-execute if entity @s[scores={AnimationProgress=1..},tag=!idle,tag=!animation_may_move,tag=!looking_at_map,tag=!gooigi] run function luigis_mansion:entities/player/animation/freeze_player
+execute if entity @s[scores={AnimationProgress=1..},tag=!idle,tag=!animation_may_move,tag=!using_selection_menu,tag=!gooigi] run function luigis_mansion:entities/player/animation/freeze_player
 
 execute if entity @s[tag=gooigi,tag=!dead_player] run function 3ds_remake:entities/player/gooigi
 
 execute at @s[scores={LightX=-2147483648..}] unless entity @s[scores={Shrunk=1..}] run function luigis_mansion:other/cast_shadow/2_tall
 execute at @s[scores={LightX=-2147483648..,Shrunk=1..}] run function luigis_mansion:other/cast_shadow/1_tall
-tag @s[tag=!death_animation,tag=!revive_animation,tag=!revived_by_polterpup] remove spectator
+tag @s[tag=!death_animation,tag=!revive_animation,tag=!dead_player,tag=!revived_by_polterpup] remove spectator
 
 effect give @s minecraft:invisibility infinite 0 true
 execute store result storage luigis_mansion:data macro.id int 1 run scoreboard players get @s ID

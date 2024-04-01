@@ -1,6 +1,0 @@
-{
-	"parent": "3ds_remake:entity/painting/gold_boss",
-	"textures": {
-		"image": "3ds_remake:block/painting/gold/boolossus"
-	}
-}

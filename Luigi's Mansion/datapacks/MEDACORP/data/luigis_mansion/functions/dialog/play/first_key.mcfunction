@@ -3,8 +3,9 @@ execute if score #dialog Dialog matches 0 if entity @a[tag=same_room,tag=!specta
 
 execute if score #dialog Dialog matches 0 run tag @e[tag=furniture,tag=same_room,tag=no_ai_dialog] remove no_ai
 execute if score #dialog Dialog matches 0 run tag @e[tag=furniture,tag=same_room,tag=freeze_animation_dialog] remove freeze_animation
-#execute if score #dialog Dialog matches 0 if entity @e[tag=furniture,tag=same_room] run say hi
 execute if score #dialog Dialog matches 1 run tag @e[tag=furniture,tag=same_room] remove applied_dialog_effects
+execute if score #dialog Dialog matches 1.. run scoreboard players reset @a[tag=same_room,tag=!spectator] WarpTime
+execute if score #dialog Dialog matches 1.. as @a[tag=same_room,tag=!spectator,tag=game_boy_horror_menu] run function luigis_mansion:selection_menu/game_boy_horror/exit
 execute if score #dialog Dialog matches 1.. run tag @e[tag=candle_flame,tag=same_room] remove no_ai
 execute if score #dialog Dialog matches 1 run summon minecraft:armor_stand 751.0 13 9.0 {CustomName:'{"type":"translatable","translate":"luigis_mansion:entity.gold_ghost"}',Tags:["first_key","same_room"],ArmorItems:[{},{},{},{id:"minecraft:brick",Count:1b,tag:{CustomModelData:1}}],NoGravity:1b,Invulnerable:1b,Silent:1b,Invisible:1b,DisabledSlots:2039583}
 execute if score #dialog Dialog matches 1 store result score @e[tag=first_key,tag=same_room] Room run data get storage luigis_mansion:data dialogs[0].room

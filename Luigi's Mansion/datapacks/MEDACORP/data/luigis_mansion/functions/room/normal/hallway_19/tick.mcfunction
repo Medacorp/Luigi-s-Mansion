@@ -1,6 +1,6 @@
 execute unless score #hallway_19 Ticking matches 1 run function #luigis_mansion:room/normal/hallway_19/load
-execute as @a[x=740,y=26,z=40,dx=23,dy=9,dz=8] unless entity @s[scores={Room=55}] run scoreboard players operation @s LastRoom = @s Room
-execute as @e[x=740,y=26,z=40,dx=23,dy=9,dz=8] unless entity @s[tag=ghost,tag=vanish] run scoreboard players set @s Room 55
+execute as @a[x=740,y=28,z=40,dx=23,dy=7,dz=8] unless entity @s[scores={Room=55}] run scoreboard players operation @s LastRoom = @s Room
+execute as @e[x=740,y=28,z=40,dx=23,dy=7,dz=8] unless entity @s[tag=ghost,tag=vanish] run scoreboard players set @s Room 55
 tag @e[tag=ghost,scores={Room=55}] add no_hidden_move
 
 execute as @a[scores={Room=55}] run function luigis_mansion:room/normal/hallway_19/tick_per_player
@@ -14,6 +14,6 @@ execute unless entity @a[tag=toad_5_dialog,limit=1] unless entity @a[tag=uncle_g
 scoreboard players set #temp Room 55
 execute as @a[tag=!pause_dialog] run function luigis_mansion:main/get_same_room
 scoreboard players reset #temp Room
-execute if entity @a[tag=same_room,limit=1] run function luigis_mansion:room/normal/hallway_19/ghosts
+execute if entity @a[tag=same_room,tag=!spectator,limit=1] run function luigis_mansion:room/normal/hallway_19/ghosts
 tag @a[tag=same_room] remove same_room
 tag @a[tag=same_room] remove exact_same_room

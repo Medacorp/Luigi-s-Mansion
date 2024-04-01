@@ -1,6 +1,0 @@
-execute if data storage luigis_mansion:data current_state.ghosts_caught[0] run function 3ds_remake:room/gallery/check_portrait/small_ghosts/ghost_count/purple_puncher
-execute if data storage luigis_mansion:data current_state.new_ghosts_caught run data modify storage luigis_mansion:data current_state.ghosts_caught set from storage luigis_mansion:data current_state.new_ghosts_caught
-data remove storage luigis_mansion:data current_state.new_ghosts_caught
-execute if score #temp Time matches 1.. run tellraw @a[tag=same_room] {"type":"translatable","translate":"chat.type.text","with":[{"type":"translatable","translate":"luigis_mansion:entity.mansion","color":"green"},{"type":"translatable","translate":"luigis_mansion:message.hover_event","with":[{"type":"translatable","translate":"luigis_mansion:entity.purple_puncher","hoverEvent":{"action":"show_text","contents":[{"type":"translatable","translate":"3ds_remake:message.gallery.small_ghosts.purple_puncher.description"},{"type":"text","text":"\n"},{"type":"translatable","translate":"3ds_remake:message.gallery.small_ghosts.caught","with":[{"type":"score","score":{"name":"#temp","objective":"Time"}}]}]}}]}]}
-scoreboard players reset #temp Time
-scoreboard players reset #temp Money

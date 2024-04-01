@@ -1,0 +1,6 @@
+{
+	"parent": "luigis_mansion:furniture/gallery_portrait/boss_frame",
+	"textures": {
+		"frame": "luigis_mansion:furniture/gallery_portrait/gold_boss_frame"
+	}
+}

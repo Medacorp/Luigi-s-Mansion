@@ -9,17 +9,19 @@ execute if score #dialog Dialog matches ..11 run scoreboard players add #dialog 
 execute if score #dialog Dialog matches ..19 if entity @a[tag=same_room,tag=skip_dialog,limit=1] run scoreboard players set #dialog Dialog 20
 execute if score #dialog Dialog matches 21..25 if entity @a[tag=same_room,tag=skip_dialog,limit=1] run scoreboard players set #dialog Dialog 26
 execute if score #dialog Dialog matches 27 if entity @a[tag=same_room,tag=skip_dialog,limit=1] run scoreboard players set #dialog Dialog 28
-execute if score #dialog Dialog matches 12..27 unless score #dialog Dialog matches 17 unless score #dialog Dialog matches 20 unless score #dialog Dialog matches 26 as @a[tag=same_room,tag=!spectator] unless entity @s[tag=dialog_menu,tag=!dialog_choice_menu] run function luigis_mansion:selection_menu/dialog/original_menu
-execute if score #dialog Dialog matches 20 as @a[tag=same_room,tag=!spectator,tag=!dialog_choice_menu] run function luigis_mansion:selection_menu/dialog/choice/jarvis
+execute if score #dialog Dialog matches 12..27 unless score #dialog Dialog matches 17 unless score #dialog Dialog matches 20 unless score #dialog Dialog matches 26 as @a[tag=same_room,tag=!spectator] unless entity @s[tag=dialog_menu,tag=!dialog_choice_menu] unless entity @s[tag=using_selection_menu,tag=!dialog_menu] run function luigis_mansion:selection_menu/dialog/original_menu
+execute if score #dialog Dialog matches 20 as @a[tag=same_room,tag=!spectator,tag=!dialog_choice_menu] unless entity @s[tag=using_selection_menu,tag=!dialog_menu] run function luigis_mansion:selection_menu/dialog/choice/jarvis
 execute if score #dialog Dialog matches 17 as @a[tag=same_room,tag=dialog_menu] run function luigis_mansion:selection_menu/dialog/exit
 execute if score #dialog Dialog matches 26 as @a[tag=same_room,tag=dialog_menu] run function luigis_mansion:selection_menu/dialog/exit
 execute if score #dialog Dialog matches 28.. as @a[tag=same_room,tag=dialog_menu] run function luigis_mansion:selection_menu/dialog/exit
 
+scoreboard players reset @a[tag=same_room,tag=!spectator] WarpTime
+execute as @a[tag=same_room,tag=!spectator,tag=game_boy_horror_menu] run function luigis_mansion:selection_menu/game_boy_horror/exit
 tag @e[nbt={data:{entity:{namespace:"luigis_mansion",id:"jarvis"}}},tag=same_room,limit=1] remove freeze_animation
 tag @e[nbt={data:{entity:{namespace:"luigis_mansion",id:"jarvis"}}},tag=same_room,limit=1] remove no_ai
 execute if score #dialog Dialog matches 1 run tag @e[nbt={data:{entity:{namespace:"luigis_mansion",id:"jarvis"}}},tag=same_room,limit=1] add pop_out
 execute if score #dialog Dialog matches 1..25 as @a[tag=same_room,tag=!spectator] run function luigis_mansion:other/music/set/talking_ghost
-execute if score #dialog Dialog matches 1..25 as @a[tag=same_room,tag=!spectator,tag=!looking_at_map] run function luigis_mansion:entities/player/animation/set/idle
+execute if score #dialog Dialog matches 1..25 as @a[tag=same_room,tag=!spectator] run function luigis_mansion:entities/player/animation/set/idle
 execute if score #dialog Dialog matches 11 if data storage luigis_mansion:data current_state.current_data.technical_data{jarvis_spoke:1b} run scoreboard players set #dialog Dialog 17
 execute if score #dialog Dialog matches 11 if score #players Totals matches 1 run tellraw @a[tag=same_room] {"type":"translatable","translate":"chat.type.text","with":[{"type":"translatable","translate":"luigis_mansion:entity.jarvis","color":"green"},{"type":"translatable","translate":"luigis_mansion:dialog.jarvis.1"}]}
 execute if score #dialog Dialog matches 11 if score #players Totals matches 2.. run tellraw @a[tag=same_room] {"type":"translatable","translate":"chat.type.text","with":[{"type":"translatable","translate":"luigis_mansion:entity.jarvis","color":"green"},{"type":"translatable","translate":"luigis_mansion:dialog.jarvis.1.more"}]}

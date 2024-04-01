@@ -9,7 +9,7 @@ execute if entity @s[scores={Dialog=80}] run summon minecraft:lightning_bolt 651
 execute if entity @s[scores={Dialog=90}] run summon minecraft:lightning_bolt 651 103 47
 tag @s[scores={Dialog=80}] add appear
 execute if entity @s[scores={Dialog=100}] as @a[tag=same_room] run function luigis_mansion:entities/player/animation/set/scare/bash_no_move
-execute if entity @s[scores={Dialog=100..240}] run scoreboard players set @a[tag=same_room,scores={AnimationProgress=31..}] AnimationProgress 30
+execute if entity @s[scores={Dialog=100..240}] run scoreboard players set @a[tag=same_room,scores={AnimationProgress=30..}] AnimationProgress 29
 execute if entity @s[scores={Dialog=240}] as @a run function luigis_mansion:room/normal/bogmire_battle/warp_to
 execute if entity @s[scores={Dialog=240}] as @a[tag=same_room] at @s run function luigis_mansion:entities/player/animation/scare/bash_force_move
 execute if entity @s[scores={Dialog=240}] run scoreboard players set @a[tag=same_room,scores={AnimationProgress=30..}] AnimationProgress 29

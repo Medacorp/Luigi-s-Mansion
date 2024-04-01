@@ -1,6 +1,0 @@
-{
-	"parent": "3ds_remake:entity/painting/bronze",
-	"textures": {
-		"image": "3ds_remake:block/painting/bronze/spooky"
-	}
-}

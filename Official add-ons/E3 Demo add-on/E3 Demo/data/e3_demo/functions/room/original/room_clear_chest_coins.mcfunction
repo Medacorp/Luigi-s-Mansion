@@ -44,4 +44,4 @@ execute if score #temp Time matches ..1557 run scoreboard players add #temp2 Tim
 execute if score #temp Time matches ..1575 run scoreboard players add #temp2 Time 1
 execute store result storage luigis_mansion:data furniture.loot.contents.e3_demo.ghost_coin int 1 run scoreboard players add #temp2 Time 1
 scoreboard players reset #temp2 Time
-execute if data storage e3_demo:data current_state.trophy{task_4:0b} if score #temp Time matches 1576.. run function e3_demo:room/gallery/clear_task/task_4
+execute if data storage e3_demo:data current_state.trophy{task_4:0b} if score #temp Time matches 1576.. run function e3_demo:selection_menu/gallery_trophy/complete/task_4

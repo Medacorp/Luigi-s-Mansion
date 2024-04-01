@@ -4,6 +4,8 @@ execute if score #dialog Dialog matches ..723 run scoreboard players add #dialog
 execute if score #dialog Dialog matches ..724 if entity @a[tag=same_room,tag=skip_dialog,limit=1] run scoreboard players set #dialog Dialog 1363
 execute if score #dialog Dialog matches 725..1362 if entity @a[tag=same_room,tag=skip_dialog,limit=1] run scoreboard players set #dialog Dialog 1363
 
+scoreboard players reset @a[tag=same_room,tag=!spectator] WarpTime
+execute as @a[tag=same_room,tag=!spectator,tag=game_boy_horror_menu] run function luigis_mansion:selection_menu/game_boy_horror/exit
 tag @e[tag=e_gadd,tag=same_room,limit=1] remove freeze_animation
 tag @e[tag=mario,tag=same_room,limit=1] remove freeze_animation
 tag @e[tag=mario,tag=portrificationizing,tag=same_room,limit=1] remove no_ai
@@ -15,8 +17,7 @@ execute if score #dialog Dialog matches 1 store result score @e[tag=same_room,ta
 execute if score #dialog Dialog matches 31 as @a[tag=same_room] run function luigis_mansion:other/music/set/non_overwritten_silence
 execute if score #dialog Dialog matches 31 run playsound luigis_mansion:music.mario_to_normal_1 music @a[tag=same_room] ~ ~ ~ 1000
 execute if score #dialog Dialog matches 31 run scoreboard players set @a[tag=same_room] Music 710
-execute if score #dialog Dialog matches 723 run data modify storage luigis_mansion:data entity set value {room:-3,mansion:{namespace:"luigis_mansion",id:"empty"},tags:["done_portrificationizing","cannot_be_removed","no_ai"]}
-execute if score #dialog Dialog matches 723 run data modify storage luigis_mansion:data entity.mansion set from entity @s ArmorItems[3].tag.luigis_mansion.mansion
+execute if score #dialog Dialog matches 723 run data modify storage luigis_mansion:data entity set value {room:-3,tags:["done_portrificationizing","cannot_be_removed","no_ai"]}
 execute if score #dialog Dialog matches 723 run data modify storage luigis_mansion:data entity.room set from storage luigis_mansion:data dialogs[0].room
 execute if score #dialog Dialog matches 723 positioned 774 77 20 rotated -180 0 run function luigis_mansion:spawn_entities/mario/normal
 
@@ -48,9 +49,9 @@ execute if score #dialog Dialog matches 1363 if score #temp Money matches 60000.
 execute if score #dialog Dialog matches 1363 if score #temp Money matches 70000..99999 run data modify storage luigis_mansion:data current_state.mansion_ranks_achieved.b set value 1b
 execute if score #dialog Dialog matches 1363 if score #temp Money matches 100000..129999 run data modify storage luigis_mansion:data current_state.mansion_ranks_achieved.a set value 1b
 execute if score #dialog Dialog matches 1363 if score #temp Money matches 130000.. run data modify storage 3ds_remake:data current_state.mansion_rank_s_achieved set value 1b
-execute if score #dialog Dialog matches 1363 if score #temp Money matches 70000.. run function 3ds_remake:room/gallery/clear_task/normal/task_7
-execute if score #dialog Dialog matches 1363 if score #temp Money matches 100000.. run function 3ds_remake:room/gallery/clear_task/hard/task_4
-execute if score #dialog Dialog matches 1363 if score #temp Money matches 130000.. run function 3ds_remake:room/gallery/clear_task/master/task_4
+execute if score #dialog Dialog matches 1363 if score #temp Money matches 70000.. run function 3ds_remake:selection_menu/gallery_trophy/complete/normal/task_7
+execute if score #dialog Dialog matches 1363 if score #temp Money matches 100000.. run function 3ds_remake:selection_menu/gallery_trophy/complete/hard/task_4
+execute if score #dialog Dialog matches 1363 if score #temp Money matches 130000.. run function 3ds_remake:selection_menu/gallery_trophy/complete/master/task_4
 execute if score #dialog Dialog matches 1363 if score #temp Money matches ..4999 run data modify storage luigis_mansion:data dialogs[0].rank set value "h"
 execute if score #dialog Dialog matches 1363 if score #temp Money matches 5000..19999 run data modify storage luigis_mansion:data dialogs[0].rank set value "g"
 execute if score #dialog Dialog matches 1363 if score #temp Money matches 20000..39999 run data modify storage luigis_mansion:data dialogs[0].rank set value "f"

@@ -1,3 +1,3 @@
-$execute unless entity @e[tag=trap,nbt={data:{entity:{namespace:"luigis_mansion",id:"hidden_boo"},boo:$(boo)}}] run data modify storage luigis_mansion:data entity set value {boo:$(boo),mansion:$(mansion),tags:["trap"]}
+$execute unless entity @e[tag=trap,nbt={data:{entity:{namespace:"luigis_mansion",id:"hidden_boo"},boo:{namespace:"$(namespace)",id:"$(id)"}}}] run data modify storage luigis_mansion:data entity set value {boo:{namespace:"$(namespace)",id:"$(id)"},tags:["trap"]}
 execute if data storage luigis_mansion:data entity.boo store result storage luigis_mansion:data entity.room int 1 run scoreboard players get #temp Room
 execute if data storage luigis_mansion:data entity.boo run function luigis_mansion:spawn_entities/ghost/hidden_boo

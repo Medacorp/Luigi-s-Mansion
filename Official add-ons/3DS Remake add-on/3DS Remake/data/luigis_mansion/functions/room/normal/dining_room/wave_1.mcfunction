@@ -4,7 +4,7 @@ execute unless data storage luigis_mansion:data current_state.current_data{money
 execute positioned 706 11 31 run function luigis_mansion:spawn_entities/eternal_banana_peel
 execute positioned 707 11 34 run function luigis_mansion:spawn_entities/eternal_banana_peel
 execute positioned 708 11 55 run function luigis_mansion:spawn_entities/eternal_banana_peel
-data modify storage luigis_mansion:data entity set value {mansion:{namespace:"luigis_mansion",id:"normal"},room:26,scan_message:{sender:"me",message:'{"type":"translatable","translate":"luigis_mansion:message.mr_luggs.scan"}'}}
+data modify storage luigis_mansion:data entity set value {room:26,scan_message:{sender:"me",message:'{"type":"translatable","translate":"luigis_mansion:message.mr_luggs.scan"}'}}
 execute positioned 702 11 43 rotated -90 0 run function luigis_mansion:spawn_entities/portrait_ghost/mr_luggs
 data modify storage luigis_mansion:data furniture set value {room:26,searchable_by:["vacuum"],tags:["mr_luggs_food"]}
 execute positioned 704 12 43 rotated -90 0 run function luigis_mansion:spawn_furniture/food

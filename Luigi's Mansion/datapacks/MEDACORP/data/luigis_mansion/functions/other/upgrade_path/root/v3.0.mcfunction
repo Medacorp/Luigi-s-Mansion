@@ -40,6 +40,7 @@ scoreboard objectives remove Attack
 scoreboard objectives remove BookChoice
 scoreboard objectives remove ClairvoyaChoice
 scoreboard objectives remove ClairvoyaSpoke
+scoreboard objectives remove ClickEventCheck
 scoreboard objectives remove EGaddGallChoice
 scoreboard objectives remove EGaddGPRChoice
 scoreboard objectives remove EGaddLabChoice

@@ -1,5 +1,7 @@
 scoreboard players add #dialog Dialog 1
 
+scoreboard players reset @a[tag=same_room,tag=!spectator] WarpTime
+execute as @a[tag=same_room,tag=!spectator,tag=game_boy_horror_menu] run function luigis_mansion:selection_menu/game_boy_horror/exit
 tag @e[tag=e_gadd,tag=same_room,limit=1] remove freeze_animation
 execute if score #dialog Dialog matches 1 in minecraft:overworld positioned 789 90 14 run data modify storage luigis_mansion:data entity set value {room:0,scan_message:{sender:"me",message:'{"type":"translatable","translate":"luigis_mansion:message.player.scan_furniture.57"}'},can_talk_to:0b}
 execute if score #dialog Dialog matches 1 in minecraft:overworld positioned 789 90 14 run function luigis_mansion:spawn_entities/e_gadd

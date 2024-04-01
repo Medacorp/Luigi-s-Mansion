@@ -1,0 +1,1 @@
+$function $(namespace):selection_menu/gallery_portrait/add_portrait_battle/$(id)

@@ -1,2 +1,2 @@
 data modify storage luigis_mansion:data current_state.current_data.portrait_ghosts.luigis_mansion.neville.rank set value 0b
-execute if data storage e3_demo:data current_state.trophy{task_1:0b} if data storage luigis_mansion:data current_state.current_data.portrait_ghosts.luigis_mansion{neville:{health:0},lydia:{health:0}} run function e3_demo:room/gallery/clear_task/task_1
+execute if data storage e3_demo:data current_state.trophy{task_1:0b} if data storage luigis_mansion:data current_state.current_data.portrait_ghosts.luigis_mansion{neville:{health:0},lydia:{health:0}} run function e3_demo:selection_menu/gallery_trophy/complete/task_1

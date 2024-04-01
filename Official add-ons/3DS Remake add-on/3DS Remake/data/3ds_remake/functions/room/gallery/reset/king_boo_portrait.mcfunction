@@ -1,0 +1,1 @@
+fill 735 3 -34 733 10 -23 minecraft:red_wool replace minecraft:yellow_wool

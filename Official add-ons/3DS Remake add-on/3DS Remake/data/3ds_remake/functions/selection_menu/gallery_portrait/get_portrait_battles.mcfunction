@@ -1,0 +1,1 @@
+$data modify storage 3ds_remake:data portrait_battles set from storage 3ds_remake:data current_state.portrait_ghosts_defeated_in.$(namespace).$(id)

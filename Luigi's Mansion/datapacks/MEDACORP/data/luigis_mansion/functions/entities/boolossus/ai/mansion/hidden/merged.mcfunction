@@ -1,6 +1,6 @@
 scoreboard players set @s HomeY 2700
-execute if entity @s[x=586.5,y=31,z=-4.5,distance=..4] run function luigis_mansion:entities/boolossus/ai/mansion/hidden/split_up
-execute if entity @s[x=586.5,y=31,z=-33.5,distance=..4] run function luigis_mansion:entities/boolossus/ai/mansion/hidden/split_up
+execute if entity @s[x=586.5,y=31,z=-4.5,distance=..4] run function luigis_mansion:entities/boolossus/ai/mansion/normal/split_up
+execute if entity @s[x=586.5,y=31,z=-33.5,distance=..4] run function luigis_mansion:entities/boolossus/ai/mansion/normal/split_up
 
 execute if entity @s[scores={Sound=0},tag=!was_fleeing,tag=flee] run playsound luigis_mansion:entity.boo.flee hostile @a[tag=same_room] ~ ~ ~ 1
 scoreboard players set @s[scores={Sound=0},tag=!was_fleeing,tag=flee] Sound 20

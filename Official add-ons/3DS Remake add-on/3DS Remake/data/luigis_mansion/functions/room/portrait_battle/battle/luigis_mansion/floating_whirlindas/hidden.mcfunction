@@ -1,0 +1,2 @@
+execute in luigis_mansion:hidden run teleport @a 705 11 55 0 0
+data modify storage luigis_mansion:data current_state.current_data.money_spawned set value ["ball_room_bejeweled_chandelier_1","ball_room_bejeweled_chandelier_2"]

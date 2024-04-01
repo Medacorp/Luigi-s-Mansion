@@ -1,0 +1,1 @@
+$execute if entity @s[tag=gallery_trophy_menu] run function $(namespace):selection_menu/gallery_trophy/$(action)

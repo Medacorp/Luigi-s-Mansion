@@ -1,6 +1,7 @@
 {
 	"values": [
         "luigis_mansion:other/music/cannot_overwrite/non_overwritten_silence",
-        "luigis_mansion:other/music/cannot_overwrite/game_boy_horror"
+        "luigis_mansion:other/music/cannot_overwrite/game_boy_horror",
+        "luigis_mansion:other/music/cannot_overwrite/portraits"
 	]
 }

@@ -76,7 +76,7 @@ entity:{
             ]
         }
     ],
-    mansion:{ //The mansion this portrait ghost, boo or mario belongs to, this is used to run mansion specific functions (such as AI and resetting).
+    mansion:{ //The mansion this portrait ghost, boo or mario belongs to, this is used to run mansion specific functions (such as AI and resetting). If not provided, defaults to loaded mansion ID, if absent, defaults to "luigis_mansion:empty".
         namespace:"luigis_mansion", //The namespace of the mansion. Default = "luigis_mansion".
         id:"empty" //The ID of the mansion. Default = "empty".
     },

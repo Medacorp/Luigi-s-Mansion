@@ -54,7 +54,7 @@ teleport @s[scores={Room=69}] 741 20 44
 teleport @s[scores={Room=70}] 741 20 68.0
 teleport @s[scores={Room=71}] 696 29 82.0
 
-data modify storage luigis_mansion:data entity set value {boo:{namespace:"luigis_mansion",id:"null"},mansion:{namespace:"luigis_mansion",id:"hidden"},name:'{"type":"translatable","translate":"luigis_mansion:entity.boo"}',spawn_time:-601,tags:["caught_by_boo_radar","cannot_be_removed"]}
+data modify storage luigis_mansion:data entity set value {boo:{namespace:"luigis_mansion",id:"null"},name:'{"type":"translatable","translate":"luigis_mansion:entity.boo"}',spawn_time:-601,tags:["caught_by_boo_radar","cannot_be_removed"]}
 data modify storage luigis_mansion:data entity.boo set from entity @s data.boo
 execute if entity @s[tag=area_1] run data modify storage luigis_mansion:data entity.tags append value "area_1"
 execute if entity @s[tag=area_2] run data modify storage luigis_mansion:data entity.tags append value "area_2"

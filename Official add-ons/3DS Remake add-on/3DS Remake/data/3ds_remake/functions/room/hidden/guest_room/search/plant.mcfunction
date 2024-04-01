@@ -5,4 +5,4 @@ execute unless entity @e[type=minecraft:marker,tag=chance,tag=selected,tag=!noth
 execute unless entity @e[type=minecraft:marker,tag=chance,tag=selected,tag=!nothing] positioned 734 20 -60 run function luigis_mansion:blocks/dust_no_sound
 kill @e[type=minecraft:marker,tag=chance]
 scoreboard players set #guest_room_plant Searched 1
-function 3ds_remake:room/gallery/clear_task/beginner/task_5
+function 3ds_remake:selection_menu/gallery_trophy/complete/beginner/task_5

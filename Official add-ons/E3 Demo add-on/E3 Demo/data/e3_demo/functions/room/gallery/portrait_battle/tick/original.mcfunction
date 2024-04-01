@@ -1,1 +1,0 @@
-#execute if entity @s[scores={SelectedFrame=}] run function e3_demo:room/gallery/portrait_battle/tick/original/

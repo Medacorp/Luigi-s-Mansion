@@ -1,6 +1,0 @@
-{
-	"parent": "luigis_mansion:entity/painting/bronze",
-	"textures": {
-		"image": "luigis_mansion:block/painting/bronze/vincent_van_gore"
-	}
-}

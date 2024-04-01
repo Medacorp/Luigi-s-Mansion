@@ -3412,11 +3412,35 @@
             },
             "model": "luigis_mansion:entity/king_boos_crown"
         },
-        {
+		{
             "predicate": {
                 "damaged": 0,
                 "damage": 0.0032,
                 "custom_model_data": 32
+            },
+            "model": "luigis_mansion:entity/portrificationizing_portrait/king_boo/bronze"
+        },
+		{
+            "predicate": {
+                "damaged": 0,
+                "damage": 0.0032,
+                "custom_model_data": 33
+            },
+            "model": "luigis_mansion:entity/portrificationizing_portrait/king_boo/silver"
+        },
+		{
+            "predicate": {
+                "damaged": 0,
+                "damage": 0.0032,
+                "custom_model_data": 34
+            },
+            "model": "luigis_mansion:entity/portrificationizing_portrait/king_boo/gold"
+        },
+        {
+            "predicate": {
+                "damaged": 0,
+                "damage": 0.0032,
+                "custom_model_data": 35
             },
             "model": "3ds_remake:entity/game_boy_horror_part"
         },
@@ -3424,7 +3448,7 @@
             "predicate": {
                 "damaged": 0,
                 "damage": 0.0032,
-                "custom_model_data": 33
+                "custom_model_data": 36
             },
             "model": "3ds_remake:entity/super_mushroom"
         },
@@ -3432,15 +3456,47 @@
             "predicate": {
                 "damaged": 0,
                 "damage": 0.0032,
-                "custom_model_data": 34
+                "custom_model_data": 37
             },
             "model": "3ds_remake:entity/gold_bone"
+        },
+		{
+            "predicate": {
+                "damaged": 0,
+                "damage": 0.0032,
+                "custom_model_data": 38
+            },
+            "model": "3ds_remake:entity/portrificationizing_portrait/king_boo/bronze"
+        },
+		{
+            "predicate": {
+                "damaged": 0,
+                "damage": 0.0032,
+                "custom_model_data": 39
+            },
+            "model": "3ds_remake:entity/portrificationizing_portrait/king_boo/silver"
+        },
+		{
+            "predicate": {
+                "damaged": 0,
+                "damage": 0.0032,
+                "custom_model_data": 40
+            },
+            "model": "3ds_remake:entity/portrificationizing_portrait/king_boo/gold"
+        },
+		{
+            "predicate": {
+                "damaged": 0,
+                "damage": 0.0032,
+                "custom_model_data": 41
+            },
+            "model": "3ds_remake:entity/portrificationizing_portrait/king_boo/platinum"
         },
         {
             "predicate": {
                 "damaged": 0,
                 "damage": 0.0032,
-                "custom_model_data": 35
+                "custom_model_data": 42
             },
             "model": "e3_demo:entity/ghost_coin"
         },
@@ -7184,6 +7240,854 @@
             "predicate": {
                 "damaged": 0,
                 "damage": 0.0118,
+                "custom_model_data": -120
+            },
+            "model": "3ds_remake:furniture/gallery_portrait/frame"
+        },
+		{
+            "predicate": {
+                "damaged": 0,
+                "damage": 0.0118,
+                "custom_model_data": -119
+            },
+            "model": "3ds_remake:furniture/gallery_portrait/boss_frame"
+        },
+		{
+            "predicate": {
+                "damaged": 0,
+                "damage": 0.0118,
+                "custom_model_data": -118
+            },
+            "model": "3ds_remake:furniture/gallery_portrait/king_boo_frame"
+        },
+		{
+            "predicate": {
+                "damaged": 0,
+                "damage": 0.0118,
+                "custom_model_data": -117
+            },
+            "model": "3ds_remake:furniture/gallery_portrait/bronze/neville"
+        },
+		{
+            "predicate": {
+                "damaged": 0,
+                "damage": 0.0118,
+                "custom_model_data": -116
+            },
+            "model": "3ds_remake:furniture/gallery_portrait/silver/neville"
+        },
+		{
+            "predicate": {
+                "damaged": 0,
+                "damage": 0.0118,
+                "custom_model_data": -115
+            },
+            "model": "3ds_remake:furniture/gallery_portrait/gold/neville"
+        },
+		{
+            "predicate": {
+                "damaged": 0,
+                "damage": 0.0118,
+                "custom_model_data": -114
+            },
+            "model": "3ds_remake:furniture/gallery_portrait/platinum/neville"
+        },
+		{
+            "predicate": {
+                "damaged": 0,
+                "damage": 0.0118,
+                "custom_model_data": -113
+            },
+            "model": "3ds_remake:furniture/gallery_portrait/bronze/lydia"
+        },
+		{
+            "predicate": {
+                "damaged": 0,
+                "damage": 0.0118,
+                "custom_model_data": -112
+            },
+            "model": "3ds_remake:furniture/gallery_portrait/silver/lydia"
+        },
+		{
+            "predicate": {
+                "damaged": 0,
+                "damage": 0.0118,
+                "custom_model_data": -111
+            },
+            "model": "3ds_remake:furniture/gallery_portrait/gold/lydia"
+        },
+		{
+            "predicate": {
+                "damaged": 0,
+                "damage": 0.0118,
+                "custom_model_data": -110
+            },
+            "model": "3ds_remake:furniture/gallery_portrait/platinum/lydia"
+        },
+		{
+            "predicate": {
+                "damaged": 0,
+                "damage": 0.0118,
+                "custom_model_data": -109
+            },
+            "model": "3ds_remake:furniture/gallery_portrait/bronze/chauncey"
+        },
+		{
+            "predicate": {
+                "damaged": 0,
+                "damage": 0.0118,
+                "custom_model_data": -108
+            },
+            "model": "3ds_remake:furniture/gallery_portrait/silver/chauncey"
+        },
+		{
+            "predicate": {
+                "damaged": 0,
+                "damage": 0.0118,
+                "custom_model_data": -107
+            },
+            "model": "3ds_remake:furniture/gallery_portrait/gold/chauncey"
+        },
+		{
+            "predicate": {
+                "damaged": 0,
+                "damage": 0.0118,
+                "custom_model_data": -106
+            },
+            "model": "3ds_remake:furniture/gallery_portrait/platinum/chauncey"
+        },
+		{
+            "predicate": {
+                "damaged": 0,
+                "damage": 0.0118,
+                "custom_model_data": -105
+            },
+            "model": "3ds_remake:furniture/gallery_portrait/bronze/floating_whirlindas"
+        },
+		{
+            "predicate": {
+                "damaged": 0,
+                "damage": 0.0118,
+                "custom_model_data": -104
+            },
+            "model": "3ds_remake:furniture/gallery_portrait/silver/floating_whirlindas"
+        },
+		{
+            "predicate": {
+                "damaged": 0,
+                "damage": 0.0118,
+                "custom_model_data": -103
+            },
+            "model": "3ds_remake:furniture/gallery_portrait/gold/floating_whirlindas"
+        },
+		{
+            "predicate": {
+                "damaged": 0,
+                "damage": 0.0118,
+                "custom_model_data": -102
+            },
+            "model": "3ds_remake:furniture/gallery_portrait/platinum/floating_whirlindas"
+        },
+		{
+            "predicate": {
+                "damaged": 0,
+                "damage": 0.0118,
+                "custom_model_data": -101
+            },
+            "model": "3ds_remake:furniture/gallery_portrait/bronze/shivers"
+        },
+		{
+            "predicate": {
+                "damaged": 0,
+                "damage": 0.0118,
+                "custom_model_data": -100
+            },
+            "model": "3ds_remake:furniture/gallery_portrait/silver/shivers"
+        },
+		{
+            "predicate": {
+                "damaged": 0,
+                "damage": 0.0118,
+                "custom_model_data": -99
+            },
+            "model": "3ds_remake:furniture/gallery_portrait/gold/shivers"
+        },
+		{
+            "predicate": {
+                "damaged": 0,
+                "damage": 0.0118,
+                "custom_model_data": -98
+            },
+            "model": "3ds_remake:furniture/gallery_portrait/platinum/shivers"
+        },
+		{
+            "predicate": {
+                "damaged": 0,
+                "damage": 0.0118,
+                "custom_model_data": -97
+            },
+            "model": "3ds_remake:furniture/gallery_portrait/bronze/melody_pianissima"
+        },
+		{
+            "predicate": {
+                "damaged": 0,
+                "damage": 0.0118,
+                "custom_model_data": -96
+            },
+            "model": "3ds_remake:furniture/gallery_portrait/silver/melody_pianissima"
+        },
+		{
+            "predicate": {
+                "damaged": 0,
+                "damage": 0.0118,
+                "custom_model_data": -95
+            },
+            "model": "3ds_remake:furniture/gallery_portrait/gold/melody_pianissima"
+        },
+		{
+            "predicate": {
+                "damaged": 0,
+                "damage": 0.0118,
+                "custom_model_data": -94
+            },
+            "model": "3ds_remake:furniture/gallery_portrait/platinum/melody_pianissima"
+        },
+		{
+            "predicate": {
+                "damaged": 0,
+                "damage": 0.0118,
+                "custom_model_data": -93
+            },
+            "model": "3ds_remake:furniture/gallery_portrait/bronze/mr_luggs"
+        },
+		{
+            "predicate": {
+                "damaged": 0,
+                "damage": 0.0118,
+                "custom_model_data": -92
+            },
+            "model": "3ds_remake:furniture/gallery_portrait/silver/mr_luggs"
+        },
+		{
+            "predicate": {
+                "damaged": 0,
+                "damage": 0.0118,
+                "custom_model_data": -91
+            },
+            "model": "3ds_remake:furniture/gallery_portrait/gold/mr_luggs"
+        },
+		{
+            "predicate": {
+                "damaged": 0,
+                "damage": 0.0118,
+                "custom_model_data": -90
+            },
+            "model": "3ds_remake:furniture/gallery_portrait/platinum/mr_luggs"
+        },
+		{
+            "predicate": {
+                "damaged": 0,
+                "damage": 0.0118,
+                "custom_model_data": -89
+            },
+            "model": "3ds_remake:furniture/gallery_portrait/bronze/spooky"
+        },
+		{
+            "predicate": {
+                "damaged": 0,
+                "damage": 0.0118,
+                "custom_model_data": -88
+            },
+            "model": "3ds_remake:furniture/gallery_portrait/silver/spooky"
+        },
+		{
+            "predicate": {
+                "damaged": 0,
+                "damage": 0.0118,
+                "custom_model_data": -87
+            },
+            "model": "3ds_remake:furniture/gallery_portrait/gold/spooky"
+        },
+		{
+            "predicate": {
+                "damaged": 0,
+                "damage": 0.0118,
+                "custom_model_data": -86
+            },
+            "model": "3ds_remake:furniture/gallery_portrait/platinum/spooky"
+        },
+		{
+            "predicate": {
+                "damaged": 0,
+                "damage": 0.0118,
+                "custom_model_data": -85
+            },
+            "model": "3ds_remake:furniture/gallery_portrait/bronze/bogmire"
+        },
+		{
+            "predicate": {
+                "damaged": 0,
+                "damage": 0.0118,
+                "custom_model_data": -84
+            },
+            "model": "3ds_remake:furniture/gallery_portrait/silver/bogmire"
+        },
+		{
+            "predicate": {
+                "damaged": 0,
+                "damage": 0.0118,
+                "custom_model_data": -83
+            },
+            "model": "3ds_remake:furniture/gallery_portrait/gold/bogmire"
+        },
+		{
+            "predicate": {
+                "damaged": 0,
+                "damage": 0.0118,
+                "custom_model_data": -82
+            },
+            "model": "3ds_remake:furniture/gallery_portrait/platinum/bogmire"
+        },
+		{
+            "predicate": {
+                "damaged": 0,
+                "damage": 0.0118,
+                "custom_model_data": -81
+            },
+            "model": "3ds_remake:furniture/gallery_portrait/bronze/biff_atlas"
+        },
+		{
+            "predicate": {
+                "damaged": 0,
+                "damage": 0.0118,
+                "custom_model_data": -80
+            },
+            "model": "3ds_remake:furniture/gallery_portrait/silver/biff_atlas"
+        },
+		{
+            "predicate": {
+                "damaged": 0,
+                "damage": 0.0118,
+                "custom_model_data": -79
+            },
+            "model": "3ds_remake:furniture/gallery_portrait/gold/biff_atlas"
+        },
+		{
+            "predicate": {
+                "damaged": 0,
+                "damage": 0.0118,
+                "custom_model_data": -78
+            },
+            "model": "3ds_remake:furniture/gallery_portrait/platinum/biff_atlas"
+        },
+		{
+            "predicate": {
+                "damaged": 0,
+                "damage": 0.0118,
+                "custom_model_data": -77
+            },
+            "model": "3ds_remake:furniture/gallery_portrait/bronze/miss_petunia"
+        },
+		{
+            "predicate": {
+                "damaged": 0,
+                "damage": 0.0118,
+                "custom_model_data": -76
+            },
+            "model": "3ds_remake:furniture/gallery_portrait/silver/miss_petunia"
+        },
+		{
+            "predicate": {
+                "damaged": 0,
+                "damage": 0.0118,
+                "custom_model_data": -75
+            },
+            "model": "3ds_remake:furniture/gallery_portrait/gold/miss_petunia"
+        },
+		{
+            "predicate": {
+                "damaged": 0,
+                "damage": 0.0118,
+                "custom_model_data": -74
+            },
+            "model": "3ds_remake:furniture/gallery_portrait/platinum/miss_petunia"
+        },
+		{
+            "predicate": {
+                "damaged": 0,
+                "damage": 0.0118,
+                "custom_model_data": -73
+            },
+            "model": "3ds_remake:furniture/gallery_portrait/bronze/nana"
+        },
+		{
+            "predicate": {
+                "damaged": 0,
+                "damage": 0.0118,
+                "custom_model_data": -72
+            },
+            "model": "3ds_remake:furniture/gallery_portrait/silver/nana"
+        },
+		{
+            "predicate": {
+                "damaged": 0,
+                "damage": 0.0118,
+                "custom_model_data": -71
+            },
+            "model": "3ds_remake:furniture/gallery_portrait/gold/nana"
+        },
+		{
+            "predicate": {
+                "damaged": 0,
+                "damage": 0.0118,
+                "custom_model_data": -70
+            },
+            "model": "3ds_remake:furniture/gallery_portrait/platinum/nana"
+        },
+		{
+            "predicate": {
+                "damaged": 0,
+                "damage": 0.0118,
+                "custom_model_data": -69
+            },
+            "model": "3ds_remake:furniture/gallery_portrait/bronze/slim_bankshot"
+        },
+		{
+            "predicate": {
+                "damaged": 0,
+                "damage": 0.0118,
+                "custom_model_data": -68
+            },
+            "model": "3ds_remake:furniture/gallery_portrait/silver/slim_bankshot"
+        },
+		{
+            "predicate": {
+                "damaged": 0,
+                "damage": 0.0118,
+                "custom_model_data": -67
+            },
+            "model": "3ds_remake:furniture/gallery_portrait/gold/slim_bankshot"
+        },
+		{
+            "predicate": {
+                "damaged": 0,
+                "damage": 0.0118,
+                "custom_model_data": -66
+            },
+            "model": "3ds_remake:furniture/gallery_portrait/platinum/slim_bankshot"
+        },
+		{
+            "predicate": {
+                "damaged": 0,
+                "damage": 0.0118,
+                "custom_model_data": -65
+            },
+            "model": "3ds_remake:furniture/gallery_portrait/bronze/henry_and_orville"
+        },
+		{
+            "predicate": {
+                "damaged": 0,
+                "damage": 0.0118,
+                "custom_model_data": -64
+            },
+            "model": "3ds_remake:furniture/gallery_portrait/silver/henry_and_orville"
+        },
+		{
+            "predicate": {
+                "damaged": 0,
+                "damage": 0.0118,
+                "custom_model_data": -63
+            },
+            "model": "3ds_remake:furniture/gallery_portrait/gold/henry_and_orville"
+        },
+		{
+            "predicate": {
+                "damaged": 0,
+                "damage": 0.0118,
+                "custom_model_data": -62
+            },
+            "model": "3ds_remake:furniture/gallery_portrait/platinum/henry_and_orville"
+        },
+		{
+            "predicate": {
+                "damaged": 0,
+                "damage": 0.0118,
+                "custom_model_data": -61
+            },
+            "model": "3ds_remake:furniture/gallery_portrait/bronze/madame_clairvoya"
+        },
+		{
+            "predicate": {
+                "damaged": 0,
+                "damage": 0.0118,
+                "custom_model_data": -60
+            },
+            "model": "3ds_remake:furniture/gallery_portrait/silver/madame_clairvoya"
+        },
+		{
+            "predicate": {
+                "damaged": 0,
+                "damage": 0.0118,
+                "custom_model_data": -59
+            },
+            "model": "3ds_remake:furniture/gallery_portrait/gold/madame_clairvoya"
+        },
+		{
+            "predicate": {
+                "damaged": 0,
+                "damage": 0.0118,
+                "custom_model_data": -58
+            },
+            "model": "3ds_remake:furniture/gallery_portrait/platinum/madame_clairvoya"
+        },
+		{
+            "predicate": {
+                "damaged": 0,
+                "damage": 0.0118,
+                "custom_model_data": -57
+            },
+            "model": "3ds_remake:furniture/gallery_portrait/bronze/boolossus"
+        },
+		{
+            "predicate": {
+                "damaged": 0,
+                "damage": 0.0118,
+                "custom_model_data": -56
+            },
+            "model": "3ds_remake:furniture/gallery_portrait/silver/boolossus"
+        },
+		{
+            "predicate": {
+                "damaged": 0,
+                "damage": 0.0118,
+                "custom_model_data": -55
+            },
+            "model": "3ds_remake:furniture/gallery_portrait/gold/boolossus"
+        },
+		{
+            "predicate": {
+                "damaged": 0,
+                "damage": 0.0118,
+                "custom_model_data": -54
+            },
+            "model": "3ds_remake:furniture/gallery_portrait/platinum/boolossus"
+        },
+		{
+            "predicate": {
+                "damaged": 0,
+                "damage": 0.0118,
+                "custom_model_data": -53
+            },
+            "model": "3ds_remake:furniture/gallery_portrait/bronze/uncle_grimmly"
+        },
+		{
+            "predicate": {
+                "damaged": 0,
+                "damage": 0.0118,
+                "custom_model_data": -52
+            },
+            "model": "3ds_remake:furniture/gallery_portrait/silver/uncle_grimmly"
+        },
+		{
+            "predicate": {
+                "damaged": 0,
+                "damage": 0.0118,
+                "custom_model_data": -51
+            },
+            "model": "3ds_remake:furniture/gallery_portrait/gold/uncle_grimmly"
+        },
+		{
+            "predicate": {
+                "damaged": 0,
+                "damage": 0.0118,
+                "custom_model_data": -50
+            },
+            "model": "3ds_remake:furniture/gallery_portrait/platinum/uncle_grimmly"
+        },
+		{
+            "predicate": {
+                "damaged": 0,
+                "damage": 0.0118,
+                "custom_model_data": -49
+            },
+            "model": "3ds_remake:furniture/gallery_portrait/bronze/clockwork_soldiers"
+        },
+		{
+            "predicate": {
+                "damaged": 0,
+                "damage": 0.0118,
+                "custom_model_data": -48
+            },
+            "model": "3ds_remake:furniture/gallery_portrait/silver/clockwork_soldiers"
+        },
+		{
+            "predicate": {
+                "damaged": 0,
+                "damage": 0.0118,
+                "custom_model_data": -47
+            },
+            "model": "3ds_remake:furniture/gallery_portrait/gold/clockwork_soldiers"
+        },
+		{
+            "predicate": {
+                "damaged": 0,
+                "damage": 0.0118,
+                "custom_model_data": -46
+            },
+            "model": "3ds_remake:furniture/gallery_portrait/platinum/clockwork_soldiers"
+        },
+		{
+            "predicate": {
+                "damaged": 0,
+                "damage": 0.0118,
+                "custom_model_data": -45
+            },
+            "model": "3ds_remake:furniture/gallery_portrait/bronze/sue_pea"
+        },
+		{
+            "predicate": {
+                "damaged": 0,
+                "damage": 0.0118,
+                "custom_model_data": -44
+            },
+            "model": "3ds_remake:furniture/gallery_portrait/silver/sue_pea"
+        },
+		{
+            "predicate": {
+                "damaged": 0,
+                "damage": 0.0118,
+                "custom_model_data": -43
+            },
+            "model": "3ds_remake:furniture/gallery_portrait/gold/sue_pea"
+        },
+		{
+            "predicate": {
+                "damaged": 0,
+                "damage": 0.0118,
+                "custom_model_data": -42
+            },
+            "model": "3ds_remake:furniture/gallery_portrait/platinum/sue_pea"
+        },
+		{
+            "predicate": {
+                "damaged": 0,
+                "damage": 0.0118,
+                "custom_model_data": -41
+            },
+            "model": "3ds_remake:furniture/gallery_portrait/bronze/jarvis"
+        },
+		{
+            "predicate": {
+                "damaged": 0,
+                "damage": 0.0118,
+                "custom_model_data": -40
+            },
+            "model": "3ds_remake:furniture/gallery_portrait/silver/jarvis"
+        },
+		{
+            "predicate": {
+                "damaged": 0,
+                "damage": 0.0118,
+                "custom_model_data": -39
+            },
+            "model": "3ds_remake:furniture/gallery_portrait/gold/jarvis"
+        },
+		{
+            "predicate": {
+                "damaged": 0,
+                "damage": 0.0118,
+                "custom_model_data": -38
+            },
+            "model": "3ds_remake:furniture/gallery_portrait/platinum/jarvis"
+        },
+		{
+            "predicate": {
+                "damaged": 0,
+                "damage": 0.0118,
+                "custom_model_data": -37
+            },
+            "model": "3ds_remake:furniture/gallery_portrait/bronze/sir_weston"
+        },
+		{
+            "predicate": {
+                "damaged": 0,
+                "damage": 0.0118,
+                "custom_model_data": -36
+            },
+            "model": "3ds_remake:furniture/gallery_portrait/silver/sir_weston"
+        },
+		{
+            "predicate": {
+                "damaged": 0,
+                "damage": 0.0118,
+                "custom_model_data": -35
+            },
+            "model": "3ds_remake:furniture/gallery_portrait/gold/sir_weston"
+        },
+		{
+            "predicate": {
+                "damaged": 0,
+                "damage": 0.0118,
+                "custom_model_data": -34
+            },
+            "model": "3ds_remake:furniture/gallery_portrait/platinum/sir_weston"
+        },
+		{
+            "predicate": {
+                "damaged": 0,
+                "damage": 0.0118,
+                "custom_model_data": -33
+            },
+            "model": "3ds_remake:furniture/gallery_portrait/bronze/vincent_van_gore"
+        },
+		{
+            "predicate": {
+                "damaged": 0,
+                "damage": 0.0118,
+                "custom_model_data": -32
+            },
+            "model": "3ds_remake:furniture/gallery_portrait/silver/vincent_van_gore"
+        },
+		{
+            "predicate": {
+                "damaged": 0,
+                "damage": 0.0118,
+                "custom_model_data": -31
+            },
+            "model": "3ds_remake:furniture/gallery_portrait/gold/vincent_van_gore"
+        },
+		{
+            "predicate": {
+                "damaged": 0,
+                "damage": 0.0118,
+                "custom_model_data": -30
+            },
+            "model": "3ds_remake:furniture/gallery_portrait/platinum/vincent_van_gore"
+        },
+		{
+            "predicate": {
+                "damaged": 0,
+                "damage": 0.0118,
+                "custom_model_data": -29
+            },
+            "model": "3ds_remake:furniture/gallery_portrait/bronze/king_boo"
+        },
+		{
+            "predicate": {
+                "damaged": 0,
+                "damage": 0.0118,
+                "custom_model_data": -28
+            },
+            "model": "3ds_remake:furniture/gallery_portrait/silver/king_boo"
+        },
+		{
+            "predicate": {
+                "damaged": 0,
+                "damage": 0.0118,
+                "custom_model_data": -27
+            },
+            "model": "3ds_remake:furniture/gallery_portrait/gold/king_boo"
+        },
+		{
+            "predicate": {
+                "damaged": 0,
+                "damage": 0.0118,
+                "custom_model_data": -26
+            },
+            "model": "3ds_remake:furniture/gallery_portrait/platinum/king_boo"
+        },
+		{
+            "predicate": {
+                "damaged": 0,
+                "damage": 0.0118,
+                "custom_model_data": -25
+            },
+            "model": "3ds_remake:furniture/mansion_rank_portrait"
+        },
+		{
+            "predicate": {
+                "damaged": 0,
+                "damage": 0.0118,
+                "custom_model_data": -24
+            },
+            "model": "3ds_remake:furniture/mansion_rank_portrait/s"
+        },
+		{
+            "predicate": {
+                "damaged": 0,
+                "damage": 0.0118,
+                "custom_model_data": -23
+            },
+            "model": "3ds_remake:furniture/mansion_rank_portrait/a"
+        },
+		{
+            "predicate": {
+                "damaged": 0,
+                "damage": 0.0118,
+                "custom_model_data": -22
+            },
+            "model": "3ds_remake:furniture/mansion_rank_portrait/b"
+        },
+		{
+            "predicate": {
+                "damaged": 0,
+                "damage": 0.0118,
+                "custom_model_data": -21
+            },
+            "model": "3ds_remake:furniture/mansion_rank_portrait/c"
+        },
+		{
+            "predicate": {
+                "damaged": 0,
+                "damage": 0.0118,
+                "custom_model_data": -20
+            },
+            "model": "3ds_remake:furniture/mansion_rank_portrait/d"
+        },
+		{
+            "predicate": {
+                "damaged": 0,
+                "damage": 0.0118,
+                "custom_model_data": -19
+            },
+            "model": "3ds_remake:furniture/mansion_rank_portrait/e"
+        },
+		{
+            "predicate": {
+                "damaged": 0,
+                "damage": 0.0118,
+                "custom_model_data": -18
+            },
+            "model": "3ds_remake:furniture/mansion_rank_portrait/f"
+        },
+		{
+            "predicate": {
+                "damaged": 0,
+                "damage": 0.0118,
+                "custom_model_data": -17
+            },
+            "model": "3ds_remake:furniture/mansion_rank_portrait/g"
+        },
+		{
+            "predicate": {
+                "damaged": 0,
+                "damage": 0.0118,
+                "custom_model_data": -16
+            },
+            "model": "3ds_remake:furniture/mansion_rank_portrait/h"
+        },
+		{
+            "predicate": {
+                "damaged": 0,
+                "damage": 0.0118,
+                "custom_model_data": -15
+            },
+            "model": "3ds_remake:furniture/hollow_portrait"
+        },
+        {
+            "predicate": {
+                "damaged": 0,
+                "damage": 0.0118,
                 "custom_model_data": -14
             },
             "model": "3ds_remake:furniture/deer_head/blue"
@@ -8900,6 +9804,654 @@
             },
             "model": "luigis_mansion:furniture/food/largely_decreased"
         },
+		{
+            "predicate": {
+                "damaged": 0,
+                "damage": 0.0118,
+                "custom_model_data": 202
+            },
+            "model": "luigis_mansion:furniture/gallery_portrait/frame"
+        },
+		{
+            "predicate": {
+                "damaged": 0,
+                "damage": 0.0118,
+                "custom_model_data": 203
+            },
+            "model": "luigis_mansion:furniture/gallery_portrait/boss_frame"
+        },
+		{
+            "predicate": {
+                "damaged": 0,
+                "damage": 0.0118,
+                "custom_model_data": 204
+            },
+            "model": "luigis_mansion:furniture/gallery_portrait/king_boo_frame"
+        },
+		{
+            "predicate": {
+                "damaged": 0,
+                "damage": 0.0118,
+                "custom_model_data": 205
+            },
+            "model": "luigis_mansion:furniture/gallery_portrait/bronze/neville"
+        },
+		{
+            "predicate": {
+                "damaged": 0,
+                "damage": 0.0118,
+                "custom_model_data": 206
+            },
+            "model": "luigis_mansion:furniture/gallery_portrait/silver/neville"
+        },
+		{
+            "predicate": {
+                "damaged": 0,
+                "damage": 0.0118,
+                "custom_model_data": 207
+            },
+            "model": "luigis_mansion:furniture/gallery_portrait/gold/neville"
+        },
+		{
+            "predicate": {
+                "damaged": 0,
+                "damage": 0.0118,
+                "custom_model_data": 208
+            },
+            "model": "luigis_mansion:furniture/gallery_portrait/bronze/lydia"
+        },
+		{
+            "predicate": {
+                "damaged": 0,
+                "damage": 0.0118,
+                "custom_model_data": 209
+            },
+            "model": "luigis_mansion:furniture/gallery_portrait/silver/lydia"
+        },
+		{
+            "predicate": {
+                "damaged": 0,
+                "damage": 0.0118,
+                "custom_model_data": 210
+            },
+            "model": "luigis_mansion:furniture/gallery_portrait/gold/lydia"
+        },
+		{
+            "predicate": {
+                "damaged": 0,
+                "damage": 0.0118,
+                "custom_model_data": 211
+            },
+            "model": "luigis_mansion:furniture/gallery_portrait/bronze/nana"
+        },
+		{
+            "predicate": {
+                "damaged": 0,
+                "damage": 0.0118,
+                "custom_model_data": 212
+            },
+            "model": "luigis_mansion:furniture/gallery_portrait/silver/nana"
+        },
+		{
+            "predicate": {
+                "damaged": 0,
+                "damage": 0.0118,
+                "custom_model_data": 213
+            },
+            "model": "luigis_mansion:furniture/gallery_portrait/gold/nana"
+        },
+		{
+            "predicate": {
+                "damaged": 0,
+                "damage": 0.0118,
+                "custom_model_data": 214
+            },
+            "model": "luigis_mansion:furniture/gallery_portrait/bronze/chauncey"
+        },
+		{
+            "predicate": {
+                "damaged": 0,
+                "damage": 0.0118,
+                "custom_model_data": 215
+            },
+            "model": "luigis_mansion:furniture/gallery_portrait/silver/chauncey"
+        },
+		{
+            "predicate": {
+                "damaged": 0,
+                "damage": 0.0118,
+                "custom_model_data": 216
+            },
+            "model": "luigis_mansion:furniture/gallery_portrait/gold/chauncey"
+        },
+		{
+            "predicate": {
+                "damaged": 0,
+                "damage": 0.0118,
+                "custom_model_data": 217
+            },
+            "model": "luigis_mansion:furniture/gallery_portrait/bronze/melody_pianissima"
+        },
+		{
+            "predicate": {
+                "damaged": 0,
+                "damage": 0.0118,
+                "custom_model_data": 218
+            },
+            "model": "luigis_mansion:furniture/gallery_portrait/silver/melody_pianissima"
+        },
+		{
+            "predicate": {
+                "damaged": 0,
+                "damage": 0.0118,
+                "custom_model_data": 219
+            },
+            "model": "luigis_mansion:furniture/gallery_portrait/gold/melody_pianissima"
+        },
+		{
+            "predicate": {
+                "damaged": 0,
+                "damage": 0.0118,
+                "custom_model_data": 220
+            },
+            "model": "luigis_mansion:furniture/gallery_portrait/bronze/miss_petunia"
+        },
+		{
+            "predicate": {
+                "damaged": 0,
+                "damage": 0.0118,
+                "custom_model_data": 221
+            },
+            "model": "luigis_mansion:furniture/gallery_portrait/silver/miss_petunia"
+        },
+		{
+            "predicate": {
+                "damaged": 0,
+                "damage": 0.0118,
+                "custom_model_data": 222
+            },
+            "model": "luigis_mansion:furniture/gallery_portrait/gold/miss_petunia"
+        },
+		{
+            "predicate": {
+                "damaged": 0,
+                "damage": 0.0118,
+                "custom_model_data": 223
+            },
+            "model": "luigis_mansion:furniture/gallery_portrait/bronze/madame_clairvoya"
+        },
+		{
+            "predicate": {
+                "damaged": 0,
+                "damage": 0.0118,
+                "custom_model_data": 224
+            },
+            "model": "luigis_mansion:furniture/gallery_portrait/silver/madame_clairvoya"
+        },
+		{
+            "predicate": {
+                "damaged": 0,
+                "damage": 0.0118,
+                "custom_model_data": 225
+            },
+            "model": "luigis_mansion:furniture/gallery_portrait/gold/madame_clairvoya"
+        },
+		{
+            "predicate": {
+                "damaged": 0,
+                "damage": 0.0118,
+                "custom_model_data": 226
+            },
+            "model": "luigis_mansion:furniture/gallery_portrait/bronze/shivers"
+        },
+		{
+            "predicate": {
+                "damaged": 0,
+                "damage": 0.0118,
+                "custom_model_data": 227
+            },
+            "model": "luigis_mansion:furniture/gallery_portrait/silver/shivers"
+        },
+		{
+            "predicate": {
+                "damaged": 0,
+                "damage": 0.0118,
+                "custom_model_data": 228
+            },
+            "model": "luigis_mansion:furniture/gallery_portrait/gold/shivers"
+        },
+		{
+            "predicate": {
+                "damaged": 0,
+                "damage": 0.0118,
+                "custom_model_data": 229
+            },
+            "model": "luigis_mansion:furniture/gallery_portrait/bronze/sue_pea"
+        },
+		{
+            "predicate": {
+                "damaged": 0,
+                "damage": 0.0118,
+                "custom_model_data": 230
+            },
+            "model": "luigis_mansion:furniture/gallery_portrait/silver/sue_pea"
+        },
+		{
+            "predicate": {
+                "damaged": 0,
+                "damage": 0.0118,
+                "custom_model_data": 231
+            },
+            "model": "luigis_mansion:furniture/gallery_portrait/gold/sue_pea"
+        },
+		{
+            "predicate": {
+                "damaged": 0,
+                "damage": 0.0118,
+                "custom_model_data": 232
+            },
+            "model": "luigis_mansion:furniture/gallery_portrait/bronze/floating_whirlindas"
+        },
+		{
+            "predicate": {
+                "damaged": 0,
+                "damage": 0.0118,
+                "custom_model_data": 233
+            },
+            "model": "luigis_mansion:furniture/gallery_portrait/silver/floating_whirlindas"
+        },
+		{
+            "predicate": {
+                "damaged": 0,
+                "damage": 0.0118,
+                "custom_model_data": 234
+            },
+            "model": "luigis_mansion:furniture/gallery_portrait/gold/floating_whirlindas"
+        },
+		{
+            "predicate": {
+                "damaged": 0,
+                "damage": 0.0118,
+                "custom_model_data": 235
+            },
+            "model": "luigis_mansion:furniture/gallery_portrait/bronze/mr_luggs"
+        },
+		{
+            "predicate": {
+                "damaged": 0,
+                "damage": 0.0118,
+                "custom_model_data": 236
+            },
+            "model": "luigis_mansion:furniture/gallery_portrait/silver/mr_luggs"
+        },
+		{
+            "predicate": {
+                "damaged": 0,
+                "damage": 0.0118,
+                "custom_model_data": 237
+            },
+            "model": "luigis_mansion:furniture/gallery_portrait/gold/mr_luggs"
+        },
+		{
+            "predicate": {
+                "damaged": 0,
+                "damage": 0.0118,
+                "custom_model_data": 238
+            },
+            "model": "luigis_mansion:furniture/gallery_portrait/bronze/jarvis"
+        },
+		{
+            "predicate": {
+                "damaged": 0,
+                "damage": 0.0118,
+                "custom_model_data": 239
+            },
+            "model": "luigis_mansion:furniture/gallery_portrait/silver/jarvis"
+        },
+		{
+            "predicate": {
+                "damaged": 0,
+                "damage": 0.0118,
+                "custom_model_data": 240
+            },
+            "model": "luigis_mansion:furniture/gallery_portrait/gold/jarvis"
+        },
+		{
+            "predicate": {
+                "damaged": 0,
+                "damage": 0.0118,
+                "custom_model_data": 241
+            },
+            "model": "luigis_mansion:furniture/gallery_portrait/bronze/spooky"
+        },
+		{
+            "predicate": {
+                "damaged": 0,
+                "damage": 0.0118,
+                "custom_model_data": 242
+            },
+            "model": "luigis_mansion:furniture/gallery_portrait/silver/spooky"
+        },
+		{
+            "predicate": {
+                "damaged": 0,
+                "damage": 0.0118,
+                "custom_model_data": 243
+            },
+            "model": "luigis_mansion:furniture/gallery_portrait/gold/spooky"
+        },
+		{
+            "predicate": {
+                "damaged": 0,
+                "damage": 0.0118,
+                "custom_model_data": 244
+            },
+            "model": "luigis_mansion:furniture/gallery_portrait/bronze/henry_and_orville"
+        },
+		{
+            "predicate": {
+                "damaged": 0,
+                "damage": 0.0118,
+                "custom_model_data": 245
+            },
+            "model": "luigis_mansion:furniture/gallery_portrait/silver/henry_and_orville"
+        },
+		{
+            "predicate": {
+                "damaged": 0,
+                "damage": 0.0118,
+                "custom_model_data": 246
+            },
+            "model": "luigis_mansion:furniture/gallery_portrait/gold/henry_and_orville"
+        },
+		{
+            "predicate": {
+                "damaged": 0,
+                "damage": 0.0118,
+                "custom_model_data": 247
+            },
+            "model": "luigis_mansion:furniture/gallery_portrait/bronze/clockwork_soldiers"
+        },
+		{
+            "predicate": {
+                "damaged": 0,
+                "damage": 0.0118,
+                "custom_model_data": 248
+            },
+            "model": "luigis_mansion:furniture/gallery_portrait/silver/clockwork_soldiers"
+        },
+		{
+            "predicate": {
+                "damaged": 0,
+                "damage": 0.0118,
+                "custom_model_data": 249
+            },
+            "model": "luigis_mansion:furniture/gallery_portrait/gold/clockwork_soldiers"
+        },
+		{
+            "predicate": {
+                "damaged": 0,
+                "damage": 0.0118,
+                "custom_model_data": 250
+            },
+            "model": "luigis_mansion:furniture/gallery_portrait/bronze/biff_atlas"
+        },
+		{
+            "predicate": {
+                "damaged": 0,
+                "damage": 0.0118,
+                "custom_model_data": 251
+            },
+            "model": "luigis_mansion:furniture/gallery_portrait/silver/biff_atlas"
+        },
+		{
+            "predicate": {
+                "damaged": 0,
+                "damage": 0.0118,
+                "custom_model_data": 252
+            },
+            "model": "luigis_mansion:furniture/gallery_portrait/gold/biff_atlas"
+        },
+		{
+            "predicate": {
+                "damaged": 0,
+                "damage": 0.0118,
+                "custom_model_data": 253
+            },
+            "model": "luigis_mansion:furniture/gallery_portrait/bronze/slim_bankshot"
+        },
+		{
+            "predicate": {
+                "damaged": 0,
+                "damage": 0.0118,
+                "custom_model_data": 254
+            },
+            "model": "luigis_mansion:furniture/gallery_portrait/silver/slim_bankshot"
+        },
+		{
+            "predicate": {
+                "damaged": 0,
+                "damage": 0.0118,
+                "custom_model_data": 255
+            },
+            "model": "luigis_mansion:furniture/gallery_portrait/gold/slim_bankshot"
+        },
+		{
+            "predicate": {
+                "damaged": 0,
+                "damage": 0.0118,
+                "custom_model_data": 256
+            },
+            "model": "luigis_mansion:furniture/gallery_portrait/bronze/sir_weston"
+        },
+		{
+            "predicate": {
+                "damaged": 0,
+                "damage": 0.0118,
+                "custom_model_data": 257
+            },
+            "model": "luigis_mansion:furniture/gallery_portrait/silver/sir_weston"
+        },
+		{
+            "predicate": {
+                "damaged": 0,
+                "damage": 0.0118,
+                "custom_model_data": 258
+            },
+            "model": "luigis_mansion:furniture/gallery_portrait/gold/sir_weston"
+        },
+		{
+            "predicate": {
+                "damaged": 0,
+                "damage": 0.0118,
+                "custom_model_data": 259
+            },
+            "model": "luigis_mansion:furniture/gallery_portrait/bronze/bogmire"
+        },
+		{
+            "predicate": {
+                "damaged": 0,
+                "damage": 0.0118,
+                "custom_model_data": 260
+            },
+            "model": "luigis_mansion:furniture/gallery_portrait/silver/bogmire"
+        },
+		{
+            "predicate": {
+                "damaged": 0,
+                "damage": 0.0118,
+                "custom_model_data": 261
+            },
+            "model": "luigis_mansion:furniture/gallery_portrait/gold/bogmire"
+        },
+		{
+            "predicate": {
+                "damaged": 0,
+                "damage": 0.0118,
+                "custom_model_data": 261
+            },
+            "model": "luigis_mansion:furniture/gallery_portrait/bronze/uncle_grimmly"
+        },
+		{
+            "predicate": {
+                "damaged": 0,
+                "damage": 0.0118,
+                "custom_model_data": 263
+            },
+            "model": "luigis_mansion:furniture/gallery_portrait/silver/uncle_grimmly"
+        },
+		{
+            "predicate": {
+                "damaged": 0,
+                "damage": 0.0118,
+                "custom_model_data": 264
+            },
+            "model": "luigis_mansion:furniture/gallery_portrait/gold/uncle_grimmly"
+        },
+		{
+            "predicate": {
+                "damaged": 0,
+                "damage": 0.0118,
+                "custom_model_data": 265
+            },
+            "model": "luigis_mansion:furniture/gallery_portrait/bronze/vincent_van_gore"
+        },
+		{
+            "predicate": {
+                "damaged": 0,
+                "damage": 0.0118,
+                "custom_model_data": 266
+            },
+            "model": "luigis_mansion:furniture/gallery_portrait/silver/vincent_van_gore"
+        },
+		{
+            "predicate": {
+                "damaged": 0,
+                "damage": 0.0118,
+                "custom_model_data": 267
+            },
+            "model": "luigis_mansion:furniture/gallery_portrait/gold/vincent_van_gore"
+        },
+		{
+            "predicate": {
+                "damaged": 0,
+                "damage": 0.0118,
+                "custom_model_data": 268
+            },
+            "model": "luigis_mansion:furniture/gallery_portrait/bronze/boolossus"
+        },
+		{
+            "predicate": {
+                "damaged": 0,
+                "damage": 0.0118,
+                "custom_model_data": 269
+            },
+            "model": "luigis_mansion:furniture/gallery_portrait/silver/boolossus"
+        },
+		{
+            "predicate": {
+                "damaged": 0,
+                "damage": 0.0118,
+                "custom_model_data": 270
+            },
+            "model": "luigis_mansion:furniture/gallery_portrait/gold/boolossus"
+        },
+		{
+            "predicate": {
+                "damaged": 0,
+                "damage": 0.0118,
+                "custom_model_data": 271
+            },
+            "model": "luigis_mansion:furniture/gallery_portrait/bronze/king_boo"
+        },
+		{
+            "predicate": {
+                "damaged": 0,
+                "damage": 0.0118,
+                "custom_model_data": 272
+            },
+            "model": "luigis_mansion:furniture/gallery_portrait/silver/king_boo"
+        },
+		{
+            "predicate": {
+                "damaged": 0,
+                "damage": 0.0118,
+                "custom_model_data": 273
+            },
+            "model": "luigis_mansion:furniture/gallery_portrait/gold/king_boo"
+        },
+		{
+            "predicate": {
+                "damaged": 0,
+                "damage": 0.0118,
+                "custom_model_data": 274
+            },
+            "model": "luigis_mansion:furniture/mansion_rank_portrait"
+        },
+		{
+            "predicate": {
+                "damaged": 0,
+                "damage": 0.0118,
+                "custom_model_data": 275
+            },
+            "model": "luigis_mansion:furniture/mansion_rank_portrait/a"
+        },
+		{
+            "predicate": {
+                "damaged": 0,
+                "damage": 0.0118,
+                "custom_model_data": 276
+            },
+            "model": "luigis_mansion:furniture/mansion_rank_portrait/b"
+        },
+		{
+            "predicate": {
+                "damaged": 0,
+                "damage": 0.0118,
+                "custom_model_data": 277
+            },
+            "model": "luigis_mansion:furniture/mansion_rank_portrait/c"
+        },
+		{
+            "predicate": {
+                "damaged": 0,
+                "damage": 0.0118,
+                "custom_model_data": 278
+            },
+            "model": "luigis_mansion:furniture/mansion_rank_portrait/d"
+        },
+		{
+            "predicate": {
+                "damaged": 0,
+                "damage": 0.0118,
+                "custom_model_data": 279
+            },
+            "model": "luigis_mansion:furniture/mansion_rank_portrait/e"
+        },
+		{
+            "predicate": {
+                "damaged": 0,
+                "damage": 0.0118,
+                "custom_model_data": 280
+            },
+            "model": "luigis_mansion:furniture/mansion_rank_portrait/f"
+        },
+		{
+            "predicate": {
+                "damaged": 0,
+                "damage": 0.0118,
+                "custom_model_data": 281
+            },
+            "model": "luigis_mansion:furniture/mansion_rank_portrait/g"
+        },
+		{
+            "predicate": {
+                "damaged": 0,
+                "damage": 0.0118,
+                "custom_model_data": 282
+            },
+            "model": "luigis_mansion:furniture/mansion_rank_portrait/h"
+        },
         {
             "predicate": {
                 "damaged": 0,
@@ -9443,6 +10995,174 @@
                 "custom_model_data": 28
             },
             "model": "luigis_mansion:furniture/water_bucket_with_broom/left"
+        },
+        {
+            "predicate": {
+                "damaged": 0,
+                "damage": 0.0136,
+                "custom_model_data": -28
+            },
+            "model": "3ds_remake:item/menu/gallery_portrait/new_record"
+        },
+        {
+            "predicate": {
+                "damaged": 0,
+                "damage": 0.0136,
+                "custom_model_data": -27
+            },
+            "model": "3ds_remake:item/menu/gallery_portrait/ghost"
+        },
+        {
+            "predicate": {
+                "damaged": 0,
+                "damage": 0.0136,
+                "custom_model_data": -26
+            },
+            "model": "3ds_remake:item/menu/gallery_portrait/boo"
+        },
+        {
+            "predicate": {
+                "damaged": 0,
+                "damage": 0.0136,
+                "custom_model_data": -25
+            },
+            "model": "3ds_remake:item/menu/gallery_portrait/h_rank"
+        },
+        {
+            "predicate": {
+                "damaged": 0,
+                "damage": 0.0136,
+                "custom_model_data": -24
+            },
+            "model": "3ds_remake:item/menu/gallery_portrait/g_rank"
+        },
+        {
+            "predicate": {
+                "damaged": 0,
+                "damage": 0.0136,
+                "custom_model_data": -23
+            },
+            "model": "3ds_remake:item/menu/gallery_portrait/f_rank"
+        },
+        {
+            "predicate": {
+                "damaged": 0,
+                "damage": 0.0136,
+                "custom_model_data": -22
+            },
+            "model": "3ds_remake:item/menu/gallery_portrait/e_rank"
+        },
+        {
+            "predicate": {
+                "damaged": 0,
+                "damage": 0.0136,
+                "custom_model_data": -21
+            },
+            "model": "3ds_remake:item/menu/gallery_portrait/d_rank"
+        },
+        {
+            "predicate": {
+                "damaged": 0,
+                "damage": 0.0136,
+                "custom_model_data": -20
+            },
+            "model": "3ds_remake:item/menu/gallery_portrait/c_rank"
+        },
+        {
+            "predicate": {
+                "damaged": 0,
+                "damage": 0.0136,
+                "custom_model_data": -19
+            },
+            "model": "3ds_remake:item/menu/gallery_portrait/b_rank"
+        },
+        {
+            "predicate": {
+                "damaged": 0,
+                "damage": 0.0136,
+                "custom_model_data": -18
+            },
+            "model": "3ds_remake:item/menu/gallery_portrait/a_rank"
+        },
+        {
+            "predicate": {
+                "damaged": 0,
+                "damage": 0.0136,
+                "custom_model_data": -17
+            },
+            "model": "3ds_remake:item/menu/gallery_portrait/s_rank"
+        },
+        {
+            "predicate": {
+                "damaged": 0,
+                "damage": 0.0136,
+                "custom_model_data": -16
+            },
+            "model": "3ds_remake:item/menu/gallery_portrait/check_lowest_scores"
+        },
+        {
+            "predicate": {
+                "damaged": 0,
+                "damage": 0.0136,
+                "custom_model_data": -15
+            },
+            "model": "3ds_remake:item/menu/gallery_portrait/check_high_scores"
+        },
+        {
+            "predicate": {
+                "damaged": 0,
+                "damage": 0.0136,
+                "custom_model_data": -14
+            },
+            "model": "3ds_remake:item/menu/gallery_portrait/check_portrait_battles"
+        },
+        {
+            "predicate": {
+                "damaged": 0,
+                "damage": 0.0136,
+                "custom_model_data": -13
+            },
+            "model": "3ds_remake:item/menu/gallery_portrait/platinum"
+        },
+        {
+            "predicate": {
+                "damaged": 0,
+                "damage": 0.0136,
+                "custom_model_data": -12
+            },
+            "model": "3ds_remake:item/menu/gallery_portrait/gold"
+        },
+        {
+            "predicate": {
+                "damaged": 0,
+                "damage": 0.0136,
+                "custom_model_data": -11
+            },
+            "model": "3ds_remake:item/menu/gallery_portrait/silver"
+        },
+        {
+            "predicate": {
+                "damaged": 0,
+                "damage": 0.0136,
+                "custom_model_data": -10
+            },
+            "model": "3ds_remake:item/menu/gallery_portrait/bronze"
+        },
+        {
+            "predicate": {
+                "damaged": 0,
+                "damage": 0.0136,
+                "custom_model_data": -9
+            },
+            "model": "3ds_remake:item/menu/gallery_trophy/cleared"
+        },
+        {
+            "predicate": {
+                "damaged": 0,
+                "damage": 0.0136,
+                "custom_model_data": -8
+            },
+            "model": "3ds_remake:item/menu/gallery_trophy/uncleared"
         },
         {
             "predicate": {

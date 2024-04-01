@@ -1,0 +1,1 @@
+execute in luigis_mansion:hidden run teleport @a 805.0 18 -48.0 90 0

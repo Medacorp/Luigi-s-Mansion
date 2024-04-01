@@ -1,0 +1,7 @@
+data modify storage luigis_mansion:data selected_option.portrait_battle_data.mansion_namespace set from storage luigis_mansion:data selected_option.value.namespace
+data modify storage luigis_mansion:data selected_option.portrait_battle_data.mansion_id set from storage luigis_mansion:data selected_option.value.id
+data modify storage luigis_mansion:data selected_option.portrait_battle_data.portrait_ghost_namespace set from storage luigis_mansion:data selected_option.portrait_ghost.namespace
+data modify storage luigis_mansion:data selected_option.portrait_battle_data.portrait_ghost_id set from storage luigis_mansion:data selected_option.portrait_ghost.id
+data modify storage luigis_mansion:data selected_option.portrait_battle_position.dimension set from entity @s Dimension
+function 3ds_remake:room/portrait_battle/save_current_data
+function 3ds_remake:room/portrait_battle/prepare with storage luigis_mansion:data selected_option.portrait_battle_data

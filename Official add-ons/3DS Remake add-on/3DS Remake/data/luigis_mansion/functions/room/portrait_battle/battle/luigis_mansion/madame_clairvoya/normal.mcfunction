@@ -1,0 +1,3 @@
+execute in luigis_mansion:normal run teleport @a 737 11 -32 -90 0
+data modify storage luigis_mansion:data current_state.current_data.technical_data merge value {shown_marios_hat:1b,shown_marios_letter:1b,shown_marios_star:1b,shown_marios_shoe:1b,shown_marios_glove:1b}
+data modify storage luigis_mansion:data current_state.current_data.money_spawned set value ["fortune_tellers_room_gold_mouse"]

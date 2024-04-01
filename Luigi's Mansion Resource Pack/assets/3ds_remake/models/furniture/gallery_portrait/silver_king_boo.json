@@ -1,0 +1,6 @@
+{
+	"parent": "3ds_remake:furniture/gallery_portrait/king_boo_frame",
+	"textures": {
+		"frame": "3ds_remake:furniture/gallery_portrait/silver_king_boo_frame"
+	}
+}

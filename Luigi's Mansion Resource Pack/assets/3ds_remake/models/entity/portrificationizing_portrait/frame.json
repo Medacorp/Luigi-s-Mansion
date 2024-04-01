@@ -1,0 +1,9 @@
+{
+	"parent": "3ds_remake:furniture/gallery_portrait/king_boo_frame",
+	"display": {
+		"head": {
+			"translation": [0, -6.5, 0],
+			"scale": [0.94, 0.94, 0.94]
+		}
+	}
+}

@@ -9,4 +9,5 @@ scoreboard players set @s[scores={AnimationProgress=1},tag=!gooigi] Sound 50
 tag @s[scores={Health=..30},tag=!gooigi] add low_health
 tag @s[scores={Health=..15},tag=gooigi] add low_health
 tag @s[tag=dark_room] add keep_poltergust_grabbed
+tag @s add animation_may_move
 execute if entity @s[scores={AnimationProgress=40}] run function luigis_mansion:entities/player/animation/set/none

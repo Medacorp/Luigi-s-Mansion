@@ -1,6 +1,0 @@
-{
-	"parent": "3ds_remake:entity/painting/king_boo_frame",
-	"textures": {
-		"frame": "3ds_remake:block/painting/silver_king_boo_frame"
-	}
-}

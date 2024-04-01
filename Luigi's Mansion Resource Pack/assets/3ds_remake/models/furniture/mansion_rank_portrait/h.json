@@ -1,0 +1,6 @@
+{
+	"parent": "3ds_remake:furniture/mansion_rank_portrait",
+	"textures": {
+		"image": "3ds_remake:furniture/mansion_rank_portrait/h"
+	}
+}

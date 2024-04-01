@@ -1,7 +1,7 @@
 scoreboard players set #freeze_timer Selected 1
 scoreboard players add @s Dialog 1
 execute if entity @s[scores={Dialog=1..459}] as @a[tag=same_room,tag=!spectator,tag=!looking_at_map] run function luigis_mansion:entities/player/animation/set/idle
-execute if entity @s[scores={Dialog=1..40}] run scoreboard players set @a[tag=same_room,scores={AnimationProgress=31..}] AnimationProgress 30
+execute if entity @s[scores={Dialog=1..40}] run scoreboard players set @a[tag=same_room,scores={AnimationProgress=30..}] AnimationProgress 29
 execute if entity @s[scores={Dialog=60..199}] as @a[tag=same_room,tag=!spectator,tag=!looking_at_map] run function luigis_mansion:entities/player/animation/set/high_health_idle_no_sound
 execute if entity @s[scores={Dialog=200}] as @a[tag=same_room,tag=!spectator,tag=!looking_at_map] run function luigis_mansion:entities/player/animation/set/idle
 execute if entity @s[scores={Dialog=100}] run teleport @s ~ ~ ~ -90 0

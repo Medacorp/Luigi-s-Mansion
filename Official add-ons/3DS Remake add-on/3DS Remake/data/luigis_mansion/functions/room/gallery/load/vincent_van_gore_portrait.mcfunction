@@ -1,0 +1,3 @@
+execute if data storage 3ds_remake:data current_state.selected_portraits{vincent_van_gore:-1b} run data modify storage 3ds_remake:data current_state.selected_portraits.vincent_van_gore set from storage luigis_mansion:data current_state.portrait_ghost_ranks.vincent_van_gore
+data modify storage luigis_mansion:data furniture set value {room:-4,searchable:["interact"],no_dust:1b,interact_animation:{namespace:"luigis_mansion",id:"inspect"},search_command:"function 3ds_remake:selection_menu/gallery_portrait/open_menu/portrait_ghost",gallery_portrait:{x:746,y:77,z:-31,x_rotation:0,y_rotation:-180}}
+execute positioned 746 79.5 -30.04 rotated -180 0 run function luigis_mansion:spawn_furniture/gallery_portrait/vincent_van_gore

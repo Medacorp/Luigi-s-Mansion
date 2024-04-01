@@ -1,2 +1,0 @@
-data merge entity @e[x=734.5,y=6,z=-27.5,type=minecraft:item_frame,distance=..0.7,limit=1] {Item:{id:"minecraft:painting",Count:1b,tag:{CustomModelData:184}}}
-fill 735 3 -34 733 10 -23 minecraft:red_wool replace minecraft:yellow_wool

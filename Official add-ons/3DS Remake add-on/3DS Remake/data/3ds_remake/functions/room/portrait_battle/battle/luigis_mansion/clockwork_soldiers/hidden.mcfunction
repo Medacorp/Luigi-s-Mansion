@@ -1,0 +1,2 @@
+execute in luigis_mansion:normal run teleport @a 696 120 -4 90 0
+data modify storage luigis_mansion:data current_state.current_data.money_spawned set value ["clockwork_room_hook_suspended_encased_lamp_1","clockwork_room_hook_suspended_encased_lamp_2"]

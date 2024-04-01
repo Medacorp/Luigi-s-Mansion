@@ -1,0 +1,1 @@
+$data modify storage $(namespace):data current_state.selected_portraits.$(id) set from storage luigis_mansion:data selected_option.value

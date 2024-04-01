@@ -1,3 +1,4 @@
+execute unless data storage luigis_mansion:data macro.namespace run data modify storage luigis_mansion:data macro.namespace set value "luigis_mansion"
 execute store result score #temp ActionTime run clear @s minecraft:carrot_on_a_stick{luigis_mansion:{namespace:"luigis_mansion",id:"game_boy_horror"}} 0
 execute unless entity @s[scores={ForceScreen=1}] run clear @s minecraft:carrot_on_a_stick{luigis_mansion:{namespace:"luigis_mansion",id:"game_boy_horror"}}
 execute if score #temp ActionTime matches 0 run item replace entity @s[scores={ForceScreen=1}] weapon.offhand with minecraft:carrot_on_a_stick{HideFlags:63,Unbreakable:1b,Damage:2,CustomModelData:1,display:{Name:'{"italic":false,"color":"white","type":"translatable","translate":"luigis_mansion:item.game_boy_horror"}'},luigis_mansion:{namespace:"luigis_mansion",id:"game_boy_horror",kill:1b}}

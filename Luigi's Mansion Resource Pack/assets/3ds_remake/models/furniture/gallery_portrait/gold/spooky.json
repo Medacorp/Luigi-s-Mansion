@@ -1,0 +1,6 @@
+{
+	"parent": "3ds_remake:furniture/gallery_portrait/gold",
+	"textures": {
+		"image": "3ds_remake:furniture/gallery_portrait/gold/spooky"
+	}
+}

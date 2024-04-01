@@ -1,6 +1,0 @@
-{
-	"parent": "3ds_remake:entity/painting/silver",
-	"textures": {
-		"image": "3ds_remake:block/painting/silver/madame_clairvoya"
-	}
-}

@@ -1,15 +1,17 @@
 execute if score #dialog Dialog matches 2496..2498 if entity @a[tag=same_room,tag=next_dialog_line,limit=1] run scoreboard players add #dialog Dialog 1
 execute if score #dialog Dialog matches 65..2495 run scoreboard players add #dialog Dialog 1
-execute if score #dialog Dialog matches 4 if entity @a[tag=same_room,tag=next_dialog_line,limit=1] run scoreboard players add #dialog Dialog 1
+execute if score #dialog Dialog matches 64 if entity @a[tag=same_room,tag=next_dialog_line,limit=1] run scoreboard players add #dialog Dialog 1
 execute if score #dialog Dialog matches 3..63 run scoreboard players add #dialog Dialog 1
 execute if score #dialog Dialog matches 2 if entity @a[tag=same_room,tag=next_dialog_line,limit=1] run scoreboard players add #dialog Dialog 1
 execute if score #dialog Dialog matches ..1 run scoreboard players add #dialog Dialog 1
 execute if score #dialog Dialog matches ..2498 if entity @a[tag=same_room,tag=skip_dialog,limit=1] run scoreboard players set #dialog Dialog 2499
-execute if score #dialog Dialog matches ..2498 unless score #dialog Dialog matches 3..63 unless score #dialog Dialog matches 65..2495 as @a[tag=same_room,tag=!spectator,tag=!dialog_menu] run function luigis_mansion:selection_menu/dialog/original_menu
+execute if score #dialog Dialog matches ..2498 unless score #dialog Dialog matches 3..63 unless score #dialog Dialog matches 65..2495 as @a[tag=same_room,tag=!spectator,tag=!dialog_menu] unless entity @s[tag=using_selection_menu,tag=!dialog_menu] run function luigis_mansion:selection_menu/dialog/original_menu
 execute if score #dialog Dialog matches 3..63 as @a[tag=same_room,tag=dialog_menu] run function luigis_mansion:selection_menu/dialog/exit
 execute if score #dialog Dialog matches 65..2495 as @a[tag=same_room,tag=dialog_menu] run function luigis_mansion:selection_menu/dialog/exit
 execute if score #dialog Dialog matches 2499.. as @a[tag=same_room,tag=dialog_menu] run function luigis_mansion:selection_menu/dialog/exit
 
+scoreboard players reset @a[tag=same_room,tag=!spectator] WarpTime
+execute as @a[tag=same_room,tag=!spectator,tag=game_boy_horror_menu] run function luigis_mansion:selection_menu/game_boy_horror/exit
 tag @e[tag=e_gadd,tag=same_room,limit=1] remove freeze_animation
 tag @e[tag=gooigi,tag=same_room,limit=1] remove freeze_animation
 execute if score #dialog Dialog matches 1..22 as @a[tag=same_room,tag=!spectator] run function luigis_mansion:entities/player/animation/set/idle
@@ -22,7 +24,7 @@ execute if score #dialog Dialog matches 3..144 store result score #temp2 Dialog 
 execute if score #dialog Dialog matches 3..144 store result storage luigis_mansion:data dialogs[0].screen_flicker int 1 run scoreboard players add #temp2 Dialog 1
 execute if score #dialog Dialog matches 3..144 if score #temp2 Dialog matches 20 store result storage luigis_mansion:data dialogs[0].screen_flicker int 1 run scoreboard players set #temp2 Dialog 0
 execute if score #dialog Dialog matches 3..144 if score #temp2 Dialog matches 0..5 run scoreboard players set @a[tag=same_room] ForceScreen 1
-execute if score #dialog Dialog matches 3..144 scoreboard players reset #temp2 Dialog
+execute if score #dialog Dialog matches 3..144 run scoreboard players reset #temp2 Dialog
 execute if score #dialog Dialog matches 23 as @a[tag=same_room,tag=!spectator] run function luigis_mansion:entities/player/animation/set/none
 execute if score #dialog Dialog matches 23 as @a[tag=same_room,tag=!spectator] run function luigis_mansion:entities/player/animation/set/scare/normal
 execute if score #dialog Dialog matches 23..144 as @a[tag=same_room] run function luigis_mansion:other/music/set/non_overwritten_silence
@@ -37,7 +39,7 @@ execute if score #dialog Dialog matches 255 run tellraw @a[tag=same_room] {"type
 execute if score #dialog Dialog matches 255 as @a[tag=same_room] at @s run playsound luigis_mansion:entity.e_gadd.talk.shortlaugh neutral @s ~ ~ ~ 1
 execute if score #dialog Dialog matches 325 run data modify entity @e[tag=e_gadd,tag=same_room,limit=1] data.animation set value {namespace:"3ds_remake",id:"scared"}
 execute if score #dialog Dialog matches 325 as @a[tag=same_room,tag=!spectator] run function luigis_mansion:entities/player/animation/set/none
-execute if score #dialog Dialog matches 325 as @a[tag=same_room,tag=!spectator] run function luigis_mansion:entities/player/animation/set/scare/bash_no_move
+execute if score #dialog Dialog matches 325 as @a[tag=same_room,tag=!spectator] at @s positioned ^ ^ ^1 run function luigis_mansion:entities/player/animation/set/scare/bash_no_move
 execute if score #dialog Dialog matches 375..2498 as @a[tag=same_room,tag=!spectator] run function luigis_mansion:entities/player/animation/set/idle
 execute if score #dialog Dialog matches 355 run data modify entity @e[tag=e_gadd,tag=same_room,limit=1] data.animation set value {namespace:"luigis_mansion",id:"sit"}
 execute if score #dialog Dialog matches 405 run tellraw @a[tag=same_room] {"type":"translatable","translate":"chat.type.text","with":[{"type":"translatable","translate":"3ds_remake:entity.future_e_gadd","color":"green"},{"type":"translatable","translate":"3ds_remake:dialog.future_e_gadd.4"}]}
@@ -57,7 +59,7 @@ execute if score #dialog Dialog matches 865 if score #players Totals matches 2..
 execute if score #dialog Dialog matches 865 as @a[tag=same_room] at @s run playsound luigis_mansion:entity.e_gadd.talk.mah_mah_mah_luigi_oui neutral @s ~ ~ ~ 1
 execute if score #dialog Dialog matches 1055 run data modify entity @e[tag=e_gadd,tag=same_room,limit=1] data.animation set value {namespace:"3ds_remake",id:"protect_eyes"}
 execute if score #dialog Dialog matches 1055..1155 run particle minecraft:flash 784 77 12 0 0 0 0 2 force
-execute if score #dialog Dialog matches 1155 run data modify storage luigis_mansion:data entity {room:-1,animation:{namespace:"3ds_remake",id:"gooigi_pool"}}
+execute if score #dialog Dialog matches 1155 run data modify storage luigis_mansion:data entity set value {room:-1,animation:{namespace:"3ds_remake",id:"gooigi_pool"}}
 execute if score #dialog Dialog matches 1155 positioned 784 77 12 run function 3ds_remake:spawn_entities/gooigi/lab
 execute if score #dialog Dialog matches 1155 run data remove entity @e[tag=e_gadd,tag=same_room,limit=1] data.animation
 execute if score #dialog Dialog matches 1235 run data remove entity @e[tag=same_room,tag=gooigi,limit=1] data.animation

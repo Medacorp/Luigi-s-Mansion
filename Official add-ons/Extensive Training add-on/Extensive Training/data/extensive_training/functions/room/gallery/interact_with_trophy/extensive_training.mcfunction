@@ -1,1 +1,0 @@
-execute if entity @s[scores={FrameChoice=7}] run function extensive_training:room/gallery/interact_with_trophy/tasks

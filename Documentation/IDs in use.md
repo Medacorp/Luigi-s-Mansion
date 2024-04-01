@@ -200,15 +200,3 @@ Numbers shown | 3DS Remake Values | Add-on             | Namespace      | Data p
               | 24 and 26         | 3ds_remake         | 3ds_remake     | "file/3DS Remake"
               | 27                | trill_tower        | trill_tower    | "file/Thrill Tower"
 ```
-
-Trophy tasks:
-
-Values here refers to the FrameChoice score.
-
-```
-Values | Add-on             | Namespace          | Data pack name
-1-5    | 3ds_remake         | 3ds_remake         | "file/3DS Remake"
-6      | e3_demo            | e3_demo            | "file/E3 Demo"
-7      | trill_tower        | trill_tower        | "file/Thrill Tower"
-8      | extensive_training | extensive_training | "file/Extensive Training"
-```

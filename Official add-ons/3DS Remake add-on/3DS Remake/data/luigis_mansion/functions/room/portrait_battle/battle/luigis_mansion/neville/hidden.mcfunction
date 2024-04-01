@@ -1,0 +1,2 @@
+execute in luigis_mansion:hidden run teleport @a 714 20 -33 90 0
+data modify storage luigis_mansion:data current_state.current_data.money_spawned set value ["study_book_1","study_book_2","study_gold_mouse","study_speedy_spirit"]

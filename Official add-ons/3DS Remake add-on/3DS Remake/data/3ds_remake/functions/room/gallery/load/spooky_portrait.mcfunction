@@ -1,0 +1,3 @@
+execute if data storage 3ds_remake:data current_state.selected_portraits{spooky:-1b} run data modify storage 3ds_remake:data current_state.selected_portraits.spooky set from storage luigis_mansion:data current_state.portrait_ghost_ranks.spooky
+data modify storage luigis_mansion:data furniture set value {room:-5,searchable:["interact"],no_dust:1b,interact_animation:{namespace:"luigis_mansion",id:"inspect"},scan_message:'{"type":"translatable","translate":"3ds_remake:message.player.scan_furniture.1"}',search_command:"function 3ds_remake:selection_menu/gallery_portrait/open_menu/portrait_ghost",gallery_portrait:{x:757,y:7,z:-35,x_rotation:0,y_rotation:-90}}
+execute positioned 757.04 9.5 -35 rotated -90 0 run function 3ds_remake:spawn_furniture/gallery_portrait/spooky

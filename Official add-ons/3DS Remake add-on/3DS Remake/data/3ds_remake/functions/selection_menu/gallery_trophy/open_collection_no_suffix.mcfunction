@@ -1,0 +1,1 @@
+$function $(namespace):selection_menu/gallery_trophy/open_collection

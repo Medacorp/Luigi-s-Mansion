@@ -1,7 +1,7 @@
 execute if score #dialog Dialog matches 117..136 if entity @a[tag=same_room,tag=next_dialog_line,limit=1] run scoreboard players set #dialog Dialog 137
 execute if score #dialog Dialog matches 116..135 run scoreboard players add #dialog Dialog 1
 execute if score #dialog Dialog matches 114 if entity @a[tag=same_room,tag=next_dialog_line,limit=1] run scoreboard players set #dialog Dialog 92
-execute if score #dialog Dialog matches 93..114 run scoreboard players add #dialog Dialog 1
+execute if score #dialog Dialog matches 93..113 run scoreboard players add #dialog Dialog 1
 execute if score #dialog Dialog matches 92 if entity @a[tag=same_room,tag=select_dialog_branch_no,limit=1] run scoreboard players set #dialog Dialog 114
 execute if score #dialog Dialog matches 92 if entity @a[tag=same_room,tag=select_dialog_branch_yes,limit=1] run scoreboard players set #dialog Dialog 93
 execute if score #dialog Dialog matches 72..91 if entity @a[tag=same_room,tag=next_dialog_line,limit=1] run scoreboard players set #dialog Dialog 92
@@ -28,9 +28,9 @@ execute if score #dialog Dialog matches 27..47 if entity @a[tag=same_room,tag=sk
 execute if score #dialog Dialog matches 5..25 if entity @a[tag=same_room,tag=skip_dialog,limit=1] run scoreboard players set #dialog Dialog 26
 execute if score #dialog Dialog matches 3 if entity @a[tag=same_room,tag=skip_dialog,limit=1] run scoreboard players set #dialog Dialog 4
 execute if score #dialog Dialog matches ..2 if entity @a[tag=same_room,tag=skip_dialog,limit=1] run scoreboard players set #dialog Dialog 3
-execute if score #dialog Dialog matches ..136 unless score #dialog Dialog matches 3..4 unless score #dialog Dialog matches 26 unless score #dialog Dialog matches 48 unless score #dialog Dialog matches 70 unless score #dialog Dialog matches 92..113 unless score #dialog Dialog matches 115 as @a[tag=same_room,tag=!spectator] unless entity @s[tag=dialog_menu,tag=!dialog_choice_menu] run function luigis_mansion:selection_menu/dialog/original_menu
-execute if score #dialog Dialog matches 3 as @a[tag=same_room,tag=!spectator,tag=!dialog_choice_menu] run function luigis_mansion:selection_menu/dialog/choice/underground_lab
-execute if score #dialog Dialog matches 92 as @a[tag=same_room,tag=!spectator,tag=!dialog_choice_menu] run function luigis_mansion:selection_menu/dialog/choice/underground_lab_load_data
+execute if score #dialog Dialog matches ..136 unless score #dialog Dialog matches 3..4 unless score #dialog Dialog matches 26 unless score #dialog Dialog matches 48 unless score #dialog Dialog matches 70 unless score #dialog Dialog matches 92..113 unless score #dialog Dialog matches 115 as @a[tag=same_room,tag=!spectator] unless entity @s[tag=dialog_menu,tag=!dialog_choice_menu] unless entity @s[tag=using_selection_menu,tag=!dialog_menu] run function luigis_mansion:selection_menu/dialog/original_menu
+execute if score #dialog Dialog matches 3 as @a[tag=same_room,tag=!spectator,tag=!dialog_choice_menu] unless entity @s[tag=using_selection_menu,tag=!dialog_menu] run function luigis_mansion:selection_menu/dialog/choice/underground_lab
+execute if score #dialog Dialog matches 92 as @a[tag=same_room,tag=!spectator,tag=!dialog_choice_menu] unless entity @s[tag=using_selection_menu,tag=!dialog_menu] run function luigis_mansion:selection_menu/dialog/choice/underground_lab_load_data
 execute if score #dialog Dialog matches 4 as @a[tag=same_room,tag=dialog_menu] run function luigis_mansion:selection_menu/dialog/exit
 execute if score #dialog Dialog matches 26 as @a[tag=same_room,tag=dialog_menu] run function luigis_mansion:selection_menu/dialog/exit
 execute if score #dialog Dialog matches 48 as @a[tag=same_room,tag=dialog_menu] run function luigis_mansion:selection_menu/dialog/exit
@@ -39,6 +39,8 @@ execute if score #dialog Dialog matches 93..113 as @a[tag=same_room,tag=dialog_m
 execute if score #dialog Dialog matches 115 as @a[tag=same_room,tag=dialog_menu] run function luigis_mansion:selection_menu/dialog/exit
 execute if score #dialog Dialog matches 137.. as @a[tag=same_room,tag=dialog_menu] run function luigis_mansion:selection_menu/dialog/exit
 
+scoreboard players reset @a[tag=same_room,tag=!spectator] WarpTime
+execute as @a[tag=same_room,tag=!spectator,tag=game_boy_horror_menu] run function luigis_mansion:selection_menu/game_boy_horror/exit
 tag @e[tag=e_gadd,tag=same_room,limit=1] remove freeze_animation
 execute if score #dialog Dialog matches 1 as @e[tag=e_gadd,tag=same_room,limit=1] at @s facing entity @a[tag=same_room,tag=!spectator,sort=nearest,limit=1] feet rotated ~ 0 run teleport @s ~ ~ ~ ~ ~
 execute if score #dialog Dialog matches 1 run data modify entity @e[tag=e_gadd,tag=same_room,limit=1] data.animation set value {namespace:"luigis_mansion",id:"nod"}
@@ -100,7 +102,7 @@ execute if score #dialog Dialog matches 92 as @a[tag=same_room,tag=!spectator] r
 
 #Branch: Load Data; Branch: Yes
 execute if score #dialog Dialog matches 93 as @a[tag=same_room,tag=!spectator] run function luigis_mansion:entities/player/animation/set/nod
-execute if score #dialog Dialog matches 93 run function luigis_mansion:data/load
+execute if score #dialog Dialog matches 93 as @a[tag=select_dialog_branch_yes,limit=1] run function luigis_mansion:data/load
 execute if score #dialog Dialog matches 113 run scoreboard players set #dialog Dialog -1
 
 #Branch: Load Data; Branch: No

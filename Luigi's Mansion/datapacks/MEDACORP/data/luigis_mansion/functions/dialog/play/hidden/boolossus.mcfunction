@@ -6,12 +6,14 @@ execute if score #dialog Dialog matches 6..353 run scoreboard players add #dialo
 execute if score #dialog Dialog matches 2..5 if entity @a[tag=same_room,tag=next_dialog_line,limit=1] run scoreboard players add #dialog Dialog 1
 execute if score #dialog Dialog matches ..1 run scoreboard players add #dialog Dialog 1
 execute if score #dialog Dialog matches ..353 if entity @a[tag=same_room,tag=skip_dialog,limit=1] run scoreboard players set #dialog Dialog 354
-execute if score #dialog Dialog matches ..5 as @a[tag=same_room,tag=!spectator,tag=!dialog_menu] run function luigis_mansion:selection_menu/dialog/original_menu
+execute if score #dialog Dialog matches ..5 as @a[tag=same_room,tag=!spectator,tag=!dialog_menu] unless entity @s[tag=using_selection_menu,tag=!dialog_menu] run function luigis_mansion:selection_menu/dialog/original_menu
 execute if score #dialog Dialog matches 6.. as @a[tag=same_room,tag=dialog_menu] run function luigis_mansion:selection_menu/dialog/exit
 
+scoreboard players reset @a[tag=same_room,tag=!spectator] WarpTime
+execute as @a[tag=same_room,tag=!spectator,tag=game_boy_horror_menu] run function luigis_mansion:selection_menu/game_boy_horror/exit
 tag @e[tag=same_room,nbt={data:{entity:{namespace:"luigis_mansion",id:"boolossus"}}}] remove freeze_animation
 execute if score #dialog Dialog matches 1..5 run tag @e[tag=same_room,nbt={data:{entity:{namespace:"luigis_mansion",id:"boolossus"}}}] remove no_ai
-execute if score #dialog Dialog matches 1..163 as @a[tag=same_room,tag=!spectator,tag=!looking_at_map] run function luigis_mansion:entities/player/animation/set/idle
+execute if score #dialog Dialog matches 1..163 as @a[tag=same_room,tag=!spectator] run function luigis_mansion:entities/player/animation/set/idle
 execute if score #dialog Dialog matches 1 if score #players Totals matches 1 run tellraw @a[tag=same_room] {"type":"translatable","translate":"chat.type.text","with":[{"type":"translatable","translate":"luigis_mansion:entity.boolossus","color":"green"},{"type":"translatable","translate":"luigis_mansion:dialog.boolossus.1","with":[{"type":"selector","selector":"@p[tag=!spectator]"}]}]}
 execute if score #dialog Dialog matches 1 if score #players Totals matches 2.. run tellraw @a[tag=same_room] {"type":"translatable","translate":"chat.type.text","with":[{"type":"translatable","translate":"luigis_mansion:entity.boolossus","color":"green"},{"type":"translatable","translate":"luigis_mansion:dialog.boolossus.1.more"}]}
 
@@ -54,7 +56,7 @@ execute if score #dialog Dialog matches 164 as @a[tag=same_room,tag=!spectator] 
 execute if score #dialog Dialog matches 200 as @e[tag=same_room,nbt={data:{entity:{namespace:"luigis_mansion",id:"boolossus"}}}] run data remove entity @s data.animation
 execute if score #dialog Dialog matches 204..324 unless score #mirrored Selected matches 1 as @a[tag=target_player,scores={AnimationProgress=31},limit=1] at @s rotated ~-5 0 run function luigis_mansion:entities/player/animation/scare/bash_force_move
 execute if score #dialog Dialog matches 204..324 if score #mirrored Selected matches 1 as @a[tag=target_player,scores={AnimationProgress=31},limit=1] at @s rotated ~5 0 run function luigis_mansion:entities/player/animation/scare/bash_force_move
-execute if score #dialog Dialog matches 204.. run scoreboard players set @a[tag=same_room,scores={AnimationProgress=31..}] AnimationProgress 30
+execute if score #dialog Dialog matches 204.. run scoreboard players set @a[tag=same_room,scores={AnimationProgress=30..}] AnimationProgress 29
 execute if score #dialog Dialog matches 343.. as @e[tag=same_room,nbt={data:{entity:{namespace:"luigis_mansion",id:"boolossus"}}}] at @s run teleport @s ~ ~2 ~
 execute if score #dialog Dialog matches 343 as @a[tag=target_player,limit=1] at @s run teleport @s ~ 122 ~
 execute if score #dialog Dialog matches 344 as @a[tag=target_player,limit=1] at @s run teleport @s ~ 124 ~

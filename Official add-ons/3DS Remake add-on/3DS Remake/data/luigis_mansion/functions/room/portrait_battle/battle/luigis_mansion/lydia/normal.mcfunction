@@ -1,0 +1,2 @@
+execute in luigis_mansion:normal run teleport @a 696 111 51 90 0
+data modify storage luigis_mansion:data current_state.current_data.money_spawned set value ["master_bedroom_column_mounted_brown_potted_fern","master_bedroom_master_dresser"]

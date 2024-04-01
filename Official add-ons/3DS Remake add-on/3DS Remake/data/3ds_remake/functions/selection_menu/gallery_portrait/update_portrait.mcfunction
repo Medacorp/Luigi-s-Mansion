@@ -1,0 +1,1 @@
+$execute as @e[nbt={UUID:$(uuid)},limit=1] run data modify entity @s ArmorItems[3] merge from entity @s ArmorItems[3].tag.luigis_mansion.model_data.$(value)

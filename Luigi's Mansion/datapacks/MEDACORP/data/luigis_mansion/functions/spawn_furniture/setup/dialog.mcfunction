@@ -1,1 +1,0 @@
-execute if data storage luigis_mansion:data furniture.dialog run data modify entity @e[tag=this_entity,limit=1] ArmorItems[3].tag.luigis_mansion.dialog set from storage luigis_mansion:data furniture.dialog

@@ -1,3 +1,3 @@
 scoreboard players set #temp Room 24
-execute positioned 743 11 40.0 if data storage luigis_mansion:data current_state.current_data.boos[{name:{namespace:"luigis_mansion",id:"gumboo"},trap_found:0b}] run function luigis_mansion:entities/hidden_boo/load_in_room/spawn_trap {mansion:{namespace:"luigis_mansion",id:"normal"},boo:{namespace:"luigis_mansion",id:"gumboo"}}
-execute positioned 743 11 40.0 run function luigis_mansion:entities/hidden_boo/load_in_room {namespace:"luigis_mansion",id:"normal"}
+execute positioned 743 11 40.0 if data storage luigis_mansion:data current_state.current_data.boos[{name:{namespace:"luigis_mansion",id:"gumboo"},trap_found:0b}] run function luigis_mansion:entities/hidden_boo/load_in_room/spawn_trap {namespace:"luigis_mansion",id:"gumboo"}
+execute positioned 743 11 40.0 run function luigis_mansion:entities/hidden_boo/load_in_room

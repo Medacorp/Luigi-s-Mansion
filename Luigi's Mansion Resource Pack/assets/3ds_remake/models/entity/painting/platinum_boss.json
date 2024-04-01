@@ -1,6 +1,0 @@
-{
-	"parent": "3ds_remake:entity/painting/boss_frame",
-	"textures": {
-		"frame": "3ds_remake:block/painting/platinum_boss_frame"
-	}
-}

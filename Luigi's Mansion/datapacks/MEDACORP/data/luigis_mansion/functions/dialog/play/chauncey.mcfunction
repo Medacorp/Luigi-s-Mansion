@@ -4,9 +4,11 @@ execute if score #dialog Dialog matches 125 run scoreboard players add #dialog D
 execute if score #dialog Dialog matches 122..124 if entity @a[tag=same_room,tag=next_dialog_line,limit=1] run scoreboard players add #dialog Dialog 1
 execute if score #dialog Dialog matches ..121 run scoreboard players add #dialog Dialog 1
 execute if score #dialog Dialog matches ..147 if entity @a[tag=same_room,tag=skip_dialog,limit=1] run scoreboard players set #dialog Dialog 148
-execute if score #dialog Dialog matches 121..127 as @a[tag=same_room,tag=!spectator,tag=!dialog_menu] run function luigis_mansion:selection_menu/dialog/original_menu
+execute if score #dialog Dialog matches 121..127 as @a[tag=same_room,tag=!spectator,tag=!dialog_menu] unless entity @s[tag=using_selection_menu,tag=!dialog_menu] run function luigis_mansion:selection_menu/dialog/original_menu
 execute if score #dialog Dialog matches 128.. as @a[tag=same_room,tag=dialog_menu] run function luigis_mansion:selection_menu/dialog/exit
 
+scoreboard players reset @a[tag=same_room,tag=!spectator] WarpTime
+execute as @a[tag=same_room,tag=!spectator,tag=game_boy_horror_menu] run function luigis_mansion:selection_menu/game_boy_horror/exit
 tag @a[tag=same_room,limit=1] add disable_interact
 tag @e[tag=same_room,tag=ghost,limit=1] remove no_ai
 tag @e[tag=same_room,tag=ghost,limit=1] remove freeze_animation
@@ -16,7 +18,7 @@ execute if score #dialog Dialog matches 1 at @e[nbt={data:{entity:{namespace:"lu
 execute if score #dialog Dialog matches 1..4 as @e[nbt={data:{entity:{namespace:"luigis_mansion",id:"chauncey"}}},tag=same_room,limit=1] at @s if block ^ ^ ^-0.5 #luigis_mansion:ghosts_ignore if block ^ ^1 ^-0.5 #luigis_mansion:ghosts_ignore run teleport @s ^ ^ ^-0.5
 execute if score #dialog Dialog matches 41 run data modify entity @e[nbt={data:{entity:{namespace:"luigis_mansion",id:"chauncey"}}},tag=same_room,limit=1] data.animation set value {namespace:"luigis_mansion",id:"move"}
 execute if score #dialog Dialog matches 121 run data modify entity @e[nbt={data:{entity:{namespace:"luigis_mansion",id:"chauncey"}}},tag=same_room,limit=1] data.animation set value {namespace:"luigis_mansion",id:"ramble"}
-execute if score #dialog Dialog matches 121..147 as @a[tag=same_room,tag=!spectator,tag=!looking_at_map] run function luigis_mansion:entities/player/animation/set/idle
+execute if score #dialog Dialog matches 121..147 as @a[tag=same_room,tag=!spectator] run function luigis_mansion:entities/player/animation/set/idle
 execute if score #dialog Dialog matches 121 if score #players Totals matches 1 run tellraw @a[tag=same_room] {"type":"translatable","translate":"chat.type.text","with":[{"type":"translatable","translate":"luigis_mansion:entity.chauncey","color":"green"},{"type":"translatable","translate":"luigis_mansion:dialog.chauncey.1"}]}
 execute if score #dialog Dialog matches 121 if score #players Totals matches 2.. run tellraw @a[tag=same_room] {"type":"translatable","translate":"chat.type.text","with":[{"type":"translatable","translate":"luigis_mansion:entity.chauncey","color":"green"},{"type":"translatable","translate":"luigis_mansion:dialog.chauncey.1.more"}]}
 

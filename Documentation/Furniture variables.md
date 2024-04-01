@@ -116,3 +116,16 @@ furniture:{
     tags:[] //A list of tags to append to the furniture's default tags used to target the furniture in functions. Default = none.
 }
 ```
+
+3DS Remake exclusive:
+```
+furniture:{
+    gallery_portrait:{ //Used only by gallery portraits if the 3DS Remake add-on is installed. If not all the fields are present this gallery portrait's portrait battles are disabled.
+        x:X, //The integer X coordinate to return to when the portrait battle ends.
+        y:X, //The integer Y coordinate to return to when the portrait battle ends.
+        z:X //The integer Z coordinate to return to when the portrait battle ends.
+        x_rotation:X //The X rotation to return to when the portrait battle ends.
+        x_rotation:Y //The Y rotation to return to when the portrait battle ends.
+    }
+}
+```

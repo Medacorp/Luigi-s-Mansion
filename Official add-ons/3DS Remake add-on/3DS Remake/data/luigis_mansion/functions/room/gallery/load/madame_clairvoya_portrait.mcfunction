@@ -1,0 +1,3 @@
+execute if data storage 3ds_remake:data current_state.selected_portraits{madame_clairvoya:-1b} run data modify storage 3ds_remake:data current_state.selected_portraits.madame_clairvoya set from storage luigis_mansion:data current_state.portrait_ghost_ranks.madame_clairvoya
+data modify storage luigis_mansion:data furniture set value {room:-4,searchable:["interact"],no_dust:1b,interact_animation:{namespace:"luigis_mansion",id:"inspect"},search_command:"function 3ds_remake:selection_menu/gallery_portrait/open_menu/portrait_ghost",gallery_portrait:{x:758,y:77,z:-22,x_rotation:0,y_rotation:-180}}
+execute positioned 758 79.5 -21.04 rotated -180 0 run function luigis_mansion:spawn_furniture/gallery_portrait/madame_clairvoya

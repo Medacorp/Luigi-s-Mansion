@@ -6,9 +6,10 @@ tag @s remove poltergust_malfunction
 scoreboard players reset @s LastRoom
 scoreboard players set @s Sound 0
 
+execute if entity @s[tag=using_selection_menu] run function luigis_mansion:selection_menu/tick
 execute if entity @s[scores={AnimationProgress=1..}] run function luigis_mansion:entities/player/animation/set/none
 
-execute unless entity @a[tag=portrait_battle,limit=1] unless entity @s[scores={Offline=0}] if entity @s[tag=!gooigi] run function luigis_mansion:selection_menu/reset_mansion/original_menu
+execute unless entity @a[tag=portrait_battle,limit=1] unless entity @s[scores={Offline=0}] if entity @s[tag=!using_selection_menu,tag=!gooigi] run function luigis_mansion:selection_menu/reset_mansion/original_menu
 scoreboard players set @s[scores={Offline=-1}] Offline 0
 
 scoreboard players operation #temp ID = @s ID

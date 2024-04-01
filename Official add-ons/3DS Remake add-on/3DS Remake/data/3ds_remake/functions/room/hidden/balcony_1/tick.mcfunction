@@ -1,6 +1,6 @@
 execute unless score #balcony_1 Ticking matches 1 run function #3ds_remake:room/hidden/balcony_1/load
-execute as @a[x=672,y=108,z=37,dx=10,dy=9,dz=8] unless entity @s[x=672,y=99,z=37,dx=10,dy=9,dz=8] unless entity @s[scores={Room=6}] run scoreboard players operation @s LastRoom = @s Room
-execute as @e[x=672,y=108,z=37,dx=10,dy=9,dz=8] unless entity @s[x=672,y=99,z=37,dx=10,dy=9,dz=8] unless entity @s[tag=ghost,tag=vanish] run scoreboard players set @s Room 6
+execute as @a[x=672,y=110,z=37,dx=10,dy=7,dz=8] unless entity @s[x=672,y=101,z=37,dx=10,dy=7,dz=8] unless entity @s[scores={Room=6}] run scoreboard players operation @s LastRoom = @s Room
+execute as @e[x=672,y=110,z=37,dx=10,dy=7,dz=8] unless entity @s[x=672,y=101,z=37,dx=10,dy=7,dz=8] unless entity @s[tag=ghost,tag=vanish] run scoreboard players set @s Room 6
 
 execute as @a[scores={Room=6}] run function 3ds_remake:room/hidden/balcony_1/tick_per_player
 
@@ -9,4 +9,4 @@ execute if entity @e[tag=toad,scores={Room=6},tag=talk] if data storage luigis_m
 
 function #3ds_remake:room/hidden/balcony_1/interactions/room
 
-execute if entity @a[tag=!pause_dialog,scores={Room=6},limit=1] run function 3ds_remake:room/hidden/balcony_1/ghosts
+execute if entity @a[tag=!pause_dialog,scores={Room=6},tag=!spectator,limit=1] run function 3ds_remake:room/hidden/balcony_1/ghosts

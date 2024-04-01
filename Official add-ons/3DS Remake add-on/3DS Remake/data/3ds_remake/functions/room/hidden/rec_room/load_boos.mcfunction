@@ -1,3 +1,3 @@
 scoreboard players set #temp Room 32
-execute positioned 643 11 -45.0 if data storage luigis_mansion:data current_state.current_data.boos[{name:{namespace:"luigis_mansion",id:"booregard"},trap_found:0b}] run function luigis_mansion:entities/hidden_boo/load_in_room/spawn_trap {mansion:{namespace:"3ds_remake",id:"hidden"},boo:{namespace:"luigis_mansion",id:"booregard"}}
-execute positioned 643 11 -45.0 run function luigis_mansion:entities/hidden_boo/load_in_room {namespace:"3ds_remake",id:"hidden"}
+execute positioned 643 11 -45.0 if data storage luigis_mansion:data current_state.current_data.boos[{name:{namespace:"luigis_mansion",id:"booregard"},trap_found:0b}] run function luigis_mansion:entities/hidden_boo/load_in_room/spawn_trap {namespace:"luigis_mansion",id:"booregard"}
+execute positioned 643 11 -45.0 run function luigis_mansion:entities/hidden_boo/load_in_room

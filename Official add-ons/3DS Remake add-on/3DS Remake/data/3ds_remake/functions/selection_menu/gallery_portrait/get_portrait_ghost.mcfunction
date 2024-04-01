@@ -1,0 +1,1 @@
+$function $(namespace):selection_menu/gallery_portrait/get_portrait_ghost/$(id)

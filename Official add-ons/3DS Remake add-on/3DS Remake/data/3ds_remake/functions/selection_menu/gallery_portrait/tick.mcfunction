@@ -1,0 +1,1 @@
+execute if entity @s[tag=gallery_portrait_menu] run function 3ds_remake:selection_menu/gallery_portrait/tick_process

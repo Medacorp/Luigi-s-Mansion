@@ -14,9 +14,9 @@ execute if data storage 3ds_remake:data current_state.trophy.master{done:1b} run
 execute if entity @a[advancements={3ds_remake:3ds_remake/hard_labor=true}] run advancement grant @a only 3ds_remake:3ds_remake/hard_labor
 execute if entity @a[advancements={3ds_remake:3ds_remake/no_touchy=true}] run advancement grant @a only 3ds_remake:3ds_remake/no_touchy
 
-execute if entity @a[advancements={3ds_remake:3ds_remake/hard_labor=false}] run function 3ds_remake:room/gallery/interact_with_trophy/get_portrait_hard_count
+execute if entity @a[advancements={3ds_remake:3ds_remake/hard_labor=false}] run function 3ds_remake:selection_menu/gallery_trophy/get_count/portrait_hard
 execute if entity @a[advancements={3ds_remake:3ds_remake/hard_labor=false}] if score #temp Time matches 23 run advancement grant @a only 3ds_remake:3ds_remake/hard_labor
 scoreboard players reset #temp Time
-execute if entity @a[advancements={3ds_remake:3ds_remake/no_touchy=false}] run function 3ds_remake:room/gallery/interact_with_trophy/get_portrait_no_damage_count
+execute if entity @a[advancements={3ds_remake:3ds_remake/no_touchy=false}] run function 3ds_remake:selection_menu/gallery_trophy/get_count/portrait_no_damage
 execute if entity @a[advancements={3ds_remake:3ds_remake/no_touchy=false}] if score #temp Time matches 23 run advancement grant @a only 3ds_remake:3ds_remake/no_touchy
 scoreboard players reset #temp Time

@@ -38,7 +38,7 @@ execute if entity @s[scores={Dialog=120}] positioned ~-30.5 ~10 ~1.5 run functio
 execute if entity @s[scores={Dialog=120}] run data modify storage luigis_mansion:data entity set value {tags:["intro","attack"],room:73}
 execute if entity @s[scores={Dialog=120}] positioned ~-30.5 ~10 ~-3.5 run function luigis_mansion:spawn_entities/rocking_horse/small
 execute if entity @s[scores={Dialog=140}] as @a[tag=same_room] run function luigis_mansion:entities/player/animation/set/scare/bash_no_move
-execute if entity @s[scores={Dialog=140..629}] run scoreboard players set @a[tag=same_room,scores={AnimationProgress=31..}] AnimationProgress 30
+execute if entity @s[scores={Dialog=140..629}] run scoreboard players set @a[tag=same_room,scores={AnimationProgress=30..}] AnimationProgress 29
 tag @s[scores={Dialog=330}] add visible
 tag @s[scores={Dialog=330}] add big
 execute if entity @s[scores={Dialog=330..420}] run teleport @s ~ ~0.1 ~

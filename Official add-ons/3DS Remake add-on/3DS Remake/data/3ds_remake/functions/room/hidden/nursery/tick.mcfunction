@@ -1,6 +1,6 @@
 execute unless score #nursery Ticking matches 1 run function #3ds_remake:room/hidden/nursery/load
-execute as @a[x=737,y=17,z=53,dx=14,dy=9,dz=20] unless entity @s[scores={Room=10}] run scoreboard players operation @s LastRoom = @s Room
-execute as @e[x=737,y=17,z=53,dx=14,dy=9,dz=20] unless entity @s[tag=ghost,tag=vanish] run scoreboard players set @s Room 10
+execute as @a[x=737,y=19,z=53,dx=14,dy=7,dz=20] unless entity @s[scores={Room=10}] run scoreboard players operation @s LastRoom = @s Room
+execute as @e[x=737,y=19,z=53,dx=14,dy=7,dz=20] unless entity @s[tag=ghost,tag=vanish] run scoreboard players set @s Room 10
 
 execute as @a[scores={Room=10}] run function 3ds_remake:room/hidden/nursery/tick_per_player
 
@@ -10,4 +10,4 @@ scoreboard players reset #temp Wave
 
 function #3ds_remake:room/hidden/nursery/interactions/room
 
-execute if entity @a[tag=!pause_dialog,scores={Room=10},limit=1] run function 3ds_remake:room/hidden/nursery/ghosts
+execute if entity @a[tag=!pause_dialog,scores={Room=10},tag=!spectator,limit=1] run function 3ds_remake:room/hidden/nursery/ghosts
