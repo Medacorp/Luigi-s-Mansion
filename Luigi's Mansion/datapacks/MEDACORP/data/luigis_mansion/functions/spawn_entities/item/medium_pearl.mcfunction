@@ -7,4 +7,5 @@ execute if data storage luigis_mansion:data entity.assign_rank run data modify e
 execute if data storage luigis_mansion:data entity.assign_rank run data modify entity @e[tag=this_entity,limit=1] ArmorItems[3].tag.luigis_mansion.assign_rank.id set from storage luigis_mansion:data entity.assign_rank.id
 execute unless data storage luigis_mansion:data entity{silent:1b} run playsound luigis_mansion:item.medium_pearl.spawn player @a[tag=same_room] ~ ~ ~ 1
 function luigis_mansion:spawn_entities/setup/default
+tag @e[tag=this_entity,limit=1] remove this_entity
 data remove storage luigis_mansion:data entity

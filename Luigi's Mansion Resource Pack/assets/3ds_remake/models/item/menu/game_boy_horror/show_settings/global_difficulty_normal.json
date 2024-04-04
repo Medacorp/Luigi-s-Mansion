@@ -1,0 +1,6 @@
+{
+    "parent": "luigis_mansion:item/menu",
+    "textures": {
+        "layer0": "3ds_remake:item/menu/game_boy_horror/show_settings/global_difficulty_normal"
+    }
+}

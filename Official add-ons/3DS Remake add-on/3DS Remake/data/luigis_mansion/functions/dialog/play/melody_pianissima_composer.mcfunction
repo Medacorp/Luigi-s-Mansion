@@ -1,4 +1,4 @@
-execute if score #dialog Dialog matches 373..375 if entity @a[tag=same_room,tag=next_dialog_line,limit=1] run scoreboard players add #dialog Dialog 1
+execute if score #dialog Dialog matches 393..395 if entity @a[tag=same_room,tag=next_dialog_line,limit=1] run scoreboard players add #dialog Dialog 1
 execute if score #dialog Dialog matches 372..392 run scoreboard players add #dialog Dialog 1
 execute if score #dialog Dialog matches 369..370 if entity @a[tag=same_room,tag=next_dialog_line,limit=1] run scoreboard players add #dialog Dialog 1
 execute if score #dialog Dialog matches 349..368 if entity @a[tag=same_room,tag=next_dialog_line,limit=1] run scoreboard players set #dialog Dialog 369
@@ -12,7 +12,7 @@ execute if score #dialog Dialog matches ..80 run scoreboard players add #dialog 
 execute if score #dialog Dialog matches ..346 if entity @a[tag=same_room,tag=skip_dialog,limit=1] run scoreboard players set #dialog Dialog 347
 execute if score #dialog Dialog matches 348..370 if entity @a[tag=same_room,tag=skip_dialog,limit=1] run scoreboard players set #dialog Dialog 371
 execute if score #dialog Dialog matches 372..395 if entity @a[tag=same_room,tag=skip_dialog,limit=1] run scoreboard players set #dialog Dialog 396
-execute if score #dialog Dialog matches 81..395 unless score #dialog Dialog matches 85..345 unless score #dialog Dialog matches 372..392 as @a[tag=same_room,tag=!spectator] unless entity @s[tag=dialog_menu,tag=!dialog_choice_menu] unless entity @s[tag=using_selection_menu,tag=!dialog_menu] run function luigis_mansion:selection_menu/dialog/original_menu
+execute if score #dialog Dialog matches 81..395 unless score #dialog Dialog matches 85..345 unless score #dialog Dialog matches 347 unless score #dialog Dialog matches 372..392 as @a[tag=same_room,tag=!spectator] unless entity @s[tag=dialog_menu,tag=!dialog_choice_menu] unless entity @s[tag=using_selection_menu,tag=!dialog_menu] run function luigis_mansion:selection_menu/dialog/original_menu
 execute if score #dialog Dialog matches 347 as @a[tag=same_room,tag=!spectator,tag=!dialog_choice_menu] unless entity @s[tag=using_selection_menu,tag=!dialog_menu] run function luigis_mansion:selection_menu/dialog/choice/melody_pianissima_composer
 execute if score #dialog Dialog matches 85..345 as @a[tag=same_room,tag=dialog_menu] run function luigis_mansion:selection_menu/dialog/exit
 execute if score #dialog Dialog matches 372..392 as @a[tag=same_room,tag=dialog_menu] run function luigis_mansion:selection_menu/dialog/exit
@@ -22,6 +22,7 @@ scoreboard players reset @a[tag=same_room,tag=!spectator] WarpTime
 execute as @a[tag=same_room,tag=!spectator,tag=game_boy_horror_menu] run function luigis_mansion:selection_menu/game_boy_horror/exit
 tag @e[nbt={data:{entity:{namespace:"luigis_mansion",id:"melody_pianissima"}}},tag=same_room,limit=1] remove freeze_animation
 tag @e[nbt={data:{entity:{namespace:"luigis_mansion",id:"melody_pianissima"}}},tag=same_room,limit=1] add visible
+execute if score #dialog Dialog matches 1..79 as @a[tag=same_room,tag=!spectator] run function luigis_mansion:entities/player/animation/set/idle
 execute if score #dialog Dialog matches 80 if data storage luigis_mansion:data current_state.current_data.technical_data{melody_pianissima_spoke:1b} run tag @a[tag=same_room,limit=1] add next_dialog_line
 execute if score #dialog Dialog matches 80 if data storage luigis_mansion:data current_state.current_data.technical_data{melody_pianissima_spoke:1b} run scoreboard players set #dialog Dialog 83
 execute if score #dialog Dialog matches 80..83 as @a[tag=same_room,tag=!spectator] run function luigis_mansion:entities/player/animation/set/high_health_idle_no_sound
@@ -65,6 +66,7 @@ execute if score #dialog Dialog matches 370 if score #players Totals matches 2..
 
 execute if score #dialog Dialog matches 371 run scoreboard players set #conservatory Wave -1
 execute if score #dialog Dialog matches 371 run tag @e[nbt={data:{entity:{namespace:"luigis_mansion",id:"melody_pianissima"}}},tag=same_room,limit=1] add vanish
+execute if score #dialog Dialog matches 371 as @a[tag=same_room] run function luigis_mansion:other/music/set/silence
 execute if score #dialog Dialog matches 371 as @a[tag=same_room] run function luigis_mansion:other/music/set/room
 execute if score #dialog Dialog matches 371 as @a[tag=same_room,tag=!spectator] run function luigis_mansion:entities/player/animation/set/none
 execute if score #dialog Dialog matches 371 run scoreboard players set #dialog Dialog -1

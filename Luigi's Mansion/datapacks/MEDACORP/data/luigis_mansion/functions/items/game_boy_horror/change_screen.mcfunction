@@ -3,4 +3,4 @@ execute unless entity @s[scores={ForceScreen=1}] unless score #gbh_clock_increas
 execute unless entity @s[scores={ForceScreen=1}] if entity @s[tag=scanning,nbt=!{Inventory:[{tag:{CustomModelData:2,luigis_mansion:{namespace:"luigis_mansion",id:"game_boy_horror"}}}]}] run function luigis_mansion:items/game_boy_horror/turn_screen_to_scan
 execute if entity @s[scores={ForceScreen=1},nbt=!{Inventory:[{tag:{CustomModelData:1,luigis_mansion:{namespace:"luigis_mansion",id:"game_boy_horror"}}}]}] run function luigis_mansion:items/game_boy_horror/turn_screen_to_call
 tag @s[nbt=!{Inventory:[{tag:{CustomModelData:2,luigis_mansion:{namespace:"luigis_mansion",id:"game_boy_horror"}}}]}] remove scanning
-#scoreboard players reset @s ForceScreen
+scoreboard players reset @s ForceScreen

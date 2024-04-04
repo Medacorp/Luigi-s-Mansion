@@ -24,7 +24,7 @@ execute if score #dialog Dialog matches ..6 if entity @a[tag=same_room,tag=skip_
 execute if score #dialog Dialog matches 8..49 if entity @a[tag=same_room,tag=skip_dialog,limit=1] run scoreboard players set #dialog Dialog 50
 execute if score #dialog Dialog matches 51..129 if entity @a[tag=same_room,tag=skip_dialog,limit=1] run scoreboard players set #dialog Dialog 130
 execute if score #dialog Dialog matches 131..209 if entity @a[tag=same_room,tag=skip_dialog,limit=1] run scoreboard players set #dialog Dialog 210
-execute if score #dialog Dialog matches ..9 unless score #dialog Dialog matches 5..6 as @a[tag=same_room,tag=!spectator,tag=!dialog_menu] unless entity @s[tag=using_selection_menu,tag=!dialog_menu] run function luigis_mansion:selection_menu/dialog/original_menu
+execute if score #dialog Dialog matches ..9 unless score #dialog Dialog matches 5..6 as @a[tag=same_room,tag=!spectator] unless entity @s[tag=dialog_menu,tag=!dialog_choice_menu] unless entity @s[tag=using_selection_menu,tag=!dialog_menu] run function luigis_mansion:selection_menu/dialog/original_menu
 execute if score #dialog Dialog matches 5..6 as @a[tag=same_room,tag=dialog_menu] run function luigis_mansion:selection_menu/dialog/exit
 execute if score #dialog Dialog matches 10.. as @a[tag=same_room,tag=dialog_menu] run function luigis_mansion:selection_menu/dialog/exit
 
@@ -61,6 +61,7 @@ execute if score #dialog Dialog matches 4 run scoreboard players reset #temp5 Ti
 execute if score #dialog Dialog matches 4 run scoreboard players reset #temp6 Time
 
 execute if score #dialog Dialog matches 5 run function luigis_mansion:room/training_room/turn_lights/off
+execute if score #dialog Dialog matches 5 run scoreboard players set #training_room TrainingRoomScore 0
 execute if score #dialog Dialog matches 5 as @a[tag=same_room,tag=!spectator] run function luigis_mansion:entities/player/animation/set/none
 
 execute if score #dialog Dialog matches 6 unless entity @e[tag=ghost,tag=same_room,limit=1] unless entity @a[x=795.0,y=77,z=-8.0,distance=..5,limit=1] run particle minecraft:crit 795.0 77 -8.0 2.5 2.5 2.5 0 10 force @a[tag=same_room]

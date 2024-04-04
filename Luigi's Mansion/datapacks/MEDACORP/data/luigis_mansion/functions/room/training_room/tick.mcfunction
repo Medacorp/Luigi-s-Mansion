@@ -3,7 +3,7 @@ execute as @a[x=782,y=73,z=-21,dx=17,dy=9,dz=25] unless entity @s[scores={Room=-
 execute as @e[x=782,y=73,z=-21,dx=17,dy=9,dz=25] unless entity @s[tag=ghost,tag=vanish] run scoreboard players set @s Room -2
 
 execute if score #training_choice Selected matches 0 unless data storage luigis_mansion:data dialogs[{room:-2}] run data modify storage luigis_mansion:data dialogs append value {name:{namespace:"luigis_mansion",id:"training_room/program"},room:-2,progress:0}
-#execute if score #training_choice Selected matches 1 unless data storage luigis_mansion:data dialogs[{room:-2}] run data modify storage luigis_mansion:data dialogs append value {name:{namespace:"luigis_mansion",id:"training_room/option"},room:-2,progress:0}
+execute if score #training_choice Selected matches 1 unless data storage luigis_mansion:data dialogs[{room:-2}] run data modify storage luigis_mansion:data dialogs append value {name:{namespace:"luigis_mansion",id:"training_room/option"},room:-2,progress:0}
 
 execute as @a[scores={Room=-2}] run function luigis_mansion:room/training_room/tick_per_player
 

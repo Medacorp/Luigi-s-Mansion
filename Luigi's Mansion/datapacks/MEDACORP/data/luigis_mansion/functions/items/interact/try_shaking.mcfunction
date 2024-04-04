@@ -1,9 +1,9 @@
-execute at @s[nbt={OnGround:1b}] rotated ~ 0 run summon minecraft:marker ^ ^0.1 ^1 {Tags:["interact","manual","check","1","down"]}
-execute at @s[nbt={OnGround:1b}] rotated ~ 0 run summon minecraft:marker ^ ^1.1 ^1 {Tags:["interact","manual","check","2","up"]}
-execute at @s[nbt={OnGround:1b}] rotated ~ 0 run summon minecraft:marker ^ ^2.1 ^1 {Tags:["interact","manual","check","3"]}
-execute at @s[nbt={OnGround:0b,active_effects:[{id:"minecraft:levitation"}]}] rotated ~ 0 run summon minecraft:marker ^ ^0.1 ^1 {Tags:["interact","manual","check","1","up"]}
-execute at @s[nbt={OnGround:0b,active_effects:[{id:"minecraft:levitation"}]}] rotated ~ 0 run summon minecraft:marker ^ ^1.1 ^1 {Tags:["interact","manual","check","2","down"]}
-execute at @s[nbt={OnGround:0b,active_effects:[{id:"minecraft:levitation"}]}] rotated ~ 0 run summon minecraft:marker ^ ^-0.9 ^1 {Tags:["interact","manual","check","3"]}
+execute at @s unless block ~ ~-0.1 ~ #luigis_mansion:interact_ignore rotated ~ 0 run summon minecraft:marker ^ ^0.1 ^1 {Tags:["interact","manual","check","1","down"]}
+execute at @s unless block ~ ~-0.1 ~ #luigis_mansion:interact_ignore rotated ~ 0 run summon minecraft:marker ^ ^1.1 ^1 {Tags:["interact","manual","check","2","up"]}
+execute at @s unless block ~ ~-0.1 ~ #luigis_mansion:interact_ignore rotated ~ 0 run summon minecraft:marker ^ ^2.1 ^1 {Tags:["interact","manual","check","3"]}
+execute at @s if block ~ ~-0.1 ~ #luigis_mansion:interact_ignore unless block ~ ~2 ~ #luigis_mansion:interact_ignore rotated ~ 0 run summon minecraft:marker ^ ^0.1 ^1 {Tags:["interact","manual","check","1","up"]}
+execute at @s if block ~ ~-0.1 ~ #luigis_mansion:interact_ignore unless block ~ ~2 ~ #luigis_mansion:interact_ignore rotated ~ 0 run summon minecraft:marker ^ ^1.1 ^1 {Tags:["interact","manual","check","2","down"]}
+execute at @s if block ~ ~-0.1 ~ #luigis_mansion:interact_ignore unless block ~ ~2 ~ #luigis_mansion:interact_ignore rotated ~ 0 run summon minecraft:marker ^ ^-0.9 ^1 {Tags:["interact","manual","check","3"]}
 #to delete
 execute as @e[tag=interact,tag=manual] at @s unless block ~ ~ ~ minecraft:air unless block ~ ~ ~ minecraft:barrier unless block ~ ~ ~ minecraft:light run function luigis_mansion:room/interactions
 #/to delete

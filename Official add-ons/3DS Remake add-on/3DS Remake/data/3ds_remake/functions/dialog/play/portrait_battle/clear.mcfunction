@@ -6,7 +6,7 @@ execute if score #dialog Dialog matches ..129 if entity @a[tag=same_room,tag=ski
 execute if score #dialog Dialog matches 130..131 as @a[tag=same_room,tag=!spectator,tag=!gallery_portrait_menu] unless entity @s[tag=using_selection_menu] run function 3ds_remake:selection_menu/gallery_portrait/portrait_battle_results
 execute if score #dialog Dialog matches 132 as @a[tag=same_room,tag=!spectator,tag=!dialog_menu] unless entity @s[tag=using_selection_menu] run function luigis_mansion:selection_menu/dialog/choice/save
 execute if score #dialog Dialog matches ..129 as @a[tag=same_room,tag=dialog_menu] run function luigis_mansion:selection_menu/dialog/exit
-execute if score #dialog Dialog matches 131.. as @a[tag=same_room,tag=dialog_menu] run function luigis_mansion:selection_menu/dialog/exit
+execute if score #dialog Dialog matches 133.. as @a[tag=same_room,tag=dialog_menu] run function luigis_mansion:selection_menu/dialog/exit
 
 scoreboard players reset @a[tag=same_room,tag=!spectator] WarpTime
 execute as @a[tag=same_room,tag=!spectator,tag=game_boy_horror_menu] run function luigis_mansion:selection_menu/game_boy_horror/exit
@@ -16,7 +16,7 @@ execute if score #dialog Dialog matches 1 store result storage luigis_mansion:da
 execute if score #dialog Dialog matches 1 run function luigis_mansion:spawn_entities/ghost/empty_marker
 execute if score #dialog Dialog matches 1..132 as @a[tag=same_room,tag=!spectator] run function luigis_mansion:entities/player/animation/set/idle
 execute if score #dialog Dialog matches 1..132 as @a[tag=same_room] run function luigis_mansion:other/music/set/area_boss_defeated
-execute if score #dialog Dialog matches 70 run title @a[tag=same_room] title {"type":"translatable","translate":"3ds_remake:message.portrait_battle.clear"}
+execute if score #dialog Dialog matches 70 run title @a[tag=same_room] title {"type":"translatable","translate":"3ds_remake:message.gallery.portrait_battle.clear"}
 execute if score #dialog Dialog matches 130..132 as @a[tag=same_room] run function luigis_mansion:other/music/set/portraits
 
 execute if score #dialog Dialog matches 133 as @a[tag=same_room,tag=!spectator] run function luigis_mansion:entities/player/animation/set/none
