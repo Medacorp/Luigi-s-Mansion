@@ -5,8 +5,6 @@ data modify entity @s[scores={ActionTime=1}] data.animation set value {namespace
 data modify entity @s[scores={ActionTime=41}] data.animation set value {namespace:"luigis_mansion",id:"punch"}
 execute if entity @s[scores={ActionTime=41}] run playsound luigis_mansion:entity.ghost.punch hostile @a[tag=same_room] ~ ~ ~ 1
 $execute if entity @s[scores={ActionTime=41}] run playsound $(namespace):entity.$(id).attack hostile @a[tag=same_room] ~ ~ ~ 1
-execute if entity @s[scores={ActionTime=41..50}] unless score #mirrored Selected matches 1 run teleport @s ~ ~ ~ ~-36 ~
-execute if entity @s[scores={ActionTime=41..50}] if score #mirrored Selected matches 1 run teleport @s ~ ~ ~ ~36 ~
 execute at @s[scores={ActionTime=41}] positioned ^ ^ ^0.5 as @e[distance=..1,tag=game_boy_horror_location] run function luigis_mansion:entities/game_boy_horror_location/bring_player_back
 execute at @s[scores={ActionTime=41}] positioned ^ ^ ^0.5 if entity @a[distance=..1,scores={Invulnerable=0},tag=!spectator] run tag @s add laugh
 execute at @s[scores={ActionTime=41}] run data modify storage luigis_mansion:data damage set value {method:{namespace:"luigis_mansion",id:"punch"},amount:0,animation:{namespace:"luigis_mansion",id:"knockback/large"},no_delete:1b}

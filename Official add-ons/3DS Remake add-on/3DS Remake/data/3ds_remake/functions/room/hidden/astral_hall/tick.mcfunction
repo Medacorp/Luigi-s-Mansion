@@ -1,6 +1,6 @@
 execute unless score #astral_hall Ticking matches 1 run function #3ds_remake:room/hidden/astral_hall/load
 execute as @a[x=660,y=19,z=-93,dx=12,dy=7,dz=22] unless entity @s[scores={Room=45}] run scoreboard players operation @s LastRoom = @s Room
-execute as @e[x=660,y=19,z=-93,dx=12,dy=7,dz=22] unless entity @s[tag=ghost,tag=vanish] run scoreboard players set @s Room 45
+scoreboard players set @e[x=660,y=19,z=-93,dx=12,dy=7,dz=22] Room 45
 
 execute as @a[scores={Room=45}] run function 3ds_remake:room/hidden/astral_hall/tick_per_player
 

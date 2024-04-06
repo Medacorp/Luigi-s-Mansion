@@ -6,8 +6,7 @@ $execute if entity @s[scores={ActionTime=21}] run playsound $(namespace):entity.
 data modify entity @s[scores={ActionTime=41}] data.animation set value {namespace:"luigis_mansion",id:"punch"}
 execute if entity @s[scores={ActionTime=41}] run playsound luigis_mansion:entity.ghost.uppercut hostile @a[tag=same_room] ~ ~ ~ 1
 execute if entity @s[scores={ActionTime=41..60}] run scoreboard players set #temp Move 30
-execute if entity @s[scores={ActionTime=41..60}] unless score #mirrored Selected matches 1 run function luigis_mansion:entities/purple_puncher/attack/uppercut/normal
-execute if entity @s[scores={ActionTime=41..60}] if score #mirrored Selected matches 1 run function luigis_mansion:entities/purple_puncher/attack/uppercut/mirrored
+execute if entity @s[scores={ActionTime=41..60}] run function luigis_mansion:entities/ghost/move_forward
 execute at @s[scores={ActionTime=41..60}] positioned ^ ^ ^0.5 as @e[distance=..1,tag=game_boy_horror_location] run function luigis_mansion:entities/game_boy_horror_location/bring_player_back
 execute at @s[scores={ActionTime=41..60}] positioned ^ ^ ^0.5 if entity @a[distance=..1,scores={Invulnerable=0},tag=!spectator] run tag @s add laugh
 execute at @s[scores={ActionTime=41..60}] run data modify storage luigis_mansion:data damage set value {method:{namespace:"luigis_mansion",id:"punch"},amount:0,animation:{namespace:"luigis_mansion",id:"knockback/large"},no_delete:1b}

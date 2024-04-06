@@ -1,4 +1,2 @@
-scoreboard players add @s AnimationProgress 1
-data merge entity @s[scores={AnimationProgress=1}] {Pose:{Head:[0.0f,0.01f,0.0f]}}
-execute unless data storage luigis_mansion:data ghost{tags:["maskless"]} run data modify entity @s[scores={AnimationProgress=1}] ArmorItems[3] merge from entity @s ArmorItems[3].tag.luigis_mansion.model_data.equipment
-scoreboard players set @s[scores={AnimationProgress=19}] AnimationProgress 0
+execute unless score #mirrored Selected matches 1 run function luigis_mansion:animations/ghost_guy/vanish/normal/head
+execute if score #mirrored Selected matches 1 run function luigis_mansion:animations/ghost_guy/vanish/mirrored/head

@@ -1,6 +1,6 @@
 execute unless score #chauncey_battle Ticking matches 1 run function #luigis_mansion:room/hidden/chauncey_battle/load
 execute as @a[x=782,y=5,z=-69,dx=41,dy=34,dz=41] run scoreboard players set @s LastRoom 73
-execute as @e[x=782,y=5,z=-69,dx=41,dy=34,dz=41] unless entity @s[tag=ghost,tag=vanish] run scoreboard players set @s Room 73
+scoreboard players set @e[x=782,y=5,z=-69,dx=41,dy=34,dz=41] Room 73
 
 execute if data storage luigis_mansion:data current_state.current_data.portrait_ghosts.luigis_mansion.chauncey{health:0} run scoreboard players add #chauncey_battle ReturnTimer 1
 execute if score #chauncey_battle ReturnTimer matches 100.. as @a[scores={Room=73}] run function luigis_mansion:room/hidden/chauncey_battle/clear_nursery

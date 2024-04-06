@@ -1,1 +1,2 @@
-data merge entity @s {Pose:{Head:[0.0f,0.0f,0.01f]}}
+execute unless score #mirrored Selected matches 1 run function luigis_mansion:animations/twirler/appear/beta/normal/left_arm
+execute if score #mirrored Selected matches 1 run function luigis_mansion:animations/twirler/appear/beta/mirrored/left_arm

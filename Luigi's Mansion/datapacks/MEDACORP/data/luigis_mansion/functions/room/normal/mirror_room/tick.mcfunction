@@ -1,6 +1,6 @@
 execute unless score #mirror_room Ticking matches 1 run function #luigis_mansion:room/normal/mirror_room/load
 execute as @a[x=734,y=10,z=-63,dx=14,dy=7,dz=21] unless entity @s[scores={Room=21}] run scoreboard players operation @s LastRoom = @s Room
-execute as @e[x=734,y=10,z=-63,dx=14,dy=7,dz=21] unless entity @s[tag=ghost,tag=vanish] run scoreboard players set @s Room 21
+scoreboard players set @e[x=734,y=10,z=-63,dx=14,dy=7,dz=21] Room 21
 
 execute as @e[scores={Room=21}] unless entity @s[type=!minecraft:armor_stand,type=!minecraft:item_frame] run scoreboard players set @s MirrorX 735
 

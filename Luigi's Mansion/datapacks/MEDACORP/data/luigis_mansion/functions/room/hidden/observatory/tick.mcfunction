@@ -1,6 +1,6 @@
 execute unless score #observatory Ticking matches 1 run function #luigis_mansion:room/hidden/observatory/load
 execute as @a[x=627,y=15,z=87,dx=24,dy=12,dz=72] unless entity @s[scores={Room=46}] run scoreboard players operation @s LastRoom = @s Room
-execute as @e[x=627,y=15,z=87,dx=24,dy=12,dz=72] unless entity @s[tag=ghost,tag=vanish] run scoreboard players set @s Room 46
+scoreboard players set @e[x=627,y=15,z=87,dx=24,dy=12,dz=72] Room 46
 
 execute as @a[scores={Room=46}] run function luigis_mansion:room/hidden/observatory/tick_per_player
 

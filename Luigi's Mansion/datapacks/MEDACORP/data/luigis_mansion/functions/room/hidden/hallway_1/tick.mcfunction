@@ -1,6 +1,6 @@
 execute unless score #hallway_1 Ticking matches 1 run function #luigis_mansion:room/hidden/hallway_1/load
 execute as @a[x=735,y=19,z=-4,dx=7,dy=7,dz=21] unless entity @s[x=743,y=10,z=-4,dx=15,dy=16,dz=21] unless entity @s[scores={Room=2}] run scoreboard players operation @s LastRoom = @s Room
-execute as @e[x=735,y=19,z=-4,dx=7,dy=7,dz=21] unless entity @s[x=743,y=10,z=-4,dx=15,dy=16,dz=21] unless entity @s[tag=ghost,tag=vanish] run scoreboard players set @s Room 2
+execute as @e[x=735,y=19,z=-4,dx=7,dy=7,dz=21] unless entity @s[x=743,y=10,z=-4,dx=15,dy=16,dz=21] run scoreboard players set @s Room 2
 tag @e[tag=ghost,scores={Room=2}] add no_hidden_move
 
 execute as @a[scores={Room=2}] run function luigis_mansion:room/hidden/hallway_1/tick_per_player

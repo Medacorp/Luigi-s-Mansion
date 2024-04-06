@@ -11,7 +11,5 @@ execute at @s[scores={ActionTime=20}] run data modify storage luigis_mansion:dat
 execute at @s[scores={ActionTime=20}] run data modify storage luigis_mansion:data damage.attacker set from entity @s UUID
 execute at @s[scores={ActionTime=20}] as @a[distance=..2,tag=!spectator] run function luigis_mansion:entities/player/damage
 execute at @s[scores={ActionTime=20}] run data remove storage luigis_mansion:data damage
-execute unless score #mirrored Selected matches 1 run teleport @s[scores={ActionTime=20..29}] ~ ~ ~ ~-36 ~
-execute if score #mirrored Selected matches 1 run teleport @s[scores={ActionTime=20..29}] ~ ~ ~ ~36 ~
 tag @s[scores={ActionTime=30}] remove attack
 scoreboard players set @s[scores={ActionTime=30}] ActionTime 0

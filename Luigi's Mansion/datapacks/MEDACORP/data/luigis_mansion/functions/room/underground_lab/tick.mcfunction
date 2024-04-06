@@ -1,6 +1,6 @@
 execute unless score #underground_lab Ticking matches 1 run function #luigis_mansion:room/underground_lab/load
 execute as @a[x=779,y=74,z=5,dx=18,dy=14,dz=19] unless entity @s[scores={Room=-1}] run scoreboard players set @s LastRoom -1
-execute as @e[x=779,y=74,z=5,dx=18,dy=14,dz=19] unless entity @s[tag=ghost,tag=vanish] run scoreboard players set @s Room -1
+scoreboard players set @e[x=779,y=74,z=5,dx=18,dy=14,dz=19] Room -1
 
 scoreboard players set @a[tag=!spectator,x=788,y=87,z=21,dx=1,dy=4,dz=0] Room 0
 execute as @a[tag=!spectator,x=788,y=87,z=21,dx=1,dy=4,dz=0] unless entity @s[scores={MusicGroup=0,MusicType=0}] run function luigis_mansion:other/music/set/silence

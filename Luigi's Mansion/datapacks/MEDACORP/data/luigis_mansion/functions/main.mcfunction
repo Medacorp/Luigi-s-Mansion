@@ -3,7 +3,7 @@ execute unless entity @a[tag=!loaded_chunks,limit=1] if entity @a[tag=loaded_chu
 execute as @a at @s run function luigis_mansion:main/players
 execute unless entity @a[tag=!loaded_chunks,limit=1] positioned as @a[tag=loaded_chunks,limit=1] run function luigis_mansion:room/detect
 scoreboard players set #freeze_timer Selected 0
-execute as @e[type=!minecraft:player,tag=!reflection] at @s run function luigis_mansion:main/non_players
+execute as @e[type=!minecraft:player,tag=!reflection,tag=!model_piece] at @s run function luigis_mansion:main/non_players
 execute as @e[type=!minecraft:player,tag=reflection] at @s run function luigis_mansion:main/reflections
 execute if data storage luigis_mansion:data reflections[-1] run function luigis_mansion:entities/reflection/create
 execute as @e[type=minecraft:armor_stand,tag=model_piece] at @s run function luigis_mansion:animations/model_piece

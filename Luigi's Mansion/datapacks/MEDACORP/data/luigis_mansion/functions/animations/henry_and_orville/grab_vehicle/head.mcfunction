@@ -1,0 +1,2 @@
+execute unless score #mirrored Selected matches 1 run function luigis_mansion:animations/henry_and_orville/grab_vehicle/normal/head
+execute if score #mirrored Selected matches 1 run function luigis_mansion:animations/henry_and_orville/grab_vehicle/mirrored/head

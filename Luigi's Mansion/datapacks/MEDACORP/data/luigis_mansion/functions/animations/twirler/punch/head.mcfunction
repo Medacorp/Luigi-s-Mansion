@@ -1,3 +1,2 @@
-scoreboard players add @s AnimationProgress 1
-data merge entity @s[scores={AnimationProgress=1}] {Pose:{Head:[0.0f,0.0f,0.01f]}}
-scoreboard players set @s[scores={AnimationProgress=20}] AnimationProgress 0
+execute unless score #mirrored Selected matches 1 run function luigis_mansion:animations/twirler/punch/normal/head
+execute if score #mirrored Selected matches 1 run function luigis_mansion:animations/twirler/punch/mirrored/head

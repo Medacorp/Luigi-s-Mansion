@@ -1,6 +1,6 @@
 execute unless score #bottom_of_the_well Ticking matches 1 run function #luigis_mansion:room/normal/bottom_of_the_well/load
 execute as @a[x=645,y=92,z=-9,dx=6,dy=7,dz=10] unless entity @s[x=648.5,y=93,z=-9.5,distance=..0.7] unless entity @s[scores={Room=31}] run scoreboard players operation @s LastRoom = @s Room
-execute as @e[x=645,y=92,z=-9,dx=6,dy=7,dz=10] unless entity @s[x=648.5,y=93,z=-9.5,distance=..0.7] unless entity @s[tag=ghost,tag=vanish] run scoreboard players set @s Room 31
+execute as @e[x=645,y=92,z=-9,dx=6,dy=7,dz=10] unless entity @s[x=648.5,y=93,z=-9.5,distance=..0.7] run scoreboard players set @s Room 31
 tag @e[tag=ghost,scores={Room=31}] add no_hidden_move
 
 execute as @e[scores={Room=31}] unless entity @s[type=!minecraft:armor_stand,type=!minecraft:item_frame] run scoreboard players set @s MirrorZ -26

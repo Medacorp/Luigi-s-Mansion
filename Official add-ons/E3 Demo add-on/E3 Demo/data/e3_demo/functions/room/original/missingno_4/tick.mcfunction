@@ -1,6 +1,6 @@
 execute unless score #missingno_4 Ticking matches 1 run function #e3_demo:room/original/missingno_4/load
 execute as @a[x=678,y=10,z=-55,dx=8,dy=16,dz=25] unless entity @s[scores={Room=20}] run scoreboard players operation @s LastRoom = @s Room
-execute as @e[x=678,y=10,z=-55,dx=8,dy=16,dz=25] unless entity @s[tag=ghost,tag=vanish] run scoreboard players set @s Room 20
+scoreboard players set @e[x=678,y=10,z=-55,dx=8,dy=16,dz=25] Room 20
 
 execute as @a[scores={Room=20}] run function e3_demo:room/original/missingno_4/tick_per_player
 

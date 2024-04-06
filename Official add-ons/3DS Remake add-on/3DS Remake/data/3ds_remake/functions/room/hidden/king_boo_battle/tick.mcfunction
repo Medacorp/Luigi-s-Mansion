@@ -1,6 +1,6 @@
 execute unless score #king_boo_battle Ticking matches 1 run function #3ds_remake:room/hidden/king_boo_battle/load
 execute as @a[x=465,y=24,z=-40,dx=49,dy=61,dz=85] run scoreboard players set @s LastRoom 76
-execute as @e[x=465,y=24,z=-40,dx=49,dy=61,dz=85] unless entity @s[tag=ghost,tag=vanish] run scoreboard players set @s Room 76
+scoreboard players set @e[x=465,y=24,z=-40,dx=49,dy=61,dz=85] Room 76
 
 execute if data storage luigis_mansion:data current_state.current_data.portrait_ghosts.luigis_mansion.king_boo{health:0} run scoreboard players add #king_boo_battle ReturnTimer 1
 execute if score #king_boo_battle ReturnTimer matches 100.. as @a[scores={Room=76}] run function 3ds_remake:room/hidden/king_boo_battle/clear_secret_altar
