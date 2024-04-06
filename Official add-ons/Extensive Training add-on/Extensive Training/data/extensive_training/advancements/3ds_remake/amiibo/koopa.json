@@ -8,7 +8,7 @@
             "type": "translatable", "translate": "extensive_training:advancements.3ds_remake.amiibo.koopa"
         },
         "description": {
-            "type": "translatable", "translate": "extensive_training:dialog.underground_lab.change_amiibo.koopa.hover"
+            "type": "translatable", "translate": "extensive_training:item.menu.dialog.underground_lab.change_amiibo.koopa.description"
         }
     },
 	"parent": "3ds_remake:3ds_remake/amiibo",

@@ -8,7 +8,7 @@
             "type": "translatable", "translate": "e3_demo:advancements.3ds_remake.amiibo.e_gadd"
         },
         "description": {
-            "type": "translatable", "translate": "e3_demo:dialog.underground_lab.change_amiibo.e_gadd.hover"
+            "type": "translatable", "translate": "e3_demo:item.menu.dialog.underground_lab.change_amiibo.e_gadd.description"
         }
     },
 	"parent": "3ds_remake:3ds_remake/amiibo",

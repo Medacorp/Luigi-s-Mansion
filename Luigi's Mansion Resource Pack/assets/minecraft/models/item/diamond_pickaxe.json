@@ -11000,7 +11000,7 @@
             "predicate": {
                 "damaged": 0,
                 "damage": 0.0136,
-                "custom_model_data": -30
+                "custom_model_data": -29
             },
             "model": "3ds_remake:item/menu/game_boy_horror/show_settings/global_difficulty_normal"
         },
@@ -11008,7 +11008,7 @@
             "predicate": {
                 "damaged": 0,
                 "damage": 0.0136,
-                "custom_model_data": -29
+                "custom_model_data": -28
             },
             "model": "3ds_remake:item/menu/game_boy_horror/show_settings/global_difficulty_hard"
         },
@@ -11016,7 +11016,7 @@
             "predicate": {
                 "damaged": 0,
                 "damage": 0.0136,
-                "custom_model_data": -28
+                "custom_model_data": -27
             },
             "model": "3ds_remake:item/menu/gallery_portrait/new_record"
         },
@@ -11024,17 +11024,9 @@
             "predicate": {
                 "damaged": 0,
                 "damage": 0.0136,
-                "custom_model_data": -27
-            },
-            "model": "3ds_remake:item/menu/gallery_portrait/ghost"
-        },
-        {
-            "predicate": {
-                "damaged": 0,
-                "damage": 0.0136,
                 "custom_model_data": -26
             },
-            "model": "3ds_remake:item/menu/gallery_portrait/boo"
+            "model": "3ds_remake:item/menu/gallery_portrait/ghost"
         },
         {
             "predicate": {
@@ -11939,6 +11931,30 @@
                 "custom_model_data": 87
             },
             "model": "luigis_mansion:item/menu/dialog/choice/luigi"
+        },
+        {
+            "predicate": {
+                "damaged": 0,
+                "damage": 0.0136,
+                "custom_model_data": 88
+            },
+            "model": "luigis_mansion:item/menu/dialog/choice/gallery"
+        },
+        {
+            "predicate": {
+                "damaged": 0,
+                "damage": 0.0136,
+                "custom_model_data": 89
+            },
+            "model": "luigis_mansion:item/menu/dialog/choice/ghost_portrificationizer"
+        },
+        {
+            "predicate": {
+                "damaged": 0,
+                "damage": 0.0136,
+                "custom_model_data": 90
+            },
+            "model": "luigis_mansion:item/menu/dialog/choice/training"
         },
         {
             "predicate": {

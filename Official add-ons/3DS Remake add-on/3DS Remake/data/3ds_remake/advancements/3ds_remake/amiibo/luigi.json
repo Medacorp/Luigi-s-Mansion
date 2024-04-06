@@ -8,7 +8,7 @@
             "type": "translatable", "translate": "3ds_remake:advancements.3ds_remake.amiibo.luigi"
         },
         "description": {
-            "type": "translatable", "translate": "3ds_remake:dialog.underground_lab.change_amiibo.luigi.hover"
+            "type": "translatable", "translate": "3ds_remake:item.menu.dialog.underground_lab.change_amiibo.luigi.description"
         }
     },
 	"parent": "3ds_remake:3ds_remake/amiibo/boo",

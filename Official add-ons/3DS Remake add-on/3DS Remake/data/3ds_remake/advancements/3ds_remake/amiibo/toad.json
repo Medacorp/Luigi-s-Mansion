@@ -8,7 +8,7 @@
             "type": "translatable", "translate": "3ds_remake:advancements.3ds_remake.amiibo.toad"
         },
         "description": {
-            "type": "translatable", "translate": "3ds_remake:dialog.underground_lab.change_amiibo.toad.hover"
+            "type": "translatable", "translate": "3ds_remake:item.menu.dialog.underground_lab.change_amiibo.toad.description"
         }
     },
 	"parent": "3ds_remake:3ds_remake/amiibo",
