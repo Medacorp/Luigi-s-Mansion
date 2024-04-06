@@ -1,4 +1,4 @@
-$summon minecraft:armor_stand ~ ~$(up) ~ {CustomName:'{"type":"text","text":"∞","color":"light_purple"}',Marker:1b,Invisible:1b,NoGravity:1b,CustomNameVisible:1b,Fire:32767s,Tags:["health_display","this_health_display"]}
+$execute positioned ~ ~-0.8 ~ run summon minecraft:armor_stand ~ ~$(up) ~ {CustomName:'{"type":"text","text":"∞","color":"light_purple"}',Marker:1b,Invisible:1b,NoGravity:1b,CustomNameVisible:1b,Fire:32767s,Tags:["health_display","this_health_display"]}
 scoreboard players operation @e[tag=this_health_display,limit=1] Room = #temp Room
 scoreboard players operation @e[tag=this_health_display,limit=1] GhostNr = @s GhostNr
 scoreboard players add #temp Health 99

@@ -25,7 +25,7 @@ scoreboard players set @e[tag=this_entity,limit=1] StunTime 0
 scoreboard players set @e[tag=this_entity,limit=1] VulnerableTime 0
 scoreboard players set @e[tag=this_entity,limit=1] TopVacuumDamage 0
 scoreboard players set @e[tag=this_entity,limit=1] ElementHurtTime 0
-scoreboard players set @e[tag=this_entity,limit=1] HeartOffset 3
+scoreboard players set @e[tag=this_entity,limit=1] HeartOffset 4
 scoreboard players set @e[tag=this_entity,limit=1] SpawnTime 160
 scoreboard players set @e[tag=this_entity,limit=1] EntitySizeWidth 8
 scoreboard players set @e[tag=this_entity,limit=1] EntitySizeHeight 12

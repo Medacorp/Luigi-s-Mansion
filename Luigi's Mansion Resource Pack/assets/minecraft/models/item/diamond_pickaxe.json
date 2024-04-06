@@ -3162,7 +3162,7 @@
                 "damage": 0.0032,
                 "custom_model_data": 0
             },
-            "model": "luigis_mansion:entity/blue_diamond"
+            "model": "luigis_mansion:entity/silver_diamond"
         },
         {
             "predicate": {

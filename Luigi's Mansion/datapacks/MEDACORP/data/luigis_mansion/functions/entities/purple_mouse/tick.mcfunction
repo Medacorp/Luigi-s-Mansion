@@ -1,4 +1,4 @@
-execute if entity @s[tag=!no_ai] run function luigis_mansion:entities/purple_mouse/ai
+execute if entity @s[tag=!no_ai] run function luigis_mansion:entities/blue_mouse/ai
 
 execute at @s[scores={LightX=-2147483648..},tag=visible] run function luigis_mansion:other/cast_shadow/1_tall
 

@@ -15,8 +15,10 @@ execute if entity @s[tag=!visible] if data storage luigis_mansion:data ghost{tag
 execute if entity @s[tag=!visible] if data storage luigis_mansion:data ghost{tags:["visible"]} if data storage luigis_mansion:data ghost{tags:["big"]} run data modify entity @s ArmorItems[3] merge from entity @s ArmorItems[3].tag.luigis_mansion.model_data.big
 tag @s remove no_reflection
 tag @s remove visible
+tag @s remove flipped_gravity
 execute if data storage luigis_mansion:data ghost{tags:["hidden"]} run tag @s add no_reflection
 execute if data storage luigis_mansion:data ghost{tags:["visible"]} run tag @s add visible
+execute if data storage luigis_mansion:data ghost{tags:["flipped_gravity"]} run tag @s add flipped_gravity
 execute unless data entity @s Pose.Head[0] run data merge entity @s {Pose:{Head:[0.001f,0.001f,0.001f]}}
 teleport @s ~ ~ ~ ~ ~
 $function $(namespace):animations/$(id)/call_part_function

@@ -1,2 +1,0 @@
-execute if entity @s[tag=visible] run function luigis_mansion:entities/blue_mouse/ai/visible with entity @s data.entity
-execute if entity @s[tag=!visible] run function luigis_mansion:entities/purple_mouse/ai/invisible with entity @s data.entity

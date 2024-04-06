@@ -65,6 +65,8 @@ entity:{
     //Non-default setup
     paths:[ //Paths this entity can follow; used by the target task "follow path"; if that task is selected, but this is empty, it turns into the "do nothing" task. Default = none.
         { //A single option; using the "set_random_path" function selects a random option; using "set_specific_path" sets the path to the index specified in the macro "index".
+            id:"...", //Optional, this path is unable to get selected using "set_random_path" if there is a path in this room with this in the disable_ids list.
+            disable_ids:["..."], //Optional, used to disable path selection for other entities using "set_random_path".
             loop:1b, //Whether this path loops or not. If not, the entity stops at the end of the path. Default = 0b.
             force_move:1b, //If set, the ghost will move forward, even into invalid positions such as walls. Default = 0b.
             steps:[ //Individual path steps to go to.

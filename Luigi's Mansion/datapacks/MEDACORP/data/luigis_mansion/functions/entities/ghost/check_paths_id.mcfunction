@@ -1,0 +1,1 @@
+$execute unless entity @e[tag=exact_same_room,tag=!ignore_me,nbt={data:{path:{disable_ids:["$(id)"]}}}] run data modify storage luigis_mansion:data paths append from storage luigis_mansion:data new_paths[0]

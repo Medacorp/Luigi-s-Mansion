@@ -9,7 +9,7 @@ execute if entity @s[tag=was_infinite_health,tag=!infinite_health] in minecraft:
 execute if entity @s[tag=was_infinite_health,tag=!infinite_health] in minecraft:overworld run data modify entity @s CustomName set from block 0 0 0 front_text.messages[0]
 execute if entity @s[tag=was_infinite_health,tag=!infinite_health] in minecraft:overworld run setblock 0 0 0 minecraft:bedrock
 tag @s[tag=was_infinite_health,tag=!infinite_health] remove was_infinite_health
-$teleport @s ~ ~$(up) ~ ~ ~
+$execute positioned ~ ~-0.8 ~ run teleport @s ~ ~$(up) ~ ~ ~
 scoreboard players operation @s Health = #temp Health
 scoreboard players operation @s Room = #temp Room
 scoreboard players reset #temp Health
