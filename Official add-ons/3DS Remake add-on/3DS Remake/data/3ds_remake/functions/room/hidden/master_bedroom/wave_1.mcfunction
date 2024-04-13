@@ -1,6 +1,6 @@
 data modify storage luigis_mansion:data entity set value {room:9,paths:[{steps:[{position:[689.5d,111.0d,43.5d]},{position:[685.5d,111.0d,42.5d]},{position:[685.5d,111.0d,47.5d]},{position:[689.5d,111.0d,43.5d]},{position:[690.5d,111.0d,41.5d]}]}],scan_message:{sender:"me",message:'{"type":"translatable","translate":"luigis_mansion:message.lydia.scan"}'}}
 execute positioned 690 111 41 rotated 135 0 run function luigis_mansion:spawn_entities/portrait_ghost/lydia
-execute unless data storage luigis_mansion:data current_state.current_data{money_spawned:["master_bedroom_speedy_spirit"]} run data modify storage luigis_mansion:data entity set value {room:9,loot:{name:"master_bedroom_speedy_spirit"},tags:["hiding_in_furniture"]}
+execute unless data storage luigis_mansion:data current_state.current_data{money_spawned:["master_bedroom_speedy_spirit"]} run data modify storage luigis_mansion:data entity set value {room:9,loot:{name:"master_bedroom_speedy_spirit"},spawn:3b}
 execute unless data storage luigis_mansion:data current_state.current_data{money_spawned:["master_bedroom_speedy_spirit"]} run function luigis_mansion:entities/speedy_spirit/give_money/red_ruby
 execute unless data storage luigis_mansion:data current_state.current_data{money_spawned:["master_bedroom_speedy_spirit"]} positioned 695 111 39 run function luigis_mansion:spawn_entities/ghost/speedy_spirit
 scoreboard players set #master_bedroom Wave 1

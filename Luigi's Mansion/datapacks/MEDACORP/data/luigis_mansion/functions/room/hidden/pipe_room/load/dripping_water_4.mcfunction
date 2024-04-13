@@ -1,0 +1,2 @@
+data modify storage luigis_mansion:data furniture set value {room:67,particles:"dripping_water",hitbox:{radius:1}}
+execute positioned 690 8 10 run function luigis_mansion:spawn_furniture/particle_spawner

@@ -1,6 +1,9 @@
 execute unless score #observatory Ticking matches 1 run function #luigis_mansion:room/normal/observatory/load
 execute as @a[x=627,y=15,z=-145,dx=24,dy=12,dz=72] unless entity @s[scores={Room=46}] run scoreboard players operation @s LastRoom = @s Room
 scoreboard players set @e[x=627,y=15,z=-145,dx=24,dy=12,dz=72] Room 46
+#todelete - needed for room-triggered shake sounds
+scoreboard players set #temp Room 46
+#/todelete
 
 execute as @a[scores={Room=46}] run function luigis_mansion:room/normal/observatory/tick_per_player
 

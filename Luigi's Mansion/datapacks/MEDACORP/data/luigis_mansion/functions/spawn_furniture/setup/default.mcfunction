@@ -26,6 +26,7 @@ execute if entity @e[tag=this_entity,tag=can_be_ice_elemental_source,limit=1] ru
 execute if entity @e[tag=this_entity,tag=!lamp,scores={FurnitureLightStrength=0..15},limit=1] run function luigis_mansion:spawn_furniture/setup/ambient_light
 execute if entity @e[tag=this_entity,tag=mirror,limit=1] run function luigis_mansion:spawn_furniture/setup/mirror_reflection
 execute if entity @e[tag=this_entity,tag=room_clear_chest,limit=1] run function luigis_mansion:spawn_furniture/setup/room_clear_chest_spawn_sound
+function luigis_mansion:spawn_furniture/setup/particles
 function luigis_mansion:spawn_furniture/setup/room
 function luigis_mansion:spawn_furniture/setup/tags
 function luigis_mansion:spawn_furniture/setup/position

@@ -1,6 +1,9 @@
 execute unless score #balcony_1 Ticking matches 1 run function #3ds_remake:room/hidden/balcony_1/load
 execute as @a[x=672,y=110,z=37,dx=10,dy=7,dz=8] unless entity @s[x=672,y=101,z=37,dx=10,dy=7,dz=8] unless entity @s[scores={Room=6}] run scoreboard players operation @s LastRoom = @s Room
 execute as @e[x=672,y=110,z=37,dx=10,dy=7,dz=8] unless entity @s[x=672,y=101,z=37,dx=10,dy=7,dz=8] run scoreboard players set @s Room 6
+#todelete - needed for room-triggered shake sounds
+scoreboard players set #temp Room 6
+#/todelete
 
 execute as @a[scores={Room=6}] run function 3ds_remake:room/hidden/balcony_1/tick_per_player
 

@@ -1,7 +1,9 @@
 execute unless score #hallway_2 Ticking matches 1 run function #3ds_remake:room/hidden/hallway_2/load
 execute as @a[x=722,y=19,z=42,dx=8,dy=7,dz=38] unless entity @s[scores={Room=7}] run scoreboard players operation @s LastRoom = @s Room
 scoreboard players set @e[x=722,y=19,z=42,dx=8,dy=7,dz=38] Room 7
-tag @e[tag=ghost,scores={Room=7}] add no_hidden_move
+#todelete - needed for room-triggered shake sounds
+scoreboard players set #temp Room 7
+#/todelete
 
 execute as @a[scores={Room=7}] run function 3ds_remake:room/hidden/hallway_2/tick_per_player
 

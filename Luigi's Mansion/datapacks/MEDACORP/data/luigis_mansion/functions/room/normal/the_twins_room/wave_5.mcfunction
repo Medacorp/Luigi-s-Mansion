@@ -1,5 +1,5 @@
 execute positioned 739 22 34 run tag @e[nbt={data:{entity:{namespace:"luigis_mansion",id:"speedy_spirit"}}},distance=..0.7,limit=1] add remove_from_existence
-execute unless data storage luigis_mansion:data current_state.current_data{money_spawned:["the_twins_room_speedy_spirit"]} run data modify storage luigis_mansion:data entity set value {room:49,loot:{name:"the_twins_room_speedy_spirit"},tags:["hiding_in_furniture"]}
+execute unless data storage luigis_mansion:data current_state.current_data{money_spawned:["the_twins_room_speedy_spirit"]} run data modify storage luigis_mansion:data entity set value {room:49,loot:{name:"the_twins_room_speedy_spirit"},spawn:3b}
 execute unless data storage luigis_mansion:data current_state.current_data{money_spawned:["the_twins_room_speedy_spirit"]} run function luigis_mansion:entities/speedy_spirit/give_money/bills
 execute unless data storage luigis_mansion:data current_state.current_data{money_spawned:["the_twins_room_speedy_spirit"]} positioned 739 22 34 unless entity @e[nbt={data:{entity:{namespace:"luigis_mansion",id:"speedy_spirit"}}},distance=0.7..,scores={Room=49},limit=1] run function luigis_mansion:spawn_entities/ghost/speedy_spirit
 data remove storage luigis_mansion:data entity
@@ -8,9 +8,9 @@ setblock 742 20 46 minecraft:barrier
 setblock 747 20 43 minecraft:barrier
 setblock 747 20 37 minecraft:barrier
 setblock 742 20 34 minecraft:barrier
-data modify storage luigis_mansion:data entity set value {room:49,tags:["portait_ghost"]}
+data modify storage luigis_mansion:data entity set value {room:49,spawn:3b,tags:["portait_ghost"]}
 execute positioned 744 20 41 run function luigis_mansion:spawn_entities/ghost/empty_marker
-data modify storage luigis_mansion:data entity set value {room:49,tags:["portait_ghost"]}
+data modify storage luigis_mansion:data entity set value {room:49,spawn:3b,tags:["portait_ghost"]}
 execute positioned 744 20 41 run function luigis_mansion:spawn_entities/ghost/empty_marker
 
 summon minecraft:marker 738 20 40 {Tags:["option"]}

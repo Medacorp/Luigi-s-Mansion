@@ -3,3 +3,4 @@ function luigis_mansion:spawn_entities/setup/spawn_timer
 function luigis_mansion:spawn_entities/setup/health
 function luigis_mansion:spawn_entities/setup/flee
 function luigis_mansion:spawn_entities/setup/vanish_time
+function luigis_mansion:spawn_entities/setup/no_hidden_move

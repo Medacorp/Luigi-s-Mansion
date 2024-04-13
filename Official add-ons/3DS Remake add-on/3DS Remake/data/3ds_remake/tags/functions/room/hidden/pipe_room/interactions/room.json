@@ -3,17 +3,6 @@
 		"3ds_remake:room/hidden/pipe_room/interactions/room/crate",
 		"3ds_remake:room/hidden/pipe_room/interactions/room/frozen_barrel",
 		"3ds_remake:room/hidden/pipe_room/interactions/room/ice",
-		"3ds_remake:room/hidden/pipe_room/interactions/room/sewage",
-		"3ds_remake:room/hidden/pipe_room/interactions/room/water_1",
-		"3ds_remake:room/hidden/pipe_room/interactions/room/water_2",
-		"3ds_remake:room/hidden/pipe_room/interactions/room/water_3",
-		"3ds_remake:room/hidden/pipe_room/interactions/room/water_4",
-		"3ds_remake:room/hidden/pipe_room/interactions/room/water_5",
-		"3ds_remake:room/hidden/pipe_room/interactions/room/water_6",
-		"3ds_remake:room/hidden/pipe_room/interactions/room/water_7",
-		"3ds_remake:room/hidden/pipe_room/interactions/room/water_8",
-		"3ds_remake:room/hidden/pipe_room/interactions/room/water_9",
-		"3ds_remake:room/hidden/pipe_room/interactions/room/water_10",
-		"3ds_remake:room/hidden/pipe_room/interactions/room/water_11"
+		"3ds_remake:room/hidden/pipe_room/interactions/room/sewage"
 	]
 }

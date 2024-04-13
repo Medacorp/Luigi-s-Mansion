@@ -1,7 +1,9 @@
 execute unless score #hallway_1 Ticking matches 1 run function #e3_demo:room/original/hallway_1/load
 execute as @a[x=735,y=10,z=-2,dx=7,dy=16,dz=21] unless entity @s[x=743,y=10,z=-2,dx=15,dy=16,dz=21] unless entity @s[scores={Room=2}] run scoreboard players operation @s LastRoom = @s Room
 execute as @e[x=735,y=10,z=-2,dx=7,dy=16,dz=21] unless entity @s[x=743,y=10,z=-2,dx=15,dy=16,dz=21] run scoreboard players set @s Room 2
-tag @e[tag=ghost,scores={Room=2}] add no_hidden_move
+#todelete - needed for room-triggered shake sounds
+scoreboard players set #temp Room 2
+#/todelete
 
 execute as @a[scores={Room=2}] run function e3_demo:room/original/hallway_1/tick_per_player
 

@@ -1,6 +1,9 @@
 execute unless score #hidden_room Ticking matches 1 run function #luigis_mansion:room/hidden/hidden_room/load
 execute as @a[x=736,y=10,z=-35,dx=14,dy=7,dz=21] unless entity @s[scores={Room=24}] run scoreboard players operation @s LastRoom = @s Room
 scoreboard players set @e[x=736,y=10,z=-35,dx=14,dy=7,dz=21] Room 24
+#todelete - needed for room-triggered shake sounds
+scoreboard players set #temp Room 24
+#/todelete
 
 execute as @e[scores={Room=24}] unless entity @s[type=!minecraft:armor_stand,type=!minecraft:item_frame] run scoreboard players set @s MirrorX 749
 

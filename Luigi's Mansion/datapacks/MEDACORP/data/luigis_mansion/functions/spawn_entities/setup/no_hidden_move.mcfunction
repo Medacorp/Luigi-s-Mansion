@@ -1,0 +1,2 @@
+execute if data storage luigis_mansion:data entity{no_hidden_move:0b} run tag @e[tag=this_entity,limit=1] remove no_hidden_move
+execute if data storage luigis_mansion:data entity{no_hidden_move:1b} run tag @e[tag=this_entity,limit=1] add no_hidden_move

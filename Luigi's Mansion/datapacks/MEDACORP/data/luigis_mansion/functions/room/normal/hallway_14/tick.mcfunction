@@ -1,7 +1,9 @@
 execute unless score #hallway_14 Ticking matches 1 run function #luigis_mansion:room/normal/hallway_14/load
 execute as @a[x=712,y=19,z=-55,dx=8,dy=16,dz=12] unless entity @s[scores={Room=40}] run scoreboard players operation @s LastRoom = @s Room
 scoreboard players set @e[x=712,y=19,z=-55,dx=8,dy=16,dz=12] Room 40
-tag @e[tag=ghost,scores={Room=40}] add no_hidden_move
+#todelete - needed for room-triggered shake sounds
+scoreboard players set #temp Room 40
+#/todelete
 
 execute as @a[scores={Room=40}] run function luigis_mansion:room/normal/hallway_14/tick_per_player
 

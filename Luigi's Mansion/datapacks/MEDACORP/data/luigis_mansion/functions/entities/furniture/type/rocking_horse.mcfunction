@@ -25,5 +25,3 @@ execute if score @s[tag=searchable_by_time] FurnitureSearch = @s FurnitureTime r
 execute if entity @s[tag=searchable_by_interact,tag=search] run function luigis_mansion:entities/furniture/search/generic
 tag @s[tag=!searchable_by_interact,tag=search] add open
 execute if entity @s[tag=drop_loot] run function luigis_mansion:entities/furniture/search/generic
-
-execute if entity @s[tag=sparkles,tag=!open] run function luigis_mansion:entities/furniture/spawn/sparkles

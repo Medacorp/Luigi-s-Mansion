@@ -1,6 +1,6 @@
 execute unless data storage luigis_mansion:data current_state.current_data.rooms.secret_altar{cleared:1b} run data modify storage luigis_mansion:data entity set value {room:72,scan_message:{sender:"scanner",message:'{"type":"translatable","translate":"luigis_mansion:message.player.scan_furniture.51"}'}}
 execute unless data storage luigis_mansion:data current_state.current_data.rooms.secret_altar{cleared:1b} positioned 635 94 33 run function luigis_mansion:spawn_entities/mario/animated_painting
 execute unless data storage luigis_mansion:data current_state.current_data.rooms.secret_altar{cleared:1b} run setblock 635 94 49 minecraft:rail[shape=east_west]
-execute unless data storage luigis_mansion:data current_state.current_data.rooms.secret_altar{cleared:1b} run setblock 635 94 49 minecraft:moving_piston
+execute unless data storage luigis_mansion:data current_state.current_data.rooms.secret_altar{cleared:1b} run setblock 635 95 49 minecraft:barrier
 execute if data storage luigis_mansion:data current_state.current_data.rooms.secret_altar{cleared:1b} run data modify storage luigis_mansion:data entity set value {room:72}
 execute if data storage luigis_mansion:data current_state.current_data.rooms.secret_altar{cleared:1b} positioned 635 94 33 run function luigis_mansion:spawn_entities/mario/painting

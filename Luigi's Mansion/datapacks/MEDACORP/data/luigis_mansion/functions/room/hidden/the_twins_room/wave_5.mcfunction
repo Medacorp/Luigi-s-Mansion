@@ -1,5 +1,5 @@
 execute positioned 739 22 -19 run tag @e[nbt={data:{entity:{namespace:"luigis_mansion",id:"speedy_spirit"}}},distance=..0.7,limit=1] add remove_from_existence
-execute unless data storage luigis_mansion:data current_state.current_data{money_spawned:["the_twins_room_speedy_spirit"]} run data modify storage luigis_mansion:data entity set value {room:49,loot:{name:"the_twins_room_speedy_spirit"},tags:["hiding_in_furniture"]}
+execute unless data storage luigis_mansion:data current_state.current_data{money_spawned:["the_twins_room_speedy_spirit"]} run data modify storage luigis_mansion:data entity set value {room:49,loot:{name:"the_twins_room_speedy_spirit"},spawn:3b}
 execute unless data storage luigis_mansion:data current_state.current_data{money_spawned:["the_twins_room_speedy_spirit"]} run function luigis_mansion:entities/speedy_spirit/give_money/silver_diamond
 execute unless data storage luigis_mansion:data current_state.current_data{money_spawned:["the_twins_room_speedy_spirit"]} positioned 739 22 -19 unless entity @e[nbt={data:{entity:{namespace:"luigis_mansion",id:"speedy_spirit"}}},distance=0.7..,scores={Room=49},limit=1] run function luigis_mansion:spawn_entities/ghost/speedy_spirit
 data remove storage luigis_mansion:data entity
@@ -8,9 +8,9 @@ setblock 742 20 -31 minecraft:barrier
 setblock 747 20 -28 minecraft:barrier
 setblock 747 20 -22 minecraft:barrier
 setblock 742 20 -19 minecraft:barrier
-data modify storage luigis_mansion:data entity set value {room:49,tags:["portrait_ghost"]}
+data modify storage luigis_mansion:data entity set value {room:49,spawn:3b,tags:["portrait_ghost"]}
 execute positioned 744 20 -26 run function luigis_mansion:spawn_entities/ghost/empty_marker
-data modify storage luigis_mansion:data entity set value {room:49,tags:["portrait_ghost"]}
+data modify storage luigis_mansion:data entity set value {room:49,spawn:3b,tags:["portrait_ghost"]}
 execute positioned 744 20 -26 run function luigis_mansion:spawn_entities/ghost/empty_marker
 
 summon minecraft:marker 738 20 -25 {Tags:["option"]}

@@ -18,7 +18,7 @@ entity:{
     room:X, //Room number that this entity is in. Default = room number of whoever is @s on function call, if absent = 0.
     
     //Ghosts
-    spawn:1b, //How this ghost spawns: 0b = 3 second wait before it can spawn, 1b = forced spawn, 2b = can spawn immediately if under the correct conditions. Initial spawn only. Default = 0b.
+    spawn:1b, //How this ghost spawns: 0b = 3 second wait before it can spawn, 1b = forced initial spawn, 2b = initially can spawn immediately if under the correct conditions. 3b = initial hiding in furniture, not spawned by player facing. 4b = forced spawn only (initially and subquentially), only a direct spawn tag will spawn this ghost. Default = 0b.
     disappear_on_vanish:1b, //Whether this ghost disappears when it vanishes. Default = 1b for speedy spirits and 0b for everything else.
     appear_type:"<type>", //Ghost appear type to use, differs per ghost, see IDs in use for valid values.
     attack_type:"<type>", //Ghost attack type to use, differs per ghost, see IDs in use for valid values.

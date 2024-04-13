@@ -34,5 +34,3 @@ execute if score @s[tag=searched] FurnitureVacuum < @s FurnitureSearch run tag @
 execute if entity @s[tag=searchable_by_interact,tag=search] run function luigis_mansion:entities/furniture/search/generic
 scoreboard players reset #temp FurnitureVacuum
 execute if entity @s[tag=drop_loot] run function luigis_mansion:entities/furniture/search/swing
-
-execute if entity @s[tag=sparkles,tag=!open] run function luigis_mansion:entities/furniture/spawn/sparkles

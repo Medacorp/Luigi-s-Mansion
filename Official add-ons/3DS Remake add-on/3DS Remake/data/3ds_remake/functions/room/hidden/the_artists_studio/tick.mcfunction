@@ -1,6 +1,9 @@
 execute unless score #the_artists_studio Ticking matches 1 run function #3ds_remake:room/hidden/the_artists_studio/load
 execute as @a[x=687,y=28,z=-80,dx=16,dy=7,dz=25] unless entity @s[scores={Room=71}] run scoreboard players operation @s LastRoom = @s Room
 scoreboard players set @e[x=687,y=28,z=-80,dx=16,dy=7,dz=25] Room 71
+#todelete - needed for room-triggered shake sounds
+scoreboard players set #temp Room 71
+#/todelete
 
 execute as @a[scores={Room=71}] run function 3ds_remake:room/hidden/the_artists_studio/tick_per_player
 

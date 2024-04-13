@@ -5,5 +5,6 @@ execute if entity @s[tag=rocking_chair] run function luigis_mansion:entities/fur
 execute if entity @s[tag=elemental_source] run function luigis_mansion:entities/furniture/type/elemental_source
 execute if entity @s[tag=lamp] run function luigis_mansion:entities/furniture/type/lamp
 execute if entity @s[scores={FurnitureLightStrength=0..15}] run function luigis_mansion:entities/furniture/spawn/light
+execute if entity @s[tag=spawn_particles] run function luigis_mansion:entities/furniture/spawn/particles
 tag @s remove search
 tag @s remove drop_loot

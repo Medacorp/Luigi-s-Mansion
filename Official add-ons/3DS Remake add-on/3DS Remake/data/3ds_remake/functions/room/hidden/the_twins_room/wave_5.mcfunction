@@ -3,9 +3,9 @@ setblock 742 20 46 minecraft:barrier
 setblock 747 20 43 minecraft:barrier
 setblock 747 20 37 minecraft:barrier
 setblock 742 20 34 minecraft:barrier
-data modify storage luigis_mansion:data entity set value {room:49,tags:["portrait_ghost"]}
+data modify storage luigis_mansion:data entity set value {room:49,spawn:3b,tags:["portrait_ghost"]}
 execute positioned 744 20 41 run function luigis_mansion:spawn_entities/ghost/empty_marker
-data modify storage luigis_mansion:data entity set value {room:49,tags:["portrait_ghost"]}
+data modify storage luigis_mansion:data entity set value {room:49,spawn:3b,tags:["portrait_ghost"]}
 execute positioned 744 20 41 run function luigis_mansion:spawn_entities/ghost/empty_marker
 
 summon minecraft:marker 738 20 40 {Tags:["option"]}

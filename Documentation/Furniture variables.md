@@ -60,6 +60,7 @@ furniture:{
         timer:1b //When set it turns the spawning back on after 30 seconds of being disabled. Default = 0b.
         cannot_disable:1b //When set prevents being disabled. Default = 0b.
     },
+    particles:"chilly_fog", //What particles this furniture spawns. Allowed values are "chilly_fog", "dripping_water", "spraying_water", "flames", "sparkles". Conditions depend on the particle. Default = none.
     ambient_light:{ //Ambient light data, can only be applied to furniture which can cast light, that's not a lamp (eg a torch or a projector). Default = none.
         lit:1b, //Whether the light source is currently lit. If this light source is also a fire elemental source, its lit state will match whether it can spawn fire elemental ghosts. Default = 0b.
         light_on_search:1b, //Whether the light source turns on when searched. Default = 0b.
@@ -67,7 +68,7 @@ furniture:{
     },
     mirror_reflection:1b, //Whether the mirror will actually reflect the room, otherwise gets a solid glass texture. Valid for mirrors only. Default = 1b. Forced to 0b if the yaw rotation is not a multiple of 90, or pose pitch has a non-0 value.
     no_spawn_sound:1b, //Whether the unsearched room clear chest sound is disabled, searched room clear chests always have it disabled, regardless of this value. Valid for room clear chests only. Default = 0b.
-    hitbox:{ //The size of the hitbox, only applies and required for scan areas and elemental sources.
+    hitbox:{ //The size of the hitbox, only applies and required for scan areas, elemental sources and particle spawners.
         type:"standing", //How the hitbox is aligned to the spawn position, "standing" is bottom aligned, "hanging" is top aligned. Default = centered.
         radius:X, //A ball hitbox, value is the radius in tenths of a block.
         box:{ //A box shaped hitbox.
