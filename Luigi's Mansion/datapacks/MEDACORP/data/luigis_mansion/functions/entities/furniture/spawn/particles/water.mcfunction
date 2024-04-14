@@ -1,0 +1,1 @@
+$particle minecraft:item minecraft:diamond_pickaxe{Unbreakable:1b,Damage:19,CustomModelData:283} ~ ~ ~ $(x) $(y) $(z) 1 0 normal @a[tag=same_room]

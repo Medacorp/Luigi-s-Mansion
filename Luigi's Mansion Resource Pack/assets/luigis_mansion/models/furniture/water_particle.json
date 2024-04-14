@@ -1,0 +1,6 @@
+{
+	"parent": "minecraft:item/generated",
+	"textures": {
+		"layer0": "luigis_mansion:furniture/water_particle"
+	}
+}

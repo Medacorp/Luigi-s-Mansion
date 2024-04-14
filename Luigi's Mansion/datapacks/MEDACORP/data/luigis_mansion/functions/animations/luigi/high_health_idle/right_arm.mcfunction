@@ -1,9 +1,7 @@
 scoreboard players add @s AnimationProgress 1
-execute unless score #mirrored Selected matches 1 run data merge entity @s[scores={AnimationProgress=1}] {Pose:{Head:[0.0f,0.0f,0.01f]}}
-execute unless score #mirrored Selected matches 1 run data merge entity @s[scores={AnimationProgress=1},tag=flipped_gravity] {Pose:{Head:[0.0f,0.0f,-180.0f]}}
-execute if score #mirrored Selected matches 1 run data merge entity @s[scores={AnimationProgress=1}] {Pose:{Head:[0.0f,0.0f,5.0f]}}
-execute if score #mirrored Selected matches 1 run data merge entity @s[scores={AnimationProgress=1},tag=flipped_gravity] {Pose:{Head:[0.0f,0.0f,-175.0f]}}
-execute store result score #temp Time run data get entity @s Pose.Head[1] 10
+data merge entity @s[scores={AnimationProgress=1}] {Pose:{Head:[0.0f,0.0f,5.0f]}}
+data merge entity @s[scores={AnimationProgress=1},tag=flipped_gravity] {Pose:{Head:[0.0f,0.0f,-175.0f]}}
+execute unless score #mirrored Selected matches 1 store result score #temp Time run data get entity @s Pose.Head[1] 10
 execute if entity @s[scores={AnimationProgress=1}] unless score #mirrored Selected matches 1 store result entity @s Pose.Head[1] float 0.1 run scoreboard players set #temp Time 10
 execute if entity @s[scores={AnimationProgress=2}] unless score #mirrored Selected matches 1 store result entity @s Pose.Head[1] float 0.1 run scoreboard players set #temp Time 20
 execute if entity @s[scores={AnimationProgress=3}] unless score #mirrored Selected matches 1 store result entity @s Pose.Head[1] float 0.1 run scoreboard players set #temp Time 30
@@ -71,73 +69,74 @@ execute if entity @s[scores={AnimationProgress=136}] unless score #mirrored Sele
 execute if entity @s[scores={AnimationProgress=137}] unless score #mirrored Selected matches 1 store result entity @s Pose.Head[1] float 0.1 run scoreboard players set #temp Time -125
 execute if entity @s[scores={AnimationProgress=138}] unless score #mirrored Selected matches 1 store result entity @s Pose.Head[1] float 0.1 run scoreboard players set #temp Time -75
 execute if entity @s[scores={AnimationProgress=139}] unless score #mirrored Selected matches 1 store result entity @s Pose.Head[1] float 0.1 run scoreboard players set #temp Time -25
-execute if entity @s[scores={AnimationProgress=1}] if score #mirrored Selected matches 1 store result entity @s Pose.Head[1] float 0.1 run scoreboard players set #temp Time -10
-execute if entity @s[scores={AnimationProgress=2}] if score #mirrored Selected matches 1 store result entity @s Pose.Head[1] float 0.1 run scoreboard players set #temp Time -20
-execute if entity @s[scores={AnimationProgress=3}] if score #mirrored Selected matches 1 store result entity @s Pose.Head[1] float 0.1 run scoreboard players set #temp Time -30
-execute if entity @s[scores={AnimationProgress=4}] if score #mirrored Selected matches 1 store result entity @s Pose.Head[1] float 0.1 run scoreboard players set #temp Time -40
-execute if entity @s[scores={AnimationProgress=5}] if score #mirrored Selected matches 1 store result entity @s Pose.Head[1] float 0.1 run scoreboard players set #temp Time -65
-execute if entity @s[scores={AnimationProgress=6}] if score #mirrored Selected matches 1 store result entity @s Pose.Head[1] float 0.1 run scoreboard players set #temp Time -90
-execute if entity @s[scores={AnimationProgress=7}] if score #mirrored Selected matches 1 store result entity @s Pose.Head[1] float 0.1 run scoreboard players set #temp Time -115
-execute if entity @s[scores={AnimationProgress=8}] if score #mirrored Selected matches 1 store result entity @s Pose.Head[1] float 0.1 run scoreboard players set #temp Time -140
-execute if entity @s[scores={AnimationProgress=9}] if score #mirrored Selected matches 1 store result entity @s Pose.Head[1] float 0.1 run scoreboard players set #temp Time -165
-execute if entity @s[scores={AnimationProgress=10}] if score #mirrored Selected matches 1 store result entity @s Pose.Head[1] float 0.1 run scoreboard players set #temp Time -190
-execute if entity @s[scores={AnimationProgress=11}] if score #mirrored Selected matches 1 store result entity @s Pose.Head[1] float 0.1 run scoreboard players set #temp Time -260
-execute if entity @s[scores={AnimationProgress=12}] if score #mirrored Selected matches 1 store result entity @s Pose.Head[1] float 0.1 run scoreboard players set #temp Time -285
-execute if entity @s[scores={AnimationProgress=13}] if score #mirrored Selected matches 1 store result entity @s Pose.Head[1] float 0.1 run scoreboard players set #temp Time -310
-execute if entity @s[scores={AnimationProgress=14}] if score #mirrored Selected matches 1 store result entity @s Pose.Head[1] float 0.1 run scoreboard players set #temp Time -335
-execute if entity @s[scores={AnimationProgress=15}] if score #mirrored Selected matches 1 store result entity @s Pose.Head[1] float 0.1 run scoreboard players set #temp Time -360
-execute if entity @s[scores={AnimationProgress=16}] if score #mirrored Selected matches 1 store result entity @s Pose.Head[1] float 0.1 run scoreboard players set #temp Time -385
-execute if entity @s[scores={AnimationProgress=17}] if score #mirrored Selected matches 1 store result entity @s Pose.Head[1] float 0.1 run scoreboard players set #temp Time -410
-execute if entity @s[scores={AnimationProgress=18}] if score #mirrored Selected matches 1 store result entity @s Pose.Head[1] float 0.1 run scoreboard players set #temp Time -430
-execute if entity @s[scores={AnimationProgress=19}] if score #mirrored Selected matches 1 store result entity @s Pose.Head[1] float 0.1 run scoreboard players set #temp Time -440
-execute if entity @s[scores={AnimationProgress=20..30}] if score #mirrored Selected matches 1 store result entity @s Pose.Head[1] float 0.1 run scoreboard players set #temp Time -450
-execute if entity @s[scores={AnimationProgress=31}] if score #mirrored Selected matches 1 store result entity @s Pose.Head[1] float 0.1 run scoreboard players set #temp Time -440
-execute if entity @s[scores={AnimationProgress=32}] if score #mirrored Selected matches 1 store result entity @s Pose.Head[1] float 0.1 run scoreboard players set #temp Time -420
-execute if entity @s[scores={AnimationProgress=33}] if score #mirrored Selected matches 1 store result entity @s Pose.Head[1] float 0.1 run scoreboard players set #temp Time -385
-execute if entity @s[scores={AnimationProgress=34}] if score #mirrored Selected matches 1 store result entity @s Pose.Head[1] float 0.1 run scoreboard players set #temp Time -335
-execute if entity @s[scores={AnimationProgress=35}] if score #mirrored Selected matches 1 store result entity @s Pose.Head[1] float 0.1 run scoreboard players set #temp Time -270
-execute if entity @s[scores={AnimationProgress=36}] if score #mirrored Selected matches 1 store result entity @s Pose.Head[1] float 0.1 run scoreboard players set #temp Time -190
-execute if entity @s[scores={AnimationProgress=37}] if score #mirrored Selected matches 1 store result entity @s Pose.Head[1] float 0.1 run scoreboard players set #temp Time -95
-execute if entity @s[scores={AnimationProgress=38}] if score #mirrored Selected matches 1 store result entity @s Pose.Head[1] float 0.1 run scoreboard players set #temp Time 15
-execute if entity @s[scores={AnimationProgress=39}] if score #mirrored Selected matches 1 store result entity @s Pose.Head[1] float 0.1 run scoreboard players set #temp Time 140
-execute if entity @s[scores={AnimationProgress=40}] if score #mirrored Selected matches 1 store result entity @s Pose.Head[1] float 0.1 run scoreboard players set #temp Time 275
-execute if entity @s[scores={AnimationProgress=41}] if score #mirrored Selected matches 1 store result entity @s Pose.Head[1] float 0.1 run scoreboard players set #temp Time 410
-execute if entity @s[scores={AnimationProgress=42}] if score #mirrored Selected matches 1 store result entity @s Pose.Head[1] float 0.1 run scoreboard players set #temp Time 535
-execute if entity @s[scores={AnimationProgress=43}] if score #mirrored Selected matches 1 store result entity @s Pose.Head[1] float 0.1 run scoreboard players set #temp Time 645
-execute if entity @s[scores={AnimationProgress=44}] if score #mirrored Selected matches 1 store result entity @s Pose.Head[1] float 0.1 run scoreboard players set #temp Time 740
-execute if entity @s[scores={AnimationProgress=45}] if score #mirrored Selected matches 1 store result entity @s Pose.Head[1] float 0.1 run scoreboard players set #temp Time 820
-execute if entity @s[scores={AnimationProgress=46}] if score #mirrored Selected matches 1 store result entity @s Pose.Head[1] float 0.1 run scoreboard players set #temp Time 885
-execute if entity @s[scores={AnimationProgress=47}] if score #mirrored Selected matches 1 store result entity @s Pose.Head[1] float 0.1 run scoreboard players set #temp Time 935
-execute if entity @s[scores={AnimationProgress=48}] if score #mirrored Selected matches 1 store result entity @s Pose.Head[1] float 0.1 run scoreboard players set #temp Time 970
-execute if entity @s[scores={AnimationProgress=49}] if score #mirrored Selected matches 1 store result entity @s Pose.Head[1] float 0.1 run scoreboard players set #temp Time 990
-execute if entity @s[scores={AnimationProgress=50..70}] if score #mirrored Selected matches 1 store result entity @s Pose.Head[1] float 0.1 run scoreboard players set #temp Time 1000
-execute if entity @s[scores={AnimationProgress=71}] if score #mirrored Selected matches 1 store result entity @s Pose.Head[1] float 0.1 run scoreboard players set #temp Time 950
-execute if entity @s[scores={AnimationProgress=72}] if score #mirrored Selected matches 1 store result entity @s Pose.Head[1] float 0.1 run scoreboard players set #temp Time 900
-execute if entity @s[scores={AnimationProgress=73}] if score #mirrored Selected matches 1 store result entity @s Pose.Head[1] float 0.1 run scoreboard players set #temp Time 800
-execute if entity @s[scores={AnimationProgress=74}] if score #mirrored Selected matches 1 store result entity @s Pose.Head[1] float 0.1 run scoreboard players set #temp Time 650
-execute if entity @s[scores={AnimationProgress=75}] if score #mirrored Selected matches 1 store result entity @s Pose.Head[1] float 0.1 run scoreboard players set #temp Time 450
-execute if entity @s[scores={AnimationProgress=76}] if score #mirrored Selected matches 1 store result entity @s Pose.Head[1] float 0.1 run scoreboard players set #temp Time 250
-execute if entity @s[scores={AnimationProgress=77}] if score #mirrored Selected matches 1 store result entity @s Pose.Head[1] float 0.1 run scoreboard players set #temp Time 100
-execute if entity @s[scores={AnimationProgress=79}] if score #mirrored Selected matches 1 store result entity @s Pose.Head[1] float 0.1 run scoreboard players set #temp Time -50
-execute if entity @s[scores={AnimationProgress=80..100}] if score #mirrored Selected matches 1 store result entity @s Pose.Head[1] float 0.1 run scoreboard players set #temp Time -100
-execute if entity @s[scores={AnimationProgress=101}] if score #mirrored Selected matches 1 store result entity @s Pose.Head[1] float 0.1 run scoreboard players set #temp Time -90
-execute if entity @s[scores={AnimationProgress=102}] if score #mirrored Selected matches 1 store result entity @s Pose.Head[1] float 0.1 run scoreboard players set #temp Time -55
-execute if entity @s[scores={AnimationProgress=104}] if score #mirrored Selected matches 1 store result entity @s Pose.Head[1] float 0.1 run scoreboard players set #temp Time 75
-execute if entity @s[scores={AnimationProgress=105}] if score #mirrored Selected matches 1 store result entity @s Pose.Head[1] float 0.1 run scoreboard players set #temp Time 175
-execute if entity @s[scores={AnimationProgress=106}] if score #mirrored Selected matches 1 store result entity @s Pose.Head[1] float 0.1 run scoreboard players set #temp Time 275
-execute if entity @s[scores={AnimationProgress=107}] if score #mirrored Selected matches 1 store result entity @s Pose.Head[1] float 0.1 run scoreboard players set #temp Time 350
-execute if entity @s[scores={AnimationProgress=108}] if score #mirrored Selected matches 1 store result entity @s Pose.Head[1] float 0.1 run scoreboard players set #temp Time 405
-execute if entity @s[scores={AnimationProgress=109}] if score #mirrored Selected matches 1 store result entity @s Pose.Head[1] float 0.1 run scoreboard players set #temp Time 440
-execute if entity @s[scores={AnimationProgress=110..130}] if score #mirrored Selected matches 1 store result entity @s Pose.Head[1] float 0.1 run scoreboard players set #temp Time 450
-execute if entity @s[scores={AnimationProgress=131}] if score #mirrored Selected matches 1 store result entity @s Pose.Head[1] float 0.1 run scoreboard players set #temp Time 425
-execute if entity @s[scores={AnimationProgress=132}] if score #mirrored Selected matches 1 store result entity @s Pose.Head[1] float 0.1 run scoreboard players set #temp Time 375
-execute if entity @s[scores={AnimationProgress=133}] if score #mirrored Selected matches 1 store result entity @s Pose.Head[1] float 0.1 run scoreboard players set #temp Time 325
-execute if entity @s[scores={AnimationProgress=134}] if score #mirrored Selected matches 1 store result entity @s Pose.Head[1] float 0.1 run scoreboard players set #temp Time 275
-execute if entity @s[scores={AnimationProgress=135}] if score #mirrored Selected matches 1 store result entity @s Pose.Head[1] float 0.1 run scoreboard players set #temp Time 225
-execute if entity @s[scores={AnimationProgress=136}] if score #mirrored Selected matches 1 store result entity @s Pose.Head[1] float 0.1 run scoreboard players set #temp Time 175
-execute if entity @s[scores={AnimationProgress=137}] if score #mirrored Selected matches 1 store result entity @s Pose.Head[1] float 0.1 run scoreboard players set #temp Time 125
-execute if entity @s[scores={AnimationProgress=138}] if score #mirrored Selected matches 1 store result entity @s Pose.Head[1] float 0.1 run scoreboard players set #temp Time 75
-execute if entity @s[scores={AnimationProgress=139}] if score #mirrored Selected matches 1 store result entity @s Pose.Head[1] float 0.1 run scoreboard players set #temp Time 25
+execute if score #mirrored Selected matches 1 store result score #temp Time run data get entity @s Pose.Head[1] 20
+execute if entity @s[scores={AnimationProgress=1}] if score #mirrored Selected matches 1 store result entity @s Pose.Head[1] float 0.05 run scoreboard players set #temp Time -10
+execute if entity @s[scores={AnimationProgress=2}] if score #mirrored Selected matches 1 store result entity @s Pose.Head[1] float 0.05 run scoreboard players set #temp Time -20
+execute if entity @s[scores={AnimationProgress=3}] if score #mirrored Selected matches 1 store result entity @s Pose.Head[1] float 0.05 run scoreboard players set #temp Time -30
+execute if entity @s[scores={AnimationProgress=4}] if score #mirrored Selected matches 1 store result entity @s Pose.Head[1] float 0.05 run scoreboard players set #temp Time -40
+execute if entity @s[scores={AnimationProgress=5}] if score #mirrored Selected matches 1 store result entity @s Pose.Head[1] float 0.05 run scoreboard players set #temp Time -65
+execute if entity @s[scores={AnimationProgress=6}] if score #mirrored Selected matches 1 store result entity @s Pose.Head[1] float 0.05 run scoreboard players set #temp Time -90
+execute if entity @s[scores={AnimationProgress=7}] if score #mirrored Selected matches 1 store result entity @s Pose.Head[1] float 0.05 run scoreboard players set #temp Time -115
+execute if entity @s[scores={AnimationProgress=8}] if score #mirrored Selected matches 1 store result entity @s Pose.Head[1] float 0.05 run scoreboard players set #temp Time -140
+execute if entity @s[scores={AnimationProgress=9}] if score #mirrored Selected matches 1 store result entity @s Pose.Head[1] float 0.05 run scoreboard players set #temp Time -165
+execute if entity @s[scores={AnimationProgress=10}] if score #mirrored Selected matches 1 store result entity @s Pose.Head[1] float 0.05 run scoreboard players set #temp Time -190
+execute if entity @s[scores={AnimationProgress=11}] if score #mirrored Selected matches 1 store result entity @s Pose.Head[1] float 0.05 run scoreboard players set #temp Time -260
+execute if entity @s[scores={AnimationProgress=12}] if score #mirrored Selected matches 1 store result entity @s Pose.Head[1] float 0.05 run scoreboard players set #temp Time -285
+execute if entity @s[scores={AnimationProgress=13}] if score #mirrored Selected matches 1 store result entity @s Pose.Head[1] float 0.05 run scoreboard players set #temp Time -310
+execute if entity @s[scores={AnimationProgress=14}] if score #mirrored Selected matches 1 store result entity @s Pose.Head[1] float 0.05 run scoreboard players set #temp Time -335
+execute if entity @s[scores={AnimationProgress=15}] if score #mirrored Selected matches 1 store result entity @s Pose.Head[1] float 0.05 run scoreboard players set #temp Time -360
+execute if entity @s[scores={AnimationProgress=16}] if score #mirrored Selected matches 1 store result entity @s Pose.Head[1] float 0.05 run scoreboard players set #temp Time -385
+execute if entity @s[scores={AnimationProgress=17}] if score #mirrored Selected matches 1 store result entity @s Pose.Head[1] float 0.05 run scoreboard players set #temp Time -410
+execute if entity @s[scores={AnimationProgress=18}] if score #mirrored Selected matches 1 store result entity @s Pose.Head[1] float 0.05 run scoreboard players set #temp Time -430
+execute if entity @s[scores={AnimationProgress=19}] if score #mirrored Selected matches 1 store result entity @s Pose.Head[1] float 0.05 run scoreboard players set #temp Time -440
+execute if entity @s[scores={AnimationProgress=20..30}] if score #mirrored Selected matches 1 store result entity @s Pose.Head[1] float 0.05 run scoreboard players set #temp Time -450
+execute if entity @s[scores={AnimationProgress=31}] if score #mirrored Selected matches 1 store result entity @s Pose.Head[1] float 0.05 run scoreboard players set #temp Time -440
+execute if entity @s[scores={AnimationProgress=32}] if score #mirrored Selected matches 1 store result entity @s Pose.Head[1] float 0.05 run scoreboard players set #temp Time -420
+execute if entity @s[scores={AnimationProgress=33}] if score #mirrored Selected matches 1 store result entity @s Pose.Head[1] float 0.05 run scoreboard players set #temp Time -385
+execute if entity @s[scores={AnimationProgress=34}] if score #mirrored Selected matches 1 store result entity @s Pose.Head[1] float 0.05 run scoreboard players set #temp Time -335
+execute if entity @s[scores={AnimationProgress=35}] if score #mirrored Selected matches 1 store result entity @s Pose.Head[1] float 0.05 run scoreboard players set #temp Time -270
+execute if entity @s[scores={AnimationProgress=36}] if score #mirrored Selected matches 1 store result entity @s Pose.Head[1] float 0.05 run scoreboard players set #temp Time -190
+execute if entity @s[scores={AnimationProgress=37}] if score #mirrored Selected matches 1 store result entity @s Pose.Head[1] float 0.05 run scoreboard players set #temp Time -95
+execute if entity @s[scores={AnimationProgress=38}] if score #mirrored Selected matches 1 store result entity @s Pose.Head[1] float 0.05 run scoreboard players set #temp Time 15
+execute if entity @s[scores={AnimationProgress=39}] if score #mirrored Selected matches 1 store result entity @s Pose.Head[1] float 0.05 run scoreboard players set #temp Time 140
+execute if entity @s[scores={AnimationProgress=40}] if score #mirrored Selected matches 1 store result entity @s Pose.Head[1] float 0.05 run scoreboard players set #temp Time 275
+execute if entity @s[scores={AnimationProgress=41}] if score #mirrored Selected matches 1 store result entity @s Pose.Head[1] float 0.05 run scoreboard players set #temp Time 410
+execute if entity @s[scores={AnimationProgress=42}] if score #mirrored Selected matches 1 store result entity @s Pose.Head[1] float 0.05 run scoreboard players set #temp Time 535
+execute if entity @s[scores={AnimationProgress=43}] if score #mirrored Selected matches 1 store result entity @s Pose.Head[1] float 0.05 run scoreboard players set #temp Time 645
+execute if entity @s[scores={AnimationProgress=44}] if score #mirrored Selected matches 1 store result entity @s Pose.Head[1] float 0.05 run scoreboard players set #temp Time 740
+execute if entity @s[scores={AnimationProgress=45}] if score #mirrored Selected matches 1 store result entity @s Pose.Head[1] float 0.05 run scoreboard players set #temp Time 820
+execute if entity @s[scores={AnimationProgress=46}] if score #mirrored Selected matches 1 store result entity @s Pose.Head[1] float 0.05 run scoreboard players set #temp Time 885
+execute if entity @s[scores={AnimationProgress=47}] if score #mirrored Selected matches 1 store result entity @s Pose.Head[1] float 0.05 run scoreboard players set #temp Time 935
+execute if entity @s[scores={AnimationProgress=48}] if score #mirrored Selected matches 1 store result entity @s Pose.Head[1] float 0.05 run scoreboard players set #temp Time 970
+execute if entity @s[scores={AnimationProgress=49}] if score #mirrored Selected matches 1 store result entity @s Pose.Head[1] float 0.05 run scoreboard players set #temp Time 990
+execute if entity @s[scores={AnimationProgress=50..70}] if score #mirrored Selected matches 1 store result entity @s Pose.Head[1] float 0.05 run scoreboard players set #temp Time 1000
+execute if entity @s[scores={AnimationProgress=71}] if score #mirrored Selected matches 1 store result entity @s Pose.Head[1] float 0.05 run scoreboard players set #temp Time 950
+execute if entity @s[scores={AnimationProgress=72}] if score #mirrored Selected matches 1 store result entity @s Pose.Head[1] float 0.05 run scoreboard players set #temp Time 900
+execute if entity @s[scores={AnimationProgress=73}] if score #mirrored Selected matches 1 store result entity @s Pose.Head[1] float 0.05 run scoreboard players set #temp Time 800
+execute if entity @s[scores={AnimationProgress=74}] if score #mirrored Selected matches 1 store result entity @s Pose.Head[1] float 0.05 run scoreboard players set #temp Time 650
+execute if entity @s[scores={AnimationProgress=75}] if score #mirrored Selected matches 1 store result entity @s Pose.Head[1] float 0.05 run scoreboard players set #temp Time 450
+execute if entity @s[scores={AnimationProgress=76}] if score #mirrored Selected matches 1 store result entity @s Pose.Head[1] float 0.05 run scoreboard players set #temp Time 250
+execute if entity @s[scores={AnimationProgress=77}] if score #mirrored Selected matches 1 store result entity @s Pose.Head[1] float 0.05 run scoreboard players set #temp Time 100
+execute if entity @s[scores={AnimationProgress=79}] if score #mirrored Selected matches 1 store result entity @s Pose.Head[1] float 0.05 run scoreboard players set #temp Time -50
+execute if entity @s[scores={AnimationProgress=80..100}] if score #mirrored Selected matches 1 store result entity @s Pose.Head[1] float 0.05 run scoreboard players set #temp Time -100
+execute if entity @s[scores={AnimationProgress=101}] if score #mirrored Selected matches 1 store result entity @s Pose.Head[1] float 0.05 run scoreboard players set #temp Time -90
+execute if entity @s[scores={AnimationProgress=102}] if score #mirrored Selected matches 1 store result entity @s Pose.Head[1] float 0.05 run scoreboard players set #temp Time -55
+execute if entity @s[scores={AnimationProgress=104}] if score #mirrored Selected matches 1 store result entity @s Pose.Head[1] float 0.05 run scoreboard players set #temp Time 75
+execute if entity @s[scores={AnimationProgress=105}] if score #mirrored Selected matches 1 store result entity @s Pose.Head[1] float 0.05 run scoreboard players set #temp Time 175
+execute if entity @s[scores={AnimationProgress=106}] if score #mirrored Selected matches 1 store result entity @s Pose.Head[1] float 0.05 run scoreboard players set #temp Time 275
+execute if entity @s[scores={AnimationProgress=107}] if score #mirrored Selected matches 1 store result entity @s Pose.Head[1] float 0.05 run scoreboard players set #temp Time 350
+execute if entity @s[scores={AnimationProgress=108}] if score #mirrored Selected matches 1 store result entity @s Pose.Head[1] float 0.05 run scoreboard players set #temp Time 405
+execute if entity @s[scores={AnimationProgress=109}] if score #mirrored Selected matches 1 store result entity @s Pose.Head[1] float 0.05 run scoreboard players set #temp Time 440
+execute if entity @s[scores={AnimationProgress=110..130}] if score #mirrored Selected matches 1 store result entity @s Pose.Head[1] float 0.05 run scoreboard players set #temp Time 450
+execute if entity @s[scores={AnimationProgress=131}] if score #mirrored Selected matches 1 store result entity @s Pose.Head[1] float 0.05 run scoreboard players set #temp Time 425
+execute if entity @s[scores={AnimationProgress=132}] if score #mirrored Selected matches 1 store result entity @s Pose.Head[1] float 0.05 run scoreboard players set #temp Time 375
+execute if entity @s[scores={AnimationProgress=133}] if score #mirrored Selected matches 1 store result entity @s Pose.Head[1] float 0.05 run scoreboard players set #temp Time 325
+execute if entity @s[scores={AnimationProgress=134}] if score #mirrored Selected matches 1 store result entity @s Pose.Head[1] float 0.05 run scoreboard players set #temp Time 275
+execute if entity @s[scores={AnimationProgress=135}] if score #mirrored Selected matches 1 store result entity @s Pose.Head[1] float 0.05 run scoreboard players set #temp Time 225
+execute if entity @s[scores={AnimationProgress=136}] if score #mirrored Selected matches 1 store result entity @s Pose.Head[1] float 0.05 run scoreboard players set #temp Time 175
+execute if entity @s[scores={AnimationProgress=137}] if score #mirrored Selected matches 1 store result entity @s Pose.Head[1] float 0.05 run scoreboard players set #temp Time 125
+execute if entity @s[scores={AnimationProgress=138}] if score #mirrored Selected matches 1 store result entity @s Pose.Head[1] float 0.05 run scoreboard players set #temp Time 75
+execute if entity @s[scores={AnimationProgress=139}] if score #mirrored Selected matches 1 store result entity @s Pose.Head[1] float 0.05 run scoreboard players set #temp Time 25
 execute unless score #mirrored Selected matches 1 store result score #temp Time run data get entity @s Pose.Head[0] 10
 execute if entity @s[scores={AnimationProgress=1}] unless score #mirrored Selected matches 1 store result entity @s Pose.Head[0] float 0.1 run scoreboard players set #temp Time 0
 execute if entity @s[scores={AnimationProgress=2}] unless score #mirrored Selected matches 1 store result entity @s Pose.Head[0] float 0.1 run scoreboard players set #temp Time 5
@@ -298,6 +297,6 @@ execute if entity @s[scores={AnimationProgress=107}] if score #mirrored Selected
 execute if entity @s[scores={AnimationProgress=108}] if score #mirrored Selected matches 1 store result entity @s Pose.Head[0] float 0.05 run scoreboard players set #temp Time -20
 execute if entity @s[scores={AnimationProgress=109}] if score #mirrored Selected matches 1 store result entity @s Pose.Head[0] float 0.05 run scoreboard players set #temp Time -10
 execute if entity @s[scores={AnimationProgress=110..140}] if score #mirrored Selected matches 1 store result entity @s Pose.Head[0] float 0.05 run scoreboard players set #temp Time 0
-execute at @s[scores={AnimationProgress=45..75}] unless score #mirrored Selected matches 1 run teleport @s ^ ^ ^0.25
 scoreboard players reset #temp Time
+execute at @s[scores={AnimationProgress=45..75}] unless score #mirrored Selected matches 1 run teleport @s ^ ^ ^0.25
 scoreboard players set @s[scores={AnimationProgress=140}] AnimationProgress 0

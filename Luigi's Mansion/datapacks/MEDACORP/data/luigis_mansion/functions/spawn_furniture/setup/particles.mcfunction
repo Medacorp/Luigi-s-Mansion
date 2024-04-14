@@ -6,9 +6,11 @@ execute if data storage luigis_mansion:data furniture{particles:"flames"} run ta
 execute if data storage luigis_mansion:data furniture{particles:"dripping_water"} run tag @e[tag=this_entity,limit=1] add moist
 execute if data storage luigis_mansion:data furniture{particles:"dripping_water"} run tag @e[tag=this_entity,limit=1] add affected_by_ice
 execute if data storage luigis_mansion:data furniture{particles:"dripping_water"} run tag @e[tag=this_entity,limit=1] add affected_by_fire
+execute if data storage luigis_mansion:data furniture{particles:"dripping_water"} run tag @e[tag=this_entity,limit=1] add affected_by_vacuum
 execute if data storage luigis_mansion:data furniture{particles:"spraying_water"} run tag @e[tag=this_entity,limit=1] add moist
 execute if data storage luigis_mansion:data furniture{particles:"spraying_water"} run tag @e[tag=this_entity,limit=1] add affected_by_ice
 execute if data storage luigis_mansion:data furniture{particles:"spraying_water"} run tag @e[tag=this_entity,limit=1] add affected_by_fire
+execute if data storage luigis_mansion:data furniture{particles:"spraying_water"} run tag @e[tag=this_entity,limit=1] add affected_by_vacuum
 execute if data storage luigis_mansion:data furniture{particles:"chilly_fog"} run tag @e[tag=this_entity,limit=1] add chilly
 execute if data storage luigis_mansion:data furniture{particles:"chilly_fog"} run tag @e[tag=this_entity,limit=1] add affected_by_fire
 execute if data storage luigis_mansion:data furniture{particles:"chilly_fog"} run tag @e[tag=this_entity,limit=1] add affected_by_ice

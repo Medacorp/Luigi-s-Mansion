@@ -13,7 +13,6 @@
         "luigis_mansion:room/normal/courtyard/reset/room_clear_chest",
         "luigis_mansion:room/normal/courtyard/reset/statue_1",
         "luigis_mansion:room/normal/courtyard/reset/statue_2",
-        "luigis_mansion:room/normal/courtyard/reset/vacuumable",
-        "luigis_mansion:room/normal/courtyard/reset/water"
+        "luigis_mansion:room/normal/courtyard/reset/vacuumable"
     ]
 }
