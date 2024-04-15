@@ -11,6 +11,8 @@ WARNING! When updating an old save version, be sure to:
 * Added revive messages
 * Added difficulty effects; the higher the difficulty, the harder; total score gets a multiplier based on the lowest selected difficulty in the mansion
 * Changed E. Gadd model
+* Changed Toad model
+* changed ghosts to be always be fully lit
 * Rewrote a lot
 * Bug fixes
 

@@ -2,7 +2,6 @@
 	"values": [
 		"3ds_remake:room/hidden/bathroom_2/interactions/room/bathtub",
 		"3ds_remake:room/hidden/bathroom_2/interactions/room/curtain",
-		"3ds_remake:room/hidden/bathroom_2/interactions/room/mirror",
-		"3ds_remake:room/hidden/bathroom_2/interactions/room/water"
+		"3ds_remake:room/hidden/bathroom_2/interactions/room/mirror"
 	]
 }

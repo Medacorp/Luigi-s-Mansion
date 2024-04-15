@@ -5,12 +5,12 @@
         "luigis_mansion:room/normal/kitchen/load/boneyard_door",
         "luigis_mansion:room/normal/kitchen/load/cobweb",
         "luigis_mansion:room/normal/kitchen/load/dining_room_door",
+        "luigis_mansion:room/normal/kitchen/load/dripping_water",
         "luigis_mansion:room/normal/kitchen/load/haunted_objects",
         "luigis_mansion:room/normal/kitchen/load/ice",
         "luigis_mansion:room/normal/kitchen/load/painting_1",
         "luigis_mansion:room/normal/kitchen/load/painting_2",
         "luigis_mansion:room/normal/kitchen/load/painting_3",
-        "luigis_mansion:room/normal/kitchen/load/room_clear_chest",
-        "luigis_mansion:room/normal/kitchen/load/water"
+        "luigis_mansion:room/normal/kitchen/load/room_clear_chest"
 	]
 }

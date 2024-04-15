@@ -1,0 +1,1 @@
+$particle minecraft:soul_fire_flame ~ ~0.2 ~ $(x) $(y) $(z) 1 0 normal @a[tag=same_room]

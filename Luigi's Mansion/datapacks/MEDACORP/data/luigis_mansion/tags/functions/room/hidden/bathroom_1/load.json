@@ -2,8 +2,8 @@
 	"values": [
 	    "luigis_mansion:room/hidden/bathroom_1/load/set_loaded",
         "luigis_mansion:room/hidden/bathroom_1/load/lights",
+        "luigis_mansion:room/hidden/bathroom_1/load/dripping_water",
         "luigis_mansion:room/hidden/bathroom_1/load/hallway_6_door",
-        "luigis_mansion:room/hidden/bathroom_1/load/room_clear_loot_dropper",
-        "luigis_mansion:room/hidden/bathroom_1/load/water"
+        "luigis_mansion:room/hidden/bathroom_1/load/room_clear_loot_dropper"
 	]
 }

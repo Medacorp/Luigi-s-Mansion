@@ -1,7 +1,6 @@
 summon minecraft:armor_stand ~ ~-1.2 ~ {CustomName:'{"type":"translatable","translate":"luigis_mansion:furniture.crystal_ball"}',Tags:["furniture","immobile","this_entity"],NoGravity:1b,Marker:1b,ArmorItems:[{},{},{},{id:"minecraft:diamond_pickaxe",Count:1b,tag:{Unbreakable:1b,Damage:19,CustomModelData:105,luigis_mansion:{entity:{namespace:"luigis_mansion",id:"furniture"},furniture_type:"generic"}}}],Invisible:1b,DisabledSlots:2039583}
 teleport @e[tag=this_entity,limit=1] ~ ~-1.2 ~ ~ 0
 scoreboard players set @e[tag=this_entity,limit=1] FurnitureSizeRadius 4
-scoreboard players set @e[tag=this_entity,limit=1] InteractionType 3
 scoreboard players set @e[tag=this_entity,limit=1] FurnitureDustLeft 0
 scoreboard players set @e[tag=this_entity,limit=1] FurnitureDustUp 0
 scoreboard players set @e[tag=this_entity,limit=1] FurnitureDustForward 0

@@ -1,7 +1,7 @@
 execute store result score #temp4 Time run data get entity @s Pos[0] 100
 execute store result score #temp5 Time run data get entity @s Pos[1] 100
 execute store result score #temp6 Time run data get entity @s Pos[2] 100
-teleport @s ^ ^ ^0.6
+$teleport @s ^ ^ ^$(power)
 execute store result score #temp Time run data get entity @s Pos[0] 100
 execute store result score #temp2 Time run data get entity @s Pos[1] 100
 execute store result score #temp3 Time run data get entity @s Pos[2] 100
