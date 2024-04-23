@@ -33,8 +33,6 @@ function luigis_mansion:other/upgrade_path/change_up_ghost_data
 data modify storage luigis_mansion:data saved_state.ghosts_caught set from storage luigis_mansion:data new_ghosts_caught
 data remove storage luigis_mansion:data ghosts_caught
 data remove storage luigis_mansion:data new_ghosts_caught
-scoreboard objectives add ClearInventory dummy
-scoreboard players set * ClearInventory 1
 scoreboard objectives remove AnimationProg
 scoreboard objectives remove Attack
 scoreboard objectives remove BookChoice
@@ -60,6 +58,8 @@ scoreboard objectives remove HomeRotX
 scoreboard objectives remove HomeRotY
 scoreboard objectives remove InteractionType
 scoreboard objectives remove JarvisChoice
+scoreboard objectives remove Jump
+scoreboard objectives remove JumpHeight
 scoreboard objectives remove Keys
 scoreboard objectives remove KnockbackType
 scoreboard objectives remove KnockbackTime

@@ -1,3 +1,4 @@
+execute unless data storage luigis_mansion:data current_state.current_data{money_spawned:["secret_altar_altar_chandelier_2"]} run data modify storage luigis_mansion:data entity set value {room:72}
 execute unless data storage luigis_mansion:data current_state.current_data{money_spawned:["secret_altar_altar_chandelier_2"]} run function luigis_mansion:spawn_entities/item/blue_sapphire
 execute if data storage luigis_mansion:data current_state.current_data{money_spawned:["secret_altar_altar_chandelier_2"]} run tag @e[tag=selected] add nothing
 execute unless data storage luigis_mansion:data current_state.current_data{money_spawned:["secret_altar_altar_chandelier_2"]} run data modify storage luigis_mansion:data current_state.current_data.money_spawned append value "secret_altar_altar_chandelier_2"

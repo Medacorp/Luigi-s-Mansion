@@ -1,8 +1,14 @@
 {
     "display": {
         "icon": {
-            "item": "minecraft:leather_chestplate",
-            "nbt": "{Unbreakable:1b,Damage:1,CustomModelData:20,display:{color:37129}}"
+            "count": 1,
+            "id": "minecraft:leather_chestplate",
+            "components": {
+                "minecraft:unbreakable": {},
+                "minecraft:damage": 1,
+                "minecraft:custom_model_data": 20,
+                "minecraft:dyed_color": { "rgb": 37129 }
+            }
         },
         "show_toast": false,
         "hidden": true,

@@ -7,7 +7,6 @@ scoreboard objectives add BananaDropTime dummy
 scoreboard objectives add Boos dummy
 scoreboard objectives add BooTimer dummy
 scoreboard objectives add ChangedMansion dummy
-scoreboard objectives add ClearInventory dummy
 scoreboard objectives add Constants dummy
 scoreboard objectives add CreditsTime dummy
 scoreboard objectives add Damage dummy
@@ -97,8 +96,6 @@ scoreboard objectives add IdleTime dummy
 scoreboard objectives add IncreaseAmount dummy
 scoreboard objectives add InteractionTime dummy
 scoreboard objectives add Invulnerable dummy
-scoreboard objectives add Jump minecraft.custom:minecraft.jump
-scoreboard objectives add JumpHeight dummy
 scoreboard objectives add KillerID dummy
 scoreboard objectives add KnockbackDamage dummy
 scoreboard objectives add KnockbackX dummy
@@ -195,6 +192,7 @@ scoreboard objectives add TotalDamage dummy
 scoreboard objectives add Totals dummy
 scoreboard objectives add TrainingRoomScore dummy
 scoreboard objectives add Turn dummy
+scoreboard objectives add UpgradePlayer dummy
 scoreboard objectives add UseItem minecraft.used:minecraft.carrot_on_a_stick
 scoreboard objectives add Vacuumables dummy
 scoreboard objectives add VacuumErrors dummy
@@ -270,3 +268,4 @@ gamerule doEntityDrops false
 gamerule fallDamage false
 gamerule maxCommandChainLength 2147483647
 gamerule maxCommandForkCount 2147483647
+gamerule spawnChunkRadius 0

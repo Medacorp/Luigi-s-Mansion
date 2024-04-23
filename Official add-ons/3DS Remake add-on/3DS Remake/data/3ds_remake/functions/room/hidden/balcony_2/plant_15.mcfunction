@@ -1,3 +1,4 @@
+execute unless data storage luigis_mansion:data current_state.current_data{money_spawned:["balcony_2_potted_dying_blue_flower_6"]} run data modify storage luigis_mansion:data entity set value {room:53}
 execute unless data storage luigis_mansion:data current_state.current_data{money_spawned:["balcony_2_potted_dying_blue_flower_6"]} run function luigis_mansion:spawn_entities/item/gold_bar
 execute if data storage luigis_mansion:data current_state.current_data{money_spawned:["balcony_2_potted_dying_blue_flower_6"]} run tag @e[tag=selected] add nothing
 execute unless data storage luigis_mansion:data current_state.current_data{money_spawned:["balcony_2_potted_dying_blue_flower_6"]} run data modify storage luigis_mansion:data current_state.current_data.money_spawned append value "balcony_2_potted_dying_blue_flower_6"

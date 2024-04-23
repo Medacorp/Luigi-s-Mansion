@@ -70,9 +70,9 @@ execute if score #dialog Dialog matches 234..253 run effect give @a[tag=same_roo
 execute if score #dialog Dialog matches 254 run data remove entity @e[tag=same_room,nbt={data:{entity:{namespace:"luigis_mansion",id:"king_boo"}}},limit=1] data.animation
 execute if score #dialog Dialog matches 264..284 as @e[tag=same_room,nbt={data:{entity:{namespace:"luigis_mansion",id:"king_boo"}}},limit=1] at @s facing 633 94 33 run teleport @s ^ ^ ^0.3 ~ ~
 execute if score #dialog Dialog matches 304 run data modify entity @e[tag=same_room,nbt={data:{entity:{namespace:"luigis_mansion",id:"bowser"}}},limit=1] data.animation set value {namespace:"luigis_mansion",id:"painting"}
-execute if score #dialog Dialog matches 371.. positioned 636 95 33 run particle minecraft:dust 1 1 1 1 ~ ~ ~ 0 0 0 0 10
-execute if score #dialog Dialog matches 371.. positioned 637 95 33 run particle minecraft:dust 1 1 1 1 ~ ~ ~ 0 0 0 0 10
-execute if score #dialog Dialog matches 371.. positioned 638 95 33 run particle minecraft:dust 1 1 1 1 ~ ~ ~ 0 0 0 0 10
+execute if score #dialog Dialog matches 371.. positioned 636 95 33 run particle minecraft:dust{color:[1f,1f,1f],scale:1f} ~ ~ ~ 0 0 0 0 10
+execute if score #dialog Dialog matches 371.. positioned 637 95 33 run particle minecraft:dust{color:[1f,1f,1f],scale:1f} ~ ~ ~ 0 0 0 0 10
+execute if score #dialog Dialog matches 371.. positioned 638 95 33 run particle minecraft:dust{color:[1f,1f,1f],scale:1f} ~ ~ ~ 0 0 0 0 10
 execute if score #dialog Dialog matches 431 as @a[tag=same_room,tag=!spectator] run function luigis_mansion:entities/player/animation/set/none
 execute if score #dialog Dialog matches 431 at @e[tag=same_room,nbt={data:{entity:{namespace:"luigis_mansion",id:"king_boo"}}},limit=1] as @a[tag=same_room,tag=!spectator] run function luigis_mansion:entities/player/animation/set/knockback/flee
 execute if score #dialog Dialog matches 431.. as @e[tag=same_room,nbt={data:{entity:{namespace:"luigis_mansion",id:"king_boo"}}},limit=1] unless entity @s[scores={PoltergustSound=1..}] run playsound luigis_mansion:entity.bowser.vacuum hostile @a[tag=same_room] ~ ~ ~ 3

@@ -95,7 +95,7 @@ execute if score #dialog Dialog matches 99..129 as @e[tag=e_gadd,tag=same_room,l
 execute if score #dialog Dialog matches 130 as @e[tag=e_gadd,tag=same_room,limit=1] at @s run teleport @s ~ ~ ~ facing 722 20 29
 execute if score #dialog Dialog matches 131..150 as @e[tag=e_gadd,tag=same_room,limit=1] at @s run teleport @s ^ ^ ^0.125
 execute if score #dialog Dialog matches 150 run data modify entity @e[tag=e_gadd,tag=same_room,limit=1] data.animation set value {namespace:"luigis_mansion",id:"vacuum"}
-execute if score #dialog Dialog matches 150 run data modify entity @e[tag=e_gadd,tag=same_room,limit=1] data.poltergust set value {id:"minecraft:carrot_on_a_stick",Count:1b,tag:{Unbreakable:1b,Damage:0,CustomModelData:1}}
+execute if score #dialog Dialog matches 150 run data modify entity @e[tag=e_gadd,tag=same_room,limit=1] data.poltergust set value {id:"minecraft:carrot_on_a_stick",count:1,components:{"minecraft:unbreakable":{},"minecraft:damage":0,"minecraft:custom_model_data":1}}
 execute if score #dialog Dialog matches 150..459 at @e[tag=e_gadd,tag=same_room,limit=1] positioned ~ ~0.25 ~ positioned ^ ^ ^0.5 as @e[tag=ghost,tag=same_room,limit=1] facing entity @s feet run function luigis_mansion:items/poltergust_3000/vacuuming/e_gadd
 execute if score #dialog Dialog matches 150 run data modify entity @e[tag=ghost,tag=same_room,limit=1] data.animation set value {namespace:"luigis_mansion",id:"hurt"}
 execute if score #dialog Dialog matches 150 run tag @a[tag=walking_player,limit=1] remove bash_no_move

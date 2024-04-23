@@ -1,7 +1,8 @@
 {
     "display": {
         "icon": {
-            "item": "minecraft:painting"
+            "count": 1,
+            "id": "minecraft:painting"
         },
         "title": {
             "type": "translatable", "translate": "luigis_mansion:advancements.vanilla.full_to_bursting_you_say"

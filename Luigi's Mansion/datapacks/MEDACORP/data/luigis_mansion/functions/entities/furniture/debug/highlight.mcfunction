@@ -1,1 +1,1 @@
-particle minecraft:dust 1 1 0.25 0.25 ~ ~ ~ 0 0 0 0 1 force @a[tag=same_room]
+particle minecraft:dust{color:[1f,1f,0.25f],scale:0.25f} ~ ~ ~ 0 0 0 0 1 force @a[tag=same_room]

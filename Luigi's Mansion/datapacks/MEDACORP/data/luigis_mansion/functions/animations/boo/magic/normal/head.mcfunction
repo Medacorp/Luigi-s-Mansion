@@ -7,6 +7,6 @@ execute if entity @s[scores={AnimationProgress=11..20}] store result entity @s P
 execute if entity @s[scores={AnimationProgress=21..40}] store result entity @s Pose.Head[2] float 1 run scoreboard players remove #temp Time 8
 execute if entity @s[scores={AnimationProgress=41..100}] store result entity @s Pose.Head[2] float 1 run scoreboard players remove #temp Time 9
 scoreboard players reset #temp Time
-data modify entity @s[scores={AnimationProgress=1}] ArmorItems[3] merge from entity @s ArmorItems[3].tag.luigis_mansion.model_data.attacking
+data modify entity @s[scores={AnimationProgress=1}] ArmorItems[3] merge from entity @s ArmorItems[3].components."minecraft:custom_data".model_data.attacking
 scoreboard players set @s[scores={AnimationProgress=120}] AnimationProgress 0
 data modify entity @s Pose.Head[0] set from entity @e[tag=this_entity,limit=1] Rotation[1]

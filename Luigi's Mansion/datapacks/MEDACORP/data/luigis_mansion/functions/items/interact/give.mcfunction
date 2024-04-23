@@ -1,3 +1,3 @@
-execute store result score #temp ActionTime run clear @s minecraft:carrot_on_a_stick{luigis_mansion:{namespace:"luigis_mansion",id:"interact"}} 0
-execute if score #temp ActionTime matches 0 run give @s minecraft:carrot_on_a_stick{HideFlags:63,Unbreakable:1b,Damage:6,CustomModelData:0,display:{Name:'{"italic":false,"color":"white","type":"translatable","translate":"luigis_mansion:item.interact"}'},luigis_mansion:{namespace:"luigis_mansion",id:"interact",kill:1b}}
+execute store result score #temp ActionTime run clear @s *[minecraft:custom_data~{namespace:"luigis_mansion",id:"interact"}] 0
+execute if score #temp ActionTime matches 0 run give @s minecraft:carrot_on_a_stick[minecraft:unbreakable={show_in_tooltip:0b},minecraft:damage=6,minecraft:custom_model_data=0,minecraft:item_name='{"type":"translatable","translate":"luigis_mansion:item.interact"}',minecraft:custom_data={namespace:"luigis_mansion",id:"interact",kill:1b}]
 scoreboard players reset #temp ActionTime

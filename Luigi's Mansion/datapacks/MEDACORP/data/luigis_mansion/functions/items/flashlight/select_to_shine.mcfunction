@@ -1,6 +1,6 @@
 tag @s remove flashlight
 tag @s remove flashlight_selected
-tag @s[tag=!grabbed,tag=!poltergust_selected,nbt={SelectedItem:{tag:{luigis_mansion:{namespace:"luigis_mansion",id:"flashlight"}}}}] add flashlight_selected
+tag @s[tag=!grabbed,tag=!poltergust_selected,nbt={SelectedItem:{components:{"minecraft:custom_data":{namespace:"luigis_mansion",id:"flashlight"}}}}] add flashlight_selected
 tag @s[tag=!flashlight_selected] remove flashlight_off
 tag @s[tag=flashlight_selected,scores={UseItem=1..},tag=!flashlight_off] add toggle_flashlight_off
 tag @s[tag=flashlight_selected,tag=toggle_flashlight_off] add flashlight_off

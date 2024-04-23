@@ -1,1 +1,2 @@
-summon minecraft:item_frame 741 21 48 {Facing:2b,Silent:1b,Invulnerable:1b,Item:{id:"minecraft:filled_map",Count:1b,tag:{map:222}},CustomName:'{"type":"translatable","translate":"luigis_mansion:furniture.painting"}',Invisible:1b,Fixed:1b}
+summon minecraft:item_frame 741 21 48 {Facing:2b,Silent:1b,Invulnerable:1b,Item:{id:"minecraft:filled_map",count:1,components:{"minecraft:map_id":222}},CustomName:'{"type":"translatable","translate":"luigis_mansion:furniture.painting"}',Invisible:1b,Fixed:1b}
+scoreboard players set @e[x=741.5,y=21.0,z=48.5,distance=..2,type=minecraft:item_frame] Room 49

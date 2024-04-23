@@ -1,5 +1,4 @@
 tag @s remove grabbed
-effect clear @s[tag=flipped_gravity] minecraft:levitation
 tag @s remove flipped_gravity
 tag @s remove poltergust_malfunction
 
@@ -19,9 +18,9 @@ execute if entity @s[tag=dead_player] if score #can_revive Selected matches 1 un
 scoreboard players reset #temp ID
 tag @a[tag=this_death_location] remove this_death_location
 
-execute at @e[tag=ghost,tag=same_room,tag=!vacuumable,tag=!visible,tag=hidden] run particle minecraft:dust 0.7 1 0.5 1 ~ ~0.6 ~ 0.3 0.3 0.3 0 5 normal @s
-execute at @e[tag=ghost,tag=same_room,tag=!vacuumable,tag=!visible,tag=!vanish,tag=!hidden] run particle minecraft:dust 0.7 1 0 1 ~ ~1.6 ~ 0.3 0.3 0.3 0 5 normal @s
+execute at @e[tag=ghost,tag=same_room,tag=!vacuumable,tag=!visible,tag=hidden] run particle minecraft:dust{color:[0.7f,1f,0.5f],scale:1f} ~ ~0.6 ~ 0.3 0.3 0.3 0 5 normal @s
+execute at @e[tag=ghost,tag=same_room,tag=!vacuumable,tag=!visible,tag=!vanish,tag=!hidden] run particle minecraft:dust{color:[0.7f,1f,0f],scale:1f} ~ ~1.6 ~ 0.3 0.3 0.3 0 5 normal @s
 tag @s add me
-execute at @a[tag=same_room,gamemode=spectator,tag=!me] run particle minecraft:dust 0.2 1 0.2 1 ~ ~1.6 ~ 0.3 0.3 0.3 0 5 normal @s
+execute at @a[tag=same_room,gamemode=spectator,tag=!me] run particle minecraft:dust{color:[0.2f,1f,0.2f],scale:1f} ~ ~1.6 ~ 0.3 0.3 0.3 0 5 normal @s
 tag @s remove me
 tag @s add spectator

@@ -1,3 +1,3 @@
-execute if data entity @s ArmorItems[3].tag.luigis_mansion.mirror run data modify entity @s ArmorItems[3] merge from entity @s ArmorItems[3].tag.luigis_mansion.mirror
-execute if data entity @s HandItems[0].tag.luigis_mansion.mirror run data modify entity @s HandItems[0] merge from entity @s HandItems[0].tag.luigis_mansion.mirror
-execute if data entity @s HandItems[1].tag.luigis_mansion.mirror run data modify entity @s HandItems[1] merge from entity @s HandItems[1].tag.luigis_mansion.mirror
+execute if data entity @s ArmorItems[3].components."minecraft:custom_data".mirror run data modify entity @s ArmorItems[3] merge from entity @s ArmorItems[3].components."minecraft:custom_data".mirror
+execute if data entity @s HandItems[0].components."minecraft:custom_data".mirror run data modify entity @s HandItems[0] merge from entity @s HandItems[0].components."minecraft:custom_data".mirror
+execute if data entity @s HandItems[1].components."minecraft:custom_data".mirror run data modify entity @s HandItems[1] merge from entity @s HandItems[1].components."minecraft:custom_data".mirror

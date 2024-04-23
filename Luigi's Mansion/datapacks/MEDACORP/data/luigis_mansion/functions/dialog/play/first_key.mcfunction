@@ -7,18 +7,18 @@ execute if score #dialog Dialog matches 1 run tag @e[tag=furniture,tag=same_room
 execute if score #dialog Dialog matches 1.. run scoreboard players reset @a[tag=same_room,tag=!spectator] WarpTime
 execute if score #dialog Dialog matches 1.. as @a[tag=same_room,tag=!spectator,tag=game_boy_horror_menu] run function luigis_mansion:selection_menu/game_boy_horror/exit
 execute if score #dialog Dialog matches 1.. run tag @e[tag=candle_flame,tag=same_room] remove no_ai
-execute if score #dialog Dialog matches 1 run summon minecraft:armor_stand 751.0 13 9.0 {CustomName:'{"type":"translatable","translate":"luigis_mansion:entity.gold_ghost"}',Tags:["first_key","same_room"],ArmorItems:[{},{},{},{id:"minecraft:brick",Count:1b,tag:{CustomModelData:1}}],NoGravity:1b,Invulnerable:1b,Silent:1b,Invisible:1b,DisabledSlots:2039583}
+execute if score #dialog Dialog matches 1 run summon minecraft:armor_stand 751.0 13 9.0 {CustomName:'{"type":"translatable","translate":"luigis_mansion:entity.gold_ghost"}',Tags:["first_key","same_room"],ArmorItems:[{},{},{},{id:"minecraft:brick",count:1,components:{"minecraft:custom_model_data":1}}],NoGravity:1b,Invulnerable:1b,Silent:1b,Invisible:1b,DisabledSlots:2039583}
 execute if score #dialog Dialog matches 1 store result score @e[tag=first_key,tag=same_room] Room run data get storage luigis_mansion:data dialogs[0].room
 execute if score #dialog Dialog matches 1 run stopsound @a[tag=same_room] music
 execute if score #dialog Dialog matches 1 run playsound luigis_mansion:music.first_key music @a[tag=same_room] ~ ~ ~ 1000
 execute if score #dialog Dialog matches 1 run scoreboard players set @a[tag=same_room] Music 470
-execute if score #dialog Dialog matches 1..370 at @e[tag=same_room,tag=first_key] run particle minecraft:dust 1 0.6 0 1 ~ ~0.5 ~ 0.2 0.2 0.2 0 5
+execute if score #dialog Dialog matches 1..370 at @e[tag=same_room,tag=first_key] run particle minecraft:dust{color:[1f,0.6f,0f],scale:1f} ~ ~0.5 ~ 0.2 0.2 0.2 0 5
 execute if score #dialog Dialog matches 1..30 as @e[tag=same_room,tag=first_key] at @s run teleport @s ~ ~ ~-0.025
 execute if score #dialog Dialog matches 31..60 as @e[tag=same_room,tag=first_key] at @s run teleport @s ~ ~ ~0.05
 execute if score #dialog Dialog matches 61..90 as @e[tag=same_room,tag=first_key] at @s run teleport @s ~ ~ ~-0.05
 execute if score #dialog Dialog matches 91..120 as @e[tag=same_room,tag=first_key] at @s run teleport @s ~ ~ ~0.025
 execute if score #dialog Dialog matches 121..122 as @e[tag=same_room,tag=first_key] at @s run teleport @s ~ ~-0.2 ~
-execute if score #dialog Dialog matches 216 at @e[tag=same_room,tag=first_key] run summon minecraft:armor_stand ~ ~ ~ {CustomName:'{"type":"translatable","translate":"luigis_mansion:item.key"}',Pose:{Head:[0.0f,90.0f,0.01f]},Marker:1b,Invisible:1b,Silent:1b,ArmorItems:[{},{},{},{id:"minecraft:brick",Count:1b,tag:{CustomModelData:1}}],Tags:["key_model","same_room"],Rotation:[-90.0f,0.0f],DisabledSlots:2039583}
+execute if score #dialog Dialog matches 216 at @e[tag=same_room,tag=first_key] run summon minecraft:armor_stand ~ ~ ~ {CustomName:'{"type":"translatable","translate":"luigis_mansion:item.key"}',Pose:{Head:[0.0f,90.0f,0.01f]},Marker:1b,Invisible:1b,Silent:1b,ArmorItems:[{},{},{},{id:"minecraft:brick",count:1,components:{"minecraft:custom_model_data":1}}],Tags:["key_model","same_room"],Rotation:[-90.0f,0.0f],DisabledSlots:2039583}
 execute if score #dialog Dialog matches 216 store result score @e[tag=key_model,tag=same_room] Room run data get storage luigis_mansion:data dialogs[0].room
 execute if score #dialog Dialog matches 216 run item replace entity @e[tag=same_room,tag=first_key] armor.head with minecraft:air
 execute if score #dialog Dialog matches 216..220 as @e[tag=same_room,tag=key_model,limit=1] at @s run teleport @s ~ ~0.1 ~

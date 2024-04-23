@@ -1,8 +1,13 @@
 {
     "display": {
         "icon": {
-            "item": "minecraft:diamond_pickaxe",
-			"nbt": "{Damage:22,Unbreakable:1b,CustomModelData:15}"
+            "count": 1,
+            "id": "minecraft:diamond_pickaxe",
+            "components": {
+                "minecraft:unbreakable": {},
+                "minecraft:damage": 22,
+                "minecraft:custom_model_data": 15
+            }
         },
         "title": {
             "type": "translatable", "translate": "luigis_mansion:advancements.vanilla.making_wario_jealous"

@@ -1,6 +1,6 @@
 execute unless score #boolossus_battle Ticking matches 1 run function #3ds_remake:room/hidden/boolossus_battle/load
 execute as @a[x=562,y=14,z=-63,dx=48,dy=78,dz=87] run scoreboard players set @s LastRoom 75
-scoreboard players set @e[x=562,y=14,z=-63,dx=48,dy=78,dz=87] Room 75
+scoreboard players set @a[x=562,y=14,z=-63,dx=48,dy=78,dz=87] Room 75
 #todelete - needed for room-triggered shake sounds
 scoreboard players set #temp Room 75
 #/todelete

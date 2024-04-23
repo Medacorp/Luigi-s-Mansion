@@ -1,10 +1,6 @@
-execute if block ~ ~-1 ~ minecraft:pumpkin run tag @s add flipped_gravity
-execute if block ~ ~2 ~ minecraft:pumpkin run tag @s add remove_flipped_gravity
+execute if block ~ ~-0.1 ~ minecraft:pumpkin run tag @s add flipped_gravity
+execute if block ~ ~2 ~ minecraft:pumpkin unless entity @s[scores={Shrunk=1..}] run tag @s remove flipped_gravity
+execute if block ~ ~1 ~ minecraft:pumpkin run tag @s[scores={Shrunk=1..}] remove flipped_gravity
 
-effect give @s[tag=flipped_gravity,tag=!looking_at_map] minecraft:levitation infinite 9 true
-effect give @s[tag=remove_flipped_gravity] minecraft:resistance 1 9 true
-effect clear @s[tag=remove_flipped_gravity] minecraft:levitation
-effect give @s[tag=flipped_gravity,tag=looking_at_map] minecraft:resistance 1 9 true
-effect clear @s[tag=flipped_gravity,tag=looking_at_map] minecraft:levitation
-tag @s[tag=remove_flipped_gravity] remove flipped_gravity
-tag @s[tag=remove_flipped_gravity] remove remove_flipped_gravity
+attribute @s[tag=flipped_gravity,tag=!looking_at_map] minecraft:generic.gravity base set -0.08
+execute unless entity @s[tag=flipped_gravity,tag=!looking_at_map] run attribute @s minecraft:generic.gravity base set 0.08

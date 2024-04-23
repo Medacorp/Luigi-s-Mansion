@@ -1,12 +1,12 @@
 tag @s[tag=low_health,tag=!stop_model] add sneak_pos
 # Move with
-teleport @s[nbt=!{Small:1b},tag=!flipped_gravity] ^0.11 ^-2.34 ^ ~ ~
-teleport @s[nbt={Small:1b},tag=!flipped_gravity] ^0.08 ^-1.34 ^ ~ ~
-teleport @s[nbt=!{Small:1b},tag=flipped_gravity] ^-0.11 ^0.21 ^ ~ ~
-teleport @s[nbt={Small:1b},tag=flipped_gravity] ^-0.08 ^0.85 ^ ~ ~
+teleport @s[tag=!shrunk,tag=!flipped_gravity] ^0.11 ^-2.34 ^ ~ ~
+teleport @s[tag=shrunk,tag=!flipped_gravity] ^0.06 ^-1.22 ^ ~ ~
+teleport @s[tag=!shrunk,tag=flipped_gravity] ^-0.11 ^0.21 ^ ~ ~
+teleport @s[tag=shrunk,tag=flipped_gravity] ^-0.06 ^0.73 ^ ~ ~
 
-execute at @s run teleport @s[tag=sneak_pos,nbt=!{Small:1b}] ^ ^ ^-0.2 ~ ~
-execute at @s run teleport @s[tag=sneak_pos,nbt={Small:1b}] ^ ^ ^-0.15 ~ ~
+execute at @s run teleport @s[tag=sneak_pos,tag=!shrunk] ^ ^ ^-0.2 ~ ~
+execute at @s run teleport @s[tag=sneak_pos,tag=shrunk] ^ ^ ^-0.15 ~ ~
 data modify entity @s[tag=was_flipped,tag=!flipped_gravity] Pose.Head[2] set value 0.0f
 data modify entity @s[tag=!was_flipped,tag=flipped_gravity] Pose.Head[2] set value -180.0f
 

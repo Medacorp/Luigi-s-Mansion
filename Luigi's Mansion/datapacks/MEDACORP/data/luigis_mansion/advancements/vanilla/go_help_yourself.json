@@ -1,8 +1,13 @@
 {
     "display": {
         "icon": {
-            "item": "minecraft:diamond_pickaxe",
-			"nbt": "{Unbreakable:1b,Damage:5,CustomModelData:20}"
+            "count": 1,
+            "id": "minecraft:diamond_pickaxe",
+            "components": {
+                "minecraft:unbreakable": {},
+                "minecraft:damage": 5,
+                "minecraft:custom_model_data": 20
+            }
         },
         "title": {
             "type": "translatable", "translate": "luigis_mansion:advancements.vanilla.go_help_yourself"

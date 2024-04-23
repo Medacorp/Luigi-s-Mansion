@@ -1,1 +1,1 @@
-$tag @e[tag=car,nbt={ArmorItems:[{tag:{luigis_mansion:{owner:$(UUID)}}}]}] add this_vehicle
+$tag @e[tag=car,nbt={ArmorItems:[{components:{"minecraft:custom_data":{owner:$(UUID)}}}]}] add this_vehicle

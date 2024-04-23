@@ -1,4 +1,3 @@
 data modify storage luigis_mansion:data inventory set from entity @s Inventory
-data modify storage luigis_mansion:data inventory[{tag:{luigis_mansion:{namespace:"luigis_mansion",id:"game_boy_horror"}}}].tag merge value {CustomModelData:0}
-tag @s add modifying_inventory
+data modify storage luigis_mansion:data inventory[{components:{"minecraft:custom_data":{namespace:"luigis_mansion",id:"game_boy_horror"}}}].components."minecraft:custom_model_data" set value 0
 function luigis_mansion:other/sync_inventory

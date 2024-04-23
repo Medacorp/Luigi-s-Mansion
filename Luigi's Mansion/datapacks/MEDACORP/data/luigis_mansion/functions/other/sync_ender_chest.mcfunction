@@ -30,6 +30,6 @@ data remove storage luigis_mansion:data ender_chest[{Slot:26b}]
 data remove storage luigis_mansion:data ender_chest
 
 
-execute in minecraft:overworld run loot replace entity @s enderchest.0 mine 27 0 0 minecraft:golden_pickaxe{phi:{drop_contents:true}}
+execute in minecraft:overworld run loot replace entity @s enderchest.0 mine 27 0 0 minecraft:golden_pickaxe[minecraft:custom_data={drop_contents:1b}]
 execute in minecraft:overworld run setblock 27 0 0 minecraft:bedrock
 tag @s remove modifying_inventory

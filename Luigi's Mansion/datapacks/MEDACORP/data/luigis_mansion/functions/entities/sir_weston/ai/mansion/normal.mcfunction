@@ -16,7 +16,7 @@ execute if entity @s[scores={PathStep=20..50,VulnerableTime=0}] facing entity @e
 execute at @s[scores={PathStep=60}] rotated ~ 0 run function luigis_mansion:entities/sir_weston/ai/mansion/normal/spawn_ice_spikes
 scoreboard players set @s[scores={PathStep=80}] PathStep 0
 execute if entity @s[scores={Dialog=92}] run playsound luigis_mansion:entity.sir_weston.complain hostile @a[tag=same_room] ~ ~ ~ 1
-execute if entity @s[scores={Dialog=92}] run particle minecraft:block minecraft:ice ~ ~1.2 ~ 0.6 0.6 0.6 0 30
+execute if entity @s[scores={Dialog=92}] run particle minecraft:block{block_state:{Name:"minecraft:ice"}} ~ ~1.2 ~ 0.6 0.6 0.6 0 30
 scoreboard players set @s[scores={Dialog=92}] VulnerableTime 40
 scoreboard players set @s[scores={Dialog=92}] PathStep 0
 scoreboard players set @s[scores={Dialog=132}] Dialog 72

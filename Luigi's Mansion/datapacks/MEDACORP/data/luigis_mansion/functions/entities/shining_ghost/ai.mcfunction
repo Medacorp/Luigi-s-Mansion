@@ -1,5 +1,5 @@
 tag @s add visible
-particle minecraft:dust 1 0.909 0 1 ~ ~ ~ 0 0 0 1 1 normal @a[tag=same_room]
+particle minecraft:dust{color:[1f,0.909f,0f],scale:1f} ~ ~ ~ 0 0 0 1 1 normal @a[tag=same_room]
 
 execute at @s[tag=!in_vacuum,tag=!can_spit_2,tag=!spit,tag=!dead] if entity @e[tag=same_room,tag=!spectator,tag=player,distance=..0.7,limit=1] run function luigis_mansion:entities/shining_ghost/collide with entity @s data.entity
 

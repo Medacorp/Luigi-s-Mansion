@@ -32,4 +32,4 @@ execute if entity @s[scores={Dialog=400},nbt=!{data:{animation:{namespace:"luigi
 data remove entity @s[scores={Dialog=420}] data.animation
 scoreboard players set @s[scores={Dialog=420}] Dialog 0
 
-execute if entity @s[tag=!visible] run particle minecraft:dust 1 1 0.66 1 ~ ~0.6 ~ 0.3 0.3 0.3 0 5
+execute if entity @s[tag=!visible] run particle minecraft:dust{color:[1f,1f,0.66f],scale:1f} ~ ~0.6 ~ 0.3 0.3 0.3 0 5

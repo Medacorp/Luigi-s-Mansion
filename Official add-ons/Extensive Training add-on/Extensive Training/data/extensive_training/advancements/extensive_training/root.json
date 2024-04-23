@@ -2,8 +2,13 @@
 {
     "display": {
         "icon": {
-            "item": "minecraft:diamond_pickaxe",
-            "nbt": "{Damage:6,Unbreakable:1b,CustomModelData:4}"
+            "count": 1,
+            "id": "minecraft:diamond_pickaxe",
+            "components": {
+                "minecraft:unbreakable": {},
+                "minecraft:damage": 6,
+                "minecraft:custom_model_data": 4
+            }
         },
         "show_toast": false,
         "title": {

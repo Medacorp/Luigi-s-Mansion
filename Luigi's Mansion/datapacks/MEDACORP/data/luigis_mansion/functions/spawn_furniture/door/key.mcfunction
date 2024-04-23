@@ -1,1 +1,1 @@
-$execute unless data storage luigis_mansion:data current_state.current_data{used_keys:["$(key)"]} run data modify entity @s ArmorItems[3].tag.luigis_mansion.key set value "$(key)"
+$execute unless data storage luigis_mansion:data current_state.current_data{used_keys:["$(key)"]} run data modify entity @s ArmorItems[3].components."minecraft:custom_data".key set value "$(key)"

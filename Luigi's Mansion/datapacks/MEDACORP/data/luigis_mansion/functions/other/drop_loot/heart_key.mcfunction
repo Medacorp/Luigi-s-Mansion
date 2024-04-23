@@ -1,0 +1,1 @@
+execute if data storage luigis_mansion:data drop_loot.contents.luigis_mansion.heart_key[0] run function luigis_mansion:other/drop_loot/loop/heart_key

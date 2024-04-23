@@ -1,14 +1,20 @@
 tag @s add showing_room_name
 execute if score #temp Room matches 1 run title @s title {"type":"translatable","translate":"e3_demo:location.entrance"}
+execute unless score #3ds_remake Loaded matches 1.. if score #temp Room matches 2 run title @s title ""
 execute if score #3ds_remake Loaded matches 1.. if score #temp Room matches 2 run title @s title {"type":"translatable","translate":"luigis_mansion:location.hallway"}
 execute if score #temp Room matches 3 run title @s title {"type":"translatable","translate":"e3_demo:location.living_room"}
+execute unless score #3ds_remake Loaded matches 1.. if score #temp Room matches 4 run title @s title ""
 execute if score #3ds_remake Loaded matches 1.. if score #temp Room matches 4 run title @s title {"type":"translatable","translate":"luigis_mansion:location.hallway"}
 execute if score #temp Room matches 5 run title @s title {"type":"translatable","translate":"luigis_mansion:location.study"}
 execute if score #temp Room matches 6 run title @s title {"type":"translatable","translate":"e3_demo:location.bed_room_1"}
 execute if score #temp Room matches 7 run title @s title {"type":"translatable","translate":"e3_demo:location.childs_room"}
+execute unless score #3ds_remake Loaded matches 1.. if score #temp Room matches 8 run title @s title ""
 execute if score #3ds_remake Loaded matches 1.. if score #temp Room matches 8 run title @s title {"type":"translatable","translate":"luigis_mansion:location.hallway"}
+execute unless score #3ds_remake Loaded matches 1.. if score #temp Room matches 9 run title @s title ""
 execute if score #3ds_remake Loaded matches 1.. if score #temp Room matches 9 run title @s title {"type":"translatable","translate":"luigis_mansion:location.hallway"}
+execute unless score #3ds_remake Loaded matches 1.. if score #temp Room matches 10 run title @s title ""
 execute if score #3ds_remake Loaded matches 1.. if score #temp Room matches 10 run title @s title {"type":"translatable","translate":"luigis_mansion:location.hallway"}
+execute unless score #3ds_remake Loaded matches 1.. if score #temp Room matches 11 run title @s title ""
 execute if score #3ds_remake Loaded matches 1.. if score #temp Room matches 11 run title @s title {"type":"translatable","translate":"luigis_mansion:location.hallway"}
 execute if score #temp Room matches 12 run title @s title {"type":"translatable","translate":"e3_demo:location.bath_room"}
 execute if score #temp Room matches 13 run title @s title {"type":"translatable","translate":"e3_demo:location.lavatory"}

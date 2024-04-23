@@ -2,10 +2,11 @@ tag @s[tag=!poltergust_selected] remove vacuuming
 tag @s[tag=!poltergust_selected] remove was_clogged
 tag @s[tag=!capturing_ghost] remove poltergust_selected
 tag @s[tag=capturing_ghost] add poltergust_selected
+tag @s remove exploding_poltergust_effect
 tag @s remove is_pulling
 tag @s remove catch_portrait_ghost
 tag @s remove catch_ghost
-execute if entity @s[nbt=!{Inventory:[{tag:{luigis_mansion:{namespace:"e3_demo",id:"poltergust_500",gooigi_variant:1b}}}]},tag=gooigi] run function e3_demo:items/poltergust_500/gooigi
+execute if entity @s[nbt=!{Inventory:[{components:{"minecraft:custom_data":{namespace:"e3_demo",id:"poltergust_500",gooigi_variant:1b}}}]},tag=gooigi] run function e3_demo:items/poltergust_500/gooigi
 execute if entity @s[tag=poltergust_floor_sound,tag=!gooigi,scores={Shrunk=0}] run playsound e3_demo:item.poltergust_500.hit_floor player @a[tag=same_room] ~ ~ ~ 1
 execute if entity @s[tag=poltergust_wall_sound,tag=!gooigi,scores={Shrunk=0}] run playsound e3_demo:item.poltergust_500.hit_wall player @a[tag=same_room] ~ ~ ~ 1
 execute if entity @s[tag=poltergust_floor_sound,tag=!gooigi,scores={Shrunk=1..}] run playsound e3_demo:item.poltergust_500.hit_floor player @a[tag=same_room] ~ ~ ~ 1 2
@@ -16,7 +17,7 @@ execute if entity @s[tag=poltergust_floor_sound,tag=gooigi,scores={Shrunk=1..}] 
 execute if entity @s[tag=poltergust_wall_sound,tag=gooigi,scores={Shrunk=1..}] run playsound e3_demo:item.poltergust_500.hit_wall_gooigi player @a[tag=same_room] ~ ~ ~ 1 2
 tag @s remove poltergust_floor_sound
 tag @s remove poltergust_wall_sound
-tag @s[tag=!poltergust_malfunction,nbt={SelectedItem:{tag:{luigis_mansion:{namespace:"e3_demo",id:"poltergust_500"}}}}] add poltergust_selected
+tag @s[tag=!poltergust_malfunction,nbt={SelectedItem:{components:{"minecraft:custom_data":{namespace:"e3_demo",id:"poltergust_500"}}}}] add poltergust_selected
 tag @s[tag=!poltergust_selected] remove expelling
 execute if entity @s[scores={OverheatMeter=300..}] run function e3_demo:items/poltergust_500/explode
 execute if entity @s[tag=exploding_poltergust] run function e3_demo:items/poltergust_500/explode

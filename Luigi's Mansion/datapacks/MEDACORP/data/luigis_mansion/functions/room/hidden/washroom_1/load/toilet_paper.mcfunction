@@ -1,1 +1,2 @@
-summon minecraft:item_frame 662 12 -29 {Facing:5b,Silent:1b,Invulnerable:1b,Item:{id:"minecraft:white_wool",Count:1b},CustomName:'{"type":"translatable","translate":"luigis_mansion:furniture.painting"}',Invisible:1b,Fixed:1b}
+summon minecraft:item_frame 662 12 -29 {Facing:5b,Silent:1b,Invulnerable:1b,Item:{id:"minecraft:white_wool",count:1},CustomName:'{"type":"translatable","translate":"luigis_mansion:furniture.painting"}',Invisible:1b,Fixed:1b}
+scoreboard players set @e[x=662.5,y=12.0,z=-28.5,distance=..2,type=minecraft:item_frame] Room 19

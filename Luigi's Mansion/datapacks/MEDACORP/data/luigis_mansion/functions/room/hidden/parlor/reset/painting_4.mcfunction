@@ -1,2 +1,1 @@
-scoreboard players reset @e[x=714.5,y=21,z=-11.5,distance=..0.7,type=minecraft:item_frame,limit=1] Dialog
 scoreboard players reset #parlor_painting_4

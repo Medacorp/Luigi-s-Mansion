@@ -1,1 +1,2 @@
-summon minecraft:item_frame 694 114 55 {Facing:2b,Silent:1b,Invulnerable:1b,Item:{id:"minecraft:filled_map",Count:1b,tag:{map:123}},CustomName:'{"type":"translatable","translate":"luigis_mansion:furniture.painting"}',Invisible:1b,Fixed:1b}
+summon minecraft:item_frame 694 114 55 {Facing:2b,Silent:1b,Invulnerable:1b,Item:{id:"minecraft:filled_map",count:1,components:{"minecraft:map_id":123}},CustomName:'{"type":"translatable","translate":"luigis_mansion:furniture.painting"}',Invisible:1b,Fixed:1b}
+scoreboard players set @e[x=694.5,y=114.0,z=55.5,distance=..2,type=minecraft:item_frame] Room 6

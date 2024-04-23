@@ -2,10 +2,10 @@ teleport @s ~ ~ ~ ~ ~
 execute store result score #interact PositionX run data get entity @s Pos[0] 10
 execute store result score #interact PositionY run data get entity @s Pos[1] 10
 execute store result score #interact PositionZ run data get entity @s Pos[2] 10
-execute as @e[tag=!furniture,tag=same_room] if data entity @s ArmorItems[3].tag.luigis_mansion.scan_message run function luigis_mansion:selection_menu/game_boy_horror/scan/target_entity/armor_stand_root
+execute as @e[tag=!furniture,tag=same_room] if data entity @s ArmorItems[3].components."minecraft:custom_data".scan_message run function luigis_mansion:selection_menu/game_boy_horror/scan/target_entity/armor_stand_root
 execute at @s[tag=!entity_scanned] as @e[tag=!furniture,tag=same_room] if data entity @s data.scan_message run function luigis_mansion:selection_menu/game_boy_horror/scan/target_entity/marker_root
 execute at @s[tag=!entity_scanned] as @a[tag=same_room,tag=!scanning_player] run function luigis_mansion:selection_menu/game_boy_horror/scan/target_entity/player_root
-execute at @s[tag=!entity_scanned] as @e[tag=furniture,tag=same_room] if data entity @s ArmorItems[3].tag.luigis_mansion.scan_message run function luigis_mansion:selection_menu/game_boy_horror/scan/target_furniture/armor_stand_root
+execute at @s[tag=!entity_scanned] as @e[tag=furniture,tag=same_room] if data entity @s ArmorItems[3].components."minecraft:custom_data".scan_message run function luigis_mansion:selection_menu/game_boy_horror/scan/target_furniture/armor_stand_root
 execute at @s[tag=!entity_scanned,tag=!furniture_scanned] as @e[tag=furniture,tag=same_room] if data entity @s data.scan_message run function luigis_mansion:selection_menu/game_boy_horror/scan/target_furniture/marker_root
 execute at @s[tag=!entity_scanned,tag=!furniture_scanned] unless block ~ ~ ~ #luigis_mansion:game_boy_horror_warp unless block ~ ~ ~ #luigis_mansion:game_boy_horror_path run function luigis_mansion:selection_menu/game_boy_horror/scan/block
 scoreboard players add #temp Move 1

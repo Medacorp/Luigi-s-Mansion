@@ -1,1 +1,2 @@
-summon minecraft:item_frame 661 13 -27 {Facing:3b,Fixed:1b,Invisible:1b,Silent:1b,CustomName:'{"type":"translatable","translate":"luigis_mansion:entity.poster"}',Item:{id:"minecraft:filled_map",Count:1b,tag:{map:156}},Tags:["poster"]}
+summon minecraft:item_frame 661 13 -27 {Facing:3b,Fixed:1b,Invisible:1b,Silent:1b,CustomName:'{"type":"translatable","translate":"luigis_mansion:entity.poster"}',Item:{id:"minecraft:filled_map",count:1,components:{"minecraft:map_id":156}},Tags:["poster"]}
+scoreboard players set @e[x=661.5,y=13.0,z=-26.5,distance=..2,type=minecraft:item_frame] Room 25

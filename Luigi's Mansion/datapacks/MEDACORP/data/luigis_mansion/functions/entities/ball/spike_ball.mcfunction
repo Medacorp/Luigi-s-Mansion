@@ -1,4 +1,4 @@
-data modify entity @s[scores={SpawnTime=160}] ArmorItems[3].tag.CustomModelData set value 37
+data modify entity @s[scores={SpawnTime=160}] ArmorItems[3].components."minecraft:custom_model_data" set value 37
 scoreboard players add @s SpawnTime 1
 tag @s[tag=in_fire,tag=!in_water] add explode
 tag @s[scores={SpawnTime=200},tag=!in_water] add explode

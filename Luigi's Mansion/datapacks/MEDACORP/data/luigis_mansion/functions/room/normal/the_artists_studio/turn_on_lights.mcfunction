@@ -1,6 +1,6 @@
-execute unless data storage luigis_mansion:data current_state.current_data{obtained_keys:["secret_altar"]} run data modify storage luigis_mansion:data entity set value {room:71,variant:4b,rotation:[0.0f,0.0f]}
-execute unless data storage luigis_mansion:data current_state.current_data{obtained_keys:["secret_altar"]} positioned 701 30.3 -74 run function luigis_mansion:spawn_entities/item/key {door:"secret_altar"}
-data modify entity @e[x=701.5,y=30,z=-73.5,distance=..0.7,limit=1,type=minecraft:item_frame] Item.tag.map set value 80
+execute unless data storage luigis_mansion:data current_state.current_data{obtained_keys:["secret_altar"]} run data modify storage luigis_mansion:data entity set value {room:71,rotation:[0.0f,0.0f]}
+execute unless data storage luigis_mansion:data current_state.current_data{obtained_keys:["secret_altar"]} positioned 701 30.3 -74 run function luigis_mansion:spawn_entities/item/spade_key {door:"secret_altar"}
+data modify entity @e[x=701.5,y=30,z=-73.5,distance=..0.7,limit=1,type=minecraft:item_frame] Item.components."minecraft:map_id" set value 80
 data modify storage luigis_mansion:data current_state.current_data.rooms.the_artists_studio merge value {cleared:1b}
 execute if data storage luigis_mansion:data current_state.current_data{blackout:0b} run function #luigis_mansion:room/normal/the_artists_studio/turn_lights/on
 execute if data storage luigis_mansion:data current_state.current_data{blackout:0b,boos:[{}],technical_data:{released_boos_talk:1b}} run function luigis_mansion:room/normal/the_artists_studio/load_boos

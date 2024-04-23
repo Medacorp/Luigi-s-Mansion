@@ -1,6 +1,6 @@
 scoreboard players add @s AnimationProgress 1
-execute unless score #mirrored Selected matches 1 at @s run teleport @s[nbt=!{Small:1b}] ^ ^ ^-0.2
-execute unless score #mirrored Selected matches 1 at @s run teleport @s[nbt={Small:1b}] ^ ^ ^-0.1
+execute unless score #mirrored Selected matches 1 at @s run teleport @s[tag=!shrunk] ^ ^ ^-0.2
+execute unless score #mirrored Selected matches 1 at @s run teleport @s[tag=shrunk] ^ ^ ^-0.1
 execute unless score #mirrored Selected matches 1 run data merge entity @s[scores={AnimationProgress=1}] {Pose:{Head:[-120.0f,20.0f,0.01f]}}
 execute unless score #mirrored Selected matches 1 run data merge entity @s[scores={AnimationProgress=1},tag=flipped_gravity] {Pose:{Head:[-120.0f,20.0f,-180.0f]}}
 execute if score #mirrored Selected matches 1 run data merge entity @s[scores={AnimationProgress=1}] {Pose:{Head:[-90.0f,-70.0f,0.01f]}}

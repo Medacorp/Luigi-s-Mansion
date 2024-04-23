@@ -4,8 +4,8 @@ data modify storage luigis_mansion:data memory append from storage luigis_mansio
 data remove storage luigis_mansion:data my_memory
 
 data modify storage luigis_mansion:data inventory set value []
-data modify storage luigis_mansion:data inventory append from entity @s Inventory[{tag:{luigis_mansion:{id:"luigis_mansion:flashlight"}}}]
-data modify storage luigis_mansion:data inventory append from entity @s Inventory[{tag:{luigis_mansion:{id:"luigis_mansion:interact"}}}]
+data modify storage luigis_mansion:data inventory append from entity @s Inventory[{components:{"minecraft:custom_data":{id:"luigis_mansion:flashlight"}}}]
+data modify storage luigis_mansion:data inventory append from entity @s Inventory[{components:{"minecraft:custom_data":{id:"luigis_mansion:interact"}}}]
 function luigis_mansion:other/sync_inventory
 tag @s remove poltergust_selected
 scoreboard players set @s VacuumErrors 0

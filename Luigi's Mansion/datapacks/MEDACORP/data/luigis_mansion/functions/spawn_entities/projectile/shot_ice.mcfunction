@@ -1,4 +1,4 @@
-summon minecraft:armor_stand ~ ~ ~ {CustomName:'{"type":"translatable","translate":"luigis_mansion:entity.shot_ice"}',Pose:{Head:[0.0f,0.0f,0.01f]},HasVisualFire:1b,Marker:1b,Invulnerable:1b,Tags:["shot_fire","this_entity"],ArmorItems:[{},{},{},{id:"minecraft:diamond_pickaxe",Count:1b,tag:{Unbreakable:1b,Damage:4,CustomModelData:14,luigis_mansion:{entity:{namespace:"luigis_mansion",id:"shot_ice"}}}}],Invisible:1b,DisabledSlots:2039583,Small:1b}
+summon minecraft:armor_stand ~ ~ ~ {CustomName:'{"type":"translatable","translate":"luigis_mansion:entity.shot_ice"}',Pose:{Head:[0.0f,0.0f,0.01f]},HasVisualFire:1b,Marker:1b,Invulnerable:1b,Tags:["shot_fire","this_entity"],ArmorItems:[{},{},{},{id:"minecraft:diamond_pickaxe",count:1,components:{"minecraft:unbreakable":{},"minecraft:damage":4,"minecraft:custom_model_data":14,"minecraft:custom_data":{entity:{namespace:"luigis_mansion",id:"shot_ice"}}}}],Invisible:1b,DisabledSlots:2039583,Small:1b}
 teleport @e[tag=this_entity,limit=1] ~ ~ ~ ~ ~
 execute as @e[tag=this_entity,limit=1] run data modify entity @s Pose.Head[0] set from entity @s Rotation[1]
 scoreboard players set @e[tag=this_entity,limit=1] Move 25

@@ -20,6 +20,6 @@ teleport @s[scores={AnimationProgress=18}] ^ ^-0.45 ^0.3
 teleport @s[scores={AnimationProgress=19}] ^ ^-0.3 ^0.2
 teleport @s[scores={AnimationProgress=20}] ^ ^-0.15 ^0.1
 data merge entity @s[scores={AnimationProgress=1}] {Pose:{Head:[30.0f,0.0f,0.01f]}}
-data modify entity @s[scores={AnimationProgress=1}] ArmorItems[3] merge from entity @s ArmorItems[3].tag.luigis_mansion.model_data.open_mouth
-data modify entity @s[scores={AnimationProgress=5}] ArmorItems[3] merge from entity @s ArmorItems[3].tag.luigis_mansion.model_data.default
+data modify entity @s[scores={AnimationProgress=1}] ArmorItems[3] merge from entity @s ArmorItems[3].components."minecraft:custom_data".model_data.open_mouth
+data modify entity @s[scores={AnimationProgress=5}] ArmorItems[3] merge from entity @s ArmorItems[3].components."minecraft:custom_data".model_data.default
 scoreboard players set @s[scores={AnimationProgress=20}] AnimationProgress 0

@@ -9,14 +9,14 @@ tag @s[tag=extinguish,tag=always_burn] add large_flame
 tag @s[tag=extinguish,tag=always_burn] remove extinguish
 execute unless entity @s[tag=!remove_from_existence,tag=!dead] run tag @s[tag=!lit,tag=always_burn] add large_flame
 execute unless entity @s[tag=!remove_from_existence,tag=!dead] run tag @s[tag=!lit,tag=large_flame] add lit
-execute if entity @s[tag=!purple,tag=large_flame] run data modify entity @s ArmorItems[3] merge value {id:"minecraft:diamond_pickaxe",Count:1b,tag:{Unbreakable:1b,Damage:19,CustomModelData:92}}
-execute if entity @s[tag=purple,tag=large_flame] run data modify entity @s ArmorItems[3] merge value {id:"minecraft:diamond_pickaxe",Count:1b,tag:{Unbreakable:1b,Damage:19,CustomModelData:93}}
+execute if entity @s[tag=!purple,tag=large_flame] run data modify entity @s ArmorItems[3] merge value {id:"minecraft:diamond_pickaxe",count:1,components:{"minecraft:unbreakable":{},"minecraft:damage":19,"minecraft:custom_model_data":92}}
+execute if entity @s[tag=purple,tag=large_flame] run data modify entity @s ArmorItems[3] merge value {id:"minecraft:diamond_pickaxe",count:1,components:{"minecraft:unbreakable":{},"minecraft:damage":19,"minecraft:custom_model_data":93}}
 
-execute if entity @s[tag=lit,tag=!purple,tag=!large_flame,tag=extinguish,tag=cannot_extinguish] run data modify entity @s ArmorItems[3] merge value {id:"minecraft:diamond_pickaxe",Count:1b,tag:{Unbreakable:1b,Damage:19,CustomModelData:92}}
-execute if entity @s[tag=lit,tag=purple,tag=!large_flame,tag=extinguish,tag=cannot_extinguish] run data modify entity @s ArmorItems[3] merge value {id:"minecraft:diamond_pickaxe",Count:1b,tag:{Unbreakable:1b,Damage:19,CustomModelData:93}}
+execute if entity @s[tag=lit,tag=!purple,tag=!large_flame,tag=extinguish,tag=cannot_extinguish] run data modify entity @s ArmorItems[3] merge value {id:"minecraft:diamond_pickaxe",count:1,components:{"minecraft:unbreakable":{},"minecraft:damage":19,"minecraft:custom_model_data":92}}
+execute if entity @s[tag=lit,tag=purple,tag=!large_flame,tag=extinguish,tag=cannot_extinguish] run data modify entity @s ArmorItems[3] merge value {id:"minecraft:diamond_pickaxe",count:1,components:{"minecraft:unbreakable":{},"minecraft:damage":19,"minecraft:custom_model_data":93}}
 
-execute if entity @s[tag=lit,tag=!purple,tag=!large_flame,tag=!extinguish] run data modify entity @s ArmorItems[3] merge value {id:"minecraft:diamond_pickaxe",Count:1b,tag:{Unbreakable:1b,Damage:19,CustomModelData:5}}
-execute if entity @s[tag=lit,tag=purple,tag=!large_flame,tag=!extinguish] run data modify entity @s ArmorItems[3] merge value {id:"minecraft:diamond_pickaxe",Count:1b,tag:{Unbreakable:1b,Damage:19,CustomModelData:6}}
+execute if entity @s[tag=lit,tag=!purple,tag=!large_flame,tag=!extinguish] run data modify entity @s ArmorItems[3] merge value {id:"minecraft:diamond_pickaxe",count:1,components:{"minecraft:unbreakable":{},"minecraft:damage":19,"minecraft:custom_model_data":5}}
+execute if entity @s[tag=lit,tag=purple,tag=!large_flame,tag=!extinguish] run data modify entity @s ArmorItems[3] merge value {id:"minecraft:diamond_pickaxe",count:1,components:{"minecraft:unbreakable":{},"minecraft:damage":19,"minecraft:custom_model_data":6}}
 
 execute if entity @s[tag=!lit,tag=!large_flame] run data modify entity @s ArmorItems[3].id set value "minecraft:stone_button"
 tag @s remove extinguish

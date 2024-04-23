@@ -25,6 +25,10 @@ data remove storage luigis_mansion:data update_data.new_ghosts
 data modify storage luigis_mansion:data update_data.new_ghosts.luigis_mansion set from storage luigis_mansion:data update_data.ghosts
 data modify storage luigis_mansion:data update_data.ghosts set from storage luigis_mansion:data update_data.new_ghosts
 data remove storage luigis_mansion:data update_data.new_ghosts
+data modify storage luigis_mansion:data update_data.old_dead_players set from storage luigis_mansion:data update_data.dead_players
+data modify storage luigis_mansion:data update_data.dead_players set value []
+execute if data storage luigis_mansion:data update_data.dead_players[0] run function luigis_mansion:other/upgrade_path/change_dead_player_data
+data remove storage luigis_mansion:data update_data.old_dead_players
 execute if data storage luigis_mansion:data update_data.technical_data{released_boos_call:1b} run data modify storage luigis_mansion:data update_data.obtained_items merge value {boo_radar:1b}
 execute if data storage luigis_mansion:data update_data.technical_data{telephone_3:1b} run data modify storage luigis_mansion:data update_data.technical_data merge value {telephone_room_blackout:1b}
 data modify storage luigis_mansion:data obtained_keys set from storage luigis_mansion:data update_data.obtained_keys

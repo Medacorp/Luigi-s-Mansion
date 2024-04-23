@@ -5,4 +5,4 @@ execute if score #global_difficulty Selected matches 1 run difficulty easy
 execute if score #global_difficulty Selected matches 2 run difficulty normal
 execute if score #global_difficulty Selected matches 3 run difficulty hard
 
-execute as @a[nbt={Inventory:[{tag:{luigis_mansion:{option:{update_global_variables:1b}}}}]}] run function luigis_mansion:selection_menu/game_boy_horror/show_settings/toggle/global_difficulty_update
+execute as @a[nbt={Inventory:[{components:{"minecraft:custom_data":{option:{update_global_variables:1b}}}}]}] run function luigis_mansion:selection_menu/game_boy_horror/show_settings/toggle/global_difficulty_update

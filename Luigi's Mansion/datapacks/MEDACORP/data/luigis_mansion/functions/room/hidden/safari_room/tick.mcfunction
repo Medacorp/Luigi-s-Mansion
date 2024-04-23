@@ -1,6 +1,6 @@
 execute unless score #safari_room Ticking matches 1 run function #luigis_mansion:room/hidden/safari_room/load
 execute as @a[x=732,y=28,z=49,dx=14,dy=7,dz=25] unless entity @s[scores={Room=50}] run scoreboard players operation @s LastRoom = @s Room
-scoreboard players set @e[x=732,y=28,z=49,dx=14,dy=7,dz=25] Room 50
+scoreboard players set @a[x=732,y=28,z=49,dx=14,dy=7,dz=25] Room 50
 #todelete - needed for room-triggered shake sounds
 scoreboard players set #temp Room 50
 #/todelete

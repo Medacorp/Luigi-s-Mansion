@@ -8,7 +8,7 @@ execute as @e[tag=!model_piece,tag=!reflection] run function luigis_mansion:main
 scoreboard players reset #temp Room
 
 execute if entity @s[type=minecraft:marker] run function luigis_mansion:entities/tick with entity @s data.entity
-execute if entity @s[type=minecraft:armor_stand] run function luigis_mansion:entities/tick with entity @s ArmorItems[3].tag.luigis_mansion.entity
+execute if entity @s[type=minecraft:armor_stand] run function luigis_mansion:entities/tick with entity @s ArmorItems[3].components."minecraft:custom_data".entity
 scoreboard players reset #temp Move
 
 execute if entity @s[tag=applied_dialog_effects,tag=!in_dialog] run function luigis_mansion:dialog/unapply_effects
@@ -54,7 +54,8 @@ tag @a remove dusting_me
 tag @a remove burning_me
 tag @a remove watering_me
 tag @a remove freezing_me
-data modify entity @s[type=minecraft:armor_stand,tag=!model_piece] ArmorItems[3].tag.luigis_mansion.hit_by set value {vacuum:[],dust:[],fire:[],water:[],ice:[]}
+execute unless data entity @s[type=minecraft:armor_stand,tag=!model_piece] ArmorItems[3].count run data modify entity @s ArmorItems[3] set value {id:"minecraft:stone_button",count:1}
+data modify entity @s[type=minecraft:armor_stand,tag=!model_piece] ArmorItems[3].components."minecraft:custom_data".hit_by set value {vacuum:[],dust:[],fire:[],water:[],ice:[]}
 data modify entity @s[type=minecraft:marker] data.hit_by set value {vacuum:[],dust:[],fire:[],water:[],ice:[]}
 
 tag @e[tag=target,limit=1] remove target

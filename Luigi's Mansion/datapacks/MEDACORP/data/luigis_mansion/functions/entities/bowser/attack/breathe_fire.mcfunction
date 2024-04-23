@@ -17,22 +17,22 @@ execute if entity @s[scores={ActionTime=21..121}] run data modify storage luigis
 execute if entity @s[scores={ActionTime=21..121}] run data modify storage luigis_mansion:data damage.attacker set from entity @s UUID
 execute at @s[scores={ActionTime=21..121}] positioned ^ ^ ^4 as @a[distance=..2,tag=!spectator] run function luigis_mansion:entities/player/damage
 execute if entity @s[scores={ActionTime=21..121}] run data remove storage luigis_mansion:data damage
-execute at @s[scores={ActionTime=21..121}] positioned ^ ^ ^2 run particle minecraft:block minecraft:fire ^1 ^0.5 ^5 0 0 0 0 1 normal @a[tag=same_room]
-execute at @s[scores={ActionTime=21..121}] positioned ^ ^ ^2 run particle minecraft:block minecraft:fire ^ ^0.5 ^6 0 0 0 0 1 normal @a[tag=same_room]
-execute at @s[scores={ActionTime=21..121}] positioned ^ ^ ^2 run particle minecraft:block minecraft:fire ^-1 ^0.5 ^5 0 0 0 0 1 normal @a[tag=same_room]
-execute at @s[scores={ActionTime=21..121}] positioned ^ ^ ^2 run particle minecraft:block minecraft:fire ^0.8 ^0.6 ^4 0 0 0 0 1 normal @a[tag=same_room]
-execute at @s[scores={ActionTime=21..121}] positioned ^ ^ ^2 run particle minecraft:block minecraft:fire ^ ^0.6 ^5 0 0 0 0 1 normal @a[tag=same_room]
-execute at @s[scores={ActionTime=21..121}] positioned ^ ^ ^2 run particle minecraft:block minecraft:fire ^-0.8 ^0.6 ^4 0 0 0 0 1 normal @a[tag=same_room]
-execute at @s[scores={ActionTime=21..121}] positioned ^ ^ ^2 run particle minecraft:block minecraft:fire ^0.6 ^0.7 ^3 0 0 0 0 1 normal @a[tag=same_room]
-execute at @s[scores={ActionTime=21..121}] positioned ^ ^ ^2 run particle minecraft:block minecraft:fire ^ ^0.7 ^4 0 0 0 0 1 normal @a[tag=same_room]
-execute at @s[scores={ActionTime=21..121}] positioned ^ ^ ^2 run particle minecraft:block minecraft:fire ^-0.6 ^0.7 ^3 0 0 0 0 1 normal @a[tag=same_room]
-execute at @s[scores={ActionTime=21..121}] positioned ^ ^ ^2 run particle minecraft:block minecraft:fire ^0.4 ^0.8 ^2 0 0 0 0 1 normal @a[tag=same_room]
-execute at @s[scores={ActionTime=21..121}] positioned ^ ^ ^2 run particle minecraft:block minecraft:fire ^ ^0.8 ^3 0 0 0 0 1 normal @a[tag=same_room]
-execute at @s[scores={ActionTime=21..121}] positioned ^ ^ ^2 run particle minecraft:block minecraft:fire ^-0.4 ^0.8 ^2 0 0 0 0 1 normal @a[tag=same_room]
-execute at @s[scores={ActionTime=21..121}] positioned ^ ^ ^2 run particle minecraft:block minecraft:fire ^0.2 ^0.9 ^1 0 0 0 0 1 normal @a[tag=same_room]
-execute at @s[scores={ActionTime=21..121}] positioned ^ ^ ^2 run particle minecraft:block minecraft:fire ^ ^0.9 ^2 0 0 0 0 1 normal @a[tag=same_room]
-execute at @s[scores={ActionTime=21..121}] positioned ^ ^ ^2 run particle minecraft:block minecraft:fire ^-0.2 ^0.9 ^1 0 0 0 0 1 normal @a[tag=same_room]
-execute at @s[scores={ActionTime=21..121}] positioned ^ ^ ^2 run particle minecraft:block minecraft:fire ^ ^1 ^1 0 0 0 0 1 normal @a[tag=same_room]
+execute at @s[scores={ActionTime=21..121}] positioned ^ ^ ^2 run particle minecraft:block{block_state:{Name:"minecraft:fire"}} ^1 ^0.5 ^5 0 0 0 0 1 normal @a[tag=same_room]
+execute at @s[scores={ActionTime=21..121}] positioned ^ ^ ^2 run particle minecraft:block{block_state:{Name:"minecraft:fire"}} ^ ^0.5 ^6 0 0 0 0 1 normal @a[tag=same_room]
+execute at @s[scores={ActionTime=21..121}] positioned ^ ^ ^2 run particle minecraft:block{block_state:{Name:"minecraft:fire"}} ^-1 ^0.5 ^5 0 0 0 0 1 normal @a[tag=same_room]
+execute at @s[scores={ActionTime=21..121}] positioned ^ ^ ^2 run particle minecraft:block{block_state:{Name:"minecraft:fire"}} ^0.8 ^0.6 ^4 0 0 0 0 1 normal @a[tag=same_room]
+execute at @s[scores={ActionTime=21..121}] positioned ^ ^ ^2 run particle minecraft:block{block_state:{Name:"minecraft:fire"}} ^ ^0.6 ^5 0 0 0 0 1 normal @a[tag=same_room]
+execute at @s[scores={ActionTime=21..121}] positioned ^ ^ ^2 run particle minecraft:block{block_state:{Name:"minecraft:fire"}} ^-0.8 ^0.6 ^4 0 0 0 0 1 normal @a[tag=same_room]
+execute at @s[scores={ActionTime=21..121}] positioned ^ ^ ^2 run particle minecraft:block{block_state:{Name:"minecraft:fire"}} ^0.6 ^0.7 ^3 0 0 0 0 1 normal @a[tag=same_room]
+execute at @s[scores={ActionTime=21..121}] positioned ^ ^ ^2 run particle minecraft:block{block_state:{Name:"minecraft:fire"}} ^ ^0.7 ^4 0 0 0 0 1 normal @a[tag=same_room]
+execute at @s[scores={ActionTime=21..121}] positioned ^ ^ ^2 run particle minecraft:block{block_state:{Name:"minecraft:fire"}} ^-0.6 ^0.7 ^3 0 0 0 0 1 normal @a[tag=same_room]
+execute at @s[scores={ActionTime=21..121}] positioned ^ ^ ^2 run particle minecraft:block{block_state:{Name:"minecraft:fire"}} ^0.4 ^0.8 ^2 0 0 0 0 1 normal @a[tag=same_room]
+execute at @s[scores={ActionTime=21..121}] positioned ^ ^ ^2 run particle minecraft:block{block_state:{Name:"minecraft:fire"}} ^ ^0.8 ^3 0 0 0 0 1 normal @a[tag=same_room]
+execute at @s[scores={ActionTime=21..121}] positioned ^ ^ ^2 run particle minecraft:block{block_state:{Name:"minecraft:fire"}} ^-0.4 ^0.8 ^2 0 0 0 0 1 normal @a[tag=same_room]
+execute at @s[scores={ActionTime=21..121}] positioned ^ ^ ^2 run particle minecraft:block{block_state:{Name:"minecraft:fire"}} ^0.2 ^0.9 ^1 0 0 0 0 1 normal @a[tag=same_room]
+execute at @s[scores={ActionTime=21..121}] positioned ^ ^ ^2 run particle minecraft:block{block_state:{Name:"minecraft:fire"}} ^ ^0.9 ^2 0 0 0 0 1 normal @a[tag=same_room]
+execute at @s[scores={ActionTime=21..121}] positioned ^ ^ ^2 run particle minecraft:block{block_state:{Name:"minecraft:fire"}} ^-0.2 ^0.9 ^1 0 0 0 0 1 normal @a[tag=same_room]
+execute at @s[scores={ActionTime=21..121}] positioned ^ ^ ^2 run particle minecraft:block{block_state:{Name:"minecraft:fire"}} ^ ^1 ^1 0 0 0 0 1 normal @a[tag=same_room]
 execute if entity @s[scores={ActionTime=21..121}] run teleport @s ~ ~ ~ ~ ~
 scoreboard players reset #temp Time
 tag @s[scores={ActionTime=140}] remove breathe_fire

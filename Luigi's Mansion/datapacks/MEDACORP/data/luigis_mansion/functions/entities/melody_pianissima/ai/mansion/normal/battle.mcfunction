@@ -1,5 +1,5 @@
 execute as @a[tag=same_room,tag=!spectator] run function luigis_mansion:other/music/set/piano
-data modify entity @s ArmorItems[3].tag.luigis_mansion.scan_message set value {sender:"me",message:'{"type":"translatable","translate":"luigis_mansion:message.melody_pianissima.scan.2"}',plural_message:'{"type":"translatable","translate":"luigis_mansion:message.melody_pianissima.scan.2.more"}'}
+data modify entity @s ArmorItems[3].components."minecraft:custom_data".scan_message set value {sender:"me",message:'{"type":"translatable","translate":"luigis_mansion:message.melody_pianissima.scan.2"}',plural_message:'{"type":"translatable","translate":"luigis_mansion:message.melody_pianissima.scan.2.more"}'}
 
 tag @s add visible
 execute unless entity @e[tag=haunted_music_sheet,scores={WaitTime=0..}] if entity @s[scores={VulnerableTime=0}] run playsound luigis_mansion:entity.melody_pianissima.complain hostile @a[tag=same_room] ~ ~ ~ 1

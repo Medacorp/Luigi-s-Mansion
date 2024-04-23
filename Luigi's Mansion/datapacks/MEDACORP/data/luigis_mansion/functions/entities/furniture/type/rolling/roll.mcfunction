@@ -1,4 +1,4 @@
-data modify entity @s ArmorItems[3].tag.luigis_mansion.animation set value {namespace:"luigis_mansion",id:"roll"}
+data modify entity @s ArmorItems[3].components."minecraft:custom_data".animation set value {namespace:"luigis_mansion",id:"roll"}
 execute if entity @s[scores={PoltergustSound=0,FurnitureVacuum=1..10}] run playsound luigis_mansion:furniture.search.roll block @a[tag=same_room] ~ ~ ~ 1 0.9
 execute if entity @s[scores={PoltergustSound=0,FurnitureVacuum=11..20}] run playsound luigis_mansion:furniture.search.roll block @a[tag=same_room] ~ ~ ~ 1 1
 execute if entity @s[scores={PoltergustSound=0,FurnitureVacuum=21..30}] run playsound luigis_mansion:furniture.search.roll block @a[tag=same_room] ~ ~ ~ 1 1.1

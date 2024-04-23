@@ -1,1 +1,1 @@
-$tag @e[tag=wind,nbt={ArmorItems:[{tag:{luigis_mansion:{owner:$(UUID)}}}]}] add this_wind
+$tag @e[tag=wind,nbt={ArmorItems:[{components:{"minecraft:custom_data":{owner:$(UUID)}}}]}] add this_wind

@@ -1,1 +1,1 @@
-$function $(namespace):items/key/$(id) with entity @s ArmorItems[3].tag.luigis_mansion
+$function $(namespace):items/key/$(id) with entity @s ArmorItems[3].components."minecraft:custom_data"

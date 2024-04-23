@@ -1,1 +1,1 @@
-execute if block ~ ~ ~ minecraft:light run particle minecraft:dust 0.7 0.7 0.7 0.5 ~ ~ ~ 0 0 0 0 1 normal @a[tag=same_room]
+execute if block ~ ~ ~ minecraft:light run particle minecraft:dust{color:[0.7f,0.7f,0.7f],scale:0.5f} ~ ~ ~ 0 0 0 0 1 normal @a[tag=same_room]

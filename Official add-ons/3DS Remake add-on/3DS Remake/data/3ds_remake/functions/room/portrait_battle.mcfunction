@@ -17,7 +17,7 @@ scoreboard players operation @s LastRoom = @s Room
 execute at @s run teleport @a[tag=!same_room] ~ ~ ~ ~ ~
 
 execute as @a[tag=gooigi] run function 3ds_remake:entities/player/un_gooigi
-execute as @e[tag=furniture,tag=!no_dust] run data remove entity @s ArmorItems[3].tag.luigis_mansion.loot
+execute as @e[tag=furniture,tag=!no_dust] run data remove entity @s ArmorItems[3].components."minecraft:custom_data".loot
 tag @e[tag=furniture,tag=!no_dust] add no_dust
 tag @e[tag=pearl_dropper] remove pearl_dropper
 

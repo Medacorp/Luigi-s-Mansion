@@ -75,7 +75,7 @@ execute if entity @s[scores={Dialog=110}] run setblock 770 79 -7 minecraft:green
 execute if entity @s[scores={Dialog=120}] run setblock 770 81 -7 minecraft:green_terracotta
 execute if entity @s[scores={Dialog=120}] run setblock 770 79 -7 minecraft:air
 execute if entity @s[scores={Dialog=110}] run playsound luigis_mansion:entity.mario.owch neutral @a[tag=same_room] ~ ~ ~ 1
-data modify entity @s[scores={Dialog=110}] ArmorItems[3] merge value {id:"minecraft:diamond_pickaxe",tag:{Unbreakable:1b,Damage:9,CustomModelData:80}}
+data modify entity @s[scores={Dialog=110}] ArmorItems[3] merge value {id:"minecraft:diamond_pickaxe",components:{"minecraft:unbreakable":{},"minecraft:damage":9,"minecraft:custom_model_data":80}}
 execute if entity @s[scores={Dialog=120}] run teleport @s 770 78 -6 -180 0
 execute if entity @s[scores={Dialog=125}] run teleport @s 770 78 -5
 execute if entity @s[scores={Dialog=130}] run teleport @s 770 78 -4
@@ -141,8 +141,8 @@ execute if entity @s[scores={Dialog=330}] run playsound luigis_mansion:entity.ma
 execute at @s[scores={Dialog=330..370}] run teleport @s ~ ~ ~ ~5 ~
 execute at @s[scores={Dialog=371..410}] run teleport @s ~ ~ ~ ~10 ~
 execute at @s[scores={Dialog=411..529}] run teleport @s ~ ~ ~ ~20 ~
-execute if entity @s[scores={Dialog=430..509}] store result score #temp Time run data get entity @s ArmorItems[3].tag.CustomModelData
-execute if entity @s[scores={Dialog=430..509}] store result entity @s ArmorItems[3].tag.CustomModelData int 1 run scoreboard players remove #temp Time 1
+execute if entity @s[scores={Dialog=430..509}] store result score #temp Time run data get entity @s ArmorItems[3].components."minecraft:custom_model_data"
+execute if entity @s[scores={Dialog=430..509}] store result entity @s ArmorItems[3].components."minecraft:custom_model_data" int 1 run scoreboard players remove #temp Time 1
 scoreboard players reset #temp Time
 teleport @s[scores={Dialog=530}] 770 81 15
 execute if entity @s[scores={Dialog=620}] run playsound luigis_mansion:entity.mario.wohh_hoo_hoo neutral @a[tag=same_room] ~ ~ ~ 1

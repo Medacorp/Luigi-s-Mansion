@@ -6,7 +6,6 @@ execute if entity @s[tag=using_selection_menu,tag=!selection_menu_free_to_move] 
 tag @s add player
 tag @s[tag=camera,gamemode=!spectator] remove spectator
 execute if loaded ~ ~ ~ if loaded ~-48 ~ ~ if loaded ~48 ~ ~ if loaded ~ ~ ~-48 if loaded ~ ~ ~48 if loaded ~48 ~ ~48 if loaded ~48 ~ ~-48 if loaded ~-48 ~ ~48 if loaded ~-48 ~ ~-48 run function luigis_mansion:main/loaded_chunks
-execute if entity @s[scores={Jump=1..}] unless block ~ ~ ~ #minecraft:climbable run function luigis_mansion:main/prevent_jump
 execute if entity @s[tag=flipped_gravity] run function luigis_mansion:entities/player/correct_flipped_position
 execute unless entity @s[scores={Health=-1000..}] run scoreboard players set @s Health 100
 execute unless entity @s[scores={MaxHealth=0..}] run scoreboard players set @s MaxHealth 100
@@ -53,9 +52,6 @@ tag @s[scores={Sneaking=1}] add was_sneaking
 tag @s[scores={Sneaking=0}] remove was_sneaking
 scoreboard players set @s[scores={Sneaking=0,SneakTime=20..}] SneakTime 0
 execute unless entity @s[scores={SneakTime=0..}] run scoreboard players set @s SneakTime 0
-scoreboard players set @s Jump 0
-execute store result score @s JumpHeight run data get entity @s Pos[1] 1000
-scoreboard players add @s JumpHeight 1
 tag @s[tag=walking] remove walking
 tag @s[scores={Walk=1..},tag=!looking_at_map] add walking
 tag @s[scores={WalkOnWater=1..},tag=!looking_at_map] add walking

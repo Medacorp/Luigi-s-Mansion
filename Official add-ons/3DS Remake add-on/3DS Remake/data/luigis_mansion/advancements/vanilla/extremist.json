@@ -1,7 +1,8 @@
 {
     "display": {
         "icon": {
-            "item": "minecraft:blaze_powder"
+            "count": 1,
+            "id": "minecraft:blaze_powder"
         },
         "title": {
             "type": "translatable", "translate": "luigis_mansion:advancements.vanilla.extremist"

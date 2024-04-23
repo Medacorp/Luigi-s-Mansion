@@ -16,7 +16,7 @@ execute if entity @s[tag=riding_poltergust] run function luigis_mansion:entities
 execute unless entity @s[scores={AnimationProgress=1..},tag=!idle,tag=!animation_may_move] rotated ~ 0 positioned ^ ^ ^-4 run function luigis_mansion:entities/player/spawn_ghosts
 
 function luigis_mansion:entities/player/health_display
-execute if data storage luigis_mansion:data rooms.underground_lab{cleared:1b} run clear @s minecraft:diamond_pickaxe{luigis_mansion:{namespace:"luigis_mansion",id:"contest_reward_map"}}
+execute if data storage luigis_mansion:data rooms.underground_lab{cleared:1b} run clear @s *[minecraft:custom_data~{namespace:"luigis_mansion",id:"contest_reward_map"}]
 
 execute if entity @s[scores={Health=1..}] store result score @s Damage run data get entity @s Health
 execute if entity @s[scores={Damage=..99}] run function luigis_mansion:entities/player/heal
@@ -35,7 +35,7 @@ scoreboard players set @s[scores={MaxHealthTime=200},tag=gooigi] MaxHealth 50
 scoreboard players reset @s[scores={MaxHealthTime=200}] MaxHealthTime
 
 execute if entity @s[tag=!spectator,tag=!gooigi] run function luigis_mansion:entities/player/idle
-execute if entity @s[scores={AnimationProgress=1..},tag=idle,tag=!gooigi] unless entity @s[scores={Walk=0,Run=0,Sneak=0,Jump=0},tag=!sneak_pos,tag=!spectator] run function luigis_mansion:entities/player/animation/set/none
+execute if entity @s[scores={AnimationProgress=1..},tag=idle,tag=!gooigi] unless entity @s[scores={Walk=0,Run=0,Sneak=0},tag=!sneak_pos,tag=!spectator] run function luigis_mansion:entities/player/animation/set/none
 execute if entity @s[scores={AnimationProgress=1..},tag=!idle,tag=!animation_may_move,tag=!using_selection_menu,tag=!gooigi] run function luigis_mansion:entities/player/animation/freeze_player
 
 execute if entity @s[tag=gooigi,tag=!dead_player] run function 3ds_remake:entities/player/gooigi

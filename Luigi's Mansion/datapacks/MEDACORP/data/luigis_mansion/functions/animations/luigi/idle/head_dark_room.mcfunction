@@ -25,8 +25,8 @@ execute store result score #temp Time run data get entity @s Rotation[0]
 execute if entity @s[tag=!flipped_gravity] store result score #temp2 Time run data get entity @s Pose.Head[1]
 execute if entity @s[tag=flipped_gravity] store result score #temp2 Time run data get entity @s Pose.Head[1] -1
 execute store result entity @s Rotation[0] float 1 run scoreboard players operation #temp2 Time += #temp Time
-execute at @s[scores={Time=40},nbt=!{Small:1b}] positioned ~ ~1.45 ~ positioned ^ ^ ^0.3 run particle minecraft:dust 1 1 1 0.75 ~ ~ ~ 0 0 0 0 1 normal @a[tag=same_room]
-execute at @s[scores={Time=40},nbt={Small:1b}] positioned ~ ~0.725 ~ positioned ^ ^ ^0.15 run particle minecraft:dust 1 1 1 0.375 ~ ~ ~ 0 0 0 0 1 normal @a[tag=same_room]
+execute at @s[scores={Time=40},tag=!shrunk] positioned ~ ~1.45 ~ positioned ^ ^ ^0.3 run particle minecraft:dust{color:[1f,1f,1f],scale:0.75f} ~ ~ ~ 0 0 0 0 1 normal @a[tag=same_room]
+execute at @s[scores={Time=40},tag=shrunk] positioned ~ ~0.725 ~ positioned ^ ^ ^0.15 run particle minecraft:dust{color:[1f,1f,1f],scale:0.375f} ~ ~ ~ 0 0 0 0 1 normal @a[tag=same_room]
 data modify entity @s Rotation[1] set value 0.0f
 execute store result entity @s Rotation[0] float 1 run scoreboard players get #temp Time
 scoreboard players reset #temp Time

@@ -9,6 +9,7 @@ tag @s[tag=!poltergust_selected] remove vacuuming
 tag @s[tag=!poltergust_selected] remove was_clogged
 tag @s[tag=!capturing_ghost] remove poltergust_selected
 tag @s[tag=capturing_ghost] add poltergust_selected
+tag @s remove exploding_poltergust_effect
 tag @s remove is_pulling
 tag @s remove catch_portrait_ghost
 tag @s remove catch_ghost
@@ -19,8 +20,8 @@ execute if entity @s[tag=poltergust_wall_sound,scores={Shrunk=1..}] run playsoun
 tag @s remove poltergust_floor_sound
 tag @s remove poltergust_wall_sound
 execute if entity @s[tag=exploding_poltergust] run function luigis_mansion:items/poltergust_3000/explode
-tag @s[tag=!poltergust_malfunction,nbt={SelectedItem:{tag:{luigis_mansion:{namespace:"luigis_mansion",id:"poltergust_3000"}}}}] add poltergust_selected
-execute if entity @s[nbt={Inventory:[{tag:{luigis_mansion:{namespace:"luigis_mansion",id:"poltergust_3000",sync_element:1b}}}]}] run function luigis_mansion:items/poltergust_3000/sync_element
+tag @s[tag=!poltergust_malfunction,nbt={SelectedItem:{components:{"minecraft:custom_data":{namespace:"luigis_mansion",id:"poltergust_3000"}}}}] add poltergust_selected
+execute if entity @s[nbt={Inventory:[{components:{"minecraft:custom_data":{namespace:"luigis_mansion",id:"poltergust_3000",sync_element:1b}}}]}] run function luigis_mansion:items/poltergust_3000/sync_element
 tag @s[tag=!poltergust_selected] remove expelling
 scoreboard players set @s[tag=!poltergust_selected] VacuumErrors 0
 tag @s[tag=!poltergust_selected] remove made_error

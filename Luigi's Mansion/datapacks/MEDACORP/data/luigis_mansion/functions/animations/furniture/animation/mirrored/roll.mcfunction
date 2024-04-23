@@ -11,4 +11,4 @@ execute if score #temp Time matches 46.. store result entity @s Pose.Head[2] flo
 execute if score #temp Time matches ..-46 store result entity @s Pose.Head[2] float 1 run scoreboard players set #temp Time -45
 scoreboard players reset #temp Time
 scoreboard players set @s[scores={AnimationProgress=8}] AnimationProgress 0
-data modify entity @s[scores={FurnitureVacuum=1}] Pose.Head set from entity @s ArmorItems[3].tag.luigis_mansion.default_orientation
+data modify entity @s[scores={FurnitureVacuum=1}] Pose.Head set from entity @s ArmorItems[3].components."minecraft:custom_data".default_orientation

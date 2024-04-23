@@ -1,5 +1,5 @@
-execute if data entity @s[tag=hit_player] ArmorItems[3].tag.luigis_mansion.owner run function luigis_mansion:entities/ghost/owner_laugh with entity @s ArmorItems[3].tag.luigis_mansion
-execute if data entity @s[tag=!hit_player] ArmorItems[3].tag.luigis_mansion.owner run function luigis_mansion:entities/ghost/owner_complain with entity @s ArmorItems[3].tag.luigis_mansion
+execute if data entity @s[tag=hit_player] ArmorItems[3].components."minecraft:custom_data".owner run function luigis_mansion:entities/ghost/owner_laugh with entity @s ArmorItems[3].components."minecraft:custom_data"
+execute if data entity @s[tag=!hit_player] ArmorItems[3].components."minecraft:custom_data".owner run function luigis_mansion:entities/ghost/owner_complain with entity @s ArmorItems[3].components."minecraft:custom_data"
 scoreboard players set @e[tag=same_room,nbt={data:{entity:{namespace:"luigis_mansion",id:"haunted_object"}}}] WaitTime 0
 tag @s remove attack
 tag @s remove collided

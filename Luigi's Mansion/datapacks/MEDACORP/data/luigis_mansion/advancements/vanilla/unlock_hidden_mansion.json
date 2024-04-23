@@ -1,7 +1,8 @@
 {
     "display": {
         "icon": {
-            "item": "minecraft:glass_pane"
+            "count": 1,
+            "id": "minecraft:glass_pane"
         },
         "show_toast": false,
         "hidden": true,

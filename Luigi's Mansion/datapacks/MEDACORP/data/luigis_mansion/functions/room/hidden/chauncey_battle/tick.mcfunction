@@ -1,6 +1,6 @@
 execute unless score #chauncey_battle Ticking matches 1 run function #luigis_mansion:room/hidden/chauncey_battle/load
 execute as @a[x=782,y=5,z=-69,dx=41,dy=34,dz=41] run scoreboard players set @s LastRoom 73
-scoreboard players set @e[x=782,y=5,z=-69,dx=41,dy=34,dz=41] Room 73
+scoreboard players set @a[x=782,y=5,z=-69,dx=41,dy=34,dz=41] Room 73
 #todelete - needed for room-triggered shake sounds
 scoreboard players set #temp Room 73
 #/todelete

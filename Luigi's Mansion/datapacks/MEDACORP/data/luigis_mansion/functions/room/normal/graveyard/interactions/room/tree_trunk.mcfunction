@@ -1,5 +1,5 @@
 execute if data storage luigis_mansion:data current_state.current_data.rooms.graveyard{cleared:1b} run particle minecraft:crit 668 103 53 0.6 0.6 0.6 0 1
-execute if score #graveyard_tree_trunk Searched matches 1 run particle minecraft:dust 0.5 0.5 1 1 668 102 53 0.2 0.2 0.2 0 4
+execute if score #graveyard_tree_trunk Searched matches 1 run particle minecraft:dust{color:[0.5f,0.5f,1f],scale:1f} 668 102 53 0.2 0.2 0.2 0 4
 execute if score #graveyard_tree_trunk Searched matches 1 unless score #graveyard_tree_trunk Sound matches 1.. run playsound luigis_mansion:furniture.wind_warp ambient @a[scores={Room=29}] 668 103 53
 execute if score #graveyard_tree_trunk Searched matches 1 unless score #graveyard_tree_trunk Sound matches 1.. run scoreboard players set #graveyard_tree_trunk Sound 24
 execute if score #graveyard_tree_trunk Searched matches 1 if score #graveyard_tree_trunk Sound matches 1.. run scoreboard players remove #graveyard_tree_trunk Sound 1

@@ -30,15 +30,16 @@ execute store result entity @s[tag=!stop_model,tag=!moving_backwards] Rotation[0
 tag @s remove moving_backwards
 
 # Move with
-execute rotated as @s run teleport @s[tag=!stop_model,tag=!flipped_gravity,tag=!sneak_pos,nbt=!{Small:1b}] ^ ^1.65 ^
-execute rotated as @s run teleport @s[tag=!stop_model,tag=!flipped_gravity,tag=sneak_pos,nbt=!{Small:1b}] ^ ^1.4 ^
-execute rotated as @s run teleport @s[tag=!stop_model,tag=!flipped_gravity,tag=!sneak_pos,nbt={Small:1b}] ^ ^1.15 ^
-execute rotated as @s run teleport @s[tag=!stop_model,tag=!flipped_gravity,tag=sneak_pos,nbt={Small:1b}] ^ ^1 ^
-execute rotated as @s run teleport @s[tag=!stop_model,tag=flipped_gravity,tag=!sneak_pos,nbt=!{Small:1b}] ^ ^-0.6 ^
-execute rotated as @s run teleport @s[tag=!stop_model,tag=flipped_gravity,tag=sneak_pos,nbt=!{Small:1b}] ^ ^-0.35 ^
-execute rotated as @s run teleport @s[tag=!stop_model,tag=flipped_gravity,tag=!sneak_pos,nbt={Small:1b}] ^ ^-0.3 ^
-execute rotated as @s run teleport @s[tag=!stop_model,tag=flipped_gravity,tag=sneak_pos,nbt={Small:1b}] ^ ^-0.3 ^
-execute at @s if entity @a[tag=gooigi,limit=1] run teleport @s[tag=!stop_model] ^ ^ ^-.25
+execute rotated as @s run teleport @s[tag=!stop_model,tag=!flipped_gravity,tag=!sneak_pos,tag=!shrunk] ^ ^1.65 ^
+execute rotated as @s run teleport @s[tag=!stop_model,tag=!flipped_gravity,tag=sneak_pos,tag=!shrunk] ^ ^1.4 ^
+execute rotated as @s run teleport @s[tag=!stop_model,tag=!flipped_gravity,tag=!sneak_pos,tag=shrunk] ^ ^0.87 ^
+execute rotated as @s run teleport @s[tag=!stop_model,tag=!flipped_gravity,tag=sneak_pos,tag=shrunk] ^ ^0.78 ^
+execute rotated as @s run teleport @s[tag=!stop_model,tag=flipped_gravity,tag=!sneak_pos,tag=!shrunk] ^ ^-0.6 ^
+execute rotated as @s run teleport @s[tag=!stop_model,tag=flipped_gravity,tag=sneak_pos,tag=!shrunk] ^ ^-0.65 ^
+execute rotated as @s run teleport @s[tag=!stop_model,tag=flipped_gravity,tag=!sneak_pos,tag=shrunk] ^ ^-0.92 ^
+execute rotated as @s run teleport @s[tag=!stop_model,tag=flipped_gravity,tag=sneak_pos,tag=shrunk] ^ ^-0.945 ^
+execute at @s if entity @a[tag=gooigi,limit=1] run teleport @s[tag=!stop_model,tag=!shrunk] ^ ^ ^-0.25
+execute at @s if entity @a[tag=gooigi,limit=1] run teleport @s[tag=!stop_model,tag=shrunk] ^ ^ ^-0.125
 
 execute unless data storage luigis_mansion:data luigi{swimming:0b,gliding:0b} run teleport @s ~ ~-1 ~
 execute unless data storage luigis_mansion:data luigi{swimming:0b,gliding:0b} if entity @s[tag=!stop_model] run data modify entity @s Rotation[1] set from entity @e[tag=gooigi,limit=1] Rotation[1]

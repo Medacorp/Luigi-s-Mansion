@@ -13,7 +13,7 @@ execute unless entity @s[tag=!walking,tag=!running,tag=!riding_poltergust] if en
 execute unless entity @s[tag=!walking,tag=!running,tag=!riding_poltergust] run scoreboard players set @s[scores={Sound=0}] Sound 5
 
 execute if entity @s[tag=!spectator] run function 3ds_remake:entities/player/gooigi_idle
-execute if entity @s[scores={AnimationProgress=1..},tag=idle] unless entity @s[scores={Walk=0,Run=0,Sneak=0,Jump=0},tag=!sneak_pos,tag=!spectator] run function luigis_mansion:entities/player/animation/set/none
+execute if entity @s[scores={AnimationProgress=1..},tag=idle] unless entity @s[scores={Walk=0,Run=0,Sneak=0},tag=!sneak_pos,tag=!spectator] run function luigis_mansion:entities/player/animation/set/none
 execute if entity @s[scores={AnimationProgress=1..},tag=!idle,tag=!animation_may_move,tag=!using_selection_menu] run function luigis_mansion:entities/player/animation/freeze_player
 
 # Gooigi cannot speak, so he cannot choose

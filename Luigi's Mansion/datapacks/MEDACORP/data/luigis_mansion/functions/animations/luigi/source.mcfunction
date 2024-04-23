@@ -30,14 +30,14 @@ execute store result entity @s[tag=!stop_model,tag=!moving_backwards] Rotation[0
 tag @s remove moving_backwards
 
 # Move with
-execute rotated as @s run teleport @s[tag=!stop_model,tag=!flipped_gravity,tag=!sneak_pos,nbt=!{Small:1b}] ^ ^1.65 ^-.25
-execute rotated as @s run teleport @s[tag=!stop_model,tag=!flipped_gravity,tag=sneak_pos,nbt=!{Small:1b}] ^ ^1.4 ^-.25
-execute rotated as @s run teleport @s[tag=!stop_model,tag=!flipped_gravity,tag=!sneak_pos,nbt={Small:1b}] ^ ^1.15 ^-.25
-execute rotated as @s run teleport @s[tag=!stop_model,tag=!flipped_gravity,tag=sneak_pos,nbt={Small:1b}] ^ ^1 ^-.25
-execute rotated as @s run teleport @s[tag=!stop_model,tag=flipped_gravity,tag=!sneak_pos,nbt=!{Small:1b}] ^ ^-0.6 ^-.25
-execute rotated as @s run teleport @s[tag=!stop_model,tag=flipped_gravity,tag=sneak_pos,nbt=!{Small:1b}] ^ ^-0.35 ^-.25
-execute rotated as @s run teleport @s[tag=!stop_model,tag=flipped_gravity,tag=!sneak_pos,nbt={Small:1b}] ^ ^-0.3 ^-.25
-execute rotated as @s run teleport @s[tag=!stop_model,tag=flipped_gravity,tag=sneak_pos,nbt={Small:1b}] ^ ^-0.3 ^-.25
+execute rotated as @s run teleport @s[tag=!stop_model,tag=!flipped_gravity,tag=!sneak_pos,tag=!shrunk] ^ ^1.65 ^-0.25
+execute rotated as @s run teleport @s[tag=!stop_model,tag=!flipped_gravity,tag=sneak_pos,tag=!shrunk] ^ ^1.4 ^-0.25
+execute rotated as @s run teleport @s[tag=!stop_model,tag=!flipped_gravity,tag=!sneak_pos,tag=shrunk] ^ ^0.87 ^-0.125
+execute rotated as @s run teleport @s[tag=!stop_model,tag=!flipped_gravity,tag=sneak_pos,tag=shrunk] ^ ^0.78 ^-0.125
+execute rotated as @s run teleport @s[tag=!stop_model,tag=flipped_gravity,tag=!sneak_pos,tag=!shrunk] ^ ^-0.6 ^-0.25
+execute rotated as @s run teleport @s[tag=!stop_model,tag=flipped_gravity,tag=sneak_pos,tag=!shrunk] ^ ^-0.65 ^-0.25
+execute rotated as @s run teleport @s[tag=!stop_model,tag=flipped_gravity,tag=!sneak_pos,tag=shrunk] ^ ^-0.92 ^-0.125
+execute rotated as @s run teleport @s[tag=!stop_model,tag=flipped_gravity,tag=sneak_pos,tag=shrunk] ^ ^-0.945 ^-0.125
 
 execute unless data storage luigis_mansion:data luigi{swimming:0b,gliding:0b} run teleport @s ~ ~-1 ~
 execute unless data storage luigis_mansion:data luigi{swimming:0b,gliding:0b} if entity @s[tag=!stop_model] run data modify entity @s Rotation[1] set from entity @a[tag=this_luigi,limit=1] Rotation[1]

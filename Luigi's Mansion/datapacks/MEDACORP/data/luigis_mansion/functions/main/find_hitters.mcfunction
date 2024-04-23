@@ -1,4 +1,4 @@
-data modify storage luigis_mansion:data temp set from entity @s[type=minecraft:armor_stand] ArmorItems[3].tag.luigis_mansion.hit_by
+data modify storage luigis_mansion:data temp set from entity @s[type=minecraft:armor_stand] ArmorItems[3].components."minecraft:custom_data".hit_by
 data modify storage luigis_mansion:data temp set from entity @s[type=minecraft:marker] data.hit_by
 execute if data storage luigis_mansion:data temp.vacuum[-1] run function luigis_mansion:main/find_hitters/vacuum
 execute if data storage luigis_mansion:data temp.dust[-1] run function luigis_mansion:main/find_hitters/dust

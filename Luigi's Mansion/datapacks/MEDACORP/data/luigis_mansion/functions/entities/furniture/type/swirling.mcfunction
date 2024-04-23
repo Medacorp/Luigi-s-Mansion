@@ -1,4 +1,3 @@
-execute if entity @s[tag=!saved_default_orientation] run function luigis_mansion:entities/furniture/save_default_orientation
 execute unless entity @s[tag=!shake,tag=!long_shake] run function luigis_mansion:entities/furniture/shake
 execute if entity @s[tag=!shake,tag=!long_shake,tag=was_shaking,tag=!rock] run function luigis_mansion:entities/furniture/revert_to_default_orientation
 

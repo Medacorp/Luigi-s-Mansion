@@ -7,8 +7,8 @@ scoreboard players set #temp Room 2
 
 execute as @a[scores={Room=2}] run function e3_demo:room/original/hallway_1/tick_per_player
 
-execute unless data storage luigis_mansion:data dialogs[{room:1}] unless data storage luigis_mansion:data current_state.current_data{obtained_keys:["living_room"]} unless entity @e[nbt={ArmorItems:[{tag:{luigis_mansion:{item:{namespace:"luigis_mansion",id:"key"},variant:"living_room"}}}]},limit=1] if entity @e[x=736,y=19,z=8,dx=0,dy=3,dz=1,tag=door,scores={AnimationProgress=39}] run playsound luigis_mansion:entity.ghost.mumble hostile @a 751.0 13 9.0 3
-execute unless data storage luigis_mansion:data dialogs[{room:1}] unless data storage luigis_mansion:data current_state.current_data{obtained_keys:["living_room"]} unless entity @e[nbt={ArmorItems:[{tag:{luigis_mansion:{item:{namespace:"luigis_mansion",id:"key"},variant:"living_room"}}}]},limit=1] if entity @e[x=736,y=19,z=8,dx=0,dy=3,dz=1,tag=door,scores={AnimationProgress=39}] run data modify storage luigis_mansion:data dialogs append value {name:{namespace:"luigis_mansion",id:"first_key"},room:1,progress:0}
+execute unless data storage luigis_mansion:data dialogs[{room:1}] unless data storage luigis_mansion:data current_state.current_data{obtained_keys:["living_room"]} unless entity @e[nbt={ArmorItems:[{components:{"minecraft:custom_data":{item:{namespace:"luigis_mansion",id:"key"},variant:"living_room"}}}]},limit=1] if entity @e[x=736,y=19,z=8,dx=0,dy=3,dz=1,tag=door,scores={AnimationProgress=39}] run playsound luigis_mansion:entity.ghost.mumble hostile @a 751.0 13 9.0 3
+execute unless data storage luigis_mansion:data dialogs[{room:1}] unless data storage luigis_mansion:data current_state.current_data{obtained_keys:["living_room"]} unless entity @e[nbt={ArmorItems:[{components:{"minecraft:custom_data":{item:{namespace:"luigis_mansion",id:"key"},variant:"living_room"}}}]},limit=1] if entity @e[x=736,y=19,z=8,dx=0,dy=3,dz=1,tag=door,scores={AnimationProgress=39}] run data modify storage luigis_mansion:data dialogs append value {name:{namespace:"luigis_mansion",id:"first_key"},room:1,progress:0}
 
 function #e3_demo:room/original/hallway_1/interactions/room
 

@@ -54,7 +54,7 @@ teleport @s[scores={AnimationProgress=116}] ~ ~ ~ ~-216 ~
 teleport @s[scores={AnimationProgress=117}] ~ ~ ~ ~-252 ~
 teleport @s[scores={AnimationProgress=118}] ~ ~ ~ ~-288 ~
 teleport @s[scores={AnimationProgress=119}] ~ ~ ~ ~-324 ~
-data modify entity @s[scores={AnimationProgress=40}] ArmorItems[3] merge from entity @s ArmorItems[3].tag.luigis_mansion.model_data.invisible
-data modify entity @s[scores={AnimationProgress=80}] ArmorItems[3] merge from entity @s ArmorItems[3].tag.luigis_mansion.model_data.default
+data modify entity @s[scores={AnimationProgress=40}] ArmorItems[3] merge from entity @s ArmorItems[3].components."minecraft:custom_data".model_data.invisible
+data modify entity @s[scores={AnimationProgress=80}] ArmorItems[3] merge from entity @s ArmorItems[3].components."minecraft:custom_data".model_data.default
 scoreboard players set @s[scores={AnimationProgress=200}] AnimationProgress 0
 data modify entity @s Pose.Head[1] set from entity @e[tag=this_entity,limit=1] Rotation[1]

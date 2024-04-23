@@ -1,4 +1,4 @@
-execute store result score #temp Time run data get entity @s Inventory[{tag:{luigis_mansion:{namespace:"luigis_mansion",id:"game_boy_horror"}}}].tag.CustomModelData
+execute store result score #temp Time run data get entity @s Inventory[{components:{"minecraft:custom_data":{namespace:"luigis_mansion",id:"game_boy_horror"}}}].components."minecraft:custom_model_data"
 execute if score #gbh_clock Selected matches 1728000.. run scoreboard players remove #gbh_clock Selected 1728000
 execute if score #gbh_clock Selected matches ..-1 run scoreboard players add #gbh_clock Selected 1728000
 scoreboard players operation #temp ActionTime = #gbh_clock Selected

@@ -1,6 +1,6 @@
 scoreboard players add @s Time 1
 scoreboard players add @s AnimationProgress 1
-execute as @e[tag=biff_atlas_weights] unless data entity @s ArmorItems[3].tag.luigis_mansion.home run data modify entity @s ArmorItems[3].tag.luigis_mansion.home set from entity @s Pos
+execute as @e[tag=biff_atlas_weights] unless data entity @s ArmorItems[3].components."minecraft:custom_data".home run data modify entity @s ArmorItems[3].components."minecraft:custom_data".home set from entity @s Pos
 execute if entity @s[nbt={data:{animation:{namespace:"luigis_mansion",id:"lift_fail"}}}] run function luigis_mansion:entities/biff_atlas/ai/mansion/normal/move_weights/fail
 execute if entity @s[nbt={data:{animation:{namespace:"luigis_mansion",id:"lift_succeed"}}}] run function luigis_mansion:entities/biff_atlas/ai/mansion/normal/move_weights/succeed
 scoreboard players set @s[scores={Time=1}] AnimationProgress 0

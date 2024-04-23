@@ -37,11 +37,11 @@ entity:{
     vanish_time:X, //How many ticks the ghost can stay in the world, haunting, but not attacking, laughing, complaining, being collided with, etc. before it vanishes. -1 means never.
     damage:{ //Damage values the ghost uses in its functions.
         <type>:X, //The amount of damage dealt. Type is usually collision and attack (also used by created projectiles), but can be other values.
-        breathe_fire:10, //Bowser's breathe fire attack and resulting burning floors
-        vacuum:10, //Bowser's vacuum attack
-        tail:10, //Bowser's tail attack
-        spike_ball:10, //Bowser's spike balls' explosion and resulting burning floor
-        spit_ice:10 //Bowser's spit ice attack (when decapitated)
+        breathe_fire:X, //Bowser's breathe fire attack and resulting burning floors
+        vacuum:X, //Bowser's vacuum attack
+        tail:X, //Bowser's tail attack
+        spike_ball:X, //Bowser's spike balls' explosion and resulting burning floor
+        spit_ice:X //Bowser's spit ice attack (when decapitated)
     },
     
     //Boos
@@ -55,7 +55,7 @@ entity:{
     show_health:1b, //Whether or not this boo shows health and is affected by the poltergust. Default = 1b.
     
     //Items
-    variant:1b, //Sets the item variant to spawn, bill: (0b is green, 1b is gold. Default = random), key: (0 is normal, 1 is heart, 2 is club, 3 is diamond, 4 is spade. Default = 0).
+    variant:1b, //Sets the item variant to spawn, bill: (0b is green, 1b is gold. Default = random).
     silent:1b, //When set, makes no spawn sound for this item. Default = 0b.
     assign_rank:{ //The portrait ghost rank this pearl modifies. Is set by pearl droppers to their entity ID (or, if present their pearl_assign_rank data). Default value prevents saving anything.
         namespace:"luigis_mansion", //The namespace of the mansion. Default = "luigis_mansion".
@@ -68,7 +68,7 @@ entity:{
             id:"...", //Optional, this path is unable to get selected using "set_random_path" if there is a path in this room with this in the disable_ids list.
             disable_ids:["..."], //Optional, used to disable path selection for other entities using "set_random_path".
             loop:1b, //Whether this path loops or not. If not, the entity stops at the end of the path. Default = 0b.
-            force_move:1b, //If set, the ghost will move forward, even into invalid positions such as walls. Default = 0b.
+            force_move:1b, //If set, the entity will move forward, even into invalid positions such as walls. Otherwise if path is obstructed the entity moves to the next step. Default = 0b.
             steps:[ //Individual path steps to go to.
                 {
                     instant:1b, //If the entity warps to this step position, rather than progressing towards it. Default = 0b.
@@ -82,7 +82,7 @@ entity:{
         namespace:"luigis_mansion", //The namespace of the mansion. Default = "luigis_mansion".
         id:"empty" //The ID of the mansion. Default = "empty".
     },
-    owner:X, //The GhostNr of the ghost that owns this projectile. A hit of miss will add the laugh or complain tag respectively to the owner.
+    owner:[I;...], //The UUID of the entity that owns this projectile. A hit of miss will add the laugh or complain tag respectively to the owner.
     door:{ //Required for and used only by fake doors.
         model:{ //Required, the ID of the door model. See IDs in use for valid IDs.
             namespace:"luigis_mansion", //Required, the namespace of the door model.

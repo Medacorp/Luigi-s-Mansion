@@ -1,9 +1,9 @@
 execute if entity @s[tag=!dead,tag=!remove_from_existence] run function luigis_mansion:room/dark_room
 execute unless entity @s[tag=!dead,tag=!remove_from_existence] run tag @s add dark_room
 
-execute store result score #temp Time run data get entity @s ArmorItems[3].tag.CustomModelData
-execute if entity @s[tag=was_dark_room,tag=!dark_room] store result entity @s ArmorItems[3].tag.CustomModelData int 1 run scoreboard players operation #temp Time -= @s FurnitureLightModel
-execute if entity @s[tag=!was_dark_room,tag=dark_room] store result entity @s ArmorItems[3].tag.CustomModelData int 1 run scoreboard players operation #temp Time += @s FurnitureLightModel
+execute store result score #temp Time run data get entity @s ArmorItems[3].components."minecraft:custom_model_data"
+execute if entity @s[tag=was_dark_room,tag=!dark_room] store result entity @s ArmorItems[3].components."minecraft:custom_model_data" int 1 run scoreboard players operation #temp Time -= @s FurnitureLightModel
+execute if entity @s[tag=!was_dark_room,tag=dark_room] store result entity @s ArmorItems[3].components."minecraft:custom_model_data" int 1 run scoreboard players operation #temp Time += @s FurnitureLightModel
 execute if entity @s[tag=was_dark_room,tag=!dark_room] run tag @s add lit
 execute if entity @s[tag=!was_dark_room,tag=dark_room] run tag @s remove lit
 scoreboard players reset #temp Time

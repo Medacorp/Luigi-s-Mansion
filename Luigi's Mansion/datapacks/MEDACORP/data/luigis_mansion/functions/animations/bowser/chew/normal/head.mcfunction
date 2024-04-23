@@ -26,7 +26,7 @@ execute if entity @s[scores={AnimationProgress=21..40}] store result entity @s P
 execute if entity @s[scores={AnimationProgress=41..60}] store result entity @s Pose.Head[1] float 0.1 run scoreboard players remove #temp Time 30
 execute if entity @s[scores={AnimationProgress=61..80}] store result entity @s Pose.Head[1] float 0.1 run scoreboard players add #temp Time 15
 scoreboard players reset #temp Time
-execute if entity @s[scores={AnimationProgress=1}] run data modify entity @s ArmorItems[3] merge from entity @s ArmorItems[3].tag.luigis_mansion.model_data.default
-execute if entity @s[scores={AnimationProgress=56}] run data modify entity @s ArmorItems[3] merge from entity @s ArmorItems[3].tag.luigis_mansion.model_data.open_mouth
-execute if entity @s[scores={AnimationProgress=64}] run data modify entity @s ArmorItems[3] merge from entity @s ArmorItems[3].tag.luigis_mansion.model_data.default
+execute if entity @s[scores={AnimationProgress=1}] run data modify entity @s ArmorItems[3] merge from entity @s ArmorItems[3].components."minecraft:custom_data".model_data.default
+execute if entity @s[scores={AnimationProgress=56}] run data modify entity @s ArmorItems[3] merge from entity @s ArmorItems[3].components."minecraft:custom_data".model_data.open_mouth
+execute if entity @s[scores={AnimationProgress=64}] run data modify entity @s ArmorItems[3] merge from entity @s ArmorItems[3].components."minecraft:custom_data".model_data.default
 scoreboard players set @s[scores={AnimationProgress=80}] AnimationProgress 0

@@ -1,6 +1,6 @@
 execute unless score #hallway_7 Ticking matches 1 run function #3ds_remake:room/hidden/hallway_7/load
 execute as @a[x=712,y=1,z=-63,dx=8,dy=16,dz=21] unless entity @s[scores={Room=15}] run scoreboard players operation @s LastRoom = @s Room
-scoreboard players set @e[x=712,y=1,z=-63,dx=8,dy=16,dz=21] Room 15
+scoreboard players set @a[x=712,y=1,z=-63,dx=8,dy=16,dz=21] Room 15
 #todelete - needed for room-triggered shake sounds
 scoreboard players set #temp Room 15
 #/todelete

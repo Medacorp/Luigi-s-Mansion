@@ -1,8 +1,8 @@
-execute positioned ^ ^ ^ run particle minecraft:dust 0.5 0.5 0.5 0.7 ~ ~ ~ 0 0 0 0 1 normal @a[tag=same_room]
-execute positioned ^ ^0.5 ^ run particle minecraft:dust 0.5 0.5 0.5 0.7 ~ ~ ~ 0 0 0 0 1 normal @a[tag=same_room]
-execute positioned ^ ^-0.5 ^ run particle minecraft:dust 0.5 0.5 0.5 0.7 ~ ~ ~ 0 0 0 0 1 normal @a[tag=same_room]
-execute positioned ^0.5 ^ ^ run particle minecraft:dust 0.5 0.5 0.5 0.7 ~ ~ ~ 0 0 0 0 1 normal @a[tag=same_room]
-execute positioned ^-0.5 ^ ^ run particle minecraft:dust 0.5 0.5 0.5 0.7 ~ ~ ~ 0 0 0 0 1 normal @a[tag=same_room]
+execute positioned ^ ^ ^ run particle minecraft:dust{color:[0.5f,0.5f,0.5f],scale:0.7f} ~ ~ ~ 0 0 0 0 1 normal @a[tag=same_room]
+execute positioned ^ ^0.5 ^ run particle minecraft:dust{color:[0.5f,0.5f,0.5f],scale:0.7f} ~ ~ ~ 0 0 0 0 1 normal @a[tag=same_room]
+execute positioned ^ ^-0.5 ^ run particle minecraft:dust{color:[0.5f,0.5f,0.5f],scale:0.7f} ~ ~ ~ 0 0 0 0 1 normal @a[tag=same_room]
+execute positioned ^0.5 ^ ^ run particle minecraft:dust{color:[0.5f,0.5f,0.5f],scale:0.7f} ~ ~ ~ 0 0 0 0 1 normal @a[tag=same_room]
+execute positioned ^-0.5 ^ ^ run particle minecraft:dust{color:[0.5f,0.5f,0.5f],scale:0.7f} ~ ~ ~ 0 0 0 0 1 normal @a[tag=same_room]
 execute unless entity @s[distance=..0.5] positioned ^ ^ ^0.5 run function e3_demo:items/poltergust_500/vacuuming/e_gadd
 scoreboard players reset #temp Steps
 execute if entity @e[tag=e_gadd,limit=1,tag=!vacuuming] run playsound e3_demo:item.poltergust_500.vacuuming_start player @a[tag=same_room] ~ ~ ~ 1

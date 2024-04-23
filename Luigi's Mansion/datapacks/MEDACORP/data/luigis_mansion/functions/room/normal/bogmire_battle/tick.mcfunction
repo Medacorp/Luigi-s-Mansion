@@ -1,6 +1,6 @@
 execute unless score #bogmire_battle Ticking matches 1 run function #luigis_mansion:room/normal/bogmire_battle/load
 execute as @a[x=777,y=4,z=-26,dx=51,dy=38,dz=55] run scoreboard players set @s LastRoom 74
-scoreboard players set @e[x=777,y=4,z=-26,dx=51,dy=38,dz=55] Room 74
+scoreboard players set @a[x=777,y=4,z=-26,dx=51,dy=38,dz=55] Room 74
 #todelete - needed for room-triggered shake sounds
 scoreboard players set #temp Room 74
 #/todelete

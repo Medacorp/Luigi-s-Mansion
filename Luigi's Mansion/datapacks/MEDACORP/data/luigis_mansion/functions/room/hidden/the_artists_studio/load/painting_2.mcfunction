@@ -1,2 +1,3 @@
-summon minecraft:item_frame 695 30 75 {Facing:5b,Silent:1b,Invulnerable:1b,Item:{id:"minecraft:filled_map",Count:1b,tag:{map:260}},CustomName:'{"type":"translatable","translate":"luigis_mansion:furniture.painting"}',Invisible:1b,Fixed:1b}
-execute if data storage luigis_mansion:data current_state.current_data.rooms.the_artists_studio{cleared:1b} run data modify entity @e[x=695.5,y=30,z=75.5,distance=..0.7,limit=1] Item.tag.map set value 259
+summon minecraft:item_frame 695 30 75 {Facing:5b,Silent:1b,Invulnerable:1b,Item:{id:"minecraft:filled_map",count:1,components:{"minecraft:map_id":260}},CustomName:'{"type":"translatable","translate":"luigis_mansion:furniture.painting"}',Invisible:1b,Fixed:1b}
+execute if data storage luigis_mansion:data current_state.current_data.rooms.the_artists_studio{cleared:1b} run data modify entity @e[x=695.5,y=30,z=75.5,distance=..0.7,limit=1] Item.components."minecraft:map_id" set value 259
+scoreboard players set @e[x=695.5,y=30.0,z=75.5,distance=..2,type=minecraft:item_frame] Room 71

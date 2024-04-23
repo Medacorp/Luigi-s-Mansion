@@ -5,7 +5,7 @@ scoreboard players add #temp2 MirrorX 50
 execute store result score #temp ActionTime run data get entity @s Pos[0] 100
 scoreboard players operation #temp ActionTime -= #temp2 MirrorX
 execute store result entity @s Pos[0] double 0.01 run scoreboard players operation #temp2 MirrorX -= #temp ActionTime
-execute at @s run particle minecraft:item minecraft:diamond_pickaxe{Unbreakable:1b,Damage:19,CustomModelData:109} ~ ~ ~ 0 0 0 0 1 normal @a[tag=same_room]
+execute at @s run particle minecraft:item{item:{id:"minecraft:diamond_pickaxe",components:{"minecraft:unbreakable":{},"minecraft:damage":19,"minecraft:custom_model_data":109}}} ~ ~ ~ 0 0 0 0 1 normal @a[tag=same_room]
 teleport @s ~ ~ ~
 scoreboard players reset #temp ActionTime
 scoreboard players reset #temp2 MirrorX

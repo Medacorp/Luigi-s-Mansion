@@ -8,12 +8,12 @@ scoreboard players reset #temp Time
 scoreboard players reset #temp2 Time
 scoreboard players reset #temp3 Time
 tag @s add me
-execute positioned as @e[tag=temp,limit=1] if data entity @s ArmorItems[3].tag.luigis_mansion{particles:"sparkles"} run function luigis_mansion:entities/furniture/spawn/particles/sparkles
-execute positioned as @e[tag=temp,limit=1] if data entity @s ArmorItems[3].tag.luigis_mansion{particles:"flames"} run function luigis_mansion:entities/furniture/spawn/particles/flames
-execute positioned as @e[tag=temp,limit=1] if data entity @s ArmorItems[3].tag.luigis_mansion{particles:"dripping_water"} run function luigis_mansion:entities/furniture/spawn/particles/dripping_water
-execute positioned as @e[tag=temp,limit=1] if data entity @s ArmorItems[3].tag.luigis_mansion{particles:"spraying_water"} run function luigis_mansion:entities/furniture/spawn/particles/spraying_water
-execute positioned as @e[tag=temp,limit=1] if data entity @s ArmorItems[3].tag.luigis_mansion{particles:"leaking_water"} run function luigis_mansion:entities/furniture/spawn/particles/leaking_water
-execute positioned as @e[tag=temp,limit=1] if data entity @s ArmorItems[3].tag.luigis_mansion{particles:"chilly_fog"} run function luigis_mansion:entities/furniture/spawn/particles/chilly_fog
+execute positioned as @e[tag=temp,limit=1] if data entity @s ArmorItems[3].components."minecraft:custom_data"{particles:"sparkles"} run function luigis_mansion:entities/furniture/spawn/particles/sparkles
+execute positioned as @e[tag=temp,limit=1] if data entity @s ArmorItems[3].components."minecraft:custom_data"{particles:"flames"} run function luigis_mansion:entities/furniture/spawn/particles/flames
+execute positioned as @e[tag=temp,limit=1] if data entity @s ArmorItems[3].components."minecraft:custom_data"{particles:"dripping_water"} run function luigis_mansion:entities/furniture/spawn/particles/dripping_water
+execute positioned as @e[tag=temp,limit=1] if data entity @s ArmorItems[3].components."minecraft:custom_data"{particles:"spraying_water"} run function luigis_mansion:entities/furniture/spawn/particles/spraying_water
+execute positioned as @e[tag=temp,limit=1] if data entity @s ArmorItems[3].components."minecraft:custom_data"{particles:"leaking_water"} run function luigis_mansion:entities/furniture/spawn/particles/leaking_water
+execute positioned as @e[tag=temp,limit=1] if data entity @s ArmorItems[3].components."minecraft:custom_data"{particles:"chilly_fog"} run function luigis_mansion:entities/furniture/spawn/particles/chilly_fog
 execute if entity @s[tag=incense] positioned as @e[tag=temp,limit=1] run function luigis_mansion:entities/furniture/spawn/particles/incense
 tag @s remove me
 teleport @s ~ ~ ~ ~ ~

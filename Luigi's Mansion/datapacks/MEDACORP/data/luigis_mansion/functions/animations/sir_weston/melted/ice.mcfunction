@@ -1,1 +1,1 @@
-data modify entity @s ArmorItems[3].id set from entity @s ArmorItems[3].tag.luigis_mansion.invisible
+data modify entity @s ArmorItems[3].id set from entity @s ArmorItems[3].components."minecraft:custom_data".invisible

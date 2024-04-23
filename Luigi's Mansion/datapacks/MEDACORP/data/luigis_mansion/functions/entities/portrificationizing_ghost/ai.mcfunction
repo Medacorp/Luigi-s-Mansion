@@ -11,8 +11,8 @@ execute if entity @s[scores={Dialog=41..100}] if predicate luigis_mansion:50_50 
 execute if entity @s[scores={Dialog=140..180}] run teleport @s ~ ~ ~ ~5 ~
 execute if entity @s[scores={Dialog=181..220}] run teleport @s ~ ~ ~ ~10 ~
 execute if entity @s[scores={Dialog=221..299}] run teleport @s ~ ~ ~ ~20 ~
-execute if entity @s[scores={Dialog=200..279}] store result score #temp Time run data get entity @s ArmorItems[3].tag.CustomModelData
-execute if entity @s[scores={Dialog=200..279}] store result entity @s ArmorItems[3].tag.CustomModelData int 1 run scoreboard players add #temp Time 1
+execute if entity @s[scores={Dialog=200..279}] store result score #temp Time run data get entity @s ArmorItems[3].components."minecraft:custom_model_data"
+execute if entity @s[scores={Dialog=200..279}] store result entity @s ArmorItems[3].components."minecraft:custom_model_data" int 1 run scoreboard players add #temp Time 1
 scoreboard players reset #temp Time
 data modify entity @s[scores={Dialog=300}] Pose.Head[0] set value 0f
 teleport @s[scores={Dialog=300}] 770 80 12 0 0
@@ -125,7 +125,7 @@ execute if entity @s[scores={Dialog=550}] run setblock 770 79 -7 minecraft:green
 execute if entity @s[scores={Dialog=570}] run setblock 770 81 -7 minecraft:green_terracotta
 execute if entity @s[scores={Dialog=570}] run setblock 770 79 -7 minecraft:air
 execute if entity @s[scores={Dialog=570},tag=!dead] run data merge entity @s {Pose:{Head:[-90.0f,0.0f,0.0f]}}
-execute if entity @s[scores={Dialog=570},tag=!dead] run function luigis_mansion:entities/portrificationizing_ghost/portrait with entity @s ArmorItems[3].tag.luigis_mansion.ghost
+execute if entity @s[scores={Dialog=570},tag=!dead] run function luigis_mansion:entities/portrificationizing_ghost/portrait with entity @s ArmorItems[3].components."minecraft:custom_data".ghost
 execute if entity @s[scores={Dialog=570},tag=!dead] run function #luigis_mansion:entities/portrificationizing_ghost/clear_rooms
 execute if entity @s[scores={Dialog=570}] run teleport @s 770 77.95 -8 -90 0
 execute if entity @s[scores={Dialog=575}] run teleport @s 770 77.95 -9
