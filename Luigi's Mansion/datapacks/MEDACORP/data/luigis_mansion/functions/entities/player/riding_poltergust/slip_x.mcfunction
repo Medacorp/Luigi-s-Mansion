@@ -12,5 +12,4 @@ tag @s remove can_move_positive
 tag @s remove can_move_negative
 scoreboard players remove @s[scores={SlipX=1..}] SlipX 1
 scoreboard players add @s[scores={SlipX=..-1}] SlipX 1
-scoreboard players add #temp Time 1
-execute unless score @s SlipX matches 0 if score #temp Time matches ..19 at @s run function luigis_mansion:entities/player/riding_poltergust/slip_x
+execute unless score @s SlipX matches 0 at @s run function luigis_mansion:entities/player/riding_poltergust/slip_x
