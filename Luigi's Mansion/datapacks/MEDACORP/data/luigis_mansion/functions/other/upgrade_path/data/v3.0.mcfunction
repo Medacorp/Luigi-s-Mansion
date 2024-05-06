@@ -27,12 +27,10 @@ data modify storage luigis_mansion:data update_data.ghosts set from storage luig
 data remove storage luigis_mansion:data update_data.new_ghosts
 data modify storage luigis_mansion:data update_data.old_dead_players set from storage luigis_mansion:data update_data.dead_players
 data modify storage luigis_mansion:data update_data.dead_players set value []
-execute if data storage luigis_mansion:data update_data.dead_players[0] run function luigis_mansion:other/upgrade_path/change_dead_player_data
+execute if data storage luigis_mansion:data update_data.dead_players[0] run function luigis_mansion:other/upgrade_path/change_data/dead_players
 data remove storage luigis_mansion:data update_data.old_dead_players
 execute if data storage luigis_mansion:data update_data.technical_data{released_boos_call:1b} run data modify storage luigis_mansion:data update_data.obtained_items merge value {boo_radar:1b}
 execute if data storage luigis_mansion:data update_data.technical_data{telephone_3:1b} run data modify storage luigis_mansion:data update_data.technical_data merge value {telephone_room_blackout:1b}
-data modify storage luigis_mansion:data obtained_keys set from storage luigis_mansion:data update_data.obtained_keys
-data modify storage luigis_mansion:data update_data.obtained_keys set value []
 execute if data storage luigis_mansion:data update_data.boos[{}] run data modify storage luigis_mansion:data update_data.boos[] merge value {damage:{collision:5,attack:10},message:1,can_attack:0b}
 execute if data storage luigis_mansion:data update_data.boos[{name:"bamboo"}] run data modify storage luigis_mansion:data update_data.boos[{name:"bamboo"}] merge value {name:{namespace:"luigis_mansion",id:"bamboo"}}
 execute if data storage luigis_mansion:data update_data.boos[{name:"bootha"}] run data modify storage luigis_mansion:data update_data.boos[{name:"bootha"}] merge value {name:{namespace:"luigis_mansion",id:"bootha"}}
@@ -69,6 +67,8 @@ execute if data storage luigis_mansion:data update_data.boos[{name:"boolderdash"
 execute if data storage luigis_mansion:data update_data.boos[{name:"boolivia"}] run data modify storage luigis_mansion:data update_data.boos[{name:"boolivia"}] merge value {name:{namespace:"luigis_mansion",id:"boolivia"},can_attack:1b}
 execute if data storage luigis_mansion:data update_data.boos[{name:"boonita"}] run data modify storage luigis_mansion:data update_data.boos[{name:"boonita"}] merge value {name:{namespace:"luigis_mansion",id:"boonita"}}
 execute if data storage luigis_mansion:data update_data.boos[{name:"bootique"}] run data modify storage luigis_mansion:data update_data.boos[{name:"bootique"}] merge value {name:{namespace:"luigis_mansion",id:"bootique"}}
+data modify storage luigis_mansion:data obtained_keys set from storage luigis_mansion:data update_data.obtained_keys
+data modify storage luigis_mansion:data update_data.obtained_keys set value []
 execute if data storage luigis_mansion:data obtained_keys{parlor:1b} run data modify storage luigis_mansion:data update_data.obtained_keys append value "parlor"
 execute if data storage luigis_mansion:data obtained_keys{anteroom:1b} run data modify storage luigis_mansion:data update_data.obtained_keys append value "anteroom"
 execute if data storage luigis_mansion:data obtained_keys{hallway_2:1b} run data modify storage luigis_mansion:data update_data.obtained_keys append value "hallway_2"
@@ -246,8 +246,8 @@ execute if data storage luigis_mansion:data money_spawned{safari_room_lamp_1:1b}
 execute if data storage luigis_mansion:data money_spawned{safari_room_lamp_2:1b} run data modify storage luigis_mansion:data update_data.money_spawned append value "safari_room_leopard_skin_decorated_lamp_2"
 execute if data storage luigis_mansion:data money_spawned{balcony_2_plant_1:1b} run data modify storage luigis_mansion:data update_data.money_spawned append value "balcony_2_stone_bowl_potted_fern_1"
 execute if data storage luigis_mansion:data money_spawned{balcony_2_plant_2:1b} run data modify storage luigis_mansion:data update_data.money_spawned append value "balcony_2_potted_dying_blue_flower_1"
-execute if data storage luigis_mansion:data money_spawned{balcony_2_plant_3:1b} run data modify storage luigis_mansion:data update_data.money_spawned append value "balcony_2_duo_potted_dying_pink_and_brown_flowers_1"
-execute if data storage luigis_mansion:data money_spawned{balcony_2_plant_4:1b} run data modify storage luigis_mansion:data update_data.money_spawned append value "balcony_2_duo_potted_dying_pink_and_brown_flowers_2"
+execute if data storage luigis_mansion:data money_spawned{balcony_2_plant_3:1b} run data modify storage luigis_mansion:data update_data.money_spawned append value "balcony_2_duo_potted_dying_pink_and_brown_flowers"
+execute if data storage luigis_mansion:data money_spawned{balcony_2_plant_4:1b} run data modify storage luigis_mansion:data update_data.money_spawned append value "balcony_2_duo_potted_dying_pink_and_brown_flowers"
 execute if data storage luigis_mansion:data money_spawned{balcony_2_plant_5:1b} run data modify storage luigis_mansion:data update_data.money_spawned append value "balcony_2_stone_bowl_potted_fern_2"
 execute if data storage luigis_mansion:data money_spawned{balcony_2_plant_7:1b} run data modify storage luigis_mansion:data update_data.money_spawned append value "balcony_2_potted_dying_blue_flower_3"
 execute if data storage luigis_mansion:data money_spawned{balcony_2_plant_9:1b} run data modify storage luigis_mansion:data update_data.money_spawned append value "balcony_2_potted_dying_blue_flower_4"
@@ -335,7 +335,7 @@ execute if data storage luigis_mansion:data update_data{obtained_keys:["pipe_roo
 execute if data storage luigis_mansion:data update_data{obtained_keys:["cold_storage"]} run data modify storage luigis_mansion:data update_data.money_spawned append value "pipe_room_room_clear_chest"
 execute if data storage luigis_mansion:data update_data{obtained_keys:["the_artists_studio"]} run data modify storage luigis_mansion:data update_data.money_spawned append value "cold_storage_room_clear_chest"
 data modify storage luigis_mansion:data ghosts_caught set from storage luigis_mansion:data update_data.ghosts_caught
-function luigis_mansion:other/upgrade_path/change_up_ghost_data
+function luigis_mansion:other/upgrade_path/change_data/ghosts_caught
 data modify storage luigis_mansion:data update_data.ghosts_caught set from storage luigis_mansion:data new_ghosts_caught
 data remove storage luigis_mansion:data ghosts_caught
 data remove storage luigis_mansion:data new_ghosts_caught

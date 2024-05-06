@@ -1,6 +1,2 @@
-execute if data storage luigis_mansion:data current_state.ghosts_caught[0] run function 3ds_remake:room/gallery/check_portrait/small_ghosts/ghost_count/shining_ghost
-execute if data storage luigis_mansion:data current_state.new_ghosts_caught run data modify storage luigis_mansion:data current_state.ghosts_caught set from storage luigis_mansion:data current_state.new_ghosts_caught
-data remove storage luigis_mansion:data current_state.new_ghosts_caught
-execute if score #temp Time matches 1.. run summon minecraft:armor_stand 764 2.5 -48.0 {Marker:1b,Rotation:[-130.0f,0.0f],Small:1b,CustomName:'{"type":"translatable","translate":"luigis_mansion:entity.shining_ghost"}',Invisible:1b,NoGravity:1b,CustomNameVisible:0b,Invulnerable:1b,Small:1b,ArmorItems:[{},{},{},{id:"minecraft:leather_chestplate",count:1,components:{"minecraft:unbreakable":{},"minecraft:damage":1,"minecraft:custom_model_data":17,"minecraft:dyed_color":{rgb:16771072}}}],Pose:{Head:[0.0f,0.0f,0.01f]},DisabledSlots:2039583}
-scoreboard players reset #temp Time
-scoreboard players reset #temp Money
+execute if data storage luigis_mansion:data current_state.ghosts_caught.caught.luigis_mansion.shining_ghost run data modify storage luigis_mansion:data entity set value {room:-5,no_ai:1b,rotation:[-130.0f,0.0f],tags:["visible"],animation:{namespace:"3ds_remake",id:"portrait",frozen:1b}}
+execute if data storage luigis_mansion:data entity positioned 764 3.1 -47.4 run function luigis_mansion:spawn_entities/ghost/shining_ghost

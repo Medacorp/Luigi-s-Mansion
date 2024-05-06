@@ -3,7 +3,7 @@ execute at @s[tag=!wall,scores={Turn=0}] run function luigis_mansion:entities/gh
 execute at @s[tag=wall] run function luigis_mansion:entities/ghost/flee/wall
 tag @s remove wall
 tag @s add me
-execute if entity @s[tag=!show_health] run function luigis_mansion:entities/ghost/flee/pull
+execute if entity @s[tag=!show_health,tag=!vacuumable] run function luigis_mansion:entities/ghost/flee/pull
 tag @s remove me
 scoreboard players operation #temp MoveFlee = @s MoveFlee
 execute at @s[tag=second_flee_state] run function luigis_mansion:entities/ghost/flee/second_state

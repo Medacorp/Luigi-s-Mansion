@@ -1,4 +1,4 @@
-data modify storage luigis_mansion:data passive set value {tags:[],room:0,mirror:{},initial_animation_progress:0,animation:{namespace:"luigis_mansion",id:"idle"},rotation:[0.0f,0.0f],poltergust:{}}
+data modify storage luigis_mansion:data passive set value {tags:[],room:0,mirror:{},initial_animation_progress:0,animation:{namespace:"luigis_mansion",id:"idle"},rotation:[0.0f,0.0f],poltergust:{id:"minecraft:stone_button",count:1}}
 execute store result storage luigis_mansion:data passive.room int 1 run scoreboard players get @s Room
 execute if entity @s[scores={MirrorX=-2147483648..}] store result storage luigis_mansion:data passive.mirror.x int 1 run scoreboard players get @s MirrorX
 execute if entity @s[scores={MirrorZ=-2147483648..}] store result storage luigis_mansion:data passive.mirror.z int 1 run scoreboard players get @s MirrorZ

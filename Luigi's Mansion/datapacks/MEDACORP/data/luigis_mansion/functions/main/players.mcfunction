@@ -3,6 +3,9 @@ execute if entity @s[scores={Room=..0}] if score #mirrored Selected matches 1 ru
 execute if entity @s[tag=using_selection_menu,tag=fetch_option_result] run function luigis_mansion:entities/player/selection_menu/get_selected_option
 execute if entity @s[tag=using_selection_menu,tag=!selection_menu_free_to_move] run function luigis_mansion:entities/player/selection_menu/freeze_in_place
 
+scoreboard players remove @s TeleportDelayTimer 1
+scoreboard players operation @s[scores={TeleportDelayTimer=-1}] TeleportDelayTimer = @s TeleportDelaySetting
+
 tag @s add player
 tag @s[tag=camera,gamemode=!spectator] remove spectator
 execute if loaded ~ ~ ~ if loaded ~-48 ~ ~ if loaded ~48 ~ ~ if loaded ~ ~ ~-48 if loaded ~ ~ ~48 if loaded ~48 ~ ~48 if loaded ~48 ~ ~-48 if loaded ~-48 ~ ~48 if loaded ~-48 ~ ~-48 run function luigis_mansion:main/loaded_chunks

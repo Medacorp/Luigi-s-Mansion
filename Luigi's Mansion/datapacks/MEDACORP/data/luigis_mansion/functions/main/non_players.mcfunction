@@ -47,6 +47,8 @@ tag @s remove in_dust
 tag @s remove in_fire
 tag @s remove in_water
 tag @s remove in_ice
+tag @s[tag=freeze_animation_next_tick] add freeze_animation
+tag @s remove freeze_animation_next_tick
 
 tag @a remove vacuuming_me
 tag @a remove expelling_me

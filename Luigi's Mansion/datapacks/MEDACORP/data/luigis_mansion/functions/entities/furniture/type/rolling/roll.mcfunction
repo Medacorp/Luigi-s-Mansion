@@ -1,8 +1,13 @@
 data modify entity @s ArmorItems[3].components."minecraft:custom_data".animation set value {namespace:"luigis_mansion",id:"roll"}
+scoreboard players add @s[tag=rolling] FurnitureVacuum 2
+scoreboard players set @s[scores={FurnitureVacuum=42..}] FurnitureVacuum 42
 execute if entity @s[scores={PoltergustSound=0,FurnitureVacuum=1..10}] run playsound luigis_mansion:furniture.search.roll block @a[tag=same_room] ~ ~ ~ 1 0.9
 execute if entity @s[scores={PoltergustSound=0,FurnitureVacuum=11..20}] run playsound luigis_mansion:furniture.search.roll block @a[tag=same_room] ~ ~ ~ 1 1
 execute if entity @s[scores={PoltergustSound=0,FurnitureVacuum=21..30}] run playsound luigis_mansion:furniture.search.roll block @a[tag=same_room] ~ ~ ~ 1 1.1
 execute if entity @s[scores={PoltergustSound=0,FurnitureVacuum=31..40}] run playsound luigis_mansion:furniture.search.roll block @a[tag=same_room] ~ ~ ~ 1 1.2
 execute if entity @s[scores={PoltergustSound=0,FurnitureVacuum=41..}] run playsound luigis_mansion:furniture.search.roll block @a[tag=same_room] ~ ~ ~ 1 1.3
 scoreboard players set @s[scores={PoltergustSound=0,FurnitureVacuum=1..}] PoltergustSound 3
-tag @s add was_shaking
+scoreboard players remove @s[tag=!rolling] FurnitureVacuum 1
+execute if entity @s[scores={FurnitureVacuum=0}] run data modify entity @s Pose.Head set from entity @s ArmorItems[3].components."minecraft:custom_data".default_orientation
+data modify entity @s[scores={FurnitureVacuum=0}] ArmorItems[3].components."minecraft:custom_data".animation set value {namespace:"luigis_mansion",id:"idle"}
+tag @s remove rolling

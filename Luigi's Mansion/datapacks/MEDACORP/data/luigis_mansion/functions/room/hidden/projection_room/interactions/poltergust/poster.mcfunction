@@ -1,4 +1,2 @@
-execute if entity @s[x=675.0,y=12,z=-27.0,dx=0,dy=3,dz=8,tag=vacuum] if entity @a[tag=me,x=675.5,y=14,z=-22.5,distance=..4.8,limit=1] unless score #projection_room_poster Search matches 1 store success score #projection_room_poster Search run scoreboard players add #projection_room_poster Searching 1
-execute if entity @s[x=675.0,y=12,z=-27.0,dx=0,dy=3,dz=8,tag=vacuum] as @a[tag=me,x=675.5,y=14,z=-22.5,distance=4.8..5,limit=1] at @s facing 675.5 14 -22.5 rotated ~ 0 run teleport @s ^ ^ ^0.2
-execute if entity @s[x=675.0,y=12,z=-27.0,dx=0,dy=3,dz=8,tag=vacuum] as @a[tag=me,x=675.5,y=14,z=-22.5,distance=..4.8,limit=1] at @s facing 675.5 14 -22.5 run teleport @s ~ ~ ~ ~ ~
-execute if entity @s[x=675.0,y=12,z=-27.0,dx=0,dy=3,dz=8,tag=vacuum] run tag @a[tag=me,x=675.5,y=14,z=-22.5,distance=..4.8,limit=1] add vacuuming_poster
+execute if entity @s[x=675.0,y=12,z=-27.0,dx=0,dy=3,dz=8,tag=vacuum] as @a[tag=me,limit=1] run function luigis_mansion:entities/player/vacuum_poster {facing:"675.5 14 -22.5",radius:4.8}
+execute if entity @s[x=675.0,y=12,z=-27.0,dx=0,dy=3,dz=8,tag=vacuum] unless score #projection_room_poster Search matches 1 store success score #projection_room_poster Search run scoreboard players add #projection_room_poster Searching 1

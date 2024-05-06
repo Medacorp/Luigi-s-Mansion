@@ -5,7 +5,7 @@ Sawning a key additionally requires a macro string called "door", which matches 
 ```
 entity:{
     //Interaction
-    scan_message:{ //The message spoken when scanning this Toad, E. Gadd, portrait ghost or fake door.
+    scan_message:{ //The message spoken when scanning this entity.
         message:..., //See furniture variable scan_message; "spawn_ghost" not accepted.
         sender:"scanner", //Optional, who speaks when scanning this entity. If set to "scanner", and the scan is from Gooigi, sends the usual "......" message instead. Default = me; only used if message is 'JSON'.
         plural_message:'JSON' //Optional, the message used when more than 1 player is present; only used if sender is set to "me" and message is 'JSON'.
@@ -16,6 +16,13 @@ entity:{
     rotation:[0.0f,0.0f], //Sets the direction this entity will face.
     spawn_time:X, //How much to skip in the vanish timer. Does not affect entities that cannot vanish.
     room:X, //Room number that this entity is in. Default = room number of whoever is @s on function call, if absent = 0.
+    animation:{ //Animation info.
+        namespace:"luigis_mansion", //The namespace of the animation to use. Default = luigis_mansion.
+        id:"idle", //The namespace of the animation to use. Default = idle.
+        progress:X, //The progress the animation already has on the first tick. Default = 0.
+        frozen:1b //Whether or not the animation is frozen. Default = 0b.
+    },
+    no_ai:1b, //Whether this entity's AI is disabled. Default = 0b.
     
     //Ghosts
     spawn:1b, //How this ghost spawns: 0b = 3 second wait before it can spawn, 1b = forced initial spawn, 2b = initially can spawn immediately if under the correct conditions. 3b = initial hiding in furniture, not spawned by player facing. 4b = forced spawn only (initially and subquentially), only a direct spawn tag will spawn this ghost. Default = 0b.
@@ -49,10 +56,10 @@ entity:{
         namespace:"luigis_mansion", //The namespace of the boo. Default = "luigis_mansion".
         id:"boo_b_hatch" //The ID of the boo. Default = "null".
     },
-    name:'JSON', //Name of this boo. Default = '{"translate":"luigis_mansion:entity.boo"}'.
+    name:'JSON', //Name of this boo. Default = '{"type":"translatable","translate":"luigis_mansion:entity.boo"}'.
     say_message:1b, //Whether or not this boo says one of its messages after its appear animation. Default = 0b.
     can_attack:1b, //Whether or not this boo can attack. Default = 0b.
-    show_health:1b, //Whether or not this boo shows health and is affected by the poltergust. Default = 1b.
+    show_health:1b, //Whether or not this boo shows health and is affected by the poltergust. Also applies to King Boo. Default = 1b.
     
     //Items
     variant:1b, //Sets the item variant to spawn, bill: (0b is green, 1b is gold. Default = random).
@@ -94,7 +101,6 @@ entity:{
         },
         left_hinge:1b //If the hinge is on the left of the door itself (your right when facing it). Default = 0b.
     },
-    happy:1b, //Whether or not this toad is happy and not crying. Default = 0b.
     tags:[] //A list of tags to append to the entity's default tags used to target the entity in functions. Default = none.
 }
 ```

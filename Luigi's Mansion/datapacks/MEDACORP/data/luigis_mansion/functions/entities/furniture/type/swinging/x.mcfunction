@@ -18,3 +18,10 @@ scoreboard players set @s[scores={FurnitureXProgress=180}] FurnitureXProgress 0
 execute if entity @s[scores={FurnitureXProgress=0}] run function luigis_mansion:entities/furniture/type/swinging/reached/x
 execute if entity @s[scores={FurnitureXProgress=0}] if score #temp Time matches 0 run scoreboard players reset @s FurnitureXTarget
 scoreboard players reset #temp Time
+
+execute if entity @s[scores={FurnitureXProgress=84,FurnitureXTarget=-100..100}] unless entity @s[scores={FurnitureXTarget=-50..50}] run playsound luigis_mansion:furniture.search.swing block @a[tag=same_room] ~ ~ ~ 1 0.4
+execute if entity @s[scores={FurnitureXProgress=84,FurnitureXTarget=-200..200}] unless entity @s[scores={FurnitureXTarget=-100..100}] run playsound luigis_mansion:furniture.search.swing block @a[tag=same_room] ~ ~ ~ 1 0.6
+execute if entity @s[scores={FurnitureXProgress=84,FurnitureXTarget=-300..300}] unless entity @s[scores={FurnitureXTarget=-200..200}] run playsound luigis_mansion:furniture.search.swing block @a[tag=same_room] ~ ~ ~ 1 0.8
+execute if entity @s[scores={FurnitureXProgress=84}] unless entity @s[scores={FurnitureXTarget=-300..300}] run playsound luigis_mansion:furniture.search.swing block @a[tag=same_room] ~ ~ ~ 1 1
+
+scoreboard players operation @s FurnitureVacuum = @s FurnitureXTarget

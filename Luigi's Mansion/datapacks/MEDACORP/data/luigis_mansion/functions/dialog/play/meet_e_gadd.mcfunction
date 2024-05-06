@@ -76,9 +76,9 @@ execute if score #dialog Dialog matches 68 run teleport @a[tag=walking_player,li
 execute if score #dialog Dialog matches 69 run teleport @a[tag=walking_player,limit=1] 725.5 20 31.2 0 0
 execute if score #dialog Dialog matches 70 run teleport @a[tag=walking_player,limit=1] 725.5 20 31.3 0 0
 execute if score #dialog Dialog matches 71..81 run teleport @a[tag=walking_player,limit=1] 725.5 20 31.4 0 0
-execute if score #dialog Dialog matches 72 run data modify storage luigis_mansion:data entity set value {room:3,can_talk_to:0b,tags:["no_ai","same_room"]}
+execute if score #dialog Dialog matches 72 run data modify storage luigis_mansion:data entity set value {room:3,can_talk_to:0b,no_ai:1b,tags:["same_room"]}
 execute if score #dialog Dialog matches 72 positioned 718 20 35 run function luigis_mansion:spawn_entities/e_gadd
-execute if score #dialog Dialog matches 72 run data modify storage luigis_mansion:data entity set value {room:3,tags:["no_ai","same_room","visible"],animation:{namespace:"luigis_mansion",id:"appear/normal"}}
+execute if score #dialog Dialog matches 72 run data modify storage luigis_mansion:data entity set value {room:3,no_ai:1b,tags:["same_room","visible"],animation:{namespace:"luigis_mansion",id:"appear/normal"}}
 execute if score #dialog Dialog matches 72 positioned 725 20 34.9 run function luigis_mansion:spawn_entities/ghost/gold_ghost
 execute if score #dialog Dialog matches 72 run playsound luigis_mansion:entity.gold_ghost.spawn hostile @a[tag=same_room] 725 20 34.9 1
 execute if score #dialog Dialog matches 72 run teleport @a[tag=same_room] 725.5 20 31.4 facing entity @e[tag=ghost,tag=same_room,limit=1] feet
@@ -166,17 +166,17 @@ execute if score #dialog Dialog matches 1045 if score #players Totals matches 1 
 execute if score #dialog Dialog matches 1045 if score #players Totals matches 2.. run tellraw @a[tag=same_room] {"type":"translatable","translate":"chat.type.text","with":[{"type":"translatable","translate":"luigis_mansion:entity.e_gadd","color":"green"},{"type":"translatable","translate":"luigis_mansion:dialog.meet_e_gadd.6.more"}]}
 execute if score #dialog Dialog matches 1045 at @e[tag=e_gadd,tag=same_room,limit=1] run playsound luigis_mansion:entity.e_gadd.talk.oui_oydohroh_tahmentahkeh neutral @a[tag=same_room] ~ ~ ~ 1
 execute if score #dialog Dialog matches 1187 as @a[tag=same_room,tag=!spectator] run function luigis_mansion:entities/player/animation/set/none
-execute if score #dialog Dialog matches 1187 run data modify storage luigis_mansion:data entity set value {room:3,tags:["no_ai","same_room","visible","ghost_1"],animation:{namespace:"luigis_mansion",id:"appear/beta"}}
+execute if score #dialog Dialog matches 1187 run data modify storage luigis_mansion:data entity set value {room:3,no_ai:1b,tags:["same_room","visible","ghost_1"],animation:{namespace:"luigis_mansion",id:"appear/beta"}}
 execute if score #dialog Dialog matches 1187 positioned 718 20 29 run function luigis_mansion:spawn_entities/ghost/gold_ghost
 execute if score #dialog Dialog matches 1187 run playsound luigis_mansion:entity.gold_ghost.spawn_beta hostile @a[tag=same_room] 718 20 29 1
 execute if score #dialog Dialog matches 1187 as @e[tag=ghost_1,tag=same_room] at @s facing entity @e[tag=e_gadd,tag=same_room,limit=1] feet rotated ~ 0 run teleport @s ~ ~ ~ ~ ~
 execute if score #dialog Dialog matches 1227 run data modify entity @e[tag=ghost_1,tag=same_room,limit=1] data.animation set value {namespace:"luigis_mansion",id:"haunt"}
-execute if score #dialog Dialog matches 1199 run data modify storage luigis_mansion:data entity set value {room:3,tags:["no_ai","same_room","visible","ghost_2"],animation:{namespace:"luigis_mansion",id:"appear/beta"}}
+execute if score #dialog Dialog matches 1199 run data modify storage luigis_mansion:data entity set value {room:3,no_ai:1b,tags:["same_room","visible","ghost_2"],animation:{namespace:"luigis_mansion",id:"appear/beta"}}
 execute if score #dialog Dialog matches 1199 positioned 718 20 26 run function luigis_mansion:spawn_entities/ghost/gold_ghost
 execute if score #dialog Dialog matches 1199 run playsound luigis_mansion:entity.gold_ghost.spawn_beta hostile @a[tag=same_room] 718 20 26 1
 execute if score #dialog Dialog matches 1199 as @e[tag=ghost_2,tag=same_room] at @s facing entity @e[tag=e_gadd,tag=same_room,limit=1] feet rotated ~ 0 run teleport @s ~ ~ ~ ~ ~
 execute if score #dialog Dialog matches 1239 run data modify entity @e[tag=ghost_2,tag=same_room,limit=1] data.animation set value {namespace:"luigis_mansion",id:"haunt"}
-execute if score #dialog Dialog matches 1212 run data modify storage luigis_mansion:data entity set value {room:3,tags:["no_ai","same_room","visible","ghost_3"],animation:{namespace:"luigis_mansion",id:"appear/beta"}}
+execute if score #dialog Dialog matches 1212 run data modify storage luigis_mansion:data entity set value {room:3,no_ai:1b,tags:["same_room","visible","ghost_3"],animation:{namespace:"luigis_mansion",id:"appear/beta"}}
 execute if score #dialog Dialog matches 1212 positioned 720 20 27 run function luigis_mansion:spawn_entities/ghost/gold_ghost
 execute if score #dialog Dialog matches 1212 run playsound luigis_mansion:entity.gold_ghost.spawn_beta hostile @a[tag=same_room] 720 20 27 1
 execute if score #dialog Dialog matches 1212 as @e[tag=ghost_3,tag=same_room] at @s facing entity @e[tag=e_gadd,tag=same_room,limit=1] feet rotated ~ 0 run teleport @s ~ ~ ~ ~ ~

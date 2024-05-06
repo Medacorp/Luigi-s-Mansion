@@ -1,0 +1,1 @@
+data merge entity @s {Pose:{Head:[-30.0f,0.0f,0.0f]}}

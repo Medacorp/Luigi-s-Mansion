@@ -6,8 +6,8 @@ execute store result entity @e[type=minecraft:marker,tag=temp,limit=1] Pos[2] do
 execute at @s[scores={AnimationProgress=1,Sound=0,Shrunk=0},tag=!gooigi] run playsound luigis_mansion:entity.player.hurt_little player @a[tag=same_room] ~ ~ ~ 1
 execute at @s[scores={AnimationProgress=1,Sound=0,Shrunk=1..},tag=!gooigi] run playsound luigis_mansion:entity.player.hurt_little player @a[tag=same_room] ~ ~ ~ 1 2
 scoreboard players set @s[scores={AnimationProgress=1,Sound=0},tag=!gooigi] Sound 20
-execute at @s[scores={AnimationProgress=..9}] facing entity @e[type=minecraft:marker,tag=temp,limit=1] feet rotated ~ ~ run teleport @s ^ ^ ^ ~ ~
-execute at @s[scores={AnimationProgress=10}] facing entity @e[type=minecraft:marker,tag=temp,limit=1] feet rotated ~ 0 run teleport @s ^ ^ ^ ~ ~
+execute at @s[scores={AnimationProgress=..9,TeleportDelayTimer=0}] facing entity @e[type=minecraft:marker,tag=temp,limit=1] feet rotated ~ ~ run teleport @s ^ ^ ^ ~ ~
+execute at @s[scores={AnimationProgress=10,TeleportDelayTimer=0}] facing entity @e[type=minecraft:marker,tag=temp,limit=1] feet rotated ~ 0 run teleport @s ^ ^ ^ ~ ~
 kill @e[type=minecraft:marker,tag=temp,limit=1]
 tag @s add disable_game_boy_horror
 tag @s add disable_interact

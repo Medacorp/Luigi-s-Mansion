@@ -1,8 +1,10 @@
 tag @e[tag=portrificationizing_ghost] add remove_from_existence
-execute if entity @e[tag=e_gadd,tag=portrificationizing,limit=1] run scoreboard players reset @a EGaddGhostPortrificationizerRoomChoice
-scoreboard players set @e[tag=e_gadd,tag=portrificationizing,limit=1] Dialog 0
-tag @e[tag=e_gadd,tag=portrificationizing,limit=1] remove ending
-tag @e[tag=e_gadd,tag=portrificationizing,limit=1] remove portrificationizing
+tag @e[tag=e_gadd,scores={Room=-3}] remove cannot_be_removed
+tag @e[tag=mario,scores={Room=-3}] remove cannot_be_removed
+execute if data storage luigis_mansion:data dialogs[{name:{namespace:"luigis_mansion",id:"underground_lab"}}] run data modify storage luigis_mansion:data dialog set from storage luigis_mansion:data dialogs[{name:{namespace:"luigis_mansion",id:"underground_lab"}}]
+data modify storage luigis_mansion:data dialogs set value []
+execute if data storage luigis_mansion:data dialog run data modify storage luigis_mansion:data dialogs append from storage luigis_mansion:data dialog
+data remove storage luigis_mansion:data dialog
 
 data modify storage luigis_mansion:data macro.index set from storage luigis_mansion:data current_state.current_data.data_index
 function luigis_mansion:reset_mansion with storage luigis_mansion:data current_state.current_data.mansion_id

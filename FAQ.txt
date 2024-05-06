@@ -1,16 +1,20 @@
 Q. Is the map multiplayer compatible?
 A. Absolutely! The map even provides different translation strings based on player count so languages can properly pluralize them.
-It is problematic when ping is too high though, so it's recommended to play LAN if you want to play multiplayer.
+There is, however, an issue with rapid teleportation causing desyncs, see next question.
+
+Q. Why is my movement not registering properly?
+A. This is the problem mentioned above; rapid teleportation is the only way to pull some things off, but it comes at a cost. This cannot be fixed in the map, and is actually a minecraft bug: https://bugs.mojang.com/browse/MC-197855
+Use the Game Boy Horror to set your "Teleport Frequency" setting to a lower value if you're experiencing this.
+
+Q. I'm stuck in the gallery, what do I do?
+A. (No 3DS Remake) Search the angle statue, like E. Gadd says, and his dialog will change allowing you to leave.
+   (3DS Remake) Find the Game Boy Horror part, and talk to E. Gadd again, and another time for an option to leave the gallery.
 
 Q. How do I scan furniture?
-A. 1. Use the Gameboy Horror, and choose the scan furniture option.
-   2. Look at the furniture you want to scan (don't be too close to entities to scan them)
-   3. Use the Gameboy Horror again.
-You cannot scan until you've gotten the Gameboy Horror part installed if you use the 3DS Remake add-on.
-Additionally, there's a map setting (which can be opened via the Gameboy Horror menu) to double-use the Gameboy Horror to go to an option directly, without needing to open chat. This is set to scan by default.
-
-Q. Can I zoom in on the map?
-A. No, this is functionality I haven't added (yet). Only a "focus point" being triggered zooms the map in and out.
+A. 1. Use the Game Boy Horror, and choose the Scan Furniture option.
+   2. Look at the furniture you want to scan.
+   3. Use the Scan Furniture again.
+You cannot scan until you've gotten the Game Boy Horror part installed if you use the 3DS Remake add-on.
 
 Q. How do you deal the most damage to a ghost?
 A. Move away from the ghost quickly and rapidly; just tapping to move backwards should suffice. Don't worry about walls, you'll be kept away from them a little bit so you can still move.
@@ -31,31 +35,22 @@ Q. How do I make grabbing ghosts let go?
 A. Walk in different directions as quickly as possible. Spooky, harmful grabbing ghosts and being frozen will also decrease in duration when doing this.
 
 Q. I can't find one of the Boos!
-A. Go past every room and see if the Gameboy Horror reacts (remember, Boos can only be found in lit rooms). If no room has the Gameboy Horror reacting, make a bug report and provide the file "data/command_storage_luigis_mansion.dat" so it can be investigated.
+A. Go past every room and see if the Game Boy Horror reacts (remember, Boos can only be found in lit rooms). If no room has the Game Boy Horror reacting, make a bug report and provide the file "data/command_storage_luigis_mansion.dat" so it can be investigated.
 
 Q. I installed the 3DS Remake add-on, but I can't do portrait battles!
 A. The portrait battle list only exists once the add-on is installed, the mansions you defeated the portrait ghost in before you installed it won't save the data for something that doesn't exist.
 
 Q. Why can't I trigger the objective for a choice?
-A. 1. (Dialog) The dialog needs to be active to react, if you stop the dialog, the option will get disabled. 
-   2. (Gameboy Horror) Keep the Gameboy Horror selected, deselecting is an indication for being done with the item.
-   3. (Gallery) You can only react to one gallery object at a time.
-   4. (Gooigi) Gooigi cannot speak, other players will have to react.
+A. Gooigi cannot speak, other players will have to react. If you're not using gooigi, make a bug report and provide the world folder (as a zip).
 
-Q. Can I turn off the opening of the Gameboy Horror map when collecting a key?
-A. Yes, go to the map settings (via Gameboy Horror) and click the option to change it.
+Q. Can I turn off the opening of the Game Boy Horror map when collecting a key?
+A. Yes, go to the map settings (via Game Boy Horror) and click the option to change it.
 
 Q. Is this feature missing?
 A. Maybe. If you can see something is definitely missing, feel free to make a bug report.
 
 Q. How did you do this thing?
 A. The entire map and its add-ons are on github, if you wish to understand how I did something, feel free to browse through the functions. If you need further help understanding it, I could explain it if you ask. (Make a discussion topic for this, not a bug report.)
-
-Q. Why is my movement not registering properly?
-A. Rapid teleportation is the only way to pull some things off, but it comes at a cost. This cannot be fixed in the map, and is actually a minecraft bug: https://bugs.mojang.com/browse/MC-197855
-
-Q. Why did my call with E. Gadd end so suddenly?
-A. You hang up on E. Gadd if you deselect the Gameboy Horror. The first person to grab the Gameboy Horror is the only one who can hang up.
 
 Q. Why does the vanilla training room program mention rapidly moving backwards, but the 3DS Remake one not?
 A. The corresponding line in the game ("Tilt the Control Stick in the opposite direction quickly and repeatedly for the best results!") doesn't exist in a similar fashion in the 3DS Remake.

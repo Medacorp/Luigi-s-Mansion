@@ -35,6 +35,6 @@ execute store result score #temp Time if entity @e[tag=this_gooigi]
 execute if entity @s[type=minecraft:player] unless score #temp Time matches 10 run tag @e[tag=this_gooigi] add dead
 scoreboard players reset #temp Time
 execute if entity @s[type=minecraft:player] if entity @e[tag=this_gooigi,limit=1] run scoreboard players set @s ModelTime 0
-execute if entity @s[type=minecraft:player] unless entity @e[tag=this_gooigi,limit=1] run scoreboard players add @s ModelTime 1
+execute if entity @s[type=minecraft:player] unless entity @e[tag=this_gooigi,limit=1] run scoreboard players add @s[tag=!looking_at_map] ModelTime 1
 execute if entity @s[type=minecraft:player] unless entity @e[tag=this_gooigi,limit=1] if entity @s[scores={ModelTime=3..}] run function 3ds_remake:spawn_entities/gooigi/player
 tag @e[tag=this_gooigi] remove this_gooigi

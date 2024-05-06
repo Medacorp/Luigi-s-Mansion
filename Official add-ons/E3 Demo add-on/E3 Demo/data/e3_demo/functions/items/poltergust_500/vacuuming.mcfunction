@@ -10,7 +10,7 @@ execute store result storage luigis_mansion:data macro.id int 1 run scoreboard p
 function e3_demo:items/poltergust_500/attacking_ghost with storage luigis_mansion:data macro
 execute if score #temp GhostCount > @s GhostCount run scoreboard players operation @s GhostCount = #temp GhostCount
 execute if score #temp GhostCount matches 1.. run function e3_demo:items/poltergust_500/get_old_position
-execute if score #temp GhostCount matches 1.. run function e3_demo:items/poltergust_500/face_ghost
+execute if score #temp GhostCount matches 1.. if entity @s[scores={TeleportDelayTimer=0}] run function e3_demo:items/poltergust_500/face_ghost
 execute if score #temp GhostCount matches 1.. at @e[tag=ghost,tag=being_vacuumed,scores={ErrorTime=10..}] run function e3_demo:items/poltergust_500/vacuuming/made_error
 execute if score #temp GhostCount matches 1.. as @e[tag=ghost,tag=being_vacuumed] facing entity @s feet run function e3_demo:items/poltergust_500/vacuuming/ghost
 execute if score #temp GhostCount matches 1.. run scoreboard players set @s[tag=is_pulling] ErrorTime 0

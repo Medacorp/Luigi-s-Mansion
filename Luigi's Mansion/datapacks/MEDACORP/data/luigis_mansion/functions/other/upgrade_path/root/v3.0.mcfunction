@@ -24,15 +24,32 @@ data modify storage luigis_mansion:data current_state.current_data.lowest_diffic
 data modify storage luigis_mansion:data current_state.mansion_data[].lowest_difficulty set value 2
 data modify storage luigis_mansion:data saved_state.mansion_data[].lowest_difficulty set value 2
 data modify storage luigis_mansion:data ghosts_caught set from storage luigis_mansion:data current_state.ghosts_caught
-function luigis_mansion:other/upgrade_path/change_up_ghost_data
+data modify storage luigis_mansion:data new_ghosts_caught set value {total:0,money:{}}
+scoreboard players set #temp Time 0
+function luigis_mansion:other/upgrade_path/root/reduce_ghost_data
 data modify storage luigis_mansion:data current_state.ghosts_caught set from storage luigis_mansion:data new_ghosts_caught
-data remove storage luigis_mansion:data ghosts_caught
-data remove storage luigis_mansion:data new_ghosts_caught
 data modify storage luigis_mansion:data ghosts_caught set from storage luigis_mansion:data saved_state.ghosts_caught
-function luigis_mansion:other/upgrade_path/change_up_ghost_data
+data modify storage luigis_mansion:data new_ghosts_caught set value {total:0,money:{}}
+scoreboard players set #temp Time 0
+function luigis_mansion:other/upgrade_path/root/reduce_ghost_data
 data modify storage luigis_mansion:data saved_state.ghosts_caught set from storage luigis_mansion:data new_ghosts_caught
 data remove storage luigis_mansion:data ghosts_caught
 data remove storage luigis_mansion:data new_ghosts_caught
+data modify storage luigis_mansion:data money_grabbed set from storage luigis_mansion:data current_state.money_grabbed
+data modify storage luigis_mansion:data new_money_grabbed set value {total:0,money:{}}
+scoreboard players set #temp Time 0
+function luigis_mansion:other/upgrade_path/root/reduce_money_data
+data modify storage luigis_mansion:data current_state.money_grabbed set from storage luigis_mansion:data new_money_grabbed
+data modify storage luigis_mansion:data money_grabbed set from storage luigis_mansion:data saved_state.money_grabbed
+data modify storage luigis_mansion:data new_money_grabbed set value {total:0,money:{}}
+scoreboard players set #temp Time 0
+function luigis_mansion:other/upgrade_path/root/reduce_money_data
+data modify storage luigis_mansion:data saved_state.money_grabbed set from storage luigis_mansion:data new_money_grabbed
+data remove storage luigis_mansion:data money_grabbed
+data remove storage luigis_mansion:data new_money_grabbed
+scoreboard players reset #temp Time
+scoreboard players reset #temp2 Time
+scoreboard players reset #temp3 Time
 scoreboard objectives remove AnimationProg
 scoreboard objectives remove Attack
 scoreboard objectives remove BookChoice

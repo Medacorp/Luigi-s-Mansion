@@ -185,6 +185,9 @@ scoreboard objectives add TargetTime dummy
 scoreboard objectives add TargetX dummy
 scoreboard objectives add TargetY dummy
 scoreboard objectives add TargetZ dummy
+scoreboard objectives add TeleportDelay dummy
+scoreboard objectives add TeleportDelaySetting dummy
+scoreboard objectives add TeleportDelayTimer dummy
 scoreboard objectives add Ticking dummy
 scoreboard objectives add Time dummy
 scoreboard objectives add TopVacuumDamage dummy

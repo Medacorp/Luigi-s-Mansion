@@ -26,7 +26,7 @@ data modify storage luigis_mansion:data update_data.ghosts set from storage luig
 data remove storage luigis_mansion:data update_data.new_ghosts
 data modify storage luigis_mansion:data update_data.old_dead_players set from storage luigis_mansion:data update_data.dead_players
 data modify storage luigis_mansion:data update_data.dead_players set value []
-execute if data storage luigis_mansion:data update_data.dead_players[0] run function luigis_mansion:other/upgrade_path/change_dead_player_data
+execute if data storage luigis_mansion:data update_data.dead_players[0] run function luigis_mansion:other/upgrade_path/change_data/dead_players
 data remove storage luigis_mansion:data update_data.old_dead_players
 data modify storage luigis_mansion:data obtained_keys set from storage luigis_mansion:data update_data.obtained_keys
 data modify storage luigis_mansion:data update_data.obtained_keys set value []
@@ -56,7 +56,7 @@ data modify storage luigis_mansion:data update_data.money_grabbed set from stora
 data remove storage luigis_mansion:data money_grabbed
 data remove storage luigis_mansion:data new_money_grabbed
 data modify storage luigis_mansion:data ghosts_caught set from storage luigis_mansion:data update_data.ghosts_caught
-function luigis_mansion:other/upgrade_path/change_up_ghost_data
+function luigis_mansion:other/upgrade_path/change_data/ghosts_caught
 data modify storage luigis_mansion:data update_data.ghosts_caught set from storage luigis_mansion:data new_ghosts_caught
 data remove storage luigis_mansion:data ghosts_caught
 data remove storage luigis_mansion:data new_ghosts_caught

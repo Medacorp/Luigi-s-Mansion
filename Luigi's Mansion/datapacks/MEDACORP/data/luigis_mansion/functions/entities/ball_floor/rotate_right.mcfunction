@@ -10,3 +10,5 @@ execute if entity @s[distance=..1.999999] run scoreboard players set #temp Move 
 execute at @s run teleport @s ~ ~ ~ ~1.025 ~
 execute at @s facing entity @e[tag=target,limit=1] feet rotated ~ 0 run function luigis_mansion:entities/ball_floor/move_forward
 kill @e[tag=target,limit=1,type=minecraft:marker]
+scoreboard players remove @s TeleportDelay 1
+execute if entity @s[scores={TeleportDelay=0..}] run function luigis_mansion:entities/ball_floor/rotate_right

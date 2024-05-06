@@ -9,4 +9,5 @@ execute if entity @s[tag=long_shake,tag=!use_medium_shake,scores={Sound=0}] unle
 execute if entity @s[tag=!long_shake,tag=!use_medium_shake] if data entity @s ArmorItems[3].components."minecraft:custom_data".animation{namespace:"luigis_mansion",id:"idle"} run data modify entity @s ArmorItems[3].components."minecraft:custom_data".animation set value {namespace:"luigis_mansion",id:"short_shake"}
 execute if entity @s[tag=use_medium_shake] if data entity @s ArmorItems[3].components."minecraft:custom_data".animation{namespace:"luigis_mansion",id:"idle"} run data modify entity @s ArmorItems[3].components."minecraft:custom_data".animation set value {namespace:"luigis_mansion",id:"medium_shake"}
 execute if entity @s[tag=long_shake,tag=!use_medium_shake] if data entity @s ArmorItems[3].components."minecraft:custom_data".animation{namespace:"luigis_mansion",id:"idle"} run data modify entity @s ArmorItems[3].components."minecraft:custom_data".animation set value {namespace:"luigis_mansion",id:"long_shake"}
-execute unless entity @s[tag=rolling,scores={FurnitureVacuum=1..}] run tag @s add was_shaking
+execute if entity @s[tag=!long_shake,tag=!shake,tag=was_shaking] run data modify entity @s ArmorItems[3].components."minecraft:custom_data".animation set value {namespace:"luigis_mansion",id:"idle"}
+tag @s add was_shaking

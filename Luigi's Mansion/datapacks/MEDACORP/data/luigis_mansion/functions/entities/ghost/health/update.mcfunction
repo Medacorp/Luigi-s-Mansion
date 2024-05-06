@@ -1,5 +1,5 @@
 scoreboard players set #temp Time 0
-scoreboard players add #temp Health 99
+scoreboard players add #temp Health 98
 scoreboard players operation #temp Health /= #100 Constants
 execute if entity @s[tag=!infinite_health] run tag @e[tag=this_health_display,limit=1] remove infinite_health
 execute unless score @s Health = #temp Health in minecraft:overworld run setblock 0 0 0 minecraft:oak_sign{front_text:{messages:['{"type":"score","score":{"objective":"Health","name":"#temp"},"color":"light_purple"}','{"type":"text","text":""}','{"type":"text","text":""}','{"type":"text","text":""}']}}

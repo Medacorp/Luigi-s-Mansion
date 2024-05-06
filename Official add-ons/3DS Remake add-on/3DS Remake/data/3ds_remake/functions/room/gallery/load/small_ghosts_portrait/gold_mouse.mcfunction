@@ -1,6 +1,2 @@
-execute if data storage luigis_mansion:data current_state.ghosts_caught[0] run function 3ds_remake:room/gallery/check_portrait/small_ghosts/ghost_count/gold_mouse
-execute if data storage luigis_mansion:data current_state.new_ghosts_caught run data modify storage luigis_mansion:data current_state.ghosts_caught set from storage luigis_mansion:data current_state.new_ghosts_caught
-data remove storage luigis_mansion:data current_state.new_ghosts_caught
-execute if score #temp Time matches 1.. run summon minecraft:armor_stand 764 2.2 -45.0 {Marker:1b,Rotation:[-45.0f,0.0f],Small:1b,CustomName:'{"type":"translatable","translate":"luigis_mansion:entity.gold_mouse"}',Invisible:1b,NoGravity:1b,CustomNameVisible:0b,Invulnerable:1b,ArmorItems:[{},{},{},{id:"minecraft:leather_chestplate",count:1,components:{"minecraft:unbreakable":{},"minecraft:damage":1,"minecraft:custom_model_data":13,"minecraft:dyed_color":{rgb:16759040}}}],Pose:{Head:[0.01f,0.0f,0.0f]},DisabledSlots:2039583}
-scoreboard players reset #temp Time
-scoreboard players reset #temp Money
+execute if data storage luigis_mansion:data current_state.ghosts_caught.caught.luigis_mansion.gold_mouse run data modify storage luigis_mansion:data entity set value {room:-5,no_ai:1b,rotation:[-45.0f,0.0f],tags:["visible"],animation:{namespace:"3ds_remake",id:"portrait/gold_mouse",frozen:1b}}
+execute if data storage luigis_mansion:data entity positioned 764 3 -45.6 run function luigis_mansion:spawn_entities/vacuumable/gold_mouse

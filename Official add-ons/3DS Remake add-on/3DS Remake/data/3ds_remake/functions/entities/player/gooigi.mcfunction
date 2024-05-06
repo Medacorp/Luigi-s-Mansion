@@ -16,25 +16,6 @@ execute if entity @s[tag=!spectator] run function 3ds_remake:entities/player/goo
 execute if entity @s[scores={AnimationProgress=1..},tag=idle] unless entity @s[scores={Walk=0,Run=0,Sneak=0},tag=!sneak_pos,tag=!spectator] run function luigis_mansion:entities/player/animation/set/none
 execute if entity @s[scores={AnimationProgress=1..},tag=!idle,tag=!animation_may_move,tag=!using_selection_menu] run function luigis_mansion:entities/player/animation/freeze_player
 
-# Gooigi cannot speak, so he cannot choose
-trigger ClairvoyaChoice add 0
-trigger EGaddCallChoice add 0
-trigger EGaddGalleryChoice add 0
-trigger EGaddGhostPortrificationizerRoomChoice add 0
-trigger EGaddUndergroundLabChoice add 0
-trigger EGaddTrainingRoomChoice add 0
-trigger JarvisChoice add 0
-trigger MansionChoice add 0
-trigger MelodyChoice add 0
-trigger ResetChoice add 0
-trigger Toad1Choice add 0
-trigger Toad2Choice add 0
-trigger Toad3Choice add 0
-trigger Toad4Choice add 0
-trigger Toad5Choice add 0
-trigger TrainingRoomOption add 0
-trigger TwinsChoice add 0
-
 execute if entity @s[tag=death_animation] run function 3ds_remake:entities/player/gooigi_death_animation
 execute if entity @s[tag=spawn_animation] run function 3ds_remake:entities/gooigi/spawn_animation
 

@@ -7,7 +7,7 @@ execute unless entity @s[scores={Room=0}] run tag @s add opening_map
 execute unless entity @s[scores={Room=0}] rotated as @s run function luigis_mansion:spawn_entities/game_boy_horror_location
 execute unless entity @a[tag=looking_at_map,limit=1] unless entity @s[scores={Room=0}] rotated as @s run function luigis_mansion:spawn_entities/game_boy_horror_marker
 execute unless entity @a[tag=looking_at_map,limit=1] unless entity @s[scores={Room=0}] rotated as @s as @e[distance=..1,tag=game_boy_horror_marker,limit=1] positioned as @s run function luigis_mansion:entities/game_boy_horror_marker/tick
-execute if entity @s[scores={Room=..-1}] run function #luigis_mansion:selection_menu/game_boy_horror/map/display/lab
+execute if entity @s[scores={Room=..-1}] run function #luigis_mansion:selection_menu/game_boy_horror/map/lab_warp
 execute if entity @s[scores={Room=1..}] run function luigis_mansion:selection_menu/game_boy_horror/map/display/mansion with storage luigis_mansion:data current_state.current_data.mansion_id
 execute unless entity @s[scores={Room=0}] run tag @s[tag=!cancel] add looking_at_map
 execute unless entity @s[scores={Room=0}] run tag @s[tag=!cancel] add stop_model

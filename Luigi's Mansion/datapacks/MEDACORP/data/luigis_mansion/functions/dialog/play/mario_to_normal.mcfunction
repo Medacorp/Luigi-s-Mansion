@@ -15,13 +15,12 @@ tag @e[tag=mario,tag=same_room,limit=1] remove freeze_animation
 tag @e[tag=mario,tag=portrificationizing,tag=same_room,limit=1] remove no_ai
 execute if score #dialog Dialog matches 1..1103 as @e[tag=e_gadd,tag=same_room,limit=1] at @s facing entity @e[tag=same_room,tag=mario,limit=1] feet run teleport @s ~ ~ ~ ~ ~
 execute if score #dialog Dialog matches 1 run teleport @e[tag=e_gadd,tag=same_room,limit=1] 774 77 -12 90 0
-execute if score #dialog Dialog matches 1 run summon minecraft:armor_stand 770.99 76.47 -12 {Rotation:[-90.0f,0.0f],Pose:{Head:[90.0f,0.0f,0.0f]},Tags:["mario","same_room","portrificationizing","cannot_be_removed"],Marker:1b,Invisible:1b,Silent:1b,ArmorItems:[{},{},{},{id:"minecraft:painting",count:1,components:{"minecraft:custom_model_data":2,"minecraft:custom_data":{entity:{namespace:"luigis_mansion",id:"mario"},mansion:{namespace:"luigis_mansion",id:"empty"}}}}],DisabledSlots:2039583}
-execute if score #dialog Dialog matches 1 run data modify entity @e[tag=mario,tag=portrificationizing,limit=1] ArmorItems[3].components."minecraft:custom_data".mansion set from storage luigis_mansion:data current_state.current_data.mansion_id
+execute if score #dialog Dialog matches 1 run summon minecraft:armor_stand 770.99 76.47 -12 {Rotation:[-90.0f,0.0f],Pose:{Head:[90.0f,0.0f,0.0f]},Tags:["mario","same_room","portrificationizing","cannot_be_removed"],Marker:1b,Invisible:1b,Silent:1b,ArmorItems:[{},{},{},{id:"minecraft:painting",count:1,components:{"minecraft:custom_model_data":2,"minecraft:custom_data":{entity:{namespace:"luigis_mansion",id:"mario"}}}}],DisabledSlots:2039583}
 execute if score #dialog Dialog matches 1 store result score @e[tag=same_room,tag=mario] Room run data get storage luigis_mansion:data dialogs[0].room
 execute if score #dialog Dialog matches 31 as @a[tag=same_room] run function luigis_mansion:other/music/set/non_overwritten_silence
 execute if score #dialog Dialog matches 31 run playsound luigis_mansion:music.mario_to_normal_1 music @a[tag=same_room] ~ ~ ~ 1000
 execute if score #dialog Dialog matches 31 run scoreboard players set @a[tag=same_room] Music 710
-execute if score #dialog Dialog matches 723 run data modify storage luigis_mansion:data entity set value {room:-3,tags:["done_portrificationizing","cannot_be_removed","no_ai"]}
+execute if score #dialog Dialog matches 723 run data modify storage luigis_mansion:data entity set value {room:-3,no_ai:1b,tags:["done_portrificationizing","cannot_be_removed"]}
 execute if score #dialog Dialog matches 723 run data modify storage luigis_mansion:data entity.room set from storage luigis_mansion:data dialogs[0].room
 execute if score #dialog Dialog matches 723 positioned 774 77 20 rotated -180 0 run function luigis_mansion:spawn_entities/mario/normal
 

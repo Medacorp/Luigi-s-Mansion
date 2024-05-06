@@ -1,6 +1,2 @@
-execute if data storage luigis_mansion:data current_state.ghosts_caught[0] run function 3ds_remake:room/gallery/check_portrait/small_ghosts/ghost_count/waiter
-execute if data storage luigis_mansion:data current_state.new_ghosts_caught run data modify storage luigis_mansion:data current_state.ghosts_caught set from storage luigis_mansion:data current_state.new_ghosts_caught
-data remove storage luigis_mansion:data current_state.new_ghosts_caught
-execute if score #temp Time matches 1.. run summon minecraft:armor_stand 762 2 -47.0 {Marker:1b,Rotation:[-130.0f,0.0f],Small:1b,CustomName:'{"type":"translatable","translate":"luigis_mansion:entity.waiter"}',Invisible:1b,NoGravity:1b,CustomNameVisible:0b,Invulnerable:1b,ArmorItems:[{},{},{},{id:"minecraft:diamond_pickaxe",count:1,components:{"minecraft:unbreakable":{},"minecraft:damage":1,"minecraft:custom_model_data":94}}],HandItems:[{id:"minecraft:diamond_pickaxe",count:1,components:{"minecraft:unbreakable":{},"minecraft:damage":2,"minecraft:custom_model_data":95}},{id:"minecraft:diamond_pickaxe",count:1,components:{"minecraft:unbreakable":{},"minecraft:damage":3,"minecraft:custom_model_data":95}}],Pose:{RightArm:[-180.0f,0.0f,0.0f],LeftArm:[-180.0f,0.0f,0.0f],Head:[0.0f,0.0f,0.0f]},DisabledSlots:2039583}
-scoreboard players reset #temp Time
-scoreboard players reset #temp Money
+execute if data storage luigis_mansion:data current_state.ghosts_caught.caught.luigis_mansion.waiter run data modify storage luigis_mansion:data entity set value {room:-5,no_ai:1b,rotation:[-130.0f,0.0f],tags:["visible"],animation:{namespace:"3ds_remake",id:"portrait",frozen:1b}}
+execute if data storage luigis_mansion:data entity positioned 762 2 -47.0 run function luigis_mansion:spawn_entities/ghost/waiter

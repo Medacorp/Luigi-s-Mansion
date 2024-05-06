@@ -11958,6 +11958,14 @@
         },
         {
             "predicate": {
+                "damaged": 0,
+                "damage": 0.0136,
+                "custom_model_data": 91
+            },
+            "model": "luigis_mansion:item/menu/game_boy_horror/show_settings/teleport_frequency"
+        },
+        {
+            "predicate": {
                 "damaged": 1
             },
             "model": "minecraft:item/diamond_pickaxe"

@@ -1,0 +1,1 @@
+$effect give @e[tag=model_piece,tag=$(model)_model,nbt={ArmorItems:[{components:{"minecraft:custom_data":{animation:{namespace:"$(namespace)",id:"$(id)"}}}}]}] minecraft:glowing 1 0 true
