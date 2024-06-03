@@ -13,11 +13,6 @@ execute if entity @s[scores={AnimationProgress=21,Sound=0,Health=41..,Shrunk=1..
 execute if entity @s[scores={AnimationProgress=21,Sound=0,Health=..40,Shrunk=0}] run playsound luigis_mansion:entity.player.hurt_bounce.low_health player @a[tag=same_room] ~ ~ ~ 1
 execute if entity @s[scores={AnimationProgress=21,Sound=0,Health=..40,Shrunk=1..}] run playsound luigis_mansion:entity.player.hurt_bounce.low_health player @a[tag=same_room] ~ ~ ~ 1 2
 scoreboard players set @s[scores={AnimationProgress=21,Sound=0}] Sound 20
-execute if entity @s[scores={AnimationProgress=51,Sound=0,Health=41..,Shrunk=0}] run playsound luigis_mansion:entity.player.recover.high_health player @a[tag=same_room] ~ ~ ~ 1
-execute if entity @s[scores={AnimationProgress=51,Sound=0,Health=41..,Shrunk=1..}] run playsound luigis_mansion:entity.player.recover.high_health player @a[tag=same_room] ~ ~ ~ 1 2
-execute if entity @s[scores={AnimationProgress=51,Sound=0,Health=..40,Shrunk=0}] run playsound luigis_mansion:entity.player.recover.low_health player @a[tag=same_room] ~ ~ ~ 1
-execute if entity @s[scores={AnimationProgress=51,Sound=0,Health=..40,Shrunk=1..}] run playsound luigis_mansion:entity.player.recover.low_health player @a[tag=same_room] ~ ~ ~ 1 2
-scoreboard players set @s[scores={AnimationProgress=51,Sound=0}] Sound 10
 execute at @s[scores={AnimationProgress=..30}] facing entity @e[type=minecraft:marker,tag=temp,limit=1] feet rotated ~ 0 run teleport @s ^ ^ ^-0.16 ~ ~
 
 execute at @s if block ~ ~2 ~ #luigis_mansion:players_ignore unless block ~ ~1.9 ~ #luigis_mansion:players_ignore run teleport @s ~ ~-0.16 ~
@@ -39,4 +34,5 @@ tag @s add disable_game_boy_horror
 tag @s add disable_interact
 tag @s add disable_poltergust
 tag @s add animation_may_move
-execute if entity @s[scores={AnimationProgress=60}] run function luigis_mansion:entities/player/animation/set/none
+execute if entity @s[scores={AnimationProgress=41}] run function luigis_mansion:entities/player/animation/set/get_up
+execute if data storage luigis_mansion:data my_memory.animation{namespace:"luigis_mansion",id:"get_up"} run function luigis_mansion:entities/player/animation/get_up

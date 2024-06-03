@@ -32,7 +32,7 @@ execute if entity @s[scores={AnimationProgress=..9,GrabbedShake=5..}] run scoreb
 execute if entity @s[scores={AnimationProgress=..9}] run tag @s remove struggle
 scoreboard players set @s[scores={AnimationProgress=..9,Invulnerable=6..},tag=harmfull_grab] Invulnerable 5
 execute if entity @s[scores={AnimationProgress=2..9,Invulnerable=0},tag=harmfull_grab] run data modify storage luigis_mansion:data damage set value {amount:1}
-execute if entity @s[scores={AnimationProgress=2..9,Invulnerable=0},tag=harmfull_grab] run data modify storage luigis_mansion:data damage.attacker set from storage luigis_mansion:data my_memory.hurt_by.attacker
+execute if entity @s[scores={AnimationProgress=2..9,Invulnerable=0},tag=harmfull_grab] if data storage luigis_mansion:data my_memory.hurt_by.attacker[0] run data modify storage luigis_mansion:data damage.attacker set from storage luigis_mansion:data my_memory.hurt_by.attacker[0].id
 execute if entity @s[scores={AnimationProgress=2..9,Invulnerable=0},tag=harmfull_grab] run function luigis_mansion:entities/player/damage
 execute if entity @s[scores={AnimationProgress=..9}] run effect give @s minecraft:slowness 1 0 true
 execute if entity @s[scores={AnimationProgress=10}] run effect clear @s minecraft:slowness

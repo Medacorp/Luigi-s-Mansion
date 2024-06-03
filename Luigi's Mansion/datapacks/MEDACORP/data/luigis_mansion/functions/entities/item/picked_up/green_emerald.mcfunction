@@ -1,1 +1,1 @@
-function luigis_mansion:items/money/big {namespace:"luigis_mansion",id:"green_emerald",value:800}
+function luigis_mansion:items/money {namespace:"luigis_mansion",id:"green_emerald",value:800}

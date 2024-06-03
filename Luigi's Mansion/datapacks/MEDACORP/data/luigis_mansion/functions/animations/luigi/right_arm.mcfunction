@@ -22,10 +22,10 @@ execute if entity @s[tag=!poltergust_grabbed] unless score #mirrored Selected ma
 execute if entity @s[tag=poltergust_grabbed] unless score #mirrored Selected matches 1 if data storage luigis_mansion:data luigi.mainhand.components."minecraft:custom_data".is_nozzle run data modify entity @s[tag=held_item,tag=!stop_model] ArmorItems[3] set from storage luigis_mansion:data luigi.mainhand
 
 # Move animations
-execute if entity @s[tag=sneaking,tag=!stop_model,tag=!riding_poltergust,tag=!holding_poltergust,tag=!low_health] run function luigis_mansion:animations/luigi/sneak/right_arm
-execute if entity @s[tag=walking,tag=!stop_model,tag=!riding_poltergust,tag=!holding_poltergust,tag=!low_health] run function luigis_mansion:animations/luigi/walk/right_arm
-execute if entity @s[tag=running,tag=!stop_model,tag=!riding_poltergust,tag=!holding_poltergust,tag=!low_health] run function luigis_mansion:animations/luigi/run/right_arm
-execute if entity @s[tag=swimming,tag=!stop_model,tag=!riding_poltergust,tag=!holding_poltergust] run function luigis_mansion:animations/luigi/swim/right_arm
+execute if entity @s[tag=sneaking,tag=!stop_model,tag=!riding_poltergust,tag=!holding_poltergust,tag=!low_health,scores={AnimationProgress=0}] run function luigis_mansion:animations/luigi/sneak/right_arm
+execute if entity @s[tag=walking,tag=!stop_model,tag=!riding_poltergust,tag=!holding_poltergust,tag=!low_health,scores={AnimationProgress=0}] run function luigis_mansion:animations/luigi/walk/right_arm
+execute if entity @s[tag=running,tag=!stop_model,tag=!riding_poltergust,tag=!holding_poltergust,tag=!low_health,scores={AnimationProgress=0}] run function luigis_mansion:animations/luigi/run/right_arm
+execute if entity @s[tag=swimming,tag=!stop_model,tag=!riding_poltergust,tag=!holding_poltergust,scores={AnimationProgress=0}] run function luigis_mansion:animations/luigi/swim/right_arm
 
 $execute at @s run function $(namespace):animations/luigi/$(id)/right_arm
 

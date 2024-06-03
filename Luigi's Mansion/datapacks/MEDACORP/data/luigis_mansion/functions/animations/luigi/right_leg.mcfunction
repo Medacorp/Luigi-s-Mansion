@@ -13,9 +13,9 @@ data modify entity @s[tag=!was_flipped,tag=flipped_gravity] Pose.Head[2] set val
 # Move animations
 data modify entity @s[tag=riding_poltergust] Pose.Head[0] set value -30.0f
 data modify entity @s[tag=riding_poltergust] Pose.Head[1] set value 30.0f
-execute if entity @s[tag=sneaking,tag=!stop_model,tag=!riding_poltergust] run function luigis_mansion:animations/luigi/sneak/right_leg
-execute if entity @s[tag=walking,tag=!stop_model,tag=!riding_poltergust] run function luigis_mansion:animations/luigi/walk/right_leg
-execute if entity @s[tag=running,tag=!stop_model,tag=!riding_poltergust] run function luigis_mansion:animations/luigi/run/right_leg
-execute if entity @s[tag=swimming,tag=!stop_model,tag=!riding_poltergust] run function luigis_mansion:animations/luigi/swim/right_leg
+execute if entity @s[tag=sneaking,tag=!stop_model,tag=!riding_poltergust,scores={AnimationProgress=0}] run function luigis_mansion:animations/luigi/sneak/right_leg
+execute if entity @s[tag=walking,tag=!stop_model,tag=!riding_poltergust,scores={AnimationProgress=0}] run function luigis_mansion:animations/luigi/walk/right_leg
+execute if entity @s[tag=running,tag=!stop_model,tag=!riding_poltergust,scores={AnimationProgress=0}] run function luigis_mansion:animations/luigi/run/right_leg
+execute if entity @s[tag=swimming,tag=!stop_model,tag=!riding_poltergust,scores={AnimationProgress=0}] run function luigis_mansion:animations/luigi/swim/right_leg
 
 $execute at @s run function $(namespace):animations/luigi/$(id)/right_leg

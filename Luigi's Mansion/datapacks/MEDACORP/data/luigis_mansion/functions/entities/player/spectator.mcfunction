@@ -13,8 +13,8 @@ scoreboard players set @s[scores={Offline=-1}] Offline 0
 
 scoreboard players operation #temp ID = @s ID
 execute if entity @s[tag=dead_player] as @e[tag=death_location] if score @s ID = #temp ID run tag @s add this_death_location
-execute if entity @s[tag=dead_player] if score #can_revive Selected matches 1 unless entity @a[tag=this_death_location,limit=1] run scoreboard players set @s Room 0
-execute if entity @s[tag=dead_player] if score #can_revive Selected matches 1 unless entity @a[tag=this_death_location,limit=1] in minecraft:overworld positioned 758 90 8.0 rotated -90 0 run function luigis_mansion:spawn_entities/death_location
+execute if entity @s[tag=dead_player] if score #can_revive Selected matches 1 unless entity @e[tag=this_death_location,limit=1] run scoreboard players set @s Room 0
+execute if entity @s[tag=dead_player] if score #can_revive Selected matches 1 unless entity @e[tag=this_death_location,limit=1] in minecraft:overworld positioned 769 89.9275 9.0 rotated -90 0 run function luigis_mansion:spawn_entities/death_location
 scoreboard players reset #temp ID
 tag @a[tag=this_death_location] remove this_death_location
 

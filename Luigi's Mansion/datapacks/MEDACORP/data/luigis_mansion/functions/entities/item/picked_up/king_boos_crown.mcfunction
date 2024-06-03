@@ -1,2 +1,2 @@
-function luigis_mansion:items/money/big {namespace:"luigis_mansion",id:"red_diamond",value:5}
+function luigis_mansion:items/money {namespace:"luigis_mansion",id:"red_diamond",value:5}
 data modify storage luigis_mansion:data current_state.current_data.obtained_items merge value {king_boos_crown:1b}

@@ -1,5 +1,5 @@
 function luigis_mansion:entities/player/memory/get with entity @s
-execute unless data storage luigis_mansion:data my_memory.animation at @s run function #luigis_mansion:items/flashlight/effects
+execute unless data storage luigis_mansion:data my_memory.animation{namespace:"luigis_mansion",id:"low_health_idle"} unless data storage luigis_mansion:data my_memory.animation{namespace:"luigis_mansion",id:"cold_room_idle"} unless data storage luigis_mansion:data my_memory.animation{namespace:"luigis_mansion",id:"high_health_idle"} at @s run function #luigis_mansion:items/flashlight/effects
 execute if data storage luigis_mansion:data my_memory.animation{namespace:"luigis_mansion",id:"low_health_idle"} at @s rotated ~100 -10 run function #luigis_mansion:items/flashlight/effects
 execute if data storage luigis_mansion:data my_memory.animation{namespace:"luigis_mansion",id:"cold_room_idle"} at @s rotated ~160 20 run function #luigis_mansion:items/flashlight/effects
 execute if data storage luigis_mansion:data my_memory.animation{namespace:"luigis_mansion",id:"high_health_idle"} at @s[scores={AnimationProgress=0}] rotated ~ 0 run function #luigis_mansion:items/flashlight/effects

@@ -1,5 +1,4 @@
-scoreboard players operation @s AnimationProgress = @a[tag=this_luigi,limit=1] IdleTime
-scoreboard players add @s AnimationProgress 41
+scoreboard players add @s AnimationProgress 1
 data merge entity @s[scores={AnimationProgress=1}] {Pose:{Head:[0.0f,0.0f,0.01f]}}
 data merge entity @s[scores={AnimationProgress=1},tag=flipped_gravity] {Pose:{Head:[0.0f,0.0f,-180.0f]}}
 execute unless score #mirrored Selected matches 1 run data merge entity @s[scores={AnimationProgress=21}] {Pose:{Head:[10.0f,0.0f,-5.0f]}}
@@ -12,3 +11,4 @@ execute if entity @s[scores={AnimationProgress=1..20}] if score #mirrored Select
 execute store result score #temp Time run data get entity @s Pose.Head[2] 100
 execute if entity @s[scores={AnimationProgress=1..20}] store result entity @s Pose.Head[2] float 0.01 run scoreboard players remove #temp Time 25
 scoreboard players reset #temp Time
+scoreboard players set @s[scores={AnimationProgress=40}] AnimationProgress 20

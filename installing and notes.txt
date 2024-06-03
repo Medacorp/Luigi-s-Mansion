@@ -1,10 +1,8 @@
 == NOTICE ==
-This map requires 1.20.3.
+This map requires 1.20.5.
 
 Bugs should be reported on the github here: https://github.com/Medacorp/Luigi-s-Mansion/issues
 Please do look if it's already reported.
-
-Do NOT turn chat off, or you will get stuck. The map requires players to click on certain chat messages to advance. 
 
 == Known issues ==
 
@@ -18,10 +16,11 @@ Do NOT turn chat off, or you will get stuck. The map requires players to click o
 ** Clockwork Soldiers
 ** Furniture ambience, changing state
 ** Ghost Portrificationizer
-* Lots of entities in rooms with mirrors cause quite some lag (just grab the money quickly while I try to find ways to reduce the lag)
+* Lots of entities in rooms with mirrors cause quite some lag, I'm looking into ways to optimize it. Until I find a way to do so, you can turn mirror reflections off in the settings.
+* Furniture is not the most optimized part of the map, I'm looking into ways to optimize it.
 * Some instances of rapid teleportation may make client-server communication difficult. (Such as being pulled by a ghost)
 ** https://bugs.mojang.com/browse/MC-197855 was made about this, but Mojang decided not to track this as a bug. A rewrite of the system was planned when Mojang was last asked.
-** Until Mojang adresses this issue, it's recommended to play this map in singleplayer
+** Until Mojang properly adresses this issue, simply change the teleportation frequency setting in the map to a less frequent value. You'll sacrifice smoothness over playability then.
 
 == Supported languages ==
 English (US) is the base language of the map, all other languages are worked on via Crowdin. (https://crowdin.com/project/medacorp-projects)
@@ -40,7 +39,7 @@ The map is set to normal when downloaded.
 * Normal = accurate pulling accuracy (diagonal still counts as pulling)
            score x1
 * Hard = strict pulling accuracy (only a slim line backwards is counted as pulling)
-         short stun timer (maximum of 1 second rather than 4/10(portrait ghosts))
+         short stun timer (maximum of 1 second rather than 4 seconds (10 for portrait ghosts))
          portrait ghosts need to be stunned before vacuuming
          score x2
 
@@ -60,17 +59,13 @@ The map is set to normal when downloaded.
 
 == How to update ==
 The best way to update your current save is as follows:
-1. Go to the Underground Lab.
-2. Talk to E. Gadd.
-3. Select the normal mansion.
-4. Wait for E. Gadd to go back inside the lab.
-5. Have every player in the world be in the Boo woods. Being in the lab or mansion may result in some broken behavior.
-6. Close the world.
-7. Drop the updated world onto the old world, overwriting all files it clashes with.
+1. Close the world.
+2. Delete the "datapacks" folder of the old world.
+3. Drop the updated world onto the old world, overwriting all files it clashes with.
 This will replace everything but advancements, player/entity data, statistics, scoreboard and command storage, keeping all progress you have.
 If you were affected by a softlock, contact Dhranios on the Medacorp discord: https://discord.gg/Nn6wScEc88
-8. Open the world.
-9. Set the difficulty back to the desired value (it'll have reverted to normal).
+4. Open the world.
+5. Set the difficulty back to the desired value (it'll have reverted to normal).
 
 == Installing add-ons ==
 Add-ons are downloaded with their installation guides included.

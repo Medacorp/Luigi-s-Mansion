@@ -16,7 +16,7 @@ execute at @s[scores={AnimationProgress=70..}] anchored eyes positioned ^ ^ ^ ru
 execute at @s[scores={AnimationProgress=70..72}] anchored eyes run particle minecraft:item{item:{id:"minecraft:diamond_pickaxe",components:{"minecraft:unbreakable":{},"minecraft:damage":4,"minecraft:custom_model_data":38}}} ^ ^ ^ 0.3 0.3 0.3 0 50 force @a[tag=same_room]
 scoreboard players set @s[scores={AnimationProgress=..70,Invulnerable=6..}] Invulnerable 5
 execute at @s[scores={AnimationProgress=..70,Invulnerable=0}] run data modify storage luigis_mansion:data damage set value {amount:1}
-execute if entity @s[scores={AnimationProgress=..70,Invulnerable=0}] run data modify storage luigis_mansion:data damage.attacker set from storage luigis_mansion:data my_memory.hurt_by.attacker
+execute if entity @s[scores={AnimationProgress=..70,Invulnerable=0}] if data storage luigis_mansion:data my_memory.hurt_by.attacker[0] run data modify storage luigis_mansion:data damage.attacker set from storage luigis_mansion:data my_memory.hurt_by.attacker[0].id
 execute at @s[scores={AnimationProgress=..70,Invulnerable=0}] run function luigis_mansion:entities/player/damage
 scoreboard players set @s[scores={AnimationProgress=70}] Invulnerable 70
 execute at @s[scores={AnimationProgress=73,Sound=0,Health=41..,Shrunk=0}] run playsound luigis_mansion:entity.player.sigh.high_health player @a[tag=same_room] ~ ~ ~ 1

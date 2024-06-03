@@ -1,2 +1,2 @@
 scoreboard players set @s AnimationProgress 0
-execute unless entity @s[scores={FurnitureVacuum=1..},nbt={ArmorItems:[{components:{"minecraft:custom_data":{furniture_type:"rolling"}}}]}] run data modify entity @s Pose.Head set from entity @s ArmorItems[3].components."minecraft:custom_data".default_orientation
+execute unless entity @s[scores={FurnitureVacuum=1..},nbt={ArmorItems:[{components:{"minecraft:custom_data":{furniture_type:"rolling"}}}]}] run data modify entity @s Pose set from entity @s ArmorItems[3].components."minecraft:custom_data".default_orientation

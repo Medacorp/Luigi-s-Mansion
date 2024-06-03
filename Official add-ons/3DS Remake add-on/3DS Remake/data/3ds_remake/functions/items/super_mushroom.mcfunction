@@ -1,3 +1,6 @@
+tag @s add me
+execute unless data storage luigis_mansion:data current_state.current_data{no_collect_animation:["3ds_remake:super_mushroom"]} as @a[tag=collector,limit=1] run function luigis_mansion:entities/player/animation/set/collect_item with entity @e[tag=me,limit=1] ArmorItems[3]
+tag @s remove me
 execute as @a[tag=collector,scores={Health=41..99,Shrunk=0},tag=!gooigi,limit=1] unless score @s Health = @s MaxHealth run playsound luigis_mansion:entity.player.healed.high_health player @a[tag=same_room] ~ ~ ~ 1
 execute as @a[tag=collector,scores={Health=41..99,Shrunk=1..},tag=!gooigi,limit=1] unless score @s Health = @s MaxHealth run playsound luigis_mansion:entity.player.healed.high_health player @a[tag=same_room] ~ ~ ~ 1 2
 execute as @a[tag=collector,scores={Health=..40,Shrunk=0},tag=!gooigi,limit=1] unless score @s Health = @s MaxHealth run playsound luigis_mansion:entity.player.healed.low_health player @a[tag=same_room] ~ ~ ~ 1

@@ -1,1 +1,1 @@
-function luigis_mansion:items/money/small {namespace:"luigis_mansion",id:"gold_bar",value:100}
+function luigis_mansion:items/money {namespace:"luigis_mansion",id:"gold_bar",value:100}

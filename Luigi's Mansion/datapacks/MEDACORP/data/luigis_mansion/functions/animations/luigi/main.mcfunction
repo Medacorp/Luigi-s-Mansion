@@ -4,14 +4,14 @@ execute if data storage luigis_mansion:data luigi.mirror.z store result score @s
 #to remove
 execute if data storage luigis_mansion:data luigi.mirror{mirror_set_by_furniture_entity:1b} run tag @s add mirror_set_by_furniture_entity
 #/to remove
-execute if entity @s[tag=was_sneaking,tag=!was_swimming,tag=!riding_poltergust] unless entity @s[scores={AnimationProgress=1..}] unless data storage luigis_mansion:data luigi{tags:["sneaking"]} run function luigis_mansion:animations/luigi/reset_pose
-execute if entity @s[tag=was_walking,tag=!was_swimming,tag=!riding_poltergust] unless entity @s[scores={AnimationProgress=1..}] unless data storage luigis_mansion:data luigi{tags:["walking"]} run function luigis_mansion:animations/luigi/reset_pose
-execute if entity @s[tag=was_running,tag=!was_swimming,tag=!riding_poltergust] unless entity @s[scores={AnimationProgress=1..}] unless data storage luigis_mansion:data luigi{tags:["running"]} run function luigis_mansion:animations/luigi/reset_pose
-execute if entity @s[tag=was_swimming] unless data storage luigis_mansion:data luigi{tags:["swimming"]} run function luigis_mansion:animations/luigi/reset_pose
-execute if entity @s[scores={AnimationProgress=0},tag=was_swimming] store result entity @s Pose.Head[0] float 1 run scoreboard players get @s IncreaseAmount
-execute if entity @s[tag=!was_swimming] if data storage luigis_mansion:data luigi{tags:["swimming"]} run function luigis_mansion:animations/luigi/reset_pose
-execute if entity @s[tag=!was_riding_poltergust] if data storage luigis_mansion:data luigi{tags:["riding_poltergust"]} run function luigis_mansion:animations/luigi/reset_pose
-execute if entity @s[tag=was_riding_poltergust] unless data storage luigis_mansion:data luigi{tags:["riding_poltergust"]} run function luigis_mansion:animations/luigi/reset_pose
+execute if entity @s[tag=was_sneaking,tag=!was_swimming,tag=!riding_poltergust] if data storage luigis_mansion:data luigi{alive:1b} unless entity @s[scores={AnimationProgress=1..}] unless data storage luigis_mansion:data luigi{tags:["sneaking"]} run function luigis_mansion:animations/luigi/reset_pose
+execute if entity @s[tag=was_walking,tag=!was_swimming,tag=!riding_poltergust] if data storage luigis_mansion:data luigi{alive:1b} unless entity @s[scores={AnimationProgress=1..}] unless data storage luigis_mansion:data luigi{tags:["walking"]} run function luigis_mansion:animations/luigi/reset_pose
+execute if entity @s[tag=was_running,tag=!was_swimming,tag=!riding_poltergust] if data storage luigis_mansion:data luigi{alive:1b} unless entity @s[scores={AnimationProgress=1..}] unless data storage luigis_mansion:data luigi{tags:["running"]} run function luigis_mansion:animations/luigi/reset_pose
+execute if entity @s[tag=was_swimming] if data storage luigis_mansion:data luigi{alive:1b} unless data storage luigis_mansion:data luigi{tags:["swimming"]} run function luigis_mansion:animations/luigi/reset_pose
+execute if entity @s[scores={AnimationProgress=0},tag=was_swimming] if data storage luigis_mansion:data luigi{alive:1b} store result entity @s Pose.Head[0] float 1 run scoreboard players get @s IncreaseAmount
+execute if entity @s[tag=!was_swimming] if data storage luigis_mansion:data luigi{alive:1b} if data storage luigis_mansion:data luigi{tags:["swimming"]} run function luigis_mansion:animations/luigi/reset_pose
+execute if entity @s[tag=!was_riding_poltergust] if data storage luigis_mansion:data luigi{alive:1b} if data storage luigis_mansion:data luigi{tags:["riding_poltergust"]} run function luigis_mansion:animations/luigi/reset_pose
+execute if entity @s[tag=was_riding_poltergust] if data storage luigis_mansion:data luigi{alive:1b} unless data storage luigis_mansion:data luigi{tags:["riding_poltergust"]} run function luigis_mansion:animations/luigi/reset_pose
 execute if entity @s[tag=!death_animation] if data storage luigis_mansion:data luigi{alive:0b} run function luigis_mansion:animations/luigi/reset_pose
 execute if entity @s[tag=death_animation] if data storage luigis_mansion:data luigi{alive:1b} run function luigis_mansion:animations/luigi/reset_pose
 execute unless data entity @s ArmorItems[3].count run data modify entity @s ArmorItems[3] set value {id:"minecraft:stone_button",count:1}
@@ -67,7 +67,7 @@ tag @s[tag=flipped_gravity] add was_flipped
 tag @s[tag=!flipped_gravity] remove was_flipped
 tag @s[tag=flipped_gravity] remove flipped_gravity
 tag @s[tag=holding_poltergust] remove holding_poltergust
-tag @s[tag=death_animation] remove death_animation
+execute if data storage luigis_mansion:data luigi{alive:1b} run tag @s[tag=death_animation] remove death_animation
 tag @s[tag=revive_animation] remove revive_animation
 tag @s[tag=stop_model] remove stop_model
 tag @s[tag=poltergust_grabbed] remove poltergust_grabbed

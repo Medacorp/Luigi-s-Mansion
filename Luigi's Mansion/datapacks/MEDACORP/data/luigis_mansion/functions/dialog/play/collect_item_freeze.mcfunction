@@ -1,3 +1,3 @@
 scoreboard players add #dialog Dialog 1
-execute as @e[nbt={ArmorItems:[{components:{"minecraft:custom_data":{entity:{namespace:"luigis_mansion",id:"item"}}}}]},tag=same_room,limit=1] run function luigis_mansion:dialog/play/collect_item_freeze/not_frozen_item with entity @s ArmorItems[3].components."minecraft:custom_data".item
+execute as @e[nbt={ArmorItems:[{components:{"minecraft:custom_data":{entity:{namespace:"luigis_mansion",id:"item"}}}}]},tag=!model_piece,tag=same_room,limit=1] run function luigis_mansion:dialog/play/collect_item_freeze/not_frozen_item with entity @s ArmorItems[3].components."minecraft:custom_data".item
 execute if score #dialog Dialog matches 70 run scoreboard players set #dialog Dialog -1

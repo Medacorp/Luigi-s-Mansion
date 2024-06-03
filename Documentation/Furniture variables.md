@@ -50,13 +50,13 @@ furniture:{
         * 'JSON', //Message as a result from GBH scan. Gooigi scan always results in the "......." string.
         * "warp", //Warps the scanner on GBH scan if they're not Gooigi, not in a dialog, and the can_warp global variable is turned on (if conditions are not met, will send the message "Huh...?" instead). Gooigi scan always results in the "......." string.
         * "", //Prevents GBH scan from passing through, but has no result.
-        * "spawn_ghost", //Spawns the ghost positioned in the furniture.
+        * "spawn_ghost", //Spawns the ghost hiding in this furniture.
     
     //non-default setup
     <type>_elemental_source:{ //Elemental source data, can only be applied to furniture supporting that elemental type. Not provided means it's not an elemental source. Default = none.
         always_spawn:1b, //When set the elemental ghost spawns regardless of distance. Default = 0b.
         must_vacuum:1b, //When set the elemental ghost only pops up when vacuuming nearby. Ignored if always_spawn is set. Default = 0b.
-        must_be_searched:1b, //When set the elemental ghost only pops up when the furniture has triggered it's searched animation (ignored if it has none, or it is disabled). Default = 0b.
+        must_be_searched:1b, //When set the elemental ghost only pops up when the furniture has triggered it's searched animation (ignored if it has no search animation, or it is disabled). Default = 0b.
         timer:1b //When set it turns the spawning back on after 30 seconds of being disabled. Default = 0b.
         cannot_disable:1b //When set prevents being disabled. Default = 0b.
     },
@@ -67,7 +67,7 @@ furniture:{
         cast_shadow:1b //Whether the light source creates shadows. Default = 0b.
     },
     mirror_reflection:1b, //Whether the mirror will actually reflect the room, otherwise gets a solid glass texture. Valid for mirrors only. Default = 1b. Forced to 0b if the yaw rotation is not a multiple of 90, or pose pitch has a non-0 value.
-    no_spawn_sound:1b, //Whether the unsearched room clear chest sound is disabled, searched room clear chests always have it disabled, regardless of this value. Valid for room clear chests only. Default = 0b.
+    no_spawn_sound:1b, //Whether the unsearched room clear chest's spawn sound is disabled, searched room clear chests always have it disabled, regardless of this value. Valid for room clear chests only. Default = 0b.
     hitbox:{ //The size of the hitbox, only applies to and required for scan areas.
         type:"standing", //How the hitbox is aligned to the spawn position, "standing" is bottom aligned, "hanging" is top aligned. Default = centered.
         radius:X, //A ball hitbox, value is the radius in tenths of a block.
@@ -84,8 +84,8 @@ furniture:{
     candle_flames:[ //Variables for the flames this candlabra has, one entry per flame. Default = empty object per flame.
         {
             lit:1b, //Whether this flame is lit. If this candle flame is also a fire elemental source, its lit state will match whether it can spawn fire elemental ghosts. Default = 0b.
-            type:"red", //Whether this flame is red, purple or incense. Incense flames react differently to elements, not extinguishing, but drawing the flame to the origin. Default = red.
-            cannot_extinguish:1b, //Whether this flame can be turned off by vacuum, dust and ice (water will still turn it off). Default = 0b. Not applicable to incense flames.
+            type:"red", //Whether this flame is red, purple or incense. Incense flames react differently to the vacuum, not extinguishing, but pulling the incense to the poltergust. Default = red.
+            cannot_extinguish:1b, //Whether this flame cannot be turned off by vacuum, dust and ice (water will still turn it off). Default = 0b. Not applicable to incense flames.
             always_burn:1b, //Whether this flame can be turned off by anything at all. Default = 0b. Not applicable to incense flames.
             fire_elemental_source:{}, //See <type>_elemental_source, above. Not provided means it's not an elemental source. Default = none.
             tags:[] //A list of tags to append to the flame's default tags, used to target the flame in functions. Default = none.
@@ -105,12 +105,12 @@ furniture:{
         blocked:1b, //How the door is blocked, 0b = not, 1b = blockade, 2b = arena blockade, 3b = barricade, 4b = uninteractable. Default = 0b.
         burning:"extinguish_kitchen_door", //Only if the door is burning, the save data field to write on extinguish. If it's already written, the door won't burn. Default = none.
         key:"parlor", //What key this door needs. Default = none.
-        go_through_command:"<command>", //A command this door needs to run at the moment of warping the player. Used by the front door and some special cases. Default = none.
+        go_through_command:"<command>", //A command this door needs to run at the moment of warping the player as the player. Used by the front door and some special cases. Default = none.
         other_end:{ //Coordinates of the door on the other side to trigger opening animation for; does not affect warping. Default = none.
             dimension:"luigis_mansion:normal", //The dimension of the other door. Default = the dimension of this door.
-            x:X, //The integer X coordinate
-            y:X, //The integer Y coordinate
-            z:X //The integer Z coordinate
+            x:X, //The integer/double X coordinate
+            y:X, //The integer/double Y coordinate
+            z:X //The integer/double Z coordinate
         }
     },
     room:X, //Room number that this furniture is in. Default = room number of whoever is @s on function call, if absent = 0.
@@ -122,9 +122,9 @@ furniture:{
 ```
 furniture:{
     gallery_portrait:{ //Used only by gallery portraits if the 3DS Remake add-on is installed. If not all the fields are present this gallery portrait's portrait battles are disabled.
-        x:X, //The integer X coordinate to return to when the portrait battle ends.
-        y:X, //The integer Y coordinate to return to when the portrait battle ends.
-        z:X //The integer Z coordinate to return to when the portrait battle ends.
+        x:X, //The integer/double X coordinate to return to when the portrait battle ends.
+        y:X, //The integer/double Y coordinate to return to when the portrait battle ends.
+        z:X //The integer/double Z coordinate to return to when the portrait battle ends.
         x_rotation:X //The X rotation to return to when the portrait battle ends.
         x_rotation:Y //The Y rotation to return to when the portrait battle ends.
     }

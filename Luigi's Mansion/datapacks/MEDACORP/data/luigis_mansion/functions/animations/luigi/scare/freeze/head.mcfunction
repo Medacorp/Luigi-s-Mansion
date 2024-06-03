@@ -59,3 +59,4 @@ data merge entity @s[scores={AnimationProgress=100}] {Pose:{Head:[0.0f,0.0f,0.01
 data merge entity @s[scores={AnimationProgress=100},tag=flipped_gravity] {Pose:{Head:[0.0f,0.0f,-180.0f]}}
 scoreboard players set @s[scores={AnimationProgress=100..}] AnimationProgress 0
 tag @s add scared_head
+function luigis_mansion:animations/luigi/sync_head

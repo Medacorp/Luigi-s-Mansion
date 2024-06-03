@@ -1,15 +1,7 @@
+tag @s add me
+execute unless data storage luigis_mansion:data current_state.current_data{no_collect_animation:["3ds_remake:game_boy_horror_part"]} as @a[tag=collector,limit=1] run function luigis_mansion:entities/player/animation/set/collect_item with entity @e[tag=me,limit=1] ArmorItems[3]
+tag @s remove me
 data merge storage 3ds_remake:data {obtained_gameboy_horror_part:1b}
 execute if score #players Totals matches 1 run tellraw @a {"type":"translatable","translate":"chat.type.text","with":[{"type":"translatable","translate":"luigis_mansion:entity.mansion","color":"green"},{"type":"translatable","translate":"3ds_remake:message.player.game_boy_horror_part"}]}
 execute if score #players Totals matches 2.. run tellraw @a {"type":"translatable","translate":"chat.type.text","with":[{"type":"translatable","translate":"luigis_mansion:entity.mansion","color":"green"},{"type":"translatable","translate":"3ds_remake:message.player.game_boy_horror_part.more"}]}
 playsound 3ds_remake:item.game_boy_horror_part.obtain player @a[tag=same_room] ~ ~ ~ 1
-playsound luigis_mansion:item.item.get music @a[tag=same_room] ~ ~ ~ 1
-execute if entity @a[tag=collector,tag=!gooigi,limit=1,scores={Health=41..,Shrunk=0}] run playsound luigis_mansion:entity.player.show_item.high_health player @a[tag=same_room] ~ ~ ~ 1
-execute if entity @a[tag=collector,tag=!gooigi,limit=1,scores={Health=41..,Shrunk=1..}] run playsound luigis_mansion:entity.player.show_item.high_health player @a[tag=same_room] ~ ~ ~ 1 2
-execute if entity @a[tag=collector,tag=!gooigi,limit=1,scores={Health=..40,Shrunk=0}] run playsound luigis_mansion:entity.player.show_item.low_health player @a[tag=same_room] ~ ~ ~ 1
-execute if entity @a[tag=collector,tag=!gooigi,limit=1,scores={Health=..40,Shrunk=1..}] run playsound luigis_mansion:entity.player.show_item.low_health player @a[tag=same_room] ~ ~ ~ 1 2
-execute as @a[tag=collector,tag=!gooigi,tag=looking_at_map,limit=1,scores={Health=41..,Shrunk=0}] at @s run playsound luigis_mansion:entity.player.show_item.high_health player @s ~ ~ ~ 1
-execute as @a[tag=collector,tag=!gooigi,tag=looking_at_map,limit=1,scores={Health=41..,Shrunk=1..}] at @s run playsound luigis_mansion:entity.player.show_item.high_health player @s ~ ~ ~ 1 2
-execute as @a[tag=collector,tag=!gooigi,tag=looking_at_map,limit=1,scores={Health=..40,Shrunk=0}] at @s run playsound luigis_mansion:entity.player.show_item.low_health player @s ~ ~ ~ 1
-execute as @a[tag=collector,tag=!gooigi,tag=looking_at_map,limit=1,scores={Health=..40,Shrunk=1..}] at @s run playsound luigis_mansion:entity.player.show_item.low_health player @s ~ ~ ~ 1 2
-scoreboard players set @a[tag=collector,tag=!gooigi,limit=1] Sound 70
-scoreboard players set @a[tag=same_room,scores={Music=..70}] Music 70

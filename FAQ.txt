@@ -26,7 +26,7 @@ A. They don't, there's a few reasons they may have escaped:
    1. You got (non-pulling) damage.
    2. You didn't move away from the ghost while vacuuming for a total of 10 times.
    3. You moved beyond 7 blocks of distance away from the ghost (so it is out of poltergust reach).
-   3. The ghost entered a second flee state which forces an escape after 2.5 seconds.
+   4. The ghost entered a second flee state which forces an escape after 2.5 seconds.
 
 Q. Can I disregard current data somehow?
 A. Of course, just talk to E. Gadd to load your old data.
@@ -38,10 +38,10 @@ Q. I can't find one of the Boos!
 A. Go past every room and see if the Game Boy Horror reacts (remember, Boos can only be found in lit rooms). If no room has the Game Boy Horror reacting, make a bug report and provide the file "data/command_storage_luigis_mansion.dat" so it can be investigated.
 
 Q. I installed the 3DS Remake add-on, but I can't do portrait battles!
-A. The portrait battle list only exists once the add-on is installed, the mansions you defeated the portrait ghost in before you installed it won't save the data for something that doesn't exist.
+A. The portrait battle list only exists once the 3DS Remake add-on is installed, the mansions you defeated the portrait ghost in before you installed it won't save the data for something that doesn't exist.
 
-Q. Why can't I trigger the objective for a choice?
-A. Gooigi cannot speak, other players will have to react. If you're not using gooigi, make a bug report and provide the world folder (as a zip).
+Q. Why doesn't the option to select a choice in a dialog work?
+A. Gooigi cannot speak, other players will have to react instead. If you're not using gooigi, make a bug report and provide the world folder (as a zip).
 
 Q. Can I turn off the opening of the Game Boy Horror map when collecting a key?
 A. Yes, go to the map settings (via Game Boy Horror) and click the option to change it.
@@ -59,15 +59,18 @@ Q. Why doesn't the room clear? No ghost is appearing.
 A. 1. You may need to figure out a puzzle before the ghosts appear.
    2. It may be you're standing in the exact spot the ghost wants to appear in, making you prevent its appearing.
    3. Make sure to be close to and have your back to every place at least twice, ghosts move around the room a few seconds after they vanish.
+   4. A ghost may be hiding inside furniture, search it and it will appear.
 
 Q. Why are the rooms so high? 
 A. The rooms are horizontally a bit bigger than in the original game, compared to Luigi; the rooms were made taller to make it not look as stretched.
+This will probably be adressed in a future map update.
 
 Q. Where did the mansion go?
 A. As E. Gadd tells you, it vanished in the night. If you wish to enter the mansion, talk to E. Gadd in the lab again.
 
 Q. I got lost in the Boo Woods!
-A. ... Not very clever... The Boo woods are generated automatically in new chunks. They're endless. To find your way back, head to X=770 Z=8 to find the mansion's front gate.
+A. ... Not very clever... The Boo woods are generated automatically in new chunks. They're endless.
+If you cannot find your way back, leave and re-enter the world, it'll warp you near the path of the mansion if you were over 400 blocks away from it.
 
 Q. How do I unlock amiibos from the 3DS Remake and other add-ons?
 A. The amiibos are unlocked as you clear the trophy tasks.

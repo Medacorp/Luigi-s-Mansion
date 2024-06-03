@@ -1,0 +1,3 @@
+execute unless score #mirrored Selected matches 1 run function luigis_mansion:animations/luigi/collect_item/normal/left_arm
+execute if score #mirrored Selected matches 1 if entity @s[tag=!held_item] run function luigis_mansion:animations/luigi/collect_item/mirrored/left_arm
+execute if score #mirrored Selected matches 1 if entity @s[tag=held_item] run function luigis_mansion:animations/luigi/collect_item/mirrored/item

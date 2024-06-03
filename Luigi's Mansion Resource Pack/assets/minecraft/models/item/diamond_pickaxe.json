@@ -11966,6 +11966,22 @@
         },
         {
             "predicate": {
+                "damaged": 0,
+                "damage": 0.0136,
+                "custom_model_data": 92
+            },
+            "model": "luigis_mansion:item/menu/game_boy_horror/show_settings/global_mirror_reflections_off"
+        },
+        {
+            "predicate": {
+                "damaged": 0,
+                "damage": 0.0136,
+                "custom_model_data": 93
+            },
+            "model": "luigis_mansion:item/menu/game_boy_horror/show_settings/global_mirror_reflections_on"
+        },
+        {
+            "predicate": {
                 "damaged": 1
             },
             "model": "minecraft:item/diamond_pickaxe"

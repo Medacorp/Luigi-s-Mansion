@@ -12,6 +12,8 @@ execute if entity @s[scores={ActionTime=1}] positioned ^ ^ ^0.8 as @e[distance=.
 execute if entity @s[scores={ActionTime=1}] positioned ^ ^ ^0.8 run scoreboard players operation @s GrabbedID = @a[tag=!spectator,distance=..0.8,tag=!grabbed,limit=1] ID
 execute if entity @s[scores={GrabbedID=-2147483648..}] run scoreboard players operation #temp ID = @s GrabbedID
 execute if entity @s[scores={GrabbedID=-2147483648..,ActionTime=1..20}] as @a if score @s ID = #temp ID run tag @s add still_grabbed
+execute if entity @s[scores={GrabbedID=-2147483648..,ActionTime=1..20}] as @a[tag=flipped_gravity] if score @s ID = #temp ID run tag @s add flipped_gravity
+execute if entity @s[scores={GrabbedID=-2147483648..,ActionTime=1..20}] as @a[tag=!flipped_gravity] if score @s ID = #temp ID run tag @s remove flipped_gravity
 execute if entity @s[scores={GrabbedID=-2147483648..,ActionTime=21..}] as @a[tag=grabbed] if score @s ID = #temp ID run tag @s add still_grabbed
 execute if entity @s[scores={GrabbedID=-2147483648..}] if entity @a[tag=still_grabbed,limit=1] as @e[tag=chest] if score @s ID = #temp ID run tag @s add grabbed_model
 execute if entity @s[scores={ActionTime=20}] run data modify storage luigis_mansion:data damage set value {method:{namespace:"luigis_mansion",id:"grabbed"},animation:{namespace:"luigis_mansion",id:"knockback/harmless_grab"}}

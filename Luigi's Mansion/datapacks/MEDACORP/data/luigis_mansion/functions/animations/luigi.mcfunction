@@ -13,7 +13,7 @@ execute if entity @s[scores={MirrorZ=-2147483648..}] store result storage luigis
 #to remove
 execute store result storage luigis_mansion:data luigi.mirror.mirror_set_by_furniture_entity byte 1 if entity @s[tag=mirror_set_by_furniture_entity]
 #/to remove
-execute store result storage luigis_mansion:data luigi.alive byte 1 if entity @s[scores={Health=1..}]
+execute store result storage luigis_mansion:data luigi.alive byte 1 if entity @s[scores={Health=1..},gamemode=!spectator]
 execute store result storage luigis_mansion:data luigi.reset_rotation byte 1 if entity @s[tag=reset_rotation,tag=!stop_model]
 execute store result storage luigis_mansion:data luigi.shrunk byte 1 if entity @s[scores={Shrunk=1..}]
 execute store result storage luigis_mansion:data luigi.swimming byte 1 if entity @s[tag=swimming]

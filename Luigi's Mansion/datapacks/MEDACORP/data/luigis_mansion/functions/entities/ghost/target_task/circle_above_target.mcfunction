@@ -1,6 +1,7 @@
 data modify entity @s data.target_pos set from entity @e[tag=target,limit=1] Pos
 execute store result score #temp Time run data get entity @s data.target_pos[1] 100
-scoreboard players add #temp Time 400
+execute if entity @s[tag=!flipped_gravity] run scoreboard players add #temp Time 400
+execute if entity @s[tag=flipped_gravity] run scoreboard players remove #temp Time 400
 execute store result score #temp2 Time run data get entity @s Pos[1] 100
 scoreboard players operation #temp2 Time -= #temp Time
 execute unless score #temp2 Time matches -100..100 run data modify entity @s data.target_pos set from entity @s Pos

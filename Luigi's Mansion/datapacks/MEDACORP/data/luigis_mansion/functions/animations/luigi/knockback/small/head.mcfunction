@@ -19,3 +19,4 @@ teleport @s[scores={AnimationProgress=8},tag=shrunk] ^ ^ ^0.05 ~ ~
 teleport @s[scores={AnimationProgress=9},tag=shrunk] ^ ^ ^0.025 ~ ~
 scoreboard players set @s[scores={AnimationProgress=10..}] AnimationProgress 0
 tag @s add scared_head
+function luigis_mansion:animations/luigi/sync_head

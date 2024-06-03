@@ -27,6 +27,7 @@ execute unless entity @s[scores={RotationDifference=-50000..50000},tag=!stop_mod
 scoreboard players remove @s[scores={PlayerRotation=360000..}] PlayerRotation 360000
 scoreboard players add @s[scores={PlayerRotation=..0}] PlayerRotation 360000
 execute store result entity @s[tag=!stop_model,tag=!moving_backwards] Rotation[0] float 0.001 run scoreboard players get @s PlayerRotation
+execute if data storage luigis_mansion:data luigi{alive:0b} run teleport @s ~ ~ ~ ~ ~
 tag @s remove moving_backwards
 
 # Move with
@@ -40,6 +41,5 @@ execute rotated as @s run teleport @s[tag=!stop_model,tag=flipped_gravity,tag=!s
 execute rotated as @s run teleport @s[tag=!stop_model,tag=flipped_gravity,tag=sneak_pos,tag=shrunk] ^ ^-0.945 ^-0.125
 
 execute unless data storage luigis_mansion:data luigi{swimming:0b,gliding:0b} run teleport @s ~ ~-1 ~
-execute unless data storage luigis_mansion:data luigi{swimming:0b,gliding:0b} if entity @s[tag=!stop_model] run data modify entity @s Rotation[1] set from entity @a[tag=this_luigi,limit=1] Rotation[1]
-execute unless data storage luigis_mansion:data luigi{swimming:0b,gliding:0b} if entity @s[tag=!stop_model] run data modify entity @s Rotation[0] set from entity @a[tag=this_luigi,limit=1] Rotation[0]
+execute unless data storage luigis_mansion:data luigi{swimming:0b,gliding:0b} if entity @s[tag=!stop_model] run data modify entity @s Rotation set from entity @a[tag=this_luigi,limit=1] Rotation
 execute if data storage luigis_mansion:data luigi{swimming:0b,gliding:0b} if entity @s[tag=!stop_model] run data modify entity @s Rotation[1] set value 0.0f

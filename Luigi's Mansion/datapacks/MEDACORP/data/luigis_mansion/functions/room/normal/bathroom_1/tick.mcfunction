@@ -5,7 +5,7 @@ scoreboard players set @a[x=648,y=10,z=15,dx=12,dy=7,dz=14] Room 16
 scoreboard players set #temp Room 16
 #/todelete
 
-execute as @e[scores={Room=16}] unless entity @s[type=!minecraft:armor_stand,type=!minecraft:item_frame] run scoreboard players set @s MirrorX 649
+execute as @e[scores={Room=16}] unless entity @s[type=!minecraft:armor_stand,type=!minecraft:item_frame] if score #global_mirror_reflections Selected matches 1 run scoreboard players set @s MirrorX 649
 
 execute as @a[scores={Room=16}] run function luigis_mansion:room/normal/bathroom_1/tick_per_player
 

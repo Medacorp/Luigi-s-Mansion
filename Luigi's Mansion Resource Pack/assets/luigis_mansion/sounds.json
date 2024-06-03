@@ -9744,6 +9744,14 @@
             }
         ]
     },
+    "item.item.get_orchestra": {
+        "sounds": [
+            {
+                "name": "luigis_mansion:item/get_orchestra",
+                "stream": false
+            }
+        ]
+    },
     "item.key.bounce": {
         "sounds": [
             {
@@ -9752,15 +9760,6 @@
             }
         ],
         "subtitle": "luigis_mansion:subtitles.item.key.bounce"
-    },
-    "item.key.get_area": {
-        "sounds": [
-            {
-                "name": "luigis_mansion:item/key/get_area",
-                "stream": false
-            }
-        ],
-        "subtitle": "luigis_mansion:subtitles.item.key.get_area"
     },
     "item.key.grab": {
         "sounds": [

@@ -1,7 +1,6 @@
 3.0:
-WARNING! When updating an old save version, be sure to:
-1. delete the entire contents of the save's "datapacks" folder before drag-and-droping updating, or the map will malfunction
-2. follow the "How to update" steps, or you'll be softlocked in whatever room you were in or be brought to the wrong dimension
+WARNING! When updating an old save version, be sure to follow the "How to update" steps in the "installing and notes.txt" file before drag-and-drop updating, or the map will malfunction
+* Updated "installing and notes.txt"
 * Renamed the data packs/add-ons
 ** "Luigi's Mansion" data pack renamed to "MEDACORP"
 ** "Luigi's Mansion 3DS Remake" data pack and namespace renamed to "3DS Remake"
@@ -10,9 +9,10 @@ WARNING! When updating an old save version, be sure to:
 * Added death messages
 * Added revive messages
 * Added difficulty effects; the higher the difficulty, the harder; total score gets a multiplier based on the lowest selected difficulty in the mansion
+* Added warp back to mansion path upon re-entering the world if you're too far away from the mansion.
 * Changed E. Gadd model
 * Changed Toad model
-* changed ghosts to be always be fully lit
+* Changed ghosts to be always be fully lit
 * Rewrote a lot
 * Bug fixes
 

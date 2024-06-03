@@ -7,7 +7,7 @@ entity:{
     //Interaction
     scan_message:{ //The message spoken when scanning this entity.
         message:..., //See furniture variable scan_message; "spawn_ghost" not accepted.
-        sender:"scanner", //Optional, who speaks when scanning this entity. If set to "scanner", and the scan is from Gooigi, sends the usual "......" message instead. Default = me; only used if message is 'JSON'.
+        sender:"scanner", //Optional, who speaks when scanning this entity. If set to "scanner", and the scan is from Gooigi, sends the usual "......" message instead. Default = "me"; only used if message is 'JSON'.
         plural_message:'JSON' //Optional, the message used when more than 1 player is present; only used if sender is set to "me" and message is 'JSON'.
     }, 
     can_talk_to:1b, //Whether this entity can be talked to. Default = 1b for Toad and E. Gadd, and 0b for everything else.
@@ -25,7 +25,7 @@ entity:{
     no_ai:1b, //Whether this entity's AI is disabled. Default = 0b.
     
     //Ghosts
-    spawn:1b, //How this ghost spawns: 0b = 3 second wait before it can spawn, 1b = forced initial spawn, 2b = initially can spawn immediately if under the correct conditions. 3b = initial hiding in furniture, not spawned by player facing. 4b = forced spawn only (initially and subquentially), only a direct spawn tag will spawn this ghost. Default = 0b.
+    spawn:1b, //How this ghost spawns: 0b = 3 second wait before it can spawn, 1b = forced initial spawn, 2b = initially can spawn immediately if under the correct conditions. 3b = initially hiding in furniture, not spawned by player facing. 4b = forced spawn only (initially and subquentially), only a direct spawn tag will spawn this ghost. Default = 0b.
     disappear_on_vanish:1b, //Whether this ghost disappears when it vanishes. Default = 1b for speedy spirits and 0b for everything else.
     appear_type:"<type>", //Ghost appear type to use, differs per ghost, see IDs in use for valid values.
     attack_type:"<type>", //Ghost attack type to use, differs per ghost, see IDs in use for valid values.
@@ -44,11 +44,11 @@ entity:{
     vanish_time:X, //How many ticks the ghost can stay in the world, haunting, but not attacking, laughing, complaining, being collided with, etc. before it vanishes. -1 means never.
     damage:{ //Damage values the ghost uses in its functions.
         <type>:X, //The amount of damage dealt. Type is usually collision and attack (also used by created projectiles), but can be other values.
-        breathe_fire:X, //Bowser's breathe fire attack and resulting burning floors
-        vacuum:X, //Bowser's vacuum attack
-        tail:X, //Bowser's tail attack
-        spike_ball:X, //Bowser's spike balls' explosion and resulting burning floor
-        spit_ice:X //Bowser's spit ice attack (when decapitated)
+        breathe_fire:X, //Bowser's breathe fire attack and resulting burning floors.
+        vacuum:X, //Bowser's vacuum attack.
+        tail:X, //Bowser's tail attack.
+        spike_ball:X, //Bowser's spike balls' explosion and resulting burning floor.
+        spit_ice:X //Bowser's spit ice attack (when decapitated).
     },
     
     //Boos

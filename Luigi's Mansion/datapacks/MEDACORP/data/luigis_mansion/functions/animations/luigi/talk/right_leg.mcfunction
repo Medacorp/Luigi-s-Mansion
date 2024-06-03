@@ -1,2 +1,2 @@
-execute if entity @s[tag=low_health] run function luigis_mansion:animations/luigi/talk/low_health/right_arm
-execute if entity @s[tag=!low_health] run function luigis_mansion:animations/luigi/talk/high_health/right_arm
+execute if entity @s[tag=low_health] run function luigis_mansion:animations/luigi/talk/low_health/right_leg
+execute if entity @s[tag=!low_health] run function luigis_mansion:animations/luigi/talk/high_health/right_leg

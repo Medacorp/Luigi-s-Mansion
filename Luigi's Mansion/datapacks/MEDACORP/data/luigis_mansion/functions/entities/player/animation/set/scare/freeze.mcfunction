@@ -1,7 +1,7 @@
 execute if data storage luigis_mansion:data my_memory run tag @s add keep_memory
 execute if entity @s[tag=!keep_memory] run function luigis_mansion:entities/player/memory/get with entity @s
 execute unless entity @s[scores={AnimationProgress=1..},tag=!idle] if entity @s[tag=looking_at_map] run function luigis_mansion:selection_menu/game_boy_horror/exit
-execute unless entity @s[scores={AnimationProgress=1..},tag=!idle] unless data storage luigis_mansion:data my_memory.animation{namespace:"luigis_mansion",id:"scare/freeze"} run function luigis_mansion:entities/player/animation/set/none
+execute unless entity @s[scores={AnimationProgress=1..},tag=!idle] unless data storage luigis_mansion:data my_memory.animation{namespace:"luigis_mansion",id:"scare/freeze"} unless data storage luigis_mansion:data my_memory.animation{namespace:"luigis_mansion",id:"scare/bash"} run function luigis_mansion:entities/player/animation/set/none
 execute unless entity @s[scores={AnimationProgress=1..},tag=!idle] unless data storage luigis_mansion:data my_memory.animation{namespace:"luigis_mansion",id:"scare/freeze"} run effect give @s minecraft:slowness 1 9 true
 execute unless entity @s[scores={AnimationProgress=1..},tag=!idle] unless data storage luigis_mansion:data my_memory.animation{namespace:"luigis_mansion",id:"scare/freeze"} run scoreboard players reset @s MaxHealthTime
 execute unless entity @s[scores={AnimationProgress=1..},tag=!idle] unless data storage luigis_mansion:data my_memory.animation{namespace:"luigis_mansion",id:"scare/freeze"} run scoreboard players set @s Sound 0

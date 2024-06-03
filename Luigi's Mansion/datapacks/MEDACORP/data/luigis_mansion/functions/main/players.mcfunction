@@ -60,7 +60,8 @@ tag @s[scores={Walk=1..},tag=!looking_at_map] add walking
 tag @s[scores={WalkOnWater=1..},tag=!looking_at_map] add walking
 tag @s[scores={WalkUnderWater=1..},tag=!looking_at_map] add walking
 execute if entity @s[nbt={OnGround:0b},tag=!flipped_gravity,tag=!looking_at_map] if block ~ ~-0.01 ~ #luigis_mansion:ghosts_ignore run tag @s add walking
-execute if entity @s[nbt={OnGround:0b},tag=flipped_gravity,tag=!looking_at_map] if block ~ ~1.8 ~ #luigis_mansion:ghosts_ignore run tag @s add walking
+execute if entity @s[nbt={OnGround:0b},tag=flipped_gravity,tag=!looking_at_map,scores={Shrunk=0}] if block ~ ~1.8 ~ #luigis_mansion:ghosts_ignore run tag @s add walking
+execute if entity @s[nbt={OnGround:0b},tag=flipped_gravity,tag=!looking_at_map,scores={Shrunk=1..}] if block ~ ~0.9 ~ #luigis_mansion:ghosts_ignore run tag @s add walking
 execute if entity @s[nbt={OnGround:0b},tag=flipped_gravity,tag=!looking_at_map] unless score @s PositionX = @s OtherX run tag @s add walking
 execute if entity @s[nbt={OnGround:0b},tag=flipped_gravity,tag=!looking_at_map] unless score @s PositionZ = @s OtherZ run tag @s add walking
 execute if entity @s[scores={Room=0},tag=walking,tag=!played_opening_music] run function luigis_mansion:other/play_opening_music

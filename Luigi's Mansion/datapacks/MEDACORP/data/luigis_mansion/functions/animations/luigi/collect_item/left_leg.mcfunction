@@ -1,0 +1,2 @@
+execute unless score #mirrored Selected matches 1 run function luigis_mansion:animations/luigi/collect_item/normal/left_leg
+execute if score #mirrored Selected matches 1 run function luigis_mansion:animations/luigi/collect_item/mirrored/left_leg
