@@ -11,8 +11,6 @@ execute as @a[scores={Room=72}] run function 3ds_remake:room/hidden/secret_altar
 
 function #3ds_remake:room/hidden/secret_altar/interactions/room
 
-execute if entity @e[x=636.5,y=94,z=-17.5,distance=..0.7,type=minecraft:item_frame,nbt=!{Item:{}},limit=1] run function 3ds_remake:room/hidden/secret_altar/grab_painting
-
 execute if entity @a[tag=!pause_dialog,scores={Room=72},tag=!spectator,limit=1] run function 3ds_remake:room/hidden/secret_altar/ghosts
 
 execute as @a[x=648.5,y=93,z=-9.5,distance=..0.7,tag=!spectator,limit=1] unless data storage luigis_mansion:data current_state.current_data.technical_data{saw_mario_again:1b} unless data storage luigis_mansion:data dialogs[{room:72}] run function 3ds_remake:room/hidden/secret_altar/look_at_marios_painting

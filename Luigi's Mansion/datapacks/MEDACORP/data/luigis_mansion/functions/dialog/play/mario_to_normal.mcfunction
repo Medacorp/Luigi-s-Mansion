@@ -1,6 +1,6 @@
 execute if score #dialog Dialog matches 1364 if entity @a[tag=same_room,tag=next_dialog_line,limit=1] run scoreboard players add #dialog Dialog 1
 execute if score #dialog Dialog matches 725..1363 run scoreboard players add #dialog Dialog 1
-execute if score #dialog Dialog matches 724 if entity @a[tag=!spectator,distance=..2] run scoreboard players add #dialog Dialog 1
+execute if score #dialog Dialog matches 724 if entity @a[x=774.5,y=77,z=20.5,tag=!spectator,distance=..2] run scoreboard players add #dialog Dialog 1
 execute if score #dialog Dialog matches ..723 run scoreboard players add #dialog Dialog 1
 execute if score #dialog Dialog matches ..724 if entity @a[tag=same_room,tag=skip_dialog,limit=1] run scoreboard players set #dialog Dialog 1363
 execute if score #dialog Dialog matches 725..1362 if entity @a[tag=same_room,tag=skip_dialog,limit=1] run scoreboard players set #dialog Dialog 1363
@@ -15,10 +15,10 @@ tag @e[tag=mario,tag=same_room,limit=1] remove freeze_animation
 tag @e[tag=mario,tag=portrificationizing,tag=same_room,limit=1] remove no_ai
 execute if score #dialog Dialog matches 1..1103 as @e[tag=e_gadd,tag=same_room,limit=1] at @s facing entity @e[tag=same_room,tag=mario,limit=1] feet run teleport @s ~ ~ ~ ~ ~
 execute if score #dialog Dialog matches 1 run teleport @e[tag=e_gadd,tag=same_room,limit=1] 774 77 -12 90 0
-execute if score #dialog Dialog matches 1 run summon minecraft:armor_stand 770.99 76.47 -12 {Rotation:[-90.0f,0.0f],Pose:{Head:[90.0f,0.0f,0.0f]},Tags:["mario","same_room","portrificationizing","cannot_be_removed"],Marker:1b,Invisible:1b,Silent:1b,ArmorItems:[{},{},{},{id:"minecraft:painting",count:1,components:{"minecraft:custom_model_data":2,"minecraft:custom_data":{entity:{namespace:"luigis_mansion",id:"mario"}}}}],DisabledSlots:2039583}
+execute if score #dialog Dialog matches 1 run summon minecraft:armor_stand 771.01 76.47 -12 {Rotation:[-90.0f,0.0f],Pose:{Head:[0.0f,-180.0f,0.0f]},Tags:["mario","same_room","portrificationizing","cannot_be_removed"],Marker:1b,Invisible:1b,Silent:1b,ArmorItems:[{},{},{},{id:"minecraft:diamond_pickaxe",count:1,components:{"minecraft:custom_data":{entity:{namespace:"luigis_mansion",id:"mario"},mansion:{namespace:"luigis_mansion",id:"empty"}},"minecraft:unbreakable":{},"minecraft:damage":5,"minecraft:custom_model_data":32}}],DisabledSlots:2039583}
 execute if score #dialog Dialog matches 1 store result score @e[tag=same_room,tag=mario] Room run data get storage luigis_mansion:data dialogs[0].room
-execute if score #dialog Dialog matches 31 as @a[tag=same_room] run function luigis_mansion:other/music/set/non_overwritten_silence
-execute if score #dialog Dialog matches 31 run playsound luigis_mansion:music.mario_to_normal_1 music @a[tag=same_room] ~ ~ ~ 1000
+execute if score #dialog Dialog matches 30 as @a[tag=same_room] run function luigis_mansion:other/music/set/non_overwritten_silence
+execute if score #dialog Dialog matches 31 as @a[tag=same_room] at @s run playsound luigis_mansion:music.mario_to_normal_1 music @s ~ ~ ~ 1000
 execute if score #dialog Dialog matches 31 run scoreboard players set @a[tag=same_room] Music 710
 execute if score #dialog Dialog matches 723 run data modify storage luigis_mansion:data entity set value {room:-3,no_ai:1b,tags:["done_portrificationizing","cannot_be_removed"]}
 execute if score #dialog Dialog matches 723 run data modify storage luigis_mansion:data entity.room set from storage luigis_mansion:data dialogs[0].room
@@ -69,6 +69,7 @@ execute if score #dialog Dialog matches 1363 run function luigis_mansion:room/cl
 execute if score #dialog Dialog matches 1363 run function luigis_mansion:other/delete_current_mansion_data
 #save?
 execute if score #dialog Dialog matches 1365 run tag @a add show_credits
+execute if score #dialog Dialog matches 1365 as @a[tag=same_room] run function luigis_mansion:other/music/set/silence
 execute if score #dialog Dialog matches 1365 as @a[tag=same_room] run function luigis_mansion:other/music/set/credits
 execute if score #dialog Dialog matches 1365 run tag @e[tag=e_gadd,tag=same_room,limit=1] add can_talk_to
 execute if score #dialog Dialog matches 1365 run tag @e[tag=e_gadd,tag=same_room,limit=1] remove cannot_be_removed
