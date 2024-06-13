@@ -1,9 +1,10 @@
 {
     "pack": {
-        "pack_format": 32,
-        "supported_formats": [32,32],
+        "pack_format": 34,
+        "supported_formats": [34, 34],
         "description": {
-			"type": "translatable", "translate": "luigis_mansion:resource_pack.description",
+			"type": "translatable",
+            "translate": "luigis_mansion:resource_pack.description",
 			"fallback": "Luigi's Mansion resource pack"
 		}
     }

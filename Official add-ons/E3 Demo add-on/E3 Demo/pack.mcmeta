@@ -1,9 +1,10 @@
 {
     "pack": {
-        "pack_format": 41,
-        "supported_formats": [41,41],
+        "pack_format": 48,
+        "supported_formats": [48, 48],
         "description": {
-			"type": "translatable", "translate": "e3_demo:data_pack.description"
+			"type": "translatable",
+            "translate": "e3_demo:data_pack.description"
 		}
     }
 }
