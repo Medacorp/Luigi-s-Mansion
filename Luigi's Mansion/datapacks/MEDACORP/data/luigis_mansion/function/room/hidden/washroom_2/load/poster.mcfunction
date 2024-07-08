@@ -4,4 +4,4 @@ summon minecraft:item_frame 662 23 -22 {Facing:5b,Silent:1b,Invulnerable:1b,Item
 summon minecraft:item_frame 662 23 -21 {Facing:5b,Silent:1b,Invulnerable:1b,Item:{id:"minecraft:filled_map",count:1,components:{"minecraft:map_id":326}},CustomName:'{"type":"translatable","translate":"luigis_mansion:furniture.painting"}',Invisible:1b,Fixed:1b}
 summon minecraft:item_frame 662 22 -22 {Facing:5b,Silent:1b,Invulnerable:1b,Item:{id:"minecraft:filled_map",count:1,components:{"minecraft:map_id":327}},CustomName:'{"type":"translatable","translate":"luigis_mansion:furniture.painting"}',Invisible:1b,Fixed:1b}
 summon minecraft:item_frame 662 22 -21 {Facing:5b,Silent:1b,Invulnerable:1b,Item:{id:"minecraft:filled_map",count:1,components:{"minecraft:map_id":328}},CustomName:'{"type":"translatable","translate":"luigis_mansion:furniture.painting"}',Invisible:1b,Fixed:1b}
-scoreboard players set @e[x=662.5,y=23.0,z=-22.0,distance=..2,type=minecraft:item_frame] Room 42
+scoreboard players set @e[x=662.5,y=23.0,z=-22.0,distance=..3,type=minecraft:item_frame] Room 42

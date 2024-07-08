@@ -1,3 +1,4 @@
+tag @s[scores={ChangedMansion=1,Room=0}] add remove_from_existence
 tag @s[tag=remove_from_existence,tag=cannot_be_removed] remove remove_from_existence
 
 function luigis_mansion:main/find_hitters
@@ -35,6 +36,7 @@ execute if entity @s[type=minecraft:item] run function luigis_mansion:main/items
 
 # Fix multiple lightning loading in
 execute if entity @s[type=minecraft:lightning_bolt] run kill @e[type=minecraft:lightning_bolt,distance=0.1..]
+execute if entity @s[type=minecraft:lightning_bolt] run kill @e[tag=lightning]
 
 execute if entity @s[tag=!furniture] store result score @s PositionX run data get entity @s Pos[0] 10
 execute if entity @s[tag=!furniture] store result score @s PositionY run data get entity @s Pos[1] 10

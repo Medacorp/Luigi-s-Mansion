@@ -4,7 +4,9 @@ execute at @s positioned ~ ~0.01 ~ align y run teleport @s ~ ~ ~ ~ 0
 scoreboard players set @s Time 0
 scoreboard players set @s[tag=!no_hidden_move] Time 40
 tag @s[tag=disappear_on_vanish] add remove_from_existence
-scoreboard players set @s SpawnTime 200
+scoreboard players set @s[tag=!no_spawn_cooldown] SpawnTime 200
+scoreboard players set @s[tag=no_spawn_cooldown] SpawnTime 0
+tag @s[tag=no_spawn_cooldown] add can_spawn
 scoreboard players set @s ActionTime 0
 scoreboard players set @s ErrorTime 0
 scoreboard players set @s TargetTask 0
@@ -17,6 +19,7 @@ scoreboard players operation @s LastHealth = @s Health
 data modify entity @s data.attacked_by set value []
 tag @s remove disappear
 tag @s remove disappear_next_tick
+tag @s remove no_spawn_cooldown
 tag @s remove flee
 tag @s remove hurt
 tag @s remove element_hurt

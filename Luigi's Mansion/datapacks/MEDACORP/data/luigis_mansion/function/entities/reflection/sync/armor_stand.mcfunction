@@ -18,6 +18,7 @@ data modify entity @s HasVisualFire set from storage luigis_mansion:data mirror.
 data modify entity @s ArmorItems set from storage luigis_mansion:data mirror.data.ArmorItems
 data modify entity @s HandItems[0] set from storage luigis_mansion:data mirror.data.HandItems[1]
 data modify entity @s HandItems[1] set from storage luigis_mansion:data mirror.data.HandItems[0]
+data modify entity @s attributes set from storage luigis_mansion:data mirror.data.attributes
 function luigis_mansion:entities/reflection/swap_model
 
 execute if entity @s[tag=!immobile] run function luigis_mansion:entities/reflection/mobile_entity

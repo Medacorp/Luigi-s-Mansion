@@ -14,5 +14,5 @@ execute at @s[scores={ActionTime=11}] positioned ^ ^ ^0.5 as @a[distance=..1,tag
 execute at @s[scores={ActionTime=11}] run data remove storage luigis_mansion:data damage
 tag @s[scores={ActionTime=11},tag=!laugh] add complain
 tag @s[scores={ActionTime=30}] remove attack
-data remove entity @s[scores={Dialog=30}] data.animation
+data remove entity @s[scores={ActionTime=30}] data.animation
 scoreboard players set @s[scores={ActionTime=30}] ActionTime 0

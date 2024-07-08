@@ -1,4 +1,4 @@
-execute if score #the_artists_studio Wave matches 9 unless entity @e[tag=ghost,tag=!optional_ghost,scores={Room=71},limit=1] run function luigis_mansion:room/normal/the_artists_studio/clear
+execute if score #the_artists_studio Wave matches 10 unless entity @e[tag=ghost,tag=!optional_ghost,scores={Room=71},limit=1] run function luigis_mansion:room/normal/the_artists_studio/clear
 execute if score #the_artists_studio Wave matches 8 unless entity @e[tag=ghost,tag=!optional_ghost,scores={Room=71},nbt=!{data:{entity:{namespace:"luigis_mansion",id:"vincent_van_gore"}}},limit=1] run function luigis_mansion:room/normal/the_artists_studio/wave_9
 execute if score #the_artists_studio Wave matches 7 unless entity @e[tag=ghost,tag=!optional_ghost,scores={Room=71},nbt=!{data:{entity:{namespace:"luigis_mansion",id:"vincent_van_gore"}}},limit=1] run function luigis_mansion:room/normal/the_artists_studio/wave_8
 execute if score #the_artists_studio Wave matches 6 unless entity @e[tag=ghost,tag=!optional_ghost,scores={Room=71},nbt=!{data:{entity:{namespace:"luigis_mansion",id:"vincent_van_gore"}}},limit=1] run function luigis_mansion:room/normal/the_artists_studio/wave_7

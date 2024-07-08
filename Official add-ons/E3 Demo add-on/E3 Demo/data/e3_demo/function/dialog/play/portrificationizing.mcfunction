@@ -26,7 +26,7 @@ execute if score #dialog Dialog matches 987.. as @a[tag=same_room,tag=dialog_men
 scoreboard players reset @a[tag=same_room,tag=!spectator] WarpTime
 execute as @a[tag=same_room,tag=!spectator,tag=game_boy_horror_menu] run function luigis_mansion:selection_menu/game_boy_horror/exit
 tag @e[tag=e_gadd,tag=same_room,limit=1] remove freeze_animation
-tag @e[tag=same_room,nbt={data:{entity:{namespace:"luigis_mansion",id:"portrificationizing_ghost"}}},limit=1] remove no_ai
+tag @e[tag=same_room,nbt={ArmorItems:[{components:{"minecraft:custom_data":{entity:{namespace:"luigis_mansion",id:"portrificationizing_ghost"}}}}]}] remove no_ai
 execute if score #dialog Dialog matches 1 unless data storage luigis_mansion:data dialogs[0].portraits run data modify storage luigis_mansion:data dialogs[0].portraits set value {}
 execute if score #dialog Dialog matches 1 as @a[tag=same_room] run function luigis_mansion:other/music/set/portrificationizing
 execute if score #dialog Dialog matches 1 run function luigis_mansion:spawn_entities/portrificationizing_ghosts with storage luigis_mansion:data current_state.current_data.mansion_id
@@ -109,9 +109,9 @@ execute if score #dialog Dialog matches 900 if score #temp2 Dialog matches 1 if 
 execute if score #dialog Dialog matches 900 if score #temp2 Dialog matches 1 if score #players Totals matches 2.. run tellraw @a[tag=same_room] {"type":"translatable","translate":"chat.type.text","with":[{"type":"translatable","translate":"luigis_mansion:entity.mansion","color":"green"},{"type":"translatable","translate":"luigis_mansion:dialog.ghost_portrificationizer_room.results.ghosts.1.more"}]}
 execute if score #dialog Dialog matches 900 if score #temp2 Dialog matches 2.. if score #players Totals matches 1 run tellraw @a[tag=same_room] {"type":"translatable","translate":"chat.type.text","with":[{"type":"translatable","translate":"luigis_mansion:entity.mansion","color":"green"},{"type":"translatable","translate":"luigis_mansion:dialog.ghost_portrificationizer_room.results.ghosts","with":[{"score":{"name":"#temp2","objective":"Dialog"}}]}]}
 execute if score #dialog Dialog matches 900 if score #temp2 Dialog matches 2.. if score #players Totals matches 2.. run tellraw @a[tag=same_room] {"type":"translatable","translate":"chat.type.text","with":[{"type":"translatable","translate":"luigis_mansion:entity.mansion","color":"green"},{"type":"translatable","translate":"luigis_mansion:dialog.ghost_portrificationizer_room.results.ghosts.more","with":[{"score":{"name":"#temp2","objective":"Dialog"}}]}]}
-execute if score #dialog Dialog matches 900 if score #temp2 Dialog matches 1 as @a[tag=same_room] at @s run playsound luigis_mansion:furniture.painting.count player @s ~ ~ ~ 1 1
-execute if score #dialog Dialog matches 901 if score #temp2 Dialog matches 2 as @a[tag=same_room] at @s run playsound luigis_mansion:furniture.painting.count player @s ~ ~ ~ 1 1.045
-execute if score #dialog Dialog matches 902 if score #temp2 Dialog matches 3 as @a[tag=same_room] at @s run playsound luigis_mansion:furniture.painting.count player @s ~ ~ ~ 1 1.09
+execute if score #dialog Dialog matches 900 if score #temp2 Dialog matches 1.. as @a[tag=same_room] at @s run playsound luigis_mansion:furniture.painting.count player @s ~ ~ ~ 1 1
+execute if score #dialog Dialog matches 901 if score #temp2 Dialog matches 2.. as @a[tag=same_room] at @s run playsound luigis_mansion:furniture.painting.count player @s ~ ~ ~ 1 1.045
+execute if score #dialog Dialog matches 902 if score #temp2 Dialog matches 3.. as @a[tag=same_room] at @s run playsound luigis_mansion:furniture.painting.count player @s ~ ~ ~ 1 1.09
 execute if score #dialog Dialog matches 903 if score #temp2 Dialog matches 4 as @a[tag=same_room] at @s run playsound luigis_mansion:furniture.painting.count player @s ~ ~ ~ 1 1.135
 #923
 execute if score #dialog Dialog matches 924..984 run scoreboard players operation #temp2 Dialog = #dialog Dialog

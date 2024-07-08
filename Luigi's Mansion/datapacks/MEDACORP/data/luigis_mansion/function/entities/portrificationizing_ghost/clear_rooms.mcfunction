@@ -1,1 +1,1 @@
-$function $(namsepace):entities/portrificationizing_ghost/clear_rooms/$(id)
+$function $(namespace):entities/portrificationizing_ghost/clear_rooms/$(id)

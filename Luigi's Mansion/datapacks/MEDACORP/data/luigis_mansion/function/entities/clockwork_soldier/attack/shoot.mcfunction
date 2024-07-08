@@ -8,7 +8,7 @@ execute at @s[scores={ActionTime=20}] positioned ^ ^0.8 ^0.7 run particle minecr
 execute at @s[scores={ActionTime=20}] positioned ^ ^0.8 ^1.4 run particle minecraft:dust{color:[0.5f,0.5f,0.5f],scale:1.4f} ~ ~0.2 ~ 0 0 0 0 1
 execute at @s[scores={ActionTime=20}] positioned ^ ^-1 ^0.7 if entity @a[distance=..1,scores={Invulnerable=0},tag=!spectator] run scoreboard players set @s WaitTime 40
 execute at @s[scores={ActionTime=20}] run data modify storage luigis_mansion:data damage set value {method:{namespace:"luigis_mansion",id:"shot"},amount:0,animation:{namespace:"luigis_mansion",id:"knockback/large"},no_delete:1b}
-execute at @s[scores={ActionTime=20}] run data modify storage luigis_mansion:data damage.amount set from entity @s ArmorItems[3].components."minecraft:custom_data".damage.attack
+execute at @s[scores={ActionTime=20}] run data modify storage luigis_mansion:data damage.amount set from entity @s data.damage.attack
 execute at @s[scores={ActionTime=20}] run data modify storage luigis_mansion:data damage.attacker set from entity @s UUID
 execute at @s[scores={ActionTime=20}] positioned ^ ^-1 ^0.7 as @a[distance=..1,tag=!spectator] run function luigis_mansion:entities/player/damage
 execute at @s[scores={ActionTime=20}] run data remove storage luigis_mansion:data damage

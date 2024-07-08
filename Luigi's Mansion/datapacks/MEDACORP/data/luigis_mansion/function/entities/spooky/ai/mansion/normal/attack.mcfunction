@@ -14,14 +14,14 @@ scoreboard players reset @s[scores={ActionTime=20}] ActionTime
 execute at @s[scores={ActionTime=1..19}] positioned ^ ^ ^0.3 if entity @e[tag=same_room,tag=!spectator,tag=player,scores={Invulnerable=0},distance=..0.7,tag=!grabbed,limit=1] run scoreboard players set @s ActionTime 30
 
 data modify entity @s[scores={ActionTime=30}] data.animation set value {namespace:"luigis_mansion",id:"hold"}
-execute if entity @s[scores={ActionTime=30}] positioned ^ ^ ^0.8 as @e[distance=..0.8,tag=game_boy_horror_location] run function luigis_mansion:entities/game_boy_horror_location/bring_player_back
-execute if entity @s[scores={ActionTime=30}] positioned ^ ^ ^0.8 run scoreboard players operation @s GrabbedID = @a[tag=!spectator,scores={Invulnerable=0},distance=..0.8,tag=!grabbed,limit=1] ID
-execute if entity @s[scores={ActionTime=30}] positioned ^ ^ ^0.8 run tag @a[tag=!spectator,scores={Invulnerable=0},distance=..0.8,tag=!grabbed,limit=1] add grabbed
+execute at @s[scores={ActionTime=30}] positioned ^ ^ ^0.3 as @e[distance=..0.7,tag=game_boy_horror_location] run function luigis_mansion:entities/game_boy_horror_location/bring_player_back
+execute at @s[scores={ActionTime=30}] positioned ^ ^ ^0.3 run scoreboard players operation @s GrabbedID = @a[tag=!spectator,scores={Invulnerable=0},distance=..0.7,tag=!grabbed,limit=1] ID
+execute at @s[scores={ActionTime=30}] positioned ^ ^ ^0.3 run tag @a[tag=!spectator,scores={Invulnerable=0},distance=..0.7,tag=!grabbed,limit=1] add grabbed
 execute if entity @s[scores={GrabbedID=-2147483648..}] run scoreboard players operation #temp ID = @s GrabbedID
 execute if entity @s[scores={GrabbedID=-2147483648..}] as @a[tag=grabbed] if score @s ID = #temp ID run tag @s add still_grabbed
 execute if entity @s[scores={GrabbedID=-2147483648..}] if entity @a[tag=still_grabbed,limit=1] as @e[tag=chest] if score @s ID = #temp ID run tag @s add grabbed_model
 execute if entity @s[scores={ActionTime=30}] run data modify storage luigis_mansion:data damage set value {method:{namespace:"luigis_mansion",id:"bite"},amount:0,animation:{namespace:"luigis_mansion",id:"knockback/bite"}}
-execute if entity @s[scores={ActionTime=30}] run data modify storage luigis_mansion:data damage.amount set from entity @s ArmorItems[3].components."minecraft:custom_data".damage.attack
+execute if entity @s[scores={ActionTime=30}] run data modify storage luigis_mansion:data damage.amount set from entity @s data.damage.attack
 execute if entity @s[scores={ActionTime=30}] run data modify storage luigis_mansion:data damage.attacker set from entity @s UUID
 execute if entity @s[scores={ActionTime=30}] as @a[tag=still_grabbed,limit=1] run function luigis_mansion:entities/player/damage
 execute if entity @s[scores={ActionTime=30..51,Sound=0}] run playsound luigis_mansion:entity.spooky.attack hostile @a[tag=same_room] ~ ~ ~ 1 1

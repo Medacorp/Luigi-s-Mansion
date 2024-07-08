@@ -1,5 +1,7 @@
 scoreboard players set @s[tag=!enabled] WaitTime 0
 scoreboard players add @s[tag=enabled] WaitTime 1
+tag @s remove vacuumable
+tag @s remove pulled_by_vacuum
 execute unless entity @e[tag=same_room,tag=!spectator,tag=player,limit=1] run scoreboard players set @s WaitTime 0
 data remove entity @s[tag=!in_vacuum,scores={WaitTime=..59}] data.animation
 execute unless entity @s[tag=!in_vacuum,scores={WaitTime=..59}] run data modify entity @s data.animation set value {namespace:"luigis_mansion",id:"shake"}

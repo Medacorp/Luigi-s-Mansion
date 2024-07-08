@@ -1,6 +1,6 @@
-scoreboard players set @s[scores={HurtTime=1..},tag=!in_vacuum] HurtTime 0
 scoreboard players add @s[scores={HurtTime=1..}] HurtTime 1
 execute unless entity @s[scores={HurtTime=1..}] run scoreboard players set @s HurtTime 1
+scoreboard players set @s[scores={HurtTime=1..},tag=!in_vacuum] HurtTime 0
 execute if entity @s[tag=!dying,scores={HurtTime=1..,Health=1..}] run function luigis_mansion:entities/boo/harm
 scoreboard players set @s[scores={HurtTime=40..}] HurtTime 20
 scoreboard players set @s ActionTime 0

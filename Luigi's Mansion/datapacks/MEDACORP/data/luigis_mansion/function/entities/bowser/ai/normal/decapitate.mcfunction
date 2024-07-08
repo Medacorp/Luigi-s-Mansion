@@ -8,7 +8,8 @@ tag @s[scores={Dialog=1}] remove run
 tag @s[scores={Dialog=1}] remove walk
 tag @s[scores={Dialog=1}] remove jump
 execute if entity @s[scores={Dialog=1}] unless entity @e[nbt={data:{entity:{namespace:"luigis_mansion",id:"bowser_head"}}},limit=1] run data modify storage luigis_mansion:data entity set value {damage:{},owner:0,tags:["decapitate"]}
-execute if entity @s[scores={Dialog=1}] unless entity @e[nbt={data:{entity:{namespace:"luigis_mansion",id:"bowser_head"}}},limit=1] store result storage luigis_mansion:data entity.owner int 1 run scoreboard players get @s GhostNr
+execute if entity @s[scores={Dialog=1}] unless entity @e[nbt={data:{entity:{namespace:"luigis_mansion",id:"bowser_head"}}},limit=1] run data modify storage luigis_mansion:data entity.damage.spit_ice set from entity @s data.damage.spit_ice
+execute if entity @s[scores={Dialog=1}] unless entity @e[nbt={data:{entity:{namespace:"luigis_mansion",id:"bowser_head"}}},limit=1] run data modify storage luigis_mansion:data entity.owner set from entity @s UUID
 execute if entity @s[scores={Dialog=1}] unless entity @e[nbt={data:{entity:{namespace:"luigis_mansion",id:"bowser_head"}}},limit=1] positioned ^ ^3.5 ^-0.4 run function luigis_mansion:spawn_entities/bowser/head
 data modify entity @s[scores={Dialog=1}] data.animation set value {namespace:"luigis_mansion",id:"decapitate"}
 data modify entity @s[scores={Dialog=1}] data.initial_animation_progress set value 0

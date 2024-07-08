@@ -1,6 +1,6 @@
 execute unless data storage luigis_mansion:data current_state.current_data{used_keys:["safari_room"]} run place template luigis_mansion:game_boy_horror_map/door/single_locked 3705 160 35
 execute if data storage luigis_mansion:data current_state.current_data{used_keys:["safari_room"]} run place template luigis_mansion:game_boy_horror_map/door/single_unlocked 3705 160 35
-tag @e[tag=safari_room,tag=display] add dead
+tag @e[tag=safari_room,tag=map_key] add dead
 execute if data storage luigis_mansion:data current_state.current_data{obtained_keys:["safari_room"]} unless data storage luigis_mansion:data current_state.current_data{used_keys:["safari_room"]} run data modify storage luigis_mansion:data entity set value {tags:["safari_room"]}
 execute if data storage luigis_mansion:data current_state.current_data{obtained_keys:["safari_room"]} unless data storage luigis_mansion:data current_state.current_data{used_keys:["safari_room"]} if entity @s[scores={OpenMapFocus=17}] run data modify storage luigis_mansion:data entity.sparkle set value 1b
-execute if data storage luigis_mansion:data current_state.current_data{obtained_keys:["safari_room"]} unless data storage luigis_mansion:data current_state.current_data{used_keys:["safari_room"]} positioned 3705 160 35 run function luigis_mansion:selection_menu/game_boy_horror/map/spawn_key/variant_0/single
+execute if data storage luigis_mansion:data current_state.current_data{obtained_keys:["safari_room"]} unless data storage luigis_mansion:data current_state.current_data{used_keys:["safari_room"]} positioned 3705 160 35 run function luigis_mansion:selection_menu/game_boy_horror/map/spawn_key/normal/single

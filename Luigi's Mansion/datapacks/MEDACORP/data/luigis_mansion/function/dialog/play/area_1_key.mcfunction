@@ -6,9 +6,9 @@ execute if score #dialog Dialog matches 22 run scoreboard players add #dialog Di
 execute if score #dialog Dialog matches 21 if entity @a[tag=same_room,tag=game_boy_horror_selected,limit=1] run scoreboard players add #dialog Dialog 1
 execute if score #dialog Dialog matches ..20 run scoreboard players add #dialog Dialog 1
 execute if score #dialog Dialog matches ..90 if entity @a[tag=same_room,tag=skip_dialog,limit=1] run scoreboard players set #dialog Dialog 91
-execute if score #dialog Dialog matches 21..29 unless score #dialog Dialog matches 24..43 as @a[tag=same_room,tag=!spectator,tag=!dialog_menu] unless entity @s[tag=using_selection_menu,tag=!dialog_menu] run function luigis_mansion:selection_menu/dialog/original_menu
+execute if score #dialog Dialog matches 22..50 unless score #dialog Dialog matches 24..43 as @a[tag=same_room,tag=!spectator,tag=!dialog_menu] unless entity @s[tag=using_selection_menu,tag=!dialog_menu] run function luigis_mansion:selection_menu/dialog/original_menu
 execute if score #dialog Dialog matches 24..43 as @a[tag=same_room,tag=dialog_menu] run function luigis_mansion:selection_menu/dialog/exit
-execute if score #dialog Dialog matches 50.. as @a[tag=same_room,tag=dialog_menu] run function luigis_mansion:selection_menu/dialog/exit
+execute if score #dialog Dialog matches 51.. as @a[tag=same_room,tag=dialog_menu] run function luigis_mansion:selection_menu/dialog/exit
 
 scoreboard players reset @a[tag=same_room,tag=!spectator] WarpTime
 execute as @a[tag=same_room,tag=!spectator,tag=game_boy_horror_menu] run function luigis_mansion:selection_menu/game_boy_horror/exit
@@ -22,7 +22,7 @@ execute if score #dialog Dialog matches 22 as @a[tag=same_room] at @s run playso
 
 execute if score #dialog Dialog matches 24 as @a[tag=same_room,tag=!spectator] run function luigis_mansion:entities/player/animation/set/nod
 execute if score #dialog Dialog matches 24..70 as @a[tag=same_room] run function luigis_mansion:other/music/set/game_boy_horror
-execute if score #dialog Dialog matches 44.. as @a[tag=same_room,tag=!spectator] run function luigis_mansion:entities/player/animation/set/game_boy_horror
+execute if score #dialog Dialog matches 44..50 as @a[tag=same_room,tag=!spectator] run function luigis_mansion:entities/player/animation/set/game_boy_horror
 execute if score #dialog Dialog matches 44.. run scoreboard players set @a[tag=same_room] ForceScreen 1
 execute if score #dialog Dialog matches 44 if score #players Totals matches 1 run tellraw @a[tag=same_room] {"type":"translatable","translate":"chat.type.text","with":[{"type":"translatable","translate":"luigis_mansion:entity.e_gadd","color":"green"},{"type":"translatable","translate":"luigis_mansion:dialog.area_1_key.2","with":[{"type":"selector","selector":"@p[tag=!spectator]"}]}]}
 execute if score #dialog Dialog matches 44 if score #players Totals matches 2.. run tellraw @a[tag=same_room] {"type":"translatable","translate":"chat.type.text","with":[{"type":"translatable","translate":"luigis_mansion:entity.e_gadd","color":"green"},{"type":"translatable","translate":"luigis_mansion:dialog.area_1_key.2.more"}]}

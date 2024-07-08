@@ -1,6 +1,6 @@
 execute unless data storage luigis_mansion:data current_state.current_data{used_keys:["courtyard"]} run place template luigis_mansion:game_boy_horror_map/door/single_locked 3653 60 -7
 execute if data storage luigis_mansion:data current_state.current_data{used_keys:["courtyard"]} run place template luigis_mansion:game_boy_horror_map/door/single_unlocked 3653 60 -7
-tag @e[tag=courtyard,tag=display] add dead
+tag @e[tag=courtyard,tag=map_key] add dead
 execute if data storage luigis_mansion:data current_state.current_data{obtained_keys:["courtyard"]} unless data storage luigis_mansion:data current_state.current_data{used_keys:["courtyard"]} run data modify storage luigis_mansion:data entity set value {tags:["courtyard"]}
 execute if data storage luigis_mansion:data current_state.current_data{obtained_keys:["courtyard"]} unless data storage luigis_mansion:data current_state.current_data{used_keys:["courtyard"]} if entity @s[scores={OpenMapFocus=12}] run data modify storage luigis_mansion:data entity.sparkle set value 1b
-execute if data storage luigis_mansion:data current_state.current_data{obtained_keys:["courtyard"]} unless data storage luigis_mansion:data current_state.current_data{used_keys:["courtyard"]} positioned 3653 60 -7 run function luigis_mansion:selection_menu/game_boy_horror/map/spawn_key/variant_2/single
+execute if data storage luigis_mansion:data current_state.current_data{obtained_keys:["courtyard"]} unless data storage luigis_mansion:data current_state.current_data{used_keys:["courtyard"]} positioned 3653 60 -7 run function luigis_mansion:selection_menu/game_boy_horror/map/spawn_key/club/single

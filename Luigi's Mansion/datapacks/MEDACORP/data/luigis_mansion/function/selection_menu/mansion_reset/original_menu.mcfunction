@@ -1,4 +1,5 @@
 execute at @s run function luigis_mansion:entities/player/stop_model
+tag @s add camera
 gamemode adventure @s
 
 tag @s add mansion_reset_menu

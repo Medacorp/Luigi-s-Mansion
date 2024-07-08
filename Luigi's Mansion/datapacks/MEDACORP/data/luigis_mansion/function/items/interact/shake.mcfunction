@@ -14,6 +14,7 @@ execute at @s[nbt={OnGround:1b},tag=3] rotated ~ 0 run summon minecraft:marker ^
 execute at @s[nbt={OnGround:0b},tag=3] rotated ~ 0 run summon minecraft:marker ^ ^-0.9 ^1 {Tags:["interact","manual"]}
 tag @s add searcher
 scoreboard players add @s InteractionTime 1
+tag @s[scores={InteractionTime=2}] add reset_rotation
 function luigis_mansion:entities/player/memory/get with entity @s
 execute if entity @s[scores={InteractionTime=2}] at @e[tag=interact,tag=manual,limit=1] as @e[tag=furniture,tag=same_room,tag=affected_by_interact] run function luigis_mansion:items/interact/target_furniture/get_animation
 execute unless data storage luigis_mansion:data my_memory.animation if predicate luigis_mansion:1_3 if entity @s[scores={InteractionTime=2}] run function luigis_mansion:entities/player/animation/set/search/knock
@@ -38,6 +39,7 @@ data modify storage luigis_mansion:data memory append from storage luigis_mansio
 data remove storage luigis_mansion:data my_memory
 scoreboard players reset #interact
 scoreboard players set @s[scores={InteractionTime=2}] Sound 20
+tag @s[scores={InteractionTime=17}] remove reset_rotation
 tag @s[scores={InteractionTime=17}] remove not_facing
 tag @s[scores={InteractionTime=17}] remove 1
 tag @s[scores={InteractionTime=17}] remove 2

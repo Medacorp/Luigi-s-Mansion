@@ -15,12 +15,3 @@ execute unless score #temp Time matches -90..90 unless entity @s[scores={ActionT
 execute unless score #temp Time matches -90..90 if entity @s[tag=!tail_attack] unless entity @s[scores={ActionTime=1..}] run tag @s add look_around
 execute if entity @s[tag=!headless_run] unless entity @s[scores={ActionTime=1..}] run scoreboard players operation @s HomeRotation = #temp Time
 scoreboard players reset #temp Time
-
-execute unless entity @s[tag=!walk,tag=!run,tag=!headless_run] positioned ~ ~ ~2 if block ~ ~2 ~ minecraft:clay run function luigis_mansion:entities/bowser/attack/destroy_pillar
-execute unless entity @s[tag=!walk,tag=!run,tag=!headless_run] positioned ~1 ~ ~1 if block ~ ~2 ~ minecraft:clay run function luigis_mansion:entities/bowser/attack/destroy_pillar
-execute unless entity @s[tag=!walk,tag=!run,tag=!headless_run] positioned ~-1 ~ ~1 if block ~ ~2 ~ minecraft:clay run function luigis_mansion:entities/bowser/attack/destroy_pillar
-execute unless entity @s[tag=!walk,tag=!run,tag=!headless_run] positioned ~2 ~ ~ if block ~ ~2 ~ minecraft:clay run function luigis_mansion:entities/bowser/attack/destroy_pillar
-execute unless entity @s[tag=!walk,tag=!run,tag=!headless_run] positioned ~-2 ~ ~ if block ~ ~2 ~ minecraft:clay run function luigis_mansion:entities/bowser/attack/destroy_pillar
-execute unless entity @s[tag=!walk,tag=!run,tag=!headless_run] positioned ~1 ~ ~-1 if block ~ ~2 ~ minecraft:clay run function luigis_mansion:entities/bowser/attack/destroy_pillar
-execute unless entity @s[tag=!walk,tag=!run,tag=!headless_run] positioned ~-1 ~ ~-1 if block ~ ~2 ~ minecraft:clay run function luigis_mansion:entities/bowser/attack/destroy_pillar
-execute unless entity @s[tag=!walk,tag=!run,tag=!headless_run] positioned ~ ~ ~-2 if block ~ ~2 ~ minecraft:clay run function luigis_mansion:entities/bowser/attack/destroy_pillar

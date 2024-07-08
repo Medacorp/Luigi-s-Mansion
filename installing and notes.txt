@@ -1,5 +1,5 @@
 == NOTICE ==
-This map requires 1.20.5.
+This map requires 1.21.
 
 Bugs should be reported on the github here: https://github.com/Medacorp/Luigi-s-Mansion/issues
 Please do look if it's already reported.
@@ -86,6 +86,7 @@ Then close the world or server, and remove the data pack from the world.
 
 == Server properties requirements ==
 difficulty=<desired difficulty>
+allow-flight=true
 
 == Credits ==
 Made by: Dhranios

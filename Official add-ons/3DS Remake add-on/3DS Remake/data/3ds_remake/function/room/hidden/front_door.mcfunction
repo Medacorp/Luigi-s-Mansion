@@ -1,7 +1,9 @@
-forceload add 749 -66 615 81
-tag @e[scores={Room=0},tag=door] add remove_from_existence
-data modify storage luigis_mansion:data furniture set value {sound:{namespace:"luigis_mansion",id:"heavy_generic"},door:{model:{namespace:"luigis_mansion",id:"mansion/entrance"},frame:{namespace:"luigis_mansion",id:"double/basic"},left_hinge:1b,other_end:{dimension:"luigis_mansion:normal",x:755,y:11,z:8},go_through_command:"function 3ds_remake:room/hidden/enter"}}
-execute positioned 720 102 7 rotated -90 0 run function luigis_mansion:spawn_furniture/door
-data modify storage luigis_mansion:data furniture set value {sound:{namespace:"luigis_mansion",id:"heavy_generic"},door:{model:{namespace:"luigis_mansion",id:"mansion/entrance"},frame:{namespace:"luigis_mansion",id:"double/basic"},push:1b,other_end:{dimension:"luigis_mansion:normal",x:755,y:11,z:9},go_through_command:"function 3ds_remake:room/hidden/enter"}}
-execute positioned 720 102 8 rotated -90 0 run function luigis_mansion:spawn_furniture/door
-forceload remove 749 -66 615 81
+scoreboard players set * ChangedMansion 1
+scoreboard players reset @a ChangedMansion
+forceload add 720 8
+execute if loaded 720 102 7 run data modify storage luigis_mansion:data furniture set value {room:0,sound:{namespace:"luigis_mansion",id:"heavy_generic"},door:{model:{namespace:"luigis_mansion",id:"mansion/entrance"},frame:{namespace:"luigis_mansion",id:"double/basic"},left_hinge:1b,other_end:{dimension:"luigis_mansion:normal",x:755,y:11,z:8},go_through_command:"function 3ds_remake:room/hidden/enter"}}
+execute if loaded 720 102 7 positioned 720 102 7 rotated -90 0 run function luigis_mansion:spawn_furniture/door
+execute if loaded 720 102 7 run data modify storage luigis_mansion:data furniture set value {room:0,sound:{namespace:"luigis_mansion",id:"heavy_generic"},door:{model:{namespace:"luigis_mansion",id:"mansion/entrance"},frame:{namespace:"luigis_mansion",id:"double/basic"},push:1b,other_end:{dimension:"luigis_mansion:normal",x:755,y:11,z:9},go_through_command:"function 3ds_remake:room/hidden/enter"}}
+execute if loaded 720 102 7 positioned 720 102 8 rotated -90 0 run function luigis_mansion:spawn_furniture/door
+execute unless loaded 720 102 7 run schedule function 3ds_remake:room/hidden/front_door 1
+execute if loaded 720 102 7 run forceload remove 720 8

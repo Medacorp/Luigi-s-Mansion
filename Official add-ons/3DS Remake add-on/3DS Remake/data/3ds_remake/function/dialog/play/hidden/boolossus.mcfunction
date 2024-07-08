@@ -54,9 +54,11 @@ execute if score #dialog Dialog matches 94 as @e[tag=same_room,nbt={data:{entity
 execute if score #dialog Dialog matches 164 as @a[tag=same_room,tag=!spectator] run function luigis_mansion:entities/player/animation/set/none
 execute if score #dialog Dialog matches 164 as @a[tag=same_room,tag=!spectator] at @s positioned ^ ^ ^1 run function luigis_mansion:entities/player/animation/set/scare/bash_no_move
 execute if score #dialog Dialog matches 200 as @e[tag=same_room,nbt={data:{entity:{namespace:"luigis_mansion",id:"boolossus"}}}] run data remove entity @s data.animation
-execute if score #dialog Dialog matches 204..324 unless score #mirrored Selected matches 1 as @a[tag=target_player,scores={AnimationProgress=31},limit=1] at @s rotated ~-5 0 run function luigis_mansion:entities/player/animation/scare/bash_force_move
-execute if score #dialog Dialog matches 204..324 if score #mirrored Selected matches 1 as @a[tag=target_player,scores={AnimationProgress=31},limit=1] at @s rotated ~5 0 run function luigis_mansion:entities/player/animation/scare/bash_force_move
-execute if score #dialog Dialog matches 204.. run scoreboard players set @a[tag=same_room,scores={AnimationProgress=30..}] AnimationProgress 29
+execute if score #dialog Dialog matches 164..324 unless score #mirrored Selected matches 1 as @a[tag=target_player,scores={AnimationProgress=30},limit=1] at @s rotated ~-5 0 run function luigis_mansion:entities/player/animation/scare/bash_force_move
+execute if score #dialog Dialog matches 164..324 if score #mirrored Selected matches 1 as @a[tag=target_player,scores={AnimationProgress=30},limit=1] at @s rotated ~5 0 run function luigis_mansion:entities/player/animation/scare/bash_force_move
+execute if score #dialog Dialog matches 164..324 run scoreboard players set @a[tag=same_room,scores={AnimationProgress=30..}] AnimationProgress 29
+execute if score #dialog Dialog matches 325 as @a[tag=same_room,tag=!spectator] run function luigis_mansion:entities/player/animation/set/none
+execute if score #dialog Dialog matches 325 as @a[tag=same_room,tag=!spectator] at @s positioned ^ ^ ^1 run function luigis_mansion:entities/player/animation/set/scare/cower
 execute if score #dialog Dialog matches 343.. as @e[tag=same_room,nbt={data:{entity:{namespace:"luigis_mansion",id:"boolossus"}}}] at @s run teleport @s ~ ~2 ~
 execute if score #dialog Dialog matches 343 as @a[tag=target_player,limit=1] at @s run teleport @s ~ 122 ~
 execute if score #dialog Dialog matches 344 as @a[tag=target_player,limit=1] at @s run teleport @s ~ 124 ~

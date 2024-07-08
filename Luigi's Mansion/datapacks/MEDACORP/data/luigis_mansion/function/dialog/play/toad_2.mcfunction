@@ -26,7 +26,7 @@ execute if score #dialog Dialog matches 4 if score #players Totals matches 1 if 
 execute if score #dialog Dialog matches 4 if score #players Totals matches 2.. if entity @a[tag=same_room,tag=next_dialog_line,limit=1] run tellraw @a[tag=same_room] {"type":"translatable","translate":"chat.type.text","with":[{"type":"translatable","translate":"luigis_mansion:entity.toad","color":"green"},{"type":"translatable","translate":"luigis_mansion:dialog.toad_2.3.more"}]}
 
 execute if score #dialog Dialog matches 5 run scoreboard players set #temp Room 6
-execute if score #dialog Dialog matches 5 run function luigis_mansion:room/clear_room_mansion with storage luigis_mansion:data current_state.current_data.mansion_id
+execute if score #dialog Dialog matches 5 as @e[tag=toad,tag=same_room,limit=1] run function luigis_mansion:room/clear_room_mansion with storage luigis_mansion:data current_state.current_data.mansion_id
 execute if score #dialog Dialog matches 25 run data modify entity @e[tag=toad,tag=same_room,limit=1] data.animation set value {namespace:"luigis_mansion",id:"explain"}
 execute if score #dialog Dialog matches 25 run tellraw @a[tag=same_room] {"type":"translatable","translate":"chat.type.text","with":[{"type":"translatable","translate":"luigis_mansion:entity.toad","color":"green"},{"type":"translatable","translate":"luigis_mansion:dialog.toad_2.4"}]}
 

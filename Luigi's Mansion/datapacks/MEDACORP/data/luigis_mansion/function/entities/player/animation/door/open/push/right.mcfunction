@@ -22,7 +22,7 @@ execute if entity @s[scores={AnimationProgress=13}] if data entity @e[tag=furnit
 scoreboard players set @s[scores={AnimationProgress=14}] RoomNoise 0
 stopsound @s[scores={AnimationProgress=14}] ambient
 tag @s[scores={AnimationProgress=14}] remove wall_warp
-execute if entity @e[tag=furniture,tag=door,tag=!open_door,tag=!forced_animation,distance=..0.7] run function luigis_mansion:entities/furniture/type/tick/door/force_animation
+execute if entity @e[tag=furniture,tag=door,tag=!open_door,tag=!forced_animation,distance=..0.7] run function luigis_mansion:entities/furniture/type/door/force_animation
 scoreboard players set @s Sound 10
 scoreboard players set @s Invulnerable 1000
 tag @s add pause_dialog

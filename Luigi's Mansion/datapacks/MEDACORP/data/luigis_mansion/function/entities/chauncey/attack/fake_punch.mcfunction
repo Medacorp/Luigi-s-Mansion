@@ -5,5 +5,5 @@ data modify entity @s[scores={ActionTime=1}] data.animation set value {namespace
 execute if entity @s[scores={ActionTime=1}] run playsound luigis_mansion:entity.ghost.punch hostile @a[tag=same_room] ~ ~ ~ 1
 execute if entity @s[scores={ActionTime=1}] run playsound luigis_mansion:entity.chauncey.attack hostile @a[tag=same_room] ~ ~ ~ 1
 tag @s[scores={ActionTime=20}] remove fake_attack
-data remove entity @s[scores={Dialog=20}] data.animation
+data remove entity @s[scores={ActionTime=20}] data.animation
 scoreboard players set @s[scores={ActionTime=20}] ActionTime 0

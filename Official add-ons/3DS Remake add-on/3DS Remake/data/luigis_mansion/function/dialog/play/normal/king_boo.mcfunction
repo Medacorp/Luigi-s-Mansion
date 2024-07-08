@@ -1,5 +1,5 @@
 execute if score #dialog Dialog matches 104..530 run scoreboard players add #dialog Dialog 1
-execute if score #dialog Dialog matches 99..103 if entity @a[tag=same_room,tag=next_dialog_line,limit=1] run scoreboard players add #dialog Dialog 1
+execute if score #dialog Dialog matches 98..103 if entity @a[tag=same_room,tag=next_dialog_line,limit=1] run scoreboard players add #dialog Dialog 1
 execute if score #dialog Dialog matches 67..97 run scoreboard players add #dialog Dialog 1
 execute if score #dialog Dialog matches 62..66 if entity @a[tag=same_room,tag=next_dialog_line,limit=1] run scoreboard players add #dialog Dialog 1
 execute if score #dialog Dialog matches ..61 run scoreboard players add #dialog Dialog 1

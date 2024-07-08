@@ -12,7 +12,7 @@ execute if score #dialog Dialog matches 21 as @a[tag=same_room] at @s run functi
 execute if score #dialog Dialog matches 22 unless score #mirrored Selected matches 1 run summon minecraft:marker ~ ~ ~ {Tags:["observatory_facing","same_room"],Rotation:[-180.0f,0.0f]}
 execute if score #dialog Dialog matches 22 if score #mirrored Selected matches 1 run summon minecraft:marker ~ ~ ~ {Tags:["observatory_facing","same_room"],Rotation:[0.0f,0.0f]}
 execute if score #dialog Dialog matches 22 store result score @e[tag=observatory_facing,tag=same_room] Room run data get storage luigis_mansion:data dialogs[0].room
-execute if score #dialog Dialog matches 1 run data modify entity @e[tag=same_room,tag=observatory_facing,limit=1] Pos set from storage luigis_mansion:data dialogs[0].observing_position
+execute if score #dialog Dialog matches 22 run data modify entity @e[tag=same_room,tag=observatory_facing,limit=1] Pos set from storage luigis_mansion:data dialogs[0].observing_position
 execute if score #dialog Dialog matches 23 run scoreboard players set @a[tag=same_room,tag=!spectator] Music 340
 execute if score #dialog Dialog matches 23 run playsound luigis_mansion:music.observatory_moon music @a[tag=same_room,tag=!spectator] ~ ~ ~ 1000
 execute if score #dialog Dialog matches 22..68 as @e[tag=observatory_facing,tag=same_room] at @s run teleport @s ~ ~ ~ ~ ~-0.6
@@ -28,6 +28,7 @@ execute if score #dialog Dialog matches 222 unless score #mirrored Selected matc
 execute if score #dialog Dialog matches 222 if score #mirrored Selected matches 1 as @e[tag=observatory_facing,tag=same_room] at @s run teleport @s ~ ~ ~ 72.8 3.8
 execute if score #dialog Dialog matches 234..238 as @e[tag=observatory_facing,tag=same_room] at @s run teleport @s ^ ^ ^-0.1
 execute if score #dialog Dialog matches 239..262 as @e[tag=observatory_facing,tag=same_room] at @s run teleport @s ^ ^ ^0.1
+execute if score #dialog Dialog matches 22..299 at @e[tag=observatory_facing,tag=same_room] run teleport @a[tag=same_room,limit=1] ~ 0 ~ ~ ~
 execute if score #dialog Dialog matches 22..299 at @e[tag=observatory_facing,tag=same_room] run teleport @a[tag=same_room,limit=1] ~ ~ ~ ~ ~
 execute if score #dialog Dialog matches 22..299 as @a[tag=same_room,limit=1] at @s run particle minecraft:end_rod ~ ~ ~ 5 5 5 0 5 force @s
 execute if score #dialog Dialog matches 300 run tag @e[tag=observatory_facing,tag=same_room] add remove_from_existence

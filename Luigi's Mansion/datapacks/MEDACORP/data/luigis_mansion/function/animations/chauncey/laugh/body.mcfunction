@@ -4,3 +4,4 @@ execute if entity @s[scores={AnimationProgress=1}] if data storage luigis_mansio
 execute if entity @s[scores={AnimationProgress=6}] if data storage luigis_mansion:data ghost{tags:["has_equipment"]} run playsound luigis_mansion:entity.chauncey.rattle hostile @a[tag=same_room] ~ ~ ~ 1
 execute if entity @s[scores={AnimationProgress=11}] if data storage luigis_mansion:data ghost{tags:["has_equipment"]} run playsound luigis_mansion:entity.chauncey.rattle hostile @a[tag=same_room] ~ ~ ~ 1
 execute if entity @s[scores={AnimationProgress=16}] if data storage luigis_mansion:data ghost{tags:["has_equipment"]} run playsound luigis_mansion:entity.chauncey.rattle hostile @a[tag=same_room] ~ ~ ~ 1
+scoreboard players set @s[scores={AnimationProgress=20..}] AnimationProgress 0

@@ -12,7 +12,7 @@ furniture:{
         namespace:"luigis_mansion", //The namespace of the furniture shake sound. Defaults to "luigis_mansion".
         id:"heavy_generic" //The ID of the furniture shake sound. Defaults to "heavy_generic".
     },
-    interact_animation:{ //What animation gets used when using the interact method. Enthusiastic animation aditionally has a punch sound and will swing swinging furniture. Overrides default animation selecting. Default = none, except for room clear chests which use 3ds_remake:search/chest when the 3DS Remake add-on is installed.
+    interact_animation:{ //What animation gets used when using the interact method. Enthusiastic animation aditionally has a punch sound and will swing swinging furniture. Overrides default animation selecting. Default = none, except for room clear chests which use 3ds_remake:search/chest when the 3DS Remake add-on is installed and luigis_mansion:search/hump when not.
         namespace:"luigis_mansion", //The namespace of the animation.
         id:"search/hump" //The ID of the animation.
     },

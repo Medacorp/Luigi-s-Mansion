@@ -1,5 +1,6 @@
 scoreboard players add @s AnimationProgress 1
-execute at @s[scores={AnimationProgress=1}] anchored eyes run summon minecraft:armor_stand ^ ^ ^ {CustomName:'{"type":"translatable","translate":"luigis_mansion:entity.luigi"}',Tags:["luigi_ice"],Invisible:1b,Marker:1b,Pose:{Head:[0.0f,0.0f,0.01f]},ArmorItems:[{},{},{},{id:"minecraft:diamond_pickaxe",count:1,components:{"minecraft:unbreakable":{},"minecraft:damage":4,"minecraft:custom_model_data":38}}]}
+execute at @s[scores={AnimationProgress=1}] anchored eyes run summon minecraft:armor_stand ^ ^ ^ {CustomName:'{"type":"translatable","translate":"luigis_mansion:entity.luigi"}',Tags:["luigi_ice","knockback_model"],Invisible:1b,Marker:1b,Pose:{Head:[0.0f,0.0f,0.01f]},ArmorItems:[{},{},{},{id:"minecraft:diamond_pickaxe",count:1,components:{"minecraft:unbreakable":{},"minecraft:damage":4,"minecraft:custom_model_data":38}}]}
+execute at @s[scores={AnimationProgress=1}] anchored eyes positioned ^ ^ ^ run scoreboard players operation @e[tag=knockback_model,limit=1,distance=..0.1] ID = @s ID
 execute at @s[scores={AnimationProgress=1,Sound=0,Shrunk=0},tag=!gooigi] run playsound luigis_mansion:entity.player.hurt_freeze player @a[tag=same_room] ~ ~ ~ 1
 execute at @s[scores={AnimationProgress=1,Sound=0,Shrunk=1..},tag=!gooigi] run playsound luigis_mansion:entity.player.hurt_freeze player @a[tag=same_room] ~ ~ ~ 1 2
 scoreboard players set @s[scores={AnimationProgress=..70,Sound=0}] Sound 2

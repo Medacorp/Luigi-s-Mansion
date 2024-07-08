@@ -30,5 +30,6 @@ title @s[tag=looking_at_map] times 0 40 40
 execute if entity @s[scores={Room=0},x=770.5,y=90,z=8.0,distance=400..] run teleport @s 876 90 -149 -90 0
 
 function #luigis_mansion:login_data_sync
+function #luigis_mansion:upgrade_path
 
 tellraw @s {"type":"translatable","translate":"chat.type.text","with":[{"type":"translatable","translate":"luigis_mansion:entity.mansion","color":"green"},{"type":"translatable","translate":"luigis_mansion:message.hover_event","with":[{"type":"translatable","translate":"luigis_mansion:message.format_explanation.hover","hoverEvent":{"action":"show_text","contents":{"type":"translatable","translate":"luigis_mansion:message.format_explanation.check"}}}]}]}

@@ -1,5 +1,7 @@
 execute if data storage luigis_mansion:data my_memory run tag @s add keep_bash_memory
 execute if entity @s[tag=!keep_bash_memory] run function luigis_mansion:entities/player/memory/get with entity @s
+execute if data storage luigis_mansion:data my_memory.animation{namespace:"luigis_mansion",id:"grab_poltergust"} run function luigis_mansion:entities/player/animation/set/grab_poltergust_instantly
+execute if data storage luigis_mansion:data my_memory.animation{namespace:"luigis_mansion",id:"put_poltergust_away"} run function luigis_mansion:entities/player/animation/set/put_poltergust_away_instantly
 execute unless entity @s[scores={AnimationProgress=1..},tag=!idle] if entity @s[tag=looking_at_map] run function luigis_mansion:selection_menu/game_boy_horror/exit
 execute unless entity @s[scores={AnimationProgress=1..},tag=!idle] unless data storage luigis_mansion:data my_memory.animation{namespace:"luigis_mansion",id:"scare/bash"} run function luigis_mansion:entities/player/animation/set/none
 execute unless entity @s[scores={AnimationProgress=1..},tag=!idle] unless data storage luigis_mansion:data my_memory.animation{namespace:"luigis_mansion",id:"scare/bash"} run effect give @s minecraft:slowness 1 9 true

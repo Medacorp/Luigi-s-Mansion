@@ -1,6 +1,6 @@
-execute unless data storage luigis_mansion:data current_state.current_data{used_keys:["anteroom"]} run place template luigis_mansion:game_boy_horror_map/door/single_locked 3682 110 0
-execute if data storage luigis_mansion:data current_state.current_data{used_keys:["anteroom"]} run place template luigis_mansion:game_boy_horror_map/door/single_unlocked 3682 110 0
-tag @e[tag=anteroom,tag=display] add dead
+execute unless data storage luigis_mansion:data current_state.current_data{used_keys:["anteroom"]} run place template luigis_mansion:game_boy_horror_map/door/single_locked 3682 110 13
+execute if data storage luigis_mansion:data current_state.current_data{used_keys:["anteroom"]} run place template luigis_mansion:game_boy_horror_map/door/single_unlocked 3682 110 13
+tag @e[tag=anteroom,tag=map_key] add dead
 execute if data storage luigis_mansion:data current_state.current_data{obtained_keys:["anteroom"]} unless data storage luigis_mansion:data current_state.current_data{used_keys:["anteroom"]} run data modify storage luigis_mansion:data entity set value {tags:["anteroom"]}
 execute if data storage luigis_mansion:data current_state.current_data{obtained_keys:["anteroom"]} unless data storage luigis_mansion:data current_state.current_data{used_keys:["anteroom"]} if entity @s[scores={OpenMapFocus=1}] run data modify storage luigis_mansion:data entity.sparkle set value 1b
-execute if data storage luigis_mansion:data current_state.current_data{obtained_keys:["anteroom"]} unless data storage luigis_mansion:data current_state.current_data{used_keys:["anteroom"]} positioned 3682 110 0 run function luigis_mansion:selection_menu/game_boy_horror/map/spawn_key/variant_0/single
+execute if data storage luigis_mansion:data current_state.current_data{obtained_keys:["anteroom"]} unless data storage luigis_mansion:data current_state.current_data{used_keys:["anteroom"]} positioned 3682 110 13 run function luigis_mansion:selection_menu/game_boy_horror/map/spawn_key/normal/single

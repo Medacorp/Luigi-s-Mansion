@@ -7,4 +7,4 @@ tag @s[tag=appear] remove in_ice
 execute if entity @s[tag=!cutscene] run function luigis_mansion:entities/boo/ai/tick
 execute if entity @s[tag=cutscene] run function luigis_mansion:entities/boo/cutscene
 
-execute at @s run function luigis_mansion:entities/ghost/ai
+execute at @s[tag=!flee] run function luigis_mansion:entities/ghost/ai

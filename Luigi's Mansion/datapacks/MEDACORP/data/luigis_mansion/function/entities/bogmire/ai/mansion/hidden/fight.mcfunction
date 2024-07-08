@@ -1,7 +1,7 @@
 execute as @e[tag=bogmires_shadow] at @s run function luigis_mansion:entities/bogmire/ai/mansion/hidden/shadow
 
 execute unless entity @s[scores={Dialog=1..}] run scoreboard players add @s Dialog 1
-scoreboard players add @s[scores={VulnerableTime=0,Dialog=..179}] Dialog 1
+scoreboard players add @s[scores={VulnerableTime=0,Dialog=..109}] Dialog 1
 scoreboard players add @s[scores={VulnerableTime=0,Dialog=181..}] Dialog 1
 data remove entity @s[scores={Dialog=2}] data.animation
 tag @s[scores={Dialog=70,VulnerableTime=0}] remove visible

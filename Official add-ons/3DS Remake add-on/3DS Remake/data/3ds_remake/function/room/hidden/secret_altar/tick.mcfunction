@@ -1,6 +1,6 @@
 execute unless score #secret_altar Ticking matches 1 run function #3ds_remake:room/hidden/secret_altar/load
-execute as @a[x=634,y=92,z=-27,dx=20,dy=7,dz=18] unless entity @s[x=645,y=92,z=-9,dx=6,dy=7,dz=10] unless entity @s[scores={Room=72}] run scoreboard players operation @s LastRoom = @s Room
-execute as @e[x=634,y=92,z=-27,dx=20,dy=7,dz=18] unless entity @s[x=645,y=92,z=-9,dx=6,dy=7,dz=10] run scoreboard players set @s Room 72
+execute as @a[x=634,y=92,z=-27,dx=20,dy=7,dz=18] unless entity @s[scores={Room=72}] run scoreboard players operation @s LastRoom = @s Room
+execute as @e[x=634,y=92,z=-27,dx=20,dy=7,dz=18] run scoreboard players set @s Room 72
 #todelete - needed for room-triggered shake sounds
 scoreboard players set #temp Room 72
 #/todelete

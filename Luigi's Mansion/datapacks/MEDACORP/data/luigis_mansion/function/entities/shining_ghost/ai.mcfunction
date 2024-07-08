@@ -11,7 +11,6 @@ execute if entity @s[tag=spit,tag=!played_spit_sound] run playsound luigis_mansi
 tag @s[tag=spit] add played_spit_sound
 execute if entity @s[tag=!in_vacuum,tag=!spit] run function luigis_mansion:entities/shining_ghost/fall
 execute if entity @s[tag=collision,tag=spit] run function luigis_mansion:entities/shining_ghost/capture
-tag @s[tag=collision,tag=spit] add dead
 tag @s[tag=collision] remove spit
 tag @s[tag=collision] remove collision
 execute at @s[tag=in_vacuum,tag=!spit] run function luigis_mansion:entities/shining_ghost/roll_to_player

@@ -26,7 +26,7 @@ data remove entity @s[scores={Dialog=1}] data.animation
 teleport @s[scores={Dialog=1..20,Health=..5000}] ~ ~ ~ -180 0
 teleport @s[scores={Dialog=1..20,Health=5001..}] ~ ~ ~ 0 0
 execute if entity @s[scores={Dialog=20}] run data modify storage luigis_mansion:data entity set value {owner:0,tags:["zigzag_left"]}
-execute if entity @s[scores={Dialog=20}] store result storage luigis_mansion:data entity.owner int 1 run scoreboard players get @s GhostNr
+execute if entity @s[scores={Dialog=20}] run data modify storage luigis_mansion:data entity.owner set from entity @s UUID
 execute if entity @s[scores={Dialog=20,Health=..5000}] run data modify storage luigis_mansion:data entity.tags set value ["zigzag_right","fast"]
 execute if entity @s[scores={Dialog=20,Health=..5000}] positioned ~-2.5 ~1 ~-11.5 rotated 0 0 run function luigis_mansion:spawn_entities/rocking_horse/big
 execute if entity @s[scores={Dialog=20,Health=5001..}] positioned ~-2.5 ~1 ~11.5 rotated -180 0 run function luigis_mansion:spawn_entities/rocking_horse/big
@@ -37,7 +37,7 @@ execute if entity @s[scores={Dialog=22}] rotated -90 10 as @e[tag=rocking_horse,
 teleport @s[scores={Dialog=61..80,Health=..5000}] ~ ~ ~ 0 0
 teleport @s[scores={Dialog=61..80,Health=5001..}] ~ ~ ~ -180 0
 execute if entity @s[scores={Dialog=80}] run data modify storage luigis_mansion:data entity set value {owner:0,tags:["zigzag_right"]}
-execute if entity @s[scores={Dialog=80}] store result storage luigis_mansion:data entity.owner int 1 run scoreboard players get @s GhostNr
+execute if entity @s[scores={Dialog=80}] run data modify storage luigis_mansion:data entity.owner set from entity @s UUID
 execute if entity @s[scores={Dialog=80,Health=..5000}] run data modify storage luigis_mansion:data entity.tags set value ["zigzag_left","fast"]
 execute if entity @s[scores={Dialog=80,Health=..5000}] positioned ~-2.5 ~1 ~11.5 rotated -180 0 run function luigis_mansion:spawn_entities/rocking_horse/big
 execute if entity @s[scores={Dialog=80,Health=5001..}] positioned ~-2.5 ~1 ~-11.5 rotated 0 0 run function luigis_mansion:spawn_entities/rocking_horse/big
@@ -47,10 +47,10 @@ tag @s[scores={Dialog=82}] add fake_attack
 execute if entity @s[scores={Dialog=82}] rotated -90 10 as @e[tag=rocking_horse,limit=1] run function luigis_mansion:entities/rocking_horse/trigger_attack
 teleport @s[scores={Dialog=121..140}] ~ ~ ~ -90 0
 execute if entity @s[scores={Dialog=140}] run data modify storage luigis_mansion:data entity set value {owner:0,tags:["zigzag_right","fast"]}
-execute if entity @s[scores={Dialog=140}] store result storage luigis_mansion:data entity.owner int 1 run scoreboard players get @s GhostNr
+execute if entity @s[scores={Dialog=140}] run data modify storage luigis_mansion:data entity.owner set from entity @s UUID
 execute if entity @s[scores={Dialog=140}] positioned ~-2.5 ~1 ~-11.5 rotated 0 0 run function luigis_mansion:spawn_entities/rocking_horse/big
 execute if entity @s[scores={Dialog=140}] run data modify storage luigis_mansion:data entity set value {owner:0,tags:["zigzag_right","fast"]}
-execute if entity @s[scores={Dialog=140}] store result storage luigis_mansion:data entity.owner int 1 run scoreboard players get @s GhostNr
+execute if entity @s[scores={Dialog=140}] run data modify storage luigis_mansion:data entity.owner set from entity @s UUID
 execute if entity @s[scores={Dialog=140}] positioned ~-2.5 ~1 ~11.5 rotated -180 0 run function luigis_mansion:spawn_entities/rocking_horse/big
 execute if entity @s[scores={Dialog=141..381}] facing entity @e[tag=same_room,tag=!spectator,tag=player,sort=nearest,limit=1] feet run teleport @s ~ ~ ~ ~ 0
 data modify entity @s[scores={Dialog=141}] data.animation set value {namespace:"luigis_mansion",id:"ramble"}
@@ -60,21 +60,21 @@ data modify entity @s[scores={Dialog=240},tag=!laugh] data.animation set value {
 data modify entity @s[scores={Dialog=260},tag=!laugh] data.animation set value {namespace:"luigis_mansion",id:"grab_rambler"}
 data modify entity @s[scores={Dialog=280},tag=!laugh] data.animation set value {namespace:"luigis_mansion",id:"ramble"}
 execute if entity @s[scores={Dialog=280}] run data modify storage luigis_mansion:data entity set value {owner:0}
-execute if entity @s[scores={Dialog=280}] store result storage luigis_mansion:data entity.owner int 1 run scoreboard players get @s GhostNr
+execute if entity @s[scores={Dialog=280}] run data modify storage luigis_mansion:data entity.owner set from entity @s UUID
 execute if entity @s[scores={Dialog=280},tag=!laugh] positioned ~17 ~3 ~-6.5 facing entity @e[tag=same_room,tag=!spectator,tag=player,sort=nearest,limit=1] feet rotated ~ 0 run function luigis_mansion:spawn_entities/ball/chauncey/big
 execute if entity @s[scores={Dialog=300}] run data modify storage luigis_mansion:data entity set value {owner:0}
-execute if entity @s[scores={Dialog=300}] store result storage luigis_mansion:data entity.owner int 1 run scoreboard players get @s GhostNr
+execute if entity @s[scores={Dialog=300}] run data modify storage luigis_mansion:data entity.owner set from entity @s UUID
 execute if entity @s[scores={Dialog=300},tag=!laugh] positioned ~17 ~3 ~6.5 facing entity @e[tag=same_room,tag=!spectator,tag=player,sort=nearest,limit=1] feet rotated ~ 0 run function luigis_mansion:spawn_entities/ball/chauncey/big
 data modify entity @s[scores={Dialog=310},tag=!laugh] data.animation set value {namespace:"luigis_mansion",id:"grab_rambler"}
 execute if entity @s[scores={Dialog=320}] run data modify storage luigis_mansion:data entity set value {owner:0}
-execute if entity @s[scores={Dialog=320}] store result storage luigis_mansion:data entity.owner int 1 run scoreboard players get @s GhostNr
+execute if entity @s[scores={Dialog=320}] run data modify storage luigis_mansion:data entity.owner set from entity @s UUID
 execute if entity @s[scores={Dialog=320},tag=!laugh] positioned ~2 ~3 ~ facing entity @e[tag=same_room,tag=!spectator,tag=player,sort=nearest,limit=1] feet rotated ~ 0 run function luigis_mansion:spawn_entities/ball/chauncey/real
 data modify entity @s[scores={Dialog=330},tag=!laugh] data.animation set value {namespace:"luigis_mansion",id:"ramble"}
 execute if entity @s[scores={Dialog=340}] run data modify storage luigis_mansion:data entity set value {owner:0}
-execute if entity @s[scores={Dialog=340}] store result storage luigis_mansion:data entity.owner int 1 run scoreboard players get @s GhostNr
+execute if entity @s[scores={Dialog=340}] run data modify storage luigis_mansion:data entity.owner set from entity @s UUID
 execute if entity @s[scores={Dialog=340},tag=!laugh] positioned ~17 ~3 ~-6.5 facing entity @e[tag=same_room,tag=!spectator,tag=player,sort=nearest,limit=1] feet rotated ~ 0 run function luigis_mansion:spawn_entities/ball/chauncey/big
 execute if entity @s[scores={Dialog=360}] run data modify storage luigis_mansion:data entity set value {owner:0}
-execute if entity @s[scores={Dialog=360}] store result storage luigis_mansion:data entity.owner int 1 run scoreboard players get @s GhostNr
+execute if entity @s[scores={Dialog=360}] run data modify storage luigis_mansion:data entity.owner set from entity @s UUID
 execute if entity @s[scores={Dialog=360},tag=!laugh] positioned ~17 ~3 ~6.5 facing entity @e[tag=same_room,tag=!spectator,tag=player,sort=nearest,limit=1] feet rotated ~ 0 run function luigis_mansion:spawn_entities/ball/chauncey/big
 tag @s[scores={Dialog=380..539}] add laugh
 scoreboard players set @s[scores={Dialog=381..539}] ActionTime 1
@@ -121,7 +121,7 @@ execute at @s[y_rotation=-45..45,scores={Dialog=945},tag=!left] unless block ^ ^
 execute at @s[y_rotation=135..-135,scores={Dialog=945},tag=left] unless block ^ ^1 ^2 #luigis_mansion:all_ignore run teleport @s ~ ~ ~ ~-90 0
 execute at @s[y_rotation=-135..-45,scores={Dialog=945},tag=left] unless block ^ ^1 ^2 #luigis_mansion:all_ignore run teleport @s ~ ~ ~ ~-90 0
 execute at @s[y_rotation=-45..45,scores={Dialog=945},tag=left] unless block ^ ^1 ^2 #luigis_mansion:all_ignore run teleport @s ~ ~ ~ ~-90 0
-execute at @s[y_rotation=45..135,scores={Dialog=945},x=792.0,dx=1] run scoreboard players add @s Dialog 1
+execute at @s positioned ~ ~-0.5 ~-0.5 if entity @s[y_rotation=45..135,scores={Dialog=945},x=792.0,dx=1] run scoreboard players add @s Dialog 1
 scoreboard players set @s[scores={Dialog=945,PathStep=10}] PathStep 0
 scoreboard players reset @s[scores={Dialog=946}] PathStep
 teleport @s[scores={Dialog=946}] 792.0 20 -48.0

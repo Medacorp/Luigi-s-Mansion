@@ -1,7 +1,7 @@
 function luigis_mansion:entities/ghost/get_target
 function luigis_mansion:entities/ghost/ai
 
-function luigis_mansion:entities/bowser/find_body with entity @s data
+function luigis_mansion:entities/bowser_head/find_body with entity @s data
 
 $execute if entity @s[tag=!decapitate,tag=!reattach,tag=!reattach_backwards,tag=!dying] run function $(namespace):entities/bowser_head/ai/$(id)
 

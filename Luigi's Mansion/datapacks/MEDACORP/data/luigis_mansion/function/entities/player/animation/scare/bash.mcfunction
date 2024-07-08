@@ -21,6 +21,7 @@ execute at @s[scores={AnimationProgress=30,TeleportDelayTimer=0},tag=!bash_no_mo
 scoreboard players operation @s TeleportDelay = @s TeleportDelaySetting
 execute at @s[scores={AnimationProgress=30,TeleportDelayTimer=0},tag=!bash_no_move] rotated ~ 0 run function luigis_mansion:entities/player/animation/scare/bash_move
 scoreboard players remove @s[scores={MaxHealthTime=1..,AnimationProgress=30}] AnimationProgress 1
+kill @e[tag=temp,limit=1]
 
 execute at @s if block ~ ~2 ~ #luigis_mansion:players_ignore unless block ~ ~1.9 ~ #luigis_mansion:players_ignore run teleport @s ~ ~-0.16 ~
 execute at @s unless block ~ ~ ~ #luigis_mansion:players_ignore if block ~ ~0.1 ~ #luigis_mansion:players_ignore run teleport @s ~ ~0.16 ~

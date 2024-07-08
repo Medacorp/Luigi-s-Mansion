@@ -1,3 +1,4 @@
+scoreboard players set @s ActionTime 0
 tag @s remove attack
 tag @s add complain
 tag @s add stunable

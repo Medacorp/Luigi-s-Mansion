@@ -1,4 +1,4 @@
-execute unless entity @s[scores={WaitTime=0..}] run scoreboard players set @s WaitTime 0
+execute unless entity @s[scores={WaitTime=-80..}] run scoreboard players set @s WaitTime 0
 execute if entity @s[tag=!no_wind] run function luigis_mansion:entities/clockwork_soldier/ai/mansion/normal/find_wind with entity @s
 
 execute if entity @s[tag=activated,tag=!was_activated,scores={WaitTime=0}] run function luigis_mansion:entities/clockwork_soldier/ai/mansion/normal/activate
@@ -10,8 +10,11 @@ execute at @s[tag=!visible] run function luigis_mansion:entities/clockwork_soldi
 data modify entity @s[tag=was_activated,tag=!attack,tag=!complain] data.animation set value {namespace:"luigis_mansion",id:"walk"}
 data remove entity @s[tag=!activated] data.animation
 
-execute if entity @s[tag=was_activated,tag=!complain,tag=!attack,tag=!no_wind,scores={WaitTime=0}] positioned ^ ^ ^0.7 at @e[tag=same_room,tag=!spectator,tag=player,distance=..1,limit=1] run function luigis_mansion:entities/ghost/set_target_to_attack
+execute if entity @s[tag=was_activated,tag=!complain,tag=!attack,tag=!no_wind,scores={WaitTime=..0}] positioned ^ ^ ^0.7 at @e[tag=same_room,tag=!spectator,tag=player,distance=..1,limit=1] run function luigis_mansion:entities/ghost/set_target_to_attack
 
+scoreboard players set @s[scores={WaitTime=-80}] TargetTask 0
+data remove entity @s[scores={WaitTime=-80}] data.target_pos
+tag @s[scores={WaitTime=-80}] add reached_target
 scoreboard players set @s[tag=reached_target] WaitTime 40
 tag @s remove reached_target
 data modify entity @s[tag=was_activated,tag=!attack,tag=!complain,scores={WaitTime=0,TargetTask=0}] data.target_pos set from entity @e[tag=target,sort=nearest,limit=1] Pos
@@ -19,7 +22,7 @@ data modify entity @s[tag=was_activated,tag=!attack,tag=!complain,scores={WaitTi
 scoreboard players set @s[tag=was_activated,tag=!attack,tag=!complain,scores={WaitTime=0}] TargetTask 3
 scoreboard players set @s[scores={ActionTime=3},tag=complain] VulnerableTime 60
 tag @s[scores={VulnerableTime=1}] add vanish
-scoreboard players remove @s[scores={WaitTime=1..}] WaitTime 1
+scoreboard players remove @s[tag=activated] WaitTime 1
 
 execute at @s[tag=!no_wind] rotated ~ 0 positioned ^ ^ ^-0.5 run teleport @e[tag=this_wind,limit=1] ~ ~0.1 ~ ~ ~
 execute store result score #temp Time run data get entity @e[tag=this_wind,limit=1] Pose.Head[2]

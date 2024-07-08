@@ -1,7 +1,5 @@
 playsound luigis_mansion:item.poison_mushroom.wear_out player @a[tag=same_room] ~ ~ ~ 1
-scoreboard players operation #temp ID = @s ID
-execute as @e[tag=model_piece,nbt={Small:1b}] if score @s ID = #temp ID run data merge entity @s {Small:0b}
-scoreboard players reset #temp ID
+attribute @s minecraft:generic.scale base set 1
 
 function luigis_mansion:entities/player/memory/get with entity @s
 data modify storage luigis_mansion:data inventory set from storage luigis_mansion:data my_memory.inventory

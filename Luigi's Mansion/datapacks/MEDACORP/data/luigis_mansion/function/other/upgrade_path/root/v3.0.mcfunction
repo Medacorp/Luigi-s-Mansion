@@ -76,7 +76,6 @@ scoreboard objectives remove HomeRotY
 scoreboard objectives remove InteractionType
 scoreboard objectives remove JarvisChoice
 scoreboard objectives remove Jump
-scoreboard objectives remove JumpHeight
 scoreboard objectives remove Keys
 scoreboard objectives remove KnockbackType
 scoreboard objectives remove KnockbackTime

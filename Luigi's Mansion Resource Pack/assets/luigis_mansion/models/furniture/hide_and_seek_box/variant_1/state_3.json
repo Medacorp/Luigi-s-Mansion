@@ -2,6 +2,6 @@
 	"parent": "luigis_mansion:furniture/hide_and_seek_box/state_3",
 	"textures": {
 		"side": "luigis_mansion:furniture/hide_and_seek_box/variant_1",
-		"top": "#side"
+		"end": "#side"
 	}
 }

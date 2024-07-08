@@ -31,6 +31,8 @@ entity:{
     attack_type:"<type>", //Ghost attack type to use, differs per ghost, see IDs in use for valid values.
     second_flee_damage:X, //How much damage this ghost can take in one suction before it enters its second flee state, escaping 2.5 seconds later. If absent, never enters second flee state.
     affected_by:["<method>"], //The methods this portrait ghost is affected by aside from vacuuming. Allowed values: dust, fire, water, ice. Default = none.
+    drop_pearls:0b, //Whether this portrait ghost should drop pearls. Default = 1b.
+    drop_poison_mushrooms:0b, //Whether this portrait ghost should drop poison mushrooms. Default = 1b.
     training_room_score:X, //Score granted to the one who reeled in the ghost in the training room. Default = 0.
     
     //Ghost default overwrites

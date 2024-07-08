@@ -1,5 +1,5 @@
 
-teleport @s[scores={PositionIntX=654}] ~-2 ~90 ~
+teleport @s[scores={PositionIntX=654}] ~-2 ~91 ~
 teleport @s[scores={PositionIntX=685}] ~16 ~ ~
 teleport @s[scores={PositionIntZ=-15}] ~ ~ ~-1
 teleport @s[scores={PositionIntZ=-21}] ~ ~ ~1

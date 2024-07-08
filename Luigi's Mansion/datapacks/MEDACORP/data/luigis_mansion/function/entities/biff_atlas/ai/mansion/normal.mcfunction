@@ -20,6 +20,8 @@ scoreboard players set @s[scores={Dialog=121}] TargetTask 1
 execute if entity @s[scores={Dialog=121},tag=!laugh] positioned ^ ^ ^0.7 at @e[tag=same_room,tag=!spectator,tag=player,distance=..2,limit=1] run function luigis_mansion:entities/ghost/set_target_to_attack
 execute if entity @s[scores={Dialog=121},tag=!angry,tag=!attack,tag=!laugh] run playsound luigis_mansion:entity.biff_atlas.complain hostile @a[tag=same_room] ~ ~ ~ 1
 tag @s[scores={Dialog=121},tag=!angry,tag=!attack,tag=!laugh] add angry
+data remove entity @s[scores={Dialog=121},tag=!attack,tag=!laugh] data.animation
+scoreboard players set @s[scores={Dialog=122}] TargetTask 0
 tag @s[scores={Dialog=122}] remove attack
 tag @s[scores={Dialog=122}] remove laugh
 data modify entity @s[scores={Dialog=122}] data.animation set value {namespace:"luigis_mansion",id:"knocked_back"}
@@ -29,6 +31,9 @@ tag @s[scores={Dialog=240},tag=!ko] add ko
 tag @s[scores={Dialog=240..241},tag=!laugh] add attack
 scoreboard players set @s[scores={Dialog=241}] TargetTask 1
 execute if entity @s[scores={Dialog=241}] facing entity @e[tag=same_room,tag=target,sort=nearest,limit=1] feet rotated ~ 0 run teleport @s ~ ~ ~ ~ ~
+scoreboard players set @s[scores={Dialog=242}] TargetTask 0
+tag @s[scores={Dialog=242}] remove attack
+tag @s[scores={Dialog=242}] remove laugh
 data modify entity @s[scores={Dialog=242}] data.animation set value {namespace:"luigis_mansion",id:"knocked_out"}
 execute if entity @s[scores={Dialog=242..261}] run teleport @s ^ ^ ^0.1
 scoreboard players set @s[scores={Dialog=282}] VulnerableTime 80

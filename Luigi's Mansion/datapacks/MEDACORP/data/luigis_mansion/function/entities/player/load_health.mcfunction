@@ -3,6 +3,7 @@ tag @s[tag=!killed] add revived
 
 scoreboard players set @s[tag=revived] Health 100
 tag @s[tag=revived] remove dead_player
+tag @s[tag=revived] remove stop_model
 tag @s[tag=revived,gamemode=!spectator] remove revived
 gamemode adventure @s[tag=revived]
 

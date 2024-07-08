@@ -7,7 +7,7 @@ tag @s remove me
 tag @s remove looking_at_map
 tag @s remove stop_model
 function luigis_mansion:entities/player/animation/set/none
-execute unless entity @a[tag=looking_at_map,limit=1] run kill @e[type=minecraft:armor_stand,tag=display]
+execute unless entity @a[tag=looking_at_map,limit=1] run tag @e[tag=map_key] add dead
 tag @s add seen_room_name
 title @s subtitle ""
 scoreboard players set @s UseItem 0
@@ -21,4 +21,5 @@ execute at @s run function luigis_mansion:entities/player/refresh_model
 execute at @s run playsound luigis_mansion:item.game_boy_horror.map.close player @a[tag=same_room] ~ ~ ~ 1
 tag @s remove selection_menu_free_to_move
 tag @s remove zoom_in
+function luigis_mansion:main/update_last_position
 execute unless data storage luigis_mansion:data selected_option{id:"exit"} run function luigis_mansion:selection_menu/game_boy_horror/original_menu

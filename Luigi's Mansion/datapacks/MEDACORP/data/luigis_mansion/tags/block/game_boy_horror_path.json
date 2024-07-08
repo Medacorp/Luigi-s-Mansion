@@ -6,6 +6,7 @@
         "minecraft:light",
         "minecraft:barrier",
         "minecraft:stone_button",
-        "minecraft:ladder"
+        "minecraft:ladder",
+        "minecraft:light_gray_stained_glass"
     ]
 }

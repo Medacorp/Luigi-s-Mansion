@@ -96,6 +96,7 @@ scoreboard objectives add IdleTime dummy
 scoreboard objectives add IncreaseAmount dummy
 scoreboard objectives add InteractionTime dummy
 scoreboard objectives add Invulnerable dummy
+scoreboard objectives add JumpHeight dummy
 scoreboard objectives add KillerID dummy
 scoreboard objectives add KnockbackDamage dummy
 scoreboard objectives add KnockbackX dummy
@@ -265,7 +266,7 @@ execute unless score #extra_gallery Selected matches 0..1 run scoreboard players
 execute unless score #training_choice Selected matches 0..1 run scoreboard players set #training_choice Selected 0
 execute unless score #freeze_timer Selected matches 0..1 run scoreboard players set #freeze_timer Selected 0
 
-execute unless data storage luigis_mansion:data current_state run function luigis_mansion:other/upgrade_path/newly_installed
+execute unless data storage luigis_mansion:data current_state if entity @a[limit=1] run function luigis_mansion:other/upgrade_path/newly_installed
 
 gamerule doTileDrops false
 gamerule doEntityDrops false

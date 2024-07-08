@@ -1,5 +1,9 @@
 function luigis_mansion:entities/ghost/get_target
-function luigis_mansion:entities/ghost/ai
+tag @s remove vanish
+tag @s remove disappear
+execute if entity @s[tag=in_fire,tag=hurt_by_fire,tag=!burning_heart,tag=!watery_heart,tag=!hurt,tag=!appear,tag=!vanish] run function luigis_mansion:entities/ghost/hurt/fire
+execute if entity @s[tag=element_hurt] run function luigis_mansion:entities/ghost/hurt/element
+execute at @s[tag=!captured,tag=!dead] unless entity @s[scores={Health=1..}] unless entity @s[tag=!element_hurt,tag=!element_death] run function luigis_mansion:entities/fake_door/death
 tag @s add visible
 
 execute if entity @s[tag=element_hurt] run function luigis_mansion:entities/fake_door/burn

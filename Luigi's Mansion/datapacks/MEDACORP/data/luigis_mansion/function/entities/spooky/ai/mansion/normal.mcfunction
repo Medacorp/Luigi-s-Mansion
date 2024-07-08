@@ -41,6 +41,7 @@ execute if entity @s[scores={Dialog=162},tag=reached_target] store result entity
 scoreboard players set @s[scores={Dialog=162},tag=reached_target] TargetTask 0
 scoreboard players reset @s[scores={Dialog=162},tag=reached_target] Dialog
 data modify entity @s[scores={Dialog=163}] data.target_pos set from entity @e[tag=spooky_bone,limit=1] Pos
-data modify entity @s[scores={Dialog=163}] data.target_pos[1] set from entity @s Pos[1]
+execute if entity @s[scores={Dialog=163}] store result entity @s data.target_pos[1] double 0.01 run scoreboard players get @s HomeY
+execute if entity @e[tag=spooky_bone,scores={PathStep=0..},limit=1] run tag @s[scores={Dialog=163},tag=reached_target] remove reached_target
 scoreboard players set @s[scores={Dialog=163},tag=reached_target] VulnerableTime 5
 data modify entity @s[scores={Dialog=163},tag=reached_target] data.animation set value {namespace:"luigis_mansion",id:"lick"}

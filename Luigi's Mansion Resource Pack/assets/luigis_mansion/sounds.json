@@ -3376,6 +3376,48 @@
         ],
         "subtitle": "luigis_mansion:subtitles.entity.heart.flash"
     },
+    "entity.henry.ambient_1": {
+        "sounds": [
+            {
+                "name": "luigis_mansion:entity/henry_and_orville/engine_up1",
+                "stream": false
+            },
+            {
+                "name": "luigis_mansion:entity/henry_and_orville/engine_up2",
+                "stream": false
+            },
+            {
+                "name": "luigis_mansion:entity/henry_and_orville/engine_up3",
+                "stream": false
+            },
+            {
+                "name": "luigis_mansion:entity/henry_and_orville/engine_up4",
+                "stream": false
+            }
+        ],
+        "subtitle": "luigis_mansion:subtitles.entity.henry.ambient"
+    },
+    "entity.henry.ambient_2": {
+        "sounds": [
+            {
+                "name": "luigis_mansion:entity/henry_and_orville/engine_down1",
+                "stream": false
+            },
+            {
+                "name": "luigis_mansion:entity/henry_and_orville/engine_down2",
+                "stream": false
+            },
+            {
+                "name": "luigis_mansion:entity/henry_and_orville/engine_down3",
+                "stream": false
+            },
+            {
+                "name": "luigis_mansion:entity/henry_and_orville/engine_down4",
+                "stream": false
+            }
+        ],
+        "subtitle": "luigis_mansion:subtitles.entity.henry.ambient"
+    },
     "entity.henry.attack": {
         "sounds": [
             {
@@ -9127,6 +9169,24 @@
             }
         ],
         "subtitle": "luigis_mansion:subtitles.furniture.rocking_chair.rock"
+    },
+    "furniture.rocking_horse.move_forward": {
+        "sounds": [
+            {
+                "name": "luigis_mansion:furniture/rocking_horse/move_forward",
+                "stream": false
+            }
+        ],
+        "subtitle": "luigis_mansion:subtitles.furniture.rocking_horse.rock"
+    },
+    "furniture.rocking_horse.move_backward": {
+        "sounds": [
+            {
+                "name": "luigis_mansion:furniture/rocking_horse/move_backward",
+                "stream": false
+            }
+        ],
+        "subtitle": "luigis_mansion:subtitles.furniture.rocking_horse.rock"
     },
     "furniture.room_clear_chest.spawn": {
         "sounds": [

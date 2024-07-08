@@ -1,6 +1,6 @@
 execute unless data storage luigis_mansion:data current_state.current_data{used_keys:["hallway_3"]} run place template luigis_mansion:game_boy_horror_map/door/double_locked 3705 60 6
 execute if data storage luigis_mansion:data current_state.current_data{used_keys:["hallway_3"]} run place template luigis_mansion:game_boy_horror_map/door/double_unlocked 3705 60 6
-tag @e[tag=hallway_3,tag=display] add dead
+tag @e[tag=hallway_3,tag=map_key] add dead
 execute if data storage luigis_mansion:data current_state.current_data{obtained_keys:["hallway_3"]} unless data storage luigis_mansion:data current_state.current_data{used_keys:["hallway_3"]} run data modify storage luigis_mansion:data entity set value {tags:["hallway_3"]}
 execute if data storage luigis_mansion:data current_state.current_data{obtained_keys:["hallway_3"]} unless data storage luigis_mansion:data current_state.current_data{used_keys:["hallway_3"]} if entity @s[scores={OpenMapFocus=5}] run data modify storage luigis_mansion:data entity.sparkle set value 1b
-execute if data storage luigis_mansion:data current_state.current_data{obtained_keys:["hallway_3"]} unless data storage luigis_mansion:data current_state.current_data{used_keys:["hallway_3"]} positioned 3705 60 6 run function luigis_mansion:selection_menu/game_boy_horror/map/spawn_key/variant_1/double
+execute if data storage luigis_mansion:data current_state.current_data{obtained_keys:["hallway_3"]} unless data storage luigis_mansion:data current_state.current_data{used_keys:["hallway_3"]} positioned 3705 60 6 run function luigis_mansion:selection_menu/game_boy_horror/map/spawn_key/heart/double

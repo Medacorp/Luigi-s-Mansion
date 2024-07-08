@@ -6,3 +6,5 @@ execute if entity @s[scores={AnimationProgress=11..30}] store result entity @s P
 execute if entity @s[scores={AnimationProgress=31..40}] store result entity @s Pose.Head[0] float 1 run scoreboard players add #temp Time 2
 scoreboard players reset #temp Time
 scoreboard players set @s[scores={AnimationProgress=40}] AnimationProgress 0
+data modify entity @s Rotation[1] set from entity @s Pose.Head[0]
+execute at @s positioned ~ ~1.5 ~ run particle minecraft:dust{color:[1f,0f,1f],scale:1f} ^ ^-0.75 ^ 0 0 0 0 1

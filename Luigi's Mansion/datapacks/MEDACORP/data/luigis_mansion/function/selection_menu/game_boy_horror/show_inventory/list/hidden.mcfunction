@@ -1,1 +1,1 @@
-function luigis_mansion:selection_menu/game_boy_horror/show_inventory/list/hidden
+function luigis_mansion:selection_menu/game_boy_horror/show_inventory/list/normal

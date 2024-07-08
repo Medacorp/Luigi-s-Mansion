@@ -1,6 +1,6 @@
 execute unless data storage luigis_mansion:data current_state.current_data{used_keys:["cold_storage"]} run place template luigis_mansion:game_boy_horror_map/door/single_locked 3713 10 -15 clockwise_90
 execute if data storage luigis_mansion:data current_state.current_data{used_keys:["cold_storage"]} run place template luigis_mansion:game_boy_horror_map/door/single_unlocked 3713 10 -15 clockwise_90
-tag @e[tag=cold_storage,tag=display] add dead
+tag @e[tag=cold_storage,tag=map_key] add dead
 execute if data storage luigis_mansion:data current_state.current_data{obtained_keys:["cold_storage"]} unless data storage luigis_mansion:data current_state.current_data{used_keys:["cold_storage"]} run data modify storage luigis_mansion:data entity set value {tags:["cold_storage"]}
 execute if data storage luigis_mansion:data current_state.current_data{obtained_keys:["cold_storage"]} unless data storage luigis_mansion:data current_state.current_data{used_keys:["cold_storage"]} if entity @s[scores={OpenMapFocus=27}] run data modify storage luigis_mansion:data entity.sparkle set value 1b
-execute if data storage luigis_mansion:data current_state.current_data{obtained_keys:["cold_storage"]} unless data storage luigis_mansion:data current_state.current_data{used_keys:["cold_storage"]} positioned 3713 10 -15 run function luigis_mansion:selection_menu/game_boy_horror/map/spawn_key/variant_0/single_90
+execute if data storage luigis_mansion:data current_state.current_data{obtained_keys:["cold_storage"]} unless data storage luigis_mansion:data current_state.current_data{used_keys:["cold_storage"]} positioned 3713 10 -15 run function luigis_mansion:selection_menu/game_boy_horror/map/spawn_key/normal/single_90

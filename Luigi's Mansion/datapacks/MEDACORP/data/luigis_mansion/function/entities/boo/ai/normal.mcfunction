@@ -1,14 +1,14 @@
 execute if entity @s[tag=can_attack,tag=!frozen] if predicate luigis_mansion:boo/attack_chance run tag @s add attack
 
-execute at @s[tag=!rotated,tag=!wall] run function luigis_mansion:entities/boo/rotate
-execute if entity @s[scores={Time=600..},tag=no_escape] run function luigis_mansion:entities/boo/rotate_random
+execute at @s[tag=!rotated,tag=!wall,tag=!flee] run function luigis_mansion:entities/boo/rotate
+execute if entity @s[scores={Time=600..},tag=no_escape,tag=!flee] run function luigis_mansion:entities/boo/rotate_random
 execute if score #temp Move matches 1.. at @s[tag=move_up] unless entity @s[tag=up,x_rotation=-90] run function luigis_mansion:entities/boo/move/up
 execute if score #temp Move matches 1.. at @s[tag=!move_up] unless entity @s[tag=down,x_rotation=90] run function luigis_mansion:entities/boo/move/down
 execute if score #temp Move matches 1.. at @s[tag=up,x_rotation=-90] run function luigis_mansion:entities/boo/move/forward
 execute if score #temp Move matches 1.. at @s[tag=down,x_rotation=90] run function luigis_mansion:entities/boo/move/forward
 
 function luigis_mansion:entities/boo/direction with entity @s data.mansion
-execute if entity @s[tag=wall] run function luigis_mansion:entities/boo/ai/try_warp
+execute if entity @s[tag=wall,tag=!warped] run function luigis_mansion:entities/boo/ai/try_warp
 tag @s[tag=!up,tag=!down,tag=!north,tag=!south,tag=!east,tag=!west] add no_escape
 tag @s[tag=no_escape] add can_attack
 

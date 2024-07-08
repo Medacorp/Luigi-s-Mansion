@@ -1,7 +1,7 @@
 execute unless entity @s[scores={AttackType=2}] run scoreboard players set @s[scores={TargetTask=0,ActionTime=0}] TargetTask 1
 scoreboard players set @s[scores={AttackType=2,TargetTask=0,ActionTime=0}] TargetTask 6
 
-execute if entity @e[tag=exact_same_room,tag=!spectator,tag=player,distance=..0.7,limit=1] if entity @s[tag=!vanish,tag=!appear,scores={AttackType=1}] run function luigis_mansion:entities/blue_twirler/collide with entity @s data.entity
+execute if entity @e[tag=exact_same_room,tag=!spectator,tag=player,distance=..0.7,limit=1] if entity @s[tag=!vanish,tag=!appear] unless entity @s[scores={AttackType=1}] run function luigis_mansion:entities/blue_twirler/collide with entity @s data.entity
 execute if entity @s[tag=!collided,tag=!vanish,tag=!appear] run function luigis_mansion:entities/blue_twirler/try_attack
 
 execute if entity @s[tag=!attack,tag=!collided,tag=!vanish,tag=!laugh,tag=!complain,tag=!appear] run function luigis_mansion:entities/blue_twirler/haunt

@@ -56,7 +56,7 @@ execute if score #dialog Dialog matches 2007.. as @a[tag=same_room,tag=dialog_me
 scoreboard players reset @a[tag=same_room,tag=!spectator] WarpTime
 execute as @a[tag=same_room,tag=!spectator,tag=game_boy_horror_menu] run function luigis_mansion:selection_menu/game_boy_horror/exit
 tag @e[tag=e_gadd,tag=same_room,limit=1] remove freeze_animation
-tag @e[tag=same_room,nbt={data:{entity:{namespace:"luigis_mansion",id:"portrificationizing_ghost"}}},limit=1] remove no_ai
+tag @e[tag=same_room,nbt={ArmorItems:[{components:{"minecraft:custom_data":{entity:{namespace:"luigis_mansion",id:"portrificationizing_ghost"}}}}]}] remove no_ai
 execute if score #dialog Dialog matches 1 unless data storage luigis_mansion:data dialogs[0].portraits run data modify storage luigis_mansion:data dialogs[0].portraits set value {}
 execute if score #dialog Dialog matches 1 as @a[tag=same_room] run function luigis_mansion:other/music/set/portrificationizing
 execute if score #dialog Dialog matches 1 run function luigis_mansion:spawn_entities/portrificationizing_ghosts with storage luigis_mansion:data current_state.current_data.mansion_id
@@ -241,28 +241,28 @@ execute if score #dialog Dialog matches 1560 if score #temp2 Dialog matches 1 if
 execute if score #dialog Dialog matches 1560 if score #temp2 Dialog matches 1 if score #players Totals matches 2.. run tellraw @a[tag=same_room] {"type":"translatable","translate":"chat.type.text","with":[{"type":"translatable","translate":"luigis_mansion:entity.mansion","color":"green"},{"type":"translatable","translate":"luigis_mansion:dialog.ghost_portrificationizer_room.results.ghosts.1.more"}]}
 execute if score #dialog Dialog matches 1560 if score #temp2 Dialog matches 2.. if score #players Totals matches 1 run tellraw @a[tag=same_room] {"type":"translatable","translate":"chat.type.text","with":[{"type":"translatable","translate":"luigis_mansion:entity.mansion","color":"green"},{"type":"translatable","translate":"luigis_mansion:dialog.ghost_portrificationizer_room.results.ghosts","with":[{"score":{"name":"#temp2","objective":"Dialog"}}]}]}
 execute if score #dialog Dialog matches 1560 if score #temp2 Dialog matches 2.. if score #players Totals matches 2.. run tellraw @a[tag=same_room] {"type":"translatable","translate":"chat.type.text","with":[{"type":"translatable","translate":"luigis_mansion:entity.mansion","color":"green"},{"type":"translatable","translate":"luigis_mansion:dialog.ghost_portrificationizer_room.results.ghosts.more","with":[{"score":{"name":"#temp2","objective":"Dialog"}}]}]}
-execute if score #dialog Dialog matches 1560 if score #temp2 Dialog matches 1 as @a[tag=same_room] at @s run playsound luigis_mansion:furniture.painting.count player @s ~ ~ ~ 1 1
-execute if score #dialog Dialog matches 1561 if score #temp2 Dialog matches 2 as @a[tag=same_room] at @s run playsound luigis_mansion:furniture.painting.count player @s ~ ~ ~ 1 1.045
-execute if score #dialog Dialog matches 1562 if score #temp2 Dialog matches 3 as @a[tag=same_room] at @s run playsound luigis_mansion:furniture.painting.count player @s ~ ~ ~ 1 1.09
-execute if score #dialog Dialog matches 1563 if score #temp2 Dialog matches 4 as @a[tag=same_room] at @s run playsound luigis_mansion:furniture.painting.count player @s ~ ~ ~ 1 1.135
-execute if score #dialog Dialog matches 1564 if score #temp2 Dialog matches 5 as @a[tag=same_room] at @s run playsound luigis_mansion:furniture.painting.count player @s ~ ~ ~ 1 1.180
-execute if score #dialog Dialog matches 1565 if score #temp2 Dialog matches 6 as @a[tag=same_room] at @s run playsound luigis_mansion:furniture.painting.count player @s ~ ~ ~ 1 1.225
-execute if score #dialog Dialog matches 1566 if score #temp2 Dialog matches 7 as @a[tag=same_room] at @s run playsound luigis_mansion:furniture.painting.count player @s ~ ~ ~ 1 1.27
-execute if score #dialog Dialog matches 1567 if score #temp2 Dialog matches 8 as @a[tag=same_room] at @s run playsound luigis_mansion:furniture.painting.count player @s ~ ~ ~ 1 1.315
-execute if score #dialog Dialog matches 1568 if score #temp2 Dialog matches 9 as @a[tag=same_room] at @s run playsound luigis_mansion:furniture.painting.count player @s ~ ~ ~ 1 1.36
-execute if score #dialog Dialog matches 1569 if score #temp2 Dialog matches 10 as @a[tag=same_room] at @s run playsound luigis_mansion:furniture.painting.count player @s ~ ~ ~ 1 1.405
-execute if score #dialog Dialog matches 1570 if score #temp2 Dialog matches 11 as @a[tag=same_room] at @s run playsound luigis_mansion:furniture.painting.count player @s ~ ~ ~ 1 1.45
-execute if score #dialog Dialog matches 1571 if score #temp2 Dialog matches 12 as @a[tag=same_room] at @s run playsound luigis_mansion:furniture.painting.count player @s ~ ~ ~ 1 1.495
-execute if score #dialog Dialog matches 1572 if score #temp2 Dialog matches 13 as @a[tag=same_room] at @s run playsound luigis_mansion:furniture.painting.count player @s ~ ~ ~ 1 1.54
-execute if score #dialog Dialog matches 1573 if score #temp2 Dialog matches 14 as @a[tag=same_room] at @s run playsound luigis_mansion:furniture.painting.count player @s ~ ~ ~ 1 1.585
-execute if score #dialog Dialog matches 1574 if score #temp2 Dialog matches 15 as @a[tag=same_room] at @s run playsound luigis_mansion:furniture.painting.count player @s ~ ~ ~ 1 1.63
-execute if score #dialog Dialog matches 1575 if score #temp2 Dialog matches 16 as @a[tag=same_room] at @s run playsound luigis_mansion:furniture.painting.count player @s ~ ~ ~ 1 1.675
-execute if score #dialog Dialog matches 1576 if score #temp2 Dialog matches 17 as @a[tag=same_room] at @s run playsound luigis_mansion:furniture.painting.count player @s ~ ~ ~ 1 1.72
-execute if score #dialog Dialog matches 1577 if score #temp2 Dialog matches 18 as @a[tag=same_room] at @s run playsound luigis_mansion:furniture.painting.count player @s ~ ~ ~ 1 1.765
-execute if score #dialog Dialog matches 1578 if score #temp2 Dialog matches 19 as @a[tag=same_room] at @s run playsound luigis_mansion:furniture.painting.count player @s ~ ~ ~ 1 1.81
-execute if score #dialog Dialog matches 1579 if score #temp2 Dialog matches 20 as @a[tag=same_room] at @s run playsound luigis_mansion:furniture.painting.count player @s ~ ~ ~ 1 1.855
-execute if score #dialog Dialog matches 1580 if score #temp2 Dialog matches 21 as @a[tag=same_room] at @s run playsound luigis_mansion:furniture.painting.count player @s ~ ~ ~ 1 1.9
-execute if score #dialog Dialog matches 1581 if score #temp2 Dialog matches 22 as @a[tag=same_room] at @s run playsound luigis_mansion:furniture.painting.count player @s ~ ~ ~ 1 1.945
+execute if score #dialog Dialog matches 1560 if score #temp2 Dialog matches 1.. as @a[tag=same_room] at @s run playsound luigis_mansion:furniture.painting.count player @s ~ ~ ~ 1 1
+execute if score #dialog Dialog matches 1561 if score #temp2 Dialog matches 2.. as @a[tag=same_room] at @s run playsound luigis_mansion:furniture.painting.count player @s ~ ~ ~ 1 1.045
+execute if score #dialog Dialog matches 1562 if score #temp2 Dialog matches 3.. as @a[tag=same_room] at @s run playsound luigis_mansion:furniture.painting.count player @s ~ ~ ~ 1 1.09
+execute if score #dialog Dialog matches 1563 if score #temp2 Dialog matches 4.. as @a[tag=same_room] at @s run playsound luigis_mansion:furniture.painting.count player @s ~ ~ ~ 1 1.135
+execute if score #dialog Dialog matches 1564 if score #temp2 Dialog matches 5.. as @a[tag=same_room] at @s run playsound luigis_mansion:furniture.painting.count player @s ~ ~ ~ 1 1.180
+execute if score #dialog Dialog matches 1565 if score #temp2 Dialog matches 6.. as @a[tag=same_room] at @s run playsound luigis_mansion:furniture.painting.count player @s ~ ~ ~ 1 1.225
+execute if score #dialog Dialog matches 1566 if score #temp2 Dialog matches 7.. as @a[tag=same_room] at @s run playsound luigis_mansion:furniture.painting.count player @s ~ ~ ~ 1 1.27
+execute if score #dialog Dialog matches 1567 if score #temp2 Dialog matches 8.. as @a[tag=same_room] at @s run playsound luigis_mansion:furniture.painting.count player @s ~ ~ ~ 1 1.315
+execute if score #dialog Dialog matches 1568 if score #temp2 Dialog matches 9.. as @a[tag=same_room] at @s run playsound luigis_mansion:furniture.painting.count player @s ~ ~ ~ 1 1.36
+execute if score #dialog Dialog matches 1569 if score #temp2 Dialog matches 10.. as @a[tag=same_room] at @s run playsound luigis_mansion:furniture.painting.count player @s ~ ~ ~ 1 1.405
+execute if score #dialog Dialog matches 1570 if score #temp2 Dialog matches 11.. as @a[tag=same_room] at @s run playsound luigis_mansion:furniture.painting.count player @s ~ ~ ~ 1 1.45
+execute if score #dialog Dialog matches 1571 if score #temp2 Dialog matches 12.. as @a[tag=same_room] at @s run playsound luigis_mansion:furniture.painting.count player @s ~ ~ ~ 1 1.495
+execute if score #dialog Dialog matches 1572 if score #temp2 Dialog matches 13.. as @a[tag=same_room] at @s run playsound luigis_mansion:furniture.painting.count player @s ~ ~ ~ 1 1.54
+execute if score #dialog Dialog matches 1573 if score #temp2 Dialog matches 14.. as @a[tag=same_room] at @s run playsound luigis_mansion:furniture.painting.count player @s ~ ~ ~ 1 1.585
+execute if score #dialog Dialog matches 1574 if score #temp2 Dialog matches 15.. as @a[tag=same_room] at @s run playsound luigis_mansion:furniture.painting.count player @s ~ ~ ~ 1 1.63
+execute if score #dialog Dialog matches 1575 if score #temp2 Dialog matches 16.. as @a[tag=same_room] at @s run playsound luigis_mansion:furniture.painting.count player @s ~ ~ ~ 1 1.675
+execute if score #dialog Dialog matches 1576 if score #temp2 Dialog matches 17.. as @a[tag=same_room] at @s run playsound luigis_mansion:furniture.painting.count player @s ~ ~ ~ 1 1.72
+execute if score #dialog Dialog matches 1577 if score #temp2 Dialog matches 18.. as @a[tag=same_room] at @s run playsound luigis_mansion:furniture.painting.count player @s ~ ~ ~ 1 1.765
+execute if score #dialog Dialog matches 1578 if score #temp2 Dialog matches 19.. as @a[tag=same_room] at @s run playsound luigis_mansion:furniture.painting.count player @s ~ ~ ~ 1 1.81
+execute if score #dialog Dialog matches 1579 if score #temp2 Dialog matches 20.. as @a[tag=same_room] at @s run playsound luigis_mansion:furniture.painting.count player @s ~ ~ ~ 1 1.855
+execute if score #dialog Dialog matches 1580 if score #temp2 Dialog matches 21.. as @a[tag=same_room] at @s run playsound luigis_mansion:furniture.painting.count player @s ~ ~ ~ 1 1.9
+execute if score #dialog Dialog matches 1581 if score #temp2 Dialog matches 22.. as @a[tag=same_room] at @s run playsound luigis_mansion:furniture.painting.count player @s ~ ~ ~ 1 1.945
 execute if score #dialog Dialog matches 1582 if score #temp2 Dialog matches 23 as @a[tag=same_room] at @s run playsound luigis_mansion:furniture.painting.count player @s ~ ~ ~ 1 1.99
 #1583
 execute if score #dialog Dialog matches 1584..2004 run scoreboard players operation #temp2 Dialog = #dialog Dialog

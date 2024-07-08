@@ -24,4 +24,4 @@ execute if entity @s[scores={FurnitureXProgress=84,FurnitureXTarget=-200..200}] 
 execute if entity @s[scores={FurnitureXProgress=84,FurnitureXTarget=-300..300}] unless entity @s[scores={FurnitureXTarget=-200..200}] run playsound luigis_mansion:furniture.search.swing block @a[tag=same_room] ~ ~ ~ 1 0.8
 execute if entity @s[scores={FurnitureXProgress=84}] unless entity @s[scores={FurnitureXTarget=-300..300}] run playsound luigis_mansion:furniture.search.swing block @a[tag=same_room] ~ ~ ~ 1 1
 
-scoreboard players operation @s FurnitureVacuum = @s FurnitureXTarget
+execute if entity @s[scores={FurnitureXTarget=-900..900}] run scoreboard players operation @s FurnitureVacuum = @s FurnitureXTarget

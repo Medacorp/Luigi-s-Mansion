@@ -1,6 +1,6 @@
 execute if score #dialog Dialog matches 438 run scoreboard players add #dialog Dialog 1
 execute if entity @a[scores={Health=..1},tag=same_room] run scoreboard players set #dialog Dialog 438
-execute if score #dialog Dialog matches 417..436 if entity @a[tag=same_room,tag=next_dialog_line,limit=1] run scoreboard players add #dialog Dialog 1
+execute if score #dialog Dialog matches 417..436 if entity @a[tag=same_room,tag=next_dialog_line,limit=1] run scoreboard players set #dialog Dialog 437
 execute if score #dialog Dialog matches 416..435 run scoreboard players add #dialog Dialog 1
 execute if score #dialog Dialog matches 395..414 if entity @a[tag=same_room,tag=next_dialog_line,limit=1] run scoreboard players add #dialog Dialog 1
 execute if score #dialog Dialog matches 394..413 run scoreboard players add #dialog Dialog 1

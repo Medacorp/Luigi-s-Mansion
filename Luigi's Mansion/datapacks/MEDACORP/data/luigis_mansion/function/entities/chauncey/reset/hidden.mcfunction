@@ -1,1 +1,1 @@
-function luigis_mansion:entities/boolossus/reset/normal
+function luigis_mansion:entities/chauncey/reset/normal

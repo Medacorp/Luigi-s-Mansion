@@ -10,8 +10,9 @@ execute if score #dialog Dialog matches 128.. as @a[tag=same_room,tag=dialog_men
 scoreboard players reset @a[tag=same_room,tag=!spectator] WarpTime
 execute as @a[tag=same_room,tag=!spectator,tag=game_boy_horror_menu] run function luigis_mansion:selection_menu/game_boy_horror/exit
 tag @a[tag=same_room,limit=1] add disable_interact
-tag @e[tag=same_room,tag=ghost,limit=1] remove no_ai
-tag @e[tag=same_room,tag=ghost,limit=1] remove freeze_animation
+tag @e[tag=same_room,tag=ghost] remove no_ai
+tag @e[tag=same_room,tag=ghost] remove freeze_animation
+tag @e[tag=same_room,tag=ball] remove no_ai
 execute if score #dialog Dialog matches 1..147 as @a[tag=same_room,tag=!spectator] run function luigis_mansion:other/music/set/danger
 execute if score #dialog Dialog matches 1 run data modify entity @e[nbt={data:{entity:{namespace:"luigis_mansion",id:"chauncey"}}},tag=same_room,limit=1] data.animation set value {namespace:"luigis_mansion",id:"knocked_back"}
 execute if score #dialog Dialog matches 1 at @e[nbt={data:{entity:{namespace:"luigis_mansion",id:"chauncey"}}},tag=same_room,limit=1] run playsound luigis_mansion:entity.chauncey.hit_by_ball hostile @a[tag=same_room] ~ ~ ~ 1

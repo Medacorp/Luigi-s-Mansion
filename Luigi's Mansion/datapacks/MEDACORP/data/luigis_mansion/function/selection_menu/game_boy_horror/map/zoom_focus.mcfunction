@@ -28,4 +28,4 @@ effect give @s[scores={MapZoomTime=38}] minecraft:speed infinite 6 true
 effect give @s[scores={MapZoomTime=39}] minecraft:speed infinite 7 true
 effect give @s[scores={MapZoomTime=40}] minecraft:speed infinite 8 true
 scoreboard players reset @s[scores={MapZoomTime=40}] OpenMapFocus
-scoreboard players reset @s[scores={MapZoomTime=40}] MapZoomTime
+scoreboard players set @s[scores={MapZoomTime=40}] MapZoomTime 0

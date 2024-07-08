@@ -21,6 +21,8 @@ scoreboard players operation #temp Room = @s Room
 execute as @e[tag=!model_piece,tag=!reflection] run function luigis_mansion:main/get_same_room
 scoreboard players reset #temp Room
 
+execute if entity @s[tag=!joined] run function luigis_mansion:other/join_world
+
 execute if entity @s[tag=show_credits] run function luigis_mansion:credits
 execute at @s[gamemode=!spectator] run function luigis_mansion:entities/player/not_spectator
 execute if entity @s[gamemode=!spectator,scores={Shrunk=1..},tag=!disable_second_small_run] run scoreboard players operation @s OtherX = @s PositionX
@@ -37,7 +39,6 @@ execute if entity @s[gamemode=spectator] run function luigis_mansion:entities/pl
 execute if entity @s[scores={Shrunk=1}] run function luigis_mansion:items/poison_mushroom/readd_inventory
 scoreboard players remove @s[scores={Shrunk=1..}] Shrunk 1
 
-execute if entity @s[tag=!joined] run function luigis_mansion:other/join_world
 execute unless entity @s[scores={Offline=0}] run function luigis_mansion:other/log_on
 execute if entity @s[scores={ChangedMansion=1}] run function luigis_mansion:entities/player/changed_mansion
 

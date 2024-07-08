@@ -1,1 +1,1 @@
-$function $(namespace):entities/boo/direction/$(id)
+$execute at @s positioned ~-0.5 ~-0.5 ~-0.5 run function $(namespace):entities/boo/direction/$(id)

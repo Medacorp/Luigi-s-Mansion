@@ -1,1 +1,1 @@
-execute if data storage luigis_mansion:data entity{drops_pearls:0b} run tag @e[tag=this_entity,limit=1] remove pearl_dropper
+execute if data storage luigis_mansion:data entity{drop_pearls:0b} run tag @e[tag=this_entity,limit=1] remove pearl_dropper

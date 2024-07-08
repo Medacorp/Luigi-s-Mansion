@@ -29,6 +29,7 @@ execute if entity @s[tag=vacuumable] if block ~ ~0.8 ~ #luigis_mansion:ghosts_ig
 scoreboard players set @s[scores={Dialog=1..}] ActionTime 0
 tag @s[scores={Dialog=1..}] add vacuumable
 tag @s[scores={Dialog=1..}] add pulled_by_vacuum
+tag @s[scores={Dialog=1..}] add pull_ignores_collision
 tag @s[scores={Dialog=1..}] remove laugh
 tag @s[scores={Dialog=1..}] remove attack
 tag @s[scores={Dialog=1..}] remove flee
@@ -44,7 +45,7 @@ tag @s remove was_fleeing
 tag @s[tag=flee] add was_fleeing
 tag @s remove flee
 
-execute at @s if entity @e[tag=same_room,tag=!spectator,tag=player,distance=..0.7,limit=1] run function luigis_mansion:entities/boolossus/collide_split
+execute at @s[scores={Dialog=0}] if entity @e[tag=same_room,tag=!spectator,tag=player,distance=..0.7,limit=1] run function luigis_mansion:entities/boolossus/collide_split
 
 scoreboard players add @s[scores={Wave=..80}] Wave 1
 execute at @s[scores={Wave=81..}] if entity @e[nbt={data:{entity:{namespace:"luigis_mansion",id:"boolossus"}}},distance=0.1..,limit=1] run scoreboard players add @s Wave 1

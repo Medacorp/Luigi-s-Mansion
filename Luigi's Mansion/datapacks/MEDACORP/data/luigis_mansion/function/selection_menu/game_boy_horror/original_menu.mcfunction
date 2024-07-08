@@ -12,3 +12,4 @@ execute unless entity @s[scores={WarpTime=1..}] run data modify storage luigis_m
 execute unless entity @s[scores={WarpTime=1..}] run function luigis_mansion:entities/player/animation/set/game_boy_horror
 
 execute unless entity @s[scores={WarpTime=1..}] run function luigis_mansion:entities/player/selection_menu/load
+execute if entity @s[scores={WarpTime=1..}] run function luigis_mansion:selection_menu/game_boy_horror/scan_furniture

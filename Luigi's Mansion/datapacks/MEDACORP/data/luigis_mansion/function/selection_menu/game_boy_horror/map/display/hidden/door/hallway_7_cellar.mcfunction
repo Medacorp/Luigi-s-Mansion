@@ -1,6 +1,6 @@
-execute unless data storage luigis_mansion:data current_state.current_data{used_keys:["cellar"]} run place template luigis_mansion:game_boy_horror_map/door/single_locked 3705 10 -27
-execute if data storage luigis_mansion:data current_state.current_data{used_keys:["cellar"]} run place template luigis_mansion:game_boy_horror_map/door/single_unlocked 3705 10 -27
-tag @e[tag=cellar,tag=display] add dead
+execute unless data storage luigis_mansion:data current_state.current_data{used_keys:["cellar"]} run place template luigis_mansion:game_boy_horror_map/door/single_locked 3705 10 41
+execute if data storage luigis_mansion:data current_state.current_data{used_keys:["cellar"]} run place template luigis_mansion:game_boy_horror_map/door/single_unlocked 3705 10 41
+tag @e[tag=cellar,tag=map_key] add dead
 execute if data storage luigis_mansion:data current_state.current_data{obtained_keys:["cellar"]} unless data storage luigis_mansion:data current_state.current_data{used_keys:["cellar"]} run data modify storage luigis_mansion:data entity set value {tags:["cellar"]}
 execute if data storage luigis_mansion:data current_state.current_data{obtained_keys:["cellar"]} unless data storage luigis_mansion:data current_state.current_data{used_keys:["cellar"]} if entity @s[scores={OpenMapFocus=21}] run data modify storage luigis_mansion:data entity.sparkle set value 1b
-execute if data storage luigis_mansion:data current_state.current_data{obtained_keys:["cellar"]} unless data storage luigis_mansion:data current_state.current_data{used_keys:["cellar"]} positioned 3705 10 -27 run function luigis_mansion:selection_menu/game_boy_horror/map/spawn_key/variant_0/single
+execute if data storage luigis_mansion:data current_state.current_data{obtained_keys:["cellar"]} unless data storage luigis_mansion:data current_state.current_data{used_keys:["cellar"]} positioned 3705 10 41 run function luigis_mansion:selection_menu/game_boy_horror/map/spawn_key/normal/single

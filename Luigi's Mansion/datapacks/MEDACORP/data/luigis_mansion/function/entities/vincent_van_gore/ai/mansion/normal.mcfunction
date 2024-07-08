@@ -13,7 +13,7 @@ execute if entity @s[scores={Dialog=4}] run teleport @s ~ ~ ~ -180 ~
 execute if entity @s[scores={Dialog=5}] run data modify storage luigis_mansion:data dialogs append value {name:{namespace:"luigis_mansion",id:"vincent_van_gore"},progress:0}
 execute if entity @s[scores={Dialog=5}] store result storage luigis_mansion:data dialogs[-1].room int 1 run scoreboard players get @s Room
 execute if entity @s[scores={Dialog=6}] run playsound luigis_mansion:entity.vincent_van_gore.complain hostile @a[tag=same_room] ~ ~ ~ 1
-execute if entity @s[scores={Dialog=7}] as @a[tag=same_room,tag=!spectator] run function luigis_mansion:other/music/set/danger
+execute if entity @s[scores={Dialog=7}] run scoreboard players set #the_artists_studio Wave 10
 scoreboard players set @s[scores={Dialog=7}] VulnerableTime 2147483647
 
 execute if entity @s[scores={Dialog=4,Sound=0}] run playsound luigis_mansion:entity.vincent_van_gore.ambient hostile @a[tag=same_room] ~ ~ ~ 1

@@ -34,5 +34,5 @@ execute unless score #projection_room_poster Searched matches 1 run summon minec
 execute unless score #projection_room_poster Searched matches 1 run summon minecraft:item_frame 676 12 -21 {Facing:5b,Silent:1b,Invisible:1b,Fixed:1b,CustomName:'{"type":"translatable","translate":"luigis_mansion:entity.poster"}',Item:{id:"minecraft:filled_map",count:1,components:{"minecraft:map_id":372}}}
 execute unless score #projection_room_poster Searched matches 1 run summon minecraft:item_frame 676 12 -20 {Facing:5b,Silent:1b,Invisible:1b,Fixed:1b,CustomName:'{"type":"translatable","translate":"luigis_mansion:entity.poster"}',Item:{id:"minecraft:filled_map",count:1,components:{"minecraft:map_id":373}}}
 execute unless score #projection_room_poster Searched matches 1 run summon minecraft:item_frame 676 12 -19 {Facing:5b,Silent:1b,Invisible:1b,Fixed:1b,CustomName:'{"type":"translatable","translate":"luigis_mansion:entity.poster"}',Item:{id:"minecraft:filled_map",count:1,components:{"minecraft:map_id":374}}}
-scoreboard players set @e[x=676.0,y=12.0,z=-28.0,dx=1,dy=4,dz=8,type=minecraft:item_frame] Room 48
+scoreboard players set @e[x=676.0,y=12.0,z=-28.0,dx=1,dy=4,dz=9,type=minecraft:item_frame] Room 48
 scoreboard players set #projection_room_poster Searched 1

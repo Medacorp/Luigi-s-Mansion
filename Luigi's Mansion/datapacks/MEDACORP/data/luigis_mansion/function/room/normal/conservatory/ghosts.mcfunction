@@ -1,3 +1,4 @@
+execute if entity @e[tag=portrait_ghost,scores={Room=25},tag=hurt] run scoreboard players set @e[tag=haunted_music_sheet,scores={Room=25}] WaitTime -119
 execute if score #conservatory Wave matches 4 unless entity @e[tag=ghost,scores={Room=25},tag=!optional_ghost] run function luigis_mansion:room/normal/conservatory/clear
 execute if score #conservatory Wave matches 3 run function luigis_mansion:room/normal/conservatory/wave_4
 execute if score #conservatory Wave matches 1 if score #conservatory_saxophone Searched matches 1 if score #conservatory_harp Searched matches 1 if score #conservatory_cello Searched matches 1 if score #conservatory_drum_1 Searched matches 1 if score #conservatory_drum_2 Searched matches 1 if score #conservatory_drum_3 Searched matches 1 if score #conservatory_xylophone Searched matches 1 run scoreboard players set #conservatory Wave 2

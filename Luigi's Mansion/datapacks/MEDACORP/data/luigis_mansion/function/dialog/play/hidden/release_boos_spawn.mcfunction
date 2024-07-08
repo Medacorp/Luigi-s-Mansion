@@ -1,5 +1,7 @@
 data modify storage luigis_mansion:data entity merge value {rotation:[0.0f,-90.0f],show_health:0b,speed:30,tags:["cutscene","up","down"]}
 execute store result storage luigis_mansion:data entity.rotation[0] float 1 run random value -180..179
+execute if score #dialog Dialog matches 264 run data modify storage luigis_mansion:data entity set value {show_health:0b}
+data modify storage luigis_mansion:data entity.room set from storage luigis_mansion:data dialogs[0].room
 execute if score #dialog Dialog matches 140 run function luigis_mansion:spawn_entities/ghost/boo
 execute if score #dialog Dialog matches 144 run function luigis_mansion:spawn_entities/ghost/boo
 execute if score #dialog Dialog matches 148 run function luigis_mansion:spawn_entities/ghost/boo
@@ -31,7 +33,6 @@ execute if score #dialog Dialog matches 248 run function luigis_mansion:spawn_en
 execute if score #dialog Dialog matches 252 run function luigis_mansion:spawn_entities/ghost/boo
 execute if score #dialog Dialog matches 256 run function luigis_mansion:spawn_entities/ghost/boo
 execute if score #dialog Dialog matches 260 run function luigis_mansion:spawn_entities/ghost/boo
-execute if score #dialog Dialog matches 264 run data modify storage luigis_mansion:data entity set value {show_health:0b}
 execute if score #dialog Dialog matches 264 run function luigis_mansion:spawn_entities/portrait_ghost/king_boo
 execute if score #dialog Dialog matches 268 run function luigis_mansion:spawn_entities/ghost/boo
 execute if score #dialog Dialog matches 272 run function luigis_mansion:spawn_entities/ghost/boo

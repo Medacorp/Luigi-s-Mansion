@@ -2,8 +2,8 @@ scoreboard players add #dialog Dialog 1
 
 scoreboard players reset @a[tag=same_room,tag=!spectator] WarpTime
 execute as @a[tag=same_room,tag=!spectator,tag=game_boy_horror_menu] run function luigis_mansion:selection_menu/game_boy_horror/exit
-tag @e[nbt={data:{entity:{namespace:"luigis_mansion",id:"boo"}}},tag=same_room,limit=1] remove no_ai
-tag @e[nbt={data:{entity:{namespace:"luigis_mansion",id:"boo"}}},tag=same_room,limit=1] remove freeze_animation
+tag @e[nbt={data:{entity:{namespace:"luigis_mansion",id:"boo"}}},tag=same_room] remove no_ai
+tag @e[nbt={data:{entity:{namespace:"luigis_mansion",id:"boo"}}},tag=same_room] remove freeze_animation
 tag @e[nbt={data:{entity:{namespace:"luigis_mansion",id:"king_boo"}}},tag=same_room,limit=1] remove no_ai
 tag @e[nbt={data:{entity:{namespace:"luigis_mansion",id:"king_boo"}}},tag=same_room,limit=1] remove freeze_animation
 execute if score #dialog Dialog matches 1..139 as @a[tag=same_room,tag=!spectator] run function luigis_mansion:entities/player/animation/set/high_health_idle_no_sound
@@ -14,6 +14,7 @@ execute if score #dialog Dialog matches 1 run playsound luigis_mansion:furniture
 execute if score #dialog Dialog matches 1 run playsound luigis_mansion:music.boos_escape music @a[tag=same_room] ~ ~ ~ 1000
 execute if score #dialog Dialog matches 1 run function luigis_mansion:room/hidden/storage_room/open_hatch
 execute if score #dialog Dialog matches 140.. positioned 685 10 61 rotated 0 -90 run function luigis_mansion:dialog/play/hidden/release_boos_spawn
+execute if score #dialog Dialog matches 140 as @a[tag=same_room] run function luigis_mansion:entities/player/animation/set/none
 execute if score #dialog Dialog matches 140 as @a[tag=same_room] positioned 685 10 61 run function luigis_mansion:entities/player/animation/set/scare/bash_no_move
 execute if score #dialog Dialog matches 140..440 run scoreboard players set @a[tag=same_room,scores={AnimationProgress=30..}] AnimationProgress 29
 execute if score #dialog Dialog matches 140 run tellraw @a[tag=same_room] {"type":"translatable","translate":"chat.type.text","with":[{"type":"translatable","translate":"luigis_mansion:entity.boo","color":"green"},{"type":"translatable","translate":"luigis_mansion:dialog.release_boos.1"}]}

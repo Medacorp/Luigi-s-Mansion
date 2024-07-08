@@ -1,7 +1,7 @@
 execute store result score #dialog Dialog run data get storage luigis_mansion:data dialogs[0].progress
 execute if data storage luigis_mansion:data dialogs[0].room store result score #temp Room run data get storage luigis_mansion:data dialogs[0].room
-execute if data storage luigis_mansion:data dialogs[0].room as @e[tag=!model_piece,tag=!reflection,tag=!in_dialog] run function luigis_mansion:main/get_same_room
-execute unless data storage luigis_mansion:data dialogs[0].room run tag @e[tag=!model_piece,tag=!reflection,tag=!in_dialog] add same_room
+execute if data storage luigis_mansion:data dialogs[0].room as @e[tag=!model_piece,tag=!reflection,tag=!in_dialog,tag=!captured,tag=!capturing_ghost] run function luigis_mansion:main/get_same_room
+execute unless data storage luigis_mansion:data dialogs[0].room run tag @e[tag=!model_piece,tag=!reflection,tag=!in_dialog,tag=!captured,tag=!capturing_ghost] add same_room
 scoreboard players reset #temp Room
 execute as @a[tag=same_room] run function luigis_mansion:dialog/players_pre_tick
 execute as @e[type=!minecraft:player,tag=same_room] run function luigis_mansion:dialog/entities_pre_tick

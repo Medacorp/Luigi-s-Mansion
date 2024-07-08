@@ -19,6 +19,7 @@ execute if entity @s[tag=!cancel] run data modify storage luigis_mansion:data me
 execute if entity @s[tag=!cancel] run function luigis_mansion:entities/player/selection_menu/load
 tag @s remove opening_map
 tag @s remove cancel
+function luigis_mansion:main/update_last_position
 scoreboard players reset @s OpenMapTime
 scoreboard players set @s MapZoomTime 0
 scoreboard players set @s MapSound 0

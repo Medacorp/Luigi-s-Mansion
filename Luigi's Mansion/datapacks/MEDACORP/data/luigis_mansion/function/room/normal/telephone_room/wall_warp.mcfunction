@@ -19,7 +19,7 @@ scoreboard players set @a[scores={PositionIntY=28,PositionIntX=745..755,Position
 stopsound @a[scores={PositionIntY=36,PositionIntX=739..749}] ambient luigis_mansion:block.telephone.ring
 scoreboard players set @a[scores={PositionIntY=36,PositionIntX=739..749}] RoomNoise 1
 
-teleport @s[scores={PositionIntX=737}] ~-40 ~90 ~-10
+teleport @s[scores={PositionIntX=737}] ~-40 ~91 ~-10
 teleport @s[scores={PositionIntX=756,PositionIntZ=21..33}] ~-1 ~ ~
 teleport @s[scores={PositionIntX=756,PositionIntZ=2..14}] ~-1 ~ ~
 teleport @s[scores={PositionIntX=757..760,PositionIntZ=21}] ~ ~ ~-1

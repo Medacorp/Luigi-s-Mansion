@@ -1,3 +1,5 @@
+tag @s add selection_menu_free_to_move
+
 data modify storage luigis_mansion:data menu_options set value {back:{id:"show_settings",to:'{"type":"translatable","translate":"luigis_mansion:item.menu.game_boy_horror.show_settings"}',update_debug_variables:1b},options:[]}
 
 execute if score #debug_messages Selected matches 0 run data modify storage luigis_mansion:data menu_options.options append value {id:"minecraft:diamond_pickaxe",count:1,components:{"minecraft:damage":22,"minecraft:unbreakable":{show_in_tooltip:0b},"minecraft:custom_model_data":76,"minecraft:attribute_modifiers":{modifiers:[]},"minecraft:item_name":'{"type":"translatable","translate":"luigis_mansion:item.menu.game_boy_horror.show_settings.value","with":[{"type":"translatable","translate":"luigis_mansion:item.menu.game_boy_horror.show_settings.debug_messages"},{"type":"translatable","translate":"luigis_mansion:item.menu.game_boy_horror.show_settings.value.off"}]}',"minecraft:custom_data":{option:{id:"show_settings/toggle/debug/messages"}}}}

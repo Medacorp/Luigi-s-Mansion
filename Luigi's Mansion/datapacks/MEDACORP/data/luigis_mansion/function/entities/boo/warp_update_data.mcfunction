@@ -1,0 +1,2 @@
+$execute if entity @s[tag=!hidden_boo] store result storage luigis_mansion:data current_state.current_data.boos[{name:{namespace:"$(namespace)",id:"$(id)"}}].health int 1 run scoreboard players get @s Health
+$execute store result storage luigis_mansion:data current_state.current_data.boos[{name:{namespace:"$(namespace)",id:"$(id)"}}].room int 1 run scoreboard players get @s Room

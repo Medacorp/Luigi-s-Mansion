@@ -126,7 +126,7 @@ execute if entity @s[scores={Dialog=570}] run setblock 770 81 -7 minecraft:green
 execute if entity @s[scores={Dialog=570}] run setblock 770 79 -7 minecraft:air
 execute if entity @s[scores={Dialog=570},tag=!dead] run data merge entity @s {Pose:{Head:[-90.0f,0.0f,0.0f]}}
 execute if entity @s[scores={Dialog=570},tag=!dead] run function luigis_mansion:entities/portrificationizing_ghost/portrait with entity @s ArmorItems[3].components."minecraft:custom_data".ghost
-execute if entity @s[scores={Dialog=570},tag=!dead] run function #luigis_mansion:entities/portrificationizing_ghost/clear_rooms
+execute if entity @s[scores={Dialog=570},tag=!dead] run function luigis_mansion:entities/portrificationizing_ghost/clear_rooms with storage luigis_mansion:data current_state.current_data.mansion_id
 execute if entity @s[scores={Dialog=570}] run teleport @s 770 77.95 -8 -90 0
 execute if entity @s[scores={Dialog=575}] run teleport @s 770 77.95 -9
 execute if entity @s[scores={Dialog=580}] run teleport @s 770 77.95 -10
@@ -138,14 +138,14 @@ execute if entity @s[scores={Dialog=597}] run data merge entity @s {Pose:{Head:[
 execute if entity @s[scores={Dialog=598}] run data merge entity @s {Pose:{Head:[-36.0f,0.0f,0.0f]}}
 execute if entity @s[scores={Dialog=599}] run data merge entity @s {Pose:{Head:[-18.0f,0.0f,0.0f]}}
 execute if entity @s[scores={Dialog=600}] run data merge entity @s {Pose:{Head:[0.0f,0.0f,0.0f]}}
-execute if entity @s[scores={Dialog=600}] run teleport @s 770.99 78.47 -12
-execute if entity @s[scores={Dialog=645}] run teleport @s 770.99 77.47 -12
+execute if entity @s[scores={Dialog=600}] run teleport @s 771.01 78.47 -12
+execute if entity @s[scores={Dialog=645}] run teleport @s 771.01 77.47 -12
 execute if entity @s[scores={Dialog=645}] run setblock 770 79 -12 minecraft:air
-execute if entity @s[scores={Dialog=650}] run teleport @s 770.99 76.47 -12
+execute if entity @s[scores={Dialog=650}] run teleport @s 771.01 76.47 -12
 execute if entity @s[scores={Dialog=650}] run setblock 770 78 -12 minecraft:air
 execute if entity @s[scores={Dialog=650}] run setblock 770 77 -12 minecraft:light_gray_concrete
-execute if entity @s[scores={Dialog=655}] run teleport @s 770.99 75.47 -12
+execute if entity @s[scores={Dialog=655}] run teleport @s 771.01 75.47 -12
 execute if entity @s[scores={Dialog=655}] run setblock 770 77 -12 minecraft:cyan_terracotta
 execute if entity @s[scores={Dialog=660}] run setblock 770 77 -12 minecraft:air
-execute if entity @s[scores={Dialog=660}] run teleport @s 770.99 74.47 -12
+execute if entity @s[scores={Dialog=660}] run teleport @s 771.01 74.47 -12
 kill @s[scores={Dialog=665}]

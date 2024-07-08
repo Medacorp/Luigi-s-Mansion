@@ -24,16 +24,16 @@ execute unless entity @s[tag=stunned,tag=!hurt] run tag @s remove stun_freeze_an
 tag @s[scores={StunTime=0}] remove stunned
 tag @s[scores={StunTime=1..}] add stunned
 
-tag @s[tag=!flee] remove turned
-execute at @s[tag=flee,tag=!freeze] unless entity @s[scores={DeathTime=1..}] run function luigis_mansion:entities/ghost/flee
+tag @s[tag=!flee,tag=!show_health] remove turned
+execute at @s[tag=flee,tag=!freeze,tag=!show_health] unless entity @s[scores={DeathTime=1..}] run function luigis_mansion:entities/ghost/flee
 
 execute if entity @s[scores={Health=-2147483648..},tag=show_health] at @s run function luigis_mansion:entities/ghost/health/show
 execute if entity @s[scores={Health=-2147483648..,StunTime=0..},tag=!show_health] unless entity @s[scores={StunTime=0},tag=!hurt,tag=!element_hurt,tag=!spawned_health_display] at @s run function luigis_mansion:entities/ghost/health/show
 execute if entity @s[scores={VulnerableTime=0..,Health=-2147483648..}] unless entity @s[scores={VulnerableTime=0},tag=!burning_heart,tag=!watery_heart,tag=!frozen_heart,tag=!spawned_ghost_heart] at @s run function luigis_mansion:entities/ghost/heart/show
 
-execute at @s[tag=normal_death] run function luigis_mansion:entities/ghost/death
-execute at @s[scores={Health=0},tag=!element_hurt,tag=!element_death,tag=!normal_death] run function luigis_mansion:entities/ghost/death
-execute at @s unless entity @s[scores={Health=1..}] unless entity @s[tag=!element_hurt,tag=!element_death] run function luigis_mansion:entities/ghost/death_element
+execute at @s[tag=normal_death,tag=!captured,tag=!dead] run function luigis_mansion:entities/ghost/death
+execute at @s[scores={Health=0},tag=!element_hurt,tag=!element_death,tag=!normal_death,tag=!captured,tag=!dead] run function luigis_mansion:entities/ghost/death
+execute at @s[tag=!captured,tag=!dead] unless entity @s[scores={Health=1..}] unless entity @s[tag=!element_hurt,tag=!element_death] run function luigis_mansion:entities/ghost/death_element
 
 execute at @s[tag=!hurt,tag=!flee,tag=!freeze,scores={TargetTask=0,ActionTime=0}] unless entity @s[scores={StunTime=1..}] run function luigis_mansion:entities/ghost/target_task/do_nothing
 execute at @s[tag=!hurt,tag=!flee,tag=!freeze,scores={TargetTask=1,ActionTime=0}] unless entity @s[scores={StunTime=1..}] run function luigis_mansion:entities/ghost/target_task/move_to_target

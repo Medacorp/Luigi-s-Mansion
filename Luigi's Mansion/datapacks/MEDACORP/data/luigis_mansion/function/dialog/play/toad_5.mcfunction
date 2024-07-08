@@ -12,7 +12,7 @@ execute if score #dialog Dialog matches ..21 if entity @a[tag=same_room,tag=skip
 execute if score #dialog Dialog matches 23..28 if entity @a[tag=same_room,tag=skip_dialog,limit=1] run scoreboard players set #dialog Dialog 29
 execute if score #dialog Dialog matches 30 if entity @a[tag=same_room,tag=skip_dialog,limit=1] run scoreboard players set #dialog Dialog 31
 execute if score #dialog Dialog matches 21..30 unless score #dialog Dialog matches 22 unless score #dialog Dialog matches 29 as @a[tag=same_room,tag=!spectator] unless entity @s[tag=dialog_menu,tag=!dialog_choice_menu] unless entity @s[tag=using_selection_menu,tag=!dialog_menu] run function luigis_mansion:selection_menu/dialog/original_menu
-execute if score #dialog Dialog matches 22 unless data storage luigis_mansion:data current_state.current_data.technical_data{telephone_1:1b} as @a[tag=same_room,tag=dialog_choice_menu] unless entity @s[tag=using_selection_menu,tag=!dialog_menu] run function luigis_mansion:selection_menu/dialog/choice/toad_5
+execute if score #dialog Dialog matches 22 unless data storage luigis_mansion:data current_state.current_data.technical_data{telephone_1:1b} as @a[tag=same_room,tag=!spectator,tag=!dialog_choice_menu] unless entity @s[tag=using_selection_menu,tag=!dialog_menu] run function luigis_mansion:selection_menu/dialog/choice/toad_5
 execute if score #dialog Dialog matches 29 as @a[tag=same_room,tag=dialog_menu] run function luigis_mansion:selection_menu/dialog/exit
 execute if score #dialog Dialog matches 31.. as @a[tag=same_room,tag=dialog_menu] run function luigis_mansion:selection_menu/dialog/exit
 
@@ -49,7 +49,7 @@ execute if score #dialog Dialog matches 29 run scoreboard players set #dialog Di
 execute if score #dialog Dialog matches 30 as @a[tag=same_room,tag=!spectator,tag=!phone_caller] run function luigis_mansion:entities/player/animation/set/idle
 execute if score #dialog Dialog matches 30 as @a[tag=same_room,tag=!spectator,tag=phone_caller] run function luigis_mansion:entities/player/animation/set/answer_phone
 execute if score #dialog Dialog matches 30 run advancement grant @a[tag=same_room] only luigis_mansion:vanilla/go_help_yourself telephone_room
-execute if score #dialog Dialog matches 30 run tellraw @a[tag=same_room] {"type":"translatable","translate":"chat.type.text","with":[{"type":"translatable","translate":"luigis_mansion:entity.unknown","color":"green"},{"type":"translatable","translate":"luigis_mansion:dialog.toad_5.no.1"}]}
+execute if score #dialog Dialog matches 30 if entity @a[tag=same_room,tag=select_dialog_branch_no,limit=1] run tellraw @a[tag=same_room] {"type":"translatable","translate":"chat.type.text","with":[{"type":"translatable","translate":"luigis_mansion:entity.unknown","color":"green"},{"type":"translatable","translate":"luigis_mansion:dialog.toad_5.no.1"}]}
 
 execute if score #dialog Dialog matches 31 run scoreboard players set #dialog Dialog -1
 

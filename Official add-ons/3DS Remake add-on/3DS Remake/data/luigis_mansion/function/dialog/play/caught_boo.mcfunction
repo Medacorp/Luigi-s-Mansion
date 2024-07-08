@@ -1,3 +1,6 @@
+execute if entity @e[tag=normal_death,limit=1] run tag @e[tag=same_room] add abort_dialog_tick
+execute if entity @e[tag=normal_death,limit=1] run return 0
+
 execute if score #dialog Dialog matches 24.. if entity @a[tag=same_room,tag=next_dialog_line,limit=1] run scoreboard players add #dialog Dialog 1
 execute if score #dialog Dialog matches 22..23 run scoreboard players add #dialog Dialog 1
 execute if score #dialog Dialog matches 21 if entity @a[tag=same_room,tag=game_boy_horror_selected,limit=1] run scoreboard players add #dialog Dialog 1
@@ -21,13 +24,13 @@ execute if score #dialog Dialog matches 24.. run scoreboard players set @a[tag=s
 execute if score #dialog Dialog matches 24 store result score #temp Boos run data get storage luigis_mansion:data current_state.current_data.boo_counter
 execute if score #dialog Dialog matches 24 store result score #temp Variant run random value 1..27
 execute if score #dialog Dialog matches 24 run tag @a[tag=same_room,limit=1] add next_dialog_line
-execute if score #dialog Dialog matches 24 if score #temp Boos matches 1 run scoreboard players set @s Variant 81
-execute if score #dialog Dialog matches 24 if score #temp Boos matches 10 run scoreboard players set @s Variant 72
-execute if score #dialog Dialog matches 24 if score #temp Boos matches 15 run scoreboard players set @s Variant 79
-execute if score #dialog Dialog matches 24 if score #temp Boos matches 17 run scoreboard players set @s Variant 78
-execute if score #dialog Dialog matches 24 if score #temp Boos matches 20 run scoreboard players set @s Variant 85
-execute if score #dialog Dialog matches 24 if score #temp Boos matches 21 run scoreboard players set @s Variant 75
-execute if score #dialog Dialog matches 24 if score #temp Boos matches 50 run scoreboard players set @s Variant 88
+execute if score #dialog Dialog matches 24 if score #temp Boos matches 1 run scoreboard players set #dialog Dialog 81
+execute if score #dialog Dialog matches 24 if score #temp Boos matches 10 run scoreboard players set #dialog Dialog 72
+execute if score #dialog Dialog matches 24 if score #temp Boos matches 15 run scoreboard players set #dialog Dialog 79
+execute if score #dialog Dialog matches 24 if score #temp Boos matches 17 run scoreboard players set #dialog Dialog 78
+execute if score #dialog Dialog matches 24 if score #temp Boos matches 20 run scoreboard players set #dialog Dialog 85
+execute if score #dialog Dialog matches 24 if score #temp Boos matches 21 run scoreboard players set #dialog Dialog 75
+execute if score #dialog Dialog matches 24 if score #temp Boos matches 50 run scoreboard players set #dialog Dialog 88
 execute if score #dialog Dialog matches 24 if score #temp Variant matches 1 run scoreboard players set #dialog Dialog 25
 execute if score #dialog Dialog matches 24 if score #temp Variant matches 2 run scoreboard players set #dialog Dialog 27
 execute if score #dialog Dialog matches 24 if score #temp Variant matches 3 run scoreboard players set #dialog Dialog 29
