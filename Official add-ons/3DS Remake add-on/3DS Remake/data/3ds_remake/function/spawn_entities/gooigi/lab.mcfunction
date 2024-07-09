@@ -11,4 +11,6 @@ teleport @e[tag=this_entity,limit=1] ~ ~ ~ ~ ~
 scoreboard players set @e[tag=this_entity,limit=1] EntitySizeWidth 8
 scoreboard players set @e[tag=this_entity,limit=1] EntitySizeHeight 20
 scoreboard players set @e[tag=this_entity,limit=1] EntityYOffset 10
+function luigis_mansion:spawn_entities/setup/default
 tag @e[tag=this_entity,limit=1] remove this_entity
+data remove storage luigis_mansion:data entity

@@ -10,12 +10,12 @@ execute if data storage luigis_mansion:data current_state.current_data{used_keys
 execute if data storage luigis_mansion:data current_state.current_data{used_keys:["hallway_18"]} run tag @s add area_4
 
 # wardrobe room
-scoreboard players set @s[scores={Room=5},x=6770,z=56,dx=10,dz=6] RoomSection 1
-scoreboard players set @s[scores={Room=5},x=6770,z=63,dx=10,dz=12] RoomSection 2
+scoreboard players set @s[scores={Room=5},x=677,z=56,dx=10,dz=6] RoomSection 1
+scoreboard players set @s[scores={Room=5},x=677,z=63,dx=10,dz=12] RoomSection 2
 
 # hallway 2
-scoreboard players set @s[scores={Room=7},x=7230,z=42,dx=6,dz=19] RoomSection 1
-scoreboard players set @s[scores={Room=7},x=7230,z=63,dx=6,dz=19] RoomSection 2
+scoreboard players set @s[scores={Room=7},x=723,z=42,dx=6,dz=19] RoomSection 1
+scoreboard players set @s[scores={Room=7},x=723,z=63,dx=6,dz=19] RoomSection 2
 
 # hallway 3-6
 scoreboard players set @s[scores={Room=11..14},x=713,z=14,dx=6,dz=10] RoomSection 1

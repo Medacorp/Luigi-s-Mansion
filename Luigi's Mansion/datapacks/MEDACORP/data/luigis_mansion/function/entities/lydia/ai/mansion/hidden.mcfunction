@@ -1,5 +1,5 @@
 scoreboard players add @s[scores={Dialog=2..}] Dialog 1
-execute if block 684 113 -30 minecraft:air run scoreboard players add @s[scores={Dialog=1}] Dialog 1
+execute if block 684 113 -29 minecraft:air run scoreboard players add @s[scores={Dialog=1}] Dialog 1
 execute unless entity @s[scores={Dialog=1..}] run scoreboard players add @s Dialog 1
 tag @s[scores={Dialog=1..101}] add visible
 execute if entity @s[scores={Dialog=1}] at @e[tag=same_room,tag=!spectator,tag=player] positioned ^ ^ ^8 run tag @s[distance=..8] remove visible

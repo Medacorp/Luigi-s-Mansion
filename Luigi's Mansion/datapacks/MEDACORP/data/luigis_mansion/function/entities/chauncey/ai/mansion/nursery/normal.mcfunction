@@ -36,6 +36,7 @@ execute if entity @s[scores={Dialog=131},tag=!attack,tag=!laugh,tag=!complain] u
 
 execute if entity @s[scores={Dialog=132}] run tag @e[tag=haunted_teddy_bear,tag=same_room] remove enabled
 scoreboard players set @s[scores={Dialog=132}] ActionTime 0
+scoreboard players set @s[scores={Dialog=132}] TargetTask 0
 tag @s[scores={Dialog=132}] remove attack
 tag @s[scores={Dialog=132}] remove laugh
 tag @s[scores={Dialog=132..}] remove complain

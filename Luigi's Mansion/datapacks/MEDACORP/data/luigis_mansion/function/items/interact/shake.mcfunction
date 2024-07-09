@@ -6,12 +6,12 @@ execute store result entity @e[tag=home,limit=1] Rotation[0] float 1 run scorebo
 execute store result entity @e[tag=home,limit=1] Rotation[1] float 1 run scoreboard players get @s RotationX
 execute at @e[tag=home,limit=1] run tp @s ~ ~ ~ ~ ~
 kill @e[tag=home,limit=1]
-execute at @s[nbt={OnGround:1b},tag=1] rotated ~ 0 run summon minecraft:marker ^ ^0.1 ^1 {Tags:["interact","manual","feet"]}
-execute at @s[nbt={OnGround:0b},tag=1] rotated ~ 0 run summon minecraft:marker ^ ^0.1 ^1 {Tags:["interact","manual"]}
-execute at @s[nbt={OnGround:1b},tag=2] rotated ~ 0 run summon minecraft:marker ^ ^1.1 ^1 {Tags:["interact","manual"]}
-execute at @s[nbt={OnGround:0b},tag=2] rotated ~ 0 run summon minecraft:marker ^ ^1.1 ^1 {Tags:["interact","manual","feet"]}
-execute at @s[nbt={OnGround:1b},tag=3] rotated ~ 0 run summon minecraft:marker ^ ^2.1 ^1 {Tags:["interact","manual"]}
-execute at @s[nbt={OnGround:0b},tag=3] rotated ~ 0 run summon minecraft:marker ^ ^-0.9 ^1 {Tags:["interact","manual"]}
+execute at @s[tag=1] unless block ~ ~-0.1 ~ #luigis_mansion:interact_ignore rotated ~ 0 run summon minecraft:marker ^ ^0.1 ^1 {Tags:["interact","manual","feet"]}
+execute at @s[tag=1] if block ~ ~-0.1 ~ #luigis_mansion:interact_ignore rotated ~ 0 run summon minecraft:marker ^ ^0.1 ^1 {Tags:["interact","manual"]}
+execute at @s[tag=2] unless block ~ ~-0.1 ~ #luigis_mansion:interact_ignore rotated ~ 0 run summon minecraft:marker ^ ^1.1 ^1 {Tags:["interact","manual"]}
+execute at @s[tag=2] if block ~ ~-0.1 ~ #luigis_mansion:interact_ignore rotated ~ 0 run summon minecraft:marker ^ ^1.1 ^1 {Tags:["interact","manual","feet"]}
+execute at @s[tag=3] unless block ~ ~-0.1 ~ #luigis_mansion:interact_ignore rotated ~ 0 run summon minecraft:marker ^ ^2.1 ^1 {Tags:["interact","manual"]}
+execute at @s[tag=3] if block ~ ~-0.1 ~ #luigis_mansion:interact_ignore rotated ~ 0 run summon minecraft:marker ^ ^-0.9 ^1 {Tags:["interact","manual"]}
 tag @s add searcher
 scoreboard players add @s InteractionTime 1
 tag @s[scores={InteractionTime=2}] add reset_rotation

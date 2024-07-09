@@ -1,1 +1,1 @@
-$execute unless data storage luigis_mansion:data current_state.current_data{obtained_keys:["$(variant)"]} run function luigis_mansion:items/key/normal/$(variant)
+$execute unless data storage luigis_mansion:data current_state.current_data{obtained_keys:["$(variant)"]} run function 3ds_remake:items/key/hidden/$(variant)

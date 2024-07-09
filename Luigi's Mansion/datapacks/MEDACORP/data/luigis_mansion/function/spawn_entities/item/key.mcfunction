@@ -3,10 +3,6 @@ execute store result entity @e[tag=this_entity,limit=1] Rotation[0] float 1 run 
 execute store result entity @e[tag=this_entity,limit=1] Rotation[1] float 1 run random value -90..0
 scoreboard players set @e[tag=this_entity,limit=1] EntitySizeRadius 5
 scoreboard players set @e[tag=this_entity,limit=1] EntityYOffset 7
-execute if data storage luigis_mansion:data entity{variant:1b} run data modify entity @e[tag=this_entity,limit=1] ArmorItems[3].components."minecraft:custom_model_data" set value 16
-execute if data storage luigis_mansion:data entity{variant:2b} run data modify entity @e[tag=this_entity,limit=1] ArmorItems[3].components."minecraft:custom_model_data" set value 17
-execute if data storage luigis_mansion:data entity{variant:3b} run data modify entity @e[tag=this_entity,limit=1] ArmorItems[3].components."minecraft:custom_model_data" set value 18
-execute if data storage luigis_mansion:data entity{variant:4b} run data modify entity @e[tag=this_entity,limit=1] ArmorItems[3].components."minecraft:custom_model_data" set value 19
 execute if entity @e[tag=this_entity,limit=1] unless data storage luigis_mansion:data entity{silent:1b} run playsound luigis_mansion:item.key.spawn player @a[tag=same_room] ~ ~ ~ 1
 execute unless entity @e[tag=this_entity,limit=1] if score #debug_messages Selected matches 1.. run tellraw @a {"type":"translatable","translate":"luigis_mansion:message.debug.format","with":[{"type":"translatable","translate":"luigis_mansion:message.debug","color":"gold"},{"type":"translatable","translate":"luigis_mansion:message.debug.loot_spawn_fail.key","color":"red"}]}
 execute if entity @e[tag=this_entity,limit=1] run function luigis_mansion:spawn_entities/setup/default

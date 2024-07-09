@@ -1,0 +1,2 @@
+data modify storage luigis_mansion:data current_state.current_data.obtained_keys append value "hallway_18"
+data modify storage luigis_mansion:data dialogs append value {name:{namespace:"luigis_mansion",id:"area_3_key"},progress:0}
