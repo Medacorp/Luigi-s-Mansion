@@ -4,7 +4,7 @@ tag @s[tag=remove_from_existence,tag=cannot_be_removed] remove remove_from_exist
 function luigis_mansion:main/find_hitters
 
 execute if entity @s[scores={Room=..0}] if score #mirrored Selected matches 1 run scoreboard players set #mirrored Selected 2
-execute store result score #temp Room run scoreboard players get @s Room
+scoreboard players operation #temp Room = @s Room
 execute as @e[tag=!model_piece,tag=!reflection] run function luigis_mansion:main/get_same_room
 scoreboard players reset #temp Room
 
