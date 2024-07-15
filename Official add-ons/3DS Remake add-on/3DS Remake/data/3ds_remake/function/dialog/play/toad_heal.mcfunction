@@ -16,8 +16,8 @@ execute if score #dialog Dialog matches 1 if score #toad_amiibo Selected matches
 execute if score #dialog Dialog matches 1 if score #players Totals matches 1 run tellraw @a[tag=same_room] {"type":"translatable","translate":"chat.type.text","with":[{"type":"translatable","translate":"luigis_mansion:entity.toad","color":"green"},{"type":"translatable","translate":"3ds_remake:dialog.toad.heal","with":[{"type":"selector","selector":"@p[tag=!spectator]"}]}]}
 execute if score #dialog Dialog matches 1 if score #players Totals matches 2.. run tellraw @a[tag=same_room] {"type":"translatable","translate":"chat.type.text","with":[{"type":"translatable","translate":"luigis_mansion:entity.toad","color":"green"},{"type":"translatable","translate":"3ds_remake:dialog.toad.heal.more"}]}
 
-execute if score #dialog Dialog matches 3 at @a[tag=!spectator] run function 3ds_remake:spawn_entities/item/huge_heart
-execute if score #dialog Dialog matches 3 at @e[tag=game_boy_horror_location] run function 3ds_remake:spawn_entities/item/huge_heart
+execute if score #dialog Dialog matches 3 as @a[tag=!spectator,tag=!looking_at_map,tag=same_room] at @s run function 3ds_remake:spawn_entities/item/huge_heart
+execute if score #dialog Dialog matches 3 as @e[tag=game_boy_horror_location,tag=same_room] at @s run function 3ds_remake:spawn_entities/item/huge_heart
 execute if score #dialog Dialog matches 3 run scoreboard players set #dialog Dialog -1
 
 execute if score #dialog Dialog matches -1 as @a[tag=same_room,tag=!spectator] run function luigis_mansion:entities/player/animation/set/none

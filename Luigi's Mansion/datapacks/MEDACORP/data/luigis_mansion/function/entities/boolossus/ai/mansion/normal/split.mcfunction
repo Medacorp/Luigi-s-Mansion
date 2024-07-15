@@ -14,8 +14,8 @@ execute if entity @s[tag=!flee,tag=!attack,tag=!laugh,scores={Wave=81..580,Dialo
 execute if entity @s[tag=attack,tag=!laugh,scores={Dialog=0}] run function luigis_mansion:entities/boolossus/attack/dash
 
 execute if entity @s[tag=!flee,tag=!attack,tag=!laugh,scores={Time=600..,Dialog=0,Wave=..599}] run function luigis_mansion:entities/boolossus/rotate
-execute at @s[tag=!flee,tag=!attack,tag=!laugh,scores={Dialog=0},tag=move_up] run function luigis_mansion:entities/boolossus/move/up_split
-execute at @s[tag=!flee,tag=!attack,tag=!laugh,scores={Dialog=0},tag=!move_up] run function luigis_mansion:entities/boolossus/move/down_split
+execute at @s[tag=!flee,tag=!attack,tag=!laugh,scores={Dialog=0,Wave=..599},tag=move_up] run function luigis_mansion:entities/boolossus/move/up_split
+execute at @s[tag=!flee,tag=!attack,tag=!laugh,scores={Dialog=0,Wave=..599},tag=!move_up] run function luigis_mansion:entities/boolossus/move/down_split
 tag @s remove wall
 
 scoreboard players set @s[tag=in_ice,scores={Dialog=0,Wave=41..599}] Dialog 100
@@ -48,9 +48,11 @@ tag @s remove flee
 execute at @s[scores={Dialog=0}] if entity @e[tag=same_room,tag=!spectator,tag=player,distance=..0.7,limit=1] run function luigis_mansion:entities/boolossus/collide_split
 
 scoreboard players add @s[scores={Wave=..80}] Wave 1
-execute at @s[scores={Wave=81..}] if entity @e[nbt={data:{entity:{namespace:"luigis_mansion",id:"boolossus"}}},distance=0.1..,limit=1] run scoreboard players add @s Wave 1
-execute at @s[scores={Wave=600..}] unless entity @e[nbt={data:{entity:{namespace:"luigis_mansion",id:"boolossus"}}},distance=0.1..,limit=1] run scoreboard players set @s Wave 81
-execute at @s unless entity @e[nbt={data:{entity:{namespace:"luigis_mansion",id:"boolossus"}}},distance=0.1..,limit=1] run tag @s add portrait_ghost_pop
+tag @s add me
+execute at @s[scores={Wave=81..}] if entity @e[nbt={data:{entity:{namespace:"luigis_mansion",id:"boolossus"}}},tag=!me,limit=1] run scoreboard players add @s Wave 1
+execute at @s[scores={Wave=600..}] unless entity @e[nbt={data:{entity:{namespace:"luigis_mansion",id:"boolossus"}}},tag=!me,limit=1] run scoreboard players set @s Wave 81
+execute at @s unless entity @e[nbt={data:{entity:{namespace:"luigis_mansion",id:"boolossus"}}},tag=!me,limit=1] run tag @s add portrait_ghost_pop
+tag @s remove me
 execute if entity @s[scores={Wave=600}] unless entity @e[tag=to_me,limit=1] run tag @s add to_me
 execute at @s[scores={Wave=600..},tag=!to_me] facing entity @e[tag=to_me,limit=1] feet run teleport @s ~ ~ ~ ~ ~
 teleport @s[scores={Wave=600..},tag=to_me] ~ ~0.1 ~

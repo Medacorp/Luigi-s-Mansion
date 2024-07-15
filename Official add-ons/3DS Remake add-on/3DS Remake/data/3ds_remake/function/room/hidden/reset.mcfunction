@@ -1,81 +1,81 @@
-forceload remove 831 -144 432 -1
-forceload remove 831 0 432 95
-forceload remove 3777 -100 3585 115
-bossbar set 3ds_remake:boo_counter players
+execute in luigis_mansion:normal run forceload remove 831 -144 432 -1
+execute in luigis_mansion:normal run forceload remove 831 0 432 95
+execute in luigis_mansion:normal run forceload remove 3777 -100 3585 115
+execute in luigis_mansion:normal run bossbar set 3ds_remake:boo_counter players
 
-execute if score #foyer Ticking matches 1 run function #3ds_remake:room/hidden/foyer/reset
-execute if score #hallway_1 Ticking matches 1 run function #3ds_remake:room/hidden/hallway_1/reset
-execute if score #parlor Ticking matches 1 run function #3ds_remake:room/hidden/parlor/reset
-execute if score #anteroom Ticking matches 1 run function #3ds_remake:room/hidden/anteroom/reset
-execute if score #wardrobe_room Ticking matches 1 run function #3ds_remake:room/hidden/wardrobe_room/reset
-execute if score #balcony_1 Ticking matches 1 run function #3ds_remake:room/hidden/balcony_1/reset
-execute if score #hallway_2 Ticking matches 1 run function #3ds_remake:room/hidden/hallway_2/reset
-execute if score #study Ticking matches 1 run function #3ds_remake:room/hidden/study/reset
-execute if score #master_bedroom Ticking matches 1 run function #3ds_remake:room/hidden/master_bedroom/reset
-execute if score #nursery Ticking matches 1 run function #3ds_remake:room/hidden/nursery/reset
-execute if score #hallway_3 Ticking matches 1 run function #3ds_remake:room/hidden/hallway_3/reset
-execute if score #hallway_4 Ticking matches 1 run function #3ds_remake:room/hidden/hallway_4/reset
-execute if score #hallway_5 Ticking matches 1 run function #3ds_remake:room/hidden/hallway_5/reset
-execute if score #hallway_6 Ticking matches 1 run function #3ds_remake:room/hidden/hallway_6/reset
-execute if score #hallway_7 Ticking matches 1 run function #3ds_remake:room/hidden/hallway_7/reset
-execute if score #bathroom_1 Ticking matches 1 run function #3ds_remake:room/hidden/bathroom_1/reset
-execute if score #ball_room Ticking matches 1 run function #3ds_remake:room/hidden/ball_room/reset
-execute if score #storage_room Ticking matches 1 run function #3ds_remake:room/hidden/storage_room/reset
-execute if score #washroom_1 Ticking matches 1 run function #3ds_remake:room/hidden/washroom_1/reset
-execute if score #fortune_tellers_room Ticking matches 1 run function #3ds_remake:room/hidden/fortune_tellers_room/reset
-execute if score #mirror_room Ticking matches 1 run function #3ds_remake:room/hidden/mirror_room/reset
-execute if score #laundry_room Ticking matches 1 run function #3ds_remake:room/hidden/laundry_room/reset
-execute if score #butlers_room Ticking matches 1 run function #3ds_remake:room/hidden/butlers_room/reset
-execute if score #hidden_room Ticking matches 1 run function #3ds_remake:room/hidden/hidden_room/reset
-execute if score #conservatory Ticking matches 1 run function #3ds_remake:room/hidden/conservatory/reset
-execute if score #dining_room Ticking matches 1 run function #3ds_remake:room/hidden/dining_room/reset
-execute if score #kitchen Ticking matches 1 run function #3ds_remake:room/hidden/kitchen/reset
-execute if score #boneyard Ticking matches 1 run function #3ds_remake:room/hidden/boneyard/reset
-execute if score #graveyard Ticking matches 1 run function #3ds_remake:room/hidden/graveyard/reset
-execute if score #courtyard Ticking matches 1 run function #3ds_remake:room/hidden/courtyard/reset
-execute if score #bottom_of_the_well Ticking matches 1 run function #3ds_remake:room/hidden/bottom_of_the_well/reset
-execute if score #rec_room Ticking matches 1 run function #3ds_remake:room/hidden/rec_room/reset
-execute if score #hallway_8 Ticking matches 1 run function #3ds_remake:room/hidden/hallway_8/reset
-execute if score #tea_room Ticking matches 1 run function #3ds_remake:room/hidden/tea_room/reset
-execute if score #hallway_9 Ticking matches 1 run function #3ds_remake:room/hidden/hallway_9/reset
-execute if score #hallway_10 Ticking matches 1 run function #3ds_remake:room/hidden/hallway_10/reset
-execute if score #hallway_11 Ticking matches 1 run function #3ds_remake:room/hidden/hallway_11/reset
-execute if score #hallway_12 Ticking matches 1 run function #3ds_remake:room/hidden/hallway_12/reset
-execute if score #hallway_13 Ticking matches 1 run function #3ds_remake:room/hidden/hallway_13/reset
-execute if score #hallway_14 Ticking matches 1 run function #3ds_remake:room/hidden/hallway_14/reset
-execute if score #hallway_15 Ticking matches 1 run function #3ds_remake:room/hidden/hallway_15/reset
-execute if score #washroom_2 Ticking matches 1 run function #3ds_remake:room/hidden/washroom_2/reset
-execute if score #bathroom_2 Ticking matches 1 run function #3ds_remake:room/hidden/bathroom_2/reset
-execute if score #nanas_room Ticking matches 1 run function #3ds_remake:room/hidden/nanas_room/reset
-execute if score #astral_hall Ticking matches 1 run function #3ds_remake:room/hidden/astral_hall/reset
-execute if score #observatory Ticking matches 1 run function #3ds_remake:room/hidden/observatory/reset
-execute if score #billiards_room Ticking matches 1 run function #3ds_remake:room/hidden/billiards_room/reset
-execute if score #projection_room Ticking matches 1 run function #3ds_remake:room/hidden/projection_room/reset
-execute if score #the_twins_room Ticking matches 1 run function #3ds_remake:room/hidden/the_twins_room/reset
-execute if score #safari_room Ticking matches 1 run function #3ds_remake:room/hidden/safari_room/reset
-execute if score #hallway_16 Ticking matches 1 run function #3ds_remake:room/hidden/hallway_16/reset
-execute if score #hallway_17 Ticking matches 1 run function #3ds_remake:room/hidden/hallway_17/reset
-execute if score #balcony_2 Ticking matches 1 run function #3ds_remake:room/hidden/balcony_2/reset
-execute if score #hallway_18 Ticking matches 1 run function #3ds_remake:room/hidden/hallway_18/reset
-execute if score #hallway_19 Ticking matches 1 run function #3ds_remake:room/hidden/hallway_19/reset
-execute if score #telephone_room Ticking matches 1 run function #3ds_remake:room/hidden/telephone_room/reset
-execute if score #breaker_room Ticking matches 1 run function #3ds_remake:room/hidden/breaker_room/reset
-execute if score #cellar Ticking matches 1 run function #3ds_remake:room/hidden/cellar/reset
-execute if score #hallway_20 Ticking matches 1 run function #3ds_remake:room/hidden/hallway_20/reset
-execute if score #hallway_21 Ticking matches 1 run function #3ds_remake:room/hidden/hallway_21/reset
-execute if score #hallway_22 Ticking matches 1 run function #3ds_remake:room/hidden/hallway_22/reset
-execute if score #clockwork_room Ticking matches 1 run function #3ds_remake:room/hidden/clockwork_room/reset
-execute if score #roof Ticking matches 1 run function #3ds_remake:room/hidden/roof/reset
-execute if score #armory Ticking matches 1 run function #3ds_remake:room/hidden/armory/reset
-execute if score #ceramics_studio Ticking matches 1 run function #3ds_remake:room/hidden/ceramics_studio/reset
-execute if score #sealed_room Ticking matches 1 run function #3ds_remake:room/hidden/sealed_room/reset
-execute if score #pipe_room Ticking matches 1 run function #3ds_remake:room/hidden/pipe_room/reset
-execute if score #cold_storage Ticking matches 1 run function #3ds_remake:room/hidden/cold_storage/reset
-execute if score #sitting_room Ticking matches 1 run function #3ds_remake:room/hidden/sitting_room/reset
-execute if score #guest_room Ticking matches 1 run function #3ds_remake:room/hidden/guest_room/reset
-execute if score #the_artists_studio Ticking matches 1 run function #3ds_remake:room/hidden/the_artists_studio/reset
-execute if score #secret_altar Ticking matches 1 run function #3ds_remake:room/hidden/secret_altar/reset
-execute if score #chauncey_battle Ticking matches 1 run function #3ds_remake:room/hidden/chauncey_battle/reset
-execute if score #bogmire_battle Ticking matches 1 run function #3ds_remake:room/hidden/bogmire_battle/reset
-execute if score #boolossus_battle Ticking matches 1 run function #3ds_remake:room/hidden/boolossus_battle/reset
-execute if score #king_boo_battle Ticking matches 1 run function #3ds_remake:room/hidden/king_boo_battle/reset
+execute in luigis_mansion:normal if score #foyer Ticking matches 1 run function #3ds_remake:room/hidden/foyer/reset
+execute in luigis_mansion:normal if score #hallway_1 Ticking matches 1 run function #3ds_remake:room/hidden/hallway_1/reset
+execute in luigis_mansion:normal if score #parlor Ticking matches 1 run function #3ds_remake:room/hidden/parlor/reset
+execute in luigis_mansion:normal if score #anteroom Ticking matches 1 run function #3ds_remake:room/hidden/anteroom/reset
+execute in luigis_mansion:normal if score #wardrobe_room Ticking matches 1 run function #3ds_remake:room/hidden/wardrobe_room/reset
+execute in luigis_mansion:normal if score #balcony_1 Ticking matches 1 run function #3ds_remake:room/hidden/balcony_1/reset
+execute in luigis_mansion:normal if score #hallway_2 Ticking matches 1 run function #3ds_remake:room/hidden/hallway_2/reset
+execute in luigis_mansion:normal if score #study Ticking matches 1 run function #3ds_remake:room/hidden/study/reset
+execute in luigis_mansion:normal if score #master_bedroom Ticking matches 1 run function #3ds_remake:room/hidden/master_bedroom/reset
+execute in luigis_mansion:normal if score #nursery Ticking matches 1 run function #3ds_remake:room/hidden/nursery/reset
+execute in luigis_mansion:normal if score #hallway_3 Ticking matches 1 run function #3ds_remake:room/hidden/hallway_3/reset
+execute in luigis_mansion:normal if score #hallway_4 Ticking matches 1 run function #3ds_remake:room/hidden/hallway_4/reset
+execute in luigis_mansion:normal if score #hallway_5 Ticking matches 1 run function #3ds_remake:room/hidden/hallway_5/reset
+execute in luigis_mansion:normal if score #hallway_6 Ticking matches 1 run function #3ds_remake:room/hidden/hallway_6/reset
+execute in luigis_mansion:normal if score #hallway_7 Ticking matches 1 run function #3ds_remake:room/hidden/hallway_7/reset
+execute in luigis_mansion:normal if score #bathroom_1 Ticking matches 1 run function #3ds_remake:room/hidden/bathroom_1/reset
+execute in luigis_mansion:normal if score #ball_room Ticking matches 1 run function #3ds_remake:room/hidden/ball_room/reset
+execute in luigis_mansion:normal if score #storage_room Ticking matches 1 run function #3ds_remake:room/hidden/storage_room/reset
+execute in luigis_mansion:normal if score #washroom_1 Ticking matches 1 run function #3ds_remake:room/hidden/washroom_1/reset
+execute in luigis_mansion:normal if score #fortune_tellers_room Ticking matches 1 run function #3ds_remake:room/hidden/fortune_tellers_room/reset
+execute in luigis_mansion:normal if score #mirror_room Ticking matches 1 run function #3ds_remake:room/hidden/mirror_room/reset
+execute in luigis_mansion:normal if score #laundry_room Ticking matches 1 run function #3ds_remake:room/hidden/laundry_room/reset
+execute in luigis_mansion:normal if score #butlers_room Ticking matches 1 run function #3ds_remake:room/hidden/butlers_room/reset
+execute in luigis_mansion:normal if score #hidden_room Ticking matches 1 run function #3ds_remake:room/hidden/hidden_room/reset
+execute in luigis_mansion:normal if score #conservatory Ticking matches 1 run function #3ds_remake:room/hidden/conservatory/reset
+execute in luigis_mansion:normal if score #dining_room Ticking matches 1 run function #3ds_remake:room/hidden/dining_room/reset
+execute in luigis_mansion:normal if score #kitchen Ticking matches 1 run function #3ds_remake:room/hidden/kitchen/reset
+execute in luigis_mansion:normal if score #boneyard Ticking matches 1 run function #3ds_remake:room/hidden/boneyard/reset
+execute in luigis_mansion:normal if score #graveyard Ticking matches 1 run function #3ds_remake:room/hidden/graveyard/reset
+execute in luigis_mansion:normal if score #courtyard Ticking matches 1 run function #3ds_remake:room/hidden/courtyard/reset
+execute in luigis_mansion:normal if score #bottom_of_the_well Ticking matches 1 run function #3ds_remake:room/hidden/bottom_of_the_well/reset
+execute in luigis_mansion:normal if score #rec_room Ticking matches 1 run function #3ds_remake:room/hidden/rec_room/reset
+execute in luigis_mansion:normal if score #hallway_8 Ticking matches 1 run function #3ds_remake:room/hidden/hallway_8/reset
+execute in luigis_mansion:normal if score #tea_room Ticking matches 1 run function #3ds_remake:room/hidden/tea_room/reset
+execute in luigis_mansion:normal if score #hallway_9 Ticking matches 1 run function #3ds_remake:room/hidden/hallway_9/reset
+execute in luigis_mansion:normal if score #hallway_10 Ticking matches 1 run function #3ds_remake:room/hidden/hallway_10/reset
+execute in luigis_mansion:normal if score #hallway_11 Ticking matches 1 run function #3ds_remake:room/hidden/hallway_11/reset
+execute in luigis_mansion:normal if score #hallway_12 Ticking matches 1 run function #3ds_remake:room/hidden/hallway_12/reset
+execute in luigis_mansion:normal if score #hallway_13 Ticking matches 1 run function #3ds_remake:room/hidden/hallway_13/reset
+execute in luigis_mansion:normal if score #hallway_14 Ticking matches 1 run function #3ds_remake:room/hidden/hallway_14/reset
+execute in luigis_mansion:normal if score #hallway_15 Ticking matches 1 run function #3ds_remake:room/hidden/hallway_15/reset
+execute in luigis_mansion:normal if score #washroom_2 Ticking matches 1 run function #3ds_remake:room/hidden/washroom_2/reset
+execute in luigis_mansion:normal if score #bathroom_2 Ticking matches 1 run function #3ds_remake:room/hidden/bathroom_2/reset
+execute in luigis_mansion:normal if score #nanas_room Ticking matches 1 run function #3ds_remake:room/hidden/nanas_room/reset
+execute in luigis_mansion:normal if score #astral_hall Ticking matches 1 run function #3ds_remake:room/hidden/astral_hall/reset
+execute in luigis_mansion:normal if score #observatory Ticking matches 1 run function #3ds_remake:room/hidden/observatory/reset
+execute in luigis_mansion:normal if score #billiards_room Ticking matches 1 run function #3ds_remake:room/hidden/billiards_room/reset
+execute in luigis_mansion:normal if score #projection_room Ticking matches 1 run function #3ds_remake:room/hidden/projection_room/reset
+execute in luigis_mansion:normal if score #the_twins_room Ticking matches 1 run function #3ds_remake:room/hidden/the_twins_room/reset
+execute in luigis_mansion:normal if score #safari_room Ticking matches 1 run function #3ds_remake:room/hidden/safari_room/reset
+execute in luigis_mansion:normal if score #hallway_16 Ticking matches 1 run function #3ds_remake:room/hidden/hallway_16/reset
+execute in luigis_mansion:normal if score #hallway_17 Ticking matches 1 run function #3ds_remake:room/hidden/hallway_17/reset
+execute in luigis_mansion:normal if score #balcony_2 Ticking matches 1 run function #3ds_remake:room/hidden/balcony_2/reset
+execute in luigis_mansion:normal if score #hallway_18 Ticking matches 1 run function #3ds_remake:room/hidden/hallway_18/reset
+execute in luigis_mansion:normal if score #hallway_19 Ticking matches 1 run function #3ds_remake:room/hidden/hallway_19/reset
+execute in luigis_mansion:normal if score #telephone_room Ticking matches 1 run function #3ds_remake:room/hidden/telephone_room/reset
+execute in luigis_mansion:normal if score #breaker_room Ticking matches 1 run function #3ds_remake:room/hidden/breaker_room/reset
+execute in luigis_mansion:normal if score #cellar Ticking matches 1 run function #3ds_remake:room/hidden/cellar/reset
+execute in luigis_mansion:normal if score #hallway_20 Ticking matches 1 run function #3ds_remake:room/hidden/hallway_20/reset
+execute in luigis_mansion:normal if score #hallway_21 Ticking matches 1 run function #3ds_remake:room/hidden/hallway_21/reset
+execute in luigis_mansion:normal if score #hallway_22 Ticking matches 1 run function #3ds_remake:room/hidden/hallway_22/reset
+execute in luigis_mansion:normal if score #clockwork_room Ticking matches 1 run function #3ds_remake:room/hidden/clockwork_room/reset
+execute in luigis_mansion:normal if score #roof Ticking matches 1 run function #3ds_remake:room/hidden/roof/reset
+execute in luigis_mansion:normal if score #armory Ticking matches 1 run function #3ds_remake:room/hidden/armory/reset
+execute in luigis_mansion:normal if score #ceramics_studio Ticking matches 1 run function #3ds_remake:room/hidden/ceramics_studio/reset
+execute in luigis_mansion:normal if score #sealed_room Ticking matches 1 run function #3ds_remake:room/hidden/sealed_room/reset
+execute in luigis_mansion:normal if score #pipe_room Ticking matches 1 run function #3ds_remake:room/hidden/pipe_room/reset
+execute in luigis_mansion:normal if score #cold_storage Ticking matches 1 run function #3ds_remake:room/hidden/cold_storage/reset
+execute in luigis_mansion:normal if score #sitting_room Ticking matches 1 run function #3ds_remake:room/hidden/sitting_room/reset
+execute in luigis_mansion:normal if score #guest_room Ticking matches 1 run function #3ds_remake:room/hidden/guest_room/reset
+execute in luigis_mansion:normal if score #the_artists_studio Ticking matches 1 run function #3ds_remake:room/hidden/the_artists_studio/reset
+execute in luigis_mansion:normal if score #secret_altar Ticking matches 1 run function #3ds_remake:room/hidden/secret_altar/reset
+execute in luigis_mansion:normal if score #chauncey_battle Ticking matches 1 run function #3ds_remake:room/hidden/chauncey_battle/reset
+execute in luigis_mansion:normal if score #bogmire_battle Ticking matches 1 run function #3ds_remake:room/hidden/bogmire_battle/reset
+execute in luigis_mansion:normal if score #boolossus_battle Ticking matches 1 run function #3ds_remake:room/hidden/boolossus_battle/reset
+execute in luigis_mansion:normal if score #king_boo_battle Ticking matches 1 run function #3ds_remake:room/hidden/king_boo_battle/reset

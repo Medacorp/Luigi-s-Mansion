@@ -1,2 +1,2 @@
-tag @e[scores={Room=12},type=!minecraft:player,tag=!model_piece] add remove_from_existence
+tag @e[scores={Room=16},type=!minecraft:player,tag=!model_piece] add remove_from_existence
 scoreboard players reset #bathroom_1

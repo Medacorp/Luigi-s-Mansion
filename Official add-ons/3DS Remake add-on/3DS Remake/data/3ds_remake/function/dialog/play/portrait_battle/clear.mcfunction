@@ -11,9 +11,6 @@ execute if score #dialog Dialog matches 133.. as @a[tag=same_room,tag=dialog_men
 scoreboard players reset @a[tag=same_room,tag=!spectator] WarpTime
 execute as @a[tag=same_room,tag=!spectator,tag=game_boy_horror_menu] run function luigis_mansion:selection_menu/game_boy_horror/exit
 
-execute if score #dialog Dialog matches 1 run data modify storage luigis_mansion:data entity set value {room:1,tags:["portrait_ghost"]}
-execute if score #dialog Dialog matches 1 store result storage luigis_mansion:data entity.room int 1 run scoreboard players get @a[tag=same_room,tag=!spectator,limit=1] Room
-execute if score #dialog Dialog matches 1 run function luigis_mansion:spawn_entities/ghost/empty_marker
 execute if score #dialog Dialog matches 1..132 as @a[tag=same_room,tag=!spectator] run function luigis_mansion:entities/player/animation/set/idle
 execute if score #dialog Dialog matches 1..132 as @a[tag=same_room] run function luigis_mansion:other/music/set/area_boss_defeated
 execute if score #dialog Dialog matches 70 run title @a[tag=same_room] title {"type":"translatable","translate":"3ds_remake:message.gallery.portrait_battle.clear"}

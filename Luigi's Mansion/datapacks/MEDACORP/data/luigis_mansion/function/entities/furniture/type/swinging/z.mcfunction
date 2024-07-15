@@ -25,7 +25,7 @@ execute if entity @s[scores={FurnitureZProgress=84,FurnitureZTarget=-300..300}] 
 execute if entity @s[scores={FurnitureZProgress=84}] unless entity @s[scores={FurnitureZTarget=-300..300}] run playsound luigis_mansion:furniture.search.swing block @a[tag=same_room] ~ ~ ~ 1 1
 
 execute if score @s FurnitureVacuum matches ..-1 if score @s FurnitureZTarget matches 1.. run scoreboard players operation @s FurnitureVacuum *= #-1 Constants
-execute if score @s FurnitureVacuum matches ..-1 if entity @s[scores={FurnitureZTarget=-900..900}] run scoreboard players operation @s FurnitureVacuum < @s FurnitureZTarget
+execute if score @s FurnitureVacuum matches 1.. if score @s FurnitureZTarget matches 1.. run scoreboard players operation @s FurnitureVacuum > @s FurnitureZTarget
 execute if score @s FurnitureVacuum matches 1.. if score @s FurnitureZTarget matches ..-1 run scoreboard players operation @s FurnitureVacuum *= #-1 Constants
-execute if score @s FurnitureVacuum matches 1.. if entity @s[scores={FurnitureZTarget=-900..900}] run scoreboard players operation @s FurnitureVacuum > @s FurnitureZTarget
+execute if score @s FurnitureVacuum matches ..-1 if score @s FurnitureZTarget matches ..-1 run scoreboard players operation @s FurnitureVacuum < @s FurnitureZTarget
 execute if score @s FurnitureVacuum matches 0 if entity @s[scores={FurnitureZTarget=-900..900}] run scoreboard players operation @s FurnitureVacuum = @s FurnitureZTarget

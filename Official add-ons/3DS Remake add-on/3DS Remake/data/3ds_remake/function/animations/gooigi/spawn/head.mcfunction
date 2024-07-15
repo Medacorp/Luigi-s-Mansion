@@ -1,1 +1,1 @@
-function 3ds_remake:animations/gooigi/head
+function 3ds_remake:animations/gooigi/head {namespace:"luigis_mansion",id:"idle"}

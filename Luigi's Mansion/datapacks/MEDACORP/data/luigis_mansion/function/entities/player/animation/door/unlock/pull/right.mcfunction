@@ -10,7 +10,7 @@ tag @s[scores={AnimationProgress=1}] add reset_rotation
 execute if entity @s[scores={AnimationProgress=1}] run playsound luigis_mansion:item.key.grab block @a[tag=same_room] ~ ~ ~ 1
 execute if entity @s[scores={AnimationProgress=80}] run playsound luigis_mansion:item.key.use block @a[tag=same_room] ~ ~ ~ 1
 scoreboard players set @s Sound 10
-scoreboard players set @s Invulnerable 1000
+scoreboard players set @s Invulnerable 1
 tag @s add pause_dialog
 tag @s[scores={AnimationProgress=260}] remove reset_rotation
 scoreboard players set @s[scores={AnimationProgress=260}] Invulnerable 0

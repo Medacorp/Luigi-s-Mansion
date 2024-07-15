@@ -7,7 +7,6 @@ execute if entity @s[tag=!attack,tag=!collided,tag=!vanish,tag=!laugh,tag=!compl
 execute if entity @s[tag=!attack,tag=!collided,tag=laugh] run function luigis_mansion:entities/purple_puncher/laugh with entity @s data.entity
 execute if entity @s[tag=!attack,tag=!collided,tag=complain] run function luigis_mansion:entities/purple_puncher/complain with entity @s data.entity
 execute if entity @s[tag=!collided,tag=smug] run function luigis_mansion:entities/flash/smug with entity @s data.entity
-execute if entity @s[tag=collided] run function luigis_mansion:entities/purple_puncher/collided with entity @s data.entity
 execute if entity @s[tag=vanish] run function luigis_mansion:entities/purple_puncher/vanish with entity @s data.entity
 execute if entity @s[tag=appear,tag=!beta_appear] run function luigis_mansion:entities/purple_puncher/appear/normal with entity @s data.entity
 execute if entity @s[tag=appear,tag=beta_appear] run function luigis_mansion:entities/purple_puncher/appear/beta with entity @s data.entity

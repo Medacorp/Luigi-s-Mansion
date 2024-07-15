@@ -1,1 +1,1 @@
-function luigis_mansion:animations/luigi/right_leg
+function luigis_mansion:animations/luigi/right_leg {namespace:"luigis_mansion",id:"idle"}

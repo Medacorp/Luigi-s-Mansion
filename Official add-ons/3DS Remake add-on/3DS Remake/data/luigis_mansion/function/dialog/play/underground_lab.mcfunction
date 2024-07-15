@@ -5,7 +5,7 @@ execute if score #dialog Dialog matches 140 if entity @a[tag=same_room,tag=next_
 execute if score #dialog Dialog matches 138 if entity @a[tag=same_room,tag=next_dialog_line,limit=1] run scoreboard players add #dialog Dialog 1
 execute if score #dialog Dialog matches 117..136 if entity @a[tag=same_room,tag=next_dialog_line,limit=1] run scoreboard players set #dialog Dialog 137
 execute if score #dialog Dialog matches 116..135 run scoreboard players add #dialog Dialog 1
-execute if score #dialog Dialog matches 114 if entity @a[tag=same_room,tag=next_dialog_line,limit=1] run scoreboard players set #dialog Dialog 92
+execute if score #dialog Dialog matches 114 if entity @a[tag=same_room,tag=next_dialog_line,limit=1] run scoreboard players add #dialog Dialog 1
 execute if score #dialog Dialog matches 93..113 run scoreboard players add #dialog Dialog 1
 execute if score #dialog Dialog matches 92 if entity @a[tag=same_room,tag=select_dialog_branch_no,limit=1] run scoreboard players set #dialog Dialog 114
 execute if score #dialog Dialog matches 92 if entity @a[tag=same_room,tag=select_dialog_branch_yes,limit=1] run scoreboard players set #dialog Dialog 93
@@ -27,8 +27,7 @@ execute if score #dialog Dialog matches 3 if entity @a[tag=same_room,tag=select_
 execute if score #dialog Dialog matches 3 if entity @a[tag=same_room,tag=select_dialog_branch_training,limit=1] run scoreboard players set #dialog Dialog 5
 execute if score #dialog Dialog matches 2..3 if entity @a[tag=same_room,tag=next_dialog_line,limit=1] run scoreboard players add #dialog Dialog 1
 execute if score #dialog Dialog matches ..1 run scoreboard players add #dialog Dialog 1
-execute if score #dialog Dialog matches 147 if entity @a[tag=same_room,tag=skip_dialog,limit=1] run scoreboard players set #dialog Dialog 148
-execute if score #dialog Dialog matches 144 if entity @a[tag=same_room,tag=skip_dialog,limit=1] run scoreboard players set #dialog Dialog 145
+execute if score #dialog Dialog matches 144..147 if entity @a[tag=same_room,tag=skip_dialog,limit=1] run scoreboard players set #dialog Dialog 148
 execute if score #dialog Dialog matches 142 if entity @a[tag=same_room,tag=skip_dialog,limit=1] run scoreboard players set #dialog Dialog 143
 execute if score #dialog Dialog matches 140 if entity @a[tag=same_room,tag=skip_dialog,limit=1] run scoreboard players set #dialog Dialog 141
 execute if score #dialog Dialog matches 138 if entity @a[tag=same_room,tag=skip_dialog,limit=1] run scoreboard players set #dialog Dialog 139
@@ -177,7 +176,7 @@ execute if score #dialog Dialog matches 144 if entity @a[tag=select_dialog_branc
 
 execute if score #dialog Dialog matches 145 as @a[tag=same_room,tag=!spectator] run function luigis_mansion:entities/player/animation/set/think
 
-execute if score #dialog Dialog matches 146 run scoreboard players set #dialog Dialog 115
+execute if score #dialog Dialog matches 146 run scoreboard players set #dialog Dialog 116
 
 execute if score #dialog Dialog matches 147 if score #players Totals matches 1 if entity @a[tag=select_dialog_branch_change_amiibo,limit=1] run tellraw @a[tag=same_room] {"type":"translatable","translate":"chat.type.text","with":[{"type":"translatable","translate":"luigis_mansion:entity.e_gadd","color":"green"},{"type":"translatable","translate":"3ds_remake:dialog.underground_lab.change_amiibo.1.alt"}]}
 execute if score #dialog Dialog matches 147 if score #players Totals matches 2.. if entity @a[tag=select_dialog_branch_change_amiibo,limit=1] run tellraw @a[tag=same_room] {"type":"translatable","translate":"chat.type.text","with":[{"type":"translatable","translate":"luigis_mansion:entity.e_gadd","color":"green"},{"type":"translatable","translate":"3ds_remake:dialog.underground_lab.change_amiibo.1.alt.more"}]}

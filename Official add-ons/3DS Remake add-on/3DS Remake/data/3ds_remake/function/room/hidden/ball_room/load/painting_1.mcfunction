@@ -2,4 +2,4 @@ summon minecraft:item_frame 701 13 -39 {Facing:2b,Silent:1b,Invulnerable:1b,Item
 summon minecraft:item_frame 700 13 -39 {Facing:2b,Silent:1b,Invulnerable:1b,Item:{id:"minecraft:filled_map",count:1,components:{"minecraft:map_id":144}},CustomName:'{"type":"translatable","translate":"luigis_mansion:furniture.painting"}',Invisible:1b,Fixed:1b}
 summon minecraft:item_frame 701 12 -39 {Facing:2b,Silent:1b,Invulnerable:1b,Item:{id:"minecraft:filled_map",count:1,components:{"minecraft:map_id":145}},CustomName:'{"type":"translatable","translate":"luigis_mansion:furniture.painting"}',Invisible:1b,Fixed:1b}
 summon minecraft:item_frame 700 12 -39 {Facing:2b,Silent:1b,Invulnerable:1b,Item:{id:"minecraft:filled_map",count:1,components:{"minecraft:map_id":146}},CustomName:'{"type":"translatable","translate":"luigis_mansion:furniture.painting"}',Invisible:1b,Fixed:1b}
-scoreboard players set @e[x=771.0,y=13.0,z=-38.5,distance=..2,type=minecraft:item_frame] Room 17
+scoreboard players set @e[x=701.0,y=13.0,z=-38.5,distance=..2,type=minecraft:item_frame] Room 17

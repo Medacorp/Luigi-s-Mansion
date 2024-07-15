@@ -18,6 +18,7 @@ data modify entity @e[tag=this_entity,limit=1] data.loot set from storage luigis
 data modify entity @e[tag=this_entity,limit=1] data.damage set from storage luigis_mansion:data current_state.current_data.portrait_ghosts.luigis_mansion.king_boo.damage
 scoreboard players set @e[tag=this_entity,limit=1] PullStrength 10
 scoreboard players set @e[tag=this_entity,limit=1] Sound 0
+scoreboard players set @e[tag=this_entity,limit=1] HurtTime 0
 scoreboard players set @e[tag=this_entity,limit=1] StunTime 0
 scoreboard players set @e[tag=this_entity,limit=1] VulnerableTime 0
 scoreboard players set @e[tag=this_entity,limit=1] SecondFleeDamage -1

@@ -31,13 +31,15 @@ scoreboard players operation #temp PositionZ = #swinging PositionZ
 scoreboard players operation #temp PositionX -= #temp3 PositionX
 scoreboard players operation #temp PositionY -= #temp3 PositionY
 scoreboard players operation #temp PositionZ -= #temp3 PositionZ
-execute unless score #temp FurnitureSizeRadius matches 1.. run scoreboard players add #temp PositionX 5
-execute if score #temp FurnitureSizeRadius matches 1.. run scoreboard players operation #temp PositionX += #temp FurnitureSizeRadius
 scoreboard players operation #temp PositionX *= #temp PositionX
 scoreboard players operation #temp PositionY *= #temp PositionY
 scoreboard players operation #temp PositionZ *= #temp PositionZ
 scoreboard players operation #temp PositionX += #temp PositionY
 scoreboard players operation #temp PositionX += #temp PositionZ
+execute unless score #temp FurnitureSizeRadius matches 1.. run scoreboard players remove #temp PositionX 25
+execute if score #temp FurnitureSizeRadius matches 1.. run scoreboard players operation #temp PositionY = #temp FurnitureSizeRadius
+execute if score #temp FurnitureSizeRadius matches 1.. run scoreboard players operation #temp PositionY *= #temp FurnitureSizeRadius
+execute if score #temp FurnitureSizeRadius matches 1.. run scoreboard players operation #temp PositionX = #temp PositionY
 execute if score #temp PositionX matches ..1 run tag @s add hit_by_swinging_furniture
 
 scoreboard players reset #temp PositionX

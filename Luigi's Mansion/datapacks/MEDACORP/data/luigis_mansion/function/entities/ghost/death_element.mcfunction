@@ -3,6 +3,7 @@ tag @s remove element_hurt
 tag @s remove hurt
 scoreboard players add @s DeathTime 1
 
+execute if entity @s[scores={DeathTime=1}] unless entity @a[tag=expelling_me,limit=1] run function luigis_mansion:entities/ghost/find_expellers
 execute if entity @s[scores={DeathTime=1}] run scoreboard players operation @s KillerID = @p[tag=expelling_me] ID
 execute if entity @s[scores={DeathTime=1}] as @a[tag=expelling_me] run function luigis_mansion:entities/ghost/find_shooters
 execute if entity @s[scores={DeathTime=1}] if entity @a[tag=!spectator,tag=shooter] run tag @a[tag=expelling_me,tag=!shooter] remove expelling_me

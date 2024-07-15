@@ -1,9 +1,9 @@
 scoreboard players set * ChangedMansion 1
 scoreboard players reset @a ChangedMansion
-forceload add 720 8
-execute if loaded 720 102 7 run data modify storage luigis_mansion:data furniture set value {room:0,sound:{namespace:"luigis_mansion",id:"heavy_generic"},door:{model:{namespace:"luigis_mansion",id:"mansion/entrance"},frame:{namespace:"luigis_mansion",id:"double/basic"},left_hinge:1b,other_end:{dimension:"luigis_mansion:hidden",x:755,y:11,z:6},go_through_command:"function luigis_mansion:room/hidden/enter"}}
-execute if loaded 720 102 7 positioned 720 102 7 rotated -90 0 run function luigis_mansion:spawn_furniture/door
-execute if loaded 720 102 7 run data modify storage luigis_mansion:data furniture set value {room:0,sound:{namespace:"luigis_mansion",id:"heavy_generic"},door:{model:{namespace:"luigis_mansion",id:"mansion/entrance"},frame:{namespace:"luigis_mansion",id:"double/basic"},push:1b,other_end:{dimension:"luigis_mansion:hidden",x:755,y:11,z:7},go_through_command:"function luigis_mansion:room/hidden/enter"}}
-execute if loaded 720 102 7 positioned 720 102 8 rotated -90 0 run function luigis_mansion:spawn_furniture/door
-execute unless loaded 720 102 7 run schedule function luigis_mansion:room/hidden/front_door 1
-execute if loaded 720 102 7 run forceload remove 720 8
+execute in minecraft:overworld run forceload add 720 8
+execute in minecraft:overworld if loaded 720 102 7 run data modify storage luigis_mansion:data furniture set value {room:0,sound:{namespace:"luigis_mansion",id:"heavy_generic"},door:{model:{namespace:"luigis_mansion",id:"mansion/entrance"},frame:{namespace:"luigis_mansion",id:"double/basic"},left_hinge:1b,other_end:{dimension:"luigis_mansion:hidden",x:755,y:11,z:6},go_through_command:"function luigis_mansion:room/hidden/enter"}}
+execute in minecraft:overworld if loaded 720 102 7 positioned 720 102 7 rotated -90 0 run function luigis_mansion:spawn_furniture/door
+execute in minecraft:overworld if loaded 720 102 7 run data modify storage luigis_mansion:data furniture set value {room:0,sound:{namespace:"luigis_mansion",id:"heavy_generic"},door:{model:{namespace:"luigis_mansion",id:"mansion/entrance"},frame:{namespace:"luigis_mansion",id:"double/basic"},push:1b,other_end:{dimension:"luigis_mansion:hidden",x:755,y:11,z:7},go_through_command:"function luigis_mansion:room/hidden/enter"}}
+execute in minecraft:overworld if loaded 720 102 7 positioned 720 102 8 rotated -90 0 run function luigis_mansion:spawn_furniture/door
+execute in minecraft:overworld unless loaded 720 102 7 run schedule function luigis_mansion:room/hidden/front_door 1
+execute in minecraft:overworld if loaded 720 102 7 run forceload remove 720 8

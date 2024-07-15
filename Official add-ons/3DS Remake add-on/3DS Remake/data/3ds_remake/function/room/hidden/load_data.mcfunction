@@ -7,7 +7,7 @@ execute unless data storage luigis_mansion:data current_state.current_data{data_
 function #luigis_mansion:room/reset_variable_to_default
 scoreboard players set #multiply_hurt Selected 200
 scoreboard players set #can_warp Selected 1
-scoreboard players set #heart_money_count Selected 1000
+scoreboard players set #heart_money_count Selected 200
 scoreboard players reset * Ticking
 scoreboard players set #underground_lab Ticking 1
 scoreboard players reset * Wave

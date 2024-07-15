@@ -1,4 +1,4 @@
-This add-on adds a mansion that matched the E3 2001 demo of the game.
+This add-on adds a mansion that matches the E3 2001 demo of the game.
 
 This is a separate mansion with separate save-data.
 A max health counter will display in the mansion, you'll figure out why it's there when in the "area 2" hallway.
@@ -6,6 +6,9 @@ The Poltergust 500 will overheat when you vacuum for too long, keep that in mind
 New money type: Ghost Coin.
 New ghost types: Ghost, Puncher, Body Slammer, Basher, Bat, Boo, Shining Ghost, Flying Fish and Mouse.
 The hallways, bath room and back yard cannot be cleared.
+
+Amiibo:
+When all tasks are cleared (3DS Remake add-on), you unlock the E. Gadd amiibo, which prevents ghosts from escaping as a result of mistakes within the mansion; they can still escape if you take damage, or when they get out of reach.
 
 == Known issues ==
 

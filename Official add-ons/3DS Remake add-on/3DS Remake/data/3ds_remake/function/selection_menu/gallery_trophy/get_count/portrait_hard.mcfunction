@@ -45,5 +45,4 @@ execute if data storage 3ds_remake:data currently_checked[-1] run function 3ds_r
 data modify storage 3ds_remake:data currently_checked set from storage 3ds_remake:data current_state.portrait_ghosts_defeated_in.luigis_mansion.king_boo
 execute if data storage 3ds_remake:data currently_checked[-1] run function 3ds_remake:selection_menu/gallery_trophy/get_count/portrait/hard
 data remove storage 3ds_remake:data currently_checked
-scoreboard players reset #temp Money
 scoreboard players reset #temp2 Money

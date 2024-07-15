@@ -1,1 +1,1 @@
-function 3ds_remake:animations/gooigi/poltergust_body
+function 3ds_remake:animations/gooigi/poltergust_body {namespace:"luigis_mansion",id:"idle"}

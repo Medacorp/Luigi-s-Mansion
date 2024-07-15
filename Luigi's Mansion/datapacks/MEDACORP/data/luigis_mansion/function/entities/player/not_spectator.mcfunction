@@ -1,6 +1,7 @@
 function luigis_mansion:room/dark_room
 
-execute if entity @s[scores={Health=..0},tag=!death_animation,tag=!revive_animation,tag=!dead_player] unless entity @s[scores={AnimationProgress=1..},tag=!idle] run function luigis_mansion:entities/player/death
+execute if entity @s[scores={Health=..0},tag=!death_animation,tag=!revive_animation,tag=!dead_player,tag=!death_wait_tick] unless entity @s[scores={AnimationProgress=1..},tag=!idle] run function luigis_mansion:entities/player/death
+tag @s remove death_wait_tick
 execute if entity @s[scores={Health=1..},tag=dead_player] run function luigis_mansion:entities/player/remove_dead_entry with entity @s
 
 scoreboard players reset @s[scores={OpenMapTime=1..},tag=stop_map_on_key_collect] OpenMapFocus
@@ -22,7 +23,7 @@ execute if entity @s[scores={Health=1..}] store result score @s Damage run data 
 execute if entity @s[scores={Damage=..99}] run function luigis_mansion:entities/player/heal
 scoreboard players reset @s Damage
 execute unless entity @s[scores={Invulnerable=0..}] run scoreboard players set @s Invulnerable 0
-scoreboard players remove @s[scores={Invulnerable=1..}] Invulnerable 1
+execute unless entity @s[scores={AnimationProgress=1..},tag=!idle,tag=!animation_may_move] run scoreboard players remove @s[scores={Invulnerable=1..}] Invulnerable 1
 effect give @s[scores={Food=3..}] minecraft:hunger 1 255 true
 effect give @s[scores={Food=..0}] minecraft:saturation 1 0 true
 execute unless entity @s[scores={MaxHealth=100}] run scoreboard players add @s MaxHealthTime 1

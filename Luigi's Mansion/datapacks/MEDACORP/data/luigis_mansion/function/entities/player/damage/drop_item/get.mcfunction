@@ -1,5 +1,3 @@
-$data modify storage luigis_mansion:data current_state.money_grabbed.money.$(namespace).$(id) set value 0
-
 $data modify storage luigis_mansion:data current_state.my_money_data set value {uuid:$(uuid),total:0,money:{$(namespace):{$(id):0}}}
 $execute if data storage luigis_mansion:data current_state.current_data.money_grabbed[{uuid:$(uuid)}] run data modify storage luigis_mansion:data current_state.my_money_data set from storage luigis_mansion:data current_state.current_data.money_grabbed[{uuid:$(uuid)}]
 $execute if data storage luigis_mansion:data current_state.current_data.money_grabbed[{uuid:$(uuid)}] run data remove storage luigis_mansion:data current_state.current_data.money_grabbed[{uuid:$(uuid)}]

@@ -1,4 +1,5 @@
 scoreboard players add @s AnimationProgress 1
+data modify entity @s[scores={AnimationProgress=1..},tag=held_item] ArmorItems[3] set value {id:"minecraft:stone_button",count:1}
 execute store result score #temp Time run data get entity @s Pose.Head[0]
 execute if entity @s[scores={AnimationProgress=1..5}] store result entity @s Pose.Head[0] float 1 run scoreboard players remove #temp Time 2
 execute if entity @s[scores={AnimationProgress=6..10}] store result entity @s Pose.Head[0] float 1 run scoreboard players add #temp Time 2

@@ -18,10 +18,10 @@ execute if entity @s[tag=move] store result entity @s Pose.Head[0] float 1 run s
 execute at @s[tag=vacuumable,tag=!in_vacuum,tag=!can_spit_2,tag=!spit,tag=!dead] if entity @e[tag=same_room,tag=!spectator,tag=player,distance=..0.7,limit=1] run function luigis_mansion:entities/billiards_ball/hit_player
 
 execute at @s[tag=collision] run function luigis_mansion:entities/billiards_ball/back_to_start
-execute at @s[tag=in_vacuum,tag=!spit,tag=vacuumable] run function luigis_mansion:entities/billiards_ball/roll_to_player
+execute at @s[tag=in_vacuum,tag=vacuumable] run function luigis_mansion:entities/billiards_ball/roll_to_player
 execute at @s[tag=!spit,tag=vacuumable] unless entity @s[tag=!in_dust,tag=!in_fire,tag=!in_water,tag=!in_ice] run function luigis_mansion:entities/billiards_ball/roll_away_from_player
 
-execute at @s[tag=in_vacuum,tag=!spit,tag=vacuumable] if entity @p[distance=..1.5,tag=!spectator,tag=player,tag=vacuuming] run tag @s add can_spit
+execute at @s[tag=in_vacuum,tag=vacuumable] if entity @p[distance=..1.5,tag=!spectator,tag=player,tag=vacuuming] run tag @s add can_spit
 tag @s[tag=can_spit] add can_spit_2
 tag @s[tag=!can_spit] remove can_spit_2
 tag @s[tag=!in_vacuum,tag=can_spit_2] add spit

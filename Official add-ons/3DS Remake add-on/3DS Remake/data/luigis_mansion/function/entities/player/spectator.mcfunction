@@ -8,7 +8,7 @@ scoreboard players set @s Sound 0
 execute if entity @s[tag=using_selection_menu] run function luigis_mansion:selection_menu/tick
 execute if entity @s[scores={AnimationProgress=1..}] run function luigis_mansion:entities/player/animation/set/none
 
-execute unless entity @a[tag=portrait_battle,limit=1] unless entity @s[scores={Offline=0}] if entity @s[tag=!using_selection_menu,tag=!gooigi] run function luigis_mansion:selection_menu/mansion_reset/original_menu
+execute unless data storage luigis_mansion:data current_state.current_data.portrait_battle unless entity @s[scores={Offline=0}] if entity @s[tag=!using_selection_menu,tag=!gooigi] run function luigis_mansion:selection_menu/mansion_reset/original_menu
 scoreboard players set @s[scores={Offline=-1}] Offline 0
 
 scoreboard players operation #temp ID = @s ID

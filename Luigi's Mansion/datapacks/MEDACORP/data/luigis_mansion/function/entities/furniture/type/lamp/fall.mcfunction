@@ -20,7 +20,6 @@ execute at @s[scores={ActionTime=51}] unless block ~ ~-1 ~ minecraft:air run sco
 execute if entity @s[scores={ActionTime=52}] align xz run playsound luigis_mansion:block.chandelier.land hostile @a[tag=same_room] ~ ~ ~ 2
 execute if entity @s[scores={ActionTime=72},tag=hit] align xz run playsound luigis_mansion:entity.ghost.laugh hostile @a[tag=same_room] ~ ~ ~ 2
 execute if entity @s[scores={ActionTime=72},tag=!hit] align xz run playsound luigis_mansion:entity.ghost.complain hostile @a[tag=same_room] ~ ~ ~ 2
-execute at @s[scores={ActionTime=51..112}] align xz run scoreboard players set @a[distance=..2,tag=!spectator] Invulnerable 10
 teleport @s[scores={ActionTime=112}] ~ ~0.125 ~
 execute store result score @s Time run data get entity @s Pos[1] 100
 execute at @s[scores={ActionTime=112,Sound=0}] align xz run playsound luigis_mansion:block.chandelier.rise hostile @a[tag=same_room] ~ ~ ~ 2

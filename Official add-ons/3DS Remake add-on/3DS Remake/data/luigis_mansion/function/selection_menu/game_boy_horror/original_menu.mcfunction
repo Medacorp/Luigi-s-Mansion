@@ -1,5 +1,6 @@
 execute unless entity @s[scores={WarpTime=1..}] run tag @s remove scanning
 execute unless entity @s[scores={WarpTime=1..}] run tag @s add game_boy_horror_menu
+tag @s remove selection_menu_free_to_move
 
 execute unless entity @s[scores={WarpTime=1..}] run data modify storage luigis_mansion:data menu_options set value {options:[]}
 execute unless entity @s[scores={WarpTime=1..}] if entity @s[tag=!portrait_battle] run data modify storage luigis_mansion:data menu_options.options append value {id:"minecraft:diamond_pickaxe",count:1,components:{"minecraft:damage":22,"minecraft:unbreakable":{show_in_tooltip:0b},"minecraft:custom_model_data":52,"minecraft:attribute_modifiers":{modifiers:[]},"minecraft:item_name":'{"type":"translatable","translate":"luigis_mansion:item.menu.game_boy_horror.map"}',"minecraft:custom_data":{option:{id:"map/open"}}}}
@@ -9,4 +10,7 @@ execute unless entity @s[scores={WarpTime=1..}] if entity @s[tag=!portrait_battl
 execute unless entity @s[scores={WarpTime=1..}] if entity @s[tag=!portrait_battle] run data modify storage luigis_mansion:data menu_options.options append value {id:"minecraft:diamond_pickaxe",count:1,components:{"minecraft:damage":22,"minecraft:unbreakable":{show_in_tooltip:0b},"minecraft:custom_model_data":50,"minecraft:attribute_modifiers":{modifiers:[]},"minecraft:item_name":'{"type":"translatable","translate":"luigis_mansion:item.menu.game_boy_horror.show_caught_portrait_ghosts"}',"minecraft:custom_data":{option:{id:"show_caught_portrait_ghosts"}}}}
 execute unless entity @s[scores={WarpTime=1..}] run data modify storage luigis_mansion:data menu_options.options append value {id:"minecraft:diamond_pickaxe",count:1,components:{"minecraft:damage":22,"minecraft:unbreakable":{show_in_tooltip:0b},"minecraft:custom_model_data":61,"minecraft:attribute_modifiers":{modifiers:[]},"minecraft:item_name":'{"type":"translatable","translate":"luigis_mansion:item.menu.game_boy_horror.show_settings"}',"minecraft:custom_data":{option:{id:"show_settings"}}}}
 
+execute unless entity @s[scores={WarpTime=1..}] run function luigis_mansion:entities/player/animation/set/game_boy_horror
+
 execute unless entity @s[scores={WarpTime=1..}] run function luigis_mansion:entities/player/selection_menu/load
+execute if entity @s[scores={WarpTime=1..}] run function luigis_mansion:selection_menu/game_boy_horror/scan_furniture

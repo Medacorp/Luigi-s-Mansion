@@ -1,7 +1,8 @@
 # Additions
-* Endless training room program (program ID 2)
-* Speedrun training room program (program ID 3)
-* Player VS player training room program (program ID 4)
+* Endless training room program
+* Speedrun training room program
+* Player VS player training room program
+* Koopa amiibo, which prevents you from taking dragging damage within the mansion.
 
 # Functions and tags of interest
 * `#extensive_training:room/training_room/endless` Add ghost to the endless training room program spawn pool

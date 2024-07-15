@@ -1,3 +1,4 @@
+teleport @s ^ ^ ^0.4
 scoreboard players add @s AnimationProgress 1
 data merge entity @s[scores={AnimationProgress=1}] {Pose:{Head:[-160.0f,0.0f,0.01f]}}
 execute store result score #temp Time run data get entity @s Pose.Head[0]

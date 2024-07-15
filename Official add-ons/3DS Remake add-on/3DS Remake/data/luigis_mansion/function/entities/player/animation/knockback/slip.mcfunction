@@ -32,7 +32,7 @@ execute at @s[scores={AnimationProgress=11..20},tag=!flipped_gravity] facing ent
 execute at @s[scores={AnimationProgress=1..10},tag=flipped_gravity] facing entity @e[type=minecraft:marker,tag=temp,limit=1] feet if block ~ ~-0.1 ~ #luigis_mansion:players_ignore run teleport @s ~ ~-0.15 ~
 execute at @s[scores={AnimationProgress=11..20},tag=flipped_gravity] facing entity @e[type=minecraft:marker,tag=temp,limit=1] feet if block ~ ~2 ~ #luigis_mansion:players_ignore run teleport @s ~ ~0.15 ~
 
-execute at @s unless block ~ ~2 ~ #luigis_mansion:players_ignore if block ~ ~1.84 ~ #luigis_mansion:players_ignore run teleport @s ~ ~-0.16 ~
+execute at @s unless block ~ ~2 ~ #luigis_mansion:players_ignore if block ~ ~1.84 ~ #luigis_mansion:players_ignore if block ~ ~-0.1 ~ #luigis_mansion:players_ignore run teleport @s ~ ~-0.16 ~
 execute at @s unless block ~ ~ ~ #luigis_mansion:players_ignore if block ~ ~0.16 ~ #luigis_mansion:players_ignore run teleport @s ~ ~0.16 ~
 execute at @s unless block ~0.3 ~ ~ #luigis_mansion:players_ignore if block ~ ~ ~ #luigis_mansion:players_ignore run teleport @s ~-0.16 ~ ~
 execute at @s unless block ~-0.3 ~ ~ #luigis_mansion:players_ignore if block ~ ~ ~ #luigis_mansion:players_ignore run teleport @s ~0.16 ~ ~

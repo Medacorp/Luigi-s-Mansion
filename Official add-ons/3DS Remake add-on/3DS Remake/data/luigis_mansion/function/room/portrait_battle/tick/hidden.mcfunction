@@ -1,6 +1,6 @@
-execute if data storage luigis_mansion:data current_state.current_data.portrait_battle{namespace:"luigis_mansion",id:"chauncey"} run function 3ds_remake:room/gallery/portrait_battle/tick/gcn_hidden/chauncey_battle
-execute if data storage luigis_mansion:data current_state.current_data.portrait_battle{namespace:"luigis_mansion",id:"shivers"} run function 3ds_remake:room/gallery/portrait_battle/tick/gcn_hidden/butlers_room
-execute if data storage luigis_mansion:data current_state.current_data.portrait_battle{namespace:"luigis_mansion",id:"bogmire"} run function 3ds_remake:room/gallery/portrait_battle/tick/gcn_hidden/bogmire_battle
-execute if data storage luigis_mansion:data current_state.current_data.portrait_battle{namespace:"luigis_mansion",id:"henry_and_orville"} run function 3ds_remake:room/gallery/portrait_battle/tick/gcn_hidden/the_twins_room
-execute if data storage luigis_mansion:data current_state.current_data.portrait_battle{namespace:"luigis_mansion",id:"boolossus"} run function 3ds_remake:room/gallery/portrait_battle/tick/gcn_hidden/boolossus_battle
-execute if data storage luigis_mansion:data current_state.current_data.portrait_battle{namespace:"luigis_mansion",id:"king_boo"} run function 3ds_remake:room/gallery/portrait_battle/tick/gcn_hidden/king_boo_battle
+execute if data storage luigis_mansion:data current_state.current_data.portrait_battle{namespace:"luigis_mansion",id:"chauncey"} run function 3ds_remake:room/portrait_battle/tick/gcn_hidden/chauncey_battle
+execute if data storage luigis_mansion:data current_state.current_data.portrait_battle{namespace:"luigis_mansion",id:"shivers"} run function 3ds_remake:room/portrait_battle/tick/gcn_hidden/butlers_room
+execute if data storage luigis_mansion:data current_state.current_data.portrait_battle{namespace:"luigis_mansion",id:"bogmire"} run function 3ds_remake:room/portrait_battle/tick/gcn_hidden/bogmire_battle
+execute if data storage luigis_mansion:data current_state.current_data.portrait_battle{namespace:"luigis_mansion",id:"henry_and_orville"} run function 3ds_remake:room/portrait_battle/tick/gcn_hidden/the_twins_room
+execute if data storage luigis_mansion:data current_state.current_data.portrait_battle{namespace:"luigis_mansion",id:"boolossus"} run function 3ds_remake:room/portrait_battle/tick/gcn_hidden/boolossus_battle
+execute if data storage luigis_mansion:data current_state.current_data.portrait_battle{namespace:"luigis_mansion",id:"king_boo"} run function 3ds_remake:room/portrait_battle/tick/gcn_hidden/king_boo_battle

@@ -1,4 +1,5 @@
 execute unless data storage luigis_mansion_3ds_remake:data {data_version:2} run function 3ds_remake:other/upgrade_path/root/v3.0
+execute in minecraft:overworld run forceload add 775 -17 746 -58
 data modify storage 3ds_remake:data {} merge from storage luigis_mansion_3ds_remake:data {}
 data merge storage 3ds_remake:data {data_version:3}
 data modify storage 3ds_remake:data new_ghosts set from storage 3ds_remake:data current_state.boos_caught

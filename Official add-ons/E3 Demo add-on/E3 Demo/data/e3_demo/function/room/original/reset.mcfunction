@@ -1,77 +1,77 @@
-forceload remove 831 -144 432 -1
-forceload remove 831 0 432 95
-forceload remove 3777 -100 3585 115
+execute in e3_demo:original run forceload remove 831 -144 432 -1
+execute in e3_demo:original run forceload remove 831 0 432 95
+execute in e3_demo:original run forceload remove 3777 -100 3585 115
 
-execute if score #entrance Ticking matches 1 run function #e3_demo:room/original/entrance/reset
-execute if score #hallway_1 Ticking matches 1 run function #e3_demo:room/original/hallway_1/reset
-execute if score #living_room Ticking matches 1 run function #e3_demo:room/original/living_room/reset
-execute if score #hallway_2 Ticking matches 1 run function #e3_demo:room/original/hallway_2/reset
-execute if score #study Ticking matches 1 run function #e3_demo:room/original/study/reset
-execute if score #bed_room_1 Ticking matches 1 run function #e3_demo:room/original/bed_room_1/reset
-execute if score #childs_room Ticking matches 1 run function #e3_demo:room/original/childs_room/reset
-execute if score #hallway_3 Ticking matches 1 run function #e3_demo:room/original/hallway_3/reset
-execute if score #hallway_4 Ticking matches 1 run function #e3_demo:room/original/hallway_4/reset
-execute if score #hallway_5 Ticking matches 1 run function #e3_demo:room/original/hallway_5/reset
-execute if score #hallway_6 Ticking matches 1 run function #e3_demo:room/original/hallway_6/reset
-execute if score #bath_room Ticking matches 1 run function #e3_demo:room/original/bath_room/reset
-execute if score #lavatory Ticking matches 1 run function #e3_demo:room/original/lavatory/reset
-execute if score #dining_room Ticking matches 1 run function #e3_demo:room/original/dining_room/reset
-execute if score #kitchen Ticking matches 1 run function #e3_demo:room/original/kitchen/reset
-execute if score #back_yard Ticking matches 1 run function #e3_demo:room/original/back_yard/reset
-execute if score #missingno_1 Ticking matches 1 run function #e3_demo:room/original/missingno_1/reset
-execute if score #missingno_2 Ticking matches 1 run function #e3_demo:room/original/missingno_2/reset
-execute if score #missingno_3 Ticking matches 1 run function #e3_demo:room/original/missingno_3/reset
-execute if score #missingno_4 Ticking matches 1 run function #e3_demo:room/original/missingno_4/reset
-execute if score #missingno_5 Ticking matches 1 run function #e3_demo:room/original/missingno_5/reset
-execute if score #missingno_6 Ticking matches 1 run function #e3_demo:room/original/missingno_6/reset
-execute if score #missingno_7 Ticking matches 1 run function #e3_demo:room/original/missingno_7/reset
-execute if score #missingno_8 Ticking matches 1 run function #e3_demo:room/original/missingno_8/reset
-execute if score #missingno_9 Ticking matches 1 run function #e3_demo:room/original/missingno_9/reset
-execute if score #missingno_10 Ticking matches 1 run function #e3_demo:room/original/missingno_10/reset
-execute if score #missingno_11 Ticking matches 1 run function #e3_demo:room/original/missingno_11/reset
-execute if score #missingno_12 Ticking matches 1 run function #e3_demo:room/original/missingno_12/reset
-execute if score #missingno_13 Ticking matches 1 run function #e3_demo:room/original/missingno_13/reset
-execute if score #missingno_14 Ticking matches 1 run function #e3_demo:room/original/missingno_14/reset
-execute if score #missingno_15 Ticking matches 1 run function #e3_demo:room/original/missingno_15/reset
-execute if score #missingno_16 Ticking matches 1 run function #e3_demo:room/original/missingno_16/reset
-execute if score #missingno_17 Ticking matches 1 run function #e3_demo:room/original/missingno_17/reset
-execute if score #missingno_18 Ticking matches 1 run function #e3_demo:room/original/missingno_18/reset
-execute if score #missingno_19 Ticking matches 1 run function #e3_demo:room/original/missingno_19/reset
-execute if score #missingno_20 Ticking matches 1 run function #e3_demo:room/original/missingno_20/reset
-execute if score #missingno_21 Ticking matches 1 run function #e3_demo:room/original/missingno_21/reset
-execute if score #missingno_22 Ticking matches 1 run function #e3_demo:room/original/missingno_22/reset
-execute if score #missingno_23 Ticking matches 1 run function #e3_demo:room/original/missingno_23/reset
-execute if score #missingno_24 Ticking matches 1 run function #e3_demo:room/original/missingno_24/reset
-execute if score #missingno_25 Ticking matches 1 run function #e3_demo:room/original/missingno_25/reset
-execute if score #missingno_26 Ticking matches 1 run function #e3_demo:room/original/missingno_26/reset
-execute if score #missingno_27 Ticking matches 1 run function #e3_demo:room/original/missingno_27/reset
-execute if score #missingno_28 Ticking matches 1 run function #e3_demo:room/original/missingno_28/reset
-execute if score #missingno_29 Ticking matches 1 run function #e3_demo:room/original/missingno_29/reset
-execute if score #missingno_30 Ticking matches 1 run function #e3_demo:room/original/missingno_30/reset
-execute if score #missingno_31 Ticking matches 1 run function #e3_demo:room/original/missingno_31/reset
-execute if score #missingno_32 Ticking matches 1 run function #e3_demo:room/original/missingno_32/reset
-execute if score #missingno_33 Ticking matches 1 run function #e3_demo:room/original/missingno_33/reset
-execute if score #missingno_34 Ticking matches 1 run function #e3_demo:room/original/missingno_34/reset
-execute if score #missingno_35 Ticking matches 1 run function #e3_demo:room/original/missingno_35/reset
-execute if score #missingno_36 Ticking matches 1 run function #e3_demo:room/original/missingno_36/reset
-execute if score #missingno_37 Ticking matches 1 run function #e3_demo:room/original/missingno_37/reset
-execute if score #missingno_38 Ticking matches 1 run function #e3_demo:room/original/missingno_38/reset
-execute if score #missingno_39 Ticking matches 1 run function #e3_demo:room/original/missingno_39/reset
-execute if score #missingno_40 Ticking matches 1 run function #e3_demo:room/original/missingno_40/reset
-execute if score #missingno_41 Ticking matches 1 run function #e3_demo:room/original/missingno_41/reset
-execute if score #missingno_42 Ticking matches 1 run function #e3_demo:room/original/missingno_42/reset
-execute if score #missingno_43 Ticking matches 1 run function #e3_demo:room/original/missingno_43/reset
-execute if score #missingno_44 Ticking matches 1 run function #e3_demo:room/original/missingno_44/reset
-execute if score #missingno_45 Ticking matches 1 run function #e3_demo:room/original/missingno_45/reset
-execute if score #missingno_46 Ticking matches 1 run function #e3_demo:room/original/missingno_46/reset
-execute if score #missingno_47 Ticking matches 1 run function #e3_demo:room/original/missingno_47/reset
-execute if score #missingno_48 Ticking matches 1 run function #e3_demo:room/original/missingno_48/reset
-execute if score #missingno_49 Ticking matches 1 run function #e3_demo:room/original/missingno_49/reset
-execute if score #missingno_50 Ticking matches 1 run function #e3_demo:room/original/missingno_50/reset
-execute if score #missingno_51 Ticking matches 1 run function #e3_demo:room/original/missingno_51/reset
-execute if score #missingno_52 Ticking matches 1 run function #e3_demo:room/original/missingno_52/reset
-execute if score #missingno_53 Ticking matches 1 run function #e3_demo:room/original/missingno_53/reset
-execute if score #missingno_54 Ticking matches 1 run function #e3_demo:room/original/missingno_54/reset
-execute if score #missingno_55 Ticking matches 1 run function #e3_demo:room/original/missingno_55/reset
-execute if score #missingno_56 Ticking matches 1 run function #e3_demo:room/original/missingno_56/reset
-execute if score #missingno_57 Ticking matches 1 run function #e3_demo:room/original/missingno_57/reset
+execute in e3_demo:original if score #entrance Ticking matches 1 run function #e3_demo:room/original/entrance/reset
+execute in e3_demo:original if score #hallway_1 Ticking matches 1 run function #e3_demo:room/original/hallway_1/reset
+execute in e3_demo:original if score #living_room Ticking matches 1 run function #e3_demo:room/original/living_room/reset
+execute in e3_demo:original if score #hallway_2 Ticking matches 1 run function #e3_demo:room/original/hallway_2/reset
+execute in e3_demo:original if score #study Ticking matches 1 run function #e3_demo:room/original/study/reset
+execute in e3_demo:original if score #bed_room_1 Ticking matches 1 run function #e3_demo:room/original/bed_room_1/reset
+execute in e3_demo:original if score #childs_room Ticking matches 1 run function #e3_demo:room/original/childs_room/reset
+execute in e3_demo:original if score #hallway_3 Ticking matches 1 run function #e3_demo:room/original/hallway_3/reset
+execute in e3_demo:original if score #hallway_4 Ticking matches 1 run function #e3_demo:room/original/hallway_4/reset
+execute in e3_demo:original if score #hallway_5 Ticking matches 1 run function #e3_demo:room/original/hallway_5/reset
+execute in e3_demo:original if score #hallway_6 Ticking matches 1 run function #e3_demo:room/original/hallway_6/reset
+execute in e3_demo:original if score #bath_room Ticking matches 1 run function #e3_demo:room/original/bath_room/reset
+execute in e3_demo:original if score #lavatory Ticking matches 1 run function #e3_demo:room/original/lavatory/reset
+execute in e3_demo:original if score #dining_room Ticking matches 1 run function #e3_demo:room/original/dining_room/reset
+execute in e3_demo:original if score #kitchen Ticking matches 1 run function #e3_demo:room/original/kitchen/reset
+execute in e3_demo:original if score #back_yard Ticking matches 1 run function #e3_demo:room/original/back_yard/reset
+execute in e3_demo:original if score #missingno_1 Ticking matches 1 run function #e3_demo:room/original/missingno_1/reset
+execute in e3_demo:original if score #missingno_2 Ticking matches 1 run function #e3_demo:room/original/missingno_2/reset
+execute in e3_demo:original if score #missingno_3 Ticking matches 1 run function #e3_demo:room/original/missingno_3/reset
+execute in e3_demo:original if score #missingno_4 Ticking matches 1 run function #e3_demo:room/original/missingno_4/reset
+execute in e3_demo:original if score #missingno_5 Ticking matches 1 run function #e3_demo:room/original/missingno_5/reset
+execute in e3_demo:original if score #missingno_6 Ticking matches 1 run function #e3_demo:room/original/missingno_6/reset
+execute in e3_demo:original if score #missingno_7 Ticking matches 1 run function #e3_demo:room/original/missingno_7/reset
+execute in e3_demo:original if score #missingno_8 Ticking matches 1 run function #e3_demo:room/original/missingno_8/reset
+execute in e3_demo:original if score #missingno_9 Ticking matches 1 run function #e3_demo:room/original/missingno_9/reset
+execute in e3_demo:original if score #missingno_10 Ticking matches 1 run function #e3_demo:room/original/missingno_10/reset
+execute in e3_demo:original if score #missingno_11 Ticking matches 1 run function #e3_demo:room/original/missingno_11/reset
+execute in e3_demo:original if score #missingno_12 Ticking matches 1 run function #e3_demo:room/original/missingno_12/reset
+execute in e3_demo:original if score #missingno_13 Ticking matches 1 run function #e3_demo:room/original/missingno_13/reset
+execute in e3_demo:original if score #missingno_14 Ticking matches 1 run function #e3_demo:room/original/missingno_14/reset
+execute in e3_demo:original if score #missingno_15 Ticking matches 1 run function #e3_demo:room/original/missingno_15/reset
+execute in e3_demo:original if score #missingno_16 Ticking matches 1 run function #e3_demo:room/original/missingno_16/reset
+execute in e3_demo:original if score #missingno_17 Ticking matches 1 run function #e3_demo:room/original/missingno_17/reset
+execute in e3_demo:original if score #missingno_18 Ticking matches 1 run function #e3_demo:room/original/missingno_18/reset
+execute in e3_demo:original if score #missingno_19 Ticking matches 1 run function #e3_demo:room/original/missingno_19/reset
+execute in e3_demo:original if score #missingno_20 Ticking matches 1 run function #e3_demo:room/original/missingno_20/reset
+execute in e3_demo:original if score #missingno_21 Ticking matches 1 run function #e3_demo:room/original/missingno_21/reset
+execute in e3_demo:original if score #missingno_22 Ticking matches 1 run function #e3_demo:room/original/missingno_22/reset
+execute in e3_demo:original if score #missingno_23 Ticking matches 1 run function #e3_demo:room/original/missingno_23/reset
+execute in e3_demo:original if score #missingno_24 Ticking matches 1 run function #e3_demo:room/original/missingno_24/reset
+execute in e3_demo:original if score #missingno_25 Ticking matches 1 run function #e3_demo:room/original/missingno_25/reset
+execute in e3_demo:original if score #missingno_26 Ticking matches 1 run function #e3_demo:room/original/missingno_26/reset
+execute in e3_demo:original if score #missingno_27 Ticking matches 1 run function #e3_demo:room/original/missingno_27/reset
+execute in e3_demo:original if score #missingno_28 Ticking matches 1 run function #e3_demo:room/original/missingno_28/reset
+execute in e3_demo:original if score #missingno_29 Ticking matches 1 run function #e3_demo:room/original/missingno_29/reset
+execute in e3_demo:original if score #missingno_30 Ticking matches 1 run function #e3_demo:room/original/missingno_30/reset
+execute in e3_demo:original if score #missingno_31 Ticking matches 1 run function #e3_demo:room/original/missingno_31/reset
+execute in e3_demo:original if score #missingno_32 Ticking matches 1 run function #e3_demo:room/original/missingno_32/reset
+execute in e3_demo:original if score #missingno_33 Ticking matches 1 run function #e3_demo:room/original/missingno_33/reset
+execute in e3_demo:original if score #missingno_34 Ticking matches 1 run function #e3_demo:room/original/missingno_34/reset
+execute in e3_demo:original if score #missingno_35 Ticking matches 1 run function #e3_demo:room/original/missingno_35/reset
+execute in e3_demo:original if score #missingno_36 Ticking matches 1 run function #e3_demo:room/original/missingno_36/reset
+execute in e3_demo:original if score #missingno_37 Ticking matches 1 run function #e3_demo:room/original/missingno_37/reset
+execute in e3_demo:original if score #missingno_38 Ticking matches 1 run function #e3_demo:room/original/missingno_38/reset
+execute in e3_demo:original if score #missingno_39 Ticking matches 1 run function #e3_demo:room/original/missingno_39/reset
+execute in e3_demo:original if score #missingno_40 Ticking matches 1 run function #e3_demo:room/original/missingno_40/reset
+execute in e3_demo:original if score #missingno_41 Ticking matches 1 run function #e3_demo:room/original/missingno_41/reset
+execute in e3_demo:original if score #missingno_42 Ticking matches 1 run function #e3_demo:room/original/missingno_42/reset
+execute in e3_demo:original if score #missingno_43 Ticking matches 1 run function #e3_demo:room/original/missingno_43/reset
+execute in e3_demo:original if score #missingno_44 Ticking matches 1 run function #e3_demo:room/original/missingno_44/reset
+execute in e3_demo:original if score #missingno_45 Ticking matches 1 run function #e3_demo:room/original/missingno_45/reset
+execute in e3_demo:original if score #missingno_46 Ticking matches 1 run function #e3_demo:room/original/missingno_46/reset
+execute in e3_demo:original if score #missingno_47 Ticking matches 1 run function #e3_demo:room/original/missingno_47/reset
+execute in e3_demo:original if score #missingno_48 Ticking matches 1 run function #e3_demo:room/original/missingno_48/reset
+execute in e3_demo:original if score #missingno_49 Ticking matches 1 run function #e3_demo:room/original/missingno_49/reset
+execute in e3_demo:original if score #missingno_50 Ticking matches 1 run function #e3_demo:room/original/missingno_50/reset
+execute in e3_demo:original if score #missingno_51 Ticking matches 1 run function #e3_demo:room/original/missingno_51/reset
+execute in e3_demo:original if score #missingno_52 Ticking matches 1 run function #e3_demo:room/original/missingno_52/reset
+execute in e3_demo:original if score #missingno_53 Ticking matches 1 run function #e3_demo:room/original/missingno_53/reset
+execute in e3_demo:original if score #missingno_54 Ticking matches 1 run function #e3_demo:room/original/missingno_54/reset
+execute in e3_demo:original if score #missingno_55 Ticking matches 1 run function #e3_demo:room/original/missingno_55/reset
+execute in e3_demo:original if score #missingno_56 Ticking matches 1 run function #e3_demo:room/original/missingno_56/reset
+execute in e3_demo:original if score #missingno_57 Ticking matches 1 run function #e3_demo:room/original/missingno_57/reset

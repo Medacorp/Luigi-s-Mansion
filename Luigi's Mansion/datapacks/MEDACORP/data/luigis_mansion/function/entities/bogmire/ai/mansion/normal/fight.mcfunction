@@ -26,6 +26,7 @@ execute positioned ~-1 ~-0.5 ~-1 if entity @e[dx=1,dy=3,dz=1,tag=shadow,tag=ball
 execute positioned ~-1 ~-0.5 ~-1 if entity @s[tag=visible] run tag @e[dx=1,dy=3,dz=1,tag=shadow,tag=ball,tag=big] add remove_from_existence
 scoreboard players set @s[scores={VulnerableTime=1}] Dialog 139
 data remove entity @s[scores={VulnerableTime=1}] data.animation
+execute if entity @s[scores={VulnerableTime=1..},tag=in_vacuum] run tag @e[tag=bogmires_shadow] add remove_from_existence
 
 execute if entity @s[scores={Sound=0},tag=visible] run playsound luigis_mansion:entity.bogmire.ambient hostile @a[tag=same_room] ~ ~ ~ 1
 scoreboard players set @s[scores={Sound=0},tag=visible] Sound 30

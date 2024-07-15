@@ -21,3 +21,4 @@ execute if data storage 3ds_remake:data current_state.trophy.hard{done:0b} run s
 
 execute if data storage luigis_mansion:data current_state unless data storage 3ds_remake:data current_state if entity @a[limit=1] run function 3ds_remake:other/upgrade_path/newly_installed
 execute if data storage luigis_mansion:data current_state unless data storage luigis_mansion:data current_state.current_data.tracking_boos run data modify storage luigis_mansion:data current_state.current_data.tracking_boos set value []
+execute if data storage luigis_mansion:data current_state.current_data{data_index:0} unless data storage luigis_mansion:data current_state.current_data{no_collect_animation:["3ds_remake:super_mushroom"]} run data modify storage luigis_mansion:data current_state.current_data.no_collect_animation append value "3ds_remake:super_mushroom"

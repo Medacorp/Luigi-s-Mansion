@@ -1,4 +1,5 @@
 tag @s[scores={Health=-2147483648..},tag=!flee] add element_hurt
+tag @s[scores={Health=-2147483648..},tag=!flee] add element_hurt_now
 execute unless entity @s[scores={Health=-2147483648..}] run tag @s add element_death
 tag @s[tag=!freeze_animation] add elemental_freeze_animation
 tag @s add freeze_animation

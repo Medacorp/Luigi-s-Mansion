@@ -3,7 +3,7 @@ tag @a[tag=looking_at_map,nbt={Dimension:"luigis_mansion:hidden"},limit=1] add r
 tag @e[scores={Room=45},tag=furniture,tag=door] remove blockade
 data remove entity @e[x=666.5,y=20.0,z=108.0,distance=..0.7,tag=furniture,tag=door,limit=1] ArmorItems[3].components."minecraft:custom_data".go_through_command
 data modify entity @e[x=666.5,y=20.0,z=108.0,distance=..0.7,tag=furniture,tag=door,limit=1] ArmorItems[3].components."minecraft:custom_data".other_end set value {x:645,y:20,z:88}
-execute as @a[scores={Room=45}] run function luigis_mansion:other/music/set/force/light
+execute unless entity @s[tag=toad] as @a[scores={Room=45}] run function luigis_mansion:other/music/set/force/light
 scoreboard players set #room Room 45
 function luigis_mansion:other/music/play/group_0/cleared_room
 scoreboard players reset #room Room

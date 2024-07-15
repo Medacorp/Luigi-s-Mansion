@@ -4,10 +4,10 @@ execute if entity @s[scores={ActionTime=1}] run playsound luigis_mansion:entity.
 execute if entity @s[scores={ActionTime=40}] facing entity @p[tag=same_room,tag=!spectator,tag=player] feet rotated ~ 0 run teleport @s ~ ~ ~ ~ ~
 data modify entity @s[scores={ActionTime=41}] data.animation set value {namespace:"luigis_mansion",id:"headless_run"}
 scoreboard players set #temp Move 50
-execute if entity @s[y_rotation=-90..90] positioned ~ ~ ~2 unless block ~ ~ ~ minecraft:clay unless block ~ ~ ~ minecraft:air at @s run function luigis_mansion:entities/bowser/attack/headless_run/z
-execute if entity @s[y_rotation=90..-90] positioned ~ ~ ~-2 unless block ~ ~ ~ minecraft:clay unless block ~ ~ ~ minecraft:air at @s run function luigis_mansion:entities/bowser/attack/headless_run/z
-execute if entity @s[y_rotation=-180..0] positioned ~2 ~ ~ unless block ~ ~ ~ minecraft:clay unless block ~ ~ ~ minecraft:air at @s run function luigis_mansion:entities/bowser/attack/headless_run/x
-execute if entity @s[y_rotation=0..180] positioned ~-2 ~ ~ unless block ~ ~ ~ minecraft:clay unless block ~ ~ ~ minecraft:air at @s run function luigis_mansion:entities/bowser/attack/headless_run/x
+execute at @s[y_rotation=-90..90] unless block ~ ~ ~2 #luigis_mansion:bowser_ignores run function luigis_mansion:entities/bowser/attack/headless_run/z
+execute at @s[y_rotation=90..-90] unless block ~ ~ ~-2 #luigis_mansion:bowser_ignores run function luigis_mansion:entities/bowser/attack/headless_run/z
+execute at @s[y_rotation=-180..0] unless block ~2 ~ ~ #luigis_mansion:bowser_ignores run function luigis_mansion:entities/bowser/attack/headless_run/x
+execute at @s[y_rotation=0..180] unless block ~-2 ~ ~ #luigis_mansion:bowser_ignores run function luigis_mansion:entities/bowser/attack/headless_run/x
 execute at @s[scores={ActionTime=40..139}] run function luigis_mansion:entities/ghost/move_forward
 execute if entity @s[scores={ActionTime=140}] facing entity @p[tag=same_room,tag=!spectator,tag=player] feet rotated ~ 0 run teleport @s ~ ~ ~ ~ ~
 data modify entity @s[scores={ActionTime=141}] data.animation set value {namespace:"luigis_mansion",id:"correct_head"}

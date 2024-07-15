@@ -24,7 +24,7 @@ stopsound @s[scores={AnimationProgress=14}] ambient
 tag @s[scores={AnimationProgress=14}] remove wall_warp
 execute if entity @e[tag=furniture,tag=door,tag=!open_door,tag=!forced_animation,distance=..0.7] run function luigis_mansion:entities/furniture/type/door/force_animation
 scoreboard players set @s Sound 10
-scoreboard players set @s Invulnerable 1000
+scoreboard players set @s Invulnerable 1
 tag @s add pause_dialog
 execute unless entity @a[tag=!spectator,distance=0.1..,limit=1] run scoreboard players set #freeze_timer Selected 1
 tag @s[scores={AnimationProgress=50}] remove reset_rotation

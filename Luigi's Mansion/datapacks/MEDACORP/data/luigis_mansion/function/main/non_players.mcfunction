@@ -9,7 +9,8 @@ execute as @e[tag=!model_piece,tag=!reflection] run function luigis_mansion:main
 scoreboard players reset #temp Room
 
 execute if entity @s[type=minecraft:marker] run function luigis_mansion:entities/tick with entity @s data.entity
-execute if entity @s[type=minecraft:armor_stand] run function luigis_mansion:entities/tick with entity @s ArmorItems[3].components."minecraft:custom_data".entity
+execute if entity @s[type=minecraft:armor_stand,tag=!furniture] run function luigis_mansion:entities/tick with entity @s ArmorItems[3].components."minecraft:custom_data".entity
+execute if entity @s[type=minecraft:armor_stand,tag=furniture] run function luigis_mansion:entities/furniture/tick
 scoreboard players reset #temp Move
 
 execute if entity @s[tag=applied_dialog_effects,tag=!in_dialog] run function luigis_mansion:dialog/unapply_effects

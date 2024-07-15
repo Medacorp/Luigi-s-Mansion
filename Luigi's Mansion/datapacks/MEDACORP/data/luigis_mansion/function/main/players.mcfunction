@@ -94,6 +94,8 @@ scoreboard players reset @s MirrorZ
 scoreboard players reset @s LightX
 scoreboard players reset @s LightY
 scoreboard players reset @s LightZ
+tag @s remove was_in_dialog
+tag @s[tag=in_dialog] add was_in_dialog
 tag @s remove in_dialog
 
 tag @s add me

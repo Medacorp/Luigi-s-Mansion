@@ -8,6 +8,5 @@ execute if entity @s[tag=!collided,tag=!vanish,tag=!appear] run function luigis_
 execute if entity @s[tag=!attack,tag=!collided,tag=!vanish,tag=!appear,tag=!laugh,tag=!complain] run function luigis_mansion:entities/mr_bones/haunt
 execute if entity @s[tag=!attack,tag=!collided,tag=laugh] run function luigis_mansion:entities/mr_bones/laugh with entity @s data.entity
 execute if entity @s[tag=!attack,tag=!collided,tag=complain] run function luigis_mansion:entities/mr_bones/complain with entity @s data.entity
-execute if entity @s[tag=collided] run function luigis_mansion:entities/mr_bones/collided with entity @s data.entity
 execute if entity @s[tag=vanish] run function luigis_mansion:entities/mr_bones/vanish with entity @s data.entity
 execute if entity @s[tag=appear] run function luigis_mansion:entities/mr_bones/appear/normal with entity @s data.entity

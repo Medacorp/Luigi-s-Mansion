@@ -22,7 +22,6 @@ execute at @s[scores={ActionTime=52}] unless block ~ ~-1 ~ minecraft:air run sco
 execute if entity @s[scores={ActionTime=53}] align xz run playsound luigis_mansion:furniture.chandelier.land hostile @a[tag=same_room] ~ ~ ~ 2
 execute if entity @s[scores={ActionTime=73},tag=hit] align xz run playsound luigis_mansion:entity.ghost.laugh hostile @a[tag=same_room] ~ ~ ~ 2
 execute if entity @s[scores={ActionTime=73},tag=!hit] align xz run playsound luigis_mansion:entity.ghost.complain hostile @a[tag=same_room] ~ ~ ~ 2
-execute at @s[scores={ActionTime=52..113}] align xz run scoreboard players set @a[distance=..2,tag=!spectator] Invulnerable 10
 teleport @s[scores={ActionTime=113}] ~ ~0.125 ~
 execute at @s[scores={ActionTime=113}] run fill ~-2 ~ ~-2 ~1 ~4 ~1 minecraft:air replace minecraft:light
 execute store result score @s Time run data get entity @s Pos[1] 100

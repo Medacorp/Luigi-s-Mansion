@@ -4,4 +4,3 @@ function #luigis_mansion:room/reset_variable_to_default
 scoreboard players set #mirrored Selected 1
 scoreboard players set #multiply_hurt Selected 200
 scoreboard players set #multiply_damage Selected 150
-tag @a[tag=using_selection_menu] add close_selection_menu

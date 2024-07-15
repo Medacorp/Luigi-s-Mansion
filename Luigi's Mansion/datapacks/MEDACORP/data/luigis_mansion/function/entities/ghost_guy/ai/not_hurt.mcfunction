@@ -12,6 +12,5 @@ execute if entity @s[tag=!collided,tag=!vanish,tag=!appear] run function luigis_
 
 execute if entity @s[tag=!attack,tag=!collided,tag=!vanish,tag=!complain,tag=!appear] run function luigis_mansion:entities/ghost_guy/haunt
 execute if entity @s[tag=!attack,tag=!collided,tag=complain] run function luigis_mansion:entities/ghost_guy/complain with entity @s data.entity
-execute if entity @s[tag=collided] run function luigis_mansion:entities/ghost_guy/collided with entity @s data.entity
 execute if entity @s[tag=vanish] run function luigis_mansion:entities/ghost_guy/vanish with entity @s data.entity
 execute if entity @s[tag=appear] run function luigis_mansion:entities/ghost_guy/appear/normal with entity @s data.entity

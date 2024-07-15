@@ -4,9 +4,9 @@ scoreboard players add @s Wave 1
 tag @s[scores={Wave=..59}] remove in_vacuum
 execute if entity @s[scores={Wave=20..59}] run scoreboard players set #temp Move 1
 execute at @s[scores={Wave=1..59}] facing entity @e[nbt={data:{entity:{namespace:"luigis_mansion",id:"bowser"}}},limit=1] feet rotated ~-180 20 run teleport @s ~ ~ ~ ~ ~
-execute if entity @s[scores={Time=200..,Wave=..240}] run function luigis_mansion:entities/boo/rotate_random
-execute if score #temp Move matches 1.. at @s[scores={Wave=..240},tag=move_up] run function luigis_mansion:entities/boo/move/up
-execute if score #temp Move matches 1.. at @s[scores={Wave=..240},tag=!move_up] run function luigis_mansion:entities/boo/move/down
+execute if entity @s[scores={Time=200..,Wave=..240}] unless entity @s[tag=in_vacuum,scores={HurtTime=0..20}] run function luigis_mansion:entities/boo/rotate_random
+execute if score #temp Move matches 1.. at @s[scores={Wave=..240},tag=move_up] unless entity @s[tag=in_vacuum,scores={HurtTime=0..20}] run function luigis_mansion:entities/boo/move/up
+execute if score #temp Move matches 1.. at @s[scores={Wave=..240},tag=!move_up] unless entity @s[tag=in_vacuum,scores={HurtTime=0..20}] run function luigis_mansion:entities/boo/move/down
 scoreboard players set @s[tag=wall] Time 200
 tag @s remove wall
 

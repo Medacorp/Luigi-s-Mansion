@@ -1,2 +1,2 @@
-execute if data storage 3ds_remake:data current_state.boos_caught.luigis_mansion{booigi:1b} run data modify storage luigis_mansion:data entity set value {room:-5,show_health:0b,no_ai:1b,rotation:[-45.0f,0.0f],tags:["visible"],animation:{namespace:"3ds_remake",id:"portrait/booigi",frozen:1b}}
+execute if data storage 3ds_remake:data current_state.boos_caught.luigis_mansion{booigi:1b} run data modify storage luigis_mansion:data entity set value {room:-5,show_health:0b,no_ai:1b,rotation:[-45.0f,0.0f],tags:["visible","no_music"],animation:{namespace:"3ds_remake",id:"portrait/booigi",frozen:1b}}
 execute if data storage luigis_mansion:data entity positioned 762 3 -58 run function luigis_mansion:spawn_entities/ghost/boo

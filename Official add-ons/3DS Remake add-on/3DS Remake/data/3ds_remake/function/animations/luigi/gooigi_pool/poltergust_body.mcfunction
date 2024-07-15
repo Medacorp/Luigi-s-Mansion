@@ -7,6 +7,6 @@ execute store result score #temp Time run data get entity @s Pose.Head[1]
 execute if entity @s[scores={AnimationProgress=1..10}] unless score #mirrored Selected matches 1 store result entity @s Pose.Head[1] float 1 run scoreboard players add #temp Time 4
 execute if entity @s[scores={AnimationProgress=11..20}] unless score #mirrored Selected matches 1 store result entity @s Pose.Head[1] float 1 run scoreboard players remove #temp Time 4
 scoreboard players reset #temp Time
-teleport @s[tag=!flipped_gravity] ^ ^-1.4 ^
-teleport @s[tag=flipped_gravity] ^ ^1.4 ^
+teleport @s[tag=!flipped_gravity] ^ ^-2 ^
+teleport @s[tag=flipped_gravity] ^ ^2 ^
 scoreboard players set @s[scores={AnimationProgress=20..}] AnimationProgress 0

@@ -14,7 +14,6 @@ execute if data storage luigis_mansion:data current_state.current_data{lowest_di
 execute if data storage luigis_mansion:data current_state.current_data{lowest_difficulty:2} store result score #temp2 Time run data get storage 3ds_remake:data loaded_mansion.high_scores.normal.speed
 execute if data storage luigis_mansion:data current_state.current_data{lowest_difficulty:3} store result score #temp2 Health run data get storage 3ds_remake:data loaded_mansion.high_scores.hard.health
 execute if data storage luigis_mansion:data current_state.current_data{lowest_difficulty:3} store result score #temp2 Time run data get storage 3ds_remake:data loaded_mansion.high_scores.hard.speed
-
 execute if score #temp Time < #temp2 Time unless score #temp2 Time matches -1 run scoreboard players set #temp0 Time 1
 execute if score #temp Health > #temp2 Health unless score #temp2 Health matches -1 run scoreboard players set #temp0 Health 1
 execute if score #temp0 Time matches 1 run data modify storage luigis_mansion:data menu_options.options append value {id:"minecraft:diamond_pickaxe",count:1,components:{"minecraft:damage":22,"minecraft:unbreakable":{show_in_tooltip:0b},"minecraft:custom_model_data":-27,"minecraft:attribute_modifiers":{modifiers:[]},"minecraft:item_name":'{"type":"translatable","translate":"3ds_remake:item.menu.gallery_portrait.portrait_battle.results.new_high_score"}',"minecraft:custom_data":{option:{id:"reload"}}}}

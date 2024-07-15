@@ -39,5 +39,6 @@ execute if entity @s[scores={Dialog=242..261}] run teleport @s ^ ^ ^0.1
 scoreboard players set @s[scores={Dialog=282}] VulnerableTime 80
 scoreboard players set @s[scores={Dialog=371}] Dialog 240
 tag @s remove hit_by_swinging_furniture
+execute store result entity @s Pos[1] double 0.01 run scoreboard players get @s HomeY
 
 tag @s[tag=angry,tag=attack] remove angry

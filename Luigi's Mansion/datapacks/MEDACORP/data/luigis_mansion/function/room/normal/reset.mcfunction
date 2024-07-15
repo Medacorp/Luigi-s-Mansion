@@ -1,81 +1,81 @@
-forceload remove 831 -144 432 -1
-forceload remove 831 0 432 95
-forceload remove 3777 -100 3585 115
-bossbar set luigis_mansion:boo_counter players
+execute in luigis_mansion:normal run forceload remove 831 -144 432 -1
+execute in luigis_mansion:normal run forceload remove 831 0 432 95
+execute in luigis_mansion:normal run forceload remove 3777 -100 3585 115
+execute in luigis_mansion:normal run bossbar set luigis_mansion:boo_counter players
 
-execute if score #foyer Ticking matches 1 run function #luigis_mansion:room/normal/foyer/reset
-execute if score #hallway_1 Ticking matches 1 run function #luigis_mansion:room/normal/hallway_1/reset
-execute if score #parlor Ticking matches 1 run function #luigis_mansion:room/normal/parlor/reset
-execute if score #anteroom Ticking matches 1 run function #luigis_mansion:room/normal/anteroom/reset
-execute if score #wardrobe_room Ticking matches 1 run function #luigis_mansion:room/normal/wardrobe_room/reset
-execute if score #balcony_1 Ticking matches 1 run function #luigis_mansion:room/normal/balcony_1/reset
-execute if score #hallway_2 Ticking matches 1 run function #luigis_mansion:room/normal/hallway_2/reset
-execute if score #study Ticking matches 1 run function #luigis_mansion:room/normal/study/reset
-execute if score #master_bedroom Ticking matches 1 run function #luigis_mansion:room/normal/master_bedroom/reset
-execute if score #nursery Ticking matches 1 run function #luigis_mansion:room/normal/nursery/reset
-execute if score #hallway_3 Ticking matches 1 run function #luigis_mansion:room/normal/hallway_3/reset
-execute if score #hallway_4 Ticking matches 1 run function #luigis_mansion:room/normal/hallway_4/reset
-execute if score #hallway_5 Ticking matches 1 run function #luigis_mansion:room/normal/hallway_5/reset
-execute if score #hallway_6 Ticking matches 1 run function #luigis_mansion:room/normal/hallway_6/reset
-execute if score #hallway_7 Ticking matches 1 run function #luigis_mansion:room/normal/hallway_7/reset
-execute if score #bathroom_1 Ticking matches 1 run function #luigis_mansion:room/normal/bathroom_1/reset
-execute if score #ball_room Ticking matches 1 run function #luigis_mansion:room/normal/ball_room/reset
-execute if score #storage_room Ticking matches 1 run function #luigis_mansion:room/normal/storage_room/reset
-execute if score #washroom_1 Ticking matches 1 run function #luigis_mansion:room/normal/washroom_1/reset
-execute if score #fortune_tellers_room Ticking matches 1 run function #luigis_mansion:room/normal/fortune_tellers_room/reset
-execute if score #mirror_room Ticking matches 1 run function #luigis_mansion:room/normal/mirror_room/reset
-execute if score #laundry_room Ticking matches 1 run function #luigis_mansion:room/normal/laundry_room/reset
-execute if score #butlers_room Ticking matches 1 run function #luigis_mansion:room/normal/butlers_room/reset
-execute if score #hidden_room Ticking matches 1 run function #luigis_mansion:room/normal/hidden_room/reset
-execute if score #conservatory Ticking matches 1 run function #luigis_mansion:room/normal/conservatory/reset
-execute if score #dining_room Ticking matches 1 run function #luigis_mansion:room/normal/dining_room/reset
-execute if score #kitchen Ticking matches 1 run function #luigis_mansion:room/normal/kitchen/reset
-execute if score #boneyard Ticking matches 1 run function #luigis_mansion:room/normal/boneyard/reset
-execute if score #graveyard Ticking matches 1 run function #luigis_mansion:room/normal/graveyard/reset
-execute if score #courtyard Ticking matches 1 run function #luigis_mansion:room/normal/courtyard/reset
-execute if score #bottom_of_the_well Ticking matches 1 run function #luigis_mansion:room/normal/bottom_of_the_well/reset
-execute if score #rec_room Ticking matches 1 run function #luigis_mansion:room/normal/rec_room/reset
-execute if score #hallway_8 Ticking matches 1 run function #luigis_mansion:room/normal/hallway_8/reset
-execute if score #tea_room Ticking matches 1 run function #luigis_mansion:room/normal/tea_room/reset
-execute if score #hallway_9 Ticking matches 1 run function #luigis_mansion:room/normal/hallway_9/reset
-execute if score #hallway_10 Ticking matches 1 run function #luigis_mansion:room/normal/hallway_10/reset
-execute if score #hallway_11 Ticking matches 1 run function #luigis_mansion:room/normal/hallway_11/reset
-execute if score #hallway_12 Ticking matches 1 run function #luigis_mansion:room/normal/hallway_12/reset
-execute if score #hallway_13 Ticking matches 1 run function #luigis_mansion:room/normal/hallway_13/reset
-execute if score #hallway_14 Ticking matches 1 run function #luigis_mansion:room/normal/hallway_14/reset
-execute if score #hallway_15 Ticking matches 1 run function #luigis_mansion:room/normal/hallway_15/reset
-execute if score #washroom_2 Ticking matches 1 run function #luigis_mansion:room/normal/washroom_2/reset
-execute if score #bathroom_2 Ticking matches 1 run function #luigis_mansion:room/normal/bathroom_2/reset
-execute if score #nanas_room Ticking matches 1 run function #luigis_mansion:room/normal/nanas_room/reset
-execute if score #astral_hall Ticking matches 1 run function #luigis_mansion:room/normal/astral_hall/reset
-execute if score #observatory Ticking matches 1 run function #luigis_mansion:room/normal/observatory/reset
-execute if score #billiards_room Ticking matches 1 run function #luigis_mansion:room/normal/billiards_room/reset
-execute if score #projection_room Ticking matches 1 run function #luigis_mansion:room/normal/projection_room/reset
-execute if score #the_twins_room Ticking matches 1 run function #luigis_mansion:room/normal/the_twins_room/reset
-execute if score #safari_room Ticking matches 1 run function #luigis_mansion:room/normal/safari_room/reset
-execute if score #hallway_16 Ticking matches 1 run function #luigis_mansion:room/normal/hallway_16/reset
-execute if score #hallway_17 Ticking matches 1 run function #luigis_mansion:room/normal/hallway_17/reset
-execute if score #balcony_2 Ticking matches 1 run function #luigis_mansion:room/normal/balcony_2/reset
-execute if score #hallway_18 Ticking matches 1 run function #luigis_mansion:room/normal/hallway_18/reset
-execute if score #hallway_19 Ticking matches 1 run function #luigis_mansion:room/normal/hallway_19/reset
-execute if score #telephone_room Ticking matches 1 run function #luigis_mansion:room/normal/telephone_room/reset
-execute if score #breaker_room Ticking matches 1 run function #luigis_mansion:room/normal/breaker_room/reset
-execute if score #cellar Ticking matches 1 run function #luigis_mansion:room/normal/cellar/reset
-execute if score #hallway_20 Ticking matches 1 run function #luigis_mansion:room/normal/hallway_20/reset
-execute if score #hallway_21 Ticking matches 1 run function #luigis_mansion:room/normal/hallway_21/reset
-execute if score #hallway_22 Ticking matches 1 run function #luigis_mansion:room/normal/hallway_22/reset
-execute if score #clockwork_room Ticking matches 1 run function #luigis_mansion:room/normal/clockwork_room/reset
-execute if score #roof Ticking matches 1 run function #luigis_mansion:room/normal/roof/reset
-execute if score #armory Ticking matches 1 run function #luigis_mansion:room/normal/armory/reset
-execute if score #ceramics_studio Ticking matches 1 run function #luigis_mansion:room/normal/ceramics_studio/reset
-execute if score #sealed_room Ticking matches 1 run function #luigis_mansion:room/normal/sealed_room/reset
-execute if score #pipe_room Ticking matches 1 run function #luigis_mansion:room/normal/pipe_room/reset
-execute if score #cold_storage Ticking matches 1 run function #luigis_mansion:room/normal/cold_storage/reset
-execute if score #sitting_room Ticking matches 1 run function #luigis_mansion:room/normal/sitting_room/reset
-execute if score #guest_room Ticking matches 1 run function #luigis_mansion:room/normal/guest_room/reset
-execute if score #the_artists_studio Ticking matches 1 run function #luigis_mansion:room/normal/the_artists_studio/reset
-execute if score #secret_altar Ticking matches 1 run function #luigis_mansion:room/normal/secret_altar/reset
-execute if score #chauncey_battle Ticking matches 1 run function #luigis_mansion:room/normal/chauncey_battle/reset
-execute if score #bogmire_battle Ticking matches 1 run function #luigis_mansion:room/normal/bogmire_battle/reset
-execute if score #boolossus_battle Ticking matches 1 run function #luigis_mansion:room/normal/boolossus_battle/reset
-execute if score #king_boo_battle Ticking matches 1 run function #luigis_mansion:room/normal/king_boo_battle/reset
+execute in luigis_mansion:normal if score #foyer Ticking matches 1 run function #luigis_mansion:room/normal/foyer/reset
+execute in luigis_mansion:normal if score #hallway_1 Ticking matches 1 run function #luigis_mansion:room/normal/hallway_1/reset
+execute in luigis_mansion:normal if score #parlor Ticking matches 1 run function #luigis_mansion:room/normal/parlor/reset
+execute in luigis_mansion:normal if score #anteroom Ticking matches 1 run function #luigis_mansion:room/normal/anteroom/reset
+execute in luigis_mansion:normal if score #wardrobe_room Ticking matches 1 run function #luigis_mansion:room/normal/wardrobe_room/reset
+execute in luigis_mansion:normal if score #balcony_1 Ticking matches 1 run function #luigis_mansion:room/normal/balcony_1/reset
+execute in luigis_mansion:normal if score #hallway_2 Ticking matches 1 run function #luigis_mansion:room/normal/hallway_2/reset
+execute in luigis_mansion:normal if score #study Ticking matches 1 run function #luigis_mansion:room/normal/study/reset
+execute in luigis_mansion:normal if score #master_bedroom Ticking matches 1 run function #luigis_mansion:room/normal/master_bedroom/reset
+execute in luigis_mansion:normal if score #nursery Ticking matches 1 run function #luigis_mansion:room/normal/nursery/reset
+execute in luigis_mansion:normal if score #hallway_3 Ticking matches 1 run function #luigis_mansion:room/normal/hallway_3/reset
+execute in luigis_mansion:normal if score #hallway_4 Ticking matches 1 run function #luigis_mansion:room/normal/hallway_4/reset
+execute in luigis_mansion:normal if score #hallway_5 Ticking matches 1 run function #luigis_mansion:room/normal/hallway_5/reset
+execute in luigis_mansion:normal if score #hallway_6 Ticking matches 1 run function #luigis_mansion:room/normal/hallway_6/reset
+execute in luigis_mansion:normal if score #hallway_7 Ticking matches 1 run function #luigis_mansion:room/normal/hallway_7/reset
+execute in luigis_mansion:normal if score #bathroom_1 Ticking matches 1 run function #luigis_mansion:room/normal/bathroom_1/reset
+execute in luigis_mansion:normal if score #ball_room Ticking matches 1 run function #luigis_mansion:room/normal/ball_room/reset
+execute in luigis_mansion:normal if score #storage_room Ticking matches 1 run function #luigis_mansion:room/normal/storage_room/reset
+execute in luigis_mansion:normal if score #washroom_1 Ticking matches 1 run function #luigis_mansion:room/normal/washroom_1/reset
+execute in luigis_mansion:normal if score #fortune_tellers_room Ticking matches 1 run function #luigis_mansion:room/normal/fortune_tellers_room/reset
+execute in luigis_mansion:normal if score #mirror_room Ticking matches 1 run function #luigis_mansion:room/normal/mirror_room/reset
+execute in luigis_mansion:normal if score #laundry_room Ticking matches 1 run function #luigis_mansion:room/normal/laundry_room/reset
+execute in luigis_mansion:normal if score #butlers_room Ticking matches 1 run function #luigis_mansion:room/normal/butlers_room/reset
+execute in luigis_mansion:normal if score #hidden_room Ticking matches 1 run function #luigis_mansion:room/normal/hidden_room/reset
+execute in luigis_mansion:normal if score #conservatory Ticking matches 1 run function #luigis_mansion:room/normal/conservatory/reset
+execute in luigis_mansion:normal if score #dining_room Ticking matches 1 run function #luigis_mansion:room/normal/dining_room/reset
+execute in luigis_mansion:normal if score #kitchen Ticking matches 1 run function #luigis_mansion:room/normal/kitchen/reset
+execute in luigis_mansion:normal if score #boneyard Ticking matches 1 run function #luigis_mansion:room/normal/boneyard/reset
+execute in luigis_mansion:normal if score #graveyard Ticking matches 1 run function #luigis_mansion:room/normal/graveyard/reset
+execute in luigis_mansion:normal if score #courtyard Ticking matches 1 run function #luigis_mansion:room/normal/courtyard/reset
+execute in luigis_mansion:normal if score #bottom_of_the_well Ticking matches 1 run function #luigis_mansion:room/normal/bottom_of_the_well/reset
+execute in luigis_mansion:normal if score #rec_room Ticking matches 1 run function #luigis_mansion:room/normal/rec_room/reset
+execute in luigis_mansion:normal if score #hallway_8 Ticking matches 1 run function #luigis_mansion:room/normal/hallway_8/reset
+execute in luigis_mansion:normal if score #tea_room Ticking matches 1 run function #luigis_mansion:room/normal/tea_room/reset
+execute in luigis_mansion:normal if score #hallway_9 Ticking matches 1 run function #luigis_mansion:room/normal/hallway_9/reset
+execute in luigis_mansion:normal if score #hallway_10 Ticking matches 1 run function #luigis_mansion:room/normal/hallway_10/reset
+execute in luigis_mansion:normal if score #hallway_11 Ticking matches 1 run function #luigis_mansion:room/normal/hallway_11/reset
+execute in luigis_mansion:normal if score #hallway_12 Ticking matches 1 run function #luigis_mansion:room/normal/hallway_12/reset
+execute in luigis_mansion:normal if score #hallway_13 Ticking matches 1 run function #luigis_mansion:room/normal/hallway_13/reset
+execute in luigis_mansion:normal if score #hallway_14 Ticking matches 1 run function #luigis_mansion:room/normal/hallway_14/reset
+execute in luigis_mansion:normal if score #hallway_15 Ticking matches 1 run function #luigis_mansion:room/normal/hallway_15/reset
+execute in luigis_mansion:normal if score #washroom_2 Ticking matches 1 run function #luigis_mansion:room/normal/washroom_2/reset
+execute in luigis_mansion:normal if score #bathroom_2 Ticking matches 1 run function #luigis_mansion:room/normal/bathroom_2/reset
+execute in luigis_mansion:normal if score #nanas_room Ticking matches 1 run function #luigis_mansion:room/normal/nanas_room/reset
+execute in luigis_mansion:normal if score #astral_hall Ticking matches 1 run function #luigis_mansion:room/normal/astral_hall/reset
+execute in luigis_mansion:normal if score #observatory Ticking matches 1 run function #luigis_mansion:room/normal/observatory/reset
+execute in luigis_mansion:normal if score #billiards_room Ticking matches 1 run function #luigis_mansion:room/normal/billiards_room/reset
+execute in luigis_mansion:normal if score #projection_room Ticking matches 1 run function #luigis_mansion:room/normal/projection_room/reset
+execute in luigis_mansion:normal if score #the_twins_room Ticking matches 1 run function #luigis_mansion:room/normal/the_twins_room/reset
+execute in luigis_mansion:normal if score #safari_room Ticking matches 1 run function #luigis_mansion:room/normal/safari_room/reset
+execute in luigis_mansion:normal if score #hallway_16 Ticking matches 1 run function #luigis_mansion:room/normal/hallway_16/reset
+execute in luigis_mansion:normal if score #hallway_17 Ticking matches 1 run function #luigis_mansion:room/normal/hallway_17/reset
+execute in luigis_mansion:normal if score #balcony_2 Ticking matches 1 run function #luigis_mansion:room/normal/balcony_2/reset
+execute in luigis_mansion:normal if score #hallway_18 Ticking matches 1 run function #luigis_mansion:room/normal/hallway_18/reset
+execute in luigis_mansion:normal if score #hallway_19 Ticking matches 1 run function #luigis_mansion:room/normal/hallway_19/reset
+execute in luigis_mansion:normal if score #telephone_room Ticking matches 1 run function #luigis_mansion:room/normal/telephone_room/reset
+execute in luigis_mansion:normal if score #breaker_room Ticking matches 1 run function #luigis_mansion:room/normal/breaker_room/reset
+execute in luigis_mansion:normal if score #cellar Ticking matches 1 run function #luigis_mansion:room/normal/cellar/reset
+execute in luigis_mansion:normal if score #hallway_20 Ticking matches 1 run function #luigis_mansion:room/normal/hallway_20/reset
+execute in luigis_mansion:normal if score #hallway_21 Ticking matches 1 run function #luigis_mansion:room/normal/hallway_21/reset
+execute in luigis_mansion:normal if score #hallway_22 Ticking matches 1 run function #luigis_mansion:room/normal/hallway_22/reset
+execute in luigis_mansion:normal if score #clockwork_room Ticking matches 1 run function #luigis_mansion:room/normal/clockwork_room/reset
+execute in luigis_mansion:normal if score #roof Ticking matches 1 run function #luigis_mansion:room/normal/roof/reset
+execute in luigis_mansion:normal if score #armory Ticking matches 1 run function #luigis_mansion:room/normal/armory/reset
+execute in luigis_mansion:normal if score #ceramics_studio Ticking matches 1 run function #luigis_mansion:room/normal/ceramics_studio/reset
+execute in luigis_mansion:normal if score #sealed_room Ticking matches 1 run function #luigis_mansion:room/normal/sealed_room/reset
+execute in luigis_mansion:normal if score #pipe_room Ticking matches 1 run function #luigis_mansion:room/normal/pipe_room/reset
+execute in luigis_mansion:normal if score #cold_storage Ticking matches 1 run function #luigis_mansion:room/normal/cold_storage/reset
+execute in luigis_mansion:normal if score #sitting_room Ticking matches 1 run function #luigis_mansion:room/normal/sitting_room/reset
+execute in luigis_mansion:normal if score #guest_room Ticking matches 1 run function #luigis_mansion:room/normal/guest_room/reset
+execute in luigis_mansion:normal if score #the_artists_studio Ticking matches 1 run function #luigis_mansion:room/normal/the_artists_studio/reset
+execute in luigis_mansion:normal if score #secret_altar Ticking matches 1 run function #luigis_mansion:room/normal/secret_altar/reset
+execute in luigis_mansion:normal if score #chauncey_battle Ticking matches 1 run function #luigis_mansion:room/normal/chauncey_battle/reset
+execute in luigis_mansion:normal if score #bogmire_battle Ticking matches 1 run function #luigis_mansion:room/normal/bogmire_battle/reset
+execute in luigis_mansion:normal if score #boolossus_battle Ticking matches 1 run function #luigis_mansion:room/normal/boolossus_battle/reset
+execute in luigis_mansion:normal if score #king_boo_battle Ticking matches 1 run function #luigis_mansion:room/normal/king_boo_battle/reset

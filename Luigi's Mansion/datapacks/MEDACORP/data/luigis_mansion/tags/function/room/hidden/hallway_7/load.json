@@ -4,7 +4,8 @@
         "luigis_mansion:room/hidden/hallway_7/load/lights",
         "luigis_mansion:room/hidden/hallway_7/load/breaker_room_door",
         "luigis_mansion:room/hidden/hallway_7/load/cellar_door",
-        "luigis_mansion:room/hidden/hallway_7/load/cobweb",
+        "luigis_mansion:room/hidden/hallway_7/load/cobweb_1",
+        "luigis_mansion:room/hidden/hallway_7/load/cobweb_2",
         "luigis_mansion:room/hidden/hallway_7/load/hallway_3_door"
 	]
 }

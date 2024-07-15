@@ -7,6 +7,7 @@ scoreboard objectives add BananaDropTime dummy
 scoreboard objectives add Boos dummy
 scoreboard objectives add BooTimer dummy
 scoreboard objectives add ChangedMansion dummy
+scoreboard objectives add CollisionTimer dummy
 scoreboard objectives add Constants dummy
 scoreboard objectives add CreditsTime dummy
 scoreboard objectives add Damage dummy
@@ -63,6 +64,7 @@ scoreboard objectives add FurnitureSizeRadius dummy
 scoreboard objectives add FurnitureSizeUp dummy
 scoreboard objectives add FurnitureSizeWidth dummy
 scoreboard objectives add FurnitureSpins dummy
+scoreboard objectives add FurnitureSwingTimer dummy
 scoreboard objectives add FurnitureTime dummy
 scoreboard objectives add FurnitureVacuum dummy
 scoreboard objectives add FurnitureWater dummy

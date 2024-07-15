@@ -3,7 +3,8 @@ scoreboard players set #temp Move 50
 execute at @s facing entity @a[tag=target,limit=1] feet run teleport @s ~ ~ ~ ~ ~
 execute at @s unless entity @a[tag=target,limit=1,distance=..8] rotated ~ 0 run function luigis_mansion:entities/ghost/move_forward_force
 scoreboard players add @s[scores={ActionTime=1..}] ActionTime 1
-#scoreboard players add @s[scores={ActionTime=0}] ActionTime 1 #Possible attack cancel, I'm not sure
+scoreboard players add @s[scores={ActionTime=0}] ActionTime 1
+#Possible attack cancel, I'm not sure
 execute if entity @s[scores={ActionTime=15}] run function luigis_mansion:entities/bowser_head/spit_ice
 scoreboard players set @s[scores={ActionTime=40}] ActionTime 0
 data modify entity @s data.rotation set from entity @s Rotation[1]

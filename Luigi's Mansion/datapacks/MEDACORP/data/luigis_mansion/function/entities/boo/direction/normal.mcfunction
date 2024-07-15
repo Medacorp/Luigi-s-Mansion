@@ -58,16 +58,16 @@ scoreboard players set @s[scores={Room=34},x=6380,z=-61,dx=10,dz=24] RoomSection
 scoreboard players set @s[scores={Room=34},x=6380,z=-36,dx=10,dz=7] RoomSection 2
 
 # hallway 9-15
-scoreboard players set @s[scores={Room=35..41},x=7130,z=-21,dx=5,dz=5] RoomSection 1
-scoreboard players set @s[scores={Room=35..41},x=7130,z=-34,dx=6,dz=12] RoomSection 2
-scoreboard players set @s[scores={Room=35..41},x=7130,z=-52,dx=6,dz=12] RoomSection 3
-scoreboard players set @s[scores={Room=35..41},x=6970,z=-22,dx=13,dz=6] RoomSection 4
-scoreboard players set @s[scores={Room=35..41},x=6850,z=-22,dx=12,dz=6] RoomSection 5
-scoreboard players set @s[scores={Room=35..41},x=6790,z=-29,dx=6,dz=7] RoomSection 6
-scoreboard players set @s[scores={Room=35..41},x=6790,z=-21,dx=5,dz=4] RoomSection 7
-scoreboard players set @s[scores={Room=35..41},x=6790,z=-16,dx=6,dz=22] RoomSection 8
-scoreboard players set @s[scores={Room=35..41},x=6800,z=6,dx=5,dz=5] RoomSection 9
-scoreboard players set @s[scores={Room=35..41},x=6660,z=5,dx=12,dz=8] RoomSection 10
+scoreboard players set @s[scores={Room=35..41},x=713,z=-21,dx=5,dz=5] RoomSection 1
+scoreboard players set @s[scores={Room=35..41},x=713,z=-34,dx=6,dz=12] RoomSection 2
+scoreboard players set @s[scores={Room=35..41},x=713,z=-52,dx=6,dz=12] RoomSection 3
+scoreboard players set @s[scores={Room=35..41},x=697,z=-22,dx=13,dz=6] RoomSection 4
+scoreboard players set @s[scores={Room=35..41},x=685,z=-22,dx=12,dz=6] RoomSection 5
+scoreboard players set @s[scores={Room=35..41},x=679,z=-29,dx=6,dz=7] RoomSection 6
+scoreboard players set @s[scores={Room=35..41},x=679,z=-21,dx=5,dz=4] RoomSection 7
+scoreboard players set @s[scores={Room=35..41},x=679,z=-16,dx=6,dz=22] RoomSection 8
+scoreboard players set @s[scores={Room=35..41},x=680,z=6,dx=5,dz=5] RoomSection 9
+scoreboard players set @s[scores={Room=35..41},x=666,z=5,dx=12,dz=8] RoomSection 10
 
 # astral hall
 scoreboard players set @s[scores={Room=45},x=6610,z=-78,dx=10,dz=6] RoomSection 1
@@ -78,19 +78,19 @@ scoreboard players set @s[scores={Room=47},x=674,z=65,dx=13,dz=13] RoomSection 1
 scoreboard players set @s[scores={Room=47},x=674,z=79,dx=13,dz=12] RoomSection 2
 
 # hallway 16-17
-scoreboard players set @s[scores={Room=51..52},x=7629,z=-16,dx=1,dz=6] RoomSection 1
-scoreboard players set @s[scores={Room=51..52},x=7489,z=-16,dx=11,dz=6] RoomSection 2
-scoreboard players set @s[scores={Room=51..52},x=7419,z=-16,dx=6,dz=6] RoomSection 3
-scoreboard players set @s[scores={Room=51..52},x=7259,z=-16,dx=15,dz=6] RoomSection 4
+scoreboard players set @s[scores={Room=51..52},x=762,z=-16,dx=1,dz=6] RoomSection 1
+scoreboard players set @s[scores={Room=51..52},x=748,z=-16,dx=11,dz=6] RoomSection 2
+scoreboard players set @s[scores={Room=51..52},x=741,z=-16,dx=6,dz=6] RoomSection 3
+scoreboard players set @s[scores={Room=51..52},x=725,z=-16,dx=15,dz=6] RoomSection 4
 
 # hallway 18-19
-scoreboard players set @s[scores={Room=54..55},x=7249,z=41,dx=15,dz=6] RoomSection 1
-scoreboard players set @s[scores={Room=54..55},x=7409,z=41,dx=19,dz=6] RoomSection 2
-scoreboard players set @s[scores={Room=54..55},x=7619,z=41,dx=1,dz=6] RoomSection 3
+scoreboard players set @s[scores={Room=54..55},x=724,z=41,dx=15,dz=6] RoomSection 1
+scoreboard players set @s[scores={Room=54..55},x=740,z=41,dx=19,dz=6] RoomSection 2
+scoreboard players set @s[scores={Room=54..55},x=761,z=41,dx=1,dz=6] RoomSection 3
 
 # telephone room
-scoreboard players set @s[scores={Room=56},x=7369,z=0,dx=19,dz=35] RoomSection 1
-scoreboard players set @s[scores={Room=56},x=7569,z=0,dx=4,dz=35] RoomSection 2
+scoreboard players set @s[scores={Room=56},x=736,z=0,dx=19,dz=35] RoomSection 1
+scoreboard players set @s[scores={Room=56},x=756,z=0,dx=4,dz=35] RoomSection 2
 
 # hallway 20-21
 scoreboard players set @s[scores={Room=59..60},x=720,z=-21,dx=13,dz=6] RoomSection 1

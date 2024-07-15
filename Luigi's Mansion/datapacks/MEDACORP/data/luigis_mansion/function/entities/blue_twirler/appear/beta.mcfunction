@@ -3,5 +3,6 @@ scoreboard players set @s SpawnTime 0
 scoreboard players add @s ActionTime 1
 $execute if entity @s[scores={ActionTime=1}] run playsound $(namespace):entity.$(id).spawn_beta hostile @a[tag=same_room] ~ ~ ~ 1
 data modify entity @s[scores={ActionTime=1}] data.animation set value {namespace:"luigis_mansion",id:"appear/beta"}
+data remove entity @s[scores={ActionTime=40}] data.animation
 tag @s[scores={ActionTime=40}] remove appear
 scoreboard players set @s[scores={ActionTime=40}] ActionTime 0
