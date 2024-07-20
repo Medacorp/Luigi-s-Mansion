@@ -4,6 +4,7 @@ execute if score #dialog Dialog matches ..6 if entity @a[tag=same_room,tag=skip_
 execute if score #dialog Dialog matches ..6 as @a[tag=same_room,tag=!spectator,tag=!dialog_menu] unless entity @s[tag=using_selection_menu,tag=!dialog_menu] run function luigis_mansion:selection_menu/dialog/original_menu
 execute if score #dialog Dialog matches 7.. as @a[tag=same_room,tag=dialog_menu] run function luigis_mansion:selection_menu/dialog/exit
 
+tag @a[tag=same_room] add prevent_item_lock
 scoreboard players reset @a[tag=same_room,tag=!spectator] WarpTime
 execute as @a[tag=same_room,tag=!spectator,tag=game_boy_horror_menu] run function luigis_mansion:selection_menu/game_boy_horror/exit
 tag @e[nbt={data:{entity:{namespace:"luigis_mansion",id:"sir_weston"}}},tag=same_room,limit=1] remove freeze_animation

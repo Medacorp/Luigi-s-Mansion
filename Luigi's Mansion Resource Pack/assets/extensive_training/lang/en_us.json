@@ -46,6 +46,7 @@
 "extensive_training:dialog.pvp.7": "Begin!",
 "extensive_training:dialog.pvp.8": "And the winner is...",
 "extensive_training:dialog.pvp.9": "%s with %s points!",
+"extensive_training:dialog.pvp.9.1": "%s with 1 point!",
 "extensive_training:dialog.pvp.death": "You fainted, that means you are out of the contest.",
 "extensive_training:dialog.pvp.no.1": "Alright then.",
 "extensive_training:dialog.pvp.no_multiplayer.1": "Sorry to say this, but this program requires several people in the training room.",

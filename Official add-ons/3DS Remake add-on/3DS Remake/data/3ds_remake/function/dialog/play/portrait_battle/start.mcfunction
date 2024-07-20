@@ -12,6 +12,7 @@ tag @e[tag=furniture,tag=door,tag=!blockade,scores={Room=1..}] remove blockade_s
 tag @e[tag=furniture,tag=door,tag=!blockade,scores={Room=1..}] remove no_ai
 tag @e[tag=furniture,tag=door,tag=!blockade,scores={Room=1..}] remove freeze_animation
 tag @e[tag=furniture,tag=door,tag=!blockade,scores={Room=1..}] add blockade
+tag @a[tag=same_room] add prevent_item_lock
 scoreboard players reset @a[tag=same_room,tag=!spectator] WarpTime
 execute as @a[tag=same_room,tag=!spectator,tag=game_boy_horror_menu] run function luigis_mansion:selection_menu/game_boy_horror/exit
 execute if score #dialog Dialog matches 1..22 as @a[tag=same_room,tag=!spectator] run function luigis_mansion:entities/player/animation/set/idle

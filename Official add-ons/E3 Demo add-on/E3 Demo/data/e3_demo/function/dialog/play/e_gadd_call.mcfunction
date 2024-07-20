@@ -5,6 +5,7 @@ tag @e[tag=ghost,tag=!hidden,tag=!normal_death,tag=!element_death,tag=same_room]
 tag @e[tag=ghost,tag=!hidden,tag=!normal_death,tag=!element_death,tag=same_room] remove no_ai
 tag @e[tag=ghost,tag=!hidden,tag=!normal_death,tag=!element_death,tag=same_room] remove freeze_animation
 tag @e[tag=ghost,tag=same_room] add only_forced_spawn
+tag @a[tag=same_room] add prevent_item_lock
 tag @a[tag=same_room] add disable_interact
 tag @a[tag=same_room] add disable_poltergust
 

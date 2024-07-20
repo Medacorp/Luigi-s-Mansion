@@ -1,6 +1,7 @@
 execute if score #dialog Dialog matches ..579 if entity @a[tag=same_room,tag=skip_dialog,limit=1] run scoreboard players set #dialog Dialog 580
 scoreboard players add #dialog Dialog 1
 
+tag @a[tag=same_room] add prevent_item_lock
 scoreboard players reset @a[tag=same_room,tag=!spectator] WarpTime
 execute as @a[tag=same_room,tag=!spectator,tag=game_boy_horror_menu] run function luigis_mansion:selection_menu/game_boy_horror/exit
 tag @e[tag=furniture,tag=same_room,limit=1] remove freeze_animation

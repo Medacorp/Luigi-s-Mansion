@@ -6,7 +6,7 @@ execute if entity @s[scores={AnimationProgress=1,Sound=0,Health=..40,Shrunk=0}] 
 execute if entity @s[scores={AnimationProgress=1,Sound=0,Health=..40,Shrunk=1..}] run playsound luigis_mansion:entity.player.hurt_bitten.low_health player @a[tag=same_room] ~ ~ ~ 1 2
 scoreboard players set @s[scores={Sound=0}] Sound 2
 scoreboard players operation #temp GrabbedID = @s ID
-execute as @e[tag=ghost,scores={GrabbedID=-2147483648..}] if score @s GrabbedID = #temp GrabbedID run tag @s add this_ghost
+execute as @e[tag=ghost,scores={GrabbedID=-2147483648..},tag=!vanish] if score @s GrabbedID = #temp GrabbedID run tag @s add this_ghost
 execute if entity @e[tag=this_ghost,limit=1,scores={VulnerableTime=0}] run scoreboard players remove @s[scores={AnimationProgress=10}] AnimationProgress 1
 execute if entity @s[scores={AnimationProgress=..9}] store result score #temp PositionX run data get entity @s Pos[0] 100
 execute if entity @s[scores={AnimationProgress=..9}] store result score #temp PositionZ run data get entity @s Pos[2] 100

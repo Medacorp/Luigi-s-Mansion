@@ -1,4 +1,4 @@
-execute if score #dialog Dialog matches 395 run scoreboard players add #dialog Dialog 1
+execute if score #dialog Dialog matches 394 run scoreboard players add #dialog Dialog 1
 execute if entity @a[scores={Health=..1},tag=same_room] run scoreboard players set #dialog Dialog 394
 execute if score #dialog Dialog matches 391..392 if entity @a[tag=same_room,tag=next_dialog_line,limit=1] run scoreboard players add #dialog Dialog 1
 execute if score #dialog Dialog matches 140..390 run scoreboard players add #dialog Dialog 1
@@ -24,8 +24,8 @@ execute if score #dialog Dialog matches 105..112 if entity @a[tag=same_room,tag=
 execute if score #dialog Dialog matches 4..104 run scoreboard players add #dialog Dialog 1
 execute if score #dialog Dialog matches 2..3 if entity @a[tag=same_room,tag=next_dialog_line,limit=1] run scoreboard players add #dialog Dialog 1
 execute if score #dialog Dialog matches ..1 run scoreboard players add #dialog Dialog 1
-execute if score #dialog Dialog matches 396 if entity @a[tag=same_room,tag=next_dialog_line,limit=1] run scoreboard players set #dialog Dialog 109
-execute if score #dialog Dialog matches 394..395 if entity @a[tag=same_room,tag=skip_dialog,limit=1] run scoreboard players set #dialog Dialog 393
+execute if score #dialog Dialog matches 395 if entity @a[tag=same_room,tag=next_dialog_line,limit=1] run scoreboard players set #dialog Dialog 109
+execute if score #dialog Dialog matches 394 if entity @a[tag=same_room,tag=skip_dialog,limit=1] run scoreboard players set #dialog Dialog 393
 execute if score #dialog Dialog matches 390..392 if entity @a[tag=same_room,tag=skip_dialog,limit=1] run scoreboard players set #dialog Dialog 393
 execute if score #dialog Dialog matches ..389 if entity @a[tag=same_room,tag=skip_dialog,limit=1] run scoreboard players set #dialog Dialog 390
 execute unless score #dialog Dialog matches 4..103 unless score #dialog Dialog matches 114 unless score #dialog Dialog matches 118 unless score #dialog Dialog matches 123 unless score #dialog Dialog matches 127 unless score #dialog Dialog matches 131 unless score #dialog Dialog matches 135 unless score #dialog Dialog matches 140..390 unless score #dialog Dialog matches 393 as @a[tag=same_room,tag=!spectator] unless entity @s[tag=dialog_menu,tag=!dialog_choice_menu] unless entity @s[tag=using_selection_menu,tag=!dialog_menu] run function luigis_mansion:selection_menu/dialog/original_menu
@@ -39,6 +39,7 @@ execute if score #dialog Dialog matches 135 as @a[tag=same_room,tag=dialog_menu]
 execute if score #dialog Dialog matches 140..390 as @a[tag=same_room,tag=dialog_menu] run function luigis_mansion:selection_menu/dialog/exit
 execute if score #dialog Dialog matches 393 as @a[tag=same_room,tag=dialog_menu] run function luigis_mansion:selection_menu/dialog/exit
 
+tag @a[tag=same_room] add prevent_item_lock
 tag @e[tag=same_room] remove freeze_animation
 tag @e[tag=same_room] remove no_ai
 scoreboard players set @a[tag=same_room] ForceScreen 1

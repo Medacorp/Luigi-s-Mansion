@@ -5,6 +5,7 @@ execute if score #dialog Dialog matches ..5 unless score #dialog Dialog matches 
 execute if score #dialog Dialog matches 3 as @a[tag=same_room,tag=!spectator,tag=!dialog_choice_menu] unless entity @s[tag=using_selection_menu,tag=!dialog_menu] run function luigis_mansion:selection_menu/dialog/choice/the_book_of_pericles
 execute if score #dialog Dialog matches 6.. as @a[tag=same_room,tag=dialog_menu] run function luigis_mansion:selection_menu/dialog/exit
 
+tag @a[tag=same_room] add prevent_item_lock
 scoreboard players reset @a[tag=same_room,tag=!spectator] WarpTime
 execute as @a[tag=same_room,tag=!spectator,tag=game_boy_horror_menu] run function luigis_mansion:selection_menu/game_boy_horror/exit
 execute if score #dialog Dialog matches 1..3 as @a[tag=same_room,tag=!spectator] run function luigis_mansion:entities/player/animation/set/idle

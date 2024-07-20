@@ -1,6 +1,7 @@
 execute if score #dialog Dialog matches 1.. run scoreboard players add #dialog Dialog 1
 execute if score #dialog Dialog matches 0 if entity @a[tag=same_room,tag=!spectator,x=751.0,y=11,z=9.0,distance=..5] run scoreboard players add #dialog Dialog 1
 
+tag @a[tag=same_room] add prevent_item_lock
 execute if score #dialog Dialog matches 0 run tag @e[tag=furniture,tag=same_room,tag=no_ai_dialog] remove no_ai
 execute if score #dialog Dialog matches 0 run tag @e[tag=furniture,tag=same_room,tag=freeze_animation_dialog] remove freeze_animation
 execute if score #dialog Dialog matches 1 run tag @e[tag=furniture,tag=same_room] remove applied_dialog_effects

@@ -28,7 +28,7 @@ execute at @s[tag=flee,tag=!freeze,tag=!show_health] unless entity @s[scores={De
 
 execute if entity @s[scores={Health=-2147483648..},tag=show_health] at @s run function luigis_mansion:entities/ghost/health/show
 execute if entity @s[scores={Health=-2147483648..,StunTime=0..},tag=!show_health] unless entity @s[scores={StunTime=0},tag=!hurt,tag=!element_hurt,tag=!spawned_health_display] at @s run function luigis_mansion:entities/ghost/health/show
-execute if entity @s[scores={VulnerableTime=0..,Health=-2147483648..}] unless entity @s[scores={VulnerableTime=0},tag=!burning_heart,tag=!watery_heart,tag=!frozen_heart,tag=!spawned_ghost_heart] at @s run function luigis_mansion:entities/ghost/heart/show
+execute if entity @s[scores={VulnerableTime=0..,Health=-2147483648..}] unless entity @s[scores={VulnerableTime=0},tag=!burning_heart,tag=!watery_heart,tag=!frozen_heart,tag=!spawned_ghost_heart] unless entity @s[tag=!spawned_ghost_heart,tag=vanish] at @s run function luigis_mansion:entities/ghost/heart/show
 
 execute at @s[tag=normal_death,tag=!captured,tag=!dead] run function luigis_mansion:entities/ghost/death
 execute at @s[scores={Health=0},tag=!element_hurt,tag=!element_death,tag=!normal_death,tag=!captured,tag=!dead] run function luigis_mansion:entities/ghost/death

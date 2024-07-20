@@ -12,10 +12,10 @@
         },
         "frame": "challenge",
         "title": {
-            "type": "translatable", "translate": "extensive_training:advancements.extensive_training.is_that_al_you_got"
+            "type": "translatable", "translate": "extensive_training:advancements.extensive_training.is_that_all_you_got"
         },
         "description": {
-            "type": "translatable", "translate": "extensive_training:advancements.extensive_training.is_that_al_you_got.description"
+            "type": "translatable", "translate": "extensive_training:advancements.extensive_training.is_that_all_you_got.description"
         }
     },
 	"parent": "extensive_training:extensive_training/root",

@@ -13,6 +13,7 @@ execute if score #dialog Dialog matches ..9 unless score #dialog Dialog matches 
 execute if score #dialog Dialog matches 5..6 as @a[tag=same_room,tag=dialog_menu] run function luigis_mansion:selection_menu/dialog/exit
 execute if score #dialog Dialog matches 10.. as @a[tag=same_room,tag=dialog_menu] run function luigis_mansion:selection_menu/dialog/exit
 
+tag @a[tag=same_room] add prevent_item_lock
 tag @e[tag=same_room] remove freeze_animation
 tag @e[tag=same_room] remove no_ai
 scoreboard players set @a[tag=same_room] ForceScreen 1
@@ -21,7 +22,7 @@ execute if score #dialog Dialog matches 1..4 as @a[tag=same_room,tag=!spectator,
 execute if score #dialog Dialog matches 1..4 as @a[tag=same_room,tag=!spectator] run function luigis_mansion:entities/player/animation/set/game_boy_horror
 execute if score #dialog Dialog matches 1..6 as @a[tag=same_room] run function luigis_mansion:other/music/set/training
 execute if score #dialog Dialog matches 1 run stopsound @a[tag=same_room] neutral luigis_mansion:entity.e_gadd.talk.oui_oydohroh_tahmentahkeh2
-execute if score #dialog Dialog matches 1 run scoreboard players set #training_room Selected 3
+execute if score #dialog Dialog matches 1 run scoreboard players set #training_room Loaded 3
 execute if score #dialog Dialog matches 1 if score #players Totals matches 1 run tellraw @a[tag=same_room] {"type":"translatable","translate":"chat.type.text","with":[{"type":"translatable","translate":"luigis_mansion:entity.e_gadd","color":"green"},{"type":"translatable","translate":"extensive_training:dialog.endless.1","with":[{"type":"selector","selector":"@p[tag=!spectator]"}]}]}
 execute if score #dialog Dialog matches 1 if score #players Totals matches 2.. run tellraw @a[tag=same_room] {"type":"translatable","translate":"chat.type.text","with":[{"type":"translatable","translate":"luigis_mansion:entity.e_gadd","color":"green"},{"type":"translatable","translate":"extensive_training:dialog.endless.1.more"}]}
 execute if score #dialog Dialog matches 1 as @a[tag=same_room] at @s run playsound luigis_mansion:entity.e_gadd.talk.ohyahmah_luigi_ck_ck neutral @s ~ ~ ~ 1
@@ -44,7 +45,9 @@ execute if score #dialog Dialog matches 5 run scoreboard players set #training_r
 execute if score #dialog Dialog matches 5 run function luigis_mansion:room/training_room/turn_lights/off
 
 execute if score #dialog Dialog matches 6 unless entity @e[tag=ghost,tag=same_room,limit=1] run function extensive_training:room/training_room/spawn_wave/endless
-execute if score #dialog Dialog matches 6 if entity @e[nbt={data:{entity:{namespace:"luigis_mansion",id:"speedy_spirit"}}},tag=same_room,tag=dying,limit=1] run function extensive_training:selection_menu/gallery_trophy/complete/task_5
+execute if score #dialog Dialog matches 6 if score #training_room Selected matches 2 if entity @e[nbt={data:{entity:{namespace:"luigis_mansion",id:"speedy_spirit"}}},tag=same_room,tag=vanish,limit=1] run scoreboard players set #training_room Selected 3
+execute if score #dialog Dialog matches 6 if score #training_room Selected matches 2 unless entity @e[nbt={data:{entity:{namespace:"luigis_mansion",id:"speedy_spirit"}}},tag=same_room,limit=1] run function extensive_training:selection_menu/gallery_trophy/complete/task_5
+execute if score #dialog Dialog matches 6 if score #training_room Selected matches 1 if entity @e[nbt={data:{entity:{namespace:"luigis_mansion",id:"speedy_spirit"}}},tag=same_room,limit=1] run scoreboard players set #training_room Selected 2
 
 execute if score #dialog Dialog matches 7..49 run scoreboard players reset @a[tag=same_room,tag=!spectator] WarpTime
 execute if score #dialog Dialog matches 7..49 as @a[tag=same_room,tag=!spectator,tag=game_boy_horror_menu] run function luigis_mansion:selection_menu/game_boy_horror/exit
@@ -54,6 +57,7 @@ execute if score #dialog Dialog matches 7 run scoreboard players reset @a[tag=sa
 execute if score #dialog Dialog matches 7 run scoreboard players set @a[tag=same_room] Health 100
 execute if score #dialog Dialog matches 7 run tag @a[tag=same_room] remove death_animation
 execute if score #dialog Dialog matches 7 as @a[tag=same_room,tag=vacuuming_ghost] at @s run function luigis_mansion:entities/player/poltergust_breakage
+execute if score #dialog Dialog matches 7 run scoreboard players set @e[tag=ghost,tag=same_room,tag=!vanish] ActionTime 0
 execute if score #dialog Dialog matches 7 run tag @e[tag=ghost,tag=same_room,tag=!flee] add vanish
 execute if score #dialog Dialog matches 7 if score #training_room Wave matches 1 run function extensive_training:selection_menu/gallery_trophy/complete/task_1
 execute if score #dialog Dialog matches 7..49 as @a[tag=same_room] run function luigis_mansion:other/music/set/training_stop
@@ -70,8 +74,8 @@ execute if score #dialog Dialog matches 9 if entity @a[tag=next_dialog_line,limi
 
 execute if score #dialog Dialog matches 50 as @a[tag=same_room,tag=!spectator] run function luigis_mansion:entities/player/animation/set/none
 execute if score #dialog Dialog matches 50..209 as @a[tag=same_room] run function luigis_mansion:other/music/set/training_results
-scoreboard players operation #training_room Selected < #global_difficulty Selected
-execute if score #dialog Dialog matches 50 if score #training_room TrainingRoomScore matches 150.. if score #training_room Selected matches 3 run advancement grant @a[tag=same_room] only extensive_training:extensive_training/is_that_all_you_got
+scoreboard players operation #training_room Loaded < #global_difficulty Selected
+execute if score #dialog Dialog matches 50 if score #training_room TrainingRoomScore matches 150.. if score #training_room Loaded matches 3 run advancement grant @a[tag=same_room] only extensive_training:extensive_training/is_that_all_you_got
 execute if score #dialog Dialog matches 50 if score #training_room TrainingRoomScore matches 1.. run summon minecraft:firework_rocket 788 80 -8 {LifeTime:0,Life:0,FireworksItem:{id:"minecraft:firework_rocket",count:1,components:{"minecraft:fireworks":{flight_duration:0b,explosions:[{colors:[I;14862336],shape:"small_ball"}]}}}}
 execute if score #dialog Dialog matches 55 if score #training_room TrainingRoomScore matches 1.. run summon minecraft:firework_rocket 788 80 -4 {LifeTime:0,Life:0,FireworksItem:{id:"minecraft:firework_rocket",count:1,components:{"minecraft:fireworks":{flight_duration:0b,explosions:[{colors:[I;14862336],shape:"small_ball"}]}}}}
 execute if score #dialog Dialog matches 60 if score #training_room TrainingRoomScore matches 50.. run summon minecraft:firework_rocket 788 80 -12 {LifeTime:0,Life:0,FireworksItem:{id:"minecraft:firework_rocket",count:1,components:{"minecraft:fireworks":{flight_duration:0b,explosions:[{colors:[I;14862336],shape:"small_ball"}]}}}}

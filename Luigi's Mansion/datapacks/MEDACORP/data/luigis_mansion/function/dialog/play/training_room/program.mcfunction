@@ -45,6 +45,7 @@ execute if score #dialog Dialog matches 140..390 as @a[tag=same_room,tag=dialog_
 execute if score #dialog Dialog matches 415 as @a[tag=same_room,tag=dialog_menu] run function luigis_mansion:selection_menu/dialog/exit
 execute if score #dialog Dialog matches 437 as @a[tag=same_room,tag=dialog_menu] run function luigis_mansion:selection_menu/dialog/exit
 
+tag @a[tag=same_room] add prevent_item_lock
 tag @e[tag=same_room] remove freeze_animation
 tag @e[tag=same_room] remove no_ai
 scoreboard players set @a[tag=same_room] ForceScreen 1

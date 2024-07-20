@@ -12,7 +12,7 @@ execute if score #temp ID matches 6 run scoreboard players set #temp Time 167262
 execute if score #temp ID matches 7 run scoreboard players set #temp Time 16756001
 execute if score #temp ID matches 8.. if predicate luigis_mansion:50_50 run scoreboard players set #temp2 Time 1
 execute if score #temp ID matches 8.. run function luigis_mansion:entities/player/generate_color
-execute store result storage luigis_mansion:data my_memory.model.id int 1 run scoreboard players add #temp ID 1
+execute store result storage luigis_mansion:data my_memory.id int 1 run scoreboard players add #temp ID 1
 scoreboard players reset #temp ID
 execute store result storage luigis_mansion:data my_memory.model.color int 1 run scoreboard players get #temp Time
 execute store result storage luigis_mansion:data my_memory.model.variant byte 1 run scoreboard players get #temp2 Time
