@@ -5,7 +5,7 @@ This is an official add-on, it is made by the map creator and will be updated al
 Any compatibility issues with this add-on should be reported to the conflicting add-on.
 
 == How to install ==
-1. Open the Luigi's Mansion world.
+1. Open the Luigi's Mansion world folder.
 2. Open the "datapacks" folder.
 3. Drop the data pack folder (named "E3 Demo") in this folder.
 4. Go back a folder.

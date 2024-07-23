@@ -1,14 +1,7 @@
-execute unless score #foyer_lamp Searched matches 1 run summon minecraft:marker ~ ~ ~ {Tags:["chance","nothing"],Duration:1}
-execute unless score #foyer_lamp Searched matches 1 run summon minecraft:marker ~ ~ ~ {Tags:["chance","poison_mushroom"],Duration:1}
-execute unless score #foyer_lamp Searched matches 1 run summon minecraft:marker ~ ~ ~ {Tags:["chance","nothing"],Duration:1}
-execute unless score #foyer_lamp Searched matches 1 run summon minecraft:marker ~ ~ ~ {Tags:["chance","small_heart"],Duration:1}
-execute unless score #foyer_lamp Searched matches 1 run summon minecraft:marker ~ ~ ~ {Tags:["chance","money"],Duration:1}
-execute unless score #foyer_lamp Searched matches 1 run tag @e[type=minecraft:marker,tag=chance,sort=random,limit=1] add selected
-execute if entity @e[type=minecraft:marker,tag=chance,tag=selected,tag=poison_mushroom] run data modify storage luigis_mansion:data entity set value {room:1}
-execute if entity @e[type=minecraft:marker,tag=chance,tag=selected,tag=poison_mushroom] positioned 745 16 9.0 run function luigis_mansion:spawn_entities/item/room_search/poison_mushroom
-execute if entity @e[type=minecraft:marker,tag=chance,tag=selected,tag=small_heart] run data modify storage luigis_mansion:data entity set value {room:1}
-execute if entity @e[type=minecraft:marker,tag=chance,tag=selected,tag=small_heart] positioned 745 16 9.0 run function luigis_mansion:spawn_entities/item/room_search/small_heart
-execute if entity @e[type=minecraft:marker,tag=chance,tag=selected,tag=money] positioned 745 16 9.0 run function luigis_mansion:room/normal/foyer/lamp
-execute unless entity @e[type=minecraft:marker,tag=chance,tag=selected,tag=!nothing] positioned 745 17 9.0 run function luigis_mansion:blocks/dust
-kill @e[type=minecraft:marker,tag=chance]
+execute unless score #foyer_lamp Searched matches 1 run data modify storage luigis_mansion:data furniture set value {room:1,tags:["drop_loot"]}
+execute unless score #foyer_lamp Searched matches 1 unless data storage luigis_mansion:data current_state.current_data{money_spawned:["foyer_inside_lantern"]} run data modify storage luigis_mansion:data furniture.loot set value {name:"foyer_inside_lantern",contents:{luigis_mansion:{gold_coin:1}}}
+execute unless score #foyer_lamp Searched matches 1 run function luigis_mansion:entities/furniture/loot_chance/d50_m10_p5
+execute unless data storage luigis_mansion:data furniture.loot positioned 745 17 9.0 run function luigis_mansion:blocks/dust
+execute if data storage luigis_mansion:data furniture.loot positioned 745 16 9.0 run function luigis_mansion:spawn_furniture/room_clear_loot_dropper
 scoreboard players set #foyer_lamp Searched 1
+data remove storage luigis_mansion:data furniture

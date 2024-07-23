@@ -1,6 +1,6 @@
 data modify storage luigis_mansion:data entity set value {room:25,scan_message:{sender:"me",message:'{"type":"translatable","translate":"luigis_mansion:message.melody_pianissima.scan.1"}',plural_message:'{"type":"translatable","translate":"luigis_mansion:message.melody_pianissima.scan.1.more"}'}}
 execute positioned 660.2 10.5 -23.2 rotated 45 0 run function luigis_mansion:spawn_entities/portrait_ghost/melody_pianissima
-execute unless data storage luigis_mansion:data current_state.current_data{money_spawned:["conservatory_speedy_spirit"]} run data modify storage luigis_mansion:data entity set value {room:25,loot:{name:"conservatory_speedy_spirit"},spawn:3b}
+execute unless data storage luigis_mansion:data current_state.current_data{money_spawned:["conservatory_speedy_spirit"]} run data modify storage luigis_mansion:data entity set value {room:25,loot:{drop_at_0:{name:"conservatory_speedy_spirit"}},spawn:3b}
 execute unless data storage luigis_mansion:data current_state.current_data{money_spawned:["conservatory_speedy_spirit"]} run function luigis_mansion:entities/speedy_spirit/give_money/blue_sapphire
 execute unless data storage luigis_mansion:data current_state.current_data{money_spawned:["conservatory_speedy_spirit"]} positioned 660 11 -18 run function luigis_mansion:spawn_entities/ghost/speedy_spirit
 scoreboard players set #conservatory Wave 1

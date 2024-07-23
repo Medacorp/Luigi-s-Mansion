@@ -1,5 +1,3 @@
 data modify storage luigis_mansion:data furniture set value {room:4,searchable:["interact","vacuum"],can_hide_boo:1b,shake_animation:["interact","vacuum"],sound:{namespace:"luigis_mansion",id:"generic"},scan_message:'{"type":"translatable","translate":"luigis_mansion:message.player.scan_furniture.49"}'}
-execute store result score #temp Variant run random value 1..5
-execute if score #temp Variant matches 4 run data modify storage luigis_mansion:data furniture.loot set value {contents:{luigis_mansion:{small_heart:1}}}
-scoreboard players reset #temp Variant
+function luigis_mansion:entities/furniture/loot_chance/d50_m10_p5
 execute positioned 685 20 25.0 rotated -45 0 run function luigis_mansion:spawn_furniture/nightstand_mounted_blue_flower_pot

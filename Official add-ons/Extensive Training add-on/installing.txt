@@ -6,7 +6,7 @@ The 11 ghosts by yourself in the training room advancement is not granted for th
 The capturing of ghosts in the training room tasks from the 3DS Remake add-on will not be granted for this add-on's training room programs. Select 3DS Remake to try to get that instead.
 
 == How to install ==
-1. Open the Luigi's Mansion world.
+1. Open the Luigi's Mansion world folder.
 2. Open the "datapacks" folder
 3. Drop the data pack folder (named "Extensive Training") in this folder
 

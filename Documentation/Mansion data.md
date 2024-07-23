@@ -35,7 +35,7 @@ Mansion data is a massive collection of info storing everything the map needs to
     portrait_ghosts:{ //Portrait ghost data.
         <name>:{ //A portrait ghost.
             portrificationized:0b, //BASE; When health is 0, and this is 0b, the ghost can be portrificationized and turned into a painting. It is then set to 1b.
-            rank:-1b, //BASE; The rank you're obtained. Default = -1b, which is bronze, just like 0b; 1b is silver, 2b and above is gold, and 3b and above is platinum if 3DS Remake add-on is installed.
+            rank:-1b, //BASE; The rank you're obtained. Default = -1b, which is undefined (treated as bronze), 0b is bronze, 1b is silver, 2b and above is gold. 3b and above is platinum if 3DS Remake add-on is installed.
             top_vacuum_damage:0, //The highest amount of damage dealt in 1 suction.
             max_health:X, //The max health. Together with health, used to determine the pearl size to drop.
             //See also HP-having ghost data below
@@ -95,7 +95,9 @@ Mansion data is a massive collection of info storing everything the map needs to
         <HP-having ghost>:{ //A ghost with HP (for example a gold ghost).
             health:X, //Health at spawn.
             loot:{ //Loot this ghost drops upon defeat.
-                drop_at_0:1b, //When set, spawns the loot the moment health drops to 0, otherwise spawns it the moment the ghost is reeled in. Default = 0b.
+                drop_at_0:{ //Spawns the provided loot contents the moment health drops to 0, the other loot contents spawn the moment the ghost is captured. Mansions can modify this loot with their "loot_chances_ghost" function.
+                    //See loot documentation for other variables.
+                }
                 //See loot documentation for other variables.
             },
             speed:X, //The movement speed of the ghost.
@@ -106,7 +108,7 @@ Mansion data is a massive collection of info storing everything the map needs to
             }
         },
         <no-HP-having ghost>:{ //A ghost without HP (for example a bat).
-            loot:{ //Loot this ghost drops upon defeat.
+            loot:{ //Loot this ghost drops upon capture.
                 //See loot documentation for other variables.
             },
             speed:X, //The movement speed of the ghost.

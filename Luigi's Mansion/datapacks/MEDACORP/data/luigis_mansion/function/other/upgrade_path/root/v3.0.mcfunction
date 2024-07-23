@@ -80,6 +80,7 @@ scoreboard objectives remove Keys
 scoreboard objectives remove KnockbackType
 scoreboard objectives remove KnockbackTime
 scoreboard objectives remove MansionChoice
+scoreboard objectives remove MushroomTimer
 scoreboard objectives remove MelodyChoice
 scoreboard objectives remove Owner
 scoreboard objectives remove Path

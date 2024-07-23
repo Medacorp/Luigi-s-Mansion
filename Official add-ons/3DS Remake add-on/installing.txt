@@ -7,7 +7,7 @@ The 11 ghosts by yourself in the training room advancement is not granted for th
 This add-on will force a load order, the first world load with this add-on enabled while others are enabled too may take a while to load due to how this works. (There's nothing I can do to improve this.)
 
 == How to install ==
-1. Open the Luigi's Mansion world.
+1. Open the Luigi's Mansion world folder.
 2. Open the "datapacks" folder
 3. Drop the data pack folder (named "3DS Remake") in this folder
 

@@ -1,11 +1,8 @@
-execute unless score #cellar_shelf_content_trophies_1 Searched matches 1 run summon minecraft:marker ~ ~ ~ {Tags:["chance","nothing"],Duration:1}
-execute unless score #cellar_shelf_content_trophies_1 Searched matches 1 run summon minecraft:marker ~ ~ ~ {Tags:["chance","nothing"],Duration:1}
-execute unless score #cellar_shelf_content_trophies_1 Searched matches 1 run summon minecraft:marker ~ ~ ~ {Tags:["chance","nothing"],Duration:1}
-execute unless score #cellar_shelf_content_trophies_1 Searched matches 1 run summon minecraft:marker ~ ~ ~ {Tags:["chance","nothing"],Duration:1}
-execute unless score #cellar_shelf_content_trophies_1 Searched matches 1 run summon minecraft:marker ~ ~ ~ {Tags:["chance","money"],Duration:1}
-execute unless score #cellar_shelf_content_trophies_1 Searched matches 1 run tag @e[type=minecraft:marker,tag=chance,sort=random,limit=1] add selected
-execute if entity @e[type=minecraft:marker,tag=chance,tag=selected,tag=money] positioned 741 7 -52 run function 3ds_remake:room/hidden/cellar/shelf_3
-execute unless entity @e[type=minecraft:marker,tag=chance,tag=selected,tag=!nothing] positioned 742 7 -52 run function luigis_mansion:blocks/dust
-kill @e[type=minecraft:marker,tag=chance]
-scoreboard players set #cellar_shelf_content_trophies_1 Searched 1
+execute unless score #cellar_shelf_3 Searched matches 1 run data modify storage luigis_mansion:data furniture set value {room:58,tags:["drop_loot"]}
+execute unless score #cellar_shelf_3 Searched matches 1 unless data storage luigis_mansion:data current_state.current_data{money_spawned:["cellar_shelf_contents_trophies_1"]} run data modify storage luigis_mansion:data furniture.loot set value {name:"cellar_shelf_contents_trophies_1",contents:{luigis_mansion:{gold_coin:10}}}
+execute unless score #cellar_shelf_3 Searched matches 1 run function 3ds_remake:entities/furniture/loot_chance/d50_p15
+execute unless data storage luigis_mansion:data furniture.loot positioned 742 7 -52 run function luigis_mansion:blocks/dust
+execute if data storage luigis_mansion:data furniture.loot positioned 741 7 -52 run function luigis_mansion:spawn_furniture/room_clear_loot_dropper
+scoreboard players set #cellar_shelf_3 Searched 1
+data remove storage luigis_mansion:data furniture
 tag @e[x=742.5,y=6,z=-51.5,distance=..0.7,tag=ghost,tag=hidden] add spawn

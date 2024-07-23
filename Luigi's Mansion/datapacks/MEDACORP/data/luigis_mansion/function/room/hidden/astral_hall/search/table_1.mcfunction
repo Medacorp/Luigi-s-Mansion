@@ -1,11 +1,8 @@
-execute unless score #astral_hall_table_1 Searched matches 1 run summon minecraft:marker ~ ~ ~ {Tags:["chance","nothing"],Duration:1}
-execute unless score #astral_hall_table_1 Searched matches 1 run summon minecraft:marker ~ ~ ~ {Tags:["chance","nothing"],Duration:1}
-execute unless score #astral_hall_table_1 Searched matches 1 run summon minecraft:marker ~ ~ ~ {Tags:["chance","nothing"],Duration:1}
-execute unless score #astral_hall_table_1 Searched matches 1 run summon minecraft:marker ~ ~ ~ {Tags:["chance","nothing"],Duration:1}
-execute unless score #astral_hall_table_1 Searched matches 1 run summon minecraft:marker ~ ~ ~ {Tags:["chance","money"],Duration:1}
-execute unless score #astral_hall_table_1 Searched matches 1 run tag @e[type=minecraft:marker,tag=chance,sort=random,limit=1] add selected
-execute if entity @e[type=minecraft:marker,tag=chance,tag=selected,tag=money] positioned 663 20 90 run function luigis_mansion:room/hidden/astral_hall/table_1
-execute unless entity @e[type=minecraft:marker,tag=chance,tag=selected,tag=!nothing] positioned 662 20 90 run function luigis_mansion:blocks/dust
-kill @e[type=minecraft:marker,tag=chance]
+execute unless score #astral_hall_table_1 Searched matches 1 run data modify storage luigis_mansion:data furniture set value {room:45,tags:["drop_loot"]}
+execute unless score #astral_hall_table_1 Searched matches 1 unless data storage luigis_mansion:data current_state.current_data{money_spawned:["astral_hall_astral_cabinet_1"]} run data modify storage luigis_mansion:data furniture.loot set value {name:"astral_hall_astral_cabinet_1",contents:{luigis_mansion:{gold_coin:10}}}
+execute unless score #astral_hall_table_1 Searched matches 1 run function luigis_mansion:entities/furniture/loot_chance/d50_m10_p10
+execute unless data storage luigis_mansion:data furniture.loot positioned 662 20 90 run function luigis_mansion:blocks/dust
+execute if data storage luigis_mansion:data furniture.loot positioned 663 21 90 run function luigis_mansion:spawn_furniture/room_clear_loot_dropper
 scoreboard players set #astral_hall_table_1 Searched 1
+data remove storage luigis_mansion:data furniture
 tag @e[x=662.5,y=20,z=90.5,distance=..0.7,tag=ghost,tag=hidden] add spawn

@@ -1,5 +1,6 @@
 execute if data storage luigis_mansion:data dialogs[{name:{namespace:"luigis_mansion",id:"twins"},progress:60}] run tag @s add next_dialog_line
 execute if data storage luigis_mansion:data dialogs[{name:{namespace:"luigis_mansion",id:"twins"},progress:60}] run data modify storage luigis_mansion:data dialogs[{name:{namespace:"luigis_mansion",id:"twins"},progress:60}].progress set value 66
+execute unless score #the_twins_room Wave matches 5.. run tag @s remove portrait_ghost_spawned
 execute if score #the_twins_room Wave matches 3 run teleport @s 739 20 44 -90 0
 execute if score #the_twins_room Wave matches 3 if score #players Totals matches 1 run tellraw @a[scores={Room=49}] {"type":"translatable","translate":"chat.type.text","with":[{"type":"translatable","translate":"luigis_mansion:entity.henry","color":"green"},{"type":"translatable","translate":"luigis_mansion:dialog.twins.game.1"}]}
 execute if score #the_twins_room Wave matches 3 if score #players Totals matches 2.. run tellraw @a[scores={Room=49}] {"type":"translatable","translate":"chat.type.text","with":[{"type":"translatable","translate":"luigis_mansion:entity.henry","color":"green"},{"type":"translatable","translate":"luigis_mansion:dialog.twins.game.1.more"}]}

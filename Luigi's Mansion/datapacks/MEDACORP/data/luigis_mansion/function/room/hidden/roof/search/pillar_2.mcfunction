@@ -1,11 +1,6 @@
-execute unless score #roof_pillar_2 Searched matches 1 run summon minecraft:marker ~ ~ ~ {Tags:["chance","nothing"],Duration:1}
-execute unless score #roof_pillar_2 Searched matches 1 run summon minecraft:marker ~ ~ ~ {Tags:["chance","nothing"],Duration:1}
-execute unless score #roof_pillar_2 Searched matches 1 run summon minecraft:marker ~ ~ ~ {Tags:["chance","nothing"],Duration:1}
-execute unless score #roof_pillar_2 Searched matches 1 run summon minecraft:marker ~ ~ ~ {Tags:["chance","small_heart"],Duration:1}
-execute unless score #roof_pillar_2 Searched matches 1 run summon minecraft:marker ~ ~ ~ {Tags:["chance","nothing"],Duration:1}
-execute unless score #roof_pillar_2 Searched matches 1 run tag @e[type=minecraft:marker,tag=chance,sort=random,limit=1] add selected
-execute if entity @e[type=minecraft:marker,tag=chance,tag=selected,tag=small_heart] run data modify storage luigis_mansion:data entity set value {room:63}
-execute if entity @e[type=minecraft:marker,tag=chance,tag=selected,tag=small_heart] positioned 702 132 -26 run function luigis_mansion:spawn_entities/item/room_search/small_heart
-execute unless entity @e[type=minecraft:marker,tag=chance,tag=selected,tag=!nothing] positioned 704 132 -26 run function luigis_mansion:blocks/dust
-kill @e[type=minecraft:marker,tag=chance]
+execute unless score #roof_pillar_2 Searched matches 1 run data modify storage luigis_mansion:data furniture set value {room:63,tags:["drop_loot"]}
+execute unless score #roof_pillar_2 Searched matches 1 run function luigis_mansion:entities/furniture/loot_chance/h10_p10
+execute unless data storage luigis_mansion:data furniture.loot positioned 702 132 -26 run function luigis_mansion:blocks/dust
+execute if data storage luigis_mansion:data furniture.loot positioned 704 132 -26 run function luigis_mansion:spawn_furniture/room_clear_loot_dropper
 scoreboard players set #roof_pillar_2 Searched 1
+data remove storage luigis_mansion:data furniture

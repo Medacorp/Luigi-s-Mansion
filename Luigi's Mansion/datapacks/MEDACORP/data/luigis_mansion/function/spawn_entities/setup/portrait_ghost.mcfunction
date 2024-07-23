@@ -3,6 +3,6 @@ function luigis_mansion:spawn_entities/setup/max_health
 function luigis_mansion:spawn_entities/setup/flee
 function luigis_mansion:spawn_entities/setup/vanish_time
 function luigis_mansion:spawn_entities/setup/drop_pearls
-function luigis_mansion:spawn_entities/setup/drop_poison_mushrooms
+function luigis_mansion:spawn_entities/setup/drop_timer_loot
 function luigis_mansion:spawn_entities/setup/affected_by
 function luigis_mansion:spawn_entities/setup/mansion_behavior

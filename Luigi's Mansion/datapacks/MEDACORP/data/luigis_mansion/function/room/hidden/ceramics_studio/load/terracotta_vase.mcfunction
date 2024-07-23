@@ -1,6 +1,4 @@
 data modify storage luigis_mansion:data furniture set value {room:65,tags:["jarvis_fight_vase","jarvis_game_vase"],searchable:["interact","vacuum"],can_hide_boo:1b,shake_animation:["interact","vacuum"],sound:{namespace:"luigis_mansion",id:"ceramic"},scan_message:'{"type":"translatable","translate":"luigis_mansion:message.player.scan_furniture.8"}'}
-execute store result score #temp Variant run random value 1..5
-execute if score #temp Variant matches 3 run data modify storage luigis_mansion:data furniture.loot set value {contents:{luigis_mansion:{poison_mushroom:1}}}
-execute if score #temp Variant matches 5 unless data storage luigis_mansion:data current_state.current_data{money_spawned:["ceramics_studio_terracotta_vase"]} run data modify storage luigis_mansion:data furniture.loot set value {name:"ceramics_studio_terracotta_vase",contents:{luigis_mansion:{gold_coin:5}}}
-scoreboard players reset #temp Variant
+execute unless data storage luigis_mansion:data current_state.current_data{money_spawned:["ceramics_studio_terracotta_vase"]} run data modify storage luigis_mansion:data furniture.loot set value {name:"ceramics_studio_terracotta_vase",contents:{luigis_mansion:{gold_coin:5}}}
+function luigis_mansion:entities/furniture/loot_chance/d50_m10_p10
 execute positioned 703 29 -58 rotated -90 0 run function luigis_mansion:spawn_furniture/terracotta_vase

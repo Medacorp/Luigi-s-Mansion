@@ -1,11 +1,8 @@
-execute unless score #hidden_room_lamp Searched matches 1 run summon minecraft:marker ~ ~ ~ {Tags:["chance","nothing"],Duration:1}
-execute unless score #hidden_room_lamp Searched matches 1 run summon minecraft:marker ~ ~ ~ {Tags:["chance","nothing"],Duration:1}
-execute unless score #hidden_room_lamp Searched matches 1 run summon minecraft:marker ~ ~ ~ {Tags:["chance","nothing"],Duration:1}
-execute unless score #hidden_room_lamp Searched matches 1 run summon minecraft:marker ~ ~ ~ {Tags:["chance","nothing"],Duration:1}
-execute unless score #hidden_room_lamp Searched matches 1 run summon minecraft:marker ~ ~ ~ {Tags:["chance","money"],Duration:1}
-execute unless score #hidden_room_lamp Searched matches 1 run tag @e[type=minecraft:marker,tag=chance,sort=random,limit=1] add selected
-execute if entity @e[type=minecraft:marker,tag=chance,tag=selected,tag=money] positioned 744.0 15 40.0 run function 3ds_remake:room/hidden/hidden_room/lamp
-execute unless entity @e[type=minecraft:marker,tag=chance,tag=selected,tag=!nothing] positioned 744.0 16 40.0 run function luigis_mansion:blocks/dust
-execute unless entity @e[type=minecraft:marker,tag=chance,tag=selected,tag=!nothing] positioned 755.0 16 40.0 run function luigis_mansion:blocks/dust_no_sound
-kill @e[type=minecraft:marker,tag=chance]
+execute unless score #hidden_room_lamp Searched matches 1 run data modify storage luigis_mansion:data furniture set value {room:24,tags:["drop_loot"]}
+execute unless score #hidden_room_lamp Searched matches 1 unless data storage luigis_mansion:data current_state.current_data{money_spawned:["hidden_room_bejeweled_chandelier"]} run data modify storage luigis_mansion:data furniture.loot set value {name:"hidden_room_bejeweled_chandelier",contents:{luigis_mansion:{bill:20}}}
+execute unless score #hidden_room_lamp Searched matches 1 run function 3ds_remake:entities/furniture/loot_chance/d50_p15
+execute unless data storage luigis_mansion:data furniture.loot positioned 744.0 16 40.0 run function luigis_mansion:blocks/dust
+execute unless data storage luigis_mansion:data furniture.loot positioned 755.0 16 40.0 run function luigis_mansion:blocks/dust_no_sound
+execute if data storage luigis_mansion:data furniture.loot positioned 744.0 15 40.0 run function luigis_mansion:spawn_furniture/room_clear_loot_dropper
 scoreboard players set #hidden_room_lamp Searched 1
+data remove storage luigis_mansion:data furniture

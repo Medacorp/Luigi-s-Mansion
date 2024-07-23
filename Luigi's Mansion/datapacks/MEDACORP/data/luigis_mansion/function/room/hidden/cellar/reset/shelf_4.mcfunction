@@ -1,1 +1,2 @@
-scoreboard players reset #cellar_shelf_content_vases_2
+scoreboard players reset #cellar_shelf_4
+scoreboard players reset #cellar_shelf_contents_vases_2

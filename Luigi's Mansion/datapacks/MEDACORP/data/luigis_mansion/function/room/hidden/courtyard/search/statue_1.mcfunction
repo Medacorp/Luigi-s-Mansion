@@ -1,7 +1,5 @@
-execute unless score #courtyard_statue_1 Searched matches 1 run summon minecraft:marker ~ ~ ~ {Tags:["chance","small_heart"],Duration:1}
-execute unless score #courtyard_statue_1 Searched matches 1 run tag @e[type=minecraft:marker,tag=chance,sort=random,limit=1] add selected
-execute if entity @e[type=minecraft:marker,tag=chance,tag=selected,tag=small_heart] run data modify storage luigis_mansion:data entity set value {room:30}
-execute if entity @e[type=minecraft:marker,tag=chance,tag=selected,tag=small_heart] positioned 648 106 -9 run function luigis_mansion:spawn_entities/item/room_search/small_heart
-execute unless entity @e[type=minecraft:marker,tag=chance,tag=selected,tag=!nothing] positioned 648 104 -10 run function luigis_mansion:blocks/dust
-kill @e[type=minecraft:marker,tag=chance]
+execute unless score #courtyard_statue_1 Searched matches 1 run data modify storage luigis_mansion:data furniture set value {room:30,tags:["drop_loot"],loot:{contents:{luigis_mansion:{small_heart:[{tags:["random_turn_on_bounce"]}]}}}}
+execute unless data storage luigis_mansion:data furniture.loot positioned 648 104 -10 run function luigis_mansion:blocks/dust
+execute if data storage luigis_mansion:data furniture.loot positioned 648 106 -9 run function luigis_mansion:spawn_furniture/room_clear_loot_dropper
 scoreboard players set #courtyard_statue_1 Searched 1
+data remove storage luigis_mansion:data furniture

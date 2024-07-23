@@ -11,9 +11,8 @@ execute at @s facing entity @a[tag=killer,limit=1] feet run teleport @s ~ ~ ~ ~-
 execute at @s[scores={DeathTime=1..}] facing entity @a[tag=killer,limit=1] feet run teleport @s ^ ^ ^0.4
 tag @s[scores={DeathTime=1..}] add dying
 
-execute if entity @s[scores={DeathTime=1}] if data entity @s data.loot{drop_at_0:1b} run function luigis_mansion:other/drop_loot
+execute if entity @s[scores={DeathTime=1},tag=!dropped_loot_at_0] run function luigis_mansion:room/loot_chance_ghost with storage luigis_mansion:data current_state.current_data.mansion_id
 
-execute at @s[scores={DeathTime=2,Health=-2147483648..},tag=!dont_drop_heart,tag=!dead,tag=!remove_from_existence] unless entity @s[scores={Room=..-1}] if entity @a[tag=killer,limit=1,scores={GhostCount=2..}] if score #heart_money_count Selected matches 1.. run function luigis_mansion:entities/ghost/capture_2_drop_heart
 execute at @s[scores={DeathTime=2..,Room=1..,Health=-2147483648..},tag=!dead,tag=!remove_from_existence] if entity @a[tag=killer,distance=..0.7] run function luigis_mansion:entities/ghost/capture with entity @a[tag=killer,limit=1]
 execute if entity @s[scores={DeathTime=1,Room=1..},tag=!dead,tag=!remove_from_existence] unless entity @s[scores={Health=-2147483648..}] run function luigis_mansion:entities/ghost/capture with entity @a[tag=killer,limit=1]
 execute at @s[scores={DeathTime=2..,Room=-2,Health=-2147483648..},tag=!dead,tag=!remove_from_existence] if entity @a[tag=killer,distance=..0.7] run scoreboard players add #training_room TrainingRoomScore 1

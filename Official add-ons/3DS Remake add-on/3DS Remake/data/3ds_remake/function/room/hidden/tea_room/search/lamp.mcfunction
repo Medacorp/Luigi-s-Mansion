@@ -1,12 +1,7 @@
-execute unless score #tea_room_lamp Searched matches 1 run summon minecraft:marker ~ ~ ~ {Tags:["chance","nothing"],Duration:1}
-execute unless score #tea_room_lamp Searched matches 1 run summon minecraft:marker ~ ~ ~ {Tags:["chance","nothing"],Duration:1}
-execute unless score #tea_room_lamp Searched matches 1 run summon minecraft:marker ~ ~ ~ {Tags:["chance","nothing"],Duration:1}
-execute unless score #tea_room_lamp Searched matches 1 run summon minecraft:marker ~ ~ ~ {Tags:["chance","poison_mushroom"],Duration:1}
-execute unless score #tea_room_lamp Searched matches 1 run summon minecraft:marker ~ ~ ~ {Tags:["chance","money"],Duration:1}
-execute unless score #tea_room_lamp Searched matches 1 run tag @e[type=minecraft:marker,tag=chance,sort=random,limit=1] add selected
-execute if entity @e[type=minecraft:marker,tag=chance,tag=selected,tag=poison_mushroom] run data modify storage luigis_mansion:data entity set value {room:34}
-execute if entity @e[type=minecraft:marker,tag=chance,tag=selected,tag=poison_mushroom] positioned 643.0 24 -45.0 run function luigis_mansion:spawn_entities/item/room_search/poison_mushroom
-execute if entity @e[type=minecraft:marker,tag=chance,tag=selected,tag=money] positioned 643.0 24 -45.0 run function 3ds_remake:room/hidden/tea_room/lamp
-execute unless entity @e[type=minecraft:marker,tag=chance,tag=selected,tag=!nothing] positioned 643.0 25 -45.0 run function luigis_mansion:blocks/dust
-kill @e[type=minecraft:marker,tag=chance]
+execute unless score #tea_room_lamp Searched matches 1 run data modify storage luigis_mansion:data furniture set value {room:34,tags:["drop_loot"]}
+execute unless score #tea_room_lamp Searched matches 1 unless data storage luigis_mansion:data current_state.current_data{money_spawned:["tea_room_crystal_chandelier"]} run data modify storage luigis_mansion:data furniture.loot set value {name:"tea_room_crystal_chandelier",contents:{luigis_mansion:{bill:15}}}
+execute unless score #tea_room_lamp Searched matches 1 run function 3ds_remake:entities/furniture/loot_chance/d50_p15
+execute unless data storage luigis_mansion:data furniture.loot positioned 643.0 25 -45.0 run function luigis_mansion:blocks/dust
+execute if data storage luigis_mansion:data furniture.loot positioned 643.0 24 -45.0 run function luigis_mansion:spawn_furniture/room_clear_loot_dropper
 scoreboard players set #tea_room_lamp Searched 1
+data remove storage luigis_mansion:data furniture

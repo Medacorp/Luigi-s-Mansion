@@ -1,10 +1,7 @@
-execute unless score #observatory_table Searched matches 1 run summon minecraft:marker ~ ~ ~ {Tags:["chance","nothing"],Duration:1}
-execute unless score #observatory_table Searched matches 1 run summon minecraft:marker ~ ~ ~ {Tags:["chance","nothing"],Duration:1}
-execute unless score #observatory_table Searched matches 1 run summon minecraft:marker ~ ~ ~ {Tags:["chance","nothing"],Duration:1}
-execute unless score #observatory_table Searched matches 1 run summon minecraft:marker ~ ~ ~ {Tags:["chance","nothing"],Duration:1}
-execute unless score #observatory_table Searched matches 1 run summon minecraft:marker ~ ~ ~ {Tags:["chance","money"],Duration:1}
-execute unless score #observatory_table Searched matches 1 run tag @e[type=minecraft:marker,tag=chance,sort=random,limit=1] add selected
-execute if entity @e[type=minecraft:marker,tag=chance,tag=selected,tag=money] positioned 641 21 -75.0 run function luigis_mansion:room/normal/observatory/table
-execute unless entity @e[type=minecraft:marker,tag=chance,tag=selected,tag=!nothing] positioned 641 20 -75.0 run function luigis_mansion:blocks/dust
-kill @e[type=minecraft:marker,tag=chance]
-scoreboard players set #observatory_table Searched 1
+execute unless score #anteroom_lamp_1 Searched matches 1 run data modify storage luigis_mansion:data furniture set value {room:46,tags:["drop_loot"]}
+execute unless score #anteroom_lamp_1 Searched matches 1 unless data storage luigis_mansion:data current_state.current_data{money_spawned:["observatory_cabinet_mounted_planet"]} run data modify storage luigis_mansion:data furniture.loot set value {name:"observatory_cabinet_mounted_planet",contents:{luigis_mansion:{gold_bar:1}}}
+execute unless score #anteroom_lamp_1 Searched matches 1 run function luigis_mansion:entities/furniture/loot_chance/d50_m10_p5
+execute unless data storage luigis_mansion:data furniture.loot positioned 641 20 -75.0 run function luigis_mansion:blocks/dust
+execute if data storage luigis_mansion:data furniture.loot positioned 641 21 -75.0 run function luigis_mansion:spawn_furniture/room_clear_loot_dropper
+scoreboard players set #anteroom_lamp_1 Searched 1
+data remove storage luigis_mansion:data furniture

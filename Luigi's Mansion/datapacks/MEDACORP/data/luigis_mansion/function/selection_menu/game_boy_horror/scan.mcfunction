@@ -3,7 +3,7 @@ tag @s add scanning_player
 execute anchored eyes run summon minecraft:marker ^ ^ ^ {Tags:["interact","this_interact","gameboy_horror_scan"],Duration:1}
 scoreboard players operation #temp Room = @s Room
 execute unless entity @s[scores={WarpTime=1..}] as @e[type=minecraft:marker,tag=this_interact,limit=1] positioned as @s positioned ^ ^ ^0.5 run function luigis_mansion:selection_menu/game_boy_horror/scan/target
-execute if entity @e[tag=warp,tag=this_interact,limit=1] run tag @s add warp
+execute if entity @e[tag=warp,tag=this_interact,limit=1] run tag @s[scores={Room=1..}] add warp
 kill @e[type=minecraft:marker,tag=this_interact,limit=1]
 execute unless entity @s[scores={WarpTime=1..}] run playsound luigis_mansion:item.game_boy_horror.scan player @a[tag=same_room] ~ ~ ~ 1
 tag @s remove scanning_player

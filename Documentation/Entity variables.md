@@ -32,13 +32,15 @@ entity:{
     second_flee_damage:X, //How much damage this ghost can take in one suction before it enters its second flee state, escaping 2.5 seconds later. If absent, never enters second flee state.
     affected_by:["<method>"], //The methods this portrait ghost is affected by aside from vacuuming. Allowed values: dust, fire, water, ice. Default = none.
     drop_pearls:0b, //Whether this portrait ghost should drop pearls. Default = 1b.
-    drop_poison_mushrooms:0b, //Whether this portrait ghost should drop poison mushrooms. Default = 1b.
+    drop_timer_loot:0b, //Whether this portrait ghost should drop loot based on how long it is being vacuumed. Default = 1b.
     training_room_score:X, //Score granted to the one who reeled in the ghost in the training room. Default = 0.
     
     //Ghost default overwrites
     health:X, //Health at spawn. Only applies to ghost types that have health.
     loot:{ //Loot this ghost drops upon defeat.
-        drop_at_0:1b, //When set, spawns the loot the moment health drops to 0, otherwise spawns it the moment the ghost is reeled in. Only applies to ghost types that have health.
+        drop_at_0:{ //Spawns the provided loot contents the moment health drops to 0, the other loot contents spawn the moment the ghost is captured. Mansions can modify this loot with their "loot_chances_ghost" function. Only applies to ghost types that have health.
+            //See loot documentation for other variables.
+        },
         //See loot documentation for other variables.
     },
     speed:X, //The movement speed of the ghost.

@@ -1,12 +1,7 @@
-execute unless score #mirror_room_lamp_1 Searched matches 1 run summon minecraft:marker ~ ~ ~ {Tags:["chance","nothing"],Duration:1}
-execute unless score #mirror_room_lamp_1 Searched matches 1 run summon minecraft:marker ~ ~ ~ {Tags:["chance","nothing"],Duration:1}
-execute unless score #mirror_room_lamp_1 Searched matches 1 run summon minecraft:marker ~ ~ ~ {Tags:["chance","nothing"],Duration:1}
-execute unless score #mirror_room_lamp_1 Searched matches 1 run summon minecraft:marker ~ ~ ~ {Tags:["chance","poison_mushroom"],Duration:1}
-execute unless score #mirror_room_lamp_1 Searched matches 1 run summon minecraft:marker ~ ~ ~ {Tags:["chance","nothing"],Duration:1}
-execute unless score #mirror_room_lamp_1 Searched matches 1 run tag @e[type=minecraft:marker,tag=chance,sort=random,limit=1] add selected
-execute if entity @e[type=minecraft:marker,tag=chance,tag=selected,tag=poison_mushroom] run data modify storage luigis_mansion:data entity set value {room:21}
-execute if entity @e[type=minecraft:marker,tag=chance,tag=selected,tag=poison_mushroom] positioned 741 14 -48 run function luigis_mansion:spawn_entities/item/room_search/poison_mushroom
-execute unless entity @e[type=minecraft:marker,tag=chance,tag=selected,tag=!nothing] positioned 741 15 -48 run function luigis_mansion:blocks/dust
-execute unless entity @e[type=minecraft:marker,tag=chance,tag=selected,tag=!nothing] positioned 729 15 -48 run function luigis_mansion:blocks/dust_no_sound
-kill @e[type=minecraft:marker,tag=chance]
+execute unless score #mirror_room_lamp_1 Searched matches 1 run data modify storage luigis_mansion:data furniture set value {room:21,tags:["drop_loot"]}
+execute unless score #mirror_room_lamp_1 Searched matches 1 run function 3ds_remake:entities/furniture/loot_chance/p15
+execute unless data storage luigis_mansion:data furniture.loot positioned 741 15 -48 run function luigis_mansion:blocks/dust
+execute unless data storage luigis_mansion:data furniture.loot positioned 729 15 -48 run function luigis_mansion:blocks/dust_no_sound
+execute if data storage luigis_mansion:data furniture.loot positioned 741 14 -48 run function luigis_mansion:spawn_furniture/room_clear_loot_dropper
 scoreboard players set #mirror_room_lamp_1 Searched 1
+data remove storage luigis_mansion:data furniture

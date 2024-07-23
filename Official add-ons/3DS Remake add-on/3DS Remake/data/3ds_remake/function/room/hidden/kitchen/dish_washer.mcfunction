@@ -1,5 +1,0 @@
-execute unless data storage luigis_mansion:data current_state.current_data.obtained_items{marios_hat:1b} unless entity @e[type=minecraft:armor_stand,tag=mario_item,tag=hat,limit=1] run scoreboard players set #temp Searched 1
-execute if score #temp Searched matches 1 run data modify storage luigis_mansion:data entity set value {room:27}
-execute if score #temp Searched matches 1 run function luigis_mansion:spawn_entities/item/marios_hat
-execute unless score #temp Searched matches 1 run tag @e[tag=selected] add nothing
-scoreboard players reset #temp Searched

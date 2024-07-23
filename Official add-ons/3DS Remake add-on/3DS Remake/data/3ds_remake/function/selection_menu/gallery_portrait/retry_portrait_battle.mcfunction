@@ -1,4 +1,6 @@
 data remove storage luigis_mansion:data dialogs[{name:{namespace:"3ds_remake",id:"portrait_battle/clear"}}]
+tag @s remove portrait_ghost_spawned
+tag @s remove catching_the_portrait_ghost
 
 data modify storage luigis_mansion:data selected_option.portrait_battle_data.mansion_namespace set from storage luigis_mansion:data current_state.current_data.mansion_id.namespace
 data modify storage luigis_mansion:data selected_option.portrait_battle_data.mansion_id set from storage luigis_mansion:data current_state.current_data.mansion_id.id

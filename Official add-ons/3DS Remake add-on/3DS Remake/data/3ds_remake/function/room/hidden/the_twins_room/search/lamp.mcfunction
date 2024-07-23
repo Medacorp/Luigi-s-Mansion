@@ -1,12 +1,7 @@
-execute unless score #the_twins_room_lamp Searched matches 1 run summon minecraft:marker ~ ~ ~ {Tags:["chance","nothing"],Duration:1}
-execute unless score #the_twins_room_lamp Searched matches 1 run summon minecraft:marker ~ ~ ~ {Tags:["chance","nothing"],Duration:1}
-execute unless score #the_twins_room_lamp Searched matches 1 run summon minecraft:marker ~ ~ ~ {Tags:["chance","nothing"],Duration:1}
-execute unless score #the_twins_room_lamp Searched matches 1 run summon minecraft:marker ~ ~ ~ {Tags:["chance","poison_mushroom"],Duration:1}
-execute unless score #the_twins_room_lamp Searched matches 1 run summon minecraft:marker ~ ~ ~ {Tags:["chance","money"],Duration:1}
-execute unless score #the_twins_room_lamp Searched matches 1 run tag @e[type=minecraft:marker,tag=chance,sort=random,limit=1] add selected
-execute if entity @e[type=minecraft:marker,tag=chance,tag=selected,tag=poison_mushroom] run data modify storage luigis_mansion:data entity set value {room:49}
-execute if entity @e[type=minecraft:marker,tag=chance,tag=selected,tag=poison_mushroom] positioned 743 24 40 run function luigis_mansion:spawn_entities/item/room_search/poison_mushroom
-execute if entity @e[type=minecraft:marker,tag=chance,tag=selected,tag=money] run function 3ds_remake:room/hidden/the_twins_room/lamp
-execute unless entity @e[type=minecraft:marker,tag=chance,tag=selected,tag=!nothing] positioned 743 25 40 run function luigis_mansion:blocks/dust
-kill @e[type=minecraft:marker,tag=chance]
+execute unless score #the_twins_room_lamp Searched matches 1 run data modify storage luigis_mansion:data furniture set value {room:49,tags:["drop_loot"]}
+execute unless score #the_twins_room_lamp Searched matches 1 unless data storage luigis_mansion:data current_state.current_data{money_spawned:["the_twins_room_star_lamp"]} run data modify storage luigis_mansion:data furniture.loot set value {name:"the_twins_room_star_lamp",contents:{luigis_mansion:{gold_coin:5,bill:5}}}
+execute unless score #the_twins_room_lamp Searched matches 1 run function 3ds_remake:entities/furniture/loot_chance/d50_p15
+execute unless data storage luigis_mansion:data furniture.loot positioned 743 25 40 run function luigis_mansion:blocks/dust
+execute if data storage luigis_mansion:data furniture.loot positioned 743 24 40 run function luigis_mansion:spawn_furniture/room_clear_loot_dropper
 scoreboard players set #the_twins_room_lamp Searched 1
+data remove storage luigis_mansion:data furniture

@@ -114,6 +114,7 @@ scoreboard objectives add LightY dummy
 scoreboard objectives add LightZ dummy
 scoreboard objectives add Loaded dummy
 scoreboard objectives add LoadedChunks dummy
+scoreboard objectives add LootTimer dummy
 scoreboard objectives add MapSound dummy
 scoreboard objectives add MapZoomTime dummy
 scoreboard objectives add MaxHealth dummy
@@ -130,7 +131,6 @@ scoreboard objectives add ModelRotationY dummy
 scoreboard objectives add Money dummy
 scoreboard objectives add Move dummy
 scoreboard objectives add MoveFlee dummy
-scoreboard objectives add MushroomTimer dummy
 scoreboard objectives add Music dummy
 scoreboard objectives add MusicGroup dummy
 scoreboard objectives add MusicType dummy

@@ -192,11 +192,9 @@ luigis_mansion:windowed_2           | A second windowed design, lighter of color
 
 Gallery numbers:
 
-The 3DS Remake Values column refers to the SelectedFrame score.
-
 ```
-Numbers shown | 3DS Remake Values | Add-on             | Namespace      | Data pack name
-1-23          | 1-23 and 25       | vanilla            | luigis_mansion | "file/MEDACORP"
-              | 24 and 26         | 3ds_remake         | 3ds_remake     | "file/3DS Remake"
-              | 27                | trill_tower        | trill_tower    | "file/Thrill Tower"
+Numbers shown | Add-on      | Namespace      | Data pack name
+1-23          | vanilla     | luigis_mansion | "file/MEDACORP"
+              | 3ds_remake  | 3ds_remake     | "file/3DS Remake"
+              | trill_tower | trill_tower    | "file/Thrill Tower"
 ```

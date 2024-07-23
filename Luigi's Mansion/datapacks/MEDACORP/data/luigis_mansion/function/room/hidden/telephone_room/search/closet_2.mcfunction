@@ -1,11 +1,8 @@
-execute unless score #telephone_room_closet_2 Searched matches 1 run summon minecraft:marker ~ ~ ~ {Tags:["chance","nothing"],Duration:1}
-execute unless score #telephone_room_closet_2 Searched matches 1 run summon minecraft:marker ~ ~ ~ {Tags:["chance","nothing"],Duration:1}
-execute unless score #telephone_room_closet_2 Searched matches 1 run summon minecraft:marker ~ ~ ~ {Tags:["chance","nothing"],Duration:1}
-execute unless score #telephone_room_closet_2 Searched matches 1 run summon minecraft:marker ~ ~ ~ {Tags:["chance","nothing"],Duration:1}
-execute unless score #telephone_room_closet_2 Searched matches 1 run summon minecraft:marker ~ ~ ~ {Tags:["chance","money"],Duration:1}
-execute unless score #telephone_room_closet_2 Searched matches 1 run tag @e[type=minecraft:marker,tag=chance,sort=random,limit=1] add selected
-execute if entity @e[type=minecraft:marker,tag=chance,tag=selected,tag=money] positioned 742.0 29 12 run function luigis_mansion:room/hidden/telephone_room/closet_2
-execute unless entity @e[type=minecraft:marker,tag=chance,tag=selected,tag=!nothing] positioned 742.0 29 13 run function luigis_mansion:blocks/dust
-kill @e[type=minecraft:marker,tag=chance]
+execute unless score #telephone_room_closet_2 Searched matches 1 run data modify storage luigis_mansion:data furniture set value {room:56,tags:["drop_loot"]}
+execute unless score #telephone_room_closet_2 Searched matches 1 unless data storage luigis_mansion:data current_state.current_data{money_spawned:["telephone_room_wooden_cabinet_2"]} run data modify storage luigis_mansion:data furniture.loot set value {name:"telephone_room_wooden_cabinet_2",contents:{luigis_mansion:{gold_coin:20}}}
+execute unless score #telephone_room_closet_2 Searched matches 1 run function luigis_mansion:entities/furniture/loot_chance/d50_m10_p10
+execute unless data storage luigis_mansion:data furniture.loot positioned 742.0 29 13 run function luigis_mansion:blocks/dust
+execute if data storage luigis_mansion:data furniture.loot positioned 742.0 29 12 run function luigis_mansion:spawn_furniture/room_clear_loot_dropper
 scoreboard players set #telephone_room_closet_2 Searched 1
+data remove storage luigis_mansion:data furniture
 tag @e[x=742.5,y=29,z=13.5,distance=..0.7,tag=ghost,tag=hidden] add spawn

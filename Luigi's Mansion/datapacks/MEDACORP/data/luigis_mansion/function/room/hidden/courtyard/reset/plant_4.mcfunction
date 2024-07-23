@@ -1,1 +1,1 @@
-scoreboard players reset #courtyard_stone_bowl_potted_fern_4
+scoreboard players reset #courtyard_plant_4

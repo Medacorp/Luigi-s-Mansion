@@ -1,7 +1,7 @@
-execute unless score #sitting_room_plant Searched matches 1 run summon minecraft:marker ~ ~ ~ {Tags:["chance","money"],Duration:1}
-execute unless score #sitting_room_plant Searched matches 1 run tag @e[type=minecraft:marker,tag=chance,sort=random,limit=1] add selected
-execute if entity @e[type=minecraft:marker,tag=chance,tag=selected,tag=money] positioned 738 23 -22 run function 3ds_remake:room/hidden/sitting_room/plant
-execute unless entity @e[type=minecraft:marker,tag=chance,tag=selected,tag=!nothing] positioned 737 20 -21 run function luigis_mansion:blocks/dust
-kill @e[type=minecraft:marker,tag=chance]
+execute unless score #sitting_room_plant Searched matches 1 run data modify storage luigis_mansion:data furniture set value {room:69,tags:["drop_loot"]}
+execute unless score #sitting_room_plant Searched matches 1 unless data storage luigis_mansion:data current_state.current_data{money_spawned:["sitting_room_column_mounted_blue_potted_fern"]} run data modify storage luigis_mansion:data furniture.loot set value {name:"sitting_room_column_mounted_blue_potted_fern",contents:{luigis_mansion:{gold_bar:1}}}
+execute unless data storage luigis_mansion:data furniture.loot positioned 737 20 -21 run function luigis_mansion:blocks/dust
+execute if data storage luigis_mansion:data furniture.loot positioned 738 23 -22 run function luigis_mansion:spawn_furniture/room_clear_loot_dropper
 scoreboard players set #sitting_room_plant Searched 1
+data remove storage luigis_mansion:data furniture
 function 3ds_remake:selection_menu/gallery_trophy/complete/beginner/task_5

@@ -1,1 +1,1 @@
-scoreboard players reset #cellar_shelf_content_trophies_1
+scoreboard players reset #cellar_shelf_3
