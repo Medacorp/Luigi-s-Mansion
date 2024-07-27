@@ -1,5 +1,5 @@
 teleport @s ~ ~-0.1 ~
-execute unless block ~ ~0.2 ~ #luigis_mansion:ghosts_ignore run tag @s add move_up
+execute unless block ~ ~-0.2 ~ #luigis_mansion:ghosts_ignore run tag @s add move_up
 execute store result score @s[tag=move_up] HomeY run data get entity @s Pos[1] 100
 execute store result score @s[tag=move_up] HomeRotation run data get entity @s Rotation[0]
 execute store result entity @s Rotation[0] float 1 run scoreboard players get @s HomeRotation

@@ -10,7 +10,7 @@ execute if score #dialog Dialog matches ..1 run scoreboard players add #dialog D
 execute if score #dialog Dialog matches 4.. if entity @a[tag=same_room,tag=skip_dialog,limit=1] run scoreboard players set #dialog Dialog 48
 execute if score #dialog Dialog matches ..2 if entity @a[tag=same_room,tag=skip_dialog,limit=1] run scoreboard players set #dialog Dialog 3
 execute if score #dialog Dialog matches ..47 unless score #dialog Dialog matches 3 unless score #dialog Dialog matches 26 unless score #dialog Dialog matches 48 as @a[tag=same_room,tag=!spectator] unless entity @s[tag=dialog_menu,tag=!dialog_choice_menu] unless entity @s[tag=using_selection_menu,tag=!dialog_menu] run function luigis_mansion:selection_menu/dialog/original_menu
-execute if score #dialog Dialog matches 3 as @a[tag=same_room,tag=dialog_choice_menu] unless entity @s[tag=using_selection_menu,tag=!dialog_menu] run function luigis_mansion:selection_menu/dialog/choice/madame_clairvoya
+execute if score #dialog Dialog matches 3 as @a[tag=same_room,tag=!spectator,tag=!dialog_choice_menu] unless entity @s[tag=using_selection_menu,tag=!dialog_menu] run function luigis_mansion:selection_menu/dialog/choice/madame_clairvoya
 execute if score #dialog Dialog matches 26 as @a[tag=same_room,tag=dialog_menu] run function luigis_mansion:selection_menu/dialog/exit
 execute if score #dialog Dialog matches 48.. as @a[tag=same_room,tag=dialog_menu] run function luigis_mansion:selection_menu/dialog/exit
 
@@ -44,3 +44,5 @@ execute if score #dialog Dialog matches 48 run scoreboard players set #dialog Di
 execute if score #dialog Dialog matches -1 run data remove entity @e[tag=same_room,nbt={data:{entity:{namespace:"luigis_mansion",id:"madame_clairvoya"}}},limit=1] data.animation
 execute if score #dialog Dialog matches -1 as @a[tag=same_room,tag=!spectator] run function luigis_mansion:entities/player/animation/set/none
 execute if score #dialog Dialog matches -1 as @a[tag=same_room] run function luigis_mansion:other/music/set/silence
+tag @a[tag=same_room] remove select_dialog_branch_yes
+tag @a[tag=same_room] remove select_dialog_branch_no

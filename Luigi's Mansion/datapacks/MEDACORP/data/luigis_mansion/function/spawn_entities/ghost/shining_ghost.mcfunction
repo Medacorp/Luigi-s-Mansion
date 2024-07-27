@@ -9,8 +9,8 @@ execute as @e[tag=this_entity,limit=1] store result score @s HomeY run data get 
 execute as @e[tag=this_entity,limit=1] store result score @s HomeZ run data get entity @s Pos[2] 100
 data modify entity @e[tag=this_entity,limit=1] data.loot set from storage luigis_mansion:data current_state.current_data.ghosts.luigis_mansion.shining_ghost.loot
 data modify entity @e[tag=this_entity,limit=1] data.damage set from storage luigis_mansion:data current_state.current_data.ghosts.luigis_mansion.shining_ghost.damage
-scoreboard players set @e[tag=this_entity,limit=1] EntitySizeRadius 2
-scoreboard players set @e[tag=this_entity,limit=1] EntityYOffset 7
+scoreboard players set @e[tag=this_entity,limit=1] EntitySizeRadius 4
+scoreboard players set @e[tag=this_entity,limit=1] EntityYOffset 0
 function luigis_mansion:spawn_entities/setup/default
 tag @e[tag=this_entity,limit=1] remove this_entity
 data remove storage luigis_mansion:data entity

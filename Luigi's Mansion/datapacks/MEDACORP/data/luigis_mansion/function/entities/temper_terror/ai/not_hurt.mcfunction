@@ -1,6 +1,6 @@
 scoreboard players set @s[scores={TargetTask=0,ActionTime=0}] TargetTask 1
 
-execute if entity @e[tag=exact_same_room,tag=!spectator,tag=player,distance=..0.7,limit=1] if entity @s[tag=!vanish,tag=!appear,scores={AttackType=1}] run function luigis_mansion:entities/gold_ghost/collide with entity @s data.entity
+execute if entity @e[tag=exact_same_room,tag=!spectator,tag=player,distance=..0.7,limit=1] if entity @s[tag=!vanish,tag=!appear,scores={AttackType=2}] run function luigis_mansion:entities/gold_ghost/collide with entity @s data.entity
 execute if entity @s[tag=!collided,tag=!smug,tag=!vanish,tag=!appear] run function luigis_mansion:entities/gold_ghost/try_attack
 
 execute if entity @s[tag=!attack,tag=!collided,tag=!vanish,tag=!laugh,tag=!complain,tag=!smug,tag=!appear] run function luigis_mansion:entities/gold_ghost/haunt
