@@ -13,4 +13,5 @@ execute if entity @s[scores={ActionTime=2..},tag=big,tag=!fast] run scoreboard p
 execute if entity @s[scores={ActionTime=2..},tag=big,tag=fast] run scoreboard players set #temp Move 100
 execute if entity @s[scores={Sound=0}] run playsound luigis_mansion:entity.rocking_horse.charge_battle hostile @a[tag=same_room] ~ ~ ~ 1
 scoreboard players set @s[scores={Sound=0}] Sound 40
-execute at @s[scores={ActionTime=2..}] run function luigis_mansion:entities/ghost/move_forward_force
+execute at @s[scores={ActionTime=2..}] run function luigis_mansion:entities/ghost/move_forward
+execute at @s[scores={ActionTime=2..}] if score #temp Move matches -1 run teleport @s ~ ~ ~ ~ 0

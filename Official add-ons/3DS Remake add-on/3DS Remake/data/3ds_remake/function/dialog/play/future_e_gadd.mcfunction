@@ -25,6 +25,7 @@ execute if score #dialog Dialog matches 3..144 store result score #temp2 Dialog 
 execute if score #dialog Dialog matches 3..144 store result storage luigis_mansion:data dialogs[0].screen_flicker int 1 run scoreboard players add #temp2 Dialog 1
 execute if score #dialog Dialog matches 3..144 if score #temp2 Dialog matches 20 store result storage luigis_mansion:data dialogs[0].screen_flicker int 1 run scoreboard players set #temp2 Dialog 0
 execute if score #dialog Dialog matches 3..144 if score #temp2 Dialog matches 0..5 run scoreboard players set @a[tag=same_room] ForceScreen 1
+execute if score #dialog Dialog matches 3..144 unless score #temp2 Dialog matches 0..5 run scoreboard players set @a[tag=same_room] ForceScreen 0
 execute if score #dialog Dialog matches 3..144 run scoreboard players reset #temp2 Dialog
 execute if score #dialog Dialog matches 23 as @a[tag=same_room,tag=!spectator] run function luigis_mansion:entities/player/animation/set/none
 execute if score #dialog Dialog matches 23 as @a[tag=same_room,tag=!spectator] run function luigis_mansion:entities/player/animation/set/scare/normal

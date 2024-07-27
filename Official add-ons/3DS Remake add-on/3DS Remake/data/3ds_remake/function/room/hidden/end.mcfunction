@@ -1,4 +1,5 @@
-execute unless score #loaded_exterior Selected matches -1 in minecraft:overworld run function luigis_mansion:room/load_exterior/empty
+execute unless score #loaded_exterior Selected matches -1 run tellraw @a {"type":"translatable","translate":"chat.type.text","with":[{"type":"translatable","translate":"luigis_mansion:entity.mansion","color":"green"},{"type":"translatable","translate":"luigis_mansion:message.load_mansion.start"}]}
+execute unless score #loaded_exterior Selected matches -1 in minecraft:overworld run schedule function luigis_mansion:room/load_exterior/empty 5
 execute as @a run function luigis_mansion:entities/player/animation/set/none
 tag @a remove wall_warp
 execute as @a run function luigis_mansion:room/ghost_portrificationizer_room/warp_to

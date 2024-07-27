@@ -171,7 +171,7 @@ execute if score #dialog Dialog matches 143 run scoreboard players set #dialog D
 
 #Branch: Change Amiibo
 execute if score #dialog Dialog matches 144 if entity @a[tag=select_dialog_branch_change_amiibo,limit=1] run stopsound @a[tag=same_room] neutral luigis_mansion:entity.e_gadd.talk.luigi
-execute if score #dialog Dialog matches 144 if entity @a[tag=same_room,advancements={3ds_remake:3ds_remake/amiibo=false}] run scoreboard players set #dialog Dialog 147
+execute if score #dialog Dialog matches 144 if entity @a[tag=same_room,advancements={3ds_remake:3ds_remake/amiibo=false}] run scoreboard players set #dialog Dialog 146
 execute if score #dialog Dialog matches 144 if score #players Totals matches 1 if entity @a[tag=select_dialog_branch_change_amiibo,limit=1] run tellraw @a[tag=same_room] {"type":"translatable","translate":"chat.type.text","with":[{"type":"translatable","translate":"luigis_mansion:entity.e_gadd","color":"green"},{"type":"translatable","translate":"3ds_remake:dialog.underground_lab.change_amiibo.1"}]}
 execute if score #dialog Dialog matches 144 if score #players Totals matches 2.. if entity @a[tag=select_dialog_branch_change_amiibo,limit=1] run tellraw @a[tag=same_room] {"type":"translatable","translate":"chat.type.text","with":[{"type":"translatable","translate":"luigis_mansion:entity.e_gadd","color":"green"},{"type":"translatable","translate":"3ds_remake:dialog.underground_lab.change_amiibo.1.more"}]}
 execute if score #dialog Dialog matches 144 if entity @a[tag=select_dialog_branch_change_amiibo,limit=1] run playsound luigis_mansion:entity.e_gadd.talk.odoh_pahn_pahn neutral @a[tag=same_room] ~ ~ ~ 1
