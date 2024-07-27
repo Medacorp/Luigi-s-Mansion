@@ -5,6 +5,7 @@ execute if entity @s[scores={MirrorX=-2147483648..}] run scoreboard players oper
 execute if entity @s[scores={MirrorZ=-2147483648..}] run scoreboard players operation #temp MirrorZ = @s MirrorZ
 tag @s add me
 scoreboard players set @s[tag=capturing_ghost] Invulnerable 2
+tag @s[tag=capturing_ghost] remove grabbed
 tag @s remove capturing_ghost
 execute store result storage luigis_mansion:data macro.id int 1 run scoreboard players get #temp ID
 function e3_demo:items/poltergust_500/attacking_ghost with storage luigis_mansion:data macro
@@ -12,7 +13,7 @@ execute if score #temp GhostCount > @s GhostCount run scoreboard players operati
 execute if score #temp GhostCount matches 1.. run function e3_demo:items/poltergust_500/get_old_position
 execute if score #temp GhostCount matches 1.. if entity @s[scores={TeleportDelayTimer=0}] run function e3_demo:items/poltergust_500/face_ghost
 execute if score #temp GhostCount matches 1.. at @e[tag=ghost,tag=being_vacuumed,scores={ErrorTime=10..}] run function e3_demo:items/poltergust_500/vacuuming/made_error
-execute if score #temp GhostCount matches 1.. as @e[tag=ghost,tag=being_vacuumed] facing entity @s feet run function e3_demo:items/poltergust_500/vacuuming/ghost
+execute if score #temp GhostCount matches 1.. as @e[tag=ghost,tag=being_vacuumed] positioned ~ ~0.5 ~ facing entity @s feet run function e3_demo:items/poltergust_500/vacuuming/ghost
 execute if score #temp GhostCount matches 1.. run scoreboard players set @s[tag=is_pulling] ErrorTime 0
 execute if score #temp GhostCount matches 1.. run scoreboard players add @s[tag=!is_pulling] ErrorTime 1
 execute if score #temp GhostCount matches 1.. if entity @s[scores={ErrorTime=10..}] run function e3_demo:items/poltergust_500/vacuuming/get_dragged

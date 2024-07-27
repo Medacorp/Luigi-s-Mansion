@@ -2,6 +2,7 @@ function luigis_mansion:entities/ghost/get_target
 tag @s[tag=in_vacuum] add flee
 execute at @s run function luigis_mansion:entities/ghost/ai
 
+data modify entity @s data.entity.animation set value {namespace:"luigis_mansion",id:"spin"}
 execute at @s[tag=!flee] facing entity @e[tag=same_room,tag=!spectator,tag=player,sort=nearest,limit=1] feet rotated ~ 0 run teleport @s ~ ~ ~ ~ ~
 execute at @s[tag=!flee,tag=move_up] rotated ~ 0 run function e3_demo:entities/shining_ghost/move_up
 execute at @s[tag=!flee,tag=!move_up] rotated ~ 0 run function e3_demo:entities/shining_ghost/move_down

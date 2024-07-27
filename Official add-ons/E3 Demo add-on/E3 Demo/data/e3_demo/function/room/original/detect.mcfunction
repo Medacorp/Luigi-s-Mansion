@@ -160,6 +160,7 @@ execute in e3_demo:original if entity @a[distance=0..,scores={PositionIntX=634..
 execute in e3_demo:original unless entity @a[distance=0..,scores={PositionIntX=634..654,PositionIntY=92..100,PositionIntZ=-27..-9}] if entity @a[distance=0..,scores={PositionIntX=645..651,PositionIntY=92..102,PositionIntZ=-11..1}] run function e3_demo:room/original/missingno_57/tick
 execute in e3_demo:original if score #missingno_57 Ticking matches 1 unless entity @a[distance=0..,scores={PositionIntX=634..654,PositionIntY=92..100,PositionIntZ=-27..-9}] unless entity @a[distance=0..,scores={PositionIntX=645..651,PositionIntY=92..102,PositionIntZ=-11..1}] unless entity @a[scores={Room=73}] run function e3_demo:room/original/missingno_57/not_ticking
 
+execute if data storage e3_demo:data current_state.trophy{task_4:0b} if entity @e[tag=furniture,limit=1,nbt={ArmorItems:[{components:{"minecraft:custom_data":{loot:{contents:{e3_demo:{ghost_coin:1}}}}}}]}] run function e3_demo:selection_menu/gallery_trophy/complete/task_4
 execute in e3_demo:original if predicate luigis_mansion:lightning_strike_chance run function luigis_mansion:other/lightning_strike
 execute in e3_demo:original in minecraft:overworld if predicate luigis_mansion:lightning_strike_chance run function luigis_mansion:other/lightning_strike
 tag @e[tag=portrait_ghost] add no_poison_mushroom_dropping
