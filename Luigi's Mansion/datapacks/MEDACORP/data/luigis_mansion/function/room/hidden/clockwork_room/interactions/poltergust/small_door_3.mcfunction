@@ -1,1 +1,2 @@
+execute if entity @s[x=686.5,y=120,z=5.5,distance=..0.7,tag=vacuum] unless score #clockwork_room_small_door_3 Search matches 1 run scoreboard players operation #clockwork_room_small_door_3 SearcherID = #temp ID
 execute if entity @s[x=686.5,y=120,z=5.5,distance=..0.7,tag=vacuum] unless score #clockwork_room_small_door_3 Search matches 1 store success score #clockwork_room_small_door_3 Search run scoreboard players add #clockwork_room_small_door_3 Searching 1

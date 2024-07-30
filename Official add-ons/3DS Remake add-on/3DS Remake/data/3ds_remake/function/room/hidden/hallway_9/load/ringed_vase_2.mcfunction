@@ -1,3 +1,2 @@
-data modify storage luigis_mansion:data furniture set value {room:35,searchable:["interact","vacuum"],shake_animation:["interact","vacuum"],sound:{namespace:"luigis_mansion",id:"heavy_generic"},scan_message:'{"type":"translatable","translate":"luigis_mansion:message.player.scan_furniture.73"}'}
-function 3ds_remake:entities/furniture/loot_chance/d50_p15
+data modify storage luigis_mansion:data furniture set value {room:35,loot_chance:{namespace:"3ds_remake",id:"health_dependent_1"},searchable:["interact","vacuum"],shake_animation:["interact","vacuum"],sound:{namespace:"luigis_mansion",id:"heavy_generic"},scan_message:'{"type":"translatable","translate":"luigis_mansion:message.player.scan_furniture.73"}'}
 execute positioned 680 21.5 -10 rotated -90 0 run function luigis_mansion:spawn_furniture/ringed_vase

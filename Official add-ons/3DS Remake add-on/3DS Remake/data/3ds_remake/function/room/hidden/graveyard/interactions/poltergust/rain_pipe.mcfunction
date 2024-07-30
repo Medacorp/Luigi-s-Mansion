@@ -1,1 +1,2 @@
+execute if entity @s[x=669.0,y=103,z=39.0,dx=0,dy=10,dz=1,tag=vacuum] unless score #graveyard_rain_pipe Search matches 1 run scoreboard players operation #graveyard_rain_pipe SearcherID = #temp ID
 execute if entity @s[x=669.0,y=103,z=39.0,dx=0,dy=10,dz=1,tag=vacuum] unless score #graveyard_rain_pipe Search matches 1 store success score #graveyard_rain_pipe Search run scoreboard players add #graveyard_rain_pipe Searching 1

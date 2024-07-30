@@ -1,4 +1,3 @@
-data modify storage luigis_mansion:data furniture set value {room:66,searchable:["interact","vacuum"],shake_animation:["interact","vacuum"],sound:{namespace:"luigis_mansion",id:"metal"},scan_message:'{"type":"translatable","translate":"luigis_mansion:message.player.scan_furniture.84"}'}
+data modify storage luigis_mansion:data furniture set value {room:66,loot_chance:{namespace:"luigis_mansion",id:"health_dependent_1"},searchable:["interact","vacuum"],shake_animation:["interact","vacuum"],sound:{namespace:"luigis_mansion",id:"metal"},scan_message:'{"type":"translatable","translate":"luigis_mansion:message.player.scan_furniture.84"}'}
 execute unless data storage luigis_mansion:data current_state.current_data{money_spawned:["sealed_room_emblemized_trophy_1"]} run data modify storage luigis_mansion:data furniture.loot set value {name:"sealed_room_emblemized_trophy_1",contents:{luigis_mansion:{gold_bar:1}}}
-function luigis_mansion:entities/furniture/loot_chance/d50_m10_p5
 execute positioned 696 23 -85 rotated -45 0 run function luigis_mansion:spawn_furniture/emblemized_trophy

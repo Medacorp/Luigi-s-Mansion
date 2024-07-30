@@ -3,13 +3,13 @@ Mansions:
 The empty mansion is used when a mansion has been cleared, or previous save data got loaded, but the currently selected mansion had no save data before.
 
 ```
-Mansion      | ID                      | Index | Exterior | Data pack name
-Empty        | luigis_mansion:empty    | -1    | -1       | "file/MEDACORP"
-Normal       | luigis_mansion:normal   | 0     | 0        | "file/MEDACORP"
-(GCN) Hidden | luigis_mansion:hidden   | 0     | 0        | "file/MEDACORP"
-(3DS) Hidden | 3ds_remake:hidden       | 1     | 0        | "file/3DS Remake"
-Original     | e3_demo:original        | 2     | 1        | "file/E3 Demo"
-Trill Tower  | trill_tower:trill_tower | 3     | 2        | "file/Thrill Tower"
+Mansion Option           | ID                      | Data Index | Exterior
+                         | luigis_mansion:empty    | -1         | -1
+The Mansion              | luigis_mansion:normal   | 0          | 0
+The (GCN) Hidden Mansion | luigis_mansion:hidden   | 0          | 0
+The (3DS) Hidden Mansion | 3ds_remake:hidden       | 1          | 0
+The Original Mansion     | e3_demo:original        | 2          | 1
+The Trill Tower          | trill_tower:trill_tower | 3          | 2
 ```
 
 Music groups:
@@ -17,20 +17,20 @@ Music groups:
 Music groups are used to make clashing less likely. The music type of group 0 and group 1 are unrelated.
 
 ```
-Group | Add-on      | Namespace      | Data pack name
-0     | vanilla     | luigis_mansion | "file/MEDACORP"
-1     | 3ds_remake  | 3ds_remake     | "file/3DS Remake"
-2     | e3_demo     | e3_demo        | "file/E3 Demo"
-3-4   | music_packs | music_packs    | "file/Music Packs"
-5     | trill_tower | trill_tower    | "file/Thrill Tower"
+Group | Namespace
+0     | luigis_mansion
+1     | 3ds_remake
+2     | e3_demo
+3-4   | music_packs
+5     | trill_tower
 ```
 
 Radar types:
 
 ```
-Type | Detects                  | Add-on  | Namespace      | Data pack name
-0    | Boos in lit rooms        | vanilla | luigis_mansion | "file/MEDACORP"
-1    | Ghosts in a small radius | e3_demo | e3_demo        | "file/E3 Demo"
+Type | Detects                  | Namespace     
+0    | Boos in lit rooms        | luigis_mansion
+1    | Ghosts in a small radius | e3_demo       
 ```
 
 Ghost appear types:
@@ -96,10 +96,9 @@ e3_demo:puncher                   | uppercut, basher                     | upper
 
 Furniture shake sounds:
 
-An invalid value results in no sound.
-
 ```
 Value                        | Sound type
+INVALID                      | NONE
 luigis_mansion:cello         | Cello
 luigis_mansion:ceramic       | Vase
 luigis_mansion:chest         | Room clear chest
@@ -122,10 +121,9 @@ luigis_mansion:xylophone     | Xylophone
 
 Door models:
 
-An invalid or absent value results in spawn failure.
-
 ```
 Value                                   | Model
+INVALID OR NOT SET                      | SPAWN FAILURE
 luigis_mansion:club                     | Club key special
 luigis_mansion:diamond                  | Diamond key special
 luigis_mansion:gallery                  | Golden one in the gallery
@@ -148,10 +146,9 @@ e3_demo:star                            | Blue mansion/1 with stars
 
 Door frame models:
 
-An invalid or absent value results in no frame.
-
 ```
 Value                               | Model
+INVALID OR NOT SET                  | No frame
 luigis_mansion:arched               | Arch over the top
 luigis_mansion:arched_decoration    | Normal with curling decoration on top
 luigis_mansion:astral_decoration    | Normal with star and astral wings decoration above
@@ -190,11 +187,35 @@ luigis_mansion:windowed_2           | A second windowed design, lighter of color
 3ds_remake:red_metal                | Red metal outline
 ```
 
-Gallery numbers:
+Furniture loot chances:
+The health threshold is halved for gooigi and if no searcher is found the first ID is used.
 
 ```
-Numbers shown | Add-on      | Namespace      | Data pack name
-1-23          | vanilla     | luigis_mansion | "file/MEDACORP"
-              | 3ds_remake  | 3ds_remake     | "file/3DS Remake"
-              | trill_tower | trill_tower    | "file/Thrill Tower"
+ID                                | Defined | Small Heart  | Big Heart | Poison Mushroom | Health Threshold | IDs Used
+INVALID OR NOT SET                | 100%    |              |           |                 |                  |
+luigis_mansion:d25_m20_p5         | 25%     | 20% (moving) |           | 5%              |                  |
+luigis_mansion:d50_m10_p5         | 50%     | 10% (moving) |           | 5%              |                  |
+luigis_mansion:d50_m10_p10        | 50%     | 10% (moving) |           | 10%             |                  |
+luigis_mansion:h10_p10            |         | 10%          |           | 10%             |                  |
+luigis_mansion:h10_p20            |         | 10%          |           | 20%             |                  |
+luigis_mansion:h15                |         | 15%          |           |                 |                  |
+luigis_mansion:h30_p15            |         | 30%          |           | 15%             |                  |
+luigis_mansion:h50                |         | 50%          |           |                 |                  |
+luigis_mansion:h70_b10            |         | 70%          | 10%       |                 |                  |
+luigis_mansion:health_dependent_1 |         |              |           |                 | 31.. / ..30      | luigis_mansion:d50_m10_p5 / luigis_mansion:p80.
+luigis_mansion:health_dependent_2 |         |              |           |                 | 31.. / ..30      | luigis_mansion:h15 / luigis_mansion:h50.
+luigis_mansion:health_dependent_3 |         |              |           |                 | 31.. / ..30      | luigis_mansion:d50_m10_p10 / luigis_mansion:d25_m20_p5.
+luigis_mansion:health_dependent_4 |         |              |           |                 | 31.. / ..30      | luigis_mansion:h10_p10 / luigis_mansion:h30_p15.
+luigis_mansion:m15                |         | 15% (moving) |           |                 |                  |
+luigis_mansion:m20_p15            |         | 20% (moving) |           | 15%             |                  |
+luigis_mansion:m30                |         | 30% (moving) |           |                 |                  |
+luigis_mansion:m50                |         | 50% (moving) |           |                 |                  |
+luigis_mansion:m60                |         | 60% (moving) |           |                 |                  |
+luigis_mansion:m80                |         | 80% (moving) |           |                 |                  |
+3ds_remake:d50_p15                | 50%     |              |           | 15%             |                  |
+3ds_remake:health_dependent_1     |         |              |           |                 | 31.. / ..30      | 3ds_remake:d50_p15 / 3ds_remake:p80.
+3ds_remake:health_dependent_2     |         |              |           |                 | 31.. / ..30      | 3ds_remake:p15 / 3ds_remake:p50.
+3ds_remake:p15                    |         |              |           | 15%             |                  |
+3ds_remake:p50                    |         |              |           | 50%             |                  |
+3ds_remake:p80                    |         |              |           | 80%             |                  |
 ```

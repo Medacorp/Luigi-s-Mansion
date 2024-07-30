@@ -2,7 +2,7 @@ execute at @s positioned ~ ~0.1 ~ align y unless block ~ ~ ~ #luigis_mansion:ite
 
 execute at @s run function luigis_mansion:entities/item/physics/step/gravity
 scoreboard players set @s[scores={Move=0},tag=keep_bouncing,tag=!falling] Move 12
-execute unless entity @s[scores={Move=0}] at @s run function luigis_mansion:entities/item/physics/step/horizontal_motion
+execute unless entity @s[scores={Move=0}] at @s[x_rotation=-89..89] run function luigis_mansion:entities/item/physics/step/horizontal_motion
 execute unless entity @s[scores={Move=0}] at @s[tag=wall_bounce] run function luigis_mansion:entities/item/physics/step/wall_bounce
 execute at @s[scores={Move=0}] align y if block ~ ~ ~ #luigis_mansion:items_ignore unless block ~ ~ ~ #minecraft:slabs[type=bottom] run teleport @s ~ ~ ~
 execute at @s[scores={Move=0}] align y if block ~ ~ ~ #minecraft:slabs[type=bottom] positioned ~ ~0.5 ~ run teleport @s ~ ~ ~

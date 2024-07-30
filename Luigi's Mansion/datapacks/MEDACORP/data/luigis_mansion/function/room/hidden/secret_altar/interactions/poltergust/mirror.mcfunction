@@ -1,1 +1,2 @@
+execute if entity @s[x=647.0,y=93,z=41.0,dx=2,dy=3,dz=0,tag=vacuum] unless score #secret_altar_mirror Search matches 1 run scoreboard players operation #secret_altar_mirror SearcherID = #temp ID
 execute if entity @s[x=647.0,y=93,z=41.0,dx=2,dy=3,dz=0,tag=vacuum] unless score #secret_altar_mirror Search matches 1 store success score #secret_altar_mirror Search run scoreboard players add #secret_altar_mirror Searching 1

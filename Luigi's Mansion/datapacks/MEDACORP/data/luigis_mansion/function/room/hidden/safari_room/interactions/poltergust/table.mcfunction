@@ -1,1 +1,2 @@
+execute if entity @s[x=743.0,y=29,z=71.0,dx=0,dy=1,dz=0,tag=vacuum] unless score #safari_room_table Search matches 1 run scoreboard players operation #safari_room_table SearcherID = #temp ID
 execute if entity @s[x=743.0,y=29,z=71.0,dx=0,dy=1,dz=0,tag=vacuum] unless score #safari_room_table Search matches 1 store success score #safari_room_table Search run scoreboard players add #safari_room_table Searching 1

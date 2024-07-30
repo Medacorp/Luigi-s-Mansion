@@ -11,5 +11,6 @@ tag @s[scores={Move=..-1}] add falling
 execute if entity @s[tag=random_turn_on_bounce] store result score #temp Time run data get entity @s Rotation[0]
 execute if entity @s[tag=random_turn_on_bounce] store result score #temp2 Time run random value -90..90
 execute if entity @s[tag=random_turn_on_bounce] store result entity @s Rotation[0] float 1 run scoreboard players operation #temp Time += #temp2 Time
+execute if entity @s[tag=random_turn_on_bounce] run data modify entity @s Rotation[1] set value 0.0f
 scoreboard players reset #temp Time
 scoreboard players reset #temp2 Time

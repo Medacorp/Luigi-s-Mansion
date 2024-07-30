@@ -1,1 +1,2 @@
+execute if entity @s[x=673.5,y=102,z=-31.5,distance=..0.7,tag=vacuum] unless score #boneyard_sign Search matches 1 run scoreboard players operation #boneyard_sign SearcherID = #temp ID
 execute if entity @s[x=673.5,y=102,z=-31.5,distance=..0.7,tag=vacuum] unless score #boneyard_sign Search matches 1 store success score #boneyard_sign Search run scoreboard players add #boneyard_sign Searching 1

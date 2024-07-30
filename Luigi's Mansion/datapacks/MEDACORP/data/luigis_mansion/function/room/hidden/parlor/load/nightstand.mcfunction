@@ -1,4 +1,3 @@
-data modify storage luigis_mansion:data furniture set value {room:3,searchable:["interact","vacuum"],can_hide_boo:1b,shake_animation:["interact","vacuum"],sound:{namespace:"luigis_mansion",id:"wood"},scan_message:'{"type":"translatable","translate":"luigis_mansion:message.player.scan_furniture.28"}'}
+data modify storage luigis_mansion:data furniture set value {room:3,loot_chance:{namespace:"luigis_mansion",id:"health_dependent_3"},searchable:["interact","vacuum"],can_hide_boo:1b,shake_animation:["interact","vacuum"],sound:{namespace:"luigis_mansion",id:"wood"},scan_message:'{"type":"translatable","translate":"luigis_mansion:message.player.scan_furniture.28"}'}
 execute unless data storage luigis_mansion:data current_state.current_data{money_spawned:["parlor_nightstand"]} run data modify storage luigis_mansion:data furniture.loot set value {name:"parlor_nightstand",contents:{luigis_mansion:{gold_coin:10}}}
-function luigis_mansion:entities/furniture/loot_chance/d50_m10_p10
 execute positioned 727 20 -4 rotated -180 0 run function luigis_mansion:spawn_furniture/nightstand

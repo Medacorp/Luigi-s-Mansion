@@ -1,1 +1,2 @@
+execute if entity @s[x=737.0,y=2,z=59.0,dx=1,dy=2,dz=1,tag=vacuum] unless score #cellar_box_1 Search matches 1 run scoreboard players operation #cellar_box_1 SearcherID = #temp ID
 execute if entity @s[x=737.0,y=2,z=59.0,dx=1,dy=2,dz=1,tag=vacuum] unless score #cellar_box_1 Search matches 1 store success score #cellar_box_1 Search run scoreboard players add #cellar_box_1 Searching 1

@@ -41,8 +41,11 @@ furniture:{
     no_dust:1b, //When set stop dust from popping out if the furniture is empty. Default = 0b.
     loot:{ //Loot to spawn. Do note that no dust will spawn if loot is attempted to be spawned, but the spawning is aborted (so make sure to check if it can spawn before applying the data). Default = none.
         works_in_lab:1b, //When set will still spawn while in the lab. Default = 0b.
-        no_roll:1b, //When set will not spawn from non-manual/time search of rolling furniture. Default = 0b.
         //See loot documentation for other variables.
+    },
+    loot_chance: { //The furniture loot chance ID to use. See IDs in use for valid IDs.
+        namespace: "luigis_mansion", //The namespace of the furniture loot chance. Default = "luigis_mansion".
+        id: "health_dependent_1", //The ID of the furniture loot chance. Default = "null".
     },
     search_command:"...", //Command to trigger on manual search (requires searchable to have "interact" method). Runs as the furniture at the searcher (who's tagged "searcher"). Default = none.
     can_hide_boo:1b, //If this furniture is randomly selected by boos to hide in. Default = 0b.

@@ -1,3 +1,2 @@
-data modify storage luigis_mansion:data furniture set value {room:19,can_hide_boo:1b,searchable:["interact","vacuum"],shake_animation:["interact","vacuum"],sound:{namespace:"luigis_mansion",id:"stone"},scan_message:'{"type":"translatable","translate":"luigis_mansion:message.player.scan_furniture.80"}'}
-function luigis_mansion:entities/furniture/loot_chance/m60
+data modify storage luigis_mansion:data furniture set value {room:19,loot_chance:{namespace:"luigis_mansion",id:"health_dependent_1"},can_hide_boo:1b,searchable:["interact","vacuum"],shake_animation:["interact","vacuum"],sound:{namespace:"luigis_mansion",id:"stone"},scan_message:'{"type":"translatable","translate":"luigis_mansion:message.player.scan_furniture.80"}'}
 execute positioned 662.6 11 40 rotated -90 0 run function luigis_mansion:spawn_furniture/legged_sink

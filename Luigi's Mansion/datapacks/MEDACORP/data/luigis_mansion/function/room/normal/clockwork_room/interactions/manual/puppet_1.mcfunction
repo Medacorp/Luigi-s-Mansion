@@ -1,3 +1,4 @@
 tag @s[x=688.0,y=122,z=22.0,dx=1,dy=2,dz=1,tag=check] add can_interact
 execute if entity @s[x=688.0,y=122,z=22.0,dx=1,dy=2,dz=1,tag=sound] run function luigis_mansion:blocks/search_sound/heavy_generic
+execute if entity @s[x=688.0,y=122,z=22.0,dx=1,dy=2,dz=1,tag=!sound,tag=!check] run scoreboard players operation #clockwork_room_puppet_1 SearcherID = #temp ID
 execute if entity @s[x=688.0,y=122,z=22.0,dx=1,dy=2,dz=1,tag=!sound,tag=!check] run function luigis_mansion:room/normal/clockwork_room/search/boo_check/puppet_1

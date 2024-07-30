@@ -1,4 +1,3 @@
-data modify storage luigis_mansion:data furniture set value {room:67,searchable:["interact","vacuum"],shake_animation:["interact","vacuum"],sound:{namespace:"luigis_mansion",id:"metal"},scan_message:'{"type":"translatable","translate":"luigis_mansion:message.player.scan_furniture.78"}'}
+data modify storage luigis_mansion:data furniture set value {room:67,loot_chance:{namespace:"luigis_mansion",id:"health_dependent_3"},searchable:["interact","vacuum"],shake_animation:["interact","vacuum"],sound:{namespace:"luigis_mansion",id:"metal"},scan_message:'{"type":"translatable","translate":"luigis_mansion:message.player.scan_furniture.78"}'}
 execute unless data storage luigis_mansion:data current_state.current_data{money_spawned:["pipe_room_metal_bucket"]} run data modify storage luigis_mansion:data furniture.loot set value {name:"pipe_room_metal_bucket",contents:{luigis_mansion:{gold_bar:1}}}
-function luigis_mansion:entities/furniture/loot_chance/d50_m10_p10
 execute positioned 698 2 19 rotated -45 0 run function luigis_mansion:spawn_furniture/metal_bucket

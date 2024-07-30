@@ -1,4 +1,3 @@
-data modify storage luigis_mansion:data furniture set value {room:13,searchable:["interact","vacuum"],shake_animation:["interact","vacuum"],sound:{namespace:"luigis_mansion",id:"ceramic"},scan_message:'{"type":"translatable","translate":"luigis_mansion:message.player.scan_furniture.74"}'}
+data modify storage luigis_mansion:data furniture set value {room:13,loot_chance:{namespace:"3ds_remake",id:"health_dependent_1"},searchable:["interact","vacuum"],shake_animation:["interact","vacuum"],sound:{namespace:"luigis_mansion",id:"ceramic"},scan_message:'{"type":"translatable","translate":"luigis_mansion:message.player.scan_furniture.74"}'}
 execute unless data storage luigis_mansion:data current_state.current_data{money_spawned:["hallway_5_ringed_vase_3"]} run data modify storage luigis_mansion:data furniture.loot set value {name:"hallway_5_ringed_vase_3",contents:{luigis_mansion:{gold_bar:1}}}
-function 3ds_remake:entities/furniture/loot_chance/d50_p15
 execute positioned 680 12.5 -25 rotated -90 0 run function luigis_mansion:spawn_furniture/ringed_vase

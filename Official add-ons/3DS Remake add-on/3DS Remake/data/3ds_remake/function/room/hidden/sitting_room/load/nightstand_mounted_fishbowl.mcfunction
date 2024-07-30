@@ -1,3 +1,2 @@
-data modify storage luigis_mansion:data furniture set value {room:69,water_elemental_source:{},searchable:["interact","vacuum"],can_hide_boo:1b,shake_animation:["interact","vacuum"],sound:{namespace:"luigis_mansion",id:"ceramic"},scan_message:'{"type":"translatable","translate":"luigis_mansion:message.player.scan_furniture.65"}'}
-function 3ds_remake:entities/furniture/loot_chance/d50_p15
+data modify storage luigis_mansion:data furniture set value {room:69,loot_chance:{namespace:"3ds_remake",id:"health_dependent_1"},water_elemental_source:{},searchable:["interact","vacuum"],can_hide_boo:1b,shake_animation:["interact","vacuum"],sound:{namespace:"luigis_mansion",id:"ceramic"},scan_message:'{"type":"translatable","translate":"luigis_mansion:message.player.scan_furniture.65"}'}
 execute positioned 746 20 -21 rotated -180 0 run function luigis_mansion:spawn_furniture/nightstand_mounted_fishbowl
