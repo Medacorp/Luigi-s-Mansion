@@ -1,0 +1,2 @@
+execute if data storage luigis_mansion:data current_state.ghosts_caught.caught.luigis_mansion.speedy_spirit run data modify storage luigis_mansion:data entity set value {room:-9,no_ai:1b,rotation:[-120.0f,0.0f],tags:["visible"],animation:{namespace:"3ds_remake",id:"portrait/speedy_spirit",frozen:1b}}
+execute if data storage luigis_mansion:data entity positioned 763 2.5 -48 run function luigis_mansion:spawn_entities/ghost/speedy_spirit

@@ -1,5 +1,5 @@
 execute unless score #underground_lab Ticking matches 1 run function #luigis_mansion:room/underground_lab/load
-execute as @a[x=779,y=74,z=5,dx=18,dy=14,dz=19] unless entity @s[scores={Room=-1}] run scoreboard players set @s LastRoom -1
+execute as @a[x=779,y=74,z=5,dx=18,dy=14,dz=19] unless entity @s[scores={Room=-1}] run scoreboard players operation @s LastRoom = @s Room
 scoreboard players set @e[x=779,y=74,z=5,dx=18,dy=14,dz=19] Room -1
 #todelete - needed for room-triggered shake sounds
 scoreboard players set #temp Room -1

@@ -1,2 +1,0 @@
-data modify storage luigis_mansion:data furniture set value {room:-4,searchable:["interact"],no_dust:1b,interact_animation:{namespace:"luigis_mansion",id:"inspect"}}
-execute positioned 750 79.5 -21.04 rotated -180 0 run function luigis_mansion:spawn_furniture/gallery_portrait/clockwork_soldiers

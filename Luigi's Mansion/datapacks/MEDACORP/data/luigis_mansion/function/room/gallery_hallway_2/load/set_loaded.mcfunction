@@ -1,0 +1,1 @@
+scoreboard players set #gallery_hallway_2 Ticking 1

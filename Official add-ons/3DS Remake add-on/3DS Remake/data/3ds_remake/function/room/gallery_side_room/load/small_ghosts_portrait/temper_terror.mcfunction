@@ -1,0 +1,2 @@
+execute if data storage luigis_mansion:data current_state.ghosts_caught.caught.luigis_mansion.temper_terror run data modify storage luigis_mansion:data entity set value {room:-9,no_ai:1b,rotation:[-60.0f,0.0f],tags:["visible"],animation:{namespace:"3ds_remake",id:"portrait/temper_terror",frozen:1b}}
+execute if data storage luigis_mansion:data entity positioned 763 2.5 -46 run function luigis_mansion:spawn_entities/ghost/temper_terror

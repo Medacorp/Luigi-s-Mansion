@@ -1,2 +1,0 @@
-execute if data storage luigis_mansion:data current_state.ghosts_caught.caught.luigis_mansion.spark run data modify storage luigis_mansion:data entity set value {room:-5,no_ai:1b,rotation:[-40.0f,0.0f],tags:["visible"],animation:{namespace:"3ds_remake",id:"portrait",frozen:1b}}
-execute if data storage luigis_mansion:data entity positioned 759 4.5 -49 run function luigis_mansion:spawn_entities/vacuumable/spark

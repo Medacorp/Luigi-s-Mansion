@@ -1,5 +1,0 @@
-execute if data storage luigis_mansion:data current_state.ghosts_caught.caught.luigis_mansion.bowling_ghost run data modify storage luigis_mansion:data entity set value {room:-5,no_ai:1b,rotation:[-45.0f,0.0f],tags:["visible"],animation:{namespace:"3ds_remake",id:"portrait",frozen:1b}}
-execute if data storage luigis_mansion:data entity positioned 759 4.5 -48 run function luigis_mansion:spawn_entities/ghost/bowling_ghost
-execute if data storage luigis_mansion:data current_state.ghosts_caught.caught.luigis_mansion.bowling_ghost run data modify storage luigis_mansion:data entity set value {room:-5,no_ai:1b,rotation:[-45.0f,0.0f],animation:{namespace:"3ds_remake",id:"portrait",frozen:1b}}
-execute if data storage luigis_mansion:data entity positioned 759 6.0425 -48 run function luigis_mansion:spawn_entities/ball/bowling
-attribute @e[x=759.5,y=5.0425,z=-47.5,distance=..0.1,tag=bowling_ball,limit=1] minecraft:generic.scale base set 0.5

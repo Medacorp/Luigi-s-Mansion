@@ -1,2 +1,0 @@
-execute if data storage luigis_mansion:data current_state.ghosts_caught.caught.luigis_mansion.grabbing_ghost run data modify storage luigis_mansion:data entity set value {room:-5,no_ai:1b,rotation:[-90.0f,0.0f],tags:["visible"],animation:{namespace:"3ds_remake",id:"portrait/grabbing_ghost",frozen:1b}}
-execute if data storage luigis_mansion:data entity positioned 761.0 3.5 -47 run function luigis_mansion:spawn_entities/ghost/grabbing_ghost

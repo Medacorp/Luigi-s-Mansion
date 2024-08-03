@@ -1,15 +1,8 @@
 {
 	"values": [
 	    "luigis_mansion:room/gallery/reset/unload",
-	    "luigis_mansion:room/gallery/reset/king_boo_portrait",
-	    "luigis_mansion:room/gallery/reset/lamp_1",
-	    "luigis_mansion:room/gallery/reset/lamp_2",
 	    "luigis_mansion:room/gallery/reset/mansion_rank_portrait",
 	    "luigis_mansion:room/gallery/reset/statue_1",
-	    "luigis_mansion:room/gallery/reset/statue_2",
-	    "luigis_mansion:room/gallery/reset/table_1",
-	    "luigis_mansion:room/gallery/reset/table_2",
-	    "luigis_mansion:room/gallery/reset/table_3",
-	    "luigis_mansion:room/gallery/reset/table_4"
+	    "luigis_mansion:room/gallery/reset/statue_2"
 	]
 }

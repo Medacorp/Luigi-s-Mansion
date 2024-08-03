@@ -1,0 +1,1 @@
+function #luigis_mansion:room/gallery_hallway_2/reset

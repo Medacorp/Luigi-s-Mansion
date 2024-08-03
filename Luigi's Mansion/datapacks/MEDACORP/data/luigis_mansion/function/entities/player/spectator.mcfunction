@@ -2,7 +2,7 @@ tag @s remove grabbed
 tag @s remove flipped_gravity
 tag @s remove poltergust_malfunction
 
-scoreboard players reset @s LastRoom
+scoreboard players operation @s[tag=seen_room_name] LastRoom = @s Room
 scoreboard players set @s Sound 0
 
 execute if entity @s[tag=using_selection_menu] run function luigis_mansion:selection_menu/tick

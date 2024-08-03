@@ -1,0 +1,1 @@
+scoreboard players reset #gallery_back_room_table

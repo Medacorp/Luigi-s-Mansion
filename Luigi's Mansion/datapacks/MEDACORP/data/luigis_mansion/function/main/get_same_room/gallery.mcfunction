@@ -1,0 +1,1 @@
+execute if dimension minecraft:overworld if score #temp Room matches -6..-4 run tag @s[scores={Room=-6..-4},nbt={Dimension:"minecraft:overworld"}] add same_room

@@ -1,2 +1,0 @@
-data modify storage luigis_mansion:data furniture set value {room:-4,searchable:["interact"],no_dust:1b,interact_animation:{namespace:"luigis_mansion",id:"inspect"}}
-execute positioned 746 79.5 -30.04 rotated -180 0 run function luigis_mansion:spawn_furniture/gallery_portrait/vincent_van_gore

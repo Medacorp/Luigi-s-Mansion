@@ -1,0 +1,2 @@
+execute if data storage luigis_mansion:data current_state.ghosts_caught.caught.luigis_mansion.yellow_bat run data modify storage luigis_mansion:data entity set value {room:-9,no_ai:1b,rotation:[-110.0f,0.0f],tags:["visible"],animation:{namespace:"3ds_remake",id:"portrait/yellow_bat",frozen:1b}}
+execute if data storage luigis_mansion:data entity positioned 758.3 5 -46.0 run function luigis_mansion:spawn_entities/vacuumable/yellow_bat

@@ -1,0 +1,2 @@
+execute if data storage luigis_mansion:data current_state.ghosts_caught.caught.luigis_mansion.purple_bomber run data modify storage luigis_mansion:data entity set value {room:-9,no_ai:1b,rotation:[-45.0f,0.0f],tags:["visible"],animation:{namespace:"3ds_remake",id:"portrait/purple_bomber",frozen:1b}}
+execute if data storage luigis_mansion:data entity positioned 761 4 -49 run function luigis_mansion:spawn_entities/ghost/purple_bomber

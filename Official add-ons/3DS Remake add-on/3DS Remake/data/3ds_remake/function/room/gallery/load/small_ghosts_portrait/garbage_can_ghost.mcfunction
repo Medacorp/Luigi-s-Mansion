@@ -1,2 +1,0 @@
-execute if data storage luigis_mansion:data current_state.ghosts_caught.caught.luigis_mansion.garbage_can_ghost run data modify storage luigis_mansion:data entity set value {room:-5,no_ai:1b,rotation:[-110.0f,0.0f],tags:["visible"],animation:{namespace:"3ds_remake",id:"portrait",frozen:1b}}
-execute if data storage luigis_mansion:data entity positioned 762 3 -48.0 run function luigis_mansion:spawn_entities/ghost/garbage_can_ghost

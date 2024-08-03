@@ -1,0 +1,2 @@
+execute if data storage luigis_mansion:data current_state.ghosts_caught.caught.luigis_mansion.ceiling_surprise run data modify storage luigis_mansion:data entity set value {room:-9,no_ai:1b,rotation:[-135.0f,0.0f],tags:["visible"],animation:{namespace:"3ds_remake",id:"portrait/ceiling_surprise",frozen:1b}}
+execute if data storage luigis_mansion:data entity positioned 761 4 -45 run function luigis_mansion:spawn_entities/ghost/ceiling_surprise

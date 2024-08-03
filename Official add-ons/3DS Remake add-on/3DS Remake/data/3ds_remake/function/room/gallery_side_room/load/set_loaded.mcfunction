@@ -1,0 +1,1 @@
+scoreboard players set #gallery_side_room Ticking 1

@@ -1,0 +1,1 @@
+function #3ds_remake:room/gallery_back_room/reset

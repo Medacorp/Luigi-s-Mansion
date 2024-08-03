@@ -19,16 +19,17 @@ furniture:{
     inverted_swing:1b, //Swinging furniture only, whether the swinging angles are inverted for searching methods. Default = 0b.
         
     //search details
-    type:{ //Overwrites the default furniture type of this furniture.
+    type:{ //Overwrites the default furniture type of this furniture. The defaults may be different for furniture's initial type.
         value:"<type>", //Required if type is present, what type to use. Allowed types (both original to change and value to change to): delayed, fan, generic, rolling, swinging, swirling.
-        search_value:X, //Optional, what search value is needed. The default may be different for the default type of the furniture.
+        search_value:X, //Optional, what search value is needed.
             * For delayed, it's how long the poltergust must be used. Default = 20.
-            * For fan, it's the default spinning speed in tenths of degrees (positive values only). Default = 0.
+            * For fan, it's the spinning speed in tenths of degrees (positive values only) per tick this fan needs to have in order to be searched. Default = 1000.
             * For generic, it's how long the poltergust must be used. Default = 20.
             * For rolling it's how long the poltergust must be used. Default = 20.
             * For swinging the angle in degrees*10. Default = 100.
             * For swirling the amount of spins it needs to have made. Default = 5.
-        turn_left:0b //Optional if value is "fan", wether the fan turns left rather than right.
+        turn_speed:0, //Optional if value is "fan", the speed at which this fan turns in tenths of degrees (positive values only) per tick. Default = 0.
+        turn_left:0b //Optional if value is "fan", whether the fan turns left rather than right. Default = 0b.
     },
     searchable:["<method>"], //Sets what method can result in searching. If "interact" is absent here, but provided in shake_animation, interact will still try to shake it, and trigger the search animaton, but it won't actually get searched. Methods: time(will search automatically), interact, vacuum, dust, fire, water, ice. Default = none.
     shake_animation:["<method>"], //Sets what method can result in the furniture shaking. Methods: interact, vacuum, dust, fire, water, ice. Default = none.

@@ -1,12 +1,8 @@
 {
     "values": [
         "3ds_remake:room/gallery/reset/unload",
-        "3ds_remake:room/gallery/reset/chair",
         "3ds_remake:room/gallery/reset/generator_1",
-        "3ds_remake:room/gallery/reset/king_boo_portrait",
         "3ds_remake:room/gallery/reset/stacked_books_1",
-        "3ds_remake:room/gallery/reset/stacked_books_2",
-        "3ds_remake:room/gallery/reset/stacked_books_3",
-        "3ds_remake:room/gallery/reset/table"
+        "3ds_remake:room/gallery/reset/stacked_books_2"
     ]
 }

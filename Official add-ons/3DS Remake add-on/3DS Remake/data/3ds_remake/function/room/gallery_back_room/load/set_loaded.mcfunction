@@ -1,0 +1,1 @@
+scoreboard players set #3ds_gallery_back_room Ticking 1

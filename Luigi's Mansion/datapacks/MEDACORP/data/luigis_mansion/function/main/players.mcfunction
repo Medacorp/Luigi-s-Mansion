@@ -23,6 +23,11 @@ scoreboard players reset #temp Room
 
 execute if entity @s[tag=!joined] run function luigis_mansion:other/join_world
 
+execute unless score @s PreviousRoom = @s Room run tag @s remove seen_room_name
+execute unless score @s PreviousRoom = @s Room if score #debug_messages Selected matches 2.. run tellraw @a {"type":"translatable","translate":"luigis_mansion:message.debug.format","with":[{"type":"translatable","translate":"luigis_mansion:message.debug","color":"gold"},{"type":"translatable","translate":"luigis_mansion:message.debug.room_number","with":[{"type":"selector","selector":"@s"},{"type":"score","score":{"name":"@s","objective":"PreviousRoom"}},{"type":"score","score":{"name":"@s","objective":"Room"}}]}]}
+scoreboard players operation @s PreviousRoom = @s Room
+execute unless entity @s[scores={Room=1..}] run scoreboard players set @s LastFloor -2
+
 execute if entity @s[tag=show_credits] run function luigis_mansion:credits
 execute at @s[gamemode=!spectator] run function luigis_mansion:entities/player/not_spectator
 execute if entity @s[gamemode=!spectator,scores={Shrunk=1..},tag=!disable_second_small_run] run scoreboard players operation @s OtherX = @s PositionX
@@ -41,11 +46,6 @@ scoreboard players remove @s[scores={Shrunk=1..}] Shrunk 1
 
 execute unless entity @s[scores={Offline=0}] run function luigis_mansion:other/log_on
 execute if entity @s[scores={ChangedMansion=1}] run function luigis_mansion:entities/player/changed_mansion
-
-execute unless score @s PreviousRoom = @s Room run tag @s remove seen_room_name
-execute unless score @s PreviousRoom = @s Room if score #debug_messages Selected matches 2.. run tellraw @a {"type":"translatable","translate":"luigis_mansion:message.debug.format","with":[{"type":"translatable","translate":"luigis_mansion:message.debug","color":"gold"},{"type":"translatable","translate":"luigis_mansion:message.debug.room_number","with":[{"type":"selector","selector":"@s"},{"type":"score","score":{"name":"@s","objective":"PreviousRoom"}},{"type":"score","score":{"name":"@s","objective":"Room"}}]}]}
-scoreboard players operation @s PreviousRoom = @s Room
-execute unless entity @s[scores={Room=1..}] run scoreboard players set @s LastFloor -2
 
 function luigis_mansion:entities/player/memory/forget_attacker
 

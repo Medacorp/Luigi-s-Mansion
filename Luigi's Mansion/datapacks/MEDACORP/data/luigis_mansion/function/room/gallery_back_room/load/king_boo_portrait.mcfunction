@@ -1,0 +1,4 @@
+data modify storage luigis_mansion:data furniture set value {room:-7,searchable:["interact"],no_dust:1b,interact_animation:{namespace:"luigis_mansion",id:"inspect"},tags:["king_boo_portrait"]}
+execute positioned 729.04 81.1 -28.0 rotated -90 0 run function luigis_mansion:spawn_furniture/gallery_portrait/king_boo
+execute if data storage luigis_mansion:data current_state.portrait_ghost_ranks{king_boo:-1b} run data modify entity @e[tag=king_boo_portrait,limit=1] ArmorItems[3].id set value "minecraft:stone_button"
+execute unless data storage luigis_mansion:data current_state.portrait_ghost_ranks{king_boo:-1b} run setblock 729 79 -28 minecraft:birch_wall_sign[facing=east]{front_text:{messages:['{"type":"text","text":""}','{"type":"translatable","translate":"luigis_mansion:sign.gallery.23"}','{"type":"text","text":""}','{"type":"text","text":""}']}}

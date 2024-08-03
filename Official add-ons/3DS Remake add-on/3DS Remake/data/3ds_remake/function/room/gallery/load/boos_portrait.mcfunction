@@ -1,3 +1,0 @@
-data modify storage luigis_mansion:data furniture set value {room:-5,searchable:["interact"],no_dust:1b,interact_animation:{namespace:"luigis_mansion",id:"inspect"},scan_message:'{"type":"translatable","translate":"3ds_remake:message.player.scan_furniture.1"}',search_command:"execute as @a[tag=searcher] run function 3ds_remake:selection_menu/gallery_portrait/boos"}
-execute positioned 766.04 4 -55 rotated -90 0 run function 3ds_remake:spawn_furniture/hollow_portrait
-function #3ds_remake:room/gallery/load/boos_portrait

@@ -1,10 +1,7 @@
 {
 	"values": [
-        "3ds_remake:room/gallery/interactions/room/chair",
         "3ds_remake:room/gallery/interactions/room/generator_1",
         "3ds_remake:room/gallery/interactions/room/stacked_books_1",
-        "3ds_remake:room/gallery/interactions/room/stacked_books_2",
-        "3ds_remake:room/gallery/interactions/room/stacked_books_3",
-        "3ds_remake:room/gallery/interactions/room/table"
+        "3ds_remake:room/gallery/interactions/room/stacked_books_2"
 	]
 }

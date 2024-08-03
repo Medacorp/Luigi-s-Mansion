@@ -1,2 +1,0 @@
-execute if data storage luigis_mansion:data current_state.ghosts_caught.caught.luigis_mansion.mr_bones run data modify storage luigis_mansion:data entity set value {room:-5,no_ai:1b,rotation:[-90.0f,0.0f],tags:["visible"],animation:{namespace:"3ds_remake",id:"portrait",frozen:1b}}
-execute if data storage luigis_mansion:data entity positioned 762 2.9 -45.0 run function luigis_mansion:spawn_entities/ghost/mr_bones
