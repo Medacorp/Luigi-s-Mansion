@@ -1,5 +1,6 @@
 3.0:
 WARNING! When updating an old save version, be sure to follow the "How to update" steps in the "installing and notes.txt" file before drag-and-drop updating, or the map will malfunction
+DISCLAIMER: this build is quite a bit more laggy due to some of the changes, this is being worked on
 * Updated to 1.21
 * Updated "installing and notes.txt"
 * Renamed the data packs/add-ons
@@ -9,13 +10,21 @@ WARNING! When updating an old save version, be sure to follow the "How to update
 * Several instances of furniture have been replaced with models
 * Added death messages
 * Added revive messages
+* Added selection meny system, replacing all click events
+* Added new settings: (Global) Difficulty, (Global) Mirror Reflections, Teleport Frequency
 * Added difficulty effects; the higher the difficulty, the harder; total score gets a multiplier based on the lowest selected difficulty in the mansion
-* Added warp back to mansion path upon re-entering the world if you're too far away from the mansion.
+* Added warp back to mansion path upon re-entering the world if you're too far away from the mansion
+* Added new advancements
+* 3DS Remake: Added start-confirmation for portrait battles, as well as showing results
 * Changed E. Gadd model
 * Changed Toad model
 * Changed ghosts to be always be fully lit
+* Changed furniture and ghost loot handling, now more accurate to the original game
+* Changed King Boo AI to be more similar to other Boos, not just flying away and back, but rotating, flying up/down, etc.
+* Changed blue and purple mice to have accurate paths
+* Changed gallery to be several rooms, rather than 1
 * Rewrote a lot
-* Bug fixes
+* Fixed numerous bugs
 
 
 2.3.9:

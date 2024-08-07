@@ -101,9 +101,9 @@ tag @s remove in_dialog
 tag @s add me
 execute as @a[distance=..0.4,tag=!me,tag=!spectator,tag=!pause_dialog,limit=1] run function luigis_mansion:entities/player/collide
 tag @s remove me
-#to remove
+#todelete - old mirror reflections
 tag @s remove mirror_set_by_furniture_entity
-#/to remove
+#/todelete
 tag @s[tag=camera] add spectator
 data remove storage luigis_mansion:data selected_option
 execute if score #mirrored Selected matches 2 run scoreboard players set #mirrored Selected 1

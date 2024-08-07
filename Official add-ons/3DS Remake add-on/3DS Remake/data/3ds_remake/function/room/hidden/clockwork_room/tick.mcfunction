@@ -1,7 +1,7 @@
 execute unless score #clockwork_room Ticking matches 1 run function #3ds_remake:room/hidden/clockwork_room/load
 execute as @a[x=682,y=119,z=-10,dx=17,dy=7,dz=35] unless entity @s[scores={Room=62}] run scoreboard players operation @s LastRoom = @s Room
 scoreboard players set @a[x=682,y=119,z=-10,dx=17,dy=7,dz=35] Room 62
-#todelete - needed for room-triggered shake sounds
+#todelete - old furniture
 scoreboard players set #temp Room 62
 #/todelete
 

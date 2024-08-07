@@ -1,7 +1,7 @@
 execute unless score #king_boo_battle Ticking matches 1 run function #luigis_mansion:room/hidden/king_boo_battle/load
 execute as @a[x=465,y=24,z=-40,dx=49,dy=61,dz=85] run scoreboard players set @s LastRoom 76
 scoreboard players set @a[x=465,y=24,z=-40,dx=49,dy=61,dz=85] Room 76
-#todelete - needed for room-triggered shake sounds
+#todelete - old furniture
 scoreboard players set #temp Room 76
 #/todelete
 

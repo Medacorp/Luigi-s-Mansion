@@ -10,6 +10,8 @@ scoreboard players set @s[scores={Music=1..}] GradualMusic 0
 scoreboard players remove @s[scores={HealthMusic=1..}] HealthMusic 300
 scoreboard players operation @s[scores={HealthMusic=1..,Health=1..}] HealthMusic -= @s Health
 scoreboard players operation @s[scores={HealthMusic=1..,Health=1..}] HealthMusic -= @s Health
+scoreboard players operation @s[scores={HealthMusic=1..,Health=1..},tag=gooigi] HealthMusic -= @s Health
+scoreboard players operation @s[scores={HealthMusic=1..,Health=1..},tag=gooigi] HealthMusic -= @s Health
 
 function #luigis_mansion:other/music/correct
 

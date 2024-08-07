@@ -1,7 +1,7 @@
 execute unless score #missingno_50 Ticking matches 1 run function #e3_demo:room/original/missingno_50/load
 execute as @a[x=696,y=28,z=56,dx=17,dy=7,dz=25] unless entity @s[scores={Room=66}] run scoreboard players operation @s LastRoom = @s Room
 scoreboard players set @a[x=696,y=28,z=56,dx=17,dy=7,dz=25] Room 66
-#todelete - needed for room-triggered shake sounds
+#todelete - old furniture
 scoreboard players set #temp Room 66
 #/todelete
 

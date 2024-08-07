@@ -4,11 +4,11 @@ execute at @s unless block ~ ~-0.1 ~ #luigis_mansion:interact_ignore rotated ~ 0
 execute at @s if block ~ ~-0.1 ~ #luigis_mansion:interact_ignore unless block ~ ~2 ~ #luigis_mansion:interact_ignore rotated ~ 0 run summon minecraft:marker ^ ^0.1 ^1 {Tags:["interact","manual","check","1","up"]}
 execute at @s if block ~ ~-0.1 ~ #luigis_mansion:interact_ignore unless block ~ ~2 ~ #luigis_mansion:interact_ignore rotated ~ 0 run summon minecraft:marker ^ ^1.1 ^1 {Tags:["interact","manual","check","2","down"]}
 execute at @s if block ~ ~-0.1 ~ #luigis_mansion:interact_ignore unless block ~ ~2 ~ #luigis_mansion:interact_ignore rotated ~ 0 run summon minecraft:marker ^ ^-0.9 ^1 {Tags:["interact","manual","check","3"]}
-#to delete
+#todelete - old furniture
 tag @s add searcher
 execute as @e[tag=interact,tag=manual] at @s unless block ~ ~ ~ minecraft:air unless block ~ ~ ~ minecraft:barrier unless block ~ ~ ~ minecraft:light run function luigis_mansion:room/interactions
 tag @s remove searcher
-#/to delete
+#/todelete
 execute at @e[tag=interact,tag=manual] as @e[tag=furniture,tag=!door,tag=same_room,tag=affected_by_interact] run function luigis_mansion:items/interact/target_furniture/find
 scoreboard players reset #interact
 execute if entity @e[tag=interact,tag=manual,tag=can_interact,limit=1] run scoreboard players set @s InteractionTime 1

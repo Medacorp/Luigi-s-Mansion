@@ -1,7 +1,7 @@
 execute unless score #hallway_15 Ticking matches 1 run function #luigis_mansion:room/normal/hallway_15/load
 execute as @a[x=713,y=28,z=-42,dx=7,dy=7,dz=13] unless entity @s[scores={Room=41}] run scoreboard players operation @s LastRoom = @s Room
 scoreboard players set @a[x=713,y=28,z=-42,dx=7,dy=7,dz=13] Room 41
-#todelete - needed for room-triggered shake sounds
+#todelete - old furniture
 scoreboard players set #temp Room 41
 #/todelete
 

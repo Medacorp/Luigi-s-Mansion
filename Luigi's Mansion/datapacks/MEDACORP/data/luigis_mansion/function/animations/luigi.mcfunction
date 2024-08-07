@@ -10,9 +10,9 @@ data modify storage luigis_mansion:data luigi.gliding set from entity @s FallFly
 execute store result storage luigis_mansion:data luigi.room int 1 run scoreboard players get @s Room
 execute if entity @s[scores={MirrorX=-2147483648..}] store result storage luigis_mansion:data luigi.mirror.x int 1 run scoreboard players get @s MirrorX
 execute if entity @s[scores={MirrorZ=-2147483648..}] store result storage luigis_mansion:data luigi.mirror.z int 1 run scoreboard players get @s MirrorZ
-#to remove
+#todelete - old mirror reflections
 execute store result storage luigis_mansion:data luigi.mirror.mirror_set_by_furniture_entity byte 1 if entity @s[tag=mirror_set_by_furniture_entity]
-#/to remove
+#/todelete
 execute store result storage luigis_mansion:data luigi.alive byte 1 if entity @s[tag=!dead_player,tag=!death_animation]
 execute store result storage luigis_mansion:data luigi.reset_rotation byte 1 if entity @s[tag=reset_rotation,tag=!stop_model]
 execute store result storage luigis_mansion:data luigi.shrunk byte 1 if entity @s[scores={Shrunk=1..}]

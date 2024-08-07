@@ -9,7 +9,7 @@ reflections:[
         mirror:{ //Information about the mirror.
             z:0b //Whether or not the reflection is offset on the Z axis.
             value:X, //The coordinate value of the mirror.
-            set_by_furniture_entity:0b //Temporary addition until all mirrors are converted the entities; whether this mirror is a furniture entity; changes the calculation slightly.
+            set_by_furniture_entity:0b //Temporary addition until all mirrors are converted the entities; whether this mirror is a furniture entity; changes the calculation slightly. #todelete - old mirror reflections
         },
         entity_id:"<id>", //The Minecraft entity ID used to spawn the correct entity type. Only allows armor stand or item frame. The item frame option will be removed once all paintings and posters are converted to furniture entities.
         data:{ //The entity's data

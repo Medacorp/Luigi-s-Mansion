@@ -7,11 +7,11 @@ execute store result score #temp HomeZ run data get storage luigis_mansion:data 
 execute store result score #temp MirrorX run data get storage luigis_mansion:data mirror.mirror.value
 execute store result score #temp MirrorZ run data get storage luigis_mansion:data mirror.mirror.z
 
-# to remove check
+#todelete - old mirror reflections
 execute if data storage luigis_mansion:data mirror.mirror{set_by_furniture_entity:1b} run scoreboard players operation #temp MirrorX *= #10 Constants
 execute unless data storage luigis_mansion:data mirror.mirror{set_by_furniture_entity:1b} run scoreboard players operation #temp MirrorX *= #100 Constants
 execute unless data storage luigis_mansion:data mirror.mirror{set_by_furniture_entity:1b} run scoreboard players add #temp MirrorX 50
-# //to remove check
+#/tedelete
 
 execute if score #temp MirrorZ matches 0 as @e[tag=temp,limit=1] run function luigis_mansion:entities/reflection/position/x
 execute if score #temp MirrorZ matches 1 as @e[tag=temp,limit=1] run function luigis_mansion:entities/reflection/position/z

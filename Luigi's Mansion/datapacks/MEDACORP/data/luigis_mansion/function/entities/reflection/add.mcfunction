@@ -4,10 +4,10 @@ execute store result storage luigis_mansion:data reflections[-1].room int 1 run 
 execute if score @s MirrorX matches -2147483648.. store result storage luigis_mansion:data reflections[-1].mirror.value int 1 run scoreboard players get @s MirrorX
 execute if score @s MirrorZ matches -2147483648.. store result storage luigis_mansion:data reflections[-1].mirror.value int 1 run scoreboard players get @s MirrorZ
 execute if score @s MirrorZ matches -2147483648.. run data modify storage luigis_mansion:data reflections[-1].mirror.z set value 1b
-# to remove
+#todelete - old mirror reflections
 execute if entity @s[tag=mirror_set_by_furniture_entity] run data modify storage luigis_mansion:data reflections[-1].mirror.set_by_furniture_entity set value 1b
 tag @s remove mirror_set_by_furniture_entity
-# //to remove
+#/todelete
 data modify storage luigis_mansion:data reflections[-1].data set from entity @s {}
 execute if entity @s[type=minecraft:item_frame] run data modify storage luigis_mansion:data reflections[-1].entity_id set value "minecraft:item_frame"
 

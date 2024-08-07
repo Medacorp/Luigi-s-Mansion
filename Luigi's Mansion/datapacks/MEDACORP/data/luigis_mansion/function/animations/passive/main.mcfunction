@@ -1,9 +1,9 @@
 execute store result score @s Room run data get storage luigis_mansion:data passive.room
 execute if data storage luigis_mansion:data passive.mirror.x store result score @s MirrorX run data get storage luigis_mansion:data passive.mirror.x
 execute if data storage luigis_mansion:data passive.mirror.z store result score @s MirrorZ run data get storage luigis_mansion:data passive.mirror.z
-#to remove
+#todelete - old mirror reflections
 execute if data storage luigis_mansion:data passive.mirror{mirror_set_by_furniture_entity:1b} run tag @s add mirror_set_by_furniture_entity
-#/to remove
+#/todelete
 execute unless data entity @s ArmorItems[3].count run data modify entity @s ArmorItems[3] set value {id:"minecraft:stone_button",count:1}
 execute store success score #temp Time run data modify entity @s ArmorItems[3].components."minecraft:custom_data".animation set from storage luigis_mansion:data passive.animation
 execute if score #temp Time matches 1 run function luigis_mansion:animations/passive/reset_pose
