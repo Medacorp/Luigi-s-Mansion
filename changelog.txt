@@ -1,7 +1,7 @@
 3.0:
 WARNING! When updating an old save version, be sure to follow the "How to update" steps in the "installing and notes.txt" file before drag-and-drop updating, or the map will malfunction
 DISCLAIMER: this build is quite a bit more laggy due to some of the changes, this is being worked on
-* Updated to 1.21
+* Updated to 1.21(.1)
 * Updated "installing and notes.txt"
 * Renamed the data packs/add-ons
 ** "Luigi's Mansion" data pack renamed to "MEDACORP"
