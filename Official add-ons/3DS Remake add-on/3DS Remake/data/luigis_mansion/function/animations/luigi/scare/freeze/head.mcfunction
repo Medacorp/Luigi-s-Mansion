@@ -57,7 +57,7 @@ execute if entity @s[scores={AnimationProgress=99..100}] if score #mirrored Sele
 scoreboard players reset #temp Time
 data merge entity @s[scores={AnimationProgress=100}] {Pose:{Head:[0.0f,0.0f,0.01f]}}
 data merge entity @s[scores={AnimationProgress=100},tag=flipped_gravity] {Pose:{Head:[0.0f,0.0f,-180.0f]}}
-scoreboard players set @s[scores={AnimationProgress=100..}] AnimationProgress 0
-tag @s add scared_head
+data modify entity @s[scores={AnimationProgress=1}] ArmorItems[3] merge from entity @s ArmorItems[3].components."minecraft:custom_data".model_data.scared
 execute if entity @s[tag=!gooigi_model] run function luigis_mansion:animations/luigi/sync_head
 execute if entity @s[tag=gooigi_model] run function 3ds_remake:animations/gooigi/sync_head
+scoreboard players set @s[scores={AnimationProgress=100..}] AnimationProgress 0

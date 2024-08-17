@@ -4,4 +4,5 @@ tag @s[scores={AnimationProgress=6..10}] add new_poltergust_grabbed
 tag @s[scores={AnimationProgress=6..10}] add poltergust_grabbed
 tag @s[scores={Health=..30},tag=!gooigi] add low_health
 tag @s[scores={Health=..15},tag=gooigi] add low_health
+tag @s add tick_down_invulnerability
 execute if entity @s[scores={AnimationProgress=10}] run function luigis_mansion:entities/player/animation/set/none

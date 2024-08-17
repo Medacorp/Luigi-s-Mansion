@@ -10,12 +10,12 @@ execute at @s[scores={AnimationProgress=117}] rotated ~ 0 run teleport @s ^ ^-0.
 execute at @s[scores={AnimationProgress=118}] rotated ~ 0 run teleport @s ^ ^-0.2606 ^0.006
 execute at @s[scores={AnimationProgress=119}] rotated ~ 0 run teleport @s ^ ^-0.1303 ^0.003
 data merge entity @s[scores={AnimationProgress=1}] {Pose:{Head:[0.0f,0.0f,0.01f]}}
-data modify entity @s[scores={AnimationProgress=15..109}] ArmorItems[3].id set value "minecraft:stone_button"
+data modify entity @s[scores={AnimationProgress=5}] ArmorItems[3] merge from entity @s ArmorItems[3].components."minecraft:custom_data".model_data.scared
+data modify entity @s[scores={AnimationProgress=15}] ArmorItems[3] merge from entity @s ArmorItems[3].components."minecraft:custom_data".model_data.squished
 data merge entity @s[scores={AnimationProgress=80}] {Pose:{Head:[90.0f,0.0f,0.01f]}}
-data modify entity @s[scores={AnimationProgress=110}] ArmorItems[3].id set value "minecraft:leather_chestplate"
+data modify entity @s[scores={AnimationProgress=110}] ArmorItems[3] merge from entity @s ArmorItems[3].components."minecraft:custom_data".model_data.scared
 execute store result score #temp Time run data get entity @s Pose.Head[0]
 execute if entity @s[scores={AnimationProgress=111..120}] store result entity @s Pose.Head[0] float 1 run scoreboard players remove #temp Time 9
 scoreboard players reset #temp Time
 data merge entity @s[scores={AnimationProgress=140..}] {Pose:{Head:[0.0f,0.0f,0.01f]}}
 scoreboard players set @s[scores={AnimationProgress=140..}] AnimationProgress 0
-tag @s add scared_head

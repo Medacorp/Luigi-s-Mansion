@@ -23,7 +23,7 @@ execute if entity @s[scores={Health=1..}] store result score @s Damage run data 
 execute if entity @s[scores={Damage=..99}] run function luigis_mansion:entities/player/heal
 scoreboard players reset @s Damage
 execute unless entity @s[scores={Invulnerable=0..}] run scoreboard players set @s Invulnerable 0
-execute unless entity @s[scores={AnimationProgress=1..},tag=!idle,tag=!animation_may_move] run scoreboard players remove @s[scores={Invulnerable=1..}] Invulnerable 1
+execute unless entity @s[scores={AnimationProgress=1..},tag=!idle,tag=!tick_down_invulnerability] run scoreboard players remove @s[scores={Invulnerable=1..}] Invulnerable 1
 effect give @s[scores={Food=3..}] minecraft:hunger 1 255 true
 effect give @s[scores={Food=..0}] minecraft:saturation 1 0 true
 scoreboard players set @s[scores={MaxHealth=51..},tag=gooigi] MaxHealth 50
@@ -35,9 +35,9 @@ scoreboard players set @s[scores={MaxHealthTime=200},tag=!gooigi] MaxHealth 100
 scoreboard players set @s[scores={MaxHealthTime=200},tag=gooigi] MaxHealth 50
 scoreboard players reset @s[scores={MaxHealthTime=200}] MaxHealthTime
 
-execute if entity @s[tag=!spectator,tag=!gooigi] run function luigis_mansion:entities/player/idle
-execute if entity @s[scores={AnimationProgress=1..},tag=idle,tag=!gooigi] unless entity @s[scores={Walk=0,Run=0,Sneak=0},tag=!sneak_pos,tag=!spectator] run function luigis_mansion:entities/player/animation/set/none
-execute if entity @s[scores={AnimationProgress=1..},tag=!idle,tag=!animation_may_move,tag=!using_selection_menu,tag=!gooigi] run function luigis_mansion:entities/player/animation/freeze_player
+execute if entity @s[tag=!spectator,tag=!dead_player,tag=!gooigi] run function luigis_mansion:entities/player/idle
+execute if entity @s[scores={AnimationProgress=1..},tag=!dead_player,tag=idle,tag=!gooigi] unless entity @s[scores={Walk=0,Run=0,Sneak=0},tag=!sneak_pos,tag=!spectator] run function luigis_mansion:entities/player/animation/set/none
+execute if entity @s[scores={AnimationProgress=1..},tag=!dead_player,tag=!idle,tag=!animation_may_move,tag=!using_selection_menu,tag=!gooigi] run function luigis_mansion:entities/player/animation/freeze_player
 
 execute if entity @s[tag=gooigi,tag=!dead_player] run function 3ds_remake:entities/player/gooigi
 

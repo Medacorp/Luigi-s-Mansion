@@ -7,6 +7,10 @@ scoreboard players reset @s GrabbedShake
 tag @s remove grabbed
 execute unless data storage luigis_mansion:data my_memory.animation{namespace:"luigis_mansion",id:"yell"} run tag @s remove idle
 execute unless data storage luigis_mansion:data my_memory.animation{namespace:"luigis_mansion",id:"yell"} run tag @s remove animation_may_move
+tag @s remove tick_down_invulnerability
+scoreboard players operation #temp ID = @s ID
+execute as @e[tag=knockback_model] if score #temp ID = @s ID run tag @s add dead
+scoreboard players reset #temp ID
 execute if entity @s[tag=!keep_memory_none] run data modify storage luigis_mansion:data memory append from storage luigis_mansion:data my_memory
 execute if entity @s[tag=!keep_memory_none] run data remove storage luigis_mansion:data my_memory
 tag @s remove keep_memory_none

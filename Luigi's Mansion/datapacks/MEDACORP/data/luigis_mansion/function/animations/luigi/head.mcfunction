@@ -16,7 +16,3 @@ execute at @s if data storage luigis_mansion:data luigi.animation{namespace:"lui
 execute positioned as @s unless data storage luigis_mansion:data luigi.animation{namespace:"luigis_mansion",id:"idle"} run teleport @s ~ ~ ~ ~ ~
 
 $execute at @s run function $(namespace):animations/luigi/$(id)/head
-
-tag @s[tag=low_health] add scared_head
-tag @s[tag=poltergust_grabbed] add scared_head
-function luigis_mansion:animations/luigi/transform_head

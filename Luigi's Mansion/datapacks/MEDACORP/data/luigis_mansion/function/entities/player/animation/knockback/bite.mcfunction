@@ -1,5 +1,6 @@
 scoreboard players add @s AnimationProgress 1
 tag @s add animation_may_move
+tag @s add tick_down_invulnerability
 execute if entity @s[scores={AnimationProgress=1,Sound=0,Health=41..,Shrunk=0}] run playsound luigis_mansion:entity.player.hurt_bitten.high_health player @a[tag=same_room] ~ ~ ~ 1
 execute if entity @s[scores={AnimationProgress=1,Sound=0,Health=41..,Shrunk=1..}] run playsound luigis_mansion:entity.player.hurt_bitten.high_health player @a[tag=same_room] ~ ~ ~ 1 2
 execute if entity @s[scores={AnimationProgress=1,Sound=0,Health=..40,Shrunk=0}] run playsound luigis_mansion:entity.player.hurt_bitten.low_health player @a[tag=same_room] ~ ~ ~ 1

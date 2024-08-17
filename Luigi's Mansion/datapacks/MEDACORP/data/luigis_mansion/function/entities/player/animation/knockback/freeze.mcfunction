@@ -33,5 +33,5 @@ tag @s add disable_flashlight
 tag @s add disable_game_boy_horror
 tag @s add disable_interact
 tag @s add disable_poltergust
-tag @s add animation_may_move
+tag @s add tick_down_invulnerability
 execute if entity @s[scores={AnimationProgress=80}] run function luigis_mansion:entities/player/animation/set/none

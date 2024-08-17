@@ -7,6 +7,7 @@ scoreboard players reset @s GrabbedShake
 tag @s remove grabbed
 tag @s remove idle
 tag @s remove animation_may_move
+tag @s remove tick_down_invulnerability
 scoreboard players operation #temp ID = @s ID
 execute as @e[tag=knockback_model] if score #temp ID = @s ID run tag @s add dead
 scoreboard players reset #temp ID

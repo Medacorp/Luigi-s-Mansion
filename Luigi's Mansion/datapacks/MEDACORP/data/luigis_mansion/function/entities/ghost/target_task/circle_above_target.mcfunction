@@ -16,9 +16,9 @@ execute if entity @e[tag=target_pos,distance=..2,limit=1] run tag @s[tag=!change
 execute facing entity @e[tag=target_pos,limit=1] feet run teleport @s[tag=!new_reached_target] ~ ~ ~ ~ ~
 execute unless score #mirrored Selected matches 1 run teleport @s[tag=new_reached_target,tag=!reached_target] ~ ~ ~ ~-90 0
 execute if score #mirrored Selected matches 1 run teleport @s[tag=new_reached_target,tag=!reached_target] ~ ~ ~ ~90 0
-scoreboard players set #temp Time 3142
-execute unless score #mirrored Selected matches 1 store result storage luigis_mansion:data macro.angle float 0.07 run scoreboard players operation #temp Time /= @s Move
-execute if score #mirrored Selected matches 1 store result storage luigis_mansion:data macro.angle float -0.07 run scoreboard players operation #temp Time /= @s Move
+scoreboard players set #temp Time 36
+execute unless score #mirrored Selected matches 1 store result storage luigis_mansion:data macro.angle float 0.01 run scoreboard players operation #temp Time *= @s Move
+execute if score #mirrored Selected matches 1 store result storage luigis_mansion:data macro.angle float -0.01 run scoreboard players operation #temp Time *= @s Move
 scoreboard players reset #temp Time
 execute at @s[tag=new_reached_target] run function luigis_mansion:entities/ghost/target_task/circle_above_target_degrees with storage luigis_mansion:data macro
 execute at @s run function luigis_mansion:entities/ghost/move_forward

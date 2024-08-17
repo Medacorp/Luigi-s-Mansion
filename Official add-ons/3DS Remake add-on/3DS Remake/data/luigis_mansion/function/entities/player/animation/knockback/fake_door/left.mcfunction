@@ -19,7 +19,7 @@ execute at @e[tag=home,limit=1] run tp @s ~ ~ ~ ~ ~
 execute at @s[scores={AnimationProgress=5..24}] rotated ~-9 0 run teleport @s ^ ^ ^-0.07 ~ ~
 execute if entity @s[scores={AnimationProgress=25,Sound=0,Shrunk=0},tag=!gooigi] run playsound luigis_mansion:entity.player.hurt_little player @a[tag=same_room] ~ ~ ~ 1
 execute if entity @s[scores={AnimationProgress=25,Sound=0,Shrunk=1..},tag=!gooigi] run playsound luigis_mansion:entity.player.hurt_little player @a[tag=same_room] ~ ~ ~ 1 2
-scoreboard players set @s[scores={AnimationProgress=25,Sound=0},tag=!gooigi] Sound 105
+scoreboard players set @s[scores={AnimationProgress=25,Sound=0},tag=!gooigi] Sound 95
 execute at @s[scores={AnimationProgress=60..80}] rotated ~ 0 run teleport @s ^ ^ ^0.05
 execute at @s[scores={AnimationProgress=60..80}] run teleport @s ^ ^ ^ ~ ~3
 execute at @s[scores={AnimationProgress=121..130}] run teleport @s ^ ^ ^ ~ ~-9
