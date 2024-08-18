@@ -7,12 +7,13 @@ tag @s[scores={Dialog=1}] remove headless_run
 tag @s[scores={Dialog=1}] remove run
 tag @s[scores={Dialog=1}] remove walk
 tag @s[scores={Dialog=1}] remove jump
-execute if entity @s[scores={Dialog=1}] unless entity @e[nbt={data:{entity:{namespace:"luigis_mansion",id:"bowser_head"}}},limit=1] run data modify storage luigis_mansion:data entity set value {damage:{},owner:0,tags:["decapitate"]}
-execute if entity @s[scores={Dialog=1}] unless entity @e[nbt={data:{entity:{namespace:"luigis_mansion",id:"bowser_head"}}},limit=1] run data modify storage luigis_mansion:data entity.damage.spit_ice set from entity @s data.damage.spit_ice
-execute if entity @s[scores={Dialog=1}] unless entity @e[nbt={data:{entity:{namespace:"luigis_mansion",id:"bowser_head"}}},limit=1] run data modify storage luigis_mansion:data entity.owner set from entity @s UUID
-execute if entity @s[scores={Dialog=1}] unless entity @e[nbt={data:{entity:{namespace:"luigis_mansion",id:"bowser_head"}}},limit=1] positioned ^ ^3.5 ^-0.4 run function luigis_mansion:spawn_entities/bowser/head
+$execute if entity @s[scores={Dialog=1}] unless entity @e[nbt={data:{entity:{namespace:"luigis_mansion",id:"bowser_head"},owner:$(UUID)}},limit=1] run data modify storage luigis_mansion:data entity set value {damage:{},owner:$(UUID),tags:["decapitate","decapitate_move_up","can_decapitate"]}
+$execute if entity @s[scores={Dialog=1}] unless entity @e[nbt={data:{entity:{namespace:"luigis_mansion",id:"bowser_head"},owner:$(UUID)}},limit=1] run data modify storage luigis_mansion:data entity.damage.spit_ice set from entity @s data.damage.spit_ice
+$execute if entity @s[scores={Dialog=1}] unless entity @e[nbt={data:{entity:{namespace:"luigis_mansion",id:"bowser_head"},owner:$(UUID)}},limit=1] positioned ^ ^3.5 ^-0.4 run function luigis_mansion:spawn_entities/bowser/head
+$execute if entity @s[scores={Dialog=1}] run tag @e[nbt={data:{entity:{namespace:"luigis_mansion",id:"bowser_head"},owner:$(UUID)}},limit=1] add decapitate
 data modify entity @s[scores={Dialog=1}] data.animation set value {namespace:"luigis_mansion",id:"decapitate"}
 data modify entity @s[scores={Dialog=1}] data.initial_animation_progress set value 0
+tag @s[scores={Dialog=40}] remove can_decapitate
 execute if entity @s[scores={Dialog=20}] unless entity @e[nbt={data:{entity:{namespace:"luigis_mansion",id:"king_boo"}}},limit=1] positioned ^ ^3.5 ^0.4 run function luigis_mansion:spawn_entities/portrait_ghost/king_boo
 tag @s[scores={Dialog=40}] remove decapitate
 data modify entity @s[scores={Dialog=40}] data.animation set value {namespace:"luigis_mansion",id:"decapitated"}

@@ -1,5 +1,6 @@
 scoreboard players set @s HomeY 3700
-execute if entity @e[nbt={data:{entity:{namespace:"luigis_mansion",id:"bowser"}}},tag=decapitate,scores={Dialog=1},limit=1] run scoreboard players set @s Wave 60
+execute if entity @e[nbt={data:{entity:{namespace:"luigis_mansion",id:"bowser"}}},tag=decapitate,scores={Dialog=1..20},limit=1] run scoreboard players set @s[scores={Wave=61..}] Wave 60
+execute if entity @e[nbt={data:{entity:{namespace:"luigis_mansion",id:"bowser_head"}}},tag=decapitate,scores={Dialog=1..20},limit=1] run scoreboard players set @s[scores={Wave=61..}] Wave 60
 scoreboard players add @s Wave 1
 tag @s[scores={Wave=..59}] remove in_vacuum
 execute if entity @s[scores={Wave=20..59}] run scoreboard players set #temp Move 1
