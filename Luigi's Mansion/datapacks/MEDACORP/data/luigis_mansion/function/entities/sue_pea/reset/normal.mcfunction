@@ -1,1 +1,1 @@
-scoreboard players set @s Dialog 366
+scoreboard players set @s Dialog 124

@@ -156,4 +156,4 @@ execute if score #dialog Dialog matches 987 as @a[tag=same_room] run function lu
 execute if score #dialog Dialog matches 987 if entity @e[tag=e_gadd,tag=same_room,limit=1,tag=!can_talk_to] run data modify storage luigis_mansion:data dialogs append value {name:{namespace:"e3_demo",id:"ending"},room:-3,progress:0}
 execute if score #dialog Dialog matches 987 if entity @e[tag=e_gadd,tag=same_room,limit=1,tag=can_talk_to] run data modify storage luigis_mansion:data dialogs append value {name:{namespace:"luigis_mansion",id:"underground_lab"},room:-1,progress:-1}
 execute if score #dialog Dialog matches 987 if entity @e[tag=e_gadd,tag=same_room,limit=1,tag=can_talk_to] as @a[tag=same_room] run function luigis_mansion:room/underground_lab/warp_to
-execute if score #dialog Dialog matches 987 run scoreboard players set #temp Dialog -1
+execute if score #dialog Dialog matches 987 run scoreboard players set #dialog Dialog -1

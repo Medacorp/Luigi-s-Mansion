@@ -11,8 +11,14 @@ execute store result entity @e[tag=home,limit=1] Pos[2] double 0.01 run scoreboa
 execute store result entity @e[tag=home,limit=1] Rotation[0] float 1 run scoreboard players get @s RotationY
 execute store result entity @e[tag=home,limit=1] Rotation[1] float 1 run scoreboard players get @s RotationX
 execute at @s[scores={AnimationProgress=..70}] unless entity @e[tag=home,limit=1,distance=..0.1] run scoreboard players add @s AnimationProgress 2
-execute at @e[tag=home,limit=1] run tp @s ~ 0 ~ ~ ~
-execute at @e[tag=home,limit=1] run tp @s ~ ~ ~ ~ ~
+execute store result score #temp RotationY run data get entity @s Rotation[0]
+execute store result score #temp RotationX run data get entity @s Rotation[1]
+execute at @e[tag=home,limit=1] unless score #temp RotationY = @s RotationY run teleport @s[distance=..0.01] ~ ~ ~ ~ ~
+execute at @e[tag=home,limit=1] unless score #temp RotationX = @s RotationX run teleport @s[distance=..0.01] ~ ~ ~ ~ ~
+execute at @e[tag=home,limit=1] run teleport @s[distance=0.01..] ~ 0 ~ ~ ~
+execute at @e[tag=home,limit=1] run teleport @s[distance=0.01..] ~ ~ ~ ~ ~
+scoreboard players reset #temp RotationY
+scoreboard players reset #temp RotationX
 execute at @s[scores={AnimationProgress=70..}] anchored eyes positioned ^ ^ ^ run tag @e[tag=luigi_ice,distance=..0.2,limit=1] add remove_from_existence
 execute at @s[scores={AnimationProgress=70..72}] anchored eyes run particle minecraft:item{item:{id:"minecraft:diamond_pickaxe",components:{"minecraft:unbreakable":{},"minecraft:damage":4,"minecraft:custom_model_data":38}}} ^ ^ ^ 0.3 0.3 0.3 0 50 force @a[tag=same_room]
 scoreboard players set @s[scores={AnimationProgress=..70,Invulnerable=6..}] Invulnerable 5
@@ -33,5 +39,6 @@ tag @s add disable_flashlight
 tag @s add disable_game_boy_horror
 tag @s add disable_interact
 tag @s add disable_poltergust
+tag @s add animation_may_move
 tag @s add tick_down_invulnerability
 execute if entity @s[scores={AnimationProgress=80}] run function luigis_mansion:entities/player/animation/set/none
