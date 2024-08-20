@@ -16,11 +16,12 @@ execute if entity @s[tag=purple,tag=!large_flame] unless entity @s[tag=was_lit,t
 
 execute if entity @s[tag=!lit] run data modify entity @s ArmorItems[3].id set value "minecraft:stone_button"
 execute if entity @s[tag=lit] run data modify entity @s ArmorItems[3].id set value "minecraft:diamond_pickaxe"
-scoreboard players add @s[tag=lit,tag=large_flame] ActionTime 1
-tag @s[tag=lit,scores={ActionTime=40}] remove large_flame
-tag @s[tag=!lit] remove large_flame
-scoreboard players reset @s[tag=!large_flame] ActionTime
 tag @s remove was_lit
 tag @s remove was_purple
 tag @s[tag=lit] add was_lit
 tag @s[tag=purple] add was_purple
+scoreboard players add @s[tag=lit,tag=large_flame] ActionTime 1
+tag @s[tag=lit,scores={ActionTime=40}] remove was_lit
+tag @s[tag=lit,scores={ActionTime=40}] remove large_flame
+tag @s[tag=!lit] remove large_flame
+scoreboard players reset @s[tag=!large_flame] ActionTime

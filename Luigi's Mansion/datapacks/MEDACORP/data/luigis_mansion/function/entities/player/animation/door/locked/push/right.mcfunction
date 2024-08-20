@@ -3,8 +3,15 @@ execute at @s run summon minecraft:marker ~ ~ ~ {Tags:["home","remove_from_exist
 execute store result entity @e[tag=home,limit=1] Pos[0] double 0.01 run scoreboard players get @s PositionX
 execute store result entity @e[tag=home,limit=1] Pos[2] double 0.01 run scoreboard players get @s PositionZ
 execute store result entity @e[tag=home,limit=1] Rotation[0] float 1 run scoreboard players get @s HomeRotation
-execute at @e[tag=home,limit=1] run tp @s[scores={AnimationProgress=..39}] ~ ~ ~ ~ 40
-execute at @e[tag=home,limit=1] run tp @s[scores={AnimationProgress=40}] ~ ~ ~ ~ 0
+execute store result score #temp RotationY run data get entity @s Rotation[0]
+execute store result score #temp RotationX run data get entity @s Rotation[1]
+execute at @e[tag=home,limit=1] unless score #temp RotationY = @s HomeRotation run teleport @s[distance=..0.01] ~ ~ ~ ~ ~
+execute at @e[tag=home,limit=1] unless score #temp RotationX matches 40 run teleport @s[distance=..0.01] ~ ~ ~ ~ ~
+execute at @e[tag=home,limit=1] run teleport @s[distance=0.01..] 0 0 0
+execute at @e[tag=home,limit=1] run teleport @s[distance=0.01..] ~ ~ ~ ~ 40
+execute at @e[tag=home,limit=1] run teleport @s[scores={AnimationProgress=40}] ~ ~ ~ ~ 0
+scoreboard players reset #temp RotationY
+scoreboard players reset #temp RotationX
 kill @e[tag=home,limit=1]
 scoreboard players set @s Sound 5
 scoreboard players set @s Invulnerable 1

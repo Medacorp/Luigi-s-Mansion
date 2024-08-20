@@ -4,4 +4,4 @@ scoreboard players reset #guest_room Vacuumables
 
 execute if block 741 21 68 minecraft:redstone_lamp[lit=true] run function #luigis_mansion:room/hidden/guest_room/reset
 tag @e[scores={Room=70},tag=haunted_clown_coll] remove enabled
-scoreboard players set @e[scores={Room=70},nbt={data:{entity:{namespace:"luigis_mansion",id:"sue_pea"}}}] Dialog 176
+scoreboard players set @e[scores={Room=70},nbt={data:{entity:{namespace:"luigis_mansion",id:"sue_pea"}}}] Dialog 124

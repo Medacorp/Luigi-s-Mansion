@@ -265,7 +265,7 @@ execute if score #dialog Dialog matches 392 if entity @a[tag=same_room,tag=next_
 
 execute if score #dialog Dialog matches 393 as @a[tag=same_room,tag=looking_at_map] at @s run function luigis_mansion:selection_menu/game_boy_horror/map/exit
 execute if score #dialog Dialog matches 393 as @a[tag=same_room] run function luigis_mansion:room/gallery/warp_to
-execute if score #dialog Dialog matches 393 run data modify storage luigis_mansion:data dialogs append value {name:{namespace:"luigis_mansion",id:"gallery/talk"},room:-5,progress:-1}
+execute if score #dialog Dialog matches 393 run data modify storage luigis_mansion:data dialogs append value {name:{namespace:"luigis_mansion",id:"gallery/talk"},room:-8,progress:-1}
 execute if score #dialog Dialog matches 393 run data modify storage luigis_mansion:data rooms.training_room merge value {cleared:1b}
 execute if score #dialog Dialog matches 393 as @a[tag=same_room,tag=!spectator] run function luigis_mansion:entities/player/animation/set/none
 execute if score #dialog Dialog matches 393 run tag @a[tag=looking_at_map,nbt={Dimension:"minecraft:overworld"},limit=1] add regenerate_map
