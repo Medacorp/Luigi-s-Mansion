@@ -1,4 +1,4 @@
-execute unless entity @e[nbt={data:{entity:{namespace:"luigis_mansion",id:"floating_whirlindas_male"}}},tag=same_room,limit=1] unless entity @e[nbt={data:{entity:{namespace:"luigis_mansion",id:"floating_whirlindas_female"}}},tag=same_room,limit=1] run tag @s add no_floating_whirlindas
+execute if entity @s[scores={MusicType=12..13,MusicGroup=0}] unless entity @e[nbt={data:{entity:{namespace:"luigis_mansion",id:"floating_whirlindas_male"}}},tag=same_room,limit=1] unless entity @e[nbt={data:{entity:{namespace:"luigis_mansion",id:"floating_whirlindas_female"}}},tag=same_room,limit=1] run tag @s add no_floating_whirlindas
 execute if entity @s[scores={MusicType=12,MusicGroup=0},tag=!no_floating_whirlindas] run function luigis_mansion:other/music/set/force/floating_whirlindas
 execute if entity @s[scores={MusicType=13,MusicGroup=0},tag=no_floating_whirlindas] run function luigis_mansion:other/music/set/force/ball_room
 tag @s remove no_floating_whirlindas
