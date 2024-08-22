@@ -1,0 +1,4 @@
+data modify storage luigis_mansion:data paths set value []
+execute store result score #temp Time if entity @e[nbt={data:{entity:{namespace:"luigis_mansion",id:"purple_mouse"}}},tag=visible,tag=!ignore_me,scores={Room=7}]
+execute if score #temp Time matches ..1 run data modify storage luigis_mansion:data paths append value {force_move:1b,steps:[{instant:1b,wait:10,position:[729.0d,20.0d,-43.0d]},{position:[724.1d,20.0d,-43.0d]},{position:[724.1d,26.9d,-43.0d]},{position:[726.5d,26.9d,-43.0d]},{position:[728.5d,26.9d,-40.5d]},{position:[726.5d,26.9d,-38.0d]},{position:[724.1d,26.9d,-38.0d]},{position:[724.1d,20.0d,-38.0d]},{wait:10,position:[729.0d,20.0d,-38.0d]}]}
+scoreboard players reset #temp Time

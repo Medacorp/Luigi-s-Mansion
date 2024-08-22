@@ -1,3 +1,3 @@
-summon minecraft:item_frame 685 121 23 {Facing:5b,Silent:1b,Invulnerable:1b,Item:{id:"minecraft:clock",count:1},CustomName:'{"type":"translatable","translate":"luigis_mansion:furniture.painting"}',Invisible:1b,Fixed:1b}
-summon minecraft:item_frame 685 121 21 {Facing:5b,Silent:1b,Invulnerable:1b,Item:{id:"minecraft:clock",count:1},CustomName:'{"type":"translatable","translate":"luigis_mansion:furniture.painting"}',Invisible:1b,Fixed:1b}
+summon minecraft:item_frame 685 121 23 {Tags:["static","no_ai"],Facing:5b,Silent:1b,Invulnerable:1b,Item:{id:"minecraft:clock",count:1},CustomName:'{"type":"translatable","translate":"luigis_mansion:furniture.painting"}',Invisible:1b,Fixed:1b}
+summon minecraft:item_frame 685 121 21 {Tags:["static","no_ai"],Facing:5b,Silent:1b,Invulnerable:1b,Item:{id:"minecraft:clock",count:1},CustomName:'{"type":"translatable","translate":"luigis_mansion:furniture.painting"}',Invisible:1b,Fixed:1b}
 scoreboard players set @e[x=685.5,y=121.0,z=22.5,distance=..3,type=minecraft:item_frame] Room 62

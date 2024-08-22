@@ -1,2 +1,2 @@
-summon minecraft:item_frame 738 21 38 {Facing:5b,CustomName:'{"type":"translatable","translate":"luigis_mansion:entity.poster"}',Fixed:1b,Invisible:1b,Silent:1b,Item:{id:"minecraft:filled_map",count:1,components:{"minecraft:map_id":113}},Tags:["poster"]}
+summon minecraft:item_frame 738 21 38 {Tags:["static","no_ai"],Facing:5b,CustomName:'{"type":"translatable","translate":"luigis_mansion:entity.poster"}',Fixed:1b,Invisible:1b,Silent:1b,Item:{id:"minecraft:filled_map",count:1,components:{"minecraft:map_id":113}},Tags:["poster"]}
 scoreboard players set @e[x=738.5,y=21.0,z=38.5,distance=..2,type=minecraft:item_frame] Room 49

@@ -1,2 +1,2 @@
-summon minecraft:item_frame 699 13 31 {Facing:3b,Silent:1b,Invulnerable:1b,Item:{id:"minecraft:clock",count:1},CustomName:'{"type":"translatable","translate":"luigis_mansion:furniture.painting"}',Invisible:1b,Fixed:1b}
+summon minecraft:item_frame 699 13 31 {Tags:["static","no_ai"],Facing:3b,Silent:1b,Invulnerable:1b,Item:{id:"minecraft:clock",count:1},CustomName:'{"type":"translatable","translate":"luigis_mansion:furniture.painting"}',Invisible:1b,Fixed:1b}
 scoreboard players set @e[x=699.5,y=13.0,z=31.5,distance=..2,type=minecraft:item_frame] Room 14

@@ -5,4 +5,5 @@ function luigis_mansion:spawn_entities/setup/vanish_time
 function luigis_mansion:spawn_entities/setup/drop_pearls
 function luigis_mansion:spawn_entities/setup/drop_timer_loot
 function luigis_mansion:spawn_entities/setup/affected_by
+function luigis_mansion:spawn_entities/setup/optimize_entity_search
 function luigis_mansion:spawn_entities/setup/mansion_behavior

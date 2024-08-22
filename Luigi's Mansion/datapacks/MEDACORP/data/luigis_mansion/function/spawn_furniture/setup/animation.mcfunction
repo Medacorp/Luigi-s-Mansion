@@ -1,0 +1,4 @@
+execute if data storage luigis_mansion:data furniture.animation.namespace run data modify entity @e[tag=this_entity,limit=1] ArmorItems[3].components."minecraft:custom_data".animation.namespace set from storage luigis_mansion:data furniture.animation.namespace
+execute if data storage luigis_mansion:data furniture.animation.id run data modify entity @e[tag=this_entity,limit=1] ArmorItems[3].components."minecraft:custom_data".animation.id set from storage luigis_mansion:data furniture.animation.id
+execute if data storage luigis_mansion:data furniture.animation.progress run data modify entity @e[tag=this_entity,limit=1] ArmorItems[3].components."minecraft:custom_data".initial_animation_progress set from storage luigis_mansion:data furniture.animation.prgoress
+execute if data storage luigis_mansion:data furniture.animation{frozen:1b} run tag @e[tag=this_entity,limit=1] add freeze_animation_next_tick

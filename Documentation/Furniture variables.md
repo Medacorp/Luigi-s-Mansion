@@ -57,6 +57,13 @@ furniture:{
         * "spawn_ghost", //Spawns the ghost hiding in this furniture.
     
     //non-default setup
+    animation:{ //Animation info.
+        namespace:"luigis_mansion", //The namespace of the animation to use. Default = luigis_mansion.
+        id:"idle", //The namespace of the animation to use. Default = idle.
+        progress:X, //The progress the animation already has on the first tick. Default = 0.
+        frozen:1b //Whether or not the animation is frozen. Default = 0b.
+    },
+    no_ai:1b, //Whether this furniture's AI is disabled. Default = 0b.
     <type>_elemental_source:{ //Elemental source data, can only be applied to furniture supporting that elemental type. Not provided means it's not an elemental source. Default = none.
         always_spawn:1b, //When set the elemental ghost spawns regardless of distance. Default = 0b.
         must_vacuum:1b, //When set the elemental ghost only pops up when vacuuming nearby. Ignored if always_spawn is set. Default = 0b.

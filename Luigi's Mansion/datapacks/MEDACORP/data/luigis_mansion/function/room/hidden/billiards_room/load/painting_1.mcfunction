@@ -1,2 +1,2 @@
-summon minecraft:item_frame 677 13 -73 {Facing:3b,Silent:1b,Invulnerable:1b,Item:{id:"minecraft:filled_map",count:1,components:{"minecraft:map_id":277}},CustomName:'{"type":"translatable","translate":"luigis_mansion:furniture.painting"}',Invisible:1b,Fixed:1b}
+summon minecraft:item_frame 677 13 -73 {Tags:["static","no_ai"],Facing:3b,Silent:1b,Invulnerable:1b,Item:{id:"minecraft:filled_map",count:1,components:{"minecraft:map_id":277}},CustomName:'{"type":"translatable","translate":"luigis_mansion:furniture.painting"}',Invisible:1b,Fixed:1b}
 scoreboard players set @e[x=677.5,y=13.0,z=-72.5,distance=..2,type=minecraft:item_frame] Room 47

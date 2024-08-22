@@ -3,9 +3,7 @@ execute if entity @s[tag=unlock_door] positioned ^ ^ ^0.5 align xz positioned ~0
 tag @s remove unlock_door
 tag @s remove locked_door
 scoreboard players add @s AnimationProgress 1
-fill ^ ^ ^-0.5 ^ ^1 ^-0.5 minecraft:air replace minecraft:light_gray_stained_glass
-data modify entity @s[tag=push,tag=!forced_animation] ArmorItems[3].components."minecraft:custom_data".animation set value {namespace:"luigis_mansion",id:"open/push"}
-data modify entity @s[tag=!push,tag=forced_animation] ArmorItems[3].components."minecraft:custom_data".animation set value {namespace:"luigis_mansion",id:"open/push"}
+data modify entity @s ArmorItems[3].components."minecraft:custom_data".animation set value {namespace:"luigis_mansion",id:"open/push"}
 data modify entity @s[tag=!push,tag=!forced_animation] ArmorItems[3].components."minecraft:custom_data".animation set value {namespace:"luigis_mansion",id:"open/pull"}
 data modify entity @s[tag=push,tag=forced_animation] ArmorItems[3].components."minecraft:custom_data".animation set value {namespace:"luigis_mansion",id:"open/pull"}
 

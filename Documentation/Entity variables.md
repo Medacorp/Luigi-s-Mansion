@@ -30,6 +30,10 @@ entity:{
     appear_type:"<type>", //Ghost appear type to use, differs per ghost, see IDs in use for valid values.
     attack_type:"<type>", //Ghost attack type to use, differs per ghost, see IDs in use for valid values.
     second_flee_damage:X, //How much damage this ghost can take in one suction before it enters its second flee state, escaping 2.5 seconds later. If absent, never enters second flee state.
+    room_search:{ //What types of entities this portrait ghost should look for when tagging for same room; the less enabled, the more optimized. Model pieces and reflections are never tagged, and players are always tagged.
+        furniture:1b, //Whether entities furniture get tagged. Default = 0b.
+        non_players:1b //Whether entities entity types other than listed above get tagged. Default = 0b.
+    },
     affected_by:["<method>"], //The methods this portrait ghost is affected by aside from vacuuming. Allowed values: dust, fire, water, ice. Default = none.
     drop_pearls:0b, //Whether this portrait ghost should drop pearls. Default = 1b.
     drop_timer_loot:0b, //Whether this portrait ghost should drop loot based on how long it is being vacuumed. Default = 1b.
@@ -74,21 +78,23 @@ entity:{
     },
     
     //Non-default setup
-    paths:[ //Paths this entity can follow; used by the target task "follow path"; if that task is selected, but this is empty, it turns into the "do nothing" task. Default = none.
-        { //A single option; using the "set_random_path" function selects a random option; using "set_specific_path" sets the path to the index specified in the macro "index".
-            id:"...", //Optional, this path is unable to get selected using "set_random_path" if there is a path in this room with this in the disable_ids list.
-            disable_ids:["..."], //Optional, used to disable path selection for other entities using "set_random_path".
-            loop:1b, //Whether this path loops or not. If not, the entity stops at the end of the path. Default = 0b.
-            force_move:1b, //If set, the entity will move forward, even into invalid positions such as walls. Otherwise if path is obstructed the entity moves to the next step. Default = 0b.
-            steps:[ //Individual path steps to go to.
-                {
-                    instant:1b, //If the entity warps to this step position, rather than progressing towards it. Default = 0b.
-                    wait:X, //The amount of ticks to stay in place when reaching the position. Default = 0.
-                    position:[X,Y,Z] //The XYZ coodinates to go to.
-                }
-            ]
-        }
-    ],
+    paths: ... //Paths this entity can follow; used by the target task "follow path"; if that task is selected, but this is empty, it turns into the "do nothing" task. Default = none.
+        "luigis_mansion:room/normal/hallway_2/blue_mouse_path", //Function reference format; the function will need to provide "luigis_mansion:data paths" data in the in-line format. Only supported for ghosts.
+        [ //In-line format. Unlike the function reference format, this format allows "set_specific_path" to select any path, whereas the function reference only provides acceptable paths. Supported by ghosts and wool.
+            { //A single option; using the "set_random_path" function selects a random option; using "set_specific_path" sets the path to the index specified in the macro "index".
+                id:"...", //Optional, this path is unable to get selected using "set_random_path" if there is a path in use with this in the disable_ids list. Not used for function reference.
+                disable_ids:["..."], //Optional, used to disable path selection for other entities using "set_random_path".
+                loop:1b, //Whether this path loops or not. If not, the entity stops at the end of the path. Default = 0b.
+                force_move:1b, //If set, the entity will move forward, even into invalid positions such as walls. Otherwise if path is obstructed the entity moves to the next step. Default = 0b.
+                steps:[ //Individual path steps to go to.
+                    {
+                        instant:1b, //If the entity warps to this step position, rather than progressing towards it. Default = 0b.
+                        wait:X, //The amount of ticks to stay in place when reaching the position. Default = 0.
+                        position:[X,Y,Z] //The XYZ coodinates to go to.
+                    }
+                ]
+            }
+        ],
     mansion:{ //The mansion this portrait ghost, boo or mario belongs to, this is used to run mansion specific functions (such as AI and resetting). If not provided, defaults to loaded mansion ID, if absent, defaults to "luigis_mansion:empty".
         namespace:"luigis_mansion", //The namespace of the mansion. Default = "luigis_mansion".
         id:"empty" //The ID of the mansion. Default = "empty".

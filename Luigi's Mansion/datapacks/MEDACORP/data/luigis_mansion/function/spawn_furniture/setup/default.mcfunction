@@ -20,6 +20,8 @@ function luigis_mansion:spawn_furniture/setup/boo_can_hide_in
 function luigis_mansion:spawn_furniture/setup/scan_message
 
 # Other
+function luigis_mansion:spawn_furniture/setup/animation
+function luigis_mansion:spawn_furniture/setup/no_ai
 execute if entity @e[tag=this_entity,tag=can_be_fire_elemental_source,limit=1] run function luigis_mansion:spawn_furniture/setup/fire_elemental_source
 execute if entity @e[tag=this_entity,tag=can_be_water_elemental_source,limit=1] run function luigis_mansion:spawn_furniture/setup/water_elemental_source
 execute if entity @e[tag=this_entity,tag=can_be_ice_elemental_source,limit=1] run function luigis_mansion:spawn_furniture/setup/ice_elemental_source
@@ -30,6 +32,7 @@ function luigis_mansion:spawn_furniture/setup/particles
 function luigis_mansion:spawn_furniture/setup/room
 function luigis_mansion:spawn_furniture/setup/tags
 function luigis_mansion:spawn_furniture/setup/position
+function luigis_mansion:spawn_furniture/setup/optimize_entity_search
 function luigis_mansion:spawn_furniture/setup/debug_spawn
 
 # If it never can be affected by anything, it never animates, and as such its reflection doesn't need updates

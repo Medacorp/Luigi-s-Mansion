@@ -1,0 +1,2 @@
+execute if data storage luigis_mansion:data entity.room_search{non_players:1b} run tag @e[tag=this_entity,limit=1] remove same_room_players_only
+execute if data storage luigis_mansion:data entity.room_search{furniture:1b} run tag @e[tag=this_entity,limit=1] add same_room_select_furniture

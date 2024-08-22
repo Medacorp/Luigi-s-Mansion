@@ -1,0 +1,1 @@
+execute as @e[tag=this_entity,tag=!swinging_harms,tag=!cast_shadow,limit=1] unless entity @s[tag=mirror,tag=reflects_entities] run tag @s add same_room_players_only

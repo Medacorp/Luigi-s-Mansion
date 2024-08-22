@@ -1,2 +1,2 @@
-summon minecraft:item_frame 743 23 55 {Facing:3b,Silent:1b,Invulnerable:1b,Item:{id:"minecraft:filled_map",count:1,components:{"minecraft:map_id":138}},CustomName:'{"type":"translatable","translate":"luigis_mansion:furniture.painting"}',Invisible:1b,Fixed:1b}
+summon minecraft:item_frame 743 23 55 {Tags:["static","no_ai"],Facing:3b,Silent:1b,Invulnerable:1b,Item:{id:"minecraft:filled_map",count:1,components:{"minecraft:map_id":138}},CustomName:'{"type":"translatable","translate":"luigis_mansion:furniture.painting"}',Invisible:1b,Fixed:1b}
 scoreboard players set @e[x=743.5,y=23.0,z=55.5,distance=..2,type=minecraft:item_frame] Room 10
