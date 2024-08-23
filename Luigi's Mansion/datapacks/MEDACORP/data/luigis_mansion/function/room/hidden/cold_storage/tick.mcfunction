@@ -9,6 +9,8 @@ execute as @a[scores={Room=68}] run function luigis_mansion:room/hidden/cold_sto
 
 execute as @e[x=724.5,y=3,z=6.5,distance=..3,tag=ghost,tag=fleeing] at @s run teleport @s ~ ~ ~ -45 ~
 
+#todelete - old furniture
 function #luigis_mansion:room/hidden/cold_storage/interactions/room
+#/todelete
 
 execute if entity @a[tag=!pause_dialog,scores={Room=68},tag=!spectator,limit=1] run function luigis_mansion:room/hidden/cold_storage/ghosts

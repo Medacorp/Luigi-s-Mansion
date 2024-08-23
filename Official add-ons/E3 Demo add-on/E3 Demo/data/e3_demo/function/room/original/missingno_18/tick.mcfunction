@@ -1,13 +1,8 @@
 execute unless score #missingno_18 Ticking matches 1 run function #e3_demo:room/original/missingno_18/load
 execute as @a[x=737,y=10,z=53,dx=14,dy=7,dz=20] unless entity @s[scores={Room=34}] run scoreboard players operation @s LastRoom = @s Room
 scoreboard players set @a[x=737,y=10,z=53,dx=14,dy=7,dz=20] Room 34
-#todelete - old furniture
-scoreboard players set #temp Room 34
-#/todelete
 
 execute as @a[scores={Room=34}] run function e3_demo:room/original/missingno_18/tick_per_player
-
-function #e3_demo:room/original/missingno_18/interactions/room
 
 execute if entity @a[tag=!pause_dialog,scores={Room=34},tag=!spectator,limit=1] run function e3_demo:room/original/missingno_18/ghosts
 

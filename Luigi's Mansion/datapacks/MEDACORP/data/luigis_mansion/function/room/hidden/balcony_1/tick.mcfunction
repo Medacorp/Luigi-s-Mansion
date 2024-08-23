@@ -10,6 +10,8 @@ execute as @a[scores={Room=6}] run function luigis_mansion:room/hidden/balcony_1
 execute if entity @e[tag=toad,scores={Room=6},tag=talk] if data storage luigis_mansion:data current_state.current_data.rooms.balcony_1{cleared:0b} unless data storage luigis_mansion:data dialogs[{room:6}] run data modify storage luigis_mansion:data dialogs append value {name:{namespace:"luigis_mansion",id:"toad_2"},room:6,progress:0}
 execute if entity @e[tag=toad,scores={Room=6},tag=talk] if data storage luigis_mansion:data current_state.current_data.rooms.balcony_1{cleared:1b} unless data storage luigis_mansion:data dialogs[{room:6}] run data modify storage luigis_mansion:data dialogs append value {name:{namespace:"luigis_mansion",id:"toad_2_repeat"},room:6,progress:0}
 
+#todelete - old furniture
 function #luigis_mansion:room/hidden/balcony_1/interactions/room
+#/todelete
 
 execute if entity @a[tag=!pause_dialog,scores={Room=6},tag=!spectator,limit=1] run function luigis_mansion:room/hidden/balcony_1/ghosts

@@ -9,7 +9,9 @@ execute as @e[scores={Room=5}] unless entity @s[type=!minecraft:armor_stand,type
 
 execute as @a[scores={Room=5}] run function luigis_mansion:room/hidden/wardrobe_room/tick_per_player
 
+#todelete - old furniture
 function #luigis_mansion:room/hidden/wardrobe_room/interactions/room
+#/todelete
 
 clone 678 21 -52 678 22 -49 676 21 -52 filtered minecraft:warped_trapdoor
 clone 679 21 -52 679 22 -49 675 21 -52 filtered minecraft:warped_trapdoor

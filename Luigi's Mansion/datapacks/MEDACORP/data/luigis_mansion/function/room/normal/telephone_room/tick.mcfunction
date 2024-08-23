@@ -7,7 +7,9 @@ scoreboard players set #temp Room 56
 
 execute as @a[scores={Room=56}] run function luigis_mansion:room/normal/telephone_room/tick_per_player
 
+#todelete - old furniture
 function #luigis_mansion:room/normal/telephone_room/interactions/room
+#/todelete
 
 execute unless data storage luigis_mansion:data dialogs[{room:56}] unless data storage luigis_mansion:data current_state.current_data.technical_data{telephone_1:1b} if data storage luigis_mansion:data current_state.current_data{blackout:1b} as @a[tag=!spectator,x=751.5,y=29,z=17.5,distance=..0.7,limit=1] run function luigis_mansion:room/normal/telephone_room/answer_phone_1
 execute unless data storage luigis_mansion:data dialogs[{room:56}] if data storage luigis_mansion:data current_state.current_data.technical_data{telephone_1:1b} unless data storage luigis_mansion:data current_state.current_data.technical_data{telephone_2:1b} if data storage luigis_mansion:data current_state.current_data{blackout:1b} as @a[tag=!spectator,x=751.5,y=29,z=27.5,distance=..0.7,limit=1] run function luigis_mansion:room/normal/telephone_room/answer_phone_2

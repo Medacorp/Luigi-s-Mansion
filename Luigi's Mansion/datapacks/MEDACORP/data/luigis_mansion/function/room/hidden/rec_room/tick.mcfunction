@@ -12,6 +12,8 @@ execute as @a[scores={Room=32}] run function luigis_mansion:room/hidden/rec_room
 execute at @e[tag=swinging_harms,scores={Room=32,FurnitureVacuum=0}] align y run fill ~ ~-4 ~ ~ ~-2 ~ minecraft:light_gray_stained_glass
 execute as @e[tag=swinging_harms,scores={Room=32}] unless entity @s[scores={FurnitureVacuum=0}] at @s align y run fill ~ ~-4 ~ ~ ~-2 ~ minecraft:air
 
+#todelete - old furniture
 function #luigis_mansion:room/hidden/rec_room/interactions/room
+#/todelete
 
 execute if entity @a[tag=!pause_dialog,scores={Room=32},tag=!spectator,limit=1] run function luigis_mansion:room/hidden/rec_room/ghosts

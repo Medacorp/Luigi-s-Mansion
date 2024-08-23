@@ -9,7 +9,9 @@ execute as @e[scores={Room=13}] unless entity @s[type=!minecraft:armor_stand,typ
 
 execute as @a[scores={Room=13}] run function e3_demo:room/original/lavatory/tick_per_player
 
+#todelete - old furniture
 function #e3_demo:room/original/lavatory/interactions/room
+#/todelete
 
 execute if block 663 14 37 minecraft:oak_trapdoor[open=true] run setblock 659 14 37 minecraft:oak_trapdoor[open=true,facing=west,half=top]
 execute if block 663 14 37 minecraft:oak_trapdoor[open=false] run setblock 659 14 37 minecraft:oak_trapdoor[open=false,facing=west,half=top]

@@ -21,6 +21,8 @@ execute if entity @e[tag=ghost,nbt={data:{entity:{id:"purple_bomber"}}},tag=!hid
 execute if entity @e[tag=ghost,tag=hidden,tag=new_ghost,scores={Room=71}] run scoreboard players set #freeze_timer Selected 1
 execute if score #freeze_timer Selected matches 1 as @a unless entity @s[scores={Room=71}] run scoreboard players set #freeze_timer Selected 0
 
+#todelete - old furniture
 function #luigis_mansion:room/normal/the_artists_studio/interactions/room
+#/todelete
 
 execute if entity @a[tag=!pause_dialog,scores={Room=71},tag=!spectator,limit=1] run function luigis_mansion:room/normal/the_artists_studio/ghosts

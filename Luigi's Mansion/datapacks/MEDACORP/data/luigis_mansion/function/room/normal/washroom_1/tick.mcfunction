@@ -12,7 +12,9 @@ execute as @a[scores={Room=19}] run function luigis_mansion:room/normal/washroom
 execute if entity @e[tag=toad,scores={Room=19},tag=talk] if data storage luigis_mansion:data current_state.current_data.rooms.washroom_1{cleared:0b} unless data storage luigis_mansion:data dialogs[{room:19}] run data modify storage luigis_mansion:data dialogs append value {name:{namespace:"luigis_mansion",id:"toad_3"},room:19,progress:0}
 execute if entity @e[tag=toad,scores={Room=19},tag=talk] if data storage luigis_mansion:data current_state.current_data.rooms.washroom_1{cleared:1b} unless data storage luigis_mansion:data dialogs[{room:19}] run data modify storage luigis_mansion:data dialogs append value {name:{namespace:"luigis_mansion",id:"toad_3_repeat"},room:19,progress:0}
 
+#todelete - old furniture
 function #luigis_mansion:room/normal/washroom_1/interactions/room
+#/todelete
 
 execute if block 663 14 37 minecraft:oak_trapdoor[open=true] run setblock 659 14 37 minecraft:oak_trapdoor[open=true,facing=west,half=top]
 execute if block 663 14 37 minecraft:oak_trapdoor[open=false] run setblock 659 14 37 minecraft:oak_trapdoor[open=false,facing=west,half=top]

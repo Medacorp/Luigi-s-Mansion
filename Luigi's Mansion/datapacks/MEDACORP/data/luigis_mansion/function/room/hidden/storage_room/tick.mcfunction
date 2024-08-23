@@ -9,7 +9,9 @@ execute as @e[scores={Room=18}] unless entity @s[type=!minecraft:armor_stand,typ
 
 execute as @a[scores={Room=18}] run function luigis_mansion:room/hidden/storage_room/tick_per_player
 
+#todelete - old furniture
 function #luigis_mansion:room/hidden/storage_room/interactions/room
+#/todelete
 
 execute if block 689 13 75 minecraft:stone_button[powered=true] run setblock 671 13 75 minecraft:stone_button[powered=true,face=wall,facing=east]
 execute if block 689 13 75 minecraft:stone_button[powered=false] run setblock 671 13 75 minecraft:stone_button[powered=false,face=wall,facing=east]

@@ -1,1 +1,2 @@
 execute if data storage luigis_mansion:data furniture{no_ai:1b} run tag @e[tag=this_entity,limit=1] add no_ai
+tag @e[tag=this_entity,tag=!searchable_by_time,tag=!affected_by_dust,tag=!affected_by_fire,tag=!affected_by_ice,tag=!affected_by_interact,tag=!affected_by_vacuum,tag=!affected_by_water,tag=no_dust,tag=no_loot,limit=1] add no_ai

@@ -7,6 +7,8 @@ scoreboard players set #temp Room 28
 
 execute as @a[scores={Room=28}] run function luigis_mansion:room/hidden/boneyard/tick_per_player
 
+#todelete - old furniture
 function #luigis_mansion:room/hidden/boneyard/interactions/room
+#/todelete
 
 execute if entity @a[tag=!pause_dialog,scores={Room=28},tag=!spectator,limit=1] run function luigis_mansion:room/hidden/boneyard/ghosts

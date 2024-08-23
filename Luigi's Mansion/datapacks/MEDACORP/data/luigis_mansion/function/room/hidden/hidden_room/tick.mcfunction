@@ -9,6 +9,8 @@ execute as @e[scores={Room=24}] unless entity @s[type=!minecraft:armor_stand,typ
 
 execute as @a[scores={Room=24}] run function luigis_mansion:room/hidden/hidden_room/tick_per_player
 
+#todelete - old furniture
 function #luigis_mansion:room/hidden/hidden_room/interactions/room
+#/todelete
 
 execute if entity @a[tag=!pause_dialog,scores={Room=24},tag=!spectator,limit=1] run function luigis_mansion:room/hidden/hidden_room/ghosts

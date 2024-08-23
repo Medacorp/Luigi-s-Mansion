@@ -9,3 +9,5 @@ scoreboard players reset #temp2 Time
 scoreboard players reset #temp3 Time
 execute positioned as @e[tag=temp,limit=1] run function luigis_mansion:other/drop_loot
 kill @e[tag=temp,limit=1]
+tag @s add no_loot
+tag @s[tag=!searchable_by_time,tag=!affected_by_dust,tag=!affected_by_fire,tag=!affected_by_ice,tag=!affected_by_interact,tag=!affected_by_vacuum,tag=!affected_by_water,tag=no_dust,tag=no_loot] add no_ai

@@ -9,6 +9,7 @@ execute if data storage luigis_mansion:data my_memory.animation{namespace:"luigi
 execute if data storage luigis_mansion:data my_memory.animation{namespace:"luigis_mansion",id:"search/hump"} if entity @a[tag=searcher,scores={InteractionTime=12},limit=1] run playsound luigis_mansion:furniture.search.concrete block @a[tag=same_room] ~ ~ ~ 1 1
 execute if data storage luigis_mansion:data my_memory.animation{namespace:"luigis_mansion",id:"search/bash"} if entity @a[tag=searcher,scores={InteractionTime=9},limit=1] run playsound luigis_mansion:furniture.search.concrete block @a[tag=same_room] ~ ~ ~ 1 0.9
 execute unless entity @s run tag @a[tag=same_room] remove same_room
+execute unless entity @s run tag @a[tag=exact_same_room] remove exact_same_room
 execute if entity @s[tag=!keep_memory] if entity @a[tag=searcher,limit=1] run data modify storage luigis_mansion:data memory append from storage luigis_mansion:data my_memory
 execute if entity @s[tag=!keep_memory] if entity @a[tag=searcher,limit=1] run data remove storage luigis_mansion:data my_memory
 tag @s remove keep_memory

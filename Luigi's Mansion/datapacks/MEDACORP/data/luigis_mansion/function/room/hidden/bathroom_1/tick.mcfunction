@@ -9,7 +9,9 @@ execute as @e[scores={Room=16}] unless entity @s[type=!minecraft:armor_stand,typ
 
 execute as @a[scores={Room=16}] run function luigis_mansion:room/hidden/bathroom_1/tick_per_player
 
+#todelete - old furniture
 function #luigis_mansion:room/hidden/bathroom_1/interactions/room
+#/todelete
 
 clone 654 12 -7 654 16 -12 644 12 -12
 

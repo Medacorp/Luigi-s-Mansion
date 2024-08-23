@@ -7,7 +7,9 @@ scoreboard players set #temp Room 49
 
 execute as @a[scores={Room=49}] run function luigis_mansion:room/hidden/the_twins_room/tick_per_player
 
+#todelete - old furniture
 function #luigis_mansion:room/hidden/the_twins_room/interactions/room
+#/todelete
 
 execute if score #the_twins_room Wave matches 5 run function luigis_mansion:room/hidden/the_twins_room/hide_and_seek
 

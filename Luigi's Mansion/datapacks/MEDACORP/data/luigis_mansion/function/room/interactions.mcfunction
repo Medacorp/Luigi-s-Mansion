@@ -1,3 +1,4 @@
+#todelete - old furniture
 execute if score #temp Room matches 1.. run function luigis_mansion:room/interactions_mansion with storage luigis_mansion:data current_state.current_data.mansion_id
 execute if entity @s[tag=poltergust] run function luigis_mansion:room/interactions_poltergust
 execute if entity @s[tag=manual] run function luigis_mansion:room/interactions_manual

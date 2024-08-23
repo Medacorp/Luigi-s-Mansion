@@ -5,7 +5,7 @@ gamemode spectator @s[tag=stop_portrait_battle]
 tag @s remove stop_portrait_battle
 
 scoreboard players operation #temp Room = @s Room
-execute as @e[tag=!model_piece,tag=!reflection] run function luigis_mansion:main/get_same_room
+execute as @e[tag=!model_piece,tag=!reflection,tag=!furniture] unless entity @s[tag=!portrait_ghost,type=!minecraft:player] run function luigis_mansion:main/get_same_room
 scoreboard players reset #temp Room
 execute store result score #temp Time run data get storage luigis_mansion:data current_state.current_data.in_mansion_time
 execute unless score #freeze_timer Selected matches 1 store result bossbar 3ds_remake:portrait_battle value run scoreboard players get #temp Time
@@ -23,6 +23,7 @@ execute at @s run teleport @a[tag=!same_room] ~ ~ ~ ~ ~
 
 execute as @a[tag=gooigi] run function 3ds_remake:entities/player/un_gooigi
 execute as @e[type=minecraft:armor_stand] run data remove entity @s ArmorItems[3].components."minecraft:custom_data".loot
+execute as @e[type=minecraft:armor_stand] run data remove entity @s ArmorItems[3].components."minecraft:custom_data".loot_chances
 execute as @e[type=minecraft:marker] run data remove entity @s data.loot
 tag @e[tag=furniture,tag=!no_dust] add no_dust
 tag @e[tag=pearl_dropper] remove pearl_dropper

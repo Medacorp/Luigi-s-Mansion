@@ -11,6 +11,8 @@ execute as @e[tag=eternal_gold_coin,scores={Room=10}] run scoreboard players add
 execute if score #temp Wave matches ..8 unless data storage luigis_mansion:data current_state.current_data{money_spawned:["nursery_money"]} run data modify storage luigis_mansion:data current_state.current_data.money_spawned append value "nursery_money"
 scoreboard players reset #temp Wave
 
+#todelete - old furniture
 function #luigis_mansion:room/hidden/nursery/interactions/room
+#/todelete
 
 execute if entity @a[tag=!pause_dialog,scores={Room=10},tag=!spectator,limit=1] run function luigis_mansion:room/hidden/nursery/ghosts

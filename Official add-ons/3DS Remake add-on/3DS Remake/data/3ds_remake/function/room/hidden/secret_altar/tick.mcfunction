@@ -9,7 +9,9 @@ execute as @e[scores={Room=72}] unless entity @s[type=!minecraft:armor_stand,typ
 
 execute as @a[scores={Room=72}] run function 3ds_remake:room/hidden/secret_altar/tick_per_player
 
+#todelete - old furniture
 function #3ds_remake:room/hidden/secret_altar/interactions/room
+#/todelete
 
 execute if entity @a[tag=!pause_dialog,scores={Room=72},tag=!spectator,limit=1] run function 3ds_remake:room/hidden/secret_altar/ghosts
 

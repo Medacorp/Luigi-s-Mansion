@@ -7,6 +7,8 @@ scoreboard players set #temp Room 25
 
 execute as @a[scores={Room=25}] run function 3ds_remake:room/hidden/conservatory/tick_per_player
 
+#todelete - old furniture
 function #3ds_remake:room/hidden/conservatory/interactions/room
+#/todelete
 
 execute if entity @a[tag=!pause_dialog,scores={Room=25},tag=!spectator,limit=1] run function 3ds_remake:room/hidden/conservatory/ghosts

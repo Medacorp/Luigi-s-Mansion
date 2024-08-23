@@ -7,11 +7,13 @@ scoreboard players set #temp Room 13
 
 execute as @a[scores={Room=13}] run function luigis_mansion:room/normal/hallway_5/tick_per_player
 
+#todelete - old furniture
 function #luigis_mansion:room/normal/hallway_5/interactions/room
+#/todelete
 
 scoreboard players set #temp Room 13
 execute as @a[tag=!pause_dialog] run function luigis_mansion:main/get_same_room
 scoreboard players reset #temp Room
 execute if entity @a[tag=same_room,tag=!spectator,limit=1] run function luigis_mansion:room/normal/hallway_5/ghosts
 tag @a[tag=same_room] remove same_room
-tag @a[tag=same_room] remove exact_same_room
+tag @a[tag=exact_same_room] remove exact_same_room

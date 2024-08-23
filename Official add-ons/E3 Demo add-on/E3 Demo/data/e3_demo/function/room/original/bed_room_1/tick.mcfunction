@@ -7,7 +7,9 @@ scoreboard players set #temp Room 6
 
 execute as @a[scores={Room=6}] run function e3_demo:room/original/bed_room_1/tick_per_player
 
+#todelete - old furniture
 function #e3_demo:room/original/bed_room_1/interactions/room
+#/todelete
 
 execute if entity @a[tag=!pause_dialog,scores={Room=6},tag=!spectator,limit=1] run function e3_demo:room/original/bed_room_1/ghosts
 

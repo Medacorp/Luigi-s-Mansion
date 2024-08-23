@@ -7,7 +7,9 @@ scoreboard players set #temp Room 62
 
 execute as @a[scores={Room=62}] run function luigis_mansion:room/hidden/clockwork_room/tick_per_player
 
+#todelete - old furniture
 function #luigis_mansion:room/hidden/clockwork_room/interactions/room
+#/todelete
 
 execute if entity @a[tag=!pause_dialog,scores={Room=62},tag=!spectator,limit=1] run function luigis_mansion:room/hidden/clockwork_room/ghosts
 

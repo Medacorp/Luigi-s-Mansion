@@ -9,7 +9,9 @@ execute as @e[scores={Room=21}] unless entity @s[type=!minecraft:armor_stand,typ
 
 execute as @a[scores={Room=21}] run function luigis_mansion:room/hidden/mirror_room/tick_per_player
 
+#todelete - old furniture
 function #luigis_mansion:room/hidden/mirror_room/interactions/room
+#/todelete
 
 execute unless entity @e[tag=light_me,tag=!lit,scores={Room=21},limit=1] run tag @e[scores={Room=21},tag=furniture,tag=door] remove blockade
 

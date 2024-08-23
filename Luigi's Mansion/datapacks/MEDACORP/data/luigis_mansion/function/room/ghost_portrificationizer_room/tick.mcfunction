@@ -15,4 +15,6 @@ setblock 772 77 -1 minecraft:lever[face=wall,facing=east,powered=true]
 setblock 768 77 1 minecraft:lever[face=wall,facing=west,powered=true]
 setblock 768 77 -1 minecraft:lever[face=wall,facing=west,powered=true]
 
+#todelete - old furniture
 function #luigis_mansion:room/ghost_portrificationizer_room/interactions/room
+#/todelete
