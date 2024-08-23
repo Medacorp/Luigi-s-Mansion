@@ -9,6 +9,13 @@ Use the Game Boy Horror to set your "Teleport Frequency" setting to a lower valu
 Q. I'm stuck in the gallery, what do I do?
 A. (No 3DS Remake) Search the angle statue, like E. Gadd says, and his dialog will change allowing you to leave.
    (3DS Remake) Find the Game Boy Horror part, and talk to E. Gadd again, and another time for an option to leave the gallery.
+   
+Q. Why is only certain furniture modeled and animated, but not others?
+A. Those will be converted eventually, but it takes time to model all those. The furniture that has been converted already matched one of the following criteria:
+   1. It was already modeled before, just not a furniture entity
+   2. It was a container before conversion
+   3. It has candle flames or incense flames
+   4. A very similar piece of furniture was converted, and it was not much work to make the model for this as well.
 
 Q. How do I scan furniture?
 A. 1. Use the Game Boy Horror, and choose the Scan Furniture option.
@@ -44,7 +51,7 @@ Q. Why doesn't the option to select a choice in a dialog work?
 A. Gooigi cannot speak, other players will have to react instead. If you're not using gooigi, make a bug report and provide the world folder (as a zip).
 
 Q. Can I turn off the opening of the Game Boy Horror map when collecting a key?
-A. Yes, go to the map settings (via Game Boy Horror) and click the option to change it.
+A. Yes, go to the map settings (via Game Boy Horror) and use the option to change it.
 
 Q. Is this feature missing?
 A. Maybe. If you can see something is definitely missing, feel free to make a bug report.

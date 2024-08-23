@@ -202,7 +202,7 @@ luigis_mansion:h15                |         | 15%          |           |        
 luigis_mansion:h30_p15            |         | 30%          |           | 15%             |                  |
 luigis_mansion:h50                |         | 50%          |           |                 |                  |
 luigis_mansion:h70_b10            |         | 70%          | 10%       |                 |                  |
-luigis_mansion:health_dependent_1 |         |              |           |                 | 31.. / ..30      | luigis_mansion:d50_m10_p5 / luigis_mansion:p80.
+luigis_mansion:health_dependent_1 |         |              |           |                 | 31.. / ..30      | luigis_mansion:d50_m10_p5 / luigis_mansion:m80.
 luigis_mansion:health_dependent_2 |         |              |           |                 | 31.. / ..30      | luigis_mansion:h15 / luigis_mansion:h50.
 luigis_mansion:health_dependent_3 |         |              |           |                 | 31.. / ..30      | luigis_mansion:d50_m10_p10 / luigis_mansion:d25_m20_p5.
 luigis_mansion:health_dependent_4 |         |              |           |                 | 31.. / ..30      | luigis_mansion:h10_p10 / luigis_mansion:h30_p15.

@@ -1,0 +1,10 @@
+{
+    "pack": {
+        "pack_format": 48,
+        "supported_formats": [48, 48],
+        "description": {
+			"type": "translatable",
+            "translate": "3ds_remake:data_pack.description"
+		}
+    }
+}
