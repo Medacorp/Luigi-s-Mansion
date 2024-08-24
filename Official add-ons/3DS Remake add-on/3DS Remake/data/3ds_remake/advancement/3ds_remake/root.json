@@ -6,7 +6,7 @@
             "components": {
                 "minecraft:unbreakable": {},
                 "minecraft:damage": 1,
-                "minecraft:custom_model_data": 0
+                "minecraft:custom_model_data": 147
             }
         },
         "show_toast": false,

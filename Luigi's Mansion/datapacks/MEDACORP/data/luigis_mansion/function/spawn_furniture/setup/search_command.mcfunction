@@ -1,1 +1,2 @@
 execute if data storage luigis_mansion:data furniture.search_command run data modify entity @e[tag=this_entity,limit=1] ArmorItems[3].components."minecraft:custom_data".search_command set from storage luigis_mansion:data furniture.search_command
+execute unless data storage luigis_mansion:data furniture.search_command run tag @e[tag=this_entity,limit=1] add no_search_command

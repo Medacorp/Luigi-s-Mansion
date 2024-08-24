@@ -5,6 +5,7 @@
 		"1": "e3_demo:item/menu/game_boy_horror/show_inventory/ghost_coin",
 		"particle": "e3_demo:item/menu/game_boy_horror/show_inventory/ghost_coin"
 	},
+    "gui_light": "front",
 	"elements": [
 		{
 			"from": [6, 4.5, 7.5],

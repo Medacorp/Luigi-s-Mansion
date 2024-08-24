@@ -1,4 +1,4 @@
-execute at @s positioned ~ ~0.1 ~ align y unless block ~ ~ ~ #luigis_mansion:items_ignore unless block ~ ~ ~ #minecraft:slabs at @s run teleport @s ~ ~0.1 ~
+execute at @s positioned ~ ~0.01 ~ align y unless block ~ ~ ~ #luigis_mansion:items_ignore unless block ~ ~ ~ #minecraft:slabs at @s run teleport @s ~ ~0.1 ~
 
 execute if entity @s[x_rotation=-90..0] store result entity @s Rotation[1] float -1 run data get entity @s Rotation[1]
 

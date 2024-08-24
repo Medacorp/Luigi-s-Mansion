@@ -1,7 +1,7 @@
 function luigis_mansion:entities/ghost/get_target
-execute unless entity @s[tag=!attack,tag=!visible] run tag @s[tag=basher] remove in_fire
-execute unless entity @s[tag=!attack,tag=!visible] run tag @s[tag=basher] remove in_water
-execute unless entity @s[tag=!attack,tag=!visible] run tag @s[tag=basher] remove in_ice
+tag @s[tag=!attack,tag=!visible,tag=basher] remove in_fire
+tag @s[tag=!attack,tag=!visible,tag=basher] remove in_water
+tag @s[tag=!attack,tag=!visible,tag=basher] remove in_ice
 execute unless entity @s[tag=!hurt,tag=!element_hurt] run function luigis_mansion:entities/purple_puncher/ai/hurt with entity @s data.entity
 execute if entity @s[tag=!hurt,tag=!element_hurt,scores={StunTime=0}] run function luigis_mansion:entities/flash/ai/not_hurt
 

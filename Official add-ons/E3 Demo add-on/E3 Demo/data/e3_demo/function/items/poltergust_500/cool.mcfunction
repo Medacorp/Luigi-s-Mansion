@@ -1,1 +1,1 @@
-execute unless entity @s[tag=poltergust_selected,tag=!expelling] run function e3_demo:items/poltergust_500/cool_down
+execute unless entity @s[tag=!expelling,tag=poltergust_selected,tag=poltergust_grabbed,tag=!disable_poltergust] run function e3_demo:items/poltergust_500/cool_down

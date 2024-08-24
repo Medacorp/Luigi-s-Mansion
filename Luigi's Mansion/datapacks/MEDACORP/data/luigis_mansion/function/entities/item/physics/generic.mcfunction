@@ -1,4 +1,4 @@
-execute at @s positioned ~ ~0.1 ~ align y unless block ~ ~ ~ #luigis_mansion:items_ignore unless block ~ ~ ~ #minecraft:slabs at @s run teleport @s ~ ~0.1 ~
+execute at @s positioned ~ ~0.01 ~ align y unless block ~ ~ ~ #luigis_mansion:items_ignore unless block ~ ~ ~ #minecraft:slabs at @s run teleport @s ~ ~0.1 ~
 
 execute at @s run function luigis_mansion:entities/item/physics/step/gravity
 scoreboard players set @s[scores={Move=0},tag=keep_bouncing,tag=!falling] Move 12
