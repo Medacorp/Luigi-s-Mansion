@@ -1,6 +1,7 @@
 v3.0.1:
 * Fixed stray temporary data can break selection menus
 * Fixed inventory modify functions didn't disable selection menu result fetcher
+* Fixed relogging while in training room kicks you out even if you didn't complete the initial training yet
 
 v3.0:
 WARNING! When updating an old save version, be sure to follow the "How to update" steps in the "installing and notes.txt" file before drag-and-drop updating, or the map will malfunction

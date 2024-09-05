@@ -16,7 +16,7 @@ scoreboard players set @s LoadedChunks 0
 scoreboard players set @s CreditsTime 0
 execute unless entity @s[scores={FlashlightType=0..3}] run scoreboard players set @s FlashlightType 0
 function luigis_mansion:entities/player/animation/set/none
-execute if entity @s[scores={Room=-2}] run function luigis_mansion:room/underground_lab/warp_to
+execute if entity @s[scores={Room=-2}] if data storage luigis_mansion:data rooms.training_room{cleared:1b} run function luigis_mansion:room/underground_lab/warp_to
 tag @s remove loaded_chunks
 tag @s remove seen_room_name
 tag @s remove got_selection_menu_how_to
