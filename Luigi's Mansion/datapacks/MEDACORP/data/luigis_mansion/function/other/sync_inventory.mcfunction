@@ -62,7 +62,7 @@ execute in minecraft:overworld run setblock 28 0 0 minecraft:shulker_box
 execute in minecraft:overworld run data modify block 28 0 0 Items set from storage luigis_mansion:data inventory
 data remove storage luigis_mansion:data inventory
 
-
+tag @s add modifying_inventory
 execute in minecraft:overworld run loot replace entity @s hotbar.0 mine 27 0 0 minecraft:golden_pickaxe[minecraft:custom_data={drop_contents:1b}]
 execute in minecraft:overworld run loot replace entity @s inventory.18 9 mine 27 1 0 minecraft:golden_pickaxe[minecraft:custom_data={drop_contents:1b}]
 execute in minecraft:overworld run loot replace entity @s armor.feet 4 mine 27 0 1 minecraft:golden_pickaxe[minecraft:custom_data={drop_contents:1b}]

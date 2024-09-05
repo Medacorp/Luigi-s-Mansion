@@ -26,7 +26,8 @@ execute if score #temp Time matches 1 run data modify storage luigis_mansion:dat
 data modify storage luigis_mansion:data temp set from entity @s Inventory[0].components."minecraft:custom_data".option
 execute store success score #temp Time run data modify storage luigis_mansion:data temp set from storage luigis_mansion:data my_memory.selection_menu.options[0]
 execute if score #temp Time matches 1 run data modify storage luigis_mansion:data selected_option set from storage luigis_mansion:data my_memory.selection_menu.options[0]
-
+data remove storage luigis_mansion:data temp
+scoreboard players reset #temp Time
 tag @s remove fetch_option_result
 
 execute if data storage luigis_mansion:data selected_option{id:"next_page"} run function luigis_mansion:entities/player/selection_menu/next_page

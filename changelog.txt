@@ -1,4 +1,8 @@
-3.0:
+v3.0.1:
+* Fixed stray temporary data can break selection menus
+* Fixed inventory modify functions didn't disable selection menu result fetcher
+
+v3.0:
 WARNING! When updating an old save version, be sure to follow the "How to update" steps in the "installing and notes.txt" file before drag-and-drop updating, or the map will malfunction
 DISCLAIMER: this build is quite a bit more laggy due to some of the changes, this is being worked on
 * Updated to 1.21(.1)
@@ -27,17 +31,17 @@ DISCLAIMER: this build is quite a bit more laggy due to some of the changes, thi
 * Fixed numerous bugs
 
 
-2.3.9:
+v2.3.9:
 * Updated to 1.20.3
 * Applied new JSON text component optimizing fields "type" and "source"
 
 
-2.3.8:
+v2.3.8:
 * Updated to 1.20.2
 * Added few optimizations using macros
 
 
-2.3.7:
+v2.3.7:
 * Fixed players can push other players that are interacting with doors, softlocking them
 * Fixed when the 3DS Remake is installed having the poltergust selected while the game boy horror map opens (from collecting a key) softlocks the player in the map area
 * Fixed scanning chauncey's big balls returns chauncey's "Stay away" scan message
