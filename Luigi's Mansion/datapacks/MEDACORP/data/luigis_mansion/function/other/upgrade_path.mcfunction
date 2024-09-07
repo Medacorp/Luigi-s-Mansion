@@ -2,4 +2,4 @@ execute if data storage luigis_mansion:data data_version unless data storage lui
 execute if data storage luigis_mansion:data current_state.current_data{data_index:0} unless data storage luigis_mansion:data current_state.current_data{data_index:0,data_version:4} run function luigis_mansion:other/upgrade_path/current_data
 execute if data storage luigis_mansion:data current_state.mansion_data[{data_index:0}] unless data storage luigis_mansion:data current_state.mansion_data[{data_index:0,data_version:4}] run function luigis_mansion:other/upgrade_path/current_state
 execute if data storage luigis_mansion:data saved_state.mansion_data[{data_index:0}] unless data storage luigis_mansion:data saved_state.mansion_data[{data_index:0,data_version:4}] run function luigis_mansion:other/upgrade_path/saved_state
-execute as @a unless entity @s[scores={UpgradePlayer=2}] run function luigis_mansion:other/upgrade_path/player/v3.0.1
+execute as @a unless entity @s[scores={UpgradePlayer=3}] run function luigis_mansion:other/upgrade_path/player/v3.0.2

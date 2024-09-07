@@ -1,3 +1,8 @@
+v3.0.2:
+Note: Upgrade path for this version kicks players back to the lab if they were in the mansion
+* Fixed some portrait ghosts don't see some entities (such as big chauncey not seeing the balls he threw)
+* Fixed spawning furniture without room variable but with executor will not set room to executor's room
+
 v3.0.1:
 * Fixed stray temporary data can break selection menus
 * Fixed inventory modify functions didn't disable selection menu result fetcher

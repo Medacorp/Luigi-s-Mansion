@@ -1,1 +1,1 @@
-scoreboard players set @s UpgradePlayer 2
+scoreboard players set @s UpgradePlayer 3
