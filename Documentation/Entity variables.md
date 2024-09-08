@@ -31,8 +31,8 @@ entity:{
     attack_type:"<type>", //Ghost attack type to use, differs per ghost, see IDs in use for valid values.
     second_flee_damage:X, //How much damage this ghost can take in one suction before it enters its second flee state, escaping 2.5 seconds later. If absent, never enters second flee state.
     room_search:{ //What types of entities this portrait ghost should look for when tagging for same room; the less enabled, the more optimized. Model pieces and reflections are never tagged, and players are always tagged.
-        furniture:1b, //Whether entities furniture get tagged. Default = 0b.
-        non_players:1b //Whether entities entity types other than listed above get tagged. Default = 0b.
+        furniture:1b, //Whether furniture entities get tagged. Default = 0b.
+        non_players:1b //Whether entity types other than listed above get tagged. Default = 0b.
     },
     affected_by:["<method>"], //The methods this portrait ghost is affected by aside from vacuuming. Allowed values: dust, fire, water, ice. Default = none.
     drop_pearls:0b, //Whether this portrait ghost should drop pearls. Default = 1b.
