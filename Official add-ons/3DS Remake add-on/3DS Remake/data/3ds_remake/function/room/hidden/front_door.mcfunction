@@ -1,5 +1,4 @@
-scoreboard players set * ChangedMansion 1
-scoreboard players reset @a ChangedMansion
+tag @e[tag=door,scores={Room=0}] add remove_from_existence
 execute in minecraft:overworld run forceload add 720 8
 execute in minecraft:overworld if loaded 720 102 7 run data modify storage luigis_mansion:data furniture set value {room:0,sound:{namespace:"luigis_mansion",id:"heavy_generic"},door:{model:{namespace:"luigis_mansion",id:"mansion/entrance"},frame:{namespace:"luigis_mansion",id:"double/basic"},left_hinge:1b,other_end:{dimension:"luigis_mansion:normal",x:755,y:11,z:8},go_through_command:"function 3ds_remake:room/hidden/enter"}}
 execute in minecraft:overworld if loaded 720 102 7 positioned 720 102 7 rotated -90 0 run function luigis_mansion:spawn_furniture/door

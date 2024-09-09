@@ -6,6 +6,4 @@ function luigis_mansion:entities/player/selection_menu/close
 tag @s remove mansion_reset_menu
 tag @s remove camera
 
-scoreboard players set * ChangedMansion 1
-scoreboard players reset @e ChangedMansion
 function luigis_mansion:data/load

@@ -6,6 +6,9 @@ data modify storage luigis_mansion:data dialogs set value []
 execute if data storage luigis_mansion:data dialog run data modify storage luigis_mansion:data dialogs append from storage luigis_mansion:data dialog
 data remove storage luigis_mansion:data dialog
 
+scoreboard players set * ChangedMansion 1
+scoreboard players reset @e[scores={Room=..-1}] ChangedMansion
+
 execute as @a unless entity @s[scores={Room=..-1}] run function luigis_mansion:room/underground_lab/warp_to
 data modify storage luigis_mansion:data macro.index set from storage luigis_mansion:data current_state.current_data.data_index
 function luigis_mansion:room/reset_mansion with storage luigis_mansion:data current_state.current_data.mansion_id
@@ -14,7 +17,8 @@ data modify storage luigis_mansion:data current_state.mansion_data set from stor
 data modify storage luigis_mansion:data current_state.ghosts_caught set from storage luigis_mansion:data saved_state.ghosts_caught
 data modify storage luigis_mansion:data current_state.money_grabbed set from storage luigis_mansion:data saved_state.money_grabbed
 function luigis_mansion:data/load_mansion with storage luigis_mansion:data macro
-execute unless data storage luigis_mansion:data current_state.current_data{nothing_loaded:1b} run function luigis_mansion:forceload_mansion with storage luigis_mansion:data current_state.current_data.mansion_id
+execute unless data storage luigis_mansion:data current_state.current_data{nothing_loaded:1b} run function luigis_mansion:room/forceload_mansion with storage luigis_mansion:data current_state.current_data.mansion_id
+execute unless data storage luigis_mansion:data current_state.current_data{nothing_loaded:1b} run function luigis_mansion:data/load_mansion_exterior with storage luigis_mansion:data current_state.current_data.mansion_id
 execute if data storage luigis_mansion:data current_state.current_data{nothing_loaded:1b} run scoreboard players set @a Health 100
 execute if data storage luigis_mansion:data current_state.current_data{nothing_loaded:1b} run gamemode adventure @a[gamemode=spectator]
 execute if data storage luigis_mansion:data current_state.current_data{nothing_loaded:1b} unless score #loaded_exterior Selected matches -1 run tellraw @a {"type":"translatable","translate":"chat.type.text","with":[{"type":"translatable","translate":"luigis_mansion:entity.mansion","color":"green"},{"type":"translatable","translate":"luigis_mansion:message.load_mansion.start"}]}

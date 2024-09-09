@@ -1,3 +1,7 @@
+v3.0.3:
+* Changed Teleport Frequency setting to default to "every 5 ticks"; existing players' setting won't be modified
+* Fixed loading old data yeets mansion front door out of existence
+
 v3.0.2:
 Note: Upgrade path for this version kicks players back to the lab if they were in the mansion
 * Fixed some portrait ghosts don't see some entities (such as big chauncey not seeing the balls he threw)
