@@ -1,4 +1,4 @@
-execute positioned 648 93 -10 run function luigis_mansion:entities/player/set_position
+execute positioned 648 93 -10 rotated -180 0 run function luigis_mansion:entities/player/set_position
 execute unless data storage luigis_mansion:data current_state.current_data.technical_data{saw_mario:1b} run data modify storage luigis_mansion:data dialogs append value {name:{namespace:"luigis_mansion",id:"marios_painting"},room:72,progress:0,observing_player:0}
 execute unless data storage luigis_mansion:data current_state.current_data.technical_data{saw_mario:1b} store result storage luigis_mansion:data dialogs[-1].observing_player int 1 run scoreboard players get @s ID
 execute if data storage luigis_mansion:data current_state.current_data.technical_data{saw_mario:1b} run data modify storage luigis_mansion:data dialogs append value {name:{namespace:"luigis_mansion",id:"marios_painting_repeat"},room:72,progress:0}

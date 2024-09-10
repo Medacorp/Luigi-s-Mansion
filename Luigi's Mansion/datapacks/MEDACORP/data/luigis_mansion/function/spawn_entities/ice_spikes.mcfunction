@@ -3,3 +3,4 @@ execute store result entity @e[tag=this_entity,limit=1] Rotation[0] float 1 run 
 $scoreboard players set @e[tag=this_entity,limit=1] IceSpikesNr $(id)
 function luigis_mansion:spawn_entities/setup/default
 tag @e[tag=this_entity,limit=1] remove this_entity
+data remove storage luigis_mansion:data entity

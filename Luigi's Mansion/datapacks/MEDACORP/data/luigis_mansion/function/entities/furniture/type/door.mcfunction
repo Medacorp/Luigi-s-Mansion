@@ -8,7 +8,7 @@ execute unless entity @s[tag=!open_door,tag=!forced_animation] run function luig
 execute if entity @s[tag=bash_door] run function luigis_mansion:entities/furniture/type/door/bash_door
 execute if entity @s[tag=unlock_door] run function luigis_mansion:entities/furniture/type/door/unlock_door
 
-execute unless entity @s[tag=!remove_from_existence,tag=!dead] run setblock ^ ^ ^0.5 minecraft:air
+execute unless entity @s[tag=!remove_from_existence,tag=!dead] if entity @s[tag=burning] run setblock ^ ^ ^0.5 minecraft:air
 
 execute if entity @s[tag=blockade_sounds_can_play] run function luigis_mansion:entities/furniture/type/door/blockade_sound
 tag @s add had_blockade

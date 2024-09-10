@@ -14,3 +14,4 @@ scoreboard players operation @e[tag=this_entity,tag=model_piece] PassiveNr = @e[
 tag @e[tag=this_entity,tag=model_piece] remove this_entity
 function luigis_mansion:spawn_entities/setup/default
 tag @e[tag=this_entity,limit=1] remove this_entity
+data remove storage luigis_mansion:data entity

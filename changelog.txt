@@ -1,3 +1,12 @@
+v3.0.4:
+* Fixed mirrors have bad reflections
+* Fixed invisible non-hidden ghosts cannot be stunned
+* Fixed Mario, bombs, bones and ice spikes leak entity variables
+* Fixed elemental ghosts don't understand slabs well
+* Fixed courtyard Toad spams "Yahoo"
+* Fixed Melody Pianissima can trigger multiple dialogs at once
+* Fixed Mario's Painting dialogs don't set player animation
+
 v3.0.3:
 * Changed Teleport Frequency setting to default to "every 5 ticks"; existing players' setting won't be modified
 * Fixed loading old data yeets mansion front door out of existence

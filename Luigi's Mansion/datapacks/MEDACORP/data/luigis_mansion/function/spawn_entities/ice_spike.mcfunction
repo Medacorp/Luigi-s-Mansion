@@ -7,3 +7,4 @@ execute as @e[tag=this_entity,limit=1] store result score @s HomeRotationX run d
 execute as @e[tag=this_entity,limit=1] store result score @s HomeRotationY run data get entity @s Rotation[1]
 function luigis_mansion:spawn_entities/setup/default
 tag @e[tag=this_entity,limit=1] remove this_entity
+data remove storage luigis_mansion:data entity

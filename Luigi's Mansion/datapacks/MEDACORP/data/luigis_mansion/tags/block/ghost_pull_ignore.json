@@ -1,0 +1,11 @@
+{
+    "values": [
+        "#luigis_mansion:ghosts_ignore",
+        "#minecraft:campfires",
+        "#minecraft:slabs",
+        "minecraft:calibrated_sculk_sensor",
+        "minecraft:sculk_sensor",
+        "minecraft:sculk_shrieker",
+        "minecraft:stonecutter"
+    ]
+}

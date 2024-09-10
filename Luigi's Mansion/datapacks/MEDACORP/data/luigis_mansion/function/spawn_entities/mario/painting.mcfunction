@@ -9,3 +9,4 @@ execute if data storage luigis_mansion:data entity.mansion.namespace run data mo
 execute if data storage luigis_mansion:data entity.mansion.id run data modify entity @e[tag=this_entity,limit=1] Item.components."minecraft:custom_data".mansion.id set from storage luigis_mansion:data entity.mansion.id
 function luigis_mansion:spawn_entities/setup/default
 tag @e[tag=this_entity,limit=1] remove this_entity
+data remove storage luigis_mansion:data entity

@@ -13,8 +13,8 @@ data modify storage luigis_mansion:data reflections[-1].no_sync.Rotation set fro
 data modify storage luigis_mansion:data reflections[-1].no_sync.HasVisualFire set from entity @s HasVisualFire
 data modify storage luigis_mansion:data reflections[-1].no_sync.tags set from entity @s Tags
 data modify storage luigis_mansion:data reflections[-1].data.Pose set from entity @s Pose
-execute store result storage luigis_mansion:data mirror.data.Pose.Head[1] float 0.01 run data get storage luigis_mansion:data reflections[-1].data.Head[1] -100
-execute store result storage luigis_mansion:data mirror.data.Pose.Head[2] float 0.01 run data get storage luigis_mansion:data reflections[-1].data.Head[2] -100
+execute store result storage luigis_mansion:data reflections[-1].data.Pose.Head[1] float 0.01 run data get storage luigis_mansion:data reflections[-1].data.Pose.Head[1] -100
+execute store result storage luigis_mansion:data reflections[-1].data.Pose.Head[2] float 0.01 run data get storage luigis_mansion:data reflections[-1].data.Pose.Head[2] -100
 data modify storage luigis_mansion:data reflections[-1].data.ArmorItems set from entity @s ArmorItems
 data modify storage luigis_mansion:data reflections[-1].data.ArmorItems[3] merge from storage luigis_mansion:data reflections[-1].data.ArmorItems[3].components."minecraft:custom_data".mirror
 data modify storage luigis_mansion:data reflections[-1].data.attributes set from entity @s attributes

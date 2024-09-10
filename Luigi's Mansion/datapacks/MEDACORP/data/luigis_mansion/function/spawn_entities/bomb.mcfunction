@@ -3,3 +3,4 @@ scoreboard players set @e[tag=this_entity,limit=1] EntitySizeRadius 8
 scoreboard players set @e[tag=this_entity,limit=1] EntityYOffset 5
 function luigis_mansion:spawn_entities/setup/default
 tag @e[tag=this_entity,limit=1] remove this_entity
+data remove storage luigis_mansion:data entity
