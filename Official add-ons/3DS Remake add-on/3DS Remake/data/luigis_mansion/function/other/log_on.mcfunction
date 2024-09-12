@@ -2,7 +2,7 @@ function luigis_mansion:entities/player/memory/get with entity @s
 execute store result score @s ID run data get storage luigis_mansion:data my_memory.id
 data modify storage luigis_mansion:data memory append from storage luigis_mansion:data my_memory
 data remove storage luigis_mansion:data my_memory
-execute unless entity @s[scores={Dialog=0..}] run function luigis_mansion:other/initial_scores
+execute unless entity @s[scores={Health=0..}] run function luigis_mansion:other/initial_scores
 execute if entity @s[scores={ClearInventory=1}] run clear @s
 scoreboard players reset @s ClearInventory
 scoreboard players set @s Music 0

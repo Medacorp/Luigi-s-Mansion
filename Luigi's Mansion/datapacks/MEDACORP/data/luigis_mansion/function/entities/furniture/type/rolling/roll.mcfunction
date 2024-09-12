@@ -1,7 +1,7 @@
 data modify entity @s ArmorItems[3].components."minecraft:custom_data".animation set value {namespace:"luigis_mansion",id:"roll"}
 scoreboard players add @s[tag=rolling] FurnitureVacuum 2
 execute if score @s FurnitureVacuum >= @s FurnitureSearch run scoreboard players operation @s FurnitureVacuum = @s FurnitureSearch
-execute if score @s FurnitureVacuum >= @s FurnitureSearch run scoreboard players add @s FurnitureVacuum 1
+execute if score @s FurnitureVacuum >= @s FurnitureSearch run scoreboard players add @s[tag=rolling] FurnitureVacuum 1
 execute if entity @s[scores={PoltergustSound=0,FurnitureVacuum=1..10}] run playsound luigis_mansion:furniture.search.roll block @a[tag=same_room] ~ ~ ~ 1 0.9
 execute if entity @s[scores={PoltergustSound=0,FurnitureVacuum=11..20}] run playsound luigis_mansion:furniture.search.roll block @a[tag=same_room] ~ ~ ~ 1 1
 execute if entity @s[scores={PoltergustSound=0,FurnitureVacuum=21..30}] run playsound luigis_mansion:furniture.search.roll block @a[tag=same_room] ~ ~ ~ 1 1.1

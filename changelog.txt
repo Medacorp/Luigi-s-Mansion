@@ -1,4 +1,7 @@
 v3.0.4:
+* Fixed mice can cause a server freeze
+* Fixed health, shrunk timer, flashlight type and teleport frequency get reset to defaults on relog
+* Fixed rolling furniture rolls forever
 * Fixed mirrors have bad reflections
 * Fixed invisible non-hidden ghosts cannot be stunned
 * Fixed Mario, bombs, bones and ice spikes leak entity variables
