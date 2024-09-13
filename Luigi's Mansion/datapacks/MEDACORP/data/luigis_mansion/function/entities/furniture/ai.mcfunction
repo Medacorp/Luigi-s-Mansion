@@ -7,4 +7,4 @@ execute if entity @s[scores={FurnitureLightStrength=0..15}] run function luigis_
 execute if entity @s[tag=spawn_particles] run function luigis_mansion:entities/furniture/spawn/particles
 
 execute unless entity @s[tag=!shake,tag=!long_shake,tag=!was_shaking] run function luigis_mansion:entities/furniture/shake
-execute unless entity @s[tag=no_dust,tag=no_loot,tag=no_search_command] run function luigis_mansion:entities/furniture/loot
+execute unless entity @s[tag=no_loot_tick] run function luigis_mansion:entities/furniture/loot
