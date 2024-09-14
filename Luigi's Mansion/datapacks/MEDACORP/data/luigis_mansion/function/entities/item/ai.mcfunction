@@ -1,4 +1,5 @@
 $teleport @s ~ ~$(physics_offset) ~
+scoreboard players add @s Move 0
 scoreboard players add @s SpawnTime 1
 tag @s[scores={SpawnTime=40}] add affected_by_vacuum
 tag @s[scores={SpawnTime=600},tag=!eternal] add dead

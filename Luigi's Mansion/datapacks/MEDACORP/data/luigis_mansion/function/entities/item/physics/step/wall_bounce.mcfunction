@@ -1,4 +1,4 @@
-execute unless block ~ ~0.2 ~0.2 #luigis_mansion:all_ignore unless block ~ ~0.2 ~0.2 #minecraft:slabs run function luigis_mansion:entities/item/physics/step/wall_bounce/z
-execute unless block ~ ~0.2 ~-0.2 #luigis_mansion:all_ignore unless block ~ ~0.2 ~0.2 #minecraft:slabs run function luigis_mansion:entities/item/physics/step/wall_bounce/z
-execute unless block ~0.2 ~0.2 ~ #luigis_mansion:all_ignore unless block ~ ~0.2 ~0.2 #minecraft:slabs run function luigis_mansion:entities/item/physics/step/wall_bounce/x
-execute unless block ~-0.2 ~0.2 ~ #luigis_mansion:all_ignore unless block ~ ~0.2 ~0.2 #minecraft:slabs run function luigis_mansion:entities/item/physics/step/wall_bounce/x
+execute unless block ~ ~0.2 ~0.2 #luigis_mansion:all_ignore unless block ~ ~0.2 ~0.2 #minecraft:slabs if entity @s[y_rotation=-90..90] run function luigis_mansion:entities/item/physics/step/wall_bounce/z
+execute unless block ~ ~0.2 ~-0.2 #luigis_mansion:all_ignore unless block ~ ~0.2 ~-0.2 #minecraft:slabs if entity @s[y_rotation=90..-90] run function luigis_mansion:entities/item/physics/step/wall_bounce/z
+execute unless block ~0.2 ~0.2 ~ #luigis_mansion:all_ignore unless block ~0.2 ~0.2 ~ #minecraft:slabs if entity @s[y_rotation=-180..0] run function luigis_mansion:entities/item/physics/step/wall_bounce/x
+execute unless block ~-0.2 ~0.2 ~ #luigis_mansion:all_ignore unless block ~-0.2 ~0.2 ~ #minecraft:slabs if entity @s[y_rotation=0..-180] run function luigis_mansion:entities/item/physics/step/wall_bounce/x

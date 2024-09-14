@@ -51,7 +51,7 @@ execute if entity @s[scores={Dialog=240}] as @a[tag=same_room,tag=!spectator,tag
 execute if entity @s[scores={Dialog=240}] as @a[tag=same_room,tag=!portrait_battle] run function luigis_mansion:entities/player/animation/set/scare/normal
 execute if entity @s[scores={Dialog=260..459}] as @a[tag=same_room,tag=!spectator,tag=!looking_at_map,tag=!portrait_battle] run function luigis_mansion:entities/player/animation/set/idle
 execute if entity @s[scores={Dialog=280}] run tag @e[tag=bogmires_shadow] add dead
-execute if entity @s[scores={Dialog=241..460}] run scoreboard players set @e[nbt={data:{entity:{namespace:"luigis_mansion",id:"black_bogmire"}}},scores={ActionTime=61..},limit=1] SpawnTime 60
+execute if entity @s[scores={Dialog=241..460}] run scoreboard players set @e[nbt={data:{entity:{namespace:"luigis_mansion",id:"black_bogmire"}}},scores={ActionTime=61..},limit=1] ActionTime 60
 tag @s[scores={Dialog=320}] remove visible
 execute if entity @s[scores={Dialog=460}] as @a[tag=same_room,tag=!spectator,tag=!looking_at_map,tag=!portrait_battle] run function luigis_mansion:entities/player/animation/set/none
 tag @s[scores={Dialog=460}] add intro_done

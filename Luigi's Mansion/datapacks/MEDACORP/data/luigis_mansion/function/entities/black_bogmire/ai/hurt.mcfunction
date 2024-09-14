@@ -6,8 +6,8 @@ tag @s[tag=in_vacuum] add in_vacuum_2
 tag @s[tag=!big,scores={VacuumTime=40}] add vanish
 tag @s[tag=big,scores={VacuumTime=60}] add vanish
 
-$execute if entity @s[scores={VacuumTime=1},tag=hurt] run playsound $(namespace):entity.$(id).hurt hostile @a[tag=same_room] ~ ~ ~ 1
-scoreboard players set @s[scores={VacuumTime=1},tag=hurt] Sound 40
+$execute if entity @s[scores={VacuumTime=1}] run playsound $(namespace):entity.$(id).hurt hostile @a[tag=same_room] ~ ~ ~ 1
+scoreboard players set @s[scores={VacuumTime=1}] Sound 40
 
 data modify entity @s data.animation set value {namespace:"luigis_mansion",id:"flee"}
 

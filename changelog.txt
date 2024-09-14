@@ -1,3 +1,13 @@
+v3.0.5:
+* Fixed Bogmire's shadow leaks temporary value, reducing latched-on poltergust vacuum range for a tick
+* Fixed Black Bogmires cannot be coloded with when in a vacuum or in appear behavior
+* Fixed Black Bogmires make no ambient sound during appear behavior
+* Fixed ground-bound ghosts can leave the ground when targeting player
+* Fixed items spawned in blocks don't fly out, only move up
+* Fixed items whith motion high enough to bounce between floor and ceiling in a very short time will bounce forever
+* Fixed items in a 1 block high area have trouble bouncing
+* Fixed Nana escaping poltergust shows rocking chair
+
 v3.0.4:
 * Fixed mice can cause a server freeze
 * Fixed health, shrunk timer, flashlight type and teleport frequency get reset to defaults on relog

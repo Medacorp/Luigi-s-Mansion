@@ -12,3 +12,4 @@ execute if entity @s[scores={Move=..-1}] run scoreboard players operation #temp 
 execute if entity @s[scores={Move=..-1}] if score #temp Move matches 1.. run function luigis_mansion:entities/item/physics/step/fall
 execute if entity @s[scores={Move=1..}] if score #temp Move matches 1.. run function luigis_mansion:entities/item/physics/step/fly
 scoreboard players reset #temp Move
+tag @s remove floor_bounce
