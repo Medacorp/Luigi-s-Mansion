@@ -1,6 +1,12 @@
+v3.0.6:
+* Fixed Boolossus fight ends after capturing a single boo
+* Fixed item collect sound plays at wrong location
+* Fixed entity capture sound plays at wrong location
+
 v3.0.5:
+* Fixed you can move during medium and large knockback
 * Fixed Bogmire's shadow leaks temporary value, reducing latched-on poltergust vacuum range for a tick
-* Fixed Black Bogmires cannot be coloded with when in a vacuum or in appear behavior
+* Fixed Black Bogmires cannot be collided with when in a vacuum or in appear behavior
 * Fixed Black Bogmires make no ambient sound during appear behavior
 * Fixed ground-bound ghosts can leave the ground when targeting player
 * Fixed items spawned in blocks don't fly out, only move up

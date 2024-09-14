@@ -14,7 +14,7 @@ execute if data entity @s ArmorItems[3].components."minecraft:custom_data".parti
 scoreboard players reset #temp MirrorX
 scoreboard players reset #temp MirrorZ
 
-execute if entity @s[tag=picked_up,tag=!dead] run function luigis_mansion:entities/item/picked_up with entity @s ArmorItems[3].components."minecraft:custom_data".item
+execute at @s[tag=picked_up,tag=!dead] run function luigis_mansion:entities/item/picked_up with entity @s ArmorItems[3].components."minecraft:custom_data".item
 tag @s[tag=picked_up] add dead
 tag @a[tag=collector] remove collector
 $execute at @s run teleport @s ~ ~-$(physics_offset) ~

@@ -25,7 +25,7 @@ execute unless score #temp GhostCount matches 1.. if entity @e[tag=ball,tag=!big
 execute unless score #temp GhostCount matches 1.. if entity @e[tag=ball,tag=big,distance=..3,tag=can_spit,sort=nearest,limit=1] run function e3_demo:items/poltergust_500/vacuuming/get_clogged
 execute if score #temp GhostCount matches 1.. run tag @s add vacuuming_ghost
 execute if score #temp GhostCount matches 1.. at @s rotated ~ 0 run function e3_demo:items/poltergust_500/vacuuming/attack_ghost
-execute as @e[distance=..3,tag=captured,tag=!element_death] at @s run function e3_demo:items/poltergust_500/vacuuming/capture
+execute as @e[distance=..3,tag=captured,tag=!element_death] run function e3_demo:items/poltergust_500/vacuuming/capture
 scoreboard players reset #temp GhostCount
 scoreboard players reset #temp MirrorX
 scoreboard players reset #temp MirrorZ
