@@ -14,6 +14,7 @@ $execute if entity @s[scores={Dialog=1}] run tag @e[nbt={data:{entity:{namespace
 data modify entity @s[scores={Dialog=1}] data.animation set value {namespace:"luigis_mansion",id:"decapitate"}
 data modify entity @s[scores={Dialog=1}] data.initial_animation_progress set value 0
 tag @s[scores={Dialog=40}] remove can_decapitate
+execute if entity @s[scores={Dialog=20}] unless entity @e[nbt={data:{entity:{namespace:"luigis_mansion",id:"king_boo"}}},tag=same_room,limit=1] run data modify storage luigis_mansion:data entity set value {room_search:{non_players:1b}}
 execute if entity @s[scores={Dialog=20}] unless entity @e[nbt={data:{entity:{namespace:"luigis_mansion",id:"king_boo"}}},tag=same_room,limit=1] positioned ^ ^3.5 ^0.4 run function luigis_mansion:spawn_entities/portrait_ghost/king_boo
 tag @s[scores={Dialog=40}] remove decapitate
 data modify entity @s[scores={Dialog=40}] data.animation set value {namespace:"luigis_mansion",id:"decapitated"}

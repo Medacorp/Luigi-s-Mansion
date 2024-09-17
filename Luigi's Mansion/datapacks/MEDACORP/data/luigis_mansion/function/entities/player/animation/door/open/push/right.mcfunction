@@ -14,6 +14,7 @@ scoreboard players reset #temp RotationY
 scoreboard players reset #temp RotationX
 kill @e[tag=home,limit=1]
 tag @s[scores={AnimationProgress=1}] add reset_rotation
+tag @s[scores={AnimationProgress=1}] add door_animation
 tag @s[scores={AnimationProgress=1}] add animation_may_move
 execute if entity @s[scores={AnimationProgress=10,Health=41..,Shrunk=0}] run playsound luigis_mansion:entity.player.open_door.high_health player @a[tag=same_room,distance=0.1..] ~ ~ ~ 1
 execute if entity @s[scores={AnimationProgress=10,Health=41..,Shrunk=1..}] run playsound luigis_mansion:entity.player.open_door.high_health player @a[tag=same_room,distance=0.1..] ~ ~ ~ 1 2
@@ -35,5 +36,6 @@ scoreboard players set @s Invulnerable 1
 tag @s add pause_dialog
 execute unless entity @a[tag=!spectator,distance=0.1..,limit=1] run scoreboard players set #freeze_timer Selected 1
 tag @s[scores={AnimationProgress=50}] remove reset_rotation
+tag @s[scores={AnimationProgress=50}] remove door_animation
 scoreboard players set @s[scores={AnimationProgress=50}] Invulnerable 0
 execute if entity @s[scores={AnimationProgress=50}] run function luigis_mansion:entities/player/animation/set/none

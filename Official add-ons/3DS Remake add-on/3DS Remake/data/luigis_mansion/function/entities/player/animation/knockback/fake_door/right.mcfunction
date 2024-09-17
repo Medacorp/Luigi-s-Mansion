@@ -28,6 +28,8 @@ execute if entity @s[scores={AnimationProgress=120,Sound=0,Health=41..,Shrunk=1.
 execute if entity @s[scores={AnimationProgress=120,Sound=0,Health=..40,Shrunk=0},tag=!gooigi] run playsound luigis_mansion:entity.player.sigh.low_health player @a[tag=same_room] ~ ~ ~ 1
 execute if entity @s[scores={AnimationProgress=120,Sound=0,Health=..40,Shrunk=1..},tag=!gooigi] run playsound luigis_mansion:entity.player.sigh.low_health player @a[tag=same_room] ~ ~ ~ 1 2
 scoreboard players set @s[scores={AnimationProgress=120,Sound=0},tag=!gooigi] Sound 20
+tag @s add pause_dialog
+tag @s add door_animation
 kill @e[tag=home,limit=1]
 tag @s remove new_poltergust_grabbed
 tag @s remove poltergust_grabbed
@@ -37,4 +39,5 @@ tag @s add disable_game_boy_horror
 tag @s add disable_interact
 tag @s add disable_poltergust
 tag @s add animation_may_move
+tag @s[scores={AnimationProgress=140}] remove door_animation
 execute if entity @s[scores={AnimationProgress=140}] run function luigis_mansion:entities/player/animation/set/none

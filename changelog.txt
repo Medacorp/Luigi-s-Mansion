@@ -1,7 +1,16 @@
 v3.0.6:
-* Fixed Boolossus fight ends after capturing a single boo
+* Fixed Boolossus fight ends after capturing a single Boo, resulting in softlock when trying to get to King Boo
 * Fixed item collect sound plays at wrong location
 * Fixed entity capture sound plays at wrong location
+* Fixed defeating King Boo doesn't remove shot ice from existence, allowing Bowser to freeze you during defeat animation
+* Fixed Shivers always goes back to hallway when vanishing, rather than re-entering the butler's room if he escaped the vacuum
+* Fixed vacuuming cloths or posters causes too many capture sounds to play
+* Fixed grabbing ghosts can grab players using a door
+* Fixed grabbing ghosts can collide with grabbed players
+* Fixed grabbing ghosts hold onto players that are warping to the mansion entrance
+* Fixed Portrificationizing King Boo was not properly set up in 3DS Remake, freezing the dialog
+* Fixed E. Gadd makes no walk/jump sounds during several dialogs
+* Fixed player makes no sound when plugging the poltergust in/out of the ghost portrificationizer
 
 v3.0.5:
 * Fixed you can move during medium and large knockback

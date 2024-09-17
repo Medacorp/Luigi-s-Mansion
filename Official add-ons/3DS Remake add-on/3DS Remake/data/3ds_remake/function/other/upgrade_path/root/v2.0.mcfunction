@@ -1,4 +1,4 @@
-data merge storage luigis_mansion_3ds_remake:data {data_version:2}
+data modify storage luigis_mansion_3ds_remake:data data_version set value 2
 data modify storage luigis_mansion_3ds_remake:data portrait_ghost set from storage luigis_mansion_3ds_remake:data current_state.portrait_ghosts_defeated_in.neville
 function 3ds_remake:other/upgrade_path/v2.0/portrait_ghost_list
 data modify storage luigis_mansion_3ds_remake:data current_state.portrait_ghosts_defeated_in.neville set from storage luigis_mansion_3ds_remake:data portrait_ghost

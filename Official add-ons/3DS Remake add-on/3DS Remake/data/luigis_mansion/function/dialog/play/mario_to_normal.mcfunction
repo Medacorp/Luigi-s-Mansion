@@ -7,6 +7,7 @@ execute if score #dialog Dialog matches 725..1362 if entity @a[tag=same_room,tag
 scoreboard players reset @a[tag=same_room,tag=!spectator] WarpTime
 execute as @a[tag=same_room,tag=!spectator,tag=game_boy_horror_menu] run function luigis_mansion:selection_menu/game_boy_horror/exit
 tag @e[tag=e_gadd,tag=same_room,limit=1] remove freeze_animation
+tag @e[tag=e_gadd,tag=same_room,limit=1] remove no_ai
 tag @e[tag=mario,tag=same_room,limit=1] remove freeze_animation
 tag @e[tag=mario,tag=portrificationizing,tag=same_room,limit=1] remove no_ai
 execute if score #dialog Dialog matches 1..1103 as @e[tag=e_gadd,tag=same_room,limit=1] at @s facing entity @e[tag=same_room,tag=mario,limit=1] feet run teleport @s ~ ~ ~ ~ ~

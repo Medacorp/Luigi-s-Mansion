@@ -5,6 +5,8 @@ scoreboard players set @s IdleTime 0
 scoreboard players set @s AnimationProgress 0
 scoreboard players reset @s GrabbedShake
 tag @s remove grabbed
+tag @s remove door_animation
+tag @s remove reset_rotation
 tag @s remove idle
 tag @s remove animation_may_move
 tag @s remove tick_down_invulnerability

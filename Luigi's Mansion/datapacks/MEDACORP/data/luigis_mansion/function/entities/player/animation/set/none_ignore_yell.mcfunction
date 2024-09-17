@@ -5,6 +5,8 @@ execute unless data storage luigis_mansion:data my_memory.animation{namespace:"l
 execute unless data storage luigis_mansion:data my_memory.animation{namespace:"luigis_mansion",id:"yell"} run scoreboard players set @s AnimationProgress 0
 scoreboard players reset @s GrabbedShake
 tag @s remove grabbed
+tag @s remove door_animation
+tag @s remove reset_rotation
 execute unless data storage luigis_mansion:data my_memory.animation{namespace:"luigis_mansion",id:"yell"} run tag @s remove idle
 execute unless data storage luigis_mansion:data my_memory.animation{namespace:"luigis_mansion",id:"yell"} run tag @s remove animation_may_move
 tag @s remove tick_down_invulnerability

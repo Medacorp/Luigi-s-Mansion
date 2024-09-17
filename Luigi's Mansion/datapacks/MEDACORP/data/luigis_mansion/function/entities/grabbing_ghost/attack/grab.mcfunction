@@ -11,7 +11,7 @@ $execute if entity @s[scores={ActionTime=1}] run playsound $(namespace):entity.$
 execute if entity @s[scores={ActionTime=1}] positioned ^ ^ ^0.8 as @e[distance=..0.8,tag=game_boy_horror_location] run function luigis_mansion:entities/game_boy_horror_location/bring_player_back
 execute if entity @s[scores={ActionTime=1}] positioned ^ ^ ^0.8 run scoreboard players operation @s GrabbedID = @a[tag=!spectator,distance=..0.8,tag=!grabbed,limit=1] ID
 execute if entity @s[scores={GrabbedID=-2147483648..}] run scoreboard players operation #temp ID = @s GrabbedID
-execute if entity @s[scores={GrabbedID=-2147483648..,ActionTime=1..20}] as @a if score @s ID = #temp ID run tag @s add still_grabbed
+execute if entity @s[scores={GrabbedID=-2147483648..,ActionTime=1..20}] as @a[tag=!door_animation] unless entity @s[scores={WarpTime=1..}] if score @s ID = #temp ID run tag @s add still_grabbed
 execute if entity @s[scores={GrabbedID=-2147483648..,ActionTime=1..20}] as @a[tag=flipped_gravity] if score @s ID = #temp ID run tag @s add flipped_gravity
 execute if entity @s[scores={GrabbedID=-2147483648..,ActionTime=1..20}] as @a[tag=!flipped_gravity] if score @s ID = #temp ID run tag @s remove flipped_gravity
 execute if entity @s[scores={GrabbedID=-2147483648..,ActionTime=21..}] as @a[tag=grabbed] if score @s ID = #temp ID run tag @s add still_grabbed
