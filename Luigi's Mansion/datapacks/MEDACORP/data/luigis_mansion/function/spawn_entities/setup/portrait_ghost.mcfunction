@@ -1,3 +1,4 @@
+function luigis_mansion:spawn_entities/setup/always_pull
 function luigis_mansion:spawn_entities/setup/health
 function luigis_mansion:spawn_entities/setup/max_health
 function luigis_mansion:spawn_entities/setup/flee

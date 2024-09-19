@@ -1,3 +1,8 @@
+v3.0.7:
+* Added the Boo cackle counter, where 10+ cackles results in it not staying in place for a moment
+* Changed how ghost pull strength is handled; made it function a lot better
+* Fixed loot chances to be true to the game in the normal and 3DS hidden mansions (GCN hidden is WIP)
+
 v3.0.6:
 * Fixed Boolossus fight ends after capturing a single Boo, resulting in softlock when trying to get to King Boo
 * Fixed item collect sound plays at wrong location

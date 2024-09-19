@@ -1,1 +1,2 @@
+execute unless data storage luigis_mansion:data entity.vanish_time run scoreboard players set @e[tag=this_entity,scores={VanishTime=0},limit=1] VanishTime -1
 execute if data storage luigis_mansion:data entity.vanish_time store result score @e[tag=this_entity,limit=1] VanishTime run data get storage luigis_mansion:data entity.vanish_time

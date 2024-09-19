@@ -91,6 +91,7 @@ scoreboard objectives add HomeRotationY dummy
 scoreboard objectives add HomeX dummy
 scoreboard objectives add HomeY dummy
 scoreboard objectives add HomeZ dummy
+scoreboard objectives add HurtCounter dummy
 scoreboard objectives add HurtTime dummy
 scoreboard objectives add IceSpikesNr dummy
 scoreboard objectives add ID dummy
@@ -154,7 +155,6 @@ scoreboard objectives add PreviousHealth dummy
 scoreboard objectives add PreviousMusicType dummy
 scoreboard objectives add PreviousRoom dummy
 scoreboard objectives add Pull dummy
-scoreboard objectives add PullStrength dummy
 scoreboard objectives add Range dummy
 scoreboard objectives add ReflectionNr dummy
 scoreboard objectives add ReturnTimer dummy

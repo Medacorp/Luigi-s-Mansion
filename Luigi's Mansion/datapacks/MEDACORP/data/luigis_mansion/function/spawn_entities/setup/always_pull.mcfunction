@@ -1,0 +1,2 @@
+execute if data storage luigis_mansion:data entity{always_pull:0b} run tag @e[tag=this_entity,limit=1] remove always_pull_players
+execute if data storage luigis_mansion:data entity{always_pull:1b} run tag @e[tag=this_entity,limit=1] add always_pull_players

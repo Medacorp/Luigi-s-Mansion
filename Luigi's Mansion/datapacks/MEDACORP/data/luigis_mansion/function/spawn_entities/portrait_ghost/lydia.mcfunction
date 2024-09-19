@@ -20,7 +20,7 @@ execute as @e[tag=this_entity,limit=1] store result score @s MoveFlee run data g
 execute as @e[tag=this_entity,limit=1] store result score @s VanishTime run data get storage luigis_mansion:data current_state.current_data.portrait_ghosts.luigis_mansion.lydia.vanish_time
 data modify entity @e[tag=this_entity,limit=1] data.loot set from storage luigis_mansion:data current_state.current_data.portrait_ghosts.luigis_mansion.lydia.loot
 data modify entity @e[tag=this_entity,limit=1] data.damage set from storage luigis_mansion:data current_state.current_data.portrait_ghosts.luigis_mansion.lydia.damage
-scoreboard players set @e[tag=this_entity,limit=1] PullStrength 10
+execute if data storage luigis_mansion:data current_state.current_data.portrait_ghosts.luigis_mansion.lydia{always_pull:1b} run tag @e[tag=this_entity,limit=1] add always_pull_players
 scoreboard players set @e[tag=this_entity,limit=1] Sound 0
 scoreboard players set @e[tag=this_entity,limit=1] StunTime 0
 scoreboard players set @e[tag=this_entity,limit=1] VulnerableTime 0

@@ -1,0 +1,2 @@
+execute unless data storage luigis_mansion:data update_data{data_version:3} run function 3ds_remake:other/upgrade_path/current_data/v3.0
+data modify storage luigis_mansion:data update_data merge value {data_version:4,portrait_ghosts:{luigis_mansion:{neville:{always_pull:0b},lydia:{always_pull:0b},miss_petunia:{always_pull:0b},spooky:{always_pull:0b}}},ghosts:{e3_demo:{ghost:{always_pull:0b},puncher:{always_pull:0b},body_slammer:{always_pull:1b},basher:{always_pull:0b}}}}

@@ -37,7 +37,7 @@ Mansion data is a massive collection of info storing everything the map needs to
             portrificationized:0b, //BASE; When health is 0, and this is 0b, the ghost can be portrificationized and turned into a painting. It is then set to 1b.
             rank:-1b, //BASE; The rank you're obtained. Default = -1b, which is undefined (treated as bronze), 0b is bronze, 1b is silver, 2b and above is gold. 3b and above is platinum if 3DS Remake add-on is installed.
             top_vacuum_damage:0, //The highest amount of damage dealt in 1 suction.
-            max_health:X, //The max health. Together with health, used to determine the pearl size to drop.
+            max_health:X, //The max health. Together with health, used to determine the pearl sizes to drop.
             //See also HP-having ghost data below
         },
         floating_whirlindas:{ //Save format for the floating whirlindas.
@@ -75,7 +75,7 @@ Mansion data is a massive collection of info storing everything the map needs to
             merged_speed:30, //The speed the merged Boolossus form has.
             max_health:X, //The max health.
             //BASE portrait ghost data.
-            //See also HP-having ghost data below, except flee_speed
+            //See also HP-having ghost data below, except pull_strength, flee_speed
         }
     },
     boos:[
@@ -88,20 +88,21 @@ Mansion data is a massive collection of info storing everything the map needs to
             trap_found:0b, //Whether or not the trap from this Boo has been found before.
             message:1, //Which message this boo shows upon spawning next time.
             can_attack:1b, //Whether or not this boo can use the dash attack. Dash attack always gets enabled in a room from which a boo cannot warp away.
-            //See also HP-having ghost data below, all fields except flee_speed and vanish_time.
+            //See also HP-having ghost data below, all fields except pull_strength, flee_speed and vanish_time.
         }
     ],
     ghosts:{ //Normal ghost variables.
         <HP-having ghost>:{ //A ghost with HP (for example a gold ghost).
+            pull_strength:X, //How strong this ghost's pull is. 0b = pulls players when they're dragged. 1b = pulls players when not pulled. 2b = always pulls players. Default = 0b
             health:X, //Health at spawn.
             loot:{ //Loot this ghost drops upon defeat.
                 drop_at_0:{ //Spawns the provided loot contents the moment health drops to 0, the other loot contents spawn the moment the ghost is captured. Mansions can modify this loot with their "loot_chances_ghost" function.
                     //See loot documentation for other variables.
-                }
+                },
                 //See loot documentation for other variables.
             },
-            speed:X, //The movement speed of the ghost.
-            flee_speed:X, //The movement speed of the ghost while fleeing from the Poltergust.
+            speed:X, //The movement speed of the ghost. Default = 0.
+            flee_speed:X, //The movement speed of the ghost while fleeing from the Poltergust. Default = 0.
             vanish_time:X, //How many ticks the ghost can stay in the world, haunting, but not attacking, laughing, complaining, being collided with, etc. before it vanishes. -1 means never. Default = -1.
             damage:{ //Damage values the ghost uses in its functions.
                 <type>:X //The amount of damage dealt. Type is usually collision and attack (also used by created projectiles), but can be other values. Default = 0.

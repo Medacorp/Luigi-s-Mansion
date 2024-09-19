@@ -15,11 +15,11 @@ execute as @e[tag=this_entity,limit=1] store result score @s MoveFlee run data g
 execute as @e[tag=this_entity,limit=1] store result score @s VanishTime run data get storage luigis_mansion:data current_state.current_data.ghosts.luigis_mansion.mr_bones.vanish_time
 data modify entity @e[tag=this_entity,limit=1] data.loot set from storage luigis_mansion:data current_state.current_data.ghosts.luigis_mansion.mr_bones.loot
 data modify entity @e[tag=this_entity,limit=1] data.damage set from storage luigis_mansion:data current_state.current_data.ghosts.luigis_mansion.mr_bones.damage
+execute if data storage luigis_mansion:data current_state.current_data.ghosts.luigis_mansion.mr_bones{always_pull:1b} run tag @e[tag=this_entity,limit=1] add always_pull_players
 teleport @e[tag=this_entity,limit=1] ~ ~ ~ facing entity @p[tag=!spectator]
 execute as @e[tag=this_entity,limit=1] store result score @s HomeX run data get entity @s Pos[0] 100
 execute as @e[tag=this_entity,limit=1] store result score @s HomeY run data get entity @s Pos[1] 100
 execute as @e[tag=this_entity,limit=1] store result score @s HomeZ run data get entity @s Pos[2] 100
-scoreboard players set @e[tag=this_entity,limit=1] PullStrength 15
 scoreboard players set @e[tag=this_entity,limit=1] Sound 0
 scoreboard players set @e[tag=this_entity,limit=1] StunTime 0
 scoreboard players set @e[tag=this_entity,limit=1] VulnerableTime 0

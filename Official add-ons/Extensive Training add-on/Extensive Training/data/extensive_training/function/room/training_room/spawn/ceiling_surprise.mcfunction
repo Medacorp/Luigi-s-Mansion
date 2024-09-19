@@ -1,2 +1,2 @@
-data modify storage luigis_mansion:data entity set value {room:-2,spawn:1b,disappear_on_vanish:1b,health:1,speed:0,flee_speed:0,vanish_time:-1,loot:{},damage:{collision:0},training_room_score:1}
+data modify storage luigis_mansion:data entity set value {room:-2,spawn:1b,disappear_on_vanish:1b,always_pull:1b,health:1,speed:0,flee_speed:0,vanish_time:-1,loot:{},damage:{collision:0},training_room_score:1}
 execute positioned ~ ~3 ~ run function luigis_mansion:spawn_entities/ghost/ceiling_surprise

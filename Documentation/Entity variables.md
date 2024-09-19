@@ -40,6 +40,7 @@ entity:{
     training_room_score:X, //Score granted to the one who reeled in the ghost in the training room. Default = 0.
     
     //Ghost default overwrites
+    pull_strength:X, //How strong this ghost's pull is. 0b = pulls players when they're dragged. 1b = pulls players when not pulled. 2b = always pulls players. Only applies to ghost types that have health, except Boos.
     health:X, //Health at spawn. Only applies to ghost types that have health.
     loot:{ //Loot this ghost drops upon defeat.
         drop_at_0:{ //Spawns the provided loot contents the moment health drops to 0, the other loot contents spawn the moment the ghost is captured. Mansions can modify this loot with their "loot_chances_ghost" function. Only applies to ghost types that have health.
@@ -56,7 +57,7 @@ entity:{
         vacuum:X, //Bowser's vacuum attack.
         tail:X, //Bowser's tail attack.
         spike_ball:X, //Bowser's spike balls' explosion and resulting burning floor.
-        spit_ice:X //Bowser's spit ice attack (when decapitated).
+        spit_ice:X //Bowser's spit ice attack (when decapitated; decapitating takes the full bowser's spit_ice value).
     },
     
     //Boos
