@@ -1,3 +1,4 @@
+function luigis_mansion:entities/player/memory/get with entity @s
 summon minecraft:marker ~ ~ ~ {Tags:["interact","vacuum","poltergust"]}
 scoreboard players operation #temp Room = @s Room
 scoreboard players operation #temp ID = @s ID
@@ -17,6 +18,7 @@ execute if score #temp GhostCount matches 1.. as @e[tag=ghost,tag=being_vacuumed
 execute if score #temp GhostCount matches 1.. run scoreboard players set @s[tag=is_pulling] ErrorTime 0
 execute if score #temp GhostCount matches 1.. run scoreboard players add @s[tag=!is_pulling] ErrorTime 1
 execute if score #temp GhostCount matches 1.. if entity @s[scores={ErrorTime=10..}] run function e3_demo:items/poltergust_500/vacuuming/get_dragged
+execute unless score #temp GhostCount matches 1.. run data modify storage luigis_mansion:data my_memory.poltergust_latch_on_order set value []
 execute unless score #temp GhostCount matches 1.. run tag @s remove made_error
 execute unless score #temp GhostCount matches 1.. run scoreboard players set @s VacuumErrors 0
 execute unless score #temp GhostCount matches 1.. run scoreboard players set @s ErrorTime 0
@@ -50,3 +52,5 @@ tag @s remove me
 tag @e[tag=already_hurt] remove already_hurt
 kill @e[type=minecraft:marker,tag=interact,limit=1]
 kill @e[type=minecraft:marker,tag=position,limit=1]
+data modify storage luigis_mansion:data memory append from storage luigis_mansion:data my_memory
+data remove storage luigis_mansion:data my_memory

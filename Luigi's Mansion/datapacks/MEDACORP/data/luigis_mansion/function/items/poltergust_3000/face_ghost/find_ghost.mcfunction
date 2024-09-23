@@ -1,0 +1,1 @@
+$tag @e[tag=ghost,tag=being_vacuumed,nbt={UUID:$(uuid)}] add facing_ghost

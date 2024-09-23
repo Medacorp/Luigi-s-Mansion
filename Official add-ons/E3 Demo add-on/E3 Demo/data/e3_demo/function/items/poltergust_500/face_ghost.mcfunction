@@ -1,11 +1,3 @@
-execute as @e[tag=ghost,tag=being_vacuumed] run function e3_demo:items/poltergust_500/face_ghost/add_to_average
-scoreboard players reset #temp2 PositionX
-scoreboard players reset #temp2 PositionY
-scoreboard players reset #temp2 PositionZ
-summon minecraft:marker ~ ~ ~ {Tags:["temp","remove_from_existence"]}
-execute as @e[tag=temp,limit=1] run function e3_demo:items/poltergust_500/face_ghost/get_average
-execute at @s facing entity @e[tag=temp,limit=1] feet run teleport @s ~ ~ ~ ~ ~
-kill @e[tag=temp,limit=1]
-scoreboard players reset #temp PositionX
-scoreboard players reset #temp PositionY
-scoreboard players reset #temp PositionZ
+execute unless entity @e[tag=facing_ghost,limit=1] if data storage luigis_mansion:data my_memory.poltergust_latch_on_order[0] run function e3_demo:items/poltergust_500/face_ghost/loop
+execute at @s facing entity @e[tag=facing_ghost,limit=1] feet run teleport @s ~ ~ ~ ~ ~
+tag @e[tag=facing_ghost,limit=1] remove facing_ghost

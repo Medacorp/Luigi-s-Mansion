@@ -6,7 +6,7 @@ execute if entity @s[scores={WarpTime=95..129}] run function luigis_mansion:main
 execute at @s[scores={WarpTime=50..130}] run particle minecraft:dust{color:[0.5f,0.5f,1f],scale:1.5f} ~ ~1.2 ~ 0.5 0.6 0.5 0 10
 execute unless score #mirrored Selected matches 1 at @s[scores={WarpTime=70..129}] run teleport @s ~ ~ ~ ~54 ~
 execute if score #mirrored Selected matches 1 at @s[scores={WarpTime=70..129}] run teleport @s ~ ~ ~ ~-54 ~
-execute if entity @s[scores={WarpTime=95}] run scoreboard players operation @s LastRoom = @s Room
+execute if entity @s[scores={WarpTime=96}] run scoreboard players set @s LastRoom 0
 execute if entity @s[scores={WarpTime=96}] run scoreboard players operation @s PreviousRoom = @s Room
 execute if entity @s[scores={WarpTime=96}] if score @s Room = @s LastRoom run tag @s add was_in_room
 tag @s[scores={WarpTime=130},tag=!was_in_room] remove seen_room_name
