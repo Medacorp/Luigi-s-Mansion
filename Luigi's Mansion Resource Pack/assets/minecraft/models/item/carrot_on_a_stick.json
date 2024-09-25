@@ -7,22 +7,6 @@
         {
             "predicate": {
                 "damaged": 0,
-				"damage": 0,
-                "custom_model_data": 1
-            },
-            "model": "luigis_mansion:item/poltergust_3000/e_gadd_model"
-        },
-        {
-            "predicate": {
-                "damaged": 0,
-				"damage": 0,
-                "custom_model_data": 2
-            },
-            "model": "e3_demo:item/poltergust_500/e_gadd_model"
-        },
-        {
-            "predicate": {
-                "damaged": 0,
 				"damage": 0.038,
                 "custom_model_data": 0
             },
