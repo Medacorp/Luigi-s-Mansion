@@ -17,8 +17,8 @@ entity:{
     spawn_time:X, //How much to skip in the vanish timer. Does not affect entities that cannot vanish.
     room:X, //Room number that this entity is in. Default = room number of whoever is @s on function call, if absent = 0.
     animation:{ //Animation info.
-        namespace:"luigis_mansion", //The namespace of the animation to use. Default = luigis_mansion.
-        id:"idle", //The namespace of the animation to use. Default = idle.
+        namespace:"luigis_mansion", //The namespace of the animation to use. Default = "luigis_mansion".
+        id:"idle", //The namespace of the animation to use. Default = "idle".
         progress:X, //The progress the animation already has on the first tick. Default = 0.
         frozen:1b //Whether or not the animation is frozen. Default = 0b.
     },
@@ -50,6 +50,7 @@ entity:{
     },
     speed:X, //The movement speed of the ghost.
     flee_speed:X, //The movement speed of the ghost while fleeing from the Poltergust.
+    flee_task:"circle", //The flee task of the ghost while fleeing from the Poltergust. Allowed values are "random", "alternate", "circle", "random_in_range", "loops" and "straight_line".
     vanish_time:X, //How many ticks the ghost can stay in the world, haunting, but not attacking, laughing, complaining, being collided with, etc. before it vanishes. -1 means never.
     damage:{ //Damage values the ghost uses in its functions.
         <type>:X, //The amount of damage dealt. Type is usually collision and attack (also used by created projectiles), but can be other values.

@@ -25,6 +25,8 @@ scoreboard objectives add EntitySizeWidth dummy
 scoreboard objectives add EntityYOffset dummy
 scoreboard objectives add ErrorTime dummy
 scoreboard objectives add FlashlightType dummy
+scoreboard objectives add FleeTask dummy
+scoreboard objectives add FleeTime dummy
 scoreboard objectives add FlyTime dummy
 scoreboard objectives add Food food
 scoreboard objectives add ForceRadar dummy
@@ -197,7 +199,6 @@ scoreboard objectives add TopVacuumDamage dummy
 scoreboard objectives add TotalDamage dummy
 scoreboard objectives add Totals dummy
 scoreboard objectives add TrainingRoomScore dummy
-scoreboard objectives add Turn dummy
 scoreboard objectives add UpgradePlayer dummy
 scoreboard objectives add UseItem minecraft.used:minecraft.carrot_on_a_stick
 scoreboard objectives add Vacuumables dummy

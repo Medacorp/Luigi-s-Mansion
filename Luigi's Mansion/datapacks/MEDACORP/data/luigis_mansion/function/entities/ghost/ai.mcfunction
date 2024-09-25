@@ -23,7 +23,7 @@ execute unless entity @s[tag=stunned,tag=!hurt] run tag @s remove stun_freeze_an
 tag @s[scores={StunTime=0}] remove stunned
 tag @s[scores={StunTime=1..}] add stunned
 
-tag @s[tag=!flee,tag=!show_health] remove turned
+scoreboard players set @s[tag=!flee,tag=!freeze,tag=!show_health] FleeTime 0
 execute at @s[tag=flee,tag=!freeze,tag=!show_health] unless entity @s[scores={DeathTime=1..}] run function luigis_mansion:entities/ghost/flee
 
 execute if entity @s[scores={Health=-2147483648..},tag=show_health] at @s run function luigis_mansion:entities/ghost/health/show

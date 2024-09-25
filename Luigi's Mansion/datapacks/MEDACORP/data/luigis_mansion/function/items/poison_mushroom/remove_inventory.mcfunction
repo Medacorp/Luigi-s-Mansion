@@ -9,6 +9,4 @@ data modify storage luigis_mansion:data inventory append from entity @s Inventor
 data modify storage luigis_mansion:data inventory append from entity @s Inventory[{components:{"minecraft:custom_data":{namespace:"luigis_mansion",id:"interact"}}}]
 function luigis_mansion:other/sync_inventory
 tag @s remove poltergust_selected
-scoreboard players set @s VacuumErrors 0
-scoreboard players set @s ErrorTime 0
-tag @s remove made_error
+tag @s remove game_boy_horror_selected

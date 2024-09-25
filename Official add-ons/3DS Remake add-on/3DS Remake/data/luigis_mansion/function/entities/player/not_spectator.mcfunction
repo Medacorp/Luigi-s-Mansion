@@ -40,6 +40,7 @@ execute if entity @s[scores={AnimationProgress=1..},tag=!dead_player,tag=idle,ta
 execute if entity @s[scores={AnimationProgress=1..},tag=!dead_player,tag=!idle,tag=!animation_may_move,tag=!using_selection_menu,tag=!gooigi] run function luigis_mansion:entities/player/animation/freeze_player
 
 execute if entity @s[tag=gooigi,tag=!dead_player] run function 3ds_remake:entities/player/gooigi
+tag @s[scores={TeleportDelayTimer=0}] remove pulled_by_ghost
 
 execute at @s[scores={LightX=-2147483648..}] unless entity @s[scores={Shrunk=1..}] run function luigis_mansion:other/cast_shadow/2_tall
 execute at @s[scores={LightX=-2147483648..,Shrunk=1..}] run function luigis_mansion:other/cast_shadow/1_tall

@@ -1,2 +1,0 @@
-execute as @a[tag=!spectator,tag=vacuuming_me,distance=3..] run scoreboard players operation @s TeleportDelay = @s TeleportDelaySetting
-execute unless entity @s[tag=!always_pull_players,scores={ErrorTime=..9}] as @a[tag=!spectator,tag=vacuuming_me,scores={TeleportDelayTimer=0},distance=3..] positioned as @s facing entity @e[tag=me,limit=1] feet rotated ~ 0 run function luigis_mansion:entities/ghost/flee/pull_player

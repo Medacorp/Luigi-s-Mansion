@@ -70,12 +70,17 @@ Mansion data is a massive collection of info storing everything the map needs to
             },
             //BASE portrait ghost data.
         },
-        boolossus:{ //Save format for boolossus.
+        boolossus:{ //Save format for Boolossus.
             speed:70, //The sum of all split Boos' speed. The more Boos, the slower. The value represents the speed a single split boo would have if Boolossus popped with a current health of 1.
             merged_speed:30, //The speed the merged Boolossus form has.
             max_health:X, //The max health.
             //BASE portrait ghost data.
-            //See also HP-having ghost data below, except pull_strength, flee_speed
+            //See also HP-having ghost data below, except pull_strength, flee_speed and flee_task.
+        },
+        king_boo:{ //Save format for King Boo.
+            max_health:X, //The max health.
+            //BASE portrait ghost data.
+            //See also HP-having ghost data below, except pull_strength, flee_speed and flee_task.
         }
     },
     boos:[
@@ -103,6 +108,7 @@ Mansion data is a massive collection of info storing everything the map needs to
             },
             speed:X, //The movement speed of the ghost. Default = 0.
             flee_speed:X, //The movement speed of the ghost while fleeing from the Poltergust. Default = 0.
+            flee_task:"circle", //The flee task of the ghost while fleeing from the Poltergust. Allowed values are "random", "alternate", "circle", "random_in_range", "loops" and "straight_line". Default = "straight_line".
             vanish_time:X, //How many ticks the ghost can stay in the world, haunting, but not attacking, laughing, complaining, being collided with, etc. before it vanishes. -1 means never. Default = -1.
             damage:{ //Damage values the ghost uses in its functions.
                 <type>:X //The amount of damage dealt. Type is usually collision and attack (also used by created projectiles), but can be other values. Default = 0.

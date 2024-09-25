@@ -1,12 +1,15 @@
 v3.0.7:
 * Added the Boo cackle counter, where 10+ cackles results in it not staying in place for a moment
+* Added ghost flee tasks
 * Changed players to look at vacuum-latched-on ghosts in order of latching, rather than look at the averaged out position; the new behavior matches the original
+* Changed criteria for getting dragged to be closer to the original game; you now only get dragged if you get pulled; a vacuum error can be made again if you weren't pulled for a tick, a vacuum error will not occur if you pulled the ghost in the last 5 ticks
 * Changed how ghost pull strength is handled; made it function a lot better
 * Changed mirror warp to make the player forget what room it was in before, resetting the room
 * Fixed loot chances to be true to the game
 * Fixed hard difficulty stunning incorrectly calculates stun time; it now simply caps the stun time
 * Fixed dropping items doesn't allow using them for a single tick
 * Fixed dropping poltergust wipes element
+* Fixed neither poltergust nor flashlight had effects shown in mirrors
 
 v3.0.6:
 * Fixed Boolossus fight ends after capturing a single Boo, resulting in softlock when trying to get to King Boo

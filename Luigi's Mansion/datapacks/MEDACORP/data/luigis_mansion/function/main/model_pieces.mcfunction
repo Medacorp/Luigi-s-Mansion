@@ -14,7 +14,7 @@ tag @s[scores={MirrorX=-2147483648..},tag=!no_reflection] add mirrored
 tag @s[scores={MirrorZ=-2147483648..},tag=!no_reflection] add mirrored
 execute if entity @s[tag=mirrored] run function luigis_mansion:entities/reflection/add
 scoreboard players reset @s[tag=!mirrored] ReflectionNr
-tag @s[tag=mirrored] remove mirrored
+tag @s remove mirrored
 scoreboard players reset @s LightX
 scoreboard players reset @s LightY
 scoreboard players reset @s LightZ

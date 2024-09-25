@@ -5,7 +5,7 @@ scoreboard players set @a[x=660,y=19,z=34,dx=8,dy=7,dz=14] Room 42
 scoreboard players set #temp Room 42
 #/todelete
 
-execute as @e[scores={Room=42}] unless entity @s[type=!minecraft:armor_stand,type=!minecraft:item_frame] if score #global_mirror_reflections Selected matches 1 run scoreboard players set @s MirrorX 661
+execute as @e[scores={Room=42},tag=!model_piece,tag=!no_reflection,tag=!reflection,type=#luigis_mansion:reflected] if score #global_mirror_reflections Selected matches 1 run scoreboard players set @s MirrorX 661
 
 execute as @a[scores={Room=42}] run function 3ds_remake:room/hidden/washroom_2/tick_per_player
 

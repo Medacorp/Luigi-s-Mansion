@@ -38,6 +38,7 @@ execute if entity @s[scores={AnimationProgress=1..},tag=!dead_player,tag=idle] u
 execute if entity @s[scores={AnimationProgress=1..},tag=!dead_player,tag=!idle,tag=!animation_may_move,tag=!using_selection_menu] run function luigis_mansion:entities/player/animation/freeze_player
 
 execute unless entity @s[scores={Walk=0,Run=0,Sneak=0}] if entity @s[tag=!looking_at_map] run function luigis_mansion:entities/player/walk_dust
+tag @s[scores={TeleportDelayTimer=0}] remove pulled_by_ghost
 
 execute at @s[scores={LightX=-2147483648..}] unless entity @s[scores={Shrunk=1..}] run function luigis_mansion:other/cast_shadow/2_tall
 execute at @s[scores={LightX=-2147483648..,Shrunk=1..}] run function luigis_mansion:other/cast_shadow/1_tall

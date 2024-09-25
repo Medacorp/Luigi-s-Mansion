@@ -13,6 +13,11 @@ execute as @e[tag=this_entity,limit=1] store result score @s VanishTime run data
 data modify entity @e[tag=this_entity,limit=1] data.loot set from storage luigis_mansion:data current_state.current_data.ghosts.luigis_mansion.flash.loot
 data modify entity @e[tag=this_entity,limit=1] data.damage set from storage luigis_mansion:data current_state.current_data.ghosts.luigis_mansion.flash.damage
 execute if data storage luigis_mansion:data current_state.current_data.ghosts.luigis_mansion.flash{always_pull:1b} run tag @e[tag=this_entity,limit=1] add always_pull_players
+execute if data storage luigis_mansion:data current_state.current_data.ghosts.luigis_mansion.flash{flee_task:"random"} run scoreboard players set @e[tag=this_entity,limit=1] FleeTask 0
+execute if data storage luigis_mansion:data current_state.current_data.ghosts.luigis_mansion.flash{flee_task:"alternate"} run scoreboard players set @e[tag=this_entity,limit=1] FleeTask 1
+execute if data storage luigis_mansion:data current_state.current_data.ghosts.luigis_mansion.flash{flee_task:"circle"} run scoreboard players set @e[tag=this_entity,limit=1] FleeTask 2
+execute if data storage luigis_mansion:data current_state.current_data.ghosts.luigis_mansion.flash{flee_task:"random_in_range"} run scoreboard players set @e[tag=this_entity,limit=1] FleeTask 3
+execute if data storage luigis_mansion:data current_state.current_data.ghosts.luigis_mansion.flash{flee_task:"loops"} run scoreboard players set @e[tag=this_entity,limit=1] FleeTask 4
 teleport @e[tag=this_entity,limit=1] ~ ~ ~ facing entity @p[tag=!spectator]
 execute as @e[tag=this_entity,limit=1] store result score @s HomeX run data get entity @s Pos[0] 100
 execute as @e[tag=this_entity,limit=1] store result score @s HomeY run data get entity @s Pos[1] 100

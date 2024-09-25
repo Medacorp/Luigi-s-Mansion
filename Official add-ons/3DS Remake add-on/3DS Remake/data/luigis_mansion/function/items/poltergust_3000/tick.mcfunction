@@ -28,8 +28,6 @@ execute if entity @s[tag=exploding_poltergust] run function luigis_mansion:items
 tag @s[tag=!poltergust_malfunction,nbt={SelectedItem:{components:{"minecraft:custom_data":{namespace:"luigis_mansion",id:"poltergust_3000"}}}}] add poltergust_selected
 execute if entity @s[nbt={Inventory:[{components:{"minecraft:custom_data":{namespace:"luigis_mansion",id:"poltergust_3000",sync_element:1b}}}]}] run function luigis_mansion:items/poltergust_3000/sync_element
 tag @s[tag=!poltergust_selected] remove expelling
-scoreboard players set @s[tag=!poltergust_selected] VacuumErrors 0
-tag @s[tag=!poltergust_selected] remove made_error
 tag @s[tag=poltergust_selected,tag=!vacuuming_ghost,scores={UseItem=1..},tag=!expelling] add toggle_expelling
 tag @s[tag=poltergust_selected,tag=!vacuuming_ghost,tag=toggle_expelling] add expelling
 tag @s[tag=poltergust_selected,tag=!vacuuming_ghost,scores={UseItem=1..},tag=!toggle_expelling] remove expelling

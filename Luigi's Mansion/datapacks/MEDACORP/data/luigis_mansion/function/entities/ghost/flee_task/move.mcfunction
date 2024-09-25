@@ -10,7 +10,6 @@ execute at @s unless block ~ ~ ~0.3 #luigis_mansion:all_ignore unless block ~ ~ 
 execute at @s unless block ~ ~ ~-0.3 #luigis_mansion:all_ignore unless block ~ ~ ~-0.3 #minecraft:slabs[type=bottom] if block ~ ~ ~ #luigis_mansion:all_ignore run teleport @s ~ ~ ~0.1
 execute unless block ^ ^ ^0.6 #minecraft:slabs[type=bottom] unless block ^ ^ ^0.6 #luigis_mansion:all_ignore rotated ~ 0 unless block ^ ^ ^0.6 #minecraft:slabs[type=bottom] unless block ^ ^ ^0.6 #luigis_mansion:all_ignore run scoreboard players set #temp MoveFlee 0
 execute unless block ^ ^1 ^0.6 #luigis_mansion:all_ignore rotated ~ 0 unless block ^ ^ ^0.6 #luigis_mansion:all_ignore run scoreboard players set #temp MoveFlee 0
-execute unless block ^ ^ ^0.6 #minecraft:slabs[type=bottom] unless block ^ ^ ^0.6 #luigis_mansion:all_ignore rotated ~ 0 unless block ^ ^ ^0.6 #minecraft:slabs[type=bottom] unless block ^ ^ ^0.6 #luigis_mansion:all_ignore run tag @s[tag=flee] add wall
-execute unless block ^ ^1 ^0.6 #luigis_mansion:all_ignore rotated ~ 0 unless block ^ ^ ^0.6 #luigis_mansion:all_ignore run tag @s[tag=flee] add wall
-execute if score #temp MoveFlee matches 1.. positioned as @s if entity @a[tag=vacuuming_me,distance=..6,limit=1] run function luigis_mansion:entities/ghost/flee/move
-execute if score #temp MoveFlee matches 1.. positioned as @s unless entity @a[tag=vacuuming_me,limit=1] run function luigis_mansion:entities/ghost/flee/move
+execute unless block ^ ^ ^0.6 #minecraft:slabs[type=bottom] unless block ^ ^ ^0.6 #luigis_mansion:all_ignore rotated ~ 0 unless block ^ ^ ^0.6 #minecraft:slabs[type=bottom] unless block ^ ^ ^0.6 #luigis_mansion:all_ignore run tag @s add wall
+execute unless block ^ ^1 ^0.6 #luigis_mansion:all_ignore rotated ~ 0 unless block ^ ^ ^0.6 #luigis_mansion:all_ignore run tag @s add wall
+execute if score #temp MoveFlee matches 1.. positioned as @s run function luigis_mansion:entities/ghost/flee_task/move

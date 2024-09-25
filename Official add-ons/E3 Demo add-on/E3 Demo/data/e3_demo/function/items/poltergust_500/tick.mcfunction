@@ -21,8 +21,6 @@ tag @s[tag=!poltergust_malfunction,nbt={SelectedItem:{components:{"minecraft:cus
 tag @s[tag=!poltergust_selected] remove expelling
 execute if entity @s[scores={OverheatMeter=300..}] run function e3_demo:items/poltergust_500/explode
 execute if entity @s[tag=exploding_poltergust] run function e3_demo:items/poltergust_500/explode
-scoreboard players set @s[tag=!poltergust_selected] VacuumErrors 0
-tag @s[tag=!poltergust_selected] remove made_error
 tag @s[tag=poltergust_selected,tag=!vacuuming_ghost,scores={UseItem=1..},tag=!expelling] add toggle_expelling
 tag @s[tag=poltergust_selected,tag=!vacuuming_ghost,tag=toggle_expelling] add expelling
 tag @s[tag=poltergust_selected,tag=!vacuuming_ghost,scores={UseItem=1..},tag=!toggle_expelling] remove expelling
@@ -32,6 +30,6 @@ tag @s remove vacuuming_ghost
 execute if entity @s[tag=idle,tag=poltergust_selected,tag=poltergust_grabbed,tag=!disable_poltergust] run function luigis_mansion:entities/player/animation/set/none
 execute if entity @s[tag=!expelling,tag=poltergust_selected,tag=poltergust_grabbed,tag=!disable_poltergust] positioned ~ ~0.5 ~ run function e3_demo:items/poltergust_500/vacuuming
 execute if entity @s[tag=expelling,tag=poltergust_selected,tag=poltergust_grabbed,tag=!disable_poltergust] positioned ~ ~0.5 ~ run function e3_demo:items/poltergust_500/expelling
-execute if entity @s[tag=vaporizing_ghost] as @e[tag=captured,tag=element_death] at @s run function e3_demo:items/poltergust_500/vaporize
+execute if entity @s[tag=vaporizing_ghost] as @e[tag=captured,tag=element_death,tag=same_room] at @s run function e3_demo:items/poltergust_500/vaporize
 tag @s remove vaporizing_ghost
 scoreboard players set @s[tag=!vacuuming_ghost] GhostCount 0
