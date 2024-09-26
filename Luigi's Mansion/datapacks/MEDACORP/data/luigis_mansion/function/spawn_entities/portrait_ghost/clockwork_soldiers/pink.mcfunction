@@ -20,9 +20,10 @@ execute as @e[tag=this_entity,limit=1] store result score @s TopVacuumDamage run
 execute as @e[tag=this_entity,limit=1] store result score @s Move run data get storage luigis_mansion:data current_state.current_data.portrait_ghosts.luigis_mansion.clockwork_soldiers.pink.speed
 execute as @e[tag=this_entity,limit=1] store result score @s MoveFlee run data get storage luigis_mansion:data current_state.current_data.portrait_ghosts.luigis_mansion.clockwork_soldiers.pink.flee_speed
 execute as @e[tag=this_entity,limit=1] store result score @s VanishTime run data get storage luigis_mansion:data current_state.current_data.portrait_ghosts.luigis_mansion.clockwork_soldiers.pink.vanish_time
+execute as @e[tag=this_entity,limit=1] store result score @s PullStrength run data get storage luigis_mansion:data current_state.current_data.portrait_ghosts.luigis_mansion.clockwork_soldiers.pink.pull.strength
+execute as @e[tag=this_entity,limit=1] store result score @s PullAngle run data get storage luigis_mansion:data current_state.current_data.portrait_ghosts.luigis_mansion.clockwork_soldiers.pink.pull.angle
 data modify entity @e[tag=this_entity,limit=1] data.loot set from storage luigis_mansion:data current_state.current_data.portrait_ghosts.luigis_mansion.clockwork_soldiers.pink.loot
 data modify entity @e[tag=this_entity,limit=1] data.damage set from storage luigis_mansion:data current_state.current_data.portrait_ghosts.luigis_mansion.clockwork_soldiers.pink.damage
-execute if data storage luigis_mansion:data current_state.current_data.portrait_ghosts.luigis_mansion.clockwork_soldiers.pink{always_pull:1b} run tag @e[tag=this_entity,limit=1] add always_pull_players
 execute if data storage luigis_mansion:data current_state.current_data.portrait_ghosts.luigis_mansion.clockwork_soldiers.pink{flee_task:"random"} run scoreboard players set @e[tag=this_entity,limit=1] FleeTask 0
 execute if data storage luigis_mansion:data current_state.current_data.portrait_ghosts.luigis_mansion.clockwork_soldiers.pink{flee_task:"alternate"} run scoreboard players set @e[tag=this_entity,limit=1] FleeTask 1
 execute if data storage luigis_mansion:data current_state.current_data.portrait_ghosts.luigis_mansion.clockwork_soldiers.pink{flee_task:"circle"} run scoreboard players set @e[tag=this_entity,limit=1] FleeTask 2

@@ -75,12 +75,12 @@ Mansion data is a massive collection of info storing everything the map needs to
             merged_speed:30, //The speed the merged Boolossus form has.
             max_health:X, //The max health.
             //BASE portrait ghost data.
-            //See also HP-having ghost data below, except pull_strength, flee_speed and flee_task.
+            //See also HP-having ghost data below, except pull, flee_speed and flee_task.
         },
         king_boo:{ //Save format for King Boo.
             max_health:X, //The max health.
             //BASE portrait ghost data.
-            //See also HP-having ghost data below, except pull_strength, flee_speed and flee_task.
+            //See also HP-having ghost data below, except pull, flee_speed and flee_task.
         }
     },
     boos:[
@@ -93,12 +93,15 @@ Mansion data is a massive collection of info storing everything the map needs to
             trap_found:0b, //Whether or not the trap from this Boo has been found before.
             message:1, //Which message this boo shows upon spawning next time.
             can_attack:1b, //Whether or not this boo can use the dash attack. Dash attack always gets enabled in a room from which a boo cannot warp away.
-            //See also HP-having ghost data below, all fields except pull_strength, flee_speed and vanish_time.
+            //See also HP-having ghost data below, all fields except pull, flee_speed, flee_task and vanish_time.
         }
     ],
     ghosts:{ //Normal ghost variables.
         <HP-having ghost>:{ //A ghost with HP (for example a gold ghost).
-            pull_strength:X, //How strong this ghost's pull is. 0b = pulls players when they're dragged. 1b = pulls players when not pulled. 2b = always pulls players. Default = 0b
+            pull: { //Pulling information.
+                strength:X, //Percentage of chance the ghost will pull the player, even if it is pulled.
+                angle:X //Angle in degrees where the player can move to damage the ghost, where 0 is directly opposite of the ghost. Widend and decreased based on difficulty; the value provided is for normal difficulty. Capped at 180. 
+            },
             health:X, //Health at spawn.
             loot:{ //Loot this ghost drops upon defeat.
                 drop_at_0:{ //Spawns the provided loot contents the moment health drops to 0, the other loot contents spawn the moment the ghost is captured. Mansions can modify this loot with their "loot_chances_ghost" function.

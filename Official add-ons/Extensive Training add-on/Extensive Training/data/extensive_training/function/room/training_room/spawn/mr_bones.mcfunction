@@ -1,2 +1,2 @@
-data modify storage luigis_mansion:data entity set value {room:-2,spawn:1b,appear_type:"none",disappear_on_vanish:1b,always_pull:0b,flee_task:"alternate",health:3000,speed:20,flee_speed:20,vanish_time:-1,loot:{},damage:{collision:5,attack:10},training_room_score:7}
+data modify storage luigis_mansion:data entity set value {room:-2,spawn:1b,appear_type:"none",disappear_on_vanish:1b,pull:{strength:30,angle:120},flee_task:"alternate",health:3000,speed:20,flee_speed:20,vanish_time:-1,loot:{},damage:{collision:5,attack:10},training_room_score:7}
 function luigis_mansion:spawn_entities/ghost/mr_bones

@@ -16,9 +16,12 @@ execute if score #temp GhostCount matches 1.. if entity @s[scores={TeleportDelay
 execute if score #temp GhostCount matches 1.. as @e[tag=ghost,tag=being_vacuumed] run function luigis_mansion:items/poltergust_3000/catch_ghost
 execute if score #temp GhostCount matches 1.. at @e[tag=ghost,tag=being_vacuumed,scores={ErrorTime=5}] run function luigis_mansion:items/poltergust_3000/vacuuming/made_error
 execute if score #temp GhostCount matches 1.. as @e[tag=ghost,tag=being_vacuumed] positioned ~ ~0.5 ~ facing entity @s feet run function luigis_mansion:items/poltergust_3000/vacuuming/ghost
+execute if score #temp GhostCount matches 1.. run scoreboard players add @s[tag=!is_pulling] ErrorTime 1
+execute if score #temp GhostCount matches 1.. run scoreboard players set @s[tag=is_pulling] ErrorTime 0
 execute if score #temp GhostCount matches 1.. if entity @s[tag=pulled_by_ghost] run function luigis_mansion:items/poltergust_3000/vacuuming/get_dragged
 execute if score #temp GhostCount matches 1.. if entity @s[scores={VacuumErrors=10..}] run function luigis_mansion:items/poltergust_3000/vacuuming/ghosts_break_free
 execute unless score #temp GhostCount matches 1.. run data modify storage luigis_mansion:data my_memory.poltergust_latch_on_order set value []
+execute unless score #temp GhostCount matches 1.. run scoreboard players set @s ErrorTime 0
 execute unless score #temp GhostCount matches 1.. run scoreboard players set @s VacuumErrors 0
 execute unless score #temp GhostCount matches 1.. unless entity @e[tag=ball,distance=..1.5,tag=can_spit,limit=1] unless entity @e[tag=ball,tag=big,distance=..3,tag=can_spit,limit=1] run function luigis_mansion:items/poltergust_3000/vacuuming/default
 execute unless score #temp GhostCount matches 1.. if entity @e[tag=ball,tag=!big,distance=..1.5,tag=can_spit,sort=nearest,limit=1] run function luigis_mansion:items/poltergust_3000/vacuuming/get_clogged

@@ -15,6 +15,7 @@ scoreboard players reset #temp RotationX
 kill @e[tag=home,limit=1]
 tag @s[scores={AnimationProgress=1}] add reset_rotation
 tag @s[scores={AnimationProgress=1}] add door_animation
+tag @s[tag=dark_room] add keep_poltergust_grabbed
 tag @s[scores={AnimationProgress=1}] add animation_may_move
 execute if entity @s[scores={AnimationProgress=10,Health=41..,Shrunk=0}] run playsound luigis_mansion:entity.player.open_door.high_health player @a[tag=same_room,distance=0.1..] ~ ~ ~ 1
 execute if entity @s[scores={AnimationProgress=10,Health=41..,Shrunk=1..}] run playsound luigis_mansion:entity.player.open_door.high_health player @a[tag=same_room,distance=0.1..] ~ ~ ~ 1 2

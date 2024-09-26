@@ -40,7 +40,10 @@ entity:{
     training_room_score:X, //Score granted to the one who reeled in the ghost in the training room. Default = 0.
     
     //Ghost default overwrites
-    pull_strength:X, //How strong this ghost's pull is. 0b = pulls players when they're dragged. 1b = pulls players when not pulled. 2b = always pulls players. Only applies to ghost types that have health, except Boos.
+    pull: { //Pulling information.
+        strength:X, //Percentage of chance the ghost will pull the player, even if it is pulled.
+        angle:X //Angle in degrees where the player can move to damage the ghost, where 0 is directly opposite of the ghost. Widend and decreased based on difficulty; the value provided is for normal difficulty. Capped at 180. 
+    },
     health:X, //Health at spawn. Only applies to ghost types that have health.
     loot:{ //Loot this ghost drops upon defeat.
         drop_at_0:{ //Spawns the provided loot contents the moment health drops to 0, the other loot contents spawn the moment the ghost is captured. Mansions can modify this loot with their "loot_chances_ghost" function. Only applies to ghost types that have health.

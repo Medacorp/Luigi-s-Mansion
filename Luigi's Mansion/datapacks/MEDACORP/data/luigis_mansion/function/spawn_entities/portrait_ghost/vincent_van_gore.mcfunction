@@ -18,9 +18,10 @@ execute as @e[tag=this_entity,limit=1] store result score @s TopVacuumDamage run
 execute as @e[tag=this_entity,limit=1] store result score @s Move run data get storage luigis_mansion:data current_state.current_data.portrait_ghosts.luigis_mansion.vincent_van_gore.speed
 execute as @e[tag=this_entity,limit=1] store result score @s MoveFlee run data get storage luigis_mansion:data current_state.current_data.portrait_ghosts.luigis_mansion.vincent_van_gore.flee_speed
 execute as @e[tag=this_entity,limit=1] store result score @s VanishTime run data get storage luigis_mansion:data current_state.current_data.portrait_ghosts.luigis_mansion.vincent_van_gore.vanish_time
+execute as @e[tag=this_entity,limit=1] store result score @s PullStrength run data get storage luigis_mansion:data current_state.current_data.portrait_ghosts.luigis_mansion.vincent_van_gore.pull.strength
+execute as @e[tag=this_entity,limit=1] store result score @s PullAngle run data get storage luigis_mansion:data current_state.current_data.portrait_ghosts.luigis_mansion.vincent_van_gore.pull.angle
 data modify entity @e[tag=this_entity,limit=1] data.loot set from storage luigis_mansion:data current_state.current_data.portrait_ghosts.luigis_mansion.vincent_van_gore.loot
 data modify entity @e[tag=this_entity,limit=1] data.damage set from storage luigis_mansion:data current_state.current_data.portrait_ghosts.luigis_mansion.vincent_van_gore.damage
-execute if data storage luigis_mansion:data current_state.current_data.portrait_ghosts.luigis_mansion.vincent_van_gore{always_pull:1b} run tag @e[tag=this_entity,limit=1] add always_pull_players
 execute if data storage luigis_mansion:data current_state.current_data.portrait_ghosts.luigis_mansion.vincent_van_gore{flee_task:"random"} run scoreboard players set @e[tag=this_entity,limit=1] FleeTask 0
 execute if data storage luigis_mansion:data current_state.current_data.portrait_ghosts.luigis_mansion.vincent_van_gore{flee_task:"alternate"} run scoreboard players set @e[tag=this_entity,limit=1] FleeTask 1
 execute if data storage luigis_mansion:data current_state.current_data.portrait_ghosts.luigis_mansion.vincent_van_gore{flee_task:"circle"} run scoreboard players set @e[tag=this_entity,limit=1] FleeTask 2

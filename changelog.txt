@@ -1,16 +1,19 @@
 v3.0.7:
 * Added the Boo cackle counter, where 10+ cackles results in it not staying in place for a moment
 * Added ghost flee tasks
-* Changed players to look at vacuum-latched-on ghosts in order of latching, rather than look at the averaged out position; the new behavior matches the original
-* Changed criteria for getting dragged to be closer to the original game; you now only get dragged if you get pulled; a vacuum error can be made again if you weren't pulled for a tick, a vacuum error will not occur if you pulled the ghost in the last 5 ticks
-* Changed how ghost pull strength is handled; made it function a lot better
+* Added missing scan message
+* Changed players to look at vacuum-latched-on ghosts in order of latching, rather than look at the averaged out position; the new behavior matches the original game
+* Changed ghosts pulling to have separate valid angles per ghost, matching the original game; lenient pull accuracy gives 40 extra degrees, strict pull accuracy halves the degrees
+* Changed criteria for getting dragged to be closer to the original game; you now only get dragged if you get pulled; a vacuum error is made for each ghost that started pulling you that hasn't pulled you last tick, a vacuum error will not occur if you pulled the ghost in the last 5 ticks
+* Changed how ghost pull strength is handled to be closer to the original game; they now only pull you if at the end of range and there's room, or if their chance check succeeds and there's room
 * Changed mirror warp to make the player forget what room it was in before, resetting the room
 * Changed Luigi and E. Gadd dragged animations
 * Changed Poltergust body to shake when vacuuming (and not riding the poltergust)
 * Fixed loot chances to be true to the game
+* Fixed speedy spirits don't get base loot dropped at 0 if a money ID was provided for loot dropped at 0
 * Fixed hard difficulty stunning incorrectly calculates stun time; it now simply caps the stun time
 * Fixed dropping items doesn't allow using them for a single tick
-* Fixed dropping poltergust wipes element
+* Fixed dropping poltergust wipes element meter
 * Fixed neither poltergust nor flashlight had effects shown in mirrors
 * Removed special E. Gadd model for the poltergust, E. Gadd now uses the same models as the player
 

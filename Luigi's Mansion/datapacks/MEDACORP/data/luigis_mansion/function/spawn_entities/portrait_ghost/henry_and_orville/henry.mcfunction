@@ -18,9 +18,10 @@ execute as @e[tag=this_entity,limit=1] store result score @s TopVacuumDamage run
 execute as @e[tag=this_entity,limit=1] store result score @s Move run data get storage luigis_mansion:data current_state.current_data.portrait_ghosts.luigis_mansion.henry_and_orville.henry.speed
 execute as @e[tag=this_entity,limit=1] store result score @s MoveFlee run data get storage luigis_mansion:data current_state.current_data.portrait_ghosts.luigis_mansion.henry_and_orville.henry.flee_speed
 execute as @e[tag=this_entity,limit=1] store result score @s VanishTime run data get storage luigis_mansion:data current_state.current_data.portrait_ghosts.luigis_mansion.henry_and_orville.henry.vanish_time
+execute as @e[tag=this_entity,limit=1] store result score @s PullStrength run data get storage luigis_mansion:data current_state.current_data.portrait_ghosts.luigis_mansion.henry_and_orville.henry.pull.strength
+execute as @e[tag=this_entity,limit=1] store result score @s PullAngle run data get storage luigis_mansion:data current_state.current_data.portrait_ghosts.luigis_mansion.henry_and_orville.henry.pull.angle
 data modify entity @e[tag=this_entity,limit=1] data.loot set from storage luigis_mansion:data current_state.current_data.portrait_ghosts.luigis_mansion.henry_and_orville.henry.loot
 data modify entity @e[tag=this_entity,limit=1] data.damage set from storage luigis_mansion:data current_state.current_data.portrait_ghosts.luigis_mansion.henry_and_orville.henry.damage
-execute if data storage luigis_mansion:data current_state.current_data.portrait_ghosts.luigis_mansion.henry_and_orville.henry{always_pull:1b} run tag @e[tag=this_entity,limit=1] add always_pull_players
 execute if data storage luigis_mansion:data current_state.current_data.portrait_ghosts.luigis_mansion.henry_and_orville.henry{flee_task:"random"} run scoreboard players set @e[tag=this_entity,limit=1] FleeTask 0
 execute if data storage luigis_mansion:data current_state.current_data.portrait_ghosts.luigis_mansion.henry_and_orville.henry{flee_task:"alternate"} run scoreboard players set @e[tag=this_entity,limit=1] FleeTask 1
 execute if data storage luigis_mansion:data current_state.current_data.portrait_ghosts.luigis_mansion.henry_and_orville.henry{flee_task:"circle"} run scoreboard players set @e[tag=this_entity,limit=1] FleeTask 2

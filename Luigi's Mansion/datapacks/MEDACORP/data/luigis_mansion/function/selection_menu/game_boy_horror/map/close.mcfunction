@@ -9,6 +9,7 @@ tag @s remove stop_model
 function luigis_mansion:entities/player/animation/set/none
 execute unless entity @a[tag=looking_at_map,limit=1] run tag @e[tag=map_key] add dead
 tag @s add seen_room_name
+title @s title ""
 title @s subtitle ""
 scoreboard players set @s UseItem 0
 scoreboard players set @s LoadedChunks 0

@@ -10,9 +10,10 @@ execute as @e[tag=this_entity,limit=1] store result score @s Health store result
 execute as @e[tag=this_entity,limit=1] store result score @s Move run data get storage luigis_mansion:data current_state.current_data.ghosts.luigis_mansion.garbage_can_ghost.speed
 execute as @e[tag=this_entity,limit=1] store result score @s MoveFlee run data get storage luigis_mansion:data current_state.current_data.ghosts.luigis_mansion.garbage_can_ghost.flee_speed
 execute as @e[tag=this_entity,limit=1] store result score @s VanishTime run data get storage luigis_mansion:data current_state.current_data.ghosts.luigis_mansion.garbage_can_ghost.vanish_time
+execute as @e[tag=this_entity,limit=1] store result score @s PullStrength run data get storage luigis_mansion:data current_state.current_data.ghosts.luigis_mansion.garbage_can_ghost.pull.strength
+execute as @e[tag=this_entity,limit=1] store result score @s PullAngle run data get storage luigis_mansion:data current_state.current_data.ghosts.luigis_mansion.garbage_can_ghost.pull.angle
 data modify entity @e[tag=this_entity,limit=1] data.loot set from storage luigis_mansion:data current_state.current_data.ghosts.luigis_mansion.garbage_can_ghost.loot
 data modify entity @e[tag=this_entity,limit=1] data.damage set from storage luigis_mansion:data current_state.current_data.ghosts.luigis_mansion.garbage_can_ghost.damage
-execute if data storage luigis_mansion:data current_state.current_data.ghosts.luigis_mansion.garbage_can_ghost{always_pull:1b} run tag @e[tag=this_entity,limit=1] add always_pull_players
 execute if data storage luigis_mansion:data current_state.current_data.ghosts.luigis_mansion.garbage_can_ghost{flee_task:"random"} run scoreboard players set @e[tag=this_entity,limit=1] FleeTask 0
 execute if data storage luigis_mansion:data current_state.current_data.ghosts.luigis_mansion.garbage_can_ghost{flee_task:"alternate"} run scoreboard players set @e[tag=this_entity,limit=1] FleeTask 1
 execute if data storage luigis_mansion:data current_state.current_data.ghosts.luigis_mansion.garbage_can_ghost{flee_task:"circle"} run scoreboard players set @e[tag=this_entity,limit=1] FleeTask 2

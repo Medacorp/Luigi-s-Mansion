@@ -5,8 +5,8 @@ execute store result entity @e[tag=home,limit=1] Pos[2] double 0.01 run scoreboa
 execute store result entity @e[tag=home,limit=1] Rotation[0] float 1 run scoreboard players get @s HomeRotation
 execute store result score #temp RotationY run data get entity @s Rotation[0]
 execute store result score #temp RotationX run data get entity @s Rotation[1]
-execute at @e[tag=home,limit=1] unless score #temp RotationY = @s HomeRotation run teleport @s[distance=..0.01] ~ ~ ~ ~ ~
-execute at @e[tag=home,limit=1] unless score #temp RotationX matches 40 run teleport @s[distance=..0.01] ~ ~ ~ ~ ~
+execute at @e[tag=home,limit=1] unless score #temp RotationY = @s HomeRotation run teleport @s[distance=..0.01] ~ ~ ~ ~ 40
+execute at @e[tag=home,limit=1] unless score #temp RotationX matches 40 run teleport @s[distance=..0.01] ~ ~ ~ ~ 40
 execute at @e[tag=home,limit=1] run teleport @s[distance=0.01..] 0 0 0
 execute at @e[tag=home,limit=1] run teleport @s[distance=0.01..] ~ ~ ~ ~ 40
 execute at @e[tag=home,limit=1] run teleport @s[scores={AnimationProgress=260}] ~ ~ ~ ~ 0
@@ -15,6 +15,7 @@ scoreboard players reset #temp RotationX
 kill @e[tag=home,limit=1]
 tag @s[scores={AnimationProgress=1}] add reset_rotation
 tag @s[scores={AnimationProgress=1}] add door_animation
+tag @s[tag=dark_room] add keep_poltergust_grabbed
 execute if entity @s[scores={AnimationProgress=1}] run playsound luigis_mansion:item.key.grab block @a[tag=same_room] ~ ~ ~ 1
 execute if entity @s[scores={AnimationProgress=80}] run playsound luigis_mansion:item.key.use block @a[tag=same_room] ~ ~ ~ 1
 scoreboard players set @s Sound 10

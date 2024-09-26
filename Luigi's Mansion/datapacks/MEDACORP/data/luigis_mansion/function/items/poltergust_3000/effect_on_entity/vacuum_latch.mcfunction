@@ -1,0 +1,1 @@
+$execute unless data storage luigis_mansion:data my_memory{poltergust_latch_on_order:[$(uuid)]} run data modify storage luigis_mansion:data my_memory.poltergust_latch_on_order append from entity @s UUID

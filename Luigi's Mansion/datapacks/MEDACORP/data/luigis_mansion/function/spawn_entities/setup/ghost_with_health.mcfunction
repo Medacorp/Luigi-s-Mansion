@@ -1,6 +1,6 @@
 function luigis_mansion:spawn_entities/setup/disappear_on_vanish
 function luigis_mansion:spawn_entities/setup/spawn_timer
-function luigis_mansion:spawn_entities/setup/always_pull
+function luigis_mansion:spawn_entities/setup/pull
 function luigis_mansion:spawn_entities/setup/health
 function luigis_mansion:spawn_entities/setup/flee
 function luigis_mansion:spawn_entities/setup/flee_task

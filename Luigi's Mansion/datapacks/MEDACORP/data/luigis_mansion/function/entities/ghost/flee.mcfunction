@@ -2,10 +2,13 @@ scoreboard players set @s[tag=is_pulled] ErrorTime 0
 scoreboard players add @s[tag=!is_pulled,scores={Health=1..}] ErrorTime 1
 execute as @a[tag=!spectator,tag=vacuuming_me] run scoreboard players operation @s TeleportDelay = @s TeleportDelaySetting
 execute as @a[tag=!spectator,tag=vacuuming_me] run scoreboard players set @s[scores={TeleportDelay=4..}] TeleportDelay 3
+execute store result storage luigis_mansion:data macro.chance int 1 run scoreboard players get @s PullStrength
+function luigis_mansion:entities/ghost/flee_task/pull_chance with storage luigis_mansion:data macro
 tag @s add me
 execute if entity @s[tag=!show_health,tag=!vacuumable,scores={ErrorTime=5..}] as @a[tag=!spectator,tag=vacuuming_me,distance=3..] positioned as @s facing entity @e[tag=me,limit=1] feet rotated ~ 0 if block ^ ^ ^0.6 #luigis_mansion:ghosts_ignore if block ^ ^1 ^0.6 #luigis_mansion:ghosts_ignore run tag @s add pulled_by_me
 execute if entity @s[tag=!show_health,tag=!vacuumable] unless entity @s[tag=!always_pull_players,scores={ErrorTime=..4}] as @a[tag=!spectator,tag=vacuuming_me,scores={TeleportDelayTimer=0},distance=3..] positioned as @s facing entity @e[tag=me,limit=1] feet rotated ~ 0 run function luigis_mansion:entities/ghost/flee_task/pull_player
 tag @s remove me
+tag @s remove always_pull_players
 execute if entity @s[scores={ErrorTime=5..}] run tag @a[tag=pulled_by_me] add pulled_by_ghost
 execute unless entity @a[tag=pulled_by_me] run scoreboard players set @s[scores={ErrorTime=5..}] ErrorTime 0
 tag @a[tag=pulled_by_me] remove pulled_by_me

@@ -15,6 +15,8 @@ execute if score #temp GhostCount matches 1.. run function e3_demo:items/polterg
 execute if score #temp GhostCount matches 1.. if entity @s[scores={TeleportDelayTimer=0}] run function e3_demo:items/poltergust_500/face_ghost
 execute if score #temp GhostCount matches 1.. if entity @s[tag=pulled_by_ghost] at @e[tag=ghost,tag=being_vacuumed,scores={ErrorTime=5}] run function e3_demo:items/poltergust_500/vacuuming/made_error
 execute if score #temp GhostCount matches 1.. as @e[tag=ghost,tag=being_vacuumed] positioned ~ ~0.5 ~ facing entity @s feet run function e3_demo:items/poltergust_500/vacuuming/ghost
+execute if score #temp GhostCount matches 1.. run scoreboard players add @s[tag=!is_pulling] ErrorTime 1
+execute if score #temp GhostCount matches 1.. run scoreboard players set @s[tag=is_pulling] ErrorTime 0
 execute if score #temp GhostCount matches 1.. if entity @s[tag=pulled_by_ghost] if entity @e[tag=ghost,tag=being_vacuumed,scores={ErrorTime=5..}] run function e3_demo:items/poltergust_500/vacuuming/get_dragged
 execute if score #temp GhostCount matches 1.. if entity @s[scores={VacuumErrors=10..}] run function e3_demo:items/poltergust_500/vacuuming/ghosts_break_free
 execute unless score #temp GhostCount matches 1.. run data modify storage luigis_mansion:data my_memory.poltergust_latch_on_order set value []
