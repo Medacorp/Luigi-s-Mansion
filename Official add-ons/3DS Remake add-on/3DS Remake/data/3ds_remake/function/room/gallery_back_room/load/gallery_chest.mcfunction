@@ -1,3 +1,3 @@
-data modify storage luigis_mansion:data furniture set value {room:-11,searchable:["interact","vacuum"],shake_animation:["interact","vacuum"],sound:{namespace:"luigis_mansion",id:"heavy_generic"},scan_message:'{"type":"translatable","translate":"luigis_mansion:message.player.scan_furniture.29"}'}
+data modify storage luigis_mansion:data furniture set value {room:-11,searchable:["interact","vacuum"],shake_animation:["interact","vacuum"],sound:{namespace:"luigis_mansion",id:"heavy_generic"},scan_result:{namespace:"luigis_mansion",id:"scan/scanner/29"}}
 execute unless data storage 3ds_remake:data {obtained_gameboy_horror_part:1b} run data modify storage luigis_mansion:data furniture.loot set value {works_in_lab:1b,contents:{3ds_remake:{game_boy_horror_part:{rotation:[-160.0f,0.0f]}}}}
 execute positioned 736 2 -24 rotated -110 0 run function 3ds_remake:spawn_furniture/gallery_chest

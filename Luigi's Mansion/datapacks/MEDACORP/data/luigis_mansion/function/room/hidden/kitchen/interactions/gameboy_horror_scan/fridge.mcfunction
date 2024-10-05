@@ -1,1 +1,1 @@
-execute if entity @s[x=699.0,y=11,z=-56.0,dx=2,dy=3,dz=3] run tellraw @a[tag=same_room] {"type":"translatable","translate":"chat.type.text","with":[{"type":"selector","selector":"@p[tag=scanning_player]","color":"green"},{"type":"translatable","translate":"luigis_mansion:message.player.scan_furniture.2"}]}
+execute if entity @s[x=699.0,y=11,z=-56.0,dx=2,dy=3,dz=3] run function luigis_mansion:selection_menu/game_boy_horror/scan/dialog {namespace:"luigis_mansion",id:"scan/scanner/2"}

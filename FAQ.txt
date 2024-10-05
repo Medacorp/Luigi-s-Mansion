@@ -7,7 +7,7 @@ A. This is the problem mentioned above; rapid teleportation is the only way to p
 Use the Game Boy Horror to set your "Teleport Frequency" setting to a lower value if you're experiencing this.
 
 Q. I'm stuck in the gallery, what do I do?
-A. (No 3DS Remake) Search the angle statue, like E. Gadd says, and his dialog will change allowing you to leave.
+A. (No 3DS Remake) Search the angle statue, like E. Gadd hints, and his dialog will change allowing you to leave.
    (3DS Remake) Find the Game Boy Horror part, and talk to E. Gadd again, and another time for an option to leave the gallery.
    
 Q. Why is only certain furniture modeled and animated, but not others?
@@ -43,9 +43,6 @@ A. Walk in different directions as quickly as possible. Spooky, harmful grabbing
 
 Q. I can't find one of the Boos!
 A. Go past every room and see if the Game Boy Horror reacts (remember, Boos can only be found in lit rooms). If no room has the Game Boy Horror reacting, make a bug report and provide the file "data/command_storage_luigis_mansion.dat" so it can be investigated.
-
-Q. I installed the 3DS Remake add-on, but I can't do portrait battles!
-A. The portrait battle list only exists once the 3DS Remake add-on is installed, the mansions you defeated the portrait ghost in before you installed it won't save the data for something that doesn't exist.
 
 Q. Why doesn't the option to select a choice in a dialog work?
 A. Gooigi cannot speak, other players will have to react instead. If you're not using gooigi, make a bug report and provide the world folder (as a zip).

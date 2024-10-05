@@ -1,2 +1,6 @@
 function luigis_mansion:entities/floating_whirlindas_female/save_stats
+execute if data storage luigis_mansion:data current_state.current_data.portrait_ghosts.luigis_mansion.floating_whirlindas{male:{health:0},female:{health:0}} run data modify storage luigis_mansion:data portrait_ghost set from storage luigis_mansion:data current_state.portrait_ghosts_defeated_in.luigis_mansion.floating_whirlindas
+execute if data storage luigis_mansion:data current_state.current_data.portrait_ghosts.luigis_mansion.floating_whirlindas{male:{health:0},female:{health:0}} run function luigis_mansion:entities/ghost/portrait_ghost_defeat/save
+execute if data storage luigis_mansion:data current_state.current_data.portrait_ghosts.luigis_mansion.floating_whirlindas{male:{health:0},female:{health:0}} run data modify storage luigis_mansion:data current_state.portrait_ghosts_defeated_in.luigis_mansion.floating_whirlindas set from storage luigis_mansion:data portrait_ghost
+execute if data storage luigis_mansion:data current_state.current_data.portrait_ghosts.luigis_mansion.floating_whirlindas{male:{health:0},female:{health:0}} run data remove storage luigis_mansion:data portrait_ghost
 $function $(namespace):entities/floating_whirlindas_female/at_death/$(id)

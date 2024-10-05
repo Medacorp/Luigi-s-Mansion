@@ -5,11 +5,10 @@ Sawning a key additionally requires a macro string called "door", which matches 
 ```
 entity:{
     //Interaction
-    scan_message:{ //The message spoken when scanning this entity.
-        message:..., //See furniture variable scan_message; "spawn_ghost" not accepted.
-        sender:"scanner", //Optional, who speaks when scanning this entity. If set to "scanner", and the scan is from Gooigi, sends the usual "......" message instead. Default = "me"; only used if message is 'JSON'.
-        plural_message:'JSON' //Optional, the message used when more than 1 player is present; only used if sender is set to "me" and message is 'JSON'.
-    }, 
+    scan_result: //Result from GBH scan. Not provided = ignored by scan. Has several formats and behaviors.
+        * {namespace:"luigis_mansion",id:"scan/scanner/1"}, //Dialog as a result from GBH scan. Gooigi scan always results in the "3ds_remake:scan/scanner/gooigi" dialog if the ID starts with "scan/scanner/".
+        * "warp", //Warps the scanner if they're not Gooigi and the can_warp global variable is turned on.
+        * "", //Prevents GBH scan from passing through, but has no result.
     can_talk_to:1b, //Whether this entity can be talked to. Default = 1b for Toad and E. Gadd, and 0b for everything else.
     
     //General

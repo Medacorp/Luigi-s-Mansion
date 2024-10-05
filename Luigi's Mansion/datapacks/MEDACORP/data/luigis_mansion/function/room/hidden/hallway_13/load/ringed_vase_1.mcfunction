@@ -1,2 +1,2 @@
-data modify storage luigis_mansion:data furniture set value {room:39,loot_chance:{namespace:"luigis_mansion",id:"h10_p20"},searchable:["interact","vacuum"],shake_animation:["interact","vacuum"],sound:{namespace:"luigis_mansion",id:"ceramic"},scan_message:'{"type":"translatable","translate":"luigis_mansion:message.player.scan_furniture.29"}'}
+data modify storage luigis_mansion:data furniture set value {room:39,loot_chance:{namespace:"luigis_mansion",id:"h10_p20"},searchable:["interact","vacuum"],shake_animation:["interact","vacuum"],sound:{namespace:"luigis_mansion",id:"ceramic"},scan_result:{namespace:"luigis_mansion",id:"scan/scanner/29"}}
 execute positioned 714 21.5 43 rotated -90 0 run function luigis_mansion:spawn_furniture/ringed_vase

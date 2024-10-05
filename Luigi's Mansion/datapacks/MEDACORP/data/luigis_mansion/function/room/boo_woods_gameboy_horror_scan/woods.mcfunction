@@ -1,7 +1,7 @@
-execute if block ~ ~ ~ minecraft:oak_wood run tellraw @a {"type":"translatable","translate":"chat.type.text","with":[{"type":"selector","selector":"@p[tag=scanning_player]","color":"green"},{"type":"translatable","translate":"luigis_mansion:message.player.scan_furniture.19"}]}
-execute if block ~ ~ ~ minecraft:water run tellraw @a {"type":"translatable","translate":"chat.type.text","with":[{"type":"selector","selector":"@p[tag=scanning_player]","color":"green"},{"type":"translatable","translate":"luigis_mansion:message.player.scan_furniture.39"}]}
+execute if block ~ ~ ~ minecraft:oak_wood run function luigis_mansion:selection_menu/game_boy_horror/scan/dialog {namespace:"luigis_mansion",id:"scan/scanner/19"}
+execute if block ~ ~ ~ minecraft:water run function luigis_mansion:selection_menu/game_boy_horror/scan/dialog {namespace:"luigis_mansion",id:"scan/scanner/39"}
 # carrage
-execute if entity @s[x=804.0,y=90,z=-2.0,dx=7,dy=3,dz=4] run tellraw @a {"type":"translatable","translate":"chat.type.text","with":[{"type":"selector","selector":"@p[tag=scanning_player]","color":"green"},{"type":"translatable","translate":"luigis_mansion:message.player.scan_furniture.34"}]}
-execute if block ~ ~ ~ minecraft:iron_bars run tellraw @a {"type":"translatable","translate":"chat.type.text","with":[{"type":"selector","selector":"@p[tag=scanning_player]","color":"green"},{"type":"translatable","translate":"luigis_mansion:message.player.scan_furniture.58"}]}
-execute if block ~ ~ ~ minecraft:cyan_terracotta run tellraw @a {"type":"translatable","translate":"chat.type.text","with":[{"type":"selector","selector":"@p[tag=scanning_player]","color":"green"},{"type":"translatable","translate":"luigis_mansion:message.player.scan_furniture.95"}]}
-execute if block ~ ~ ~ minecraft:soul_fire run tellraw @a {"type":"translatable","translate":"chat.type.text","with":[{"type":"selector","selector":"@p[tag=scanning_player]","color":"green"},{"type":"translatable","translate":"luigis_mansion:message.player.scan_furniture.86"}]}
+execute if entity @s[x=804.0,y=90,z=-2.0,dx=7,dy=3,dz=4] run function luigis_mansion:selection_menu/game_boy_horror/scan/dialog {namespace:"luigis_mansion",id:"scan/scanner/34"}
+execute if block ~ ~ ~ minecraft:iron_bars run function luigis_mansion:selection_menu/game_boy_horror/scan/dialog {namespace:"luigis_mansion",id:"scan/scanner/58"}
+execute if block ~ ~ ~ minecraft:cyan_terracotta run function luigis_mansion:selection_menu/game_boy_horror/scan/dialog {namespace:"luigis_mansion",id:"scan/scanner/95"}
+execute if block ~ ~ ~ minecraft:soul_fire run function luigis_mansion:selection_menu/game_boy_horror/scan/dialog {namespace:"luigis_mansion",id:"scan/scanner/86"}

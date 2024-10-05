@@ -1,3 +1,3 @@
-data modify storage luigis_mansion:data entity set value {room:5,scan_message:{sender:"me",message:'{"type":"translatable","translate":"luigis_mansion:message.uncle_grimmly.scan"}'}}
+data modify storage luigis_mansion:data entity set value {room:5,scan_result:{namespace:"luigis_mansion",id:"scan/entity/uncle_grimmly"}}
 execute unless data storage luigis_mansion:data current_state.current_data.technical_data{caught_grimmly:1b} positioned 678 20 62.0 rotated -90 0 run function luigis_mansion:spawn_entities/portrait_ghost/uncle_grimmly
 scoreboard players set #wardrobe_room Wave 100

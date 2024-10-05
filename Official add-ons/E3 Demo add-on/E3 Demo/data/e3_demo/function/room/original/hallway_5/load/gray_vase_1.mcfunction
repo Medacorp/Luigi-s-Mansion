@@ -1,2 +1,2 @@
-data modify storage luigis_mansion:data furniture set value {room:10,shake_animation:["interact","vacuum"],sound:{namespace:"luigis_mansion",id:"ceramic"},scan_message:'{"type":"translatable","translate":"luigis_mansion:message.player.scan_furniture.73"}'}
+data modify storage luigis_mansion:data furniture set value {room:10,shake_animation:["interact","vacuum"],sound:{namespace:"luigis_mansion",id:"ceramic"},scan_result:{namespace:"luigis_mansion",id:"scan/scanner/73"}}
 execute positioned 680 12.5 0 rotated -90 0 run function luigis_mansion:spawn_furniture/gray_vase

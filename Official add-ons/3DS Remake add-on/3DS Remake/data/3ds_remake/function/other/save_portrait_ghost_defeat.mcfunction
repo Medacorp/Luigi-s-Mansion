@@ -1,4 +1,0 @@
-execute if data storage 3ds_remake:data portrait_ghost[-1] run function 3ds_remake:other/find_portrait_ghost_defeat with storage luigis_mansion:data current_state.current_data.mansion_id
-execute unless score #temp Time matches 1 run data modify storage 3ds_remake:data portrait_ghost append value {mansion:{namespace:"luigis_mansion",id:"empty"},peaceful:{health:-1,speed:-1},easy:{health:-1,speed:-1},normal:{health:-1,speed:-1},hard:{health:-1,speed:-1}}
-execute unless score #temp Time matches 1 run data modify storage 3ds_remake:data portrait_ghost[-1].mansion set from storage luigis_mansion:data current_state.current_data.mansion_id
-scoreboard players reset #temp Time

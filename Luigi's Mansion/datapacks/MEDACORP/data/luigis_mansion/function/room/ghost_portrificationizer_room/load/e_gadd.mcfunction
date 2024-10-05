@@ -1,2 +1,2 @@
-execute if data storage luigis_mansion:data {found_e_gadd:1b} unless entity @e[scores={Room=-3},tag=e_gadd,limit=1] run data modify storage luigis_mansion:data entity set value {room:-3,scan_message:{sender:"me",message:'{"type":"translatable","translate":"luigis_mansion:message.player.scan_furniture.57"}'}}
+execute if data storage luigis_mansion:data {found_e_gadd:1b} unless entity @e[scores={Room=-3},tag=e_gadd,limit=1] run data modify storage luigis_mansion:data entity set value {room:-3,scan_result:{namespace:"luigis_mansion",id:"scan/entity/e_gadd"}}
 execute if data storage luigis_mansion:data {found_e_gadd:1b} unless entity @e[scores={Room=-3},tag=e_gadd,limit=1] positioned 774 77 14 rotated -30 0 run function luigis_mansion:spawn_entities/e_gadd

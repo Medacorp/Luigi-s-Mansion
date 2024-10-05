@@ -19,6 +19,7 @@ scoreboard objectives add Distance dummy
 scoreboard objectives add ElementHurtTime dummy
 scoreboard objectives add ElementMeter dummy
 scoreboard objectives add ElementalNr dummy
+scoreboard objectives add EntitySize dummy
 scoreboard objectives add EntitySizeHeight dummy
 scoreboard objectives add EntitySizeRadius dummy
 scoreboard objectives add EntitySizeWidth dummy
@@ -59,6 +60,7 @@ scoreboard objectives add FurnitureRotationSpeedDefault dummy
 scoreboard objectives add FurnitureSearch dummy
 scoreboard objectives add FurnitureShake dummy
 scoreboard objectives add FurnitureShakeTime dummy
+scoreboard objectives add FurnitureSize dummy
 scoreboard objectives add FurnitureSizeForward dummy
 scoreboard objectives add FurnitureSizeHeight dummy
 scoreboard objectives add FurnitureSizeLeft dummy

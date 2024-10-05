@@ -1,5 +1,7 @@
-scoreboard players set @s EntitySizeWidth 8
-scoreboard players set @s EntitySizeHeight 20
+scoreboard players set @s[scores={Shrunk=0}] EntitySizeWidth 8
+scoreboard players set @s[scores={Shrunk=0}] EntitySizeHeight 20
+scoreboard players set @s[scores={Shrunk=1..}] EntitySizeWidth 4
+scoreboard players set @s[scores={Shrunk=1..}] EntitySizeHeight 10
 scoreboard players operation @s TargetX = @s PositionX
 scoreboard players operation @s TargetY = @s PositionY
 scoreboard players operation @s TargetZ = @s PositionZ

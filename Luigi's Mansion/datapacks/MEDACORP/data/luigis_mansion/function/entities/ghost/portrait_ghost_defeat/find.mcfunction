@@ -1,0 +1,1 @@
+$execute if data storage luigis_mansion:data portrait_ghost[{mansion:{namespace:"$(namespace)",id:"$(id)"}}] run scoreboard players set #temp Time 1

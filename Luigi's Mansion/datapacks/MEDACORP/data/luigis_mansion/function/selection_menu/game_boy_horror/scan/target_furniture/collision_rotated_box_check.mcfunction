@@ -88,7 +88,7 @@ execute if entity @s[tag=!standing_furniture] run scoreboard players operation #
 execute if entity @s[tag=hanging_furniture] run scoreboard players set #temp PositionY 0
 scoreboard players operation #temp2 PositionZ -= #temp PositionZ
 
-execute if score #temp FurnitureSizeLeft >= #temp2 PositionX if score #temp FurnitureSizeLeft <= #temp PositionX if score #temp FurnitureSizeUp >= #temp2 PositionY if score #temp FurnitureSizeUp <= #temp PositionY if score #temp FurnitureSizeForward >= #temp2 PositionZ if score #temp FurnitureSizeForward <= #temp PositionZ run tag @s add hit
+execute if score #temp FurnitureSizeLeft >= #temp2 PositionX if score #temp FurnitureSizeLeft <= #temp PositionX if score #temp FurnitureSizeUp >= #temp2 PositionY if score #temp FurnitureSizeUp <= #temp PositionY if score #temp FurnitureSizeForward >= #temp2 PositionZ if score #temp FurnitureSizeForward <= #temp PositionZ run tag @s add scanned
 scoreboard players reset #cosx
 scoreboard players reset #cosy
 scoreboard players reset #sinx

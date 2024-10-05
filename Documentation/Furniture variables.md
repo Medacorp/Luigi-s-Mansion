@@ -50,11 +50,11 @@ furniture:{
     },
     search_command:"...", //Command to trigger on manual search (requires searchable to have "interact" method). Runs as the furniture at the searcher (who's tagged "searcher"). Default = none.
     can_hide_boo:1b, //If this furniture is randomly selected by boos to hide in. Default = 0b.
-    scan_message: //Result from GBH scan. Not provided = ignored by scan. Has several formats and behaviors.
-        * 'JSON', //Message as a result from GBH scan. Gooigi scan always results in the "......." string.
-        * "warp", //Warps the scanner on GBH scan if they're not Gooigi, not in a dialog, and the can_warp global variable is turned on (if conditions are not met, will send the message "Huh...?" instead). Gooigi scan always results in the "......." string.
-        * "", //Prevents GBH scan from passing through, but has no result.
+    scan_result: //Result from GBH scan. Not provided = ignored by scan. Has several formats and behaviors.
+        * {namespace:"luigis_mansion",id:"scan/scanner/1"}, //Dialog as a result from GBH scan. Gooigi scan always results in the "3ds_remake:scan/scanner/gooigi" dialog if the ID starts with "scan/scanner/".
+        * "warp", //Warps the scanner if they're not Gooigi and the can_warp global variable is turned on.
         * "spawn_ghost", //Spawns the ghost hiding in this furniture.
+        * "", //Prevents GBH scan from passing through, but has no result.
     
     //non-default setup
     animation:{ //Animation info.

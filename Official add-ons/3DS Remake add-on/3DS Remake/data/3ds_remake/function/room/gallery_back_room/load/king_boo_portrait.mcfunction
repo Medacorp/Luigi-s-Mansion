@@ -1,5 +1,5 @@
 execute if data storage 3ds_remake:data current_state.selected_portraits{king_boo:-1b} run data modify storage 3ds_remake:data current_state.selected_portraits.king_boo set from storage luigis_mansion:data current_state.portrait_ghost_ranks.king_boo
-data modify storage luigis_mansion:data furniture set value {room:-11,searchable:["interact"],no_dust:1b,interact_animation:{namespace:"luigis_mansion",id:"inspect"},scan_message:'{"type":"translatable","translate":"3ds_remake:message.player.scan_furniture.1"}',search_command:"function 3ds_remake:selection_menu/gallery_portrait/open_menu/king_boo",gallery_portrait:{x:736.0d,y:4,z:-28.0d,x_rotation:0,y_rotation:-90}}
+data modify storage luigis_mansion:data furniture set value {room:-11,searchable:["interact"],no_dust:1b,interact_animation:{namespace:"luigis_mansion",id:"inspect"},scan_result:{namespace:"3ds_remake",id:"scan/scanner/1"},search_command:"function 3ds_remake:selection_menu/gallery_portrait/open_menu/king_boo",gallery_portrait:{x:736.0d,y:4,z:-28.0d,x_rotation:0,y_rotation:-90}}
 execute positioned 734.04 6.5 -28.0 rotated -90 0 run function 3ds_remake:spawn_furniture/gallery_portrait/king_boo
 
 execute if data storage 3ds_remake:data current_state.selected_portraits{king_boo:3b} run fill 735 3 -34 733 10 -23 minecraft:yellow_wool replace minecraft:red_wool

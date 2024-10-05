@@ -1,2 +1,2 @@
-data modify storage luigis_mansion:data furniture set value {room:58,candle_flames:[{lit:1b},{lit:1b},{lit:1b}],sound:{namespace:"luigis_mansion",id:"generic"},searchable:["interact","vacuum"],shake_animation:["interact","vacuum"],scan_message:'{"type":"translatable","translate":"luigis_mansion:message.player.scan_furniture.59"}'}
+data modify storage luigis_mansion:data furniture set value {room:58,candle_flames:[{lit:1b},{lit:1b},{lit:1b}],sound:{namespace:"luigis_mansion",id:"generic"},searchable:["interact","vacuum"],shake_animation:["interact","vacuum"],scan_result:{namespace:"luigis_mansion",id:"scan/scanner/59"}}
 execute positioned 745 4.5 59.0 rotated 0 0 run function luigis_mansion:spawn_furniture/old_triple_wall_candelabra

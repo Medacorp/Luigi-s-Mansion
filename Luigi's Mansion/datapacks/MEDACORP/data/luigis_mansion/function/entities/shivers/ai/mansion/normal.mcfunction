@@ -13,7 +13,6 @@ tag @s[tag=visible] add burning
 scoreboard players set @s[scores={ActionTime=1}] TargetTask 0
 execute if entity @s[scores={ActionTime=1}] run playsound luigis_mansion:music.solve_puzzle music @a[tag=same_room] ~ ~ ~ 10000 
 execute if entity @s[scores={ActionTime=1}] as @a[tag=same_room,scores={Music=..30}] unless entity @s[scores={HealthMusic=1..}] run scoreboard players set @s Music 30
-data modify entity @s[scores={ActionTime=1}] ArmorItems[3].components."minecraft:custom_data".scan_message set value {sender:"me",message:'{"type":"translatable","translate":"luigis_mansion:message.shivers.scan.2"}'}
 execute if entity @s[scores={ActionTime=1}] unless data storage luigis_mansion:data current_state.current_data.technical_data{shivers_spoke:1b} run tellraw @a[tag=same_room] {"type":"translatable","translate":"chat.type.text","with":[{"type":"translatable","translate":"luigis_mansion:entity.shivers","color":"green"},{"type":"translatable","translate":"luigis_mansion:message.shivers.fire"}]}
 execute if entity @s[scores={ActionTime=1}] run data modify storage luigis_mansion:data current_state.current_data.technical_data merge value {shivers_spoke:1b}
 execute if entity @s[scores={ActionTime=21}] run playsound luigis_mansion:entity.shivers.realize hostile @a[tag=same_room] ~ ~ ~ 1

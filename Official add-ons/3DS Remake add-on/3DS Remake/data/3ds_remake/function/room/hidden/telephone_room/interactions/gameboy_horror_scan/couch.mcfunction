@@ -1,1 +1,1 @@
-execute if entity @s[x=742.0,y=29,z=27.0,dx=2,dy=0,dz=2] if block ~ ~ ~ minecraft:cobblestone_stairs run tellraw @a[tag=same_room] {"type":"translatable","translate":"chat.type.text","with":[{"type":"selector","selector":"@p[tag=scanning_player]","color":"green"},{"type":"translatable","translate":"luigis_mansion:message.player.scan_furniture.14"}]}
+execute if entity @s[x=742.0,y=29,z=27.0,dx=2,dy=0,dz=2] if block ~ ~ ~ minecraft:cobblestone_stairs run function luigis_mansion:selection_menu/game_boy_horror/scan/dialog {namespace:"luigis_mansion",id:"scan/scanner/14"}

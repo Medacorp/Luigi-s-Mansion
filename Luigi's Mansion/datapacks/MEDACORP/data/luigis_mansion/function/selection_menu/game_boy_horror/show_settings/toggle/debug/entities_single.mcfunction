@@ -9,5 +9,4 @@ execute unless entity @e[tag=scanned,tag=!furniture] run tellraw @a {"type":"tra
 execute as @e[tag=scanned,tag=!furniture,tag=!debug_entity] run tellraw @a {"type":"translatable","translate":"luigis_mansion:message.debug.format","with":[{"type":"translatable","translate":"luigis_mansion:message.debug","color":"gold"},{"type":"translatable","translate":"luigis_mansion:message.debug.debugger.turned_off.entities.single","with":[{"type":"selector","selector":"@s"}]}]}
 execute as @e[tag=scanned,tag=!furniture,tag=debug_entity] run tellraw @a {"type":"translatable","translate":"luigis_mansion:message.debug.format","with":[{"type":"translatable","translate":"luigis_mansion:message.debug","color":"gold"},{"type":"translatable","translate":"luigis_mansion:message.debug.debugger.turned_on.entities.single","with":[{"type":"selector","selector":"@s"}]}]}
 
-tag @e[tag=hit,tag=furniture] remove hit
-tag @e[tag=scanned,tag=!furniture] remove scanned
+tag @e[tag=scanned] remove scanned

@@ -1,3 +1,3 @@
-data modify storage luigis_mansion:data furniture set value {room:47,searchable:["vacuum"],shake_animation:["interact","vacuum"],no_long_shake:1b,no_visual_shake:1b,scan_message:'{"type":"translatable","translate":"luigis_mansion:message.player.scan_furniture.104"}'}
+data modify storage luigis_mansion:data furniture set value {room:47,searchable:["vacuum"],shake_animation:["interact","vacuum"],no_long_shake:1b,no_visual_shake:1b,scan_result:{namespace:"luigis_mansion",id:"scan/scanner/104"}}
 execute unless data storage luigis_mansion:data current_state.current_data{money_spawned:["billiards_room_fan"]} run data modify storage luigis_mansion:data furniture.loot set value {name:"master_bedroom_fan",contents:{luigis_mansion:{bill:20}}}
 execute positioned 681.0 17 78.0 rotated -90 0 run function luigis_mansion:spawn_furniture/fan/counterclockwise

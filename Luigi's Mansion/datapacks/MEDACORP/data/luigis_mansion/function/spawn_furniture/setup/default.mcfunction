@@ -17,7 +17,7 @@ function luigis_mansion:spawn_furniture/setup/no_dust_on_search
 function luigis_mansion:spawn_furniture/setup/loot
 function luigis_mansion:spawn_furniture/setup/search_command
 function luigis_mansion:spawn_furniture/setup/boo_can_hide_in
-function luigis_mansion:spawn_furniture/setup/scan_message
+function luigis_mansion:spawn_furniture/setup/scan_result
 
 # Other
 function luigis_mansion:spawn_furniture/setup/animation

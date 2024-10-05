@@ -1,1 +1,1 @@
-execute if data storage 3ds_remake:data current_state.boos_caught.luigis_mansion{little_boo_peep:1b} run scoreboard players add #temp Time 1
+execute if data storage luigis_mansion:data current_state.ghosts_caught.boos.luigis_mansion{little_boo_peep:1b} run scoreboard players add #temp Time 1

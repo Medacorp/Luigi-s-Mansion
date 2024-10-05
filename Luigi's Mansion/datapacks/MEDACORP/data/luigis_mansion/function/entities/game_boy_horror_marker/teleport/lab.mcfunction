@@ -1,1 +1,1 @@
-execute if entity @s[scores={Room=-4..-1}] positioned ~4000 ~ ~ run function luigis_mansion:entities/game_boy_horror_marker/teleport/move/lab
+execute if entity @s[scores={Room=-7..-1}] positioned ~4000 ~ ~ run function luigis_mansion:entities/game_boy_horror_marker/teleport/move/lab

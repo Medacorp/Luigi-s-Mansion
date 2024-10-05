@@ -4,31 +4,48 @@ The main save data contains a bunch of info. It is loaded at `luigis_mansion:dat
 {
     current_data:{}, //The currently loaded mansion data. Exists in current state only, saving appends it to mansion_data.
     mansion_data:[], //Other mansions' data. For example, the original mansion, while the hidden mansion is loaded. Only data for mansions that got loaded but not cleared are stored here.
-    money_grabbed:[ //All money grabbed by players.
-        {
-            uuid:[I;], //The player's UUID.
-            total:X, //The total amount of G excluding the final 3 0s.
-            money: { //Individual item types grabbed.
-                <namespace>: {
-                    <id>:X //How many times this item type has been grabbed by this player.
-                }
+    money_grabbed:{ //All money grabbed by players.
+        total:X, //The total amount of G excluding the final 3 0s. Decreases when money is dropped.
+        money: { //Individual money item types grabbed.
+            <namespace>: { //Money items belonging to this namespace.
+                <id>:X //How many times this item type has been grabbed by players. Decreases when dropped.
             }
         }
-    ],
-    ghosts_caught:[ //All ghosts defeated by players.
-        {
-            uuid:[I;], //The player's UUID.
-            total:X, //The total amount of ghosts defeated.
-            caught: { //Individual ghost types defeated.
-                <id>:X //How many times this ghost type has been defeated by this player.
+    },
+    ghosts_caught:{ //All ghosts defeated by players.
+        total:X, //The total amount of ghosts defeated.
+        caught: { //Individual ghost types defeated.
+            <namespace>:{ //Ghosts belonging to this namespace.
+                <id>:X //How many times this ghost type has been defeated by players.
+            }
+        },
+        boos:{ //Flags of Boo names that have been captured. Unused in vanilla, used by 3DS Remake to show them in the Boo painting.
+            <namespace>:{ //Boos belonging to this namespace.
+                <id>:Xb //A Boo.
             }
         }
-    ],
+    },
     portrait_ghost_ranks:{ //The highest rank each portrait ghost has been portrificationized as.
         <name>:Xb //A portrait ghost portrait and its rank. -1b is not obtained.
     },
     mansion_ranks_achieved:{ //The mansion ranks a mansion got cleared with.
         <rank>:Xb //A rank and if it has been obtained.
+    },
+    portrait_ghosts_defeated_in:{ //What portrait ghosts have been defeated in what mansions.
+        <namespace>:{ //Portrait ghosts belonging to this namespace.
+            <id>: [ //A portrait ghost.
+                {
+                    mansion:{ //The mansion this portrait ghost has been defeated in
+                        namespace:"luigis_mansion", //The mansion namespace.
+                        id:"normal" //The mansion ID.
+                    },
+                    <difficulty>:{ //3DS REMAKE EXCLUSIVE: Portrait battle result of this difficulty in this mansion.
+                        speed:X, //The fastest time this portrait battle was cleared in.
+                        health:X //The best instance of lowest health of any attempt.
+                    }
+                }
+            ]
+        }
     },
     high_scores:[ //High scores obtained
         {
@@ -36,7 +53,7 @@ The main save data contains a bunch of info. It is loaded at `luigis_mansion:dat
             value:X, //The highest score obtained.
             lowest_value:X, //The lowest score obtained.
             speed:X, //The fastest time this mansion was cleared in.
-            health:X  //The best instance of lowest health of any player.
+            health:X //The best instance of lowest health of any player.
         }
     ]
 }
@@ -46,20 +63,9 @@ The 3DS Remake add-on save data contains some more info. It is loaded at `3ds_re
 ```
 {
     mansion_rank_s_achieved:Xb, //If the S Rank mansion has been obtained.
-    portrait_ghosts_defeated_in:{ //What portrait ghosts have been defeated in what mansions.
-        <name>:[ //A portrait ghost.
-            {
-                data_index:-1, //The mansion save data ID.
-                mansion_type:-1, //The mansion type ID.
-                speed:-1, //The fastest time on the portrait battle clear.
-                health:-1 //The best instance of lowest health on the portrait battle clear.
-            }
-        ]
-    },
     selected_portraits:{
         <name>:Xb //A portrait in the gallery and its selected frame type. -1b is not obtained.
     },
-    boos_caught:{}, //Flags of Boo names that have been captured, to show them in the Boo painting.
     trophy:{ //The trophy progress.
         <category>:{ //A category in the trophy.
             done:Xb, //Whether the category is completed.

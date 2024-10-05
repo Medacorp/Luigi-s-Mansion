@@ -19,8 +19,8 @@ Mansion data is a massive collection of info storing everything the map needs to
     },
     blackout:0b, //Whether the mansion is currently in the blackout.
     dead_players:[], //Player UUIDs that have died.
-    ghosts_caught:[], //The mansion-local ghosts caught by player list, see save data documentation for more info.
-    money_grabbed:[], //The mansion-local money grabbed by player list, see save data documentation for more info.
+    ghosts_caught:[], //The mansion-local ghosts caught by player list, see save data documentation for more info, has additional uuid field to identify the player. Does not include boos object.
+    money_grabbed:[], //The mansion-local money grabbed by player list, see save data documentation for more info, has additional uuid field to identify the player.
     technical_data:{}, //Flags set by the mansion to remember if certain events happened or not, where absent = not.
     used_keys:[], //List of door names of keys that have been used.
     obtained_keys:[], //List of door names of keys that have been collected.

@@ -1,6 +1,6 @@
 summon minecraft:armor_stand ~ ~-1.4 ~ {CustomName:'{"type":"translatable","translate":"luigis_mansion:furniture.scan_area"}',Tags:["furniture","no_reflection","this_entity"],Marker:1b,ArmorItems:[{},{},{},{id:"minecraft:stone_button",count:1,components:{"minecraft:custom_data":{entity:{namespace:"luigis_mansion",id:"furniture"},furniture_type:"empty"}}}],NoGravity:1b,Invisible:1b,DisabledSlots:2039583}
 teleport @e[tag=this_entity,limit=1] ~ ~-1.4 ~ ~ 0
-function luigis_mansion:spawn_furniture/setup/scan_message
+function luigis_mansion:spawn_furniture/setup/scan_result
 function luigis_mansion:spawn_furniture/setup/room
 function luigis_mansion:spawn_furniture/setup/tags
 function luigis_mansion:spawn_furniture/setup/position

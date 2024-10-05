@@ -1,2 +1,6 @@
 function luigis_mansion:entities/henry/save_stats
+execute if data storage luigis_mansion:data current_state.current_data.portrait_ghosts.luigis_mansion.henry_and_orville{henry:{health:0},orville:{health:0}} run data modify storage luigis_mansion:data portrait_ghost set from storage luigis_mansion:data current_state.portrait_ghosts_defeated_in.luigis_mansion.henry_and_orville
+execute if data storage luigis_mansion:data current_state.current_data.portrait_ghosts.luigis_mansion.henry_and_orville{henry:{health:0},orville:{health:0}} run function luigis_mansion:entities/ghost/portrait_ghost_defeat/save
+execute if data storage luigis_mansion:data current_state.current_data.portrait_ghosts.luigis_mansion.henry_and_orville{henry:{health:0},orville:{health:0}} run data modify storage luigis_mansion:data current_state.portrait_ghosts_defeated_in.luigis_mansion.henry_and_orville set from storage luigis_mansion:data portrait_ghost
+execute if data storage luigis_mansion:data current_state.current_data.portrait_ghosts.luigis_mansion.henry_and_orville{henry:{health:0},orville:{health:0}} run data remove storage luigis_mansion:data portrait_ghost
 $function $(namespace):entities/henry/at_death/$(id)

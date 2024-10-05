@@ -14,7 +14,7 @@ scoreboard players operation #temp PositionZ -= #temp FurnitureSizeWidth
 scoreboard players operation #temp2 PositionX += #temp FurnitureSizeWidth
 execute if entity @s[tag=!hanging_furniture] run scoreboard players operation #temp2 PositionY += #temp FurnitureSizeHeight
 scoreboard players operation #temp2 PositionZ += #temp FurnitureSizeWidth
-execute if score #interact PositionX >= #temp PositionX if score #interact PositionX <= #temp2 PositionX if score #interact PositionY >= #temp PositionY if score #interact PositionY <= #temp2 PositionY if score #interact PositionZ >= #temp PositionZ if score #interact PositionZ <= #temp2 PositionZ run tag @s add hit
+execute if score #interact PositionX >= #temp PositionX if score #interact PositionX <= #temp2 PositionX if score #interact PositionY >= #temp PositionY if score #interact PositionY <= #temp2 PositionY if score #interact PositionZ >= #temp PositionZ if score #interact PositionZ <= #temp2 PositionZ run tag @s add scanned
 scoreboard players reset #temp PositionX
 scoreboard players reset #temp PositionY
 scoreboard players reset #temp PositionZ

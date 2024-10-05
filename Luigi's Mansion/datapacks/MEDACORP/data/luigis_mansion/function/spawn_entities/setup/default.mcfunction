@@ -16,7 +16,7 @@ function luigis_mansion:spawn_entities/setup/speed
 function luigis_mansion:spawn_entities/setup/owner
 function luigis_mansion:spawn_entities/setup/damage
 function luigis_mansion:spawn_entities/setup/talkable
-function luigis_mansion:spawn_entities/setup/scan_message
+function luigis_mansion:spawn_entities/setup/scan_result
 
 #non-default setup
 function luigis_mansion:spawn_entities/setup/tags

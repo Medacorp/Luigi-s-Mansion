@@ -8,14 +8,18 @@ execute store result score #temp Health run data get storage luigis_mansion:data
 
 execute if data storage luigis_mansion:data current_state.current_data{lowest_difficulty:0} store result score #temp2 Health run data get storage 3ds_remake:data loaded_mansion.high_scores.peaceful.health
 execute if data storage luigis_mansion:data current_state.current_data{lowest_difficulty:0} store result score #temp2 Time run data get storage 3ds_remake:data loaded_mansion.high_scores.peaceful.speed
+execute if data storage luigis_mansion:data current_state.current_data{lowest_difficulty:0} unless storage 3ds_remake:data loaded_mansion.high_scores.peaceful run scoreboard players set #temp9 Time -1
 execute if data storage luigis_mansion:data current_state.current_data{lowest_difficulty:1} store result score #temp2 Health run data get storage 3ds_remake:data loaded_mansion.high_scores.easy.health
 execute if data storage luigis_mansion:data current_state.current_data{lowest_difficulty:1} store result score #temp2 Time run data get storage 3ds_remake:data loaded_mansion.high_scores.easy.speed
+execute if data storage luigis_mansion:data current_state.current_data{lowest_difficulty:1} unless storage 3ds_remake:data loaded_mansion.high_scores.easy run scoreboard players set #temp9 Time -1
 execute if data storage luigis_mansion:data current_state.current_data{lowest_difficulty:2} store result score #temp2 Health run data get storage 3ds_remake:data loaded_mansion.high_scores.normal.health
 execute if data storage luigis_mansion:data current_state.current_data{lowest_difficulty:2} store result score #temp2 Time run data get storage 3ds_remake:data loaded_mansion.high_scores.normal.speed
+execute if data storage luigis_mansion:data current_state.current_data{lowest_difficulty:2} unless storage 3ds_remake:data loaded_mansion.high_scores.normal run scoreboard players set #temp9 Time -1
 execute if data storage luigis_mansion:data current_state.current_data{lowest_difficulty:3} store result score #temp2 Health run data get storage 3ds_remake:data loaded_mansion.high_scores.hard.health
 execute if data storage luigis_mansion:data current_state.current_data{lowest_difficulty:3} store result score #temp2 Time run data get storage 3ds_remake:data loaded_mansion.high_scores.hard.speed
-execute if score #temp Time < #temp2 Time unless score #temp2 Time matches -1 run scoreboard players set #temp0 Time 1
-execute if score #temp Health > #temp2 Health unless score #temp2 Health matches -1 run scoreboard players set #temp0 Health 1
+execute if data storage luigis_mansion:data current_state.current_data{lowest_difficulty:3} unless storage 3ds_remake:data loaded_mansion.high_scores.hard run scoreboard players set #temp9 Time -1
+execute if score #temp Time < #temp2 Time unless score #temp3 Time matches -1 run scoreboard players set #temp0 Time 1
+execute if score #temp Health > #temp2 Health unless score #temp3 Time matches -1 run scoreboard players set #temp0 Health 1
 execute if score #temp0 Time matches 1 run data modify storage luigis_mansion:data menu_options.options append value {id:"minecraft:diamond_pickaxe",count:1,components:{"minecraft:damage":22,"minecraft:unbreakable":{show_in_tooltip:0b},"minecraft:custom_model_data":-27,"minecraft:attribute_modifiers":{modifiers:[]},"minecraft:item_name":'{"type":"translatable","translate":"3ds_remake:item.menu.gallery_portrait.portrait_battle.results.new_high_score"}',"minecraft:custom_data":{option:{id:"reload"}}}}
 execute unless score #temp0 Time matches 1 if score #temp0 Health matches 1 run data modify storage luigis_mansion:data menu_options.options append value {id:"minecraft:diamond_pickaxe",count:1,components:{"minecraft:damage":22,"minecraft:unbreakable":{show_in_tooltip:0b},"minecraft:custom_model_data":-27,"minecraft:attribute_modifiers":{modifiers:[]},"minecraft:item_name":'{"type":"translatable","translate":"3ds_remake:item.menu.gallery_portrait.portrait_battle.results.new_high_score"}',"minecraft:custom_data":{option:{id:"reload"}}}}
 
@@ -46,12 +50,12 @@ execute if data storage luigis_mansion:data current_state.current_data{lowest_di
 execute if data storage luigis_mansion:data current_state.current_data{lowest_difficulty:3} store result score #temp Health run data get storage 3ds_remake:data loaded_mansion.high_scores.hard.health
 execute if data storage luigis_mansion:data current_state.current_data{lowest_difficulty:3} store result score #temp Time run data get storage 3ds_remake:data loaded_mansion.high_scores.hard.speed
 
-execute unless score #temp Time matches -1 run data modify storage luigis_mansion:data menu_options.options append value {id:"minecraft:diamond_pickaxe",count:1,components:{"minecraft:damage":22,"minecraft:unbreakable":{show_in_tooltip:0b},"minecraft:custom_model_data":61,"minecraft:attribute_modifiers":{modifiers:[]},"minecraft:item_name":'{"type":"translatable","translate":"3ds_remake:item.menu.gallery_portrait.portrait_battle.results.high_score"}',"minecraft:lore":[],"minecraft:custom_data":{option:{id:"reload"}}}}
-execute unless score #temp Time matches -1 run function 3ds_remake:room/portrait_battle/convert_time
-execute unless score #temp Health matches -1 in minecraft:overworld run setblock 27 0 0 minecraft:oak_sign{front_text:{messages:['{"color":"white","italic":false,"type":"translatable","translate":"3ds_remake:item.menu.gallery_portrait.portrait_battle.results.speed","with":[{"type":"score","score":{"name":"#temp6","objective":"Time"}},{"type":"score","score":{"name":"#temp5","objective":"Time"}},{"type":"score","score":{"name":"#temp4","objective":"Time"}},{"type":"score","score":{"name":"#temp3","objective":"Time"}},{"type":"score","score":{"name":"#temp2","objective":"Time"}},{"type":"score","score":{"name":"#temp","objective":"Time"}}]}','{"color":"white","italic":false,"type":"translatable","translate":"3ds_remake:item.menu.gallery_portrait.portrait_battle.results.health","with":[{"type":"score","score":{"name":"#temp","objective":"Health"}}]}','{"type":"text","text":""}','{"type":"text","text":""}']}}
-execute unless score #temp Health matches -1 in minecraft:overworld run data modify storage luigis_mansion:data menu_options.options[-1].components."minecraft:lore" append from block 27 0 0 front_text.messages[0]
-execute unless score #temp Health matches -1 in minecraft:overworld run data modify storage luigis_mansion:data menu_options.options[-1].components."minecraft:lore" append from block 27 0 0 front_text.messages[1]
-execute unless score #temp Health matches -1 in minecraft:overworld run setblock 27 0 0 minecraft:bedrock
+execute unless score #temp9 Time matches -1 run data modify storage luigis_mansion:data menu_options.options append value {id:"minecraft:diamond_pickaxe",count:1,components:{"minecraft:damage":22,"minecraft:unbreakable":{show_in_tooltip:0b},"minecraft:custom_model_data":61,"minecraft:attribute_modifiers":{modifiers:[]},"minecraft:item_name":'{"type":"translatable","translate":"3ds_remake:item.menu.gallery_portrait.portrait_battle.results.high_score"}',"minecraft:lore":[],"minecraft:custom_data":{option:{id:"reload"}}}}
+execute unless score #temp9 Time matches -1 run function 3ds_remake:room/portrait_battle/convert_time
+execute unless score #temp9 Time matches -1 in minecraft:overworld run setblock 27 0 0 minecraft:oak_sign{front_text:{messages:['{"color":"white","italic":false,"type":"translatable","translate":"3ds_remake:item.menu.gallery_portrait.portrait_battle.results.speed","with":[{"type":"score","score":{"name":"#temp6","objective":"Time"}},{"type":"score","score":{"name":"#temp5","objective":"Time"}},{"type":"score","score":{"name":"#temp4","objective":"Time"}},{"type":"score","score":{"name":"#temp3","objective":"Time"}},{"type":"score","score":{"name":"#temp2","objective":"Time"}},{"type":"score","score":{"name":"#temp","objective":"Time"}}]}','{"color":"white","italic":false,"type":"translatable","translate":"3ds_remake:item.menu.gallery_portrait.portrait_battle.results.health","with":[{"type":"score","score":{"name":"#temp","objective":"Health"}}]}','{"type":"text","text":""}','{"type":"text","text":""}']}}
+execute unless score #temp9 Time matches -1 in minecraft:overworld run data modify storage luigis_mansion:data menu_options.options[-1].components."minecraft:lore" append from block 27 0 0 front_text.messages[0]
+execute unless score #temp9 Time matches -1 in minecraft:overworld run data modify storage luigis_mansion:data menu_options.options[-1].components."minecraft:lore" append from block 27 0 0 front_text.messages[1]
+execute unless score #temp9 Time matches -1 in minecraft:overworld run setblock 27 0 0 minecraft:bedrock
 scoreboard players reset #temp Health
 scoreboard players reset #temp Time
 scoreboard players reset #temp2 Time
@@ -59,6 +63,7 @@ scoreboard players reset #temp3 Time
 scoreboard players reset #temp4 Time
 scoreboard players reset #temp5 Time
 scoreboard players reset #temp6 Time
+scoreboard players reset #temp9 Time
 
 function 3ds_remake:room/portrait_battle/save_results with storage luigis_mansion:data current_state.current_data.portrait_battle
 

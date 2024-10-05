@@ -1,92 +1,92 @@
-data modify storage 3ds_remake:data currently_checked set from storage 3ds_remake:data current_state.portrait_ghosts_defeated_in.luigis_mansion.neville
+data modify storage 3ds_remake:data currently_checked set from storage luigis_mansion:data current_state.portrait_ghosts_defeated_in.luigis_mansion.neville
 scoreboard players set #temp2 Money 2147483647
 function 3ds_remake:selection_menu/gallery_trophy/get_count/portrait/time
 execute if score #temp Money > #temp2 Money run scoreboard players add #temp Time 1
-data modify storage 3ds_remake:data currently_checked set from storage 3ds_remake:data current_state.portrait_ghosts_defeated_in.luigis_mansion.lydia
+data modify storage 3ds_remake:data currently_checked set from storage luigis_mansion:data current_state.portrait_ghosts_defeated_in.luigis_mansion.lydia
 scoreboard players set #temp2 Money 2147483647
 function 3ds_remake:selection_menu/gallery_trophy/get_count/portrait/time
 execute if score #temp Money > #temp2 Money run scoreboard players add #temp Time 1
-data modify storage 3ds_remake:data currently_checked set from storage 3ds_remake:data current_state.portrait_ghosts_defeated_in.luigis_mansion.chauncey
+data modify storage 3ds_remake:data currently_checked set from storage luigis_mansion:data current_state.portrait_ghosts_defeated_in.luigis_mansion.chauncey
 scoreboard players set #temp2 Money 2147483647
 function 3ds_remake:selection_menu/gallery_trophy/get_count/portrait/time
 execute if score #temp Money > #temp2 Money run scoreboard players add #temp Time 1
-data modify storage 3ds_remake:data currently_checked set from storage 3ds_remake:data current_state.portrait_ghosts_defeated_in.luigis_mansion.floating_whirlindas
+data modify storage 3ds_remake:data currently_checked set from storage luigis_mansion:data current_state.portrait_ghosts_defeated_in.luigis_mansion.floating_whirlindas
 scoreboard players set #temp2 Money 2147483647
 function 3ds_remake:selection_menu/gallery_trophy/get_count/portrait/time
 execute if score #temp Money > #temp2 Money run scoreboard players add #temp Time 1
-data modify storage 3ds_remake:data currently_checked set from storage 3ds_remake:data current_state.portrait_ghosts_defeated_in.luigis_mansion.shivers
+data modify storage 3ds_remake:data currently_checked set from storage luigis_mansion:data current_state.portrait_ghosts_defeated_in.luigis_mansion.shivers
 scoreboard players set #temp2 Money 2147483647
 function 3ds_remake:selection_menu/gallery_trophy/get_count/portrait/time
 execute if score #temp Money > #temp2 Money run scoreboard players add #temp Time 1
-data modify storage 3ds_remake:data currently_checked set from storage 3ds_remake:data current_state.portrait_ghosts_defeated_in.luigis_mansion.melody_pianissima
+data modify storage 3ds_remake:data currently_checked set from storage luigis_mansion:data current_state.portrait_ghosts_defeated_in.luigis_mansion.melody_pianissima
 scoreboard players set #temp2 Money 2147483647
 function 3ds_remake:selection_menu/gallery_trophy/get_count/portrait/time
 execute if score #temp Money > #temp2 Money run scoreboard players add #temp Time 1
-data modify storage 3ds_remake:data currently_checked set from storage 3ds_remake:data current_state.portrait_ghosts_defeated_in.luigis_mansion.mr_luggs
+data modify storage 3ds_remake:data currently_checked set from storage luigis_mansion:data current_state.portrait_ghosts_defeated_in.luigis_mansion.mr_luggs
 scoreboard players set #temp2 Money 2147483647
 function 3ds_remake:selection_menu/gallery_trophy/get_count/portrait/time
 execute if score #temp Money > #temp2 Money run scoreboard players add #temp Time 1
-data modify storage 3ds_remake:data currently_checked set from storage 3ds_remake:data current_state.portrait_ghosts_defeated_in.luigis_mansion.spooky
+data modify storage 3ds_remake:data currently_checked set from storage luigis_mansion:data current_state.portrait_ghosts_defeated_in.luigis_mansion.spooky
 scoreboard players set #temp2 Money 2147483647
 function 3ds_remake:selection_menu/gallery_trophy/get_count/portrait/time
 execute if score #temp Money > #temp2 Money run scoreboard players add #temp Time 1
-data modify storage 3ds_remake:data currently_checked set from storage 3ds_remake:data current_state.portrait_ghosts_defeated_in.luigis_mansion.bogmire
+data modify storage 3ds_remake:data currently_checked set from storage luigis_mansion:data current_state.portrait_ghosts_defeated_in.luigis_mansion.bogmire
 scoreboard players set #temp2 Money 2147483647
 function 3ds_remake:selection_menu/gallery_trophy/get_count/portrait/time
 execute if score #temp Money > #temp2 Money run scoreboard players add #temp Time 1
-data modify storage 3ds_remake:data currently_checked set from storage 3ds_remake:data current_state.portrait_ghosts_defeated_in.luigis_mansion.biff_atlas
+data modify storage 3ds_remake:data currently_checked set from storage luigis_mansion:data current_state.portrait_ghosts_defeated_in.luigis_mansion.biff_atlas
 scoreboard players set #temp2 Money 2147483647
 function 3ds_remake:selection_menu/gallery_trophy/get_count/portrait/time
 execute if score #temp Money > #temp2 Money run scoreboard players add #temp Time 1
-data modify storage 3ds_remake:data currently_checked set from storage 3ds_remake:data current_state.portrait_ghosts_defeated_in.luigis_mansion.miss_petunia
+data modify storage 3ds_remake:data currently_checked set from storage luigis_mansion:data current_state.portrait_ghosts_defeated_in.luigis_mansion.miss_petunia
 scoreboard players set #temp2 Money 2147483647
 function 3ds_remake:selection_menu/gallery_trophy/get_count/portrait/time
 execute if score #temp Money > #temp2 Money run scoreboard players add #temp Time 1
-data modify storage 3ds_remake:data currently_checked set from storage 3ds_remake:data current_state.portrait_ghosts_defeated_in.luigis_mansion.nana
+data modify storage 3ds_remake:data currently_checked set from storage luigis_mansion:data current_state.portrait_ghosts_defeated_in.luigis_mansion.nana
 scoreboard players set #temp2 Money 2147483647
 function 3ds_remake:selection_menu/gallery_trophy/get_count/portrait/time
 execute if score #temp Money > #temp2 Money run scoreboard players add #temp Time 1
-data modify storage 3ds_remake:data currently_checked set from storage 3ds_remake:data current_state.portrait_ghosts_defeated_in.luigis_mansion.slim_bankshot
+data modify storage 3ds_remake:data currently_checked set from storage luigis_mansion:data current_state.portrait_ghosts_defeated_in.luigis_mansion.slim_bankshot
 scoreboard players set #temp2 Money 2147483647
 function 3ds_remake:selection_menu/gallery_trophy/get_count/portrait/time
 execute if score #temp Money > #temp2 Money run scoreboard players add #temp Time 1
-data modify storage 3ds_remake:data currently_checked set from storage 3ds_remake:data current_state.portrait_ghosts_defeated_in.luigis_mansion.henry_and_orville
+data modify storage 3ds_remake:data currently_checked set from storage luigis_mansion:data current_state.portrait_ghosts_defeated_in.luigis_mansion.henry_and_orville
 scoreboard players set #temp2 Money 2147483647
 function 3ds_remake:selection_menu/gallery_trophy/get_count/portrait/time
 execute if score #temp Money > #temp2 Money run scoreboard players add #temp Time 1
-data modify storage 3ds_remake:data currently_checked set from storage 3ds_remake:data current_state.portrait_ghosts_defeated_in.luigis_mansion.madame_clairvoya
+data modify storage 3ds_remake:data currently_checked set from storage luigis_mansion:data current_state.portrait_ghosts_defeated_in.luigis_mansion.madame_clairvoya
 scoreboard players set #temp2 Money 2147483647
 function 3ds_remake:selection_menu/gallery_trophy/get_count/portrait/time
 execute if score #temp Money > #temp2 Money run scoreboard players add #temp Time 1
-data modify storage 3ds_remake:data currently_checked set from storage 3ds_remake:data current_state.portrait_ghosts_defeated_in.luigis_mansion.boolossus
+data modify storage 3ds_remake:data currently_checked set from storage luigis_mansion:data current_state.portrait_ghosts_defeated_in.luigis_mansion.boolossus
 scoreboard players set #temp2 Money 2147483647
 function 3ds_remake:selection_menu/gallery_trophy/get_count/portrait/time
 execute if score #temp Money > #temp2 Money run scoreboard players add #temp Time 1
-data modify storage 3ds_remake:data currently_checked set from storage 3ds_remake:data current_state.portrait_ghosts_defeated_in.luigis_mansion.uncle_grimmly
+data modify storage 3ds_remake:data currently_checked set from storage luigis_mansion:data current_state.portrait_ghosts_defeated_in.luigis_mansion.uncle_grimmly
 scoreboard players set #temp2 Money 2147483647
 function 3ds_remake:selection_menu/gallery_trophy/get_count/portrait/time
 execute if score #temp Money > #temp2 Money run scoreboard players add #temp Time 1
-data modify storage 3ds_remake:data currently_checked set from storage 3ds_remake:data current_state.portrait_ghosts_defeated_in.luigis_mansion.clockwork_soldiers
+data modify storage 3ds_remake:data currently_checked set from storage luigis_mansion:data current_state.portrait_ghosts_defeated_in.luigis_mansion.clockwork_soldiers
 scoreboard players set #temp2 Money 2147483647
 function 3ds_remake:selection_menu/gallery_trophy/get_count/portrait/time
 execute if score #temp Money > #temp2 Money run scoreboard players add #temp Time 1
-data modify storage 3ds_remake:data currently_checked set from storage 3ds_remake:data current_state.portrait_ghosts_defeated_in.luigis_mansion.sue_pea
+data modify storage 3ds_remake:data currently_checked set from storage luigis_mansion:data current_state.portrait_ghosts_defeated_in.luigis_mansion.sue_pea
 scoreboard players set #temp2 Money 2147483647
 function 3ds_remake:selection_menu/gallery_trophy/get_count/portrait/time
 execute if score #temp Money > #temp2 Money run scoreboard players add #temp Time 1
-data modify storage 3ds_remake:data currently_checked set from storage 3ds_remake:data current_state.portrait_ghosts_defeated_in.luigis_mansion.jarvis
+data modify storage 3ds_remake:data currently_checked set from storage luigis_mansion:data current_state.portrait_ghosts_defeated_in.luigis_mansion.jarvis
 scoreboard players set #temp2 Money 2147483647
 function 3ds_remake:selection_menu/gallery_trophy/get_count/portrait/time
 execute if score #temp Money > #temp2 Money run scoreboard players add #temp Time 1
-data modify storage 3ds_remake:data currently_checked set from storage 3ds_remake:data current_state.portrait_ghosts_defeated_in.luigis_mansion.sir_weston
+data modify storage 3ds_remake:data currently_checked set from storage luigis_mansion:data current_state.portrait_ghosts_defeated_in.luigis_mansion.sir_weston
 scoreboard players set #temp2 Money 2147483647
 function 3ds_remake:selection_menu/gallery_trophy/get_count/portrait/time
 execute if score #temp Money > #temp2 Money run scoreboard players add #temp Time 1
-data modify storage 3ds_remake:data currently_checked set from storage 3ds_remake:data current_state.portrait_ghosts_defeated_in.luigis_mansion.vincent_van_gore
+data modify storage 3ds_remake:data currently_checked set from storage luigis_mansion:data current_state.portrait_ghosts_defeated_in.luigis_mansion.vincent_van_gore
 scoreboard players set #temp2 Money 2147483647
 function 3ds_remake:selection_menu/gallery_trophy/get_count/portrait/time
 execute if score #temp Money > #temp2 Money run scoreboard players add #temp Time 1
-data modify storage 3ds_remake:data currently_checked set from storage 3ds_remake:data current_state.portrait_ghosts_defeated_in.luigis_mansion.king_boo
+data modify storage 3ds_remake:data currently_checked set from storage luigis_mansion:data current_state.portrait_ghosts_defeated_in.luigis_mansion.king_boo
 scoreboard players set #temp2 Money 2147483647
 function 3ds_remake:selection_menu/gallery_trophy/get_count/portrait/time
 execute if score #temp Money > #temp2 Money run scoreboard players add #temp Time 1

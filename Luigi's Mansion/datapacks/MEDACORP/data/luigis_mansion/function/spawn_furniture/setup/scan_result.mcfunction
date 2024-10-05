@@ -1,0 +1,1 @@
+execute if data storage luigis_mansion:data furniture.scan_result run data modify entity @e[tag=this_entity,limit=1] ArmorItems[3].components."minecraft:custom_data".scan_result set from storage luigis_mansion:data furniture.scan_result

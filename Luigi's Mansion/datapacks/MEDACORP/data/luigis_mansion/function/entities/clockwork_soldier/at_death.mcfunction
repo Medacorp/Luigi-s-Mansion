@@ -1,2 +1,6 @@
 function luigis_mansion:entities/clockwork_soldier/save_stats
+execute if data storage luigis_mansion:data current_state.current_data.portrait_ghosts.luigis_mansion.clockwork_soldiers{blue:{health:0},green:{health:0},pink:{health:0}} run data modify storage luigis_mansion:data portrait_ghost set from storage luigis_mansion:data current_state.portrait_ghosts_defeated_in.luigis_mansion.clockwork_soldiers
+execute if data storage luigis_mansion:data current_state.current_data.portrait_ghosts.luigis_mansion.clockwork_soldiers{blue:{health:0},green:{health:0},pink:{health:0}} run function luigis_mansion:entities/ghost/portrait_ghost_defeat/save
+execute if data storage luigis_mansion:data current_state.current_data.portrait_ghosts.luigis_mansion.clockwork_soldiers{blue:{health:0},green:{health:0},pink:{health:0}} run data modify storage luigis_mansion:data current_state.portrait_ghosts_defeated_in.luigis_mansion.clockwork_soldiers set from storage luigis_mansion:data portrait_ghost
+execute if data storage luigis_mansion:data current_state.current_data.portrait_ghosts.luigis_mansion.clockwork_soldiers{blue:{health:0},green:{health:0},pink:{health:0}} run data remove storage luigis_mansion:data portrait_ghost
 $function $(namespace):entities/clockwork_soldier/at_death/$(id)

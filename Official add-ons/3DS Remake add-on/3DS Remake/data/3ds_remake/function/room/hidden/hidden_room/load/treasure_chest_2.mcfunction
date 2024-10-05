@@ -1,2 +1,2 @@
-data modify storage luigis_mansion:data furniture set value {room:24,sound:{namespace:"luigis_mansion",id:"generic"},searchable:["interact","vacuum"],shake_animation:["interact","vacuum"],scan_message:'{"type":"translatable","translate":"luigis_mansion:message.player.scan_furniture.11"}'}
+data modify storage luigis_mansion:data furniture set value {room:24,sound:{namespace:"luigis_mansion",id:"generic"},searchable:["interact","vacuum"],shake_animation:["interact","vacuum"],scan_result:{namespace:"luigis_mansion",id:"scan/scanner/11"}}
 execute positioned 739 13 45.0 rotated -90 0 run function luigis_mansion:spawn_furniture/treasure_chest/small

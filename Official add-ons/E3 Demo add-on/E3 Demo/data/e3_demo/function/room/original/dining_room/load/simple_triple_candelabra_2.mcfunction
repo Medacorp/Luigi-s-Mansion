@@ -1,2 +1,2 @@
-data modify storage luigis_mansion:data furniture set value {room:14,candle_flames:[{lit:1b},{lit:1b},{lit:1b}],shake_animation:["interact","vacuum"],sound:{namespace:"luigis_mansion",id:"generic"},scan_message:'{"type":"translatable","translate":"luigis_mansion:message.player.scan_furniture.88"}'}
+data modify storage luigis_mansion:data furniture set value {room:14,candle_flames:[{lit:1b},{lit:1b},{lit:1b}],shake_animation:["interact","vacuum"],sound:{namespace:"luigis_mansion",id:"generic"},scan_result:{namespace:"luigis_mansion",id:"scan/scanner/88"}}
 execute positioned 704 12 39 rotated -90 0 run function e3_demo:spawn_furniture/simple_triple_candelabra/left_burned

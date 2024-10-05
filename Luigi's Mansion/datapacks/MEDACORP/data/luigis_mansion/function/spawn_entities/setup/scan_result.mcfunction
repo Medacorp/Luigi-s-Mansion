@@ -1,0 +1,2 @@
+data modify entity @e[tag=this_entity,type=minecraft:armor_stand,limit=1] ArmorItems[3].components."minecraft:custom_data".scan_result set from storage luigis_mansion:data entity.scan_result
+data modify entity @e[tag=this_entity,type=minecraft:marker,limit=1] data.scan_result set from storage luigis_mansion:data entity.scan_result

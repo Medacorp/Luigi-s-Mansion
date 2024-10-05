@@ -1,0 +1,6 @@
+execute if entity @s[nbt={data:{scan_result:{}}}] unless entity @e[tag=furniture_scanned,tag=this_interact,limit=1] run function luigis_mansion:selection_menu/game_boy_horror/scan/dialog with entity @s data.scan_result
+execute if entity @s[nbt={data:{scan_result:"warp"}}] unless entity @e[tag=furniture_scanned,tag=this_interact,limit=1] run tag @e[tag=this_interact,limit=1] add warp
+execute if entity @s[nbt={data:{scan_result:"spawn_ghost"}}] unless entity @e[tag=furniture_scanned,tag=this_interact,limit=1] run function luigis_mansion:entities/furniture/spawn/ghost
+execute if entity @s[nbt={ArmorItems:[{components:{"minecraft:custom_data":{scan_result:{}}}}]}] unless entity @e[tag=furniture_scanned,tag=this_interact,limit=1] run function luigis_mansion:selection_menu/game_boy_horror/scan/dialog with entity @s ArmorItems[3].components."minecraft:custom_data".scan_result
+execute if entity @s[nbt={ArmorItems:[{components:{"minecraft:custom_data":{scan_result:"warp"}}}]}] unless entity @e[tag=furniture_scanned,tag=this_interact,limit=1] run tag @e[tag=this_interact,limit=1] add warp
+execute if entity @s[nbt={ArmorItems:[{components:{"minecraft:custom_data":{scan_result:"spawn_ghost"}}}]}] unless entity @e[tag=furniture_scanned,tag=this_interact,limit=1] run function luigis_mansion:entities/furniture/spawn/ghost

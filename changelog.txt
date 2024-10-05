@@ -1,7 +1,8 @@
-v3.0.7:
+v3.1:
 * Added the Boo cackle counter, where 10+ cackles results in it not staying in place for a moment
 * Added ghost flee tasks
-* Added missing scan message
+* Added some missing furniture scan message
+* Added unique message for fainted players
 * Changed players to look at vacuum-latched-on ghosts in order of latching, rather than look at the averaged out position; the new behavior matches the original game
 * Changed ghosts pulling to have separate valid angles per ghost, matching the original game; lenient pull accuracy gives 40 extra degrees, strict pull accuracy halves the degrees
 * Changed criteria for getting dragged to be closer to the original game; you now only get dragged if you get pulled; a vacuum error is made for each ghost that started pulling you that hasn't pulled you last tick, a vacuum error will not occur if you pulled the ghost in the last 5 ticks
@@ -9,13 +10,20 @@ v3.0.7:
 * Changed mirror warp to make the player forget what room it was in before, resetting the room
 * Changed Luigi and E. Gadd dragged animations
 * Changed Poltergust body to shake when vacuuming (and not riding the poltergust)
+* Changed scan messages to dialogs, freezing everything and splitting the multi-line ones into actual multi-line dialogs; message variation is selected entirely by the dialog now, rather than changing the set message on the entity
+* Changed scanning to prioritize the smallest hitbox rather than arbitrary order (if there's multiple with the smallest size in the hit, a random one is selected)
+* Changed 3DS Remake's "portrait ghosts defeated in" and "Boos caught" data to be part of the vanilla map, rather than the add-on, meaning installing the add-on at a later point will no longer miss that data
 * Fixed loot chances to be true to the game
 * Fixed speedy spirits don't get base loot dropped at 0 if a money ID was provided for loot dropped at 0
 * Fixed hard difficulty stunning incorrectly calculates stun time; it now simply caps the stun time
 * Fixed dropping items doesn't allow using them for a single tick
 * Fixed dropping poltergust wipes element meter
 * Fixed neither poltergust nor flashlight had effects shown in mirrors
+* Fixed Game Boy Horror map doesn't show players in gallery properly
+* Fixed you can't scan players that have fainted or are looking at maps
+* Fixed Biff Atlas scan didn't use plural string if there's multiple players
 * Removed special E. Gadd model for the poltergust, E. Gadd now uses the same models as the player
+* Removed built-in scan message when scanning a mirror if mirror warp is disabled
 
 v3.0.6:
 * Fixed Boolossus fight ends after capturing a single Boo, resulting in softlock when trying to get to King Boo

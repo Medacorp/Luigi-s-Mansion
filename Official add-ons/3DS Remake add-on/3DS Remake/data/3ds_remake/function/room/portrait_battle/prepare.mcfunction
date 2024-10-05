@@ -3,7 +3,7 @@ data modify storage luigis_mansion:data current_state.current_data.portrait_batt
 data modify storage luigis_mansion:data current_state.current_data.portrait_battle.mode set from storage luigis_mansion:data selected_option.mode
 data modify storage luigis_mansion:data current_state.current_data.portrait_battle.position set from storage luigis_mansion:data selected_option.portrait_battle_position
 data modify storage luigis_mansion:data current_state.current_data.portrait_battle.portraits set from storage luigis_mansion:data selected_option.portraits
-$data modify storage 3ds_remake:data loaded_mansion.high_scores set from storage 3ds_remake:data current_state.portrait_ghosts_defeated_in.$(portrait_ghost_namespace).$(portrait_ghost_id)[{mansion:{namespace:"$(mansion_namespace)",id:"$(mansion_id)"}}]
+$data modify storage 3ds_remake:data loaded_mansion.high_scores set from storage luigis_mansion:data current_state.portrait_ghosts_defeated_in.$(portrait_ghost_namespace).$(portrait_ghost_id)[{mansion:{namespace:"$(mansion_namespace)",id:"$(mansion_id)"}}]
 
 gamemode spectator @a
 gamemode adventure @s

@@ -1,1 +1,0 @@
-$execute if data storage 3ds_remake:data portrait_ghost[{mansion:{namespace:"$(namespace)",id:"$(id)"}}] run scoreboard players set #temp Time 1

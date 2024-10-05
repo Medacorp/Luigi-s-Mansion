@@ -13,7 +13,6 @@ execute if entity @s[scores={Dialog=10},nbt={data:{animation:{namespace:"luigis_
 execute if entity @s[scores={Dialog=30},nbt={data:{animation:{namespace:"luigis_mansion",id:"wake_up"}}}] run playsound luigis_mansion:entity.chauncey.cry_wake hostile @a[tag=same_room] ~ ~ ~ 1
 execute if entity @s[scores={Dialog=10},nbt={data:{animation:{namespace:"luigis_mansion",id:"scream_wake"}}}] run playsound luigis_mansion:entity.chauncey.scream_wake hostile @a[tag=same_room] ~ ~ ~ 1
 execute if entity @s[scores={Dialog=30},nbt={data:{animation:{namespace:"luigis_mansion",id:"scream_wake"}}}] run playsound luigis_mansion:entity.chauncey.scream_wake hostile @a[tag=same_room] ~ ~ ~ 1
-data modify entity @s[scores={Dialog=51}] ArmorItems[3].components."minecraft:custom_data".scan_message set value {sender:"me",message:'{"type":"translatable","translate":"luigis_mansion:message.chauncey.scan.2"}'}
 teleport @s[scores={Dialog=51}] 748 21 70
 execute if entity @s[scores={Dialog=51}] unless data storage luigis_mansion:data current_state.current_data.technical_data{chauncey_spoke:1b} run data modify storage luigis_mansion:data dialogs append value {name:{namespace:"luigis_mansion",id:"chauncey_lets_play"},progress:0}
 execute if entity @s[scores={Dialog=51}] unless data storage luigis_mansion:data current_state.current_data.technical_data{chauncey_spoke:1b} store result storage luigis_mansion:data dialogs[-1].room int 1 run scoreboard players get @s Room
