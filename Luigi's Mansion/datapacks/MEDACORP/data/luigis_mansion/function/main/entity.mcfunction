@@ -4,6 +4,7 @@ tag @s[tag=remove_from_existence,tag=cannot_be_removed] remove remove_from_exist
 execute if entity @s[scores={Room=..0}] if score #mirrored Selected matches 1 run scoreboard players set #mirrored Selected 2
 
 execute if entity @s[tag=!no_ai] run function luigis_mansion:main/entity/ai_before
+execute if entity @s[tag=no_ai] run function luigis_mansion:main/entity/no_ai
 
 execute if entity @s[tag=!furniture] run function luigis_mansion:main/entity/non_furniture
 execute if entity @s[tag=furniture] run function luigis_mansion:main/entity/furniture

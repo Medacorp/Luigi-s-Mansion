@@ -1,1 +1,1 @@
-$tag @e[nbt={UUID:$(uuid)},limit=1] add scanned_entity
+$tag @e[nbt={UUID:$(scanned_entity)},limit=1] add scanned_entity

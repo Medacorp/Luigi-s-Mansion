@@ -13,6 +13,7 @@ v3.1:
 * Changed scan messages to dialogs, freezing everything and splitting the multi-line ones into actual multi-line dialogs; message variation is selected entirely by the dialog now, rather than changing the set message on the entity
 * Changed scanning to prioritize the smallest hitbox rather than arbitrary order (if there's multiple with the smallest size in the hit, a random one is selected)
 * Changed 3DS Remake's "portrait ghosts defeated in" and "Boos caught" data to be part of the vanilla map, rather than the add-on, meaning installing the add-on at a later point will no longer miss that data
+* Changed items dropped when taking damage to have upward motion
 * Fixed loot chances to be true to the game
 * Fixed speedy spirits don't get base loot dropped at 0 if a money ID was provided for loot dropped at 0
 * Fixed hard difficulty stunning incorrectly calculates stun time; it now simply caps the stun time
@@ -22,6 +23,11 @@ v3.1:
 * Fixed Game Boy Horror map doesn't show players in gallery properly
 * Fixed you can't scan players that have fainted or are looking at maps
 * Fixed Biff Atlas scan didn't use plural string if there's multiple players
+* Fixed items get disabled for 1 additional tick after a dialog ends
+* Fixed opening map results in your held items vanishing from your model
+* Fixed items have trouble bouncing onto bottom slabs
+* Fixed items with precise curve motion will snap to y positions
+* Fixed revive message doesn't properly fetch reviver from UUID
 * Removed special E. Gadd model for the poltergust, E. Gadd now uses the same models as the player
 * Removed built-in scan message when scanning a mirror if mirror warp is disabled
 
@@ -46,7 +52,7 @@ v3.0.5:
 * Fixed Black Bogmires make no ambient sound during appear behavior
 * Fixed ground-bound ghosts can leave the ground when targeting player
 * Fixed items spawned in blocks don't fly out, only move up
-* Fixed items whith motion high enough to bounce between floor and ceiling in a very short time will bounce forever
+* Fixed items with motion high enough to bounce between floor and ceiling in a very short time will bounce forever
 * Fixed items in a 1 block high area have trouble bouncing
 * Fixed Nana escaping poltergust shows rocking chair
 

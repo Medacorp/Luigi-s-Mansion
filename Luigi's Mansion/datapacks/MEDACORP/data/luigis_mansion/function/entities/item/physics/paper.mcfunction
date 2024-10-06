@@ -8,7 +8,7 @@ execute at @s[tag=!in_block,scores={Move=1..}] run function luigis_mansion:entit
 execute if entity @s[x_rotation=-90..0] store result entity @s Rotation[1] float -1 run data get entity @s Rotation[1]
 
 execute at @s[tag=!in_block] if block ^ ^ ^0.3 #luigis_mansion:items_ignore unless block ^ ^ ^0.3 #minecraft:slabs at @s run teleport @s ^ ^ ^0.1
-execute at @s[tag=!in_block,scores={Move=0}] unless block ^ ^ ^0.3 #luigis_mansion:items_ignore at @s run teleport @s ~ ~ ~ ~ 90
+execute at @s[tag=!in_block,scores={Move=0},tag=!falling] unless block ^ ^ ^0.3 #luigis_mansion:items_ignore at @s run teleport @s ~ ~ ~ ~ 90
 execute at @s[tag=!in_block] unless block ~ ~-0.1 ~ #luigis_mansion:items_ignore align y if block ~ ~ ~ #luigis_mansion:items_ignore unless block ~ ~ ~ #minecraft:slabs[type=bottom] run teleport @s ~ ~ ~
 execute at @s[tag=!in_block] unless block ~ ~-0.1 ~ #luigis_mansion:items_ignore align y if block ~ ~ ~ #minecraft:slabs[type=bottom] positioned ~ ~0.5 ~ run teleport @s ~ ~ ~
 

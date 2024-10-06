@@ -17,9 +17,9 @@ data modify entity @s[tag=!was_flipped,tag=flipped_gravity] Pose.Head[2] set val
 data modify entity @s[tag=held_item] ArmorItems[3] set value {}
 execute unless score #mirrored Selected matches 1 if data storage luigis_mansion:data luigi.offhand.components."minecraft:custom_data".is_nozzle run tag @s add holding_poltergust
 execute if score #mirrored Selected matches 1 if data storage luigis_mansion:data luigi.mainhand.components."minecraft:custom_data".is_nozzle run tag @s add holding_poltergust
-execute unless score #mirrored Selected matches 1 run data modify entity @s[tag=held_item,tag=!stop_model] ArmorItems[3] set from storage luigis_mansion:data luigi.offhand
-execute if entity @s[tag=!poltergust_grabbed] if score #mirrored Selected matches 1 unless data storage luigis_mansion:data luigi.mainhand.components."minecraft:custom_data".is_nozzle run data modify entity @s[tag=held_item,tag=!stop_model] ArmorItems[3] set from storage luigis_mansion:data luigi.mainhand
-execute if entity @s[tag=poltergust_grabbed] if score #mirrored Selected matches 1 if data storage luigis_mansion:data luigi.mainhand.components."minecraft:custom_data".is_nozzle run data modify entity @s[tag=held_item,tag=!stop_model] ArmorItems[3] set from storage luigis_mansion:data luigi.mainhand
+execute unless score #mirrored Selected matches 1 run data modify entity @s[tag=held_item] ArmorItems[3] set from storage luigis_mansion:data luigi.offhand
+execute if entity @s[tag=!poltergust_grabbed] if score #mirrored Selected matches 1 unless data storage luigis_mansion:data luigi.mainhand.components."minecraft:custom_data".is_nozzle run data modify entity @s[tag=held_item] ArmorItems[3] set from storage luigis_mansion:data luigi.mainhand
+execute if entity @s[tag=poltergust_grabbed] if score #mirrored Selected matches 1 if data storage luigis_mansion:data luigi.mainhand.components."minecraft:custom_data".is_nozzle run data modify entity @s[tag=held_item] ArmorItems[3] set from storage luigis_mansion:data luigi.mainhand
 
 # Move animations
 execute if entity @s[tag=sneaking,tag=!stop_model,tag=!riding_poltergust,tag=!holding_poltergust,tag=!low_health,scores={AnimationProgress=0}] run function luigis_mansion:animations/luigi/sneak/left_arm

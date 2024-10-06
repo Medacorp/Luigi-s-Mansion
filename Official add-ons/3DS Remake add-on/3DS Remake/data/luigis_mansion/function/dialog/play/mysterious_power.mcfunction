@@ -2,7 +2,7 @@ execute if score #dialog Dialog matches 58..147 run scoreboard players add #dial
 execute if score #dialog Dialog matches 52..57 if entity @a[tag=same_room,tag=next_dialog_line,limit=1] run scoreboard players add #dialog Dialog 1
 execute if score #dialog Dialog matches ..51 run scoreboard players add #dialog Dialog 1
 execute if score #dialog Dialog matches ..147 if entity @a[tag=same_room,tag=skip_dialog,limit=1] run scoreboard players set #dialog Dialog 148
-execute if score #dialog Dialog matches 52..57 as @a[tag=same_room,tag=!spectator,tag=!dialog_menu] unless entity @s[tag=using_selection_menu,tag=!dialog_menu] run function luigis_mansion:selection_menu/dialog/original_menu
+execute if score #dialog Dialog matches 52..57 as @a[tag=same_room,tag=!spectator,tag=!dialog_menu,tag=!using_selection_menu] run function luigis_mansion:selection_menu/dialog/original_menu
 execute if score #dialog Dialog matches 58.. as @a[tag=same_room,tag=dialog_menu] run function luigis_mansion:selection_menu/dialog/exit
 
 scoreboard players reset @a[tag=same_room,tag=!spectator] WarpTime

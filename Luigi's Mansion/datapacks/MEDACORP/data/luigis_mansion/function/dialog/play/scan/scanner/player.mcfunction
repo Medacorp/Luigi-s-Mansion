@@ -6,14 +6,17 @@ function luigis_mansion:dialog/play/scan/get_scanned_entity with storage luigis_
 execute if score #dialog Dialog matches 2..3 if entity @a[tag=same_room,tag=next_dialog_line,limit=1] run scoreboard players add #dialog Dialog 1
 execute if score #dialog Dialog matches ..1 run scoreboard players add #dialog Dialog 1
 execute if entity @a[tag=same_room,tag=skip_dialog,limit=1] run scoreboard players set #dialog Dialog 4
-execute if score #dialog Dialog matches 2..3 as @a[tag=same_room,tag=!spectator,tag=!dialog_menu] unless entity @s[tag=using_selection_menu,tag=!dialog_menu] run function luigis_mansion:selection_menu/dialog/original_menu
+execute if score #dialog Dialog matches 2..3 as @a[tag=same_room,tag=!spectator,tag=!dialog_menu,tag=!using_selection_menu] run function luigis_mansion:selection_menu/dialog/original_menu
 execute if score #dialog Dialog matches 4.. as @a[tag=same_room,tag=dialog_menu] run function luigis_mansion:selection_menu/dialog/exit
 
 scoreboard players reset @a[tag=same_room,tag=!spectator] WarpTime
-execute as @a[tag=same_room,tag=!spectator,tag=game_boy_horror_menu] run function luigis_mansion:selection_menu/game_boy_horror/exit
-execute if score #dialog Dialog matches 1..2 as @a[tag=!scanning_player,tag=same_room,tag=!spectator] run function luigis_mansion:entities/player/animation/set/idle
-execute if score #dialog Dialog matches 1..2 run tag @a[tag=scanning_player,limit=1] add scanning
-execute if score #dialog Dialog matches 1..2 run scoreboard players set @a[tag=scanning_player,limit=1] ForceScreen 0
+# 1 tick delay for scanned player to get the undisturbed state
+execute if score #dialog Dialog matches 1 as @a[tag=same_room,tag=!spectator,tag=game_boy_horror_menu,tag=!scanning_player,tag=!scanned_entity] run function luigis_mansion:selection_menu/game_boy_horror/exit
+execute if score #dialog Dialog matches 2..3 as @a[tag=same_room,tag=!spectator,tag=game_boy_horror_menu,tag=!scanning_player] run function luigis_mansion:selection_menu/game_boy_horror/exit
+execute if score #dialog Dialog matches 1..3 as @a[tag=!scanning_player,tag=same_room,tag=!spectator] run function luigis_mansion:entities/player/animation/set/idle
+execute if score #dialog Dialog matches 1..3 as @a[tag=scanning_player,limit=1] run function luigis_mansion:entities/player/animation/set/game_boy_horror
+execute if score #dialog Dialog matches 1..3 run tag @a[tag=scanning_player,limit=1] add scanning
+execute if score #dialog Dialog matches 1..3 run scoreboard players set @a[tag=scanning_player,limit=1] ForceScreen 0
 execute if score #dialog Dialog matches 1 at @a[tag=scanning_player,limit=1] at @a[tag=scanning_player,scores={Health=51..},tag=!flashlight_selected,tag=!catch_portrait_ghost,tag=!catch_ghost,tag=!game_boy_horror_selected,tag=!game_boy_horror_menu,distance=1.5..,limit=1] positioned ~ ~-1.4 ~ unless entity @e[distance=..5,tag=item,nbt={ArmorItems:[{components:{"minecraft:custom_data":{item:{namespace:"luigis_mansion",id:"gold_coin"}}}}]},limit=1] store result score #temp Variant run random value 1..3
 execute if score #dialog Dialog matches 1 if score #temp Variant matches 1 run tellraw @a[tag=same_room] {"type":"translatable","translate":"chat.type.text","with":[{"type":"selector","selector":"@a[tag=scanning_player,limit=1]","color":"green"},{"type":"translatable","translate":"luigis_mansion:message.player.scan_furniture.113","with":[{"type":"selector","selector":"@a[tag=scanned_entity,limit=1]"}]}]}
 execute if score #dialog Dialog matches 1 if score #temp Variant matches 2 run tellraw @a[tag=same_room] {"type":"translatable","translate":"chat.type.text","with":[{"type":"selector","selector":"@a[tag=scanning_player,limit=1]","color":"green"},{"type":"translatable","translate":"luigis_mansion:message.player.scan_furniture.114","with":[{"type":"selector","selector":"@a[tag=scanned_entity,limit=1]"}]}]}
@@ -35,8 +38,8 @@ execute if score #dialog Dialog matches 3 unless entity @e[tag=scanned_entity,ta
 
 execute if score #dialog Dialog matches 4 run scoreboard players set #dialog Dialog -1
 
-execute if score #dialog Dialog matches -1 as @a[tag=!scanning_player,tag=same_room,tag=!spectator] run function luigis_mansion:entities/player/animation/set/game_boy_horror
+execute if score #dialog Dialog matches -1 as @a[tag=!scanning_player,tag=same_room,tag=!spectator] run function luigis_mansion:entities/player/animation/set/none
 
-execute if score #dialog Dialog matches -1 as @a[tag=scanning_player] run function luigis_mansion:selection_menu/game_boy_horror/scan_furniture
+execute if score #dialog Dialog matches -1 as @a[tag=scanning_player,limit=1] run function luigis_mansion:selection_menu/game_boy_horror/scan_furniture
 tag @a remove scanning_player
 tag @e remove scanned_entity

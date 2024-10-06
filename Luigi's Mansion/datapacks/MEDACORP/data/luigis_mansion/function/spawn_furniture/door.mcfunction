@@ -23,7 +23,7 @@ execute if data storage luigis_mansion:data furniture.door.key as @e[tag=this_en
 execute if data storage luigis_mansion:data furniture.door.other_end run data modify entity @e[tag=this_entity,limit=1] ArmorItems[3].components."minecraft:custom_data".other_end set from storage luigis_mansion:data furniture.door.other_end
 execute if data storage luigis_mansion:data furniture.door.go_through_command run data modify entity @e[tag=this_entity,limit=1] ArmorItems[3].components."minecraft:custom_data".go_through_command set from storage luigis_mansion:data furniture.door.go_through_command
 function luigis_mansion:spawn_furniture/setup/sound
-function luigis_mansion:spawn_furniture/setup/scan_message
+function luigis_mansion:spawn_furniture/setup/scan_result
 function luigis_mansion:spawn_furniture/setup/room
 function luigis_mansion:spawn_furniture/setup/tags
 execute as @e[tag=this_entity,limit=1] store result score @s PositionX run data get entity @s Pos[0] 10

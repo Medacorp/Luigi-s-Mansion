@@ -2,7 +2,7 @@ execute if score #dialog Dialog matches 22..23 if entity @a[tag=same_room,tag=ne
 execute if score #dialog Dialog matches ..21 if entity @a[tag=same_room,tag=next_dialog_line,limit=1] run scoreboard players set #dialog Dialog 22
 execute if score #dialog Dialog matches ..20 run scoreboard players add #dialog Dialog 1
 execute if score #dialog Dialog matches ..23 if entity @a[tag=same_room,tag=skip_dialog,limit=1] run scoreboard players set #dialog Dialog 24
-execute if score #dialog Dialog matches ..23 as @a[tag=same_room,tag=!spectator,tag=!dialog_menu] unless entity @s[tag=using_selection_menu,tag=!dialog_menu] run function luigis_mansion:selection_menu/dialog/original_menu
+execute if score #dialog Dialog matches ..23 as @a[tag=same_room,tag=!spectator,tag=!dialog_menu,tag=!using_selection_menu] run function luigis_mansion:selection_menu/dialog/original_menu
 execute if score #dialog Dialog matches 24.. as @a[tag=same_room,tag=dialog_menu] run function luigis_mansion:selection_menu/dialog/exit
 
 tag @e[tag=same_room,tag=furniture,tag=incense] remove no_ai

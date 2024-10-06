@@ -4,7 +4,7 @@ execute if score #dialog Dialog matches 2..21 if entity @a[tag=same_room,tag=nex
 execute if score #dialog Dialog matches ..20 run scoreboard players add #dialog Dialog 1
 execute if score #dialog Dialog matches 2..21 if entity @a[tag=same_room,tag=skip_dialog,limit=1] run scoreboard players set #dialog Dialog 22
 execute if score #dialog Dialog matches 24..43 if entity @a[tag=same_room,tag=skip_dialog,limit=1] run scoreboard players set #dialog Dialog 44
-execute if score #dialog Dialog matches ..43 unless score #dialog Dialog matches 22 as @a[tag=same_room,tag=!spectator,tag=!dialog_menu] unless entity @s[tag=using_selection_menu,tag=!dialog_menu] run function luigis_mansion:selection_menu/dialog/original_menu
+execute if score #dialog Dialog matches ..43 unless score #dialog Dialog matches 22 as @a[tag=same_room,tag=!spectator,tag=!dialog_menu,tag=!using_selection_menu] run function luigis_mansion:selection_menu/dialog/original_menu
 execute if score #dialog Dialog matches 22 as @a[tag=same_room,tag=dialog_menu] run function luigis_mansion:selection_menu/dialog/exit
 execute if score #dialog Dialog matches 44 as @a[tag=same_room,tag=dialog_menu] run function luigis_mansion:selection_menu/dialog/exit
 

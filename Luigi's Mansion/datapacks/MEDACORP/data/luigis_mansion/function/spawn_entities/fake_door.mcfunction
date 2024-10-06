@@ -22,7 +22,7 @@ scoreboard players set @e[tag=this_entity,limit=1] EntitySizeHeight 20
 scoreboard players set @e[tag=this_entity,limit=1] EntityYOffset 10
 scoreboard players set @e[tag=this_entity,limit=1] ElementHurtTime 0
 function luigis_mansion:spawn_entities/setup/room
-function luigis_mansion:spawn_entities/setup/scan_message
+function luigis_mansion:spawn_entities/setup/scan_result
 function luigis_mansion:spawn_entities/setup/health
 function luigis_mansion:spawn_entities/setup/loot
 function luigis_mansion:spawn_entities/setup/damage
