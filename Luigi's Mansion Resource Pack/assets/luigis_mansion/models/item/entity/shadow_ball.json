@@ -1,0 +1,17 @@
+{
+    "parent": "luigis_mansion:entity/shadow_ball",
+    "overrides": [
+        {
+            "predicate": {
+                "custom_model_data": 0
+            },
+            "model": "luigis_mansion:entity/shadow_ball"
+        },
+        {
+            "predicate": {
+                "custom_model_data": 1
+            },
+            "model": "luigis_mansion:entity/shadow_big_ball"
+        }
+    ]
+}

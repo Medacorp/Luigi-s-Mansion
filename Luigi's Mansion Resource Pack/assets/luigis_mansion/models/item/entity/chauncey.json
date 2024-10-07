@@ -1,0 +1,103 @@
+{
+	"parent": "luigis_mansion:entity/chauncey/head",
+    "overrides": [
+        {
+            "predicate": {
+                "damage": 0.2,
+                "custom_model_data": 0
+            },
+            "model": "luigis_mansion:entity/chauncey/head"
+        },
+        {
+            "predicate": {
+                "damage": 0.2,
+                "custom_model_data": 1
+            },
+            "model": "luigis_mansion:entity/chauncey/head_scream"
+        },
+        {
+            "predicate": {
+                "damage": 0.2,
+                "custom_model_data": 2
+            },
+            "model": "luigis_mansion:entity/chauncey/big/head"
+        },
+        {
+            "predicate": {
+                "damage": 0.2,
+                "custom_model_data": 3
+            },
+            "model": "luigis_mansion:entity/chauncey/big/head_scream"
+        },
+        {
+            "predicate": {
+                "damage": 0.4,
+                "custom_model_data": 0
+            },
+            "model": "luigis_mansion:entity/chauncey/right_arm"
+        },
+        {
+            "predicate": {
+                "damage": 0.4,
+                "custom_model_data": 1
+            },
+            "model": "luigis_mansion:entity/chauncey/right_arm_rambler"
+        },
+        {
+            "predicate": {
+                "damage": 0.4,
+                "custom_model_data": 2
+            },
+            "model": "luigis_mansion:entity/chauncey/big/right_arm"
+        },
+        {
+            "predicate": {
+                "damage": 0.4,
+                "custom_model_data": 3
+            },
+            "model": "luigis_mansion:entity/chauncey/big/right_arm_rambler"
+        },
+        {
+            "predicate": {
+                "damage": 0.6,
+                "custom_model_data": 0
+            },
+            "model": "luigis_mansion:entity/chauncey/left_arm"
+        },
+        {
+            "predicate": {
+                "damage": 0.6,
+                "custom_model_data": 1
+            },
+            "model": "luigis_mansion:entity/chauncey/left_arm_rambler"
+        },
+        {
+            "predicate": {
+                "damage": 0.6,
+                "custom_model_data": 2
+            },
+            "model": "luigis_mansion:entity/chauncey/big/left_arm"
+        },
+        {
+            "predicate": {
+                "damage": 0.6,
+                "custom_model_data": 3
+            },
+            "model": "luigis_mansion:entity/chauncey/big/left_arm_rambler"
+        },
+        {
+            "predicate": {
+                "damage": 0.8,
+                "custom_model_data": 0
+            },
+            "model": "luigis_mansion:entity/chauncey/body"
+        },
+        {
+            "predicate": {
+                "damage": 0.8,
+                "custom_model_data": 1
+            },
+            "model": "luigis_mansion:entity/chauncey/big/body"
+        }
+    ]
+}

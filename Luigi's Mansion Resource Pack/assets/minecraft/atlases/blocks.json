@@ -9,11 +9,6 @@
             "type": "directory",
             "source": "furniture",
             "prefix": "furniture/"
-        },
-		{
-            "type": "directory",
-            "source": "room",
-            "prefix": "room/"
         }
     ]
 }

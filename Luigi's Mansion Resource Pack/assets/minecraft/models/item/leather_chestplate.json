@@ -579,7 +579,7 @@
                 "damage": 0.05,
                 "custom_model_data": 0
             },
-            "model": "luigis_mansion:entity/bat/icon"
+            "model": "luigis_mansion:item/entity/bat"
         },
         {
             "predicate": {
@@ -587,7 +587,7 @@
                 "damage": 0.05,
                 "custom_model_data": 1
             },
-            "model": "luigis_mansion:entity/bowling_ghost/icon"
+            "model": "luigis_mansion:item/entity/bowling_ghost"
         },
         {
             "predicate": {
@@ -595,7 +595,7 @@
                 "damage": 0.05,
                 "custom_model_data": 2
             },
-            "model": "luigis_mansion:entity/ghost/icon"
+            "model": "luigis_mansion:item/entity/ghost"
         },
         {
             "predicate": {
@@ -603,7 +603,7 @@
                 "damage": 0.05,
                 "custom_model_data": 3
             },
-            "model": "luigis_mansion:entity/puncher/icon"
+            "model": "luigis_mansion:item/entity/puncher"
         },
         {
             "predicate": {
@@ -611,7 +611,7 @@
                 "damage": 0.05,
                 "custom_model_data": 4
             },
-            "model": "luigis_mansion:entity/twirler/icon"
+            "model": "luigis_mansion:item/entity/twirler"
         },
         {
             "predicate": {
@@ -619,7 +619,7 @@
                 "damage": 0.05,
                 "custom_model_data": 5
             },
-            "model": "luigis_mansion:entity/grabbing_ghost/icon"
+            "model": "luigis_mansion:item/entity/grabbing_ghost"
         },
         {
             "predicate": {
@@ -627,7 +627,7 @@
                 "damage": 0.05,
                 "custom_model_data": 6
             },
-            "model": "luigis_mansion:entity/ghost_guy/icon"
+            "model": "luigis_mansion:item/entity/ghost_guy"
         },
         {
             "predicate": {
@@ -635,7 +635,7 @@
                 "damage": 0.05,
                 "custom_model_data": 7
             },
-            "model": "luigis_mansion:entity/ceiling_ghost/icon"
+            "model": "luigis_mansion:item/entity/ceiling_ghost"
         },
         {
             "predicate": {
@@ -643,7 +643,7 @@
                 "damage": 0.05,
                 "custom_model_data": 8
             },
-            "model": "luigis_mansion:entity/garbage_can_ghost/icon"
+            "model": "luigis_mansion:item/entity/garbage_can_ghost"
         },
         {
             "predicate": {
@@ -651,7 +651,7 @@
                 "damage": 0.05,
                 "custom_model_data": 9
             },
-            "model": "e3_demo:entity/ghost/icon"
+            "model": "e3_demo:item/entity/ghost"
         },
         {
             "predicate": {

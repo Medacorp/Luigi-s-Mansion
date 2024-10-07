@@ -1,0 +1,61 @@
+{
+	"parent": "luigis_mansion:entity/bowser/head",
+    "overrides": [
+        {
+            "predicate": {
+                "damage": 0.11,
+                "custom_model_data": 0
+            },
+            "model": "luigis_mansion:entity/bowser/head"
+        },
+        {
+            "predicate": {
+                "damage": 0.11,
+                "custom_model_data": 1
+            },
+            "model": "luigis_mansion:entity/bowser/head_open_mouth"
+        },
+        {
+            "predicate": {
+                "damage": 0.22
+            },
+            "model": "luigis_mansion:entity/bowser/right_arm"
+        },
+        {
+            "predicate": {
+                "damage": 0.33
+            },
+            "model": "luigis_mansion:entity/bowser/left_arm"
+        },
+        {
+            "predicate": {
+                "damage": 0.44
+            },
+            "model": "luigis_mansion:entity/bowser/body"
+        },
+        {
+            "predicate": {
+                "damage": 0.55
+            },
+            "model": "luigis_mansion:entity/bowser/right_leg"
+        },
+        {
+            "predicate": {
+                "damage": 0.66
+            },
+            "model": "luigis_mansion:entity/bowser/left_leg"
+        },
+        {
+            "predicate": {
+                "damage": 0.77
+            },
+            "model": "luigis_mansion:entity/bowser/tail"
+        },
+        {
+            "predicate": {
+                "damage": 0.88
+            },
+            "model": "luigis_mansion:entity/bowser/shadow"
+        }
+    ]
+}

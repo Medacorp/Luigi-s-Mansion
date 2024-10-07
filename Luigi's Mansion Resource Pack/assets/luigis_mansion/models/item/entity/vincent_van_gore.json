@@ -1,0 +1,45 @@
+{
+	"parent": "luigis_mansion:entity/vincent_van_gore/head",
+    "overrides": [
+        {
+            "predicate": {
+                "damage": 0.2
+            },
+            "model": "luigis_mansion:entity/vincent_van_gore/head"
+        },
+        {
+            "predicate": {
+                "damage": 0.4,
+                "custom_model_data": 0
+            },
+            "model": "luigis_mansion:entity/vincent_van_gore/right_arm_pencil"
+        },
+        {
+            "predicate": {
+                "damage": 0.4,
+                "custom_model_data": 1
+            },
+            "model": "luigis_mansion:entity/vincent_van_gore/right_arm_panel"
+        },
+        {
+            "predicate": {
+                "damage": 0.6,
+                "custom_model_data": 0
+            },
+            "model": "luigis_mansion:entity/vincent_van_gore/left_arm_pencil"
+        },
+        {
+            "predicate": {
+                "damage": 0.6,
+                "custom_model_data": 1
+            },
+            "model": "luigis_mansion:entity/vincent_van_gore/left_arm_panel"
+        },
+        {
+            "predicate": {
+                "damage": 0.8
+            },
+            "model": "luigis_mansion:entity/vincent_van_gore/body"
+        }
+    ]
+}

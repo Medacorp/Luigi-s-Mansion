@@ -1,0 +1,6 @@
+{
+    "parent": "e3_demo:entity/ghost_coin",
+    "overrides": [
+        
+    ]
+}

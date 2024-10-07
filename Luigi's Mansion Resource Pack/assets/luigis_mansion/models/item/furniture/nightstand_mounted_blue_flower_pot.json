@@ -1,0 +1,65 @@
+{
+    "parent": "luigis_mansion:furniture/nightstand_mounted_blue_flower_pot/state_0",
+    "overrides": [
+        {
+            "predicate": {
+                "custom_model_data": 0
+            },
+            "model": "luigis_mansion:furniture/nightstand_mounted_blue_flower_pot/state_0"
+        },
+        {
+            "predicate": {
+                "custom_model_data": 1
+            },
+            "model": "luigis_mansion:furniture/nightstand_mounted_blue_flower_pot/state_1"
+        },
+        {
+            "predicate": {
+                "custom_model_data": 2
+            },
+            "model": "luigis_mansion:furniture/nightstand_mounted_blue_flower_pot/state_2"
+        },
+        {
+            "predicate": {
+                "custom_model_data": 3
+            },
+            "model": "luigis_mansion:furniture/nightstand_mounted_blue_flower_pot/state_3"
+        },
+        {
+            "predicate": {
+                "custom_model_data": 4
+            },
+            "model": "luigis_mansion:furniture/nightstand_mounted_blue_flower_pot/state_4"
+        },
+        {
+            "predicate": {
+                "custom_model_data": 5
+            },
+            "model": "luigis_mansion:furniture/nightstand_mounted_blue_flower_pot/state_5"
+        },
+        {
+            "predicate": {
+                "custom_model_data": 6
+            },
+            "model": "luigis_mansion:furniture/nightstand_mounted_blue_flower_pot/state_6"
+        },
+        {
+            "predicate": {
+                "custom_model_data": 7
+            },
+            "model": "luigis_mansion:furniture/nightstand_mounted_blue_flower_pot/state_7"
+        },
+        {
+            "predicate": {
+                "custom_model_data": 8
+            },
+            "model": "luigis_mansion:furniture/nightstand_mounted_blue_flower_pot/state_8"
+        },
+        {
+            "predicate": {
+                "custom_model_data": 9
+            },
+            "model": "luigis_mansion:furniture/nightstand_mounted_blue_flower_pot/state_9"
+        }
+    ]
+}

@@ -1,0 +1,29 @@
+{
+    "parent": "luigis_mansion:furniture/door/mansion/entrance",
+    "overrides": [
+        {
+            "predicate": {
+                "custom_model_data": 0
+            },
+            "model": "luigis_mansion:furniture/door/mansion/entrance"
+        },
+        {
+            "predicate": {
+                "custom_model_data": 1
+            },
+            "model": "luigis_mansion:furniture/door/mansion/entrance_fire"
+        },
+        {
+            "predicate": {
+                "custom_model_data": 2
+            },
+            "model": "luigis_mansion:furniture/door/mansion/entrance_barricade"
+        },
+        {
+            "predicate": {
+                "custom_model_data": 3
+            },
+            "model": "luigis_mansion:furniture/door/mansion/entrance_blockade"
+        }
+    ]
+}

@@ -1,0 +1,41 @@
+{
+	"parent": "luigis_mansion:entity/e_gadd/head",
+    "overrides": [
+        {
+            "predicate": {
+                "damage": 0.142
+            },
+            "model": "luigis_mansion:entity/e_gadd/head"
+        },
+        {
+            "predicate": {
+                "damage": 0.285
+            },
+            "model": "luigis_mansion:entity/e_gadd/right_arm"
+        },
+        {
+            "predicate": {
+                "damage": 0.428
+            },
+            "model": "luigis_mansion:entity/e_gadd/left_arm"
+        },
+        {
+            "predicate": {
+                "damage": 0.571
+            },
+            "model": "luigis_mansion:entity/e_gadd/body"
+        },
+        {
+            "predicate": {
+                "damage": 0.714
+            },
+            "model": "luigis_mansion:entity/e_gadd/right_leg"
+        },
+        {
+            "predicate": {
+                "damage": 0.857
+            },
+            "model": "luigis_mansion:entity/e_gadd/left_leg"
+        }
+    ]
+}

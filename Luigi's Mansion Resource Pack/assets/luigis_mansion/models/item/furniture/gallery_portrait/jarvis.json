@@ -1,0 +1,29 @@
+{
+	"parent": "luigis_mansion:furniture/gallery_portrait/frame",
+    "overrides": [
+        {
+            "predicate": {
+                "custom_model_data": 0
+            },
+            "model": "luigis_mansion:furniture/gallery_portrait/frame"
+        },
+        {
+            "predicate": {
+                "custom_model_data": 1
+            },
+            "model": "luigis_mansion:furniture/gallery_portrait/bronze/jarvis"
+        },
+        {
+            "predicate": {
+                "custom_model_data": 2
+            },
+            "model": "luigis_mansion:furniture/gallery_portrait/silver/jarvis"
+        },
+        {
+            "predicate": {
+                "custom_model_data": 3
+            },
+            "model": "luigis_mansion:furniture/gallery_portrait/gold/jarvis"
+        }
+    ]
+}

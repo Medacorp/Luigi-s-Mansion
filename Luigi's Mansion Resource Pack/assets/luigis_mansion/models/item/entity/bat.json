@@ -1,0 +1,132 @@
+{
+	"credit": "Made with Blockbench",
+	"textures": {
+		"0": "luigis_mansion:entity/bat",
+		"particle": "luigis_mansion:entity/bat"
+	},
+	"elements": [
+		{
+			"from": [7, -2, 7],
+			"to": [9, 0, 9],
+			"rotation": {"angle": 0, "axis": "y", "origin": [8, 6, 8]},
+			"faces": {
+				"north": {"uv": [5.25, 0.75, 6, 1.5], "texture": "#0", "tintindex": 0},
+				"east": {"uv": [4.5, 0.75, 5.25, 1.5], "texture": "#0", "tintindex": 0},
+				"south": {"uv": [6.75, 0.75, 7.5, 1.5], "texture": "#0", "tintindex": 0},
+				"west": {"uv": [6, 0.75, 6.75, 1.5], "texture": "#0", "tintindex": 0},
+				"down": {"uv": [6, 0, 6.75, 0.75], "texture": "#0", "tintindex": 0}
+			}
+		},
+		{
+			"from": [6.5, 0, 6.5],
+			"to": [9.5, 8, 9.5],
+			"rotation": {"angle": 0, "axis": "y", "origin": [8, 10, 8]},
+			"faces": {
+				"north": {"uv": [1.5, 1.5, 3, 5.5], "texture": "#0", "tintindex": 0},
+				"east": {"uv": [0, 1.5, 1.5, 5.5], "texture": "#0", "tintindex": 0},
+				"south": {"uv": [4.5, 1.5, 6, 5.5], "texture": "#0", "tintindex": 0},
+				"west": {"uv": [3, 1.5, 4.5, 5.5], "texture": "#0", "tintindex": 0},
+				"up": {"uv": [1.5, 0, 3, 1.5], "texture": "#0", "tintindex": 0},
+				"down": {"uv": [3, 0, 4.5, 1.5], "texture": "#0", "tintindex": 0}
+			}
+		},
+		{
+			"from": [6.5, 5, 6.5],
+			"to": [9.5, 7.5, 9.5],
+			"rotation": {"angle": 0, "axis": "y", "origin": [8, 10, 8]},
+			"faces": {
+				"north": {"uv": [11.5, 1.75, 13, 3], "texture": "#0"},
+				"east": {"uv": [10, 1.75, 11.5, 3], "texture": "#0"},
+				"south": {"uv": [14.5, 1.75, 16, 3], "texture": "#0"},
+				"west": {"uv": [13, 1.75, 14.5, 3], "texture": "#0"}
+			}
+		},
+		{
+			"from": [5.5, 7, 7.5],
+			"to": [7.5, 10, 8.5],
+			"rotation": {"angle": 0, "axis": "y", "origin": [8, 10, 8]},
+			"faces": {
+				"north": {"uv": [3.5, 6, 4.5, 7.5], "texture": "#0", "tintindex": 0},
+				"east": {"uv": [3, 6, 3.5, 7.5], "texture": "#0", "tintindex": 0},
+				"south": {"uv": [5, 6, 6, 7.5], "texture": "#0", "tintindex": 0},
+				"west": {"uv": [4.5, 6, 5, 7.5], "texture": "#0", "tintindex": 0},
+				"up": {"uv": [3.5, 5.5, 4.5, 6], "texture": "#0", "tintindex": 0},
+				"down": {"uv": [4.5, 5.5, 5.5, 6], "rotation": 180, "texture": "#0", "tintindex": 0}
+			}
+		},
+		{
+			"from": [8.5, 7, 7.5],
+			"to": [10.5, 10, 8.5],
+			"rotation": {"angle": 0, "axis": "y", "origin": [11, 10, 8]},
+			"faces": {
+				"north": {"uv": [0.5, 6, 1.5, 7.5], "texture": "#0", "tintindex": 0},
+				"east": {"uv": [0, 6, 0.5, 7.5], "texture": "#0", "tintindex": 0},
+				"south": {"uv": [2, 6, 3, 7.5], "texture": "#0", "tintindex": 0},
+				"west": {"uv": [1.5, 6, 2, 7.5], "texture": "#0", "tintindex": 0},
+				"up": {"uv": [0.5, 5.5, 1.5, 6], "texture": "#0", "tintindex": 0},
+				"down": {"uv": [1.5, 5.5, 2.5, 6], "rotation": 180, "texture": "#0", "tintindex": 0}
+			}
+		},
+		{
+			"from": [-1.5, 0, 8],
+			"to": [6.5, 6, 8],
+			"rotation": {"angle": -22.5, "axis": "y", "origin": [8, 0, 8]},
+			"faces": {
+				"north": {"uv": [0, 10.5, 4, 13.5], "texture": "#0", "tintindex": 0},
+				"south": {"uv": [4, 10.5, 8, 13.5], "texture": "#0", "tintindex": 0}
+			}
+		},
+		{
+			"from": [8, 0, 8],
+			"to": [16, 6, 8],
+			"rotation": {"angle": 22.5, "axis": "y", "origin": [8, 0, 8]},
+			"faces": {
+				"north": {"uv": [0, 7.5, 4, 10.5], "texture": "#0", "tintindex": 0},
+				"south": {"uv": [4, 7.5, 8, 10.5], "texture": "#0", "tintindex": 0}
+			}
+		}
+	],
+	"display": {
+		"gui": {
+			"rotation": [-128, -20, -166],
+			"translation": [-0.25, 3.5, 0],
+			"scale": [0.9, 0.9, 0.9]
+		}
+	},
+    "overrides": [
+        {
+            "predicate": {
+                "damage": 0.25
+            },
+            "model": "luigis_mansion:entity/bat/body"
+        },
+        {
+            "predicate": {
+                "damage": 0.5,
+                "custom_model_data": 0
+            },
+            "model": "luigis_mansion:entity/bat/right_arm"
+        },
+        {
+            "predicate": {
+                "damage": 0.5,
+                "custom_model_data": 1
+            },
+            "model": "luigis_mansion:entity/bat/right_arm_closed"
+        },
+        {
+            "predicate": {
+                "damage": 0.75,
+                "custom_model_data": 0
+            },
+            "model": "luigis_mansion:entity/bat/left_arm"
+        },
+        {
+            "predicate": {
+                "damage": 0.75,
+                "custom_model_data": 1
+            },
+            "model": "luigis_mansion:entity/bat/left_arm_closed"
+        }
+    ]
+}

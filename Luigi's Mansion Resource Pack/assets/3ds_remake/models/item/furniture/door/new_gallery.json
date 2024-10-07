@@ -1,0 +1,29 @@
+{
+    "parent": "3ds_remake:furniture/door/new_gallery",
+    "overrides": [
+        {
+            "predicate": {
+                "custom_model_data": 0
+            },
+            "model": "3ds_remake:furniture/door/new_gallery"
+        },
+        {
+            "predicate": {
+                "custom_model_data": 1
+            },
+            "model": "3ds_remake:furniture/door/new_gallery_fire"
+        },
+        {
+            "predicate": {
+                "custom_model_data": 2
+            },
+            "model": "3ds_remake:furniture/door/new_gallery_barricade"
+        },
+        {
+            "predicate": {
+                "custom_model_data": 3
+            },
+            "model": "3ds_remake:furniture/door/new_gallery_blockade"
+        }
+    ]
+}

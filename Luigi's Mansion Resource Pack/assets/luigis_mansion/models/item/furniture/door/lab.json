@@ -1,0 +1,29 @@
+{
+    "parent": "luigis_mansion:furniture/door/lab",
+    "overrides": [
+        {
+            "predicate": {
+                "custom_model_data": 0
+            },
+            "model": "luigis_mansion:furniture/door/lab"
+        },
+        {
+            "predicate": {
+                "custom_model_data": 1
+            },
+            "model": "luigis_mansion:furniture/door/lab_fire"
+        },
+        {
+            "predicate": {
+                "custom_model_data": 2
+            },
+            "model": "luigis_mansion:furniture/door/lab_barricade"
+        },
+        {
+            "predicate": {
+                "custom_model_data": 3
+            },
+            "model": "luigis_mansion:furniture/door/lab_blockade"
+        }
+    ]
+}

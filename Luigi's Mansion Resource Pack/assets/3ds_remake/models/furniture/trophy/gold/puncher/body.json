@@ -1,0 +1,6 @@
+{
+	"parent": "luigis_mansion:entity/puncher/body",
+	"textures": {
+		"0": "3ds_remake:furniture/trophy/gold/puncher"
+	}
+}

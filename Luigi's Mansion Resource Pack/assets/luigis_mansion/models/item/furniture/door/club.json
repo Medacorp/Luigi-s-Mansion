@@ -1,0 +1,35 @@
+{
+    "parent": "luigis_mansion:furniture/door/club",
+    "overrides": [
+        {
+            "predicate": {
+                "custom_model_data": 0
+            },
+            "model": "luigis_mansion:furniture/door/club"
+        },
+        {
+            "predicate": {
+                "custom_model_data": 1
+            },
+            "model": "luigis_mansion:furniture/door/club_fire"
+        },
+        {
+            "predicate": {
+                "custom_model_data": 2
+            },
+            "model": "luigis_mansion:furniture/door/club_barricade"
+        },
+        {
+            "predicate": {
+                "custom_model_data": 3
+            },
+            "model": "luigis_mansion:furniture/door/club_blockade"
+        },
+        {
+            "predicate": {
+                "custom_model_data": 4
+            },
+            "model": "luigis_mansion:furniture/door/club_blockade_area"
+        }
+    ]
+}

@@ -1,0 +1,17 @@
+{
+    "parent": "luigis_mansion:furniture/torch/dotted/clockwise",
+    "overrides": [
+        {
+            "predicate": {
+                "custom_model_data": 0
+            },
+            "model": "luigis_mansion:furniture/torch/dotted/clockwise"
+        },
+        {
+            "predicate": {
+                "custom_model_data": 1
+            },
+            "model": "luigis_mansion:furniture/torch/dotted/counterclockwise"
+        }
+    ]
+}

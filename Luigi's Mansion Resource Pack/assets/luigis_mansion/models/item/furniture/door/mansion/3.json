@@ -1,0 +1,29 @@
+{
+    "parent": "luigis_mansion:furniture/door/mansion/3",
+    "overrides": [
+        {
+            "predicate": {
+                "custom_model_data": 0
+            },
+            "model": "luigis_mansion:furniture/door/mansion/3"
+        },
+        {
+            "predicate": {
+                "custom_model_data": 1
+            },
+            "model": "luigis_mansion:furniture/door/mansion/3_fire"
+        },
+        {
+            "predicate": {
+                "custom_model_data": 2
+            },
+            "model": "luigis_mansion:furniture/door/mansion/3_barricade"
+        },
+        {
+            "predicate": {
+                "custom_model_data": 3
+            },
+            "model": "luigis_mansion:furniture/door/mansion/3_blockade"
+        }
+    ]
+}

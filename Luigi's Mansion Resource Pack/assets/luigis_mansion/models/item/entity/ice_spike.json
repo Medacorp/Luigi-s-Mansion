@@ -1,0 +1,17 @@
+{
+    "parent": "luigis_mansion:entity/ice_spike/whole",
+    "overrides": [
+        {
+            "predicate": {
+                "custom_model_data": 0
+            },
+            "model": "luigis_mansion:entity/ice_spike/whole"
+        },
+        {
+            "predicate": {
+                "custom_model_data": 1
+            },
+            "model": "luigis_mansion:entity/ice_spike/broken"
+        }
+    ]
+}

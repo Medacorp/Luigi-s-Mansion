@@ -1,0 +1,17 @@
+{
+    "parent": "luigis_mansion:entity/ice_elemental_ghost/full",
+    "overrides": [
+        {
+            "predicate": {
+                "custom_model_data": 0
+            },
+            "model": "luigis_mansion:entity/ice_elemental_ghost/full"
+        },
+        {
+            "predicate": {
+                "custom_model_data": 1
+            },
+            "model": "luigis_mansion:entity/ice_elemental_ghost/vacuumed"
+        }
+    ]
+}

@@ -1,0 +1,17 @@
+{
+    "parent": "luigis_mansion:entity/spike_ball/normal",
+    "overrides": [
+        {
+            "predicate": {
+                "custom_model_data": 0
+            },
+            "model": "luigis_mansion:entity/spike_ball/normal"
+        },
+        {
+            "predicate": {
+                "custom_model_data": 1
+            },
+            "model": "luigis_mansion:entity/spike_ball/exploding"
+        }
+    ]
+}

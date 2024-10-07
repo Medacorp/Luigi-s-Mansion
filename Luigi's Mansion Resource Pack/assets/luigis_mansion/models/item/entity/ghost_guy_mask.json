@@ -1,0 +1,17 @@
+{
+    "parent": "luigis_mansion:entity/ghost_guy_mask/normal",
+    "overrides": [
+        {
+            "predicate": {
+                "custom_model_data": 0
+            },
+            "model": "luigis_mansion:entity/ghost_guy_mask/normal"
+        },
+        {
+            "predicate": {
+                "custom_model_data": 1
+            },
+            "model": "luigis_mansion:entity/ghost_guy_mask/dancing"
+        }
+    ]
+}

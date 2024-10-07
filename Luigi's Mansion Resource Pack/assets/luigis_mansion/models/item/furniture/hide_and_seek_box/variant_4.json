@@ -1,0 +1,35 @@
+{
+    "parent": "luigis_mansion:furniture/hide_and_seek_box/variant_4/state_0",
+    "overrides": [
+        {
+            "predicate": {
+                "custom_model_data": 0
+            },
+            "model": "luigis_mansion:furniture/hide_and_seek_box/variant_4/state_0"
+        },
+        {
+            "predicate": {
+                "custom_model_data": 1
+            },
+            "model": "luigis_mansion:furniture/hide_and_seek_box/variant_4/state_1"
+        },
+        {
+            "predicate": {
+                "custom_model_data": 2
+            },
+            "model": "luigis_mansion:furniture/hide_and_seek_box/variant_4/state_2"
+        },
+        {
+            "predicate": {
+                "custom_model_data": 3
+            },
+            "model": "luigis_mansion:furniture/hide_and_seek_box/variant_4/state_3"
+        },
+        {
+            "predicate": {
+                "custom_model_data": 4
+            },
+            "model": "luigis_mansion:furniture/hide_and_seek_box/variant_4/state_4"
+        }
+    ]
+}

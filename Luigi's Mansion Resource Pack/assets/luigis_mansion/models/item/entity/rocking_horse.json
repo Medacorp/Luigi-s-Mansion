@@ -1,0 +1,17 @@
+{
+    "parent": "luigis_mansion:entity/rocking_horse/battle",
+    "overrides": [
+        {
+            "predicate": {
+                "custom_model_data": 0
+            },
+            "model": "luigis_mansion:entity/rocking_horse/battle"
+        },
+        {
+            "predicate": {
+                "custom_model_data": 1
+            },
+            "model": "luigis_mansion:entity/rocking_horse/big"
+        }
+    ]
+}

@@ -1,0 +1,81 @@
+{
+	"parent": "luigis_mansion:entity/clockwork_soldier/green/head",
+    "overrides": [
+        {
+            "predicate": {
+                "damage": 0.142
+            },
+            "model": "luigis_mansion:entity/clockwork_soldier/green/head"
+        },
+        {
+            "predicate": {
+                "damage": 0.285,
+                "custom_model_data": 0
+            },
+            "model": "luigis_mansion:entity/clockwork_soldier/green/right_arm"
+        },
+        {
+            "predicate": {
+                "damage": 0.285,
+                "custom_model_data": 1
+            },
+            "model": "luigis_mansion:entity/clockwork_soldier/green/right_arm_weapon"
+        },
+        {
+            "predicate": {
+                "damage": 0.428,
+                "custom_model_data": 0
+            },
+            "model": "luigis_mansion:entity/clockwork_soldier/green/left_arm"
+        },
+        {
+            "predicate": {
+                "damage": 0.428,
+                "custom_model_data": 1
+            },
+            "model": "luigis_mansion:entity/clockwork_soldier/green/left_arm_weapon"
+        },
+        {
+            "predicate": {
+                "damage": 0.571,
+                "custom_model_data": 0
+            },
+            "model": "luigis_mansion:entity/clockwork_soldier/green/body_legged"
+        },
+        {
+            "predicate": {
+                "damage": 0.571,
+                "custom_model_data": 1
+            },
+            "model": "luigis_mansion:entity/clockwork_soldier/green/body"
+        },
+        {
+            "predicate": {
+                "damage": 0.714,
+                "custom_model_data": 0
+            },
+            "model": "luigis_mansion:entity/clockwork_soldier/green/right_leg"
+        },
+        {
+            "predicate": {
+                "damage": 0.714,
+                "custom_model_data": 1
+            },
+            "model": "luigis_mansion:item/empty"
+        },
+        {
+            "predicate": {
+                "damage": 0.857,
+                "custom_model_data": 0
+            },
+            "model": "luigis_mansion:entity/clockwork_soldier/green/left_leg"
+        },
+        {
+            "predicate": {
+                "damage": 0.857,
+                "custom_model_data": 1
+            },
+            "model": "luigis_mansion:item/empty"
+        }
+    ]
+}

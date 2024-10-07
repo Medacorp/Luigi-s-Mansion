@@ -1,0 +1,29 @@
+{
+    "parent": "e3_demo:furniture/door/star",
+    "overrides": [
+        {
+            "predicate": {
+                "custom_model_data": 0
+            },
+            "model": "e3_demo:furniture/door/star"
+        },
+        {
+            "predicate": {
+                "custom_model_data": 1
+            },
+            "model": "e3_demo:furniture/door/star_fire"
+        },
+        {
+            "predicate": {
+                "custom_model_data": 2
+            },
+            "model": "e3_demo:furniture/door/star_barricade"
+        },
+        {
+            "predicate": {
+                "custom_model_data": 3
+            },
+            "model": "e3_demo:furniture/door/star_blockade"
+        }
+    ]
+}

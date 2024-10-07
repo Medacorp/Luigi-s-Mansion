@@ -1,0 +1,17 @@
+{
+    "parent": "luigis_mansion:entity/bill/green",
+    "overrides": [
+        {
+            "predicate": {
+                "custom_model_data": 0
+            },
+            "model": "luigis_mansion:entity/bill/green"
+        },
+        {
+            "predicate": {
+                "custom_model_data": 1
+            },
+            "model": "luigis_mansion:entity/bill/gold"
+        }
+    ]
+}

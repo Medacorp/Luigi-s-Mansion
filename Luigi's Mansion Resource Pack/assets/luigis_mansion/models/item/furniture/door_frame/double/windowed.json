@@ -1,0 +1,17 @@
+{
+    "parent": "luigis_mansion:furniture/door_frame/double/windowed_right",
+    "overrides": [
+        {
+            "predicate": {
+                "custom_model_data": 0
+            },
+            "model": "luigis_mansion:furniture/door_frame/double/windowed_right"
+        },
+        {
+            "predicate": {
+                "custom_model_data": 1
+            },
+            "model": "luigis_mansion:furniture/door_frame/double/windowed_left"
+        }
+    ]
+}

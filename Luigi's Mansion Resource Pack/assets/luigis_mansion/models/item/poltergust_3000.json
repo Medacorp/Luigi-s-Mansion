@@ -1,0 +1,89 @@
+{
+	"parent": "luigis_mansion:item/poltergust_3000/nozzle",
+    "overrides": [
+        {
+            "predicate": {
+                "custom_model_data": 0
+            },
+            "model": "luigis_mansion:item/poltergust_3000/nozzle"
+        },
+        {
+            "predicate": {
+                "custom_model_data": 1
+            },
+            "model": "luigis_mansion:item/poltergust_3000/body_right"
+        },
+        {
+            "predicate": {
+                "custom_model_data": 2
+            },
+            "model": "luigis_mansion:item/poltergust_3000/body_left"
+        },
+        {
+            "predicate": {
+                "custom_model_data": 3
+            },
+            "model": "luigis_mansion:item/poltergust_3000/body_sat_on_right"
+        },
+        {
+            "predicate": {
+                "custom_model_data": 4
+            },
+            "model": "luigis_mansion:item/poltergust_3000/body_sat_on_left"
+        },
+        {
+            "predicate": {
+                "custom_model_data": 5
+            },
+            "model": "luigis_mansion:item/poltergust_3000/body_idle_right"
+        },
+        {
+            "predicate": {
+                "custom_model_data": 6
+            },
+            "model": "luigis_mansion:item/poltergust_3000/body_idle_left"
+        },
+        {
+            "predicate": {
+                "custom_model_data": 7
+            },
+            "model": "3ds_remake:item/poltergust_3000/nozzle_gooigi"
+        },
+        {
+            "predicate": {
+                "custom_model_data": 8
+            },
+            "model": "3ds_remake:item/poltergust_3000/body_right_gooigi"
+        },
+        {
+            "predicate": {
+                "custom_model_data": 9
+            },
+            "model": "3ds_remake:item/poltergust_3000/body_left_gooigi"
+        },
+        {
+            "predicate": {
+                "custom_model_data": 10
+            },
+            "model": "3ds_remake:item/poltergust_3000/body_sat_on_right_gooigi"
+        },
+        {
+            "predicate": {
+                "custom_model_data": 11
+            },
+            "model": "3ds_remake:item/poltergust_3000/body_sat_on_left_gooigi"
+        },
+        {
+            "predicate": {
+                "custom_model_data": 12
+            },
+            "model": "3ds_remake:item/poltergust_3000/body_idle_right_gooigi"
+        },
+        {
+            "predicate": {
+                "custom_model_data": 13
+            },
+            "model": "3ds_remake:item/poltergust_3000/body_idle_left_gooigi"
+        }
+    ]
+}

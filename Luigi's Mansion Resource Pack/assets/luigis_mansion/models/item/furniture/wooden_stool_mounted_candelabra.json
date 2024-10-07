@@ -1,0 +1,17 @@
+{
+    "parent": "luigis_mansion:furniture/wooden_stool_mounted_candelabra/right",
+    "overrides": [
+        {
+            "predicate": {
+                "custom_model_data": 0
+            },
+            "model": "luigis_mansion:furniture/wooden_stool_mounted_candelabra/right"
+        },
+        {
+            "predicate": {
+                "custom_model_data": 1
+            },
+            "model": "luigis_mansion:furniture/wooden_stool_mounted_candelabra/left"
+        }
+    ]
+}

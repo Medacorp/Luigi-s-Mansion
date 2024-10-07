@@ -1,0 +1,17 @@
+{
+    "parent": "luigis_mansion:entity/jarvis/normal",
+    "overrides": [
+        {
+            "predicate": {
+                "custom_model_data": 0
+            },
+            "model": "luigis_mansion:entity/jarvis/normal"
+        },
+        {
+            "predicate": {
+                "custom_model_data": 1
+            },
+            "model": "luigis_mansion:entity/jarvis/frozen"
+        }
+    ]
+}

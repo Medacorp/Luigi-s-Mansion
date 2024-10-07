@@ -1,7 +1,0 @@
-{
-	"parent": "luigis_mansion:entity/clockwork_soldiers/blue/left_leg",
-	"textures": {
-		"0": "luigis_mansion:entity/clockwork_soldiers/green",
-		"particle": "luigis_mansion:entity/clockwork_soldiers/green"
-	}
-}

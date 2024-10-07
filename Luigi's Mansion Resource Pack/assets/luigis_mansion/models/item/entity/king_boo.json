@@ -1,0 +1,27 @@
+{
+	"parent": "luigis_mansion:item/entity/boo",
+	"textures": {
+		"0": "luigis_mansion:entity/king_boo",
+		"particle": "luigis_mansion:entity/king_boo"
+	},
+    "overrides": [
+        {
+            "predicate": {
+                "damage": 0.25
+            },
+            "model": "luigis_mansion:entity/king_boo/body"
+        },
+        {
+            "predicate": {
+                "damage": 0.5
+            },
+            "model": "luigis_mansion:entity/king_boo/right_arm"
+        },
+        {
+            "predicate": {
+                "damage": 0.75
+            },
+            "model": "luigis_mansion:entity/king_boo/left_arm"
+        }
+    ]
+}

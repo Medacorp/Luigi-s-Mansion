@@ -1,0 +1,23 @@
+{
+    "parent": "luigis_mansion:entity/wool/blue",
+    "overrides": [
+        {
+            "predicate": {
+                "custom_model_data": 0
+            },
+            "model": "luigis_mansion:entity/wool/blue"
+        },
+        {
+            "predicate": {
+                "custom_model_data": 1
+            },
+            "model": "luigis_mansion:entity/wool/yellow"
+        },
+        {
+            "predicate": {
+                "custom_model_data": 2
+            },
+            "model": "luigis_mansion:entity/wool/pink"
+        }
+    ]
+}

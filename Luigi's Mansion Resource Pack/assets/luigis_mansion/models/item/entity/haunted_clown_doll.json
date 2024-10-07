@@ -1,0 +1,17 @@
+{
+    "parent": "luigis_mansion:entity/haunted_clown_doll/variant_0",
+    "overrides": [
+        {
+            "predicate": {
+                "custom_model_data": 0
+            },
+            "model": "luigis_mansion:entity/haunted_clown_doll/variant_0"
+        },
+        {
+            "predicate": {
+                "custom_model_data": 1
+            },
+            "model": "luigis_mansion:entity/haunted_clown_doll/variant_1"
+        }
+    ]
+}

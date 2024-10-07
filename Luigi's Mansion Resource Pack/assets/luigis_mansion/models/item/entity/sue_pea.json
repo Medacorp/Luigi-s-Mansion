@@ -1,0 +1,37 @@
+{
+	"parent": "luigis_mansion:entity/sue_pea/head",
+    "overrides": [
+        {
+            "predicate": {
+                "damage": 0.2,
+                "custom_model_data": 0
+            },
+            "model": "luigis_mansion:entity/sue_pea/head"
+        },
+        {
+            "predicate": {
+                "damage": 0.2,
+                "custom_model_data": 1
+            },
+            "model": "luigis_mansion:entity/sue_pea/head_awake"
+        },
+        {
+            "predicate": {
+                "damage": 0.4
+            },
+            "model": "luigis_mansion:entity/sue_pea/right_arm"
+        },
+        {
+            "predicate": {
+                "damage": 0.6
+            },
+            "model": "luigis_mansion:entity/sue_pea/left_arm"
+        },
+        {
+            "predicate": {
+                "damage": 0.8
+            },
+            "model": "luigis_mansion:entity/sue_pea/body"
+        }
+    ]
+}

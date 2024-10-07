@@ -1,0 +1,59 @@
+{
+	"parent": "luigis_mansion:furniture/mansion_rank_portrait",
+    "overrides": [
+        {
+            "predicate": {
+                "custom_model_data": 0
+            },
+            "model": "luigis_mansion:furniture/mansion_rank_portrait"
+        },
+        {
+            "predicate": {
+                "custom_model_data": 1
+            },
+            "model": "luigis_mansion:furniture/mansion_rank_portrait/h"
+        },
+        {
+            "predicate": {
+                "custom_model_data": 2
+            },
+            "model": "luigis_mansion:furniture/mansion_rank_portrait/g"
+        },
+        {
+            "predicate": {
+                "custom_model_data": 3
+            },
+            "model": "luigis_mansion:furniture/mansion_rank_portrait/f"
+        },
+        {
+            "predicate": {
+                "custom_model_data": 4
+            },
+            "model": "luigis_mansion:furniture/mansion_rank_portrait/e"
+        },
+        {
+            "predicate": {
+                "custom_model_data": 5
+            },
+            "model": "luigis_mansion:furniture/mansion_rank_portrait/d"
+        },
+        {
+            "predicate": {
+                "custom_model_data": 6
+            },
+            "model": "luigis_mansion:furniture/mansion_rank_portrait/c"
+        },
+        {
+            "predicate": {
+                "custom_model_data": 7
+            },
+            "model": "luigis_mansion:furniture/mansion_rank_portrait/b"
+        },
+        {
+            "predicate": {
+                "custom_model_data": 8
+            },
+            "model": "luigis_mansion:furniture/mansion_rank_portrait/a"
+        }
+    ]
+}

@@ -1,0 +1,35 @@
+{
+    "parent": "e3_demo:furniture/door/heart",
+    "overrides": [
+        {
+            "predicate": {
+                "custom_model_data": 0
+            },
+            "model": "e3_demo:furniture/door/heart"
+        },
+        {
+            "predicate": {
+                "custom_model_data": 1
+            },
+            "model": "e3_demo:furniture/door/heart_fire"
+        },
+        {
+            "predicate": {
+                "custom_model_data": 2
+            },
+            "model": "e3_demo:furniture/door/heart_barricade"
+        },
+        {
+            "predicate": {
+                "custom_model_data": 3
+            },
+            "model": "e3_demo:furniture/door/heart_blockade"
+        },
+        {
+            "predicate": {
+                "custom_model_data": 4
+            },
+            "model": "e3_demo:furniture/door/heart_blockade_area"
+        }
+    ]
+}

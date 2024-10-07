@@ -1,0 +1,35 @@
+{
+	"parent": "luigis_mansion:entity/sir_weston/head",
+    "overrides": [
+        {
+            "predicate": {
+                "damage": 0.166
+            },
+            "model": "luigis_mansion:entity/sir_weston/head"
+        },
+        {
+            "predicate": {
+                "damage": 0.333
+            },
+            "model": "luigis_mansion:entity/sir_weston/right_arm"
+        },
+        {
+            "predicate": {
+                "damage": 0.5
+            },
+            "model": "luigis_mansion:entity/sir_weston/left_arm"
+        },
+        {
+            "predicate": {
+                "damage": 0.666
+            },
+            "model": "luigis_mansion:entity/sir_weston/body"
+        },
+        {
+            "predicate": {
+                "damage": 0.833
+            },
+            "model": "luigis_mansion:entity/ice/sir_weston"
+        }
+    ]
+}

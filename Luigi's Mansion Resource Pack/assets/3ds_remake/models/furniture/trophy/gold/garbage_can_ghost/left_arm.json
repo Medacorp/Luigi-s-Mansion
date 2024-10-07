@@ -1,0 +1,6 @@
+{
+	"parent": "luigis_mansion:entity/garbage_can_ghost/left_arm",
+	"textures": {
+		"0": "3ds_remake:furniture/trophy/gold/garbage_can_ghost"
+	}
+}

@@ -1,0 +1,29 @@
+{
+    "parent": "luigis_mansion:furniture/helicopter_mobile/clockwise",
+    "overrides": [
+        {
+            "predicate": {
+                "custom_model_data": 0
+            },
+            "model": "luigis_mansion:furniture/helicopter_mobile/clockwise"
+        },
+        {
+            "predicate": {
+                "custom_model_data": 1
+            },
+            "model": "luigis_mansion:furniture/helicopter_mobile/counterclockwise"
+        },
+        {
+            "predicate": {
+                "custom_model_data": 2
+            },
+            "model": "3ds_remake:furniture/helicopter_mobile/clockwise"
+        },
+        {
+            "predicate": {
+                "custom_model_data": 3
+            },
+            "model": "3ds_remake:furniture/helicopter_mobile/counterclockwise"
+        }
+    ]
+}

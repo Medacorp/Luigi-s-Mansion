@@ -1,0 +1,23 @@
+{
+	"parent": "luigis_mansion:furniture/deer_head",
+    "overrides": [
+        {
+            "predicate": {
+                "custom_model_data": 0
+            },
+            "model": "luigis_mansion:furniture/deer_head"
+        },
+        {
+            "predicate": {
+                "custom_model_data": 1
+            },
+            "model": "3ds_remake:furniture/deer_head/blue"
+        },
+        {
+            "predicate": {
+                "custom_model_data": 2
+            },
+            "model": "3ds_remake:furniture/deer_head/red"
+        }
+    ]
+}

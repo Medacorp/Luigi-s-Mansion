@@ -1,0 +1,45 @@
+{
+	"parent": "luigis_mansion:entity/neville/head",
+    "overrides": [
+        {
+            "predicate": {
+                "damage": 0.2
+            },
+            "model": "luigis_mansion:entity/neville/head"
+        },
+        {
+            "predicate": {
+                "damage": 0.4,
+                "custom_model_data": 0
+            },
+            "model": "luigis_mansion:entity/neville/right_arm"
+        },
+        {
+            "predicate": {
+                "damage": 0.4,
+                "custom_model_data": 1
+            },
+            "model": "luigis_mansion:entity/neville/right_arm_book"
+        },
+        {
+            "predicate": {
+                "damage": 0.6,
+                "custom_model_data": 0
+            },
+            "model": "luigis_mansion:entity/neville/left_arm"
+        },
+        {
+            "predicate": {
+                "damage": 0.6,
+                "custom_model_data": 1
+            },
+            "model": "luigis_mansion:entity/neville/left_arm_book"
+        },
+        {
+            "predicate": {
+                "damage": 0.8
+            },
+            "model": "luigis_mansion:entity/neville/body"
+        }
+    ]
+}

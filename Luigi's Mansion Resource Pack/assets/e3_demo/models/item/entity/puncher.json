@@ -1,0 +1,27 @@
+{
+	"parent": "luigis_mansion:item/entity/puncher",
+	"textures": {
+		"0": "e3_demo:entity/puncher",
+		"particle": "e3_demo:entity/puncher"
+	},
+    "overrides": [
+        {
+            "predicate": {
+                "damage": 0.25
+            },
+            "model": "e3_demo:entity/puncher/body"
+        },
+        {
+            "predicate": {
+                "damage": 0.5
+            },
+            "model": "e3_demo:entity/puncher/right_arm"
+        },
+        {
+            "predicate": {
+                "damage": 0.75
+            },
+            "model": "e3_demo:entity/puncher/left_arm"
+        }
+    ]
+}

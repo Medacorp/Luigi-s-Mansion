@@ -1,0 +1,57 @@
+{
+	"parent": "luigis_mansion:entity/mr_bones/head",
+    "overrides": [
+        {
+            "predicate": {
+                "damage": 0.142
+            },
+            "model": "luigis_mansion:entity/mr_bones/head"
+        },
+        {
+            "predicate": {
+                "damage": 0.285,
+                "custom_model_data": 0
+            },
+            "model": "luigis_mansion:entity/mr_bones/right_arm"
+        },
+        {
+            "predicate": {
+                "damage": 0.285,
+                "custom_model_data": 1
+            },
+            "model": "luigis_mansion:entity/mr_bones/right_arm_bone"
+        },
+        {
+            "predicate": {
+                "damage": 0.428,
+                "custom_model_data": 0
+            },
+            "model": "luigis_mansion:entity/mr_bones/left_arm"
+        },
+        {
+            "predicate": {
+                "damage": 0.428,
+                "custom_model_data": 1
+            },
+            "model": "luigis_mansion:entity/mr_bones/left_arm_bone"
+        },
+        {
+            "predicate": {
+                "damage": 0.571
+            },
+            "model": "luigis_mansion:entity/mr_bones/body"
+        },
+        {
+            "predicate": {
+                "damage": 0.714
+            },
+            "model": "luigis_mansion:entity/mr_bones/right_leg"
+        },
+        {
+            "predicate": {
+                "damage": 0.857
+            },
+            "model": "luigis_mansion:entity/mr_bones/left_leg"
+        }
+    ]
+}

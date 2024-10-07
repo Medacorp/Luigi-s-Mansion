@@ -1,0 +1,6 @@
+{
+    "parent": "luigis_mansion:entity/mario_item/star",
+    "overrides": [
+        
+    ]
+}

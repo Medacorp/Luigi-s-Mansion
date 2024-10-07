@@ -1,0 +1,17 @@
+{
+    "parent": "luigis_mansion:furniture/projector/off",
+    "overrides": [
+        {
+            "predicate": {
+                "custom_model_data": 0
+            },
+            "model": "luigis_mansion:furniture/projector/off"
+        },
+        {
+            "predicate": {
+                "custom_model_data": 1
+            },
+            "model": "luigis_mansion:furniture/projector/on"
+        }
+    ]
+}
