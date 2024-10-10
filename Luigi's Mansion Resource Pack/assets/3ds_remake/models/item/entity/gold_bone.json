@@ -1,6 +1,17 @@
 {
 	"parent": "3ds_remake:entity/gold_bone",
     "overrides": [
-        
+        {
+            "predicate": {
+                "custom_model_data": 0
+            },
+            "model": "3ds_remake:entity/gold_bone"
+        },
+        {
+            "predicate": {
+                "custom_model_data": 1
+            },
+            "model": "luigis_mansion:item/empty"
+        }
     ]
 }

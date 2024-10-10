@@ -4,9 +4,7 @@
             "count": 1,
             "id": "minecraft:leather_chestplate",
             "components": {
-                "minecraft:unbreakable": {},
-                "minecraft:damage": 1,
-                "minecraft:custom_model_data": 16,
+                "minecraft:item_model": "luigis_mansion:entity/flying_fish",
                 "minecraft:dyed_color": { "rgb": 1769242 }
             }
         },

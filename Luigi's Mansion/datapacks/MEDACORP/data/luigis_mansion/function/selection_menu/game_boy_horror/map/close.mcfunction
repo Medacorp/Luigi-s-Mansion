@@ -1,4 +1,4 @@
-attribute @s minecraft:generic.movement_speed base set 0.10000000149011612
+attribute @s minecraft:movement_speed base set 0.10000000149011612
 effect clear @s minecraft:speed
 summon minecraft:marker ~ ~ ~ {Tags:["me"]}
 tag @s add me

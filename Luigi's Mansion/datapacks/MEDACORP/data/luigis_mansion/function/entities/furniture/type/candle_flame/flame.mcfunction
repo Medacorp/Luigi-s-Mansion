@@ -8,14 +8,12 @@ tag @s remove extinguish
 tag @s[tag=!lit,tag=always_burn] add large_flame
 tag @s[tag=large_flame] add lit
 tag @s[tag=lit,tag=in_water] remove lit
-execute if entity @s[tag=!purple,tag=large_flame] run data modify entity @s ArmorItems[3].components."minecraft:custom_model_data" set value 92
-execute if entity @s[tag=purple,tag=large_flame] run data modify entity @s ArmorItems[3].components."minecraft:custom_model_data" set value 93
 
-execute if entity @s[tag=!purple,tag=!large_flame] unless entity @s[tag=was_lit,tag=!was_purple] run data modify entity @s ArmorItems[3].components."minecraft:custom_model_data" set value 5
-execute if entity @s[tag=purple,tag=!large_flame] unless entity @s[tag=was_lit,tag=was_purple] run data modify entity @s ArmorItems[3].components."minecraft:custom_model_data" set value 6
-
-execute if entity @s[tag=!lit] run data modify entity @s ArmorItems[3].id set value "minecraft:stone_button"
-execute if entity @s[tag=lit] run data modify entity @s ArmorItems[3].id set value "minecraft:diamond_pickaxe"
+execute if entity @s[tag=!lit,tag=was_lit] run data modify entity @s ArmorItems[3].components."minecraft:custom_model_data" set value 0
+execute if entity @s[tag=lit,tag=!purple,tag=!large_flame] unless entity @s[tag=was_lit,tag=!was_purple] run data modify entity @s ArmorItems[3].components."minecraft:custom_model_data" set value 1
+execute if entity @s[tag=lit,tag=purple,tag=!large_flame] unless entity @s[tag=was_lit,tag=was_purple] run data modify entity @s ArmorItems[3].components."minecraft:custom_model_data" set value 2
+execute if entity @s[tag=!purple,tag=large_flame] run data modify entity @s ArmorItems[3].components."minecraft:custom_model_data" set value 3
+execute if entity @s[tag=purple,tag=large_flame] run data modify entity @s ArmorItems[3].components."minecraft:custom_model_data" set value 4
 tag @s remove was_lit
 tag @s remove was_purple
 tag @s[tag=lit] add was_lit

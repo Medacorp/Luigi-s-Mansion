@@ -1,5 +1,5 @@
 execute if score #graveyard Wave matches 3 if entity @a[tag=!spectator,x=651.5,y=103,z=-31.5,distance=..4] run function luigis_mansion:room/hidden/graveyard/wave_4
-execute if score #graveyard Wave matches 3..4 run particle minecraft:dust{color:[0.5f,0.5f,1f],scale:1f} 649 105 -32 0.5 0.5 0.5 0 4
+execute if score #graveyard Wave matches 3..4 run particle minecraft:dust{color:8421631,scale:1f} 649 105 -32 0.5 0.5 0.5 0 4
 execute if score #graveyard Wave matches 2 unless entity @e[tag=ghost,scores={Room=29},tag=!optional_ghost] run function luigis_mansion:room/hidden/graveyard/wave_3
 execute if score #graveyard Wave matches 1 unless entity @e[tag=ghost,scores={Room=29},tag=!optional_ghost] run function luigis_mansion:room/hidden/graveyard/wave_2
 execute unless data storage luigis_mansion:data current_state.current_data.rooms.graveyard{cleared:1b} unless data storage luigis_mansion:data current_state.current_data.technical_data{bogmire_ready:1b} if data storage luigis_mansion:data current_state.current_data{blackout:0b} unless score #graveyard Wave matches 1..99 run function luigis_mansion:room/hidden/graveyard/wave_1

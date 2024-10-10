@@ -17,6 +17,13 @@
         },
         {
             "predicate": {
+                "damage": 0.11,
+                "custom_model_data": 2
+            },
+            "model": "luigis_mansion:item/empty"
+        },
+        {
+            "predicate": {
                 "damage": 0.22
             },
             "model": "luigis_mansion:entity/bowser/right_arm"

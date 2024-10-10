@@ -14,16 +14,16 @@ execute if entity @s[tag=!was_riding_poltergust] if data storage luigis_mansion:
 execute if entity @s[tag=was_riding_poltergust] if data storage luigis_mansion:data luigi{alive:1b} unless data storage luigis_mansion:data luigi{tags:["riding_poltergust"]} run function luigis_mansion:animations/luigi/reset_pose
 execute if entity @s[tag=!death_animation] if data storage luigis_mansion:data luigi{alive:0b} run function luigis_mansion:animations/luigi/reset_pose
 execute if entity @s[tag=death_animation] if data storage luigis_mansion:data luigi{alive:1b} run function luigis_mansion:animations/luigi/reset_pose
-execute unless data entity @s ArmorItems[3].count run data modify entity @s ArmorItems[3] set value {id:"minecraft:stone_button",count:1}
+execute unless data entity @s ArmorItems[3].count run data modify entity @s ArmorItems[3] set value {id:"minecraft:diamond_pickaxe",count:1,components:{"minecraft:item_model":"luigis_mansion:empty"}}
 execute if data storage luigis_mansion:data luigi{alive:1b} store success score #temp Time run data modify entity @s ArmorItems[3].components."minecraft:custom_data".animation set from storage luigis_mansion:data luigi.animation
 execute if score #temp Time matches 1 run function luigis_mansion:animations/luigi/reset_pose
 scoreboard players reset #temp Time
 data modify entity @s Tags append from storage luigis_mansion:data luigi.tags[]
 execute if data storage luigis_mansion:data luigi{alive:1b} run tag @s remove death_animation
 execute if data storage luigis_mansion:data luigi{alive:0b} run tag @s[tag=!revive_animation] add death_animation
-execute if data storage luigis_mansion:data luigi{shrunk:1b} run attribute @s minecraft:generic.scale base set 0.5
+execute if data storage luigis_mansion:data luigi{shrunk:1b} run attribute @s minecraft:scale base set 0.5
 execute if data storage luigis_mansion:data luigi{shrunk:1b} run tag @s add shrunk
-execute if data storage luigis_mansion:data luigi{shrunk:0b} run attribute @s minecraft:generic.scale base set 1
+execute if data storage luigis_mansion:data luigi{shrunk:0b} run attribute @s minecraft:scale base set 1
 tag @s[tag=riding_poltergust] remove sneak_pos
 tag @s[tag=riding_poltergust] remove low_health
 execute unless data storage luigis_mansion:data luigi.animation{namespace:"luigis_mansion",id:"idle"} run tag @s remove sneak_pos

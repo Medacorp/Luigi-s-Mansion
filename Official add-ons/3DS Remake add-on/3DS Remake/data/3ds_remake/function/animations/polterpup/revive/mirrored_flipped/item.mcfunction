@@ -15,7 +15,7 @@ execute at @s[scores={AnimationProgress=181..205}] run teleport @s ^-0.025 ^-0.1
 execute at @s[scores={AnimationProgress=206..230}] run teleport @s ^-0.025 ^0.15 ^ ~ ~
 data modify entity @s[scores={AnimationProgress=180..230}] ArmorItems[3].components."minecraft:custom_data".old_position.Pos set from entity @s Pos
 data modify entity @s[scores={AnimationProgress=180..230}] ArmorItems[3].components."minecraft:custom_data".old_position.Rotation set from entity @s Rotation
-data modify entity @s[scores={AnimationProgress=145}] ArmorItems[3].id set from entity @s ArmorItems[3].components."minecraft:custom_data".visible
-data modify entity @s[scores={AnimationProgress=225}] ArmorItems[3].id set from entity @s ArmorItems[3].components."minecraft:custom_data".invisible
+data modify entity @s[scores={AnimationProgress=145}] ArmorItems[3] merge from entity @s ArmorItems[3].components."minecraft:custom_data".model_data.visible
+data modify entity @s[scores={AnimationProgress=225}] ArmorItems[3] merge from entity @s ArmorItems[3].components."minecraft:custom_data".model_data.default
 scoreboard players reset #temp Time
 scoreboard players set @s[scores={AnimationProgress=340..}] AnimationProgress 0

@@ -1,5 +1,5 @@
 scoreboard players add @s AnimationProgress 1
-execute at @s[scores={AnimationProgress=1}] anchored eyes run summon minecraft:armor_stand ^ ^ ^ {CustomName:'{"type":"translatable","translate":"luigis_mansion:entity.luigi"}',Tags:["luigi_ice","knockback_model"],Invisible:1b,Marker:1b,Pose:{Head:[0.0f,0.0f,0.01f]},ArmorItems:[{},{},{},{id:"minecraft:diamond_pickaxe",count:1,components:{"minecraft:unbreakable":{},"minecraft:damage":4,"minecraft:custom_model_data":38}}]}
+execute at @s[scores={AnimationProgress=1}] anchored eyes run summon minecraft:armor_stand ^ ^ ^ {CustomName:'{"type":"translatable","translate":"luigis_mansion:entity.luigi"}',Tags:["luigi_ice","knockback_model"],Invisible:1b,Marker:1b,Pose:{Head:[0.0f,0.0f,0.01f]},ArmorItems:[{},{},{},{id:"minecraft:diamond_pickaxe",count:1,components:{"minecraft:item_model":"luigis_mansion:entity/ice"}}]}
 execute at @s[scores={AnimationProgress=1}] anchored eyes positioned ^ ^ ^ run scoreboard players operation @e[tag=knockback_model,limit=1,distance=..0.1] ID = @s ID
 execute at @s[scores={AnimationProgress=1,Sound=0,Shrunk=0}] run playsound luigis_mansion:entity.player.hurt_freeze player @a[tag=same_room] ~ ~ ~ 1
 execute at @s[scores={AnimationProgress=1,Sound=0,Shrunk=1..}] run playsound luigis_mansion:entity.player.hurt_freeze player @a[tag=same_room] ~ ~ ~ 1 2
@@ -20,7 +20,7 @@ execute at @e[tag=home,limit=1] run teleport @s[distance=0.01..] ~ ~ ~ ~ ~
 scoreboard players reset #temp RotationY
 scoreboard players reset #temp RotationX
 execute at @s[scores={AnimationProgress=70..}] anchored eyes positioned ^ ^ ^ run tag @e[tag=luigi_ice,distance=..0.2,limit=1] add remove_from_existence
-execute at @s[scores={AnimationProgress=70..72}] anchored eyes run particle minecraft:item{item:{id:"minecraft:diamond_pickaxe",components:{"minecraft:unbreakable":{},"minecraft:damage":4,"minecraft:custom_model_data":38}}} ^ ^ ^ 0.3 0.3 0.3 0 50 force @a[tag=same_room]
+execute at @s[scores={AnimationProgress=70..72}] anchored eyes run particle minecraft:item{item:{id:"minecraft:diamond_pickaxe",components:{"minecraft:item_model":"luigis_mansion:entity/ice"}}} ^ ^ ^ 0.3 0.3 0.3 0 50 force @a[tag=same_room]
 scoreboard players set @s[scores={AnimationProgress=..70,Invulnerable=6..}] Invulnerable 5
 execute at @s[scores={AnimationProgress=..70,Invulnerable=0}] run data modify storage luigis_mansion:data damage set value {amount:1}
 execute if entity @s[scores={AnimationProgress=..70,Invulnerable=0}] if data storage luigis_mansion:data my_memory.hurt_by.attacker[0] run data modify storage luigis_mansion:data damage.attacker set from storage luigis_mansion:data my_memory.hurt_by.attacker[0].id

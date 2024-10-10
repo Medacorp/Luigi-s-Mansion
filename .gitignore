@@ -10,6 +10,7 @@
 /Luigi's Mansion/data/chunks.dat
 /Luigi's Mansion/data/command_storage_*
 /Luigi's Mansion/data/raids.dat
+/Luigi's Mansion/data/random_sequences.dat
 /Luigi's Mansion/data/scoreboard.dat
 /Luigi's Mansion/datapacks/*
 !/Luigi's Mansion/datapacks/MEDACORP/
@@ -29,6 +30,7 @@
 /Official add-ons/*/Dimension/*/*/poi/
 /allowed_symlinks.txt
 /eula.txt
+/crash-reports/
 /libraries/
 /logs/
 /versions/

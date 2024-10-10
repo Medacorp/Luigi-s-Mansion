@@ -4,9 +4,7 @@
             "count": 1,
             "id": "minecraft:diamond_pickaxe",
             "components": {
-                "minecraft:unbreakable": {},
-                "minecraft:damage": 5,
-                "minecraft:custom_model_data": 37
+                "minecraft:item_model": "3ds_remake:entity/super_mushroom"
             }
         },
         "title": {

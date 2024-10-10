@@ -12,10 +12,7 @@
 		"water_fog_color": 329011,
 		"grass_color_modifier": "dark_forest"
 	},
-	"carvers": {
-		"air": [],
-		"liquid": []
-	},
+	"carvers": [],
 	"features": [
 		[],
 		[],

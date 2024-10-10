@@ -11,6 +11,6 @@ execute if entity @s[scores={AnimationProgress=8}] if score #mirrored Selected m
 execute if entity @s[scores={AnimationProgress=9}] if score #mirrored Selected matches 1 store result entity @s Pose.Head[0] float 1 run scoreboard players set #temp Time 25
 execute if entity @s[scores={AnimationProgress=10}] if score #mirrored Selected matches 1 store result entity @s Pose.Head[0] float 1 run scoreboard players set #temp Time 0
 execute if entity @s[tag=held_item,tag=poltergust_grabbed] unless data entity @s ArmorItems[3].components."minecraft:custom_data".is_nozzle if score #mirrored Selected matches 1 run data modify entity @s ArmorItems[3] set from storage luigis_mansion:data luigi.poltergust
-execute if entity @s[tag=held_item,tag=!poltergust_grabbed] if data entity @s ArmorItems[3].components."minecraft:custom_data".is_nozzle if score #mirrored Selected matches 1 run data modify entity @s ArmorItems[3] set value {id:"minecraft:stone_button",count:1}
+execute if entity @s[tag=held_item,tag=!poltergust_grabbed] if data entity @s ArmorItems[3].components."minecraft:custom_data".is_nozzle if score #mirrored Selected matches 1 run data modify entity @s ArmorItems[3] set value {id:"minecraft:diamond_pickaxe",count:1,components:{"minecraft:item_model":"luigis_mansion:empty"}}
 scoreboard players reset #temp Time
 scoreboard players add @s[scores={AnimationProgress=10}] AnimationProgress 0

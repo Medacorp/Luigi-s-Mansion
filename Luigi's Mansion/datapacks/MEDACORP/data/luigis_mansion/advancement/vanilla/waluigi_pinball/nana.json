@@ -4,9 +4,7 @@
             "count": 1,
             "id": "minecraft:diamond_pickaxe",
             "components": {
-                "minecraft:unbreakable": {},
-                "minecraft:damage": 1,
-                "minecraft:custom_model_data": 35
+                "minecraft:item_model": "luigis_mansion:entity/nana"
             }
         },
         "show_toast": false,

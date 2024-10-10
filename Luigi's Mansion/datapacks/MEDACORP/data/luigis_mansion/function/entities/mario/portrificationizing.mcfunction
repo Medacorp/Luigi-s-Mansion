@@ -76,7 +76,7 @@ execute if entity @s[scores={Dialog=120}] run setblock 770 81 -7 minecraft:green
 execute if entity @s[scores={Dialog=120}] run setblock 770 79 -7 minecraft:air
 execute if entity @s[scores={Dialog=110}] run playsound luigis_mansion:entity.mario.owch neutral @a[tag=same_room] ~ ~ ~ 1
 execute if entity @s[scores={Dialog=110}] run data merge entity @s {Pose:{Head:[0.0f,0.0f,0.0f]}}
-data modify entity @s[scores={Dialog=110}] ArmorItems[3] merge value {id:"minecraft:diamond_pickaxe",components:{"minecraft:unbreakable":{},"minecraft:damage":9,"minecraft:custom_model_data":80}}
+data modify entity @s[scores={Dialog=110}] ArmorItems[3] merge value {id:"minecraft:diamond_pickaxe",components:{"minecraft:item_model":"luigis_mansion:entity/portrificationizing_mario","minecraft:unbreakable":{},"minecraft:custom_model_data":80}}
 execute if entity @s[scores={Dialog=120}] run teleport @s 770 78 -6 -180 0
 execute if entity @s[scores={Dialog=125}] run teleport @s 770 78 -5
 execute if entity @s[scores={Dialog=130}] run teleport @s 770 78 -4

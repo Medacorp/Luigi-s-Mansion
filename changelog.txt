@@ -1,8 +1,9 @@
 v3.1:
+* Updated to 1.21.2
 * Added the Boo cackle counter, where 10+ cackles results in it not staying in place for a moment
 * Added ghost flee tasks
 * Added some missing furniture scan message
-* Added unique message for fainted players
+* Added unique scan message for scanning fainted players
 * Changed players to look at vacuum-latched-on ghosts in order of latching, rather than look at the averaged out position; the new behavior matches the original game
 * Changed ghosts pulling to have separate valid angles per ghost, matching the original game; lenient pull accuracy gives 40 extra degrees, strict pull accuracy halves the degrees
 * Changed criteria for getting dragged to be closer to the original game; you now only get dragged if you get pulled; a vacuum error is made for each ghost that started pulling you that hasn't pulled you last tick, a vacuum error will not occur if you pulled the ghost in the last 5 ticks
@@ -14,6 +15,8 @@ v3.1:
 * Changed scanning to prioritize the smallest hitbox rather than arbitrary order (if there's multiple with the smallest size in the hit, a random one is selected)
 * Changed 3DS Remake's "portrait ghosts defeated in" and "Boos caught" data to be part of the vanilla map, rather than the add-on, meaning installing the add-on at a later point will no longer miss that data
 * Changed items dropped when taking damage to have upward motion
+* Changed "It's <name>" telephone call option icon to be colored based on your actual model color
+* Changed all instances of items to use the new item_model component; damage and custom model data have been redefined as "model piece number" and "model variant"
 * Fixed loot chances to be true to the game
 * Fixed speedy spirits don't get base loot dropped at 0 if a money ID was provided for loot dropped at 0
 * Fixed hard difficulty stunning incorrectly calculates stun time; it now simply caps the stun time

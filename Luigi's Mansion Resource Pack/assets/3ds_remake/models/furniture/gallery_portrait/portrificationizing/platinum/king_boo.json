@@ -1,5 +1,5 @@
 {
-	"parent": "3ds_remake:entity/portrificationizing_portrait/platinum",
+	"parent": "3ds_remake:entity/gallery_portrait/portrificationizing/platinum",
 	"textures": {
 		"image": "3ds_remake:furniture/gallery_portrait/platinum/king_boo"
 	}

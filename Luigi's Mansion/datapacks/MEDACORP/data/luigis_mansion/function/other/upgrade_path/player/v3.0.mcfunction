@@ -3,8 +3,8 @@ execute unless entity @s[scores={Room=0}] in minecraft:overworld run teleport @s
 scoreboard players set @s Room 0
 scoreboard players set @s LastRoom 0
 tag @s[gamemode=spectator] add dead_player
-attribute @s minecraft:generic.jump_strength base set 0
-attribute @s[scores={Shrunk=1..}] minecraft:generic.scale base set 0.5
+attribute @s minecraft:jump_strength base set 0
+attribute @s[scores={Shrunk=1..}] minecraft:scale base set 0.5
 
 execute if data entity @s Inventory[{components:{"minecraft:custom_data":{luigis_mansion:{id:"luigis_mansion:contest_reward_map"}}}}] store result score #temp Time run data get entity @s Inventory[{components:{"minecraft:custom_data":{luigis_mansion:{id:"luigis_mansion:contest_reward_map"}}}}].Slot
 execute if data entity @s Inventory[{components:{"minecraft:custom_data":{luigis_mansion:{id:"luigis_mansion:interact"}}}}] store result score #temp2 Time run data get entity @s Inventory[{components:{"minecraft:custom_data":{luigis_mansion:{id:"luigis_mansion:interact"}}}}].Slot

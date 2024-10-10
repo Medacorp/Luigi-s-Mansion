@@ -4,8 +4,8 @@ scoreboard players add #temp MirrorX 50
 execute store result score #temp ActionTime run data get entity @s Pos[0] 100
 scoreboard players operation #temp ActionTime -= #temp MirrorX
 execute store result entity @e[type=minecraft:marker,tag=temp,limit=1] Pos[0] double 0.01 run scoreboard players operation #temp MirrorX -= #temp ActionTime
-execute if entity @s[scores={Walk=1..},tag=!looking_at_map] at @e[type=minecraft:marker,tag=temp,limit=1] run particle minecraft:dust{color:[0.5f,0.5f,0.5f],scale:1.2f} ~ ~0.2 ~ 0 0 0 0 1
-execute if entity @s[scores={Run=1..},tag=!looking_at_map] at @e[type=minecraft:marker,tag=temp,limit=1] run particle minecraft:dust{color:[0.5f,0.5f,0.5f],scale:2f} ~ ~0.2 ~ 0 0 0 0 1
-execute if entity @s[scores={Sneak=1..},tag=!looking_at_map] at @e[type=minecraft:marker,tag=temp,limit=1] run particle minecraft:dust{color:[0.5f,0.5f,0.5f],scale:0.7f} ~ ~0.2 ~ 0 0 0 0 1
+execute if entity @s[scores={Walk=1..},tag=!looking_at_map] at @e[type=minecraft:marker,tag=temp,limit=1] run particle minecraft:dust{color:8715008,scale:1.2f} ~ ~0.2 ~ 0 0 0 0 1
+execute if entity @s[scores={Run=1..},tag=!looking_at_map] at @e[type=minecraft:marker,tag=temp,limit=1] run particle minecraft:dust{color:8715008,scale:2f} ~ ~0.2 ~ 0 0 0 0 1
+execute if entity @s[scores={Sneak=1..},tag=!looking_at_map] at @e[type=minecraft:marker,tag=temp,limit=1] run particle minecraft:dust{color:8715008,scale:0.7f} ~ ~0.2 ~ 0 0 0 0 1
 kill @e[type=minecraft:marker,tag=temp,limit=1]
 scoreboard players reset #temp ActionTime

@@ -491,14 +491,14 @@
                 "damage": 0.5,
                 "custom_model_data": 1
             },
-            "model": "luigis_mansion:entity/garbage_can_ghost/right_arm/banana"
+            "model": "luigis_mansion:entity/garbage_can_ghost/right_arm/banana_peel"
         },
         {
             "predicate": {
                 "damage": 0.5,
                 "custom_model_data": 2
             },
-            "model": "luigis_mansion:entity/garbage_can_ghost/right_arm/banana_peel"
+            "model": "luigis_mansion:entity/garbage_can_ghost/right_arm/banana"
         },
         {
             "predicate": {
@@ -519,14 +519,14 @@
                 "damage": 0.75,
                 "custom_model_data": 1
             },
-            "model": "luigis_mansion:entity/garbage_can_ghost/left_arm/banana"
+            "model": "luigis_mansion:entity/garbage_can_ghost/left_arm/banana_peel"
         },
         {
             "predicate": {
                 "damage": 0.75,
                 "custom_model_data": 2
             },
-            "model": "luigis_mansion:entity/garbage_can_ghost/left_arm/banana_peel"
+            "model": "luigis_mansion:entity/garbage_can_ghost/left_arm/banana"
         },
         {
             "predicate": {

@@ -27,21 +27,35 @@
                 "damage": 0.142,
                 "custom_model_data": 3
             },
-            "model": "luigis_mansion:entity/luigi/head_2"
+            "model": "luigis_mansion:item/empty"
         },
         {
             "predicate": {
                 "damage": 0.142,
                 "custom_model_data": 4
             },
-            "model": "luigis_mansion:entity/luigi/head_dark_room_2"
+            "model": "luigis_mansion:entity/luigi/head_2"
         },
         {
             "predicate": {
                 "damage": 0.142,
                 "custom_model_data": 5
             },
+            "model": "luigis_mansion:entity/luigi/head_dark_room_2"
+        },
+        {
+            "predicate": {
+                "damage": 0.142,
+                "custom_model_data": 6
+            },
             "model": "luigis_mansion:entity/luigi/head_dead_2"
+        },
+        {
+            "predicate": {
+                "damage": 0.142,
+                "custom_model_data": 7
+            },
+            "model": "luigis_mansion:item/empty"
         },
         {
             "predicate": {
@@ -55,7 +69,21 @@
                 "damage": 0.285,
                 "custom_model_data": 1
             },
+            "model": "luigis_mansion:item/empty"
+        },
+        {
+            "predicate": {
+                "damage": 0.285,
+                "custom_model_data": 2
+            },
             "model": "luigis_mansion:entity/luigi/right_arm_2"
+        },
+        {
+            "predicate": {
+                "damage": 0.285,
+                "custom_model_data": 3
+            },
+            "model": "luigis_mansion:item/empty"
         },
         {
             "predicate": {
@@ -69,7 +97,21 @@
                 "damage": 0.428,
                 "custom_model_data": 1
             },
+            "model": "luigis_mansion:item/empty"
+        },
+        {
+            "predicate": {
+                "damage": 0.428,
+                "custom_model_data": 2
+            },
             "model": "luigis_mansion:entity/luigi/left_arm_2"
+        },
+        {
+            "predicate": {
+                "damage": 0.428,
+                "custom_model_data": 3
+            },
+            "model": "luigis_mansion:item/empty"
         },
         {
             "predicate": {
@@ -83,14 +125,14 @@
                 "damage": 0.571,
                 "custom_model_data": 1
             },
-            "model": "luigis_mansion:entity/luigi/squished"
+            "model": "luigis_mansion:entity/luigi/squished_right"
         },
         {
             "predicate": {
                 "damage": 0.571,
                 "custom_model_data": 2
             },
-            "model": "luigis_mansion:entity/luigi/squished_mirrored"
+            "model": "luigis_mansion:entity/luigi/squished_left"
         },
         {
             "predicate": {
@@ -104,14 +146,14 @@
                 "damage": 0.571,
                 "custom_model_data": 4
             },
-            "model": "luigis_mansion:entity/luigi/squished_2"
+            "model": "luigis_mansion:entity/luigi/squished_right_2"
         },
         {
             "predicate": {
                 "damage": 0.571,
                 "custom_model_data": 5
             },
-            "model": "luigis_mansion:entity/luigi/squished_mirrored_2"
+            "model": "luigis_mansion:entity/luigi/squished_left_2"
         },
         {
             "predicate": {
@@ -125,7 +167,21 @@
                 "damage": 0.714,
                 "custom_model_data": 1
             },
+            "model": "luigis_mansion:item/empty"
+        },
+        {
+            "predicate": {
+                "damage": 0.714,
+                "custom_model_data": 2
+            },
             "model": "luigis_mansion:entity/luigi/right_leg_2"
+        },
+        {
+            "predicate": {
+                "damage": 0.714,
+                "custom_model_data": 3
+            },
+            "model": "luigis_mansion:item/empty"
         },
         {
             "predicate": {
@@ -139,7 +195,21 @@
                 "damage": 0.857,
                 "custom_model_data": 1
             },
+            "model": "luigis_mansion:item/empty"
+        },
+        {
+            "predicate": {
+                "damage": 0.857,
+                "custom_model_data": 2
+            },
             "model": "luigis_mansion:entity/luigi/left_leg_2"
+        },
+        {
+            "predicate": {
+                "damage": 0.857,
+                "custom_model_data": 3
+            },
+            "model": "luigis_mansion:item/empty"
         }
     ]
 }

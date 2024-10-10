@@ -1,1 +1,1 @@
-data modify entity @s ArmorItems[3] set value {id:"minecraft:diamond_pickaxe",count:1,components:{"minecraft:unbreakable":{},"minecraft:damage":11,"minecraft:custom_model_data":11,"minecraft:custom_data":{model_data:{normal:{components:{"minecraft:damage":11}},burning:{components:{"minecraft:damage":12}},barricade:{components:{"minecraft:damage":13}},blockade:{components:{"minecraft:damage":14}},area_blockade:{components:{"minecraft:damage":14}}}}}}
+data modify entity @s ArmorItems[3].components."minecraft:item_model" set value "luigis_mansion:furniture/door/mansion/4"

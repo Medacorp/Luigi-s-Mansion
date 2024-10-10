@@ -40,5 +40,5 @@ execute if entity @s[scores={AnimationProgress=38}] positioned ^0.23 ^ ^ rotated
 execute if entity @s[scores={AnimationProgress=39}] positioned ^0.23 ^ ^ rotated ~-324 ~ run teleport @s ^-0.23 ^1.95 ^ ~ ~
 teleport @s[scores={AnimationProgress=40..}] ^ ^2 ^
 data merge entity @s[scores={AnimationProgress=1}] {Pose:{Head:[0.0f,0.0f,0.0f]}}
-data modify entity @s ArmorItems[3].id set from entity @s ArmorItems[3].components."minecraft:custom_data".invisible
+data modify entity @s ArmorItems[3] merge from entity @s ArmorItems[3].components."minecraft:custom_data".model_data.no_legs
 scoreboard players set @s[scores={AnimationProgress=120}] AnimationProgress 0

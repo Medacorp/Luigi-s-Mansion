@@ -1,2 +1,2 @@
-data modify entity @s[tag=!left_hinge] ArmorItems[3] merge value {id:"minecraft:diamond_pickaxe",count:1,components:{"minecraft:unbreakable":{},"minecraft:damage":17,"minecraft:custom_model_data":0,"minecraft:custom_data":{mirror:{components:{"minecraft:damage":18}}}}}
-data modify entity @s[tag=left_hinge] ArmorItems[3] merge value {id:"minecraft:diamond_pickaxe",count:1,components:{"minecraft:unbreakable":{},"minecraft:damage":18,"minecraft:custom_model_data":0,"minecraft:custom_data":{mirror:{components:{"minecraft:damage":17}}}}}
+data modify entity @s[tag=!left_hinge] ArmorItems[3] merge value {components:{"minecraft:item_model":"luigis_mansion:furniture/door_frame/double/basic","minecraft:custom_model_data":0}}
+data modify entity @s[tag=left_hinge] ArmorItems[3] merge value {components:{"minecraft:item_model":"luigis_mansion:furniture/door_frame/double/basic","minecraft:custom_model_data":1}}

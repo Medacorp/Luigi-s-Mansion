@@ -15,8 +15,16 @@ data modify storage luigis_mansion:data reflections[-1].no_sync.tags set from en
 data modify storage luigis_mansion:data reflections[-1].data.Pose set from entity @s Pose
 execute store result storage luigis_mansion:data reflections[-1].data.Pose.Head[1] float 0.01 run data get storage luigis_mansion:data reflections[-1].data.Pose.Head[1] -100
 execute store result storage luigis_mansion:data reflections[-1].data.Pose.Head[2] float 0.01 run data get storage luigis_mansion:data reflections[-1].data.Pose.Head[2] -100
+execute store result storage luigis_mansion:data reflections[-1].data.Pose.RightArm[1] float 0.01 run data get storage luigis_mansion:data reflections[-1].data.Pose.RightArm[1] -100
+execute store result storage luigis_mansion:data reflections[-1].data.Pose.RightArm[2] float 0.01 run data get storage luigis_mansion:data reflections[-1].data.Pose.RightArm[2] -100
+execute store result storage luigis_mansion:data reflections[-1].data.Pose.LeftArm[1] float 0.01 run data get storage luigis_mansion:data reflections[-1].data.Pose.LeftArm[1] -100
+execute store result storage luigis_mansion:data reflections[-1].data.Pose.LeftArm[2] float 0.01 run data get storage luigis_mansion:data reflections[-1].data.Pose.LeftArm[2] -100
 data modify storage luigis_mansion:data reflections[-1].data.ArmorItems set from entity @s ArmorItems
 data modify storage luigis_mansion:data reflections[-1].data.ArmorItems[3] merge from storage luigis_mansion:data reflections[-1].data.ArmorItems[3].components."minecraft:custom_data".mirror
+data modify storage luigis_mansion:data reflections[-1].data.HandItems[0] set from entity @s HandItems[1]
+data modify storage luigis_mansion:data reflections[-1].data.HandItems[1] set from entity @s HandItems[0]
+data modify storage luigis_mansion:data reflections[-1].data.HandItems[0] merge from storage luigis_mansion:data reflections[-1].data.HandItems[0].components."minecraft:custom_data".mirror
+data modify storage luigis_mansion:data reflections[-1].data.HandItems[1] merge from storage luigis_mansion:data reflections[-1].data.HandItems[1].components."minecraft:custom_data".mirror
 data modify storage luigis_mansion:data reflections[-1].data.attributes set from entity @s attributes
 #todelete - old painting furniture
 data modify storage luigis_mansion:data reflections[-1].data.Item set from entity @s Item

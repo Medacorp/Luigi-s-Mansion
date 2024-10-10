@@ -1,5 +1,5 @@
 {
-	"parent": "luigis_mansion:entity/portrificationizing_portrait/silver",
+	"parent": "luigis_mansion:entity/gallery_portrait/portrificationizing/silver",
 	"textures": {
 		"image": "luigis_mansion:furniture/gallery_portrait/silver/king_boo"
 	}

@@ -126,6 +126,13 @@
         },
         {
             "predicate": {
+                "damage": 0.25,
+                "custom_model_data": 17
+            },
+            "model": "luigis_mansion:item/empty"
+        },
+        {
+            "predicate": {
                 "damage": 0.5,
                 "custom_model_data": 0
             },
@@ -238,6 +245,20 @@
         },
         {
             "predicate": {
+                "damage": 0.5,
+                "custom_model_data": 16
+            },
+            "model": "luigis_mansion:item/empty"
+        },
+        {
+            "predicate": {
+                "damage": 0.5,
+                "custom_model_data": 17
+            },
+            "model": "luigis_mansion:item/empty"
+        },
+        {
+            "predicate": {
                 "damage": 0.75,
                 "custom_model_data": 0
             },
@@ -347,6 +368,20 @@
                 "custom_model_data": 15
             },
             "model": "3ds_remake:entity/boolossus/15/left_arm"
+        },
+        {
+            "predicate": {
+                "damage": 0.75,
+                "custom_model_data": 16
+            },
+            "model": "luigis_mansion:item/empty"
+        },
+        {
+            "predicate": {
+                "damage": 0.75,
+                "custom_model_data": 17
+            },
+            "model": "luigis_mansion:item/empty"
         }
     ]
 }

@@ -4,7 +4,7 @@ execute if score #gbh_clock Selected matches ..-1 run scoreboard players add #gb
 scoreboard players operation #temp ActionTime = #gbh_clock Selected
 scoreboard players operation #temp ActionTime /= #20 Constants
 scoreboard players operation #temp ActionTime /= #60 Constants
-scoreboard players add #temp ActionTime 3
+scoreboard players add #temp ActionTime 9
 execute if score #gbh_clock Selected matches 0..1728000 unless score #temp Time = #temp ActionTime run function luigis_mansion:items/game_boy_horror/sync_clock
 scoreboard players reset #temp Time
 scoreboard players reset #temp ActionTime

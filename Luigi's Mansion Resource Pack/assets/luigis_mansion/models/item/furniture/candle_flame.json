@@ -5,23 +5,29 @@
             "predicate": {
                 "custom_model_data": 0
             },
-            "model": "luigis_mansion:furniture/candle_flame/red"
+            "model": "luigis_mansion:item/empty"
         },
         {
             "predicate": {
                 "custom_model_data": 1
             },
-            "model": "luigis_mansion:furniture/candle_flame/purple"
+            "model": "luigis_mansion:furniture/candle_flame/red"
         },
         {
             "predicate": {
                 "custom_model_data": 2
             },
-            "model": "luigis_mansion:furniture/candle_flame/red_fueled"
+            "model": "luigis_mansion:furniture/candle_flame/purple"
         },
         {
             "predicate": {
                 "custom_model_data": 3
+            },
+            "model": "luigis_mansion:furniture/candle_flame/red_fueled"
+        },
+        {
+            "predicate": {
+                "custom_model_data": 4
             },
             "model": "luigis_mansion:furniture/candle_flame/purple_fueled"
         }

@@ -4,14 +4,14 @@ execute if data storage luigis_mansion:data ghost.mirror.z store result score @s
 #todelete - old mirror reflections
 execute if data storage luigis_mansion:data ghost.mirror{mirror_set_by_furniture_entity:1b} run tag @s add mirror_set_by_furniture_entity
 #/todelete
-execute unless data entity @s ArmorItems[3].count run data modify entity @s ArmorItems[3] set value {id:"minecraft:stone_button",count:1}
+execute unless data entity @s ArmorItems[3].count run data modify entity @s ArmorItems[3] set value {id:"minecraft:diamond_pickaxe",count:1,components:{"minecraft:item_model":"luigis_mansion:empty"}}
 execute store success score #temp Time run data modify entity @s ArmorItems[3].components."minecraft:custom_data".animation set from storage luigis_mansion:data ghost.animation
 execute if score #temp Time matches 1 run function luigis_mansion:animations/ghost/reset_pose
 scoreboard players reset #temp Time
-execute if entity @s[tag=visible] unless data storage luigis_mansion:data ghost{tags:["visible"]} run data modify entity @s ArmorItems[3].id set from entity @s ArmorItems[3].components."minecraft:custom_data".invisible
+execute if entity @s[tag=visible] unless data storage luigis_mansion:data ghost{tags:["visible"]} if data entity @s ArmorItems[3].components."minecraft:custom_data".visible run data modify entity @s ArmorItems[3].components."minecraft:item_model" set value "luigis_mansion:empty"
 execute if entity @s[tag=visible] unless data storage luigis_mansion:data ghost{tags:["visible"]} run data modify entity @s ArmorItems[3] merge from entity @s ArmorItems[3].components."minecraft:custom_data".model_data.default
 execute if entity @s[tag=visible] unless data storage luigis_mansion:data ghost{tags:["visible"]} if data storage luigis_mansion:data ghost{tags:["big"]} run data modify entity @s ArmorItems[3] merge from entity @s ArmorItems[3].components."minecraft:custom_data".model_data.big
-execute if entity @s[tag=!visible] if data storage luigis_mansion:data ghost{tags:["visible"]} run data modify entity @s ArmorItems[3].id set from entity @s ArmorItems[3].components."minecraft:custom_data".visible
+execute if entity @s[tag=!visible] if data storage luigis_mansion:data ghost{tags:["visible"]} if data entity @s ArmorItems[3].components."minecraft:custom_data".visible run data modify entity @s ArmorItems[3].components."minecraft:item_model" set from entity @s ArmorItems[3].components."minecraft:custom_data".visible
 execute if entity @s[tag=!visible] if data storage luigis_mansion:data ghost{tags:["visible"]} run data modify entity @s ArmorItems[3] merge from entity @s ArmorItems[3].components."minecraft:custom_data".model_data.default
 execute if entity @s[tag=!visible] if data storage luigis_mansion:data ghost{tags:["visible"]} if data storage luigis_mansion:data ghost{tags:["big"]} run data modify entity @s ArmorItems[3] merge from entity @s ArmorItems[3].components."minecraft:custom_data".model_data.big
 tag @s remove no_reflection

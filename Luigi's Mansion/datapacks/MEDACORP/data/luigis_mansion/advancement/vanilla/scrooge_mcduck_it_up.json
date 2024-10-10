@@ -4,9 +4,7 @@
             "count": 1,
             "id": "minecraft:diamond_pickaxe",
             "components": {
-                "minecraft:unbreakable": {},
-                "minecraft:damage": 22,
-                "minecraft:custom_model_data": 16
+                "minecraft:item_model": "luigis_mansion:menu/game_boy_horror/show_inventory/gold_diamond"
             }
         },
         "title": {

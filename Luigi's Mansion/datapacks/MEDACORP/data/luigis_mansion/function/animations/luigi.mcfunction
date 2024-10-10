@@ -1,6 +1,6 @@
 tag @s add this_luigi
 function luigis_mansion:entities/player/memory/get with entity @s
-data modify storage luigis_mansion:data luigi set value {tags:[],room:0,mirror:{},alive:0b,gliding:0b,swimming:0b,invulnerable:0b,shrunk:0b,animation:{namespace:"luigis_mansion",id:"idle"},reset_rotation:0b,mainhand:{id:"minecraft:stone_button",count:1},offhand:{id:"minecraft:stone_button",count:1},poltergust:{id:"minecraft:stone_button",count:1}}
+data modify storage luigis_mansion:data luigi set value {tags:[],room:0,mirror:{},alive:0b,gliding:0b,swimming:0b,invulnerable:0b,shrunk:0b,animation:{namespace:"luigis_mansion",id:"idle"},reset_rotation:0b,mainhand:{id:"minecraft:diamond_pickaxe",count:1,components:{"minecraft:item_model":"luigis_mansion:empty"}},offhand:{id:"minecraft:diamond_pickaxe",count:1,components:{"minecraft:item_model":"luigis_mansion:empty"}},poltergust:{id:"minecraft:diamond_pickaxe",count:1,components:{"minecraft:item_model":"luigis_mansion:empty"}}}
 data modify storage luigis_mansion:data luigi.animation set from storage luigis_mansion:data my_memory.animation
 execute unless data storage luigis_mansion:data luigi.animation{namespace:"luigis_mansion",id:"idle"} run tag @s[tag=!animation_may_move] remove walking
 execute unless data storage luigis_mansion:data luigi.animation{namespace:"luigis_mansion",id:"idle"} run tag @s[tag=!animation_may_move] remove running

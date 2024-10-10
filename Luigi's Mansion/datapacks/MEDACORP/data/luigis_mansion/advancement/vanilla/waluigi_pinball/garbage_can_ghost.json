@@ -4,9 +4,7 @@
             "count": 1,
             "id": "minecraft:leather_chestplate",
             "components": {
-                "minecraft:unbreakable": {},
-                "minecraft:damage": 4,
-                "minecraft:custom_model_data": 8,
+                "minecraft:item_model": "luigis_mansion:entity/garbage_can_ghost",
                 "minecraft:dyed_color": { "rgb": 52224 }
             }
         },

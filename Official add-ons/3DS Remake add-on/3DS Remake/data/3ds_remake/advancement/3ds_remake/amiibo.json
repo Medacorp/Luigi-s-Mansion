@@ -4,9 +4,7 @@
             "count": 1,
             "id": "minecraft:diamond_pickaxe",
             "components": {
-                "minecraft:unbreakable": {},
-                "minecraft:damage": 22,
-                "minecraft:custom_model_data": -31
+                "minecraft:item_model": "3ds_remake:menu/dialog/choice/amiibo"
             }
         },
         "title": {

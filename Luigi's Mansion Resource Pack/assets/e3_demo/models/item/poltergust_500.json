@@ -35,13 +35,13 @@
             "predicate": {
                 "custom_model_data": 5
             },
-            "model": "e3_demo:item/poltergust_500/body_idle_right"
+            "model": "e3_demo:item/poltergust_500/idle_right"
         },
         {
             "predicate": {
                 "custom_model_data": 6
             },
-            "model": "e3_demo:item/poltergust_500/body_idle_left"
+            "model": "e3_demo:item/poltergust_500/idle_left"
         },
         {
             "predicate": {
@@ -77,13 +77,13 @@
             "predicate": {
                 "custom_model_data": 12
             },
-            "model": "e3_demo:item/poltergust_500/body_idle_right_gooigi"
+            "model": "e3_demo:item/poltergust_500/idle_right_gooigi"
         },
         {
             "predicate": {
                 "custom_model_data": 13
             },
-            "model": "e3_demo:item/poltergust_500/body_idle_left_gooigi"
+            "model": "e3_demo:item/poltergust_500/idle_left_gooigi"
         }
     ]
 }

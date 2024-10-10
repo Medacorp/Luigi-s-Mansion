@@ -4,9 +4,7 @@
             "count": 1,
             "id": "minecraft:leather_chestplate",
             "components": {
-                "minecraft:unbreakable": {},
-                "minecraft:damage": 4,
-                "minecraft:custom_model_data": 2,
+                "minecraft:item_model": "luigis_mansion:entity/ghost",
                 "minecraft:dyed_color": { "rgb": 16750592 }
             }
         },

@@ -35,13 +35,13 @@
             "predicate": {
                 "custom_model_data": 5
             },
-            "model": "luigis_mansion:item/poltergust_3000/body_idle_right"
+            "model": "luigis_mansion:item/poltergust_3000/idle_right"
         },
         {
             "predicate": {
                 "custom_model_data": 6
             },
-            "model": "luigis_mansion:item/poltergust_3000/body_idle_left"
+            "model": "luigis_mansion:item/poltergust_3000/idle_left"
         },
         {
             "predicate": {
@@ -77,13 +77,13 @@
             "predicate": {
                 "custom_model_data": 12
             },
-            "model": "3ds_remake:item/poltergust_3000/body_idle_right_gooigi"
+            "model": "3ds_remake:item/poltergust_3000/idle_right_gooigi"
         },
         {
             "predicate": {
                 "custom_model_data": 13
             },
-            "model": "3ds_remake:item/poltergust_3000/body_idle_left_gooigi"
+            "model": "3ds_remake:item/poltergust_3000/idle_left_gooigi"
         }
     ]
 }

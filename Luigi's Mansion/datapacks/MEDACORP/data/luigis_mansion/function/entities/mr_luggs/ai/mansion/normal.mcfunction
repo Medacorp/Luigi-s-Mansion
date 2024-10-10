@@ -15,27 +15,27 @@ execute if entity @s[scores={Dialog=51..80}] as @e[tag=mr_luggs_food,limit=1] ru
 execute if entity @s[scores={Dialog=81..99}] as @e[tag=mr_luggs_food,limit=1] run data modify entity @s ArmorItems[3] merge from entity @s ArmorItems[3].components."minecraft:custom_data".model_data.largely_descreased
 scoreboard players add @s[scores={Dialog=100..}] Dialog 1
 execute if entity @e[tag=mr_luggs_food,tag=was_in_vacuum,limit=1] run scoreboard players add @s[scores={Dialog=1..99}] Dialog 1
-execute if entity @s[scores={Dialog=100}] run data modify entity @e[tag=mr_luggs_food,limit=1] ArmorItems[3].id set value "minecraft:stone_button"
+execute if entity @s[scores={Dialog=100}] as @e[tag=mr_luggs_food,limit=1] run data modify entity @s ArmorItems[3] merge from entity @s ArmorItems[3].components."minecraft:custom_data".model_data.empty
 execute if entity @s[scores={Dialog=2..99}] run tag @e[tag=hidden,nbt={data:{entity:{namespace:"luigis_mansion",id:"waiter"}}}] add spawn
 execute if entity @s[scores={Dialog=2..99}] if entity @e[tag=same_room,nbt={data:{entity:{namespace:"luigis_mansion",id:"waiter"}}},tag=attack] run scoreboard players set @s Dialog 1
 
 execute unless entity @s[scores={Dialog=100..}] run scoreboard players add @s ActionTime 1
 data modify entity @s[scores={Dialog=..99,ActionTime=1}] data.animation set value {namespace:"luigis_mansion",id:"eat"}
-execute if entity @s[scores={Dialog=..99,ActionTime=1}] run particle minecraft:dust{color:[1f,0.9f,0f],scale:1f} ^0.3 ^1.1 ^1 0.3 0.3 0.3 0 5
+execute if entity @s[scores={Dialog=..99,ActionTime=1}] run particle minecraft:dust{color:17423232,scale:1f} ^0.3 ^1.1 ^1 0.3 0.3 0.3 0 5
 execute if entity @s[scores={Dialog=..99,ActionTime=1}] run playsound luigis_mansion:entity.mr_luggs.eat hostile @a[tag=same_room] ^ ^1 ^1 4
-execute if entity @s[scores={Dialog=..99,ActionTime=11}] run particle minecraft:dust{color:[1f,0.9f,0f],scale:1f} ^-0.3 ^1.1 ^1 0.3 0.3 0.3 0 5
+execute if entity @s[scores={Dialog=..99,ActionTime=11}] run particle minecraft:dust{color:17423232,scale:1f} ^-0.3 ^1.1 ^1 0.3 0.3 0.3 0 5
 execute if entity @s[scores={Dialog=..99,ActionTime=11}] run playsound luigis_mansion:entity.mr_luggs.eat hostile @a[tag=same_room] ^ ^1 ^1 4
-execute if entity @s[scores={Dialog=..99,ActionTime=21}] run particle minecraft:dust{color:[1f,0.9f,0f],scale:1f} ^0.3 ^1.1 ^1 0.3 0.3 0.3 0 5
+execute if entity @s[scores={Dialog=..99,ActionTime=21}] run particle minecraft:dust{color:17423232,scale:1f} ^0.3 ^1.1 ^1 0.3 0.3 0.3 0 5
 execute if entity @s[scores={Dialog=..99,ActionTime=21}] run playsound luigis_mansion:entity.mr_luggs.eat hostile @a[tag=same_room] ^ ^1 ^1 4
-execute if entity @s[scores={Dialog=..99,ActionTime=31}] run particle minecraft:dust{color:[1f,0.9f,0f],scale:1f} ^-0.3 ^1.1 ^1 0.3 0.3 0.3 0 5
+execute if entity @s[scores={Dialog=..99,ActionTime=31}] run particle minecraft:dust{color:17423232,scale:1f} ^-0.3 ^1.1 ^1 0.3 0.3 0.3 0 5
 execute if entity @s[scores={Dialog=..99,ActionTime=31}] run playsound luigis_mansion:entity.mr_luggs.eat hostile @a[tag=same_room] ^ ^1 ^1 4
-execute if entity @s[scores={Dialog=..99,ActionTime=41}] run particle minecraft:dust{color:[1f,0.9f,0f],scale:1f} ^0.3 ^1.1 ^1 0.3 0.3 0.3 0 5
+execute if entity @s[scores={Dialog=..99,ActionTime=41}] run particle minecraft:dust{color:17423232,scale:1f} ^0.3 ^1.1 ^1 0.3 0.3 0.3 0 5
 execute if entity @s[scores={Dialog=..99,ActionTime=41}] run playsound luigis_mansion:entity.mr_luggs.eat hostile @a[tag=same_room] ^ ^1 ^1 4
-execute if entity @s[scores={Dialog=..99,ActionTime=51}] run particle minecraft:dust{color:[1f,0.9f,0f],scale:1f} ^-0.3 ^1.1 ^1 0.3 0.3 0.3 0 5
+execute if entity @s[scores={Dialog=..99,ActionTime=51}] run particle minecraft:dust{color:17423232,scale:1f} ^-0.3 ^1.1 ^1 0.3 0.3 0.3 0 5
 execute if entity @s[scores={Dialog=..99,ActionTime=51}] run playsound luigis_mansion:entity.mr_luggs.eat hostile @a[tag=same_room] ^ ^1 ^1 4
-execute if entity @s[scores={Dialog=..99,ActionTime=61}] run particle minecraft:dust{color:[1f,0.9f,0f],scale:1f} ^0.3 ^1.1 ^1 0.3 0.3 0.3 0 5
+execute if entity @s[scores={Dialog=..99,ActionTime=61}] run particle minecraft:dust{color:17423232,scale:1f} ^0.3 ^1.1 ^1 0.3 0.3 0.3 0 5
 execute if entity @s[scores={Dialog=..99,ActionTime=61}] run playsound luigis_mansion:entity.mr_luggs.eat hostile @a[tag=same_room] ^ ^1 ^1 4
-execute if entity @s[scores={Dialog=..99,ActionTime=71}] run particle minecraft:dust{color:[1f,0.9f,0f],scale:1f} ^-0.3 ^1.1 ^1 0.3 0.3 0.3 0 5
+execute if entity @s[scores={Dialog=..99,ActionTime=71}] run particle minecraft:dust{color:17423232,scale:1f} ^-0.3 ^1.1 ^1 0.3 0.3 0.3 0 5
 execute if entity @s[scores={Dialog=..99,ActionTime=71}] run playsound luigis_mansion:entity.mr_luggs.eat hostile @a[tag=same_room] ^ ^1 ^1 4
 data remove entity @s[scores={Dialog=..99,ActionTime=80}] data.animation
 execute if entity @s[scores={Dialog=..99,ActionTime=80}] run playsound luigis_mansion:entity.mr_luggs.hit_table hostile @a[tag=same_room] ^ ^ ^2 4

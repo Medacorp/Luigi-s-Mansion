@@ -31,9 +31,19 @@
 			}
 		},
 		{
+			"from": [6.5, 6.5, 2.99],
+			"to": [9.5, 9.5, 2.99],
+			"rotation": {"angle": 0, "axis": "x", "origin": [8.5, 0.5, 8]},
+            "light_emission": 15,
+			"faces": {
+				"north": {"uv": [10, 4, 13, 7], "texture": "#flashlight"}
+			}
+		},
+		{
 			"from": [6.5, 6.5, 1],
 			"to": [9.5, 6.5, 3],
 			"rotation": {"angle": 0, "axis": "x", "origin": [8, 0, 8]},
+            "light_emission": 15,
 			"faces": {
 				"up": {"uv": [14, 7, 11, 9], "rotation": 180, "texture": "#flashlight"},
 				"down": {"uv": [11, 7, 14, 9], "texture": "#flashlight"}
@@ -43,6 +53,7 @@
 			"from": [9.5, 6.5, 1],
 			"to": [9.5, 9.5, 3],
 			"rotation": {"angle": 0, "axis": "x", "origin": [8, 0, 8]},
+            "light_emission": 15,
 			"faces": {
 				"east": {"uv": [8, 4, 10, 7], "texture": "#flashlight"},
 				"west": {"uv": [10, 4, 8, 7], "texture": "#flashlight"}
@@ -52,6 +63,7 @@
 			"from": [6.5, 6.5, 1],
 			"to": [6.5, 9.5, 3],
 			"rotation": {"angle": 0, "axis": "x", "origin": [8, 0, 8]},
+            "light_emission": 15,
 			"faces": {
 				"east": {"uv": [15, 4, 13, 7], "texture": "#flashlight"},
 				"west": {"uv": [13, 4, 15, 7], "texture": "#flashlight"}
@@ -61,6 +73,7 @@
 			"from": [6.5, 9.5, 1],
 			"to": [9.5, 9.5, 3],
 			"rotation": {"angle": 0, "axis": "x", "origin": [8, 0, 8]},
+            "light_emission": 15,
 			"faces": {
 				"up": {"uv": [8, 7, 11, 9], "rotation": 180, "texture": "#flashlight"},
 				"down": {"uv": [11, 7, 8, 9], "texture": "#flashlight"}
@@ -93,30 +106,30 @@
 			"rotation": [90, 0, 0]
 		}
 	},
-    "overrides": [
-        {
+	"overrides": [
+		{
             "predicate": {
                 "custom_model_data": 0
-            },
+            }, 
             "model": "luigis_mansion:item/flashlight"
         },
-        {
+		{
             "predicate": {
                 "custom_model_data": 1
-            },
+            }, 
             "model": "luigis_mansion:item/flashlight_off"
         },
-        {
+		{
             "predicate": {
                 "custom_model_data": 2
-            },
+            }, 
             "model": "3ds_remake:item/flashlight_gooigi"
         },
-        {
+		{
             "predicate": {
                 "custom_model_data": 3
-            },
+            }, 
             "model": "3ds_remake:item/flashlight_off_gooigi"
         }
-    ]
+	]
 }

@@ -1,5 +1,5 @@
 {
-	"parent": "luigis_mansion:entity/luigi/squished_mirrored",
+	"parent": "luigis_mansion:entity/luigi/squished_right",
 	"textures": {
 		"0": "luigis_mansion:entity/luigi/base_2",
 		"1": "luigis_mansion:entity/luigi/overlay_2"

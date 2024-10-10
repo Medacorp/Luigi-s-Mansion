@@ -145,6 +145,6 @@ execute if entity @s[tag=shrunk,tag=flipped_gravity,scores={AnimationProgress=59
 execute if entity @s[tag=shrunk,tag=flipped_gravity,scores={AnimationProgress=60..}] positioned ^-0.18 ^ ^ rotated ~ ~75 positioned ^ ^ ^0.37 run teleport @s ~ ~-0.35 ~ ~ ~
 data merge entity @s[scores={AnimationProgress=1}] {Pose:{Head:[0.0f,-180.0f,0.01f]}}
 data merge entity @s[scores={AnimationProgress=1},tag=flipped_gravity] {Pose:{Head:[0.0f,-180.0f,-180.0f]}}
-data modify entity @s[scores={AnimationProgress=1..}] ArmorItems[3] set value {id:"minecraft:diamond_pickaxe",count:1,components:{"minecraft:unbreakable":{},"minecraft:damage":5,"minecraft:custom_model_data":32}}
+data modify entity @s[scores={AnimationProgress=1..}] ArmorItems[3] set value {id:"minecraft:diamond_pickaxe",count:1,components:{"minecraft:item_model":"luigis_mansion:entity/marios_painting","minecraft:unbreakable":{}}}
 data modify entity @s[scores={AnimationProgress=41}] Pose.Head[1] set value 0.0f
 scoreboard players set @s[scores={AnimationProgress=120}] AnimationProgress 0

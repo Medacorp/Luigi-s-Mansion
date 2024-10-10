@@ -8,16 +8,16 @@ execute store result entity @e[tag=home,limit=1] Rotation[1] float 1 run scorebo
 execute at @e[tag=home,limit=1] run tp @s[scores={MapZoomTime=2..}] ~ ~ ~ ~ ~
 kill @e[tag=home,limit=1]
 effect clear @s minecraft:speed
-attribute @s[scores={MapZoomTime=..22}] minecraft:generic.movement_speed base set 0.01
-attribute @s[scores={MapZoomTime=23}] minecraft:generic.movement_speed base set 0.02
-attribute @s[scores={MapZoomTime=24}] minecraft:generic.movement_speed base set 0.03
-attribute @s[scores={MapZoomTime=25}] minecraft:generic.movement_speed base set 0.04
-attribute @s[scores={MapZoomTime=26}] minecraft:generic.movement_speed base set 0.05
-attribute @s[scores={MapZoomTime=27}] minecraft:generic.movement_speed base set 0.06
-attribute @s[scores={MapZoomTime=28}] minecraft:generic.movement_speed base set 0.07
-attribute @s[scores={MapZoomTime=29}] minecraft:generic.movement_speed base set 0.08
-attribute @s[scores={MapZoomTime=30}] minecraft:generic.movement_speed base set 0.09
-attribute @s[scores={MapZoomTime=31}] minecraft:generic.movement_speed base set 0.10000000149011612
+attribute @s[scores={MapZoomTime=..22}] minecraft:movement_speed base set 0.01
+attribute @s[scores={MapZoomTime=23}] minecraft:movement_speed base set 0.02
+attribute @s[scores={MapZoomTime=24}] minecraft:movement_speed base set 0.03
+attribute @s[scores={MapZoomTime=25}] minecraft:movement_speed base set 0.04
+attribute @s[scores={MapZoomTime=26}] minecraft:movement_speed base set 0.05
+attribute @s[scores={MapZoomTime=27}] minecraft:movement_speed base set 0.06
+attribute @s[scores={MapZoomTime=28}] minecraft:movement_speed base set 0.07
+attribute @s[scores={MapZoomTime=29}] minecraft:movement_speed base set 0.08
+attribute @s[scores={MapZoomTime=30}] minecraft:movement_speed base set 0.09
+attribute @s[scores={MapZoomTime=31}] minecraft:movement_speed base set 0.10000000149011612
 effect give @s[scores={MapZoomTime=32}] minecraft:speed infinite 0 true
 effect give @s[scores={MapZoomTime=33}] minecraft:speed infinite 1 true
 effect give @s[scores={MapZoomTime=34}] minecraft:speed infinite 2 true

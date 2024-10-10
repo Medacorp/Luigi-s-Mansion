@@ -1,5 +1,5 @@
-execute if score #hidden_room_hole Searched matches 1 run particle minecraft:dust{color:[0.5f,0.5f,1f],scale:1f} 741 11 -31 0.2 0.2 0.2 0 4
-execute if score #hidden_room_hole Searched matches 1 run particle minecraft:dust{color:[0.5f,0.5f,1f],scale:1f} 757 11 -31 0.2 0.2 0.2 0 4
+execute if score #hidden_room_hole Searched matches 1 run particle minecraft:dust{color:8421631,scale:1f} 741 11 -31 0.2 0.2 0.2 0 4
+execute if score #hidden_room_hole Searched matches 1 run particle minecraft:dust{color:8421631,scale:1f} 757 11 -31 0.2 0.2 0.2 0 4
 execute if score #hidden_room_hole Searched matches 1 unless score #hidden_room_hole Sound matches 1.. run playsound luigis_mansion:furniture.wind_warp ambient @a[scores={Room=24}] 741 11 -31
 execute if score #hidden_room_hole Searched matches 1 unless score #hidden_room_hole Sound matches 1.. run scoreboard players set #hidden_room_hole Sound 24
 execute if score #hidden_room_hole Searched matches 1 if score #hidden_room_hole Sound matches 1.. run scoreboard players remove #hidden_room_hole Sound 1

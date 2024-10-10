@@ -1,6 +1,6 @@
 execute unless entity @s[scores={ForceScreen=1..}] if score #gbh_clock_increase Selected matches 0 if entity @s[tag=!scanning,nbt=!{Inventory:[{components:{"minecraft:custom_model_data":0,"minecraft:custom_data":{namespace:"luigis_mansion",id:"game_boy_horror"}}}]}] run function luigis_mansion:items/game_boy_horror/turn_screen_off
 execute unless entity @s[scores={ForceScreen=1..}] unless score #gbh_clock_increase Selected matches 0 if entity @s[tag=!scanning,nbt={Inventory:[{components:{"minecraft:custom_data":{namespace:"luigis_mansion",id:"game_boy_horror"}}}]}] run function luigis_mansion:items/game_boy_horror/turn_screen_to_clock
-execute unless entity @s[scores={ForceScreen=1..}] if entity @s[tag=scanning,nbt=!{Inventory:[{components:{"minecraft:custom_model_data":2,"minecraft:custom_data":{namespace:"luigis_mansion",id:"game_boy_horror"}}}]}] run function luigis_mansion:items/game_boy_horror/turn_screen_to_scan
-execute if entity @s[scores={ForceScreen=1},nbt=!{Inventory:[{components:{"minecraft:custom_model_data":1,"minecraft:custom_data":{namespace:"luigis_mansion",id:"game_boy_horror"}}}]}] run function luigis_mansion:items/game_boy_horror/turn_screen_to_call
-tag @s[nbt=!{Inventory:[{components:{"minecraft:custom_model_data":2,"minecraft:custom_data":{namespace:"luigis_mansion",id:"game_boy_horror"}}}]}] remove scanning
+execute unless entity @s[scores={ForceScreen=1..}] if entity @s[tag=scanning,nbt=!{Inventory:[{components:{"minecraft:custom_model_data":8,"minecraft:custom_data":{namespace:"luigis_mansion",id:"game_boy_horror"}}}]}] run function luigis_mansion:items/game_boy_horror/turn_screen_to_scan
+execute if entity @s[scores={ForceScreen=1..}] run function luigis_mansion:items/game_boy_horror/turn_screen_to_call
+tag @s[nbt=!{Inventory:[{components:{"minecraft:custom_model_data":8,"minecraft:custom_data":{namespace:"luigis_mansion",id:"game_boy_horror"}}}]}] remove scanning
 scoreboard players reset @s ForceScreen

@@ -42,5 +42,5 @@ execute if score #mirrored Selected matches 1 run data modify entity @s[tag=ridi
 
 $execute at @s run function $(namespace):animations/luigi/$(id)/poltergust_body
 
-execute unless data entity @s ArmorItems[3].count run data modify entity @s ArmorItems[3] set value {id:"minecraft:stone_button",count:1}
+execute unless data entity @s ArmorItems[3].count run data modify entity @s ArmorItems[3] set value {id:"minecraft:diamond_pickaxe",count:1,components:{"minecraft:item_model":"luigis_mansion:empty"}}
 data modify entity @s ArmorItems[3].components."minecraft:custom_data".animation set from storage luigis_mansion:data luigi.animation

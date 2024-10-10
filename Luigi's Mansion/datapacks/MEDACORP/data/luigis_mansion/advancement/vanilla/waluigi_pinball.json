@@ -4,9 +4,8 @@
             "count": 1,
             "id": "minecraft:diamond_pickaxe",
             "components": {
-                "minecraft:unbreakable": {},
-                "minecraft:damage": 4,
-                "minecraft:custom_model_data": 20
+                "minecraft:item_model": "luigis_mansion:entity/billiards_ball",
+                "minecraft:custom_model_data": 2
             }
         },
         "title": {

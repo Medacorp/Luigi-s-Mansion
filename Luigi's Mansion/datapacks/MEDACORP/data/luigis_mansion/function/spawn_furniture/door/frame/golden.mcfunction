@@ -1,1 +1,1 @@
-data modify entity @s ArmorItems[3] merge value {id:"minecraft:diamond_pickaxe",count:1,components:{"minecraft:unbreakable":{},"minecraft:damage":16,"minecraft:custom_model_data":20}}
+data modify entity @s ArmorItems[3] merge value {components:{"minecraft:item_model":"luigis_mansion:furniture/door_frame/golden"}}

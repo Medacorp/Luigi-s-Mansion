@@ -4,9 +4,7 @@
             "count": 1,
             "id": "minecraft:diamond_pickaxe",
             "components": {
-                "minecraft:unbreakable": {},
-                "minecraft:damage": 1,
-                "minecraft:custom_model_data": 147
+                "minecraft:item_model": "3ds_remake:entity/gooigi"
             }
         },
         "show_toast": false,

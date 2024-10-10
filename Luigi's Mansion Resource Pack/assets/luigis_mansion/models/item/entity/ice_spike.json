@@ -12,6 +12,12 @@
                 "custom_model_data": 1
             },
             "model": "luigis_mansion:entity/ice_spike/broken"
+        },
+        {
+            "predicate": {
+                "custom_model_data": 2
+            },
+            "model": "luigis_mansion:item/empty"
         }
     ]
 }

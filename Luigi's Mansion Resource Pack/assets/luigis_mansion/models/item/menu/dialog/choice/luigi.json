@@ -1,6 +1,7 @@
 {
     "parent": "luigis_mansion:item/menu",
 	"textures": {
-        "layer0": "luigis_mansion:item/menu/dialog/choice/luigi"
+        "layer0": "luigis_mansion:item/menu/dialog/choice/luigi",
+        "layer1": "luigis_mansion:item/menu/dialog/choice/luigi_overlay"
     }
 }

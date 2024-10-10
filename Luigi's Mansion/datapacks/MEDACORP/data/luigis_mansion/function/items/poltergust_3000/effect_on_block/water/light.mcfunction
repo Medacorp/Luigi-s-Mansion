@@ -1,3 +1,3 @@
-execute if block ~ ~ ~ minecraft:light run particle minecraft:item{item:{id:"minecraft:diamond_pickaxe",components:{"minecraft:unbreakable":{},"minecraft:damage":19,"minecraft:custom_model_data":109}}} ~ ~ ~ 0 0 0 0 1 normal @a[tag=same_room]
+execute if block ~ ~ ~ minecraft:light run particle minecraft:item{item:{id:"minecraft:diamond_pickaxe",components:{"minecraft:item_model":"luigis_mansion:furniture/water_particle","minecraft:unbreakable":{}}}} ~ ~ ~ 0 0 0 0 1 normal @a[tag=same_room]
 execute if block ~ ~ ~ minecraft:light if score #temp MirrorX matches -2147483648.. as @e[tag=interact,limit=1] run function luigis_mansion:items/poltergust_3000/effect_on_block/water/mirror/x
 execute if block ~ ~ ~ minecraft:light if score #temp MirrorZ matches -2147483648.. as @e[tag=interact,limit=1] run function luigis_mansion:items/poltergust_3000/effect_on_block/water/mirror/z
