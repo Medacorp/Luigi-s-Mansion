@@ -1,8 +1,8 @@
 {
 	"parent": "luigis_mansion:item/entity/boo",
 	"textures": {
-		"0": "3ds_remake:entity/boolossus",
-		"particle": "3ds_remake:entity/boolossus"
+		"0": "3ds_remake:entity/boolossus/boolossus",
+		"particle": "3ds_remake:entity/boolossus/boolossus"
 	},
     "overrides": [
         {

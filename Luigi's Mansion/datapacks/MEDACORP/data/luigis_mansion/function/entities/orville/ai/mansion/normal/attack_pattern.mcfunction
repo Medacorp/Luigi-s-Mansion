@@ -5,5 +5,5 @@ execute if entity @s[scores={WaitTime=140}] run playsound luigis_mansion:entity.
 scoreboard players set @s[scores={WaitTime=120..159}] TargetTask 1
 execute if entity @s[scores={WaitTime=140}] run function luigis_mansion:spawn_entities/bomb
 scoreboard players set @s[scores={WaitTime=200}] WaitTime 40
-execute rotated ~ 0 run particle minecraft:dust{color:17390039,scale:0.5f} ^0.7 ^0.3 ^0.5 0 0 0 0 1 normal @a[tag=same_room]
-execute rotated ~ 0 run particle minecraft:dust{color:17390039,scale:0.5f} ^-0.7 ^0.3 ^0.5 0 0 0 0 1 normal @a[tag=same_room]
+execute rotated ~ 0 run particle minecraft:dust{color:16737123,scale:0.5f} ^0.7 ^0.3 ^0.5 0 0 0 0 1 normal @a[tag=same_room]
+execute rotated ~ 0 run particle minecraft:dust{color:16737123,scale:0.5f} ^-0.7 ^0.3 ^0.5 0 0 0 0 1 normal @a[tag=same_room]

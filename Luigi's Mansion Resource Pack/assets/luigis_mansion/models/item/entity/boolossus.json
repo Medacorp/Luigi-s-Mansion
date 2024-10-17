@@ -1,8 +1,8 @@
 {
 	"parent": "luigis_mansion:item/entity/boo",
 	"textures": {
-		"0": "luigis_mansion:entity/boolossus",
-		"particle": "luigis_mansion:entity/boolossus"
+		"0": "luigis_mansion:entity/boolossus/boolossus",
+		"particle": "luigis_mansion:entity/boolossus/boolossus"
 	},
     "overrides": [
         {

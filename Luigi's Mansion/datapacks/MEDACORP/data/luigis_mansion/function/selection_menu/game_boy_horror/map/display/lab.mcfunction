@@ -1,1 +1,1 @@
-execute if entity @s[scores={Room=-4..-1}] run function luigis_mansion:selection_menu/game_boy_horror/map/display/lab/warp
+execute if entity @s[scores={Room=-7..-1}] run function luigis_mansion:selection_menu/game_boy_horror/map/display/lab/warp

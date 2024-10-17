@@ -1,5 +1,5 @@
 {
-    "parent": "luigis_mansion:entity/big_heart",
+    "parent": "luigis_mansion:entity/heart/big",
     "overrides": [
         
     ]

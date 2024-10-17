@@ -18,10 +18,10 @@ execute if entity @s[tag=dead_player,tag=!gooigi] if score #can_revive Selected 
 scoreboard players reset #temp ID
 tag @a[tag=this_death_location] remove this_death_location
 
-execute at @e[tag=ghost,tag=same_room,tag=!vacuumable,tag=!visible,tag=hidden] run particle minecraft:dust{color:12220544,scale:1f} ~ ~0.6 ~ 0.3 0.3 0.3 0 5 normal @s
-execute at @e[tag=ghost,tag=same_room,tag=!vacuumable,tag=!visible,tag=!vanish,tag=!hidden] run particle minecraft:dust{color:17364480,scale:1f} ~ ~1.6 ~ 0.3 0.3 0.3 0 5 normal @s
+execute at @e[tag=ghost,tag=same_room,tag=!vacuumable,tag=!visible,tag=hidden] run particle minecraft:dust{color:11730866,scale:1f} ~ ~0.6 ~ 0.3 0.3 0.3 0 5 normal @s
+execute at @e[tag=ghost,tag=same_room,tag=!vacuumable,tag=!visible,tag=!vanish,tag=!hidden] run particle minecraft:dust{color:16711680,scale:1f} ~ ~1.6 ~ 0.3 0.3 0.3 0 5 normal @s
 tag @s add me
-execute at @a[tag=same_room,gamemode=spectator,tag=!me] run particle minecraft:dust{color:3538227,scale:1f} ~ ~1.6 ~ 0.3 0.3 0.3 0 5 normal @s
+execute at @a[tag=same_room,gamemode=spectator,tag=!me] run particle minecraft:dust{color:3407667,scale:1f} ~ ~1.6 ~ 0.3 0.3 0.3 0 5 normal @s
 tag @s remove me
 tag @s add spectator
 

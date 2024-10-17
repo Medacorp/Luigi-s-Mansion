@@ -1,1 +1,1 @@
-particle minecraft:dust{color:10464537,scale:1.5f} ~ ~ ~ 0.5 0 0.5 1 30
+particle minecraft:dust{color:11711129,scale:1.5f} ~ ~ ~ 0.5 0 0.5 1 30

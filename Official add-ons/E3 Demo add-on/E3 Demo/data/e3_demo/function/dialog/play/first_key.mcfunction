@@ -13,7 +13,7 @@ execute if score #dialog Dialog matches 1 store result score @e[tag=first_key,ta
 execute if score #dialog Dialog matches 1 run stopsound @a[tag=same_room] music
 execute if score #dialog Dialog matches 1 run playsound e3_demo:music.first_key music @a[tag=same_room] ~ ~ ~ 1000
 execute if score #dialog Dialog matches 1 run scoreboard players set @a[tag=same_room] Music 470
-execute if score #dialog Dialog matches 1..370 at @e[tag=same_room,tag=first_key] run particle minecraft:dust{color:15295562,scale:1f} ~ ~0.5 ~ 0.2 0.2 0.2 0 5
+execute if score #dialog Dialog matches 1..370 at @e[tag=same_room,tag=first_key] run particle minecraft:dust{color:15395562,scale:1f} ~ ~0.5 ~ 0.2 0.2 0.2 0 5
 execute if score #dialog Dialog matches 1..30 as @e[tag=same_room,tag=first_key] at @s run teleport @s ~ ~ ~-0.025
 execute if score #dialog Dialog matches 31..60 as @e[tag=same_room,tag=first_key] at @s run teleport @s ~ ~ ~0.05
 execute if score #dialog Dialog matches 61..90 as @e[tag=same_room,tag=first_key] at @s run teleport @s ~ ~ ~-0.05

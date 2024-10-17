@@ -4,6 +4,9 @@ v3.1:
 * Added ghost flee tasks
 * Added some missing furniture scan message
 * Added unique scan message for scanning fainted players
+* Added ghost loot dropping when in lab; requires the now-now-furniture-exclusive works_in_lab field
+* Added 3DS Remake game boy horror boot up visual aspects
+* Changed the 3DS Remake training room program, ghosts in the training room during it can now drop hearts
 * Changed players to look at vacuum-latched-on ghosts in order of latching, rather than look at the averaged out position; the new behavior matches the original game
 * Changed ghosts pulling to have separate valid angles per ghost, matching the original game; lenient pull accuracy gives 40 extra degrees, strict pull accuracy halves the degrees
 * Changed criteria for getting dragged to be closer to the original game; you now only get dragged if you get pulled; a vacuum error is made for each ghost that started pulling you that hasn't pulled you last tick, a vacuum error will not occur if you pulled the ghost in the last 5 ticks

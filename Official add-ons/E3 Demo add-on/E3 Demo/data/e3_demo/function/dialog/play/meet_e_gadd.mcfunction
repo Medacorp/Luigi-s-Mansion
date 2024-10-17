@@ -127,7 +127,7 @@ execute if score #dialog Dialog matches 431 run data modify entity @e[tag=ghost,
 execute if score #dialog Dialog matches 431 at @e[tag=ghost,tag=same_room,limit=1] run playsound luigis_mansion:entity.ghost.punch hostile @a[tag=same_room] ~ ~ ~ 1
 execute if score #dialog Dialog matches 431 at @e[tag=ghost,tag=same_room,limit=1] run playsound e3_demo:entity.ghost.attack hostile @a[tag=same_room] ~ ~ ~ 1
 execute if score #dialog Dialog matches 451 run data modify entity @e[tag=ghost,tag=same_room,limit=1] data.animation set value {namespace:"luigis_mansion",id:"laugh"}
-execute if score #dialog Dialog matches 451 at @e[tag=ghost,tag=same_room,limit=1] run playsound e3_demo:entity.gold_ghost.laugh hostile @a[tag=same_room] ~ ~ ~ 1
+execute if score #dialog Dialog matches 451 at @e[tag=ghost,tag=same_room,limit=1] run playsound e3_demo:entity.ghost.laugh hostile @a[tag=same_room] ~ ~ ~ 1
 execute if score #dialog Dialog matches 491 run data modify entity @e[tag=ghost,tag=same_room,limit=1] data.animation set value {namespace:"luigis_mansion",id:"vanish"}
 execute if score #dialog Dialog matches 491 at @e[tag=ghost,tag=same_room,limit=1] run playsound e3_demo:entity.ghost.disappear hostile @a[tag=same_room] ~ ~ ~ 1
 execute if score #dialog Dialog matches 531 run tag @e[tag=ghost,tag=same_room,limit=1] add remove_from_existence

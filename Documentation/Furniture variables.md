@@ -41,7 +41,6 @@ furniture:{
     //search result
     no_dust:1b, //When set stop dust from popping out if the furniture is empty. Default = 0b.
     loot:{ //Loot to spawn. Do note that no dust will spawn if loot is attempted to be spawned, but the spawning is aborted (so make sure to check if it can spawn before applying the data). Default = none.
-        works_in_lab:1b, //When set will still spawn while in the lab. Default = 0b.
         //See loot documentation for other variables.
     },
     loot_chance: { //The furniture loot chance ID to use. See IDs in use for valid IDs.

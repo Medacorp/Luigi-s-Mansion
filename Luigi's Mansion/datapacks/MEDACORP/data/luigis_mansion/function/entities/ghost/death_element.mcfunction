@@ -27,4 +27,5 @@ execute if entity @s[scores={KillerID=-2147483648..}] store result entity @s dat
 tag @a[tag=killer,limit=1] add vaporizing_ghost
 tag @a[tag=killer,limit=1] remove killer
 
+function luigis_mansion:room/loot_chance_ghost_element
 function luigis_mansion:other/drop_loot

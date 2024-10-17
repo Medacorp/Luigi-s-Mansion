@@ -8,4 +8,4 @@ execute if entity @s[scores={ActionTime=70}] run playsound luigis_mansion:entity
 execute at @s[scores={ActionTime=82..91}] run teleport @s ~ ~ ~ ~ ~-9
 execute at @s[scores={ActionTime=82..}] unless block ~ ~ ~ minecraft:air run tag @s add remove_from_existence
 execute if entity @s[tag=remove_from_existence] run playsound luigis_mansion:entity.boo.warp hostile @a[tag=same_room] ~ ~ ~ 1
-execute if entity @s[tag=remove_from_existence] run particle minecraft:dust{color:13944063,scale:1f} ~ ~1 ~ 0.3 0.3 0.3 0 30 normal @a[tag=same_room]
+execute if entity @s[tag=remove_from_existence] run particle minecraft:dust{color:13421823,scale:1f} ~ ~1 ~ 0.3 0.3 0.3 0 30 normal @a[tag=same_room]

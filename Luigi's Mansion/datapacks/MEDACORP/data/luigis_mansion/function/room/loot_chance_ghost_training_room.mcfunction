@@ -1,0 +1,1 @@
+$function $(namespace):room/training_room/loot_chance_ghost/$(id)

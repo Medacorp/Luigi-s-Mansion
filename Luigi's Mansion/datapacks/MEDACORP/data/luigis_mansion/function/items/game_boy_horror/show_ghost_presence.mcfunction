@@ -1,2 +1,2 @@
-execute at @e[tag=portrait_ghost,tag=same_room,tag=!visible,tag=!vanish,tag=!empty_marker] run particle minecraft:dust{color:11763711,scale:1f} ~ ~1.6 ~ 0.3 0.3 0.3 0 5 normal @s
-execute at @a[tag=same_room,gamemode=spectator] run particle minecraft:dust{color:3538227,scale:1f} ~ ~1.6 ~ 0.3 0.3 0.3 0 5 normal @s
+execute at @e[tag=portrait_ghost,tag=same_room,tag=!visible,tag=!vanish,tag=!empty_marker] run particle minecraft:dust{color:11730943,scale:1f} ~ ~1.6 ~ 0.3 0.3 0.3 0 5 normal @s
+execute at @a[tag=same_room,gamemode=spectator] run particle minecraft:dust{color:3407667,scale:1f} ~ ~1.6 ~ 0.3 0.3 0.3 0 5 normal @s

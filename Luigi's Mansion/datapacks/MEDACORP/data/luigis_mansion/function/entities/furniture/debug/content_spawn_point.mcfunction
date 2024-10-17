@@ -6,7 +6,7 @@ scoreboard players operation #temp2 FurnitureSizeForward = @s FurnitureContentFo
 
 execute as @e[tag=temp,limit=1] positioned as @s run function luigis_mansion:entities/furniture/debug/move_content_spawn_point
 
-execute at @e[tag=temp,limit=1] run particle minecraft:dust{color:17364480,scale:1f} ~ ~ ~ 0 0 0 0 1 force @a[tag=same_room]
+execute at @e[tag=temp,limit=1] run particle minecraft:dust{color:16711680,scale:1f} ~ ~ ~ 0 0 0 0 1 force @a[tag=same_room]
 kill @e[tag=temp,limit=1]
 
 scoreboard players reset #temp2 FurnitureSizeLeft

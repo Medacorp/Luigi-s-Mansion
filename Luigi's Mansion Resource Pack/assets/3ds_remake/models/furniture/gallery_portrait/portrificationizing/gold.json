@@ -1,5 +1,5 @@
 {
-	"parent": "3ds_remake:entity/gallery_portrait/portrificationizing/frame",
+	"parent": "3ds_remake:furniture/gallery_portrait/portrificationizing/frame",
 	"textures": {
 		"frame": "3ds_remake:furniture/gallery_portrait/gold_king_boo_frame"
 	}

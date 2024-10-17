@@ -1,4 +1,4 @@
-execute if score #butlers_room_hole Searched matches 1 run particle minecraft:dust{color:8421631,scale:1f} 742 11 55 0.2 0.2 0.2 0 4
+execute if score #butlers_room_hole Searched matches 1 run particle minecraft:dust{color:8355839,scale:1f} 742 11 55 0.2 0.2 0.2 0 4
 execute if score #butlers_room_hole Searched matches 1 unless score #butlers_room_hole Sound matches 1.. run playsound luigis_mansion:furniture.wind_warp ambient @a[scores={Room=23}] 742 11 55
 execute if score #butlers_room_hole Searched matches 1 unless score #butlers_room_hole Sound matches 1.. run scoreboard players set #butlers_room_hole Sound 24
 execute if score #butlers_room_hole Searched matches 1 if score #butlers_room_hole Sound matches 1.. run scoreboard players remove #butlers_room_hole Sound 1

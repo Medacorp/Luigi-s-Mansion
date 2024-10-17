@@ -52,7 +52,7 @@
                 "custom_model_data": 0
             },
             "model": "luigis_mansion:entity/black_bogmire/body"
-        }
+        },
         {
             "predicate": {
                 "damage": 0.8,

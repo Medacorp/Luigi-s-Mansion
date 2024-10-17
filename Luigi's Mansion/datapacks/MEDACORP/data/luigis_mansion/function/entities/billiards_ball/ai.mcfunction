@@ -1,4 +1,4 @@
-execute if entity @s[tag=vacuumable,tag=!spit,tag=!can_spit_2] run particle minecraft:dust{color:17364480,scale:1f} ~ ~ ~ 0 0 0 1 1 normal @a[tag=same_room]
+execute if entity @s[tag=vacuumable,tag=!spit,tag=!can_spit_2] run particle minecraft:dust{color:16711680,scale:1f} ~ ~ ~ 0 0 0 1 1 normal @a[tag=same_room]
 execute if entity @s[tag=vacuumable,tag=spit,tag=!can_spit_2] run particle minecraft:dust{color:65280,scale:1f} ~ ~ ~ 0 0 0 1 1 normal @a[tag=same_room]
 scoreboard players set #temp Move 20
 scoreboard players set @s[tag=!vacuumable,tag=!move] SpawnTime 0
