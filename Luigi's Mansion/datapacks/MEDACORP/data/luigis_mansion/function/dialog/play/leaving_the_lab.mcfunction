@@ -9,7 +9,7 @@ execute if score #dialog Dialog matches 1 in minecraft:overworld positioned 789 
 execute if score #dialog Dialog matches 1 in minecraft:overworld positioned 789 90 14 run function luigis_mansion:spawn_entities/e_gadd
 execute if score #dialog Dialog matches 2 run data modify entity @e[tag=e_gadd,tag=same_room,limit=1] data.animation set value {namespace:"luigis_mansion",id:"wave"}
 execute if score #dialog Dialog matches 2..219 as @e[tag=e_gadd,tag=same_room,limit=1] at @s facing entity @p[tag=!spectator] feet run teleport @s ~ ~ ~ ~ 0
-execute if score #dialog Dialog matches 220 run data modify entity @e[tag=e_gadd,tag=same_room,limit=1] data.animation set value {namespace:"luigis_mansion",id:"walk_to_lab"}
+execute if score #dialog Dialog matches 220 run data modify entity @e[tag=e_gadd,tag=same_room,limit=1] data.animation set value {namespace:"luigis_mansion",id:"walk"}
 execute if score #dialog Dialog matches 220..259 as @e[tag=e_gadd,tag=same_room,limit=1] at @s run teleport @s ~ ~ ~0.1 0 0
 execute if score #dialog Dialog matches 260 as @e[tag=e_gadd,tag=same_room,limit=1] at @s run teleport @s ~ ~-100 ~
 execute if score #dialog Dialog matches 260 run tag @e[tag=e_gadd,tag=same_room,limit=1] add remove_from_existence

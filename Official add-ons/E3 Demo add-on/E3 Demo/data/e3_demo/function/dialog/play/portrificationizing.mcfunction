@@ -35,7 +35,7 @@ execute if score #dialog Dialog matches 1 run function luigis_mansion:spawn_enti
 execute if score #dialog Dialog matches 1 as @e[tag=e_gadd,tag=same_room,limit=1] at @s run teleport @s ~ ~ ~ facing 771 77 15
 execute if score #dialog Dialog matches 201 run data modify entity @e[tag=e_gadd,tag=same_room,limit=1] data.animation set value {namespace:"luigis_mansion",id:"jump"}
 execute if score #dialog Dialog matches 280 run data remove entity @e[tag=e_gadd,tag=same_room,limit=1] data.animation
-execute if score #dialog Dialog matches 300 run data modify entity @e[tag=e_gadd,tag=same_room,limit=1] data.animation set value {namespace:"luigis_mansion",id:"walk"}
+execute if score #dialog Dialog matches 300 run data modify entity @e[tag=e_gadd,tag=same_room,limit=1] data.animation set value {namespace:"luigis_mansion",id:"walk_look_sideways"}
 execute if score #dialog Dialog matches 310 run data modify entity @e[tag=e_gadd,tag=same_room,limit=1] data.animation set value {namespace:"luigis_mansion",id:"run"}
 execute if score #dialog Dialog matches 300..309 as @e[tag=e_gadd,tag=same_room,limit=1] at @s run teleport @s ~ ~ ~-0.1 -180 0
 execute if score #dialog Dialog matches 310..335 as @e[tag=e_gadd,tag=same_room,limit=1] at @s run teleport @s ~ ~ ~-0.248 -180 0

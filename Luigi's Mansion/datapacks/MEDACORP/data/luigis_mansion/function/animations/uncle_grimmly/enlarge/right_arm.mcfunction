@@ -1,5 +1,4 @@
-teleport @s ^-0.46 ^-0.2 ^ ~ ~
-execute if entity @s[tag=visible,tag=!big] run function luigis_mansion:old_entities/ghost/turn_visible_big
+teleport @s ^-0.46 ^0.8 ^ ~ ~
 scoreboard players add @s AnimationProgress 1
 data merge entity @s[scores={AnimationProgress=1}] {Pose:{Head:[-70.0f,20.0f,0.01f]}}
 execute store result score #temp Time run data get entity @s Pose.Head[0]

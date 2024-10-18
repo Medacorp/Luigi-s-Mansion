@@ -3,7 +3,7 @@ scoreboard players add #temp MirrorZ 50
 execute store result score #temp ActionTime run data get entity @s Pos[2] 100
 scoreboard players operation #temp ActionTime -= #temp MirrorZ
 execute store result entity @s Pos[2] double 0.01 run scoreboard players operation #temp MirrorZ -= #temp ActionTime
-execute at @s run summon minecraft:marker ~ ~ ~ {Tags:["weak_flashlight","reflected","new"]}
+execute at @s run summon minecraft:marker ~ ~ ~ {Tags:["weak_flashlight","reflected","new"],data:{entity:{namespace:"3ds_remake",id:"weak_flashlight"}}}
 execute at @s run teleport @e[type=minecraft:marker,tag=weak_flashlight,tag=reflected,tag=new,limit=1] ~ ~ ~ ~ ~
 execute as @e[type=minecraft:marker,tag=weak_flashlight,tag=reflected,tag=new,limit=1] store result entity @s Rotation[0] float -0.01 run data get entity @s Rotation[0] 100
 execute as @e[type=minecraft:marker,tag=weak_flashlight,tag=reflected,tag=new,limit=1] at @s run teleport @s ~ ~ ~ ~-180 ~

@@ -1,1 +1,1 @@
-$function $(namespace):room/training_room/loot_chance_ghost/$(id)
+$function $(namespace):room/loot_chance_ghost/$(id)

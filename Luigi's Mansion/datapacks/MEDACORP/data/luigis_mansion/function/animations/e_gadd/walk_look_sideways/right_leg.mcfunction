@@ -1,0 +1,2 @@
+execute unless score #mirrored Selected matches 1 run function luigis_mansion:animations/e_gadd/walk_look_sideways/normal/right_leg
+execute if score #mirrored Selected matches 1 run function luigis_mansion:animations/e_gadd/walk_look_sideways/mirrored/right_leg

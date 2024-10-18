@@ -1,1 +1,0 @@
-tellraw @s {"type":"translatable","translate":"3ds_remake:message.flashlight_type.strobulb","color":"green","clickEvent":{"action":"run_command","value":"/trigger FlashlightType set -4"}}

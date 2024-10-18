@@ -1,15 +1,9 @@
 summon minecraft:armor_stand ~ ~-1.4 ~ {CustomName:'{"type":"translatable","translate":"luigis_mansion:furniture.old_triple_wall_candelabra"}',Tags:["furniture","candelabra","immobile","this_entity"],NoGravity:1b,Marker:1b,ArmorItems:[{},{},{},{id:"minecraft:diamond_pickaxe",count:1,components:{"minecraft:item_model":"luigis_mansion:furniture/old_triple_wall_candelabra","minecraft:unbreakable":{},"minecraft:custom_data":{entity:{namespace:"luigis_mansion",id:"furniture"},furniture_type:"generic"}}}],Invisible:1b,DisabledSlots:2039583}
 teleport @e[tag=this_entity,limit=1] ~ ~-1.4 ~ ~ 0
-function luigis_mansion:spawn_furniture/setup/get_angle_for_candle
-execute if score #temp2 Time = #temp Time rotated ~ 0 positioned ^ ^ ^0.307 rotated as @e[tag=candle_flame_rotation,limit=1] rotated ~90 ~ positioned ^ ^0.602 ^0.277 rotated ~-90 0 rotated ~45 ~ run function luigis_mansion:spawn_furniture/setup/candle_flame
-execute unless score #temp2 Time = #temp Time rotated ~ 0 positioned ^ ^ ^0.307 rotated as @e[tag=candle_flame_rotation,limit=1] rotated ~-90 ~ positioned ^ ^-0.602 ^-0.277 rotated ~90 0 rotated ~45 ~ run function luigis_mansion:spawn_furniture/setup/candle_flame
-execute if score #temp2 Time = #temp Time rotated ~ 0 positioned ^ ^ ^0.424 rotated as @e[tag=candle_flame_rotation,limit=1] rotated ~90 ~ positioned ^ ^0.665 ^ rotated ~-90 0 run function luigis_mansion:spawn_furniture/setup/candle_flame
-execute unless score #temp2 Time = #temp Time rotated ~ 0 positioned ^ ^ ^0.424 rotated as @e[tag=candle_flame_rotation,limit=1] rotated ~-90 ~ positioned ^ ^-0.665 ^ rotated ~90 0 run function luigis_mansion:spawn_furniture/setup/candle_flame
-execute if score #temp2 Time = #temp Time rotated ~ 0 positioned ^ ^ ^0.307 rotated as @e[tag=candle_flame_rotation,limit=1] rotated ~90 ~ positioned ^ ^0.602 ^-0.277 rotated ~-90 0 rotated ~-45 ~ run function luigis_mansion:spawn_furniture/setup/candle_flame
-execute unless score #temp2 Time = #temp Time rotated ~ 0 positioned ^ ^ ^0.307 rotated as @e[tag=candle_flame_rotation,limit=1] rotated ~-90 ~ positioned ^ ^-0.602 ^0.277 rotated ~90 0 rotated ~-45 ~ run function luigis_mansion:spawn_furniture/setup/candle_flame
-kill @e[tag=candle_flame_rotation,limit=1]
-scoreboard players reset #temp Time
-scoreboard players reset #temp2 Time
+function luigis_mansion:spawn_furniture/setup/candle_flame/get_angles
+execute rotated as @e[tag=forward_angle,tag=candle_angle,limit=1] positioned ^ ^ ^0.307 rotated as @e[tag=up_angle,tag=candle_angle,limit=1] positioned ^ ^ ^0.602 rotated as @e[tag=left_angle,tag=candle_angle,limit=1] positioned ^ ^ ^-0.277 rotated as @e[tag=this_entity,limit=1] rotated ~45 ~ run function luigis_mansion:spawn_furniture/setup/candle_flame
+execute rotated as @e[tag=forward_angle,tag=candle_angle,limit=1] positioned ^ ^ ^0.424 rotated as @e[tag=up_angle,tag=candle_angle,limit=1] positioned ^ ^ ^0.665 rotated as @e[tag=this_entity,limit=1] run function luigis_mansion:spawn_furniture/setup/candle_flame
+execute rotated as @e[tag=forward_angle,tag=candle_angle,limit=1] positioned ^ ^ ^0.307 rotated as @e[tag=up_angle,tag=candle_angle,limit=1] positioned ^ ^ ^0.602 rotated as @e[tag=left_angle,tag=candle_angle,limit=1] positioned ^ ^ ^0.277 rotated as @e[tag=this_entity,limit=1] rotated ~-45 ~ run function luigis_mansion:spawn_furniture/setup/candle_flame
 scoreboard players set @e[tag=this_entity,limit=1] FurnitureSizeRadius 6
 scoreboard players set @e[tag=this_entity,limit=1] FurnitureDustLeft 0
 scoreboard players set @e[tag=this_entity,limit=1] FurnitureDustUp 0

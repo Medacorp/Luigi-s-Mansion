@@ -2,6 +2,7 @@ v3.1:
 * Updated to 1.21.2
 * Added the Boo cackle counter, where 10+ cackles results in it not staying in place for a moment
 * Added ghost flee tasks
+* Added missing ghost animation pull_e_gadd
 * Added some missing furniture scan message
 * Added unique scan message for scanning fainted players
 * Added ghost loot dropping when in lab; requires the now-now-furniture-exclusive works_in_lab field
@@ -20,8 +21,10 @@ v3.1:
 * Changed items dropped when taking damage to have upward motion
 * Changed "It's <name>" telephone call option icon to be colored based on your actual model color
 * Changed all instances of items to use the new item_model component; damage and custom model data have been redefined as "model piece number" and "model variant"
-* Fixed loot chances to be true to the game
+* Changed E. Gadd's walk animation names; walk_look_sideways (previously walk) is now only used during portrificationizing, all other instances now use walk (previously walk_to_lab)
+* Fixed furniture loot chances aren't true to the game
 * Fixed speedy spirits don't get base loot dropped at 0 if a money ID was provided for loot dropped at 0
+* Fixed elemental death of ghosts doesn't drop loot that drops when HP reaches 0
 * Fixed hard difficulty stunning incorrectly calculates stun time; it now simply caps the stun time
 * Fixed dropping items doesn't allow using them for a single tick
 * Fixed dropping poltergust wipes element meter
@@ -34,6 +37,11 @@ v3.1:
 * Fixed items have trouble bouncing onto bottom slabs
 * Fixed items with precise curve motion will snap to y positions
 * Fixed revive message doesn't properly fetch reviver from UUID
+* Fixed candle flames from both furniture and Shivers are not fully accurately angled
+* Fixed first key bounces away upon turning into a real key
+* Fixed reeling in ghosts can disconnect due to distance; step counter for poltergust now is disabled for dying ghosts
+* Fixed 3DS Remake weak flashlight (strobulb) reflection causes more and more lag
+* Fixed E. Gadd's animations don't support mirroring
 * Removed special E. Gadd model for the poltergust, E. Gadd now uses the same models as the player
 * Removed built-in scan message when scanning a mirror if mirror warp is disabled
 

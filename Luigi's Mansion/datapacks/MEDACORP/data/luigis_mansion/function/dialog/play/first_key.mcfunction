@@ -41,6 +41,6 @@ execute if score #dialog Dialog matches 369..374 as @e[tag=same_room,tag=first_k
 execute if score #dialog Dialog matches 469 run tag @e[tag=same_room,tag=first_key] add remove_from_existence
 execute if score #dialog Dialog matches 469 run data modify storage luigis_mansion:data entity set value {silent:1b,room:1}
 execute if score #dialog Dialog matches 469 run data modify storage luigis_mansion:data entity.room set from storage luigis_mansion:data dialogs[0].room
-execute if score #dialog Dialog matches 469 at @e[tag=same_room,tag=key_model,limit=1] positioned ~-0.7 ~0.9 ~-0.7 run function luigis_mansion:spawn_entities/item/key {door:"parlor"}
+execute if score #dialog Dialog matches 469 positioned 751.0 11 9.0 rotated -90 90 run function luigis_mansion:spawn_entities/item/key {door:"parlor"}
 execute if score #dialog Dialog matches 469 run tag @e[tag=same_room,tag=key_model,limit=1] add remove_from_existence
 execute if score #dialog Dialog matches 469 run scoreboard players set #dialog Dialog -1

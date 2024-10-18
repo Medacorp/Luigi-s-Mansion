@@ -113,7 +113,7 @@ execute if score #dialog Dialog matches 272 as @e[tag=ghost,tag=same_room,limit=
 execute if score #dialog Dialog matches 273..292 as @e[tag=ghost,tag=same_room,limit=1] at @s run teleport @s ^ ^ ^0.2
 execute if score #dialog Dialog matches 293 as @e[tag=ghost,tag=same_room,limit=1] at @s run teleport @s ~ ~ ~ facing 723 20.3 35
 execute if score #dialog Dialog matches 294..323 as @e[tag=ghost,tag=same_room,limit=1] at @s facing 723 20.3 35 run teleport @s ^ ^ ^0.1
-execute if score #dialog Dialog matches 317 run data modify entity @e[tag=ghost,tag=same_room,limit=1] data.animation set value {namespace:"luigis_mansion",id:"haunt"}
+execute if score #dialog Dialog matches 317 run data modify entity @e[tag=ghost,tag=same_room,limit=1] data.animation set value {namespace:"luigis_mansion",id:"pull_e_gadd"}
 execute if score #dialog Dialog matches 317..319 as @e[tag=ghost,tag=same_room,limit=1] at @s run teleport @s ~ ~ ~ ~60 ~
 execute if score #dialog Dialog matches 320 as @e[tag=ghost,tag=same_room,limit=1] at @s run playsound luigis_mansion:entity.gold_ghost.cutscene_pull hostile @a[tag=same_room] ~ ~ ~ 1
 execute if score #dialog Dialog matches 340 as @e[tag=ghost,tag=same_room,limit=1] at @s run playsound luigis_mansion:entity.gold_ghost.cutscene_pull hostile @a[tag=same_room] ~ ~ ~ 1

@@ -18,6 +18,7 @@ execute if entity @s[scores={HurtTime=30..,Health=1..},tag=!no_ai] at @e[type=mi
 scoreboard players reset #temp PullAngle
 scoreboard players reset #temp Time
 scoreboard players reset #temp2 Time
+scoreboard players set #temp Steps 0
 execute at @s run summon minecraft:marker ~ ~ ~ {Tags:["temp","target_direction"]}
 execute store result score #temp PositionY run data get entity @s Pos[1] 10
 execute store result entity @e[tag=target_direction,limit=1] Pos[1] double 0.1 run scoreboard players operation #temp PositionY += @s EntityYOffset
