@@ -188,7 +188,6 @@ scoreboard objectives add Sound dummy
 scoreboard objectives add SpawnTime dummy
 scoreboard objectives add Steps dummy
 scoreboard objectives add StunTime dummy
-scoreboard objectives add Talk minecraft.custom:minecraft.talked_to_villager
 scoreboard objectives add TargetTask dummy
 scoreboard objectives add TargetTime dummy
 scoreboard objectives add TargetX dummy

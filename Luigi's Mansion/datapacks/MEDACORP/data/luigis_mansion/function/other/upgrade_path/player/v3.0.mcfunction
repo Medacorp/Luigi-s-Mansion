@@ -29,4 +29,3 @@ scoreboard players reset #temp3 Time
 scoreboard players reset #temp4 Time
 scoreboard players reset #temp5 Time
 function luigis_mansion:other/sync_inventory
-scoreboard players set #v3.0 UpgradePlayer 1
