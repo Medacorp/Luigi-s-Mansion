@@ -2,6 +2,8 @@ give @s minecraft:diamond_pickaxe[minecraft:unbreakable={show_in_tooltip:0b},min
 execute in minecraft:overworld run teleport @s 858 90 -38 0 0
 attribute @s minecraft:max_health base set 100
 attribute @s minecraft:jump_strength base set 0
+attribute @s minecraft:gravity base set 0
+attribute @s minecraft:movement_speed base set 0
 effect give @s minecraft:instant_health 1 19 true
 gamemode adventure @s
 title @s times 40 40 40

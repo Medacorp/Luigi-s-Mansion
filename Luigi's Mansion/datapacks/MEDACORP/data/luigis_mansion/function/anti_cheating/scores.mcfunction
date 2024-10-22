@@ -170,7 +170,6 @@ scoreboard objectives add RoomSection dummy
 scoreboard objectives add RotationDifference dummy
 scoreboard objectives add RotationX dummy
 scoreboard objectives add RotationY dummy
-scoreboard objectives add Run minecraft.custom:minecraft.sprint_one_cm
 scoreboard objectives add Search dummy
 scoreboard objectives add Searched dummy
 scoreboard objectives add SearcherID dummy
@@ -181,8 +180,6 @@ scoreboard objectives add Selected dummy
 scoreboard objectives add Shrunk dummy
 scoreboard objectives add SlipX dummy
 scoreboard objectives add SlipZ dummy
-scoreboard objectives add Sneak minecraft.custom:minecraft.crouch_one_cm
-scoreboard objectives add Sneaking minecraft.custom:minecraft.sneak_time
 scoreboard objectives add SneakTime dummy
 scoreboard objectives add Sound dummy
 scoreboard objectives add SpawnTime dummy
@@ -211,9 +208,6 @@ scoreboard objectives add VanishTime dummy
 scoreboard objectives add Variant dummy
 scoreboard objectives add VulnerableTime dummy
 scoreboard objectives add WaitTime dummy
-scoreboard objectives add Walk minecraft.custom:minecraft.walk_one_cm
-scoreboard objectives add WalkOnWater minecraft.custom:minecraft.walk_on_water_one_cm
-scoreboard objectives add WalkUnderWater minecraft.custom:minecraft.walk_under_water_one_cm
 scoreboard objectives add WarpTime dummy
 scoreboard objectives add Wave dummy
 
@@ -251,6 +245,7 @@ execute unless score #global_player_names Selected matches 0..1 run scoreboard p
 execute unless score #debug_messages Selected matches 0..2 run scoreboard players set #debug_messages Selected 0
 execute unless score #debug_furniture Selected matches 0..1 run scoreboard players set #debug_furniture Selected 0
 execute unless score #debug_entities Selected matches 0..1 run scoreboard players set #debug_entities Selected 0
+execute unless score #debug_phase_through_walls Selected matches 0..1 run scoreboard players set #debug_phase_through_walls Selected 0
 
 bossbar add luigis_mansion:boo_counter {"type":"translatable","translate":"luigis_mansion:message.boo_counter","color":"white","with":["0","0"]}
 bossbar set luigis_mansion:boo_counter color white

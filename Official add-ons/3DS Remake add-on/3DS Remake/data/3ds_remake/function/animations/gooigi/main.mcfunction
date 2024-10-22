@@ -4,12 +4,7 @@ execute if data storage luigis_mansion:data luigi.mirror.z store result score @s
 #todelete - old mirror reflections
 execute if data storage luigis_mansion:data luigi.mirror{mirror_set_by_furniture_entity:1b} run tag @s add mirror_set_by_furniture_entity
 #/todelete
-execute if entity @s[tag=was_sneaking,tag=!was_swimming,tag=!riding_poltergust] unless entity @s[scores={AnimationProgress=1..}] unless data storage luigis_mansion:data luigi{tags:["sneaking"]} run function luigis_mansion:animations/luigi/reset_pose
-execute if entity @s[tag=was_walking,tag=!was_swimming,tag=!riding_poltergust] unless entity @s[scores={AnimationProgress=1..}] unless data storage luigis_mansion:data luigi{tags:["walking"]} run function luigis_mansion:animations/luigi/reset_pose
-execute if entity @s[tag=was_running,tag=!was_swimming,tag=!riding_poltergust] unless entity @s[scores={AnimationProgress=1..}] unless data storage luigis_mansion:data luigi{tags:["running"]} run function luigis_mansion:animations/luigi/reset_pose
-execute if entity @s[tag=was_swimming] unless data storage luigis_mansion:data luigi{tags:["swimming"]} run function luigis_mansion:animations/luigi/reset_pose
-execute if entity @s[scores={AnimationProgress=0},tag=was_swimming] store result entity @s Pose.Head[0] float 1 run scoreboard players get @s IncreaseAmount
-execute if entity @s[tag=!was_swimming] if data storage luigis_mansion:data luigi{tags:["swimming"]} run function luigis_mansion:animations/luigi/reset_pose
+execute if entity @s[tag=was_walking,tag=!riding_poltergust] unless entity @s[scores={AnimationProgress=1..}] unless data storage luigis_mansion:data luigi{tags:["walking"]} run function luigis_mansion:animations/luigi/reset_pose
 execute if entity @s[tag=!was_riding_poltergust] if data storage luigis_mansion:data luigi{tags:["riding_poltergust"]} run function luigis_mansion:animations/luigi/reset_pose
 execute if entity @s[tag=was_riding_poltergust] unless data storage luigis_mansion:data luigi{tags:["riding_poltergust"]} run function luigis_mansion:animations/luigi/reset_pose
 execute if entity @s[tag=!death_animation] if data storage luigis_mansion:data luigi{alive:0b} run function luigis_mansion:animations/luigi/reset_pose
@@ -24,19 +19,17 @@ execute if data storage luigis_mansion:data luigi{alive:0b} run tag @s[tag=!revi
 execute if data storage luigis_mansion:data luigi{shrunk:1b} run attribute @s minecraft:scale base set 0.5
 execute if data storage luigis_mansion:data luigi{shrunk:1b} run tag @s add shrunk
 execute if data storage luigis_mansion:data luigi{shrunk:0b} run attribute @s minecraft:scale base set 1
-tag @s[tag=riding_poltergust] remove sneak_pos
 tag @s[tag=riding_poltergust] remove low_health
-execute unless data storage luigis_mansion:data luigi.animation{namespace:"luigis_mansion",id:"idle"} run tag @s remove sneak_pos
-execute if data storage luigis_mansion:data luigi{gliding:1b} run tag @s[tag=walking] remove walking
+execute unless data storage luigis_mansion:data luigi.animation{namespace:"luigis_mansion",id:"idle"} run tag @s remove low_health
 execute unless data entity @s Pose.Head[0] run data merge entity @s {Pose:{Head:[0.001f,0.001f,0.001f]}}
-execute store result score #temp Time run data get entity @s Pose.Head[0]
-execute if entity @s[tag=!head] store result entity @s Pose.Head[0] float 1 run scoreboard players operation #temp Time -= @s IncreaseAmount
-execute unless data storage luigis_mansion:data luigi{gliding:0b,swimming:0b} store result score @s IncreaseAmount run data get entity @e[tag=gooigi,limit=1] Rotation[1]
-execute unless data storage luigis_mansion:data luigi{gliding:0b,swimming:0b} run scoreboard players add @s IncreaseAmount 90
-execute if data storage luigis_mansion:data luigi{gliding:0b,swimming:0b} run scoreboard players set @s IncreaseAmount 0
-scoreboard players reset #temp Time
-execute if data storage luigis_mansion:data luigi{gliding:0b,swimming:0b} run function 3ds_remake:animations/gooigi/call_part_function
-execute unless data storage luigis_mansion:data luigi{gliding:0b,swimming:0b} rotated ~ ~90 run function 3ds_remake:animations/gooigi/call_part_function
+#execute store result score #temp Time run data get entity @s Pose.Head[0]
+#execute if entity @s[tag=!head] store result entity @s Pose.Head[0] float 1 run scoreboard players operation #temp Time -= @s IncreaseAmount
+#execute unless data storage luigis_mansion:data luigi{gliding:0b,swimming:0b} store result score @s IncreaseAmount run data get entity @e[tag=gooigi,limit=1] Rotation[1]
+#execute unless data storage luigis_mansion:data luigi{gliding:0b,swimming:0b} run scoreboard players add @s IncreaseAmount 90
+#execute if data storage luigis_mansion:data luigi{gliding:0b,swimming:0b} run scoreboard players set @s IncreaseAmount 0
+#scoreboard players reset #temp Time
+function 3ds_remake:animations/gooigi/call_part_function
+#execute unless data storage luigis_mansion:data luigi{gliding:0b,swimming:0b} rotated ~ ~90 run function 3ds_remake:animations/gooigi/call_part_function
 execute store result score #temp Time run data get entity @s Pose.Head[0]
 execute if entity @s[tag=!head] store result entity @s Pose.Head[0] float 1 run scoreboard players operation #temp Time += @s IncreaseAmount
 scoreboard players reset #temp Time
@@ -45,18 +38,9 @@ execute if data storage luigis_mansion:data luigi{invulnerable:0b} if entity @s[
 tag @s[tag=low_health] add was_low_health
 tag @s[tag=!low_health] remove was_low_health
 tag @s[tag=low_health] remove low_health
-tag @s[tag=sneaking,tag=!stop_model] add was_sneaking
-tag @s[tag=!sneaking] remove was_sneaking
-tag @s[tag=sneaking] remove sneaking
 tag @s[tag=walking,tag=!stop_model] add was_walking
 tag @s[tag=!walking] remove was_walking
 tag @s[tag=walking] remove walking
-tag @s[tag=running,tag=!stop_model] add was_running
-tag @s[tag=!running] remove was_running
-tag @s[tag=running] remove running
-tag @s[tag=swimming,tag=!stop_model] add was_swimming
-tag @s[tag=!swimming] remove was_swimming
-tag @s[tag=swimming] remove swimming
 tag @s[tag=sneak_pos,tag=!stop_model] add was_sneak_posing
 tag @s[tag=!sneak_pos] remove was_sneak_posing
 tag @s[tag=sneak_pos] remove sneak_pos

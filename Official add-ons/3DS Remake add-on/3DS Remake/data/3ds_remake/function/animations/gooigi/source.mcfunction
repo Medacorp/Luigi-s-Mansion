@@ -41,7 +41,6 @@ execute rotated as @s run teleport @s[tag=!stop_model,tag=flipped_gravity,tag=sn
 execute at @s if entity @a[tag=gooigi,limit=1] run teleport @s[tag=!stop_model,tag=!shrunk] ^ ^ ^-0.25
 execute at @s if entity @a[tag=gooigi,limit=1] run teleport @s[tag=!stop_model,tag=shrunk] ^ ^ ^-0.125
 
-execute unless data storage luigis_mansion:data luigi{swimming:0b,gliding:0b} run teleport @s ~ ~-1 ~
-execute unless data storage luigis_mansion:data luigi{swimming:0b,gliding:0b} if entity @s[tag=!stop_model] run data modify entity @s Rotation[1] set from entity @e[tag=gooigi,limit=1] Rotation[1]
-execute unless data storage luigis_mansion:data luigi{swimming:0b,gliding:0b} if entity @s[tag=!stop_model] run data modify entity @s Rotation[0] set from entity @e[tag=gooigi,limit=1] Rotation[0]
-execute if data storage luigis_mansion:data luigi{swimming:0b,gliding:0b} if entity @s[tag=!stop_model] run data modify entity @s Rotation[1] set value 0.0f
+#execute unless data storage luigis_mansion:data luigi{swimming:0b,gliding:0b} run teleport @s ~ ~-1 ~
+#execute unless data storage luigis_mansion:data luigi{swimming:0b,gliding:0b} if entity @s[tag=!stop_model] run data modify entity @s Rotation set from entity @e[tag=gooigi,limit=1] Rotation
+execute if entity @s[tag=!stop_model] run data modify entity @s Rotation[1] set value 0.0f

@@ -1,2 +1,2 @@
-execute if entity @s[nbt={data:{entity:{namespace:"luigis_mansion",id:"boo"}}}] if score #firstRun Selected matches 1 run function luigis_mansion:entities/boo/captured with entity @s data.mansion
-execute if entity @s[nbt={data:{entity:{namespace:"luigis_mansion",id:"boolossus"}}}] if score #firstRun Selected matches 1 run function luigis_mansion:entities/boo/captured with entity @s data.mansion
+execute if entity @s[nbt={data:{entity:{namespace:"luigis_mansion",id:"boo"}}}] unless data storage luigis_mansion:data current_state.ghost_caught.uuid run function luigis_mansion:entities/boo/captured with entity @s data.mansion
+execute if entity @s[nbt={data:{entity:{namespace:"luigis_mansion",id:"boolossus"}}}] unless data storage luigis_mansion:data current_state.ghost_caught.uuid run function luigis_mansion:entities/boo/captured with entity @s data.mansion

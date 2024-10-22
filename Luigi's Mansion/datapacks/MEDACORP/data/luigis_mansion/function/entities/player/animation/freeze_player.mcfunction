@@ -5,6 +5,3 @@ execute store result entity @e[tag=home,limit=1] Pos[2] double 0.01 run scoreboa
 execute at @e[tag=home,limit=1] run teleport @s[distance=0.01..] 0 0 0
 execute at @e[tag=home,limit=1] run teleport @s[distance=0.01..] ~ ~ ~
 kill @e[tag=home,limit=1]
-scoreboard players set @s Walk 0
-scoreboard players set @s Run 0
-scoreboard players set @s Sneak 0

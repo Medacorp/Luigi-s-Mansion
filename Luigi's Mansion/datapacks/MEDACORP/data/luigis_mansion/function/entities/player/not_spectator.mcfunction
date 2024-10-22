@@ -1,5 +1,7 @@
 function luigis_mansion:room/dark_room
 
+execute if entity @s[nbt=!{abilities:{flying:1b}}] run function luigis_mansion:entities/player/movement
+
 execute if entity @s[scores={Health=..0},tag=!death_animation,tag=!revive_animation,tag=!dead_player,tag=!death_wait_tick] unless entity @s[scores={AnimationProgress=1..},tag=!idle] run function luigis_mansion:entities/player/death
 tag @s remove death_wait_tick
 execute if entity @s[scores={Health=1..},tag=dead_player] run function luigis_mansion:entities/player/remove_dead_entry with entity @s
@@ -29,15 +31,14 @@ effect give @s[scores={Food=..0}] minecraft:saturation 1 0 true
 execute unless entity @s[scores={MaxHealth=100}] run scoreboard players add @s MaxHealthTime 1
 execute if entity @s[scores={MaxHealthTime=1}] if score @s MaxHealth < @s Health run function luigis_mansion:entities/player/reduce_health_to_max
 execute if entity @s[scores={Health=0}] run scoreboard players set @s MaxHealthTime 200
-execute unless entity @s[scores={MaxHealth=100}] unless entity @s[scores={Walk=0..2,Run=0..2,Sneak=0}] run scoreboard players add @s MaxHealthTime 1
 scoreboard players set @s[scores={MaxHealthTime=200}] MaxHealth 100
 scoreboard players reset @s[scores={MaxHealthTime=200}] MaxHealthTime
 
 execute if entity @s[tag=!spectator,tag=!dead_player] run function luigis_mansion:entities/player/idle
-execute if entity @s[scores={AnimationProgress=1..},tag=!dead_player,tag=idle] unless entity @s[scores={Walk=0,Run=0,Sneak=0},tag=!sneak_pos,tag=!spectator] run function luigis_mansion:entities/player/animation/set/none
+execute if entity @s[scores={AnimationProgress=1..},tag=!dead_player,tag=idle] unless entity @s[tag=!walking,tag=!spectator] run function luigis_mansion:entities/player/animation/set/none
 execute if entity @s[scores={AnimationProgress=1..},tag=!dead_player,tag=!idle,tag=!animation_may_move,tag=!using_selection_menu] run function luigis_mansion:entities/player/animation/freeze_player
 
-execute unless entity @s[scores={Walk=0,Run=0,Sneak=0}] if entity @s[tag=!looking_at_map] run function luigis_mansion:entities/player/walk_dust
+execute if entity @s[tag=walking,tag=!looking_at_map] run function luigis_mansion:entities/player/walk_dust
 tag @s[scores={TeleportDelayTimer=0}] remove pulled_by_ghost
 
 execute at @s[scores={LightX=-2147483648..}] unless entity @s[scores={Shrunk=1..}] run function luigis_mansion:other/cast_shadow/2_tall

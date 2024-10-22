@@ -1,7 +1,7 @@
-execute if entity @a[x=643.5,y=12,z=47.5,distance=..0.7,tag=!spectator,limit=1] run scoreboard players add #rec_room_threadmill Run 1
+execute if entity @a[x=643.5,y=12,z=47.5,distance=..0.7,tag=!spectator,limit=1] run scoreboard players add #rec_room_threadmill SneakTime 1
 execute as @a[x=643.5,y=12,z=47.5,distance=..0.7,tag=!spectator,scores={TeleportDelayTimer=0},limit=1] at @s run teleport @s ~ ~ ~0.2
-execute unless entity @a[x=643.5,y=12,z=47.7,distance=..0.7,tag=!spectator,limit=1] run scoreboard players reset #rec_room_threadmill Run
-execute if score #rec_room_threadmill Run matches 60 run function luigis_mansion:room/hidden/rec_room/search/threadmill
+execute unless entity @a[x=643.5,y=12,z=47.7,distance=..0.7,tag=!spectator,limit=1] run scoreboard players reset #rec_room_threadmill SneakTime
+execute if score #rec_room_threadmill SneakTime matches 60 run function luigis_mansion:room/hidden/rec_room/search/threadmill
 execute unless score #rec_room_threadmill Search matches 1 run scoreboard players reset #rec_room_threadmill Searching
 scoreboard players reset #rec_room_threadmill Search
 scoreboard players operation #temp Searching = #rec_room_threadmill Searching

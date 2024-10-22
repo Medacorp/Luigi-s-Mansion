@@ -1,5 +1,3 @@
-attribute @s minecraft:movement_speed base set 0.10000000149011612
-effect clear @s minecraft:speed
 summon minecraft:marker ~ ~ ~ {Tags:["me"]}
 tag @s add me
 execute as @e[type=minecraft:marker,tag=me] run function luigis_mansion:selection_menu/game_boy_horror/map/return
