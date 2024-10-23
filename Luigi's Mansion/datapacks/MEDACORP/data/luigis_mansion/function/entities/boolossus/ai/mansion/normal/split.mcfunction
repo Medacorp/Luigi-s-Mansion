@@ -58,5 +58,6 @@ execute at @s[scores={Wave=600..},tag=!to_me] facing entity @e[tag=to_me,limit=1
 teleport @s[scores={Wave=600..},tag=to_me] ~ ~0.1 ~
 execute if entity @s[scores={Wave=610..},tag=to_me] run particle minecraft:campfire_cosy_smoke ~ ~3 ~ 0.4 0.4 0.4 0 10 force
 scoreboard players set @s[scores={Wave=600..}] Move 100
+execute at @s[scores={Dialog=0,Wave=600..},tag=!to_me] run function luigis_mansion:entities/boolossus/move/forward
 tag @s[scores={Wave=640}] add remove_from_existence
 execute if entity @s[scores={Wave=640},tag=to_me] run function luigis_mansion:entities/boolossus/ai/mansion/normal/merge

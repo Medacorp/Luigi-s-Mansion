@@ -1,11 +1,14 @@
+v3.1.1:
+* Fixed merging Boolossus doesn't move to merging point
+
 v3.1:
 * Updated to 1.21.2-1.21.3
 * Added the Boo cackle counter, where 10+ cackles results in it not staying in place for a moment
 * Added ghost flee tasks
 * Added missing ghost animation pull_e_gadd
-* Added some missing furniture scan message
+* Added some missing furniture scan messages
 * Added unique scan message for scanning fainted players
-* Added ghost loot dropping when in lab; requires the now-now-furniture-exclusive works_in_lab field
+* Added ghost loot dropping when in lab; requires the now-not-furniture-exclusive works_in_lab field
 * Added 3DS Remake game boy horror boot up visual aspects
 * Changed the 3DS Remake training room program, ghosts in the training room during it can now drop hearts
 * Changed players to look at vacuum-latched-on ghosts in order of latching, rather than look at the averaged out position; the new behavior matches the original game
