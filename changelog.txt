@@ -1,5 +1,5 @@
 v3.1:
-* Updated to 1.21.2
+* Updated to 1.21.2-1.21.3
 * Added the Boo cackle counter, where 10+ cackles results in it not staying in place for a moment
 * Added ghost flee tasks
 * Added missing ghost animation pull_e_gadd

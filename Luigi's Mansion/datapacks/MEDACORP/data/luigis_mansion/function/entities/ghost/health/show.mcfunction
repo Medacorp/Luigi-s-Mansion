@@ -16,3 +16,5 @@ execute unless entity @s[scores={StunTime=0},tag=!hurt,tag=!element_hurt,tag=!sh
 execute unless entity @s[scores={StunTime=0},tag=!hurt,tag=!element_hurt,tag=!show_health] if entity @s[tag=!dying] unless entity @e[tag=this_health_display,limit=1] run function luigis_mansion:entities/ghost/health/spawn with storage luigis_mansion:data macro
 execute unless entity @e[tag=this_health_display,limit=1] run tag @s remove spawned_health_display
 tag @e[tag=this_health_display,limit=1] remove this_health_display
+scoreboard players reset #temp Health
+scoreboard players reset #temp Room

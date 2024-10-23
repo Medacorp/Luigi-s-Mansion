@@ -12,5 +12,4 @@ tag @s[tag=was_infinite_health,tag=!infinite_health] remove was_infinite_health
 $execute positioned ~ ~-0.8 ~ run teleport @s ~ ~$(up) ~ ~ ~
 scoreboard players operation @s Health = #temp Health
 scoreboard players operation @s Room = #temp Room
-scoreboard players reset #temp Health
 scoreboard players reset #temp Time

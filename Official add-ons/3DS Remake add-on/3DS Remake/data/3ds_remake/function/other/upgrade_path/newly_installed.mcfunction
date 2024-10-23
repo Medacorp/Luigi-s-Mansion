@@ -105,7 +105,6 @@ data remove storage luigis_mansion:data new_high_scores
 execute if score #temp Time matches ..216000 if data storage 3ds_remake:data current_state.trophy.master{task_7:0b} run data modify storage 3ds_remake:data current_state.trophy.master.task_7 set value 1b
 scoreboard players reset #temp Time
 scoreboard players reset #temp Money
-scoreboard players set #can_get_platinum_boss Selected 0
 execute if data storage luigis_mansion:data current_state.current_data.mansion_id{namespace:"luigis_mansion",id:"hidden"} if entity @a[advancements={luigis_mansion:vanilla/clear_hidden_mansion=false}] run function 3ds_remake:other/upgrade_path/convert_hidden_data
 execute if entity @a[advancements={luigis_mansion:vanilla/clear_hidden_mansion=true}] unless data storage luigis_mansion:data current_state.high_scores[{data_index:1}] run data modify storage 3ds_remake:data current_state.trophy.hard.task_5 set value 1b
 execute if entity @a[advancements={luigis_mansion:vanilla/clear_hidden_mansion=true}] unless data storage luigis_mansion:data current_state.high_scores[{data_index:1}] if data storage luigis_mansion:data current_state.high_scores[{data_index:0}] run function 3ds_remake:other/upgrade_path/clone_high_score

@@ -192,3 +192,4 @@ data remove storage 3ds_remake:data current_state.portrait_ghosts_defeated_in
 data remove storage 3ds_remake:data current_state.boos_caught
 data remove storage 3ds_remake:data saved_state.portrait_ghosts_defeated_in
 data remove storage 3ds_remake:data saved_state.boos_caught
+scoreboard players reset #can_get_platinum_boss
