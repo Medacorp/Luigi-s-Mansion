@@ -11,8 +11,8 @@ execute if entity @s[scores={Dialog=41..100}] if predicate luigis_mansion:50_50 
 execute if entity @s[scores={Dialog=140..180}] run teleport @s ~ ~ ~ ~5 ~
 execute if entity @s[scores={Dialog=181..220}] run teleport @s ~ ~ ~ ~10 ~
 execute if entity @s[scores={Dialog=221..299}] run teleport @s ~ ~ ~ ~20 ~
-execute if entity @s[scores={Dialog=200..279}] store result score #temp Time run data get entity @s ArmorItems[3].components."minecraft:custom_model_data"
-execute if entity @s[scores={Dialog=200..279}] store result entity @s ArmorItems[3].components."minecraft:custom_model_data" int 1 run scoreboard players add #temp Time 1
+execute if entity @s[scores={Dialog=200..279}] store result score #temp Time run data get entity @s ArmorItems[3].components."minecraft:custom_model_data".floats[0]
+execute if entity @s[scores={Dialog=200..279}] store result entity @s ArmorItems[3].components."minecraft:custom_model_data".floats[0] float 1 run scoreboard players add #temp Time 1
 scoreboard players reset #temp Time
 data modify entity @s[scores={Dialog=300}] Pose.Head[0] set value 0f
 teleport @s[scores={Dialog=300}] 770 80 12 0 0

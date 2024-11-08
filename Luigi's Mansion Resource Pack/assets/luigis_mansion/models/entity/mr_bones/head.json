@@ -2,7 +2,7 @@
 	"credit": "Made with Blockbench",
 	"textures": {
 		"0": "luigis_mansion:entity/mr_bones/head_arms",
-		"particle": "luigis_mansion:entity/mr_bones/head_arms"
+		"particle": "#0"
 	},
 	"elements": [
 		{

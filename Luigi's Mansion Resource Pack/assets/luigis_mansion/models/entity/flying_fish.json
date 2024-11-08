@@ -2,7 +2,7 @@
 	"credit": "Made with Blockbench",
 	"textures": {
 		"0": "luigis_mansion:entity/flying_fish",
-		"particle": "luigis_mansion:entity/flying_fish"
+		"particle": "#0"
 	},
 	"elements": [
 		{

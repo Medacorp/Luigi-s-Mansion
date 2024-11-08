@@ -3,7 +3,7 @@
 	"textures": {
 		"0": "luigis_mansion:furniture/red_trophy/extensions",
 		"1": "luigis_mansion:furniture/red_trophy/main",
-		"particle": "luigis_mansion:furniture/red_trophy/extensions"
+		"particle": "#1"
 	},
 	"elements": [
 		{

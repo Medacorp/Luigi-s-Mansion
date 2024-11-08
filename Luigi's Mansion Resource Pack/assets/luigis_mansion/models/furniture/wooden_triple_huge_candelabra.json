@@ -3,7 +3,7 @@
 	"textures": {
 		"0": "luigis_mansion:furniture/wooden_candelabra",
 		"1": "luigis_mansion:furniture/candle/huge_blank",
-		"particle": "luigis_mansion:furniture/wooden_candelabra"
+		"particle": "#0"
 	},
 	"elements": [
 		{

@@ -1,0 +1,74 @@
+{
+    "model": {
+        "type": "minecraft:select",
+        "property": "minecraft:display_context",
+        "cases": [
+            {
+                "when": "gui",
+                "model": {
+                    "type": "minecraft:model",
+                    "model": "luigis_mansion:item/entity/puncher",
+                    "tints": [
+                        {
+                            "type": "minecraft:dye",
+                            "default": 16777215
+                        }
+                    ]
+                }
+            }
+        ],
+        "fallback": {
+            "type": "minecraft:condition",
+            "property": "minecraft:custom_model_data",
+            "index": 0,
+            "on_false": {
+                "type": "minecraft:range_dispatch",
+                "property": "minecraft:custom_model_data",
+                "index": 0,
+                "scale": 1.0,
+                "entries": [
+                    {
+                        "threshold": 1,
+                        "model": {
+                            "type": "minecraft:model",
+                            "model": "luigis_mansion:entity/puncher/right_arm",
+                            "tints": [
+                                {
+                                    "type": "minecraft:dye",
+                                    "default": 16777215
+                                }
+                            ]
+                        }
+                    },
+                    {
+                        "threshold": 2,
+                        "model": {
+                            "type": "minecraft:model",
+                            "model": "luigis_mansion:entity/puncher/left_arm",
+                            "tints": [
+                                {
+                                    "type": "minecraft:dye",
+                                    "default": 16777215
+                                }
+                            ]
+                        }
+                    }
+                ],
+                "fallback": {
+                    "type": "minecraft:model",
+                    "model": "luigis_mansion:entity/puncher/body",
+                    "tints": [
+                        {
+                            "type": "minecraft:dye",
+                            "default": 16777215
+                        }
+                    ]
+                }
+            },
+            "on_true": {
+                "type": "minecraft:model",
+                "model": "luigis_mansion:item/empty"
+            }
+        }
+    }
+}

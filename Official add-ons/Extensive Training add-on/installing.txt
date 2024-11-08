@@ -1,5 +1,5 @@
 == NOTICE ==
-This is an official add-on, it is made by the map creator and will be updated alongside the map.
+This is an official add-on, it is made by Medacorp and will be updated alongside the map.
 Any compatibility issues with this add-on should be reported to the conflicting add-on.
 
 The 11 ghosts by yourself in the training room advancement is not granted for this add-on's training room programs. Select vanilla to try to get that instead.

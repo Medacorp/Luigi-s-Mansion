@@ -1,6 +1,5 @@
 {
 	"credit": "Made with Blockbench",
-	"ambientocclusion": false,
 	"textures": {
 		"0": "luigis_mansion:furniture/candle/flame/red",
 		"particle": "#0"

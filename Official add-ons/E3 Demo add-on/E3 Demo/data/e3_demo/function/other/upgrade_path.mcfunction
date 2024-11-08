@@ -1,4 +1,4 @@
 execute if data storage e3_demo:data current_state unless data storage e3_demo:data {data_version:2} run function e3_demo:other/upgrade_path/root/v3.0
-execute if data storage luigis_mansion:data current_state.current_data{data_index:2} unless data storage luigis_mansion:data current_state.current_data{data_index:2,data_version:3} run function e3_demo:other/upgrade_path/current_data
-execute if data storage luigis_mansion:data current_state.mansion_data[{data_index:2}] unless data storage luigis_mansion:data current_state.mansion_data[{data_index:2,data_version:3}] run function e3_demo:other/upgrade_path/current_state
-execute if data storage luigis_mansion:data saved_state.mansion_data[{data_index:2}] unless data storage luigis_mansion:data saved_state.mansion_data[{data_index:2,data_version:3}] run function e3_demo:other/upgrade_path/saved_state
+execute if data storage luigis_mansion:data current_state.current_data{data_index:2} unless data storage luigis_mansion:data current_state.current_data{data_index:2,data_version:5} run function e3_demo:other/upgrade_path/current_data
+execute if data storage luigis_mansion:data current_state.mansion_data[{data_index:2}] unless data storage luigis_mansion:data current_state.mansion_data[{data_index:2,data_version:5}] run function e3_demo:other/upgrade_path/current_state
+execute if data storage luigis_mansion:data saved_state.mansion_data[{data_index:2}] unless data storage luigis_mansion:data saved_state.mansion_data[{data_index:2,data_version:5}] run function e3_demo:other/upgrade_path/saved_state

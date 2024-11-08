@@ -5,7 +5,7 @@
 		"1": "luigis_mansion:furniture/metal_bucket/bottom",
 		"2": "luigis_mansion:furniture/metal_bucket/front",
 		"3": "luigis_mansion:furniture/metal_bucket/top",
-		"particle": "luigis_mansion:furniture/metal_bucket/back"
+		"particle": "#0"
 	},
 	"elements": [
 		{

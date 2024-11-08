@@ -4,7 +4,7 @@
 		"0": "luigis_mansion:furniture/wooden_candelabra",
 		"1": "luigis_mansion:furniture/candle/blank",
 		"2": "luigis_mansion:furniture/tea_set",
-		"particle": "luigis_mansion:furniture/wooden_candelabra"
+		"particle": "#0"
 	},
 	"elements": [
 		{

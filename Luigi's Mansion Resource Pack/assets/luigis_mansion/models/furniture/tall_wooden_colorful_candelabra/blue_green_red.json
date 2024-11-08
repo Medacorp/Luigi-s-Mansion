@@ -5,7 +5,7 @@
 		"1": "luigis_mansion:furniture/candle/red",
 		"2": "luigis_mansion:furniture/candle/blue",
 		"3": "luigis_mansion:furniture/candle/green",
-		"particle": "luigis_mansion:furniture/wooden_candelabra"
+		"particle": "#0"
 	},
 	"elements": [
 		{

@@ -2,7 +2,7 @@
 	"credit": "Made with Blockbench",
 	"textures": {
 		"0": "luigis_mansion:entity/neville",
-		"particle": "luigis_mansion:entity/neville"
+		"particle": "#0"
 	},
 	"elements": [
 		{

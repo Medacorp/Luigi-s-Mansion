@@ -2,7 +2,7 @@ $teleport @s ~ ~$(physics_offset) ~
 scoreboard players add @s Move 0
 scoreboard players add @s SpawnTime 1
 tag @s[scores={SpawnTime=40}] add affected_by_vacuum
-tag @s[scores={SpawnTime=600},tag=!eternal] add dead
+execute if entity @s[tag=!eternal,scores={SpawnTime=260..}] run function luigis_mansion:entities/item/despawning
 tag @s remove bounced_already
 
 execute if entity @s[scores={MirrorX=-2147483648..}] run scoreboard players operation #temp MirrorX = @s MirrorX

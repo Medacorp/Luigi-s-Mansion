@@ -2,7 +2,7 @@
 	"credit": "Made with Blockbench",
 	"textures": {
 		"0": "luigis_mansion:entity/clockwork_soldier/blue",
-		"particle": "luigis_mansion:entity/clockwork_soldier/blue"
+		"particle": "#0"
 	},
 	"elements": [
 		{

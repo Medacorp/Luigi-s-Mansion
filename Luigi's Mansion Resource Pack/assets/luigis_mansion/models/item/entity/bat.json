@@ -2,7 +2,7 @@
 	"credit": "Made with Blockbench",
 	"textures": {
 		"0": "luigis_mansion:entity/bat",
-		"particle": "luigis_mansion:entity/bat"
+        "particle": "#0"
 	},
 	"elements": [
 		{
@@ -92,41 +92,5 @@
 			"translation": [-0.25, 3.5, 0],
 			"scale": [0.9, 0.9, 0.9]
 		}
-	},
-    "overrides": [
-        {
-            "predicate": {
-                "damage": 0.25
-            },
-            "model": "luigis_mansion:entity/bat/body"
-        },
-        {
-            "predicate": {
-                "damage": 0.5,
-                "custom_model_data": 0
-            },
-            "model": "luigis_mansion:entity/bat/right_arm"
-        },
-        {
-            "predicate": {
-                "damage": 0.5,
-                "custom_model_data": 1
-            },
-            "model": "luigis_mansion:entity/bat/right_arm_closed"
-        },
-        {
-            "predicate": {
-                "damage": 0.75,
-                "custom_model_data": 0
-            },
-            "model": "luigis_mansion:entity/bat/left_arm"
-        },
-        {
-            "predicate": {
-                "damage": 0.75,
-                "custom_model_data": 1
-            },
-            "model": "luigis_mansion:entity/bat/left_arm_closed"
-        }
-    ]
+	}
 }

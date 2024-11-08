@@ -1,7 +1,6 @@
 {
 	"parent": "luigis_mansion:entity/boo/attacking",
 	"textures": {
-		"0": "luigis_mansion:entity/boolossus/boolossus",
-		"particle": "luigis_mansion:entity/boolossus/boolossus"
+		"0": "luigis_mansion:entity/boolossus/boolossus"
 	}
 }

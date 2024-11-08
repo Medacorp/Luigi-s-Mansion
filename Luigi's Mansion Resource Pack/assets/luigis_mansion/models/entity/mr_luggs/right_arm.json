@@ -1,7 +1,8 @@
 {
 	"credit": "Made with Blockbench",
 	"textures": {
-		"0": "luigis_mansion:entity/mr_luggs"
+		"0": "luigis_mansion:entity/mr_luggs",
+		"particle": "#0"
 	},
 	"elements": [
 		{

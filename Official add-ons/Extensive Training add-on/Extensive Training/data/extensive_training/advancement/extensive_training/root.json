@@ -6,7 +6,7 @@
             "id": "minecraft:diamond_pickaxe",
             "components": {
                 "minecraft:item_model": "luigis_mansion:poltergust_3000",
-                "minecraft:custom_model_data": 5
+                "minecraft:custom_model_data": { "flags": [ false ], "strings": [ "body_idle" ] }
             }
         },
         "show_toast": false,

@@ -1,5 +1,12 @@
 v3.1.1:
+* Updated to 1.21.4
+* Changed Game Boy Horror to shows the direction of nearby ghosts when on the clock screen (the one seen in the E3 Demo add-on)
+* Changed Game Boy Horror model and textures slightly
+* Changed item entities that are about to despawn to blink
+* Changed item despawn timer to match original game
 * Fixed merging Boolossus doesn't move to merging point
+* Fixed Body slammers have no model
+* Renamed haunted object, and hide and seek box variants
 
 v3.1:
 * Updated to 1.21.2-1.21.3

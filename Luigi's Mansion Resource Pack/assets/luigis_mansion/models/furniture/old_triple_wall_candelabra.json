@@ -4,7 +4,7 @@
 		"0": "luigis_mansion:furniture/old_wall_candelabra/holder",
 		"1": "luigis_mansion:furniture/candle/blank",
 		"2": "luigis_mansion:furniture/old_wall_candelabra/mount",
-		"particle": "luigis_mansion:furniture/old_wall_candelabra/holder"
+		"particle": "#0"
 	},
 	"elements": [
 		{

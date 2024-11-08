@@ -1,9 +1,8 @@
 {
 	"credit": "Made with Blockbench",
-	"ambientocclusion": false,
 	"textures": {
 		"0": "3ds_remake:entity/gold_bone",
-		"particle": "3ds_remake:entity/gold_bone"
+        "particle": "#0"
 	},
 	"elements": [
 		{

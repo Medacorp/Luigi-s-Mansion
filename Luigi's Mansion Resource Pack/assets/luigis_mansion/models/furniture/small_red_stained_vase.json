@@ -1,11 +1,10 @@
 {
 	"credit": "Made with Blockbench",
-	"ambientocclusion": false,
 	"textures": {
 		"0": "luigis_mansion:furniture/red_stained_vase/side",
 		"1": "luigis_mansion:furniture/red_stained_vase/bottom",
 		"2": "luigis_mansion:furniture/red_stained_vase/top",
-		"particle": "luigis_mansion:furniture/red_stained_vase/side"
+		"particle": "#0"
 	},
 	"elements": [
 		{

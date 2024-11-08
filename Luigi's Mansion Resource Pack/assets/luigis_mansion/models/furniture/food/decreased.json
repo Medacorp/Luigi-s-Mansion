@@ -2,7 +2,7 @@
 	"credit": "Made with Blockbench",
 	"textures": {
 		"0": "luigis_mansion:furniture/food",
-		"particle": "luigis_mansion:furniture/food"
+		"particle": "#0"
 	},
 	"elements": [
 		{

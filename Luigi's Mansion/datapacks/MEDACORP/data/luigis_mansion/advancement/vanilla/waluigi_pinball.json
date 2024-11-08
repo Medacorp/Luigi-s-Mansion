@@ -5,7 +5,7 @@
             "id": "minecraft:diamond_pickaxe",
             "components": {
                 "minecraft:item_model": "luigis_mansion:entity/billiards_ball",
-                "minecraft:custom_model_data": 2
+                "minecraft:custom_model_data": { "strings": [ "purple" ] }
             }
         },
         "title": {

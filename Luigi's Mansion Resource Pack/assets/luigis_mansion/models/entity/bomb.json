@@ -5,7 +5,7 @@
 		"1": "luigis_mansion:entity/bomb/side",
 		"2": "luigis_mansion:entity/bomb/top",
 		"3": "luigis_mansion:entity/bomb/fuse",
-		"particle": "luigis_mansion:entity/bomb/face"
+		"particle": "#1"
 	},
 	"elements": [
 		{

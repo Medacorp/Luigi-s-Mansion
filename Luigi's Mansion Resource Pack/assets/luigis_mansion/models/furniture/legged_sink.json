@@ -4,7 +4,7 @@
 		"0": "luigis_mansion:furniture/legged_sink/legs",
 		"1": "luigis_mansion:furniture/legged_sink/sink",
 		"2": "luigis_mansion:furniture/legged_sink/tap",
-		"particle": "luigis_mansion:furniture/legged_sink/legs"
+		"particle": "#1"
 	},
 	"elements": [
 		{

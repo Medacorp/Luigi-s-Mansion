@@ -51,7 +51,6 @@ scoreboard objectives add FurnitureIce dummy
 scoreboard objectives add FurnitureHitDirection dummy
 scoreboard objectives add FurnitureLightForward dummy
 scoreboard objectives add FurnitureLightLeft dummy
-scoreboard objectives add FurnitureLightModel dummy
 scoreboard objectives add FurnitureLightStrength dummy
 scoreboard objectives add FurnitureLightUp dummy
 scoreboard objectives add FurnitureRotationDefault dummy

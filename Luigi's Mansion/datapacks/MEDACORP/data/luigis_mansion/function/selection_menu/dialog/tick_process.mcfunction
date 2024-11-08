@@ -5,7 +5,7 @@ execute if score #temp ActionTime matches 0 run item replace entity @s[scores={F
 execute if entity @s[scores={ForceScreen=0..}] run function luigis_mansion:items/game_boy_horror/change_screen
 scoreboard players reset #temp ActionTime
 execute unless entity @s[scores={ForceRadar=1}] if entity @s[nbt={Inventory:[{components:{"minecraft:custom_data":{namespace:"luigis_mansion",id:"game_boy_horror"}}}]}] run function #luigis_mansion:items/game_boy_horror/radar_type
-execute if entity @s[scores={ForceRadar=1},nbt={Inventory:[{components:{"minecraft:custom_data":{namespace:"luigis_mansion",id:"game_boy_horror"}}}]},nbt=!{Inventory:[{components:{"minecraft:damage":3,"minecraft:custom_data":{namespace:"luigis_mansion",id:"game_boy_horror"}}}]}] run function luigis_mansion:items/game_boy_horror/turn_radar_red
+execute if entity @s[scores={ForceRadar=1},nbt={Inventory:[{components:{"minecraft:custom_data":{namespace:"luigis_mansion",id:"game_boy_horror"}}}]},nbt=!{Inventory:[{components:{"minecraft:custom_model_data":{strings:["on_top"]},"minecraft:custom_data":{namespace:"luigis_mansion",id:"game_boy_horror"}}}]}] run function luigis_mansion:items/game_boy_horror/turn_radar_on_top
 scoreboard players reset @s ForceScreen
 scoreboard players reset @s ForceRadar
 execute if entity @s[tag=!in_dialog] run function luigis_mansion:selection_menu/dialog/exit

@@ -2,7 +2,8 @@
 	"credit": "Made with Blockbench",
 	"textures": {
 		"bowser": "luigis_mansion:entity/bowser",
-		"king_boo": "luigis_mansion:entity/king_boo"
+		"king_boo": "luigis_mansion:entity/king_boo",
+		"particle": "#king_boo"
 	},
 	"elements": [
 		{

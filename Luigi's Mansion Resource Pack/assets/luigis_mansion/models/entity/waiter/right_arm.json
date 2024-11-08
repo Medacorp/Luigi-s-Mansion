@@ -3,8 +3,8 @@
 	"textures": {
 		"0": "luigis_mansion:entity/waiter",
 		"1": "luigis_mansion:entity/waiter_plate",
-		"particle": "luigis_mansion:entity/waiter",
-		"food": "luigis_mansion:block/empty"
+		"food": "luigis_mansion:block/empty",
+		"particle": "#0"
 	},
 	"elements": [
 		{

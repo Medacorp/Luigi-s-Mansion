@@ -2,7 +2,7 @@
 	"credit": "Made with Blockbench",
 	"textures": {
 		"0": "luigis_mansion:entity/miss_petunia_shadow",
-		"particle": "luigis_mansion:entity/miss_petunia_shadow"
+		"particle": "#0"
 	},
 	"elements": [
 		{

@@ -2,7 +2,7 @@
 	"credit": "Made with Blockbench",
 	"textures": {
 		"0": "e3_demo:entity/ghost",
-		"particle": "e3_demo:entity/ghost"
+        "particle": "#0"
 	},
 	"elements": [
 		{
@@ -374,25 +374,5 @@
 			"translation": [-1.5, 0, 0],
 			"scale": [0.9, 0.9, 0.9]
 		}
-	},
-    "overrides": [
-        {
-            "predicate": {
-                "damage": 0.25
-            },
-            "model": "e3_demo:entity/ghost/body"
-        },
-        {
-            "predicate": {
-                "damage": 0.5
-            },
-            "model": "e3_demo:entity/ghost/right_arm"
-        },
-        {
-            "predicate": {
-                "damage": 0.75
-            },
-            "model": "e3_demo:entity/ghost/left_arm"
-        }
-    ]
+	}
 }

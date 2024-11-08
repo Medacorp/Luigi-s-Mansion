@@ -1,0 +1,6 @@
+{
+	"parent": "luigis_mansion:entity/fire_elemental_ghost/hurt",
+	"textures": {
+		"0": "luigis_mansion:entity/ice_elemental_ghost"
+	}
+}

@@ -1,15 +1,15 @@
 data modify storage luigis_mansion:data entity set value {room:7}
-execute positioned 739 23 65 rotated -110 0 run function luigis_mansion:spawn_entities/vacuumable/haunted_object/haunted_teddy_bear
+execute positioned 739 23 65 rotated -110 0 run function luigis_mansion:spawn_entities/vacuumable/haunted_object/teddy_bear
 data modify storage luigis_mansion:data entity set value {room:7}
-execute positioned 739 23 68.0 rotated -90 0 run function luigis_mansion:spawn_entities/vacuumable/haunted_object/haunted_teddy_bear
+execute positioned 739 23 68.0 rotated -90 0 run function luigis_mansion:spawn_entities/vacuumable/haunted_object/teddy_bear
 data modify storage luigis_mansion:data entity set value {room:7}
-execute positioned 739 23 70 rotated -70 0 run function luigis_mansion:spawn_entities/vacuumable/haunted_object/haunted_teddy_bear
+execute positioned 739 23 70 rotated -70 0 run function luigis_mansion:spawn_entities/vacuumable/haunted_object/teddy_bear
 data modify storage luigis_mansion:data entity set value {room:7}
-execute positioned 747 21 58 rotated -45 0 run function luigis_mansion:spawn_entities/vacuumable/haunted_object/haunted_teddy_bear
+execute positioned 747 21 58 rotated -45 0 run function luigis_mansion:spawn_entities/vacuumable/haunted_object/teddy_bear
 data modify storage luigis_mansion:data entity set value {room:7}
-execute positioned 743 23 55 rotated 0 0 run function luigis_mansion:spawn_entities/vacuumable/haunted_object/haunted_teddy_bear
+execute positioned 743 23 55 rotated 0 0 run function luigis_mansion:spawn_entities/vacuumable/haunted_object/teddy_bear
 data modify storage luigis_mansion:data entity set value {room:7}
-execute positioned 745 23 55 rotated 0 0 run function luigis_mansion:spawn_entities/vacuumable/haunted_object/haunted_teddy_bear
+execute positioned 745 23 55 rotated 0 0 run function luigis_mansion:spawn_entities/vacuumable/haunted_object/teddy_bear
 data modify storage luigis_mansion:data entity set value {room:7,spawn:2b}
 execute positioned 741 20 63 run function e3_demo:spawn_entities/ghost/body_slammer/orange
 data modify storage luigis_mansion:data entity set value {room:7,spawn:2b}

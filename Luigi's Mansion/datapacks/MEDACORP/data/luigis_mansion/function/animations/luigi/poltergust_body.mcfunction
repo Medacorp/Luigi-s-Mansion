@@ -33,12 +33,12 @@ execute at @s[tag=shrunk] if data storage luigis_mansion:data luigi{tags:["explo
 execute at @s[tag=shrunk] if data storage luigis_mansion:data luigi{tags:["exploding_poltergust_effect"]} run particle minecraft:flame ~ ~0.75 ~ 0.3 0.3 0.3 0 10 normal @a[tag=same_room]
 
 data modify entity @s ArmorItems[3] set from storage luigis_mansion:data luigi.poltergust
-execute unless score #mirrored Selected matches 1 run data modify entity @s[tag=!riding_poltergust,tag=!poltergust_grabbed] ArmorItems[3] merge from storage luigis_mansion:data luigi.poltergust.components."minecraft:custom_data".model_data.idle_right
+execute unless score #mirrored Selected matches 1 run data modify entity @s[tag=!riding_poltergust,tag=!poltergust_grabbed] ArmorItems[3] merge from storage luigis_mansion:data luigi.poltergust.components."minecraft:custom_data".model_data.body_idle_right
 execute unless score #mirrored Selected matches 1 run data modify entity @s[tag=!riding_poltergust,tag=poltergust_grabbed] ArmorItems[3] merge from storage luigis_mansion:data luigi.poltergust.components."minecraft:custom_data".model_data.body_right
-execute unless score #mirrored Selected matches 1 run data modify entity @s[tag=riding_poltergust] ArmorItems[3] merge from storage luigis_mansion:data luigi.poltergust.components."minecraft:custom_data".model_data.sat_on_right
-execute if score #mirrored Selected matches 1 run data modify entity @s[tag=!riding_poltergust,tag=!poltergust_grabbed] ArmorItems[3] merge from storage luigis_mansion:data luigi.poltergust.components."minecraft:custom_data".model_data.idle_left
+execute unless score #mirrored Selected matches 1 run data modify entity @s[tag=riding_poltergust] ArmorItems[3] merge from storage luigis_mansion:data luigi.poltergust.components."minecraft:custom_data".model_data.body_sat_on_right
+execute if score #mirrored Selected matches 1 run data modify entity @s[tag=!riding_poltergust,tag=!poltergust_grabbed] ArmorItems[3] merge from storage luigis_mansion:data luigi.poltergust.components."minecraft:custom_data".model_data.body_idle_left
 execute if score #mirrored Selected matches 1 run data modify entity @s[tag=!riding_poltergust,tag=poltergust_grabbed] ArmorItems[3] merge from storage luigis_mansion:data luigi.poltergust.components."minecraft:custom_data".model_data.body_left
-execute if score #mirrored Selected matches 1 run data modify entity @s[tag=riding_poltergust] ArmorItems[3] merge from storage luigis_mansion:data luigi.poltergust.components."minecraft:custom_data".model_data.sat_on_left
+execute if score #mirrored Selected matches 1 run data modify entity @s[tag=riding_poltergust] ArmorItems[3] merge from storage luigis_mansion:data luigi.poltergust.components."minecraft:custom_data".model_data.body_sat_on_left
 
 $execute at @s run function $(namespace):animations/luigi/$(id)/poltergust_body
 

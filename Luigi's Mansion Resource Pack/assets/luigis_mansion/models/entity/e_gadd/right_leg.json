@@ -3,7 +3,7 @@
 	"textures": {
 		"0": "luigis_mansion:entity/e_gadd/shoes",
 		"1": "luigis_mansion:entity/e_gadd/limbs",
-		"particle": "luigis_mansion:entity/e_gadd/shoes"
+		"particle": "#0"
 	},
 	"elements": [
 		{

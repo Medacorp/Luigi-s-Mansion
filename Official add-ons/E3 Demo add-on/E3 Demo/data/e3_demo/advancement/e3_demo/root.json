@@ -6,7 +6,7 @@
             "id": "minecraft:diamond_pickaxe",
             "components": {
                 "minecraft:item_model": "e3_demo:poltergust_500",
-                "minecraft:custom_model_data": 5
+                "minecraft:custom_model_data": { "flags": [ false, false ], "strings": [ "body_idle" ] }
             }
         },
         "show_toast": false,

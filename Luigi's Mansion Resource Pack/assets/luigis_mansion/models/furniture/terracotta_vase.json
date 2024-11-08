@@ -1,12 +1,11 @@
 {
 	"credit": "Made with Blockbench",
-	"ambientocclusion": false,
 	"textures": {
 		"0": "luigis_mansion:furniture/terracotta_vase/front",
 		"1": "luigis_mansion:furniture/terracotta_vase/side",
 		"2": "luigis_mansion:furniture/terracotta_vase/top",
 		"3": "luigis_mansion:furniture/terracotta_vase/bottom",
-		"particle": "luigis_mansion:furniture/terracotta_vase/front"
+		"particle": "#0"
 	},
 	"elements": [
 		{

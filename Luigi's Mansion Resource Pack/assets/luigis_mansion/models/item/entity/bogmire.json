@@ -1,7 +1,8 @@
 {
 	"credit": "Made with Blockbench",
 	"textures": {
-		"0": "luigis_mansion:entity/bogmire"
+		"0": "luigis_mansion:entity/bogmire",
+        "particle": "#0"
 	},
 	"elements": [
 		{
@@ -283,31 +284,5 @@
 			"rotation": [12, -145, 0],
 			"scale": [0.4, 0.4, 0.4]
 		}
-	},
-    "overrides": [
-        {
-            "predicate": {
-                "damage": 0.2
-            },
-            "model": "luigis_mansion:entity/bogmire/head"
-        },
-        {
-            "predicate": {
-                "damage": 0.4
-            },
-            "model": "luigis_mansion:entity/bogmire/right_arm"
-        },
-        {
-            "predicate": {
-                "damage": 0.6
-            },
-            "model": "luigis_mansion:entity/bogmire/left_arm"
-        },
-        {
-            "predicate": {
-                "damage": 0.8
-            },
-            "model": "luigis_mansion:entity/bogmire/body"
-        }
-    ]
+	}
 }

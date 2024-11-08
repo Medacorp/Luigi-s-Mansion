@@ -2,7 +2,7 @@
 	"credit": "Made with Blockbench",
 	"textures": {
 		"0": "3ds_remake:furniture/gallery_chest",
-		"particle": "3ds_remake:furniture/gallery_chest"
+		"particle": "#0"
 	},
 	"elements": [
 		{

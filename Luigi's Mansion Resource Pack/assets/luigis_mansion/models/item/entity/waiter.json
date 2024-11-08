@@ -4,7 +4,7 @@
 		"0": "luigis_mansion:entity/waiter",
 		"1": "luigis_mansion:entity/waiter_plate",
 		"2": "luigis_mansion:furniture/food",
-		"particle": "luigis_mansion:entity/waiter"
+        "particle": "#0"
 	},
 	"elements": [
 		{
@@ -393,41 +393,5 @@
 			"translation": [0, -2.75, 0],
 			"scale": [0.665, 0.665, 0.665]
 		}
-	},
-    "overrides": [
-        {
-            "predicate": {
-                "damage": 0.25
-            },
-            "model": "luigis_mansion:entity/waiter/body"
-        },
-        {
-            "predicate": {
-                "damage": 0.5,
-                "custom_model_data": 0
-            },
-            "model": "luigis_mansion:entity/waiter/right_arm"
-        },
-        {
-            "predicate": {
-                "damage": 0.5,
-                "custom_model_data": 1
-            },
-            "model": "luigis_mansion:entity/waiter/right_arm_food"
-        },
-        {
-            "predicate": {
-                "damage": 0.75,
-                "custom_model_data": 0
-            },
-            "model": "luigis_mansion:entity/waiter/left_arm"
-        },
-        {
-            "predicate": {
-                "damage": 0.75,
-                "custom_model_data": 1
-            },
-            "model": "luigis_mansion:entity/waiter/left_arm_food"
-        }
-    ]
+	}
 }

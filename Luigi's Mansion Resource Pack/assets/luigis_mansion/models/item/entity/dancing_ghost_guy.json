@@ -1,0 +1,6 @@
+{
+	"parent": "luigis_mansion:item/entity/ghost_guy",
+	"textures": {
+		"1": "luigis_mansion:entity/ghost_guy/dancing_mask"
+	}
+}

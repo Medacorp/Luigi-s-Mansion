@@ -1,0 +1,10 @@
+{
+	"parent": "luigis_mansion:entity/chauncey/left_arm_equipment",
+	"credit": "Made with Blockbench",
+	"display": {
+		"head": {
+			"translation": [0, -6.5, 0],
+			"scale": [1.4, 1.4, 1.4]
+		}
+	}
+}

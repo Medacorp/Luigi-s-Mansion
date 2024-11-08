@@ -1,0 +1,540 @@
+{
+    "model": {
+        "type": "minecraft:select",
+        "property": "minecraft:display_context",
+        "cases": [
+            {
+                "when": "gui",
+                "model": {
+                    "type": "minecraft:condition",
+                    "property": "minecraft:custom_model_data",
+                    "index": 0,
+                    "on_false": {
+                        "type": "minecraft:select",
+                        "property": "minecraft:custom_model_data",
+                        "index": 0,
+                        "cases": [
+                            {
+                                "when": "dark_room",
+                                "model": {
+                                    "type": "minecraft:model",
+                                    "model": "luigis_mansion:entity/luigi/head_dark_room",
+                                    "tints": [
+                                        {
+                                            "type": "minecraft:dye",
+                                            "default": 37129
+                                        }
+                                    ]
+                                }
+                            },
+                            {
+                                "when": "dead",
+                                "model": {
+                                    "type": "minecraft:model",
+                                    "model": "luigis_mansion:entity/luigi/head_dead",
+                                    "tints": [
+                                        {
+                                            "type": "minecraft:dye",
+                                            "default": 37129
+                                        }
+                                    ]
+                                }
+                            }
+                        ],
+                        "fallback": {
+                            "type": "minecraft:model",
+                            "model": "luigis_mansion:entity/luigi/head",
+                            "tints": [
+                                {
+                                    "type": "minecraft:dye",
+                                    "default": 37129
+                                }
+                            ]
+                        }
+                    },
+                    "on_true": {
+                        "type": "minecraft:select",
+                        "property": "minecraft:custom_model_data",
+                        "index": 0,
+                        "cases": [
+                            {
+                                "when": "dark_room",
+                                "model": {
+                                    "type": "minecraft:model",
+                                    "model": "luigis_mansion:entity/luigi/head_dark_room_2",
+                                    "tints": [
+                                        {
+                                            "type": "minecraft:dye",
+                                            "default": 37129
+                                        }
+                                    ]
+                                }
+                            },
+                            {
+                                "when": "dead",
+                                "model": {
+                                    "type": "minecraft:model",
+                                    "model": "luigis_mansion:entity/luigi/head_dead_2",
+                                    "tints": [
+                                        {
+                                            "type": "minecraft:dye",
+                                            "default": 37129
+                                        }
+                                    ]
+                                }
+                            }
+                        ],
+                        "fallback": {
+                            "type": "minecraft:model",
+                            "model": "luigis_mansion:entity/luigi/head_2",
+                            "tints": [
+                                {
+                                    "type": "minecraft:dye",
+                                    "default": 37129
+                                }
+                            ]
+                        }
+                    }
+                }
+            }
+        ],
+        "fallback": {
+            "type": "minecraft:condition",
+            "property": "minecraft:custom_model_data",
+            "index": 0,
+            "on_false": {
+                "type": "minecraft:condition",
+                "property": "minecraft:custom_model_data",
+                "index": 0,
+                "on_false": {
+                    "type": "minecraft:range_dispatch",
+                    "property": "minecraft:custom_model_data",
+                    "index": 0,
+                    "scale": 1.0,
+                    "entries": [
+                        {
+                            "threshold": 1,
+                            "model": {
+                                "type": "minecraft:select",
+                                "property": "minecraft:custom_model_data",
+                                "index": 0,
+                                "cases": [
+                                    {
+                                        "when": "squished",
+                                        "model": {
+                                            "type": "minecraft:model",
+                                            "model": "luigis_mansion:item/empty"
+                                        }
+                                    }
+                                ],
+                                "fallback": {
+                                    "type": "minecraft:model",
+                                    "model": "luigis_mansion:entity/luigi/right_arm",
+                                    "tints": [
+                                        {
+                                            "type": "minecraft:dye",
+                                            "default": 37129
+                                        }
+                                    ]
+                                }
+                            }
+                        },
+                        {
+                            "threshold": 2,
+                            "model": {
+                                "type": "minecraft:select",
+                                "property": "minecraft:custom_model_data",
+                                "index": 0,
+                                "cases": [
+                                    {
+                                        "when": "squished",
+                                        "model": {
+                                            "type": "minecraft:model",
+                                            "model": "luigis_mansion:item/empty"
+                                        }
+                                    }
+                                ],
+                                "fallback": {
+                                    "type": "minecraft:model",
+                                    "model": "luigis_mansion:entity/luigi/left_arm",
+                                    "tints": [
+                                        {
+                                            "type": "minecraft:dye",
+                                            "default": 37129
+                                        }
+                                    ]
+                                }
+                            }
+                        },
+                        {
+                            "threshold": 3,
+                            "model": {
+                                "type": "minecraft:select",
+                                "property": "minecraft:custom_model_data",
+                                "index": 0,
+                                "cases": [
+                                    {
+                                        "when": "squished_right",
+                                        "model": {
+                                            "type": "minecraft:model",
+                                            "model": "luigis_mansion:entity/luigi/squished_right",
+                                            "tints": [
+                                                {
+                                                    "type": "minecraft:dye",
+                                                    "default": 37129
+                                                }
+                                            ]
+                                        }
+                                    },
+                                    {
+                                        "when": "squished_left",
+                                        "model": {
+                                            "type": "minecraft:model",
+                                            "model": "luigis_mansion:entity/luigi/squished_left",
+                                            "tints": [
+                                                {
+                                                    "type": "minecraft:dye",
+                                                    "default": 37129
+                                                }
+                                            ]
+                                        }
+                                    }
+                                ],
+                                "fallback": {
+                                    "type": "minecraft:model",
+                                    "model": "luigis_mansion:entity/luigi/body",
+                                    "tints": [
+                                        {
+                                            "type": "minecraft:dye",
+                                            "default": 37129
+                                        }
+                                    ]
+                                }
+                            }
+                        },
+                        {
+                            "threshold": 4,
+                            "model": {
+                                "type": "minecraft:select",
+                                "property": "minecraft:custom_model_data",
+                                "index": 0,
+                                "cases": [
+                                    {
+                                        "when": "squished",
+                                        "model": {
+                                            "type": "minecraft:model",
+                                            "model": "luigis_mansion:item/empty"
+                                        }
+                                    }
+                                ],
+                                "fallback": {
+                                    "type": "minecraft:model",
+                                    "model": "luigis_mansion:entity/luigi/right_leg",
+                                    "tints": [
+                                        {
+                                            "type": "minecraft:dye",
+                                            "default": 37129
+                                        }
+                                    ]
+                                }
+                            }
+                        },
+                        {
+                            "threshold": 5,
+                            "model": {
+                                "type": "minecraft:select",
+                                "property": "minecraft:custom_model_data",
+                                "index": 0,
+                                "cases": [
+                                    {
+                                        "when": "squished",
+                                        "model": {
+                                            "type": "minecraft:model",
+                                            "model": "luigis_mansion:item/empty"
+                                        }
+                                    }
+                                ],
+                                "fallback": {
+                                    "type": "minecraft:model",
+                                    "model": "luigis_mansion:entity/luigi/left_leg",
+                                    "tints": [
+                                        {
+                                            "type": "minecraft:dye",
+                                            "default": 37129
+                                        }
+                                    ]
+                                }
+                            }
+                        }
+                    ],
+                    "fallback": {
+                        "type": "minecraft:select",
+                        "property": "minecraft:custom_model_data",
+                        "index": 0,
+                        "cases": [
+                            {
+                                "when": "dark_room",
+                                "model": {
+                                    "type": "minecraft:model",
+                                    "model": "luigis_mansion:entity/luigi/head_dark_room",
+                                    "tints": [
+                                        {
+                                            "type": "minecraft:dye",
+                                            "default": 37129
+                                        }
+                                    ]
+                                }
+                            },
+                            {
+                                "when": "dead",
+                                "model": {
+                                    "type": "minecraft:model",
+                                    "model": "luigis_mansion:entity/luigi/head_dead",
+                                    "tints": [
+                                        {
+                                            "type": "minecraft:dye",
+                                            "default": 37129
+                                        }
+                                    ]
+                                }
+                            },
+                            {
+                                "when": "squished",
+                                "model": {
+                                    "type": "minecraft:model",
+                                    "model": "luigis_mansion:item/empty"
+                                }
+                            }
+                        ],
+                        "fallback": {
+                            "type": "minecraft:model",
+                            "model": "luigis_mansion:entity/luigi/head",
+                            "tints": [
+                                {
+                                    "type": "minecraft:dye",
+                                    "default": 37129
+                                }
+                            ]
+                        }
+                    }
+                },
+                "on_true": {
+                    "type": "minecraft:range_dispatch",
+                    "property": "minecraft:custom_model_data",
+                    "index": 0,
+                    "scale": 1.0,
+                    "entries": [
+                        {
+                            "threshold": 1,
+                            "model": {
+                                "type": "minecraft:select",
+                                "property": "minecraft:custom_model_data",
+                                "index": 0,
+                                "cases": [
+                                    {
+                                        "when": "squished",
+                                        "model": {
+                                            "type": "minecraft:model",
+                                            "model": "luigis_mansion:item/empty"
+                                        }
+                                    }
+                                ],
+                                "fallback": {
+                                    "type": "minecraft:model",
+                                    "model": "luigis_mansion:entity/luigi/right_arm_2",
+                                    "tints": [
+                                        {
+                                            "type": "minecraft:dye",
+                                            "default": 37129
+                                        }
+                                    ]
+                                }
+                            }
+                        },
+                        {
+                            "threshold": 2,
+                            "model": {
+                                "type": "minecraft:select",
+                                "property": "minecraft:custom_model_data",
+                                "index": 0,
+                                "cases": [
+                                    {
+                                        "when": "squished",
+                                        "model": {
+                                            "type": "minecraft:model",
+                                            "model": "luigis_mansion:item/empty"
+                                        }
+                                    }
+                                ],
+                                "fallback": {
+                                    "type": "minecraft:model",
+                                    "model": "luigis_mansion:entity/luigi/left_arm_2",
+                                    "tints": [
+                                        {
+                                            "type": "minecraft:dye",
+                                            "default": 37129
+                                        }
+                                    ]
+                                }
+                            }
+                        },
+                        {
+                            "threshold": 3,
+                            "model": {
+                                "type": "minecraft:select",
+                                "property": "minecraft:custom_model_data",
+                                "index": 0,
+                                "cases": [
+                                    {
+                                        "when": "squished_right",
+                                        "model": {
+                                            "type": "minecraft:model",
+                                            "model": "luigis_mansion:entity/luigi/squished_right_2",
+                                            "tints": [
+                                                {
+                                                    "type": "minecraft:dye",
+                                                    "default": 37129
+                                                }
+                                            ]
+                                        }
+                                    },
+                                    {
+                                        "when": "squished_left",
+                                        "model": {
+                                            "type": "minecraft:model",
+                                            "model": "luigis_mansion:entity/luigi/squished_left_2",
+                                            "tints": [
+                                                {
+                                                    "type": "minecraft:dye",
+                                                    "default": 37129
+                                                }
+                                            ]
+                                        }
+                                    }
+                                ],
+                                "fallback": {
+                                    "type": "minecraft:model",
+                                    "model": "luigis_mansion:entity/luigi/body_2",
+                                    "tints": [
+                                        {
+                                            "type": "minecraft:dye",
+                                            "default": 37129
+                                        }
+                                    ]
+                                }
+                            }
+                        },
+                        {
+                            "threshold": 4,
+                            "model": {
+                                "type": "minecraft:select",
+                                "property": "minecraft:custom_model_data",
+                                "index": 0,
+                                "cases": [
+                                    {
+                                        "when": "squished",
+                                        "model": {
+                                            "type": "minecraft:model",
+                                            "model": "luigis_mansion:item/empty"
+                                        }
+                                    }
+                                ],
+                                "fallback": {
+                                    "type": "minecraft:model",
+                                    "model": "luigis_mansion:entity/luigi/right_leg_2",
+                                    "tints": [
+                                        {
+                                            "type": "minecraft:dye",
+                                            "default": 37129
+                                        }
+                                    ]
+                                }
+                            }
+                        },
+                        {
+                            "threshold": 5,
+                            "model": {
+                                "type": "minecraft:select",
+                                "property": "minecraft:custom_model_data",
+                                "index": 0,
+                                "cases": [
+                                    {
+                                        "when": "squished",
+                                        "model": {
+                                            "type": "minecraft:model",
+                                            "model": "luigis_mansion:item/empty"
+                                        }
+                                    }
+                                ],
+                                "fallback": {
+                                    "type": "minecraft:model",
+                                    "model": "luigis_mansion:entity/luigi/left_leg_2",
+                                    "tints": [
+                                        {
+                                            "type": "minecraft:dye",
+                                            "default": 37129
+                                        }
+                                    ]
+                                }
+                            }
+                        }
+                    ],
+                    "fallback": {
+                        "type": "minecraft:select",
+                        "property": "minecraft:custom_model_data",
+                        "index": 0,
+                        "cases": [
+                            {
+                                "when": "dark_room",
+                                "model": {
+                                    "type": "minecraft:model",
+                                    "model": "luigis_mansion:entity/luigi/head_dark_room_2",
+                                    "tints": [
+                                        {
+                                            "type": "minecraft:dye",
+                                            "default": 37129
+                                        }
+                                    ]
+                                }
+                            },
+                            {
+                                "when": "dead",
+                                "model": {
+                                    "type": "minecraft:model",
+                                    "model": "luigis_mansion:entity/luigi/head_dead_2",
+                                    "tints": [
+                                        {
+                                            "type": "minecraft:dye",
+                                            "default": 37129
+                                        }
+                                    ]
+                                }
+                            },
+                            {
+                                "when": "squished",
+                                "model": {
+                                    "type": "minecraft:model",
+                                    "model": "luigis_mansion:item/empty"
+                                }
+                            }
+                        ],
+                        "fallback": {
+                            "type": "minecraft:model",
+                            "model": "luigis_mansion:entity/luigi/head_2",
+                            "tints": [
+                                {
+                                    "type": "minecraft:dye",
+                                    "default": 37129
+                                }
+                            ]
+                        }
+                    }
+                }
+            },
+            "on_true": {
+                "type": "minecraft:model",
+                "model": "luigis_mansion:item/empty"
+            }
+        }
+    }
+}

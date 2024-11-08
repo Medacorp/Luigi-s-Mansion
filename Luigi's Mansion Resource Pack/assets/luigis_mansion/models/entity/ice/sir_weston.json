@@ -2,7 +2,7 @@
 	"credit": "Made with Blockbench",
 	"textures": {
 		"0": "minecraft:block/ice",
-		"particle": "minecraft:block/ice"
+		"particle": "#0"
 	},
 	"elements": [
 		{

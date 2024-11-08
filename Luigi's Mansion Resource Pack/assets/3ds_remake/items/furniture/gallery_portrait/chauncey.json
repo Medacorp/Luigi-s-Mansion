@@ -1,0 +1,41 @@
+{
+    "model": {
+        "type": "minecraft:select",
+        "property": "minecraft:custom_model_data",
+        "index": 0,
+        "cases": [
+            {
+                "when": "bronze",
+                "model": {
+                    "type": "minecraft:model",
+                    "model": "3ds_remake:furniture/gallery_portrait/bronze/chauncey"
+                }
+            },
+            {
+                "when": "silver",
+                "model": {
+                    "type": "minecraft:model",
+                    "model": "3ds_remake:furniture/gallery_portrait/silver/chauncey"
+                }
+            },
+            {
+                "when": "gold",
+                "model": {
+                    "type": "minecraft:model",
+                    "model": "3ds_remake:furniture/gallery_portrait/gold/chauncey"
+                }
+            },
+            {
+                "when": "platinum",
+                "model": {
+                    "type": "minecraft:model",
+                    "model": "3ds_remake:furniture/gallery_portrait/platinum/chauncey"
+                }
+            }
+        ],
+        "fallback": {
+            "type": "minecraft:model",
+            "model": "3ds_remake:furniture/gallery_portrait/boss_frame"
+        }
+    }
+}

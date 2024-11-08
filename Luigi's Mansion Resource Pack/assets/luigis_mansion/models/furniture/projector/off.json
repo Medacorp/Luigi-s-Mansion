@@ -4,7 +4,8 @@
 		"main": "luigis_mansion:furniture/projector/main",
 		"extensions": "luigis_mansion:furniture/projector/extensions",
 		"slow_film_reel": "luigis_mansion:furniture/film_reel",
-		"fast_film_reel": "luigis_mansion:furniture/film_reel"
+		"fast_film_reel": "luigis_mansion:furniture/film_reel",
+		"particle": "#main"
 	},
 	"elements": [
 		{

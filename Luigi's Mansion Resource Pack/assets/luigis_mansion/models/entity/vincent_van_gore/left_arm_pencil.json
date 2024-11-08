@@ -2,7 +2,7 @@
 	"credit": "Made with Blockbench",
 	"textures": {
 		"0": "luigis_mansion:entity/vincent_van_gore",
-		"particle": "luigis_mansion:entity/vincent_van_gore"
+		"particle": "#0"
 	},
 	"elements": [
 		{

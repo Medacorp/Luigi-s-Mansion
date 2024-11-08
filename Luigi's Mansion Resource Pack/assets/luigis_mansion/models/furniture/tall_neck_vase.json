@@ -1,10 +1,9 @@
 {
 	"credit": "Made with Blockbench",
-	"ambientocclusion": false,
 	"textures": {
 		"0": "luigis_mansion:furniture/tall_neck_vase/front",
 		"1": "luigis_mansion:furniture/tall_neck_vase/side",
-		"particle": "luigis_mansion:furniture/tall_neck_vase/front"
+		"particle": "#0"
 	},
 	"elements": [
 		{

@@ -1,7 +1,6 @@
 {
 	"parent": "luigis_mansion:entity/boo/left_arm",
 	"textures": {
-		"particle": "luigis_mansion:entity/boolossus/boolossus",
-		"arm": "luigis_mansion:entity/boolossus/boolossus"
+		"0": "luigis_mansion:entity/boolossus/boolossus"
 	}
 }

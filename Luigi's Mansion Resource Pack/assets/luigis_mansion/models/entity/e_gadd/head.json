@@ -4,7 +4,7 @@
 		"0": "luigis_mansion:entity/e_gadd/head_front",
 		"1": "luigis_mansion:entity/e_gadd/shoes",
 		"2": "luigis_mansion:entity/e_gadd/head_back",
-		"particle": "luigis_mansion:entity/e_gadd/head_front"
+		"particle": "#0"
 	},
 	"elements": [
 		{

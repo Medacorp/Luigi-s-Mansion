@@ -1,7 +1,6 @@
 {
 	"parent": "luigis_mansion:entity/boo/right_arm",
 	"textures": {
-		"particle": "3ds_remake:entity/boo",
 		"0": "3ds_remake:entity/boo"
 	}
 }

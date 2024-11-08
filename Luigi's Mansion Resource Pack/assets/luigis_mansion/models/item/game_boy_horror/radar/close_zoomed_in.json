@@ -1,0 +1,6 @@
+{
+	"parent": "luigis_mansion:item/game_boy_horror/radar_zoomed_in",
+    "textures": {
+		"radar": "luigis_mansion:item/game_boy_horror/radar_close"
+	}
+}

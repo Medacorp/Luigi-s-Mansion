@@ -2,7 +2,7 @@
 	"credit": "Made with Blockbench",
 	"textures": {
 		"0": "luigis_mansion:entity/gold_bar",
-		"particle": "luigis_mansion:entity/gold_bar"
+		"particle": "#0"
 	},
 	"elements": [
 		{

@@ -2,7 +2,7 @@
 	"credit": "Made with Blockbench",
 	"textures": {
 		"0": "luigis_mansion:entity/grabbing_ghost",
-		"particle": "luigis_mansion:entity/grabbing_ghost"
+        "particle": "#0"
 	},
 	"elements": [
 		{
@@ -372,25 +372,5 @@
 			"translation": [-0.25, -1.75, 0],
 			"scale": [0.8, 0.8, 0.8]
 		}
-	},
-    "overrides": [
-        {
-            "predicate": {
-                "damage": 0.25
-            },
-            "model": "luigis_mansion:entity/grabbing_ghost/body"
-        },
-        {
-            "predicate": {
-                "damage": 0.5
-            },
-            "model": "luigis_mansion:entity/grabbing_ghost/right_arm"
-        },
-        {
-            "predicate": {
-                "damage": 0.75
-            },
-            "model": "luigis_mansion:entity/grabbing_ghost/left_arm"
-        }
-    ]
+	}
 }

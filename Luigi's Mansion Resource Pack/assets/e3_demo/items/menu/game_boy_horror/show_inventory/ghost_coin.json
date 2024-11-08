@@ -1,0 +1,6 @@
+{
+    "model": {
+        "type": "minecraft:model",
+        "model": "e3_demo:item/menu/game_boy_horror/show_inventory/ghost_coin"
+    }
+}

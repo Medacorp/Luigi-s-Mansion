@@ -1,0 +1,15 @@
+{
+	"parent": "luigis_mansion:item/game_boy_horror",
+	"display": {
+		"firstperson_righthand": {
+			"rotation": [0, -180, 0],
+			"translation": [-8.965, -15.875, -27.5],
+			"scale": [2.3, 2.3, 2.3]
+		},
+		"firstperson_lefthand": {
+			"rotation": [0, -180, 0],
+			"translation": [-8.965, -15.875, -27.5],
+			"scale": [2.3, 2.3, 2.3]
+		}
+	}
+}

@@ -5,7 +5,7 @@
 		"1": "luigis_mansion:furniture/wooden_stool/top",
 		"2": "luigis_mansion:furniture/small_trophy/extensions",
 		"3": "luigis_mansion:furniture/small_trophy/main",
-		"particle": "luigis_mansion:furniture/small_trophy/extensions"
+		"particle": "#3"
 	},
 	"elements": [
 		{

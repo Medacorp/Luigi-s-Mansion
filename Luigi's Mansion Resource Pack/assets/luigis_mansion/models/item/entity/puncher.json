@@ -2,7 +2,7 @@
 	"credit": "Made with Blockbench",
 	"textures": {
 		"0": "luigis_mansion:entity/puncher",
-		"particle": "luigis_mansion:entity/puncher"
+        "particle": "#0"
 	},
 	"elements": [
 		{
@@ -380,25 +380,5 @@
 			"translation": [-1.5, 0.5, 0],
 			"scale": [0.88, 0.88, 0.88]
 		}
-	},
-    "overrides": [
-        {
-            "predicate": {
-                "damage": 0.25
-            },
-            "model": "luigis_mansion:entity/puncher/body"
-        },
-        {
-            "predicate": {
-                "damage": 0.5
-            },
-            "model": "luigis_mansion:entity/puncher/right_arm"
-        },
-        {
-            "predicate": {
-                "damage": 0.75
-            },
-            "model": "luigis_mansion:entity/puncher/left_arm"
-        }
-    ]
+	}
 }

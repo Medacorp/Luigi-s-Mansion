@@ -2,7 +2,7 @@
 	"credit": "Made with Blockbench",
 	"textures": {
 		"0": "luigis_mansion:entity/poison_mushroom",
-		"particle": "luigis_mansion:entity/poison_mushroom"
+		"particle": "#0"
 	},
 	"elements": [
 		{

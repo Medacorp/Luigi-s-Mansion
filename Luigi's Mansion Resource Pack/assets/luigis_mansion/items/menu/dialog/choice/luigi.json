@@ -1,0 +1,12 @@
+{
+  "model": {
+    "type": "minecraft:model",
+    "model": "luigis_mansion:item/menu/dialog/choice/luigi",
+    "tints": [
+      {
+        "type": "minecraft:dye",
+        "default": 37129
+      }
+    ]
+  }
+}

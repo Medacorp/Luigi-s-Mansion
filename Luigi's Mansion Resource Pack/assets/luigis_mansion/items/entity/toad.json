@@ -1,0 +1,89 @@
+{
+    "model": {
+        "type": "minecraft:select",
+        "property": "minecraft:display_context",
+        "cases": [
+            {
+                "when": "gui",
+                "model": {
+                    "type": "minecraft:select",
+                    "property": "minecraft:custom_model_data",
+                    "index": 0,
+                    "cases": [
+                        {
+                            "when": "green",
+                            "model": {
+                                "type": "minecraft:model",
+                                "model": "luigis_mansion:entity/toad/head_green"
+                            }
+                        }
+                    ],
+                    "fallback": {
+                        "type": "minecraft:model",
+                        "model": "luigis_mansion:entity/toad/head"
+                    }
+                }
+            }
+        ],
+        "fallback": {
+            "type": "minecraft:select",
+            "property": "minecraft:custom_model_data",
+            "index": 0,
+            "cases": [
+                {
+                    "threshold": 1,
+                    "model": {
+                        "type": "minecraft:model",
+                        "model": "luigis_mansion:entity/toad/right_arm"
+                    }
+                },
+                {
+                    "threshold": 2,
+                    "model": {
+                        "type": "minecraft:model",
+                        "model": "luigis_mansion:entity/toad/left_arm"
+                    }
+                },
+                {
+                    "threshold": 3,
+                    "model": {
+                        "type": "minecraft:model",
+                        "model": "luigis_mansion:entity/toad/body"
+                    }
+                },
+                {
+                    "threshold": 4,
+                    "model": {
+                        "type": "minecraft:model",
+                        "model": "luigis_mansion:entity/toad/right_leg"
+                    }
+                },
+                {
+                    "threshold": 5,
+                    "model": {
+                        "type": "minecraft:model",
+                        "model": "luigis_mansion:entity/toad/left_leg"
+                    }
+                }
+            ],
+            "fallback": {
+                "type": "minecraft:select",
+                "property": "minecraft:custom_model_data",
+                "index": 0,
+                "cases": [
+                    {
+                        "when": "green",
+                        "model": {
+                            "type": "minecraft:model",
+                            "model": "luigis_mansion:entity/toad/head_green"
+                        }
+                    }
+                ],
+                "fallback": {
+                    "type": "minecraft:model",
+                    "model": "luigis_mansion:entity/toad/head"
+                }
+            }
+        }
+    }
+}

@@ -2,7 +2,7 @@
 	"credit": "Made with Blockbench",
 	"textures": {
 		"0": "luigis_mansion:entity/bowling_ghost",
-		"particle": "luigis_mansion:entity/bowling_ghost"
+        "particle": "#0"
 	},
 	"elements": [
 		{
@@ -366,25 +366,5 @@
 			"translation": [-1.5, 0, 0],
 			"scale": [0.9, 0.9, 0.9]
 		}
-	},
-    "overrides": [
-        {
-            "predicate": {
-                "damage": 0.25
-            },
-            "model": "luigis_mansion:entity/bowling_ghost/body"
-        },
-        {
-            "predicate": {
-                "damage": 0.5
-            },
-            "model": "luigis_mansion:entity/bowling_ghost/right_arm"
-        },
-        {
-            "predicate": {
-                "damage": 0.75
-            },
-            "model": "luigis_mansion:entity/bowling_ghost/left_arm"
-        }
-    ]
+	}
 }

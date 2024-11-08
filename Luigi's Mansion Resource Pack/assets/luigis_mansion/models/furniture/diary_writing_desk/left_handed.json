@@ -1,7 +1,7 @@
 {
 	"credit": "Made with Blockbench",
 	"textures": {
-		"particle": "luigis_mansion:furniture/diary_writing_desk",
+		"particle": "#desk",
 		"desk": "luigis_mansion:furniture/diary_writing_desk",
 		"candelabra": "luigis_mansion:furniture/silver_candelabra",
 		"candle": "luigis_mansion:furniture/candle/blank"

@@ -1,7 +1,6 @@
 {
 	"parent": "luigis_mansion:entity/poison_mushroom",
 	"textures": {
-		"particle": "3ds_remake:entity/super_mushroom",
 		"0": "3ds_remake:entity/super_mushroom"
 	}
 }

@@ -2,7 +2,7 @@
 	"credit": "Made with Blockbench",
 	"textures": {
 		"0": "luigis_mansion:furniture/mystifying_table",
-		"particle": "luigis_mansion:furniture/mystifying_table"
+		"particle": "#0"
 	},
 	"elements": [
 		{

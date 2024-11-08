@@ -2,9 +2,9 @@
     "parent": "minecraft:block/block",
 	"ambientocclusion": false,
     "textures": {
-        "particle": "luigis_mansion:block/drinking_glass",
         "flowerpot": "luigis_mansion:block/drinking_glass",
-        "dirt": "minecraft:block/quartz_block_top"
+        "dirt": "minecraft:block/quartz_block_top",
+		"particle": "#flowerpot"
     },
     "elements": [
         {   "from": [ 5, 0, 5 ],

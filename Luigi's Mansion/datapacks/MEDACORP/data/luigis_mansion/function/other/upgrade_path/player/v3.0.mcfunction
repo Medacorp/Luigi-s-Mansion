@@ -12,7 +12,7 @@ execute if data entity @s Inventory[{components:{"minecraft:custom_data":{luigis
 execute if data entity @s Inventory[{components:{"minecraft:custom_data":{luigis_mansion:{id:"luigis_mansion:game_boy_horror"}}}}] store result score #temp4 Time run data get entity @s Inventory[{components:{"minecraft:custom_data":{luigis_mansion:{id:"luigis_mansion:game_boy_horror"}}}}].Slot
 execute if data entity @s Inventory[{components:{"minecraft:custom_data":{luigis_mansion:{is_poltergust:1b}}}}] store result score #temp5 Time run data get entity @s Inventory[{components:{"minecraft:custom_data":{luigis_mansion:{is_poltergust:1b}}}}].Slot
 clear @s
-execute if score #temp Time matches -106.. run give @s minecraft:diamond_pickaxe[minecraft:unbreakable={show_in_tooltip:0b},minecraft:attribute_modifiers={modifiers:[]},minecraft:item_model="luigis_mansion:contest_reward_map",minecraft:item_name='{"type":"translatable","translate":"luigis_mansion:item.contest_reward_map"}',minecraft:custom_data={namespace:"luigis_mansion",id:"contest_reward_map"}]
+execute if score #temp Time matches -106.. run function luigis_mansion:items/contest_reward_map/give
 execute if score #temp2 Time matches -106.. run function luigis_mansion:items/interact/give
 execute if score #temp3 Time matches -106.. run function luigis_mansion:items/flashlight/give
 execute if score #temp4 Time matches -106.. run function luigis_mansion:items/game_boy_horror/give

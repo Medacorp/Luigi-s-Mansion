@@ -4,7 +4,7 @@
 		"0": "3ds_remake:entity/game_boy_horror_part/icon",
 		"1": "luigis_mansion:item/game_boy_horror/logo",
 		"2": "3ds_remake:entity/game_boy_horror_part/card",
-		"particle": "#2"
+        "particle": "#2"
 	},
 	"elements": [
 		{

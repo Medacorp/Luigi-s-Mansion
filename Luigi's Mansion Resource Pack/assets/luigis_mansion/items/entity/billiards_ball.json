@@ -1,0 +1,34 @@
+{
+    "model": {
+        "type": "minecraft:select",
+        "property": "minecraft:custom_model_data",
+        "index": 0,
+        "cases": [
+            {
+                "when": "yellow",
+                "model": {
+                    "type": "minecraft:model",
+                    "model": "luigis_mansion:entity/billiards_ball/yellow"
+                }
+            },
+            {
+                "when": "red",
+                "model": {
+                    "type": "minecraft:model",
+                    "model": "luigis_mansion:entity/billiards_ball/red"
+                }
+            },
+            {
+                "when": "purple",
+                "model": {
+                    "type": "minecraft:model",
+                    "model": "luigis_mansion:entity/billiards_ball/purple"
+                }
+            }
+        ],
+        "fallback": {
+            "type": "minecraft:model",
+            "model": "luigis_mansion:entity/billiards_ball/white"
+        }
+    }
+}

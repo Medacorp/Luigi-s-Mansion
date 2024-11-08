@@ -5,7 +5,7 @@
             "id": "minecraft:carrot_on_a_stick",
             "components": {
                 "minecraft:item_model": "luigis_mansion:poltergust_3000",
-                "minecraft:custom_model_data": 0
+                "minecraft:custom_model_data": { "strings": [ "nozzle" ] }
             }
         },
         "title": {

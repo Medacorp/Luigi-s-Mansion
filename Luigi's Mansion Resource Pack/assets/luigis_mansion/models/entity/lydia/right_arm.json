@@ -2,7 +2,7 @@
 	"credit": "Made with Blockbench",
 	"textures": {
 		"0": "luigis_mansion:entity/lydia",
-		"particle": "luigis_mansion:entity/lydia"
+		"particle": "#0"
 	},
 	"elements": [
 		{

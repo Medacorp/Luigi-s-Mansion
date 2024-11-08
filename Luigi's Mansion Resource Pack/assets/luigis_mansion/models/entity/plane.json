@@ -3,7 +3,7 @@
 	"textures": {
 		"0": "luigis_mansion:entity/plane/base",
 		"1": "luigis_mansion:entity/plane/propellor",
-		"particle": "luigis_mansion:entity/plane/base"
+		"particle": "#0"
 	},
 	"elements": [
 		{

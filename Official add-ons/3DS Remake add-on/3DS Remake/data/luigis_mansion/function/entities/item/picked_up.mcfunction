@@ -1,3 +1,4 @@
+data modify entity @s ArmorItems[3].components."minecraft:custom_model_data".flags[0] set value 0b
 data modify storage luigis_mansion:data macro.item set from entity @s ArmorItems[3]
 $function $(namespace):entities/item/picked_up/$(id)
 function 3ds_remake:entities/item/try_to_clear_money_task

@@ -1,0 +1,57 @@
+{
+    "model": {
+        "type": "minecraft:composite",
+        "models": [
+            {
+                "type": "minecraft:model",
+                "model": "luigis_mansion:furniture/door/heart"
+            },
+            {
+                "type": "minecraft:select",
+                "property": "minecraft:custom_model_data",
+                "index": 0,
+                "cases": [
+                    {
+                        "when": "burning",
+                        "model": {
+                            "type": "minecraft:model",
+                            "model": "luigis_mansion:furniture/door/burning"
+                        }
+                    },
+                    {
+                        "when": "barricaded",
+                        "model": {
+                            "type": "minecraft:model",
+                            "model": "luigis_mansion:furniture/door/barricaded"
+                        }
+                    },
+                    {
+                        "when": "barricaded_double",
+                        "model": {
+                            "type": "minecraft:model",
+                            "model": "luigis_mansion:furniture/door/barricaded_double"
+                        }
+                    },
+                    {
+                        "when": "blockade",
+                        "model": {
+                            "type": "minecraft:model",
+                            "model": "luigis_mansion:furniture/door/blockade"
+                        }
+                    },
+                    {
+                        "when": "blockade_area",
+                        "model": {
+                            "type": "minecraft:model",
+                            "model": "luigis_mansion:furniture/door/blockade_area"
+                        }
+                    }
+                ],
+                "fallback": {
+                    "type": "minecraft:model",
+                    "model": "luigis_mansion:item/empty"
+                }
+            }
+        ]
+    }
+}

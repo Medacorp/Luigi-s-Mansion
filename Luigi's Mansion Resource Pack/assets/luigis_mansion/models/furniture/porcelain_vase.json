@@ -1,13 +1,12 @@
 {
 	"credit": "Made with Blockbench",
-	"ambientocclusion": false,
 	"textures": {
 		"0": "luigis_mansion:furniture/porcelain_vase/front",
 		"1": "luigis_mansion:furniture/porcelain_vase/side",
 		"2": "luigis_mansion:furniture/porcelain_vase/top",
 		"3": "luigis_mansion:furniture/porcelain_vase/bottom",
 		"4": "luigis_mansion:furniture/porcelain_vase/top_ring",
-		"particle": "luigis_mansion:furniture/porcelain_vase/front"
+		"particle": "#0"
 	},
 	"elements": [
 		{

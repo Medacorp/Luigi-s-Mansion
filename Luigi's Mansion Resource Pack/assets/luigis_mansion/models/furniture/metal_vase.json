@@ -7,7 +7,7 @@
 		"2": "luigis_mansion:furniture/metal_vase/bottom",
 		"3": "luigis_mansion:furniture/metal_vase/top",
 		"4": "luigis_mansion:furniture/metal_vase/top_ring",
-		"particle": "luigis_mansion:furniture/metal_vase/front"
+		"particle": "#0"
 	},
 	"elements": [
 		{

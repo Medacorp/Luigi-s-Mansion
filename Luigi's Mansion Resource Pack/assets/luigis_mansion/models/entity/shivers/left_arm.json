@@ -2,7 +2,7 @@
 	"credit": "Made with Blockbench",
 	"textures": {
 		"0": "luigis_mansion:entity/shivers",
-		"particle": "luigis_mansion:entity/shivers"
+		"particle": "#0"
 	},
 	"elements": [
 		{

@@ -1,0 +1,577 @@
+{
+    "model": {
+        "type": "minecraft:range_dispatch",
+        "property": "minecraft:custom_model_data",
+        "index": 0,
+        "scale": 1.0,
+        "entries": [
+            {
+                "threshold": 0,
+                "model": {
+                    "type": "minecraft:model",
+                    "model": "luigis_mansion:entity/portrificationizing_king_boo/state_0"
+                }
+            },
+            {
+                "threshold": 1,
+                "model": {
+                    "type": "minecraft:model",
+                    "model": "luigis_mansion:entity/portrificationizing_king_boo/state_1"
+                }
+            },
+            {
+                "threshold": 2,
+                "model": {
+                    "type": "minecraft:model",
+                    "model": "luigis_mansion:entity/portrificationizing_king_boo/state_2"
+                }
+            },
+            {
+                "threshold": 3,
+                "model": {
+                    "type": "minecraft:model",
+                    "model": "luigis_mansion:entity/portrificationizing_king_boo/state_3"
+                }
+            },
+            {
+                "threshold": 4,
+                "model": {
+                    "type": "minecraft:model",
+                    "model": "luigis_mansion:entity/portrificationizing_king_boo/state_4"
+                }
+            },
+            {
+                "threshold": 5,
+                "model": {
+                    "type": "minecraft:model",
+                    "model": "luigis_mansion:entity/portrificationizing_king_boo/state_5"
+                }
+            },
+            {
+                "threshold": 6,
+                "model": {
+                    "type": "minecraft:model",
+                    "model": "luigis_mansion:entity/portrificationizing_king_boo/state_6"
+                }
+            },
+            {
+                "threshold": 7,
+                "model": {
+                    "type": "minecraft:model",
+                    "model": "luigis_mansion:entity/portrificationizing_king_boo/state_7"
+                }
+            },
+            {
+                "threshold": 8,
+                "model": {
+                    "type": "minecraft:model",
+                    "model": "luigis_mansion:entity/portrificationizing_king_boo/state_8"
+                }
+            },
+            {
+                "threshold": 9,
+                "model": {
+                    "type": "minecraft:model",
+                    "model": "luigis_mansion:entity/portrificationizing_king_boo/state_9"
+                }
+            },
+            {
+                "threshold": 10,
+                "model": {
+                    "type": "minecraft:model",
+                    "model": "luigis_mansion:entity/portrificationizing_king_boo/state_10"
+                }
+            },
+            {
+                "threshold": 11,
+                "model": {
+                    "type": "minecraft:model",
+                    "model": "luigis_mansion:entity/portrificationizing_king_boo/state_11"
+                }
+            },
+            {
+                "threshold": 12,
+                "model": {
+                    "type": "minecraft:model",
+                    "model": "luigis_mansion:entity/portrificationizing_king_boo/state_12"
+                }
+            },
+            {
+                "threshold": 13,
+                "model": {
+                    "type": "minecraft:model",
+                    "model": "luigis_mansion:entity/portrificationizing_king_boo/state_13"
+                }
+            },
+            {
+                "threshold": 14,
+                "model": {
+                    "type": "minecraft:model",
+                    "model": "luigis_mansion:entity/portrificationizing_king_boo/state_14"
+                }
+            },
+            {
+                "threshold": 15,
+                "model": {
+                    "type": "minecraft:model",
+                    "model": "luigis_mansion:entity/portrificationizing_king_boo/state_15"
+                }
+            },
+            {
+                "threshold": 16,
+                "model": {
+                    "type": "minecraft:model",
+                    "model": "luigis_mansion:entity/portrificationizing_king_boo/state_16"
+                }
+            },
+            {
+                "threshold": 17,
+                "model": {
+                    "type": "minecraft:model",
+                    "model": "luigis_mansion:entity/portrificationizing_king_boo/state_17"
+                }
+            },
+            {
+                "threshold": 18,
+                "model": {
+                    "type": "minecraft:model",
+                    "model": "luigis_mansion:entity/portrificationizing_king_boo/state_18"
+                }
+            },
+            {
+                "threshold": 19,
+                "model": {
+                    "type": "minecraft:model",
+                    "model": "luigis_mansion:entity/portrificationizing_king_boo/state_19"
+                }
+            },
+            {
+                "threshold": 20,
+                "model": {
+                    "type": "minecraft:model",
+                    "model": "luigis_mansion:entity/portrificationizing_king_boo/state_20"
+                }
+            },
+            {
+                "threshold": 21,
+                "model": {
+                    "type": "minecraft:model",
+                    "model": "luigis_mansion:entity/portrificationizing_king_boo/state_21"
+                }
+            },
+            {
+                "threshold": 22,
+                "model": {
+                    "type": "minecraft:model",
+                    "model": "luigis_mansion:entity/portrificationizing_king_boo/state_22"
+                }
+            },
+            {
+                "threshold": 23,
+                "model": {
+                    "type": "minecraft:model",
+                    "model": "luigis_mansion:entity/portrificationizing_king_boo/state_23"
+                }
+            },
+            {
+                "threshold": 24,
+                "model": {
+                    "type": "minecraft:model",
+                    "model": "luigis_mansion:entity/portrificationizing_king_boo/state_24"
+                }
+            },
+            {
+                "threshold": 25,
+                "model": {
+                    "type": "minecraft:model",
+                    "model": "luigis_mansion:entity/portrificationizing_king_boo/state_25"
+                }
+            },
+            {
+                "threshold": 26,
+                "model": {
+                    "type": "minecraft:model",
+                    "model": "luigis_mansion:entity/portrificationizing_king_boo/state_26"
+                }
+            },
+            {
+                "threshold": 27,
+                "model": {
+                    "type": "minecraft:model",
+                    "model": "luigis_mansion:entity/portrificationizing_king_boo/state_27"
+                }
+            },
+            {
+                "threshold": 28,
+                "model": {
+                    "type": "minecraft:model",
+                    "model": "luigis_mansion:entity/portrificationizing_king_boo/state_28"
+                }
+            },
+            {
+                "threshold": 29,
+                "model": {
+                    "type": "minecraft:model",
+                    "model": "luigis_mansion:entity/portrificationizing_king_boo/state_29"
+                }
+            },
+            {
+                "threshold": 30,
+                "model": {
+                    "type": "minecraft:model",
+                    "model": "luigis_mansion:entity/portrificationizing_king_boo/state_30"
+                }
+            },
+            {
+                "threshold": 31,
+                "model": {
+                    "type": "minecraft:model",
+                    "model": "luigis_mansion:entity/portrificationizing_king_boo/state_31"
+                }
+            },
+            {
+                "threshold": 32,
+                "model": {
+                    "type": "minecraft:model",
+                    "model": "luigis_mansion:entity/portrificationizing_king_boo/state_32"
+                }
+            },
+            {
+                "threshold": 33,
+                "model": {
+                    "type": "minecraft:model",
+                    "model": "luigis_mansion:entity/portrificationizing_king_boo/state_33"
+                }
+            },
+            {
+                "threshold": 34,
+                "model": {
+                    "type": "minecraft:model",
+                    "model": "luigis_mansion:entity/portrificationizing_king_boo/state_34"
+                }
+            },
+            {
+                "threshold": 35,
+                "model": {
+                    "type": "minecraft:model",
+                    "model": "luigis_mansion:entity/portrificationizing_king_boo/state_35"
+                }
+            },
+            {
+                "threshold": 36,
+                "model": {
+                    "type": "minecraft:model",
+                    "model": "luigis_mansion:entity/portrificationizing_king_boo/state_36"
+                }
+            },
+            {
+                "threshold": 37,
+                "model": {
+                    "type": "minecraft:model",
+                    "model": "luigis_mansion:entity/portrificationizing_king_boo/state_37"
+                }
+            },
+            {
+                "threshold": 38,
+                "model": {
+                    "type": "minecraft:model",
+                    "model": "luigis_mansion:entity/portrificationizing_king_boo/state_38"
+                }
+            },
+            {
+                "threshold": 39,
+                "model": {
+                    "type": "minecraft:model",
+                    "model": "luigis_mansion:entity/portrificationizing_king_boo/state_39"
+                }
+            },
+            {
+                "threshold": 40,
+                "model": {
+                    "type": "minecraft:model",
+                    "model": "luigis_mansion:entity/portrificationizing_king_boo/state_40"
+                }
+            },
+            {
+                "threshold": 41,
+                "model": {
+                    "type": "minecraft:model",
+                    "model": "luigis_mansion:entity/portrificationizing_king_boo/state_41"
+                }
+            },
+            {
+                "threshold": 42,
+                "model": {
+                    "type": "minecraft:model",
+                    "model": "luigis_mansion:entity/portrificationizing_king_boo/state_42"
+                }
+            },
+            {
+                "threshold": 43,
+                "model": {
+                    "type": "minecraft:model",
+                    "model": "luigis_mansion:entity/portrificationizing_king_boo/state_43"
+                }
+            },
+            {
+                "threshold": 44,
+                "model": {
+                    "type": "minecraft:model",
+                    "model": "luigis_mansion:entity/portrificationizing_king_boo/state_44"
+                }
+            },
+            {
+                "threshold": 45,
+                "model": {
+                    "type": "minecraft:model",
+                    "model": "luigis_mansion:entity/portrificationizing_king_boo/state_45"
+                }
+            },
+            {
+                "threshold": 46,
+                "model": {
+                    "type": "minecraft:model",
+                    "model": "luigis_mansion:entity/portrificationizing_king_boo/state_46"
+                }
+            },
+            {
+                "threshold": 47,
+                "model": {
+                    "type": "minecraft:model",
+                    "model": "luigis_mansion:entity/portrificationizing_king_boo/state_47"
+                }
+            },
+            {
+                "threshold": 48,
+                "model": {
+                    "type": "minecraft:model",
+                    "model": "luigis_mansion:entity/portrificationizing_king_boo/state_48"
+                }
+            },
+            {
+                "threshold": 49,
+                "model": {
+                    "type": "minecraft:model",
+                    "model": "luigis_mansion:entity/portrificationizing_king_boo/state_49"
+                }
+            },
+            {
+                "threshold": 50,
+                "model": {
+                    "type": "minecraft:model",
+                    "model": "luigis_mansion:entity/portrificationizing_king_boo/state_50"
+                }
+            },
+            {
+                "threshold": 51,
+                "model": {
+                    "type": "minecraft:model",
+                    "model": "luigis_mansion:entity/portrificationizing_king_boo/state_51"
+                }
+            },
+            {
+                "threshold": 52,
+                "model": {
+                    "type": "minecraft:model",
+                    "model": "luigis_mansion:entity/portrificationizing_king_boo/state_52"
+                }
+            },
+            {
+                "threshold": 53,
+                "model": {
+                    "type": "minecraft:model",
+                    "model": "luigis_mansion:entity/portrificationizing_king_boo/state_53"
+                }
+            },
+            {
+                "threshold": 54,
+                "model": {
+                    "type": "minecraft:model",
+                    "model": "luigis_mansion:entity/portrificationizing_king_boo/state_54"
+                }
+            },
+            {
+                "threshold": 55,
+                "model": {
+                    "type": "minecraft:model",
+                    "model": "luigis_mansion:entity/portrificationizing_king_boo/state_55"
+                }
+            },
+            {
+                "threshold": 56,
+                "model": {
+                    "type": "minecraft:model",
+                    "model": "luigis_mansion:entity/portrificationizing_king_boo/state_56"
+                }
+            },
+            {
+                "threshold": 57,
+                "model": {
+                    "type": "minecraft:model",
+                    "model": "luigis_mansion:entity/portrificationizing_king_boo/state_57"
+                }
+            },
+            {
+                "threshold": 58,
+                "model": {
+                    "type": "minecraft:model",
+                    "model": "luigis_mansion:entity/portrificationizing_king_boo/state_58"
+                }
+            },
+            {
+                "threshold": 59,
+                "model": {
+                    "type": "minecraft:model",
+                    "model": "luigis_mansion:entity/portrificationizing_king_boo/state_59"
+                }
+            },
+            {
+                "threshold": 60,
+                "model": {
+                    "type": "minecraft:model",
+                    "model": "luigis_mansion:entity/portrificationizing_king_boo/state_60"
+                }
+            },
+            {
+                "threshold": 61,
+                "model": {
+                    "type": "minecraft:model",
+                    "model": "luigis_mansion:entity/portrificationizing_king_boo/state_61"
+                }
+            },
+            {
+                "threshold": 62,
+                "model": {
+                    "type": "minecraft:model",
+                    "model": "luigis_mansion:entity/portrificationizing_king_boo/state_62"
+                }
+            },
+            {
+                "threshold": 63,
+                "model": {
+                    "type": "minecraft:model",
+                    "model": "luigis_mansion:entity/portrificationizing_king_boo/state_63"
+                }
+            },
+            {
+                "threshold": 64,
+                "model": {
+                    "type": "minecraft:model",
+                    "model": "luigis_mansion:entity/portrificationizing_king_boo/state_64"
+                }
+            },
+            {
+                "threshold": 65,
+                "model": {
+                    "type": "minecraft:model",
+                    "model": "luigis_mansion:entity/portrificationizing_king_boo/state_65"
+                }
+            },
+            {
+                "threshold": 66,
+                "model": {
+                    "type": "minecraft:model",
+                    "model": "luigis_mansion:entity/portrificationizing_king_boo/state_66"
+                }
+            },
+            {
+                "threshold": 67,
+                "model": {
+                    "type": "minecraft:model",
+                    "model": "luigis_mansion:entity/portrificationizing_king_boo/state_67"
+                }
+            },
+            {
+                "threshold": 68,
+                "model": {
+                    "type": "minecraft:model",
+                    "model": "luigis_mansion:entity/portrificationizing_king_boo/state_68"
+                }
+            },
+            {
+                "threshold": 69,
+                "model": {
+                    "type": "minecraft:model",
+                    "model": "luigis_mansion:entity/portrificationizing_king_boo/state_69"
+                }
+            },
+            {
+                "threshold": 70,
+                "model": {
+                    "type": "minecraft:model",
+                    "model": "luigis_mansion:entity/portrificationizing_king_boo/state_70"
+                }
+            },
+            {
+                "threshold": 71,
+                "model": {
+                    "type": "minecraft:model",
+                    "model": "luigis_mansion:entity/portrificationizing_king_boo/state_71"
+                }
+            },
+            {
+                "threshold": 72,
+                "model": {
+                    "type": "minecraft:model",
+                    "model": "luigis_mansion:entity/portrificationizing_king_boo/state_72"
+                }
+            },
+            {
+                "threshold": 73,
+                "model": {
+                    "type": "minecraft:model",
+                    "model": "luigis_mansion:entity/portrificationizing_king_boo/state_73"
+                }
+            },
+            {
+                "threshold": 74,
+                "model": {
+                    "type": "minecraft:model",
+                    "model": "luigis_mansion:entity/portrificationizing_king_boo/state_74"
+                }
+            },
+            {
+                "threshold": 75,
+                "model": {
+                    "type": "minecraft:model",
+                    "model": "luigis_mansion:entity/portrificationizing_king_boo/state_75"
+                }
+            },
+            {
+                "threshold": 76,
+                "model": {
+                    "type": "minecraft:model",
+                    "model": "luigis_mansion:entity/portrificationizing_king_boo/state_76"
+                }
+            },
+            {
+                "threshold": 77,
+                "model": {
+                    "type": "minecraft:model",
+                    "model": "luigis_mansion:entity/portrificationizing_king_boo/state_77"
+                }
+            },
+            {
+                "threshold": 78,
+                "model": {
+                    "type": "minecraft:model",
+                    "model": "luigis_mansion:entity/portrificationizing_king_boo/state_78"
+                }
+            },
+            {
+                "threshold": 79,
+                "model": {
+                    "type": "minecraft:model",
+                    "model": "luigis_mansion:entity/portrificationizing_king_boo/state_79"
+                }
+            },
+            {
+                "threshold": 80,
+                "model": {
+                    "type": "minecraft:model",
+                    "model": "luigis_mansion:entity/portrificationizing_king_boo/state_80"
+                }
+            }
+        ]
+    }
+}

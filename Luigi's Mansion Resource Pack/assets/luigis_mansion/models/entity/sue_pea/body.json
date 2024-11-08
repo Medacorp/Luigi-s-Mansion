@@ -2,7 +2,7 @@
 	"credit": "Made with Blockbench",
 	"textures": {
 		"0": "luigis_mansion:entity/sue_pea",
-		"particle": "luigis_mansion:entity/sue_pea"
+		"particle": "#0"
 	},
 	"elements": [
 		{

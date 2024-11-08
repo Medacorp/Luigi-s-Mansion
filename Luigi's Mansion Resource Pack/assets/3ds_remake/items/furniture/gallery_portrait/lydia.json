@@ -1,0 +1,41 @@
+{
+    "model": {
+        "type": "minecraft:select",
+        "property": "minecraft:custom_model_data",
+        "index": 0,
+        "cases": [
+            {
+                "when": "bronze",
+                "model": {
+                    "type": "minecraft:model",
+                    "model": "3ds_remake:furniture/gallery_portrait/bronze/lydia"
+                }
+            },
+            {
+                "when": "silver",
+                "model": {
+                    "type": "minecraft:model",
+                    "model": "3ds_remake:furniture/gallery_portrait/silver/lydia"
+                }
+            },
+            {
+                "when": "gold",
+                "model": {
+                    "type": "minecraft:model",
+                    "model": "3ds_remake:furniture/gallery_portrait/gold/lydia"
+                }
+            },
+            {
+                "when": "platinum",
+                "model": {
+                    "type": "minecraft:model",
+                    "model": "3ds_remake:furniture/gallery_portrait/platinum/lydia"
+                }
+            }
+        ],
+        "fallback": {
+            "type": "minecraft:model",
+            "model": "3ds_remake:furniture/gallery_portrait/frame"
+        }
+    }
+}

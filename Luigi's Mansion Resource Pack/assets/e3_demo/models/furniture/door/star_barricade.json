@@ -1,6 +1,0 @@
-{
-	"parent": "e3_demo:furniture/door/star",
-	"textures": {
-		"barricade_single": "luigis_mansion:furniture/door/barricade"
-	}
-}

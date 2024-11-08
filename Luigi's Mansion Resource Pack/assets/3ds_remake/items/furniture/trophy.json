@@ -1,0 +1,269 @@
+{
+    "model": {
+        "type": "minecraft:range_dispatch",
+        "property": "minecraft:custom_model_data",
+        "index": 0,
+        "scale": 1.0,
+        "entries": [
+            {
+                "threshold": 0,
+                "model": {
+                    "type": "minecraft:model",
+                    "model": "3ds_remake:furniture/trophy/stand"
+                }
+            },
+            {
+                "threshold": 1,
+                "model": {
+                    "type": "minecraft:select",
+                    "property": "minecraft:custom_model_data",
+                    "index": 0,
+                    "cases": [
+                        {
+                            "when": "right_arm",
+                            "model": {
+                                "type": "minecraft:model",
+                                "model": "3ds_remake:furniture/trophy/silver/ghost/right_arm"
+                            }
+                        },
+                        {
+                            "when": "left_arm",
+                            "model": {
+                                "type": "minecraft:model",
+                                "model": "3ds_remake:furniture/trophy/silver/ghost/left_arm"
+                            }
+                        }
+                    ],
+                    "fallback": {
+                        "type": "minecraft:model",
+                        "model": "3ds_remake:furniture/trophy/silver/ghost/body"
+                    }
+                }
+            },
+            {
+                "threshold": 2,
+                "model": {
+                    "type": "minecraft:select",
+                    "property": "minecraft:custom_model_data",
+                    "index": 0,
+                    "cases": [
+                        {
+                            "when": "right_arm",
+                            "model": {
+                                "type": "minecraft:model",
+                                "model": "3ds_remake:furniture/trophy/silver/garbage_can_ghost/right_arm"
+                            }
+                        },
+                        {
+                            "when": "left_arm",
+                            "model": {
+                                "type": "minecraft:model",
+                                "model": "3ds_remake:furniture/trophy/silver/garbage_can_ghost/left_arm"
+                            }
+                        }
+                    ],
+                    "fallback": {
+                        "type": "minecraft:model",
+                        "model": "3ds_remake:furniture/trophy/silver/garbage_can_ghost/body"
+                    }
+                }
+            },
+            {
+                "threshold": 3,
+                "model": {
+                    "type": "minecraft:select",
+                    "property": "minecraft:custom_model_data",
+                    "index": 0,
+                    "cases": [
+                        {
+                            "when": "right_arm",
+                            "model": {
+                                "type": "minecraft:model",
+                                "model": "3ds_remake:furniture/trophy/silver/puncher/right_arm"
+                            }
+                        },
+                        {
+                            "when": "left_arm",
+                            "model": {
+                                "type": "minecraft:model",
+                                "model": "3ds_remake:furniture/trophy/silver/puncher/left_arm"
+                            }
+                        }
+                    ],
+                    "fallback": {
+                        "type": "minecraft:model",
+                        "model": "3ds_remake:furniture/trophy/silver/puncher/body"
+                    }
+                }
+            },
+            {
+                "threshold": 4,
+                "model": {
+                    "type": "minecraft:select",
+                    "property": "minecraft:custom_model_data",
+                    "index": 0,
+                    "cases": [
+                        {
+                            "when": "right_arm",
+                            "model": {
+                                "type": "minecraft:model",
+                                "model": "3ds_remake:furniture/trophy/silver/twirler/right_arm"
+                            }
+                        },
+                        {
+                            "when": "left_arm",
+                            "model": {
+                                "type": "minecraft:model",
+                                "model": "3ds_remake:furniture/trophy/silver/twirler/left_arm"
+                            }
+                        }
+                    ],
+                    "fallback": {
+                        "type": "minecraft:model",
+                        "model": "3ds_remake:furniture/trophy/silver/twirler/body"
+                    }
+                }
+            },
+            {
+                "threshold": 5,
+                "model": {
+                    "type": "minecraft:select",
+                    "property": "minecraft:custom_model_data",
+                    "index": 0,
+                    "cases": [
+                        {
+                            "when": "right_arm",
+                            "model": {
+                                "type": "minecraft:model",
+                                "model": "3ds_remake:furniture/trophy/gold/ghost/right_arm"
+                            }
+                        },
+                        {
+                            "when": "left_arm",
+                            "model": {
+                                "type": "minecraft:model",
+                                "model": "3ds_remake:furniture/trophy/gold/ghost/left_arm"
+                            }
+                        }
+                    ],
+                    "fallback": {
+                        "type": "minecraft:model",
+                        "model": "3ds_remake:furniture/trophy/gold/ghost/body"
+                    }
+                }
+            },
+            {
+                "threshold": 6,
+                "model": {
+                    "type": "minecraft:select",
+                    "property": "minecraft:custom_model_data",
+                    "index": 0,
+                    "cases": [
+                        {
+                            "when": "right_arm",
+                            "model": {
+                                "type": "minecraft:model",
+                                "model": "3ds_remake:furniture/trophy/gold/garbage_can_ghost/right_arm"
+                            }
+                        },
+                        {
+                            "when": "left_arm",
+                            "model": {
+                                "type": "minecraft:model",
+                                "model": "3ds_remake:furniture/trophy/gold/garbage_can_ghost/left_arm"
+                            }
+                        }
+                    ],
+                    "fallback": {
+                        "type": "minecraft:model",
+                        "model": "3ds_remake:furniture/trophy/gold/garbage_can_ghost/body"
+                    }
+                }
+            },
+            {
+                "threshold": 7,
+                "model": {
+                    "type": "minecraft:select",
+                    "property": "minecraft:custom_model_data",
+                    "index": 0,
+                    "cases": [
+                        {
+                            "when": "right_arm",
+                            "model": {
+                                "type": "minecraft:model",
+                                "model": "3ds_remake:furniture/trophy/gold/puncher/right_arm"
+                            }
+                        },
+                        {
+                            "when": "left_arm",
+                            "model": {
+                                "type": "minecraft:model",
+                                "model": "3ds_remake:furniture/trophy/gold/puncher/left_arm"
+                            }
+                        }
+                    ],
+                    "fallback": {
+                        "type": "minecraft:model",
+                        "model": "3ds_remake:furniture/trophy/gold/puncher/body"
+                    }
+                }
+            },
+            {
+                "threshold": 8,
+                "model": {
+                    "type": "minecraft:select",
+                    "property": "minecraft:custom_model_data",
+                    "index": 0,
+                    "cases": [
+                        {
+                            "when": "right_arm",
+                            "model": {
+                                "type": "minecraft:model",
+                                "model": "3ds_remake:furniture/trophy/gold/twirler/right_arm"
+                            }
+                        },
+                        {
+                            "when": "left_arm",
+                            "model": {
+                                "type": "minecraft:model",
+                                "model": "3ds_remake:furniture/trophy/gold/twirler/left_arm"
+                            }
+                        }
+                    ],
+                    "fallback": {
+                        "type": "minecraft:model",
+                        "model": "3ds_remake:furniture/trophy/gold/twirler/body"
+                    }
+                }
+            },
+            {
+                "threshold": 9,
+                "model": {
+                    "type": "minecraft:select",
+                    "property": "minecraft:custom_model_data",
+                    "index": 0,
+                    "cases": [
+                        {
+                            "when": "right_arm",
+                            "model": {
+                                "type": "minecraft:model",
+                                "model": "3ds_remake:furniture/trophy/gold/grabbing_ghost/right_arm"
+                            }
+                        },
+                        {
+                            "when": "left_arm",
+                            "model": {
+                                "type": "minecraft:model",
+                                "model": "3ds_remake:furniture/trophy/gold/grabbing_ghost/left_arm"
+                            }
+                        }
+                    ],
+                    "fallback": {
+                        "type": "minecraft:model",
+                        "model": "3ds_remake:furniture/trophy/gold/grabbing_ghost/body"
+                    }
+                }
+            }
+        ]
+    }
+}

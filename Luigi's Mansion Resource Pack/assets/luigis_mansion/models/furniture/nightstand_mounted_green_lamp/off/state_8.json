@@ -1,7 +1,0 @@
-{
-	"parent": "luigis_mansion:furniture/nightstand/state_8",
-	"textures": {
-		"green_lamp_1": "luigis_mansion:furniture/green_lamp/off_1",
-		"green_lamp_2": "luigis_mansion:furniture/green_lamp/off_2"
-	}
-}

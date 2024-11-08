@@ -1,0 +1,33 @@
+{
+    "model": {
+        "type": "minecraft:condition",
+        "property": "minecraft:custom_model_data",
+        "index": 0,
+        "on_false": {
+            "type": "minecraft:condition",
+            "property": "minecraft:custom_model_data",
+            "index": 1,
+            "on_false": {
+                "type": "minecraft:model",
+                "model": "luigis_mansion:item/flashlight/off"
+            },
+            "on_true": {
+                "type": "minecraft:model",
+                "model": "3ds_remake:item/flashlight/off_gooigi"
+            }
+        },
+        "on_true": {
+            "type": "minecraft:condition",
+            "property": "minecraft:custom_model_data",
+            "index": 1,
+            "on_false": {
+                "type": "minecraft:model",
+                "model": "luigis_mansion:item/flashlight/on"
+            },
+            "on_true": {
+                "type": "minecraft:model",
+                "model": "3ds_remake:item/flashlight/on_gooigi"
+            }
+        }
+    }
+}

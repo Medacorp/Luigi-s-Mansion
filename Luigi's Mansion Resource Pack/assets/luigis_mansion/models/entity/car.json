@@ -4,7 +4,7 @@
 		"0": "luigis_mansion:entity/car/base",
 		"1": "luigis_mansion:entity/car/front_wheel",
 		"2": "luigis_mansion:entity/car/back_wheel",
-		"particle": "luigis_mansion:entity/car/base"
+		"particle": "#0"
 	},
 	"elements": [
 		{

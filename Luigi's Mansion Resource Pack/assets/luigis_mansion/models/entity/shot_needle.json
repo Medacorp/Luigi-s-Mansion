@@ -2,7 +2,7 @@
 	"credit": "Made with Blockbench",
 	"textures": {
 		"0": "luigis_mansion:entity/shot_needle",
-		"particle": "luigis_mansion:entity/shot_needle"
+		"particle": "#0"
 	},
 	"elements": [
 		{

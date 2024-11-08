@@ -1,0 +1,20 @@
+{
+    "model": {
+        "type": "minecraft:select",
+        "property": "minecraft:custom_model_data",
+        "index": 0,
+        "cases": [
+            {
+                "when": "high",
+                "model": {
+                    "type": "minecraft:model",
+                    "model": "luigis_mansion:entity/haunted_pan/high"
+                }
+            }
+        ],
+        "fallback": {
+            "type": "minecraft:model",
+            "model": "luigis_mansion:entity/haunted_pan/low"
+        }
+    }
+}

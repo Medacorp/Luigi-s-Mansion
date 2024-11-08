@@ -2,7 +2,7 @@
 	"credit": "Made with Blockbench",
 	"textures": {
 		"0": "luigis_mansion:entity/uncle_grimmly",
-		"particle": "luigis_mansion:entity/uncle_grimmly"
+		"particle": "#0"
 	},
 	"elements": [
 		{

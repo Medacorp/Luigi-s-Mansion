@@ -1,0 +1,41 @@
+{
+    "model": {
+        "type": "minecraft:condition",
+        "property": "minecraft:custom_model_data",
+        "index": 0,
+        "on_false": {
+            "type": "minecraft:composite",
+            "models": [
+                {
+                    "type": "minecraft:model",
+                    "model": "luigis_mansion:furniture/fan/clockwise/1"
+                },
+                {
+                    "type": "minecraft:model",
+                    "model": "luigis_mansion:furniture/fan/clockwise/2"
+                },
+                {
+                    "type": "minecraft:model",
+                    "model": "luigis_mansion:furniture/fan/clockwise/3"
+                }
+            ]
+        },
+        "on_true": {
+            "type": "minecraft:composite",
+            "models": [
+                {
+                    "type": "minecraft:model",
+                    "model": "luigis_mansion:furniture/fan/counterclockwise/1"
+                },
+                {
+                    "type": "minecraft:model",
+                    "model": "luigis_mansion:furniture/fan/counterclockwise/2"
+                },
+                {
+                    "type": "minecraft:model",
+                    "model": "luigis_mansion:furniture/fan/counterclockwise/3"
+                }
+            ]
+        }
+    }
+}

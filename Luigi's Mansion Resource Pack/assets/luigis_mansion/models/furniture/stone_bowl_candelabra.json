@@ -6,7 +6,7 @@
 		"2": "luigis_mansion:furniture/stone_bowl_candelabra/foot_top",
 		"3": "luigis_mansion:furniture/stone_bowl_candelabra/side",
 		"4": "luigis_mansion:furniture/stone_bowl_candelabra/top",
-		"particle": "luigis_mansion:furniture/stone_bowl_candelabra/foot_top"
+		"particle": "#3"
 	},
 	"elements": [
 		{

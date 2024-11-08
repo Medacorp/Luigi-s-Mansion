@@ -1,0 +1,34 @@
+{
+    "model": {
+        "type": "minecraft:select",
+        "property": "minecraft:custom_model_data",
+        "index": 0,
+        "cases": [
+            {
+                "when": "bronze",
+                "model": {
+                    "type": "minecraft:model",
+                    "model": "luigis_mansion:furniture/gallery_portrait/bronze/slim_bankshot"
+                }
+            },
+            {
+                "when": "silver",
+                "model": {
+                    "type": "minecraft:model",
+                    "model": "luigis_mansion:furniture/gallery_portrait/silver/slim_bankshot"
+                }
+            },
+            {
+                "when": "gold",
+                "model": {
+                    "type": "minecraft:model",
+                    "model": "luigis_mansion:furniture/gallery_portrait/gold/slim_bankshot"
+                }
+            }
+        ],
+        "fallback": {
+            "type": "minecraft:model",
+            "model": "luigis_mansion:furniture/gallery_portrait/frame"
+        }
+    }
+}

@@ -2,7 +2,7 @@
 	"credit": "Made with Blockbench",
 	"textures": {
 		"0": "luigis_mansion:entity/boo",
-		"particle": "luigis_mansion:entity/boo"
+        "particle": "#0"
 	},
 	"elements": [
 		{
@@ -313,70 +313,5 @@
 			"translation": [0, -1, 0],
 			"scale": [0.6, 0.6, 0.6]
 		}
-	},
-    "overrides": [
-        {
-            "predicate": {
-                "damage": 0.25,
-                "custom_model_data": 0
-            },
-            "model": "luigis_mansion:entity/boo/body"
-        },
-        {
-            "predicate": {
-                "damage": 0.25,
-                "custom_model_data": 1
-            },
-            "model": "luigis_mansion:entity/boo/attacking"
-        },
-        {
-            "predicate": {
-                "damage": 0.25,
-                "custom_model_data": 2
-            },
-            "model": "luigis_mansion:item/empty"
-        },
-        {
-            "predicate": {
-                "damage": 0.5,
-                "custom_model_data": 0
-            },
-            "model": "luigis_mansion:entity/boo/right_arm"
-        },
-        {
-            "predicate": {
-                "damage": 0.5,
-                "custom_model_data": 1
-            },
-            "model": "luigis_mansion:item/empty"
-        },
-        {
-            "predicate": {
-                "damage": 0.5,
-                "custom_model_data": 2
-            },
-            "model": "luigis_mansion:item/empty"
-        },
-        {
-            "predicate": {
-                "damage": 0.75,
-                "custom_model_data": 0
-            },
-            "model": "luigis_mansion:entity/boo/left_arm"
-        },
-        {
-            "predicate": {
-                "damage": 0.75,
-                "custom_model_data": 1
-            },
-            "model": "luigis_mansion:item/empty"
-        },
-        {
-            "predicate": {
-                "damage": 0.75,
-                "custom_model_data": 2
-            },
-            "model": "luigis_mansion:item/empty"
-        }
-    ]
+	}
 }

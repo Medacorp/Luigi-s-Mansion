@@ -1,7 +1,8 @@
 {
 	"credit": "Made with Blockbench",
 	"textures": {
-		"0": "luigis_mansion:entity/shining_ghost"
+		"0": "luigis_mansion:entity/shining_ghost",
+		"particle": "#0"
 	},
 	"elements": [
 		{

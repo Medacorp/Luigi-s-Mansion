@@ -1,0 +1,6 @@
+{
+	"parent": "luigis_mansion:entity/haunted_clown_doll/blue",
+	"textures": {
+		"0": "luigis_mansion:entity/haunted_object/clown_doll/red"
+	}
+}

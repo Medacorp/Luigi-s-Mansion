@@ -2,7 +2,7 @@
 	"credit": "Made with Blockbench",
 	"textures": {
 		"0": "luigis_mansion:entity/nana",
-		"particle": "luigis_mansion:entity/nana"
+		"particle": "#0"
 	},
 	"elements": [
 		{

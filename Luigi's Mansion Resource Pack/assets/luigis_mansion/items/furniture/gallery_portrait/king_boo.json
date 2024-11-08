@@ -1,0 +1,55 @@
+{
+    "model": {
+        "type": "minecraft:select",
+        "property": "minecraft:custom_model_data",
+        "index": 0,
+        "cases": [
+            {
+                "when": "bronze",
+                "model": {
+                    "type": "minecraft:model",
+                    "model": "luigis_mansion:furniture/gallery_portrait/bronze/king_boo"
+                }
+            },
+            {
+                "when": "silver",
+                "model": {
+                    "type": "minecraft:model",
+                    "model": "luigis_mansion:furniture/gallery_portrait/silver/king_boo"
+                }
+            },
+            {
+                "when": "gold",
+                "model": {
+                    "type": "minecraft:model",
+                    "model": "luigis_mansion:furniture/gallery_portrait/gold/king_boo"
+                }
+            },
+            {
+                "when": "portrificationizing_bronze",
+                "model": {
+                    "type": "minecraft:model",
+                    "model": "luigis_mansion:furniture/gallery_portrait/portrificationizing/bronze/king_boo"
+                }
+            },
+            {
+                "when": "portrificationizing_silver",
+                "model": {
+                    "type": "minecraft:model",
+                    "model": "luigis_mansion:furniture/gallery_portrait/portrificationizing/silver/king_boo"
+                }
+            },
+            {
+                "when": "portrificationizing_gold",
+                "model": {
+                    "type": "minecraft:model",
+                    "model": "luigis_mansion:furniture/gallery_portrait/portrificationizing/gold/king_boo"
+                }
+            }
+        ],
+        "fallback": {
+            "type": "minecraft:model",
+            "model": "luigis_mansion:furniture/gallery_portrait/king_boo_frame"
+        }
+    }
+}

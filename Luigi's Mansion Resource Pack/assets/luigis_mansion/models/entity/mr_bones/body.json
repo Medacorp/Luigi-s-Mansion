@@ -2,7 +2,7 @@
 	"credit": "Made with Blockbench",
 	"textures": {
 		"0": "luigis_mansion:entity/mr_bones/chest_legs",
-		"particle": "luigis_mansion:entity/mr_bones/chest_legs"
+		"particle": "#0"
 	},
 	"elements": [
 		{

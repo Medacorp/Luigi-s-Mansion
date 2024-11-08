@@ -2,7 +2,7 @@
 	"credit": "Made with Blockbench",
 	"textures": {
 		"0": "luigis_mansion:entity/ceiling_ghost",
-		"particle": "luigis_mansion:entity/ceiling_ghost"
+		"particle": "#0"
 	},
 	"elements": [
 		{

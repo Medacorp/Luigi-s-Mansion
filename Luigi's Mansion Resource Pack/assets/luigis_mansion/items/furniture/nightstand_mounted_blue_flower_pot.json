@@ -1,0 +1,89 @@
+{
+    "model": {
+        "type": "minecraft:composite",
+        "models": [
+            {
+                "type": "minecraft:model",
+                "model": "luigis_mansion:furniture/nightstand/mounted_blue_flower_pot"
+            },
+            {
+                "type": "minecraft:range_dispatch",
+                "property": "minecraft:custom_model_data",
+                "index": 0,
+                "scale": 1.0,
+                "entries": [
+                    {
+                        "threshold": 0,
+                        "model": {
+                            "type": "minecraft:model",
+                            "model": "luigis_mansion:furniture/nightstand/state_0"
+                        }
+                    },
+                    {
+                        "threshold": 1,
+                        "model": {
+                            "type": "minecraft:model",
+                            "model": "luigis_mansion:furniture/nightstand/state_1"
+                        }
+                    },
+                    {
+                        "threshold": 2,
+                        "model": {
+                            "type": "minecraft:model",
+                            "model": "luigis_mansion:furniture/nightstand/state_2"
+                        }
+                    },
+                    {
+                        "threshold": 3,
+                        "model": {
+                            "type": "minecraft:model",
+                            "model": "luigis_mansion:furniture/nightstand/state_3"
+                        }
+                    },
+                    {
+                        "threshold": 4,
+                        "model": {
+                            "type": "minecraft:model",
+                            "model": "luigis_mansion:furniture/nightstand/state_4"
+                        }
+                    },
+                    {
+                        "threshold": 5,
+                        "model": {
+                            "type": "minecraft:model",
+                            "model": "luigis_mansion:furniture/nightstand/state_5"
+                        }
+                    },
+                    {
+                        "threshold": 5,
+                        "model": {
+                            "type": "minecraft:model",
+                            "model": "luigis_mansion:furniture/nightstand/state_6"
+                        }
+                    },
+                    {
+                        "threshold": 5,
+                        "model": {
+                            "type": "minecraft:model",
+                            "model": "luigis_mansion:furniture/nightstand/state_7"
+                        }
+                    },
+                    {
+                        "threshold": 5,
+                        "model": {
+                            "type": "minecraft:model",
+                            "model": "luigis_mansion:furniture/nightstand/state_8"
+                        }
+                    },
+                    {
+                        "threshold": 5,
+                        "model": {
+                            "type": "minecraft:model",
+                            "model": "luigis_mansion:furniture/nightstand/state_9"
+                        }
+                    }
+                ]
+            }
+        ]
+    }
+}

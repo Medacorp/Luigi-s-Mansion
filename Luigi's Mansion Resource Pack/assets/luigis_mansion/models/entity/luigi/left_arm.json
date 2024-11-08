@@ -2,7 +2,8 @@
 	"credit": "Made with Blockbench",
 	"textures": {
 		"0": "luigis_mansion:entity/luigi/base",
-		"1": "luigis_mansion:entity/luigi/overlay"
+		"1": "luigis_mansion:entity/luigi/overlay",
+		"particle": "#0"
 	},
 	"elements": [
 		{

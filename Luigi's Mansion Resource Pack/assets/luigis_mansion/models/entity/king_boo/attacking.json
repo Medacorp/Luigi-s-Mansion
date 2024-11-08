@@ -3,7 +3,7 @@
 	"textures": {
 		"0": "luigis_mansion:entity/king_boo",
 		"1": "luigis_mansion:entity/king_boos_crown",
-		"particle": "luigis_mansion:entity/king_boo"
+		"particle": "#0"
 	},
 	"elements": [
 		{

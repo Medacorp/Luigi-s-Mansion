@@ -1,7 +1,7 @@
 == NOTICE ==
 This add-on adds a new mansion, this will only work if the world has been closed since the installing of this add-on, it won't work with a reload command.
 
-This is an official add-on, it is made by the map creator and will be updated alongside the map.
+This is an official add-on, it is made by Medacorp and will be updated alongside the map.
 Any compatibility issues with this add-on should be reported to the conflicting add-on.
 
 == How to install ==

@@ -1,7 +1,8 @@
 {
 	"credit": "Made with Blockbench",
 	"textures": {
-		"0": "e3_demo:item/poltergust"
+		"0": "e3_demo:item/poltergust",
+        "particle": "#0"
 	},
 	"elements": [
 		{

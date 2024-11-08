@@ -2,7 +2,7 @@
 	"credit": "Made with Blockbench",
 	"textures": {
 		"0": "luigis_mansion:furniture/stone_bowl_wall_candelabra",
-		"particle": "luigis_mansion:furniture/stone_bowl_wall_candelabra"
+		"particle": "#0"
 	},
 	"elements": [
 		{

@@ -2,7 +2,7 @@
 	"credit": "Made with Blockbench",
 	"textures": {
 		"0": "e3_demo:entity/ghost",
-		"particle": "e3_demo:entity/ghost"
+		"particle": "#0"
 	},
 	"elements": [
 		{

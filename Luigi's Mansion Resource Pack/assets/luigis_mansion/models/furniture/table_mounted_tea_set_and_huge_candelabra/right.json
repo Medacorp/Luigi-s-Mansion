@@ -4,7 +4,7 @@
 		"1": "luigis_mansion:furniture/candle/huge_blank",
 		"2": "luigis_mansion:furniture/table_mounted_tea_sets_and_candelabra/tea_box",
 		"3": "luigis_mansion:furniture/table_mounted_tea_sets_and_candelabra/table",
-		"particle": "luigis_mansion:furniture/table_mounted_tea_sets_and_candelabra/table"
+		"particle": "#3"
 	},
 	"elements": [
 		{

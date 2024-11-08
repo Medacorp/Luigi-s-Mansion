@@ -1,0 +1,6 @@
+{
+	"parent": "luigis_mansion:item/game_boy_horror/screen_zoomed_in",
+	"textures": {
+		"screen": "3ds_remake:item/game_boy_horror/boot_program"
+	}
+}

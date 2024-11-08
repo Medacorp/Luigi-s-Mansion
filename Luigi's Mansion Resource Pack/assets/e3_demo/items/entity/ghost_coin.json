@@ -1,0 +1,6 @@
+{
+    "model": {
+        "type": "minecraft:model",
+        "model": "e3_demo:entity/ghost_coin"
+    }
+}

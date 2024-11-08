@@ -2,7 +2,8 @@
 	"credit": "Made with Blockbench",
 	"textures": {
 		"lamp_1": "luigis_mansion:furniture/green_lamp/off_1",
-		"lamp_2": "luigis_mansion:furniture/green_lamp/off_2"
+		"lamp_2": "luigis_mansion:furniture/green_lamp/off_2",
+		"particle": "#lamp_1"
 	},
 	"elements": [
 		{

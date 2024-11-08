@@ -4,7 +4,7 @@ scoreboard players reset #temp ActionTime
 function luigis_mansion:items/game_boy_horror/show_ghost_presence
 function luigis_mansion:items/game_boy_horror/change_screen
 execute unless entity @s[scores={ForceRadar=1}] if entity @s[nbt={Inventory:[{components:{"minecraft:custom_data":{namespace:"luigis_mansion",id:"game_boy_horror"}}}]}] run function #luigis_mansion:items/game_boy_horror/radar_type
-execute if entity @s[scores={ForceRadar=1},nbt={Inventory:[{components:{"minecraft:custom_data":{namespace:"luigis_mansion",id:"game_boy_horror"}}}]},nbt=!{Inventory:[{components:{"minecraft:damage":3,"minecraft:custom_data":{namespace:"luigis_mansion",id:"game_boy_horror"}}}]}] run function luigis_mansion:items/game_boy_horror/turn_radar_red
+execute if entity @s[scores={ForceRadar=1},nbt={Inventory:[{components:{"minecraft:custom_data":{namespace:"luigis_mansion",id:"game_boy_horror"}}}]},nbt=!{Inventory:[{components:{"minecraft:custom_model_data":{strings:["on_top"]},"minecraft:custom_data":{namespace:"luigis_mansion",id:"game_boy_horror"}}}]}] run function luigis_mansion:items/game_boy_horror/turn_radar_on_top
 execute if entity @s[scores={ForceRadar=1}] unless score #freeze_timer Selected matches 1 run playsound luigis_mansion:item.game_boy_horror.radar player @s ~ ~ ~ 0.5
 execute if entity @s[tag=warp] run function luigis_mansion:selection_menu/game_boy_horror/scan/warp
 execute if entity @s[tag=scanning,scores={TeleportDelayTimer=0}] unless entity @s[nbt={Inventory:[{components:{"minecraft:custom_data":{option:{update_debug_variables:1b}}}}]}] run function luigis_mansion:selection_menu/game_boy_horror/tick_scanning

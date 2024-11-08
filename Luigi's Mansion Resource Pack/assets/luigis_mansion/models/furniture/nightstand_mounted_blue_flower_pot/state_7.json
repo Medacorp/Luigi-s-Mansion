@@ -1,7 +1,0 @@
-{
-	"parent": "luigis_mansion:furniture/nightstand/state_7",
-	"textures": {
-		"blue_flower_pot_1": "luigis_mansion:furniture/blue_flower_pot/main",
-		"blue_flower_pot_2": "luigis_mansion:furniture/blue_flower_pot/back"
-	}
-}

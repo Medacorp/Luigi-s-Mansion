@@ -44,4 +44,5 @@ execute store result score #temp Time run data get entity @s Pose.Head[2]
 execute if entity @s[scores={AnimationProgress=1..30}] store result entity @s Pose.Head[2] float 1 run scoreboard players add #temp Time 3
 scoreboard players reset #temp Time
 data modify entity @s[tag=visible] ArmorItems[3] merge from entity @s ArmorItems[3].components."minecraft:custom_data".model_data.equipment
+data modify entity @s[tag=!visible] ArmorItems[3] merge from entity @s ArmorItems[3].components."minecraft:custom_data".model_data.default
 scoreboard players set @s[scores={AnimationProgress=120}] AnimationProgress 0

@@ -3,7 +3,7 @@
 	"texture_size": [64, 64],
 	"textures": {
 		"0": "luigis_mansion:furniture/weights",
-		"particle": "luigis_mansion:furniture/weights"
+		"particle": "#0"
 	},
 	"elements": [
 		{

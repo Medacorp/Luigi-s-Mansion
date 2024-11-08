@@ -1,0 +1,170 @@
+{
+    "model": {
+        "type": "minecraft:select",
+        "property": "minecraft:display_context",
+        "cases": [
+            {
+                "when": "gui",
+                "model": {
+                    "type": "minecraft:select",
+                    "property": "minecraft:custom_model_data",
+                    "index": 0,
+                    "cases": [
+                        {
+                            "when": "scream",
+                            "model": {
+                                "type": "minecraft:model",
+                                "model": "luigis_mansion:entity/shivers/head_scream"
+                            }
+                        }
+                    ],
+                    "fallback": {
+                        "type": "minecraft:model",
+                        "model": "luigis_mansion:entity/shivers/head"
+                    }
+                }
+            }
+        ],
+        "fallback": {
+            "type": "minecraft:condition",
+            "property": "minecraft:custom_model_data",
+            "index": 0,
+            "on_false": {
+                "type": "minecraft:range_dispatch",
+                "property": "minecraft:custom_model_data",
+                "index": 0,
+                "scale": 1.0,
+                "entries": [
+                    {
+                        "threshold": 1,
+                        "model": {
+                            "type": "minecraft:select",
+                            "property": "minecraft:custom_model_data",
+                            "index": 0,
+                            "cases": [
+                                {
+                                    "when": "equipment",
+                                    "model": {
+                                        "type": "minecraft:model",
+                                        "model": "luigis_mansion:entity/shivers/right_arm_equipment"
+                                    }
+                                }
+                            ],
+                            "fallback": {
+                                "type": "minecraft:model",
+                                "model": "luigis_mansion:entity/shivers/right_arm"
+                            }
+                        }
+                    },
+                    {
+                        "threshold": 2,
+                        "model": {
+                            "type": "minecraft:select",
+                            "property": "minecraft:custom_model_data",
+                            "index": 0,
+                            "cases": [
+                                {
+                                    "when": "equipment",
+                                    "model": {
+                                        "type": "minecraft:model",
+                                        "model": "luigis_mansion:entity/shivers/left_arm_equipment"
+                                    }
+                                }
+                            ],
+                            "fallback": {
+                                "type": "minecraft:model",
+                                "model": "luigis_mansion:entity/shivers/left_arm"
+                            }
+                        }
+                    },
+                    {
+                        "threshold": 3,
+                        "model": {
+                            "type": "minecraft:model",
+                            "model": "luigis_mansion:entity/shivers/body"
+                        }
+                    }
+                ],
+                "fallback": {
+                    "type": "minecraft:select",
+                    "property": "minecraft:custom_model_data",
+                    "index": 0,
+                    "cases": [
+                        {
+                            "when": "scream",
+                            "model": {
+                                "type": "minecraft:model",
+                                "model": "luigis_mansion:entity/shivers/head_scream"
+                            }
+                        }
+                    ],
+                    "fallback": {
+                        "type": "minecraft:model",
+                        "model": "luigis_mansion:entity/shivers/head"
+                    }
+                }
+            },
+            "on_true": {
+                "type": "minecraft:range_dispatch",
+                "property": "minecraft:custom_model_data",
+                "index": 0,
+                "scale": 1.0,
+                "entries": [
+                    {
+                        "threshold": 1,
+                        "model": {
+                            "type": "minecraft:select",
+                            "property": "minecraft:custom_model_data",
+                            "index": 0,
+                            "cases": [
+                                {
+                                    "when": "equipment",
+                                    "model": {
+                                        "type": "minecraft:model",
+                                        "model": "luigis_mansion:entity/shivers/right_arm_equipment_invisible"
+                                    }
+                                }
+                            ],
+                            "fallback": {
+                                "type": "minecraft:model",
+                                "model": "luigis_mansion:item/empty"
+                            }
+                        }
+                    },
+                    {
+                        "threshold": 2,
+                        "model": {
+                            "type": "minecraft:select",
+                            "property": "minecraft:custom_model_data",
+                            "index": 0,
+                            "cases": [
+                                {
+                                    "when": "equipment",
+                                    "model": {
+                                        "type": "minecraft:model",
+                                        "model": "luigis_mansion:entity/shivers/left_arm_equipment_invisible"
+                                    }
+                                }
+                            ],
+                            "fallback": {
+                                "type": "minecraft:model",
+                                "model": "luigis_mansion:item/empty"
+                            }
+                        }
+                    },
+                    {
+                        "threshold": 3,
+                        "model": {
+                            "type": "minecraft:model",
+                            "model": "luigis_mansion:item/empty"
+                        }
+                    }
+                ],
+                "fallback": {
+                    "type": "minecraft:model",
+                    "model": "luigis_mansion:item/empty"
+                }
+            }
+        }
+    }
+}

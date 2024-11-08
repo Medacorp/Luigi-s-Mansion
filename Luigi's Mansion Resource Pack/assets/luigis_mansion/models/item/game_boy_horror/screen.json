@@ -1,0 +1,17 @@
+{
+	"parent": "luigis_mansion:item/game_boy_horror/display",
+    "textures": {
+        "particle": "#screen"
+    },
+	"elements": [
+        {
+			"from": [-4, 11, 5],
+			"to": [20, 26, 5],
+			"rotation": {"angle": 0, "axis": "y", "origin": [20, 35, 29]},
+            "light_emission": 15,
+			"faces": {
+				"north": {"uv": [0, 0, 16, 10], "texture": "#screen"}
+			}
+		}
+    ]
+}

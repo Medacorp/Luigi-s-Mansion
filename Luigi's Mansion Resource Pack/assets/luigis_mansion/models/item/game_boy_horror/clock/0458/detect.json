@@ -1,6 +1,0 @@
-{
-	"parent": "luigis_mansion:item/game_boy_horror/clock/0458",
-	"textures": {
-		"radar": "luigis_mansion:item/game_boy_horror/boo_radar_detect"
-	}
-}

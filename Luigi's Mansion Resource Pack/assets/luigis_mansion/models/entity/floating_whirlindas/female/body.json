@@ -2,7 +2,7 @@
 	"credit": "Made with Blockbench",
 	"textures": {
 		"0": "luigis_mansion:entity/floating_whirlindas/female",
-		"particle": "luigis_mansion:entity/floating_whirlindas/female"
+		"particle": "#0"
 	},
 	"elements": [
 		{

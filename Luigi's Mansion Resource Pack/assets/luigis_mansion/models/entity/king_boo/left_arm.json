@@ -1,8 +1,8 @@
 {
 	"credit": "Made with Blockbench",
 	"textures": {
-		"particle": "luigis_mansion:entity/king_boo",
-		"arm": "luigis_mansion:entity/king_boo"
+		"0": "luigis_mansion:entity/king_boo",
+		"particle": "#0"
 	},
 	"elements": [
 		{
@@ -10,12 +10,12 @@
 			"to": [24.8, 6.8, 11.6],
 			"rotation": {"angle": 0, "axis": "y", "origin": [8, 17.6, 8]},
 			"faces": {
-				"north": {"uv": [0, 11.75, 0.75, 12.5], "texture": "#arm"},
-				"east": {"uv": [0.75, 14, 1.5, 14.75], "texture": "#arm"},
-				"south": {"uv": [0, 12.5, 0.75, 13.25], "texture": "#arm"},
-				"west": {"uv": [4, 11.125, 4.125, 11.25], "texture": "#arm"},
-				"up": {"uv": [0, 13.25, 0.75, 14], "texture": "#arm"},
-				"down": {"uv": [0, 14, 0.75, 14.75], "texture": "#arm"}
+				"north": {"uv": [0, 11.75, 0.75, 12.5], "texture": "#0"},
+				"east": {"uv": [0.75, 14, 1.5, 14.75], "texture": "#0"},
+				"south": {"uv": [0, 12.5, 0.75, 13.25], "texture": "#0"},
+				"west": {"uv": [4, 11.125, 4.125, 11.25], "texture": "#0"},
+				"up": {"uv": [0, 13.25, 0.75, 14], "texture": "#0"},
+				"down": {"uv": [0, 14, 0.75, 14.75], "texture": "#0"}
 			}
 		}
 	],

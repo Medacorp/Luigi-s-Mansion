@@ -4,7 +4,7 @@
 		"0": "luigis_mansion:furniture/wooden_stool/legs",
 		"1": "luigis_mansion:furniture/wooden_stool/top",
 		"2": "luigis_mansion:furniture/candle/blank",
-		"particle": "luigis_mansion:furniture/wooden_stool/legs"
+		"particle": "#0"
 	},
 	"elements": [
 		{

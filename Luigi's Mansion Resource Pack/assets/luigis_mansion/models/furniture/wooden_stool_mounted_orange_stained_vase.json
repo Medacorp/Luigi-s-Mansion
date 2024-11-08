@@ -9,7 +9,7 @@
 		"4": "luigis_mansion:furniture/wooden_stool/top",
 		"5": "luigis_mansion:furniture/orange_stained_vase/bottom",
 		"6": "luigis_mansion:furniture/orange_stained_vase/top_ring",
-		"particle": "luigis_mansion:furniture/wooden_stool/legs"
+		"particle": "#0"
 	},
 	"elements": [
 		{

@@ -2,7 +2,7 @@
 	"credit": "Made with Blockbench",
 	"textures": {
 		"0": "luigis_mansion:entity/mario",
-		"particle": "luigis_mansion:entity/mario"
+		"particle": "#0"
 	},
 	"elements": [
 		{

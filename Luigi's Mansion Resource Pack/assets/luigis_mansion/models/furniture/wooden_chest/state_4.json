@@ -2,7 +2,7 @@
 	"credit": "Made with Blockbench",
 	"textures": {
 		"0": "luigis_mansion:furniture/wooden_chest",
-		"particle": "luigis_mansion:furniture/wooden_chest"
+		"particle": "#0"
 	},
 	"elements": [
 		{

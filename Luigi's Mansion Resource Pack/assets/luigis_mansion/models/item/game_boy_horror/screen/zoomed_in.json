@@ -1,0 +1,6 @@
+{
+	"parent": "luigis_mansion:item/game_boy_horror/screen_zoomed_in",
+	"textures": {
+		"screen": "luigis_mansion:item/game_boy_horror/screen"
+	}
+}

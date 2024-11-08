@@ -1,0 +1,597 @@
+{
+    "model": {
+        "type": "minecraft:condition",
+        "property": "minecraft:custom_model_data",
+        "index": 0,
+        "on_false": {
+            "type": "minecraft:composite",
+            "models": [
+                {
+                    "type": "minecraft:model",
+                    "model": "luigis_mansion:item/game_boy_horror"
+                },
+                {
+                    "type": "minecraft:select",
+                    "property": "minecraft:custom_model_data",
+                    "index": 0,
+                    "cases": [
+                        {
+                            "when": "on",
+                            "model": {
+                                "type": "minecraft:model",
+                                "model": "luigis_mansion:item/game_boy_horror/radar/on"
+                            }
+                        },
+                        {
+                            "when": "detect",
+                            "model": {
+                                "type": "minecraft:model",
+                                "model": "luigis_mansion:item/game_boy_horror/radar/detect"
+                            }
+                        },
+                        {
+                            "when": "nearby",
+                            "model": {
+                                "type": "minecraft:model",
+                                "model": "luigis_mansion:item/game_boy_horror/radar/nearby"
+                            }
+                        },
+                        {
+                            "when": "close",
+                            "model": {
+                                "type": "minecraft:model",
+                                "model": "luigis_mansion:item/game_boy_horror/radar/close"
+                            }
+                        },
+                        {
+                            "when": "here",
+                            "model": {
+                                "type": "minecraft:model",
+                                "model": "luigis_mansion:item/game_boy_horror/radar/here"
+                            }
+                        },
+                        {
+                            "when": "on_top",
+                            "model": {
+                                "type": "minecraft:model",
+                                "model": "luigis_mansion:item/game_boy_horror/radar/on_top"
+                            }
+                        }
+                    ],
+                    "fallback": {
+                        "type": "minecraft:model",
+                        "model": "luigis_mansion:item/game_boy_horror/radar/off"
+                    }
+                },
+                {
+                    "type": "minecraft:select",
+                    "property": "minecraft:custom_model_data",
+                    "index": 1,
+                    "cases": [
+                        {
+                            "when": "call",
+                            "model": {
+                                "type": "minecraft:range_dispatch",
+                                "property": "minecraft:custom_model_data",
+                                "index": 0,
+                                "scale": 1.0,
+                                "entries": [
+                                    {
+                                        "threshold": 0,
+                                        "model": {
+                                            "type": "minecraft:model",
+                                            "model": "luigis_mansion:item/game_boy_horror/screen/call/idle"
+                                        }
+                                    },
+                                    {
+                                        "threshold": 1,
+                                        "model": {
+                                            "type": "minecraft:model",
+                                            "model": "luigis_mansion:item/game_boy_horror/screen/call/fight"
+                                        }
+                                    },
+                                    {
+                                        "threshold": 2,
+                                        "model": {
+                                            "type": "minecraft:model",
+                                            "model": "luigis_mansion:item/game_boy_horror/screen/call/explain"
+                                        }
+                                    },
+                                    {
+                                        "threshold": 3,
+                                        "model": {
+                                            "type": "minecraft:model",
+                                            "model": "luigis_mansion:item/game_boy_horror/screen/call/flutter"
+                                        }
+                                    },
+                                    {
+                                        "threshold": 4,
+                                        "model": {
+                                            "type": "minecraft:model",
+                                            "model": "luigis_mansion:item/game_boy_horror/screen/call/low_idle"
+                                        }
+                                    },
+                                    {
+                                        "threshold": 5,
+                                        "model": {
+                                            "type": "minecraft:model",
+                                            "model": "luigis_mansion:item/game_boy_horror/screen/call/correction"
+                                        }
+                                    },
+                                    {
+                                        "threshold": 6,
+                                        "model": {
+                                            "type": "minecraft:model",
+                                            "model": "luigis_mansion:item/game_boy_horror/screen/call/cheer"
+                                        }
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "when": "clock",
+                            "model": {
+                                "type": "minecraft:composite",
+                                "models": [
+                                    {
+                                        "type": "minecraft:condition",
+                                        "property": "minecraft:has_component",
+                                        "component": "minecraft:lodestone_tracker",
+                                        "on_false": {
+                                            "type": "minecraft:model",
+                                            "model": "luigis_mansion:item/game_boy_horror/screen/clock"
+                                        },
+                                        "on_true": {
+                                            "type": "minecraft:range_dispatch",
+                                            "property": "minecraft:compass",
+                                            "scale": 16.0,
+                                            "target": "lodestone",
+                                            "entries": [
+                                                {
+                                                    "threshold": 0,
+                                                    "model": {
+                                                        "type": "minecraft:model",
+                                                        "model": "luigis_mansion:item/game_boy_horror/screen/clock/direction/n"
+                                                    }
+                                                },
+                                                {
+                                                    "threshold": 1,
+                                                    "model": {
+                                                        "type": "minecraft:model",
+                                                        "model": "luigis_mansion:item/game_boy_horror/screen/clock/direction/nne"
+                                                    }
+                                                },
+                                                {
+                                                    "threshold": 2,
+                                                    "model": {
+                                                        "type": "minecraft:model",
+                                                        "model": "luigis_mansion:item/game_boy_horror/screen/clock/direction/ne"
+                                                    }
+                                                },
+                                                {
+                                                    "threshold": 3,
+                                                    "model": {
+                                                        "type": "minecraft:model",
+                                                        "model": "luigis_mansion:item/game_boy_horror/screen/clock/direction/ene"
+                                                    }
+                                                },
+                                                {
+                                                    "threshold": 4,
+                                                    "model": {
+                                                        "type": "minecraft:model",
+                                                        "model": "luigis_mansion:item/game_boy_horror/screen/clock/direction/e"
+                                                    }
+                                                },
+                                                {
+                                                    "threshold": 5,
+                                                    "model": {
+                                                        "type": "minecraft:model",
+                                                        "model": "luigis_mansion:item/game_boy_horror/screen/clock/direction/ese"
+                                                    }
+                                                },
+                                                {
+                                                    "threshold": 6,
+                                                    "model": {
+                                                        "type": "minecraft:model",
+                                                        "model": "luigis_mansion:item/game_boy_horror/screen/clock/direction/se"
+                                                    }
+                                                },
+                                                {
+                                                    "threshold": 7,
+                                                    "model": {
+                                                        "type": "minecraft:model",
+                                                        "model": "luigis_mansion:item/game_boy_horror/screen/clock/direction/sse"
+                                                    }
+                                                },
+                                                {
+                                                    "threshold": 8,
+                                                    "model": {
+                                                        "type": "minecraft:model",
+                                                        "model": "luigis_mansion:item/game_boy_horror/screen/clock/direction/s"
+                                                    }
+                                                },
+                                                {
+                                                    "threshold": 9,
+                                                    "model": {
+                                                        "type": "minecraft:model",
+                                                        "model": "luigis_mansion:item/game_boy_horror/screen/clock/direction/ssw"
+                                                    }
+                                                },
+                                                {
+                                                    "threshold": 10,
+                                                    "model": {
+                                                        "type": "minecraft:model",
+                                                        "model": "luigis_mansion:item/game_boy_horror/screen/clock/direction/sw"
+                                                    }
+                                                },
+                                                {
+                                                    "threshold": 11,
+                                                    "model": {
+                                                        "type": "minecraft:model",
+                                                        "model": "luigis_mansion:item/game_boy_horror/screen/clock/direction/wsw"
+                                                    }
+                                                },
+                                                {
+                                                    "threshold": 12,
+                                                    "model": {
+                                                        "type": "minecraft:model",
+                                                        "model": "luigis_mansion:item/game_boy_horror/screen/clock/direction/w"
+                                                    }
+                                                },
+                                                {
+                                                    "threshold": 13,
+                                                    "model": {
+                                                        "type": "minecraft:model",
+                                                        "model": "luigis_mansion:item/game_boy_horror/screen/clock/direction/wnw"
+                                                    }
+                                                },
+                                                {
+                                                    "threshold": 14,
+                                                    "model": {
+                                                        "type": "minecraft:model",
+                                                        "model": "luigis_mansion:item/game_boy_horror/screen/clock/direction/nw"
+                                                    }
+                                                },
+                                                {
+                                                    "threshold": 15,
+                                                    "model": {
+                                                        "type": "minecraft:model",
+                                                        "model": "luigis_mansion:item/game_boy_horror/screen/clock/direction/nnw"
+                                                    }
+                                                }
+                                            ]
+                                        }
+                                    },
+                                    {
+                                        "type": "minecraft:condition",
+                                        "property": "minecraft:custom_model_data",
+                                        "index": 1,
+                                        "on_false": {
+                                            "type": "minecraft:model",
+                                            "model": "luigis_mansion:item/game_boy_horror/screen/clock/am"
+                                        },
+                                        "on_true": {
+                                            "type": "minecraft:model",
+                                            "model": "luigis_mansion:item/game_boy_horror/screen/clock/pm"
+                                        }
+                                    },
+                                    {
+                                        "type": "minecraft:range_dispatch",
+                                        "property": "minecraft:custom_model_data",
+                                        "index": 1,
+                                        "scale": 1.0,
+                                        "entries": [
+                                            {
+                                                "threshold": 0,
+                                                "model": {
+                                                    "type": "minecraft:model",
+                                                    "model": "luigis_mansion:item/game_boy_horror/screen/clock/hour/12"
+                                                }
+                                            },
+                                            {
+                                                "threshold": 1,
+                                                "model": {
+                                                    "type": "minecraft:model",
+                                                    "model": "luigis_mansion:item/game_boy_horror/screen/clock/hour/1"
+                                                }
+                                            },
+                                            {
+                                                "threshold": 2,
+                                                "model": {
+                                                    "type": "minecraft:model",
+                                                    "model": "luigis_mansion:item/game_boy_horror/screen/clock/hour/2"
+                                                }
+                                            },
+                                            {
+                                                "threshold": 3,
+                                                "model": {
+                                                    "type": "minecraft:model",
+                                                    "model": "luigis_mansion:item/game_boy_horror/screen/clock/hour/3"
+                                                }
+                                            },
+                                            {
+                                                "threshold": 4,
+                                                "model": {
+                                                    "type": "minecraft:model",
+                                                    "model": "luigis_mansion:item/game_boy_horror/screen/clock/hour/4"
+                                                }
+                                            },
+                                            {
+                                                "threshold": 5,
+                                                "model": {
+                                                    "type": "minecraft:model",
+                                                    "model": "luigis_mansion:item/game_boy_horror/screen/clock/hour/5"
+                                                }
+                                            },
+                                            {
+                                                "threshold": 6,
+                                                "model": {
+                                                    "type": "minecraft:model",
+                                                    "model": "luigis_mansion:item/game_boy_horror/screen/clock/hour/6"
+                                                }
+                                            },
+                                            {
+                                                "threshold": 7,
+                                                "model": {
+                                                    "type": "minecraft:model",
+                                                    "model": "luigis_mansion:item/game_boy_horror/screen/clock/hour/7"
+                                                }
+                                            },
+                                            {
+                                                "threshold": 8,
+                                                "model": {
+                                                    "type": "minecraft:model",
+                                                    "model": "luigis_mansion:item/game_boy_horror/screen/clock/hour/8"
+                                                }
+                                            },
+                                            {
+                                                "threshold": 9,
+                                                "model": {
+                                                    "type": "minecraft:model",
+                                                    "model": "luigis_mansion:item/game_boy_horror/screen/clock/hour/9"
+                                                }
+                                            },
+                                            {
+                                                "threshold": 10,
+                                                "model": {
+                                                    "type": "minecraft:model",
+                                                    "model": "luigis_mansion:item/game_boy_horror/screen/clock/hour/10"
+                                                }
+                                            },
+                                            {
+                                                "threshold": 11,
+                                                "model": {
+                                                    "type": "minecraft:model",
+                                                    "model": "luigis_mansion:item/game_boy_horror/screen/clock/hour/11"
+                                                }
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "type": "minecraft:range_dispatch",
+                                        "property": "minecraft:custom_model_data",
+                                        "index": 2,
+                                        "scale": 1.0,
+                                        "entries": [
+                                            {
+                                                "threshold": 0,
+                                                "model": {
+                                                    "type": "minecraft:model",
+                                                    "model": "luigis_mansion:item/game_boy_horror/screen/clock/minute/0"
+                                                }
+                                            },
+                                            {
+                                                "threshold": 1,
+                                                "model": {
+                                                    "type": "minecraft:model",
+                                                    "model": "luigis_mansion:item/game_boy_horror/screen/clock/minute/1"
+                                                }
+                                            },
+                                            {
+                                                "threshold": 2,
+                                                "model": {
+                                                    "type": "minecraft:model",
+                                                    "model": "luigis_mansion:item/game_boy_horror/screen/clock/minute/2"
+                                                }
+                                            },
+                                            {
+                                                "threshold": 3,
+                                                "model": {
+                                                    "type": "minecraft:model",
+                                                    "model": "luigis_mansion:item/game_boy_horror/screen/clock/minute/3"
+                                                }
+                                            },
+                                            {
+                                                "threshold": 4,
+                                                "model": {
+                                                    "type": "minecraft:model",
+                                                    "model": "luigis_mansion:item/game_boy_horror/screen/clock/minute/4"
+                                                }
+                                            },
+                                            {
+                                                "threshold": 5,
+                                                "model": {
+                                                    "type": "minecraft:model",
+                                                    "model": "luigis_mansion:item/game_boy_horror/screen/clock/minute/5"
+                                                }
+                                            },
+                                            {
+                                                "threshold": 6,
+                                                "model": {
+                                                    "type": "minecraft:model",
+                                                    "model": "luigis_mansion:item/game_boy_horror/screen/clock/minute/6"
+                                                }
+                                            },
+                                            {
+                                                "threshold": 7,
+                                                "model": {
+                                                    "type": "minecraft:model",
+                                                    "model": "luigis_mansion:item/game_boy_horror/screen/clock/minute/7"
+                                                }
+                                            },
+                                            {
+                                                "threshold": 8,
+                                                "model": {
+                                                    "type": "minecraft:model",
+                                                    "model": "luigis_mansion:item/game_boy_horror/screen/clock/minute/8"
+                                                }
+                                            },
+                                            {
+                                                "threshold": 9,
+                                                "model": {
+                                                    "type": "minecraft:model",
+                                                    "model": "luigis_mansion:item/game_boy_horror/screen/clock/minute/9"
+                                                }
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "type": "minecraft:range_dispatch",
+                                        "property": "minecraft:custom_model_data",
+                                        "index": 3,
+                                        "scale": 1.0,
+                                        "entries": [
+                                            {
+                                                "threshold": 0,
+                                                "model": {
+                                                    "type": "minecraft:model",
+                                                    "model": "luigis_mansion:item/game_boy_horror/screen/clock/minute/00"
+                                                }
+                                            },
+                                            {
+                                                "threshold": 1,
+                                                "model": {
+                                                    "type": "minecraft:model",
+                                                    "model": "luigis_mansion:item/game_boy_horror/screen/clock/minute/10"
+                                                }
+                                            },
+                                            {
+                                                "threshold": 2,
+                                                "model": {
+                                                    "type": "minecraft:model",
+                                                    "model": "luigis_mansion:item/game_boy_horror/screen/clock/minute/20"
+                                                }
+                                            },
+                                            {
+                                                "threshold": 3,
+                                                "model": {
+                                                    "type": "minecraft:model",
+                                                    "model": "luigis_mansion:item/game_boy_horror/screen/clock/minute/30"
+                                                }
+                                            },
+                                            {
+                                                "threshold": 4,
+                                                "model": {
+                                                    "type": "minecraft:model",
+                                                    "model": "luigis_mansion:item/game_boy_horror/screen/clock/minute/40"
+                                                }
+                                            },
+                                            {
+                                                "threshold": 5,
+                                                "model": {
+                                                    "type": "minecraft:model",
+                                                    "model": "luigis_mansion:item/game_boy_horror/screen/clock/minute/50"
+                                                }
+                                            }
+                                        ]
+                                    }
+                                ]
+                            }
+                        }
+                    ],
+                    "fallback": {
+                        "type": "minecraft:model",
+                        "model": "luigis_mansion:item/game_boy_horror/screen/none"
+                    }
+                }
+            ]
+        },
+        "on_true": {
+            "type": "minecraft:composite",
+            "models": [
+                {
+                    "type": "minecraft:model",
+                    "model": "luigis_mansion:item/game_boy_horror/zoomed_in"
+                },
+                {
+                    "type": "minecraft:select",
+                    "property": "minecraft:custom_model_data",
+                    "index": 0,
+                    "cases": [
+                        {
+                            "when": "on",
+                            "model": {
+                                "type": "minecraft:model",
+                                "model": "luigis_mansion:item/game_boy_horror/radar/on_zoomed_in"
+                            }
+                        },
+                        {
+                            "when": "detect",
+                            "model": {
+                                "type": "minecraft:model",
+                                "model": "luigis_mansion:item/game_boy_horror/radar/detect_zoomed_in"
+                            }
+                        },
+                        {
+                            "when": "nearby",
+                            "model": {
+                                "type": "minecraft:model",
+                                "model": "luigis_mansion:item/game_boy_horror/radar/nearby_zoomed_in"
+                            }
+                        },
+                        {
+                            "when": "close",
+                            "model": {
+                                "type": "minecraft:model",
+                                "model": "luigis_mansion:item/game_boy_horror/radar/close_zoomed_in"
+                            }
+                        },
+                        {
+                            "when": "here",
+                            "model": {
+                                "type": "minecraft:model",
+                                "model": "luigis_mansion:item/game_boy_horror/radar/here_zoomed_in"
+                            }
+                        },
+                        {
+                            "when": "on_top",
+                            "model": {
+                                "type": "minecraft:model",
+                                "model": "luigis_mansion:item/game_boy_horror/radar/on_top_zoomed_in"
+                            }
+                        }
+                    ],
+                    "fallback": {
+                        "type": "minecraft:model",
+                        "model": "luigis_mansion:item/game_boy_horror/radar/off_zoomed_in"
+                    }
+                },
+                {
+                    "type": "minecraft:select",
+                    "property": "minecraft:custom_model_data",
+                    "index": 1,
+                    "cases": [
+                        {
+                            "when": "scanning",
+                            "model": {
+                                "type": "minecraft:model",
+                                "model": "luigis_mansion:item/game_boy_horror/screen/scanning"
+                            }
+                        },
+                        {
+                            "when": "boot_program",
+                            "model": {
+                                "type": "minecraft:model",
+                                "model": "3ds_remake:item/game_boy_horror/screen/boot_program"
+                            }
+                        }
+                    ],
+                    "fallback": {
+                        "type": "minecraft:model",
+                        "model": "luigis_mansion:item/game_boy_horror/screen/zoomed_in"
+                    }
+                }
+            ]
+        }
+    }
+}

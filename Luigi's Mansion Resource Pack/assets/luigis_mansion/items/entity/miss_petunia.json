@@ -1,0 +1,57 @@
+{
+    "model": {
+        "type": "minecraft:select",
+        "property": "minecraft:display_context",
+        "cases": [
+            {
+                "when": "gui",
+                "model": {
+                    "type": "minecraft:model",
+                    "model": "luigis_mansion:entity/miss_petunia/head"
+                }
+            }
+        ],
+        "fallback": {
+            "type": "minecraft:condition",
+            "property": "minecraft:custom_model_data",
+            "index": 0,
+            "on_false": {
+                "type": "minecraft:range_dispatch",
+                "property": "minecraft:custom_model_data",
+                "index": 0,
+                "scale": 1.0,
+                "entries": [
+                    {
+                        "threshold": 1,
+                        "model": {
+                            "type": "minecraft:model",
+                            "model": "luigis_mansion:entity/miss_petunia/right_arm"
+                        }
+                    },
+                    {
+                        "threshold": 2,
+                        "model": {
+                            "type": "minecraft:model",
+                            "model": "luigis_mansion:entity/miss_petunia/left_arm"
+                        }
+                    },
+                    {
+                        "threshold": 3,
+                        "model": {
+                            "type": "minecraft:model",
+                            "model": "luigis_mansion:entity/miss_petunia/body"
+                        }
+                    }
+                ],
+                "fallback": {
+                    "type": "minecraft:model",
+                    "model": "luigis_mansion:entity/miss_petunia/head"
+                }
+            },
+            "on_true": {
+                "type": "minecraft:model",
+                "model": "luigis_mansion:item/empty"
+            }
+        }
+    }
+}

@@ -1,0 +1,47 @@
+{
+	"parent": "luigis_mansion:item/game_boy_horror/zoomed_in",
+    "textures": {
+        "particle": "#radar"
+    },
+	"elements": [
+		{
+			"from": [14, 27.5, 6.5],
+			"to": [17, 30.5, 9.5],
+			"rotation": {"angle": 0, "axis": "y", "origin": [6.5, 8, 8]},
+			"faces": {
+				"north": {"uv": [2, 0, 4, 2], "texture": "#radar"},
+				"east": {"uv": [0, 0, 2, 2], "texture": "#radar"},
+				"south": {"uv": [6, 0, 8, 2], "texture": "#radar"},
+				"west": {"uv": [4, 0, 6, 2], "texture": "#radar"},
+				"up": {"uv": [8, 0, 10, 2], "texture": "#radar"}
+			}
+		},
+		{
+			"from": [13.99, 27.5, 6.49],
+			"to": [17.01, 30.51, 9.51],
+			"rotation": {"angle": 0, "axis": "y", "origin": [6.5, 8, 8]},
+			"light_emission": 15,
+			"faces": {
+				"north": {"uv": [2, 2, 4, 4], "texture": "#radar"},
+				"east": {"uv": [0, 2, 2, 4], "texture": "#radar"},
+				"south": {"uv": [6, 2, 8, 4], "texture": "#radar"},
+				"west": {"uv": [4, 2, 6, 4], "texture": "#radar"},
+				"up": {"uv": [8, 2, 10, 4], "texture": "#radar"}
+			}
+		},
+		{
+			"from": [9.5, 28.5, 2],
+			"to": [21.5, 32, 14],
+			"rotation": {"angle": 0, "axis": "y", "origin": [6.5, 8, 8]},
+			"light_emission": 15,
+			"faces": {
+				"north": {"uv": [8, 4, 16, 6], "texture": "#radar"},
+				"east": {"uv": [0, 4, 8, 6], "texture": "#radar"},
+				"south": {"uv": [8, 6, 16, 8], "texture": "#radar"},
+				"west": {"uv": [0, 6, 8, 8], "texture": "#radar"},
+				"up": {"uv": [0, 8, 8, 16], "texture": "#radar"},
+				"down": {"uv": [8, 8, 16, 16], "texture": "#radar"}
+			}
+		}
+	]
+}

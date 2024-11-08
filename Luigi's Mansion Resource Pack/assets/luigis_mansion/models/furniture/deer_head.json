@@ -2,7 +2,7 @@
 	"credit": "Made with Blockbench",
 	"textures": {
 		"0": "luigis_mansion:furniture/deer_head",
-		"particle": "luigis_mansion:furniture/deer_head"
+		"particle": "#0"
 	},
 	"elements": [
 		{

@@ -2,7 +2,7 @@
 	"credit": "Made with Blockbench",
 	"textures": {
 		"0": "luigis_mansion:entity/ice_spike",
-		"particle": "luigis_mansion:entity/ice_spike"
+		"particle": "#0"
 	},
 	"elements": [
 		{

@@ -6,7 +6,7 @@
 		"2": "luigis_mansion:furniture/toilet/lid",
 		"3": "luigis_mansion:furniture/toilet/side",
 		"4": "luigis_mansion:furniture/toilet/top",
-		"particle": "luigis_mansion:furniture/toilet/bottom"
+		"particle": "#0"
 	},
 	"elements": [
 		{
