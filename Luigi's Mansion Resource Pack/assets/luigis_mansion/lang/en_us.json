@@ -76,6 +76,8 @@
 "luigis_mansion:death.car.killer": "%s was run over by %s.",
 "luigis_mansion:death.chandelier": "%s was struck by a chandelier.",
 "luigis_mansion:death.chandelier.killer": "%s was struck by a chandelier while fighting %s.",
+"luigis_mansion:death.choke": "%s choked on a mushroom.",
+"luigis_mansion:death.choke.killer": "%s choked on a mushroom while fighting %s.",
 "luigis_mansion:death.crushed.killer": "%s was crushed by %s.",
 "luigis_mansion:death.cut.killer": "%s was cut by %s.",
 "luigis_mansion:death.dashed_into.killer": "%s was dashed into by %s.",

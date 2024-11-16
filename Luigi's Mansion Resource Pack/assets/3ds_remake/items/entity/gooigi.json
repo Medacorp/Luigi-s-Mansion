@@ -6,8 +6,17 @@
             {
                 "when": "gui",
                 "model": {
-                    "type": "minecraft:model",
-                    "model": "3ds_remake:entity/gooigi/head"
+                    "type": "minecraft:composite",
+                    "models": [
+                        {
+                            "type": "minecraft:model",
+                            "model": "3ds_remake:entity/gooigi/head"
+                        },
+                        {
+                            "type": "minecraft:model",
+                            "model": "3ds_remake:entity/gooigi/hat"
+                        }
+                    ]
                 }
             }
         ],
@@ -58,8 +67,17 @@
                     }
                 ],
                 "fallback": {
-                    "type": "minecraft:model",
-                    "model": "3ds_remake:entity/gooigi/head"
+                    "type": "minecraft:composite",
+                    "models": [
+                        {
+                            "type": "minecraft:model",
+                            "model": "3ds_remake:entity/gooigi/head"
+                        },
+                        {
+                            "type": "minecraft:model",
+                            "model": "3ds_remake:entity/gooigi/hat"
+                        }
+                    ]
                 }
             },
             "on_true": {

@@ -1,2 +1,3 @@
 execute as @a[tag=collector,tag=!was_in_dialog,tag=looking_at_map,limit=1] at @s run function luigis_mansion:selection_menu/game_boy_horror/exit
-execute as @a[tag=collector,tag=!was_in_dialog,tag=!catching_ghost,limit=1] at @s run function luigis_mansion:items/poison_mushroom/hit
+execute if entity @s[tag=!choking] as @a[tag=collector,tag=!was_in_dialog,tag=!catching_ghost,limit=1] at @s run function luigis_mansion:items/poison_mushroom/shrink
+execute if entity @s[tag=choking] as @a[tag=collector,tag=!was_in_dialog,tag=!catching_ghost,limit=1] at @s run function luigis_mansion:items/poison_mushroom/choke

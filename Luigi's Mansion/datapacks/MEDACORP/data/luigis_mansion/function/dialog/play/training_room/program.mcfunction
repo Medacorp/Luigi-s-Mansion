@@ -2,7 +2,7 @@ execute if score #dialog Dialog matches 438 run scoreboard players add #dialog D
 execute if entity @a[scores={Health=..1},tag=same_room] run scoreboard players set #dialog Dialog 438
 execute if score #dialog Dialog matches 417..436 if entity @a[tag=same_room,tag=next_dialog_line,limit=1] run scoreboard players set #dialog Dialog 437
 execute if score #dialog Dialog matches 416..435 run scoreboard players add #dialog Dialog 1
-execute if score #dialog Dialog matches 395..414 if entity @a[tag=same_room,tag=next_dialog_line,limit=1] run scoreboard players add #dialog Dialog 1
+execute if score #dialog Dialog matches 395..414 if entity @a[tag=same_room,tag=next_dialog_line,limit=1] run scoreboard players set #dialog Dialog 415
 execute if score #dialog Dialog matches 394..413 run scoreboard players add #dialog Dialog 1
 execute if score #dialog Dialog matches 393 if entity @a[tag=same_room,tag=select_dialog_branch_no,limit=1] run scoreboard players set #dialog Dialog 416
 execute if score #dialog Dialog matches 393 if entity @a[tag=same_room,tag=select_dialog_branch_yes,limit=1] run scoreboard players set #dialog Dialog 394
@@ -286,7 +286,7 @@ execute if score #dialog Dialog matches 393 as @a[tag=same_room,tag=!spectator] 
 
 #Branch: Yes
 execute if score #dialog Dialog matches 394 as @a[tag=same_room,tag=!spectator] run function luigis_mansion:entities/player/animation/set/nod
-execute if score #dialog Dialog matches 394 if entity @a[tag=next_dialog_line,limit=1] run stopsound @a[tag=same_room] neutral luigis_mansion:entity.e_gadd.talk.soy_soh_ooh_oh_tohmah_tahmehno_tahkeh_bohh
+execute if score #dialog Dialog matches 394 run stopsound @a[tag=same_room] neutral luigis_mansion:entity.e_gadd.talk.soy_soh_ooh_oh_tohmah_tahmehno_tahkeh_bohh
 execute if score #dialog Dialog matches 394 run tellraw @a[tag=same_room] {"type":"translatable","translate":"chat.type.text","with":[{"type":"translatable","translate":"luigis_mansion:entity.e_gadd","color":"green"},{"type":"translatable","translate":"luigis_mansion:dialog.training_room.26.yes.1"}]}
 execute if score #dialog Dialog matches 394 as @a[tag=same_room] at @s run playsound luigis_mansion:entity.e_gadd.talk.oydohroh_odoh neutral @s ~ ~ ~ 1
 execute if score #dialog Dialog matches 414 as @a[tag=same_room,tag=!spectator] run function luigis_mansion:entities/player/animation/set/idle
@@ -300,7 +300,7 @@ execute if score #dialog Dialog matches 415 run scoreboard players set #dialog D
 
 #Branch: No
 execute if score #dialog Dialog matches 416 as @a[tag=same_room,tag=!spectator] run function luigis_mansion:entities/player/animation/set/nod
-execute if score #dialog Dialog matches 416 if entity @a[tag=next_dialog_line,limit=1] run stopsound @a[tag=same_room] neutral luigis_mansion:entity.e_gadd.talk.soy_soh_ooh_oh_tohmah_tahmehno_tahkeh_bohh
+execute if score #dialog Dialog matches 416 run stopsound @a[tag=same_room] neutral luigis_mansion:entity.e_gadd.talk.soy_soh_ooh_oh_tohmah_tahmehno_tahkeh_bohh
 execute if score #dialog Dialog matches 416 if score #players Totals matches 1 run tellraw @a[tag=same_room] {"type":"translatable","translate":"chat.type.text","with":[{"type":"translatable","translate":"luigis_mansion:entity.e_gadd","color":"green"},{"type":"translatable","translate":"luigis_mansion:dialog.training_room.26.no.1"}]}
 execute if score #dialog Dialog matches 416 if score #players Totals matches 2.. run tellraw @a[tag=same_room] {"type":"translatable","translate":"chat.type.text","with":[{"type":"translatable","translate":"luigis_mansion:entity.e_gadd","color":"green"},{"type":"translatable","translate":"luigis_mansion:dialog.training_room.26.no.1.more"}]}
 execute if score #dialog Dialog matches 416 as @a[tag=same_room] at @s run playsound luigis_mansion:entity.e_gadd.talk.ohyah_mee neutral @s ~ ~ ~ 1

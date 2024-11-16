@@ -6643,6 +6643,15 @@
         ],
         "subtitle": "luigis_mansion:subtitles.entity.player.recover"
     },
+    "entity.player.recover.slap": {
+        "sounds": [
+            {
+                "name": "luigis_mansion:entity/player/slap",
+                "stream": false
+            }
+        ],
+        "subtitle": "luigis_mansion:subtitles.entity.player.recover"
+    },
     "entity.player.revive": {
         "sounds": [
             {

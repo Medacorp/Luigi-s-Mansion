@@ -15,14 +15,23 @@
                         "index": 0,
                         "cases": [
                             {
-                                "when": "dark_room",
+                                "when": "scared",
                                 "model": {
-                                    "type": "minecraft:model",
-                                    "model": "luigis_mansion:entity/luigi/head_dark_room",
-                                    "tints": [
+                                    "type": "minecraft:composite",
+                                    "models": [
                                         {
-                                            "type": "minecraft:dye",
-                                            "default": 37129
+                                            "type": "minecraft:model",
+                                            "model": "luigis_mansion:entity/luigi/head_scared"
+                                        },
+                                        {
+                                            "type": "minecraft:model",
+                                            "model": "luigis_mansion:entity/luigi/hat_solid",
+                                            "tints": [
+                                                {
+                                                    "type": "minecraft:dye",
+                                                    "default": 37129
+                                                }
+                                            ]
                                         }
                                     ]
                                 }
@@ -30,8 +39,88 @@
                             {
                                 "when": "dead",
                                 "model": {
+                                    "type": "minecraft:composite",
+                                    "models": [
+                                        {
+                                            "type": "minecraft:model",
+                                            "model": "luigis_mansion:entity/luigi/head_dead"
+                                        },
+                                        {
+                                            "type": "minecraft:model",
+                                            "model": "luigis_mansion:entity/luigi/hat_solid",
+                                            "tints": [
+                                                {
+                                                    "type": "minecraft:dye",
+                                                    "default": 37129
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            },
+                            {
+                                "when": "choking",
+                                "model": {
+                                    "type": "minecraft:composite",
+                                    "models": [
+                                        {
+                                            "type": "minecraft:model",
+                                            "model": "luigis_mansion:entity/luigi/head_choking"
+                                        },
+                                        {
+                                            "type": "minecraft:model",
+                                            "model": "luigis_mansion:entity/luigi/hat_solid",
+                                            "tints": [
+                                                {
+                                                    "type": "minecraft:dye",
+                                                    "default": 37129
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            },
+                            {
+                                "when": "happy",
+                                "model": {
+                                    "type": "minecraft:composite",
+                                    "models": [
+                                        {
+                                            "type": "minecraft:model",
+                                            "model": "luigis_mansion:entity/luigi/head_happy"
+                                        },
+                                        {
+                                            "type": "minecraft:model",
+                                            "model": "luigis_mansion:entity/luigi/hat_solid",
+                                            "tints": [
+                                                {
+                                                    "type": "minecraft:dye",
+                                                    "default": 37129
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            },
+                            {
+                                "when": "bash",
+                                "model": {
                                     "type": "minecraft:model",
-                                    "model": "luigis_mansion:entity/luigi/head_dead",
+                                    "model": "luigis_mansion:entity/luigi/head_bash"
+                                }
+                            },
+                            {
+                                "when": "hatless",
+                                "model": {
+                                    "type": "minecraft:model",
+                                    "model": "luigis_mansion:entity/luigi/head_scared"
+                                }
+                            },
+                            {
+                                "when": "hat",
+                                "model": {
+                                    "type": "minecraft:model",
+                                    "model": "luigis_mansion:entity/luigi/hat",
                                     "tints": [
                                         {
                                             "type": "minecraft:dye",
@@ -42,12 +131,21 @@
                             }
                         ],
                         "fallback": {
-                            "type": "minecraft:model",
-                            "model": "luigis_mansion:entity/luigi/head",
-                            "tints": [
+                            "type": "minecraft:composite",
+                            "models": [
                                 {
-                                    "type": "minecraft:dye",
-                                    "default": 37129
+                                    "type": "minecraft:model",
+                                    "model": "luigis_mansion:entity/luigi/head"
+                                },
+                                {
+                                    "type": "minecraft:model",
+                                    "model": "luigis_mansion:entity/luigi/hat_solid",
+                                    "tints": [
+                                        {
+                                            "type": "minecraft:dye",
+                                            "default": 37129
+                                        }
+                                    ]
                                 }
                             ]
                         }
@@ -58,14 +156,23 @@
                         "index": 0,
                         "cases": [
                             {
-                                "when": "dark_room",
+                                "when": "scared",
                                 "model": {
-                                    "type": "minecraft:model",
-                                    "model": "luigis_mansion:entity/luigi/head_dark_room_2",
-                                    "tints": [
+                                    "type": "minecraft:composite",
+                                    "models": [
                                         {
-                                            "type": "minecraft:dye",
-                                            "default": 37129
+                                            "type": "minecraft:model",
+                                            "model": "luigis_mansion:entity/luigi/head_scared"
+                                        },
+                                        {
+                                            "type": "minecraft:model",
+                                            "model": "luigis_mansion:entity/luigi/hat_solid_2",
+                                            "tints": [
+                                                {
+                                                    "type": "minecraft:dye",
+                                                    "default": 37129
+                                                }
+                                            ]
                                         }
                                     ]
                                 }
@@ -73,8 +180,88 @@
                             {
                                 "when": "dead",
                                 "model": {
+                                    "type": "minecraft:composite",
+                                    "models": [
+                                        {
+                                            "type": "minecraft:model",
+                                            "model": "luigis_mansion:entity/luigi/head_dead"
+                                        },
+                                        {
+                                            "type": "minecraft:model",
+                                            "model": "luigis_mansion:entity/luigi/hat_solid_2",
+                                            "tints": [
+                                                {
+                                                    "type": "minecraft:dye",
+                                                    "default": 37129
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            },
+                            {
+                                "when": "choking",
+                                "model": {
+                                    "type": "minecraft:composite",
+                                    "models": [
+                                        {
+                                            "type": "minecraft:model",
+                                            "model": "luigis_mansion:entity/luigi/head_choking"
+                                        },
+                                        {
+                                            "type": "minecraft:model",
+                                            "model": "luigis_mansion:entity/luigi/hat_solid_2",
+                                            "tints": [
+                                                {
+                                                    "type": "minecraft:dye",
+                                                    "default": 37129
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            },
+                            {
+                                "when": "happy",
+                                "model": {
+                                    "type": "minecraft:composite",
+                                    "models": [
+                                        {
+                                            "type": "minecraft:model",
+                                            "model": "luigis_mansion:entity/luigi/head_happy"
+                                        },
+                                        {
+                                            "type": "minecraft:model",
+                                            "model": "luigis_mansion:entity/luigi/hat_solid_2",
+                                            "tints": [
+                                                {
+                                                    "type": "minecraft:dye",
+                                                    "default": 37129
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            },
+                            {
+                                "when": "bash",
+                                "model": {
                                     "type": "minecraft:model",
-                                    "model": "luigis_mansion:entity/luigi/head_dead_2",
+                                    "model": "luigis_mansion:entity/luigi/head_bash"
+                                }
+                            },
+                            {
+                                "when": "hatless",
+                                "model": {
+                                    "type": "minecraft:model",
+                                    "model": "luigis_mansion:entity/luigi/head_scared"
+                                }
+                            },
+                            {
+                                "when": "hat",
+                                "model": {
+                                    "type": "minecraft:model",
+                                    "model": "luigis_mansion:entity/luigi/hat_2",
                                     "tints": [
                                         {
                                             "type": "minecraft:dye",
@@ -85,12 +272,21 @@
                             }
                         ],
                         "fallback": {
-                            "type": "minecraft:model",
-                            "model": "luigis_mansion:entity/luigi/head_2",
-                            "tints": [
+                            "type": "minecraft:composite",
+                            "models": [
                                 {
-                                    "type": "minecraft:dye",
-                                    "default": 37129
+                                    "type": "minecraft:model",
+                                    "model": "luigis_mansion:entity/luigi/head"
+                                },
+                                {
+                                    "type": "minecraft:model",
+                                    "model": "luigis_mansion:entity/luigi/hat_solid_2",
+                                    "tints": [
+                                        {
+                                            "type": "minecraft:dye",
+                                            "default": 37129
+                                        }
+                                    ]
                                 }
                             ]
                         }
@@ -105,7 +301,7 @@
             "on_false": {
                 "type": "minecraft:condition",
                 "property": "minecraft:custom_model_data",
-                "index": 0,
+                "index": 1,
                 "on_false": {
                     "type": "minecraft:range_dispatch",
                     "property": "minecraft:custom_model_data",
@@ -273,14 +469,23 @@
                         "index": 0,
                         "cases": [
                             {
-                                "when": "dark_room",
+                                "when": "scared",
                                 "model": {
-                                    "type": "minecraft:model",
-                                    "model": "luigis_mansion:entity/luigi/head_dark_room",
-                                    "tints": [
+                                    "type": "minecraft:composite",
+                                    "models": [
                                         {
-                                            "type": "minecraft:dye",
-                                            "default": 37129
+                                            "type": "minecraft:model",
+                                            "model": "luigis_mansion:entity/luigi/head_scared"
+                                        },
+                                        {
+                                            "type": "minecraft:model",
+                                            "model": "luigis_mansion:entity/luigi/hat_solid",
+                                            "tints": [
+                                                {
+                                                    "type": "minecraft:dye",
+                                                    "default": 37129
+                                                }
+                                            ]
                                         }
                                     ]
                                 }
@@ -288,8 +493,88 @@
                             {
                                 "when": "dead",
                                 "model": {
+                                    "type": "minecraft:composite",
+                                    "models": [
+                                        {
+                                            "type": "minecraft:model",
+                                            "model": "luigis_mansion:entity/luigi/head_dead"
+                                        },
+                                        {
+                                            "type": "minecraft:model",
+                                            "model": "luigis_mansion:entity/luigi/hat_solid",
+                                            "tints": [
+                                                {
+                                                    "type": "minecraft:dye",
+                                                    "default": 37129
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            },
+                            {
+                                "when": "choking",
+                                "model": {
+                                    "type": "minecraft:composite",
+                                    "models": [
+                                        {
+                                            "type": "minecraft:model",
+                                            "model": "luigis_mansion:entity/luigi/head_choking"
+                                        },
+                                        {
+                                            "type": "minecraft:model",
+                                            "model": "luigis_mansion:entity/luigi/hat_solid",
+                                            "tints": [
+                                                {
+                                                    "type": "minecraft:dye",
+                                                    "default": 37129
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            },
+                            {
+                                "when": "happy",
+                                "model": {
+                                    "type": "minecraft:composite",
+                                    "models": [
+                                        {
+                                            "type": "minecraft:model",
+                                            "model": "luigis_mansion:entity/luigi/head_happy"
+                                        },
+                                        {
+                                            "type": "minecraft:model",
+                                            "model": "luigis_mansion:entity/luigi/hat_solid",
+                                            "tints": [
+                                                {
+                                                    "type": "minecraft:dye",
+                                                    "default": 37129
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            },
+                            {
+                                "when": "bash",
+                                "model": {
                                     "type": "minecraft:model",
-                                    "model": "luigis_mansion:entity/luigi/head_dead",
+                                    "model": "luigis_mansion:entity/luigi/head_bash"
+                                }
+                            },
+                            {
+                                "when": "hatless",
+                                "model": {
+                                    "type": "minecraft:model",
+                                    "model": "luigis_mansion:entity/luigi/head_scared"
+                                }
+                            },
+                            {
+                                "when": "hat",
+                                "model": {
+                                    "type": "minecraft:model",
+                                    "model": "luigis_mansion:entity/luigi/hat",
                                     "tints": [
                                         {
                                             "type": "minecraft:dye",
@@ -297,22 +582,24 @@
                                         }
                                     ]
                                 }
-                            },
-                            {
-                                "when": "squished",
-                                "model": {
-                                    "type": "minecraft:model",
-                                    "model": "luigis_mansion:item/empty"
-                                }
                             }
                         ],
                         "fallback": {
-                            "type": "minecraft:model",
-                            "model": "luigis_mansion:entity/luigi/head",
-                            "tints": [
+                            "type": "minecraft:composite",
+                            "models": [
                                 {
-                                    "type": "minecraft:dye",
-                                    "default": 37129
+                                    "type": "minecraft:model",
+                                    "model": "luigis_mansion:entity/luigi/head"
+                                },
+                                {
+                                    "type": "minecraft:model",
+                                    "model": "luigis_mansion:entity/luigi/hat_solid",
+                                    "tints": [
+                                        {
+                                            "type": "minecraft:dye",
+                                            "default": 37129
+                                        }
+                                    ]
                                 }
                             ]
                         }
@@ -485,14 +772,23 @@
                         "index": 0,
                         "cases": [
                             {
-                                "when": "dark_room",
+                                "when": "scared",
                                 "model": {
-                                    "type": "minecraft:model",
-                                    "model": "luigis_mansion:entity/luigi/head_dark_room_2",
-                                    "tints": [
+                                    "type": "minecraft:composite",
+                                    "models": [
                                         {
-                                            "type": "minecraft:dye",
-                                            "default": 37129
+                                            "type": "minecraft:model",
+                                            "model": "luigis_mansion:entity/luigi/head_scared"
+                                        },
+                                        {
+                                            "type": "minecraft:model",
+                                            "model": "luigis_mansion:entity/luigi/hat_solid_2",
+                                            "tints": [
+                                                {
+                                                    "type": "minecraft:dye",
+                                                    "default": 37129
+                                                }
+                                            ]
                                         }
                                     ]
                                 }
@@ -500,8 +796,88 @@
                             {
                                 "when": "dead",
                                 "model": {
+                                    "type": "minecraft:composite",
+                                    "models": [
+                                        {
+                                            "type": "minecraft:model",
+                                            "model": "luigis_mansion:entity/luigi/head_dead"
+                                        },
+                                        {
+                                            "type": "minecraft:model",
+                                            "model": "luigis_mansion:entity/luigi/hat_solid_2",
+                                            "tints": [
+                                                {
+                                                    "type": "minecraft:dye",
+                                                    "default": 37129
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            },
+                            {
+                                "when": "choking",
+                                "model": {
+                                    "type": "minecraft:composite",
+                                    "models": [
+                                        {
+                                            "type": "minecraft:model",
+                                            "model": "luigis_mansion:entity/luigi/head_choking"
+                                        },
+                                        {
+                                            "type": "minecraft:model",
+                                            "model": "luigis_mansion:entity/luigi/hat_solid_2",
+                                            "tints": [
+                                                {
+                                                    "type": "minecraft:dye",
+                                                    "default": 37129
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            },
+                            {
+                                "when": "happy",
+                                "model": {
+                                    "type": "minecraft:composite",
+                                    "models": [
+                                        {
+                                            "type": "minecraft:model",
+                                            "model": "luigis_mansion:entity/luigi/head_happy"
+                                        },
+                                        {
+                                            "type": "minecraft:model",
+                                            "model": "luigis_mansion:entity/luigi/hat_solid_2",
+                                            "tints": [
+                                                {
+                                                    "type": "minecraft:dye",
+                                                    "default": 37129
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            },
+                            {
+                                "when": "bash",
+                                "model": {
                                     "type": "minecraft:model",
-                                    "model": "luigis_mansion:entity/luigi/head_dead_2",
+                                    "model": "luigis_mansion:entity/luigi/head_bash"
+                                }
+                            },
+                            {
+                                "when": "hatless",
+                                "model": {
+                                    "type": "minecraft:model",
+                                    "model": "luigis_mansion:entity/luigi/head_scared"
+                                }
+                            },
+                            {
+                                "when": "hat",
+                                "model": {
+                                    "type": "minecraft:model",
+                                    "model": "luigis_mansion:entity/luigi/hat_2",
                                     "tints": [
                                         {
                                             "type": "minecraft:dye",
@@ -509,22 +885,24 @@
                                         }
                                     ]
                                 }
-                            },
-                            {
-                                "when": "squished",
-                                "model": {
-                                    "type": "minecraft:model",
-                                    "model": "luigis_mansion:item/empty"
-                                }
                             }
                         ],
                         "fallback": {
-                            "type": "minecraft:model",
-                            "model": "luigis_mansion:entity/luigi/head_2",
-                            "tints": [
+                            "type": "minecraft:composite",
+                            "models": [
                                 {
-                                    "type": "minecraft:dye",
-                                    "default": 37129
+                                    "type": "minecraft:model",
+                                    "model": "luigis_mansion:entity/luigi/head"
+                                },
+                                {
+                                    "type": "minecraft:model",
+                                    "model": "luigis_mansion:entity/luigi/hat_solid_2",
+                                    "tints": [
+                                        {
+                                            "type": "minecraft:dye",
+                                            "default": 37129
+                                        }
+                                    ]
                                 }
                             ]
                         }

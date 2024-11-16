@@ -1,0 +1,7 @@
+{
+	"parent": "luigis_mansion:entity/luigi/hat",
+	"textures": {
+		"0": "luigis_mansion:entity/luigi/hat_2",
+		"1": "luigis_mansion:entity/luigi/hat_2_overlay"
+	}
+}

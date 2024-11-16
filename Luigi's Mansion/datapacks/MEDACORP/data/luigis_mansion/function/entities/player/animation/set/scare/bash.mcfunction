@@ -10,6 +10,7 @@ execute unless entity @s[scores={AnimationProgress=1..},tag=!idle] unless data s
 execute unless entity @s[scores={AnimationProgress=1..},tag=!idle] unless data storage luigis_mansion:data my_memory.animation{namespace:"luigis_mansion",id:"scare/bash"} run kill @e[type=minecraft:marker,tag=temp,limit=1]
 execute unless entity @s[scores={AnimationProgress=1..},tag=!idle] unless data storage luigis_mansion:data my_memory.animation{namespace:"luigis_mansion",id:"scare/bash"} run scoreboard players reset @s MaxHealthTime
 execute unless entity @s[scores={AnimationProgress=1..},tag=!idle] unless data storage luigis_mansion:data my_memory.animation{namespace:"luigis_mansion",id:"scare/bash"} run scoreboard players set @s Sound 0
+execute unless entity @s[scores={AnimationProgress=1..},tag=!idle] unless data storage luigis_mansion:data my_memory.animation{namespace:"luigis_mansion",id:"scare/bash"} run data modify storage luigis_mansion:data my_memory.animation.hat_model set from storage luigis_mansion:data my_memory.model
 execute unless entity @s[scores={AnimationProgress=1..},tag=!idle] run data modify storage luigis_mansion:data my_memory.animation set value {namespace:"luigis_mansion",id:"scare/bash"}
 execute if entity @s[tag=!keep_bash_memory] run data modify storage luigis_mansion:data memory append from storage luigis_mansion:data my_memory
 execute if entity @s[tag=!keep_bash_memory] run data remove storage luigis_mansion:data my_memory

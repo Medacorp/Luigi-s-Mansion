@@ -1,0 +1,6 @@
+{
+	"parent": "luigis_mansion:entity/luigi/head",
+	"textures": {
+		"0": "luigis_mansion:entity/luigi/head_happy"
+	}
+}

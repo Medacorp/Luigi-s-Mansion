@@ -1,0 +1,7 @@
+{
+	"parent": "luigis_mansion:entity/luigi/hat_solid",
+	"textures": {
+		"0": "3ds_remake:entity/gooigi/hat",
+		"1": "luigis_mansion:item/empty"
+	}
+}

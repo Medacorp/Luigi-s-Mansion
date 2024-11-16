@@ -44,7 +44,7 @@ data merge entity @s[scores={AnimationProgress=1},tag=flipped_gravity] {Pose:{He
 execute store result score #temp Time run data get entity @s Pose.Head[0]
 execute if entity @s[scores={AnimationProgress=21..30}] store result entity @s Pose.Head[0] float 1 run scoreboard players add #temp Time 18
 scoreboard players set @s[scores={AnimationProgress=29}] ActionTime 0
-scoreboard players set @s[scores={AnimationProgress=30},tag=!moved] ActionTime 0
+scoreboard players set @s[scores={AnimationProgress=30..},tag=!moved] ActionTime 0
 data merge entity @s[scores={AnimationProgress=30..},tag=!moved] {Pose:{Head:[0.0f,0.0f,0.01f]}}
 data merge entity @s[scores={AnimationProgress=30..},tag=!moved,tag=flipped_gravity] {Pose:{Head:[0.0f,0.0f,-180.0f]}}
 scoreboard players add @s[scores={AnimationProgress=30..},tag=moved] ActionTime 1
@@ -56,3 +56,7 @@ execute if entity @s[scores={AnimationProgress=30..,ActionTime=3..6},tag=moved] 
 execute if entity @s[scores={AnimationProgress=30..,ActionTime=7..8},tag=moved] if score #mirrored Selected matches 1 store result entity @s Pose.Head[0] float 1 run scoreboard players remove #temp Time 4
 scoreboard players set @s[scores={AnimationProgress=30..,ActionTime=8},tag=moved] ActionTime 0
 scoreboard players reset #temp Time
+execute if score #mirrored Selected matches 1 if entity @s[tag=held_item,tag=!shrunk,tag=!flipped_gravity] positioned ^-0.35 ^0.03 ^ run function luigis_mansion:animations/luigi/scare/bash/item
+execute if score #mirrored Selected matches 1 if entity @s[tag=held_item,tag=shrunk,tag=!flipped_gravity] positioned ^-0.18 ^0.02 ^ run function luigis_mansion:animations/luigi/scare/bash/item
+execute if score #mirrored Selected matches 1 if entity @s[tag=held_item,tag=!shrunk,tag=flipped_gravity] positioned ^0.35 ^-0.03 ^ run function luigis_mansion:animations/luigi/scare/bash/item
+execute if score #mirrored Selected matches 1 if entity @s[tag=held_item,tag=shrunk,tag=flipped_gravity] positioned ^0.18 ^-0.02 ^ run function luigis_mansion:animations/luigi/scare/bash/item
