@@ -20,7 +20,7 @@ execute if score #dialog Dialog matches 20..21 as @a[tag=same_room] run function
 execute if score #dialog Dialog matches 22 as @a[tag=same_room,tag=!spectator] run function luigis_mansion:entities/player/animation/set/nod
 execute if score #dialog Dialog matches 42..124 as @a[tag=same_room] run function luigis_mansion:other/music/set/game_boy_horror
 execute if score #dialog Dialog matches 42..124 as @a[tag=same_room,tag=!spectator] run function luigis_mansion:entities/player/animation/set/game_boy_horror
-execute if score #dialog Dialog matches 42..124 run scoreboard players set @a[tag=same_room] ForceScreen 1
+execute if score #dialog Dialog matches 42..124 as @a[tag=same_room,tag=!spectator] run function luigis_mansion:items/game_boy_horror/turn_screen_to_forced_value {value:"call",flags:[],floats:[2f,0f,0f,0f],tracker:[]}
 execute if score #dialog Dialog matches 42 store result score #temp Boos run data get storage luigis_mansion:data current_state.current_data.boo_counter
 execute if score #dialog Dialog matches 42 store result score #temp Variant run random value 1..27
 execute if score #dialog Dialog matches 42 run tag @a[tag=same_room,limit=1] add next_dialog_line

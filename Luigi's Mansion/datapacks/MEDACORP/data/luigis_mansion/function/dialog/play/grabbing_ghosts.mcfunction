@@ -15,7 +15,7 @@ execute if score #dialog Dialog matches 20..21 as @a[tag=same_room,tag=!spectato
 execute if score #dialog Dialog matches 20..41 as @a[tag=same_room] run function luigis_mansion:other/music/set/game_boy_horror_calling
 
 execute if score #dialog Dialog matches 22 as @a[tag=same_room,tag=!spectator] run function luigis_mansion:entities/player/animation/set/nod
-execute if score #dialog Dialog matches 42..46 run scoreboard players set @a[tag=same_room] ForceScreen 1
+execute if score #dialog Dialog matches 42..46 as @a[tag=same_room,tag=!spectator] run function luigis_mansion:items/game_boy_horror/turn_screen_to_forced_value {value:"call",flags:[],floats:[2f,0f,0f,0f],tracker:[]}
 execute if score #dialog Dialog matches 42..46 as @a[tag=same_room,tag=!spectator] run function luigis_mansion:entities/player/animation/set/game_boy_horror
 execute if score #dialog Dialog matches 42..46 as @a[tag=same_room] run function luigis_mansion:other/music/set/game_boy_horror
 execute if score #dialog Dialog matches 42 if score #players Totals matches 1 run tellraw @a[tag=same_room] {"type":"translatable","translate":"chat.type.text","with":[{"type":"translatable","translate":"luigis_mansion:entity.e_gadd","color":"green"},{"type":"translatable","translate":"luigis_mansion:dialog.grabbing_ghosts.1"}]}

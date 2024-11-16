@@ -24,8 +24,7 @@ execute if score #dialog Dialog matches 3 run data modify storage luigis_mansion
 execute if score #dialog Dialog matches 3..144 store result score #temp2 Dialog run data get storage luigis_mansion:data dialogs[0].screen_flicker
 execute if score #dialog Dialog matches 3..144 store result storage luigis_mansion:data dialogs[0].screen_flicker int 1 run scoreboard players add #temp2 Dialog 1
 execute if score #dialog Dialog matches 3..144 if score #temp2 Dialog matches 20 store result storage luigis_mansion:data dialogs[0].screen_flicker int 1 run scoreboard players set #temp2 Dialog 0
-execute if score #dialog Dialog matches 3..144 if score #temp2 Dialog matches 0..5 run scoreboard players set @a[tag=same_room] ForceScreen 1
-execute if score #dialog Dialog matches 3..144 unless score #temp2 Dialog matches 0..5 run scoreboard players set @a[tag=same_room] ForceScreen 0
+execute if score #dialog Dialog matches 3..144 if score #temp2 Dialog matches 0..5 as @a[tag=same_room,tag=!spectator] run function luigis_mansion:items/game_boy_horror/turn_screen_to_forced_value {value:"call",flags:[],floats:[0f,0f,0f,0f],tracker:[]}
 execute if score #dialog Dialog matches 3..144 run scoreboard players reset #temp2 Dialog
 execute if score #dialog Dialog matches 23 as @a[tag=same_room,tag=!spectator] run function luigis_mansion:entities/player/animation/set/none
 execute if score #dialog Dialog matches 23 as @a[tag=same_room,tag=!spectator] run function luigis_mansion:entities/player/animation/set/scare/normal
@@ -36,7 +35,7 @@ execute if score #dialog Dialog matches 63 at @e[tag=e_gadd,tag=same_room,limit=
 
 execute if score #dialog Dialog matches 145 as @a[tag=same_room] run function luigis_mansion:other/music/set/silence
 execute if score #dialog Dialog matches 145..2434 as @a[tag=same_room] run function 3ds_remake:other/music/set/future_e_gadd
-execute if score #dialog Dialog matches 145..2434 run scoreboard players set @a[tag=same_room] ForceScreen 1
+execute if score #dialog Dialog matches 145..2434 as @a[tag=same_room,tag=!spectator] run function luigis_mansion:items/game_boy_horror/turn_screen_to_forced_value {value:"call",flags:[],floats:[0f,0f,0f,0f],tracker:[]}
 execute if score #dialog Dialog matches 255 run tellraw @a[tag=same_room] {"type":"translatable","translate":"chat.type.text","with":[{"type":"translatable","translate":"3ds_remake:entity.future_e_gadd","color":"green"},{"type":"translatable","translate":"3ds_remake:dialog.future_e_gadd.3"}]}
 execute if score #dialog Dialog matches 255 as @a[tag=same_room] at @s run playsound luigis_mansion:entity.e_gadd.talk.shortlaugh neutral @s ~ ~ ~ 1
 execute if score #dialog Dialog matches 325 run data modify entity @e[tag=e_gadd,tag=same_room,limit=1] data.animation set value {namespace:"3ds_remake",id:"scared"}

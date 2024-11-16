@@ -23,7 +23,7 @@ execute if score #dialog Dialog matches 22 as @a[tag=same_room] at @s run playso
 execute if score #dialog Dialog matches 24 as @a[tag=same_room,tag=!spectator] run function luigis_mansion:entities/player/animation/set/nod
 execute if score #dialog Dialog matches 24..71 as @a[tag=same_room] run function luigis_mansion:other/music/set/game_boy_horror
 execute if score #dialog Dialog matches 44..51 as @a[tag=same_room,tag=!spectator] run function luigis_mansion:entities/player/animation/set/game_boy_horror
-execute if score #dialog Dialog matches 44.. run scoreboard players set @a[tag=same_room] ForceScreen 1
+execute if score #dialog Dialog matches 44.. as @a[tag=same_room,tag=!spectator] run function luigis_mansion:items/game_boy_horror/turn_screen_to_forced_value {value:"call",flags:[],floats:[2f,0f,0f,0f],tracker:[]}
 execute if score #dialog Dialog matches 44 if score #players Totals matches 1 run tellraw @a[tag=same_room] {"type":"translatable","translate":"chat.type.text","with":[{"type":"translatable","translate":"luigis_mansion:entity.e_gadd","color":"green"},{"type":"translatable","translate":"luigis_mansion:dialog.area_2_key.2","with":[{"type":"selector","selector":"@p[tag=!spectator]"}]}]}
 execute if score #dialog Dialog matches 44 if score #players Totals matches 2.. run tellraw @a[tag=same_room] {"type":"translatable","translate":"chat.type.text","with":[{"type":"translatable","translate":"luigis_mansion:entity.e_gadd","color":"green"},{"type":"translatable","translate":"luigis_mansion:dialog.area_2_key.2.more"}]}
 execute if score #dialog Dialog matches 44 as @a[tag=same_room] at @s run playsound luigis_mansion:entity.e_gadd.talk.luigi3 neutral @s ~ ~ ~ 1

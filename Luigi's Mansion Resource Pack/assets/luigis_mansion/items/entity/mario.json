@@ -12,10 +12,11 @@
             }
         ],
         "fallback": {
-            "type": "minecraft:select",
+            "type": "minecraft:range_dispatch",
             "property": "minecraft:custom_model_data",
             "index": 0,
-            "cases": [
+            "scale": 1.0,
+            "entries": [
                 {
                     "threshold": 1,
                     "model": {

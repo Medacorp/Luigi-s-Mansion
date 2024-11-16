@@ -13,7 +13,7 @@ scoreboard players reset @a[tag=same_room,tag=!spectator] WarpTime
 execute as @a[tag=same_room,tag=!spectator,tag=game_boy_horror_menu,tag=!scanning_player] run function luigis_mansion:selection_menu/game_boy_horror/exit
 execute if score #dialog Dialog matches 1..2 as @a[tag=!scanning_player,tag=same_room,tag=!spectator] run function luigis_mansion:entities/player/animation/set/idle
 execute if score #dialog Dialog matches 1..2 as @a[tag=scanning_player,limit=1] run function luigis_mansion:entities/player/animation/set/game_boy_horror
-execute if score #dialog Dialog matches 1..2 run scoreboard players set @a[tag=scanning_player,limit=1] ForceScreen 8
+execute as @a[tag=scanning_player,limit=1] run function luigis_mansion:items/game_boy_horror/turn_screen_to_forced_value {value:"scanning",flags:[B;1b,0b],floats:[],tracker:[]}
 execute if score #dialog Dialog matches 1 if score #the_twins_room Wave matches 6.. run tellraw @a[tag=same_room] {"type":"translatable","translate":"chat.type.text","with":[{"type":"selector","selector":"@e[tag=scanned_entity,limit=1]","color":"green"},{"type":"translatable","translate":"luigis_mansion:message.orville.scan"}]}
 execute if score #dialog Dialog matches 1 unless score #the_twins_room Wave matches 6.. run tellraw @a[tag=same_room] {"type":"translatable","translate":"chat.type.text","with":[{"type":"selector","selector":"@e[tag=scanned_entity,limit=1]","color":"green"},{"type":"translatable","translate":"3ds_remake:message.orville.scan"}]}
 

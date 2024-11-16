@@ -10,6 +10,6 @@ execute if entity @e[tag=e_gadd,scores={Room=-8},tag=talk] if data storage luigi
 
 execute as @a[scores={Room=-8}] run function 3ds_remake:room/gallery/tick_per_player
 
-execute unless block 736 2 -24 minecraft:barrier run function 3ds_remake:room/gallery/generate
+execute unless block 767 2 -36 minecraft:barrier run function 3ds_remake:room/gallery/generate
 
 function #3ds_remake:room/gallery/interactions/room

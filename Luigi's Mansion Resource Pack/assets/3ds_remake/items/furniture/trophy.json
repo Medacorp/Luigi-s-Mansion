@@ -6,13 +6,6 @@
         "scale": 1.0,
         "entries": [
             {
-                "threshold": 0,
-                "model": {
-                    "type": "minecraft:model",
-                    "model": "3ds_remake:furniture/trophy/stand"
-                }
-            },
-            {
                 "threshold": 1,
                 "model": {
                     "type": "minecraft:select",
@@ -264,6 +257,10 @@
                     }
                 }
             }
-        ]
+        ],
+        "fallback": {
+            "type": "minecraft:model",
+            "model": "3ds_remake:furniture/trophy/stand"
+        }
     }
 }

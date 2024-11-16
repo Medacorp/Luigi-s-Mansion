@@ -10,4 +10,4 @@ tag @s add already_ticked
 
 execute if entity @s[x=681.5,y=120,z=28.0,tag=!spectator,distance=..4] if data storage luigis_mansion:data current_state.current_data{obtained_keys:["hallway_18"]} run function luigis_mansion:room/normal/balcony_2/clear_blockade
 
-execute if entity @e[nbt={data:{entity:{namespace:"luigis_mansion",id:"boolossus"}}},limit=1] run scoreboard players set @s ForceRadar 1
+execute if entity @e[nbt={data:{entity:{namespace:"luigis_mansion",id:"boolossus"}}},limit=1] run function luigis_mansion:items/game_boy_horror/turn_radar_to_forced_value {value:"on_top"}

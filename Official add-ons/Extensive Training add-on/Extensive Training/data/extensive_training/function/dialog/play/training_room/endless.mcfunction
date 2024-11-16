@@ -16,7 +16,8 @@ execute if score #dialog Dialog matches 10.. as @a[tag=same_room,tag=dialog_menu
 tag @a[tag=same_room] add prevent_item_lock
 tag @e[tag=same_room] remove freeze_animation
 tag @e[tag=same_room] remove no_ai
-scoreboard players set @a[tag=same_room] ForceScreen 1
+execute unless score #dialog Dialog matches 5..6 as @a[tag=same_room,tag=!spectator] run function luigis_mansion:items/game_boy_horror/turn_screen_to_forced_value {value:"call",flags:[],floats:[0f,0f,0f,0f],tracker:[]}
+execute if score #dialog Dialog matches 5..6 as @a[tag=same_room,tag=!spectator] run function luigis_mansion:items/game_boy_horror/turn_screen_to_forced_value {value:"call",flags:[],floats:[1f,0f,0f,0f],tracker:[]}
 execute if score #dialog Dialog matches 1..4 run scoreboard players reset @a[tag=same_room,tag=!spectator] WarpTime
 execute if score #dialog Dialog matches 1..4 as @a[tag=same_room,tag=!spectator,tag=game_boy_horror_menu] run function luigis_mansion:selection_menu/game_boy_horror/exit
 execute if score #dialog Dialog matches 1..4 as @a[tag=same_room,tag=!spectator] run function luigis_mansion:entities/player/animation/set/game_boy_horror
