@@ -1,16 +1,18 @@
 {
+	"credit": "Made with Blockbench",
 	"parent": "luigis_mansion:item/game_boy_horror/display",
 	"textures": {
-        "particle": "#time_apm"
-    },
-    "elements": [
+		"particle": "#time_apm"
+	},
+	"elements": [
 		{
-			"from": [6.75, 21.5, 4.975],
-			"to": [13.75, 24.5, 4.975],
-			"rotation": {"angle": 0, "axis": "y", "origin": [20, 35, 29]},
+			"from": [7.625, 12.05, 7.0925],
+			"to": [9.725, 12.95, 7.0925],
+			"light_emission": 15,
+			"rotation": {"angle": 0, "axis": "y", "origin": [11.6, 16.1, 14.3]},
 			"faces": {
 				"north": {"uv": [0, 0, 11, 6], "texture": "#time_apm"}
 			}
 		}
-    ]
+	]
 }

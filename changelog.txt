@@ -1,11 +1,15 @@
 v3.1.1:
 * Updated to 1.21.4
 * Added different blinking speeds to the Game Boy Horror Radar
+* Added new Luigi expressions
+* Added new unused poison mushroom variant
 * Changed Game Boy Horror to shows the direction of nearby ghosts when on the clock screen (the one seen in the E3 Demo add-on)
-* Changed Game Boy Horror model and textures slightly
+* Changed Game Boy Horror model and textures slightly (model is now composite models, and no longer at absurt scale)
 * Changed item entities that are about to despawn to blink
 * Changed item despawn timer to match original game
 * Changed haunted objects', and hide and seek box variants' names
+* Changed alt Luigi hat texture to have a rotated L
+* Changed items that change states to not move up/down upon state change
 * Changed 3DS Remake trophy to actual furniture; stand now had a model
 * Fixed gallery detections is too short
 * Fixed merging Boolossus doesn't move to merging point

@@ -8,8 +8,7 @@
             "model": "luigis_mansion:entity/small_pearl"
         },
         "on_true": {
-            "type": "minecraft:model",
-            "model": "luigis_mansion:item/empty"
+            "type": "minecraft:empty"
         }
     }
 }

@@ -126,8 +126,7 @@
                                 }
                             ],
                             "fallback": {
-                                "type": "minecraft:model",
-                                "model": "luigis_mansion:item/empty"
+                                "type": "minecraft:empty"
                             }
                         }
                     },
@@ -147,22 +146,19 @@
                                 }
                             ],
                             "fallback": {
-                                "type": "minecraft:model",
-                                "model": "luigis_mansion:item/empty"
+                                "type": "minecraft:empty"
                             }
                         }
                     },
                     {
                         "threshold": 3,
                         "model": {
-                            "type": "minecraft:model",
-                            "model": "luigis_mansion:item/empty"
+                            "type": "minecraft:empty"
                         }
                     }
                 ],
                 "fallback": {
-                    "type": "minecraft:model",
-                    "model": "luigis_mansion:item/empty"
+                    "type": "minecraft:empty"
                 }
             }
         }

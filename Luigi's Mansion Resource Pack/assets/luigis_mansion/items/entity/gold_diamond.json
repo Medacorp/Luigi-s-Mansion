@@ -8,8 +8,7 @@
             "model": "luigis_mansion:entity/gold_diamond"
         },
         "on_true": {
-            "type": "minecraft:model",
-            "model": "luigis_mansion:item/empty"
+            "type": "minecraft:empty"
         }
     }
 }

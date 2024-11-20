@@ -36,8 +36,7 @@
             {
                 "threshold": 4,
                 "model": {
-                    "type": "minecraft:model",
-                    "model": "luigis_mansion:item/empty"
+                    "type": "minecraft:empty"
                 }
             }
         ]
