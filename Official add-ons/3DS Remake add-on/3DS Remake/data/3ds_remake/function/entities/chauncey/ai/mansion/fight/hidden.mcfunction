@@ -1,6 +1,6 @@
 scoreboard players add @s[scores={Dialog=946..}] Dialog 1
 scoreboard players add @s[scores={Dialog=582..944}] Dialog 1
-execute positioned ~-1 ~ ~-1 if entity @e[type=minecraft:armor_stand,tag=ball,tag=same_room,tag=spit,dx=2,dy=2,dz=2] run scoreboard players set @s[scores={Dialog=381..581}] Dialog 582
+execute positioned ~-1 ~ ~-1 if entity @e[type=minecraft:armor_stand,tag=ball,tag=same_room,tag=spit,dx=1,dy=2,dz=1] run scoreboard players set @s[scores={Dialog=381..581}] Dialog 582
 execute unless entity @e[type=minecraft:armor_stand,tag=ball,tag=same_room] run scoreboard players set @s[scores={Dialog=381..581}] Dialog 0
 scoreboard players add @s[scores={Dialog=382..580}] Dialog 1
 execute if entity @e[type=minecraft:armor_stand,tag=ball,tag=same_room,tag=can_spit_2] run scoreboard players add @s[scores={Dialog=381}] Dialog 1

@@ -1,3 +1,25 @@
+execute store result score #temp Time run data get entity @e[type=minecraft:marker,tag=position,limit=1] Pos[0] 10
+execute store result score #temp2 Time run data get entity @a[tag=me,limit=1] Pos[0] 10
+scoreboard players operation #temp Time -= #temp2 Time
+scoreboard players operation #temp Time *= #temp Time
+execute store result score #temp2 Time run data get entity @e[type=minecraft:marker,tag=position,limit=1] Pos[1] 10
+execute store result score #temp3 Time run data get entity @a[tag=me,limit=1] Pos[1] 10
+scoreboard players operation #temp2 Time -= #temp3 Time
+scoreboard players operation #temp2 Time *= #temp2 Time
+scoreboard players operation #temp Time += #temp2 Time
+execute store result score #temp2 Time run data get entity @e[type=minecraft:marker,tag=position,limit=1] Pos[2] 10
+execute store result score #temp3 Time run data get entity @a[tag=me,limit=1] Pos[2] 10
+scoreboard players operation #temp2 Time -= #temp3 Time
+scoreboard players operation #temp2 Time *= #temp2 Time
+scoreboard players operation #temp Time += #temp2 Time
+scoreboard players set #temp2 Time 1
+scoreboard players set #temp3 Time 0
+function e3_demo:items/poltergust_500/vacuuming/square_root
+scoreboard players operation @s PulledStrength += #temp3 Time
+scoreboard players reset #temp Time
+scoreboard players reset #temp2 Time
+scoreboard players reset #temp3 Time
+
 tag @s add is_pulled
 tag @a[tag=me,limit=1] add is_pulling
 execute unless entity @s[scores={ErrorTime=2..}] unless entity @a[tag=me,limit=1,scores={ErrorTime=2..}] run function luigis_mansion:entities/ghost/damage/weak

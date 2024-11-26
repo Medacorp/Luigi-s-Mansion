@@ -1,4 +1,4 @@
-execute if entity @e[type=minecraft:armor_stand,tag=ball,tag=spit,distance=..0.7] run scoreboard players add @s[scores={Dialog=131}] Dialog 1
+execute positioned ~-0.5 ~ ~-0.5 if entity @e[type=minecraft:armor_stand,tag=ball,tag=spit,dx=0,dy=1,dz=0] run scoreboard players add @s[scores={Dialog=131}] Dialog 1
 execute if data storage luigis_mansion:data current_state.current_data.technical_data{chauncey_spoke:1b} run scoreboard players add @s[scores={Dialog=130}] Dialog 1
 scoreboard players add @s[scores={Dialog=50..129}] Dialog 1
 execute if entity @e[tag=rocking_horse,tag=same_room,tag=was_shaking,limit=1] run scoreboard players add @s[scores={Dialog=1..49}] Dialog 1

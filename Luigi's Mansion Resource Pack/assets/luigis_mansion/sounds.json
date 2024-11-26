@@ -200,6 +200,15 @@
         ],
         "subtitle": "luigis_mansion:subtitles.entity.black_bogmire.ambient"
     },
+    "entity.black_bogmire.disappear": {
+        "sounds": [
+            {
+                "name": "luigis_mansion:entity/generic/disappear",
+                "stream": false
+            }
+        ],
+        "subtitle": "luigis_mansion:subtitles.entity.black_bogmire.disappear"
+    },
     "entity.black_bogmire.hurt": {
         "sounds": [
             {
@@ -657,6 +666,15 @@
             }
         ],
         "subtitle": "luigis_mansion:subtitles.entity.bogmire.appear"
+    },
+    "entity.bogmire.disappear": {
+        "sounds": [
+            {
+                "name": "luigis_mansion:entity/generic/disappear",
+                "stream": false
+            }
+        ],
+        "subtitle": "luigis_mansion:subtitles.entity.bogmire.disappear"
     },
     "entity.bogmire.flee": {
         "sounds": [

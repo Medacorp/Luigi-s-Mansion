@@ -159,6 +159,7 @@ scoreboard objectives add PreviousMusicType dummy
 scoreboard objectives add PreviousRoom dummy
 scoreboard objectives add Pull dummy
 scoreboard objectives add PullAngle dummy
+scoreboard objectives add PulledStrength dummy
 scoreboard objectives add PullStrength dummy
 scoreboard objectives add Range dummy
 scoreboard objectives add ReflectionNr dummy

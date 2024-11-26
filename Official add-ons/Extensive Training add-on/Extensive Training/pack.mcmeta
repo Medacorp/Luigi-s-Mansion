@@ -1,7 +1,7 @@
 {
     "pack": {
-        "pack_format": 60,
-        "supported_formats": [60, 60],
+        "pack_format": 61,
+        "supported_formats": [61, 61],
         "description": {
 			"type": "translatable",
             "translate": "extensive_training:data_pack.description"

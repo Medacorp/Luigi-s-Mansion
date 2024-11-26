@@ -10,10 +10,13 @@ v3.1.1:
 * Changed haunted objects', and hide and seek box variants' names
 * Changed alt Luigi hat texture to have a rotated L
 * Changed items that change states to not move up/down upon state change
+* Changed Chauncey's hitbox in relation to the shot balls
 * Changed 3DS Remake trophy to actual furniture; stand now had a model
+* Fixed pulling ghosts doesn't ensure they stay within vacuuming range
 * Fixed gallery detections is too short
 * Fixed merging Boolossus doesn't move to merging point
-* Fixed Body slammers have no model
+* Fixed bash scare moving doesn't work correctly with non-every tick teleport frequecy
+* Fixed Neville and (E3 Demo) Body slammers have no model
 
 v3.1:
 * Updated to 1.21.2-1.21.3

@@ -1,7 +1,6 @@
+scoreboard players set @s TargetTask 0
 scoreboard players add @s ActionTime 1
-$execute if entity @s[scores={ActionTime=1}] run playsound $(namespace):entity.$(id).succumb hostile @a[tag=same_room] ~ ~ ~ 1
+$execute if entity @s[scores={ActionTime=1},tag=visible,tag=!disappear] run playsound $(namespace):entity.$(id).disappear hostile @a[tag=same_room] ~ ~ ~ 1
 data modify entity @s[scores={ActionTime=1}] data.animation set value {namespace:"luigis_mansion",id:"vanish"}
-execute at @s[scores={ActionTime=30},tag=!big] positioned ~ ~1.1 ~ run function luigis_mansion:spawn_entities/ball/shadow/small
-execute at @s[scores={ActionTime=30},tag=big] positioned ~ ~1.1 ~ run function luigis_mansion:spawn_entities/ball/shadow/big
-execute if entity @s[scores={ActionTime=30}] run function luigis_mansion:other/drop_loot
-tag @s[scores={ActionTime=30}] add dead
+tag @s[scores={ActionTime=40}] add disappear
+scoreboard players set @s[scores={ActionTime=40}] ActionTime 0

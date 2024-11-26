@@ -19,7 +19,7 @@ scoreboard players set @s[scores={AnimationProgress=30,Sound=0},tag=moved] Sound
 tag @s[scores={AnimationProgress=30},tag=!bash_no_move] add animation_may_move
 execute at @s[scores={AnimationProgress=30,TeleportDelayTimer=0},tag=!bash_no_move] positioned as @e[type=minecraft:marker,tag=temp,distance=..0.1,limit=1] run teleport @s ^ ^ ^ ~ ~
 scoreboard players operation @s TeleportDelay = @s TeleportDelaySetting
-execute at @s[scores={AnimationProgress=30,TeleportDelayTimer=0},tag=!bash_no_move] rotated ~ 0 run function luigis_mansion:entities/player/animation/scare/bash_move
+execute at @s[scores={AnimationProgress=30,TeleportDelayTimer=0},tag=!bash_no_move] run function luigis_mansion:entities/player/animation/scare/bash_move
 scoreboard players remove @s[scores={MaxHealthTime=1..,AnimationProgress=30}] AnimationProgress 1
 kill @e[tag=temp,limit=1]
 
