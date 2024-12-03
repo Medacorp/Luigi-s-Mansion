@@ -6,6 +6,7 @@ effect give @s minecraft:instant_health 1 19 true
 gamemode adventure @s
 title @s times 40 40 40
 tag @s add joined
+tag @s add play_opening
 tag @s add stop_map_on_key_collect
 function luigis_mansion:entities/player/save_color
 function luigis_mansion:other/log_on

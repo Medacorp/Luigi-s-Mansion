@@ -27,8 +27,6 @@ execute if score #dialog Dialog matches 180 run tellraw @a[tag=same_room] {"type
 execute if score #dialog Dialog matches 180 as @a[tag=same_room] at @s run playsound luigis_mansion:entity.e_gadd.talk.ohyah_squirtbottlelaugh_bohh neutral @s ~ ~ ~ 1
 
 execute if score #dialog Dialog matches 210 as @a[tag=same_room,tag=!spectator] run function luigis_mansion:entities/player/animation/set/none
-execute if score #dialog Dialog matches 210 unless entity @a[tag=portrait_battle,limit=1] unless score #loaded_exterior Selected matches -1 run tellraw @a {"type":"translatable","translate":"chat.type.text","with":[{"type":"translatable","translate":"luigis_mansion:entity.mansion","color":"green"},{"type":"translatable","translate":"luigis_mansion:message.load_mansion.start"}]}
-execute if score #dialog Dialog matches 210 unless entity @a[tag=portrait_battle,limit=1] unless score #loaded_exterior Selected matches -1 in minecraft:overworld run schedule function luigis_mansion:room/load_exterior/empty 5
 execute if score #dialog Dialog matches 210 unless entity @a[tag=portrait_battle,limit=1] as @a[tag=same_room] run function luigis_mansion:room/ghost_portrificationizer_room/warp_to
 execute if score #dialog Dialog matches 210 unless entity @a[tag=portrait_battle,limit=1] run data remove storage luigis_mansion:data dialogs[{room:-3}]
 execute if score #dialog Dialog matches 210 unless entity @a[tag=portrait_battle,limit=1] if data storage luigis_mansion:data current_state.current_data.portrait_ghosts.luigis_mansion.neville{portrificationized:0b,health:0} unless data storage luigis_mansion:data dialogs[{room:-3}] run data modify storage luigis_mansion:data dialogs append value {name:{namespace:"e3_demo",id:"portrait_ghosts"},room:-3,progress:-1}

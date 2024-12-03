@@ -44,6 +44,7 @@ execute if entity @s[gamemode=spectator] run function luigis_mansion:entities/pl
 execute if entity @s[scores={Shrunk=1}] run function luigis_mansion:items/poison_mushroom/readd_inventory
 scoreboard players remove @s[scores={Shrunk=1..}] Shrunk 1
 
+tag @s remove warn_for_add_ons
 execute unless entity @s[scores={Offline=0}] run function luigis_mansion:other/log_on
 execute if entity @s[scores={ChangedMansion=1}] run function luigis_mansion:entities/player/changed_mansion
 
@@ -65,7 +66,6 @@ execute if entity @s[nbt={OnGround:0b},tag=flipped_gravity,tag=!looking_at_map,s
 execute if entity @s[nbt={OnGround:0b},tag=flipped_gravity,tag=!looking_at_map,scores={Shrunk=1..}] if block ~ ~0.9 ~ #luigis_mansion:ghosts_ignore run tag @s add walking
 execute if entity @s[nbt={OnGround:0b},tag=flipped_gravity,tag=!looking_at_map] unless score @s PositionX = @s OtherX run tag @s add walking
 execute if entity @s[nbt={OnGround:0b},tag=flipped_gravity,tag=!looking_at_map] unless score @s PositionZ = @s OtherZ run tag @s add walking
-execute if entity @s[scores={Room=0},tag=walking,tag=!played_opening_music] run function luigis_mansion:other/play_opening_music
 scoreboard players set @s[scores={Walk=1..}] Walk 0
 scoreboard players set @s[scores={WalkOnWater=1..}] WalkOnWater 0
 scoreboard players set @s[scores={WalkUnderWater=1..}] WalkUnderWater 0

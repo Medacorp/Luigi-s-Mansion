@@ -1,6 +1,3 @@
-execute in luigis_mansion:hidden run forceload remove 831 159 432 16
-execute in luigis_mansion:hidden run forceload remove 831 15 432 -80
-execute in luigis_mansion:hidden run forceload remove 3777 -100 3585 115
 execute in luigis_mansion:hidden run bossbar set luigis_mansion:boo_counter players
 
 execute in luigis_mansion:hidden if score #foyer Ticking matches 1 run function #luigis_mansion:room/hidden/foyer/reset
@@ -79,3 +76,7 @@ execute in luigis_mansion:hidden if score #chauncey_battle Ticking matches 1 run
 execute in luigis_mansion:hidden if score #bogmire_battle Ticking matches 1 run function #luigis_mansion:room/hidden/bogmire_battle/reset
 execute in luigis_mansion:hidden if score #boolossus_battle Ticking matches 1 run function #luigis_mansion:room/hidden/boolossus_battle/reset
 execute in luigis_mansion:hidden if score #king_boo_battle Ticking matches 1 run function #luigis_mansion:room/hidden/king_boo_battle/reset
+
+execute in luigis_mansion:hidden run forceload remove 831 159 432 16
+execute in luigis_mansion:hidden run forceload remove 831 15 432 -80
+execute in luigis_mansion:hidden run forceload remove 3777 -100 3585 115

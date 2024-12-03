@@ -10404,24 +10404,6 @@
             }
         ]
     },
-    "music.boo_woods": {
-        "sounds": [
-            {
-                "name": "luigis_mansion:music/boo_woods",
-                "stream": true,
-                "volume": 0.00025
-            }
-        ]
-    },
-    "music.boo_woods_intro": {
-        "sounds": [
-            {
-                "name": "luigis_mansion:music/boo_woods_intro",
-                "stream": true,
-                "volume": 0.00025
-            }
-        ]
-    },
     "music.boos_escape": {
         "sounds": [
             {

@@ -30,48 +30,8 @@ execute if score #dialog Dialog matches 1104 run data modify entity @e[tag=e_gad
 execute if score #dialog Dialog matches 1104..1362 as @e[tag=e_gadd,tag=same_room,limit=1] at @s run teleport @s ~ ~ ~0.1 0 0
 execute if score #dialog Dialog matches 1363 as @e[tag=e_gadd,tag=same_room,limit=1] at @s run teleport @s 774 77 14 -30 0
 execute if score #dialog Dialog matches 1363 run data remove entity @e[tag=e_gadd,tag=same_room,limit=1] data.animation
-execute if score #dialog Dialog matches 1363 run function luigis_mansion:dialog/play/portrificationizing/get_total_score
-execute if score #dialog Dialog matches 1363 if score #temp Money matches ..4999 run tellraw @a[tag=same_room] {"type":"translatable","translate":"chat.type.text","with":[{"type":"translatable","translate":"luigis_mansion:entity.mansion","color":"green"},{"type":"translatable","translate":"luigis_mansion:message.the_end.h_rank"}]}
-execute if score #dialog Dialog matches 1363 if score #temp Money matches 5000..19999 run tellraw @a[tag=same_room] {"type":"translatable","translate":"chat.type.text","with":[{"type":"translatable","translate":"luigis_mansion:entity.mansion","color":"green"},{"type":"translatable","translate":"luigis_mansion:message.the_end.g_rank"}]}
-execute if score #dialog Dialog matches 1363 if score #temp Money matches 20000..39999 run tellraw @a[tag=same_room] {"type":"translatable","translate":"chat.type.text","with":[{"type":"translatable","translate":"luigis_mansion:entity.mansion","color":"green"},{"type":"translatable","translate":"luigis_mansion:message.the_end.f_rank"}]}
-execute if score #dialog Dialog matches 1363 if score #temp Money matches 40000..49999 run tellraw @a[tag=same_room] {"type":"translatable","translate":"chat.type.text","with":[{"type":"translatable","translate":"luigis_mansion:entity.mansion","color":"green"},{"type":"translatable","translate":"luigis_mansion:message.the_end.e_rank"}]}
-execute if score #dialog Dialog matches 1363 if score #temp Money matches 50000..59999 run tellraw @a[tag=same_room] {"type":"translatable","translate":"chat.type.text","with":[{"type":"translatable","translate":"luigis_mansion:entity.mansion","color":"green"},{"type":"translatable","translate":"luigis_mansion:message.the_end.d_rank"}]}
-execute if score #dialog Dialog matches 1363 if score #temp Money matches 60000..69999 run tellraw @a[tag=same_room] {"type":"translatable","translate":"chat.type.text","with":[{"type":"translatable","translate":"luigis_mansion:entity.mansion","color":"green"},{"type":"translatable","translate":"luigis_mansion:message.the_end.c_rank"}]}
-execute if score #dialog Dialog matches 1363 if score #temp Money matches 70000..99999 run tellraw @a[tag=same_room] {"type":"translatable","translate":"chat.type.text","with":[{"type":"translatable","translate":"luigis_mansion:entity.mansion","color":"green"},{"type":"translatable","translate":"luigis_mansion:message.the_end.b_rank"}]}
-execute if score #dialog Dialog matches 1363 if score #temp Money matches 100000..129999 run tellraw @a[tag=same_room] {"type":"translatable","translate":"chat.type.text","with":[{"type":"translatable","translate":"luigis_mansion:entity.mansion","color":"green"},{"type":"translatable","translate":"luigis_mansion:message.the_end.a_rank"}]}
-execute if score #dialog Dialog matches 1363 if score #temp Money matches 130000.. run tellraw @a[tag=same_room] {"type":"translatable","translate":"chat.type.text","with":[{"type":"translatable","translate":"luigis_mansion:entity.mansion","color":"green"},{"type":"translatable","translate":"3ds_remake:message.the_end.s_rank"}]}
-execute if score #dialog Dialog matches 1363 if score #temp Money matches ..4999 run data modify storage luigis_mansion:data current_state.mansion_ranks_achieved.h set value 1b
-execute if score #dialog Dialog matches 1363 if score #temp Money matches 5000..19999 run data modify storage luigis_mansion:data current_state.mansion_ranks_achieved.g set value 1b
-execute if score #dialog Dialog matches 1363 if score #temp Money matches 20000..39999 run data modify storage luigis_mansion:data current_state.mansion_ranks_achieved.f set value 1b
-execute if score #dialog Dialog matches 1363 if score #temp Money matches 40000..49999 run data modify storage luigis_mansion:data current_state.mansion_ranks_achieved.e set value 1b
-execute if score #dialog Dialog matches 1363 if score #temp Money matches 50000..59999 run data modify storage luigis_mansion:data current_state.mansion_ranks_achieved.d set value 1b
-execute if score #dialog Dialog matches 1363 if score #temp Money matches 60000..69999 run data modify storage luigis_mansion:data current_state.mansion_ranks_achieved.c set value 1b
-execute if score #dialog Dialog matches 1363 if score #temp Money matches 70000..99999 run data modify storage luigis_mansion:data current_state.mansion_ranks_achieved.b set value 1b
-execute if score #dialog Dialog matches 1363 if score #temp Money matches 100000..129999 run data modify storage luigis_mansion:data current_state.mansion_ranks_achieved.a set value 1b
-execute if score #dialog Dialog matches 1363 if score #temp Money matches 130000.. run data modify storage 3ds_remake:data current_state.mansion_rank_s_achieved set value 1b
-execute if score #dialog Dialog matches 1363 if score #temp Money matches 70000.. run function 3ds_remake:selection_menu/gallery_trophy/complete/normal/task_7
-execute if score #dialog Dialog matches 1363 if score #temp Money matches 100000.. run function 3ds_remake:selection_menu/gallery_trophy/complete/hard/task_4
-execute if score #dialog Dialog matches 1363 if score #temp Money matches 130000.. run function 3ds_remake:selection_menu/gallery_trophy/complete/master/task_4
-execute if score #dialog Dialog matches 1363 if score #temp Money matches ..4999 run data modify storage luigis_mansion:data dialogs[0].rank set value "h"
-execute if score #dialog Dialog matches 1363 if score #temp Money matches 5000..19999 run data modify storage luigis_mansion:data dialogs[0].rank set value "g"
-execute if score #dialog Dialog matches 1363 if score #temp Money matches 20000..39999 run data modify storage luigis_mansion:data dialogs[0].rank set value "f"
-execute if score #dialog Dialog matches 1363 if score #temp Money matches 40000..49999 run data modify storage luigis_mansion:data dialogs[0].rank set value "e"
-execute if score #dialog Dialog matches 1363 if score #temp Money matches 50000..59999 run data modify storage luigis_mansion:data dialogs[0].rank set value "d"
-execute if score #dialog Dialog matches 1363 if score #temp Money matches 60000..69999 run data modify storage luigis_mansion:data dialogs[0].rank set value "c"
-execute if score #dialog Dialog matches 1363 if score #temp Money matches 70000..99999 run data modify storage luigis_mansion:data dialogs[0].rank set value "b"
-execute if score #dialog Dialog matches 1363 if score #temp Money matches 100000..129999 run data modify storage luigis_mansion:data dialogs[0].rank set value "a"
-execute if score #dialog Dialog matches 1363 if score #temp Money matches 130000.. run data modify storage luigis_mansion:data dialogs[0].rank set value "s"
-execute if score #dialog Dialog matches 1363 if score #temp Money matches 1 if data storage luigis_mansion:data current_state.current_data{lowest_difficulty:0,obtained_items:{king_boos_crown:1b}} run advancement grant @a[tag=same_room] only luigis_mansion:vanilla/spare_some_change
-execute if score #dialog Dialog matches 1363 if score #temp Money matches 2 if data storage luigis_mansion:data current_state.current_data{lowest_difficulty:1,obtained_items:{king_boos_crown:1b}} run advancement grant @a[tag=same_room] only luigis_mansion:vanilla/spare_some_change
-execute if score #dialog Dialog matches 1363 if score #temp Money matches 5 if data storage luigis_mansion:data current_state.current_data{lowest_difficulty:2,obtained_items:{king_boos_crown:1b}} run advancement grant @a[tag=same_room] only luigis_mansion:vanilla/spare_some_change
-execute if score #dialog Dialog matches 1363 if score #temp Money matches 10 if data storage luigis_mansion:data current_state.current_data{lowest_difficulty:3,obtained_items:{king_boos_crown:1b}} run advancement grant @a[tag=same_room] only luigis_mansion:vanilla/spare_some_change
-execute if score #dialog Dialog matches 1363 if score #temp Money matches 142390.. run advancement grant @a[tag=same_room] only luigis_mansion:vanilla/making_wario_jealous
-execute if score #dialog Dialog matches 1363 if score #temp Money matches 186440.. run advancement grant @a[tag=same_room] only luigis_mansion:vanilla/scrooge_mcduck_it_up
-execute if score #dialog Dialog matches 1363 run scoreboard players reset #temp Money
-execute if score #dialog Dialog matches 1363 run function luigis_mansion:room/clear_mansion with storage luigis_mansion:data current_state.current_data.mansion_id
-execute if score #dialog Dialog matches 1363 as @a[tag=same_room] run function luigis_mansion:other/music/set/silence
-execute if score #dialog Dialog matches 1363 run data modify storage luigis_mansion:data dialogs append value {name:{namespace:"3ds_remake",id:"gooigi_results"},room:-3,progress:0}
-execute if score #dialog Dialog matches 1363 run data modify storage luigis_mansion:data dialogs[-1].room set from storage luigis_mansion:data dialogs[0].room
+execute if score #dialog Dialog matches 1363 run tag @e[tag=e_gadd,tag=same_room,limit=1] add can_talk_to
+execute if score #dialog Dialog matches 1363 run tag @e[tag=e_gadd,tag=same_room,limit=1] remove cannot_be_removed
 execute if score #dialog Dialog matches 1363 run tag @e[tag=mario,tag=same_room,limit=1] remove cannot_be_removed
 execute if score #dialog Dialog matches 1363 run tag @e[tag=mario,tag=same_room,limit=1] add remove_from_existence
-execute if score #dialog Dialog matches 1363 run scoreboard players set #dialog Dialog -1
+execute if score #dialog Dialog matches 1363 run function luigis_mansion:other/clear_mansion

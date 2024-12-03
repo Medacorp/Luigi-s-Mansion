@@ -1,4 +1,4 @@
-execute if entity @s[tag=using_selection_menu] run function luigis_mansion:items/poison_mushroom/close_selection_menu
+execute if entity @s[tag=using_selection_menu] run function luigis_mansion:selection_menu/close
 function luigis_mansion:entities/player/memory/get with entity @s
 data modify storage luigis_mansion:data my_memory.inventory set from entity @s Inventory
 data modify storage luigis_mansion:data memory append from storage luigis_mansion:data my_memory

@@ -105,7 +105,6 @@
     "e3_demo:location.lavatory": "Toilette",
     "e3_demo:location.living_room": "Wohnzimmer",
     "e3_demo:location.missingno": "MissingNo",
-    "e3_demo:message.no_mansion_inside_found": "No inside of the mansion was found! Make sure you dragged in the dimension files and closed the world after installing the data pack.",
     "e3_demo:subtitles.entity.basher.ambient": "Herzangreifer jagt",
     "e3_demo:subtitles.entity.basher.attack": "Herzangreifer attackiert",
     "e3_demo:subtitles.entity.basher.complain": "Herzangreifer beschwert sich",

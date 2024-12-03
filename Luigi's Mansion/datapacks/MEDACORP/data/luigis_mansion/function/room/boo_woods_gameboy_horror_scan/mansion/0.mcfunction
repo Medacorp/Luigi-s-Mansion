@@ -1,1 +1,0 @@
-execute if score #loaded_exterior Selected matches 0 if entity @s[x=644.0,y=100,z=-42.0,dx=85,dy=50,dz=99] store result score @s Selected run function luigis_mansion:selection_menu/game_boy_horror/scan/dialog {namespace:"luigis_mansion",id:"scan/scanner/47"}

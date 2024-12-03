@@ -24,7 +24,7 @@ execute if entity @a[name=Dhranios] run gamerule sendCommandFeedback true
 execute unless entity @a[name=Dhranios] run gamerule sendCommandFeedback false
 title @s[tag=!looking_at_map] times 40 40 40
 title @s[tag=looking_at_map] times 0 40 40
-execute if entity @s[scores={Room=0},x=770.5,y=90,z=8.0,distance=400..] run teleport @s 876 90 -149 -90 0
+tag @s add warn_for_add_ons
 
 function #luigis_mansion:login_data_sync
 function #luigis_mansion:upgrade_path

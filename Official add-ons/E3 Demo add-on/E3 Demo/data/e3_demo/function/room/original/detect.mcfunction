@@ -162,6 +162,5 @@ execute in e3_demo:original if score #missingno_57 Ticking matches 1 unless enti
 
 execute if data storage e3_demo:data current_state.trophy{task_4:0b} if entity @e[tag=furniture,limit=1,nbt={ArmorItems:[{components:{"minecraft:custom_data":{loot:{contents:{e3_demo:{ghost_coin:1}}}}}}]}] run function e3_demo:selection_menu/gallery_trophy/complete/task_4
 execute in e3_demo:original if predicate luigis_mansion:lightning_strike_chance run function luigis_mansion:other/lightning_strike
-execute in minecraft:overworld if predicate luigis_mansion:lightning_strike_chance run function luigis_mansion:other/lightning_strike
 execute if score #gbh_clock Selected matches 108000 in e3_demo:original if entity @a[distance=0..,tag=!spectator] unless data storage luigis_mansion:data dialogs[{name:{namespace:"e3_demo",id:"e_gadd_call"}}] run data modify storage luigis_mansion:data dialogs append value {name:{namespace:"e3_demo",id:"e_gadd_call"},progress:0}
 scoreboard players set #temp Time 1

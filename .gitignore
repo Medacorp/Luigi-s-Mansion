@@ -16,18 +16,18 @@
 !/Luigi's Mansion/datapacks/MEDACORP/
 /Luigi's Mansion/dimensions/*
 !/Luigi's Mansion/dimensions/luigis_mansion/
-/Luigi's Mansion/dimensions/luigis_mansion/*/data/chunks.dat
-/Luigi's Mansion/dimensions/luigis_mansion/*/data/raids.dat
-/Luigi's Mansion/dimensions/luigis_mansion/*/entities/
-/Luigi's Mansion/dimensions/luigis_mansion/*/poi/
+/Luigi's Mansion/dimensions/luigis_mansion/**/data/chunks.dat
+/Luigi's Mansion/dimensions/luigis_mansion/**/data/raids.dat
+/Luigi's Mansion/dimensions/luigis_mansion/**/entities/
+/Luigi's Mansion/dimensions/luigis_mansion/**/poi/
 /Luigi's Mansion/entities/
 /Luigi's Mansion/playerdata/
 /Luigi's Mansion/poi/
 /Luigi's Mansion/stats/
-/Official add-ons/*/Dimension/*/*/data/chunks.dat
-/Official add-ons/*/Dimension/*/*/data/raids.dat
-/Official add-ons/*/Dimension/*/*/entities/
-/Official add-ons/*/Dimension/*/*/poi/
+/Official add-ons/*/Dimension/*/**/data/chunks.dat
+/Official add-ons/*/Dimension/*/**/data/raids.dat
+/Official add-ons/*/Dimension/*/**/entities/
+/Official add-ons/*/Dimension/*/**/poi/
 /allowed_symlinks.txt
 /eula.txt
 /crash-reports/

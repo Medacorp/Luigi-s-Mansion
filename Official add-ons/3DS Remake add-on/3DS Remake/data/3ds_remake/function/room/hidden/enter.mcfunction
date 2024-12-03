@@ -1,4 +1,5 @@
 tag @s remove wall_warp
+scoreboard players set @s Room -1
 scoreboard players set @s LoadedChunks 0
 tag @s remove loaded_chunks
-execute in luigis_mansion:normal run teleport @s ~34 ~-91 ~1
+execute in luigis_mansion:normal run teleport @s 754 11 9.0 90 0

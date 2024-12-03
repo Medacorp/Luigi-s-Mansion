@@ -105,7 +105,6 @@
 "e3_demo:location.lavatory": "Lavatory",
 "e3_demo:location.living_room": "Living room",
 "e3_demo:location.missingno": "MissingNo",
-"e3_demo:message.no_mansion_inside_found": "No inside of the mansion was found! Make sure you dragged in the dimension files and closed the world after installing the data pack.",
 "e3_demo:subtitles.entity.basher.ambient": "Basher haunts",
 "e3_demo:subtitles.entity.basher.attack": "Basher attacks",
 "e3_demo:subtitles.entity.basher.complain": "Basher complains",

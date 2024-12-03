@@ -167,5 +167,4 @@ execute in luigis_mansion:normal if score #king_boo_battle Ticking matches 1 unl
 execute in luigis_mansion:normal if score #clockwork_room_elevator Searched matches 1 run function luigis_mansion:room/normal/clockwork_room/raise_elevator
 execute in luigis_mansion:normal if score #clockwork_room_elevator Searched matches -1 run function luigis_mansion:room/normal/clockwork_room/lower_elevator
 execute in luigis_mansion:normal unless data storage luigis_mansion:data dialogs[{name:{namespace:"luigis_mansion",is:"normal/blackout_lightning"}}] if predicate luigis_mansion:lightning_strike_chance run function luigis_mansion:other/lightning_strike
-execute in luigis_mansion:normal in minecraft:overworld if predicate luigis_mansion:lightning_strike_chance run function luigis_mansion:other/lightning_strike
 function luigis_mansion:room/normal/boo_counter

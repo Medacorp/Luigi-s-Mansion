@@ -105,7 +105,6 @@
     "e3_demo:location.lavatory": "Retirade",
     "e3_demo:location.living_room": "Woonkamer",
     "e3_demo:location.missingno": "MissingNo",
-    "e3_demo:message.no_mansion_inside_found": "Geen binnenkant van het landhuis is gevonden! Zorg ervoor dat je de dimensie bestanden hebt gesleept en de wereld hebt gesloten nadat je het datapakket hebt geïnstalleerd.",
     "e3_demo:subtitles.entity.basher.ambient": "Hartaanvaller bespookt",
     "e3_demo:subtitles.entity.basher.attack": "Hartaanvaller valt aan",
     "e3_demo:subtitles.entity.basher.complain": "Hartaanvaller klaagt",

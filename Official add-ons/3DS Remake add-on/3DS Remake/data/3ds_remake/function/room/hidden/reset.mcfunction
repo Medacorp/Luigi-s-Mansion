@@ -1,6 +1,3 @@
-execute in luigis_mansion:normal run forceload remove 831 -144 432 -1
-execute in luigis_mansion:normal run forceload remove 831 0 432 95
-execute in luigis_mansion:normal run forceload remove 3777 -100 3585 115
 execute in luigis_mansion:normal run bossbar set 3ds_remake:boo_counter players
 
 execute in luigis_mansion:normal if score #foyer Ticking matches 1 run function #3ds_remake:room/hidden/foyer/reset
@@ -79,3 +76,7 @@ execute in luigis_mansion:normal if score #chauncey_battle Ticking matches 1 run
 execute in luigis_mansion:normal if score #bogmire_battle Ticking matches 1 run function #3ds_remake:room/hidden/bogmire_battle/reset
 execute in luigis_mansion:normal if score #boolossus_battle Ticking matches 1 run function #3ds_remake:room/hidden/boolossus_battle/reset
 execute in luigis_mansion:normal if score #king_boo_battle Ticking matches 1 run function #3ds_remake:room/hidden/king_boo_battle/reset
+
+execute in luigis_mansion:normal run forceload remove 831 -144 432 -1
+execute in luigis_mansion:normal run forceload remove 831 0 432 95
+execute in luigis_mansion:normal run forceload remove 3777 -100 3585 115

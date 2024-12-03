@@ -38,9 +38,7 @@ playsound luigis_mansion:music.catching.boo_intro music @s[scores={MusicType=30}
 scoreboard players set @s[scores={MusicType=30}] Music 28
 playsound luigis_mansion:music.new_paintings_intro music @s[scores={MusicType=38}] ~ ~ ~ 1000
 scoreboard players set @s[scores={MusicType=38}] Music 173
-playsound luigis_mansion:music.boo_woods_intro music @s[scores={MusicType=39}] ~ ~ ~ 1000
-scoreboard players set @s[scores={MusicType=39}] Music 79
-playsound luigis_mansion:music.training_stop music @s[scores={MusicType=42}] ~ ~ ~ 1000
-scoreboard players set @s[scores={MusicType=42}] Music 10
+playsound luigis_mansion:music.training_stop music @s[scores={MusicType=39}] ~ ~ ~ 1000
+scoreboard players set @s[scores={MusicType=39}] Music 10
 
 scoreboard players operation @s[scores={Music=0}] PreviousMusicType = @s MusicType

@@ -1,0 +1,1 @@
+$function $(namespace):room/exterior/dark_room/$(id)

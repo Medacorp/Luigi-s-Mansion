@@ -1,1 +1,1 @@
-data modify storage e3_demo:data saved_state set from storage e3_demo:data current_state
+execute if score #e3_demo Loaded matches 1.. run data modify storage e3_demo:data saved_state set from storage e3_demo:data current_state

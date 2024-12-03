@@ -14,10 +14,6 @@ scoreboard players operation #temp2 Time %= #60 Constants
 scoreboard players operation #temp2 Time /= #10 Constants
 scoreboard players operation #temp3 Time = #temp ActionTime
 scoreboard players operation #temp3 Time /= #60 Constants
-execute as @e[tag=ghost,tag=!vacuumable,tag=!empty_marker,tag=same_room,nbt=!{data:{entity:{namespace:"luigis_mansion",id:"haunted_object"}}}] unless entity @s[tag=hidden,tag=!can_spawn] run tag @s add radar_detect
-data remove storage luigis_mansion:data inventory[{components:{"minecraft:custom_data":{namespace:"luigis_mansion",id:"game_boy_horror"}}}].components."minecraft:lodestone_tracker"
-execute if entity @e[tag=radar_detect,distance=..8,limit=1] run function luigis_mansion:items/game_boy_horror/clock_ghost_radar
-tag @e[tag=radar_detect] remove radar_detect
 data modify storage luigis_mansion:data inventory[{components:{"minecraft:custom_data":{namespace:"luigis_mansion",id:"game_boy_horror"}}}].components."minecraft:custom_model_data".flags[0] set value 0b
 data modify storage luigis_mansion:data inventory[{components:{"minecraft:custom_data":{namespace:"luigis_mansion",id:"game_boy_horror"}}}].components."minecraft:custom_model_data".floats[0] set value 0.0f
 data modify storage luigis_mansion:data inventory[{components:{"minecraft:custom_data":{namespace:"luigis_mansion",id:"game_boy_horror"}}}].components."minecraft:custom_model_data".strings[1] set value "clock"

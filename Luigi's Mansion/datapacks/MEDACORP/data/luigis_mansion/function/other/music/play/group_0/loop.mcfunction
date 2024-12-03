@@ -70,9 +70,7 @@ playsound luigis_mansion:music.mini_game music @s[scores={MusicType=37}] ~ ~ ~ 1
 scoreboard players set @s[scores={MusicType=37}] Music 400
 playsound luigis_mansion:music.new_paintings music @s[scores={MusicType=38}] ~ ~ ~ 1000
 scoreboard players set @s[scores={MusicType=38}] Music 196
-playsound luigis_mansion:music.boo_woods music @s[scores={MusicType=39}] ~ ~ ~ 1000
-scoreboard players set @s[scores={MusicType=39}] Music 1574
+scoreboard players set @s[scores={MusicType=39}] Music 10000
 playsound luigis_mansion:music.staff_credits music @s[scores={MusicType=40}] ~ ~ ~ 1000
 scoreboard players set @s[scores={MusicType=40}] Music 2820
 execute if entity @s[scores={MusicType=41}] run function luigis_mansion:other/music/play/group_0/loop_humming
-scoreboard players set @s[scores={MusicType=42}] Music 10000

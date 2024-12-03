@@ -1,0 +1,1 @@
+$execute unless dimension $(namespace):exterior/$(id) in $(namespace):exterior/$(id) run teleport @s ~ ~ ~

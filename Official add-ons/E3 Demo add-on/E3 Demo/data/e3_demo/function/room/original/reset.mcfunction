@@ -1,7 +1,3 @@
-execute in e3_demo:original run forceload remove 831 -144 432 -1
-execute in e3_demo:original run forceload remove 831 0 432 95
-execute in e3_demo:original run forceload remove 3777 -100 3585 115
-
 execute in e3_demo:original if score #entrance Ticking matches 1 run function #e3_demo:room/original/entrance/reset
 execute in e3_demo:original if score #hallway_1 Ticking matches 1 run function #e3_demo:room/original/hallway_1/reset
 execute in e3_demo:original if score #living_room Ticking matches 1 run function #e3_demo:room/original/living_room/reset
@@ -75,3 +71,7 @@ execute in e3_demo:original if score #missingno_54 Ticking matches 1 run functio
 execute in e3_demo:original if score #missingno_55 Ticking matches 1 run function #e3_demo:room/original/missingno_55/reset
 execute in e3_demo:original if score #missingno_56 Ticking matches 1 run function #e3_demo:room/original/missingno_56/reset
 execute in e3_demo:original if score #missingno_57 Ticking matches 1 run function #e3_demo:room/original/missingno_57/reset
+
+execute in e3_demo:original run forceload remove 831 -144 432 -1
+execute in e3_demo:original run forceload remove 831 0 432 95
+execute in e3_demo:original run forceload remove 3777 -100 3585 115
