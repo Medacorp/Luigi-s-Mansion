@@ -21,7 +21,7 @@ tag @e[nbt={data:{entity:{namespace:"luigis_mansion",id:"jarvis"}}},tag=same_roo
 tag @e[nbt={data:{entity:{namespace:"luigis_mansion",id:"jarvis"}}},tag=same_room,limit=1] remove no_ai
 execute if score #dialog Dialog matches 1 run tag @e[nbt={data:{entity:{namespace:"luigis_mansion",id:"jarvis"}}},tag=same_room,limit=1] add pop_out
 execute if score #dialog Dialog matches 1..25 as @a[tag=same_room,tag=!spectator] run function luigis_mansion:other/music/set/talking_ghost
-execute if score #dialog Dialog matches 1..25 as @a[tag=same_room,tag=!spectator] run function luigis_mansion:entities/player/animation/set/idle
+execute if score #dialog Dialog matches 1..25 as @e[tag=luigi,tag=same_room] run function luigis_mansion:entities/luigi/animation/set/idle
 execute if score #dialog Dialog matches 11 if data storage luigis_mansion:data current_state.current_data.technical_data{jarvis_spoke:1b} run scoreboard players set #dialog Dialog 17
 execute if score #dialog Dialog matches 11 if score #players Totals matches 1 run tellraw @a[tag=same_room] {"type":"translatable","translate":"chat.type.text","with":[{"type":"translatable","translate":"luigis_mansion:entity.jarvis","color":"green"},{"type":"translatable","translate":"luigis_mansion:dialog.jarvis.1"}]}
 execute if score #dialog Dialog matches 11 if score #players Totals matches 2.. run tellraw @a[tag=same_room] {"type":"translatable","translate":"chat.type.text","with":[{"type":"translatable","translate":"luigis_mansion:entity.jarvis","color":"green"},{"type":"translatable","translate":"luigis_mansion:dialog.jarvis.1.more"}]}
@@ -58,18 +58,18 @@ execute if score #dialog Dialog matches 24 if score #players Totals matches 2.. 
 
 execute if score #dialog Dialog matches 25 if entity @a[tag=same_room,tag=next_dialog_line,limit=1] run tellraw @a[tag=same_room] {"type":"translatable","translate":"chat.type.text","with":[{"type":"translatable","translate":"luigis_mansion:entity.jarvis","color":"green"},{"type":"translatable","translate":"luigis_mansion:dialog.jarvis.yes.5"}]}
 
-execute if score #dialog Dialog matches 26 as @a[tag=same_room,tag=!spectator] run function luigis_mansion:entities/player/animation/set/none
+execute if score #dialog Dialog matches 26 as @e[tag=luigi,tag=same_room] run function luigis_mansion:entities/luigi/animation/set/none
 execute if score #dialog Dialog matches 26 run tag @e[nbt={data:{entity:{namespace:"luigis_mansion",id:"jarvis"}}},tag=same_room,limit=1] add pop_in
 execute if score #dialog Dialog matches 26 as @a[tag=same_room] run function luigis_mansion:other/music/set/silence
 execute if score #dialog Dialog matches 26 run scoreboard players set #dialog Dialog -1
 
 #Branch: No
 execute if score #dialog Dialog matches 27 as @a[tag=same_room,tag=!spectator] run function luigis_mansion:other/music/set/talking_ghost
-execute if score #dialog Dialog matches 27 as @a[tag=same_room,tag=!spectator] run function luigis_mansion:entities/player/animation/set/idle
+execute if score #dialog Dialog matches 27 as @e[tag=luigi,tag=same_room] run function luigis_mansion:entities/luigi/animation/set/idle
 execute if score #dialog Dialog matches 27 if score #players Totals matches 1 if entity @a[tag=same_room,tag=select_dialog_branch_no,limit=1] run tellraw @a[tag=same_room] {"type":"translatable","translate":"chat.type.text","with":[{"type":"translatable","translate":"luigis_mansion:entity.jarvis","color":"green"},{"type":"translatable","translate":"luigis_mansion:dialog.jarvis.no.1"}]}
 execute if score #dialog Dialog matches 27 if score #players Totals matches 2.. if entity @a[tag=same_room,tag=select_dialog_branch_no,limit=1] run tellraw @a[tag=same_room] {"type":"translatable","translate":"chat.type.text","with":[{"type":"translatable","translate":"luigis_mansion:entity.jarvis","color":"green"},{"type":"translatable","translate":"luigis_mansion:dialog.jarvis.no.1.more"}]}
 
-execute if score #dialog Dialog matches 28 as @a[tag=same_room,tag=!spectator] run function luigis_mansion:entities/player/animation/set/none
+execute if score #dialog Dialog matches 28 as @e[tag=luigi,tag=same_room] run function luigis_mansion:entities/luigi/animation/set/none
 execute if score #dialog Dialog matches 28 as @a[tag=same_room] run function luigis_mansion:other/music/set/silence
 execute if score #dialog Dialog matches 28 run tag @e[nbt={data:{entity:{namespace:"luigis_mansion",id:"jarvis"}}},tag=same_room,limit=1] add kick_players_out
 execute if score #dialog Dialog matches 28 run scoreboard players set #dialog Dialog -1

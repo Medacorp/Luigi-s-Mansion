@@ -1,6 +1,6 @@
 execute unless score #storage_room Ticking matches 1 run function #3ds_remake:room/hidden/storage_room/load
-execute as @a[x=679,y=10,z=-70,dx=12,dy=7,dz=33] unless entity @s[scores={Room=18}] run scoreboard players operation @s LastRoom = @s Room
-scoreboard players set @a[x=679,y=10,z=-70,dx=12,dy=7,dz=33] Room 18
+execute as @e[tag=player,x=679,y=10,z=-70,dx=12,dy=7,dz=33] unless entity @s[scores={Room=18}] run scoreboard players operation @s LastRoom = @s Room
+scoreboard players set @e[tag=player,x=679,y=10,z=-70,dx=12,dy=7,dz=33] Room 18
 #todelete - old furniture
 scoreboard players set #temp Room 18
 #/todelete
@@ -23,4 +23,4 @@ fill 671 10 -68 679 18 -40 minecraft:barrier replace minecraft:air
 execute if block 689 13 -60 minecraft:stone_button[powered=true] if block 682 11 -52 minecraft:andesite_stairs if data storage luigis_mansion:data current_state.current_data.rooms.storage_room{cleared:1b} unless data storage luigis_mansion:data current_state.current_data.technical_data{moved_wall:1b} unless data storage luigis_mansion:data dialogs[{room:18}] run data modify storage luigis_mansion:data dialogs append value {name:{namespace:"3ds_remake",id:"hidden/move_storage_room_wall"},room:18,progress:0}
 execute if block 681 13 -46 minecraft:stone_button[powered=true] if block 685 10 -46 minecraft:oak_slab unless entity @e[tag=!spectator,scores={Room=18},x=684.0,y=10,z=-47.0,dx=2,dy=7,dz=2,limit=1] if data storage luigis_mansion:data current_state.current_data.rooms.storage_room{cleared:1b} unless data storage luigis_mansion:data current_state.current_data.technical_data{released_boos:1b} unless data storage luigis_mansion:data dialogs[{room:18}] run data modify storage luigis_mansion:data dialogs append value {name:{namespace:"3ds_remake",id:"hidden/release_boos"},room:18,progress:0}
 
-execute if entity @a[tag=!pause_dialog,scores={Room=18},tag=!spectator,limit=1] run function 3ds_remake:room/hidden/storage_room/ghosts
+execute if entity @e[tag=luigi,tag=!door_animation,scores={Room=18},limit=1] run function 3ds_remake:room/hidden/storage_room/ghosts

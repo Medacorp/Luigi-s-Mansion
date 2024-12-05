@@ -14,8 +14,8 @@ execute as @a[tag=same_room,tag=!spectator,tag=game_boy_horror_menu] run functio
 tag @e[tag=same_room,nbt={data:{entity:{namespace:"luigis_mansion",id:"mario"}}},limit=1] remove freeze_animation
 tag @e[tag=same_room,nbt={data:{entity:{namespace:"luigis_mansion",id:"bowser"}}},limit=1] remove freeze_animation
 tag @e[tag=same_room,nbt={data:{entity:{namespace:"luigis_mansion",id:"king_boo"}}},limit=1] remove freeze_animation
-execute if score #dialog Dialog matches 1 at @e[tag=same_room,nbt={data:{entity:{namespace:"luigis_mansion",id:"king_boo"}}},limit=1] as @a[tag=same_room,distance=..5.9,limit=1] positioned 645 93 33 run function luigis_mansion:entities/player/set_position
-execute if score #dialog Dialog matches 1..430 as @a[tag=same_room,tag=!spectator] run function luigis_mansion:entities/player/animation/set/idle
+execute if score #dialog Dialog matches 1 at @e[tag=same_room,nbt={data:{entity:{namespace:"luigis_mansion",id:"king_boo"}}},limit=1] as @a[tag=same_room,distance=..5.9,limit=1] run function luigis_mansion:entities/luigi/move/teleport {teleport:"645 93 33 90 0"}
+execute if score #dialog Dialog matches 1..430 as @e[tag=luigi,tag=same_room] run function luigis_mansion:entities/luigi/animation/set/idle
 execute if score #dialog Dialog matches 1 run scoreboard players set #can_warp Selected 0
 execute if score #dialog Dialog matches 1..514 as @a[tag=same_room] run function luigis_mansion:other/music/set/talking_king_boo
 execute if score #dialog Dialog matches 61 run tellraw @a[tag=same_room] {"type":"translatable","translate":"chat.type.text","with":[{"type":"translatable","translate":"luigis_mansion:entity.king_boo","color":"green"},{"type":"translatable","translate":"luigis_mansion:dialog.king_boo.1"}]}
@@ -74,15 +74,15 @@ execute if score #dialog Dialog matches 304 run data modify entity @e[tag=same_r
 execute if score #dialog Dialog matches 371.. positioned 636 95 33 run particle minecraft:dust{color:16777215,scale:1f} ~ ~ ~ 0 0 0 0 10
 execute if score #dialog Dialog matches 371.. positioned 637 95 33 run particle minecraft:dust{color:16777215,scale:1f} ~ ~ ~ 0 0 0 0 10
 execute if score #dialog Dialog matches 371.. positioned 638 95 33 run particle minecraft:dust{color:16777215,scale:1f} ~ ~ ~ 0 0 0 0 10
-execute if score #dialog Dialog matches 431 as @a[tag=same_room,tag=!spectator] run function luigis_mansion:entities/player/animation/set/none
-execute if score #dialog Dialog matches 431 at @e[tag=same_room,nbt={data:{entity:{namespace:"luigis_mansion",id:"king_boo"}}},limit=1] as @a[tag=same_room,tag=!spectator] run function luigis_mansion:entities/player/animation/set/knockback/flee
+execute if score #dialog Dialog matches 431 as @e[tag=luigi,tag=same_room] run function luigis_mansion:entities/luigi/animation/set/none
+execute if score #dialog Dialog matches 431 at @e[tag=same_room,nbt={data:{entity:{namespace:"luigis_mansion",id:"king_boo"}}},limit=1] as @e[tag=luigi,tag=same_room] run function luigis_mansion:entities/luigi/animation/set/knockback/flee
 execute if score #dialog Dialog matches 431.. as @e[tag=same_room,nbt={data:{entity:{namespace:"luigis_mansion",id:"king_boo"}}},limit=1] unless entity @s[scores={PoltergustSound=1..}] run playsound luigis_mansion:entity.bowser.vacuum hostile @a[tag=same_room] ~ ~ ~ 3
 execute if score #dialog Dialog matches 431.. as @e[tag=same_room,nbt={data:{entity:{namespace:"luigis_mansion",id:"king_boo"}}},limit=1] unless entity @s[scores={PoltergustSound=1..}] run scoreboard players set @s PoltergustSound 20
-execute if score #dialog Dialog matches 431..470 as @a[tag=same_room,tag=!spectator] at @s facing 635 94 33 positioned ^ ^ ^0.3 rotated as @s run function luigis_mansion:entities/player/set_position
-execute if score #dialog Dialog matches 471..590 as @a[tag=same_room,tag=!spectator] at @s facing 635 94 33 positioned ^ ^ ^0.5 rotated as @s run function luigis_mansion:entities/player/set_position
+execute if score #dialog Dialog matches 431..470 as @a[tag=same_room,tag=!spectator] run function luigis_mansion:entities/luigi/move/execute {execute:"at @s facing 635 94 33",teleport:"^ ^ ^0.3"}
+execute if score #dialog Dialog matches 471..590 as @a[tag=same_room,tag=!spectator] run function luigis_mansion:entities/luigi/move/execute {execute:"at @s facing 635 94 33",teleport:"^ ^ ^0.5"}
 execute if score #dialog Dialog matches 491.. run teleport @a[tag=same_room,tag=!spectator] 635 94 33
 execute if score #dialog Dialog matches 531 run tag @e[tag=same_room,nbt={data:{entity:{namespace:"luigis_mansion",id:"king_boo"}}},limit=1] add remove_from_existence
-execute if score #dialog Dialog matches 531 as @a[tag=same_room,tag=!spectator] run function luigis_mansion:entities/player/animation/set/none
+execute if score #dialog Dialog matches 531 as @e[tag=luigi,tag=same_room] run function luigis_mansion:entities/luigi/animation/set/none
 execute if score #dialog Dialog matches 531 as @a[tag=same_room,tag=!spectator] run function luigis_mansion:other/music/set/silence
 execute if score #dialog Dialog matches 531 as @a[tag=same_room] run function luigis_mansion:room/hidden/king_boo_battle/warp_to
 execute if score #dialog Dialog matches 531 run scoreboard players set #dialog Dialog -1

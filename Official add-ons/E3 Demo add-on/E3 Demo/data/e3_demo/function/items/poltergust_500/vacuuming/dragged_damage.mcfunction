@@ -3,6 +3,6 @@ tag @s remove pulled_last_tick
 tag @s[scores={Damage=1}] add pulled_last_tick
 execute if entity @s[scores={Damage=1..}] run data modify storage luigis_mansion:data damage set value {method:{namespace:"luigis_mansion",id:"dragged"},amount:1}
 execute if entity @s[scores={Damage=1..}] as @e[tag=ghost,tag=being_vacuumed,scores={ErrorTime=5..},sort=random,limit=1] run data modify storage luigis_mansion:data damage.attacker set from entity @s UUID
-execute if entity @s[scores={Damage=1..}] run function luigis_mansion:entities/player/damage
+execute if entity @s[scores={Damage=1..}] run function luigis_mansion:entities/luigi/damage
 scoreboard players reset @s Damage
 scoreboard players set @s Invulnerable 0

@@ -1,6 +1,6 @@
-execute unless entity @a[distance=..3,tag=!spectator,tag=vacuuming] facing entity @p[tag=!spectator,tag=player,tag=vacuuming] feet if block ^ ^ ^0.3 #luigis_mansion:all_ignore run teleport @s ^ ^ ^0.3 ~ ~
-execute unless entity @a[distance=..3,tag=!spectator,tag=vacuuming] facing entity @p[tag=!spectator,tag=player,tag=vacuuming] feet unless block ^ ^ ^0.3 #luigis_mansion:all_ignore rotated ~ 0 if block ^ ^ ^0.3 #luigis_mansion:all_ignore run teleport @s ^ ^ ^0.3 ~ ~
-execute unless entity @a[distance=..3,tag=!spectator,tag=vacuuming] facing entity @p[tag=!spectator,tag=player,tag=vacuuming] feet unless block ^ ^ ^0.3 #luigis_mansion:all_ignore rotated ~ 0 unless block ^ ^ ^0.3 #luigis_mansion:all_ignore run teleport @s ~ ~ ~ ~ ~
-execute at @p[distance=..3,tag=!spectator,tag=player,tag=vacuuming] positioned ~ ~0.5 ~ run teleport @s ^ ^ ^0.2 ~ ~
-execute at @p[distance=..3,tag=!spectator,tag=vacuuming] if block ^ ^ ^1 #luigis_mansion:all_ignore run teleport @s[tag=can_spit] ^ ^ ^1 ~ ~
-execute at @p[distance=..3,tag=!spectator,tag=vacuuming] if block ^ ^ ^2 #luigis_mansion:all_ignore run teleport @s[tag=can_spit] ^ ^ ^2 ~ ~
+execute unless entity @e[distance=..3,tag=luigi,tag=vacuuming_me,limit=1] facing entity @e[tag=luigi,tag=vacuuming_me,sort=nearest,limit=1] feet if block ^ ^ ^0.3 #luigis_mansion:all_ignore run teleport @s ^ ^ ^0.3 ~ ~
+execute unless entity @e[distance=..3,tag=luigi,tag=vacuuming_me,limit=1] facing entity @e[tag=luigi,tag=vacuuming_me,sort=nearest,limit=1] feet unless block ^ ^ ^0.3 #luigis_mansion:all_ignore rotated ~ 0 if block ^ ^ ^0.3 #luigis_mansion:all_ignore run teleport @s ^ ^ ^0.3 ~ ~
+execute unless entity @e[distance=..3,tag=luigi,tag=vacuuming_me,limit=1] facing entity @e[tag=luigi,tag=vacuuming_me,sort=nearest,limit=1] feet unless block ^ ^ ^0.3 #luigis_mansion:all_ignore rotated ~ 0 unless block ^ ^ ^0.3 #luigis_mansion:all_ignore run teleport @s ~ ~ ~ ~ ~
+execute at @e[distance=..3,tag=luigi,tag=vacuuming_me,sort=nearest,limit=1] positioned ~ ~0.5 ~ run teleport @s ^ ^ ^0.2 ~ ~
+execute at @e[distance=..3,tag=luigi,tag=vacuuming_me,sort=nearest,limit=1] if block ^ ^ ^1 #luigis_mansion:all_ignore run teleport @s[tag=can_spit] ^ ^ ^1 ~ ~
+execute at @e[distance=..3,tag=luigi,tag=vacuuming_me,sort=nearest,limit=1] if block ^ ^ ^2 #luigis_mansion:all_ignore run teleport @s[tag=can_spit] ^ ^ ^2 ~ ~

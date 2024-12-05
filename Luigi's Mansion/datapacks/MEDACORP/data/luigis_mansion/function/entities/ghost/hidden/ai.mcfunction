@@ -1,14 +1,14 @@
 execute unless entity @s[scores={SpawnTime=0..}] run scoreboard players set @s SpawnTime 200
 scoreboard players remove @s[scores={SpawnTime=1..}] SpawnTime 1
 tag @s[scores={SpawnTime=..100},tag=!only_forced_spawn,tag=!hiding_in_furniture] add can_spawn
-execute at @s unless entity @s[scores={SpawnTime=1..},tag=!new_ghost,tag=!no_hidden_move] facing entity @p[tag=same_room,tag=!spectator,tag=player,sort=nearest,limit=1] feet rotated ~ 0 run teleport @s ~ ~ ~ ~ ~
+execute at @s unless entity @s[scores={SpawnTime=1..},tag=!new_ghost,tag=!no_hidden_move] facing entity @e[tag=same_room,tag=luigi,sort=nearest,limit=1] feet rotated ~ 0 run teleport @s ~ ~ ~ ~ ~
 execute at @s[scores={Time=40..}] run function luigis_mansion:entities/ghost/hidden/turn
-execute if block ~ ~ ~ #luigis_mansion:all_ignore unless entity @a[scores={AnimationProgress=1..},tag=!idle,tag=!animation_may_move,limit=1] if entity @e[tag=same_room,distance=..7,tag=!spectator,tag=player,limit=1] unless entity @s[tag=!burning_heart,tag=!frozen_heart,tag=!watery_heart,tag=!basher] run tag @s[tag=can_spawn] add try_spawn
 tag @s add me
+execute if block ~ ~ ~ #luigis_mansion:all_ignore unless entity @s[tag=!burning_heart,tag=!frozen_heart,tag=!watery_heart,tag=!basher] as @e[tag=same_room,distance=..7,tag=luigi,limit=1] unless entity @s[tag=luigi,nbt=!{data:{animation:{}}},tag=!idle,tag=!animation_may_move] run tag @e[tag=me,tag=can_spawn,limit=1] add try_spawn
 execute if entity @e[tag=!me,tag=!hidden,tag=!model_piece,tag=!furniture,distance=..0.7,limit=1] if block ~ ~ ~ #luigis_mansion:all_ignore run tag @s remove try_spawn
 execute if entity @e[tag=!me,tag=!hidden,tag=!model_piece,tag=!furniture,distance=..0.7,limit=1] unless entity @e[type=minecraft:item_frame,distance=..0.7,limit=1] run tag @s remove try_spawn
 tag @s remove me
-execute if entity @a[distance=..1.5] if block ~ ~ ~ #luigis_mansion:all_ignore run tag @s remove try_spawn
+execute if entity @e[tag=luigi,distance=..1.5] if block ~ ~ ~ #luigis_mansion:all_ignore run tag @s remove try_spawn
 tag @s[tag=try_spawn] add spawn
 execute if entity @s[tag=!spawn,tag=!no_height_change,tag=!new_ghost] unless block ~ ~ ~ #luigis_mansion:all_ignore run tag @s add forced_collision
 execute if entity @s[tag=!spawn,tag=!no_height_change,tag=!new_ghost] if block ~ ~ ~ #minecraft:slabs run tag @s add forced_collision

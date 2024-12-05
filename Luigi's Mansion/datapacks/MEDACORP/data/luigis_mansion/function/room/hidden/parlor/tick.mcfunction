@@ -1,6 +1,6 @@
 execute unless score #parlor Ticking matches 1 run function #luigis_mansion:room/hidden/parlor/load
-execute as @a[x=712,y=19,z=-23,dx=17,dy=7,dz=21] unless entity @s[scores={Room=3}] run scoreboard players operation @s LastRoom = @s Room
-scoreboard players set @a[x=712,y=19,z=-23,dx=17,dy=7,dz=21] Room 3
+execute as @e[tag=player,x=712,y=19,z=-23,dx=17,dy=7,dz=21] unless entity @s[scores={Room=3}] run scoreboard players operation @s LastRoom = @s Room
+scoreboard players set @e[tag=player,x=712,y=19,z=-23,dx=17,dy=7,dz=21] Room 3
 #todelete - old furniture
 scoreboard players set #temp Room 3
 #/todelete
@@ -15,4 +15,4 @@ scoreboard players reset #temp Wave
 function #luigis_mansion:room/hidden/parlor/interactions/room
 #/todelete
 
-execute if entity @a[tag=!pause_dialog,scores={Room=3},tag=!spectator,limit=1] run function luigis_mansion:room/hidden/parlor/ghosts
+execute if entity @e[tag=luigi,tag=!door_animation,scores={Room=3},limit=1] run function luigis_mansion:room/hidden/parlor/ghosts

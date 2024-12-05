@@ -1,5 +1,5 @@
 scoreboard players add @s Dialog 1
-execute if entity @s[scores={Dialog=1..100}] at @e[tag=same_room,tag=!spectator,tag=player] positioned ^ ^ ^8 run scoreboard players set @s[distance=..8] Dialog 1
+execute if entity @s[scores={Dialog=1..100}] at @e[tag=same_room,tag=luigi] positioned ^ ^ ^8 run scoreboard players set @s[distance=..8] Dialog 1
 tag @s[scores={Dialog=1}] remove visible
 tag @s[scores={Dialog=2}] add visible
 execute if score #bed_room_1 Wave matches 1 run scoreboard players set @s[scores={Dialog=101}] Dialog 1

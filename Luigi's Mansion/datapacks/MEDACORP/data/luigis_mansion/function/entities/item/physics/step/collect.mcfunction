@@ -1,4 +1,3 @@
-$execute if entity @s[tag=!no_shrunk] run tag @a[tag=same_room,tag=!spectator,distance=..$(pick_up_range),limit=1] add collector
-$execute if entity @s[tag=no_shrunk] run tag @a[tag=same_room,tag=!spectator,distance=..$(pick_up_range),scores={Shrunk=0},limit=1] add collector
-$execute unless entity @a[tag=collector,limit=1] as @e[tag=same_room,tag=game_boy_horror_location,tag=!spectator,tag=player,distance=..$(pick_up_range),limit=1] run function luigis_mansion:entities/game_boy_horror_location/tag_for_collecting
-execute if entity @a[tag=collector,limit=1] run tag @s add picked_up
+$execute if entity @s[tag=!no_shrunk] run tag @e[tag=same_room,tag=luigi,distance=..$(pick_up_range),limit=1] add collector
+$execute if entity @s[tag=no_shrunk] run tag @e[tag=same_room,tag=luigi,distance=..$(pick_up_range),scores={Shrunk=0},limit=1] add collector
+execute if entity @e[tag=collector,limit=1] run tag @s add picked_up

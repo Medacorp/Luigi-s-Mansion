@@ -1,5 +1,5 @@
 execute store result score #temp ID run data get storage luigis_mansion:data dialogs[0].phone_caller
-execute as @a[tag=same_room] if score @s ID = #temp ID run tag @s add phone_caller
+execute as @a[tag=luigi] if score @s ID = #temp ID run tag @s add phone_caller
 scoreboard players reset #temp ID
 
 execute if score #dialog Dialog matches 21..29 if entity @a[tag=same_room,tag=next_dialog_line,limit=1] run scoreboard players add #dialog Dialog 1
@@ -10,8 +10,8 @@ execute if score #dialog Dialog matches 30.. as @a[tag=same_room,tag=dialog_menu
 
 scoreboard players reset @a[tag=same_room,tag=!spectator] WarpTime
 execute as @a[tag=same_room,tag=!spectator,tag=game_boy_horror_menu] run function luigis_mansion:selection_menu/game_boy_horror/exit
-execute if score #dialog Dialog matches 1..29 as @a[tag=same_room,tag=!spectator,tag=!phone_caller] run function luigis_mansion:entities/player/animation/set/idle
-execute if score #dialog Dialog matches 1..29 as @a[tag=same_room,tag=!spectator,tag=phone_caller] run function luigis_mansion:entities/player/animation/set/answer_phone
+execute if score #dialog Dialog matches 1..29 as @e[tag=luigi,tag=same_room,tag=!phone_caller] run function luigis_mansion:entities/luigi/animation/set/idle
+execute if score #dialog Dialog matches 1..29 as @a[tag=phone_caller,limit=1] run function luigis_mansion:entities/luigi/animation/set/answer_phone
 execute if score #dialog Dialog matches 20 run tellraw @a[tag=same_room] {"type":"translatable","translate":"chat.type.text","with":[{"type":"translatable","translate":"luigis_mansion:entity.unknown","color":"green"},{"type":"translatable","translate":"luigis_mansion:dialog.uncle_grimmly.1"}]}
 
 execute if score #dialog Dialog matches 22 if entity @a[tag=next_dialog_line,limit=1] run stopsound @a[tag=same_room] neutral luigis_mansion:entity.e_gadd.talk.oydohroh
@@ -54,6 +54,6 @@ execute if score #dialog Dialog matches 29 if entity @a[tag=same_room,tag=next_d
 
 execute if score #dialog Dialog matches 30 as @a[tag=same_room] at @s run playsound luigis_mansion:entity.ghost.laugh hostile @s ~ ~ ~ 3
 execute if score #dialog Dialog matches 30 run data modify storage luigis_mansion:data current_state.current_data.technical_data merge value {telephone_3:1b}
-execute if score #dialog Dialog matches 30 as @a[tag=same_room] run function luigis_mansion:entities/player/animation/set/none
+execute if score #dialog Dialog matches 30 as @e[tag=luigi,tag=same_room] run function luigis_mansion:entities/luigi/animation/set/none
 execute if score #dialog Dialog matches 30 run scoreboard players set #dialog Dialog -1
-tag @a[tag=same_room] remove phone_caller
+tag @a[tag=phone_caller,limit=1] remove phone_caller

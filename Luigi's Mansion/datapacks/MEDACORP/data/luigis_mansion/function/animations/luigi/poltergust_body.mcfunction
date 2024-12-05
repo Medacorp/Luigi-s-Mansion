@@ -1,4 +1,4 @@
-tag @s[tag=low_health,tag=!stop_model] add sneak_pos
+tag @s[tag=low_health] add sneak_pos
 # Move with
 teleport @s[tag=!riding_poltergust,tag=!sneak_pos,tag=!shrunk,tag=!flipped_gravity] ^ ^-2.3 ^-0.125 ~ ~
 teleport @s[tag=!riding_poltergust,tag=sneak_pos,tag=!shrunk,tag=!flipped_gravity] ^ ^-2.3 ^-0.325 ~ ~
@@ -25,7 +25,7 @@ data modify entity @s[tag=!riding_poltergust,tag=!was_flipped,tag=flipped_gravit
 data modify entity @s[tag=riding_poltergust,tag=!flipped_gravity] Pose.Head set value [-90.0f,0.0f,0.0f]
 data modify entity @s[tag=riding_poltergust,tag=flipped_gravity] Pose.Head set value [-90.0f,0.0f,-180.0f]
 
-execute if entity @s[tag=riding_poltergust,tag=!was_riding_poltergust] run tag @a[tag=this_luigi,limit=1] add poltergust_floor_sound
+execute if entity @s[tag=riding_poltergust,tag=!was_riding_poltergust] run tag @e[tag=this_luigi,tag=!model_piece,limit=1] add poltergust_floor_sound
 
 execute at @s[tag=!shrunk] if data storage luigis_mansion:data luigi{tags:["exploding_poltergust_effect"]} run particle minecraft:large_smoke ~ ~1.5 ~ 0.3 0.3 0.3 0 10 normal @a[tag=same_room]
 execute at @s[tag=!shrunk] if data storage luigis_mansion:data luigi{tags:["exploding_poltergust_effect"]} run particle minecraft:flame ~ ~1.5 ~ 0.3 0.3 0.3 0 10 normal @a[tag=same_room]

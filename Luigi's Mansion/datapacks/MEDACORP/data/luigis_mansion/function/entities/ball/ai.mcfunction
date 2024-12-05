@@ -51,11 +51,11 @@ scoreboard players set @s[tag=can_spit_2,tag=spike_ball] Move 0
 #interaction
 execute at @s[tag=in_vacuum,tag=!spit,tag=vacuumable] run function luigis_mansion:entities/ball/roll_to_player
 execute at @s[tag=!spit,tag=vacuumable] unless entity @s[tag=!in_dust,tag=!in_fire,tag=!in_water,tag=!in_ice] run function luigis_mansion:entities/billiards_ball/roll_away_from_player
-execute at @s[tag=!in_vacuum,tag=chauncey] if entity @e[distance=..1,tag=!spectator,tag=player,limit=1] run function luigis_mansion:entities/ball/hit_player
+execute at @s[tag=!in_vacuum,tag=chauncey] if entity @e[distance=..1,tag=luigi,limit=1] run function luigis_mansion:entities/ball/hit_player
 execute at @s[tag=spike_ball] run function luigis_mansion:entities/ball/spike_ball
 
-execute at @s[tag=in_vacuum,tag=!big,tag=!spit,tag=vacuumable] if entity @p[distance=..1.5,tag=!spectator,tag=player,tag=vacuuming] run tag @s add can_spit
-execute at @s[tag=in_vacuum,tag=big,tag=!spit,tag=vacuumable] if entity @p[distance=..3,tag=!spectator,tag=player,tag=vacuuming] run tag @s add can_spit
+execute at @s[tag=in_vacuum,tag=!big,tag=!spit,tag=vacuumable] if entity @e[distance=..1.5,tag=luigi,tag=vacuuming_me,limit=1] run tag @s add can_spit
+execute at @s[tag=in_vacuum,tag=big,tag=!spit,tag=vacuumable] if entity @e[distance=..3,tag=luigi,tag=vacuuming_me,limit=1] run tag @s add can_spit
 tag @s[tag=can_spit] add can_spit_2
 scoreboard players set @s[tag=can_spit] Move 0
 tag @s[tag=!can_spit] remove can_spit_2

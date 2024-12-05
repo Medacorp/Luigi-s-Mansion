@@ -3,5 +3,4 @@ execute if score #graveyard_tree_trunk Searched matches 1 unless score #graveyar
 execute if score #graveyard_tree_trunk Searched matches 1 unless score #graveyard_tree_trunk Sound matches 1.. run scoreboard players set #graveyard_tree_trunk Sound 24
 execute if score #graveyard_tree_trunk Searched matches 1 if score #graveyard_tree_trunk Sound matches 1.. run scoreboard players remove #graveyard_tree_trunk Sound 1
 execute if score #graveyard_tree_trunk Searched matches 1 run particle minecraft:dust{color:8355839,scale:1f} 668 102 -38 0.2 0.2 0.2 0 4
-execute if score #graveyard_tree_trunk Searched matches 1 as @e[x=668.5,y=102,z=-37.5,distance=..0.7,tag=game_boy_horror_location] run function luigis_mansion:entities/game_boy_horror_location/bring_player_back
-execute if score #graveyard_tree_trunk Searched matches 1 as @a[x=668.5,y=102,z=-37.5,distance=..0.7] run function luigis_mansion:room/hidden/graveyard/go_through_tree_trunk
+execute if score #graveyard_tree_trunk Searched matches 1 as @e[tag=luigi,x=668.5,y=102,z=-37.5,distance=..0.7] run function luigis_mansion:room/hidden/graveyard/go_through_tree_trunk

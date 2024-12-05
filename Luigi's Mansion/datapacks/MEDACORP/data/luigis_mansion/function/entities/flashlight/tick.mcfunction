@@ -6,7 +6,7 @@ scoreboard players operation #temp HomeY = @s HomeY
 scoreboard players operation #temp HomeZ = @s HomeZ
 scoreboard players add @s Time 1
 tag @s add me
-execute as @e[type=minecraft:marker,tag=flashlight,tag=!me] if score @s PathStep = #temp Time if score @s HomeRotationX = #temp HomeRotationX if score @s HomeRotationY = #temp HomeRotationY if score @s HomeX = #temp HomeX if score @s HomeY = #temp HomeY if score @s HomeZ = #temp HomeZ run tag @e[type=minecraft:marker,tag=me,limit=1] add ignore
+execute as @e[nbt={data:{entity:{namespace:"luigis_mansion",id:"flashlight"}}},scores={Time=1..},tag=!me] if score @s PathStep = #temp Time if score @s HomeRotationX = #temp HomeRotationX if score @s HomeRotationY = #temp HomeRotationY if score @s HomeX = #temp HomeX if score @s HomeY = #temp HomeY if score @s HomeZ = #temp HomeZ run tag @e[tag=me,limit=1] add ignore
 tag @s remove me
 execute if entity @s[scores={Time=1},tag=!ignore,tag=!reflected] run function luigis_mansion:entities/flashlight/set_light
 execute if entity @s[scores={Time=1},tag=!ignore,tag=reflected] run function luigis_mansion:entities/flashlight/set_light_reflected

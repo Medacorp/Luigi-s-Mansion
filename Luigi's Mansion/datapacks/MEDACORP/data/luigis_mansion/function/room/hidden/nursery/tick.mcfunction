@@ -1,6 +1,6 @@
 execute unless score #nursery Ticking matches 1 run function #luigis_mansion:room/hidden/nursery/load
-execute as @a[x=737,y=19,z=-58,dx=14,dy=7,dz=20] unless entity @s[scores={Room=10}] run scoreboard players operation @s LastRoom = @s Room
-scoreboard players set @a[x=737,y=19,z=-58,dx=14,dy=7,dz=20] Room 10
+execute as @e[tag=player,x=737,y=19,z=-58,dx=14,dy=7,dz=20] unless entity @s[scores={Room=10}] run scoreboard players operation @s LastRoom = @s Room
+scoreboard players set @e[tag=player,x=737,y=19,z=-58,dx=14,dy=7,dz=20] Room 10
 #todelete - old furniture
 scoreboard players set #temp Room 10
 #/todelete
@@ -15,4 +15,4 @@ scoreboard players reset #temp Wave
 function #luigis_mansion:room/hidden/nursery/interactions/room
 #/todelete
 
-execute if entity @a[tag=!pause_dialog,scores={Room=10},tag=!spectator,limit=1] run function luigis_mansion:room/hidden/nursery/ghosts
+execute if entity @e[tag=luigi,tag=!door_animation,scores={Room=10},limit=1] run function luigis_mansion:room/hidden/nursery/ghosts

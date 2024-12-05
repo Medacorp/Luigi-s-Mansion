@@ -1,15 +1,13 @@
 Mansions:
 
-The empty mansion is used when a mansion has been cleared, or previous save data got loaded, but the currently selected mansion had no save data before.
+No mansion ID is used when a mansion has been cleared, or previous save data got loaded, but the currently selected mansion had no save data before.
 
 ```
-Mansion Option           | ID                      | Data Index | Exterior
-                         | luigis_mansion:empty    | -1         | -1
-The Mansion              | luigis_mansion:normal   | 0          | 0
-The (GCN) Hidden Mansion | luigis_mansion:hidden   | 0          | 0
-The (3DS) Hidden Mansion | 3ds_remake:hidden       | 1          | 0
-The Original Mansion     | e3_demo:original        | 2          | 1
-The Trill Tower          | trill_tower:trill_tower | 3          | 2
+Mansion Option           | ID                      | Data Index
+The Mansion              | luigis_mansion:normal   | 0
+The (GCN) Hidden Mansion | luigis_mansion:hidden   | 0
+The (3DS) Hidden Mansion | 3ds_remake:hidden       | 1
+The Original Mansion     | e3_demo:original        | 2
 ```
 
 Music groups:
@@ -21,8 +19,6 @@ Group | Namespace
 0     | luigis_mansion
 1     | 3ds_remake
 2     | e3_demo
-3-4   | music_packs
-5     | trill_tower
 ```
 
 Radar types:
@@ -188,7 +184,7 @@ luigis_mansion:windowed_2           | A second windowed design, lighter of color
 ```
 
 Furniture loot chances:
-The health threshold is halved for gooigi and if no searcher is found the first ID is used.
+The health threshold is halved for Gooigi and if no searcher is found the first ID is used.
 
 ```
 ID                                | Defined | Small Heart  | Big Heart | Poison Mushroom | Health Threshold | IDs Used

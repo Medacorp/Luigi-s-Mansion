@@ -1,0 +1,1 @@
+$function luigis_mansion:entities/player/camera/execute {execute:"at @s",teleport:"$(teleport)"}

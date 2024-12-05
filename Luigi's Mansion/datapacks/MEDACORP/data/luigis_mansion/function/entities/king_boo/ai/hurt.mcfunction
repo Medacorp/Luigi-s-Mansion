@@ -11,7 +11,7 @@ tag @s[scores={HurtTime=0}] remove hurt
 tag @s[scores={HurtTime=1}] add hurt
 tag @s[scores={HurtTime=20..}] add flee
 execute if score #temp Move matches 1.. at @s[tag=flee] rotated ~ 0 run function luigis_mansion:entities/ghost/move_forward_force
-execute if score #temp Move matches ..-1 at @s[tag=flee] facing entity @p[tag=!spectator,tag=player,tag=vacuuming] feet rotated ~-180 0 run function luigis_mansion:entities/king_boo/move/pulled
+execute if score #temp Move matches ..-1 at @s[tag=flee] facing entity @e[tag=luigi,tag=vacuuming_me,sort=nearest,limit=1] feet rotated ~-180 0 run function luigis_mansion:entities/king_boo/move/pulled
 execute if entity @s[scores={Sound=0},tag=flee] run playsound luigis_mansion:entity.king_boo.flee hostile @a[tag=same_room] ~ ~ ~ 1
 scoreboard players set @s[scores={Sound=0},tag=flee] Sound 40
 data remove entity @s[scores={HurtTime=0}] data.animation

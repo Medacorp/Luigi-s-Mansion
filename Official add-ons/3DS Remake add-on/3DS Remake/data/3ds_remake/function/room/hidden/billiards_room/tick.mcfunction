@@ -1,6 +1,6 @@
 execute unless score #billiards_room Ticking matches 1 run function #3ds_remake:room/hidden/billiards_room/load
-execute as @a[x=673,y=10,z=64,dx=15,dy=7,dz=27] unless entity @s[scores={Room=47}] run scoreboard players operation @s LastRoom = @s Room
-scoreboard players set @a[x=673,y=10,z=64,dx=15,dy=7,dz=27] Room 47
+execute as @e[tag=player,x=673,y=10,z=64,dx=15,dy=7,dz=27] unless entity @s[scores={Room=47}] run scoreboard players operation @s LastRoom = @s Room
+scoreboard players set @e[tag=player,x=673,y=10,z=64,dx=15,dy=7,dz=27] Room 47
 #todelete - old furniture
 scoreboard players set #temp Room 47
 #/todelete
@@ -13,4 +13,4 @@ execute as @a[scores={Room=47}] run function 3ds_remake:room/hidden/billiards_ro
 function #3ds_remake:room/hidden/billiards_room/interactions/room
 #/todelete
 
-execute if entity @a[tag=!pause_dialog,scores={Room=47},tag=!spectator,limit=1] run function 3ds_remake:room/hidden/billiards_room/ghosts
+execute if entity @e[tag=luigi,tag=!door_animation,scores={Room=47},limit=1] run function 3ds_remake:room/hidden/billiards_room/ghosts

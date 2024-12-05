@@ -5,7 +5,7 @@ execute store result entity @s Rotation[1] float 1 run scoreboard players get @s
 execute at @s[x_rotation=-84..90] run teleport @s ~ ~ ~ ~ ~-10
 execute at @s[x_rotation=-90..-86] run teleport @s ~ ~ ~ ~ -85
 execute at @s[x_rotation=-86..-84] run teleport @s ~ ~ ~ ~30 ~
-execute if entity @s[tag=element_in_vacuum] positioned as @e[tag=temp,limit=1] positioned ~ ~-0.5 ~ facing entity @a[tag=vacuuming_me,sort=nearest,limit=1] feet positioned as @s run teleport @s ~ ~ ~ ~ ~
+execute if entity @s[tag=element_in_vacuum] positioned as @e[tag=temp,limit=1] positioned ~ ~-0.5 ~ facing entity @e[tag=vacuuming_me,sort=nearest,limit=1] feet positioned as @s run teleport @s ~ ~ ~ ~ ~
 execute store result score @s HomeRotationY run data get entity @s Rotation[0]
 execute store result score @s HomeRotationX run data get entity @s Rotation[1]
 execute rotated as @s as @e[tag=temp,limit=1] positioned as @s run teleport @s ~ ~ ~ ~ ~

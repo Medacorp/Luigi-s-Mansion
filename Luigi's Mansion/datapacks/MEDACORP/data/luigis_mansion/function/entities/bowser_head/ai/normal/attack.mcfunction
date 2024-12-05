@@ -1,7 +1,7 @@
-execute at @e[nbt={data:{entity:{namespace:"luigis_mansion",id:"king_boo"}}},tag=same_room,limit=1] at @e[tag=same_room,tag=!spectator,tag=player,sort=nearest,scores={AnimationProgress=0},limit=1] run function luigis_mansion:entities/ghost/set_target
+execute at @e[nbt={data:{entity:{namespace:"luigis_mansion",id:"king_boo"}}},tag=same_room,limit=1] at @e[tag=same_room,tag=luigi,sort=nearest,scores={AnimationProgress=0},limit=1] run function luigis_mansion:entities/ghost/set_target
 scoreboard players set #temp Move 50
-execute at @s facing entity @a[tag=target,limit=1] feet run teleport @s ~ ~ ~ ~ ~
-execute at @s unless entity @a[tag=target,limit=1,distance=..8] rotated ~ 0 run function luigis_mansion:entities/ghost/move_forward_force
+execute at @s facing entity @e[tag=luigi,tag=target,limit=1] feet run teleport @s ~ ~ ~ ~ ~
+execute at @s unless entity @e[tag=luigi,tag=target,limit=1,distance=..8] rotated ~ 0 run function luigis_mansion:entities/ghost/move_forward_force
 scoreboard players add @s[scores={ActionTime=1..}] ActionTime 1
 scoreboard players add @s[scores={ActionTime=0}] ActionTime 1
 #Possible attack cancel, I'm not sure

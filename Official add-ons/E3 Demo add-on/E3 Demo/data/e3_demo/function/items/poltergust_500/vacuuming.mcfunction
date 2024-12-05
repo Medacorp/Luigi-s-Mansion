@@ -13,11 +13,11 @@ function e3_demo:items/poltergust_500/attacking_ghost with storage luigis_mansio
 execute if score #temp GhostCount > @s GhostCount run scoreboard players operation @s GhostCount = #temp GhostCount
 execute if score #temp GhostCount matches 1.. run function e3_demo:items/poltergust_500/get_old_position
 execute if score #temp GhostCount matches 1.. if entity @s[scores={TeleportDelayTimer=0}] run function e3_demo:items/poltergust_500/face_ghost
-execute if score #temp GhostCount matches 1.. if entity @s[tag=pulled_by_ghost] at @e[tag=ghost,tag=being_vacuumed,scores={ErrorTime=5}] run function e3_demo:items/poltergust_500/vacuuming/made_error
-execute if score #temp GhostCount matches 1.. as @e[tag=ghost,tag=being_vacuumed] positioned ~ ~0.5 ~ facing entity @s feet run function e3_demo:items/poltergust_500/vacuuming/ghost
+execute if score #temp GhostCount matches 1.. at @e[tag=ghost,tag=being_vacuumed,scores={ErrorTime=5}] run function e3_demo:items/poltergust_500/vacuuming/made_error
+execute if score #temp GhostCount matches 1.. as @e[tag=ghost,tag=being_vacuumed] run function e3_demo:items/poltergust_500/vacuuming/ghost
 execute if score #temp GhostCount matches 1.. run scoreboard players add @s[tag=!is_pulling] ErrorTime 1
 execute if score #temp GhostCount matches 1.. run scoreboard players set @s[tag=is_pulling] ErrorTime 0
-execute if score #temp GhostCount matches 1.. if entity @s[tag=pulled_by_ghost] if entity @e[tag=ghost,tag=being_vacuumed,scores={ErrorTime=5..}] run function e3_demo:items/poltergust_500/vacuuming/get_dragged
+execute if score #temp GhostCount matches 1.. if entity @s[tag=pulled_by_ghost] run function e3_demo:items/poltergust_500/vacuuming/get_dragged
 execute if score #temp GhostCount matches 1.. if entity @s[scores={VacuumErrors=10..}] run function e3_demo:items/poltergust_500/vacuuming/ghosts_break_free
 execute unless score #temp GhostCount matches 1.. run data modify storage luigis_mansion:data my_memory.poltergust_latch_on_order set value []
 execute unless score #temp GhostCount matches 1.. run scoreboard players set @s VacuumErrors 0
@@ -39,16 +39,15 @@ tag @e[tag=being_vacuumed] remove being_vacuumed
 tag @e[tag=hit_by_poltergust] remove hit_by_poltergust
 tag @s add vacuuming
 tag @s remove expelling_water
-execute if entity @s[scores={DamagePitch=1,DamagePitchTimer=6}] run playsound e3_demo:item.poltergust_500.damage hostile @a ~ ~ ~ 1 1
-execute if entity @s[scores={DamagePitch=2,DamagePitchTimer=6}] run playsound e3_demo:item.poltergust_500.damage hostile @a ~ ~ ~ 1 1.2
-execute if entity @s[scores={DamagePitch=3,DamagePitchTimer=6}] run playsound e3_demo:item.poltergust_500.damage hostile @a ~ ~ ~ 1 1.4
-execute if entity @s[scores={DamagePitch=4,DamagePitchTimer=6}] run playsound e3_demo:item.poltergust_500.damage hostile @a ~ ~ ~ 1 1.6
-execute if entity @s[scores={DamagePitch=5,DamagePitchTimer=6}] run playsound e3_demo:item.poltergust_500.damage hostile @a ~ ~ ~ 1 1.8
-execute if entity @s[scores={DamagePitch=6..,DamagePitchTimer=6}] run playsound e3_demo:item.poltergust_500.damage hostile @a ~ ~ ~ 1 2
+execute if entity @s[scores={DamagePitch=1,DamagePitchTimer=6}] run playsound e3_demo:item.poltergust_500.damage hostile @a[tag=same_room] ~ ~ ~ 1 1
+execute if entity @s[scores={DamagePitch=2,DamagePitchTimer=6}] run playsound e3_demo:item.poltergust_500.damage hostile @a[tag=same_room] ~ ~ ~ 1 1.2
+execute if entity @s[scores={DamagePitch=3,DamagePitchTimer=6}] run playsound e3_demo:item.poltergust_500.damage hostile @a[tag=same_room] ~ ~ ~ 1 1.4
+execute if entity @s[scores={DamagePitch=4,DamagePitchTimer=6}] run playsound e3_demo:item.poltergust_500.damage hostile @a[tag=same_room] ~ ~ ~ 1 1.6
+execute if entity @s[scores={DamagePitch=5,DamagePitchTimer=6}] run playsound e3_demo:item.poltergust_500.damage hostile @a[tag=same_room] ~ ~ ~ 1 1.8
+execute if entity @s[scores={DamagePitch=6..,DamagePitchTimer=6}] run playsound e3_demo:item.poltergust_500.damage hostile @a[tag=same_room] ~ ~ ~ 1 2
 scoreboard players set @s[scores={DamagePitchTimer=0}] DamagePitch 0
 scoreboard players remove @s[scores={DamagePitchTimer=1..}] DamagePitchTimer 1
 tag @s remove me
-tag @e[tag=already_hurt] remove already_hurt
 kill @e[type=minecraft:marker,tag=interact,limit=1]
 kill @e[type=minecraft:marker,tag=position,limit=1]
 data modify storage luigis_mansion:data memory append from storage luigis_mansion:data my_memory

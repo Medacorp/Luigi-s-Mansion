@@ -13,7 +13,7 @@ execute unless entity @s[scores={Dialog=1..}] run scoreboard players add @s Dial
 execute unless data entity @s data.path run function luigis_mansion:entities/ghost/set_specific_path {index:0}
 scoreboard players set @s TargetTask 0
 tag @s[scores={Dialog=1..2}] add visible
-execute if entity @s[scores={Dialog=1}] at @e[tag=same_room,tag=!spectator,tag=player] positioned ^ ^ ^8 run tag @s[distance=..8] remove visible
+tag @s[scores={Dialog=1},tag=portrait_ghost_hide] remove visible
 execute if entity @s[scores={Dialog=2}] if entity @e[nbt={ArmorItems:[{components:{"minecraft:custom_data":{entity:{namespace:"luigis_mansion",id:"wool"}}}}]},tag=can_spit,limit=1] run scoreboard players set @s TargetTask 5
 execute if entity @s[scores={Dialog=3}] run playsound luigis_mansion:entity.nana.scream hostile @a[tag=same_room] ~ ~ ~ 1
 execute if entity @s[scores={Dialog=12}] if entity @e[nbt={ArmorItems:[{components:{"minecraft:custom_data":{entity:{namespace:"luigis_mansion",id:"wool"}}}}]},tag=can_spit,limit=1] run scoreboard players set @s TargetTask 5
@@ -42,4 +42,4 @@ data modify entity @s[scores={Dialog=13..21}] data.animation set value {namespac
 data modify entity @s[scores={Dialog=23..24}] data.animation set value {namespace:"luigis_mansion",id:"complain"}
 data modify entity @s[scores={Dialog=25..}] data.animation set value {namespace:"luigis_mansion",id:"laugh"}
 
-execute if entity @e[tag=same_room,tag=!spectator,tag=player,distance=..1.6,limit=1] run function luigis_mansion:entities/nana/collide
+execute if entity @e[tag=same_room,tag=luigi,distance=..1.6,limit=1] run function luigis_mansion:entities/nana/collide

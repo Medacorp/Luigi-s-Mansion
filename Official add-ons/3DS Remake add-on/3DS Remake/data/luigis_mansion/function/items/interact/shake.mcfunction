@@ -1,11 +1,3 @@
-execute at @s run summon minecraft:marker ~ ~ ~ {Tags:["home","remove_from_existence"]}
-execute store result entity @e[tag=home,limit=1] Pos[0] double 0.01 run scoreboard players get @s PositionX
-execute store result entity @e[tag=home,limit=1] Pos[1] double 0.01 run scoreboard players get @s PositionY
-execute store result entity @e[tag=home,limit=1] Pos[2] double 0.01 run scoreboard players get @s PositionZ
-execute store result entity @e[tag=home,limit=1] Rotation[0] float 1 run scoreboard players get @s RotationY
-execute store result entity @e[tag=home,limit=1] Rotation[1] float 1 run scoreboard players get @s RotationX
-execute at @e[tag=home,limit=1] run tp @s ~ ~ ~ ~ ~
-kill @e[tag=home,limit=1]
 execute at @s[tag=1] unless block ~ ~-0.1 ~ #luigis_mansion:interact_ignore rotated ~ 0 run summon minecraft:marker ^ ^0.1 ^1 {Tags:["interact","manual","feet"]}
 execute at @s[tag=1] if block ~ ~-0.1 ~ #luigis_mansion:interact_ignore rotated ~ 0 run summon minecraft:marker ^ ^0.1 ^1 {Tags:["interact","manual"]}
 execute at @s[tag=2] unless block ~ ~-0.1 ~ #luigis_mansion:interact_ignore rotated ~ 0 run summon minecraft:marker ^ ^1.1 ^1 {Tags:["interact","manual"]}
@@ -15,11 +7,11 @@ execute at @s[tag=3] if block ~ ~-0.1 ~ #luigis_mansion:interact_ignore rotated 
 tag @s add searcher
 scoreboard players add @s InteractionTime 1
 tag @s[scores={InteractionTime=2}] add reset_rotation
-function luigis_mansion:entities/player/memory/get with entity @s
+function luigis_mansion:entities/player/memory/get with entity @a[tag=this_player,limit=1]
 execute if entity @s[scores={InteractionTime=2}] at @e[tag=interact,tag=manual,limit=1] as @e[tag=furniture,tag=same_room,tag=affected_by_interact] run function luigis_mansion:items/interact/target_furniture/get_animation
-execute unless data storage luigis_mansion:data my_memory.animation if predicate luigis_mansion:1_3 if entity @s[scores={InteractionTime=2}] run function luigis_mansion:entities/player/animation/set/search/knock
-execute unless data storage luigis_mansion:data my_memory.animation if predicate luigis_mansion:50_50 if entity @s[scores={InteractionTime=2}] run function luigis_mansion:entities/player/animation/set/search/hump
-execute unless data storage luigis_mansion:data my_memory.animation if entity @s[scores={InteractionTime=2}] run function luigis_mansion:entities/player/animation/set/search/bash
+execute unless data storage luigis_mansion:data my_memory.animation if predicate luigis_mansion:1_3 if entity @s[scores={InteractionTime=2}] run function luigis_mansion:entities/luigi/animation/set/search/knock
+execute unless data storage luigis_mansion:data my_memory.animation if predicate luigis_mansion:50_50 if entity @s[scores={InteractionTime=2}] run function luigis_mansion:entities/luigi/animation/set/search/hump
+execute unless data storage luigis_mansion:data my_memory.animation if entity @s[scores={InteractionTime=2}] run function luigis_mansion:entities/luigi/animation/set/search/bash
 execute if data storage luigis_mansion:data my_memory.animation{namespace:"luigis_mansion",id:"search/hump"} run tag @e[tag=interact,tag=manual,limit=1] add long_shake
 #todelete - old furniture
 scoreboard players operation #temp Room = @s Room
@@ -49,7 +41,7 @@ tag @s[scores={InteractionTime=17}] remove 1
 tag @s[scores={InteractionTime=17}] remove 2
 tag @s[scores={InteractionTime=17}] remove 3
 tag @s[scores={InteractionTime=17}] remove wall_bump
-execute if entity @s[scores={InteractionTime=17}] run function luigis_mansion:entities/player/animation/set/none
+execute if entity @s[scores={InteractionTime=17}] run function luigis_mansion:entities/luigi/animation/set/none
 scoreboard players reset @s[scores={InteractionTime=17}] InteractionTime
 kill @e[tag=interact,tag=manual,limit=1]
 tag @s remove searcher

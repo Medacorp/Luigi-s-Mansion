@@ -12,13 +12,13 @@ execute if entity @s[scores={RotationDifference=..-60000}] run scoreboard player
 execute if entity @s[scores={RotationDifference=60000..}] run scoreboard players remove #temp PlayerRotation 60000
 execute if score #temp PlayerRotation matches 360000.. run scoreboard players remove #temp PlayerRotation 360000
 execute if score #temp PlayerRotation matches ..0 run scoreboard players add #temp PlayerRotation 360000
-execute if entity @s[scores={RotationDifference=-60000..60000}] if entity @s[tag=!stop_model] store result entity @s Rotation[0] float 0.001 run scoreboard players get @s HomeRotation
-execute unless entity @s[scores={RotationDifference=-60000..60000}] if entity @s[tag=!stop_model] store result entity @s Rotation[0] float 0.001 run scoreboard players get #temp PlayerRotation
+execute if entity @s[scores={RotationDifference=-60000..60000}] if entity @s store result entity @s Rotation[0] float 0.001 run scoreboard players get @s HomeRotation
+execute unless entity @s[scores={RotationDifference=-60000..60000}] if entity @s store result entity @s Rotation[0] float 0.001 run scoreboard players get #temp PlayerRotation
 scoreboard players reset #temp PlayerRotation
 
 # Look up/down
-execute if entity @s[tag=!stop_model,tag=!flipped_gravity] store result score #temp Time run data get entity @e[tag=gooigi,limit=1] Rotation[1]
-execute if entity @s[tag=!stop_model,tag=flipped_gravity] store result score #temp Time run data get entity @e[tag=gooigi,limit=1] Rotation[1] -1
-execute if entity @s[tag=!stop_model,tag=low_health] run scoreboard players add #temp Time 20
-execute if entity @s[tag=!stop_model] store result entity @s Pose.Head[0] float 1 run scoreboard players get #temp Time
+execute if entity @s[tag=!flipped_gravity] store result score #temp Time run data get entity @e[tag=gooigi,limit=1] Rotation[1]
+execute if entity @s[tag=flipped_gravity] store result score #temp Time run data get entity @e[tag=gooigi,limit=1] Rotation[1] -1
+execute if entity @s[tag=low_health] run scoreboard players add #temp Time 20
+execute if entity @s store result entity @s Pose.Head[0] float 1 run scoreboard players get #temp Time
 scoreboard players reset #temp Time

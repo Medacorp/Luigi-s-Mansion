@@ -9,4 +9,3 @@ execute if entity @s[tag=using_selection_menu] run data remove storage luigis_ma
 scoreboard players reset @s AvailableSlot
 tag @s remove selection_menu_free_to_move
 tag @s remove using_selection_menu
-tag @s remove close_selection_menu

@@ -1,5 +1,5 @@
 scoreboard players set @s HomeY 2700
-execute if entity @a[tag=same_room,tag=expelling_ice,distance=..10,limit=1] run tag @s[scores={Wave=81..599,Health=..7},tag=!attack,tag=!laugh] add flee
+execute if entity @e[tag=same_room,tag=expelling_ice,distance=..10,limit=1] run tag @s[scores={Wave=81..599,Health=..7},tag=!attack,tag=!laugh] add flee
 execute if entity @s[scores={Sound=0,Dialog=0},tag=!in_ice,tag=flee] run playsound luigis_mansion:entity.boo.flee hostile @a[tag=same_room] ~ ~ ~ 1
 scoreboard players set @s[scores={Sound=0,Dialog=0},tag=!in_ice,tag=flee] Sound 40
 
@@ -10,7 +10,7 @@ execute if entity @s[tag=!flee,tag=!attack,tag=!laugh,scores={Wave=80,Health=15}
 execute if entity @s[tag=!flee,tag=!attack,tag=!laugh,scores={Wave=80,Health=8..14}] if predicate luigis_mansion:boolossus/laugh_chance run tag @e[nbt={data:{entity:{namespace:"luigis_mansion",id:"boolossus"}}},scores={Dialog=0}] add laugh
 execute if entity @s[tag=laugh] run function luigis_mansion:entities/boolossus/laugh
 
-execute if entity @s[tag=!flee,tag=!attack,tag=!laugh,scores={Wave=81..580,Dialog=0}] if entity @e[tag=same_room,tag=!spectator,tag=player,distance=..5,limit=1] if predicate luigis_mansion:boolossus/attack_chance run tag @s add attack
+execute if entity @s[tag=!flee,tag=!attack,tag=!laugh,scores={Wave=81..580,Dialog=0}] if entity @e[tag=same_room,tag=luigi,distance=..5,limit=1] if predicate luigis_mansion:boolossus/attack_chance run tag @s add attack
 execute if entity @s[tag=attack,tag=!laugh,scores={Dialog=0}] run function luigis_mansion:entities/boolossus/attack/dash
 
 execute if entity @s[tag=!flee,tag=!attack,tag=!laugh,scores={Time=600..,Dialog=0,Wave=..599}] run function luigis_mansion:entities/boolossus/rotate
@@ -45,7 +45,7 @@ tag @s remove was_fleeing
 tag @s[tag=flee] add was_fleeing
 tag @s remove flee
 
-execute at @s[scores={Dialog=0}] if entity @e[tag=same_room,tag=!spectator,tag=player,distance=..0.7,limit=1] run function luigis_mansion:entities/boolossus/collide_split
+execute at @s[scores={Dialog=0}] if entity @e[tag=same_room,tag=luigi,distance=..0.7,limit=1] run function luigis_mansion:entities/boolossus/collide_split
 
 scoreboard players add @s[scores={Wave=..80}] Wave 1
 tag @s add me

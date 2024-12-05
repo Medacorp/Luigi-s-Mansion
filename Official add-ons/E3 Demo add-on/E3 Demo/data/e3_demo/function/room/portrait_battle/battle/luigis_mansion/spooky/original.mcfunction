@@ -1,1 +1,1 @@
-execute in e3_demo:original run teleport @a 683 102 53 90 0
+function luigis_mansion:entities/luigi/move/execute {execute:"in e3_demo:original",teleport:"683 102 53 90 0"}

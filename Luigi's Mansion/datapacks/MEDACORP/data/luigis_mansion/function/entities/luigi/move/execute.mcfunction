@@ -1,0 +1,2 @@
+$execute if entity @s[tag=luigi] run function luigis_mansion:entities/luigi/move/model {execute:"$(execute)",teleport:"$(teleport)"}
+$execute if entity @s[tag=!luigi] run function luigis_mansion:entities/luigi/move/player {execute:"$(execute)",teleport:"$(teleport)"}

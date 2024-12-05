@@ -16,5 +16,5 @@ execute if entity @s[tag=fire,tag=in_vacuum] run playsound luigis_mansion:entity
 execute if entity @s[tag=water,tag=in_vacuum] run playsound luigis_mansion:entity.water_elemental_ghost.hurt hostile @a[tag=same_room] ~ ~ ~ 1
 execute if entity @s[tag=ice,tag=in_vacuum] run playsound luigis_mansion:entity.ice_elemental_ghost.hurt hostile @a[tag=same_room] ~ ~ ~ 1
 
-execute if entity @s[tag=!dead,tag=!in_vacuum,scores={SpawnTime=20..}] positioned ~ ~0.8 ~ if entity @e[tag=same_room,tag=!spectator,tag=player,distance=..0.7,limit=1] run function luigis_mansion:entities/elemental_ghost/attack
-execute if entity @s[tag=!dead,tag=!in_vacuum,scores={SpawnTime=20..}] positioned ~ ~-0.2 ~ if entity @e[tag=same_room,tag=!spectator,tag=player,distance=..0.7,limit=1] run function luigis_mansion:entities/elemental_ghost/attack
+execute if entity @s[tag=!dead,tag=!in_vacuum,scores={SpawnTime=20..}] positioned ~ ~0.8 ~ if entity @e[tag=same_room,tag=luigi,distance=..0.7,limit=1] run function luigis_mansion:entities/elemental_ghost/attack
+execute if entity @s[tag=!dead,tag=!in_vacuum,scores={SpawnTime=20..}] positioned ~ ~-0.2 ~ if entity @e[tag=same_room,tag=luigi,distance=..0.7,limit=1] run function luigis_mansion:entities/elemental_ghost/attack

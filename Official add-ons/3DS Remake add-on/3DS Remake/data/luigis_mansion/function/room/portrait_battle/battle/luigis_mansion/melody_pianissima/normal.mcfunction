@@ -1,2 +1,2 @@
-execute in luigis_mansion:normal run teleport @a 661 11 -6 90 0
+execute as @a run function luigis_mansion:entities/luigi/move/execute {execute:"in luigis_mansion:normal",teleport:"661 11 -6 90 0"}
 data modify storage luigis_mansion:data current_state.current_data.money_spawned set value ["conservatory_large_cabinet_mounted_potted_fern","conservatory_inversed_half_orb_lamp"]

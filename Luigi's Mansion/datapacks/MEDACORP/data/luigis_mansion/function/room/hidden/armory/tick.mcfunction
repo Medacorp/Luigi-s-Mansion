@@ -1,6 +1,6 @@
 execute unless score #armory Ticking matches 1 run function #luigis_mansion:room/hidden/armory/load
-execute as @a[x=744,y=28,z=-64,dx=22,dy=7,dz=25] unless entity @s[scores={Room=64}] run scoreboard players operation @s LastRoom = @s Room
-scoreboard players set @a[x=744,y=28,z=-64,dx=22,dy=7,dz=25] Room 64
+execute as @e[tag=player,x=744,y=28,z=-64,dx=22,dy=7,dz=25] unless entity @s[scores={Room=64}] run scoreboard players operation @s LastRoom = @s Room
+scoreboard players set @e[tag=player,x=744,y=28,z=-64,dx=22,dy=7,dz=25] Room 64
 #todelete - old furniture
 scoreboard players set #temp Room 64
 #/todelete
@@ -13,4 +13,4 @@ execute as @a[scores={Room=64}] run function luigis_mansion:room/hidden/armory/t
 function #luigis_mansion:room/hidden/armory/interactions/room
 #/todelete
 
-execute if entity @a[tag=!pause_dialog,scores={Room=64},tag=!spectator,limit=1] run function luigis_mansion:room/hidden/armory/ghosts
+execute if entity @e[tag=luigi,tag=!door_animation,scores={Room=64},limit=1] run function luigis_mansion:room/hidden/armory/ghosts

@@ -1,0 +1,3 @@
+execute at @e[tag=extra_gallery_door,limit=1] run function luigis_mansion:entities/luigi/move/execute {execute:"positioned ^ ^ ^0.5 align xz",teleport:"~0.5 ~ ~0.5 ~-180 ~"}
+execute at @e[tag=extra_gallery_door,limit=1] if entity @e[distance=..0.1,tag=extra_gallery_door,limit=1,tag=!pull] at @s run function luigis_mansion:entities/luigi/animation/set/door/open/push
+execute at @e[tag=extra_gallery_door,limit=1] if entity @e[distance=..0.1,tag=extra_gallery_door,limit=1,tag=pull] at @s run function luigis_mansion:entities/luigi/animation/set/door/open/pull

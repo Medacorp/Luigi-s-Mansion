@@ -1,0 +1,2 @@
+execute as @e[tag=same_room,tag=portrait_ghost,scores={StunTime=0,VulnerableTime=1..}] positioned ~ ~1 ~ positioned ^ ^ ^3 if block ~ ~ ~ #luigis_mansion:flashlight_path run function luigis_mansion:items/flashlight/effects/hide_portrait_ghost/step
+scoreboard players reset #temp PathStep

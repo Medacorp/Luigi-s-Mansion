@@ -1,12 +1,12 @@
 
-teleport @s[scores={PositionIntX=722}] ~-24 ~ ~
-teleport @s[scores={PositionIntX=741}] ~-1 ~ ~ 
-teleport @s[scores={PositionIntZ=11}] ~ ~ ~-1
-teleport @s[scores={PositionIntZ=-5}] ~-9 ~ ~-11
+execute if entity @s[scores={PositionIntX=722}] run function luigis_mansion:entities/luigi/move/teleport {teleport:"~-24 ~ ~"}
+execute if entity @s[scores={PositionIntX=741}] run function luigis_mansion:entities/luigi/move/teleport {teleport:"~-1 ~ ~ "}
+execute if entity @s[scores={PositionIntZ=11}] run function luigis_mansion:entities/luigi/move/teleport {teleport:"~ ~ ~-1"}
+execute if entity @s[scores={PositionIntZ=-5}] run function luigis_mansion:entities/luigi/move/teleport {teleport:"~-9 ~ ~-11"}
 
-teleport @s[scores={PositionIntY=1}] ~ ~1 ~
-teleport @s[scores={PositionIntY=9,PositionIntX=723..727}] ~-9 ~2 ~-22
-teleport @s[scores={PositionIntY=9,PositionIntX=728..729}] ~ ~-1 ~ 
-teleport @s[scores={PositionIntY=9,PositionIntX=730..740,PositionIntZ=8..10}] ~14 ~2 ~-8
-teleport @s[scores={PositionIntY=9,PositionIntX=730..740,PositionIntZ=6..7}] ~ ~-1 ~
-teleport @s[scores={PositionIntY=9,PositionIntX=730..740,PositionIntZ=-4..5}] ~6 ~2 ~-26
+execute if entity @s[scores={PositionIntY=1}] run function luigis_mansion:entities/luigi/move/teleport {teleport:"~ ~1 ~"}
+execute if entity @s[scores={PositionIntY=9,PositionIntX=723..727}] run function luigis_mansion:entities/luigi/move/teleport {teleport:"~-9 ~2 ~-22"}
+execute if entity @s[scores={PositionIntY=9,PositionIntX=728..729}] run function luigis_mansion:entities/luigi/move/teleport {teleport:"~ ~-1 ~ "}
+execute if entity @s[scores={PositionIntY=9,PositionIntX=730..740,PositionIntZ=8..10}] run function luigis_mansion:entities/luigi/move/teleport {teleport:"~14 ~2 ~-8"}
+execute if entity @s[scores={PositionIntY=9,PositionIntX=730..740,PositionIntZ=6..7}] run function luigis_mansion:entities/luigi/move/teleport {teleport:"~ ~-1 ~"}
+execute if entity @s[scores={PositionIntY=9,PositionIntX=730..740,PositionIntZ=-4..5}] run function luigis_mansion:entities/luigi/move/teleport {teleport:"~6 ~2 ~-26"}

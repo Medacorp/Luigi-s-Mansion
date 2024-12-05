@@ -1,9 +1,9 @@
-execute unless entity @a[tag=same_room,tag=portrait_battle] run scoreboard players set #freeze_timer Selected 1
+execute unless data storage luigis_mansion:data current_state.current_data.portrait_battle run scoreboard players set #freeze_timer Selected 1
 scoreboard players add @s Dialog 1
-execute if entity @s[scores={Dialog=1..40}] run scoreboard players set @a[tag=same_room,tag=!portrait_battle,scores={AnimationProgress=30..}] AnimationProgress 29
-execute if entity @s[scores={Dialog=60..199}] as @a[tag=same_room,tag=!spectator,tag=!looking_at_map,tag=!portrait_battle] run function luigis_mansion:entities/player/animation/set/high_health_idle_no_sound
-execute if entity @s[scores={Dialog=200..239}] as @a[tag=same_room,tag=!spectator,tag=!looking_at_map,tag=!portrait_battle] run function luigis_mansion:entities/player/animation/set/idle
-execute if entity @s[scores={Dialog=200}] as @a[tag=same_room,tag=!spectator,tag=!looking_at_map,tag=!portrait_battle] run function luigis_mansion:entities/player/animation/set/idle
+execute if entity @s[scores={Dialog=1..40}] unless data storage luigis_mansion:data current_state.current_data.portrait_battle run scoreboard players set @e[tag=luigi,tag=same_room,scores={AnimationProgress=30..}] AnimationProgress 29
+execute if entity @s[scores={Dialog=60..199}] unless data storage luigis_mansion:data current_state.current_data.portrait_battle as @e[tag=luigi,tag=same_room] run function luigis_mansion:entities/luigi/animation/set/high_health_idle_no_sound
+execute if entity @s[scores={Dialog=200..239}] unless data storage luigis_mansion:data current_state.current_data.portrait_battle as @e[tag=luigi,tag=same_room] run function luigis_mansion:entities/luigi/animation/set/idle
+execute if entity @s[scores={Dialog=200}] unless data storage luigis_mansion:data current_state.current_data.portrait_battle as @e[tag=luigi,tag=same_room] run function luigis_mansion:entities/luigi/animation/set/idle
 execute if entity @s[scores={Dialog=200}] run teleport @s ~ ~ ~ -90 0
 execute if entity @s[scores={Dialog=200}] run summon minecraft:lightning_bolt ~ ~ ~
 tag @s[scores={Dialog=200}] add visible
@@ -47,12 +47,12 @@ execute if entity @s[scores={Dialog=237}] positioned ~12.95 ~-1.43 ~ run functio
 execute if entity @s[scores={Dialog=238}] positioned ~13.3 ~-1.43 ~ run function luigis_mansion:entities/bogmire/create_shadow/intro
 execute if entity @s[scores={Dialog=239}] positioned ~13.65 ~-1.43 ~ run function luigis_mansion:entities/bogmire/create_shadow/intro
 execute if entity @s[scores={Dialog=240}] positioned ~14 ~ ~ run function luigis_mansion:spawn_entities/ghost/black_bogmire/big
-execute if entity @s[scores={Dialog=240}] as @a[tag=same_room,tag=!spectator,tag=!looking_at_map,tag=!portrait_battle] run function luigis_mansion:entities/player/animation/set/none
-execute if entity @s[scores={Dialog=240}] as @a[tag=same_room,tag=!portrait_battle] run function luigis_mansion:entities/player/animation/set/scare/normal
-execute if entity @s[scores={Dialog=260..459}] as @a[tag=same_room,tag=!spectator,tag=!looking_at_map,tag=!portrait_battle] run function luigis_mansion:entities/player/animation/set/idle
+execute if entity @s[scores={Dialog=240}] unless data storage luigis_mansion:data current_state.current_data.portrait_battle as @e[tag=luigi,tag=same_room] run function luigis_mansion:entities/luigi/animation/set/none
+execute if entity @s[scores={Dialog=240}] unless data storage luigis_mansion:data current_state.current_data.portrait_battle as @e[tag=luigi,tag=same_room] run function luigis_mansion:entities/luigi/animation/set/scare/normal
+execute if entity @s[scores={Dialog=260..459}] unless data storage luigis_mansion:data current_state.current_data.portrait_battle as @e[tag=luigi,tag=same_room] run function luigis_mansion:entities/luigi/animation/set/idle
 execute if entity @s[scores={Dialog=280}] run tag @e[tag=bogmires_shadow] add dead
 execute if entity @s[scores={Dialog=241..460}] run scoreboard players set @e[nbt={data:{entity:{namespace:"luigis_mansion",id:"black_bogmire"}}},scores={ActionTime=61..},limit=1] ActionTime 60
 tag @s[scores={Dialog=320}] remove visible
-execute if entity @s[scores={Dialog=460}] as @a[tag=same_room,tag=!spectator,tag=!looking_at_map,tag=!portrait_battle] run function luigis_mansion:entities/player/animation/set/none
+execute if entity @s[scores={Dialog=460}] unless data storage luigis_mansion:data current_state.current_data.portrait_battle as @e[tag=luigi,tag=same_room] run function luigis_mansion:entities/luigi/animation/set/none
 tag @s[scores={Dialog=460}] add intro_done
 scoreboard players reset @s[scores={Dialog=460}] Dialog

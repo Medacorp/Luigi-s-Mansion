@@ -1,2 +1,2 @@
-execute if entity @s[nbt=!{Inventory:[{components:{"minecraft:custom_data":{namespace:"luigis_mansion",id:"flashlight"}}}]},tag=!using_selection_menu] run function luigis_mansion:items/flashlight/give
-execute if entity @s[tag=!looking_at_map,tag=!death_animation,tag=!revive_animation,tag=!revived_by_polterpup,nbt={Inventory:[{components:{"minecraft:custom_data":{namespace:"luigis_mansion",id:"flashlight"}}}]}] run function luigis_mansion:items/flashlight/tick
+execute if entity @s[nbt=!{data:{inventory:[{components:{"minecraft:custom_data":{namespace:"luigis_mansion",id:"flashlight"}}}]}}] run function luigis_mansion:items/flashlight/give
+execute if entity @s[tag=!death_animation,tag=!revive_animation,tag=poltergust_grabbed,tag=!revived_by_polterpup,nbt={data:{inventory:[{components:{"minecraft:custom_data":{namespace:"luigis_mansion",id:"flashlight"}}}]}}] run function luigis_mansion:items/flashlight/tick

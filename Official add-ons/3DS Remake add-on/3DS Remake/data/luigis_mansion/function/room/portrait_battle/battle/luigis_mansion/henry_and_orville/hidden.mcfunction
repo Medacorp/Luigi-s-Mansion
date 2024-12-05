@@ -1,2 +1,2 @@
-execute in luigis_mansion:hidden run teleport @a 739 20 -29 -90 0
+execute as @a run function luigis_mansion:entities/luigi/move/execute {execute:"in luigis_mansion:hidden",teleport:"739 20 -29 -90 0"}
 data modify storage luigis_mansion:data current_state.current_data.money_spawned set value ["the_twins_room_speedy_spirit"]

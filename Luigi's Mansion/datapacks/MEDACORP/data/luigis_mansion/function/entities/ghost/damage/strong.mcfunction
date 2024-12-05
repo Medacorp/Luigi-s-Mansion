@@ -8,8 +8,8 @@ scoreboard players operation #temp Health = @s Health
 execute if entity @s[scores={HurtTime=10}] run tag @s add no_sound
 scoreboard players operation #temp LastHealth /= #100 Constants
 scoreboard players operation #temp Health /= #100 Constants
-execute if entity @s[tag=!no_sound] unless score #temp LastHealth = #temp Health run scoreboard players set @a[tag=me,limit=1] DamagePitchTimer 6
-execute if entity @s[tag=!no_sound] unless score #temp LastHealth = #temp Health run scoreboard players add @a[tag=me,limit=1] DamagePitch 1
+execute if entity @s[tag=!no_sound] unless score #temp LastHealth = #temp Health run scoreboard players set @e[tag=me,limit=1] DamagePitchTimer 6
+execute if entity @s[tag=!no_sound] unless score #temp LastHealth = #temp Health run scoreboard players add @e[tag=me,limit=1] DamagePitch 1
 execute if entity @s[tag=!no_sound] unless score #temp LastHealth = #temp Health at @s run particle minecraft:damage_indicator ~ ~0.6 ~ 0.2 0.2 0.2 0 1
 scoreboard players reset #temp LastHealth
 scoreboard players reset #temp Health

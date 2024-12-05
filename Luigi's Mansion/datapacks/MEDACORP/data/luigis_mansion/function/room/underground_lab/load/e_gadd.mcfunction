@@ -1,2 +1,2 @@
-execute if data storage luigis_mansion:data {found_e_gadd:1b} positioned 788 77 17 unless entity @e[distance=..0.7,tag=e_gadd,limit=1] run data modify storage luigis_mansion:data entity set value {room:-1,scan_result:{namespace:"luigis_mansion",id:"scan/entity/e_gadd"}}
-execute if data storage luigis_mansion:data {found_e_gadd:1b} positioned 788 77 17 unless entity @e[distance=..0.7,tag=e_gadd,limit=1] rotated -135 0 run function luigis_mansion:spawn_entities/e_gadd
+data modify storage luigis_mansion:data entity set value {room:-1,scan_result:{namespace:"luigis_mansion",id:"scan/entity/e_gadd"}}
+execute positioned 788 77 17 rotated -135 0 run function luigis_mansion:spawn_entities/e_gadd

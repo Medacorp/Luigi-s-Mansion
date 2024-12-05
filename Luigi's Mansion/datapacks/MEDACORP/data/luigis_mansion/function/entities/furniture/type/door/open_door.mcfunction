@@ -1,5 +1,5 @@
 scoreboard players reset @s[tag=unlock_door] AnimationProgress
-execute if entity @s[tag=unlock_door] positioned ^ ^ ^0.5 align xz positioned ~0.5 ~ ~0.5 as @a[distance=..0.5,tag=!spectator] run function luigis_mansion:entities/player/animation/set/scare/normal
+execute if entity @s[tag=unlock_door] positioned ^ ^ ^0.5 align xz positioned ~0.5 ~ ~0.5 as @e[tag=luigi,distance=..0.5] run function luigis_mansion:entities/luigi/animation/set/scare/normal
 tag @s remove unlock_door
 tag @s remove locked_door
 scoreboard players add @s AnimationProgress 1

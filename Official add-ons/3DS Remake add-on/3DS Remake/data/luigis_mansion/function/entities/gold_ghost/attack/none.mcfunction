@@ -8,4 +8,4 @@ tag @s[scores={ActionTime=40}] remove attack
 scoreboard players set @s[scores={ActionTime=40}] ActionTime 0
 execute at @s facing entity @e[tag=target,limit=1] feet rotated ~ 0 run teleport @s ~ ~ ~ ~ 0
 scoreboard players set @s Move 5
-execute at @s positioned ^ ^ ^0.7 unless entity @a[distance=..0.7,tag=target,limit=1] at @s run function luigis_mansion:entities/ghost/move_forward
+execute at @s positioned ^ ^ ^0.7 unless entity @e[tag=luigi,distance=..0.7,tag=target,limit=1] at @s run function luigis_mansion:entities/ghost/move_forward

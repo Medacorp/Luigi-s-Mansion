@@ -1,6 +1,6 @@
 execute unless score #observatory Ticking matches 1 run function #3ds_remake:room/hidden/observatory/load
-execute as @a[x=627,y=15,z=-145,dx=24,dy=12,dz=72] unless entity @s[scores={Room=46}] run scoreboard players operation @s LastRoom = @s Room
-scoreboard players set @a[x=627,y=15,z=-145,dx=24,dy=12,dz=72] Room 46
+execute as @e[tag=player,x=627,y=15,z=-145,dx=24,dy=12,dz=72] unless entity @s[scores={Room=46}] run scoreboard players operation @s LastRoom = @s Room
+scoreboard players set @e[tag=player,x=627,y=15,z=-145,dx=24,dy=12,dz=72] Room 46
 #todelete - old furniture
 scoreboard players set #temp Room 46
 #/todelete
@@ -11,6 +11,6 @@ execute as @a[scores={Room=46}] run function 3ds_remake:room/hidden/observatory/
 function #3ds_remake:room/hidden/observatory/interactions/room
 #/todelete
 
-execute if entity @a[tag=!pause_dialog,scores={Room=46},tag=!spectator,limit=1] run function 3ds_remake:room/hidden/observatory/ghosts
+execute if entity @e[tag=luigi,tag=!door_animation,scores={Room=46},limit=1] run function 3ds_remake:room/hidden/observatory/ghosts
 
-execute as @a[x=643.5,y=20,z=-79.5,distance=..0.7,y_rotation=135..-135,limit=1] unless data storage luigis_mansion:data current_state.current_data.technical_data{observatory_destroyed:1b} unless data storage luigis_mansion:data dialogs[{room:46}] run function 3ds_remake:room/hidden/observatory/observe_moon
+execute as @e[tag=player,x=643.5,y=20,z=-79.5,distance=..0.7,y_rotation=135..-135,limit=1] unless data storage luigis_mansion:data current_state.current_data.technical_data{observatory_destroyed:1b} unless data storage luigis_mansion:data dialogs[{room:46}] run function 3ds_remake:room/hidden/observatory/observe_moon

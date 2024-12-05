@@ -31,7 +31,7 @@ furniture:{
         turn_speed:0, //Optional if value is "fan", the speed at which this fan turns in tenths of degrees (positive values only) per tick. Default = 0.
         turn_left:0b //Optional if value is "fan", whether the fan turns left rather than right. Default = 0b.
     },
-    searchable:["<method>"], //Sets what method can result in searching. If "interact" is absent here, but provided in shake_animation, interact will still try to shake it, and trigger the search animaton, but it won't actually get searched. Methods: time(will search automatically), interact, vacuum, dust, fire, water, ice. Default = none.
+    searchable:["<method>"], //Sets what method can result in searching. If "interact" is absent here, but provided in shake_animation, interact will still try to shake it, and trigger the search animaton, but it won't actually get searched. Methods: time(will search automatically), flashlight(special tag on shining, no auto-searching), interact, vacuum, dust, fire, water, ice. Default = none.
     shake_animation:["<method>"], //Sets what method can result in the furniture shaking. Methods: interact, vacuum, dust, fire, water, ice. Default = none.
     searched:1b, //When set the furniture should spawn triggering its searched animation. Default = 0b.
     no_search_animation:1b, //When set the furniture has no search animation at all (eg on a chest doesn't open it). If set alongside searched, the furniture spawns in the searched state, skipping the animation. Default = 0b.

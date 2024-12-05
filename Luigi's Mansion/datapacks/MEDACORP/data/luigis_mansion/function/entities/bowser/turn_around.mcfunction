@@ -1,4 +1,4 @@
-execute unless entity @s[scores={ActionTime=1}] facing entity @p[tag=same_room,tag=!spectator] feet rotated ~ 0 run teleport @s ~ ~ ~ ~ ~
+execute unless entity @s[scores={ActionTime=1}] facing entity @e[tag=same_room,tag=luigi,sort=nearest,limit=1] feet rotated ~ 0 run teleport @s ~ ~ ~ ~ ~
 execute unless entity @s[scores={ActionTime=1}] store result score #temp Time run data get entity @s Rotation[0]
 execute unless entity @s[scores={ActionTime=1}] run teleport @s ~ ~ ~ ~ ~
 execute unless entity @s[scores={ActionTime=1}] store result score #temp2 Time run data get entity @s Rotation[0]
@@ -8,7 +8,7 @@ execute unless entity @s[scores={ActionTime=1}] if score #temp Time matches 180.
 execute unless entity @s[scores={ActionTime=1}] if score #temp Time matches ..-1 run tag @s add turn_left
 execute unless entity @s[scores={ActionTime=1}] run data modify entity @s data.animation set value {namespace:"luigis_mansion",id:"walk"}
 scoreboard players set @s ActionTime 1
-execute unless score #temp Time matches -3..3 facing entity @p[tag=same_room,tag=!spectator] feet rotated ~ 0 run teleport @s ~ ~ ~ ~ ~
+execute unless score #temp Time matches -3..3 facing entity @e[tag=same_room,tag=luigi,sort=nearest,limit=1] feet rotated ~ 0 run teleport @s ~ ~ ~ ~ ~
 execute unless score #temp Time matches -3..3 store result score #temp Time run data get entity @s Rotation[0]
 execute unless score #temp Time matches -3..3 run teleport @s[tag=turn_left] ~ ~ ~ ~-5 ~
 execute unless score #temp Time matches -3..3 run teleport @s[tag=!turn_left] ~ ~ ~ ~5 ~

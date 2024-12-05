@@ -1,2 +1,2 @@
-execute unless entity @a[tag=portrait_battle,limit=1] run data modify storage luigis_mansion:data furniture set value {room:28,water_elemental_source:{},particles:"dripping_water"}
-execute unless entity @a[tag=portrait_battle,limit=1] positioned 681 103 40 run function luigis_mansion:spawn_furniture/elemental_source
+execute unless data storage luigis_mansion:data current_state.current_data.portrait_battle run data modify storage luigis_mansion:data furniture set value {room:28,water_elemental_source:{},particles:"dripping_water"}
+execute unless data storage luigis_mansion:data current_state.current_data.portrait_battle positioned 681 103 40 run function luigis_mansion:spawn_furniture/elemental_source

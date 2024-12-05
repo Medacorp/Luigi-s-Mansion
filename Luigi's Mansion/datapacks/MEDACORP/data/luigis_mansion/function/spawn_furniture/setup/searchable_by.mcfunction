@@ -1,4 +1,5 @@
 execute if data storage luigis_mansion:data furniture{searchable:["time"]} run tag @e[tag=this_entity,limit=1] add searchable_by_time
+execute if data storage luigis_mansion:data furniture{searchable:["flashlight"]} run tag @e[tag=this_entity,limit=1] add affected_by_flashlight
 execute if data storage luigis_mansion:data furniture{searchable:["interact"]} run tag @e[tag=this_entity,limit=1] add searchable_by_interact
 execute if data storage luigis_mansion:data furniture{searchable:["interact"]} run tag @e[tag=this_entity,limit=1] add affected_by_interact
 execute if data storage luigis_mansion:data furniture{shake_animation:["interact"]} run tag @e[tag=this_entity,limit=1] add affected_by_interact

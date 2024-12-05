@@ -1,1 +1,1 @@
-execute if entity @s[scores={Room=1..72}] run function luigis_mansion:entities/player/animation/set/yell
+execute if entity @s[scores={Room=1..72}] run function luigis_mansion:entities/luigi/animation/set/yell

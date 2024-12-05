@@ -1,5 +1,5 @@
 summon minecraft:marker ~ ~ ~ {Tags:["boo_height_check"]}
-tp @e[type=minecraft:marker,tag=boo_height_check,limit=1] ~ ~ ~
+teleport @e[type=minecraft:marker,tag=boo_height_check,limit=1] ~ ~ ~
 execute store result entity @e[type=minecraft:marker,tag=boo_height_check,limit=1] Pos[1] double 0.01 run scoreboard players get @s HomeY
 execute positioned as @e[type=minecraft:marker,tag=boo_height_check,limit=1] rotated ~ 0 positioned ^ ^0.1 ^0.6 unless block ~ ~ ~ #luigis_mansion:boos_ignore unless block ~ ~1 ~ #luigis_mansion:boos_ignore unless block ~ ~2 ~ #luigis_mansion:boos_ignore unless block ~ ~3 ~ #luigis_mansion:boos_ignore unless block ~ ~4 ~ #luigis_mansion:boos_ignore unless block ~ ~5 ~ #luigis_mansion:boos_ignore unless block ~ ~6 ~ #luigis_mansion:boos_ignore run tag @s add wall
 execute if entity @s[tag=up,x_rotation=-90..-45] unless block ~ ~1.3 ~ #luigis_mansion:boos_ignore positioned ~ ~-6 ~ if entity @e[type=minecraft:marker,tag=boo_height_check,limit=1,distance=..1] run tag @s add wall

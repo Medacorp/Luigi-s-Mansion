@@ -2,7 +2,7 @@ scoreboard players add #dialog Dialog 1
 
 scoreboard players reset @a[tag=same_room,tag=!spectator] WarpTime
 execute as @a[tag=same_room,tag=!spectator,tag=game_boy_horror_menu] run function luigis_mansion:selection_menu/game_boy_horror/exit
-execute if score #dialog Dialog matches 1..279 as @a[tag=same_room,tag=!spectator] run function luigis_mansion:entities/player/animation/set/idle
+execute if score #dialog Dialog matches 1..279 as @e[tag=luigi,tag=same_room] run function luigis_mansion:entities/luigi/animation/set/idle
 execute if score #dialog Dialog matches 1..89 run stopsound @a[tag=same_room] music
 execute if score #dialog Dialog matches 1 run scoreboard players set @a[tag=same_room] Music 310
 execute if score #dialog Dialog matches 40 run fill 682 11 67 682 12 67 minecraft:air
@@ -29,7 +29,7 @@ execute if score #dialog Dialog matches 230 run clone 681 11 57 689 17 56 681 11
 execute if score #dialog Dialog matches 240 run clone 681 11 56 689 17 55 681 11 54 replace move
 execute if score #dialog Dialog matches 20 run playsound luigis_mansion:furniture.moving_wall block @a[tag=same_room] 685 11 64 2
 execute if score #dialog Dialog matches 280 run playsound luigis_mansion:music.solve_puzzle music @a[tag=same_room] ~ ~ ~ 10000
-execute if score #dialog Dialog matches 280 as @a[tag=same_room,tag=!spectator] run function luigis_mansion:entities/player/animation/set/none
+execute if score #dialog Dialog matches 280 as @e[tag=luigi,tag=same_room] run function luigis_mansion:entities/luigi/animation/set/none
 execute if score #dialog Dialog matches 280 run scoreboard players set #dialog Dialog -1
 
 #mirror

@@ -1,1 +1,1 @@
-$execute as @a[tag=searcher,tag=!not_facing,limit=1] run function $(namespace):entities/player/animation/set/$(id)
+$execute as @e[tag=searcher,tag=!not_facing,limit=1] run function $(namespace):entities/luigi/animation/set/$(id)

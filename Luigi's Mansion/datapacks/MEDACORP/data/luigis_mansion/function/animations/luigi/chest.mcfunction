@@ -1,4 +1,4 @@
-tag @s[tag=low_health,tag=!stop_model] add sneak_pos
+tag @s[tag=low_health] add sneak_pos
 # Move with
 teleport @s[tag=!sneak_pos,tag=!shrunk,tag=!flipped_gravity] ^ ^-1.7 ^ ~ ~
 teleport @s[tag=sneak_pos,tag=!shrunk,tag=!flipped_gravity] ^ ^-1.76 ^ ~ ~

@@ -21,7 +21,7 @@ execute at @s[tag=look_around] run function luigis_mansion:entities/bowser/look_
 execute at @s[tag=grabbing_head] run function luigis_mansion:entities/bowser/grabbing_head
 execute at @s[tag=dying] run function luigis_mansion:entities/bowser/death
 
-execute at @s[tag=!headless_run,tag=!run,tag=!walk,tag=!jump] positioned ^ ^ ^-1 at @e[distance=..3,tag=player,tag=!spectator,limit=1] run function luigis_mansion:entities/bowser/collide
-execute at @s[tag=!headless_run,tag=!run,tag=!walk,tag=!jump] at @e[tag=this_head,limit=1] positioned ^ ^1.4 ^ at @e[distance=..3,tag=player,tag=!spectator,limit=1] run function luigis_mansion:entities/bowser/collide
+execute at @s[tag=!headless_run,tag=!run,tag=!walk,tag=!jump] positioned ^ ^ ^-1 if entity @e[distance=..3,tag=luigi,limit=1] run function luigis_mansion:entities/bowser/collide
+execute at @s[tag=!headless_run,tag=!run,tag=!walk,tag=!jump] at @e[tag=this_head,limit=1] positioned ^ ^1.4 ^ if entity @e[distance=..3,tag=luigi,limit=1] run function luigis_mansion:entities/bowser/collide
 
 tag @e[tag=this_head,limit=1] remove this_head

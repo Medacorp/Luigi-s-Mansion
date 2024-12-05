@@ -17,7 +17,7 @@ execute if entity @s[tag=attack] run function luigis_mansion:entities/boo/attack
 execute if entity @s[tag=appear] run function luigis_mansion:entities/boo/appear
 execute if entity @s[tag=laugh,tag=!collided] run function luigis_mansion:entities/boo/laugh
 execute if entity @s[tag=taunt] run function luigis_mansion:entities/boo/taunt
-execute at @s[tag=!dying,tag=!appear] if entity @e[tag=!spectator,tag=player,distance=..0.7,limit=1] run function luigis_mansion:entities/boo/collide
+execute at @s[tag=!dying,tag=!appear] if entity @e[tag=luigi,distance=..0.7,limit=1] run function luigis_mansion:entities/boo/collide
 
 execute if entity @s[tag=remove_from_existence,tag=!dying,tag=!warped] run function luigis_mansion:entities/boo/warp with entity @s data.mansion
 

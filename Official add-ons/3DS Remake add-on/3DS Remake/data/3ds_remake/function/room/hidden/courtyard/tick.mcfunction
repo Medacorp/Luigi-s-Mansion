@@ -1,6 +1,6 @@
 execute unless score #courtyard Ticking matches 1 run function #3ds_remake:room/hidden/courtyard/load
-execute as @a[x=644,y=101,z=-41,dx=10,dy=7,dz=78] unless entity @s[scores={Room=30}] run scoreboard players operation @s LastRoom = @s Room
-scoreboard players set @a[x=644,y=101,z=-41,dx=10,dy=7,dz=78] Room 30
+execute as @e[tag=player,x=644,y=101,z=-41,dx=10,dy=7,dz=78] unless entity @s[scores={Room=30}] run scoreboard players operation @s LastRoom = @s Room
+scoreboard players set @e[tag=player,x=644,y=101,z=-41,dx=10,dy=7,dz=78] Room 30
 #todelete - old furniture
 scoreboard players set #temp Room 30
 #/todelete
@@ -15,4 +15,4 @@ execute if entity @e[tag=toad,scores={Room=30},tag=talk] if data storage luigis_
 function #3ds_remake:room/hidden/courtyard/interactions/room
 #/todelete
 
-execute if entity @a[tag=!pause_dialog,scores={Room=30},tag=!spectator,limit=1] run function 3ds_remake:room/hidden/courtyard/ghosts
+execute if entity @e[tag=luigi,tag=!door_animation,scores={Room=30},limit=1] run function 3ds_remake:room/hidden/courtyard/ghosts

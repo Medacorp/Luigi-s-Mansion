@@ -15,7 +15,8 @@ scoreboard players set @s RoomNoise 0
 scoreboard players set @s LoadedChunks 0
 scoreboard players set @s CreditsTime 0
 execute unless entity @s[scores={FlashlightType=0..2}] run scoreboard players set @s FlashlightType 0
-function luigis_mansion:entities/player/animation/set/none
+function luigis_mansion:entities/player/clear_animation
+execute if entity @s[tag=!dead_player] run function luigis_mansion:entities/player/camera/reset
 execute if entity @s[scores={Room=-2}] unless data storage luigis_mansion:data dialogs[{room:-2}] run function luigis_mansion:room/underground_lab/warp_to
 tag @s remove loaded_chunks
 tag @s remove seen_room_name

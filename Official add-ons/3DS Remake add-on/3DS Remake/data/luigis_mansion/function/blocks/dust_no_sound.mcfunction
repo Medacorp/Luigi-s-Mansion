@@ -1,1 +1,1 @@
-execute unless entity @a[tag=portrait_battle,limit=1] run particle minecraft:dust{color:11711129,scale:1.5f} ~ ~ ~ 0.5 0 0.5 1 30
+execute unless data storage luigis_mansion:data current_state.current_data.portrait_battle run particle minecraft:dust{color:11711129,scale:1.5f} ~ ~ ~ 0.5 0 0.5 1 30

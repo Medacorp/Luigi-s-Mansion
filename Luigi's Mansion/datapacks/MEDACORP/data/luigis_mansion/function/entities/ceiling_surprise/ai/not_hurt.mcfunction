@@ -1,4 +1,4 @@
-execute if entity @e[tag=exact_same_room,tag=!spectator,tag=player,distance=..0.7,limit=1] if entity @s[tag=!vanish,tag=!appear] run function luigis_mansion:entities/ceiling_surprise/collide with entity @s data.entity
+execute if entity @e[tag=exact_same_room,tag=luigi,distance=..0.7,limit=1] if entity @s[tag=!vanish,tag=!appear] run function luigis_mansion:entities/ceiling_surprise/collide with entity @s data.entity
 execute if entity @s[tag=!collided,tag=!vanish,tag=!appear] run function luigis_mansion:entities/ceiling_surprise/try_attack
 
 execute if entity @s[tag=!attack,tag=!collided,tag=!vanish,tag=!laugh,tag=!complain,tag=!appear] run function luigis_mansion:entities/ceiling_surprise/haunt

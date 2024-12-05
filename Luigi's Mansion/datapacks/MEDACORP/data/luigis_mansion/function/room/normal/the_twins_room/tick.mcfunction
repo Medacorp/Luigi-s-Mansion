@@ -1,6 +1,6 @@
 execute unless score #the_twins_room Ticking matches 1 run function #luigis_mansion:room/normal/the_twins_room/load
-execute as @a[x=736,y=19,z=29,dx=14,dy=7,dz=21] unless entity @s[scores={Room=49}] run scoreboard players operation @s LastRoom = @s Room
-scoreboard players set @a[x=736,y=19,z=29,dx=14,dy=7,dz=21] Room 49
+execute as @e[tag=player,x=736,y=19,z=29,dx=14,dy=7,dz=21] unless entity @s[scores={Room=49}] run scoreboard players operation @s LastRoom = @s Room
+scoreboard players set @e[tag=player,x=736,y=19,z=29,dx=14,dy=7,dz=21] Room 49
 #todelete - old furniture
 scoreboard players set #temp Room 49
 #/todelete
@@ -13,4 +13,4 @@ function #luigis_mansion:room/normal/the_twins_room/interactions/room
 
 execute if score #the_twins_room Wave matches 5 run function luigis_mansion:room/normal/the_twins_room/hide_and_seek
 
-execute if entity @a[tag=!pause_dialog,scores={Room=49},tag=!spectator,limit=1] run function luigis_mansion:room/normal/the_twins_room/ghosts
+execute if entity @e[tag=luigi,tag=!door_animation,scores={Room=49},limit=1] run function luigis_mansion:room/normal/the_twins_room/ghosts

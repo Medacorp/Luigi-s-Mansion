@@ -40,18 +40,18 @@ execute if score #dialog Dialog matches 1 if data storage 3ds_remake:data {shown
 execute if score #dialog Dialog matches 1 if data storage 3ds_remake:data {shown_gameboy_horror_part:0b} run scoreboard players set #dialog Dialog -1
 execute if score #dialog Dialog matches 1 as @e[tag=e_gadd,tag=same_room,limit=1] at @s facing entity @a[tag=same_room,tag=!spectator,sort=nearest,limit=1] feet rotated ~ 0 run teleport @s ~ ~ ~ ~ ~
 execute if score #dialog Dialog matches 1 run data modify entity @e[tag=e_gadd,tag=same_room,limit=1] data.animation set value {namespace:"luigis_mansion",id:"nod"}
-execute if score #dialog Dialog matches 1 as @a[tag=same_room,tag=!spectator] run function luigis_mansion:entities/player/animation/set/idle
+execute if score #dialog Dialog matches 1 as @e[tag=luigi,tag=same_room] run function luigis_mansion:entities/luigi/animation/set/idle
 execute if score #dialog Dialog matches 1 if score #players Totals matches 1 run tellraw @a[tag=same_room] {"type":"translatable","translate":"chat.type.text","with":[{"type":"translatable","translate":"luigis_mansion:entity.e_gadd","color":"green"},{"type":"translatable","translate":"luigis_mansion:dialog.gallery.repeat.1","with":[{"type":"selector","selector":"@a[tag=!spectator]"}]}]}
 execute if score #dialog Dialog matches 1 if score #players Totals matches 2.. run tellraw @a[tag=same_room] {"type":"translatable","translate":"chat.type.text","with":[{"type":"translatable","translate":"luigis_mansion:entity.e_gadd","color":"green"},{"type":"translatable","translate":"luigis_mansion:dialog.gallery.repeat.1.more"}]}
 execute if score #dialog Dialog matches 1 at @e[tag=e_gadd,tag=same_room,limit=1] run playsound luigis_mansion:entity.e_gadd.talk.luigi_oui neutral @a[tag=same_room] ~ ~ ~ 1
 
 execute if score #dialog Dialog matches 3 run data remove entity @e[tag=e_gadd,tag=same_room,limit=1] data.animation
-execute if score #dialog Dialog matches 3 as @a[tag=same_room,tag=!spectator] run function luigis_mansion:entities/player/animation/set/think
+execute if score #dialog Dialog matches 3 as @e[tag=luigi,tag=same_room] run function luigis_mansion:entities/luigi/animation/set/think
 
 #Branch: Where
 execute if score #dialog Dialog matches 4..11 run scoreboard players set #temp Time 0
 execute if score #dialog Dialog matches 4..11 run function 3ds_remake:selection_menu/gallery_trophy/get_count/portrait/bronze
-execute if score #dialog Dialog matches 4..9 as @a[tag=same_room,tag=!spectator] run function luigis_mansion:entities/player/animation/set/think
+execute if score #dialog Dialog matches 4..9 as @e[tag=luigi,tag=same_room] run function luigis_mansion:entities/luigi/animation/set/think
 execute if score #dialog Dialog matches 4 if score #temp Time matches 23 run data modify entity @e[tag=e_gadd,tag=same_room,limit=1] data.animation set value {namespace:"luigis_mansion",id:"nod"}
 execute if score #dialog Dialog matches 4 if entity @a[tag=select_dialog_branch_where,limit=1] run stopsound @a[tag=same_room] neutral luigis_mansion:entity.e_gadd.talk.luigi_oui
 execute if score #dialog Dialog matches 4 if entity @a[tag=select_dialog_branch_where,limit=1] run stopsound @a[tag=same_room] neutral luigis_mansion:entity.e_gadd.talk.oui_oydohroh_tahmentahkeh2
@@ -104,7 +104,7 @@ execute if score #dialog Dialog matches 9 if entity @a[tag=next_dialog_line,limi
 execute if score #dialog Dialog matches 9 if entity @a[tag=next_dialog_line,limit=1] at @e[tag=e_gadd,tag=same_room,limit=1] run playsound luigis_mansion:entity.e_gadd.talk.soy_soh_ooh_suku_suku_oydohroh_odoh neutral @a[tag=same_room] ~ ~ ~ 1
 
 execute if score #dialog Dialog matches 10 run data modify entity @e[tag=e_gadd,tag=same_room,limit=1] data.animation set value {namespace:"luigis_mansion",id:"nod"}
-execute if score #dialog Dialog matches 10 as @a[tag=same_room,tag=!spectator] run function luigis_mansion:entities/player/animation/set/idle
+execute if score #dialog Dialog matches 10 as @e[tag=luigi,tag=same_room] run function luigis_mansion:entities/luigi/animation/set/idle
 execute if score #dialog Dialog matches 10 if entity @a[tag=next_dialog_line,limit=1] run stopsound @a[tag=same_room] neutral luigis_mansion:entity.e_gadd.talk.soy_soh_ooh_suku_suku_oydohroh_odoh
 execute if score #dialog Dialog matches 10 if entity @a[tag=next_dialog_line,limit=1] run tellraw @a[tag=same_room] {"type":"translatable","translate":"chat.type.text","with":[{"type":"translatable","translate":"luigis_mansion:entity.e_gadd","color":"green"},{"type":"translatable","translate":"luigis_mansion:dialog.gallery.where.7"}]}
 execute if score #dialog Dialog matches 10 if entity @a[tag=next_dialog_line,limit=1] at @e[tag=e_gadd,tag=same_room,limit=1] run playsound luigis_mansion:entity.e_gadd.talk.yahmum_baah neutral @a[tag=same_room] ~ ~ ~ 1
@@ -114,18 +114,18 @@ execute if score #dialog Dialog matches 11 run scoreboard players set #dialog Di
 scoreboard players reset #temp Time
 
 #Branch: What
-execute if score #dialog Dialog matches 12 as @a[tag=same_room,tag=!spectator] run function luigis_mansion:entities/player/animation/set/think
+execute if score #dialog Dialog matches 12 as @e[tag=luigi,tag=same_room] run function luigis_mansion:entities/luigi/animation/set/think
 execute if score #dialog Dialog matches 12 if entity @a[tag=select_dialog_branch_what,limit=1] run stopsound @a[tag=same_room] neutral luigis_mansion:entity.e_gadd.talk.luigi_oui
 execute if score #dialog Dialog matches 12 if entity @a[tag=select_dialog_branch_what,limit=1] run stopsound @a[tag=same_room] neutral luigis_mansion:entity.e_gadd.talk.oui_oydohroh_tahmentahkeh2
 execute if score #dialog Dialog matches 12 if entity @a[tag=select_dialog_branch_what,limit=1] run tellraw @a[tag=same_room] {"type":"translatable","translate":"chat.type.text","with":[{"type":"translatable","translate":"luigis_mansion:entity.e_gadd","color":"green"},{"type":"translatable","translate":"luigis_mansion:dialog.gallery.what.1"}]}
 execute if score #dialog Dialog matches 12 if entity @a[tag=select_dialog_branch_what,limit=1] at @e[tag=e_gadd,tag=same_room,limit=1] run playsound luigis_mansion:entity.e_gadd.talk.hap_poh_oomahkah_tatta_tatta neutral @a[tag=same_room] ~ ~ ~ 1
 
-execute if score #dialog Dialog matches 13 as @a[tag=same_room,tag=!spectator] run function luigis_mansion:entities/player/animation/set/nod
+execute if score #dialog Dialog matches 13 as @e[tag=luigi,tag=same_room] run function luigis_mansion:entities/luigi/animation/set/nod
 execute if score #dialog Dialog matches 13 if entity @a[tag=next_dialog_line,limit=1] run stopsound @a[tag=same_room] neutral luigis_mansion:entity.e_gadd.talk.hap_poh_oomahkah_tatta_tatta
 execute if score #dialog Dialog matches 13 if score #players Totals matches 1 if entity @a[tag=next_dialog_line,limit=1] run tellraw @a[tag=same_room] {"type":"translatable","translate":"chat.type.text","with":[{"type":"translatable","translate":"luigis_mansion:entity.e_gadd","color":"green"},{"type":"translatable","translate":"luigis_mansion:dialog.gallery.what.2"}]}
 execute if score #dialog Dialog matches 13 if score #players Totals matches 2.. if entity @a[tag=next_dialog_line,limit=1] run tellraw @a[tag=same_room] {"type":"translatable","translate":"chat.type.text","with":[{"type":"translatable","translate":"luigis_mansion:entity.e_gadd","color":"green"},{"type":"translatable","translate":"luigis_mansion:dialog.gallery.what.2.more"}]}
 execute if score #dialog Dialog matches 13 if entity @a[tag=next_dialog_line,limit=1] at @e[tag=e_gadd,tag=same_room,limit=1] run playsound luigis_mansion:entity.e_gadd.talk.hey_hey_suu_tahmentahkeh_oydohroh neutral @a[tag=same_room] ~ ~ ~ 1
-execute if score #dialog Dialog matches 33..36 as @a[tag=same_room,tag=!spectator] run function luigis_mansion:entities/player/animation/set/idle
+execute if score #dialog Dialog matches 33..36 as @e[tag=luigi,tag=same_room] run function luigis_mansion:entities/luigi/animation/set/idle
 
 execute if score #dialog Dialog matches 34 if entity @a[tag=next_dialog_line,limit=1] run stopsound @a[tag=same_room] neutral luigis_mansion:entity.e_gadd.talk.hey_hey_suu_tahmentahkeh_oydohroh
 execute if score #dialog Dialog matches 34 if score #players Totals matches 1 if entity @a[tag=next_dialog_line,limit=1] run tellraw @a[tag=same_room] {"type":"translatable","translate":"chat.type.text","with":[{"type":"translatable","translate":"luigis_mansion:entity.e_gadd","color":"green"},{"type":"translatable","translate":"3ds_remake:dialog.gallery.what.3"}]}
@@ -142,26 +142,26 @@ execute if score #dialog Dialog matches 36 if score #players Totals matches 1 if
 execute if score #dialog Dialog matches 36 if score #players Totals matches 2.. if entity @a[tag=next_dialog_line,limit=1] run tellraw @a[tag=same_room] {"type":"translatable","translate":"chat.type.text","with":[{"type":"translatable","translate":"luigis_mansion:entity.e_gadd","color":"green"},{"type":"translatable","translate":"luigis_mansion:dialog.gallery.what.5.more"}]}
 execute if score #dialog Dialog matches 36 if entity @a[tag=next_dialog_line,limit=1] at @e[tag=e_gadd,tag=same_room,limit=1] run playsound luigis_mansion:entity.e_gadd.talk.mee_kehkeh neutral @a[tag=same_room] ~ ~ ~ 1
 
-execute if score #dialog Dialog matches 37 as @a[tag=same_room,tag=!spectator] run function luigis_mansion:entities/player/animation/set/enthusiastic
+execute if score #dialog Dialog matches 37 as @e[tag=luigi,tag=same_room] run function luigis_mansion:entities/luigi/animation/set/enthusiastic
 execute if score #dialog Dialog matches 57 if entity @a[tag=next_dialog_line,limit=1] run stopsound @a[tag=same_room] neutral luigis_mansion:entity.e_gadd.talk.mee_kehkeh
 execute if score #dialog Dialog matches 57 run scoreboard players set #dialog Dialog 89
 
 #Branch: Leave
 execute if score #dialog Dialog matches 58 run data modify entity @e[tag=e_gadd,tag=same_room,limit=1] data.animation set value {namespace:"luigis_mansion",id:"nod"}
-execute if score #dialog Dialog matches 58 as @a[tag=same_room,tag=!spectator] run function luigis_mansion:entities/player/animation/set/think
+execute if score #dialog Dialog matches 58 as @e[tag=luigi,tag=same_room] run function luigis_mansion:entities/luigi/animation/set/think
 execute if score #dialog Dialog matches 58 if entity @a[tag=select_dialog_branch_leave,limit=1] run stopsound @a[tag=same_room] neutral luigis_mansion:entity.e_gadd.talk.luigi_oui
 execute if score #dialog Dialog matches 58 if entity @a[tag=select_dialog_branch_leave,limit=1] run stopsound @a[tag=same_room] neutral luigis_mansion:entity.e_gadd.talk.oui_oydohroh_tahmentahkeh2
 execute if score #dialog Dialog matches 58 if entity @a[tag=select_dialog_branch_leave,limit=1] run tellraw @a[tag=same_room] {"type":"translatable","translate":"chat.type.text","with":[{"type":"translatable","translate":"luigis_mansion:entity.e_gadd","color":"green"},{"type":"translatable","translate":"luigis_mansion:dialog.gallery.leave.1"}]}
 execute if score #dialog Dialog matches 58 if entity @a[tag=select_dialog_branch_leave,limit=1] at @e[tag=e_gadd,tag=same_room,limit=1] run playsound luigis_mansion:entity.e_gadd.talk.yahboh_yahboh neutral @a[tag=same_room] ~ ~ ~ 1
 
-execute if score #dialog Dialog matches 59 as @a[tag=same_room,tag=!spectator] run function luigis_mansion:entities/player/animation/set/nod
+execute if score #dialog Dialog matches 59 as @e[tag=luigi,tag=same_room] run function luigis_mansion:entities/luigi/animation/set/nod
 execute if score #dialog Dialog matches 79 as @a[tag=same_room] run function luigis_mansion:room/underground_lab/warp_to
 execute if score #dialog Dialog matches 79 if entity @a[tag=next_dialog_line,limit=1] run stopsound @a[tag=same_room] neutral luigis_mansion:entity.e_gadd.talk.yahboh_yahboh
 execute if score #dialog Dialog matches 79 run scoreboard players set #dialog Dialog -1
 
 #Branch: Nothing
 execute if score #dialog Dialog matches 80 run data modify entity @e[tag=e_gadd,tag=same_room,limit=1] data.animation set value {namespace:"luigis_mansion",id:"nod"}
-execute if score #dialog Dialog matches 80 as @a[tag=same_room,tag=!spectator] run function luigis_mansion:entities/player/animation/set/think
+execute if score #dialog Dialog matches 80 as @e[tag=luigi,tag=same_room] run function luigis_mansion:entities/luigi/animation/set/think
 execute if score #dialog Dialog matches 80 if entity @a[tag=select_dialog_branch_nothing,limit=1] run stopsound @a[tag=same_room] neutral luigis_mansion:entity.e_gadd.talk.luigi_oui
 execute if score #dialog Dialog matches 80 if entity @a[tag=select_dialog_branch_nothing,limit=1] run stopsound @a[tag=same_room] neutral luigis_mansion:entity.e_gadd.talk.oui_oydohroh_tahmentahkeh2
 execute if score #dialog Dialog matches 80 if entity @a[tag=select_dialog_branch_nothing,limit=1] run tellraw @a[tag=same_room] {"type":"translatable","translate":"chat.type.text","with":[{"type":"translatable","translate":"luigis_mansion:entity.e_gadd","color":"green"},{"type":"translatable","translate":"luigis_mansion:dialog.gallery.nothing.1"}]}
@@ -171,7 +171,7 @@ execute if score #dialog Dialog matches 81 run scoreboard players set #dialog Di
 
 #Branch: Doors
 execute if score #dialog Dialog matches 82 run data modify entity @e[tag=e_gadd,tag=same_room,limit=1] data.animation set value {namespace:"luigis_mansion",id:"nod"}
-execute if score #dialog Dialog matches 82..84 as @a[tag=same_room,tag=!spectator] run function luigis_mansion:entities/player/animation/set/think
+execute if score #dialog Dialog matches 82..84 as @e[tag=luigi,tag=same_room] run function luigis_mansion:entities/luigi/animation/set/think
 execute if score #dialog Dialog matches 82 if entity @a[tag=select_dialog_branch_doors,limit=1] run stopsound @a[tag=same_room] neutral luigis_mansion:entity.e_gadd.talk.luigi_oui
 execute if score #dialog Dialog matches 82 if entity @a[tag=select_dialog_branch_doors,limit=1] run stopsound @a[tag=same_room] neutral luigis_mansion:entity.e_gadd.talk.oui_oydohroh_tahmentahkeh2
 execute if score #dialog Dialog matches 82 if entity @a[tag=select_dialog_branch_doors,limit=1] run tellraw @a[tag=same_room] {"type":"translatable","translate":"chat.type.text","with":[{"type":"translatable","translate":"luigis_mansion:entity.e_gadd","color":"green"},{"type":"translatable","translate":"3ds_remake:dialog.gallery.doors.1"}]}
@@ -198,7 +198,7 @@ execute if score #dialog Dialog matches 85 run scoreboard players set #dialog Di
 
 #Branch: Stand
 execute if score #dialog Dialog matches 86 run data modify entity @e[tag=e_gadd,tag=same_room,limit=1] data.animation set value {namespace:"luigis_mansion",id:"nod"}
-execute if score #dialog Dialog matches 86..87 as @a[tag=same_room,tag=!spectator] run function luigis_mansion:entities/player/animation/set/think
+execute if score #dialog Dialog matches 86..87 as @e[tag=luigi,tag=same_room] run function luigis_mansion:entities/luigi/animation/set/think
 execute if score #dialog Dialog matches 86 if entity @a[tag=select_dialog_branch_stand,limit=1] run stopsound @a[tag=same_room] neutral luigis_mansion:entity.e_gadd.talk.luigi_oui
 execute if score #dialog Dialog matches 86 if entity @a[tag=select_dialog_branch_stand,limit=1] run stopsound @a[tag=same_room] neutral luigis_mansion:entity.e_gadd.talk.oui_oydohroh_tahmentahkeh2
 execute if score #dialog Dialog matches 86 unless data storage 3ds_remake:data current_state.trophy.beginner{done:1b} if score #players Totals matches 1 if entity @a[tag=select_dialog_branch_stand,limit=1] run tellraw @a[tag=same_room] {"type":"translatable","translate":"chat.type.text","with":[{"type":"translatable","translate":"luigis_mansion:entity.e_gadd","color":"green"},{"type":"translatable","translate":"3ds_remake:dialog.gallery.stand.1"}]}
@@ -230,13 +230,13 @@ execute if score #dialog Dialog matches 88 run scoreboard players set #dialog Di
 
 #Repeat
 execute if score #dialog Dialog matches 89 run data modify entity @e[tag=e_gadd,tag=same_room,limit=1] data.animation set value {namespace:"luigis_mansion",id:"nod"}
-execute if score #dialog Dialog matches 89 as @a[tag=same_room,tag=!spectator] run function luigis_mansion:entities/player/animation/set/idle
+execute if score #dialog Dialog matches 89 as @e[tag=luigi,tag=same_room] run function luigis_mansion:entities/luigi/animation/set/idle
 execute if score #dialog Dialog matches 89 if score #players Totals matches 1 run tellraw @a[tag=same_room] {"type":"translatable","translate":"chat.type.text","with":[{"type":"translatable","translate":"luigis_mansion:entity.e_gadd","color":"green"},{"type":"translatable","translate":"3ds_remake:dialog.gallery.repeat.2"}]}
 execute if score #dialog Dialog matches 89 if score #players Totals matches 2.. run tellraw @a[tag=same_room] {"type":"translatable","translate":"chat.type.text","with":[{"type":"translatable","translate":"luigis_mansion:entity.e_gadd","color":"green"},{"type":"translatable","translate":"3ds_remake:dialog.gallery.repeat.2.more"}]}
 execute if score #dialog Dialog matches 89 run playsound luigis_mansion:entity.e_gadd.talk.oui_oydohroh_tahmentahkeh2 neutral @a[tag=same_room] ~ ~ ~ 1
 execute if score #dialog Dialog matches 89 run scoreboard players set #dialog Dialog 2
 
-execute if score #dialog Dialog matches -1 as @a[tag=same_room,tag=!spectator] run function luigis_mansion:entities/player/animation/set/none
+execute if score #dialog Dialog matches -1 as @e[tag=luigi,tag=same_room] run function luigis_mansion:entities/luigi/animation/set/none
 execute if score #dialog Dialog matches -1 run data remove entity @e[tag=e_gadd,tag=same_room,limit=1] data.animation
 tag @a[tag=same_room] remove select_dialog_branch_where
 tag @a[tag=same_room] remove select_dialog_branch_what

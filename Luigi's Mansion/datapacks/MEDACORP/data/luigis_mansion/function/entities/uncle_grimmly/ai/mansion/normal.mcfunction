@@ -1,7 +1,7 @@
-execute if entity @e[tag=same_room,tag=!spectator,tag=player,distance=..1.6,limit=1] run function luigis_mansion:entities/uncle_grimmly/collide
+execute if entity @e[tag=same_room,tag=luigi,distance=..1.6,limit=1] run function luigis_mansion:entities/uncle_grimmly/collide
 
 tag @s add visible
-execute if entity @s[scores={VulnerableTime=0}] at @e[tag=same_room,tag=!spectator,tag=player] positioned ^ ^ ^8 run tag @s[distance=..8] remove visible
+tag @s[scores={VulnerableTime=0},tag=portrait_ghost_hide] remove visible
 scoreboard players add @s Dialog 1
 scoreboard players set @s[tag=!visible] Dialog 0
 execute if predicate luigis_mansion:uncle_grimmly/scare_chance run tag @s[scores={Dialog=20},tag=visible] add scare

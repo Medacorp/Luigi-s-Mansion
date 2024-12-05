@@ -1,2 +1,2 @@
-execute if entity @s[tag=!no_check] if entity @e[tag=same_room,tag=!spectator,tag=player,distance=..5,limit=1] run function luigis_mansion:spawn_entities/ghost/water_elemental_ghost
+execute if entity @s[tag=!no_check] if entity @e[tag=same_room,tag=luigi,distance=..5,limit=1] run function luigis_mansion:spawn_entities/ghost/water_elemental_ghost
 execute if entity @s[tag=no_check] run function luigis_mansion:spawn_entities/ghost/water_elemental_ghost

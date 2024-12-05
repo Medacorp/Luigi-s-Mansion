@@ -1,4 +1,4 @@
-execute positioned ~ ~2 ~ facing entity @a[tag=me,limit=1] eyes run teleport @s ~ ~-2 ~ ~ ~10
+execute positioned ~ ~2 ~ facing entity @e[tag=me,limit=1] eyes run teleport @s ~ ~-2 ~ ~ ~10
 playsound luigis_mansion:entity.nana.attack hostile @a[tag=same_room] ~ ~ ~ 1
 data modify storage luigis_mansion:data entity set value {owner:0,room:0,damage:{}}
 data modify storage luigis_mansion:data entity.damage set from entity @s ArmorItems[3].components."minecraft:custom_data".damage

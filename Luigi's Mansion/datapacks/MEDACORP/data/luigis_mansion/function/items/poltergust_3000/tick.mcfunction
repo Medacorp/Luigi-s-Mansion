@@ -20,8 +20,7 @@ execute if entity @s[tag=poltergust_wall_sound,scores={Shrunk=1..}] run playsoun
 tag @s remove poltergust_floor_sound
 tag @s remove poltergust_wall_sound
 execute if entity @s[tag=exploding_poltergust] run function luigis_mansion:items/poltergust_3000/explode
-tag @s[tag=!poltergust_malfunction,nbt={SelectedItem:{components:{"minecraft:custom_data":{namespace:"luigis_mansion",id:"poltergust_3000"}}}}] add poltergust_selected
-execute if entity @s[nbt={Inventory:[{components:{"minecraft:custom_data":{namespace:"luigis_mansion",id:"poltergust_3000",sync_element:1b}}}]}] run function luigis_mansion:items/poltergust_3000/sync_element
+tag @s[nbt={data:{selected_item:{components:{"minecraft:custom_data":{namespace:"luigis_mansion",id:"poltergust_3000"}}}}}] add poltergust_selected
 tag @s[tag=!poltergust_selected] remove expelling
 tag @s[tag=poltergust_selected,tag=!vacuuming_ghost,scores={UseItem=1..},tag=!expelling] add toggle_expelling
 tag @s[tag=poltergust_selected,tag=!vacuuming_ghost,tag=toggle_expelling] add expelling
@@ -29,7 +28,8 @@ tag @s[tag=poltergust_selected,tag=!vacuuming_ghost,scores={UseItem=1..},tag=!to
 tag @s[tag=toggle_expelling] remove toggle_expelling
 scoreboard players set @s[scores={UseItem=1..},tag=poltergust_selected] UseItem 0
 tag @s remove vacuuming_ghost
-execute if entity @s[tag=idle,tag=poltergust_selected,tag=poltergust_grabbed,tag=!disable_poltergust] run function luigis_mansion:entities/player/animation/set/none
+execute if entity @s[tag=clear_elemental_meter] run function luigis_mansion:items/poltergust_3000/clear_element
+execute if entity @s[tag=idle,tag=poltergust_selected,tag=poltergust_grabbed,tag=!disable_poltergust] run function luigis_mansion:entities/luigi/animation/set/none
 execute if entity @s[tag=!expelling,tag=poltergust_selected,tag=poltergust_grabbed,tag=!disable_poltergust] positioned ~ ~0.5 ~ run function luigis_mansion:items/poltergust_3000/vacuuming
 execute if entity @s[tag=expelling,tag=poltergust_selected,tag=poltergust_grabbed,tag=!disable_poltergust] positioned ~ ~0.5 ~ run function luigis_mansion:items/poltergust_3000/expelling
 execute if entity @s[tag=vaporizing_ghost] as @e[tag=captured,tag=element_death,tag=same_room] at @s run function luigis_mansion:items/poltergust_3000/vaporize

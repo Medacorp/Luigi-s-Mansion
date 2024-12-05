@@ -1,3 +1,3 @@
-execute if entity @a[tag=portrait_battle,limit=1] run data modify storage luigis_mansion:data furniture set value {room:43,particles:"chilly_fog",ice_elemental_source:{cannot_disable:1b},no_dust:1b,searchable:["interact","vacuum"],shake_animation:["interact","vacuum"],sound:{namespace:"luigis_mansion",id:"metal"},scan_result:{namespace:"luigis_mansion",id:"scan/scanner/48"}}
-execute if entity @a[tag=portrait_battle,limit=1] positioned 658 20 -2 rotated -180 0 run function luigis_mansion:spawn_furniture/ice_bucket
-execute if entity @a[tag=portrait_battle,limit=1] run setblock 658 20 -2 minecraft:barrier
+execute if data storage luigis_mansion:data current_state.current_data.portrait_battle run data modify storage luigis_mansion:data furniture set value {room:43,particles:"chilly_fog",ice_elemental_source:{cannot_disable:1b},no_dust:1b,searchable:["interact","vacuum"],shake_animation:["interact","vacuum"],sound:{namespace:"luigis_mansion",id:"metal"},scan_result:{namespace:"luigis_mansion",id:"scan/scanner/48"}}
+execute if data storage luigis_mansion:data current_state.current_data.portrait_battle positioned 658 20 -2 rotated -180 0 run function luigis_mansion:spawn_furniture/ice_bucket
+execute if data storage luigis_mansion:data current_state.current_data.portrait_battle run setblock 658 20 -2 minecraft:barrier

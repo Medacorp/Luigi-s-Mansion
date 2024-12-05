@@ -1,0 +1,2 @@
+$execute if entity @s[tag=!flipped_gravity] positioned ~ ~-$(gravity) ~ run function luigis_mansion:entities/luigi/movement/gravity_step with storage luigis_mansion:data luigi.movement
+$execute if entity @s[tag=flipped_gravity] positioned ~ ~$(gravity) ~ positioned ~ ~2 ~ run function luigis_mansion:entities/luigi/movement/gravity_step_flipped with storage luigis_mansion:data luigi.movement

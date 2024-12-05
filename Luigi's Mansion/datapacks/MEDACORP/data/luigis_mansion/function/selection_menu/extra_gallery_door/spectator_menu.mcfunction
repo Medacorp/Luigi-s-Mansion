@@ -1,4 +1,4 @@
-execute at @s positioned ~ ~ ~1 run function luigis_mansion:entities/player/set_position
+function luigis_mansion:entities/player/camera/teleport {teleport:"~ ~ ~1"}
 tag @s add spectator_menu
 gamemode adventure @s
 

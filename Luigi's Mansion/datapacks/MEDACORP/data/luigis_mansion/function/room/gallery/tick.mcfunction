@@ -1,6 +1,6 @@
 execute unless score #gallery Ticking matches 1 run function #luigis_mansion:room/gallery/load
-execute as @a[x=764,y=75,z=-41,dx=14,dy=10,dz=25] unless entity @s[scores={Room=-4}] run scoreboard players operation @s LastRoom = @s Room
-scoreboard players set @a[x=764,y=75,z=-41,dx=14,dy=10,dz=25] Room -4
+execute as @e[tag=player,x=764,y=75,z=-41,dx=14,dy=10,dz=25] unless entity @s[scores={Room=-4}] run scoreboard players operation @s LastRoom = @s Room
+scoreboard players set @e[tag=player,x=764,y=75,z=-41,dx=14,dy=10,dz=25] Room -4
 #todelete - old furniture
 scoreboard players set #temp Room -4
 #/todelete

@@ -1,1 +1,0 @@
-$function $(namespace):entities/player/animation/$(id)

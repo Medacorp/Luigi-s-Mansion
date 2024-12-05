@@ -1,6 +1,6 @@
 execute unless score #kitchen Ticking matches 1 run function #3ds_remake:room/hidden/kitchen/load
-execute as @a[x=697,y=10,z=61,dx=14,dy=7,dz=31] unless entity @s[scores={Room=27}] run scoreboard players operation @s LastRoom = @s Room
-scoreboard players set @a[x=697,y=10,z=61,dx=14,dy=7,dz=31] Room 27
+execute as @e[tag=player,x=697,y=10,z=61,dx=14,dy=7,dz=31] unless entity @s[scores={Room=27}] run scoreboard players operation @s LastRoom = @s Room
+scoreboard players set @e[tag=player,x=697,y=10,z=61,dx=14,dy=7,dz=31] Room 27
 #todelete - old furniture
 scoreboard players set #temp Room 27
 #/todelete
@@ -11,4 +11,4 @@ execute as @a[scores={Room=27}] run function 3ds_remake:room/hidden/kitchen/tick
 function #3ds_remake:room/hidden/kitchen/interactions/room
 #/todelete
 
-execute if entity @a[tag=!pause_dialog,scores={Room=27},tag=!spectator,limit=1] run function 3ds_remake:room/hidden/kitchen/ghosts
+execute if entity @e[tag=luigi,tag=!door_animation,scores={Room=27},limit=1] run function 3ds_remake:room/hidden/kitchen/ghosts

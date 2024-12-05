@@ -1,0 +1,1 @@
+$function luigis_mansion:entities/luigi/move/execute {execute:"at @s",teleport:"$(teleport)"}

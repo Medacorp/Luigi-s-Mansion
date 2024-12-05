@@ -13,7 +13,7 @@ execute if entity @s[tag=!attack,tag=!collided,tag=!vanish,tag=!complain,tag=!do
 scoreboard players add @s VacuumTime 0
 execute if entity @s[tag=!maskless,tag=!appear,tag=!vanish] run function luigis_mansion:entities/dancing_ghost_guy/ai/lose_mask with entity @s data.entity
 
-execute if entity @e[tag=exact_same_room,tag=!spectator,tag=player,distance=..0.7,limit=1] if entity @s[tag=!vanish,tag=!appear] run function luigis_mansion:entities/dancing_ghost_guy/collide
+execute if entity @e[tag=exact_same_room,tag=luigi,distance=..0.7,limit=1] if entity @s[tag=!vanish,tag=!appear] run function luigis_mansion:entities/dancing_ghost_guy/collide
 execute if entity @s[tag=!collided,tag=!vanish,tag=!appear] run function luigis_mansion:entities/dancing_ghost_guy/try_attack
 tag @s[tag=!stop_dancing] remove complain
 execute if entity @s[tag=!attack,tag=!collided,tag=complain] run function luigis_mansion:entities/ghost_guy/complain with entity @s data.entity

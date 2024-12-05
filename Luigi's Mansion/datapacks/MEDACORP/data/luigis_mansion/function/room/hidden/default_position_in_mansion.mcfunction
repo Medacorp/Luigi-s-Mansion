@@ -1,1 +1,1 @@
-execute in luigis_mansion:hidden run teleport @s 751.0 11 7.0
+function luigis_mansion:entities/luigi/move/execute {execute:"in luigis_mansion:hidden",teleport:"751.0 11 7.0"}

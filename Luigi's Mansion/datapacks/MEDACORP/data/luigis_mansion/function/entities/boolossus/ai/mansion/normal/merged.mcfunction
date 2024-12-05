@@ -8,9 +8,9 @@ data remove entity @s[tag=was_fleeing,tag=!flee] data.animation
 tag @s remove was_fleeing
 tag @s[tag=flee] add was_fleeing
 
-execute if entity @e[tag=same_room,tag=!spectator,tag=player,distance=..3,limit=1] run function luigis_mansion:entities/boolossus/collide_merged
+execute if entity @e[tag=same_room,tag=luigi,distance=..3,limit=1] run function luigis_mansion:entities/boolossus/collide_merged
 
-execute at @s[tag=!flee] facing entity @e[tag=same_room,tag=!spectator,tag=player,sort=nearest,limit=1] feet run teleport @s ~ ~ ~ ~ ~
+execute at @s[tag=!flee] facing entity @e[tag=same_room,tag=luigi,sort=nearest,limit=1] feet run teleport @s ~ ~ ~ ~ ~
 execute if entity @s[tag=!initial_angle] store result score @s HomeRotation run data get entity @s Rotation[0]
 tag @s add initial_angle
 

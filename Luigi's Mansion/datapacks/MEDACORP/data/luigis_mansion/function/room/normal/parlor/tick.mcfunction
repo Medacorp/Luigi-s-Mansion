@@ -1,6 +1,6 @@
 execute unless score #parlor Ticking matches 1 run function #luigis_mansion:room/normal/parlor/load
-execute as @a[x=712,y=19,z=17,dx=17,dy=7,dz=21] unless entity @s[scores={Room=3}] run scoreboard players operation @s LastRoom = @s Room
-scoreboard players set @a[x=712,y=19,z=17,dx=17,dy=7,dz=21] Room 3
+execute as @e[tag=player,x=712,y=19,z=17,dx=17,dy=7,dz=21] unless entity @s[scores={Room=3}] run scoreboard players operation @s LastRoom = @s Room
+scoreboard players set @e[tag=player,x=712,y=19,z=17,dx=17,dy=7,dz=21] Room 3
 #todelete - old furniture
 scoreboard players set #temp Room 3
 #/todelete
@@ -8,11 +8,11 @@ scoreboard players set #temp Room 3
 execute as @a[scores={Room=3}] run function luigis_mansion:room/normal/parlor/tick_per_player
 
 execute as @e[tag=eternal_gold_coin,scores={Room=3}] run scoreboard players add #temp Wave 1
-execute if score #temp Wave matches ..14 if data storage luigis_mansion:data {found_e_gadd:1b} unless data storage luigis_mansion:data current_state.current_data{money_spawned:["parlor_money"]} run data modify storage luigis_mansion:data current_state.current_data.money_spawned append value "parlor_money"
+execute if score #temp Wave matches ..14 if data storage luigis_mansion:data rooms.underground_lab{cleared:1b} unless data storage luigis_mansion:data current_state.current_data{money_spawned:["parlor_money"]} run data modify storage luigis_mansion:data current_state.current_data.money_spawned append value "parlor_money"
 scoreboard players reset #temp Wave
 
 #todelete - old furniture
 function #luigis_mansion:room/normal/parlor/interactions/room
 #/todelete
 
-execute if entity @a[tag=!pause_dialog,scores={Room=3},tag=!spectator,limit=1] run function luigis_mansion:room/normal/parlor/ghosts
+execute if entity @e[tag=luigi,tag=!door_animation,scores={Room=3},limit=1] run function luigis_mansion:room/normal/parlor/ghosts

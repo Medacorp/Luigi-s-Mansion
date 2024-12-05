@@ -9,6 +9,6 @@ execute unless entity @s[tag=!wall_warp,tag=!spectator] if entity @s[tag=!alread
 
 tag @s add already_ticked
 
-execute if data storage luigis_mansion:data {entered_mansion:0b} run playsound luigis_mansion:music.mansion.first_entrance music @s ~ ~ ~ 1000
-execute if data storage luigis_mansion:data {entered_mansion:0b} run scoreboard players set @s Music 240
-data modify storage luigis_mansion:data {} merge value {entered_mansion:1b}
+playsound luigis_mansion:music.mansion.first_entrance music @s[tag=first_entrance] ~ ~ ~ 1000
+scoreboard players set @s[tag=first_entrance] Music 240
+tag @s remove first_entrance

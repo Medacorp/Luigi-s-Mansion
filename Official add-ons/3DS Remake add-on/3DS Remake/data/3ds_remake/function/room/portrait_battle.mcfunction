@@ -19,9 +19,8 @@ scoreboard players reset #temp4 Time
 scoreboard players reset #temp5 Time
 scoreboard players reset #temp6 Time
 scoreboard players operation @s LastRoom = @s Room
-execute at @s run teleport @a[tag=!same_room] ~ ~ ~ ~ ~
+execute at @s as @a[tag=!same_room] run function luigis_mansion:entities/luigi/move/execute {execute:"positioned ~ ~ ~",teleport:"~ ~ ~"}
 
-execute as @a[tag=gooigi] run function 3ds_remake:entities/player/un_gooigi
 execute as @e[type=minecraft:armor_stand] run data remove entity @s ArmorItems[3].components."minecraft:custom_data".loot
 execute as @e[type=minecraft:armor_stand] run data remove entity @s ArmorItems[3].components."minecraft:custom_data".loot_chances
 execute as @e[type=minecraft:marker] run data remove entity @s data.loot
@@ -30,10 +29,11 @@ tag @e[tag=pearl_dropper] remove pearl_dropper
 
 function 3ds_remake:room/portrait_battle/tick with storage luigis_mansion:data current_state.current_data.mansion_id
 
-execute if entity @e[tag=portrait_ghost,tag=same_room,tag=!dying,limit=1] run tag @s add portrait_ghost_spawned
-execute if entity @e[tag=portrait_ghost,tag=same_room,tag=dying,limit=1] run tag @s add catching_the_portrait_ghost
-execute if entity @s[tag=portrait_ghost_spawned,tag=same_room,tag=catching_the_portrait_ghost] unless data storage luigis_mansion:data dialogs[0] unless entity @e[tag=portrait_ghost,tag=same_room,limit=1] run function 3ds_remake:room/portrait_battle/clear
-execute if entity @s[tag=portrait_ghost_spawned,tag=same_room,tag=!catching_the_portrait_ghost] unless data storage luigis_mansion:data dialogs[0] unless entity @e[tag=portrait_ghost,tag=same_room,limit=1] run function 3ds_remake:selection_menu/gallery_portrait/retry_portrait_battle
+function luigis_mansion:room/ghost_portrificationizer_room/portrificationize with storage luigis_mansion:data current_state.current_data.mansion_id
+execute if entity @s[tag=portrificationizing] unless data storage luigis_mansion:data dialogs[0] run function 3ds_remake:room/portrait_battle/clear
+execute if entity @s[tag=failed_portrait_battle] unless data storage luigis_mansion:data dialogs[0] run function 3ds_remake:selection_menu/gallery_portrait/retry_portrait_battle
+tag @s remove portrificationizing
+tag @s remove failed_portrait_battle
 
 execute if entity @s[tag=spectator] run function 3ds_remake:selection_menu/gallery_portrait/end_portrait_battle with storage luigis_mansion:data current_state.current_data.portrait_battle.position
 tag @e[tag=same_room] remove same_room

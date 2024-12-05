@@ -155,11 +155,11 @@ Mansion data is a massive collection of info storing everything the map needs to
             id:"boo_b_hatch" //The ID of the boo.
         }
     ],
-    gooigi_stats:{//Gooigi's money and ghost count.
+    gooigi_stats:{ //Gooigi's money and ghost count.
         ghosts:X, //How many ghosts Gooigi has defeated.
         money:X //How many Gs worth of money Gooigi has collected, excluding the last 3 0s.
     },
-    portrait_battle:{//What portrait battle is currently active.
+    portrait_battle:{ //What portrait battle is currently active.
         namespace:"luigis_mansion", //The namespace of the portrait ghost.
         id:"neville", //The id of the portrait ghost.
         mode:'JSON', //String to use for the "mode" line after the battle.
@@ -169,7 +169,7 @@ Mansion data is a massive collection of info storing everything the map needs to
             y:X, //The integer Y coordinate.
             z:X //The integer Z coordinate.
             x_rotation:X //The X rotation.
-            x_rotation:Y //The Y rotation.
+            y_rotation:X //The Y rotation.
         },
         portraits: { //Portrait item data of the selected portrait. Used to show unlocked frames.
             ...

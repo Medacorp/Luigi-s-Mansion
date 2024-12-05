@@ -1,0 +1,1 @@
+tag @s[scores={Room=1..76}] remove no_map

@@ -1,0 +1,1 @@
+execute if score #conservatory Wave matches -1 run tag @s add failed_portrait_battle

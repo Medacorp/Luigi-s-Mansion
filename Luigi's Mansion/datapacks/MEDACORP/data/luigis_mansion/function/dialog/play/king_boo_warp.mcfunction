@@ -21,7 +21,7 @@ execute if score #dialog Dialog matches 1..330 unless data storage luigis_mansio
 execute if score #dialog Dialog matches 1..330 if data storage luigis_mansion:data current_state.current_data.technical_data{king_boo_warp:1b} as @a[tag=same_room] run function luigis_mansion:other/music/set/mysterious_power
 execute if score #dialog Dialog matches 1 run data modify entity @e[tag=same_room,nbt={data:{entity:{namespace:"luigis_mansion",id:"king_boo"}}},limit=1] data.animation set value {namespace:"luigis_mansion",id:"appear"}
 execute if score #dialog Dialog matches 1 at @e[tag=same_room,nbt={data:{entity:{namespace:"luigis_mansion",id:"king_boo"}}},limit=1] run playsound luigis_mansion:entity.king_boo.laugh_2 hostile @a[tag=same_room] ~ ~ ~ 1
-execute if score #dialog Dialog matches 1..183 as @a[tag=same_room,tag=!spectator] run function luigis_mansion:entities/player/animation/set/idle
+execute if score #dialog Dialog matches 1..183 as @e[tag=luigi,tag=same_room] run function luigis_mansion:entities/luigi/animation/set/idle
 execute if score #dialog Dialog matches 10 run data remove entity @e[tag=same_room,nbt={data:{entity:{namespace:"luigis_mansion",id:"king_boo"}}},limit=1] data.animation
 execute if score #dialog Dialog matches 20 if data storage luigis_mansion:data current_state.current_data.technical_data{king_boo_warp:1b} run tag @a[tag=same_room,limit=1] add next_dialog_line
 execute if score #dialog Dialog matches 20 if data storage luigis_mansion:data current_state.current_data.technical_data{king_boo_warp:1b} run scoreboard players set #dialog Dialog 259
@@ -47,9 +47,9 @@ execute if score #dialog Dialog matches 183 run data remove entity @e[tag=same_r
 execute if score #dialog Dialog matches 184 run scoreboard players set @e[tag=same_room,nbt={data:{entity:{namespace:"luigis_mansion",id:"king_boo"}}},limit=1] ActionTime 0
 execute if score #dialog Dialog matches 184 run tag @e[tag=same_room,nbt={data:{entity:{namespace:"luigis_mansion",id:"king_boo"}}},limit=1] remove laugh
 execute if score #dialog Dialog matches 184 run data remove entity @e[tag=same_room,nbt={data:{entity:{namespace:"luigis_mansion",id:"king_boo"}}},limit=1] data.animation
-execute if score #dialog Dialog matches 184 as @a[tag=same_room,tag=!spectator] run function luigis_mansion:entities/player/animation/set/yell
+execute if score #dialog Dialog matches 184 as @e[tag=luigi,tag=same_room] run function luigis_mansion:entities/luigi/animation/set/yell
 execute if score #dialog Dialog matches 184 at @e[tag=same_room,nbt={data:{entity:{namespace:"luigis_mansion",id:"king_boo"}}},limit=1] run playsound luigis_mansion:entity.king_boo.laugh_2 hostile @a[tag=same_room] ~ ~ ~ 1
-execute if score #dialog Dialog matches 224..230 as @a[tag=same_room,tag=!spectator] run function luigis_mansion:entities/player/animation/set/idle
+execute if score #dialog Dialog matches 224..230 as @e[tag=luigi,tag=same_room] run function luigis_mansion:entities/luigi/animation/set/idle
 execute if score #dialog Dialog matches 224 run data modify entity @e[tag=same_room,nbt={data:{entity:{namespace:"luigis_mansion",id:"king_boo"}}},limit=1] data.animation set value {namespace:"luigis_mansion",id:"taunt"}
 execute if score #dialog Dialog matches 224 at @e[tag=same_room,nbt={data:{entity:{namespace:"luigis_mansion",id:"king_boo"}}},limit=1] run playsound luigis_mansion:entity.king_boo.flinch hostile @a[tag=same_room] ~ ~ ~ 1
 execute if score #dialog Dialog matches 228 run data remove entity @e[tag=same_room,nbt={data:{entity:{namespace:"luigis_mansion",id:"king_boo"}}},limit=1] data.animation
@@ -60,8 +60,8 @@ execute if score #dialog Dialog matches 230 run data modify entity @e[tag=same_r
 execute if score #dialog Dialog matches 230 if entity @a[tag=same_room,tag=next_dialog_line,limit=1] at @e[tag=same_room,nbt={data:{entity:{namespace:"luigis_mansion",id:"king_boo"}}},limit=1] run playsound luigis_mansion:entity.king_boo.complain hostile @a[tag=same_room] ~ ~ ~ 1
 execute if score #dialog Dialog matches 230 if entity @a[tag=same_room,tag=next_dialog_line,limit=1] run tellraw @a[tag=same_room] {"type":"translatable","translate":"chat.type.text","with":[{"type":"translatable","translate":"luigis_mansion:entity.king_boo","color":"green"},{"type":"translatable","translate":"luigis_mansion:dialog.king_boo_warp.9"}]}
 
-execute if score #dialog Dialog matches 231 as @a[tag=same_room,tag=!spectator] run function luigis_mansion:entities/player/animation/set/inspect
-execute if score #dialog Dialog matches 251..330 as @a[tag=same_room,tag=!spectator] run function luigis_mansion:entities/player/animation/set/idle
+execute if score #dialog Dialog matches 231 as @e[tag=luigi,tag=same_room] run function luigis_mansion:entities/luigi/animation/set/inspect
+execute if score #dialog Dialog matches 251..330 as @e[tag=luigi,tag=same_room] run function luigis_mansion:entities/luigi/animation/set/idle
 execute if score #dialog Dialog matches 251 run data modify entity @e[tag=same_room,nbt={data:{entity:{namespace:"luigis_mansion",id:"king_boo"}}},limit=1] data.animation set value {namespace:"luigis_mansion",id:"taunt"}
 execute if score #dialog Dialog matches 251 at @e[tag=same_room,nbt={data:{entity:{namespace:"luigis_mansion",id:"king_boo"}}},limit=1] run playsound luigis_mansion:entity.king_boo.flinch hostile @a[tag=same_room] ~ ~ ~ 1
 execute if score #dialog Dialog matches 255 run data remove entity @e[tag=same_room,nbt={data:{entity:{namespace:"luigis_mansion",id:"king_boo"}}},limit=1] data.animation
@@ -109,11 +109,10 @@ scoreboard players reset #temp Boos
 execute if score #dialog Dialog matches 271 run stopsound @a[tag=same_room] music
 execute if score #dialog Dialog matches 271 run playsound luigis_mansion:music.warped_by_boos music @a[tag=same_room] ~ ~ ~ 1000
 execute if score #dialog Dialog matches 271 run scoreboard players set @a[tag=same_room] Music 80
-execute if score #dialog Dialog matches 271.. as @e[tag=same_room,tag=game_boy_horror_location] run function luigis_mansion:entities/game_boy_horror_location/bring_player_back
-execute if score #dialog Dialog matches 271..331 as @a[tag=same_room,tag=!spectator] at @s unless entity @s[x=684,dx=0] positioned ~0.5 ~ ~ run function luigis_mansion:entities/player/set_position
-execute if score #dialog Dialog matches 331 as @a[tag=same_room,tag=!spectator] run function luigis_mansion:entities/player/animation/set/none
+execute if score #dialog Dialog matches 271..331 as @a[tag=same_room,tag=!spectator] run function luigis_mansion:entities/luigi/move/execute {execute:"at @s unless entity @s[x=684,dx=0]",teleport:"~0.5 ~ ~"}
+execute if score #dialog Dialog matches 331 as @e[tag=luigi,tag=same_room] run function luigis_mansion:entities/luigi/animation/set/none
 execute if score #dialog Dialog matches 331 as @a[tag=same_room] run function luigis_mansion:other/music/set/silence
-execute if score #dialog Dialog matches 331 as @a[tag=same_room,tag=!spectator] run function luigis_mansion:room/default_position_in_mansion with storage luigis_mansion:data current_state.current_data.mansion_id
+execute if score #dialog Dialog matches 331 as @e[tag=luigi,tag=same_room] run function luigis_mansion:room/default_position_in_mansion with storage luigis_mansion:data current_state.current_data.mansion_id
 execute if score #dialog Dialog matches 331 run data modify storage luigis_mansion:data current_state.current_data.technical_data merge value {king_boo_warp:1b}
 execute if score #dialog Dialog matches 331 run tag @e[tag=same_room,nbt={data:{entity:{namespace:"luigis_mansion",id:"king_boo"}}},limit=1] add remove_from_existence
 execute if score #dialog Dialog matches 331 run scoreboard players set #dialog Dialog -1

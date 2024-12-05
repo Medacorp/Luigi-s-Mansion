@@ -13,7 +13,7 @@ teleport @s[scores={WaitTime=-60}] ~ ~-1 ~
 teleport @s[scores={WaitTime=0}] ~ ~1 ~
 scoreboard players add @s WaitTime 1
 
-execute if entity @e[tag=same_room,tag=!spectator,tag=player,distance=..0.7,limit=1] if entity @s[tag=!dead,tag=!removed_from_existence] run function luigis_mansion:entities/haunted_music_sheet/collide
+execute if entity @e[tag=same_room,tag=luigi,distance=..0.7,limit=1] if entity @s[tag=!dead,tag=!removed_from_existence] run function luigis_mansion:entities/haunted_music_sheet/collide
 
 scoreboard players set @s[scores={WaitTime=..0}] TargetTask 0
 scoreboard players set @s[scores={WaitTime=1..80}] TargetTask 6

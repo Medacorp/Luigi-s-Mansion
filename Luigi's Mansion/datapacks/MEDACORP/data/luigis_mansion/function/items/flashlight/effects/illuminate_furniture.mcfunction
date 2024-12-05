@@ -1,0 +1,2 @@
+execute as @e[tag=same_room,tag=furniture,tag=affected_by_flashlight] positioned ~ ~1 ~ positioned ^ ^ ^3 if block ~ ~ ~ #luigis_mansion:flashlight_path run function luigis_mansion:items/flashlight/effects/illuminate_furniture/step
+scoreboard players reset #temp PathStep

@@ -5,7 +5,7 @@ execute store result entity @e[tag=home,limit=1] Pos[1] double 0.01 run scoreboa
 execute store result entity @e[tag=home,limit=1] Pos[2] double 0.01 run scoreboard players get @s PositionZ
 execute store result entity @e[tag=home,limit=1] Rotation[0] float 1 run scoreboard players get @s RotationY
 execute store result entity @e[tag=home,limit=1] Rotation[1] float 1 run scoreboard players get @s RotationX
-execute at @e[tag=home,limit=1] run tp @s[scores={MapZoomTime=2..}] ~ ~ ~ ~ ~
+execute at @e[tag=home,limit=1] run teleport @s[scores={MapZoomTime=2..}] ~ ~ ~ ~ ~
 kill @e[tag=home,limit=1]
 effect clear @s minecraft:speed
 attribute @s[scores={MapZoomTime=..22}] minecraft:movement_speed base set 0.01

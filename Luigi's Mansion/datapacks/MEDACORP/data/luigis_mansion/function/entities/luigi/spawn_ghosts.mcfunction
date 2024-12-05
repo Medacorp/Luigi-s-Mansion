@@ -1,0 +1,7 @@
+data modify entity @s Rotation[0] set from entity @s data.head_rotation
+execute rotated as @s rotated ~ 0 positioned ^ ^ ^-4 positioned ~-4 ~-15 ~ as @e[dx=8,dy=30,dz=0,tag=ghost,tag=hidden,tag=can_spawn,tag=exact_same_room] at @s if block ~ ~ ~ #luigis_mansion:ghosts_ignore run tag @s add try_spawn
+execute rotated as @s rotated ~ 0 positioned ^ ^ ^-4 positioned ~-3 ~-15 ~-1 as @e[dx=6,dy=30,dz=2,tag=ghost,tag=hidden,tag=can_spawn,tag=exact_same_room] at @s if block ~ ~ ~ #luigis_mansion:ghosts_ignore run tag @s add try_spawn
+execute rotated as @s rotated ~ 0 positioned ^ ^ ^-4 positioned ~-2 ~-15 ~-2 as @e[dx=4,dy=30,dz=4,tag=ghost,tag=hidden,tag=can_spawn,tag=exact_same_room] at @s if block ~ ~ ~ #luigis_mansion:ghosts_ignore run tag @s add try_spawn
+execute rotated as @s rotated ~ 0 positioned ^ ^ ^-4 positioned ~-1 ~-15 ~-3 as @e[dx=2,dy=30,dz=6,tag=ghost,tag=hidden,tag=can_spawn,tag=exact_same_room] at @s if block ~ ~ ~ #luigis_mansion:ghosts_ignore run tag @s add try_spawn
+execute rotated as @s rotated ~ 0 positioned ^ ^ ^-4 positioned ~ ~-15 ~-4 as @e[dx=0,dy=30,dz=8,tag=ghost,tag=hidden,tag=can_spawn,tag=exact_same_room] at @s if block ~ ~ ~ #luigis_mansion:ghosts_ignore run tag @s add try_spawn
+teleport @s ~ ~ ~ ~ ~

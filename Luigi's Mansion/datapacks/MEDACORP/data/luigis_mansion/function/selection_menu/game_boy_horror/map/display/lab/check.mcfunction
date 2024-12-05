@@ -1,0 +1,1 @@
+execute if dimension minecraft:overworld run tag @s[scores={Room=-7..-1}] remove no_map

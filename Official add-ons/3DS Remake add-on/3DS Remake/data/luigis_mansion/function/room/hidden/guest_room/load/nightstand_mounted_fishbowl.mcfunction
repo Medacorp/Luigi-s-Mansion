@@ -1,3 +1,3 @@
-execute if entity @a[tag=portrait_battle,limit=1] run data modify storage luigis_mansion:data furniture set value {room:70,pose:[0.0f,0.01f,-180.0f],water_elemental_source:{},searchable:["interact","vacuum"],no_dust:1b,shake_animation:["interact","vacuum"],sound:{namespace:"luigis_mansion",id:"wood"},scan_result:{namespace:"luigis_mansion",id:"scan/scanner/15"}}
-execute if entity @a[tag=portrait_battle,limit=1] positioned 746 27 59 rotated 0 0 run function luigis_mansion:spawn_furniture/nightstand_mounted_fishbowl
-execute if entity @a[tag=portrait_battle,limit=1] run setblock 746 26 59 minecraft:barrier
+execute if data storage luigis_mansion:data current_state.current_data.portrait_battle run data modify storage luigis_mansion:data furniture set value {room:70,pose:[0.0f,0.01f,-180.0f],water_elemental_source:{},searchable:["interact","vacuum"],no_dust:1b,shake_animation:["interact","vacuum"],sound:{namespace:"luigis_mansion",id:"wood"},scan_result:{namespace:"luigis_mansion",id:"scan/scanner/15"}}
+execute if data storage luigis_mansion:data current_state.current_data.portrait_battle positioned 746 27 59 rotated 0 0 run function luigis_mansion:spawn_furniture/nightstand_mounted_fishbowl
+execute if data storage luigis_mansion:data current_state.current_data.portrait_battle run setblock 746 26 59 minecraft:barrier

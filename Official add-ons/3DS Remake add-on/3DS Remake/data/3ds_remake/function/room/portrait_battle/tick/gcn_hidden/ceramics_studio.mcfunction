@@ -1,0 +1,1 @@
+execute unless entity @s[scores={Room=65}] run tag @s add failed_portrait_battle

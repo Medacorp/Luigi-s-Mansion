@@ -6,7 +6,7 @@ scoreboard players set @s[scores={ActionTime=0}] Sound 0
 execute unless entity @s[scores={ActionTime=1000..}] run scoreboard players operation @s ActionTime += #temp Health
 scoreboard players add @s[scores={ActionTime=1000..}] ActionTime 1
 scoreboard players set @s[scores={ActionTime=560..999}] ActionTime 1000
-execute at @s[scores={ActionTime=1..1000}] facing entity @e[tag=same_room,tag=!spectator,tag=player,sort=nearest,limit=1] feet run teleport @s ~ ~ ~ ~ ~
+execute at @s[scores={ActionTime=1..1000}] facing entity @e[tag=same_room,tag=luigi,sort=nearest,limit=1] feet run teleport @s ~ ~ ~ ~ ~
 execute if entity @s[scores={ActionTime=1..999,Sound=0}] run playsound luigis_mansion:entity.boo.laugh hostile @a[tag=same_room] ~ ~ ~ 1
 scoreboard players set @s[scores={ActionTime=1..999,Sound=0}] Sound 20
 data modify entity @s[scores={ActionTime=1..999}] data.animation set value {namespace:"luigis_mansion",id:"laugh"}

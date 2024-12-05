@@ -1,6 +1,6 @@
 execute unless score #the_artists_studio Ticking matches 1 run function #luigis_mansion:room/hidden/the_artists_studio/load
-execute as @a[x=687,y=28,z=70,dx=16,dy=7,dz=25] unless entity @s[scores={Room=71}] run scoreboard players operation @s LastRoom = @s Room
-scoreboard players set @a[x=687,y=28,z=70,dx=16,dy=7,dz=25] Room 71
+execute as @e[tag=player,x=687,y=28,z=70,dx=16,dy=7,dz=25] unless entity @s[scores={Room=71}] run scoreboard players operation @s LastRoom = @s Room
+scoreboard players set @e[tag=player,x=687,y=28,z=70,dx=16,dy=7,dz=25] Room 71
 #todelete - old furniture
 scoreboard players set #temp Room 71
 #/todelete
@@ -25,4 +25,4 @@ execute if score #freeze_timer Selected matches 1 as @a unless entity @s[scores=
 function #luigis_mansion:room/hidden/the_artists_studio/interactions/room
 #/todelete
 
-execute if entity @a[tag=!pause_dialog,scores={Room=71},tag=!spectator,limit=1] run function luigis_mansion:room/hidden/the_artists_studio/ghosts
+execute if entity @e[tag=luigi,tag=!door_animation,scores={Room=71},limit=1] run function luigis_mansion:room/hidden/the_artists_studio/ghosts

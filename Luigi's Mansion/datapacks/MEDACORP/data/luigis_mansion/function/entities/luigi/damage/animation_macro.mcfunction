@@ -1,0 +1,1 @@
+$function $(namespace):entities/luigi/animation/set/$(id) $(macro)

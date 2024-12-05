@@ -1,6 +1,6 @@
 scoreboard players set #freeze_timer Selected 1
 scoreboard players add @s Dialog 1
-execute if entity @s[scores={Dialog=1..139}] as @a[tag=same_room,tag=!spectator,tag=!looking_at_map] run function luigis_mansion:entities/player/animation/set/high_health_idle_no_sound
+execute if entity @s[scores={Dialog=1..139}] as @e[tag=luigi,tag=same_room] run function luigis_mansion:entities/luigi/animation/set/high_health_idle_no_sound
 execute if entity @s[scores={Dialog=110}] run teleport @s ~ ~ ~ -90 0
 execute if entity @s[scores={Dialog=120}] run playsound luigis_mansion:entity.chauncey.cutscene_scream hostile @a[tag=same_room] ~ ~ ~ 3
 execute if entity @s[scores={Dialog=120}] run data modify storage luigis_mansion:data entity set value {tags:["intro","attack"],room:73}
@@ -37,9 +37,9 @@ execute if entity @s[scores={Dialog=120}] run data modify storage luigis_mansion
 execute if entity @s[scores={Dialog=120}] positioned ~-30.5 ~10 ~1.5 run function luigis_mansion:spawn_entities/rocking_horse/small
 execute if entity @s[scores={Dialog=120}] run data modify storage luigis_mansion:data entity set value {tags:["intro","attack"],room:73}
 execute if entity @s[scores={Dialog=120}] positioned ~-30.5 ~10 ~-3.5 run function luigis_mansion:spawn_entities/rocking_horse/small
-execute if entity @s[scores={Dialog=140}] as @a[tag=same_room] run function luigis_mansion:entities/player/animation/set/none
-execute if entity @s[scores={Dialog=140}] as @a[tag=same_room] run function luigis_mansion:entities/player/animation/set/scare/bash_no_move
-execute if entity @s[scores={Dialog=140..629}] run scoreboard players set @a[tag=same_room,scores={AnimationProgress=30..}] AnimationProgress 29
+execute if entity @s[scores={Dialog=140}] as @e[tag=luigi,tag=same_room] run function luigis_mansion:entities/luigi/animation/set/none
+execute if entity @s[scores={Dialog=140}] as @e[tag=luigi,tag=same_room] run function luigis_mansion:entities/luigi/animation/set/scare/bash_no_move
+execute if entity @s[scores={Dialog=140..629}] run scoreboard players set @e[tag=luigi,tag=same_room,scores={AnimationProgress=30..}] AnimationProgress 29
 tag @s[scores={Dialog=330}] add visible
 execute if entity @s[scores={Dialog=330..420}] run teleport @s ~ ~0.1 ~
 data modify entity @s[scores={Dialog=400}] data.animation set value {namespace:"luigis_mansion",id:"look_down"}
@@ -53,7 +53,7 @@ data modify entity @s[scores={Dialog=540}] data.animation set value {namespace:"
 data modify entity @s[scores={Dialog=580}] data.animation set value {namespace:"luigis_mansion",id:"wink"}
 data modify entity @s[scores={Dialog=590}] data.animation set value {namespace:"luigis_mansion",id:"ramble"}
 tag @s[scores={Dialog=630}] add fake_attack
-execute if entity @s[scores={Dialog=650..669}] as @a[tag=same_room,tag=!spectator,tag=!looking_at_map] run function luigis_mansion:entities/player/animation/set/idle
+execute if entity @s[scores={Dialog=650..669}] as @e[tag=luigi,tag=same_room] run function luigis_mansion:entities/luigi/animation/set/idle
 tag @s[scores={Dialog=670}] add intro_done
-execute if entity @s[scores={Dialog=670}] as @a[tag=same_room,tag=!spectator,tag=!looking_at_map] run function luigis_mansion:entities/player/animation/set/none
+execute if entity @s[scores={Dialog=670}] as @e[tag=luigi,tag=same_room] run function luigis_mansion:entities/luigi/animation/set/none
 scoreboard players set @s[scores={Dialog=670}] Dialog 0

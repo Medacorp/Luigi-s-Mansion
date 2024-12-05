@@ -1,7 +1,7 @@
 execute unless score #tea_room_tea_box Searched matches 1 run data modify storage luigis_mansion:data furniture set value {room:34,tags:["drop_loot"]}
-execute unless score #tea_room_tea_box Searched matches 1 as @a if score #tea_room_tea_box SearcherID = @s ID run tag @s add searcher
+execute unless score #tea_room_tea_box Searched matches 1 as @e[tag=luigi] if score #tea_room_tea_box SearcherID = @s ID run tag @s add searcher
 execute unless score #tea_room_tea_box Searched matches 1 run function 3ds_remake:entities/furniture/loot_chance/p50
-execute unless score #tea_room_tea_box Searched matches 1 run tag @a remove searcher
+execute unless score #tea_room_tea_box Searched matches 1 run tag @e[tag=searcher] remove searcher
 execute unless data storage luigis_mansion:data furniture.loot positioned 643 21 -52 run function luigis_mansion:blocks/dust
 execute if data storage luigis_mansion:data furniture.loot positioned 643 22 -52 run function luigis_mansion:spawn_furniture/room_clear_loot_dropper
 scoreboard players set #tea_room_tea_box Searched 1

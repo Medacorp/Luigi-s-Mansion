@@ -11,12 +11,12 @@ tag @e[tag=gooigi,tag=same_room,limit=1] remove freeze_animation
 execute if score #dialog Dialog matches 1 unless data storage luigis_mansion:data current_state.current_data.mansion_id{namespace:"luigis_mansion",id:"normal"} if entity @a[scores={Room=1..},tag=!spectator,limit=1] run data modify storage luigis_mansion:data dialogs append value {name:{namespace:"luigis_mansion",id:"go_to_mansion/failure"},progress:0,room:-1}
 execute if score #dialog Dialog matches 1 unless data storage luigis_mansion:data current_state.current_data.mansion_id{namespace:"luigis_mansion",id:"normal"} if entity @a[scores={Room=1..},tag=!spectator,limit=1] run scoreboard players set #dialog Dialog -1
 
-execute if score #dialog Dialog matches 1 as @a[tag=same_room,tag=!spectator] run function luigis_mansion:entities/player/animation/set/nod
+execute if score #dialog Dialog matches 1 as @e[tag=luigi,tag=same_room] run function luigis_mansion:entities/luigi/animation/set/nod
 execute if score #dialog Dialog matches 1 if score #players Totals matches 1 run tellraw @a[tag=same_room] {"type":"translatable","translate":"chat.type.text","with":[{"type":"translatable","translate":"luigis_mansion:entity.e_gadd","color":"green"},{"type":"translatable","translate":"luigis_mansion:dialog.underground_lab.mansion.1","with":[{"type":"selector","selector":"@a[tag=!spectator]"}]}]}
 execute if score #dialog Dialog matches 1 if score #players Totals matches 2.. run tellraw @a[tag=same_room] {"type":"translatable","translate":"chat.type.text","with":[{"type":"translatable","translate":"luigis_mansion:entity.e_gadd","color":"green"},{"type":"translatable","translate":"luigis_mansion:dialog.underground_lab.mansion.1.more"}]}
 execute if score #dialog Dialog matches 1 at @e[tag=e_gadd,tag=same_room,limit=1] run playsound luigis_mansion:entity.e_gadd.talk.oui_oomahkah neutral @a[tag=same_room] ~ ~ ~ 1
-execute if score #dialog Dialog matches 21 as @a[tag=same_room,tag=!spectator] run function luigis_mansion:entities/player/animation/set/idle
+execute if score #dialog Dialog matches 21 as @e[tag=luigi,tag=same_room] run function luigis_mansion:entities/luigi/animation/set/idle
 
 execute if score #dialog Dialog matches 22 as @a[tag=same_room] run function luigis_mansion:room/normal/load
-execute if score #dialog Dialog matches 22 as @a[tag=same_room,tag=!spectator] run function luigis_mansion:entities/player/animation/set/none
+execute if score #dialog Dialog matches 22 as @e[tag=luigi,tag=same_room] run function luigis_mansion:entities/luigi/animation/set/none
 execute if score #dialog Dialog matches 22 run scoreboard players set #dialog Dialog -1

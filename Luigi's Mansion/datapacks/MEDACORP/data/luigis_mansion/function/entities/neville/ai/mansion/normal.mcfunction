@@ -4,7 +4,7 @@ execute store result entity @s[scores={Dialog=0}] Pos[2] double 0.01 run scorebo
 execute positioned ~ ~-1.85 ~ store result entity @s data.initial_animation_progress int 1 run scoreboard players get @e[tag=rocking_chair,distance=..1,limit=1] AnimationProgress
 scoreboard players set @s[scores={Dialog=0}] Dialog 1
 scoreboard players add @s Dialog 1
-execute if entity @s[scores={Dialog=1..100}] at @e[tag=same_room,tag=!spectator,tag=player] positioned ^ ^ ^8 run scoreboard players set @s[distance=..8] Dialog 1
+execute if entity @s[scores={Dialog=1..100}] at @e[tag=same_room,tag=luigi] positioned ^ ^ ^8 run scoreboard players set @s[distance=..8] Dialog 1
 tag @s[scores={Dialog=1}] remove visible
 tag @s[scores={Dialog=2}] add visible
 execute if entity @s[scores={Dialog=101}] run playsound luigis_mansion:entity.neville.yawn hostile @a[tag=same_room] ~ ~ ~ 1
@@ -19,4 +19,4 @@ data modify entity @s[scores={Dialog=101..160}] data.animation set value {namesp
 data remove entity @s[scores={Dialog=101..160}] data.initial_animation_progress
 data remove entity @s[scores={Dialog=0..1}] data.animation
 
-execute if entity @e[tag=exact_same_room,tag=!spectator,tag=player,distance=..1.6,limit=1] run function luigis_mansion:entities/neville/collide
+execute if entity @e[tag=exact_same_room,tag=luigi,distance=..1.6,limit=1] run function luigis_mansion:entities/neville/collide

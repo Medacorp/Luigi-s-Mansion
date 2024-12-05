@@ -2,10 +2,10 @@ scoreboard players add @s[scores={Dialog=81..161}] Dialog 1
 scoreboard players add @s[scores={Dialog=1..79}] Dialog 1
 execute unless entity @s[scores={Dialog=1..}] run data remove entity @s data.animation
 tag @s[tag=!visible] add visible
-execute unless entity @s[scores={Dialog=1..}] at @e[tag=same_room,tag=!spectator,tag=player] positioned ^ ^ ^8 run tag @s[distance=..8] remove visible
+execute unless entity @s[scores={Dialog=1..}] run tag @s[tag=portrait_ghost_hide] remove visible
 execute unless entity @s[scores={Dialog=1..}] if entity @e[tag=spooky_bone,limit=1] run scoreboard players set @s Dialog 1
-execute unless entity @s[scores={Dialog=1..}] at @e[tag=same_room,tag=!spectator,tag=player,distance=..4,limit=1] run function luigis_mansion:entities/ghost/set_target
-execute unless entity @s[scores={Dialog=1..}] if entity @e[tag=same_room,tag=!spectator,tag=player,distance=..4,limit=1] run scoreboard players set @s Dialog 1
+execute unless entity @s[scores={Dialog=1..}] at @e[tag=same_room,tag=luigi,distance=..4,limit=1] run function luigis_mansion:entities/ghost/set_target
+execute unless entity @s[scores={Dialog=1..}] if entity @e[tag=same_room,tag=luigi,distance=..4,limit=1] run scoreboard players set @s Dialog 1
 execute if entity @s[scores={Dialog=1}] run playsound luigis_mansion:entity.spooky.wake_up hostile @a[tag=same_room] ~ ~ ~ 1
 data modify entity @s[scores={Dialog=1}] data.animation set value {namespace:"luigis_mansion",id:"wake_up"}
 execute if entity @s[scores={Dialog=21}] run playsound luigis_mansion:entity.spooky.pant hostile @a[tag=same_room] ~ ~ ~ 1
@@ -19,7 +19,7 @@ execute if entity @s[scores={Dialog=60}] run playsound luigis_mansion:entity.spo
 data modify entity @s[scores={Dialog=80},tag=!attack] data.animation set value {namespace:"luigis_mansion",id:"move"}
 execute if entity @e[tag=spooky_bone,limit=1] run scoreboard players set @s[scores={Dialog=80}] Dialog 163
 scoreboard players set @s[scores={Dialog=80},tag=!attack] TargetTask 1
-execute at @s[scores={Dialog=80},tag=!attack] positioned ^ ^ ^2 at @e[tag=same_room,tag=!spectator,tag=player,distance=..0.7,limit=1] run function luigis_mansion:entities/ghost/set_target_to_attack
+execute at @s[scores={Dialog=80},tag=!attack] positioned ^ ^ ^2 at @e[tag=same_room,tag=luigi,distance=..0.7,limit=1] run function luigis_mansion:entities/ghost/set_target_to_attack
 execute if entity @s[tag=attack] run function luigis_mansion:entities/spooky/ai/mansion/normal/attack
 scoreboard players set @s[scores={Dialog=80},tag=!attack,nbt={data:{animation:{namespace:"luigis_mansion",id:"breathe"}}}] Dialog 20
 scoreboard players add @s[scores={Dialog=80},tag=!attack,nbt={data:{animation:{namespace:"luigis_mansion",id:"wake_up"}}}] Dialog 1

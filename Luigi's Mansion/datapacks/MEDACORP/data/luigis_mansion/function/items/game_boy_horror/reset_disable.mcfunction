@@ -1,2 +1,2 @@
-execute if entity @s[tag=disable_game_boy_horror,tag=game_boy_horror_menu] run data modify storage luigis_mansion:data selected_option set value {id:"exit"}
+execute if entity @s[tag=disable_game_boy_horror] run function luigis_mansion:entities/luigi/run_command_as_owner {command:"execute if entity @s[tag=game_boy_horror_menu] run function luigis_mansion:selection_menu/close"}
 tag @s remove disable_game_boy_horror

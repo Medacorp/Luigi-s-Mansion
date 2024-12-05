@@ -1,3 +1,3 @@
-function luigis_mansion:entities/player/animation/set/pulled
+function luigis_mansion:entities/luigi/animation/set/pulled
 execute if score #koopa_amiibo Selected matches 0 if entity @s[scores={AnimationProgress=5..},gamemode=!creative] run function e3_demo:items/poltergust_500/vacuuming/dragged_damage
 execute if score #koopa_amiibo Selected matches 1 if entity @s[scores={AnimationProgress=5..,Room=..0},gamemode=!creative] run function e3_demo:items/poltergust_500/vacuuming/dragged_damage

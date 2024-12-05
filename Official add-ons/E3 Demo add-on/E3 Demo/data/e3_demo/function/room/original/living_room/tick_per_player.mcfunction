@@ -9,4 +9,4 @@ execute unless entity @s[tag=!wall_warp,tag=!spectator] if entity @s[tag=!alread
 
 tag @s add already_ticked
 
-execute unless data storage luigis_mansion:data {found_e_gadd:1b} if entity @s[tag=!spectator] unless data storage luigis_mansion:data dialogs[{room:3}] run function e3_demo:room/original/living_room/meet_e_gadd
+execute unless data storage luigis_mansion:data rooms.underground_lab{cleared:1b} if entity @s[tag=!spectator] unless data storage luigis_mansion:data dialogs[{room:3}] run function e3_demo:room/original/living_room/meet_e_gadd

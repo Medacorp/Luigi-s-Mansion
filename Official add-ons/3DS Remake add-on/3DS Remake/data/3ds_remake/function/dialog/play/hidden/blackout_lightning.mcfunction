@@ -2,7 +2,7 @@ scoreboard players add #dialog Dialog 1
 
 scoreboard players reset @a[tag=same_room,tag=!spectator] WarpTime
 execute as @a[tag=same_room,tag=!spectator,tag=game_boy_horror_menu] run function luigis_mansion:selection_menu/game_boy_horror/exit
-execute if score #dialog Dialog matches 1 as @a[tag=same_room,tag=!spectator] at @s positioned ^ ^ ^1 run function luigis_mansion:entities/player/animation/set/scare/cower
+execute if score #dialog Dialog matches 1 as @e[tag=luigi,tag=same_room] at @s positioned ^ ^ ^1 run function luigis_mansion:entities/luigi/animation/set/scare/cower
 execute if score #dialog Dialog matches 1..170 run scoreboard players set @a[tag=same_room,tag=!spectator] AnimationProgress 30
 execute if score #dialog Dialog matches 1 run summon minecraft:lightning_bolt 691 100 81
 execute if score #dialog Dialog matches 30 run summon minecraft:lightning_bolt 691 100 -66

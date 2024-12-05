@@ -1,2 +1,2 @@
-execute if entity @s[tag=!pull_ignores_collision] facing entity @a[tag=vacuuming_me,sort=nearest,limit=1] feet if block ^ ^ ^0.3 #luigis_mansion:ghost_pull_ignore unless entity @e[tag=player,tag=!spectator,distance=..1.2,limit=1] positioned as @s run teleport @s ^ ^ ^0.2
-execute if entity @s[tag=pull_ignores_collision] facing entity @a[tag=vacuuming_me,sort=nearest,limit=1] feet unless entity @e[tag=player,tag=!spectator,distance=..1.2,limit=1] positioned as @s run teleport @s ^ ^ ^0.2
+execute if entity @s[tag=!pull_ignores_collision] facing entity @e[tag=vacuuming_me,sort=nearest,limit=1] feet if block ^ ^ ^0.3 #luigis_mansion:ghost_pull_ignore unless entity @e[tag=luigi,distance=..1.2,limit=1] positioned as @s run teleport @s ^ ^ ^0.2
+execute if entity @s[tag=pull_ignores_collision] facing entity @e[tag=vacuuming_me,sort=nearest,limit=1] feet unless entity @e[tag=luigi,distance=..1.2,limit=1] positioned as @s run teleport @s ^ ^ ^0.2

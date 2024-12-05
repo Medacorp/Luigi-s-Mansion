@@ -8,4 +8,4 @@ execute unless entity @s[tag=!wall_warp,tag=!spectator] if entity @s[tag=!alread
 
 tag @s add already_ticked
 
-execute if entity @s[x=685,y=135,z=35,dx=2,dy=0,dz=2] run function luigis_mansion:room/hidden/roof/go_through_chimney
+function luigis_mansion:entities/run_command_as_model {command:'execute if entity @s[x=685,y=135,z=35,dx=2,dy=0,dz=2] run function luigis_mansion:room/hidden/roof/go_through_chimney'}

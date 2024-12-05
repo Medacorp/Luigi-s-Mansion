@@ -1,4 +1,4 @@
-execute if entity @s[tag=blockade,tag=!had_blockade] as @a[tag=same_room,tag=looking_at_map] at @s run function luigis_mansion:selection_menu/game_boy_horror/map/exit
-execute if entity @s[tag=blockade,tag=!had_blockade] as @a[tag=same_room,tag=!spectator] run function luigis_mansion:entities/player/animation/set/scare/normal
+execute if entity @s[tag=blockade,tag=!had_blockade] as @a[tag=same_room,tag=looking_at_map] run function luigis_mansion:selection_menu/game_boy_horror/map/exit
+execute if entity @s[tag=blockade,tag=!had_blockade] as @e[tag=luigi,tag=same_room] run function luigis_mansion:entities/luigi/animation/set/scare/normal
 execute if entity @s[tag=blockade,tag=!had_blockade] run playsound luigis_mansion:furniture.blockade.spawn block @a[tag=same_room] ~ ~ ~ 1
 execute if entity @s[tag=!blockade,tag=!area_blockade,tag=had_blockade] run playsound luigis_mansion:furniture.blockade.disappear block @a[tag=same_room] ~ ~ ~ 1

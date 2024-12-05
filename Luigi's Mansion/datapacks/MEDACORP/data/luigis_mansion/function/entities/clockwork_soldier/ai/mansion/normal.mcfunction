@@ -10,7 +10,7 @@ execute at @s[tag=!visible] run function luigis_mansion:entities/clockwork_soldi
 data modify entity @s[tag=was_activated,tag=!attack,tag=!complain] data.animation set value {namespace:"luigis_mansion",id:"walk"}
 data remove entity @s[tag=!activated] data.animation
 
-execute if entity @s[tag=was_activated,tag=!complain,tag=!attack,tag=!no_wind,scores={WaitTime=..0}] positioned ^ ^ ^0.7 at @e[tag=same_room,tag=!spectator,tag=player,distance=..1,limit=1] run function luigis_mansion:entities/ghost/set_target_to_attack
+execute if entity @s[tag=was_activated,tag=!complain,tag=!attack,tag=!no_wind,scores={WaitTime=..0}] positioned ^ ^ ^0.7 at @e[tag=same_room,tag=luigi,distance=..1,limit=1] run function luigis_mansion:entities/ghost/set_target_to_attack
 
 scoreboard players set @s[scores={WaitTime=-80}] TargetTask 0
 data remove entity @s[scores={WaitTime=-80}] data.target_pos

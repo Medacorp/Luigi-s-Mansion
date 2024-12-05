@@ -1,4 +1,4 @@
-execute if entity @e[tag=exact_same_room,tag=!spectator,tag=player,distance=..0.7,limit=1] if entity @s[tag=!vanish,tag=!appear,tag=!grab_ball] run function luigis_mansion:entities/bowling_ghost/collide with entity @s data.entity
+execute if entity @e[tag=exact_same_room,tag=luigi,distance=..0.7,limit=1] if entity @s[tag=!vanish,tag=!appear,tag=!grab_ball] run function luigis_mansion:entities/bowling_ghost/collide with entity @s data.entity
 tag @s[tag=!collided,tag=!vanish,tag=!appear,tag=!laugh,tag=!complain,tag=!grabbed_ball] add grab_ball
 execute if entity @s[tag=!collided,tag=!vanish,tag=!appear] run function luigis_mansion:entities/bowling_ghost/try_attack
 

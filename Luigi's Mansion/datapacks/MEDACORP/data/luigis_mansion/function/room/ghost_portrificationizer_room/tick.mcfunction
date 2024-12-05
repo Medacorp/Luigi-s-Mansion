@@ -1,6 +1,6 @@
 execute unless score #ghost_portrificationizer_room Ticking matches 1 run function #luigis_mansion:room/ghost_portrificationizer_room/load
-execute as @a[x=764,y=75,z=-15,dx=14,dy=7,dz=38] unless entity @s[scores={Room=-3}] run scoreboard players operation @s LastRoom = @s Room
-scoreboard players set @a[x=764,y=75,z=-15,dx=14,dy=7,dz=38] Room -3
+execute as @e[tag=player,x=764,y=75,z=-15,dx=14,dy=7,dz=38] unless entity @s[scores={Room=-3}] run scoreboard players operation @s LastRoom = @s Room
+scoreboard players set @e[tag=player,x=764,y=75,z=-15,dx=14,dy=7,dz=38] Room -3
 #todelete - old furniture
 scoreboard players set #temp Room -3
 #/todelete

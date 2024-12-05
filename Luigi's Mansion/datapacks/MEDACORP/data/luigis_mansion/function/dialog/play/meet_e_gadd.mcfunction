@@ -1,13 +1,13 @@
 execute store result score #temp ID run data get storage luigis_mansion:data dialogs[0].walking_player
-execute as @a[tag=same_room] if score @s ID = #temp ID run tag @s add walking_player
+execute as @e[tag=player,tag=same_room] if score @s ID = #temp ID run tag @s add walking_player
 scoreboard players reset #temp ID
 scoreboard players add #dialog Dialog 1
 
 scoreboard players reset @a[tag=same_room,tag=!spectator] WarpTime
 execute as @a[tag=same_room,tag=!spectator,tag=game_boy_horror_menu] run function luigis_mansion:selection_menu/game_boy_horror/exit
 tag @e[tag=same_room,tag=!no_ai_dialog] remove freeze_animation
-execute if entity @e[tag=ghost,tag=same_room] as @a[tag=same_room] unless entity @s[scores={IdleTime=18}] run scoreboard players set @s IdleTime 18
-execute if score #dialog Dialog matches ..72 run scoreboard players set @a[tag=walking_player,limit=1,scores={IdleTime=19}] IdleTime 18
+execute if entity @e[tag=ghost,tag=same_room] as @e[tag=luigi,tag=same_room] unless entity @s[scores={IdleTime=18}] run scoreboard players set @s IdleTime 18
+execute if score #dialog Dialog matches ..72 run scoreboard players set @e[tag=luigi,tag=walking_player,limit=1,scores={IdleTime=19}] IdleTime 18
 scoreboard players set @e[tag=ghost,tag=same_room] Sound -1
 execute if score #dialog Dialog matches 1 at @a[tag=same_room] run playsound luigis_mansion:ambience.parlor_wind ambient @a[tag=same_room] ~ ~ ~ 1000
 execute if score #dialog Dialog matches 1 at @a[tag=same_room] run playsound luigis_mansion:entity.player.scare_causion player @a[tag=same_room] ~ ~ ~ 1
@@ -17,65 +17,65 @@ execute if score #dialog Dialog matches 1..81 as @a[tag=same_room,tag=!spectator
 execute if score #dialog Dialog matches 1..81 run scoreboard players set @a[tag=same_room,tag=!spectator] Music 1308
 execute if score #dialog Dialog matches 81 run playsound luigis_mansion:music.meet_e_gadd music @a[tag=same_room,tag=!spectator] ~ ~ ~ 1000
 tag @a[tag=same_room] add disable_interact
-execute if score #dialog Dialog matches 1..7 run teleport @a[tag=walking_player,limit=1] 725.5 20 28.0 90 0
+execute if score #dialog Dialog matches 1..7 as @e[tag=luigi,tag=walking_player,limit=1] run function luigis_mansion:entities/luigi/move/teleport {teleport:"725.5 20 28.0 90 0"}
 execute if score #dialog Dialog matches 8..17 run tag @a[tag=walking_player,limit=1] add walking
-execute if score #dialog Dialog matches 8 run teleport @a[tag=walking_player,limit=1] 725.5 20 28.1 90 0
-execute if score #dialog Dialog matches 9 run teleport @a[tag=walking_player,limit=1] 725.5 20 28.2 90 0
-execute if score #dialog Dialog matches 10 run teleport @a[tag=walking_player,limit=1] 725.5 20 28.3 90 0
-execute if score #dialog Dialog matches 11 run teleport @a[tag=walking_player,limit=1] 725.5 20 28.4 90 0
-execute if score #dialog Dialog matches 12 run teleport @a[tag=walking_player,limit=1] 725.5 20 28.5 90 0
-execute if score #dialog Dialog matches 13 run teleport @a[tag=walking_player,limit=1] 725.5 20 28.6 90 0
-execute if score #dialog Dialog matches 14 run teleport @a[tag=walking_player,limit=1] 725.5 20 28.7 90 0
-execute if score #dialog Dialog matches 15 run teleport @a[tag=walking_player,limit=1] 725.5 20 28.8 90 0
-execute if score #dialog Dialog matches 16 run teleport @a[tag=walking_player,limit=1] 725.5 20 28.9 90 0
-execute if score #dialog Dialog matches 17..27 run teleport @a[tag=walking_player,limit=1] 725.5 20 29.0 90 0
+execute if score #dialog Dialog matches 8 as @e[tag=luigi,tag=walking_player,limit=1] run function luigis_mansion:entities/luigi/move/teleport {teleport:"725.5 20 28.1 90 0"}
+execute if score #dialog Dialog matches 9 as @e[tag=luigi,tag=walking_player,limit=1] run function luigis_mansion:entities/luigi/move/teleport {teleport:"725.5 20 28.2 90 0"}
+execute if score #dialog Dialog matches 10 as @e[tag=luigi,tag=walking_player,limit=1] run function luigis_mansion:entities/luigi/move/teleport {teleport:"725.5 20 28.3 90 0"}
+execute if score #dialog Dialog matches 11 as @e[tag=luigi,tag=walking_player,limit=1] run function luigis_mansion:entities/luigi/move/teleport {teleport:"725.5 20 28.4 90 0"}
+execute if score #dialog Dialog matches 12 as @e[tag=luigi,tag=walking_player,limit=1] run function luigis_mansion:entities/luigi/move/teleport {teleport:"725.5 20 28.5 90 0"}
+execute if score #dialog Dialog matches 13 as @e[tag=luigi,tag=walking_player,limit=1] run function luigis_mansion:entities/luigi/move/teleport {teleport:"725.5 20 28.6 90 0"}
+execute if score #dialog Dialog matches 14 as @e[tag=luigi,tag=walking_player,limit=1] run function luigis_mansion:entities/luigi/move/teleport {teleport:"725.5 20 28.7 90 0"}
+execute if score #dialog Dialog matches 15 as @e[tag=luigi,tag=walking_player,limit=1] run function luigis_mansion:entities/luigi/move/teleport {teleport:"725.5 20 28.8 90 0"}
+execute if score #dialog Dialog matches 16 as @e[tag=luigi,tag=walking_player,limit=1] run function luigis_mansion:entities/luigi/move/teleport {teleport:"725.5 20 28.9 90 0"}
+execute if score #dialog Dialog matches 17..27 as @e[tag=luigi,tag=walking_player,limit=1] run function luigis_mansion:entities/luigi/move/teleport {teleport:"725.5 20 29.0 90 0"}
 execute if score #dialog Dialog matches 28..37 run tag @a[tag=walking_player,limit=1] add walking
-execute if score #dialog Dialog matches 28 run teleport @a[tag=walking_player,limit=1] 725.5 20 29.1 90 0
-execute if score #dialog Dialog matches 29 run teleport @a[tag=walking_player,limit=1] 725.5 20 29.2 90 0
-execute if score #dialog Dialog matches 30 run teleport @a[tag=walking_player,limit=1] 725.5 20 29.3 87.75 0
-execute if score #dialog Dialog matches 31 run teleport @a[tag=walking_player,limit=1] 725.5 20 29.4 85.5 0
-execute if score #dialog Dialog matches 32 run teleport @a[tag=walking_player,limit=1] 725.5 20 29.5 83.25 0
-execute if score #dialog Dialog matches 33 run teleport @a[tag=walking_player,limit=1] 725.5 20 29.6 81 0
-execute if score #dialog Dialog matches 34 run teleport @a[tag=walking_player,limit=1] 725.5 20 29.7 78.75 0
-execute if score #dialog Dialog matches 35 run teleport @a[tag=walking_player,limit=1] 725.5 20 29.8 76.5 0
-execute if score #dialog Dialog matches 36 run teleport @a[tag=walking_player,limit=1] 725.5 20 29.9 74.25 0
-execute if score #dialog Dialog matches 37 run teleport @a[tag=walking_player,limit=1] 725.5 20 30.0 72 0
-execute if score #dialog Dialog matches 38 run teleport @a[tag=walking_player,limit=1] 725.5 20 30.0 69.75 0
-execute if score #dialog Dialog matches 39 run teleport @a[tag=walking_player,limit=1] 725.5 20 30.0 67.5 0
-execute if score #dialog Dialog matches 40 run teleport @a[tag=walking_player,limit=1] 725.5 20 30.0 65.25 0
-execute if score #dialog Dialog matches 41 run teleport @a[tag=walking_player,limit=1] 725.5 20 30.0 63 0
-execute if score #dialog Dialog matches 42 run teleport @a[tag=walking_player,limit=1] 725.5 20 30.0 60.75 0
-execute if score #dialog Dialog matches 43 run teleport @a[tag=walking_player,limit=1] 725.5 20 30.0 58.5 0
-execute if score #dialog Dialog matches 44 run teleport @a[tag=walking_player,limit=1] 725.5 20 30.0 56.25 0
-execute if score #dialog Dialog matches 45 run teleport @a[tag=walking_player,limit=1] 725.5 20 30.0 54 0
-execute if score #dialog Dialog matches 46 run teleport @a[tag=walking_player,limit=1] 725.5 20 30.0 51.75 0
-execute if score #dialog Dialog matches 47 run teleport @a[tag=walking_player,limit=1] 725.5 20 30.0 49.5 0
+execute if score #dialog Dialog matches 28 as @e[tag=luigi,tag=walking_player,limit=1] run function luigis_mansion:entities/luigi/move/teleport {teleport:"725.5 20 29.1 90 0"}
+execute if score #dialog Dialog matches 29 as @e[tag=luigi,tag=walking_player,limit=1] run function luigis_mansion:entities/luigi/move/teleport {teleport:"725.5 20 29.2 90 0"}
+execute if score #dialog Dialog matches 30 as @e[tag=luigi,tag=walking_player,limit=1] run function luigis_mansion:entities/luigi/move/teleport {teleport:"725.5 20 29.3 87.75 0"}
+execute if score #dialog Dialog matches 31 as @e[tag=luigi,tag=walking_player,limit=1] run function luigis_mansion:entities/luigi/move/teleport {teleport:"725.5 20 29.4 85.5 0"}
+execute if score #dialog Dialog matches 32 as @e[tag=luigi,tag=walking_player,limit=1] run function luigis_mansion:entities/luigi/move/teleport {teleport:"725.5 20 29.5 83.25 0"}
+execute if score #dialog Dialog matches 33 as @e[tag=luigi,tag=walking_player,limit=1] run function luigis_mansion:entities/luigi/move/teleport {teleport:"725.5 20 29.6 81 0"}
+execute if score #dialog Dialog matches 34 as @e[tag=luigi,tag=walking_player,limit=1] run function luigis_mansion:entities/luigi/move/teleport {teleport:"725.5 20 29.7 78.75 0"}
+execute if score #dialog Dialog matches 35 as @e[tag=luigi,tag=walking_player,limit=1] run function luigis_mansion:entities/luigi/move/teleport {teleport:"725.5 20 29.8 76.5 0"}
+execute if score #dialog Dialog matches 36 as @e[tag=luigi,tag=walking_player,limit=1] run function luigis_mansion:entities/luigi/move/teleport {teleport:"725.5 20 29.9 74.25 0"}
+execute if score #dialog Dialog matches 37 as @e[tag=luigi,tag=walking_player,limit=1] run function luigis_mansion:entities/luigi/move/teleport {teleport:"725.5 20 30.0 72 0"}
+execute if score #dialog Dialog matches 38 as @e[tag=luigi,tag=walking_player,limit=1] run function luigis_mansion:entities/luigi/move/teleport {teleport:"725.5 20 30.0 69.75 0"}
+execute if score #dialog Dialog matches 39 as @e[tag=luigi,tag=walking_player,limit=1] run function luigis_mansion:entities/luigi/move/teleport {teleport:"725.5 20 30.0 67.5 0"}
+execute if score #dialog Dialog matches 40 as @e[tag=luigi,tag=walking_player,limit=1] run function luigis_mansion:entities/luigi/move/teleport {teleport:"725.5 20 30.0 65.25 0"}
+execute if score #dialog Dialog matches 41 as @e[tag=luigi,tag=walking_player,limit=1] run function luigis_mansion:entities/luigi/move/teleport {teleport:"725.5 20 30.0 63 0"}
+execute if score #dialog Dialog matches 42 as @e[tag=luigi,tag=walking_player,limit=1] run function luigis_mansion:entities/luigi/move/teleport {teleport:"725.5 20 30.0 60.75 0"}
+execute if score #dialog Dialog matches 43 as @e[tag=luigi,tag=walking_player,limit=1] run function luigis_mansion:entities/luigi/move/teleport {teleport:"725.5 20 30.0 58.5 0"}
+execute if score #dialog Dialog matches 44 as @e[tag=luigi,tag=walking_player,limit=1] run function luigis_mansion:entities/luigi/move/teleport {teleport:"725.5 20 30.0 56.25 0"}
+execute if score #dialog Dialog matches 45 as @e[tag=luigi,tag=walking_player,limit=1] run function luigis_mansion:entities/luigi/move/teleport {teleport:"725.5 20 30.0 54 0"}
+execute if score #dialog Dialog matches 46 as @e[tag=luigi,tag=walking_player,limit=1] run function luigis_mansion:entities/luigi/move/teleport {teleport:"725.5 20 30.0 51.75 0"}
+execute if score #dialog Dialog matches 47 as @e[tag=luigi,tag=walking_player,limit=1] run function luigis_mansion:entities/luigi/move/teleport {teleport:"725.5 20 30.0 49.5 0"}
 execute if score #dialog Dialog matches 48..57 run tag @a[tag=walking_player,limit=1] add walking
-execute if score #dialog Dialog matches 48 run teleport @a[tag=walking_player,limit=1] 725.5 20 30.1 47.25 0
-execute if score #dialog Dialog matches 49 run teleport @a[tag=walking_player,limit=1] 725.5 20 30.2 45 0
-execute if score #dialog Dialog matches 50 run teleport @a[tag=walking_player,limit=1] 725.5 20 30.3 42.75 0
-execute if score #dialog Dialog matches 51 run teleport @a[tag=walking_player,limit=1] 725.5 20 30.4 40.5 0
-execute if score #dialog Dialog matches 52 run teleport @a[tag=walking_player,limit=1] 725.5 20 30.5 38.25 0
-execute if score #dialog Dialog matches 53 run teleport @a[tag=walking_player,limit=1] 725.5 20 30.6 36 0
-execute if score #dialog Dialog matches 54 run teleport @a[tag=walking_player,limit=1] 725.5 20 30.7 33.75 0
-execute if score #dialog Dialog matches 55 run teleport @a[tag=walking_player,limit=1] 725.5 20 30.8 31.5 0
-execute if score #dialog Dialog matches 56 run teleport @a[tag=walking_player,limit=1] 725.5 20 30.9 29.25 0
-execute if score #dialog Dialog matches 57 run teleport @a[tag=walking_player,limit=1] 725.5 20 31.0 27 0
-execute if score #dialog Dialog matches 58 run teleport @a[tag=walking_player,limit=1] 725.5 20 31.0 24.75 0
-execute if score #dialog Dialog matches 59 run teleport @a[tag=walking_player,limit=1] 725.5 20 31.0 22.5 0
-execute if score #dialog Dialog matches 60 run teleport @a[tag=walking_player,limit=1] 725.5 20 31.0 20.25 0
-execute if score #dialog Dialog matches 61 run teleport @a[tag=walking_player,limit=1] 725.5 20 31.0 18 0
-execute if score #dialog Dialog matches 62 run teleport @a[tag=walking_player,limit=1] 725.5 20 31.0 15.75 0
-execute if score #dialog Dialog matches 63 run teleport @a[tag=walking_player,limit=1] 725.5 20 31.0 13.5 0
-execute if score #dialog Dialog matches 64 run teleport @a[tag=walking_player,limit=1] 725.5 20 31.0 11.25 0
-execute if score #dialog Dialog matches 65 run teleport @a[tag=walking_player,limit=1] 725.5 20 31.0 9 0
-execute if score #dialog Dialog matches 66 run teleport @a[tag=walking_player,limit=1] 725.5 20 31.0 6.75 0
-execute if score #dialog Dialog matches 67 run teleport @a[tag=walking_player,limit=1] 725.5 20 31.0 4.5 0
+execute if score #dialog Dialog matches 48 as @e[tag=luigi,tag=walking_player,limit=1] run function luigis_mansion:entities/luigi/move/teleport {teleport:"725.5 20 30.1 47.25 0"}
+execute if score #dialog Dialog matches 49 as @e[tag=luigi,tag=walking_player,limit=1] run function luigis_mansion:entities/luigi/move/teleport {teleport:"725.5 20 30.2 45 0"}
+execute if score #dialog Dialog matches 50 as @e[tag=luigi,tag=walking_player,limit=1] run function luigis_mansion:entities/luigi/move/teleport {teleport:"725.5 20 30.3 42.75 0"}
+execute if score #dialog Dialog matches 51 as @e[tag=luigi,tag=walking_player,limit=1] run function luigis_mansion:entities/luigi/move/teleport {teleport:"725.5 20 30.4 40.5 0"}
+execute if score #dialog Dialog matches 52 as @e[tag=luigi,tag=walking_player,limit=1] run function luigis_mansion:entities/luigi/move/teleport {teleport:"725.5 20 30.5 38.25 0"}
+execute if score #dialog Dialog matches 53 as @e[tag=luigi,tag=walking_player,limit=1] run function luigis_mansion:entities/luigi/move/teleport {teleport:"725.5 20 30.6 36 0"}
+execute if score #dialog Dialog matches 54 as @e[tag=luigi,tag=walking_player,limit=1] run function luigis_mansion:entities/luigi/move/teleport {teleport:"725.5 20 30.7 33.75 0"}
+execute if score #dialog Dialog matches 55 as @e[tag=luigi,tag=walking_player,limit=1] run function luigis_mansion:entities/luigi/move/teleport {teleport:"725.5 20 30.8 31.5 0"}
+execute if score #dialog Dialog matches 56 as @e[tag=luigi,tag=walking_player,limit=1] run function luigis_mansion:entities/luigi/move/teleport {teleport:"725.5 20 30.9 29.25 0"}
+execute if score #dialog Dialog matches 57 as @e[tag=luigi,tag=walking_player,limit=1] run function luigis_mansion:entities/luigi/move/teleport {teleport:"725.5 20 31.0 27 0"}
+execute if score #dialog Dialog matches 58 as @e[tag=luigi,tag=walking_player,limit=1] run function luigis_mansion:entities/luigi/move/teleport {teleport:"725.5 20 31.0 24.75 0"}
+execute if score #dialog Dialog matches 59 as @e[tag=luigi,tag=walking_player,limit=1] run function luigis_mansion:entities/luigi/move/teleport {teleport:"725.5 20 31.0 22.5 0"}
+execute if score #dialog Dialog matches 60 as @e[tag=luigi,tag=walking_player,limit=1] run function luigis_mansion:entities/luigi/move/teleport {teleport:"725.5 20 31.0 20.25 0"}
+execute if score #dialog Dialog matches 61 as @e[tag=luigi,tag=walking_player,limit=1] run function luigis_mansion:entities/luigi/move/teleport {teleport:"725.5 20 31.0 18 0"}
+execute if score #dialog Dialog matches 62 as @e[tag=luigi,tag=walking_player,limit=1] run function luigis_mansion:entities/luigi/move/teleport {teleport:"725.5 20 31.0 15.75 0"}
+execute if score #dialog Dialog matches 63 as @e[tag=luigi,tag=walking_player,limit=1] run function luigis_mansion:entities/luigi/move/teleport {teleport:"725.5 20 31.0 13.5 0"}
+execute if score #dialog Dialog matches 64 as @e[tag=luigi,tag=walking_player,limit=1] run function luigis_mansion:entities/luigi/move/teleport {teleport:"725.5 20 31.0 11.25 0"}
+execute if score #dialog Dialog matches 65 as @e[tag=luigi,tag=walking_player,limit=1] run function luigis_mansion:entities/luigi/move/teleport {teleport:"725.5 20 31.0 9 0"}
+execute if score #dialog Dialog matches 66 as @e[tag=luigi,tag=walking_player,limit=1] run function luigis_mansion:entities/luigi/move/teleport {teleport:"725.5 20 31.0 6.75 0"}
+execute if score #dialog Dialog matches 67 as @e[tag=luigi,tag=walking_player,limit=1] run function luigis_mansion:entities/luigi/move/teleport {teleport:"725.5 20 31.0 4.5 0"}
 execute if score #dialog Dialog matches 68..71 run tag @a[tag=walking_player,limit=1] add walking
-execute if score #dialog Dialog matches 68 run teleport @a[tag=walking_player,limit=1] 725.5 20 31.1 2.25 0
-execute if score #dialog Dialog matches 69 run teleport @a[tag=walking_player,limit=1] 725.5 20 31.2 0 0
-execute if score #dialog Dialog matches 70 run teleport @a[tag=walking_player,limit=1] 725.5 20 31.3 0 0
-execute if score #dialog Dialog matches 71..81 run teleport @a[tag=walking_player,limit=1] 725.5 20 31.4 0 0
+execute if score #dialog Dialog matches 68 as @e[tag=luigi,tag=walking_player,limit=1] run function luigis_mansion:entities/luigi/move/teleport {teleport:"725.5 20 31.1 2.25 0"}
+execute if score #dialog Dialog matches 69 as @e[tag=luigi,tag=walking_player,limit=1] run function luigis_mansion:entities/luigi/move/teleport {teleport:"725.5 20 31.2 0 0"}
+execute if score #dialog Dialog matches 70 as @e[tag=luigi,tag=walking_player,limit=1] run function luigis_mansion:entities/luigi/move/teleport {teleport:"725.5 20 31.3 0 0"}
+execute if score #dialog Dialog matches 71..81 as @e[tag=luigi,tag=walking_player,limit=1] run function luigis_mansion:entities/luigi/move/teleport {teleport:"725.5 20 31.4 0 0"}
 execute if score #dialog Dialog matches 72 run data modify storage luigis_mansion:data entity set value {room:3,can_talk_to:0b,tags:["same_room","no_dialog_freeze"]}
 execute if score #dialog Dialog matches 72 positioned 718 20 35 run function luigis_mansion:spawn_entities/e_gadd
 execute if score #dialog Dialog matches 72 run data modify storage luigis_mansion:data entity set value {room:3,no_ai:1b,tags:["same_room","visible","no_dialog_freeze"],animation:{namespace:"luigis_mansion",id:"appear/normal"}}
@@ -83,11 +83,11 @@ execute if score #dialog Dialog matches 72 positioned 725 20 34.9 run function l
 execute if score #dialog Dialog matches 72 run playsound luigis_mansion:entity.gold_ghost.spawn hostile @a[tag=same_room] 725 20 34.9 1
 execute if score #dialog Dialog matches 72 run teleport @a[tag=same_room] 725.5 20 31.4 facing entity @e[tag=ghost,tag=same_room,limit=1] feet
 execute if score #dialog Dialog matches 72 run teleport @e[tag=ghost,tag=same_room,limit=1] 725 20 34.9 -180 0
-execute if score #dialog Dialog matches 72 as @a[tag=same_room] at @e[tag=ghost,tag=same_room,limit=1] run function luigis_mansion:entities/player/animation/set/scare/bash
-execute if score #dialog Dialog matches 72 run tag @a[tag=walking_player,limit=1] add bash_no_move
-execute if score #dialog Dialog matches 72..190 run scoreboard players set @a[tag=same_room,scores={AnimationProgress=30..}] AnimationProgress 29
+execute if score #dialog Dialog matches 72 as @e[tag=luigi,tag=same_room] at @e[tag=ghost,tag=same_room,limit=1] run function luigis_mansion:entities/luigi/animation/set/scare/bash
+execute if score #dialog Dialog matches 72 run tag @e[tag=luigi,tag=walking_player,limit=1] add bash_no_move
+execute if score #dialog Dialog matches 72..190 run scoreboard players set @e[tag=luigi,tag=same_room,scores={AnimationProgress=30..}] AnimationProgress 29
 execute if score #dialog Dialog matches 92 run data modify entity @e[tag=ghost,tag=same_room,limit=1] data.animation set value {namespace:"luigis_mansion",id:"haunt"}
-execute if score #dialog Dialog matches 92..149 as @a[tag=walking_player,limit=1] at @e[tag=ghost,tag=same_room,limit=1] positioned ^ ^ ^3.5 rotated ~-180 ~ run function luigis_mansion:entities/player/animation/scare/bash_force_move
+execute if score #dialog Dialog matches 92..149 as @e[tag=luigi,tag=walking_player,limit=1] at @e[tag=ghost,tag=same_room,limit=1] positioned ^ ^ ^3.5 rotated ~-180 ~ run function luigis_mansion:entities/luigi/animation/scare/bash_force_move
 execute if score #dialog Dialog matches 92..149 as @e[tag=ghost,tag=same_room,limit=1] at @s run teleport @s ^ ^ ^0.11 ~ ~
 execute if score #dialog Dialog matches 98 as @e[tag=e_gadd,tag=same_room,limit=1] at @s run teleport @s ~ ~ ~ facing 718 20 31
 execute if score #dialog Dialog matches 98 run data modify entity @e[tag=e_gadd,tag=same_room,limit=1] data.animation set value {namespace:"luigis_mansion",id:"walk"}
@@ -95,10 +95,10 @@ execute if score #dialog Dialog matches 99..129 as @e[tag=e_gadd,tag=same_room,l
 execute if score #dialog Dialog matches 130 as @e[tag=e_gadd,tag=same_room,limit=1] at @s run teleport @s ~ ~ ~ facing 722 20 29
 execute if score #dialog Dialog matches 131..150 as @e[tag=e_gadd,tag=same_room,limit=1] at @s run teleport @s ^ ^ ^0.125
 execute if score #dialog Dialog matches 150 run data modify entity @e[tag=e_gadd,tag=same_room,limit=1] data.animation set value {namespace:"luigis_mansion",id:"vacuum"}
-execute if score #dialog Dialog matches 150 run data modify entity @e[tag=e_gadd,tag=same_room,limit=1] data.poltergust set value {id:"minecraft:carrot_on_a_stick",count:1,components:{"minecraft:unbreakable":{show_in_tooltip:0b},"minecraft:custom_model_data":{flags:[B;0b],strings:["nozzle"]},"minecraft:item_model":"luigis_mansion:poltergust_3000","minecraft:item_name":'{"type":"translatable","translate":"luigis_mansion:item.poltergust_3000"}',"minecraft:lore":['{"italic":false,"color":"gray","type":"translatable","translate":"luigis_mansion:item.poltergust_3000.element","with":[{"type":"translatable","translate":"luigis_mansion:item.poltergust_3000.element.none","color":"gray"}]}'],"minecraft:custom_data":{namespace:"luigis_mansion",id:"poltergust_3000",is_poltergust:1b,is_nozzle:1b,model_data:{body_right:{components:{"minecraft:custom_model_data":{flags:[B;0b],strings:["body"]},"minecraft:custom_data":{mirror:{components:{"minecraft:custom_model_data":{flags:[B;1b],strings:["body"]}}}}}},body_left:{components:{"minecraft:custom_model_data":{flags:[B;1b],strings:["body"]},"minecraft:custom_data":{mirror:{components:{"minecraft:custom_model_data":{flags:[B;0b],strings:["body"]}}}}}},body_sat_on_right:{components:{"minecraft:custom_model_data":{flags:[B;0b],strings:["body_sat_on"]},"minecraft:custom_data":{mirror:{components:{"minecraft:custom_model_data":{flags:[B;1b],strings:["body_sat_on"]}}}}}},body_sat_on_left:{components:{"minecraft:custom_model_data":{flags:[B;1b],strings:["body_sat_on"]},"minecraft:custom_data":{mirror:{components:{"minecraft:custom_model_data":{flags:[B;0b],strings:["body_sat_on"]}}}}}},body_idle_right:{components:{"minecraft:custom_model_data":{flags:[B;0b],strings:["body_idle"]},"minecraft:custom_data":{mirror:{components:{"minecraft:custom_model_data":{flags:[B;1b],strings:["body_idle"]}}}}}},body_idle_left:{components:{"minecraft:custom_model_data":{flags:[B;1b],strings:["body_idle"]},"minecraft:custom_data":{mirror:{components:{"minecraft:custom_model_data":{flags:[B;0b],strings:["body_idle"]}}}}}}},sync_element:1b,kill:1b}}}
+execute if score #dialog Dialog matches 150 run data modify entity @e[tag=e_gadd,tag=same_room,limit=1] data.poltergust set value {id:"minecraft:carrot_on_a_stick",count:1,components:{"minecraft:unbreakable":{show_in_tooltip:0b},"minecraft:custom_model_data":{flags:[B;0b],strings:["nozzle"]},"minecraft:item_model":"luigis_mansion:poltergust_3000","minecraft:item_name":'{"type":"translatable","translate":"luigis_mansion:item.poltergust_3000"}',"minecraft:lore":['{"italic":false,"color":"gray","type":"translatable","translate":"luigis_mansion:item.poltergust_3000.element","with":[{"type":"translatable","translate":"luigis_mansion:item.poltergust_3000.element.none","color":"gray"}]}'],"minecraft:custom_data":{namespace:"luigis_mansion",id:"poltergust_3000",is_poltergust:1b,is_nozzle:1b,model_data:{body_right:{components:{"minecraft:custom_model_data":{flags:[B;0b],strings:["body"]},"minecraft:custom_data":{mirror:{components:{"minecraft:custom_model_data":{flags:[B;1b],strings:["body"]}}}}}},body_left:{components:{"minecraft:custom_model_data":{flags:[B;1b],strings:["body"]},"minecraft:custom_data":{mirror:{components:{"minecraft:custom_model_data":{flags:[B;0b],strings:["body"]}}}}}},body_sat_on_right:{components:{"minecraft:custom_model_data":{flags:[B;0b],strings:["body_sat_on"]},"minecraft:custom_data":{mirror:{components:{"minecraft:custom_model_data":{flags:[B;1b],strings:["body_sat_on"]}}}}}},body_sat_on_left:{components:{"minecraft:custom_model_data":{flags:[B;1b],strings:["body_sat_on"]},"minecraft:custom_data":{mirror:{components:{"minecraft:custom_model_data":{flags:[B;0b],strings:["body_sat_on"]}}}}}},body_idle_right:{components:{"minecraft:custom_model_data":{flags:[B;0b],strings:["body_idle"]},"minecraft:custom_data":{mirror:{components:{"minecraft:custom_model_data":{flags:[B;1b],strings:["body_idle"]}}}}}},body_idle_left:{components:{"minecraft:custom_model_data":{flags:[B;1b],strings:["body_idle"]},"minecraft:custom_data":{mirror:{components:{"minecraft:custom_model_data":{flags:[B;0b],strings:["body_idle"]}}}}}}},kill:1b}}}
 execute if score #dialog Dialog matches 150..459 at @e[tag=e_gadd,tag=same_room,limit=1] positioned ~ ~0.25 ~ positioned ^ ^ ^0.5 as @e[tag=ghost,tag=same_room,limit=1] facing entity @s feet run function luigis_mansion:items/poltergust_3000/vacuuming/e_gadd
 execute if score #dialog Dialog matches 150 run data modify entity @e[tag=ghost,tag=same_room,limit=1] data.animation set value {namespace:"luigis_mansion",id:"hurt"}
-execute if score #dialog Dialog matches 150 run tag @a[tag=walking_player,limit=1] remove bash_no_move
+execute if score #dialog Dialog matches 150 run tag @e[tag=luigi,tag=walking_player,limit=1] remove bash_no_move
 execute if score #dialog Dialog matches 150 at @e[tag=ghost,tag=same_room,limit=1] run playsound luigis_mansion:entity.gold_ghost.hurt hostile @a[tag=same_room] ~ ~ ~ 1
 execute if score #dialog Dialog matches 170 at @e[tag=e_gadd,tag=same_room,limit=1] run playsound luigis_mansion:entity.e_gadd.talk.soy_soh_ooh neutral @a[tag=same_room] ~ ~ ~ 1
 execute if score #dialog Dialog matches 233 at @e[tag=e_gadd,tag=same_room,limit=1] run playsound luigis_mansion:entity.e_gadd.dragged neutral @a[tag=same_room] ~ ~ ~ 1
@@ -165,7 +165,7 @@ execute if score #dialog Dialog matches 946..1187 as @e[tag=e_gadd,tag=same_room
 execute if score #dialog Dialog matches 1045 if score #players Totals matches 1 run tellraw @a[tag=same_room] {"type":"translatable","translate":"chat.type.text","with":[{"type":"translatable","translate":"luigis_mansion:entity.e_gadd","color":"green"},{"type":"translatable","translate":"luigis_mansion:dialog.meet_e_gadd.6"}]}
 execute if score #dialog Dialog matches 1045 if score #players Totals matches 2.. run tellraw @a[tag=same_room] {"type":"translatable","translate":"chat.type.text","with":[{"type":"translatable","translate":"luigis_mansion:entity.e_gadd","color":"green"},{"type":"translatable","translate":"luigis_mansion:dialog.meet_e_gadd.6.more"}]}
 execute if score #dialog Dialog matches 1045 at @e[tag=e_gadd,tag=same_room,limit=1] run playsound luigis_mansion:entity.e_gadd.talk.oui_oydohroh_tahmentahkeh neutral @a[tag=same_room] ~ ~ ~ 1
-execute if score #dialog Dialog matches 1187 as @a[tag=same_room,tag=!spectator] run function luigis_mansion:entities/player/animation/set/none
+execute if score #dialog Dialog matches 1187 as @e[tag=luigi,tag=same_room] run function luigis_mansion:entities/luigi/animation/set/none
 execute if score #dialog Dialog matches 1187 run data modify storage luigis_mansion:data entity set value {room:3,no_ai:1b,tags:["same_room","visible","ghost_1","no_dialog_freeze"],animation:{namespace:"luigis_mansion",id:"appear/beta"}}
 execute if score #dialog Dialog matches 1187 positioned 718 20 29 run function luigis_mansion:spawn_entities/ghost/gold_ghost
 execute if score #dialog Dialog matches 1187 run playsound luigis_mansion:entity.gold_ghost.spawn_beta hostile @a[tag=same_room] 718 20 29 1
@@ -194,8 +194,7 @@ execute if score #dialog Dialog matches 1319 at @e[tag=e_gadd,tag=same_room,limi
 execute if score #dialog Dialog matches 1387 run teleport @e[tag=same_room,limit=1] ~ ~-100 ~
 execute if score #dialog Dialog matches 1388 run tag @e[tag=same_room,type=!minecraft:player] add remove_from_existence
 execute if score #dialog Dialog matches 1388 as @a[scores={MusicType=-1}] run function luigis_mansion:other/music/set/silence
-execute if score #dialog Dialog matches 1388 run data modify storage luigis_mansion:data found_e_gadd set value 1b
 execute if score #dialog Dialog matches 1388 run data modify storage luigis_mansion:data dialogs append value {name:{namespace:"luigis_mansion",id:"the_mansion"},room:-1,progress:-1}
 execute if score #dialog Dialog matches 1388 as @a[tag=same_room] run function luigis_mansion:room/underground_lab/warp_to
 execute if score #dialog Dialog matches 1388 run scoreboard players set #dialog Dialog -1
-tag @a[tag=same_room] remove walking_player
+tag @e[tag=walking_player] remove walking_player

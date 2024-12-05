@@ -1,7 +1,5 @@
-execute store result score #temp ActionTime run clear @s *[minecraft:custom_data~{namespace:"luigis_mansion",id:"contest_reward_map"}] 0
-execute if score #temp ActionTime matches 0 run function luigis_mansion:entities/player/get_available_slot
-execute if score #temp ActionTime matches 0 unless score @s AvailableSlot matches -1 run data modify storage luigis_mansion:data inventory set from entity @s Inventory
-execute if score #temp ActionTime matches 0 unless score @s AvailableSlot matches -1 run data modify storage luigis_mansion:data inventory append value {Slot:0b,id:"minecraft:diamond_pickaxe",count:1,components:{"minecraft:unbreakable":{show_in_tooltip:0b},"minecraft:attribute_modifiers":{modifiers:[]},"minecraft:item_model":"luigis_mansion:contest_reward_map","minecraft:item_name":'{"type":"translatable","translate":"luigis_mansion:item.contest_reward_map"}',"minecraft:custom_data":{namespace:"luigis_mansion",id:"contest_reward_map"}}}
-execute if score #temp ActionTime matches 0 unless score @s AvailableSlot matches -1 store result storage luigis_mansion:data inventory[-1].Slot byte 1 run scoreboard players get @s AvailableSlot
-execute if score #temp ActionTime matches 0 unless score @s AvailableSlot matches -1 run function luigis_mansion:other/sync_inventory
+execute store result score #temp ActionTime run clear @a[tag=this_player,limit=1] *[minecraft:custom_data~{namespace:"luigis_mansion",id:"contest_reward_map"}] 0
+execute if score #temp ActionTime matches 0 run function luigis_mansion:entities/luigi/get_available_slot
+execute if score #temp ActionTime matches 0 unless score @s AvailableSlot matches -1 run data modify entity @s data.inventory append value {Slot:0b,id:"minecraft:diamond_pickaxe",count:1,components:{"minecraft:unbreakable":{show_in_tooltip:0b},"minecraft:attribute_modifiers":{modifiers:[]},"minecraft:item_model":"luigis_mansion:contest_reward_map","minecraft:item_name":'{"type":"translatable","translate":"luigis_mansion:item.contest_reward_map"}',"minecraft:custom_data":{namespace:"luigis_mansion",id:"contest_reward_map"}}}
+execute if score #temp ActionTime matches 0 unless score @s AvailableSlot matches -1 store result entity @s data.inventory[-1].Slot byte 1 run scoreboard players get @s AvailableSlot
 scoreboard players reset #temp ActionTime

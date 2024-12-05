@@ -1,0 +1,2 @@
+execute if entity @s[tag=!separated_camera] store result score @s HomeRotation run data get entity @s Rotation[0]
+execute if entity @s[tag=separated_camera] run scoreboard players operation @s HomeRotation = @s ModelRotationY

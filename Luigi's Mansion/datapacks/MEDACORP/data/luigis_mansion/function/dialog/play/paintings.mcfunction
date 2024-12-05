@@ -7,7 +7,7 @@ execute as @a[tag=same_room,tag=!spectator,tag=game_boy_horror_menu] run functio
 tag @e[tag=furniture,tag=same_room,limit=1] remove freeze_animation
 tag @e[tag=furniture,tag=same_room,limit=1] remove no_ai
 execute if score #dialog Dialog matches 1 as @a[tag=same_room,tag=!spectator] at @s run playsound luigis_mansion:entity.ghost.laugh hostile @s ~ ~ ~ 3
-execute if score #dialog Dialog matches 1..579 as @a[tag=!spectator,tag=same_room] run function luigis_mansion:entities/player/animation/set/idle
+execute if score #dialog Dialog matches 1..579 as @e[tag=luigi,tag=same_room] run function luigis_mansion:entities/luigi/animation/set/idle
 execute if score #dialog Dialog matches 20 run stopsound @a[tag=same_room,tag=!spectator] music
 execute if score #dialog Dialog matches 20 run playsound luigis_mansion:music.paintings music @a[tag=same_room,tag=!spectator] ~ ~ ~ 1000
 execute if score #dialog Dialog matches 20 run scoreboard players set @a[tag=same_room,tag=!spectator] Music 560
@@ -36,5 +36,5 @@ execute if score #dialog Dialog matches 540 if score #players Totals matches 1 r
 execute if score #dialog Dialog matches 540 if score #players Totals matches 2.. run tellraw @a[tag=same_room] {"type":"translatable","translate":"chat.type.text","with":[{"type":"translatable","translate":"luigis_mansion:furniture.painting","color":"green"},{"type":"translatable","translate":"luigis_mansion:dialog.paintings.8.more"}]}
 execute if score #dialog Dialog matches 540..549 unless score #parlor_painting_4 Search matches 1 store success score #parlor_painting_4 Search run scoreboard players add #parlor_painting_4 Searching 1
 execute if score #dialog Dialog matches 580 run scoreboard players add #parlor Wave 1
-execute if score #dialog Dialog matches 580 as @a[tag=same_room,tag=!spectator] run function luigis_mansion:entities/player/animation/set/none
+execute if score #dialog Dialog matches 580 as @e[tag=luigi,tag=same_room] run function luigis_mansion:entities/luigi/animation/set/none
 execute if score #dialog Dialog matches 580 run scoreboard players set #dialog Dialog -1

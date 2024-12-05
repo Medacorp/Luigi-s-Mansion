@@ -1,8 +1,10 @@
 {
 	"values": [
 		"luigis_mansion:items/flashlight/effects/create_light",
+		"luigis_mansion:items/flashlight/effects/hide_portrait_ghost",
 		"luigis_mansion:items/flashlight/effects/stun_ghost",
 		"luigis_mansion:items/flashlight/effects/stun_portrait_ghost",
-		"luigis_mansion:items/flashlight/effects/vanish_ghost"
+		"luigis_mansion:items/flashlight/effects/vanish_ghost",
+		"luigis_mansion:items/flashlight/effects/illuminate_furniture"
 	]
 }

@@ -1,6 +1,6 @@
 execute unless score #mirror_room Ticking matches 1 run function #luigis_mansion:room/normal/mirror_room/load
-execute as @a[x=734,y=10,z=-63,dx=14,dy=7,dz=21] unless entity @s[scores={Room=21}] run scoreboard players operation @s LastRoom = @s Room
-scoreboard players set @a[x=734,y=10,z=-63,dx=14,dy=7,dz=21] Room 21
+execute as @e[tag=player,x=734,y=10,z=-63,dx=14,dy=7,dz=21] unless entity @s[scores={Room=21}] run scoreboard players operation @s LastRoom = @s Room
+scoreboard players set @e[tag=player,x=734,y=10,z=-63,dx=14,dy=7,dz=21] Room 21
 #todelete - old furniture
 scoreboard players set #temp Room 21
 #/todelete
@@ -15,4 +15,4 @@ function #luigis_mansion:room/normal/mirror_room/interactions/room
 
 execute unless entity @e[tag=light_me,tag=!lit,scores={Room=21},limit=1] run tag @e[scores={Room=21},tag=furniture,tag=door] remove blockade
 
-execute if entity @a[tag=!pause_dialog,scores={Room=21},tag=!spectator,limit=1] run function luigis_mansion:room/normal/mirror_room/ghosts
+execute if entity @e[tag=luigi,tag=!door_animation,scores={Room=21},limit=1] run function luigis_mansion:room/normal/mirror_room/ghosts

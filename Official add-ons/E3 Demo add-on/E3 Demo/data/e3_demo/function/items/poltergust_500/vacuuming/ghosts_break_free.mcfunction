@@ -1,6 +1,7 @@
 scoreboard players set @s[tag=!capturing_ghost] Invulnerable 0
-execute if entity @s[tag=!capturing_ghost] facing entity @e[tag=ghost,tag=hurt,tag=being_vacuumed,sort=random,scores={ErrorTime=5..},limit=1] feet rotated ~ 0 positioned ^ ^ ^1 run function luigis_mansion:entities/player/animation/set/knockback/large
-execute unless entity @e[tag=ghost,tag=hurt,tag=being_vacuumed,scores={ErrorTime=5..},limit=1] if entity @s[tag=!capturing_ghost] facing entity @e[tag=ghost,tag=hurt,tag=being_vacuumed,sort=random,limit=1] feet rotated ~ 0 positioned ^ ^ ^1 run function luigis_mansion:entities/player/animation/set/knockback/large
+execute if entity @s[tag=!capturing_ghost] facing entity @e[tag=ghost,tag=hurt,tag=being_vacuumed,sort=random,scores={SecondFleeState=50..},limit=1] feet rotated ~ 0 positioned ^ ^ ^1 run function luigis_mansion:entities/luigi/animation/set/knockback/large
+execute if entity @s[tag=!capturing_ghost] unless entity @e[tag=ghost,tag=hurt,tag=being_vacuumed,sort=random,scores={SecondFleeState=50..},limit=1] facing entity @e[tag=ghost,tag=hurt,tag=being_vacuumed,sort=random,scores={ErrorTime=5..},limit=1] feet rotated ~ 0 positioned ^ ^ ^1 run function luigis_mansion:entities/luigi/animation/set/knockback/large
+execute if entity @s[tag=!capturing_ghost] unless entity @e[tag=ghost,tag=hurt,tag=being_vacuumed,sort=random,scores={SecondFleeState=50..},limit=1] unless entity @e[tag=ghost,tag=hurt,tag=being_vacuumed,scores={ErrorTime=5..},limit=1] facing entity @e[tag=ghost,tag=hurt,tag=being_vacuumed,sort=random,limit=1] feet rotated ~ 0 positioned ^ ^ ^1 run function luigis_mansion:entities/luigi/animation/set/knockback/large
 tag @s add me
 execute as @e[tag=ghost,tag=hurt,tag=being_vacuumed] positioned ~ ~0.5 ~ facing entity @s feet run function e3_demo:items/poltergust_500/vacuuming/break_free
 tag @s remove me

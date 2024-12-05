@@ -1,4 +1,4 @@
-execute facing entity @p[tag=!spectator,tag=vacuuming_me] feet run teleport @s[scores={FleeTime=1}] ~ ~ ~ ~-180 0
+execute facing entity @e[tag=luigi,tag=vacuuming_me,sort=nearest,limit=1] feet run teleport @s[scores={FleeTime=1}] ~ ~ ~ ~-180 0
 execute at @s[tag=wall] run function luigis_mansion:entities/ghost/flee_task/wall
 execute if predicate luigis_mansion:50_50 run tag @s[scores={FleeTime=11}] add turn_right
 teleport @s[scores={FleeTime=11},tag=!turn_right] ~ ~ ~ ~-30 ~

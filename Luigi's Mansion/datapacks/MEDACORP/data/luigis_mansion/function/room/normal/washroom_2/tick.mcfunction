@@ -1,6 +1,6 @@
 execute unless score #washroom_2 Ticking matches 1 run function #luigis_mansion:room/normal/washroom_2/load
-execute as @a[x=660,y=19,z=34,dx=8,dy=7,dz=14] unless entity @s[scores={Room=42}] run scoreboard players operation @s LastRoom = @s Room
-scoreboard players set @a[x=660,y=19,z=34,dx=8,dy=7,dz=14] Room 42
+execute as @e[tag=player,x=660,y=19,z=34,dx=8,dy=7,dz=14] unless entity @s[scores={Room=42}] run scoreboard players operation @s LastRoom = @s Room
+scoreboard players set @e[tag=player,x=660,y=19,z=34,dx=8,dy=7,dz=14] Room 42
 #todelete - old furniture
 scoreboard players set #temp Room 42
 #/todelete
@@ -13,4 +13,4 @@ execute as @a[scores={Room=42}] run function luigis_mansion:room/normal/washroom
 function #luigis_mansion:room/normal/washroom_2/interactions/room
 #/todelete
 
-execute if entity @a[tag=!pause_dialog,scores={Room=42},tag=!spectator,limit=1] run function luigis_mansion:room/normal/washroom_2/ghosts
+execute if entity @e[tag=luigi,tag=!door_animation,scores={Room=42},limit=1] run function luigis_mansion:room/normal/washroom_2/ghosts

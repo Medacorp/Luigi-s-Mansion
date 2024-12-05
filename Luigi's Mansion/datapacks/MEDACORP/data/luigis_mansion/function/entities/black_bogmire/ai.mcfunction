@@ -9,7 +9,7 @@ execute if entity @s[tag=in_vacuum,tag=!vanish,tag=!appear] run function luigis_
 execute if entity @s[tag=!in_vacuum,tag=!vanish,tag=!appear,tag=!in_vacuum_2] run function luigis_mansion:entities/black_bogmire/ai/not_hurt with entity @s data.entity
 execute if entity @s[tag=!in_vacuum,tag=!vanish,tag=!appear,tag=in_vacuum_2] run function luigis_mansion:entities/black_bogmire/ai/hurt with entity @s data.entity
 
-execute if entity @e[tag=exact_same_room,tag=!spectator,tag=player,distance=..0.7,limit=1] if entity @s[tag=!vanish] run function luigis_mansion:entities/black_bogmire/collide with entity @s data.entity
+execute if entity @e[tag=exact_same_room,tag=luigi,distance=..0.7,limit=1] if entity @s[tag=!vanish] run function luigis_mansion:entities/black_bogmire/collide with entity @s data.entity
 
 execute at @s[tag=succumb] run function luigis_mansion:entities/black_bogmire/succumb with entity @s data.entity
 execute at @s[tag=vanish] run function luigis_mansion:entities/black_bogmire/vanish with entity @s data.entity

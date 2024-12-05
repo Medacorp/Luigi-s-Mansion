@@ -1,6 +1,6 @@
 execute unless score #breaker_room Ticking matches 1 run function #3ds_remake:room/hidden/breaker_room/load
-execute as @a[x=686,y=1,z=-63,dx=14,dy=7,dz=21] unless entity @s[scores={Room=57}] run scoreboard players operation @s LastRoom = @s Room
-scoreboard players set @a[x=686,y=1,z=-63,dx=14,dy=7,dz=21] Room 57
+execute as @e[tag=player,x=686,y=1,z=-63,dx=14,dy=7,dz=21] unless entity @s[scores={Room=57}] run scoreboard players operation @s LastRoom = @s Room
+scoreboard players set @e[tag=player,x=686,y=1,z=-63,dx=14,dy=7,dz=21] Room 57
 #todelete - old furniture
 scoreboard players set #temp Room 57
 #/todelete
@@ -13,4 +13,4 @@ execute as @a[scores={Room=57}] run function 3ds_remake:room/hidden/breaker_room
 function #3ds_remake:room/hidden/breaker_room/interactions/room
 #/todelete
 
-execute if entity @a[tag=!pause_dialog,scores={Room=57},tag=!spectator,limit=1] run function 3ds_remake:room/hidden/breaker_room/ghosts
+execute if entity @e[tag=luigi,tag=!door_animation,scores={Room=57},limit=1] run function 3ds_remake:room/hidden/breaker_room/ghosts

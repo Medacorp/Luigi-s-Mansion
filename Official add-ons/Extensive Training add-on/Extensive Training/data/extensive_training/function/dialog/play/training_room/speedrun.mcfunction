@@ -36,7 +36,7 @@ execute if score #dialog Dialog matches 5..6 as @a[tag=same_room,tag=!spectator]
 execute if score #dialog Dialog matches 7..210 as @a[tag=same_room,tag=!spectator] run function luigis_mansion:items/game_boy_horror/turn_screen_to_forced_value {value:"call",flags:[],floats:[6f,0f,0f,0f],tracker:[]}
 execute if score #dialog Dialog matches 1..4 run scoreboard players reset @a[tag=same_room,tag=!spectator] WarpTime
 execute if score #dialog Dialog matches 1..4 as @a[tag=same_room,tag=!spectator,tag=game_boy_horror_menu] run function luigis_mansion:selection_menu/game_boy_horror/exit
-execute if score #dialog Dialog matches 1..4 as @a[tag=same_room,tag=!spectator] run function luigis_mansion:entities/player/animation/set/game_boy_horror
+execute if score #dialog Dialog matches 1..4 as @e[tag=luigi,tag=same_room] run function luigis_mansion:entities/luigi/animation/set/game_boy_horror
 execute if score #dialog Dialog matches 1..6 as @a[tag=same_room] run function luigis_mansion:other/music/set/training
 execute if score #dialog Dialog matches 1 run stopsound @a[tag=same_room] neutral luigis_mansion:entity.e_gadd.talk.oui_oydohroh_tahmentahkeh2
 execute if score #dialog Dialog matches 1 run scoreboard players set #training_room Selected 3
@@ -65,7 +65,7 @@ execute if score #dialog Dialog matches 4 run scoreboard players reset #temp6 Ti
 
 execute if score #dialog Dialog matches 5 run function luigis_mansion:room/training_room/turn_lights/off
 execute if score #dialog Dialog matches 5 run scoreboard players set #training_room TrainingRoomScore 0
-execute if score #dialog Dialog matches 5 as @a[tag=same_room,tag=!spectator] run function luigis_mansion:entities/player/animation/set/none
+execute if score #dialog Dialog matches 5 as @e[tag=luigi,tag=same_room] run function luigis_mansion:entities/luigi/animation/set/none
 
 execute if score #dialog Dialog matches 6 unless entity @e[tag=ghost,tag=same_room,limit=1] unless entity @a[x=795.0,y=77,z=-8.0,distance=..5,limit=1] run particle minecraft:crit 795.0 77 -8.0 2.5 2.5 2.5 0 10 force @a[tag=same_room]
 execute if score #dialog Dialog matches 6 unless entity @e[tag=ghost,tag=same_room,limit=1] if entity @a[x=795.0,y=77,z=-8.0,distance=..5,limit=1] run function extensive_training:room/training_room/spawn_wave/speedrun
@@ -73,7 +73,7 @@ execute if score #dialog Dialog matches 6 if entity @e[tag=ghost,tag=same_room,l
 
 execute if score #dialog Dialog matches 7..49 run scoreboard players reset @a[tag=same_room,tag=!spectator] WarpTime
 execute if score #dialog Dialog matches 7..49 as @a[tag=same_room,tag=!spectator,tag=game_boy_horror_menu] run function luigis_mansion:selection_menu/game_boy_horror/exit
-execute if score #dialog Dialog matches 7..49 as @a[tag=same_room,tag=!spectator] run function luigis_mansion:entities/player/animation/set/idle
+execute if score #dialog Dialog matches 7..49 as @e[tag=luigi,tag=same_room] run function luigis_mansion:entities/luigi/animation/set/idle
 execute if score #dialog Dialog matches 7 run function luigis_mansion:room/training_room/turn_lights/on
 execute if score #dialog Dialog matches 7..49 as @a[tag=same_room] run function luigis_mansion:other/music/set/training_stop
 execute if score #dialog Dialog matches 7 if score #players Totals matches 1 run tellraw @a[tag=same_room] {"type":"translatable","translate":"chat.type.text","with":[{"type":"translatable","translate":"luigis_mansion:entity.e_gadd","color":"green"},{"type":"translatable","translate":"extensive_training:dialog.speedrun.4"}]}
@@ -86,7 +86,7 @@ execute if score #dialog Dialog matches 9 if entity @a[tag=next_dialog_line,limi
 
 #from 10 start ticking automatically
 
-execute if score #dialog Dialog matches 50 as @a[tag=same_room,tag=!spectator] run function luigis_mansion:entities/player/animation/set/none
+execute if score #dialog Dialog matches 50 as @e[tag=luigi,tag=same_room] run function luigis_mansion:entities/luigi/animation/set/none
 execute if score #dialog Dialog matches 50..209 as @a[tag=same_room] run function luigis_mansion:other/music/set/training_results
 scoreboard players operation #training_room Selected < #global_difficulty Selected
 execute if score #dialog Dialog matches 50 if score #training_room Selected matches 1.. run advancement grant @a[tag=same_room,scores={Health=100}] only extensive_training:extensive_training/mastermind
@@ -143,7 +143,7 @@ execute if score #dialog Dialog matches 210 run scoreboard players set #dialog D
 execute if score #dialog Dialog matches 211.. run scoreboard players reset @a[tag=same_room,tag=!spectator] WarpTime
 execute if score #dialog Dialog matches 211.. as @a[tag=same_room,tag=!spectator,tag=game_boy_horror_menu] run function luigis_mansion:selection_menu/game_boy_horror/exit
 execute if score #dialog Dialog matches 211 run function luigis_mansion:room/training_room/turn_lights/on
-execute if score #dialog Dialog matches 211..213 as @a[tag=same_room,tag=!spectator] run function luigis_mansion:entities/player/animation/set/game_boy_horror
+execute if score #dialog Dialog matches 211..213 as @e[tag=luigi,tag=same_room] run function luigis_mansion:entities/luigi/animation/set/game_boy_horror
 execute if score #dialog Dialog matches 211 run scoreboard players reset @a[tag=same_room] DeathTime
 execute if score #dialog Dialog matches 211 run scoreboard players set @a[tag=same_room] Health 100
 execute if score #dialog Dialog matches 211 run tag @a[tag=same_room] remove death_animation
@@ -157,6 +157,6 @@ execute if score #dialog Dialog matches 211 as @a[tag=same_room] at @s run plays
 execute if score #dialog Dialog matches 213 run tellraw @a[tag=same_room] {"type":"translatable","translate":"chat.type.text","with":[{"type":"translatable","translate":"luigis_mansion:entity.e_gadd","color":"green"},{"type":"translatable","translate":"extensive_training:dialog.speedrun.defeat.2"}]}
 execute if score #dialog Dialog matches 213 as @a[tag=same_room] at @s run playsound luigis_mansion:entity.e_gadd.talk.oh_tohmah_poheh_jeemee_jeemee neutral @s ~ ~ ~ 1
 
-execute if score #dialog Dialog matches 214 as @a[tag=same_room,tag=!spectator] run function luigis_mansion:entities/player/animation/set/none
+execute if score #dialog Dialog matches 214 as @e[tag=luigi,tag=same_room] run function luigis_mansion:entities/luigi/animation/set/none
 execute if score #dialog Dialog matches 214 as @a[tag=same_room] run function luigis_mansion:room/underground_lab/warp_to
 execute if score #dialog Dialog matches 214 run scoreboard players set #dialog Dialog -1

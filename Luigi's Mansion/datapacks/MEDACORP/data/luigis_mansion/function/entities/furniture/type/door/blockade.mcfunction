@@ -1,3 +1,3 @@
-execute positioned ^ ^ ^0.5 rotated ~-180 ~ align xz positioned ~0.5 ~ ~0.5 run function luigis_mansion:entities/player/set_position
+function luigis_mansion:entities/luigi/move/execute {execute:"positioned ^ ^ ^0.5 align xz",teleport:"~0.5 ~ ~0.5 ~-180 ~"}
 data modify storage luigis_mansion:data damage set value {method:{namespace:"luigis_mansion",id:"blockade"},amount:5,animation:{namespace:"luigis_mansion",id:"knockback/medium"}}
-execute positioned ^ ^ ^-0.5 align xz positioned ~0.5 ~ ~0.5 run function luigis_mansion:entities/player/damage
+execute positioned ^ ^ ^-0.5 align xz positioned ~0.5 ~ ~0.5 run function luigis_mansion:entities/luigi/damage

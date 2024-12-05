@@ -9,7 +9,7 @@ execute unless entity @s[tag=!wall_warp,tag=!spectator] if entity @s[tag=!alread
 
 tag @s add already_ticked
 
-execute if entity @s[x=669.5,y=11,z=8.5,tag=!spectator,distance=..4] if data storage luigis_mansion:data current_state.current_data{obtained_keys:["courtyard"]} run function 3ds_remake:room/hidden/hallway_6/clear_blockade
+function luigis_mansion:entities/run_command_as_model {command:'execute if entity @s[x=669.5,y=11,z=8.5,distance=..4] if data storage luigis_mansion:data current_state.current_data{obtained_keys:["courtyard"]} run function 3ds_remake:room/hidden/hallway_6/clear_blockade'}
 
 scoreboard players set @s RoomNoise 0
 stopsound @s ambient luigis_mansion:music.mansion.melody

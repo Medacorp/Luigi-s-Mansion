@@ -1,5 +1,5 @@
 execute store result score #temp ID run scoreboard players get @s SearcherID
-execute as @a[tag=!spectator] if score @s ID = #temp ID run tag @s add searcher
+execute as @e[tag=luigi] if score @s ID = #temp ID run tag @s add searcher
 scoreboard players reset #temp ID
 scoreboard players set @s FurnitureSpins 0
 tag @s add open

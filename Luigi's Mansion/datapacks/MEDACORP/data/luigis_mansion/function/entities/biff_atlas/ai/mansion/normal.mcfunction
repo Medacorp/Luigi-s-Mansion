@@ -9,7 +9,7 @@ scoreboard players add @s[scores={Dialog=2..120}] Dialog 1
 scoreboard players add @s[scores={Dialog=1},tag=hit_by_swinging_furniture] Dialog 1
 execute unless entity @s[scores={Dialog=1..}] run scoreboard players add @s Dialog 1
 tag @s[scores={Dialog=1..2}] add visible
-execute if entity @s[scores={Dialog=1}] at @e[tag=same_room,tag=!spectator,tag=player] positioned ^ ^ ^8 run tag @s[distance=..8] remove visible
+tag @s[scores={Dialog=1},tag=portrait_ghost_hide] remove visible
 execute if entity @s[scores={Dialog=1}] run function luigis_mansion:entities/biff_atlas/ai/mansion/normal/idle
 execute if entity @s[scores={Dialog=2}] as @e[tag=biff_atlas_weights,limit=1] run function luigis_mansion:entities/biff_atlas/ai/mansion/normal/move_weights/home
 data modify entity @s[scores={Dialog=2}] data.animation set value {namespace:"luigis_mansion",id:"knocked_back"}
@@ -17,7 +17,7 @@ execute if entity @s[scores={Dialog=2..21}] run teleport @s ^ ^ ^0.1
 data remove entity @s[scores={Dialog=120}] data.animation
 execute if entity @s[scores={Dialog=120}] run playsound luigis_mansion:entity.biff_atlas.pant hostile @a[tag=same_room] ~ ~ ~ 1
 scoreboard players set @s[scores={Dialog=121}] TargetTask 1
-execute if entity @s[scores={Dialog=121},tag=!laugh] positioned ^ ^ ^0.7 at @e[tag=same_room,tag=!spectator,tag=player,distance=..2,limit=1] run function luigis_mansion:entities/ghost/set_target_to_attack
+execute if entity @s[scores={Dialog=121},tag=!laugh] positioned ^ ^ ^0.7 at @e[tag=same_room,tag=luigi,distance=..2,limit=1] run function luigis_mansion:entities/ghost/set_target_to_attack
 execute if entity @s[scores={Dialog=121},tag=!angry,tag=!attack,tag=!laugh] run playsound luigis_mansion:entity.biff_atlas.complain hostile @a[tag=same_room] ~ ~ ~ 1
 tag @s[scores={Dialog=121},tag=!angry,tag=!attack,tag=!laugh] add angry
 data remove entity @s[scores={Dialog=121},tag=!attack,tag=!laugh] data.animation

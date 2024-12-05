@@ -1,4 +1,4 @@
-execute as @a[tag=same_room,tag=!spectator] run function luigis_mansion:other/music/set/piano
+execute as @a[tag=same_room] run function luigis_mansion:other/music/set/piano
 
 tag @s add visible
 execute unless entity @e[tag=haunted_music_sheet,tag=same_room,scores={WaitTime=0..}] if entity @s[scores={VulnerableTime=0}] run playsound luigis_mansion:entity.melody_pianissima.complain hostile @a[tag=same_room] ~ ~ ~ 1

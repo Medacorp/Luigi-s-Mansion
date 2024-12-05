@@ -14,6 +14,6 @@ execute at @s[tag=ice,tag=!bounce] if block ~ ~-0.1 ~ #minecraft:slabs[type=bott
 execute at @s unless block ~ ~-0.1 ~ #luigis_mansion:item_pull_ignore unless block ~ ~-0.1 ~ #minecraft:slabs[type=bottom] run tag @s add bounce
 execute at @s if block ~ ~-0.1 ~ #minecraft:slabs[type=bottom] unless block ~ ~-0.6 ~ #minecraft:slabs[type=bottom] run tag @s add bounce
 tag @s[scores={SpawnTime=280}] add remove_from_existence
-execute if entity @s[tag=dead,tag=fire] as @p[tag=!spectator,tag=player,tag=vacuuming] run function luigis_mansion:items/poltergust_3000/fire_element
-execute if entity @s[tag=dead,tag=water] as @p[tag=!spectator,tag=player,tag=vacuuming] run function luigis_mansion:items/poltergust_3000/water_element
-execute if entity @s[tag=dead,tag=ice] as @p[tag=!spectator,tag=player,tag=vacuuming] run function luigis_mansion:items/poltergust_3000/ice_element
+execute if entity @s[tag=dead,tag=fire] as @e[tag=luigi,tag=vacuuming_me,sort=nearest,limit=1] run function luigis_mansion:items/poltergust_3000/fire_element
+execute if entity @s[tag=dead,tag=water] as @e[tag=luigi,tag=vacuuming_me,sort=nearest,limit=1] run function luigis_mansion:items/poltergust_3000/water_element
+execute if entity @s[tag=dead,tag=ice] as @e[tag=luigi,tag=vacuuming_me,sort=nearest,limit=1] run function luigis_mansion:items/poltergust_3000/ice_element

@@ -1,8 +1,8 @@
-teleport @s[scores={PositionIntZ=-21}] ~ ~ ~1
-teleport @s[scores={PositionIntX=783..795,PositionIntZ=4}] ~ ~ ~2
-teleport @s[scores={PositionIntX=796..798,PositionIntZ=4}] ~ ~ ~-1
-teleport @s[scores={PositionIntX=799}] ~-1 ~ ~
-teleport @s[scores={PositionIntX=782}] ~1 ~ ~
+execute if entity @s[scores={PositionIntZ=-21}] run function luigis_mansion:entities/luigi/move/teleport {teleport:"~ ~ ~1"}
+execute if entity @s[scores={PositionIntX=783..795,PositionIntZ=4}] run function luigis_mansion:entities/luigi/move/teleport {teleport:"~ ~ ~2"}
+execute if entity @s[scores={PositionIntX=796..798,PositionIntZ=4}] run function luigis_mansion:entities/luigi/move/teleport {teleport:"~ ~ ~-1"}
+execute if entity @s[scores={PositionIntX=799}] run function luigis_mansion:entities/luigi/move/teleport {teleport:"~-1 ~ ~"}
+execute if entity @s[scores={PositionIntX=782}] run function luigis_mansion:entities/luigi/move/teleport {teleport:"~1 ~ ~"}
 
-teleport @s[scores={PositionIntY=76}] ~ ~1 ~
-teleport @s[scores={PositionIntY=84}] ~ ~-1 ~
+execute if entity @s[scores={PositionIntY=76}] run function luigis_mansion:entities/luigi/move/teleport {teleport:"~ ~1 ~"}
+execute if entity @s[scores={PositionIntY=84}] run function luigis_mansion:entities/luigi/move/teleport {teleport:"~ ~-1 ~"}

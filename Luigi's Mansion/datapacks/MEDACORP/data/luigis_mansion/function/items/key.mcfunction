@@ -1,5 +1,4 @@
 $function $(namespace):items/key/$(id) with entity @s ArmorItems[3].components."minecraft:custom_data"
 playsound luigis_mansion:item.key.obtain player @a[tag=same_room] ~ ~ ~ 1
-execute unless data storage luigis_mansion:data current_state.current_data{no_collect_animation:["luigis_mansion:key"]} run scoreboard players set @a[tag=same_room,tag=!looking_at_map,tag=!spectator,nbt={Inventory:[{components:{"minecraft:custom_data":{namespace:"luigis_mansion",id:"game_boy_horror"}}}]},scores={OpenMapFocus=1..}] OpenMapTime 70
-execute if data storage luigis_mansion:data current_state.current_data{no_collect_animation:["luigis_mansion:key"]} run scoreboard players set @a[tag=same_room,tag=!looking_at_map,tag=!spectator,nbt={Inventory:[{components:{"minecraft:custom_data":{namespace:"luigis_mansion",id:"game_boy_horror"}}}]},scores={OpenMapFocus=1..}] OpenMapTime 20
-execute as @a[tag=same_room] unless entity @s[nbt=!{Inventory:[{components:{"minecraft:custom_data":{id:"luigis_mansion:game_boy_horror"}}}]}] run scoreboard players reset @s OpenMapFocus
+execute as @a[tag=same_room] unless entity @s[tag=!looking_at_map,tag=!spectator,nbt={Inventory:[{components:{"minecraft:custom_data":{namespace:"luigis_mansion",id:"game_boy_horror"}}}]}] run scoreboard players reset @s OpenMapFocus
+execute as @a[tag=same_room,scores={OpenMapFocus=1..}] run function luigis_mansion:entities/player/run_command_as_model {command:"scoreboard players set @s OpenMapTime 20"}

@@ -1,4 +1,3 @@
-execute if entity @s[type=minecraft:player] run function luigis_mansion:selection_menu/game_boy_horror/scan/target_entity/set_player_values
 scoreboard players set @s[tag=!furniture] EntitySize 1
 scoreboard players operation @s[tag=!furniture,scores={EntitySizeRadius=1..}] EntitySize *= @s EntitySizeRadius
 scoreboard players operation @s[tag=!furniture,scores={EntitySizeRadius=1..}] EntitySize *= @s EntitySizeRadius

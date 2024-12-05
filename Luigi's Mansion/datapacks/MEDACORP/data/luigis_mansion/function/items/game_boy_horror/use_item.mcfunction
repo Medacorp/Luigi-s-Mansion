@@ -1,0 +1,2 @@
+execute if entity @s[tag=!show_credits] run function luigis_mansion:selection_menu/game_boy_horror/original_menu
+tellraw @s[tag=show_credits] {"type":"translatable","translate":"chat.type.text","with":[{"type":"translatable","translate":"luigis_mansion:entity.mansion","color":"green"},{"type":"translatable","translate":"luigis_mansion:message.use_game_boy_horror_during_credits"}]}

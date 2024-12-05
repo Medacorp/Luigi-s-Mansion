@@ -1,5 +1,5 @@
 $playsound $(namespace):item.$(id).obtain player @a[tag=same_room] ~ ~ ~ 1
-function luigis_mansion:items/money/get_storage with entity @a[tag=collector,limit=1]
+execute as @a[tag=collector,limit=1] run function luigis_mansion:entities/luigi/run_command_as_owner {command:"function luigis_mansion:items/money/get_storage with entity @s"}
 $execute store result score #temp Time run data get storage luigis_mansion:data current_state.money_grabbed.money.$(namespace).$(id)
 $execute unless score #temp ActionTime matches 2147483647 store result storage luigis_mansion:data current_state.money_grabbed.money.$(namespace).$(id) int 1 run scoreboard players add #temp Time 1
 execute store result score #temp Time run data get storage luigis_mansion:data current_state.money_grabbed.total
@@ -15,4 +15,4 @@ execute store result storage luigis_mansion:data current_state.my_money_data.tot
 scoreboard players reset #temp Time
 data modify storage luigis_mansion:data current_state.current_data.money_grabbed append from storage luigis_mansion:data current_state.my_money_data
 data remove storage luigis_mansion:data current_state.my_money_data
-$execute if entity @a[tag=collector,tag=gooigi,limit=1] run function 3ds_remake:items/money/get_gooigi_storage {value:$(value)}
+$execute if entity @e[tag=collector,tag=gooigi,limit=1] run function 3ds_remake:items/money/get_gooigi_storage {value:$(value)}

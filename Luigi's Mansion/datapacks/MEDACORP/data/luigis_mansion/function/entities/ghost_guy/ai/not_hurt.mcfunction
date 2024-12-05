@@ -7,7 +7,7 @@ scoreboard players remove @s[scores={WaitTime=1..}] WaitTime 1
 scoreboard players add @s VacuumTime 0
 execute if entity @s[tag=!maskless,tag=!appear,tag=!vanish] run function luigis_mansion:entities/ghost_guy/ai/lose_mask with entity @s data.entity
 
-execute if entity @e[tag=exact_same_room,tag=!spectator,tag=player,distance=..0.7,limit=1] if entity @s[tag=!vanish,tag=!appear] run function luigis_mansion:entities/ghost_guy/collide with entity @s data.entity
+execute if entity @e[tag=exact_same_room,tag=luigi,distance=..0.7,limit=1] if entity @s[tag=!vanish,tag=!appear] run function luigis_mansion:entities/ghost_guy/collide with entity @s data.entity
 execute if entity @s[tag=!collided,tag=!vanish,tag=!appear] run function luigis_mansion:entities/ghost_guy/try_attack
 
 execute if entity @s[tag=!attack,tag=!collided,tag=!vanish,tag=!complain,tag=!appear] run function luigis_mansion:entities/ghost_guy/haunt

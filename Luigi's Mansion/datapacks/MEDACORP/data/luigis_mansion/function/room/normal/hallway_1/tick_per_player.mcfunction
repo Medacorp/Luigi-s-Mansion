@@ -7,4 +7,4 @@ execute unless entity @s[tag=!wall_warp,tag=!spectator] if entity @s[tag=!alread
 
 tag @s add already_ticked
 
-execute if entity @s[x=739.5,y=20,z=18.5,tag=!spectator,distance=..2] if data storage luigis_mansion:data current_state.current_data{obtained_keys:["hallway_2"]} unless data storage luigis_mansion:data current_state.current_data.technical_data{portrait_ghosts:1b} run function luigis_mansion:room/normal/hallway_1/portrait_ghost_call
+function luigis_mansion:entities/run_command_as_model {command:'execute if entity @s[x=739.5,y=20,z=18.5,distance=..2] if data storage luigis_mansion:data current_state.current_data{obtained_keys:["hallway_2"]} unless data storage luigis_mansion:data current_state.current_data.technical_data{portrait_ghosts:1b} run function luigis_mansion:room/normal/hallway_1/portrait_ghost_call'}

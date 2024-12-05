@@ -3,14 +3,14 @@ execute unless data storage luigis_mansion:data dialogs[{name:{namespace:"luigis
 scoreboard players add @s[scores={Dialog=3..994}] Dialog 1
 execute unless data storage luigis_mansion:data dialogs[{name:{namespace:"luigis_mansion",id:"jarvis"}}] run scoreboard players add @s[scores={Dialog=2}] Dialog 1
 scoreboard players add @s[scores={Dialog=1}] Dialog 1
-execute if entity @e[tag=same_room,tag=!spectator,tag=player,distance=..4,limit=1] if entity @s[tag=!tried_to_appear] unless entity @s[scores={Dialog=1..}] if predicate luigis_mansion:jarvis/appear_chance run scoreboard players add @s Dialog 1
-execute if entity @e[tag=same_room,tag=!spectator,tag=player,distance=..4,limit=1] if entity @s[tag=!tried_to_appear] unless entity @s[scores={Dialog=1..}] run tag @s add tried_to_appear
-execute unless entity @e[tag=same_room,tag=!spectator,tag=player,distance=..4,limit=1] if entity @s[tag=tried_to_appear] unless entity @s[scores={Dialog=1..}] run tag @s remove tried_to_appear
+execute if entity @e[tag=same_room,tag=luigi,distance=..4,limit=1] if entity @s[tag=!tried_to_appear] unless entity @s[scores={Dialog=1..}] if predicate luigis_mansion:jarvis/appear_chance run scoreboard players add @s Dialog 1
+execute if entity @e[tag=same_room,tag=luigi,distance=..4,limit=1] if entity @s[tag=!tried_to_appear] unless entity @s[scores={Dialog=1..}] run tag @s add tried_to_appear
+execute unless entity @e[tag=same_room,tag=luigi,distance=..4,limit=1] if entity @s[tag=tried_to_appear] unless entity @s[scores={Dialog=1..}] run tag @s remove tried_to_appear
 
 execute if entity @s[scores={Dialog=1}] at @e[tag=same_room,tag=furniture,tag=jarvis_initial_vase,limit=1] run function luigis_mansion:entities/jarvis/ai/mansion/normal/select_vase
 execute if entity @s[scores={Dialog=1}] run data modify storage luigis_mansion:data dialogs append value {name:{namespace:"luigis_mansion",id:"jarvis"},progress:0}
 execute if entity @s[scores={Dialog=1}] store result storage luigis_mansion:data dialogs[-1].room int 1 run scoreboard players get @s Room
-execute if entity @s[tag=kick_players_out] run teleport @a[tag=same_room,tag=!spectator] 752 29 -31 0 0
+execute if entity @s[tag=kick_players_out] as @e[tag=luigi,tag=same_room] run function luigis_mansion:entities/luigi/move/teleport {teleport:"752 29 -31 0 0"}
 execute if entity @s[tag=kick_players_out] run scoreboard players set @s ActionTime 0
 execute if entity @s[tag=kick_players_out] run scoreboard players reset @s Dialog
 execute if entity @s[tag=kick_players_out] run scoreboard players reset @s Wave
@@ -23,7 +23,7 @@ execute if entity @s[tag=kick_players_out] at @e[tag=same_room,tag=furniture,tag
 execute if entity @s[tag=kick_players_out] run tag @s remove kick_players_out
 
 execute if entity @s[scores={Dialog=5}] run tag @e[tag=same_room,tag=furniture,tag=door] add blockade
-execute if entity @s[scores={Dialog=5..659}] as @a[tag=same_room,tag=!spectator] run function luigis_mansion:other/music/set/mini_game
+execute if entity @s[scores={Dialog=5..659}] as @a[tag=same_room] run function luigis_mansion:other/music/set/mini_game
 scoreboard players add @s[scores={Dialog=5..914},tag=!frozen,tag=in_ice,tag=!pop_out,tag=!pop_in,tag=visible] Wave 1
 tag @s[scores={Dialog=5..914},tag=!frozen,tag=in_ice,tag=!pop_out,tag=!pop_in,tag=visible] add frozen
 scoreboard players set @s[scores={Dialog=5}] Wave 0
@@ -61,9 +61,9 @@ execute if entity @s[scores={Dialog=994}] run data modify storage luigis_mansion
 execute if entity @s[scores={Dialog=994}] store result storage luigis_mansion:data dialogs[-1].room int 1 run scoreboard players get @s Room
 execute if entity @s[scores={Dialog=994}] store result storage luigis_mansion:data dialogs[-1].result int 1 run scoreboard players get @s Wave
 tag @s[scores={Dialog=996}] add pop_in
-execute if entity @s[scores={Dialog=996}] as @a[tag=same_room,tag=!spectator,tag=!looking_at_map] run function luigis_mansion:entities/player/animation/set/none
+execute if entity @s[scores={Dialog=996}] as @e[tag=luigi,tag=same_room] run function luigis_mansion:entities/luigi/animation/set/none
 execute if entity @s[scores={Dialog=996}] run tag @e[tag=same_room,tag=haunted_jar] add enabled
-execute if entity @s[scores={Dialog=996..}] as @a[tag=same_room,tag=!spectator] run function luigis_mansion:other/music/set/danger
+execute if entity @s[scores={Dialog=996..}] as @a[tag=same_room] run function luigis_mansion:other/music/set/danger
 execute if entity @s[scores={Dialog=1016}] at @e[tag=same_room,tag=furniture,tag=jarvis_fight_vase,limit=1] run function luigis_mansion:entities/jarvis/ai/mansion/normal/select_vase
 tag @s[scores={Dialog=1016},tag=!vanish] add pop_out
 scoreboard players set @s[scores={Dialog=1036}] VulnerableTime 40

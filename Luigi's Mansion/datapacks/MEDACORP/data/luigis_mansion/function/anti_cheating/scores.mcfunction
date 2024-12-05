@@ -84,6 +84,7 @@ scoreboard objectives add GhostGuyCouple dummy
 scoreboard objectives add GrabbedID dummy
 scoreboard objectives add GrabbedShake dummy
 scoreboard objectives add GradualMusic dummy
+scoreboard objectives add Gravity dummy
 scoreboard objectives add Health dummy
 scoreboard objectives add HealthMusic dummy
 scoreboard objectives add HeartOffset dummy
@@ -141,6 +142,8 @@ scoreboard objectives add MusicType dummy
 scoreboard objectives add Offline minecraft.custom:minecraft.leave_game
 scoreboard objectives add OpenMapFocus dummy
 scoreboard objectives add OpenMapTime dummy
+scoreboard objectives add OtherRotationX dummy
+scoreboard objectives add OtherRotationY dummy
 scoreboard objectives add OtherX dummy
 scoreboard objectives add OtherY dummy
 scoreboard objectives add OtherZ dummy
@@ -251,6 +254,7 @@ execute unless score #global_player_names Selected matches 0..1 run scoreboard p
 execute unless score #debug_messages Selected matches 0..2 run scoreboard players set #debug_messages Selected 0
 execute unless score #debug_furniture Selected matches 0..1 run scoreboard players set #debug_furniture Selected 0
 execute unless score #debug_entities Selected matches 0..1 run scoreboard players set #debug_entities Selected 0
+execute unless score #debug_phase_through_walls Selected matches 0..1 run scoreboard players set #debug_phase_through_walls Selected 0
 
 bossbar add luigis_mansion:boo_counter {"type":"translatable","translate":"luigis_mansion:message.boo_counter","color":"white","with":["0","0"]}
 bossbar set luigis_mansion:boo_counter color white

@@ -1,6 +1,6 @@
 execute unless score #safari_room Ticking matches 1 run function #3ds_remake:room/hidden/safari_room/load
-execute as @a[x=732,y=28,z=-59,dx=14,dy=7,dz=25] unless entity @s[scores={Room=50}] run scoreboard players operation @s LastRoom = @s Room
-scoreboard players set @a[x=732,y=28,z=-59,dx=14,dy=7,dz=25] Room 50
+execute as @e[tag=player,x=732,y=28,z=-59,dx=14,dy=7,dz=25] unless entity @s[scores={Room=50}] run scoreboard players operation @s LastRoom = @s Room
+scoreboard players set @e[tag=player,x=732,y=28,z=-59,dx=14,dy=7,dz=25] Room 50
 #todelete - old furniture
 scoreboard players set #temp Room 50
 #/todelete
@@ -13,4 +13,4 @@ execute as @a[scores={Room=50}] run function 3ds_remake:room/hidden/safari_room/
 function #3ds_remake:room/hidden/safari_room/interactions/room
 #/todelete
 
-execute if entity @a[tag=!pause_dialog,scores={Room=50},tag=!spectator,limit=1] run function 3ds_remake:room/hidden/safari_room/ghosts
+execute if entity @e[tag=luigi,tag=!door_animation,scores={Room=50},limit=1] run function 3ds_remake:room/hidden/safari_room/ghosts
