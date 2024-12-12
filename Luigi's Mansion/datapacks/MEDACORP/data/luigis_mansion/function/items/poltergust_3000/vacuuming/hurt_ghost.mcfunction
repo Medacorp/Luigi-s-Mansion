@@ -27,8 +27,4 @@ execute unless entity @s[scores={ErrorTime=2..}] if entity @e[tag=me,limit=1,sco
 execute if entity @s[scores={ErrorTime=2..}] run function luigis_mansion:entities/ghost/damage/strong
 execute if entity @s[scores={Health=..0}] run playsound luigis_mansion:item.poltergust_3000.reel_in player @a[tag=same_room] ~ ~ ~ 1
 
-execute at @e[tag=me,scores={Sound=0,Health=41..,Shrunk=0},limit=1] run playsound luigis_mansion:entity.player.pull.high_health player @a[tag=same_room] ~ ~ ~ 1
-execute at @e[tag=me,scores={Sound=0,Health=41..,Shrunk=1..},limit=1] run playsound luigis_mansion:entity.player.pull.high_health player @a[tag=same_room] ~ ~ ~ 1 2
-execute at @e[tag=me,scores={Sound=0,Health=..40,Shrunk=0},limit=1] run playsound luigis_mansion:entity.player.pull.low_health player @a[tag=same_room] ~ ~ ~ 1
-execute at @e[tag=me,scores={Sound=0,Health=..40,Shrunk=1..},limit=1] run playsound luigis_mansion:entity.player.pull.low_health player @a[tag=same_room] ~ ~ ~ 1 2
-scoreboard players set @e[tag=me,scores={Sound=0}] Sound 10
+execute as @e[tag=me,limit=1] run function luigis_mansion:entities/luigi/make_sound/force {high:"luigis_mansion:entity.player.pull.high_health",medium:"luigis_mansion:entity.player.pull.high_health",low:"luigis_mansion:entity.player.pull.low_health",duration:10}

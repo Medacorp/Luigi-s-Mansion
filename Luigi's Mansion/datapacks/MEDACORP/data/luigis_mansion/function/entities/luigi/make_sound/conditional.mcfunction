@@ -1,0 +1,1 @@
+$execute if entity @s[scores={Sound=0}] run function luigis_mansion:entities/luigi/make_sound/force {high:"$(high)",medium:"$(medium)",low:"$(low)",duration:$(duration)}

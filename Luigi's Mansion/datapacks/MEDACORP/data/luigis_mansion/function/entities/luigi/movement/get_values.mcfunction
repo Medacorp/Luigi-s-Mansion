@@ -9,8 +9,8 @@ execute store result storage luigis_mansion:data luigi.movement.y_rot float 1 ru
 execute store result storage luigis_mansion:data luigi.movement.x_rot float 1 run scoreboard players operation #temp RotationX -= @s OtherRotationX
 execute if score #temp PositionX matches 20.. run data modify storage luigis_mansion:data luigi.movement.x set value 0.2f
 execute if score #temp PositionX matches ..-20 run data modify storage luigis_mansion:data luigi.movement.x set value -0.2f
-execute if predicate luigis_mansion:luigi/movement/jump run data modify storage luigis_mansion:data luigi.movement.y set value "positive"
-execute if predicate luigis_mansion:luigi/movement/sneak run data modify storage luigis_mansion:data luigi.movement.y set value "negative"
+execute if score #debug_phase_through_walls Selected matches 1 if predicate luigis_mansion:luigi/movement/jump run data modify storage luigis_mansion:data luigi.movement.y set value "positive"
+execute if score #debug_phase_through_walls Selected matches 1 if predicate luigis_mansion:luigi/movement/sneak run data modify storage luigis_mansion:data luigi.movement.y set value "negative"
 execute if score #temp PositionZ matches 20.. run data modify storage luigis_mansion:data luigi.movement.z set value 0.2f
 execute if score #temp PositionZ matches ..-20 run data modify storage luigis_mansion:data luigi.movement.z set value -0.2f
 execute if score #temp RotationX matches 180.. run data modify storage luigis_mansion:data luigi.movement.rot_x set value 180f

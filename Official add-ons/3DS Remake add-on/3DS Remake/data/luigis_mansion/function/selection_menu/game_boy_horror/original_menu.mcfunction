@@ -1,6 +1,6 @@
-execute unless entity @s[scores={WarpTime=1..}] run tag @s remove scanning
+execute unless entity @s[scores={WarpTime=1..}] run function luigis_mansion:entities/player/run_command_as_model {command:"tag @s remove scanning"}
 execute unless entity @s[scores={WarpTime=1..}] run tag @s add game_boy_horror_menu
-tag @s remove selection_menu_free_to_move
+function luigis_mansion:entities/player/run_command_as_model {command:"tag @s add animation_free_rotation"}
 
 execute unless entity @s[scores={WarpTime=1..}] run data modify storage luigis_mansion:data menu_options set value {options:[]}
 execute unless entity @s[scores={WarpTime=1..}] run function luigis_mansion:selection_menu/game_boy_horror/map/check

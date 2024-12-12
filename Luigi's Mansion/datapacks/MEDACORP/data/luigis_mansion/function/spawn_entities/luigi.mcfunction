@@ -33,7 +33,10 @@ execute if score #temp2 Time matches 1 as @e[tag=model_piece,tag=this_entity,tag
 scoreboard players reset #temp Time
 scoreboard players reset #temp2 Time
 tag @e[tag=model_piece,tag=this_entity] remove this_entity
+scoreboard players set @e[tag=this_entity,limit=1] Sound 0
+scoreboard players set @e[tag=this_entity,limit=1] PoltergustSound 0
 execute if entity @s[tag=flipped_gravity] run tag @e[tag=this_entity,limit=1] add flipped_gravity
+execute if entity @s[tag=flashlight] run tag @e[tag=this_entity,limit=1] add had_flashlight_on
 execute if entity @s[tag=dead_player] run tag @e[tag=this_entity,limit=1] add death_animation
 execute if entity @s[tag=dead_player] run scoreboard players set @e[tag=this_entity,limit=1] DeathTime 120
 scoreboard players operation @e[tag=this_entity,limit=1] AnimationProgress = @s AnimationProgress

@@ -1,7 +1,7 @@
-execute positioned as @s unless block ~0.3 ~1.5 ~ #luigis_mansion:all_ignore run teleport @s ~-0.2 ~ ~
-execute positioned as @s unless block ~-0.3 ~1.5 ~ #luigis_mansion:all_ignore run teleport @s ~0.2 ~ ~
-execute positioned as @s unless block ~ ~1.5 ~0.3 #luigis_mansion:all_ignore run teleport @s ~ ~ ~-0.2
-execute positioned as @s unless block ~ ~1.5 ~-0.3 #luigis_mansion:all_ignore run teleport @s ~ ~ ~0.2
+execute positioned as @s[scores={Shrunk=0}] unless block ~0.3 ~1.5 ~ #luigis_mansion:all_ignore run teleport @s ~-0.2 ~ ~
+execute positioned as @s[scores={Shrunk=0}] unless block ~-0.3 ~1.5 ~ #luigis_mansion:all_ignore run teleport @s ~0.2 ~ ~
+execute positioned as @s[scores={Shrunk=0}] unless block ~ ~1.5 ~0.3 #luigis_mansion:all_ignore run teleport @s ~ ~ ~-0.2
+execute positioned as @s[scores={Shrunk=0}] unless block ~ ~1.5 ~-0.3 #luigis_mansion:all_ignore run teleport @s ~ ~ ~0.2
 execute positioned as @s unless block ~0.3 ~0.5 ~ #luigis_mansion:all_ignore unless block ~0.3 ~0.5 ~ #minecraft:slabs[type=bottom] unless block ~0.3 ~0.5 ~ #minecraft:stairs[facing=east,half=bottom] run teleport @s ~-0.2 ~ ~
 execute positioned as @s unless block ~-0.3 ~0.5 ~ #luigis_mansion:all_ignore unless block ~-0.3 ~0.5 ~ #minecraft:slabs[type=bottom] unless block ~-0.3 ~0.5 ~ #minecraft:stairs[facing=west,half=bottom] run teleport @s ~0.2 ~ ~
 execute positioned as @s unless block ~ ~0.5 ~0.3 #luigis_mansion:all_ignore unless block ~ ~0.5 ~0.3 #minecraft:slabs[type=bottom] unless block ~ ~0.5 ~0.3 #minecraft:stairs[facing=south,half=bottom] run teleport @s ~ ~ ~-0.2

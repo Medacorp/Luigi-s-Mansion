@@ -1,9 +1,5 @@
 scoreboard players add @s AnimationProgress 1
-execute if entity @s[scores={AnimationProgress=5,Health=41..,Shrunk=0}] run playsound luigis_mansion:entity.player.hurt_dragged.high_health player @a[tag=same_room] ~ ~ ~ 1
-execute if entity @s[scores={AnimationProgress=5,Health=41..,Shrunk=1..}] run playsound luigis_mansion:entity.player.hurt_dragged.high_health player @a[tag=same_room] ~ ~ ~ 1 2
-execute if entity @s[scores={AnimationProgress=5,Health=..40,Shrunk=0}] run playsound luigis_mansion:entity.player.hurt_dragged.low_health player @a[tag=same_room] ~ ~ ~ 1
-execute if entity @s[scores={AnimationProgress=5,Health=..40,Shrunk=1..}] run playsound luigis_mansion:entity.player.hurt_dragged.low_health player @a[tag=same_room] ~ ~ ~ 1 2
-scoreboard players set @s[scores={AnimationProgress=5}] Sound 10
+execute if entity @s[scores={AnimationProgress=5}] run function luigis_mansion:entities/luigi/make_sound/force {high:"luigis_mansion:entity.player.hurt_dragged.high_health",medium:"luigis_mansion:entity.player.hurt_dragged.high_health",low:"luigis_mansion:entity.player.hurt_dragged.low_health",duration:10}
 tag @s add keep_poltergust_grabbed
 tag @s add animation_may_move
 scoreboard players set @s[scores={AnimationProgress=30}] AnimationProgress 10

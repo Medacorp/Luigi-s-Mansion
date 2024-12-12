@@ -10,7 +10,7 @@ execute if entity @e[tag=ghost,tag=same_room] as @e[tag=luigi,tag=same_room] unl
 execute if score #dialog Dialog matches ..72 run scoreboard players set @e[tag=luigi,tag=walking_player,limit=1,scores={IdleTime=19}] IdleTime 18
 scoreboard players set @e[tag=ghost,tag=same_room] Sound -1
 execute if score #dialog Dialog matches 1 at @a[tag=same_room] run playsound luigis_mansion:ambience.parlor_wind ambient @a[tag=same_room] ~ ~ ~ 1000
-execute if score #dialog Dialog matches 1 at @a[tag=same_room] run playsound luigis_mansion:entity.player.scare_causion player @a[tag=same_room] ~ ~ ~ 1
+execute if score #dialog Dialog matches 1 as @a[tag=luigi,tag=walking_player,limit=1] run function luigis_mansion:entities/luigi/make_sound/force {high:"luigis_mansion:entity.player.scare_causion",medium:"luigis_mansion:entity.player.scare_causion",low:"luigis_mansion:entity.player.scare_causion",duration:70}
 execute if score #dialog Dialog matches 1 run scoreboard players set @a[tag=same_room] Sound 60
 execute if score #dialog Dialog matches 1..81 run stopsound @a[tag=same_room,tag=!spectator] music
 execute if score #dialog Dialog matches 1..81 as @a[tag=same_room,tag=!spectator] run function luigis_mansion:other/music/set/non_overwritten_silence

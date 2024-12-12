@@ -6,6 +6,5 @@ data modify storage luigis_mansion:data memory append from storage luigis_mansio
 data remove storage luigis_mansion:data my_memory
 
 data modify storage luigis_mansion:data inventory set value []
-data modify storage luigis_mansion:data inventory append from entity @s Inventory[{components:{"minecraft:custom_data":{namespace:"luigis_mansion",id:"flashlight"}}}]
-data modify storage luigis_mansion:data inventory append from entity @s Inventory[{components:{"minecraft:custom_data":{namespace:"luigis_mansion",id:"interact"}}}]
+data modify storage luigis_mansion:data inventory append from entity @s Inventory[{components:{"minecraft:custom_data":{keep_when_shrunk:1b}}}]
 function luigis_mansion:other/sync_inventory

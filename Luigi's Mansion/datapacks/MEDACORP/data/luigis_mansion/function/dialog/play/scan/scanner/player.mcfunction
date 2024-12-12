@@ -10,6 +10,7 @@ execute if score #dialog Dialog matches 2..3 as @a[tag=same_room,tag=!spectator,
 execute if score #dialog Dialog matches 4.. as @a[tag=same_room,tag=dialog_menu] run function luigis_mansion:selection_menu/dialog/exit
 
 scoreboard players reset @a[tag=same_room,tag=!spectator] WarpTime
+tag @a[tag=scanning_player,limit=1] add prevent_item_lock
 # 1 tick delay for scanned player to get the undisturbed state
 execute if score #dialog Dialog matches 1 as @a[tag=same_room,tag=!spectator,tag=game_boy_horror_menu,tag=!scanning_player,tag=!scanned_entity] run function luigis_mansion:selection_menu/game_boy_horror/exit
 execute if score #dialog Dialog matches 2..3 as @a[tag=same_room,tag=!spectator,tag=game_boy_horror_menu,tag=!scanning_player] run function luigis_mansion:selection_menu/game_boy_horror/exit

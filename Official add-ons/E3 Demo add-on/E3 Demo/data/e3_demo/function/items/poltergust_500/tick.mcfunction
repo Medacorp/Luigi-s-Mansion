@@ -7,14 +7,10 @@ tag @s remove is_pulling
 tag @s remove catch_portrait_ghost
 tag @s remove catch_ghost
 execute if entity @s[nbt=!{data:{inventory:[{components:{"minecraft:custom_data":{namespace:"e3_demo",id:"poltergust_500",gooigi_variant:1b}}}]}},tag=gooigi] run function e3_demo:items/poltergust_500/gooigi
-execute if entity @s[tag=poltergust_floor_sound,tag=!gooigi,scores={Shrunk=0}] run playsound e3_demo:item.poltergust_500.hit_floor player @a[tag=same_room] ~ ~ ~ 1
-execute if entity @s[tag=poltergust_wall_sound,tag=!gooigi,scores={Shrunk=0}] run playsound e3_demo:item.poltergust_500.hit_wall player @a[tag=same_room] ~ ~ ~ 1
-execute if entity @s[tag=poltergust_floor_sound,tag=!gooigi,scores={Shrunk=1..}] run playsound e3_demo:item.poltergust_500.hit_floor player @a[tag=same_room] ~ ~ ~ 1 2
-execute if entity @s[tag=poltergust_wall_sound,tag=!gooigi,scores={Shrunk=1..}] run playsound e3_demo:item.poltergust_500.hit_wall player @a[tag=same_room] ~ ~ ~ 1 2
-execute if entity @s[tag=poltergust_floor_sound,tag=gooigi,scores={Shrunk=0}] run playsound e3_demo:item.poltergust_500.hit_floor_gooigi player @a[tag=same_room] ~ ~ ~ 1
-execute if entity @s[tag=poltergust_wall_sound,tag=gooigi,scores={Shrunk=0}] run playsound e3_demo:item.poltergust_500.hit_wall_gooigi player @a[tag=same_room] ~ ~ ~ 1
-execute if entity @s[tag=poltergust_floor_sound,tag=gooigi,scores={Shrunk=1..}] run playsound e3_demo:item.poltergust_500.hit_floor_gooigi player @a[tag=same_room] ~ ~ ~ 1 2
-execute if entity @s[tag=poltergust_wall_sound,tag=gooigi,scores={Shrunk=1..}] run playsound e3_demo:item.poltergust_500.hit_wall_gooigi player @a[tag=same_room] ~ ~ ~ 1 2
+execute if entity @s[tag=poltergust_floor_sound,tag=!gooigi] run function luigis_mansion:entities/luigi/make_sound/simple {sound:"e3_demo:item.poltergust_500.hit_floor"}
+execute if entity @s[tag=poltergust_wall_sound,tag=!gooigi] run function luigis_mansion:entities/luigi/make_sound/simple {sound:"e3_demo:item.poltergust_500.hit_wall"}
+execute if entity @s[tag=poltergust_floor_sound,tag=gooigi] run function luigis_mansion:entities/luigi/make_sound/simple {sound:"e3_demo:item.poltergust_500.hit_floor_gooigi"}
+execute if entity @s[tag=poltergust_wall_sound,tag=gooigi] run function luigis_mansion:entities/luigi/make_sound/simple {sound:"e3_demo:item.poltergust_500.hit_wall_gooigi"}
 tag @s remove poltergust_floor_sound
 tag @s remove poltergust_wall_sound
 execute unless entity @s[scores={OverheatMeter=0..}] run scoreboard players add @s OverheatMeter 0

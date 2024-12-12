@@ -1,10 +1,7 @@
 scoreboard players add @s AnimationProgress 1
 tag @s add animation_may_move
 tag @s add tick_down_invulnerability
-execute if entity @s[scores={AnimationProgress=1,Sound=0,Health=41..,Shrunk=0}] run playsound luigis_mansion:entity.player.grabbed.high_health player @a[tag=same_room] ~ ~ ~ 1
-execute if entity @s[scores={AnimationProgress=1,Sound=0,Health=41..,Shrunk=1..}] run playsound luigis_mansion:entity.player.grabbed.high_health player @a[tag=same_room] ~ ~ ~ 1 2
-execute if entity @s[scores={AnimationProgress=1,Sound=0,Health=..40,Shrunk=0}] run playsound luigis_mansion:entity.player.grabbed.low_health player @a[tag=same_room] ~ ~ ~ 1
-execute if entity @s[scores={AnimationProgress=1,Sound=0,Health=..40,Shrunk=1..}] run playsound luigis_mansion:entity.player.grabbed.low_health player @a[tag=same_room] ~ ~ ~ 1 2
+execute if entity @s[scores={AnimationProgress=1}] run function luigis_mansion:entities/luigi/make_sound/force {high:"luigis_mansion:entity.player.grabbed.high_health",medium:"luigis_mansion:entity.player.grabbed.high_health",low:"luigis_mansion:entity.player.grabbed.low_health",duration:40}
 scoreboard players set @s[scores={Sound=0}] Sound 2
 scoreboard players operation #temp GrabbedID = @s ID
 execute as @e[tag=ghost,scores={GrabbedID=-2147483648..},tag=!vanish] if score @s GrabbedID = #temp GrabbedID run tag @s add this_ghost

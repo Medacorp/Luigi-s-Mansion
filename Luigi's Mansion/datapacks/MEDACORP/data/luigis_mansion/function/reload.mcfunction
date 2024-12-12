@@ -11,6 +11,7 @@ scoreboard players add * Offline 1
 scoreboard players reset @e Offline
 scoreboard players set @a Offline 0
 
+execute unless data storage luigis_mansion:data current_state run forceload add 727 -42 796 23
 execute unless data storage luigis_mansion:data current_state run forceload add 4859 -101 4668 83
 execute unless data storage luigis_mansion:data current_state run forceload add 27 0 27 0
 execute unless data storage luigis_mansion:data current_state run forceload add 0 0

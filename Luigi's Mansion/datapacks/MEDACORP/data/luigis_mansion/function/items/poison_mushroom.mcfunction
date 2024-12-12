@@ -1,3 +1,2 @@
-execute as @e[tag=collector] run function luigis_mansion:entities/luigi/run_command_as_owner {command:"execute if entity @s[tag=looking_at_map,limit=1] at @s run function luigis_mansion:selection_menu/game_boy_horror/exit"}
 execute if entity @s[tag=!choking] as @e[tag=collector,tag=!catching_ghost,limit=1] at @s run function luigis_mansion:items/poison_mushroom/shrink
-execute if entity @s[tag=choking] as @e[tag=collector,tag=!catching_ghost,limit=1] at @s run function luigis_mansion:items/poison_mushroom/choke
+execute if entity @s[tag=choking] as @e[tag=collector,limit=1] at @s run function luigis_mansion:items/poison_mushroom/choke

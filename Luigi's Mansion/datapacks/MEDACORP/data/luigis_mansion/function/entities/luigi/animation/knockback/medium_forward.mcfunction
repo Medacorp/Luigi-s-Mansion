@@ -4,9 +4,7 @@ summon minecraft:marker ^ ^-1 ^ {Tags:["temp","remove_from_existence"]}
 execute store result entity @e[type=minecraft:marker,tag=temp,limit=1] Pos[0] double 0.01 run scoreboard players get @s KnockbackX
 execute store result entity @e[type=minecraft:marker,tag=temp,limit=1] Pos[2] double 0.01 run scoreboard players get @s KnockbackZ
 
-execute if entity @s[scores={AnimationProgress=1,Sound=0,Shrunk=0}] run playsound luigis_mansion:entity.player.hurt_little player @a[tag=same_room] ~ ~ ~ 1
-execute if entity @s[scores={AnimationProgress=1,Sound=0,Shrunk=1..}] run playsound luigis_mansion:entity.player.hurt_little player @a[tag=same_room] ~ ~ ~ 1 2
-scoreboard players set @s[scores={AnimationProgress=1,Sound=0}] Sound 20
+execute if entity @s[scores={AnimationProgress=1}] run function luigis_mansion:entities/luigi/make_sound/force {high:"luigis_mansion:entity.player.hurt_little",medium:"luigis_mansion:entity.player.hurt_little",low:"luigis_mansion:entity.player.hurt_little",duration:20}
 execute if entity @s[scores={AnimationProgress=2},tag=!flipped_gravity] run function luigis_mansion:entities/luigi/move/execute {execute:"at @s facing entity @e[type=minecraft:marker,tag=temp,limit=1] feet",teleport:"^ ^ ^ ~-180 5"}
 execute if entity @s[scores={AnimationProgress=3},tag=!flipped_gravity] run function luigis_mansion:entities/luigi/move/execute {execute:"at @s facing entity @e[type=minecraft:marker,tag=temp,limit=1] feet",teleport:"^ ^ ^ ~-180 10"}
 execute if entity @s[scores={AnimationProgress=4},tag=!flipped_gravity] run function luigis_mansion:entities/luigi/move/execute {execute:"at @s facing entity @e[type=minecraft:marker,tag=temp,limit=1] feet",teleport:"^ ^ ^ ~-180 15"}

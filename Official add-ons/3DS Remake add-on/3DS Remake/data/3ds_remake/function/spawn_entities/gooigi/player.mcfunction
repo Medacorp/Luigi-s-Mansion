@@ -28,7 +28,10 @@ execute in minecraft:overworld run kill @e[x=27.5,y=0.0,z=0.5,distance=..0.7,typ
 execute if score #global_player_names Selected matches 0 run data merge entity @e[tag=model_piece,tag=source,tag=this_entity,limit=1] {CustomNameVisible:0b}
 execute if score #global_player_names Selected matches 1 run data merge entity @e[tag=model_piece,tag=source,tag=this_entity,limit=1] {CustomNameVisible:1b}
 tag @e[tag=model_piece,tag=this_entity] remove this_entity
+scoreboard players set @e[tag=this_entity,limit=1] Sound 0
+scoreboard players set @e[tag=this_entity,limit=1] PoltergustSound 0
 execute if entity @s[tag=flipped_gravity] run tag @e[tag=this_entity,limit=1] add flipped_gravity
+execute if entity @s[tag=flashlight] run tag @e[tag=this_entity,limit=1] add flashlight
 scoreboard players operation @e[tag=this_entity,limit=1] AnimationProgress = @s AnimationProgress
 scoreboard players operation @e[tag=this_entity,limit=1] ElementMeter = @s ElementMeter
 scoreboard players operation @e[tag=this_entity,limit=1] LastRoom = @s LastRoom

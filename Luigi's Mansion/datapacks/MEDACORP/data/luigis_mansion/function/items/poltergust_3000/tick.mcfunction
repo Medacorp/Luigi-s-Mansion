@@ -13,10 +13,8 @@ tag @s remove exploding_poltergust_effect
 tag @s remove is_pulling
 tag @s remove catch_portrait_ghost
 tag @s remove catch_ghost
-execute if entity @s[tag=poltergust_floor_sound,scores={Shrunk=0}] run playsound luigis_mansion:item.poltergust_3000.hit_floor player @a[tag=same_room] ~ ~ ~ 1
-execute if entity @s[tag=poltergust_floor_sound,scores={Shrunk=1..}] run playsound luigis_mansion:item.poltergust_3000.hit_floor player @a[tag=same_room] ~ ~ ~ 1 2
-execute if entity @s[tag=poltergust_wall_sound,scores={Shrunk=0}] run playsound luigis_mansion:item.poltergust_3000.hit_wall player @a[tag=same_room] ~ ~ ~ 1
-execute if entity @s[tag=poltergust_wall_sound,scores={Shrunk=1..}] run playsound luigis_mansion:item.poltergust_3000.hit_wall player @a[tag=same_room] ~ ~ ~ 1 2
+execute if entity @s[tag=poltergust_floor_sound] run function luigis_mansion:entities/luigi/make_sound/simple {sound:"luigis_mansion:item.poltergust_3000.hit_floor"}
+execute if entity @s[tag=poltergust_wall_sound] run function luigis_mansion:entities/luigi/make_sound/simple {sound:"luigis_mansion:item.poltergust_3000.hit_wall"}
 tag @s remove poltergust_floor_sound
 tag @s remove poltergust_wall_sound
 execute if entity @s[tag=exploding_poltergust] run function luigis_mansion:items/poltergust_3000/explode

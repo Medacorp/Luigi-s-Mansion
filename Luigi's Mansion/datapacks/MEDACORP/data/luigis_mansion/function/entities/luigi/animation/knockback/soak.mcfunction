@@ -1,14 +1,6 @@
 scoreboard players add @s AnimationProgress 1
-execute if entity @s[scores={AnimationProgress=1,Sound=0,Health=41..,Shrunk=0}] run playsound luigis_mansion:entity.player.hurt_scare.high_health player @a[tag=same_room] ~ ~ ~ 1
-execute if entity @s[scores={AnimationProgress=1,Sound=0,Health=41..,Shrunk=1..}] run playsound luigis_mansion:entity.player.hurt_scare.high_health player @a[tag=same_room] ~ ~ ~ 1 2
-execute if entity @s[scores={AnimationProgress=1,Sound=0,Health=..40,Shrunk=0}] run playsound luigis_mansion:entity.player.hurt_scare.low_health player @a[tag=same_room] ~ ~ ~ 1
-execute if entity @s[scores={AnimationProgress=1,Sound=0,Health=..40,Shrunk=1..}] run playsound luigis_mansion:entity.player.hurt_scare.low_health player @a[tag=same_room] ~ ~ ~ 1 2
-scoreboard players set @s[scores={AnimationProgress=1,Sound=0}] Sound 30
-execute if entity @s[scores={AnimationProgress=31,Sound=0,Health=41..,Shrunk=0}] run playsound luigis_mansion:entity.player.hurt_soak.high_health player @a[tag=same_room] ~ ~ ~ 1
-execute if entity @s[scores={AnimationProgress=31,Sound=0,Health=41..,Shrunk=1..}] run playsound luigis_mansion:entity.player.hurt_soak.high_health player @a[tag=same_room] ~ ~ ~ 1 2
-execute if entity @s[scores={AnimationProgress=31,Sound=0,Health=..40,Shrunk=0}] run playsound luigis_mansion:entity.player.hurt_soak.low_health player @a[tag=same_room] ~ ~ ~ 1
-execute if entity @s[scores={AnimationProgress=31,Sound=0,Health=..40,Shrunk=1..}] run playsound luigis_mansion:entity.player.hurt_soak.low_health player @a[tag=same_room] ~ ~ ~ 1 2
-scoreboard players set @s[scores={AnimationProgress=31,Sound=0}] Sound 20
+execute if entity @s[scores={AnimationProgress=1}] run function luigis_mansion:entities/luigi/make_sound/force {high:"luigis_mansion:entity.player.hurt_scare.high_health",medium:"luigis_mansion:entity.player.hurt_scare.high_health",low:"luigis_mansion:entity.player.hurt_scare.low_health",duration:30}
+execute if entity @s[scores={AnimationProgress=31}] run function luigis_mansion:entities/luigi/make_sound/force {high:"luigis_mansion:entity.player.hurt_soak.high_health",medium:"luigis_mansion:entity.player.hurt_soak.high_health",low:"luigis_mansion:entity.player.hurt_soak.low_health",duration:20}
 tag @s remove new_poltergust_grabbed
 tag @s remove poltergust_grabbed
 tag @s remove vacuuming_ghost

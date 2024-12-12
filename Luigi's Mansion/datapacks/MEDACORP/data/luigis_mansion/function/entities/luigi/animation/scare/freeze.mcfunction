@@ -1,9 +1,5 @@
 scoreboard players add @s AnimationProgress 1
-execute if entity @s[scores={AnimationProgress=1,Health=41..,Shrunk=0}] run playsound luigis_mansion:entity.player.scare_freeze.high_health player @a[tag=same_room] ~ ~ ~ 1
-execute if entity @s[scores={AnimationProgress=1,Health=41..,Shrunk=1..}] run playsound luigis_mansion:entity.player.scare_freeze.high_health player @a[tag=same_room] ~ ~ ~ 1 2
-execute if entity @s[scores={AnimationProgress=1,Health=..40,Shrunk=0}] run playsound luigis_mansion:entity.player.scare_freeze.low_health player @a[tag=same_room] ~ ~ ~ 1
-execute if entity @s[scores={AnimationProgress=1,Health=..40,Shrunk=1..}] run playsound luigis_mansion:entity.player.scare_freeze.low_health player @a[tag=same_room] ~ ~ ~ 1 2
-scoreboard players set @s[scores={AnimationProgress=1}] Sound 60
+execute if entity @s[scores={AnimationProgress=1}] run function luigis_mansion:entities/luigi/make_sound/force {high:"luigis_mansion:entity.player.scare_freeze.high_health",medium:"luigis_mansion:entity.player.scare_freeze.high_health",low:"luigis_mansion:entity.player.scare_freeze.low_health",duration:60}
 execute if entity @s[scores={AnimationProgress=20},tag=!flipped_gravity] run function luigis_mansion:entities/luigi/move/execute {execute:"at @s rotated ~ 0",teleport:"^ ^ ^ ~ ~-4.5"}
 execute if entity @s[scores={AnimationProgress=21},tag=!flipped_gravity] run function luigis_mansion:entities/luigi/move/execute {execute:"at @s rotated ~ 0",teleport:"^ ^ ^ ~ ~-9"}
 execute if entity @s[scores={AnimationProgress=22},tag=!flipped_gravity] run function luigis_mansion:entities/luigi/move/execute {execute:"at @s rotated ~ 0",teleport:"^ ^ ^ ~ ~-13.5"}

@@ -14,14 +14,10 @@ tag @s remove is_pulling
 tag @s remove catch_portrait_ghost
 tag @s remove catch_ghost
 execute if entity @s[nbt=!{data:{inventory:[{components:{"minecraft:custom_data":{namespace:"luigis_mansion",id:"poltergust_3000",gooigi_variant:1b}}}]}},tag=gooigi] run function 3ds_remake:items/poltergust_3000/gooigi
-execute if entity @s[tag=poltergust_floor_sound,tag=!gooigi,scores={Shrunk=0}] run playsound luigis_mansion:item.poltergust_3000.hit_floor player @a[tag=same_room] ~ ~ ~ 1
-execute if entity @s[tag=poltergust_wall_sound,tag=!gooigi,scores={Shrunk=0}] run playsound luigis_mansion:item.poltergust_3000.hit_wall player @a[tag=same_room] ~ ~ ~ 1
-execute if entity @s[tag=poltergust_floor_sound,tag=!gooigi,scores={Shrunk=1..}] run playsound luigis_mansion:item.poltergust_3000.hit_floor player @a[tag=same_room] ~ ~ ~ 1 2
-execute if entity @s[tag=poltergust_wall_sound,tag=!gooigi,scores={Shrunk=1..}] run playsound luigis_mansion:item.poltergust_3000.hit_wall player @a[tag=same_room] ~ ~ ~ 1 2
-execute if entity @s[tag=poltergust_floor_sound,tag=gooigi,scores={Shrunk=0}] run playsound 3ds_remake:item.poltergust_3000.hit_floor_gooigi player @a[tag=same_room] ~ ~ ~ 1
-execute if entity @s[tag=poltergust_wall_sound,tag=gooigi,scores={Shrunk=0}] run playsound 3ds_remake:item.poltergust_3000.hit_wall_gooigi player @a[tag=same_room] ~ ~ ~ 1
-execute if entity @s[tag=poltergust_floor_sound,tag=gooigi,scores={Shrunk=1..}] run playsound 3ds_remake:item.poltergust_3000.hit_floor_gooigi player @a[tag=same_room] ~ ~ ~ 1 2
-execute if entity @s[tag=poltergust_wall_sound,tag=gooigi,scores={Shrunk=1..}] run playsound 3ds_remake:item.poltergust_3000.hit_wall_gooigi player @a[tag=same_room] ~ ~ ~ 1 2
+execute if entity @s[tag=poltergust_floor_sound,tag=!gooigi] run function luigis_mansion:entities/luigi/make_sound/simple {sound:"luigis_mansion:item.poltergust_3000.hit_floor"}
+execute if entity @s[tag=poltergust_wall_sound,tag=!gooigi] run function luigis_mansion:entities/luigi/make_sound/simple {sound:"luigis_mansion:item.poltergust_3000.hit_wall"}
+execute if entity @s[tag=poltergust_floor_sound,tag=gooigi] run function luigis_mansion:entities/luigi/make_sound/simple {sound:"3ds_remake:item.poltergust_3000.hit_floor_gooigi"}
+execute if entity @s[tag=poltergust_wall_sound,tag=gooigi] run function luigis_mansion:entities/luigi/make_sound/simple {sound:"3ds_remake:item.poltergust_3000.hit_wall_gooigi"}
 tag @s remove poltergust_floor_sound
 tag @s remove poltergust_wall_sound
 execute if entity @s[tag=exploding_poltergust] run function luigis_mansion:items/poltergust_3000/explode

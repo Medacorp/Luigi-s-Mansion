@@ -11,8 +11,7 @@ execute if entity @s[scores={ActionTime=21..30}] positioned ^ ^0.9 ^3.5 run func
 scoreboard players reset #temp Time
 execute if entity @s[scores={ActionTime=21..30}] at @e[tag=luigi,tag=got_sucked,distance=..4,sort=nearest,limit=1] run function luigis_mansion:entities/ghost/set_target
 execute if entity @s[scores={ActionTime=21..30}] run tag @e[tag=luigi,tag=got_sucked,distance=..4,sort=nearest,limit=1] add vacuumed
-execute if entity @s[scores={ActionTime=21..30}] as @e[tag=luigi,tag=vacuumed,limit=1,scores={Shrunk=0}] at @s run playsound luigis_mansion:entity.player.wind_warp player @a ~ ~ ~ 1
-execute if entity @s[scores={ActionTime=21..30}] as @e[tag=luigi,tag=vacuumed,limit=1,scores={Shrunk=1..}] at @s run playsound luigis_mansion:entity.player.wind_warp player @a ~ ~ ~ 1 2
+execute if entity @s[scores={ActionTime=21..30}] as @e[tag=luigi,tag=vacuumed,limit=1] run function luigis_mansion:entities/luigi/make_sound/simple {sound:"luigis_mansion:entity.player.wind_warp"}
 execute if entity @s[scores={ActionTime=30}] unless entity @e[tag=luigi,tag=got_sucked,limit=1] run scoreboard players set @s ActionTime 120
 execute if entity @e[tag=luigi,tag=got_sucked,distance=..4,limit=1] run scoreboard players set @s[scores={ActionTime=21..30}] ActionTime 31
 execute if entity @s[scores={ActionTime=31}] run tag @e[tag=luigi,tag=vacuumed,limit=1] remove vacuumed

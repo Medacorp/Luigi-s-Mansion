@@ -1,8 +1,7 @@
 scoreboard players add @s AnimationProgress 1
 execute at @s[scores={AnimationProgress=1}] anchored eyes run summon minecraft:armor_stand ^ ^ ^ {CustomName:'{"type":"translatable","translate":"luigis_mansion:entity.luigi"}',Tags:["luigi_ice","knockback_model"],Invisible:1b,Marker:1b,Pose:{Head:[0.0f,0.0f,0.01f]},ArmorItems:[{},{},{},{id:"minecraft:diamond_pickaxe",count:1,components:{"minecraft:item_model":"luigis_mansion:entity/ice"}}]}
 execute at @s[scores={AnimationProgress=1}] anchored eyes positioned ^ ^ ^ run scoreboard players operation @e[tag=knockback_model,limit=1,distance=..0.1] ID = @s ID
-execute at @s[scores={AnimationProgress=1,Sound=0,Shrunk=0}] run playsound luigis_mansion:entity.player.hurt_freeze player @a[tag=same_room] ~ ~ ~ 1
-execute at @s[scores={AnimationProgress=1,Sound=0,Shrunk=1..}] run playsound luigis_mansion:entity.player.hurt_freeze player @a[tag=same_room] ~ ~ ~ 1 2
+execute at @s[scores={AnimationProgress=1}] run function luigis_mansion:entities/luigi/make_sound/simple {sound:"luigis_mansion:entity.player.hurt_freeze"}
 scoreboard players set @s[scores={AnimationProgress=..70,Sound=0}] Sound 2
 #freeze_player insert
 summon minecraft:marker ~ ~ ~ {Tags:["home","remove_from_existence"]}
@@ -37,11 +36,7 @@ execute at @s[scores={AnimationProgress=..70,Invulnerable=0}] run data modify st
 execute if entity @s[scores={AnimationProgress=..70,Invulnerable=0}] if data storage luigis_mansion:data my_memory.hurt_by.attacker[0] run data modify storage luigis_mansion:data damage.attacker set from storage luigis_mansion:data my_memory.hurt_by.attacker[0].id
 execute at @s[scores={AnimationProgress=..70,Invulnerable=0}] run function luigis_mansion:entities/luigi/damage
 scoreboard players set @s[scores={AnimationProgress=70}] Invulnerable 70
-execute at @s[scores={AnimationProgress=73,Sound=0,Health=41..,Shrunk=0}] run playsound luigis_mansion:entity.player.sigh.high_health player @a[tag=same_room] ~ ~ ~ 1
-execute at @s[scores={AnimationProgress=73,Sound=0,Health=41..,Shrunk=1..}] run playsound luigis_mansion:entity.player.sigh.high_health player @a[tag=same_room] ~ ~ ~ 1 2
-execute at @s[scores={AnimationProgress=73,Sound=0,Health=..40,Shrunk=0}] run playsound luigis_mansion:entity.player.sigh.low_health player @a[tag=same_room] ~ ~ ~ 1
-execute at @s[scores={AnimationProgress=73,Sound=0,Health=..40,Shrunk=1..}] run playsound luigis_mansion:entity.player.sigh.low_health player @a[tag=same_room] ~ ~ ~ 1 2
-scoreboard players set @s[scores={AnimationProgress=73,Sound=0}] Sound 15
+execute at @s[scores={AnimationProgress=73}] run function luigis_mansion:entities/luigi/make_sound/force {high:"luigis_mansion:entity.player.sigh.high_health",medium:"luigis_mansion:entity.player.sigh.high_health",low:"luigis_mansion:entity.player.sigh.low_health",duration:15}
 tag @s remove new_poltergust_grabbed
 tag @s remove poltergust_grabbed
 tag @s remove vacuuming_ghost

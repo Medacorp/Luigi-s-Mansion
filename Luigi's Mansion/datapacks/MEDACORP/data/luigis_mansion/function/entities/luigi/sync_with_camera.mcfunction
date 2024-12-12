@@ -34,6 +34,10 @@ tag @s[tag=!third_person_movement_walking] remove walking
 tag @s remove third_person_movement_walking
 tag @s remove running
 tag @a[tag=this_player,limit=1] remove flipped_gravity
+scoreboard players operation @s ForceScreen = @a[tag=this_player,limit=1] ForceScreen
+scoreboard players operation @s ForceRadar = @a[tag=this_player,limit=1] ForceRadar
+scoreboard players reset @a[tag=this_player,limit=1] ForceScreen
+scoreboard players reset @a[tag=this_player,limit=1] ForceRadar
 scoreboard players operation @a[tag=this_player,limit=1] Shrunk = @s Shrunk
 scoreboard players operation @a[tag=this_player,limit=1] SneakTime = @s SneakTime
 data modify entity @s data.animation set from storage luigis_mansion:data my_memory.animation
@@ -44,12 +48,16 @@ execute if entity @a[tag=this_player,tag=running,tag=!separated_camera,limit=1] 
 execute if entity @s[tag=flipped_gravity] run tag @a[tag=this_player,limit=1] add flipped_gravity
 
 # Inventory
+tag @a[tag=this_player,limit=1] remove flashlight
+execute if entity @s[tag=had_flashlight_on] run tag @a[tag=this_player,limit=1] add flashlight
 data remove entity @s data.selected_item
 data modify entity @s data.inventory set value []
 data modify entity @s data.selected_item set from entity @a[tag=this_player,limit=1] SelectedItem
 execute if entity @a[tag=this_player,limit=1,tag=!using_selection_menu,scores={Shrunk=0}] run data modify entity @s data.inventory set from entity @a[tag=this_player,limit=1] Inventory
 execute if entity @a[tag=this_player,limit=1,tag=using_selection_menu,scores={Shrunk=0}] run data modify entity @s data.inventory set from storage luigis_mansion:data my_memory.selection_menu.inventory
 execute if entity @a[tag=this_player,limit=1,scores={Shrunk=1..}] run data modify entity @s data.inventory set from storage luigis_mansion:data my_memory.inventory
+execute if entity @a[tag=this_player,limit=1,scores={Shrunk=1..}] run data remove entity @s data.inventory[{components:{"minecraft:custom_data":{keep_when_shrunk:1b}}}]
+execute if entity @a[tag=this_player,limit=1,scores={Shrunk=1..}] run data modify entity @s data.inventory append from entity @a[tag=this_player,limit=1] Inventory[{components:{"minecraft:custom_data":{keep_when_shrunk:1b}}}]
 
 # Settings
 tag @s remove stop_map_on_key_collect

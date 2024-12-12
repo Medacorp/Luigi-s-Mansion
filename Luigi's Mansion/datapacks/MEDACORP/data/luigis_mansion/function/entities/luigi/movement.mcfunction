@@ -4,8 +4,8 @@ execute unless entity @s[nbt={data:{animation:{}}},tag=!idle,tag=!animation_may_
 execute unless entity @s[nbt={data:{animation:{}}},tag=!idle,tag=!animation_may_move] positioned as @s run function luigis_mansion:entities/luigi/movement/gravity
 execute unless entity @s[nbt={data:{animation:{}}},tag=!idle,tag=!animation_may_move,tag=!animation_free_rotation] at @s run function luigis_mansion:entities/luigi/movement/rotate with storage luigis_mansion:data luigi.movement
 
-execute if entity @a[tag=this_player,tag=separated_camera,limit=1] store result score @a[tag=this_player,limit=1] ModelPositionX run data get entity @s Pos[0] 100
-execute if entity @a[tag=this_player,tag=separated_camera,limit=1] store result score @a[tag=this_player,limit=1] ModelPositionY run data get entity @s Pos[1] 100
-execute if entity @a[tag=this_player,tag=separated_camera,limit=1] store result score @a[tag=this_player,limit=1] ModelPositionZ run data get entity @s Pos[2] 100
-execute if entity @a[tag=this_player,tag=separated_camera,limit=1] store result score @a[tag=this_player,limit=1] ModelRotationX run data get entity @s Rotation[1]
-execute if entity @a[tag=this_player,tag=separated_camera,limit=1] store result score @a[tag=this_player,limit=1] ModelRotationY run data get entity @s Rotation[0]
+execute store result score @a[tag=this_player,limit=1] ModelPositionX run data get entity @s Pos[0] 100
+execute store result score @a[tag=this_player,limit=1] ModelPositionY run data get entity @s Pos[1] 100
+execute store result score @a[tag=this_player,limit=1] ModelPositionZ run data get entity @s Pos[2] 100
+execute store result score @a[tag=this_player,limit=1] ModelRotationX run data get entity @s Rotation[1]
+execute store result score @a[tag=this_player,limit=1] ModelRotationY run data get entity @s Rotation[0]

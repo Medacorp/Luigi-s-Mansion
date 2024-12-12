@@ -7,7 +7,7 @@ execute if score #dialog Dialog matches 6 as @a[tag=same_room,tag=dialog_menu] r
 scoreboard players reset @a[tag=same_room,tag=!spectator] WarpTime
 execute as @a[tag=same_room,tag=!spectator,tag=game_boy_horror_menu] run function luigis_mansion:selection_menu/game_boy_horror/exit
 tag @e[tag=e_gadd,tag=same_room,limit=1] remove freeze_animation
-execute if score #dialog Dialog matches ..1 as @e[tag=e_gadd,tag=same_room,limit=1] at @s facing entity @a[tag=same_room,tag=!spectator,sort=nearest,limit=1] feet rotated ~ 0 run teleport @s ~ ~ ~ ~ ~
+execute if score #dialog Dialog matches ..1 as @e[tag=e_gadd,tag=same_room,limit=1] at @s facing entity @e[tag=luigi,tag=same_room,sort=nearest,limit=1] feet rotated ~ 0 run teleport @s ~ ~ ~ ~ ~
 execute if score #dialog Dialog matches -1 run tag @a[tag=same_room,limit=1] add next_dialog_line
 execute if score #dialog Dialog matches -1 run scoreboard players set #dialog Dialog 3
 execute if score #dialog Dialog matches 1..5 as @e[tag=luigi,tag=same_room] run function luigis_mansion:entities/luigi/animation/set/idle

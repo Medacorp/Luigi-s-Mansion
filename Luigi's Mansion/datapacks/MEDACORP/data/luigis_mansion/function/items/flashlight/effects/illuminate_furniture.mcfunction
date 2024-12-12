@@ -1,2 +1,3 @@
-execute as @e[tag=same_room,tag=furniture,tag=affected_by_flashlight] positioned ~ ~1 ~ positioned ^ ^ ^3 if block ~ ~ ~ #luigis_mansion:flashlight_path run function luigis_mansion:items/flashlight/effects/illuminate_furniture/step
+execute if entity @s[tag=flashlight,scores={Shrunk=0}] as @e[tag=same_room,tag=furniture,tag=affected_by_flashlight] positioned ~ ~1 ~ positioned ^ ^ ^3 if block ~ ~ ~ #luigis_mansion:flashlight_path run function luigis_mansion:items/flashlight/effects/illuminate_furniture/step
+execute if entity @s[tag=flashlight,scores={Shrunk=1..}] as @e[tag=same_room,tag=furniture,tag=affected_by_flashlight] positioned ~ ~0.5 ~ positioned ^ ^ ^3 if block ~ ~ ~ #luigis_mansion:flashlight_path run function luigis_mansion:items/flashlight/effects/illuminate_furniture/step
 scoreboard players reset #temp PathStep

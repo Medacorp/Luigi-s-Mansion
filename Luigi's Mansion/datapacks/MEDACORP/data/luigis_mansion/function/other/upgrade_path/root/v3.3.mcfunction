@@ -3,3 +3,4 @@ data modify storage luigis_mansion:data data_version set value 8
 data modify storage luigis_mansion:data memory[] merge value {revived_by:'""'}
 data remove storage luigis_mansion:data found_e_gadd
 data remove storage luigis_mansion:data entered_mansion
+forceload add 727 -42 796 23

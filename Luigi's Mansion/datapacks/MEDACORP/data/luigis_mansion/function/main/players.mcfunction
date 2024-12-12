@@ -12,7 +12,6 @@ scoreboard players set @s[tag=separated_camera] TeleportDelaySetting 0
 tag @s add player
 tag @s[tag=camera,gamemode=!spectator] remove spectator
 execute if loaded ~ ~ ~ if loaded ~-48 ~ ~ if loaded ~48 ~ ~ if loaded ~ ~ ~-48 if loaded ~ ~ ~48 if loaded ~48 ~ ~48 if loaded ~48 ~ ~-48 if loaded ~-48 ~ ~48 if loaded ~-48 ~ ~-48 run function luigis_mansion:main/loaded_chunks
-execute if entity @s[tag=flipped_gravity] run function luigis_mansion:entities/player/correct_flipped_position
 execute unless entity @s[scores={Health=-1000..}] run scoreboard players set @s Health 100
 execute unless entity @s[scores={MaxHealth=0..}] run scoreboard players set @s MaxHealth 100
 
@@ -31,19 +30,41 @@ execute unless score @s PreviousRoom = @s Room if score #debug_messages Selected
 scoreboard players operation @s PreviousRoom = @s Room
 execute unless entity @s[scores={Room=1..}] run scoreboard players set @s LastFloor -2
 
+scoreboard players add @s[scores={SneakTime=1..}] SneakTime 1
+scoreboard players set @s[scores={Sneaking=1},tag=!was_sneaking] SneakTime 1
+tag @s[scores={Sneaking=1}] add was_sneaking
+tag @s[scores={Sneaking=0}] remove was_sneaking
+scoreboard players set @s[scores={Sneaking=0,SneakTime=20..}] SneakTime 0
+execute unless entity @s[scores={SneakTime=0..}] run scoreboard players set @s SneakTime 0
+tag @s[tag=walking] remove walking
+tag @s[scores={Walk=1..}] add walking
+tag @s[scores={WalkOnWater=1..}] add walking
+tag @s[scores={WalkUnderWater=1..}] add walking
+execute if entity @s[nbt={OnGround:0b},tag=!flipped_gravity,tag=!looking_at_map] if block ~ ~-0.01 ~ #luigis_mansion:ghosts_ignore run tag @s add walking
+execute if entity @s[nbt={OnGround:0b},tag=flipped_gravity,tag=!looking_at_map] run function luigis_mansion:entities/player/flipped_walking
+scoreboard players set @s[scores={Walk=1..}] Walk 0
+scoreboard players set @s[scores={WalkOnWater=1..}] WalkOnWater 0
+scoreboard players set @s[scores={WalkUnderWater=1..}] WalkUnderWater 0
+tag @s[tag=swimming] remove swimming
+tag @s[scores={Swimming=1..}] add swimming
+execute if block ~ ~ ~ minecraft:water if entity @s[nbt={FallFlying:0b}] positioned ~ ~1 ~ unless entity @s[dy=0] run tag @s add swimming
+scoreboard players set @s[scores={Swimming=1..}] Swimming 0
+tag @s[tag=running] remove running
+tag @s[scores={Run=1..}] add running
+scoreboard players set @s[scores={Run=1..}] Run 0
+tag @s[tag=sneak_pos] remove sneak_pos
+tag @s[scores={Sneaking=1..}] add sneak_pos
+scoreboard players set @s[scores={Sneaking=1..}] Sneaking 0
+tag @s[tag=sneaking] remove sneaking
+tag @s[scores={Sneak=1..}] add sneaking
+scoreboard players set @s[scores={Sneak=1..}] Sneak 0
+tag @s[tag=walking,tag=sneak_pos] add sneaking
+tag @s[tag=walking,tag=sneak_pos] remove walking
+execute if entity @s[tag=flipped_gravity] run function luigis_mansion:entities/player/correct_flipped_position
+
 execute if entity @s[tag=show_credits] run function luigis_mansion:credits
 execute at @s[gamemode=!spectator] run function luigis_mansion:entities/player/not_spectator
-execute if entity @s[gamemode=!spectator,scores={Shrunk=1..},tag=!disable_second_small_run] run scoreboard players operation @s OtherX = @s PositionX
-execute if entity @s[gamemode=!spectator,scores={Shrunk=1..},tag=!disable_second_small_run] run scoreboard players operation @s OtherY = @s PositionY
-execute if entity @s[gamemode=!spectator,scores={Shrunk=1..},tag=!disable_second_small_run] run scoreboard players operation @s OtherZ = @s PositionZ
-execute if entity @s[gamemode=!spectator,scores={Shrunk=1..},tag=!disable_second_small_run] store result score @s PositionX run data get entity @s Pos[0] 100
-execute if entity @s[gamemode=!spectator,scores={Shrunk=1..},tag=!disable_second_small_run] store result score @s PositionY run data get entity @s Pos[1] 100
-execute if entity @s[gamemode=!spectator,scores={Shrunk=1..},tag=!disable_second_small_run] store result score @s PositionZ run data get entity @s Pos[2] 100
-execute if entity @s[gamemode=!spectator,scores={Shrunk=1..},tag=!disable_second_small_run] run tag @s add small_second_run
-execute at @s[gamemode=!spectator,scores={Shrunk=1..},tag=!disable_second_small_run] run function luigis_mansion:entities/player/not_spectator
-tag @s remove small_second_run
-tag @s remove disable_second_small_run
-execute if entity @s[gamemode=spectator] run function luigis_mansion:entities/player/spectator
+execute at @s[gamemode=spectator] run function luigis_mansion:entities/player/spectator
 
 tag @s remove warn_for_add_ons
 execute unless entity @s[scores={Offline=0}] run function luigis_mansion:other/log_on
@@ -52,39 +73,6 @@ execute if entity @s[scores={ChangedMansion=1}] run function luigis_mansion:enti
 function luigis_mansion:entities/player/memory/forget_attacker
 
 scoreboard players set @s UseItem 0
-scoreboard players add @s[scores={SneakTime=1..}] SneakTime 1
-scoreboard players set @s[scores={Sneaking=1},tag=!was_sneaking] SneakTime 1
-tag @s[scores={Sneaking=1}] add was_sneaking
-tag @s[scores={Sneaking=0}] remove was_sneaking
-scoreboard players set @s[scores={Sneaking=0,SneakTime=20..}] SneakTime 0
-execute unless entity @s[scores={SneakTime=0..}] run scoreboard players set @s SneakTime 0
-tag @s[tag=walking] remove walking
-tag @s[scores={Walk=1..},tag=!looking_at_map] add walking
-tag @s[scores={WalkOnWater=1..},tag=!looking_at_map] add walking
-tag @s[scores={WalkUnderWater=1..},tag=!looking_at_map] add walking
-execute if entity @s[nbt={OnGround:0b},tag=!flipped_gravity,tag=!looking_at_map] if block ~ ~-0.01 ~ #luigis_mansion:ghosts_ignore run tag @s add walking
-execute if entity @s[nbt={OnGround:0b},tag=flipped_gravity,tag=!looking_at_map,scores={Shrunk=0}] if block ~ ~1.8 ~ #luigis_mansion:ghosts_ignore run tag @s add walking
-execute if entity @s[nbt={OnGround:0b},tag=flipped_gravity,tag=!looking_at_map,scores={Shrunk=1..}] if block ~ ~0.9 ~ #luigis_mansion:ghosts_ignore run tag @s add walking
-execute if entity @s[nbt={OnGround:0b},tag=flipped_gravity,tag=!looking_at_map] unless score @s PositionX = @s OtherX run tag @s add walking
-execute if entity @s[nbt={OnGround:0b},tag=flipped_gravity,tag=!looking_at_map] unless score @s PositionZ = @s OtherZ run tag @s add walking
-scoreboard players set @s[scores={Walk=1..}] Walk 0
-scoreboard players set @s[scores={WalkOnWater=1..}] WalkOnWater 0
-scoreboard players set @s[scores={WalkUnderWater=1..}] WalkUnderWater 0
-tag @s[tag=swimming] remove swimming
-tag @s[scores={Swimming=1..},tag=!looking_at_map] add swimming
-execute if block ~ ~ ~ minecraft:water if entity @s[nbt={FallFlying:0b}] positioned ~ ~1 ~ unless entity @s[dy=0] run tag @s add swimming
-scoreboard players set @s[scores={Swimming=1..}] Swimming 0
-tag @s[tag=running] remove running
-tag @s[scores={Run=1..},tag=!looking_at_map] add running
-scoreboard players set @s[scores={Run=1..}] Run 0
-tag @s[tag=sneak_pos] remove sneak_pos
-tag @s[scores={Sneaking=1..},tag=!looking_at_map] add sneak_pos
-scoreboard players set @s[scores={Sneaking=1..}] Sneaking 0
-tag @s[tag=sneaking] remove sneaking
-tag @s[scores={Sneak=1..},tag=!looking_at_map] add sneaking
-scoreboard players set @s[scores={Sneak=1..}] Sneak 0
-tag @s[tag=walking,tag=sneak_pos] add sneaking
-tag @s[tag=walking,tag=sneak_pos] remove walking
 
 execute if entity @a[tag=!same_room,tag=!looking_at_map,scores={Room=1..},limit=1] run scoreboard players set #freeze_timer Selected 0
 tag @e[tag=same_room] remove same_room

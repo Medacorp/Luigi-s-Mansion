@@ -6,14 +6,11 @@ scoreboard players operation #posz Time %= #100 Constants
 execute if score #posz Time matches ..-1 run scoreboard players add #posz Time 100
 
 scoreboard players operation #temp Gravity = @s Gravity
-scoreboard players add #temp Gravity 1
-execute store result storage luigis_mansion:data luigi.movement.gravity float 0.01 run scoreboard players operation #temp Gravity *= #8 Constants
-execute if score #temp Gravity matches 800.. run data modify storage luigis_mansion:data luigi.movement.gravity set value 8f
-scoreboard players operation #temp Gravity = @s Gravity
 scoreboard players operation #temp2 Gravity = @s Gravity
 scoreboard players add #temp2 Gravity 1
-execute if entity @s[tag=!flipped_gravity,tag=!alter_y] run function luigis_mansion:entities/luigi/movement/gravity_step with storage luigis_mansion:data luigi.movement
-execute if entity @s[tag=flipped_gravity,tag=!alter_y] run function luigis_mansion:entities/luigi/movement/gravity_step_flipped with storage luigis_mansion:data luigi.movement
+execute if entity @s[tag=!alter_y,tag=!flipped_gravity] run function luigis_mansion:entities/luigi/movement/gravity_step
+execute if entity @s[tag=!alter_y,tag=flipped_gravity,scores={Shrunk=0}] run function luigis_mansion:entities/luigi/movement/gravity_step_flipped
+execute if entity @s[tag=!alter_y,tag=flipped_gravity,scores={Shrunk=1..}] run function luigis_mansion:entities/luigi/movement/gravity_step_flipped_shrunk
 execute if score #temp Gravity = @s Gravity run scoreboard players set @s Gravity 0
 tag @s remove alter_y
 
