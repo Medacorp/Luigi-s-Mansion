@@ -7,7 +7,7 @@ execute as @a[tag=same_room,tag=!spectator,tag=game_boy_horror_menu] run functio
 tag @e[tag=furniture,tag=same_room,limit=1] remove freeze_animation
 tag @e[tag=furniture,tag=same_room,limit=1] remove no_ai
 execute if score #dialog Dialog matches 1 as @a[tag=same_room,tag=!spectator] at @s run playsound luigis_mansion:entity.ghost.laugh hostile @s ~ ~ ~ 3
-execute if score #dialog Dialog matches 1..579 as @e[tag=luigi,tag=same_room] run function luigis_mansion:entities/luigi/animation/set/idle
+execute if score #dialog Dialog matches 1..579 as @e[tag=luigi,tag=same_room] run function luigis_mansion:entities/luigi/animation/set/idle_no_poltergust
 execute if score #dialog Dialog matches 20 run stopsound @a[tag=same_room,tag=!spectator] music
 execute if score #dialog Dialog matches 20 run playsound luigis_mansion:music.paintings music @a[tag=same_room,tag=!spectator] ~ ~ ~ 1000
 execute if score #dialog Dialog matches 20 run scoreboard players set @a[tag=same_room,tag=!spectator] Music 560

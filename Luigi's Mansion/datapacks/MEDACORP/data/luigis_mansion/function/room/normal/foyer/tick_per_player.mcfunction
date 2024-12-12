@@ -14,6 +14,4 @@ function luigis_mansion:entities/run_command_as_model {command:'execute if entit
 function luigis_mansion:entities/run_command_as_model {command:'tag @s[x=751.0,y=11,z=9.0,distance=..3,tag=!chance_check] add chance_check'}
 function luigis_mansion:entities/run_command_as_model {command:'tag @s[x=751.0,y=11,z=9.0,distance=4..5,tag=chance_check] remove chance_check'}
 
-playsound luigis_mansion:music.mansion.first_entrance music @s[tag=first_entrance] ~ ~ ~ 1000
-scoreboard players set @s[tag=first_entrance] Music 240
-tag @s remove first_entrance
+execute if entity @s[tag=first_entrance] run function luigis_mansion:room/normal/foyer/first_entrance

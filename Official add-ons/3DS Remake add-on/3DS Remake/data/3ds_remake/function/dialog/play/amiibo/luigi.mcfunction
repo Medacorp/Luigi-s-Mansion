@@ -18,7 +18,7 @@ execute if score #dialog Dialog matches 1 if score #luigi_amiibo Selected matche
 execute if score #dialog Dialog matches 1 as @e[tag=luigi,tag=same_room] run function luigis_mansion:entities/luigi/animation/set/nod
 execute if score #dialog Dialog matches 1 run tellraw @a[tag=same_room] {"type":"translatable","translate":"chat.type.text","with":[{"type":"translatable","translate":"luigis_mansion:entity.e_gadd","color":"green"},{"type":"translatable","translate":"3ds_remake:dialog.underground_lab.change_amiibo.2.luigi.on"}]}
 execute if score #dialog Dialog matches 1 at @e[tag=e_gadd,tag=same_room,limit=1] run playsound luigis_mansion:entity.e_gadd.talk.oui_soh_suu_suhm_ck_ck_yuuohh neutral @a[tag=same_room] ~ ~ ~ 1
-execute if score #dialog Dialog matches 21 as @e[tag=luigi,tag=same_room] run function luigis_mansion:entities/luigi/animation/set/idle
+execute if score #dialog Dialog matches 21 as @e[tag=luigi,tag=same_room] run function luigis_mansion:entities/luigi/animation/set/idle_no_poltergust
 
 execute if score #dialog Dialog matches 22 run scoreboard players set #luigi_amiibo Selected 1
 execute if score #dialog Dialog matches 22 run scoreboard players set #dialog Dialog -1
@@ -26,7 +26,7 @@ execute if score #dialog Dialog matches 22 run scoreboard players set #dialog Di
 execute if score #dialog Dialog matches 23 as @e[tag=luigi,tag=same_room] run function luigis_mansion:entities/luigi/animation/set/nod
 execute if score #dialog Dialog matches 23 run tellraw @a[tag=same_room] {"type":"translatable","translate":"chat.type.text","with":[{"type":"translatable","translate":"luigis_mansion:entity.e_gadd","color":"green"},{"type":"translatable","translate":"3ds_remake:dialog.underground_lab.change_amiibo.2.luigi.off"}]}
 execute if score #dialog Dialog matches 23 at @e[tag=e_gadd,tag=same_room,limit=1] run playsound luigis_mansion:entity.e_gadd.talk.pen_pen_odoh_mah_mah_poheh neutral @a[tag=same_room] ~ ~ ~ 1
-execute if score #dialog Dialog matches 43 as @e[tag=luigi,tag=same_room] run function luigis_mansion:entities/luigi/animation/set/idle
+execute if score #dialog Dialog matches 43 as @e[tag=luigi,tag=same_room] run function luigis_mansion:entities/luigi/animation/set/idle_no_poltergust
 
 execute if score #dialog Dialog matches 44 run scoreboard players set #luigi_amiibo Selected 0
 execute if score #dialog Dialog matches 44 run scoreboard players set #dialog Dialog -1

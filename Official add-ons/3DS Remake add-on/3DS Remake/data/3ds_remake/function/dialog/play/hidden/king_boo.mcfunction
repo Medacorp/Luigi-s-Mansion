@@ -15,7 +15,7 @@ tag @e[tag=same_room,nbt={data:{entity:{namespace:"luigis_mansion",id:"mario"}}}
 tag @e[tag=same_room,nbt={data:{entity:{namespace:"luigis_mansion",id:"bowser"}}},limit=1] remove freeze_animation
 tag @e[tag=same_room,nbt={data:{entity:{namespace:"luigis_mansion",id:"king_boo"}}},limit=1] remove freeze_animation
 execute if score #dialog Dialog matches 1 at @e[tag=same_room,nbt={data:{entity:{namespace:"luigis_mansion",id:"king_boo"}}},limit=1] as @a[tag=same_room,distance=..5.9,limit=1] run function luigis_mansion:entities/luigi/move/teleport {teleport:"645 93 -18 90 0"}
-execute if score #dialog Dialog matches 1..430 as @e[tag=luigi,tag=same_room] run function luigis_mansion:entities/luigi/animation/set/idle
+execute if score #dialog Dialog matches 1..430 as @e[tag=luigi,tag=same_room] run function luigis_mansion:entities/luigi/animation/set/idle_no_poltergust
 execute if score #dialog Dialog matches 1 run scoreboard players set #can_warp Selected 0
 execute if score #dialog Dialog matches 1..514 as @a[tag=same_room] run function luigis_mansion:other/music/set/talking_king_boo
 execute if score #dialog Dialog matches 61 run tellraw @a[tag=same_room] {"type":"translatable","translate":"chat.type.text","with":[{"type":"translatable","translate":"luigis_mansion:entity.king_boo","color":"green"},{"type":"translatable","translate":"luigis_mansion:dialog.king_boo.1"}]}

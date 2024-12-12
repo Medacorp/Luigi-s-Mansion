@@ -16,7 +16,7 @@ execute as @a[tag=same_room,tag=!spectator,tag=game_boy_horror_menu] run functio
 tag @e[nbt={data:{entity:{namespace:"luigis_mansion",id:"jarvis"}}},tag=same_room,limit=1] remove freeze_animation
 tag @e[nbt={data:{entity:{namespace:"luigis_mansion",id:"jarvis"}}},tag=same_room,limit=1] remove no_ai
 execute if score #dialog Dialog matches 1 run tag @e[nbt={data:{entity:{namespace:"luigis_mansion",id:"jarvis"}}},tag=same_room,limit=1] add pop_out
-execute if score #dialog Dialog matches 1..57 as @e[tag=luigi,tag=same_room] run function luigis_mansion:entities/luigi/animation/set/idle
+execute if score #dialog Dialog matches 1..57 as @e[tag=luigi,tag=same_room] run function luigis_mansion:entities/luigi/animation/set/idle_no_poltergust
 execute if score #dialog Dialog matches 11 if score #players Totals matches 1 run tellraw @a[tag=same_room] {"type":"translatable","translate":"chat.type.text","with":[{"type":"translatable","translate":"luigis_mansion:entity.jarvis","color":"green"},{"type":"translatable","translate":"luigis_mansion:dialog.jarvis.game.1"}]}
 execute if score #dialog Dialog matches 11 if score #players Totals matches 2.. run tellraw @a[tag=same_room] {"type":"translatable","translate":"chat.type.text","with":[{"type":"translatable","translate":"luigis_mansion:entity.jarvis","color":"green"},{"type":"translatable","translate":"luigis_mansion:dialog.jarvis.game.1.more"}]}
 
@@ -57,7 +57,7 @@ execute if score #dialog Dialog matches 58 run scoreboard players set #dialog Di
 
 #Branch: Won
 execute if score #dialog Dialog matches 59..61 as @a[tag=same_room,tag=!spectator] run function luigis_mansion:other/music/set/talking_ghost
-execute if score #dialog Dialog matches 59..61 as @e[tag=luigi,tag=same_room] run function luigis_mansion:entities/luigi/animation/set/idle
+execute if score #dialog Dialog matches 59..61 as @e[tag=luigi,tag=same_room] run function luigis_mansion:entities/luigi/animation/set/idle_no_poltergust
 execute if score #dialog Dialog matches 59 run scoreboard players reset #temp Time
 
 execute if score #dialog Dialog matches 60 if score #players Totals matches 1 if entity @a[tag=same_room,tag=next_dialog_line,limit=1] run tellraw @a[tag=same_room] {"type":"translatable","translate":"chat.type.text","with":[{"type":"translatable","translate":"luigis_mansion:entity.jarvis","color":"green"},{"type":"translatable","translate":"luigis_mansion:dialog.jarvis.game.yes.1"}]}

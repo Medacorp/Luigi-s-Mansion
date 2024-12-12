@@ -10,7 +10,7 @@ tag @a[tag=same_room,limit=1] add disable_interact
 tag @e[tag=same_room,tag=ghost,limit=1] remove no_ai
 tag @e[tag=same_room,tag=ghost,limit=1] remove freeze_animation
 execute if score #dialog Dialog matches 1..81 as @a[tag=same_room,tag=!spectator] run function luigis_mansion:other/music/set/lets_play
-execute if score #dialog Dialog matches 1..81 as @e[tag=luigi,tag=same_room] run function luigis_mansion:entities/luigi/animation/set/idle
+execute if score #dialog Dialog matches 1..81 as @e[tag=luigi,tag=same_room] run function luigis_mansion:entities/luigi/animation/set/idle_no_poltergust
 execute if score #dialog Dialog matches 80 run tellraw @a[tag=same_room] {"type":"translatable","translate":"chat.type.text","with":[{"type":"translatable","translate":"luigis_mansion:entity.chauncey","color":"green"},{"type":"translatable","translate":"luigis_mansion:message.chauncey.play"}]}
 
 execute if score #dialog Dialog matches 82 run data modify storage luigis_mansion:data current_state.current_data.technical_data merge value {chauncey_spoke:1b}

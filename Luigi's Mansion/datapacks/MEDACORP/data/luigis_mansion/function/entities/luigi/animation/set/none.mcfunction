@@ -8,6 +8,7 @@ tag @s remove grabbed
 tag @s remove door_animation
 tag @s remove reset_rotation
 tag @s remove idle
+tag @s remove animation_no_poltergust
 tag @s remove animation_may_move
 tag @s remove animation_free_rotation
 tag @s remove tick_down_invulnerability

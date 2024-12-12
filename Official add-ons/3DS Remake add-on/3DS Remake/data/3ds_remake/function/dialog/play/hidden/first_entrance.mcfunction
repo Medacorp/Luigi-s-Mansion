@@ -1,0 +1,1 @@
+function luigis_mansion:dialog/play/normal/first_entrance

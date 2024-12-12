@@ -9,6 +9,4 @@ execute unless entity @s[tag=!wall_warp,tag=!spectator] if entity @s[tag=!alread
 
 tag @s add already_ticked
 
-playsound luigis_mansion:music.mansion.first_entrance music @s[tag=first_entrance] ~ ~ ~ 1000
-scoreboard players set @s[tag=first_entrance] Music 240
-tag @s remove first_entrance
+execute if entity @s[tag=first_entrance] run function e3_demo:room/original/entrance/first_entrance

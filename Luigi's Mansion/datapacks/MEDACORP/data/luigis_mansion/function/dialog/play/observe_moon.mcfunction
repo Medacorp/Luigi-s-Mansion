@@ -6,7 +6,7 @@ scoreboard players add #dialog Dialog 1
 
 scoreboard players reset @a[tag=same_room,tag=!spectator] WarpTime
 execute as @a[tag=same_room,tag=!spectator,tag=game_boy_horror_menu] run function luigis_mansion:selection_menu/game_boy_horror/exit
-execute if score #dialog Dialog matches 1.. as @e[tag=luigi,tag=same_room,tag=!observing_player] run function luigis_mansion:entities/luigi/animation/set/idle
+execute if score #dialog Dialog matches 1.. as @e[tag=luigi,tag=same_room,tag=!observing_player] run function luigis_mansion:entities/luigi/animation/set/idle_no_poltergust
 execute if score #dialog Dialog matches 1 as @e[tag=observing_player,limit=1] run function luigis_mansion:entities/luigi/animation/set/look
 execute if score #dialog Dialog matches 22 unless score #mirrored Selected matches 1 run summon minecraft:marker ~ ~ ~ {Tags:["observatory_facing","same_room"],Rotation:[-180.0f,0.0f]}
 execute if score #dialog Dialog matches 22 if score #mirrored Selected matches 1 run summon minecraft:marker ~ ~ ~ {Tags:["observatory_facing","same_room"],Rotation:[0.0f,0.0f]}

@@ -17,7 +17,7 @@ execute if score #dialog Dialog matches 1 if score #players Totals matches 2.. r
 
 execute if score #dialog Dialog matches 3 if entity @a[tag=same_room,tag=next_dialog_line,limit=1] run tellraw @a[tag=same_room] {"type":"translatable","translate":"chat.type.text","with":[{"type":"translatable","translate":"luigis_mansion:entity.sir_weston","color":"green"},{"type":"translatable","translate":"luigis_mansion:dialog.sir_weston.2"}]}
 
-execute if score #dialog Dialog matches 4.. as @e[tag=luigi,tag=same_room] run function luigis_mansion:entities/luigi/animation/set/idle
+execute if score #dialog Dialog matches 4.. as @e[tag=luigi,tag=same_room] run function luigis_mansion:entities/luigi/animation/set/idle_no_poltergust
 execute if score #dialog Dialog matches 4 if score #players Totals matches 1 if entity @a[tag=same_room,tag=next_dialog_line,limit=1] run tellraw @a[tag=same_room] {"type":"translatable","translate":"chat.type.text","with":[{"type":"translatable","translate":"luigis_mansion:entity.sir_weston","color":"green"},{"type":"translatable","translate":"luigis_mansion:dialog.sir_weston.3"}]}
 execute if score #dialog Dialog matches 4 if score #players Totals matches 2.. if entity @a[tag=same_room,tag=next_dialog_line,limit=1] run tellraw @a[tag=same_room] {"type":"translatable","translate":"chat.type.text","with":[{"type":"translatable","translate":"luigis_mansion:entity.sir_weston","color":"green"},{"type":"translatable","translate":"luigis_mansion:dialog.sir_weston.3.more"}]}
 

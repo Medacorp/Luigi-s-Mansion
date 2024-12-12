@@ -10,7 +10,7 @@ execute if score #dialog Dialog matches 30.. as @a[tag=same_room,tag=dialog_menu
 
 scoreboard players reset @a[tag=same_room,tag=!spectator] WarpTime
 execute as @a[tag=same_room,tag=!spectator,tag=game_boy_horror_menu] run function luigis_mansion:selection_menu/game_boy_horror/exit
-execute if score #dialog Dialog matches 1..29 as @e[tag=luigi,tag=same_room,tag=!phone_caller] run function luigis_mansion:entities/luigi/animation/set/idle
+execute if score #dialog Dialog matches 1..29 as @e[tag=luigi,tag=same_room,tag=!phone_caller] run function luigis_mansion:entities/luigi/animation/set/idle_no_poltergust
 execute if score #dialog Dialog matches 1..29 as @a[tag=phone_caller,limit=1] run function luigis_mansion:entities/luigi/animation/set/answer_phone
 execute if score #dialog Dialog matches 20 run tellraw @a[tag=same_room] {"type":"translatable","translate":"chat.type.text","with":[{"type":"translatable","translate":"luigis_mansion:entity.unknown","color":"green"},{"type":"translatable","translate":"luigis_mansion:dialog.uncle_grimmly.1"}]}
 

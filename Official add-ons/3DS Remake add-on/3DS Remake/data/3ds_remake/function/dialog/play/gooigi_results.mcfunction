@@ -48,7 +48,7 @@ execute if score #dialog Dialog matches 10 if score #players Totals matches 1 if
 execute if score #dialog Dialog matches 10 if score #players Totals matches 2.. if entity @a[tag=same_room,tag=next_dialog_line,limit=1] run tellraw @a[tag=same_room] {"type":"translatable","translate":"chat.type.text","with":[{"type":"translatable","translate":"3ds_remake:entity.future_e_gadd","color":"green"},{"type":"translatable","translate":"3ds_remake:dialog.gooigi_results.3.more"}]}
 execute if score #dialog Dialog matches 10 if entity @a[tag=same_room,tag=next_dialog_line,limit=1] as @a[tag=same_room] at @s run playsound luigis_mansion:entity.e_gadd.talk.mah_mah_mah_luigi_oui neutral @s ~ ~ ~ 1
 
-execute if score #dialog Dialog matches 11..12 as @e[tag=luigi,tag=same_room] run function luigis_mansion:entities/luigi/animation/set/idle
+execute if score #dialog Dialog matches 11..12 as @e[tag=luigi,tag=same_room] run function luigis_mansion:entities/luigi/animation/set/idle_no_poltergust
 execute if score #dialog Dialog matches 11 run function luigis_mansion:other/delete_current_mansion_data
 execute if score #dialog Dialog matches 11 as @a[tag=same_room] run function luigis_mansion:other/music/set/non_overwritten_silence
 #save?

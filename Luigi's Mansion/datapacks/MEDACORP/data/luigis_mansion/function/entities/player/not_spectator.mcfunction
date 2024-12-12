@@ -4,7 +4,7 @@ execute if entity @s[scores={Health=1..},tag=dead_player] run function luigis_ma
 execute if entity @s[tag=!in_dialog,tag=!was_in_dialog] run function #luigis_mansion:items/reset_disabled
 execute if entity @s[tag=using_selection_menu] run function luigis_mansion:selection_menu/tick
 attribute @s[tag=flipped_gravity,tag=!separated_camera] minecraft:gravity base set -0.08
-execute unless entity @s[tag=flipped_gravity,tag=!separated_camera] run attribute @s minecraft:gravity base set 0.08
+attribute @s[tag=!flipped_gravity,tag=!separated_camera] minecraft:gravity base set 0.08
 
 execute if entity @s[scores={UseItem=1..}] run function luigis_mansion:entities/player/run_command_at_model {command:"scoreboard players operation @e[tag=this_luigi,limit=1] UseItem = @s UseItem"}
 scoreboard players set @s UseItem 0

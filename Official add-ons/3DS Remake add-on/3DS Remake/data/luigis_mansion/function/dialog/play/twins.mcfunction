@@ -23,7 +23,7 @@ execute if score #dialog Dialog matches 1 run data modify entity @e[nbt={data:{e
 execute if score #dialog Dialog matches 1 run data modify entity @e[nbt={data:{entity:{namespace:"luigis_mansion",id:"orville"}}},tag=same_room,limit=1] data.animation set value {namespace:"luigis_mansion",id:"talk"}
 execute if score #dialog Dialog matches 1 at @e[tag=same_room,nbt={data:{entity:{namespace:"luigis_mansion",id:"henry"}}},limit=1] run playsound luigis_mansion:entity.henry.spawn hostile @a[tag=same_room] ~ ~ ~ 1
 execute if score #dialog Dialog matches 1 at @e[tag=same_room,nbt={data:{entity:{namespace:"luigis_mansion",id:"orville"}}},limit=1] run playsound luigis_mansion:entity.orville.spawn hostile @a[tag=same_room] ~ ~ ~ 1
-execute if score #dialog Dialog matches 1..67 as @e[tag=luigi,tag=same_room] run function luigis_mansion:entities/luigi/animation/set/idle
+execute if score #dialog Dialog matches 1..67 as @e[tag=luigi,tag=same_room] run function luigis_mansion:entities/luigi/animation/set/idle_no_poltergust
 execute if score #dialog Dialog matches 31 run playsound luigis_mansion:music.solve_puzzle music @a[tag=same_room] ~ ~ ~ 10000
 execute if score #dialog Dialog matches 31 run scoreboard players set @a[tag=same_room,scores={Music=..30}] Music 30
 execute if score #dialog Dialog matches 61.. as @a[tag=same_room] run function luigis_mansion:other/music/set/talking_ghost
@@ -49,7 +49,7 @@ execute if score #dialog Dialog matches 68 run scoreboard players add #the_twins
 execute if score #dialog Dialog matches 68 run scoreboard players set #dialog Dialog -1
 
 #Branch: No
-execute if score #dialog Dialog matches 69..128 as @e[tag=luigi,tag=same_room] run function luigis_mansion:entities/luigi/animation/set/idle
+execute if score #dialog Dialog matches 69..128 as @e[tag=luigi,tag=same_room] run function luigis_mansion:entities/luigi/animation/set/idle_no_poltergust
 execute if score #dialog Dialog matches 69 run tellraw @a[tag=same_room] {"type":"translatable","translate":"chat.type.text","with":[{"type":"translatable","translate":"luigis_mansion:entity.orville","color":"green"},{"type":"translatable","translate":"luigis_mansion:dialog.twins.no.1"}]}
 execute if score #dialog Dialog matches 129 run scoreboard players set #dialog Dialog -1
 

@@ -14,7 +14,7 @@ tag @a[tag=scanning_player,limit=1] add prevent_item_lock
 # 1 tick delay for scanned player to get the undisturbed state
 execute if score #dialog Dialog matches 1 as @a[tag=same_room,tag=!spectator,tag=game_boy_horror_menu,tag=!scanning_player,tag=!scanned_entity] run function luigis_mansion:selection_menu/game_boy_horror/exit
 execute if score #dialog Dialog matches 2..3 as @a[tag=same_room,tag=!spectator,tag=game_boy_horror_menu,tag=!scanning_player] run function luigis_mansion:selection_menu/game_boy_horror/exit
-execute if score #dialog Dialog matches 1..3 as @e[tag=luigi,tag=!scanning_player,tag=same_room] run function luigis_mansion:entities/luigi/animation/set/idle
+execute if score #dialog Dialog matches 1..3 as @e[tag=luigi,tag=!scanning_player,tag=same_room] run function luigis_mansion:entities/luigi/animation/set/idle_no_poltergust
 execute if score #dialog Dialog matches 1..3 as @e[tag=luigi,tag=scanning_player,limit=1] run function luigis_mansion:entities/luigi/animation/set/game_boy_horror
 execute as @a[tag=scanning_player,limit=1] run function luigis_mansion:items/game_boy_horror/turn_screen_to_forced_value {value:"scanning",flags:[B;1b,0b],floats:[],tracker:[]}
 execute if score #dialog Dialog matches 1 at @a[tag=scanning_player,limit=1] at @e[tag=scanned_entity,scores={Health=51..},tag=!flashlight_selected,tag=!catch_portrait_ghost,tag=!catch_ghost,tag=!game_boy_horror_selected,tag=!game_boy_horror_menu,distance=1.5..,limit=1] positioned ~ ~-1.4 ~ unless entity @e[distance=..5,tag=item,nbt={ArmorItems:[{components:{"minecraft:custom_data":{item:{namespace:"luigis_mansion",id:"gold_coin"}}}}]},limit=1] store result score #temp Variant run random value 1..3
