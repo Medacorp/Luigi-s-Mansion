@@ -1,10 +1,8 @@
 {
 	"values": [
+		"luigis_mansion:selection_menu/game_boy_horror/show_settings/map/movement_type",
 		"luigis_mansion:selection_menu/game_boy_horror/show_settings/map/flashlight_type",
 		"luigis_mansion:selection_menu/game_boy_horror/show_settings/map/open_map_when_collecting_a_key",
-		"luigis_mansion:selection_menu/game_boy_horror/show_settings/map/teleport_frequency",
-		"luigis_mansion:selection_menu/game_boy_horror/show_settings/map/global_difficulty",
-		"luigis_mansion:selection_menu/game_boy_horror/show_settings/map/global_mirror_reflections",
-		"luigis_mansion:selection_menu/game_boy_horror/show_settings/map/global_player_names"
+		"luigis_mansion:selection_menu/game_boy_horror/show_settings/map/teleport_frequency"
 	]
 }

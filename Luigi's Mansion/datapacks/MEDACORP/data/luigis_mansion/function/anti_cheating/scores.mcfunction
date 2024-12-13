@@ -254,7 +254,6 @@ execute unless score #global_player_names Selected matches 0..1 run scoreboard p
 execute unless score #debug_messages Selected matches 0..2 run scoreboard players set #debug_messages Selected 0
 execute unless score #debug_furniture Selected matches 0..1 run scoreboard players set #debug_furniture Selected 0
 execute unless score #debug_entities Selected matches 0..1 run scoreboard players set #debug_entities Selected 0
-execute unless score #debug_phase_through_walls Selected matches 0..1 run scoreboard players set #debug_phase_through_walls Selected 0
 
 bossbar add luigis_mansion:boo_counter {"type":"translatable","translate":"luigis_mansion:message.boo_counter","color":"white","with":["0","0"]}
 bossbar set luigis_mansion:boo_counter color white

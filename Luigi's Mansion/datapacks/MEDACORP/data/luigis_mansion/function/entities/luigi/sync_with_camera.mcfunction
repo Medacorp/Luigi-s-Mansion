@@ -64,13 +64,19 @@ tag @s remove stop_map_on_key_collect
 tag @s remove separated_camera
 tag @s remove third_person_movement
 tag @s remove sidestep_movement
+tag @s remove debug_phase_through_walls
+tag @a[tag=this_player,limit=1] remove wall_warp
+tag @s remove debug_unlock_all_doors
 execute if entity @a[tag=this_player,tag=stop_map_on_key_collect,limit=1] run tag @s add stop_map_on_key_collect
 execute if entity @a[tag=this_player,tag=separated_camera,limit=1] run tag @s add separated_camera
 execute if entity @a[tag=this_player,tag=third_person_movement,limit=1] run tag @s add third_person_movement
 execute if entity @a[tag=this_player,tag=sidestep_movement,limit=1] run tag @s add sidestep_movement
+execute if entity @a[tag=this_player,tag=debug_phase_through_walls,limit=1] run tag @s add debug_phase_through_walls
+tag @a[tag=this_player,tag=debug_phase_through_walls,limit=1] add wall_warp
+execute if entity @a[tag=this_player,tag=debug_unlock_all_doors,limit=1] run tag @s add debug_unlock_all_doors
 scoreboard players operation @s FlashlightType = @a[tag=this_player,limit=1] FlashlightType
 
-# Teleport Delay (ignored is no linked camera)
+# Teleport Delay (ignored if no linked camera)
 scoreboard players set @s TeleportDelayTimer 0
 scoreboard players set @s TeleportDelaySetting 0
 scoreboard players operation @s TeleportDelayTimer = @a[tag=this_player,tag=!separated_camera,limit=1] TeleportDelayTimer
