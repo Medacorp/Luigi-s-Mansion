@@ -1,7 +1,11 @@
 execute if entity @s[tag=separated_camera,scores={Health=1..},tag=dead_player] run function luigis_mansion:entities/player/camera/reset
 execute if entity @s[scores={Health=1..},tag=dead_player] run function luigis_mansion:entities/player/remove_dead_entry with entity @s
 
+tag @s[tag=had_prevent_item_lock,tag=disable_items] remove was_in_dialog
+tag @s[tag=had_prevent_item_lock,tag=disable_items] remove in_dialog
+tag @s remove had_prevent_item_lock
 execute if entity @s[tag=!in_dialog,tag=!was_in_dialog] run function #luigis_mansion:items/reset_disabled
+tag @s[tag=!in_dialog,tag=!was_in_dialog] remove disable_items
 execute if entity @s[tag=using_selection_menu] run function luigis_mansion:selection_menu/tick
 attribute @s[tag=flipped_gravity,tag=!separated_camera] minecraft:gravity base set -0.08
 attribute @s[tag=!flipped_gravity,tag=!separated_camera] minecraft:gravity base set 0.08

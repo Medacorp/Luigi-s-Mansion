@@ -103,7 +103,7 @@ execute if score #dialog Dialog matches 9..11 run scoreboard players reset #temp
 
 execute if score #dialog Dialog matches 12..53 run scoreboard players reset @a[tag=same_room,tag=!spectator] WarpTime
 execute if score #dialog Dialog matches 12..53 as @a[tag=same_room,tag=!spectator,tag=game_boy_horror_menu] run function luigis_mansion:selection_menu/game_boy_horror/exit
-execute if score #dialog Dialog matches 12..53 as @a[tag=same_room] run function luigis_mansion:other/music/set/training_stop
+execute if score #dialog Dialog matches 12..53 as @a[tag=same_room] run function luigis_mansion:other/music/set/training_end
 execute if score #dialog Dialog matches 12 run scoreboard players set @e[tag=ghost,tag=same_room,tag=!vanish] ActionTime 0
 execute if score #dialog Dialog matches 12 run tag @e[tag=ghost,tag=same_room] add vanish
 execute if score #dialog Dialog matches 12 run tag @e[tag=ghost,tag=same_room] add disappear_on_vanish
@@ -165,7 +165,7 @@ execute if score #dialog Dialog matches 150 as @a[tag=same_room] run function lu
 execute if score #dialog Dialog matches 150 run scoreboard players set #dialog Dialog -1
 
 #Branch: No multiplayer
-execute if score #dialog Dialog matches 151..153 as @a[tag=same_room] run function luigis_mansion:other/music/set/training_stop
+execute if score #dialog Dialog matches 151..153 as @a[tag=same_room] run function luigis_mansion:other/music/set/training_end
 execute if score #dialog Dialog matches 151 run stopsound @a[tag=same_room] neutral
 execute if score #dialog Dialog matches 151 run tag @e[tag=ghost,tag=same_room] add vanish
 execute if score #dialog Dialog matches 151 run tag @e[tag=ghost,tag=same_room] add disappear_on_vanish

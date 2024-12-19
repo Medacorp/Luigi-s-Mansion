@@ -15264,60 +15264,6 @@
             }
         ]
     },
-    "music.mansion.room.conservatory.cello": {
-        "sounds": [
-            {
-                "name": "luigis_mansion:music/mansion/room/conservatory/cello",
-                "stream": true,
-                "volume": 0.00025
-            }
-        ]
-    },
-    "music.mansion.room.conservatory.drum": {
-        "sounds": [
-            {
-                "name": "luigis_mansion:music/mansion/room/conservatory/drum",
-                "stream": true,
-                "volume": 0.00025
-            }
-        ]
-    },
-    "music.mansion.room.conservatory.harp": {
-        "sounds": [
-            {
-                "name": "luigis_mansion:music/mansion/room/conservatory/harp",
-                "stream": true,
-                "volume": 0.00025
-            }
-        ]
-    },
-    "music.mansion.room.conservatory.piano": {
-        "sounds": [
-            {
-                "name": "luigis_mansion:music/mansion/room/conservatory/piano",
-                "stream": true,
-                "volume": 0.00025
-            }
-        ]
-    },
-    "music.mansion.room.conservatory.saxophone": {
-        "sounds": [
-            {
-                "name": "luigis_mansion:music/mansion/room/conservatory/saxophone",
-                "stream": true,
-                "volume": 0.00025
-            }
-        ]
-    },
-    "music.mansion.room.conservatory.xylophone": {
-        "sounds": [
-            {
-                "name": "luigis_mansion:music/mansion/room/conservatory/xylophone",
-                "stream": true,
-                "volume": 0.00025
-            }
-        ]
-    },
     "music.mansion.room.foyer": {
         "sounds": [
             {
@@ -15565,6 +15511,5190 @@
             {
                 "name": "luigis_mansion:music/sue_pea",
                 "stream": true,
+                "volume": 0.00025
+            }
+        ]
+    },
+    "music.super_mario_bros.cello.1": {
+        "sounds": [
+            {
+                "name": "luigis_mansion:music/super_mario_bros/cello/1",
+                "stream": false,
+                "volume": 0.00025
+            }
+        ]
+    },
+    "music.super_mario_bros.cello.2": {
+        "sounds": [
+            {
+                "name": "luigis_mansion:music/super_mario_bros/cello/2",
+                "stream": false,
+                "volume": 0.00025
+            }
+        ]
+    },
+    "music.super_mario_bros.cello.3": {
+        "sounds": [
+            {
+                "name": "luigis_mansion:music/super_mario_bros/cello/3",
+                "stream": false,
+                "volume": 0.00025
+            }
+        ]
+    },
+    "music.super_mario_bros.cello.4": {
+        "sounds": [
+            {
+                "name": "luigis_mansion:music/super_mario_bros/cello/4",
+                "stream": false,
+                "volume": 0.00025
+            }
+        ]
+    },
+    "music.super_mario_bros.cello.5": {
+        "sounds": [
+            {
+                "name": "luigis_mansion:music/super_mario_bros/cello/5",
+                "stream": false,
+                "volume": 0.00025
+            }
+        ]
+    },
+    "music.super_mario_bros.cello.6": {
+        "sounds": [
+            {
+                "name": "luigis_mansion:music/super_mario_bros/cello/6",
+                "stream": false,
+                "volume": 0.00025
+            }
+        ]
+    },
+    "music.super_mario_bros.cello.7": {
+        "sounds": [
+            {
+                "name": "luigis_mansion:music/super_mario_bros/cello/7",
+                "stream": false,
+                "volume": 0.00025
+            }
+        ]
+    },
+    "music.super_mario_bros.cello.8": {
+        "sounds": [
+            {
+                "name": "luigis_mansion:music/super_mario_bros/cello/8",
+                "stream": false,
+                "volume": 0.00025
+            }
+        ]
+    },
+    "music.super_mario_bros.cello.9": {
+        "sounds": [
+            {
+                "name": "luigis_mansion:music/super_mario_bros/cello/9",
+                "stream": false,
+                "volume": 0.00025
+            }
+        ]
+    },
+    "music.super_mario_bros.cello.10": {
+        "sounds": [
+            {
+                "name": "luigis_mansion:music/super_mario_bros/cello/10",
+                "stream": false,
+                "volume": 0.00025
+            }
+        ]
+    },
+    "music.super_mario_bros.cello.11": {
+        "sounds": [
+            {
+                "name": "luigis_mansion:music/super_mario_bros/cello/11",
+                "stream": false,
+                "volume": 0.00025
+            }
+        ]
+    },
+    "music.super_mario_bros.cello.12": {
+        "sounds": [
+            {
+                "name": "luigis_mansion:music/super_mario_bros/cello/12",
+                "stream": false,
+                "volume": 0.00025
+            }
+        ]
+    },
+    "music.super_mario_bros.cello.13": {
+        "sounds": [
+            {
+                "name": "luigis_mansion:music/super_mario_bros/cello/13",
+                "stream": false,
+                "volume": 0.00025
+            }
+        ]
+    },
+    "music.super_mario_bros.cello.14": {
+        "sounds": [
+            {
+                "name": "luigis_mansion:music/super_mario_bros/cello/14",
+                "stream": false,
+                "volume": 0.00025
+            }
+        ]
+    },
+    "music.super_mario_bros.cello.15": {
+        "sounds": [
+            {
+                "name": "luigis_mansion:music/super_mario_bros/cello/15",
+                "stream": false,
+                "volume": 0.00025
+            }
+        ]
+    },
+    "music.super_mario_bros.cello.16": {
+        "sounds": [
+            {
+                "name": "luigis_mansion:music/super_mario_bros/cello/16",
+                "stream": false,
+                "volume": 0.00025
+            }
+        ]
+    },
+    "music.super_mario_bros.cello.17": {
+        "sounds": [
+            {
+                "name": "luigis_mansion:music/super_mario_bros/cello/17",
+                "stream": false,
+                "volume": 0.00025
+            }
+        ]
+    },
+    "music.super_mario_bros.cello.18": {
+        "sounds": [
+            {
+                "name": "luigis_mansion:music/super_mario_bros/cello/18",
+                "stream": false,
+                "volume": 0.00025
+            }
+        ]
+    },
+    "music.super_mario_bros.cello.19": {
+        "sounds": [
+            {
+                "name": "luigis_mansion:music/super_mario_bros/cello/19",
+                "stream": false,
+                "volume": 0.00025
+            }
+        ]
+    },
+    "music.super_mario_bros.cello.20": {
+        "sounds": [
+            {
+                "name": "luigis_mansion:music/super_mario_bros/cello/20",
+                "stream": false,
+                "volume": 0.00025
+            }
+        ]
+    },
+    "music.super_mario_bros.cello.21": {
+        "sounds": [
+            {
+                "name": "luigis_mansion:music/super_mario_bros/cello/21",
+                "stream": false,
+                "volume": 0.00025
+            }
+        ]
+    },
+    "music.super_mario_bros.cello.22": {
+        "sounds": [
+            {
+                "name": "luigis_mansion:music/super_mario_bros/cello/22",
+                "stream": false,
+                "volume": 0.00025
+            }
+        ]
+    },
+    "music.super_mario_bros.cello.23": {
+        "sounds": [
+            {
+                "name": "luigis_mansion:music/super_mario_bros/cello/23",
+                "stream": false,
+                "volume": 0.00025
+            }
+        ]
+    },
+    "music.super_mario_bros.cello.24": {
+        "sounds": [
+            {
+                "name": "luigis_mansion:music/super_mario_bros/cello/24",
+                "stream": false,
+                "volume": 0.00025
+            }
+        ]
+    },
+    "music.super_mario_bros.cello.25": {
+        "sounds": [
+            {
+                "name": "luigis_mansion:music/super_mario_bros/cello/25",
+                "stream": false,
+                "volume": 0.00025
+            }
+        ]
+    },
+    "music.super_mario_bros.cello.26": {
+        "sounds": [
+            {
+                "name": "luigis_mansion:music/super_mario_bros/cello/26",
+                "stream": false,
+                "volume": 0.00025
+            }
+        ]
+    },
+    "music.super_mario_bros.cello.27": {
+        "sounds": [
+            {
+                "name": "luigis_mansion:music/super_mario_bros/cello/27",
+                "stream": false,
+                "volume": 0.00025
+            }
+        ]
+    },
+    "music.super_mario_bros.cello.28": {
+        "sounds": [
+            {
+                "name": "luigis_mansion:music/super_mario_bros/cello/28",
+                "stream": false,
+                "volume": 0.00025
+            }
+        ]
+    },
+    "music.super_mario_bros.cello.29": {
+        "sounds": [
+            {
+                "name": "luigis_mansion:music/super_mario_bros/cello/29",
+                "stream": false,
+                "volume": 0.00025
+            }
+        ]
+    },
+    "music.super_mario_bros.cello.30": {
+        "sounds": [
+            {
+                "name": "luigis_mansion:music/super_mario_bros/cello/30",
+                "stream": false,
+                "volume": 0.00025
+            }
+        ]
+    },
+    "music.super_mario_bros.cello.31": {
+        "sounds": [
+            {
+                "name": "luigis_mansion:music/super_mario_bros/cello/31",
+                "stream": false,
+                "volume": 0.00025
+            }
+        ]
+    },
+    "music.super_mario_bros.cello.32": {
+        "sounds": [
+            {
+                "name": "luigis_mansion:music/super_mario_bros/cello/32",
+                "stream": false,
+                "volume": 0.00025
+            }
+        ]
+    },
+    "music.super_mario_bros.cello.33": {
+        "sounds": [
+            {
+                "name": "luigis_mansion:music/super_mario_bros/cello/33",
+                "stream": false,
+                "volume": 0.00025
+            }
+        ]
+    },
+    "music.super_mario_bros.cello.34": {
+        "sounds": [
+            {
+                "name": "luigis_mansion:music/super_mario_bros/cello/34",
+                "stream": false,
+                "volume": 0.00025
+            }
+        ]
+    },
+    "music.super_mario_bros.cello.35": {
+        "sounds": [
+            {
+                "name": "luigis_mansion:music/super_mario_bros/cello/35",
+                "stream": false,
+                "volume": 0.00025
+            }
+        ]
+    },
+    "music.super_mario_bros.cello.36": {
+        "sounds": [
+            {
+                "name": "luigis_mansion:music/super_mario_bros/cello/36",
+                "stream": false,
+                "volume": 0.00025
+            }
+        ]
+    },
+    "music.super_mario_bros.cello.37": {
+        "sounds": [
+            {
+                "name": "luigis_mansion:music/super_mario_bros/cello/37",
+                "stream": false,
+                "volume": 0.00025
+            }
+        ]
+    },
+    "music.super_mario_bros.cello.38": {
+        "sounds": [
+            {
+                "name": "luigis_mansion:music/super_mario_bros/cello/38",
+                "stream": false,
+                "volume": 0.00025
+            }
+        ]
+    },
+    "music.super_mario_bros.cello.39": {
+        "sounds": [
+            {
+                "name": "luigis_mansion:music/super_mario_bros/cello/39",
+                "stream": false,
+                "volume": 0.00025
+            }
+        ]
+    },
+    "music.super_mario_bros.cello.40": {
+        "sounds": [
+            {
+                "name": "luigis_mansion:music/super_mario_bros/cello/40",
+                "stream": false,
+                "volume": 0.00025
+            }
+        ]
+    },
+    "music.super_mario_bros.cello.41": {
+        "sounds": [
+            {
+                "name": "luigis_mansion:music/super_mario_bros/cello/41",
+                "stream": false,
+                "volume": 0.00025
+            }
+        ]
+    },
+    "music.super_mario_bros.cello.42": {
+        "sounds": [
+            {
+                "name": "luigis_mansion:music/super_mario_bros/cello/42",
+                "stream": false,
+                "volume": 0.00025
+            }
+        ]
+    },
+    "music.super_mario_bros.cello.43": {
+        "sounds": [
+            {
+                "name": "luigis_mansion:music/super_mario_bros/cello/43",
+                "stream": false,
+                "volume": 0.00025
+            }
+        ]
+    },
+    "music.super_mario_bros.cello.44": {
+        "sounds": [
+            {
+                "name": "luigis_mansion:music/super_mario_bros/cello/44",
+                "stream": false,
+                "volume": 0.00025
+            }
+        ]
+    },
+    "music.super_mario_bros.cello.45": {
+        "sounds": [
+            {
+                "name": "luigis_mansion:music/super_mario_bros/cello/45",
+                "stream": false,
+                "volume": 0.00025
+            }
+        ]
+    },
+    "music.super_mario_bros.cello.46": {
+        "sounds": [
+            {
+                "name": "luigis_mansion:music/super_mario_bros/cello/46",
+                "stream": false,
+                "volume": 0.00025
+            }
+        ]
+    },
+    "music.super_mario_bros.cello.47": {
+        "sounds": [
+            {
+                "name": "luigis_mansion:music/super_mario_bros/cello/47",
+                "stream": false,
+                "volume": 0.00025
+            }
+        ]
+    },
+    "music.super_mario_bros.cello.48": {
+        "sounds": [
+            {
+                "name": "luigis_mansion:music/super_mario_bros/cello/48",
+                "stream": false,
+                "volume": 0.00025
+            }
+        ]
+    },
+    "music.super_mario_bros.cello.49": {
+        "sounds": [
+            {
+                "name": "luigis_mansion:music/super_mario_bros/cello/49",
+                "stream": false,
+                "volume": 0.00025
+            }
+        ]
+    },
+    "music.super_mario_bros.cello.50": {
+        "sounds": [
+            {
+                "name": "luigis_mansion:music/super_mario_bros/cello/50",
+                "stream": false,
+                "volume": 0.00025
+            }
+        ]
+    },
+    "music.super_mario_bros.cello.51": {
+        "sounds": [
+            {
+                "name": "luigis_mansion:music/super_mario_bros/cello/51",
+                "stream": false,
+                "volume": 0.00025
+            }
+        ]
+    },
+    "music.super_mario_bros.cello.52": {
+        "sounds": [
+            {
+                "name": "luigis_mansion:music/super_mario_bros/cello/52",
+                "stream": false,
+                "volume": 0.00025
+            }
+        ]
+    },
+    "music.super_mario_bros.cello.53": {
+        "sounds": [
+            {
+                "name": "luigis_mansion:music/super_mario_bros/cello/53",
+                "stream": false,
+                "volume": 0.00025
+            }
+        ]
+    },
+    "music.super_mario_bros.cello.54": {
+        "sounds": [
+            {
+                "name": "luigis_mansion:music/super_mario_bros/cello/54",
+                "stream": false,
+                "volume": 0.00025
+            }
+        ]
+    },
+    "music.super_mario_bros.cello.55": {
+        "sounds": [
+            {
+                "name": "luigis_mansion:music/super_mario_bros/cello/55",
+                "stream": false,
+                "volume": 0.00025
+            }
+        ]
+    },
+    "music.super_mario_bros.cello.56": {
+        "sounds": [
+            {
+                "name": "luigis_mansion:music/super_mario_bros/cello/56",
+                "stream": false,
+                "volume": 0.00025
+            }
+        ]
+    },
+    "music.super_mario_bros.cello.57": {
+        "sounds": [
+            {
+                "name": "luigis_mansion:music/super_mario_bros/cello/57",
+                "stream": false,
+                "volume": 0.00025
+            }
+        ]
+    },
+    "music.super_mario_bros.cello.58": {
+        "sounds": [
+            {
+                "name": "luigis_mansion:music/super_mario_bros/cello/58",
+                "stream": false,
+                "volume": 0.00025
+            }
+        ]
+    },
+    "music.super_mario_bros.cello.59": {
+        "sounds": [
+            {
+                "name": "luigis_mansion:music/super_mario_bros/cello/59",
+                "stream": false,
+                "volume": 0.00025
+            }
+        ]
+    },
+    "music.super_mario_bros.cello.60": {
+        "sounds": [
+            {
+                "name": "luigis_mansion:music/super_mario_bros/cello/60",
+                "stream": false,
+                "volume": 0.00025
+            }
+        ]
+    },
+    "music.super_mario_bros.cello.61": {
+        "sounds": [
+            {
+                "name": "luigis_mansion:music/super_mario_bros/cello/61",
+                "stream": false,
+                "volume": 0.00025
+            }
+        ]
+    },
+    "music.super_mario_bros.cello.62": {
+        "sounds": [
+            {
+                "name": "luigis_mansion:music/super_mario_bros/cello/62",
+                "stream": false,
+                "volume": 0.00025
+            }
+        ]
+    },
+    "music.super_mario_bros.cello.63": {
+        "sounds": [
+            {
+                "name": "luigis_mansion:music/super_mario_bros/cello/63",
+                "stream": false,
+                "volume": 0.00025
+            }
+        ]
+    },
+    "music.super_mario_bros.cello.64": {
+        "sounds": [
+            {
+                "name": "luigis_mansion:music/super_mario_bros/cello/64",
+                "stream": false,
+                "volume": 0.00025
+            }
+        ]
+    },
+    "music.super_mario_bros.cello.65": {
+        "sounds": [
+            {
+                "name": "luigis_mansion:music/super_mario_bros/cello/65",
+                "stream": false,
+                "volume": 0.00025
+            }
+        ]
+    },
+    "music.super_mario_bros.cello.66": {
+        "sounds": [
+            {
+                "name": "luigis_mansion:music/super_mario_bros/cello/66",
+                "stream": false,
+                "volume": 0.00025
+            }
+        ]
+    },
+    "music.super_mario_bros.cello.67": {
+        "sounds": [
+            {
+                "name": "luigis_mansion:music/super_mario_bros/cello/67",
+                "stream": false,
+                "volume": 0.00025
+            }
+        ]
+    },
+    "music.super_mario_bros.cello.68": {
+        "sounds": [
+            {
+                "name": "luigis_mansion:music/super_mario_bros/cello/68",
+                "stream": false,
+                "volume": 0.00025
+            }
+        ]
+    },
+    "music.super_mario_bros.cello.69": {
+        "sounds": [
+            {
+                "name": "luigis_mansion:music/super_mario_bros/cello/69",
+                "stream": false,
+                "volume": 0.00025
+            }
+        ]
+    },
+    "music.super_mario_bros.cello.70": {
+        "sounds": [
+            {
+                "name": "luigis_mansion:music/super_mario_bros/cello/70",
+                "stream": false,
+                "volume": 0.00025
+            }
+        ]
+    },
+    "music.super_mario_bros.cello.71": {
+        "sounds": [
+            {
+                "name": "luigis_mansion:music/super_mario_bros/cello/71",
+                "stream": false,
+                "volume": 0.00025
+            }
+        ]
+    },
+    "music.super_mario_bros.cello.72": {
+        "sounds": [
+            {
+                "name": "luigis_mansion:music/super_mario_bros/cello/72",
+                "stream": false,
+                "volume": 0.00025
+            }
+        ]
+    },
+    "music.super_mario_bros.drum_1.1": {
+        "sounds": [
+            {
+                "name": "luigis_mansion:music/super_mario_bros/drum_1/1",
+                "stream": false,
+                "volume": 0.00025
+            }
+        ]
+    },
+    "music.super_mario_bros.drum_1.2": {
+        "sounds": [
+            {
+                "name": "luigis_mansion:music/super_mario_bros/drum_1/2",
+                "stream": false,
+                "volume": 0.00025
+            }
+        ]
+    },
+    "music.super_mario_bros.drum_1.3": {
+        "sounds": [
+            {
+                "name": "luigis_mansion:music/super_mario_bros/drum_1/3",
+                "stream": false,
+                "volume": 0.00025
+            }
+        ]
+    },
+    "music.super_mario_bros.drum_1.4": {
+        "sounds": [
+            {
+                "name": "luigis_mansion:music/super_mario_bros/drum_1/4",
+                "stream": false,
+                "volume": 0.00025
+            }
+        ]
+    },
+    "music.super_mario_bros.drum_1.5": {
+        "sounds": [
+            {
+                "name": "luigis_mansion:music/super_mario_bros/drum_1/5",
+                "stream": false,
+                "volume": 0.00025
+            }
+        ]
+    },
+    "music.super_mario_bros.drum_1.6": {
+        "sounds": [
+            {
+                "name": "luigis_mansion:music/super_mario_bros/drum_1/6",
+                "stream": false,
+                "volume": 0.00025
+            }
+        ]
+    },
+    "music.super_mario_bros.drum_1.7": {
+        "sounds": [
+            {
+                "name": "luigis_mansion:music/super_mario_bros/drum_1/7",
+                "stream": false,
+                "volume": 0.00025
+            }
+        ]
+    },
+    "music.super_mario_bros.drum_1.8": {
+        "sounds": [
+            {
+                "name": "luigis_mansion:music/super_mario_bros/drum_1/8",
+                "stream": false,
+                "volume": 0.00025
+            }
+        ]
+    },
+    "music.super_mario_bros.drum_1.9": {
+        "sounds": [
+            {
+                "name": "luigis_mansion:music/super_mario_bros/drum_1/9",
+                "stream": false,
+                "volume": 0.00025
+            }
+        ]
+    },
+    "music.super_mario_bros.drum_1.10": {
+        "sounds": [
+            {
+                "name": "luigis_mansion:music/super_mario_bros/drum_1/10",
+                "stream": false,
+                "volume": 0.00025
+            }
+        ]
+    },
+    "music.super_mario_bros.drum_1.11": {
+        "sounds": [
+            {
+                "name": "luigis_mansion:music/super_mario_bros/drum_1/11",
+                "stream": false,
+                "volume": 0.00025
+            }
+        ]
+    },
+    "music.super_mario_bros.drum_1.12": {
+        "sounds": [
+            {
+                "name": "luigis_mansion:music/super_mario_bros/drum_1/12",
+                "stream": false,
+                "volume": 0.00025
+            }
+        ]
+    },
+    "music.super_mario_bros.drum_1.13": {
+        "sounds": [
+            {
+                "name": "luigis_mansion:music/super_mario_bros/drum_1/13",
+                "stream": false,
+                "volume": 0.00025
+            }
+        ]
+    },
+    "music.super_mario_bros.drum_1.14": {
+        "sounds": [
+            {
+                "name": "luigis_mansion:music/super_mario_bros/drum_1/14",
+                "stream": false,
+                "volume": 0.00025
+            }
+        ]
+    },
+    "music.super_mario_bros.drum_1.15": {
+        "sounds": [
+            {
+                "name": "luigis_mansion:music/super_mario_bros/drum_1/15",
+                "stream": false,
+                "volume": 0.00025
+            }
+        ]
+    },
+    "music.super_mario_bros.drum_1.16": {
+        "sounds": [
+            {
+                "name": "luigis_mansion:music/super_mario_bros/drum_1/16",
+                "stream": false,
+                "volume": 0.00025
+            }
+        ]
+    },
+    "music.super_mario_bros.drum_1.17": {
+        "sounds": [
+            {
+                "name": "luigis_mansion:music/super_mario_bros/drum_1/17",
+                "stream": false,
+                "volume": 0.00025
+            }
+        ]
+    },
+    "music.super_mario_bros.drum_1.18": {
+        "sounds": [
+            {
+                "name": "luigis_mansion:music/super_mario_bros/drum_1/18",
+                "stream": false,
+                "volume": 0.00025
+            }
+        ]
+    },
+    "music.super_mario_bros.drum_1.19": {
+        "sounds": [
+            {
+                "name": "luigis_mansion:music/super_mario_bros/drum_1/19",
+                "stream": false,
+                "volume": 0.00025
+            }
+        ]
+    },
+    "music.super_mario_bros.drum_1.20": {
+        "sounds": [
+            {
+                "name": "luigis_mansion:music/super_mario_bros/drum_1/20",
+                "stream": false,
+                "volume": 0.00025
+            }
+        ]
+    },
+    "music.super_mario_bros.drum_1.21": {
+        "sounds": [
+            {
+                "name": "luigis_mansion:music/super_mario_bros/drum_1/21",
+                "stream": false,
+                "volume": 0.00025
+            }
+        ]
+    },
+    "music.super_mario_bros.drum_1.22": {
+        "sounds": [
+            {
+                "name": "luigis_mansion:music/super_mario_bros/drum_1/22",
+                "stream": false,
+                "volume": 0.00025
+            }
+        ]
+    },
+    "music.super_mario_bros.drum_1.23": {
+        "sounds": [
+            {
+                "name": "luigis_mansion:music/super_mario_bros/drum_1/23",
+                "stream": false,
+                "volume": 0.00025
+            }
+        ]
+    },
+    "music.super_mario_bros.drum_1.24": {
+        "sounds": [
+            {
+                "name": "luigis_mansion:music/super_mario_bros/drum_1/24",
+                "stream": false,
+                "volume": 0.00025
+            }
+        ]
+    },
+    "music.super_mario_bros.drum_1.25": {
+        "sounds": [
+            {
+                "name": "luigis_mansion:music/super_mario_bros/drum_1/25",
+                "stream": false,
+                "volume": 0.00025
+            }
+        ]
+    },
+    "music.super_mario_bros.drum_1.26": {
+        "sounds": [
+            {
+                "name": "luigis_mansion:music/super_mario_bros/drum_1/26",
+                "stream": false,
+                "volume": 0.00025
+            }
+        ]
+    },
+    "music.super_mario_bros.drum_1.27": {
+        "sounds": [
+            {
+                "name": "luigis_mansion:music/super_mario_bros/drum_1/27",
+                "stream": false,
+                "volume": 0.00025
+            }
+        ]
+    },
+    "music.super_mario_bros.drum_1.28": {
+        "sounds": [
+            {
+                "name": "luigis_mansion:music/super_mario_bros/drum_1/28",
+                "stream": false,
+                "volume": 0.00025
+            }
+        ]
+    },
+    "music.super_mario_bros.drum_1.29": {
+        "sounds": [
+            {
+                "name": "luigis_mansion:music/super_mario_bros/drum_1/29",
+                "stream": false,
+                "volume": 0.00025
+            }
+        ]
+    },
+    "music.super_mario_bros.drum_1.30": {
+        "sounds": [
+            {
+                "name": "luigis_mansion:music/super_mario_bros/drum_1/30",
+                "stream": false,
+                "volume": 0.00025
+            }
+        ]
+    },
+    "music.super_mario_bros.drum_1.31": {
+        "sounds": [
+            {
+                "name": "luigis_mansion:music/super_mario_bros/drum_1/31",
+                "stream": false,
+                "volume": 0.00025
+            }
+        ]
+    },
+    "music.super_mario_bros.drum_1.32": {
+        "sounds": [
+            {
+                "name": "luigis_mansion:music/super_mario_bros/drum_1/32",
+                "stream": false,
+                "volume": 0.00025
+            }
+        ]
+    },
+    "music.super_mario_bros.drum_1.33": {
+        "sounds": [
+            {
+                "name": "luigis_mansion:music/super_mario_bros/drum_1/33",
+                "stream": false,
+                "volume": 0.00025
+            }
+        ]
+    },
+    "music.super_mario_bros.drum_1.34": {
+        "sounds": [
+            {
+                "name": "luigis_mansion:music/super_mario_bros/drum_1/34",
+                "stream": false,
+                "volume": 0.00025
+            }
+        ]
+    },
+    "music.super_mario_bros.drum_1.35": {
+        "sounds": [
+            {
+                "name": "luigis_mansion:music/super_mario_bros/drum_1/35",
+                "stream": false,
+                "volume": 0.00025
+            }
+        ]
+    },
+    "music.super_mario_bros.drum_1.36": {
+        "sounds": [
+            {
+                "name": "luigis_mansion:music/super_mario_bros/drum_1/36",
+                "stream": false,
+                "volume": 0.00025
+            }
+        ]
+    },
+    "music.super_mario_bros.drum_1.37": {
+        "sounds": [
+            {
+                "name": "luigis_mansion:music/super_mario_bros/drum_1/37",
+                "stream": false,
+                "volume": 0.00025
+            }
+        ]
+    },
+    "music.super_mario_bros.drum_1.38": {
+        "sounds": [
+            {
+                "name": "luigis_mansion:music/super_mario_bros/drum_1/38",
+                "stream": false,
+                "volume": 0.00025
+            }
+        ]
+    },
+    "music.super_mario_bros.drum_1.39": {
+        "sounds": [
+            {
+                "name": "luigis_mansion:music/super_mario_bros/drum_1/39",
+                "stream": false,
+                "volume": 0.00025
+            }
+        ]
+    },
+    "music.super_mario_bros.drum_1.40": {
+        "sounds": [
+            {
+                "name": "luigis_mansion:music/super_mario_bros/drum_1/40",
+                "stream": false,
+                "volume": 0.00025
+            }
+        ]
+    },
+    "music.super_mario_bros.drum_1.41": {
+        "sounds": [
+            {
+                "name": "luigis_mansion:music/super_mario_bros/drum_1/41",
+                "stream": false,
+                "volume": 0.00025
+            }
+        ]
+    },
+    "music.super_mario_bros.drum_1.42": {
+        "sounds": [
+            {
+                "name": "luigis_mansion:music/super_mario_bros/drum_1/42",
+                "stream": false,
+                "volume": 0.00025
+            }
+        ]
+    },
+    "music.super_mario_bros.drum_1.43": {
+        "sounds": [
+            {
+                "name": "luigis_mansion:music/super_mario_bros/drum_1/43",
+                "stream": false,
+                "volume": 0.00025
+            }
+        ]
+    },
+    "music.super_mario_bros.drum_1.44": {
+        "sounds": [
+            {
+                "name": "luigis_mansion:music/super_mario_bros/drum_1/44",
+                "stream": false,
+                "volume": 0.00025
+            }
+        ]
+    },
+    "music.super_mario_bros.drum_1.45": {
+        "sounds": [
+            {
+                "name": "luigis_mansion:music/super_mario_bros/drum_1/45",
+                "stream": false,
+                "volume": 0.00025
+            }
+        ]
+    },
+    "music.super_mario_bros.drum_1.46": {
+        "sounds": [
+            {
+                "name": "luigis_mansion:music/super_mario_bros/drum_1/46",
+                "stream": false,
+                "volume": 0.00025
+            }
+        ]
+    },
+    "music.super_mario_bros.drum_1.47": {
+        "sounds": [
+            {
+                "name": "luigis_mansion:music/super_mario_bros/drum_1/47",
+                "stream": false,
+                "volume": 0.00025
+            }
+        ]
+    },
+    "music.super_mario_bros.drum_1.48": {
+        "sounds": [
+            {
+                "name": "luigis_mansion:music/super_mario_bros/drum_1/48",
+                "stream": false,
+                "volume": 0.00025
+            }
+        ]
+    },
+    "music.super_mario_bros.drum_1.49": {
+        "sounds": [
+            {
+                "name": "luigis_mansion:music/super_mario_bros/drum_1/49",
+                "stream": false,
+                "volume": 0.00025
+            }
+        ]
+    },
+    "music.super_mario_bros.drum_1.50": {
+        "sounds": [
+            {
+                "name": "luigis_mansion:music/super_mario_bros/drum_1/50",
+                "stream": false,
+                "volume": 0.00025
+            }
+        ]
+    },
+    "music.super_mario_bros.drum_1.51": {
+        "sounds": [
+            {
+                "name": "luigis_mansion:music/super_mario_bros/drum_1/51",
+                "stream": false,
+                "volume": 0.00025
+            }
+        ]
+    },
+    "music.super_mario_bros.drum_1.52": {
+        "sounds": [
+            {
+                "name": "luigis_mansion:music/super_mario_bros/drum_1/52",
+                "stream": false,
+                "volume": 0.00025
+            }
+        ]
+    },
+    "music.super_mario_bros.drum_1.53": {
+        "sounds": [
+            {
+                "name": "luigis_mansion:music/super_mario_bros/drum_1/53",
+                "stream": false,
+                "volume": 0.00025
+            }
+        ]
+    },
+    "music.super_mario_bros.drum_1.54": {
+        "sounds": [
+            {
+                "name": "luigis_mansion:music/super_mario_bros/drum_1/54",
+                "stream": false,
+                "volume": 0.00025
+            }
+        ]
+    },
+    "music.super_mario_bros.drum_1.55": {
+        "sounds": [
+            {
+                "name": "luigis_mansion:music/super_mario_bros/drum_1/55",
+                "stream": false,
+                "volume": 0.00025
+            }
+        ]
+    },
+    "music.super_mario_bros.drum_1.56": {
+        "sounds": [
+            {
+                "name": "luigis_mansion:music/super_mario_bros/drum_1/56",
+                "stream": false,
+                "volume": 0.00025
+            }
+        ]
+    },
+    "music.super_mario_bros.drum_1.57": {
+        "sounds": [
+            {
+                "name": "luigis_mansion:music/super_mario_bros/drum_1/57",
+                "stream": false,
+                "volume": 0.00025
+            }
+        ]
+    },
+    "music.super_mario_bros.drum_1.58": {
+        "sounds": [
+            {
+                "name": "luigis_mansion:music/super_mario_bros/drum_1/58",
+                "stream": false,
+                "volume": 0.00025
+            }
+        ]
+    },
+    "music.super_mario_bros.drum_1.59": {
+        "sounds": [
+            {
+                "name": "luigis_mansion:music/super_mario_bros/drum_1/59",
+                "stream": false,
+                "volume": 0.00025
+            }
+        ]
+    },
+    "music.super_mario_bros.drum_1.60": {
+        "sounds": [
+            {
+                "name": "luigis_mansion:music/super_mario_bros/drum_1/60",
+                "stream": false,
+                "volume": 0.00025
+            }
+        ]
+    },
+    "music.super_mario_bros.drum_1.61": {
+        "sounds": [
+            {
+                "name": "luigis_mansion:music/super_mario_bros/drum_1/61",
+                "stream": false,
+                "volume": 0.00025
+            }
+        ]
+    },
+    "music.super_mario_bros.drum_1.62": {
+        "sounds": [
+            {
+                "name": "luigis_mansion:music/super_mario_bros/drum_1/62",
+                "stream": false,
+                "volume": 0.00025
+            }
+        ]
+    },
+    "music.super_mario_bros.drum_1.63": {
+        "sounds": [
+            {
+                "name": "luigis_mansion:music/super_mario_bros/drum_1/63",
+                "stream": false,
+                "volume": 0.00025
+            }
+        ]
+    },
+    "music.super_mario_bros.drum_1.64": {
+        "sounds": [
+            {
+                "name": "luigis_mansion:music/super_mario_bros/drum_1/64",
+                "stream": false,
+                "volume": 0.00025
+            }
+        ]
+    },
+    "music.super_mario_bros.drum_1.65": {
+        "sounds": [
+            {
+                "name": "luigis_mansion:music/super_mario_bros/drum_1/65",
+                "stream": false,
+                "volume": 0.00025
+            }
+        ]
+    },
+    "music.super_mario_bros.drum_1.66": {
+        "sounds": [
+            {
+                "name": "luigis_mansion:music/super_mario_bros/drum_1/66",
+                "stream": false,
+                "volume": 0.00025
+            }
+        ]
+    },
+    "music.super_mario_bros.drum_1.67": {
+        "sounds": [
+            {
+                "name": "luigis_mansion:music/super_mario_bros/drum_1/67",
+                "stream": false,
+                "volume": 0.00025
+            }
+        ]
+    },
+    "music.super_mario_bros.drum_1.68": {
+        "sounds": [
+            {
+                "name": "luigis_mansion:music/super_mario_bros/drum_1/68",
+                "stream": false,
+                "volume": 0.00025
+            }
+        ]
+    },
+    "music.super_mario_bros.drum_1.69": {
+        "sounds": [
+            {
+                "name": "luigis_mansion:music/super_mario_bros/drum_1/69",
+                "stream": false,
+                "volume": 0.00025
+            }
+        ]
+    },
+    "music.super_mario_bros.drum_1.70": {
+        "sounds": [
+            {
+                "name": "luigis_mansion:music/super_mario_bros/drum_1/70",
+                "stream": false,
+                "volume": 0.00025
+            }
+        ]
+    },
+    "music.super_mario_bros.drum_1.71": {
+        "sounds": [
+            {
+                "name": "luigis_mansion:music/super_mario_bros/drum_1/71",
+                "stream": false,
+                "volume": 0.00025
+            }
+        ]
+    },
+    "music.super_mario_bros.drum_1.72": {
+        "sounds": [
+            {
+                "name": "luigis_mansion:music/super_mario_bros/drum_1/72",
+                "stream": false,
+                "volume": 0.00025
+            }
+        ]
+    },
+    "music.super_mario_bros.drum_2.1": {
+        "sounds": [
+            {
+                "name": "luigis_mansion:music/super_mario_bros/drum_2/1",
+                "stream": false,
+                "volume": 0.00025
+            }
+        ]
+    },
+    "music.super_mario_bros.drum_2.2": {
+        "sounds": [
+            {
+                "name": "luigis_mansion:music/super_mario_bros/drum_2/2",
+                "stream": false,
+                "volume": 0.00025
+            }
+        ]
+    },
+    "music.super_mario_bros.drum_2.3": {
+        "sounds": [
+            {
+                "name": "luigis_mansion:music/super_mario_bros/drum_2/3",
+                "stream": false,
+                "volume": 0.00025
+            }
+        ]
+    },
+    "music.super_mario_bros.drum_2.4": {
+        "sounds": [
+            {
+                "name": "luigis_mansion:music/super_mario_bros/drum_2/4",
+                "stream": false,
+                "volume": 0.00025
+            }
+        ]
+    },
+    "music.super_mario_bros.drum_2.5": {
+        "sounds": [
+            {
+                "name": "luigis_mansion:music/super_mario_bros/drum_2/5",
+                "stream": false,
+                "volume": 0.00025
+            }
+        ]
+    },
+    "music.super_mario_bros.drum_2.6": {
+        "sounds": [
+            {
+                "name": "luigis_mansion:music/super_mario_bros/drum_2/6",
+                "stream": false,
+                "volume": 0.00025
+            }
+        ]
+    },
+    "music.super_mario_bros.drum_2.7": {
+        "sounds": [
+            {
+                "name": "luigis_mansion:music/super_mario_bros/drum_2/7",
+                "stream": false,
+                "volume": 0.00025
+            }
+        ]
+    },
+    "music.super_mario_bros.drum_2.8": {
+        "sounds": [
+            {
+                "name": "luigis_mansion:music/super_mario_bros/drum_2/8",
+                "stream": false,
+                "volume": 0.00025
+            }
+        ]
+    },
+    "music.super_mario_bros.drum_2.9": {
+        "sounds": [
+            {
+                "name": "luigis_mansion:music/super_mario_bros/drum_2/9",
+                "stream": false,
+                "volume": 0.00025
+            }
+        ]
+    },
+    "music.super_mario_bros.drum_2.10": {
+        "sounds": [
+            {
+                "name": "luigis_mansion:music/super_mario_bros/drum_2/10",
+                "stream": false,
+                "volume": 0.00025
+            }
+        ]
+    },
+    "music.super_mario_bros.drum_2.11": {
+        "sounds": [
+            {
+                "name": "luigis_mansion:music/super_mario_bros/drum_2/11",
+                "stream": false,
+                "volume": 0.00025
+            }
+        ]
+    },
+    "music.super_mario_bros.drum_2.12": {
+        "sounds": [
+            {
+                "name": "luigis_mansion:music/super_mario_bros/drum_2/12",
+                "stream": false,
+                "volume": 0.00025
+            }
+        ]
+    },
+    "music.super_mario_bros.drum_2.13": {
+        "sounds": [
+            {
+                "name": "luigis_mansion:music/super_mario_bros/drum_2/13",
+                "stream": false,
+                "volume": 0.00025
+            }
+        ]
+    },
+    "music.super_mario_bros.drum_2.14": {
+        "sounds": [
+            {
+                "name": "luigis_mansion:music/super_mario_bros/drum_2/14",
+                "stream": false,
+                "volume": 0.00025
+            }
+        ]
+    },
+    "music.super_mario_bros.drum_2.15": {
+        "sounds": [
+            {
+                "name": "luigis_mansion:music/super_mario_bros/drum_2/15",
+                "stream": false,
+                "volume": 0.00025
+            }
+        ]
+    },
+    "music.super_mario_bros.drum_2.16": {
+        "sounds": [
+            {
+                "name": "luigis_mansion:music/super_mario_bros/drum_2/16",
+                "stream": false,
+                "volume": 0.00025
+            }
+        ]
+    },
+    "music.super_mario_bros.drum_2.17": {
+        "sounds": [
+            {
+                "name": "luigis_mansion:music/super_mario_bros/drum_2/17",
+                "stream": false,
+                "volume": 0.00025
+            }
+        ]
+    },
+    "music.super_mario_bros.drum_2.18": {
+        "sounds": [
+            {
+                "name": "luigis_mansion:music/super_mario_bros/drum_2/18",
+                "stream": false,
+                "volume": 0.00025
+            }
+        ]
+    },
+    "music.super_mario_bros.drum_2.19": {
+        "sounds": [
+            {
+                "name": "luigis_mansion:music/super_mario_bros/drum_2/19",
+                "stream": false,
+                "volume": 0.00025
+            }
+        ]
+    },
+    "music.super_mario_bros.drum_2.20": {
+        "sounds": [
+            {
+                "name": "luigis_mansion:music/super_mario_bros/drum_2/20",
+                "stream": false,
+                "volume": 0.00025
+            }
+        ]
+    },
+    "music.super_mario_bros.drum_2.21": {
+        "sounds": [
+            {
+                "name": "luigis_mansion:music/super_mario_bros/drum_2/21",
+                "stream": false,
+                "volume": 0.00025
+            }
+        ]
+    },
+    "music.super_mario_bros.drum_2.22": {
+        "sounds": [
+            {
+                "name": "luigis_mansion:music/super_mario_bros/drum_2/22",
+                "stream": false,
+                "volume": 0.00025
+            }
+        ]
+    },
+    "music.super_mario_bros.drum_2.23": {
+        "sounds": [
+            {
+                "name": "luigis_mansion:music/super_mario_bros/drum_2/23",
+                "stream": false,
+                "volume": 0.00025
+            }
+        ]
+    },
+    "music.super_mario_bros.drum_2.24": {
+        "sounds": [
+            {
+                "name": "luigis_mansion:music/super_mario_bros/drum_2/24",
+                "stream": false,
+                "volume": 0.00025
+            }
+        ]
+    },
+    "music.super_mario_bros.drum_2.25": {
+        "sounds": [
+            {
+                "name": "luigis_mansion:music/super_mario_bros/drum_2/25",
+                "stream": false,
+                "volume": 0.00025
+            }
+        ]
+    },
+    "music.super_mario_bros.drum_2.26": {
+        "sounds": [
+            {
+                "name": "luigis_mansion:music/super_mario_bros/drum_2/26",
+                "stream": false,
+                "volume": 0.00025
+            }
+        ]
+    },
+    "music.super_mario_bros.drum_2.27": {
+        "sounds": [
+            {
+                "name": "luigis_mansion:music/super_mario_bros/drum_2/27",
+                "stream": false,
+                "volume": 0.00025
+            }
+        ]
+    },
+    "music.super_mario_bros.drum_2.28": {
+        "sounds": [
+            {
+                "name": "luigis_mansion:music/super_mario_bros/drum_2/28",
+                "stream": false,
+                "volume": 0.00025
+            }
+        ]
+    },
+    "music.super_mario_bros.drum_2.29": {
+        "sounds": [
+            {
+                "name": "luigis_mansion:music/super_mario_bros/drum_2/29",
+                "stream": false,
+                "volume": 0.00025
+            }
+        ]
+    },
+    "music.super_mario_bros.drum_2.30": {
+        "sounds": [
+            {
+                "name": "luigis_mansion:music/super_mario_bros/drum_2/30",
+                "stream": false,
+                "volume": 0.00025
+            }
+        ]
+    },
+    "music.super_mario_bros.drum_2.31": {
+        "sounds": [
+            {
+                "name": "luigis_mansion:music/super_mario_bros/drum_2/31",
+                "stream": false,
+                "volume": 0.00025
+            }
+        ]
+    },
+    "music.super_mario_bros.drum_2.32": {
+        "sounds": [
+            {
+                "name": "luigis_mansion:music/super_mario_bros/drum_2/32",
+                "stream": false,
+                "volume": 0.00025
+            }
+        ]
+    },
+    "music.super_mario_bros.drum_2.33": {
+        "sounds": [
+            {
+                "name": "luigis_mansion:music/super_mario_bros/drum_2/33",
+                "stream": false,
+                "volume": 0.00025
+            }
+        ]
+    },
+    "music.super_mario_bros.drum_2.34": {
+        "sounds": [
+            {
+                "name": "luigis_mansion:music/super_mario_bros/drum_2/34",
+                "stream": false,
+                "volume": 0.00025
+            }
+        ]
+    },
+    "music.super_mario_bros.drum_2.35": {
+        "sounds": [
+            {
+                "name": "luigis_mansion:music/super_mario_bros/drum_2/35",
+                "stream": false,
+                "volume": 0.00025
+            }
+        ]
+    },
+    "music.super_mario_bros.drum_2.36": {
+        "sounds": [
+            {
+                "name": "luigis_mansion:music/super_mario_bros/drum_2/36",
+                "stream": false,
+                "volume": 0.00025
+            }
+        ]
+    },
+    "music.super_mario_bros.drum_2.37": {
+        "sounds": [
+            {
+                "name": "luigis_mansion:music/super_mario_bros/drum_2/37",
+                "stream": false,
+                "volume": 0.00025
+            }
+        ]
+    },
+    "music.super_mario_bros.drum_2.38": {
+        "sounds": [
+            {
+                "name": "luigis_mansion:music/super_mario_bros/drum_2/38",
+                "stream": false,
+                "volume": 0.00025
+            }
+        ]
+    },
+    "music.super_mario_bros.drum_2.39": {
+        "sounds": [
+            {
+                "name": "luigis_mansion:music/super_mario_bros/drum_2/39",
+                "stream": false,
+                "volume": 0.00025
+            }
+        ]
+    },
+    "music.super_mario_bros.drum_2.40": {
+        "sounds": [
+            {
+                "name": "luigis_mansion:music/super_mario_bros/drum_2/40",
+                "stream": false,
+                "volume": 0.00025
+            }
+        ]
+    },
+    "music.super_mario_bros.drum_2.41": {
+        "sounds": [
+            {
+                "name": "luigis_mansion:music/super_mario_bros/drum_2/41",
+                "stream": false,
+                "volume": 0.00025
+            }
+        ]
+    },
+    "music.super_mario_bros.drum_2.42": {
+        "sounds": [
+            {
+                "name": "luigis_mansion:music/super_mario_bros/drum_2/42",
+                "stream": false,
+                "volume": 0.00025
+            }
+        ]
+    },
+    "music.super_mario_bros.drum_2.43": {
+        "sounds": [
+            {
+                "name": "luigis_mansion:music/super_mario_bros/drum_2/43",
+                "stream": false,
+                "volume": 0.00025
+            }
+        ]
+    },
+    "music.super_mario_bros.drum_2.44": {
+        "sounds": [
+            {
+                "name": "luigis_mansion:music/super_mario_bros/drum_2/44",
+                "stream": false,
+                "volume": 0.00025
+            }
+        ]
+    },
+    "music.super_mario_bros.drum_2.45": {
+        "sounds": [
+            {
+                "name": "luigis_mansion:music/super_mario_bros/drum_2/45",
+                "stream": false,
+                "volume": 0.00025
+            }
+        ]
+    },
+    "music.super_mario_bros.drum_2.46": {
+        "sounds": [
+            {
+                "name": "luigis_mansion:music/super_mario_bros/drum_2/46",
+                "stream": false,
+                "volume": 0.00025
+            }
+        ]
+    },
+    "music.super_mario_bros.drum_2.47": {
+        "sounds": [
+            {
+                "name": "luigis_mansion:music/super_mario_bros/drum_2/47",
+                "stream": false,
+                "volume": 0.00025
+            }
+        ]
+    },
+    "music.super_mario_bros.drum_2.48": {
+        "sounds": [
+            {
+                "name": "luigis_mansion:music/super_mario_bros/drum_2/48",
+                "stream": false,
+                "volume": 0.00025
+            }
+        ]
+    },
+    "music.super_mario_bros.drum_2.49": {
+        "sounds": [
+            {
+                "name": "luigis_mansion:music/super_mario_bros/drum_2/49",
+                "stream": false,
+                "volume": 0.00025
+            }
+        ]
+    },
+    "music.super_mario_bros.drum_2.50": {
+        "sounds": [
+            {
+                "name": "luigis_mansion:music/super_mario_bros/drum_2/50",
+                "stream": false,
+                "volume": 0.00025
+            }
+        ]
+    },
+    "music.super_mario_bros.drum_2.51": {
+        "sounds": [
+            {
+                "name": "luigis_mansion:music/super_mario_bros/drum_2/51",
+                "stream": false,
+                "volume": 0.00025
+            }
+        ]
+    },
+    "music.super_mario_bros.drum_2.52": {
+        "sounds": [
+            {
+                "name": "luigis_mansion:music/super_mario_bros/drum_2/52",
+                "stream": false,
+                "volume": 0.00025
+            }
+        ]
+    },
+    "music.super_mario_bros.drum_2.53": {
+        "sounds": [
+            {
+                "name": "luigis_mansion:music/super_mario_bros/drum_2/53",
+                "stream": false,
+                "volume": 0.00025
+            }
+        ]
+    },
+    "music.super_mario_bros.drum_2.54": {
+        "sounds": [
+            {
+                "name": "luigis_mansion:music/super_mario_bros/drum_2/54",
+                "stream": false,
+                "volume": 0.00025
+            }
+        ]
+    },
+    "music.super_mario_bros.drum_2.55": {
+        "sounds": [
+            {
+                "name": "luigis_mansion:music/super_mario_bros/drum_2/55",
+                "stream": false,
+                "volume": 0.00025
+            }
+        ]
+    },
+    "music.super_mario_bros.drum_2.56": {
+        "sounds": [
+            {
+                "name": "luigis_mansion:music/super_mario_bros/drum_2/56",
+                "stream": false,
+                "volume": 0.00025
+            }
+        ]
+    },
+    "music.super_mario_bros.drum_2.57": {
+        "sounds": [
+            {
+                "name": "luigis_mansion:music/super_mario_bros/drum_2/57",
+                "stream": false,
+                "volume": 0.00025
+            }
+        ]
+    },
+    "music.super_mario_bros.drum_2.58": {
+        "sounds": [
+            {
+                "name": "luigis_mansion:music/super_mario_bros/drum_2/58",
+                "stream": false,
+                "volume": 0.00025
+            }
+        ]
+    },
+    "music.super_mario_bros.drum_2.59": {
+        "sounds": [
+            {
+                "name": "luigis_mansion:music/super_mario_bros/drum_2/59",
+                "stream": false,
+                "volume": 0.00025
+            }
+        ]
+    },
+    "music.super_mario_bros.drum_2.60": {
+        "sounds": [
+            {
+                "name": "luigis_mansion:music/super_mario_bros/drum_2/60",
+                "stream": false,
+                "volume": 0.00025
+            }
+        ]
+    },
+    "music.super_mario_bros.drum_2.61": {
+        "sounds": [
+            {
+                "name": "luigis_mansion:music/super_mario_bros/drum_2/61",
+                "stream": false,
+                "volume": 0.00025
+            }
+        ]
+    },
+    "music.super_mario_bros.drum_2.62": {
+        "sounds": [
+            {
+                "name": "luigis_mansion:music/super_mario_bros/drum_2/62",
+                "stream": false,
+                "volume": 0.00025
+            }
+        ]
+    },
+    "music.super_mario_bros.drum_2.63": {
+        "sounds": [
+            {
+                "name": "luigis_mansion:music/super_mario_bros/drum_2/63",
+                "stream": false,
+                "volume": 0.00025
+            }
+        ]
+    },
+    "music.super_mario_bros.drum_2.64": {
+        "sounds": [
+            {
+                "name": "luigis_mansion:music/super_mario_bros/drum_2/64",
+                "stream": false,
+                "volume": 0.00025
+            }
+        ]
+    },
+    "music.super_mario_bros.drum_2.65": {
+        "sounds": [
+            {
+                "name": "luigis_mansion:music/super_mario_bros/drum_2/65",
+                "stream": false,
+                "volume": 0.00025
+            }
+        ]
+    },
+    "music.super_mario_bros.drum_2.66": {
+        "sounds": [
+            {
+                "name": "luigis_mansion:music/super_mario_bros/drum_2/66",
+                "stream": false,
+                "volume": 0.00025
+            }
+        ]
+    },
+    "music.super_mario_bros.drum_2.67": {
+        "sounds": [
+            {
+                "name": "luigis_mansion:music/super_mario_bros/drum_2/67",
+                "stream": false,
+                "volume": 0.00025
+            }
+        ]
+    },
+    "music.super_mario_bros.drum_2.68": {
+        "sounds": [
+            {
+                "name": "luigis_mansion:music/super_mario_bros/drum_2/68",
+                "stream": false,
+                "volume": 0.00025
+            }
+        ]
+    },
+    "music.super_mario_bros.drum_2.69": {
+        "sounds": [
+            {
+                "name": "luigis_mansion:music/super_mario_bros/drum_2/69",
+                "stream": false,
+                "volume": 0.00025
+            }
+        ]
+    },
+    "music.super_mario_bros.drum_2.70": {
+        "sounds": [
+            {
+                "name": "luigis_mansion:music/super_mario_bros/drum_2/70",
+                "stream": false,
+                "volume": 0.00025
+            }
+        ]
+    },
+    "music.super_mario_bros.drum_2.71": {
+        "sounds": [
+            {
+                "name": "luigis_mansion:music/super_mario_bros/drum_2/71",
+                "stream": false,
+                "volume": 0.00025
+            }
+        ]
+    },
+    "music.super_mario_bros.drum_2.72": {
+        "sounds": [
+            {
+                "name": "luigis_mansion:music/super_mario_bros/drum_2/72",
+                "stream": false,
+                "volume": 0.00025
+            }
+        ]
+    },
+    "music.super_mario_bros.drum_3.1": {
+        "sounds": [
+            {
+                "name": "luigis_mansion:music/super_mario_bros/drum_3/1",
+                "stream": false,
+                "volume": 0.00025
+            }
+        ]
+    },
+    "music.super_mario_bros.drum_3.2": {
+        "sounds": [
+            {
+                "name": "luigis_mansion:music/super_mario_bros/drum_3/2",
+                "stream": false,
+                "volume": 0.00025
+            }
+        ]
+    },
+    "music.super_mario_bros.drum_3.3": {
+        "sounds": [
+            {
+                "name": "luigis_mansion:music/super_mario_bros/drum_3/3",
+                "stream": false,
+                "volume": 0.00025
+            }
+        ]
+    },
+    "music.super_mario_bros.drum_3.4": {
+        "sounds": [
+            {
+                "name": "luigis_mansion:music/super_mario_bros/drum_3/4",
+                "stream": false,
+                "volume": 0.00025
+            }
+        ]
+    },
+    "music.super_mario_bros.drum_3.5": {
+        "sounds": [
+            {
+                "name": "luigis_mansion:music/super_mario_bros/drum_3/5",
+                "stream": false,
+                "volume": 0.00025
+            }
+        ]
+    },
+    "music.super_mario_bros.drum_3.6": {
+        "sounds": [
+            {
+                "name": "luigis_mansion:music/super_mario_bros/drum_3/6",
+                "stream": false,
+                "volume": 0.00025
+            }
+        ]
+    },
+    "music.super_mario_bros.drum_3.7": {
+        "sounds": [
+            {
+                "name": "luigis_mansion:music/super_mario_bros/drum_3/7",
+                "stream": false,
+                "volume": 0.00025
+            }
+        ]
+    },
+    "music.super_mario_bros.drum_3.8": {
+        "sounds": [
+            {
+                "name": "luigis_mansion:music/super_mario_bros/drum_3/8",
+                "stream": false,
+                "volume": 0.00025
+            }
+        ]
+    },
+    "music.super_mario_bros.drum_3.9": {
+        "sounds": [
+            {
+                "name": "luigis_mansion:music/super_mario_bros/drum_3/9",
+                "stream": false,
+                "volume": 0.00025
+            }
+        ]
+    },
+    "music.super_mario_bros.drum_3.10": {
+        "sounds": [
+            {
+                "name": "luigis_mansion:music/super_mario_bros/drum_3/10",
+                "stream": false,
+                "volume": 0.00025
+            }
+        ]
+    },
+    "music.super_mario_bros.drum_3.11": {
+        "sounds": [
+            {
+                "name": "luigis_mansion:music/super_mario_bros/drum_3/11",
+                "stream": false,
+                "volume": 0.00025
+            }
+        ]
+    },
+    "music.super_mario_bros.drum_3.12": {
+        "sounds": [
+            {
+                "name": "luigis_mansion:music/super_mario_bros/drum_3/12",
+                "stream": false,
+                "volume": 0.00025
+            }
+        ]
+    },
+    "music.super_mario_bros.drum_3.13": {
+        "sounds": [
+            {
+                "name": "luigis_mansion:music/super_mario_bros/drum_3/13",
+                "stream": false,
+                "volume": 0.00025
+            }
+        ]
+    },
+    "music.super_mario_bros.drum_3.14": {
+        "sounds": [
+            {
+                "name": "luigis_mansion:music/super_mario_bros/drum_3/14",
+                "stream": false,
+                "volume": 0.00025
+            }
+        ]
+    },
+    "music.super_mario_bros.drum_3.15": {
+        "sounds": [
+            {
+                "name": "luigis_mansion:music/super_mario_bros/drum_3/15",
+                "stream": false,
+                "volume": 0.00025
+            }
+        ]
+    },
+    "music.super_mario_bros.drum_3.16": {
+        "sounds": [
+            {
+                "name": "luigis_mansion:music/super_mario_bros/drum_3/16",
+                "stream": false,
+                "volume": 0.00025
+            }
+        ]
+    },
+    "music.super_mario_bros.drum_3.17": {
+        "sounds": [
+            {
+                "name": "luigis_mansion:music/super_mario_bros/drum_3/17",
+                "stream": false,
+                "volume": 0.00025
+            }
+        ]
+    },
+    "music.super_mario_bros.drum_3.18": {
+        "sounds": [
+            {
+                "name": "luigis_mansion:music/super_mario_bros/drum_3/18",
+                "stream": false,
+                "volume": 0.00025
+            }
+        ]
+    },
+    "music.super_mario_bros.drum_3.19": {
+        "sounds": [
+            {
+                "name": "luigis_mansion:music/super_mario_bros/drum_3/19",
+                "stream": false,
+                "volume": 0.00025
+            }
+        ]
+    },
+    "music.super_mario_bros.drum_3.20": {
+        "sounds": [
+            {
+                "name": "luigis_mansion:music/super_mario_bros/drum_3/20",
+                "stream": false,
+                "volume": 0.00025
+            }
+        ]
+    },
+    "music.super_mario_bros.drum_3.21": {
+        "sounds": [
+            {
+                "name": "luigis_mansion:music/super_mario_bros/drum_3/21",
+                "stream": false,
+                "volume": 0.00025
+            }
+        ]
+    },
+    "music.super_mario_bros.drum_3.22": {
+        "sounds": [
+            {
+                "name": "luigis_mansion:music/super_mario_bros/drum_3/22",
+                "stream": false,
+                "volume": 0.00025
+            }
+        ]
+    },
+    "music.super_mario_bros.drum_3.23": {
+        "sounds": [
+            {
+                "name": "luigis_mansion:music/super_mario_bros/drum_3/23",
+                "stream": false,
+                "volume": 0.00025
+            }
+        ]
+    },
+    "music.super_mario_bros.drum_3.24": {
+        "sounds": [
+            {
+                "name": "luigis_mansion:music/super_mario_bros/drum_3/24",
+                "stream": false,
+                "volume": 0.00025
+            }
+        ]
+    },
+    "music.super_mario_bros.drum_3.25": {
+        "sounds": [
+            {
+                "name": "luigis_mansion:music/super_mario_bros/drum_3/25",
+                "stream": false,
+                "volume": 0.00025
+            }
+        ]
+    },
+    "music.super_mario_bros.drum_3.26": {
+        "sounds": [
+            {
+                "name": "luigis_mansion:music/super_mario_bros/drum_3/26",
+                "stream": false,
+                "volume": 0.00025
+            }
+        ]
+    },
+    "music.super_mario_bros.drum_3.27": {
+        "sounds": [
+            {
+                "name": "luigis_mansion:music/super_mario_bros/drum_3/27",
+                "stream": false,
+                "volume": 0.00025
+            }
+        ]
+    },
+    "music.super_mario_bros.drum_3.28": {
+        "sounds": [
+            {
+                "name": "luigis_mansion:music/super_mario_bros/drum_3/28",
+                "stream": false,
+                "volume": 0.00025
+            }
+        ]
+    },
+    "music.super_mario_bros.drum_3.29": {
+        "sounds": [
+            {
+                "name": "luigis_mansion:music/super_mario_bros/drum_3/29",
+                "stream": false,
+                "volume": 0.00025
+            }
+        ]
+    },
+    "music.super_mario_bros.drum_3.30": {
+        "sounds": [
+            {
+                "name": "luigis_mansion:music/super_mario_bros/drum_3/30",
+                "stream": false,
+                "volume": 0.00025
+            }
+        ]
+    },
+    "music.super_mario_bros.drum_3.31": {
+        "sounds": [
+            {
+                "name": "luigis_mansion:music/super_mario_bros/drum_3/31",
+                "stream": false,
+                "volume": 0.00025
+            }
+        ]
+    },
+    "music.super_mario_bros.drum_3.32": {
+        "sounds": [
+            {
+                "name": "luigis_mansion:music/super_mario_bros/drum_3/32",
+                "stream": false,
+                "volume": 0.00025
+            }
+        ]
+    },
+    "music.super_mario_bros.drum_3.33": {
+        "sounds": [
+            {
+                "name": "luigis_mansion:music/super_mario_bros/drum_3/33",
+                "stream": false,
+                "volume": 0.00025
+            }
+        ]
+    },
+    "music.super_mario_bros.drum_3.34": {
+        "sounds": [
+            {
+                "name": "luigis_mansion:music/super_mario_bros/drum_3/34",
+                "stream": false,
+                "volume": 0.00025
+            }
+        ]
+    },
+    "music.super_mario_bros.drum_3.35": {
+        "sounds": [
+            {
+                "name": "luigis_mansion:music/super_mario_bros/drum_3/35",
+                "stream": false,
+                "volume": 0.00025
+            }
+        ]
+    },
+    "music.super_mario_bros.drum_3.36": {
+        "sounds": [
+            {
+                "name": "luigis_mansion:music/super_mario_bros/drum_3/36",
+                "stream": false,
+                "volume": 0.00025
+            }
+        ]
+    },
+    "music.super_mario_bros.drum_3.37": {
+        "sounds": [
+            {
+                "name": "luigis_mansion:music/super_mario_bros/drum_3/37",
+                "stream": false,
+                "volume": 0.00025
+            }
+        ]
+    },
+    "music.super_mario_bros.drum_3.38": {
+        "sounds": [
+            {
+                "name": "luigis_mansion:music/super_mario_bros/drum_3/38",
+                "stream": false,
+                "volume": 0.00025
+            }
+        ]
+    },
+    "music.super_mario_bros.drum_3.39": {
+        "sounds": [
+            {
+                "name": "luigis_mansion:music/super_mario_bros/drum_3/39",
+                "stream": false,
+                "volume": 0.00025
+            }
+        ]
+    },
+    "music.super_mario_bros.drum_3.40": {
+        "sounds": [
+            {
+                "name": "luigis_mansion:music/super_mario_bros/drum_3/40",
+                "stream": false,
+                "volume": 0.00025
+            }
+        ]
+    },
+    "music.super_mario_bros.drum_3.41": {
+        "sounds": [
+            {
+                "name": "luigis_mansion:music/super_mario_bros/drum_3/41",
+                "stream": false,
+                "volume": 0.00025
+            }
+        ]
+    },
+    "music.super_mario_bros.drum_3.42": {
+        "sounds": [
+            {
+                "name": "luigis_mansion:music/super_mario_bros/drum_3/42",
+                "stream": false,
+                "volume": 0.00025
+            }
+        ]
+    },
+    "music.super_mario_bros.drum_3.43": {
+        "sounds": [
+            {
+                "name": "luigis_mansion:music/super_mario_bros/drum_3/43",
+                "stream": false,
+                "volume": 0.00025
+            }
+        ]
+    },
+    "music.super_mario_bros.drum_3.44": {
+        "sounds": [
+            {
+                "name": "luigis_mansion:music/super_mario_bros/drum_3/44",
+                "stream": false,
+                "volume": 0.00025
+            }
+        ]
+    },
+    "music.super_mario_bros.drum_3.45": {
+        "sounds": [
+            {
+                "name": "luigis_mansion:music/super_mario_bros/drum_3/45",
+                "stream": false,
+                "volume": 0.00025
+            }
+        ]
+    },
+    "music.super_mario_bros.drum_3.46": {
+        "sounds": [
+            {
+                "name": "luigis_mansion:music/super_mario_bros/drum_3/46",
+                "stream": false,
+                "volume": 0.00025
+            }
+        ]
+    },
+    "music.super_mario_bros.drum_3.47": {
+        "sounds": [
+            {
+                "name": "luigis_mansion:music/super_mario_bros/drum_3/47",
+                "stream": false,
+                "volume": 0.00025
+            }
+        ]
+    },
+    "music.super_mario_bros.drum_3.48": {
+        "sounds": [
+            {
+                "name": "luigis_mansion:music/super_mario_bros/drum_3/48",
+                "stream": false,
+                "volume": 0.00025
+            }
+        ]
+    },
+    "music.super_mario_bros.drum_3.49": {
+        "sounds": [
+            {
+                "name": "luigis_mansion:music/super_mario_bros/drum_3/49",
+                "stream": false,
+                "volume": 0.00025
+            }
+        ]
+    },
+    "music.super_mario_bros.drum_3.50": {
+        "sounds": [
+            {
+                "name": "luigis_mansion:music/super_mario_bros/drum_3/50",
+                "stream": false,
+                "volume": 0.00025
+            }
+        ]
+    },
+    "music.super_mario_bros.drum_3.51": {
+        "sounds": [
+            {
+                "name": "luigis_mansion:music/super_mario_bros/drum_3/51",
+                "stream": false,
+                "volume": 0.00025
+            }
+        ]
+    },
+    "music.super_mario_bros.drum_3.52": {
+        "sounds": [
+            {
+                "name": "luigis_mansion:music/super_mario_bros/drum_3/52",
+                "stream": false,
+                "volume": 0.00025
+            }
+        ]
+    },
+    "music.super_mario_bros.drum_3.53": {
+        "sounds": [
+            {
+                "name": "luigis_mansion:music/super_mario_bros/drum_3/53",
+                "stream": false,
+                "volume": 0.00025
+            }
+        ]
+    },
+    "music.super_mario_bros.drum_3.54": {
+        "sounds": [
+            {
+                "name": "luigis_mansion:music/super_mario_bros/drum_3/54",
+                "stream": false,
+                "volume": 0.00025
+            }
+        ]
+    },
+    "music.super_mario_bros.drum_3.55": {
+        "sounds": [
+            {
+                "name": "luigis_mansion:music/super_mario_bros/drum_3/55",
+                "stream": false,
+                "volume": 0.00025
+            }
+        ]
+    },
+    "music.super_mario_bros.drum_3.56": {
+        "sounds": [
+            {
+                "name": "luigis_mansion:music/super_mario_bros/drum_3/56",
+                "stream": false,
+                "volume": 0.00025
+            }
+        ]
+    },
+    "music.super_mario_bros.drum_3.57": {
+        "sounds": [
+            {
+                "name": "luigis_mansion:music/super_mario_bros/drum_3/57",
+                "stream": false,
+                "volume": 0.00025
+            }
+        ]
+    },
+    "music.super_mario_bros.drum_3.58": {
+        "sounds": [
+            {
+                "name": "luigis_mansion:music/super_mario_bros/drum_3/58",
+                "stream": false,
+                "volume": 0.00025
+            }
+        ]
+    },
+    "music.super_mario_bros.drum_3.59": {
+        "sounds": [
+            {
+                "name": "luigis_mansion:music/super_mario_bros/drum_3/59",
+                "stream": false,
+                "volume": 0.00025
+            }
+        ]
+    },
+    "music.super_mario_bros.drum_3.60": {
+        "sounds": [
+            {
+                "name": "luigis_mansion:music/super_mario_bros/drum_3/60",
+                "stream": false,
+                "volume": 0.00025
+            }
+        ]
+    },
+    "music.super_mario_bros.drum_3.61": {
+        "sounds": [
+            {
+                "name": "luigis_mansion:music/super_mario_bros/drum_3/61",
+                "stream": false,
+                "volume": 0.00025
+            }
+        ]
+    },
+    "music.super_mario_bros.drum_3.62": {
+        "sounds": [
+            {
+                "name": "luigis_mansion:music/super_mario_bros/drum_3/62",
+                "stream": false,
+                "volume": 0.00025
+            }
+        ]
+    },
+    "music.super_mario_bros.drum_3.63": {
+        "sounds": [
+            {
+                "name": "luigis_mansion:music/super_mario_bros/drum_3/63",
+                "stream": false,
+                "volume": 0.00025
+            }
+        ]
+    },
+    "music.super_mario_bros.drum_3.64": {
+        "sounds": [
+            {
+                "name": "luigis_mansion:music/super_mario_bros/drum_3/64",
+                "stream": false,
+                "volume": 0.00025
+            }
+        ]
+    },
+    "music.super_mario_bros.drum_3.65": {
+        "sounds": [
+            {
+                "name": "luigis_mansion:music/super_mario_bros/drum_3/65",
+                "stream": false,
+                "volume": 0.00025
+            }
+        ]
+    },
+    "music.super_mario_bros.drum_3.66": {
+        "sounds": [
+            {
+                "name": "luigis_mansion:music/super_mario_bros/drum_3/66",
+                "stream": false,
+                "volume": 0.00025
+            }
+        ]
+    },
+    "music.super_mario_bros.drum_3.67": {
+        "sounds": [
+            {
+                "name": "luigis_mansion:music/super_mario_bros/drum_3/67",
+                "stream": false,
+                "volume": 0.00025
+            }
+        ]
+    },
+    "music.super_mario_bros.drum_3.68": {
+        "sounds": [
+            {
+                "name": "luigis_mansion:music/super_mario_bros/drum_3/68",
+                "stream": false,
+                "volume": 0.00025
+            }
+        ]
+    },
+    "music.super_mario_bros.drum_3.69": {
+        "sounds": [
+            {
+                "name": "luigis_mansion:music/super_mario_bros/drum_3/69",
+                "stream": false,
+                "volume": 0.00025
+            }
+        ]
+    },
+    "music.super_mario_bros.drum_3.70": {
+        "sounds": [
+            {
+                "name": "luigis_mansion:music/super_mario_bros/drum_3/70",
+                "stream": false,
+                "volume": 0.00025
+            }
+        ]
+    },
+    "music.super_mario_bros.drum_3.71": {
+        "sounds": [
+            {
+                "name": "luigis_mansion:music/super_mario_bros/drum_3/71",
+                "stream": false,
+                "volume": 0.00025
+            }
+        ]
+    },
+    "music.super_mario_bros.drum_3.72": {
+        "sounds": [
+            {
+                "name": "luigis_mansion:music/super_mario_bros/drum_3/72",
+                "stream": false,
+                "volume": 0.00025
+            }
+        ]
+    },
+    "music.super_mario_bros.harp.1": {
+        "sounds": [
+            {
+                "name": "luigis_mansion:music/super_mario_bros/harp/1",
+                "stream": false,
+                "volume": 0.00025
+            }
+        ]
+    },
+    "music.super_mario_bros.harp.2": {
+        "sounds": [
+            {
+                "name": "luigis_mansion:music/super_mario_bros/harp/2",
+                "stream": false,
+                "volume": 0.00025
+            }
+        ]
+    },
+    "music.super_mario_bros.harp.3": {
+        "sounds": [
+            {
+                "name": "luigis_mansion:music/super_mario_bros/harp/3",
+                "stream": false,
+                "volume": 0.00025
+            }
+        ]
+    },
+    "music.super_mario_bros.harp.4": {
+        "sounds": [
+            {
+                "name": "luigis_mansion:music/super_mario_bros/harp/4",
+                "stream": false,
+                "volume": 0.00025
+            }
+        ]
+    },
+    "music.super_mario_bros.harp.5": {
+        "sounds": [
+            {
+                "name": "luigis_mansion:music/super_mario_bros/harp/5",
+                "stream": false,
+                "volume": 0.00025
+            }
+        ]
+    },
+    "music.super_mario_bros.harp.6": {
+        "sounds": [
+            {
+                "name": "luigis_mansion:music/super_mario_bros/harp/6",
+                "stream": false,
+                "volume": 0.00025
+            }
+        ]
+    },
+    "music.super_mario_bros.harp.7": {
+        "sounds": [
+            {
+                "name": "luigis_mansion:music/super_mario_bros/harp/7",
+                "stream": false,
+                "volume": 0.00025
+            }
+        ]
+    },
+    "music.super_mario_bros.harp.8": {
+        "sounds": [
+            {
+                "name": "luigis_mansion:music/super_mario_bros/harp/8",
+                "stream": false,
+                "volume": 0.00025
+            }
+        ]
+    },
+    "music.super_mario_bros.harp.9": {
+        "sounds": [
+            {
+                "name": "luigis_mansion:music/super_mario_bros/harp/9",
+                "stream": false,
+                "volume": 0.00025
+            }
+        ]
+    },
+    "music.super_mario_bros.harp.10": {
+        "sounds": [
+            {
+                "name": "luigis_mansion:music/super_mario_bros/harp/10",
+                "stream": false,
+                "volume": 0.00025
+            }
+        ]
+    },
+    "music.super_mario_bros.harp.11": {
+        "sounds": [
+            {
+                "name": "luigis_mansion:music/super_mario_bros/harp/11",
+                "stream": false,
+                "volume": 0.00025
+            }
+        ]
+    },
+    "music.super_mario_bros.harp.12": {
+        "sounds": [
+            {
+                "name": "luigis_mansion:music/super_mario_bros/harp/12",
+                "stream": false,
+                "volume": 0.00025
+            }
+        ]
+    },
+    "music.super_mario_bros.harp.13": {
+        "sounds": [
+            {
+                "name": "luigis_mansion:music/super_mario_bros/harp/13",
+                "stream": false,
+                "volume": 0.00025
+            }
+        ]
+    },
+    "music.super_mario_bros.harp.14": {
+        "sounds": [
+            {
+                "name": "luigis_mansion:music/super_mario_bros/harp/14",
+                "stream": false,
+                "volume": 0.00025
+            }
+        ]
+    },
+    "music.super_mario_bros.harp.15": {
+        "sounds": [
+            {
+                "name": "luigis_mansion:music/super_mario_bros/harp/15",
+                "stream": false,
+                "volume": 0.00025
+            }
+        ]
+    },
+    "music.super_mario_bros.harp.16": {
+        "sounds": [
+            {
+                "name": "luigis_mansion:music/super_mario_bros/harp/16",
+                "stream": false,
+                "volume": 0.00025
+            }
+        ]
+    },
+    "music.super_mario_bros.harp.17": {
+        "sounds": [
+            {
+                "name": "luigis_mansion:music/super_mario_bros/harp/17",
+                "stream": false,
+                "volume": 0.00025
+            }
+        ]
+    },
+    "music.super_mario_bros.harp.18": {
+        "sounds": [
+            {
+                "name": "luigis_mansion:music/super_mario_bros/harp/18",
+                "stream": false,
+                "volume": 0.00025
+            }
+        ]
+    },
+    "music.super_mario_bros.harp.19": {
+        "sounds": [
+            {
+                "name": "luigis_mansion:music/super_mario_bros/harp/19",
+                "stream": false,
+                "volume": 0.00025
+            }
+        ]
+    },
+    "music.super_mario_bros.harp.20": {
+        "sounds": [
+            {
+                "name": "luigis_mansion:music/super_mario_bros/harp/20",
+                "stream": false,
+                "volume": 0.00025
+            }
+        ]
+    },
+    "music.super_mario_bros.harp.21": {
+        "sounds": [
+            {
+                "name": "luigis_mansion:music/super_mario_bros/harp/21",
+                "stream": false,
+                "volume": 0.00025
+            }
+        ]
+    },
+    "music.super_mario_bros.harp.22": {
+        "sounds": [
+            {
+                "name": "luigis_mansion:music/super_mario_bros/harp/22",
+                "stream": false,
+                "volume": 0.00025
+            }
+        ]
+    },
+    "music.super_mario_bros.harp.23": {
+        "sounds": [
+            {
+                "name": "luigis_mansion:music/super_mario_bros/harp/23",
+                "stream": false,
+                "volume": 0.00025
+            }
+        ]
+    },
+    "music.super_mario_bros.harp.24": {
+        "sounds": [
+            {
+                "name": "luigis_mansion:music/super_mario_bros/harp/24",
+                "stream": false,
+                "volume": 0.00025
+            }
+        ]
+    },
+    "music.super_mario_bros.harp.25": {
+        "sounds": [
+            {
+                "name": "luigis_mansion:music/super_mario_bros/harp/25",
+                "stream": false,
+                "volume": 0.00025
+            }
+        ]
+    },
+    "music.super_mario_bros.harp.26": {
+        "sounds": [
+            {
+                "name": "luigis_mansion:music/super_mario_bros/harp/26",
+                "stream": false,
+                "volume": 0.00025
+            }
+        ]
+    },
+    "music.super_mario_bros.harp.27": {
+        "sounds": [
+            {
+                "name": "luigis_mansion:music/super_mario_bros/harp/27",
+                "stream": false,
+                "volume": 0.00025
+            }
+        ]
+    },
+    "music.super_mario_bros.harp.28": {
+        "sounds": [
+            {
+                "name": "luigis_mansion:music/super_mario_bros/harp/28",
+                "stream": false,
+                "volume": 0.00025
+            }
+        ]
+    },
+    "music.super_mario_bros.harp.29": {
+        "sounds": [
+            {
+                "name": "luigis_mansion:music/super_mario_bros/harp/29",
+                "stream": false,
+                "volume": 0.00025
+            }
+        ]
+    },
+    "music.super_mario_bros.harp.30": {
+        "sounds": [
+            {
+                "name": "luigis_mansion:music/super_mario_bros/harp/30",
+                "stream": false,
+                "volume": 0.00025
+            }
+        ]
+    },
+    "music.super_mario_bros.harp.31": {
+        "sounds": [
+            {
+                "name": "luigis_mansion:music/super_mario_bros/harp/31",
+                "stream": false,
+                "volume": 0.00025
+            }
+        ]
+    },
+    "music.super_mario_bros.harp.32": {
+        "sounds": [
+            {
+                "name": "luigis_mansion:music/super_mario_bros/harp/32",
+                "stream": false,
+                "volume": 0.00025
+            }
+        ]
+    },
+    "music.super_mario_bros.harp.33": {
+        "sounds": [
+            {
+                "name": "luigis_mansion:music/super_mario_bros/harp/33",
+                "stream": false,
+                "volume": 0.00025
+            }
+        ]
+    },
+    "music.super_mario_bros.harp.34": {
+        "sounds": [
+            {
+                "name": "luigis_mansion:music/super_mario_bros/harp/34",
+                "stream": false,
+                "volume": 0.00025
+            }
+        ]
+    },
+    "music.super_mario_bros.harp.35": {
+        "sounds": [
+            {
+                "name": "luigis_mansion:music/super_mario_bros/harp/35",
+                "stream": false,
+                "volume": 0.00025
+            }
+        ]
+    },
+    "music.super_mario_bros.harp.36": {
+        "sounds": [
+            {
+                "name": "luigis_mansion:music/super_mario_bros/harp/36",
+                "stream": false,
+                "volume": 0.00025
+            }
+        ]
+    },
+    "music.super_mario_bros.harp.37": {
+        "sounds": [
+            {
+                "name": "luigis_mansion:music/super_mario_bros/harp/37",
+                "stream": false,
+                "volume": 0.00025
+            }
+        ]
+    },
+    "music.super_mario_bros.harp.38": {
+        "sounds": [
+            {
+                "name": "luigis_mansion:music/super_mario_bros/harp/38",
+                "stream": false,
+                "volume": 0.00025
+            }
+        ]
+    },
+    "music.super_mario_bros.harp.39": {
+        "sounds": [
+            {
+                "name": "luigis_mansion:music/super_mario_bros/harp/39",
+                "stream": false,
+                "volume": 0.00025
+            }
+        ]
+    },
+    "music.super_mario_bros.harp.40": {
+        "sounds": [
+            {
+                "name": "luigis_mansion:music/super_mario_bros/harp/40",
+                "stream": false,
+                "volume": 0.00025
+            }
+        ]
+    },
+    "music.super_mario_bros.harp.41": {
+        "sounds": [
+            {
+                "name": "luigis_mansion:music/super_mario_bros/harp/41",
+                "stream": false,
+                "volume": 0.00025
+            }
+        ]
+    },
+    "music.super_mario_bros.harp.42": {
+        "sounds": [
+            {
+                "name": "luigis_mansion:music/super_mario_bros/harp/42",
+                "stream": false,
+                "volume": 0.00025
+            }
+        ]
+    },
+    "music.super_mario_bros.harp.43": {
+        "sounds": [
+            {
+                "name": "luigis_mansion:music/super_mario_bros/harp/43",
+                "stream": false,
+                "volume": 0.00025
+            }
+        ]
+    },
+    "music.super_mario_bros.harp.44": {
+        "sounds": [
+            {
+                "name": "luigis_mansion:music/super_mario_bros/harp/44",
+                "stream": false,
+                "volume": 0.00025
+            }
+        ]
+    },
+    "music.super_mario_bros.harp.45": {
+        "sounds": [
+            {
+                "name": "luigis_mansion:music/super_mario_bros/harp/45",
+                "stream": false,
+                "volume": 0.00025
+            }
+        ]
+    },
+    "music.super_mario_bros.harp.46": {
+        "sounds": [
+            {
+                "name": "luigis_mansion:music/super_mario_bros/harp/46",
+                "stream": false,
+                "volume": 0.00025
+            }
+        ]
+    },
+    "music.super_mario_bros.harp.47": {
+        "sounds": [
+            {
+                "name": "luigis_mansion:music/super_mario_bros/harp/47",
+                "stream": false,
+                "volume": 0.00025
+            }
+        ]
+    },
+    "music.super_mario_bros.harp.48": {
+        "sounds": [
+            {
+                "name": "luigis_mansion:music/super_mario_bros/harp/48",
+                "stream": false,
+                "volume": 0.00025
+            }
+        ]
+    },
+    "music.super_mario_bros.harp.49": {
+        "sounds": [
+            {
+                "name": "luigis_mansion:music/super_mario_bros/harp/49",
+                "stream": false,
+                "volume": 0.00025
+            }
+        ]
+    },
+    "music.super_mario_bros.harp.50": {
+        "sounds": [
+            {
+                "name": "luigis_mansion:music/super_mario_bros/harp/50",
+                "stream": false,
+                "volume": 0.00025
+            }
+        ]
+    },
+    "music.super_mario_bros.harp.51": {
+        "sounds": [
+            {
+                "name": "luigis_mansion:music/super_mario_bros/harp/51",
+                "stream": false,
+                "volume": 0.00025
+            }
+        ]
+    },
+    "music.super_mario_bros.harp.52": {
+        "sounds": [
+            {
+                "name": "luigis_mansion:music/super_mario_bros/harp/52",
+                "stream": false,
+                "volume": 0.00025
+            }
+        ]
+    },
+    "music.super_mario_bros.harp.53": {
+        "sounds": [
+            {
+                "name": "luigis_mansion:music/super_mario_bros/harp/53",
+                "stream": false,
+                "volume": 0.00025
+            }
+        ]
+    },
+    "music.super_mario_bros.harp.54": {
+        "sounds": [
+            {
+                "name": "luigis_mansion:music/super_mario_bros/harp/54",
+                "stream": false,
+                "volume": 0.00025
+            }
+        ]
+    },
+    "music.super_mario_bros.harp.55": {
+        "sounds": [
+            {
+                "name": "luigis_mansion:music/super_mario_bros/harp/55",
+                "stream": false,
+                "volume": 0.00025
+            }
+        ]
+    },
+    "music.super_mario_bros.harp.56": {
+        "sounds": [
+            {
+                "name": "luigis_mansion:music/super_mario_bros/harp/56",
+                "stream": false,
+                "volume": 0.00025
+            }
+        ]
+    },
+    "music.super_mario_bros.harp.57": {
+        "sounds": [
+            {
+                "name": "luigis_mansion:music/super_mario_bros/harp/57",
+                "stream": false,
+                "volume": 0.00025
+            }
+        ]
+    },
+    "music.super_mario_bros.harp.58": {
+        "sounds": [
+            {
+                "name": "luigis_mansion:music/super_mario_bros/harp/58",
+                "stream": false,
+                "volume": 0.00025
+            }
+        ]
+    },
+    "music.super_mario_bros.harp.59": {
+        "sounds": [
+            {
+                "name": "luigis_mansion:music/super_mario_bros/harp/59",
+                "stream": false,
+                "volume": 0.00025
+            }
+        ]
+    },
+    "music.super_mario_bros.harp.60": {
+        "sounds": [
+            {
+                "name": "luigis_mansion:music/super_mario_bros/harp/60",
+                "stream": false,
+                "volume": 0.00025
+            }
+        ]
+    },
+    "music.super_mario_bros.harp.61": {
+        "sounds": [
+            {
+                "name": "luigis_mansion:music/super_mario_bros/harp/61",
+                "stream": false,
+                "volume": 0.00025
+            }
+        ]
+    },
+    "music.super_mario_bros.harp.62": {
+        "sounds": [
+            {
+                "name": "luigis_mansion:music/super_mario_bros/harp/62",
+                "stream": false,
+                "volume": 0.00025
+            }
+        ]
+    },
+    "music.super_mario_bros.harp.63": {
+        "sounds": [
+            {
+                "name": "luigis_mansion:music/super_mario_bros/harp/63",
+                "stream": false,
+                "volume": 0.00025
+            }
+        ]
+    },
+    "music.super_mario_bros.harp.64": {
+        "sounds": [
+            {
+                "name": "luigis_mansion:music/super_mario_bros/harp/64",
+                "stream": false,
+                "volume": 0.00025
+            }
+        ]
+    },
+    "music.super_mario_bros.harp.65": {
+        "sounds": [
+            {
+                "name": "luigis_mansion:music/super_mario_bros/harp/65",
+                "stream": false,
+                "volume": 0.00025
+            }
+        ]
+    },
+    "music.super_mario_bros.harp.66": {
+        "sounds": [
+            {
+                "name": "luigis_mansion:music/super_mario_bros/harp/66",
+                "stream": false,
+                "volume": 0.00025
+            }
+        ]
+    },
+    "music.super_mario_bros.harp.67": {
+        "sounds": [
+            {
+                "name": "luigis_mansion:music/super_mario_bros/harp/67",
+                "stream": false,
+                "volume": 0.00025
+            }
+        ]
+    },
+    "music.super_mario_bros.harp.68": {
+        "sounds": [
+            {
+                "name": "luigis_mansion:music/super_mario_bros/harp/68",
+                "stream": false,
+                "volume": 0.00025
+            }
+        ]
+    },
+    "music.super_mario_bros.harp.69": {
+        "sounds": [
+            {
+                "name": "luigis_mansion:music/super_mario_bros/harp/69",
+                "stream": false,
+                "volume": 0.00025
+            }
+        ]
+    },
+    "music.super_mario_bros.harp.70": {
+        "sounds": [
+            {
+                "name": "luigis_mansion:music/super_mario_bros/harp/70",
+                "stream": false,
+                "volume": 0.00025
+            }
+        ]
+    },
+    "music.super_mario_bros.harp.71": {
+        "sounds": [
+            {
+                "name": "luigis_mansion:music/super_mario_bros/harp/71",
+                "stream": false,
+                "volume": 0.00025
+            }
+        ]
+    },
+    "music.super_mario_bros.harp.72": {
+        "sounds": [
+            {
+                "name": "luigis_mansion:music/super_mario_bros/harp/72",
+                "stream": false,
+                "volume": 0.00025
+            }
+        ]
+    },
+    "music.super_mario_bros.piano.1": {
+        "sounds": [
+            {
+                "name": "luigis_mansion:music/super_mario_bros/piano/1",
+                "stream": false,
+                "volume": 0.00025
+            }
+        ]
+    },
+    "music.super_mario_bros.piano.2": {
+        "sounds": [
+            {
+                "name": "luigis_mansion:music/super_mario_bros/piano/2",
+                "stream": false,
+                "volume": 0.00025
+            }
+        ]
+    },
+    "music.super_mario_bros.piano.3": {
+        "sounds": [
+            {
+                "name": "luigis_mansion:music/super_mario_bros/piano/3",
+                "stream": false,
+                "volume": 0.00025
+            }
+        ]
+    },
+    "music.super_mario_bros.piano.4": {
+        "sounds": [
+            {
+                "name": "luigis_mansion:music/super_mario_bros/piano/4",
+                "stream": false,
+                "volume": 0.00025
+            }
+        ]
+    },
+    "music.super_mario_bros.piano.5": {
+        "sounds": [
+            {
+                "name": "luigis_mansion:music/super_mario_bros/piano/5",
+                "stream": false,
+                "volume": 0.00025
+            }
+        ]
+    },
+    "music.super_mario_bros.piano.6": {
+        "sounds": [
+            {
+                "name": "luigis_mansion:music/super_mario_bros/piano/6",
+                "stream": false,
+                "volume": 0.00025
+            }
+        ]
+    },
+    "music.super_mario_bros.piano.7": {
+        "sounds": [
+            {
+                "name": "luigis_mansion:music/super_mario_bros/piano/7",
+                "stream": false,
+                "volume": 0.00025
+            }
+        ]
+    },
+    "music.super_mario_bros.piano.8": {
+        "sounds": [
+            {
+                "name": "luigis_mansion:music/super_mario_bros/piano/8",
+                "stream": false,
+                "volume": 0.00025
+            }
+        ]
+    },
+    "music.super_mario_bros.piano.9": {
+        "sounds": [
+            {
+                "name": "luigis_mansion:music/super_mario_bros/piano/9",
+                "stream": false,
+                "volume": 0.00025
+            }
+        ]
+    },
+    "music.super_mario_bros.piano.10": {
+        "sounds": [
+            {
+                "name": "luigis_mansion:music/super_mario_bros/piano/10",
+                "stream": false,
+                "volume": 0.00025
+            }
+        ]
+    },
+    "music.super_mario_bros.piano.11": {
+        "sounds": [
+            {
+                "name": "luigis_mansion:music/super_mario_bros/piano/11",
+                "stream": false,
+                "volume": 0.00025
+            }
+        ]
+    },
+    "music.super_mario_bros.piano.12": {
+        "sounds": [
+            {
+                "name": "luigis_mansion:music/super_mario_bros/piano/12",
+                "stream": false,
+                "volume": 0.00025
+            }
+        ]
+    },
+    "music.super_mario_bros.piano.13": {
+        "sounds": [
+            {
+                "name": "luigis_mansion:music/super_mario_bros/piano/13",
+                "stream": false,
+                "volume": 0.00025
+            }
+        ]
+    },
+    "music.super_mario_bros.piano.14": {
+        "sounds": [
+            {
+                "name": "luigis_mansion:music/super_mario_bros/piano/14",
+                "stream": false,
+                "volume": 0.00025
+            }
+        ]
+    },
+    "music.super_mario_bros.piano.15": {
+        "sounds": [
+            {
+                "name": "luigis_mansion:music/super_mario_bros/piano/15",
+                "stream": false,
+                "volume": 0.00025
+            }
+        ]
+    },
+    "music.super_mario_bros.piano.16": {
+        "sounds": [
+            {
+                "name": "luigis_mansion:music/super_mario_bros/piano/16",
+                "stream": false,
+                "volume": 0.00025
+            }
+        ]
+    },
+    "music.super_mario_bros.piano.17": {
+        "sounds": [
+            {
+                "name": "luigis_mansion:music/super_mario_bros/piano/17",
+                "stream": false,
+                "volume": 0.00025
+            }
+        ]
+    },
+    "music.super_mario_bros.piano.18": {
+        "sounds": [
+            {
+                "name": "luigis_mansion:music/super_mario_bros/piano/18",
+                "stream": false,
+                "volume": 0.00025
+            }
+        ]
+    },
+    "music.super_mario_bros.piano.19": {
+        "sounds": [
+            {
+                "name": "luigis_mansion:music/super_mario_bros/piano/19",
+                "stream": false,
+                "volume": 0.00025
+            }
+        ]
+    },
+    "music.super_mario_bros.piano.20": {
+        "sounds": [
+            {
+                "name": "luigis_mansion:music/super_mario_bros/piano/20",
+                "stream": false,
+                "volume": 0.00025
+            }
+        ]
+    },
+    "music.super_mario_bros.piano.21": {
+        "sounds": [
+            {
+                "name": "luigis_mansion:music/super_mario_bros/piano/21",
+                "stream": false,
+                "volume": 0.00025
+            }
+        ]
+    },
+    "music.super_mario_bros.piano.22": {
+        "sounds": [
+            {
+                "name": "luigis_mansion:music/super_mario_bros/piano/22",
+                "stream": false,
+                "volume": 0.00025
+            }
+        ]
+    },
+    "music.super_mario_bros.piano.23": {
+        "sounds": [
+            {
+                "name": "luigis_mansion:music/super_mario_bros/piano/23",
+                "stream": false,
+                "volume": 0.00025
+            }
+        ]
+    },
+    "music.super_mario_bros.piano.24": {
+        "sounds": [
+            {
+                "name": "luigis_mansion:music/super_mario_bros/piano/24",
+                "stream": false,
+                "volume": 0.00025
+            }
+        ]
+    },
+    "music.super_mario_bros.piano.25": {
+        "sounds": [
+            {
+                "name": "luigis_mansion:music/super_mario_bros/piano/25",
+                "stream": false,
+                "volume": 0.00025
+            }
+        ]
+    },
+    "music.super_mario_bros.piano.26": {
+        "sounds": [
+            {
+                "name": "luigis_mansion:music/super_mario_bros/piano/26",
+                "stream": false,
+                "volume": 0.00025
+            }
+        ]
+    },
+    "music.super_mario_bros.piano.27": {
+        "sounds": [
+            {
+                "name": "luigis_mansion:music/super_mario_bros/piano/27",
+                "stream": false,
+                "volume": 0.00025
+            }
+        ]
+    },
+    "music.super_mario_bros.piano.28": {
+        "sounds": [
+            {
+                "name": "luigis_mansion:music/super_mario_bros/piano/28",
+                "stream": false,
+                "volume": 0.00025
+            }
+        ]
+    },
+    "music.super_mario_bros.piano.29": {
+        "sounds": [
+            {
+                "name": "luigis_mansion:music/super_mario_bros/piano/29",
+                "stream": false,
+                "volume": 0.00025
+            }
+        ]
+    },
+    "music.super_mario_bros.piano.30": {
+        "sounds": [
+            {
+                "name": "luigis_mansion:music/super_mario_bros/piano/30",
+                "stream": false,
+                "volume": 0.00025
+            }
+        ]
+    },
+    "music.super_mario_bros.piano.31": {
+        "sounds": [
+            {
+                "name": "luigis_mansion:music/super_mario_bros/piano/31",
+                "stream": false,
+                "volume": 0.00025
+            }
+        ]
+    },
+    "music.super_mario_bros.piano.32": {
+        "sounds": [
+            {
+                "name": "luigis_mansion:music/super_mario_bros/piano/32",
+                "stream": false,
+                "volume": 0.00025
+            }
+        ]
+    },
+    "music.super_mario_bros.piano.33": {
+        "sounds": [
+            {
+                "name": "luigis_mansion:music/super_mario_bros/piano/33",
+                "stream": false,
+                "volume": 0.00025
+            }
+        ]
+    },
+    "music.super_mario_bros.piano.34": {
+        "sounds": [
+            {
+                "name": "luigis_mansion:music/super_mario_bros/piano/34",
+                "stream": false,
+                "volume": 0.00025
+            }
+        ]
+    },
+    "music.super_mario_bros.piano.35": {
+        "sounds": [
+            {
+                "name": "luigis_mansion:music/super_mario_bros/piano/35",
+                "stream": false,
+                "volume": 0.00025
+            }
+        ]
+    },
+    "music.super_mario_bros.piano.36": {
+        "sounds": [
+            {
+                "name": "luigis_mansion:music/super_mario_bros/piano/36",
+                "stream": false,
+                "volume": 0.00025
+            }
+        ]
+    },
+    "music.super_mario_bros.piano.37": {
+        "sounds": [
+            {
+                "name": "luigis_mansion:music/super_mario_bros/piano/37",
+                "stream": false,
+                "volume": 0.00025
+            }
+        ]
+    },
+    "music.super_mario_bros.piano.38": {
+        "sounds": [
+            {
+                "name": "luigis_mansion:music/super_mario_bros/piano/38",
+                "stream": false,
+                "volume": 0.00025
+            }
+        ]
+    },
+    "music.super_mario_bros.piano.39": {
+        "sounds": [
+            {
+                "name": "luigis_mansion:music/super_mario_bros/piano/39",
+                "stream": false,
+                "volume": 0.00025
+            }
+        ]
+    },
+    "music.super_mario_bros.piano.40": {
+        "sounds": [
+            {
+                "name": "luigis_mansion:music/super_mario_bros/piano/40",
+                "stream": false,
+                "volume": 0.00025
+            }
+        ]
+    },
+    "music.super_mario_bros.piano.41": {
+        "sounds": [
+            {
+                "name": "luigis_mansion:music/super_mario_bros/piano/41",
+                "stream": false,
+                "volume": 0.00025
+            }
+        ]
+    },
+    "music.super_mario_bros.piano.42": {
+        "sounds": [
+            {
+                "name": "luigis_mansion:music/super_mario_bros/piano/42",
+                "stream": false,
+                "volume": 0.00025
+            }
+        ]
+    },
+    "music.super_mario_bros.piano.43": {
+        "sounds": [
+            {
+                "name": "luigis_mansion:music/super_mario_bros/piano/43",
+                "stream": false,
+                "volume": 0.00025
+            }
+        ]
+    },
+    "music.super_mario_bros.piano.44": {
+        "sounds": [
+            {
+                "name": "luigis_mansion:music/super_mario_bros/piano/44",
+                "stream": false,
+                "volume": 0.00025
+            }
+        ]
+    },
+    "music.super_mario_bros.piano.45": {
+        "sounds": [
+            {
+                "name": "luigis_mansion:music/super_mario_bros/piano/45",
+                "stream": false,
+                "volume": 0.00025
+            }
+        ]
+    },
+    "music.super_mario_bros.piano.46": {
+        "sounds": [
+            {
+                "name": "luigis_mansion:music/super_mario_bros/piano/46",
+                "stream": false,
+                "volume": 0.00025
+            }
+        ]
+    },
+    "music.super_mario_bros.piano.47": {
+        "sounds": [
+            {
+                "name": "luigis_mansion:music/super_mario_bros/piano/47",
+                "stream": false,
+                "volume": 0.00025
+            }
+        ]
+    },
+    "music.super_mario_bros.piano.48": {
+        "sounds": [
+            {
+                "name": "luigis_mansion:music/super_mario_bros/piano/48",
+                "stream": false,
+                "volume": 0.00025
+            }
+        ]
+    },
+    "music.super_mario_bros.piano.49": {
+        "sounds": [
+            {
+                "name": "luigis_mansion:music/super_mario_bros/piano/49",
+                "stream": false,
+                "volume": 0.00025
+            }
+        ]
+    },
+    "music.super_mario_bros.piano.50": {
+        "sounds": [
+            {
+                "name": "luigis_mansion:music/super_mario_bros/piano/50",
+                "stream": false,
+                "volume": 0.00025
+            }
+        ]
+    },
+    "music.super_mario_bros.piano.51": {
+        "sounds": [
+            {
+                "name": "luigis_mansion:music/super_mario_bros/piano/51",
+                "stream": false,
+                "volume": 0.00025
+            }
+        ]
+    },
+    "music.super_mario_bros.piano.52": {
+        "sounds": [
+            {
+                "name": "luigis_mansion:music/super_mario_bros/piano/52",
+                "stream": false,
+                "volume": 0.00025
+            }
+        ]
+    },
+    "music.super_mario_bros.piano.53": {
+        "sounds": [
+            {
+                "name": "luigis_mansion:music/super_mario_bros/piano/53",
+                "stream": false,
+                "volume": 0.00025
+            }
+        ]
+    },
+    "music.super_mario_bros.piano.54": {
+        "sounds": [
+            {
+                "name": "luigis_mansion:music/super_mario_bros/piano/54",
+                "stream": false,
+                "volume": 0.00025
+            }
+        ]
+    },
+    "music.super_mario_bros.piano.55": {
+        "sounds": [
+            {
+                "name": "luigis_mansion:music/super_mario_bros/piano/55",
+                "stream": false,
+                "volume": 0.00025
+            }
+        ]
+    },
+    "music.super_mario_bros.piano.56": {
+        "sounds": [
+            {
+                "name": "luigis_mansion:music/super_mario_bros/piano/56",
+                "stream": false,
+                "volume": 0.00025
+            }
+        ]
+    },
+    "music.super_mario_bros.piano.57": {
+        "sounds": [
+            {
+                "name": "luigis_mansion:music/super_mario_bros/piano/57",
+                "stream": false,
+                "volume": 0.00025
+            }
+        ]
+    },
+    "music.super_mario_bros.piano.58": {
+        "sounds": [
+            {
+                "name": "luigis_mansion:music/super_mario_bros/piano/58",
+                "stream": false,
+                "volume": 0.00025
+            }
+        ]
+    },
+    "music.super_mario_bros.piano.59": {
+        "sounds": [
+            {
+                "name": "luigis_mansion:music/super_mario_bros/piano/59",
+                "stream": false,
+                "volume": 0.00025
+            }
+        ]
+    },
+    "music.super_mario_bros.piano.60": {
+        "sounds": [
+            {
+                "name": "luigis_mansion:music/super_mario_bros/piano/60",
+                "stream": false,
+                "volume": 0.00025
+            }
+        ]
+    },
+    "music.super_mario_bros.piano.61": {
+        "sounds": [
+            {
+                "name": "luigis_mansion:music/super_mario_bros/piano/61",
+                "stream": false,
+                "volume": 0.00025
+            }
+        ]
+    },
+    "music.super_mario_bros.piano.62": {
+        "sounds": [
+            {
+                "name": "luigis_mansion:music/super_mario_bros/piano/62",
+                "stream": false,
+                "volume": 0.00025
+            }
+        ]
+    },
+    "music.super_mario_bros.piano.63": {
+        "sounds": [
+            {
+                "name": "luigis_mansion:music/super_mario_bros/piano/63",
+                "stream": false,
+                "volume": 0.00025
+            }
+        ]
+    },
+    "music.super_mario_bros.piano.64": {
+        "sounds": [
+            {
+                "name": "luigis_mansion:music/super_mario_bros/piano/64",
+                "stream": false,
+                "volume": 0.00025
+            }
+        ]
+    },
+    "music.super_mario_bros.piano.65": {
+        "sounds": [
+            {
+                "name": "luigis_mansion:music/super_mario_bros/piano/65",
+                "stream": false,
+                "volume": 0.00025
+            }
+        ]
+    },
+    "music.super_mario_bros.piano.66": {
+        "sounds": [
+            {
+                "name": "luigis_mansion:music/super_mario_bros/piano/66",
+                "stream": false,
+                "volume": 0.00025
+            }
+        ]
+    },
+    "music.super_mario_bros.piano.67": {
+        "sounds": [
+            {
+                "name": "luigis_mansion:music/super_mario_bros/piano/67",
+                "stream": false,
+                "volume": 0.00025
+            }
+        ]
+    },
+    "music.super_mario_bros.piano.68": {
+        "sounds": [
+            {
+                "name": "luigis_mansion:music/super_mario_bros/piano/68",
+                "stream": false,
+                "volume": 0.00025
+            }
+        ]
+    },
+    "music.super_mario_bros.piano.69": {
+        "sounds": [
+            {
+                "name": "luigis_mansion:music/super_mario_bros/piano/69",
+                "stream": false,
+                "volume": 0.00025
+            }
+        ]
+    },
+    "music.super_mario_bros.piano.70": {
+        "sounds": [
+            {
+                "name": "luigis_mansion:music/super_mario_bros/piano/70",
+                "stream": false,
+                "volume": 0.00025
+            }
+        ]
+    },
+    "music.super_mario_bros.piano.71": {
+        "sounds": [
+            {
+                "name": "luigis_mansion:music/super_mario_bros/piano/71",
+                "stream": false,
+                "volume": 0.00025
+            }
+        ]
+    },
+    "music.super_mario_bros.piano.72": {
+        "sounds": [
+            {
+                "name": "luigis_mansion:music/super_mario_bros/piano/72",
+                "stream": false,
+                "volume": 0.00025
+            }
+        ]
+    },
+    "music.super_mario_bros.saxophone.1": {
+        "sounds": [
+            {
+                "name": "luigis_mansion:music/super_mario_bros/saxophone/1",
+                "stream": false,
+                "volume": 0.00025
+            }
+        ]
+    },
+    "music.super_mario_bros.saxophone.2": {
+        "sounds": [
+            {
+                "name": "luigis_mansion:music/super_mario_bros/saxophone/2",
+                "stream": false,
+                "volume": 0.00025
+            }
+        ]
+    },
+    "music.super_mario_bros.saxophone.3": {
+        "sounds": [
+            {
+                "name": "luigis_mansion:music/super_mario_bros/saxophone/3",
+                "stream": false,
+                "volume": 0.00025
+            }
+        ]
+    },
+    "music.super_mario_bros.saxophone.4": {
+        "sounds": [
+            {
+                "name": "luigis_mansion:music/super_mario_bros/saxophone/4",
+                "stream": false,
+                "volume": 0.00025
+            }
+        ]
+    },
+    "music.super_mario_bros.saxophone.5": {
+        "sounds": [
+            {
+                "name": "luigis_mansion:music/super_mario_bros/saxophone/5",
+                "stream": false,
+                "volume": 0.00025
+            }
+        ]
+    },
+    "music.super_mario_bros.saxophone.6": {
+        "sounds": [
+            {
+                "name": "luigis_mansion:music/super_mario_bros/saxophone/6",
+                "stream": false,
+                "volume": 0.00025
+            }
+        ]
+    },
+    "music.super_mario_bros.saxophone.7": {
+        "sounds": [
+            {
+                "name": "luigis_mansion:music/super_mario_bros/saxophone/7",
+                "stream": false,
+                "volume": 0.00025
+            }
+        ]
+    },
+    "music.super_mario_bros.saxophone.8": {
+        "sounds": [
+            {
+                "name": "luigis_mansion:music/super_mario_bros/saxophone/8",
+                "stream": false,
+                "volume": 0.00025
+            }
+        ]
+    },
+    "music.super_mario_bros.saxophone.9": {
+        "sounds": [
+            {
+                "name": "luigis_mansion:music/super_mario_bros/saxophone/9",
+                "stream": false,
+                "volume": 0.00025
+            }
+        ]
+    },
+    "music.super_mario_bros.saxophone.10": {
+        "sounds": [
+            {
+                "name": "luigis_mansion:music/super_mario_bros/saxophone/10",
+                "stream": false,
+                "volume": 0.00025
+            }
+        ]
+    },
+    "music.super_mario_bros.saxophone.11": {
+        "sounds": [
+            {
+                "name": "luigis_mansion:music/super_mario_bros/saxophone/11",
+                "stream": false,
+                "volume": 0.00025
+            }
+        ]
+    },
+    "music.super_mario_bros.saxophone.12": {
+        "sounds": [
+            {
+                "name": "luigis_mansion:music/super_mario_bros/saxophone/12",
+                "stream": false,
+                "volume": 0.00025
+            }
+        ]
+    },
+    "music.super_mario_bros.saxophone.13": {
+        "sounds": [
+            {
+                "name": "luigis_mansion:music/super_mario_bros/saxophone/13",
+                "stream": false,
+                "volume": 0.00025
+            }
+        ]
+    },
+    "music.super_mario_bros.saxophone.14": {
+        "sounds": [
+            {
+                "name": "luigis_mansion:music/super_mario_bros/saxophone/14",
+                "stream": false,
+                "volume": 0.00025
+            }
+        ]
+    },
+    "music.super_mario_bros.saxophone.15": {
+        "sounds": [
+            {
+                "name": "luigis_mansion:music/super_mario_bros/saxophone/15",
+                "stream": false,
+                "volume": 0.00025
+            }
+        ]
+    },
+    "music.super_mario_bros.saxophone.16": {
+        "sounds": [
+            {
+                "name": "luigis_mansion:music/super_mario_bros/saxophone/16",
+                "stream": false,
+                "volume": 0.00025
+            }
+        ]
+    },
+    "music.super_mario_bros.saxophone.17": {
+        "sounds": [
+            {
+                "name": "luigis_mansion:music/super_mario_bros/saxophone/17",
+                "stream": false,
+                "volume": 0.00025
+            }
+        ]
+    },
+    "music.super_mario_bros.saxophone.18": {
+        "sounds": [
+            {
+                "name": "luigis_mansion:music/super_mario_bros/saxophone/18",
+                "stream": false,
+                "volume": 0.00025
+            }
+        ]
+    },
+    "music.super_mario_bros.saxophone.19": {
+        "sounds": [
+            {
+                "name": "luigis_mansion:music/super_mario_bros/saxophone/19",
+                "stream": false,
+                "volume": 0.00025
+            }
+        ]
+    },
+    "music.super_mario_bros.saxophone.20": {
+        "sounds": [
+            {
+                "name": "luigis_mansion:music/super_mario_bros/saxophone/20",
+                "stream": false,
+                "volume": 0.00025
+            }
+        ]
+    },
+    "music.super_mario_bros.saxophone.21": {
+        "sounds": [
+            {
+                "name": "luigis_mansion:music/super_mario_bros/saxophone/21",
+                "stream": false,
+                "volume": 0.00025
+            }
+        ]
+    },
+    "music.super_mario_bros.saxophone.22": {
+        "sounds": [
+            {
+                "name": "luigis_mansion:music/super_mario_bros/saxophone/22",
+                "stream": false,
+                "volume": 0.00025
+            }
+        ]
+    },
+    "music.super_mario_bros.saxophone.23": {
+        "sounds": [
+            {
+                "name": "luigis_mansion:music/super_mario_bros/saxophone/23",
+                "stream": false,
+                "volume": 0.00025
+            }
+        ]
+    },
+    "music.super_mario_bros.saxophone.24": {
+        "sounds": [
+            {
+                "name": "luigis_mansion:music/super_mario_bros/saxophone/24",
+                "stream": false,
+                "volume": 0.00025
+            }
+        ]
+    },
+    "music.super_mario_bros.saxophone.25": {
+        "sounds": [
+            {
+                "name": "luigis_mansion:music/super_mario_bros/saxophone/25",
+                "stream": false,
+                "volume": 0.00025
+            }
+        ]
+    },
+    "music.super_mario_bros.saxophone.26": {
+        "sounds": [
+            {
+                "name": "luigis_mansion:music/super_mario_bros/saxophone/26",
+                "stream": false,
+                "volume": 0.00025
+            }
+        ]
+    },
+    "music.super_mario_bros.saxophone.27": {
+        "sounds": [
+            {
+                "name": "luigis_mansion:music/super_mario_bros/saxophone/27",
+                "stream": false,
+                "volume": 0.00025
+            }
+        ]
+    },
+    "music.super_mario_bros.saxophone.28": {
+        "sounds": [
+            {
+                "name": "luigis_mansion:music/super_mario_bros/saxophone/28",
+                "stream": false,
+                "volume": 0.00025
+            }
+        ]
+    },
+    "music.super_mario_bros.saxophone.29": {
+        "sounds": [
+            {
+                "name": "luigis_mansion:music/super_mario_bros/saxophone/29",
+                "stream": false,
+                "volume": 0.00025
+            }
+        ]
+    },
+    "music.super_mario_bros.saxophone.30": {
+        "sounds": [
+            {
+                "name": "luigis_mansion:music/super_mario_bros/saxophone/30",
+                "stream": false,
+                "volume": 0.00025
+            }
+        ]
+    },
+    "music.super_mario_bros.saxophone.31": {
+        "sounds": [
+            {
+                "name": "luigis_mansion:music/super_mario_bros/saxophone/31",
+                "stream": false,
+                "volume": 0.00025
+            }
+        ]
+    },
+    "music.super_mario_bros.saxophone.32": {
+        "sounds": [
+            {
+                "name": "luigis_mansion:music/super_mario_bros/saxophone/32",
+                "stream": false,
+                "volume": 0.00025
+            }
+        ]
+    },
+    "music.super_mario_bros.saxophone.33": {
+        "sounds": [
+            {
+                "name": "luigis_mansion:music/super_mario_bros/saxophone/33",
+                "stream": false,
+                "volume": 0.00025
+            }
+        ]
+    },
+    "music.super_mario_bros.saxophone.34": {
+        "sounds": [
+            {
+                "name": "luigis_mansion:music/super_mario_bros/saxophone/34",
+                "stream": false,
+                "volume": 0.00025
+            }
+        ]
+    },
+    "music.super_mario_bros.saxophone.35": {
+        "sounds": [
+            {
+                "name": "luigis_mansion:music/super_mario_bros/saxophone/35",
+                "stream": false,
+                "volume": 0.00025
+            }
+        ]
+    },
+    "music.super_mario_bros.saxophone.36": {
+        "sounds": [
+            {
+                "name": "luigis_mansion:music/super_mario_bros/saxophone/36",
+                "stream": false,
+                "volume": 0.00025
+            }
+        ]
+    },
+    "music.super_mario_bros.saxophone.37": {
+        "sounds": [
+            {
+                "name": "luigis_mansion:music/super_mario_bros/saxophone/37",
+                "stream": false,
+                "volume": 0.00025
+            }
+        ]
+    },
+    "music.super_mario_bros.saxophone.38": {
+        "sounds": [
+            {
+                "name": "luigis_mansion:music/super_mario_bros/saxophone/38",
+                "stream": false,
+                "volume": 0.00025
+            }
+        ]
+    },
+    "music.super_mario_bros.saxophone.39": {
+        "sounds": [
+            {
+                "name": "luigis_mansion:music/super_mario_bros/saxophone/39",
+                "stream": false,
+                "volume": 0.00025
+            }
+        ]
+    },
+    "music.super_mario_bros.saxophone.40": {
+        "sounds": [
+            {
+                "name": "luigis_mansion:music/super_mario_bros/saxophone/40",
+                "stream": false,
+                "volume": 0.00025
+            }
+        ]
+    },
+    "music.super_mario_bros.saxophone.41": {
+        "sounds": [
+            {
+                "name": "luigis_mansion:music/super_mario_bros/saxophone/41",
+                "stream": false,
+                "volume": 0.00025
+            }
+        ]
+    },
+    "music.super_mario_bros.saxophone.42": {
+        "sounds": [
+            {
+                "name": "luigis_mansion:music/super_mario_bros/saxophone/42",
+                "stream": false,
+                "volume": 0.00025
+            }
+        ]
+    },
+    "music.super_mario_bros.saxophone.43": {
+        "sounds": [
+            {
+                "name": "luigis_mansion:music/super_mario_bros/saxophone/43",
+                "stream": false,
+                "volume": 0.00025
+            }
+        ]
+    },
+    "music.super_mario_bros.saxophone.44": {
+        "sounds": [
+            {
+                "name": "luigis_mansion:music/super_mario_bros/saxophone/44",
+                "stream": false,
+                "volume": 0.00025
+            }
+        ]
+    },
+    "music.super_mario_bros.saxophone.45": {
+        "sounds": [
+            {
+                "name": "luigis_mansion:music/super_mario_bros/saxophone/45",
+                "stream": false,
+                "volume": 0.00025
+            }
+        ]
+    },
+    "music.super_mario_bros.saxophone.46": {
+        "sounds": [
+            {
+                "name": "luigis_mansion:music/super_mario_bros/saxophone/46",
+                "stream": false,
+                "volume": 0.00025
+            }
+        ]
+    },
+    "music.super_mario_bros.saxophone.47": {
+        "sounds": [
+            {
+                "name": "luigis_mansion:music/super_mario_bros/saxophone/47",
+                "stream": false,
+                "volume": 0.00025
+            }
+        ]
+    },
+    "music.super_mario_bros.saxophone.48": {
+        "sounds": [
+            {
+                "name": "luigis_mansion:music/super_mario_bros/saxophone/48",
+                "stream": false,
+                "volume": 0.00025
+            }
+        ]
+    },
+    "music.super_mario_bros.saxophone.49": {
+        "sounds": [
+            {
+                "name": "luigis_mansion:music/super_mario_bros/saxophone/49",
+                "stream": false,
+                "volume": 0.00025
+            }
+        ]
+    },
+    "music.super_mario_bros.saxophone.50": {
+        "sounds": [
+            {
+                "name": "luigis_mansion:music/super_mario_bros/saxophone/50",
+                "stream": false,
+                "volume": 0.00025
+            }
+        ]
+    },
+    "music.super_mario_bros.saxophone.51": {
+        "sounds": [
+            {
+                "name": "luigis_mansion:music/super_mario_bros/saxophone/51",
+                "stream": false,
+                "volume": 0.00025
+            }
+        ]
+    },
+    "music.super_mario_bros.saxophone.52": {
+        "sounds": [
+            {
+                "name": "luigis_mansion:music/super_mario_bros/saxophone/52",
+                "stream": false,
+                "volume": 0.00025
+            }
+        ]
+    },
+    "music.super_mario_bros.saxophone.53": {
+        "sounds": [
+            {
+                "name": "luigis_mansion:music/super_mario_bros/saxophone/53",
+                "stream": false,
+                "volume": 0.00025
+            }
+        ]
+    },
+    "music.super_mario_bros.saxophone.54": {
+        "sounds": [
+            {
+                "name": "luigis_mansion:music/super_mario_bros/saxophone/54",
+                "stream": false,
+                "volume": 0.00025
+            }
+        ]
+    },
+    "music.super_mario_bros.saxophone.55": {
+        "sounds": [
+            {
+                "name": "luigis_mansion:music/super_mario_bros/saxophone/55",
+                "stream": false,
+                "volume": 0.00025
+            }
+        ]
+    },
+    "music.super_mario_bros.saxophone.56": {
+        "sounds": [
+            {
+                "name": "luigis_mansion:music/super_mario_bros/saxophone/56",
+                "stream": false,
+                "volume": 0.00025
+            }
+        ]
+    },
+    "music.super_mario_bros.saxophone.57": {
+        "sounds": [
+            {
+                "name": "luigis_mansion:music/super_mario_bros/saxophone/57",
+                "stream": false,
+                "volume": 0.00025
+            }
+        ]
+    },
+    "music.super_mario_bros.saxophone.58": {
+        "sounds": [
+            {
+                "name": "luigis_mansion:music/super_mario_bros/saxophone/58",
+                "stream": false,
+                "volume": 0.00025
+            }
+        ]
+    },
+    "music.super_mario_bros.saxophone.59": {
+        "sounds": [
+            {
+                "name": "luigis_mansion:music/super_mario_bros/saxophone/59",
+                "stream": false,
+                "volume": 0.00025
+            }
+        ]
+    },
+    "music.super_mario_bros.saxophone.60": {
+        "sounds": [
+            {
+                "name": "luigis_mansion:music/super_mario_bros/saxophone/60",
+                "stream": false,
+                "volume": 0.00025
+            }
+        ]
+    },
+    "music.super_mario_bros.saxophone.61": {
+        "sounds": [
+            {
+                "name": "luigis_mansion:music/super_mario_bros/saxophone/61",
+                "stream": false,
+                "volume": 0.00025
+            }
+        ]
+    },
+    "music.super_mario_bros.saxophone.62": {
+        "sounds": [
+            {
+                "name": "luigis_mansion:music/super_mario_bros/saxophone/62",
+                "stream": false,
+                "volume": 0.00025
+            }
+        ]
+    },
+    "music.super_mario_bros.saxophone.63": {
+        "sounds": [
+            {
+                "name": "luigis_mansion:music/super_mario_bros/saxophone/63",
+                "stream": false,
+                "volume": 0.00025
+            }
+        ]
+    },
+    "music.super_mario_bros.saxophone.64": {
+        "sounds": [
+            {
+                "name": "luigis_mansion:music/super_mario_bros/saxophone/64",
+                "stream": false,
+                "volume": 0.00025
+            }
+        ]
+    },
+    "music.super_mario_bros.saxophone.65": {
+        "sounds": [
+            {
+                "name": "luigis_mansion:music/super_mario_bros/saxophone/65",
+                "stream": false,
+                "volume": 0.00025
+            }
+        ]
+    },
+    "music.super_mario_bros.saxophone.66": {
+        "sounds": [
+            {
+                "name": "luigis_mansion:music/super_mario_bros/saxophone/66",
+                "stream": false,
+                "volume": 0.00025
+            }
+        ]
+    },
+    "music.super_mario_bros.saxophone.67": {
+        "sounds": [
+            {
+                "name": "luigis_mansion:music/super_mario_bros/saxophone/67",
+                "stream": false,
+                "volume": 0.00025
+            }
+        ]
+    },
+    "music.super_mario_bros.saxophone.68": {
+        "sounds": [
+            {
+                "name": "luigis_mansion:music/super_mario_bros/saxophone/68",
+                "stream": false,
+                "volume": 0.00025
+            }
+        ]
+    },
+    "music.super_mario_bros.saxophone.69": {
+        "sounds": [
+            {
+                "name": "luigis_mansion:music/super_mario_bros/saxophone/69",
+                "stream": false,
+                "volume": 0.00025
+            }
+        ]
+    },
+    "music.super_mario_bros.saxophone.70": {
+        "sounds": [
+            {
+                "name": "luigis_mansion:music/super_mario_bros/saxophone/70",
+                "stream": false,
+                "volume": 0.00025
+            }
+        ]
+    },
+    "music.super_mario_bros.saxophone.71": {
+        "sounds": [
+            {
+                "name": "luigis_mansion:music/super_mario_bros/saxophone/71",
+                "stream": false,
+                "volume": 0.00025
+            }
+        ]
+    },
+    "music.super_mario_bros.saxophone.72": {
+        "sounds": [
+            {
+                "name": "luigis_mansion:music/super_mario_bros/saxophone/72",
+                "stream": false,
+                "volume": 0.00025
+            }
+        ]
+    },
+    "music.super_mario_bros.xylophone.1": {
+        "sounds": [
+            {
+                "name": "luigis_mansion:music/super_mario_bros/xylophone/1",
+                "stream": false,
+                "volume": 0.00025
+            }
+        ]
+    },
+    "music.super_mario_bros.xylophone.2": {
+        "sounds": [
+            {
+                "name": "luigis_mansion:music/super_mario_bros/xylophone/2",
+                "stream": false,
+                "volume": 0.00025
+            }
+        ]
+    },
+    "music.super_mario_bros.xylophone.3": {
+        "sounds": [
+            {
+                "name": "luigis_mansion:music/super_mario_bros/xylophone/3",
+                "stream": false,
+                "volume": 0.00025
+            }
+        ]
+    },
+    "music.super_mario_bros.xylophone.4": {
+        "sounds": [
+            {
+                "name": "luigis_mansion:music/super_mario_bros/xylophone/4",
+                "stream": false,
+                "volume": 0.00025
+            }
+        ]
+    },
+    "music.super_mario_bros.xylophone.5": {
+        "sounds": [
+            {
+                "name": "luigis_mansion:music/super_mario_bros/xylophone/5",
+                "stream": false,
+                "volume": 0.00025
+            }
+        ]
+    },
+    "music.super_mario_bros.xylophone.6": {
+        "sounds": [
+            {
+                "name": "luigis_mansion:music/super_mario_bros/xylophone/6",
+                "stream": false,
+                "volume": 0.00025
+            }
+        ]
+    },
+    "music.super_mario_bros.xylophone.7": {
+        "sounds": [
+            {
+                "name": "luigis_mansion:music/super_mario_bros/xylophone/7",
+                "stream": false,
+                "volume": 0.00025
+            }
+        ]
+    },
+    "music.super_mario_bros.xylophone.8": {
+        "sounds": [
+            {
+                "name": "luigis_mansion:music/super_mario_bros/xylophone/8",
+                "stream": false,
+                "volume": 0.00025
+            }
+        ]
+    },
+    "music.super_mario_bros.xylophone.9": {
+        "sounds": [
+            {
+                "name": "luigis_mansion:music/super_mario_bros/xylophone/9",
+                "stream": false,
+                "volume": 0.00025
+            }
+        ]
+    },
+    "music.super_mario_bros.xylophone.10": {
+        "sounds": [
+            {
+                "name": "luigis_mansion:music/super_mario_bros/xylophone/10",
+                "stream": false,
+                "volume": 0.00025
+            }
+        ]
+    },
+    "music.super_mario_bros.xylophone.11": {
+        "sounds": [
+            {
+                "name": "luigis_mansion:music/super_mario_bros/xylophone/11",
+                "stream": false,
+                "volume": 0.00025
+            }
+        ]
+    },
+    "music.super_mario_bros.xylophone.12": {
+        "sounds": [
+            {
+                "name": "luigis_mansion:music/super_mario_bros/xylophone/12",
+                "stream": false,
+                "volume": 0.00025
+            }
+        ]
+    },
+    "music.super_mario_bros.xylophone.13": {
+        "sounds": [
+            {
+                "name": "luigis_mansion:music/super_mario_bros/xylophone/13",
+                "stream": false,
+                "volume": 0.00025
+            }
+        ]
+    },
+    "music.super_mario_bros.xylophone.14": {
+        "sounds": [
+            {
+                "name": "luigis_mansion:music/super_mario_bros/xylophone/14",
+                "stream": false,
+                "volume": 0.00025
+            }
+        ]
+    },
+    "music.super_mario_bros.xylophone.15": {
+        "sounds": [
+            {
+                "name": "luigis_mansion:music/super_mario_bros/xylophone/15",
+                "stream": false,
+                "volume": 0.00025
+            }
+        ]
+    },
+    "music.super_mario_bros.xylophone.16": {
+        "sounds": [
+            {
+                "name": "luigis_mansion:music/super_mario_bros/xylophone/16",
+                "stream": false,
+                "volume": 0.00025
+            }
+        ]
+    },
+    "music.super_mario_bros.xylophone.17": {
+        "sounds": [
+            {
+                "name": "luigis_mansion:music/super_mario_bros/xylophone/17",
+                "stream": false,
+                "volume": 0.00025
+            }
+        ]
+    },
+    "music.super_mario_bros.xylophone.18": {
+        "sounds": [
+            {
+                "name": "luigis_mansion:music/super_mario_bros/xylophone/18",
+                "stream": false,
+                "volume": 0.00025
+            }
+        ]
+    },
+    "music.super_mario_bros.xylophone.19": {
+        "sounds": [
+            {
+                "name": "luigis_mansion:music/super_mario_bros/xylophone/19",
+                "stream": false,
+                "volume": 0.00025
+            }
+        ]
+    },
+    "music.super_mario_bros.xylophone.20": {
+        "sounds": [
+            {
+                "name": "luigis_mansion:music/super_mario_bros/xylophone/20",
+                "stream": false,
+                "volume": 0.00025
+            }
+        ]
+    },
+    "music.super_mario_bros.xylophone.21": {
+        "sounds": [
+            {
+                "name": "luigis_mansion:music/super_mario_bros/xylophone/21",
+                "stream": false,
+                "volume": 0.00025
+            }
+        ]
+    },
+    "music.super_mario_bros.xylophone.22": {
+        "sounds": [
+            {
+                "name": "luigis_mansion:music/super_mario_bros/xylophone/22",
+                "stream": false,
+                "volume": 0.00025
+            }
+        ]
+    },
+    "music.super_mario_bros.xylophone.23": {
+        "sounds": [
+            {
+                "name": "luigis_mansion:music/super_mario_bros/xylophone/23",
+                "stream": false,
+                "volume": 0.00025
+            }
+        ]
+    },
+    "music.super_mario_bros.xylophone.24": {
+        "sounds": [
+            {
+                "name": "luigis_mansion:music/super_mario_bros/xylophone/24",
+                "stream": false,
+                "volume": 0.00025
+            }
+        ]
+    },
+    "music.super_mario_bros.xylophone.25": {
+        "sounds": [
+            {
+                "name": "luigis_mansion:music/super_mario_bros/xylophone/25",
+                "stream": false,
+                "volume": 0.00025
+            }
+        ]
+    },
+    "music.super_mario_bros.xylophone.26": {
+        "sounds": [
+            {
+                "name": "luigis_mansion:music/super_mario_bros/xylophone/26",
+                "stream": false,
+                "volume": 0.00025
+            }
+        ]
+    },
+    "music.super_mario_bros.xylophone.27": {
+        "sounds": [
+            {
+                "name": "luigis_mansion:music/super_mario_bros/xylophone/27",
+                "stream": false,
+                "volume": 0.00025
+            }
+        ]
+    },
+    "music.super_mario_bros.xylophone.28": {
+        "sounds": [
+            {
+                "name": "luigis_mansion:music/super_mario_bros/xylophone/28",
+                "stream": false,
+                "volume": 0.00025
+            }
+        ]
+    },
+    "music.super_mario_bros.xylophone.29": {
+        "sounds": [
+            {
+                "name": "luigis_mansion:music/super_mario_bros/xylophone/29",
+                "stream": false,
+                "volume": 0.00025
+            }
+        ]
+    },
+    "music.super_mario_bros.xylophone.30": {
+        "sounds": [
+            {
+                "name": "luigis_mansion:music/super_mario_bros/xylophone/30",
+                "stream": false,
+                "volume": 0.00025
+            }
+        ]
+    },
+    "music.super_mario_bros.xylophone.31": {
+        "sounds": [
+            {
+                "name": "luigis_mansion:music/super_mario_bros/xylophone/31",
+                "stream": false,
+                "volume": 0.00025
+            }
+        ]
+    },
+    "music.super_mario_bros.xylophone.32": {
+        "sounds": [
+            {
+                "name": "luigis_mansion:music/super_mario_bros/xylophone/32",
+                "stream": false,
+                "volume": 0.00025
+            }
+        ]
+    },
+    "music.super_mario_bros.xylophone.33": {
+        "sounds": [
+            {
+                "name": "luigis_mansion:music/super_mario_bros/xylophone/33",
+                "stream": false,
+                "volume": 0.00025
+            }
+        ]
+    },
+    "music.super_mario_bros.xylophone.34": {
+        "sounds": [
+            {
+                "name": "luigis_mansion:music/super_mario_bros/xylophone/34",
+                "stream": false,
+                "volume": 0.00025
+            }
+        ]
+    },
+    "music.super_mario_bros.xylophone.35": {
+        "sounds": [
+            {
+                "name": "luigis_mansion:music/super_mario_bros/xylophone/35",
+                "stream": false,
+                "volume": 0.00025
+            }
+        ]
+    },
+    "music.super_mario_bros.xylophone.36": {
+        "sounds": [
+            {
+                "name": "luigis_mansion:music/super_mario_bros/xylophone/36",
+                "stream": false,
+                "volume": 0.00025
+            }
+        ]
+    },
+    "music.super_mario_bros.xylophone.37": {
+        "sounds": [
+            {
+                "name": "luigis_mansion:music/super_mario_bros/xylophone/37",
+                "stream": false,
+                "volume": 0.00025
+            }
+        ]
+    },
+    "music.super_mario_bros.xylophone.38": {
+        "sounds": [
+            {
+                "name": "luigis_mansion:music/super_mario_bros/xylophone/38",
+                "stream": false,
+                "volume": 0.00025
+            }
+        ]
+    },
+    "music.super_mario_bros.xylophone.39": {
+        "sounds": [
+            {
+                "name": "luigis_mansion:music/super_mario_bros/xylophone/39",
+                "stream": false,
+                "volume": 0.00025
+            }
+        ]
+    },
+    "music.super_mario_bros.xylophone.40": {
+        "sounds": [
+            {
+                "name": "luigis_mansion:music/super_mario_bros/xylophone/40",
+                "stream": false,
+                "volume": 0.00025
+            }
+        ]
+    },
+    "music.super_mario_bros.xylophone.41": {
+        "sounds": [
+            {
+                "name": "luigis_mansion:music/super_mario_bros/xylophone/41",
+                "stream": false,
+                "volume": 0.00025
+            }
+        ]
+    },
+    "music.super_mario_bros.xylophone.42": {
+        "sounds": [
+            {
+                "name": "luigis_mansion:music/super_mario_bros/xylophone/42",
+                "stream": false,
+                "volume": 0.00025
+            }
+        ]
+    },
+    "music.super_mario_bros.xylophone.43": {
+        "sounds": [
+            {
+                "name": "luigis_mansion:music/super_mario_bros/xylophone/43",
+                "stream": false,
+                "volume": 0.00025
+            }
+        ]
+    },
+    "music.super_mario_bros.xylophone.44": {
+        "sounds": [
+            {
+                "name": "luigis_mansion:music/super_mario_bros/xylophone/44",
+                "stream": false,
+                "volume": 0.00025
+            }
+        ]
+    },
+    "music.super_mario_bros.xylophone.45": {
+        "sounds": [
+            {
+                "name": "luigis_mansion:music/super_mario_bros/xylophone/45",
+                "stream": false,
+                "volume": 0.00025
+            }
+        ]
+    },
+    "music.super_mario_bros.xylophone.46": {
+        "sounds": [
+            {
+                "name": "luigis_mansion:music/super_mario_bros/xylophone/46",
+                "stream": false,
+                "volume": 0.00025
+            }
+        ]
+    },
+    "music.super_mario_bros.xylophone.47": {
+        "sounds": [
+            {
+                "name": "luigis_mansion:music/super_mario_bros/xylophone/47",
+                "stream": false,
+                "volume": 0.00025
+            }
+        ]
+    },
+    "music.super_mario_bros.xylophone.48": {
+        "sounds": [
+            {
+                "name": "luigis_mansion:music/super_mario_bros/xylophone/48",
+                "stream": false,
+                "volume": 0.00025
+            }
+        ]
+    },
+    "music.super_mario_bros.xylophone.49": {
+        "sounds": [
+            {
+                "name": "luigis_mansion:music/super_mario_bros/xylophone/49",
+                "stream": false,
+                "volume": 0.00025
+            }
+        ]
+    },
+    "music.super_mario_bros.xylophone.50": {
+        "sounds": [
+            {
+                "name": "luigis_mansion:music/super_mario_bros/xylophone/50",
+                "stream": false,
+                "volume": 0.00025
+            }
+        ]
+    },
+    "music.super_mario_bros.xylophone.51": {
+        "sounds": [
+            {
+                "name": "luigis_mansion:music/super_mario_bros/xylophone/51",
+                "stream": false,
+                "volume": 0.00025
+            }
+        ]
+    },
+    "music.super_mario_bros.xylophone.52": {
+        "sounds": [
+            {
+                "name": "luigis_mansion:music/super_mario_bros/xylophone/52",
+                "stream": false,
+                "volume": 0.00025
+            }
+        ]
+    },
+    "music.super_mario_bros.xylophone.53": {
+        "sounds": [
+            {
+                "name": "luigis_mansion:music/super_mario_bros/xylophone/53",
+                "stream": false,
+                "volume": 0.00025
+            }
+        ]
+    },
+    "music.super_mario_bros.xylophone.54": {
+        "sounds": [
+            {
+                "name": "luigis_mansion:music/super_mario_bros/xylophone/54",
+                "stream": false,
+                "volume": 0.00025
+            }
+        ]
+    },
+    "music.super_mario_bros.xylophone.55": {
+        "sounds": [
+            {
+                "name": "luigis_mansion:music/super_mario_bros/xylophone/55",
+                "stream": false,
+                "volume": 0.00025
+            }
+        ]
+    },
+    "music.super_mario_bros.xylophone.56": {
+        "sounds": [
+            {
+                "name": "luigis_mansion:music/super_mario_bros/xylophone/56",
+                "stream": false,
+                "volume": 0.00025
+            }
+        ]
+    },
+    "music.super_mario_bros.xylophone.57": {
+        "sounds": [
+            {
+                "name": "luigis_mansion:music/super_mario_bros/xylophone/57",
+                "stream": false,
+                "volume": 0.00025
+            }
+        ]
+    },
+    "music.super_mario_bros.xylophone.58": {
+        "sounds": [
+            {
+                "name": "luigis_mansion:music/super_mario_bros/xylophone/58",
+                "stream": false,
+                "volume": 0.00025
+            }
+        ]
+    },
+    "music.super_mario_bros.xylophone.59": {
+        "sounds": [
+            {
+                "name": "luigis_mansion:music/super_mario_bros/xylophone/59",
+                "stream": false,
+                "volume": 0.00025
+            }
+        ]
+    },
+    "music.super_mario_bros.xylophone.60": {
+        "sounds": [
+            {
+                "name": "luigis_mansion:music/super_mario_bros/xylophone/60",
+                "stream": false,
+                "volume": 0.00025
+            }
+        ]
+    },
+    "music.super_mario_bros.xylophone.61": {
+        "sounds": [
+            {
+                "name": "luigis_mansion:music/super_mario_bros/xylophone/61",
+                "stream": false,
+                "volume": 0.00025
+            }
+        ]
+    },
+    "music.super_mario_bros.xylophone.62": {
+        "sounds": [
+            {
+                "name": "luigis_mansion:music/super_mario_bros/xylophone/62",
+                "stream": false,
+                "volume": 0.00025
+            }
+        ]
+    },
+    "music.super_mario_bros.xylophone.63": {
+        "sounds": [
+            {
+                "name": "luigis_mansion:music/super_mario_bros/xylophone/63",
+                "stream": false,
+                "volume": 0.00025
+            }
+        ]
+    },
+    "music.super_mario_bros.xylophone.64": {
+        "sounds": [
+            {
+                "name": "luigis_mansion:music/super_mario_bros/xylophone/64",
+                "stream": false,
+                "volume": 0.00025
+            }
+        ]
+    },
+    "music.super_mario_bros.xylophone.65": {
+        "sounds": [
+            {
+                "name": "luigis_mansion:music/super_mario_bros/xylophone/65",
+                "stream": false,
+                "volume": 0.00025
+            }
+        ]
+    },
+    "music.super_mario_bros.xylophone.66": {
+        "sounds": [
+            {
+                "name": "luigis_mansion:music/super_mario_bros/xylophone/66",
+                "stream": false,
+                "volume": 0.00025
+            }
+        ]
+    },
+    "music.super_mario_bros.xylophone.67": {
+        "sounds": [
+            {
+                "name": "luigis_mansion:music/super_mario_bros/xylophone/67",
+                "stream": false,
+                "volume": 0.00025
+            }
+        ]
+    },
+    "music.super_mario_bros.xylophone.68": {
+        "sounds": [
+            {
+                "name": "luigis_mansion:music/super_mario_bros/xylophone/68",
+                "stream": false,
+                "volume": 0.00025
+            }
+        ]
+    },
+    "music.super_mario_bros.xylophone.69": {
+        "sounds": [
+            {
+                "name": "luigis_mansion:music/super_mario_bros/xylophone/69",
+                "stream": false,
+                "volume": 0.00025
+            }
+        ]
+    },
+    "music.super_mario_bros.xylophone.70": {
+        "sounds": [
+            {
+                "name": "luigis_mansion:music/super_mario_bros/xylophone/70",
+                "stream": false,
+                "volume": 0.00025
+            }
+        ]
+    },
+    "music.super_mario_bros.xylophone.71": {
+        "sounds": [
+            {
+                "name": "luigis_mansion:music/super_mario_bros/xylophone/71",
+                "stream": false,
+                "volume": 0.00025
+            }
+        ]
+    },
+    "music.super_mario_bros.xylophone.72": {
+        "sounds": [
+            {
+                "name": "luigis_mansion:music/super_mario_bros/xylophone/72",
+                "stream": false,
                 "volume": 0.00025
             }
         ]

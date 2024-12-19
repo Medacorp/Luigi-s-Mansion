@@ -1,7 +1,10 @@
 v3.3:
+* Added Jukebox
+* Added First Entrance, First Key, and Meet E. Gadd cutscene camera movement
 * Added a method to automatically play a sound for Luigi based on some conditions, removing a bunch of 3DS Remake overwriting files
 * Changed Luigi and the camera to be entirely separate; everything originates from Luigi, camera is just synced up
 * Changed Game Boy Horror's Map option to get disabled if in a room where map is not allowed to be opened, rather than trying and failing to open
+* Changed most music track IDs
 * Fixed Lab map area chunks accidentally removed
 * Fixed softlock when upgrading a world where E. Gadd wasn't found yet
 * Removed entered_mansion command storage flag; mansion entrance music now plays for all players' first entry, not just the first player

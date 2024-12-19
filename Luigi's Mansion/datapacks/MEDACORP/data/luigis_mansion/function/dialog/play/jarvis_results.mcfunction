@@ -24,7 +24,7 @@ execute if score #dialog Dialog matches 13 if entity @a[tag=same_room,tag=next_d
 
 execute if score #dialog Dialog matches 14 run tag @e[nbt={data:{entity:{namespace:"luigis_mansion",id:"jarvis"}}},tag=same_room,limit=1] add pop_in
 execute if score #dialog Dialog matches 54 run tag @e[nbt={data:{entity:{namespace:"luigis_mansion",id:"jarvis"}}},tag=same_room,limit=1] add pop_out
-execute if score #dialog Dialog matches 55..57 as @a[tag=same_room,tag=!spectator] run function luigis_mansion:other/music/set/talking_ghost
+execute if score #dialog Dialog matches 55..57 as @a[tag=same_room,tag=!spectator] run function luigis_mansion:other/music/set/talking_ghosts
 execute if score #dialog Dialog matches 55 store result score #temp Time run data get storage luigis_mansion:data dialogs[0].result
 execute if score #dialog Dialog matches 55 if score #temp Time matches 0 if score #players Totals matches 1 run tellraw @a[tag=same_room] {"type":"translatable","translate":"chat.type.text","with":[{"type":"translatable","translate":"luigis_mansion:entity.jarvis","color":"green"},{"type":"translatable","translate":"luigis_mansion:dialog.jarvis.game.3.0"}]}
 execute if score #dialog Dialog matches 55 if score #temp Time matches 0 if score #players Totals matches 2.. run tellraw @a[tag=same_room] {"type":"translatable","translate":"chat.type.text","with":[{"type":"translatable","translate":"luigis_mansion:entity.jarvis","color":"green"},{"type":"translatable","translate":"luigis_mansion:dialog.jarvis.game.3.0.more"}]}
@@ -56,7 +56,7 @@ execute if score #dialog Dialog matches 58 run tag @e[nbt={data:{entity:{namespa
 execute if score #dialog Dialog matches 58 run scoreboard players set #dialog Dialog -1
 
 #Branch: Won
-execute if score #dialog Dialog matches 59..61 as @a[tag=same_room,tag=!spectator] run function luigis_mansion:other/music/set/talking_ghost
+execute if score #dialog Dialog matches 59..61 as @a[tag=same_room,tag=!spectator] run function luigis_mansion:other/music/set/talking_ghosts
 execute if score #dialog Dialog matches 59..61 as @e[tag=luigi,tag=same_room] run function luigis_mansion:entities/luigi/animation/set/idle_no_poltergust
 execute if score #dialog Dialog matches 59 run scoreboard players reset #temp Time
 

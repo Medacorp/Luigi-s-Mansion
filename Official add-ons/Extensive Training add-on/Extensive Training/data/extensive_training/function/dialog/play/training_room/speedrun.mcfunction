@@ -75,7 +75,7 @@ execute if score #dialog Dialog matches 7..49 run scoreboard players reset @a[ta
 execute if score #dialog Dialog matches 7..49 as @a[tag=same_room,tag=!spectator,tag=game_boy_horror_menu] run function luigis_mansion:selection_menu/game_boy_horror/exit
 execute if score #dialog Dialog matches 7..49 as @e[tag=luigi,tag=same_room] run function luigis_mansion:entities/luigi/animation/set/idle
 execute if score #dialog Dialog matches 7 run function luigis_mansion:room/training_room/turn_lights/on
-execute if score #dialog Dialog matches 7..49 as @a[tag=same_room] run function luigis_mansion:other/music/set/training_stop
+execute if score #dialog Dialog matches 7..49 as @a[tag=same_room] run function luigis_mansion:other/music/set/training_end
 execute if score #dialog Dialog matches 7 if score #players Totals matches 1 run tellraw @a[tag=same_room] {"type":"translatable","translate":"chat.type.text","with":[{"type":"translatable","translate":"luigis_mansion:entity.e_gadd","color":"green"},{"type":"translatable","translate":"extensive_training:dialog.speedrun.4"}]}
 execute if score #dialog Dialog matches 7 if score #players Totals matches 2.. run tellraw @a[tag=same_room] {"type":"translatable","translate":"chat.type.text","with":[{"type":"translatable","translate":"luigis_mansion:entity.e_gadd","color":"green"},{"type":"translatable","translate":"extensive_training:dialog.speedrun.4.more"}]}
 execute if score #dialog Dialog matches 7 as @a[tag=same_room] at @s run playsound luigis_mansion:entity.e_gadd.talk.luigi_odoh neutral @s ~ ~ ~ 1

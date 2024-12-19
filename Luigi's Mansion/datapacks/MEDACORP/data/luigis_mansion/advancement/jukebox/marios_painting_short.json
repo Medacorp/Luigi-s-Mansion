@@ -1,0 +1,25 @@
+{
+    "display": {
+        "icon": {
+            "count": 1,
+            "id": "minecraft:music_disc_13"
+        },
+        "title": {
+            "type": "translatable", "translate": "luigis_mansion:item.menu.game_boy_horror.jukebox.track.marios_painting_short"
+        },
+        "description": {
+            "type": "translatable", "translate": "luigis_mansion:advancements.jukebox.get"
+        },
+        "announce_to_chat": false,
+        "hidden": true
+    },
+    "parent": "luigis_mansion:jukebox/marios_painting",
+    "criteria": {
+        "unlock": {
+            "trigger": "minecraft:impossible"
+        }
+    },
+    "rewards": {
+        "function": "luigis_mansion:advancements/jukebox/marios_painting_short"
+    }
+}

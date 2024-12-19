@@ -24,9 +24,8 @@ execute if score #dialog Dialog matches 1 run data modify entity @e[nbt={data:{e
 execute if score #dialog Dialog matches 1 at @e[tag=same_room,nbt={data:{entity:{namespace:"luigis_mansion",id:"henry"}}},limit=1] run playsound luigis_mansion:entity.henry.spawn hostile @a[tag=same_room] ~ ~ ~ 1
 execute if score #dialog Dialog matches 1 at @e[tag=same_room,nbt={data:{entity:{namespace:"luigis_mansion",id:"orville"}}},limit=1] run playsound luigis_mansion:entity.orville.spawn hostile @a[tag=same_room] ~ ~ ~ 1
 execute if score #dialog Dialog matches 1..67 as @e[tag=luigi,tag=same_room] run function luigis_mansion:entities/luigi/animation/set/idle_no_poltergust
-execute if score #dialog Dialog matches 31 run playsound luigis_mansion:music.solve_puzzle music @a[tag=same_room] ~ ~ ~ 10000
-execute if score #dialog Dialog matches 31 run scoreboard players set @a[tag=same_room,scores={Music=..30}] Music 30
-execute if score #dialog Dialog matches 61.. as @a[tag=same_room] run function luigis_mansion:other/music/set/talking_ghost
+execute if score #dialog Dialog matches 31 as @a[tag=same_room] run function luigis_mansion:other/music/set/secret_revealed
+execute if score #dialog Dialog matches 61.. as @a[tag=same_room] run function luigis_mansion:other/music/set/talking_ghosts
 execute if score #dialog Dialog matches 61..67 run data remove entity @e[tag=same_room,nbt={data:{entity:{namespace:"luigis_mansion",id:"henry"}}},limit=1] data.animation
 execute if score #dialog Dialog matches 61..67 run data remove entity @e[tag=same_room,nbt={data:{entity:{namespace:"luigis_mansion",id:"orville"}}},limit=1] data.animation
 execute if score #dialog Dialog matches 61 if score #players Totals matches 1 run tellraw @a[tag=same_room] {"type":"translatable","translate":"chat.type.text","with":[{"type":"translatable","translate":"luigis_mansion:entity.orville","color":"green"},{"type":"translatable","translate":"3ds_remake:dialog.twins.1"}]}

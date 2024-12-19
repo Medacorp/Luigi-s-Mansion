@@ -17,7 +17,7 @@ tag @e[tag=same_room,nbt={data:{entity:{namespace:"luigis_mansion",id:"king_boo"
 execute if score #dialog Dialog matches 1 at @e[tag=same_room,nbt={data:{entity:{namespace:"luigis_mansion",id:"king_boo"}}},limit=1] as @a[tag=same_room,distance=..5.9,limit=1] run function luigis_mansion:entities/luigi/move/teleport {teleport:"645 93 -18 90 0"}
 execute if score #dialog Dialog matches 1..430 as @e[tag=luigi,tag=same_room] run function luigis_mansion:entities/luigi/animation/set/idle_no_poltergust
 execute if score #dialog Dialog matches 1 run scoreboard players set #can_warp Selected 0
-execute if score #dialog Dialog matches 1..514 as @a[tag=same_room] run function luigis_mansion:other/music/set/talking_king_boo
+execute if score #dialog Dialog matches 1..514 as @a[tag=same_room] run function luigis_mansion:other/music/set/secret_altar
 execute if score #dialog Dialog matches 61 run tellraw @a[tag=same_room] {"type":"translatable","translate":"chat.type.text","with":[{"type":"translatable","translate":"luigis_mansion:entity.king_boo","color":"green"},{"type":"translatable","translate":"luigis_mansion:dialog.king_boo.1"}]}
 
 execute if score #dialog Dialog matches 63 if entity @a[tag=same_room,tag=next_dialog_line,limit=1] run tellraw @a[tag=same_room] {"type":"translatable","translate":"chat.type.text","with":[{"type":"translatable","translate":"luigis_mansion:entity.king_boo","color":"green"},{"type":"translatable","translate":"luigis_mansion:dialog.king_boo.2"}]}
@@ -57,9 +57,7 @@ execute if score #dialog Dialog matches 114 run teleport @e[tag=same_room,nbt={d
 execute if score #dialog Dialog matches 134 run data modify entity @e[tag=same_room,nbt={data:{entity:{namespace:"luigis_mansion",id:"king_boo"}}},limit=1] data.animation set value {namespace:"luigis_mansion",id:"magic"}
 execute if score #dialog Dialog matches 134 run function #luigis_mansion:room/normal/secret_altar/turn_lights/off
 execute if score #dialog Dialog matches 134 at @e[tag=same_room,nbt={data:{entity:{namespace:"luigis_mansion",id:"king_boo"}}},limit=1] run playsound luigis_mansion:entity.king_boo.magic hostile @a[tag=same_room] ~ ~ ~ 1
-execute if score #dialog Dialog matches 134 run stopsound @a[tag=same_room] music
-execute if score #dialog Dialog matches 134 run playsound luigis_mansion:music.sucked_into_painting music @a[tag=same_room] ~ ~ ~ 10000
-execute if score #dialog Dialog matches 134 run scoreboard players set @a[tag=same_room] Music 400
+execute if score #dialog Dialog matches 134 as @a[tag=same_room] run function luigis_mansion:other/music/set/secret_altar_magic
 execute if score #dialog Dialog matches 134..153 run effect give @a[tag=same_room] minecraft:nausea 6 0 true
 execute if score #dialog Dialog matches 154..173 run effect give @a[tag=same_room] minecraft:nausea 5 0 true
 execute if score #dialog Dialog matches 174 as @e[tag=same_room,nbt={data:{entity:{namespace:"luigis_mansion",id:"mario"}}},limit=1] at @s positioned ^ ^0.5 ^-1 run function luigis_mansion:spawn_entities/bowser/painting

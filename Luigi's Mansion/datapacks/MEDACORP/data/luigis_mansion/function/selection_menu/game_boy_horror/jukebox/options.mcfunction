@@ -1,0 +1,11 @@
+execute if entity @s[scores={Jukebox=6..8}] run function luigis_mansion:selection_menu/game_boy_horror/jukebox/toggle_humming
+execute if entity @s[scores={Jukebox=41}] run function luigis_mansion:selection_menu/game_boy_horror/jukebox/toggle_humming
+execute if entity @s[scores={Jukebox=9}] run function luigis_mansion:selection_menu/game_boy_horror/jukebox/toggle_whistling
+execute if entity @s[scores={Jukebox=42}] run function luigis_mansion:selection_menu/game_boy_horror/jukebox/toggle_saxophone
+execute if entity @s[scores={Jukebox=42}] run function luigis_mansion:selection_menu/game_boy_horror/jukebox/toggle_harp
+execute if entity @s[scores={Jukebox=42}] run function luigis_mansion:selection_menu/game_boy_horror/jukebox/toggle_cello
+execute if entity @s[scores={Jukebox=42}] run function luigis_mansion:selection_menu/game_boy_horror/jukebox/toggle_drum_1
+execute if entity @s[scores={Jukebox=42}] run function luigis_mansion:selection_menu/game_boy_horror/jukebox/toggle_drum_2
+execute if entity @s[scores={Jukebox=42}] run function luigis_mansion:selection_menu/game_boy_horror/jukebox/toggle_drum_3
+execute if entity @s[scores={Jukebox=42}] run function luigis_mansion:selection_menu/game_boy_horror/jukebox/toggle_xylophone
+execute if entity @s[scores={Jukebox=42}] run function luigis_mansion:selection_menu/game_boy_horror/jukebox/toggle_piano

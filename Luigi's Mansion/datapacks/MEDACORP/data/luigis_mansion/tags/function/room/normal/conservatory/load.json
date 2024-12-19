@@ -2,12 +2,20 @@
 	"values": [
 	    "luigis_mansion:room/normal/conservatory/load/set_loaded",
         "luigis_mansion:room/normal/conservatory/load/lights",
+        "luigis_mansion:room/normal/conservatory/load/cello",
+        "luigis_mansion:room/normal/conservatory/load/drum_1",
+        "luigis_mansion:room/normal/conservatory/load/drum_2",
+        "luigis_mansion:room/normal/conservatory/load/drum_3",
         "luigis_mansion:room/normal/conservatory/load/hallway_5_door",
+        "luigis_mansion:room/normal/conservatory/load/harp",
         "luigis_mansion:room/normal/conservatory/load/painting_1",
         "luigis_mansion:room/normal/conservatory/load/painting_2",
         "luigis_mansion:room/normal/conservatory/load/painting_3",
         "luigis_mansion:room/normal/conservatory/load/painting_4",
+        "luigis_mansion:room/normal/conservatory/load/piano",
         "luigis_mansion:room/normal/conservatory/load/room_clear_chest",
-        "luigis_mansion:room/normal/conservatory/load/vacuumable"
+        "luigis_mansion:room/normal/conservatory/load/saxophone",
+        "luigis_mansion:room/normal/conservatory/load/vacuumable",
+        "luigis_mansion:room/normal/conservatory/load/xylophone"
 	]
 }

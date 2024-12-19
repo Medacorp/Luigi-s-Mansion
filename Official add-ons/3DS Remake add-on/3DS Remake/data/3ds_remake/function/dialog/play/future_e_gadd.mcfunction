@@ -34,8 +34,7 @@ execute if score #dialog Dialog matches 33..324 as @e[tag=luigi,tag=same_room] r
 execute if score #dialog Dialog matches 63 run tellraw @a[tag=same_room] {"type":"translatable","translate":"chat.type.text","with":[{"type":"translatable","translate":"luigis_mansion:entity.e_gadd","color":"green"},{"type":"translatable","translate":"3ds_remake:dialog.future_e_gadd.2"}]}
 execute if score #dialog Dialog matches 63 at @e[tag=e_gadd,tag=same_room,limit=1] run playsound luigis_mansion:entity.e_gadd.talk.soy_soh_ooh_hey_hey_suu_dehkooroo_hah neutral @a[tag=same_room] ~ ~ ~ 1
 
-execute if score #dialog Dialog matches 145 as @a[tag=same_room] run function luigis_mansion:other/music/set/silence
-execute if score #dialog Dialog matches 145..2434 as @a[tag=same_room] run function 3ds_remake:other/music/set/future_e_gadd
+execute if score #dialog Dialog matches 145..2434 as @a[tag=same_room] run function 3ds_remake:other/music/set/force/future_e_gadd
 execute if score #dialog Dialog matches 145..2434 as @a[tag=same_room,tag=!spectator] run function luigis_mansion:items/game_boy_horror/turn_screen_to_forced_value {value:"call",flags:[],floats:[0f,0f,0f,0f],tracker:[]}
 execute if score #dialog Dialog matches 255 run tellraw @a[tag=same_room] {"type":"translatable","translate":"chat.type.text","with":[{"type":"translatable","translate":"3ds_remake:entity.future_e_gadd","color":"green"},{"type":"translatable","translate":"3ds_remake:dialog.future_e_gadd.3"}]}
 execute if score #dialog Dialog matches 255 as @a[tag=same_room] at @s run playsound luigis_mansion:entity.e_gadd.talk.shortlaugh neutral @s ~ ~ ~ 1

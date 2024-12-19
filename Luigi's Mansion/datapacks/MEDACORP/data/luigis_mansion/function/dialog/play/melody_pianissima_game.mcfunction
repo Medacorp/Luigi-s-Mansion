@@ -42,10 +42,8 @@ execute if score #dialog Dialog matches 84 if entity @a[tag=same_room,tag=next_d
 execute if score #dialog Dialog matches 85 as @a[tag=same_room] run function luigis_mansion:entities/melody_pianissima/stop_conservatory_music
 execute if score #dialog Dialog matches 105..347 as @e[tag=luigi,tag=same_room] run function luigis_mansion:entities/luigi/animation/set/think
 execute if score #dialog Dialog matches 105 run data remove entity @e[nbt={data:{entity:{namespace:"luigis_mansion",id:"melody_pianissima"}}},tag=same_room,limit=1] data.animation
-execute if score #dialog Dialog matches 105 as @a[tag=same_room] run function luigis_mansion:other/music/set/talking_ghost
-execute if score #dialog Dialog matches 105 run stopsound @a[tag=same_room] music
-execute if score #dialog Dialog matches 105 run playsound luigis_mansion:music.super_mario_bros_3 music @a[tag=same_room] ~ ~ ~ 1000
-execute if score #dialog Dialog matches 105 run scoreboard players set @a[tag=same_room] Music 240
+execute if score #dialog Dialog matches 105 as @a[tag=same_room] run function luigis_mansion:other/music/set/classic_theme_1
+execute if score #dialog Dialog matches 345 as @a[tag=same_room] run function luigis_mansion:other/music/set/talking_ghosts
 execute if score #dialog Dialog matches 345 run data modify entity @e[nbt={data:{entity:{namespace:"luigis_mansion",id:"melody_pianissima"}}},tag=same_room,limit=1] data.animation set value {namespace:"luigis_mansion",id:"nod"}
 execute if score #dialog Dialog matches 345 if score #players Totals matches 1 run tellraw @a[tag=same_room] {"type":"translatable","translate":"chat.type.text","with":[{"type":"translatable","translate":"luigis_mansion:entity.melody_pianissima","color":"green"},{"type":"translatable","translate":"luigis_mansion:dialog.melody_pianissima.game.1"}]}
 execute if score #dialog Dialog matches 345 if score #players Totals matches 2.. run tellraw @a[tag=same_room] {"type":"translatable","translate":"chat.type.text","with":[{"type":"translatable","translate":"luigis_mansion:entity.melody_pianissima","color":"green"},{"type":"translatable","translate":"luigis_mansion:dialog.melody_pianissima.game.1.more"}]}
@@ -67,7 +65,7 @@ execute if score #dialog Dialog matches 370 if score #players Totals matches 2..
 execute if score #dialog Dialog matches 371 run scoreboard players set #conservatory Wave -1
 execute if score #dialog Dialog matches 371 run tag @e[nbt={data:{entity:{namespace:"luigis_mansion",id:"melody_pianissima"}}},tag=same_room,limit=1] add vanish
 execute if score #dialog Dialog matches 371 as @a[tag=same_room] run function luigis_mansion:other/music/set/silence
-execute if score #dialog Dialog matches 371 as @a[tag=same_room] run function luigis_mansion:other/music/set/room
+execute if score #dialog Dialog matches 371 as @a[tag=same_room] run function luigis_mansion:other/music/set/dark_room
 execute if score #dialog Dialog matches 371 as @e[tag=luigi,tag=same_room] run function luigis_mansion:entities/luigi/animation/set/none
 execute if score #dialog Dialog matches 371 run scoreboard players set #dialog Dialog -1
 

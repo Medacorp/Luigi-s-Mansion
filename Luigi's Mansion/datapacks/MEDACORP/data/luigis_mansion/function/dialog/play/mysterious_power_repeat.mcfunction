@@ -21,9 +21,7 @@ execute if score #dialog Dialog matches 53 if score #players Totals matches 2.. 
 
 execute if score #dialog Dialog matches 74 run tellraw @a[tag=same_room] {"type":"translatable","translate":"chat.type.text","with":[{"type":"translatable","translate":"luigis_mansion:entity.mysterious_power","color":"green"},{"type":"translatable","translate":"luigis_mansion:dialog.mysterious_power.repeat.3"}]}
 execute if score #dialog Dialog matches 74 at @e[tag=same_room,tag=mysterious_power,limit=1] run playsound luigis_mansion:entity.boo.complain hostile @a[tag=same_room] ~ ~ ~ 1
-execute if score #dialog Dialog matches 74 run stopsound @a[tag=same_room] music
-execute if score #dialog Dialog matches 74 run playsound luigis_mansion:music.warped_by_boos music @a[tag=same_room] ~ ~ ~ 1000
-execute if score #dialog Dialog matches 74 run scoreboard players set @a[tag=same_room] Music 80
+execute if score #dialog Dialog matches 74 as @a[tag=same_room] run function luigis_mansion:other/music/set/warped_by_boos
 execute if score #dialog Dialog matches 84..144 as @a[tag=same_room] run function luigis_mansion:entities/luigi/move/execute {execute:"at @s unless block ~-0.5 ~ ~ minecraft:black_concrete",teleport:"~0.5 ~ ~"}
 execute if score #dialog Dialog matches 144 as @e[tag=luigi,tag=same_room] run function luigis_mansion:entities/luigi/animation/set/none
 execute if score #dialog Dialog matches 144 as @a[tag=same_room] run function luigis_mansion:other/music/set/silence

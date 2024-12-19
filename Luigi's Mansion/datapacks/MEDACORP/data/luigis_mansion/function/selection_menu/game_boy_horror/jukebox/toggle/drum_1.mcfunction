@@ -1,0 +1,12 @@
+function luigis_mansion:entities/player/memory/get with entity @s
+
+execute if data storage luigis_mansion:data my_memory.music.jukebox_flags{drum_1:1b} run data modify storage luigis_mansion:data my_memory.music.jukebox_flags.drum_1 set value 0b
+execute unless data storage luigis_mansion:data my_memory.music.jukebox_flags.drum_1 run data modify storage luigis_mansion:data my_memory.music.jukebox_flags.drum_1 set value 1b
+execute if data storage luigis_mansion:data my_memory.music.jukebox_flags{drum_1:0b} run data remove storage luigis_mansion:data my_memory.music.jukebox_flags.drum_1
+
+data modify storage luigis_mansion:data menu_options set from storage luigis_mansion:data my_memory.selection_menu.current_options
+
+execute unless data storage luigis_mansion:data my_memory.music.jukebox_flags.drum_1 run data modify storage luigis_mansion:data menu_options.options[{components:{"minecraft:custom_data":{option:{id:"jukebox/toggle/drum_1",namespace:"luigis_mansion"}}}}] set value {id:"minecraft:diamond_pickaxe",count:1,components:{"minecraft:item_model":"luigis_mansion:menu/game_boy_horror/jukebox/instrument_off","minecraft:unbreakable":{show_in_tooltip:0b},"minecraft:attribute_modifiers":{modifiers:[]},"minecraft:item_name":'{"type":"translatable","translate":"luigis_mansion:item.menu.game_boy_horror.jukebox.track_options.toggle_drum_1"}',"minecraft:custom_data":{option:{id:"jukebox/toggle/drum_1",namespace:"luigis_mansion"}}}}
+execute if data storage luigis_mansion:data my_memory.music.jukebox_flags{drum_1:1b} run data modify storage luigis_mansion:data menu_options.options[{components:{"minecraft:custom_data":{option:{id:"jukebox/toggle/drum_1",namespace:"luigis_mansion"}}}}] set value {id:"minecraft:diamond_pickaxe",count:1,components:{"minecraft:item_model":"luigis_mansion:menu/game_boy_horror/jukebox/instrument_on","minecraft:unbreakable":{show_in_tooltip:0b},"minecraft:attribute_modifiers":{modifiers:[]},"minecraft:item_name":'{"type":"translatable","translate":"luigis_mansion:item.menu.game_boy_horror.jukebox.track_options.toggle_drum_1"}',"minecraft:custom_data":{option:{id:"jukebox/toggle/drum_1",namespace:"luigis_mansion"}}}}
+
+function luigis_mansion:entities/player/selection_menu/load

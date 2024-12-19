@@ -9,9 +9,7 @@ execute if score #the_twins_room Time matches 40 run tag @e[tag=hide_and_seek_bo
 execute if score #the_twins_room Time matches 40 at @e[tag=ghost,tag=portrait_ghost,type=minecraft:marker,scores={Room=49},tag=empty_marker] run function 3ds_remake:room/hidden/the_twins_room/right_box
 execute if score #the_twins_room Time matches 40 run tag @e[tag=ghost,tag=portrait_ghost,type=minecraft:marker,scores={Room=49},tag=empty_marker] add remove_from_existence
 execute if score #the_twins_room Time matches 80 run tellraw @a[scores={Room=49}] {"type":"translatable","translate":"chat.type.text","with":[{"type":"translatable","translate":"luigis_mansion:entity.henry","color":"green"},{"type":"translatable","translate":"luigis_mansion:dialog.twins.game.0"}]}
-execute if score #the_twins_room Time matches 80 run stopsound @a[scores={Room=49}] music
-execute if score #the_twins_room Time matches 80 run playsound luigis_mansion:music.mini_game_failure music @a[scores={Room=49}] ~ ~ ~ 1000
-execute if score #the_twins_room Time matches 80 run scoreboard players set @a[scores={Room=49}] Music 40
-execute if score #the_twins_room Time matches 120 as @a[scores={Room=49}] run function luigis_mansion:other/music/set/room
+execute if score #the_twins_room Time matches 80 as @a[scores={Room=49}] run function luigis_mansion:other/music/set/minigame_failure
+execute if score #the_twins_room Time matches 120 as @a[scores={Room=49}] run function luigis_mansion:other/music/set/dark_room
 execute if score #the_twins_room Time matches 120 as @e[tag=luigi,scores={Room=49},tag=!door_animation] run function luigis_mansion:entities/luigi/animation/set/none
 execute if score #the_twins_room Time matches 120 run function 3ds_remake:room/hidden/the_twins_room/wrong_box

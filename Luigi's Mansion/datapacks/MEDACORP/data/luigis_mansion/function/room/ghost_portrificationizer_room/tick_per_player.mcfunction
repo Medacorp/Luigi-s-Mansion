@@ -1,4 +1,4 @@
-function luigis_mansion:other/music/set/ghost_portrificationizer
+function luigis_mansion:other/music/set/ghost_portrificationizer_room
 title @s[tag=!seen_room_name] title {"type":"translatable","translate":"luigis_mansion:location.ghost_portrificationizer_room"}
 tag @s add seen_room_name
 

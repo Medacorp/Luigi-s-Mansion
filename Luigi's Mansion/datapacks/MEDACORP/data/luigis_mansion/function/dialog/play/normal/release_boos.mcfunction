@@ -7,11 +7,8 @@ tag @e[nbt={data:{entity:{namespace:"luigis_mansion",id:"boo"}}},tag=same_room] 
 tag @e[nbt={data:{entity:{namespace:"luigis_mansion",id:"king_boo"}}},tag=same_room,limit=1] remove no_ai
 tag @e[nbt={data:{entity:{namespace:"luigis_mansion",id:"king_boo"}}},tag=same_room,limit=1] remove freeze_animation
 execute if score #dialog Dialog matches 1..139 as @e[tag=luigi,tag=same_room] run function luigis_mansion:entities/luigi/animation/set/high_health_idle_no_sound
-execute if score #dialog Dialog matches 1 as @a[tag=same_room] run function luigis_mansion:other/music/set/non_overwritten_silence
-execute if score #dialog Dialog matches 1 run stopsound @a[tag=same_room] music
-execute if score #dialog Dialog matches 1 run scoreboard players set @a[tag=same_room] Music 420
 execute if score #dialog Dialog matches 1 run playsound luigis_mansion:furniture.boo_hatch block @a[tag=same_room] 685 11 -46 1
-execute if score #dialog Dialog matches 1 run playsound luigis_mansion:music.boos_escape music @a[tag=same_room] ~ ~ ~ 1000
+execute if score #dialog Dialog matches 1 as @a[tag=same_room] run function luigi_mansion:other/music/set/boos_released
 execute if score #dialog Dialog matches 1 run function luigis_mansion:room/normal/storage_room/open_hatch
 execute if score #dialog Dialog matches 140.. positioned 685 10 -46 rotated -180 -90 run function luigis_mansion:dialog/play/normal/release_boos_spawn
 execute if score #dialog Dialog matches 140 as @e[tag=luigi,tag=same_room] run function luigis_mansion:entities/luigi/animation/set/none

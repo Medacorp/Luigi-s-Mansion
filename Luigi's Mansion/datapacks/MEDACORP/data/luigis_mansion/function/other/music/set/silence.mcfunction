@@ -1,3 +1,2 @@
-function #luigis_mansion:other/music/cannot_overwrite/silence
-execute if entity @s[tag=!cancel] run function luigis_mansion:other/music/set/force/silence
-tag @s remove cancel
+execute if entity @s[scores={MusicType=0..}] run function luigis_mansion:other/music/set/force/silence
+execute if entity @s[scores={MusicType=-1000,MusicGroup=0}] run function luigis_mansion:other/music/set/force/silence

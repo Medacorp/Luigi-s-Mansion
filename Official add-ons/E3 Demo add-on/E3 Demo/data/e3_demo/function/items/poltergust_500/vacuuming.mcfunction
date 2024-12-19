@@ -1,4 +1,4 @@
-function luigis_mansion:entities/player/memory/get with entity @s
+function luigis_mansion:entities/player/memory/get with entity @a[tag=this_player,limit=1]
 summon minecraft:marker ~ ~ ~ {Tags:["interact","vacuum","poltergust"]}
 scoreboard players operation #temp Room = @s Room
 scoreboard players operation #temp ID = @s ID

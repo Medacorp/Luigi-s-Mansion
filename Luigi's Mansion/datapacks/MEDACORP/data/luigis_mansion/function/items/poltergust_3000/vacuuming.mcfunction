@@ -1,4 +1,4 @@
-function luigis_mansion:entities/player/memory/get with entity @s
+function luigis_mansion:entities/player/memory/get with entity @a[tag=this_player,limit=1]
 summon minecraft:marker ~ ~ ~ {Tags:["interact","vacuum","poltergust"]}
 scoreboard players operation #temp Room = @s Room
 scoreboard players operation #temp ID = @s ID
@@ -28,8 +28,8 @@ execute unless score #temp GhostCount matches 1.. if entity @e[tag=ball,tag=!big
 execute unless score #temp GhostCount matches 1.. if entity @e[tag=ball,tag=big,distance=..3,tag=can_spit,sort=nearest,limit=1] run function luigis_mansion:items/poltergust_3000/vacuuming/get_clogged
 execute if score #temp GhostCount matches 1.. run tag @s add vacuuming_ghost
 execute if score #temp GhostCount matches 1.. at @s rotated ~ 0 run function luigis_mansion:items/poltergust_3000/vacuuming/attack_ghost
-execute if entity @s[tag=catch_portrait_ghost] as @a[tag=same_room,scores={Room=1..}] run function luigis_mansion:other/music/set/catching_portrait_ghost
-execute if entity @s[tag=!catch_portrait_ghost,tag=catch_ghost] as @a[tag=same_room,scores={Room=1..}] run function luigis_mansion:other/music/set/catching_ghost
+execute if entity @s[tag=catch_portrait_ghost] as @a[tag=same_room,scores={Room=1..}] run function luigis_mansion:other/music/set/catching_portrait_ghosts
+execute if entity @s[tag=!catch_portrait_ghost,tag=catch_ghost] as @a[tag=same_room,scores={Room=1..}] run function luigis_mansion:other/music/set/catching_ghosts
 execute as @e[distance=..3,tag=captured,tag=!element_death] run function luigis_mansion:items/poltergust_3000/vacuuming/capture
 scoreboard players reset #temp GhostCount
 scoreboard players reset #temp MirrorX

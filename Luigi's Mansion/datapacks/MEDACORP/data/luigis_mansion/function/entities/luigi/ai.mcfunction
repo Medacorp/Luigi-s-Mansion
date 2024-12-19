@@ -38,3 +38,8 @@ execute at @s[scores={LightX=-2147483648..}] unless entity @s[scores={Shrunk=1..
 execute at @s[scores={LightX=-2147483648..,Shrunk=1..}] run function luigis_mansion:other/cast_shadow/1_tall
 
 execute unless entity @s[distance=..0.01] run function luigis_mansion:entities/luigi/move/teleport {teleport:"~ ~ ~ ~ ~"}
+
+execute store result score @s OtherX run data get entity @s Pos[0] 100
+execute store result score @s OtherY run data get entity @s Pos[1] 100
+execute at @s unless block ~ ~ ~ #luigis_mansion:flashlight_path if block ~ ~0.1 ~ #luigis_mansion:flashlight_path run scoreboard players add @s OtherY 10
+execute store result score @s OtherZ run data get entity @s Pos[2] 100

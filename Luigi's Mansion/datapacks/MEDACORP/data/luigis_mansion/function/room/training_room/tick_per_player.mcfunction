@@ -1,4 +1,4 @@
-function luigis_mansion:other/music/set/training_option
+function luigis_mansion:other/music/set/training_start
 title @s[tag=!seen_room_name] title {"type":"translatable","translate":"luigis_mansion:location.training_room"}
 tag @s add seen_room_name
 

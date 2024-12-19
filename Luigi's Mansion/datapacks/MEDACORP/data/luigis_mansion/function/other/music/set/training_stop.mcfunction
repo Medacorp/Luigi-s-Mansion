@@ -1,1 +1,0 @@
-execute if entity @s[scores={MusicType=3,MusicGroup=0}] run function luigis_mansion:other/music/set/force/training_stop

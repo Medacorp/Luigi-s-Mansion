@@ -33,6 +33,7 @@ tag @s remove sneaking
 tag @s[tag=!third_person_movement_walking] remove walking
 tag @s remove third_person_movement_walking
 tag @s remove running
+tag @a[tag=this_player,limit=1] remove door_animation
 tag @a[tag=this_player,limit=1] remove flipped_gravity
 scoreboard players operation @s ForceScreen = @a[tag=this_player,limit=1] ForceScreen
 scoreboard players operation @s ForceRadar = @a[tag=this_player,limit=1] ForceRadar
@@ -45,6 +46,7 @@ execute if entity @a[tag=this_player,tag=sneak_pos,tag=!separated_camera,limit=1
 execute if entity @a[tag=this_player,tag=sneaking,tag=!separated_camera,limit=1] run tag @s add sneaking
 execute if entity @a[tag=this_player,tag=walking,tag=!separated_camera,limit=1] run tag @s add walking
 execute if entity @a[tag=this_player,tag=running,tag=!separated_camera,limit=1] run tag @s add running
+execute if entity @s[tag=door_animation] run tag @a[tag=this_player,limit=1] add door_animation
 execute if entity @s[tag=flipped_gravity] run tag @a[tag=this_player,limit=1] add flipped_gravity
 
 # Inventory
@@ -58,6 +60,7 @@ execute if entity @a[tag=this_player,limit=1,tag=using_selection_menu,scores={Sh
 execute if entity @a[tag=this_player,limit=1,scores={Shrunk=1..}] run data modify entity @s data.inventory set from storage luigis_mansion:data my_memory.inventory
 execute if entity @a[tag=this_player,limit=1,scores={Shrunk=1..}] run data remove entity @s data.inventory[{components:{"minecraft:custom_data":{keep_when_shrunk:1b}}}]
 execute if entity @a[tag=this_player,limit=1,scores={Shrunk=1..}] run data modify entity @s data.inventory append from entity @a[tag=this_player,limit=1] Inventory[{components:{"minecraft:custom_data":{keep_when_shrunk:1b}}}]
+execute if entity @a[tag=this_player,limit=1,tag=using_selection_menu,nbt={Inventory:[{components:{"minecraft:custom_data":{namespace:"luigis_mansion",id:"game_boy_horror"}}}]}] if data entity @s data.inventory[{components:{"minecraft:custom_data":{namespace:"luigis_mansion",id:"game_boy_horror"}}}] run data modify entity @s data.inventory[{components:{"minecraft:custom_data":{namespace:"luigis_mansion",id:"game_boy_horror"}}}].components set from entity @a[tag=this_player,limit=1] Inventory[{components:{"minecraft:custom_data":{namespace:"luigis_mansion",id:"game_boy_horror"}}}].components
 
 # Settings
 tag @s remove stop_map_on_key_collect

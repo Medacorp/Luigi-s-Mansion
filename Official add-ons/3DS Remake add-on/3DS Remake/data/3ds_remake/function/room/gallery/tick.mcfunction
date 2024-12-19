@@ -5,8 +5,8 @@ execute as @e[tag=player,x=744,y=-1,z=-41,dx=32,dy=29,dz=25] unless entity @s[x=
 scoreboard players set #temp Room -8
 #/todelete
 
-execute if entity @e[tag=e_gadd,scores={Room=-8},tag=talk] if data storage luigis_mansion:data rooms.gallery{cleared:0b} unless data storage luigis_mansion:data dialogs[{room:-8}] run data modify storage luigis_mansion:data dialogs append value {name:{namespace:"luigis_mansion",id:"gallery/talk"},room:-8,progress:0}
-execute if entity @e[tag=e_gadd,scores={Room=-8},tag=talk] if data storage luigis_mansion:data rooms.gallery{cleared:1b} unless data storage luigis_mansion:data dialogs[{room:-8}] run data modify storage luigis_mansion:data dialogs append value {name:{namespace:"luigis_mansion",id:"gallery/repeat"},room:-8,progress:0}
+execute if entity @e[tag=e_gadd,scores={Room=-8},tag=talk_this_tick] if data storage luigis_mansion:data rooms.gallery{cleared:0b} unless data storage luigis_mansion:data dialogs[{room:-8}] run data modify storage luigis_mansion:data dialogs append value {name:{namespace:"luigis_mansion",id:"gallery/talk"},room:-8,progress:0}
+execute if entity @e[tag=e_gadd,scores={Room=-8},tag=talk_this_tick] if data storage luigis_mansion:data rooms.gallery{cleared:1b} unless data storage luigis_mansion:data dialogs[{room:-8}] run data modify storage luigis_mansion:data dialogs append value {name:{namespace:"luigis_mansion",id:"gallery/repeat"},room:-8,progress:0}
 
 execute as @a[scores={Room=-8}] run function 3ds_remake:room/gallery/tick_per_player
 

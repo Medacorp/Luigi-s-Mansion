@@ -1,3 +1,2 @@
-execute unless score #boneyard_dog_house Searched matches 1 run playsound luigis_mansion:music.solve_puzzle music @a[scores={Room=28}] ~ ~ ~ 1000
-execute unless score #boneyard_dog_house Searched matches 1 run scoreboard players set @a[scores={Room=28,Music=..29}] Music 30
+execute unless score #boneyard_dog_house Searched matches 1 as @a[scores={Room=28}] run function luigis_mansion:other/music/set/secret_revealed
 scoreboard players set #boneyard_dog_house Searched 1

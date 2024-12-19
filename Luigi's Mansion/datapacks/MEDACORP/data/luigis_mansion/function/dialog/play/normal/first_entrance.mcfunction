@@ -17,7 +17,7 @@ execute if score #dialog Dialog matches 1..69 as @a[tag=this_player,limit=1] run
 execute if score #dialog Dialog matches 1.. run tag @e[tag=luigi,tag=this_player,limit=1] add reset_rotation
 execute if score #dialog Dialog matches 50.. as @e[tag=luigi,tag=this_player,limit=1] run function luigis_mansion:entities/luigi/animation/set/high_health_idle
 execute if score #dialog Dialog matches 70..79 as @a[tag=this_player,limit=1] run function luigis_mansion:entities/player/camera/teleport {teleport:"744 10.5 9.0 -90 -15"}
-execute if score #dialog Dialog matches 80 as @a[tag=same_room] at @s run playsound luigis_mansion:music.mansion.first_entrance ambient @a[tag=this_player,limit=1] ~ ~ ~ 1000
+execute if score #dialog Dialog matches 80 as @a[tag=this_player,limit=1] run function luigis_mansion:other/music/play/group_0/first_entrance
 execute if score #dialog Dialog matches 80 as @a[tag=this_player,limit=1] run function luigis_mansion:entities/player/camera/teleport {teleport:"750.0 19 16.0 130 17.5"}
 execute if score #dialog Dialog matches 80..119 as @a[tag=this_player,limit=1] run function luigis_mansion:entities/player/camera/teleport {teleport:"~0.1125 ~-0.075 ~0.0125 ~-0.5 ~-0.125"}
 execute if score #dialog Dialog matches 120 as @a[tag=this_player,limit=1] run function luigis_mansion:entities/player/camera/teleport {teleport:"745.2 17.3 3.1 -40 12"}

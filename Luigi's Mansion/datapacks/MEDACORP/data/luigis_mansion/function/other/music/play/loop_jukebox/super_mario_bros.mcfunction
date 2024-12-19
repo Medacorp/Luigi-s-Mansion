@@ -1,0 +1,10 @@
+scoreboard players set @s[scores={GradualMusic=..0}] GradualMusic 1440
+execute unless data storage luigis_mansion:data my_memory.music.jukebox_flags.saxophone unless data storage luigis_mansion:data my_memory.music.jukebox_flags.cello unless data storage luigis_mansion:data my_memory.music.jukebox_flags.drum_1 unless data storage luigis_mansion:data my_memory.music.jukebox_flags.drum_2 unless data storage luigis_mansion:data my_memory.music.jukebox_flags.drum_3 unless data storage luigis_mansion:data my_memory.music.jukebox_flags.xylophone unless data storage luigis_mansion:data my_memory.music.jukebox_flags.piano run scoreboard players set @s GradualMusic 0
+execute if data storage luigis_mansion:data my_memory.music.jukebox_flags{saxophone:1b} run function luigis_mansion:other/music/play/group_0/loop/super_mario_bros/saxophone
+execute if data storage luigis_mansion:data my_memory.music.jukebox_flags{harp:1b} run function luigis_mansion:other/music/play/group_0/loop/super_mario_bros/harp
+execute if data storage luigis_mansion:data my_memory.music.jukebox_flags{cello:1b} run function luigis_mansion:other/music/play/group_0/loop/super_mario_bros/cello
+execute if data storage luigis_mansion:data my_memory.music.jukebox_flags{drum_1:1b} run function luigis_mansion:other/music/play/group_0/loop/super_mario_bros/drum_1
+execute if data storage luigis_mansion:data my_memory.music.jukebox_flags{drum_2:1b} run function luigis_mansion:other/music/play/group_0/loop/super_mario_bros/drum_2
+execute if data storage luigis_mansion:data my_memory.music.jukebox_flags{drum_3:1b} run function luigis_mansion:other/music/play/group_0/loop/super_mario_bros/drum_3
+execute if data storage luigis_mansion:data my_memory.music.jukebox_flags{xylophone:1b} run function luigis_mansion:other/music/play/group_0/loop/super_mario_bros/xylophone
+execute if data storage luigis_mansion:data my_memory.music.jukebox_flags{piano:1b} run function luigis_mansion:other/music/play/group_0/loop/super_mario_bros/piano

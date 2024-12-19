@@ -1,7 +1,6 @@
 tag @s remove burning
 stopsound @a[tag=same_room] block luigis_mansion:block.door.burn
-playsound luigis_mansion:music.solve_puzzle music @a[tag=same_room] ~ ~ ~ 1000
-execute as @a[tag=same_room,scores={Music=..30}] unless entity @s[scores={HealthMusic=1..}] unless entity @s[scores={GradualMusic=1..}] run scoreboard players set @s Music 30
+execute as @a[tag=same_room] run function luigis_mansion:other/music/set/secret_revealed
 setblock ^ ^ ^0.5 minecraft:air
 particle minecraft:large_smoke ~ ~ ~ 0.2 0 0.2 0 4 normal @a[tag=same_room]
 $data modify storage luigis_mansion:data current_state.current_data.technical_data merge value {$(burning_flag):1b}

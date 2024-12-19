@@ -8,7 +8,7 @@ tag @a[tag=same_room] add prevent_item_lock
 scoreboard players reset @a[tag=same_room,tag=!spectator] WarpTime
 execute as @a[tag=same_room,tag=!spectator,tag=game_boy_horror_menu] run function luigis_mansion:selection_menu/game_boy_horror/exit
 tag @e[nbt={data:{entity:{namespace:"luigis_mansion",id:"sir_weston"}}},tag=same_room,limit=1] remove freeze_animation
-execute if score #dialog Dialog matches 1..6 as @a[tag=same_room] run function luigis_mansion:other/music/set/talking_ghost
+execute if score #dialog Dialog matches 1..6 as @a[tag=same_room] run function luigis_mansion:other/music/set/talking_ghosts
 execute if score #dialog Dialog matches 1..3 as @e[tag=luigi,tag=same_room] run function luigis_mansion:entities/luigi/animation/set/high_health_idle_no_sound
 execute if score #dialog Dialog matches 1 facing entity @e[tag=same_room,tag=!spectator,tag=player,sort=nearest,limit=1] feet rotated ~ 0 run teleport @s ~ ~ ~ ~ ~
 execute if score #dialog Dialog matches 1 at @e[nbt={data:{entity:{namespace:"luigis_mansion",id:"sir_weston"}}},tag=same_room,limit=1] run playsound luigis_mansion:entity.sir_weston.talk hostile @a[tag=same_room] ~ ~ ~ 1

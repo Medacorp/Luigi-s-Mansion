@@ -12,8 +12,7 @@ execute if score #dialog Dialog matches 22 unless score #mirrored Selected match
 execute if score #dialog Dialog matches 22 if score #mirrored Selected matches 1 run summon minecraft:marker ~ ~ ~ {Tags:["observatory_facing","same_room"],Rotation:[0.0f,0.0f]}
 execute if score #dialog Dialog matches 22 store result score @e[tag=observatory_facing,tag=same_room] Room run data get storage luigis_mansion:data dialogs[0].room
 execute if score #dialog Dialog matches 22 run data modify entity @e[tag=same_room,tag=observatory_facing,limit=1] Pos set from storage luigis_mansion:data dialogs[0].observing_position
-execute if score #dialog Dialog matches 23 run scoreboard players set @a[tag=same_room,tag=!spectator] Music 340
-execute if score #dialog Dialog matches 23 run playsound luigis_mansion:music.observatory_moon music @a[tag=same_room,tag=!spectator] ~ ~ ~ 1000
+execute if score #dialog Dialog matches 23 as @a[tag=same_room] run function luigis_mansion:other/music/set/observatory_moon
 execute if score #dialog Dialog matches 22..68 as @e[tag=observatory_facing,tag=same_room] at @s run teleport @s ~ ~ ~ ~ ~-0.6
 execute if score #dialog Dialog matches 69..116 unless score #mirrored Selected matches 1 as @e[tag=observatory_facing,tag=same_room] at @s run teleport @s ~ ~ ~ ~-0.3 ~-0.6
 execute if score #dialog Dialog matches 69..116 if score #mirrored Selected matches 1 as @e[tag=observatory_facing,tag=same_room] at @s run teleport @s ~ ~ ~ ~0.3 ~-0.6
@@ -31,7 +30,7 @@ execute if score #dialog Dialog matches 22..299 as @a[tag=same_room] run functio
 execute if score #dialog Dialog matches 22..299 as @a[tag=same_room] at @s run particle minecraft:end_rod ~ ~ ~ 5 5 5 0 5 force @s
 execute if score #dialog Dialog matches 300 run tag @e[tag=observatory_facing,tag=same_room] add remove_from_existence
 execute if score #dialog Dialog matches 300 as @a[tag=same_room] run function luigis_mansion:entities/player/camera/reset
-execute if score #dialog Dialog matches 300 run playsound luigis_mansion:music.solve_puzzle music @a[tag=same_room,tag=!spectator] ~ ~ ~ 1000
+execute if score #dialog Dialog matches 300 as @a[tag=same_room] run function luigis_mansion:other/music/set/secret_revealed
 execute if score #dialog Dialog matches 340 as @e[tag=luigi,tag=same_room] run function luigis_mansion:entities/luigi/animation/set/none
 execute if score #dialog Dialog matches 340 run scoreboard players add #observatory Wave 1
 execute if score #dialog Dialog matches 340 run scoreboard players set #dialog Dialog -1

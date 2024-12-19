@@ -17,7 +17,7 @@ scoreboard players reset @a[tag=same_room,tag=!spectator] WarpTime
 execute as @a[tag=same_room,tag=!spectator,tag=game_boy_horror_menu] run function luigis_mansion:selection_menu/game_boy_horror/exit
 tag @e[tag=same_room,nbt={data:{entity:{namespace:"luigis_mansion",id:"king_boo"}}},limit=1] remove freeze_animation
 tag @e[tag=same_room,nbt={data:{entity:{namespace:"luigis_mansion",id:"king_boo"}}},limit=1] remove no_ai
-execute if score #dialog Dialog matches 1..330 unless data storage luigis_mansion:data current_state.current_data.technical_data{king_boo_warp:1b} as @a[tag=same_room] run function luigis_mansion:other/music/set/king_boo_warp
+execute if score #dialog Dialog matches 1..330 unless data storage luigis_mansion:data current_state.current_data.technical_data{king_boo_warp:1b} as @a[tag=same_room] run function luigis_mansion:other/music/set/king_boo
 execute if score #dialog Dialog matches 1..330 if data storage luigis_mansion:data current_state.current_data.technical_data{king_boo_warp:1b} as @a[tag=same_room] run function luigis_mansion:other/music/set/mysterious_power
 execute if score #dialog Dialog matches 1 run data modify entity @e[tag=same_room,nbt={data:{entity:{namespace:"luigis_mansion",id:"king_boo"}}},limit=1] data.animation set value {namespace:"luigis_mansion",id:"appear"}
 execute if score #dialog Dialog matches 1 at @e[tag=same_room,nbt={data:{entity:{namespace:"luigis_mansion",id:"king_boo"}}},limit=1] run playsound luigis_mansion:entity.king_boo.laugh_2 hostile @a[tag=same_room] ~ ~ ~ 1
@@ -106,9 +106,7 @@ execute if score #dialog Dialog matches 271 if data storage luigis_mansion:data 
 execute if score #dialog Dialog matches 271 if data storage luigis_mansion:data current_state.current_data.technical_data{king_boo_warp:1b} if score #temp Boos matches 40..47 if score #players Totals matches 2.. run tellraw @a[tag=same_room] {"type":"translatable","translate":"chat.type.text","with":[{"type":"translatable","translate":"luigis_mansion:entity.king_boo","color":"green"},{"type":"translatable","translate":"luigis_mansion:dialog.king_boo_warp.15.more"}]}
 execute if score #dialog Dialog matches 271 if data storage luigis_mansion:data current_state.current_data.technical_data{king_boo_warp:1b} unless score #temp Boos matches 40..47 run tellraw @a[tag=same_room] {"type":"translatable","translate":"chat.type.text","with":[{"type":"translatable","translate":"luigis_mansion:entity.king_boo","color":"green"},{"type":"translatable","translate":"luigis_mansion:dialog.king_boo_warp.15.alt"}]}
 scoreboard players reset #temp Boos
-execute if score #dialog Dialog matches 271 run stopsound @a[tag=same_room] music
-execute if score #dialog Dialog matches 271 run playsound luigis_mansion:music.warped_by_boos music @a[tag=same_room] ~ ~ ~ 1000
-execute if score #dialog Dialog matches 271 run scoreboard players set @a[tag=same_room] Music 80
+execute if score #dialog Dialog matches 271 as @a[tag=same_room] run function luigis_mansion:other/music/set/warped_by_boos
 execute if score #dialog Dialog matches 271..331 as @a[tag=same_room,tag=!spectator] run function luigis_mansion:entities/luigi/move/execute {execute:"at @s unless entity @s[x=684,dx=0]",teleport:"~0.5 ~ ~"}
 execute if score #dialog Dialog matches 331 as @e[tag=luigi,tag=same_room] run function luigis_mansion:entities/luigi/animation/set/none
 execute if score #dialog Dialog matches 331 as @a[tag=same_room] run function luigis_mansion:other/music/set/silence

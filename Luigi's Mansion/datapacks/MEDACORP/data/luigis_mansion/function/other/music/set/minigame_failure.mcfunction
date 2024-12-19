@@ -1,0 +1,1 @@
+execute if entity @s[scores={MusicType=37,MusicGroup=0}] run function luigis_mansion:other/music/set/force/minigame_failure

@@ -10,9 +10,7 @@ execute if score #dialog Dialog matches 1.. as @a[tag=same_room,tag=!spectator,t
 execute if score #dialog Dialog matches 1.. run tag @e[tag=candle_flame,tag=same_room] remove no_ai
 execute if score #dialog Dialog matches 1 run summon minecraft:armor_stand 751.0 13 9.0 {CustomName:'{"type":"translatable","translate":"luigis_mansion:entity.gold_ghost"}',Tags:["first_key","same_room"],ArmorItems:[{},{},{},{id:"minecraft:diamond_pickaxe",count:1,components:{"minecraft:item_model":"luigis_mansion:key"}}],NoGravity:1b,Invulnerable:1b,Silent:1b,Invisible:1b,DisabledSlots:2039583}
 execute if score #dialog Dialog matches 1 store result score @e[tag=first_key,tag=same_room] Room run data get storage luigis_mansion:data dialogs[0].room
-execute if score #dialog Dialog matches 1 run stopsound @a[tag=same_room] music
-execute if score #dialog Dialog matches 1 run playsound luigis_mansion:music.first_key music @a[tag=same_room] ~ ~ ~ 1000
-execute if score #dialog Dialog matches 1 run scoreboard players set @a[tag=same_room] Music 500
+execute if score #dialog Dialog matches 1 as @a[tag=same_room] run function luigis_mansion:other/music/play/group_0/first_key
 execute if score #dialog Dialog matches 1 as @e[tag=same_room,tag=luigi,x=751.0,y=11,z=9.0,distance=..7] run function luigis_mansion:entities/luigi/move/teleport {teleport:"753 11 9 110 0"}
 execute if score #dialog Dialog matches 1.. as @e[tag=same_room,tag=luigi,nbt=!{data:{animation:{}}},limit=1] run function luigis_mansion:entities/luigi/animation/set/idle
 execute if score #dialog Dialog matches 1 as @a[tag=same_room,limit=1] run function luigis_mansion:entities/player/camera/teleport {teleport:"754.0 11.5 7.0 76 -11"}

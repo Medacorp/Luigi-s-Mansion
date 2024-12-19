@@ -1,4 +1,4 @@
-function luigis_mansion:other/music/set/outside
+function luigis_mansion:other/music/set/exterior
 title @s[tag=!seen_room_name] title {"type":"translatable","translate":"luigis_mansion:location.roof"}
 tag @s add seen_room_name
 

@@ -1,0 +1,3 @@
+execute if data storage luigis_mansion:data rooms.underground_lab{cleared:1b} run tellraw @s {"type":"translatable","translate":"chat.type.text","with":[{"type":"translatable","translate":"luigis_mansion:item.game_boy_horror","color":"green"},{"type":"translatable","translate":"luigis_mansion:message.game_boy_horror.jukebox.new","with":[{"type":"translatable","translate":"luigis_mansion:item.menu.game_boy_horror.jukebox.track.boolossus_battle"}]}]}
+advancement grant @s only luigis_mansion:jukebox/root
+advancement grant @s only luigis_mansion:jukebox/luigis_mansion

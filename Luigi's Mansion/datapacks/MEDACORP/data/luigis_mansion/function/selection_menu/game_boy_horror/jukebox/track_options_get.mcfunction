@@ -1,0 +1,1 @@
+$function $(jukebox):selection_menu/game_boy_horror/jukebox/options

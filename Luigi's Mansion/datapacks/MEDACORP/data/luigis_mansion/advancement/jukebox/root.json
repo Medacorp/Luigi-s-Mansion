@@ -1,0 +1,24 @@
+{
+    "display": {
+        "icon": {
+            "count": 1,
+            "id": "minecraft:carrot_on_a_stick",
+            "components": {
+                "minecraft:item_model": "luigis_mansion:menu/game_boy_horror/jukebox"
+            }
+        },
+        "title": {
+            "type": "translatable", "translate": "luigis_mansion:advancements.jukebox.root"
+        },
+        "description": {
+            "type": "translatable", "translate": "luigis_mansion:advancements.jukebox.root.description"
+        },
+        "announce_to_chat": false,
+		"background": "luigis_mansion:textures/gui/advancements/background/jukebox.png"
+    },
+    "criteria": {
+        "got_a_music_disc": {
+            "trigger": "minecraft:impossible"
+        }
+    }
+}

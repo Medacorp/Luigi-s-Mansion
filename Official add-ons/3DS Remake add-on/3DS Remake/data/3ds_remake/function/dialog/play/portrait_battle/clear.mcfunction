@@ -12,7 +12,7 @@ scoreboard players reset @a[tag=same_room,tag=!spectator] WarpTime
 execute as @a[tag=same_room,tag=!spectator,tag=game_boy_horror_menu] run function luigis_mansion:selection_menu/game_boy_horror/exit
 
 execute if score #dialog Dialog matches 1..132 as @e[tag=luigi,tag=same_room] run function luigis_mansion:entities/luigi/animation/set/idle_no_poltergust
-execute if score #dialog Dialog matches 1..132 as @a[tag=same_room] run function luigis_mansion:other/music/set/area_boss_defeated
+execute if score #dialog Dialog matches 1..132 as @a[tag=same_room] run function luigis_mansion:other/music/set/area_clear
 execute if score #dialog Dialog matches 70 run title @a[tag=same_room] title {"type":"translatable","translate":"3ds_remake:message.gallery.portrait_battle.clear"}
 execute if score #dialog Dialog matches 130..132 as @a[tag=same_room] run function luigis_mansion:other/music/set/portraits
 

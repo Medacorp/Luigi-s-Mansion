@@ -6,9 +6,7 @@ scoreboard players reset @a[tag=same_room,tag=!spectator] WarpTime
 execute as @a[tag=same_room,tag=!spectator,tag=game_boy_horror_menu] run function luigis_mansion:selection_menu/game_boy_horror/exit
 execute if score #dialog Dialog matches 1..120 as @e[tag=luigi,tag=same_room] run function luigis_mansion:entities/luigi/animation/set/high_health_idle_no_sound
 execute if score #dialog Dialog matches 1 run tag @e[tag=light_me,tag=same_room] add lit
-execute if score #dialog Dialog matches 2 run stopsound @a[tag=same_room] music
-execute if score #dialog Dialog matches 2 run scoreboard players set @a[tag=same_room] Music 140
-execute if score #dialog Dialog matches 3 run playsound luigis_mansion:music.mansion.room.astral_hall music @a[tag=same_room] ~ ~ ~ 1000
+execute if score #dialog Dialog matches 3 as @a[tag=same_room] run function luigis_mansion:other/music/set/astral_hall_ambush
 execute if score #dialog Dialog matches 10 run tag @e[tag=flame_1,tag=light_me,tag=!purple,tag=same_room,sort=nearest,limit=1] add large_flame
 execute if score #dialog Dialog matches 15 run tag @e[tag=flame_2,tag=light_me,tag=!purple,tag=same_room,sort=nearest,limit=1] add large_flame
 execute if score #dialog Dialog matches 20 run tag @e[tag=flame_3,tag=light_me,tag=!purple,tag=same_room,sort=nearest,limit=1] add large_flame

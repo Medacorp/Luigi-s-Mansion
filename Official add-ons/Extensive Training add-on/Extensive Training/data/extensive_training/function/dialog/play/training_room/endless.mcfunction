@@ -61,7 +61,7 @@ execute if score #dialog Dialog matches 7 as @a[tag=same_room,tag=vacuuming_ghos
 execute if score #dialog Dialog matches 7 run scoreboard players set @e[tag=ghost,tag=same_room,tag=!vanish] ActionTime 0
 execute if score #dialog Dialog matches 7 run tag @e[tag=ghost,tag=same_room,tag=!flee] add vanish
 execute if score #dialog Dialog matches 7 if score #training_room Wave matches 1 run function extensive_training:selection_menu/gallery_trophy/complete/task_1
-execute if score #dialog Dialog matches 7..49 as @a[tag=same_room] run function luigis_mansion:other/music/set/training_stop
+execute if score #dialog Dialog matches 7..49 as @a[tag=same_room] run function luigis_mansion:other/music/set/training_end
 execute if score #dialog Dialog matches 7 if score #players Totals matches 1 run tellraw @a[tag=same_room] {"type":"translatable","translate":"chat.type.text","with":[{"type":"translatable","translate":"luigis_mansion:entity.e_gadd","color":"green"},{"type":"translatable","translate":"extensive_training:dialog.endless.4"}]}
 execute if score #dialog Dialog matches 7 if score #players Totals matches 2.. run tellraw @a[tag=same_room] {"type":"translatable","translate":"chat.type.text","with":[{"type":"translatable","translate":"luigis_mansion:entity.e_gadd","color":"green"},{"type":"translatable","translate":"extensive_training:dialog.endless.4.more"}]}
 execute if score #dialog Dialog matches 7 as @a[tag=same_room] at @s run playsound luigis_mansion:entity.e_gadd.talk.luigi_odoh neutral @s ~ ~ ~ 1

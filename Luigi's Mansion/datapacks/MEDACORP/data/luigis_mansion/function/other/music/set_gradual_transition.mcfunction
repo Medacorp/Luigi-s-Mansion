@@ -1,3 +1,3 @@
-scoreboard players set @s Music 0
-scoreboard players set @s HealthMusic 0
-scoreboard players set @s LastHealthMusic 1
+scoreboard players set @s[scores={Jukebox=0}] Music 0
+scoreboard players set @s[scores={Jukebox=0}] HealthMusic 0
+scoreboard players set @s[scores={Jukebox=0}] LastHealthMusic 1

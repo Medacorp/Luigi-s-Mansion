@@ -4,7 +4,7 @@ scoreboard players reset @a[tag=same_room,tag=!spectator] WarpTime
 execute as @a[tag=same_room,tag=!spectator,tag=game_boy_horror_menu] run function luigis_mansion:selection_menu/game_boy_horror/exit
 execute if score #dialog Dialog matches 1..279 as @e[tag=luigi,tag=same_room] run function luigis_mansion:entities/luigi/animation/set/idle_no_poltergust
 execute if score #dialog Dialog matches 1..89 run stopsound @a[tag=same_room] music
-execute if score #dialog Dialog matches 1 run scoreboard players set @a[tag=same_room] Music 310
+execute if score #dialog Dialog matches 1 run scoreboard players set @a[tag=same_room] Music 90
 execute if score #dialog Dialog matches 40 run fill 682 11 -52 682 12 -52 minecraft:air
 execute if score #dialog Dialog matches 40..240 run fill 681 11 -52 689 17 -39 minecraft:air replace minecraft:light
 execute if score #dialog Dialog matches 40 run clone 681 11 -52 689 17 -51 681 11 -51 replace move
@@ -14,7 +14,7 @@ execute if score #dialog Dialog matches 80 run setblock 682 12 -51 minecraft:air
 execute if score #dialog Dialog matches 80 run clone 681 11 -51 689 17 -50 681 11 -50 replace move
 execute if score #dialog Dialog matches 80 run setblock 682 11 -51 minecraft:oak_slab[type=bottom]
 execute if score #dialog Dialog matches 80 run setblock 682 11 -52 minecraft:andesite_slab[type=bottom]
-execute if score #dialog Dialog matches 90 run playsound luigis_mansion:music.moving_wall music @a[tag=same_room] ~ ~ ~ 10000
+execute if score #dialog Dialog matches 90 as @a[tag=same_room] run function luigis_mansion:other/music/set/moving_wall
 execute if score #dialog Dialog matches 100 run clone 681 11 -50 689 17 -49 681 11 -49 replace move
 execute if score #dialog Dialog matches 120 run clone 681 11 -49 689 17 -48 681 11 -48 replace move
 execute if score #dialog Dialog matches 140 run clone 681 11 -48 689 17 -47 681 11 -47 replace move
@@ -28,7 +28,7 @@ execute if score #dialog Dialog matches 220 run clone 681 11 -43 689 17 -42 681 
 execute if score #dialog Dialog matches 230 run clone 681 11 -42 689 17 -41 681 11 -41 replace move
 execute if score #dialog Dialog matches 240 run clone 681 11 -41 689 17 -40 681 11 -40 replace move
 execute if score #dialog Dialog matches 20 run playsound luigis_mansion:furniture.moving_wall block @a[tag=same_room] 685 11 -49 2
-execute if score #dialog Dialog matches 280 run playsound luigis_mansion:music.solve_puzzle music @a[tag=same_room] ~ ~ ~ 10000
+execute if score #dialog Dialog matches 280 as @a[tag=same_room] run function luigis_mansion:other/music/set/secret_revealed
 execute if score #dialog Dialog matches 280 as @e[tag=luigi,tag=same_room] run function luigis_mansion:entities/luigi/animation/set/none
 execute if score #dialog Dialog matches 280 run scoreboard players set #dialog Dialog -1
 
@@ -52,5 +52,3 @@ execute if score #dialog Dialog matches 210 run clone 671 11 -44 679 17 -43 671 
 execute if score #dialog Dialog matches 220 run clone 671 11 -43 679 17 -42 671 11 -42 replace move
 execute if score #dialog Dialog matches 230 run clone 671 11 -42 679 17 -41 671 11 -41 replace move
 execute if score #dialog Dialog matches 240 run clone 671 11 -41 679 17 -40 671 11 -40 replace move
-
-execute if score #dialog Dialog matches 280 run scoreboard players set #dialog Dialog 0

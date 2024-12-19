@@ -9,5 +9,4 @@ execute unless score #the_twins_room Time matches 1.. unless entity @e[nbt={data
 execute unless entity @e[nbt={data:{entity:{namespace:"luigis_mansion",id:"orville"}}},limit=1] run data modify storage luigis_mansion:data entity set value {room:49,scan_result:{namespace:"luigis_mansion",id:"scan/entity/orville"},tags:["hide_and_seek","appear"],room_search:{non_players:1b}}
 execute unless entity @e[nbt={data:{entity:{namespace:"luigis_mansion",id:"orville"}}},limit=1] rotated -90 0 run function luigis_mansion:spawn_entities/portrait_ghost/henry_and_orville/orville
 
-execute unless score #the_twins_room Time matches 1.. run playsound luigis_mansion:music.solve_puzzle music @a[scores={Room=49}] ~ ~ ~ 10000
-execute unless score #the_twins_room Time matches 1.. run scoreboard players set @a[scores={Room=49,Music=..30}] Music 30
+execute unless score #the_twins_room Time matches 1.. as @a[scores={Room=49}] run function luigis_mansion:other/music/set/secret_revealed

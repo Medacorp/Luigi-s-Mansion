@@ -8,7 +8,7 @@ scoreboard players reset @a[tag=same_room,tag=!spectator] WarpTime
 execute as @a[tag=same_room,tag=!spectator,tag=game_boy_horror_menu] run function luigis_mansion:selection_menu/game_boy_horror/exit
 tag @e[nbt={data:{entity:{namespace:"luigis_mansion",id:"vincent_van_gore"}}},tag=same_room,limit=1] remove freeze_animation
 tag @e[nbt={data:{entity:{namespace:"luigis_mansion",id:"vincent_van_gore"}}},tag=same_room,limit=1] add visible
-execute if score #dialog Dialog matches 1..7 as @a[tag=same_room] run function luigis_mansion:other/music/set/talking_ghost
+execute if score #dialog Dialog matches 1..7 as @a[tag=same_room] run function luigis_mansion:other/music/set/talking_ghosts
 execute if score #dialog Dialog matches 1..7 as @e[tag=luigi,tag=same_room] run function luigis_mansion:entities/luigi/animation/set/idle_no_poltergust
 execute if score #dialog Dialog matches 1 run data modify entity @e[nbt={data:{entity:{namespace:"luigis_mansion",id:"vincent_van_gore"}}},tag=same_room,limit=1] data.animation set value {namespace:"luigis_mansion",id:"talk"}
 execute if score #dialog Dialog matches 1 as @e[nbt={data:{entity:{namespace:"luigis_mansion",id:"vincent_van_gore"}}},tag=same_room,limit=1] at @s facing entity @e[tag=luigi,tag=same_room,sort=nearest,limit=1] feet rotated ~ 0 run teleport @s ~ ~ ~ ~ ~

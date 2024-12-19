@@ -184,7 +184,7 @@ execute if score #dialog Dialog matches 136 if score #players Totals matches 1 r
 execute if score #dialog Dialog matches 136 if score #players Totals matches 2.. run tellraw @a[tag=same_room] {"type":"translatable","translate":"chat.type.text","with":[{"type":"translatable","translate":"luigis_mansion:entity.e_gadd","color":"green"},{"type":"translatable","translate":"luigis_mansion:dialog.training_room.20.more"}]}
 execute if score #dialog Dialog matches 136 as @a[tag=same_room] at @s run playsound luigis_mansion:entity.e_gadd.talk.oui_suu_soy_soh_ooh neutral @s ~ ~ ~ 1
 
-execute if score #dialog Dialog matches 138..159 as @a[tag=same_room] run function luigis_mansion:other/music/set/training_stop
+execute if score #dialog Dialog matches 138..159 as @a[tag=same_room] run function luigis_mansion:other/music/set/training_end
 execute if score #dialog Dialog matches 138 if entity @a[tag=next_dialog_line,limit=1] run stopsound @a[tag=same_room] neutral luigis_mansion:entity.e_gadd.talk.oui_suu_soy_soh_ooh
 execute if score #dialog Dialog matches 138 if entity @a[tag=same_room,tag=next_dialog_line,limit=1] run tellraw @a[tag=same_room] {"type":"translatable","translate":"chat.type.text","with":[{"type":"translatable","translate":"luigis_mansion:entity.e_gadd","color":"green"},{"type":"translatable","translate":"luigis_mansion:dialog.training_room.21"}]}
 execute if score #dialog Dialog matches 138 if entity @a[tag=same_room,tag=next_dialog_line,limit=1] as @a[tag=same_room] at @s run playsound luigis_mansion:entity.e_gadd.talk.yahmum_bah neutral @s ~ ~ ~ 1

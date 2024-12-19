@@ -23,7 +23,7 @@ execute if entity @s[tag=kick_players_out] at @e[tag=same_room,tag=furniture,tag
 execute if entity @s[tag=kick_players_out] run tag @s remove kick_players_out
 
 execute if entity @s[scores={Dialog=5}] run tag @e[tag=same_room,tag=furniture,tag=door] add blockade
-execute if entity @s[scores={Dialog=5..659}] as @a[tag=same_room] run function luigis_mansion:other/music/set/mini_game
+execute if entity @s[scores={Dialog=5..659}] as @a[tag=same_room] run function luigis_mansion:other/music/set/minigame
 scoreboard players add @s[scores={Dialog=5..914},tag=!frozen,tag=in_ice,tag=!pop_out,tag=!pop_in,tag=visible] Wave 1
 tag @s[scores={Dialog=5..914},tag=!frozen,tag=in_ice,tag=!pop_out,tag=!pop_in,tag=visible] add frozen
 scoreboard players set @s[scores={Dialog=5}] Wave 0

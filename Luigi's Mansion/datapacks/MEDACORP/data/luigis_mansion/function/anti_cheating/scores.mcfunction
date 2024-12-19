@@ -103,6 +103,9 @@ scoreboard objectives add IdleTime dummy
 scoreboard objectives add IncreaseAmount dummy
 scoreboard objectives add InteractionTime dummy
 scoreboard objectives add Invulnerable dummy
+scoreboard objectives add Jukebox dummy
+scoreboard objectives add JukeboxHealth dummy
+scoreboard objectives add JukeboxPrevious dummy
 scoreboard objectives add JumpHeight dummy
 scoreboard objectives add KillerID dummy
 scoreboard objectives add KnockbackDamage dummy

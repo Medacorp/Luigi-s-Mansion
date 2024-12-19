@@ -6,8 +6,7 @@ execute unless entity @s[scores={Dialog=1..}] run tag @s[tag=portrait_ghost_hide
 execute unless entity @s[scores={Dialog=2..}] if entity @s[tag=visible] run data modify entity @e[tag=mr_luggs_food,limit=1] ArmorItems[3].id set value "minecraft:diamond_pickaxe"
 execute if entity @s[tag=!visible] run data modify entity @e[tag=mr_luggs_food,limit=1] ArmorItems[3].id set value "minecraft:stone_button"
 execute unless entity @s[scores={Dialog=1..}] unless entity @e[tag=same_room,tag=light_me,tag=!lit] run tag @e[tag=same_room,tag=light_me,tag=lit] add large_flame
-execute unless entity @s[scores={Dialog=1..}] unless entity @e[tag=same_room,tag=light_me,tag=!lit] run playsound luigis_mansion:music.solve_puzzle music @a[tag=same_room] ~ ~ ~ 10000
-execute unless entity @s[scores={Dialog=1..}] unless entity @e[tag=same_room,tag=light_me,tag=!lit] as @a[tag=same_room,scores={Music=..29}] unless entity @s[scores={HealthMusic=1..}] unless entity @s[scores={GradualMusic=1..}] run scoreboard players set @s Music 30
+execute unless entity @s[scores={Dialog=1..}] unless entity @e[tag=same_room,tag=light_me,tag=!lit] as @a[tag=same_room] run function luigis_mansion:other/music/set/secret_revealed
 execute unless entity @s[scores={Dialog=1..}] unless entity @e[tag=same_room,tag=light_me,tag=!lit] run scoreboard players set @s Dialog 1
 execute if entity @s[scores={Dialog=0..20}] as @e[tag=mr_luggs_food,limit=1] run data modify entity @s ArmorItems[3] merge from entity @s ArmorItems[3].components."minecraft:custom_data".model_data.default
 execute if entity @s[scores={Dialog=21..50}] as @e[tag=mr_luggs_food,limit=1] run data modify entity @s ArmorItems[3] merge from entity @s ArmorItems[3].components."minecraft:custom_data".model_data.slightly_decreased

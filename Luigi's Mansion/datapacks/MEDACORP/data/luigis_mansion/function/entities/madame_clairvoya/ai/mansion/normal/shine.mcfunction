@@ -9,6 +9,6 @@ scoreboard players set @s[scores={ActionTime=..40},tag=!illuminate_furniture] Ac
 tag @s remove illuminate_furniture
 execute if entity @s[scores={ActionTime=1..}] positioned ^ ^1.93 ^1.44 run particle minecraft:firework ~ ~ ~ 0.2 0.1 0.2 0 1
 tag @s[scores={ActionTime=100}] add visible
-execute if entity @s[scores={ActionTime=100}] run playsound luigis_mansion:music.solve_puzzle neutral @a[tag=same_room] ~ ~ ~ 1000
+execute if entity @s[scores={ActionTime=100}] as @a[tag=same_room] run function luigis_mansion:other/music/set/secret_revealed
 scoreboard players set @s[scores={ActionTime=100}] ClairvoyaSpoke 0
 scoreboard players set @s[scores={ActionTime=100}] ActionTime 0

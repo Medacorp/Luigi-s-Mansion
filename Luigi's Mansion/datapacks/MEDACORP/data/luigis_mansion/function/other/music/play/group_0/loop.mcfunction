@@ -8,10 +8,10 @@ playsound luigis_mansion:music.gallery music @s[scores={MusicType=4}] ~ ~ ~ 1000
 scoreboard players set @s[scores={MusicType=4}] Music 662
 playsound luigis_mansion:music.ghost_portrificationizer_room music @s[scores={MusicType=5}] ~ ~ ~ 1000
 scoreboard players set @s[scores={MusicType=5}] Music 320
-execute if entity @s[scores={MusicType=6}] run function luigis_mansion:other/music/play/group_0/loop_hallway
-execute if entity @s[scores={MusicType=7}] run function luigis_mansion:other/music/play/group_0/loop_dark_room
-execute if entity @s[scores={MusicType=8}] run function luigis_mansion:other/music/play/group_0/loop_outside
-execute if entity @s[scores={MusicType=9}] run function luigis_mansion:other/music/play/group_0/loop_light
+execute if entity @s[scores={MusicType=6}] run function luigis_mansion:other/music/play/group_0/loop/dark_hallway
+execute if entity @s[scores={MusicType=7}] run function luigis_mansion:other/music/play/group_0/loop/dark_room
+execute if entity @s[scores={MusicType=8}] run function luigis_mansion:other/music/play/group_0/loop/exterior
+execute if entity @s[scores={MusicType=9}] run function luigis_mansion:other/music/play/group_0/loop/lit_room
 playsound luigis_mansion:music.toad music @s[scores={MusicType=10}] ~ ~ ~ 1000
 scoreboard players set @s[scores={MusicType=10}] Music 480
 playsound luigis_mansion:music.training_option music @s[scores={MusicType=11}] ~ ~ ~ 1000
@@ -73,4 +73,5 @@ scoreboard players set @s[scores={MusicType=38}] Music 196
 scoreboard players set @s[scores={MusicType=39}] Music 10000
 playsound luigis_mansion:music.staff_credits music @s[scores={MusicType=40}] ~ ~ ~ 1000
 scoreboard players set @s[scores={MusicType=40}] Music 2820
-execute if entity @s[scores={MusicType=41}] run function luigis_mansion:other/music/play/group_0/loop_humming
+execute if entity @s[scores={MusicType=41}] run function luigis_mansion:other/music/play/group_0/loop/dark_stairwell
+execute if entity @s[scores={MusicType=42}] run function luigis_mansion:other/music/play/group_0/loop/super_mario_bros

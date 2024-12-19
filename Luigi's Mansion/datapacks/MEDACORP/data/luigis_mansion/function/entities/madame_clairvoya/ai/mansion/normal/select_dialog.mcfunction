@@ -12,4 +12,5 @@ execute if data storage luigis_mansion:data current_state.current_data.technical
 execute if data storage luigis_mansion:data current_state.current_data.technical_data{shown_marios_hat:1b} run scoreboard players add #temp Time 1
 execute store result storage luigis_mansion:data dialogs[{room:20}].variant int 1 run scoreboard players get #temp Time
 scoreboard players reset #temp Time
+tag @s[tag=!talk] remove talk_this_tick
 tag @s remove talk

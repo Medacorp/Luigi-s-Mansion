@@ -1,0 +1,6 @@
+{
+	"values": [
+        "e3_demo:other/music/cannot_overwrite/underground_lab",
+        { "id": "3ds_remake:other/music/cannot_overwrite/future_e_gadd", "required": false }
+	]
+}

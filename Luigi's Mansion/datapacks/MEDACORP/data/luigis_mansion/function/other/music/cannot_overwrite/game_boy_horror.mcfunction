@@ -1,1 +1,1 @@
-tag @s[scores={MusicType=19,MusicGroup=0}] add cancel
+tag @s[scores={MusicType=27,MusicGroup=0}] add cancel
