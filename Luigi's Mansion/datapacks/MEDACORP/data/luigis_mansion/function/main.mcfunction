@@ -1,5 +1,5 @@
 function #luigis_mansion:anti_cheating/scores
-execute unless entity @a[tag=!loaded_chunks,limit=1] if entity @a[tag=loaded_chunks,limit=1] if data storage luigis_mansion:data dialogs[0] run function luigis_mansion:dialog
+execute if data storage luigis_mansion:data dialogs[0] run function luigis_mansion:dialog
 execute as @a at @s run function luigis_mansion:main/players
 execute unless entity @a[tag=!loaded_chunks,limit=1] positioned as @a[tag=loaded_chunks,limit=1] run function luigis_mansion:room/detect
 scoreboard players set #freeze_timer Selected 0

@@ -9,4 +9,4 @@ execute unless entity @s[tag=!wall_warp,tag=!spectator] if entity @s[tag=!alread
 
 tag @s add already_ticked
 
-function luigis_mansion:entities/run_command_as_model {command:'tag @s[x=718,y=20,z=-19,distance=9..10,tag=chance_check] remove chance_check'}
+function luigis_mansion:entities/player/run_command_as_model {command:'tag @s[x=718,y=20,z=-19,distance=9..10,tag=chance_check] remove chance_check'}

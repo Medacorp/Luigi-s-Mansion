@@ -1,0 +1,2 @@
+$execute if entity @s[tag=luigi] run function luigis_mansion:entities/luigi/move/wall_warp_model {execute:"$(execute)",teleport:"$(teleport)"}
+$execute if entity @s[tag=!luigi] run function luigis_mansion:entities/luigi/move/wall_warp_player {execute:"$(execute)",teleport:"$(teleport)"}

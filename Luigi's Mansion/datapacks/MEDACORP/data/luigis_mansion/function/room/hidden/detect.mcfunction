@@ -1,4 +1,4 @@
-execute in luigis_mansion:hidden as @a[scores={Room=1..72},tag=!looking_at_map,tag=!warp,nbt={Dimension:"luigis_mansion:hidden"}] at @s run function luigis_mansion:room/hidden/floor_header
+execute in luigis_mansion:hidden as @a[scores={Room=1..72},tag=!looking_at_map,tag=!warp,tag=!fully_separated_camera,nbt={Dimension:"luigis_mansion:hidden"}] at @s run function luigis_mansion:room/hidden/floor_header
 execute in luigis_mansion:hidden if entity @e[tag=player,distance=0..,scores={PositionIntX=734..757,PositionIntY=10..27,PositionIntZ=-5..18}] run function luigis_mansion:room/hidden/foyer/tick
 execute in luigis_mansion:hidden if score #foyer Ticking matches 1 unless entity @e[tag=player,distance=0..,scores={PositionIntX=734..757,PositionIntY=10..27,PositionIntZ=-5..18}] unless entity @e[tag=player,scores={Room=1}] run function luigis_mansion:room/hidden/foyer/not_ticking
 execute in luigis_mansion:hidden if entity @e[tag=player,distance=0..,scores={PositionIntX=734..757,PositionIntY=10..27,PositionIntZ=-5..18}] run function luigis_mansion:room/hidden/hallway_1/tick

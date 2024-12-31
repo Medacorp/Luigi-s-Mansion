@@ -10,6 +10,8 @@ playsound luigis_mansion:music.first_key music @s[scores={Jukebox=-101}] ~ ~ ~ 1
 scoreboard players set @s[scores={Jukebox=-101}] Music 500
 playsound luigis_mansion:music.mansion.first_entrance music @s[scores={Jukebox=-100}] ~ ~ ~ 1000
 scoreboard players set @s[scores={Jukebox=-100}] Music 240
+playsound luigis_mansion:furniture.door.chauncey music @s[scores={Jukebox=-26}] ~ ~ ~ 1000
+scoreboard players set @s[scores={Jukebox=-26}] Music 120
 playsound luigis_mansion:music.mansion.room.astral_hall music @s[scores={Jukebox=-25}] ~ ~ ~ 1000
 scoreboard players set @s[scores={Jukebox=-25}] Music 140
 playsound luigis_mansion:music.cleared_observatory music @s[scores={Jukebox=-24}] ~ ~ ~ 1000

@@ -3,7 +3,7 @@ execute if data storage luigis_mansion:data current_state.current_data.portrait_
 tag @s add seen_room_name
 scoreboard players set @s LastFloor 0
 
-execute if data storage luigis_mansion:data current_state.current_data.rooms.graveyard{seen:0b} unless entity @s[tag=spectator] run function luigis_mansion:room/hidden/graveyard/set_seen
+execute if data storage luigis_mansion:data current_state.current_data.rooms.graveyard{seen:0b} if entity @s[tag=!spectator,tag=!fully_separated_camera] run function luigis_mansion:room/hidden/graveyard/set_seen
 
 execute unless entity @s[tag=!wall_warp,tag=!spectator] if entity @s[tag=!already_ticked] run function luigis_mansion:room/hidden/bogmire_battle/wall_warp
 

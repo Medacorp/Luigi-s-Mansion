@@ -1,1 +1,2 @@
-execute unless data storage luigis_mansion:data furniture{no_spawn_sound:1b} run playsound luigis_mansion:furniture.room_clear_chest.spawn block @a ~ ~ ~ 2
+execute unless data storage luigis_mansion:data furniture{no_spawn_sound:1b} run data modify storage luigis_mansion:data dialogs append value {name:{namespace:"luigis_mansion",id:"room_clear_chest"},progress:0,room:0}
+execute unless data storage luigis_mansion:data furniture{no_spawn_sound:1b} store result storage luigis_mansion:data dialogs[-1].room int 1 run scoreboard players get @e[tag=this_entity,limit=1] Room

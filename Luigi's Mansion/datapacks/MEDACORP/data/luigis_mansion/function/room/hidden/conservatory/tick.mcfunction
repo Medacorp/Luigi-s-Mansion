@@ -11,4 +11,14 @@ execute as @a[scores={Room=25}] run function luigis_mansion:room/hidden/conserva
 function #luigis_mansion:room/hidden/conservatory/interactions/room
 #/todelete
 
+execute if entity @e[scores={Room=25,Time=0},tag=play_music,tag=open,tag=saxophone] run particle minecraft:note 658 13 19 0 0 0 1 1 normal @a[scores={Room=25}]
+execute if entity @e[scores={Room=25,Time=0},tag=play_music,tag=open,tag=harp] run particle minecraft:note 656.0 14 22.0 0 0 0 1 1 normal @a[scores={Room=25}]
+execute if entity @e[scores={Room=25,Time=0},tag=play_music,tag=open,tag=cello] run particle minecraft:note 661.0 13 25.0 0 0 0 1 1 normal @a[scores={Room=25}]
+execute if entity @e[scores={Room=25,Time=0},tag=play_music,tag=open,tag=drum_1] run particle minecraft:note 656 12 28 0 0 0 1 1 normal @a[scores={Room=25}]
+execute if entity @e[scores={Room=25,Time=0},tag=play_music,tag=open,tag=drum_2] run particle minecraft:note 657 12 30 0 0 0 1 1 normal @a[scores={Room=25}]
+execute if entity @e[scores={Room=25,Time=0},tag=play_music,tag=open,tag=drum_3] run particle minecraft:note 656 12 32 0 0 0 1 1 normal @a[scores={Room=25}]
+execute if entity @e[scores={Room=25,Time=0},tag=play_music,tag=open,tag=xylophone] run particle minecraft:note 661 12 31 0 0 0 1 1 normal @a[scores={Room=25}]
+execute as @e[scores={Room=25},tag=play_music,tag=open] unless entity @s[scores={Time=1..}] run scoreboard players set @s Time 7
+scoreboard players remove @e[scores={Room=25},tag=play_music,tag=open] Time 1
+
 execute if entity @e[tag=luigi,tag=!door_animation,scores={Room=25},limit=1] run function luigis_mansion:room/hidden/conservatory/ghosts

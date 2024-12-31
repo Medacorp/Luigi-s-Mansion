@@ -1,4 +1,4 @@
-execute in e3_demo:original as @a[scores={Room=1..73},tag=!looking_at_map,tag=!warp,nbt={Dimension:"e3_demo:original"}] at @s run function e3_demo:room/original/floor_header
+execute in e3_demo:original as @a[scores={Room=1..73},tag=!looking_at_map,tag=!warp,tag=!fully_separated_camera,nbt={Dimension:"e3_demo:original"}] at @s run function e3_demo:room/original/floor_header
 execute in e3_demo:original if entity @e[tag=player,distance=0..,scores={PositionIntX=734..757,PositionIntY=10..27,PositionIntZ=-3..20}] run function e3_demo:room/original/entrance/tick
 execute in e3_demo:original if score #entrance Ticking matches 1 unless entity @e[tag=player,distance=0..,scores={PositionIntX=734..757,PositionIntY=10..27,PositionIntZ=-3..20}] unless entity @e[tag=player,scores={Room=1}] run function e3_demo:room/original/entrance/not_ticking
 execute in e3_demo:original if entity @e[tag=player,distance=0..,scores={PositionIntX=734..757,PositionIntY=10..27,PositionIntZ=-3..20}] run function e3_demo:room/original/hallway_1/tick

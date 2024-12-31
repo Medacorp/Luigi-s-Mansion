@@ -1,0 +1,1 @@
+$function luigis_mansion:entities/luigi/move/wall_warp_execute {execute:"at @s",teleport:"$(teleport)"}
