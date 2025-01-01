@@ -254,6 +254,7 @@ scoreboard objectives setdisplay list Health
 execute store result score #global_difficulty Selected run difficulty
 execute unless score #global_mirror_reflections Selected matches 0..1 run scoreboard players set #global_mirror_reflections Selected 1
 execute unless score #global_player_names Selected matches 0..1 run scoreboard players set #global_player_names Selected 1
+execute store result score #debug_enabled Selected run gamerule sendCommandFeedback
 execute unless score #debug_messages Selected matches 0..2 run scoreboard players set #debug_messages Selected 0
 execute unless score #debug_furniture Selected matches 0..1 run scoreboard players set #debug_furniture Selected 0
 execute unless score #debug_entities Selected matches 0..1 run scoreboard players set #debug_entities Selected 0

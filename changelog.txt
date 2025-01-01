@@ -5,7 +5,9 @@ v3.3:
 * Changed Luigi and the camera to be entirely separate; everything originates from Luigi, camera is just synced up
 * Changed Game Boy Horror's Map option to get disabled if in a room where map is not allowed to be opened, rather than trying and failing to open
 * Changed most music track IDs
-* Fixed Lab map area chunks accidentally removed
+* Changed debug settings to be hidden, unless sendCommandFeedback is set to true
+* Fixed lab map area chunks accidentally removed
+* Fixed furniture shaking doesn't work entirely correct; the first of a short shake also no longer visually shakes the model, like the original game
 * Fixed softlock when upgrading a world where E. Gadd wasn't found yet
 * Removed entered_mansion command storage flag; mansion entrance music now plays for all players' first entry, not just the first player
 * Removed found_e_gadd command storage flag; E. Gadd's spawns are no longer conditional, and all other usages were replaced with checking the underground lab cleared state

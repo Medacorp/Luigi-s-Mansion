@@ -21,8 +21,6 @@ execute if entity @s[scores={Room=-2}] unless data storage luigis_mansion:data d
 tag @s remove loaded_chunks
 tag @s remove seen_room_name
 tag @s remove got_selection_menu_how_to
-execute if entity @a[name=Dhranios] run gamerule sendCommandFeedback true
-execute unless entity @a[name=Dhranios] run gamerule sendCommandFeedback false
 title @s[tag=!looking_at_map] times 40 40 40
 title @s[tag=looking_at_map] times 0 40 40
 tag @s add warn_for_add_ons

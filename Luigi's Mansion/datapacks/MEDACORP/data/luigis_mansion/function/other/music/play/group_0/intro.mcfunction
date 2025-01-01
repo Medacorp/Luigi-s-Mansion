@@ -1,3 +1,5 @@
+playsound luigis_mansion:music.boss.boolossus_balcony music @s[scores={MusicType=-27}] ~ ~ ~ 1000
+scoreboard players set @s[scores={MusicType=-27}] Music 348
 playsound luigis_mansion:furniture.door.chauncey music @s[scores={MusicType=-26}] ~ ~ ~ 1000
 scoreboard players set @s[scores={MusicType=-26}] Music 120
 playsound luigis_mansion:music.mansion.room.astral_hall music @s[scores={MusicType=-25}] ~ ~ ~ 1000

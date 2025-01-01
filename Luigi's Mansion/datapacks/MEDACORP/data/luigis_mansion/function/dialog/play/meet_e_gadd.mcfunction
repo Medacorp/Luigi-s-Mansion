@@ -10,8 +10,7 @@ tag @e[tag=same_room,tag=door] remove no_ai
 tag @e[tag=same_room,tag=!no_ai_dialog,tag=!remove_after_dialog] remove freeze_animation
 scoreboard players set @e[tag=ghost,tag=same_room] Sound -1
 execute if score #dialog Dialog matches 1 at @a[tag=same_room] run playsound luigis_mansion:ambience.parlor_wind ambient @a[tag=same_room] ~ ~ ~ 1000
-execute if score #dialog Dialog matches 1 as @e[tag=luigi,tag=walking_player,limit=1] run function luigis_mansion:entities/luigi/make_sound/force {high:"luigis_mansion:entity.player.scare_causion",medium:"luigis_mansion:entity.player.scare_causion",low:"luigis_mansion:entity.player.scare_causion",duration:70}
-execute if score #dialog Dialog matches 1 run scoreboard players set @a[tag=same_room] Sound 70
+execute if score #dialog Dialog matches 1 as @e[tag=luigi,tag=walking_player,limit=1] run function luigis_mansion:entities/luigi/animation/set/scare/causion
 execute if score #dialog Dialog matches 1..100 as @a[tag=same_room,tag=!spectator] run function luigis_mansion:other/music/set/non_overwritten_silence
 execute if score #dialog Dialog matches 101 as @a[tag=same_room] run function luigis_mansion:other/music/set/force/meet_e_gadd
 execute if score #dialog Dialog matches 1 as @e[tag=luigi,tag=walking_player,limit=1] run function luigis_mansion:entities/luigi/move/teleport {teleport:"726 20 27 90 0"}

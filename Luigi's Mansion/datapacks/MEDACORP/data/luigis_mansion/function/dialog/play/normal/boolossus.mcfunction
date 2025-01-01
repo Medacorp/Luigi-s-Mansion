@@ -27,9 +27,7 @@ execute if score #dialog Dialog matches 5 if score #players Totals matches 2.. i
 execute if score #dialog Dialog matches 6.. run tag @e[tag=same_room,nbt={data:{entity:{namespace:"luigis_mansion",id:"boolossus"}}}] add no_ai
 execute if score #dialog Dialog matches 6 as @e[tag=same_room,nbt={data:{entity:{namespace:"luigis_mansion",id:"boolossus"}}}] store result score @s HomeRotation run data get entity @s Rotation[0]
 
-execute if score #dialog Dialog matches 6 run stopsound @a[tag=same_room] music
-execute if score #dialog Dialog matches 6 run playsound luigis_mansion:music.boss.boolossus_balcony music @a[tag=same_room] ~ ~ ~ 1000
-execute if score #dialog Dialog matches 6 run scoreboard players set @a[tag=same_room] Music 348
+execute if score #dialog Dialog matches 6 as @a[tag=same_room] run function luigis_mansion:other/music/set/boolossus_warp
 execute if score #dialog Dialog matches 36 run tag @e[tag=same_room,nbt={data:{entity:{namespace:"luigis_mansion",id:"boolossus"}}},sort=random,nbt=!{data:{animation:{namespace:"luigis_mansion",id:"warp_to_player"}}},limit=1] add trigger_animation
 execute if score #dialog Dialog matches 38 run tag @e[tag=same_room,nbt={data:{entity:{namespace:"luigis_mansion",id:"boolossus"}}},sort=random,nbt=!{data:{animation:{namespace:"luigis_mansion",id:"warp_to_player"}}},limit=1] add trigger_animation
 execute if score #dialog Dialog matches 40 run tag @e[tag=same_room,nbt={data:{entity:{namespace:"luigis_mansion",id:"boolossus"}}},sort=random,nbt=!{data:{animation:{namespace:"luigis_mansion",id:"warp_to_player"}}},limit=1] add trigger_animation

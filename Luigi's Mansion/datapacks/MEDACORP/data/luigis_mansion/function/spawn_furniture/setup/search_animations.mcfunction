@@ -7,4 +7,5 @@ execute if data storage luigis_mansion:data furniture.interact_animation run dat
 execute if data storage luigis_mansion:data furniture.interact_animation.id run data modify entity @e[tag=this_entity,limit=1] ArmorItems[3].components."minecraft:custom_data".interact_animation set value {namespace:"luigis_mansion",id:"null"}
 execute if data storage luigis_mansion:data furniture.interact_animation.namespace run data modify entity @e[tag=this_entity,limit=1] ArmorItems[3].components."minecraft:custom_data".interact_animation.namespace set from storage luigis_mansion:data furniture.interact_animation.namespace
 execute if data storage luigis_mansion:data furniture.interact_animation.id run data modify entity @e[tag=this_entity,limit=1] ArmorItems[3].components."minecraft:custom_data".interact_animation.id set from storage luigis_mansion:data furniture.interact_animation.id
+scoreboard players set @e[tag=this_entity,limit=1] FurnitureShakeTime -1
 scoreboard players set @e[tag=this_entity,limit=1] Sound 0

@@ -5,7 +5,7 @@
             "id": "minecraft:music_disc_13"
         },
         "title": {
-            "type": "translatable", "translate": "luigis_mansion:item.menu.game_boy_horror.jukebox.track.boolossus_battle"
+            "type": "translatable", "translate": "luigis_mansion:item.menu.game_boy_horror.jukebox.track.boolossus_warp"
         },
         "description": {
             "type": "translatable", "translate": "luigis_mansion:advancements.jukebox.get"
@@ -13,13 +13,13 @@
         "announce_to_chat": false,
         "hidden": true
     },
-    "parent": "luigis_mansion:jukebox/boolossus_warp",
+    "parent": "luigis_mansion:jukebox/catching_bogmire",
     "criteria": {
         "unlock": {
             "trigger": "minecraft:impossible"
         }
     },
     "rewards": {
-        "function": "luigis_mansion:advancements/jukebox/boolossus_battle"
+        "function": "luigis_mansion:advancements/jukebox/boolossus_warp"
     }
 }

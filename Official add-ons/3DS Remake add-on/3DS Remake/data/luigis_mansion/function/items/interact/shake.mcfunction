@@ -26,6 +26,7 @@ execute if entity @s[scores={InteractionTime=17}] as @e[tag=interact,tag=manual,
 scoreboard players reset #temp ID
 scoreboard players reset #temp Room
 #/todelete
+execute if entity @s[scores={InteractionTime=2}] unless data storage luigis_mansion:data my_memory.animation{namespace:"luigis_mansion",id:"search/hump"} run tag @e[tag=interact,tag=manual,limit=1] add fake_shake
 execute if entity @s[scores={InteractionTime=2},tag=!not_facing] at @e[tag=interact,tag=manual,limit=1] as @e[tag=furniture,tag=same_room,tag=shaken_by_interact] run function luigis_mansion:items/interact/target_furniture/shake
 execute if entity @s[scores={InteractionTime=2},tag=wall_bump] run function luigis_mansion:blocks/search_sound/wall
 execute if data storage luigis_mansion:data my_memory.animation{namespace:"luigis_mansion",id:"search/knock"} if entity @s[scores={InteractionTime=9},tag=!not_facing] at @e[tag=interact,tag=manual,limit=1] as @e[tag=furniture,tag=same_room,tag=shaken_by_interact] run function luigis_mansion:items/interact/target_furniture/shake

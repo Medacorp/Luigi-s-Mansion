@@ -27,4 +27,4 @@ execute unless entity @s[scores={ErrorTime=2..}] if entity @e[tag=me,limit=1,sco
 execute if entity @s[scores={ErrorTime=2..}] run function luigis_mansion:entities/ghost/damage/strong
 execute if entity @s[scores={Health=..0}] run playsound luigis_mansion:item.poltergust_3000.reel_in player @a[tag=same_room] ~ ~ ~ 1
 
-execute as @e[tag=me,limit=1] run function luigis_mansion:entities/luigi/make_sound/force {high:"luigis_mansion:entity.player.pull.high_health",medium:"luigis_mansion:entity.player.pull.high_health",low:"luigis_mansion:entity.player.pull.low_health",duration:10}
+execute as @e[tag=me,limit=1] run function luigis_mansion:entities/luigi/make_sound/conditional {high:"luigis_mansion:entity.player.pull.high_health",medium:"luigis_mansion:entity.player.pull.high_health",low:"luigis_mansion:entity.player.pull.low_health",duration:10}
