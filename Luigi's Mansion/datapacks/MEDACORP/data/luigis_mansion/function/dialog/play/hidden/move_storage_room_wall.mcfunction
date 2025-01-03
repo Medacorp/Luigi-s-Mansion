@@ -5,6 +5,20 @@ execute as @a[tag=same_room,tag=!spectator,tag=game_boy_horror_menu] run functio
 execute if score #dialog Dialog matches 1..279 as @e[tag=luigi,tag=same_room] run function luigis_mansion:entities/luigi/animation/set/idle_no_poltergust
 execute if score #dialog Dialog matches 1..89 run stopsound @a[tag=same_room] music
 execute if score #dialog Dialog matches 1 run scoreboard players set @a[tag=same_room] Music 90
+execute if score #dialog Dialog matches 1..60 as @a[tag=same_room,limit=1] run function luigis_mansion:entities/player/camera/teleport {teleport:"686.3 11 70.0 75 8"}
+execute if score #dialog Dialog matches 61..105 as @a[tag=same_room,limit=1] run function luigis_mansion:entities/player/camera/teleport {teleport:"686.3 11 70.0 ~0.875 8"}
+execute if score #dialog Dialog matches 106 as @a[tag=same_room,limit=1] run function luigis_mansion:entities/player/camera/teleport {teleport:"683.6 10.5 66.0 130 0"}
+execute if score #dialog Dialog matches 106..160 as @a[tag=same_room,limit=1] run function luigis_mansion:entities/player/camera/teleport {teleport:"~0.036 10.5 ~-0.033 130 0"}
+execute if score #dialog Dialog matches 161 as @a[tag=same_room,limit=1] run function luigis_mansion:entities/player/camera/teleport {teleport:"685.8 10.5 79 140 0"}
+execute if score #dialog Dialog matches 161..220 as @a[tag=same_room,limit=1] run function luigis_mansion:entities/player/camera/teleport {teleport:"~0.003 ~0.066 ~-0.016 140 0"}
+execute if score #dialog Dialog matches 221 as @a[tag=same_room,limit=1] run function luigis_mansion:entities/player/camera/teleport {teleport:"687 10.5 65.0 145 0"}
+execute if score #dialog Dialog matches 221..260 as @a[tag=same_room,limit=1] run function luigis_mansion:entities/player/camera/teleport {teleport:"~-0.025 10.5 ~-0.0125 145 0"}
+execute if score #dialog Dialog matches 261..265 run particle minecraft:dust{color:11711129,scale:1.5f} 685 11 55.0 3 0 0.5 1 120 normal @a[tag=same_room,limit=1]
+execute if score #dialog Dialog matches 261..265 as @a[tag=same_room,limit=1] run function luigis_mansion:entities/player/camera/teleport {teleport:"^ ^ ^0.01 ~ ~"}
+execute if score #dialog Dialog matches 266..270 as @a[tag=same_room,limit=1] run function luigis_mansion:entities/player/camera/teleport {teleport:"^ ^ ^-0.01 ~ ~"}
+execute if score #dialog Dialog matches 271..275 as @a[tag=same_room,limit=1] run function luigis_mansion:entities/player/camera/teleport {teleport:"^ ^ ^0.01 ~ ~"}
+execute if score #dialog Dialog matches 276..279 as @a[tag=same_room,limit=1] run function luigis_mansion:entities/player/camera/teleport {teleport:"^ ^ ^-0.01 ~ ~"}
+execute if score #dialog Dialog matches 276..279 as @a[tag=same_room,limit=1] run function luigis_mansion:entities/player/camera/reset
 execute if score #dialog Dialog matches 40 run fill 682 11 67 682 12 67 minecraft:air
 execute if score #dialog Dialog matches 40..240 run fill 681 11 67 689 17 54 minecraft:air replace minecraft:light
 execute if score #dialog Dialog matches 40 run clone 681 11 67 689 17 66 681 11 65 replace move

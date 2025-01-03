@@ -13,7 +13,7 @@
         "announce_to_chat": false,
         "hidden": true
     },
-    "parent": "luigis_mansion:jukebox/boos_released",
+    "parent": "luigis_mansion:jukebox/floating_whirlindas",
     "criteria": {
         "unlock": {
             "trigger": "minecraft:impossible"

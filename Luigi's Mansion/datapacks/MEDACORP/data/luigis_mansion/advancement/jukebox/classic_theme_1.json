@@ -13,7 +13,7 @@
         "announce_to_chat": false,
         "hidden": true
     },
-    "parent": "luigis_mansion:jukebox/super_mario_bros",
+    "parent": "luigis_mansion:jukebox/boos_released",
     "criteria": {
         "unlock": {
             "trigger": "minecraft:impossible"

@@ -13,7 +13,7 @@
         "announce_to_chat": false,
         "hidden": true
     },
-    "parent": "luigis_mansion:jukebox/secret_altar_magic",
+    "parent": "luigis_mansion:jukebox/sue_pea",
     "criteria": {
         "unlock": {
             "trigger": "minecraft:impossible"

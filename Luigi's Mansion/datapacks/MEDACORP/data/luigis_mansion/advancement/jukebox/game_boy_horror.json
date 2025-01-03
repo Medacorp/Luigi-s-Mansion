@@ -13,7 +13,7 @@
         "announce_to_chat": false,
         "hidden": true
     },
-    "parent": "luigis_mansion:jukebox/paintings",
+    "parent": "luigis_mansion:jukebox/lit_room",
     "criteria": {
         "unlock": {
             "trigger": "minecraft:impossible"

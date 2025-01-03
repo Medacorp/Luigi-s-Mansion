@@ -13,7 +13,7 @@
         "announce_to_chat": false,
         "hidden": true
     },
-    "parent": "luigis_mansion:jukebox/floating_whirlindas",
+    "parent": "luigis_mansion:jukebox/chaunceys_door",
     "criteria": {
         "unlock": {
             "trigger": "minecraft:impossible"

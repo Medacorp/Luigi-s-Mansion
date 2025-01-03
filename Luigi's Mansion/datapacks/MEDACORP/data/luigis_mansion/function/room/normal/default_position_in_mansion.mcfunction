@@ -1,1 +1,1 @@
-function luigis_mansion:entities/luigi/move/execute {execute:"in luigis_mansion:normal",teleport:"751.0 11 9.0"}
+function luigis_mansion:entities/luigi/move/wall_warp_execute {execute:"in luigis_mansion:normal",teleport:"751.0 11 9.0"}

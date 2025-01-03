@@ -13,7 +13,7 @@
         "announce_to_chat": false,
         "hidden": true
     },
-    "parent": "luigis_mansion:jukebox/meet_e_gadd",
+    "parent": "e3_demo:jukebox/meet_e_gadd",
     "criteria": {
         "unlock": {
             "trigger": "minecraft:impossible"

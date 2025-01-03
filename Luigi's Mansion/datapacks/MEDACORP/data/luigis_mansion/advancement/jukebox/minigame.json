@@ -13,7 +13,7 @@
         "announce_to_chat": false,
         "hidden": true
     },
-    "parent": "luigis_mansion:jukebox/observatory_path",
+    "parent": "luigis_mansion:jukebox/piano_battle",
     "criteria": {
         "unlock": {
             "trigger": "minecraft:impossible"
