@@ -1,6 +1,41 @@
 {
-  "model": {
-    "type": "minecraft:model",
-    "model": "luigis_mansion:item/key"
-  }
+    "model": {
+        "type": "minecraft:select",
+        "property": "minecraft:custom_model_data",
+        "index": 0,
+        "cases": [
+            {
+                "when": "heart",
+                "model": {
+                    "type": "minecraft:model",
+                    "model": "luigis_mansion:item/heart_key"
+                }
+            },
+            {
+                "when": "club",
+                "model": {
+                    "type": "minecraft:model",
+                    "model": "luigis_mansion:item/club_key"
+                }
+            },
+            {
+                "when": "diamond",
+                "model": {
+                    "type": "minecraft:model",
+                    "model": "luigis_mansion:item/diamond_key"
+                }
+            },
+            {
+                "when": "spade",
+                "model": {
+                    "type": "minecraft:model",
+                    "model": "luigis_mansion:item/spade_key"
+                }
+            }
+        ],
+        "fallback": {
+            "type": "minecraft:model",
+            "model": "luigis_mansion:item/key"
+        }
+    }
 }

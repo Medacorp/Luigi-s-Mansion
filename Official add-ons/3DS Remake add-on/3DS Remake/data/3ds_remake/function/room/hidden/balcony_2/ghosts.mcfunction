@@ -1,2 +1,3 @@
+execute if score #balcony_2 Wave matches 2 as @a run function 3ds_remake:room/hidden/boolossus_battle/warp_to
 execute unless data storage luigis_mansion:data current_state.current_data.rooms.balcony_2{cleared:1b} if data storage luigis_mansion:data current_state.current_data{blackout:0b} unless score #balcony_2 Wave matches 1..99 run function 3ds_remake:room/hidden/balcony_2/wave_1
 execute if data storage luigis_mansion:data current_state.current_data{blackout:1b} unless score #balcony_2 Wave matches 1.. run function 3ds_remake:room/hidden/balcony_2/blackout

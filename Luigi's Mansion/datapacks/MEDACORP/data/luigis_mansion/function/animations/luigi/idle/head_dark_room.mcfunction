@@ -1,3 +1,4 @@
+execute store result score #temp Time run data get entity @s Pose.Head[2] 4
 execute if entity @s[scores={Time=1}] store result entity @s Pose.Head[2] float 0.25 run scoreboard players add #temp Time 1
 execute if entity @s[scores={Time=2..3}] store result entity @s Pose.Head[2] float 0.25 run scoreboard players remove #temp Time 1
 execute if entity @s[scores={Time=4..5}] store result entity @s Pose.Head[2] float 0.25 run scoreboard players add #temp Time 1

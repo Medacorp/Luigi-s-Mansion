@@ -41,4 +41,5 @@ execute if score #dialog Dialog matches 128 run tag @e[nbt={data:{entity:{namesp
 execute if score #dialog Dialog matches 128 run tag @e[nbt={data:{entity:{namespace:"luigis_mansion",id:"chauncey"}}},tag=same_room,limit=1] add vanish
 execute if score #dialog Dialog matches 148 as @e[tag=luigi,tag=same_room] run function luigis_mansion:entities/luigi/animation/set/none
 execute if score #dialog Dialog matches 148 as @a[tag=same_room] run function luigis_mansion:other/music/set/silence
+execute if score #dialog Dialog matches 148 run scoreboard players add #nursery Wave 1
 execute if score #dialog Dialog matches 148 run scoreboard players set #dialog Dialog -1

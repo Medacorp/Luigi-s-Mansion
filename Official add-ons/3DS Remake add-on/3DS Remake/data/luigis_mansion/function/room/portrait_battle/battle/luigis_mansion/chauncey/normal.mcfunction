@@ -1,1 +1,1 @@
-execute as @a run function luigis_mansion:entities/luigi/move/execute {execute:"in luigis_mansion:normal",teleport:"805.0 18 64.0 90 0"}
+execute as @a run function luigis_mansion:entities/luigi/move/execute {execute:"in luigis_mansion:normal",teleport:"805.0 18 64.0 45 0"}

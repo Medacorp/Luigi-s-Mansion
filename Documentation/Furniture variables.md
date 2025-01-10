@@ -115,6 +115,7 @@ furniture:{
         blocked:1b, //How the door is blocked, 0b = not, 1b = blockade, 2b = arena blockade, 3b = barricade, 4b = uninteractable. Default = 0b.
         burning:"extinguish_kitchen_door", //Only if the door is burning, the save data field to write on extinguish. If it's already written, the door won't burn. Default = none.
         key:"parlor", //What key this door needs. Default = none.
+        key_model: {}, //The item components for the key to use. Value merges with default. Default = {"minecraft:item_model":"luigis_mansion:key","minecraft:custom_model_data":{strings:["default"]}}.
         go_through_command:"<command>", //A command this door needs to run at the moment of warping the player as the player. Used by the front door and some special cases. Default = none.
         other_end:{ //Coordinates of the door on the other side to trigger opening animation for; does not affect warping. Default = none.
             dimension:"luigis_mansion:normal", //The dimension of the other door. Default = the dimension of this door.

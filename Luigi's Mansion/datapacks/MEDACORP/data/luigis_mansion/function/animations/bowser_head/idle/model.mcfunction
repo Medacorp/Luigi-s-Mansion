@@ -1,2 +1,2 @@
 execute unless score #mirrored Selected matches 1 run function luigis_mansion:animations/bowser_head/idle/normal/model
-execute if score #mirrored Selected matches 1 run function luigis_mansion:animations/bowser_head/idle/mirrored/bowser_head
+execute if score #mirrored Selected matches 1 run function luigis_mansion:animations/bowser_head/idle/mirrored/model

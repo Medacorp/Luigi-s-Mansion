@@ -1,7 +1,19 @@
 v3.3:
 * Added Jukebox
-* Added First Entrance, First Key, and Meet E. Gadd cutscene camera movement
+* Added cutscene camera movement to the following dialogs/cutscenes:
+** First Entrance (new)
+** First Key
+** Meet E. Gadd
+** Paintings
+** (3DS) Blockade (new)
+** Room Clear Chest (new)
+** Chauncey's Door
+** Move the Storage Room Wall
+** Released Boos
+** King Boo Appears (new)
+** Bowser Corrects Head (new)
 * Added a method to automatically play a sound for Luigi based on some conditions, removing a bunch of 3DS Remake overwriting files
+* Added a few animations that were missing
 * Changed Luigi and the camera to be entirely separate; everything originates from Luigi, camera is just synced up
 * Changed Game Boy Horror's Map option to get disabled if in a room where map is not allowed to be opened, rather than trying and failing to open
 * Changed most music track IDs
@@ -9,8 +21,8 @@ v3.3:
 * Fixed lab map area chunks accidentally removed
 * Fixed furniture shaking doesn't work entirely correct; the first of a short shake also no longer visually shakes the model, like the original game
 * Fixed softlock when upgrading a world where E. Gadd wasn't found yet
-* Removed entered_mansion command storage flag; mansion entrance music now plays for all players' first entry, not just the first player
-* Removed found_e_gadd command storage flag; E. Gadd's spawns are no longer conditional, and all other usages were replaced with checking the underground lab cleared state
+* Removed entered_mansion command storage flag; mansion entrance music/cutscene now plays for all players' first entry, not just the first player
+* Removed found_e_gadd command storage flag; E. Gadd's spawns are no longer conditional as you cannot go to the lab before going to the mansion anymore, and all other usages were replaced with checking the underground lab cleared state
 
 v3.2:
 * Updated to 1.21.4

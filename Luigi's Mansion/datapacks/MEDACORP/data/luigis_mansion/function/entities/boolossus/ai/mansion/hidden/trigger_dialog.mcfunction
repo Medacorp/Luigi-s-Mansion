@@ -1,2 +1,0 @@
-data modify storage luigis_mansion:data dialogs append value {name:{namespace:"luigis_mansion",id:"hidden/boolossus"},room:53,progress:0,target_player:0}
-execute store result storage luigis_mansion:data dialogs[{room:53}].target_player int 1 run scoreboard players get @s ID

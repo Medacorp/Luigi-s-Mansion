@@ -6,6 +6,6 @@ data modify entity @s[scores={Dialog=1}] data.animation set value {namespace:"lu
 teleport @s[scores={Dialog=2..21},tag=decapitate_move_up] ^ ^0.1 ^-0.8
 teleport @s[scores={Dialog=2..21},tag=!decapitate_move_up] ^ ^ ^-0.8
 tag @s[scores={Dialog=40}] remove decapitate_move_up
-tag @s[scores={Dialog=40}] remove decapitate
-data remove entity @s[scores={Dialog=40}] data.animation
-scoreboard players set @s[scores={Dialog=40}] Dialog 0
+tag @s[scores={Dialog=70}] remove decapitate
+data remove entity @s[scores={Dialog=70}] data.animation
+scoreboard players set @s[scores={Dialog=70}] Dialog 0

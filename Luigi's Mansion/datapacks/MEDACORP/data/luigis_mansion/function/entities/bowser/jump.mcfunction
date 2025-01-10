@@ -9,7 +9,8 @@ execute if entity @s[scores={ActionTime=55}] at @e[tag=same_room,tag=luigi,sort=
 execute if entity @s[scores={ActionTime=55}] store result entity @s Pos[1] double 1 run scoreboard players get #temp Time
 scoreboard players reset #temp Time
 data remove entity @s[scores={ActionTime=41}] data.animation
-data modify entity @s[scores={ActionTime=70}] data.animation set value {namespace:"luigis_mansion",id:"roar"}
+data modify entity @s[scores={ActionTime=20}] data.animation set value {namespace:"luigis_mansion",id:"crouch"}
+data modify entity @s[scores={ActionTime=60}] data.animation set value {namespace:"luigis_mansion",id:"short_roar"}
 execute at @s[scores={ActionTime=56..80}] run teleport @s ~ ~-1 ~
 execute if entity @s[scores={ActionTime=80}] run playsound luigis_mansion:entity.bowser.land hostile @a[tag=same_room] ~ ~ ~ 3
 tag @s[scores={ActionTime=140}] remove jump

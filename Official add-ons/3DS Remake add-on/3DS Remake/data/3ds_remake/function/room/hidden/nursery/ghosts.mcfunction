@@ -1,3 +1,3 @@
-execute if score #nursery Wave matches 1.. if entity @e[nbt={data:{entity:{namespace:"luigis_mansion",id:"chauncey"}}},tag=vanish,tag=!visible] as @a run function 3ds_remake:room/hidden/chauncey_battle/warp_to
+execute if score #nursery Wave matches 2 as @a run function 3ds_remake:room/hidden/chauncey_battle/warp_to
 execute unless data storage luigis_mansion:data current_state.current_data.rooms.nursery{cleared:1b} if data storage luigis_mansion:data current_state.current_data{blackout:0b} unless score #nursery Wave matches 1..99 run function 3ds_remake:room/hidden/nursery/wave_1
 execute if data storage luigis_mansion:data current_state.current_data{blackout:1b} unless score #nursery Wave matches 1.. run function 3ds_remake:room/hidden/nursery/blackout

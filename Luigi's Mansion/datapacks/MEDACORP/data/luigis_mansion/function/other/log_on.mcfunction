@@ -3,14 +3,9 @@ execute store result score @s ID run data get storage luigis_mansion:data my_mem
 data modify storage luigis_mansion:data memory append from storage luigis_mansion:data my_memory
 data remove storage luigis_mansion:data my_memory
 execute unless entity @s[scores={Shrunk=0..}] run function luigis_mansion:other/initial_scores
-execute if entity @s[scores={ClearInventory=1}] run clear @s
-scoreboard players reset @s ClearInventory
-scoreboard players set @s Music 0
-scoreboard players set @s GradualMusic 0
-scoreboard players set @s HealthMusic 0
-scoreboard players set @s LastHealthMusic 1
+function luigis_mansion:other/music/set/silence
+execute unless entity @s[scores={Jukebox=0}] run function luigis_mansion:selection_menu/game_boy_horror/jukebox/stop
 scoreboard players set @s Offline 0
-scoreboard players set @s PreviousMusicType 0
 scoreboard players set @s RoomNoise 0
 scoreboard players set @s LoadedChunks 0
 scoreboard players set @s CreditsTime 0

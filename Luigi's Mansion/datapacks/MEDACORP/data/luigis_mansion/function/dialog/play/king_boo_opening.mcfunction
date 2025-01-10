@@ -1,0 +1,25 @@
+execute unless entity @e[tag=ghost,tag=same_room,limit=1] run tag @e[tag=same_room] add abort_dialog_tick
+execute unless entity @e[tag=ghost,tag=same_room,limit=1] run return 0
+scoreboard players add #dialog Dialog 1
+execute if score #dialog Dialog matches 1.. as @a[tag=same_room] run function luigis_mansion:other/music/set/king_boo_battle
+execute if score #dialog Dialog matches 1..239 as @e[tag=luigi,tag=same_room] run function luigis_mansion:entities/luigi/animation/set/high_health_idle_no_sound
+execute if score #dialog Dialog matches 187..230 as @e[tag=ghost,tag=same_room,limit=1] at @s run teleport @s ~ ~-1 ~
+execute if score #dialog Dialog matches 230 at @e[tag=ghost,tag=same_room,limit=1] run playsound luigis_mansion:entity.bowser.land hostile @a[tag=same_room] ~ ~ ~ 3
+execute if score #dialog Dialog matches 230 as @e[tag=ghost,tag=same_room,limit=1] at @s run teleport @s ~ 37 ~
+execute if score #dialog Dialog matches 239 as @e[tag=luigi,tag=same_room] run function luigis_mansion:entities/luigi/animation/set/none
+execute if score #dialog Dialog matches 240 as @e[tag=luigi,tag=same_room] at @s positioned ^ ^ ^1 run function luigis_mansion:entities/luigi/animation/set/scare/bash_no_move
+execute if score #dialog Dialog matches 240..329 unless score #mirrored Selected matches 1 as @e[tag=luigi,tag=same_room,scores={AnimationProgress=30}] at @s positioned ^ ^ ^1 unless entity @e[tag=ghost,tag=same_room,distance=..3,limit=1] positioned ^ ^ ^1 unless entity @e[tag=ghost,tag=same_room,distance=..3,limit=1] positioned ^ ^ ^1 unless entity @e[tag=ghost,tag=same_room,distance=..3,limit=1] positioned ^ ^ ^1 unless entity @e[tag=ghost,tag=same_room,distance=..3,limit=1] positioned ^ ^ ^1 unless entity @e[tag=ghost,tag=same_room,distance=..3,limit=1] positioned ^ ^ ^1 unless entity @e[tag=ghost,tag=same_room,distance=..3,limit=1] positioned ^ ^ ^1 unless entity @e[tag=ghost,tag=same_room,distance=..3,limit=1] at @s rotated ~5 0 positioned ^ ^ ^-0.1 run function luigis_mansion:entities/luigi/animation/scare/bash_force_move
+execute if score #dialog Dialog matches 240..329 if score #mirrored Selected matches 1 as @e[tag=luigi,tag=same_room,scores={AnimationProgress=30}] at @s positioned ^ ^ ^1 unless entity @e[tag=ghost,tag=same_room,distance=..3,limit=1] positioned ^ ^ ^1 unless entity @e[tag=ghost,tag=same_room,distance=..3,limit=1] positioned ^ ^ ^1 unless entity @e[tag=ghost,tag=same_room,distance=..3,limit=1] positioned ^ ^ ^1 unless entity @e[tag=ghost,tag=same_room,distance=..3,limit=1] positioned ^ ^ ^1 unless entity @e[tag=ghost,tag=same_room,distance=..3,limit=1] positioned ^ ^ ^1 unless entity @e[tag=ghost,tag=same_room,distance=..3,limit=1] positioned ^ ^ ^1 unless entity @e[tag=ghost,tag=same_room,distance=..3,limit=1] at @s rotated ~-5 0 positioned ^ ^ ^-0.1 run function luigis_mansion:entities/luigi/animation/scare/bash_force_move
+execute if score #dialog Dialog matches 240..329 as @e[tag=luigi,tag=same_room,scores={AnimationProgress=30},distance=..9] at @s positioned ^ ^ ^5 if entity @e[tag=ghost,tag=same_room,distance=..5,limit=1] at @s facing entity @e[tag=ghost,tag=same_room,limit=1] feet rotated ~ 0 positioned ^ ^ ^-0.1 run function luigis_mansion:entities/luigi/animation/scare/bash_force_move
+execute if score #dialog Dialog matches 240..400 run scoreboard players set @e[tag=luigi,tag=same_room,limit=1,scores={AnimationProgress=30..}] AnimationProgress 29
+execute if score #dialog Dialog matches 230 run data modify entity @e[tag=ghost,tag=same_room,limit=1] data.animation set value {namespace:"luigis_mansion",id:"crouch"}
+execute if score #dialog Dialog matches 280 run data modify entity @e[tag=ghost,tag=same_room,limit=1] data.animation set value {namespace:"luigis_mansion",id:"roar"}
+execute if score #dialog Dialog matches 340 run data modify entity @e[tag=ghost,tag=same_room,limit=1] data.animation set value {namespace:"luigis_mansion",id:"attach_head"}
+execute if score #dialog Dialog matches 400 run data modify entity @e[tag=ghost,tag=same_room,limit=1] data.animation
+execute if score #dialog Dialog matches 340..369 as @e[tag=luigi,tag=same_room] run function luigis_mansion:entities/luigi/animation/set/scare/staredown
+execute if score #dialog Dialog matches 569 as @e[tag=luigi,tag=same_room] run function luigis_mansion:entities/luigi/animation/set/scare/none
+execute if score #dialog Dialog matches 370..539 as @e[tag=luigi,tag=same_room] run function luigis_mansion:entities/luigi/animation/set/scare/staredown_look_around
+execute if score #dialog Dialog matches 370..510 as @e[tag=ghost,tag=same_room,limit=1] at @s run function luigis_mansion:entities/bowser/attack/breathe_fire
+execute if score #dialog Dialog matches 540 run tag @e[tag=ghost,tag=same_room,limit=1] remove no_ai
+execute if score #dialog Dialog matches 540 as @e[tag=luigi,tag=same_room] run function luigis_mansion:entities/luigi/animation/set/none
+execute if score #dialog Dialog matches 540 run scoreboard players set #dialog Dialog -1
