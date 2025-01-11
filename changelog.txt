@@ -4,12 +4,17 @@ v3.3:
 ** First Entrance (new)
 ** First Key
 ** Meet E. Gadd
+** Falling Chandelier
 ** Paintings
 ** (3DS) Blockade (new)
 ** Room Clear Chest (new)
 ** Chauncey's Door
 ** Move the Storage Room Wall
 ** Released Boos
+** Madame Clairvoya
+** Mario's Item
+** Bogmire Ready
+** Bogmire (Graveyard section of boss intro, previously entity behavior)
 ** King Boo Appears (new)
 ** Bowser Corrects Head (new)
 * Added a method to automatically play a sound for Luigi based on some conditions, removing a bunch of 3DS Remake overwriting files

@@ -1,7 +1,6 @@
 execute if data storage luigis_mansion:data my_memory run tag @s add keep_memory
 execute if entity @s[tag=!keep_memory] run function luigis_mansion:entities/player/memory/get with entity @s
 data remove storage luigis_mansion:data my_memory.animation
-scoreboard players set @s AnimationProgress 0
 scoreboard players operation #temp ID = @s ID
 execute as @e[tag=knockback_model] if score #temp ID = @s ID run tag @s add dead
 scoreboard players reset #temp ID

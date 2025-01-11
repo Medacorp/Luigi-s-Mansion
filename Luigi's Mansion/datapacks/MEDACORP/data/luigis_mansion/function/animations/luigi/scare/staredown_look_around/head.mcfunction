@@ -5,12 +5,12 @@ data modify entity @s[scores={AnimationProgress=1}] ArmorItems[3] merge from ent
 scoreboard players operation #temp AnimationProgress = @s AnimationProgress
 scoreboard players operation #temp AnimationProgress %= #4 Constants
 execute store result score #temp Time run data get entity @s Pose.Head[1]
-execute if entity @s[scores={AnimationProgress=1..10}] unless score #mirrored Selected matches 1 store result entity @s Pose.Head[1] float 1 run scoreboard players add #temp Time 3
-execute if entity @s[scores={AnimationProgress=41..60}] unless score #mirrored Selected matches 1 store result entity @s Pose.Head[1] float 1 run scoreboard players remove #temp Time 3
-execute if entity @s[scores={AnimationProgress=91..100}] unless score #mirrored Selected matches 1 store result entity @s Pose.Head[1] float 1 run scoreboard players add #temp Time 3
-execute if entity @s[scores={AnimationProgress=1..10}] if score #mirrored Selected matches 1 store result entity @s Pose.Head[1] float 1 run scoreboard players remove #temp Time 3
-execute if entity @s[scores={AnimationProgress=41..60}] if score #mirrored Selected matches 1 store result entity @s Pose.Head[1] float 1 run scoreboard players add #temp Time 3
-execute if entity @s[scores={AnimationProgress=91..100}] if score #mirrored Selected matches 1 store result entity @s Pose.Head[1] float 1 run scoreboard players remove #temp Time 3
+execute if entity @s[scores={AnimationProgress=1..10}] unless score #mirrored Selected matches 1 store result entity @s Pose.Head[1] float 1 run scoreboard players add #temp Time 5
+execute if entity @s[scores={AnimationProgress=41..60}] unless score #mirrored Selected matches 1 store result entity @s Pose.Head[1] float 1 run scoreboard players remove #temp Time 5
+execute if entity @s[scores={AnimationProgress=91..100}] unless score #mirrored Selected matches 1 store result entity @s Pose.Head[1] float 1 run scoreboard players add #temp Time 5
+execute if entity @s[scores={AnimationProgress=1..10}] if score #mirrored Selected matches 1 store result entity @s Pose.Head[1] float 1 run scoreboard players remove #temp Time 5
+execute if entity @s[scores={AnimationProgress=41..60}] if score #mirrored Selected matches 1 store result entity @s Pose.Head[1] float 1 run scoreboard players add #temp Time 5
+execute if entity @s[scores={AnimationProgress=91..100}] if score #mirrored Selected matches 1 store result entity @s Pose.Head[1] float 1 run scoreboard players remove #temp Time 5
 execute store result score #temp Time run data get entity @s Pose.Head[2] 4
 execute unless score #temp AnimationProgress matches 1..2 store result entity @s Pose.Head[2] float 0.25 run scoreboard players add #temp Time 1
 execute if score #temp AnimationProgress matches 1..2 store result entity @s Pose.Head[2] float 0.25 run scoreboard players remove #temp Time 1

@@ -18,8 +18,11 @@ tag @e[tag=same_room,tag=furniture,tag=incense] remove no_ai
 scoreboard players reset @a[tag=same_room,tag=!spectator] WarpTime
 execute as @a[tag=same_room,tag=!spectator,tag=game_boy_horror_menu] run function luigis_mansion:selection_menu/game_boy_horror/exit
 tag @e[tag=same_room,nbt={data:{entity:{namespace:"luigis_mansion",id:"madame_clairvoya"}}},limit=1] remove freeze_animation
+execute if score #dialog Dialog matches 1..48 as @a[tag=same_room] run function luigis_mansion:entities/player/camera/execute {execute:"at @e[tag=same_room,nbt={data:{entity:{namespace:'luigis_mansion',id:'madame_clairvoya'}}},limit=1] positioned ^ ^ ^3 unless entity @e[tag=same_room,tag=luigi,distance=..2,limit=1] facing entity @e[tag=same_room,nbt={data:{entity:{namespace:'luigis_mansion',id:'madame_clairvoya'}}},limit=1] feet",teleport:"~ ~0.5 ~ ~ ~"}
+execute if score #dialog Dialog matches 1..48 unless score #mirrored Selected matches 1 as @a[tag=same_room] run function luigis_mansion:entities/player/camera/execute {execute:"at @e[tag=same_room,nbt={data:{entity:{namespace:'luigis_mansion',id:'madame_clairvoya'}}},limit=1] positioned ^ ^ ^3 if entity @e[tag=same_room,tag=luigi,distance=..2,limit=1] positioned ^3 ^ ^-1.5 facing entity @e[tag=same_room,nbt={data:{entity:{namespace:'luigis_mansion',id:'madame_clairvoya'}}},limit=1] feet",teleport:"~ ~0.5 ~ ~-20 ~"}
+execute if score #dialog Dialog matches 1..48 if score #mirrored Selected matches 1 as @a[tag=same_room] run function luigis_mansion:entities/player/camera/execute {execute:"at @e[tag=same_room,nbt={data:{entity:{namespace:'luigis_mansion',id:'madame_clairvoya'}}},limit=1] positioned ^ ^ ^3 if entity @e[tag=same_room,tag=luigi,distance=..2,limit=1] positioned ^-3 ^ ^-1.5 facing entity @e[tag=same_room,nbt={data:{entity:{namespace:'luigis_mansion',id:'madame_clairvoya'}}},limit=1] feet",teleport:"~ ~0.5 ~ ~20 ~"}
 execute if score #dialog Dialog matches 1 run data modify entity @e[tag=same_room,nbt={data:{entity:{namespace:"luigis_mansion",id:"madame_clairvoya"}}},limit=1] data.animation set value {namespace:"luigis_mansion",id:"nod"}
-execute if score #dialog Dialog matches 1..49 as @e[tag=luigi,tag=same_room] run function luigis_mansion:entities/luigi/animation/set/high_health_idle_no_sound
+execute if score #dialog Dialog matches 1..3 as @e[tag=luigi,tag=same_room] run function luigis_mansion:entities/luigi/animation/set/high_health_idle_no_sound
 execute if score #dialog Dialog matches 1..356 as @a[tag=same_room] run function luigis_mansion:other/music/set/talking_ghosts
 execute if score #dialog Dialog matches 1 if score #players Totals matches 1 run tellraw @a[tag=same_room] {"type":"translatable","translate":"chat.type.text","with":[{"type":"translatable","translate":"luigis_mansion:entity.madame_clairvoya","color":"green"},{"type":"translatable","translate":"luigis_mansion:dialog.madame_clairvoya.1"}]}
 execute if score #dialog Dialog matches 1 if score #players Totals matches 2.. run tellraw @a[tag=same_room] {"type":"translatable","translate":"chat.type.text","with":[{"type":"translatable","translate":"luigis_mansion:entity.madame_clairvoya","color":"green"},{"type":"translatable","translate":"luigis_mansion:dialog.madame_clairvoya.1.more"}]}
@@ -41,6 +44,7 @@ execute if score #dialog Dialog matches 47 as @e[tag=luigi,tag=same_room] run fu
 
 execute if score #dialog Dialog matches 48 run scoreboard players set #dialog Dialog -1
 
+execute if score #dialog Dialog matches -1 as @a[tag=same_room] run function luigis_mansion:entities/player/camera/reset
 execute if score #dialog Dialog matches -1 run data remove entity @e[tag=same_room,nbt={data:{entity:{namespace:"luigis_mansion",id:"madame_clairvoya"}}},limit=1] data.animation
 execute if score #dialog Dialog matches -1 as @e[tag=luigi,tag=same_room] run function luigis_mansion:entities/luigi/animation/set/none
 execute if score #dialog Dialog matches -1 as @a[tag=same_room] run function luigis_mansion:other/music/set/silence

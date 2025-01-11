@@ -9,8 +9,9 @@ execute if score #dialog Dialog matches 100 as @e[tag=luigi,tag=same_room] run f
 execute if score #dialog Dialog matches 200 as @e[tag=luigi,tag=same_room] run function luigis_mansion:entities/luigi/animation/set/knockback/flee_look_up
 execute if score #dialog Dialog matches 120..180 run teleport @e[tag=ghost,tag=same_room,tag=merged,limit=1] ~ ~ ~ ~ ~1.5
 execute if score #dialog Dialog matches 198..260 run teleport @e[tag=ghost,tag=same_room,tag=merged,limit=1] ~ ~-1 ~
-execute if score #dialog Dialog matches 260 as @e[tag=luigi,tag=same_room] run function luigis_mansion:entities/luigi/animation/set/scare/bash_no_move
-execute if score #dialog Dialog matches 260..349 run scoreboard players set @e[tag=luigi,tag=same_room] AnimationProgress 29
+execute if score #dialog Dialog matches 260 as @e[tag=luigi,tag=same_room] run function luigis_mansion:entities/luigi/animation/set/scare/none
+execute if score #dialog Dialog matches 260 as @e[tag=luigi,tag=same_room] at @s positioned ^ ^ ^-1 run function luigis_mansion:entities/luigi/animation/set/scare/bash_no_move
+execute if score #dialog Dialog matches 260 as @e[tag=luigi_model,tag=same_room] run data modify entity @s data.initial_animation_progress set value 30
 execute if score #dialog Dialog matches 260..349 run scoreboard players set @e[tag=luigi,tag=same_room,scores={AnimationProgress=..29}] AnimationProgress 29
 execute if score #dialog Dialog matches 260 at @e[tag=ghost,tag=same_room,tag=merged,limit=1] run playsound luigis_mansion:entity.boolossus.bounce hostile @a[tag=same_room] ~ ~ ~ 3
 execute if score #dialog Dialog matches 290..300 run teleport @e[tag=ghost,tag=same_room,tag=merged,limit=1] ~ ~0.2 ~ ~ ~-4.5

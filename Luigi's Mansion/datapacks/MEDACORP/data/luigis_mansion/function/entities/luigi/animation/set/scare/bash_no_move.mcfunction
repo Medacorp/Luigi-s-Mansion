@@ -7,9 +7,10 @@ execute unless entity @s[nbt={data:{animation:{}}},nbt=!{data:{animation:{namesp
 execute unless entity @s[nbt={data:{animation:{}}},nbt=!{data:{animation:{namespace:"luigis_mansion",id:"yell"}}},tag=!idle] unless data storage luigis_mansion:data my_memory.animation{namespace:"luigis_mansion",id:"scare/bash"} run function luigis_mansion:entities/luigi/animation/shared/face_origin
 execute unless entity @s[nbt={data:{animation:{}}},nbt=!{data:{animation:{namespace:"luigis_mansion",id:"yell"}}},tag=!idle] unless data storage luigis_mansion:data my_memory.animation{namespace:"luigis_mansion",id:"scare/bash"} run scoreboard players reset @s MaxHealthTime
 execute unless entity @s[nbt={data:{animation:{}}},nbt=!{data:{animation:{namespace:"luigis_mansion",id:"yell"}}},tag=!idle] unless data storage luigis_mansion:data my_memory.animation{namespace:"luigis_mansion",id:"scare/bash"} run scoreboard players set @s Sound 0
-execute unless entity @s[nbt={data:{animation:{}}},nbt=!{data:{animation:{namespace:"luigis_mansion",id:"yell"}}},tag=!idle] unless data storage luigis_mansion:data my_memory.animation{namespace:"luigis_mansion",id:"scare/bash"} run data modify storage luigis_mansion:data my_memory.animation.hat_model set from storage luigis_mansion:data my_memory.model
 execute unless entity @s[nbt={data:{animation:{}}},nbt=!{data:{animation:{namespace:"luigis_mansion",id:"yell"}}},tag=!idle] run tag @s add bash_no_move
 execute unless entity @s[nbt={data:{animation:{}}},nbt=!{data:{animation:{namespace:"luigis_mansion",id:"yell"}}},tag=!idle] run data modify storage luigis_mansion:data my_memory.animation set value {namespace:"luigis_mansion",id:"scare/bash"}
+execute if data storage luigis_mansion:data my_memory.animation{namespace:"luigis_mansion",id:"scare/bash"} run data modify storage luigis_mansion:data my_memory.animation.hat_model set from storage luigis_mansion:data my_memory.model
+data modify entity @s data.animation set from storage luigis_mansion:data my_memory.animation
 execute if entity @s[tag=!keep_bash_memory] run data modify storage luigis_mansion:data memory append from storage luigis_mansion:data my_memory
 execute if entity @s[tag=!keep_bash_memory] run data remove storage luigis_mansion:data my_memory
 tag @s remove keep_bash_memory

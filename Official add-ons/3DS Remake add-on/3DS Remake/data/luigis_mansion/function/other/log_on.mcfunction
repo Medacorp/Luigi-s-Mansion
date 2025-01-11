@@ -26,4 +26,4 @@ function #luigis_mansion:upgrade_path
 
 tellraw @s {"type":"translatable","translate":"chat.type.text","with":[{"type":"translatable","translate":"luigis_mansion:entity.mansion","color":"green"},{"type":"translatable","translate":"luigis_mansion:message.hover_event","with":[{"type":"translatable","translate":"luigis_mansion:message.format_explanation.hover","hoverEvent":{"action":"show_text","contents":{"type":"translatable","translate":"luigis_mansion:message.format_explanation.check"}}}]}]}
 
-execute unless data storage luigis_mansion:data current_state.current_data.portrait_battle run gamemode spectator @s
+execute if data storage luigis_mansion:data current_state.current_data.portrait_battle run gamemode spectator @s

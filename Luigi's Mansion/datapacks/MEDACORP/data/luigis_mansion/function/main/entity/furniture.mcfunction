@@ -5,6 +5,8 @@ tag @s remove element_in_dust
 tag @s remove element_in_fire
 tag @s remove element_in_water
 tag @s remove element_in_ice
+tag @s remove was_illuminated_furniture
+tag @s[tag=illuminate_furniture] add was_illuminated_furniture
 tag @s remove illuminate_furniture
 
 execute if entity @s[tag=debug_furniture] run function luigis_mansion:entities/furniture/debug

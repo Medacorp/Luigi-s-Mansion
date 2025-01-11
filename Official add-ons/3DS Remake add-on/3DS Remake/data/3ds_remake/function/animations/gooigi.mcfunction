@@ -1,5 +1,5 @@
 tag @s add this_luigi
-data modify storage luigis_mansion:data luigi set value {tags:[],room:0,mirror:{},alive:0b,gliding:0b,swimming:0b,invulnerable:0b,shrunk:0b,animation:{namespace:"luigis_mansion",id:"idle"},reset_rotation:0b,mainhand:{id:"minecraft:diamond_pickaxe",count:1,components:{"minecraft:item_model":"luigis_mansion:empty"}},offhand:{id:"minecraft:diamond_pickaxe",count:1,components:{"minecraft:item_model":"luigis_mansion:empty"}},poltergust:{id:"minecraft:diamond_pickaxe",count:1,components:{"minecraft:item_model":"luigis_mansion:empty"}},flashlight:{id:"minecraft:diamond_pickaxe",count:1,components:{"minecraft:item_model":"luigis_mansion:empty"}}}
+data modify storage luigis_mansion:data luigi set value {tags:[],room:0,mirror:{},initial_animation_progress:0,alive:0b,gliding:0b,swimming:0b,invulnerable:0b,shrunk:0b,animation:{namespace:"luigis_mansion",id:"idle"},reset_rotation:0b,mainhand:{id:"minecraft:diamond_pickaxe",count:1,components:{"minecraft:item_model":"luigis_mansion:empty"}},offhand:{id:"minecraft:diamond_pickaxe",count:1,components:{"minecraft:item_model":"luigis_mansion:empty"}},poltergust:{id:"minecraft:diamond_pickaxe",count:1,components:{"minecraft:item_model":"luigis_mansion:empty"}},flashlight:{id:"minecraft:diamond_pickaxe",count:1,components:{"minecraft:item_model":"luigis_mansion:empty"}}}
 data modify storage luigis_mansion:data luigi.animation set from entity @s data.animation
 execute unless data storage luigis_mansion:data luigi.animation{namespace:"luigis_mansion",id:"idle"} run tag @s[tag=!animation_may_move,tag=!idle] remove walking
 execute unless data storage luigis_mansion:data luigi.animation{namespace:"luigis_mansion",id:"idle"} run tag @s[tag=!animation_may_move,tag=!idle] remove running
@@ -12,6 +12,8 @@ execute if entity @s[scores={MirrorZ=-2147483648..}] store result storage luigis
 #todelete - old mirror reflections
 execute store result storage luigis_mansion:data luigi.mirror.mirror_set_by_furniture_entity byte 1 if entity @s[tag=mirror_set_by_furniture_entity]
 #/todelete
+data modify storage luigis_mansion:data luigi.initial_animation_progress set from entity @s data.initial_animation_progress
+data remove entity @s data.initial_animation_progress
 execute store result storage luigis_mansion:data luigi.alive byte 1 if entity @s[tag=!death_animation]
 execute store result storage luigis_mansion:data luigi.reset_rotation byte 1 if entity @s[tag=reset_rotation,tag=!separated_camera]
 execute store result storage luigis_mansion:data luigi.shrunk byte 1 if entity @s[scores={Shrunk=1..}]

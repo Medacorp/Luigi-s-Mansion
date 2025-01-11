@@ -14,8 +14,8 @@ execute if score #dialog Dialog matches 240..329 as @e[tag=luigi,tag=same_room,s
 execute if score #dialog Dialog matches 240..400 run scoreboard players set @e[tag=luigi,tag=same_room,limit=1,scores={AnimationProgress=30..}] AnimationProgress 29
 execute if score #dialog Dialog matches 230 run data modify entity @e[tag=ghost,tag=same_room,limit=1] data.animation set value {namespace:"luigis_mansion",id:"crouch"}
 execute if score #dialog Dialog matches 280 run data modify entity @e[tag=ghost,tag=same_room,limit=1] data.animation set value {namespace:"luigis_mansion",id:"roar"}
-execute if score #dialog Dialog matches 340 run data modify entity @e[tag=ghost,tag=same_room,limit=1] data.animation set value {namespace:"luigis_mansion",id:"attach_head"}
-execute if score #dialog Dialog matches 400 run data modify entity @e[tag=ghost,tag=same_room,limit=1] data.animation
+execute if score #dialog Dialog matches 340 run data modify entity @e[tag=ghost,tag=same_room,limit=1] data.animation set value {namespace:"luigis_mansion",id:"adjust_head"}
+execute if score #dialog Dialog matches 400 run data remove entity @e[tag=ghost,tag=same_room,limit=1] data.animation
 execute if score #dialog Dialog matches 340..369 as @e[tag=luigi,tag=same_room] run function luigis_mansion:entities/luigi/animation/set/scare/staredown
 execute if score #dialog Dialog matches 569 as @e[tag=luigi,tag=same_room] run function luigis_mansion:entities/luigi/animation/set/scare/none
 execute if score #dialog Dialog matches 370..539 as @e[tag=luigi,tag=same_room] run function luigis_mansion:entities/luigi/animation/set/scare/staredown_look_around

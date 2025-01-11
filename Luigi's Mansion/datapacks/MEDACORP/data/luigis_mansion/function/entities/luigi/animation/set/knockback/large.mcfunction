@@ -6,6 +6,7 @@ execute if entity @s[scores={Invulnerable=0}] unless data storage luigis_mansion
 execute if entity @s[scores={Invulnerable=0}] unless data storage luigis_mansion:data my_memory.animation{namespace:"luigis_mansion",id:"knockback/large_backward"} unless data storage luigis_mansion:data my_memory.animation{namespace:"luigis_mansion",id:"knockback/large_forward"} if score #temp Time matches -90..90 run data modify storage luigis_mansion:data my_memory.animation set value {namespace:"luigis_mansion",id:"knockback/large_backward"}
 execute if entity @s[scores={Invulnerable=0}] unless data storage luigis_mansion:data my_memory.animation{namespace:"luigis_mansion",id:"knockback/large_backward"} unless data storage luigis_mansion:data my_memory.animation{namespace:"luigis_mansion",id:"knockback/large_forward"} unless score #temp Time matches -90..90 run data modify storage luigis_mansion:data my_memory.animation set value {namespace:"luigis_mansion",id:"knockback/large_forward"}
 scoreboard players reset #temp Time
+data modify entity @s data.animation set from storage luigis_mansion:data my_memory.animation
 execute if entity @s[tag=!keep_memory] run data modify storage luigis_mansion:data memory append from storage luigis_mansion:data my_memory
 execute if entity @s[tag=!keep_memory] run data remove storage luigis_mansion:data my_memory
 tag @s remove keep_memory

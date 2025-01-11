@@ -1,4 +1,4 @@
-execute at @s[nbt=!{data:{animation:{namespace:"luigis_mansion",id:"cold_room_idle"}}},nbt=!{data:{animation:{namespace:"luigis_mansion",id:"high_health_idle"}}}] run  function 3ds_remake:items/flashlight/effects/weak_light
+execute at @s[nbt=!{data:{animation:{namespace:"luigis_mansion",id:"cold_room_idle"}}},nbt=!{data:{animation:{namespace:"luigis_mansion",id:"high_health_idle"}}}] run function 3ds_remake:items/flashlight/effects/weak_light
 execute at @s[nbt={data:{animation:{namespace:"luigis_mansion",id:"cold_room_idle"}}}] rotated ~160 20 run function 3ds_remake:items/flashlight/effects/weak_light
 execute at @s[nbt={data:{animation:{namespace:"luigis_mansion",id:"high_health_idle"}}},scores={AnimationProgress=0}] rotated ~ 0 run function 3ds_remake:items/flashlight/effects/weak_light
 execute at @s[nbt={data:{animation:{namespace:"luigis_mansion",id:"high_health_idle"}}},scores={AnimationProgress=1}] rotated ~-1 0 run function 3ds_remake:items/flashlight/effects/weak_light

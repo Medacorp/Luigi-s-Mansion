@@ -1,6 +1,6 @@
 execute unless score #bottom_of_the_well Ticking matches 1 run function #luigis_mansion:room/hidden/bottom_of_the_well/load
-execute as @e[tag=player,x=645,y=92,z=14,dx=6,dy=7,dz=10] unless entity @s[x=648.5,y=93,z=25.5,distance=..0.7] unless entity @s[scores={Room=31}] run scoreboard players operation @s LastRoom = @s Room
-execute as @e[x=645,y=92,z=14,dx=6,dy=7,dz=10] unless entity @s[x=648.5,y=93,z=25.5,distance=..0.7] run scoreboard players set @s[tag=!separated_camera] Room 31
+execute as @e[tag=player,x=645,y=92,z=14,dx=6,dy=7,dz=10] unless entity @s[x=634,y=92,z=24,dx=20,dy=7,dz=18] unless entity @s[scores={Room=31}] run scoreboard players operation @s LastRoom = @s Room
+execute as @e[x=645,y=92,z=14,dx=6,dy=7,dz=10] unless entity @s[x=634,y=92,z=24,dx=20,dy=7,dz=18] run scoreboard players set @s[tag=!separated_camera] Room 31
 #todelete - old furniture
 scoreboard players set #temp Room 31
 #/todelete

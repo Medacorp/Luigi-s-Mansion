@@ -7,8 +7,8 @@ scoreboard players operation #temp AnimationProgress %= #4 Constants
 execute store result score #temp Time run data get entity @s Pose.Head[2] 4
 execute unless score #temp AnimationProgress matches 1..2 store result entity @s Pose.Head[2] float 0.25 run scoreboard players add #temp Time 1
 execute if score #temp AnimationProgress matches 1..2 store result entity @s Pose.Head[2] float 0.25 run scoreboard players remove #temp Time 1
-execute if entity @s[scores={AnimationProgress=1..10}] store result entity @s Pose.Head[2] float 1 run scoreboard players remove #temp Time 1
-execute if entity @s[scores={AnimationProgress=11..20}] store result entity @s Pose.Head[2] float 1 run scoreboard players add #temp Time 1
+execute if entity @s[scores={AnimationProgress=1..10}] store result entity @s Pose.Head[2] float 0.25 run scoreboard players remove #temp Time 4
+execute if entity @s[scores={AnimationProgress=11..20}] store result entity @s Pose.Head[2] float 0.25 run scoreboard players add #temp Time 4
 scoreboard players reset #temp Time
 scoreboard players reset #temp AnimationProgress
 scoreboard players set @s[scores={AnimationProgress=20}] AnimationProgress 0

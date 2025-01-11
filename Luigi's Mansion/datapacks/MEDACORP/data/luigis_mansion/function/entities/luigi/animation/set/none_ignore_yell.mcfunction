@@ -14,6 +14,7 @@ tag @s remove tick_down_invulnerability
 scoreboard players operation #temp ID = @s ID
 execute as @e[tag=knockback_model] if score #temp ID = @s ID run tag @s add dead
 scoreboard players reset #temp ID
+data remove entity @s data.animation
 execute if entity @s[tag=!keep_memory_none] run data modify storage luigis_mansion:data memory append from storage luigis_mansion:data my_memory
 execute if entity @s[tag=!keep_memory_none] run data remove storage luigis_mansion:data my_memory
 tag @s remove keep_memory_none

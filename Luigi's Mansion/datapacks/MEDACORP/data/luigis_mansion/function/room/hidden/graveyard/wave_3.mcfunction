@@ -1,2 +1,2 @@
 scoreboard players set #graveyard Wave 3
-data modify storage luigis_mansion:data current_state.current_data.technical_data merge value {bogmire_ready:1b}
+data modify storage luigis_mansion:data dialogs append value {name:{namespace:"luigis_mansion",id:"bogmire_ready"},progress:0,room:29}

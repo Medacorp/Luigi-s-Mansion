@@ -69,7 +69,6 @@ tag @s[tag=flipped_gravity] remove flipped_gravity
 execute if data storage luigis_mansion:data luigi{alive:1b} run tag @s[tag=death_animation] remove death_animation
 tag @s remove holding_poltergust
 tag @s remove spawn_animation
-tag @s remove separated_camera
 tag @s remove poltergust_grabbed
 tag @s remove gooigi
 tag @s remove shrunk
@@ -77,6 +76,11 @@ tag @s remove flashlight
 tag @s remove moved
 tag @s remove player
 tag @s remove luigi
+
+execute store result score #temp Time run data get storage luigis_mansion:data luigi.initial_animation_progress
+execute unless data storage luigis_mansion:data luigi{initial_animation_progress:0} unless score @s AnimationProgress matches 0 unless score @s AnimationProgress = #temp Time run function 3ds_remake:animations/gooigi/main
+scoreboard players reset #temp Time
+
 execute unless entity @e[tag=gooigi,scores={Shrunk=1..},limit=1] run tag @s add found_owner
 execute if entity @e[tag=gooigi,scores={Shrunk=1..},limit=1] run tag @s add found_shrunk_owner
 tag @s add this_gooigi
