@@ -6,8 +6,8 @@ v3.3:
 ** Meet E. Gadd
 ** Falling Chandelier
 ** Paintings
-** (3DS) Blockade (new)
-** Room Clear Chest (new)
+** (3DS Remake) Blockade Spawns (new)
+** Room Clear Chest Spawns (new)
 ** Chauncey's Door
 ** Move the Storage Room Wall
 ** Released Boos
@@ -15,11 +15,18 @@ v3.3:
 ** Mario's Item
 ** Bogmire Ready
 ** Bogmire (Graveyard section of boss intro, previously entity behavior)
+** Mario's Painting
+** Mario's Painting Repeat
+** Astral Hall Ambush
+** Observatory Path
 ** King Boo Appears (new)
 ** Bowser Corrects Head (new)
 * Added a method to automatically play a sound for Luigi based on some conditions, removing a bunch of 3DS Remake overwriting files
 * Added a few animations that were missing
+* Added new debug setting: Unlock All Doors
 * Changed Luigi and the camera to be entirely separate; everything originates from Luigi, camera is just synced up
+** A hidden setting now exists to control the movement from a third-person perspective; this is not guarenteed to be used in the future but has been added in case it will be
+** The hidden setting also enables 2 new settings: Movement mode (Standard/Sidestep), and (Debug) Phase Through Walls
 * Changed Game Boy Horror's Map option to get disabled if in a room where map is not allowed to be opened, rather than trying and failing to open
 * Changed most music track IDs
 * Changed debug settings to be hidden, unless sendCommandFeedback is set to true

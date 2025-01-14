@@ -1,0 +1,28 @@
+scoreboard players add #dialog Dialog 1
+
+tag @e[tag=same_room,tag=item,nbt={ArmorItems:[{components:{"minecraft:custom_data":{item:{namespace:"luigis_mansion",id:"mario_item"}}}}]},limit=1] remove no_ai
+tag @e[tag=same_room,tag=item,nbt={ArmorItems:[{components:{"minecraft:custom_data":{item:{namespace:"luigis_mansion",id:"mario_item"}}}}]},limit=1] remove freeze_animation
+scoreboard players reset @a[tag=same_room,tag=!spectator] WarpTime
+execute as @a[tag=same_room,tag=!spectator,tag=game_boy_horror_menu] run function luigis_mansion:selection_menu/game_boy_horror/exit
+execute if score #dialog Dialog matches 1 as @a[tag=same_room] run function luigis_mansion:other/music/set/observatory_path
+execute if score #dialog Dialog matches 1..199 as @e[tag=luigi,tag=same_room] run function luigis_mansion:entities/luigi/animation/set/high_health_idle_no_sound
+execute if score #dialog Dialog matches 1 unless score #mirrored Selected matches 1 as @a[tag=same_room] run function luigis_mansion:entities/player/camera/execute {execute:"at @s rotated -180 0",teleport:"^-2.5 ^ ^-2 ~-5 ~"}
+execute if score #dialog Dialog matches 1 if score #mirrored Selected matches 1 as @a[tag=same_room] run function luigis_mansion:entities/player/camera/execute {execute:"at @s rotated 0 0",teleport:"^2.5 ^ ^-2 ~5 ~"}
+execute if score #dialog Dialog matches 1..40 unless score #mirrored Selected matches 1 as @a[tag=same_room] run function luigis_mansion:entities/player/camera/teleport {teleport:"^-0.005 ^0.01 ^ ~-1 ~"}
+execute if score #dialog Dialog matches 1..40 if score #mirrored Selected matches 1 as @a[tag=same_room] run function luigis_mansion:entities/player/camera/teleport {teleport:"^0.005 ^0.01 ^ ~1 ~"}
+execute if score #dialog Dialog matches 41..60 as @a[tag=same_room] run function luigis_mansion:entities/player/camera/teleport {teleport:"~ ~ ~ ~"}
+execute if score #dialog Dialog matches 61 unless score #mirrored Selected matches 1 as @a[tag=same_room] run function luigis_mansion:entities/player/camera/execute {execute:"at @e[tag=same_room,tag=item,tag=!no_ai,limit=1] positioned ~ ~0.3 ~ rotated 175 0",teleport:"^ ^ ^-50 ~ ~"}
+execute if score #dialog Dialog matches 61 if score #mirrored Selected matches 1 as @a[tag=same_room] run function luigis_mansion:entities/player/camera/execute {execute:"at @e[tag=same_room,tag=item,tag=!no_ai,limit=1] positioned ~ ~0.3 ~ rotated 5 0",teleport:"^ ^ ^-50 ~ ~"}
+execute if score #dialog Dialog matches 61..80 unless score #mirrored Selected matches 1 as @a[tag=same_room] run function luigis_mansion:entities/player/camera/execute {execute:"at @s positioned ~ ~-0.3 ~ facing entity @e[tag=same_room,tag=item,tag=!no_ai,limit=1] feet positioned ~ ~0.3 ~ rotated ~ 0",teleport:"^0.15 ^ ^0.8 ~ ~"}
+execute if score #dialog Dialog matches 61..80 if score #mirrored Selected matches 1 as @a[tag=same_room] run function luigis_mansion:entities/player/camera/execute {execute:"at @s positioned ~ ~-0.3 ~ facing entity @e[tag=same_room,tag=item,tag=!no_ai,limit=1] feet positioned ~ ~0.3 ~ rotated ~ 0",teleport:"^-0.15 ^ ^0.8 ~ ~"}
+execute if score #dialog Dialog matches 81..100 unless score #mirrored Selected matches 1 as @a[tag=same_room] run function luigis_mansion:entities/player/camera/execute {execute:"at @s positioned ~ ~-0.3 ~ facing entity @e[tag=same_room,tag=item,tag=!no_ai,limit=1] feet positioned ~ ~0.3 ~ rotated ~ 0",teleport:"^-0.1 ^ ^0.8 ~ ~"}
+execute if score #dialog Dialog matches 81..100 if score #mirrored Selected matches 1 as @a[tag=same_room] run function luigis_mansion:entities/player/camera/execute {execute:"at @s positioned ~ ~-0.3 ~ facing entity @e[tag=same_room,tag=item,tag=!no_ai,limit=1] feet positioned ~ ~0.3 ~ rotated ~ 0",teleport:"^0.1 ^ ^0.8 ~ ~"}
+execute if score #dialog Dialog matches 101..120 unless score #mirrored Selected matches 1 as @a[tag=same_room] run function luigis_mansion:entities/player/camera/execute {execute:"at @s positioned ~ ~-0.3 ~ facing entity @e[tag=same_room,tag=item,tag=!no_ai,limit=1] feet positioned ~ ~0.3 ~ rotated ~ 0",teleport:"^-0.25 ^ ^0.7 ~ ~"}
+execute if score #dialog Dialog matches 101..120 if score #mirrored Selected matches 1 as @a[tag=same_room] run function luigis_mansion:entities/player/camera/execute {execute:"at @s positioned ~ ~-0.3 ~ facing entity @e[tag=same_room,tag=item,tag=!no_ai,limit=1] feet positioned ~ ~0.3 ~ rotated ~ 0",teleport:"^0.25 ^ ^0.7 ~ ~"}
+execute if score #dialog Dialog matches 121..240 unless score #mirrored Selected matches 1 as @a[tag=same_room] run function luigis_mansion:entities/player/camera/execute {execute:"at @s positioned ~ ~-0.3 ~ facing entity @e[tag=same_room,tag=item,tag=!no_ai,limit=1] feet positioned ~ ~0.3 ~ rotated ~ 0",teleport:"^-0.225 ^ ^ ~ ~"}
+execute if score #dialog Dialog matches 121..240 if score #mirrored Selected matches 1 as @a[tag=same_room] run function luigis_mansion:entities/player/camera/execute {execute:"at @s positioned ~ ~-0.3 ~ facing entity @e[tag=same_room,tag=item,tag=!no_ai,limit=1] feet positioned ~ ~0.3 ~ rotated ~ 0",teleport:"^0.225 ^ ^ ~ ~"}
+execute if score #dialog Dialog matches 241..260 as @a[tag=same_room] run function luigis_mansion:entities/player/camera/teleport {teleport:"~ ~ ~ ~ ~"}
+execute if score #dialog Dialog matches 260 as @a[tag=same_room] run function luigis_mansion:entities/player/camera/reset
+execute if score #dialog Dialog matches 260 run tag @e[tag=luigi,tag=same_room] add idle
+execute if score #dialog Dialog matches 260 run data modify storage luigis_mansion:data current_state.current_data.technical_data.observatory_path set value 1b
+execute if score #dialog Dialog matches 260 run scoreboard players set #dialog Dialog -1

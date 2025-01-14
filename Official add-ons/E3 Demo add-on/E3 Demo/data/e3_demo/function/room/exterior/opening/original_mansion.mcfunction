@@ -1,0 +1,1 @@
+function luigis_mansion:room/exterior/opening/mansion
