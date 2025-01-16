@@ -1,1 +1,2 @@
-function luigis_mansion:entities/luigi/move/wall_warp_execute {execute:"in e3_demo:original",teleport:"751.0 11 9.0"}
+execute if entity @s[tag=!luigi] run function luigis_mansion:entities/luigi/move/wall_warp_execute {execute:"in e3_demo:original",teleport:"751.0 11 9.0"}
+execute if entity @s[tag=luigi] run function luigis_mansion:entities/luigi/move/execute {execute:"in e3_demo:original",teleport:"751.0 11 9.0"}

@@ -33,6 +33,12 @@
                                     "model": {
                                         "type": "minecraft:empty"
                                     }
+                                },
+                                {
+                                    "when": "invisible",
+                                    "model": {
+                                        "type": "minecraft:empty"
+                                    }
                                 }
                             ],
                             "fallback": {
@@ -50,6 +56,12 @@
                             "cases": [
                                 {
                                     "when": "attacking",
+                                    "model": {
+                                        "type": "minecraft:empty"
+                                    }
+                                },
+                                {
+                                    "when": "invisible",
                                     "model": {
                                         "type": "minecraft:empty"
                                     }
@@ -72,6 +84,12 @@
                             "model": {
                                 "type": "minecraft:model",
                                 "model": "luigis_mansion:entity/king_boo/attacking"
+                            }
+                        },
+                        {
+                            "when": "invisible",
+                            "model": {
+                                "type": "minecraft:empty"
                             }
                         }
                     ],

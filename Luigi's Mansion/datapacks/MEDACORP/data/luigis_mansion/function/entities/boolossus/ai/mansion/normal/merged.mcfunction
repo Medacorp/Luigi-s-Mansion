@@ -22,6 +22,7 @@ execute if entity @s[tag=flee] run function luigis_mansion:entities/boolossus/fl
 tag @s remove flee
 tag @s[tag=in_vacuum] add flee
 
+data remove entity @s[scores={Dialog=59}] data.animation
 scoreboard players add @s[scores={Dialog=..59}] Dialog 1
 execute unless entity @s[scores={Dialog=1..}] run scoreboard players add @s Dialog 1
 tag @s[scores={Dialog=60}] remove laugh

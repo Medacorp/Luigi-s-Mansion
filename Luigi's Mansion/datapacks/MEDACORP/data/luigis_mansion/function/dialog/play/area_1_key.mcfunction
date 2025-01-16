@@ -22,6 +22,7 @@ execute if score #dialog Dialog matches 22 run tellraw @a[tag=same_room] {"type"
 execute if score #dialog Dialog matches 22 as @a[tag=same_room] at @s run playsound luigis_mansion:entity.e_gadd.talk.luigi neutral @s ~ ~ ~ 1
 
 execute if score #dialog Dialog matches 24 as @e[tag=luigi,tag=same_room] run function luigis_mansion:entities/luigi/animation/set/nod
+execute if score #dialog Dialog matches 24.. as @a[tag=same_room] run function luigis_mansion:other/music/set/e_gadd_call
 execute if score #dialog Dialog matches 44..54 as @e[tag=luigi,tag=same_room] run function luigis_mansion:entities/luigi/animation/set/game_boy_horror
 execute if score #dialog Dialog matches 44..48 as @a[tag=same_room,tag=!spectator] run function luigis_mansion:items/game_boy_horror/turn_screen_to_forced_value {value:"call",flags:[],floats:[5f,0f,0f,0f],tracker:[]}
 execute if score #dialog Dialog matches 49.. as @a[tag=same_room,tag=!spectator] run function luigis_mansion:items/game_boy_horror/turn_screen_to_forced_value {value:"call",flags:[],floats:[2f,0f,0f,0f],tracker:[]}

@@ -1,2 +1,3 @@
 function luigis_mansion:entities/luigi/move/teleport {teleport:"695 20 78"}
-execute positioned 697 20 78 run function luigis_mansion:entities/luigi/animation/set/scare/bash_no_move
+data modify storage luigis_mansion:data dialogs prepend value {name:{namespace:"luigis_mansion",id:"fall_through_chimney"},progress:0,room:66,player:0}
+execute store result storage luigis_mansion:data dialogs[0].player int 1 run scoreboard players get @s ID

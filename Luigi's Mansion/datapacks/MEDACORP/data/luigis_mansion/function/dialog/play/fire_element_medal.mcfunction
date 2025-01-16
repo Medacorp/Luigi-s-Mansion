@@ -18,6 +18,7 @@ execute if score #dialog Dialog matches 20..21 as @e[tag=luigi,tag=same_room] ru
 execute if score #dialog Dialog matches 20..41 as @a[tag=same_room] run function luigis_mansion:other/music/set/game_boy_horror
 
 execute if score #dialog Dialog matches 22 as @e[tag=luigi,tag=same_room] run function luigis_mansion:entities/luigi/animation/set/nod
+execute if score #dialog Dialog matches 42..116 as @a[tag=same_room] run function luigis_mansion:other/music/set/e_gadd_call
 execute if score #dialog Dialog matches 42..116 as @e[tag=luigi,tag=same_room] run function luigis_mansion:entities/luigi/animation/set/game_boy_horror
 execute if score #dialog Dialog matches 42..46 as @a[tag=same_room,tag=!spectator] run function luigis_mansion:items/game_boy_horror/turn_screen_to_forced_value {value:"call",flags:[],floats:[5f,0f,0f,0f],tracker:[]}
 execute if score #dialog Dialog matches 47 as @a[tag=same_room,tag=!spectator] run function luigis_mansion:items/game_boy_horror/turn_screen_to_forced_value {value:"call",flags:[],floats:[4f,0f,0f,0f],tracker:[]}

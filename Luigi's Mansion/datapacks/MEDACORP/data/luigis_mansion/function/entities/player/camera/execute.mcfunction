@@ -11,6 +11,7 @@ tag @s remove teleport_now
 $execute if data storage luigis_mansion:data my_memory.camera.pos $(execute) run teleport @e[tag=last_positon,limit=1] $(teleport)
 execute if data storage luigis_mansion:data my_memory.camera.pos store success score #temp Time run data modify entity @e[tag=last_positon,limit=1] Pos set from storage luigis_mansion:data my_memory.camera.pos
 execute if score #temp Time matches 0 store success score #temp Time run data modify entity @e[tag=last_positon,limit=1] Rotation set from storage luigis_mansion:data my_memory.camera.rotation
+execute if score #temp Time matches 0 store success score #temp Time run data modify entity @e[tag=last_positon,limit=1] Rotation set from entity @s Rotation
 execute if score #temp Time matches 1 run tag @s add teleport_now
 execute unless data storage luigis_mansion:data my_memory.camera.pos run tag @s add teleport_now
 kill @e[tag=last_positon,limit=1]

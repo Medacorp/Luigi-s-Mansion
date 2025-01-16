@@ -4,21 +4,28 @@ v3.3:
 ** First Entrance (new)
 ** First Key
 ** Meet E. Gadd
-** Falling Chandelier
+** Falling Chandelier (new)
 ** Paintings
 ** (3DS Remake) Blockade Spawns (new)
 ** Room Clear Chest Spawns (new)
-** Chauncey's Door
-** Move the Storage Room Wall
-** Released Boos
+** Chauncey's Door (Previously named "Chauncey Cry")
+** Move Storage Room Wall
+** Release Boos
 ** Madame Clairvoya
 ** Mario's Item
-** Bogmire Ready
+** Bogmire Ready (new)
 ** Bogmire (Graveyard section of boss intro, previously entity behavior)
 ** Mario's Painting
 ** Mario's Painting Repeat
 ** Astral Hall Ambush
-** Observatory Path
+** Observatory Path (new)
+** Mysterious Power
+** Mysterious Power Repeat
+** Boolossus
+** Blackout Lightning
+** Fall Through Chinmney (new)
+** Sue Pea
+** Guest Room Flips (new)
 ** King Boo Appears (new)
 ** Bowser Corrects Head (new)
 * Added a method to automatically play a sound for Luigi based on some conditions, removing a bunch of 3DS Remake overwriting files
@@ -27,12 +34,15 @@ v3.3:
 * Changed Luigi and the camera to be entirely separate; everything originates from Luigi, camera is just synced up
 ** A hidden setting now exists to control the movement from a third-person perspective; this is not guarenteed to be used in the future but has been added in case it will be
 ** The hidden setting also enables 2 new settings: Movement mode (Standard/Sidestep), and (Debug) Phase Through Walls
-* Changed Game Boy Horror's Map option to get disabled if in a room where map is not allowed to be opened, rather than trying and failing to open
+* Changed Game Boy Horror's map option to get disabled if in a room where map is not allowed to be opened, rather than trying and failing to open
 * Changed most music track IDs
 * Changed debug settings to be hidden, unless sendCommandFeedback is set to true
 * Fixed lab map area chunks accidentally removed
 * Fixed furniture shaking doesn't work entirely correct; the first of a short shake also no longer visually shakes the model, like the original game
 * Fixed softlock when upgrading a world where E. Gadd wasn't found yet
+* Fixed the door in the Guest Room is non-solid
+* Fixed Boolossus' warp to player animation causes models to incorrectly change
+* Fixed a few E. Gadd calls were missing the E. Gadd Call music
 * Removed entered_mansion command storage flag; mansion entrance music/cutscene now plays for all players' first entry, not just the first player
 * Removed found_e_gadd command storage flag; E. Gadd's spawns are no longer conditional as you cannot go to the lab before going to the mansion anymore, and all other usages were replaced with checking the underground lab cleared state
 

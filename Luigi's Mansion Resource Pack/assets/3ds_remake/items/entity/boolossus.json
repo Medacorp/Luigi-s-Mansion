@@ -138,6 +138,12 @@
                                     "model": {
                                         "type": "minecraft:empty"
                                     }
+                                },
+                                {
+                                    "when": "invisible",
+                                    "model": {
+                                        "type": "minecraft:empty"
+                                    }
                                 }
                             ],
                             "fallback": {
@@ -260,6 +266,12 @@
                                 },
                                 {
                                     "when": "attacking",
+                                    "model": {
+                                        "type": "minecraft:empty"
+                                    }
+                                },
+                                {
+                                    "when": "invisible",
                                     "model": {
                                         "type": "minecraft:empty"
                                     }
@@ -387,6 +399,12 @@
                             "model": {
                                 "type": "minecraft:model",
                                 "model": "3ds_remake:entity/boolossus/1/attacking"
+                            }
+                        },
+                        {
+                            "when": "invisible",
+                            "model": {
+                                "type": "minecraft:empty"
                             }
                         }
                     ],

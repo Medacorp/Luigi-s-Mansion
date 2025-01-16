@@ -3,5 +3,7 @@ execute as @e[scores={Room=70},tag=ghost,tag=!portrait_ghost,nbt=!{data:{entity:
 scoreboard players reset #guest_room Vacuumables
 
 execute if block 741 21 -53 minecraft:redstone_lamp[lit=true] run function #luigis_mansion:room/normal/guest_room/reset
+execute if block 741 21 -53 minecraft:redstone_lamp[lit=true] run data modify storage luigis_mansion:data dialogs append value {name:{namespace:"luigis_mansion",id:"guest_room_flips"},progress:0}
+# No room number so the whole mansion shakes!
 tag @e[scores={Room=70},tag=haunted_clown_coll] remove enabled
 scoreboard players set @e[scores={Room=70},nbt={data:{entity:{namespace:"luigis_mansion",id:"sue_pea"}}}] Dialog 124
