@@ -6,4 +6,4 @@ execute if entity @s[scores={Time=2}] unless block ~ ~0.8 ~ #luigis_mansion:ghos
 execute unless entity @s[scores={Time=2..}] run scoreboard players add @s Time 1
 execute if entity @s[scores={Time=2}] run teleport @s ~ ~-0.2 ~ ~ 0
 data modify entity @s[scores={Time=3}] data.animation set value {namespace:"luigis_mansion",id:"death"}
-tag @s[scores={DeathTime=100}] add dead
+tag @s[scores={DeathTime=200}] add dead

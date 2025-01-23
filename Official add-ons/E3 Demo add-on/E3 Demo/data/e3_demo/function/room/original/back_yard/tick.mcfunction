@@ -14,5 +14,5 @@ function #e3_demo:room/original/back_yard/interactions/room
 execute if entity @e[tag=luigi,tag=!door_animation,scores={Room=16},limit=1] run function e3_demo:room/original/back_yard/ghosts
 
 execute store result score #temp Time run data get storage luigis_mansion:data current_state.current_data.rooms.back_yard.time_spent_in
-execute if entity @a[tag=!pause_dialog,scores={Room=16},limit=1] if data storage luigis_mansion:data current_state.current_data.rooms.back_yard{cleared:0b} store result storage luigis_mansion:data current_state.current_data.rooms.back_yard.time_spent_in int 1 run scoreboard players add #temp Time 1
+execute if entity @a[tag=!door_animation,scores={Room=16},limit=1] if data storage luigis_mansion:data current_state.current_data.rooms.back_yard{cleared:0b} store result storage luigis_mansion:data current_state.current_data.rooms.back_yard.time_spent_in int 1 run scoreboard players add #temp Time 1
 scoreboard players reset #temp Time

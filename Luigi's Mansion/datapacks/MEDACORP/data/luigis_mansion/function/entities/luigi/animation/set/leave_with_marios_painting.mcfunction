@@ -1,5 +1,5 @@
 execute if data storage luigis_mansion:data my_memory run tag @s add keep_memory
-execute if entity @s[tag=!keep_memory] run function luigis_mansion:entities/luigimemory/get with entity @s
+execute if entity @s[tag=!keep_memory] run function luigis_mansion:entities/luigi/get_owner_memory
 execute unless data storage luigis_mansion:data my_memory.animation{namespace:"luigis_mansion",id:"leave_with_marios_painting"} run function luigis_mansion:entities/luigi/animation/set/none
 execute unless data storage luigis_mansion:data my_memory.animation{namespace:"luigis_mansion",id:"leave_with_marios_painting"} run function luigis_mansion:entities/luigi/animation/shared/set_home_rotation
 data modify storage luigis_mansion:data my_memory.animation set value {namespace:"luigis_mansion",id:"leave_with_marios_painting"}

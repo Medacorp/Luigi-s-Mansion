@@ -1,5 +1,5 @@
 execute unless data storage luigis_mansion:data current_state.current_data.portrait_ghosts.luigis_mansion.bogmire{health:0} unless data storage luigis_mansion:data dialogs[{name:{namespace:"luigis_mansion",id:"bogmire_opening"}}] run function luigis_mansion:other/music/set/bogmire_battle_skip_intro
-execute if data storage luigis_mansion:data current_state.current_data.portrait_ghosts.luigis_mansion.bogmire{health:0} run function luigis_mansion:other/music/set/area_clear
+execute if data storage luigis_mansion:data current_state.current_data.portrait_ghosts.luigis_mansion.bogmire{health:0} unless score #bogmire_battle Wave matches 1.. unless data storage luigis_mansion:data dialogs[{room:74}] run function luigis_mansion:room/normal/bogmire_battle/clear_graveyard
 tag @s add seen_room_name
 scoreboard players set @s LastFloor 0
 

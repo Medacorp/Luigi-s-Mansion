@@ -1,2 +1,2 @@
-execute as @a[scores={Room=73}] run function luigis_mansion:other/music/set/force/area_clear
+data modify storage luigis_mansion:data dialogs append value {name:{namespace:"luigis_mansion",id:"boss_clear"},progress:0,room:73}
 scoreboard players reset #chauncey_battle Wave

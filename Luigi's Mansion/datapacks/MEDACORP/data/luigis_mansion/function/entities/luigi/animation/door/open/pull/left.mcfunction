@@ -14,7 +14,6 @@ execute if entity @s[scores={AnimationProgress=32}] run tag @a[tag=this_player,l
 execute if entity @e[tag=furniture,tag=door,tag=!open_door,tag=!forced_animation,distance=..0.7] run function luigis_mansion:entities/furniture/type/door/force_animation
 scoreboard players set @s Sound 10
 scoreboard players set @s Invulnerable 1
-tag @s add pause_dialog
 execute unless entity @e[tag=luigi,tag=!this_player,limit=1] run scoreboard players set #freeze_timer Selected 1
 tag @s[scores={AnimationProgress=50}] remove reset_rotation
 tag @s[scores={AnimationProgress=50}] remove door_animation

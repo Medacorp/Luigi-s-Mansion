@@ -41,6 +41,7 @@ execute if entity @s[tag=dead_player] run tag @e[tag=this_entity,limit=1] add de
 execute if entity @s[tag=dead_player] run scoreboard players set @e[tag=this_entity,limit=1] DeathTime 120
 scoreboard players operation @e[tag=this_entity,limit=1] AnimationProgress = @s AnimationProgress
 scoreboard players operation @e[tag=this_entity,limit=1] ElementMeter = @s ElementMeter
+scoreboard players operation @e[tag=this_entity,limit=1] Room = @s Room
 scoreboard players operation @e[tag=this_entity,limit=1] LastRoom = @s LastRoom
 scoreboard players operation @e[tag=this_entity,limit=1] Shrunk = @s Shrunk
 scoreboard players operation @e[tag=this_entity,limit=1] Health = @s Health

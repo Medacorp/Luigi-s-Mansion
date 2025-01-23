@@ -30,8 +30,10 @@ execute if entity @a[tag=this_player,tag=disable_game_boy_horror,limit=1] run ta
 data remove entity @s data.animation
 tag @s remove sneak_pos
 tag @s remove sneaking
-tag @s[tag=!third_person_movement_walking] remove walking
+tag @s[tag=!third_person_movement_walking,tag=!dialog_walking] remove walking
+execute unless entity @s[tag=!third_person_movement_walking,tag=!dialog_walking] run tag @s add walking
 tag @s remove third_person_movement_walking
+tag @s remove dialog_walking
 tag @s remove running
 tag @a[tag=this_player,limit=1] remove door_animation
 tag @a[tag=this_player,limit=1] remove flipped_gravity

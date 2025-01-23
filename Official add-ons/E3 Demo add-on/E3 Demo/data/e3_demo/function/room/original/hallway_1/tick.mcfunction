@@ -15,5 +15,5 @@ tag @a[tag=same_room] remove same_room
 tag @a[tag=exact_same_room] remove exact_same_room
 
 execute store result score #temp Time run data get storage luigis_mansion:data current_state.current_data.rooms.hallway_1.time_spent_in
-execute if data storage luigis_mansion:data rooms.underground_lab{cleared:1b} if entity @a[tag=!pause_dialog,scores={Room=2},limit=1] if data storage luigis_mansion:data current_state.current_data.rooms.hallway_1{cleared:0b} store result storage luigis_mansion:data current_state.current_data.rooms.hallway_1.time_spent_in int 1 run scoreboard players add #temp Time 1
+execute if data storage luigis_mansion:data rooms.underground_lab{cleared:1b} if entity @a[tag=!door_animation,scores={Room=2},limit=1] if data storage luigis_mansion:data current_state.current_data.rooms.hallway_1{cleared:0b} store result storage luigis_mansion:data current_state.current_data.rooms.hallway_1.time_spent_in int 1 run scoreboard players add #temp Time 1
 scoreboard players reset #temp Time

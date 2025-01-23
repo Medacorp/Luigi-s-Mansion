@@ -29,7 +29,7 @@ tag @e[tag=pearl_dropper] remove pearl_dropper
 
 function 3ds_remake:room/portrait_battle/tick with storage luigis_mansion:data current_state.current_data.mansion_id
 
-function luigis_mansion:room/ghost_portrificationizer_room/portrificationize with storage luigis_mansion:data current_state.current_data.mansion_id
+execute unless entity @e[tag=portrait_ghost,tag=same_room,limit=1] run function luigis_mansion:room/ghost_portrificationizer_room/portrificationize with storage luigis_mansion:data current_state.current_data.mansion_id
 execute if entity @s[tag=portrificationizing] unless data storage luigis_mansion:data dialogs[0] run function 3ds_remake:room/portrait_battle/clear
 execute if entity @s[tag=failed_portrait_battle] unless data storage luigis_mansion:data dialogs[0] run function 3ds_remake:selection_menu/gallery_portrait/retry_portrait_battle
 tag @s remove portrificationizing

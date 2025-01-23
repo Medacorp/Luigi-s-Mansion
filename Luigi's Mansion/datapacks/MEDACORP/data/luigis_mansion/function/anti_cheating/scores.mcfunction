@@ -169,7 +169,6 @@ scoreboard objectives add PulledStrength dummy
 scoreboard objectives add PullStrength dummy
 scoreboard objectives add Range dummy
 scoreboard objectives add ReflectionNr dummy
-scoreboard objectives add ReturnTimer dummy
 scoreboard objectives add Room dummy
 scoreboard objectives add RoomNoise dummy
 scoreboard objectives add RoomSection dummy

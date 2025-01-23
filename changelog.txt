@@ -1,18 +1,21 @@
 v3.3:
 * Added Jukebox
 * Added cutscene camera movement to the following dialogs/cutscenes:
-** First Entrance (new)
+** <Mansion>/First Entrance (new)
+** Door/Locked (new, kinda; now skipable!)
 ** First Key
+** Door/Unlock (new, kinda; now skipable!)
 ** Meet E. Gadd
 ** Falling Chandelier (new)
 ** Paintings
 ** (3DS Remake) Blockade Spawns (new)
 ** Room Clear Chest Spawns (new)
 ** Chauncey's Door (Previously named "Chauncey Cry")
-** Move Storage Room Wall
-** Release Boos
+** <Mansion>/Move Storage Room Wall
+** <Mansion>/Release Boos
 ** Madame Clairvoya
 ** Mario's Item
+** (3DS Remake) Dog House (new)
 ** Bogmire Ready (new)
 ** Bogmire (Graveyard section of boss intro, previously entity behavior)
 ** Mario's Painting
@@ -21,22 +24,33 @@ v3.3:
 ** Observatory Path (new)
 ** Mysterious Power
 ** Mysterious Power Repeat
-** Boolossus
-** Blackout Lightning
-** Fall Through Chinmney (new)
+** Boolossus (previously "<Mansion>/Boolossus")
+** <Mansion>/Blackout Lightning
+** Fall Through Chimney (new)
+** Close Pipe
 ** Sue Pea
 ** Guest Room Flips (new)
+** Ghost Gauntlet
+** Ghost Gauntlet Spawn (new)
+** King Boo Warp (previously "<Mansion>/King Boo Warp")
+** King Boo (previously "<Mansion>/King Boo")
 ** King Boo Appears (new)
 ** Bowser Corrects Head (new)
+** Bowser Collapses (new)
+** Caught King Boo (previously "<Mansion>/Caught King Boo")
 * Added a method to automatically play a sound for Luigi based on some conditions, removing a bunch of 3DS Remake overwriting files
 * Added a few animations that were missing
 * Added new debug setting: Unlock All Doors
+* Added technical dialog for boss clear; replacing the return timer
 * Changed Luigi and the camera to be entirely separate; everything originates from Luigi, camera is just synced up
+** Ghosts now appear behind Luigi's head, meaning the spawn area rotates along with animations
+** Portrait ghosts now hide based on flashlight shine direction
 ** A hidden setting now exists to control the movement from a third-person perspective; this is not guarenteed to be used in the future but has been added in case it will be
 ** The hidden setting also enables 2 new settings: Movement mode (Standard/Sidestep), and (Debug) Phase Through Walls
 * Changed Game Boy Horror's map option to get disabled if in a room where map is not allowed to be opened, rather than trying and failing to open
 * Changed most music track IDs
-* Changed debug settings to be hidden, unless sendCommandFeedback is set to true
+* Changed debug settings to be hidden, unless the sendCommandFeedback game rule is set to true
+* Changed some of Bowser's animations a bit
 * Fixed lab map area chunks accidentally removed
 * Fixed furniture shaking doesn't work entirely correct; the first of a short shake also no longer visually shakes the model, like the original game
 * Fixed softlock when upgrading a world where E. Gadd wasn't found yet

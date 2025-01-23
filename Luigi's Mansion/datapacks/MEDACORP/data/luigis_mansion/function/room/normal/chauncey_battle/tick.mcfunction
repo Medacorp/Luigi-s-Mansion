@@ -5,9 +5,6 @@ scoreboard players set @e[tag=player,x=782,y=5,z=43,dx=41,dy=34,dz=41] Room 73
 scoreboard players set #temp Room 73
 #/todelete
 
-execute if data storage luigis_mansion:data current_state.current_data.portrait_ghosts.luigis_mansion.chauncey{health:0} run scoreboard players add #chauncey_battle ReturnTimer 1
-execute if score #chauncey_battle ReturnTimer matches 100.. as @a[scores={Room=73}] run function luigis_mansion:room/normal/chauncey_battle/clear_nursery
-
 execute as @a[scores={Room=73}] run function luigis_mansion:room/normal/chauncey_battle/tick_per_player
 
 execute if data storage luigis_mansion:data current_state.current_data.rooms.nursery{cleared:0b} as @a unless entity @s[scores={Room=73}] run function luigis_mansion:room/normal/chauncey_battle/warp_to

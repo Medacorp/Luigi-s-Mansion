@@ -34,6 +34,7 @@ execute if entity @s[tag=flipped_gravity] run tag @e[tag=this_entity,limit=1] ad
 execute if entity @s[tag=flashlight] run tag @e[tag=this_entity,limit=1] add flashlight
 scoreboard players operation @e[tag=this_entity,limit=1] AnimationProgress = @s AnimationProgress
 scoreboard players operation @e[tag=this_entity,limit=1] ElementMeter = @s ElementMeter
+scoreboard players operation @e[tag=this_entity,limit=1] Room = @s Room
 scoreboard players operation @e[tag=this_entity,limit=1] LastRoom = @s LastRoom
 scoreboard players operation @e[tag=this_entity,limit=1] Shrunk = @s Shrunk
 scoreboard players operation @e[tag=this_entity,limit=1] Health = @s Health

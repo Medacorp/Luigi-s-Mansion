@@ -3,7 +3,7 @@ execute store result score @s ID run data get storage luigis_mansion:data my_mem
 data modify storage luigis_mansion:data memory append from storage luigis_mansion:data my_memory
 data remove storage luigis_mansion:data my_memory
 execute unless entity @s[scores={Shrunk=0..}] run function luigis_mansion:other/initial_scores
-function luigis_mansion:other/music/set/silence
+function luigis_mansion:other/music/set/force/silence
 execute unless entity @s[scores={Jukebox=0}] run function luigis_mansion:selection_menu/game_boy_horror/jukebox/stop
 scoreboard players set @s Offline 0
 scoreboard players set @s RoomNoise 0

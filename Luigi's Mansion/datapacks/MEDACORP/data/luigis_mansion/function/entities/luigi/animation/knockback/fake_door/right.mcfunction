@@ -11,7 +11,6 @@ execute if entity @s[scores={AnimationProgress=60..80}] run function luigis_mans
 execute if entity @s[scores={AnimationProgress=60..80}] run function luigis_mansion:entities/luigi/move/teleport {teleport:"^ ^ ^ ~ ~3"}
 execute if entity @s[scores={AnimationProgress=121..130}] run function luigis_mansion:entities/luigi/move/teleport {teleport:"^ ^ ^ ~ ~-9"}
 execute if entity @s[scores={AnimationProgress=120}] run function luigis_mansion:entities/luigi/make_sound/force {high:"luigis_mansion:entity.player.sigh.high_health",medium:"luigis_mansion:entity.player.sigh.high_health",low:"luigis_mansion:entity.player.sigh.low_health",duration:20}
-tag @s add pause_dialog
 tag @s add door_animation
 tag @s remove new_poltergust_grabbed
 tag @s remove poltergust_grabbed

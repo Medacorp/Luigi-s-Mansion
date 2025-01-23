@@ -5,9 +5,6 @@ scoreboard players set @e[tag=player,x=562,y=14,z=-63,dx=48,dy=78,dz=87] Room 75
 scoreboard players set #temp Room 75
 #/todelete
 
-execute if data storage luigis_mansion:data current_state.current_data.portrait_ghosts.luigis_mansion.boolossus{health:0} run scoreboard players add #boolossus_battle ReturnTimer 1
-execute if score #boolossus_battle ReturnTimer matches 100.. as @a[scores={Room=75}] run function 3ds_remake:room/hidden/boolossus_battle/clear_balcony_2
-
 execute as @a[scores={Room=75}] run function 3ds_remake:room/hidden/boolossus_battle/tick_per_player
 
 execute if data storage luigis_mansion:data current_state.current_data.rooms.balcony_2{cleared:0b} as @a unless entity @s[scores={Room=75}] run function 3ds_remake:room/hidden/boolossus_battle/warp_to

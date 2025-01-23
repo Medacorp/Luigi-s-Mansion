@@ -1,5 +1,5 @@
 execute if data storage luigis_mansion:data my_memory run tag @s add keep_memory
-execute if entity @s[tag=!keep_memory] run function luigis_mansion:entities/luigimemory/get with entity @s
+execute if entity @s[tag=!keep_memory] run function luigis_mansion:entities/luigi/get_owner_memory
 execute if entity @s[scores={Invulnerable=0}] unless data storage luigis_mansion:data my_memory.animation{namespace:"luigis_mansion",id:"knockback/medium_backward"} unless data storage luigis_mansion:data my_memory.animation{namespace:"luigis_mansion",id:"knockback/medium_forward"} run function luigis_mansion:entities/luigi/animation/set/none
 execute if entity @s[scores={Invulnerable=0}] unless data storage luigis_mansion:data my_memory.animation{namespace:"luigis_mansion",id:"knockback/medium_backward"} unless data storage luigis_mansion:data my_memory.animation{namespace:"luigis_mansion",id:"knockback/medium_forward"} run function luigis_mansion:entities/luigi/animation/shared/set_knockback_position_alt
 execute if entity @s[scores={Invulnerable=0}] unless data storage luigis_mansion:data my_memory.animation{namespace:"luigis_mansion",id:"knockback/medium_backward"} unless data storage luigis_mansion:data my_memory.animation{namespace:"luigis_mansion",id:"knockback/medium_forward"} run scoreboard players set @s Sound 0

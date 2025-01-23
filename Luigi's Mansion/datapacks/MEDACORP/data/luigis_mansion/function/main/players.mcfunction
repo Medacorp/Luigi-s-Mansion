@@ -1,4 +1,3 @@
-tag @s remove pause_dialog
 execute if entity @s[scores={Room=..0}] if score #mirrored Selected matches 1 run scoreboard players set #mirrored Selected 2
 execute if entity @s[tag=using_selection_menu,tag=fetch_option_result] run function luigis_mansion:entities/player/selection_menu/get_selected_option
 execute if entity @s[tag=using_selection_menu,tag=!selection_menu_free_to_move] run function luigis_mansion:entities/player/selection_menu/freeze_in_place
@@ -90,7 +89,7 @@ execute if score #remember_setting TeleportDelaySetting matches 1.. run scoreboa
 scoreboard players reset #remember_setting TeleportDelaySetting
 
 tag @s add me
-execute as @a[distance=..0.4,tag=!me,tag=!spectator,tag=!pause_dialog,limit=1] run function luigis_mansion:entities/player/collide
+execute as @a[distance=..0.4,tag=!me,tag=!spectator,tag=!door_animation,limit=1] run function luigis_mansion:entities/player/collide
 tag @s remove me
 #todelete - old mirror reflections
 tag @s remove mirror_set_by_furniture_entity
