@@ -1,6 +1,6 @@
 scoreboard players add @s AnimationProgress 1
-teleport @s ^ ^-3 ^2
-execute at @s positioned ^ ^0.5 ^0.5 run teleport @s ^ ^0.7 ^-0.6
+teleport @s ^ ^-4 ^2.667
+execute at @s positioned ^ ^0.667 ^0.667 run teleport @s ^ ^0.933 ^-0.8
 data merge entity @s[scores={AnimationProgress=1}] {Pose:{Head:[-70.0f,-7.0f,0.01f]}}
 execute store result score #temp Time run data get entity @s Pose.Head[0]
 execute if entity @s[scores={AnimationProgress=1}] store result entity @s Pose.Head[0] float 1 run scoreboard players remove #temp Time 1

@@ -31,6 +31,13 @@
                     "type": "minecraft:model",
                     "model": "luigis_mansion:item/spade_key"
                 }
+            },
+            {
+                "when": "cutscene",
+                "model": {
+                    "type": "minecraft:model",
+                    "model": "luigis_mansion:item/cutscene_key"
+                }
             }
         ],
         "fallback": {

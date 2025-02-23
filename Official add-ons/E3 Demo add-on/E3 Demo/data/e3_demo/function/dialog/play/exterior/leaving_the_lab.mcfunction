@@ -4,6 +4,9 @@ execute store result score #temp ID run data get storage luigis_mansion:data dia
 execute as @e[tag=player,tag=same_room] if score @s ID = #temp ID run tag @s add this_player
 scoreboard players reset #temp ID
 
+execute unless entity @e[tag=this_player,limit=1] run tag @e[tag=same_room] add abort_dialog_tick
+execute unless entity @e[tag=this_player,limit=1] run return 0
+
 tag @a[tag=!this_player,tag=!spectator,limit=1] remove same_room
 execute if entity @a[tag=this_player,limit=1] run scoreboard players add #dialog Dialog 1
 execute if entity @a[tag=this_player,limit=1,tag=skip_dialog] run scoreboard players set #dialog Dialog 361

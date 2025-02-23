@@ -1,1 +1,1 @@
-$data modify entity @s ArmorItems[3].components."minecraft:custom_data".key_model merge value "$(key_model)"
+$data modify entity @s ArmorItems[3].components."minecraft:custom_data".key_model merge value $(key_model)

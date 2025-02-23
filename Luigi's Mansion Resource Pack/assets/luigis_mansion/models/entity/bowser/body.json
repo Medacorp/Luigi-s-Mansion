@@ -993,8 +993,8 @@
 	"display": {
 		"head": {
 			"rotation": [-22.5, 0, 0],
-			"translation": [0, -12.5, 14],
-			"scale": [3, 3, 3]
+			"translation": [0, -16.67, 18.67],
+			"scale": [4, 4, 4]
 		}
 	}
 }

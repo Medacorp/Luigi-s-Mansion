@@ -26,83 +26,135 @@
             }
         ],
         "fallback": {
-            "type": "minecraft:range_dispatch",
+            "type": "minecraft:condition",
             "property": "minecraft:custom_model_data",
             "index": 0,
-            "scale": 1.0,
-            "entries": [
-                {
-                    "threshold": 1,
-                    "model": {
-                        "type": "minecraft:model",
-                        "model": "luigis_mansion:entity/bowser/right_arm"
-                    }
-                },
-                {
-                    "threshold": 2,
-                    "model": {
-                        "type": "minecraft:model",
-                        "model": "luigis_mansion:entity/bowser/left_arm"
-                    }
-                },
-                {
-                    "threshold": 3,
-                    "model": {
-                        "type": "minecraft:model",
-                        "model": "luigis_mansion:entity/bowser/body"
-                    }
-                },
-                {
-                    "threshold": 4,
-                    "model": {
-                        "type": "minecraft:model",
-                        "model": "luigis_mansion:entity/bowser/right_leg"
-                    }
-                },
-                {
-                    "threshold": 5,
-                    "model": {
-                        "type": "minecraft:model",
-                        "model": "luigis_mansion:entity/bowser/left_leg"
-                    }
-                },
-                {
-                    "threshold": 6,
-                    "model": {
-                        "type": "minecraft:model",
-                        "model": "luigis_mansion:entity/bowser/tail"
-                    }
-                },
-                {
-                    "threshold": 7,
-                    "model": {
-                        "type": "minecraft:model",
-                        "model": "luigis_mansion:entity/bowser/shadow"
-                    }
-                }
-            ],
-            "fallback": {
-                "type": "minecraft:select",
+            "on_false": {
+                "type": "minecraft:range_dispatch",
                 "property": "minecraft:custom_model_data",
                 "index": 0,
-                "cases": [
+                "scale": 1.0,
+                "entries": [
                     {
-                        "when": "open_mouth",
+                        "threshold": 1,
                         "model": {
                             "type": "minecraft:model",
-                            "model": "luigis_mansion:entity/bowser/head_open_mouth"
+                            "model": "luigis_mansion:entity/bowser/right_arm"
                         }
                     },
                     {
-                        "when": "decapitated",
+                        "threshold": 2,
                         "model": {
-                            "type": "minecraft:empty"
+                            "type": "minecraft:model",
+                            "model": "luigis_mansion:entity/bowser/left_arm"
+                        }
+                    },
+                    {
+                        "threshold": 3,
+                        "model": {
+                            "type": "minecraft:model",
+                            "model": "luigis_mansion:entity/bowser/body"
+                        }
+                    },
+                    {
+                        "threshold": 4,
+                        "model": {
+                            "type": "minecraft:model",
+                            "model": "luigis_mansion:entity/bowser/right_leg"
+                        }
+                    },
+                    {
+                        "threshold": 5,
+                        "model": {
+                            "type": "minecraft:model",
+                            "model": "luigis_mansion:entity/bowser/left_leg"
+                        }
+                    },
+                    {
+                        "threshold": 6,
+                        "model": {
+                            "type": "minecraft:model",
+                            "model": "luigis_mansion:entity/bowser/tail"
+                        }
+                    },
+                    {
+                        "threshold": 7,
+                        "model": {
+                            "type": "minecraft:model",
+                            "model": "luigis_mansion:entity/bowser/shadow"
                         }
                     }
                 ],
                 "fallback": {
-                    "type": "minecraft:model",
-                    "model": "luigis_mansion:entity/bowser/head"
+                    "type": "minecraft:select",
+                    "property": "minecraft:custom_model_data",
+                    "index": 0,
+                    "cases": [
+                        {
+                            "when": "open_mouth",
+                            "model": {
+                                "type": "minecraft:model",
+                                "model": "luigis_mansion:entity/bowser/head_open_mouth"
+                            }
+                        },
+                        {
+                            "when": "decapitated",
+                            "model": {
+                                "type": "minecraft:empty"
+                            }
+                        }
+                    ],
+                    "fallback": {
+                        "type": "minecraft:model",
+                        "model": "luigis_mansion:entity/bowser/head"
+                    }
+                }
+            },
+            "on_true": {
+                "type": "minecraft:range_dispatch",
+                "property": "minecraft:custom_model_data",
+                "index": 0,
+                "scale": 1.0,
+                "entries": [
+                    {
+                        "threshold": 1,
+                        "model": {
+                            "type": "minecraft:model",
+                            "model": "luigis_mansion:entity/bowser/right_arm_painting"
+                        }
+                    },
+                    {
+                        "threshold": 2,
+                        "model": {
+                            "type": "minecraft:model",
+                            "model": "luigis_mansion:entity/bowser/left_arm_painting"
+                        }
+                    },
+                    {
+                        "threshold": 3,
+                        "model": {
+                            "type": "minecraft:model",
+                            "model": "luigis_mansion:entity/bowser/body_painting"
+                        }
+                    }
+                ],
+                "fallback": {
+                    "type": "minecraft:select",
+                    "property": "minecraft:custom_model_data",
+                    "index": 0,
+                    "cases": [
+                        {
+                            "when": "open_mouth",
+                            "model": {
+                                "type": "minecraft:model",
+                                "model": "luigis_mansion:entity/bowser/head_open_mouth_painting"
+                            }
+                        }
+                    ],
+                    "fallback": {
+                        "type": "minecraft:model",
+                        "model": "luigis_mansion:entity/bowser/head_painting"
+                    }
                 }
             }
         }

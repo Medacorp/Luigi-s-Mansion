@@ -9,7 +9,7 @@ execute if score #dialog Dialog matches 180 if score #mirrored Selected matches 
 execute if score #dialog Dialog matches 180..220 as @a[tag=same_room] run function luigis_mansion:entities/player/camera/teleport {teleport:"^ ^ ^0.1 ~ ~"}
 execute if score #dialog Dialog matches 221..240 as @a[tag=same_room] run function luigis_mansion:entities/player/camera/teleport {teleport:"~ ~ ~ ~ ~"}
 execute if score #dialog Dialog matches 1..109 as @e[tag=luigi,tag=same_room] run function luigis_mansion:entities/luigi/animation/set/idle
-execute if score #dialog Dialog matches 1 as @a[tag=same_room] run function luigis_mansion:other/music/set/bogmire_battle
+execute if score #dialog Dialog matches 1.. as @a[tag=same_room] run function luigis_mansion:other/music/set/bogmire_battle
 execute if score #dialog Dialog matches 60 at @e[tag=ghost,tag=same_room,limit=1] run summon minecraft:lightning_bolt ~ ~ ~
 execute if score #dialog Dialog matches 70 at @e[tag=ghost,tag=same_room,limit=1] run summon minecraft:lightning_bolt ~ ~ ~
 execute if score #dialog Dialog matches 80 at @e[tag=ghost,tag=same_room,limit=1] run summon minecraft:lightning_bolt ~ ~ ~

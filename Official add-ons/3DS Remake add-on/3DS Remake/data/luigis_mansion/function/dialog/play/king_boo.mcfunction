@@ -74,7 +74,7 @@ execute if score #dialog Dialog matches 154 at @e[tag=same_room,nbt={data:{entit
 execute if score #dialog Dialog matches 154 as @a[tag=same_room] run function luigis_mansion:other/music/set/secret_altar_magic
 execute if score #dialog Dialog matches 154..173 run effect give @a[tag=same_room] minecraft:nausea 6 0 true
 execute if score #dialog Dialog matches 174..193 run effect give @a[tag=same_room] minecraft:nausea 5 0 true
-execute if score #dialog Dialog matches 194 as @e[tag=same_room,nbt={data:{entity:{namespace:"luigis_mansion",id:"mario"}}},limit=1] at @s positioned ^ ^-2.5 ^-1 run function luigis_mansion:spawn_entities/bowser/painting
+execute if score #dialog Dialog matches 194 as @e[tag=same_room,nbt={data:{entity:{namespace:"luigis_mansion",id:"mario"}}},limit=1] at @s positioned ^ ^-1 ^-0.6 run function luigis_mansion:spawn_entities/bowser/painting
 execute if score #dialog Dialog matches 194..213 run effect give @a[tag=same_room] minecraft:nausea 4 0 true
 execute if score #dialog Dialog matches 214..233 run effect give @a[tag=same_room] minecraft:nausea 3 0 true
 execute if score #dialog Dialog matches 234 as @e[tag=same_room,tag=mario,limit=1] at @s run teleport @s ~ ~-4 ~
@@ -83,7 +83,7 @@ execute if score #dialog Dialog matches 254..273 run effect give @a[tag=same_roo
 execute if score #dialog Dialog matches 274 run data remove entity @e[tag=same_room,nbt={data:{entity:{namespace:"luigis_mansion",id:"king_boo"}}},limit=1] data.animation
 execute if score #dialog Dialog matches 284..304 as @e[tag=same_room,nbt={data:{entity:{namespace:"luigis_mansion",id:"king_boo"}}},limit=1] at @s positioned ~ ~-4 ~ facing entity @e[tag=same_room,nbt={data:{entity:{namespace:"luigis_mansion",id:"mario"}}},limit=1] feet positioned ~ ~4 ~ run teleport @s ^ ^ ^0.3 ~ ~
 execute if score #dialog Dialog matches 305 run tag @e[tag=same_room,nbt={data:{entity:{namespace:"luigis_mansion",id:"king_boo"}}},limit=1] remove visible
-execute if score #dialog Dialog matches 324 run data modify entity @e[tag=same_room,nbt={data:{entity:{namespace:"luigis_mansion",id:"bowser"}}},limit=1] data.animation set value {namespace:"luigis_mansion",id:"painting"}
+execute if score #dialog Dialog matches 324 run data modify entity @e[tag=same_room,nbt={data:{entity:{namespace:"luigis_mansion",id:"bowser"}}},limit=1] data.animation set value {namespace:"luigis_mansion",id:"vacuum"}
 execute if score #dialog Dialog matches 391.. at @e[tag=same_room,nbt={data:{entity:{namespace:"luigis_mansion",id:"mario"}}},limit=1] positioned ^ ^5.5 ^3 run particle minecraft:dust{color:16777215,scale:1f} ~ ~ ~ 0 0 0 0 10
 execute if score #dialog Dialog matches 391.. at @e[tag=same_room,nbt={data:{entity:{namespace:"luigis_mansion",id:"mario"}}},limit=1] positioned ^ ^5.5 ^4 run particle minecraft:dust{color:16777215,scale:1f} ~ ~ ~ 0 0 0 0 10
 execute if score #dialog Dialog matches 391.. at @e[tag=same_room,nbt={data:{entity:{namespace:"luigis_mansion",id:"mario"}}},limit=1] positioned ^ ^5.5 ^5 run particle minecraft:dust{color:16777215,scale:1f} ~ ~ ~ 0 0 0 0 10

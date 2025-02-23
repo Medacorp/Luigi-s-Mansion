@@ -1,2 +1,2 @@
-execute as @e[nbt={data:{entity:{namespace:"luigis_mansion",id:"boolossus"}}},tag=no_ai] at @s run teleport @s 586 35 35.0 90 0
+execute as @e[nbt={data:{entity:{namespace:"luigis_mansion",id:"boolossus"}}},tag=no_ai] at @s run teleport @s 591 35 35.0 90 0
 tag @e[nbt={data:{entity:{namespace:"luigis_mansion",id:"boolossus"}}},tag=no_ai] remove no_ai

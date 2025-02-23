@@ -655,9 +655,14 @@
 		}
 	],
 	"display": {
+		"gui": {
+			"rotation": [12, -145, 0],
+			"translation": [0, -0.5, 0],
+			"scale": [0.475, 0.475, 0.475]
+		},
 		"head": {
-			"translation": [0, 14.75, -3.25],
-			"scale": [2, 2, 2]
+			"translation": [0, 19.66, -4.33],
+			"scale": [2.67, 2.67, 2.67]
 		}
 	},
 	"groups": [

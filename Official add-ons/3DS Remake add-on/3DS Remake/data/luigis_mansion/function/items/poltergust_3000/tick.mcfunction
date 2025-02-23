@@ -21,7 +21,7 @@ execute if entity @s[tag=poltergust_wall_sound,tag=gooigi] run function luigis_m
 tag @s remove poltergust_floor_sound
 tag @s remove poltergust_wall_sound
 execute if entity @s[tag=exploding_poltergust] run function luigis_mansion:items/poltergust_3000/explode
-tag @s[nbt={data:{selected_item:{components:{"minecraft:custom_data":{namespace:"luigis_mansion",id:"poltergust_3000"}}}}}] add poltergust_selected
+tag @s[tag=!door_animation,nbt={data:{selected_item:{components:{"minecraft:custom_data":{namespace:"luigis_mansion",id:"poltergust_3000"}}}}}] add poltergust_selected
 tag @s[tag=!poltergust_selected] remove expelling
 tag @s[tag=poltergust_selected,tag=!vacuuming_ghost,scores={UseItem=1..},tag=!expelling] add toggle_expelling
 tag @s[tag=poltergust_selected,tag=!vacuuming_ghost,tag=toggle_expelling] add expelling

@@ -195,8 +195,8 @@
 	"display": {
 		"head": {
 			"rotation": [45, 0, 0],
-			"translation": [-5.75, -34.5, -21.5],
-			"scale": [2, 2, 2]
+			"translation": [-7.67, -46, -28.67],
+			"scale": [2.67, 2.67, 2.67]
 		}
 	}
 }

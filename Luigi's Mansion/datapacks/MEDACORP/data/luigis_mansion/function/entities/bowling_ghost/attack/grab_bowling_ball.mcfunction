@@ -4,7 +4,7 @@ scoreboard players add @s ActionTime 1
 data modify entity @s[scores={ActionTime=1}] data.animation set value {namespace:"luigis_mansion",id:"grab_bowling_ball"}
 
 $execute if entity @s[scores={ActionTime=10}] run playsound $(namespace):entity.$(id).grab_ball hostile @a[tag=same_room] ~ ~ ~ 1
-execute if entity @s[scores={ActionTime=10}] run data modify storage luigis_mansion:data entity set value {owner:-1,damage:{},tags:["no_ai"]}
+execute if entity @s[scores={ActionTime=10}] run data modify storage luigis_mansion:data entity set value {owner:-1,damage:{},no_ai:1b}
 execute if entity @s[scores={ActionTime=10}] run data modify storage luigis_mansion:data entity.damage set from entity @s data.damage
 execute if entity @s[scores={ActionTime=10}] run data modify storage luigis_mansion:data entity.owner set from entity @s UUID
 execute if entity @s[scores={ActionTime=10}] positioned ^ ^1.2 ^ run function luigis_mansion:spawn_entities/ball/bowling 

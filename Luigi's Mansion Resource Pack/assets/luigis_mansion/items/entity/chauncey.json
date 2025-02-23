@@ -11,7 +11,7 @@
                     "index": 0,
                     "cases": [
                         {
-                            "when": "scream",
+                            "when": "screaming",
                             "model": {
                                 "type": "minecraft:model",
                                 "model": "luigis_mansion:entity/chauncey/head_scream"
@@ -133,7 +133,7 @@
                     "index": 0,
                     "cases": [
                         {
-                            "when": "scream",
+                            "when": "screaming",
                             "model": {
                                 "type": "minecraft:model",
                                 "model": "luigis_mansion:entity/chauncey/head_scream"
@@ -147,7 +147,7 @@
                             }
                         },
                         {
-                            "when": "big_scream",
+                            "when": "big_screaming",
                             "model": {
                                 "type": "minecraft:model",
                                 "model": "luigis_mansion:entity/chauncey/big/head_scream"

@@ -6,7 +6,7 @@ execute if score #mirrored Selected matches 1 run data modify entity @s[tag=held
 execute if score #mirrored Selected matches 1 if data storage luigis_mansion:data luigi.animation.hat_model{variant:1b} run data modify entity @s[tag=held_item,scores={AnimationProgress=40..55}] ArmorItems[3].components."minecraft:custom_model_data".flags[1] set value 1b
 execute if score #mirrored Selected matches 1 run data modify entity @s[tag=held_item,scores={AnimationProgress=56..}] ArmorItems[3] set value {}
 execute store result score #temp Time run data get entity @s Pose.Head[0]
-execute if entity @s[tag=held_item,scores={AnimationProgress=1}] run scoreboard players add #temp Time 180
+execute if score #mirrored Selected matches 1 if entity @s[tag=held_item,scores={AnimationProgress=1}] run scoreboard players add #temp Time 180
 execute if entity @s[scores={AnimationProgress=1..5}] store result entity @s Pose.Head[0] float 1 run scoreboard players remove #temp Time 40
 execute if entity @s[scores={AnimationProgress=6..10}] store result entity @s Pose.Head[0] float 1 run scoreboard players add #temp Time 10
 execute if entity @s[scores={AnimationProgress=11..15}] store result entity @s Pose.Head[0] float 1 run scoreboard players remove #temp Time 10
@@ -25,10 +25,10 @@ execute if score #mirrored Selected matches 1 if entity @s[scores={AnimationProg
 scoreboard players remove #temp Time 180
 execute store result entity @s Rotation[1] float 1 run scoreboard players remove #temp Time 90
 scoreboard players reset #temp Time
-execute at @s[tag=!shrunk,tag=held_item,tag=!flipped_gravity] positioned ^ ^-0.5 ^ run teleport @s ~ ~ ~ ~ ~
-execute at @s[tag=shrunk,tag=held_item,tag=!flipped_gravity] positioned ^ ^-0.25 ^ run teleport @s ~ ~ ~ ~ ~
-execute at @s[tag=!shrunk,tag=held_item,tag=flipped_gravity] positioned ^ ^0.5 ^ run teleport @s ~ ~ ~ ~ ~
-execute at @s[tag=shrunk,tag=held_item,tag=flipped_gravity] positioned ^ ^0.25 ^ run teleport @s ~ ~ ~ ~ ~
+execute if score #mirrored Selected matches 1 at @s[tag=!shrunk,tag=held_item,tag=!flipped_gravity] positioned ^ ^-0.5 ^ run teleport @s ~ ~ ~ ~ ~
+execute if score #mirrored Selected matches 1 at @s[tag=shrunk,tag=held_item,tag=!flipped_gravity] positioned ^ ^-0.25 ^ run teleport @s ~ ~ ~ ~ ~
+execute if score #mirrored Selected matches 1 at @s[tag=!shrunk,tag=held_item,tag=flipped_gravity] positioned ^ ^0.5 ^ run teleport @s ~ ~ ~ ~ ~
+execute if score #mirrored Selected matches 1 at @s[tag=shrunk,tag=held_item,tag=flipped_gravity] positioned ^ ^0.25 ^ run teleport @s ~ ~ ~ ~ ~
 data merge entity @s[scores={AnimationProgress=60}] {Pose:{Head:[0.0f,0.0f,0.01f]}}
 data merge entity @s[scores={AnimationProgress=60},tag=flipped_gravity] {Pose:{Head:[0.0f,0.0f,-180.0f]}}
 scoreboard players set @s[scores={AnimationProgress=60..}] AnimationProgress 0

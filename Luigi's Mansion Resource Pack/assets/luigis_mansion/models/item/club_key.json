@@ -1,5 +1,5 @@
 {
-    "parent": "minecraft:item/generated",
+    "parent": "luigis_mansion:item/key",
     "textures": {
         "layer0": "luigis_mansion:item/club_key"
     }

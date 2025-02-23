@@ -15,7 +15,7 @@ tag @s remove poltergust_floor_sound
 tag @s remove poltergust_wall_sound
 execute unless entity @s[scores={OverheatMeter=0..}] run scoreboard players add @s OverheatMeter 0
 execute unless entity @s[scores={OverheatMeter=..299},tag=!exploding_poltergust] run function e3_demo:items/poltergust_500/explode
-tag @s[nbt={data:{selected_item:{components:{"minecraft:custom_data":{namespace:"e3_demo",id:"poltergust_500"}}}}}] add poltergust_selected
+tag @s[tag=!door_animation,nbt={data:{selected_item:{components:{"minecraft:custom_data":{namespace:"e3_demo",id:"poltergust_500"}}}}}] add poltergust_selected
 tag @s[tag=!poltergust_selected] remove expelling
 tag @s[tag=poltergust_selected,tag=!vacuuming_ghost,scores={UseItem=1..},tag=!expelling] add toggle_expelling
 tag @s[tag=poltergust_selected,tag=!vacuuming_ghost,tag=toggle_expelling] add expelling

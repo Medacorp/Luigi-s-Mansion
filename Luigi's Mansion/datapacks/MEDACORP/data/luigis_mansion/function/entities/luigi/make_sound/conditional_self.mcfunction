@@ -1,1 +1,1 @@
-$execute if entity @s[scores={Sound=0}] run function luigis_mansion:entities/luigi/make_sound/full_volume_self {high:"$(high)",medium:"$(medium)",low:"$(low)",high:"$(high_self)",medium:"$(medium_self)",low:"$(low_self)",duration:$(duration)}
+$execute if entity @s[scores={Sound=0}] run function luigis_mansion:entities/luigi/make_sound/full_volume_self {high:"$(high)",medium:"$(medium)",low:"$(low)",high_self:"$(high_self)",medium_self:"$(medium_self)",low_self:"$(low_self)",duration:$(duration)}

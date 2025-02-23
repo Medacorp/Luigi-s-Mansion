@@ -1,3 +1,3 @@
-teleport @s ^0.63 ^0.55 ^-0.7
+teleport @s ^0.84 ^1.293 ^-0.933
 
 $execute at @s run function $(namespace):animations/bowser/$(id)/left_leg

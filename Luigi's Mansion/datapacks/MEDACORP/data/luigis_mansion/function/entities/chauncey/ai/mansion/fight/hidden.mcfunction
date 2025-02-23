@@ -13,21 +13,22 @@ scoreboard players add @s[scores={Dialog=120},tag=!laugh] Dialog 1
 scoreboard players add @s[scores={Dialog=82..119}] Dialog 1
 execute as @e[tag=rocking_horse,tag=same_room] at @s positioned ~-0.5 ~-0.5 ~-0.5 run tag @s[z=-54,dz=13] add can_attack
 execute unless entity @e[tag=rocking_horse,tag=same_room] run scoreboard players add @s[scores={Dialog=81}] Dialog 1
-execute at @e[tag=rocking_horse,tag=same_room,tag=can_attack] positioned ~ ~-3 ~-1 if entity @e[tag=same_room,tag=luigi,limit=1,dx=20,dy=3,dz=1] run scoreboard players add @s[scores={Dialog=81}] Dialog 1
+execute at @e[tag=rocking_horse,tag=same_room,tag=can_attack] positioned ~ ~-4 ~-1 if entity @e[tag=same_room,tag=luigi,limit=1,dx=20,dy=3,dz=1] run scoreboard players add @s[scores={Dialog=81}] Dialog 1
 scoreboard players add @s[scores={Dialog=61..80}] Dialog 1
 scoreboard players add @s[scores={Dialog=60},tag=!laugh] Dialog 1
 scoreboard players add @s[scores={Dialog=22..59}] Dialog 1
 execute unless entity @e[tag=rocking_horse,tag=same_room] run scoreboard players add @s[scores={Dialog=21}] Dialog 1
-execute at @e[tag=rocking_horse,tag=same_room,tag=can_attack] positioned ~ ~-3 ~-1 if entity @e[tag=same_room,tag=luigi,limit=1,dx=20,dy=3,dz=1] run scoreboard players add @s[scores={Dialog=21}] Dialog 1
+execute at @e[tag=rocking_horse,tag=same_room,tag=can_attack] positioned ~ ~-4 ~-1 if entity @e[tag=same_room,tag=luigi,limit=1,dx=20,dy=3,dz=1] run scoreboard players add @s[scores={Dialog=21}] Dialog 1
 scoreboard players add @s[scores={Dialog=..20}] Dialog 1
 execute unless entity @s[scores={Dialog=1..}] run scoreboard players add @s Dialog 1
 
+teleport @s[scores={Dialog=1}] 792.0 20 -48.0
 tag @s[scores={Dialog=1}] remove laugh
 scoreboard players set @s[scores={Dialog=1}] ActionTime 0
 tag @s[scores={Dialog=1}] add has_equipment
 data remove entity @s[scores={Dialog=1}] data.animation
-teleport @s[scores={Dialog=1..20,Health=..5000}] ~ ~ ~ -180 0
-teleport @s[scores={Dialog=1..20,Health=5001..}] ~ ~ ~ 0 0
+teleport @s[scores={Dialog=2..20,Health=..5000}] ~ ~ ~ -180 0
+teleport @s[scores={Dialog=2..20,Health=5001..}] ~ ~ ~ 0 0
 execute if entity @s[scores={Dialog=20}] run data modify storage luigis_mansion:data entity set value {owner:0,tags:["zigzag_left"]}
 execute if entity @s[scores={Dialog=20}] run data modify storage luigis_mansion:data entity.owner set from entity @s UUID
 execute if entity @s[scores={Dialog=20,Health=..5000}] run data modify storage luigis_mansion:data entity.tags set value ["zigzag_right","fast"]
@@ -81,6 +82,7 @@ execute if entity @s[scores={Dialog=360}] run data modify storage luigis_mansion
 execute if entity @s[scores={Dialog=360},tag=!laugh] positioned ~17 ~3 ~6.5 facing entity @e[tag=same_room,tag=luigi,sort=nearest,limit=1] feet rotated ~ 0 run function luigis_mansion:spawn_entities/ball/chauncey/big
 tag @s[scores={Dialog=380..539}] add laugh
 scoreboard players set @s[scores={Dialog=381..539}] ActionTime 1
+data modify entity @s[scores={Dialog=381..539},tag=laugh] data.animation set value {namespace:"luigis_mansion",id:"laugh"}
 tag @s[scores={Dialog=540}] remove laugh
 scoreboard players set @s[scores={Dialog=540}] ActionTime 0
 data modify entity @s[scores={Dialog=540}] data.animation set value {namespace:"luigis_mansion",id:"ramble"}

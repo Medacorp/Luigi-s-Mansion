@@ -1,12 +1,14 @@
 {
-    "parent": "minecraft:item/generated",
-    "textures": {
-        "layer0": "luigis_mansion:item/key"
-    },
+	"credit": "Made with Blockbench",
+	"parent": "minecraft:item/generated",
+	"textures": {
+		"layer0": "luigis_mansion:item/key"
+	},
 	"display": {
 		"head": {
-			"rotation": [0, -180, -45],
-			"translation": [0, -26, 0]
+			"rotation": [0, -90, -45],
+			"translation": [0, -6.25, 0],
+			"scale": [0.4, 0.4, 0.4]
 		}
 	}
 }

@@ -1,0 +1,2 @@
+data modify storage luigis_mansion:data furniture set value {room:72,sound:{namespace:"luigis_mansion",id:"heavy_generic"},door:{model:{namespace:"luigis_mansion",id:"spade"},frame:{namespace:"3ds_remake",id:"brown_metal"},push:1b,left_hinge:1b,key:"secret_altar",key_model:{"minecraft:custom_model_data":{strings:["spade"]}},other_end:{x:654,y:2,z:33}},tags:["exit_door"]}
+execute positioned 653 93 33 rotated 90 0 run function luigis_mansion:spawn_furniture/door
