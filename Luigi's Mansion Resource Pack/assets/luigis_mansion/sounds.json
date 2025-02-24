@@ -15255,6 +15255,33 @@
             }
         ]
     },
+    "music.mansion.rank.high": {
+        "sounds": [
+            {
+                "name": "luigis_mansion:music/mansion/rank/high",
+                "stream": true,
+                "volume": 0.00025
+            }
+        ]
+    },
+    "music.mansion.rank.low": {
+        "sounds": [
+            {
+                "name": "luigis_mansion:music/mansion/rank/low",
+                "stream": true,
+                "volume": 0.00025
+            }
+        ]
+    },
+    "music.mansion.rank.medium": {
+        "sounds": [
+            {
+                "name": "luigis_mansion:music/mansion/rank/medium",
+                "stream": true,
+                "volume": 0.00025
+            }
+        ]
+    },
     "music.mansion.room.astral_hall": {
         "sounds": [
             {

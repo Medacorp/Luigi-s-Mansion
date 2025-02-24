@@ -1,0 +1,2 @@
+function luigis_mansion:room/clear_mansion with storage luigis_mansion:data current_state.current_data.mansion_id
+function luigis_mansion:other/delete_current_mansion_data

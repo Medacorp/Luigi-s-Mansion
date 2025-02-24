@@ -70,5 +70,5 @@ execute if score #dialog Dialog matches 85..145 run scoreboard players reset #te
 scoreboard players reset #temp2 Dialog
 #146
 execute if score #dialog Dialog matches 147 as @a[tag=same_room] run function luigis_mansion:other/music/set/silence
-execute if score #dialog Dialog matches 147 run data modify storage luigis_mansion:data dialogs append value {name:{namespace:"e3_demo",id:"ending"},room:-3,progress:0}
+execute if score #dialog Dialog matches 147 run data modify storage luigis_mansion:data dialogs append value {name:{namespace:"luigis_mansion",id:"credits"},progress:0}
 execute if score #dialog Dialog matches 147 run scoreboard players set #dialog Dialog -1

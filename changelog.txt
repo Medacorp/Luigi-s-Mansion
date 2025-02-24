@@ -42,12 +42,16 @@ v3.3:
 ** Bowser Corrects Head (new)
 ** Bowser Collapses (new)
 ** Caught King Boo (previously "<Mansion>/Caught King Boo")
+* Added a few non-camera moving cutscenes:
+** Boss Clear (technical dialog replacing the return timer)
+** Credits (original game credits)
+** Mansion Rank (not exactly new, used to be included in Mario to Normal)
 * Added a few animations that were missing
 * Added the key to the door unlock animations
+* Added 3 new tracks of music for the mansion rank dialog
 * Added new debug setting: Unlock All Doors
 * Added the 3DS exclusive brown metal door frame for the basement hallways (I didn't notice this difference until now)
 * Added a method to automatically play a sound for Luigi based on some conditions, removing a bunch of 3DS Remake overwriting files
-* Added technical dialog for boss clear; replacing the return timer
 * Changed Luigi and the camera to be entirely separate; everything originates from Luigi, camera is just synced up
 ** Ghosts now appear behind Luigi's head, meaning the spawn area rotates along with animations
 ** Portrait ghosts now hide based on flashlight shine direction

@@ -49,7 +49,7 @@ execute if score #dialog Dialog matches 10 if score #players Totals matches 2.. 
 execute if score #dialog Dialog matches 10 if entity @a[tag=same_room,tag=next_dialog_line,limit=1] as @a[tag=same_room] at @s run playsound luigis_mansion:entity.e_gadd.talk.mah_mah_mah_luigi_oui neutral @s ~ ~ ~ 1
 
 execute if score #dialog Dialog matches 11..12 as @e[tag=luigi,tag=same_room] run function luigis_mansion:entities/luigi/animation/set/idle_no_poltergust
-execute if score #dialog Dialog matches 11 run function luigis_mansion:other/delete_current_mansion_data
+execute if score #dialog Dialog matches 11 run function luigis_mansion:dialog/play/mansion_rank/clear_mansion
 execute if score #dialog Dialog matches 11 as @a[tag=same_room] run function luigis_mansion:other/music/set/non_overwritten_silence
 #save?
 execute if score #dialog Dialog matches 13 as @e[tag=luigi,tag=same_room] run function luigis_mansion:entities/luigi/animation/set/none

@@ -1,3 +1,9 @@
+playsound luigis_mansion:music.mansion.rank.high music @s[scores={MusicType=-30}] ~ ~ ~ 1000
+scoreboard players set @s[scores={MusicType=-30}] Music 243
+playsound luigis_mansion:music.mansion.rank.medium music @s[scores={MusicType=-29}] ~ ~ ~ 1000
+scoreboard players set @s[scores={MusicType=-29}] Music 243
+playsound luigis_mansion:music.mansion.rank.low music @s[scores={MusicType=-28}] ~ ~ ~ 1000
+scoreboard players set @s[scores={MusicType=-28}] Music 243
 playsound luigis_mansion:music.boss.boolossus_balcony music @s[scores={MusicType=-27}] ~ ~ ~ 1000
 scoreboard players set @s[scores={MusicType=-27}] Music 348
 playsound luigis_mansion:furniture.door.chauncey music @s[scores={MusicType=-26}] ~ ~ ~ 1000
