@@ -1,1 +1,1 @@
-function luigis_mansion:animations/bowser_head/model with storage luigis_mansion:data ghost.animation
+function luigis_mansion:animations/bowser_head/model with storage luigis_mansion:data passive.animation
