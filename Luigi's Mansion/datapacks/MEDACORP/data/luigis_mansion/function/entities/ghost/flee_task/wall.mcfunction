@@ -3,7 +3,7 @@ execute rotated ~ 0 unless block ^-0.6 ^ ^ #luigis_mansion:ghosts_ignore run tag
 teleport @s[tag=!can_turn_left,tag=!can_turn_right] ~ ~ ~ ~-180 ~
 teleport @s[tag=can_turn_left,tag=!can_turn_right] ~ ~ ~ ~-90 ~
 teleport @s[tag=!can_turn_left,tag=can_turn_right] ~ ~ ~ ~90 ~
-execute if entity @s[tag=can_turn_left,tag=can_turn_right] if predicate luigis_mansion:50_50 run tag @s add turn_right_now
+execute if entity @s[tag=can_turn_left,tag=can_turn_right] if predicate luigis_mansion:ghost/flee_wall_right_chance run tag @s add turn_right_now
 teleport @s[tag=can_turn_left,tag=can_turn_right,tag=!turn_right_now] ~ ~ ~ ~-90 ~
 teleport @s[tag=can_turn_left,tag=can_turn_right,tag=turn_right_now] ~ ~ ~ ~90 ~
 tag @s remove turn_right_now

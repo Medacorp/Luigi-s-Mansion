@@ -31,7 +31,7 @@ execute at @s[tag=!stuck,y_rotation=90..-90] unless block ~ ~1 ~-0.4 #luigis_man
 execute rotated ~ 0 run teleport @s[tag=collision] ^ ^ ^-0.2
 execute at @s unless block ~ ~ ~ #luigis_mansion:all_ignore unless block ~ ~ ~ #minecraft:slabs[type=bottom] unless block ~ ~ ~ #minecraft:stairs[half=bottom] run tag @s[tag=!stuck] add collision
 execute rotated ~ 0 run teleport @s[tag=collision] ~ ~ ~ ~50 ~
-execute rotated ~ 0 if predicate luigis_mansion:50_50 run teleport @s[tag=collision] ~ ~ ~ ~-100 ~
+execute rotated ~ 0 if predicate luigis_mansion:ghost/hidden_collision_right_chance run teleport @s[tag=collision] ~ ~ ~ ~-100 ~
 tag @s remove forced_collision
 tag @s remove stuck
 scoreboard players add @s ActionTime 1

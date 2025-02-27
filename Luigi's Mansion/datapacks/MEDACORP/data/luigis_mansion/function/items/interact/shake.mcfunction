@@ -9,8 +9,8 @@ scoreboard players add @s InteractionTime 1
 tag @s[scores={InteractionTime=2}] add reset_rotation
 function luigis_mansion:entities/player/memory/get with entity @a[tag=this_player,limit=1]
 execute if entity @s[scores={InteractionTime=2}] at @e[tag=interact,tag=manual,limit=1] as @e[tag=furniture,tag=same_room,tag=affected_by_interact] run function luigis_mansion:items/interact/target_furniture/get_animation
-execute unless data storage luigis_mansion:data my_memory.animation if predicate luigis_mansion:1_3 if entity @s[scores={InteractionTime=2}] run function luigis_mansion:entities/luigi/animation/set/search/knock
-execute unless data storage luigis_mansion:data my_memory.animation if predicate luigis_mansion:50_50 if entity @s[scores={InteractionTime=2}] run function luigis_mansion:entities/luigi/animation/set/search/hump
+execute unless data storage luigis_mansion:data my_memory.animation if predicate luigis_mansion:luigi/search/knock_chance if entity @s[scores={InteractionTime=2}] run function luigis_mansion:entities/luigi/animation/set/search/knock
+execute unless data storage luigis_mansion:data my_memory.animation if predicate luigis_mansion:luigi/search/hump_chance if entity @s[scores={InteractionTime=2}] run function luigis_mansion:entities/luigi/animation/set/search/hump
 execute unless data storage luigis_mansion:data my_memory.animation if entity @s[scores={InteractionTime=2}] run function luigis_mansion:entities/luigi/animation/set/search/bash
 execute if data storage luigis_mansion:data my_memory.animation{namespace:"luigis_mansion",id:"search/hump"} run tag @e[tag=interact,tag=manual,limit=1] add long_shake
 #todelete - old furniture

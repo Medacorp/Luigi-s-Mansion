@@ -1,6 +1,6 @@
 execute facing entity @e[tag=luigi,tag=vacuuming_me,sort=nearest,limit=1] feet run teleport @s[scores={FleeTime=1}] ~ ~ ~ ~-180 0
 tag @s[scores={FleeTime=..2}] remove turn_right
-execute if predicate luigis_mansion:50_50 run tag @s[scores={FleeTime=..2}] add turn_right
+execute if predicate luigis_mansion:ghost/random_flee_right_chance run tag @s[scores={FleeTime=..2}] add turn_right
 execute at @s run teleport @s[tag=!turn_right] ~ ~ ~ ~-3 ~
 execute at @s run teleport @s[tag=turn_right] ~ ~ ~ ~3 ~
 scoreboard players set @s[scores={FleeTime=4..}] FleeTime 1

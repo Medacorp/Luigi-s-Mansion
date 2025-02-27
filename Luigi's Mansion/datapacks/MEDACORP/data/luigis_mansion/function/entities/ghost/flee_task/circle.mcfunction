@@ -1,5 +1,5 @@
 tag @s[scores={FleeTime=1}] remove circle_right
-execute if predicate luigis_mansion:50_50 run tag @s[scores={FleeTime=1}] add circle_right
+execute if predicate luigis_mansion:ghost/circle_flee_right_chance run tag @s[scores={FleeTime=1}] add circle_right
 execute facing entity @e[tag=luigi,tag=vacuuming_me,sort=nearest,limit=1] feet run teleport @s[scores={FleeTime=1},tag=!circle_right] ~ ~ ~ ~-90 0
 execute facing entity @e[tag=luigi,tag=vacuuming_me,sort=nearest,limit=1] feet run teleport @s[scores={FleeTime=1},tag=circle_right] ~ ~ ~ ~90 0
 execute if entity @s[tag=wall] run teleport @s ~ ~ ~ ~-180 ~

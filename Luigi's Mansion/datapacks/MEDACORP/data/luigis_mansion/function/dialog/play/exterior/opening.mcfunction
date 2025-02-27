@@ -63,6 +63,7 @@ execute if score #dialog Dialog matches 844..978 as @a[tag=same_room] run functi
 execute if score #dialog Dialog matches 859 run data modify entity @e[tag=door,tag=same_room,tag=creacking_door,limit=1] ArmorItems[3].components."minecraft:custom_data".animation set value {namespace:"luigis_mansion",id:"crack_open"}
 execute if score #dialog Dialog matches 864..883 as @e[tag=luigi,tag=this_player,limit=1] run function luigis_mansion:entities/luigi/move/teleport {teleport:"~ ~ ~-0.025"}
 execute if score #dialog Dialog matches 979 run tag @a[tag=this_player,limit=1] add first_entrance
+execute if score #dialog Dialog matches 979 as @a[tag=same_room] run function luigis_mansion:entities/player/camera/reset
 execute if score #dialog Dialog matches 979 as @a[tag=this_player,limit=1] run function luigis_mansion:room/exterior/enter_mansion with storage luigis_mansion:data current_state.current_data.mansion_id
 execute if score #dialog Dialog matches 979 as @a[tag=same_room,tag=spectator] run function luigis_mansion:room/exterior/enter_mansion with storage luigis_mansion:data current_state.current_data.mansion_id
 execute if score #dialog Dialog matches 979 run scoreboard players set #dialog Dialog -1

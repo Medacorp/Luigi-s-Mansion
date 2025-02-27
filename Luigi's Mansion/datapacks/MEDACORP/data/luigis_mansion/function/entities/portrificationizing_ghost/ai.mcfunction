@@ -6,8 +6,8 @@ execute unless entity @s[scores={Dialog=1..}] run scoreboard players add @s Dial
 execute if entity @s[scores={Dialog=1}] store result entity @s Rotation[0] float 1 run random value -180..179
 data modify entity @s[scores={Dialog=1}] Pose.Head set value [45.0f,0.0f,0.0f]
 execute if entity @s[scores={Dialog=40}] run teleport @s ~ ~-1 ~
-execute if entity @s[scores={Dialog=41..100}] if predicate luigis_mansion:50_50 run teleport @s ~ ~-0.067 ~
-execute if entity @s[scores={Dialog=41..100}] if predicate luigis_mansion:50_50 rotated ~ 0 run teleport @s ^ ^ ^0.0167
+execute if entity @s[scores={Dialog=41..100}] if predicate luigis_mansion:portrificationizing_ghost/move_down_chance run teleport @s ~ ~-0.067 ~
+execute at @s[scores={Dialog=41..100}] if predicate luigis_mansion:portrificationizing_ghost/move_forward_chance rotated ~ 0 run teleport @s ^ ^ ^0.0167
 execute if entity @s[scores={Dialog=140..180}] run teleport @s ~ ~ ~ ~5 ~
 execute if entity @s[scores={Dialog=181..220}] run teleport @s ~ ~ ~ ~10 ~
 execute if entity @s[scores={Dialog=221..299}] run teleport @s ~ ~ ~ ~20 ~

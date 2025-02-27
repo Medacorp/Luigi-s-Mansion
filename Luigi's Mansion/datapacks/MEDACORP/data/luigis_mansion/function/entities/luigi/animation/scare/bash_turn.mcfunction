@@ -9,6 +9,6 @@ execute if entity @s[scores={Shrunk=0}] rotated ~ 0 if block ^-0.5 ^1 ^ #luigis_
 execute if entity @s[tag=!can_move_left,tag=!can_move_right] run function luigis_mansion:entities/luigi/move/teleport {teleport:"~ ~ ~ ~-180 ~"}
 execute if entity @s[tag=can_move_left] run function luigis_mansion:entities/luigi/move/teleport {teleport:"~ ~ ~ ~90 ~"}
 execute if entity @s[tag=!can_move_left,tag=can_move_right] run function luigis_mansion:entities/luigi/move/teleport {teleport:"~ ~ ~ ~-90 ~"}
-execute if entity @s[tag=can_move_left,tag=can_move_right] if predicate luigis_mansion:50_50 run function luigis_mansion:entities/luigi/move/teleport {teleport:"~ ~ ~ ~-180 ~"}
+execute if entity @s[tag=can_move_left,tag=can_move_right] if predicate luigis_mansion:luigi/bash_turn_right_chance run function luigis_mansion:entities/luigi/move/teleport {teleport:"~ ~ ~ ~-180 ~"}
 tag @s remove can_move_left
 tag @s remove can_move_right
