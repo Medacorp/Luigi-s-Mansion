@@ -68,6 +68,7 @@ v3.3:
 * Fixed furniture shaking doesn't work entirely correct; the first of a short shake also no longer visually shakes the model, like the original game
 * Fixed softlock when upgrading a world where E. Gadd wasn't found yet
 * Fixed a few E. Gadd calls were missing the E. Gadd Call music
+* Fixed element medals using wrong bounce sound
 * Fixed the door in the Guest Room is non-solid
 * Fixed Chauncey's screaming head was not showing up
 * Fixed Chauncey's non-mirrored punch animation wrongly loops left arm
@@ -76,6 +77,7 @@ v3.3:
 * Fixed Boolossus is not visible until moment before it lands
 * Fixed Boolossus is not spawned in the right position (Original doesn't spawn it centered in the area, but slightly to the front)
 * Fixed Vincent Van Gore held 2 pencils
+* Fixed 3DS Remake's S Rank can be unlocked in normal mansion; a new field has been added to mansion data to control S Rank unlockability
 * Removed entered_mansion command storage flag; mansion entrance music/cutscene now plays for all players' first entry, not just the first player
 * Removed found_e_gadd command storage flag; E. Gadd's spawns are no longer conditional as you cannot go to the lab before going to the mansion anymore, and all other usages were replaced with checking the underground lab cleared state
 

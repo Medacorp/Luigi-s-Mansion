@@ -8,7 +8,7 @@ Mansion data is a massive collection of info storing everything the map needs to
         namespace:"luigis_mansion", //The mansion namespace.
         id:"normal" //The mansion ID.
     },
-    can_clear_hidden:1b, //Used by the GCN hidden mansion. It is set to 0b the moment the data had to be looked for in the mansion_data list.
+    can_clear_hidden:1b, //Used by the GCN hidden mansion. It is set to 0b the moment the data_index matched, but not the mansion_id.
     in_mansion_time:X, //How many ticks have been spent in this mansion.
     lowest_health_moment:X, //The lowest anyone's health has ever been in this mansion.
     lowest_difficulty:X, //The lowest difficulty that has ever been selected in this mansion; used for score multiplier.
@@ -149,6 +149,7 @@ Mansion data is a massive collection of info storing everything the map needs to
 3DS Remake exclusive data:
 ```
 {
+    can_unlock_s_rank:Xb, //Whether or not the S Rank can be achieved from this mansion. Default = 0b.
     tracking_boos:[ //A list of at most 3 Boo IDs to show on the map. Added when spawned, removed when captured.
         { //A tracked boo.
             namespace:"luigis_mansion", //The namespace of the boo.

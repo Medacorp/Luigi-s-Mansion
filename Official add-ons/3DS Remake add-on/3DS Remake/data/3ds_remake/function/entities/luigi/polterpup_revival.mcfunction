@@ -9,7 +9,8 @@ execute at @s[scores={Dialog=120},tag=flipped_gravity] unless score #mirrored Se
 execute at @s[scores={Dialog=120},tag=!flipped_gravity] if score #mirrored Selected matches 1 as @e[type=minecraft:armor_stand,tag=luigi_model,tag=head] if score @s ID = #temp ID rotated as @s run function 3ds_remake:spawn_entities/ghost/polterpup
 execute at @s[scores={Dialog=120},tag=flipped_gravity] if score #mirrored Selected matches 1 as @e[type=minecraft:armor_stand,tag=luigi_model,tag=head] if score @s ID = #temp ID rotated as @s run function 3ds_remake:spawn_entities/ghost/polterpup
 execute if entity @s[scores={Dialog=120}] run scoreboard players reset #temp ID
-execute if entity @s[scores={Dialog=140}] run playsound 3ds_remake:music.polterpup music @a[tag=same_room] ~ ~ ~ 1000
+execute if entity @s[scores={Dialog=140}] as @a[tag=same_room] run function 3ds_remake:other/music/set/polterpup
+execute if entity @s[scores={Dialog=150}] run scoreboard players add @a[tag=same_room] Music 62
 execute if entity @s[scores={Dialog=420}] run function luigis_mansion:entities/luigi/get_owner_memory
 execute if entity @s[scores={Dialog=420}] run data modify storage luigis_mansion:data my_memory.revived_by set value "3ds_remake:polterpup"
 execute if entity @s[scores={Dialog=420}] run data modify storage luigis_mansion:data memory append from storage luigis_mansion:data my_memory

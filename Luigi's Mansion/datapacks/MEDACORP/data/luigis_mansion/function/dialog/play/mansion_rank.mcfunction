@@ -1,3 +1,7 @@
+execute unless score #exterior Loaded matches 1 run tag @e[tag=same_room] add abort_dialog_tick
+execute unless score #exterior Loaded matches 1 run return 0
+
+scoreboard players add #dialog Dialog 1
 scoreboard players reset @a[tag=same_room,tag=!spectator] WarpTime
 execute as @a[tag=same_room,tag=!spectator,tag=game_boy_horror_menu] run function luigis_mansion:selection_menu/game_boy_horror/exit
 execute if score #dialog Dialog matches 1..259 run scoreboard players set @a[tag=same_room,scores={Jukebox=0}] Music 10000

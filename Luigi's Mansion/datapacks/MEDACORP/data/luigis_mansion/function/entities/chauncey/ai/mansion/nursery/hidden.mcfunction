@@ -7,7 +7,7 @@ execute unless entity @s[scores={Dialog=1..}] unless entity @s[scores={Dialog=..
 data modify entity @s[scores={Dialog=1}] data.animation set value {namespace:"luigis_mansion",id:"sleep"}
 tag @s[scores={Dialog=1..51}] add visible
 tag @s[scores={Dialog=1..50},tag=portrait_ghost_hide] remove visible
-execute if entity @s[scores={Dialog=2}] if predicate luigis_mansion:scream_wake_chance run data modify entity @s[scores={Dialog=1}] data.animation set value {namespace:"luigis_mansion",id:"scream_wake"}
+execute if entity @s[scores={Dialog=2}] if predicate luigis_mansion:chauncey/scream_wake_chance run data modify entity @s[scores={Dialog=1}] data.animation set value {namespace:"luigis_mansion",id:"scream_wake"}
 data modify entity @s[scores={Dialog=10},nbt=!{data:{animation:{namespace:"luigis_mansion",id:"scream_wake"}}}] data.animation set value {namespace:"luigis_mansion",id:"wake_up"}
 execute if entity @s[scores={Dialog=10},nbt={data:{animation:{namespace:"luigis_mansion",id:"wake_up"}}}] run playsound luigis_mansion:entity.chauncey.cry_wake hostile @a[tag=same_room] ~ ~ ~ 1
 execute if entity @s[scores={Dialog=30},nbt={data:{animation:{namespace:"luigis_mansion",id:"wake_up"}}}] run playsound luigis_mansion:entity.chauncey.cry_wake hostile @a[tag=same_room] ~ ~ ~ 1

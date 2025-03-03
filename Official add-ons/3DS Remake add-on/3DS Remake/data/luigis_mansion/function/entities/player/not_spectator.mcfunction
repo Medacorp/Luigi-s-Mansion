@@ -25,7 +25,7 @@ tag @s[tag=!dead_player] remove spectator
 tag @s[tag=third_person_movement] add separated_camera
 tag @s[tag=!third_person_movement,tag=!fully_separated_camera] remove separated_camera
 
-effect give @s minecraft:invisibility infinite 0 true
-execute if entity @s[tag=!has_luigi,tag=!dead_player,tag=!gooigi] run function luigis_mansion:spawn_entities/luigi
-execute if entity @s[tag=!has_luigi,tag=!dead_player,tag=gooigi] run function 3ds_remake:spawn_entities/gooigi/player
+effect give @s[tag=!camera] minecraft:invisibility infinite 0 true
+execute if entity @s[tag=!has_luigi,tag=!dead_player,tag=!camera,tag=!gooigi] run function luigis_mansion:spawn_entities/luigi
+execute if entity @s[tag=!has_luigi,tag=!dead_player,tag=!camera,tag=gooigi] run function 3ds_remake:spawn_entities/gooigi/player
 tag @s remove has_luigi

@@ -1,3 +1,6 @@
+execute unless score #exterior Loaded matches 1 run tag @e[tag=same_room] add abort_dialog_tick
+execute unless score #exterior Loaded matches 1 run return 0
+
 execute store result score #temp ID run data get storage luigis_mansion:data dialogs[0].player
 execute as @e[tag=player,tag=same_room] if score @s ID = #temp ID run tag @s add this_player
 scoreboard players reset #temp ID
