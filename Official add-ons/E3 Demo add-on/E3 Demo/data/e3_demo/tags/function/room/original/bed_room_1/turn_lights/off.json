@@ -1,7 +1,7 @@
 {
-	"values": [
-	    "e3_demo:room/original/bed_room_1/turn_lights/off/fan",
-	    "e3_demo:room/original/bed_room_1/turn_lights/off/room_clear_chest",
-	    "e3_demo:room/original/bed_room_1/turn_lights/off/table"
-	]
+    "values": [
+        "e3_demo:room/original/bed_room_1/turn_lights/off/fan",
+        "e3_demo:room/original/bed_room_1/turn_lights/off/room_clear_chest",
+        "e3_demo:room/original/bed_room_1/turn_lights/off/table"
+    ]
 }

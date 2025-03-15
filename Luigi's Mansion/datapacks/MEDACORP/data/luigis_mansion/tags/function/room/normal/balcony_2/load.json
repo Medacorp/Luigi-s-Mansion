@@ -1,9 +1,9 @@
 {
-	"values": [
-	    "luigis_mansion:room/normal/balcony_2/load/set_loaded",
+    "values": [
+        "luigis_mansion:room/normal/balcony_2/load/set_loaded",
         "luigis_mansion:room/normal/balcony_2/load/lights",
         "luigis_mansion:room/normal/balcony_2/load/hallway_17_door",
         "luigis_mansion:room/normal/balcony_2/load/hallway_18_door",
         "luigis_mansion:room/normal/balcony_2/load/room_clear_chest"
-	]
+    ]
 }

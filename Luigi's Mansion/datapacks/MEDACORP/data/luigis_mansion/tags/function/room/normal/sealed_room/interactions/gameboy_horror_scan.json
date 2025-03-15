@@ -1,15 +1,15 @@
 {
-	"values": [
-		"luigis_mansion:room/normal/sealed_room/interactions/gameboy_horror_scan/disk_1",
-		"luigis_mansion:room/normal/sealed_room/interactions/gameboy_horror_scan/disk_2",
-		"luigis_mansion:room/normal/sealed_room/interactions/gameboy_horror_scan/lamp",
-		"luigis_mansion:room/normal/sealed_room/interactions/gameboy_horror_scan/painting_1",
-		"luigis_mansion:room/normal/sealed_room/interactions/gameboy_horror_scan/painting_2",
-		"luigis_mansion:room/normal/sealed_room/interactions/gameboy_horror_scan/painting_3",
-		"luigis_mansion:room/normal/sealed_room/interactions/gameboy_horror_scan/painting_4",
-		"luigis_mansion:room/normal/sealed_room/interactions/gameboy_horror_scan/painting_5",
-		"luigis_mansion:room/normal/sealed_room/interactions/gameboy_horror_scan/painting_6",
-		"luigis_mansion:room/normal/sealed_room/interactions/gameboy_horror_scan/painting_7",
-		"luigis_mansion:room/normal/sealed_room/interactions/gameboy_horror_scan/table"
-	]
+    "values": [
+        "luigis_mansion:room/normal/sealed_room/interactions/gameboy_horror_scan/disk_1",
+        "luigis_mansion:room/normal/sealed_room/interactions/gameboy_horror_scan/disk_2",
+        "luigis_mansion:room/normal/sealed_room/interactions/gameboy_horror_scan/lamp",
+        "luigis_mansion:room/normal/sealed_room/interactions/gameboy_horror_scan/painting_1",
+        "luigis_mansion:room/normal/sealed_room/interactions/gameboy_horror_scan/painting_2",
+        "luigis_mansion:room/normal/sealed_room/interactions/gameboy_horror_scan/painting_3",
+        "luigis_mansion:room/normal/sealed_room/interactions/gameboy_horror_scan/painting_4",
+        "luigis_mansion:room/normal/sealed_room/interactions/gameboy_horror_scan/painting_5",
+        "luigis_mansion:room/normal/sealed_room/interactions/gameboy_horror_scan/painting_6",
+        "luigis_mansion:room/normal/sealed_room/interactions/gameboy_horror_scan/painting_7",
+        "luigis_mansion:room/normal/sealed_room/interactions/gameboy_horror_scan/table"
+    ]
 }

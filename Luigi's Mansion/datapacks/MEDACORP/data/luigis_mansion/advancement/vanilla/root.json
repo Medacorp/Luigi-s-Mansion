@@ -14,7 +14,7 @@
         "description": {
             "type": "translatable", "translate": "luigis_mansion:advancements.vanilla.root.description"
         },
-		"background": "luigis_mansion:textures/gui/advancements/background/vanilla.png"
+		"background": "luigis_mansion:gui/advancements/background/vanilla"
     },
     "criteria": {
         "unlock": {

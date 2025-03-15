@@ -1,14 +1,14 @@
 {
-	"values": [
-		"3ds_remake:room/hidden/master_bedroom/interactions/manual/bed",
-		"3ds_remake:room/hidden/master_bedroom/interactions/manual/chair",
-		"3ds_remake:room/hidden/master_bedroom/interactions/manual/mirror",
-		"3ds_remake:room/hidden/master_bedroom/interactions/manual/painting_1",
-		"3ds_remake:room/hidden/master_bedroom/interactions/manual/painting_2",
-		"3ds_remake:room/hidden/master_bedroom/interactions/manual/painting_3",
-		"3ds_remake:room/hidden/master_bedroom/interactions/manual/painting_4",
-		"3ds_remake:room/hidden/master_bedroom/interactions/manual/painting_5",
-		"3ds_remake:room/hidden/master_bedroom/interactions/manual/plant",
-		"3ds_remake:room/hidden/master_bedroom/interactions/manual/table_2"
-	]
+    "values": [
+        "3ds_remake:room/hidden/master_bedroom/interactions/manual/bed",
+        "3ds_remake:room/hidden/master_bedroom/interactions/manual/chair",
+        "3ds_remake:room/hidden/master_bedroom/interactions/manual/mirror",
+        "3ds_remake:room/hidden/master_bedroom/interactions/manual/painting_1",
+        "3ds_remake:room/hidden/master_bedroom/interactions/manual/painting_2",
+        "3ds_remake:room/hidden/master_bedroom/interactions/manual/painting_3",
+        "3ds_remake:room/hidden/master_bedroom/interactions/manual/painting_4",
+        "3ds_remake:room/hidden/master_bedroom/interactions/manual/painting_5",
+        "3ds_remake:room/hidden/master_bedroom/interactions/manual/plant",
+        "3ds_remake:room/hidden/master_bedroom/interactions/manual/table_2"
+    ]
 }

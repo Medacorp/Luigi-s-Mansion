@@ -10,7 +10,8 @@
                     "model": "luigis_mansion:item/entity/bowling_ghost",
                     "tints": [
                         {
-                            "type": "minecraft:dye",
+                            "type": "minecraft:custom_model_data",
+                            "index": 0,
                             "default": 16777215
                         }
                     ]
@@ -34,7 +35,8 @@
                             "model": "luigis_mansion:entity/bowling_ghost/right_arm",
                             "tints": [
                                 {
-                                    "type": "minecraft:dye",
+                                    "type": "minecraft:custom_model_data",
+                                    "index": 0,
                                     "default": 16777215
                                 }
                             ]
@@ -47,7 +49,8 @@
                             "model": "luigis_mansion:entity/bowling_ghost/left_arm",
                             "tints": [
                                 {
-                                    "type": "minecraft:dye",
+                                    "type": "minecraft:custom_model_data",
+                                    "index": 0,
                                     "default": 16777215
                                 }
                             ]
@@ -59,7 +62,8 @@
                     "model": "luigis_mansion:entity/bowling_ghost/body",
                     "tints": [
                         {
-                            "type": "minecraft:dye",
+                            "type": "minecraft:custom_model_data",
+                            "index": 0,
                             "default": 16777215
                         }
                     ]

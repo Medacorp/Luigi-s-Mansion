@@ -24,22 +24,22 @@ execute if score #dialog Dialog matches 1..48 if score #mirrored Selected matche
 execute if score #dialog Dialog matches 1 run data modify entity @e[tag=same_room,nbt={data:{entity:{namespace:"luigis_mansion",id:"madame_clairvoya"}}},limit=1] data.animation set value {namespace:"luigis_mansion",id:"nod"}
 execute if score #dialog Dialog matches 1..3 as @e[tag=luigi,tag=same_room] run function luigis_mansion:entities/luigi/animation/set/high_health_idle_no_sound
 execute if score #dialog Dialog matches 1..356 as @a[tag=same_room] run function luigis_mansion:other/music/set/talking_ghosts
-execute if score #dialog Dialog matches 1 if score #players Totals matches 1 run tellraw @a[tag=same_room] {"type":"translatable","translate":"chat.type.text","with":[{"type":"translatable","translate":"luigis_mansion:entity.madame_clairvoya","color":"green"},{"type":"translatable","translate":"luigis_mansion:dialog.madame_clairvoya.1"}]}
-execute if score #dialog Dialog matches 1 if score #players Totals matches 2.. run tellraw @a[tag=same_room] {"type":"translatable","translate":"chat.type.text","with":[{"type":"translatable","translate":"luigis_mansion:entity.madame_clairvoya","color":"green"},{"type":"translatable","translate":"luigis_mansion:dialog.madame_clairvoya.1.more"}]}
+execute if score #dialog Dialog matches 1 if score #players Totals matches 1 run tellraw @a[tag=same_room] {type:"translatable",translate:"chat.type.text",with:[{type:"translatable",translate:"luigis_mansion:entity.madame_clairvoya",color:"green"},{type:"translatable",translate:"luigis_mansion:dialog.madame_clairvoya.1"}]}
+execute if score #dialog Dialog matches 1 if score #players Totals matches 2.. run tellraw @a[tag=same_room] {type:"translatable",translate:"chat.type.text",with:[{type:"translatable",translate:"luigis_mansion:entity.madame_clairvoya",color:"green"},{type:"translatable",translate:"luigis_mansion:dialog.madame_clairvoya.1.more"}]}
 
 #Branch: Yes
 execute if score #dialog Dialog matches 4 as @e[tag=luigi,tag=same_room] run function luigis_mansion:entities/luigi/animation/set/nod
-execute if score #dialog Dialog matches 4 run tellraw @a[tag=same_room] {"type":"translatable","translate":"chat.type.text","with":[{"type":"translatable","translate":"luigis_mansion:entity.madame_clairvoya","color":"green"},{"type":"translatable","translate":"luigis_mansion:dialog.madame_clairvoya.yes.1"}]}
+execute if score #dialog Dialog matches 4 run tellraw @a[tag=same_room] {type:"translatable",translate:"chat.type.text",with:[{type:"translatable",translate:"luigis_mansion:entity.madame_clairvoya",color:"green"},{type:"translatable",translate:"luigis_mansion:dialog.madame_clairvoya.yes.1"}]}
 execute if score #dialog Dialog matches 24..25 as @e[tag=luigi,tag=same_room] run function luigis_mansion:entities/luigi/animation/set/idle_no_poltergust
 
-execute if score #dialog Dialog matches 25 if score #players Totals matches 1 if entity @a[tag=same_room,tag=next_dialog_line,limit=1] run tellraw @a[tag=same_room] {"type":"translatable","translate":"chat.type.text","with":[{"type":"translatable","translate":"luigis_mansion:entity.madame_clairvoya","color":"green"},{"type":"translatable","translate":"luigis_mansion:dialog.madame_clairvoya.yes.2"}]}
-execute if score #dialog Dialog matches 25 if score #players Totals matches 2.. if entity @a[tag=same_room,tag=next_dialog_line,limit=1] run tellraw @a[tag=same_room] {"type":"translatable","translate":"chat.type.text","with":[{"type":"translatable","translate":"luigis_mansion:entity.madame_clairvoya","color":"green"},{"type":"translatable","translate":"luigis_mansion:dialog.madame_clairvoya.yes.2.more"}]}
+execute if score #dialog Dialog matches 25 if score #players Totals matches 1 if entity @a[tag=same_room,tag=next_dialog_line,limit=1] run tellraw @a[tag=same_room] {type:"translatable",translate:"chat.type.text",with:[{type:"translatable",translate:"luigis_mansion:entity.madame_clairvoya",color:"green"},{type:"translatable",translate:"luigis_mansion:dialog.madame_clairvoya.yes.2"}]}
+execute if score #dialog Dialog matches 25 if score #players Totals matches 2.. if entity @a[tag=same_room,tag=next_dialog_line,limit=1] run tellraw @a[tag=same_room] {type:"translatable",translate:"chat.type.text",with:[{type:"translatable",translate:"luigis_mansion:entity.madame_clairvoya",color:"green"},{type:"translatable",translate:"luigis_mansion:dialog.madame_clairvoya.yes.2.more"}]}
 
 execute if score #dialog Dialog matches 26 run scoreboard players set #dialog Dialog -1
 
 #Branch: No
 execute if score #dialog Dialog matches 27 as @e[tag=luigi,tag=same_room] run function luigis_mansion:entities/luigi/animation/set/nod
-execute if score #dialog Dialog matches 27 run tellraw @a[tag=same_room] {"type":"translatable","translate":"chat.type.text","with":[{"type":"translatable","translate":"luigis_mansion:entity.madame_clairvoya","color":"green"},{"type":"translatable","translate":"luigis_mansion:dialog.madame_clairvoya.no.1"}]}
+execute if score #dialog Dialog matches 27 run tellraw @a[tag=same_room] {type:"translatable",translate:"chat.type.text",with:[{type:"translatable",translate:"luigis_mansion:entity.madame_clairvoya",color:"green"},{type:"translatable",translate:"luigis_mansion:dialog.madame_clairvoya.no.1"}]}
 execute if score #dialog Dialog matches 47 as @e[tag=luigi,tag=same_room] run function luigis_mansion:entities/luigi/animation/set/idle_no_poltergust
 
 execute if score #dialog Dialog matches 48 run scoreboard players set #dialog Dialog -1

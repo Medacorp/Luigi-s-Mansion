@@ -1,6 +1,6 @@
 {
-	"values": [
-	    "luigis_mansion:room/hidden/pipe_room/load/set_loaded",
+    "values": [
+        "luigis_mansion:room/hidden/pipe_room/load/set_loaded",
         "luigis_mansion:room/hidden/pipe_room/load/lights",
         "luigis_mansion:room/hidden/pipe_room/load/dripping_water_1",
         "luigis_mansion:room/hidden/pipe_room/load/dripping_water_2",
@@ -24,5 +24,5 @@
         "luigis_mansion:room/hidden/pipe_room/load/pipe",
         "luigis_mansion:room/hidden/pipe_room/load/room_clear_chest",
         "luigis_mansion:room/hidden/pipe_room/load/sewage"
-	]
+    ]
 }

@@ -5,7 +5,7 @@ execute at @s[scores={DeathTime=11..50}] unless score #mirrored Selected matches
 execute at @s[scores={DeathTime=11..50}] unless score #mirrored Selected matches 1 run teleport @s[tag=flipped_gravity] ^0.03125 ^-0.025 ^
 execute at @s[scores={DeathTime=11..50}] if score #mirrored Selected matches 1 run teleport @s[tag=!flipped_gravity] ^0.03125 ^0.025 ^
 execute at @s[scores={DeathTime=11..50}] if score #mirrored Selected matches 1 run teleport @s[tag=flipped_gravity] ^-0.03125 ^-0.025 ^
-data modify entity @s[scores={DeathTime=40}] ArmorItems[3] merge from entity @s ArmorItems[3].components."minecraft:custom_data".model_data.default
+data modify entity @s[scores={DeathTime=40}] equipment.head merge from entity @s equipment.head.components."minecraft:custom_data".model_data.default
 execute store result score #temp Time run data get entity @s Pose.Head[1]
 execute if entity @s[scores={DeathTime=1..15}] unless score #mirrored Selected matches 1 store result entity @s Pose.Head[1] float 1 run scoreboard players remove #temp Time 4
 execute if entity @s[scores={DeathTime=26..40}] unless score #mirrored Selected matches 1 store result entity @s Pose.Head[1] float 1 run scoreboard players add #temp Time 4

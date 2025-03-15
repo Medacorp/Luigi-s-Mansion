@@ -1,7 +1,7 @@
 {
-	"values": [
-		"luigis_mansion:room/hidden/bathroom_2/interactions/poltergust/bathtub",
-		"luigis_mansion:room/hidden/bathroom_2/interactions/poltergust/curtain",
-		"luigis_mansion:room/hidden/bathroom_2/interactions/poltergust/mirror"
-	]
+    "values": [
+        "luigis_mansion:room/hidden/bathroom_2/interactions/poltergust/bathtub",
+        "luigis_mansion:room/hidden/bathroom_2/interactions/poltergust/curtain",
+        "luigis_mansion:room/hidden/bathroom_2/interactions/poltergust/mirror"
+    ]
 }

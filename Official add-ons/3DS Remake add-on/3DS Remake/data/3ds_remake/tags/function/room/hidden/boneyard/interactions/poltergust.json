@@ -1,8 +1,8 @@
 {
-	"values": [
-		"3ds_remake:room/hidden/boneyard/interactions/poltergust/bowl",
-		"3ds_remake:room/hidden/boneyard/interactions/poltergust/plant",
-		"3ds_remake:room/hidden/boneyard/interactions/poltergust/sign",
-		"3ds_remake:room/hidden/boneyard/interactions/poltergust/water_tap"
-	]
+    "values": [
+        "3ds_remake:room/hidden/boneyard/interactions/poltergust/bowl",
+        "3ds_remake:room/hidden/boneyard/interactions/poltergust/plant",
+        "3ds_remake:room/hidden/boneyard/interactions/poltergust/sign",
+        "3ds_remake:room/hidden/boneyard/interactions/poltergust/water_tap"
+    ]
 }

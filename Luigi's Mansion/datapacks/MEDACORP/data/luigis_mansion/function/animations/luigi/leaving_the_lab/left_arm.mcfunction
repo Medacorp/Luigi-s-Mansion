@@ -1,8 +1,8 @@
 scoreboard players add @s AnimationProgress 1
-data modify entity @s[tag=held_item] ArmorItems[3] set value {id:"minecraft:diamond_pickaxe",count:1,components:{"minecraft:item_model":"luigis_mansion:empty"}}
-data modify entity @s[tag=held_item,scores={AnimationProgress=236..}] ArmorItems[3] set from storage luigis_mansion:data luigi.flashlight
-data modify entity @s[tag=held_item,scores={AnimationProgress=236..316}] ArmorItems[3] merge from storage luigis_mansion:data luigi.flashlight.components."minecraft:custom_data".model_data.off
-data modify entity @s[tag=held_item,scores={AnimationProgress=317..}] ArmorItems[3] merge from storage luigis_mansion:data luigi.flashlight.components."minecraft:custom_data".model_data.on
+data modify entity @s[tag=held_item] equipment.head set value {id:"minecraft:diamond_pickaxe",count:1,components:{"minecraft:item_model":"luigis_mansion:empty"}}
+data modify entity @s[tag=held_item,scores={AnimationProgress=236..}] equipment.head set from storage luigis_mansion:data luigi.flashlight
+data modify entity @s[tag=held_item,scores={AnimationProgress=236..316}] equipment.head merge from storage luigis_mansion:data luigi.flashlight.components."minecraft:custom_data".model_data.off
+data modify entity @s[tag=held_item,scores={AnimationProgress=317..}] equipment.head merge from storage luigis_mansion:data luigi.flashlight.components."minecraft:custom_data".model_data.on
 scoreboard players add @s[scores={AnimationProgress=1..235}] Time 2
 execute store result score #temp Time run data get entity @s Pose.Head[0]
 execute if entity @s[scores={Time=1..20}] store result entity @s Pose.Head[0] float 1 run scoreboard players remove #temp Time 3

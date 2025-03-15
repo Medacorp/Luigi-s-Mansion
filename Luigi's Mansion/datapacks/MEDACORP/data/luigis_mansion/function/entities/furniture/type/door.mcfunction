@@ -1,5 +1,5 @@
 execute unless entity @s[tag=!open_door,tag=!bash_door,tag=!unlock_door,tag=!forced_animation] run tag @s remove shake
-execute if entity @s[tag=in_water,tag=burning] run function luigis_mansion:entities/furniture/type/door/extinguish with entity @s ArmorItems[3].components."minecraft:custom_data"
+execute if entity @s[tag=in_water,tag=burning] run function luigis_mansion:entities/furniture/type/door/extinguish with entity @s data
 execute if entity @s[tag=burning] run function luigis_mansion:entities/furniture/type/door/burn
 execute if entity @s[tag=try_open,tag=!open_door,tag=!bash_door,tag=!unlock_door] run function luigis_mansion:entities/furniture/type/door/use
 tag @s remove try_open

@@ -46,8 +46,8 @@ execute if score #dialog Dialog matches 346..347 as @a[tag=same_room] run functi
 execute if score #dialog Dialog matches 370 as @a[tag=same_room] run function luigis_mansion:entities/player/camera/reset
 execute if score #dialog Dialog matches 120 as @a[tag=same_room] run function luigis_mansion:other/music/set/force/sue_pea
 execute if score #dialog Dialog matches 210 run playsound luigis_mansion:entity.sue_pea.go_away hostile @a[tag=same_room] ~ ~ ~ 1000
-execute if score #dialog Dialog matches 210 run tellraw @a[tag=same_room] {"type":"translatable","translate":"chat.type.text","with":[{"type":"translatable","translate":"luigis_mansion:entity.sue_pea","color":"green"},{"type":"translatable","translate":"luigis_mansion:dialog.sue_pea.1"}]}
-execute if score #dialog Dialog matches 280 run tellraw @a[tag=same_room] {"type":"translatable","translate":"chat.type.text","with":[{"type":"translatable","translate":"luigis_mansion:entity.sue_pea","color":"green"},{"type":"translatable","translate":"luigis_mansion:dialog.sue_pea.2"}]}
+execute if score #dialog Dialog matches 210 run tellraw @a[tag=same_room] {type:"translatable",translate:"chat.type.text",with:[{type:"translatable",translate:"luigis_mansion:entity.sue_pea",color:"green"},{type:"translatable",translate:"luigis_mansion:dialog.sue_pea.1"}]}
+execute if score #dialog Dialog matches 280 run tellraw @a[tag=same_room] {type:"translatable",translate:"chat.type.text",with:[{type:"translatable",translate:"luigis_mansion:entity.sue_pea",color:"green"},{type:"translatable",translate:"luigis_mansion:dialog.sue_pea.2"}]}
 execute if score #dialog Dialog matches 280 run data modify storage luigis_mansion:data current_state.current_data.technical_data merge value {sue_pea_spoke:1b}
 execute if score #dialog Dialog matches 370 as @a[tag=same_room,tag=!spectator] run function luigis_mansion:other/music/set/silence
 execute if score #dialog Dialog matches 370 as @e[tag=luigi,tag=same_room] run function luigis_mansion:entities/luigi/animation/set/none

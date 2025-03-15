@@ -1,4 +1,4 @@
-tellraw @a {"type":"translatable","translate":"chat.type.text","with":[{"type":"translatable","translate":"luigis_mansion:entity.mansion","color":"green"},{"type":"translatable","translate":"luigis_mansion:message.reloaded"}]}
+tellraw @a {type:"translatable",translate:"chat.type.text",with:[{type:"translatable",translate:"luigis_mansion:entity.mansion",color:"green"},{type:"translatable",translate:"luigis_mansion:message.reloaded"}]}
 
 function #luigis_mansion:anti_cheating/scores
 scoreboard players reset * Loaded

@@ -1,6 +1,6 @@
 {
-	"values": [
-	    "3ds_remake:room/hidden/secret_altar/load/set_loaded",
+    "values": [
+        "3ds_remake:room/hidden/secret_altar/load/set_loaded",
         "3ds_remake:room/hidden/secret_altar/load/lights",
         "3ds_remake:room/hidden/secret_altar/load/hallway_22_door",
         "3ds_remake:room/hidden/secret_altar/load/marios_painting",
@@ -10,5 +10,5 @@
         "3ds_remake:room/hidden/secret_altar/load/stone_bowl_candelabra_2",
         "3ds_remake:room/hidden/secret_altar/load/stone_bowl_candelabra_3",
         "3ds_remake:room/hidden/secret_altar/load/stone_bowl_candelabra_4"
-	]
+    ]
 }

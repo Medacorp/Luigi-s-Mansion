@@ -1,10 +1,10 @@
 {
-	"values": [
-	    "3ds_remake:room/hidden/balcony_2/load/set_loaded",
+    "values": [
+        "3ds_remake:room/hidden/balcony_2/load/set_loaded",
         "3ds_remake:room/hidden/balcony_2/load/lights",
         "3ds_remake:room/hidden/balcony_2/load/hallway_17_door",
         "3ds_remake:room/hidden/balcony_2/load/hallway_18_door",
         "3ds_remake:room/hidden/balcony_2/load/plant_3",
         "3ds_remake:room/hidden/balcony_2/load/room_clear_chest"
-	]
+    ]
 }

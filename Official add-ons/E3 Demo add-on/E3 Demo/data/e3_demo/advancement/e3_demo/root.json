@@ -16,7 +16,7 @@
         "description": {
             "type": "translatable", "translate": "e3_demo:advancements.e3_demo.root.description"
         },
-		"background": "e3_demo:textures/gui/advancements/background/e3_demo.png"
+		"background": "e3_demo:gui/advancements/background/e3_demo"
     },
     "criteria": {
         "unlock": {

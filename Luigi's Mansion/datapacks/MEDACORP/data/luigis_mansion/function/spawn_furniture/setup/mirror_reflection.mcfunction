@@ -5,5 +5,5 @@ execute store result score #temp Time run data get entity @e[tag=this_entity,lim
 execute unless score #temp Time matches 0 run data modify storage luigis_mansion:data furniture.mirror_reflection_edit set value 0b
 scoreboard players reset #temp Time
 execute unless data storage luigis_mansion:data furniture{mirror_reflection_edit:0b} run tag @e[tag=this_entity,limit=1] add reflects_entities
-execute unless data storage luigis_mansion:data furniture{mirror_reflection_edit:0b} as @e[tag=this_entity,limit=1] run data modify entity @s ArmorItems[3] merge from entity @s ArmorItems[3].components."minecraft:custom_data".model_data.reflects
+execute unless data storage luigis_mansion:data furniture{mirror_reflection_edit:0b} as @e[tag=this_entity,limit=1] run data modify entity @s equipment.head merge from entity @s equipment.head.components."minecraft:custom_data".model_data.reflects
 data remove storage luigis_mansion:data furniture.mirror_reflection_edit

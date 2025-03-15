@@ -1,7 +1,7 @@
 {
-	"values": [
-	    "luigis_mansion:room/ghost_portrificationizer_room/reset/unload",
-	    "luigis_mansion:room/ghost_portrificationizer_room/reset/portrificationizing_process",
-	    "luigis_mansion:room/ghost_portrificationizer_room/reset/ghost_portrificationizer"
-	]
+    "values": [
+        "luigis_mansion:room/ghost_portrificationizer_room/reset/unload",
+        "luigis_mansion:room/ghost_portrificationizer_room/reset/portrificationizing_process",
+        "luigis_mansion:room/ghost_portrificationizer_room/reset/ghost_portrificationizer"
+    ]
 }

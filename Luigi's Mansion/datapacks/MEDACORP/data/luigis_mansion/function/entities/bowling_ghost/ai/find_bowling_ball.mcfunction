@@ -1,1 +1,1 @@
-$tag @e[tag=bowling_ball,nbt={ArmorItems:[{components:{"minecraft:custom_data":{owner:$(UUID)}}}]}] add this_bowling_ball
+$tag @e[tag=bowling_ball,nbt={data:{owner:$(UUID)}}] add this_bowling_ball

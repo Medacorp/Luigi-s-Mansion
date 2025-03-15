@@ -1,6 +1,6 @@
 {
-	"values": [
-	    "luigis_mansion:room/normal/kitchen/load/set_loaded",
+    "values": [
+        "luigis_mansion:room/normal/kitchen/load/set_loaded",
         "luigis_mansion:room/normal/kitchen/load/lights",
         "luigis_mansion:room/normal/kitchen/load/boneyard_door",
         "luigis_mansion:room/normal/kitchen/load/cobweb",
@@ -12,5 +12,5 @@
         "luigis_mansion:room/normal/kitchen/load/painting_2",
         "luigis_mansion:room/normal/kitchen/load/painting_3",
         "luigis_mansion:room/normal/kitchen/load/room_clear_chest"
-	]
+    ]
 }

@@ -1,8 +1,8 @@
 {
-	"values": [
-	    "luigis_mansion:room/gallery_back_room/load/set_loaded",
-	    "luigis_mansion:room/gallery_back_room/load/gallery_hallway_1_door",
-	    "luigis_mansion:room/gallery_back_room/load/gallery_hallway_2_door",
-	    "luigis_mansion:room/gallery_back_room/load/king_boo_portrait"
-	]
+    "values": [
+        "luigis_mansion:room/gallery_back_room/load/set_loaded",
+        "luigis_mansion:room/gallery_back_room/load/gallery_hallway_1_door",
+        "luigis_mansion:room/gallery_back_room/load/gallery_hallway_2_door",
+        "luigis_mansion:room/gallery_back_room/load/king_boo_portrait"
+    ]
 }

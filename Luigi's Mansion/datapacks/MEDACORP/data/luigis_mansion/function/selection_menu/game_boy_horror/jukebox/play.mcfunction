@@ -1,5 +1,5 @@
 function luigis_mansion:entities/player/memory/get with entity @s
-tellraw @s {"type":"translatable","translate":"chat.type.text","with":[{"type":"translatable","translate":"luigis_mansion:item.game_boy_horror","color":"green"},{"type":"translatable","translate":"luigis_mansion:message.game_boy_horror.jukebox.playing","with":[{"type":"nbt","source":"storage","storage":"luigis_mansion:data","nbt":"selected_option.jukebox.name","interpret":true}]}]}
+tellraw @s {type:"translatable",translate:"chat.type.text",with:[{type:"translatable",translate:"luigis_mansion:item.game_boy_horror",color:"green"},{type:"translatable",translate:"luigis_mansion:message.game_boy_horror.jukebox.playing",with:[{type:"nbt",source:"storage",storage:"luigis_mansion:data",nbt:"selected_option.jukebox.name",interpret:true}]}]}
 execute store result score @s Jukebox run data get storage luigis_mansion:data selected_option.jukebox.track
 data modify storage luigis_mansion:data my_memory.music.jukebox set from storage luigis_mansion:data selected_option.jukebox.group
 data modify storage luigis_mansion:data my_memory.music.jukebox_flags set value {}

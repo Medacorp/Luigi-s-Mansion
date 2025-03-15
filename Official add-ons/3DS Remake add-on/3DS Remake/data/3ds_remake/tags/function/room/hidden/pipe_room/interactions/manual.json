@@ -1,7 +1,7 @@
 {
-	"values": [
-		"3ds_remake:room/hidden/pipe_room/interactions/manual/crate",
-		"3ds_remake:room/hidden/pipe_room/interactions/manual/frozen_barrel",
-		"3ds_remake:room/hidden/pipe_room/interactions/manual/pipe"
-	]
+    "values": [
+        "3ds_remake:room/hidden/pipe_room/interactions/manual/crate",
+        "3ds_remake:room/hidden/pipe_room/interactions/manual/frozen_barrel",
+        "3ds_remake:room/hidden/pipe_room/interactions/manual/pipe"
+    ]
 }

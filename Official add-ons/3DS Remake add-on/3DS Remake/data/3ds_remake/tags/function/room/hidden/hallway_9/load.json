@@ -1,6 +1,6 @@
 {
-	"values": [
-	    "3ds_remake:room/hidden/hallway_9/load/set_loaded",
+    "values": [
+        "3ds_remake:room/hidden/hallway_9/load/set_loaded",
         "3ds_remake:room/hidden/hallway_9/load/lights",
         "3ds_remake:room/hidden/hallway_9/load/hallway_8_door",
         "3ds_remake:room/hidden/hallway_9/load/ringed_vase_1",
@@ -12,5 +12,5 @@
         "3ds_remake:room/hidden/hallway_9/load/simple_wall_candelabra_3",
         "3ds_remake:room/hidden/hallway_9/load/simple_wall_candelabra_4",
         "3ds_remake:room/hidden/hallway_9/load/washroom_2_door"
-	]
+    ]
 }

@@ -1,7 +1,7 @@
 {
-	"values": [
-		"luigis_mansion:room/normal/fortune_tellers_room/interactions/poltergust/chair",
-		"luigis_mansion:room/normal/fortune_tellers_room/interactions/poltergust/pillar_1",
-		"luigis_mansion:room/normal/fortune_tellers_room/interactions/poltergust/pillar_2"
-	]
+    "values": [
+        "luigis_mansion:room/normal/fortune_tellers_room/interactions/poltergust/chair",
+        "luigis_mansion:room/normal/fortune_tellers_room/interactions/poltergust/pillar_1",
+        "luigis_mansion:room/normal/fortune_tellers_room/interactions/poltergust/pillar_2"
+    ]
 }

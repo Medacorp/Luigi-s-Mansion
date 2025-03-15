@@ -6,7 +6,7 @@ execute if entity @s[scores={AnimationProgress=13..28}] store result entity @s P
 execute if entity @s[scores={AnimationProgress=33..40}] store result entity @s Pose.Head[0] float 1 run scoreboard players remove #temp Time 1
 scoreboard players operation #temp Time = @s AnimationProgress
 scoreboard players operation #temp Time %= #4 Constants
-execute if score #temp Time matches 1.. run data modify entity @s ArmorItems[3].components."minecraft:custom_model_data".flags[0] set value 0b
-execute if score #temp Time matches 0 run data modify entity @s ArmorItems[3].components."minecraft:custom_model_data".flags[0] set value 1b
+execute if score #temp Time matches 1.. run data modify entity @s equipment.head.components."minecraft:custom_model_data".flags[0] set value 0b
+execute if score #temp Time matches 0 run data modify entity @s equipment.head.components."minecraft:custom_model_data".flags[0] set value 1b
 scoreboard players reset #temp Time
 scoreboard players set @s[scores={AnimationProgress=40}] AnimationProgress 0

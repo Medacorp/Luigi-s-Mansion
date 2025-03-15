@@ -1,6 +1,6 @@
 {
-	"values": [
-	    "3ds_remake:room/gallery/load/set_loaded",
+    "values": [
+        "3ds_remake:room/gallery/load/set_loaded",
         "3ds_remake:room/gallery/load/biff_atlas_portrait",
         "3ds_remake:room/gallery/load/bogmire_portrait",
         "3ds_remake:room/gallery/load/boolossus_portrait",
@@ -28,5 +28,5 @@
         "3ds_remake:room/gallery/load/trophy",
         "3ds_remake:room/gallery/load/uncle_grimmly_portrait",
         "3ds_remake:room/gallery/load/vincent_van_gore_portrait"
-	]
+    ]
 }

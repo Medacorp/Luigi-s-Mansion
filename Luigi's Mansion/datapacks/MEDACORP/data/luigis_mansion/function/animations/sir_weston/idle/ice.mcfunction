@@ -1,1 +1,1 @@
-data modify entity @s[tag=visible] ArmorItems[3].id set from entity @s ArmorItems[3].components."minecraft:custom_data".visible
+data modify entity @s equipment.head merge from entity @s equipment.head.components."minecraft:custom_data".model_data.broken

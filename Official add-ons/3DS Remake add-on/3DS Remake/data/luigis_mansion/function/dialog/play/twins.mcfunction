@@ -28,28 +28,28 @@ execute if score #dialog Dialog matches 31 as @a[tag=same_room] run function lui
 execute if score #dialog Dialog matches 61.. as @a[tag=same_room] run function luigis_mansion:other/music/set/talking_ghosts
 execute if score #dialog Dialog matches 61..67 run data remove entity @e[tag=same_room,nbt={data:{entity:{namespace:"luigis_mansion",id:"henry"}}},limit=1] data.animation
 execute if score #dialog Dialog matches 61..67 run data remove entity @e[tag=same_room,nbt={data:{entity:{namespace:"luigis_mansion",id:"orville"}}},limit=1] data.animation
-execute if score #dialog Dialog matches 61 if score #players Totals matches 1 run tellraw @a[tag=same_room] {"type":"translatable","translate":"chat.type.text","with":[{"type":"translatable","translate":"luigis_mansion:entity.orville","color":"green"},{"type":"translatable","translate":"3ds_remake:dialog.twins.1"}]}
-execute if score #dialog Dialog matches 61 if score #players Totals matches 2.. run tellraw @a[tag=same_room] {"type":"translatable","translate":"chat.type.text","with":[{"type":"translatable","translate":"luigis_mansion:entity.orville","color":"green"},{"type":"translatable","translate":"3ds_remake:dialog.twins.1.more"}]}
+execute if score #dialog Dialog matches 61 if score #players Totals matches 1 run tellraw @a[tag=same_room] {type:"translatable",translate:"chat.type.text",with:[{type:"translatable",translate:"luigis_mansion:entity.orville",color:"green"},{type:"translatable",translate:"3ds_remake:dialog.twins.1"}]}
+execute if score #dialog Dialog matches 61 if score #players Totals matches 2.. run tellraw @a[tag=same_room] {type:"translatable",translate:"chat.type.text",with:[{type:"translatable",translate:"luigis_mansion:entity.orville",color:"green"},{type:"translatable",translate:"3ds_remake:dialog.twins.1.more"}]}
 
-execute if score #dialog Dialog matches 63 if score #players Totals matches 1 if entity @a[tag=same_room,tag=next_dialog_line,limit=1] run tellraw @a[tag=same_room] {"type":"translatable","translate":"chat.type.text","with":[{"type":"translatable","translate":"luigis_mansion:entity.henry","color":"green"},{"type":"translatable","translate":"luigis_mansion:dialog.twins.2"}]}
-execute if score #dialog Dialog matches 63 if score #players Totals matches 2.. if entity @a[tag=same_room,tag=next_dialog_line,limit=1] run tellraw @a[tag=same_room] {"type":"translatable","translate":"chat.type.text","with":[{"type":"translatable","translate":"luigis_mansion:entity.henry","color":"green"},{"type":"translatable","translate":"luigis_mansion:dialog.twins.2.more"}]}
+execute if score #dialog Dialog matches 63 if score #players Totals matches 1 if entity @a[tag=same_room,tag=next_dialog_line,limit=1] run tellraw @a[tag=same_room] {type:"translatable",translate:"chat.type.text",with:[{type:"translatable",translate:"luigis_mansion:entity.henry",color:"green"},{type:"translatable",translate:"luigis_mansion:dialog.twins.2"}]}
+execute if score #dialog Dialog matches 63 if score #players Totals matches 2.. if entity @a[tag=same_room,tag=next_dialog_line,limit=1] run tellraw @a[tag=same_room] {type:"translatable",translate:"chat.type.text",with:[{type:"translatable",translate:"luigis_mansion:entity.henry",color:"green"},{type:"translatable",translate:"luigis_mansion:dialog.twins.2.more"}]}
 
-execute if score #dialog Dialog matches 64 if entity @a[tag=same_room,tag=next_dialog_line,limit=1] run tellraw @a[tag=same_room] {"type":"translatable","translate":"chat.type.text","with":[{"type":"translatable","translate":"luigis_mansion:entity.orville","color":"green"},{"type":"translatable","translate":"luigis_mansion:dialog.twins.3"}]}
+execute if score #dialog Dialog matches 64 if entity @a[tag=same_room,tag=next_dialog_line,limit=1] run tellraw @a[tag=same_room] {type:"translatable",translate:"chat.type.text",with:[{type:"translatable",translate:"luigis_mansion:entity.orville",color:"green"},{type:"translatable",translate:"luigis_mansion:dialog.twins.3"}]}
 
 #65 choice
 
 #Branch: Yes
-execute if score #dialog Dialog matches 66 if entity @a[tag=same_room,tag=select_dialog_branch_yes,limit=1] run tellraw @a[tag=same_room] {"type":"translatable","translate":"chat.type.text","with":[{"type":"translatable","translate":"luigis_mansion:entity.henry","color":"green"},{"type":"translatable","translate":"luigis_mansion:dialog.twins.yes.1"}]}
+execute if score #dialog Dialog matches 66 if entity @a[tag=same_room,tag=select_dialog_branch_yes,limit=1] run tellraw @a[tag=same_room] {type:"translatable",translate:"chat.type.text",with:[{type:"translatable",translate:"luigis_mansion:entity.henry",color:"green"},{type:"translatable",translate:"luigis_mansion:dialog.twins.yes.1"}]}
 
-execute if score #dialog Dialog matches 67 if score #players Totals matches 1 if entity @a[tag=same_room,tag=next_dialog_line,limit=1] run tellraw @a[tag=same_room] {"type":"translatable","translate":"chat.type.text","with":[{"type":"translatable","translate":"luigis_mansion:entity.orville","color":"green"},{"type":"translatable","translate":"luigis_mansion:dialog.twins.yes.2"}]}
-execute if score #dialog Dialog matches 67 if score #players Totals matches 2.. if entity @a[tag=same_room,tag=next_dialog_line,limit=1] run tellraw @a[tag=same_room] {"type":"translatable","translate":"chat.type.text","with":[{"type":"translatable","translate":"luigis_mansion:entity.orville","color":"green"},{"type":"translatable","translate":"luigis_mansion:dialog.twins.yes.2.more"}]}
+execute if score #dialog Dialog matches 67 if score #players Totals matches 1 if entity @a[tag=same_room,tag=next_dialog_line,limit=1] run tellraw @a[tag=same_room] {type:"translatable",translate:"chat.type.text",with:[{type:"translatable",translate:"luigis_mansion:entity.orville",color:"green"},{type:"translatable",translate:"luigis_mansion:dialog.twins.yes.2"}]}
+execute if score #dialog Dialog matches 67 if score #players Totals matches 2.. if entity @a[tag=same_room,tag=next_dialog_line,limit=1] run tellraw @a[tag=same_room] {type:"translatable",translate:"chat.type.text",with:[{type:"translatable",translate:"luigis_mansion:entity.orville",color:"green"},{type:"translatable",translate:"luigis_mansion:dialog.twins.yes.2.more"}]}
 
 execute if score #dialog Dialog matches 68 run scoreboard players add #the_twins_room Wave 1
 execute if score #dialog Dialog matches 68 run scoreboard players set #dialog Dialog -1
 
 #Branch: No
 execute if score #dialog Dialog matches 69..128 as @e[tag=luigi,tag=same_room] run function luigis_mansion:entities/luigi/animation/set/idle_no_poltergust
-execute if score #dialog Dialog matches 69 run tellraw @a[tag=same_room] {"type":"translatable","translate":"chat.type.text","with":[{"type":"translatable","translate":"luigis_mansion:entity.orville","color":"green"},{"type":"translatable","translate":"luigis_mansion:dialog.twins.no.1"}]}
+execute if score #dialog Dialog matches 69 run tellraw @a[tag=same_room] {type:"translatable",translate:"chat.type.text",with:[{type:"translatable",translate:"luigis_mansion:entity.orville",color:"green"},{type:"translatable",translate:"luigis_mansion:dialog.twins.no.1"}]}
 execute if score #dialog Dialog matches 129 run scoreboard players set #dialog Dialog -1
 
 execute if score #dialog Dialog matches -1 as @e[tag=luigi,tag=same_room] run function luigis_mansion:entities/luigi/animation/set/none

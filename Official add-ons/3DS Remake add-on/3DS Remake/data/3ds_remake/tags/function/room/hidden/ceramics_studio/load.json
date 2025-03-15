@@ -1,6 +1,6 @@
 {
-	"values": [
-	    "3ds_remake:room/hidden/ceramics_studio/load/set_loaded",
+    "values": [
+        "3ds_remake:room/hidden/ceramics_studio/load/set_loaded",
         "3ds_remake:room/hidden/ceramics_studio/load/lights",
         "3ds_remake:room/hidden/ceramics_studio/load/armory_door",
         "3ds_remake:room/hidden/ceramics_studio/load/cobweb",
@@ -15,5 +15,5 @@
         "3ds_remake:room/hidden/ceramics_studio/load/small_trophy",
         "3ds_remake:room/hidden/ceramics_studio/load/tall_neck_vase",
         "3ds_remake:room/hidden/ceramics_studio/load/terracotta_vase"
-	]
+    ]
 }

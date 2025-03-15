@@ -1,10 +1,10 @@
 {
-	"values": [
-	    "luigis_mansion:room/hidden/cold_storage/load/set_loaded",
+    "values": [
+        "luigis_mansion:room/hidden/cold_storage/load/set_loaded",
         "luigis_mansion:room/hidden/cold_storage/load/lights",
         "luigis_mansion:room/hidden/cold_storage/load/fire",
         "luigis_mansion:room/hidden/cold_storage/load/hallway_20_door",
         "luigis_mansion:room/hidden/cold_storage/load/lamp",
         "luigis_mansion:room/hidden/cold_storage/load/room_clear_chest"
-	]
+    ]
 }

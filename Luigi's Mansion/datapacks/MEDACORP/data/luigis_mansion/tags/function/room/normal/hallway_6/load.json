@@ -1,11 +1,11 @@
 {
-	"values": [
-	    "luigis_mansion:room/normal/hallway_6/load/set_loaded",
+    "values": [
+        "luigis_mansion:room/normal/hallway_6/load/set_loaded",
         "luigis_mansion:room/normal/hallway_6/load/lights",
         "luigis_mansion:room/normal/hallway_6/load/bathroom_1_door",
         "luigis_mansion:room/normal/hallway_6/load/conservatory_blackout_fake_door",
         "luigis_mansion:room/normal/hallway_6/load/courtyard_door",
         "luigis_mansion:room/normal/hallway_6/load/simple_wall_candelabra_1",
         "luigis_mansion:room/normal/hallway_6/load/simple_wall_candelabra_2"
-	]
+    ]
 }

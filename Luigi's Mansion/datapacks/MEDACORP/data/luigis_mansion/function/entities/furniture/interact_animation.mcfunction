@@ -7,4 +7,4 @@ execute if entity @s[tag=must_face,tag=!inverted_check] if score #temp Time > @s
 execute if entity @s[tag=must_face,tag=inverted_check] if score #temp Time < @s RotationX if score #temp Time > @s RotationDifference run tag @e[tag=searcher,limit=1] add not_facing
 execute if entity @s[tag=must_face,tag=inverted_check] if score #temp Time > @s RotationY if score #temp Time < @s RotationDifference run tag @e[tag=searcher,limit=1] add not_facing
 scoreboard players reset #temp Time
-execute if data entity @s ArmorItems[3].components."minecraft:custom_data".interact_animation run function luigis_mansion:entities/furniture/interact_animation_set with entity @s ArmorItems[3].components."minecraft:custom_data".interact_animation
+execute if data entity @s data.interact_animation run function luigis_mansion:entities/furniture/interact_animation_set with entity @s data.interact_animation

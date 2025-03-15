@@ -20,8 +20,8 @@ execute if score #dialog Dialog matches 2..100 as @a[tag=same_room] run function
 execute if score #dialog Dialog matches 101..140 unless score #mirrored Selected matches 1 as @a[tag=same_room] run function luigis_mansion:entities/player/camera/teleport {teleport:"^ ^0.00625 ^ ~0.25 ~"}
 execute if score #dialog Dialog matches 101..140 if score #mirrored Selected matches 1 as @a[tag=same_room] run function luigis_mansion:entities/player/camera/teleport {teleport:"^ ^0.00625 ^ ~-0.25 ~"}
 execute if score #dialog Dialog matches 141..259 as @a[tag=same_room] run function luigis_mansion:entities/player/camera/teleport {teleport:"^ ^ ^ ~ ~"}
-execute if score #dialog Dialog matches 260 run data modify storage luigis_mansion:data current_state.current_data.used_keys append from entity @e[tag=this_door,scores={AnimationProgress=1..80},limit=1] ArmorItems[3].components."minecraft:custom_data".key
-execute if score #dialog Dialog matches 260 run data remove entity @e[tag=this_door,scores={AnimationProgress=1..80},limit=1] ArmorItems[3].components."minecraft:custom_data".key
+execute if score #dialog Dialog matches 260 run data modify storage luigis_mansion:data current_state.current_data.used_keys append from entity @e[tag=this_door,scores={AnimationProgress=1..80},limit=1] data.key
+execute if score #dialog Dialog matches 260 run data remove entity @e[tag=this_door,scores={AnimationProgress=1..80},limit=1] data.key
 execute if score #dialog Dialog matches 260 if entity @e[tag=this_door,scores={AnimationProgress=1..80},limit=1] run tag @a[tag=looking_at_map,limit=1] add regenerate_map
 execute if score #dialog Dialog matches 259 run scoreboard players set @e[tag=this_door,scores={AnimationProgress=1..259},limit=1] AnimationProgress 259
 execute if score #dialog Dialog matches 259 run scoreboard players set @e[tag=this_luigi,scores={AnimationProgress=1..259},limit=1] AnimationProgress 259

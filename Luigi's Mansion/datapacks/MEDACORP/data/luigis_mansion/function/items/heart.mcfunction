@@ -1,4 +1,4 @@
-execute store result score #temp Health run data get entity @s ArmorItems[3].components."minecraft:custom_data".variant
+execute store result score #temp Health run data get entity @s data.variant
 execute as @e[tag=collector,scores={Sound=0,Health=41..99,Shrunk=0},limit=1] unless score @s Health = @s MaxHealth run function luigis_mansion:entities/luigi/run_command_at_owner {command:"playsound luigis_mansion:entity.player.healed.high_health player @s ~ ~ ~ 1"}
 execute as @e[tag=collector,scores={Sound=0,Health=41..99,Shrunk=1..},limit=1] unless score @s Health = @s MaxHealth run function luigis_mansion:entities/luigi/run_command_at_owner {command:"playsound luigis_mansion:entity.player.healed.high_health player @s ~ ~ ~ 1 2"}
 execute as @e[tag=collector,scores={Sound=0,Health=..40,Shrunk=0},limit=1] unless score @s Health = @s MaxHealth run function luigis_mansion:entities/luigi/run_command_at_owner {command:"playsound luigis_mansion:entity.player.healed.low_health player @s ~ ~ ~ 1"}

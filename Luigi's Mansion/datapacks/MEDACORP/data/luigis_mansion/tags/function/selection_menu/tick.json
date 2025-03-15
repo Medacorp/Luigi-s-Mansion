@@ -1,8 +1,8 @@
 {
-	"values": [
-		"luigis_mansion:selection_menu/dialog/tick",
-		"luigis_mansion:selection_menu/extra_gallery_door/tick",
-		"luigis_mansion:selection_menu/game_boy_horror/tick",
-		"luigis_mansion:selection_menu/mansion_reset/tick"
-	]
+    "values": [
+        "luigis_mansion:selection_menu/dialog/tick",
+        "luigis_mansion:selection_menu/extra_gallery_door/tick",
+        "luigis_mansion:selection_menu/game_boy_horror/tick",
+        "luigis_mansion:selection_menu/mansion_reset/tick"
+    ]
 }

@@ -1,5 +1,4 @@
-execute if entity @s[type=minecraft:marker] run function luigis_mansion:entities/tick with entity @s data.entity
-execute if entity @s[type=minecraft:armor_stand] run function luigis_mansion:entities/tick with entity @s ArmorItems[3].components."minecraft:custom_data".entity
+function luigis_mansion:entities/tick with entity @s data.entity
 scoreboard players reset #temp Move
 
 tag @s remove hide_portrait_ghost

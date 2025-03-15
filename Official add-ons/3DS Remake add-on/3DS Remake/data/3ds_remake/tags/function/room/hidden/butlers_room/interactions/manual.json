@@ -1,10 +1,10 @@
 {
-	"values": [
-		"3ds_remake:room/hidden/butlers_room/interactions/manual/closet",
-		"3ds_remake:room/hidden/butlers_room/interactions/manual/ironing_table",
-		"3ds_remake:room/hidden/butlers_room/interactions/manual/lamp",
-		"3ds_remake:room/hidden/butlers_room/interactions/manual/sewing_machine",
-		"3ds_remake:room/hidden/butlers_room/interactions/manual/table",
-		"3ds_remake:room/hidden/butlers_room/interactions/manual/toilet_paper"
-	]
+    "values": [
+        "3ds_remake:room/hidden/butlers_room/interactions/manual/closet",
+        "3ds_remake:room/hidden/butlers_room/interactions/manual/ironing_table",
+        "3ds_remake:room/hidden/butlers_room/interactions/manual/lamp",
+        "3ds_remake:room/hidden/butlers_room/interactions/manual/sewing_machine",
+        "3ds_remake:room/hidden/butlers_room/interactions/manual/table",
+        "3ds_remake:room/hidden/butlers_room/interactions/manual/toilet_paper"
+    ]
 }

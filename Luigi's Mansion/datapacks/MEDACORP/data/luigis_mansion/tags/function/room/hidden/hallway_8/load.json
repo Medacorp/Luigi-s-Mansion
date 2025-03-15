@@ -1,6 +1,6 @@
 {
-	"values": [
-	    "luigis_mansion:room/hidden/hallway_8/load/set_loaded",
+    "values": [
+        "luigis_mansion:room/hidden/hallway_8/load/set_loaded",
         "luigis_mansion:room/hidden/hallway_8/load/lights",
         "luigis_mansion:room/hidden/hallway_8/load/hallway_5_door",
         "luigis_mansion:room/hidden/hallway_8/load/hallway_9_door",
@@ -10,5 +10,5 @@
         "luigis_mansion:room/hidden/hallway_8/load/simple_wall_candelabra_1",
         "luigis_mansion:room/hidden/hallway_8/load/simple_wall_candelabra_2",
         "luigis_mansion:room/hidden/hallway_8/load/tea_room_door"
-	]
+    ]
 }

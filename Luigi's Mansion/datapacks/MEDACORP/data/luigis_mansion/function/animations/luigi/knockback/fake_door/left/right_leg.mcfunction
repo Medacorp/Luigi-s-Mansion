@@ -10,9 +10,9 @@ execute at @s[scores={AnimationProgress=117}] rotated ~ 0 run teleport @s ^ ^-0.
 execute at @s[scores={AnimationProgress=118}] rotated ~ 0 run teleport @s ^ ^-0.132 ^-0.128
 execute at @s[scores={AnimationProgress=119}] rotated ~ 0 run teleport @s ^ ^-0.066 ^-0.064
 data merge entity @s[scores={AnimationProgress=1}] {Pose:{Head:[0.0f,0.0f,0.01f]}}
-data modify entity @s[scores={AnimationProgress=15}] ArmorItems[3] merge from entity @s ArmorItems[3].components."minecraft:custom_data".model_data.squished
+data modify entity @s[scores={AnimationProgress=15}] equipment.head merge from entity @s equipment.head.components."minecraft:custom_data".model_data.squished
 data merge entity @s[scores={AnimationProgress=80}] {Pose:{Head:[90.0f,-22.5f,0.01f]}}
-data modify entity @s[scores={AnimationProgress=110}] ArmorItems[3] merge from entity @s ArmorItems[3].components."minecraft:custom_data".model_data.default
+data modify entity @s[scores={AnimationProgress=110}] equipment.head merge from entity @s equipment.head.components."minecraft:custom_data".model_data.default
 execute store result score #temp Time run data get entity @s Pose.Head[0] 100
 execute if entity @s[scores={AnimationProgress=111..120}] store result entity @s Pose.Head[0] float 0.01 run scoreboard players remove #temp Time 900
 execute store result score #temp Time run data get entity @s Pose.Head[1] 100

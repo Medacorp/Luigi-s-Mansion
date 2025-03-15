@@ -1,17 +1,17 @@
 {
-	"values": [
-		"3ds_remake:room/hidden/master_bedroom/interactions/poltergust/bed",
-		"3ds_remake:room/hidden/master_bedroom/interactions/poltergust/chair",
-		"3ds_remake:room/hidden/master_bedroom/interactions/poltergust/curtain_1",
-		"3ds_remake:room/hidden/master_bedroom/interactions/poltergust/curtain_2",
-		"3ds_remake:room/hidden/master_bedroom/interactions/poltergust/mirror",
-		"3ds_remake:room/hidden/master_bedroom/interactions/poltergust/painting_1",
-		"3ds_remake:room/hidden/master_bedroom/interactions/poltergust/painting_2",
-		"3ds_remake:room/hidden/master_bedroom/interactions/poltergust/painting_3",
-		"3ds_remake:room/hidden/master_bedroom/interactions/poltergust/painting_4",
-		"3ds_remake:room/hidden/master_bedroom/interactions/poltergust/painting_5",
-		"3ds_remake:room/hidden/master_bedroom/interactions/poltergust/plant",
-		"3ds_remake:room/hidden/master_bedroom/interactions/poltergust/table_2",
-		"3ds_remake:room/hidden/master_bedroom/interactions/poltergust/vacuumable"
-	]
+    "values": [
+        "3ds_remake:room/hidden/master_bedroom/interactions/poltergust/bed",
+        "3ds_remake:room/hidden/master_bedroom/interactions/poltergust/chair",
+        "3ds_remake:room/hidden/master_bedroom/interactions/poltergust/curtain_1",
+        "3ds_remake:room/hidden/master_bedroom/interactions/poltergust/curtain_2",
+        "3ds_remake:room/hidden/master_bedroom/interactions/poltergust/mirror",
+        "3ds_remake:room/hidden/master_bedroom/interactions/poltergust/painting_1",
+        "3ds_remake:room/hidden/master_bedroom/interactions/poltergust/painting_2",
+        "3ds_remake:room/hidden/master_bedroom/interactions/poltergust/painting_3",
+        "3ds_remake:room/hidden/master_bedroom/interactions/poltergust/painting_4",
+        "3ds_remake:room/hidden/master_bedroom/interactions/poltergust/painting_5",
+        "3ds_remake:room/hidden/master_bedroom/interactions/poltergust/plant",
+        "3ds_remake:room/hidden/master_bedroom/interactions/poltergust/table_2",
+        "3ds_remake:room/hidden/master_bedroom/interactions/poltergust/vacuumable"
+    ]
 }

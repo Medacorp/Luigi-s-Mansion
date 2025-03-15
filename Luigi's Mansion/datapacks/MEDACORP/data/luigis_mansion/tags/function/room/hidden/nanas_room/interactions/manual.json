@@ -1,16 +1,16 @@
 {
-	"values": [
-		"luigis_mansion:room/hidden/nanas_room/interactions/manual/bookshelf",
-		"luigis_mansion:room/hidden/nanas_room/interactions/manual/chair",
-		"luigis_mansion:room/hidden/nanas_room/interactions/manual/closet",
-		"luigis_mansion:room/hidden/nanas_room/interactions/manual/couch",
-		"luigis_mansion:room/hidden/nanas_room/interactions/manual/lamp",
-		"luigis_mansion:room/hidden/nanas_room/interactions/manual/loom",
-		"luigis_mansion:room/hidden/nanas_room/interactions/manual/painting",
-		"luigis_mansion:room/hidden/nanas_room/interactions/manual/paintings",
-		"luigis_mansion:room/hidden/nanas_room/interactions/manual/sewing_machine",
-		"luigis_mansion:room/hidden/nanas_room/interactions/manual/shelf",
-		"luigis_mansion:room/hidden/nanas_room/interactions/manual/table_1",
-		"luigis_mansion:room/hidden/nanas_room/interactions/manual/table_2"
-	]
+    "values": [
+        "luigis_mansion:room/hidden/nanas_room/interactions/manual/bookshelf",
+        "luigis_mansion:room/hidden/nanas_room/interactions/manual/chair",
+        "luigis_mansion:room/hidden/nanas_room/interactions/manual/closet",
+        "luigis_mansion:room/hidden/nanas_room/interactions/manual/couch",
+        "luigis_mansion:room/hidden/nanas_room/interactions/manual/lamp",
+        "luigis_mansion:room/hidden/nanas_room/interactions/manual/loom",
+        "luigis_mansion:room/hidden/nanas_room/interactions/manual/painting",
+        "luigis_mansion:room/hidden/nanas_room/interactions/manual/paintings",
+        "luigis_mansion:room/hidden/nanas_room/interactions/manual/sewing_machine",
+        "luigis_mansion:room/hidden/nanas_room/interactions/manual/shelf",
+        "luigis_mansion:room/hidden/nanas_room/interactions/manual/table_1",
+        "luigis_mansion:room/hidden/nanas_room/interactions/manual/table_2"
+    ]
 }

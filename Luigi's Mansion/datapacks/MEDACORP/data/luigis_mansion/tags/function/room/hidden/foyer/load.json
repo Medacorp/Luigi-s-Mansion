@@ -1,6 +1,6 @@
 {
-	"values": [
-	    "luigis_mansion:room/hidden/foyer/load/set_loaded",
+    "values": [
+        "luigis_mansion:room/hidden/foyer/load/set_loaded",
         "luigis_mansion:room/hidden/foyer/load/lights",
         "luigis_mansion:room/hidden/foyer/load/cobweb_1",
         "luigis_mansion:room/hidden/foyer/load/cobweb_2",
@@ -11,5 +11,5 @@
         "luigis_mansion:room/hidden/foyer/load/toad",
         "luigis_mansion:room/hidden/foyer/load/tall_simple_triple_candelabra_1",
         "luigis_mansion:room/hidden/foyer/load/tall_simple_triple_candelabra_2"
-	]
+    ]
 }

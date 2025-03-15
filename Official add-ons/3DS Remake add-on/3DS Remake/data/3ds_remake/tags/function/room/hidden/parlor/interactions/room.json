@@ -1,19 +1,19 @@
 {
-	"values": [
-		"3ds_remake:room/hidden/parlor/interactions/room/chair",
-		"3ds_remake:room/hidden/parlor/interactions/room/closet",
-		"3ds_remake:room/hidden/parlor/interactions/room/couch",
-		"3ds_remake:room/hidden/parlor/interactions/room/lamp",
-		"3ds_remake:room/hidden/parlor/interactions/room/painting_1",
-		"3ds_remake:room/hidden/parlor/interactions/room/painting_2",
-		"3ds_remake:room/hidden/parlor/interactions/room/painting_3",
-		"3ds_remake:room/hidden/parlor/interactions/room/painting_4",
-		"3ds_remake:room/hidden/parlor/interactions/room/painting_5",
-		"3ds_remake:room/hidden/parlor/interactions/room/painting_6",
-		"3ds_remake:room/hidden/parlor/interactions/room/painting_7",
-		"3ds_remake:room/hidden/parlor/interactions/room/table_1",
-		"3ds_remake:room/hidden/parlor/interactions/room/table_2",
-		"3ds_remake:room/hidden/parlor/interactions/room/table_3",
-		"3ds_remake:room/hidden/parlor/interactions/room/vacuumable"
-	]
+    "values": [
+        "3ds_remake:room/hidden/parlor/interactions/room/chair",
+        "3ds_remake:room/hidden/parlor/interactions/room/closet",
+        "3ds_remake:room/hidden/parlor/interactions/room/couch",
+        "3ds_remake:room/hidden/parlor/interactions/room/lamp",
+        "3ds_remake:room/hidden/parlor/interactions/room/painting_1",
+        "3ds_remake:room/hidden/parlor/interactions/room/painting_2",
+        "3ds_remake:room/hidden/parlor/interactions/room/painting_3",
+        "3ds_remake:room/hidden/parlor/interactions/room/painting_4",
+        "3ds_remake:room/hidden/parlor/interactions/room/painting_5",
+        "3ds_remake:room/hidden/parlor/interactions/room/painting_6",
+        "3ds_remake:room/hidden/parlor/interactions/room/painting_7",
+        "3ds_remake:room/hidden/parlor/interactions/room/table_1",
+        "3ds_remake:room/hidden/parlor/interactions/room/table_2",
+        "3ds_remake:room/hidden/parlor/interactions/room/table_3",
+        "3ds_remake:room/hidden/parlor/interactions/room/vacuumable"
+    ]
 }

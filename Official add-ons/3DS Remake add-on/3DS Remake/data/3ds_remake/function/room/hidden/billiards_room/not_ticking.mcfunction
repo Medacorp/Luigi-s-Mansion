@@ -3,4 +3,4 @@ execute as @e[scores={Room=47},tag=ghost,tag=!portrait_ghost,nbt=!{data:{entity:
 scoreboard players reset #billiards_room Vacuumables
 
 tag @e[scores={Room=47},nbt={data:{entity:{namespace:"luigis_mansion",id:"slim_bankshot"}}}] add disappear
-tag @e[scores={Room=47},nbt={ArmorItems:[{components:{"minecraft:custom_data":{entity:{namespace:"luigis_mansion",id:"billiards_ball"}}}}]},tag=white] add remove_from_existence
+tag @e[scores={Room=47},nbt={data:{entity:{namespace:"luigis_mansion",id:"billiards_ball"}}},tag=white] add remove_from_existence

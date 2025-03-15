@@ -1,12 +1,12 @@
 {
-	"values": [
-		"3ds_remake:room/hidden/projection_room/interactions/room/closet",
-		"3ds_remake:room/hidden/projection_room/interactions/room/lamp_1",
-		"3ds_remake:room/hidden/projection_room/interactions/room/lamp_2",
-		"3ds_remake:room/hidden/projection_room/interactions/room/poster",
-		"3ds_remake:room/hidden/projection_room/interactions/room/screen",
-		"3ds_remake:room/hidden/projection_room/interactions/room/speaker_1",
-		"3ds_remake:room/hidden/projection_room/interactions/room/speaker_2",
-		"3ds_remake:room/hidden/projection_room/interactions/room/table"
-	]
+    "values": [
+        "3ds_remake:room/hidden/projection_room/interactions/room/closet",
+        "3ds_remake:room/hidden/projection_room/interactions/room/lamp_1",
+        "3ds_remake:room/hidden/projection_room/interactions/room/lamp_2",
+        "3ds_remake:room/hidden/projection_room/interactions/room/poster",
+        "3ds_remake:room/hidden/projection_room/interactions/room/screen",
+        "3ds_remake:room/hidden/projection_room/interactions/room/speaker_1",
+        "3ds_remake:room/hidden/projection_room/interactions/room/speaker_2",
+        "3ds_remake:room/hidden/projection_room/interactions/room/table"
+    ]
 }

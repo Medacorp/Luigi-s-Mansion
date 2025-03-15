@@ -1,16 +1,16 @@
 {
-	"values": [
-		"luigis_mansion:room/hidden/billiards_room/interactions/manual/billiards_table",
-		"luigis_mansion:room/hidden/billiards_room/interactions/manual/chair_1",
-		"luigis_mansion:room/hidden/billiards_room/interactions/manual/chair_2",
-		"luigis_mansion:room/hidden/billiards_room/interactions/manual/chair_3",
-		"luigis_mansion:room/hidden/billiards_room/interactions/manual/chess_table",
-		"luigis_mansion:room/hidden/billiards_room/interactions/manual/darting_board",
-		"luigis_mansion:room/hidden/billiards_room/interactions/manual/painting_1",
-		"luigis_mansion:room/hidden/billiards_room/interactions/manual/painting_2",
-		"luigis_mansion:room/hidden/billiards_room/interactions/manual/painting_3",
-		"luigis_mansion:room/hidden/billiards_room/interactions/manual/painting_4",
-		"luigis_mansion:room/hidden/billiards_room/interactions/manual/painting_5",
-		"luigis_mansion:room/hidden/billiards_room/interactions/manual/painting_6"
-	]
+    "values": [
+        "luigis_mansion:room/hidden/billiards_room/interactions/manual/billiards_table",
+        "luigis_mansion:room/hidden/billiards_room/interactions/manual/chair_1",
+        "luigis_mansion:room/hidden/billiards_room/interactions/manual/chair_2",
+        "luigis_mansion:room/hidden/billiards_room/interactions/manual/chair_3",
+        "luigis_mansion:room/hidden/billiards_room/interactions/manual/chess_table",
+        "luigis_mansion:room/hidden/billiards_room/interactions/manual/darting_board",
+        "luigis_mansion:room/hidden/billiards_room/interactions/manual/painting_1",
+        "luigis_mansion:room/hidden/billiards_room/interactions/manual/painting_2",
+        "luigis_mansion:room/hidden/billiards_room/interactions/manual/painting_3",
+        "luigis_mansion:room/hidden/billiards_room/interactions/manual/painting_4",
+        "luigis_mansion:room/hidden/billiards_room/interactions/manual/painting_5",
+        "luigis_mansion:room/hidden/billiards_room/interactions/manual/painting_6"
+    ]
 }

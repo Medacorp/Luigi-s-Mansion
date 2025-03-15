@@ -1,6 +1,6 @@
 {
-	"values": [
-	    "3ds_remake:selection_menu/gallery_portrait/small_ghosts/gold_ghost",
+    "values": [
+        "3ds_remake:selection_menu/gallery_portrait/small_ghosts/gold_ghost",
         "3ds_remake:selection_menu/gallery_portrait/small_ghosts/temper_terror",
         "3ds_remake:selection_menu/gallery_portrait/small_ghosts/speedy_spirit",
         "3ds_remake:selection_menu/gallery_portrait/small_ghosts/purple_puncher",
@@ -28,5 +28,5 @@
         "3ds_remake:selection_menu/gallery_portrait/small_ghosts/green_flying_fish",
         "3ds_remake:selection_menu/gallery_portrait/small_ghosts/spark",
         "3ds_remake:selection_menu/gallery_portrait/small_ghosts/shining_ghost"
-	]
+    ]
 }

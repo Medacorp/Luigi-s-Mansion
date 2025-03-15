@@ -1,8 +1,8 @@
 {
-	"values": [
-	    "e3_demo:room/original/study/turn_lights/off/lamp_1",
-	    "e3_demo:room/original/study/turn_lights/off/lamp_2",
-	    "e3_demo:room/original/study/turn_lights/off/room_clear_chest",
-	    "e3_demo:room/original/study/turn_lights/off/table"
-	]
+    "values": [
+        "e3_demo:room/original/study/turn_lights/off/lamp_1",
+        "e3_demo:room/original/study/turn_lights/off/lamp_2",
+        "e3_demo:room/original/study/turn_lights/off/room_clear_chest",
+        "e3_demo:room/original/study/turn_lights/off/table"
+    ]
 }

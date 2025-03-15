@@ -1,8 +1,8 @@
 {
-	"values": [
-	    "luigis_mansion:room/normal/hallway_11/load/set_loaded",
+    "values": [
+        "luigis_mansion:room/normal/hallway_11/load/set_loaded",
         "luigis_mansion:room/normal/hallway_11/load/lights",
         "luigis_mansion:room/normal/hallway_11/load/anteroom_blackout_fake_door",
         "luigis_mansion:room/normal/hallway_11/load/astral_hall_door"
-	]
+    ]
 }

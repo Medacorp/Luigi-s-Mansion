@@ -1,6 +1,6 @@
 {
-	"values": [
-	    "3ds_remake:room/hidden/hallway_5/load/set_loaded",
+    "values": [
+        "3ds_remake:room/hidden/hallway_5/load/set_loaded",
         "3ds_remake:room/hidden/hallway_5/load/lights",
         "3ds_remake:room/hidden/hallway_5/load/billiards_room_door",
         "3ds_remake:room/hidden/hallway_5/load/conservatory_door",
@@ -15,5 +15,5 @@
         "3ds_remake:room/hidden/hallway_5/load/simple_wall_candelabra_3",
         "3ds_remake:room/hidden/hallway_5/load/simple_wall_candelabra_4",
         "3ds_remake:room/hidden/hallway_5/load/washroom_1_door"
-	]
+    ]
 }

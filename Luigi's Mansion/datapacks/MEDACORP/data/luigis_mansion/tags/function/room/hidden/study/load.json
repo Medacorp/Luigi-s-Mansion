@@ -1,6 +1,6 @@
 {
-	"values": [
-	    "luigis_mansion:room/hidden/study/load/set_loaded",
+    "values": [
+        "luigis_mansion:room/hidden/study/load/set_loaded",
         "luigis_mansion:room/hidden/study/load/lights",
         "luigis_mansion:room/hidden/study/load/cheese",
         "luigis_mansion:room/hidden/study/load/cobweb_1",
@@ -14,5 +14,5 @@
         "luigis_mansion:room/hidden/study/load/painting_5",
         "luigis_mansion:room/hidden/study/load/rocking_chair",
         "luigis_mansion:room/hidden/study/load/room_clear_chest"
-	]
+    ]
 }

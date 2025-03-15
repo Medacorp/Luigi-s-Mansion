@@ -1,6 +1,6 @@
 {
-	"values": [
-	    "luigis_mansion:room/normal/laundry_room/load/set_loaded",
+    "values": [
+        "luigis_mansion:room/normal/laundry_room/load/set_loaded",
         "luigis_mansion:room/normal/laundry_room/load/lights",
         "luigis_mansion:room/normal/laundry_room/load/butlers_room_door",
         "luigis_mansion:room/normal/laundry_room/load/cobweb_1",
@@ -11,5 +11,5 @@
         "luigis_mansion:room/normal/laundry_room/load/room_clear_chest",
         "luigis_mansion:room/normal/laundry_room/load/vacuumable_1",
         "luigis_mansion:room/normal/laundry_room/load/vacuumable_2"
-	]
+    ]
 }

@@ -1,6 +1,6 @@
 {
-	"values": [
-	    "e3_demo:room/original/kitchen/turn_lights/on/lamp_1",
-	    "e3_demo:room/original/kitchen/turn_lights/on/lamp_2"
-	]
+    "values": [
+        "e3_demo:room/original/kitchen/turn_lights/on/lamp_1",
+        "e3_demo:room/original/kitchen/turn_lights/on/lamp_2"
+    ]
 }

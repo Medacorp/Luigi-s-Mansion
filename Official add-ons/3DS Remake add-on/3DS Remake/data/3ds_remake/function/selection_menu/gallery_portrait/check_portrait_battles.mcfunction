@@ -1,6 +1,6 @@
 tag @s add gallery_portrait_menu
 
-data modify storage luigis_mansion:data menu_options set value {back:{id:"portrait_ghost",to:'{"type":"translatable","translate":"luigis_mansion:item.menu.original_menu"}'},options:[]}
+data modify storage luigis_mansion:data menu_options set value {back:{id:"portrait_ghost",to:{type:"translatable",translate:"luigis_mansion:item.menu.original_menu"}},options:[]}
 data modify storage luigis_mansion:data menu_options.back merge from storage luigis_mansion:data selected_option.back_overwrite
 data modify storage luigis_mansion:data menu_options.back.uuid set from storage luigis_mansion:data selected_option.uuid
 data modify storage luigis_mansion:data menu_options.back.portrait_ghost set from storage luigis_mansion:data selected_option.portrait_ghost

@@ -45,8 +45,21 @@
                     {
                         "threshold": 4,
                         "model": {
-                            "type": "minecraft:model",
-                            "model": "luigis_mansion:entity/ice/sir_weston"
+                            "type": "minecraft:select",
+                            "property": "minecraft:custom_model_data",
+                            "index": 0,
+                            "cases": [
+                                {
+                                    "when": "broken",
+                                    "model": {
+                                        "type": "minecraft:empty"
+                                    }
+                                }
+                            ],
+                            "fallback": {
+                                "type": "minecraft:model",
+                                "model": "luigis_mansion:entity/ice/sir_weston"
+                            }
                         }
                     }
                 ],

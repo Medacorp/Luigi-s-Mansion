@@ -1,6 +1,6 @@
 {
-	"values": [
-	    "luigis_mansion:room/hidden/cellar/load/set_loaded",
+    "values": [
+        "luigis_mansion:room/hidden/cellar/load/set_loaded",
         "luigis_mansion:room/hidden/cellar/load/lights",
         "luigis_mansion:room/hidden/cellar/load/dust_1",
         "luigis_mansion:room/hidden/cellar/load/dust_2",
@@ -15,5 +15,5 @@
         "luigis_mansion:room/hidden/cellar/load/room_clear_chest",
         "luigis_mansion:room/hidden/cellar/load/old_triple_wall_candelabra_1",
         "luigis_mansion:room/hidden/cellar/load/old_triple_wall_candelabra_2"
-	]
+    ]
 }

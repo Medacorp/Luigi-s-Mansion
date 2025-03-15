@@ -1,9 +1,9 @@
 {
-	"values": [
-	    "e3_demo:room/original/dining_room/turn_lights/on/lamp_1",
-	    "e3_demo:room/original/dining_room/turn_lights/on/lamp_2",
-	    "e3_demo:room/original/dining_room/turn_lights/on/lamp_3",
-	    "e3_demo:room/original/dining_room/turn_lights/on/lamp_4",
-	    "e3_demo:room/original/dining_room/turn_lights/on/lamp_5"
-	]
+    "values": [
+        "e3_demo:room/original/dining_room/turn_lights/on/lamp_1",
+        "e3_demo:room/original/dining_room/turn_lights/on/lamp_2",
+        "e3_demo:room/original/dining_room/turn_lights/on/lamp_3",
+        "e3_demo:room/original/dining_room/turn_lights/on/lamp_4",
+        "e3_demo:room/original/dining_room/turn_lights/on/lamp_5"
+    ]
 }

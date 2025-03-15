@@ -1,8 +1,8 @@
 {
-	"values": [
-		"3ds_remake:room/hidden/pipe_room/interactions/poltergust/crate",
-		"3ds_remake:room/hidden/pipe_room/interactions/poltergust/frozen_barrel",
-		"3ds_remake:room/hidden/pipe_room/interactions/poltergust/ice",
-		"3ds_remake:room/hidden/pipe_room/interactions/poltergust/sewage"
-	]
+    "values": [
+        "3ds_remake:room/hidden/pipe_room/interactions/poltergust/crate",
+        "3ds_remake:room/hidden/pipe_room/interactions/poltergust/frozen_barrel",
+        "3ds_remake:room/hidden/pipe_room/interactions/poltergust/ice",
+        "3ds_remake:room/hidden/pipe_room/interactions/poltergust/sewage"
+    ]
 }

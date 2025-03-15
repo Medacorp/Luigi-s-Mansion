@@ -76,7 +76,7 @@ execute if entity @s[scores={Dialog=120}] run setblock 770 81 -7 minecraft:green
 execute if entity @s[scores={Dialog=120}] run setblock 770 79 -7 minecraft:air
 execute if entity @s[scores={Dialog=110}] run playsound luigis_mansion:entity.mario.owch neutral @a[tag=same_room] ~ ~ ~ 1
 execute if entity @s[scores={Dialog=110}] run data merge entity @s {Pose:{Head:[0.0f,0.0f,0.0f]}}
-data modify entity @s[scores={Dialog=110}] ArmorItems[3] merge value {id:"minecraft:diamond_pickaxe",components:{"minecraft:item_model":"luigis_mansion:entity/portrificationizing_mario","minecraft:unbreakable":{},"minecraft:custom_model_data":{floats:[80f]}}}
+data modify entity @s[scores={Dialog=110}] equipment.head merge value {id:"minecraft:diamond_pickaxe",components:{"minecraft:item_model":"luigis_mansion:entity/portrificationizing_mario","minecraft:unbreakable":{},"minecraft:custom_model_data":{floats:[80f]}}}
 execute if entity @s[scores={Dialog=120}] run teleport @s 770 78 -6 -180 0
 execute if entity @s[scores={Dialog=125}] run teleport @s 770 78 -5
 execute if entity @s[scores={Dialog=130}] run teleport @s 770 78 -4
@@ -142,8 +142,8 @@ execute if entity @s[scores={Dialog=330}] run playsound luigis_mansion:entity.ma
 execute at @s[scores={Dialog=330..370}] run teleport @s ~ ~ ~ ~5 ~
 execute at @s[scores={Dialog=371..410}] run teleport @s ~ ~ ~ ~10 ~
 execute at @s[scores={Dialog=411..529}] run teleport @s ~ ~ ~ ~20 ~
-execute if entity @s[scores={Dialog=430..509}] store result score #temp Time run data get entity @s ArmorItems[3].components."minecraft:custom_model_data".floats[0]
-execute if entity @s[scores={Dialog=430..509}] store result entity @s ArmorItems[3].components."minecraft:custom_model_data".floats[0] float 1 run scoreboard players remove #temp Time 1
+execute if entity @s[scores={Dialog=430..509}] store result score #temp Time run data get entity @s equipment.head.components."minecraft:custom_model_data".floats[0]
+execute if entity @s[scores={Dialog=430..509}] store result entity @s equipment.head.components."minecraft:custom_model_data".floats[0] float 1 run scoreboard players remove #temp Time 1
 scoreboard players reset #temp Time
 teleport @s[scores={Dialog=530}] 770 81 15
 execute if entity @s[scores={Dialog=620}] run playsound luigis_mansion:entity.mario.wohh_hoo_hoo neutral @a[tag=same_room] ~ ~ ~ 1

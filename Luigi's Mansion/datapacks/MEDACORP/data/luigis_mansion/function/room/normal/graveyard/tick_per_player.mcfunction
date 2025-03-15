@@ -1,5 +1,5 @@
 function luigis_mansion:other/music/set/exterior
-title @s[tag=!seen_room_name,tag=!fully_separated_camera] title {"type":"translatable","translate":"luigis_mansion:location.graveyard"}
+title @s[tag=!seen_room_name,tag=!fully_separated_camera] title {type:"translatable",translate:"luigis_mansion:location.graveyard"}
 tag @s add seen_room_name
 
 execute if data storage luigis_mansion:data current_state.current_data.rooms.graveyard{seen:0b} if entity @s[tag=!spectator,tag=!fully_separated_camera] run function luigis_mansion:room/normal/graveyard/set_seen

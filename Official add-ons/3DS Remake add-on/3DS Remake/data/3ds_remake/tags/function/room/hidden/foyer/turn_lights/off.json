@@ -1,7 +1,7 @@
 {
-	"values": [
-	    "3ds_remake:room/hidden/foyer/turn_lights/off/chandelier",
-	    "3ds_remake:room/hidden/foyer/turn_lights/off/lamp",
-	    "3ds_remake:room/hidden/foyer/turn_lights/off/table"
-	]
+    "values": [
+        "3ds_remake:room/hidden/foyer/turn_lights/off/chandelier",
+        "3ds_remake:room/hidden/foyer/turn_lights/off/lamp",
+        "3ds_remake:room/hidden/foyer/turn_lights/off/table"
+    ]
 }

@@ -7,7 +7,7 @@ execute if entity @s[scores={AnimationProgress=10}] run function luigis_mansion:
 execute if entity @s[scores={AnimationProgress=5..14}] run function luigis_mansion:entities/luigi/move/execute {execute:"at @s rotated ~ 0",teleport:"^ ^ ^-0.1"}
 execute if entity @s[scores={AnimationProgress=15..34}] run function luigis_mansion:entities/luigi/move/execute {execute:"at @s rotated ~ 0",teleport:"^ ^ ^0.1"}
 execute if entity @s[scores={AnimationProgress=31}] run tag @a[tag=this_player,limit=1] add wall_warp
-execute if entity @s[scores={AnimationProgress=31}] if data entity @e[tag=furniture,tag=door,tag=open_door,distance=..0.7,limit=1] ArmorItems[3].components."minecraft:custom_data".go_through_command run function luigis_mansion:entities/furniture/type/door/go_through with entity @e[tag=furniture,tag=door,tag=open_door,distance=..0.7,limit=1] ArmorItems[3].components."minecraft:custom_data"
+execute if entity @s[scores={AnimationProgress=31}] if data entity @e[tag=furniture,tag=door,tag=open_door,distance=..0.7,limit=1] data.go_through_command run function luigis_mansion:entities/furniture/type/door/go_through with entity @e[tag=furniture,tag=door,tag=open_door,distance=..0.7,limit=1] data
 scoreboard players set @s[scores={AnimationProgress=32}] RoomNoise 0
 stopsound @s[scores={AnimationProgress=32}] ambient
 execute if entity @s[scores={AnimationProgress=32}] run tag @a[tag=this_player,limit=1] remove wall_warp

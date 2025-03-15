@@ -1,6 +1,6 @@
 {
-	"values": [
-	    "3ds_remake:room/hidden/nursery/load/set_loaded",
+    "values": [
+        "3ds_remake:room/hidden/nursery/load/set_loaded",
         "3ds_remake:room/hidden/nursery/load/lights",
         "3ds_remake:room/hidden/nursery/load/ball",
         "3ds_remake:room/hidden/nursery/load/cobweb_1",
@@ -12,5 +12,5 @@
         "3ds_remake:room/hidden/nursery/load/painting_3",
         "3ds_remake:room/hidden/nursery/load/rocking_horse",
         "3ds_remake:room/hidden/nursery/load/room_clear_chest"
-	]
+    ]
 }

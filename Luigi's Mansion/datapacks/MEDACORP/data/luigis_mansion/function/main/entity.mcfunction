@@ -28,7 +28,7 @@ execute if score #mirrored Selected matches 2 run scoreboard players set #mirror
 tag @s[tag=freeze_animation_next_tick] add freeze_animation
 tag @s remove freeze_animation_next_tick
 
-execute unless data entity @s[type=minecraft:armor_stand] ArmorItems[3].count run data modify entity @s ArmorItems[3] set value {id:"minecraft:diamond_pickaxe",count:1,components:{"minecraft:item_model":"luigis_mansion:empty"}}
+execute unless data entity @s[type=minecraft:armor_stand] equipment.head.count run data modify entity @s equipment.head set value {id:"minecraft:diamond_pickaxe",count:1,components:{"minecraft:item_model":"luigis_mansion:empty"}}
 
 tag @s[tag=remove_from_existence] add dead
 teleport @s[tag=dead] ~ ~-100 ~

@@ -1,6 +1,6 @@
 {
-	"values": [
-	    "e3_demo:room/original/childs_room/load/set_loaded",
+    "values": [
+        "e3_demo:room/original/childs_room/load/set_loaded",
         "e3_demo:room/original/childs_room/load/lights",
         "e3_demo:room/original/childs_room/load/hallway_2_door",
         "e3_demo:room/original/childs_room/load/painting_1",
@@ -9,5 +9,5 @@
         "e3_demo:room/original/childs_room/load/painting_4",
         "e3_demo:room/original/childs_room/load/rocking_horse",
         "e3_demo:room/original/childs_room/load/room_clear_chest"
-	]
+    ]
 }

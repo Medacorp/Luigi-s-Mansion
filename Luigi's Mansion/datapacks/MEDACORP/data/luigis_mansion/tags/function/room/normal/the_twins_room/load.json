@@ -1,6 +1,6 @@
 {
-	"values": [
-	    "luigis_mansion:room/normal/the_twins_room/load/set_loaded",
+    "values": [
+        "luigis_mansion:room/normal/the_twins_room/load/set_loaded",
         "luigis_mansion:room/normal/the_twins_room/load/lights",
         "luigis_mansion:room/normal/the_twins_room/load/cobweb_1",
         "luigis_mansion:room/normal/the_twins_room/load/cobweb_2",
@@ -10,5 +10,5 @@
         "luigis_mansion:room/normal/the_twins_room/load/painting_2",
         "luigis_mansion:room/normal/the_twins_room/load/room_clear_chest",
         "luigis_mansion:room/normal/the_twins_room/load/vacuumable"
-	]
+    ]
 }

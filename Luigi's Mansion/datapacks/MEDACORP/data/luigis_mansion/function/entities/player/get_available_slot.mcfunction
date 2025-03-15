@@ -1,5 +1,4 @@
 scoreboard players set @s AvailableSlot -1
-execute unless data entity @s Inventory[{Slot:-106b}] run scoreboard players set @s AvailableSlot -106
 execute unless data entity @s Inventory[{Slot:35b}] run scoreboard players set @s AvailableSlot 35
 execute unless data entity @s Inventory[{Slot:34b}] run scoreboard players set @s AvailableSlot 34
 execute unless data entity @s Inventory[{Slot:33b}] run scoreboard players set @s AvailableSlot 33

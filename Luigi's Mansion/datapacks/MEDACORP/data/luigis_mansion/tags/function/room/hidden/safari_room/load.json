@@ -1,6 +1,6 @@
 {
-	"values": [
-	    "luigis_mansion:room/hidden/safari_room/load/set_loaded",
+    "values": [
+        "luigis_mansion:room/hidden/safari_room/load/set_loaded",
         "luigis_mansion:room/hidden/safari_room/load/lights",
         "luigis_mansion:room/hidden/safari_room/load/cheese",
         "luigis_mansion:room/hidden/safari_room/load/cobweb",
@@ -10,5 +10,5 @@
         "luigis_mansion:room/hidden/safari_room/load/hallway_15_door",
         "luigis_mansion:room/hidden/safari_room/load/hallway_16_door",
         "luigis_mansion:room/hidden/safari_room/load/room_clear_chest"
-	]
+    ]
 }

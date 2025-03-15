@@ -1,11 +1,11 @@
 {
-	"values": [
-		"luigis_mansion:room/hidden/hidden_room/interactions/manual/lamp",
-		"luigis_mansion:room/hidden/hidden_room/interactions/manual/mirror",
-		"luigis_mansion:room/hidden/hidden_room/interactions/manual/painting_1",
-		"luigis_mansion:room/hidden/hidden_room/interactions/manual/painting_2",
-		"luigis_mansion:room/hidden/hidden_room/interactions/manual/painting_3",
-		"luigis_mansion:room/hidden/hidden_room/interactions/manual/painting_4",
-		"luigis_mansion:room/hidden/hidden_room/interactions/manual/painting_5"
-	]
+    "values": [
+        "luigis_mansion:room/hidden/hidden_room/interactions/manual/lamp",
+        "luigis_mansion:room/hidden/hidden_room/interactions/manual/mirror",
+        "luigis_mansion:room/hidden/hidden_room/interactions/manual/painting_1",
+        "luigis_mansion:room/hidden/hidden_room/interactions/manual/painting_2",
+        "luigis_mansion:room/hidden/hidden_room/interactions/manual/painting_3",
+        "luigis_mansion:room/hidden/hidden_room/interactions/manual/painting_4",
+        "luigis_mansion:room/hidden/hidden_room/interactions/manual/painting_5"
+    ]
 }

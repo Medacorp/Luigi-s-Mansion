@@ -1,18 +1,18 @@
 {
-	"values": [
-		"3ds_remake:room/hidden/storage_room/interactions/manual/button_1",
-		"3ds_remake:room/hidden/storage_room/interactions/manual/button_2",
-		"3ds_remake:room/hidden/storage_room/interactions/manual/chair",
-		"3ds_remake:room/hidden/storage_room/interactions/manual/chairs",
-		"3ds_remake:room/hidden/storage_room/interactions/manual/crate_1",
-		"3ds_remake:room/hidden/storage_room/interactions/manual/crate_2",
-		"3ds_remake:room/hidden/storage_room/interactions/manual/crate_3",
-		"3ds_remake:room/hidden/storage_room/interactions/manual/crate_4",
-		"3ds_remake:room/hidden/storage_room/interactions/manual/crate_5",
-		"3ds_remake:room/hidden/storage_room/interactions/manual/crate_6",
-		"3ds_remake:room/hidden/storage_room/interactions/manual/crate_7",
-		"3ds_remake:room/hidden/storage_room/interactions/manual/crate_8",
-		"3ds_remake:room/hidden/storage_room/interactions/manual/lamp_3",
-		"3ds_remake:room/hidden/storage_room/interactions/manual/mirror"
-	]
+    "values": [
+        "3ds_remake:room/hidden/storage_room/interactions/manual/button_1",
+        "3ds_remake:room/hidden/storage_room/interactions/manual/button_2",
+        "3ds_remake:room/hidden/storage_room/interactions/manual/chair",
+        "3ds_remake:room/hidden/storage_room/interactions/manual/chairs",
+        "3ds_remake:room/hidden/storage_room/interactions/manual/crate_1",
+        "3ds_remake:room/hidden/storage_room/interactions/manual/crate_2",
+        "3ds_remake:room/hidden/storage_room/interactions/manual/crate_3",
+        "3ds_remake:room/hidden/storage_room/interactions/manual/crate_4",
+        "3ds_remake:room/hidden/storage_room/interactions/manual/crate_5",
+        "3ds_remake:room/hidden/storage_room/interactions/manual/crate_6",
+        "3ds_remake:room/hidden/storage_room/interactions/manual/crate_7",
+        "3ds_remake:room/hidden/storage_room/interactions/manual/crate_8",
+        "3ds_remake:room/hidden/storage_room/interactions/manual/lamp_3",
+        "3ds_remake:room/hidden/storage_room/interactions/manual/mirror"
+    ]
 }

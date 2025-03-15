@@ -1,7 +1,7 @@
 scoreboard players add @s AnimationProgress 1
 data merge entity @s[scores={AnimationProgress=1}] {Pose:{Head:[-5.0f,0.0f,-20.01f]}}
 data merge entity @s[scores={AnimationProgress=1},tag=flipped_gravity] {Pose:{Head:[0.0f,0.0f,160.0f]}}
-data modify entity @s[scores={AnimationProgress=1}] ArmorItems[3] merge from entity @s ArmorItems[3].components."minecraft:custom_data".model_data.scared
+data modify entity @s[scores={AnimationProgress=1}] equipment.head merge from entity @s equipment.head.components."minecraft:custom_data".model_data.scared
 scoreboard players operation #temp AnimationProgress = @s AnimationProgress
 scoreboard players operation #temp AnimationProgress %= #4 Constants
 execute store result score #temp Time run data get entity @s Pose.Head[2] 4

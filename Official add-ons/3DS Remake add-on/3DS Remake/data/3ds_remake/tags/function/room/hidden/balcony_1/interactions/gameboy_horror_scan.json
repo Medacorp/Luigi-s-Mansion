@@ -1,9 +1,9 @@
 {
-	"values": [
-		"3ds_remake:room/hidden/balcony_1/interactions/gameboy_horror_scan/lamp",
-		"3ds_remake:room/hidden/balcony_1/interactions/gameboy_horror_scan/plant_1",
-		"3ds_remake:room/hidden/balcony_1/interactions/gameboy_horror_scan/plant_2",
-		"3ds_remake:room/hidden/balcony_1/interactions/gameboy_horror_scan/plant_3",
-		"3ds_remake:room/hidden/balcony_1/interactions/gameboy_horror_scan/plant_4"
-	]
+    "values": [
+        "3ds_remake:room/hidden/balcony_1/interactions/gameboy_horror_scan/lamp",
+        "3ds_remake:room/hidden/balcony_1/interactions/gameboy_horror_scan/plant_1",
+        "3ds_remake:room/hidden/balcony_1/interactions/gameboy_horror_scan/plant_2",
+        "3ds_remake:room/hidden/balcony_1/interactions/gameboy_horror_scan/plant_3",
+        "3ds_remake:room/hidden/balcony_1/interactions/gameboy_horror_scan/plant_4"
+    ]
 }

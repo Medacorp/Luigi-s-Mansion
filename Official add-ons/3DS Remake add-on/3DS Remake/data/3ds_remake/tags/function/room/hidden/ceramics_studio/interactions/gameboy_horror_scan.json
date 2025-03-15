@@ -1,24 +1,24 @@
 {
-	"values": [
-		"3ds_remake:room/hidden/ceramics_studio/interactions/gameboy_horror_scan/box_1",
-		"3ds_remake:room/hidden/ceramics_studio/interactions/gameboy_horror_scan/box_2",
-		"3ds_remake:room/hidden/ceramics_studio/interactions/gameboy_horror_scan/box_3",
-		"3ds_remake:room/hidden/ceramics_studio/interactions/gameboy_horror_scan/box_4",
-		"3ds_remake:room/hidden/ceramics_studio/interactions/gameboy_horror_scan/chair",
-		"3ds_remake:room/hidden/ceramics_studio/interactions/gameboy_horror_scan/crate_1",
-		"3ds_remake:room/hidden/ceramics_studio/interactions/gameboy_horror_scan/crate_2",
-		"3ds_remake:room/hidden/ceramics_studio/interactions/gameboy_horror_scan/crate_3",
-		"3ds_remake:room/hidden/ceramics_studio/interactions/gameboy_horror_scan/crate_4",
-		"3ds_remake:room/hidden/ceramics_studio/interactions/gameboy_horror_scan/crate_5",
-		"3ds_remake:room/hidden/ceramics_studio/interactions/gameboy_horror_scan/crate_6",
-		"3ds_remake:room/hidden/ceramics_studio/interactions/gameboy_horror_scan/crate_7",
-		"3ds_remake:room/hidden/ceramics_studio/interactions/gameboy_horror_scan/crate_8",
-		"3ds_remake:room/hidden/ceramics_studio/interactions/gameboy_horror_scan/crate_9",
-		"3ds_remake:room/hidden/ceramics_studio/interactions/gameboy_horror_scan/crate_10",
-		"3ds_remake:room/hidden/ceramics_studio/interactions/gameboy_horror_scan/crate_11",
-		"3ds_remake:room/hidden/ceramics_studio/interactions/gameboy_horror_scan/crate_12",
-		"3ds_remake:room/hidden/ceramics_studio/interactions/gameboy_horror_scan/crate_13",
-		"3ds_remake:room/hidden/ceramics_studio/interactions/gameboy_horror_scan/lamp",
-		"3ds_remake:room/hidden/ceramics_studio/interactions/gameboy_horror_scan/table"
-	]
+    "values": [
+        "3ds_remake:room/hidden/ceramics_studio/interactions/gameboy_horror_scan/box_1",
+        "3ds_remake:room/hidden/ceramics_studio/interactions/gameboy_horror_scan/box_2",
+        "3ds_remake:room/hidden/ceramics_studio/interactions/gameboy_horror_scan/box_3",
+        "3ds_remake:room/hidden/ceramics_studio/interactions/gameboy_horror_scan/box_4",
+        "3ds_remake:room/hidden/ceramics_studio/interactions/gameboy_horror_scan/chair",
+        "3ds_remake:room/hidden/ceramics_studio/interactions/gameboy_horror_scan/crate_1",
+        "3ds_remake:room/hidden/ceramics_studio/interactions/gameboy_horror_scan/crate_2",
+        "3ds_remake:room/hidden/ceramics_studio/interactions/gameboy_horror_scan/crate_3",
+        "3ds_remake:room/hidden/ceramics_studio/interactions/gameboy_horror_scan/crate_4",
+        "3ds_remake:room/hidden/ceramics_studio/interactions/gameboy_horror_scan/crate_5",
+        "3ds_remake:room/hidden/ceramics_studio/interactions/gameboy_horror_scan/crate_6",
+        "3ds_remake:room/hidden/ceramics_studio/interactions/gameboy_horror_scan/crate_7",
+        "3ds_remake:room/hidden/ceramics_studio/interactions/gameboy_horror_scan/crate_8",
+        "3ds_remake:room/hidden/ceramics_studio/interactions/gameboy_horror_scan/crate_9",
+        "3ds_remake:room/hidden/ceramics_studio/interactions/gameboy_horror_scan/crate_10",
+        "3ds_remake:room/hidden/ceramics_studio/interactions/gameboy_horror_scan/crate_11",
+        "3ds_remake:room/hidden/ceramics_studio/interactions/gameboy_horror_scan/crate_12",
+        "3ds_remake:room/hidden/ceramics_studio/interactions/gameboy_horror_scan/crate_13",
+        "3ds_remake:room/hidden/ceramics_studio/interactions/gameboy_horror_scan/lamp",
+        "3ds_remake:room/hidden/ceramics_studio/interactions/gameboy_horror_scan/table"
+    ]
 }

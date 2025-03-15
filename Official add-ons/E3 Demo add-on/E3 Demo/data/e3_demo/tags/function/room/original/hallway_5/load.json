@@ -1,6 +1,6 @@
 {
-	"values": [
-	    "e3_demo:room/original/hallway_5/load/set_loaded",
+    "values": [
+        "e3_demo:room/original/hallway_5/load/set_loaded",
         "e3_demo:room/original/hallway_5/load/lights",
         "e3_demo:room/original/hallway_5/load/gray_vase_1",
         "e3_demo:room/original/hallway_5/load/gray_vase_2",
@@ -11,5 +11,5 @@
         "e3_demo:room/original/hallway_5/load/simple_wall_candelabra_2",
         "e3_demo:room/original/hallway_5/load/simple_wall_candelabra_3",
         "e3_demo:room/original/hallway_5/load/simple_wall_candelabra_4"
-	]
+    ]
 }

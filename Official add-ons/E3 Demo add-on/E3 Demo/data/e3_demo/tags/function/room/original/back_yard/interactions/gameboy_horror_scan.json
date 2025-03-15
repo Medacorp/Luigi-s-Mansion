@@ -1,8 +1,8 @@
 {
-	"values": [
-		"e3_demo:room/original/back_yard/interactions/gameboy_horror_scan/bowl",
-		"e3_demo:room/original/back_yard/interactions/gameboy_horror_scan/dog_house",
-		"e3_demo:room/original/back_yard/interactions/gameboy_horror_scan/stake",
-		"e3_demo:room/original/back_yard/interactions/gameboy_horror_scan/water_tap"
-	]
+    "values": [
+        "e3_demo:room/original/back_yard/interactions/gameboy_horror_scan/bowl",
+        "e3_demo:room/original/back_yard/interactions/gameboy_horror_scan/dog_house",
+        "e3_demo:room/original/back_yard/interactions/gameboy_horror_scan/stake",
+        "e3_demo:room/original/back_yard/interactions/gameboy_horror_scan/water_tap"
+    ]
 }

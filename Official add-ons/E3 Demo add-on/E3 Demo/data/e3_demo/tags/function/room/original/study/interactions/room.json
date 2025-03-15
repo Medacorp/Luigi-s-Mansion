@@ -1,19 +1,19 @@
 {
-	"values": [
-		"e3_demo:room/original/study/interactions/room/book_1",
-		"e3_demo:room/original/study/interactions/room/book_2",
-		"e3_demo:room/original/study/interactions/room/bookshelf_1",
-		"e3_demo:room/original/study/interactions/room/bookshelf_2",
-		"e3_demo:room/original/study/interactions/room/bookshelf_3",
-		"e3_demo:room/original/study/interactions/room/bookshelf_4",
-		"e3_demo:room/original/study/interactions/room/bookshelf_5",
-		"e3_demo:room/original/study/interactions/room/bookshelf_6",
-		"e3_demo:room/original/study/interactions/room/bottled_ship",
-		"e3_demo:room/original/study/interactions/room/chair",
-		"e3_demo:room/original/study/interactions/room/hat_rack",
-		"e3_demo:room/original/study/interactions/room/lamp_1",
-		"e3_demo:room/original/study/interactions/room/lamp_2",
-		"e3_demo:room/original/study/interactions/room/table_1",
-		"e3_demo:room/original/study/interactions/room/table_2"
-	]
+    "values": [
+        "e3_demo:room/original/study/interactions/room/book_1",
+        "e3_demo:room/original/study/interactions/room/book_2",
+        "e3_demo:room/original/study/interactions/room/bookshelf_1",
+        "e3_demo:room/original/study/interactions/room/bookshelf_2",
+        "e3_demo:room/original/study/interactions/room/bookshelf_3",
+        "e3_demo:room/original/study/interactions/room/bookshelf_4",
+        "e3_demo:room/original/study/interactions/room/bookshelf_5",
+        "e3_demo:room/original/study/interactions/room/bookshelf_6",
+        "e3_demo:room/original/study/interactions/room/bottled_ship",
+        "e3_demo:room/original/study/interactions/room/chair",
+        "e3_demo:room/original/study/interactions/room/hat_rack",
+        "e3_demo:room/original/study/interactions/room/lamp_1",
+        "e3_demo:room/original/study/interactions/room/lamp_2",
+        "e3_demo:room/original/study/interactions/room/table_1",
+        "e3_demo:room/original/study/interactions/room/table_2"
+    ]
 }

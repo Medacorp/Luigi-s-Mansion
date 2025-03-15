@@ -1,13 +1,13 @@
 {
-	"values": [
-		"e3_demo:room/original/bed_room_1/interactions/gameboy_horror_scan/bed_1",
-		"e3_demo:room/original/bed_room_1/interactions/gameboy_horror_scan/bed_2",
-		"e3_demo:room/original/bed_room_1/interactions/gameboy_horror_scan/chair",
-		"e3_demo:room/original/bed_room_1/interactions/gameboy_horror_scan/closet",
-		"e3_demo:room/original/bed_room_1/interactions/gameboy_horror_scan/mirror",
-		"e3_demo:room/original/bed_room_1/interactions/gameboy_horror_scan/painting_1",
-		"e3_demo:room/original/bed_room_1/interactions/gameboy_horror_scan/painting_2",
-		"e3_demo:room/original/bed_room_1/interactions/gameboy_horror_scan/painting_3",
-		"e3_demo:room/original/bed_room_1/interactions/gameboy_horror_scan/painting_4"
-	]
+    "values": [
+        "e3_demo:room/original/bed_room_1/interactions/gameboy_horror_scan/bed_1",
+        "e3_demo:room/original/bed_room_1/interactions/gameboy_horror_scan/bed_2",
+        "e3_demo:room/original/bed_room_1/interactions/gameboy_horror_scan/chair",
+        "e3_demo:room/original/bed_room_1/interactions/gameboy_horror_scan/closet",
+        "e3_demo:room/original/bed_room_1/interactions/gameboy_horror_scan/mirror",
+        "e3_demo:room/original/bed_room_1/interactions/gameboy_horror_scan/painting_1",
+        "e3_demo:room/original/bed_room_1/interactions/gameboy_horror_scan/painting_2",
+        "e3_demo:room/original/bed_room_1/interactions/gameboy_horror_scan/painting_3",
+        "e3_demo:room/original/bed_room_1/interactions/gameboy_horror_scan/painting_4"
+    ]
 }

@@ -1,1 +1,1 @@
-data modify entity @s ArmorItems[3] merge value {components:{"minecraft:item_model":"luigis_mansion:furniture/door_frame/mansion_wall"}}
+data modify entity @s equipment.head merge value {components:{"minecraft:item_model":"luigis_mansion:furniture/door_frame/mansion_wall"}}

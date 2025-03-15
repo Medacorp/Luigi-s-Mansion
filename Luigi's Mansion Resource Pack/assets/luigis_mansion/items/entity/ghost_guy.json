@@ -17,7 +17,8 @@
                                 "model": "luigis_mansion:item/entity/dancing_ghost_guy",
                                 "tints": [
                                     {
-                                        "type": "minecraft:dye",
+                                        "type": "minecraft:custom_model_data",
+                                        "index": 0,
                                         "default": 16777215
                                     }
                                 ]
@@ -29,7 +30,8 @@
                         "model": "luigis_mansion:item/entity/ghost_guy",
                         "tints": [
                             {
-                                "type": "minecraft:dye",
+                                "type": "minecraft:custom_model_data",
+                                "index": 0,
                                 "default": 16777215
                             }
                         ]
@@ -61,7 +63,8 @@
                                         "model": "luigis_mansion:entity/ghost_guy/equipment/right_arm",
                                         "tints": [
                                             {
-                                                "type": "minecraft:dye",
+                                                "type": "minecraft:custom_model_data",
+                                                "index": 0,
                                                 "default": 16777215
                                             }
                                         ]
@@ -73,7 +76,8 @@
                                 "model": "luigis_mansion:entity/ghost_guy/right_arm",
                                 "tints": [
                                     {
-                                        "type": "minecraft:dye",
+                                        "type": "minecraft:custom_model_data",
+                                        "index": 0,
                                         "default": 16777215
                                     }
                                 ]
@@ -94,7 +98,8 @@
                                         "model": "luigis_mansion:entity/ghost_guy/equipment/left_arm",
                                         "tints": [
                                             {
-                                                "type": "minecraft:dye",
+                                                "type": "minecraft:custom_model_data",
+                                                "index": 0,
                                                 "default": 16777215
                                             }
                                         ]
@@ -106,7 +111,8 @@
                                 "model": "luigis_mansion:entity/ghost_guy/left_arm",
                                 "tints": [
                                     {
-                                        "type": "minecraft:dye",
+                                        "type": "minecraft:custom_model_data",
+                                        "index": 0,
                                         "default": 16777215
                                     }
                                 ]
@@ -126,7 +132,8 @@
                                 "model": "luigis_mansion:entity/ghost_guy/equipment/mask",
                                 "tints": [
                                     {
-                                        "type": "minecraft:dye",
+                                        "type": "minecraft:custom_model_data",
+                                        "index": 0,
                                         "default": 16777215
                                     }
                                 ]
@@ -139,7 +146,8 @@
                                 "model": "luigis_mansion:entity/ghost_guy/equipment/dancing_mask",
                                 "tints": [
                                     {
-                                        "type": "minecraft:dye",
+                                        "type": "minecraft:custom_model_data",
+                                        "index": 0,
                                         "default": 16777215
                                     }
                                 ]
@@ -151,7 +159,8 @@
                         "model": "luigis_mansion:entity/ghost_guy/body",
                         "tints": [
                             {
-                                "type": "minecraft:dye",
+                                "type": "minecraft:custom_model_data",
+                                "index": 0,
                                 "default": 16777215
                             }
                         ]

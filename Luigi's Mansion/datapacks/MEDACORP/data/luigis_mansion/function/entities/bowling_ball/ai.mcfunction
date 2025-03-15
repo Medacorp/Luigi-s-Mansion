@@ -7,5 +7,5 @@ execute if entity @s[scores={Sound=0}] run playsound luigis_mansion:entity.bowli
 scoreboard players set @s[scores={Sound=0}] Sound 20
 execute at @s[tag=drop] run teleport @s ~ ~-0.2 ~
 execute at @s[tag=drop] unless block ~ ~1 ~ #luigis_mansion:ghosts_ignore run tag @s add dead
-execute if data entity @s[tag=dead,tag=hit] ArmorItems[3].components."minecraft:custom_data".owner run function luigis_mansion:entities/ghost/owner_laugh with entity @s ArmorItems[3].components."minecraft:custom_data"
-execute if data entity @s[tag=dead,tag=!hit] ArmorItems[3].components."minecraft:custom_data".owner run function luigis_mansion:entities/ghost/owner_complain with entity @s ArmorItems[3].components."minecraft:custom_data"
+execute if data entity @s[tag=dead,tag=hit] data.owner run function luigis_mansion:entities/ghost/owner_laugh with entity @s data
+execute if data entity @s[tag=dead,tag=!hit] data.owner run function luigis_mansion:entities/ghost/owner_complain with entity @s data

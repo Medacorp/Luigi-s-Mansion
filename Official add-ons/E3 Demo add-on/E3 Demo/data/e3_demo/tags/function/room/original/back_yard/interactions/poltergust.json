@@ -1,7 +1,7 @@
 {
-	"values": [
-		"e3_demo:room/original/back_yard/interactions/poltergust/bowl",
-		"e3_demo:room/original/back_yard/interactions/poltergust/stake",
-		"e3_demo:room/original/back_yard/interactions/poltergust/water_tap"
-	]
+    "values": [
+        "e3_demo:room/original/back_yard/interactions/poltergust/bowl",
+        "e3_demo:room/original/back_yard/interactions/poltergust/stake",
+        "e3_demo:room/original/back_yard/interactions/poltergust/water_tap"
+    ]
 }

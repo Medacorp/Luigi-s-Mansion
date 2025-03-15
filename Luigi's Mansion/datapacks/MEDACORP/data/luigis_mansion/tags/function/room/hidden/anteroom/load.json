@@ -1,11 +1,11 @@
 {
-	"values": [
-	    "luigis_mansion:room/hidden/anteroom/load/set_loaded",
+    "values": [
+        "luigis_mansion:room/hidden/anteroom/load/set_loaded",
         "luigis_mansion:room/hidden/anteroom/load/lights",
         "luigis_mansion:room/hidden/anteroom/load/nightstand_mounted_blue_flower_pot_1",
         "luigis_mansion:room/hidden/anteroom/load/nightstand_mounted_blue_flower_pot_2",
         "luigis_mansion:room/hidden/anteroom/load/nightstand_mounted_blue_flower_pot_3",
         "luigis_mansion:room/hidden/anteroom/load/parlor_door",
         "luigis_mansion:room/hidden/anteroom/load/wardrobe_room_door"
-	]
+    ]
 }

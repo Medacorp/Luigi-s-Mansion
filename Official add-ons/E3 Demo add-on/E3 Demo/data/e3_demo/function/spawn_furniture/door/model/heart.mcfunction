@@ -1,1 +1,1 @@
-data modify entity @s ArmorItems[3].components."minecraft:item_model" set value "e3_demo:furniture/door/heart"
+data modify entity @s equipment.head.components."minecraft:item_model" set value "e3_demo:furniture/door/heart"

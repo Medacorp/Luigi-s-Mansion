@@ -1,12 +1,12 @@
 {
-	"values": [
-		"luigis_mansion:room/hidden/butlers_room/interactions/poltergust/closet",
-		"luigis_mansion:room/hidden/butlers_room/interactions/poltergust/ironing_table",
-		"luigis_mansion:room/hidden/butlers_room/interactions/poltergust/lamp",
-		"luigis_mansion:room/hidden/butlers_room/interactions/poltergust/sewing_machine",
-		"luigis_mansion:room/hidden/butlers_room/interactions/poltergust/table",
-		"luigis_mansion:room/hidden/butlers_room/interactions/poltergust/toilet_paper",
-		"luigis_mansion:room/hidden/butlers_room/interactions/poltergust/vacuumable_1",
-		"luigis_mansion:room/hidden/butlers_room/interactions/poltergust/vacuumable_2"
-	]
+    "values": [
+        "luigis_mansion:room/hidden/butlers_room/interactions/poltergust/closet",
+        "luigis_mansion:room/hidden/butlers_room/interactions/poltergust/ironing_table",
+        "luigis_mansion:room/hidden/butlers_room/interactions/poltergust/lamp",
+        "luigis_mansion:room/hidden/butlers_room/interactions/poltergust/sewing_machine",
+        "luigis_mansion:room/hidden/butlers_room/interactions/poltergust/table",
+        "luigis_mansion:room/hidden/butlers_room/interactions/poltergust/toilet_paper",
+        "luigis_mansion:room/hidden/butlers_room/interactions/poltergust/vacuumable_1",
+        "luigis_mansion:room/hidden/butlers_room/interactions/poltergust/vacuumable_2"
+    ]
 }

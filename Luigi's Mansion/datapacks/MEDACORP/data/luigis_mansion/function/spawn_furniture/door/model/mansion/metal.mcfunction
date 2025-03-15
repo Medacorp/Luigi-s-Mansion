@@ -1,1 +1,1 @@
-data modify entity @s ArmorItems[3].components."minecraft:item_model" set value "luigis_mansion:furniture/door/mansion/metal"
+data modify entity @s equipment.head.components."minecraft:item_model" set value "luigis_mansion:furniture/door/mansion/metal"

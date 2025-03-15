@@ -1,6 +1,6 @@
 {
-	"values": [
-	    "luigis_mansion:room/normal/hallway_5/load/set_loaded",
+    "values": [
+        "luigis_mansion:room/normal/hallway_5/load/set_loaded",
         "luigis_mansion:room/normal/hallway_5/load/lights",
         "luigis_mansion:room/normal/hallway_5/load/billiards_room_door",
         "luigis_mansion:room/normal/hallway_5/load/conservatory_door",
@@ -15,5 +15,5 @@
         "luigis_mansion:room/normal/hallway_5/load/simple_wall_candelabra_3",
         "luigis_mansion:room/normal/hallway_5/load/simple_wall_candelabra_4",
         "luigis_mansion:room/normal/hallway_5/load/washroom_1_door"
-	]
+    ]
 }

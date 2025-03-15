@@ -6,7 +6,7 @@ tag @s[scores={Dialog=1},tag=portrait_ghost_hide] remove visible
 execute if entity @s[scores={Dialog=40}] run playsound luigis_mansion:entity.lydia.surprise hostile @a[tag=same_room] ~ ~ ~ 1
 execute if entity @s[scores={Dialog=50}] run playsound luigis_mansion:entity.lydia.complain hostile @a[tag=same_room] ~ ~ ~ 1
 scoreboard players set @s[scores={Dialog=60}] VulnerableTime 40
-execute if entity @s[scores={Dialog=60}] unless data storage luigis_mansion:data current_state.current_data.technical_data{lydia_spoke:1b} run tellraw @a[tag=same_room] {"type":"translatable","translate":"chat.type.text","with":[{"type":"translatable","translate":"luigis_mansion:entity.lydia","color":"green"},{"type":"translatable","translate":"luigis_mansion:message.lydia.draft"}]}
+execute if entity @s[scores={Dialog=60}] unless data storage luigis_mansion:data current_state.current_data.technical_data{lydia_spoke:1b} run tellraw @a[tag=same_room] {type:"translatable",translate:"chat.type.text",with:[{type:"translatable",translate:"luigis_mansion:entity.lydia",color:"green"},{type:"translatable",translate:"luigis_mansion:message.lydia.draft"}]}
 execute if entity @s[scores={Dialog=60}] run data modify storage luigis_mansion:data current_state.current_data.technical_data merge value {lydia_spoke:1b}
 execute if entity @s[scores={Dialog=100}] run playsound luigis_mansion:entity.lydia.sigh hostile @a[tag=same_room] ~ ~ ~ 1
 execute if entity @s[scores={Dialog=100}] run function luigis_mansion:entities/ghost/set_specific_path {index:0}

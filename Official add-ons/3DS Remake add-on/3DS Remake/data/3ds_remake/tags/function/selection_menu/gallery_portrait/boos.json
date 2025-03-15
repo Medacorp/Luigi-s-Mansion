@@ -1,6 +1,6 @@
 {
-	"values": [
-		"3ds_remake:selection_menu/gallery_portrait/boos/peekaboo",
+    "values": [
+        "3ds_remake:selection_menu/gallery_portrait/boos/peekaboo",
         "3ds_remake:selection_menu/gallery_portrait/boos/gumboo",
         "3ds_remake:selection_menu/gallery_portrait/boos/booigi",
         "3ds_remake:selection_menu/gallery_portrait/boos/kung_boo",
@@ -36,5 +36,5 @@
         "3ds_remake:selection_menu/gallery_portrait/boos/booripedes",
         "3ds_remake:selection_menu/gallery_portrait/boos/booffant",
         "3ds_remake:selection_menu/gallery_portrait/boos/boo_b_hatch"
-	]
+    ]
 }

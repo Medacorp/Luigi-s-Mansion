@@ -1,7 +1,7 @@
 {
-	"values": [
-	    "luigis_mansion:room/normal/study/turn_lights/on/lamp_1",
-	    "luigis_mansion:room/normal/study/turn_lights/on/lamp_2",
-	    "luigis_mansion:room/normal/study/turn_lights/on/table"
-	]
+    "values": [
+        "luigis_mansion:room/normal/study/turn_lights/on/lamp_1",
+        "luigis_mansion:room/normal/study/turn_lights/on/lamp_2",
+        "luigis_mansion:room/normal/study/turn_lights/on/table"
+    ]
 }

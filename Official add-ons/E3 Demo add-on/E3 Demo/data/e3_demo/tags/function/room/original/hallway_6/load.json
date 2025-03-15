@@ -1,11 +1,11 @@
 {
-	"values": [
-	    "e3_demo:room/original/hallway_6/load/set_loaded",
+    "values": [
+        "e3_demo:room/original/hallway_6/load/set_loaded",
         "e3_demo:room/original/hallway_6/load/lights",
         "e3_demo:room/original/hallway_6/load/bath_room_door",
         "e3_demo:room/original/hallway_6/load/missingno_20_door",
         "e3_demo:room/original/hallway_6/load/painting",
         "e3_demo:room/original/hallway_6/load/simple_wall_candelabra_1",
         "e3_demo:room/original/hallway_6/load/simple_wall_candelabra_2"
-	]
+    ]
 }

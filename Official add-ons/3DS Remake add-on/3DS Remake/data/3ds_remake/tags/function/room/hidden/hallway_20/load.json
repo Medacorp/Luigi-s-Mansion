@@ -1,6 +1,6 @@
 {
-	"values": [
-	    "3ds_remake:room/hidden/hallway_20/load/set_loaded",
+    "values": [
+        "3ds_remake:room/hidden/hallway_20/load/set_loaded",
         "3ds_remake:room/hidden/hallway_20/load/lights",
         "3ds_remake:room/hidden/hallway_20/load/cellar_door",
         "3ds_remake:room/hidden/hallway_20/load/cobweb",
@@ -8,5 +8,5 @@
         "3ds_remake:room/hidden/hallway_20/load/lamp",
         "3ds_remake:room/hidden/hallway_20/load/stone_bowl_wall_candelabra_1",
         "3ds_remake:room/hidden/hallway_20/load/stone_bowl_wall_candelabra_2"
-	]
+    ]
 }

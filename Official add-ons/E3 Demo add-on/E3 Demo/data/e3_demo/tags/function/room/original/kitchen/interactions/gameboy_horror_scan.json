@@ -1,19 +1,19 @@
 {
-	"values": [
-		"e3_demo:room/original/kitchen/interactions/gameboy_horror_scan/closet",
-		"e3_demo:room/original/kitchen/interactions/gameboy_horror_scan/dish_washer",
-		"e3_demo:room/original/kitchen/interactions/gameboy_horror_scan/fridge",
-		"e3_demo:room/original/kitchen/interactions/gameboy_horror_scan/lamp_1",
-		"e3_demo:room/original/kitchen/interactions/gameboy_horror_scan/lamp_2",
-		"e3_demo:room/original/kitchen/interactions/gameboy_horror_scan/oven",
-		"e3_demo:room/original/kitchen/interactions/gameboy_horror_scan/painting_1",
-		"e3_demo:room/original/kitchen/interactions/gameboy_horror_scan/painting_2",
-		"e3_demo:room/original/kitchen/interactions/gameboy_horror_scan/shelf_1",
-		"e3_demo:room/original/kitchen/interactions/gameboy_horror_scan/shelf_2",
-		"e3_demo:room/original/kitchen/interactions/gameboy_horror_scan/shelf_3",
-		"e3_demo:room/original/kitchen/interactions/gameboy_horror_scan/shelf_4",
-		"e3_demo:room/original/kitchen/interactions/gameboy_horror_scan/shelf_5",
-		"e3_demo:room/original/kitchen/interactions/gameboy_horror_scan/table",
-		"e3_demo:room/original/kitchen/interactions/gameboy_horror_scan/tool_rack"
-	]
+    "values": [
+        "e3_demo:room/original/kitchen/interactions/gameboy_horror_scan/closet",
+        "e3_demo:room/original/kitchen/interactions/gameboy_horror_scan/dish_washer",
+        "e3_demo:room/original/kitchen/interactions/gameboy_horror_scan/fridge",
+        "e3_demo:room/original/kitchen/interactions/gameboy_horror_scan/lamp_1",
+        "e3_demo:room/original/kitchen/interactions/gameboy_horror_scan/lamp_2",
+        "e3_demo:room/original/kitchen/interactions/gameboy_horror_scan/oven",
+        "e3_demo:room/original/kitchen/interactions/gameboy_horror_scan/painting_1",
+        "e3_demo:room/original/kitchen/interactions/gameboy_horror_scan/painting_2",
+        "e3_demo:room/original/kitchen/interactions/gameboy_horror_scan/shelf_1",
+        "e3_demo:room/original/kitchen/interactions/gameboy_horror_scan/shelf_2",
+        "e3_demo:room/original/kitchen/interactions/gameboy_horror_scan/shelf_3",
+        "e3_demo:room/original/kitchen/interactions/gameboy_horror_scan/shelf_4",
+        "e3_demo:room/original/kitchen/interactions/gameboy_horror_scan/shelf_5",
+        "e3_demo:room/original/kitchen/interactions/gameboy_horror_scan/table",
+        "e3_demo:room/original/kitchen/interactions/gameboy_horror_scan/tool_rack"
+    ]
 }

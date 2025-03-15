@@ -15,8 +15,8 @@ data modify storage luigis_mansion:data reflections[-1].no_sync.tags set from en
 data modify storage luigis_mansion:data reflections[-1].data.Pose set from entity @s Pose
 execute store result storage luigis_mansion:data reflections[-1].data.Pose.Head[1] float 0.01 run data get storage luigis_mansion:data reflections[-1].data.Pose.Head[1] -100
 execute store result storage luigis_mansion:data reflections[-1].data.Pose.Head[2] float 0.01 run data get storage luigis_mansion:data reflections[-1].data.Pose.Head[2] -100
-data modify storage luigis_mansion:data reflections[-1].data.ArmorItems set from entity @s ArmorItems
-data modify storage luigis_mansion:data reflections[-1].data.ArmorItems[3] merge from storage luigis_mansion:data reflections[-1].data.ArmorItems[3].components."minecraft:custom_data".mirror
+data modify storage luigis_mansion:data reflections[-1].data.equipment set from entity @s equipment
+data modify storage luigis_mansion:data reflections[-1].data.equipment.head merge from storage luigis_mansion:data reflections[-1].data.equipment.head.components."minecraft:custom_data".mirror
 data modify storage luigis_mansion:data reflections[-1].data.attributes set from entity @s attributes
 #todelete - old painting furniture
 data modify storage luigis_mansion:data reflections[-1].data.Item set from entity @s Item

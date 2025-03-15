@@ -1,11 +1,11 @@
 {
-	"values": [
-	    "luigis_mansion:room/normal/boneyard/load/set_loaded",
+    "values": [
+        "luigis_mansion:room/normal/boneyard/load/set_loaded",
         "luigis_mansion:room/normal/boneyard/load/lights",
         "luigis_mansion:room/normal/boneyard/load/dog_house",
         "luigis_mansion:room/normal/boneyard/load/dripping_water",
         "luigis_mansion:room/normal/boneyard/load/kitchen_door",
         "luigis_mansion:room/normal/boneyard/load/lamp",
         "luigis_mansion:room/normal/boneyard/load/plant"
-	]
+    ]
 }

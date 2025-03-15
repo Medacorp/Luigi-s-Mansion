@@ -6,7 +6,7 @@ scoreboard objectives add StrobulbCharge dummy
 execute store result score #non_gooigis Totals if entity @a[tag=!spectator,tag=!gooigi]
 execute store result score #all_non_gooigis Totals if entity @a[tag=!gooigi]
 
-bossbar add 3ds_remake:portrait_battle {"type":"translatable","translate":"3ds_remake:message.gallery.portrait_battle.time","color":"white","with":["0","0","0"]}
+bossbar add 3ds_remake:portrait_battle {type:"translatable",translate:"3ds_remake:message.gallery.portrait_battle.time",color:"white",with:["0","0","0"]}
 bossbar set 3ds_remake:portrait_battle color white
 
 execute unless score #global_3ds_remake_gallery Selected matches 0..1 run scoreboard players set #global_3ds_remake_gallery Selected 1

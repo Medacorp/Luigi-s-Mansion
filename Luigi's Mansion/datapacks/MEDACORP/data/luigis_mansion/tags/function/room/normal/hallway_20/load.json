@@ -1,6 +1,6 @@
 {
-	"values": [
-	    "luigis_mansion:room/normal/hallway_20/load/set_loaded",
+    "values": [
+        "luigis_mansion:room/normal/hallway_20/load/set_loaded",
         "luigis_mansion:room/normal/hallway_20/load/lights",
         "luigis_mansion:room/normal/hallway_20/load/cellar_door",
         "luigis_mansion:room/normal/hallway_20/load/cobweb",
@@ -8,5 +8,5 @@
         "luigis_mansion:room/normal/hallway_20/load/lamp",
         "luigis_mansion:room/normal/hallway_20/load/stone_bowl_wall_candelabra_1",
         "luigis_mansion:room/normal/hallway_20/load/stone_bowl_wall_candelabra_2"
-	]
+    ]
 }

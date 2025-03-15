@@ -1,16 +1,16 @@
 {
-	"values": [
-	    "luigis_mansion:room/gallery_hallway_2/load/set_loaded",
-	    "luigis_mansion:room/gallery_hallway_2/load/boolossus_portrait",
-	    "luigis_mansion:room/gallery_hallway_2/load/gallery_back_room_door",
-	    "luigis_mansion:room/gallery_hallway_2/load/floating_whirlindas_portrait",
-	    "luigis_mansion:room/gallery_hallway_2/load/henry_and_orville_portrait",
-	    "luigis_mansion:room/gallery_hallway_2/load/melody_pianissima_portrait",
-	    "luigis_mansion:room/gallery_hallway_2/load/miss_petunia_portrait",
-	    "luigis_mansion:room/gallery_hallway_2/load/sir_weston_portrait",
-	    "luigis_mansion:room/gallery_hallway_2/load/slim_bankshot_portrait",
-	    "luigis_mansion:room/gallery_hallway_2/load/spooky_portrait",
-	    "luigis_mansion:room/gallery_hallway_2/load/sue_pea_portrait",
-	    "luigis_mansion:room/gallery_hallway_2/load/vincent_van_gore_portrait"
-	]
+    "values": [
+        "luigis_mansion:room/gallery_hallway_2/load/set_loaded",
+        "luigis_mansion:room/gallery_hallway_2/load/boolossus_portrait",
+        "luigis_mansion:room/gallery_hallway_2/load/gallery_back_room_door",
+        "luigis_mansion:room/gallery_hallway_2/load/floating_whirlindas_portrait",
+        "luigis_mansion:room/gallery_hallway_2/load/henry_and_orville_portrait",
+        "luigis_mansion:room/gallery_hallway_2/load/melody_pianissima_portrait",
+        "luigis_mansion:room/gallery_hallway_2/load/miss_petunia_portrait",
+        "luigis_mansion:room/gallery_hallway_2/load/sir_weston_portrait",
+        "luigis_mansion:room/gallery_hallway_2/load/slim_bankshot_portrait",
+        "luigis_mansion:room/gallery_hallway_2/load/spooky_portrait",
+        "luigis_mansion:room/gallery_hallway_2/load/sue_pea_portrait",
+        "luigis_mansion:room/gallery_hallway_2/load/vincent_van_gore_portrait"
+    ]
 }

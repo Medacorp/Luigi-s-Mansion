@@ -1,5 +1,5 @@
 {
-	"values": [
+    "values": [
         "luigis_mansion:other/drop_loot/gold_coin",
         "luigis_mansion:other/drop_loot/bill",
         "luigis_mansion:other/drop_loot/gold_bar",
@@ -25,5 +25,5 @@
         "luigis_mansion:other/drop_loot/element_medal",
         "luigis_mansion:other/drop_loot/mario_item",
         "luigis_mansion:other/drop_loot/king_boos_crown"
-	]
+    ]
 }

@@ -1,6 +1,6 @@
 {
-	"values": [
-	    "3ds_remake:room/hidden/sealed_room/load/set_loaded",
+    "values": [
+        "3ds_remake:room/hidden/sealed_room/load/set_loaded",
         "3ds_remake:room/hidden/sealed_room/load/lights",
         "3ds_remake:room/hidden/sealed_room/load/blank_trophy_1",
         "3ds_remake:room/hidden/sealed_room/load/blank_trophy_2",
@@ -28,5 +28,5 @@
         "3ds_remake:room/hidden/sealed_room/load/treasure_chest_7",
         "3ds_remake:room/hidden/sealed_room/load/treasure_chest_8",
         "3ds_remake:room/hidden/sealed_room/load/treasure_chest_9"
-	]
+    ]
 }

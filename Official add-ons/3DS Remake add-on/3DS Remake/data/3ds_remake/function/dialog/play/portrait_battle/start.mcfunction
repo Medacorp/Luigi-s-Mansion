@@ -19,7 +19,7 @@ execute if score #dialog Dialog matches 1..22 as @e[tag=luigi,tag=same_room] run
 execute if score #dialog Dialog matches 1..22 as @a[tag=same_room] run function luigis_mansion:other/music/set/non_overwritten_silence
 
 execute if score #dialog Dialog matches 3 as @a at @s run playsound luigis_mansion:entity.ghost.laugh hostile @s ~ ~ ~ 3
-execute if score #dialog Dialog matches 3 run title @a[tag=same_room] title {"type":"translatable","translate":"3ds_remake:message.gallery.portrait_battle.start"}
+execute if score #dialog Dialog matches 3 run title @a[tag=same_room] title {type:"translatable",translate:"3ds_remake:message.gallery.portrait_battle.start"}
 execute if score #dialog Dialog matches 23 as @e[tag=luigi,tag=same_room] run function luigis_mansion:entities/luigi/animation/set/none
 execute if score #dialog Dialog matches 23 as @a[tag=same_room] run function luigis_mansion:other/music/set/silence
 execute if score #dialog Dialog matches 23 run scoreboard players set #dialog Dialog -1

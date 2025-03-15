@@ -1,16 +1,16 @@
 {
-	"values": [
-		"luigis_mansion:room/hidden/sealed_room/interactions/manual/disk_1",
-		"luigis_mansion:room/hidden/sealed_room/interactions/manual/disk_2",
-		"luigis_mansion:room/hidden/sealed_room/interactions/manual/lamp",
-		"luigis_mansion:room/hidden/sealed_room/interactions/manual/mirror",
-		"luigis_mansion:room/hidden/sealed_room/interactions/manual/painting_1",
-		"luigis_mansion:room/hidden/sealed_room/interactions/manual/painting_2",
-		"luigis_mansion:room/hidden/sealed_room/interactions/manual/painting_3",
-		"luigis_mansion:room/hidden/sealed_room/interactions/manual/painting_4",
-		"luigis_mansion:room/hidden/sealed_room/interactions/manual/painting_5",
-		"luigis_mansion:room/hidden/sealed_room/interactions/manual/painting_6",
-		"luigis_mansion:room/hidden/sealed_room/interactions/manual/painting_7",
-		"luigis_mansion:room/hidden/sealed_room/interactions/manual/table"
-	]
+    "values": [
+        "luigis_mansion:room/hidden/sealed_room/interactions/manual/disk_1",
+        "luigis_mansion:room/hidden/sealed_room/interactions/manual/disk_2",
+        "luigis_mansion:room/hidden/sealed_room/interactions/manual/lamp",
+        "luigis_mansion:room/hidden/sealed_room/interactions/manual/mirror",
+        "luigis_mansion:room/hidden/sealed_room/interactions/manual/painting_1",
+        "luigis_mansion:room/hidden/sealed_room/interactions/manual/painting_2",
+        "luigis_mansion:room/hidden/sealed_room/interactions/manual/painting_3",
+        "luigis_mansion:room/hidden/sealed_room/interactions/manual/painting_4",
+        "luigis_mansion:room/hidden/sealed_room/interactions/manual/painting_5",
+        "luigis_mansion:room/hidden/sealed_room/interactions/manual/painting_6",
+        "luigis_mansion:room/hidden/sealed_room/interactions/manual/painting_7",
+        "luigis_mansion:room/hidden/sealed_room/interactions/manual/table"
+    ]
 }

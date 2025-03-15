@@ -1,10 +1,10 @@
 {
-	"values": [
-	    "3ds_remake:room/gallery_side_room/load/set_loaded",
+    "values": [
+        "3ds_remake:room/gallery_side_room/load/set_loaded",
         "3ds_remake:room/gallery_side_room/load/boos_portrait",
         "3ds_remake:room/gallery_side_room/load/extra_gallery_door",
         "3ds_remake:room/gallery_side_room/load/gallery_door",
         "3ds_remake:room/gallery_side_room/load/mansion_rank_portrait",
         "3ds_remake:room/gallery_side_room/load/small_ghosts_portrait"
-	]
+    ]
 }

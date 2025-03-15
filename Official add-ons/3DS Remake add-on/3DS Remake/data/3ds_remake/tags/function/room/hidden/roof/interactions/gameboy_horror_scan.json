@@ -1,17 +1,17 @@
 {
-	"values": [
-		"3ds_remake:room/hidden/roof/interactions/gameboy_horror_scan/fire",
-		"3ds_remake:room/hidden/roof/interactions/gameboy_horror_scan/pillar_1",
-		"3ds_remake:room/hidden/roof/interactions/gameboy_horror_scan/pillar_2",
-		"3ds_remake:room/hidden/roof/interactions/gameboy_horror_scan/pillar_3",
-		"3ds_remake:room/hidden/roof/interactions/gameboy_horror_scan/pillar_4",
-		"3ds_remake:room/hidden/roof/interactions/gameboy_horror_scan/pillar_5",
-		"3ds_remake:room/hidden/roof/interactions/gameboy_horror_scan/pillar_6",
-		"3ds_remake:room/hidden/roof/interactions/gameboy_horror_scan/pillar_7",
-		"3ds_remake:room/hidden/roof/interactions/gameboy_horror_scan/pillar_8",
-		"3ds_remake:room/hidden/roof/interactions/gameboy_horror_scan/pillar_9",
-		"3ds_remake:room/hidden/roof/interactions/gameboy_horror_scan/pillar_10",
-		"3ds_remake:room/hidden/roof/interactions/gameboy_horror_scan/pillar_11",
-		"3ds_remake:room/hidden/roof/interactions/gameboy_horror_scan/pillar_12"
-	]
+    "values": [
+        "3ds_remake:room/hidden/roof/interactions/gameboy_horror_scan/fire",
+        "3ds_remake:room/hidden/roof/interactions/gameboy_horror_scan/pillar_1",
+        "3ds_remake:room/hidden/roof/interactions/gameboy_horror_scan/pillar_2",
+        "3ds_remake:room/hidden/roof/interactions/gameboy_horror_scan/pillar_3",
+        "3ds_remake:room/hidden/roof/interactions/gameboy_horror_scan/pillar_4",
+        "3ds_remake:room/hidden/roof/interactions/gameboy_horror_scan/pillar_5",
+        "3ds_remake:room/hidden/roof/interactions/gameboy_horror_scan/pillar_6",
+        "3ds_remake:room/hidden/roof/interactions/gameboy_horror_scan/pillar_7",
+        "3ds_remake:room/hidden/roof/interactions/gameboy_horror_scan/pillar_8",
+        "3ds_remake:room/hidden/roof/interactions/gameboy_horror_scan/pillar_9",
+        "3ds_remake:room/hidden/roof/interactions/gameboy_horror_scan/pillar_10",
+        "3ds_remake:room/hidden/roof/interactions/gameboy_horror_scan/pillar_11",
+        "3ds_remake:room/hidden/roof/interactions/gameboy_horror_scan/pillar_12"
+    ]
 }

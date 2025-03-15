@@ -17,7 +17,7 @@ teleport @s[scores={Dialog=43..62}] ^ ^0.05 ^-0.05
 execute if entity @s[scores={Dialog=64}] run playsound luigis_mansion:entity.sue_pea.complain2 hostile @a[tag=same_room] ~ ~ ~ 1000
 teleport @s[scores={Dialog=64..83}] ^ ^-0.05 ^0.05
 teleport @s[scores={Dialog=104..123}] ^ ^0.05 ^-0.05
-execute if entity @s[scores={Dialog=125}] unless data storage luigis_mansion:data current_state.current_data.technical_data{sue_pea_snored:1b} run tellraw @a[tag=same_room] {"type":"translatable","translate":"chat.type.text","with":[{"type":"translatable","translate":"luigis_mansion:entity.sue_pea","color":"green"},{"type":"translatable","translate":"luigis_mansion:dialog.sue_pea.3"}]}
+execute if entity @s[scores={Dialog=125}] unless data storage luigis_mansion:data current_state.current_data.technical_data{sue_pea_snored:1b} run tellraw @a[tag=same_room] {type:"translatable",translate:"chat.type.text",with:[{type:"translatable",translate:"luigis_mansion:entity.sue_pea",color:"green"},{type:"translatable",translate:"luigis_mansion:dialog.sue_pea.3"}]}
 execute if entity @s[scores={Dialog=125}] run data modify storage luigis_mansion:data current_state.current_data.technical_data merge value {sue_pea_snored:1b}
 execute if entity @s[scores={Dialog=125..}] as @a[tag=same_room] run function luigis_mansion:other/music/set/danger
 tag @s[scores={Dialog=125}] add visible

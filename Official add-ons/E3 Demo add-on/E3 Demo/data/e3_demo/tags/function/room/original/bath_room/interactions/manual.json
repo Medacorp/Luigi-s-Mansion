@@ -1,6 +1,6 @@
 {
-	"values": [
-		"e3_demo:room/original/bath_room/interactions/manual/bathtub",
-		"e3_demo:room/original/bath_room/interactions/manual/mirror"
-	]
+    "values": [
+        "e3_demo:room/original/bath_room/interactions/manual/bathtub",
+        "e3_demo:room/original/bath_room/interactions/manual/mirror"
+    ]
 }

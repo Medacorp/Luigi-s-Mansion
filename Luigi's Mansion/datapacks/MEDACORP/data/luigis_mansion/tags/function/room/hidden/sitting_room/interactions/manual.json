@@ -1,14 +1,14 @@
 {
-	"values": [
-		"luigis_mansion:room/hidden/sitting_room/interactions/manual/chair",
-		"luigis_mansion:room/hidden/sitting_room/interactions/manual/coat_rack",
-		"luigis_mansion:room/hidden/sitting_room/interactions/manual/couch",
-		"luigis_mansion:room/hidden/sitting_room/interactions/manual/lamp",
-		"luigis_mansion:room/hidden/sitting_room/interactions/manual/painting_1",
-		"luigis_mansion:room/hidden/sitting_room/interactions/manual/painting_2",
-		"luigis_mansion:room/hidden/sitting_room/interactions/manual/painting_3",
-		"luigis_mansion:room/hidden/sitting_room/interactions/manual/painting_4",
-		"luigis_mansion:room/hidden/sitting_room/interactions/manual/painting_5",
-		"luigis_mansion:room/hidden/sitting_room/interactions/manual/plant"
-	]
+    "values": [
+        "luigis_mansion:room/hidden/sitting_room/interactions/manual/chair",
+        "luigis_mansion:room/hidden/sitting_room/interactions/manual/coat_rack",
+        "luigis_mansion:room/hidden/sitting_room/interactions/manual/couch",
+        "luigis_mansion:room/hidden/sitting_room/interactions/manual/lamp",
+        "luigis_mansion:room/hidden/sitting_room/interactions/manual/painting_1",
+        "luigis_mansion:room/hidden/sitting_room/interactions/manual/painting_2",
+        "luigis_mansion:room/hidden/sitting_room/interactions/manual/painting_3",
+        "luigis_mansion:room/hidden/sitting_room/interactions/manual/painting_4",
+        "luigis_mansion:room/hidden/sitting_room/interactions/manual/painting_5",
+        "luigis_mansion:room/hidden/sitting_room/interactions/manual/plant"
+    ]
 }

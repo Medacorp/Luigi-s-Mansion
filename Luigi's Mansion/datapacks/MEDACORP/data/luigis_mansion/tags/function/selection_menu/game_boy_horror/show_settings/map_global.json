@@ -1,7 +1,7 @@
 {
-	"values": [
-		"luigis_mansion:selection_menu/game_boy_horror/show_settings/map/global_difficulty",
-		"luigis_mansion:selection_menu/game_boy_horror/show_settings/map/global_mirror_reflections",
-		"luigis_mansion:selection_menu/game_boy_horror/show_settings/map/global_player_names"
-	]
+    "values": [
+        "luigis_mansion:selection_menu/game_boy_horror/show_settings/map/global_difficulty",
+        "luigis_mansion:selection_menu/game_boy_horror/show_settings/map/global_mirror_reflections",
+        "luigis_mansion:selection_menu/game_boy_horror/show_settings/map/global_player_names"
+    ]
 }

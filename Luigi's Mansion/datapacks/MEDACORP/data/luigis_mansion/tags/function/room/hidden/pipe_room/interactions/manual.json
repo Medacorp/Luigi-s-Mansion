@@ -1,7 +1,7 @@
 {
-	"values": [
-		"luigis_mansion:room/hidden/pipe_room/interactions/manual/crate",
-		"luigis_mansion:room/hidden/pipe_room/interactions/manual/frozen_barrel",
-		"luigis_mansion:room/hidden/pipe_room/interactions/manual/pipe"
-	]
+    "values": [
+        "luigis_mansion:room/hidden/pipe_room/interactions/manual/crate",
+        "luigis_mansion:room/hidden/pipe_room/interactions/manual/frozen_barrel",
+        "luigis_mansion:room/hidden/pipe_room/interactions/manual/pipe"
+    ]
 }

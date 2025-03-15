@@ -1,5 +1,5 @@
 {
-	"values": [
+    "values": [
         "luigis_mansion:other/music/cannot_overwrite/dancing_ghost_guys",
         "luigis_mansion:other/music/cannot_overwrite/area_clear",
         "luigis_mansion:other/music/cannot_overwrite/catching_boo",
@@ -9,5 +9,5 @@
         "luigis_mansion:other/music/cannot_overwrite/e_gadd_call",
         "luigis_mansion:other/music/cannot_overwrite/game_boy_horror",
         "luigis_mansion:other/music/cannot_overwrite/portraits"
-	]
+    ]
 }

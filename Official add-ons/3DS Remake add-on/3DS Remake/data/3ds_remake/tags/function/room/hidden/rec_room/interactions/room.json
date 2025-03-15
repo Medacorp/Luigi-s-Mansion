@@ -1,15 +1,15 @@
 {
-	"values": [
-		"3ds_remake:room/hidden/rec_room/interactions/room/bike_1",
-		"3ds_remake:room/hidden/rec_room/interactions/room/bike_2",
-		"3ds_remake:room/hidden/rec_room/interactions/room/lamp_1",
-		"3ds_remake:room/hidden/rec_room/interactions/room/lamp_2",
-		"3ds_remake:room/hidden/rec_room/interactions/room/swords_1",
-		"3ds_remake:room/hidden/rec_room/interactions/room/swords_2",
-		"3ds_remake:room/hidden/rec_room/interactions/room/swords_3",
-		"3ds_remake:room/hidden/rec_room/interactions/room/swords_4",
-		"3ds_remake:room/hidden/rec_room/interactions/room/table",
-		"3ds_remake:room/hidden/rec_room/interactions/room/threadmill",
-		"3ds_remake:room/hidden/rec_room/interactions/room/weights"
-	]
+    "values": [
+        "3ds_remake:room/hidden/rec_room/interactions/room/bike_1",
+        "3ds_remake:room/hidden/rec_room/interactions/room/bike_2",
+        "3ds_remake:room/hidden/rec_room/interactions/room/lamp_1",
+        "3ds_remake:room/hidden/rec_room/interactions/room/lamp_2",
+        "3ds_remake:room/hidden/rec_room/interactions/room/swords_1",
+        "3ds_remake:room/hidden/rec_room/interactions/room/swords_2",
+        "3ds_remake:room/hidden/rec_room/interactions/room/swords_3",
+        "3ds_remake:room/hidden/rec_room/interactions/room/swords_4",
+        "3ds_remake:room/hidden/rec_room/interactions/room/table",
+        "3ds_remake:room/hidden/rec_room/interactions/room/threadmill",
+        "3ds_remake:room/hidden/rec_room/interactions/room/weights"
+    ]
 }

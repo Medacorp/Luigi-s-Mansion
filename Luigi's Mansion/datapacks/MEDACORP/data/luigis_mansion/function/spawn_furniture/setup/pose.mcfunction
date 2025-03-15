@@ -23,5 +23,5 @@ execute unless score #temp Time matches -900..900 run scoreboard players operati
 execute unless score #temp Time matches -900..900 run scoreboard players operation @e[tag=this_entity,scores={FurnitureGhostUp=-2147483648..},limit=1] FurnitureGhostUp *= #-1 Constants
 execute unless score #temp Time matches -900..900 run scoreboard players operation @e[tag=this_entity,scores={FurnitureLightUp=-2147483648..},limit=1] FurnitureLightUp *= #-1 Constants
 scoreboard players reset #temp Time
-execute as @e[tag=this_entity,limit=1] run data modify entity @s ArmorItems[3].components."minecraft:custom_data".default_orientation set from entity @s Pose
+execute as @e[tag=this_entity,limit=1] run data modify entity @s data.default_orientation set from entity @s Pose
 data remove storage luigis_mansion:data furniture.pose_edit

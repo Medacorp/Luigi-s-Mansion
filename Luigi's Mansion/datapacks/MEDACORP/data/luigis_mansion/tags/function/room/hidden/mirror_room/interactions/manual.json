@@ -1,8 +1,8 @@
 {
-	"values": [
-		"luigis_mansion:room/hidden/mirror_room/interactions/manual/lamp_1",
-		"luigis_mansion:room/hidden/mirror_room/interactions/manual/lamp_2",
-		"luigis_mansion:room/hidden/mirror_room/interactions/manual/painting",
-		"luigis_mansion:room/hidden/mirror_room/interactions/manual/table"
-	]
+    "values": [
+        "luigis_mansion:room/hidden/mirror_room/interactions/manual/lamp_1",
+        "luigis_mansion:room/hidden/mirror_room/interactions/manual/lamp_2",
+        "luigis_mansion:room/hidden/mirror_room/interactions/manual/painting",
+        "luigis_mansion:room/hidden/mirror_room/interactions/manual/table"
+    ]
 }

@@ -1,6 +1,6 @@
 {
-	"values": [
-	    "3ds_remake:room/hidden/master_bedroom/load/set_loaded",
+    "values": [
+        "3ds_remake:room/hidden/master_bedroom/load/set_loaded",
         "3ds_remake:room/hidden/master_bedroom/load/lights",
         "3ds_remake:room/hidden/master_bedroom/load/cobweb",
         "3ds_remake:room/hidden/master_bedroom/load/fan",
@@ -13,5 +13,5 @@
         "3ds_remake:room/hidden/master_bedroom/load/painting_5",
         "3ds_remake:room/hidden/master_bedroom/load/room_clear_chest",
         "3ds_remake:room/hidden/master_bedroom/load/table_2"
-	]
+    ]
 }

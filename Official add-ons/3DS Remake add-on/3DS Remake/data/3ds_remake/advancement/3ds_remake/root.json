@@ -14,7 +14,7 @@
         "description": {
             "type": "translatable", "translate": "3ds_remake:advancements.3ds_remake.root.description"
         },
-		"background": "3ds_remake:textures/gui/advancements/background/3ds_remake.png"
+		"background": "3ds_remake:gui/advancements/background/3ds_remake"
     },
     "criteria": {
         "unlock": {

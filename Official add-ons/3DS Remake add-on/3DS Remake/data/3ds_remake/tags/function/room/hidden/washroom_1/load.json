@@ -1,6 +1,6 @@
 {
-	"values": [
-	    "3ds_remake:room/hidden/washroom_1/load/set_loaded",
+    "values": [
+        "3ds_remake:room/hidden/washroom_1/load/set_loaded",
         "3ds_remake:room/hidden/washroom_1/load/lights",
         "3ds_remake:room/hidden/washroom_1/load/hallway_5_door",
         "3ds_remake:room/hidden/washroom_1/load/legged_sink",
@@ -10,5 +10,5 @@
         "3ds_remake:room/hidden/washroom_1/load/toad",
         "3ds_remake:room/hidden/washroom_1/load/toilet",
         "3ds_remake:room/hidden/washroom_1/load/toilet_paper"
-	]
+    ]
 }

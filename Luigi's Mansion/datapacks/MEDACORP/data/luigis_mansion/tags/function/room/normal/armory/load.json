@@ -1,6 +1,6 @@
 {
-	"values": [
-	    "luigis_mansion:room/normal/armory/load/set_loaded",
+    "values": [
+        "luigis_mansion:room/normal/armory/load/set_loaded",
         "luigis_mansion:room/normal/armory/load/lights",
         "luigis_mansion:room/normal/armory/load/ceramics_studio_door",
         "luigis_mansion:room/normal/armory/load/hallway_19_door",
@@ -10,5 +10,5 @@
         "luigis_mansion:room/normal/armory/load/metal_chest_4",
         "luigis_mansion:room/normal/armory/load/metal_chest_5",
         "luigis_mansion:room/normal/armory/load/room_clear_chest"
-	]
+    ]
 }

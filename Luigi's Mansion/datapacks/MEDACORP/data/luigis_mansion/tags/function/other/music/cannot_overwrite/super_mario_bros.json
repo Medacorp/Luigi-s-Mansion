@@ -1,5 +1,5 @@
 {
-	"values": [
+    "values": [
         "luigis_mansion:other/music/cannot_overwrite/super_mario_bros",
         "luigis_mansion:other/music/cannot_overwrite/area_clear",
         "luigis_mansion:other/music/cannot_overwrite/catching_boo",
@@ -13,5 +13,5 @@
         "luigis_mansion:other/music/cannot_overwrite/talking_ghosts",
         "luigis_mansion:other/music/cannot_overwrite/secret_altar",
         "luigis_mansion:other/music/cannot_overwrite/toad"
-	]
+    ]
 }

@@ -16,7 +16,7 @@ execute if score #dialog Dialog matches 1 run stopsound @a[tag=same_room] neutra
 execute if score #dialog Dialog matches 1 run data modify entity @e[tag=e_gadd,tag=same_room,limit=1] data.animation set value {namespace:"luigis_mansion",id:"nod"}
 execute if score #dialog Dialog matches 1 if score #mario_amiibo Selected matches 1 run scoreboard players set #dialog Dialog 23
 execute if score #dialog Dialog matches 1 as @e[tag=luigi,tag=same_room] run function luigis_mansion:entities/luigi/animation/set/nod
-execute if score #dialog Dialog matches 1 run tellraw @a[tag=same_room] {"type":"translatable","translate":"chat.type.text","with":[{"type":"translatable","translate":"luigis_mansion:entity.e_gadd","color":"green"},{"type":"translatable","translate":"3ds_remake:dialog.underground_lab.change_amiibo.2.mario.on"}]}
+execute if score #dialog Dialog matches 1 run tellraw @a[tag=same_room] {type:"translatable",translate:"chat.type.text",with:[{type:"translatable",translate:"luigis_mansion:entity.e_gadd",color:"green"},{type:"translatable",translate:"3ds_remake:dialog.underground_lab.change_amiibo.2.mario.on"}]}
 execute if score #dialog Dialog matches 1 at @e[tag=e_gadd,tag=same_room,limit=1] run playsound luigis_mansion:entity.e_gadd.talk.ohyah_mee neutral @a[tag=same_room] ~ ~ ~ 1
 execute if score #dialog Dialog matches 21 as @e[tag=luigi,tag=same_room] run function luigis_mansion:entities/luigi/animation/set/idle_no_poltergust
 
@@ -24,7 +24,7 @@ execute if score #dialog Dialog matches 22 run scoreboard players set #mario_ami
 execute if score #dialog Dialog matches 22 run scoreboard players set #dialog Dialog -1
 
 execute if score #dialog Dialog matches 23 as @e[tag=luigi,tag=same_room] run function luigis_mansion:entities/luigi/animation/set/nod
-execute if score #dialog Dialog matches 23 run tellraw @a[tag=same_room] {"type":"translatable","translate":"chat.type.text","with":[{"type":"translatable","translate":"luigis_mansion:entity.e_gadd","color":"green"},{"type":"translatable","translate":"3ds_remake:dialog.underground_lab.change_amiibo.2.mario.off"}]}
+execute if score #dialog Dialog matches 23 run tellraw @a[tag=same_room] {type:"translatable",translate:"chat.type.text",with:[{type:"translatable",translate:"luigis_mansion:entity.e_gadd",color:"green"},{type:"translatable",translate:"3ds_remake:dialog.underground_lab.change_amiibo.2.mario.off"}]}
 execute if score #dialog Dialog matches 23 at @e[tag=e_gadd,tag=same_room,limit=1] run playsound luigis_mansion:entity.e_gadd.talk.seedapee_ohyah neutral @a[tag=same_room] ~ ~ ~ 1
 execute if score #dialog Dialog matches 43 as @e[tag=luigi,tag=same_room] run function luigis_mansion:entities/luigi/animation/set/idle_no_poltergust
 

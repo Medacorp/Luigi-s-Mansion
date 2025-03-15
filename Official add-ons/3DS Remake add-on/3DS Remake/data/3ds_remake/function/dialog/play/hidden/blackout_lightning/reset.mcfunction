@@ -60,8 +60,8 @@ execute unless data storage 3ds_remake:data current_state.current_data{used_keys
 execute unless data storage 3ds_remake:data current_state.current_data{used_keys:["breaker_room"]} run scoreboard players set @a[scores={Room=57},tag=looking_at_map] HomeX 71450
 execute unless data storage 3ds_remake:data current_state.current_data{used_keys:["breaker_room"]} run scoreboard players set @a[scores={Room=57},tag=looking_at_map] HomeY 200
 execute unless data storage 3ds_remake:data current_state.current_data{used_keys:["breaker_room"]} run scoreboard players set @a[scores={Room=57},tag=looking_at_map] HomeZ -4650
-execute unless data storage 3ds_remake:data current_state.current_data{used_keys:["breaker_room"]} run data modify entity @e[x=700.0,y=2,z=-46.5,distance=..0.7,tag=furniture,tag=door,limit=1] ArmorItems[3].components."minecraft:custom_data".key set value "breaker_room"
-execute unless data storage 3ds_remake:data current_state.current_data{used_keys:["breaker_room"]} run data modify entity @e[x=713.0,y=2,z=-46.5,distance=..0.7,tag=furniture,tag=door,limit=1] ArmorItems[3].components."minecraft:custom_data".key set value "breaker_room"
+execute unless data storage 3ds_remake:data current_state.current_data{used_keys:["breaker_room"]} run data modify entity @e[x=700.0,y=2,z=-46.5,distance=..0.7,tag=furniture,tag=door,limit=1] data.key set value "breaker_room"
+execute unless data storage 3ds_remake:data current_state.current_data{used_keys:["breaker_room"]} run data modify entity @e[x=713.0,y=2,z=-46.5,distance=..0.7,tag=furniture,tag=door,limit=1] data.key set value "breaker_room"
 execute unless data storage 3ds_remake:data current_state.current_data{used_keys:["breaker_room"]} run tag @a[tag=looking_at_map,nbt={Dimension:"3ds_remake:hidden"},limit=1] add regenerate_map
 execute if score #breaker_room Ticking matches 1 run function #3ds_remake:room/hidden/breaker_room/turn_lights/off
 execute if score #cellar Ticking matches 1 run function #3ds_remake:room/hidden/cellar/turn_lights/off

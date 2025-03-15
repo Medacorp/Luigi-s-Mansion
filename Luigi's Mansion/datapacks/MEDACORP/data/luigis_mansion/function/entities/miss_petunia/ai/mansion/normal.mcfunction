@@ -15,7 +15,7 @@ execute if entity @s[scores={Dialog=2..,VulnerableTime=0},tag=in_ice] run playso
 scoreboard players set @s[scores={Dialog=2..},tag=in_ice] VulnerableTime 60
 scoreboard players set @s[scores={Dialog=2..60},tag=in_ice] Dialog 61
 execute if entity @s[scores={Dialog=61,VulnerableTime=1..}] facing entity @e[tag=same_room,tag=luigi,sort=nearest,limit=1] feet run teleport @s ~ ~ ~ ~ ~
-execute if entity @s[scores={Dialog=61},tag=in_ice] unless data storage luigis_mansion:data current_state.current_data.technical_data{miss_petunia_spoke:1b} run tellraw @a[tag=same_room] {"type":"translatable","translate":"chat.type.text","with":[{"type":"translatable","translate":"luigis_mansion:entity.miss_petunia","color":"green"},{"type":"translatable","translate":"luigis_mansion:message.miss_petunia.freeze"}]}
+execute if entity @s[scores={Dialog=61},tag=in_ice] unless data storage luigis_mansion:data current_state.current_data.technical_data{miss_petunia_spoke:1b} run tellraw @a[tag=same_room] {type:"translatable",translate:"chat.type.text",with:[{type:"translatable",translate:"luigis_mansion:entity.miss_petunia",color:"green"},{type:"translatable",translate:"luigis_mansion:message.miss_petunia.freeze"}]}
 execute if entity @s[scores={Dialog=61},tag=in_ice] run data modify storage luigis_mansion:data current_state.current_data.technical_data merge value {miss_petunia_spoke:1b}
 
 data modify entity @s[scores={Dialog=20..49}] data.animation set value {namespace:"luigis_mansion",id:"panic"}

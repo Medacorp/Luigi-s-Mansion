@@ -1,10 +1,10 @@
 {
-	"values": [
-	    "3ds_remake:room/hidden/hallway_12/load/set_loaded",
+    "values": [
+        "3ds_remake:room/hidden/hallway_12/load/set_loaded",
         "3ds_remake:room/hidden/hallway_12/load/lights",
         "3ds_remake:room/hidden/hallway_12/load/parlor_blackout_fake_door",
         "3ds_remake:room/hidden/hallway_12/load/sealed_room_door",
         "3ds_remake:room/hidden/hallway_12/load/simple_wall_candelabra_1",
         "3ds_remake:room/hidden/hallway_12/load/simple_wall_candelabra_2"
-	]
+    ]
 }

@@ -12,7 +12,7 @@ tag @s[scores={ActionTime=1}] add stunable
 tag @s[scores={ActionTime=41}] add visible
 execute at @s[scores={ActionTime=1..40}] run particle minecraft:dust{color:11730943,scale:1f} ~-0.2 ~0.2 ~-0.2 0.4 0.4 0.4 0 50 force
 $execute if entity @s[scores={ActionTime=41}] run playsound $(namespace):entity.$(id).spawn hostile @a[tag=same_room] ~ ~ ~ 1
-execute if entity @s[scores={ActionTime=41}] run summon minecraft:armor_stand ~ ~0.5 ~ {CustomName:'{"type":"translatable","translate":"luigis_mansion:message.basher_scare","color":"yellow","bold":true}',Marker:1b,Invisible:1b,NoGravity:1b,CustomNameVisible:1b,HasVisualFire:1b,Tags:["basher_scare"],ArmorItems:[{},{},{},{id:"minecraft:diamond_pickaxe",count:1,components:{"minecraft:item_model":"luigis_mansion:empty","minecraft:custom_data":{entity:{namespace:"luigis_mansion",id:"basher_scare"}}}}]}
+execute if entity @s[scores={ActionTime=41}] run summon minecraft:armor_stand ~ ~0.5 ~ {CustomName:{type:"translatable",translate:"luigis_mansion:message.basher_scare",color:"yellow",bold:true},Marker:1b,Invisible:1b,NoGravity:1b,CustomNameVisible:1b,HasVisualFire:1b,Tags:["basher_scare"],data:{entity:{namespace:"luigis_mansion",id:"basher_scare"}}}
 execute if entity @s[scores={ActionTime=41}] if entity @e[tag=luigi,distance=..5] run tag @s add laugh
 execute if entity @s[scores={ActionTime=41}] as @e[tag=luigi,distance=..5,scores={Invulnerable=1..}] run function luigis_mansion:entities/luigi/animation/set/scare/normal
 execute if entity @s[scores={ActionTime=41}] run data modify storage luigis_mansion:data damage set value {method:{namespace:"luigis_mansion",id:"scare"},amount:0,limit_health:50,animation:{namespace:"luigis_mansion",id:"scare/bash"},no_delete:1b}

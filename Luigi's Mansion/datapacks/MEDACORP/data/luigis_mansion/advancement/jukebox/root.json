@@ -14,7 +14,7 @@
             "type": "translatable", "translate": "luigis_mansion:advancements.jukebox.root.description"
         },
         "announce_to_chat": false,
-		"background": "luigis_mansion:textures/gui/advancements/background/jukebox.png"
+		"background": "luigis_mansion:gui/advancements/background/jukebox"
     },
     "criteria": {
         "got_a_music_disc": {

@@ -1,1 +1,1 @@
-$tag @e[tag=plane,nbt={ArmorItems:[{components:{"minecraft:custom_data":{owner:$(UUID)}}}]}] add this_vehicle
+$tag @e[tag=plane,nbt={data:{owner:$(UUID)}}] add this_vehicle

@@ -1,5 +1,5 @@
 scoreboard players add @s AnimationProgress 1
-data modify entity @s[scores={AnimationProgress=1..},tag=held_item] ArmorItems[3] set value {id:"minecraft:diamond_pickaxe",count:1,components:{"minecraft:item_model":"luigis_mansion:empty"}}
+data modify entity @s[scores={AnimationProgress=1..},tag=held_item] equipment.head set value {id:"minecraft:diamond_pickaxe",count:1,components:{"minecraft:item_model":"luigis_mansion:empty"}}
 execute if score #mirrored Selected matches 1 run data merge entity @s[scores={AnimationProgress=1}] {Pose:{Head:[-80.0f,0.0f,-10.0f]}}
 execute if score #mirrored Selected matches 1 run data merge entity @s[scores={AnimationProgress=1},tag=flipped_gravity] {Pose:{Head:[-80.0f,0.0f,170.0f]}}
 execute unless score #mirrored Selected matches 1 run data merge entity @s[scores={AnimationProgress=1}] {Pose:{Head:[-110.0f,-30.0f,-10.0f]}}

@@ -1,6 +1,6 @@
 {
-	"values": [
-	    "luigis_mansion:room/hidden/sealed_room/load/set_loaded",
+    "values": [
+        "luigis_mansion:room/hidden/sealed_room/load/set_loaded",
         "luigis_mansion:room/hidden/sealed_room/load/lights",
         "luigis_mansion:room/hidden/sealed_room/load/blank_trophy_1",
         "luigis_mansion:room/hidden/sealed_room/load/blank_trophy_2",
@@ -28,5 +28,5 @@
         "luigis_mansion:room/hidden/sealed_room/load/treasure_chest_7",
         "luigis_mansion:room/hidden/sealed_room/load/treasure_chest_8",
         "luigis_mansion:room/hidden/sealed_room/load/treasure_chest_9"
-	]
+    ]
 }

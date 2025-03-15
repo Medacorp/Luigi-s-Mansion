@@ -1,21 +1,21 @@
 {
-	"values": [
-		"3ds_remake:room/hidden/wardrobe_room/interactions/poltergust/closet_1",
-		"3ds_remake:room/hidden/wardrobe_room/interactions/poltergust/closet_2",
-		"3ds_remake:room/hidden/wardrobe_room/interactions/poltergust/closet_3",
-		"3ds_remake:room/hidden/wardrobe_room/interactions/poltergust/clothes_1",
-		"3ds_remake:room/hidden/wardrobe_room/interactions/poltergust/clothes_2",
-		"3ds_remake:room/hidden/wardrobe_room/interactions/poltergust/clothes_3",
-		"3ds_remake:room/hidden/wardrobe_room/interactions/poltergust/clothes_4",
-		"3ds_remake:room/hidden/wardrobe_room/interactions/poltergust/clothes_5",
-		"3ds_remake:room/hidden/wardrobe_room/interactions/poltergust/clothes_6",
-		"3ds_remake:room/hidden/wardrobe_room/interactions/poltergust/clothes_7",
-		"3ds_remake:room/hidden/wardrobe_room/interactions/poltergust/clothes_8",
-		"3ds_remake:room/hidden/wardrobe_room/interactions/poltergust/hat_rack",
-		"3ds_remake:room/hidden/wardrobe_room/interactions/poltergust/lamp",
-		"3ds_remake:room/hidden/wardrobe_room/interactions/poltergust/mirror",
-		"3ds_remake:room/hidden/wardrobe_room/interactions/poltergust/painting_1",
-		"3ds_remake:room/hidden/wardrobe_room/interactions/poltergust/painting_2",
-		"3ds_remake:room/hidden/wardrobe_room/interactions/poltergust/shoe_stand"
-	]
+    "values": [
+        "3ds_remake:room/hidden/wardrobe_room/interactions/poltergust/closet_1",
+        "3ds_remake:room/hidden/wardrobe_room/interactions/poltergust/closet_2",
+        "3ds_remake:room/hidden/wardrobe_room/interactions/poltergust/closet_3",
+        "3ds_remake:room/hidden/wardrobe_room/interactions/poltergust/clothes_1",
+        "3ds_remake:room/hidden/wardrobe_room/interactions/poltergust/clothes_2",
+        "3ds_remake:room/hidden/wardrobe_room/interactions/poltergust/clothes_3",
+        "3ds_remake:room/hidden/wardrobe_room/interactions/poltergust/clothes_4",
+        "3ds_remake:room/hidden/wardrobe_room/interactions/poltergust/clothes_5",
+        "3ds_remake:room/hidden/wardrobe_room/interactions/poltergust/clothes_6",
+        "3ds_remake:room/hidden/wardrobe_room/interactions/poltergust/clothes_7",
+        "3ds_remake:room/hidden/wardrobe_room/interactions/poltergust/clothes_8",
+        "3ds_remake:room/hidden/wardrobe_room/interactions/poltergust/hat_rack",
+        "3ds_remake:room/hidden/wardrobe_room/interactions/poltergust/lamp",
+        "3ds_remake:room/hidden/wardrobe_room/interactions/poltergust/mirror",
+        "3ds_remake:room/hidden/wardrobe_room/interactions/poltergust/painting_1",
+        "3ds_remake:room/hidden/wardrobe_room/interactions/poltergust/painting_2",
+        "3ds_remake:room/hidden/wardrobe_room/interactions/poltergust/shoe_stand"
+    ]
 }

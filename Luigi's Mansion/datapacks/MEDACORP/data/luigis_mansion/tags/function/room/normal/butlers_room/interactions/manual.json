@@ -1,10 +1,10 @@
 {
-	"values": [
-		"luigis_mansion:room/normal/butlers_room/interactions/manual/closet",
-		"luigis_mansion:room/normal/butlers_room/interactions/manual/ironing_table",
-		"luigis_mansion:room/normal/butlers_room/interactions/manual/lamp",
-		"luigis_mansion:room/normal/butlers_room/interactions/manual/sewing_machine",
-		"luigis_mansion:room/normal/butlers_room/interactions/manual/table",
-		"luigis_mansion:room/normal/butlers_room/interactions/manual/toilet_paper"
-	]
+    "values": [
+        "luigis_mansion:room/normal/butlers_room/interactions/manual/closet",
+        "luigis_mansion:room/normal/butlers_room/interactions/manual/ironing_table",
+        "luigis_mansion:room/normal/butlers_room/interactions/manual/lamp",
+        "luigis_mansion:room/normal/butlers_room/interactions/manual/sewing_machine",
+        "luigis_mansion:room/normal/butlers_room/interactions/manual/table",
+        "luigis_mansion:room/normal/butlers_room/interactions/manual/toilet_paper"
+    ]
 }

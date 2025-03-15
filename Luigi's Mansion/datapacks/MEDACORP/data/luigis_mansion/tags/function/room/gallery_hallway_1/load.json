@@ -1,16 +1,16 @@
 {
-	"values": [
-	    "luigis_mansion:room/gallery_hallway_1/load/set_loaded",
-	    "luigis_mansion:room/gallery_hallway_1/load/biff_atlas_portrait",
-	    "luigis_mansion:room/gallery_hallway_1/load/bogmire_portrait",
-	    "luigis_mansion:room/gallery_hallway_1/load/chauncey_portrait",
-	    "luigis_mansion:room/gallery_hallway_1/load/clockwork_soldiers_portrait",
-	    "luigis_mansion:room/gallery_hallway_1/load/gallery_back_room_door",
-	    "luigis_mansion:room/gallery_hallway_1/load/jarvis_portrait",
-	    "luigis_mansion:room/gallery_hallway_1/load/madame_clairvoya_portrait",
-	    "luigis_mansion:room/gallery_hallway_1/load/mr_luggs_portrait",
-	    "luigis_mansion:room/gallery_hallway_1/load/nana_portrait",
-	    "luigis_mansion:room/gallery_hallway_1/load/shivers_portrait",
-	    "luigis_mansion:room/gallery_hallway_1/load/uncle_grimmly_portrait"
-	]
+    "values": [
+        "luigis_mansion:room/gallery_hallway_1/load/set_loaded",
+        "luigis_mansion:room/gallery_hallway_1/load/biff_atlas_portrait",
+        "luigis_mansion:room/gallery_hallway_1/load/bogmire_portrait",
+        "luigis_mansion:room/gallery_hallway_1/load/chauncey_portrait",
+        "luigis_mansion:room/gallery_hallway_1/load/clockwork_soldiers_portrait",
+        "luigis_mansion:room/gallery_hallway_1/load/gallery_back_room_door",
+        "luigis_mansion:room/gallery_hallway_1/load/jarvis_portrait",
+        "luigis_mansion:room/gallery_hallway_1/load/madame_clairvoya_portrait",
+        "luigis_mansion:room/gallery_hallway_1/load/mr_luggs_portrait",
+        "luigis_mansion:room/gallery_hallway_1/load/nana_portrait",
+        "luigis_mansion:room/gallery_hallway_1/load/shivers_portrait",
+        "luigis_mansion:room/gallery_hallway_1/load/uncle_grimmly_portrait"
+    ]
 }

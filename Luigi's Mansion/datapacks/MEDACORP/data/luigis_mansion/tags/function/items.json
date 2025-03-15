@@ -1,9 +1,9 @@
 {
-	"values": [
-		"luigis_mansion:items/interact",
-		"luigis_mansion:items/flashlight",
-		"luigis_mansion:items/contest_reward_map",
-		"luigis_mansion:items/poltergust_3000",
-		"luigis_mansion:items/game_boy_horror"
-	]
+    "values": [
+        "luigis_mansion:items/interact",
+        "luigis_mansion:items/flashlight",
+        "luigis_mansion:items/contest_reward_map",
+        "luigis_mansion:items/poltergust_3000",
+        "luigis_mansion:items/game_boy_horror"
+    ]
 }

@@ -1,8 +1,8 @@
 {
-	"values": [
-	    "luigis_mansion:room/hidden/hallway_15/load/set_loaded",
+    "values": [
+        "luigis_mansion:room/hidden/hallway_15/load/set_loaded",
         "luigis_mansion:room/hidden/hallway_15/load/lights",
         "luigis_mansion:room/hidden/hallway_15/load/safari_room_door",
         "luigis_mansion:room/hidden/hallway_15/load/the_artists_studio_fake_door"
-	]
+    ]
 }

@@ -1,10 +1,10 @@
 {
-	"values": [
-	    "luigis_mansion:room/normal/breaker_room/load/set_loaded",
+    "values": [
+        "luigis_mansion:room/normal/breaker_room/load/set_loaded",
         "luigis_mansion:room/normal/breaker_room/load/lights",
         "luigis_mansion:room/normal/breaker_room/load/cobweb_1",
         "luigis_mansion:room/normal/breaker_room/load/cobweb_2",
         "luigis_mansion:room/normal/breaker_room/load/hallway_7_door",
         "luigis_mansion:room/normal/breaker_room/load/room_clear_chest"
-	]
+    ]
 }

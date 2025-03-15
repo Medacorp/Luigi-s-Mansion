@@ -1,6 +1,6 @@
 {
-	"values": [
-	    "3ds_remake:room/hidden/parlor/load/set_loaded",
+    "values": [
+        "3ds_remake:room/hidden/parlor/load/set_loaded",
         "3ds_remake:room/hidden/parlor/load/lights",
         "3ds_remake:room/hidden/parlor/load/anteroom_door",
         "3ds_remake:room/hidden/parlor/load/cobweb_1",
@@ -20,5 +20,5 @@
         "3ds_remake:room/hidden/parlor/load/wooden_candelabra",
         "3ds_remake:room/hidden/parlor/load/wooden_triple_huge_candelabra_1",
         "3ds_remake:room/hidden/parlor/load/wooden_triple_huge_candelabra_2"
-	]
+    ]
 }

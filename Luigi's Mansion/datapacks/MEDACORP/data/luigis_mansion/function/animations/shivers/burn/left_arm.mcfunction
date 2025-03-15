@@ -7,6 +7,6 @@ execute if entity @s[scores={AnimationProgress=6..10}] store result entity @s Po
 execute if entity @s[scores={AnimationProgress=11..15}] store result entity @s Pose.Head[2] float 1 run scoreboard players remove #temp Time 1
 execute if entity @s[scores={AnimationProgress=16..20}] store result entity @s Pose.Head[2] float 1 run scoreboard players add #temp Time 1
 scoreboard players reset #temp Time
-execute if score #mirrored Selected matches 1 run data modify entity @s[tag=!visible] ArmorItems[3] merge from entity @s ArmorItems[3].components."minecraft:custom_data".model_data.invisible
-execute if score #mirrored Selected matches 1 run data modify entity @s[tag=visible] ArmorItems[3] merge from entity @s ArmorItems[3].components."minecraft:custom_data".model_data.equipment
+execute if score #mirrored Selected matches 1 run data modify entity @s[tag=!visible] equipment.head merge from entity @s equipment.head.components."minecraft:custom_data".model_data.invisible
+execute if score #mirrored Selected matches 1 run data modify entity @s[tag=visible] equipment.head merge from entity @s equipment.head.components."minecraft:custom_data".model_data.equipment
 scoreboard players set @s[scores={AnimationProgress=20..}] AnimationProgress 0

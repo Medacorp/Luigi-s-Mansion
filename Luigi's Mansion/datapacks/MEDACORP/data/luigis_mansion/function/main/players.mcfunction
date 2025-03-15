@@ -25,7 +25,7 @@ scoreboard players reset #temp Room
 execute if entity @s[tag=!joined] run function luigis_mansion:other/join_world
 
 execute unless score @s PreviousRoom = @s Room run tag @s remove seen_room_name
-execute unless score @s PreviousRoom = @s Room if score #debug_messages Selected matches 2.. run tellraw @a {"type":"translatable","translate":"luigis_mansion:message.debug.format","with":[{"type":"translatable","translate":"luigis_mansion:message.debug","color":"gold"},{"type":"translatable","translate":"luigis_mansion:message.debug.room_number","with":[{"type":"selector","selector":"@s"},{"type":"score","score":{"name":"@s","objective":"PreviousRoom"}},{"type":"score","score":{"name":"@s","objective":"Room"}}]}]}
+execute unless score @s PreviousRoom = @s Room if score #debug_messages Selected matches 2.. run tellraw @a {type:"translatable",translate:"luigis_mansion:message.debug.format",with:[{type:"translatable",translate:"luigis_mansion:message.debug",color:"gold"},{type:"translatable",translate:"luigis_mansion:message.debug.room_number",with:[{type:"selector",selector:"@s"},{type:"score",score:{name:"@s",objective:"PreviousRoom"}},{type:"score",score:{name:"@s",objective:"Room"}}]}]}
 scoreboard players operation @s PreviousRoom = @s Room
 execute unless entity @s[scores={Room=1..}] run scoreboard players set @s LastFloor -2
 

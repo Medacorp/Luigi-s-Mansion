@@ -1,8 +1,8 @@
 {
-	"values": [
-	    "luigis_mansion:room/normal/balcony_1/load/set_loaded",
+    "values": [
+        "luigis_mansion:room/normal/balcony_1/load/set_loaded",
         "luigis_mansion:room/normal/balcony_1/load/lights",
         "luigis_mansion:room/normal/balcony_1/load/toad",
         "luigis_mansion:room/normal/balcony_1/load/wardrobe_room_door"
-	]
+    ]
 }

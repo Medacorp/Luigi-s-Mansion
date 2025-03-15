@@ -45,8 +45,8 @@ tag @e[tag=e_gadd,tag=same_room,limit=1] remove freeze_animation
 execute if score #dialog Dialog matches 1 as @e[tag=e_gadd,tag=same_room,limit=1] at @s facing entity @e[tag=luigi,tag=same_room,sort=nearest,limit=1] feet rotated ~ 0 run teleport @s ~ ~ ~ ~ ~
 execute if score #dialog Dialog matches 1 run data modify entity @e[tag=e_gadd,tag=same_room,limit=1] data.animation set value {namespace:"luigis_mansion",id:"nod"}
 execute if score #dialog Dialog matches 1.. as @e[tag=luigi,tag=same_room] run function luigis_mansion:entities/luigi/animation/set/idle_no_poltergust
-execute if score #dialog Dialog matches 1 if score #players Totals matches 1 run tellraw @a[tag=same_room] {"type":"translatable","translate":"chat.type.text","with":[{"type":"translatable","translate":"luigis_mansion:entity.e_gadd","color":"green"},{"type":"translatable","translate":"luigis_mansion:dialog.underground_lab.1","with":[{"type":"selector","selector":"@a[tag=!spectator]"}]}]}
-execute if score #dialog Dialog matches 1 if score #players Totals matches 2.. run tellraw @a[tag=same_room] {"type":"translatable","translate":"chat.type.text","with":[{"type":"translatable","translate":"luigis_mansion:entity.e_gadd","color":"green"},{"type":"translatable","translate":"luigis_mansion:dialog.underground_lab.1.more"}]}
+execute if score #dialog Dialog matches 1 if score #players Totals matches 1 run tellraw @a[tag=same_room] {type:"translatable",translate:"chat.type.text",with:[{type:"translatable",translate:"luigis_mansion:entity.e_gadd",color:"green"},{type:"translatable",translate:"luigis_mansion:dialog.underground_lab.1",with:[{type:"selector",selector:"@a[tag=!spectator]"}]}]}
+execute if score #dialog Dialog matches 1 if score #players Totals matches 2.. run tellraw @a[tag=same_room] {type:"translatable",translate:"chat.type.text",with:[{type:"translatable",translate:"luigis_mansion:entity.e_gadd",color:"green"},{type:"translatable",translate:"luigis_mansion:dialog.underground_lab.1.more"}]}
 execute if score #dialog Dialog matches 1 at @e[tag=e_gadd,tag=same_room,limit=1] run playsound luigis_mansion:entity.e_gadd.talk.luigi neutral @a[tag=same_room] ~ ~ ~ 1
 
 execute if score #dialog Dialog matches 3 as @e[tag=luigi,tag=same_room] run function luigis_mansion:entities/luigi/animation/set/think
@@ -59,7 +59,7 @@ execute if score #dialog Dialog matches 4 run scoreboard players set #dialog Dia
 execute if score #dialog Dialog matches 5 run data modify entity @e[tag=e_gadd,tag=same_room,limit=1] data.animation set value {namespace:"luigis_mansion",id:"nod"}
 execute if score #dialog Dialog matches 5 as @e[tag=luigi,tag=same_room] run function luigis_mansion:entities/luigi/animation/set/nod
 execute if score #dialog Dialog matches 5 run stopsound @a[tag=same_room] neutral luigis_mansion:entity.e_gadd.talk.luigi
-execute if score #dialog Dialog matches 5 run tellraw @a[tag=same_room] {"type":"translatable","translate":"chat.type.text","with":[{"type":"translatable","translate":"luigis_mansion:entity.e_gadd","color":"green"},{"type":"translatable","translate":"luigis_mansion:dialog.underground_lab.training.1"}]}
+execute if score #dialog Dialog matches 5 run tellraw @a[tag=same_room] {type:"translatable",translate:"chat.type.text",with:[{type:"translatable",translate:"luigis_mansion:entity.e_gadd",color:"green"},{type:"translatable",translate:"luigis_mansion:dialog.underground_lab.training.1"}]}
 execute if score #dialog Dialog matches 5 at @e[tag=e_gadd,tag=same_room,limit=1] run playsound luigis_mansion:entity.e_gadd.talk.yaahboh_yaahboh neutral @a[tag=same_room] ~ ~ ~ 1
 execute if score #dialog Dialog matches 25 as @e[tag=luigi,tag=same_room] run function luigis_mansion:entities/luigi/animation/set/idle_no_poltergust
 
@@ -70,7 +70,7 @@ execute if score #dialog Dialog matches 26 run scoreboard players set #dialog Di
 execute if score #dialog Dialog matches 27 run data modify entity @e[tag=e_gadd,tag=same_room,limit=1] data.animation set value {namespace:"luigis_mansion",id:"nod"}
 execute if score #dialog Dialog matches 27 as @e[tag=luigi,tag=same_room] run function luigis_mansion:entities/luigi/animation/set/nod
 execute if score #dialog Dialog matches 27 run stopsound @a[tag=same_room] neutral luigis_mansion:entity.e_gadd.talk.luigi
-execute if score #dialog Dialog matches 27 run tellraw @a[tag=same_room] {"type":"translatable","translate":"chat.type.text","with":[{"type":"translatable","translate":"luigis_mansion:entity.e_gadd","color":"green"},{"type":"translatable","translate":"luigis_mansion:dialog.underground_lab.gallery.1"}]}
+execute if score #dialog Dialog matches 27 run tellraw @a[tag=same_room] {type:"translatable",translate:"chat.type.text",with:[{type:"translatable",translate:"luigis_mansion:entity.e_gadd",color:"green"},{type:"translatable",translate:"luigis_mansion:dialog.underground_lab.gallery.1"}]}
 execute if score #dialog Dialog matches 27 at @e[tag=e_gadd,tag=same_room,limit=1] run playsound luigis_mansion:entity.e_gadd.talk.odoh_mah_mah neutral @a[tag=same_room] ~ ~ ~ 1
 execute if score #dialog Dialog matches 47 as @e[tag=luigi,tag=same_room] run function luigis_mansion:entities/luigi/animation/set/idle_no_poltergust
 
@@ -81,7 +81,7 @@ execute if score #dialog Dialog matches 48 run scoreboard players set #dialog Di
 execute if score #dialog Dialog matches 49 run data modify entity @e[tag=e_gadd,tag=same_room,limit=1] data.animation set value {namespace:"luigis_mansion",id:"nod"}
 execute if score #dialog Dialog matches 49 as @e[tag=luigi,tag=same_room] run function luigis_mansion:entities/luigi/animation/set/nod
 execute if score #dialog Dialog matches 49 run stopsound @a[tag=same_room] neutral luigis_mansion:entity.e_gadd.talk.luigi
-execute if score #dialog Dialog matches 49 run tellraw @a[tag=same_room] {"type":"translatable","translate":"chat.type.text","with":[{"type":"translatable","translate":"luigis_mansion:entity.e_gadd","color":"green"},{"type":"translatable","translate":"luigis_mansion:dialog.underground_lab.portrificationizer.1"}]}
+execute if score #dialog Dialog matches 49 run tellraw @a[tag=same_room] {type:"translatable",translate:"chat.type.text",with:[{type:"translatable",translate:"luigis_mansion:entity.e_gadd",color:"green"},{type:"translatable",translate:"luigis_mansion:dialog.underground_lab.portrificationizer.1"}]}
 execute if score #dialog Dialog matches 49 at @e[tag=e_gadd,tag=same_room,limit=1] run playsound luigis_mansion:entity.e_gadd.talk.odoh_mah_mah neutral @a[tag=same_room] ~ ~ ~ 1
 execute if score #dialog Dialog matches 69 as @e[tag=luigi,tag=same_room] run function luigis_mansion:entities/luigi/animation/set/idle_no_poltergust
 
@@ -92,8 +92,8 @@ execute if score #dialog Dialog matches 70 run scoreboard players set #dialog Di
 execute if score #dialog Dialog matches 71 run data modify entity @e[tag=e_gadd,tag=same_room,limit=1] data.animation set value {namespace:"luigis_mansion",id:"nod"}
 execute if score #dialog Dialog matches 71 as @e[tag=luigi,tag=same_room] run function luigis_mansion:entities/luigi/animation/set/nod
 execute if score #dialog Dialog matches 71 run stopsound @a[tag=same_room] neutral luigis_mansion:entity.e_gadd.talk.luigi
-execute if score #dialog Dialog matches 71 if score #players Totals matches 1 run tellraw @a[tag=same_room] {"type":"translatable","translate":"chat.type.text","with":[{"type":"translatable","translate":"luigis_mansion:entity.e_gadd","color":"green"},{"type":"translatable","translate":"luigis_mansion:dialog.underground_lab.old_data.1"}]}
-execute if score #dialog Dialog matches 71 if score #players Totals matches 2.. run tellraw @a[tag=same_room] {"type":"translatable","translate":"chat.type.text","with":[{"type":"translatable","translate":"luigis_mansion:entity.e_gadd","color":"green"},{"type":"translatable","translate":"luigis_mansion:dialog.underground_lab.old_data.1.more"}]}
+execute if score #dialog Dialog matches 71 if score #players Totals matches 1 run tellraw @a[tag=same_room] {type:"translatable",translate:"chat.type.text",with:[{type:"translatable",translate:"luigis_mansion:entity.e_gadd",color:"green"},{type:"translatable",translate:"luigis_mansion:dialog.underground_lab.old_data.1"}]}
+execute if score #dialog Dialog matches 71 if score #players Totals matches 2.. run tellraw @a[tag=same_room] {type:"translatable",translate:"chat.type.text",with:[{type:"translatable",translate:"luigis_mansion:entity.e_gadd",color:"green"},{type:"translatable",translate:"luigis_mansion:dialog.underground_lab.old_data.1.more"}]}
 execute if score #dialog Dialog matches 71 at @e[tag=e_gadd,tag=same_room,limit=1] run playsound luigis_mansion:entity.e_gadd.talk.ohyah_ohyahmah_hey_hey_oui neutral @a[tag=same_room] ~ ~ ~ 1
 execute if score #dialog Dialog matches 91 as @e[tag=luigi,tag=same_room] run function luigis_mansion:entities/luigi/animation/set/idle_no_poltergust
 
@@ -108,7 +108,7 @@ execute if score #dialog Dialog matches 113 run scoreboard players set #dialog D
 #Branch: Load Data; Branch: No
 execute if score #dialog Dialog matches 114 run data modify entity @e[tag=e_gadd,tag=same_room,limit=1] data.animation set value {namespace:"luigis_mansion",id:"nod"}
 execute if score #dialog Dialog matches 114 if entity @a[tag=select_dialog_branch_no,limit=1] run stopsound @a[tag=same_room] neutral luigis_mansion:entity.e_gadd.talk.ohyah_ohyahmah_hey_hey_oui
-execute if score #dialog Dialog matches 114 if entity @a[tag=select_dialog_branch_no,limit=1] run tellraw @a[tag=same_room] {"type":"translatable","translate":"chat.type.text","with":[{"type":"translatable","translate":"luigis_mansion:entity.e_gadd","color":"green"},{"type":"translatable","translate":"luigis_mansion:dialog.underground_lab.old_data.no.1"}]}
+execute if score #dialog Dialog matches 114 if entity @a[tag=select_dialog_branch_no,limit=1] run tellraw @a[tag=same_room] {type:"translatable",translate:"chat.type.text",with:[{type:"translatable",translate:"luigis_mansion:entity.e_gadd",color:"green"},{type:"translatable",translate:"luigis_mansion:dialog.underground_lab.old_data.no.1"}]}
 execute if score #dialog Dialog matches 114 if entity @a[tag=select_dialog_branch_no,limit=1] at @e[tag=e_gadd,tag=same_room,limit=1] run playsound luigis_mansion:entity.e_gadd.talk.nohjeebeedoggy_oui_oohmakah_tahmentahkeh neutral @a[tag=same_room] ~ ~ ~ 1
 
 execute if score #dialog Dialog matches 115 run scoreboard players set #dialog Dialog -1
@@ -117,7 +117,7 @@ execute if score #dialog Dialog matches 115 run scoreboard players set #dialog D
 execute if score #dialog Dialog matches 116 run data modify entity @e[tag=e_gadd,tag=same_room,limit=1] data.animation set value {namespace:"luigis_mansion",id:"nod"}
 execute if score #dialog Dialog matches 116 as @e[tag=luigi,tag=same_room] run function luigis_mansion:entities/luigi/animation/set/nod
 execute if score #dialog Dialog matches 116 run stopsound @a[tag=same_room] neutral luigis_mansion:entity.e_gadd.talk.luigi
-execute if score #dialog Dialog matches 116 run tellraw @a[tag=same_room] {"type":"translatable","translate":"chat.type.text","with":[{"type":"translatable","translate":"luigis_mansion:entity.e_gadd","color":"green"},{"type":"translatable","translate":"luigis_mansion:dialog.underground_lab.nowhere.1"}]}
+execute if score #dialog Dialog matches 116 run tellraw @a[tag=same_room] {type:"translatable",translate:"chat.type.text",with:[{type:"translatable",translate:"luigis_mansion:entity.e_gadd",color:"green"},{type:"translatable",translate:"luigis_mansion:dialog.underground_lab.nowhere.1"}]}
 execute if score #dialog Dialog matches 116 at @e[tag=e_gadd,tag=same_room,limit=1] run playsound luigis_mansion:entity.e_gadd.talk.yahmum_bah neutral @a[tag=same_room] ~ ~ ~ 1
 execute if score #dialog Dialog matches 136 as @e[tag=luigi,tag=same_room] run function luigis_mansion:entities/luigi/animation/set/idle_no_poltergust
 

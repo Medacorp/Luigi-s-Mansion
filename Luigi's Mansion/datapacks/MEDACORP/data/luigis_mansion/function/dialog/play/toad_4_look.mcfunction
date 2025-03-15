@@ -11,7 +11,7 @@ tag @e[tag=toad,tag=same_room,limit=1] remove no_ai
 execute if score #dialog Dialog matches 1..2 as @e[tag=luigi,tag=same_room] run function luigis_mansion:entities/luigi/animation/set/idle_no_poltergust
 execute if score #dialog Dialog matches 1..2 as @a[tag=same_room] run function luigis_mansion:other/music/set/toad
 execute if score #dialog Dialog matches 1 at @e[tag=toad,tag=same_room,limit=1] run playsound luigis_mansion:entity.toad.cry_0 neutral @a[tag=same_room] ~ ~ ~ 1
-execute if score #dialog Dialog matches 1 run tellraw @a[tag=same_room] {"type":"translatable","translate":"chat.type.text","with":[{"type":"translatable","translate":"luigis_mansion:entity.toad","color":"green"},{"type":"translatable","translate":"luigis_mansion:dialog.toad_4.look.1"}]}
+execute if score #dialog Dialog matches 1 run tellraw @a[tag=same_room] {type:"translatable",translate:"chat.type.text",with:[{type:"translatable",translate:"luigis_mansion:entity.toad",color:"green"},{type:"translatable",translate:"luigis_mansion:dialog.toad_4.look.1"}]}
 
 execute if score #dialog Dialog matches 3 as @e[tag=luigi,tag=same_room] run function luigis_mansion:entities/luigi/animation/set/none
 execute if score #dialog Dialog matches 3 as @a[tag=same_room] run function luigis_mansion:other/music/set/silence

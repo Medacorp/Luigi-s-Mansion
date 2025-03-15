@@ -1,15 +1,15 @@
 {
-	"values": [
-		"3ds_remake:room/hidden/nursery/interactions/poltergust/chair_1",
-		"3ds_remake:room/hidden/nursery/interactions/poltergust/chair_2",
-		"3ds_remake:room/hidden/nursery/interactions/poltergust/crib",
-		"3ds_remake:room/hidden/nursery/interactions/poltergust/lamp",
-		"3ds_remake:room/hidden/nursery/interactions/poltergust/painting_1",
-		"3ds_remake:room/hidden/nursery/interactions/poltergust/painting_2",
-		"3ds_remake:room/hidden/nursery/interactions/poltergust/painting_3",
-		"3ds_remake:room/hidden/nursery/interactions/poltergust/table_1",
-		"3ds_remake:room/hidden/nursery/interactions/poltergust/table_2",
-		"3ds_remake:room/hidden/nursery/interactions/poltergust/toy_1",
-		"3ds_remake:room/hidden/nursery/interactions/poltergust/toy_2"
-	]
+    "values": [
+        "3ds_remake:room/hidden/nursery/interactions/poltergust/chair_1",
+        "3ds_remake:room/hidden/nursery/interactions/poltergust/chair_2",
+        "3ds_remake:room/hidden/nursery/interactions/poltergust/crib",
+        "3ds_remake:room/hidden/nursery/interactions/poltergust/lamp",
+        "3ds_remake:room/hidden/nursery/interactions/poltergust/painting_1",
+        "3ds_remake:room/hidden/nursery/interactions/poltergust/painting_2",
+        "3ds_remake:room/hidden/nursery/interactions/poltergust/painting_3",
+        "3ds_remake:room/hidden/nursery/interactions/poltergust/table_1",
+        "3ds_remake:room/hidden/nursery/interactions/poltergust/table_2",
+        "3ds_remake:room/hidden/nursery/interactions/poltergust/toy_1",
+        "3ds_remake:room/hidden/nursery/interactions/poltergust/toy_2"
+    ]
 }

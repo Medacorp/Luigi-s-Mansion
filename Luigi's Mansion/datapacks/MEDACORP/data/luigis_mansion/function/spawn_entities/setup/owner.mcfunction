@@ -1,3 +1,2 @@
-execute if data storage luigis_mansion:data entity.owner run data modify entity @e[tag=this_entity,type=minecraft:armor_stand,limit=1] ArmorItems[3].components."minecraft:custom_data".owner set from storage luigis_mansion:data entity.owner
-execute if data storage luigis_mansion:data entity.owner run data modify entity @e[tag=this_entity,type=minecraft:marker,limit=1] data.owner set from storage luigis_mansion:data entity.owner
+execute if data storage luigis_mansion:data entity.owner run data modify entity @e[tag=this_entity,limit=1] data.owner set from storage luigis_mansion:data entity.owner
 execute if data storage luigis_mansion:data entity.owner_player store result score @e[tag=this_entity,limit=1] ID run data get storage luigis_mansion:data entity.owner_player

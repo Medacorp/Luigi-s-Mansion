@@ -1,9 +1,9 @@
 {
-	"values": [
-		"luigis_mansion:items/poltergust_3000/effect_on_block/vacuum/air",
-		"luigis_mansion:items/poltergust_3000/effect_on_block/vacuum/light",
+    "values": [
+        "luigis_mansion:items/poltergust_3000/effect_on_block/vacuum/air",
+        "luigis_mansion:items/poltergust_3000/effect_on_block/vacuum/light",
         "luigis_mansion:items/poltergust_3000/effect_on_block/vacuum/water",
         "luigis_mansion:items/poltergust_3000/effect_on_block/vacuum/campfires",
         "luigis_mansion:items/poltergust_3000/effect_on_block/vacuum/interact"
-	]
+    ]
 }

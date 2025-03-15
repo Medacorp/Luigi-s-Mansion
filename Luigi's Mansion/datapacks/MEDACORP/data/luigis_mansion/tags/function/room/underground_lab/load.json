@@ -1,9 +1,9 @@
 {
-	"values": [
-	    "luigis_mansion:room/underground_lab/load/set_loaded",
-	    "luigis_mansion:room/underground_lab/load/e_gadd",
-	    "luigis_mansion:room/underground_lab/load/ghost_portrificationizer_room_door",
-	    "luigis_mansion:room/underground_lab/load/screen",
-	    "luigis_mansion:room/underground_lab/load/training_room_door"
-	]
+    "values": [
+        "luigis_mansion:room/underground_lab/load/set_loaded",
+        "luigis_mansion:room/underground_lab/load/e_gadd",
+        "luigis_mansion:room/underground_lab/load/ghost_portrificationizer_room_door",
+        "luigis_mansion:room/underground_lab/load/screen",
+        "luigis_mansion:room/underground_lab/load/training_room_door"
+    ]
 }

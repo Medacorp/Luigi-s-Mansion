@@ -12,7 +12,7 @@ tag @s[tag=in_fire] add visible
 tag @s[tag=visible] add burning
 scoreboard players set @s[scores={ActionTime=1}] TargetTask 0
 execute if entity @s[scores={ActionTime=1}] as @a[tag=same_room] run function luigis_mansion:other/music/set/secret_revealed
-execute if entity @s[scores={ActionTime=1}] unless data storage luigis_mansion:data current_state.current_data.technical_data{shivers_spoke:1b} run tellraw @a[tag=same_room] {"type":"translatable","translate":"chat.type.text","with":[{"type":"translatable","translate":"luigis_mansion:entity.shivers","color":"green"},{"type":"translatable","translate":"luigis_mansion:message.shivers.fire"}]}
+execute if entity @s[scores={ActionTime=1}] unless data storage luigis_mansion:data current_state.current_data.technical_data{shivers_spoke:1b} run tellraw @a[tag=same_room] {type:"translatable",translate:"chat.type.text",with:[{type:"translatable",translate:"luigis_mansion:entity.shivers",color:"green"},{type:"translatable",translate:"luigis_mansion:message.shivers.fire"}]}
 execute if entity @s[scores={ActionTime=1}] run data modify storage luigis_mansion:data current_state.current_data.technical_data merge value {shivers_spoke:1b}
 execute if entity @s[scores={ActionTime=21}] run playsound luigis_mansion:entity.shivers.realize hostile @a[tag=same_room] ~ ~ ~ 1
 scoreboard players set @s[scores={ActionTime=21}] Sound 50

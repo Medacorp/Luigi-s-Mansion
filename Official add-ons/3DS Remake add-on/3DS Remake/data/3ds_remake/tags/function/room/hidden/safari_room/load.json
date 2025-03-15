@@ -1,6 +1,6 @@
 {
-	"values": [
-	    "3ds_remake:room/hidden/safari_room/load/set_loaded",
+    "values": [
+        "3ds_remake:room/hidden/safari_room/load/set_loaded",
         "3ds_remake:room/hidden/safari_room/load/lights",
         "3ds_remake:room/hidden/safari_room/load/cheese",
         "3ds_remake:room/hidden/safari_room/load/cobweb",
@@ -11,5 +11,5 @@
         "3ds_remake:room/hidden/safari_room/load/hallway_16_door",
         "3ds_remake:room/hidden/safari_room/load/room_clear_chest",
         "3ds_remake:room/hidden/safari_room/load/tiger_rug_2"
-	]
+    ]
 }

@@ -1,2 +1,2 @@
-data modify entity @s[tag=!left_hinge] ArmorItems[3] merge value {components:{"minecraft:item_model":"luigis_mansion:furniture/door_frame/double/arched","minecraft:custom_model_data":{flags:[B;0b]}}}
-data modify entity @s[tag=left_hinge] ArmorItems[3] merge value {components:{"minecraft:item_model":"luigis_mansion:furniture/door_frame/double/arched","minecraft:custom_model_data":{flags:[B;1b]}}}
+data modify entity @s[tag=!left_hinge] equipment.head merge value {components:{"minecraft:item_model":"luigis_mansion:furniture/door_frame/double/arched","minecraft:custom_model_data":{flags:[B;0b]}}}
+data modify entity @s[tag=left_hinge] equipment.head merge value {components:{"minecraft:item_model":"luigis_mansion:furniture/door_frame/double/arched","minecraft:custom_model_data":{flags:[B;1b]}}}

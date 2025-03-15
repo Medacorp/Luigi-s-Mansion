@@ -1,24 +1,24 @@
 {
-	"values": [
-		"3ds_remake:room/hidden/breaker_room/interactions/gameboy_horror_scan/barrel_1",
-		"3ds_remake:room/hidden/breaker_room/interactions/gameboy_horror_scan/barrel_2",
-		"3ds_remake:room/hidden/breaker_room/interactions/gameboy_horror_scan/barrel_3",
-		"3ds_remake:room/hidden/breaker_room/interactions/gameboy_horror_scan/barrel_4",
-		"3ds_remake:room/hidden/breaker_room/interactions/gameboy_horror_scan/barrel_5",
-		"3ds_remake:room/hidden/breaker_room/interactions/gameboy_horror_scan/barrel_6",
-		"3ds_remake:room/hidden/breaker_room/interactions/gameboy_horror_scan/barrel_7",
-		"3ds_remake:room/hidden/breaker_room/interactions/gameboy_horror_scan/barrel_8",
-		"3ds_remake:room/hidden/breaker_room/interactions/gameboy_horror_scan/barrel_9",
-		"3ds_remake:room/hidden/breaker_room/interactions/gameboy_horror_scan/barrel_10",
-		"3ds_remake:room/hidden/breaker_room/interactions/gameboy_horror_scan/barrel_11",
-		"3ds_remake:room/hidden/breaker_room/interactions/gameboy_horror_scan/barrel_12",
-		"3ds_remake:room/hidden/breaker_room/interactions/gameboy_horror_scan/barrel_13",
-		"3ds_remake:room/hidden/breaker_room/interactions/gameboy_horror_scan/barrel_14",
-		"3ds_remake:room/hidden/breaker_room/interactions/gameboy_horror_scan/barrel_15",
-		"3ds_remake:room/hidden/breaker_room/interactions/gameboy_horror_scan/barrel_16",
-		"3ds_remake:room/hidden/breaker_room/interactions/gameboy_horror_scan/barrel_17",
-		"3ds_remake:room/hidden/breaker_room/interactions/gameboy_horror_scan/barrel_18",
-		"3ds_remake:room/hidden/breaker_room/interactions/gameboy_horror_scan/lamp",
-		"3ds_remake:room/hidden/breaker_room/interactions/gameboy_horror_scan/table"
-	]
+    "values": [
+        "3ds_remake:room/hidden/breaker_room/interactions/gameboy_horror_scan/barrel_1",
+        "3ds_remake:room/hidden/breaker_room/interactions/gameboy_horror_scan/barrel_2",
+        "3ds_remake:room/hidden/breaker_room/interactions/gameboy_horror_scan/barrel_3",
+        "3ds_remake:room/hidden/breaker_room/interactions/gameboy_horror_scan/barrel_4",
+        "3ds_remake:room/hidden/breaker_room/interactions/gameboy_horror_scan/barrel_5",
+        "3ds_remake:room/hidden/breaker_room/interactions/gameboy_horror_scan/barrel_6",
+        "3ds_remake:room/hidden/breaker_room/interactions/gameboy_horror_scan/barrel_7",
+        "3ds_remake:room/hidden/breaker_room/interactions/gameboy_horror_scan/barrel_8",
+        "3ds_remake:room/hidden/breaker_room/interactions/gameboy_horror_scan/barrel_9",
+        "3ds_remake:room/hidden/breaker_room/interactions/gameboy_horror_scan/barrel_10",
+        "3ds_remake:room/hidden/breaker_room/interactions/gameboy_horror_scan/barrel_11",
+        "3ds_remake:room/hidden/breaker_room/interactions/gameboy_horror_scan/barrel_12",
+        "3ds_remake:room/hidden/breaker_room/interactions/gameboy_horror_scan/barrel_13",
+        "3ds_remake:room/hidden/breaker_room/interactions/gameboy_horror_scan/barrel_14",
+        "3ds_remake:room/hidden/breaker_room/interactions/gameboy_horror_scan/barrel_15",
+        "3ds_remake:room/hidden/breaker_room/interactions/gameboy_horror_scan/barrel_16",
+        "3ds_remake:room/hidden/breaker_room/interactions/gameboy_horror_scan/barrel_17",
+        "3ds_remake:room/hidden/breaker_room/interactions/gameboy_horror_scan/barrel_18",
+        "3ds_remake:room/hidden/breaker_room/interactions/gameboy_horror_scan/lamp",
+        "3ds_remake:room/hidden/breaker_room/interactions/gameboy_horror_scan/table"
+    ]
 }

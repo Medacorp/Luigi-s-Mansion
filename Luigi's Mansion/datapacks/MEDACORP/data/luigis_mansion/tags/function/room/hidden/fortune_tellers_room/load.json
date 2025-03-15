@@ -1,6 +1,6 @@
 {
-	"values": [
-	    "luigis_mansion:room/hidden/fortune_tellers_room/load/set_loaded",
+    "values": [
+        "luigis_mansion:room/hidden/fortune_tellers_room/load/set_loaded",
         "luigis_mansion:room/hidden/fortune_tellers_room/load/lights",
         "luigis_mansion:room/hidden/fortune_tellers_room/load/cheese",
         "luigis_mansion:room/hidden/fortune_tellers_room/load/cobweb",
@@ -15,5 +15,5 @@
         "luigis_mansion:room/hidden/fortune_tellers_room/load/tall_wooden_colorful_candelabra_2",
         "luigis_mansion:room/hidden/fortune_tellers_room/load/wooden_cabinet_mounted_wooden_colorful_candelabra_1",
         "luigis_mansion:room/hidden/fortune_tellers_room/load/wooden_cabinet_mounted_wooden_colorful_candelabra_2"
-	]
+    ]
 }

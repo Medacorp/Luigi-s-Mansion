@@ -1,5 +1,5 @@
 {
-	"values": [
+    "values": [
         "luigis_mansion:other/music/cannot_overwrite/catching_ghosts",
         "luigis_mansion:other/music/cannot_overwrite/dancing_ghost_guys",
         "luigis_mansion:other/music/cannot_overwrite/bogmire_battle",
@@ -16,5 +16,5 @@
         "luigis_mansion:other/music/cannot_overwrite/king_boo_battle",
         "luigis_mansion:other/music/cannot_overwrite/minigame",
         "luigis_mansion:other/music/cannot_overwrite/training"
-	]
+    ]
 }

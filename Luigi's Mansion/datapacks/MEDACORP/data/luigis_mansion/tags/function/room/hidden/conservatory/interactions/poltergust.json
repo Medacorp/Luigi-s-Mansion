@@ -1,17 +1,17 @@
 {
-	"values": [
-		"luigis_mansion:room/hidden/conservatory/interactions/poltergust/chair_1",
-		"luigis_mansion:room/hidden/conservatory/interactions/poltergust/chair_2",
-		"luigis_mansion:room/hidden/conservatory/interactions/poltergust/chair_3",
-		"luigis_mansion:room/hidden/conservatory/interactions/poltergust/closet",
-		"luigis_mansion:room/hidden/conservatory/interactions/poltergust/lamp",
-		"luigis_mansion:room/hidden/conservatory/interactions/poltergust/lectern_1",
-		"luigis_mansion:room/hidden/conservatory/interactions/poltergust/lectern_2",
-		"luigis_mansion:room/hidden/conservatory/interactions/poltergust/painting_1",
-		"luigis_mansion:room/hidden/conservatory/interactions/poltergust/painting_2",
-		"luigis_mansion:room/hidden/conservatory/interactions/poltergust/painting_3",
-		"luigis_mansion:room/hidden/conservatory/interactions/poltergust/painting_4",
-		"luigis_mansion:room/hidden/conservatory/interactions/poltergust/piano",
-		"luigis_mansion:room/hidden/conservatory/interactions/poltergust/vacuumable"
-	]
+    "values": [
+        "luigis_mansion:room/hidden/conservatory/interactions/poltergust/chair_1",
+        "luigis_mansion:room/hidden/conservatory/interactions/poltergust/chair_2",
+        "luigis_mansion:room/hidden/conservatory/interactions/poltergust/chair_3",
+        "luigis_mansion:room/hidden/conservatory/interactions/poltergust/closet",
+        "luigis_mansion:room/hidden/conservatory/interactions/poltergust/lamp",
+        "luigis_mansion:room/hidden/conservatory/interactions/poltergust/lectern_1",
+        "luigis_mansion:room/hidden/conservatory/interactions/poltergust/lectern_2",
+        "luigis_mansion:room/hidden/conservatory/interactions/poltergust/painting_1",
+        "luigis_mansion:room/hidden/conservatory/interactions/poltergust/painting_2",
+        "luigis_mansion:room/hidden/conservatory/interactions/poltergust/painting_3",
+        "luigis_mansion:room/hidden/conservatory/interactions/poltergust/painting_4",
+        "luigis_mansion:room/hidden/conservatory/interactions/poltergust/piano",
+        "luigis_mansion:room/hidden/conservatory/interactions/poltergust/vacuumable"
+    ]
 }

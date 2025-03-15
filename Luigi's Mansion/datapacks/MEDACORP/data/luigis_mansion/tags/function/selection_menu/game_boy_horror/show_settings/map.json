@@ -1,8 +1,8 @@
 {
-	"values": [
-		"luigis_mansion:selection_menu/game_boy_horror/show_settings/map/movement_type",
-		"luigis_mansion:selection_menu/game_boy_horror/show_settings/map/flashlight_type",
-		"luigis_mansion:selection_menu/game_boy_horror/show_settings/map/open_map_when_collecting_a_key",
-		"luigis_mansion:selection_menu/game_boy_horror/show_settings/map/teleport_frequency"
-	]
+    "values": [
+        "luigis_mansion:selection_menu/game_boy_horror/show_settings/map/movement_type",
+        "luigis_mansion:selection_menu/game_boy_horror/show_settings/map/flashlight_type",
+        "luigis_mansion:selection_menu/game_boy_horror/show_settings/map/open_map_when_collecting_a_key",
+        "luigis_mansion:selection_menu/game_boy_horror/show_settings/map/teleport_frequency"
+    ]
 }

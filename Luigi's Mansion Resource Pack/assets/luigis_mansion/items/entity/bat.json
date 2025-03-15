@@ -10,7 +10,8 @@
                     "model": "luigis_mansion:item/entity/bat",
                     "tints": [
                         {
-                            "type": "minecraft:dye",
+                            "type": "minecraft:custom_model_data",
+                            "index": 0,
                             "default": 16777215
                         }
                     ]
@@ -41,7 +42,8 @@
                                         "model": "luigis_mansion:entity/bat/right_arm_closed",
                                         "tints": [
                                             {
-                                                "type": "minecraft:dye",
+                                                "type": "minecraft:custom_model_data",
+                                                "index": 0,
                                                 "default": 16777215
                                             }
                                         ]
@@ -53,7 +55,8 @@
                                 "model": "luigis_mansion:entity/bat/right_arm",
                                 "tints": [
                                     {
-                                        "type": "minecraft:dye",
+                                        "type": "minecraft:custom_model_data",
+                                        "index": 0,
                                         "default": 16777215
                                     }
                                 ]
@@ -74,7 +77,8 @@
                                         "model": "luigis_mansion:entity/bat/left_arm_closed",
                                         "tints": [
                                             {
-                                                "type": "minecraft:dye",
+                                                "type": "minecraft:custom_model_data",
+                                                "index": 0,
                                                 "default": 16777215
                                             }
                                         ]
@@ -86,7 +90,8 @@
                                 "model": "luigis_mansion:entity/bat/left_arm",
                                 "tints": [
                                     {
-                                        "type": "minecraft:dye",
+                                        "type": "minecraft:custom_model_data",
+                                        "index": 0,
                                         "default": 16777215
                                     }
                                 ]
@@ -99,7 +104,8 @@
                     "model": "luigis_mansion:entity/bat/body",
                     "tints": [
                         {
-                            "type": "minecraft:dye",
+                            "type": "minecraft:custom_model_data",
+                            "index": 0,
                             "default": 16777215
                         }
                     ]

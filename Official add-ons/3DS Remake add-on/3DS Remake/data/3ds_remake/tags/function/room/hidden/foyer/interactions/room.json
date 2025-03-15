@@ -1,9 +1,9 @@
 {
-	"values": [
-		"3ds_remake:room/hidden/foyer/interactions/room/chandelier",
-		"3ds_remake:room/hidden/foyer/interactions/room/lamp",
-		"3ds_remake:room/hidden/foyer/interactions/room/mirror",
-		"3ds_remake:room/hidden/foyer/interactions/room/table",
-		"3ds_remake:room/hidden/foyer/interactions/room/vacuumable"
-	]
+    "values": [
+        "3ds_remake:room/hidden/foyer/interactions/room/chandelier",
+        "3ds_remake:room/hidden/foyer/interactions/room/lamp",
+        "3ds_remake:room/hidden/foyer/interactions/room/mirror",
+        "3ds_remake:room/hidden/foyer/interactions/room/table",
+        "3ds_remake:room/hidden/foyer/interactions/room/vacuumable"
+    ]
 }

@@ -1,7 +1,7 @@
 {
-	"values": [
-	    "e3_demo:room/original/kitchen/turn_lights/off/lamp_1",
-	    "e3_demo:room/original/kitchen/turn_lights/off/lamp_2",
-	    "e3_demo:room/original/kitchen/turn_lights/off/room_clear_chest"
-	]
+    "values": [
+        "e3_demo:room/original/kitchen/turn_lights/off/lamp_1",
+        "e3_demo:room/original/kitchen/turn_lights/off/lamp_2",
+        "e3_demo:room/original/kitchen/turn_lights/off/room_clear_chest"
+    ]
 }

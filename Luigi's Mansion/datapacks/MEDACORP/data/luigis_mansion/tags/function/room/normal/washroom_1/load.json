@@ -1,6 +1,6 @@
 {
-	"values": [
-	    "luigis_mansion:room/normal/washroom_1/load/set_loaded",
+    "values": [
+        "luigis_mansion:room/normal/washroom_1/load/set_loaded",
         "luigis_mansion:room/normal/washroom_1/load/lights",
         "luigis_mansion:room/normal/washroom_1/load/hallway_5_door",
         "luigis_mansion:room/normal/washroom_1/load/legged_sink",
@@ -10,5 +10,5 @@
         "luigis_mansion:room/normal/washroom_1/load/toad",
         "luigis_mansion:room/normal/washroom_1/load/toilet",
         "luigis_mansion:room/normal/washroom_1/load/toilet_paper"
-	]
+    ]
 }

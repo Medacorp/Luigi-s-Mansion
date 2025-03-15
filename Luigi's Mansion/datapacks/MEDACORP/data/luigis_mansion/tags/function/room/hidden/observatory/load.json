@@ -1,10 +1,10 @@
 {
-	"values": [
-	    "luigis_mansion:room/hidden/observatory/load/set_loaded",
-	    "luigis_mansion:room/hidden/observatory/load/destroy",
-	    "luigis_mansion:room/hidden/observatory/load/path",
+    "values": [
+        "luigis_mansion:room/hidden/observatory/load/set_loaded",
+        "luigis_mansion:room/hidden/observatory/load/destroy",
+        "luigis_mansion:room/hidden/observatory/load/path",
         "luigis_mansion:room/hidden/observatory/load/lights",
         "luigis_mansion:room/hidden/observatory/load/astral_hall_door",
         "luigis_mansion:room/hidden/observatory/load/room_clear_loot_dropper"
-	]
+    ]
 }

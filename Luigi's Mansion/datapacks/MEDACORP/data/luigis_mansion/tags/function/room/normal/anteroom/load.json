@@ -1,11 +1,11 @@
 {
-	"values": [
-	    "luigis_mansion:room/normal/anteroom/load/set_loaded",
+    "values": [
+        "luigis_mansion:room/normal/anteroom/load/set_loaded",
         "luigis_mansion:room/normal/anteroom/load/lights",
         "luigis_mansion:room/normal/anteroom/load/nightstand_mounted_blue_flower_pot_1",
         "luigis_mansion:room/normal/anteroom/load/nightstand_mounted_blue_flower_pot_2",
         "luigis_mansion:room/normal/anteroom/load/nightstand_mounted_blue_flower_pot_3",
         "luigis_mansion:room/normal/anteroom/load/parlor_door",
         "luigis_mansion:room/normal/anteroom/load/wardrobe_room_door"
-	]
+    ]
 }

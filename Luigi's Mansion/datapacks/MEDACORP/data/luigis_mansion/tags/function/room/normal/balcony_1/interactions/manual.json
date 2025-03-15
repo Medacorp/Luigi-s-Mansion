@@ -1,9 +1,9 @@
 {
-	"values": [
-		"luigis_mansion:room/normal/balcony_1/interactions/manual/lamp",
-		"luigis_mansion:room/normal/balcony_1/interactions/manual/plant_1",
-		"luigis_mansion:room/normal/balcony_1/interactions/manual/plant_2",
-		"luigis_mansion:room/normal/balcony_1/interactions/manual/plant_3",
-		"luigis_mansion:room/normal/balcony_1/interactions/manual/plant_4"
-	]
+    "values": [
+        "luigis_mansion:room/normal/balcony_1/interactions/manual/lamp",
+        "luigis_mansion:room/normal/balcony_1/interactions/manual/plant_1",
+        "luigis_mansion:room/normal/balcony_1/interactions/manual/plant_2",
+        "luigis_mansion:room/normal/balcony_1/interactions/manual/plant_3",
+        "luigis_mansion:room/normal/balcony_1/interactions/manual/plant_4"
+    ]
 }

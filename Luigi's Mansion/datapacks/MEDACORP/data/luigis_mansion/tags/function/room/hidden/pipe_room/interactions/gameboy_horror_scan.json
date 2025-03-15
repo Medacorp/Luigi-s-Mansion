@@ -1,7 +1,7 @@
 {
-	"values": [
-		"luigis_mansion:room/hidden/pipe_room/interactions/gameboy_horror_scan/crate",
-		"luigis_mansion:room/hidden/pipe_room/interactions/gameboy_horror_scan/frozen_barrel",
-		"luigis_mansion:room/hidden/pipe_room/interactions/gameboy_horror_scan/pipe_switch"
-	]
+    "values": [
+        "luigis_mansion:room/hidden/pipe_room/interactions/gameboy_horror_scan/crate",
+        "luigis_mansion:room/hidden/pipe_room/interactions/gameboy_horror_scan/frozen_barrel",
+        "luigis_mansion:room/hidden/pipe_room/interactions/gameboy_horror_scan/pipe_switch"
+    ]
 }

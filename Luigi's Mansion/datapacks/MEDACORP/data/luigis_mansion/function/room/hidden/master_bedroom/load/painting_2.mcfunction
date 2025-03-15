@@ -1,2 +1,2 @@
-summon minecraft:item_frame 697 113 -33 {Tags:["static","no_ai"],Facing:4b,Silent:1b,Invulnerable:1b,Item:{id:"minecraft:filled_map",count:1,components:{"minecraft:map_id":299}},CustomName:'{"type":"translatable","translate":"luigis_mansion:furniture.painting"}',Invisible:1b,Fixed:1b}
+summon minecraft:item_frame 697 113 -33 {Tags:["static","no_ai"],Facing:4b,Silent:1b,Invulnerable:1b,Item:{id:"minecraft:filled_map",count:1,components:{"minecraft:map_id":299}},CustomName:{type:"translatable",translate:"luigis_mansion:furniture.painting"},Invisible:1b,Fixed:1b}
 scoreboard players set @e[x=697.5,y=113.0,z=-32.5,distance=..2,type=minecraft:item_frame] Room 9

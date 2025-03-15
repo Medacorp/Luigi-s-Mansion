@@ -1,7 +1,6 @@
 execute if data storage luigis_mansion:data my_memory run tag @s add keep_loaded
 execute if entity @s[tag=!keep_loaded] run function luigis_mansion:entities/player/memory/get with entity @s
 scoreboard players set @s AvailableSlot -1
-execute unless data storage luigis_mansion:data my_memory.selection_menu.inventory[{Slot:-106b}] run scoreboard players set @s AvailableSlot -106
 execute unless data storage luigis_mansion:data my_memory.selection_menu.inventory[{Slot:35b}] run scoreboard players set @s AvailableSlot 35
 execute unless data storage luigis_mansion:data my_memory.selection_menu.inventory[{Slot:34b}] run scoreboard players set @s AvailableSlot 34
 execute unless data storage luigis_mansion:data my_memory.selection_menu.inventory[{Slot:33b}] run scoreboard players set @s AvailableSlot 33

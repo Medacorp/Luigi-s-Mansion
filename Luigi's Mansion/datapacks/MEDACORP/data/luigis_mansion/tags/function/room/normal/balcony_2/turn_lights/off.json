@@ -1,10 +1,10 @@
 {
-	"values": [
-	    "luigis_mansion:room/normal/balcony_2/turn_lights/off/lamp_1",
-	    "luigis_mansion:room/normal/balcony_2/turn_lights/off/lamp_2",
-	    "luigis_mansion:room/normal/balcony_2/turn_lights/off/lamp_3",
-	    "luigis_mansion:room/normal/balcony_2/turn_lights/off/lamp_4",
-	    "luigis_mansion:room/normal/balcony_2/turn_lights/off/lamp_5",
-	    "luigis_mansion:room/normal/balcony_2/turn_lights/off/lamp_6"
-	]
+    "values": [
+        "luigis_mansion:room/normal/balcony_2/turn_lights/off/lamp_1",
+        "luigis_mansion:room/normal/balcony_2/turn_lights/off/lamp_2",
+        "luigis_mansion:room/normal/balcony_2/turn_lights/off/lamp_3",
+        "luigis_mansion:room/normal/balcony_2/turn_lights/off/lamp_4",
+        "luigis_mansion:room/normal/balcony_2/turn_lights/off/lamp_5",
+        "luigis_mansion:room/normal/balcony_2/turn_lights/off/lamp_6"
+    ]
 }

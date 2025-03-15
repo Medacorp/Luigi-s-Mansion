@@ -1,6 +1,6 @@
 {
-	"values": [
-	    "luigis_mansion:room/normal/conservatory/load/set_loaded",
+    "values": [
+        "luigis_mansion:room/normal/conservatory/load/set_loaded",
         "luigis_mansion:room/normal/conservatory/load/lights",
         "luigis_mansion:room/normal/conservatory/load/cello",
         "luigis_mansion:room/normal/conservatory/load/drum_1",
@@ -17,5 +17,5 @@
         "luigis_mansion:room/normal/conservatory/load/saxophone",
         "luigis_mansion:room/normal/conservatory/load/vacuumable",
         "luigis_mansion:room/normal/conservatory/load/xylophone"
-	]
+    ]
 }

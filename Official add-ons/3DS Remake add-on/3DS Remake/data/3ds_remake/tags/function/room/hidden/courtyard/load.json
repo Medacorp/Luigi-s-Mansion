@@ -1,11 +1,11 @@
 {
-	"values": [
-	    "3ds_remake:room/hidden/courtyard/load/set_loaded",
+    "values": [
+        "3ds_remake:room/hidden/courtyard/load/set_loaded",
         "3ds_remake:room/hidden/courtyard/load/lights",
         "3ds_remake:room/hidden/courtyard/load/hallway_6_door",
         "3ds_remake:room/hidden/courtyard/load/rec_room_door",
         "3ds_remake:room/hidden/courtyard/load/room_clear_chest",
         "3ds_remake:room/hidden/courtyard/load/spraying_water",
         "3ds_remake:room/hidden/courtyard/load/toad"
-	]
+    ]
 }

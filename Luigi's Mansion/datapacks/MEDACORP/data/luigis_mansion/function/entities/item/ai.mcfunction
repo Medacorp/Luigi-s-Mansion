@@ -7,14 +7,14 @@ tag @s remove bounced_already
 
 execute if entity @s[scores={MirrorX=-2147483648..}] run scoreboard players operation #temp MirrorX = @s MirrorX
 execute if entity @s[scores={MirrorZ=-2147483648..}] run scoreboard players operation #temp MirrorZ = @s MirrorZ
-execute at @s[tag=in_vacuum] run function luigis_mansion:entities/item/pull with entity @s ArmorItems[3].components."minecraft:custom_data"
-execute at @s run function luigis_mansion:entities/item/physics with entity @s ArmorItems[3].components."minecraft:custom_data".physics
-execute if data entity @s ArmorItems[3].components."minecraft:custom_data".particle at @s run function luigis_mansion:entities/item/particle with entity @s ArmorItems[3].components."minecraft:custom_data".particle
-execute if data entity @s ArmorItems[3].components."minecraft:custom_data".particle_trail at @s run function luigis_mansion:entities/item/particle_trail with entity @s ArmorItems[3].components."minecraft:custom_data"
+execute at @s[tag=in_vacuum] run function luigis_mansion:entities/item/pull with entity @s data
+execute at @s run function luigis_mansion:entities/item/physics with entity @s data.physics
+execute if data entity @s data.particle at @s run function luigis_mansion:entities/item/particle with entity @s data.particle
+execute if data entity @s data.particle_trail at @s run function luigis_mansion:entities/item/particle_trail with entity @s data
 scoreboard players reset #temp MirrorX
 scoreboard players reset #temp MirrorZ
 
-execute at @s[tag=picked_up,tag=!dead] run function luigis_mansion:entities/item/picked_up with entity @s ArmorItems[3].components."minecraft:custom_data".item
+execute at @s[tag=picked_up,tag=!dead] run function luigis_mansion:entities/item/picked_up with entity @s data.item
 tag @s[tag=picked_up] add dead
 tag @e[tag=collector] remove collector
 $execute at @s run teleport @s ~ ~-$(physics_offset) ~

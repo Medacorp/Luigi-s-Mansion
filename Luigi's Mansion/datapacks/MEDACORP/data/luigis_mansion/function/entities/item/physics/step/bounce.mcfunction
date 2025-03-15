@@ -1,4 +1,4 @@
-execute if entity @s[tag=!bounced_already] run function luigis_mansion:entities/item/bounce_sound with entity @s ArmorItems[3].components."minecraft:custom_data".item
+execute if entity @s[tag=!bounced_already] run function luigis_mansion:entities/item/bounce_sound with entity @s data.item
 scoreboard players operation @s Move *= #-1 Constants
 scoreboard players set @s[tag=floor_bounce] Move 0
 scoreboard players set @s[scores={Move=1..3}] Move 0

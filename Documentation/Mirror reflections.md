@@ -27,7 +27,7 @@ Items stored in the reflections' data have an additional field:
     components:{ //The item's components.
         "minecraft:custom_data":{ //The map's unique item data
             mirror:{} //The data to merge with the root of the item object for the reflection. Used to change what model is displayed, and to make invisible ghosts' reflections visible.
-            //Example: mirror ghosts' left arm mirror contents are {id:"minecraft:leather_chestplate",components:{"minecraft:damage":1}}, changing the ID and damage values to turn the ghost visible, and make it the right arm model.
+            //Example: mirror ghosts' left arm mirror contents are {components:{"minecraft:custom_model_data":{flags:[B;0b],floats:[1f]}}}, changing the invisible and model part values to turn the ghost visible, and make it the right arm model.
         }
     }
 }

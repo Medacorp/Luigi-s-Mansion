@@ -16,7 +16,7 @@
         "description": {
             "type": "translatable", "translate": "extensive_training:advancements.extensive_training.root.description"
         },
-		"background": "extensive_training:textures/gui/advancements/background/extensive_training.png"
+		"background": "extensive_training:gui/advancements/background/extensive_training"
     },
     "criteria": {
         "unlock": {

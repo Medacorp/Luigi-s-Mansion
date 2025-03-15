@@ -1,8 +1,8 @@
 {
-	"values": [
-		"3ds_remake:room/hidden/boneyard/interactions/gameboy_horror_scan/bowl",
-		"3ds_remake:room/hidden/boneyard/interactions/gameboy_horror_scan/dog_house",
-		"3ds_remake:room/hidden/boneyard/interactions/gameboy_horror_scan/sign",
-		"3ds_remake:room/hidden/boneyard/interactions/gameboy_horror_scan/water_tap"
-	]
+    "values": [
+        "3ds_remake:room/hidden/boneyard/interactions/gameboy_horror_scan/bowl",
+        "3ds_remake:room/hidden/boneyard/interactions/gameboy_horror_scan/dog_house",
+        "3ds_remake:room/hidden/boneyard/interactions/gameboy_horror_scan/sign",
+        "3ds_remake:room/hidden/boneyard/interactions/gameboy_horror_scan/water_tap"
+    ]
 }

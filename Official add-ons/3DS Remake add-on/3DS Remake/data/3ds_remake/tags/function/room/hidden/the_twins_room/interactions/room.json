@@ -1,17 +1,17 @@
 {
-	"values": [
-		"3ds_remake:room/hidden/the_twins_room/interactions/room/bunk_bed",
-		"3ds_remake:room/hidden/the_twins_room/interactions/room/chair_1",
-		"3ds_remake:room/hidden/the_twins_room/interactions/room/chair_2",
-		"3ds_remake:room/hidden/the_twins_room/interactions/room/darting_board",
-		"3ds_remake:room/hidden/the_twins_room/interactions/room/lamp",
-		"3ds_remake:room/hidden/the_twins_room/interactions/room/painting_1",
-		"3ds_remake:room/hidden/the_twins_room/interactions/room/painting_2",
-		"3ds_remake:room/hidden/the_twins_room/interactions/room/table_1",
-		"3ds_remake:room/hidden/the_twins_room/interactions/room/table_2",
-		"3ds_remake:room/hidden/the_twins_room/interactions/room/toy_1",
-		"3ds_remake:room/hidden/the_twins_room/interactions/room/toy_2",
-		"3ds_remake:room/hidden/the_twins_room/interactions/room/toy_3",
-		"3ds_remake:room/hidden/the_twins_room/interactions/room/vacuumable"
-	]
+    "values": [
+        "3ds_remake:room/hidden/the_twins_room/interactions/room/bunk_bed",
+        "3ds_remake:room/hidden/the_twins_room/interactions/room/chair_1",
+        "3ds_remake:room/hidden/the_twins_room/interactions/room/chair_2",
+        "3ds_remake:room/hidden/the_twins_room/interactions/room/darting_board",
+        "3ds_remake:room/hidden/the_twins_room/interactions/room/lamp",
+        "3ds_remake:room/hidden/the_twins_room/interactions/room/painting_1",
+        "3ds_remake:room/hidden/the_twins_room/interactions/room/painting_2",
+        "3ds_remake:room/hidden/the_twins_room/interactions/room/table_1",
+        "3ds_remake:room/hidden/the_twins_room/interactions/room/table_2",
+        "3ds_remake:room/hidden/the_twins_room/interactions/room/toy_1",
+        "3ds_remake:room/hidden/the_twins_room/interactions/room/toy_2",
+        "3ds_remake:room/hidden/the_twins_room/interactions/room/toy_3",
+        "3ds_remake:room/hidden/the_twins_room/interactions/room/vacuumable"
+    ]
 }

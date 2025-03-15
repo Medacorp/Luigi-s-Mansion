@@ -1,7 +1,7 @@
 {
-	"values": [
-		"luigis_mansion:room/normal/bathroom_1/interactions/manual/bathtub",
-		"luigis_mansion:room/normal/bathroom_1/interactions/manual/mirror",
-		"luigis_mansion:room/normal/bathroom_1/interactions/manual/shelf"
-	]
+    "values": [
+        "luigis_mansion:room/normal/bathroom_1/interactions/manual/bathtub",
+        "luigis_mansion:room/normal/bathroom_1/interactions/manual/mirror",
+        "luigis_mansion:room/normal/bathroom_1/interactions/manual/shelf"
+    ]
 }

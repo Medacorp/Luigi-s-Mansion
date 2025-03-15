@@ -1,11 +1,11 @@
 {
-	"values": [
-	    "luigis_mansion:room/hidden/graveyard/load/set_loaded",
+    "values": [
+        "luigis_mansion:room/hidden/graveyard/load/set_loaded",
         "luigis_mansion:room/hidden/graveyard/load/lights",
         "luigis_mansion:room/hidden/graveyard/load/bogmires_gravestone",
         "luigis_mansion:room/hidden/graveyard/load/lamp",
         "luigis_mansion:room/hidden/graveyard/load/room_clear_chest",
         "luigis_mansion:room/hidden/graveyard/load/torch_1",
         "luigis_mansion:room/hidden/graveyard/load/torch_2"
-	]
+    ]
 }

@@ -1,6 +1,6 @@
 {
-	"values": [
-	    "luigis_mansion:room/hidden/clockwork_room/load/set_loaded",
+    "values": [
+        "luigis_mansion:room/hidden/clockwork_room/load/set_loaded",
         "luigis_mansion:room/hidden/clockwork_room/load/lights",
         "luigis_mansion:room/hidden/clockwork_room/load/clock_1",
         "luigis_mansion:room/hidden/clockwork_room/load/clock_2",
@@ -13,5 +13,5 @@
         "luigis_mansion:room/hidden/clockwork_room/load/small_door_5",
         "luigis_mansion:room/hidden/clockwork_room/load/small_door_6",
         "luigis_mansion:room/hidden/clockwork_room/load/telephone_room_door"
-	]
+    ]
 }

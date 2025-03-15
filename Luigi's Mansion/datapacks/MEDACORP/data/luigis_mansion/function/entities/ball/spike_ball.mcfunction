@@ -1,4 +1,4 @@
-data modify entity @s[scores={SpawnTime=160}] ArmorItems[3] merge from entity @s ArmorItems[3].components."minecraft:custom_data".model_data.exploding
+data modify entity @s[scores={SpawnTime=160}] equipment.head merge from entity @s equipment.head.components."minecraft:custom_data".model_data.exploding
 scoreboard players add @s SpawnTime 1
 tag @s[tag=in_fire,tag=!in_water] add explode
 tag @s[scores={SpawnTime=200},tag=!in_water] add explode

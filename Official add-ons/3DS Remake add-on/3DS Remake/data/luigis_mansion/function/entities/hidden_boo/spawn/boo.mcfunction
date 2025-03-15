@@ -1,4 +1,4 @@
-data modify storage luigis_mansion:data entity merge value {boo:{namespace:"luigis_mansion",id:"null"},name:'{"type":"translatable","translate":"luigis_mansion:entity.boo"}',say_message:0b,can_attack:0b,damage:{},health:1,loot:{},speed:0}
+data modify storage luigis_mansion:data entity merge value {boo:{namespace:"luigis_mansion",id:"null"},name:{type:"translatable",translate:"luigis_mansion:entity.boo"},say_message:0b,can_attack:0b,damage:{},health:1,loot:{},speed:0}
 data modify storage luigis_mansion:data entity.boo set from entity @s data.boo
 data modify storage luigis_mansion:data entity.name set from entity @s CustomName
 data modify storage luigis_mansion:data entity.mansion set from entity @s data.mansion

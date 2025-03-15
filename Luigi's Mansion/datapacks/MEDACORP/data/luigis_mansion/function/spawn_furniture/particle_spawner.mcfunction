@@ -1,4 +1,4 @@
-summon minecraft:armor_stand ~ ~-1.4 ~ {CustomName:'{"type":"translatable","translate":"luigis_mansion:furniture.particle_spawner"}',Marker:1b,Tags:["furniture","static","this_entity"],ArmorItems:[{},{},{},{id:"minecraft:diamond_pickaxe",count:1,components:{"minecraft:item_model":"luigis_mansion:empty","minecraft:custom_data":{entity:{namespace:"luigis_mansion",id:"furniture"},furniture_type:"empty"}}}],NoGravity:1b,Invisible:1b,DisabledSlots:2039583}
+summon minecraft:armor_stand ~ ~-1.4 ~ {CustomName:{type:"translatable",translate:"luigis_mansion:furniture.particle_spawner"},Marker:1b,Tags:["furniture","static","this_entity"],data:{entity:{namespace:"luigis_mansion",id:"furniture"},furniture_type:"empty"},NoGravity:1b,Invisible:1b,DisabledSlots:2039583}
 teleport @e[tag=this_entity,limit=1] ~ ~-1.4 ~ ~ 0
 scoreboard players set @e[tag=this_entity,limit=1] FurnitureElementLeft 0
 scoreboard players set @e[tag=this_entity,limit=1] FurnitureElementUp 0
@@ -9,7 +9,7 @@ function luigis_mansion:spawn_furniture/setup/room
 function luigis_mansion:spawn_furniture/setup/tags
 function luigis_mansion:spawn_furniture/setup/position
 execute unless data storage luigis_mansion:data furniture.particles run tag @e[tag=this_entity,limit=1] add remove_from_existence
-execute if entity @e[tag=this_entity,tag=remove_from_existence,limit=1] if score #debug_messages Selected matches 1.. run tellraw @a {"type":"translatable","translate":"luigis_mansion:message.debug.format","with":[{"type":"translatable","translate":"luigis_mansion:message.debug","color":"gold"},{"type":"translatable","translate":"luigis_mansion:message.debug.particle_spawner","color":"red"}]}
+execute if entity @e[tag=this_entity,tag=remove_from_existence,limit=1] if score #debug_messages Selected matches 1.. run tellraw @a {type:"translatable",translate:"luigis_mansion:message.debug.format",with:[{type:"translatable",translate:"luigis_mansion:message.debug",color:"gold"},{type:"translatable",translate:"luigis_mansion:message.debug.particle_spawner",color:"red"}]}
 execute if entity @e[tag=this_entity,tag=!remove_from_existence,limit=1] run function luigis_mansion:spawn_furniture/setup/debug_spawn
 tag @e[tag=this_entity,limit=1] remove this_entity
 data remove storage luigis_mansion:data furniture

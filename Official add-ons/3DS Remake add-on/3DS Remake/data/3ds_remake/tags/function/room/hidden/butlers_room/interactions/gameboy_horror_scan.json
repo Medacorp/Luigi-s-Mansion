@@ -1,11 +1,11 @@
 {
-	"values": [
-		"3ds_remake:room/hidden/butlers_room/interactions/gameboy_horror_scan/closet",
-		"3ds_remake:room/hidden/butlers_room/interactions/gameboy_horror_scan/hole",
-		"3ds_remake:room/hidden/butlers_room/interactions/gameboy_horror_scan/ironing_table",
-		"3ds_remake:room/hidden/butlers_room/interactions/gameboy_horror_scan/lamp",
-		"3ds_remake:room/hidden/butlers_room/interactions/gameboy_horror_scan/sewing_machine",
-		"3ds_remake:room/hidden/butlers_room/interactions/gameboy_horror_scan/table",
-		"3ds_remake:room/hidden/butlers_room/interactions/gameboy_horror_scan/toilet_paper"
-	]
+    "values": [
+        "3ds_remake:room/hidden/butlers_room/interactions/gameboy_horror_scan/closet",
+        "3ds_remake:room/hidden/butlers_room/interactions/gameboy_horror_scan/hole",
+        "3ds_remake:room/hidden/butlers_room/interactions/gameboy_horror_scan/ironing_table",
+        "3ds_remake:room/hidden/butlers_room/interactions/gameboy_horror_scan/lamp",
+        "3ds_remake:room/hidden/butlers_room/interactions/gameboy_horror_scan/sewing_machine",
+        "3ds_remake:room/hidden/butlers_room/interactions/gameboy_horror_scan/table",
+        "3ds_remake:room/hidden/butlers_room/interactions/gameboy_horror_scan/toilet_paper"
+    ]
 }

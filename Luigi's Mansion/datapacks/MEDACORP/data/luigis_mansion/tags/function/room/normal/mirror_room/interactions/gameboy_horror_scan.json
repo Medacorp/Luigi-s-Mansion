@@ -1,8 +1,8 @@
 {
-	"values": [
-		"luigis_mansion:room/normal/mirror_room/interactions/gameboy_horror_scan/lamp_1",
-		"luigis_mansion:room/normal/mirror_room/interactions/gameboy_horror_scan/lamp_2",
-		"luigis_mansion:room/normal/mirror_room/interactions/gameboy_horror_scan/painting",
-		"luigis_mansion:room/normal/mirror_room/interactions/gameboy_horror_scan/table"
-	]
+    "values": [
+        "luigis_mansion:room/normal/mirror_room/interactions/gameboy_horror_scan/lamp_1",
+        "luigis_mansion:room/normal/mirror_room/interactions/gameboy_horror_scan/lamp_2",
+        "luigis_mansion:room/normal/mirror_room/interactions/gameboy_horror_scan/painting",
+        "luigis_mansion:room/normal/mirror_room/interactions/gameboy_horror_scan/table"
+    ]
 }

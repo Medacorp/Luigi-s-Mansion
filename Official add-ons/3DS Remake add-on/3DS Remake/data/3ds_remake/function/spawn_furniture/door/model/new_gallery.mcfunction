@@ -1,1 +1,1 @@
-data modify entity @s ArmorItems[3].components."minecraft:item_model" set value "3ds_remake:furniture/door/new_gallery"
+data modify entity @s equipment.head.components."minecraft:item_model" set value "3ds_remake:furniture/door/new_gallery"

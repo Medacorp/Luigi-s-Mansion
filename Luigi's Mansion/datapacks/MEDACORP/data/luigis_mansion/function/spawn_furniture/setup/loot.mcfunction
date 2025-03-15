@@ -1,5 +1,5 @@
-execute if data storage luigis_mansion:data furniture.loot run data modify entity @e[tag=this_entity,limit=1] ArmorItems[3].components."minecraft:custom_data".loot set from storage luigis_mansion:data furniture.loot
-execute if data storage luigis_mansion:data furniture.loot_chance run data modify entity @e[tag=this_entity,limit=1] ArmorItems[3].components."minecraft:custom_data".loot_chance set value {namespace:"luigis_mansion",id:"null"}
-execute if data storage luigis_mansion:data furniture.loot_chance.namespace run data modify entity @e[tag=this_entity,limit=1] ArmorItems[3].components."minecraft:custom_data".loot_chance.namespace set from storage luigis_mansion:data furniture.loot_chance.namespace
-execute if data storage luigis_mansion:data furniture.loot_chance.id run data modify entity @e[tag=this_entity,limit=1] ArmorItems[3].components."minecraft:custom_data".loot_chance.id set from storage luigis_mansion:data furniture.loot_chance.id
+execute if data storage luigis_mansion:data furniture.loot run data modify entity @e[tag=this_entity,limit=1] data.loot set from storage luigis_mansion:data furniture.loot
+execute if data storage luigis_mansion:data furniture.loot_chance run data modify entity @e[tag=this_entity,limit=1] data.loot_chance set value {namespace:"luigis_mansion",id:"null"}
+execute if data storage luigis_mansion:data furniture.loot_chance.namespace run data modify entity @e[tag=this_entity,limit=1] data.loot_chance.namespace set from storage luigis_mansion:data furniture.loot_chance.namespace
+execute if data storage luigis_mansion:data furniture.loot_chance.id run data modify entity @e[tag=this_entity,limit=1] data.loot_chance.id set from storage luigis_mansion:data furniture.loot_chance.id
 execute unless data storage luigis_mansion:data furniture.loot unless data storage luigis_mansion:data furniture.loot_chance run tag @e[tag=this_entity,limit=1] add no_loot

@@ -1,18 +1,18 @@
 {
-	"values": [
-		"3ds_remake:room/hidden/ball_room/interactions/room/chair_1",
-		"3ds_remake:room/hidden/ball_room/interactions/room/chair_2",
-		"3ds_remake:room/hidden/ball_room/interactions/room/chair_3",
-		"3ds_remake:room/hidden/ball_room/interactions/room/chair_4",
-		"3ds_remake:room/hidden/ball_room/interactions/room/chair_5",
-		"3ds_remake:room/hidden/ball_room/interactions/room/chair_6",
-		"3ds_remake:room/hidden/ball_room/interactions/room/chair_7",
-		"3ds_remake:room/hidden/ball_room/interactions/room/chair_8",
-		"3ds_remake:room/hidden/ball_room/interactions/room/lamp_1",
-		"3ds_remake:room/hidden/ball_room/interactions/room/lamp_2",
-		"3ds_remake:room/hidden/ball_room/interactions/room/painting_1",
-		"3ds_remake:room/hidden/ball_room/interactions/room/painting_2",
-		"3ds_remake:room/hidden/ball_room/interactions/room/painting_3",
-		"3ds_remake:room/hidden/ball_room/interactions/room/painting_4"
-	]
+    "values": [
+        "3ds_remake:room/hidden/ball_room/interactions/room/chair_1",
+        "3ds_remake:room/hidden/ball_room/interactions/room/chair_2",
+        "3ds_remake:room/hidden/ball_room/interactions/room/chair_3",
+        "3ds_remake:room/hidden/ball_room/interactions/room/chair_4",
+        "3ds_remake:room/hidden/ball_room/interactions/room/chair_5",
+        "3ds_remake:room/hidden/ball_room/interactions/room/chair_6",
+        "3ds_remake:room/hidden/ball_room/interactions/room/chair_7",
+        "3ds_remake:room/hidden/ball_room/interactions/room/chair_8",
+        "3ds_remake:room/hidden/ball_room/interactions/room/lamp_1",
+        "3ds_remake:room/hidden/ball_room/interactions/room/lamp_2",
+        "3ds_remake:room/hidden/ball_room/interactions/room/painting_1",
+        "3ds_remake:room/hidden/ball_room/interactions/room/painting_2",
+        "3ds_remake:room/hidden/ball_room/interactions/room/painting_3",
+        "3ds_remake:room/hidden/ball_room/interactions/room/painting_4"
+    ]
 }

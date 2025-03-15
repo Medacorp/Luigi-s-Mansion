@@ -1,6 +1,6 @@
 {
-	"values": [
-	    "e3_demo:room/original/kitchen/load/set_loaded",
+    "values": [
+        "e3_demo:room/original/kitchen/load/set_loaded",
         "e3_demo:room/original/kitchen/load/lights",
         "e3_demo:room/original/kitchen/load/back_yard_door",
         "e3_demo:room/original/kitchen/load/dining_room_door",
@@ -10,5 +10,5 @@
         "e3_demo:room/original/kitchen/load/painting_1",
         "e3_demo:room/original/kitchen/load/painting_2",
         "e3_demo:room/original/kitchen/load/room_clear_chest"
-	]
+    ]
 }

@@ -1,24 +1,24 @@
 {
-	"values": [
-		"3ds_remake:room/hidden/ceramics_studio/interactions/manual/box_1",
-		"3ds_remake:room/hidden/ceramics_studio/interactions/manual/box_2",
-		"3ds_remake:room/hidden/ceramics_studio/interactions/manual/box_3",
-		"3ds_remake:room/hidden/ceramics_studio/interactions/manual/box_4",
-		"3ds_remake:room/hidden/ceramics_studio/interactions/manual/chair",
-		"3ds_remake:room/hidden/ceramics_studio/interactions/manual/crate_1",
-		"3ds_remake:room/hidden/ceramics_studio/interactions/manual/crate_2",
-		"3ds_remake:room/hidden/ceramics_studio/interactions/manual/crate_3",
-		"3ds_remake:room/hidden/ceramics_studio/interactions/manual/crate_4",
-		"3ds_remake:room/hidden/ceramics_studio/interactions/manual/crate_5",
-		"3ds_remake:room/hidden/ceramics_studio/interactions/manual/crate_6",
-		"3ds_remake:room/hidden/ceramics_studio/interactions/manual/crate_7",
-		"3ds_remake:room/hidden/ceramics_studio/interactions/manual/crate_8",
-		"3ds_remake:room/hidden/ceramics_studio/interactions/manual/crate_9",
-		"3ds_remake:room/hidden/ceramics_studio/interactions/manual/crate_10",
-		"3ds_remake:room/hidden/ceramics_studio/interactions/manual/crate_11",
-		"3ds_remake:room/hidden/ceramics_studio/interactions/manual/crate_12",
-		"3ds_remake:room/hidden/ceramics_studio/interactions/manual/crate_13",
-		"3ds_remake:room/hidden/ceramics_studio/interactions/manual/lamp",
-		"3ds_remake:room/hidden/ceramics_studio/interactions/manual/table"
-	]
+    "values": [
+        "3ds_remake:room/hidden/ceramics_studio/interactions/manual/box_1",
+        "3ds_remake:room/hidden/ceramics_studio/interactions/manual/box_2",
+        "3ds_remake:room/hidden/ceramics_studio/interactions/manual/box_3",
+        "3ds_remake:room/hidden/ceramics_studio/interactions/manual/box_4",
+        "3ds_remake:room/hidden/ceramics_studio/interactions/manual/chair",
+        "3ds_remake:room/hidden/ceramics_studio/interactions/manual/crate_1",
+        "3ds_remake:room/hidden/ceramics_studio/interactions/manual/crate_2",
+        "3ds_remake:room/hidden/ceramics_studio/interactions/manual/crate_3",
+        "3ds_remake:room/hidden/ceramics_studio/interactions/manual/crate_4",
+        "3ds_remake:room/hidden/ceramics_studio/interactions/manual/crate_5",
+        "3ds_remake:room/hidden/ceramics_studio/interactions/manual/crate_6",
+        "3ds_remake:room/hidden/ceramics_studio/interactions/manual/crate_7",
+        "3ds_remake:room/hidden/ceramics_studio/interactions/manual/crate_8",
+        "3ds_remake:room/hidden/ceramics_studio/interactions/manual/crate_9",
+        "3ds_remake:room/hidden/ceramics_studio/interactions/manual/crate_10",
+        "3ds_remake:room/hidden/ceramics_studio/interactions/manual/crate_11",
+        "3ds_remake:room/hidden/ceramics_studio/interactions/manual/crate_12",
+        "3ds_remake:room/hidden/ceramics_studio/interactions/manual/crate_13",
+        "3ds_remake:room/hidden/ceramics_studio/interactions/manual/lamp",
+        "3ds_remake:room/hidden/ceramics_studio/interactions/manual/table"
+    ]
 }

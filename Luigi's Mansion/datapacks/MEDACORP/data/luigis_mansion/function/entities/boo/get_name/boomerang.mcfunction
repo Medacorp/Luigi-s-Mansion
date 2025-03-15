@@ -1,1 +1,1 @@
-data modify storage luigis_mansion:data entity.name set value '{"type":"translatable","translate":"luigis_mansion:entity.boomerang"}'
+data modify storage luigis_mansion:data entity.name set value {type:"translatable",translate:"luigis_mansion:entity.boomerang"}

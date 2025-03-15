@@ -1,7 +1,7 @@
 {
-	"values": [
-		"luigis_mansion:room/hidden/foyer/interactions/gameboy_horror_scan/chandelier",
-		"luigis_mansion:room/hidden/foyer/interactions/gameboy_horror_scan/lamp",
-		"luigis_mansion:room/hidden/foyer/interactions/gameboy_horror_scan/table"
-	]
+    "values": [
+        "luigis_mansion:room/hidden/foyer/interactions/gameboy_horror_scan/chandelier",
+        "luigis_mansion:room/hidden/foyer/interactions/gameboy_horror_scan/lamp",
+        "luigis_mansion:room/hidden/foyer/interactions/gameboy_horror_scan/table"
+    ]
 }

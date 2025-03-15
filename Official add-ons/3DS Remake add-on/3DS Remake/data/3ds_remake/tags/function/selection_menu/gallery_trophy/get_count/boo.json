@@ -1,6 +1,6 @@
 {
-	"values": [
-		"3ds_remake:selection_menu/gallery_trophy/get_count/boo/bamboo",
+    "values": [
+        "3ds_remake:selection_menu/gallery_trophy/get_count/boo/bamboo",
         "3ds_remake:selection_menu/gallery_trophy/get_count/boo/boo_b_hatch",
         "3ds_remake:selection_menu/gallery_trophy/get_count/boo/boo_la_la",
         "3ds_remake:selection_menu/gallery_trophy/get_count/boo/boodacious",
@@ -37,5 +37,5 @@
         "3ds_remake:selection_menu/gallery_trophy/get_count/boo/tamboorine",
         "3ds_remake:selection_menu/gallery_trophy/get_count/boo/turboo",
         "3ds_remake:selection_menu/gallery_trophy/get_count/boo/underboo"
-	]
+    ]
 }

@@ -1,6 +1,6 @@
 {
-	"values": [
-	    "luigis_mansion:room/normal/dining_room/load/set_loaded",
+    "values": [
+        "luigis_mansion:room/normal/dining_room/load/set_loaded",
         "luigis_mansion:room/normal/dining_room/load/lights",
         "luigis_mansion:room/normal/dining_room/load/cheese",
         "luigis_mansion:room/normal/dining_room/load/cobweb_1",
@@ -16,5 +16,5 @@
         "luigis_mansion:room/normal/dining_room/load/torch_2",
         "luigis_mansion:room/normal/dining_room/load/wooden_triple_huge_candelabra_1",
         "luigis_mansion:room/normal/dining_room/load/wooden_triple_huge_candelabra_2"
-	]
+    ]
 }

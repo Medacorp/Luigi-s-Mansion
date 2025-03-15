@@ -1,7 +1,7 @@
 {
-	"values": [
-		"luigis_mansion:room/normal/astral_hall/interactions/gameboy_horror_scan/lamp",
-		"luigis_mansion:room/normal/astral_hall/interactions/gameboy_horror_scan/table_1",
-		"luigis_mansion:room/normal/astral_hall/interactions/gameboy_horror_scan/table_2"
-	]
+    "values": [
+        "luigis_mansion:room/normal/astral_hall/interactions/gameboy_horror_scan/lamp",
+        "luigis_mansion:room/normal/astral_hall/interactions/gameboy_horror_scan/table_1",
+        "luigis_mansion:room/normal/astral_hall/interactions/gameboy_horror_scan/table_2"
+    ]
 }

@@ -1,8 +1,8 @@
 {
-	"values": [
-		"luigis_mansion:room/hidden/secret_altar/interactions/manual/lamp_1",
-		"luigis_mansion:room/hidden/secret_altar/interactions/manual/lamp_2",
-		"luigis_mansion:room/hidden/secret_altar/interactions/manual/lamp_3",
-		"luigis_mansion:room/hidden/secret_altar/interactions/manual/mirror"
-	]
+    "values": [
+        "luigis_mansion:room/hidden/secret_altar/interactions/manual/lamp_1",
+        "luigis_mansion:room/hidden/secret_altar/interactions/manual/lamp_2",
+        "luigis_mansion:room/hidden/secret_altar/interactions/manual/lamp_3",
+        "luigis_mansion:room/hidden/secret_altar/interactions/manual/mirror"
+    ]
 }

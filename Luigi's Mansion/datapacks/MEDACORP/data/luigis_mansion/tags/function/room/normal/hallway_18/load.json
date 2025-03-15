@@ -1,11 +1,11 @@
 {
-	"values": [
-	    "luigis_mansion:room/normal/hallway_18/load/set_loaded",
+    "values": [
+        "luigis_mansion:room/normal/hallway_18/load/set_loaded",
         "luigis_mansion:room/normal/hallway_18/load/lights",
         "luigis_mansion:room/normal/hallway_18/load/balcony_2_door",
         "luigis_mansion:room/normal/hallway_18/load/ceramics_studio_fake_door",
         "luigis_mansion:room/normal/hallway_18/load/clockwork_room_fake_door",
         "luigis_mansion:room/normal/hallway_18/load/cobweb",
         "luigis_mansion:room/normal/hallway_18/load/lamp"
-	]
+    ]
 }

@@ -1,5 +1,5 @@
 {
-	"values": [
+    "values": [
         "luigis_mansion:other/music/cannot_overwrite/exterior",
         "luigis_mansion:other/music/cannot_overwrite/area_clear",
         "luigis_mansion:other/music/cannot_overwrite/bogmire_battle",
@@ -14,5 +14,5 @@
         "luigis_mansion:other/music/cannot_overwrite/talking_ghosts",
         "luigis_mansion:other/music/cannot_overwrite/secret_altar",
         "luigis_mansion:other/music/cannot_overwrite/toad"
-	]
+    ]
 }

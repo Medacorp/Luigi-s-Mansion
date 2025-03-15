@@ -1,1 +1,1 @@
-data modify entity @s ArmorItems[3] merge value {components:{"minecraft:item_model":"3ds_remake:furniture/door_frame/red_metal"}}
+data modify entity @s equipment.head merge value {components:{"minecraft:item_model":"3ds_remake:furniture/door_frame/red_metal"}}

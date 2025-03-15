@@ -9,4 +9,4 @@ scoreboard players reset #temp Time
 execute if entity @s[scores={AnimationProgress=15}] run playsound luigis_mansion:furniture.rocking_horse.move_backward block @a[tag=same_room] ~ ~ ~ 1
 execute if entity @s[scores={AnimationProgress=35}] run playsound luigis_mansion:furniture.rocking_horse.move_forward block @a[tag=same_room] ~ ~ ~ 1
 scoreboard players set @s[scores={AnimationProgress=40}] AnimationProgress 0
-data remove entity @s[scores={AnimationProgress=0},tag=!was_shaking] ArmorItems[3].components."minecraft:custom_data".animation
+data remove entity @s[scores={AnimationProgress=0},tag=!was_shaking] data.animation

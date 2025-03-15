@@ -5,6 +5,6 @@ execute if data storage luigis_mansion:data current_state.high_scores[0] run fun
 data modify storage luigis_mansion:data current_state.high_scores set from storage luigis_mansion:data current_state.new_high_scores
 data remove storage luigis_mansion:data current_state.new_high_scores
 scoreboard players reset #temp Money
-execute if score #temp Time matches 1.. run data modify block 768 78 -17 front_text.messages[0] set value '{"type":"translatable","translate":"luigis_mansion:sign.gallery.record","with":[{"type":"score","score":{"objective":"Time","name":"#temp"}}]}'
-execute if score #temp Time matches 0 run data modify block 768 78 -17 front_text.messages[0] set value '{"type":"translatable","translate":"luigis_mansion:sign.gallery.record.no_money"}'
+execute if score #temp Time matches 1.. run data modify block 768 78 -17 front_text.messages[0] set value {type:"translatable",translate:"luigis_mansion:sign.gallery.record",with:[{type:"score",score:{objective:"Time",name:"#temp"}}]}
+execute if score #temp Time matches 0 run data modify block 768 78 -17 front_text.messages[0] set value {type:"translatable",translate:"luigis_mansion:sign.gallery.record.no_money"}
 scoreboard players reset #temp Time

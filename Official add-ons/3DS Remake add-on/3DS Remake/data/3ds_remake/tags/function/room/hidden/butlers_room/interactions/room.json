@@ -1,13 +1,13 @@
 {
-	"values": [
-		"3ds_remake:room/hidden/butlers_room/interactions/room/closet",
-		"3ds_remake:room/hidden/butlers_room/interactions/room/hole",
-		"3ds_remake:room/hidden/butlers_room/interactions/room/ironing_table",
-		"3ds_remake:room/hidden/butlers_room/interactions/room/lamp",
-		"3ds_remake:room/hidden/butlers_room/interactions/room/sewing_machine",
-		"3ds_remake:room/hidden/butlers_room/interactions/room/table",
-		"3ds_remake:room/hidden/butlers_room/interactions/room/toilet_paper",
-		"3ds_remake:room/hidden/butlers_room/interactions/room/vacuumable_1",
-		"3ds_remake:room/hidden/butlers_room/interactions/room/vacuumable_2"
-	]
+    "values": [
+        "3ds_remake:room/hidden/butlers_room/interactions/room/closet",
+        "3ds_remake:room/hidden/butlers_room/interactions/room/hole",
+        "3ds_remake:room/hidden/butlers_room/interactions/room/ironing_table",
+        "3ds_remake:room/hidden/butlers_room/interactions/room/lamp",
+        "3ds_remake:room/hidden/butlers_room/interactions/room/sewing_machine",
+        "3ds_remake:room/hidden/butlers_room/interactions/room/table",
+        "3ds_remake:room/hidden/butlers_room/interactions/room/toilet_paper",
+        "3ds_remake:room/hidden/butlers_room/interactions/room/vacuumable_1",
+        "3ds_remake:room/hidden/butlers_room/interactions/room/vacuumable_2"
+    ]
 }

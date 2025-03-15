@@ -35,7 +35,7 @@ execute at @s[scores={AnimationProgress=117}] rotated ~ 0 run teleport @s ^ ^-0.
 execute at @s[scores={AnimationProgress=118}] rotated ~ 0 run teleport @s ^ ^-0.26 ^
 execute at @s[scores={AnimationProgress=119}] rotated ~ 0 run teleport @s ^ ^-0.13 ^
 data merge entity @s[scores={AnimationProgress=1}] {Pose:{Head:[0.0f,0.0f,0.01f]}}
-data modify entity @s[scores={AnimationProgress=15}] ArmorItems[3] merge from entity @s ArmorItems[3].components."minecraft:custom_data".model_data.squished_left
+data modify entity @s[scores={AnimationProgress=15}] equipment.head merge from entity @s equipment.head.components."minecraft:custom_data".model_data.squished_left
 execute store result score #temp Time run data get entity @s Pose.Head[0]
 execute if entity @s[scores={AnimationProgress=63..92}] store result entity @s Pose.Head[0] float 1 run scoreboard players add #temp Time 3
 execute if entity @s[scores={AnimationProgress=111..120}] store result entity @s Pose.Head[0] float 1 run scoreboard players remove #temp Time 9
@@ -46,7 +46,7 @@ execute if entity @s[scores={AnimationProgress=97..100}] store result entity @s 
 execute if entity @s[scores={AnimationProgress=101..102}] store result entity @s Pose.Head[2] float 1 run scoreboard players remove #temp Time 2
 execute if entity @s[scores={AnimationProgress=103..106}] store result entity @s Pose.Head[2] float 1 run scoreboard players add #temp Time 2
 execute if entity @s[scores={AnimationProgress=107..110}] store result entity @s Pose.Head[2] float 1 run scoreboard players remove #temp Time 2
-data modify entity @s[scores={AnimationProgress=110}] ArmorItems[3] merge from entity @s ArmorItems[3].components."minecraft:custom_data".model_data.default
+data modify entity @s[scores={AnimationProgress=110}] equipment.head merge from entity @s equipment.head.components."minecraft:custom_data".model_data.default
 scoreboard players reset #temp Time
 data merge entity @s[scores={AnimationProgress=140..}] {Pose:{Head:[0.0f,0.0f,0.01f]}}
 scoreboard players set @s[scores={AnimationProgress=140..}] AnimationProgress 0

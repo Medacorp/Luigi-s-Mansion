@@ -1,6 +1,6 @@
 {
-	"values": [
-	    "luigis_mansion:room/hidden/parlor/load/set_loaded",
+    "values": [
+        "luigis_mansion:room/hidden/parlor/load/set_loaded",
         "luigis_mansion:room/hidden/parlor/load/lights",
         "luigis_mansion:room/hidden/parlor/load/anteroom_door",
         "luigis_mansion:room/hidden/parlor/load/cobweb_1",
@@ -20,5 +20,5 @@
         "luigis_mansion:room/hidden/parlor/load/wooden_candelabra",
         "luigis_mansion:room/hidden/parlor/load/wooden_triple_huge_candelabra_1",
         "luigis_mansion:room/hidden/parlor/load/wooden_triple_huge_candelabra_2"
-	]
+    ]
 }

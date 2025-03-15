@@ -1,2 +1,2 @@
-tellraw @s[tag=show_credits] {"type":"translatable","translate":"chat.type.text","with":[{"type":"translatable","translate":"luigis_mansion:entity.mansion","color":"green"},{"type":"translatable","translate":"luigis_mansion:message.use_interact_during_credits"}]}
+tellraw @s[tag=show_credits] {type:"translatable",translate:"chat.type.text",with:[{type:"translatable",translate:"luigis_mansion:entity.mansion",color:"green"},{type:"translatable",translate:"luigis_mansion:message.use_interact_during_credits"}]}
 execute if entity @s[tag=show_credits] run scoreboard players set @e[tag=me,limit=1] UseItem 0

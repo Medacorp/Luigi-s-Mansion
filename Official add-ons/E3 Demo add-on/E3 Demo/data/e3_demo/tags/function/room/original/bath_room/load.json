@@ -1,7 +1,7 @@
 {
-	"values": [
-	    "e3_demo:room/original/bath_room/load/set_loaded",
+    "values": [
+        "e3_demo:room/original/bath_room/load/set_loaded",
         "e3_demo:room/original/bath_room/load/lights",
         "e3_demo:room/original/bath_room/load/hallway_6_door"
-	]
+    ]
 }

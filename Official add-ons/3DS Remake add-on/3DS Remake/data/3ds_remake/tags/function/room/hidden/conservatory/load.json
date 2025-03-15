@@ -1,6 +1,6 @@
 {
-	"values": [
-	    "3ds_remake:room/hidden/conservatory/load/set_loaded",
+    "values": [
+        "3ds_remake:room/hidden/conservatory/load/set_loaded",
         "3ds_remake:room/hidden/conservatory/load/lights",
         "3ds_remake:room/hidden/conservatory/load/cello",
         "3ds_remake:room/hidden/conservatory/load/drum_1",
@@ -17,5 +17,5 @@
         "3ds_remake:room/hidden/conservatory/load/saxophone",
         "3ds_remake:room/hidden/conservatory/load/vacuumable",
         "3ds_remake:room/hidden/conservatory/load/xylophone"
-	]
+    ]
 }

@@ -1,6 +1,6 @@
 {
-	"values": [
-	    "luigis_mansion:room/normal/master_bedroom/load/set_loaded",
+    "values": [
+        "luigis_mansion:room/normal/master_bedroom/load/set_loaded",
         "luigis_mansion:room/normal/master_bedroom/load/lights",
         "luigis_mansion:room/normal/master_bedroom/load/cobweb",
         "luigis_mansion:room/normal/master_bedroom/load/fan",
@@ -13,5 +13,5 @@
         "luigis_mansion:room/normal/master_bedroom/load/painting_5",
         "luigis_mansion:room/normal/master_bedroom/load/room_clear_chest",
         "luigis_mansion:room/normal/master_bedroom/load/table_2"
-	]
+    ]
 }

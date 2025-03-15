@@ -1,6 +1,6 @@
 {
-	"values": [
-	    "luigis_mansion:room/hidden/nursery/load/set_loaded",
+    "values": [
+        "luigis_mansion:room/hidden/nursery/load/set_loaded",
         "luigis_mansion:room/hidden/nursery/load/lights",
         "luigis_mansion:room/hidden/nursery/load/ball",
         "luigis_mansion:room/hidden/nursery/load/cobweb_1",
@@ -12,5 +12,5 @@
         "luigis_mansion:room/hidden/nursery/load/painting_3",
         "luigis_mansion:room/hidden/nursery/load/rocking_horse",
         "luigis_mansion:room/hidden/nursery/load/room_clear_chest"
-	]
+    ]
 }

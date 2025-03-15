@@ -28,7 +28,8 @@
                                             "model": "luigis_mansion:entity/luigi/hat_solid",
                                             "tints": [
                                                 {
-                                                    "type": "minecraft:dye",
+                                                    "type": "minecraft:custom_model_data",
+                                                    "index": 0,
                                                     "default": 37129
                                                 }
                                             ]
@@ -50,7 +51,8 @@
                                             "model": "luigis_mansion:entity/luigi/hat_solid",
                                             "tints": [
                                                 {
-                                                    "type": "minecraft:dye",
+                                                    "type": "minecraft:custom_model_data",
+                                                    "index": 0,
                                                     "default": 37129
                                                 }
                                             ]
@@ -72,7 +74,8 @@
                                             "model": "luigis_mansion:entity/luigi/hat_solid",
                                             "tints": [
                                                 {
-                                                    "type": "minecraft:dye",
+                                                    "type": "minecraft:custom_model_data",
+                                                    "index": 0,
                                                     "default": 37129
                                                 }
                                             ]
@@ -94,7 +97,8 @@
                                             "model": "luigis_mansion:entity/luigi/hat_solid",
                                             "tints": [
                                                 {
-                                                    "type": "minecraft:dye",
+                                                    "type": "minecraft:custom_model_data",
+                                                    "index": 0,
                                                     "default": 37129
                                                 }
                                             ]
@@ -123,7 +127,8 @@
                                     "model": "luigis_mansion:entity/luigi/hat",
                                     "tints": [
                                         {
-                                            "type": "minecraft:dye",
+                                            "type": "minecraft:custom_model_data",
+                                            "index": 0,
                                             "default": 37129
                                         }
                                     ]
@@ -142,7 +147,8 @@
                                     "model": "luigis_mansion:entity/luigi/hat_solid",
                                     "tints": [
                                         {
-                                            "type": "minecraft:dye",
+                                            "type": "minecraft:custom_model_data",
+                                            "index": 0,
                                             "default": 37129
                                         }
                                     ]
@@ -169,7 +175,8 @@
                                             "model": "luigis_mansion:entity/luigi/hat_solid_2",
                                             "tints": [
                                                 {
-                                                    "type": "minecraft:dye",
+                                                    "type": "minecraft:custom_model_data",
+                                                    "index": 0,
                                                     "default": 37129
                                                 }
                                             ]
@@ -191,7 +198,8 @@
                                             "model": "luigis_mansion:entity/luigi/hat_solid_2",
                                             "tints": [
                                                 {
-                                                    "type": "minecraft:dye",
+                                                    "type": "minecraft:custom_model_data",
+                                                    "index": 0,
                                                     "default": 37129
                                                 }
                                             ]
@@ -213,7 +221,8 @@
                                             "model": "luigis_mansion:entity/luigi/hat_solid_2",
                                             "tints": [
                                                 {
-                                                    "type": "minecraft:dye",
+                                                    "type": "minecraft:custom_model_data",
+                                                    "index": 0,
                                                     "default": 37129
                                                 }
                                             ]
@@ -235,7 +244,8 @@
                                             "model": "luigis_mansion:entity/luigi/hat_solid_2",
                                             "tints": [
                                                 {
-                                                    "type": "minecraft:dye",
+                                                    "type": "minecraft:custom_model_data",
+                                                    "index": 0,
                                                     "default": 37129
                                                 }
                                             ]
@@ -264,7 +274,8 @@
                                     "model": "luigis_mansion:entity/luigi/hat_2",
                                     "tints": [
                                         {
-                                            "type": "minecraft:dye",
+                                            "type": "minecraft:custom_model_data",
+                                            "index": 0,
                                             "default": 37129
                                         }
                                     ]
@@ -283,7 +294,8 @@
                                     "model": "luigis_mansion:entity/luigi/hat_solid_2",
                                     "tints": [
                                         {
-                                            "type": "minecraft:dye",
+                                            "type": "minecraft:custom_model_data",
+                                            "index": 0,
                                             "default": 37129
                                         }
                                     ]
@@ -327,7 +339,8 @@
                                     "model": "luigis_mansion:entity/luigi/right_arm",
                                     "tints": [
                                         {
-                                            "type": "minecraft:dye",
+                                            "type": "minecraft:custom_model_data",
+                                            "index": 0,
                                             "default": 37129
                                         }
                                     ]
@@ -353,7 +366,8 @@
                                     "model": "luigis_mansion:entity/luigi/left_arm",
                                     "tints": [
                                         {
-                                            "type": "minecraft:dye",
+                                            "type": "minecraft:custom_model_data",
+                                            "index": 0,
                                             "default": 37129
                                         }
                                     ]
@@ -374,7 +388,8 @@
                                             "model": "luigis_mansion:entity/luigi/squished_right",
                                             "tints": [
                                                 {
-                                                    "type": "minecraft:dye",
+                                                    "type": "minecraft:custom_model_data",
+                                                    "index": 0,
                                                     "default": 37129
                                                 }
                                             ]
@@ -387,7 +402,8 @@
                                             "model": "luigis_mansion:entity/luigi/squished_left",
                                             "tints": [
                                                 {
-                                                    "type": "minecraft:dye",
+                                                    "type": "minecraft:custom_model_data",
+                                                    "index": 0,
                                                     "default": 37129
                                                 }
                                             ]
@@ -399,7 +415,8 @@
                                     "model": "luigis_mansion:entity/luigi/body",
                                     "tints": [
                                         {
-                                            "type": "minecraft:dye",
+                                            "type": "minecraft:custom_model_data",
+                                            "index": 0,
                                             "default": 37129
                                         }
                                     ]
@@ -425,7 +442,8 @@
                                     "model": "luigis_mansion:entity/luigi/right_leg",
                                     "tints": [
                                         {
-                                            "type": "minecraft:dye",
+                                            "type": "minecraft:custom_model_data",
+                                            "index": 0,
                                             "default": 37129
                                         }
                                     ]
@@ -451,7 +469,8 @@
                                     "model": "luigis_mansion:entity/luigi/left_leg",
                                     "tints": [
                                         {
-                                            "type": "minecraft:dye",
+                                            "type": "minecraft:custom_model_data",
+                                            "index": 0,
                                             "default": 37129
                                         }
                                     ]
@@ -478,7 +497,8 @@
                                             "model": "luigis_mansion:entity/luigi/hat_solid",
                                             "tints": [
                                                 {
-                                                    "type": "minecraft:dye",
+                                                    "type": "minecraft:custom_model_data",
+                                                    "index": 0,
                                                     "default": 37129
                                                 }
                                             ]
@@ -500,7 +520,8 @@
                                             "model": "luigis_mansion:entity/luigi/hat_solid",
                                             "tints": [
                                                 {
-                                                    "type": "minecraft:dye",
+                                                    "type": "minecraft:custom_model_data",
+                                                    "index": 0,
                                                     "default": 37129
                                                 }
                                             ]
@@ -522,7 +543,8 @@
                                             "model": "luigis_mansion:entity/luigi/hat_solid",
                                             "tints": [
                                                 {
-                                                    "type": "minecraft:dye",
+                                                    "type": "minecraft:custom_model_data",
+                                                    "index": 0,
                                                     "default": 37129
                                                 }
                                             ]
@@ -544,7 +566,8 @@
                                             "model": "luigis_mansion:entity/luigi/hat_solid",
                                             "tints": [
                                                 {
-                                                    "type": "minecraft:dye",
+                                                    "type": "minecraft:custom_model_data",
+                                                    "index": 0,
                                                     "default": 37129
                                                 }
                                             ]
@@ -573,7 +596,8 @@
                                     "model": "luigis_mansion:entity/luigi/hat",
                                     "tints": [
                                         {
-                                            "type": "minecraft:dye",
+                                            "type": "minecraft:custom_model_data",
+                                            "index": 0,
                                             "default": 37129
                                         }
                                     ]
@@ -592,7 +616,8 @@
                                     "model": "luigis_mansion:entity/luigi/hat_solid",
                                     "tints": [
                                         {
-                                            "type": "minecraft:dye",
+                                            "type": "minecraft:custom_model_data",
+                                            "index": 0,
                                             "default": 37129
                                         }
                                     ]
@@ -626,7 +651,8 @@
                                     "model": "luigis_mansion:entity/luigi/right_arm_2",
                                     "tints": [
                                         {
-                                            "type": "minecraft:dye",
+                                            "type": "minecraft:custom_model_data",
+                                            "index": 0,
                                             "default": 37129
                                         }
                                     ]
@@ -652,7 +678,8 @@
                                     "model": "luigis_mansion:entity/luigi/left_arm_2",
                                     "tints": [
                                         {
-                                            "type": "minecraft:dye",
+                                            "type": "minecraft:custom_model_data",
+                                            "index": 0,
                                             "default": 37129
                                         }
                                     ]
@@ -673,7 +700,8 @@
                                             "model": "luigis_mansion:entity/luigi/squished_right_2",
                                             "tints": [
                                                 {
-                                                    "type": "minecraft:dye",
+                                                    "type": "minecraft:custom_model_data",
+                                                    "index": 0,
                                                     "default": 37129
                                                 }
                                             ]
@@ -686,7 +714,8 @@
                                             "model": "luigis_mansion:entity/luigi/squished_left_2",
                                             "tints": [
                                                 {
-                                                    "type": "minecraft:dye",
+                                                    "type": "minecraft:custom_model_data",
+                                                    "index": 0,
                                                     "default": 37129
                                                 }
                                             ]
@@ -698,7 +727,8 @@
                                     "model": "luigis_mansion:entity/luigi/body_2",
                                     "tints": [
                                         {
-                                            "type": "minecraft:dye",
+                                            "type": "minecraft:custom_model_data",
+                                            "index": 0,
                                             "default": 37129
                                         }
                                     ]
@@ -724,7 +754,8 @@
                                     "model": "luigis_mansion:entity/luigi/right_leg_2",
                                     "tints": [
                                         {
-                                            "type": "minecraft:dye",
+                                            "type": "minecraft:custom_model_data",
+                                            "index": 0,
                                             "default": 37129
                                         }
                                     ]
@@ -750,7 +781,8 @@
                                     "model": "luigis_mansion:entity/luigi/left_leg_2",
                                     "tints": [
                                         {
-                                            "type": "minecraft:dye",
+                                            "type": "minecraft:custom_model_data",
+                                            "index": 0,
                                             "default": 37129
                                         }
                                     ]
@@ -777,7 +809,8 @@
                                             "model": "luigis_mansion:entity/luigi/hat_solid_2",
                                             "tints": [
                                                 {
-                                                    "type": "minecraft:dye",
+                                                    "type": "minecraft:custom_model_data",
+                                                    "index": 0,
                                                     "default": 37129
                                                 }
                                             ]
@@ -799,7 +832,8 @@
                                             "model": "luigis_mansion:entity/luigi/hat_solid_2",
                                             "tints": [
                                                 {
-                                                    "type": "minecraft:dye",
+                                                    "type": "minecraft:custom_model_data",
+                                                    "index": 0,
                                                     "default": 37129
                                                 }
                                             ]
@@ -821,7 +855,8 @@
                                             "model": "luigis_mansion:entity/luigi/hat_solid_2",
                                             "tints": [
                                                 {
-                                                    "type": "minecraft:dye",
+                                                    "type": "minecraft:custom_model_data",
+                                                    "index": 0,
                                                     "default": 37129
                                                 }
                                             ]
@@ -843,7 +878,8 @@
                                             "model": "luigis_mansion:entity/luigi/hat_solid_2",
                                             "tints": [
                                                 {
-                                                    "type": "minecraft:dye",
+                                                    "type": "minecraft:custom_model_data",
+                                                    "index": 0,
                                                     "default": 37129
                                                 }
                                             ]
@@ -872,7 +908,8 @@
                                     "model": "luigis_mansion:entity/luigi/hat_2",
                                     "tints": [
                                         {
-                                            "type": "minecraft:dye",
+                                            "type": "minecraft:custom_model_data",
+                                            "index": 0,
                                             "default": 37129
                                         }
                                     ]
@@ -891,7 +928,8 @@
                                     "model": "luigis_mansion:entity/luigi/hat_solid_2",
                                     "tints": [
                                         {
-                                            "type": "minecraft:dye",
+                                            "type": "minecraft:custom_model_data",
+                                            "index": 0,
                                             "default": 37129
                                         }
                                     ]

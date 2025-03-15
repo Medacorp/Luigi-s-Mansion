@@ -1,10 +1,10 @@
 {
-	"values": [
-	    "luigis_mansion:room/normal/hallway_16/load/set_loaded",
+    "values": [
+        "luigis_mansion:room/normal/hallway_16/load/set_loaded",
         "luigis_mansion:room/normal/hallway_16/load/lights",
         "luigis_mansion:room/normal/hallway_16/load/cobweb",
         "luigis_mansion:room/normal/hallway_16/load/lamp",
         "luigis_mansion:room/normal/hallway_16/load/safari_room_door",
         "luigis_mansion:room/normal/hallway_16/load/telephone_room_fake_door"
-	]
+    ]
 }

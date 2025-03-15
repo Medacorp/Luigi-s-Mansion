@@ -8,7 +8,7 @@ tag @s[scores={SpawnTime=..20}] remove in_fire
 tag @s[scores={SpawnTime=..20}] remove in_water
 tag @s[scores={SpawnTime=..20}] remove in_ice
 execute if entity @s[tag=spit] run function luigis_mansion:entities/wool/spit
-execute if entity @s[tag=!in_vacuum,tag=!can_spit_2,tag=vacuumable,tag=!spit] unless data entity @s ArmorItems[3].components."minecraft:custom_data".path run function luigis_mansion:entities/wool/set_random_path
+execute if entity @s[tag=!in_vacuum,tag=!can_spit_2,tag=vacuumable,tag=!spit] unless data entity @s data.path run function luigis_mansion:entities/wool/set_random_path
 execute if entity @s[tag=!in_vacuum,tag=!can_spit_2,tag=vacuumable,tag=!spit] run function luigis_mansion:entities/wool/follow_path
 execute at @s[tag=!in_vacuum,tag=!can_spit_2,tag=vacuumable,tag=!spit] as @e[tag=luigi,scores={Invulnerable=0},distance=..0.7] run function luigis_mansion:entities/luigi/animation/set/knockback/medium
 execute store result score @s HomeRotation run data get entity @s Pose.Head[0]

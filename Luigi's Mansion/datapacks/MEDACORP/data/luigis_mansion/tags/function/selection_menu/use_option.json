@@ -1,8 +1,8 @@
 {
-	"values": [
-		"luigis_mansion:selection_menu/dialog/use_option",
-		"luigis_mansion:selection_menu/extra_gallery_door/use_option",
-		"luigis_mansion:selection_menu/game_boy_horror/use_option",
-		"luigis_mansion:selection_menu/mansion_reset/use_option"
-	]
+    "values": [
+        "luigis_mansion:selection_menu/dialog/use_option",
+        "luigis_mansion:selection_menu/extra_gallery_door/use_option",
+        "luigis_mansion:selection_menu/game_boy_horror/use_option",
+        "luigis_mansion:selection_menu/mansion_reset/use_option"
+    ]
 }

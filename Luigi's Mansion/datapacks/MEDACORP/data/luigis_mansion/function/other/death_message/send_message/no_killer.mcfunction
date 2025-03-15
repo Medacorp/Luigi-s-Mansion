@@ -1,1 +1,1 @@
-$tellraw @a {"type":"translatable","translate":"$(namespace):death.$(id)","with":[{"type":"selector","selector":"@s"}]}
+$tellraw @a {type:"translatable",translate:"$(namespace):death.$(id)",with:[{type:"selector",selector:"@s"}]}

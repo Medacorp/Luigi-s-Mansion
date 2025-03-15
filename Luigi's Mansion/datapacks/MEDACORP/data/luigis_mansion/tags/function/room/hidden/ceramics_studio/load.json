@@ -1,6 +1,6 @@
 {
-	"values": [
-	    "luigis_mansion:room/hidden/ceramics_studio/load/set_loaded",
+    "values": [
+        "luigis_mansion:room/hidden/ceramics_studio/load/set_loaded",
         "luigis_mansion:room/hidden/ceramics_studio/load/lights",
         "luigis_mansion:room/hidden/ceramics_studio/load/armory_door",
         "luigis_mansion:room/hidden/ceramics_studio/load/cobweb",
@@ -15,5 +15,5 @@
         "luigis_mansion:room/hidden/ceramics_studio/load/small_trophy",
         "luigis_mansion:room/hidden/ceramics_studio/load/tall_neck_vase",
         "luigis_mansion:room/hidden/ceramics_studio/load/terracotta_vase"
-	]
+    ]
 }

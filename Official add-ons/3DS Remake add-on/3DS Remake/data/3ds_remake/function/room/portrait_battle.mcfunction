@@ -10,7 +10,7 @@ scoreboard players reset #temp Room
 execute store result score #temp Time run data get storage luigis_mansion:data current_state.current_data.in_mansion_time
 execute unless score #freeze_timer Selected matches 1 store result bossbar 3ds_remake:portrait_battle value run scoreboard players get #temp Time
 execute unless score #freeze_timer Selected matches 1 run function 3ds_remake:room/portrait_battle/convert_time
-execute unless score #freeze_timer Selected matches 1 run bossbar set 3ds_remake:portrait_battle name {"type":"translatable","translate":"3ds_remake:message.gallery.portrait_battle.time","color":"white","with":[{"type":"score","score":{"name":"#temp6","objective":"Time"}},{"type":"score","score":{"name":"#temp5","objective":"Time"}},{"type":"score","score":{"name":"#temp4","objective":"Time"}},{"type":"score","score":{"name":"#temp3","objective":"Time"}},{"type":"score","score":{"name":"#temp2","objective":"Time"}},{"type":"score","score":{"name":"#temp","objective":"Time"}}]}
+execute unless score #freeze_timer Selected matches 1 run bossbar set 3ds_remake:portrait_battle name {type:"translatable",translate:"3ds_remake:message.gallery.portrait_battle.time",color:"white",with:[{type:"score",score:{name:"#temp6",objective:"Time"}},{type:"score",score:{name:"#temp5",objective:"Time"}},{type:"score",score:{name:"#temp4",objective:"Time"}},{type:"score",score:{name:"#temp3",objective:"Time"}},{type:"score",score:{name:"#temp2",objective:"Time"}},{type:"score",score:{name:"#temp",objective:"Time"}}]}
 bossbar set 3ds_remake:portrait_battle players @a
 scoreboard players reset #temp Time
 scoreboard players reset #temp2 Time
@@ -21,9 +21,8 @@ scoreboard players reset #temp6 Time
 scoreboard players operation @s LastRoom = @s Room
 execute at @s as @a[tag=!same_room] run function luigis_mansion:entities/luigi/move/execute {execute:"positioned ~ ~ ~",teleport:"~ ~ ~"}
 
-execute as @e[type=minecraft:armor_stand] run data remove entity @s ArmorItems[3].components."minecraft:custom_data".loot
-execute as @e[type=minecraft:armor_stand] run data remove entity @s ArmorItems[3].components."minecraft:custom_data".loot_chances
-execute as @e[type=minecraft:marker] run data remove entity @s data.loot
+execute as @e run data remove entity @s data.loot_chances
+execute as @e run data remove entity @s data.loot
 tag @e[tag=furniture,tag=!no_dust] add no_dust
 tag @e[tag=pearl_dropper] remove pearl_dropper
 

@@ -1,6 +1,6 @@
 tag @s add in_ice
 execute if entity @s[scores={FurnitureElementUp=-2147483648..}] run function luigis_mansion:items/poltergust_3000/effect_on_furniture/ice_element
-tag @s[tag=shaken_by_ice,nbt=!{ArmorItems:[{components:{"minecraft:custom_data":{furniture_type:"rolling"}}}]},nbt=!{ArmorItems:[{components:{"minecraft:custom_data":{furniture_type:"swinging"}}}]},nbt=!{ArmorItems:[{components:{"minecraft:custom_data":{furniture_type:"swirling"}}}]}] add shake
-execute if entity @s[tag=searchable_by_ice,nbt={ArmorItems:[{components:{"minecraft:custom_data":{furniture_type:"swinging"}}}]}] run function luigis_mansion:items/poltergust_3000/effect_on_furniture/swing_push
-execute if entity @s[tag=searchable_by_ice,nbt={ArmorItems:[{components:{"minecraft:custom_data":{furniture_type:"swirling"}}}]}] run function luigis_mansion:items/poltergust_3000/effect_on_furniture/swirl
-data modify entity @s ArmorItems[3].components."minecraft:custom_data".hit_by.ice append from entity @e[tag=me,limit=1] UUID
+tag @s[tag=shaken_by_ice,nbt=!{data:{furniture_type:"rolling"}},nbt=!{data:{furniture_type:"swinging"}},nbt=!{data:{furniture_type:"swirling"}}] add shake
+execute if entity @s[tag=searchable_by_ice,nbt={data:{furniture_type:"swinging"}}] run function luigis_mansion:items/poltergust_3000/effect_on_furniture/swing_push
+execute if entity @s[tag=searchable_by_ice,nbt={data:{furniture_type:"swirling"}}] run function luigis_mansion:items/poltergust_3000/effect_on_furniture/swirl
+data modify entity @s data.hit_by.ice append from entity @e[tag=me,limit=1] UUID

@@ -1,6 +1,6 @@
 {
-	"values": [
-	    "luigis_mansion:room/hidden/mirror_room/load/set_loaded",
+    "values": [
+        "luigis_mansion:room/hidden/mirror_room/load/set_loaded",
         "luigis_mansion:room/hidden/mirror_room/load/lights",
         "luigis_mansion:room/hidden/mirror_room/load/fortune_tellers_room_door",
         "luigis_mansion:room/hidden/mirror_room/load/painting",
@@ -8,5 +8,5 @@
         "luigis_mansion:room/hidden/mirror_room/load/tall_bulky_colorful_candelabra_1",
         "luigis_mansion:room/hidden/mirror_room/load/tall_bulky_colorful_candelabra_2",
         "luigis_mansion:room/hidden/mirror_room/load/torch"
-	]
+    ]
 }

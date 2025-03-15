@@ -1,6 +1,6 @@
 {
-	"values": [
-	    "luigis_mansion:room/hidden/sitting_room/load/set_loaded",
+    "values": [
+        "luigis_mansion:room/hidden/sitting_room/load/set_loaded",
         "luigis_mansion:room/hidden/sitting_room/load/lights",
         "luigis_mansion:room/hidden/sitting_room/load/guest_room_door",
         "luigis_mansion:room/hidden/sitting_room/load/hallway_13_door",
@@ -13,5 +13,5 @@
         "luigis_mansion:room/hidden/sitting_room/load/table_mounted_tea_set_and_huge_candelabra",
         "luigis_mansion:room/hidden/sitting_room/load/triple_mounted_huge_wall_candelabra_1",
         "luigis_mansion:room/hidden/sitting_room/load/triple_mounted_huge_wall_candelabra_2"
-	]
+    ]
 }

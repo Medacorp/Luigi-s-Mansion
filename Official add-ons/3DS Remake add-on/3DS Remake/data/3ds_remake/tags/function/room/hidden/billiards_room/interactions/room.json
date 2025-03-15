@@ -1,16 +1,16 @@
 {
-	"values": [
-		"3ds_remake:room/hidden/billiards_room/interactions/room/billiards_table",
-		"3ds_remake:room/hidden/billiards_room/interactions/room/chair_1",
-		"3ds_remake:room/hidden/billiards_room/interactions/room/chair_2",
-		"3ds_remake:room/hidden/billiards_room/interactions/room/chair_3",
-		"3ds_remake:room/hidden/billiards_room/interactions/room/chess_table",
-		"3ds_remake:room/hidden/billiards_room/interactions/room/darting_board",
-		"3ds_remake:room/hidden/billiards_room/interactions/room/painting_1",
-		"3ds_remake:room/hidden/billiards_room/interactions/room/painting_2",
-		"3ds_remake:room/hidden/billiards_room/interactions/room/painting_3",
-		"3ds_remake:room/hidden/billiards_room/interactions/room/painting_4",
-		"3ds_remake:room/hidden/billiards_room/interactions/room/painting_5",
-		"3ds_remake:room/hidden/billiards_room/interactions/room/painting_6"
-	]
+    "values": [
+        "3ds_remake:room/hidden/billiards_room/interactions/room/billiards_table",
+        "3ds_remake:room/hidden/billiards_room/interactions/room/chair_1",
+        "3ds_remake:room/hidden/billiards_room/interactions/room/chair_2",
+        "3ds_remake:room/hidden/billiards_room/interactions/room/chair_3",
+        "3ds_remake:room/hidden/billiards_room/interactions/room/chess_table",
+        "3ds_remake:room/hidden/billiards_room/interactions/room/darting_board",
+        "3ds_remake:room/hidden/billiards_room/interactions/room/painting_1",
+        "3ds_remake:room/hidden/billiards_room/interactions/room/painting_2",
+        "3ds_remake:room/hidden/billiards_room/interactions/room/painting_3",
+        "3ds_remake:room/hidden/billiards_room/interactions/room/painting_4",
+        "3ds_remake:room/hidden/billiards_room/interactions/room/painting_5",
+        "3ds_remake:room/hidden/billiards_room/interactions/room/painting_6"
+    ]
 }

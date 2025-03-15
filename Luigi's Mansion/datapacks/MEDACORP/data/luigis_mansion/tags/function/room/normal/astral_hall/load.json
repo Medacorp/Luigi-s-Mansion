@@ -1,6 +1,6 @@
 {
-	"values": [
-	    "luigis_mansion:room/normal/astral_hall/load/set_loaded",
+    "values": [
+        "luigis_mansion:room/normal/astral_hall/load/set_loaded",
         "luigis_mansion:room/normal/astral_hall/load/lights",
         "luigis_mansion:room/normal/astral_hall/load/cobweb",
         "luigis_mansion:room/normal/astral_hall/load/hallway_11_door",
@@ -10,5 +10,5 @@
         "luigis_mansion:room/normal/astral_hall/load/tall_wooden_triple_candelabra_3",
         "luigis_mansion:room/normal/astral_hall/load/tall_wooden_triple_candelabra_4",
         "luigis_mansion:room/normal/astral_hall/load/tall_wooden_triple_candelabra_5"
-	]
+    ]
 }

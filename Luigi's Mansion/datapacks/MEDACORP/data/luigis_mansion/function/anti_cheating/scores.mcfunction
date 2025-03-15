@@ -258,7 +258,7 @@ execute unless score #debug_messages Selected matches 0..2 run scoreboard player
 execute unless score #debug_furniture Selected matches 0..1 run scoreboard players set #debug_furniture Selected 0
 execute unless score #debug_entities Selected matches 0..1 run scoreboard players set #debug_entities Selected 0
 
-bossbar add luigis_mansion:boo_counter {"type":"translatable","translate":"luigis_mansion:message.boo_counter","color":"white","with":["0","0"]}
+bossbar add luigis_mansion:boo_counter {type:"translatable",translate:"luigis_mansion:message.boo_counter",color:"white",with:["0","0"]}
 bossbar set luigis_mansion:boo_counter color white
 
 execute unless score #mirrored Selected matches 0..1 run scoreboard players set #mirrored Selected 0

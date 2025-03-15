@@ -1,2 +1,2 @@
-execute if entity @a[scores={Room=-3..},tag=!spectator] run tellraw @s {"type":"translatable","translate":"chat.type.text","with":[{"type":"translatable","translate":"luigis_mansion:entity.mansion","color":"green"},{"type":"translatable","translate":"3ds_remake:message.gallery.portrait_battle.be_in_gallery"}]}
+execute if entity @a[scores={Room=-3..},tag=!spectator] run tellraw @s {type:"translatable",translate:"chat.type.text",with:[{type:"translatable",translate:"luigis_mansion:entity.mansion",color:"green"},{type:"translatable",translate:"3ds_remake:message.gallery.portrait_battle.be_in_gallery"}]}
 execute unless entity @a[scores={Room=-3..},tag=!spectator] run function 3ds_remake:selection_menu/gallery_portrait/portrait_battle_start

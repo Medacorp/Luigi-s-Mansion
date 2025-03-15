@@ -1,20 +1,20 @@
 {
-	"values": [
-		"3ds_remake:room/hidden/nanas_room/interactions/room/bookshelf",
-		"3ds_remake:room/hidden/nanas_room/interactions/room/chair",
-		"3ds_remake:room/hidden/nanas_room/interactions/room/closet",
-		"3ds_remake:room/hidden/nanas_room/interactions/room/couch",
-		"3ds_remake:room/hidden/nanas_room/interactions/room/curtain_1",
-		"3ds_remake:room/hidden/nanas_room/interactions/room/curtain_2",
-		"3ds_remake:room/hidden/nanas_room/interactions/room/curtain_3",
-		"3ds_remake:room/hidden/nanas_room/interactions/room/curtain_4",
-		"3ds_remake:room/hidden/nanas_room/interactions/room/lamp",
-		"3ds_remake:room/hidden/nanas_room/interactions/room/loom",
-		"3ds_remake:room/hidden/nanas_room/interactions/room/painting",
-		"3ds_remake:room/hidden/nanas_room/interactions/room/paintings",
-		"3ds_remake:room/hidden/nanas_room/interactions/room/sewing_machine",
-		"3ds_remake:room/hidden/nanas_room/interactions/room/shelf",
-		"3ds_remake:room/hidden/nanas_room/interactions/room/table_1",
-		"3ds_remake:room/hidden/nanas_room/interactions/room/table_2"
-	]
+    "values": [
+        "3ds_remake:room/hidden/nanas_room/interactions/room/bookshelf",
+        "3ds_remake:room/hidden/nanas_room/interactions/room/chair",
+        "3ds_remake:room/hidden/nanas_room/interactions/room/closet",
+        "3ds_remake:room/hidden/nanas_room/interactions/room/couch",
+        "3ds_remake:room/hidden/nanas_room/interactions/room/curtain_1",
+        "3ds_remake:room/hidden/nanas_room/interactions/room/curtain_2",
+        "3ds_remake:room/hidden/nanas_room/interactions/room/curtain_3",
+        "3ds_remake:room/hidden/nanas_room/interactions/room/curtain_4",
+        "3ds_remake:room/hidden/nanas_room/interactions/room/lamp",
+        "3ds_remake:room/hidden/nanas_room/interactions/room/loom",
+        "3ds_remake:room/hidden/nanas_room/interactions/room/painting",
+        "3ds_remake:room/hidden/nanas_room/interactions/room/paintings",
+        "3ds_remake:room/hidden/nanas_room/interactions/room/sewing_machine",
+        "3ds_remake:room/hidden/nanas_room/interactions/room/shelf",
+        "3ds_remake:room/hidden/nanas_room/interactions/room/table_1",
+        "3ds_remake:room/hidden/nanas_room/interactions/room/table_2"
+    ]
 }

@@ -1,24 +1,24 @@
 {
-	"values": [
-		"luigis_mansion:room/hidden/study/interactions/room/book_1",
-		"luigis_mansion:room/hidden/study/interactions/room/book_2",
+    "values": [
+        "luigis_mansion:room/hidden/study/interactions/room/book_1",
+        "luigis_mansion:room/hidden/study/interactions/room/book_2",
         "luigis_mansion:room/hidden/study/interactions/room/bookshelf_1",
         "luigis_mansion:room/hidden/study/interactions/room/bookshelf_2",
         "luigis_mansion:room/hidden/study/interactions/room/bookshelf_3",
         "luigis_mansion:room/hidden/study/interactions/room/bookshelf_4",
         "luigis_mansion:room/hidden/study/interactions/room/bookshelf_5",
         "luigis_mansion:room/hidden/study/interactions/room/bookshelf_6",
-		"luigis_mansion:room/hidden/study/interactions/room/bottled_ship",
-		"luigis_mansion:room/hidden/study/interactions/room/chair",
-		"luigis_mansion:room/hidden/study/interactions/room/fire",
-		"luigis_mansion:room/hidden/study/interactions/room/hat_rack",
-		"luigis_mansion:room/hidden/study/interactions/room/lamp_1",
-		"luigis_mansion:room/hidden/study/interactions/room/lamp_2",
-		"luigis_mansion:room/hidden/study/interactions/room/painting_1",
-		"luigis_mansion:room/hidden/study/interactions/room/painting_2",
-		"luigis_mansion:room/hidden/study/interactions/room/painting_3",
-		"luigis_mansion:room/hidden/study/interactions/room/painting_4",
-		"luigis_mansion:room/hidden/study/interactions/room/painting_5",
-		"luigis_mansion:room/hidden/study/interactions/room/table"
-	]
+        "luigis_mansion:room/hidden/study/interactions/room/bottled_ship",
+        "luigis_mansion:room/hidden/study/interactions/room/chair",
+        "luigis_mansion:room/hidden/study/interactions/room/fire",
+        "luigis_mansion:room/hidden/study/interactions/room/hat_rack",
+        "luigis_mansion:room/hidden/study/interactions/room/lamp_1",
+        "luigis_mansion:room/hidden/study/interactions/room/lamp_2",
+        "luigis_mansion:room/hidden/study/interactions/room/painting_1",
+        "luigis_mansion:room/hidden/study/interactions/room/painting_2",
+        "luigis_mansion:room/hidden/study/interactions/room/painting_3",
+        "luigis_mansion:room/hidden/study/interactions/room/painting_4",
+        "luigis_mansion:room/hidden/study/interactions/room/painting_5",
+        "luigis_mansion:room/hidden/study/interactions/room/table"
+    ]
 }

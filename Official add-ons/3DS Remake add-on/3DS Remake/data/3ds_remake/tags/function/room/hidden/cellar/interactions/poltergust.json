@@ -1,23 +1,23 @@
 {
-	"values": [
-		"3ds_remake:room/hidden/cellar/interactions/poltergust/barrel_1",
-		"3ds_remake:room/hidden/cellar/interactions/poltergust/barrel_2",
-		"3ds_remake:room/hidden/cellar/interactions/poltergust/box_1",
-		"3ds_remake:room/hidden/cellar/interactions/poltergust/box_2",
-		"3ds_remake:room/hidden/cellar/interactions/poltergust/dust_1",
-		"3ds_remake:room/hidden/cellar/interactions/poltergust/dust_2",
-		"3ds_remake:room/hidden/cellar/interactions/poltergust/dust_3",
-		"3ds_remake:room/hidden/cellar/interactions/poltergust/dust_4",
-		"3ds_remake:room/hidden/cellar/interactions/poltergust/dust_5",
-		"3ds_remake:room/hidden/cellar/interactions/poltergust/dust_6",
-		"3ds_remake:room/hidden/cellar/interactions/poltergust/dust_7",
-		"3ds_remake:room/hidden/cellar/interactions/poltergust/dust_8",
-		"3ds_remake:room/hidden/cellar/interactions/poltergust/lamp",
-		"3ds_remake:room/hidden/cellar/interactions/poltergust/shelf_1",
-		"3ds_remake:room/hidden/cellar/interactions/poltergust/shelf_2",
-		"3ds_remake:room/hidden/cellar/interactions/poltergust/shelf_3",
-		"3ds_remake:room/hidden/cellar/interactions/poltergust/shelf_4",
-		"3ds_remake:room/hidden/cellar/interactions/poltergust/shelf_5",
-		"3ds_remake:room/hidden/cellar/interactions/poltergust/shelf_6"
-	]
+    "values": [
+        "3ds_remake:room/hidden/cellar/interactions/poltergust/barrel_1",
+        "3ds_remake:room/hidden/cellar/interactions/poltergust/barrel_2",
+        "3ds_remake:room/hidden/cellar/interactions/poltergust/box_1",
+        "3ds_remake:room/hidden/cellar/interactions/poltergust/box_2",
+        "3ds_remake:room/hidden/cellar/interactions/poltergust/dust_1",
+        "3ds_remake:room/hidden/cellar/interactions/poltergust/dust_2",
+        "3ds_remake:room/hidden/cellar/interactions/poltergust/dust_3",
+        "3ds_remake:room/hidden/cellar/interactions/poltergust/dust_4",
+        "3ds_remake:room/hidden/cellar/interactions/poltergust/dust_5",
+        "3ds_remake:room/hidden/cellar/interactions/poltergust/dust_6",
+        "3ds_remake:room/hidden/cellar/interactions/poltergust/dust_7",
+        "3ds_remake:room/hidden/cellar/interactions/poltergust/dust_8",
+        "3ds_remake:room/hidden/cellar/interactions/poltergust/lamp",
+        "3ds_remake:room/hidden/cellar/interactions/poltergust/shelf_1",
+        "3ds_remake:room/hidden/cellar/interactions/poltergust/shelf_2",
+        "3ds_remake:room/hidden/cellar/interactions/poltergust/shelf_3",
+        "3ds_remake:room/hidden/cellar/interactions/poltergust/shelf_4",
+        "3ds_remake:room/hidden/cellar/interactions/poltergust/shelf_5",
+        "3ds_remake:room/hidden/cellar/interactions/poltergust/shelf_6"
+    ]
 }

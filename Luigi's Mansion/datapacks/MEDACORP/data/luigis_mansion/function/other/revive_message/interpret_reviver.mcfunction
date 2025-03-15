@@ -1,1 +1,1 @@
-execute if data storage luigis_mansion:data my_memory{revived_by:"luigis_mansion:mansion_change"} run data modify storage luigis_mansion:data my_memory.revived_by set value '{"type":"translatable","translate":"luigis_mansion:death.revive.mansion_change"}'
+execute if data storage luigis_mansion:data my_memory{revived_by:"luigis_mansion:mansion_change"} run data modify storage luigis_mansion:data my_memory.revived_by set value {type:"translatable",translate:"luigis_mansion:death.revive.mansion_change"}

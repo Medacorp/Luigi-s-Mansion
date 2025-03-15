@@ -6,4 +6,4 @@ execute if entity @s[scores={AnimationProgress=6..15}] store result entity @s Po
 execute if entity @s[scores={AnimationProgress=16..20}] store result entity @s Pose.Head[1] float 1 run scoreboard players remove #temp Time 3
 scoreboard players reset #temp Time
 scoreboard players set @s[scores={AnimationProgress=20..}] AnimationProgress 0
-data modify entity @s[scores={AnimationProgress=1}] ArmorItems[3] merge from entity @s ArmorItems[3].components."minecraft:custom_data".model_data.screaming
+data modify entity @s[scores={AnimationProgress=1}] equipment.head merge from entity @s equipment.head.components."minecraft:custom_data".model_data.screaming

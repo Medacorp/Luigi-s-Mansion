@@ -1,8 +1,8 @@
 {
-	"values": [
-	    "e3_demo:room/original/missingno_45/load/set_loaded",
+    "values": [
+        "e3_demo:room/original/missingno_45/load/set_loaded",
         "e3_demo:room/original/missingno_45/load/lights",
         "e3_demo:room/original/missingno_45/load/missingno_44_door",
         "e3_demo:room/original/missingno_45/load/missingno_57_door"
-	]
+    ]
 }

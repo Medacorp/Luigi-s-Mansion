@@ -1,7 +1,7 @@
 {
-	"values": [
-		"luigis_mansion:room/hidden/bathroom_2/interactions/room/bathtub",
-		"luigis_mansion:room/hidden/bathroom_2/interactions/room/curtain",
-		"luigis_mansion:room/hidden/bathroom_2/interactions/room/mirror"
-	]
+    "values": [
+        "luigis_mansion:room/hidden/bathroom_2/interactions/room/bathtub",
+        "luigis_mansion:room/hidden/bathroom_2/interactions/room/curtain",
+        "luigis_mansion:room/hidden/bathroom_2/interactions/room/mirror"
+    ]
 }

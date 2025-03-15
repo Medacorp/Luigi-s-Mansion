@@ -1,1 +1,1 @@
-$function $(namespace):entities/item/physics/$(id) with entity @s ArmorItems[3].components."minecraft:custom_data"
+$function $(namespace):entities/item/physics/$(id) with entity @s data

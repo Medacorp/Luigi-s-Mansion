@@ -1,8 +1,8 @@
 {
-	"values": [
-		"luigis_mansion:items/poltergust_3000/effect_on_block/fire/air",
-		"luigis_mansion:items/poltergust_3000/effect_on_block/fire/light",
+    "values": [
+        "luigis_mansion:items/poltergust_3000/effect_on_block/fire/air",
+        "luigis_mansion:items/poltergust_3000/effect_on_block/fire/light",
         "luigis_mansion:items/poltergust_3000/effect_on_block/fire/campfires",
         "luigis_mansion:items/poltergust_3000/effect_on_block/fire/interact"
-	]
+    ]
 }

@@ -15,6 +15,6 @@ execute if score @s[tag=!searched] FurnitureVacuum >= @s FurnitureSearch run fun
 execute if score @s[tag=swinging_harms,scores={FurnitureSwingTimer=5..}] FurnitureVacuum >= @s FurnitureSearch run function luigis_mansion:entities/furniture/type/swinging/hit
 execute if score @s[tag=searched] FurnitureVacuum < @s FurnitureSearch run tag @s remove searched
 scoreboard players reset @s[tag=!searched] FurnitureSwingTimer
-execute unless entity @s[tag=!shake,tag=!long_shake] run function luigis_mansion:entities/furniture/shake_sound with entity @s ArmorItems[3].components."minecraft:custom_data".shake_sound
+execute unless entity @s[tag=!shake,tag=!long_shake] run function luigis_mansion:entities/furniture/shake_sound with entity @s data.shake_sound
 tag @s remove shake
 tag @s remove long_shake

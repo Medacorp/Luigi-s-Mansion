@@ -1,22 +1,22 @@
 {
-	"values": [
-		"3ds_remake:room/hidden/kitchen/interactions/room/closet",
-		"3ds_remake:room/hidden/kitchen/interactions/room/dish_washer",
-		"3ds_remake:room/hidden/kitchen/interactions/room/fridge",
-		"3ds_remake:room/hidden/kitchen/interactions/room/ice",
-		"3ds_remake:room/hidden/kitchen/interactions/room/lamp_1",
-		"3ds_remake:room/hidden/kitchen/interactions/room/lamp_2",
-		"3ds_remake:room/hidden/kitchen/interactions/room/oven",
-		"3ds_remake:room/hidden/kitchen/interactions/room/painting_1",
-		"3ds_remake:room/hidden/kitchen/interactions/room/painting_2",
-		"3ds_remake:room/hidden/kitchen/interactions/room/painting_3",
-		"3ds_remake:room/hidden/kitchen/interactions/room/shelf_1",
-		"3ds_remake:room/hidden/kitchen/interactions/room/shelf_2",
-		"3ds_remake:room/hidden/kitchen/interactions/room/shelf_3",
-		"3ds_remake:room/hidden/kitchen/interactions/room/shelf_4",
-		"3ds_remake:room/hidden/kitchen/interactions/room/shelf_5",
-		"3ds_remake:room/hidden/kitchen/interactions/room/table",
-		"3ds_remake:room/hidden/kitchen/interactions/room/tool_rack",
-		"3ds_remake:room/hidden/kitchen/interactions/room/vacuumable"
-	]
+    "values": [
+        "3ds_remake:room/hidden/kitchen/interactions/room/closet",
+        "3ds_remake:room/hidden/kitchen/interactions/room/dish_washer",
+        "3ds_remake:room/hidden/kitchen/interactions/room/fridge",
+        "3ds_remake:room/hidden/kitchen/interactions/room/ice",
+        "3ds_remake:room/hidden/kitchen/interactions/room/lamp_1",
+        "3ds_remake:room/hidden/kitchen/interactions/room/lamp_2",
+        "3ds_remake:room/hidden/kitchen/interactions/room/oven",
+        "3ds_remake:room/hidden/kitchen/interactions/room/painting_1",
+        "3ds_remake:room/hidden/kitchen/interactions/room/painting_2",
+        "3ds_remake:room/hidden/kitchen/interactions/room/painting_3",
+        "3ds_remake:room/hidden/kitchen/interactions/room/shelf_1",
+        "3ds_remake:room/hidden/kitchen/interactions/room/shelf_2",
+        "3ds_remake:room/hidden/kitchen/interactions/room/shelf_3",
+        "3ds_remake:room/hidden/kitchen/interactions/room/shelf_4",
+        "3ds_remake:room/hidden/kitchen/interactions/room/shelf_5",
+        "3ds_remake:room/hidden/kitchen/interactions/room/table",
+        "3ds_remake:room/hidden/kitchen/interactions/room/tool_rack",
+        "3ds_remake:room/hidden/kitchen/interactions/room/vacuumable"
+    ]
 }

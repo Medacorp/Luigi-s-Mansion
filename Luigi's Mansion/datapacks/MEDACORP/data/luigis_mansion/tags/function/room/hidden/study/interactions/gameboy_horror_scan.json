@@ -1,21 +1,21 @@
 {
-	"values": [
+    "values": [
         "luigis_mansion:room/hidden/study/interactions/gameboy_horror_scan/bookshelf_1",
         "luigis_mansion:room/hidden/study/interactions/gameboy_horror_scan/bookshelf_2",
         "luigis_mansion:room/hidden/study/interactions/gameboy_horror_scan/bookshelf_3",
         "luigis_mansion:room/hidden/study/interactions/gameboy_horror_scan/bookshelf_4",
         "luigis_mansion:room/hidden/study/interactions/gameboy_horror_scan/bookshelf_5",
         "luigis_mansion:room/hidden/study/interactions/gameboy_horror_scan/bookshelf_6",
-		"luigis_mansion:room/hidden/study/interactions/gameboy_horror_scan/bottled_ship",
-		"luigis_mansion:room/hidden/study/interactions/gameboy_horror_scan/chair",
-		"luigis_mansion:room/hidden/study/interactions/gameboy_horror_scan/hat_rack",
-		"luigis_mansion:room/hidden/study/interactions/gameboy_horror_scan/lamp_1",
-		"luigis_mansion:room/hidden/study/interactions/gameboy_horror_scan/lamp_2",
-		"luigis_mansion:room/hidden/study/interactions/gameboy_horror_scan/painting_1",
-		"luigis_mansion:room/hidden/study/interactions/gameboy_horror_scan/painting_2",
-		"luigis_mansion:room/hidden/study/interactions/gameboy_horror_scan/painting_3",
-		"luigis_mansion:room/hidden/study/interactions/gameboy_horror_scan/painting_4",
-		"luigis_mansion:room/hidden/study/interactions/gameboy_horror_scan/painting_5",
-		"luigis_mansion:room/hidden/study/interactions/gameboy_horror_scan/table"
-	]
+        "luigis_mansion:room/hidden/study/interactions/gameboy_horror_scan/bottled_ship",
+        "luigis_mansion:room/hidden/study/interactions/gameboy_horror_scan/chair",
+        "luigis_mansion:room/hidden/study/interactions/gameboy_horror_scan/hat_rack",
+        "luigis_mansion:room/hidden/study/interactions/gameboy_horror_scan/lamp_1",
+        "luigis_mansion:room/hidden/study/interactions/gameboy_horror_scan/lamp_2",
+        "luigis_mansion:room/hidden/study/interactions/gameboy_horror_scan/painting_1",
+        "luigis_mansion:room/hidden/study/interactions/gameboy_horror_scan/painting_2",
+        "luigis_mansion:room/hidden/study/interactions/gameboy_horror_scan/painting_3",
+        "luigis_mansion:room/hidden/study/interactions/gameboy_horror_scan/painting_4",
+        "luigis_mansion:room/hidden/study/interactions/gameboy_horror_scan/painting_5",
+        "luigis_mansion:room/hidden/study/interactions/gameboy_horror_scan/table"
+    ]
 }

@@ -1,6 +1,6 @@
 {
-	"values": [
-	    "luigis_mansion:room/hidden/hidden_room/load/set_loaded",
+    "values": [
+        "luigis_mansion:room/hidden/hidden_room/load/set_loaded",
         "luigis_mansion:room/hidden/hidden_room/load/lights",
         "luigis_mansion:room/hidden/hidden_room/load/golden_triple_candelabra_1",
         "luigis_mansion:room/hidden/hidden_room/load/golden_triple_candelabra_2",
@@ -19,5 +19,5 @@
         "luigis_mansion:room/hidden/hidden_room/load/treasure_chest_5",
         "luigis_mansion:room/hidden/hidden_room/load/treasure_chest_6",
         "luigis_mansion:room/hidden/hidden_room/load/treasure_chest_7"
-	]
+    ]
 }

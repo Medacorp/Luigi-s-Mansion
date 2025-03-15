@@ -1,6 +1,6 @@
 {
-	"values": [
-	    "3ds_remake:room/hidden/cellar/load/set_loaded",
+    "values": [
+        "3ds_remake:room/hidden/cellar/load/set_loaded",
         "3ds_remake:room/hidden/cellar/load/lights",
         "3ds_remake:room/hidden/cellar/load/dust_1",
         "3ds_remake:room/hidden/cellar/load/dust_2",
@@ -15,5 +15,5 @@
         "3ds_remake:room/hidden/cellar/load/room_clear_chest",
         "3ds_remake:room/hidden/cellar/load/old_triple_wall_candelabra_1",
         "3ds_remake:room/hidden/cellar/load/old_triple_wall_candelabra_2"
-	]
+    ]
 }
