@@ -5,7 +5,7 @@
             "id": "minecraft:leather_chestplate",
             "components": {
                 "minecraft:item_model":"luigis_mansion:entity/ceiling_ghost",
-                "minecraft:dyed_color": { "rgb": 15066597 }
+                "minecraft:custom_model_data": { "colors": [ 15066597 ] }
             }
         },
         "show_toast": false,

@@ -7,6 +7,7 @@ execute as @a[tag=same_room,tag=!spectator,tag=game_boy_horror_menu] run functio
 execute if score #dialog Dialog matches 1..259 run scoreboard players set @a[tag=same_room,scores={Jukebox=0}] Music 10000
 execute if score #dialog Dialog matches 1 if score #players Totals matches 1 run tellraw @a[tag=same_room] {type:"translatable",translate:"chat.type.text",with:[{type:"translatable",translate:"luigis_mansion:entity.mansion",color:"green"},{type:"translatable",translate:"luigis_mansion:dialog.mansion_rank.header"}]}
 execute if score #dialog Dialog matches 1 if score #players Totals matches 2.. run tellraw @a[tag=same_room] {type:"translatable",translate:"chat.type.text",with:[{type:"translatable",translate:"luigis_mansion:entity.mansion",color:"green"},{type:"translatable",translate:"luigis_mansion:dialog.mansion_rank.header.more"}]}
+#execute if score #dialog Dialog matches 180.. run 795.5 106.5 8.0 90 0
 execute if score #dialog Dialog matches 240 run function luigis_mansion:dialog/play/mansion_rank/select
 execute if score #dialog Dialog matches 240 run function luigis_mansion:dialog/play/mansion_rank/description
 execute if score #dialog Dialog matches 280 run function luigis_mansion:dialog/play/mansion_rank/music

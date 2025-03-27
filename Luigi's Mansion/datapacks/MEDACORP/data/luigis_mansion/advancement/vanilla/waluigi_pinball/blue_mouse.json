@@ -5,7 +5,7 @@
             "id": "minecraft:leather_chestplate",
             "components": {
                 "minecraft:item_model": "luigis_mansion:entity/mouse",
-                "minecraft:dyed_color": { "rgb": 38911 }
+                "minecraft:custom_model_data": { "colors": [ 38911 ] }
             }
         },
         "show_toast": false,

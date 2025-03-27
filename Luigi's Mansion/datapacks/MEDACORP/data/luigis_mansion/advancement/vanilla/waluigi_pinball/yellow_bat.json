@@ -5,7 +5,7 @@
             "id": "minecraft:leather_chestplate",
             "components": {
                 "minecraft:item_model": "luigis_mansion:entity/bat",
-                "minecraft:dyed_color": { "rgb": 16768768 }
+                "minecraft:custom_model_data": { "colors": [ 16768768 ] }
             }
         },
         "show_toast": false,

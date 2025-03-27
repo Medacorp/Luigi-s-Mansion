@@ -5,7 +5,7 @@
             "id": "minecraft:leather_chestplate",
             "components": {
                 "minecraft:item_model": "luigis_mansion:entity/twirler",
-                "minecraft:dyed_color": { "rgb": 4674559 }
+                "minecraft:custom_model_data": { "colors": [ 4674559 ] }
             }
         },
         "show_toast": false,

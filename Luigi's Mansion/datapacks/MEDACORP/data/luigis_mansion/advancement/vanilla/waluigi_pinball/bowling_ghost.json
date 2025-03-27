@@ -5,7 +5,7 @@
             "id": "minecraft:leather_chestplate",
             "components": {
                 "minecraft:item_model": "luigis_mansion:entity/bowling_ghost",
-                "minecraft:dyed_color": { "rgb": 14876416 }
+                "minecraft:custom_model_data": { "colors": [ 14876416 ] }
             }
         },
         "show_toast": false,

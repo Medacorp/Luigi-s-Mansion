@@ -14,11 +14,11 @@ data modify entity @s[tag=!was_sneak_posing,tag=sneak_pos,tag=!low_health] Pose.
 data modify entity @s[tag=was_flipped,tag=!flipped_gravity] Pose.Head[2] set value 0.0f
 data modify entity @s[tag=!was_flipped,tag=flipped_gravity] Pose.Head[2] set value -180.0f
 
-data modify entity @s[tag=held_item] equipment.head set value {}
+data remove entity @s[tag=held_item] equipment.head
 execute unless score #mirrored Selected matches 1 if data storage luigis_mansion:data luigi.offhand.components."minecraft:custom_data".is_nozzle run tag @s add holding_poltergust
 execute if score #mirrored Selected matches 1 if data storage luigis_mansion:data luigi.mainhand.components."minecraft:custom_data".is_nozzle run tag @s add holding_poltergust
-execute unless score #mirrored Selected matches 1 run data modify entity @s[tag=held_item] equipment.head set from storage luigis_mansion:data luigi.offhand
-execute if entity @s[tag=!poltergust_grabbed] if score #mirrored Selected matches 1 unless data storage luigis_mansion:data luigi.mainhand.components."minecraft:custom_data".is_nozzle run data modify entity @s[tag=held_item] equipment.head set from storage luigis_mansion:data luigi.mainhand
+execute unless score #mirrored Selected matches 1 if data storage luigis_mansion:data luigi.offhand.id run data modify entity @s[tag=held_item] equipment.head set from storage luigis_mansion:data luigi.offhand
+execute if entity @s[tag=!poltergust_grabbed] if score #mirrored Selected matches 1 unless data storage luigis_mansion:data luigi.mainhand.components."minecraft:custom_data".is_nozzle if data storage luigis_mansion:data luigi.mainhand.id run data modify entity @s[tag=held_item] equipment.head set from storage luigis_mansion:data luigi.mainhand
 execute if entity @s[tag=poltergust_grabbed] if score #mirrored Selected matches 1 if data storage luigis_mansion:data luigi.mainhand.components."minecraft:custom_data".is_nozzle run data modify entity @s[tag=held_item] equipment.head set from storage luigis_mansion:data luigi.mainhand
 
 # Move animations

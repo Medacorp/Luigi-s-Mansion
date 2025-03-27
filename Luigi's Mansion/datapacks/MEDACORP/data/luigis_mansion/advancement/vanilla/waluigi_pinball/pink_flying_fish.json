@@ -5,7 +5,7 @@
             "id": "minecraft:leather_chestplate",
             "components": {
                 "minecraft:item_model": "luigis_mansion:entity/flying_fish",
-                "minecraft:dyed_color": { "rgb": 16740863 }
+                "minecraft:custom_model_data": { "colors": [ 16740863 ] }
             }
         },
         "show_toast": false,

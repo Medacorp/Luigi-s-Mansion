@@ -36,8 +36,8 @@ execute if data storage luigis_mansion:data luigi{gliding:0b,swimming:0b} run sc
 scoreboard players reset #temp Time
 execute if data storage luigis_mansion:data luigi{gliding:0b,swimming:0b} run function luigis_mansion:animations/luigi/call_part_function
 execute unless data storage luigis_mansion:data luigi{gliding:0b,swimming:0b} rotated ~ ~90 run function luigis_mansion:animations/luigi/call_part_function
-execute store result score #temp Time run data get entity @s Pose.Head[0]
-execute if entity @s[tag=!head] store result entity @s Pose.Head[0] float 1 run scoreboard players operation #temp Time += @s IncreaseAmount
+execute if data entity @s Pose.Head[0] store result score #temp Time run data get entity @s Pose.Head[0]
+execute if data entity @s Pose.Head[0] if entity @s[tag=!head] store result entity @s Pose.Head[0] float 1 run scoreboard players operation #temp Time += @s IncreaseAmount
 scoreboard players reset #temp Time
 execute if data storage luigis_mansion:data luigi{invulnerable:1b} if entity @s[tag=!source,tag=!held_item,tag=!poltergust_body] run function luigis_mansion:animations/luigi/invulnerability_blink
 execute if data storage luigis_mansion:data luigi{invulnerable:0b} if entity @s[tag=!source,tag=!held_item,tag=!poltergust_body,tag=was_invisible] run function luigis_mansion:animations/luigi/invulnerability_blink

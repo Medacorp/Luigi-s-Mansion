@@ -11,7 +11,7 @@ v3.3:
 ** Paintings
 ** (3DS Remake) Blockade Spawns (new)
 ** Room Clear Chest Spawns (new)
-** Chauncey's Door (Previously named "Chauncey Cry")
+** Chauncey's Door (Previously "Chauncey Cry")
 ** Chauncey Opening (Boss intro, previously entity behavior)
 ** <Mansion>/Move Storage Room Wall
 ** <Mansion>/Release Boos
@@ -27,7 +27,7 @@ v3.3:
 ** Observatory Path (new)
 ** Mysterious Power
 ** Mysterious Power Repeat
-** Boolossus (previously "<Mansion>/Boolossus")
+** Boolossus (Previously "<Mansion>/Boolossus")
 ** Boolossus Opening (Boss intro, previously entity behavior)
 ** <Mansion>/Blackout Lightning
 ** Fall Through Chimney (new)
@@ -36,15 +36,15 @@ v3.3:
 ** Guest Room Flips (new)
 ** Ghost Gauntlet
 ** Ghost Gauntlet Spawn (new)
-** King Boo Warp (previously "<Mansion>/King Boo Warp")
-** King Boo (previously "<Mansion>/King Boo")
+** King Boo Warp (Previously "<Mansion>/King Boo Warp")
+** King Boo (Previously "<Mansion>/King Boo")
 ** King Boo Opening (Boss intro, previously entity behavior)
 ** King Boo Appears (new)
 ** Bowser Corrects Head (new)
 ** Bowser Collapses (new)
-** Caught King Boo (previously "<Mansion>/Caught King Boo")
+** Caught King Boo (Previously "<Mansion>/Caught King Boo")
 * Added a few non-camera moving cutscenes:
-** Boss Clear (technical dialog replacing the return timer)
+** Boss Clear (technical dialog replacing the return timer; will get animation triggers at later date)
 ** Credits (original game credits)
 ** Mansion Rank (not exactly new, used to be included in Mario to Normal)
 * Added a few animations that were missing

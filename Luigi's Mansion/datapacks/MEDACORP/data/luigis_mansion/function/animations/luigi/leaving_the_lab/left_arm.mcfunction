@@ -1,5 +1,5 @@
 scoreboard players add @s AnimationProgress 1
-data modify entity @s[tag=held_item] equipment.head set value {id:"minecraft:diamond_pickaxe",count:1,components:{"minecraft:item_model":"luigis_mansion:empty"}}
+data remove entity @s[tag=held_item] equipment.head
 data modify entity @s[tag=held_item,scores={AnimationProgress=236..}] equipment.head set from storage luigis_mansion:data luigi.flashlight
 data modify entity @s[tag=held_item,scores={AnimationProgress=236..316}] equipment.head merge from storage luigis_mansion:data luigi.flashlight.components."minecraft:custom_data".model_data.off
 data modify entity @s[tag=held_item,scores={AnimationProgress=317..}] equipment.head merge from storage luigis_mansion:data luigi.flashlight.components."minecraft:custom_data".model_data.on

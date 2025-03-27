@@ -5,7 +5,7 @@
             "id": "minecraft:leather_chestplate",
             "components": {
                 "minecraft:item_model": "luigis_mansion:entity/ghost_guy",
-                "minecraft:dyed_color": { "rgb": 16717824 }
+                "minecraft:custom_model_data": { "colors": [ 16717824 ] }
             }
         },
         "show_toast": false,

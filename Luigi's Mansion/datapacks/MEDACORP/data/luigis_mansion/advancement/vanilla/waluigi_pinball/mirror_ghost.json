@@ -5,7 +5,7 @@
             "id": "minecraft:leather_chestplate",
             "components": {
                 "minecraft:item_model": "luigis_mansion:entity/grabbing_ghost",
-                "minecraft:dyed_color": { "rgb": 60395 }
+                "minecraft:custom_model_data": { "colors": [ 60395 ] }
             }
         },
         "show_toast": false,
