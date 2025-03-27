@@ -1,0 +1,1 @@
+place template 3ds_remake:exterior/h_rank 712 89 -6

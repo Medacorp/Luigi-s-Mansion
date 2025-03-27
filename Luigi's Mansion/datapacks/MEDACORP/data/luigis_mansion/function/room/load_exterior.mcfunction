@@ -1,2 +1,3 @@
-$execute in $(namespace):$(id) run data modify storage luigis_mansion:data loaded_exterior set value {namespace:"$(namespace)",id:"$(id)"}
+execute if score #exterior Loaded matches 1 run function luigis_mansion:room/exterior/reset/unload
+$execute in $(namespace):exterior/$(id) run data modify storage luigis_mansion:data loaded_exterior set value {namespace:"$(namespace)",id:"$(id)"}
 $execute unless data storage luigis_mansion:data loaded_exterior{namespace:"$(namespace)",id:"$(id)"} if score #debug_messages Selected matches 1.. run tellraw @a {type:"translatable",translate:"luigis_mansion:message.debug.format",color:"white",with:[{type:"translatable",translate:"luigis_mansion:message.debug",color:"gold"},{type:"translatable",translate:"luigis_mansion:message.debug.unknown_exterior",color:"red",with:[{type:"text",text:"$(namespace)"},{type:"text",text:"$(id)"}]}]}

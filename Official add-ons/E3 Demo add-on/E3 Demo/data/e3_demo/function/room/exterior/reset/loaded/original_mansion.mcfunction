@@ -13,4 +13,5 @@ execute unless score #temp Time matches 1 run forceload remove 720 8
 execute unless score #temp Time matches 1 run forceload remove 761 -4
 execute unless score #temp Time matches 1 run forceload remove 787 15
 execute unless score #temp Time matches 1 run forceload remove 771 7 768 4
+execute unless score #temp Time matches 1 run data remove storage luigis_mansion:data reset_exterior
 scoreboard players reset #temp Time

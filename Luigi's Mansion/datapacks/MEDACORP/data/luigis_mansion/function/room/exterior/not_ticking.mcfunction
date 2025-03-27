@@ -1,1 +1,1 @@
-function luigis_mansion:room/exterior/reset/unload
+execute unless data storage luigis_mansion:data reset_exterior run function luigis_mansion:room/exterior/reset/unload

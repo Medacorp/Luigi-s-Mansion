@@ -1,0 +1,2 @@
+$execute in $(namespace):exterior/$(id) run tag @e[scores={Room=0},type=!minecraft:player,tag=!model_piece,distance=0..] add remove_from_existence
+$execute in $(namespace):exterior/$(id) run function $(namespace):room/exterior/reset/loaded/$(id)

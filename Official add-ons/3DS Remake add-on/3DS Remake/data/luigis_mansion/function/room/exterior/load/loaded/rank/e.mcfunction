@@ -1,0 +1,1 @@
+place template 3ds_remake:exterior/e_rank 720 89 -8

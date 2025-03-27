@@ -1,0 +1,12 @@
+place template luigis_mansion:exterior/empty/12 725 137 45
+place template luigis_mansion:exterior/empty/11 725 137 -3
+place template luigis_mansion:exterior/empty/10 725 137 -51
+place template luigis_mansion:exterior/empty/9 677 137 45
+place template luigis_mansion:exterior/empty/8 677 137 -3
+place template luigis_mansion:exterior/empty/7 677 137 -51
+place template luigis_mansion:exterior/empty/6 725 89 45
+place template luigis_mansion:exterior/empty/5 725 89 -3
+place template luigis_mansion:exterior/empty/4 725 89 -51
+place template luigis_mansion:exterior/empty/3 677 89 45
+place template luigis_mansion:exterior/empty/2 677 89 -3
+place template luigis_mansion:exterior/empty/1 677 89 -51

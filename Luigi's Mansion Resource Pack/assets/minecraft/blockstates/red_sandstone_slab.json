@@ -1,7 +1,0 @@
-{
-    "variants": {
-        "type=bottom": { "model": "luigis_mansion:block/mansion_path_slab" },
-        "type=top": { "model": "luigis_mansion:block/mansion_path_slab_top" },
-        "type=double": { "model": "minecraft:block/red_sandstone" }
-    }
-}

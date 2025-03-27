@@ -1,1 +1,1 @@
-$execute in $(namespace):exterior/$(id) run function $(namespace):room/exterior/reset/loaded/$(id)
+function luigis_mansion:room/exterior/reset_id with storage luigis_mansion:data reset_exterior

@@ -1,0 +1,1 @@
+place template luigis_mansion:exterior/e_rank 713 100 -11
