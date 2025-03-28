@@ -43,10 +43,9 @@ v3.3:
 ** Bowser Corrects Head (new)
 ** Bowser Collapses (new)
 ** Caught King Boo (Previously "<Mansion>/Caught King Boo")
-* Added a few non-camera moving cutscenes:
-** Boss Clear (technical dialog replacing the return timer; will get animation triggers at later date)
-** Credits (original game credits)
-** Mansion Rank (not exactly new, used to be included in Mario to Normal)
+** Credits (new, original game credits)
+** Mansion Rank (Previously included in "Mario to Normal"; now shows mansion exterior)
+* Added a technical dialog: Boss Clear (replacing the return timer; will get animation triggers at later date)
 * Added a few animations that were missing
 * Added the key to the door unlock animations
 * Added 3 new tracks of music for the mansion rank dialog

@@ -1,1 +1,2 @@
 $execute unless dimension $(namespace):exterior/$(id) run function luigis_mansion:entities/luigi/move/execute {execute:"in $(namespace):exterior/$(id)",teleport:"~ ~ ~"}
+$execute unless dimension $(namespace):exterior/$(id) run function luigis_mansion:other/music/set/silence

@@ -1,1 +1,2 @@
 place template luigis_mansion:exterior/e_rank 713 100 -11
+execute as @e[tag=rank_reveal_painting,limit=1] run data modify entity @s equipment.head merge from entity @s equipment.head.components."minecraft:custom_data".model_data.e

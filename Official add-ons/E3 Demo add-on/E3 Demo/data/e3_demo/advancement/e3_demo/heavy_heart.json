@@ -5,7 +5,7 @@
             "id": "minecraft:leather_chestplate",
             "components": {
                 "minecraft:item_model": "e3_demo:entity/ghost",
-                "minecraft:dyed_color": { "rgb": 6881535 }
+                "minecraft:custom_model_data": { "colors": [ 6881535 ] }
             }
         },
         "frame": "challenge",
