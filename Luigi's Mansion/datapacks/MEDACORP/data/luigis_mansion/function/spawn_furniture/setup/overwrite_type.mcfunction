@@ -15,11 +15,11 @@ execute as @e[tag=this_entity,nbt={data:{furniture_type:"swirling"}},limit=1] un
 execute if data storage luigis_mansion:data furniture.type.search_value store result score @e[tag=this_entity,tag=overwrite_allowed,limit=1] FurnitureSearch run data get storage luigis_mansion:data furniture.type.search_value
 execute as @e[tag=this_entity,nbt={data:{furniture_type:"delayed"}},limit=1] run scoreboard players operation @s FurnitureShake = @s FurnitureSearch
 scoreboard players add @e[tag=this_entity,nbt={data:{furniture_type:"delayed"}},limit=1] FurnitureSearch 20
-scoreboard players operation #temp Time = @e[tag=this_entity,nbt={data:{furniture_type:"fan"}},limit=1] FurnitureSearch
-execute if entity @e[tag=this_entity,nbt={data:{furniture_type:"fan"}},limit=1] run scoreboard players operation #temp Time /= #5 Constants
+scoreboard players operation #furniture Time = @e[tag=this_entity,nbt={data:{furniture_type:"fan"}},limit=1] FurnitureSearch
+execute if entity @e[tag=this_entity,nbt={data:{furniture_type:"fan"}},limit=1] run scoreboard players operation #furniture Time /= #5 Constants
 execute as @e[tag=this_entity,nbt={data:{furniture_type:"fan"}},limit=1] run scoreboard players operation @s FurnitureShake = @s FurnitureSearch
-scoreboard players operation @e[tag=this_entity,nbt={data:{furniture_type:"fan"}},limit=1] FurnitureShake -= #temp Time
-scoreboard players reset #temp Time
+scoreboard players operation @e[tag=this_entity,nbt={data:{furniture_type:"fan"}},limit=1] FurnitureShake -= #furniture Time
+scoreboard players reset #furniture Time
 scoreboard players operation @e[tag=this_entity,nbt={data:{furniture_type:"rolling"}},limit=1] FurnitureSearch *= #2 Constants
 scoreboard players add @e[tag=this_entity,nbt={data:{furniture_type:"rolling"}},limit=1] FurnitureSearch 1
 scoreboard players set @e[tag=this_entity,nbt={data:{furniture_type:"rolling"}},limit=1] PoltergustSound 0

@@ -1,1 +1,0 @@
-$execute in $(namespace):exterior/$(id) run function $(namespace):room/exterior/load/loaded/$(id)

@@ -55,7 +55,4 @@ execute if score #dialog Dialog matches 11 as @a[tag=same_room] run function lui
 execute if score #dialog Dialog matches 13 as @e[tag=luigi,tag=same_room] run function luigis_mansion:entities/luigi/animation/set/none
 execute if score #dialog Dialog matches 13 run tag @a add show_credits
 execute if score #dialog Dialog matches 13 as @a[tag=same_room] run function luigis_mansion:other/music/set/silence
-execute if score #dialog Dialog matches 13 as @a[tag=same_room] run function luigis_mansion:other/music/set/credits
-execute if score #dialog Dialog matches 13 run tag @e[tag=e_gadd,tag=same_room,limit=1] add can_talk_to
-execute if score #dialog Dialog matches 13 run tag @e[tag=e_gadd,tag=same_room,limit=1] remove cannot_be_removed
 execute if score #dialog Dialog matches 13 run scoreboard players set #dialog Dialog -1

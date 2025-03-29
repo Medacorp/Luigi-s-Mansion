@@ -1,6 +1,6 @@
 execute if entity @e[tag=this_entity,limit=1] run function luigis_mansion:spawn_furniture/setup/pose
 data modify storage luigis_mansion:data furniture.candle_flames_edit set from storage luigis_mansion:data furniture.candle_flames
-execute store result score #temp Time run data get entity @e[tag=this_entity,limit=1] Rotation[0] 1000
+execute store result score #furniture Time run data get entity @e[tag=this_entity,limit=1] Rotation[0] 1000
 
 execute in minecraft:overworld run summon minecraft:marker 0.0 0.0 0.0 {Tags:["temp","remove_from_existence"]}
 data modify entity @e[tag=temp,limit=1] Rotation[0] set from entity @e[tag=this_entity,limit=1] Pose.Head[0]
@@ -35,6 +35,6 @@ scoreboard players reset #cosz
 scoreboard players reset #sinx
 scoreboard players reset #siny
 scoreboard players reset #sinz
-scoreboard players reset #temp Time
-scoreboard players reset #temp2 Time
-scoreboard players reset #temp3 Time
+scoreboard players reset #furniture Time
+scoreboard players reset #furniture2 Time
+scoreboard players reset #furniture3 Time

@@ -1,2 +1,2 @@
 place template 3ds_remake:exterior/h_rank 712 89 -6
-execute as @e[tag=rank_reveal_painting,limit=1] run data modify entity @s equipment.head merge from entity @s equipment.head.components."minecraft:custom_data".model_data.h
+execute as @e[tag=rank_reveal_painting,limit=1] run data modify entity @s equipment.head merge from entity @s equipment.head.components."minecraft:custom_data".model_data.h_rank

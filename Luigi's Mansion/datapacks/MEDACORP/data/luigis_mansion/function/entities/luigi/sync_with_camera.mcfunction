@@ -58,12 +58,16 @@ data remove entity @s data.selected_item
 data modify entity @s data.inventory set value []
 data modify entity @s data.selected_item set from entity @a[tag=this_player,limit=1] SelectedItem
 execute if entity @a[tag=this_player,limit=1,tag=!using_selection_menu,scores={Shrunk=0}] run data modify entity @s data.inventory set from entity @a[tag=this_player,limit=1] Inventory
+execute if entity @a[tag=this_player,limit=1,tag=!using_selection_menu,scores={Shrunk=0}] run data modify entity @s data.inventory append from entity @a[tag=this_player,limit=1] equipment.offhand
 execute if entity @a[tag=this_player,limit=1,tag=using_selection_menu,scores={Shrunk=0}] run data modify entity @s data.inventory set from storage luigis_mansion:data my_memory.selection_menu.inventory
+execute if entity @a[tag=this_player,limit=1,tag=using_selection_menu,scores={Shrunk=0}] run data modify entity @s data.inventory append from storage luigis_mansion:data my_memory.selection_menu.equipment.offhand
 execute if entity @a[tag=this_player,limit=1,scores={Shrunk=1..}] run data modify entity @s data.inventory set from storage luigis_mansion:data my_memory.inventory
+execute if entity @a[tag=this_player,limit=1,scores={Shrunk=1..}] run data modify entity @s data.inventory append from storage luigis_mansion:data my_memory.equipment.offhand
 execute if entity @a[tag=this_player,limit=1,scores={Shrunk=1..}] run data remove entity @s data.inventory[{components:{"minecraft:custom_data":{keep_when_shrunk:1b}}}]
 execute if entity @a[tag=this_player,limit=1,scores={Shrunk=1..}] run data modify entity @s data.inventory append from entity @a[tag=this_player,limit=1] Inventory[{components:{"minecraft:custom_data":{keep_when_shrunk:1b}}}]
+execute if entity @a[tag=this_player,limit=1,scores={Shrunk=1..}] run data modify entity @s data.inventory append from entity @a[tag=this_player,limit=1] equipment.offhand{components:{"minecraft:custom_data":{keep_when_shrunk:1b}}}
 execute if entity @a[tag=this_player,limit=1,tag=using_selection_menu,nbt={Inventory:[{components:{"minecraft:custom_data":{namespace:"luigis_mansion",id:"game_boy_horror"}}}]}] if data entity @s data.inventory[{components:{"minecraft:custom_data":{namespace:"luigis_mansion",id:"game_boy_horror"}}}] run data modify entity @s data.inventory[{components:{"minecraft:custom_data":{namespace:"luigis_mansion",id:"game_boy_horror"}}}].components set from entity @a[tag=this_player,limit=1] Inventory[{components:{"minecraft:custom_data":{namespace:"luigis_mansion",id:"game_boy_horror"}}}].components
-
+execute unless data entity @s data.inventory[-1].Slot run data modify entity @s data.inventory[-1].Slot set value -106b
 # Settings
 tag @s remove stop_map_on_key_collect
 tag @s remove separated_camera

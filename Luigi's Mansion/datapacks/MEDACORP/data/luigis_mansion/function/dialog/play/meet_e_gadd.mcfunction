@@ -15,7 +15,6 @@ execute if score #dialog Dialog matches 1..100 as @a[tag=same_room,tag=!spectato
 execute if score #dialog Dialog matches 101 as @a[tag=same_room] run function luigis_mansion:other/music/set/force/meet_e_gadd
 execute if score #dialog Dialog matches 1 as @e[tag=luigi,tag=walking_player,limit=1] run function luigis_mansion:entities/luigi/move/teleport {teleport:"726 20 27 90 0"}
 execute if score #dialog Dialog matches 2..70 as @e[tag=luigi,tag=walking_player,limit=1] run function luigis_mansion:entities/luigi/move/teleport {teleport:"726 20 ~0.0125 ~-0.8125 0"}
-execute if score #dialog Dialog matches 1..89 run scoreboard players set @a[tag=walking_player,limit=1] Walk 1
 execute if score #dialog Dialog matches 90 as @e[tag=luigi,tag=walking_player,limit=1] run function luigis_mansion:entities/luigi/move/teleport {teleport:"726 20 28 25 0"}
 execute if score #dialog Dialog matches 740 as @e[tag=luigi,tag=walking_player,limit=1] run function luigis_mansion:entities/luigi/move/teleport {teleport:"726.0 20 25.0 45 0"}
 execute if score #dialog Dialog matches 1300 as @e[tag=luigi,tag=walking_player,limit=1] run function luigis_mansion:entities/luigi/move/teleport {teleport:"726.0 20 25.0 60 0"}
@@ -27,6 +26,7 @@ execute if score #dialog Dialog matches 80 positioned 718 20 35 run function lui
 execute if score #dialog Dialog matches 80 run data modify storage luigis_mansion:data entity set value {room:3,no_ai:1b,rotation:[-155f,0f],tags:["same_room","visible","no_dialog_freeze","remove_after_dialog"],animation:{namespace:"luigis_mansion",id:"appear/normal"}}
 execute if score #dialog Dialog matches 80 positioned 725 20.2 30 run function luigis_mansion:spawn_entities/ghost/gold_ghost
 execute if score #dialog Dialog matches 80 run playsound luigis_mansion:entity.gold_ghost.spawn hostile @a[tag=same_room] 725 20.2 30 1
+execute if score #dialog Dialog matches 90 as @e[tag=luigi,tag=same_room] run function luigis_mansion:entities/luigi/animation/set/none
 execute if score #dialog Dialog matches 90 as @e[tag=luigi,tag=same_room] at @e[tag=ghost,tag=same_room,limit=1] run function luigis_mansion:entities/luigi/animation/set/scare/bash
 execute if score #dialog Dialog matches 90 run tag @e[tag=luigi,tag=walking_player,limit=1] add bash_no_move
 execute if score #dialog Dialog matches 90..190 run scoreboard players set @e[tag=luigi,tag=same_room,scores={AnimationProgress=30..}] AnimationProgress 29

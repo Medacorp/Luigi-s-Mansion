@@ -1,7 +1,7 @@
 function #luigis_mansion:anti_cheating/scores
 execute if data storage luigis_mansion:data dialogs[0] run function luigis_mansion:dialog
 execute as @a at @s run function luigis_mansion:main/players
-execute unless entity @a[tag=!loaded_chunks,limit=1] positioned as @a[tag=loaded_chunks,limit=1] run function luigis_mansion:room/detect
+execute unless entity @a[tag=!loaded_chunks,limit=1] positioned as @a[tag=loaded_chunks,limit=1] in minecraft:overworld run function luigis_mansion:room/detect
 scoreboard players set #freeze_timer Selected 0
 execute as @e[type=!minecraft:player] at @s run function luigis_mansion:main/non_players
 execute if score #global_mirror_reflections Selected matches 0 run data modify storage luigis_mansion:data reflections set value []

@@ -1,3 +1,4 @@
+execute if score #dialog Dialog matches 147 run scoreboard players add #dialog Dialog 1
 execute if score #dialog Dialog matches 146 if entity @a[tag=same_room,tag=next_dialog_line,limit=1] run scoreboard players add #dialog Dialog 1
 execute if score #dialog Dialog matches 5..145 run scoreboard players add #dialog Dialog 1
 execute if score #dialog Dialog matches 125..144 if entity @a[tag=same_room,tag=next_dialog_line,limit=1] run scoreboard players set #dialog Dialog 145
@@ -70,5 +71,8 @@ execute if score #dialog Dialog matches 85..145 run scoreboard players reset #te
 scoreboard players reset #temp2 Dialog
 #146
 execute if score #dialog Dialog matches 147 as @a[tag=same_room] run function luigis_mansion:other/music/set/silence
-execute if score #dialog Dialog matches 147 run data modify storage luigis_mansion:data dialogs append value {name:{namespace:"luigis_mansion",id:"credits"},progress:0}
-execute if score #dialog Dialog matches 147 run scoreboard players set #dialog Dialog -1
+execute if score #dialog Dialog matches 147 run scoreboard players set @a[tag=same_room] Room 0
+execute if score #dialog Dialog matches 147 run tag @e[tag=e_gadd,tag=same_room,limit=1] remove cannot_be_removed
+execute if score #dialog Dialog matches 147 run data modify storage luigis_mansion:data dialogs[0].room set value 0
+execute if score #dialog Dialog matches 148 run data modify storage luigis_mansion:data dialogs append value {name:{namespace:"luigis_mansion",id:"credits"},progress:0,room:0}
+execute if score #dialog Dialog matches 148 run scoreboard players set #dialog Dialog -1

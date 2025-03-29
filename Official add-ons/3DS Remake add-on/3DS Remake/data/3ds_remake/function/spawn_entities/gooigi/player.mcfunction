@@ -1,6 +1,6 @@
-scoreboard players operation #temp ID = @s ID
-execute as @e[tag=luigi] if score @s ID = #temp ID run scoreboard players set #temp Time 1
-execute unless score #temp Time matches 1 run summon minecraft:marker ~ ~ ~ {CustomName:{type:"translatable",translate:"3ds_remake:entity.gooigi"},Tags:["luigi","player","gooigi","spawn_animation","no_dialog_freeze","same_room_select_furniture","cannot_be_removed","this_entity"],data:{entity:{namespace:"luigis_mansion",id:"luigi"},head_rotation:0f}}
+scoreboard players operation #entity ID = @s ID
+execute as @e[tag=luigi] if score @s ID = #entity ID run scoreboard players set #entity Time 1
+execute unless score #entity Time matches 1 run summon minecraft:marker ~ ~ ~ {CustomName:{type:"translatable",translate:"3ds_remake:entity.gooigi"},Tags:["luigi","player","gooigi","spawn_animation","no_dialog_freeze","same_room_select_furniture","cannot_be_removed","this_entity"],data:{entity:{namespace:"luigis_mansion",id:"luigi"},head_rotation:0f}}
 execute if entity @s[tag=separated_camera] store result entity @e[tag=this_entity,limit=1] Pos[0] double 0.01 run scoreboard players get @s ModelPositionX
 execute if entity @s[tag=separated_camera] store result entity @e[tag=this_entity,limit=1] Pos[1] double 0.01 run scoreboard players get @s ModelPositionY
 execute if entity @s[tag=separated_camera] store result entity @e[tag=this_entity,limit=1] Pos[2] double 0.01 run scoreboard players get @s ModelPositionZ
@@ -16,8 +16,8 @@ summon minecraft:armor_stand ~ ~ ~ {NoGravity:1b,Invisible:1b,Marker:1b,Tags:["c
 summon minecraft:armor_stand ~ ~ ~ {NoGravity:1b,Invisible:1b,Marker:1b,Tags:["right_leg","gooigi_model","this_entity","model_piece","found_owner"],CustomName:{type:"translatable",translate:"3ds_remake:entity.gooigi"},equipment:{head:{id:"minecraft:diamond_pickaxe",count:1,components:{"minecraft:item_model":"3ds_remake:entity/gooigi","minecraft:custom_model_data":{flags:[B;0b],floats:[4f]},"minecraft:custom_data":{mirror:{components:{"minecraft:custom_model_data":{floats:[5f]}}}}}}}}
 summon minecraft:armor_stand ~ ~ ~ {NoGravity:1b,Invisible:1b,Marker:1b,Tags:["left_leg","gooigi_model","this_entity","model_piece","found_owner"],CustomName:{type:"translatable",translate:"3ds_remake:entity.gooigi"},equipment:{head:{id:"minecraft:diamond_pickaxe",count:1,components:{"minecraft:item_model":"3ds_remake:entity/gooigi","minecraft:custom_model_data":{flags:[B;0b],floats:[5f]},"minecraft:custom_data":{mirror:{components:{"minecraft:custom_model_data":{floats:[4f]}}}}}}}}
 summon minecraft:armor_stand ~ ~ ~ {NoGravity:1b,Invisible:1b,Marker:1b,Tags:["poltergust_body","gooigi_model","model_piece","this_entity","found_owner"],CustomName:{type:"translatable",translate:"3ds_remake:entity.gooigi"}}
-scoreboard players operation @e[tag=this_entity] ID = #temp ID
-scoreboard players reset #temp ID
+scoreboard players operation @e[tag=this_entity] ID = #entity ID
+scoreboard players reset #entity ID
 execute in minecraft:overworld run loot spawn 27 0 0 loot luigis_mansion:gameplay/get_player_name
 execute in minecraft:overworld run data modify entity @e[tag=!model_piece,tag=this_entity,limit=1] data.player_name set from entity @e[type=minecraft:item,nbt={Item:{id:"minecraft:player_head"}},limit=1] Item.components."minecraft:profile".name
 execute in minecraft:overworld run setblock 27 0 0 minecraft:oak_sign{front_text:{messages:[{source:"entity",entity:"@e[type=minecraft:item,nbt={Item:{id:'minecraft:player_head'}},limit=1]",type:"nbt",nbt:"Item.components.'minecraft:profile'.name"},{type:"text",text:""},{type:"text",text:""},{type:"text",text:""}]}}

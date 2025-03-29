@@ -11,7 +11,7 @@ scoreboard players set @e[tag=this_entity,limit=1] Wave 0
 scoreboard players set @e[tag=this_entity,limit=1] VanishTime -1
 execute as @e[tag=this_entity,limit=1] store result score @s Health run data get storage luigis_mansion:data current_state.current_data.portrait_ghosts.luigis_mansion.boolossus.health
 execute as @e[tag=this_entity,limit=1] store result score @s MaxHealth run data get storage luigis_mansion:data current_state.current_data.portrait_ghosts.luigis_mansion.boolossus.max_health
-scoreboard players operation @e[tag=this_entity,limit=1] Room = #temp Room
+scoreboard players operation @e[tag=this_entity,limit=1] Room = #entity Room
 scoreboard players set @e[tag=this_entity,limit=1] Dialog 0
 execute as @e[tag=this_entity,limit=1] store result score @s Move run data get storage luigis_mansion:data current_state.current_data.portrait_ghosts.luigis_mansion.boolossus.speed
 execute as @e[tag=this_entity,limit=1] run scoreboard players operation @s Move /= @s Health

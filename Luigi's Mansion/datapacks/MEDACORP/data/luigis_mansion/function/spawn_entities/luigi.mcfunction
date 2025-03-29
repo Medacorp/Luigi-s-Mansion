@@ -1,6 +1,6 @@
-scoreboard players operation #temp ID = @s ID
-execute as @e[tag=luigi] if score @s ID = #temp ID run scoreboard players set #temp Time 1
-execute unless score #temp Time matches 1 run summon minecraft:marker ~ ~ ~ {CustomName:{type:"translatable",translate:"luigis_mansion:entity.luigi"},Tags:["luigi","player","no_dialog_freeze","same_room_select_furniture","cannot_be_removed","this_entity"],data:{entity:{namespace:"luigis_mansion",id:"luigi"},head_rotation:0f}}
+scoreboard players operation #entity ID = @s ID
+execute as @e[tag=luigi] if score @s ID = #entity ID run scoreboard players set #entity Time 1
+execute unless score #entity Time matches 1 run summon minecraft:marker ~ ~ ~ {CustomName:{type:"translatable",translate:"luigis_mansion:entity.luigi"},Tags:["luigi","player","no_dialog_freeze","same_room_select_furniture","cannot_be_removed","this_entity"],data:{entity:{namespace:"luigis_mansion",id:"luigi"},head_rotation:0f}}
 execute if entity @s[tag=separated_camera] store result entity @e[tag=this_entity,limit=1] Pos[0] double 0.01 run scoreboard players get @s ModelPositionX
 execute if entity @s[tag=separated_camera] store result entity @e[tag=this_entity,limit=1] Pos[1] double 0.01 run scoreboard players get @s ModelPositionY
 execute if entity @s[tag=separated_camera] store result entity @e[tag=this_entity,limit=1] Pos[2] double 0.01 run scoreboard players get @s ModelPositionZ
@@ -16,8 +16,8 @@ summon minecraft:armor_stand ~ ~ ~ {NoGravity:1b,Marker:1b,Invisible:1b,Tags:["c
 summon minecraft:armor_stand ~ ~ ~ {NoGravity:1b,Marker:1b,Invisible:1b,Tags:["right_leg","luigi_model","model_piece","this_entity","found_owner"],CustomName:{type:"translatable",translate:"luigis_mansion:entity.luigi"},equipment:{head:{id:"minecraft:leather_chestplate",count:1,components:{"minecraft:item_model":"luigis_mansion:entity/luigi","minecraft:custom_model_data":{flags:[B;0b,0b],floats:[4f],strings:["default"],colors:[I;37129]},"minecraft:custom_data":{model_data:{default:{components:{"minecraft:custom_model_data":{strings:["default"]}}},squished:{components:{"minecraft:custom_model_data":{strings:["squished"]}}}},mirror:{components:{"minecraft:custom_model_data":{floats:[5f]}}}}}}}}
 summon minecraft:armor_stand ~ ~ ~ {NoGravity:1b,Marker:1b,Invisible:1b,Tags:["left_leg","luigi_model","model_piece","this_entity","found_owner"],CustomName:{type:"translatable",translate:"luigis_mansion:entity.luigi"},equipment:{head:{id:"minecraft:leather_chestplate",count:1,components:{"minecraft:item_model":"luigis_mansion:entity/luigi","minecraft:custom_model_data":{flags:[B;0b,0b],floats:[5f],strings:["default"],colors:[I;37129]},"minecraft:custom_data":{model_data:{default:{components:{"minecraft:custom_model_data":{strings:["default"]}}},squished:{components:{"minecraft:custom_model_data":{strings:["squished"]}}}},mirror:{components:{"minecraft:custom_model_data":{floats:[4f]}}}}}}}}
 summon minecraft:armor_stand ~ ~ ~ {NoGravity:1b,Marker:1b,Invisible:1b,Tags:["poltergust_body","luigi_model","model_piece","this_entity","found_owner"],CustomName:{type:"translatable",translate:"luigis_mansion:entity.luigi"}}
-scoreboard players operation @e[tag=this_entity] ID = #temp ID
-scoreboard players reset #temp ID
+scoreboard players operation @e[tag=this_entity] ID = #entity ID
+scoreboard players reset #entity ID
 execute in minecraft:overworld run loot spawn 27 0 0 loot luigis_mansion:gameplay/get_player_name
 execute in minecraft:overworld run data modify entity @e[tag=!model_piece,tag=this_entity,limit=1] data.player_name set from entity @e[type=minecraft:item,nbt={Item:{id:"minecraft:player_head"}},limit=1] Item.components."minecraft:profile".name
 execute in minecraft:overworld run setblock 27 0 0 minecraft:oak_sign{front_text:{messages:[{source:"entity",entity:"@e[type=minecraft:item,nbt={Item:{id:'minecraft:player_head'}},limit=1]",type:"nbt",nbt:"Item.components.'minecraft:profile'.name"},{type:"text",text:""},{type:"text",text:""},{type:"text",text:""}]}}
@@ -28,10 +28,10 @@ execute in minecraft:overworld run kill @e[x=27.5,y=0.0,z=0.5,distance=..0.7,typ
 execute if score #global_player_names Selected matches 0 run data merge entity @e[tag=model_piece,tag=source,tag=this_entity,limit=1] {CustomNameVisible:0b}
 execute if score #global_player_names Selected matches 1 run data merge entity @e[tag=model_piece,tag=source,tag=this_entity,limit=1] {CustomNameVisible:1b}
 function luigis_mansion:entities/player/memory/color/get
-execute as @e[tag=model_piece,tag=this_entity,tag=!held_item,tag=!poltergust_body,tag=!source] store result entity @s equipment.head.components."minecraft:custom_model_data".[0] int 1 run scoreboard players get #temp Time
-execute if score #temp2 Time matches 1 as @e[tag=model_piece,tag=this_entity,tag=!held_item,tag=!poltergust_body,tag=!source] run data modify entity @s equipment.head.components."minecraft:custom_model_data".flags[1] set value 1b
-scoreboard players reset #temp Time
-scoreboard players reset #temp2 Time
+execute as @e[tag=model_piece,tag=this_entity,tag=!held_item,tag=!poltergust_body,tag=!source] store result entity @s equipment.head.components."minecraft:custom_model_data".[0] int 1 run scoreboard players get #entity Time
+execute if score #entity2 Time matches 1 as @e[tag=model_piece,tag=this_entity,tag=!held_item,tag=!poltergust_body,tag=!source] run data modify entity @s equipment.head.components."minecraft:custom_model_data".flags[1] set value 1b
+scoreboard players reset #entity Time
+scoreboard players reset #entity2 Time
 tag @e[tag=model_piece,tag=this_entity] remove this_entity
 scoreboard players set @e[tag=this_entity,limit=1] Sound 0
 scoreboard players set @e[tag=this_entity,limit=1] PoltergustSound 0
@@ -48,7 +48,6 @@ scoreboard players operation @e[tag=this_entity,limit=1] Health = @s Health
 scoreboard players operation @e[tag=this_entity,limit=1] MaxHealth = @s MaxHealth
 execute if entity @e[tag=this_entity,limit=1] run data modify storage luigis_mansion:data entity set value {owner:0}
 execute if entity @e[tag=this_entity,limit=1] store result storage luigis_mansion:data entity.owner int 1 run scoreboard players get @s ID
-execute if entity @e[tag=this_entity,limit=1] run function luigis_mansion:spawn_entities/setup/room
 execute if entity @e[tag=this_entity,limit=1] run function luigis_mansion:spawn_entities/setup/debug_spawn
 data remove storage luigis_mansion:data entity
 tag @e[tag=this_entity,limit=1] remove this_entity

@@ -1,5 +1,6 @@
 execute unless data storage luigis_mansion:data inventory run data modify storage luigis_mansion:data inventory set from entity @s Inventory
 execute unless data storage luigis_mansion:data equipment run data modify storage luigis_mansion:data equipment set from entity @s equipment
+execute if data storage luigis_mansion:data inventory[{Slot:-106b}] run data modify storage luigis_mansion:data equipment.offhand set from storage luigis_mansion:data inventory[{Slot:-106b}]
 execute in minecraft:overworld run setblock 27 0 0 minecraft:shulker_box
 execute in minecraft:overworld run data modify block 27 0 0 Items set from storage luigis_mansion:data inventory
 data remove storage luigis_mansion:data inventory[{Slot:0b}]

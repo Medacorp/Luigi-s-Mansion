@@ -13,7 +13,7 @@ scoreboard players set @e[tag=this_entity,limit=1] Move 15
 scoreboard players set @e[tag=this_entity,limit=1] Sound 0
 function luigis_mansion:spawn_entities/setup/default
 tag @e[tag=this_entity,limit=1] remove this_entity
-scoreboard players add #temp Boos 1
-execute if score #temp Boos matches ..14 rotated ~24 ~ run function luigis_mansion:spawn_entities/portrait_ghost/boolossus/intro
-scoreboard players reset #temp Boos
+scoreboard players add #entity Boos 1
+execute if score #entity Boos matches ..14 rotated ~24 ~ run function luigis_mansion:spawn_entities/portrait_ghost/boolossus/intro
+scoreboard players reset #entity Boos
 data remove storage luigis_mansion:data entity

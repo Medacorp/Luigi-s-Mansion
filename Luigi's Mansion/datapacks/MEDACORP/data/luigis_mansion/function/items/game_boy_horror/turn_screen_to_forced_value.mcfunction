@@ -2,6 +2,8 @@ execute store result score #temp ActionTime run clear @s *[minecraft:custom_data
 execute if score #temp ActionTime matches 0 run item replace entity @s[tag=using_selection_menu] weapon.offhand with minecraft:carrot_on_a_stick[minecraft:unbreakable={},minecraft:tooltip_display={hidden_components:["minecraft:unbreakable"]},minecraft:item_model="luigis_mansion:game_boy_horror",minecraft:custom_model_data={flags:[B;0b,0b],strings:["off","none"],floats:[0f,0f,0f,0f]},minecraft:item_name={type:"translatable",translate:"luigis_mansion:item.game_boy_horror"},minecraft:custom_data={namespace:"luigis_mansion",id:"game_boy_horror",kill:1b}]
 scoreboard players reset #temp ActionTime
 data modify storage luigis_mansion:data inventory set from entity @s Inventory
+data modify storage luigis_mansion:data inventory append from entity @s equipment.offhand
+execute unless data storage luigis_mansion:data inventory[-1].Slot run data modify storage luigis_mansion:data inventory[-1].Slot set value -106b
 scoreboard players reset #temp Time
 execute if data storage luigis_mansion:data inventory[{components:{"minecraft:custom_data":{namespace:"luigis_mansion",id:"game_boy_horror"}}}] run data modify storage luigis_mansion:data temp set from storage luigis_mansion:data inventory[{components:{"minecraft:custom_data":{namespace:"luigis_mansion",id:"game_boy_horror"}}}]
 $execute if data storage luigis_mansion:data inventory[{components:{"minecraft:custom_data":{namespace:"luigis_mansion",id:"game_boy_horror"}}}] run data modify storage luigis_mansion:data inventory[{components:{"minecraft:custom_data":{namespace:"luigis_mansion",id:"game_boy_horror"}}}].components."minecraft:custom_model_data".flags set value $(flags)

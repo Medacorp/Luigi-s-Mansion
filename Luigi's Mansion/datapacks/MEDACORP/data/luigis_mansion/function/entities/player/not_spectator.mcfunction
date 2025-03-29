@@ -26,5 +26,5 @@ tag @s[tag=third_person_movement] add separated_camera
 tag @s[tag=!third_person_movement,tag=!fully_separated_camera] remove separated_camera
 
 effect give @s[tag=!camera] minecraft:invisibility infinite 0 true
-execute if entity @s[tag=!has_luigi,tag=!dead_player,tag=!camera] run function luigis_mansion:spawn_entities/luigi
+execute if entity @s[tag=!has_luigi,tag=!dead_player,tag=!camera] if loaded ~ ~ ~ run function luigis_mansion:spawn_entities/luigi
 tag @s remove has_luigi

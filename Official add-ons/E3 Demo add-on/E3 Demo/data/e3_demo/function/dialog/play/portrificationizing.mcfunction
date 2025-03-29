@@ -1,3 +1,4 @@
+execute if score #dialog Dialog matches 987 run scoreboard players add #dialog Dialog 1
 execute if score #dialog Dialog matches 985..986 if entity @a[tag=same_room,tag=next_dialog_line,limit=1] run scoreboard players add #dialog Dialog 1
 execute if score #dialog Dialog matches 986 if entity @e[tag=e_gadd,tag=same_room,limit=1,tag=!can_talk_to] run scoreboard players add #dialog Dialog 1
 execute if score #dialog Dialog matches 924..984 run scoreboard players add #dialog Dialog 1
@@ -155,7 +156,10 @@ scoreboard players reset #temp2 Dialog
 execute if score #dialog Dialog matches 987 as @e[tag=e_gadd,tag=same_room,limit=1,tag=can_talk_to] run teleport @s 774 77 14 -30 0
 execute if score #dialog Dialog matches 987 run data remove entity @e[tag=e_gadd,tag=same_room,limit=1,tag=can_talk_to] data.animation
 execute if score #dialog Dialog matches 987 as @a[tag=same_room] run function luigis_mansion:other/music/set/silence
-execute if score #dialog Dialog matches 987 if entity @e[tag=e_gadd,tag=same_room,limit=1,tag=!can_talk_to] run data modify storage luigis_mansion:data dialogs append value {name:{namespace:"e3_demo",id:"ending"},room:-3,progress:0}
-execute if score #dialog Dialog matches 987 if entity @e[tag=e_gadd,tag=same_room,limit=1,tag=can_talk_to] run data modify storage luigis_mansion:data dialogs append value {name:{namespace:"luigis_mansion",id:"underground_lab"},room:-1,progress:-1}
-execute if score #dialog Dialog matches 987 if entity @e[tag=e_gadd,tag=same_room,limit=1,tag=can_talk_to] as @a[tag=same_room] run function luigis_mansion:room/underground_lab/warp_to
-execute if score #dialog Dialog matches 987 run scoreboard players set #dialog Dialog -1
+execute if score #dialog Dialog matches 987 if entity @e[tag=e_gadd,tag=same_room,limit=1,tag=!can_talk_to] run scoreboard players set @a[tag=same_room] Room 0
+execute if score #dialog Dialog matches 997 if entity @e[tag=e_gadd,tag=same_room,limit=1,tag=!can_talk_to] run tag @e[tag=e_gadd,tag=same_room,limit=1] remove cannot_be_removed
+execute if score #dialog Dialog matches 997 if entity @e[tag=e_gadd,tag=same_room,limit=1,tag=!can_talk_to] run data modify storage luigis_mansion:data dialogs[0].room set value 0
+execute if score #dialog Dialog matches 988 unless entity @e[tag=e_gadd,tag=same_room,limit=1,tag=can_talk_to] run data modify storage luigis_mansion:data dialogs append value {name:{namespace:"luigis_mansion",id:"credits"},progress:0,room:0}
+execute if score #dialog Dialog matches 988 if entity @e[tag=e_gadd,tag=same_room,limit=1,tag=can_talk_to] run data modify storage luigis_mansion:data dialogs append value {name:{namespace:"luigis_mansion",id:"underground_lab"},room:-1,progress:-1}
+execute if score #dialog Dialog matches 988 if entity @e[tag=e_gadd,tag=same_room,limit=1,tag=can_talk_to] as @a[tag=same_room] run function luigis_mansion:room/underground_lab/warp_to
+execute if score #dialog Dialog matches 988 run scoreboard players set #dialog Dialog -1
