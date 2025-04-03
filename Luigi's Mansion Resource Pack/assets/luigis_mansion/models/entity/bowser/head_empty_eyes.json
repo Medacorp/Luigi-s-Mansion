@@ -1,0 +1,6 @@
+{
+	"parent": "luigis_mansion:entity/bowser/head",
+	"textures": {
+		"1": "luigis_mansion:entity/bowser/eyes_closed"
+	}
+}

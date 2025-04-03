@@ -13,15 +13,57 @@
                         {
                             "when": "open_mouth",
                             "model": {
-                                "type": "minecraft:model",
-                                "model": "luigis_mansion:entity/bowser/head_open_mouth"
-                            }
+								"type": "minecraft:select",
+								"property": "minecraft:custom_model_data",
+								"index": 1,
+								"cases": [
+									{
+										"when": "closed",
+										"model": {
+											"type": "minecraft:model",
+											"model": "luigis_mansion:entity/bowser/head_open_mouth_closed_eyes"
+										}
+									},
+									{
+										"when": "empty",
+										"model": {
+											"type": "minecraft:model",
+											"model": "luigis_mansion:entity/bowser/head_open_mouth_empty_eyes"
+										}
+									}
+								],
+								"fallback": {
+									"type": "minecraft:model",
+									"model": "luigis_mansion:entity/bowser/head_open_mouth"
+								}
+							}
                         }
                     ],
                     "fallback": {
-                        "type": "minecraft:model",
-                        "model": "luigis_mansion:entity/bowser/head"
-                    }
+						"type": "minecraft:select",
+						"property": "minecraft:custom_model_data",
+						"index": 1,
+						"cases": [
+							{
+								"when": "closed",
+								"model": {
+									"type": "minecraft:model",
+									"model": "luigis_mansion:entity/bowser/head_closed_eyes"
+								}
+							}
+							{
+								"when": "empty",
+								"model": {
+									"type": "minecraft:model",
+									"model": "luigis_mansion:entity/bowser/head_empty_eyes"
+								}
+							}
+						],
+						"fallback": {
+							"type": "minecraft:model",
+							"model": "luigis_mansion:entity/bowser/head"
+						}
+					}
                 }
             }
         ],
@@ -93,21 +135,57 @@
                         {
                             "when": "open_mouth",
                             "model": {
-                                "type": "minecraft:model",
-                                "model": "luigis_mansion:entity/bowser/head_open_mouth"
-                            }
-                        },
-                        {
-                            "when": "decapitated",
-                            "model": {
-                                "type": "minecraft:empty"
-                            }
+								"type": "minecraft:select",
+								"property": "minecraft:custom_model_data",
+								"index": 1,
+								"cases": [
+									{
+										"when": "closed",
+										"model": {
+											"type": "minecraft:model",
+											"model": "luigis_mansion:entity/bowser/head_open_mouth_closed_eyes"
+										}
+									},
+									{
+										"when": "empty",
+										"model": {
+											"type": "minecraft:model",
+											"model": "luigis_mansion:entity/bowser/head_open_mouth_empty_eyes"
+										}
+									}
+								],
+								"fallback": {
+									"type": "minecraft:model",
+									"model": "luigis_mansion:entity/bowser/head_open_mouth"
+								}
+							}
                         }
                     ],
                     "fallback": {
-                        "type": "minecraft:model",
-                        "model": "luigis_mansion:entity/bowser/head"
-                    }
+						"type": "minecraft:select",
+						"property": "minecraft:custom_model_data",
+						"index": 1,
+						"cases": [
+							{
+								"when": "closed",
+								"model": {
+									"type": "minecraft:model",
+									"model": "luigis_mansion:entity/bowser/head_closed_eyes"
+								}
+							}
+							{
+								"when": "empty",
+								"model": {
+									"type": "minecraft:model",
+									"model": "luigis_mansion:entity/bowser/head_empty_eyes"
+								}
+							}
+						],
+						"fallback": {
+							"type": "minecraft:model",
+							"model": "luigis_mansion:entity/bowser/head"
+						}
+					}
                 }
             },
             "on_true": {
@@ -146,15 +224,29 @@
                         {
                             "when": "open_mouth",
                             "model": {
-                                "type": "minecraft:model",
-                                "model": "luigis_mansion:entity/bowser/head_open_mouth_painting"
-                            }
+								"type": "minecraft:model",
+								"model": "luigis_mansion:entity/bowser/head_open_mouth_painting"
+							}
                         }
                     ],
                     "fallback": {
-                        "type": "minecraft:model",
-                        "model": "luigis_mansion:entity/bowser/head_painting"
-                    }
+						"type": "minecraft:select",
+						"property": "minecraft:custom_model_data",
+						"index": 1,
+						"cases": [
+							{
+								"when": "closed",
+								"model": {
+									"type": "minecraft:model",
+									"model": "luigis_mansion:entity/bowser/head_closed_eyes_painting"
+								}
+							}
+						],
+						"fallback": {
+							"type": "minecraft:model",
+							"model": "luigis_mansion:entity/bowser/head_painting"
+						}
+					}
                 }
             }
         }
