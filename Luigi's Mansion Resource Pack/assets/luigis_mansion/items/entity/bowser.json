@@ -50,7 +50,7 @@
 									"type": "minecraft:model",
 									"model": "luigis_mansion:entity/bowser/head_closed_eyes"
 								}
-							}
+							},
 							{
 								"when": "empty",
 								"model": {
@@ -172,7 +172,7 @@
 									"type": "minecraft:model",
 									"model": "luigis_mansion:entity/bowser/head_closed_eyes"
 								}
-							}
+							},
 							{
 								"when": "empty",
 								"model": {

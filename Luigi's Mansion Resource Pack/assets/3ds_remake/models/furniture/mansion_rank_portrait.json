@@ -92,8 +92,8 @@
 			}
 		},
 		{
-			"from": [-4, 0, 8],
-			"to": [20, 16, 8.5],
+			"from": [-2, 2, 8],
+			"to": [18, 14, 8.5],
 			"rotation": {"angle": 0, "axis": "y", "origin": [2, 0, -4]},
 			"faces": {
 				"north": {"uv": [0, 0, 16, 16], "texture": "#image"},

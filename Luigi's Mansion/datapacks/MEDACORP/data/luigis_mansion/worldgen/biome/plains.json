@@ -4,10 +4,10 @@
 	"downfall": 0,
 	"creature_spawn_probability": 0,
 	"effects": {
-		"fog_color": 15066597,
+		"fog_color": 10213375,
 		"foliage_color": 5877296,
 		"grass_color": 5271602,
-		"sky_color": 3355443,
+		"sky_color": 8434175,
 		"water_color": 4159204,
 		"water_fog_color": 329011,
 		"grass_color_modifier": "dark_forest"

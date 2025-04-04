@@ -4,7 +4,7 @@
         "settings": {
             "lakes": false,
             "features": true,
-            "biome": "luigis_mansion:boo_woods",
+            "biome": "luigis_mansion:plains",
             "layers": [
                 {
                     "height": 1,

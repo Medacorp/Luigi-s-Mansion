@@ -57,10 +57,12 @@ v3.3:
 ** Portrait ghosts now hide based on flashlight shine direction
 ** A hidden setting now exists to control the movement from a third-person perspective; this is not guarenteed to be used in the future but has been added in case it will be
 ** The hidden setting also enables 2 new settings: Movement mode (Standard/Sidestep), and (Debug) Phase Through Walls
+* Changed menu panorama (no more remnant visuals from old map version)
 * Changed Game Boy Horror's map option to get disabled if in a room where map is not allowed to be opened, rather than trying and failing to open
 * Changed most music track IDs
 * Changed some of Bowser's animations a bit
 * Changed Bowser's size and attack range to more accurately match the original game
+* Changed mansion rank paintings to use edited screenshots of the build exteriors
 * Changed debug settings to be hidden, unless the sendCommandFeedback game rule is set to true
 * Fixed lab map area chunks accidentally removed
 * Fixed exterior dialogs continue counting while the player is not present, locking the player in the exterior if they leave the world during them
