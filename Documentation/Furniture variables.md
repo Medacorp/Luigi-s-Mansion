@@ -112,7 +112,7 @@ furniture:{
         },
         left_hinge:1b, //If the hinge is on the left of the door itself (your right when facing it). Default = 0b.
         push:1b, //If the door is pushed open, rather than pulled. Default = 0b.
-        blocked:1b, //How the door is blocked, 0b = not, 1b = blockade, 2b = arena blockade, 3b = barricade, 4b = uninteractable. Default = 0b.
+        blocked:1b, //How the door is blocked, 0b = not, 1b = blockade, 2b = area blockade, 3b = barricade, 4b = double barricade, 5b = uninteractable. Default = 0b.
         burning:"extinguish_kitchen_door", //Only if the door is burning, the save data field to write on extinguish. If it's already written, the door won't burn. Default = none.
         key:"parlor", //What key this door needs. Default = none.
         key_model: {}, //The item components for the key to use. Value merges with default. Default = {"minecraft:item_model":"luigis_mansion:key","minecraft:custom_model_data":{strings:["default"]}}.

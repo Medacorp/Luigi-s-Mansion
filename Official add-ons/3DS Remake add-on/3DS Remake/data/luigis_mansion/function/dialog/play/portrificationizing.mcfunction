@@ -101,10 +101,6 @@ execute if score #dialog Dialog matches 668 if entity @e[tag=e_gadd,tag=same_roo
 execute if score #dialog Dialog matches 668 if entity @e[tag=e_gadd,tag=same_room,limit=1,tag=!can_talk_to] if entity @a[tag=same_room,tag=next_dialog_line,limit=1] run tellraw @a[tag=same_room] {type:"translatable",translate:"chat.type.text",with:[{type:"translatable",translate:"luigis_mansion:entity.e_gadd",color:"green"},{type:"translatable",translate:"luigis_mansion:dialog.ghost_portrificationizer_room.ending.5"}]}
 execute if score #dialog Dialog matches 668 if entity @e[tag=e_gadd,tag=same_room,limit=1,tag=!can_talk_to] if entity @a[tag=same_room,tag=next_dialog_line,limit=1] at @e[tag=e_gadd,tag=same_room,limit=1] run playsound luigis_mansion:entity.e_gadd.talk.ohmoogah_luigi_odoh neutral @a[tag=same_room] ~ ~ ~ 1
 
-execute if score #dialog Dialog matches 669 run data modify entity @e[tag=e_gadd,tag=same_room,limit=1,tag=can_talk_to] data.animation set value {namespace:"luigis_mansion",id:"walk"}
-execute if score #dialog Dialog matches 669..2006 as @e[tag=e_gadd,tag=same_room,limit=1,tag=can_talk_to] unless entity @s[x=774.5,y=77.0,z=14.5,distance=..0.1] at @s run teleport @s ~ ~ ~0.1 0 0
-execute if score #dialog Dialog matches 669..2006 as @e[tag=e_gadd,tag=same_room,limit=1,tag=can_talk_to,x=774.5,y=77.0,z=14.5,distance=..0.1] run teleport @s 774 77 14 -30 0
-execute if score #dialog Dialog matches 669..2006 run data remove entity @e[tag=e_gadd,tag=same_room,limit=1,x=774.5,y=77.0,z=14.5,distance=..0.1] data.animation
 execute if score #dialog Dialog matches 669..694 as @a[tag=same_room] run function luigis_mansion:other/music/set/non_overwritten_silence
 execute if score #dialog Dialog matches 669 as @a[tag=same_room] run playsound luigis_mansion:ambience.spotlight ambient @s ~ ~ ~ 1
 execute if score #dialog Dialog matches 695 as @a[tag=same_room] run function luigis_mansion:other/music/set/silence

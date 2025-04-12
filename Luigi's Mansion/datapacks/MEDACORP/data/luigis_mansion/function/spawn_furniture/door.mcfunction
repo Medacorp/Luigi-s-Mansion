@@ -16,8 +16,9 @@ scoreboard players set @e[tag=this_entity,limit=1] FurnitureSizeHeight 20
 execute if data storage luigis_mansion:data furniture.door.frame as @e[tag=this_entity,limit=1] run function luigis_mansion:spawn_furniture/door/frame with storage luigis_mansion:data furniture.door.frame
 execute if data storage luigis_mansion:data furniture.door{blocked:1b} run tag @e[tag=this_entity,limit=1] add blockade
 execute if data storage luigis_mansion:data furniture.door{blocked:2b} run tag @e[tag=this_entity,limit=1] add area_blockade
-execute if data storage luigis_mansion:data furniture.door{blocked:3b} run tag @e[tag=this_entity,limit=1] add barricade
-execute if data storage luigis_mansion:data furniture.door{blocked:4b} run tag @e[tag=this_entity,limit=1] add unopenable
+execute if data storage luigis_mansion:data furniture.door{blocked:3b} run tag @e[tag=this_entity,limit=1] add barricaded
+execute if data storage luigis_mansion:data furniture.door{blocked:4b} run tag @e[tag=this_entity,limit=1] add barricaded_double
+execute if data storage luigis_mansion:data furniture.door{blocked:5b} run tag @e[tag=this_entity,limit=1] add unopenable
 execute if data storage luigis_mansion:data furniture.door.burning as @e[tag=this_entity,limit=1] run function luigis_mansion:spawn_furniture/door/burning with storage luigis_mansion:data furniture.door
 execute if data storage luigis_mansion:data furniture.door.key as @e[tag=this_entity,limit=1] run function luigis_mansion:spawn_furniture/door/key with storage luigis_mansion:data furniture.door
 execute if data storage luigis_mansion:data furniture.door.key_model as @e[tag=this_entity,limit=1] run function luigis_mansion:spawn_furniture/door/key_model with storage luigis_mansion:data furniture.door

@@ -6,7 +6,7 @@ execute if data storage luigis_mansion:data dialogs[0].room unless data storage 
 execute unless data storage luigis_mansion:data dialogs[0].room unless data storage luigis_mansion:data dialogs[0].door run tag @e[tag=!model_piece,tag=!reflection,tag=!in_dialog,tag=!captured,tag=!capturing_ghost,tag=!door_animation] add same_room
 scoreboard players reset #temp Room
 execute as @a[tag=same_room] run function luigis_mansion:dialog/players_pre_tick
-execute as @e[type=!minecraft:player,tag=same_room] run function luigis_mansion:dialog/entities_pre_tick
+execute if entity @a[tag=same_room,limit=1] as @e[type=!minecraft:player,tag=same_room] run function luigis_mansion:dialog/entities_pre_tick
 execute if entity @a[tag=same_room,limit=1] if entity @a[tag=!same_room,limit=1] run scoreboard players set #freeze_timer Selected 0
 execute at @a[tag=same_room,limit=1] run function luigis_mansion:dialog/tick with storage luigis_mansion:data dialogs[0].name
 execute store result storage luigis_mansion:data dialogs[0].progress int 1 run scoreboard players get #dialog Dialog

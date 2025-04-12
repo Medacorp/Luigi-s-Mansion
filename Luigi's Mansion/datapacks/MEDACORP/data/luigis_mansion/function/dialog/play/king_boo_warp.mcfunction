@@ -47,6 +47,13 @@ execute if score #dialog Dialog matches 391..400 if score #mirrored Selected mat
 execute if score #dialog Dialog matches 401..410 as @a[tag=same_room] run function luigis_mansion:entities/player/camera/teleport {teleport:"^ ^ ^-0.65 ~ 0"}
 execute if score #dialog Dialog matches 411..420 unless score #mirrored Selected matches 1 as @a[tag=same_room] run function luigis_mansion:entities/player/camera/teleport {teleport:"^ ^ ^-0.65 ~6 0"}
 execute if score #dialog Dialog matches 411..420 if score #mirrored Selected matches 1 as @a[tag=same_room] run function luigis_mansion:entities/player/camera/teleport {teleport:"^ ^ ^-0.65 ~6 0"}
+execute if score #dialog Dialog matches 381..390 unless score #mirrored Selected matches 1 as @e[tag=same_room,tag=luigi] run function luigis_mansion:entities/luigi/move/teleport {teleport:"^ ^ ^-0.65 ~3 0"}
+execute if score #dialog Dialog matches 381..390 if score #mirrored Selected matches 1 as @e[tag=same_room,tag=luigi] run function luigis_mansion:entities/luigi/move/teleport {teleport:"^ ^ ^-0.65 ~-3 0"}
+execute if score #dialog Dialog matches 391..400 unless score #mirrored Selected matches 1 as @e[tag=same_room,tag=luigi] run function luigis_mansion:entities/luigi/move/teleport {teleport:"^ ^ ^-0.65 ~-6 0"}
+execute if score #dialog Dialog matches 391..400 if score #mirrored Selected matches 1 as @e[tag=same_room,tag=luigi] run function luigis_mansion:entities/luigi/move/teleport {teleport:"^ ^ ^-0.65 ~6 0"}
+execute if score #dialog Dialog matches 401..410 as @e[tag=same_room,tag=luigi] run function luigis_mansion:entities/luigi/move/teleport {teleport:"^ ^ ^-0.65 ~ 0"}
+execute if score #dialog Dialog matches 411..420 unless score #mirrored Selected matches 1 as @e[tag=same_room,tag=luigi] run function luigis_mansion:entities/luigi/move/teleport {teleport:"^ ^ ^-0.65 ~6 0"}
+execute if score #dialog Dialog matches 411..420 if score #mirrored Selected matches 1 as @e[tag=same_room,tag=luigi] run function luigis_mansion:entities/luigi/move/teleport {teleport:"^ ^ ^-0.65 ~6 0"}
 
 execute if score #dialog Dialog matches 10 run data remove entity @e[tag=same_room,nbt={data:{entity:{namespace:"luigis_mansion",id:"king_boo"}}},limit=1] data.animation
 execute if score #dialog Dialog matches 99 if data storage luigis_mansion:data current_state.current_data.technical_data{king_boo_warp:1b} run tag @a[tag=same_room,limit=1] add next_dialog_line

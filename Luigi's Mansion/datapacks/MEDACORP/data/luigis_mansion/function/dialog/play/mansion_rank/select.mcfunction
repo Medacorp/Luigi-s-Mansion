@@ -18,6 +18,7 @@ execute if score #temp Money matches 60000..69999 run data modify storage luigis
 execute if score #temp Money matches 70000..149999 run data modify storage luigis_mansion:data dialogs[0].rank set value "b"
 execute if score #temp Money matches 150000.. run data modify storage luigis_mansion:data dialogs[0].rank set value "a"
 
+execute as @a[tag=same_room] at @s in luigis_mansion:exterior/rank run teleport @s ~ ~ ~ ~ ~
 function luigis_mansion:room/load_exterior {namespace:"luigis_mansion",id:"rank"}
 data modify storage luigis_mansion:data loaded_exterior.rank set from storage luigis_mansion:data dialogs[0].rank
 

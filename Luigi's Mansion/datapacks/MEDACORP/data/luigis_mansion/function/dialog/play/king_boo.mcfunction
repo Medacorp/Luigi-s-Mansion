@@ -12,7 +12,7 @@ tag @e[tag=same_room,tag=furniture,tag=incense] remove no_ai
 scoreboard players reset @a[tag=same_room,tag=!spectator] WarpTime
 execute as @a[tag=same_room,tag=!spectator,tag=game_boy_horror_menu] run function luigis_mansion:selection_menu/game_boy_horror/exit
 tag @e[tag=same_room,nbt={data:{entity:{namespace:"luigis_mansion",id:"mario"}}},limit=1] remove freeze_animation
-tag @e[tag=same_room,nbt={data:{entity:{namespace:"luigis_mansion",id:"bowser"}}},limit=1] remove freeze_animation
+tag @e[tag=same_room,nbt={data:{entity:{namespace:"luigis_mansion",id:"bowser_painting"}}},limit=1] remove freeze_animation
 tag @e[tag=same_room,nbt={data:{entity:{namespace:"luigis_mansion",id:"king_boo"}}},limit=1] remove freeze_animation
 execute if score #dialog Dialog matches 1 at @e[tag=same_room,nbt={data:{entity:{namespace:"luigis_mansion",id:"king_boo"}}},limit=1] as @e[tag=same_room,tag=luigi,distance=..5.9,limit=1] run function luigis_mansion:entities/luigi/move/execute {execute:"positioned ~ ~ ~",teleport:"^ ^ ^-8 ~ 0"}
 execute if score #dialog Dialog matches 1 unless score #mirrored Selected matches 1 as @a[tag=same_room] run function luigis_mansion:entities/player/camera/execute {execute:"at @e[tag=same_room,nbt={data:{entity:{namespace:'luigis_mansion',id:'king_boo'}}},limit=1]",teleport:"^-1.5 ^0.5 ^-9 facing ^ ^ ^4"}

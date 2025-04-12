@@ -1,2 +1,2 @@
-data modify storage luigis_mansion:data furniture set value {room:-2,sound:{namespace:"luigis_mansion",id:"heavy_generic"},door:{model:{namespace:"luigis_mansion",id:"training"},frame:{namespace:"luigis_mansion",id:"stacked_blocks"},push:1b,blocked:4b,other_end:{x:791,y:77,z:5}}}
+data modify storage luigis_mansion:data furniture set value {room:-2,sound:{namespace:"luigis_mansion",id:"heavy_generic"},door:{model:{namespace:"luigis_mansion",id:"training"},frame:{namespace:"luigis_mansion",id:"stacked_blocks"},push:1b,blocked:5b,other_end:{x:791,y:77,z:5}}}
 execute positioned 791 77 4 rotated -180 0 run function luigis_mansion:spawn_furniture/door

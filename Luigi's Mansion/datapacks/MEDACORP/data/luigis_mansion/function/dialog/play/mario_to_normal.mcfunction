@@ -23,11 +23,6 @@ execute if score #dialog Dialog matches 723 as @a[tag=same_room] run function lu
 execute if score #dialog Dialog matches 725.. run tag @e[tag=mario,tag=done_portrificationizing,tag=same_room,limit=1] remove no_ai
 execute if score #dialog Dialog matches 803 as @a[tag=same_room] run function luigis_mansion:other/music/set/silence
 execute if score #dialog Dialog matches 803 as @a[tag=same_room] run function luigis_mansion:other/music/set/saved_mario
-execute if score #dialog Dialog matches 1104 run data modify entity @e[tag=e_gadd,tag=same_room,limit=1] data.animation set value {namespace:"luigis_mansion",id:"walk"}
-execute if score #dialog Dialog matches 1104..1362 as @e[tag=e_gadd,tag=same_room,limit=1] at @s run teleport @s ~ ~ ~0.1 0 0
-execute if score #dialog Dialog matches 1363 as @e[tag=e_gadd,tag=same_room,limit=1] at @s run teleport @s 774 77 14 -30 0
-execute if score #dialog Dialog matches 1363 as @e[tag=e_gadd,tag=same_room,limit=1] at @s run teleport @s 774 77 14 -30 0
-execute if score #dialog Dialog matches 1363 run data remove entity @e[tag=e_gadd,tag=same_room,limit=1] data.animation
 execute if score #dialog Dialog matches 1363 run tag @e[tag=mario,tag=same_room,limit=1] remove cannot_be_removed
 execute if score #dialog Dialog matches 1363 run tag @e[tag=e_gadd,tag=same_room,limit=1] remove cannot_be_removed
 execute if score #dialog Dialog matches 1363 run scoreboard players set @a[tag=same_room] Room 0

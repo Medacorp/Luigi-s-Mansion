@@ -12,7 +12,7 @@ tag @e[tag=same_room,tag=!player,tag=!this_bowser] remove same_room
 execute unless entity @e[tag=this_bowser,tag=same_room,limit=1] run scoreboard players set #dialog Dialog 60
 
 scoreboard players add #dialog Dialog 1
-execute if score #dialog Dialog matches 1..59 as @a[tag=same_room] run function luigis_mansion:entities/player/camera/execute {execute:"at @e[tag=this_bowser,limit=1]",teleport:"~3 ~6 ~ 90 60"}
+execute if score #dialog Dialog matches 1..59 as @a[tag=same_room] run function luigis_mansion:entities/player/camera/execute {execute:"at @e[tag=this_bowser,limit=1]",teleport:"~3 ~7.75 ~ 90 60"}
 execute if score #dialog Dialog matches 60 as @a[tag=same_room] run function luigis_mansion:entities/player/camera/reset
 execute if score #dialog Dialog matches 60 run scoreboard players set #dialog Dialog -1
 

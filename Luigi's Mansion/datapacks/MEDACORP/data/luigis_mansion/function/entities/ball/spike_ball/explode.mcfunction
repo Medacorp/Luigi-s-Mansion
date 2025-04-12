@@ -1,6 +1,6 @@
 tag @s add me
 execute if entity @s[tag=spit] as @e[tag=can_decapitate,nbt={data:{entity:{namespace:"luigis_mansion",id:"bowser"}}}] run function luigis_mansion:entities/ball/spike_ball/decapitate_bowser
-execute if entity @s[tag=spit] positioned ~ ~-1.4 ~ as @e[tag=can_decapitate,nbt={data:{entity:{namespace:"luigis_mansion",id:"bowser_head"}}},distance=..3] run function luigis_mansion:entities/ball/spike_ball/decapitate_bowser_head
+execute if entity @s[tag=spit] positioned ~ ~-1.4 ~ as @e[tag=can_decapitate,nbt={data:{entity:{namespace:"luigis_mansion",id:"bowser_head"}}},distance=..5] run function luigis_mansion:entities/ball/spike_ball/decapitate_bowser_head
 tag @s remove me
 data modify storage luigis_mansion:data damage set value {method:{namespace:"luigis_mansion",id:"explosion"},amount:10,animation:{namespace:"luigis_mansion",id:"knockback/burn"},no_delete:1b}
 execute if data entity @s data.damage.attack run data modify storage luigis_mansion:data damage.amount set from entity @s data.damage.attack

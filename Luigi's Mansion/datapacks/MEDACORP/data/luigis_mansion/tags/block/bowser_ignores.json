@@ -4,6 +4,7 @@
         "minecraft:cave_air",
         "minecraft:void_air",
         "minecraft:light",
-        "minecraft:stone_button"
+        "minecraft:stone_button",
+        "minecraft:clay"
     ]
 }

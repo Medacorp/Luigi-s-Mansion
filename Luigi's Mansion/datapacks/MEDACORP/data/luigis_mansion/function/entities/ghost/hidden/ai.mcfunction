@@ -15,7 +15,9 @@ execute if entity @s[tag=!spawn,tag=!no_height_change,tag=!new_ghost] if block ~
 execute if entity @s[tag=!spawn,tag=!no_height_change,tag=!new_ghost] if block ~ ~ ~ #minecraft:stairs run tag @s add forced_collision
 execute if entity @s[tag=!no_height_change,tag=!new_ghost,tag=!no_hidden_move] if block ~ ~-0.5 ~ #luigis_mansion:all_ignore run teleport @s ~ ~-0.5 ~
 execute at @s[tag=spawn,tag=!no_height_change,tag=!new_ghost,tag=!no_hidden_move] if block ~ ~-1 ~ #minecraft:slabs[type=bottom] run teleport @s ~ ~-0.5 ~
-execute at @s[tag=spawn] run function luigis_mansion:entities/ghost/hidden/appear
+execute at @s[tag=spawn,tag=ceiling_ghost] if entity @s[tag=!new_ghost,tag=!no_hidden_move] positioned ~ ~3 ~ run function luigis_mansion:entities/ghost/hidden/appear
+execute at @s[tag=spawn,tag=ceiling_ghost] unless entity @s[tag=!new_ghost,tag=!no_hidden_move] run function luigis_mansion:entities/ghost/hidden/appear
+execute at @s[tag=spawn,tag=!ceiling_ghost] run function luigis_mansion:entities/ghost/hidden/appear
 execute at @s[tag=spawned_ghost_heart] run function luigis_mansion:entities/ghost/heart/remove
 
 execute at @s[tag=!spawn] if entity @s[scores={SpawnTime=1..},tag=!new_ghost,tag=!no_hidden_move] run function luigis_mansion:entities/ghost/hidden/move

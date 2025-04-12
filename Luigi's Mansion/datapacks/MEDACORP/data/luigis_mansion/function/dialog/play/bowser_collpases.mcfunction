@@ -1,8 +1,8 @@
-execute store result score #temp GhostNr run data get storage luigis_mansion:data dialogs[0].bowser
-execute as @e[tag=ghost,tag=same_room] if score @s GhostNr = #temp GhostNr run tag @s add this_bowser
-execute store result score #temp GhostNr run data get storage luigis_mansion:data dialogs[0].bowser_head
-execute as @e[tag=ghost,tag=same_room] if score @s GhostNr = #temp GhostNr run tag @s add this_bowser_head
-scoreboard players reset #temp GhostNr
+execute store result score #temp PassiveNr run data get storage luigis_mansion:data dialogs[0].bowser
+execute as @e[tag=ghost,tag=same_room] if score @s PassiveNr = #temp PassiveNr run tag @s add this_bowser
+execute store result score #temp PassiveNr run data get storage luigis_mansion:data dialogs[0].bowser_head
+execute as @e[tag=ghost,tag=same_room] if score @s PassiveNr = #temp PassiveNr run tag @s add this_bowser_head
+scoreboard players reset #temp PassiveNr
 
 scoreboard players add #dialog Dialog 1
 execute if score #dialog Dialog matches 1 run tag @e[tag=this_bowser_head,limit=1] add dying
