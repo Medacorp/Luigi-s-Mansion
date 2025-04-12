@@ -71,16 +71,16 @@
                             "index": 0,
                             "cases": [
                                 {
-                                    "when": "legged",
+                                    "when": "no_legs",
                                     "model": {
                                         "type": "minecraft:model",
-                                        "model": "luigis_mansion:entity/clockwork_soldier/blue/body_legged"
+                                        "model": "luigis_mansion:entity/clockwork_soldier/blue/body"
                                     }
                                 }
                             ],
                             "fallback": {
                                 "type": "minecraft:model",
-                                "model": "luigis_mansion:entity/clockwork_soldier/blue/body"
+                                "model": "luigis_mansion:entity/clockwork_soldier/blue/body_legged"
                             }
                         }
                     },
@@ -92,15 +92,15 @@
                             "index": 0,
                             "cases": [
                                 {
-                                    "when": "legged",
+                                    "when": "no_legs",
                                     "model": {
-                                        "type": "minecraft:model",
-                                        "model": "luigis_mansion:entity/clockwork_soldier/blue/right_leg"
+                                        "type": "minecraft:empty"
                                     }
                                 }
                             ],
                             "fallback": {
-                                "type": "minecraft:empty"
+                                "type": "minecraft:model",
+                                "model": "luigis_mansion:entity/clockwork_soldier/blue/right_leg"
                             }
                         }
                     },
@@ -112,15 +112,15 @@
                             "index": 0,
                             "cases": [
                                 {
-                                    "when": "legged",
+                                    "when": "no_legs",
                                     "model": {
-                                        "type": "minecraft:model",
-                                        "model": "luigis_mansion:entity/clockwork_soldier/blue/left_leg"
+                                        "type": "minecraft:empty"
                                     }
                                 }
                             ],
                             "fallback": {
-                                "type": "minecraft:empty"
+                                "type": "minecraft:model",
+                                "model": "luigis_mansion:entity/clockwork_soldier/blue/left_leg"
                             }
                         }
                     }

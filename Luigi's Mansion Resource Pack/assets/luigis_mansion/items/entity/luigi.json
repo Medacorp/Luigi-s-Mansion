@@ -602,6 +602,12 @@
                                         }
                                     ]
                                 }
+                            },
+                            {
+                                "when": "squished",
+                                "model": {
+                                    "type": "minecraft:empty"
+                                }
                             }
                         ],
                         "fallback": {
@@ -913,6 +919,12 @@
                                             "default": 37129
                                         }
                                     ]
+                                }
+                            },
+                            {
+                                "when": "squished",
+                                "model": {
+                                    "type": "minecraft:empty"
                                 }
                             }
                         ],

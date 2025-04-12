@@ -10,6 +10,7 @@ execute if entity @s[tag=!furniture] run function luigis_mansion:main/entity/non
 execute if entity @s[tag=furniture] run function luigis_mansion:main/entity/furniture
 
 execute if entity @s[tag=!no_ai] run function luigis_mansion:main/entity/ai_after
+execute as @e[tag=same_room] run function luigis_mansion:main/entity/untag_same_room
 
 execute if entity @s[tag=applied_dialog_effects,tag=!in_dialog] run function luigis_mansion:dialog/unapply_effects
 tag @s remove in_dialog
@@ -27,8 +28,6 @@ scoreboard players reset @s MirrorZ
 execute if score #mirrored Selected matches 2 run scoreboard players set #mirrored Selected 1
 tag @s[tag=freeze_animation_next_tick] add freeze_animation
 tag @s remove freeze_animation_next_tick
-
-execute unless data entity @s[type=minecraft:armor_stand] equipment.head.count run data modify entity @s equipment.head set value {id:"minecraft:diamond_pickaxe",count:1,components:{"minecraft:item_model":"luigis_mansion:empty"}}
 
 tag @s[tag=remove_from_existence] add dead
 teleport @s[tag=dead] ~ ~-100 ~

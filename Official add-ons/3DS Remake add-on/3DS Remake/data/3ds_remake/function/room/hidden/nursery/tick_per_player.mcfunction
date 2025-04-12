@@ -10,6 +10,6 @@ execute unless entity @s[tag=!wall_warp,tag=!spectator] if entity @s[tag=!alread
 
 tag @s add already_ticked
 
-execute if entity @s[scores={MusicType=7}] as @s[scores={RoomNoise=0}] run function luigis_mansion:other/music/play/group_0/chaunceys_room
+execute if entity @s[scores={MusicType=7}] as @s[scores={RoomNoise=0}] unless score #nursery Wave matches 2 run function luigis_mansion:other/music/play/group_0/chaunceys_room
 execute unless entity @s[scores={MusicType=7}] run stopsound @s ambient luigis_mansion:music.mansion.room.nursery
 execute unless entity @s[scores={MusicType=7}] run scoreboard players set @s RoomNoise 0

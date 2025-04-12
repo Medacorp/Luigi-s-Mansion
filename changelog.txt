@@ -23,6 +23,7 @@ v3.3:
 ** Bogmire Opening (Arena section of boss intro, previously entity behavior)
 ** Mario's Painting
 ** Mario's Painting Repeat
+**          Trick Door (new)
 ** Astral Hall Ambush
 ** Observatory Path (new)
 ** Mysterious Power
@@ -43,6 +44,8 @@ v3.3:
 ** Bowser Corrects Head (new)
 ** Bowser Collapses (new)
 ** Caught King Boo (Previously "<Mansion>/Caught King Boo")
+**          Portrificationizing
+**          Mario to Normal
 ** Credits (new, original game credits)
 ** Mansion Rank (Previously included in "Mario to Normal"; now shows mansion exterior)
 * Added a technical dialog: Boss Clear (replacing the return timer; will get animation triggers at later date)
@@ -61,7 +64,7 @@ v3.3:
 * Changed Game Boy Horror's map option to get disabled if in a room where map is not allowed to be opened, rather than trying and failing to open
 * Changed most music track IDs
 * Changed some of Bowser's animations a bit
-* Changed Bowser's size and attack range to more accurately match the original game
+* Changed Bowser's size and attack range to more accurately match the original game, compared to the room size
 * Changed mansion rank paintings to use edited screenshots of the build exteriors
 * Changed debug settings to be hidden, unless the sendCommandFeedback game rule is set to true
 * Fixed lab map area chunks accidentally removed
@@ -71,6 +74,7 @@ v3.3:
 * Fixed softlock when upgrading a world where E. Gadd wasn't found yet
 * Fixed a few E. Gadd calls were missing the E. Gadd Call music
 * Fixed element medals using wrong bounce sound
+* Fixed Melody Pianissima does not show up
 * Fixed the door in the Guest Room is non-solid
 * Fixed Chauncey's screaming head was not showing up
 * Fixed Chauncey's non-mirrored punch animation wrongly loops left arm

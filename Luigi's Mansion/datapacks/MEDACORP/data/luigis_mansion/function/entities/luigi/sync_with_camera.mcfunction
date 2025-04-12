@@ -37,6 +37,8 @@ tag @s remove dialog_walking
 tag @s remove running
 tag @a[tag=this_player,limit=1] remove door_animation
 tag @a[tag=this_player,limit=1] remove flipped_gravity
+tag @a[tag=this_player,limit=1] remove vacuuming_ghost
+tag @a[tag=this_player,limit=1] remove animation_free_rotation
 scoreboard players operation @s ForceScreen = @a[tag=this_player,limit=1] ForceScreen
 scoreboard players operation @s ForceRadar = @a[tag=this_player,limit=1] ForceRadar
 scoreboard players reset @a[tag=this_player,limit=1] ForceScreen
@@ -50,6 +52,8 @@ execute if entity @a[tag=this_player,tag=walking,tag=!separated_camera,limit=1] 
 execute if entity @a[tag=this_player,tag=running,tag=!separated_camera,limit=1] run tag @s add running
 execute if entity @s[tag=door_animation] run tag @a[tag=this_player,limit=1] add door_animation
 execute if entity @s[tag=flipped_gravity] run tag @a[tag=this_player,limit=1] add flipped_gravity
+execute if entity @s[tag=vacuuming_ghost] run tag @a[tag=this_player,limit=1] add vacuuming_ghost
+execute if entity @s[tag=animation_free_rotation] run tag @a[tag=this_player,limit=1] add animation_free_rotation
 
 # Inventory
 tag @a[tag=this_player,limit=1] remove flashlight

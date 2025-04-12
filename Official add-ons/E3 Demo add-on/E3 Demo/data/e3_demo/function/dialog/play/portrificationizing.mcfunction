@@ -28,7 +28,7 @@ scoreboard players reset @a[tag=same_room,tag=!spectator] WarpTime
 execute as @a[tag=same_room,tag=!spectator,tag=game_boy_horror_menu] run function luigis_mansion:selection_menu/game_boy_horror/exit
 tag @e[tag=e_gadd,tag=same_room,limit=1] remove freeze_animation
 tag @e[tag=e_gadd,tag=same_room,limit=1] remove no_ai
-execute if score #ghost_portrificationizer_room_ghost_portrificationizer Searching matches 1.. run tag @a[tag=poltergust_selected,tag=same_room,limit=1] add prevent_item_lock
+tag @e[tag=poltergust_selected,tag=same_room] add prevent_item_lock
 tag @e[tag=same_room,nbt={data:{entity:{namespace:"luigis_mansion",id:"portrificationizing_ghost"}}}] remove no_ai
 execute if score #dialog Dialog matches 1 unless data storage luigis_mansion:data dialogs[0].portraits run data modify storage luigis_mansion:data dialogs[0].portraits set value {}
 execute if score #dialog Dialog matches 1 as @a[tag=same_room] run function luigis_mansion:other/music/set/portrificationizing
@@ -76,7 +76,10 @@ execute if score #dialog Dialog matches 669 run data modify entity @e[tag=e_gadd
 execute if score #dialog Dialog matches 669..986 as @e[tag=e_gadd,tag=same_room,limit=1,tag=can_talk_to] unless entity @s[x=774.5,y=77.0,z=14.5,distance=..0.1] at @s run teleport @s ~ ~ ~0.1 0 0
 execute if score #dialog Dialog matches 669..986 as @e[tag=e_gadd,tag=same_room,limit=1,tag=can_talk_to,x=774.5,y=77.0,z=14.5,distance=..0.1] run teleport @s 774 77 14 -30 0
 execute if score #dialog Dialog matches 669..986 run data remove entity @e[tag=e_gadd,tag=same_room,limit=1,x=774.5,y=77.0,z=14.5,distance=..0.1] data.animation
-execute if score #dialog Dialog matches 669..986 as @a[tag=same_room] run function luigis_mansion:other/music/set/portraits
+execute if score #dialog Dialog matches 669..694 as @a[tag=same_room] run function luigis_mansion:other/music/set/non_overwritten_silence
+execute if score #dialog Dialog matches 669 as @a[tag=same_room] run playsound luigis_mansion:ambience.spotlight ambient @s ~ ~ ~ 1
+execute if score #dialog Dialog matches 695 as @a[tag=same_room] run function luigis_mansion:other/music/set/silence
+execute if score #dialog Dialog matches 695..2006 as @a[tag=same_room] run function luigis_mansion:other/music/set/portraits
 #ghosts
 execute if score #dialog Dialog matches 749 if score #players Totals matches 1 run tellraw @a[tag=same_room] {type:"translatable",translate:"chat.type.text",with:[{type:"translatable",translate:"luigis_mansion:entity.mansion",color:"green"},{type:"translatable",translate:"luigis_mansion:dialog.ghost_portrificationizer_room.results.caught"}]}
 execute if score #dialog Dialog matches 749 if score #players Totals matches 2.. run tellraw @a[tag=same_room] {type:"translatable",translate:"chat.type.text",with:[{type:"translatable",translate:"luigis_mansion:entity.mansion",color:"green"},{type:"translatable",translate:"luigis_mansion:dialog.ghost_portrificationizer_room.results.caught.more"}]}
@@ -124,8 +127,8 @@ execute if score #dialog Dialog matches 924 if score #players Totals matches 2..
 execute if score #dialog Dialog matches 924 run function e3_demo:dialog/play/portrificationizing/get_ghost_coin
 execute if score #dialog Dialog matches 924 unless score #temp Money matches 0 run tellraw @a[tag=same_room] {type:"translatable",translate:"chat.type.text",with:[{type:"translatable",translate:"luigis_mansion:entity.mansion",color:"green"},{type:"translatable",translate:"luigis_mansion:message.money",with:[{type:"translatable",translate:"luigis_mansion:item.gold_coin"},{type:"score",score:{objective:"Money",name:"#temp"}},{type:"score",score:{objective:"Money",name:"#temp2"}}]}]}
 execute if score #dialog Dialog matches 924 if score #temp Money matches 0 run tellraw @a[tag=same_room] {type:"translatable",translate:"chat.type.text",with:[{type:"translatable",translate:"luigis_mansion:entity.mansion",color:"green"},{type:"translatable",translate:"luigis_mansion:message.money.not_obtained"}]}
-execute if score #dialog Dialog matches 924 if score #temp Money matches 0 run scoreboard players add #dialog Dialog 40
-execute if score #dialog Dialog matches 924..944 if score #temp2 Dialog matches 0 as @a[tag=same_room] at @s run playsound luigis_mansion:item.count_money player @s ~ ~ ~ 1
+execute if score #dialog Dialog matches 924 if score #temp Money matches 0 run scoreboard players add #dialog Dialog 20
+execute if score #dialog Dialog matches 924..943 if score #temp2 Dialog matches 0 as @a[tag=same_room] at @s run playsound luigis_mansion:item.count_money player @s ~ ~ ~ 1
 execute if score #dialog Dialog matches 964 run function luigis_mansion:dialog/play/portrificationizing/get_total_score
 execute if score #dialog Dialog matches 964 if data storage luigis_mansion:data current_state.current_data{lowest_difficulty:0} run tellraw @a[tag=same_room] {type:"translatable",translate:"chat.type.text",with:[{type:"translatable",translate:"luigis_mansion:entity.mansion",color:"green"},{type:"translatable",translate:"luigis_mansion:message.money.multiplier.peaceful"}]}
 execute if score #dialog Dialog matches 964 if data storage luigis_mansion:data current_state.current_data{lowest_difficulty:1} run tellraw @a[tag=same_room] {type:"translatable",translate:"chat.type.text",with:[{type:"translatable",translate:"luigis_mansion:entity.mansion",color:"green"},{type:"translatable",translate:"luigis_mansion:message.money.multiplier.easy"}]}
@@ -148,7 +151,7 @@ execute if score #dialog Dialog matches 964 if score #3ds_remake Loaded matches 
 execute if score #dialog Dialog matches 964 if score #3ds_remake Loaded matches 1.. run scoreboard players reset #temp5 Time
 execute if score #dialog Dialog matches 964 if score #3ds_remake Loaded matches 1.. run scoreboard players reset #temp6 Time
 execute if score #dialog Dialog matches 964 if score #temp Money matches 0 run scoreboard players add #dialog Dialog 20
-execute if score #dialog Dialog matches 964..984 if score #temp2 Dialog matches 0 as @a[tag=same_room] at @s run playsound luigis_mansion:item.count_money player @s ~ ~ ~ 1
+execute if score #dialog Dialog matches 964..983 if score #temp2 Dialog matches 0 as @a[tag=same_room] at @s run playsound luigis_mansion:item.count_money player @s ~ ~ ~ 1
 execute if score #dialog Dialog matches 924..984 run scoreboard players reset #temp Money
 execute if score #dialog Dialog matches 924..984 run scoreboard players reset #temp2 Money
 scoreboard players reset #temp2 Dialog

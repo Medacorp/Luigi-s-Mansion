@@ -20,17 +20,13 @@ scoreboard players reset #temp MirrorX
 scoreboard players reset #temp HomeX
 scoreboard players reset #temp HomeZ
 scoreboard players reset #temp ActionTime
+data modify storage luigis_mansion:data temp set value {x:0,y:0,z:0}
+execute store result storage luigis_mansion:data temp.x int 1 run data get entity @e[tag=temp,limit=1] Pos[0]
+execute store result storage luigis_mansion:data temp.y int 1 run data get entity @e[tag=temp,limit=1] Pos[1]
+execute store result storage luigis_mansion:data temp.z int 1 run data get entity @e[tag=temp,limit=1] Pos[2]
 
-execute if data storage luigis_mansion:data mirror.no_sync{Facing:0b} at @e[tag=temp,limit=1] run summon minecraft:item_frame ~ ~ ~ {Facing:0b,Invulnerable:1b,CustomName:{type:"translatable",translate:"luigis_mansion:entity.reflection"},Tags:["reflection","new"],Silent:1b,Fixed:1b,NoGravity:1b,Invisible:1b}
-execute if data storage luigis_mansion:data mirror.no_sync{Facing:1b} at @e[tag=temp,limit=1] run summon minecraft:item_frame ~ ~ ~ {Facing:1b,Invulnerable:1b,CustomName:{type:"translatable",translate:"luigis_mansion:entity.reflection"},Tags:["reflection","new"],Silent:1b,Fixed:1b,NoGravity:1b,Invisible:1b}
-execute if data storage luigis_mansion:data mirror.no_sync{Facing:2b} if score #temp MirrorZ matches 1 at @e[tag=temp,limit=1] run summon minecraft:item_frame ~ ~ ~ {Facing:3b,Invulnerable:1b,CustomName:{type:"translatable",translate:"luigis_mansion:entity.reflection"},Tags:["reflection","new"],Silent:1b,Fixed:1b,NoGravity:1b,Invisible:1b}
-execute if data storage luigis_mansion:data mirror.no_sync{Facing:2b} if score #temp MirrorZ matches 0 at @e[tag=temp,limit=1] run summon minecraft:item_frame ~ ~ ~ {Facing:2b,Invulnerable:1b,CustomName:{type:"translatable",translate:"luigis_mansion:entity.reflection"},Tags:["reflection","new"],Silent:1b,Fixed:1b,NoGravity:1b,Invisible:1b}
-execute if data storage luigis_mansion:data mirror.no_sync{Facing:3b} if score #temp MirrorZ matches 1 at @e[tag=temp,limit=1] run summon minecraft:item_frame ~ ~ ~ {Facing:2b,Invulnerable:1b,CustomName:{type:"translatable",translate:"luigis_mansion:entity.reflection"},Tags:["reflection","new"],Silent:1b,Fixed:1b,NoGravity:1b,Invisible:1b}
-execute if data storage luigis_mansion:data mirror.no_sync{Facing:3b} if score #temp MirrorZ matches 0 at @e[tag=temp,limit=1] run summon minecraft:item_frame ~ ~ ~ {Facing:3b,Invulnerable:1b,CustomName:{type:"translatable",translate:"luigis_mansion:entity.reflection"},Tags:["reflection","new"],Silent:1b,Fixed:1b,NoGravity:1b,Invisible:1b}
-execute if data storage luigis_mansion:data mirror.no_sync{Facing:4b} if score #temp MirrorZ matches 0 at @e[tag=temp,limit=1] run summon minecraft:item_frame ~ ~ ~ {Facing:5b,Invulnerable:1b,CustomName:{type:"translatable",translate:"luigis_mansion:entity.reflection"},Tags:["reflection","new"],Silent:1b,Fixed:1b,NoGravity:1b,Invisible:1b}
-execute if data storage luigis_mansion:data mirror.no_sync{Facing:4b} if score #temp MirrorZ matches 1 at @e[tag=temp,limit=1] run summon minecraft:item_frame ~ ~ ~ {Facing:4b,Invulnerable:1b,CustomName:{type:"translatable",translate:"luigis_mansion:entity.reflection"},Tags:["reflection","new"],Silent:1b,Fixed:1b,NoGravity:1b,Invisible:1b}
-execute if data storage luigis_mansion:data mirror.no_sync{Facing:5b} if score #temp MirrorZ matches 0 at @e[tag=temp,limit=1] run summon minecraft:item_frame ~ ~ ~ {Facing:4b,Invulnerable:1b,CustomName:{type:"translatable",translate:"luigis_mansion:entity.reflection"},Tags:["reflection","new"],Silent:1b,Fixed:1b,NoGravity:1b,Invisible:1b}
-execute if data storage luigis_mansion:data mirror.no_sync{Facing:5b} if score #temp MirrorZ matches 1 at @e[tag=temp,limit=1] run summon minecraft:item_frame ~ ~ ~ {Facing:5b,Invulnerable:1b,CustomName:{type:"translatable",translate:"luigis_mansion:entity.reflection"},Tags:["reflection","new"],Silent:1b,Fixed:1b,NoGravity:1b,Invisible:1b}
+function luigis_mansion:entities/reflection/new/spawn_item_frame with storage luigis_mansion:data temp
+data remove storage luigis_mansion:data temp
 scoreboard players reset #temp MirrorZ
 kill @e[tag=temp,limit=1]
 execute store result score @e[tag=new,limit=1] Room run data get storage luigis_mansion:data mirror.room

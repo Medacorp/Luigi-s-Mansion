@@ -1,6 +1,7 @@
 execute if data entity @s[tag=hit_player] data.owner run function luigis_mansion:entities/ghost/owner_laugh with entity @s data
 execute if data entity @s[tag=!hit_player] data.owner run function luigis_mansion:entities/ghost/owner_complain with entity @s data
 scoreboard players set @e[tag=same_room,nbt={data:{entity:{namespace:"luigis_mansion",id:"haunted_object"}}}] WaitTime 0
+tag @s remove hit_player
 tag @s remove attack
 tag @s remove collided
 execute if entity @s[tag=!dead] run playsound luigis_mansion:entity.haunted_object.hit hostile @a[tag=same_room] ~ ~ ~ 1

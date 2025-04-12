@@ -10,5 +10,5 @@ execute if entity @s[tag=separated_camera] if entity @e[tag=this_luigi,limit=1] 
 execute if entity @s[tag=separated_camera] if entity @e[tag=this_luigi,limit=1] store result score @s ModelRotationY run data get entity @e[tag=this_luigi,limit=1] Rotation[0]
 $execute as @s[tag=!separated_camera] $(execute) run teleport @s $(teleport)
 execute at @s[tag=!separated_camera] run function luigis_mansion:main/update_last_position
-execute if entity @s[tag=!keep_luigi] run tag @a[tag=this_luigi,limit=1] remove this_luigi
+execute if entity @s[tag=!keep_luigi] run tag @e[tag=this_luigi,limit=1] remove this_luigi
 tag @s remove keep_luigi

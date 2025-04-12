@@ -1,2 +1,4 @@
-execute unless data storage luigis_mansion:data furniture{no_spawn_sound:1b} run data modify storage luigis_mansion:data dialogs append value {name:{namespace:"luigis_mansion",id:"room_clear_chest_spawns"},progress:0,room:0}
+execute unless data storage luigis_mansion:data furniture{no_spawn_sound:1b} run data modify storage luigis_mansion:data dialogs append value {name:{namespace:"luigis_mansion",id:"room_clear_chest_spawns"},progress:0,room:0,scanned_entity:[I;]}
 execute unless data storage luigis_mansion:data furniture{no_spawn_sound:1b} store result storage luigis_mansion:data dialogs[-1].room int 1 run scoreboard players get @e[tag=this_entity,limit=1] Room
+execute unless data storage luigis_mansion:data furniture{no_spawn_sound:1b} run data modify storage luigis_mansion:data dialogs[-1].scanned_entity set from entity @e[tag=this_entity,limit=1] UUID
+execute if data storage luigis_mansion:data furniture{no_spawn_sound:2b} run data modify storage luigis_mansion:data dialogs[-1].no_camera set value 1b

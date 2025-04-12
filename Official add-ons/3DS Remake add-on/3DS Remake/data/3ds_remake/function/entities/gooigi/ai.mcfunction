@@ -6,8 +6,9 @@ execute if entity @s[scores={Health=..0},tag=!death_animation,tag=!revived_anima
 scoreboard players reset @s[scores={OpenMapTime=1..},tag=stop_map_on_key_collect] OpenMapFocus
 scoreboard players reset @s[scores={OpenMapTime=1..},tag=stop_map_on_key_collect] OpenMapTime
 scoreboard players remove @s[scores={OpenMapTime=1..}] OpenMapTime 1
-execute if entity @s[scores={OpenMapTime=0}] unless entity @s[nbt={data:{animation:{}}},tag=!idle] run function luigis_mansion:entities/luigi/run_command_as_owner {command:"function luigis_mansion:selection_menu/game_boy_horror/map/open"}
-execute unless entity @s[nbt={data:{animation:{}}},tag=!idle] run scoreboard players reset @s[scores={OpenMapTime=0}] OpenMapTime
+execute unless entity @s[nbt={data:{animation:{}}},tag=!idle] run scoreboard players set @s[scores={OpenMapTime=0}] OpenMapTime -1
+execute if entity @s[scores={OpenMapTime=-1}] as @a[tag=this_player,limit=1] run function luigis_mansion:selection_menu/game_boy_horror/map/open
+scoreboard players reset @s[scores={OpenMapTime=-1}] OpenMapTime
 function #luigis_mansion:items
 scoreboard players set @s UseItem 0
 function #luigis_mansion:items/reset_disabled

@@ -3,7 +3,7 @@ scoreboard players add #dialog Dialog 1
 tag @a[tag=same_room] add prevent_item_lock
 tag @e[tag=same_room,tag=door] remove no_ai
 tag @e[tag=same_room,tag=door] remove freeze_animation
-tag @e[tag=same_room,tag=candle_flame] remove no_ai
+tag @e[tag=same_room,tag=light_me] remove no_ai
 scoreboard players reset @a[tag=same_room,tag=!spectator] WarpTime
 execute as @a[tag=same_room,tag=!spectator,tag=game_boy_horror_menu] run function luigis_mansion:selection_menu/game_boy_horror/exit
 execute if score #dialog Dialog matches 1..120 as @e[tag=luigi,tag=same_room] run function luigis_mansion:entities/luigi/animation/set/high_health_idle_no_sound

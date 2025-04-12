@@ -1,4 +1,12 @@
 {
+    "ambience.bogmires_gravestone": {
+        "sounds": [
+            {
+                "name": "luigis_mansion:ambience/bogmires_gravestone",
+                "stream": false
+            }
+        ]
+    },
     "ambience.parlor_wind": {
         "sounds": [
             {
@@ -7,6 +15,14 @@
             }
         ],
         "subtitle": "luigis_mansion:subtitles.ambience.parlor_wind"
+    },
+    "ambience.spotlight": {
+        "sounds": [
+            {
+                "name": "luigis_mansion:ambience/spotlight",
+                "stream": false
+            }
+        ]
     },
     "entity.ball.bounce": {
         "sounds": [
@@ -9589,15 +9605,6 @@
         ],
         "subtitle": "luigis_mansion:subtitles.item.flashlight.off"
     },
-    "item.game_boy_horror.radar": {
-        "sounds": [
-            {
-                "name": "luigis_mansion:item/game_boy_horror/radar",
-                "stream": false
-            }
-        ],
-        "subtitle": "luigis_mansion:subtitles.item.game_boy_horror.radar"
-    },
     "item.game_boy_horror.map.close": {
         "sounds": [
             {
@@ -9661,6 +9668,15 @@
         ],
         "subtitle": "luigis_mansion:subtitles.item.game_boy_horror.map.move"
     },
+    "item.game_boy_horror.radar": {
+        "sounds": [
+            {
+                "name": "luigis_mansion:item/game_boy_horror/radar",
+                "stream": false
+            }
+        ],
+        "subtitle": "luigis_mansion:subtitles.item.game_boy_horror.radar"
+    },
     "item.game_boy_horror.scan": {
         "sounds": [
             {
@@ -9692,7 +9708,8 @@
         "sounds": [
             {
                 "name": "luigis_mansion:item/game_boy_horror/warp",
-                "stream": false
+                "stream": false,
+                "volume": 0.001
             }
         ],
         "subtitle": "luigis_mansion:subtitles.item.game_boy_horror.warp"

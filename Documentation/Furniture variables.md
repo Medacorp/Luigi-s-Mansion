@@ -77,7 +77,7 @@ furniture:{
         cast_shadow:1b //Whether the light source creates shadows. Default = 0b.
     },
     mirror_reflection:1b, //Whether the mirror will actually reflect the room, otherwise gets a solid glass texture. Valid for mirrors only. Default = 1b. Forced to 0b if the yaw rotation is not a multiple of 90, or pose pitch has a non-0 value.
-    no_spawn_sound:1b, //Whether the unsearched room clear chest's spawn sound is disabled, searched room clear chests always have it disabled, regardless of this value. Valid for room clear chests only. Default = 0b.
+    no_spawn_sound:1b, //Whether the unsearched room clear chest's spawn sound/cutscene is disabled, searched room clear chests always have it disabled, regardless of this value. Valid for room clear chests only. Can be set to 2b to disable the cutscene only. Default = 0b.
     hitbox:{ //The size of the hitbox, only applies to and required for scan areas.
         type:"standing", //How the hitbox is aligned to the spawn position, "standing" is bottom aligned, "hanging" is top aligned. Default = centered.
         radius:X, //A ball hitbox, value is the radius in tenths of a block.

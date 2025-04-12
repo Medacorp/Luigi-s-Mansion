@@ -10,7 +10,8 @@ execute as @a[tag=same_room,tag=!spectator,tag=game_boy_horror_menu] run functio
 execute if score #dialog Dialog matches 1 as @e[tag=same_room,tag=luigi] run function luigis_mansion:entities/luigi/animation/set/idle
 execute if score #dialog Dialog matches 1..80 run scoreboard players set @e[tag=same_room,tag=luigi,scores={Sound=..4}] Sound 5
 execute if score #dialog Dialog matches 1 as @a[tag=same_room] run function luigis_mansion:entities/player/camera/execute {execute:"at @e[tag=bogmires_gravestone,tag=same_room,limit=1] positioned ^ ^3.5 ^21 facing entity @e[tag=bogmires_gravestone,tag=same_room,limit=1] feet",teleport:"~ ~ ~ ~ ~"}
-execute if score #dialog Dialog matches 1..59 as @a[tag=same_room] run function luigis_mansion:entities/player/camera/execute {execute:"at @s rotated ~ 0 positioned ^ ^-0.05833 ^0.23333 facing entity @e[tag=bogmires_gravestone,tag=same_room,limit=1] feet",teleport:"~ ~ ~ ~ ~"}
+execute if score #dialog Dialog matches 2..59 as @a[tag=same_room] run function luigis_mansion:entities/player/camera/execute {execute:"at @s rotated ~ 0 positioned ^ ^-0.05833 ^0.23333 facing entity @e[tag=bogmires_gravestone,tag=same_room,limit=1] feet",teleport:"~ ~ ~ ~ ~"}
+execute if score #dialog Dialog matches 10 as @a[tag=same_room] at @s run playsound luigis_mansion:ambience.bogmires_gravestone ambient @s ~ ~ ~ 1
 execute if score #dialog Dialog matches 60.. as @a[tag=same_room] run function luigis_mansion:entities/player/camera/execute {execute:"at @e[tag=bogmires_gravestone,tag=same_room,limit=1] positioned ^ ^ ^7 facing entity @e[tag=bogmires_gravestone,tag=same_room,limit=1] feet",teleport:"~ ~ ~ ~ ~"}
 execute if score #dialog Dialog matches 80 as @a[tag=same_room] run function luigis_mansion:entities/player/camera/reset
 execute if score #dialog Dialog matches 80 as @e[tag=same_room,tag=luigi] run function luigis_mansion:entities/luigi/animation/set/none

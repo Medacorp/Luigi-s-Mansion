@@ -1,6 +1,4 @@
-execute unless entity @s[scores={WarpTime=1..}] run function luigis_mansion:entities/player/run_command_as_model {command:"tag @s remove scanning"}
 execute unless entity @s[scores={WarpTime=1..}] run tag @s add game_boy_horror_menu
-function luigis_mansion:entities/player/run_command_as_model {command:"tag @s add animation_free_rotation"}
 
 execute unless entity @s[scores={WarpTime=1..}] run data modify storage luigis_mansion:data menu_options set value {options:[]}
 execute unless entity @s[scores={WarpTime=1..}] run function luigis_mansion:selection_menu/game_boy_horror/map/check
@@ -15,6 +13,7 @@ execute unless entity @s[scores={WarpTime=1..}] run data modify storage luigis_m
 execute unless entity @s[scores={WarpTime=1..}] run data modify storage luigis_mansion:data menu_options.options append value {id:"minecraft:diamond_pickaxe",count:1,components:{"minecraft:item_model":"luigis_mansion:menu/game_boy_horror/jukebox","minecraft:unbreakable":{},"minecraft:tooltip_display":{hidden_components:["minecraft:unbreakable"]},"minecraft:attribute_modifiers":[],"minecraft:item_name":{type:"translatable",translate:"luigis_mansion:item.menu.game_boy_horror.jukebox"},"minecraft:custom_data":{option:{id:"jukebox"}}}}
 
 execute unless entity @s[scores={WarpTime=1..}] run function luigis_mansion:entities/player/run_command_as_model {command:"execute unless entity @s[nbt={data:{animation:{namespace:\"luigis_mansion\",id:\"game_boy_horror\"}}}] run function luigis_mansion:entities/luigi/animation/set/game_boy_horror"}
+function luigis_mansion:entities/player/run_command_as_model {command:"tag @s add animation_free_rotation"}
 
 execute unless entity @s[scores={WarpTime=1..}] run function luigis_mansion:entities/player/selection_menu/load
 execute if entity @s[scores={WarpTime=1..}] run function luigis_mansion:selection_menu/game_boy_horror/scan_furniture

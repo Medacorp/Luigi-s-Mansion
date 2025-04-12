@@ -11,9 +11,9 @@ $execute if entity @s[scores={ActionTime=1}] run playsound $(namespace):entity.$
 execute if entity @s[scores={ActionTime=1}] positioned ^ ^ ^0.8 run scoreboard players operation @s GrabbedID = @e[tag=luigi,distance=..0.8,tag=!grabbed,limit=1] ID
 execute if entity @s[scores={GrabbedID=-2147483648..}] run scoreboard players operation #temp ID = @s GrabbedID
 execute if entity @s[scores={GrabbedID=-2147483648..,ActionTime=1..20}] as @e[tag=luigi,tag=!door_animation] unless entity @s[scores={WarpTime=1..}] if score @s ID = #temp ID run tag @s add still_grabbed
-execute if entity @s[scores={GrabbedID=-2147483648..,ActionTime=21..}] as @e[tag=luigi,tag=grabbed] run tag @s add still_grabbed
-execute if entity @s[scores={GrabbedID=-2147483648..,ActionTime=1..20}] as @e[tag=still_grabbed,tag=flipped_gravity] run tag @s add flipped_gravity
-execute if entity @s[scores={GrabbedID=-2147483648..,ActionTime=1..20}] as @e[tag=still_grabbed,tag=!flipped_gravity] run tag @s remove flipped_gravity
+execute if entity @s[scores={GrabbedID=-2147483648..,ActionTime=21..}] as @e[tag=luigi,tag=grabbed] if score @s ID = #temp ID run tag @s add still_grabbed
+execute if entity @s[scores={GrabbedID=-2147483648..,ActionTime=1..20}] if entity @e[tag=still_grabbed,tag=flipped_gravity,limit=1] run tag @s add flipped_gravity
+execute if entity @s[scores={GrabbedID=-2147483648..,ActionTime=1..20}] if entity @e[tag=still_grabbed,tag=!flipped_gravity,limit=1] run tag @s remove flipped_gravity
 execute if entity @s[scores={GrabbedID=-2147483648..}] if entity @e[tag=still_grabbed,limit=1] as @e[tag=chest] if score @s ID = #temp ID run tag @s add grabbed_model
 execute if entity @s[scores={ActionTime=20}] run data modify storage luigis_mansion:data damage set value {method:{namespace:"luigis_mansion",id:"grabbed"},animation:{namespace:"luigis_mansion",id:"knockback/harmless_grab"}}
 execute if entity @s[scores={ActionTime=20,AttackType=1}] run data modify storage luigis_mansion:data damage.animation set value {namespace:"luigis_mansion",id:"knockback/harmfull_grab"}

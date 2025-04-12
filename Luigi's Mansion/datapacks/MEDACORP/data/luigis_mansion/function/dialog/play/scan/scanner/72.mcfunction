@@ -13,7 +13,7 @@ tag @a[tag=scanning_player,limit=1] add prevent_item_lock
 execute as @a[tag=same_room,tag=!spectator,tag=game_boy_horror_menu] run function luigis_mansion:selection_menu/game_boy_horror/exit
 execute if score #dialog Dialog matches 1..2 as @e[tag=luigi,tag=!scanning_player,tag=same_room] run function luigis_mansion:entities/luigi/animation/set/idle_no_poltergust
 execute if score #dialog Dialog matches 1..2 as @e[tag=luigi,tag=scanning_player,limit=1] run function luigis_mansion:entities/luigi/animation/set/game_boy_horror
-execute as @a[tag=scanning_player,limit=1] run function luigis_mansion:items/game_boy_horror/turn_screen_to_forced_value {value:"scanning",flags:[B;1b,0b],floats:[],tracker:[]}
+execute as @a[tag=scanning_player,limit=1] run function luigis_mansion:items/game_boy_horror/turn_screen_to_forced_value {value:"scanning",flags:[1b,0b],floats:[],tracker:[]}
 execute if score #dialog Dialog matches 1 run tellraw @a[tag=same_room] {type:"translatable",translate:"chat.type.text",with:[{type:"selector",selector:"@a[tag=scanning_player,limit=1]",color:"green"},{type:"translatable",translate:"luigis_mansion:message.player.scan_furniture.72"}]}
 
 execute if score #dialog Dialog matches 3 run scoreboard players set #dialog Dialog -1

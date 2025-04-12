@@ -2,6 +2,7 @@ tag @s[tag=!poltergust_selected] remove vacuuming
 tag @s[tag=!poltergust_selected] remove was_clogged
 tag @s[tag=!capturing_ghost] remove poltergust_selected
 tag @s[tag=capturing_ghost] add poltergust_selected
+tag @s[tag=capturing_ghost] remove expelling
 tag @s remove exploding_poltergust_effect
 tag @s remove is_pulling
 tag @s remove catch_portrait_ghost

@@ -19,8 +19,6 @@ tag @e[tag=same_room,nbt={data:{entity:{namespace:"luigis_mansion",id:"henry"}}}
 tag @e[tag=same_room,nbt={data:{entity:{namespace:"luigis_mansion",id:"orville"}}},limit=1] add visible
 execute if score #dialog Dialog matches 1 run data modify entity @e[tag=same_room,nbt={data:{entity:{namespace:"luigis_mansion",id:"henry"}}},limit=1] data.animation set value {namespace:"luigis_mansion",id:"appear"}
 execute if score #dialog Dialog matches 1 run data modify entity @e[tag=same_room,nbt={data:{entity:{namespace:"luigis_mansion",id:"orville"}}},limit=1] data.animation set value {namespace:"luigis_mansion",id:"appear"}
-execute if score #dialog Dialog matches 1 run data modify entity @e[nbt={data:{entity:{namespace:"luigis_mansion",id:"henry"}}},tag=same_room,limit=1] data.animation set value {namespace:"luigis_mansion",id:"talk"}
-execute if score #dialog Dialog matches 1 run data modify entity @e[nbt={data:{entity:{namespace:"luigis_mansion",id:"orville"}}},tag=same_room,limit=1] data.animation set value {namespace:"luigis_mansion",id:"talk"}
 execute if score #dialog Dialog matches 1 at @e[tag=same_room,nbt={data:{entity:{namespace:"luigis_mansion",id:"henry"}}},limit=1] run playsound luigis_mansion:entity.henry.spawn hostile @a[tag=same_room] ~ ~ ~ 1
 execute if score #dialog Dialog matches 1 at @e[tag=same_room,nbt={data:{entity:{namespace:"luigis_mansion",id:"orville"}}},limit=1] run playsound luigis_mansion:entity.orville.spawn hostile @a[tag=same_room] ~ ~ ~ 1
 execute if score #dialog Dialog matches 1..67 as @e[tag=luigi,tag=same_room] run function luigis_mansion:entities/luigi/animation/set/idle_no_poltergust

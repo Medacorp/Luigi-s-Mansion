@@ -1,4 +1,5 @@
 scoreboard players add @s Time 1
+data modify entity @s[scores={Time=1}] Pose.Head[1] set value 0.001f
 data modify entity @s[scores={Time=1}] Pose.Head[2] set value 0.001f
 data modify entity @s[scores={Time=1},tag=flipped_gravity] Pose.Head[2] set value -180.0f
 execute if entity @s[tag=dark_room] run function luigis_mansion:animations/luigi/idle/head_dark_room

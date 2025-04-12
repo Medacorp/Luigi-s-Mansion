@@ -7,7 +7,7 @@ execute unless entity @s[scores={Dialog=1..}] unless entity @s[scores={Dialog=..
 data modify entity @s[scores={Dialog=1}] data.animation set value {namespace:"luigis_mansion",id:"sleep"}
 tag @s[scores={Dialog=1..51}] add visible
 tag @s[scores={Dialog=1..50},tag=portrait_ghost_hide] remove visible
-execute if entity @s[scores={Dialog=2}] if predicate luigis_mansion:chauncey/scream_wake_chance run data modify entity @s[scores={Dialog=1}] data.animation set value {namespace:"luigis_mansion",id:"scream_wake"}
+execute if entity @s[scores={Dialog=2}] if predicate luigis_mansion:chauncey/scream_wake_chance run data modify entity @s data.animation set value {namespace:"luigis_mansion",id:"scream_wake"}
 data modify entity @s[scores={Dialog=10},nbt=!{data:{animation:{namespace:"luigis_mansion",id:"scream_wake"}}}] data.animation set value {namespace:"luigis_mansion",id:"wake_up"}
 execute if entity @s[scores={Dialog=10},nbt={data:{animation:{namespace:"luigis_mansion",id:"wake_up"}}}] run playsound luigis_mansion:entity.chauncey.cry_wake hostile @a[tag=same_room] ~ ~ ~ 1
 execute if entity @s[scores={Dialog=30},nbt={data:{animation:{namespace:"luigis_mansion",id:"wake_up"}}}] run playsound luigis_mansion:entity.chauncey.cry_wake hostile @a[tag=same_room] ~ ~ ~ 1
@@ -29,7 +29,7 @@ execute if entity @s[scores={Dialog=131}] unless entity @s[tag=!laugh,tag=!compl
 tag @s[scores={Dialog=131},tag=!attack,tag=!laugh,tag=!complain,tag=!rambling,tag=!grab_rambler] add move
 execute if entity @s[scores={Dialog=131}] if entity @e[tag=haunted_teddy_bear,tag=same_room,scores={WaitTime=60..79}] run data modify entity @s data.animation set value {namespace:"luigis_mansion",id:"grab_rambler"}
 execute if entity @s[scores={Dialog=131}] if entity @e[tag=haunted_teddy_bear,tag=same_room,scores={WaitTime=80..}] run data modify entity @s data.animation set value {namespace:"luigis_mansion",id:"ramble"}
-execute if entity @s[scores={Dialog=131},tag=!attack,tag=!laugh,tag=!complain] unless entity @e[tag=haunted_teddy_bear,tag=same_room,scores={WaitTime=60..}] positioned ^ ^ ^0.7 if entity @e[tag=same_room,tag=luigi,distance=..0.7,limit=1] run tag @s add attack
+execute if entity @s[scores={Dialog=131},tag=!attack,tag=!laugh,tag=!complain] unless entity @e[tag=haunted_teddy_bear,tag=same_room,scores={WaitTime=60..}] positioned ^ ^ ^0.7 if entity @e[tag=same_room,tag=luigi,distance=..0.7,nbt=!{data:{animation:{namespace:"luigis_mansion",id:"scare/normal"}}},limit=1] run tag @s add attack
 execute if entity @s[scores={Dialog=131}] run scoreboard players set @s TargetTask 0
 execute if entity @s[scores={Dialog=131},tag=!attack,tag=!laugh,tag=!complain] unless entity @e[tag=haunted_teddy_bear,tag=same_room,scores={WaitTime=60..}] run scoreboard players set @s TargetTask 1
 

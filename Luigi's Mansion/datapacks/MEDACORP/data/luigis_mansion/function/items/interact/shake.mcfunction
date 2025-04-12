@@ -7,32 +7,29 @@ execute at @s[tag=3] if block ~ ~-0.1 ~ #luigis_mansion:interact_ignore rotated 
 tag @s add searcher
 scoreboard players add @s InteractionTime 1
 tag @s[scores={InteractionTime=2}] add reset_rotation
-function luigis_mansion:entities/player/memory/get with entity @a[tag=this_player,limit=1]
 execute if entity @s[scores={InteractionTime=2}] at @e[tag=interact,tag=manual,limit=1] as @e[tag=furniture,tag=same_room,tag=affected_by_interact] run function luigis_mansion:items/interact/target_furniture/get_animation
-execute unless data storage luigis_mansion:data my_memory.animation if predicate luigis_mansion:luigi/search/knock_chance if entity @s[scores={InteractionTime=2}] run function luigis_mansion:entities/luigi/animation/set/search/knock
-execute unless data storage luigis_mansion:data my_memory.animation if predicate luigis_mansion:luigi/search/hump_chance if entity @s[scores={InteractionTime=2}] run function luigis_mansion:entities/luigi/animation/set/search/hump
-execute unless data storage luigis_mansion:data my_memory.animation if entity @s[scores={InteractionTime=2}] run function luigis_mansion:entities/luigi/animation/set/search/bash
-execute if data storage luigis_mansion:data my_memory.animation{namespace:"luigis_mansion",id:"search/hump"} run tag @e[tag=interact,tag=manual,limit=1] add long_shake
+execute if entity @s[scores={InteractionTime=2}] unless data entity @s data.animation if predicate luigis_mansion:luigi/search/knock_chance run function luigis_mansion:entities/luigi/animation/set/search/knock
+execute if entity @s[scores={InteractionTime=2}] unless data entity @s data.animation if predicate luigis_mansion:luigi/search/hump_chance run function luigis_mansion:entities/luigi/animation/set/search/hump
+execute if entity @s[scores={InteractionTime=2}] unless data entity @s data.animation run function luigis_mansion:entities/luigi/animation/set/search/bash
+execute if data entity @s data.animation{namespace:"luigis_mansion",id:"search/hump"} run tag @e[tag=interact,tag=manual,limit=1] add long_shake
 #todelete - old furniture
 scoreboard players operation #temp Room = @s Room
 scoreboard players operation #temp ID = @s ID
 execute if entity @s[scores={InteractionTime=..16}] run tag @e[tag=interact,tag=manual,limit=1] add sound
 execute if entity @s[scores={InteractionTime=2}] as @e[tag=interact,tag=manual,limit=1] at @s run function luigis_mansion:room/interactions
-execute if data storage luigis_mansion:data my_memory.animation{namespace:"luigis_mansion",id:"search/knock"} if entity @s[scores={InteractionTime=9}] as @e[tag=interact,tag=manual,limit=1] at @s run function luigis_mansion:room/interactions
-execute if data storage luigis_mansion:data my_memory.animation{namespace:"luigis_mansion",id:"search/bash"} if entity @s[scores={InteractionTime=9}] as @e[tag=interact,tag=manual,limit=1] at @s run function luigis_mansion:room/interactions
-execute if data storage luigis_mansion:data my_memory.animation{namespace:"luigis_mansion",id:"search/hump"} if entity @s[scores={InteractionTime=12}] as @e[tag=interact,tag=manual,limit=1] at @s run function luigis_mansion:room/interactions
+execute if entity @s[scores={InteractionTime=9}] if data entity @s data.animation{namespace:"luigis_mansion",id:"search/knock"} as @e[tag=interact,tag=manual,limit=1] at @s run function luigis_mansion:room/interactions
+execute if entity @s[scores={InteractionTime=9}] if data entity @s data.animation{namespace:"luigis_mansion",id:"search/bash"} as @e[tag=interact,tag=manual,limit=1] at @s run function luigis_mansion:room/interactions
+execute if entity @s[scores={InteractionTime=12}] if data entity @s data.animation{namespace:"luigis_mansion",id:"search/hump"} as @e[tag=interact,tag=manual,limit=1] at @s run function luigis_mansion:room/interactions
 execute if entity @s[scores={InteractionTime=17}] as @e[tag=interact,tag=manual,limit=1] at @s run function luigis_mansion:room/interactions
 scoreboard players reset #temp ID
 scoreboard players reset #temp Room
 #/todelete
-execute if entity @s[scores={InteractionTime=2}] unless data storage luigis_mansion:data my_memory.animation{namespace:"luigis_mansion",id:"search/hump"} run tag @e[tag=interact,tag=manual,limit=1] add fake_shake
+execute if entity @s[scores={InteractionTime=2}] unless data entity @s data.animation{namespace:"luigis_mansion",id:"search/hump"} run tag @e[tag=interact,tag=manual,limit=1] add fake_shake
 execute if entity @s[scores={InteractionTime=2},tag=!not_facing] at @e[tag=interact,tag=manual,limit=1] as @e[tag=furniture,tag=same_room,tag=shaken_by_interact] run function luigis_mansion:items/interact/target_furniture/shake
 execute if entity @s[scores={InteractionTime=2},tag=wall_bump] run function luigis_mansion:blocks/search_sound/wall
-execute if data storage luigis_mansion:data my_memory.animation{namespace:"luigis_mansion",id:"search/knock"} if entity @s[scores={InteractionTime=9},tag=!not_facing] at @e[tag=interact,tag=manual,limit=1] as @e[tag=furniture,tag=same_room,tag=shaken_by_interact] run function luigis_mansion:items/interact/target_furniture/shake
-execute if data storage luigis_mansion:data my_memory.animation{namespace:"luigis_mansion",id:"search/bash"} if entity @s[scores={InteractionTime=9},tag=!not_facing] at @e[tag=interact,tag=manual,limit=1] as @e[tag=furniture,tag=same_room,tag=shaken_by_interact] run function luigis_mansion:items/interact/target_furniture/shake
+execute if entity @s[scores={InteractionTime=9},tag=!not_facing] if data entity @s data.animation{namespace:"luigis_mansion",id:"search/knock"} at @e[tag=interact,tag=manual,limit=1] as @e[tag=furniture,tag=same_room,tag=shaken_by_interact] run function luigis_mansion:items/interact/target_furniture/shake
+execute if entity @s[scores={InteractionTime=9},tag=!not_facing] if data entity @s data.animation{namespace:"luigis_mansion",id:"search/bash"} at @e[tag=interact,tag=manual,limit=1] as @e[tag=furniture,tag=same_room,tag=shaken_by_interact] run function luigis_mansion:items/interact/target_furniture/shake
 execute if entity @s[scores={InteractionTime=17},tag=!not_facing] at @e[tag=interact,tag=manual,limit=1] as @e[tag=furniture,tag=same_room,tag=searchable_by_interact] run function luigis_mansion:items/interact/target_furniture/search
-data modify storage luigis_mansion:data memory append from storage luigis_mansion:data my_memory
-data remove storage luigis_mansion:data my_memory
 scoreboard players reset #interact
 scoreboard players set @s[scores={InteractionTime=2}] Sound 20
 tag @s[scores={InteractionTime=17}] remove reset_rotation

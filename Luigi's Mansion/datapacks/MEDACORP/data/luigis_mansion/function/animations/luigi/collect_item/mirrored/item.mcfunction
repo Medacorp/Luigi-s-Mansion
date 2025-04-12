@@ -18,7 +18,7 @@ execute if entity @s[tag=shrunk,scores={AnimationProgress=47..63}] positioned ^-
 execute if entity @s[tag=!shrunk,scores={AnimationProgress=64..65}] positioned ^-0.35 ^ ^ rotated ~-45 ~ positioned ^0.35 ^ ^ run teleport @s ~ ~ ~ ~ ~
 execute if entity @s[tag=shrunk,scores={AnimationProgress=64..65}] positioned ^-0.18 ^ ^ rotated ~-45 ~ positioned ^0.18 ^ ^ run teleport @s ~ ~ ~ ~ ~
 data modify entity @s[scores={AnimationProgress=1..60}] equipment.head set from storage luigis_mansion:data luigi.animation.item
-data modify entity @s[scores={AnimationProgress=61}] equipment.head set value {}
+data remove entity @s[scores={AnimationProgress=61}] equipment.head
 data merge entity @s[scores={AnimationProgress=1}] {Pose:{Head:[0.0f,0.0f,0.01f]}}
 data merge entity @s[scores={AnimationProgress=1},tag=flipped_gravity] {Pose:{Head:[0.0f,0.0f,-180.0f]}}
 execute store result score #temp2 Time run data get storage luigis_mansion:data luigi.animation.item.components."minecraft:custom_data".held_pitch

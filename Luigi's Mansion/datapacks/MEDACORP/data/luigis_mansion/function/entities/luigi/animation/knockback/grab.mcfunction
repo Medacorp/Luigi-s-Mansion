@@ -6,10 +6,10 @@ scoreboard players set @s[scores={Sound=0}] Sound 2
 scoreboard players operation #temp GrabbedID = @s ID
 execute as @e[tag=ghost,scores={GrabbedID=-2147483648..},tag=!vanish] if score @s GrabbedID = #temp GrabbedID run tag @s add this_ghost
 execute if entity @e[tag=this_ghost,limit=1,scores={VulnerableTime=0}] run scoreboard players remove @s[scores={AnimationProgress=10}] AnimationProgress 1
-execute if entity @s[scores={AnimationProgress=..9}] store result score #temp PositionX run data get entity @s Pos[0] 100
-execute if entity @s[scores={AnimationProgress=..9}] store result score #temp PositionZ run data get entity @s Pos[2] 100
-execute if entity @s[scores={AnimationProgress=..9}] run scoreboard players operation #temp PositionX -= @s PositionX
-execute if entity @s[scores={AnimationProgress=..9}] run scoreboard players operation #temp PositionZ -= @s PositionZ
+execute if entity @s[scores={AnimationProgress=..9}] run scoreboard players operation #temp PositionX = @a[tag=this_player,limit=1] PositionX
+execute if entity @s[scores={AnimationProgress=..9}] run scoreboard players operation #temp PositionZ = @a[tag=this_player,limit=1] PositionZ
+execute if entity @s[scores={AnimationProgress=..9}] run scoreboard players operation #temp PositionX -= @a[tag=this_player,limit=1] OtherX
+execute if entity @s[scores={AnimationProgress=..9}] run scoreboard players operation #temp PositionZ -= @a[tag=this_player,limit=1] OtherZ
 execute if entity @s[scores={AnimationProgress=..9},tag=!positive_x] if score #temp PositionX matches 3.. run tag @s add struggle
 execute if entity @s[scores={AnimationProgress=..9},tag=!positive_z] if score #temp PositionZ matches 3.. run tag @s add struggle
 execute if entity @s[scores={AnimationProgress=..9},tag=!negative_x] if score #temp PositionX matches ..-3 run tag @s add struggle
@@ -32,8 +32,8 @@ scoreboard players set @s[scores={AnimationProgress=..9,Invulnerable=6..},tag=ha
 execute if entity @s[scores={AnimationProgress=2..9,Invulnerable=0},tag=harmfull_grab] run data modify storage luigis_mansion:data damage set value {amount:1}
 execute if entity @s[scores={AnimationProgress=2..9,Invulnerable=0},tag=harmfull_grab] if data storage luigis_mansion:data my_memory.hurt_by.attacker[0] run data modify storage luigis_mansion:data damage.attacker set from storage luigis_mansion:data my_memory.hurt_by.attacker[0].id
 execute if entity @s[scores={AnimationProgress=2..9,Invulnerable=0},tag=harmfull_grab] run function luigis_mansion:entities/luigi/damage
-execute if entity @s[scores={AnimationProgress=..9}] run effect give @s minecraft:slowness 1 0 true
-execute if entity @s[scores={AnimationProgress=10}] run effect clear @s minecraft:slowness
+execute if entity @s[scores={AnimationProgress=..9}] run effect give @a[tag=this_player,limit=1] minecraft:slowness 1 0 true
+execute if entity @s[scores={AnimationProgress=10}] run effect clear @a[tag=this_player,limit=1] minecraft:slowness
 execute if entity @s[scores={AnimationProgress=10}] run scoreboard players reset @e[tag=this_ghost,limit=1] GrabbedID
 scoreboard players set @s[scores={AnimationProgress=10},tag=harmfull_grab] Invulnerable 60
 scoreboard players reset @s[scores={AnimationProgress=10}] GrabbedShake

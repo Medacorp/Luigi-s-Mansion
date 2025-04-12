@@ -3,8 +3,8 @@ execute if entity @e[tag=same_room,tag=luigi,distance=..1.6,limit=1] run functio
 tag @s[tag=!visible] add visible
 execute unless entity @s[scores={Dialog=1..}] run scoreboard players set @s Dialog 0
 execute unless entity @s[scores={Dialog=1..}] run tag @s[tag=portrait_ghost_hide] remove visible
-execute unless entity @s[scores={Dialog=2..}] if entity @s[tag=visible] run data modify entity @e[tag=mr_luggs_food,limit=1] equipment.head.id set value "minecraft:diamond_pickaxe"
-execute if entity @s[tag=!visible] run data modify entity @e[tag=mr_luggs_food,limit=1] equipment.head.id set value "minecraft:stone_button"
+execute unless entity @s[scores={Dialog=2..}] if entity @s[tag=visible] run data modify entity @e[tag=mr_luggs_food,limit=1] equipment.head.components."minecraft:item_model" set value "luigis_mansion:furniture/food"
+execute if entity @s[tag=!visible] run data modify entity @e[tag=mr_luggs_food,limit=1] equipment.head.components."minecraft:item_model" set value "luigis_mansion:empty"
 execute unless entity @s[scores={Dialog=1..}] unless entity @e[tag=same_room,tag=light_me,tag=!lit] run tag @e[tag=same_room,tag=light_me,tag=lit] add large_flame
 execute unless entity @s[scores={Dialog=1..}] unless entity @e[tag=same_room,tag=light_me,tag=!lit] as @a[tag=same_room] run function luigis_mansion:other/music/set/secret_revealed
 execute unless entity @s[scores={Dialog=1..}] unless entity @e[tag=same_room,tag=light_me,tag=!lit] run scoreboard players set @s Dialog 1

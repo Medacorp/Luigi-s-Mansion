@@ -1,2 +1,2 @@
-summon minecraft:item_frame 736 22 -26 {Tags:["static","no_ai"],Facing:5b,Silent:1b,Invulnerable:1b,Item:{id:"minecraft:filled_map",count:1,components:{"minecraft:map_id":226}},CustomName:{type:"translatable",translate:"luigis_mansion:furniture.painting"},Invisible:1b,Fixed:1b}
+summon minecraft:item_frame 736 22 -26 {block_pos:[I;0,0,0],FIXED_block_pos:[I;736,22,-26],Tags:["static","no_ai","freeze_animation"],Facing:5b,Silent:1b,Invulnerable:1b,Item:{id:"minecraft:filled_map",count:1,components:{"minecraft:map_id":226}},CustomName:{type:"translatable",translate:"luigis_mansion:furniture.painting"},Invisible:1b,Fixed:1b}
 scoreboard players set @e[x=736.5,y=22.0,z=-25.5,distance=..2,type=minecraft:item_frame] Room 69

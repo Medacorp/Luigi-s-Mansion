@@ -83,9 +83,9 @@ execute if score #dialog Dialog matches 33 if entity @a[tag=next_dialog_line,lim
 
 execute if score #dialog Dialog matches 34 as @e[tag=luigi,tag=same_room] run function luigis_mansion:entities/luigi/animation/set/enthusiastic
 
+execute if score #dialog Dialog matches 53 run advancement grant @a only luigis_mansion:vanilla/unlock_mansion
+execute if score #dialog Dialog matches 53 run data modify storage luigis_mansion:data rooms.underground_lab merge value {cleared:1b}
+execute if score #dialog Dialog matches 53 run tag @a[tag=looking_at_map,nbt={Dimension:"minecraft:overworld"},limit=1] add regenerate_map
 execute if score #dialog Dialog matches 54 as @e[tag=luigi,tag=same_room] run function luigis_mansion:entities/luigi/animation/set/none
 execute if score #dialog Dialog matches 54 as @a run function luigis_mansion:room/training_room/warp_to
-execute if score #dialog Dialog matches 54 run data modify storage luigis_mansion:data rooms.underground_lab merge value {cleared:1b}
-execute if score #dialog Dialog matches 54 run advancement grant @a only luigis_mansion:vanilla/unlock_mansion
-execute if score #dialog Dialog matches 54 run tag @a[tag=looking_at_map,nbt={Dimension:"minecraft:overworld"},limit=1] add regenerate_map
 execute if score #dialog Dialog matches 54 run scoreboard players set #dialog Dialog -1

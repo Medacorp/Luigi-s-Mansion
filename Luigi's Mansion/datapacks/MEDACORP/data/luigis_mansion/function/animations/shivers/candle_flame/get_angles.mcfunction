@@ -24,9 +24,9 @@ kill @e[tag=temp]
 execute in minecraft:overworld run summon minecraft:marker 0.0 0.0 0.0 {Tags:["remove_from_existence","forward_angle","candle_angle"]}
 execute in minecraft:overworld run summon minecraft:marker 0.0 0.0 0.0 {Tags:["remove_from_existence","up_angle","candle_angle"]}
 execute in minecraft:overworld run summon minecraft:marker 0.0 0.0 0.0 {Tags:["remove_from_existence","left_angle","candle_angle"]}
-execute as @e[tag=forward_angle,tag=candle_angle,limit=1] run function luigis_mansion:spawn_furniture/setup/candle_flame/forward
-execute as @e[tag=up_angle,tag=candle_angle,limit=1] run function luigis_mansion:spawn_furniture/setup/candle_flame/up
-execute as @e[tag=left_angle,tag=candle_angle,limit=1] run function luigis_mansion:spawn_furniture/setup/candle_flame/left
+execute as @e[tag=forward_angle,tag=candle_angle,limit=1] run function luigis_mansion:animations/shivers/candle_flame/forward
+execute as @e[tag=up_angle,tag=candle_angle,limit=1] run function luigis_mansion:animations/shivers/candle_flame/up
+execute as @e[tag=left_angle,tag=candle_angle,limit=1] run function luigis_mansion:animations/shivers/candle_flame/left
 scoreboard players reset #cosx
 scoreboard players reset #cosy
 scoreboard players reset #cosz

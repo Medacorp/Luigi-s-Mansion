@@ -12,6 +12,7 @@ execute if score #dialog Dialog matches 1.. run tag @s[tag=!abort_dialog_tick,ta
 execute if score #dialog Dialog matches 1.. run tag @s[tag=!abort_dialog_tick,tag=!prevent_item_lock,type=minecraft:player] add disable_items
 tag @s[type=minecraft:player] remove next_dialog_line
 tag @s[type=minecraft:player] remove skip_dialog
+tag @s[type=minecraft:player,tag=abort_dialog_tick] add aborted_dialog_tick
 tag @s remove abort_dialog_tick
 tag @s[tag=prevent_item_lock,type=minecraft:player] add had_prevent_item_lock
 tag @s remove prevent_item_lock

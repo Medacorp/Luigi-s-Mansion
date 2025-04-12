@@ -1,5 +1,5 @@
-execute if entity @e[tag=normal_death,limit=1] run tag @e[tag=same_room] add abort_dialog_tick
-execute if entity @e[tag=normal_death,limit=1] run return 0
+execute if entity @e[tag=!player,scores={DeathTime=1..},limit=1] run tag @e[tag=same_room] add abort_dialog_tick
+execute if entity @e[tag=!player,scores={DeathTime=1..},limit=1] run return 0
 
 execute if score #dialog Dialog matches 43.. if entity @a[tag=same_room,tag=next_dialog_line,limit=1] run scoreboard players add #dialog Dialog 1
 execute if score #dialog Dialog matches 22..41 run scoreboard players add #dialog Dialog 1

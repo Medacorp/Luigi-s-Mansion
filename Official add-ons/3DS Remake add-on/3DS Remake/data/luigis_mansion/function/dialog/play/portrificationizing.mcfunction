@@ -57,7 +57,7 @@ scoreboard players reset @a[tag=same_room,tag=!spectator] WarpTime
 execute as @a[tag=same_room,tag=!spectator,tag=game_boy_horror_menu] run function luigis_mansion:selection_menu/game_boy_horror/exit
 tag @e[tag=e_gadd,tag=same_room,limit=1] remove freeze_animation
 tag @e[tag=e_gadd,tag=same_room,limit=1] remove no_ai
-execute if score #ghost_portrificationizer_room_ghost_portrificationizer Searching matches 1.. run tag @a[tag=poltergust_selected,tag=same_room,limit=1] add prevent_item_lock
+tag @e[tag=poltergust_selected,tag=same_room] add prevent_item_lock
 tag @e[tag=same_room,nbt={data:{entity:{namespace:"luigis_mansion",id:"portrificationizing_ghost"}}}] remove no_ai
 execute if score #dialog Dialog matches 1 unless data storage luigis_mansion:data dialogs[0].portraits run data modify storage luigis_mansion:data dialogs[0].portraits set value {}
 execute if score #dialog Dialog matches 1 as @a[tag=same_room] run function luigis_mansion:other/music/set/portrificationizing
@@ -105,7 +105,10 @@ execute if score #dialog Dialog matches 669 run data modify entity @e[tag=e_gadd
 execute if score #dialog Dialog matches 669..2006 as @e[tag=e_gadd,tag=same_room,limit=1,tag=can_talk_to] unless entity @s[x=774.5,y=77.0,z=14.5,distance=..0.1] at @s run teleport @s ~ ~ ~0.1 0 0
 execute if score #dialog Dialog matches 669..2006 as @e[tag=e_gadd,tag=same_room,limit=1,tag=can_talk_to,x=774.5,y=77.0,z=14.5,distance=..0.1] run teleport @s 774 77 14 -30 0
 execute if score #dialog Dialog matches 669..2006 run data remove entity @e[tag=e_gadd,tag=same_room,limit=1,x=774.5,y=77.0,z=14.5,distance=..0.1] data.animation
-execute if score #dialog Dialog matches 669..2006 as @a[tag=same_room] run function luigis_mansion:other/music/set/portraits
+execute if score #dialog Dialog matches 669..694 as @a[tag=same_room] run function luigis_mansion:other/music/set/non_overwritten_silence
+execute if score #dialog Dialog matches 669 as @a[tag=same_room] run playsound luigis_mansion:ambience.spotlight ambient @s ~ ~ ~ 1
+execute if score #dialog Dialog matches 695 as @a[tag=same_room] run function luigis_mansion:other/music/set/silence
+execute if score #dialog Dialog matches 695..2006 as @a[tag=same_room] run function luigis_mansion:other/music/set/portraits
 #Area 1 ghosts
 execute if score #dialog Dialog matches 749 if score #players Totals matches 1 run tellraw @a[tag=same_room] {type:"translatable",translate:"chat.type.text",with:[{type:"translatable",translate:"luigis_mansion:entity.mansion",color:"green"},{type:"translatable",translate:"luigis_mansion:dialog.ghost_portrificationizer_room.results.caught"}]}
 execute if score #dialog Dialog matches 749 if score #players Totals matches 2.. run tellraw @a[tag=same_room] {type:"translatable",translate:"chat.type.text",with:[{type:"translatable",translate:"luigis_mansion:entity.mansion",color:"green"},{type:"translatable",translate:"luigis_mansion:dialog.ghost_portrificationizer_room.results.caught.more"}]}
@@ -274,48 +277,48 @@ execute if score #dialog Dialog matches 1584 if score #players Totals matches 2.
 execute if score #dialog Dialog matches 1584 run function luigis_mansion:dialog/play/portrificationizing/get_gold_coin
 execute if score #dialog Dialog matches 1584 unless score #temp Money matches 0 run tellraw @a[tag=same_room] {type:"translatable",translate:"chat.type.text",with:[{type:"translatable",translate:"luigis_mansion:entity.mansion",color:"green"},{type:"translatable",translate:"luigis_mansion:message.money",with:[{type:"translatable",translate:"luigis_mansion:item.gold_coin"},{type:"score",score:{objective:"Money",name:"#temp"}},{type:"score",score:{objective:"Money",name:"#temp2"}}]}]}
 execute if score #dialog Dialog matches 1584 if score #temp Money matches 0 run tellraw @a[tag=same_room] {type:"translatable",translate:"chat.type.text",with:[{type:"translatable",translate:"luigis_mansion:entity.mansion",color:"green"},{type:"translatable",translate:"luigis_mansion:message.money.not_obtained"}]}
-execute if score #dialog Dialog matches 1584 if score #temp Money matches 0 run scoreboard players add #dialog Dialog 40
-execute if score #dialog Dialog matches 1584..1604 if score #temp2 Dialog matches 0 as @a[tag=same_room] at @s run playsound luigis_mansion:item.count_money player @s ~ ~ ~ 1
+execute if score #dialog Dialog matches 1584 if score #temp Money matches 0 run scoreboard players add #dialog Dialog 20
+execute if score #dialog Dialog matches 1584..1603 if score #temp2 Dialog matches 0 as @a[tag=same_room] at @s run playsound luigis_mansion:item.count_money player @s ~ ~ ~ 1
 execute if score #dialog Dialog matches 1624 run function luigis_mansion:dialog/play/portrificationizing/get_bill
 execute if score #dialog Dialog matches 1624 unless score #temp Money matches 0 run tellraw @a[tag=same_room] {type:"translatable",translate:"chat.type.text",with:[{type:"translatable",translate:"luigis_mansion:entity.mansion",color:"green"},{type:"translatable",translate:"luigis_mansion:message.money",with:[{type:"translatable",translate:"luigis_mansion:item.bill"},{type:"score",score:{objective:"Money",name:"#temp"}},{type:"score",score:{objective:"Money",name:"#temp2"}}]}]}
 execute if score #dialog Dialog matches 1624 if score #temp Money matches 0 run tellraw @a[tag=same_room] {type:"translatable",translate:"chat.type.text",with:[{type:"translatable",translate:"luigis_mansion:entity.mansion",color:"green"},{type:"translatable",translate:"luigis_mansion:message.money.not_obtained"}]}
-execute if score #dialog Dialog matches 1624 if score #temp Money matches 0 run scoreboard players add #dialog Dialog 40
-execute if score #dialog Dialog matches 1624..1644 if score #temp2 Dialog matches 0 as @a[tag=same_room] at @s run playsound luigis_mansion:item.count_money player @s ~ ~ ~ 1
+execute if score #dialog Dialog matches 1624 if score #temp Money matches 0 run scoreboard players add #dialog Dialog 20
+execute if score #dialog Dialog matches 1624..1643 if score #temp2 Dialog matches 0 as @a[tag=same_room] at @s run playsound luigis_mansion:item.count_money player @s ~ ~ ~ 1
 execute if score #dialog Dialog matches 1664 run function luigis_mansion:dialog/play/portrificationizing/get_gold_bar
 execute if score #dialog Dialog matches 1664 unless score #temp Money matches 0 run tellraw @a[tag=same_room] {type:"translatable",translate:"chat.type.text",with:[{type:"translatable",translate:"luigis_mansion:entity.mansion",color:"green"},{type:"translatable",translate:"luigis_mansion:message.money",with:[{type:"translatable",translate:"luigis_mansion:item.gold_bar"},{type:"score",score:{objective:"Money",name:"#temp"}},{type:"score",score:{objective:"Money",name:"#temp2"}}]}]}
 execute if score #dialog Dialog matches 1664 if score #temp Money matches 0 run tellraw @a[tag=same_room] {type:"translatable",translate:"chat.type.text",with:[{type:"translatable",translate:"luigis_mansion:entity.mansion",color:"green"},{type:"translatable",translate:"luigis_mansion:message.money.not_obtained"}]}
-execute if score #dialog Dialog matches 1664 if score #temp Money matches 0 run scoreboard players add #dialog Dialog 40
-execute if score #dialog Dialog matches 1664..1684 if score #temp2 Dialog matches 0 as @a[tag=same_room] at @s run playsound luigis_mansion:item.count_money player @s ~ ~ ~ 1
+execute if score #dialog Dialog matches 1664 if score #temp Money matches 0 run scoreboard players add #dialog Dialog 20
+execute if score #dialog Dialog matches 1664..1683 if score #temp2 Dialog matches 0 as @a[tag=same_room] at @s run playsound luigis_mansion:item.count_money player @s ~ ~ ~ 1
 execute if score #dialog Dialog matches 1704 run function luigis_mansion:dialog/play/portrificationizing/get_blue_sapphire
 execute if score #dialog Dialog matches 1704 unless score #temp Money matches 0 run tellraw @a[tag=same_room] {type:"translatable",translate:"chat.type.text",with:[{type:"translatable",translate:"luigis_mansion:entity.mansion",color:"green"},{type:"translatable",translate:"luigis_mansion:message.money",with:[{type:"translatable",translate:"luigis_mansion:item.blue_sapphire"},{type:"score",score:{objective:"Money",name:"#temp"}},{type:"score",score:{objective:"Money",name:"#temp2"}}]}]}
 execute if score #dialog Dialog matches 1704 if score #temp Money matches 0 run tellraw @a[tag=same_room] {type:"translatable",translate:"chat.type.text",with:[{type:"translatable",translate:"luigis_mansion:entity.mansion",color:"green"},{type:"translatable",translate:"luigis_mansion:message.money.not_obtained"}]}
-execute if score #dialog Dialog matches 1704 if score #temp Money matches 0 run scoreboard players add #dialog Dialog 40
-execute if score #dialog Dialog matches 1704..1724 if score #temp2 Dialog matches 0 as @a[tag=same_room] at @s run playsound luigis_mansion:item.count_money player @s ~ ~ ~ 1
+execute if score #dialog Dialog matches 1704 if score #temp Money matches 0 run scoreboard players add #dialog Dialog 20
+execute if score #dialog Dialog matches 1704..1723 if score #temp2 Dialog matches 0 as @a[tag=same_room] at @s run playsound luigis_mansion:item.count_money player @s ~ ~ ~ 1
 execute if score #dialog Dialog matches 1744 run function luigis_mansion:dialog/play/portrificationizing/get_green_emerald
 execute if score #dialog Dialog matches 1744 unless score #temp Money matches 0 run tellraw @a[tag=same_room] {type:"translatable",translate:"chat.type.text",with:[{type:"translatable",translate:"luigis_mansion:entity.mansion",color:"green"},{type:"translatable",translate:"luigis_mansion:message.money",with:[{type:"translatable",translate:"luigis_mansion:item.green_emerald"},{type:"score",score:{objective:"Money",name:"#temp"}},{type:"score",score:{objective:"Money",name:"#temp2"}}]}]}
 execute if score #dialog Dialog matches 1744 if score #temp Money matches 0 run tellraw @a[tag=same_room] {type:"translatable",translate:"chat.type.text",with:[{type:"translatable",translate:"luigis_mansion:entity.mansion",color:"green"},{type:"translatable",translate:"luigis_mansion:message.money.not_obtained"}]}
-execute if score #dialog Dialog matches 1744 if score #temp Money matches 0 run scoreboard players add #dialog Dialog 40
-execute if score #dialog Dialog matches 1744..1764 if score #temp2 Dialog matches 0 as @a[tag=same_room] at @s run playsound luigis_mansion:item.count_money player @s ~ ~ ~ 1
+execute if score #dialog Dialog matches 1744 if score #temp Money matches 0 run scoreboard players add #dialog Dialog 20
+execute if score #dialog Dialog matches 1744..1763 if score #temp2 Dialog matches 0 as @a[tag=same_room] at @s run playsound luigis_mansion:item.count_money player @s ~ ~ ~ 1
 execute if score #dialog Dialog matches 1784 run function luigis_mansion:dialog/play/portrificationizing/get_red_ruby
 execute if score #dialog Dialog matches 1784 unless score #temp Money matches 0 run tellraw @a[tag=same_room] {type:"translatable",translate:"chat.type.text",with:[{type:"translatable",translate:"luigis_mansion:entity.mansion",color:"green"},{type:"translatable",translate:"luigis_mansion:message.money",with:[{type:"translatable",translate:"luigis_mansion:item.red_ruby"},{type:"score",score:{objective:"Money",name:"#temp"}},{type:"score",score:{objective:"Money",name:"#temp2"}}]}]}
 execute if score #dialog Dialog matches 1784 if score #temp Money matches 0 run tellraw @a[tag=same_room] {type:"translatable",translate:"chat.type.text",with:[{type:"translatable",translate:"luigis_mansion:entity.mansion",color:"green"},{type:"translatable",translate:"luigis_mansion:message.money.not_obtained"}]}
-execute if score #dialog Dialog matches 1784 if score #temp Money matches 0 run scoreboard players add #dialog Dialog 40
-execute if score #dialog Dialog matches 1784..1804 if score #temp2 Dialog matches 0 as @a[tag=same_room] at @s run playsound luigis_mansion:item.count_money player @s ~ ~ ~ 1
+execute if score #dialog Dialog matches 1784 if score #temp Money matches 0 run scoreboard players add #dialog Dialog 20
+execute if score #dialog Dialog matches 1784..1803 if score #temp2 Dialog matches 0 as @a[tag=same_room] at @s run playsound luigis_mansion:item.count_money player @s ~ ~ ~ 1
 execute if score #dialog Dialog matches 1824 run function luigis_mansion:dialog/play/portrificationizing/get_silver_diamond
 execute if score #dialog Dialog matches 1824 unless score #temp Money matches 0 run tellraw @a[tag=same_room] {type:"translatable",translate:"chat.type.text",with:[{type:"translatable",translate:"luigis_mansion:entity.mansion",color:"green"},{type:"translatable",translate:"luigis_mansion:message.money",with:[{type:"translatable",translate:"luigis_mansion:item.silver_diamond"},{type:"score",score:{objective:"Money",name:"#temp"}},{type:"score",score:{objective:"Money",name:"#temp2"}}]}]}
 execute if score #dialog Dialog matches 1824 if score #temp Money matches 0 run tellraw @a[tag=same_room] {type:"translatable",translate:"chat.type.text",with:[{type:"translatable",translate:"luigis_mansion:entity.mansion",color:"green"},{type:"translatable",translate:"luigis_mansion:message.money.not_obtained"}]}
-execute if score #dialog Dialog matches 1824 if score #temp Money matches 0 run scoreboard players add #dialog Dialog 40
-execute if score #dialog Dialog matches 1824..1844 if score #temp2 Dialog matches 0 as @a[tag=same_room] at @s run playsound luigis_mansion:item.count_money player @s ~ ~ ~ 1
+execute if score #dialog Dialog matches 1824 if score #temp Money matches 0 run scoreboard players add #dialog Dialog 20
+execute if score #dialog Dialog matches 1824..1843 if score #temp2 Dialog matches 0 as @a[tag=same_room] at @s run playsound luigis_mansion:item.count_money player @s ~ ~ ~ 1
 execute if score #dialog Dialog matches 1864 run function luigis_mansion:dialog/play/portrificationizing/get_red_diamond
 execute if score #dialog Dialog matches 1864 unless score #temp Money matches 0 run tellraw @a[tag=same_room] {type:"translatable",translate:"chat.type.text",with:[{type:"translatable",translate:"luigis_mansion:entity.mansion",color:"green"},{type:"translatable",translate:"luigis_mansion:message.money",with:[{type:"translatable",translate:"luigis_mansion:item.red_diamond"},{type:"score",score:{objective:"Money",name:"#temp"}},{type:"score",score:{objective:"Money",name:"#temp2"}}]}]}
 execute if score #dialog Dialog matches 1864 if score #temp Money matches 0 run tellraw @a[tag=same_room] {type:"translatable",translate:"chat.type.text",with:[{type:"translatable",translate:"luigis_mansion:entity.mansion",color:"green"},{type:"translatable",translate:"luigis_mansion:message.money.not_obtained"}]}
-execute if score #dialog Dialog matches 1864 if score #temp Money matches 0 run scoreboard players add #dialog Dialog 40
-execute if score #dialog Dialog matches 1864..1884 if score #temp2 Dialog matches 0 as @a[tag=same_room] at @s run playsound luigis_mansion:item.count_money player @s ~ ~ ~ 1
+execute if score #dialog Dialog matches 1864 if score #temp Money matches 0 run scoreboard players add #dialog Dialog 20
+execute if score #dialog Dialog matches 1864..1883 if score #temp2 Dialog matches 0 as @a[tag=same_room] at @s run playsound luigis_mansion:item.count_money player @s ~ ~ ~ 1
 execute if score #dialog Dialog matches 1904 run function luigis_mansion:dialog/play/portrificationizing/get_gold_diamond
 execute if score #dialog Dialog matches 1904 unless score #temp Money matches 0 run tellraw @a[tag=same_room] {type:"translatable",translate:"chat.type.text",with:[{type:"translatable",translate:"luigis_mansion:entity.mansion",color:"green"},{type:"translatable",translate:"luigis_mansion:message.money",with:[{type:"translatable",translate:"luigis_mansion:item.gold_diamond"},{type:"score",score:{objective:"Money",name:"#temp"}},{type:"score",score:{objective:"Money",name:"#temp2"}}]}]}
 execute if score #dialog Dialog matches 1904 if score #temp Money matches 0 run tellraw @a[tag=same_room] {type:"translatable",translate:"chat.type.text",with:[{type:"translatable",translate:"luigis_mansion:entity.mansion",color:"green"},{type:"translatable",translate:"luigis_mansion:message.money.not_obtained"}]}
-execute if score #dialog Dialog matches 1904 if score #temp Money matches 0 run scoreboard players add #dialog Dialog 40
-execute if score #dialog Dialog matches 1904..1924 if score #temp2 Dialog matches 0 as @a[tag=same_room] at @s run playsound luigis_mansion:item.count_money player @s ~ ~ ~ 1
+execute if score #dialog Dialog matches 1904 if score #temp Money matches 0 run scoreboard players add #dialog Dialog 20
+execute if score #dialog Dialog matches 1904..1923 if score #temp2 Dialog matches 0 as @a[tag=same_room] at @s run playsound luigis_mansion:item.count_money player @s ~ ~ ~ 1
 execute if score #dialog Dialog matches 1944 run function luigis_mansion:dialog/play/portrificationizing/get_small_pearl
 execute if score #dialog Dialog matches 1944 unless score #temp Money matches 0 run tellraw @a[tag=same_room] {type:"translatable",translate:"chat.type.text",with:[{type:"translatable",translate:"luigis_mansion:entity.mansion",color:"green"},{type:"translatable",translate:"luigis_mansion:message.money",with:[{type:"translatable",translate:"luigis_mansion:item.small_pearl"},{type:"score",score:{objective:"Money",name:"#temp"}},{type:"score",score:{objective:"Money",name:"#temp2"}}]}]}
 execute if score #dialog Dialog matches 1944 run scoreboard players operation #temp3 Money += #temp Money
@@ -326,9 +329,9 @@ execute if score #dialog Dialog matches 1944 run function luigis_mansion:dialog/
 execute if score #dialog Dialog matches 1944 unless score #temp Money matches 0 run tellraw @a[tag=same_room] {type:"translatable",translate:"chat.type.text",with:[{type:"translatable",translate:"luigis_mansion:entity.mansion",color:"green"},{type:"translatable",translate:"luigis_mansion:message.money",with:[{type:"translatable",translate:"luigis_mansion:item.big_pearl"},{type:"score",score:{objective:"Money",name:"#temp"}},{type:"score",score:{objective:"Money",name:"#temp2"}}]}]}
 execute if score #dialog Dialog matches 1944 run scoreboard players operation #temp3 Money += #temp Money
 execute if score #dialog Dialog matches 1944 if score #temp3 Money matches 0 run tellraw @a[tag=same_room] {type:"translatable",translate:"chat.type.text",with:[{type:"translatable",translate:"luigis_mansion:entity.mansion",color:"green"},{type:"translatable",translate:"luigis_mansion:message.money.not_obtained"}]}
-execute if score #dialog Dialog matches 1944 if score #temp3 Money matches 0 run scoreboard players add #dialog Dialog 40
+execute if score #dialog Dialog matches 1944 if score #temp3 Money matches 0 run scoreboard players add #dialog Dialog 20
 execute if score #dialog Dialog matches 1944..1984 run scoreboard players reset #temp3 Money
-execute if score #dialog Dialog matches 1944..1964 if score #temp2 Dialog matches 0 as @a[tag=same_room] at @s run playsound luigis_mansion:item.count_money player @s ~ ~ ~ 1
+execute if score #dialog Dialog matches 1944..1963 if score #temp2 Dialog matches 0 as @a[tag=same_room] at @s run playsound luigis_mansion:item.count_money player @s ~ ~ ~ 1
 execute if score #dialog Dialog matches 1984 run function luigis_mansion:dialog/play/portrificationizing/get_total_score
 execute if score #dialog Dialog matches 1984 if data storage luigis_mansion:data current_state.current_data{lowest_difficulty:0} run tellraw @a[tag=same_room] {type:"translatable",translate:"chat.type.text",with:[{type:"translatable",translate:"luigis_mansion:entity.mansion",color:"green"},{type:"translatable",translate:"luigis_mansion:message.money.multiplier.peaceful"}]}
 execute if score #dialog Dialog matches 1984 if data storage luigis_mansion:data current_state.current_data{lowest_difficulty:1} run tellraw @a[tag=same_room] {type:"translatable",translate:"chat.type.text",with:[{type:"translatable",translate:"luigis_mansion:entity.mansion",color:"green"},{type:"translatable",translate:"luigis_mansion:message.money.multiplier.easy"}]}
@@ -351,7 +354,7 @@ execute if score #dialog Dialog matches 1984 run scoreboard players reset #temp4
 execute if score #dialog Dialog matches 1984 run scoreboard players reset #temp5 Time
 execute if score #dialog Dialog matches 1984 run scoreboard players reset #temp6 Time
 execute if score #dialog Dialog matches 1984 if score #temp Money matches 0 run scoreboard players add #dialog Dialog 21
-execute if score #dialog Dialog matches 1984..2004 if score #temp2 Dialog matches 0 as @a[tag=same_room] at @s run playsound luigis_mansion:item.count_money player @s ~ ~ ~ 1
+execute if score #dialog Dialog matches 1984..2003 if score #temp2 Dialog matches 0 as @a[tag=same_room] at @s run playsound luigis_mansion:item.count_money player @s ~ ~ ~ 1
 execute if score #dialog Dialog matches 1584..2005 run scoreboard players reset #temp Money
 execute if score #dialog Dialog matches 1584..2005 run scoreboard players reset #temp2 Money
 scoreboard players reset #temp2 Dialog

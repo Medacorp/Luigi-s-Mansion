@@ -5,9 +5,7 @@ execute if data storage luigis_mansion:data my_memory.camera.pos run summon mine
 execute if data storage luigis_mansion:data my_memory.camera.pos run data modify entity @e[tag=last_positon,limit=1] Pos set from storage luigis_mansion:data my_memory.camera.pos
 execute if data storage luigis_mansion:data my_memory.camera.pos run data modify entity @e[tag=last_positon,limit=1] Rotation set from storage luigis_mansion:data my_memory.camera.rotation
 # Return to position from last camera movement, so player movement is ignored in relative camera movement
-execute if data storage luigis_mansion:data my_memory.camera.pos at @e[tag=last_positon,limit=1] run tag @s[distance=0.001..] add teleport_now
-execute if data storage luigis_mansion:data my_memory.camera.pos at @e[tag=last_positon,limit=1] run teleport @s[tag=teleport_now] @e[tag=last_positon,limit=1]
-tag @s remove teleport_now
+execute if data storage luigis_mansion:data my_memory.camera.pos at @e[tag=last_positon,limit=1] run teleport @s[distance=0.001..] @e[tag=last_positon,limit=1]
 $execute if data storage luigis_mansion:data my_memory.camera.pos $(execute) run teleport @e[tag=last_positon,limit=1] $(teleport)
 execute if data storage luigis_mansion:data my_memory.camera.pos store success score #temp Time run data modify entity @e[tag=last_positon,limit=1] Pos set from storage luigis_mansion:data my_memory.camera.pos
 execute if score #temp Time matches 0 store success score #temp Time run data modify entity @e[tag=last_positon,limit=1] Rotation set from storage luigis_mansion:data my_memory.camera.rotation

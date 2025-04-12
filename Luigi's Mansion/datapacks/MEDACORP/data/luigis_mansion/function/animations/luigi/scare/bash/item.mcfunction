@@ -1,7 +1,7 @@
-data modify entity @s equipment.head set value {id:"minecraft:leather_chestplate",count:1,components:{"minecraft:item_model":"luigis_mansion:entity/luigi","minecraft:custom_model_data":{flags:[B;0b,0b],floats:[0f],strings:["hat"],colors:[I;37129]}}}
+data modify entity @s equipment.head set value {id:"minecraft:leather_chestplate",count:1,components:{"minecraft:item_model":"luigis_mansion:entity/luigi","minecraft:custom_model_data":{flags:[0b,0b],floats:[0f],strings:["hat"],colors:[37129]}}}
 data modify entity @s equipment.head.components."minecraft:custom_model_data".colors[0] set from storage luigis_mansion:data luigi.animation.hat_model.color
 execute if data storage luigis_mansion:data luigi.animation.hat_model{variant:1b} run data modify entity @s equipment.head.components."minecraft:custom_model_data".flags[1] set value 1b
-data modify entity @s[scores={AnimationProgress=20..}] equipment.head set value {}
+data remove entity @s[scores={AnimationProgress=20..}] equipment.head
 teleport @s[scores={AnimationProgress=1},tag=!flipped_gravity,tag=!shrunk] ~ ~0.2 ~ ~ ~
 teleport @s[scores={AnimationProgress=2},tag=!flipped_gravity,tag=!shrunk] ~ ~0.4 ~ ~ ~
 teleport @s[scores={AnimationProgress=3},tag=!flipped_gravity,tag=!shrunk] ~ ~0.6 ~ ~ ~
