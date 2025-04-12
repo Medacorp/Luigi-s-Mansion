@@ -43,4 +43,4 @@ execute at @s[tag=!hurt,tag=!flee,tag=!freeze,scores={TargetTask=5,ActionTime=0}
 execute at @s[tag=!hurt,tag=!flee,tag=!freeze,scores={TargetTask=6,ActionTime=0}] unless entity @s[scores={StunTime=1..}] run function luigis_mansion:entities/ghost/target_task/circle_above_target
 
 execute at @s[tag=!portrait_ghost,tag=disappear] run function luigis_mansion:entities/ghost/disappear with entity @s data.entity
-execute if entity @s[tag=portrait_ghost,tag=disappear] run function luigis_mansion:entities/ghost/disappear_portrait_ghost with entity @s data.entity
+execute at @s[tag=portrait_ghost,tag=disappear] run function luigis_mansion:entities/ghost/disappear_portrait_ghost with entity @s data.entity

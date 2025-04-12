@@ -11,10 +11,10 @@
                     "index": 0,
                     "cases": [
                         {
-                            "when": "scream",
+                            "when": "screaming",
                             "model": {
                                 "type": "minecraft:model",
-                                "model": "luigis_mansion:entity/shivers/head_scream"
+                                "model": "luigis_mansion:entity/shivers/head_screaming"
                             }
                         }
                     ],
@@ -91,10 +91,10 @@
                     "index": 0,
                     "cases": [
                         {
-                            "when": "scream",
+                            "when": "screaming",
                             "model": {
                                 "type": "minecraft:model",
-                                "model": "luigis_mansion:entity/shivers/head_scream"
+                                "model": "luigis_mansion:entity/shivers/head_screaming"
                             }
                         }
                     ],

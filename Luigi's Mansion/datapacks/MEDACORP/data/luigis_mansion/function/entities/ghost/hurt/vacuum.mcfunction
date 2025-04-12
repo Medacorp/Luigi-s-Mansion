@@ -10,5 +10,6 @@ execute if entity @s[tag=portrait_ghost,tag=!no_timer_loot] run function luigis_
 tag @s[scores={HurtTime=30}] add flee
 execute at @s[scores={HurtTime=1..10},tag=!ground_bound,tag=!ceiling_ghost] run function luigis_mansion:entities/ghost/hurt/move
 tag @s[tag=!in_vacuum] add vanish
+tag @s[tag=!in_vacuum] add vanish_from_vacuum
 tag @s[tag=!in_vacuum] remove flee
 tag @s[tag=!in_vacuum] remove hurt

@@ -1,2 +1,2 @@
-execute unless score #mirrored Selected matches 1 run function luigis_mansion:animations/clockwork_soldier/vanish/normal/body
-execute if score #mirrored Selected matches 1 run function luigis_mansion:animations/clockwork_soldier/vanish/mirrored/body
+execute unless score #mirrored Selected matches 1 run function luigis_mansion:animations/clockwork_soldier/vanish_legless/normal/body
+execute if score #mirrored Selected matches 1 run function luigis_mansion:animations/clockwork_soldier/vanish_legless/mirrored/body

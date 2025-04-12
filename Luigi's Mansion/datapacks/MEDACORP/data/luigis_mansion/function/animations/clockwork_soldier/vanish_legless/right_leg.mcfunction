@@ -1,2 +1,2 @@
-execute unless score #mirrored Selected matches 1 run function luigis_mansion:animations/biff_atlas/vanish/normal/right_leg
-execute if score #mirrored Selected matches 1 run function luigis_mansion:animations/biff_atlas/vanish/mirrored/right_leg
+execute unless score #mirrored Selected matches 1 run function luigis_mansion:animations/clockwork_soldier/vanish_legless/normal/right_leg
+execute if score #mirrored Selected matches 1 run function luigis_mansion:animations/clockwork_soldier/vanish_legless/mirrored/right_leg

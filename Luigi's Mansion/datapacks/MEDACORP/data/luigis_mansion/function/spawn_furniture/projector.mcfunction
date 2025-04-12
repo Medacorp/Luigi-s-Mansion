@@ -12,7 +12,7 @@ scoreboard players set @e[tag=this_entity,limit=1] FurnitureGhostLeft 0
 scoreboard players set @e[tag=this_entity,limit=1] FurnitureGhostUp 0
 scoreboard players set @e[tag=this_entity,limit=1] FurnitureGhostForward 0
 scoreboard players set @e[tag=this_entity,limit=1] FurnitureLightLeft 0
-scoreboard players set @e[tag=this_entity,limit=1] FurnitureLightUp 7
+scoreboard players set @e[tag=this_entity,limit=1] FurnitureLightUp 10
 scoreboard players set @e[tag=this_entity,limit=1] FurnitureLightForward 6
 scoreboard players set @e[tag=this_entity,limit=1] FurnitureLightStrength 7
 function luigis_mansion:spawn_furniture/setup/default

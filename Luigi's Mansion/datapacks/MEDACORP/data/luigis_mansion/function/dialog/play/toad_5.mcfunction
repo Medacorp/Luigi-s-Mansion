@@ -22,8 +22,8 @@ execute if score #dialog Dialog matches 1..28 as @e[tag=luigi,tag=same_room,tag=
 execute if score #dialog Dialog matches 1..28 as @e[tag=phone_caller,limit=1] run function luigis_mansion:entities/luigi/animation/set/answer_phone
 execute if score #dialog Dialog matches 20 run tellraw @a[tag=same_room] {type:"translatable",translate:"chat.type.text",with:[{type:"translatable",translate:"luigis_mansion:entity.unknown",color:"green"},{type:"translatable",translate:"luigis_mansion:dialog.toad_5.1"}]}
 
-execute if score #dialog Dialog matches 22 if data storage luigis_mansion:data current_state.current_data.technical_data{telephone_1:1b} run scoreboard players set #dialog Dialog 23
 execute if score #dialog Dialog matches 22 if data storage luigis_mansion:data current_state.current_data.technical_data{telephone_1:1b} run tag @a[tag=same_room,limit=1] add select_dialog_branch_yes
+execute if score #dialog Dialog matches 22 if data storage luigis_mansion:data current_state.current_data.technical_data{telephone_1:1b} run scoreboard players set #dialog Dialog 23
 
 #Branch: Yes
 execute if score #dialog Dialog matches 23 if score #players Totals matches 1 if entity @a[tag=same_room,tag=select_dialog_branch_yes,limit=1] run tellraw @a[tag=same_room] {type:"translatable",translate:"chat.type.text",with:[{type:"translatable",translate:"luigis_mansion:entity.unknown",color:"green"},{type:"translatable",translate:"luigis_mansion:dialog.toad_5.yes.1",with:[{type:"selector",selector:"@p[tag=!spectator]"}]}]}

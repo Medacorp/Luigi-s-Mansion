@@ -22,7 +22,7 @@ execute if entity @s[scores={FleeTask=2}] run function luigis_mansion:entities/g
 execute if entity @s[scores={FleeTask=3}] run function luigis_mansion:entities/ghost/flee_task/random_in_range
 execute if entity @s[scores={FleeTask=4}] run function luigis_mansion:entities/ghost/flee_task/loops
 
-execute if entity @s[tag=is_pulled,tag=!always_pull_players] unless entity @e[tag=luigi,distance=..3,tag=vacuuming_me,limit=1] run function luigis_mansion:entities/ghost/flee_task/pulled
+execute at @s[tag=is_pulled,tag=!always_pull_players] unless entity @e[tag=luigi,distance=..3,tag=vacuuming_me,limit=1] run function luigis_mansion:entities/ghost/flee_task/pulled
 scoreboard players set @s PulledStrength 0
 tag @s remove always_pull_players
 

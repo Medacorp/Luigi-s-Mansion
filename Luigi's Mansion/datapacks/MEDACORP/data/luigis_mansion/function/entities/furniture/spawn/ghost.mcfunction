@@ -1,8 +1,8 @@
 summon minecraft:marker ~ ~ ~ {Tags:["temp","to_spawn_location","remove_from_existence"]}
 summon minecraft:marker ~ ~ ~ {Tags:["temp","remove_from_existence"]}
-tag @s add me
-execute as @e[tag=temp] store result entity @s Pos[1] double 0.1 run scoreboard players get @e[tag=me,limit=1] PositionY
-tag @s remove me
+tag @s add this_furniture
+execute as @e[tag=temp] store result entity @s Pos[1] double 0.1 run scoreboard players get @e[tag=this_furniture,limit=1] PositionY
+tag @s remove this_furniture
 scoreboard players operation #temp Time = @s FurnitureGhostLeft
 scoreboard players operation #temp2 Time = @s FurnitureGhostUp
 scoreboard players operation #temp3 Time = @s FurnitureGhostForward

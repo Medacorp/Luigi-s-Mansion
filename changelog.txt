@@ -23,7 +23,6 @@ v3.3:
 ** Bogmire Opening (Arena section of boss intro, previously entity behavior)
 ** Mario's Painting
 ** Mario's Painting Repeat
-**          Trick Door (new)
 ** Astral Hall Ambush
 ** Observatory Path (new)
 ** Mysterious Power
@@ -44,8 +43,6 @@ v3.3:
 ** Bowser Corrects Head (new)
 ** Bowser Collapses (new)
 ** Caught King Boo (Previously "<Mansion>/Caught King Boo")
-**          Portrificationizing
-**          Mario to Normal
 ** Credits (new, original game credits)
 ** Mansion Rank (Previously included in "Mario to Normal"; now shows mansion exterior)
 * Added a technical dialog: Boss Clear (replacing the return timer; will get animation triggers at later date)
@@ -69,19 +66,30 @@ v3.3:
 * Changed debug settings to be hidden, unless the sendCommandFeedback game rule is set to true
 * Fixed lab map area chunks accidentally removed
 * Fixed exterior dialogs continue counting while the player is not present, locking the player in the exterior if they leave the world during them
-* Fixed Luigi's arm detatches from the door knob during door unlock animations
 * Fixed furniture shaking doesn't work entirely correct; the first of a short shake also no longer visually shakes the model, like the original game
+* Fixed Luigi's arm detatches from the door knob during door unlock animations
 * Fixed softlock when upgrading a world where E. Gadd wasn't found yet
+* Fixed pulling ghosts didn't actually work correctly, it was not strong and could cause a server freeze with Jarvis
 * Fixed a few E. Gadd calls were missing the E. Gadd Call music
-* Fixed element medals using wrong bounce sound
-* Fixed Melody Pianissima does not show up
-* Fixed the door in the Guest Room is non-solid
 * Fixed Chauncey's screaming head was not showing up
 * Fixed Chauncey's non-mirrored punch animation wrongly loops left arm
+* Fixed ball floors rotate flashlight rays, leaving stray light blocks
+* Fixed Shivers doesn't hold the candelabra when invisible
+* Fixed Shivers' screaming head was not showing up
+* Fixed element medals using wrong bounce sound
+* Fixed softlock in the conservatory
 * Fixed Black Bogmires don't enter succomb animation (but do die and spawn the shadow ball)
+* Fixed Astral Hall candles don't turn off during the cutscene
+* Fixed ghosts cannot properly target a position on top of a slab
+* Fixed Slim Bankshot doesn't initially hold the cue when invisible
 * Fixed Boolossus' warp to player animation causes models to incorrectly change
 * Fixed Boolossus is not visible until moment before it lands
 * Fixed Boolossus is not spawned in the right position (Original doesn't spawn it centered in the area, but slightly to the front)
+* Fixed Telephone room call 2 (denied Toad) is missing a line
+* Fixed Clockwork Soldiers' vanish animations were broken
+* Fixed the doors in the Ceramics Studio and Guest Room are non-solid
+* Fixed Jarvis always picks the same vase during the battle phase
+* Fixed Upside-down haunted objects are actually upside down now
 * Fixed Vincent Van Gore held 2 pencils
 * Fixed 3DS Remake's S Rank can be unlocked in normal mansion; a new field has been added to mansion data to control S Rank unlockability
 * Removed entered_mansion command storage flag; mansion entrance music/cutscene now plays for all players' first entry, not just the first player

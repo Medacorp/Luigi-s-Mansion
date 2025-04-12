@@ -7,6 +7,7 @@ data remove entity @s data.animation
 tag @s remove flee
 tag @s remove hurt
 tag @s remove vanish
+tag @s remove vanish_from_vacuum
 tag @s remove disappear_next_tick
 tag @s remove stunable
 tag @s remove second_flee_state
