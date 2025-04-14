@@ -18,6 +18,7 @@ execute if data storage luigis_mansion:data luigi{alive:1b} store success score 
 execute if score #temp Time matches 1 run function luigis_mansion:animations/luigi/reset_pose
 scoreboard players reset #temp Time
 data modify entity @s Tags append from storage luigis_mansion:data luigi.tags[]
+tag @s remove this_luigi
 execute if data storage luigis_mansion:data luigi{alive:1b} run tag @s remove death_animation
 execute if data storage luigis_mansion:data luigi{alive:0b} run tag @s[tag=!revived_animation] add death_animation
 execute if data storage luigis_mansion:data luigi{shrunk:1b} run attribute @s minecraft:scale base set 0.5

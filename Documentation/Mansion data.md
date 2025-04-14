@@ -17,6 +17,7 @@ Mansion data is a massive collection of info storing everything the map needs to
         namespace:"luigis_mansion", //The item namespace.
         id:"null" //The item ID.
     },
+	no_collect_animation: [], //Item IDs which do not result in the collect item animation and dialog; they're not frozen during the dialog (unless 3DS Remake add-on is installed)
     blackout:0b, //Whether the mansion is currently in the blackout.
     dead_players:[], //Player UUIDs that have died.
     ghosts_caught:[], //The mansion-local ghosts caught by player list, see save data documentation for more info, has additional uuid field to identify the player. Does not include boos object.

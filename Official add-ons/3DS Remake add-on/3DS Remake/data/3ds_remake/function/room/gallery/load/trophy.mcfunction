@@ -1,2 +1,2 @@
-data modify storage luigis_mansion:data furniture set value {room:-8,searchable:["interact"],no_dust:1b,interact_animation:{namespace:"luigis_mansion",id:"inspect"},scan_result:{namespace:"luigis_mansion",id:"scan/scanner/55"},search_command:"execute as @a[tag=searcher] run function 3ds_remake:selection_menu/gallery_trophy/original_menu"}
+data modify storage luigis_mansion:data furniture set value {room:-8,searchable:["interact"],no_dust:1b,interact_animation:{namespace:"luigis_mansion",id:"inspect"},scan_result:{namespace:"luigis_mansion",id:"scan/scanner/55"},search_command:"execute as @a[tag=searcher,limit=1] run function 3ds_remake:selection_menu/gallery_trophy/original_menu"}
 execute positioned 766 2 -36 rotated -45 0 run function 3ds_remake:spawn_furniture/trophy

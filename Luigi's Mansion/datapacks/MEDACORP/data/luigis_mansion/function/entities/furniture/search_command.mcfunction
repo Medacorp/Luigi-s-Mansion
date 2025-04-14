@@ -1,1 +1,1 @@
-$execute at @e[tag=searcher,tag=luigi,limit=1] as @a[tag=searcher,limit=1] run $(search_command)
+$$(search_command)

@@ -2,6 +2,7 @@ tag @s[scores={ChangedMansion=1,Room=0}] add remove_from_existence
 tag @s[tag=remove_from_existence,tag=cannot_be_removed] remove remove_from_existence
 
 execute if entity @s[scores={Room=..0}] if score #mirrored Selected matches 1 run scoreboard players set #mirrored Selected 2
+tag @s[tag=!talk] remove talk_this_tick
 
 execute if entity @s[tag=!no_ai] run function luigis_mansion:main/entity/ai_before
 execute if entity @s[tag=no_ai] run function luigis_mansion:main/entity/no_ai

@@ -12,7 +12,7 @@ execute if score #dialog Dialog matches 75..76 as @a[tag=same_room] run function
 execute if score #dialog Dialog matches 77..78 as @a[tag=same_room] run function luigis_mansion:entities/player/camera/teleport {teleport:"~ ~-0.2 ~ ~ ~"}
 execute if score #dialog Dialog matches 79 as @a[tag=same_room] run function luigis_mansion:entities/player/camera/teleport {teleport:"~ ~0.2 ~ ~ ~"}
 execute if score #dialog Dialog matches 80 as @a[tag=same_room] run function luigis_mansion:entities/player/camera/teleport {teleport:"~ ~-0.2 ~ ~ ~"}
-execute if score #dialog Dialog matches 81..199 as @a[tag=same_room] run function luigis_mansion:entities/player/camera/teleport {teleport:"674.0 121.5 120 10 0"}
+execute if score #dialog Dialog matches 81..199 as @a[tag=same_room] run function luigis_mansion:entities/player/camera/teleport {teleport:"674.0 121.5 60 170 0"}
 execute if score #dialog Dialog matches 200 as @a[tag=same_room] run function luigis_mansion:entities/player/camera/reset
 execute if score #dialog Dialog matches 1 as @e[tag=luigi,tag=same_room] at @s positioned ^ ^ ^1 run function luigis_mansion:entities/luigi/animation/set/scare/cower
 execute if score #dialog Dialog matches 1 run summon minecraft:lightning_bolt 695 131 -23

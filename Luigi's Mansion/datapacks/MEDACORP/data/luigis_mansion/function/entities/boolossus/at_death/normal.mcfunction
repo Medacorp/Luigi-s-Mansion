@@ -3,4 +3,4 @@ execute if data storage luigis_mansion:data current_state.current_data.portrait_
 execute if data storage luigis_mansion:data current_state.current_data.portrait_ghosts.luigis_mansion.boolossus{health:0} if score #temp Damage matches 20..49 run data modify storage luigis_mansion:data current_state.current_data.portrait_ghosts.luigis_mansion.boolossus.rank set value 1b
 execute if data storage luigis_mansion:data current_state.current_data.portrait_ghosts.luigis_mansion.boolossus{health:0} if score #temp Damage matches 50.. run data modify storage luigis_mansion:data current_state.current_data.portrait_ghosts.luigis_mansion.boolossus.rank set value 0b
 scoreboard players reset #temp Damage
-execute as @e[tag=luigi,tag=vacuuming_me,sort=nearest,limit=1] run function luigis_mansion:items/poltergust_3000/ice_element
+execute as @e[tag=luigi,distance=..3,sort=nearest,limit=1] run function luigis_mansion:items/poltergust_3000/ice_element

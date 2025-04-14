@@ -63,29 +63,37 @@ v3.3:
 * Changed some of Bowser's animations a bit
 * Changed Bowser's size and attack range to more accurately match the original game, compared to the room size
 * Changed mansion rank paintings to use edited screenshots of the build exteriors
-* Changed debug settings to be hidden, unless the sendCommandFeedback game rule is set to true
+* Changed debug settings to be hidden unless the sendCommandFeedback game rule is set to true
 * Fixed lab map area chunks accidentally removed
 * Fixed exterior dialogs continue counting while the player is not present, locking the player in the exterior if they leave the world during them
 * Fixed furniture shaking doesn't work entirely correct; the first of a short shake also no longer visually shakes the model, like the original game
 * Fixed Luigi's arm detatches from the door knob during door unlock animations
 * Fixed softlock when upgrading a world where E. Gadd wasn't found yet
-* Fixed pulling ghosts didn't actually work correctly, it was not strong and could cause a server freeze with Jarvis
+* Fixed pulling ghosts didn't actually work correctly, it was not strong enough and could cause a server freeze with Jarvis
+* Fixed collecting a poison mushroom while reeling in a ghost causes server freeze
 * Fixed a few E. Gadd calls were missing the E. Gadd Call music
+* Fixed hidden mansion Study books used health dependent loot chances, rather than 100% defined
 * Fixed Chauncey's screaming head was not showing up
 * Fixed Chauncey's non-mirrored punch animation wrongly loops left arm
 * Fixed ball floors rotate flashlight rays, leaving stray light blocks
 * Fixed Shivers doesn't hold the candelabra when invisible
 * Fixed Shivers' screaming head was not showing up
 * Fixed element medals using wrong bounce sound
-* Fixed softlock in the conservatory
+* Fixed softlock in the Conservatory
+* Fixed Waiters are not considered optional, meaning letting one vanish after triggering Mr. Luggs won't clear the room (Waiters are still not optional by default though)
+* Fixed Graveyard furniture problems
 * Fixed Black Bogmires don't enter succomb animation (but do die and spawn the shadow ball)
+* Fixed F2 Washroom lamp loot had wrong room number
 * Fixed Astral Hall candles don't turn off during the cutscene
+* Fixed clearing Astral Hall doesn't remove trick door behavior
 * Fixed ghosts cannot properly target a position on top of a slab
 * Fixed Slim Bankshot doesn't initially hold the cue when invisible
+* Fixed softlock when speaking to the Courtyard Toad after clearing the Fortune-Teller's Room
 * Fixed Boolossus' warp to player animation causes models to incorrectly change
 * Fixed Boolossus is not visible until moment before it lands
 * Fixed Boolossus is not spawned in the right position (Original doesn't spawn it centered in the area, but slightly to the front)
-* Fixed Telephone room call 2 (denied Toad) is missing a line
+* Fixed capturing a frozen Boolossus doesn't grant ice element
+* Fixed Telephone Room call 2 (denied Toad) is missing a line
 * Fixed Clockwork Soldiers' vanish animations were broken
 * Fixed the doors in the Ceramics Studio and Guest Room are non-solid
 * Fixed Jarvis always picks the same vase during the battle phase

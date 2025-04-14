@@ -4,4 +4,4 @@ data modify storage luigis_mansion:data selected_option.portrait_battle_position
 data modify storage luigis_mansion:data selected_option.portraits set from entity @s equipment.head
 execute if data entity @s data.no_portrait_battles run data modify storage luigis_mansion:data selected_option.no_portrait_battles set value 1b
 
-execute as @a[tag=searcher] run function 3ds_remake:selection_menu/gallery_portrait/portrait_ghost
+execute as @a[tag=searcher,limit=1] run function 3ds_remake:selection_menu/gallery_portrait/portrait_ghost

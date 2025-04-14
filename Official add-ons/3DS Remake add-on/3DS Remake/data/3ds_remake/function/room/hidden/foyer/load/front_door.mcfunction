@@ -1,6 +1,6 @@
 data modify storage luigis_mansion:data furniture set value {room:1,sound:{namespace:"luigis_mansion",id:"heavy_generic"},door:{model:{namespace:"luigis_mansion",id:"mansion/entrance"},frame:{namespace:"luigis_mansion",id:"double/windowed"},push:1b,go_through_command:"function luigis_mansion:room/underground_lab/leave_mansion"}}
-execute if data storage luigis_mansion:data current_state.current_data{blackout:1b} run data modify storage luigis_mansion:data furniture.door.blocked set value 4b
+execute if data storage luigis_mansion:data current_state.current_data{blackout:1b} run data modify storage luigis_mansion:data furniture.door.blocked set value 5b
 execute positioned 755 11 8 rotated 90 0 run function luigis_mansion:spawn_furniture/door
 data modify storage luigis_mansion:data furniture set value {room:1,sound:{namespace:"luigis_mansion",id:"heavy_generic"},door:{model:{namespace:"luigis_mansion",id:"mansion/entrance"},frame:{namespace:"luigis_mansion",id:"double/windowed"},left_hinge:1b,go_through_command:"function luigis_mansion:room/underground_lab/leave_mansion"}}
-execute if data storage luigis_mansion:data current_state.current_data{blackout:1b} run data modify storage luigis_mansion:data furniture.door.blocked set value 4b
+execute if data storage luigis_mansion:data current_state.current_data{blackout:1b} run data modify storage luigis_mansion:data furniture.door.blocked set value 5b
 execute positioned 755 11 9 rotated 90 0 run function luigis_mansion:spawn_furniture/door

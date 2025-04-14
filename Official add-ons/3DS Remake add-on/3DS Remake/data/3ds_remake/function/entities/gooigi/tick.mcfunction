@@ -6,7 +6,7 @@ execute if entity @a[tag=gooigi,limit=1] run kill @s
 
 execute at @s[scores={LightX=-2147483648..}] run function luigis_mansion:other/cast_shadow/2_tall
 
-execute if entity @s[scores={PositionX=-2147483648..}] run function 3ds_remake:animations/gooigi
+function 3ds_remake:animations/gooigi
 
 scoreboard players operation @s OtherX = @s PositionX
 scoreboard players operation @s OtherY = @s PositionY

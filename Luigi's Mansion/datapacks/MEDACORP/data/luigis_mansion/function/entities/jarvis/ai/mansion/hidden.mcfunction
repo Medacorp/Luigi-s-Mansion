@@ -62,7 +62,7 @@ execute if entity @s[scores={Dialog=994}] store result storage luigis_mansion:da
 execute if entity @s[scores={Dialog=994}] store result storage luigis_mansion:data dialogs[-1].result int 1 run scoreboard players get @s Wave
 tag @s[scores={Dialog=996}] add pop_in
 execute if entity @s[scores={Dialog=996}] as @e[tag=luigi,tag=same_room] run function luigis_mansion:entities/luigi/animation/set/none
-execute if entity @s[scores={Dialog=996}] run tag @e[tag=same_room,tag=haunted_jar] add enabled
+execute if entity @s[scores={Dialog=996}] run tag @e[tag=same_room,tag=haunted_vase] add enabled
 execute if entity @s[scores={Dialog=996..}] as @a[tag=same_room] run function luigis_mansion:other/music/set/danger
 execute if entity @s[scores={Dialog=1016}] at @e[tag=same_room,tag=furniture,tag=jarvis_fight_vase,sort=random,limit=1] run function luigis_mansion:entities/jarvis/ai/mansion/normal/select_vase
 tag @s[scores={Dialog=1016},tag=!vanish] add pop_out

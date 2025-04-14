@@ -1,3 +1,3 @@
-data modify storage luigis_mansion:data furniture set value {room:-9,searchable:["interact"],no_dust:1b,interact_animation:{namespace:"luigis_mansion",id:"inspect"},scan_result:{namespace:"3ds_remake",id:"scan/scanner/1"},search_command:"execute as @a[tag=searcher] run function 3ds_remake:selection_menu/gallery_portrait/small_ghosts"}
+data modify storage luigis_mansion:data furniture set value {room:-9,searchable:["interact"],no_dust:1b,interact_animation:{namespace:"luigis_mansion",id:"inspect"},scan_result:{namespace:"3ds_remake",id:"scan/scanner/1"},search_command:"execute as @a[tag=searcher,limit=1] run function 3ds_remake:selection_menu/gallery_portrait/small_ghosts"}
 execute positioned 766.04 4 -47 rotated -90 0 run function 3ds_remake:spawn_furniture/hollow_portrait
 function #3ds_remake:room/gallery_side_room/load/small_ghosts_portrait

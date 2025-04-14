@@ -22,7 +22,7 @@ execute if score #dialog Dialog matches 341..350 as @a[tag=same_room] run functi
 execute if score #dialog Dialog matches 351..420 as @a[tag=same_room] run function luigis_mansion:entities/player/camera/teleport {teleport:"^ ^ ^ ~ ~"}
 execute if score #dialog Dialog matches 421 as @a[tag=same_room] run function luigis_mansion:entities/player/camera/reset
 execute if score #dialog Dialog matches 421 unless score #mirrored Selected matches 1 as @a[tag=same_room] run function luigis_mansion:entities/player/camera/teleport {teleport:"^1.5 ^ ^3 ~170 ~"}
-execute if score #dialog Dialog matches 421 if score #mirrored Selected matches 1 as @a[tag=same_room] run function luigis_mansion:entities/player/camera/teleport {teleport:"^1.5 ^ ^3 ~-170 ~"}
+execute if score #dialog Dialog matches 421 if score #mirrored Selected matches 1 as @a[tag=same_room] run function luigis_mansion:entities/player/camera/teleport {teleport:"^-1.5 ^ ^3 ~-170 ~"}
 execute if score #dialog Dialog matches 421..460 as @a[tag=same_room] run function luigis_mansion:entities/player/camera/teleport {teleport:"^ ^ ^0.02 ~ ~"}
 execute if score #dialog Dialog matches 461 unless score #mirrored Selected matches 1 as @a[tag=same_room] run function luigis_mansion:entities/player/camera/execute {execute:"at @e[tag=ghost,tag=same_room,limit=1] rotated ~-170 0",teleport:"^ ^-0.5 ^-10 ~ ~"}
 execute if score #dialog Dialog matches 461 if score #mirrored Selected matches 1 as @a[tag=same_room] run function luigis_mansion:entities/player/camera/execute {execute:"at @e[tag=ghost,tag=same_room,limit=1] rotated ~170 0",teleport:"^ ^-0.5 ^-10 ~ ~"}

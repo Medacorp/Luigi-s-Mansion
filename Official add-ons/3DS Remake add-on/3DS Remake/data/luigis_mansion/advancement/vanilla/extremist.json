@@ -4,6 +4,7 @@
             "count": 1,
             "id": "minecraft:blaze_powder"
         },
+        "frame": "challenge",
         "title": {
             "type": "translatable", "translate": "luigis_mansion:advancements.vanilla.extremist"
         },

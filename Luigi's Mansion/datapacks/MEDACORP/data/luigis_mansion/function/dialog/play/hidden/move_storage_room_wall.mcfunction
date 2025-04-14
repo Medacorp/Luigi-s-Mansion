@@ -5,7 +5,7 @@ execute as @a[tag=same_room,tag=!spectator,tag=game_boy_horror_menu] run functio
 execute if score #dialog Dialog matches 1..279 as @e[tag=luigi,tag=same_room] run function luigis_mansion:entities/luigi/animation/set/idle_no_poltergust
 execute if score #dialog Dialog matches 1..89 run stopsound @a[tag=same_room] music
 execute if score #dialog Dialog matches 1 run scoreboard players set @a[tag=same_room] Music 90
-execute if score #dialog Dialog matches 1..60 as @a[tag=same_room] run function luigis_mansion:entities/player/camera/teleport {teleport:"686.3 11 70.0 75 8"}
+execute if score #dialog Dialog matches 1..60 as @a[tag=same_room] run function luigis_mansion:entities/player/camera/teleport {teleport:"686.3 11 70.0 95 8"}
 execute if score #dialog Dialog matches 61..105 as @a[tag=same_room] run function luigis_mansion:entities/player/camera/teleport {teleport:"686.3 11 70.0 ~0.875 8"}
 execute if score #dialog Dialog matches 106 as @a[tag=same_room] run function luigis_mansion:entities/player/camera/teleport {teleport:"683.6 10.5 66.0 130 0"}
 execute if score #dialog Dialog matches 106..160 as @a[tag=same_room] run function luigis_mansion:entities/player/camera/teleport {teleport:"~0.036 10.5 ~-0.033 130 0"}

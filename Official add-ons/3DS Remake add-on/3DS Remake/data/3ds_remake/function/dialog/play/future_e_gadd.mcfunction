@@ -24,7 +24,7 @@ execute if score #dialog Dialog matches 3 run data modify storage luigis_mansion
 execute if score #dialog Dialog matches 3..144 store result score #temp2 Dialog run data get storage luigis_mansion:data dialogs[0].screen_flicker
 execute if score #dialog Dialog matches 3..144 store result storage luigis_mansion:data dialogs[0].screen_flicker int 1 run scoreboard players add #temp2 Dialog 1
 execute if score #dialog Dialog matches 3..144 if score #temp2 Dialog matches 20 store result storage luigis_mansion:data dialogs[0].screen_flicker int 1 run scoreboard players set #temp2 Dialog 0
-execute if score #dialog Dialog matches 3..144 if score #temp2 Dialog matches 0..5 as @a[tag=same_room,tag=!spectator] run function luigis_mansion:items/game_boy_horror/turn_screen_to_forced_value {value:"call",flags:[],floats:[0f,0f,0f,0f],tracker:[]}
+execute if score #dialog Dialog matches 3..144 if score #temp2 Dialog matches 0..5 as @a[tag=same_room,tag=!spectator] run function luigis_mansion:items/game_boy_horror/turn_screen_to_forced_value {value:"none",flags:[],floats:[0f,0f,0f,0f],tracker:[]}
 execute if score #dialog Dialog matches 3..144 unless score #temp2 Dialog matches 0..5 as @a[tag=same_room,tag=!spectator] run function luigis_mansion:items/game_boy_horror/turn_screen_to_forced_value {value:"call",flags:[],floats:[5f,0f,0f,0f],tracker:[]}
 execute if score #dialog Dialog matches 3..144 run scoreboard players reset #temp2 Dialog
 execute if score #dialog Dialog matches 23 as @e[tag=luigi,tag=same_room] run function luigis_mansion:entities/luigi/animation/set/none

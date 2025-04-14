@@ -21,7 +21,7 @@ execute if score #dialog Dialog matches 1 at @e[tag=e_gadd,tag=same_room,limit=1
 
 execute if score #dialog Dialog matches 43..102 as @e[tag=luigi,tag=same_room] run function luigis_mansion:entities/luigi/animation/set/game_boy_horror
 execute if score #dialog Dialog matches 43..62 as @a[tag=same_room,tag=!spectator] run function luigis_mansion:items/game_boy_horror/turn_screen_to_forced_value {value:"none",flags:[B;1b,0b],floats:[],tracker:[]}
-execute if score #dialog Dialog matches 63..82 as @a[tag=same_room,tag=!spectator] run function luigis_mansion:items/game_boy_horror/turn_screen_to_forced_value {value:"boot_up",flags:[B;1b,0b],floats:[],tracker:[]}
+execute if score #dialog Dialog matches 63..82 as @a[tag=same_room,tag=!spectator] run function luigis_mansion:items/game_boy_horror/turn_screen_to_forced_value {value:"boot_program",flags:[B;1b,0b],floats:[],tracker:[]}
 execute if score #dialog Dialog matches 63 as @a[tag=same_room] at @s run playsound 3ds_remake:item.game_boy_horror.install_part neutral @s ~ ~ ~ 1
 execute if score #dialog Dialog matches 83..102 as @a[tag=same_room,tag=!spectator] run function luigis_mansion:items/game_boy_horror/turn_screen_to_forced_value {value:"scanning",flags:[B;1b,0b],floats:[],tracker:[]}
 execute if score #dialog Dialog matches 102..124 as @e[tag=luigi,tag=same_room] run function luigis_mansion:entities/luigi/animation/set/idle_no_poltergust

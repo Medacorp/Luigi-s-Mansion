@@ -14,7 +14,7 @@
     },
 	"parent": "luigis_mansion:vanilla/unlock_hidden_mansion",
     "criteria": {
-        "cleared": {
+        "clear": {
             "trigger": "minecraft:impossible"
         }
     }

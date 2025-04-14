@@ -17,7 +17,7 @@
     },
 	"parent": "luigis_mansion:vanilla/clear_mansion",
     "criteria": {
-        "unlocked": {
+        "unlock": {
             "trigger": "minecraft:impossible"
         }
     }

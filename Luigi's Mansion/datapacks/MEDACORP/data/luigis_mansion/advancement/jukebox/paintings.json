@@ -20,6 +20,6 @@
         }
     },
     "rewards": {
-        "function": "luigis_mansion:advancements/jukebox/area_clear"
+        "function": "luigis_mansion:advancements/jukebox/paintings"
     }
 }

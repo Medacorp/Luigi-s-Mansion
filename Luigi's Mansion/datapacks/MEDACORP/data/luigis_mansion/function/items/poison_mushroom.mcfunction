@@ -1,2 +1,2 @@
-execute if entity @s[tag=!choking] as @e[tag=collector,tag=!catching_ghost,limit=1] at @s run function luigis_mansion:items/poison_mushroom/shrink
+execute if entity @s[tag=!choking] as @e[tag=collector,tag=!capturing_ghost,limit=1] at @s run function luigis_mansion:items/poison_mushroom/shrink
 execute if entity @s[tag=choking] as @e[tag=collector,limit=1] at @s run function luigis_mansion:items/poison_mushroom/choke

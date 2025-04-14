@@ -44,7 +44,7 @@ scoreboard players operation @s ForceRadar = @a[tag=this_player,limit=1] ForceRa
 scoreboard players reset @a[tag=this_player,limit=1] ForceScreen
 scoreboard players reset @a[tag=this_player,limit=1] ForceRadar
 scoreboard players operation @a[tag=this_player,limit=1] Shrunk = @s Shrunk
-scoreboard players operation @a[tag=this_player,limit=1] SneakTime = @s SneakTime
+scoreboard players operation @s SneakTime = @a[tag=this_player,limit=1] SneakTime
 data modify entity @s data.animation set from storage luigis_mansion:data my_memory.animation
 execute if entity @a[tag=this_player,tag=sneak_pos,tag=!separated_camera,limit=1] run tag @s add sneak_pos
 execute if entity @a[tag=this_player,tag=sneaking,tag=!separated_camera,limit=1] run tag @s add sneaking

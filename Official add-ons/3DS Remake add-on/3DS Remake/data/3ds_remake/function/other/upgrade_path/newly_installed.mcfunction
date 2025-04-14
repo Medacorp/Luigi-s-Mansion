@@ -14,7 +14,7 @@ execute if score #temp Time matches 100000.. run data modify storage 3ds_remake:
 execute if score #temp Time matches 300000.. run data modify storage 3ds_remake:data current_state.trophy.hard.task_2 set value 1b
 execute if score #temp Time matches 500000.. run data modify storage 3ds_remake:data current_state.trophy.master.task_2 set value 1b
 scoreboard players reset #temp Time
-function 3ds_remake:selection_menu/gallery_trophy/get_count/money/jewels
+function 3ds_remake:selection_menu/gallery_trophy/get_count/jewels
 execute if data storage 3ds_remake:data current_state.trophy.beginner{task_6:0b} if score #temp Time matches 1.. run data modify storage 3ds_remake:data current_state.trophy.beginner.task_6 set value 1b
 execute if data storage 3ds_remake:data current_state.trophy.master{task_5:0b} if score #temp Time matches 100.. run data modify storage 3ds_remake:data current_state.trophy.master.task_5 set value 1b
 scoreboard players reset #temp Time
@@ -40,6 +40,7 @@ execute if data storage luigis_mansion:data current_state.current_data{data_inde
 execute if data storage luigis_mansion:data current_state.mansion_data[{data_index:0}] if data storage luigis_mansion:data current_state.mansion_data[{data_index:0}].obtained_items{fire_element_medal:1b} run data modify storage 3ds_remake:data current_state.trophy.easy.has_element_medal.fire set value 1b
 execute if data storage luigis_mansion:data current_state.mansion_data[{data_index:0}] if data storage luigis_mansion:data current_state.mansion_data[{data_index:0}].obtained_items{water_element_medal:1b} run data modify storage 3ds_remake:data current_state.trophy.easy.has_element_medal.water set value 1b
 execute if data storage luigis_mansion:data current_state.mansion_data[{data_index:0}] if data storage luigis_mansion:data current_state.mansion_data[{data_index:0}].obtained_items{ice_element_medal:1b} run data modify storage 3ds_remake:data current_state.trophy.easy.has_element_medal.ice set value 1b
+execute if data storage luigis_mansion:data current_state.high_scores[{data_index:0}] run data modify storage 3ds_remake:data current_state.trophy.easy.has_element_medals set value {fire:1b,water:1b,ice:1b}
 execute if data storage 3ds_remake:data current_state.trophy.easy.has_element_medals{fire:1b,water:1b,ice:1b} run data modify storage 3ds_remake:data current_state.trophy.easy.task_3 set value 1b
 execute store result score #temp Time run data get storage luigis_mansion:data current_state.ghosts_caught.caught.luigis_mansion.gold_mouse
 execute if score #temp Time matches 1.. run data modify storage 3ds_remake:data current_state.trophy.easy.task_5 set value 1b
@@ -80,15 +81,14 @@ scoreboard players set #temp Time 0
 function 3ds_remake:selection_menu/gallery_trophy/get_count/portrait_speed
 execute if score #temp Money matches 23.. run data modify storage 3ds_remake:data current_state.trophy.master.task_8 set value 1b
 scoreboard players reset #temp Time
-scoreboard players set #temp Time 0
-scoreboard players set #temp Money 50
-execute if data storage luigis_mansion:data current_state.high_scores[0] run function 3ds_remake:selection_menu/gallery_trophy/get_count/lowest_health
-execute if data storage luigis_mansion:data new_high_scores run data modify storage luigis_mansion:data current_state.high_scores set from storage luigis_mansion:data new_high_scores
-data remove storage luigis_mansion:data new_high_scores
-execute unless score #temp Time matches 0 if data storage 3ds_remake:data current_state.trophy.hard{task_6:0b} run data modify storage 3ds_remake:data current_state.trophy.hard.task_6 set value 1b
+execute if data storage luigis_mansion:data current_state.high_scores[{data_index:0}] store result score #temp Time run data get storage luigis_mansion:data current_state.high_scores[{data_index:0}].health
+execute if data storage luigis_mansion:data current_state.high_scores[{data_index:1}] store result score #temp2 Time run data get storage luigis_mansion:data current_state.high_scores[{data_index:1}].health
+execute if score #temp Time matches 50.. if data storage 3ds_remake:data current_state.trophy.hard{task_6:0b} run data modify storage 3ds_remake:data current_state.trophy.hard.task_6 set value 1b
+execute if score #temp Time matches 80.. if data storage 3ds_remake:data current_state.trophy.master{task_6:0b} run data modify storage 3ds_remake:data current_state.trophy.master.task_6 set value 1b
+execute if score #temp2 Time matches 50.. if data storage 3ds_remake:data current_state.trophy.hard{task_6:0b} run data modify storage 3ds_remake:data current_state.trophy.hard.task_6 set value 1b
+execute if score #temp2 Time matches 80.. if data storage 3ds_remake:data current_state.trophy.master{task_6:0b} run data modify storage 3ds_remake:data current_state.trophy.master.task_6 set value 1b
 scoreboard players reset #temp Time
-scoreboard players reset #temp Money
-scoreboard players reset #temp2 Money
+scoreboard players reset #temp2 Time
 scoreboard players set #temp Time 0
 scoreboard players set #temp Money 80
 execute if data storage luigis_mansion:data current_state.high_scores[0] run function 3ds_remake:selection_menu/gallery_trophy/get_count/lowest_health
@@ -98,13 +98,12 @@ execute unless score #temp Time matches 0 if data storage 3ds_remake:data curren
 scoreboard players reset #temp Time
 scoreboard players reset #temp Money
 scoreboard players reset #temp2 Money
-scoreboard players set #temp Time 2147483647
-execute if data storage luigis_mansion:data current_state.high_scores[0] run function 3ds_remake:selection_menu/gallery_trophy/get_count/quickest_time
-execute if data storage luigis_mansion:data new_high_scores run data modify storage luigis_mansion:data current_state.high_scores set from storage luigis_mansion:data new_high_scores
-data remove storage luigis_mansion:data new_high_scores
+execute if data storage luigis_mansion:data current_state.high_scores[{data_index:0}] store result score #temp Time run data get storage luigis_mansion:data current_state.high_scores[{data_index:0}].speed
+execute if data storage luigis_mansion:data current_state.high_scores[{data_index:1}] store result score #temp2 Time run data get storage luigis_mansion:data current_state.high_scores[{data_index:1}].speed
 execute if score #temp Time matches ..216000 if data storage 3ds_remake:data current_state.trophy.master{task_7:0b} run data modify storage 3ds_remake:data current_state.trophy.master.task_7 set value 1b
+execute if score #temp2 Time matches ..216000 if data storage 3ds_remake:data current_state.trophy.master{task_7:0b} run data modify storage 3ds_remake:data current_state.trophy.master.task_7 set value 1b
 scoreboard players reset #temp Time
-scoreboard players reset #temp Money
+scoreboard players reset #temp2 Time
 execute if data storage luigis_mansion:data current_state.current_data.mansion_id{namespace:"luigis_mansion",id:"hidden"} if entity @a[advancements={luigis_mansion:vanilla/clear_hidden_mansion=false}] run function 3ds_remake:other/upgrade_path/convert_hidden_data
 execute if entity @a[advancements={luigis_mansion:vanilla/clear_hidden_mansion=true}] unless data storage luigis_mansion:data current_state.high_scores[{data_index:1}] run data modify storage 3ds_remake:data current_state.trophy.hard.task_5 set value 1b
 execute if entity @a[advancements={luigis_mansion:vanilla/clear_hidden_mansion=true}] unless data storage luigis_mansion:data current_state.high_scores[{data_index:1}] if data storage luigis_mansion:data current_state.high_scores[{data_index:0}] run function 3ds_remake:other/upgrade_path/clone_high_score
@@ -112,6 +111,6 @@ execute if entity @a[advancements={luigis_mansion:vanilla/unlock_hidden_mansion=
 execute if entity @a[advancements={luigis_mansion:vanilla/unlock_hidden_mansion=true,luigis_mansion:vanilla/clear_hidden_mansion=false}] run advancement revoke @a only luigis_mansion:vanilla/unlock_hidden_mansion
 execute if data storage 3ds_remake:data current_state.trophy.hard{task_5:1b} run advancement grant @a only 3ds_remake:3ds_remake/clear_hidden_mansion
 execute if data storage luigis_mansion:data rooms.training_room{cleared:1b} run data merge storage 3ds_remake:data {obtained_gameboy_horror_part:1b,shown_gameboy_horror_part:1b,spoke_with_future_e_gadd:1b}
-execute if data storage luigis_mansion:data saved_state.mansion_data[{data_index:0,can_clear_hidden:0b}] if data storage luigis_mansion:data saved_state.mansion_data[{data_index:0,can_clear_hidden:0b}].boos[{name:"booligan"}] run data modify storage luigis_mansion:data saved_state.mansion_data[{data_index:0,can_clear_hidden:0b}].boos[{name:"booligan"}].name set value "boolldog"
-execute if data storage luigis_mansion:data current_state.mansion_data[{data_index:0,can_clear_hidden:0b}] if data storage luigis_mansion:data current_state.mansion_data[{data_index:0,can_clear_hidden:0b}].boos[{name:"booligan"}] run data modify storage luigis_mansion:data current_state.mansion_data[{data_index:0,can_clear_hidden:0b}].boos[{name:"booligan"}].name set value "boolldog"
-execute if data storage luigis_mansion:data current_state.current_data{namespace:"luigis_mansion",id:"hidden"} if data storage luigis_mansion:data current_state.current_data.boos[{name:"booligan"}] run data modify storage luigis_mansion:data current_state.current_data.boos[{name:"booligan"}].name set value "boolldog"
+execute if data storage luigis_mansion:data saved_state.mansion_data[{data_index:0,can_clear_hidden:0b}] if data storage luigis_mansion:data saved_state.mansion_data[{data_index:0,can_clear_hidden:0b}].boos[{name:{namespace:"luigis_mansion",id:"booligan"}}] run data modify storage luigis_mansion:data saved_state.mansion_data[{data_index:0,can_clear_hidden:0b}].boos[{name:{namespace:"luigis_mansion",id:"booligan"}}].name set value {namespace:"3ds_remake",id:"boolldog"}
+execute if data storage luigis_mansion:data current_state.mansion_data[{data_index:0,can_clear_hidden:0b}] if data storage luigis_mansion:data current_state.mansion_data[{data_index:0,can_clear_hidden:0b}].boos[{name:{namespace:"luigis_mansion",id:"booligan"}}] run data modify storage luigis_mansion:data current_state.mansion_data[{data_index:0,can_clear_hidden:0b}].boos[{name:{namespace:"luigis_mansion",id:"booligan"}}].name set value {namespace:"3ds_remake",id:"boolldog"}
+execute if data storage luigis_mansion:data current_state.current_data{namespace:"luigis_mansion",id:"hidden"} if data storage luigis_mansion:data current_state.current_data.boos[{name:{namespace:"luigis_mansion",id:"booligan"}}] run data modify storage luigis_mansion:data current_state.current_data.boos[{name:{namespace:"luigis_mansion",id:"booligan"}}].name set value {namespace:"3ds_remake",id:"boolldog"}

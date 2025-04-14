@@ -1,5 +1,5 @@
 execute store result score #temp ID run scoreboard players get @s SearcherID
-execute as @e[tag=luigi] if score @s ID = #temp ID run tag @s add searcher
+execute as @e[tag=player] if score @s ID = #temp ID run tag @s add searcher
 scoreboard players reset #temp ID
 scoreboard players set @s FurnitureSpins 0
 tag @s add open
@@ -16,4 +16,4 @@ execute if entity @s[tag=grants_water_plant_task] if score @s[tag=!searched] Fur
 scoreboard players reset @s SearcherID
 kill @e[tag=location]
 tag @s add searched
-tag @e[tag=searcher,limit=1] remove searcher
+tag @e[tag=searcher] remove searcher
