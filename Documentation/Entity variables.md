@@ -75,6 +75,7 @@ entity:{
     
     //Items
     variant:1b, //Sets the item variant to spawn, bill: (0b is green, 1b is gold. Default = random).
+	type:"", //Sets the type of poison mushroom or small heart to spawn. Small hearts set this value based on money, if it wasn't set before.
     silent:1b, //When set, makes no spawn sound for this item. Default = 0b.
     assign_rank:{ //The portrait ghost rank this pearl modifies. Is set by pearl droppers to their entity ID (or, if present their pearl_assign_rank data). Default value prevents saving anything.
         namespace:"luigis_mansion", //The namespace of the mansion. Default = "luigis_mansion".

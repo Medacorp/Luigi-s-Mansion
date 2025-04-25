@@ -23,7 +23,6 @@ execute if score #dialog Dialog matches 1..4 as @a[tag=same_room,tag=!spectator,
 execute if score #dialog Dialog matches 1..4 as @e[tag=luigi,tag=same_room] run function luigis_mansion:entities/luigi/animation/set/game_boy_horror
 execute if score #dialog Dialog matches 1..6 as @a[tag=same_room] run function luigis_mansion:other/music/set/training
 execute if score #dialog Dialog matches 1 run stopsound @a[tag=same_room] neutral luigis_mansion:entity.e_gadd.talk.oui_oydohroh_tahmentahkeh2
-execute if score #dialog Dialog matches 1 run scoreboard players set #training_room Loaded 3
 execute if score #dialog Dialog matches 1 if score #players Totals matches 1 run tellraw @a[tag=same_room] {type:"translatable",translate:"chat.type.text",with:[{type:"translatable",translate:"luigis_mansion:entity.e_gadd",color:"green"},{type:"translatable",translate:"extensive_training:dialog.endless.1",with:[{type:"selector",selector:"@p[tag=!spectator]"}]}]}
 execute if score #dialog Dialog matches 1 if score #players Totals matches 2.. run tellraw @a[tag=same_room] {type:"translatable",translate:"chat.type.text",with:[{type:"translatable",translate:"luigis_mansion:entity.e_gadd",color:"green"},{type:"translatable",translate:"extensive_training:dialog.endless.1.more"}]}
 execute if score #dialog Dialog matches 1 as @a[tag=same_room] at @s run playsound luigis_mansion:entity.e_gadd.talk.ohyahmah_luigi_ck_ck neutral @s ~ ~ ~ 1
@@ -40,6 +39,7 @@ execute if score #dialog Dialog matches 4 unless data storage extensive_training
 execute if score #dialog Dialog matches 4 if data storage extensive_training:data current_state{endless_record:-1} if score #players Totals matches 1 if entity @a[tag=next_dialog_line,limit=1] run tellraw @a[tag=same_room] {type:"translatable",translate:"chat.type.text",with:[{type:"translatable",translate:"luigis_mansion:entity.e_gadd",color:"green"},{type:"translatable",translate:"extensive_training:dialog.endless.3.alt"}]}
 execute if score #dialog Dialog matches 4 if data storage extensive_training:data current_state{endless_record:-1} if score #players Totals matches 2.. if entity @a[tag=next_dialog_line,limit=1] run tellraw @a[tag=same_room] {type:"translatable",translate:"chat.type.text",with:[{type:"translatable",translate:"luigis_mansion:entity.e_gadd",color:"green"},{type:"translatable",translate:"extensive_training:dialog.endless.3.alt.more"}]}
 execute if score #dialog Dialog matches 4 if data storage extensive_training:data current_state{endless_record:-1} if entity @a[tag=next_dialog_line,limit=1] as @a[tag=same_room] at @s run playsound luigis_mansion:entity.e_gadd.talk.gay_roon_ehdeedee_odoh_tahmentahkeh neutral @s ~ ~ ~ 1
+execute if score #dialog Dialog matches 4 run scoreboard players set #training_room ActionTime 3
 
 execute if score #dialog Dialog matches 5 as @e[tag=luigi,tag=same_room] run function luigis_mansion:entities/luigi/animation/set/none
 execute if score #dialog Dialog matches 5 run scoreboard players set #training_room TrainingRoomScore 0
@@ -75,8 +75,8 @@ execute if score #dialog Dialog matches 9 if entity @a[tag=next_dialog_line,limi
 
 execute if score #dialog Dialog matches 50 as @e[tag=luigi,tag=same_room] run function luigis_mansion:entities/luigi/animation/set/none
 execute if score #dialog Dialog matches 50..209 as @a[tag=same_room] run function luigis_mansion:other/music/set/training_results
-scoreboard players operation #training_room Loaded < #global_difficulty Selected
-execute if score #dialog Dialog matches 50 if score #training_room TrainingRoomScore matches 150.. if score #training_room Loaded matches 3 run advancement grant @a[tag=same_room] only extensive_training:extensive_training/is_that_all_you_got
+scoreboard players operation #training_room ActionTime < #global_difficulty Selected
+execute if score #dialog Dialog matches 50 if score #training_room TrainingRoomScore matches 150.. if score #training_room ActionTime matches 3 run advancement grant @a[tag=same_room] only extensive_training:extensive_training/is_that_all_you_got
 execute if score #dialog Dialog matches 50 if score #training_room TrainingRoomScore matches 1.. run summon minecraft:firework_rocket 788 80 -8 {LifeTime:0,Life:0,FireworksItem:{id:"minecraft:firework_rocket",count:1,components:{"minecraft:fireworks":{flight_duration:0b,explosions:[{colors:[I;14862336],shape:"small_ball"}]}}}}
 execute if score #dialog Dialog matches 55 if score #training_room TrainingRoomScore matches 1.. run summon minecraft:firework_rocket 788 80 -4 {LifeTime:0,Life:0,FireworksItem:{id:"minecraft:firework_rocket",count:1,components:{"minecraft:fireworks":{flight_duration:0b,explosions:[{colors:[I;14862336],shape:"small_ball"}]}}}}
 execute if score #dialog Dialog matches 60 if score #training_room TrainingRoomScore matches 50.. run summon minecraft:firework_rocket 788 80 -12 {LifeTime:0,Life:0,FireworksItem:{id:"minecraft:firework_rocket",count:1,components:{"minecraft:fireworks":{flight_duration:0b,explosions:[{colors:[I;14862336],shape:"small_ball"}]}}}}

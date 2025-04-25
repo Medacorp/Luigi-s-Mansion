@@ -18,6 +18,7 @@ summon minecraft:armor_stand ~ ~ ~ {NoGravity:1b,Marker:1b,Invisible:1b,Tags:["l
 summon minecraft:armor_stand ~ ~ ~ {NoGravity:1b,Marker:1b,Invisible:1b,Tags:["poltergust_body","luigi_model","model_piece","this_entity","found_owner"],CustomName:{type:"translatable",translate:"luigis_mansion:entity.luigi"}}
 scoreboard players operation @e[tag=this_entity] ID = #entity ID
 scoreboard players reset #entity ID
+scoreboard players reset #entity Time
 execute in minecraft:overworld run loot spawn 27 0 0 loot luigis_mansion:gameplay/get_player_name
 execute in minecraft:overworld run data modify entity @e[tag=!model_piece,tag=this_entity,limit=1] data.player_name set from entity @e[type=minecraft:item,nbt={Item:{id:"minecraft:player_head"}},limit=1] Item.components."minecraft:profile".name
 execute in minecraft:overworld run setblock 27 0 0 minecraft:oak_sign{front_text:{messages:[{source:"entity",entity:"@e[type=minecraft:item,nbt={Item:{id:'minecraft:player_head'}},limit=1]",type:"nbt",nbt:"Item.components.'minecraft:profile'.name"},{type:"text",text:""},{type:"text",text:""},{type:"text",text:""}]}}
@@ -28,10 +29,10 @@ execute in minecraft:overworld run kill @e[x=27.5,y=0.0,z=0.5,distance=..0.7,typ
 execute if score #global_player_names Selected matches 0 run data merge entity @e[tag=model_piece,tag=source,tag=this_entity,limit=1] {CustomNameVisible:0b}
 execute if score #global_player_names Selected matches 1 run data merge entity @e[tag=model_piece,tag=source,tag=this_entity,limit=1] {CustomNameVisible:1b}
 function luigis_mansion:entities/player/memory/color/get
-execute as @e[tag=model_piece,tag=this_entity,tag=!held_item,tag=!poltergust_body,tag=!source] store result entity @s equipment.head.components."minecraft:custom_model_data".[0] int 1 run scoreboard players get #entity Time
-execute if score #entity2 Time matches 1 as @e[tag=model_piece,tag=this_entity,tag=!held_item,tag=!poltergust_body,tag=!source] run data modify entity @s equipment.head.components."minecraft:custom_model_data".flags[1] set value 1b
-scoreboard players reset #entity Time
-scoreboard players reset #entity2 Time
+execute as @e[tag=model_piece,tag=this_entity,tag=!held_item,tag=!poltergust_body,tag=!source] store result entity @s equipment.head.components."minecraft:custom_model_data".colors[0] int 1 run scoreboard players get #temp Time
+execute if score #temp2 Time matches 1 as @e[tag=model_piece,tag=this_entity,tag=!held_item,tag=!poltergust_body,tag=!source] run data modify entity @s equipment.head.components."minecraft:custom_model_data".flags[1] set value 1b
+scoreboard players reset #temp Time
+scoreboard players reset #temp2 Time
 tag @e[tag=model_piece,tag=this_entity] remove this_entity
 scoreboard players set @e[tag=this_entity,limit=1] Sound 0
 scoreboard players set @e[tag=this_entity,limit=1] PoltergustSound 0

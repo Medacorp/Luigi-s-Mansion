@@ -1,4 +1,5 @@
 scoreboard players add @s DeathTime 1
+tag @s add dying
 
 execute if entity @s[scores={DeathTime=1}] run scoreboard players operation @s KillerID = @e[tag=vacuuming_me,sort=nearest,limit=1] ID
 
@@ -9,7 +10,6 @@ scoreboard players reset #temp KillerID
 execute at @s facing entity @e[tag=luigi,tag=killer,limit=1] feet run teleport @s ~ ~ ~ ~-180 0
 
 execute at @s[scores={DeathTime=1..}] facing entity @e[tag=luigi,tag=killer,limit=1] feet run teleport @s ^ ^ ^0.4
-tag @s[scores={DeathTime=1..}] add dying
 
 execute if entity @s[scores={Health=0},tag=!dropped_loot_at_0] run function luigis_mansion:room/loot_chance_ghost
 
@@ -17,7 +17,7 @@ execute at @s[scores={DeathTime=2..,Room=1..,Health=-2147483648..},tag=!dead,tag
 execute if entity @s[scores={DeathTime=1,Room=1..},tag=!dead,tag=!remove_from_existence] unless entity @s[scores={Health=-2147483648..}] run function luigis_mansion:entities/ghost/capture with entity @a[tag=killer,limit=1]
 execute at @s[scores={DeathTime=2..,Room=-2,Health=-2147483648..},tag=!dead,tag=!remove_from_existence] if entity @e[tag=luigi,tag=killer,distance=..0.7] run scoreboard players add #training_room TrainingRoomScore 1
 execute if entity @s[scores={DeathTime=1,Room=-2},tag=!dead,tag=!remove_from_existence] unless entity @s[scores={Health=-2147483648..}] run scoreboard players add #training_room TrainingRoomScore 1
-execute at @s[scores={DeathTime=2..,Room=-2,Health=-2147483648..,TrainingRoomScore=-2147483648..},tag=!dead,tag=!remove_from_existence] run scoreboard players operation @a[tag=killer,distance=..0.7] TrainingRoomScore += @s TrainingRoomScore
+execute at @s[scores={DeathTime=2..,Room=-2,Health=-2147483648..,TrainingRoomScore=-2147483648..},tag=!dead,tag=!remove_from_existence] run scoreboard players operation @a[tag=killer,limit=1] TrainingRoomScore += @s TrainingRoomScore
 execute if entity @s[scores={DeathTime=1,Room=-2,TrainingRoomScore=-2147483648..},tag=!dead,tag=!remove_from_existence] unless entity @s[scores={Health=-2147483648..}] run scoreboard players operation @a[tag=killer,limit=1] TrainingRoomScore += @s TrainingRoomScore
 execute at @s[scores={DeathTime=2..},tag=!dead,tag=!remove_from_existence] if entity @e[tag=luigi,tag=killer,distance=..0.7] run tag @s add captured
 execute if entity @s[scores={DeathTime=1},tag=!dead,tag=!remove_from_existence] unless entity @s[scores={Health=-2147483648..}] run tag @s add captured

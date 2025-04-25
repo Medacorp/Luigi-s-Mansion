@@ -1,1 +1,2 @@
-function luigis_mansion:spawn_entities/item/poison_mushroom/shrink
+execute unless data storage luigis_mansion:data entity{type:"choke"} run function luigis_mansion:spawn_entities/item/poison_mushroom/shrink
+execute if data storage luigis_mansion:data entity{type:"choke"} run function luigis_mansion:spawn_entities/item/poison_mushroom/choke

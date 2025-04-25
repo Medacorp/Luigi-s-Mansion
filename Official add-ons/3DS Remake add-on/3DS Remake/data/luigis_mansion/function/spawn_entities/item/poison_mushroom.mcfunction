@@ -1,2 +1,3 @@
-execute if score #mario_amiibo Selected matches 0 run function luigis_mansion:spawn_entities/item/poison_mushroom/shrink
+execute if score #mario_amiibo Selected matches 0 unless data storage luigis_mansion:data entity{type:"choke"} run function luigis_mansion:spawn_entities/item/poison_mushroom/shrink
+execute if score #mario_amiibo Selected matches 0 if data storage luigis_mansion:data entity{type:"choke"} run function luigis_mansion:spawn_entities/item/poison_mushroom/choke
 execute if score #mario_amiibo Selected matches 1 run function 3ds_remake:spawn_entities/item/super_mushroom

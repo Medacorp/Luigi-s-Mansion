@@ -1,4 +1,4 @@
-scoreboard players add @s[scores={DeathTime=..60}] DeathTime 1
+scoreboard players add @s[scores={DeathTime=..59}] DeathTime 1
 execute unless entity @s[scores={DeathTime=1..}] run scoreboard players add @s DeathTime 1
 data merge entity @s[scores={DeathTime=1}] {Pose:{Head:[0.0f,0.01f,0.0f]}}
 data merge entity @s[scores={DeathTime=1},tag=flipped_gravity] {Pose:{Head:[0.0f,0.01f,-180.0f]}}

@@ -3,6 +3,7 @@ data modify storage luigis_mansion:data my_memory.revived_by set from entity @s 
 data modify storage luigis_mansion:data memory append from storage luigis_mansion:data my_memory
 data remove storage luigis_mansion:data my_memory
 
+execute as @a[tag=this_player,tag=using_selection_menu] run function luigis_mansion:selection_menu/close
 execute as @a[tag=this_player] run function luigis_mansion:entities/player/camera/reset
 execute at @s run teleport @a[tag=this_player] ~ ~ ~ ~ ~
 execute as @a[tag=this_player] run function luigis_mansion:other/music/set/silence

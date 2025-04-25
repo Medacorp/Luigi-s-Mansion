@@ -14,8 +14,9 @@ execute if data storage luigis_mansion:data luigi{alive:1b} if entity @s[tag=dea
 execute if data storage luigis_mansion:data luigi{alive:1b} store success score #temp Time run data modify entity @s data.animation set from storage luigis_mansion:data luigi.animation
 execute if score #temp Time matches 1 run function luigis_mansion:animations/luigi/reset_pose
 scoreboard players reset #temp Time
+tag @s remove death_animation
 execute if data storage luigis_mansion:data luigi{tags:["riding_poltergust"]} run tag @s add riding_poltergust
-execute if data storage luigis_mansion:data luigi{tags:["low_health"]} unless data storage luigis_mansion:data luigi.animation{namespace:"luigis_mansion",id:"idle"} run tag @s[tag=!riding_poltergust] add low_health
+execute if data storage luigis_mansion:data luigi{tags:["low_health"]} run tag @s[tag=!riding_poltergust] add low_health
 execute if data storage luigis_mansion:data luigi{tags:["sneaking"]} run tag @s add sneaking
 execute if data storage luigis_mansion:data luigi{tags:["walking"]} run tag @s add walking
 execute if data storage luigis_mansion:data luigi{tags:["running"]} run tag @s add running
@@ -48,7 +49,6 @@ tag @s[tag=!flipped_gravity] remove was_flipped
 tag @s[tag=flipped_gravity] remove flipped_gravity
 tag @s remove poltergust_grabbed
 tag @s remove shrunk
-tag @s remove death_animation
 
 execute store result score #temp Time run data get storage luigis_mansion:data luigi.initial_animation_progress
 execute unless data storage luigis_mansion:data luigi{initial_animation_progress:0} unless score @s AnimationProgress matches 0 unless score @s AnimationProgress = #temp Time run function 3ds_remake:animations/gooigi/main

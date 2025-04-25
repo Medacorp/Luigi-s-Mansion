@@ -13,7 +13,7 @@ execute store result storage luigis_mansion:data luigi.mirror.mirror_set_by_furn
 #/todelete
 data modify storage luigis_mansion:data luigi.initial_animation_progress set from entity @s data.initial_animation_progress
 data remove entity @s data.initial_animation_progress
-execute store result storage luigis_mansion:data luigi.alive byte 1 if entity @s[tag=!death_animation]
+execute store result storage luigis_mansion:data luigi.alive byte 1 if entity @s[tag=!death_animation,tag=!revived_animation]
 execute store result storage luigis_mansion:data luigi.reset_rotation byte 1 if entity @s[tag=reset_rotation]
 execute store result storage luigis_mansion:data luigi.shrunk byte 1 if entity @s[scores={Shrunk=1..}]
 execute store result storage luigis_mansion:data luigi.invulnerable byte 1 if entity @s[scores={Invulnerable=1..,AnimationProgress=0},tag=!capturing_ghost]

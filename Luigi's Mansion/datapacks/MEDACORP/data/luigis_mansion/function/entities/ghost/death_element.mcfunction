@@ -1,6 +1,7 @@
 tag @s add element_death
 tag @s remove element_hurt
 tag @s remove hurt
+tag @s add dying
 scoreboard players add @s DeathTime 1
 
 execute if entity @s[scores={DeathTime=1}] unless entity @e[tag=expelling_me,limit=1] run function luigis_mansion:entities/ghost/find_expellers
@@ -14,8 +15,6 @@ scoreboard players operation #temp KillerID = @s KillerID
 execute as @e[tag=player] if score @s ID = #temp KillerID run tag @s add killer
 execute if entity @s[scores={DeathTime=1}] unless entity @e[tag=killer,limit=1] run function luigis_mansion:entities/ghost/cancel_death
 scoreboard players reset #temp KillerID
-
-tag @s[scores={DeathTime=1..}] add dying
 
 execute if entity @s[scores={DeathTime=1,Room=1..},tag=!dead,tag=!remove_from_existence] run function luigis_mansion:entities/ghost/capture with entity @a[tag=killer,limit=1]
 execute if entity @s[scores={DeathTime=1,Room=-2},tag=!dead,tag=!remove_from_existence] run scoreboard players add #training_room TrainingRoomScore 1

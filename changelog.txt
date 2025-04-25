@@ -66,12 +66,15 @@ v3.3:
 * Changed mansion rank paintings to use edited screenshots of the build exteriors
 * Changed most music track IDs
 * Changed debug settings to be hidden unless the sendCommandFeedback game rule is set to true
+* Changed Extensive Training speedrun program in a few ways (the program was made before numerous combat changes, so an update was overdue)
+* Changed Extensive Training's Mastermind advancement to "clear on hard", rather than "clear without damage", because without damage is straight up impossible
 * Fixed lab map area chunks accidentally removed
 * Fixed exterior dialogs continue counting while the player is not present, locking the player in the exterior if they leave the world during them
 * Fixed furniture shaking doesn't work entirely correct; the first of a short shake also no longer visually shakes the model, like the original game
 * Fixed Luigi's arm detatches from the door knob during door unlock animations
 * Fixed softlock when upgrading a world where E. Gadd wasn't found yet
 * Fixed pulling ghosts didn't actually work correctly, it was not strong enough and could cause a server freeze with Jarvis
+* Fixed multiplayer server freeze when hitting a ghost up close with the vacuum in the same tick that it died
 * Fixed vacuuming up a mushroom plays capture sound
 * Fixed vacuuming items on the ground makes no bounce sounds
 * Fixed vacuuming up items that make capture sounds doesn't work reliably
@@ -89,6 +92,7 @@ v3.3:
 * Fixed Shivers vanishing doesn't move him to the correct position
 * Fixed softlock in the Conservatory
 * Fixed Waiters are not considered optional, meaning letting one vanish after triggering Mr. Luggs won't clear the room (Waiters are still not optional by default though)
+* Fixed Mr. Bones-es don't show held bone during attack animation
 * Fixed Graveyard furniture problems
 * Fixed Black Bogmires don't enter succumb animation (but do die and spawn the shadow ball)
 * Fixed F2 Washroom lamp loot had wrong room number
@@ -109,10 +113,12 @@ v3.3:
 * Fixed upside-down haunted objects are actually upside down now
 * Fixed Vincent Van Gore held 2 pencils
 * Fixed some missing Luigi sounds during portrificationizing
-* Fixed E3 Demo add-on fails to load
+* Fixed orange non-dancing Ghost Guy was missing models
 * Fixed installing 3DS Remake after progress was made doesn't fully handle the install checks properly
 * Fixed installing 3DS Remake while hidden mansion was loaded didn't map over the caught speedy spirits
 * Fixed 3DS Remake's S Rank can be unlocked in normal mansion; a new field has been added to mansion data to control S Rank unlockability
+* Fixed E3 Demo add-on fails to load
+* Fixed Extensive Training speedrun program softlock on defeat
 * Removed entered_mansion command storage flag; mansion entrance music/cutscene now plays for all players' first entry, not just the first player
 * Removed found_e_gadd command storage flag; E. Gadd's spawns are no longer conditional as you cannot go to the lab before going to the mansion anymore, and all other usages were replaced with checking the underground lab cleared state
 

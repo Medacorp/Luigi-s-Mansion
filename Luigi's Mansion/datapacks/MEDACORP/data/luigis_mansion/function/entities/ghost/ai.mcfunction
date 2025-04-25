@@ -9,12 +9,12 @@ scoreboard players set @s[tag=vanish] HurtTime 0
 
 execute if entity @s[tag=in_vacuum,tag=pulled_by_vacuum,tag=!hurt,tag=!appear,tag=!vanish] run function luigis_mansion:entities/ghost/hurt/vacuum_pull
 execute if entity @s[tag=in_vacuum,tag=vacuumable,tag=!hurt,tag=!appear,tag=!vanish] run function luigis_mansion:entities/ghost/hurt/vacuum_capture
-execute if entity @s[tag=in_vacuum,scores={VulnerableTime=1..},tag=!appear,tag=!vanish] run function luigis_mansion:entities/ghost/hurt/vacuum_attack
-execute if entity @s[tag=!dying,scores={VulnerableTime=0..},tag=!show_health] unless entity @s[tag=!hurt,tag=!flee] run function luigis_mansion:entities/ghost/hurt/vacuum
-execute if entity @s[tag=!hurt,tag=!disappear,tag=!dying,tag=element_hurt] run function luigis_mansion:entities/ghost/hurt/element
-execute if entity @s[tag=in_fire,tag=hurt_by_fire,tag=!burning_heart,tag=!watery_heart,tag=!hurt,tag=!appear,tag=!vanish] run function luigis_mansion:entities/ghost/hurt/fire
-execute if entity @s[tag=in_water,tag=hurt_by_water,tag=!watery_heart,tag=!frozen_heart,tag=!hurt,tag=!appear,tag=!vanish] run function luigis_mansion:entities/ghost/hurt/water
-execute if entity @s[tag=in_ice,tag=hurt_by_ice,tag=!burning_heart,tag=!frozen_heart,tag=!hurt,tag=!appear,tag=!vanish] run function luigis_mansion:entities/ghost/hurt/ice
+execute if entity @s[tag=in_vacuum,scores={VulnerableTime=1..},tag=!appear,tag=!vanish,tag=!dying,tag=!captured,tag=!dead] run function luigis_mansion:entities/ghost/hurt/vacuum_attack
+execute if entity @s[tag=!dying,tag=!captured,tag=!dead,scores={VulnerableTime=0..},tag=!show_health] unless entity @s[tag=!hurt,tag=!flee] run function luigis_mansion:entities/ghost/hurt/vacuum
+execute if entity @s[tag=!hurt,tag=!disappear,tag=!dying,tag=!captured,tag=!dead,tag=element_hurt] run function luigis_mansion:entities/ghost/hurt/element
+execute if entity @s[tag=in_fire,tag=hurt_by_fire,tag=!burning_heart,tag=!watery_heart,tag=!hurt,tag=!appear,tag=!vanish,tag=!dying,tag=!captured,tag=!dead] run function luigis_mansion:entities/ghost/hurt/fire
+execute if entity @s[tag=in_water,tag=hurt_by_water,tag=!watery_heart,tag=!frozen_heart,tag=!hurt,tag=!appear,tag=!vanish,tag=!dying,tag=!captured,tag=!dead] run function luigis_mansion:entities/ghost/hurt/water
+execute if entity @s[tag=in_ice,tag=hurt_by_ice,tag=!burning_heart,tag=!frozen_heart,tag=!hurt,tag=!appear,tag=!vanish,tag=!dying,tag=!captured,tag=!dead] run function luigis_mansion:entities/ghost/hurt/ice
 
 tag @s[tag=stunned,tag=!hurt,tag=!freeze_animation] add stun_freeze_animation
 tag @s[tag=stunned,tag=!hurt] add freeze_animation

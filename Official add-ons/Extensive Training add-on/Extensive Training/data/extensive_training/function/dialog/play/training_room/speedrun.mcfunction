@@ -24,9 +24,10 @@ execute if score #dialog Dialog matches ..6 if entity @a[tag=same_room,tag=skip_
 execute if score #dialog Dialog matches 8..49 if entity @a[tag=same_room,tag=skip_dialog,limit=1] run scoreboard players set #dialog Dialog 50
 execute if score #dialog Dialog matches 51..129 if entity @a[tag=same_room,tag=skip_dialog,limit=1] run scoreboard players set #dialog Dialog 130
 execute if score #dialog Dialog matches 131..209 if entity @a[tag=same_room,tag=skip_dialog,limit=1] run scoreboard players set #dialog Dialog 210
-execute if score #dialog Dialog matches ..9 unless score #dialog Dialog matches 5..6 as @a[tag=same_room,tag=!spectator] unless entity @s[tag=dialog_menu,tag=!dialog_choice_menu] unless entity @s[tag=using_selection_menu,tag=!dialog_menu] run function luigis_mansion:selection_menu/dialog/original_menu
+execute if score #dialog Dialog matches ..213 unless score #dialog Dialog matches 5..6 unless score #dialog Dialog matches 10..210 as @a[tag=same_room,tag=!spectator] unless entity @s[tag=dialog_menu,tag=!dialog_choice_menu] unless entity @s[tag=using_selection_menu,tag=!dialog_menu] run function luigis_mansion:selection_menu/dialog/original_menu
 execute if score #dialog Dialog matches 5..6 as @a[tag=same_room,tag=dialog_menu] run function luigis_mansion:selection_menu/dialog/exit
-execute if score #dialog Dialog matches 10.. as @a[tag=same_room,tag=dialog_menu] run function luigis_mansion:selection_menu/dialog/exit
+execute if score #dialog Dialog matches 10..210 as @a[tag=same_room,tag=dialog_menu] run function luigis_mansion:selection_menu/dialog/exit
+execute if score #dialog Dialog matches 214 as @a[tag=same_room,tag=dialog_menu] run function luigis_mansion:selection_menu/dialog/exit
 
 tag @a[tag=same_room] add prevent_item_lock
 tag @e[tag=same_room] remove freeze_animation
@@ -39,7 +40,6 @@ execute if score #dialog Dialog matches 1..4 as @a[tag=same_room,tag=!spectator,
 execute if score #dialog Dialog matches 1..4 as @e[tag=luigi,tag=same_room] run function luigis_mansion:entities/luigi/animation/set/game_boy_horror
 execute if score #dialog Dialog matches 1..6 as @a[tag=same_room] run function luigis_mansion:other/music/set/training
 execute if score #dialog Dialog matches 1 run stopsound @a[tag=same_room] neutral luigis_mansion:entity.e_gadd.talk.oui_oydohroh_tahmentahkeh2
-execute if score #dialog Dialog matches 1 run scoreboard players set #training_room Selected 3
 execute if score #dialog Dialog matches 1 if score #players Totals matches 1 run tellraw @a[tag=same_room] {type:"translatable",translate:"chat.type.text",with:[{type:"translatable",translate:"luigis_mansion:entity.e_gadd",color:"green"},{type:"translatable",translate:"extensive_training:dialog.speedrun.1",with:[{type:"selector",selector:"@p[tag=!spectator]"}]}]}
 execute if score #dialog Dialog matches 1 if score #players Totals matches 2.. run tellraw @a[tag=same_room] {type:"translatable",translate:"chat.type.text",with:[{type:"translatable",translate:"luigis_mansion:entity.e_gadd",color:"green"},{type:"translatable",translate:"extensive_training:dialog.speedrun.1.more"}]}
 execute if score #dialog Dialog matches 1 as @a[tag=same_room] at @s run playsound luigis_mansion:entity.e_gadd.talk.ohyahmah_luigi_ck_ck neutral @s ~ ~ ~ 1
@@ -48,6 +48,7 @@ execute if score #dialog Dialog matches 3 if score #players Totals matches 1 if 
 execute if score #dialog Dialog matches 3 if score #players Totals matches 2.. if entity @a[tag=next_dialog_line,limit=1] run tellraw @a[tag=same_room] {type:"translatable",translate:"chat.type.text",with:[{type:"translatable",translate:"luigis_mansion:entity.e_gadd",color:"green"},{type:"translatable",translate:"extensive_training:dialog.speedrun.2.more"}]}
 execute if score #dialog Dialog matches 3 if entity @a[tag=next_dialog_line,limit=1] as @a[tag=same_room] at @s run playsound luigis_mansion:entity.e_gadd.talk.hoo_hoo_jeemee_jeemee_kehkeh neutral @s ~ ~ ~ 1
 
+execute if score #dialog Dialog matches 4 run scoreboard players set #training_room Selected 3
 execute if score #dialog Dialog matches 4 store result score #temp Time run data get storage extensive_training:data current_state.speedrun_record
 execute if score #dialog Dialog matches 4 unless score #temp Time matches -1 run function extensive_training:room/training_room/convert_time
 execute if score #dialog Dialog matches 4 unless data storage extensive_training:data current_state{speedrun_record:-1} if score #players Totals matches 1 if entity @a[tag=next_dialog_line,limit=1] run tellraw @a[tag=same_room] {type:"translatable",translate:"chat.type.text",with:[{type:"translatable",translate:"luigis_mansion:entity.e_gadd",color:"green"},{type:"translatable",translate:"extensive_training:dialog.speedrun.3",with:[{type:"score",score:{name:"#temp6",objective:"Time"}},{type:"score",score:{name:"#temp5",objective:"Time"}},{type:"score",score:{name:"#temp4",objective:"Time"}},{type:"score",score:{name:"#temp3",objective:"Time"}},{type:"score",score:{name:"#temp2",objective:"Time"}},{type:"score",score:{name:"#temp",objective:"Time"}}]}]}
@@ -89,7 +90,7 @@ execute if score #dialog Dialog matches 9 if entity @a[tag=next_dialog_line,limi
 execute if score #dialog Dialog matches 50 as @e[tag=luigi,tag=same_room] run function luigis_mansion:entities/luigi/animation/set/none
 execute if score #dialog Dialog matches 50..209 as @a[tag=same_room] run function luigis_mansion:other/music/set/training_results
 scoreboard players operation #training_room Selected < #global_difficulty Selected
-execute if score #dialog Dialog matches 50 if score #training_room Selected matches 1.. run advancement grant @a[tag=same_room,scores={Health=100}] only extensive_training:extensive_training/mastermind
+execute if score #dialog Dialog matches 50 if score #training_room Selected matches 3 run advancement grant @a[tag=same_room] only extensive_training:extensive_training/mastermind
 execute if score #dialog Dialog matches 50 run scoreboard players set @a[tag=same_room] Health 100
 execute if score #dialog Dialog matches 50 run scoreboard players operation #temp Time = #training_room Time
 execute if score #dialog Dialog matches 50 run function extensive_training:room/training_room/convert_time
@@ -154,8 +155,8 @@ execute if score #dialog Dialog matches 211 if score #players Totals matches 1 r
 execute if score #dialog Dialog matches 211 if score #players Totals matches 2.. run tellraw @a[tag=same_room] {type:"translatable",translate:"chat.type.text",with:[{type:"translatable",translate:"luigis_mansion:entity.e_gadd",color:"green"},{type:"translatable",translate:"extensive_training:dialog.speedrun.defeat.1.more"}]}
 execute if score #dialog Dialog matches 211 as @a[tag=same_room] at @s run playsound luigis_mansion:entity.e_gadd.talk.hmmm_nohjeebeedoggy_ohmoogah neutral @s ~ ~ ~ 1
 
-execute if score #dialog Dialog matches 213 run tellraw @a[tag=same_room] {type:"translatable",translate:"chat.type.text",with:[{type:"translatable",translate:"luigis_mansion:entity.e_gadd",color:"green"},{type:"translatable",translate:"extensive_training:dialog.speedrun.defeat.2"}]}
-execute if score #dialog Dialog matches 213 as @a[tag=same_room] at @s run playsound luigis_mansion:entity.e_gadd.talk.oh_tohmah_poheh_jeemee_jeemee neutral @s ~ ~ ~ 1
+execute if score #dialog Dialog matches 213 if entity @a[tag=next_dialog_line,limit=1] run tellraw @a[tag=same_room] {type:"translatable",translate:"chat.type.text",with:[{type:"translatable",translate:"luigis_mansion:entity.e_gadd",color:"green"},{type:"translatable",translate:"extensive_training:dialog.speedrun.defeat.2"}]}
+execute if score #dialog Dialog matches 213 if entity @a[tag=next_dialog_line,limit=1] as @a[tag=same_room] at @s run playsound luigis_mansion:entity.e_gadd.talk.oh_tohmah_poheh_jeemee_jeemee neutral @s ~ ~ ~ 1
 
 execute if score #dialog Dialog matches 214 as @e[tag=luigi,tag=same_room] run function luigis_mansion:entities/luigi/animation/set/none
 execute if score #dialog Dialog matches 214 as @a[tag=same_room] run function luigis_mansion:room/underground_lab/warp_to

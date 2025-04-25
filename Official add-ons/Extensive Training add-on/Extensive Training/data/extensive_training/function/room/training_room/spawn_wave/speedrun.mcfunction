@@ -1,5 +1,5 @@
 scoreboard players add #training_room Wave 1
-scoreboard players reset #training_room ActionTime
+scoreboard players set #training_room ActionTime 1
 execute if score #training_room Wave matches 1 run function extensive_training:room/training_room/spawn_wave/speedrun/1
 execute if score #training_room Wave matches 2 run function extensive_training:room/training_room/spawn_wave/speedrun/2
 execute if score #training_room Wave matches 3 run function extensive_training:room/training_room/spawn_wave/speedrun/3
@@ -20,3 +20,4 @@ execute if score #training_room Wave matches 17 run function extensive_training:
 execute if score #training_room Wave matches 18 run function extensive_training:room/training_room/spawn_wave/speedrun/18
 execute if score #training_room Wave matches 19 run function extensive_training:room/training_room/spawn_wave/speedrun/19
 execute if score #training_room Wave matches 20 run function extensive_training:room/training_room/spawn_wave/speedrun/20
+scoreboard players reset #training_room ActionTime

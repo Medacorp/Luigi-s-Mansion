@@ -10,9 +10,12 @@ Endless:
 Every ghost is worth 1 point, no matter the difficulty in catching them.
 
 Speedun:
-If a ghost escapes, all ghosts vanish, and you have to redo that wave, and the wave before it.
+If one ghost vanishes, all ghosts vanish, and you have to redo that wave, and the wave before it.
+Ghosts do not vanish while chasing you, those listed above still vanish if you're not quick. 
 E. Gadd pauses his timer in between waves; you need to go to the center area to go to the next wave.
 There's 20 waves.
+If you fail a wave, you have to redo the prior wave.
+Ghosts drop small hearts when capturing multiple at once in this training room program.
 
 Player VS Player:
 Every ghost is worth 2 points per 10 HP they have +1 (So a Purple Puncher is worth 5 points a Gold Ghost 3 and a Bowling Ghost 1), with the exception of the tiebreaker which only grants 1 point.
