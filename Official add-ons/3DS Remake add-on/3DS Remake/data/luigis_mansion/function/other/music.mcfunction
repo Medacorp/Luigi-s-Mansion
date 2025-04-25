@@ -1,5 +1,5 @@
 scoreboard players operation #temp Room = @s Room
-execute as @e[tag=!model_piece,tag=!reflection,tag=!furniture] run function luigis_mansion:main/get_same_room
+execute as @e[tag=!model_piece,tag=!reflection] run function luigis_mansion:main/get_same_room
 scoreboard players reset #temp Room
 
 scoreboard players operation @s[scores={HealthMusic=1..}] LastHealthMusic = @s HealthMusic

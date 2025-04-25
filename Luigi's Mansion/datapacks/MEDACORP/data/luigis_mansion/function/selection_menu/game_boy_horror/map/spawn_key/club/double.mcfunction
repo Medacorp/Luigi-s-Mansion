@@ -2,5 +2,6 @@ summon minecraft:armor_stand ~0.5 ~4 ~1.5 {CustomName:{type:"translatable",trans
 scoreboard players set @e[tag=this_entity,limit=1] Room 0
 function luigis_mansion:spawn_entities/setup/tags
 execute if data storage luigis_mansion:data entity{sparkle:1b} run data modify entity @e[tag=this_entity,limit=1] data.particle set value {chance:1,name:"minecraft:crit"}
+execute if data storage luigis_mansion:data entity{sparkle:1b} run tag @e[tag=this_entity,limit=1] add map_focus_key
 data remove storage luigis_mansion:data entity
 tag @e[tag=this_entity,limit=1] remove this_entity

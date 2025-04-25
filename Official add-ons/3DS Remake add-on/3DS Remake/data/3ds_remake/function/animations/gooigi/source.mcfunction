@@ -30,18 +30,15 @@ execute store result entity @s[tag=!moving_backwards] Rotation[0] float 0.001 ru
 tag @s remove moving_backwards
 
 # Move with
-execute rotated as @s run teleport @s[tag=!flipped_gravity,tag=!sneak_pos,tag=!shrunk] ^ ^1.65 ^
-execute rotated as @s run teleport @s[tag=!flipped_gravity,tag=sneak_pos,tag=!shrunk] ^ ^1.4 ^
-execute rotated as @s run teleport @s[tag=!flipped_gravity,tag=!sneak_pos,tag=shrunk] ^ ^0.87 ^
-execute rotated as @s run teleport @s[tag=!flipped_gravity,tag=sneak_pos,tag=shrunk] ^ ^0.78 ^
-execute rotated as @s run teleport @s[tag=flipped_gravity,tag=!sneak_pos,tag=!shrunk] ^ ^-0.6 ^
-execute rotated as @s run teleport @s[tag=flipped_gravity,tag=sneak_pos,tag=!shrunk] ^ ^-0.65 ^
-execute rotated as @s run teleport @s[tag=flipped_gravity,tag=!sneak_pos,tag=shrunk] ^ ^-0.92 ^
-execute rotated as @s run teleport @s[tag=flipped_gravity,tag=sneak_pos,tag=shrunk] ^ ^-0.945 ^
+execute rotated as @s run teleport @s[tag=!flipped_gravity,tag=!low_health,tag=!shrunk] ^ ^1.65 ^
+execute rotated as @s run teleport @s[tag=!flipped_gravity,tag=low_health,tag=!shrunk] ^ ^1.4 ^
+execute rotated as @s run teleport @s[tag=!flipped_gravity,tag=!low_health,tag=shrunk] ^ ^0.87 ^
+execute rotated as @s run teleport @s[tag=!flipped_gravity,tag=low_health,tag=shrunk] ^ ^0.78 ^
+execute rotated as @s run teleport @s[tag=flipped_gravity,tag=!low_health,tag=!shrunk] ^ ^-0.6 ^
+execute rotated as @s run teleport @s[tag=flipped_gravity,tag=low_health,tag=!shrunk] ^ ^-0.65 ^
+execute rotated as @s run teleport @s[tag=flipped_gravity,tag=!low_health,tag=shrunk] ^ ^-0.92 ^
+execute rotated as @s run teleport @s[tag=flipped_gravity,tag=low_health,tag=shrunk] ^ ^-0.945 ^
 execute at @s if entity @a[tag=gooigi,limit=1] run teleport @s[tag=!shrunk] ^ ^ ^-0.25
 execute at @s if entity @a[tag=gooigi,limit=1] run teleport @s[tag=shrunk] ^ ^ ^-0.125
 
-execute unless data storage luigis_mansion:data luigi{swimming:0b,gliding:0b} run teleport @s ~ ~-1 ~
-execute unless data storage luigis_mansion:data luigi{swimming:0b,gliding:0b} if entity @s run data modify entity @s Rotation[1] set from entity @e[tag=gooigi,limit=1] Rotation[1]
-execute unless data storage luigis_mansion:data luigi{swimming:0b,gliding:0b} if entity @s run data modify entity @s Rotation[0] set from entity @e[tag=gooigi,limit=1] Rotation[0]
-execute if data storage luigis_mansion:data luigi{swimming:0b,gliding:0b} if entity @s run data modify entity @s Rotation[1] set value 0.0f
+data modify entity @s Rotation[1] set value 0.0f

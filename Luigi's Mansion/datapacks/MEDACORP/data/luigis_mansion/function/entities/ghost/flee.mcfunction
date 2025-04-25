@@ -5,8 +5,8 @@ execute as @e[tag=luigi,tag=vacuuming_me] run scoreboard players set @s[scores={
 execute store result storage luigis_mansion:data macro.chance int 1 run scoreboard players get @s PullStrength
 function luigis_mansion:entities/ghost/flee_task/pull_chance with storage luigis_mansion:data macro
 tag @s add me
-execute if entity @s[tag=!show_health,tag=!vacuumable,scores={ErrorTime=5..}] as @e[tag=luigi,tag=vacuuming_me,distance=3..] positioned as @s facing entity @e[tag=me,limit=1] feet rotated ~ 0 if block ^ ^ ^0.6 #luigis_mansion:ghosts_ignore if block ^ ^1 ^0.6 #luigis_mansion:ghosts_ignore run tag @s add pulled_by_me
-execute if entity @s[tag=!show_health,tag=!vacuumable] unless entity @s[tag=!always_pull_players,scores={ErrorTime=..4}] as @e[tag=luigi,tag=vacuuming_me,scores={TeleportDelayTimer=0},distance=3..] positioned as @s facing entity @e[tag=me,limit=1] feet rotated ~ 0 run function luigis_mansion:entities/ghost/flee_task/pull_player
+execute if entity @s[tag=!show_health,tag=!vacuumable,scores={ErrorTime=5..}] as @e[tag=luigi,tag=vacuuming_me,distance=4..] positioned as @s facing entity @e[tag=me,limit=1] feet rotated ~ 0 if block ^ ^ ^0.6 #luigis_mansion:ghosts_ignore if block ^ ^1 ^0.6 #luigis_mansion:ghosts_ignore run tag @s add pulled_by_me
+execute if entity @s[tag=!show_health,tag=!vacuumable] unless entity @s[tag=!always_pull_players,scores={ErrorTime=..4}] as @e[tag=luigi,tag=vacuuming_me,scores={TeleportDelayTimer=0},distance=4..] positioned as @s facing entity @e[tag=me,limit=1] feet rotated ~ 0 run function luigis_mansion:entities/ghost/flee_task/pull_player
 tag @s remove me
 execute if entity @s[scores={ErrorTime=5..}] run tag @e[tag=luigi,tag=pulled_by_me] add pulled_by_ghost
 execute unless entity @e[tag=luigi,tag=pulled_by_me] run scoreboard players set @s[scores={ErrorTime=5..}] ErrorTime 0
@@ -22,7 +22,7 @@ execute if entity @s[scores={FleeTask=2}] run function luigis_mansion:entities/g
 execute if entity @s[scores={FleeTask=3}] run function luigis_mansion:entities/ghost/flee_task/random_in_range
 execute if entity @s[scores={FleeTask=4}] run function luigis_mansion:entities/ghost/flee_task/loops
 
-execute at @s[tag=is_pulled,tag=!always_pull_players] unless entity @e[tag=luigi,distance=..3,tag=vacuuming_me,limit=1] run function luigis_mansion:entities/ghost/flee_task/pulled
+execute at @s[tag=is_pulled,tag=!always_pull_players] unless entity @e[tag=luigi,distance=..4,tag=vacuuming_me,limit=1] run function luigis_mansion:entities/ghost/flee_task/pulled
 scoreboard players set @s PulledStrength 0
 tag @s remove always_pull_players
 

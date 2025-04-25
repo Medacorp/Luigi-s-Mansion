@@ -34,7 +34,7 @@ execute if score #dialog Dialog matches 25 run summon minecraft:lightning_bolt 6
 execute if score #dialog Dialog matches 54 run summon minecraft:lightning_bolt 694 100 -65
 execute if score #dialog Dialog matches 1..125 as @e[tag=luigi,tag=this_player,limit=1] run function luigis_mansion:entities/luigi/move/teleport {teleport:"^ ^ ^0.05"}
 execute if score #dialog Dialog matches 126 as @e[tag=luigi,tag=this_player,limit=1] run function luigis_mansion:entities/luigi/move/teleport {teleport:"741 94 8.0 90 0"}
-execute if score #dialog Dialog matches 126..165 as @a[tag=same_room] run function luigis_mansion:entities/player/camera/execute {execute:"positioned 765.0 93.3 21.5 facing entity @e[tag=luigi,tag=this_player,limit=1] feet rotated ~ ~-10",teleport:"~ ~ ~ ~"}
+execute if score #dialog Dialog matches 126..165 as @a[tag=same_room] run function luigis_mansion:entities/player/camera/execute {execute:"positioned 765.0 93.3 21.5 facing entity @e[tag=luigi,tag=this_player,limit=1] feet rotated ~ ~-10",teleport:"~ ~ ~ ~ ~"}
 execute if score #dialog Dialog matches 126..165 as @e[tag=luigi,tag=this_player,limit=1] run function luigis_mansion:entities/luigi/move/teleport {teleport:"^ ^ ^0.05"}
 execute if score #dialog Dialog matches 131 as @e[tag=luigi,tag=this_player,limit=1] run function luigis_mansion:entities/luigi/move/teleport {teleport:"~ ~0.5 ~"}
 execute if score #dialog Dialog matches 151 as @e[tag=luigi,tag=this_player,limit=1] run function luigis_mansion:entities/luigi/move/teleport {teleport:"~ ~0.5 ~"}

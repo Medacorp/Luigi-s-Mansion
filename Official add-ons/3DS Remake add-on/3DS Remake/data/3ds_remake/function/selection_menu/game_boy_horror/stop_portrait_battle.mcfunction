@@ -1,2 +1,2 @@
-tag @s add stop_portrait_battle
+gamemode spectator @s
 function luigis_mansion:selection_menu/game_boy_horror/exit

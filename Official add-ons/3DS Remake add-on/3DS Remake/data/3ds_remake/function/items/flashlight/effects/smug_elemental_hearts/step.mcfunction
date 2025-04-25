@@ -1,3 +1,4 @@
-execute as @e[distance=..3,tag=!smug,tag=!laugh,tag=!vanish,tag=!appear,tag=!hurt_animation,tag=!hurt,tag=!element_hurt,tag=!no_ai,scores={StunTime=0,ElementHurtTime=0}] unless entity @s[tag=!burning_heart,tag=!watery_heart,tag=!frozen_heart] unless entity @s[tag=basher,tag=!visible] at @s run function 3ds_remake:items/flashlight/effects/smug_elemental_hearts/effect
+execute if entity @s[distance=..3,tag=!smug] run function 3ds_remake:items/flashlight/effects/smug_elemental_hearts/effect
 scoreboard players add #temp PathStep 1
 execute unless score #temp PathStep matches 5 positioned ^ ^ ^1 if block ~ ~ ~ #luigis_mansion:flashlight_path run function 3ds_remake:items/flashlight/effects/smug_elemental_hearts/step
+scoreboard players reset #temp PathStep

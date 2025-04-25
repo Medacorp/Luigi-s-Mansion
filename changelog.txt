@@ -57,12 +57,14 @@ v3.3:
 ** Portrait ghosts now hide based on flashlight shine direction
 ** A hidden setting now exists to control the movement from a third-person perspective; this is not guarenteed to be used in the future but has been added in case it will be
 ** The hidden setting also enables 2 new settings: Movement mode (Standard/Sidestep), and (Debug) Phase Through Walls
+* Changed exterior cutscenes to be affected by teleport delay setting
 * Changed menu panorama (no more remnant visuals from old map version)
 * Changed Game Boy Horror's map option to get disabled if in a room where map is not allowed to be opened, rather than trying and failing to open
-* Changed most music track IDs
+* Changed 3DS Remake deer heads to use emissive textures
 * Changed some of Bowser's animations a bit
 * Changed Bowser's size and attack range to more accurately match the original game, compared to the room size
 * Changed mansion rank paintings to use edited screenshots of the build exteriors
+* Changed most music track IDs
 * Changed debug settings to be hidden unless the sendCommandFeedback game rule is set to true
 * Fixed lab map area chunks accidentally removed
 * Fixed exterior dialogs continue counting while the player is not present, locking the player in the exterior if they leave the world during them
@@ -70,24 +72,32 @@ v3.3:
 * Fixed Luigi's arm detatches from the door knob during door unlock animations
 * Fixed softlock when upgrading a world where E. Gadd wasn't found yet
 * Fixed pulling ghosts didn't actually work correctly, it was not strong enough and could cause a server freeze with Jarvis
+* Fixed vacuuming up a mushroom plays capture sound
+* Fixed vacuuming items on the ground makes no bounce sounds
+* Fixed vacuuming up items that make capture sounds doesn't work reliably
 * Fixed collecting a poison mushroom while reeling in a ghost causes server freeze
 * Fixed a few E. Gadd calls were missing the E. Gadd Call music
 * Fixed hidden mansion Study books used health dependent loot chances, rather than 100% defined
 * Fixed Chauncey's screaming head was not showing up
 * Fixed Chauncey's non-mirrored punch animation wrongly loops left arm
+* Fixed the doors in the F1 Bathroom (both sides), Ceramics Studio and Guest Room are non-solid
 * Fixed ball floors rotate flashlight rays, leaving stray light blocks
+* Fixed ball floors don't move items
+* Fixed element medals using wrong bounce sound
 * Fixed Shivers doesn't hold the candelabra when invisible
 * Fixed Shivers' screaming head was not showing up
-* Fixed element medals using wrong bounce sound
+* Fixed Shivers vanishing doesn't move him to the correct position
 * Fixed softlock in the Conservatory
 * Fixed Waiters are not considered optional, meaning letting one vanish after triggering Mr. Luggs won't clear the room (Waiters are still not optional by default though)
 * Fixed Graveyard furniture problems
-* Fixed Black Bogmires don't enter succomb animation (but do die and spawn the shadow ball)
+* Fixed Black Bogmires don't enter succumb animation (but do die and spawn the shadow ball)
 * Fixed F2 Washroom lamp loot had wrong room number
 * Fixed Astral Hall candles don't turn off during the cutscene
 * Fixed clearing Astral Hall doesn't remove trick door behavior
 * Fixed ghosts cannot properly target a position on top of a slab
 * Fixed Slim Bankshot doesn't initially hold the cue when invisible
+* Fixed projector's shadows don't work correctly
+* Fixed 3DS Remake's helicopter mobile was missing a file
 * Fixed softlock when speaking to the Courtyard Toad after clearing the Fortune-Teller's Room
 * Fixed Boolossus' warp to player animation causes models to incorrectly change
 * Fixed Boolossus is not visible until moment before it lands
@@ -95,10 +105,13 @@ v3.3:
 * Fixed capturing a frozen Boolossus doesn't grant ice element
 * Fixed Telephone Room call 2 (denied Toad) is missing a line
 * Fixed Clockwork Soldiers' vanish animations were broken
-* Fixed the doors in the Ceramics Studio and Guest Room are non-solid
 * Fixed Jarvis always picks the same vase during the battle phase
-* Fixed Upside-down haunted objects are actually upside down now
+* Fixed upside-down haunted objects are actually upside down now
 * Fixed Vincent Van Gore held 2 pencils
+* Fixed some missing Luigi sounds during portrificationizing
+* Fixed E3 Demo add-on fails to load
+* Fixed installing 3DS Remake after progress was made doesn't fully handle the install checks properly
+* Fixed installing 3DS Remake while hidden mansion was loaded didn't map over the caught speedy spirits
 * Fixed 3DS Remake's S Rank can be unlocked in normal mansion; a new field has been added to mansion data to control S Rank unlockability
 * Removed entered_mansion command storage flag; mansion entrance music/cutscene now plays for all players' first entry, not just the first player
 * Removed found_e_gadd command storage flag; E. Gadd's spawns are no longer conditional as you cannot go to the lab before going to the mansion anymore, and all other usages were replaced with checking the underground lab cleared state

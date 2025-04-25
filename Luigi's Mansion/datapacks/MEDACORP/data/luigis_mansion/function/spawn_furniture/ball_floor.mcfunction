@@ -1,5 +1,6 @@
 summon minecraft:armor_stand ~ ~0.01 ~ {CustomName:{type:"translatable",translate:"luigis_mansion:furniture.ball_floor"},Pose:{RightArm:[0.0f,0.0f,0.0f]},Marker:1b,NoGravity:1b,Invisible:1b,data:{entity:{namespace:"luigis_mansion",id:"ball_floor"}},equipment:{mainhand:{id:"minecraft:diamond_pickaxe",count:1,components:{"minecraft:item_model":"luigis_mansion:furniture/ball_floor"}}},Tags:["ball_floor","immobile","this_entity"],DisabledSlots:2039583}
 execute store result entity @e[tag=this_entity,limit=1] Rotation[0] float 1 run random value -180..179
+scoreboard players set @e[tag=this_entity,limit=1] Sound 0
 function luigis_mansion:spawn_furniture/setup/room
 function luigis_mansion:spawn_furniture/setup/tags
 function luigis_mansion:spawn_furniture/setup/debug_spawn

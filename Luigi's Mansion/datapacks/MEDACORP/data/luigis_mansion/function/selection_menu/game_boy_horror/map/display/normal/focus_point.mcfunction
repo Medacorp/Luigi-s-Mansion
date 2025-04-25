@@ -1,29 +1,11 @@
-execute if entity @s[scores={OpenMapFocus=1}] run teleport @s 3736 141 -34 facing 3699.0 112 8.0
-execute if entity @s[scores={OpenMapFocus=2}] run teleport @s 3736 141 -34 facing 3683.0 112 1
-execute if entity @s[scores={OpenMapFocus=3}] run teleport @s 3736 141 -34 facing 3702 112 18.0
-execute if entity @s[scores={OpenMapFocus=4}] run teleport @s 3736 141 -34 facing 3699.0 112 51
-execute if entity @s[scores={OpenMapFocus=5}] run teleport @s 3736 141 -34 facing 3706.0 112 42
-execute if entity @s[scores={OpenMapFocus=6}] run teleport @s 3736 91 -34 facing 3706.0 62 8.0
-execute if entity @s[scores={OpenMapFocus=7}] run teleport @s 3736 91 -34 facing 3692 62 -9.0
-execute if entity @s[scores={OpenMapFocus=8}] run teleport @s 3736 91 -34 facing 3683.0 62 -36
-execute if entity @s[scores={OpenMapFocus=9}] run teleport @s 3736 91 -34 facing 3706.0 62 -15
-execute if entity @s[scores={OpenMapFocus=10}] run teleport @s 3736 91 -34 facing 3702 62 38.0
-execute if entity @s[scores={OpenMapFocus=11}] run teleport @s 3736 91 -34 facing 3665.0 62 13
-execute if entity @s[scores={OpenMapFocus=12}] run teleport @s 3736 91 -34 facing 3692 62 -2.0
-execute if entity @s[scores={OpenMapFocus=13}] run teleport @s 3736 91 -34 facing 3654.0 62 21
-execute if entity @s[scores={OpenMapFocus=14}] run teleport @s 3736 91 -34 facing 3654.0 62 -38
-execute if entity @s[scores={OpenMapFocus=15}] run teleport @s 3736 91 -34 facing 3668 62 -16.0
-execute if entity @s[scores={OpenMapFocus=16}] run teleport @s 3736 91 -34 facing 3672.0 62 18
-execute if entity @s[scores={OpenMapFocus=17}] run teleport @s 3736 141 -34 facing 3706.0 112 32
-execute if entity @s[scores={OpenMapFocus=18}] run teleport @s 3736 191 -34 facing 3706.0 162 -21
-execute if entity @s[scores={OpenMapFocus=19}] run teleport @s 3736 191 -34 facing 3683.0 162 -13
-execute if entity @s[scores={OpenMapFocus=20}] run teleport @s 3736 191 -34 facing 3683.0 162 28
-execute if entity @s[scores={OpenMapFocus=21}] run teleport @s 3736 41 -34 facing 3699.0 12 -26
-execute if entity @s[scores={OpenMapFocus=22}] run teleport @s 3736 41 -34 facing 3706.0 12 -26
-execute if entity @s[scores={OpenMapFocus=23}] run teleport @s 3736 191 -34 facing 3699.0 162 -4
-execute if entity @s[scores={OpenMapFocus=24}] run teleport @s 3736 191 -34 facing 3711 162 32.0
-execute if entity @s[scores={OpenMapFocus=25}] run teleport @s 3736 41 -34 facing 3692.0 12 -14
-execute if entity @s[scores={OpenMapFocus=26}] run teleport @s 3736 141 -34 facing 3706.0 112 -17
-execute if entity @s[scores={OpenMapFocus=27}] run teleport @s 3736 41 -34 facing 3712 12 -14.0
-execute if entity @s[scores={OpenMapFocus=28}] run teleport @s 3736 191 -34 facing 3694 162 -16.0
-execute if entity @s[scores={OpenMapFocus=29}] run teleport @s 3736 41 -34 facing 3654.0 12 -18
+execute if entity @s[scores={OpenMapFocus=1..5}] run teleport @s 3736 141 -34
+execute if entity @s[scores={OpenMapFocus=6..16}] run teleport @s 3736 91 -34
+execute if entity @s[scores={OpenMapFocus=17}] run teleport @s 3736 141 -34
+execute if entity @s[scores={OpenMapFocus=18..20}] run teleport @s 3736 191 -34
+execute if entity @s[scores={OpenMapFocus=21..22}] run teleport @s 3736 41 -34
+execute if entity @s[scores={OpenMapFocus=23..24}] run teleport @s 3736 191 -34
+execute if entity @s[scores={OpenMapFocus=25}] run teleport @s 3736 41 -34
+execute if entity @s[scores={OpenMapFocus=26}] run teleport @s 3736 141 -34
+execute if entity @s[scores={OpenMapFocus=27}] run teleport @s 3736 41 -34
+execute if entity @s[scores={OpenMapFocus=28}] run teleport @s 3736 191 -34
+execute if entity @s[scores={OpenMapFocus=29}] run teleport @s 3736 41 -34

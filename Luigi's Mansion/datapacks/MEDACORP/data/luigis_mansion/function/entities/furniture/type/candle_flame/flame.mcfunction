@@ -7,6 +7,8 @@ tag @s[tag=extinguish,tag=cannot_extinguish] add large_flame
 tag @s remove extinguish
 tag @s[tag=!lit,tag=always_burn] add large_flame
 tag @s[tag=large_flame] add lit
+tag @s[tag=lit,tag=in_water] remove large_flame
+scoreboard players reset @s[tag=lit,tag=in_water] ActionTime
 tag @s[tag=lit,tag=in_water] remove lit
 
 execute if entity @s[tag=!lit,tag=was_lit] run data modify entity @s equipment.head.components."minecraft:custom_model_data".floats[0] set value 0f

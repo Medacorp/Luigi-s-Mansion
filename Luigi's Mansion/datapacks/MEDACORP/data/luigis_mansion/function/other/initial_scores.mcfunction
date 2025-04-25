@@ -23,4 +23,4 @@ scoreboard players set @s Shrunk 0
 
 scoreboard players set @s Jukebox 0
 scoreboard players set @s FlashlightType 0
-scoreboard players set @s TeleportDelaySetting 4
+scoreboard players set @s TeleportDelaySetting 2

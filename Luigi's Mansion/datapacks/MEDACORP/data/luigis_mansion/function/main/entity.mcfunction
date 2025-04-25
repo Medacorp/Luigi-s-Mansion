@@ -17,7 +17,7 @@ execute if entity @s[tag=applied_dialog_effects,tag=!in_dialog] run function lui
 tag @s remove in_dialog
 tag @s[scores={MirrorX=-2147483648..},tag=!no_reflection] add mirrored
 tag @s[scores={MirrorZ=-2147483648..},tag=!no_reflection] add mirrored
-execute if entity @s[tag=mirrored] unless entity @s[type=!minecraft:armor_stand,type=!minecraft:item_frame] run function luigis_mansion:entities/reflection/add
+execute if entity @s[tag=mirrored,type=#luigis_mansion:reflected] run function luigis_mansion:entities/reflection/add
 scoreboard players reset @s[tag=!mirrored] ReflectionNr
 tag @s[tag=mirrored] remove mirrored
 scoreboard players reset @s LightX

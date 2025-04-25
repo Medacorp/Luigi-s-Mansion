@@ -39,5 +39,6 @@ teleport @s[scores={AnimationProgress=37}] ^ ^-1.85 ^ ~-252 ~
 teleport @s[scores={AnimationProgress=38}] ^ ^-1.9 ^ ~-288 ~
 teleport @s[scores={AnimationProgress=39}] ^ ^-1.95 ^ ~-324 ~
 teleport @s[scores={AnimationProgress=40..}] ^ ^-2 ^
-data merge entity @s[scores={AnimationProgress=1}] {Pose:{Head:[0.0f,0.0f,0.0f]}}
+data merge entity @s[scores={AnimationProgress=1}] {Pose:{Head:[0.0f,0.0f,-180.0f]}}
+data modify entity @s[scores={AnimationProgress=1}] equipment.head merge from entity @s equipment.head.components."minecraft:custom_data".model_data.awake
 scoreboard players set @s[scores={AnimationProgress=120}] AnimationProgress 0

@@ -152,17 +152,17 @@ execute if score #dialog Dialog matches 955 at @e[tag=e_gadd,tag=same_room,limit
 execute if score #dialog Dialog matches 1055 run tellraw @a[tag=same_room] {type:"translatable",translate:"chat.type.text",with:[{type:"translatable",translate:"luigis_mansion:entity.e_gadd",color:"green"},{type:"translatable",translate:"e3_demo:dialog.meet_e_gadd.8"}]}
 execute if score #dialog Dialog matches 1055 at @e[tag=e_gadd,tag=same_room,limit=1] run playsound luigis_mansion:entity.e_gadd.talk.oui_oydohroh_tahmentahkeh neutral @a[tag=same_room] ~ ~ ~ 1
 execute if score #dialog Dialog matches 1200 run data modify storage luigis_mansion:data entity set value {room:3,no_ai:1b,tags:["same_room","visible","ghost_1","no_dialog_freeze","remove_after_dialog"],animation:{namespace:"luigis_mansion",id:"appear/beta"}}
-execute if score #dialog Dialog matches 1200 positioned 718 20 29 run function e3_demo:spawn_entities/ghost/ghost/white
-execute if score #dialog Dialog matches 1200 run playsound e3_demo:entity.ghost.spawn_beta hostile @a[tag=same_room] 718 20 29 1
+execute if score #dialog Dialog matches 1200 positioned 716 21.5 29 run function e3_demo:spawn_entities/ghost/ghost/white
+execute if score #dialog Dialog matches 1200 run playsound e3_demo:entity.ghost.spawn_beta hostile @a[tag=same_room] 716 21.5 29 1
 execute if score #dialog Dialog matches 1200 as @e[tag=ghost_1,tag=same_room] at @s facing 727.75 20.00 25.50 rotated ~ 0 run teleport @s ~ ~ ~ ~ ~
 execute if score #dialog Dialog matches 1200 run data modify storage luigis_mansion:data entity set value {room:3,no_ai:1b,tags:["same_room","visible","ghost_2","no_dialog_freeze","remove_after_dialog"],animation:{namespace:"luigis_mansion",id:"appear/beta"}}
-execute if score #dialog Dialog matches 1200 positioned 718 20 26 run function e3_demo:spawn_entities/ghost/ghost/white
-execute if score #dialog Dialog matches 1215 run playsound e3_demo:entity.ghost.spawn_beta hostile @a[tag=same_room] 718 20 26 1
+execute if score #dialog Dialog matches 1200 positioned 716 20.75 26 run function e3_demo:spawn_entities/ghost/ghost/white
+execute if score #dialog Dialog matches 1215 run playsound e3_demo:entity.ghost.spawn_beta hostile @a[tag=same_room] 716 20.75 26 1
 execute if score #dialog Dialog matches 1200 as @e[tag=ghost_2,tag=same_room] at @s facing 727.75 20.00 25.50 rotated ~ 0 run teleport @s ~ ~ ~ ~ ~
 execute if score #dialog Dialog matches 1215 run tellraw @a[tag=same_room] {type:"translatable",translate:"chat.type.text",with:[{type:"translatable",translate:"e3_demo:entity.ghost",color:"green"},{type:"translatable",translate:"e3_demo:dialog.meet_e_gadd.9"}]}
 execute if score #dialog Dialog matches 1220 run data modify storage luigis_mansion:data entity set value {room:3,no_ai:1b,tags:["same_room","visible","ghost_3","no_dialog_freeze","remove_after_dialog"],animation:{namespace:"luigis_mansion",id:"appear/beta"}}
-execute if score #dialog Dialog matches 1220 positioned 720 20 27 run function e3_demo:spawn_entities/ghost/ghost/white
-execute if score #dialog Dialog matches 1230 run playsound e3_demo:entity.ghost.spawn_beta hostile @a[tag=same_room] 720 20 27 1
+execute if score #dialog Dialog matches 1220 positioned 717 20 27 run function e3_demo:spawn_entities/ghost/ghost/white
+execute if score #dialog Dialog matches 1230 run playsound e3_demo:entity.ghost.spawn_beta hostile @a[tag=same_room] 717 20 27 1
 execute if score #dialog Dialog matches 1220 as @e[tag=ghost_3,tag=same_room] at @s facing 727.75 20.00 25.50 rotated ~ 0 run teleport @s ~ ~ ~ ~ ~
 execute if score #dialog Dialog matches 1240 run data modify entity @e[tag=ghost_1,tag=same_room,limit=1] data.animation set value {namespace:"luigis_mansion",id:"haunt"}
 execute if score #dialog Dialog matches 1240 run data modify entity @e[tag=ghost_2,tag=same_room,limit=1] data.animation set value {namespace:"luigis_mansion",id:"haunt"}

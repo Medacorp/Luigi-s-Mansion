@@ -32,4 +32,7 @@ execute if score #temp Money matches 5 if data storage luigis_mansion:data curre
 execute if score #temp Money matches 10 if data storage luigis_mansion:data current_state.current_data{lowest_difficulty:3,obtained_items:{king_boos_crown:1b}} run advancement grant @a[tag=same_room] only luigis_mansion:vanilla/spare_some_change
 execute if score #temp Money matches 142390.. run advancement grant @a[tag=same_room] only luigis_mansion:vanilla/making_wario_jealous
 execute if score #temp Money matches 186440.. run advancement grant @a[tag=same_room] only luigis_mansion:vanilla/scrooge_mcduck_it_up
+execute if score #temp Money matches 70000.. if data storage 3ds_remake:data current_state.trophy.normal{task_7:0b} run function 3ds_remake:selection_menu/gallery_trophy/complete/normal/task_7
+execute if score #temp Money matches 100000.. if data storage 3ds_remake:data current_state.trophy.hard{task_4:0b} run function 3ds_remake:selection_menu/gallery_trophy/complete/hard/task_4
+execute if score #temp Money matches 130000.. if data storage luigis_mansion:data current_state.current_data{can_unlock_s_rank:1b} if data storage 3ds_remake:data current_state.trophy.master{task_4:0b} run function 3ds_remake:selection_menu/gallery_trophy/complete/master/task_4
 scoreboard players reset #temp Money

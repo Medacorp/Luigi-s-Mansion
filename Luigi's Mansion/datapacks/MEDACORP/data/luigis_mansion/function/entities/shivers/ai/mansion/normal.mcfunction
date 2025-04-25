@@ -25,6 +25,7 @@ scoreboard players set @s[tag=reached_target] ActionTime 41
 tag @s[tag=reached_target] add visible
 tag @s[tag=reached_target] remove reached_target
 teleport @s[scores={ActionTime=41}] ~ ~ ~ -60 0
+data modify entity @s[scores={ActionTime=41}] Pos set from entity @s data.paths[-1].steps[-1].position
 execute if entity @s[scores={ActionTime=58..81}] run scoreboard players set #temp Move 7
 execute at @s[scores={ActionTime=58..81}] facing 744 11 66 run function luigis_mansion:entities/ghost/move_forward_force
 execute if entity @s[scores={ActionTime=61}] run playsound luigis_mansion:entity.shivers.calm_down hostile @a[tag=same_room] ~ ~ ~ 1

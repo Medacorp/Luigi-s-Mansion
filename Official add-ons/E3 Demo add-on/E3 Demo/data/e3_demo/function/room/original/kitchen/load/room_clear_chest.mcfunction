@@ -1,4 +1,4 @@
-data modify storage luigis_mansion:data furniture set value {room:15,searchable:["time"],cannot_search_when_open:1b,use_medium_shake:1b,sound:{namespace:"luigis_mansion",id:"chest"},no_dust:1b}
+data modify storage luigis_mansion:data furniture set value {room:15,searchable:["time"],cannot_search_when_open:1b,use_medium_shake:1b,sound:{namespace:"luigis_mansion",id:"chest"},no_dust:1b,no_spawn_sound:2b}
 execute store result score #temp Time run data get storage luigis_mansion:data current_state.current_data.rooms.kitchen.time_spent_in
 execute unless data storage luigis_mansion:data current_state.current_data{money_spawned:["kitchen_room_clear_chest"]} run function e3_demo:room/original/room_clear_chest_coins
 scoreboard players reset #temp Time

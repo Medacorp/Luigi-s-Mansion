@@ -1,31 +1,36 @@
 {
     "model": {
-        "type": "minecraft:range_dispatch",
-        "property": "minecraft:custom_model_data",
-        "index": 0,
-        "scale": 1.0,
-        "entries": [
-            {
-                "threshold": 0,
-                "model": {
-                    "type": "minecraft:model",
-                    "model": "luigis_mansion:furniture/deer_head"
-                }
-            },
-            {
-                "threshold": 1,
-                "model": {
-                    "type": "minecraft:model",
-                    "model": "3ds_remake:furniture/deer_head/blue"
-                }
-            },
-            {
-                "threshold": 2,
-                "model": {
-                    "type": "minecraft:model",
-                    "model": "3ds_remake:furniture/deer_head/red"
-                }
-            }
-        ]
+        "type": "minecraft:composite",
+		"models": [
+			{
+				"type": "minecraft:model",
+				"model": "luigis_mansion:furniture/deer_head"
+			},
+			{
+				"type": "minecraft:range_dispatch",
+				"property": "minecraft:custom_model_data",
+				"index": 0,
+				"scale": 1.0,
+				"entries": [
+					{
+						"threshold": 1,
+						"model": {
+							"type": "minecraft:model",
+							"model": "3ds_remake:furniture/deer_head/blue"
+						}
+					},
+					{
+						"threshold": 2,
+						"model": {
+							"type": "minecraft:model",
+							"model": "3ds_remake:furniture/deer_head/red"
+						}
+					}
+				],
+				"fallback": {
+					"type": "minecraft:empty"
+				}
+			}
+		]
     }
 }

@@ -11,7 +11,7 @@ execute if data storage luigis_mansion:data damage.attacker if entity @s[scores=
 execute if data storage luigis_mansion:data damage.attacker if data storage luigis_mansion:data new_attacker run function luigis_mansion:entities/player/memory/refresh_attacker with storage luigis_mansion:data
 execute if data storage luigis_mansion:data damage.animation unless data storage luigis_mansion:data damage.animation.macro run function luigis_mansion:entities/luigi/damage/animation with storage luigis_mansion:data damage.animation
 execute if data storage luigis_mansion:data damage.animation.macro run function luigis_mansion:entities/luigi/damage/animation_macro with storage luigis_mansion:data damage.animation
-execute if entity @s[scores={Damage=1..,Invulnerable=0},gamemode=!creative,gamemode=!spectator] run function luigis_mansion:entities/luigi/damage/hurt
+execute if entity @s[scores={Damage=1..,Invulnerable=0},tag=!creative] run function luigis_mansion:entities/luigi/damage/hurt
 execute if data storage luigis_mansion:data damage.limit_health store result score @s Damage run data get storage luigis_mansion:data damage.limit_health
 execute if data storage luigis_mansion:data damage.limit_health unless score #global_difficulty Selected matches 0 run scoreboard players operation @s MaxHealth < @s Damage
 execute if data storage luigis_mansion:data damage.limit_health run scoreboard players reset @s Damage

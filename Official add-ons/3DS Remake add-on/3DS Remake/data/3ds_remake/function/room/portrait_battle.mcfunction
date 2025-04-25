@@ -1,8 +1,6 @@
 execute store result score #temp Time run data get storage luigis_mansion:data current_state.current_data.lowest_difficulty
 execute store result storage luigis_mansion:data current_state.current_data.lowest_difficulty int 1 run scoreboard players operation #temp Time < #global_difficulty Selected
 scoreboard players reset #temp Time
-gamemode spectator @s[tag=stop_portrait_battle]
-tag @s remove stop_portrait_battle
 
 scoreboard players operation #temp Room = @s Room
 execute as @e[tag=!model_piece,tag=!reflection,tag=!furniture] unless entity @s[tag=!portrait_ghost,type=!minecraft:player] run function luigis_mansion:main/get_same_room

@@ -4,9 +4,6 @@ execute if entity @s[tag=using_selection_menu,tag=!selection_menu_free_to_move] 
 
 scoreboard players remove @s TeleportDelayTimer 1
 scoreboard players operation @s[scores={TeleportDelayTimer=-1}] TeleportDelayTimer = @s TeleportDelaySetting
-scoreboard players set @s[tag=separated_camera] TeleportDelayTimer 0
-execute if entity @s[tag=separated_camera] run scoreboard players operation #remember_setting TeleportDelaySetting = @s TeleportDelaySetting
-scoreboard players set @s[tag=separated_camera] TeleportDelaySetting 0
 
 tag @s add player
 tag @s[tag=camera,gamemode=!spectator] remove spectator
@@ -87,8 +84,6 @@ scoreboard players reset @s LightZ
 tag @s remove was_in_dialog
 tag @s[tag=in_dialog] add was_in_dialog
 tag @s remove in_dialog
-execute if score #remember_setting TeleportDelaySetting matches 1.. run scoreboard players operation @s TeleportDelaySetting = #remember_setting TeleportDelaySetting
-scoreboard players reset #remember_setting TeleportDelaySetting
 
 tag @s add me
 execute as @a[distance=..0.4,tag=!me,tag=!spectator,tag=!door_animation,limit=1] run function luigis_mansion:entities/player/collide

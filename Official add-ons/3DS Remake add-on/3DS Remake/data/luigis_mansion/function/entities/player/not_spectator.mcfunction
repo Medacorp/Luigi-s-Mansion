@@ -24,6 +24,7 @@ effect give @s[scores={Food=..0}] minecraft:saturation 1 0 true
 tag @s[tag=!dead_player] remove spectator
 tag @s[tag=third_person_movement] add separated_camera
 tag @s[tag=!third_person_movement,tag=!fully_separated_camera] remove separated_camera
+execute if entity @s[tag=fully_separated_camera,scores={TeleportDelayTimer=0}] run function luigis_mansion:entities/player/camera/sync
 
 effect give @s[tag=!camera] minecraft:invisibility infinite 0 true
 execute if entity @s[tag=!has_luigi,tag=!dead_player,tag=!camera,tag=!gooigi] if loaded ~ ~ ~ run function luigis_mansion:spawn_entities/luigi

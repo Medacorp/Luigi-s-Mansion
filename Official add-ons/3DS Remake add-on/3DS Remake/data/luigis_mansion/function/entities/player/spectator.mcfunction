@@ -15,7 +15,8 @@ execute if entity @s[tag=!has_luigi,tag=dead_player,tag=!gooigi] if score #can_r
 execute if entity @s[tag=dead_player] if score #can_revive Selected matches 1 unless entity @e[tag=this_model,limit=1] run function luigis_mansion:room/underground_lab/warp_to
 scoreboard players reset #temp ID
 tag @e[tag=this_model] remove this_model
-execute if entity @s[tag=!separated_camera,tag=dead_player] run function luigis_mansion:entities/player/camera/separate
+execute if entity @s[tag=!fully_separated_camera,tag=dead_player] run function luigis_mansion:entities/player/camera/separate
+execute if entity @s[tag=fully_separated_camera,scores={TeleportDelayTimer=0}] run function luigis_mansion:entities/player/camera/sync
 
 scoreboard players set @s[tag=dead_player] Health 0
 

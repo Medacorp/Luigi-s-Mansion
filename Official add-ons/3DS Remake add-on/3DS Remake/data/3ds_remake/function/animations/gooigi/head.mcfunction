@@ -1,13 +1,12 @@
-tag @s[tag=low_health] add sneak_pos
 # Move with
-teleport @s[tag=!sneak_pos,tag=!shrunk,tag=!flipped_gravity] ^ ^-1.67 ^
-teleport @s[tag=sneak_pos,tag=!shrunk,tag=!flipped_gravity] ^ ^-1.73 ^
-teleport @s[tag=!sneak_pos,tag=shrunk,tag=!flipped_gravity] ^ ^-0.88 ^
-teleport @s[tag=sneak_pos,tag=shrunk,tag=!flipped_gravity] ^ ^-0.94 ^
-teleport @s[tag=!sneak_pos,tag=!shrunk,tag=flipped_gravity] ^ ^-0.42 ^
-teleport @s[tag=sneak_pos,tag=!shrunk,tag=flipped_gravity] ^ ^-0.36 ^
-teleport @s[tag=!sneak_pos,tag=shrunk,tag=flipped_gravity] ^ ^0.39 ^
-teleport @s[tag=sneak_pos,tag=shrunk,tag=flipped_gravity] ^ ^0.45 ^
+teleport @s[tag=!low_health,tag=!shrunk,tag=!flipped_gravity] ^ ^-1.67 ^
+teleport @s[tag=low_health,tag=!shrunk,tag=!flipped_gravity] ^ ^-1.73 ^
+teleport @s[tag=!low_health,tag=shrunk,tag=!flipped_gravity] ^ ^-0.88 ^
+teleport @s[tag=low_health,tag=shrunk,tag=!flipped_gravity] ^ ^-0.94 ^
+teleport @s[tag=!low_health,tag=!shrunk,tag=flipped_gravity] ^ ^-0.42 ^
+teleport @s[tag=low_health,tag=!shrunk,tag=flipped_gravity] ^ ^-0.36 ^
+teleport @s[tag=!low_health,tag=shrunk,tag=flipped_gravity] ^ ^0.39 ^
+teleport @s[tag=low_health,tag=shrunk,tag=flipped_gravity] ^ ^0.45 ^
 
 data modify entity @s[tag=was_flipped,tag=!flipped_gravity] Pose.Head[2] set value 0.0f
 data modify entity @s[tag=!was_flipped,tag=flipped_gravity] Pose.Head[2] set value -180.0f

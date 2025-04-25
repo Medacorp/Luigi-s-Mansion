@@ -6,8 +6,6 @@ execute if score #dialog Dialog matches 2 as @a[tag=same_room,tag=!spectator,tag
 execute if score #dialog Dialog matches 1 as @a[tag=same_room,tag=dialog_menu] run function luigis_mansion:selection_menu/dialog/exit
 execute if score #dialog Dialog matches 3.. as @a[tag=same_room,tag=dialog_menu] run function luigis_mansion:selection_menu/dialog/exit
 
-execute store result bossbar 3ds_remake:portrait_battle max run data get storage 3ds_remake:data loaded_mansion.high_scores.speed
-execute if data storage 3ds_remake:data loaded_mansion.high_scores{speed:-1} run bossbar set 3ds_remake:portrait_battle max 2147483647
 tag @e[tag=furniture,tag=door,tag=!blockade,scores={Room=1..}] remove blockade_sounds_can_play
 tag @e[tag=furniture,tag=door,tag=!blockade,scores={Room=1..}] remove no_ai
 tag @e[tag=furniture,tag=door,tag=!blockade,scores={Room=1..}] remove freeze_animation
@@ -15,6 +13,11 @@ tag @e[tag=furniture,tag=door,tag=!blockade,scores={Room=1..}] add blockade
 tag @a[tag=same_room] add prevent_item_lock
 scoreboard players reset @a[tag=same_room,tag=!spectator] WarpTime
 execute as @a[tag=same_room,tag=!spectator,tag=game_boy_horror_menu] run function luigis_mansion:selection_menu/game_boy_horror/exit
+execute if score #dialog Dialog matches 1 run bossbar set 3ds_remake:portrait_battle max 2147483647
+execute if score #dialog Dialog matches 1 if score #global_difficulty Selected matches 0 if data storage 3ds_remake:data loaded_mansion.high_scores.peaceful.speed store result bossbar 3ds_remake:portrait_battle max run data get storage 3ds_remake:data loaded_mansion.high_scores.peaceful.speed
+execute if score #dialog Dialog matches 1 if score #global_difficulty Selected matches 1 if data storage 3ds_remake:data loaded_mansion.high_scores.easy.speed store result bossbar 3ds_remake:portrait_battle max run data get storage 3ds_remake:data loaded_mansion.high_scores.easy.speed
+execute if score #dialog Dialog matches 1 if score #global_difficulty Selected matches 2 if data storage 3ds_remake:data loaded_mansion.high_scores.normal.speed store result bossbar 3ds_remake:portrait_battle max run data get storage 3ds_remake:data loaded_mansion.high_scores.normal.speed
+execute if score #dialog Dialog matches 1 if score #global_difficulty Selected matches 3 if data storage 3ds_remake:data loaded_mansion.high_scores.hard.speed store result bossbar 3ds_remake:portrait_battle max run data get storage 3ds_remake:data loaded_mansion.high_scores.hard.speed
 execute if score #dialog Dialog matches 1..22 as @e[tag=luigi,tag=same_room] run function luigis_mansion:entities/luigi/animation/set/idle_no_poltergust
 execute if score #dialog Dialog matches 1..22 as @a[tag=same_room] run function luigis_mansion:other/music/set/non_overwritten_silence
 

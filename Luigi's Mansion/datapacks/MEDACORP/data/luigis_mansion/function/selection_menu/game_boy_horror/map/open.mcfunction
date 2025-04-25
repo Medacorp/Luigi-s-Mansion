@@ -4,7 +4,7 @@ execute store result score @s HomeZ run data get entity @s Pos[2] 100
 execute store result score @s HomeRotationX run data get entity @s Rotation[0]
 execute store result score @s HomeRotationY run data get entity @s Rotation[1]
 tag @s[tag=!separated_camera] add camera_seperated_by_game_boy_horror
-execute if entity @s[tag=!separated_camera] run function luigis_mansion:entities/player/camera/separate
+execute if entity @s[tag=!fully_separated_camera] run function luigis_mansion:entities/player/camera/separate
 execute if entity @s[scores={Room=..-1}] run function #luigis_mansion:selection_menu/game_boy_horror/map/lab_warp
 execute if entity @s[scores={Room=1..}] run function luigis_mansion:selection_menu/game_boy_horror/map/display/mansion with storage luigis_mansion:data current_state.current_data.mansion_id
 tag @s add looking_at_map

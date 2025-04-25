@@ -1,13 +1,12 @@
-tag @s[tag=low_health] add sneak_pos
 # Move with
 teleport @s[tag=!shrunk,tag=!flipped_gravity] ^-0.11 ^-2.34 ^ ~ ~
 teleport @s[tag=shrunk,tag=!flipped_gravity] ^-0.06 ^-1.22 ^ ~ ~
 teleport @s[tag=!shrunk,tag=flipped_gravity] ^0.11 ^0.21 ^ ~ ~
 teleport @s[tag=shrunk,tag=flipped_gravity] ^0.06 ^0.73 ^ ~ ~
 
-execute at @s run teleport @s[tag=sneak_pos,tag=!shrunk] ^ ^ ^-0.2 ~ ~
-execute at @s run teleport @s[tag=sneak_pos,tag=shrunk] ^ ^ ^-0.15 ~ ~
-data modify entity @s[tag=was_flipped,tag=!flipped_gravity] Pose.Head[2] set value 0.0f
+execute at @s run teleport @s[tag=low_health,tag=!shrunk] ^ ^ ^-0.2 ~ ~
+execute at @s run teleport @s[tag=low_health,tag=shrunk] ^ ^ ^-0.15 ~ ~
+data modify entity @s[tag=was_flipped,tag=!flipped_gravity] Pose.Head[2] set value 0.001f
 data modify entity @s[tag=!was_flipped,tag=flipped_gravity] Pose.Head[2] set value -180.0f
 
 # Move animations

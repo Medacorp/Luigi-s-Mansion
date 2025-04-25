@@ -1,2 +1,2 @@
 scoreboard players add @s AnimationProgress 1
-data modify entity @s equipment.head merge from storage luigis_mansion:data luigi.poltergust.components."minecraft:custom_data".model_data.body_idle_right
+data modify entity @s equipment.head merge from storage luigis_mansion:data luigi.inventory[{components:{"minecraft:custom_data":{is_poltergust:1b}}}].components."minecraft:custom_data".model_data.body_idle_right

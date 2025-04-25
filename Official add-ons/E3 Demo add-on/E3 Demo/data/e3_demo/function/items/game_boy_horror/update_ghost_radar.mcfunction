@@ -1,5 +1,5 @@
 execute as @e[tag=ghost,tag=!vacuumable,tag=!empty_marker,tag=same_room,nbt=!{data:{entity:{namespace:"luigis_mansion",id:"haunted_object"}}},distance=..8] unless entity @s[tag=hidden,tag=!can_spawn] run tag @s add radar_detect
-execute unless entity @e[tag=radar_detect,limit=1] if entity @s[nbt=!{Inventory:[{components:{"minecraft:custom_model_data":{strings:["on"]},"minecraft:custom_data":{namespace:"luigis_mansion",id:"game_boy_horror"}}}]}] run function luigis_mansion:items/game_boy_horror/turn_radar_on
+execute unless entity @e[tag=radar_detect,limit=1] if entity @s[nbt=!{data:{inventory:[{components:{"minecraft:custom_model_data":{strings:["on"]},"minecraft:custom_data":{namespace:"luigis_mansion",id:"game_boy_horror"}}}]}}] run function luigis_mansion:items/game_boy_horror/turn_radar_to_value {value:"on"}
 execute if entity @e[tag=radar_detect,limit=1] run function luigis_mansion:items/game_boy_horror/trigger_radar
-execute if entity @s[nbt={Inventory:[{components:{"minecraft:custom_model_data":{strings:["clock"]},"minecraft:custom_data":{namespace:"luigis_mansion",id:"game_boy_horror"}}}]}] run function luigis_mansion:items/game_boy_horror/clock_ghost_radar
+execute if entity @s[nbt={data:{inventory:[{components:{"minecraft:custom_model_data":{strings:["clock"]},"minecraft:custom_data":{namespace:"luigis_mansion",id:"game_boy_horror"}}}]}}] run function luigis_mansion:items/game_boy_horror/clock_ghost_radar
 tag @e[tag=radar_detect] remove radar_detect

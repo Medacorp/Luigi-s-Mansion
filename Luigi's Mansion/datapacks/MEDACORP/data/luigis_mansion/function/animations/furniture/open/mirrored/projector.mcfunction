@@ -1,5 +1,5 @@
 scoreboard players add @s ActionTime 1
-data modify entity @s[scores={ActionTime=1}] Pose set from entity @s data.default_orientation
+data modify entity @s[scores={ActionTime=2}] Pose set from entity @s data.default_orientation
 execute store result score #temp Time run data get entity @s Pose.Head[2]
 execute if entity @s[scores={ActionTime=2..3}] store result entity @s Pose.Head[2] float 1 run scoreboard players remove #temp Time 4
 execute if entity @s[scores={ActionTime=4..7}] store result entity @s Pose.Head[2] float 1 run scoreboard players add #temp Time 4

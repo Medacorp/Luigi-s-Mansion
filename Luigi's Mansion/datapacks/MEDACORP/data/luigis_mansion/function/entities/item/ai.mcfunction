@@ -15,6 +15,6 @@ scoreboard players reset #temp MirrorX
 scoreboard players reset #temp MirrorZ
 
 execute at @s[tag=picked_up,tag=!dead] run function luigis_mansion:entities/item/picked_up with entity @s data.item
-tag @s[tag=picked_up] add dead
+tag @s[tag=picked_up,tag=!captured] add dead
 tag @e[tag=collector] remove collector
 $execute at @s run teleport @s ~ ~-$(physics_offset) ~

@@ -1,6 +1,41 @@
 {
-	"parent": "luigis_mansion:furniture/deer_head",
+	"credit": "Made with Blockbench",
 	"textures": {
-		"0": "3ds_remake:furniture/deer_head/blue"
+		"0": "3ds_remake:furniture/deer_head/blue",
+		"particle": "#0"
+	},
+	"elements": [
+		{
+			"from": [10, 6.85, 2.3],
+			"to": [11, 8.85, 4.3],
+			"light_emission": 15,
+			"rotation": {"angle": 45, "axis": "x", "origin": [9, 10.1, 2.8]},
+			"faces": {
+				"north": {"uv": [4, 4, 6, 8], "texture": "#0"},
+				"east": {"uv": [0, 4, 4, 8], "texture": "#0"},
+				"south": {"uv": [10, 4, 12, 8], "texture": "#0"},
+				"up": {"uv": [4, 0, 6, 4], "rotation": 180, "texture": "#0"},
+				"down": {"uv": [6, 0, 8, 4], "texture": "#0"}
+			}
+		},
+		{
+			"from": [5, 6.85, 2.3],
+			"to": [6, 8.85, 4.3],
+			"light_emission": 15,
+			"rotation": {"angle": 45, "axis": "x", "origin": [4, 10.1, 2.8]},
+			"faces": {
+				"north": {"uv": [4, 12, 6, 16], "texture": "#0"},
+				"south": {"uv": [10, 12, 12, 16], "texture": "#0"},
+				"west": {"uv": [6, 12, 10, 16], "texture": "#0"},
+				"up": {"uv": [4, 8, 6, 12], "rotation": 180, "texture": "#0"},
+				"down": {"uv": [6, 8, 8, 12], "texture": "#0"}
+			}
+		}
+	],
+	"display": {
+		"head": {
+			"translation": [0, -0.75, -0.75],
+			"scale": [1.6, 1.6, 1.6]
+		}
 	}
 }

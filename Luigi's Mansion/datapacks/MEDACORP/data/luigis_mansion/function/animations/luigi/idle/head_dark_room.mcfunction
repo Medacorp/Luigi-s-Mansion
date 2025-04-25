@@ -32,3 +32,4 @@ data modify entity @s Rotation[1] set value 0.0f
 execute store result entity @s Rotation[0] float 1 run scoreboard players get #temp Time
 scoreboard players reset #temp Time
 scoreboard players reset #temp2 Time
+data modify entity @s equipment.head merge from entity @s equipment.head.components."minecraft:custom_data".model_data.scared

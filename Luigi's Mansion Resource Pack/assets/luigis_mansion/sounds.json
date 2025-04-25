@@ -9515,6 +9515,14 @@
         ],
         "subtitle": "luigis_mansion:subtitles.item.big_pearl.spawn"
     },
+    "item.bill.bounce": {
+        "sounds": [
+            {
+                "name": "luigis_mansion:no_sound",
+                "stream": false
+            }
+        ]
+    },
     "item.bill.obtain": {
         "sounds": [
             {
