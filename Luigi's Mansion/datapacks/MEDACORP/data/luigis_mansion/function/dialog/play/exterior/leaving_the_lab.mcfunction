@@ -52,6 +52,7 @@ execute if score #dialog Dialog matches 236 as @a[tag=same_room] run function lu
 execute if score #dialog Dialog matches 236..360 as @a[tag=same_room] run function luigis_mansion:entities/player/camera/execute {execute:"at @s rotated -90 0",teleport:"^0.001 ^ ^ ~ ~"}
 execute if score #dialog Dialog matches 250 run data modify entity @e[tag=door,tag=same_room,tag=creacking_door,limit=1] data.animation set value {namespace:"luigis_mansion",id:"crack_open"}
 execute if score #dialog Dialog matches 255..274 as @e[tag=luigi,tag=this_player,limit=1] run function luigis_mansion:entities/luigi/move/teleport {teleport:"~ ~ ~-0.025"}
+execute if score #dialog Dialog matches 318 as @e[tag=luigi,tag=this_player,limit=1] run function luigis_mansion:entities/luigi/make_sound/simple {sound:"luigis_mansion:item.flashlight.on"}
 execute if score #dialog Dialog matches 361 as @a[tag=same_room] run function luigis_mansion:entities/player/camera/reset
 execute if score #dialog Dialog matches 361 as @a[tag=this_player,limit=1] run function luigis_mansion:room/exterior/enter_mansion with storage luigis_mansion:data current_state.current_data.mansion_id
 execute if score #dialog Dialog matches 361 as @a[tag=same_room,tag=spectator] run function luigis_mansion:room/exterior/enter_mansion with storage luigis_mansion:data current_state.current_data.mansion_id

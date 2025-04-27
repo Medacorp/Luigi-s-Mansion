@@ -75,6 +75,7 @@ playsound luigis_mansion:music.boss.bogmire_intro music @s[scores={MusicType=16}
 scoreboard players set @s[scores={MusicType=16}] Music 660
 playsound luigis_mansion:music.boss.boolossus_intro music @s[scores={MusicType=17}] ~ ~ ~ 1000
 scoreboard players set @s[scores={MusicType=17}] Music 372
+scoreboard players set @s[scores={MusicType=17}] MusicSpeed -1
 playsound luigis_mansion:music.boss.king_boo_intro music @s[scores={MusicType=18}] ~ ~ ~ 1000
 scoreboard players set @s[scores={MusicType=18}] Music 642
 playsound luigis_mansion:music.king_boo_warp_intro music @s[scores={MusicType=20}] ~ ~ ~ 1000

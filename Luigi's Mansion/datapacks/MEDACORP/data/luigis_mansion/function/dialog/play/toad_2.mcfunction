@@ -13,7 +13,7 @@ tag @e[tag=toad,tag=same_room,limit=1] remove freeze_animation
 tag @e[tag=toad,tag=same_room,limit=1] remove no_ai
 execute if score #dialog Dialog matches 1..26 as @e[tag=luigi,tag=same_room] run function luigis_mansion:entities/luigi/animation/set/idle_no_poltergust
 execute if score #dialog Dialog matches 1..46 as @a[tag=same_room] run function luigis_mansion:other/music/set/toad
-execute if score #dialog Dialog matches 1 at @e[tag=toad,tag=same_room,limit=1] run playsound luigis_mansion:entity.toad.cry_0 neutral @a[tag=same_room] ~ ~ ~ 1
+execute if score #dialog Dialog matches 1 run data modify entity @e[tag=toad,tag=same_room,limit=1] data.sound set value "cry_0"
 execute if score #dialog Dialog matches 1 run tellraw @a[tag=same_room] {type:"translatable",translate:"chat.type.text",with:[{type:"translatable",translate:"luigis_mansion:entity.toad",color:"green"},{type:"translatable",translate:"luigis_mansion:dialog.toad_2.1"}]}
 
 execute if score #dialog Dialog matches 3 if score #players Totals matches 1 if entity @a[tag=same_room,tag=next_dialog_line,limit=1] run tellraw @a[tag=same_room] {type:"translatable",translate:"chat.type.text",with:[{type:"translatable",translate:"luigis_mansion:entity.toad",color:"green"},{type:"translatable",translate:"luigis_mansion:dialog.toad_2.2",with:[{type:"selector",selector:"@p[tag=!spectator]"}]}]}
@@ -21,7 +21,7 @@ execute if score #dialog Dialog matches 3 if score #players Totals matches 2.. i
 
 execute if score #dialog Dialog matches 4 run data remove entity @e[tag=toad,tag=same_room,limit=1] data.animation
 execute if score #dialog Dialog matches 4 if entity @a[tag=same_room,tag=next_dialog_line,limit=1] run stopsound @a[tag=same_room] neutral luigis_mansion:entity.toad.cry_0
-execute if score #dialog Dialog matches 4 if entity @a[tag=same_room,tag=next_dialog_line,limit=1] at @e[tag=toad,tag=same_room,limit=1] run playsound luigis_mansion:entity.toad.wow neutral @a[tag=same_room] ~ ~ ~ 1
+execute if score #dialog Dialog matches 4 if entity @a[tag=same_room,tag=next_dialog_line,limit=1] run data modify entity @e[tag=toad,tag=same_room,limit=1] data.sound set value "wow"
 execute if score #dialog Dialog matches 4 if score #players Totals matches 1 if entity @a[tag=same_room,tag=next_dialog_line,limit=1] run tellraw @a[tag=same_room] {type:"translatable",translate:"chat.type.text",with:[{type:"translatable",translate:"luigis_mansion:entity.toad",color:"green"},{type:"translatable",translate:"luigis_mansion:dialog.toad_2.3",with:[{type:"selector",selector:"@p[tag=!spectator]"}]}]}
 execute if score #dialog Dialog matches 4 if score #players Totals matches 2.. if entity @a[tag=same_room,tag=next_dialog_line,limit=1] run tellraw @a[tag=same_room] {type:"translatable",translate:"chat.type.text",with:[{type:"translatable",translate:"luigis_mansion:entity.toad",color:"green"},{type:"translatable",translate:"luigis_mansion:dialog.toad_2.3.more"}]}
 

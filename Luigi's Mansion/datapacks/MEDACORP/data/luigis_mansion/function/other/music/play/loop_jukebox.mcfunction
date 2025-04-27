@@ -22,14 +22,10 @@ playsound luigis_mansion:music.mansion.room.whirlindas music @s[scores={Jukebox=
 scoreboard players set @s[scores={Jukebox=13}] Music 510
 playsound luigis_mansion:music.area_boss_defeated music @s[scores={Jukebox=14}] ~ ~ ~ 1000
 scoreboard players set @s[scores={Jukebox=14}] Music 192
-playsound luigis_mansion:music.boss.chauncey music @s[scores={Jukebox=15}] ~ ~ ~ 1000
-scoreboard players set @s[scores={Jukebox=15}] Music 993
-playsound luigis_mansion:music.boss.bogmire music @s[scores={Jukebox=16}] ~ ~ ~ 1000
-scoreboard players set @s[scores={Jukebox=16}] Music 861
-playsound luigis_mansion:music.boss.boolossus music @s[scores={Jukebox=17}] ~ ~ ~ 1000
-scoreboard players set @s[scores={Jukebox=17}] Music 686
-playsound luigis_mansion:music.boss.king_boo music @s[scores={Jukebox=18}] ~ ~ ~ 1000
-scoreboard players set @s[scores={Jukebox=18}] Music 1130
+execute if entity @s[scores={Jukebox=15}] run function luigis_mansion:other/music/play/loop_jukebox/chauncey_battle
+execute if entity @s[scores={Jukebox=16}] run function luigis_mansion:other/music/play/loop_jukebox/bogmire_battle
+execute if entity @s[scores={Jukebox=17}] run function luigis_mansion:other/music/play/loop_jukebox/boolossus_battle
+execute if entity @s[scores={Jukebox=18}] run function luigis_mansion:other/music/play/loop_jukebox/king_boo_battle
 playsound luigis_mansion:music.game_boy_horror music @s[scores={Jukebox=19}] ~ ~ ~ 1000
 scoreboard players set @s[scores={Jukebox=19}] Music 831
 playsound luigis_mansion:music.king_boo_warp music @s[scores={Jukebox=20}] ~ ~ ~ 1000
@@ -56,14 +52,7 @@ playsound luigis_mansion:music.catching.boo music @s[scores={Jukebox=30}] ~ ~ ~ 
 scoreboard players set @s[scores={Jukebox=30}] Music 378
 playsound luigis_mansion:music.king_boo_theme music @s[scores={Jukebox=31}] ~ ~ ~ 1000
 scoreboard players set @s[scores={Jukebox=31}] Music 232
-playsound luigis_mansion:music.boss.catching_chauncey music @s[scores={Jukebox=32}] ~ ~ ~ 1000
-scoreboard players set @s[scores={Jukebox=32}] Music 855
-playsound luigis_mansion:music.boss.catching_bogmire music @s[scores={Jukebox=33}] ~ ~ ~ 1000
-scoreboard players set @s[scores={Jukebox=33}] Music 841
-playsound luigis_mansion:music.boss.boolossus_split music @s[scores={Jukebox=34}] ~ ~ ~ 1000
-scoreboard players set @s[scores={Jukebox=34}] Music 686
-playsound luigis_mansion:music.boss.catching_king_boo music @s[scores={Jukebox=35}] ~ ~ ~ 1000
-scoreboard players set @s[scores={Jukebox=35}] Music 768
+# @s[scores={Jukebox=32..35}]
 playsound luigis_mansion:music.danger music @s[scores={Jukebox=36}] ~ ~ ~ 1000
 scoreboard players set @s[scores={Jukebox=36}] Music 172
 playsound luigis_mansion:music.mini_game music @s[scores={Jukebox=37}] ~ ~ ~ 1000

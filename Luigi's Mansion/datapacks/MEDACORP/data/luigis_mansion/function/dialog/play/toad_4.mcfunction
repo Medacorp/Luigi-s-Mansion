@@ -42,7 +42,7 @@ execute if score #dialog Dialog matches 7 as @e[tag=luigi,tag=same_room] run fun
 
 #Branch: Yes
 execute if score #dialog Dialog matches 8 as @e[tag=luigi,tag=same_room] run function luigis_mansion:entities/luigi/animation/set/enthusiiastic
-execute if score #dialog Dialog matches 8 at @e[tag=toad,tag=same_room,limit=1] run playsound luigis_mansion:entity.toad.wow neutral @a[tag=same_room] ~ ~ ~ 1
+execute if score #dialog Dialog matches 8 run data modify entity @e[tag=toad,tag=same_room,limit=1] data.sound set value "wow"
 execute if score #dialog Dialog matches 28..32 as @e[tag=luigi,tag=same_room] run function luigis_mansion:entities/luigi/animation/set/idle_no_poltergust
 execute if score #dialog Dialog matches 28 if score #players Totals matches 1 run tellraw @a[tag=same_room] {type:"translatable",translate:"chat.type.text",with:[{type:"translatable",translate:"luigis_mansion:entity.toad",color:"green"},{type:"translatable",translate:"luigis_mansion:dialog.toad_4.yes.1"}]}
 execute if score #dialog Dialog matches 28 if score #players Totals matches 2.. run tellraw @a[tag=same_room] {type:"translatable",translate:"chat.type.text",with:[{type:"translatable",translate:"luigis_mansion:entity.toad",color:"green"},{type:"translatable",translate:"luigis_mansion:dialog.toad_4.yes.1.more"}]}
@@ -50,7 +50,7 @@ execute if score #dialog Dialog matches 28 if score #players Totals matches 2.. 
 execute if score #dialog Dialog matches 30 run data modify entity @e[tag=toad,tag=same_room,limit=1] data.animation set value {namespace:"luigis_mansion",id:"explain"}
 execute if score #dialog Dialog matches 30 if entity @a[tag=same_room,tag=next_dialog_line,limit=1] run tellraw @a[tag=same_room] {type:"translatable",translate:"chat.type.text",with:[{type:"translatable",translate:"luigis_mansion:entity.toad",color:"green"},{type:"translatable",translate:"luigis_mansion:dialog.toad_4.yes.2"}]}
 
-execute if score #dialog Dialog matches 31 if entity @a[tag=same_room,tag=next_dialog_line,limit=1] at @e[tag=toad,tag=same_room,limit=1] run playsound luigis_mansion:entity.toad.yahoo neutral @a[tag=same_room] ~ ~ ~ 1
+execute if score #dialog Dialog matches 31 if entity @a[tag=same_room,tag=next_dialog_line,limit=1] run data modify entity @e[tag=toad,tag=same_room,limit=1] data.sound set value "yahoo"
 execute if score #dialog Dialog matches 31 if score #players Totals matches 1 if entity @a[tag=same_room,tag=next_dialog_line,limit=1] run tellraw @a[tag=same_room] {type:"translatable",translate:"chat.type.text",with:[{type:"translatable",translate:"luigis_mansion:entity.toad",color:"green"},{type:"translatable",translate:"luigis_mansion:dialog.toad_4.yes.3",with:[{type:"selector",selector:"@p[tag=!spectator]"}]}]}
 execute if score #dialog Dialog matches 31 if score #players Totals matches 2.. if entity @a[tag=same_room,tag=next_dialog_line,limit=1] run tellraw @a[tag=same_room] {type:"translatable",translate:"chat.type.text",with:[{type:"translatable",translate:"luigis_mansion:entity.toad",color:"green"},{type:"translatable",translate:"luigis_mansion:dialog.toad_4.yes.3.more"}]}
 
@@ -62,7 +62,7 @@ execute if score #dialog Dialog matches 33 run scoreboard players set #dialog Di
 #Branch: No
 execute if score #dialog Dialog matches 34 as @e[tag=luigi,tag=same_room] run function luigis_mansion:entities/luigi/animation/set/nod
 execute if score #dialog Dialog matches 34 run advancement grant @a[tag=same_room] only luigis_mansion:vanilla/go_help_yourself courtyard
-execute if score #dialog Dialog matches 34 at @e[tag=toad,tag=same_room,limit=1] run playsound luigis_mansion:entity.toad.mama_mia neutral @a[tag=same_room] ~ ~ ~ 1
+execute if score #dialog Dialog matches 34 run data modify entity @e[tag=toad,tag=same_room,limit=1] data.sound set value "mama_mia"
 execute if score #dialog Dialog matches 34..55 run data modify entity @e[tag=toad,tag=same_room,limit=1] data.animation set value {namespace:"luigis_mansion",id:"cry"}
 execute if score #dialog Dialog matches 34 if score #players Totals matches 1 run tellraw @a[tag=same_room] {type:"translatable",translate:"chat.type.text",with:[{type:"translatable",translate:"luigis_mansion:entity.toad",color:"green"},{type:"translatable",translate:"luigis_mansion:dialog.toad_4.no.1"}]}
 execute if score #dialog Dialog matches 34 if score #players Totals matches 2.. run tellraw @a[tag=same_room] {type:"translatable",translate:"chat.type.text",with:[{type:"translatable",translate:"luigis_mansion:entity.toad",color:"green"},{type:"translatable",translate:"luigis_mansion:dialog.toad_4.no.1.more"}]}

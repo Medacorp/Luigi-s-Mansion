@@ -1,2 +1,0 @@
-execute if entity @s[scores={MusicType=18,MusicGroup=0}] run function luigis_mansion:other/music/correct/check/catching_king_boo
-execute if entity @s[scores={MusicType=35,MusicGroup=0}] run function luigis_mansion:other/music/correct/check/catching_king_boo

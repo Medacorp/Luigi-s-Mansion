@@ -141,6 +141,7 @@ scoreboard objectives add Move dummy
 scoreboard objectives add MoveFlee dummy
 scoreboard objectives add Music dummy
 scoreboard objectives add MusicGroup dummy
+scoreboard objectives add MusicSpeed dummy
 scoreboard objectives add MusicType dummy
 scoreboard objectives add Offline minecraft.custom:minecraft.leave_game
 scoreboard objectives add OpenMapFocus dummy

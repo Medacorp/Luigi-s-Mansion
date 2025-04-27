@@ -13,7 +13,7 @@
         "announce_to_chat": false,
         "hidden": true
     },
-    "parent": "luigis_mansion:jukebox/catching_bogmire",
+    "parent": "luigis_mansion:jukebox/bogmire_battle",
     "criteria": {
         "unlock": {
             "trigger": "minecraft:impossible"

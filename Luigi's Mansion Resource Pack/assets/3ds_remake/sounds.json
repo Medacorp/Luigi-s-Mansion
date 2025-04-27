@@ -157,6 +157,51 @@
         ],
         "subtitle": "3ds_remake:subtitles.entity.polterpup.swallow"
     },
+    "entity.toad.cry_0": {
+        "sounds": [
+            {
+                "name": "3ds_remake:entity/toad/cry_0",
+                "stream": false
+            }
+        ],
+        "subtitle": "luigis_mansion:subtitles.entity.toad.cry"
+    },
+    "entity.toad.cry_1": {
+        "sounds": [
+            {
+                "name": "3ds_remake:entity/toad/cry_1",
+                "stream": false
+            }
+        ],
+        "subtitle": "luigis_mansion:subtitles.entity.toad.cry"
+    },
+    "entity.toad.mama_mia": {
+        "sounds": [
+            {
+                "name": "3ds_remake:entity/toad/mama_mia",
+                "stream": false
+            }
+        ],
+        "subtitle": "luigis_mansion:subtitles.entity.toad.mama_mia"
+    },
+    "entity.toad.wow": {
+        "sounds": [
+            {
+                "name": "3ds_remake:entity/toad/wow",
+                "stream": false
+            }
+        ],
+        "subtitle": "luigis_mansion:subtitles.entity.toad.wow"
+    },
+    "entity.toad.yahoo": {
+        "sounds": [
+            {
+                "name": "3ds_remake:entity/toad/yahoo",
+                "stream": false
+            }
+        ],
+        "subtitle": "luigis_mansion:subtitles.entity.toad.yahoo"
+    },
     "item.game_boy_horror.install_part": {
         "sounds": [
             {

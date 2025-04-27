@@ -8,4 +8,4 @@ execute at @s unless block ~ ~ ~0.3 #luigis_mansion:players_ignore if block ~ ~ 
 execute at @s unless block ~ ~ ~-0.3 #luigis_mansion:players_ignore if block ~ ~ ~ #luigis_mansion:players_ignore run teleport @s ~ ~ ~0.1
 execute unless block ^ ^ ^0.6 #luigis_mansion:players_ignore rotated ~ 0 unless block ^ ^ ^0.6 #luigis_mansion:players_ignore run scoreboard players set #temp Move 0
 execute unless block ^ ^1 ^0.6 #luigis_mansion:players_ignore rotated ~ 0 unless block ^ ^ ^0.6 #luigis_mansion:players_ignore run scoreboard players set #temp Move 0
-execute if score #temp Move matches 1.. positioned as @s unless entity @e[tag=me,distance=..4] run function luigis_mansion:entities/ghost/flee_task/pull_player_step
+execute if score #temp Move matches 1.. positioned as @s unless entity @e[tag=me,distance=..4,limit=1] run function luigis_mansion:entities/ghost/flee_task/pull_player_step

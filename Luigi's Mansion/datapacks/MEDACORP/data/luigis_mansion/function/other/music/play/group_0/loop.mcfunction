@@ -22,14 +22,10 @@ playsound luigis_mansion:music.mansion.room.whirlindas music @s[scores={MusicTyp
 scoreboard players set @s[scores={MusicType=13}] Music 510
 playsound luigis_mansion:music.area_boss_defeated music @s[scores={MusicType=14}] ~ ~ ~ 1000
 scoreboard players set @s[scores={MusicType=14}] Music 192
-playsound luigis_mansion:music.boss.chauncey music @s[scores={MusicType=15}] ~ ~ ~ 1000
-scoreboard players set @s[scores={MusicType=15}] Music 993
-playsound luigis_mansion:music.boss.bogmire music @s[scores={MusicType=16}] ~ ~ ~ 1000
-scoreboard players set @s[scores={MusicType=16}] Music 861
-playsound luigis_mansion:music.boss.boolossus music @s[scores={MusicType=17}] ~ ~ ~ 1000
-scoreboard players set @s[scores={MusicType=17}] Music 686
-playsound luigis_mansion:music.boss.king_boo music @s[scores={MusicType=18}] ~ ~ ~ 1000
-scoreboard players set @s[scores={MusicType=18}] Music 1130
+execute if entity @s[scores={MusicType=15}] run function luigis_mansion:other/music/play/group_0/loop/chauncey_battle
+execute if entity @s[scores={MusicType=16}] run function luigis_mansion:other/music/play/group_0/loop/bogmire_battle
+execute if entity @s[scores={MusicType=17}] run function luigis_mansion:other/music/play/group_0/loop/boolossus_battle
+execute if entity @s[scores={MusicType=18}] run function luigis_mansion:other/music/play/group_0/loop/king_boo_battle
 playsound luigis_mansion:music.game_boy_horror music @s[scores={MusicType=19}] ~ ~ ~ 1000
 scoreboard players set @s[scores={MusicType=19}] Music 831
 playsound luigis_mansion:music.king_boo_warp music @s[scores={MusicType=20}] ~ ~ ~ 1000
@@ -56,14 +52,7 @@ playsound luigis_mansion:music.catching.boo music @s[scores={MusicType=30}] ~ ~ 
 scoreboard players set @s[scores={MusicType=30}] Music 378
 playsound luigis_mansion:music.king_boo_theme music @s[scores={MusicType=31}] ~ ~ ~ 1000
 scoreboard players set @s[scores={MusicType=31}] Music 232
-playsound luigis_mansion:music.boss.catching_chauncey music @s[scores={MusicType=32}] ~ ~ ~ 1000
-scoreboard players set @s[scores={MusicType=32}] Music 855
-playsound luigis_mansion:music.boss.catching_bogmire music @s[scores={MusicType=33}] ~ ~ ~ 1000
-scoreboard players set @s[scores={MusicType=33}] Music 841
-playsound luigis_mansion:music.boss.boolossus_split music @s[scores={MusicType=34}] ~ ~ ~ 1000
-scoreboard players set @s[scores={MusicType=34}] Music 686
-playsound luigis_mansion:music.boss.catching_king_boo music @s[scores={MusicType=35}] ~ ~ ~ 1000
-scoreboard players set @s[scores={MusicType=35}] Music 768
+# @s[scores={MusicType=32..35}]
 playsound luigis_mansion:music.danger music @s[scores={MusicType=36}] ~ ~ ~ 1000
 scoreboard players set @s[scores={MusicType=36}] Music 172
 playsound luigis_mansion:music.mini_game music @s[scores={MusicType=37}] ~ ~ ~ 1000

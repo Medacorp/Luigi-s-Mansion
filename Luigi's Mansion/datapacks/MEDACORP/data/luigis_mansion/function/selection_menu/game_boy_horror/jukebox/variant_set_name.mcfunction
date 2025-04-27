@@ -1,0 +1,1 @@
+$data modify storage luigis_mansion:data menu_options.options[-1].components."minecraft:item_name".with[0] set from storage luigis_mansion:data menu_options.options[-1].components."minecraft:custom_data".option.values[$(variant)]
