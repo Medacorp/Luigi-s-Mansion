@@ -8,5 +8,5 @@ scoreboard players operation @e[tag=this_entity,limit=1] ID = #entity ID
 execute as @e[tag=head,tag=model_piece] if score #entity ID = @s ID run data modify entity @e[tag=this_entity,limit=1] equipment.head.components."minecraft:custom_model_data".colors[0] set from entity @s equipment.head.components."minecraft:custom_model_data".colors[0]
 execute as @e[tag=head,tag=model_piece] if score #entity ID = @s ID run data modify entity @e[tag=this_entity,limit=1] equipment.head.components."minecraft:custom_model_data".flags[1] set from entity @s equipment.head.components."minecraft:custom_model_data".flags[1]
 scoreboard players reset #entity ID
-data modify entity @e[tag=this_entity,limit=1] CustomName set from entity @s data.full_player_name
+data modify entity @e[tag=this_entity,limit=1] CustomName set from entity @s data.player_name
 tag @e[tag=this_entity,limit=1] remove this_entity

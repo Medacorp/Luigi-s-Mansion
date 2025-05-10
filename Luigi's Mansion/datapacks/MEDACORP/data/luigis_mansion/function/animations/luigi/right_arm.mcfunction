@@ -23,7 +23,6 @@ execute if entity @s[tag=poltergust_grabbed] unless score #mirrored Selected mat
 execute if entity @s[tag=sneaking,tag=!riding_poltergust,tag=!holding_poltergust,tag=!low_health,scores={AnimationProgress=0}] run function luigis_mansion:animations/luigi/sneak/right_arm
 execute if entity @s[tag=walking,tag=!riding_poltergust,tag=!holding_poltergust,tag=!low_health,scores={AnimationProgress=0}] run function luigis_mansion:animations/luigi/walk/right_arm
 execute if entity @s[tag=running,tag=!riding_poltergust,tag=!holding_poltergust,tag=!low_health,scores={AnimationProgress=0}] run function luigis_mansion:animations/luigi/run/right_arm
-execute if entity @s[tag=swimming,tag=!riding_poltergust,tag=!holding_poltergust,scores={AnimationProgress=0}] run function luigis_mansion:animations/luigi/swim/right_arm
 tag @s remove holding_poltergust
 
 $execute at @s run function $(namespace):animations/luigi/$(id)/right_arm

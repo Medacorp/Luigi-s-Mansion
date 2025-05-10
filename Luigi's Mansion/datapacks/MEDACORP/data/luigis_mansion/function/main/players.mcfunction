@@ -38,7 +38,7 @@ tag @s[tag=walking] remove walking
 tag @s[scores={Walk=1..}] add walking
 tag @s[scores={WalkOnWater=1..}] add walking
 tag @s[scores={WalkUnderWater=1..}] add walking
-execute if entity @s[nbt={OnGround:0b},tag=!flipped_gravity,tag=!looking_at_map] if block ~ ~-0.01 ~ #luigis_mansion:ghosts_ignore run tag @s add walking
+execute if entity @s[nbt={OnGround:0b},tag=!flipped_gravity,tag=!looking_at_map] if block ~ ~-0.01 ~ #luigis_mansion:all_ignore run tag @s add walking
 execute if entity @s[nbt={OnGround:0b},tag=flipped_gravity,tag=!looking_at_map] run function luigis_mansion:entities/player/flipped_walking
 scoreboard players set @s[scores={Walk=1..}] Walk 0
 scoreboard players set @s[scores={WalkOnWater=1..}] WalkOnWater 0

@@ -20,9 +20,7 @@ scoreboard players operation @e[tag=this_entity] ID = #entity ID
 scoreboard players reset #entity ID
 execute in minecraft:overworld run loot spawn 27 0 0 loot luigis_mansion:gameplay/get_player_name
 execute in minecraft:overworld run data modify entity @e[tag=!model_piece,tag=this_entity,limit=1] data.player_name set from entity @e[type=minecraft:item,nbt={Item:{id:"minecraft:player_head"}},limit=1] Item.components."minecraft:profile".name
-execute in minecraft:overworld run setblock 27 0 0 minecraft:oak_sign{front_text:{messages:[{source:"entity",entity:"@e[type=minecraft:item,nbt={Item:{id:'minecraft:player_head'}},limit=1]",type:"nbt",nbt:"Item.components.'minecraft:profile'.name"},{type:"text",text:""},{type:"text",text:""},{type:"text",text:""}]}}
-execute in minecraft:overworld run data modify entity @e[tag=!model_piece,tag=this_entity,limit=1] data.full_player_name set from block 27 0 0 front_text.messages[0]
-execute in minecraft:overworld run data modify entity @e[tag=model_piece,tag=source,tag=this_entity,limit=1] CustomName set from block 27 0 0 front_text.messages[0]
+execute in minecraft:overworld run data modify entity @e[tag=model_piece,tag=source,tag=this_entity,limit=1] CustomName set from entity @e[tag=!model_piece,tag=this_entity,limit=1] data.player_name
 execute in minecraft:overworld run setblock 27 0 0 minecraft:bedrock
 execute in minecraft:overworld run kill @e[x=27.5,y=0.0,z=0.5,distance=..0.7,type=minecraft:item,limit=1]
 execute if score #global_player_names Selected matches 0 run data merge entity @e[tag=model_piece,tag=source,tag=this_entity,limit=1] {CustomNameVisible:0b}
