@@ -6,8 +6,9 @@ scoreboard players operation #temp HomeY = @s HomeY
 scoreboard players operation #temp HomeZ = @s HomeZ
 scoreboard players add @s Time 1
 tag @s add me
-execute as @e[nbt={data:{entity:{namespace:"luigis_mansion",id:"weak_flashlight"}}},scores={Time=1..},tag=!me] if score @s PathStep = #temp Time if score @s HomeRotationX = #temp HomeRotationX if score @s HomeRotationY = #temp HomeRotationY if score @s HomeX = #temp HomeX if score @s HomeY = #temp HomeY if score @s HomeZ = #temp HomeZ run tag @e[tag=me,limit=1] add ignore
+execute as @e[nbt={data:{entity:{namespace:"3ds_remake",id:"weak_flashlight"}}},scores={Time=1..},tag=!me,tag=!remove_from_existence,tag=!dead] if score @s PathStep = #temp Time if score @s HomeRotationX = #temp HomeRotationX if score @s HomeRotationY = #temp HomeRotationY if score @s HomeX = #temp HomeX if score @s HomeY = #temp HomeY if score @s HomeZ = #temp HomeZ run tag @e[tag=me,tag=!remove_from_existence,tag=!dead,limit=1] add ignore
 tag @s remove me
+execute unless entity @s[tag=!remove_from_existence,tag=!dead] run scoreboard players set @s Time 2
 execute if entity @s[scores={Time=1},tag=!ignore,tag=!reflected] run function 3ds_remake:entities/weak_flashlight/set_light
 execute if entity @s[scores={Time=1},tag=!ignore,tag=reflected] run function 3ds_remake:entities/weak_flashlight/set_light_reflected
 execute if entity @s[scores={Time=2},tag=!ignore,tag=!reflected] run function 3ds_remake:entities/weak_flashlight/remove_light
