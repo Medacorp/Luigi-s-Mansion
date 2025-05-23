@@ -1,4 +1,0 @@
-tellraw @s[scores={JukeboxHealth=..99}] {type:"translatable",translate:"chat.type.text",with:[{type:"translatable",translate:"luigis_mansion:item.game_boy_horror",color:"green"},{type:"translatable",translate:"e3_demo:message.game_boy_horror.jukebox.decrease_speed.success"}]}
-tellraw @s[scores={JukeboxHealth=100}] {type:"translatable",translate:"chat.type.text",with:[{type:"translatable",translate:"luigis_mansion:item.game_boy_horror",color:"green"},{type:"translatable",translate:"luigis_mansion:message.game_boy_horror.jukebox.decrease_speed.fail"}]}
-scoreboard players set @s[scores={JukeboxHealth=..99}] Music 0
-scoreboard players add @s[scores={JukeboxHealth=..99}] JukeboxHealth 10

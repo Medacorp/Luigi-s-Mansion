@@ -1,3 +1,7 @@
+v3.4?:
+* Changed E3 Demo's mansion themes to be properly health based
+** As a bonus, it now is part of the "keep progress" collection of the other mansion themes
+
 v3.3:
 * Updated to 1.21.5
 * Added Jukebox

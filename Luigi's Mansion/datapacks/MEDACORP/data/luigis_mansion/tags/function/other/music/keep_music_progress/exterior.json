@@ -1,0 +1,9 @@
+{
+    "values": [
+        "luigis_mansion:other/music/cannot_overwrite/dark_hallway",
+        "luigis_mansion:other/music/cannot_overwrite/dark_room",
+        "luigis_mansion:other/music/cannot_overwrite/dark_stairwell",
+        "luigis_mansion:other/music/cannot_overwrite/exterior",
+        "luigis_mansion:other/music/cannot_overwrite/lit_room"
+    ]
+}
