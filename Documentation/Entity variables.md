@@ -25,7 +25,7 @@ entity:{
     
     //Ghosts
     spawn:1b, //How this ghost spawns: 0b = 3 second wait before it can spawn, 1b = forced initial spawn, 2b = initially can spawn immediately if under the correct conditions. 3b = initially hiding in furniture, not spawned by player facing. 4b = forced spawn only (initially and subquentially), only a direct spawn tag will spawn this ghost. Default = 0b.
-    disappear_on_vanish:1b, //Whether this ghost disappears when it vanishes. Default = 1b for speedy spirits and 0b for everything else.
+    disappear_on_vanish:"", //When set this ghost disappears when it vanishes. If set to a non-empty string, will save the value to the money_spawned list.
     appear_type:"<type>", //Ghost appear type to use, differs per ghost, see IDs in use for valid values.
     attack_type:"<type>", //Ghost attack type to use, differs per ghost, see IDs in use for valid values.
     second_flee_damage:X, //How much damage this ghost can take in one suction before it enters its second flee state, escaping 2.5 seconds later. If absent, never enters second flee state.

@@ -1,2 +1,2 @@
-data modify storage luigis_mansion:data entity set value {room:-2,spawn:1b,disappear_on_vanish:1b,pull:{strength:50,angle:80},flee_task:"random",health:1,speed:0,flee_speed:0,vanish_time:-1,loot:{},damage:{collision:5,attack:10},training_room_score:1}
+data modify storage luigis_mansion:data entity set value {room:-2,spawn:1b,disappear_on_vanish:"",pull:{strength:50,angle:80},flee_task:"random",health:1,speed:0,flee_speed:0,vanish_time:-1,loot:{},damage:{collision:5,attack:10},training_room_score:1}
 function luigis_mansion:spawn_entities/ghost/bowling_ghost

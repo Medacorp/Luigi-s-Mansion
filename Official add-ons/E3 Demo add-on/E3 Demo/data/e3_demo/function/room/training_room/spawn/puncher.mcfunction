@@ -1,2 +1,2 @@
-data modify storage luigis_mansion:data entity set value {room:-2,spawn:1b,appear_type:"none",disappear_on_vanish:1b,pull:{strength:50,angle:120},flee_task:"alternate",health:1000,speed:10,flee_speed:20,vanish_time:120,loot:{},damage:{collision:5,attack:10},training_room_score:3}
+data modify storage luigis_mansion:data entity set value {room:-2,spawn:1b,appear_type:"none",disappear_on_vanish:"",pull:{strength:50,angle:120},flee_task:"alternate",health:1000,speed:10,flee_speed:20,vanish_time:120,loot:{},damage:{collision:5,attack:10},training_room_score:3}
 function e3_demo:spawn_entities/ghost/puncher

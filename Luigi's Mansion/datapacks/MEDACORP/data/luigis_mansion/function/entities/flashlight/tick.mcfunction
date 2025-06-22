@@ -21,4 +21,3 @@ scoreboard players reset #temp HomeX
 scoreboard players reset #temp HomeY
 scoreboard players reset #temp HomeZ
 tag @s[scores={Time=2}] add dead
-tag @s remove new

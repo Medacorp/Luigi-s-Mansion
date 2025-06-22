@@ -7,7 +7,7 @@ tag @s remove bounced_already
 
 execute if entity @s[scores={MirrorX=-2147483648..}] run scoreboard players operation #temp MirrorX = @s MirrorX
 execute if entity @s[scores={MirrorZ=-2147483648..}] run scoreboard players operation #temp MirrorZ = @s MirrorZ
-execute at @s[tag=in_vacuum] run function luigis_mansion:entities/item/pull with entity @s data
+execute at @s[tag=in_vacuum] facing entity @e[tag=vacuuming_me,sort=nearest,limit=1] feet positioned ~ ~0.1 ~ run function luigis_mansion:entities/item/pull
 execute at @s run function luigis_mansion:entities/item/physics with entity @s data.physics
 execute if data entity @s data.particle at @s run function luigis_mansion:entities/item/particle with entity @s data.particle
 execute if data entity @s data.particle_trail at @s run function luigis_mansion:entities/item/particle_trail with entity @s data

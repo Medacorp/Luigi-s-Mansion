@@ -1,0 +1,261 @@
+{
+  "default_condition": "unless score #mirrored Selected matches 1",
+  "entities": {
+    "3ds_remake:gooigi": {
+      "spawn_function": "3DS Remake:3ds_remake:spawn_entities/gooigi/player",
+      "animation_root": "3DS Remake:3ds_remake:animations/gooigi"
+    },
+    "3ds_remake:polterpup": {
+      "spawn_function": "3DS Remake:3ds_remake:spawn_entities/ghost/polterpup",
+      "animation_root": "MEDACORP:luigis_mansion:animations/ghost"
+    },
+    "luigis_mansion:bat": {
+      "spawn_function": "MEDACORP:luigis_mansion:spawn_entities/vacuumable/purple_bat",
+      "animation_root": "MEDACORP:luigis_mansion:animations/ghost"
+    },
+    "luigis_mansion:biff_atlas": {
+      "spawn_function": "MEDACORP:luigis_mansion:spawn_entities/portrait_ghost/biff_atlas",
+      "animation_root": "MEDACORP:luigis_mansion:animations/ghost"
+    },
+    "luigis_mansion:bogmire": {
+      "spawn_function": "MEDACORP:luigis_mansion:spawn_entities/portrait_ghost/bogmire",
+      "animation_root": "MEDACORP:luigis_mansion:animations/ghost"
+    },
+    "luigis_mansion:boo": {
+      "spawn_function": "MEDACORP:luigis_mansion:spawn_entities/ghost/boo",
+      "animation_root": "MEDACORP:luigis_mansion:animations/ghost"
+    },
+    "luigis_mansion:bowling_ghost": {
+      "spawn_function": "MEDACORP:luigis_mansion:spawn_entities/ghost/bowling_ghost",
+      "animation_root": "MEDACORP:luigis_mansion:animations/ghost"
+    },
+    "luigis_mansion:bowser": {
+      "spawn_function": "MEDACORP:luigis_mansion:spawn_entities/bowser/fight",
+      "animation_root": "MEDACORP:luigis_mansion:animations/ghost"
+    },
+    "luigis_mansion:bowser_head": {
+      "spawn_function": "MEDACORP:luigis_mansion:spawn_entities/bowser/head",
+      "animation_root": "MEDACORP:luigis_mansion:animations/ghost"
+    },
+    "luigis_mansion:bowser_painting": {
+      "spawn_function": "MEDACORP:luigis_mansion:spawn_entities/bowser/painting",
+      "animation_root": "MEDACORP:luigis_mansion:animations/ghost"
+    },
+    "luigis_mansion:ceiling_ghost": {
+      "spawn_function": "MEDACORP:luigis_mansion:spawn_entities/ghost/ceiling_surprise",
+      "animation_root": "MEDACORP:luigis_mansion:animations/ghost"
+    },
+    "luigis_mansion:chauncey": {
+      "spawn_function": "MEDACORP:luigis_mansion:spawn_entities/portrait_ghost/chauncey",
+      "animation_root": "MEDACORP:luigis_mansion:animations/ghost"
+    },
+    "luigis_mansion:clockwork_soldier": {
+      "spawn_function": "MEDACORP:luigis_mansion:spawn_entities/portrait_ghost/clockwork_soldiers/blue",
+      "animation_root": "MEDACORP:luigis_mansion:animations/ghost"
+    },
+    "luigis_mansion:crow": {
+      "spawn_function": "MEDACORP:luigis_mansion:spawn_entities/crow/angry",
+      "animation_root": "MEDACORP:luigis_mansion:animations/passive"
+    },
+    "luigis_mansion:e_gadd": {
+      "spawn_function": "MEDACORP:luigis_mansion:spawn_entities/e_gadd",
+      "animation_root": "MEDACORP:luigis_mansion:animations/e_gadd"
+    },
+    "luigis_mansion:elemental_ghost": {
+      "spawn_function": "MEDACORP:luigis_mansion:spawn_entities/ghost/fire_elemental_ghost",
+      "animation_root": "MEDACORP:luigis_mansion:animations/ghost"
+    },
+    "luigis_mansion:fake_door": {
+      "spawn_function": "?fake_door/left",
+      "animation_root": "MEDACORP:luigis_mansion:animations/ghost"
+    },
+    "luigis_mansion:floating_whirlindas": {
+      "spawn_function": "MEDACORP:luigis_mansion:spawn_entities/portrait_ghost/floating_whirlindas/male",
+      "animation_root": "MEDACORP:luigis_mansion:animations/ghost"
+    },
+    "luigis_mansion:flying_fish": {
+      "spawn_function": "MEDACORP:luigis_mansion:spawn_entities/vacuumable/pink_flying_fish",
+      "animation_root": "MEDACORP:luigis_mansion:animations/ghost"
+    },
+    "luigis_mansion:furniture": {
+      "spawn_function": "MEDACORP:luigis_mansion:spawn_furniture/ringed_vase",
+      "animation_root": "MEDACORP:luigis_mansion:animations/furniture"
+    },
+    "luigis_mansion:furniture/door": {
+      "spawn_function": "?door/left",
+      "animation_root": "MEDACORP:luigis_mansion:animations/furniture/door"
+    },
+    "luigis_mansion:garbage_can_ghost": {
+      "spawn_function": "MEDACORP:luigis_mansion:spawn_entities/ghost/garbage_can_ghost",
+      "animation_root": "MEDACORP:luigis_mansion:animations/ghost"
+    },
+    "luigis_mansion:ghost": {
+      "spawn_function": "MEDACORP:luigis_mansion:spawn_entities/ghost/gold_ghost",
+      "animation_root": "MEDACORP:luigis_mansion:animations/ghost"
+    },
+    "luigis_mansion:ghost_guy": {
+      "spawn_function": "MEDACORP:luigis_mansion:spawn_entities/ghost/ghost_guy/red",
+      "animation_root": "MEDACORP:luigis_mansion:animations/ghost"
+    },
+    "luigis_mansion:grabbing_ghost": {
+      "spawn_function": "MEDACORP:luigis_mansion:spawn_entities/ghost/grabbing_ghost",
+      "animation_root": "MEDACORP:luigis_mansion:animations/ghost"
+    },
+    "luigis_mansion:haunted_music_sheet": {
+      "spawn_function": "MEDACORP:luigis_mansion:spawn_entities/vacuumable/haunted_object/music_sheet",
+      "animation_root": "MEDACORP:luigis_mansion:animations/ghost"
+    },
+    "luigis_mansion:haunted_object": {
+      "spawn_function": "MEDACORP:luigis_mansion:spawn_entities/vacuumable/haunted_object/book",
+      "animation_root": "MEDACORP:luigis_mansion:animations/ghost"
+    },
+    "luigis_mansion:henry_and_orville": {
+      "spawn_function": "MEDACORP:luigis_mansion:spawn_entities/portrait_ghost/henry_and_orville/henry",
+      "animation_root": "MEDACORP:luigis_mansion:animations/ghost"
+    },
+    "luigis_mansion:jarvis": {
+      "spawn_function": "MEDACORP:luigis_mansion:spawn_entities/portrait_ghost/jarvis",
+      "animation_root": "MEDACORP:luigis_mansion:animations/ghost"
+    },
+    "luigis_mansion:luigi": {
+      "spawn_function": "MEDACORP:luigis_mansion:spawn_entities/luigi",
+      "animation_root": "MEDACORP:luigis_mansion:animations/luigi"
+    },
+    "luigis_mansion:lydia": {
+      "spawn_function": "MEDACORP:luigis_mansion:spawn_entities/portrait_ghost/lydia",
+      "animation_root": "MEDACORP:luigis_mansion:animations/ghost"
+    },
+    "luigis_mansion:madame_clairvoya": {
+      "spawn_function": "MEDACORP:luigis_mansion:spawn_entities/portrait_ghost/madame_clairvoya",
+      "animation_root": "MEDACORP:luigis_mansion:animations/ghost"
+    },
+    "luigis_mansion:mario": {
+      "spawn_function": "MEDACORP:luigis_mansion:spawn_entities/mario/normal",
+      "animation_root": "MEDACORP:luigis_mansion:animations/passive"
+    },
+    "luigis_mansion:melody_pianissima": {
+      "spawn_function": "MEDACORP:luigis_mansion:spawn_entities/portrait_ghost/melody_pianissima",
+      "animation_root": "MEDACORP:luigis_mansion:animations/ghost"
+    },
+    "luigis_mansion:miss_petunia": {
+      "spawn_function": "MEDACORP:luigis_mansion:spawn_entities/portrait_ghost/miss_petunia",
+      "animation_root": "MEDACORP:luigis_mansion:animations/ghost"
+    },
+    "luigis_mansion:mouse": {
+      "spawn_function": "MEDACORP:luigis_mansion:spawn_entities/vacuumable/blue_mouse",
+      "animation_root": "MEDACORP:luigis_mansion:animations/ghost"
+    },
+    "luigis_mansion:mr_bones": {
+      "spawn_function": "MEDACORP:luigis_mansion:spawn_entities/ghost/mr_bones",
+      "animation_root": "MEDACORP:luigis_mansion:animations/ghost"
+    },
+    "luigis_mansion:mr_luggs": {
+      "spawn_function": "MEDACORP:luigis_mansion:spawn_entities/portrait_ghost/mr_luggs",
+      "animation_root": "MEDACORP:luigis_mansion:animations/ghost"
+    },
+    "luigis_mansion:nana": {
+      "spawn_function": "MEDACORP:luigis_mansion:spawn_entities/portrait_ghost/nana",
+      "animation_root": "MEDACORP:luigis_mansion:animations/ghost"
+    },
+    "luigis_mansion:neville": {
+      "spawn_function": "MEDACORP:luigis_mansion:spawn_entities/portrait_ghost/neville",
+      "animation_root": "MEDACORP:luigis_mansion:animations/ghost"
+    },
+    "luigis_mansion:puncher": {
+      "spawn_function": "MEDACORP:luigis_mansion:spawn_entities/ghost/purple_puncher",
+      "animation_root": "MEDACORP:luigis_mansion:animations/ghost"
+    },
+    "luigis_mansion:shining_ghost": {
+      "spawn_function": "MEDACORP:luigis_mansion:spawn_entities/ghost/shining_ghost",
+      "animation_root": "MEDACORP:luigis_mansion:animations/ghost"
+    },
+    "luigis_mansion:shivers": {
+      "spawn_function": "MEDACORP:luigis_mansion:spawn_entities/portrait_ghost/shivers",
+      "animation_root": "MEDACORP:luigis_mansion:animations/ghost"
+    },
+    "luigis_mansion:showering_shadow": {
+      "spawn_function": "MEDACORP:luigis_mansion:spawn_entities/showering_shadow",
+      "animation_root": "MEDACORP:luigis_mansion:animations/ghost"
+    },
+    "luigis_mansion:sir_weston": {
+      "spawn_function": "MEDACORP:luigis_mansion:spawn_entities/portrait_ghost/sir_weston",
+      "animation_root": "MEDACORP:luigis_mansion:animations/ghost"
+    },
+    "luigis_mansion:slim_bankshot": {
+      "spawn_function": "MEDACORP:luigis_mansion:spawn_entities/portrait_ghost/slim_bankshot",
+      "animation_root": "MEDACORP:luigis_mansion:animations/ghost"
+    },
+    "luigis_mansion:spark": {
+      "spawn_function": "MEDACORP:luigis_mansion:spawn_entities/vacuumable/spark",
+      "animation_root": "MEDACORP:luigis_mansion:animations/ghost"
+    },
+    "luigis_mansion:spooky": {
+      "spawn_function": "MEDACORP:luigis_mansion:spawn_entities/portrait_ghost/spooky",
+      "animation_root": "MEDACORP:luigis_mansion:animations/ghost"
+    },
+    "luigis_mansion:sue_pea": {
+      "spawn_function": "MEDACORP:luigis_mansion:spawn_entities/portrait_ghost/sue_pea",
+      "animation_root": "MEDACORP:luigis_mansion:animations/ghost"
+    },
+    "luigis_mansion:toad": {
+      "spawn_function": "MEDACORP:luigis_mansion:spawn_entities/toad/red",
+      "animation_root": "MEDACORP:luigis_mansion:animations/ghost"
+    },
+    "luigis_mansion:twirler": {
+      "spawn_function": "MEDACORP:luigis_mansion:spawn_entities/ghost/twirler",
+      "animation_root": "MEDACORP:luigis_mansion:animations/ghost"
+    },
+    "luigis_mansion:uncle_grimmly": {
+      "spawn_function": "MEDACORP:luigis_mansion:spawn_entities/portrait_ghost/uncle_grimmly",
+      "animation_root": "MEDACORP:luigis_mansion:animations/ghost"
+    },
+    "luigis_mansion:vincent_van_gore": {
+      "spawn_function": "MEDACORP:luigis_mansion:spawn_entities/portrait_ghost/vincent_van_gore",
+      "animation_root": "MEDACORP:luigis_mansion:animations/ghost"
+    },
+    "luigis_mansion:waiter": {
+      "spawn_function": "MEDACORP:luigis_mansion:spawn_entities/ghost/waiter",
+      "animation_root": "MEDACORP:luigis_mansion:animations/ghost"
+    }
+  },
+  "score_values": {
+    "#mirrored Selected": 0
+  },
+  "tag_toggles": {
+    "3DS Remake:3ds_remake:animations/gooigi": {
+      "flipped_gravity": false,
+      "low_health": false,
+      "riding_poltergust": false,
+      "running": false,
+      "sneaking": false,
+      "walking": false
+    },
+    "MEDACORP:luigis_mansion:animations/furniture": {
+      "open": false
+    },
+    "MEDACORP:luigis_mansion:animations/furniture/door": {
+      "area_blockade": false,
+      "barricaded": false,
+      "barricaded_double": false,
+      "blockade": false,
+      "burning": false,
+      "forced_animation": false
+    },
+    "MEDACORP:luigis_mansion:animations/ghost": {
+      "flipped_gravity": false,
+      "visible": true
+    },
+    "MEDACORP:luigis_mansion:animations/luigi": {
+      "dark_room": false,
+      "low_health": false,
+      "flipped_gravity": false,
+      "riding_poltergust": false,
+      "running": false,
+      "sneaking": false,
+      "walking": false
+    },
+    "MEDACORP:luigis_mansion:animations/passive": {
+      "flipped_gravity": false
+    }
+  }
+}

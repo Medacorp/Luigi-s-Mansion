@@ -1,3 +1,3 @@
-data modify storage luigis_mansion:data entity set value {room:-2,spawn:1b,appear_type:"none",disappear_on_vanish:1b,pull:{strength:50,angle:120},flee_task:"alternate",health:2000,speed:15,flee_speed:20,vanish_time:120,loot:{},damage:{collision:5,attack:10},training_room_score:5}
+data modify storage luigis_mansion:data entity set value {room:-2,spawn:1b,appear_type:"none",disappear_on_vanish:"",pull:{strength:50,angle:120},flee_task:"alternate",health:2000,speed:15,flee_speed:20,vanish_time:120,loot:{},damage:{collision:5,attack:10},training_room_score:5}
 execute if score #training_room ActionTime matches 1 run data modify storage luigis_mansion:data entity.vanish_time set value -1
 function luigis_mansion:spawn_entities/ghost/purple_puncher

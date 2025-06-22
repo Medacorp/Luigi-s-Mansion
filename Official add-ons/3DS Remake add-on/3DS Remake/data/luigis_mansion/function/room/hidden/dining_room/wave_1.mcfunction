@@ -1,4 +1,4 @@
-execute unless data storage luigis_mansion:data current_state.current_data{money_spawned:["dining_room_speedy_spirit"]} run data modify storage luigis_mansion:data entity set value {room:26,loot:{drop_at_0:{name:"dining_room_speedy_spirit"}},spawn:3b}
+execute unless data storage luigis_mansion:data current_state.current_data{money_spawned:["dining_room_speedy_spirit"]} run data modify storage luigis_mansion:data entity set value {room:26,no_hidden_move:1b,disappear_on_vanish:"dining_room_speedy_spirit",loot:{drop_at_0:{name:"dining_room_speedy_spirit"}},spawn:3b}
 execute unless data storage luigis_mansion:data current_state.current_data{money_spawned:["dining_room_speedy_spirit"]} run function luigis_mansion:entities/speedy_spirit/give_money/silver_diamond
 execute unless data storage luigis_mansion:data current_state.current_data{money_spawned:["dining_room_speedy_spirit"]} positioned 699 11 -37 run function luigis_mansion:spawn_entities/ghost/speedy_spirit
 data modify storage luigis_mansion:data entity set value {room:26}

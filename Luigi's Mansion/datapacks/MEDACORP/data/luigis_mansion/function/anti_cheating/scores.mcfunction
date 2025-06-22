@@ -280,8 +280,6 @@ execute unless score #freeze_timer Selected matches 0..1 run scoreboard players 
 
 execute unless data storage luigis_mansion:data current_state if entity @a[limit=1] run function luigis_mansion:other/upgrade_path/newly_installed
 
-gamerule doTileDrops false
-gamerule doEntityDrops false
 gamerule fallDamage false
 gamerule maxCommandChainLength 2147483647
 gamerule maxCommandForkCount 2147483647

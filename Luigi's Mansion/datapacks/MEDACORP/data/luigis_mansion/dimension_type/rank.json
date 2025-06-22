@@ -7,6 +7,7 @@
 	"fixed_time": 6000,
 	"piglin_safe": true,
 	"bed_works": false,
+    "cloud_height": 192,
 	"respawn_anchor_works": false,
 	"has_raids": false,
 	"logical_height": 256,

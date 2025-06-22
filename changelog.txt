@@ -1,7 +1,10 @@
-v3.4?:
+v3.3.1:
+* Updated to 1.21.6
 * Added the piano track of "Conductor of a Familiar Theme"
 * Changed E3 Demo's mansion themes to be properly health based
 ** As a bonus, it now is part of the "keep progress" collection of the other mansion themes
+* Fixed Speedy Spirits do not perma-vanish unless captured; disappear_on_vanish entity variable now takes a save value and is no longer the default for any ghost type
+* Fixed disappear_on_vanish ghosts don't reappear if room was left with them present
 
 v3.3:
 * Updated to 1.21.5

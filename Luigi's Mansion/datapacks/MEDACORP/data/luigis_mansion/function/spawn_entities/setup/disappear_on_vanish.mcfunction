@@ -1,2 +1,2 @@
-execute if data storage luigis_mansion:data entity{disappear_on_vanish:0b} run tag @e[tag=this_entity,limit=1] remove disappear_on_vanish
-execute if data storage luigis_mansion:data entity{disappear_on_vanish:1b} run tag @e[tag=this_entity,limit=1] add disappear_on_vanish
+execute if data storage luigis_mansion:data entity.disappear_on_vanish run tag @e[tag=this_entity,limit=1] add disappear_on_vanish
+execute if data storage luigis_mansion:data entity.disappear_on_vanish unless data storage luigis_mansion:data entity{disappear_on_vanish:""} run data modify entity @e[tag=this_entity,limit=1] data.disappear_on_vanish set from storage luigis_mansion:data entity.disappear_on_vanish
