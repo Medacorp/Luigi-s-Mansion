@@ -4,7 +4,7 @@ There is, however, an issue with rapid teleportation causing desyncs, see next q
 
 Q. Why is my movement not registering properly?
 A. This is the problem mentioned above; rapid teleportation is the only way to pull some things off, but it comes at a cost. This cannot be fixed in the map, and is actually a minecraft bug: https://bugs.mojang.com/browse/MC-197855
-Use the Game Boy Horror to set your "Teleport Frequency" setting to a lower value if you're experiencing this.
+Use the Game Boy Horror to set your "Teleport Frequency" setting to a lower frequency if you're experiencing this.
 
 Q. I'm stuck in the gallery, what do I do?
 A. (No 3DS Remake) Search the angle statue, like E. Gadd hints, and his dialog will change allowing you to leave.
@@ -69,18 +69,11 @@ Q. Why are the rooms so high?
 A. The rooms are horizontally a bit bigger than in the original game, compared to Luigi; the rooms were made taller to make it not look as stretched.
 This will probably be adressed in a future map update.
 
-Q. Where did the mansion go?
-A. As E. Gadd tells you, it vanished in the night. If you wish to enter the mansion, talk to E. Gadd in the lab again.
-
-Q. I got lost in the Boo Woods!
-A. ... Not very clever... The Boo woods are generated automatically in new chunks. They're endless.
-If you cannot find your way back, leave and re-enter the world, it'll warp you near the path of the mansion if you were over 400 blocks away from it.
-
 Q. How do I unlock amiibos from the 3DS Remake and other add-ons?
 A. The amiibos are unlocked as you clear the trophy tasks.
 
 Q. Where's the chef ghost in the original mansion?
-A. He's not added; nothing is known for sure about him, except his visuals from one grainy image. Everything else is speculation or theories. There's simply not enough known to add him.
+A. He's not added; nothing is known for sure about him, except his visuals from two grainy images. Everything else is speculation or theories. There's simply not enough known to add him.
 
 Q. How can I catch Spooky and Miss. Petunia in the original mansion.
 A. You don't, they never show their hearts.

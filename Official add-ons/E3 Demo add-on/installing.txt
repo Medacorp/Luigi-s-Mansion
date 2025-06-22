@@ -8,7 +8,7 @@ Any compatibility issues with this add-on should be reported to the conflicting 
 1. Open the Luigi's Mansion world folder.
 2. Open the "datapacks" folder.
 3. Drop the data pack folder (named "E3 Demo") in this folder.
-4. Go back a folder.
+4. Go back to the Luigi's Mansion world folder.
 5. Open the "dimensions" folder.
 6. Drop the *contents* of the folder named "Dimension" in this folder, *not* the folder itself.
 

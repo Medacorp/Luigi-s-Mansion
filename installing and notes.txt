@@ -1,5 +1,5 @@
 == NOTICE ==
-This map requires 1.21.4.
+This map requires 1.21.6.
 
 Bugs should be reported on the github here: https://github.com/Medacorp/Luigi-s-Mansion/issues
 Please do look if it's already reported.
@@ -74,15 +74,11 @@ Do not rename any add-on file names (nor unzip them if they were zipped), as the
 
 == Uninstalling add-ons ==
 The best way to uninstall add-ons is as follows:
-1. Go to the Underground Lab.
-2. Talk to E. Gadd.
-3. Select the normal mansion.
-4. Wait for E. Gadd to go back inside the lab.
-5. Have every player in the world be in the Boo woods. Being in the lab or mansion may result in some broken behavior.
-Then close the world or server, and remove the data pack from the world.
-1. Go to the "Luigi's Mansion" world folder
-2. Go to the "datapacks" folder
-3. Delete the desired add-ons. (Do NOT delete the "MEDACORP" folder, as that's the base map behavior.)
+1. Have every player in the world be in the underground lab. Being elsewhere in the lab or mansion may result in some broken behavior.
+2. Close the world or server
+3. Go to the "Luigi's Mansion" world folder
+4. Go to the "datapacks" folder
+5. Delete the desired add-ons. (Do NOT delete the "MEDACORP" folder, as that's the base map behavior.)
 
 == Server properties requirements ==
 difficulty=<desired difficulty>
@@ -92,4 +88,4 @@ allow-flight=true
 Made by: Dhranios
 Research by: Skydier
 Trailer: Supersleiny
-Bug testing: Danish_Pirate, Feras_MQ, UltimateGold
+Bug testing: barksayfu, Danish_Pirate, Feras_MQ, UltimateGold

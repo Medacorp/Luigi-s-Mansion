@@ -9,7 +9,7 @@ title @s[scores={CreditsTime=300}] subtitle {type:"text",text:"Dhranios",color:"
 title @s[scores={CreditsTime=300}] title {type:"translatable",translate:"luigis_mansion:credits.functionality_and_models",color:"#598DC9"}
 title @s[scores={CreditsTime=400}] subtitle {type:"text",text:"Supersleiny",color:"#598DC9"}
 title @s[scores={CreditsTime=400}] title {type:"translatable",translate:"luigis_mansion:credits.trailer_creation",color:"#598DC9"}
-title @s[scores={CreditsTime=500}] subtitle {type:"text",text:"Danish_Pirate, Feras_MQ, UltimateGold",color:"#598DC9"}
+title @s[scores={CreditsTime=500}] subtitle {type:"text",text:"barksayfu, Danish_Pirate, Feras_MQ, UltimateGold",color:"#598DC9"}
 title @s[scores={CreditsTime=500}] title {type:"translatable",translate:"luigis_mansion:credits.beta_testing",color:"#598DC9"}
 title @s[scores={CreditsTime=600}] subtitle {type:"text",text:"Medacorp",color:"#598DC9"}
 title @s[scores={CreditsTime=600}] title {type:"translatable",translate:"luigis_mansion:credits.team",color:"#598DC9"}
