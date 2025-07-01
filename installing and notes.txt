@@ -1,5 +1,5 @@
 == NOTICE ==
-This map requires 1.21.6.
+This map requires 1.21.6 - 1.21.7.
 
 Bugs should be reported on the github here: https://github.com/Medacorp/Luigi-s-Mansion/issues
 Please do look if it's already reported.
@@ -7,7 +7,6 @@ Please do look if it's already reported.
 == Known issues ==
 
 * A bunch of sounds are missing
-** Conservatory instrument music
 ** Poltergust expelling dust, vacuuming with ball held, exploding
 ** Blue Twirler/Blue Blaze
 ** Ceiling Surprise/Purple Bomber hurt/flee/complain

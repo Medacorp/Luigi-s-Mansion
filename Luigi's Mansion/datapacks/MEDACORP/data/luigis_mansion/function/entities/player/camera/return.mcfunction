@@ -12,4 +12,5 @@ execute at @e[tag=model_positon,limit=1] run teleport @s ~ ~ ~ ~ ~
 kill @e[tag=model_positon,limit=1]
 tag @s[tag=!third_person_movement] remove separated_camera
 tag @s remove fully_separated_camera
+tag @s remove keep_camera_motion
 execute at @s run function luigis_mansion:main/update_last_position

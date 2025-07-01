@@ -1,3 +1,8 @@
+v3.3.2:
+* Updated pack formats to also not complain for 1.21.7
+* Fix music toast shows missing translation key
+* Changed biomes to shut off built-in music, like pale gardens, rather than overwriting sounds.json for that
+
 v3.3.1:
 * Updated to 1.21.6
 * Added the piano track of "Conductor of a Familiar Theme"
@@ -266,7 +271,7 @@ DISCLAIMER: this build is quite a bit more laggy due to some of the changes, thi
 * Several instances of furniture have been replaced with models
 * Added death messages
 * Added revive messages
-* Added selection meny system, replacing all click events
+* Added selection menu system, replacing all click events
 * Added new settings: (Global) Difficulty, (Global) Mirror Reflections, Teleport Frequency
 * Added difficulty effects; the higher the difficulty, the harder; total score gets a multiplier based on the lowest selected difficulty in the mansion
 * Added warp back to mansion path upon re-entering the world if you're too far away from the mansion

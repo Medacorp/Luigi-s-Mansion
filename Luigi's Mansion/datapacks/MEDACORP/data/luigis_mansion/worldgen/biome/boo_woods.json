@@ -10,7 +10,9 @@
 		"sky_color": 3355443,
 		"water_color": 4159204,
 		"water_fog_color": 329011,
-		"grass_color_modifier": "dark_forest"
+		"grass_color_modifier": "dark_forest",
+        "music": [],
+        "music_volume": 0.0
 	},
 	"carvers": [],
 	"features": [

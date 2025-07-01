@@ -12,6 +12,5 @@ When all tasks are cleared (3DS Remake add-on), you unlock the E. Gadd amiibo, w
 
 == Known issues ==
 
-* E3 Demo theme doesn't transition between different health values smoothly.
 * Body slammers are missing several sounds.
 * Poltergust 500 misses a few sounds.
