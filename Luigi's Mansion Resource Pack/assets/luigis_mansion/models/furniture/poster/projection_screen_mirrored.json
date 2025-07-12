@@ -1,0 +1,7 @@
+{
+	"parent": "luigis_mansion:furniture/poster_mirrored",
+	"textures": {
+		"x": "luigis_mansion:furniture/poster/projection_screen_x",
+		"y": "luigis_mansion:furniture/poster/projection_screen_y"
+	}
+}

@@ -24,6 +24,15 @@ data modify storage luigis_mansion:data reflections[-1].data.ItemRotation set fr
 data modify storage luigis_mansion:data reflections[-1].no_sync.Facing set from entity @s Facing
 execute if entity @s[type=minecraft:item_frame] run data modify storage luigis_mansion:data reflections[-1].entity_id set value "minecraft:item_frame"
 #/todelete
+data modify storage luigis_mansion:data reflections[-1].data.item set from entity @s item
+data modify storage luigis_mansion:data reflections[-1].data.item merge from storage luigis_mansion:data reflections[-1].data.item.components."minecraft:custom_data".mirror
+data modify storage luigis_mansion:data reflections[-1].data.transformation set from entity @s transformation
+execute if data storage luigis_mansion:data reflections[-1].data.transformation store result storage luigis_mansion:data reflections[-1].data.transformation.translation[0] float 0.01 run data get storage luigis_mansion:data reflections[-1].data.transformation.translation[0] -100
+execute if data storage luigis_mansion:data reflections[-1].data.transformation store result storage luigis_mansion:data reflections[-1].data.transformation.left_rotation[1] float 0.01 run data get storage luigis_mansion:data reflections[-1].data.transformation.left_rotation[1] -100
+execute if data storage luigis_mansion:data reflections[-1].data.transformation store result storage luigis_mansion:data reflections[-1].data.transformation.left_rotation[2] float 0.01 run data get storage luigis_mansion:data reflections[-1].data.transformation.left_rotation[2] -100
+execute if data storage luigis_mansion:data reflections[-1].data.transformation store result storage luigis_mansion:data reflections[-1].data.transformation.right_rotation[1] float 0.01 run data get storage luigis_mansion:data reflections[-1].data.transformation.right_rotation[1] -100
+execute if data storage luigis_mansion:data reflections[-1].data.transformation store result storage luigis_mansion:data reflections[-1].data.transformation.right_rotation[2] float 0.01 run data get storage luigis_mansion:data reflections[-1].data.transformation.right_rotation[2] -100
+execute if entity @s[type=minecraft:item_display] run data modify storage luigis_mansion:data reflections[-1].entity_id set value "minecraft:item_display"
 
 execute unless score @s ReflectionNr matches -2147483648.. run function luigis_mansion:entities/reflection/get_number
 execute store result storage luigis_mansion:data reflections[-1].id int 1 run scoreboard players get @s ReflectionNr

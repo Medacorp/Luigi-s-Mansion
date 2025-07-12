@@ -1,0 +1,55 @@
+{
+    "model": {
+        "type": "minecraft:composite",
+        "models": [
+            {
+                "type": "minecraft:select",
+                "property": "minecraft:custom_model_data",
+                "index": 0,
+                "cases": [
+                    {
+                        "when": "locked",
+                        "model": {
+                            "type": "minecraft:model",
+                            "model": "e3_demo:item/menu/game_boy_horror/map/door_locked"
+                        }
+                    }
+                ],
+                "fallback": {
+                    "type": "minecraft:model",
+                    "model": "e3_demo:item/menu/game_boy_horror/map/door"
+                }
+            },
+            {
+                "type": "minecraft:select",
+                "property": "minecraft:custom_model_data",
+                "index": 1,
+                "cases": [
+                    {
+                        "when": "lab",
+                        "model": {
+                            "type": "minecraft:model",
+                            "model": "luigis_mansion:item/menu/game_boy_horror/map/room",
+                            "tints": [
+                                {
+                                    "type": "minecraft:constant",
+                                    "value": 3042682
+                                }
+                            ]
+                        }
+                    }
+                ],
+                "fallback": {
+                    "type": "minecraft:model",
+                    "model": "luigis_mansion:item/menu/game_boy_horror/map/room",
+                    "tints": [
+                        {
+                            "type": "minecraft:constant",
+                            "value": 15004656
+                        }
+                    ]
+                }
+            }
+        ]
+    }
+}

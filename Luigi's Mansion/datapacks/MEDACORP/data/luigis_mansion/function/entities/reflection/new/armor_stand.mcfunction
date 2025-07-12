@@ -16,7 +16,7 @@ execute unless data storage luigis_mansion:data mirror.mirror{set_by_furniture_e
 execute if score #temp MirrorZ matches 0 as @e[tag=temp,limit=1] run function luigis_mansion:entities/reflection/position/x
 execute if score #temp MirrorZ matches 1 as @e[tag=temp,limit=1] run function luigis_mansion:entities/reflection/position/z
 
-execute at @e[tag=temp,limit=1] run summon minecraft:armor_stand ~ ~ ~ {CustomName:{type:"translatable",translate:"luigis_mansion:entity.reflection"},Tags:["reflection","new"],Marker:1b,NoGravity:1b,Invisible:1b}
+execute at @e[tag=temp,limit=1] run summon minecraft:armor_stand ~ ~ ~ {CustomName:{type:"translatable",translate:"luigis_mansion:entity.reflection"},Tags:["reflection","new","force_sync"],Marker:1b,NoGravity:1b,Invisible:1b}
 kill @e[tag=temp,limit=1]
 execute store result score @e[tag=new,limit=1] Room run data get storage luigis_mansion:data mirror.room
 execute store result score @e[tag=new,limit=1] ReflectionNr run data get storage luigis_mansion:data mirror.id

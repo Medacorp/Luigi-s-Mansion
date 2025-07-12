@@ -1,7 +1,12 @@
+v?:
+* Added GBH map models (not in use yet)
+* Changed leaving and re-entering the world while in an exterior cutscene will now skip it
+* Changed poster furniture to actual furniture; they also visually get attached to the closest vacuumer's poltergust
+
 v3.3.2:
 * Updated pack formats to also not complain for 1.21.7
-* Fix music toast shows missing translation key
 * Changed biomes to shut off built-in music, like pale gardens, rather than overwriting sounds.json for that
+* Fixed music toast shows missing translation key
 
 v3.3.1:
 * Updated to 1.21.6

@@ -1,0 +1,2 @@
+data modify storage luigis_mansion:data furniture set value {room:48,searchable:["vacuum"],no_dust:1b,boo_poster:1b}
+execute positioned 676.0 14 -23 rotated -90 0 run function luigis_mansion:spawn_furniture/poster/projection_screen

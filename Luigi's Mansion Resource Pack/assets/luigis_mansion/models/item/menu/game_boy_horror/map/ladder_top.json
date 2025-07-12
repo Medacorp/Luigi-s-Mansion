@@ -1,0 +1,6 @@
+{
+	"parent": "luigis_mansion:item/menu/game_boy_horror/map/ladder_bottom",
+    "textures": {
+		"0": "luigis_mansion:item/menu/game_boy_horror/map/stairs_top"
+	}
+}

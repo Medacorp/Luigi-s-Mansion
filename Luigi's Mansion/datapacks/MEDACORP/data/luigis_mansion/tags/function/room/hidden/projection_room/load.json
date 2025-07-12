@@ -3,6 +3,7 @@
         "luigis_mansion:room/hidden/projection_room/load/set_loaded",
         "luigis_mansion:room/hidden/projection_room/load/lights",
         "luigis_mansion:room/hidden/projection_room/load/billiards_room_door",
+        "luigis_mansion:room/hidden/projection_room/load/poster",
         "luigis_mansion:room/hidden/projection_room/load/projector",
         "luigis_mansion:room/hidden/projection_room/load/room_clear_chest"
     ]

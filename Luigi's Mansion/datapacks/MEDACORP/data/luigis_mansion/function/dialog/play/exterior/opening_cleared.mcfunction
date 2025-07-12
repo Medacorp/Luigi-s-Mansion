@@ -24,7 +24,7 @@ execute if score #dialog Dialog matches 2..230 as @e[tag=luigi,tag=this_player,l
 execute if score #dialog Dialog matches 1 as @a[tag=same_room] run function luigis_mansion:entities/player/camera/teleport {teleport:"852.0 92.5 -6.0 -68 -35"}
 execute if score #dialog Dialog matches 2..60 as @a[tag=same_room] run function luigis_mansion:entities/player/camera/teleport {teleport:"~ ~-0.04 ~-0.016 ~-0.3 ~0.5"}
 execute if score #dialog Dialog matches 61..230 as @a[tag=same_room] run function luigis_mansion:entities/player/camera/teleport {teleport:"~0.005 ~ ~-0.07 ~0.04 ~0.029"}
-execute if score #dialog Dialog matches 231 as @e[tag=luigi,tag=this_player,limit=1] run function luigis_mansion:entities/luigi/move/teleport {teleport:"829.8 89.9375 10 90 0"}
+execute if score #dialog Dialog matches 231 as @e[tag=luigi,tag=this_player,limit=1] run function luigis_mansion:entities/luigi/move/teleport {teleport:"829.8 90 10 90 0"}
 execute if score #dialog Dialog matches 231..240 as @a[tag=same_room] run function luigis_mansion:entities/player/camera/teleport {teleport:"829 89.9375 10 75 40"}
 execute if score #dialog Dialog matches 241..250 as @a[tag=same_room] run function luigis_mansion:entities/player/camera/teleport {teleport:"~ ~ ~ ~ ~4"}
 execute if score #dialog Dialog matches 251..300 as @a[tag=same_room] run function luigis_mansion:entities/player/camera/teleport {teleport:"829 89.9375 10 75 80"}

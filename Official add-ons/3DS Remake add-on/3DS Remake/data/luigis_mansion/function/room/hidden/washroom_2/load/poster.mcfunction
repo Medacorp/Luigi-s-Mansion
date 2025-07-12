@@ -1,0 +1,2 @@
+data modify storage luigis_mansion:data furniture set value {room:42,searchable:["vacuum"],no_dust:1b,boo_poster:1b,search_command:"function 3ds_remake:selection_menu/gallery_trophy/complete/master/task_9 {flag:'washroom_2'}"}
+execute positioned 662.0 23.5 -21.0 rotated -90 0 run function luigis_mansion:spawn_furniture/poster/large_monsters

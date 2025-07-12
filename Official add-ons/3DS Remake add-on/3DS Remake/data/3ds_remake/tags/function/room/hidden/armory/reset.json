@@ -25,7 +25,6 @@
         "3ds_remake:room/hidden/armory/reset/lamp",
         "3ds_remake:room/hidden/armory/reset/mirror",
         "3ds_remake:room/hidden/armory/reset/room_clear_chest",
-        "3ds_remake:room/hidden/armory/reset/shield",
-        "3ds_remake:room/hidden/armory/reset/vacuumable"
+        "3ds_remake:room/hidden/armory/reset/shield"
     ]
 }

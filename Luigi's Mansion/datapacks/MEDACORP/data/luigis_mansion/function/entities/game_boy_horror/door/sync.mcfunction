@@ -1,0 +1,2 @@
+$execute if data storage luigis_mansion:data current_state.current_data{used_keys:["$(name)"]} run function luigis_mansion:entities/game_boy_horror/door/unlock with entity @s data.key
+$execute if entity @s[tag=!spawned_key,tag=!unlocked] if data storage luigis_mansion:data current_state.current_data{obtained_keys:["$(name)"]} run function luigis_mansion:entities/game_boy_horror/door/spawn_key

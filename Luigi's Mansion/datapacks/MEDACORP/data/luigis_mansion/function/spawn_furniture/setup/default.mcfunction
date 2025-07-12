@@ -4,6 +4,7 @@ data remove storage luigis_mansion:data furniture.candle_flames_edit
 kill @e[tag=candle_angle]
 # Display and sound
 execute if entity @e[tag=this_entity,tag=!candelabra,type=minecraft:armor_stand,limit=1] run function luigis_mansion:spawn_furniture/setup/pose
+execute if entity @e[tag=this_entity,type=minecraft:item_display,limit=1] run function luigis_mansion:spawn_furniture/setup/transformation
 function luigis_mansion:spawn_furniture/setup/search_animations
 function luigis_mansion:spawn_furniture/setup/sound
 
@@ -28,6 +29,7 @@ execute if entity @e[tag=this_entity,tag=can_be_water_elemental_source,limit=1] 
 execute if entity @e[tag=this_entity,tag=can_be_ice_elemental_source,limit=1] run function luigis_mansion:spawn_furniture/setup/ice_elemental_source
 execute if entity @e[tag=this_entity,tag=!lamp,scores={FurnitureLightStrength=0..15},limit=1] run function luigis_mansion:spawn_furniture/setup/ambient_light
 execute if entity @e[tag=this_entity,tag=mirror,limit=1] run function luigis_mansion:spawn_furniture/setup/mirror_reflection
+execute if entity @e[tag=this_entity,tag=poster,limit=1] run function luigis_mansion:spawn_furniture/setup/boo_poster
 function luigis_mansion:spawn_furniture/setup/particles
 function luigis_mansion:spawn_furniture/setup/room
 execute if entity @e[tag=this_entity,tag=room_clear_chest,limit=1] run function luigis_mansion:spawn_furniture/setup/room_clear_chest_spawn_sound

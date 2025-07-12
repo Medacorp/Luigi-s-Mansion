@@ -1,0 +1,2 @@
+data modify storage luigis_mansion:data furniture set value {room:66,searchable:["vacuum"],no_dust:1b,scan_result:""}
+execute positioned 695.0 23.5 -82.0 rotated -90 0 run function luigis_mansion:spawn_furniture/poster/cloth

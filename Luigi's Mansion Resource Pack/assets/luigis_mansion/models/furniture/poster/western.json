@@ -1,0 +1,7 @@
+{
+	"parent": "luigis_mansion:furniture/poster",
+	"textures": {
+		"x": "luigis_mansion:furniture/poster/western_x",
+		"y": "luigis_mansion:furniture/poster/western_y"
+	}
+}

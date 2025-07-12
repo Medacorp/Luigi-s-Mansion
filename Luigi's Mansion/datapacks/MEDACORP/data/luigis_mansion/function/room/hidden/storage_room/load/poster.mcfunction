@@ -1,2 +1,2 @@
-execute if data storage luigis_mansion:data current_state.current_data.technical_data{moved_wall:1b} run summon minecraft:item_frame 681 13 61 {block_pos:[I;0,0,0],FIXED_block_pos:[I;681,13,61],Tags:["static","no_ai","freeze_animation","poster"],Facing:5b,CustomName:{type:"translatable",translate:"luigis_mansion:furniture.poster"},Fixed:1b,Invisible:1b,Silent:1b,Item:{id:"minecraft:filled_map",count:1,components:{"minecraft:map_id":314}}}
-execute if data storage luigis_mansion:data current_state.current_data.technical_data{moved_wall:1b} run scoreboard players set @e[x=681.5,y=13.0,z=61.5,distance=..2,type=minecraft:item_frame] Room 18
+data modify storage luigis_mansion:data furniture set value {room:18,searchable:["vacuum"],no_dust:1b}
+execute positioned 681.12 13.5 61 rotated -90 0 run function luigis_mansion:spawn_furniture/poster/danger

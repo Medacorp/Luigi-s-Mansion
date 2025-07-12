@@ -25,7 +25,6 @@
         "luigis_mansion:room/normal/armory/reset/lamp",
         "luigis_mansion:room/normal/armory/reset/mirror",
         "luigis_mansion:room/normal/armory/reset/room_clear_chest",
-        "luigis_mansion:room/normal/armory/reset/shield",
-        "luigis_mansion:room/normal/armory/reset/vacuumable"
+        "luigis_mansion:room/normal/armory/reset/shield"
     ]
 }

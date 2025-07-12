@@ -1,0 +1,2 @@
+execute if entity @s[tag=!cleared] unless data entity @s item.components."minecraft:custom_model_data"{strings:["lab"]} run function luigis_mansion:entities/game_boy_horror/room/sync with entity @s data
+execute if entity @s[tag=!cleared] if data entity @s item.components."minecraft:custom_model_data"{strings:["lab"]} run function luigis_mansion:entities/game_boy_horror/room/sync_lab with entity @s data

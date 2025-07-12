@@ -1,0 +1,24 @@
+{
+	"textures": {
+		"0": "luigis_mansion:item/menu/game_boy_horror/map/stairs_bottom",
+		"particle": "#0"
+	},
+	"elements": [
+		{
+			"from": [-8.25, -4, 1.5],
+			"to": [24.25, 0, 14.5],
+			"rotation": {"angle": 0, "axis": "y", "origin": [8, 0, 8]},
+			"faces": {
+				"north": {"uv": [0, 0, 16, 2], "texture": "#0"},
+				"south": {"uv": [0, 0, 16, 2], "texture": "#0"},
+				"up": {"uv": [0, 0, 16, 0.5], "texture": "#0"},
+				"down": {"uv": [0, 2, 16, 2.5], "texture": "#0"}
+			}
+		}
+	],
+	"display": {
+		"head": {
+			"translation": [0, 8, 0]
+		}
+	}
+}

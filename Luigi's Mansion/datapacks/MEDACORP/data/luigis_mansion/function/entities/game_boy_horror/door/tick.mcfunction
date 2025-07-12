@@ -1,0 +1,1 @@
+execute if entity @s[tag=!unlocked] run function luigis_mansion:entities/game_boy_horror/door/sync with entity @s data.key

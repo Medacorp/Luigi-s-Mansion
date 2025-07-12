@@ -34,7 +34,6 @@ execute if score #dialog Dialog matches 120 run clone 681 11 -49 689 17 -48 681 
 execute if score #dialog Dialog matches 140 run clone 681 11 -48 689 17 -47 681 11 -47 replace move
 execute if score #dialog Dialog matches 160 run clone 681 11 -47 689 17 -46 681 11 -46 replace move
 execute if score #dialog Dialog matches 160 run data modify storage luigis_mansion:data current_state.current_data.technical_data merge value {moved_wall:1b}
-execute if score #dialog Dialog matches 160 run function luigis_mansion:room/normal/storage_room/load/poster
 execute if score #dialog Dialog matches 180 run clone 681 11 -46 689 17 -45 681 11 -45 replace move
 execute if score #dialog Dialog matches 200 run clone 681 11 -45 689 17 -44 681 11 -44 replace move
 execute if score #dialog Dialog matches 210 run clone 681 11 -44 689 17 -43 681 11 -43 replace move
