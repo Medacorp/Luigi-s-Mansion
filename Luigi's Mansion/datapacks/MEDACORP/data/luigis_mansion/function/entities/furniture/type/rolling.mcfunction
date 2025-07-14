@@ -12,3 +12,4 @@ execute if score @s[tag=!searched,tag=in_water,tag=shaken_by_water] FurnitureVac
 execute if score @s[tag=!searched,tag=in_ice,tag=shaken_by_ice] FurnitureVacuum >= @s FurnitureSearch run scoreboard players operation @s SearcherID = @e[tag=same_room,tag=freezing_me,sort=nearest,limit=1] ID
 execute if score @s[tag=!searched] FurnitureVacuum >= @s FurnitureSearch run function luigis_mansion:entities/furniture/search/generic
 execute if score @s[tag=searched] FurnitureVacuum < @s FurnitureSearch run tag @s remove searched
+tag @s[scores={FurnitureVacuum=0}] add idle_furniture

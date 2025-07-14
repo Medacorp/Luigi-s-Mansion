@@ -1,7 +1,10 @@
 v?:
 * Added GBH map models (not in use yet)
+* Added cloth and poster furniture types
+** Poster furniture changed to actual furniture; they also visually get attached to the closest vacuumer's poltergust
+** Cloth type implemented, but not yet used, aside from a test entity
+* Optimized some furniture types to skip ticking if left along
 * Changed leaving and re-entering the world while in an exterior cutscene will now skip it
-* Changed poster furniture to actual furniture; they also visually get attached to the closest vacuumer's poltergust
 
 v3.3.2:
 * Updated pack formats to also not complain for 1.21.7

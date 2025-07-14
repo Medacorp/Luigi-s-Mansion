@@ -13,13 +13,13 @@ data modify entity @e[tag=temp,limit=1] Rotation[0] set from entity @e[tag=this_
 execute as @e[tag=temp,limit=1] at @s positioned 0.0 0.0 0.0 run teleport @s ^ ^ ^1
 execute store result score #cosz Time run data get entity @e[tag=temp,limit=1] Pos[2] 1000
 data modify entity @e[tag=temp,limit=1] Rotation[0] set from entity @e[tag=this_entity,limit=1] Pose.Head[0]
-execute as @e[tag=temp,limit=1] at @s positioned 0.0 0.0 0.0 run teleport @s ^ ^ ^-1
+execute as @e[tag=temp,limit=1] at @s positioned 0.001 0.0 0.0 run teleport @s ^ ^ ^-1
 execute store result score #sinx Time run data get entity @e[tag=temp,limit=1] Pos[0] 1000
 data modify entity @e[tag=temp,limit=1] Rotation[0] set from entity @e[tag=this_entity,limit=1] Pose.Head[1]
-execute as @e[tag=temp,limit=1] at @s positioned 0.0 0.0 0.0 run teleport @s ^ ^ ^-1
+execute as @e[tag=temp,limit=1] at @s positioned 0.001 0.0 0.0 run teleport @s ^ ^ ^-1
 execute store result score #siny Time run data get entity @e[tag=temp,limit=1] Pos[0] 1000
 data modify entity @e[tag=temp,limit=1] Rotation[0] set from entity @e[tag=this_entity,limit=1] Pose.Head[2]
-execute as @e[tag=temp,limit=1] at @s positioned 0.0 0.0 0.0 run teleport @s ^ ^ ^-1
+execute as @e[tag=temp,limit=1] at @s positioned 0.001 0.0 0.0 run teleport @s ^ ^ ^-1
 execute store result score #sinz Time run data get entity @e[tag=temp,limit=1] Pos[0] 1000
 kill @e[tag=temp]
 

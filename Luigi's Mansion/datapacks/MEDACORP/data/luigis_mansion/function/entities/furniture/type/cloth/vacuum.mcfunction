@@ -5,8 +5,8 @@ execute store result storage luigis_mansion:data macro.facing_y double 0.01 run 
 scoreboard players reset #temp EntityYOffset
 data modify storage luigis_mansion:data macro.facing_z set from entity @s Pos[2]
 tag @s add me
-$execute if entity @s[scores={SearcherID=-2147483648..}] as @e[tag=vacuuming_me,scores={ID=$(puller)},limit=1] run function luigis_mansion:entities/furniture/type/poster/limit_player with storage luigis_mansion:data macro
-execute unless entity @s[scores={SearcherID=-2147483648..}] as @e[tag=vacuuming_me,sort=nearest,limit=1] run function luigis_mansion:entities/furniture/type/poster/target
+$execute if entity @s[scores={SearcherID=-2147483648..}] as @e[tag=vacuuming_me,scores={ID=$(puller)},limit=1] run function luigis_mansion:entities/furniture/type/cloth/limit_player with storage luigis_mansion:data macro
+execute unless entity @s[scores={SearcherID=-2147483648..}] as @e[tag=vacuuming_me,sort=nearest,limit=1] run function luigis_mansion:entities/furniture/type/cloth/target
 tag @s remove me
 
 scoreboard players operation #temp2 PositionX = @s PositionX
@@ -85,19 +85,36 @@ scoreboard players add @s FurnitureVacuum 1
 scoreboard players set @s[scores={FurnitureVacuum=5..}] FurnitureVacuum -5
 scoreboard players operation #temp FurnitureVacuum = @s FurnitureVacuum
 execute if score #temp FurnitureVacuum matches ..-1 run scoreboard players operation #temp FurnitureVacuum *= #-1 Constants
-data modify storage luigis_mansion:data transformation set from entity @s data.default_transformation
 execute unless entity @s[scores={SearcherID=-2147483648..}] run scoreboard players operation #temp FurnitureSizeLeft < #temp FurnitureVacuum
-execute unless entity @s[scores={SearcherID=-2147483648..}] run scoreboard players operation #temp FurnitureSizeUp < #temp FurnitureVacuum
+execute unless entity @s[scores={SearcherID=-2147483648..}] run scoreboard players operation #temp FurnitureSizeUp = #temp FurnitureVacuum
 execute unless entity @s[scores={SearcherID=-2147483648..}] run scoreboard players operation #temp FurnitureSizeForward < #temp FurnitureVacuum
 scoreboard players operation #temp FurnitureVacuum *= #-1 Constants
 execute unless entity @s[scores={SearcherID=-2147483648..}] run scoreboard players operation #temp FurnitureSizeLeft > #temp FurnitureVacuum
-execute unless entity @s[scores={SearcherID=-2147483648..}] run scoreboard players operation #temp FurnitureSizeUp > #temp FurnitureVacuum
 execute unless entity @s[scores={SearcherID=-2147483648..}] run scoreboard players operation #temp FurnitureSizeForward > #temp FurnitureVacuum
-execute store result storage luigis_mansion:data transformation[2] float 0.1 run scoreboard players operation #temp FurnitureSizeLeft *= #2 Constants
-execute store result storage luigis_mansion:data transformation[6] float 0.1 run scoreboard players operation #temp FurnitureSizeUp *= #2 Constants
-execute store result storage luigis_mansion:data transformation[10] float 0.1 run scoreboard players operation #temp FurnitureSizeForward *= #2 Constants
-execute if score #temp FurnitureSizeForward matches 0 run data modify storage luigis_mansion:data transformation[10] set value 0.01f
+data modify storage luigis_mansion:data transformation set from entity @s data.default_transformation
+execute store result score #temp Time run data get storage luigis_mansion:data transformation[5] 20
+execute unless entity @s[scores={SearcherID=-2147483648..}] run scoreboard players operation #temp FurnitureSizeUp += #temp Time
+execute store result storage luigis_mansion:data transformation[1] float 0.05 run scoreboard players get #temp FurnitureSizeLeft
+execute store result storage luigis_mansion:data transformation[5] float 0.05 run scoreboard players get #temp FurnitureSizeUp
+execute if score #temp FurnitureSizeUp matches 0 run data modify storage luigis_mansion:data transformation[5] set value 0.01f
+execute store result storage luigis_mansion:data transformation[9] float 0.05 run scoreboard players get #temp FurnitureSizeForward
+execute store result score #temp Time run data get storage luigis_mansion:data transformation[0] 10
+scoreboard players operation #temp FurnitureSizeLeft /= #temp Time
+execute store result score #temp Time run data get storage luigis_mansion:data transformation[10] 10
+scoreboard players operation #temp FurnitureSizeForward /= #temp Time
+scoreboard players operation #temp Time = #temp FurnitureSizeLeft
+execute if score #temp Time matches ..-1 unless score #temp FurnitureSizeForward matches 1.. run scoreboard players operation #temp Time *= #-1 Constants
+execute if score #temp Time matches 1.. unless score #temp FurnitureSizeForward matches ..-1 run scoreboard players operation #temp Time *= #-1 Constants
+tag @s[scores={FurnitureSearch=..40}] remove pulled_front
+tag @s[scores={FurnitureSearch=..40}] remove pulled_back
+tag @s[scores={FurnitureSearch=..40}] remove pulled_left
+tag @s[scores={FurnitureSearch=..40}] remove pulled_right
+execute if score #temp Time matches 1.. if score #temp FurnitureSizeForward > #temp Time run tag @s[scores={FurnitureSearch=..40}] add pulled_front
+execute if score #temp Time matches ..-1 if score #temp FurnitureSizeForward < #temp Time run tag @s[scores={FurnitureSearch=..40}] add pulled_back
+execute if score #temp Time matches 1.. if score #temp FurnitureSizeForward < #temp Time if score #temp FurnitureSizeLeft matches 1.. run tag @s[scores={FurnitureSearch=..40}] add pulled_left
+execute if score #temp Time matches ..-1 if score #temp FurnitureSizeForward > #temp Time if score #temp FurnitureSizeLeft matches ..-1 run tag @s[scores={FurnitureSearch=..40}] add pulled_right
 data modify entity @s transformation set from storage luigis_mansion:data transformation
+data modify storage luigis_mansion:data temp_transformation set from storage luigis_mansion:data transformation
 data remove storage luigis_mansion:data transformation
 tag @s add transformed
 
@@ -112,6 +129,11 @@ scoreboard players reset #temp FurnitureVacuum
 scoreboard players reset #temp FurnitureSizeLeft
 scoreboard players reset #temp FurnitureSizeUp
 scoreboard players reset #temp FurnitureSizeForward
+scoreboard players reset #temp Time
 scoreboard players reset #temp2 PositionX
 scoreboard players reset #temp2 PositionY
 scoreboard players reset #temp2 PositionZ
+
+scoreboard players operation @s FurnitureSearch += #temp FurnitureSearch
+scoreboard players reset #temp FurnitureSearch
+execute if entity @s[scores={SearcherID=-2147483648..,FurnitureSearch=40..}] run function luigis_mansion:entities/furniture/type/cloth/vacuum_up with entity @s data

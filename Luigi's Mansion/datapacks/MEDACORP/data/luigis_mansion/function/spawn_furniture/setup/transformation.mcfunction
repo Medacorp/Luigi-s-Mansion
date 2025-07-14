@@ -16,4 +16,17 @@ execute as @e[tag=this_entity,limit=1] run data modify entity @s data.default_tr
 #execute as @e[tag=this_entity,limit=1] run data modify entity @s data.default_transformation[14] set from entity @s transformation
 #execute as @e[tag=this_entity,limit=1] run data modify entity @s data.default_transformation[15] set from entity @s transformation
 execute if data storage luigis_mansion:data furniture.pose run data modify entity @e[tag=this_entity,limit=1] data.default_transformation set from storage luigis_mansion:data furniture.pose
+
+execute as @e[tag=this_entity,tag=requires_hitbox,scores={FurnitureSizeRadius=1..},limit=1] run scoreboard players operation #furniture FurnitureSizeRadius = @s FurnitureSizeRadius
+execute as @e[tag=this_entity,tag=requires_hitbox,scores={FurnitureSizeRadius=1..},limit=1] run scoreboard players operation #furniture FurnitureSizeRadius *= #2 Constants
+execute as @e[tag=this_entity,tag=requires_hitbox,scores={FurnitureSizeRadius=1..},limit=1] store result entity @s data.default_transformation[0] float 0.1 run scoreboard players get #furniture FurnitureSizeRadius
+execute as @e[tag=this_entity,tag=requires_hitbox,scores={FurnitureSizeWidth=1..},limit=1] store result entity @s data.default_transformation[0] float 0.1 run scoreboard players get @s FurnitureSizeWidth
+execute as @e[tag=this_entity,tag=requires_hitbox,scores={FurnitureSizeLeft=1..},limit=1] store result entity @s data.default_transformation[0] float 0.1 run scoreboard players get @s FurnitureSizeLeft
+execute as @e[tag=this_entity,tag=requires_hitbox,scores={FurnitureSizeRadius=1..},limit=1] store result entity @s data.default_transformation[5] float 0.1 run scoreboard players get #furniture FurnitureSizeRadius
+execute as @e[tag=this_entity,tag=requires_hitbox,scores={FurnitureSizeHeight=1..},limit=1] store result entity @s data.default_transformation[5] float 0.1 run scoreboard players get @s FurnitureSizeHeight
+execute as @e[tag=this_entity,tag=requires_hitbox,scores={FurnitureSizeUp=1..},limit=1] store result entity @s data.default_transformation[5] float 0.1 run scoreboard players get @s FurnitureSizeUp
+execute as @e[tag=this_entity,tag=requires_hitbox,scores={FurnitureSizeRadius=1..},limit=1] store result entity @s data.default_transformation[10] float 0.1 run scoreboard players get #furniture FurnitureSizeRadius
+execute as @e[tag=this_entity,tag=requires_hitbox,scores={FurnitureSizeWidth=1..},limit=1] store result entity @s data.default_transformation[10] float 0.1 run scoreboard players get @s FurnitureSizeWidth
+execute as @e[tag=this_entity,tag=requires_hitbox,scores={FurnitureSizeForward=1..},limit=1] store result entity @s data.default_transformation[10] float 0.1 run scoreboard players get @s FurnitureSizeForward
 execute as @e[tag=this_entity,limit=1] run data modify entity @s transformation set from entity @s data.default_transformation
+scoreboard players reset #furniture FurnitureSizeRadius

@@ -5,7 +5,7 @@ furniture:{
     // Display and sound
     pose: [...f] //The furniture's positioning data, depends on entity type.
         //Armor stand's head Pose. The jaw is ignored, and the pitch is clamped to -90..90, execution rotation pitch is ignored. Default = defined by furniture, generally [0.0f,0.01f,0.0f]
-        //Item display's transformation matrix. Matrix format required. Default = defined by furniture, generally [XScalef,0f,0f,0f,0f,YScalef,0f,0f,0f,0f,ZScalef,0f,0f,0f,0f,1f]
+        //Item display's transformation matrix. Matrix format required. Default = defined by furniture, generally [XScalef,0f,0f,Xtranslationf,0f,YScalef,0f,Ytranslationf,0f,0f,ZScalef,Ztranslationf,0f,0f,0f,1f]
     no_long_shake:1b, //When set disables the long shaking animation from manual search. Default = 0b.
     no_short_shake:1b, //When set disables the short shaking animation from manual search. Default = 0b.
     no_visual_shake:1b, //When set disables the shaking animations visually; sound will still play. Default = 0b.
@@ -49,7 +49,7 @@ furniture:{
         namespace: "luigis_mansion", //The namespace of the furniture loot chance. Default = "luigis_mansion".
         id: "health_dependent_1", //The ID of the furniture loot chance. Default = "null".
     },
-    search_command:"...", //Command to trigger on manual search (requires searchable to have "interact" method). Runs as the furniture at the searcher (who's tagged "searcher"). Default = none.
+    search_command:"...", //Command to trigger on search. Runs as the furniture at the searcher (who's tagged "searcher"). Default = none.
     can_hide_boo:1b, //If this furniture is randomly selected by boos to hide in. Default = 0b.
     scan_result: //Result from GBH scan. Not provided = ignored by scan. Has several formats and behaviors.
         * {namespace:"luigis_mansion",id:"scan/scanner/1"}, //Dialog as a result from GBH scan. Gooigi scan always results in the "3ds_remake:scan/scanner/gooigi" dialog if the ID starts with "scan/scanner/".
@@ -81,7 +81,7 @@ furniture:{
     mirror_reflection:1b, //Whether the mirror will actually reflect the room, otherwise gets a solid glass texture. Valid for mirrors only. Default = 1b. Forced to 0b if the yaw rotation is not a multiple of 90, or pose pitch has a non-0 value.
     boo_poster:1b, //Whether or not this is a Boo poster and cannot be vacuumed up. Default = 0b.
     no_spawn_sound:1b, //Whether the unsearched room clear chest's spawn sound/cutscene is disabled, searched room clear chests always have it disabled, regardless of this value. Valid for room clear chests only. Can be set to 2b to disable the cutscene only. Default = 0b.
-    hitbox:{ //The size of the hitbox, only applies to and required for scan areas.
+    hitbox:{ //The size of the hitbox, only applies to and required for scan areas, cloths and posters.
         type:"standing", //How the hitbox is aligned to the spawn position, "standing" is bottom aligned, "hanging" is top aligned. Default = centered.
         radius:X, //A ball hitbox, value is the radius in tenths of a block.
         box:{ //A box shaped hitbox.

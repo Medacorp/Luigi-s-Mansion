@@ -18,11 +18,11 @@ execute as @e[tag=temp,limit=1] at @s positioned 0.0 0.0 0.0 run teleport @s ^ ^
 execute store result score #cosy Time run data get entity @e[tag=temp,limit=1] Pos[2] 10
 
 data modify entity @e[tag=temp,limit=1] Rotation[0] set from entity @s Rotation[1]
-execute as @e[tag=temp,limit=1] at @s positioned 0.0 0.0 0.0 run teleport @s ^ ^ ^-1
+execute as @e[tag=temp,limit=1] at @s positioned 0.001 0.0 0.0 run teleport @s ^ ^ ^-1
 execute store result score #sinx Time run data get entity @e[tag=temp,limit=1] Pos[0] 10
 
 data modify entity @e[tag=temp,limit=1] Rotation[0] set from entity @s Rotation[0]
-execute as @e[tag=temp,limit=1] at @s positioned 0.0 0.0 0.0 run teleport @s ^ ^ ^-1
+execute as @e[tag=temp,limit=1] at @s positioned 0.001 0.0 0.0 run teleport @s ^ ^ ^-1
 execute store result score #siny Time run data get entity @e[tag=temp,limit=1] Pos[0] 10
 
 kill @e[tag=temp]

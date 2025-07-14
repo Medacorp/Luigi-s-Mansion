@@ -2,6 +2,7 @@ scoreboard players reset #candle_flames Selected
 execute if data storage luigis_mansion:data furniture.candle_flames_edit[0] if entity @e[tag=this_entity,tag=candelabra,limit=1] if score #debug_messages Selected matches 1.. run tellraw @a {type:"translatable",translate:"luigis_mansion:message.debug.format",with:[{type:"translatable",translate:"luigis_mansion:message.debug",color:"gold"},{type:"translatable",translate:"luigis_mansion:message.debug.candle_flame.too_many",color:"red",with:[{type:"selector",selector:"@s"}]}]}
 data remove storage luigis_mansion:data furniture.candle_flames_edit
 kill @e[tag=candle_angle]
+execute if entity @e[tag=this_entity,tag=requires_hitbox,limit=1] run function luigis_mansion:spawn_furniture/setup/hitbox
 # Display and sound
 execute if entity @e[tag=this_entity,tag=!candelabra,type=minecraft:armor_stand,limit=1] run function luigis_mansion:spawn_furniture/setup/pose
 execute if entity @e[tag=this_entity,type=minecraft:item_display,limit=1] run function luigis_mansion:spawn_furniture/setup/transformation

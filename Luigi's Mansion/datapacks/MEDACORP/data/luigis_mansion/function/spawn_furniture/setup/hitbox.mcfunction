@@ -1,0 +1,13 @@
+execute if data storage luigis_mansion:data furniture.hitbox.radius store result score @e[tag=this_entity,limit=1] FurnitureSizeRadius run data get storage luigis_mansion:data furniture.hitbox.radius
+execute if data storage luigis_mansion:data furniture.hitbox.box store result score @e[tag=this_entity,limit=1] FurnitureSizeWidth run data get storage luigis_mansion:data furniture.hitbox.box.width
+execute if data storage luigis_mansion:data furniture.hitbox.box store result score @e[tag=this_entity,limit=1] FurnitureSizeHeight run data get storage luigis_mansion:data furniture.hitbox.box.height
+execute if data storage luigis_mansion:data furniture.hitbox.rotated_box store result score @e[tag=this_entity,limit=1] FurnitureSizeLeft run data get storage luigis_mansion:data furniture.hitbox.rotated_box.left
+execute if data storage luigis_mansion:data furniture.hitbox.rotated_box store result score @e[tag=this_entity,limit=1] FurnitureSizeUp run data get storage luigis_mansion:data furniture.hitbox.rotated_box.up
+execute if data storage luigis_mansion:data furniture.hitbox.rotated_box store result score @e[tag=this_entity,limit=1] FurnitureSizeForward run data get storage luigis_mansion:data furniture.hitbox.rotated_box.forward
+# Cloth always is hanging
+tag @e[tag=this_entity,tag=cloth,limit=1] add hanging_furniture
+execute if data storage luigis_mansion:data furniture.hitbox{type:"hanging"} run tag @e[tag=this_entity,tag=!cloth,limit=1] add hanging_furniture
+execute if data storage luigis_mansion:data furniture.hitbox{type:"standing"} run tag @e[tag=this_entity,tag=!cloth,limit=1] add standing_furniture
+# Type hanging -> align the top of the area with the provided coordinate, type standing -> same but bottom, other/none provided -> area is centered in height
+execute unless data storage luigis_mansion:data furniture.hitbox.radius unless data storage luigis_mansion:data furniture.hitbox.box unless data storage luigis_mansion:data furniture.hitbox.rotated_box run tag @e[tag=this_entity,limit=1] add remove_from_existence
+execute unless data storage luigis_mansion:data furniture.hitbox.radius unless data storage luigis_mansion:data furniture.hitbox.box unless data storage luigis_mansion:data furniture.hitbox.rotated_box if score #debug_messages Selected matches 1.. run tellraw @a {type:"translatable",translate:"luigis_mansion:message.debug.format",with:[{type:"translatable",translate:"luigis_mansion:message.debug",color:"gold"},{type:"translatable",translate:"luigis_mansion:message.debug.missing_hitbox",color:"red",with:[{type:"selector",selector:"@e[tag=this_entity,limit=1]"},{type:"selector",selector:"@e[tag=this_entity,limit=1]"}]}]}

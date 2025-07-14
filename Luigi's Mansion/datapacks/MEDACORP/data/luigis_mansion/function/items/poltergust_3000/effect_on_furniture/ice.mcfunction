@@ -1,3 +1,4 @@
+tag @s remove idle_furniture
 tag @s add in_ice
 execute if entity @s[scores={FurnitureElementUp=-2147483648..}] run function luigis_mansion:items/poltergust_3000/effect_on_furniture/ice_element
 tag @s[tag=shaken_by_ice,nbt=!{data:{furniture_type:"rolling"}},nbt=!{data:{furniture_type:"swinging"}},nbt=!{data:{furniture_type:"swirling"}}] add shake

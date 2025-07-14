@@ -15,11 +15,11 @@ scoreboard players set @s[tag=!loaded_chunk_triggered] LoadedChunks 0
 tag @s[tag=!loaded_chunk_triggered] remove loaded_chunks
 tag @s remove loaded_chunk_triggered
 
+execute if entity @s[tag=!joined] run function luigis_mansion:other/join_world
+
 scoreboard players operation #temp Room = @s Room
 execute as @e[tag=!model_piece,tag=!reflection] run function luigis_mansion:main/get_same_room
 scoreboard players reset #temp Room
-
-execute if entity @s[tag=!joined] run function luigis_mansion:other/join_world
 
 execute unless score @s PreviousRoom = @s Room run tag @s remove seen_room_name
 execute unless score @s PreviousRoom = @s Room run stopsound @s[scores={RoomNoise=1..}] ambient

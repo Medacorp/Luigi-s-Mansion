@@ -1,5 +1,5 @@
 execute unless entity @s[tag=!remove_from_existence,tag=!dead] run tag @s remove lit
-$execute unless entity @s[tag=static,tag=!drop_loot] run function luigis_mansion:entities/furniture/type/$(furniture_type)
+$execute unless entity @s[tag=static,tag=!drop_loot] if entity @s[tag=!idle_furniture] run function luigis_mansion:entities/furniture/type/$(furniture_type)
 execute if entity @s[tag=mirror,tag=reflects_entities] if score #global_mirror_reflections Selected matches 1 run function luigis_mansion:entities/furniture/type/mirror
 execute if entity @s[tag=elemental_source] run function luigis_mansion:entities/furniture/type/elemental_source
 execute if entity @s[tag=lamp] run function luigis_mansion:entities/furniture/type/lamp
