@@ -1,2 +1,2 @@
-data modify storage luigis_mansion:data furniture set value {room:25,searchable:["vacuum"],no_dust:1b}
+data modify storage luigis_mansion:data furniture set value {room:25,searchable:["vacuum"],no_dust:1b,hitbox:{rotated_box:{left:10,up:15,forward:2}}}
 execute positioned 661 13.5 42.0 rotated -180 0 run function luigis_mansion:spawn_furniture/poster/trumpet_ghost

@@ -1,2 +1,2 @@
-data modify storage luigis_mansion:data furniture set value {room:18,searchable:["vacuum"],no_dust:1b}
+data modify storage luigis_mansion:data furniture set value {room:18,searchable:["vacuum"],no_dust:1b,hitbox:{rotated_box:{left:10,up:15,forward:2}}}
 execute positioned 681.12 13.5 61 rotated -90 0 run function luigis_mansion:spawn_furniture/poster/danger

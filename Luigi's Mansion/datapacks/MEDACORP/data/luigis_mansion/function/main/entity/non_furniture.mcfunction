@@ -8,6 +8,7 @@ execute if entity @s[tag=!debug_entity] if score #debug_entities Selected matche
 
 execute if entity @s[type=minecraft:item] run function luigis_mansion:main/items
 
+execute at @s run teleport @s ~0.001 ~ ~0.001
 execute store result score @s PositionIntX run data get entity @s Pos[0]
 execute store result score @s PositionIntY run data get entity @s Pos[1] 100
 execute at @s unless block ~ ~ ~ #luigis_mansion:flashlight_path if block ~ ~0.1 ~ #luigis_mansion:flashlight_path run scoreboard players add @s PositionIntY 10
@@ -18,3 +19,4 @@ execute store result score @s PositionX run data get entity @s Pos[0] 10
 execute store result score @s PositionY run data get entity @s Pos[1] 10
 execute store result score @s PositionZ run data get entity @s Pos[2] 10
 scoreboard players operation @s PositionY += @s EntityYOffset
+execute at @s run teleport @s ~-0.001 ~ ~-0.001

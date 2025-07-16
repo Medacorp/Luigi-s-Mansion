@@ -1,2 +1,2 @@
-data modify storage luigis_mansion:data furniture set value {room:48,searchable:["vacuum"],no_dust:1b,boo_poster:1b,search_command:"function 3ds_remake:selection_menu/gallery_trophy/complete/master/task_9 {flag:'projection_room'}"}
+data modify storage luigis_mansion:data furniture set value {room:48,searchable:["vacuum"],no_dust:1b,boo_poster:1b,hitbox:{rotated_box:{left:90,up:40,forward:2}},search_command:"function 3ds_remake:selection_menu/gallery_trophy/complete/master/task_9 {flag:'projection_room'}"}
 execute positioned 676.0 14 -23 rotated -90 0 run function luigis_mansion:spawn_furniture/poster/projection_screen

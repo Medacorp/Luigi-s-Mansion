@@ -82,9 +82,9 @@ furniture:{
     boo_poster:1b, //Whether or not this is a Boo poster and cannot be vacuumed up. Default = 0b.
     no_spawn_sound:1b, //Whether the unsearched room clear chest's spawn sound/cutscene is disabled, searched room clear chests always have it disabled, regardless of this value. Valid for room clear chests only. Can be set to 2b to disable the cutscene only. Default = 0b.
     hitbox:{ //The size of the hitbox, only applies to and required for scan areas, cloths and posters.
-        type:"standing", //How the hitbox is aligned to the spawn position, "standing" is bottom aligned, "hanging" is top aligned. Default = centered.
-        radius:X, //A ball hitbox, value is the radius in tenths of a block.
-        box:{ //A box shaped hitbox.
+        type:"standing", //How the hitbox is aligned to the spawn position, "standing" is bottom aligned, "hanging" is top aligned. Default = centered. Cloth is always hanging.
+        radius:X, //Scan area only. A ball hitbox, value is the radius in tenths of a block.
+        box:{ //Scan area only. A box shaped hitbox.
             height:X, //The height in tenths of a block.
             width:X //The width in tenths of a block.
         },

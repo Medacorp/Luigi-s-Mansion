@@ -1,2 +1,2 @@
-data modify storage luigis_mansion:data furniture set value {room:42,searchable:["vacuum"],no_dust:1b,boo_poster:1b}
-execute positioned 662.0 23.5 37.0 rotated -90 0 run function luigis_mansion:spawn_furniture/poster/large_monsters
+data modify storage luigis_mansion:data furniture set value {room:42,searchable:["vacuum"],no_dust:1b,boo_poster:1b,hitbox:{rotated_box:{left:20,up:30,forward:2}}}
+execute positioned 662.0 23.5 37.0 rotated -90 0 run function luigis_mansion:spawn_furniture/poster/monsters

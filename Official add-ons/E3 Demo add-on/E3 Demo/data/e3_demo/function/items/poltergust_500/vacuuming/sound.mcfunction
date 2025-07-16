@@ -6,9 +6,7 @@ execute if entity @s[tag=vacuuming_fabric,scores={PoltergustSound=20}] run plays
 execute if entity @s[tag=vacuuming_fabric,scores={PoltergustSound=15}] run playsound e3_demo:item.poltergust_500.catch_fabric player @a[tag=same_room] ~ ~ ~ 1
 execute if entity @s[tag=vacuuming_fabric,scores={PoltergustSound=10}] run playsound e3_demo:item.poltergust_500.catch_fabric player @a[tag=same_room] ~ ~ ~ 1
 execute if entity @s[tag=vacuuming_fabric,scores={PoltergustSound=5}] run playsound e3_demo:item.poltergust_500.catch_fabric player @a[tag=same_room] ~ ~ ~ 1
-tag @s remove vacuuming_fabric
 execute if entity @s[tag=vacuuming_poster,scores={PoltergustSound=20}] run playsound e3_demo:item.poltergust_500.catch_poster player @a[tag=same_room] ~ ~ ~ 1
 execute if entity @s[tag=vacuuming_poster,scores={PoltergustSound=15}] run playsound e3_demo:item.poltergust_500.catch_poster player @a[tag=same_room] ~ ~ ~ 1
 execute if entity @s[tag=vacuuming_poster,scores={PoltergustSound=10}] run playsound e3_demo:item.poltergust_500.catch_poster player @a[tag=same_room] ~ ~ ~ 1
 execute if entity @s[tag=vacuuming_poster,scores={PoltergustSound=5}] run playsound e3_demo:item.poltergust_500.catch_poster player @a[tag=same_room] ~ ~ ~ 1
-tag @s remove vacuuming_poster

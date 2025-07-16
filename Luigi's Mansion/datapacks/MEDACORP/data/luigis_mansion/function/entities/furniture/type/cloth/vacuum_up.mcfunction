@@ -13,6 +13,6 @@ execute store result score @s PositionY run data get entity @s Pos[1] 10
 execute store result score @s PositionZ run data get entity @s Pos[2] 10
 execute if score #temp Time matches ..0 run tag @s add remove_from_existence
 $execute if score #temp Time matches ..0 as @e[nbt={UUID:$(blocked_furniture)},limit=1] run function luigis_mansion:entities/furniture/search/removed_cloth
-execute if score #temp Time matches ..0 run function luigis_mansion:entities/furniture/search/generic
 $execute if score #temp Time matches ..0 at @e[tag=vacuuming_me,scores={ID=$(puller)},limit=1] run function luigis_mansion:spawn_entities/vacuumed_cloth
+execute if score #temp Time matches ..0 run function luigis_mansion:entities/furniture/search/generic
 scoreboard players reset #temp Time

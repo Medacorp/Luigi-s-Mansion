@@ -29,4 +29,6 @@ execute if entity @s[tag=!expelling,tag=poltergust_selected,tag=poltergust_grabb
 execute if entity @s[tag=expelling,tag=poltergust_selected,tag=poltergust_grabbed,tag=!disable_poltergust] positioned ~ ~0.5 ~ run function e3_demo:items/poltergust_500/expelling
 execute if entity @s[tag=vaporizing_ghost] as @e[tag=captured,tag=element_death,tag=same_room] at @s run function e3_demo:items/poltergust_500/vaporize
 tag @s remove vaporizing_ghost
+tag @s remove vacuuming_fabric
+tag @s remove vacuuming_poster
 scoreboard players set @s[tag=!vacuuming_ghost] GhostCount 0
