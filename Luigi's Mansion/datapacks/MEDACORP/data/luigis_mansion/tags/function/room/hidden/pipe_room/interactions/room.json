@@ -1,8 +1,6 @@
 {
     "values": [
         "luigis_mansion:room/hidden/pipe_room/interactions/room/crate",
-        "luigis_mansion:room/hidden/pipe_room/interactions/room/frozen_barrel",
-        "luigis_mansion:room/hidden/pipe_room/interactions/room/ice",
         "luigis_mansion:room/hidden/pipe_room/interactions/room/sewage"
     ]
 }

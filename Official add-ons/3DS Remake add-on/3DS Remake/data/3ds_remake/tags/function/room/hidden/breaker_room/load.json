@@ -2,9 +2,22 @@
     "values": [
         "3ds_remake:room/hidden/breaker_room/load/set_loaded",
         "3ds_remake:room/hidden/breaker_room/load/lights",
+        "3ds_remake:room/hidden/breaker_room/load/barrel_1",
+        "3ds_remake:room/hidden/breaker_room/load/barrel_2",
+        "3ds_remake:room/hidden/breaker_room/load/barrel_3",
+        "3ds_remake:room/hidden/breaker_room/load/barrel_4",
+        "3ds_remake:room/hidden/breaker_room/load/barrel_5",
+        "3ds_remake:room/hidden/breaker_room/load/barrel_6",
+        "3ds_remake:room/hidden/breaker_room/load/barrel_7",
+        "3ds_remake:room/hidden/breaker_room/load/barrel_8",
+        "3ds_remake:room/hidden/breaker_room/load/barrel_9",
+        "3ds_remake:room/hidden/breaker_room/load/barrel_10",
+        "3ds_remake:room/hidden/breaker_room/load/barrel_11",
         "3ds_remake:room/hidden/breaker_room/load/cobweb_1",
         "3ds_remake:room/hidden/breaker_room/load/cobweb_2",
         "3ds_remake:room/hidden/breaker_room/load/hallway_7_door",
+        "3ds_remake:room/hidden/breaker_room/load/oil_drum_1",
+        "3ds_remake:room/hidden/breaker_room/load/oil_drum_2",
         "3ds_remake:room/hidden/breaker_room/load/room_clear_chest"
     ]
 }

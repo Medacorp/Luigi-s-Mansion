@@ -3,8 +3,6 @@
         "3ds_remake:room/hidden/pipe_room/reset/unload",
         "#3ds_remake:room/hidden/pipe_room/turn_lights/off",
         "3ds_remake:room/hidden/pipe_room/reset/crate",
-        "3ds_remake:room/hidden/pipe_room/reset/frozen_barrel",
-        "3ds_remake:room/hidden/pipe_room/reset/ice",
         "3ds_remake:room/hidden/pipe_room/reset/pipe",
         "3ds_remake:room/hidden/pipe_room/reset/room_clear_chest",
         "3ds_remake:room/hidden/pipe_room/reset/sewage"

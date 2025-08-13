@@ -1,0 +1,2 @@
+data modify storage luigis_mansion:data furniture set value {room:57,searchable:["interact","vacuum"],shake_animation:["interact","vacuum"],sound:{namespace:"luigis_mansion",id:"heavy_metal"},can_hide_boo:1b,scan_result:{namespace:"luigis_mansion",id:"scan/scanner/24"}}
+execute positioned 690 2 -45 rotated 45 0 run function luigis_mansion:spawn_furniture/oil_drum/left

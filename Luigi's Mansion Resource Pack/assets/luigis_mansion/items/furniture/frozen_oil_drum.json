@@ -1,0 +1,33 @@
+{
+    "model": {
+        "type": "minecraft:condition",
+        "property": "minecraft:custom_model_data",
+        "index": 0,
+        "on_false": {
+			"type": "minecraft:condition",
+			"property": "minecraft:custom_model_data",
+			"index": 1,
+			"on_false": {
+				"type": "minecraft:model",
+				"model": "luigis_mansion:furniture/oil_drum/frozen_left"
+			},
+			"on_true": {
+				"type": "minecraft:model",
+				"model": "luigis_mansion:furniture/oil_drum/frozen_right"
+			}
+		},
+        "on_true": {
+			"type": "minecraft:condition",
+			"property": "minecraft:custom_model_data",
+			"index": 1,
+			"on_false": {
+				"type": "minecraft:model",
+				"model": "luigis_mansion:furniture/oil_drum/half_frozen_left"
+			},
+			"on_true": {
+				"type": "minecraft:model",
+				"model": "luigis_mansion:furniture/oil_drum/half_frozen_right"
+			}
+		}
+    }
+}

@@ -1,2 +1,0 @@
-execute if entity @s[x=697.0,y=3,z=7.0,dx=1,dy=1,dz=1,tag=fire] run scoreboard players set #pipe_room_ice Searched 1
-execute if entity @s[x=697.0,y=3,z=7.0,dx=1,dy=1,dz=1,tag=ice] run scoreboard players reset #pipe_room_ice Searched

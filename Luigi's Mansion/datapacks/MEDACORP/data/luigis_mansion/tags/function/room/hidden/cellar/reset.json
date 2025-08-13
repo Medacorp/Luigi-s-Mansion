@@ -2,8 +2,6 @@
     "values": [
         "luigis_mansion:room/hidden/cellar/reset/unload",
         "#luigis_mansion:room/hidden/cellar/turn_lights/off",
-        "luigis_mansion:room/hidden/cellar/reset/barrel_1",
-        "luigis_mansion:room/hidden/cellar/reset/barrel_2",
         "luigis_mansion:room/hidden/cellar/reset/box_1",
         "luigis_mansion:room/hidden/cellar/reset/box_2",
         "luigis_mansion:room/hidden/cellar/reset/dust_1",

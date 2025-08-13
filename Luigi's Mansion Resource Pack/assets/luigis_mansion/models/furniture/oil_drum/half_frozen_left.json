@@ -1,0 +1,8 @@
+{
+	"parent": "luigis_mansion:furniture/oil_drum/left",
+	"textures": {
+		"0": "luigis_mansion:furniture/oil_drum/half_frozen_end",
+		"1": "luigis_mansion:furniture/oil_drum/half_frozen_front",
+		"2": "luigis_mansion:furniture/oil_drum/half_frozen_side"
+	}
+}

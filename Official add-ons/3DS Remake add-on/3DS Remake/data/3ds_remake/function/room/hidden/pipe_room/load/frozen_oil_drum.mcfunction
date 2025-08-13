@@ -1,0 +1,2 @@
+data modify storage luigis_mansion:data furniture set value {room:67,particles:"chilly_fog",ice_elemental_source:{cannot_disable:1b},searchable:["interact","vacuum"],shake_animation:["interact","vacuum"],sound:{namespace:"luigis_mansion",id:"heavy_metal"},can_hide_boo:1b,scan_result:{namespace:"luigis_mansion",id:"scan/scanner/24"}}
+execute positioned 698.3 3 8 rotated 90 0 run function luigis_mansion:spawn_furniture/oil_drum/half_frozen/left

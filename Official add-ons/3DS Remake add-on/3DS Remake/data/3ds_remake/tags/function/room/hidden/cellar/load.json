@@ -2,6 +2,8 @@
     "values": [
         "3ds_remake:room/hidden/cellar/load/set_loaded",
         "3ds_remake:room/hidden/cellar/load/lights",
+        "3ds_remake:room/hidden/cellar/load/barrel_1",
+        "3ds_remake:room/hidden/cellar/load/barrel_2",
         "3ds_remake:room/hidden/cellar/load/dust_1",
         "3ds_remake:room/hidden/cellar/load/dust_2",
         "3ds_remake:room/hidden/cellar/load/dust_3",

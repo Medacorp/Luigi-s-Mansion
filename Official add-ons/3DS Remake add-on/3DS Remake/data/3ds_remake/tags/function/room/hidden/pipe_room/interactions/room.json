@@ -1,8 +1,6 @@
 {
     "values": [
         "3ds_remake:room/hidden/pipe_room/interactions/room/crate",
-        "3ds_remake:room/hidden/pipe_room/interactions/room/frozen_barrel",
-        "3ds_remake:room/hidden/pipe_room/interactions/room/ice",
         "3ds_remake:room/hidden/pipe_room/interactions/room/sewage"
     ]
 }
