@@ -1,5 +1,5 @@
-execute in minecraft:overworld run setblock 27 0 0 minecraft:shulker_box
-execute in minecraft:overworld run data modify block 27 0 0 Items set from storage luigis_mansion:data ender_chest
+execute in minecraft:overworld run setblock 1 0 1 minecraft:shulker_box
+execute in minecraft:overworld run data modify block 1 0 1 Items set from storage luigis_mansion:data ender_chest
 data remove storage luigis_mansion:data ender_chest[{Slot:0b}]
 data remove storage luigis_mansion:data ender_chest[{Slot:1b}]
 data remove storage luigis_mansion:data ender_chest[{Slot:2b}]
@@ -30,6 +30,6 @@ data remove storage luigis_mansion:data ender_chest[{Slot:26b}]
 data remove storage luigis_mansion:data ender_chest
 
 tag @s add modifying_inventory
-execute in minecraft:overworld run loot replace entity @s enderchest.0 mine 27 0 0 minecraft:golden_pickaxe[minecraft:custom_data={drop_contents:1b}]
-execute in minecraft:overworld run setblock 27 0 0 minecraft:bedrock
+execute in minecraft:overworld run loot replace entity @s enderchest.0 mine 1 0 1 minecraft:golden_pickaxe[minecraft:custom_data={drop_contents:1b}]
+execute in minecraft:overworld run setblock 1 0 1 minecraft:bedrock
 tag @s remove modifying_inventory

@@ -1,4 +1,4 @@
-teleport @s ^-0.5 ^ ^0.15
+teleport @s ^-1 ^ ^0.3
 
 data modify entity @s equipment.head.components."minecraft:custom_model_data".strings[0] set value "normal"
 execute if data storage luigis_mansion:data ghost{tags:["element_hurt"]} run data modify entity @s equipment.head.components."minecraft:custom_model_data".strings[0] set value "burning"

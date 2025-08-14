@@ -25,3 +25,19 @@ function #luigis_mansion:login_data_sync
 function #luigis_mansion:upgrade_path
 
 tellraw @s {type:"translatable",translate:"chat.type.text",with:[{type:"translatable",translate:"luigis_mansion:entity.mansion",color:"green"},{type:"translatable",translate:"luigis_mansion:message.hover_event",with:[{type:"translatable",translate:"luigis_mansion:message.format_explanation.hover",hover_event:{action:"show_text",value:{type:"translatable",translate:"luigis_mansion:message.format_explanation.check"}}}]}]}
+tellraw @s [{text:"\n\nTODO:"}, \
+    {text:"\nLAB",hover_event:{action:"show_text",value:{text: \
+         "* Build rooms \
+        \n* Make functional GBH using new models \
+        \n* Make portrificationizing functional again \
+        \n* Make training fireworks spawn in the correct place \
+        \n* Create furniture models \
+        \n* Add 3DS add-on support \
+        \n* Add Extensive Training add-on support \
+        \n* Add E. Gadd call screens"}}}, \
+    {text:"\nMANSION",hover_event:{action:"show_text",value:{text: \
+         "* Create layout \
+        \n* Update spawn points and wall warps \
+        \n* Create rooms \
+        \n* Make functional GBH using new models \
+        \n* Add structure files of rooms for auto-generating for E3 Demo add-on"}}}]

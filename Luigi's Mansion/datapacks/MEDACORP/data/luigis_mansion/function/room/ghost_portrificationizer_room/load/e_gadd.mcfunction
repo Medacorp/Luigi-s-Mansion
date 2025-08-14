@@ -1,2 +1,2 @@
 execute unless entity @e[scores={Room=-3},tag=e_gadd,limit=1] run data modify storage luigis_mansion:data entity set value {room:-3,scan_result:{namespace:"luigis_mansion",id:"scan/entity/e_gadd"}}
-execute unless entity @e[scores={Room=-3},tag=e_gadd,limit=1] positioned 774 77 14 rotated -30 0 run function luigis_mansion:spawn_entities/e_gadd
+execute unless entity @e[scores={Room=-3},tag=e_gadd,limit=1] positioned 41 2 21 rotated -135 0 run function luigis_mansion:spawn_entities/e_gadd

@@ -1,10 +1,10 @@
 {
-    "type": "luigis_mansion:boo_woods",
+    "type": "luigis_mansion:new_boo_woods",
     "generator": {
         "type": "minecraft:flat",
         "settings": {
             "biome": "luigis_mansion:boo_woods",
-            "features": true,
+            "features": false,
             "lakes": false,
             "layers": [
                 {
@@ -13,15 +13,7 @@
                 },
                 {
                     "block": "minecraft:stone",
-                    "height": 86
-                },
-                {
-                    "block": "minecraft:dirt",
-                    "height": 2
-                },
-                {
-                    "block": "minecraft:grass_block",
-                    "height": 1
+                    "height": 255
                 }
             ]
         }

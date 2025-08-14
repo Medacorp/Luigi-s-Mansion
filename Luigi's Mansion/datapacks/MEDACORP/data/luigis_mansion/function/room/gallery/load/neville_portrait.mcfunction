@@ -1,2 +1,2 @@
 data modify storage luigis_mansion:data furniture set value {room:-4,searchable:["interact"],no_dust:1b,interact_animation:{namespace:"luigis_mansion",id:"inspect"}}
-execute positioned 765.04 79.5 -19 rotated -90 0 run function luigis_mansion:spawn_furniture/gallery_portrait/neville
+execute positioned 15 4.5 27.96 rotated -180 0 run function luigis_mansion:spawn_furniture/gallery_portrait/neville

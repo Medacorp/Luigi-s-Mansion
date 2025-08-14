@@ -1,5 +1,5 @@
 
-execute if entity @s[scores={PositionIntX=755}] run function luigis_mansion:entities/luigi/move/wall_warp_execute {execute:"in minecraft:overworld",teleport:"790 77 15 45 0"}
+execute if entity @s[scores={PositionIntX=755}] run function luigis_mansion:room/underground_lab/warp_to_from_wall
 execute if entity @s[scores={PositionIntX=743,PositionIntY=11..17}] run function luigis_mansion:entities/luigi/move/wall_warp_teleport {teleport:"~-25 ~ ~14"}
 execute if entity @s[scores={PositionIntX=743,PositionIntY=18..19}] run function luigis_mansion:entities/luigi/move/wall_warp_teleport {teleport:"~1 ~ ~"}
 execute if entity @s[scores={PositionIntZ=-3,PositionIntY=11..17,PositionIntX=744..754}] run function luigis_mansion:entities/luigi/move/wall_warp_teleport {teleport:"~-6 ~ ~-13"}

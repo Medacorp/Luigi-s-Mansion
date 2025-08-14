@@ -62,18 +62,10 @@
 		}
 	],
 	"display": {
-		"thirdperson_righthand": {
-			"rotation": [90, 0, 0],
-			"translation": [-8, -2.04, -3.901]
-		},
-		"thirdperson_lefthand": {
-			"rotation": [90, -180, 0],
-			"translation": [-8, -2.04, -3.901]
-		},
 		"head": {
 			"rotation": [0, -90, 0],
-			"translation": [0, -30.24, -12.75],
-			"scale": [1.6, 1.6, 1.6]
+			"translation": [0, -23.49, -25.6],
+			"scale": [3.2, 2.4, 3.2]
 		}
 	}
 }

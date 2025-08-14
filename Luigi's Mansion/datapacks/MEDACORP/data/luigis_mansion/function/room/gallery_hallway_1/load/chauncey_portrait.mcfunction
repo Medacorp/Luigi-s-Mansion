@@ -1,2 +1,2 @@
 data modify storage luigis_mansion:data furniture set value {room:-5,searchable:["interact"],no_dust:1b,interact_animation:{namespace:"luigis_mansion",id:"inspect"}}
-execute positioned 762 79.5 -25.96 rotated 0 0 run function luigis_mansion:spawn_furniture/gallery_portrait/chauncey
+execute positioned 10.04 4.5 29 rotated -90 0 run function luigis_mansion:spawn_furniture/gallery_portrait/chauncey

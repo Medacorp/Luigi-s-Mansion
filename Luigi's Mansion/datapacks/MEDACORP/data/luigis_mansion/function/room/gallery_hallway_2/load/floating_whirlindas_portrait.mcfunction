@@ -1,2 +1,2 @@
 data modify storage luigis_mansion:data furniture set value {room:-6,searchable:["interact"],no_dust:1b,interact_animation:{namespace:"luigis_mansion",id:"inspect"}}
-execute positioned 758 79.5 -34.96 rotated 0 0 run function luigis_mansion:spawn_furniture/gallery_portrait/floating_whirlindas
+execute positioned 5.04 4.5 33 rotated -90 0 run function luigis_mansion:spawn_furniture/gallery_portrait/floating_whirlindas

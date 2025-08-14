@@ -1,2 +1,2 @@
-execute if entity @s[x=733.5,y=83,z=-31.5,distance=..2,tag=vacuum] unless score #gallery_back_room_lamp_2 Search matches 1 run scoreboard players operation #gallery_back_room_lamp_2 SearcherID = #temp ID
-execute if entity @s[x=733.5,y=83,z=-31.5,distance=..2,tag=vacuum] unless score #gallery_back_room_lamp_2 Search matches 1 store success score #gallery_back_room_lamp_2 Search run scoreboard players add #gallery_back_room_lamp_2 Searching 1
+execute if entity @s[x=7.0,y=6,z=61.0,distance=..1.5,tag=vacuum] unless score #gallery_back_room_lamp_2 Search matches 1 run scoreboard players operation #gallery_back_room_lamp_2 SearcherID = #temp ID
+execute if entity @s[x=7.0,y=6,z=61.0,distance=..1.5,tag=vacuum] unless score #gallery_back_room_lamp_2 Search matches 1 store success score #gallery_back_room_lamp_2 Search run scoreboard players add #gallery_back_room_lamp_2 Searching 1

@@ -2,6 +2,4 @@ tag @e[tag=e_gadd] remove return_dialog
 tag @e[tag=e_gadd] remove ending_dialog
 tag @e[tag=e_gadd] remove ending
 tag @e[tag=e_gadd] add mario_to_normal
-scoreboard players set @e[tag=e_gadd] Dialog 0
-execute as @a run trigger EGaddGhostPortrificationizerRoomChoice set 0
-teleport @e[tag=e_gadd] 774 77 -12 90 0
+teleport @e[tag=e_gadd] 25.0 2 20 0 0

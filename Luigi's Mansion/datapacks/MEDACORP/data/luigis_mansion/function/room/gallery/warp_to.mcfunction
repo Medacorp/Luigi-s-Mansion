@@ -2,7 +2,7 @@ title @s subtitle ""
 execute if entity @s[tag=looking_at_map] run function luigis_mansion:selection_menu/game_boy_horror/exit
 tag @s[nbt=!{Dimension:"minecraft:overworld"}] remove loaded_chunks
 scoreboard players set @s[nbt=!{Dimension:"minecraft:overworld"}] LoadedChunks 0
-function luigis_mansion:entities/luigi/move/execute {execute:"in minecraft:overworld",teleport:"772 77 -20 90 0"}
+function luigis_mansion:entities/luigi/move/execute {execute:"in minecraft:overworld",teleport:"14 2 19 0 0"}
 scoreboard players set @s Room 1
 function luigis_mansion:entities/player/run_command_as_model {command:"scoreboard players set @s Room 1"}
 function luigis_mansion:items/poltergust_3000/remove_element

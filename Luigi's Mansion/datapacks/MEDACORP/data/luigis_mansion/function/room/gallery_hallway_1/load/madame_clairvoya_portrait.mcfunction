@@ -1,2 +1,2 @@
 data modify storage luigis_mansion:data furniture set value {room:-5,searchable:["interact"],no_dust:1b,interact_animation:{namespace:"luigis_mansion",id:"inspect"}}
-execute positioned 758 79.5 -21.04 rotated -180 0 run function luigis_mansion:spawn_furniture/gallery_portrait/madame_clairvoya
+execute positioned 13.96 4.5 33 rotated 90 0 run function luigis_mansion:spawn_furniture/gallery_portrait/madame_clairvoya
