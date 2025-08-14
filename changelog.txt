@@ -4,6 +4,7 @@ v?:
 ** Poster furniture changed to actual furniture; they also visually get attached to the closest vacuumer's poltergust
 ** Cloth type implemented, but not yet used, aside from a test entity
 * Added furniture models for:
+** Angel statues
 ** Barrels
 ** (Frozen) oil drums
 * Optimized some furniture types to skip ticking if left along

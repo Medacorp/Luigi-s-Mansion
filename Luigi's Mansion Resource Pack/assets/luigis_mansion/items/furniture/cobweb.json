@@ -6,13 +6,6 @@
         "scale": 1.0,
         "entries": [
             {
-                "threshold": 0,
-                "model": {
-                    "type": "minecraft:model",
-                    "model": "luigis_mansion:furniture/cobweb/undisturbed"
-                }
-            },
-            {
                 "threshold": 1,
                 "model": {
                     "type": "minecraft:model",
@@ -33,6 +26,10 @@
                     "model": "luigis_mansion:furniture/cobweb/broken"
                 }
             }
-        ]
+        ],
+		"fallback": {
+            "type": "minecraft:model",
+            "model": "luigis_mansion:furniture/cobweb/undisturbed"
+        }
     }
 }

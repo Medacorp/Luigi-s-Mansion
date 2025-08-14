@@ -6,13 +6,6 @@
         "scale": 1.0,
         "entries": [
             {
-                "threshold": 0,
-                "model": {
-                    "type": "minecraft:model",
-                    "model": "luigis_mansion:furniture/room_clear_chest/green/state_0"
-                }
-            },
-            {
                 "threshold": 1,
                 "model": {
                     "type": "minecraft:model",
@@ -40,6 +33,10 @@
                     "model": "luigis_mansion:furniture/room_clear_chest/green/state_4"
                 }
             }
-        ]
+        ],
+		"fallback": {
+            "type": "minecraft:model",
+            "model": "luigis_mansion:furniture/room_clear_chest/green/state_0"
+        }
     }
 }
