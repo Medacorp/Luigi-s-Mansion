@@ -1,0 +1,6 @@
+{
+	"parent": "luigis_mansion:furniture/gold_mirror/reflects",
+	"textures": {
+		"mirror": "luigis_mansion:furniture/mirror_solid"
+	}
+}

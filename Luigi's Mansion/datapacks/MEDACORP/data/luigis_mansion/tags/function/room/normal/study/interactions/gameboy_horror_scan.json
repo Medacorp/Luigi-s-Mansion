@@ -1,5 +1,7 @@
 {
     "values": [
+        "luigis_mansion:room/normal/study/interactions/gameboy_horror_scan/book_1",
+        "luigis_mansion:room/normal/study/interactions/gameboy_horror_scan/book_2",
         "luigis_mansion:room/normal/study/interactions/gameboy_horror_scan/bookshelf_1",
         "luigis_mansion:room/normal/study/interactions/gameboy_horror_scan/bookshelf_2",
         "luigis_mansion:room/normal/study/interactions/gameboy_horror_scan/bookshelf_3",

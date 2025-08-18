@@ -1,0 +1,2 @@
+data modify storage luigis_mansion:data furniture set value {room:24,pose:[0.0f,0.0f,0.0f],searchable:["interact","vacuum"],shake_animation:["interact","vacuum"],sound:{namespace:"luigis_mansion",id:"heavy_generic"},scan_result:"warp"}
+execute positioned 749.0 12.5 40.0 rotated 90 0 run function luigis_mansion:spawn_furniture/gold_mirror

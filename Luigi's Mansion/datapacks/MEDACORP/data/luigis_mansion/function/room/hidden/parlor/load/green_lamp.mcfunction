@@ -1,2 +1,2 @@
-data modify storage luigis_mansion:data furniture set value {room:3,searchable:["interact","vacuum"],shake_animation:["interact","vacuum"],sound:{namespace:"luigis_mansion",id:"wood"},scan_result:{namespace:"luigis_mansion",id:"scan/scanner/14"}}
+data modify storage luigis_mansion:data furniture set value {room:3,searchable:["interact","vacuum"],shake_animation:["interact","vacuum"],sound:{namespace:"luigis_mansion",id:"wood"},scan_result:{namespace:"luigis_mansion",id:"scan/scanner/28"}}
 execute positioned 727 21.3 -4 rotated -180 0 run function luigis_mansion:spawn_furniture/green_lamp

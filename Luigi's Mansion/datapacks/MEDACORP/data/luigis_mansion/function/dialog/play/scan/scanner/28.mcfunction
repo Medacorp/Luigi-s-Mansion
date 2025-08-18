@@ -2,21 +2,22 @@ execute store result score #temp ID run data get storage luigis_mansion:data dia
 execute as @e[tag=player] if score @s ID = #temp ID run tag @s add scanning_player
 scoreboard players reset #temp ID
 
-execute if score #dialog Dialog matches 2 if entity @a[tag=same_room,tag=next_dialog_line,limit=1] run scoreboard players add #dialog Dialog 1
+execute if score #dialog Dialog matches 2..3 if entity @a[tag=same_room,tag=next_dialog_line,limit=1] run scoreboard players add #dialog Dialog 1
 execute if score #dialog Dialog matches ..1 run scoreboard players add #dialog Dialog 1
-execute if entity @a[tag=same_room,tag=skip_dialog,limit=1] run scoreboard players set #dialog Dialog 3
-execute if score #dialog Dialog matches 2 as @a[tag=same_room,tag=!spectator,tag=!dialog_menu,tag=!using_selection_menu] run function luigis_mansion:selection_menu/dialog/original_menu
-execute if score #dialog Dialog matches 3.. as @a[tag=same_room,tag=dialog_menu] run function luigis_mansion:selection_menu/dialog/exit
+execute if entity @a[tag=same_room,tag=skip_dialog,limit=1] run scoreboard players set #dialog Dialog 4
+execute if score #dialog Dialog matches 2..3 as @a[tag=same_room,tag=!spectator,tag=!dialog_menu,tag=!using_selection_menu] run function luigis_mansion:selection_menu/dialog/original_menu
+execute if score #dialog Dialog matches 4.. as @a[tag=same_room,tag=dialog_menu] run function luigis_mansion:selection_menu/dialog/exit
 
 scoreboard players reset @a[tag=same_room,tag=!spectator] WarpTime
 tag @a[tag=scanning_player,limit=1] add prevent_item_lock
 execute as @a[tag=same_room,tag=!spectator,tag=game_boy_horror_menu] run function luigis_mansion:selection_menu/game_boy_horror/exit
-execute if score #dialog Dialog matches 1..2 as @e[tag=luigi,tag=!scanning_player,tag=same_room] run function luigis_mansion:entities/luigi/animation/set/idle_no_poltergust
-execute if score #dialog Dialog matches 1..2 as @e[tag=luigi,tag=scanning_player,limit=1] run function luigis_mansion:entities/luigi/animation/set/game_boy_horror
+execute if score #dialog Dialog matches 1..3 as @e[tag=luigi,tag=!scanning_player,tag=same_room] run function luigis_mansion:entities/luigi/animation/set/idle_no_poltergust
+execute if score #dialog Dialog matches 1..3 as @e[tag=luigi,tag=scanning_player,limit=1] run function luigis_mansion:entities/luigi/animation/set/game_boy_horror
 execute as @a[tag=scanning_player,limit=1] run function luigis_mansion:items/game_boy_horror/turn_screen_to_forced_value {value:"scanning",flags:[1b,0b],floats:[],tracker:[]}
-execute if score #dialog Dialog matches 1 run tellraw @a[tag=same_room] {type:"translatable",translate:"chat.type.text",with:[{type:"selector",selector:"@a[tag=scanning_player,limit=1]",color:"green"},{type:"translatable",translate:"luigis_mansion:message.player.scan_furniture.28"}]}
+execute if score #dialog Dialog matches 1 run tellraw @a[tag=same_room] {type:"translatable",translate:"chat.type.text",with:[{type:"selector",selector:"@a[tag=scanning_player,limit=1]",color:"green"},{type:"translatable",translate:"luigis_mansion:message.player.scan_furniture.127"}]}
+execute if score #dialog Dialog matches 3 if entity @a[tag=same_room,tag=next_dialog_line,limit=1] run tellraw @a[tag=same_room] {type:"translatable",translate:"chat.type.text",with:[{type:"selector",selector:"@a[tag=scanning_player,limit=1]",color:"green"},{type:"translatable",translate:"luigis_mansion:message.player.scan_furniture.28"}]}
 
-execute if score #dialog Dialog matches 3 run scoreboard players set #dialog Dialog -1
+execute if score #dialog Dialog matches 4 run scoreboard players set #dialog Dialog -1
 
 execute if score #dialog Dialog matches -1 as @e[tag=luigi,tag=!scanning_player,tag=same_room] run function luigis_mansion:entities/luigi/animation/set/none
 
