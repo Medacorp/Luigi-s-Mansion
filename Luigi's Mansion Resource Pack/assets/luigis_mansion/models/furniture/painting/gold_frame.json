@@ -2,8 +2,8 @@
 	"format_version": "1.21.6",
 	"credit": "Made with Blockbench",
 	"textures": {
-		"frame": "luigis_mansion:furniture/painting/gold_portrait",
-		"particle": "#image"
+		"frame": "luigis_mansion:furniture/painting/gold_frame",
+		"particle": "#frame"
 	},
 	"elements": [
 		{
@@ -144,14 +144,6 @@
 				"west": {"uv": [14, 6, 15, 12], "texture": "#frame"},
 				"up": {"uv": [15, 2, 16, 3], "rotation": 180, "texture": "#frame"},
 				"down": {"uv": [15, 4, 16, 3], "texture": "#frame"}
-			}
-		},
-		{
-			"from": [0, 0, 8],
-			"to": [16, 16, 8],
-			"rotation": {"angle": 0, "axis": "y", "origin": [13, -3, 7]},
-			"faces": {
-				"north": {"uv": [0, 0, 16, 16], "texture": "#image"}
 			}
 		}
 	],

@@ -1,0 +1,23 @@
+{
+	"format_version": "1.21.6",
+	"credit": "Made with Blockbench",
+	"textures": {
+		"particle": "#image"
+	},
+	"elements": [
+		{
+			"from": [0, 0, 8],
+			"to": [16, 16, 8],
+			"rotation": {"angle": 0, "axis": "y", "origin": [13, -3, 7]},
+			"faces": {
+				"north": {"uv": [0, 0, 16, 16], "texture": "#image"}
+			}
+		}
+	],
+	"display": {
+		"head": {
+			"translation": [0, -6.75, 0],
+			"scale": [1.6, 1.6, 1.6]
+		}
+	}
+}

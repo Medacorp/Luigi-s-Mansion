@@ -2,10 +2,10 @@
 	"format_version": "1.21.6",
 	"credit": "Made with Blockbench",
 	"textures": {
-		"frame": "luigis_mansion:furniture/painting/heart_portrait",
+		"frame": "luigis_mansion:furniture/painting/heart_frame",
 		"stand_1": "luigis_mansion:furniture/painting/frame_stand_1",
 		"stand_2": "luigis_mansion:furniture/painting/frame_stand_2",
-		"particle": "#image"
+		"particle": "#frame"
 	},
 	"elements": [
 		{

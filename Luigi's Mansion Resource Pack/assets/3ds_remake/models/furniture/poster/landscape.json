@@ -1,0 +1,7 @@
+{
+	"parent": "luigis_mansion:furniture/poster",
+	"textures": {
+		"x": "3ds_remake:furniture/poster/landscape_x",
+		"y": "3ds_remake:furniture/poster/landscape_y"
+	}
+}

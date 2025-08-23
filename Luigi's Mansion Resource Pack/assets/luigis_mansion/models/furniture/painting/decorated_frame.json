@@ -2,8 +2,8 @@
 	"format_version": "1.21.6",
 	"credit": "Made with Blockbench",
 	"textures": {
-		"frame": "luigis_mansion:furniture/painting/simple_portrait",
-		"particle": "#image"
+		"frame": "luigis_mansion:furniture/painting/simple_frame",
+		"particle": "#frame"
 	},
 	"elements": [
 		{
@@ -114,14 +114,6 @@
 				"east": {"uv": [4.5, 11, 5, 10], "rotation": 270, "texture": "#frame"},
 				"west": {"uv": [4, 10, 4.5, 11], "rotation": 90, "texture": "#frame"},
 				"up": {"uv": [7, 8.5, 8, 13.5], "rotation": 270, "texture": "#frame"}
-			}
-		},
-		{
-			"from": [0, 0, 8],
-			"to": [16, 16, 8],
-			"rotation": {"angle": 0, "axis": "y", "origin": [13, -3, 7]},
-			"faces": {
-				"north": {"uv": [0, 0, 16, 16], "texture": "#image"}
 			}
 		}
 	],
