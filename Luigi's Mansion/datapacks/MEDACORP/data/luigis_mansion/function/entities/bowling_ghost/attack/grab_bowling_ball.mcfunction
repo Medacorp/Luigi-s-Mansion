@@ -7,7 +7,7 @@ $execute if entity @s[scores={ActionTime=10}] run playsound $(namespace):entity.
 execute if entity @s[scores={ActionTime=10}] run data modify storage luigis_mansion:data entity set value {owner:-1,damage:{},no_ai:1b}
 execute if entity @s[scores={ActionTime=10}] run data modify storage luigis_mansion:data entity.damage set from entity @s data.damage
 execute if entity @s[scores={ActionTime=10}] run data modify storage luigis_mansion:data entity.owner set from entity @s UUID
-execute if entity @s[scores={ActionTime=10}] positioned ^ ^1.2 ^ run function luigis_mansion:spawn_entities/ball/bowling 
+execute if entity @s[scores={ActionTime=10}] positioned ^ ^1.2 ^ run function luigis_mansion:spawn_entities/ball/bowling
 execute if entity @s[scores={ActionTime=11..20}] unless score #mirrored Selected matches 1 run function luigis_mansion:entities/bowling_ghost/ball_position/grab/normal
 execute if entity @s[scores={ActionTime=11..20}] if score #mirrored Selected matches 1 run function luigis_mansion:entities/bowling_ghost/ball_position/grab/mirrored
 tag @s[scores={ActionTime=10}] add grabbed_ball

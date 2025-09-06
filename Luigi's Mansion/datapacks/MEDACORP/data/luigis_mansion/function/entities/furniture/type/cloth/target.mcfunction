@@ -68,7 +68,7 @@ scoreboard players operation #temp4 PositionY = #temp FurnitureSizeUp
 scoreboard players operation #temp4 PositionY < #temp3 PositionY
 scoreboard players operation #temp4 PositionY > #temp5 PositionY
 scoreboard players operation #temp4 PositionZ = #temp FurnitureSizeForward
-scoreboard players operation #temp4 PositionZ < #temp3 PositionZ
+execute if entity @e[tag=me,tag=front_pull_only] if score #temp FurnitureSizeForward matches ..-1 run scoreboard players operation #temp4 PositionZ < #temp3 PositionZ
 scoreboard players operation #temp4 PositionZ > #temp5 PositionZ
 scoreboard players operation #temp2 PositionX = #temp FurnitureSizeLeft
 scoreboard players operation #temp2 PositionY = #temp FurnitureSizeUp
