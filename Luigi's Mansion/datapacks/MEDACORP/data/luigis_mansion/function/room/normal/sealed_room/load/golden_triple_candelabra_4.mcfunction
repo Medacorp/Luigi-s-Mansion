@@ -1,2 +1,2 @@
 data modify storage luigis_mansion:data furniture set value {room:66,candle_flames:[{lit:1b},{lit:1b},{lit:1b}],searchable:["interact","vacuum"],shake_animation:["interact","vacuum"],sound:{namespace:"luigis_mansion",id:"generic"},scan_result:{namespace:"luigis_mansion",id:"scan/scanner/59"}}
-execute positioned 704 21 -70 rotated -90 0 run function luigis_mansion:spawn_furniture/golden_triple_candelabra
+execute positioned 705.0 21 -70 rotated -90 0 run function luigis_mansion:spawn_furniture/golden_triple_candelabra

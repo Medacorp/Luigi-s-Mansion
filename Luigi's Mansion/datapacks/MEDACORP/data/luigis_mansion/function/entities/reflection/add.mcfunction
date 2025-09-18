@@ -12,6 +12,7 @@ data modify storage luigis_mansion:data reflections[-1].no_sync.Pos set from ent
 data modify storage luigis_mansion:data reflections[-1].no_sync.Rotation set from entity @s Rotation
 data modify storage luigis_mansion:data reflections[-1].no_sync.HasVisualFire set from entity @s HasVisualFire
 data modify storage luigis_mansion:data reflections[-1].no_sync.tags set from entity @s Tags
+data modify storage luigis_mansion:data reflections[-1].data.Small set from entity @s Small
 data modify storage luigis_mansion:data reflections[-1].data.Pose set from entity @s Pose
 execute if data storage luigis_mansion:data reflections[-1].data.Pose.Head store result storage luigis_mansion:data reflections[-1].data.Pose.Head[1] float 0.01 run data get storage luigis_mansion:data reflections[-1].data.Pose.Head[1] -100
 execute if data storage luigis_mansion:data reflections[-1].data.Pose.Head store result storage luigis_mansion:data reflections[-1].data.Pose.Head[2] float 0.01 run data get storage luigis_mansion:data reflections[-1].data.Pose.Head[2] -100

@@ -1,0 +1,104 @@
+{
+	"format_version": "1.21.6",
+	"credit": "Made with Blockbench",
+	"textures": {
+		"particle": "luigis_mansion:furniture/gallery_portrait/gold_king_boo_frame",
+		"frame": "luigis_mansion:furniture/gallery_portrait/gold_king_boo_frame",
+		"image": "luigis_mansion:furniture/marios_portrait/active_overlay",
+		"image_back": "luigis_mansion:furniture/gallery_portrait/empty",
+		"image_3d": "luigis_mansion:furniture/marios_portrait/active"
+	},
+	"elements": [
+		{
+			"from": [0, -3, 7.5],
+			"to": [16, -1, 8.5],
+			"faces": {
+				"north": {"uv": [0, 4.5, 8, 5.5], "texture": "#frame"},
+				"east": {"uv": [8, 2, 8.5, 3], "texture": "#frame"},
+				"south": {"uv": [0, 3, 8, 4], "rotation": 180, "texture": "#frame"},
+				"west": {"uv": [8, 3, 8.5, 4], "texture": "#frame"},
+				"up": {"uv": [0, 4, 8, 4.5], "rotation": 180, "texture": "#frame"},
+				"down": {"uv": [0, 5.5, 8, 6], "rotation": 180, "texture": "#frame"}
+			}
+		},
+		{
+			"from": [0, -1, 7.5],
+			"to": [2, 17, 8.5],
+			"faces": {
+				"north": {"uv": [0, 9, 9, 10], "rotation": 90, "texture": "#frame"},
+				"east": {"uv": [0, 10, 9, 10.5], "rotation": 90, "texture": "#frame"},
+				"south": {"uv": [0, 10.5, 9, 11.5], "rotation": 90, "texture": "#frame"},
+				"west": {"uv": [0, 11.5, 9, 12], "rotation": 90, "texture": "#frame"}
+			}
+		},
+		{
+			"from": [14, -1, 7.5],
+			"to": [16, 17, 8.5],
+			"faces": {
+				"north": {"uv": [0, 6, 9, 7], "rotation": 90, "texture": "#frame"},
+				"east": {"uv": [0, 7, 9, 7.5], "rotation": 90, "texture": "#frame"},
+				"south": {"uv": [0, 7.5, 9, 8.5], "rotation": 90, "texture": "#frame"},
+				"west": {"uv": [0, 8.5, 9, 9], "rotation": 90, "texture": "#frame"}
+			}
+		},
+		{
+			"from": [0, 17, 7.5],
+			"to": [16, 19, 8.5],
+			"faces": {
+				"north": {"uv": [0, 1.5, 8, 2.5], "texture": "#frame"},
+				"east": {"uv": [8, 0, 8.5, 1], "texture": "#frame"},
+				"south": {"uv": [0, 0, 8, 1], "rotation": 180, "texture": "#frame"},
+				"west": {"uv": [8, 1, 8.5, 2], "texture": "#frame"},
+				"up": {"uv": [0, 1, 8, 1.5], "rotation": 180, "texture": "#frame"},
+				"down": {"uv": [0, 2.5, 8, 3], "rotation": 180, "texture": "#frame"}
+			}
+		},
+		{
+			"from": [2, -1, 8],
+			"to": [14, 17, 8.5],
+			"rotation": {"angle": 0, "axis": "y", "origin": [-14, 0, 0]},
+			"faces": {
+				"north": {"uv": [0, 0, 10.5, 16], "texture": "#image"},
+				"south": {"uv": [0, 0, 10.5, 16], "texture": "#image_back"}
+			}
+		},
+		{
+			"from": [8, -3, 7.195],
+			"to": [8, 19, 31.95],
+			"rotation": {"angle": -18.825, "axis": "y", "origin": [8, 8, 31.95]},
+			"faces": {
+				"west": {"uv": [0, 0, 5.25, 16], "texture": "#image_3d"}
+			}
+		},
+		{
+			"from": [8, -3, 7.195],
+			"to": [8, 19, 31.95],
+			"rotation": {"angle": 18.825, "axis": "y", "origin": [8, 8, 31.95]},
+			"faces": {
+				"east": {"uv": [5.25, 0, 10.5, 16], "texture": "#image_3d"}
+			}
+		},
+		{
+			"from": [0, 8, 6.05],
+			"to": [16, 8, 31.98],
+			"rotation": {"angle": -25.125, "axis": "x", "origin": [8, 8, 31.95]},
+			"faces": {
+				"up": {"uv": [0, 8, 10.5, 16], "rotation": 180, "texture": "#image_3d"}
+			}
+		},
+		{
+			"from": [0, 8, 6.05],
+			"to": [16, 8, 31.98],
+			"rotation": {"angle": 25.125, "axis": "x", "origin": [8, 8, 31.95]},
+			"faces": {
+				"down": {"uv": [0, 0, 10.5, 8], "rotation": 180, "texture": "#image_3d"}
+			}
+		}
+	],
+	"display": {
+		"head": {
+			"translation": [0, -6.5, 0],
+			"scale": [2.5, 2.5, 2.5]
+		}
+	}
+}

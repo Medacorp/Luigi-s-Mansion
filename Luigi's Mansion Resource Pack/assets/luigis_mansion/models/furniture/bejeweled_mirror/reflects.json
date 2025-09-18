@@ -1,0 +1,24 @@
+{
+	"format_version": "1.21.6",
+	"credit": "Made with Blockbench",
+	"textures": {
+		"particle": "luigis_mansion:furniture/mirror",
+		"image": "luigis_mansion:furniture/mirror"
+	},
+	"elements": [
+		{
+			"from": [-3, -9, 8],
+			"to": [19, 23, 8],
+			"rotation": {"angle": 0, "axis": "y", "origin": [8, -12, 7]},
+			"faces": {
+				"north": {"uv": [2.5, 0, 13.5, 16], "texture": "#image"}
+			}
+		}
+	],
+	"display": {
+		"head": {
+			"translation": [0, -11.25, 0],
+			"scale": [1.6, 1.6, 1.6]
+		}
+	}
+}

@@ -2,6 +2,7 @@
     "values": [
         "3ds_remake:room/hidden/sealed_room/load/set_loaded",
         "3ds_remake:room/hidden/sealed_room/load/lights",
+        "3ds_remake:room/hidden/sealed_room/load/bejeweled_mirror",
         "3ds_remake:room/hidden/sealed_room/load/blank_trophy_1",
         "3ds_remake:room/hidden/sealed_room/load/blank_trophy_2",
         "3ds_remake:room/hidden/sealed_room/load/emblemized_trophy_1",

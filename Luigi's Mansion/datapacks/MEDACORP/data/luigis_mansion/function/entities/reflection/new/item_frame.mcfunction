@@ -25,7 +25,7 @@ execute store result storage luigis_mansion:data temp.x int 1 run data get entit
 execute store result storage luigis_mansion:data temp.y int 1 run data get entity @e[tag=temp,limit=1] Pos[1]
 execute store result storage luigis_mansion:data temp.z int 1 run data get entity @e[tag=temp,limit=1] Pos[2]
 
-function luigis_mansion:entities/reflection/new/spawn_item_frame with storage luigis_mansion:data temp
+execute at @e[tag=temp,limit=1] run function luigis_mansion:entities/reflection/new/spawn_item_frame with storage luigis_mansion:data temp
 data remove storage luigis_mansion:data temp
 scoreboard players reset #temp MirrorZ
 kill @e[tag=temp,limit=1]

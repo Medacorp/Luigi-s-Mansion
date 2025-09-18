@@ -7,6 +7,7 @@ scoreboard players set #extra_gallery Selected 0
 function #luigis_mansion:loaded_add_ons
 function #luigis_mansion:post_loaded_add_ons
 
+tag @a add warn_for_add_ons
 scoreboard players add * Offline 1
 scoreboard players reset @e Offline
 scoreboard players set @a Offline 0

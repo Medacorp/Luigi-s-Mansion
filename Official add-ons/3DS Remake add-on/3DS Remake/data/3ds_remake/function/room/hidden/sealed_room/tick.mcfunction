@@ -5,8 +5,6 @@ scoreboard players set @e[tag=player,x=693,y=19,z=-88,dx=17,dy=7,dz=33] Room 66
 scoreboard players set #temp Room 66
 #/todelete
 
-execute as @e[scores={Room=66},tag=!model_piece,tag=!no_reflection,tag=!reflection,type=#luigis_mansion:reflected] if score #global_mirror_reflections Selected matches 1 run scoreboard players set @s MirrorX 694
-
 execute as @a[scores={Room=66}] run function 3ds_remake:room/hidden/sealed_room/tick_per_player
 
 #todelete - old furniture

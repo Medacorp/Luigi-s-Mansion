@@ -6,11 +6,17 @@ v?:
 * Added furniture models for:
 ** Angel statues
 ** Barrels
+** Bejeweled mirrors
 ** (Frozen) oil drums
-* Optimized some furniture types to skip ticking if left along
+** Gold mirrors
+** Posters
+** Mario's Portrait
+* Optimized some furniture types to skip ticking if left alone
 * Changed leaving and re-entering the world while in an exterior cutscene will now skip it
 * Fixed cellar dust not getting removed upon room reset
 * Fixed a few gameboy horror scan mistakes
+* Fixed master bedroom nightstand lamp had no interactions
+* Fixed item frame reflections weren't working
 
 v3.3.2:
 * Updated pack formats to also not complain for 1.21.7
