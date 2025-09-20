@@ -2,8 +2,6 @@ summon minecraft:armor_stand ~ ~-1.4 ~ {CustomName:{type:"translatable",translat
 teleport @e[tag=this_entity,limit=1] ~ ~-1.4 ~ ~ 0
 scoreboard players set @e[tag=this_entity,limit=1] FurnitureSizeWidth 6
 scoreboard players set @e[tag=this_entity,limit=1] FurnitureSizeHeight 5
-scoreboard players set @e[tag=this_entity,limit=1] FurnitureXOrigin 0
-scoreboard players set @e[tag=this_entity,limit=1] FurnitureZOrigin 0
 scoreboard players set @e[tag=this_entity,limit=1] FurnitureDustLeft 0
 scoreboard players set @e[tag=this_entity,limit=1] FurnitureDustUp 0
 scoreboard players set @e[tag=this_entity,limit=1] FurnitureDustForward 0

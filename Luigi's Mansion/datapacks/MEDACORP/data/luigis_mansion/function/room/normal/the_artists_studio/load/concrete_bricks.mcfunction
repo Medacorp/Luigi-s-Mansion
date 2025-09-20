@@ -1,0 +1,2 @@
+data modify storage luigis_mansion:data furniture set value {room:71,searchable:["interact","vacuum"],shake_animation:["interact","vacuum"],sound:{namespace:"luigis_mansion",id:"concrete"},loot_chance:{namespace:"luigis_mansion",id:"m50"},scan_result:{namespace:"luigis_mansion",id:"scan/scanner/78"}}
+execute positioned 699.0 29 -74.0 rotated 0 0 run function luigis_mansion:spawn_furniture/concrete_bricks/right
