@@ -3,12 +3,17 @@ v?:
 * Added cloth and poster furniture types
 ** Poster furniture changed to actual furniture; they also visually get attached to the closest vacuumer's poltergust
 ** Cloth type implemented, but not yet used, aside from a test entity
-* Added furniture models for:
+* Added furniture models for: 
+  (Do note that the original game has some furniture baked into the room geometry, especially the fourth wall.
+  The uninteractability of some horses portraits is as such intended)
 ** Angel statues
 ** Barrels
 ** Bejeweled mirrors
+** (Standing) Chauncey Portrait
+** Concrete Bricks
 ** (Frozen) oil drums
 ** Gold mirrors
+** Horses portrait
 ** Posters
 ** Mario's Portrait
 * Optimized some furniture types to skip ticking if left alone

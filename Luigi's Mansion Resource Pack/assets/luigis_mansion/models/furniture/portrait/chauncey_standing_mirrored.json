@@ -1,0 +1,6 @@
+{
+	"parent": "luigis_mansion:furniture/portrait/standing_frame_mirrored",
+	"textures": {
+		"image": "luigis_mansion:furniture/portrait/chauncey"
+	}
+}

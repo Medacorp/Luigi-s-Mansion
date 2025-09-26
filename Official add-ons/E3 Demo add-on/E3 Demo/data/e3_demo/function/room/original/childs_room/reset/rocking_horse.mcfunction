@@ -1,1 +1,0 @@
-scoreboard players reset #childs_room_rocking_horse

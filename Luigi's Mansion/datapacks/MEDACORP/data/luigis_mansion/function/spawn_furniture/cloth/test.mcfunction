@@ -1,4 +1,4 @@
-execute summon minecraft:item_display run data merge entity @s {transformation:{scale:[5.0f,0.5f,3.0f]},CustomName:"Cloth test",Marker:1b,NoGravity:1b,Invisible:1b,data:{entity:{namespace:"luigis_mansion",id:"furniture"},furniture_type:"cloth"},item:{id:"minecraft:diamond_pickaxe",count:1,components:{"minecraft:item_model":"luigis_mansion:furniture/cloth"}},Tags:["furniture","cloth","requires_hitbox","this_entity"]}
+execute summon minecraft:item_display run data merge entity @s {CustomName:"Cloth test",Marker:1b,NoGravity:1b,Invisible:1b,data:{entity:{namespace:"luigis_mansion",id:"furniture"},furniture_type:"cloth"},item:{id:"minecraft:diamond_pickaxe",count:1,components:{"minecraft:item_model":"luigis_mansion:furniture/cloth"}},Tags:["furniture","cloth","requires_hitbox","this_entity"]}
 teleport @e[tag=this_entity,limit=1] ^ ^ ^ ~ 0
 scoreboard players set @e[tag=this_entity,limit=1] FurnitureDustLeft 0
 scoreboard players set @e[tag=this_entity,limit=1] FurnitureDustUp 0

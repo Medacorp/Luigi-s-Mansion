@@ -3,8 +3,9 @@ teleport @e[tag=this_entity,limit=1] ~ ~-1.4 ~ ~ 0
 execute if data storage luigis_mansion:data current_state.portrait_ghost_ranks{sue_pea:-1b} as @e[tag=this_entity,limit=1] run data modify entity @s equipment.head merge from entity @s equipment.head.components."minecraft:custom_data".model_data.empty
 execute if data storage luigis_mansion:data current_state.portrait_ghost_ranks{sue_pea:0b} as @e[tag=this_entity,limit=1] run data modify entity @s equipment.head merge from entity @s equipment.head.components."minecraft:custom_data".model_data.bronze
 execute if data storage luigis_mansion:data current_state.portrait_ghost_ranks{sue_pea:1b} as @e[tag=this_entity,limit=1] run data modify entity @s equipment.head merge from entity @s equipment.head.components."minecraft:custom_data".model_data.silver
-scoreboard players set @e[tag=this_entity,limit=1] FurnitureSizeWidth 10
-scoreboard players set @e[tag=this_entity,limit=1] FurnitureSizeHeight 10
+scoreboard players set @e[tag=this_entity,limit=1] FurnitureSizeLeft 10
+scoreboard players set @e[tag=this_entity,limit=1] FurnitureSizeUp 10
+scoreboard players set @e[tag=this_entity,limit=1] FurnitureSizeForward 2
 scoreboard players set @e[tag=this_entity,limit=1] FurnitureDustLeft 0
 scoreboard players set @e[tag=this_entity,limit=1] FurnitureDustUp 0
 scoreboard players set @e[tag=this_entity,limit=1] FurnitureDustForward 0

@@ -4,8 +4,9 @@ execute if data storage 3ds_remake:data current_state.selected_portraits{spooky:
 execute if data storage 3ds_remake:data current_state.selected_portraits{spooky:0b} as @e[tag=this_entity,limit=1] run data modify entity @s equipment.head merge from entity @s equipment.head.components."minecraft:custom_data".model_data.bronze
 execute if data storage 3ds_remake:data current_state.selected_portraits{spooky:1b} as @e[tag=this_entity,limit=1] run data modify entity @s equipment.head merge from entity @s equipment.head.components."minecraft:custom_data".model_data.silver
 execute if data storage 3ds_remake:data current_state.selected_portraits{spooky:2b} as @e[tag=this_entity,limit=1] run data modify entity @s equipment.head merge from entity @s equipment.head.components."minecraft:custom_data".model_data.gold
-scoreboard players set @e[tag=this_entity,limit=1] FurnitureSizeWidth 10
-scoreboard players set @e[tag=this_entity,limit=1] FurnitureSizeHeight 10
+scoreboard players set @e[tag=this_entity,limit=1] FurnitureSizeLeft 10
+scoreboard players set @e[tag=this_entity,limit=1] FurnitureSizeUp 10
+scoreboard players set @e[tag=this_entity,limit=1] FurnitureSizeForward 2
 scoreboard players set @e[tag=this_entity,limit=1] FurnitureDustLeft 0
 scoreboard players set @e[tag=this_entity,limit=1] FurnitureDustUp 0
 scoreboard players set @e[tag=this_entity,limit=1] FurnitureDustForward 0
