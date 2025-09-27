@@ -4,7 +4,7 @@
         "models": [
             {
                 "type": "minecraft:model",
-                "model": "luigis_mansion:furniture/portrait/gold_frame"
+                "model": "luigis_mansion:furniture/portrait/decorated_frame"
             },
             {
                 "type": "minecraft:condition",

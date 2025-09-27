@@ -73,7 +73,6 @@ scoreboard players operation #temp2 FurnitureSizeForward /= #10 Constants
 scoreboard players operation #temp FurnitureSizeForward += #temp2 FurnitureSizeForward
 scoreboard players reset #temp2 FurnitureSizeForward
 
-
 scoreboard players operation #temp PositionX = @s FurnitureSizeLeft
 scoreboard players operation #temp PositionY = @s FurnitureSizeUp
 scoreboard players operation #temp PositionZ = @s FurnitureSizeForward
@@ -88,7 +87,29 @@ execute if entity @s[tag=!standing_furniture] run scoreboard players operation #
 execute if entity @s[tag=hanging_furniture] run scoreboard players set #temp PositionY 0
 scoreboard players operation #temp2 PositionZ -= #temp PositionZ
 
-execute if score #temp FurnitureSizeLeft >= #temp2 PositionX if score #temp FurnitureSizeLeft <= #temp PositionX if score #temp FurnitureSizeUp >= #temp2 PositionY if score #temp FurnitureSizeUp <= #temp PositionY if score #temp FurnitureSizeForward >= #temp2 PositionZ if score #temp FurnitureSizeForward <= #temp PositionZ run tag @s add hit
+scoreboard players operation #temp3 PositionX = #temp FurnitureSizeLeft
+scoreboard players operation #temp3 PositionX < #temp PositionX
+scoreboard players operation #temp3 PositionX > #temp2 PositionX
+scoreboard players operation #temp3 PositionY = #temp FurnitureSizeUp
+scoreboard players operation #temp3 PositionY < #temp PositionY
+scoreboard players operation #temp3 PositionY > #temp2 PositionY
+scoreboard players operation #temp3 PositionZ = #temp FurnitureSizeForward
+scoreboard players operation #temp3 PositionZ < #temp PositionZ
+scoreboard players operation #temp3 PositionZ > #temp2 PositionZ
+
+scoreboard players operation #temp PositionX = #temp FurnitureSizeLeft
+scoreboard players operation #temp PositionY = #temp FurnitureSizeUp
+scoreboard players operation #temp PositionZ = #temp FurnitureSizeForward
+scoreboard players operation #temp PositionX -= #temp3 PositionX
+scoreboard players operation #temp PositionY -= #temp3 PositionY
+scoreboard players operation #temp PositionZ -= #temp3 PositionZ
+scoreboard players operation #temp PositionX *= #temp PositionX
+scoreboard players operation #temp PositionY *= #temp PositionY
+scoreboard players operation #temp PositionZ *= #temp PositionZ
+scoreboard players operation #temp PositionX += #temp PositionY
+scoreboard players operation #temp PositionX += #temp PositionZ
+execute if score #temp PositionX matches ..25 run tag @s add hit
+
 scoreboard players reset #cosx
 scoreboard players reset #cosy
 scoreboard players reset #sinx
@@ -105,3 +126,6 @@ scoreboard players reset #temp2 PositionZ
 scoreboard players reset #temp2 FurnitureSizeLeft
 scoreboard players reset #temp2 FurnitureSizeUp
 scoreboard players reset #temp2 FurnitureSizeForward
+scoreboard players reset #temp3 PositionX
+scoreboard players reset #temp3 PositionY
+scoreboard players reset #temp3 PositionZ

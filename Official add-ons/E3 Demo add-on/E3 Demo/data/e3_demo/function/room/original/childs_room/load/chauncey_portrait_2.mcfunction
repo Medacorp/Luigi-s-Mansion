@@ -1,2 +1,2 @@
 data modify storage luigis_mansion:data furniture set value {room:10,shake_animation:["manual","vacuum"],sound:{namespace:"luigis_mansion",id:"generic"},scan_result:{namespace:"luigis_mansion",id:"scan/scanner/31"}}
-execute positioned 740 21.5 55.1 rotated 0 0 run function e3_demo:spawn_furniture/chauncey_portrait
+execute positioned 740 22 55.1 rotated 0 0 run function e3_demo:spawn_furniture/chauncey_portrait

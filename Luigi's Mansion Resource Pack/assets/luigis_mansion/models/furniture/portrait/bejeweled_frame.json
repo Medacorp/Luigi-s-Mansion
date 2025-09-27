@@ -2,8 +2,8 @@
 	"format_version": "1.21.6",
 	"credit": "Made with Blockbench",
 	"textures": {
-		"0": "luigis_mansion:furniture/painting/bejeweled_frame",
-		"particle": "luigis_mansion:furniture/painting/bejeweled_frame"
+		"0": "luigis_mansion:furniture/portrait/bejeweled_frame",
+		"particle": "#0"
 	},
 	"elements": [
 		{

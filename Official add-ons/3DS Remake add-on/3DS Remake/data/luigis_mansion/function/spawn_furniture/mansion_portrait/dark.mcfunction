@@ -1,0 +1,1 @@
+function luigis_mansion:spawn_furniture/mansion_portrait/light

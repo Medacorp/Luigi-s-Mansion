@@ -2,7 +2,6 @@
     "values": [
         "e3_demo:room/original/hallway_5/reset/unload",
         "#e3_demo:room/original/hallway_5/turn_lights/off",
-        "e3_demo:room/original/hallway_5/reset/lamp",
-        "e3_demo:room/original/hallway_5/reset/painting"
+        "e3_demo:room/original/hallway_5/reset/lamp"
     ]
 }

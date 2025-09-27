@@ -1,15 +1,8 @@
 execute unless score #hallway_6 Ticking matches 1 run function #e3_demo:room/original/hallway_6/load
 execute as @e[tag=player,x=667,y=10,z=4,dx=11,dy=7,dz=8] unless entity @s[scores={Room=11}] run scoreboard players operation @s LastRoom = @s Room
 scoreboard players set @e[tag=player,x=667,y=10,z=4,dx=11,dy=7,dz=8] Room 11
-#todelete - old furniture
-scoreboard players set #temp Room 11
-#/todelete
 
 execute as @a[scores={Room=11}] run function e3_demo:room/original/hallway_6/tick_per_player
-
-#todelete - old furniture
-function #e3_demo:room/original/hallway_6/interactions/room
-#/todelete
 
 scoreboard players set #temp Room 11
 execute as @e[tag=luigi,tag=!door_animation] run function luigis_mansion:main/get_same_room

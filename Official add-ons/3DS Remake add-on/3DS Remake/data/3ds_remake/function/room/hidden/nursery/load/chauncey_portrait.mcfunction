@@ -1,2 +1,2 @@
 data modify storage luigis_mansion:data furniture set value {room:10,searchable:["manual","vacuum"],shake_animation:["manual","vacuum"],sound:{namespace:"luigis_mansion",id:"generic"},can_hide_boo:1b,loot_chance:{namespace:"3ds_remake",id:"p50"},scan_result:{namespace:"luigis_mansion",id:"scan/scanner/31"}}
-execute positioned 739.1 21.5 61 rotated -90 0 run function luigis_mansion:spawn_furniture/chauncey_portrait
+execute positioned 739.1 22 61 rotated -90 0 run function luigis_mansion:spawn_furniture/chauncey_portrait

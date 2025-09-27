@@ -1,2 +1,2 @@
 data modify storage luigis_mansion:data furniture set value {room:47,searchable:["manual","vacuum"],shake_animation:["manual","vacuum"],sound:{namespace:"luigis_mansion",id:"generic"},scan_result:{namespace:"luigis_mansion",id:"scan/scanner/55"}}
-execute positioned 684.0 13 -72.9 rotated 0 0 run function luigis_mansion:spawn_furniture/horses_portrait
+execute positioned 683 13.5 -72.9 rotated 0 0 run function luigis_mansion:spawn_furniture/horses_portrait

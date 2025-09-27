@@ -73,7 +73,6 @@ scoreboard players operation #temp2 FurnitureSizeForward /= #10 Constants
 scoreboard players operation #temp FurnitureSizeForward += #temp2 FurnitureSizeForward
 scoreboard players reset #temp2 FurnitureSizeForward
 
-
 scoreboard players operation #temp PositionX = @s FurnitureSizeLeft
 scoreboard players operation #temp PositionY = @s FurnitureSizeUp
 scoreboard players operation #temp PositionZ = @s FurnitureSizeForward
@@ -124,6 +123,9 @@ scoreboard players reset #temp FurnitureSizeForward
 scoreboard players reset #temp2 PositionX
 scoreboard players reset #temp2 PositionY
 scoreboard players reset #temp2 PositionZ
+scoreboard players reset #temp2 FurnitureSizeLeft
+scoreboard players reset #temp2 FurnitureSizeUp
+scoreboard players reset #temp2 FurnitureSizeForward
 scoreboard players reset #temp3 PositionX
 scoreboard players reset #temp3 PositionY
 scoreboard players reset #temp3 PositionZ

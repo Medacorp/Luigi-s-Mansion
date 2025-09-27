@@ -5,7 +5,7 @@ v?:
 ** Cloth type implemented, but not yet used, aside from a test entity
 * Added furniture models for: 
   (Do note that the original game has some furniture baked into the room geometry, especially the fourth wall.
-  The uninteractability of some horses portraits is as such intended)
+  The uninteractability of some portraits is as such intended)
 ** Angel statues
 ** Barrels
 ** Bejeweled mirrors
@@ -15,6 +15,7 @@ v?:
 ** Gold mirrors
 ** Horses portrait
 ** Posters
+** Mansion Portrait
 ** Mario's Portrait
 * Optimized some furniture types to skip ticking if left alone
 * Changed leaving and re-entering the world while in an exterior cutscene will now skip it
@@ -22,6 +23,7 @@ v?:
 * Fixed a few gameboy horror scan mistakes
 * Fixed master bedroom nightstand lamp had no interactions
 * Fixed item frame reflections weren't working
+* Fixed missing mice in E3 Demo kitchen
 
 v3.3.2:
 * Updated pack formats to also not complain for 1.21.7
