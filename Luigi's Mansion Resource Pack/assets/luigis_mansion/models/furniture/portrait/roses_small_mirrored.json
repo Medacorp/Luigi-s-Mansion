@@ -1,0 +1,6 @@
+{
+	"parent": "luigis_mansion:furniture/portrait/22x32_small_mirrored",
+	"textures": {
+		"image": "luigis_mansion:furniture/portrait/roses"
+	}
+}

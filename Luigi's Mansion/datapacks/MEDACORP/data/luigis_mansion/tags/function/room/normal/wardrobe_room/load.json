@@ -4,8 +4,8 @@
         "luigis_mansion:room/normal/wardrobe_room/load/lights",
         "luigis_mansion:room/normal/wardrobe_room/load/anteroom_door",
         "luigis_mansion:room/normal/wardrobe_room/load/balcony_1_door",
-        "luigis_mansion:room/normal/wardrobe_room/load/painting_1",
         "luigis_mansion:room/normal/wardrobe_room/load/painting_2",
-        "luigis_mansion:room/normal/wardrobe_room/load/room_clear_loot_dropper"
+        "luigis_mansion:room/normal/wardrobe_room/load/room_clear_loot_dropper",
+        "luigis_mansion:room/normal/wardrobe_room/load/roses_portrait"
     ]
 }

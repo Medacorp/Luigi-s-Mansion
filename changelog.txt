@@ -9,14 +9,16 @@ v?:
 ** Angel statues
 ** Barrels
 ** Bejeweled mirrors
-** (Standing) Chauncey Portrait
-** Concrete Bricks
+** (Standing) Chauncey portraits
+** Concrete bricks
 ** (Frozen) oil drums
 ** Gold mirrors
-** Horses portrait
+** Horses portraits
 ** Posters
-** Mansion Portrait
-** Mario's Portrait
+** Pink flowers portraits
+** Roses portraits
+** Mansion portraits
+** Mario's portraits
 * Optimized some furniture types to skip ticking if left alone
 * Changed leaving and re-entering the world while in an exterior cutscene will now skip it
 * Fixed cellar dust not getting removed upon room reset

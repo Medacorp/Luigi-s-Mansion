@@ -1,0 +1,6 @@
+{
+	"parent": "luigis_mansion:furniture/portrait/gray_frame",
+	"textures": {
+		"frame": "luigis_mansion:furniture/portrait/yellow_frame"
+	}
+}

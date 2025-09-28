@@ -6,7 +6,7 @@
 		"1": "luigis_mansion:furniture/portrait/easel_2",
 		"2": "luigis_mansion:furniture/portrait/slim_easel",
 		"3": "luigis_mansion:furniture/concrete_brick",
-		"particle": "#0"
+		"particle": "luigis_mansion:furniture/portrait/easel_1"
 	},
 	"elements": [
 		{
@@ -14,7 +14,7 @@
 			"to": [17, 27, 7.5],
 			"rotation": {"angle": 10, "axis": "x", "origin": [8, 23.5, 8]},
 			"faces": {
-				"north": {"uv": [0, 0, 11, 16], "texture": "#image"},
+				"north": {"uv": [2.5, 0, 13.5, 16], "texture": "#image"},
 				"east": {"uv": [5, 3, 6, 16], "texture": "#2"},
 				"south": {"uv": [7, 3, 16, 16], "texture": "#2"},
 				"west": {"uv": [6, 3, 7, 16], "texture": "#2"},

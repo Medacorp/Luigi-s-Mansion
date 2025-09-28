@@ -1,9 +1,0 @@
-{
-	"parent": "luigis_mansion:furniture/portrait/gray_frame",
-	"display": {
-		"head": {
-			"translation": [0, -9.25, 0],
-			"scale": [0.984616, 0.8000005, 1.6]
-		}
-	}
-}

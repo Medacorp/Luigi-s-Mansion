@@ -1,2 +1,2 @@
 data modify storage luigis_mansion:data furniture set value {room:42,pose:[0.0f,0.0f,10.0f],no_ai:1b,animation:{frozen:1b}}
-execute positioned 666.9 22.5 40 rotated 90 0 run function luigis_mansion:spawn_furniture/mansion_portrait/light
+execute positioned 666.93 22.5 40 rotated 90 0 run function luigis_mansion:spawn_furniture/mansion_portrait/light

@@ -1,2 +1,2 @@
 data modify storage luigis_mansion:data furniture set value {room:69,candle_flames:[{tags:["light_me"]}],no_ai:1b,animation:{frozen:1b}}
-execute positioned 736.0 22.5 -27 rotated -90 0 run function luigis_mansion:spawn_furniture/triple_mounted_huge_wall_candelabra
+execute positioned 736.0 22.5 -27.0 rotated -90 0 run function luigis_mansion:spawn_furniture/triple_mounted_huge_wall_candelabra

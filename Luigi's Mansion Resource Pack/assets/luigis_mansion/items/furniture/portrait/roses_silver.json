@@ -1,0 +1,24 @@
+{
+    "model": {
+        "type": "minecraft:composite",
+        "models": [
+            {
+                "type": "minecraft:model",
+                "model": "luigis_mansion:furniture/portrait/square_gray_frame"
+            },
+            {
+                "type": "minecraft:condition",
+                "property": "minecraft:custom_model_data",
+                "index": 0,
+                "on_false": {
+                    "type": "minecraft:model",
+                    "model": "luigis_mansion:furniture/portrait/roses_silver"
+                },
+                "on_true": {
+                    "type": "minecraft:model",
+                    "model": "luigis_mansion:furniture/portrait/roses_silver_mirrored"
+                }
+            }
+        ]
+    }
+}

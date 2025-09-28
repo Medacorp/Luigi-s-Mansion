@@ -1,0 +1,2 @@
+data modify storage luigis_mansion:data furniture set value {room:69,searchable:["manual","vacuum"],shake_animation:["manual","vacuum"],sound:{namespace:"luigis_mansion",id:"heavy_generic"},scan_result:{namespace:"luigis_mansion",id:"scan/scanner/30"}}
+execute positioned 736.07 23 -26 rotated -90 0 run function luigis_mansion:spawn_furniture/roses_portrait/big

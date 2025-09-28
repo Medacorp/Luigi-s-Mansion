@@ -1,2 +1,2 @@
 data modify storage luigis_mansion:data furniture set value {room:66,searchable:["interact","vacuum"],shake_animation:["interact","vacuum"],sound:{namespace:"luigis_mansion",id:"heavy_generic"},scan_result:"warp"}
-execute positioned 695.07 23.75 98.0 rotated -90 0 run function luigis_mansion:spawn_furniture/bejeweled_mirror
+execute positioned 695.07 23.55 98.0 rotated -90 0 run function luigis_mansion:spawn_furniture/bejeweled_mirror
