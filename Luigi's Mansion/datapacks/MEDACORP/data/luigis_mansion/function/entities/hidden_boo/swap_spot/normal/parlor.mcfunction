@@ -1,6 +1,5 @@
 summon minecraft:marker 717 21 36 {Tags:["choice","hide_option"]}
 summon minecraft:marker 724 21 36 {Tags:["choice","hide_option"]}
-summon minecraft:marker 727 22 33 {Tags:["choice","hide_option"]}
 summon minecraft:marker 714 21 28 {Tags:["choice","hide_option"]}
 summon minecraft:marker 717 21 19 {Tags:["choice","hide_option"]}
 summon minecraft:marker 724 21 19 {Tags:["choice","hide_option"]}

@@ -2,12 +2,12 @@
     "values": [
         "e3_demo:room/original/living_room/load/set_loaded",
         "e3_demo:room/original/living_room/load/lights",
+        "e3_demo:room/original/living_room/load/bouquet_portrait",
         "e3_demo:room/original/living_room/load/hallway_1_door",
         "e3_demo:room/original/living_room/load/missingno_1_door",
         "e3_demo:room/original/living_room/load/nightstand_mounted_green_lamp",
         "e3_demo:room/original/living_room/load/painting_1",
         "e3_demo:room/original/living_room/load/painting_2",
-        "e3_demo:room/original/living_room/load/painting_3",
         "e3_demo:room/original/living_room/load/painting_4",
         "e3_demo:room/original/living_room/load/painting_6",
         "e3_demo:room/original/living_room/load/painting_7",

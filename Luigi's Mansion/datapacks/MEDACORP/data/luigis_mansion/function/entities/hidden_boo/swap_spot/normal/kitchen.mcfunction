@@ -4,10 +4,7 @@ summon minecraft:marker 705 11 89 {Tags:["choice","hide_option"]}
 summon minecraft:marker 700 11 85 {Tags:["choice","hide_option"]}
 summon minecraft:marker 699 15 88 {Tags:["choice","hide_option"]}
 summon minecraft:marker 699 14 85 {Tags:["choice","hide_option"]}
-summon minecraft:marker 709 14 83 {Tags:["choice","hide_option"]}
 summon minecraft:marker 709 14 76 {Tags:["choice","hide_option"]}
 summon minecraft:marker 699 14 75 {Tags:["choice","hide_option"]}
 summon minecraft:marker 709 14 71 {Tags:["choice","hide_option"]}
 summon minecraft:marker 709 14 87 {Tags:["choice","hide_option"]}
-summon minecraft:marker 709 14 79 {Tags:["choice","hide_option"]}
-summon minecraft:marker 709 14 66 {Tags:["choice","hide_option"]}

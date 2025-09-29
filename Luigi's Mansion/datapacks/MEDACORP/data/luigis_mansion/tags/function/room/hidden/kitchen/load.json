@@ -3,14 +3,14 @@
         "luigis_mansion:room/hidden/kitchen/load/set_loaded",
         "luigis_mansion:room/hidden/kitchen/load/lights",
         "luigis_mansion:room/hidden/kitchen/load/boneyard_door",
+        "luigis_mansion:room/hidden/kitchen/load/bouquet_portrait",
         "luigis_mansion:room/hidden/kitchen/load/cobweb",
         "luigis_mansion:room/hidden/kitchen/load/dining_room_door",
         "luigis_mansion:room/hidden/kitchen/load/dripping_water",
+        "luigis_mansion:room/hidden/kitchen/load/fern_portrait",
+        "luigis_mansion:room/hidden/kitchen/load/fruit_basket_portrait",
         "luigis_mansion:room/hidden/kitchen/load/haunted_objects",
         "luigis_mansion:room/hidden/kitchen/load/ice",
-        "luigis_mansion:room/hidden/kitchen/load/painting_1",
-        "luigis_mansion:room/hidden/kitchen/load/painting_2",
-        "luigis_mansion:room/hidden/kitchen/load/painting_3",
         "luigis_mansion:room/hidden/kitchen/load/room_clear_chest"
     ]
 }

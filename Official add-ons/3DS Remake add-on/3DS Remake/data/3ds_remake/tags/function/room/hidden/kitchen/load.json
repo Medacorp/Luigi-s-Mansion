@@ -3,14 +3,14 @@
         "3ds_remake:room/hidden/kitchen/load/set_loaded",
         "3ds_remake:room/hidden/kitchen/load/lights",
         "3ds_remake:room/hidden/kitchen/load/boneyard_door",
+        "3ds_remake:room/hidden/kitchen/load/bouquet_portrait",
         "3ds_remake:room/hidden/kitchen/load/cobweb",
         "3ds_remake:room/hidden/kitchen/load/dining_room_door",
         "3ds_remake:room/hidden/kitchen/load/dripping_water",
+        "3ds_remake:room/hidden/kitchen/load/fern_portrait",
+        "3ds_remake:room/hidden/kitchen/load/fruit_basket_portrait",
         "3ds_remake:room/hidden/kitchen/load/haunted_objects",
         "3ds_remake:room/hidden/kitchen/load/ice",
-        "3ds_remake:room/hidden/kitchen/load/painting_1",
-        "3ds_remake:room/hidden/kitchen/load/painting_2",
-        "3ds_remake:room/hidden/kitchen/load/painting_3",
         "3ds_remake:room/hidden/kitchen/load/room_clear_chest"
     ]
 }

@@ -9,9 +9,12 @@ v?:
 ** Angel statues
 ** Barrels
 ** Bejeweled mirrors
+** Bouquet portraits
 ** (Standing) Chauncey portraits
 ** Concrete bricks
+** Fern portraits
 ** (Frozen) oil drums
+** Fruit basket portraits
 ** Gold mirrors
 ** Horses portraits
 ** Posters
