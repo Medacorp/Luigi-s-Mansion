@@ -3,10 +3,8 @@ execute if entity @s[scores={Room=5}] run function 3ds_remake:entities/hidden_bo
 execute if entity @s[scores={Room=8}] run function 3ds_remake:entities/hidden_boo/swap_spot/hidden/study
 execute if entity @s[scores={Room=9}] run function 3ds_remake:entities/hidden_boo/swap_spot/hidden/master_bedroom
 execute if entity @s[scores={Room=10}] run function 3ds_remake:entities/hidden_boo/swap_spot/hidden/nursery
-execute if entity @s[scores={Room=16}] run function 3ds_remake:entities/hidden_boo/swap_spot/hidden/bathroom_1
 execute if entity @s[scores={Room=17}] run function 3ds_remake:entities/hidden_boo/swap_spot/hidden/ball_room
 execute if entity @s[scores={Room=18}] run function 3ds_remake:entities/hidden_boo/swap_spot/hidden/storage_room
-execute if entity @s[scores={Room=19}] run function 3ds_remake:entities/hidden_boo/swap_spot/hidden/washroom_1
 execute if entity @s[scores={Room=20}] run function 3ds_remake:entities/hidden_boo/swap_spot/hidden/fortune_tellers_room
 execute if entity @s[scores={Room=21}] run function 3ds_remake:entities/hidden_boo/swap_spot/hidden/mirror_room
 execute if entity @s[scores={Room=22}] run function 3ds_remake:entities/hidden_boo/swap_spot/hidden/laundry_room

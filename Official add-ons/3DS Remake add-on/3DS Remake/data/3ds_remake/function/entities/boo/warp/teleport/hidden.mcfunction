@@ -8,11 +8,8 @@ teleport @s[scores={Room=10}] 744 20 63
 teleport @s[scores={Room=11}] 716 11 -5
 teleport @s[scores={Room=12}] 699 11 -19
 teleport @s[scores={Room=13}] 682 11 -9
-teleport @s[scores={Room=14}] 674 11 8
-teleport @s[scores={Room=16}] 654 11 22
 teleport @s[scores={Room=17}] 704.0 11 -53.0
 teleport @s[scores={Room=18}] 685 11 -53.0
-teleport @s[scores={Room=19}] 664 11 41
 teleport @s[scores={Room=20}] 741 11 -29
 teleport @s[scores={Room=21}] 741 11 -52.0
 teleport @s[scores={Room=22}] 716 11 67

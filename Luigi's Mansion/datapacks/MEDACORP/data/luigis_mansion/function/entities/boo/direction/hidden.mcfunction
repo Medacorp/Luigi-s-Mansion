@@ -31,7 +31,7 @@ scoreboard players set @s[scores={Room=11..14},x=679,z=32,dx=5,dz=4] RoomSection
 scoreboard players set @s[scores={Room=11..14},x=679,z=16,dx=6,dz=15] RoomSection 11
 scoreboard players set @s[scores={Room=11..14},x=679,z=10,dx=6,dz=5] RoomSection 12
 scoreboard players set @s[scores={Room=11..14},x=681,z=4,dx=5,dz=6] RoomSection 13
-scoreboard players set @s[scores={Room=11..14},x=666,z=2,dx=11,dz=8] RoomSection 14
+#scoreboard players set @s[scores={Room=11..14},x=666,z=2,dx=11,dz=8] RoomSection 14    Forbidden!
 
 # ball room
 scoreboard players set @s[scores={Room=17},x=696,z=53,dx=15,dz=11] RoomSection 1
@@ -164,17 +164,10 @@ tag @s[scores={Room=11..14,RoomSection=11}] add north
 tag @s[scores={Room=11..14,RoomSection=11}] add south
 tag @s[scores={Room=11..14,RoomSection=12}] add west
 tag @s[scores={Room=11..14,RoomSection=12},tag=area_3] add east
-tag @s[scores={Room=11..14,RoomSection=12}] add north
+tag @s[scores={Room=11..14,RoomSection=12},tag=area_3] add north
 tag @s[scores={Room=11..14,RoomSection=12}] add south
-tag @s[scores={Room=11..14,RoomSection=13}] add west
 tag @s[scores={Room=11..14,RoomSection=13},tag=area_3] add east
-tag @s[scores={Room=11..14,RoomSection=13}] add north
 tag @s[scores={Room=11..14,RoomSection=13}] add south
-tag @s[scores={Room=11..14,RoomSection=14}] add east
-tag @s[scores={Room=11..14,RoomSection=14}] add north
-tag @s[scores={Room=11..14,RoomSection=14}] add south
-tag @s[scores={Room=16}] add east
-tag @s[scores={Room=16}] add south
 tag @s[scores={Room=17}] add west
 tag @s[scores={Room=17,RoomSection=1}] add east
 tag @s[scores={Room=17}] add north
@@ -183,9 +176,6 @@ tag @s[scores={Room=18}] add east
 tag @s[scores={Room=18}] add north
 tag @s[scores={Room=18,RoomSection=2}] add west
 tag @s[scores={Room=18,RoomSection=2}] add south
-tag @s[scores={Room=19}] add west
-tag @s[scores={Room=19},tag=area_3] add east
-tag @s[scores={Room=19}] add south
 tag @s[scores={Room=20}] add west
 tag @s[scores={Room=20}] add south
 tag @s[scores={Room=21}] add north
@@ -197,7 +187,6 @@ tag @s[scores={Room=23}] add south
 tag @s[scores={Room=24}] add west
 tag @s[scores={Room=24}] add north
 tag @s[scores={Room=25}] add east
-tag @s[scores={Room=25}] add north
 tag @s[scores={Room=25},tag=area_3] add south
 tag @s[scores={Room=26},tag=area_3] add west
 tag @s[scores={Room=26}] add east
@@ -254,7 +243,7 @@ tag @s[scores={Room=44}] add north
 tag @s[scores={Room=44}] add south
 tag @s[scores={Room=45,RoomSection=1}] add west
 tag @s[scores={Room=45}] add north
-tag @s[scores={Room=47}] add west
+tag @s[scores={Room=47,RoomSection=3}] add west
 tag @s[scores={Room=47}] add east
 tag @s[scores={Room=47,RoomSection=1}] add north
 tag @s[scores={Room=47}] add south

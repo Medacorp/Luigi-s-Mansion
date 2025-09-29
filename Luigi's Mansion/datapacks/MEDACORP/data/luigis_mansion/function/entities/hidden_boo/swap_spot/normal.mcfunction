@@ -3,10 +3,8 @@ execute if entity @s[scores={Room=5}] run function luigis_mansion:entities/hidde
 execute if entity @s[scores={Room=8}] run function luigis_mansion:entities/hidden_boo/swap_spot/normal/study
 execute if entity @s[scores={Room=9}] run function luigis_mansion:entities/hidden_boo/swap_spot/normal/master_bedroom
 execute if entity @s[scores={Room=10}] run function luigis_mansion:entities/hidden_boo/swap_spot/normal/nursery
-execute if entity @s[scores={Room=16}] run function luigis_mansion:entities/hidden_boo/swap_spot/normal/bathroom_1
 execute if entity @s[scores={Room=17}] run function luigis_mansion:entities/hidden_boo/swap_spot/normal/ball_room
 execute if entity @s[scores={Room=18}] run function luigis_mansion:entities/hidden_boo/swap_spot/normal/storage_room
-execute if entity @s[scores={Room=19}] run function luigis_mansion:entities/hidden_boo/swap_spot/normal/washroom_1
 execute if entity @s[scores={Room=20}] run function luigis_mansion:entities/hidden_boo/swap_spot/normal/fortune_tellers_room
 execute if entity @s[scores={Room=21}] run function luigis_mansion:entities/hidden_boo/swap_spot/normal/mirror_room
 execute if entity @s[scores={Room=22}] run function luigis_mansion:entities/hidden_boo/swap_spot/normal/laundry_room
