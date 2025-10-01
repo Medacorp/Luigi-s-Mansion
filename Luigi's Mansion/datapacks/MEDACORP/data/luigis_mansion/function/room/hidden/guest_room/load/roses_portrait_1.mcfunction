@@ -1,4 +1,4 @@
-data modify storage luigis_mansion:data furniture set value {room:70,searchable:["manual","vacuum"],shake_animation:["manual","vacuum"],sound:{namespace:"luigis_mansion",id:"generic"},scan_result:{namespace:"luigis_mansion",id:"scan/scanner/31"}}
+data modify storage luigis_mansion:data furniture set value {room:70,searchable:["manual","vacuum"],shake_animation:["manual","vacuum"],sound:{namespace:"luigis_mansion",id:"generic"},can_hide_boo:1b,scan_result:{namespace:"luigis_mansion",id:"scan/scanner/31"}}
 execute if data storage luigis_mansion:data current_state.current_data.rooms.guest_room{cleared:1b} positioned 736.07 23 67 rotated -90 0 run function luigis_mansion:spawn_furniture/roses_portrait/small
 execute unless data storage luigis_mansion:data current_state.current_data.rooms.guest_room{cleared:1b} run data modify storage luigis_mansion:data furniture.pose set value [0.0f,0.0f,-180.0f]
 execute unless data storage luigis_mansion:data current_state.current_data.rooms.guest_room{cleared:1b} run scoreboard players set #mirrored Selected 0

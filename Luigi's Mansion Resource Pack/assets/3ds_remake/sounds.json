@@ -319,8 +319,7 @@
         "sounds": [
             {
                 "name": "3ds_remake:music/future_e_gadd",
-                "stream": true,
-                "volume": 0.00025
+                "stream": true
             }
         ]
     },
@@ -328,8 +327,7 @@
         "sounds": [
             {
                 "name": "3ds_remake:music/polterpup",
-                "stream": true,
-                "volume": 0.00025
+                "stream": true
             }
         ]
     }

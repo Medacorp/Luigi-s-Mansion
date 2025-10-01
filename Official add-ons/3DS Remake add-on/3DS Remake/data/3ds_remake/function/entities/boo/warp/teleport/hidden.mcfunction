@@ -24,7 +24,7 @@ teleport @s[scores={Room=35}] 682 20 -9
 teleport @s[scores={Room=36}] 674 20 8
 teleport @s[scores={Room=37}] 691 20 -19
 teleport @s[scores={Room=38}] 706 20 -19
-teleport @s[scores={Room=39..40}] 716 20 -35
+teleport @s[scores={Room=39}] 716 20 -35
 teleport @s[scores={Room=42}] 664 20 41
 teleport @s[scores={Room=43}] 654 20 22
 teleport @s[scores={Room=44}] 658 20 -15

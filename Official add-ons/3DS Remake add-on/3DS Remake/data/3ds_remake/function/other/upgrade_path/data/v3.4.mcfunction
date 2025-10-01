@@ -2,3 +2,9 @@ execute unless data storage luigis_mansion:data update_data{data_version:8} run 
 data modify storage luigis_mansion:data update_data.data_version set value 9
 execute if data storage luigis_mansion:data update_data.boos[{room:16}] run data modify storage luigis_mansion:data update_data.boos[{room:16}].room set value 25
 execute if data storage luigis_mansion:data update_data.boos[{room:19}] run data modify storage luigis_mansion:data update_data.boos[{room:19}].room set value 25
+execute if data storage luigis_mansion:data current_state.current_data{data_index:1} in luigis_mansion:normal run teleport @e[nbt={data:{entity:{namespace:"luigis_mansion",id:"boo"}}},scores={Room=14}] 682 11 -9
+execute if data storage luigis_mansion:data current_state.current_data{data_index:1} run scoreboard players set @e[nbt={data:{entity:{namespace:"luigis_mansion",id:"boo"}}},scores={Room=14}] Room 13
+execute if data storage luigis_mansion:data current_state.current_data{data_index:1} run tag @e[nbt={data:{entity:{namespace:"luigis_mansion",id:"boo"}}},scores={Room=16}] add remove_from_existence
+execute if data storage luigis_mansion:data current_state.current_data{data_index:1} run tag @e[nbt={data:{entity:{namespace:"luigis_mansion",id:"boo"}}},scores={Room=16}] add remove_from_existence
+execute if data storage luigis_mansion:data current_state.current_data{data_index:1} run tag @e[nbt={data:{entity:{namespace:"luigis_mansion",id:"hidden_boo"}}},scores={Room=19}] add remove_from_existence
+execute if data storage luigis_mansion:data current_state.current_data{data_index:1} run tag @e[nbt={data:{entity:{namespace:"luigis_mansion",id:"hidden_boo"}}},scores={Room=19}] add remove_from_existence

@@ -705,8 +705,7 @@
         "sounds": [
             {
                 "name": "e3_demo:music/first_key",
-                "stream": true,
-                "volume": 0.0005
+                "stream": true
             }
         ]
     },
@@ -714,8 +713,7 @@
         "sounds": [
             {
                 "name": "e3_demo:music/lab",
-                "stream": true,
-                "volume": 0.00025
+                "stream": true
             }
         ]
     },
@@ -723,8 +721,7 @@
         "sounds": [
             {
                 "name": "e3_demo:music/mansion/dark_room/1",
-                "stream": false,
-                "volume": 0.0005
+                "stream": false
             }
         ]
     },
@@ -732,8 +729,7 @@
         "sounds": [
             {
                 "name": "e3_demo:music/mansion/dark_room/2",
-                "stream": false,
-                "volume": 0.0005
+                "stream": false
             }
         ]
     },
@@ -741,8 +737,7 @@
         "sounds": [
             {
                 "name": "e3_demo:music/mansion/dark_room/3",
-                "stream": false,
-                "volume": 0.0005
+                "stream": false
             }
         ]
     },
@@ -750,8 +745,7 @@
         "sounds": [
             {
                 "name": "e3_demo:music/mansion/dark_room/4",
-                "stream": false,
-                "volume": 0.0005
+                "stream": false
             }
         ]
     },
@@ -759,8 +753,7 @@
         "sounds": [
             {
                 "name": "e3_demo:music/mansion/dark_room/5",
-                "stream": false,
-                "volume": 0.0005
+                "stream": false
             }
         ]
     },
@@ -768,8 +761,7 @@
         "sounds": [
             {
                 "name": "e3_demo:music/mansion/dark_room/6",
-                "stream": false,
-                "volume": 0.0005
+                "stream": false
             }
         ]
     },
@@ -777,8 +769,7 @@
         "sounds": [
             {
                 "name": "e3_demo:music/mansion/dark_room/7",
-                "stream": false,
-                "volume": 0.0005
+                "stream": false
             }
         ]
     },
@@ -786,8 +777,7 @@
         "sounds": [
             {
                 "name": "e3_demo:music/mansion/dark_room/8",
-                "stream": false,
-                "volume": 0.0005
+                "stream": false
             }
         ]
     },
@@ -795,8 +785,7 @@
         "sounds": [
             {
                 "name": "e3_demo:music/mansion/dark_room/9",
-                "stream": false,
-                "volume": 0.0005
+                "stream": false
             }
         ]
     },
@@ -804,8 +793,7 @@
         "sounds": [
             {
                 "name": "e3_demo:music/mansion/dark_room/10",
-                "stream": false,
-                "volume": 0.0005
+                "stream": false
             }
         ]
     },
@@ -813,8 +801,7 @@
         "sounds": [
             {
                 "name": "e3_demo:music/mansion/dark_room/11",
-                "stream": false,
-                "volume": 0.0005
+                "stream": false
             }
         ]
     },
@@ -822,8 +809,7 @@
         "sounds": [
             {
                 "name": "e3_demo:music/mansion/dark_room/12",
-                "stream": false,
-                "volume": 0.0005
+                "stream": false
             }
         ]
     },
@@ -831,8 +817,7 @@
         "sounds": [
             {
                 "name": "e3_demo:music/mansion/dark_room/13",
-                "stream": false,
-                "volume": 0.0005
+                "stream": false
             }
         ]
     },
@@ -840,8 +825,7 @@
         "sounds": [
             {
                 "name": "e3_demo:music/mansion/dark_room/14",
-                "stream": false,
-                "volume": 0.0005
+                "stream": false
             }
         ]
     },
@@ -849,8 +833,7 @@
         "sounds": [
             {
                 "name": "e3_demo:music/mansion/dark_room/15",
-                "stream": false,
-                "volume": 0.0005
+                "stream": false
             }
         ]
     },
@@ -858,8 +841,7 @@
         "sounds": [
             {
                 "name": "e3_demo:music/mansion/dark_room/16",
-                "stream": false,
-                "volume": 0.0005
+                "stream": false
             }
         ]
     },
@@ -867,8 +849,7 @@
         "sounds": [
             {
                 "name": "e3_demo:music/mansion/dark_room/17",
-                "stream": false,
-                "volume": 0.0005
+                "stream": false
             }
         ]
     },
@@ -876,8 +857,7 @@
         "sounds": [
             {
                 "name": "e3_demo:music/mansion/dark_room/18",
-                "stream": false,
-                "volume": 0.0005
+                "stream": false
             }
         ]
     },
@@ -885,8 +865,7 @@
         "sounds": [
             {
                 "name": "e3_demo:music/mansion/dark_room/19",
-                "stream": false,
-                "volume": 0.0005
+                "stream": false
             }
         ]
     },
@@ -894,8 +873,7 @@
         "sounds": [
             {
                 "name": "e3_demo:music/mansion/dark_room/20",
-                "stream": false,
-                "volume": 0.0005
+                "stream": false
             }
         ]
     },
@@ -903,8 +881,7 @@
         "sounds": [
             {
                 "name": "e3_demo:music/mansion/dark_room/21",
-                "stream": false,
-                "volume": 0.0005
+                "stream": false
             }
         ]
     },
@@ -912,8 +889,7 @@
         "sounds": [
             {
                 "name": "e3_demo:music/mansion/dark_room/22",
-                "stream": false,
-                "volume": 0.0005
+                "stream": false
             }
         ]
     },
@@ -921,8 +897,7 @@
         "sounds": [
             {
                 "name": "e3_demo:music/mansion/dark_room/23",
-                "stream": false,
-                "volume": 0.0005
+                "stream": false
             }
         ]
     },
@@ -930,8 +905,7 @@
         "sounds": [
             {
                 "name": "e3_demo:music/mansion/dark_room/24",
-                "stream": false,
-                "volume": 0.0005
+                "stream": false
             }
         ]
     },
@@ -939,8 +913,7 @@
         "sounds": [
             {
                 "name": "e3_demo:music/mansion/dark_room/25",
-                "stream": false,
-                "volume": 0.0005
+                "stream": false
             }
         ]
     },
@@ -948,8 +921,7 @@
         "sounds": [
             {
                 "name": "e3_demo:music/mansion/dark_room/26",
-                "stream": false,
-                "volume": 0.0005
+                "stream": false
             }
         ]
     },
@@ -957,8 +929,7 @@
         "sounds": [
             {
                 "name": "e3_demo:music/mansion/dark_room/27",
-                "stream": false,
-                "volume": 0.0005
+                "stream": false
             }
         ]
     },
@@ -966,8 +937,7 @@
         "sounds": [
             {
                 "name": "e3_demo:music/mansion/dark_room/28",
-                "stream": false,
-                "volume": 0.0005
+                "stream": false
             }
         ]
     },
@@ -975,8 +945,7 @@
         "sounds": [
             {
                 "name": "e3_demo:music/mansion/dark_room/29",
-                "stream": false,
-                "volume": 0.0005
+                "stream": false
             }
         ]
     },
@@ -984,8 +953,7 @@
         "sounds": [
             {
                 "name": "e3_demo:music/mansion/dark_room/30",
-                "stream": false,
-                "volume": 0.0005
+                "stream": false
             }
         ]
     },
@@ -993,8 +961,7 @@
         "sounds": [
             {
                 "name": "e3_demo:music/mansion/dark_room/31",
-                "stream": false,
-                "volume": 0.0005
+                "stream": false
             }
         ]
     },
@@ -1002,8 +969,7 @@
         "sounds": [
             {
                 "name": "e3_demo:music/mansion/dark_room/32",
-                "stream": false,
-                "volume": 0.0005
+                "stream": false
             }
         ]
     },
@@ -1011,8 +977,7 @@
         "sounds": [
             {
                 "name": "e3_demo:music/mansion/dark_room/33",
-                "stream": false,
-                "volume": 0.0005
+                "stream": false
             }
         ]
     },
@@ -1020,8 +985,7 @@
         "sounds": [
             {
                 "name": "e3_demo:music/mansion/dark_room/34",
-                "stream": false,
-                "volume": 0.0005
+                "stream": false
             }
         ]
     },
@@ -1029,8 +993,7 @@
         "sounds": [
             {
                 "name": "e3_demo:music/mansion/dark_room/35",
-                "stream": false,
-                "volume": 0.0005
+                "stream": false
             }
         ]
     },
@@ -1038,8 +1001,7 @@
         "sounds": [
             {
                 "name": "e3_demo:music/mansion/dark_room/36",
-                "stream": false,
-                "volume": 0.0005
+                "stream": false
             }
         ]
     },
@@ -1047,8 +1009,7 @@
         "sounds": [
             {
                 "name": "e3_demo:music/mansion/dark_room/37",
-                "stream": false,
-                "volume": 0.0005
+                "stream": false
             }
         ]
     },
@@ -1056,8 +1017,7 @@
         "sounds": [
             {
                 "name": "e3_demo:music/mansion/dark_room/38",
-                "stream": false,
-                "volume": 0.0005
+                "stream": false
             }
         ]
     },
@@ -1065,8 +1025,7 @@
         "sounds": [
             {
                 "name": "e3_demo:music/mansion/dark_room/39",
-                "stream": false,
-                "volume": 0.0005
+                "stream": false
             }
         ]
     },
@@ -1074,8 +1033,7 @@
         "sounds": [
             {
                 "name": "e3_demo:music/mansion/dark_room/40",
-                "stream": false,
-                "volume": 0.0005
+                "stream": false
             }
         ]
     },
@@ -1083,8 +1041,7 @@
         "sounds": [
             {
                 "name": "e3_demo:music/mansion/dark_room/41",
-                "stream": false,
-                "volume": 0.0005
+                "stream": false
             }
         ]
     },
@@ -1092,8 +1049,7 @@
         "sounds": [
             {
                 "name": "e3_demo:music/mansion/dark_room/42",
-                "stream": false,
-                "volume": 0.0005
+                "stream": false
             }
         ]
     },
@@ -1101,8 +1057,7 @@
         "sounds": [
             {
                 "name": "e3_demo:music/mansion/dark_room/43",
-                "stream": false,
-                "volume": 0.0005
+                "stream": false
             }
         ]
     },
@@ -1110,8 +1065,7 @@
         "sounds": [
             {
                 "name": "e3_demo:music/mansion/dark_room/44",
-                "stream": false,
-                "volume": 0.0005
+                "stream": false
             }
         ]
     },
@@ -1119,8 +1073,7 @@
         "sounds": [
             {
                 "name": "e3_demo:music/mansion/dark_room/45",
-                "stream": false,
-                "volume": 0.0005
+                "stream": false
             }
         ]
     },
@@ -1128,8 +1081,7 @@
         "sounds": [
             {
                 "name": "e3_demo:music/mansion/dark_room/46",
-                "stream": false,
-                "volume": 0.0005
+                "stream": false
             }
         ]
     },
@@ -1137,8 +1089,7 @@
         "sounds": [
             {
                 "name": "e3_demo:music/mansion/dark_room/47",
-                "stream": false,
-                "volume": 0.0005
+                "stream": false
             }
         ]
     },
@@ -1146,8 +1097,7 @@
         "sounds": [
             {
                 "name": "e3_demo:music/mansion/dark_room/48",
-                "stream": false,
-                "volume": 0.0005
+                "stream": false
             }
         ]
     },
@@ -1155,8 +1105,7 @@
         "sounds": [
             {
                 "name": "e3_demo:music/mansion/dark_room/49",
-                "stream": false,
-                "volume": 0.0005
+                "stream": false
             }
         ]
     },
@@ -1164,8 +1113,7 @@
         "sounds": [
             {
                 "name": "e3_demo:music/mansion/dark_room/50",
-                "stream": false,
-                "volume": 0.0005
+                "stream": false
             }
         ]
     },
@@ -1173,8 +1121,7 @@
         "sounds": [
             {
                 "name": "e3_demo:music/mansion/dark_room/51",
-                "stream": false,
-                "volume": 0.0005
+                "stream": false
             }
         ]
     },
@@ -1182,8 +1129,7 @@
         "sounds": [
             {
                 "name": "e3_demo:music/mansion/dark_room/52",
-                "stream": false,
-                "volume": 0.0005
+                "stream": false
             }
         ]
     },
@@ -1191,8 +1137,7 @@
         "sounds": [
             {
                 "name": "e3_demo:music/mansion/dark_room/53",
-                "stream": false,
-                "volume": 0.0005
+                "stream": false
             }
         ]
     },
@@ -1200,8 +1145,7 @@
         "sounds": [
             {
                 "name": "e3_demo:music/mansion/dark_room/54",
-                "stream": false,
-                "volume": 0.0005
+                "stream": false
             }
         ]
     },
@@ -1209,8 +1153,7 @@
         "sounds": [
             {
                 "name": "e3_demo:music/mansion/dark_room/55",
-                "stream": false,
-                "volume": 0.0005
+                "stream": false
             }
         ]
     },
@@ -1218,8 +1161,7 @@
         "sounds": [
             {
                 "name": "e3_demo:music/mansion/dark_room/56",
-                "stream": false,
-                "volume": 0.0005
+                "stream": false
             }
         ]
     },
@@ -1227,8 +1169,7 @@
         "sounds": [
             {
                 "name": "e3_demo:music/mansion/dark_room/57",
-                "stream": false,
-                "volume": 0.0005
+                "stream": false
             }
         ]
     },
@@ -1236,8 +1177,7 @@
         "sounds": [
             {
                 "name": "e3_demo:music/mansion/dark_room/58",
-                "stream": false,
-                "volume": 0.0005
+                "stream": false
             }
         ]
     },
@@ -1245,8 +1185,7 @@
         "sounds": [
             {
                 "name": "e3_demo:music/mansion/dark_room/59",
-                "stream": false,
-                "volume": 0.0005
+                "stream": false
             }
         ]
     },
@@ -1254,8 +1193,7 @@
         "sounds": [
             {
                 "name": "e3_demo:music/mansion/dark_room/60",
-                "stream": false,
-                "volume": 0.0005
+                "stream": false
             }
         ]
     },
@@ -1263,8 +1201,7 @@
         "sounds": [
             {
                 "name": "e3_demo:music/mansion/dark_room/61",
-                "stream": false,
-                "volume": 0.0005
+                "stream": false
             }
         ]
     },
@@ -1272,8 +1209,7 @@
         "sounds": [
             {
                 "name": "e3_demo:music/mansion/dark_room/62",
-                "stream": false,
-                "volume": 0.0005
+                "stream": false
             }
         ]
     },
@@ -1281,8 +1217,7 @@
         "sounds": [
             {
                 "name": "e3_demo:music/mansion/dark_room/63",
-                "stream": false,
-                "volume": 0.0005
+                "stream": false
             }
         ]
     },
@@ -1290,8 +1225,7 @@
         "sounds": [
             {
                 "name": "e3_demo:music/mansion/dark_room/64",
-                "stream": false,
-                "volume": 0.0005
+                "stream": false
             }
         ]
     },
@@ -1299,8 +1233,7 @@
         "sounds": [
             {
                 "name": "e3_demo:music/mansion/dark_room/65",
-                "stream": false,
-                "volume": 0.0005
+                "stream": false
             }
         ]
     },
@@ -1308,8 +1241,7 @@
         "sounds": [
             {
                 "name": "e3_demo:music/mansion/dark_room/66",
-                "stream": false,
-                "volume": 0.0005
+                "stream": false
             }
         ]
     },
@@ -1317,8 +1249,7 @@
         "sounds": [
             {
                 "name": "e3_demo:music/mansion/dark_room/67",
-                "stream": false,
-                "volume": 0.0005
+                "stream": false
             }
         ]
     },
@@ -1326,8 +1257,7 @@
         "sounds": [
             {
                 "name": "e3_demo:music/mansion/dark_room/68",
-                "stream": false,
-                "volume": 0.0005
+                "stream": false
             }
         ]
     },
@@ -1335,8 +1265,7 @@
         "sounds": [
             {
                 "name": "e3_demo:music/mansion/dark_room/69",
-                "stream": false,
-                "volume": 0.0005
+                "stream": false
             }
         ]
     },
@@ -1344,8 +1273,7 @@
         "sounds": [
             {
                 "name": "e3_demo:music/mansion/dark_room/70",
-                "stream": false,
-                "volume": 0.0005
+                "stream": false
             }
         ]
     },
@@ -1353,8 +1281,7 @@
         "sounds": [
             {
                 "name": "e3_demo:music/mansion/dark_room/71",
-                "stream": false,
-                "volume": 0.0005
+                "stream": false
             }
         ]
     },
@@ -1362,8 +1289,7 @@
         "sounds": [
             {
                 "name": "e3_demo:music/mansion/dark_room/72",
-                "stream": false,
-                "volume": 0.0005
+                "stream": false
             }
         ]
     },
@@ -1371,8 +1297,7 @@
         "sounds": [
             {
                 "name": "e3_demo:music/mansion/dark_room/73",
-                "stream": false,
-                "volume": 0.0005
+                "stream": false
             }
         ]
     },
@@ -1380,8 +1305,7 @@
         "sounds": [
             {
                 "name": "e3_demo:music/mansion/dark_room/74",
-                "stream": false,
-                "volume": 0.0005
+                "stream": false
             }
         ]
     },
@@ -1389,8 +1313,7 @@
         "sounds": [
             {
                 "name": "e3_demo:music/mansion/dark_room/75",
-                "stream": false,
-                "volume": 0.0005
+                "stream": false
             }
         ]
     },
@@ -1398,8 +1321,7 @@
         "sounds": [
             {
                 "name": "e3_demo:music/mansion/dark_room/76",
-                "stream": false,
-                "volume": 0.0005
+                "stream": false
             }
         ]
     },
@@ -1407,8 +1329,7 @@
         "sounds": [
             {
                 "name": "e3_demo:music/mansion/dark_room/77",
-                "stream": false,
-                "volume": 0.0005
+                "stream": false
             }
         ]
     },
@@ -1416,8 +1337,7 @@
         "sounds": [
             {
                 "name": "e3_demo:music/mansion/dark_room/78",
-                "stream": false,
-                "volume": 0.0005
+                "stream": false
             }
         ]
     },
@@ -1425,8 +1345,7 @@
         "sounds": [
             {
                 "name": "e3_demo:music/mansion/dark_room/79",
-                "stream": false,
-                "volume": 0.0005
+                "stream": false
             }
         ]
     },
@@ -1434,8 +1353,7 @@
         "sounds": [
             {
                 "name": "e3_demo:music/mansion/dark_room/80",
-                "stream": false,
-                "volume": 0.0005
+                "stream": false
             }
         ]
     },
@@ -1443,8 +1361,7 @@
         "sounds": [
             {
                 "name": "e3_demo:music/mansion/dark_room/81",
-                "stream": false,
-                "volume": 0.0005
+                "stream": false
             }
         ]
     },
@@ -1452,8 +1369,7 @@
         "sounds": [
             {
                 "name": "e3_demo:music/mansion/dark_room/82",
-                "stream": false,
-                "volume": 0.0005
+                "stream": false
             }
         ]
     },
@@ -1461,8 +1377,7 @@
         "sounds": [
             {
                 "name": "e3_demo:music/mansion/dark_room/83",
-                "stream": false,
-                "volume": 0.0005
+                "stream": false
             }
         ]
     },
@@ -1470,8 +1385,7 @@
         "sounds": [
             {
                 "name": "e3_demo:music/mansion/dark_room/84",
-                "stream": false,
-                "volume": 0.0005
+                "stream": false
             }
         ]
     },
@@ -1479,8 +1393,7 @@
         "sounds": [
             {
                 "name": "e3_demo:music/mansion/dark_room/85",
-                "stream": false,
-                "volume": 0.0005
+                "stream": false
             }
         ]
     },
@@ -1488,8 +1401,7 @@
         "sounds": [
             {
                 "name": "e3_demo:music/mansion/dark_room/86",
-                "stream": false,
-                "volume": 0.0005
+                "stream": false
             }
         ]
     },
@@ -1497,8 +1409,7 @@
         "sounds": [
             {
                 "name": "e3_demo:music/mansion/dark_room/87",
-                "stream": false,
-                "volume": 0.0005
+                "stream": false
             }
         ]
     },
@@ -1506,8 +1417,7 @@
         "sounds": [
             {
                 "name": "e3_demo:music/mansion/dark_room/88",
-                "stream": false,
-                "volume": 0.0005
+                "stream": false
             }
         ]
     },
@@ -1515,8 +1425,7 @@
         "sounds": [
             {
                 "name": "e3_demo:music/mansion/dark_room/89",
-                "stream": false,
-                "volume": 0.0005
+                "stream": false
             }
         ]
     },
@@ -1524,8 +1433,7 @@
         "sounds": [
             {
                 "name": "e3_demo:music/mansion/dark_room/90",
-                "stream": false,
-                "volume": 0.0005
+                "stream": false
             }
         ]
     },
@@ -1533,8 +1441,7 @@
         "sounds": [
             {
                 "name": "e3_demo:music/mansion/dark_room/91",
-                "stream": false,
-                "volume": 0.0005
+                "stream": false
             }
         ]
     },
@@ -1542,8 +1449,7 @@
         "sounds": [
             {
                 "name": "e3_demo:music/mansion/dark_room/92",
-                "stream": false,
-                "volume": 0.0005
+                "stream": false
             }
         ]
     },
@@ -1551,8 +1457,7 @@
         "sounds": [
             {
                 "name": "e3_demo:music/mansion/dark_room/93",
-                "stream": false,
-                "volume": 0.0005
+                "stream": false
             }
         ]
     },
@@ -1560,8 +1465,7 @@
         "sounds": [
             {
                 "name": "e3_demo:music/mansion/dark_room/94",
-                "stream": false,
-                "volume": 0.0005
+                "stream": false
             }
         ]
     },
@@ -1569,8 +1473,7 @@
         "sounds": [
             {
                 "name": "e3_demo:music/mansion/dark_room/95",
-                "stream": false,
-                "volume": 0.0005
+                "stream": false
             }
         ]
     },
@@ -1578,8 +1481,7 @@
         "sounds": [
             {
                 "name": "e3_demo:music/mansion/dark_room/96",
-                "stream": false,
-                "volume": 0.0005
+                "stream": false
             }
         ]
     },
@@ -1587,8 +1489,7 @@
         "sounds": [
             {
                 "name": "e3_demo:music/mansion/dark_room/97",
-                "stream": false,
-                "volume": 0.0005
+                "stream": false
             }
         ]
     },
@@ -1596,8 +1497,7 @@
         "sounds": [
             {
                 "name": "e3_demo:music/mansion/dark_room/98",
-                "stream": false,
-                "volume": 0.0005
+                "stream": false
             }
         ]
     },
@@ -1605,8 +1505,7 @@
         "sounds": [
             {
                 "name": "e3_demo:music/mansion/dark_room/99",
-                "stream": false,
-                "volume": 0.0005
+                "stream": false
             }
         ]
     },
@@ -1614,8 +1513,7 @@
         "sounds": [
             {
                 "name": "e3_demo:music/mansion/dark_room/100",
-                "stream": false,
-                "volume": 0.0005
+                "stream": false
             }
         ]
     },
@@ -1623,8 +1521,7 @@
         "sounds": [
             {
                 "name": "e3_demo:music/mansion/dark_room/101",
-                "stream": false,
-                "volume": 0.0005
+                "stream": false
             }
         ]
     },
@@ -1632,8 +1529,7 @@
         "sounds": [
             {
                 "name": "e3_demo:music/mansion/dark_room/102",
-                "stream": false,
-                "volume": 0.0005
+                "stream": false
             }
         ]
     },
@@ -1641,8 +1537,7 @@
         "sounds": [
             {
                 "name": "e3_demo:music/mansion/dark_room/103",
-                "stream": false,
-                "volume": 0.0005
+                "stream": false
             }
         ]
     },
@@ -1650,8 +1545,7 @@
         "sounds": [
             {
                 "name": "e3_demo:music/mansion/dark_room/104",
-                "stream": false,
-                "volume": 0.0005
+                "stream": false
             }
         ]
     },
@@ -1659,8 +1553,7 @@
         "sounds": [
             {
                 "name": "e3_demo:music/mansion/dark_room/105",
-                "stream": false,
-                "volume": 0.0005
+                "stream": false
             }
         ]
     },
@@ -1668,8 +1561,7 @@
         "sounds": [
             {
                 "name": "e3_demo:music/mansion/dark_room/106",
-                "stream": false,
-                "volume": 0.0005
+                "stream": false
             }
         ]
     },
@@ -1677,8 +1569,7 @@
         "sounds": [
             {
                 "name": "e3_demo:music/mansion/dark_room/107",
-                "stream": false,
-                "volume": 0.0005
+                "stream": false
             }
         ]
     },
@@ -1686,8 +1577,7 @@
         "sounds": [
             {
                 "name": "e3_demo:music/mansion/dark_room/108",
-                "stream": false,
-                "volume": 0.0005
+                "stream": false
             }
         ]
     },
@@ -1695,8 +1585,7 @@
         "sounds": [
             {
                 "name": "e3_demo:music/mansion/dark_room/109",
-                "stream": false,
-                "volume": 0.0005
+                "stream": false
             }
         ]
     },
@@ -1704,8 +1593,7 @@
         "sounds": [
             {
                 "name": "e3_demo:music/mansion/dark_room/110",
-                "stream": false,
-                "volume": 0.0005
+                "stream": false
             }
         ]
     },
@@ -1713,8 +1601,7 @@
         "sounds": [
             {
                 "name": "e3_demo:music/mansion/dark_room/111",
-                "stream": false,
-                "volume": 0.0005
+                "stream": false
             }
         ]
     },
@@ -1722,8 +1609,7 @@
         "sounds": [
             {
                 "name": "e3_demo:music/mansion/dark_room/112",
-                "stream": false,
-                "volume": 0.0005
+                "stream": false
             }
         ]
     },
@@ -1731,8 +1617,7 @@
         "sounds": [
             {
                 "name": "e3_demo:music/mansion/dark_room/113",
-                "stream": false,
-                "volume": 0.0005
+                "stream": false
             }
         ]
     },
@@ -1740,8 +1625,7 @@
         "sounds": [
             {
                 "name": "e3_demo:music/mansion/dark_room/114",
-                "stream": false,
-                "volume": 0.0005
+                "stream": false
             }
         ]
     },
@@ -1749,8 +1633,7 @@
         "sounds": [
             {
                 "name": "e3_demo:music/mansion/dark_room/115",
-                "stream": false,
-                "volume": 0.0005
+                "stream": false
             }
         ]
     },
@@ -1758,8 +1641,7 @@
         "sounds": [
             {
                 "name": "e3_demo:music/mansion/dark_room/116",
-                "stream": false,
-                "volume": 0.0005
+                "stream": false
             }
         ]
     },
@@ -1767,8 +1649,7 @@
         "sounds": [
             {
                 "name": "e3_demo:music/mansion/dark_room/117",
-                "stream": false,
-                "volume": 0.0005
+                "stream": false
             }
         ]
     },
@@ -1776,8 +1657,7 @@
         "sounds": [
             {
                 "name": "e3_demo:music/mansion/dark_room/118",
-                "stream": false,
-                "volume": 0.0005
+                "stream": false
             }
         ]
     },
@@ -1785,8 +1665,7 @@
         "sounds": [
             {
                 "name": "e3_demo:music/mansion/dark_room/119",
-                "stream": false,
-                "volume": 0.0005
+                "stream": false
             }
         ]
     },
@@ -1794,8 +1673,7 @@
         "sounds": [
             {
                 "name": "e3_demo:music/mansion/dark_room/120",
-                "stream": false,
-                "volume": 0.0005
+                "stream": false
             }
         ]
     },
@@ -1803,8 +1681,7 @@
         "sounds": [
             {
                 "name": "e3_demo:music/mansion/dark_room/121",
-                "stream": false,
-                "volume": 0.0005
+                "stream": false
             }
         ]
     },
@@ -1812,8 +1689,7 @@
         "sounds": [
             {
                 "name": "e3_demo:music/mansion/dark_room/122",
-                "stream": false,
-                "volume": 0.0005
+                "stream": false
             }
         ]
     },
@@ -1821,8 +1697,7 @@
         "sounds": [
             {
                 "name": "e3_demo:music/mansion/dark_room/123",
-                "stream": false,
-                "volume": 0.0005
+                "stream": false
             }
         ]
     },
@@ -1830,8 +1705,7 @@
         "sounds": [
             {
                 "name": "e3_demo:music/mansion/dark_room/124",
-                "stream": false,
-                "volume": 0.0005
+                "stream": false
             }
         ]
     },
@@ -1839,8 +1713,7 @@
         "sounds": [
             {
                 "name": "e3_demo:music/mansion/dark_room/125",
-                "stream": false,
-                "volume": 0.0005
+                "stream": false
             }
         ]
     },
@@ -1848,8 +1721,7 @@
         "sounds": [
             {
                 "name": "e3_demo:music/mansion/dark_room/126",
-                "stream": false,
-                "volume": 0.0005
+                "stream": false
             }
         ]
     },
@@ -1857,8 +1729,7 @@
         "sounds": [
             {
                 "name": "e3_demo:music/mansion/dark_room/127",
-                "stream": false,
-                "volume": 0.0005
+                "stream": false
             }
         ]
     },
@@ -1866,8 +1737,7 @@
         "sounds": [
             {
                 "name": "e3_demo:music/mansion/dark_room/128",
-                "stream": false,
-                "volume": 0.0005
+                "stream": false
             }
         ]
     },
@@ -1875,8 +1745,7 @@
         "sounds": [
             {
                 "name": "e3_demo:music/mansion/dark_room/129",
-                "stream": false,
-                "volume": 0.0005
+                "stream": false
             }
         ]
     },
@@ -1884,8 +1753,7 @@
         "sounds": [
             {
                 "name": "e3_demo:music/mansion/dark_room/130",
-                "stream": false,
-                "volume": 0.0005
+                "stream": false
             }
         ]
     },
@@ -1893,8 +1761,7 @@
         "sounds": [
             {
                 "name": "e3_demo:music/mansion/dark_room/131",
-                "stream": false,
-                "volume": 0.0005
+                "stream": false
             }
         ]
     },
@@ -1902,8 +1769,7 @@
         "sounds": [
             {
                 "name": "e3_demo:music/mansion/dark_room/132",
-                "stream": false,
-                "volume": 0.0005
+                "stream": false
             }
         ]
     },
@@ -1911,8 +1777,7 @@
         "sounds": [
             {
                 "name": "e3_demo:music/mansion/dark_room/133",
-                "stream": false,
-                "volume": 0.0005
+                "stream": false
             }
         ]
     },
@@ -1920,8 +1785,7 @@
         "sounds": [
             {
                 "name": "e3_demo:music/mansion/dark_room/134",
-                "stream": false,
-                "volume": 0.0005
+                "stream": false
             }
         ]
     },
@@ -1929,8 +1793,7 @@
         "sounds": [
             {
                 "name": "e3_demo:music/mansion/dark_room/135",
-                "stream": false,
-                "volume": 0.0005
+                "stream": false
             }
         ]
     },
@@ -1938,8 +1801,7 @@
         "sounds": [
             {
                 "name": "e3_demo:music/mansion/dark_room/136",
-                "stream": false,
-                "volume": 0.0005
+                "stream": false
             }
         ]
     },
@@ -1947,8 +1809,7 @@
         "sounds": [
             {
                 "name": "e3_demo:music/mansion/dark_room/137",
-                "stream": false,
-                "volume": 0.0005
+                "stream": false
             }
         ]
     },
@@ -1956,8 +1817,7 @@
         "sounds": [
             {
                 "name": "e3_demo:music/mansion/dark_room/138",
-                "stream": false,
-                "volume": 0.0005
+                "stream": false
             }
         ]
     },
@@ -1965,8 +1825,7 @@
         "sounds": [
             {
                 "name": "e3_demo:music/mansion/dark_room/139",
-                "stream": false,
-                "volume": 0.0005
+                "stream": false
             }
         ]
     },
@@ -1974,8 +1833,7 @@
         "sounds": [
             {
                 "name": "e3_demo:music/mansion/dark_room/140",
-                "stream": false,
-                "volume": 0.0005
+                "stream": false
             }
         ]
     },
@@ -1983,8 +1841,7 @@
         "sounds": [
             {
                 "name": "e3_demo:music/mansion/dark_room/141",
-                "stream": false,
-                "volume": 0.0005
+                "stream": false
             }
         ]
     },
@@ -1992,8 +1849,7 @@
         "sounds": [
             {
                 "name": "e3_demo:music/mansion/dark_room/142",
-                "stream": false,
-                "volume": 0.0005
+                "stream": false
             }
         ]
     },
@@ -2001,8 +1857,7 @@
         "sounds": [
             {
                 "name": "e3_demo:music/mansion/dark_room/143",
-                "stream": false,
-                "volume": 0.0005
+                "stream": false
             }
         ]
     },
@@ -2010,8 +1865,7 @@
         "sounds": [
             {
                 "name": "e3_demo:music/mansion/dark_room/144",
-                "stream": false,
-                "volume": 0.0005
+                "stream": false
             }
         ]
     },
@@ -2019,8 +1873,7 @@
         "sounds": [
             {
                 "name": "e3_demo:music/mansion/dark_room/145",
-                "stream": false,
-                "volume": 0.0005
+                "stream": false
             }
         ]
     },
@@ -2028,8 +1881,7 @@
         "sounds": [
             {
                 "name": "e3_demo:music/mansion/dark_room/146",
-                "stream": false,
-                "volume": 0.0005
+                "stream": false
             }
         ]
     },
@@ -2037,8 +1889,7 @@
         "sounds": [
             {
                 "name": "e3_demo:music/mansion/dark_room/147",
-                "stream": false,
-                "volume": 0.0005
+                "stream": false
             }
         ]
     },
@@ -2046,8 +1897,7 @@
         "sounds": [
             {
                 "name": "e3_demo:music/mansion/dark_room/148",
-                "stream": false,
-                "volume": 0.0005
+                "stream": false
             }
         ]
     },
@@ -2055,8 +1905,7 @@
         "sounds": [
             {
                 "name": "e3_demo:music/mansion/dark_room/149",
-                "stream": false,
-                "volume": 0.0005
+                "stream": false
             }
         ]
     },
@@ -2064,8 +1913,7 @@
         "sounds": [
             {
                 "name": "e3_demo:music/mansion/dark_room/150",
-                "stream": false,
-                "volume": 0.0005
+                "stream": false
             }
         ]
     },
@@ -2073,8 +1921,7 @@
         "sounds": [
             {
                 "name": "e3_demo:music/mansion/dark_room/151",
-                "stream": false,
-                "volume": 0.0005
+                "stream": false
             }
         ]
     },
@@ -2082,8 +1929,7 @@
         "sounds": [
             {
                 "name": "e3_demo:music/mansion/dark_room/152",
-                "stream": false,
-                "volume": 0.0005
+                "stream": false
             }
         ]
     },
@@ -2091,8 +1937,7 @@
         "sounds": [
             {
                 "name": "e3_demo:music/mansion/dark_room/153",
-                "stream": false,
-                "volume": 0.0005
+                "stream": false
             }
         ]
     },
@@ -2100,8 +1945,7 @@
         "sounds": [
             {
                 "name": "e3_demo:music/mansion/dark_room/154",
-                "stream": false,
-                "volume": 0.0005
+                "stream": false
             }
         ]
     },
@@ -2109,8 +1953,7 @@
         "sounds": [
             {
                 "name": "e3_demo:music/mansion/dark_room/155",
-                "stream": false,
-                "volume": 0.0005
+                "stream": false
             }
         ]
     },
@@ -2118,8 +1961,7 @@
         "sounds": [
             {
                 "name": "e3_demo:music/mansion/dark_room/156",
-                "stream": false,
-                "volume": 0.0005
+                "stream": false
             }
         ]
     },
@@ -2127,8 +1969,7 @@
         "sounds": [
             {
                 "name": "e3_demo:music/mansion/dark_room/157",
-                "stream": false,
-                "volume": 0.0005
+                "stream": false
             }
         ]
     },
@@ -2136,8 +1977,7 @@
         "sounds": [
             {
                 "name": "e3_demo:music/mansion/dark_room/158",
-                "stream": false,
-                "volume": 0.0005
+                "stream": false
             }
         ]
     },
@@ -2145,8 +1985,7 @@
         "sounds": [
             {
                 "name": "e3_demo:music/mansion/dark_room/159",
-                "stream": false,
-                "volume": 0.0005
+                "stream": false
             }
         ]
     },
@@ -2154,8 +1993,7 @@
         "sounds": [
             {
                 "name": "e3_demo:music/mansion/dark_room/160",
-                "stream": false,
-                "volume": 0.0005
+                "stream": false
             }
         ]
     },
@@ -2163,8 +2001,7 @@
         "sounds": [
             {
                 "name": "e3_demo:music/mansion/dark_room/161",
-                "stream": false,
-                "volume": 0.0005
+                "stream": false
             }
         ]
     },
@@ -2172,8 +2009,7 @@
         "sounds": [
             {
                 "name": "e3_demo:music/mansion/dark_room/162",
-                "stream": false,
-                "volume": 0.0005
+                "stream": false
             }
         ]
     },
@@ -2181,8 +2017,7 @@
         "sounds": [
             {
                 "name": "e3_demo:music/mansion/dark_room/163",
-                "stream": false,
-                "volume": 0.0005
+                "stream": false
             }
         ]
     },
@@ -2190,8 +2025,7 @@
         "sounds": [
             {
                 "name": "e3_demo:music/mansion/dark_room/164",
-                "stream": false,
-                "volume": 0.0005
+                "stream": false
             }
         ]
     },
@@ -2199,8 +2033,7 @@
         "sounds": [
             {
                 "name": "e3_demo:music/mansion/dark_room/165",
-                "stream": false,
-                "volume": 0.0005
+                "stream": false
             }
         ]
     },
@@ -2208,8 +2041,7 @@
         "sounds": [
             {
                 "name": "e3_demo:music/mansion/dark_room/166",
-                "stream": false,
-                "volume": 0.0005
+                "stream": false
             }
         ]
     },
@@ -2217,8 +2049,7 @@
         "sounds": [
             {
                 "name": "e3_demo:music/mansion/dark_room/167",
-                "stream": false,
-                "volume": 0.0005
+                "stream": false
             }
         ]
     },
@@ -2226,8 +2057,7 @@
         "sounds": [
             {
                 "name": "e3_demo:music/mansion/dark_room/168",
-                "stream": false,
-                "volume": 0.0005
+                "stream": false
             }
         ]
     },
@@ -2235,8 +2065,7 @@
         "sounds": [
             {
                 "name": "e3_demo:music/mansion/dark_room/169",
-                "stream": false,
-                "volume": 0.0005
+                "stream": false
             }
         ]
     },
@@ -2244,8 +2073,7 @@
         "sounds": [
             {
                 "name": "e3_demo:music/mansion/dark_room/170",
-                "stream": false,
-                "volume": 0.0005
+                "stream": false
             }
         ]
     },
@@ -2253,8 +2081,7 @@
         "sounds": [
             {
                 "name": "e3_demo:music/mansion/dark_room/171",
-                "stream": false,
-                "volume": 0.0005
+                "stream": false
             }
         ]
     },
@@ -2262,8 +2089,7 @@
         "sounds": [
             {
                 "name": "e3_demo:music/mansion/dark_room/172",
-                "stream": false,
-                "volume": 0.0005
+                "stream": false
             }
         ]
     },
@@ -2271,8 +2097,7 @@
         "sounds": [
             {
                 "name": "e3_demo:music/mansion/dark_room/173",
-                "stream": false,
-                "volume": 0.0005
+                "stream": false
             }
         ]
     },
@@ -2280,8 +2105,7 @@
         "sounds": [
             {
                 "name": "e3_demo:music/mansion/dark_room/174",
-                "stream": false,
-                "volume": 0.0005
+                "stream": false
             }
         ]
     },
@@ -2289,8 +2113,7 @@
         "sounds": [
             {
                 "name": "e3_demo:music/mansion/dark_room/175",
-                "stream": false,
-                "volume": 0.0005
+                "stream": false
             }
         ]
     },
@@ -2298,8 +2121,7 @@
         "sounds": [
             {
                 "name": "e3_demo:music/mansion/dark_room/176",
-                "stream": false,
-                "volume": 0.0005
+                "stream": false
             }
         ]
     },
@@ -2307,8 +2129,7 @@
         "sounds": [
             {
                 "name": "e3_demo:music/mansion/dark_room/177",
-                "stream": false,
-                "volume": 0.0005
+                "stream": false
             }
         ]
     },
@@ -2316,8 +2137,7 @@
         "sounds": [
             {
                 "name": "e3_demo:music/mansion/dark_room/178",
-                "stream": false,
-                "volume": 0.0005
+                "stream": false
             }
         ]
     },
@@ -2325,8 +2145,7 @@
         "sounds": [
             {
                 "name": "e3_demo:music/mansion/dark_room/179",
-                "stream": false,
-                "volume": 0.0005
+                "stream": false
             }
         ]
     },
@@ -2334,8 +2153,7 @@
         "sounds": [
             {
                 "name": "e3_demo:music/mansion/dark_room/180",
-                "stream": false,
-                "volume": 0.0005
+                "stream": false
             }
         ]
     },
@@ -2343,8 +2161,7 @@
         "sounds": [
             {
                 "name": "e3_demo:music/mansion/dark_room/181",
-                "stream": false,
-                "volume": 0.0005
+                "stream": false
             }
         ]
     },
@@ -2352,8 +2169,7 @@
         "sounds": [
             {
                 "name": "e3_demo:music/mansion/dark_room/182",
-                "stream": false,
-                "volume": 0.0005
+                "stream": false
             }
         ]
     },
@@ -2361,8 +2177,7 @@
         "sounds": [
             {
                 "name": "e3_demo:music/mansion/dark_room/183",
-                "stream": false,
-                "volume": 0.0005
+                "stream": false
             }
         ]
     },
@@ -2370,8 +2185,7 @@
         "sounds": [
             {
                 "name": "e3_demo:music/mansion/dark_room/184",
-                "stream": false,
-                "volume": 0.0005
+                "stream": false
             }
         ]
     },
@@ -2379,8 +2193,7 @@
         "sounds": [
             {
                 "name": "e3_demo:music/mansion/dark_room/185",
-                "stream": false,
-                "volume": 0.0005
+                "stream": false
             }
         ]
     },
@@ -2388,8 +2201,7 @@
         "sounds": [
             {
                 "name": "e3_demo:music/mansion/dark_room/186",
-                "stream": false,
-                "volume": 0.0005
+                "stream": false
             }
         ]
     },
@@ -2397,8 +2209,7 @@
         "sounds": [
             {
                 "name": "e3_demo:music/mansion/dark_room/187",
-                "stream": false,
-                "volume": 0.0005
+                "stream": false
             }
         ]
     },
@@ -2406,8 +2217,7 @@
         "sounds": [
             {
                 "name": "e3_demo:music/mansion/dark_room/188",
-                "stream": false,
-                "volume": 0.0005
+                "stream": false
             }
         ]
     },
@@ -2415,8 +2225,7 @@
         "sounds": [
             {
                 "name": "e3_demo:music/mansion/dark_room/189",
-                "stream": false,
-                "volume": 0.0005
+                "stream": false
             }
         ]
     },
@@ -2424,8 +2233,7 @@
         "sounds": [
             {
                 "name": "e3_demo:music/mansion/dark_room/190",
-                "stream": false,
-                "volume": 0.0005
+                "stream": false
             }
         ]
     },
@@ -2433,8 +2241,7 @@
         "sounds": [
             {
                 "name": "e3_demo:music/mansion/dark_room/191",
-                "stream": false,
-                "volume": 0.0005
+                "stream": false
             }
         ]
     },
@@ -2442,8 +2249,7 @@
         "sounds": [
             {
                 "name": "e3_demo:music/mansion/dark_room/192",
-                "stream": false,
-                "volume": 0.0005
+                "stream": false
             }
         ]
     },
@@ -2451,8 +2257,7 @@
         "sounds": [
             {
                 "name": "e3_demo:music/mansion/dark_room/193",
-                "stream": false,
-                "volume": 0.0005
+                "stream": false
             }
         ]
     },
@@ -2460,8 +2265,7 @@
         "sounds": [
             {
                 "name": "e3_demo:music/mansion/dark_room/194",
-                "stream": false,
-                "volume": 0.0005
+                "stream": false
             }
         ]
     },
@@ -2469,8 +2273,7 @@
         "sounds": [
             {
                 "name": "e3_demo:music/mansion/dark_room/195",
-                "stream": false,
-                "volume": 0.0005
+                "stream": false
             }
         ]
     },
@@ -2478,8 +2281,7 @@
         "sounds": [
             {
                 "name": "e3_demo:music/mansion/dark_room/196",
-                "stream": false,
-                "volume": 0.0005
+                "stream": false
             }
         ]
     },
@@ -2487,8 +2289,7 @@
         "sounds": [
             {
                 "name": "e3_demo:music/mansion/dark_room/197",
-                "stream": false,
-                "volume": 0.0005
+                "stream": false
             }
         ]
     },
@@ -2496,8 +2297,7 @@
         "sounds": [
             {
                 "name": "e3_demo:music/mansion/dark_room/198",
-                "stream": false,
-                "volume": 0.0005
+                "stream": false
             }
         ]
     },
@@ -2505,8 +2305,7 @@
         "sounds": [
             {
                 "name": "e3_demo:music/mansion/dark_room/199",
-                "stream": false,
-                "volume": 0.0005
+                "stream": false
             }
         ]
     },
@@ -2514,8 +2313,7 @@
         "sounds": [
             {
                 "name": "e3_demo:music/mansion/dark_room/200",
-                "stream": false,
-                "volume": 0.0005
+                "stream": false
             }
         ]
     },
@@ -2523,8 +2321,7 @@
         "sounds": [
             {
                 "name": "e3_demo:music/mansion/dark_room/201",
-                "stream": false,
-                "volume": 0.0005
+                "stream": false
             }
         ]
     },
@@ -2532,8 +2329,7 @@
         "sounds": [
             {
                 "name": "e3_demo:music/mansion/dark_room/202",
-                "stream": false,
-                "volume": 0.0005
+                "stream": false
             }
         ]
     },
@@ -2541,8 +2337,7 @@
         "sounds": [
             {
                 "name": "e3_demo:music/mansion/dark_room/203",
-                "stream": false,
-                "volume": 0.0005
+                "stream": false
             }
         ]
     },
@@ -2550,8 +2345,7 @@
         "sounds": [
             {
                 "name": "e3_demo:music/mansion/dark_room/204",
-                "stream": false,
-                "volume": 0.0005
+                "stream": false
             }
         ]
     },
@@ -2559,8 +2353,7 @@
         "sounds": [
             {
                 "name": "e3_demo:music/mansion/dark_room/205",
-                "stream": false,
-                "volume": 0.0005
+                "stream": false
             }
         ]
     },
@@ -2568,8 +2361,7 @@
         "sounds": [
             {
                 "name": "e3_demo:music/mansion/dark_room/206",
-                "stream": false,
-                "volume": 0.0005
+                "stream": false
             }
         ]
     },
@@ -2577,8 +2369,7 @@
         "sounds": [
             {
                 "name": "e3_demo:music/mansion/dark_room/207",
-                "stream": false,
-                "volume": 0.0005
+                "stream": false
             }
         ]
     },
@@ -2586,8 +2377,7 @@
         "sounds": [
             {
                 "name": "e3_demo:music/mansion/light/1",
-                "stream": false,
-                "volume": 0.0005
+                "stream": false
             }
         ]
     },
@@ -2595,8 +2385,7 @@
         "sounds": [
             {
                 "name": "e3_demo:music/mansion/light/2",
-                "stream": false,
-                "volume": 0.0005
+                "stream": false
             }
         ]
     },
@@ -2604,8 +2393,7 @@
         "sounds": [
             {
                 "name": "e3_demo:music/mansion/light/3",
-                "stream": false,
-                "volume": 0.0005
+                "stream": false
             }
         ]
     },
@@ -2613,8 +2401,7 @@
         "sounds": [
             {
                 "name": "e3_demo:music/mansion/light/4",
-                "stream": false,
-                "volume": 0.0005
+                "stream": false
             }
         ]
     },
@@ -2622,8 +2409,7 @@
         "sounds": [
             {
                 "name": "e3_demo:music/mansion/light/5",
-                "stream": false,
-                "volume": 0.0005
+                "stream": false
             }
         ]
     },
@@ -2631,8 +2417,7 @@
         "sounds": [
             {
                 "name": "e3_demo:music/mansion/light/6",
-                "stream": false,
-                "volume": 0.0005
+                "stream": false
             }
         ]
     },
@@ -2640,8 +2425,7 @@
         "sounds": [
             {
                 "name": "e3_demo:music/mansion/light/7",
-                "stream": false,
-                "volume": 0.0005
+                "stream": false
             }
         ]
     },
@@ -2649,8 +2433,7 @@
         "sounds": [
             {
                 "name": "e3_demo:music/mansion/light/8",
-                "stream": false,
-                "volume": 0.0005
+                "stream": false
             }
         ]
     },
@@ -2658,8 +2441,7 @@
         "sounds": [
             {
                 "name": "e3_demo:music/mansion/light/9",
-                "stream": false,
-                "volume": 0.0005
+                "stream": false
             }
         ]
     },
@@ -2667,8 +2449,7 @@
         "sounds": [
             {
                 "name": "e3_demo:music/mansion/light/10",
-                "stream": false,
-                "volume": 0.0005
+                "stream": false
             }
         ]
     },
@@ -2676,8 +2457,7 @@
         "sounds": [
             {
                 "name": "e3_demo:music/mansion/light/11",
-                "stream": false,
-                "volume": 0.0005
+                "stream": false
             }
         ]
     },
@@ -2685,8 +2465,7 @@
         "sounds": [
             {
                 "name": "e3_demo:music/mansion/light/12",
-                "stream": false,
-                "volume": 0.0005
+                "stream": false
             }
         ]
     },
@@ -2694,8 +2473,7 @@
         "sounds": [
             {
                 "name": "e3_demo:music/mansion/light/13",
-                "stream": false,
-                "volume": 0.0005
+                "stream": false
             }
         ]
     },
@@ -2703,8 +2481,7 @@
         "sounds": [
             {
                 "name": "e3_demo:music/mansion/light/14",
-                "stream": false,
-                "volume": 0.0005
+                "stream": false
             }
         ]
     },
@@ -2712,8 +2489,7 @@
         "sounds": [
             {
                 "name": "e3_demo:music/mansion/light/15",
-                "stream": false,
-                "volume": 0.0005
+                "stream": false
             }
         ]
     },
@@ -2721,8 +2497,7 @@
         "sounds": [
             {
                 "name": "e3_demo:music/mansion/light/16",
-                "stream": false,
-                "volume": 0.0005
+                "stream": false
             }
         ]
     },
@@ -2730,8 +2505,7 @@
         "sounds": [
             {
                 "name": "e3_demo:music/mansion/light/17",
-                "stream": false,
-                "volume": 0.0005
+                "stream": false
             }
         ]
     },
@@ -2739,8 +2513,7 @@
         "sounds": [
             {
                 "name": "e3_demo:music/mansion/light/18",
-                "stream": false,
-                "volume": 0.0005
+                "stream": false
             }
         ]
     },
@@ -2748,8 +2521,7 @@
         "sounds": [
             {
                 "name": "e3_demo:music/mansion/light/19",
-                "stream": false,
-                "volume": 0.0005
+                "stream": false
             }
         ]
     },
@@ -2757,8 +2529,7 @@
         "sounds": [
             {
                 "name": "e3_demo:music/mansion/light/20",
-                "stream": false,
-                "volume": 0.0005
+                "stream": false
             }
         ]
     },
@@ -2766,8 +2537,7 @@
         "sounds": [
             {
                 "name": "e3_demo:music/mansion/light/21",
-                "stream": false,
-                "volume": 0.0005
+                "stream": false
             }
         ]
     },
@@ -2775,8 +2545,7 @@
         "sounds": [
             {
                 "name": "e3_demo:music/mansion/light/22",
-                "stream": false,
-                "volume": 0.0005
+                "stream": false
             }
         ]
     },
@@ -2784,8 +2553,7 @@
         "sounds": [
             {
                 "name": "e3_demo:music/mansion/light/23",
-                "stream": false,
-                "volume": 0.0005
+                "stream": false
             }
         ]
     },
@@ -2793,8 +2561,7 @@
         "sounds": [
             {
                 "name": "e3_demo:music/mansion/light/24",
-                "stream": false,
-                "volume": 0.0005
+                "stream": false
             }
         ]
     },
@@ -2802,8 +2569,7 @@
         "sounds": [
             {
                 "name": "e3_demo:music/mansion/light/25",
-                "stream": false,
-                "volume": 0.0005
+                "stream": false
             }
         ]
     },
@@ -2811,8 +2577,7 @@
         "sounds": [
             {
                 "name": "e3_demo:music/mansion/light/26",
-                "stream": false,
-                "volume": 0.0005
+                "stream": false
             }
         ]
     },
@@ -2820,8 +2585,7 @@
         "sounds": [
             {
                 "name": "e3_demo:music/mansion/light/27",
-                "stream": false,
-                "volume": 0.0005
+                "stream": false
             }
         ]
     },
@@ -2829,8 +2593,7 @@
         "sounds": [
             {
                 "name": "e3_demo:music/mansion/light/28",
-                "stream": false,
-                "volume": 0.0005
+                "stream": false
             }
         ]
     },
@@ -2838,8 +2601,7 @@
         "sounds": [
             {
                 "name": "e3_demo:music/mansion/light/29",
-                "stream": false,
-                "volume": 0.0005
+                "stream": false
             }
         ]
     },
@@ -2847,8 +2609,7 @@
         "sounds": [
             {
                 "name": "e3_demo:music/mansion/light/30",
-                "stream": false,
-                "volume": 0.0005
+                "stream": false
             }
         ]
     },
@@ -2856,8 +2617,7 @@
         "sounds": [
             {
                 "name": "e3_demo:music/mansion/light/31",
-                "stream": false,
-                "volume": 0.0005
+                "stream": false
             }
         ]
     },
@@ -2865,8 +2625,7 @@
         "sounds": [
             {
                 "name": "e3_demo:music/mansion/light/32",
-                "stream": false,
-                "volume": 0.0005
+                "stream": false
             }
         ]
     },
@@ -2874,8 +2633,7 @@
         "sounds": [
             {
                 "name": "e3_demo:music/mansion/light/33",
-                "stream": false,
-                "volume": 0.0005
+                "stream": false
             }
         ]
     },
@@ -2883,8 +2641,7 @@
         "sounds": [
             {
                 "name": "e3_demo:music/mansion/light/34",
-                "stream": false,
-                "volume": 0.0005
+                "stream": false
             }
         ]
     },
@@ -2892,8 +2649,7 @@
         "sounds": [
             {
                 "name": "e3_demo:music/mansion/light/35",
-                "stream": false,
-                "volume": 0.0005
+                "stream": false
             }
         ]
     },
@@ -2901,8 +2657,7 @@
         "sounds": [
             {
                 "name": "e3_demo:music/mansion/light/36",
-                "stream": false,
-                "volume": 0.0005
+                "stream": false
             }
         ]
     },
@@ -2910,8 +2665,7 @@
         "sounds": [
             {
                 "name": "e3_demo:music/mansion/light/37",
-                "stream": false,
-                "volume": 0.0005
+                "stream": false
             }
         ]
     },
@@ -2919,8 +2673,7 @@
         "sounds": [
             {
                 "name": "e3_demo:music/mansion/light/38",
-                "stream": false,
-                "volume": 0.0005
+                "stream": false
             }
         ]
     },
@@ -2928,8 +2681,7 @@
         "sounds": [
             {
                 "name": "e3_demo:music/meet_e_gadd",
-                "stream": true,
-                "volume": 0.0005
+                "stream": true
             }
         ]
     },
@@ -2937,8 +2689,7 @@
         "sounds": [
             {
                 "name": "e3_demo:music/title",
-                "stream": true,
-                "volume": 0.0005
+                "stream": true
             }
         ]
     }

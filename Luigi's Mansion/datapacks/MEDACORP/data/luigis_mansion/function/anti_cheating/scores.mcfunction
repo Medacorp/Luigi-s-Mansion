@@ -283,4 +283,4 @@ execute unless data storage luigis_mansion:data current_state if entity @a[limit
 gamerule fallDamage false
 gamerule maxCommandChainLength 2147483647
 gamerule maxCommandForkCount 2147483647
-gamerule spawnChunkRadius 0
+gamerule pvp false

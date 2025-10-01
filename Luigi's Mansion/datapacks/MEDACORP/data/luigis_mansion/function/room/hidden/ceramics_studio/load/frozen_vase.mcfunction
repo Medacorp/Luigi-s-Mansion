@@ -1,2 +1,2 @@
-data modify storage luigis_mansion:data furniture set value {room:65,particles:"chilly_fog",searchable:["interact","vacuum"],ice_elemental_source:{},can_hide_boo:1b,shake_animation:["interact","vacuum"],sound:{namespace:"luigis_mansion",id:"stone"},scan_result:{namespace:"luigis_mansion",id:"scan/scanner/9"}}
+data modify storage luigis_mansion:data furniture set value {room:65,particles:"chilly_fog",searchable:["interact","vacuum"],ice_elemental_source:{},shake_animation:["interact","vacuum"],sound:{namespace:"luigis_mansion",id:"stone"},scan_result:{namespace:"luigis_mansion",id:"scan/scanner/9"}}
 execute positioned 707 29 -46 rotated -90 0 run function luigis_mansion:spawn_furniture/frozen_vase
