@@ -1,20 +1,2 @@
+#Table
 summon minecraft:marker 695 2 60 {Tags:["choice","hide_option"]}
-summon minecraft:marker 699 3 66 {Tags:["choice","hide_option"]}
-summon minecraft:marker 698 2 75 {Tags:["choice","hide_option"]}
-summon minecraft:marker 697 3 76 {Tags:["choice","hide_option"]}
-summon minecraft:marker 697 2 75 {Tags:["choice","hide_option"]}
-summon minecraft:marker 696 2 75 {Tags:["choice","hide_option"]}
-summon minecraft:marker 695 3 76 {Tags:["choice","hide_option"]}
-summon minecraft:marker 695 2 75 {Tags:["choice","hide_option"]}
-summon minecraft:marker 694 2 75 {Tags:["choice","hide_option"]}
-summon minecraft:marker 693 3 76 {Tags:["choice","hide_option"]}
-summon minecraft:marker 693 2 75 {Tags:["choice","hide_option"]}
-summon minecraft:marker 692 2 75 {Tags:["choice","hide_option"]}
-summon minecraft:marker 691 3 76 {Tags:["choice","hide_option"]}
-summon minecraft:marker 691 2 75 {Tags:["choice","hide_option"]}
-summon minecraft:marker 690 2 75 {Tags:["choice","hide_option"]}
-summon minecraft:marker 689 3 76 {Tags:["choice","hide_option"]}
-summon minecraft:marker 689 2 75 {Tags:["choice","hide_option"]}
-summon minecraft:marker 688 2 75 {Tags:["choice","hide_option"]}
-summon minecraft:marker 690 2 60 {Tags:["choice","hide_option"]}
-summon minecraft:marker 691 2 59 {Tags:["choice","hide_option"]}

@@ -1,4 +1,5 @@
 v?:
+* Updated to 1.21.9
 * Added GBH map models (not in use yet)
 * Added cloth and poster furniture types
 ** Poster furniture changed to actual furniture; they also visually get attached to the vacuumer's poltergust
@@ -33,6 +34,7 @@ v?:
 * Fixed a few gameboy horror scan mistakes
 * Fixed master bedroom nightstand lamp had no interactions
 * Fixed item frame reflections weren't working
+* Fixed Boos could hide in all old furniture; now the options match the original game
 * Fixed some converted furniture had the wrong can_hide_boo value
 * Fixed missing mice in E3 Demo kitchen
 

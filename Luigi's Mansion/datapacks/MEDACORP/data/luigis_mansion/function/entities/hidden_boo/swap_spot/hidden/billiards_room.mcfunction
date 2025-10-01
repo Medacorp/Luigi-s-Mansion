@@ -1,9 +1,4 @@
-summon minecraft:marker 677 13 -51 {Tags:["choice","hide_option"]}
-summon minecraft:marker 675 12 -58 {Tags:["choice","hide_option"]}
-summon minecraft:marker 677 13 -73 {Tags:["choice","hide_option"]}
+#Darting Board
 summon minecraft:marker 675 13 -68 {Tags:["choice","hide_option"]}
+#Chess Table
 summon minecraft:marker 685 11 -52 {Tags:["choice","hide_option"]}
-summon minecraft:marker 686 11 -51 {Tags:["choice","hide_option"]}
-summon minecraft:marker 684 11 -52 {Tags:["choice","hide_option"]}
-summon minecraft:marker 685 11 -53 {Tags:["choice","hide_option"]}
-summon minecraft:marker 681 11 -63 {Tags:["choice","hide_option"]}

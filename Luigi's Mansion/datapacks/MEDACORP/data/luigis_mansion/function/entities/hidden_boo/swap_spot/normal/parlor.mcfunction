@@ -1,11 +1,8 @@
-summon minecraft:marker 717 21 36 {Tags:["choice","hide_option"]}
-summon minecraft:marker 724 21 36 {Tags:["choice","hide_option"]}
+#Painting 4
 summon minecraft:marker 714 21 28 {Tags:["choice","hide_option"]}
-summon minecraft:marker 717 21 19 {Tags:["choice","hide_option"]}
-summon minecraft:marker 724 21 19 {Tags:["choice","hide_option"]}
+#Table 3
 summon minecraft:marker 721 20 23 {Tags:["choice","hide_option"]}
-summon minecraft:marker 719 20 32 {Tags:["choice","hide_option"]}
-summon minecraft:marker 721 20 32 {Tags:["choice","hide_option"]}
+#Table 2
 summon minecraft:marker 714 20 27 {Tags:["choice","hide_option"]}
+#Closet
 summon minecraft:marker 714 20 34 {Tags:["choice","hide_option"]}
-summon minecraft:marker 721 20 19 {Tags:["choice","hide_option"]}

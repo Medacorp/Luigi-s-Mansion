@@ -1,11 +1,6 @@
+#Chair
 summon minecraft:marker 740 29 -56 {Tags:["choice","hide_option"]}
-summon minecraft:marker 745 31 -45 {Tags:["choice","hide_option"]}
+#Shelf 1
 summon minecraft:marker 734 29 -44 {Tags:["choice","hide_option"]}
+#Shelf 2
 summon minecraft:marker 734 30 -44 {Tags:["choice","hide_option"]}
-summon minecraft:marker 735 29 -52 {Tags:["choice","hide_option"]}
-summon minecraft:marker 735 31 -53 {Tags:["choice","hide_option"]}
-summon minecraft:marker 737 29 -53 {Tags:["choice","hide_option"]}
-summon minecraft:marker 737 31 -53 {Tags:["choice","hide_option"]}
-summon minecraft:marker 735 29 -54 {Tags:["choice","hide_option"]}
-summon minecraft:marker 737 29 -55 {Tags:["choice","hide_option"]}
-summon minecraft:marker 743 29 -56 {Tags:["choice","hide_option"]}
