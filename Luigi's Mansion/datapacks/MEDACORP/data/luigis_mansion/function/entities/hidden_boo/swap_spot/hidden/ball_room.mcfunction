@@ -1,5 +1,3 @@
-#Painting 2
-summon minecraft:marker 697 12 65 {Tags:["choice","hide_option"]}
 #Chair 1
 summon minecraft:marker 697 11 57 {Tags:["choice","hide_option"]}
 #Chair 3

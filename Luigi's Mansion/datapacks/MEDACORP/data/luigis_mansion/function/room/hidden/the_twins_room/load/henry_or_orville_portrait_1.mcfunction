@@ -1,0 +1,2 @@
+data modify storage luigis_mansion:data furniture set value {room:49,searchable:["interact","vacuum"],shake_animation:["interact","vacuum"],sound:{namespace:"luigis_mansion",id:"generic"},scan_result:{namespace:"luigis_mansion",id:"scan/scanner/31"}}
+execute positioned 739 22.5 -32.97 rotated 0 0 run function luigis_mansion:spawn_furniture/henry_or_orville_portrait

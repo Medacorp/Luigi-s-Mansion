@@ -12,12 +12,14 @@
 /Luigi's Mansion/data/raids.dat
 /Luigi's Mansion/data/random_sequences.dat
 /Luigi's Mansion/data/scoreboard.dat
+/Luigi's Mansion/data/world_border.dat
 /Luigi's Mansion/datapacks/*
 !/Luigi's Mansion/datapacks/MEDACORP/
 /Luigi's Mansion/dimensions/*
 !/Luigi's Mansion/dimensions/luigis_mansion/
 /Luigi's Mansion/dimensions/luigis_mansion/**/data/chunks.dat
 /Luigi's Mansion/dimensions/luigis_mansion/**/data/raids.dat
+/Luigi's Mansion/dimensions/luigis_mansion/**/data/world_border.dat
 /Luigi's Mansion/dimensions/luigis_mansion/**/entities/
 /Luigi's Mansion/dimensions/luigis_mansion/**/poi/
 /Luigi's Mansion/entities/
@@ -26,6 +28,7 @@
 /Luigi's Mansion/stats/
 /Official add-ons/*/Dimension/*/**/data/chunks.dat
 /Official add-ons/*/Dimension/*/**/data/raids.dat
+/Official add-ons/*/Dimension/*/**/data/world_border.dat
 /Official add-ons/*/Dimension/*/**/entities/
 /Official add-ons/*/Dimension/*/**/poi/
 /allowed_symlinks.txt

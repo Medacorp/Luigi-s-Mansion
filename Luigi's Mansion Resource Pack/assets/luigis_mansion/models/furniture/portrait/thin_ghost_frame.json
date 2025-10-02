@@ -1,0 +1,9 @@
+{
+	"parent": "luigis_mansion:furniture/portrait/ghost_frame",
+	"display": {
+		"head": {
+			"translation": [0, -12.75, 0],
+			"scale": [1.2, 1.6, 1.6]
+		}
+	}
+}
