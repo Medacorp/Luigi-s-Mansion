@@ -1,2 +1,2 @@
-data modify storage luigis_mansion:data furniture set value {room:3,searchable:["interact","vacuum"],shake_animation:["interact","vacuum"],sound:{namespace:"luigis_mansion",id:"generic"},scan_result:{namespace:"luigis_mansion",id:"scan/scanner/62"},tags:["talking_painting_3"]}
+data modify storage luigis_mansion:data furniture set value {room:3,searchable:["interact","vacuum"],shake_animation:["interact","vacuum"],sound:{namespace:"luigis_mansion",id:"generic"},scan_result:{namespace:"luigis_mansion",id:"scan/scanner/62"},tags:["talking_portrait_3"]}
 execute positioned 724 22.75 -20.93 rotated 0 0 run function luigis_mansion:spawn_furniture/mr_whirlinda_portrait/wide

@@ -106,8 +106,8 @@ luigis_mansion:normal/move_storage_room_wall            | Yes         |         
 luigis_mansion:normal/release_boos                      | Yes         |                                                | Pressed the Boo hatch button                | luigis_mansion:released_boos_call + technical flag released_boos set
 luigis_mansion:observatory_path                         | Yes         | Mario item                                     | Observatory path spawned in                 | Technical flag observatory_path set
 luigis_mansion:observe_moon                             | Yes         | Fields observing_player and observing_position | Look through the telescope                  | Observatory wave + 1
-luigis_mansion:paintings                                | Yes         | Entity talking_painting_1 through 5            | WHO PUT OUT MY CANDLES!?                    | Parlor wave + 1
 luigis_mansion:portrait_ghosts                          | Yes         |                                                | Portrait ghosts call                        | 
+luigis_mansion:portraits                                | Yes         | Entity talking_portrait_1 through 5            | WHO PUT OUT MY CANDLES!?                    | Parlor wave + 1
 luigis_mansion:portrificationizing                      | Yes         |                                                | Portrificationizing the ghosts              | Get portraits, Save progress (choice), (warp to Underground Lab + luigis_mansion:undergound_lab) / (save high score + luigis_mansion:mario_to_normal)
 luigis_mansion:portrificationizing/get_big_pearl        | No          |                                                | Portrificationizing step                    | Gets the Big Pearl count values
 luigis_mansion:portrificationizing/get_bill             | No          |                                                | Portrificationizing step                    | Gets the Bill count values

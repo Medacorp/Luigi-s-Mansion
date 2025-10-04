@@ -4,11 +4,11 @@
         "e3_demo:room/original/bed_room_1/load/lights",
         "e3_demo:room/original/bed_room_1/load/fan",
         "e3_demo:room/original/bed_room_1/load/hallway_2_door",
+        "e3_demo:room/original/bed_room_1/load/lydia_portrait_1",
+        "e3_demo:room/original/bed_room_1/load/lydia_portrait_2",
+        "e3_demo:room/original/bed_room_1/load/neville_portrait_1",
+        "e3_demo:room/original/bed_room_1/load/neville_portrait_2",
         "e3_demo:room/original/bed_room_1/load/nightstand",
-        "e3_demo:room/original/bed_room_1/load/painting_1",
-        "e3_demo:room/original/bed_room_1/load/painting_2",
-        "e3_demo:room/original/bed_room_1/load/painting_3",
-        "e3_demo:room/original/bed_room_1/load/painting_4",
         "e3_demo:room/original/bed_room_1/load/room_clear_chest"
     ]
 }

@@ -8,14 +8,14 @@
         "luigis_mansion:room/hidden/conservatory/load/drum_3",
         "luigis_mansion:room/hidden/conservatory/load/hallway_5_door",
         "luigis_mansion:room/hidden/conservatory/load/harp",
-        "luigis_mansion:room/hidden/conservatory/load/painting_1",
-        "luigis_mansion:room/hidden/conservatory/load/painting_2",
-        "luigis_mansion:room/hidden/conservatory/load/painting_3",
-        "luigis_mansion:room/hidden/conservatory/load/painting_4",
         "luigis_mansion:room/hidden/conservatory/load/piano",
         "luigis_mansion:room/hidden/conservatory/load/poster",
         "luigis_mansion:room/hidden/conservatory/load/room_clear_chest",
         "luigis_mansion:room/hidden/conservatory/load/saxophone",
+        "luigis_mansion:room/hidden/conservatory/load/saxophone_ghost_portrait_1",
+        "luigis_mansion:room/hidden/conservatory/load/saxophone_ghost_portrait_2",
+        "luigis_mansion:room/hidden/conservatory/load/trumpet_ghost_portrait_1",
+        "luigis_mansion:room/hidden/conservatory/load/trumpet_ghost_portrait_2",
         "luigis_mansion:room/hidden/conservatory/load/xylophone"
     ]
 }

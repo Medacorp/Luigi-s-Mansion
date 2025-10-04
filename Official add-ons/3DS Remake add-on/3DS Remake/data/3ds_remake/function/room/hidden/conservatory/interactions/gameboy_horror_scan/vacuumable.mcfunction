@@ -1,1 +1,0 @@
-execute if entity @s[x=661.5,y=13,z=-27.5,distance=..0.7] unless score #conservatory_vacuumable Searched matches 1 run function luigis_mansion:selection_menu/game_boy_horror/scan/dialog {namespace:"luigis_mansion",id:"scan/scanner/25"}

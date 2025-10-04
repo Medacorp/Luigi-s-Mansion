@@ -1,0 +1,6 @@
+{
+	"parent": "luigis_mansion:furniture/portrait/22x16_mirrored",
+	"textures": {
+		"image": "luigis_mansion:furniture/portrait/puppies"
+	}
+}

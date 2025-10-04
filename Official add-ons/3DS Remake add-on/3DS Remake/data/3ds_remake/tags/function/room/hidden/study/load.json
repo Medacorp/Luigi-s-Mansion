@@ -8,11 +8,11 @@
         "3ds_remake:room/hidden/study/load/fire",
         "3ds_remake:room/hidden/study/load/hallway_2_door",
         "3ds_remake:room/hidden/study/load/horses_portrait",
-        "3ds_remake:room/hidden/study/load/painting_1",
-        "3ds_remake:room/hidden/study/load/painting_2",
-        "3ds_remake:room/hidden/study/load/painting_5",
+        "3ds_remake:room/hidden/study/load/lydia_portrait",
+        "3ds_remake:room/hidden/study/load/neville_portrait",
         "3ds_remake:room/hidden/study/load/rocking_chair",
         "3ds_remake:room/hidden/study/load/room_clear_chest",
-        "3ds_remake:room/hidden/study/load/roses_portrait"
+        "3ds_remake:room/hidden/study/load/roses_portrait",
+        "3ds_remake:room/hidden/study/load/spooky_portrait"
     ]
 }

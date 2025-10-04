@@ -1,0 +1,2 @@
+data modify storage luigis_mansion:data furniture set value {room:24,searchable:["interact","vacuum"],shake_animation:["interact","vacuum"],sound:{namespace:"luigis_mansion",id:"generic"},scan_result:{namespace:"luigis_mansion",id:"scan/scanner/31"}}
+execute positioned 738.07 14.5 -27 rotated -90 0 run function luigis_mansion:spawn_furniture/rich_man_portrait

@@ -8,11 +8,11 @@
         "luigis_mansion:room/normal/study/load/fire",
         "luigis_mansion:room/normal/study/load/hallway_2_door",
         "luigis_mansion:room/normal/study/load/horses_portrait",
-        "luigis_mansion:room/normal/study/load/painting_1",
-        "luigis_mansion:room/normal/study/load/painting_2",
-        "luigis_mansion:room/normal/study/load/painting_5",
+        "luigis_mansion:room/normal/study/load/lydia_portrait",
+        "luigis_mansion:room/normal/study/load/neville_portrait",
         "luigis_mansion:room/normal/study/load/rocking_chair",
         "luigis_mansion:room/normal/study/load/room_clear_chest",
-        "luigis_mansion:room/normal/study/load/roses_portrait"
+        "luigis_mansion:room/normal/study/load/roses_portrait",
+        "luigis_mansion:room/normal/study/load/spooky_portrait"
     ]
 }

@@ -1,0 +1,6 @@
+{
+	"parent": "luigis_mansion:furniture/portrait/22x32",
+	"textures": {
+		"image": "luigis_mansion:furniture/portrait/noble_woman"
+	}
+}

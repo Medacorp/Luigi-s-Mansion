@@ -19,13 +19,18 @@ v?:
 ** Gold mirrors
 ** Henry or Orville portraits
 ** Horses portraits
+** Lydia portraits
+** Mansion portraits
+** Mario's portraits
 ** Mr. Whirlinda portraits
+** Nana portraits
+** Neville portraits
 ** Posters
 ** Pink flowers portraits
 ** Roses portraits
-** Mansion portraits
-** Mario's portraits
+** Vincent Van Gore portraits
 * Optimized some furniture types to skip ticking if left alone
+* Changed paintings dialog (now named portraits) to shake the new portrait furniture
 * Changed leaving and re-entering the world while in an exterior cutscene will now skip it
 * Changed boo paths to match the original game more closely:
 ** They don't travel between hallways

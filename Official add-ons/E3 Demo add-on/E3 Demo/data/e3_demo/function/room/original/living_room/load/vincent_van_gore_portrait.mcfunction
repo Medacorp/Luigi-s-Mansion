@@ -1,0 +1,2 @@
+data modify storage luigis_mansion:data furniture set value {room:3,shake_animation:["interact","vacuum"],sound:{namespace:"luigis_mansion",id:"generic"},scan_result:{namespace:"luigis_mansion",id:"scan/scanner/1"}}
+execute positioned 714.07 22.75 28.0 rotated -90 0 run function luigis_mansion:spawn_furniture/vincent_van_gore_portrait

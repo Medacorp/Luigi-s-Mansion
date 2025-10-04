@@ -8,10 +8,6 @@
         "e3_demo:room/original/bed_room_1/reset/closet",
         "e3_demo:room/original/bed_room_1/reset/curtain_1",
         "e3_demo:room/original/bed_room_1/reset/curtain_2",
-        "e3_demo:room/original/bed_room_1/reset/mirror",
-        "e3_demo:room/original/bed_room_1/reset/painting_1",
-        "e3_demo:room/original/bed_room_1/reset/painting_2",
-        "e3_demo:room/original/bed_room_1/reset/painting_3",
-        "e3_demo:room/original/bed_room_1/reset/painting_4"
+        "e3_demo:room/original/bed_room_1/reset/mirror"
     ]
 }

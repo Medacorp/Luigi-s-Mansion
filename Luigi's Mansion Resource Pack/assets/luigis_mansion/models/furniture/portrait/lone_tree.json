@@ -1,0 +1,6 @@
+{
+	"parent": "luigis_mansion:furniture/portrait/22x16",
+	"textures": {
+		"image": "luigis_mansion:furniture/portrait/lone_tree"
+	}
+}

@@ -6,10 +6,10 @@
         "luigis_mansion:room/normal/ball_room/load/ball_floor_2",
         "luigis_mansion:room/normal/ball_room/load/hallway_4_door",
         "luigis_mansion:room/normal/ball_room/load/mr_whirlinda_portrait",
-        "luigis_mansion:room/normal/ball_room/load/painting_3",
-        "luigis_mansion:room/normal/ball_room/load/painting_4",
+        "luigis_mansion:room/normal/ball_room/load/old_man_portrait",
         "luigis_mansion:room/normal/ball_room/load/pink_flowers_portrait",
         "luigis_mansion:room/normal/ball_room/load/room_clear_chest",
-        "luigis_mansion:room/normal/ball_room/load/storage_room_door"
+        "luigis_mansion:room/normal/ball_room/load/storage_room_door",
+        "luigis_mansion:room/normal/ball_room/load/young_man_portrait"
     ]
 }

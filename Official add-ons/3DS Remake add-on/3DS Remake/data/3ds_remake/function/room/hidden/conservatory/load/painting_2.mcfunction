@@ -1,2 +1,0 @@
-summon minecraft:item_frame 654 14 -15 {block_pos:[I;0,0,0],FIXED_block_pos:[I;654,14,-15],Tags:["static","no_ai","freeze_animation"],Facing:5b,Silent:1b,Invulnerable:1b,Item:{id:"minecraft:filled_map",count:1,components:{"minecraft:map_id":158}},CustomName:{type:"translatable",translate:"luigis_mansion:furniture.painting"},Invisible:1b,Fixed:1b}
-scoreboard players set @e[x=654.5,y=14.0,z=-14.5,distance=..2,type=minecraft:item_frame] Room 25

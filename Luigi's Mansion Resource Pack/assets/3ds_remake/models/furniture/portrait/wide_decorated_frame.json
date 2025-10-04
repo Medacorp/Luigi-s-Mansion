@@ -1,0 +1,9 @@
+{
+	"parent": "luigis_mansion:furniture/portrait/decorated_frame",
+	"display": {
+		"head": {
+			"translation": [0, -6.75, 0],
+			"scale": [2.3, 1.6, 1.6]
+		}
+	}
+}

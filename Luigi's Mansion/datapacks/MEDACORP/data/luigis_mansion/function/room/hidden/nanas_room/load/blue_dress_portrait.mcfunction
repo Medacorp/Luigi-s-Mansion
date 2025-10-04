@@ -1,0 +1,2 @@
+data modify storage luigis_mansion:data furniture set value {room:44,searchable:["manual","vacuum"],shake_animation:["manual","vacuum"],sound:{namespace:"luigis_mansion",id:"generic"},scan_result:{namespace:"luigis_mansion",id:"scan/scanner/56"}}
+execute positioned 661 22.5 17.07 rotated 0 0 run function luigis_mansion:spawn_furniture/blue_dress_portrait

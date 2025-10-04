@@ -1,0 +1,2 @@
+data modify storage luigis_mansion:data furniture set value {room:47,no_ai:1b,animation:{freeze:1b},scan_result:{namespace:"luigis_mansion",id:"scan/scanner/7"}}
+execute positioned 686.93 13.5 -55 rotated 90 0 run function 3ds_remake:spawn_furniture/horses_portrait

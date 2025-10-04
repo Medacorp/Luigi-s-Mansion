@@ -1,0 +1,2 @@
+data modify storage luigis_mansion:data furniture set value {room:69,pose:[0.0f,0.0f,-5.0f],no_ai:1b,animation:{frozen:1b},scan_result:{namespace:"luigis_mansion",id:"scan/scanner/7"}}
+execute positioned 746.93 23.5 38.0 rotated 90 0 run function luigis_mansion:spawn_furniture/noble_woman_portrait

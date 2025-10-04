@@ -1,0 +1,6 @@
+{
+	"parent": "luigis_mansion:furniture/portrait/26x32_small",
+	"textures": {
+		"image": "luigis_mansion:furniture/portrait/slim_bankshot"
+	}
+}

@@ -1,0 +1,2 @@
+data modify storage luigis_mansion:data furniture set value {room:5,no_ai:1b,animation:{frozen:1b},scan_result:{namespace:"luigis_mansion",id:"scan/scanner/31"}}
+execute positioned 710.93 13.25 -50 rotated 90 0 run function luigis_mansion:spawn_furniture/old_man_portrait/large

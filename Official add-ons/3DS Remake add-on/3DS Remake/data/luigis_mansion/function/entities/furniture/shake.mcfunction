@@ -2,7 +2,7 @@ scoreboard players add @s FurnitureShakeTime 1
 execute unless data entity @s data.animation{namespace:"luigis_mansion",id:"idle"} run tag @s[scores={AnimationProgress=0}] remove fake_shake
 execute unless data entity @s data.animation{namespace:"luigis_mansion",id:"idle"} run tag @s[scores={AnimationProgress=0}] remove shake
 execute unless data entity @s data.animation{namespace:"luigis_mansion",id:"idle"} run tag @s[scores={AnimationProgress=0}] remove long_shake
-execute unless data entity @s data.animation{namespace:"luigis_mansion",id:"idle"} run scoreboard players set @s[scores={AnimationProgress=0}] FurnitureShakeTime -1
+execute if data entity @s data.animation{namespace:"luigis_mansion",id:"idle"} run scoreboard players set @s FurnitureShakeTime -1
 execute if entity @s[tag=!long_shake,tag=!use_medium_shake,tag=fake_shake] if data entity @s data.animation{namespace:"luigis_mansion",id:"idle"} run data modify entity @s data.animation set value {namespace:"luigis_mansion",id:"fake_shake"}
 execute if entity @s[tag=!long_shake,tag=!use_medium_shake,tag=!fake_shake] if data entity @s data.animation{namespace:"luigis_mansion",id:"idle"} run data modify entity @s data.animation set value {namespace:"luigis_mansion",id:"short_shake"}
 execute if entity @s[tag=use_medium_shake] if data entity @s data.animation{namespace:"luigis_mansion",id:"idle"} run data modify entity @s data.animation set value {namespace:"luigis_mansion",id:"medium_shake"}

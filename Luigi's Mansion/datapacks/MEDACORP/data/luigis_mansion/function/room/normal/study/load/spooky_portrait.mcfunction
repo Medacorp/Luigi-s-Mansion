@@ -1,0 +1,2 @@
+data modify storage luigis_mansion:data furniture set value {room:8,searchable:["manual","vacuum"],shake_animation:["manual","vacuum"],sound:{namespace:"luigis_mansion",id:"generic"},scan_result:{namespace:"luigis_mansion",id:"scan/scanner/7"}}
+execute positioned 712 22.5 44.07 rotated 0 0 run function luigis_mansion:spawn_furniture/spooky_portrait

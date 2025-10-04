@@ -11,10 +11,10 @@
         "luigis_mansion:room/normal/billiards_room/load/horses_portrait_3",
         "luigis_mansion:room/normal/billiards_room/load/nightstand_1",
         "luigis_mansion:room/normal/billiards_room/load/nightstand_2",
-        "luigis_mansion:room/normal/billiards_room/load/painting_1",
-        "luigis_mansion:room/normal/billiards_room/load/painting_4",
-        "luigis_mansion:room/normal/billiards_room/load/painting_6",
+        "luigis_mansion:room/normal/billiards_room/load/old_man_portrait",
         "luigis_mansion:room/normal/billiards_room/load/projection_room_door",
-        "luigis_mansion:room/normal/billiards_room/load/room_clear_chest"
+        "luigis_mansion:room/normal/billiards_room/load/room_clear_chest",
+        "luigis_mansion:room/normal/billiards_room/load/slim_bankshot_portrait",
+        "luigis_mansion:room/normal/billiards_room/load/young_man_portrait"
     ]
 }
