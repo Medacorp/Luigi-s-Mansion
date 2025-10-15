@@ -1,6 +1,1 @@
-{
-	"parent": "luigis_mansion:furniture/portrait/16x16_mirrored",
-	"textures": {
-		"image": "e3_demo:furniture/portrait/chauncey_ghost"
-	}
-}
+{"parent":"luigis_mansion:furniture/portrait/16x16_mirrored","textures":{"image":"e3_demo:furniture/portrait/chauncey_ghost"}}

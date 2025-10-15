@@ -1,7 +1,1 @@
-{
-    "parent": "minecraft:block/cube_top",
-    "textures": {
-        "top": "luigis_mansion:block/garlic_top",
-        "side": "luigis_mansion:block/garlic_side"
-    }
-}
+{"parent":"minecraft:block/cube_top","textures":{"top":"luigis_mansion:block/garlic_top","side":"luigis_mansion:block/garlic_side"}}

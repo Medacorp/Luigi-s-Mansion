@@ -1,0 +1,3 @@
+data modify storage luigis_mansion:data furniture set value {room:71,shake_animation:["interact","vacuum"],sound:{namespace:"luigis_mansion",id:"generic"},no_dust:1b,search_command:"data modify storage luigis_mansion:data current_state.current_data.technical_data.ghost_guy_easel set value 1b",scan_result:{namespace:"luigis_mansion",id:"scan/scanner/7"}}
+execute if data storage luigis_mansion:data current_state.current_data.rooms.the_artists_studio{cleared:1b} run data modify storage luigis_mansion:data furniture merge value {searched:1b,no_search_animation:1b}
+execute positioned 692.8 29 82.9 rotated -100 0 run function luigis_mansion:spawn_furniture/ghost_guy_easel

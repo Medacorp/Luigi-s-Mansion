@@ -1,6 +1,1 @@
-{
-	"parent": "luigis_mansion:item/game_boy_horror/radar",
-	"textures": {
-		"radar": "luigis_mansion:item/game_boy_horror/radar_here"
-	}
-}
+{"parent":"luigis_mansion:item/game_boy_horror/radar","textures":{"radar":"luigis_mansion:item/game_boy_horror/radar_here"}}

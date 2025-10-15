@@ -2,16 +2,16 @@
     "values": [
         "luigis_mansion:room/normal/the_artists_studio/load/set_loaded",
         "luigis_mansion:room/normal/the_artists_studio/load/lights",
+        "luigis_mansion:room/normal/the_artists_studio/load/blue_twirler_easel",
         "luigis_mansion:room/normal/the_artists_studio/load/concrete_bricks",
+        "luigis_mansion:room/normal/the_artists_studio/load/garbage_can_ghost_easel",
+        "luigis_mansion:room/normal/the_artists_studio/load/ghost_guy_easel",
+        "luigis_mansion:room/normal/the_artists_studio/load/gold_ghost_easel",
         "luigis_mansion:room/normal/the_artists_studio/load/hallway_17_door",
-        "luigis_mansion:room/normal/the_artists_studio/load/painting_1",
-        "luigis_mansion:room/normal/the_artists_studio/load/painting_2",
         "luigis_mansion:room/normal/the_artists_studio/load/painting_3",
-        "luigis_mansion:room/normal/the_artists_studio/load/painting_4",
-        "luigis_mansion:room/normal/the_artists_studio/load/painting_5",
-        "luigis_mansion:room/normal/the_artists_studio/load/painting_6",
-        "luigis_mansion:room/normal/the_artists_studio/load/painting_7",
-        "luigis_mansion:room/normal/the_artists_studio/load/painting_8",
-        "luigis_mansion:room/normal/the_artists_studio/load/painting_9"
+        "luigis_mansion:room/normal/the_artists_studio/load/purple_bomber_easel",
+        "luigis_mansion:room/normal/the_artists_studio/load/purple_puncher_easel",
+        "luigis_mansion:room/normal/the_artists_studio/load/red_grabbing_ghost_easel",
+        "luigis_mansion:room/normal/the_artists_studio/load/room_clear_chest_easel"
     ]
 }

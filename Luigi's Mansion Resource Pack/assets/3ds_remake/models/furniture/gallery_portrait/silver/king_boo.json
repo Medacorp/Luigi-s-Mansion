@@ -1,6 +1,1 @@
-{
-	"parent": "3ds_remake:furniture/gallery_portrait/silver_king_boo",
-	"textures": {
-		"image": "3ds_remake:furniture/gallery_portrait/silver/king_boo"
-	}
-}
+{"parent":"3ds_remake:furniture/gallery_portrait/silver_king_boo","textures":{"image":"3ds_remake:furniture/gallery_portrait/silver/king_boo"}}

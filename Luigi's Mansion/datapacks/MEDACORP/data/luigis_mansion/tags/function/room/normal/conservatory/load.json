@@ -12,10 +12,10 @@
         "luigis_mansion:room/normal/conservatory/load/poster",
         "luigis_mansion:room/normal/conservatory/load/room_clear_chest",
         "luigis_mansion:room/normal/conservatory/load/saxophone",
-        "luigis_mansion:room/normal/conservatory/load/saxophone_ghost_portrait_1",
-        "luigis_mansion:room/normal/conservatory/load/saxophone_ghost_portrait_2",
-        "luigis_mansion:room/normal/conservatory/load/trumpet_ghost_portrait_1",
-        "luigis_mansion:room/normal/conservatory/load/trumpet_ghost_portrait_2",
+        "luigis_mansion:room/normal/conservatory/load/saxophone_portrait_1",
+        "luigis_mansion:room/normal/conservatory/load/saxophone_portrait_2",
+        "luigis_mansion:room/normal/conservatory/load/trumpet_portrait_1",
+        "luigis_mansion:room/normal/conservatory/load/trumpet_portrait_2",
         "luigis_mansion:room/normal/conservatory/load/xylophone"
     ]
 }

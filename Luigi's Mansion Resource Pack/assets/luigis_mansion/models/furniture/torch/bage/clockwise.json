@@ -1,6 +1,1 @@
-{
-	"parent": "luigis_mansion:furniture/torch/clockwise",
-	"textures": {
-		"0": "luigis_mansion:furniture/torch/bage"
-	}
-}
+{"parent":"luigis_mansion:furniture/torch/clockwise","textures":{"0":"luigis_mansion:furniture/torch/bage"}}

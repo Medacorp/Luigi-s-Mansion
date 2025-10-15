@@ -1,6 +1,1 @@
-{
-	"parent": "luigis_mansion:furniture/portrait/16x16_mirrored",
-	"textures": {
-		"image": "luigis_mansion:furniture/portrait/fruit_basket"
-	}
-}
+{"parent":"luigis_mansion:furniture/portrait/22x16_mirrored","textures":{"image":"luigis_mansion:furniture/portrait/fruit_basket"}}

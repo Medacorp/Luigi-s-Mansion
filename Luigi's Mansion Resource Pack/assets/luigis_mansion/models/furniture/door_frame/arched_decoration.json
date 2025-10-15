@@ -1,6 +1,1 @@
-{
-	"parent": "luigis_mansion:furniture/door_frame/normal",
-	"textures": {
-		"door": "luigis_mansion:furniture/door_frame/arched_decoration"
-	}
-}
+{"parent":"luigis_mansion:furniture/door_frame/normal","textures":{"door":"luigis_mansion:furniture/door_frame/arched_decoration"}}

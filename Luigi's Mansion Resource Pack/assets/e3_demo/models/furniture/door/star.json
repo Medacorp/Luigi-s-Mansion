@@ -1,6 +1,1 @@
-{
-	"parent": "luigis_mansion:furniture/door",
-	"textures": {
-		"door": "e3_demo:furniture/door/star"
-	}
-}
+{"parent":"luigis_mansion:furniture/door","textures":{"door":"e3_demo:furniture/door/star"}}

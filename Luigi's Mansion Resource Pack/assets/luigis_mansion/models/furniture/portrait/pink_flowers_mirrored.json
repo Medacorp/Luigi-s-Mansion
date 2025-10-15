@@ -1,6 +1,1 @@
-{
-	"parent": "luigis_mansion:furniture/portrait/22x32_mirrored",
-	"textures": {
-		"image": "luigis_mansion:furniture/portrait/pink_flowers"
-	}
-}
+{"parent":"luigis_mansion:furniture/portrait/22x32_mirrored","textures":{"image":"luigis_mansion:furniture/portrait/pink_flowers"}}

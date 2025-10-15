@@ -1,6 +1,1 @@
-{
-	"parent": "luigis_mansion:furniture/portrait/26x32_mirrored",
-	"textures": {
-		"image": "luigis_mansion:furniture/portrait/lydia"
-	}
-}
+{"parent":"luigis_mansion:furniture/portrait/26x32_mirrored","textures":{"image":"luigis_mansion:furniture/portrait/lydia"}}

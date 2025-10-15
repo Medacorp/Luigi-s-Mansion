@@ -1,9 +1,1 @@
-{
-	"parent": "luigis_mansion:furniture/portrait/26x32",
-	"display": {
-		"head": {
-			"translation": [0, -12.75, 0],
-			"scale": [1.2, 1.6, 1.6]
-		}
-	}
-}
+{"parent":"luigis_mansion:furniture/portrait/26x32","display":{"head":{"translation":[0,-12.75,0],"scale":[1.2,1.6,1.6]}}}

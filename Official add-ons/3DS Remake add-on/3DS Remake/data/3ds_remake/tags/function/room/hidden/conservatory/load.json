@@ -12,10 +12,10 @@
         "3ds_remake:room/hidden/conservatory/load/poster",
         "3ds_remake:room/hidden/conservatory/load/room_clear_chest",
         "3ds_remake:room/hidden/conservatory/load/saxophone",
-        "3ds_remake:room/hidden/conservatory/load/saxophone_ghost_portrait_1",
-        "3ds_remake:room/hidden/conservatory/load/saxophone_ghost_portrait_2",
-        "3ds_remake:room/hidden/conservatory/load/trumpet_ghost_portrait_1",
-        "3ds_remake:room/hidden/conservatory/load/trumpet_ghost_portrait_2",
+        "3ds_remake:room/hidden/conservatory/load/saxophone_portrait_1",
+        "3ds_remake:room/hidden/conservatory/load/saxophone_portrait_2",
+        "3ds_remake:room/hidden/conservatory/load/trumpet_portrait_1",
+        "3ds_remake:room/hidden/conservatory/load/trumpet_portrait_2",
         "3ds_remake:room/hidden/conservatory/load/xylophone"
     ]
 }

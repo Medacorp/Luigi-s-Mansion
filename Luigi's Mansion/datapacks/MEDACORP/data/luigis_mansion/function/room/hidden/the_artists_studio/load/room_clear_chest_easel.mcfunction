@@ -1,0 +1,5 @@
+data modify storage luigis_mansion:data furniture set value {room:71,shake_animation:["interact","vacuum"],sound:{namespace:"luigis_mansion",id:"concrete"},no_dust:1b,scan_result:{namespace:"luigis_mansion",id:"scan/scanner/25"}}
+execute unless data storage luigis_mansion:data current_state.current_data{obtained_keys:["secret_altar"]} run data modify storage luigis_mansion:data furniture.loot set value {contents:{luigis_mansion:{spade_key:[{door:"secret_altar",rotation:[-180.0f,0.0f]}]}}}
+execute if data storage luigis_mansion:data current_state.current_data.rooms.the_artists_studio{cleared:1b} run data modify storage luigis_mansion:data furniture merge value {searched:1b,no_search_animation:1b}
+execute if data storage luigis_mansion:data furniture{searched:1b,loot:{}} run data modify storage luigis_mansion:data furniture.tags set value ["full_search"]
+execute positioned 701 29 89.9 rotated -180 0 run function luigis_mansion:spawn_furniture/room_clear_chest_easel

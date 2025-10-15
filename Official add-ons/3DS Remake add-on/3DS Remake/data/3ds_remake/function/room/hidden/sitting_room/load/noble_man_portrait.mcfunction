@@ -1,2 +1,0 @@
-data modify storage luigis_mansion:data furniture set value {room:69,pose:[0.0f,0.0f,10.0f],no_ai:1b,animation:{frozen:1b},scan_result:{namespace:"luigis_mansion",id:"scan/scanner/22"}}
-execute positioned 746.93 23.5 -34 rotated 90 0 run function luigis_mansion:spawn_furniture/noble_man_portrait/yellow

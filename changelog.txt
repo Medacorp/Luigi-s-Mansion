@@ -1,48 +1,101 @@
 v?:
-* Updated to 1.21.9
+* Updated to 1.21.9/1.21.10
 * Added GBH map models (not in use yet)
-* Added cloth and poster furniture types
+* Added cloth, ghost art and poster furniture types
 ** Poster furniture changed to actual furniture; they also visually get attached to the vacuumer's poltergust
-** Cloth type implemented (not in use yet, aside from a test entity spawn function)
+** Cloth type implemented (not in use yet)
+** Ghost art is the same as generic, but only opens when in a lit room, or when a ghost is hiding in it; cannot be searched (aside from revealing hidden Boos) before it is open
 * Added furniture models for: 
   (Do note that the original game has some furniture baked into the room geometry, especially the fourth wall.
   The uninteractability of some portraits is as such intended)
 ** Angel statues
 ** Barrels
-** Bejeweled mirrors
-** Bouquet portraits
-** (Standing) Chauncey portraits
 ** Concrete bricks
-** Fern portraits
+** Easels
+*** Blue Twirler
+*** Garbage Can Ghost
+*** Ghost Guy
+*** Gold Ghost
+*** Purple Bomber
+*** Purple Puncher
+*** Red Grabbing Ghost
+*** Room clear chest
 ** (Frozen) oil drums
-** Fruit basket portraits
-** Gold mirrors
-** Henry or Orville portraits
-** Horses portraits
-** Lydia portraits
-** Mansion portraits
-** Mario's portraits
-** Mr. Whirlinda portraits
-** Nana portraits
-** Neville portraits
+** Mirrors
+*** Bejeweled
+*** Gold
+** Portraits
+*** Blue dress
+*** Bouquet
+*** Cat
+*** (Standing) Chauncey
+*** Elders
+*** Fern
+*** Fruit basket
+*** Henry or Orville
+*** Horses
+*** Lonely tree
+*** Lydia
+*** Mansion
+*** Mario's
+*** Mr. Whirlinda
+*** Nana
+*** Neville
+*** Nobleman
+*** Noblewoman
+*** Old man
+*** Pink flowers
+*** (E3 Demo) poker ghost (unused)
+*** Puppies
+*** Rich child
+*** Rich man
+*** Rich woman
+*** Roses
+*** Saxophone
+*** Slim Bankshot
+*** Spooky
+*** Sue Pea
+*** (E3 Demo) top hat ghost (unused)
+*** Trumpet
+*** Vincent Van Gore
+*** Young man
 ** Posters
-** Pink flowers portraits
-** Roses portraits
-** Vincent Van Gore portraits
+*** Boo
+*** Cloth
+*** Danger
+*** (3DS Remake) Landscape
+*** Monsters
+*** Projection Screen
+*** Torn Cloth
+*** Trumpet
+*** Western
 * Optimized some furniture types to skip ticking if left alone
+* Added some rec room changes in the 3DS remake
 * Changed paintings dialog (now named portraits) to shake the new portrait furniture
+* Changed ghost gauntlet spawn dialog (now named ghost art) to spawn all ghosts with a tag, and require an entity UUID to focus the camera on
+* Changed the artist's studio to spawn all previously spawned waves at once, upon resetting the room; this is unused base game behavior
 * Changed leaving and re-entering the world while in an exterior cutscene will now skip it
-* Changed boo paths to match the original game more closely:
-** They don't travel between hallways
-** Can no longer enter hallway 6, bathroom 1 and washroom 1
-*** Boos in the bathroom or washroom will move to the conservatory
-*** Boos in hallway 6 will move to hallway 5
-* Fixed cellar dust not getting removed upon room reset
-* Fixed a few gameboy horror scan mistakes
-* Fixed master bedroom nightstand lamp had no interactions
-* Fixed item frame reflections weren't working
+* Changed boos to match the original game more closely:
+** A discovered Boo will now prevent hidden Boos from appearing (and traps from triggering)
+** Multiple hidden Boos getting discovered at once will now stagger their triggers (Best seen in the storage room in the original game)
+** They can no longer be captured in dark rooms (Health can be drained until 0, but then no longer get affected)
+** They now move to a warpable wall away from the nearest player in dark rooms
+** They now move faster and don't attack in dark rooms
+** They no longer travel between hallway sections
+** Can no longer enter hallway 6 (bathroom 1/courtyard door part), bathroom 1 and washroom 1
+*** Boos in the bathroom or washroom in old saves will move to the conservatory
+*** Boos in hallway 6 in old saves will move to hallway 5
 * Fixed Boos could hide in all old furniture; now the options match the original game
 * Fixed some converted furniture had the wrong can_hide_boo value
+* Fixed Garbage Can Ghosts chins were barely visible
+* Fixed Ghost Guy spears are facing the wrong way
+* Fixed ghosts appearing from furniture do not go to the furniture spawn position upon disappear, but rather the furniture position directly
+* Fixed ceiling ghosts appearing from furniture spawn too low
+* Fixed a few gameboy horror scan mistakes
+* Fixed master bedroom nightstand lamp had no interactions
+* Fixed item frame reflections weren't working (not that that still matters with portraits being converted; there are some item frames remaining though)
+* Fixed cellar dust not getting removed upon room reset
+* Fixed missing teddy bears in E3 Demo child's room upon entering when lit
 * Fixed missing mice in E3 Demo kitchen
 
 v3.3.2:

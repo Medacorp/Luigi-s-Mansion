@@ -1,7 +1,1 @@
-{
-	"parent": "luigis_mansion:furniture/green_lamp/off",
-	"textures": {
-		"lamp_1": "luigis_mansion:furniture/green_lamp/on_1",
-		"lamp_2": "luigis_mansion:furniture/green_lamp/on_2"
-	}
-}
+{"parent":"luigis_mansion:furniture/green_lamp/off","textures":{"lamp_1":"luigis_mansion:furniture/green_lamp/on_1","lamp_2":"luigis_mansion:furniture/green_lamp/on_2"}}

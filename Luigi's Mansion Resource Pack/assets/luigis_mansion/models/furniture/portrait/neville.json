@@ -1,6 +1,1 @@
-{
-	"parent": "luigis_mansion:furniture/portrait/26x32",
-	"textures": {
-		"image": "luigis_mansion:furniture/portrait/neville"
-	}
-}
+{"parent":"luigis_mansion:furniture/portrait/26x32","textures":{"image":"luigis_mansion:furniture/portrait/neville"}}

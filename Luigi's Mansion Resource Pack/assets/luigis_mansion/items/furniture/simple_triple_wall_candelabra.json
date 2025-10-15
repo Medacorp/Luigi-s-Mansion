@@ -1,15 +1,1 @@
-{
-    "model": {
-        "type": "minecraft:condition",
-        "property": "minecraft:custom_model_data",
-        "index": 0,
-        "on_false": {
-            "type": "minecraft:model",
-            "model": "luigis_mansion:furniture/simple_triple_wall_candelabra/right_burned"
-        },
-        "on_true": {
-            "type": "minecraft:model",
-            "model": "luigis_mansion:furniture/simple_triple_wall_candelabra/left_burned"
-        }
-    }
-}
+{"model":{"type":"minecraft:condition","property":"minecraft:custom_model_data","index":0,"on_false":{"type":"minecraft:model","model":"luigis_mansion:furniture/simple_triple_wall_candelabra/right_burned"},"on_true":{"type":"minecraft:model","model":"luigis_mansion:furniture/simple_triple_wall_candelabra/left_burned"}}}

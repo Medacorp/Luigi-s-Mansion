@@ -1,6 +1,1 @@
-{
-    "parent": "luigis_mansion:item/menu",
-    "textures": {
-        "layer0": "3ds_remake:item/menu/gallery_portrait/check_portrait_battles"
-    }
-}
+{"parent":"luigis_mansion:item/menu","textures":{"layer0":"3ds_remake:item/menu/gallery_portrait/check_portrait_battles"}}

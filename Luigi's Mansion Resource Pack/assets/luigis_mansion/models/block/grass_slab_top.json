@@ -1,8 +1,1 @@
-{
-    "parent": "minecraft:block/slab_top",
-    "textures": {
-        "bottom": "luigis_mansion:block/grass",
-        "top": "luigis_mansion:block/grass",
-        "side": "luigis_mansion:block/grass"
-    }
-}
+{"parent":"minecraft:block/slab_top","textures":{"bottom":"luigis_mansion:block/grass","top":"luigis_mansion:block/grass","side":"luigis_mansion:block/grass"}}

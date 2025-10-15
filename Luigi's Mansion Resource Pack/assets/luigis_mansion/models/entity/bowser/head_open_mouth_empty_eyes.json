@@ -1,6 +1,1 @@
-{
-	"parent": "luigis_mansion:entity/bowser/head_open_mouth",
-	"textures": {
-		"1": "luigis_mansion:entity/bowser/eyes_empty"
-	}
-}
+{"parent":"luigis_mansion:entity/bowser/head_open_mouth","textures":{"1":"luigis_mansion:entity/bowser/eyes_empty"}}

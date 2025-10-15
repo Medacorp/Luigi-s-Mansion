@@ -1,7 +1,1 @@
-{
-	"parent": "luigis_mansion:entity/waiter/left_arm",
-	"credit": "Made with Blockbench",
-	"textures": {
-		"food": "luigis_mansion:furniture/food"
-	}
-}
+{"parent":"luigis_mansion:entity/waiter/left_arm","textures":{"food":"luigis_mansion:furniture/food"}}

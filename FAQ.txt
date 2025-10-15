@@ -15,7 +15,7 @@ A. Those will be converted eventually, but it takes time to model all those. The
    1. It was already modeled before, just not a furniture entity
    2. It was a container before conversion
    3. It has candle flames or incense flames
-   4. It is a poster
+   4. It is a poster or portrait
    5. A very similar piece of furniture was converted, and it was not much work to make the model for this as well.
 
 Q. How do I scan furniture?

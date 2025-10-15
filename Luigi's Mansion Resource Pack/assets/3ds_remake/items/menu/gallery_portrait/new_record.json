@@ -1,6 +1,1 @@
-{
-  "model": {
-    "type": "minecraft:model",
-    "model": "3ds_remake:item/menu/gallery_portrait/new_record"
-  }
-}
+{"model":{"type":"minecraft:model","model":"3ds_remake:item/menu/gallery_portrait/new_record"}}

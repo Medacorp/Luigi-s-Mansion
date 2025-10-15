@@ -40,8 +40,8 @@ luigis_mansion:fire_element_medal                       | Yes         |         
 luigis_mansion:first_key                                | Yes         | Reach 751.0 11 9.0                             | Key in the foyer                            | Spawns key for door lock "parlor"
 luigis_mansion:gallery/talk                             | Yes         |                                                | Welcome to the Gallery                      | 
 luigis_mansion:gallery/repeat                           | Yes         |                                                | Done appreciating art?                      | Warp to Underground Lab (choice)
+luigis_mansion:ghost_art                                | Yes         | Field scanned_entity (uuid)                    | Camera focus on ghost art furniture         | Spawns all ghosts with the tag "ghost_art_spawn" in the same room
 luigis_mansion:ghost_gauntlet                           | Yes         |                                                | Enter Vincent Van Gore                      | Technical flag vincent_van_gore_spoke set
-luigis_mansion:ghost_gauntlet_spawn                     | Yes         | Ghost with item frame above                    | Camera focus on ghost painting              | 
 luigis_mansion:ghost_portrificationizer_room/ending     | Yes         |                                                | Mansion disappeared, finish up              | Forced portrificationizing triggering
 luigis_mansion:ghost_portrificationizer_room/repeat     | Yes         |                                                | Want to leave?                              | Warp to Underground Lab, Gallery (choice)
 luigis_mansion:ghost_portrificationizer_room/return     | Yes         |                                                | After boss capture                          | 
@@ -320,16 +320,16 @@ luigis_mansion:water_element_medal                      | Yes         |         
 3ds_remake:portrait_battle/start                        | Yes         |                                                | Start a portrait battle                     | 
 3ds_remake:portrificationizing/convert_time             | No          |                                                | Portrificationizing step                    | Converts a single into into several to depict the time value correctly
 3ds_remake:scan/entity/jarvis                           | Yes         | Fields scanned_entity and scanning_player      | Scan Jarvis                                 | 
-3ds_remake:scan/scanner/1                               | Yes         | Field scanning_player                          |                                             | 
-3ds_remake:scan/scanner/2                               | Yes         | Field scanning_player                          |                                             | 
-3ds_remake:scan/scanner/3                               | Yes         | Field scanning_player                          |                                             | 
-3ds_remake:scan/scanner/4                               | Yes         | Field scanning_player                          |                                             | 
-3ds_remake:scan/scanner/5                               | Yes         | Field scanning_player                          |                                             | 
-3ds_remake:scan/scanner/6                               | Yes         | Field scanning_player                          |                                             | 
-3ds_remake:scan/scanner/7                               | Yes         | Field scanning_player                          |                                             | 
-3ds_remake:scan/scanner/8                               | Yes         | Field scanning_player                          |                                             | 
-3ds_remake:scan/scanner/9                               | Yes         | Field scanning_player                          |                                             | 
-3ds_remake:scan/scanner/10                              | Yes         | Field scanning_player                          |                                             | 
+3ds_remake:scan/scanner/1                               | Yes         | Field scanning_player                          | Inspires me to paint                        | 
+3ds_remake:scan/scanner/2                               | Yes         | Field scanning_player                          | A huge monitor for what?                    | 
+3ds_remake:scan/scanner/3                               | Yes         | Field scanning_player                          | A generator he build himself?               | 
+3ds_remake:scan/scanner/4                               | Yes         | Field scanning_player                          | Very carefully balanced                     | 
+3ds_remake:scan/scanner/5                               | Yes         | Field scanning_player                          | Lots of complicated calculations            | 
+3ds_remake:scan/scanner/6                               | Yes         | Field scanning_player                          | Air flow is important                       | 
+3ds_remake:scan/scanner/7                               | Yes         | Field scanning_player                          | Heavy eyes just from reading the covers     | 
+3ds_remake:scan/scanner/8                               | Yes         | Field scanning_player                          | Some kind of blueprint?                     | 
+3ds_remake:scan/scanner/9                               | Yes         | Field scanning_player                          | I probably shouldn't touch                  | 
+3ds_remake:scan/scanner/10                              | Yes         | Field scanning_player                          | This door looks mysterious                  | 
 3ds_remake:scan/scanner/gooigi                          | Yes         | Field scanning_player                          | Scan furniture as Gooigi                    | 
 3ds_remake:toad_heal                                    | Yes         |                                                | Toad Amiibo result                          | Spawns a huge heart at all players in the room
 3ds_remake:training_room                                | Yes         |                                                | 3DS Remake training program                 | Warp to Underground Lab or Gallery (conditional) + clear Training Room

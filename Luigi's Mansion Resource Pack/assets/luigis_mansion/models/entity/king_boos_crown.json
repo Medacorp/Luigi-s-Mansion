@@ -1,6 +1,1 @@
-{
-	"parent": "luigis_mansion:entity/diamond",
-	"textures": {
-		"0": "luigis_mansion:entity/king_boos_crown"
-	}
-}
+{"parent":"luigis_mansion:entity/diamond","textures":{"0":"luigis_mansion:entity/king_boos_crown"}}

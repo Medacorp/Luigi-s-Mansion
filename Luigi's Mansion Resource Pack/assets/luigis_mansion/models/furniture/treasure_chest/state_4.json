@@ -1,14 +1,1 @@
-{
-	"parent": "luigis_mansion:furniture/room_clear_chest/state_4",
-	"textures": {
-		"outside": "luigis_mansion:furniture/treasure_chest/outside",
-		"inside": "luigis_mansion:furniture/treasure_chest/inside",
-		"basis": "luigis_mansion:furniture/treasure_chest/basis"
-	},
-	"display": {
-		"head": {
-			"translation": [0, 24.75, 0],
-			"scale": [4, 4, 4]
-		}
-	}
-}
+{"parent":"luigis_mansion:furniture/room_clear_chest/state_4","textures":{"outside":"luigis_mansion:furniture/treasure_chest/outside","inside":"luigis_mansion:furniture/treasure_chest/inside","basis":"luigis_mansion:furniture/treasure_chest/basis"},"display":{"head":{"translation":[0,24.75,0],"scale":[4,4,4]}}}

@@ -1,6 +1,1 @@
-{
-    "parent": "luigis_mansion:item/menu",
-    "textures": {
-        "layer0": "e3_demo:item/menu/game_boy_horror/show_settings/play_beta_lab_music_off"
-    }
-}
+{"parent":"luigis_mansion:item/menu","textures":{"layer0":"e3_demo:item/menu/game_boy_horror/show_settings/play_beta_lab_music_off"}}

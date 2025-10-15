@@ -1,6 +1,1 @@
-{
-	"parent": "3ds_remake:furniture/gallery_portrait/gold",
-	"textures": {
-		"image": "3ds_remake:furniture/gallery_portrait/gold/floating_whirlindas"
-	}
-}
+{"parent":"3ds_remake:furniture/gallery_portrait/gold","textures":{"image":"3ds_remake:furniture/gallery_portrait/gold/floating_whirlindas"}}

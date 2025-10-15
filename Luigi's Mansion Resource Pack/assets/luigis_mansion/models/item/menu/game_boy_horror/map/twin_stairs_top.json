@@ -1,6 +1,1 @@
-{
-	"parent": "luigis_mansion:item/menu/game_boy_horror/map/twin_stairs_bottom",
-    "textures": {
-		"0": "luigis_mansion:item/menu/game_boy_horror/map/stairs_top"
-	}
-}
+{"parent":"luigis_mansion:item/menu/game_boy_horror/map/twin_stairs_bottom","textures":{"0":"luigis_mansion:item/menu/game_boy_horror/map/stairs_top"}}

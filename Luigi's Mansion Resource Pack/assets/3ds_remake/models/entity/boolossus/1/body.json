@@ -1,6 +1,1 @@
-{
-	"parent": "luigis_mansion:entity/boolossus/1/body",
-	"textures": {
-		"0": "3ds_remake:entity/boolossus/boolossus"
-	}
-}
+{"parent":"luigis_mansion:entity/boolossus/1/body","textures":{"0":"3ds_remake:entity/boolossus/boolossus"}}

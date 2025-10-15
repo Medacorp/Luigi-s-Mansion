@@ -1,6 +1,1 @@
-{
-  "model": {
-    "type": "minecraft:model",
-    "model": "3ds_remake:item/menu/dialog/choice/amiibo"
-  }
-}
+{"model":{"type":"minecraft:model","model":"3ds_remake:item/menu/dialog/choice/amiibo"}}

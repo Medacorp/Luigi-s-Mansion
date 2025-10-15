@@ -1,15 +1,1 @@
-{
-    "model": {
-       "type": "minecraft:condition",
-       "property": "minecraft:custom_model_data",
-       "index": 0,
-       "on_false": {
-           "type": "minecraft:model",
-           "model": "luigis_mansion:furniture/portrait/chauncey_standing"
-       },
-       "on_true": {
-           "type": "minecraft:model",
-           "model": "luigis_mansion:furniture/portrait/chauncey_standing_mirrored"
-       }
-    }
-}
+{"model":{"type":"minecraft:condition","property":"minecraft:custom_model_data","index":0,"on_false":{"type":"minecraft:model","model":"luigis_mansion:furniture/portrait/chauncey_standing"},"on_true":{"type":"minecraft:model","model":"luigis_mansion:furniture/portrait/chauncey_standing_mirrored"}}}

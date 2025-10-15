@@ -1,7 +1,1 @@
-{
-	"parent": "luigis_mansion:furniture/poster_mirrored",
-	"textures": {
-		"x": "luigis_mansion:furniture/poster/western_x",
-		"y": "luigis_mansion:furniture/poster/western_y"
-	}
-}
+{"parent":"luigis_mansion:furniture/poster_mirrored","textures":{"x":"luigis_mansion:furniture/poster/western_x","y":"luigis_mansion:furniture/poster/western_y"}}

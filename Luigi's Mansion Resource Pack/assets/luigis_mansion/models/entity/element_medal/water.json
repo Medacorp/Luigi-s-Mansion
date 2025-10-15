@@ -1,6 +1,1 @@
-{
-	"parent": "luigis_mansion:entity/element_medal",
-	"textures": {
-		"0": "luigis_mansion:entity/element_medal/water"
-	}
-}
+{"parent":"luigis_mansion:entity/element_medal","textures":{"0":"luigis_mansion:entity/element_medal/water"}}

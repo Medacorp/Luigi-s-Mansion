@@ -1,6 +1,1 @@
-{
-	"parent": "luigis_mansion:entity/ghost/right_arm",
-	"textures": {
-		"0": "luigis_mansion:entity/bowling_ghost"
-	}
-}
+{"parent":"luigis_mansion:entity/ghost/right_arm","textures":{"0":"luigis_mansion:entity/bowling_ghost"}}

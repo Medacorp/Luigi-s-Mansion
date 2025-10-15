@@ -1,9 +1,1 @@
-{
-	"parent": "luigis_mansion:entity/bowser/left_arm",
-	"display": {
-		"head": {
-			"translation": [-5.44, -31.5, -1.5],
-			"scale": [0.89, 0.89, 0.89]
-		}
-	}
-}
+{"parent":"luigis_mansion:entity/bowser/left_arm","display":{"head":{"translation":[-5.44,-31.5,-1.5],"scale":[0.89,0.89,0.89]}}}

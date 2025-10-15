@@ -1,6 +1,1 @@
-{
-    "parent": "minecraft:block/cross",
-    "textures": {
-        "cross": "luigis_mansion:block/pin"
-    }
-}
+{"parent":"minecraft:block/cross","textures":{"cross":"luigis_mansion:block/pin"}}

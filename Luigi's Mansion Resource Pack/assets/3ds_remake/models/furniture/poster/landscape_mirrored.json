@@ -1,7 +1,1 @@
-{
-	"parent": "luigis_mansion:furniture/poster_mirrored",
-	"textures": {
-		"x": "3ds_remake:furniture/poster/landscape_x",
-		"y": "3ds_remake:furniture/poster/landscape_y"
-	}
-}
+{"parent":"luigis_mansion:furniture/poster_mirrored","textures":{"x":"3ds_remake:furniture/poster/landscape_x","y":"3ds_remake:furniture/poster/landscape_y"}}

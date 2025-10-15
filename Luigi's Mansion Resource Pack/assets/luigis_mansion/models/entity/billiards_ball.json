@@ -1,16 +1,1 @@
-{
-	"parent": "luigis_mansion:entity/round",
-	"credit": "Made with Blockbench",
-	"display": {
-		"head": {
-			"translation": [0, -7.25, 0],
-			"scale": [0.7, 0.7, 0.7]
-		}
-	},
-	"textures": {
-		"east": "#south",
-		"west": "#south",
-		"up": "#south",
-		"down": "#south"
-	}
-}
+{"parent":"luigis_mansion:entity/round","display":{"head":{"translation":[0,-7.25,0],"scale":[0.7,0.7,0.7]}},"textures":{"east":"#south","west":"#south","up":"#south","down":"#south"}}

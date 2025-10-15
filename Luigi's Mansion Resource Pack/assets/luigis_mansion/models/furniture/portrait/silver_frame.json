@@ -1,6 +1,1 @@
-{
-	"parent": "luigis_mansion:furniture/portrait/gold_frame",
-	"textures": {
-		"frame": "luigis_mansion:furniture/portrait/silver_frame"
-	}
-}
+{"parent":"luigis_mansion:furniture/portrait/gold_frame","textures":{"frame":"luigis_mansion:furniture/portrait/silver_frame"}}

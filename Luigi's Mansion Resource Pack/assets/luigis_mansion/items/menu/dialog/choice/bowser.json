@@ -1,6 +1,1 @@
-{
-  "model": {
-    "type": "minecraft:model",
-    "model": "luigis_mansion:item/menu/dialog/choice/bowser"
-  }
-}
+{"model":{"type":"minecraft:model","model":"luigis_mansion:item/menu/dialog/choice/bowser"}}

@@ -1,6 +1,1 @@
-{
-	"parent": "luigis_mansion:furniture/portrait/16x16",
-	"textures": {
-		"image": "luigis_mansion:furniture/portrait/mansion_dark"
-	}
-}
+{"parent":"luigis_mansion:furniture/portrait/16x16","textures":{"image":"luigis_mansion:furniture/portrait/mansion_dark"}}

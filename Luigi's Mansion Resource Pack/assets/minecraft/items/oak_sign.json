@@ -1,6 +1,1 @@
-{
-  "model": {
-    "type": "minecraft:model",
-    "model": "luigis_mansion:item/overwrite/oak_sign"
-  }
-}
+{"model":{"type":"minecraft:model","model":"luigis_mansion:item/overwrite/oak_sign"}}

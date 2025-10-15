@@ -2,6 +2,9 @@ execute if entity @s[tag=dying] run function luigis_mansion:entities/ghost/death
 
 function luigis_mansion:room/dark_room
 tag @s[tag=dark_room] remove caught_by_boo_radar
+tag @s[tag=dark_room,scores={Health=1}] remove in_vacuum
+scoreboard players set @s[tag=dark_room,scores={Health=1}] HurtTime 0
+execute if entity @s[tag=dark_room] run scoreboard players operation #temp Move *= #2 Constants
 tag @s[tag=!dark_room] add caught_by_boo_radar
 
 scoreboard players set @s[scores={Dialog=0},tag=in_ice] Dialog 40

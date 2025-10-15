@@ -1,6 +1,1 @@
-{
-	"parent": "luigis_mansion:entity/garbage_can_ghost/body",
-	"textures": {
-		"0": "3ds_remake:furniture/trophy/silver/garbage_can_ghost"
-	}
-}
+{"parent":"luigis_mansion:entity/garbage_can_ghost/body","textures":{"0":"3ds_remake:furniture/trophy/silver/garbage_can_ghost"}}

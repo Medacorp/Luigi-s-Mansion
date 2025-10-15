@@ -1,6 +1,1 @@
-{
-	"parent": "luigis_mansion:item/entity/bogmire",
-	"textures": {
-		"0": "luigis_mansion:entity/black_bogmire"
-	}
-}
+{"parent":"luigis_mansion:item/entity/bogmire","textures":{"0":"luigis_mansion:entity/black_bogmire"}}

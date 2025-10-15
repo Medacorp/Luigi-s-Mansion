@@ -1,6 +1,1 @@
-{
-	"parent": "luigis_mansion:furniture/gallery_portrait/silver",
-	"textures": {
-		"image": "luigis_mansion:furniture/gallery_portrait/silver/slim_bankshot"
-	}
-}
+{"parent":"luigis_mansion:furniture/gallery_portrait/silver","textures":{"image":"luigis_mansion:furniture/gallery_portrait/silver/slim_bankshot"}}

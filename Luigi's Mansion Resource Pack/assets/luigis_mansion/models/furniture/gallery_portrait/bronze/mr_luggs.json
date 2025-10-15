@@ -1,6 +1,1 @@
-{
-	"parent": "luigis_mansion:furniture/gallery_portrait/bronze",
-	"textures": {
-		"image": "luigis_mansion:furniture/gallery_portrait/bronze/mr_luggs"
-	}
-}
+{"parent":"luigis_mansion:furniture/gallery_portrait/bronze","textures":{"image":"luigis_mansion:furniture/gallery_portrait/bronze/mr_luggs"}}

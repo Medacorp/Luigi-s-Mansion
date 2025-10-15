@@ -1,7 +1,0 @@
-{
-	"parent": "luigis_mansion:furniture/poster_mirrored",
-	"textures": {
-		"x": "luigis_mansion:furniture/poster/trumpet_ghost_x",
-		"y": "luigis_mansion:furniture/poster/trumpet_ghost_y"
-	}
-}

@@ -1,6 +1,1 @@
-{
-	"parent": "luigis_mansion:furniture/portrait/16x16",
-	"textures": {
-		"image": "luigis_mansion:furniture/portrait/henry_or_orville"
-	}
-}
+{"parent":"luigis_mansion:furniture/portrait/16x16","textures":{"image":"luigis_mansion:furniture/portrait/henry_or_orville"}}

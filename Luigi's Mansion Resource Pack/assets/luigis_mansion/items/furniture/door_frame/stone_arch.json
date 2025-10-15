@@ -1,6 +1,1 @@
-{
-  "model": {
-    "type": "minecraft:model",
-    "model": "luigis_mansion:furniture/door_frame/stone_arch"
-  }
-}
+{"model":{"type":"minecraft:model","model":"luigis_mansion:furniture/door_frame/stone_arch"}}

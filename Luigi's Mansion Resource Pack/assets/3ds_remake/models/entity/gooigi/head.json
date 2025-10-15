@@ -1,7 +1,1 @@
-{
-	"parent": "luigis_mansion:entity/luigi/head",
-	"textures": {
-		"0": "3ds_remake:entity/gooigi/head",
-		"1": "luigis_mansion:item/empty"
-	}
-}
+{"parent":"luigis_mansion:entity/luigi/head","textures":{"0":"3ds_remake:entity/gooigi/head","1":"luigis_mansion:item/empty"}}

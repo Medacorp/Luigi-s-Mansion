@@ -1,6 +1,1 @@
-{
-	"parent": "luigis_mansion:furniture/mansion_rank_portrait",
-	"textures": {
-		"image": "luigis_mansion:furniture/mansion_rank_portrait/f"
-	}
-}
+{"parent":"luigis_mansion:furniture/mansion_rank_portrait","textures":{"image":"luigis_mansion:furniture/mansion_rank_portrait/f"}}

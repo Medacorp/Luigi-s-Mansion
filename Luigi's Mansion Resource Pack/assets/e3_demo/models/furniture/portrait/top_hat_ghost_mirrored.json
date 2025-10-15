@@ -1,6 +1,1 @@
-{
-	"parent": "luigis_mansion:furniture/portrait/26x32_mirrored",
-	"textures": {
-		"image": "e3_demo:furniture/portrait/top_hat_ghost"
-	}
-}
+{"parent":"luigis_mansion:furniture/portrait/26x32_mirrored","textures":{"image":"e3_demo:furniture/portrait/top_hat_ghost"}}

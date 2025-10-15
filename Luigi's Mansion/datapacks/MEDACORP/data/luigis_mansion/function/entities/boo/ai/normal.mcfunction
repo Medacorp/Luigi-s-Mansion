@@ -1,6 +1,7 @@
-execute if entity @s[tag=can_attack,tag=!frozen] if predicate luigis_mansion:boo/attack_chance run tag @s add attack
+execute if entity @s[tag=can_attack,tag=!frozen] unless entity @s[tag=dark_room,tag=!no_escape] if predicate luigis_mansion:boo/attack_chance run tag @s add attack
 
-execute at @s[tag=!rotated,tag=!wall,tag=!flee] run function luigis_mansion:entities/boo/rotate
+execute at @s[tag=!rotated,tag=!wall,tag=!flee,tag=dark_room] run function luigis_mansion:entities/boo/rotate_dark_room
+execute at @s[tag=!rotated,tag=!wall,tag=!flee,tag=!dark_room] run function luigis_mansion:entities/boo/rotate
 execute if entity @s[scores={Time=600..},tag=no_escape,tag=!flee] run function luigis_mansion:entities/boo/rotate_random
 execute if score #temp Move matches 1.. at @s[tag=move_up] unless entity @s[tag=up,x_rotation=-90] run function luigis_mansion:entities/boo/move/up
 execute if score #temp Move matches 1.. at @s[tag=!move_up] unless entity @s[tag=down,x_rotation=90] run function luigis_mansion:entities/boo/move/down

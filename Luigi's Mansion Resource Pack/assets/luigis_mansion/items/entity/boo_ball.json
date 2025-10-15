@@ -1,6 +1,1 @@
-{
-    "model": {
-        "type": "minecraft:model",
-        "model": "luigis_mansion:entity/boo_ball"
-    }
-}
+{"model":{"type":"minecraft:model","model":"luigis_mansion:entity/boo_ball"}}

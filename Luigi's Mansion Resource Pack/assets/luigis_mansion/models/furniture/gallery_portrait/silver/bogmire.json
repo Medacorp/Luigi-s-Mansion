@@ -1,6 +1,1 @@
-{
-	"parent": "luigis_mansion:furniture/gallery_portrait/silver_boss",
-	"textures": {
-		"image": "luigis_mansion:furniture/gallery_portrait/silver/bogmire"
-	}
-}
+{"parent":"luigis_mansion:furniture/gallery_portrait/silver_boss","textures":{"image":"luigis_mansion:furniture/gallery_portrait/silver/bogmire"}}

@@ -1,6 +1,1 @@
-{
-	"parent": "3ds_remake:furniture/gallery_portrait/frame",
-	"textures": {
-		"frame": "3ds_remake:furniture/gallery_portrait/bronze_frame"
-	}
-}
+{"parent":"3ds_remake:furniture/gallery_portrait/frame","textures":{"frame":"3ds_remake:furniture/gallery_portrait/bronze_frame"}}

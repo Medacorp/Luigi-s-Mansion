@@ -1,10 +1,1 @@
-{
-	"parent": "luigis_mansion:furniture/barrel",
-	"display": {
-		"head": {
-			"rotation": [-90, 0, 0],
-			"translation": [0, 5.5, 9],
-			"scale": [1.6, 1.6, 1.6]
-		}
-	}
-}
+{"parent":"luigis_mansion:furniture/barrel","display":{"head":{"rotation":[-90,0,0],"translation":[0,5.5,9],"scale":[1.6,1.6,1.6]}}}

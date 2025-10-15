@@ -1,12 +1,1 @@
-{
-	"parent": "luigis_mansion:entity/round",
-	"credit": "Made with Blockbench",
-	"textures": {
-		"north": "luigis_mansion:entity/ball/chauncey/north",
-		"south": "#north",
-		"east": "luigis_mansion:entity/ball/chauncey/east",
-		"west": "#east",
-		"up": "luigis_mansion:entity/ball/chauncey/top",
-		"down": "luigis_mansion:entity/ball/chauncey/bottom"
-	}
-}
+{"parent":"luigis_mansion:entity/round","textures":{"north":"luigis_mansion:entity/ball/chauncey/north","south":"#north","east":"luigis_mansion:entity/ball/chauncey/east","west":"#east","up":"luigis_mansion:entity/ball/chauncey/top","down":"luigis_mansion:entity/ball/chauncey/bottom"}}

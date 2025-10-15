@@ -1,6 +1,1 @@
-{
-  "model": {
-    "type": "minecraft:model",
-    "model": "luigis_mansion:block/boo_woods_wood"
-  }
-}
+{"model":{"type":"minecraft:model","model":"luigis_mansion:block/boo_woods_wood"}}

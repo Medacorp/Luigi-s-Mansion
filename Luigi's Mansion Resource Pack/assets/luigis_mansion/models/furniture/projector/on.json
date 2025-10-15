@@ -1,7 +1,1 @@
-{
-	"parent": "luigis_mansion:furniture/projector/off",
-	"textures": {
-		"slow_film_reel": "luigis_mansion:furniture/projector/slow_film_reel",
-		"fast_film_reel": "luigis_mansion:furniture/projector/fast_film_reel"
-	}
-}
+{"parent":"luigis_mansion:furniture/projector/off","textures":{"slow_film_reel":"luigis_mansion:furniture/projector/slow_film_reel","fast_film_reel":"luigis_mansion:furniture/projector/fast_film_reel"}}

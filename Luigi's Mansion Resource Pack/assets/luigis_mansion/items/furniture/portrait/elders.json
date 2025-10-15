@@ -1,15 +1,1 @@
-{
-    "model": {
-       "type": "minecraft:condition",
-       "property": "minecraft:custom_model_data",
-       "index": 0,
-       "on_false": {
-           "type": "minecraft:model",
-           "model": "luigis_mansion:furniture/portrait/elders"
-       },
-       "on_true": {
-           "type": "minecraft:model",
-           "model": "luigis_mansion:furniture/portrait/elders_mirrored"
-       }
-    }
-}
+{"model":{"type":"minecraft:condition","property":"minecraft:custom_model_data","index":0,"on_false":{"type":"minecraft:model","model":"luigis_mansion:furniture/portrait/elders"},"on_true":{"type":"minecraft:model","model":"luigis_mansion:furniture/portrait/elders_mirrored"}}}

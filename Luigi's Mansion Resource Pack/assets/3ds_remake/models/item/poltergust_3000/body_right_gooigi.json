@@ -1,6 +1,1 @@
-{
-	"parent": "luigis_mansion:item/poltergust_3000/body_right",
-	"textures": {
-		"0": "3ds_remake:item/poltergust_gooigi"
-	}
-}
+{"parent":"luigis_mansion:item/poltergust_3000/body_right","textures":{"0":"3ds_remake:item/poltergust_gooigi"}}

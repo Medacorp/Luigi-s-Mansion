@@ -1,6 +1,1 @@
-{
-	"parent": "luigis_mansion:entity/twirler/body",
-	"textures": {
-		"0": "e3_demo:entity/body_slammer"
-	}
-}
+{"parent":"luigis_mansion:entity/twirler/body","textures":{"0":"e3_demo:entity/body_slammer"}}

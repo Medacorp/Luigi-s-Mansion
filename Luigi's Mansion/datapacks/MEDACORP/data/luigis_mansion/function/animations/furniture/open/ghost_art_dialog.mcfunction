@@ -1,0 +1,3 @@
+$execute unless data storage luigis_mansion:data dialogs[{name:{namespace:"luigis_mansion",id:"ghost_art"},room:$(room)}] run data modify storage luigis_mansion:data dialogs append value {name:{namespace:"luigis_mansion",id:"ghost_art"},progress:0}
+$execute unless data storage luigis_mansion:data dialogs[{name:{namespace:"luigis_mansion",id:"ghost_art"},room:$(room)}] run data modify storage luigis_mansion:data dialogs[-1].scanned_entity set from entity @s UUID
+$execute unless data storage luigis_mansion:data dialogs[{name:{namespace:"luigis_mansion",id:"ghost_art"},room:$(room)}] store result storage luigis_mansion:data dialogs[-1].room int 1 run scoreboard players get @s Room

@@ -1,7 +1,1 @@
-{
-	"parent": "luigis_mansion:entity/luigi/left_leg",
-	"textures": {
-		"0": "luigis_mansion:entity/luigi/body_2",
-		"1": "luigis_mansion:entity/luigi/body_2_overlay"
-	}
-}
+{"parent":"luigis_mansion:entity/luigi/left_leg","textures":{"0":"luigis_mansion:entity/luigi/body_2","1":"luigis_mansion:entity/luigi/body_2_overlay"}}

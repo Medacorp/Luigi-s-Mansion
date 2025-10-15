@@ -1,15 +1,1 @@
-{
-    "model": {
-		"type": "minecraft:condition",
-		"property": "minecraft:custom_model_data",
-		"index": 0,
-		"on_false": {
-			"type": "minecraft:model",
-			"model": "3ds_remake:furniture/helicopter_mobile/clockwise"
-		},
-		"on_true": {
-			"type": "minecraft:model",
-			"model": "3ds_remake:furniture/helicopter_mobile/counterclockwise"
-		}
-	}
-}
+{"model":{"type":"minecraft:condition","property":"minecraft:custom_model_data","index":0,"on_false":{"type":"minecraft:model","model":"3ds_remake:furniture/helicopter_mobile/clockwise"},"on_true":{"type":"minecraft:model","model":"3ds_remake:furniture/helicopter_mobile/counterclockwise"}}}

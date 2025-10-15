@@ -3,9 +3,9 @@
         "min_format": [ 69 ],
         "max_format": [ 69 ],
         "description": {
-			"type": "translatable",
+            "type": "translatable",
             "translate": "luigis_mansion:resource_pack.description",
-			"fallback": "Luigi's Mansion resource pack"
-		}
+            "fallback": "Luigi's Mansion resource pack"
+        }
     }
 }

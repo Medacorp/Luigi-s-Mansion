@@ -1,10 +1,1 @@
-{
-	"parent": "luigis_mansion:entity/portrificationizing_mario/state_0",
-	"display": {
-		"head": {
-			"rotation": [90, 0, 0],
-			"translation": [0, -6.25, 0],
-			"scale": [1, 1, 0.15]
-		}
-	}
-}
+{"parent":"luigis_mansion:entity/portrificationizing_mario/state_0","display":{"head":{"rotation":[90,0,0],"translation":[0,-6.25,0],"scale":[1,1,0.15]}}}

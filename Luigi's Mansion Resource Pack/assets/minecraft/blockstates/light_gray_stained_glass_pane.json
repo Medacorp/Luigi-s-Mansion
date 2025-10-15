@@ -1,5 +1,1 @@
-{
-    "variants": {
-        "":  { "model": "luigis_mansion:item/empty" }
-    }
-}
+{"variants":{"":{"model":"luigis_mansion:item/empty"}}}

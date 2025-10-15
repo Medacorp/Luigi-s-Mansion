@@ -1,9 +1,1 @@
-{
-	"parent": "luigis_mansion:entity/uncle_grimmly/right_arm",
-	"display": {
-		"head": {
-			"translation": [0, -28, 0],
-			"scale": [2.6, 2.6, 2.6]
-		}
-	}
-}
+{"parent":"luigis_mansion:entity/uncle_grimmly/right_arm","display":{"head":{"translation":[0,-28,0],"scale":[2.6,2.6,2.6]}}}

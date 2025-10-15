@@ -1,9 +1,1 @@
-{
-	"parent": "luigis_mansion:entity/bowser/head",
-	"display": {
-		"head": {
-			"translation": [0, 6.44, -1.44],
-			"scale": [0.89, 0.89, 0.89]
-		}
-	}
-}
+{"parent":"luigis_mansion:entity/bowser/head","display":{"head":{"translation":[0,6.44,-1.44],"scale":[0.89,0.89,0.89]}}}

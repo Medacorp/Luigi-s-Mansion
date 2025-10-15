@@ -1,12 +1,1 @@
-{
-    "parent": "minecraft:block/cube",
-    "textures": {
-        "particle": "luigis_mansion:block/chess_table",
-        "down": "minecraft:block/oak_planks",
-        "up": "luigis_mansion:block/chess_table_top",
-        "north": "luigis_mansion:block/chess_table",
-        "east": "luigis_mansion:block/chess_table",
-        "south": "luigis_mansion:block/chess_table",
-        "west": "luigis_mansion:block/chess_table"
-    }
-}
+{"parent":"minecraft:block/cube","textures":{"particle":"luigis_mansion:block/chess_table","down":"minecraft:block/oak_planks","up":"luigis_mansion:block/chess_table_top","north":"luigis_mansion:block/chess_table","east":"luigis_mansion:block/chess_table","south":"luigis_mansion:block/chess_table","west":"luigis_mansion:block/chess_table"}}

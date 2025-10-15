@@ -1,6 +1,1 @@
-{
-	"parent": "luigis_mansion:furniture/torch/counterclockwise",
-	"textures": {
-		"0": "luigis_mansion:furniture/torch/dotted"
-	}
-}
+{"parent":"luigis_mansion:furniture/torch/counterclockwise","textures":{"0":"luigis_mansion:furniture/torch/dotted"}}

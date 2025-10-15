@@ -1,6 +1,1 @@
-{
-    "model": {
-        "type": "minecraft:model",
-        "model": "luigis_mansion:entity/mario_item/hat"
-    }
-}
+{"model":{"type":"minecraft:model","model":"luigis_mansion:entity/mario_item/hat"}}

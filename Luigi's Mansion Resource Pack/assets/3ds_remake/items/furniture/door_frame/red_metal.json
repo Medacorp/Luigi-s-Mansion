@@ -1,6 +1,1 @@
-{
-  "model": {
-    "type": "minecraft:model",
-    "model": "3ds_remake:furniture/door_frame/red_metal"
-  }
-}
+{"model":{"type":"minecraft:model","model":"3ds_remake:furniture/door_frame/red_metal"}}

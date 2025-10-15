@@ -1,2 +1,2 @@
 data modify storage luigis_mansion:data furniture set value {room:3,pose:[0.0f,0.0f,10.0f],no_ai:1b,animation:{frozen:1b},scan_result:{namespace:"luigis_mansion",id:"scan/scanner/15"}}
-execute positioned 727.93 22.5 -7.0 rotated 90 0 run function luigis_mansion:spawn_furniture/roses_portrait/mixed
+execute positioned 727.93 22.5 -6.0 rotated 90 0 run function luigis_mansion:spawn_furniture/roses_portrait/mixed

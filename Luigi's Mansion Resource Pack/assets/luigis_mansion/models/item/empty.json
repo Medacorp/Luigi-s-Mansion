@@ -1,5 +1,1 @@
-{
-	"textures": {
-		"particle": "luigis_mansion:item/empty"
-	}
-}
+{"textures":{"particle":"luigis_mansion:item/empty"}}
