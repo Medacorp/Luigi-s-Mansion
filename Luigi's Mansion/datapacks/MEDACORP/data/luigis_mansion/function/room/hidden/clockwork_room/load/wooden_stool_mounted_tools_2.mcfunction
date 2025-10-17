@@ -1,0 +1,2 @@
+data modify storage luigis_mansion:data furniture set value {room:62,searchable:["interact","vacuum"],shake_animation:["interact","vacuum"],sound:{namespace:"luigis_mansion",id:"heavy_generic"},scan_result:{namespace:"luigis_mansion",id:"scan/scanner/85"}}
+execute positioned 693 120 16 rotated -45 0 run function luigis_mansion:spawn_furniture/wooden_stool_mounted_tools/right

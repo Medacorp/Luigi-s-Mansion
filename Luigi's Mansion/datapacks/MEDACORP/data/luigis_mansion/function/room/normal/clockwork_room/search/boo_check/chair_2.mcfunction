@@ -1,2 +1,0 @@
-execute unless entity @e[x=696.5,y=120,z=18.5,distance=..0.7,tag=hidden_boo,tag=caught_by_boo_radar] run function luigis_mansion:room/normal/clockwork_room/search/chair_2
-tag @e[x=696.5,y=120,z=18.5,distance=..0.7,tag=hidden_boo,tag=caught_by_boo_radar] add spawn

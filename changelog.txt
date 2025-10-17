@@ -69,9 +69,11 @@ v?:
 *** Torn Cloth
 *** Trumpet
 *** Western
+** Wooden stool mounted tools
 * Optimized some furniture types to skip ticking if left alone
 * Added some rec room changes in the 3DS remake
 * Changed paintings dialog (now named portraits) to shake the new portrait furniture
+* Changed several furniture models to composite models, optimizing them, and smoothed the opening animations out
 * Changed ghost gauntlet spawn dialog (now named ghost art) to spawn all ghosts with a tag, and require an entity UUID to focus the camera on
 * Changed the artist's studio to spawn all previously spawned waves at once, upon resetting the room; this is unused base game behavior
 * Changed leaving and re-entering the world while in an exterior cutscene will now skip it
