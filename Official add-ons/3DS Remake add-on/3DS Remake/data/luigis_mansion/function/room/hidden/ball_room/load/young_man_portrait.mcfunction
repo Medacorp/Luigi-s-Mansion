@@ -1,3 +1,3 @@
 #Name discrepency is intended; originally this is a young man, 3DS Replaces it
-data modify storage luigis_mansion:data furniture set value {room:5,no_ai:1b,animation:{frozen:1b},scan_result:{namespace:"luigis_mansion",id:"scan/scanner/35"}}
+data modify storage luigis_mansion:data furniture set value {room:17,no_ai:1b,animation:{frozen:1b},scan_result:{namespace:"luigis_mansion",id:"scan/scanner/35"}}
 execute positioned 710.93 13.25 79 rotated 90 0 run function luigis_mansion:spawn_furniture/old_man_portrait/large

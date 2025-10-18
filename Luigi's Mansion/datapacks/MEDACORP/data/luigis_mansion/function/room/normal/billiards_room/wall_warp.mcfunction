@@ -13,6 +13,6 @@ execute if entity @s[scores={PositionIntY=18,PositionIntX=675..683,PositionIntZ=
 execute if entity @s[scores={PositionIntY=18,PositionIntX=675..683,PositionIntZ=69..70}] run function luigis_mansion:entities/luigi/move/wall_warp_teleport {teleport:"~ ~-1 ~"}
 execute if entity @s[scores={PositionIntY=18,PositionIntX=675..683,PositionIntZ=66..68}] run function luigis_mansion:entities/luigi/move/wall_warp_teleport {teleport:"~10 ~2 ~-2"}
 execute if entity @s[scores={PositionIntY=18,PositionIntX=684..685}] run function luigis_mansion:entities/luigi/move/wall_warp_teleport {teleport:"~ ~-1 ~"}
-execute if entity @s[scores={PositionIntY=18,PositionIntX=686,PositionIntZ=71..88}] run function luigis_mansion:entities/luigi/move/wall_warp_teleport {teleport:"~16 ~2 ~-2"}
+execute if entity @s[scores={PositionIntY=18,PositionIntX=686,PositionIntZ=71..88}] run function luigis_mansion:entities/luigi/move/wall_warp_teleport {teleport:"~16 ~2 ~-27"}
 execute if entity @s[scores={PositionIntY=18,PositionIntX=686,PositionIntZ=69..70}] run function luigis_mansion:entities/luigi/move/wall_warp_teleport {teleport:"~ ~-1 ~"}
 execute if entity @s[scores={PositionIntY=18,PositionIntX=686,PositionIntZ=66..68}] run function luigis_mansion:entities/luigi/move/wall_warp_teleport {teleport:"~28 ~2 ~-32"}

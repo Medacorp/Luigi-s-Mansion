@@ -1,2 +1,2 @@
 data modify storage luigis_mansion:data furniture set value {room:32,no_ai:1b,animation:{frozen:1b}}
-execute positioned 647.93 18 -47 rotated 90 0 run function 3ds_remake:spawn_furniture/biff_atlas_portrait
+execute positioned 647.93 14 -41 rotated 90 0 run function 3ds_remake:spawn_furniture/biff_atlas_portrait
