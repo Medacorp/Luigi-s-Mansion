@@ -2,7 +2,6 @@
     "values": [
         "e3_demo:room/original/entrance/interactions/manual/chandelier",
         "e3_demo:room/original/entrance/interactions/manual/lamp",
-        "e3_demo:room/original/entrance/interactions/manual/mirror",
         "e3_demo:room/original/entrance/interactions/manual/table"
     ]
 }

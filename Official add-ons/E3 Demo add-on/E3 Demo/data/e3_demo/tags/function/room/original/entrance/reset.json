@@ -4,7 +4,6 @@
         "#e3_demo:room/original/entrance/turn_lights/off",
         "e3_demo:room/original/entrance/reset/chandelier",
         "e3_demo:room/original/entrance/reset/lamp",
-        "e3_demo:room/original/entrance/reset/mirror",
         "e3_demo:room/original/entrance/reset/table"
     ]
 }

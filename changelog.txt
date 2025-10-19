@@ -24,6 +24,7 @@ v?:
 ** Mirrors
 *** Bejeweled
 *** Gold
+*** Standing
 ** Portraits
 *** (3DS Remake) Biff Atlas
 *** Blue dress

@@ -1,2 +1,2 @@
-place template luigis_mansion:foyer/mirror_not_vacuumed 746 12 3
+fill 747 11 5 747 13 3 minecraft:white_wool
 scoreboard players reset #foyer_vacuumable

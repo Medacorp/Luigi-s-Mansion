@@ -1,2 +1,2 @@
-execute if block 746 12 12 minecraft:white_wool run place template luigis_mansion:foyer/mirror_vacuumed 746 12 12 none left_right
+fill 747 11 10 747 13 12 minecraft:barrier
 scoreboard players set #foyer_vacuumable Searched 1
