@@ -1,7 +1,6 @@
 {
     "values": [
         "luigis_mansion:room/hidden/foyer/interactions/manual/chandelier",
-        "luigis_mansion:room/hidden/foyer/interactions/manual/lamp",
-        "luigis_mansion:room/hidden/foyer/interactions/manual/table"
+        "luigis_mansion:room/hidden/foyer/interactions/manual/lamp"
     ]
 }

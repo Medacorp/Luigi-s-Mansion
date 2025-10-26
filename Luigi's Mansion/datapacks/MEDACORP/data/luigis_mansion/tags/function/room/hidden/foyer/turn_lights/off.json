@@ -1,7 +1,6 @@
 {
     "values": [
         "luigis_mansion:room/hidden/foyer/turn_lights/off/chandelier",
-        "luigis_mansion:room/hidden/foyer/turn_lights/off/lamp",
-        "luigis_mansion:room/hidden/foyer/turn_lights/off/table"
+        "luigis_mansion:room/hidden/foyer/turn_lights/off/lamp"
     ]
 }

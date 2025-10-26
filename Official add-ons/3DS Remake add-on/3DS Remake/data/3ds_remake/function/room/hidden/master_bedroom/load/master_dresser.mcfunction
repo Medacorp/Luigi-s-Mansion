@@ -1,0 +1,3 @@
+data modify storage luigis_mansion:data furniture set value {room:9,searchable:["interact","vacuum"],shake_animation:["interact","vacuum"],sound:{namespace:"luigis_mansion",id:"heavy_generic"},can_hide_boo:1b,loot_chance:{namespace:"3ds_remake",id:"health_dependent_1"},scan_result:{namespace:"luigis_mansion",id:"scan/scanner/49"}}
+execute unless data storage luigis_mansion:data current_state.current_data{money_spawned:["master_bedroom_master_dresser"]} run data modify storage luigis_mansion:data furniture.loot set value {name:"master_bedroom_master_dresser",contents:{luigis_mansion:{gold_coin:10,bill:10}}}
+execute positioned 695 111 39.75 rotated -10 0 run function luigis_mansion:spawn_furniture/master_dresser

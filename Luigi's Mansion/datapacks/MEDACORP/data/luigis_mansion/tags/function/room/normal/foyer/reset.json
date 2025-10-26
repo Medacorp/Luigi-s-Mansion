@@ -4,7 +4,6 @@
         "#luigis_mansion:room/normal/foyer/turn_lights/off",
         "luigis_mansion:room/normal/foyer/reset/chandelier",
         "luigis_mansion:room/normal/foyer/reset/lamp",
-        "luigis_mansion:room/normal/foyer/reset/table",
         "luigis_mansion:room/normal/foyer/reset/vacuumable"
     ]
 }

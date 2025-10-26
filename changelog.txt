@@ -11,6 +11,7 @@ v?:
 ** Angel statues
 ** Barrels
 ** Concrete bricks
+** Dresser mounted golden lamps
 ** Easels
 *** Blue Twirler
 *** Garbage Can Ghost
@@ -21,6 +22,7 @@ v?:
 *** Red Grabbing Ghost
 *** Room clear chest
 ** (Frozen) oil drums
+** Master dressers
 ** Mirrors
 *** Bejeweled
 *** Gold

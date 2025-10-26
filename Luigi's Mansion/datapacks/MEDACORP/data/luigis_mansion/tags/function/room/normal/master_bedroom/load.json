@@ -9,10 +9,10 @@
         "luigis_mansion:room/normal/master_bedroom/load/fern_portrait_1",
         "luigis_mansion:room/normal/master_bedroom/load/fern_portrait_2",
         "luigis_mansion:room/normal/master_bedroom/load/hallway_2_door",
+        "luigis_mansion:room/normal/master_bedroom/load/master_dresser",
         "luigis_mansion:room/normal/master_bedroom/load/nightstand",
         "luigis_mansion:room/normal/master_bedroom/load/room_clear_chest",
         "luigis_mansion:room/normal/master_bedroom/load/roses_portrait",
-        "luigis_mansion:room/normal/master_bedroom/load/scan_area",
-        "luigis_mansion:room/normal/master_bedroom/load/table_2"
+        "luigis_mansion:room/normal/master_bedroom/load/scan_area"
     ]
 }

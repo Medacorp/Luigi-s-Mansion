@@ -1,7 +1,6 @@
 {
     "values": [
         "3ds_remake:room/hidden/foyer/interactions/gameboy_horror_scan/chandelier",
-        "3ds_remake:room/hidden/foyer/interactions/gameboy_horror_scan/lamp",
-        "3ds_remake:room/hidden/foyer/interactions/gameboy_horror_scan/table"
+        "3ds_remake:room/hidden/foyer/interactions/gameboy_horror_scan/lamp"
     ]
 }

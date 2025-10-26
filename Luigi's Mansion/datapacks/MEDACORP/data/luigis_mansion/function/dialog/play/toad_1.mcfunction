@@ -26,6 +26,8 @@ scoreboard players reset @a[tag=same_room,tag=!spectator] WarpTime
 execute as @a[tag=same_room,tag=!spectator,tag=game_boy_horror_menu] run function luigis_mansion:selection_menu/game_boy_horror/exit
 tag @e[tag=toad,tag=same_room,limit=1] remove freeze_animation
 tag @e[tag=toad,tag=same_room,limit=1] remove no_ai
+tag @e[tag=lamp,tag=same_room] remove freeze_animation
+tag @e[tag=lamp,tag=same_room] remove no_ai
 execute if score #dialog Dialog matches 1 if data storage luigis_mansion:data current_state.current_data.technical_data{toad_1_spoke:1b} run tag @a[tag=same_room,limit=1] add next_dialog_line
 execute if score #dialog Dialog matches 1 if data storage luigis_mansion:data current_state.current_data.technical_data{toad_1_spoke:1b} run scoreboard players set #dialog Dialog 27
 execute if score #dialog Dialog matches 1.. as @a[tag=same_room] run function luigis_mansion:other/music/set/toad

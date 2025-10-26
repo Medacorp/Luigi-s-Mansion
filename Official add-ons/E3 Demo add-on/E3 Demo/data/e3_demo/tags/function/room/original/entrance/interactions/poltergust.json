@@ -1,7 +1,6 @@
 {
     "values": [
         "e3_demo:room/original/entrance/interactions/poltergust/chandelier",
-        "e3_demo:room/original/entrance/interactions/poltergust/lamp",
-        "e3_demo:room/original/entrance/interactions/poltergust/table"
+        "e3_demo:room/original/entrance/interactions/poltergust/lamp"
     ]
 }

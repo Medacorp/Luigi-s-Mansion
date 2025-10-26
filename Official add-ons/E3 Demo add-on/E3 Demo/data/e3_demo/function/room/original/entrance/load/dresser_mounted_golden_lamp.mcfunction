@@ -1,0 +1,2 @@
+data modify storage luigis_mansion:data furniture set value {room:1,shake_animation:["interact","vacuum"],sound:{namespace:"luigis_mansion",id:"heavy_generic"},scan_result:{namespace:"luigis_mansion",id:"scan/scanner/74"}}
+execute positioned 745 11 13 rotated -112.5 0 run function luigis_mansion:spawn_furniture/dresser_mounted_golden_lamp
