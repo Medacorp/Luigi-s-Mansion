@@ -23,6 +23,8 @@ v?:
 *** Room clear chest
 ** (Frozen) oil drums
 ** Master dressers
+** Metal cabinet mounted angel statues
+** Metal cabinet mounted grails
 ** Mirrors
 *** Bejeweled
 *** Gold
