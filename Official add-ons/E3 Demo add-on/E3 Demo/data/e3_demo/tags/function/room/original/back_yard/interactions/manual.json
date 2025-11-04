@@ -2,7 +2,6 @@
     "values": [
         "e3_demo:room/original/back_yard/interactions/manual/bowl",
         "e3_demo:room/original/back_yard/interactions/manual/dog_house",
-        "e3_demo:room/original/back_yard/interactions/manual/stake",
-        "e3_demo:room/original/back_yard/interactions/manual/water_tap"
+        "e3_demo:room/original/back_yard/interactions/manual/stake"
     ]
 }

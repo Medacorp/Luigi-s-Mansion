@@ -2,7 +2,6 @@
     "values": [
         "3ds_remake:room/hidden/boneyard/interactions/manual/bowl",
         "3ds_remake:room/hidden/boneyard/interactions/manual/dog_house",
-        "3ds_remake:room/hidden/boneyard/interactions/manual/sign",
-        "3ds_remake:room/hidden/boneyard/interactions/manual/water_tap"
+        "3ds_remake:room/hidden/boneyard/interactions/manual/sign"
     ]
 }

@@ -51,14 +51,5 @@ teleport @s[scores={Room=69}] 741 20 44
 teleport @s[scores={Room=70}] 741 20 68.0
 teleport @s[scores={Room=71}] 696 29 82.0
 
-data modify storage luigis_mansion:data entity set value {boo:{namespace:"luigis_mansion",id:"null"},name:{type:"translatable",translate:"luigis_mansion:entity.boo"},spawn_time:-601,tags:["cannot_be_removed"]}
-data modify storage luigis_mansion:data entity.name set from entity @s CustomName
-data modify storage luigis_mansion:data entity.boo set from entity @s data.boo
-execute if entity @s[tag=area_1] run data modify storage luigis_mansion:data entity.tags append value "area_1"
-execute if entity @s[tag=area_2] run data modify storage luigis_mansion:data entity.tags append value "area_2"
-execute if entity @s[tag=area_3] run data modify storage luigis_mansion:data entity.tags append value "area_3"
-execute if entity @s[tag=area_4] run data modify storage luigis_mansion:data entity.tags append value "area_4"
-execute at @s run function luigis_mansion:spawn_entities/ghost/hidden_boo
-
 function luigis_mansion:entities/boo/warp_update_data with entity @s data.boo
 function luigis_mansion:entities/boo/warp_effects

@@ -2,8 +2,8 @@
     "values": [
         "e3_demo:room/original/back_yard/load/set_loaded",
         "e3_demo:room/original/back_yard/load/lights",
-        "e3_demo:room/original/back_yard/load/dripping_water",
         "e3_demo:room/original/back_yard/load/kitchen_door",
-        "e3_demo:room/original/back_yard/load/lamp"
+        "e3_demo:room/original/back_yard/load/lamp",
+        "e3_demo:room/original/back_yard/load/water_tap"
     ]
 }

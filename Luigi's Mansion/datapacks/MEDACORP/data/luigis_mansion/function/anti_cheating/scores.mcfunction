@@ -4,6 +4,7 @@ scoreboard objectives add AnimationProgress dummy
 scoreboard objectives add AttackType dummy
 scoreboard objectives add AvailableSlot dummy
 scoreboard objectives add BananaDropTime dummy
+scoreboard objectives add BooArea dummy
 scoreboard objectives add Boos dummy
 scoreboard objectives add BooTimer dummy
 scoreboard objectives add ChangedMansion dummy

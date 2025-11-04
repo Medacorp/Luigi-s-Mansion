@@ -19,12 +19,6 @@ execute if data storage luigis_mansion:data reflections[-1].data.Pose.Head store
 data modify storage luigis_mansion:data reflections[-1].data.equipment set from entity @s equipment
 data modify storage luigis_mansion:data reflections[-1].data.equipment.head merge from storage luigis_mansion:data reflections[-1].data.equipment.head.components."minecraft:custom_data".mirror
 data modify storage luigis_mansion:data reflections[-1].data.attributes set from entity @s attributes
-#todelete - old painting furniture
-data modify storage luigis_mansion:data reflections[-1].data.Item set from entity @s Item
-data modify storage luigis_mansion:data reflections[-1].data.ItemRotation set from entity @s ItemRotation
-data modify storage luigis_mansion:data reflections[-1].no_sync.Facing set from entity @s Facing
-execute if entity @s[type=minecraft:item_frame] run data modify storage luigis_mansion:data reflections[-1].entity_id set value "minecraft:item_frame"
-#/todelete
 data modify storage luigis_mansion:data reflections[-1].data.item set from entity @s item
 data modify storage luigis_mansion:data reflections[-1].data.item merge from storage luigis_mansion:data reflections[-1].data.item.components."minecraft:custom_data".mirror
 data modify storage luigis_mansion:data reflections[-1].data.transformation set from entity @s transformation

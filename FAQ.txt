@@ -11,7 +11,7 @@ A. (No 3DS Remake) Search the angle statue, like E. Gadd hints, and his dialog w
    (3DS Remake) Find the Game Boy Horror part, and talk to E. Gadd again, and another time for an option to leave the gallery.
    
 Q. Why is only certain furniture modeled and animated, but not others?
-A. Those will be converted eventually, but it takes time to model all those. The furniture that has been converted already matched one of the following criteria:
+A. Those will be converted eventually, but it takes time to model all those. The furniture that has been converted already generally matched one of the following criteria:
    1. It was already modeled before, just not a furniture entity
    2. It was a container before conversion
    3. It has candle flames or incense flames

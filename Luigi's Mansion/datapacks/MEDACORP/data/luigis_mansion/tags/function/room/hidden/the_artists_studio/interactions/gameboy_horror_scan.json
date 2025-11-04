@@ -2,9 +2,6 @@
     "values": [
         "luigis_mansion:room/hidden/the_artists_studio/interactions/gameboy_horror_scan/chairs",
         "luigis_mansion:room/hidden/the_artists_studio/interactions/gameboy_horror_scan/lamp",
-        "luigis_mansion:room/hidden/the_artists_studio/interactions/gameboy_horror_scan/painting_3",
-        "luigis_mansion:room/hidden/the_artists_studio/interactions/gameboy_horror_scan/table_1",
-        "luigis_mansion:room/hidden/the_artists_studio/interactions/gameboy_horror_scan/table_2",
         "luigis_mansion:room/hidden/the_artists_studio/interactions/gameboy_horror_scan/table_3"
     ]
 }

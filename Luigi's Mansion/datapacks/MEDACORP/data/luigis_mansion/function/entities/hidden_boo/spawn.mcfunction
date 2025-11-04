@@ -1,5 +1,4 @@
 scoreboard players add @s ActionTime 1
-scoreboard players set @s[scores={SpawnTime=..-1}] ActionTime 20
 execute if entity @s[scores={ActionTime=1}] if entity @e[tag=boo,tag=same_room,limit=1] run function luigis_mansion:entities/hidden_boo/spawn/cancel
 scoreboard players add @s[scores={ActionTime=1}] ActionTime 1
 execute if entity @s[scores={ActionTime=2}] if entity @e[tag=caught_by_boo_radar,tag=same_room,scores={ActionTime=2..},limit=1] run scoreboard players set @s ActionTime 1

@@ -1,12 +1,12 @@
 data modify storage luigis_mansion:data entity set value {room:71,spawn:3b,tags:["ghost_art_spawn"]}
-execute positioned 693 29 85.2 run function luigis_mansion:spawn_entities/ghost/garbage_can_ghost
+execute positioned 692 29 85.2 run function luigis_mansion:spawn_entities/ghost/garbage_can_ghost
 data modify storage luigis_mansion:data entity set value {room:71,spawn:3b,tags:["ghost_art_spawn"]}
-execute positioned 693 29 85.2 rotated -110 0 positioned ^0.7 ^ ^0.7 run function luigis_mansion:spawn_entities/ghost/garbage_can_ghost
+execute positioned 692 29 85.2 rotated -90 0 positioned ^0.7 ^ ^0.7 run function luigis_mansion:spawn_entities/ghost/garbage_can_ghost
 data modify storage luigis_mansion:data entity set value {room:71,spawn:3b,tags:["ghost_art_spawn"]}
-execute positioned 693 29 85.2 rotated -110 0 positioned ^-0.7 ^ ^0.7 run function luigis_mansion:spawn_entities/ghost/garbage_can_ghost
+execute positioned 692 29 85.2 rotated -90 0 positioned ^-0.7 ^ ^0.7 run function luigis_mansion:spawn_entities/ghost/garbage_can_ghost
 data modify storage luigis_mansion:data entity set value {room:71,spawn:3b,tags:["ghost_art_spawn"]}
-execute positioned 693 29 85.2 rotated -110 0 positioned ^1.4 ^ ^0.5 run function luigis_mansion:spawn_entities/ghost/garbage_can_ghost
+execute positioned 692 29 85.2 rotated -90 0 positioned ^1.4 ^ ^0.5 run function luigis_mansion:spawn_entities/ghost/garbage_can_ghost
 data modify storage luigis_mansion:data entity set value {room:71,spawn:3b,tags:["ghost_art_spawn"]}
-execute positioned 693 29 85.2 rotated -110 0 positioned ^-1.4 ^ ^0.5 run function luigis_mansion:spawn_entities/ghost/garbage_can_ghost
+execute positioned 692 29 85.2 rotated -90 0 positioned ^-1.4 ^ ^0.5 run function luigis_mansion:spawn_entities/ghost/garbage_can_ghost
 scoreboard players set #the_artists_studio Wave 7
 execute if data storage luigis_mansion:data current_state.current_data.technical_data{purple_bomber_easel:1b} run function luigis_mansion:room/hidden/the_artists_studio/wave_8

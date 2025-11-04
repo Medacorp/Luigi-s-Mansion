@@ -12,12 +12,13 @@ execute if entity @s[scores={Dialog=1..}] run function luigis_mansion:entities/b
 
 scoreboard players operation #temp RoomSection = @s RoomSection
 
-execute if entity @s[tag=!dying] unless entity @s[tag=!in_vacuum,scores={HurtTime=0}] run function luigis_mansion:entities/boo/hurt
-execute at @s[tag=!flee,tag=!in_vacuum,tag=!appear,tag=!laugh,tag=!taunt,tag=!attack,tag=!dying] run function luigis_mansion:entities/boo/ai/normal
-execute at @s[tag=flee,tag=!dying] run function luigis_mansion:entities/boo/ai/flee
+execute if entity @s[tag=!dying,tag=!appear,tag=!countdown] unless entity @s[tag=!in_vacuum,scores={HurtTime=0}] run function luigis_mansion:entities/boo/hurt
+execute at @s[tag=!flee,tag=!in_vacuum,tag=!appear,tag=!countdown,tag=!laugh,tag=!taunt,tag=!attack,tag=!dying] run function luigis_mansion:entities/boo/ai/normal
+execute at @s[tag=flee,tag=!dying,tag=!appear,tag=!countdown] run function luigis_mansion:entities/boo/ai/flee
 
 execute if entity @s[tag=attack] run function luigis_mansion:entities/boo/attack/dash
 execute if entity @s[tag=appear] run function luigis_mansion:entities/boo/appear
+execute if entity @s[tag=countdown] run function luigis_mansion:entities/boo/countdown
 execute if entity @s[tag=laugh,tag=!collided] run function luigis_mansion:entities/boo/laugh
 execute if entity @s[tag=taunt] run function luigis_mansion:entities/boo/taunt
 execute at @s[tag=!dying,tag=!appear] if entity @e[tag=luigi,distance=..0.7,limit=1] run function luigis_mansion:entities/boo/collide

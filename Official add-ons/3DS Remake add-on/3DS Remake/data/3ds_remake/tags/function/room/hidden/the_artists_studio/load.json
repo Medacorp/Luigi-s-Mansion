@@ -2,16 +2,17 @@
     "values": [
         "3ds_remake:room/hidden/the_artists_studio/load/set_loaded",
         "3ds_remake:room/hidden/the_artists_studio/load/lights",
+        "3ds_remake:room/hidden/the_artists_studio/load/artist_shelves",
         "3ds_remake:room/hidden/the_artists_studio/load/blue_twirler_easel",
         "3ds_remake:room/hidden/the_artists_studio/load/concrete_bricks",
         "3ds_remake:room/hidden/the_artists_studio/load/garbage_can_ghost_easel",
         "3ds_remake:room/hidden/the_artists_studio/load/ghost_guy_easel",
         "3ds_remake:room/hidden/the_artists_studio/load/gold_ghost_easel",
         "3ds_remake:room/hidden/the_artists_studio/load/hallway_17_door",
-        "3ds_remake:room/hidden/the_artists_studio/load/painting_3",
         "3ds_remake:room/hidden/the_artists_studio/load/purple_bomber_easel",
         "3ds_remake:room/hidden/the_artists_studio/load/purple_puncher_easel",
         "3ds_remake:room/hidden/the_artists_studio/load/red_grabbing_ghost_easel",
-        "3ds_remake:room/hidden/the_artists_studio/load/room_clear_chest_easel"
+        "3ds_remake:room/hidden/the_artists_studio/load/room_clear_chest_easel",
+        "3ds_remake:room/hidden/the_artists_studio/load/table_mounted_bust_with_portraits"
     ]
 }

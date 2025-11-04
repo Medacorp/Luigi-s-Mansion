@@ -130,6 +130,9 @@ execute if score #dialog Dialog matches 284..362 as @e[tag=luigi,tag=same_room] 
 execute if score #dialog Dialog matches 285 as @e[tag=portrait_grabbing_player,limit=1] run function luigis_mansion:entities/luigi/animation/set/leave_with_marios_portrait
 execute if score #dialog Dialog matches 285..344 at @e[tag=same_room,tag=exit_door,limit=1] positioned ^ ^ ^0.5 run tag @e[tag=luigi,tag=same_room,tag=!portrait_grabbing_player,distance=0.2..] add dialog_walking
 execute if score #dialog Dialog matches 285..344 as @e[tag=luigi,tag=same_room,tag=!portrait_grabbing_player] run function luigis_mansion:entities/luigi/move/execute {execute:"at @e[tag=same_room,tag=exit_door,limit=1] positioned ^ ^ ^0.5 facing entity @s[distance=0.2..] feet positioned as @s rotated ~-180 0",teleport:"^ ^ ^0.2 ~ ~"}
+execute if score #dialog Dialog matches 344 store result score #temp Time run data get storage luigis_mansion:data current_state.current_data.area
+execute if score #dialog Dialog matches 344 if score #temp Time matches ..4 run data modify storage luigis_mansion:data current_state.current_data.area set value 5
+scoreboard players reset #temp Time
 execute if score #dialog Dialog matches 344 as @a[tag=same_room] run function luigis_mansion:entities/player/camera/reset
 execute if score #dialog Dialog matches 344 run function luigis_mansion:room/end_mansion with storage luigis_mansion:data current_state.current_data.mansion_id
 execute if score #dialog Dialog matches 344 run scoreboard players set #dialog Dialog -1

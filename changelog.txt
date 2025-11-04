@@ -9,6 +9,7 @@ v?:
   (Do note that the original game has some furniture baked into the room geometry, especially the fourth wall.
   The uninteractability of some portraits is as such intended)
 ** Angel statues
+** Artist shelves
 ** Barrels
 ** Concrete bricks
 ** Dresser mounted golden lamps
@@ -75,6 +76,8 @@ v?:
 *** Torn Cloth
 *** Trumpet
 *** Western
+** Table mounted bust with portraits
+** Water taps
 ** Wooden stool mounted tools
 * Optimized some furniture types to skip ticking if left alone
 * Added some rec room changes in the 3DS remake
@@ -86,11 +89,12 @@ v?:
 * Changed boos to match the original game more closely:
 ** A discovered Boo will now prevent hidden Boos from appearing (and traps from triggering)
 ** Multiple hidden Boos getting discovered at once will now stagger their triggers (Best seen in the storage room in the original game)
+** They can no longer hide in a room with all hiding spots occupied; they'll go to a neighbouring room instead just like hallways
 ** They can no longer be captured in dark rooms (Health can be drained until 0, but then no longer get affected)
 ** They now move to a warpable wall away from the nearest player in dark rooms
 ** They now move faster and don't attack in dark rooms
-** They no longer travel between hallway sections
-** Can no longer enter hallway 6 (bathroom 1/courtyard door part), bathroom 1 and washroom 1
+** They no longer travel between hallway viewpoints
+** Can no longer enter hallway 6 (bathroom 1/courtyard door section), bathroom 1 and washroom 1
 *** Boos in the bathroom or washroom in old saves will move to the conservatory
 *** Boos in hallway 6 in old saves will move to hallway 5
 * Fixed Boos could hide in all old furniture; now the options match the original game
@@ -101,10 +105,10 @@ v?:
 * Fixed ceiling ghosts appearing from furniture spawn too low
 * Fixed a few gameboy horror scan mistakes
 * Fixed master bedroom nightstand lamp had no interactions
-* Fixed item frame reflections weren't working (not that that still matters with portraits being converted; there are some item frames remaining though)
 * Fixed cellar dust not getting removed upon room reset
 * Fixed missing teddy bears in E3 Demo child's room upon entering when lit
 * Fixed missing mice in E3 Demo kitchen
+* Removed item frame reflections (they broke recently, but item frames are no longer used in rooms with mirrors)
 
 v3.3.2:
 * Updated pack formats to also not complain for 1.21.7

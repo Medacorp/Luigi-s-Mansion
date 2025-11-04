@@ -61,6 +61,9 @@ execute if score #dialog Dialog matches 56 as @e[tag=luigi,tag=same_room] run fu
 execute if score #dialog Dialog matches 76 as @e[tag=luigi,tag=same_room] run function luigis_mansion:entities/luigi/animation/set/nod
 execute if score #dialog Dialog matches 96 as @e[tag=luigi,tag=same_room] run function luigis_mansion:entities/luigi/animation/set/none
 execute if score #dialog Dialog matches 96 as @a[tag=same_room] run function luigis_mansion:room/ghost_portrificationizer_room/warp_to
+execute if score #dialog Dialog matches 96 store result score #temp Time run data get storage luigis_mansion:data current_state.current_data.area
+execute if score #dialog Dialog matches 96 if score #temp Time matches ..3 run data modify storage luigis_mansion:data current_state.current_data.area set value 4
+scoreboard players reset #temp Time
 execute if score #dialog Dialog matches 96 if data storage luigis_mansion:data rooms.ghost_portrificationizer_room{cleared:1b} run data modify storage luigis_mansion:data dialogs append value {name:{namespace:"luigis_mansion",id:"ghost_portrificationizer_room/return"},room:-3,progress:-1}
 execute if score #dialog Dialog matches 96 if data storage luigis_mansion:data rooms.ghost_portrificationizer_room{cleared:0b} run data modify storage luigis_mansion:data dialogs append value {name:{namespace:"luigis_mansion",id:"ghost_portrificationizer_room/talk"},room:-3,progress:-1}
 execute if score #dialog Dialog matches 96 run scoreboard players set #dialog Dialog -1
