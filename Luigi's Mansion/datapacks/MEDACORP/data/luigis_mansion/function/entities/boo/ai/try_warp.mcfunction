@@ -14,3 +14,10 @@ tag @s[tag=up,x_rotation=-90..-45] add warp_up
 tag @s[tag=down,x_rotation=45..90] add warp_down
 execute unless entity @s[tag=!warp_down,tag=!warp_east,tag=!warp_north,tag=!warp_south,tag=!warp_west,tag=!warp_up] run function luigis_mansion:entities/boo/warp with entity @s data.mansion
 execute if entity @s[tag=!warp_down,tag=!warp_east,tag=!warp_north,tag=!warp_south,tag=!warp_west,tag=!warp_up] run function luigis_mansion:entities/boo/rotate
+tag @s remove warp_east
+tag @s remove warp_north
+tag @s remove warp_south
+tag @s remove warp_west
+tag @s remove warp_up
+tag @s remove warp_down
+tag @s remove wall

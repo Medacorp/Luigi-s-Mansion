@@ -2,15 +2,17 @@ v?:
 * Updated to 1.21.9/1.21.10
 * Added GBH map models (not in use yet)
 * Added cloth, ghost art and poster furniture types
-** Poster furniture changed to actual furniture; they also visually get attached to the vacuumer's poltergust
-** Cloth type implemented (not in use yet)
 ** Ghost art is the same as generic, but only opens when in a lit room, or when a ghost is hiding in it; cannot be searched (aside from revealing hidden Boos) before it is open
+** Cloth type implemented, cloths get attached to the vacuumer's poltergust, and are slowly dragged off their object; they prevent revealing Boos when searching the furniture below (not in use yet)
+** Poster furniture changed to actual furniture; they also visually get attached to the vacuumer's poltergust
 * Added furniture models for: 
   (Do note that the original game has some furniture baked into the room geometry, especially the fourth wall.
   The uninteractability of some portraits is as such intended)
 ** Angel statues
 ** Artist shelves
 ** Barrels
+** Campfires
+** Camping Burners
 ** Concrete bricks
 ** Dresser mounted golden lamps
 ** Easels
@@ -80,7 +82,9 @@ v?:
 ** Water taps
 ** Wooden stool mounted tools
 * Optimized some furniture types to skip ticking if left alone
+* Added "What just happed?" (tick door) to the jukebox
 * Added some rec room changes in the 3DS remake
+* Added trick door dialog
 * Changed paintings dialog (now named portraits) to shake the new portrait furniture
 * Changed several furniture models to composite models, optimizing them, and smoothed the opening animations out
 * Changed ghost gauntlet spawn dialog (now named ghost art) to spawn all ghosts with a tag, and require an entity UUID to focus the camera on
@@ -97,12 +101,17 @@ v?:
 ** Can no longer enter hallway 6 (bathroom 1/courtyard door section), bathroom 1 and washroom 1
 *** Boos in the bathroom or washroom in old saves will move to the conservatory
 *** Boos in hallway 6 in old saves will move to hallway 5
+** Boolossus Boos now only have 3-5 agressive ones upon getting split
+** Agressive Boolossus Boos now only attack from behind
+** Non-agressive Boolossus Boos now sometimes taunt
+** Boolossus Boos now rubberband like in the original game
 * Fixed Boos could hide in all old furniture; now the options match the original game
 * Fixed some converted furniture had the wrong can_hide_boo value
 * Fixed Garbage Can Ghosts chins were barely visible
 * Fixed Ghost Guy spears are facing the wrong way
 * Fixed ghosts appearing from furniture do not go to the furniture spawn position upon disappear, but rather the furniture position directly
 * Fixed ceiling ghosts appearing from furniture spawn too low
+* Fixed ice spike breaking animation doesn't work
 * Fixed a few gameboy horror scan mistakes
 * Fixed master bedroom nightstand lamp had no interactions
 * Fixed cellar dust not getting removed upon room reset

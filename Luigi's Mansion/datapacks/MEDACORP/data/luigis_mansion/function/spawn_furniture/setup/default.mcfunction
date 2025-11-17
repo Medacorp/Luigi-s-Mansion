@@ -25,13 +25,13 @@ function luigis_mansion:spawn_furniture/setup/scan_result
 # Other
 function luigis_mansion:spawn_furniture/setup/animation
 function luigis_mansion:spawn_furniture/setup/no_ai
+function luigis_mansion:spawn_furniture/setup/particles
 execute if entity @e[tag=this_entity,tag=can_be_fire_elemental_source,limit=1] run function luigis_mansion:spawn_furniture/setup/fire_elemental_source
 execute if entity @e[tag=this_entity,tag=can_be_water_elemental_source,limit=1] run function luigis_mansion:spawn_furniture/setup/water_elemental_source
 execute if entity @e[tag=this_entity,tag=can_be_ice_elemental_source,limit=1] run function luigis_mansion:spawn_furniture/setup/ice_elemental_source
 execute if entity @e[tag=this_entity,tag=!lamp,scores={FurnitureLightStrength=0..15},limit=1] run function luigis_mansion:spawn_furniture/setup/ambient_light
 execute if entity @e[tag=this_entity,tag=mirror,limit=1] run function luigis_mansion:spawn_furniture/setup/mirror_reflection
 execute if entity @e[tag=this_entity,tag=poster,limit=1] run function luigis_mansion:spawn_furniture/setup/poster
-function luigis_mansion:spawn_furniture/setup/particles
 function luigis_mansion:spawn_furniture/setup/room
 execute if entity @e[tag=this_entity,tag=room_clear_chest,limit=1] run function luigis_mansion:spawn_furniture/setup/room_clear_chest_spawn_sound
 function luigis_mansion:spawn_furniture/setup/tags

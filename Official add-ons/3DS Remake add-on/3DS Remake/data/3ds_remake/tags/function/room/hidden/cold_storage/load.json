@@ -2,7 +2,9 @@
     "values": [
         "3ds_remake:room/hidden/cold_storage/load/set_loaded",
         "3ds_remake:room/hidden/cold_storage/load/lights",
-        "3ds_remake:room/hidden/cold_storage/load/fire",
+        "3ds_remake:room/hidden/cold_storage/load/campfire_1",
+        "3ds_remake:room/hidden/cold_storage/load/campfire_2",
+        "3ds_remake:room/hidden/cold_storage/load/camping_burner",
         "3ds_remake:room/hidden/cold_storage/load/frozen_oil_drum_1",
         "3ds_remake:room/hidden/cold_storage/load/frozen_oil_drum_2",
         "3ds_remake:room/hidden/cold_storage/load/hallway_20_door",

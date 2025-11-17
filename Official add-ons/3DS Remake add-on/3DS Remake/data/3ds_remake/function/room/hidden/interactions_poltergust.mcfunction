@@ -7,7 +7,6 @@ execute if score #temp Room matches 6 run function #3ds_remake:room/hidden/balco
 execute if score #temp Room matches 8 run function #3ds_remake:room/hidden/study/interactions/poltergust
 execute if score #temp Room matches 9 run function #3ds_remake:room/hidden/master_bedroom/interactions/poltergust
 execute if score #temp Room matches 10 run function #3ds_remake:room/hidden/nursery/interactions/poltergust
-execute if score #temp Room matches 13 run function #3ds_remake:room/hidden/hallway_5/interactions/poltergust
 execute if score #temp Room matches 15 run function #3ds_remake:room/hidden/hallway_7/interactions/poltergust
 execute if score #temp Room matches 16 run function #3ds_remake:room/hidden/bathroom_1/interactions/poltergust
 execute if score #temp Room matches 17 run function #3ds_remake:room/hidden/ball_room/interactions/poltergust
@@ -28,7 +27,6 @@ execute if score #temp Room matches 31 run function #3ds_remake:room/hidden/bott
 execute if score #temp Room matches 32 run function #3ds_remake:room/hidden/rec_room/interactions/poltergust
 execute if score #temp Room matches 33 run function #3ds_remake:room/hidden/hallway_8/interactions/poltergust
 execute if score #temp Room matches 34 run function #3ds_remake:room/hidden/tea_room/interactions/poltergust
-execute if score #temp Room matches 36 run function #3ds_remake:room/hidden/hallway_10/interactions/poltergust
 execute if score #temp Room matches 40 run function #3ds_remake:room/hidden/hallway_14/interactions/poltergust
 execute if score #temp Room matches 42 run function #3ds_remake:room/hidden/washroom_2/interactions/poltergust
 execute if score #temp Room matches 43 run function #3ds_remake:room/hidden/bathroom_2/interactions/poltergust
@@ -44,7 +42,6 @@ execute if score #temp Room matches 56 run function #3ds_remake:room/hidden/tele
 execute if score #temp Room matches 57 run function #3ds_remake:room/hidden/breaker_room/interactions/poltergust
 execute if score #temp Room matches 58 run function #3ds_remake:room/hidden/cellar/interactions/poltergust
 execute if score #temp Room matches 62 run function #3ds_remake:room/hidden/clockwork_room/interactions/poltergust
-execute if score #temp Room matches 63 run function #3ds_remake:room/hidden/roof/interactions/poltergust
 execute if score #temp Room matches 64 run function #3ds_remake:room/hidden/armory/interactions/poltergust
 execute if score #temp Room matches 65 run function #3ds_remake:room/hidden/ceramics_studio/interactions/poltergust
 execute if score #temp Room matches 66 run function #3ds_remake:room/hidden/sealed_room/interactions/poltergust

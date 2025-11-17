@@ -7,7 +7,6 @@ execute if score #temp Room matches 6 run function #luigis_mansion:room/normal/b
 execute if score #temp Room matches 8 run function #luigis_mansion:room/normal/study/interactions/poltergust
 execute if score #temp Room matches 9 run function #luigis_mansion:room/normal/master_bedroom/interactions/poltergust
 execute if score #temp Room matches 10 run function #luigis_mansion:room/normal/nursery/interactions/poltergust
-execute if score #temp Room matches 13 run function #luigis_mansion:room/normal/hallway_5/interactions/poltergust
 execute if score #temp Room matches 15 run function #luigis_mansion:room/normal/hallway_7/interactions/poltergust
 execute if score #temp Room matches 16 run function #luigis_mansion:room/normal/bathroom_1/interactions/poltergust
 execute if score #temp Room matches 17 run function #luigis_mansion:room/normal/ball_room/interactions/poltergust
@@ -28,7 +27,6 @@ execute if score #temp Room matches 31 run function #luigis_mansion:room/normal/
 execute if score #temp Room matches 32 run function #luigis_mansion:room/normal/rec_room/interactions/poltergust
 execute if score #temp Room matches 33 run function #luigis_mansion:room/normal/hallway_8/interactions/poltergust
 execute if score #temp Room matches 34 run function #luigis_mansion:room/normal/tea_room/interactions/poltergust
-execute if score #temp Room matches 36 run function #luigis_mansion:room/normal/hallway_10/interactions/poltergust
 execute if score #temp Room matches 40 run function #luigis_mansion:room/normal/hallway_14/interactions/poltergust
 execute if score #temp Room matches 42 run function #luigis_mansion:room/normal/washroom_2/interactions/poltergust
 execute if score #temp Room matches 43 run function #luigis_mansion:room/normal/bathroom_2/interactions/poltergust
@@ -44,7 +42,6 @@ execute if score #temp Room matches 56 run function #luigis_mansion:room/normal/
 execute if score #temp Room matches 57 run function #luigis_mansion:room/normal/breaker_room/interactions/poltergust
 execute if score #temp Room matches 58 run function #luigis_mansion:room/normal/cellar/interactions/poltergust
 execute if score #temp Room matches 62 run function #luigis_mansion:room/normal/clockwork_room/interactions/poltergust
-execute if score #temp Room matches 63 run function #luigis_mansion:room/normal/roof/interactions/poltergust
 execute if score #temp Room matches 64 run function #luigis_mansion:room/normal/armory/interactions/poltergust
 execute if score #temp Room matches 65 run function #luigis_mansion:room/normal/ceramics_studio/interactions/poltergust
 execute if score #temp Room matches 66 run function #luigis_mansion:room/normal/sealed_room/interactions/poltergust

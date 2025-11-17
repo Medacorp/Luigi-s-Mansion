@@ -1,2 +1,2 @@
 data modify storage luigis_mansion:data furniture set value {room:56,searchable:["vacuum"],no_dust:1b,hitbox:{rotated_box:{left:10,up:15,forward:2}},scan_result:{namespace:"luigis_mansion",id:"scan/scanner/55"}}
-execute positioned 738.0 31.5 -3.0 rotated -90 0 run function luigis_mansion:spawn_furniture/poster/western
+execute positioned 738.0 31.5 -2.0 rotated -90 0 run function luigis_mansion:spawn_furniture/poster/western

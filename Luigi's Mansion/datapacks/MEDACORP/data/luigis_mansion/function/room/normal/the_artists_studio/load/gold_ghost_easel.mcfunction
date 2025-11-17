@@ -1,3 +1,3 @@
-data modify storage luigis_mansion:data furniture set value {room:71,shake_animation:["interact","vacuum"],sound:{namespace:"luigis_mansion",id:"generic"},no_dust:1b,can_hide_boo:1b,scan_result:{namespace:"luigis_mansion",id:"scan/scanner/22"},tags:["priority_camera_focus"]}
+data modify storage luigis_mansion:data furniture set value {room:71,shake_animation:["interact","vacuum"],sound:{namespace:"luigis_mansion",id:"generic"},no_dust:1b,scan_result:{namespace:"luigis_mansion",id:"scan/scanner/22"},tags:["priority_camera_focus"]}
 execute if data storage luigis_mansion:data current_state.current_data.rooms.the_artists_studio{cleared:1b} run data modify storage luigis_mansion:data furniture merge value {searched:1b,no_search_animation:1b}
 execute positioned 694 29 -58 rotated -120 0 run function luigis_mansion:spawn_furniture/gold_ghost_easel

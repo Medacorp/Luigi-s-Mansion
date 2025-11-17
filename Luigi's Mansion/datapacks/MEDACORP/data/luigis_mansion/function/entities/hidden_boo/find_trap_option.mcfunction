@@ -1,0 +1,3 @@
+execute if entity @s[tag=furniture] positioned ~ ~1.4 ~ if entity @e[nbt={data:{entity:{namespace:"luigis_mansion",id:"hidden_boo"}}},tag=caught_by_boo_radar,tag=trap,limit=1,distance=..0.1] run tag @s add hiding_trap
+execute if entity @s[tag=!furniture] if entity @e[nbt={data:{entity:{namespace:"luigis_mansion",id:"hidden_boo"}}},tag=caught_by_boo_radar,tag=trap,limit=1,distance=..0.1] run tag @s add hiding_trap
+execute if entity @s[tag=hiding_trap] run function luigis_mansion:entities/hidden_boo/remove_trap_option

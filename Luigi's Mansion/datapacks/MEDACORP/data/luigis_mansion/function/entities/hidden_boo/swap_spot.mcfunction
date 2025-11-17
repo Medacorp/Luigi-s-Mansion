@@ -3,8 +3,10 @@ execute as @e[tag=furniture,tag=same_room,tag=can_hide_boo] run function luigis_
 $function $(namespace):entities/hidden_boo/swap_spot/$(id)
 execute as @e[type=minecraft:marker,tag=choice] at @s if entity @e[nbt={data:{entity:{namespace:"luigis_mansion",id:"hidden_boo"}}},distance=..0.1,tag=caught_by_boo_radar,tag=!trap,limit=1] run kill @s
 #/todelete
-execute at @e[tag=hide_option,limit=1] if entity @e[tag=hide_option,limit=1,distance=0.1..] as @e[nbt={data:{entity:{namespace:"luigis_mansion",id:"hidden_boo"}}},tag=caught_by_boo_radar,tag=trap] at @s run function luigis_mansion:entities/hidden_boo/remove_trap_option
-execute at @e[tag=hide_option,limit=1,sort=random] run teleport @s ~ ~ ~
+tag @s add me
+execute as @e[tag=hide_option] at @s run function luigis_mansion:entities/hidden_boo/find_trap_option
+tag @s remove me
+execute if entity @s[tag=!trap_swap] at @e[tag=hide_option,limit=1,sort=random] run teleport @s ~ ~ ~
 execute at @s if entity @e[distance=..0.1,tag=hide_option,limit=1] run tag @s add caught_by_boo_radar
 execute at @s if entity @e[tag=hide_option,tag=furniture,distance=..0.1,limit=1] run teleport @s ~ ~1.4 ~
 execute at @s[tag=caught_by_boo_radar,tag=can_play_sound] run playsound luigis_mansion:entity.boo.hide hostile @a[tag=same_room] ~ ~ ~ 1

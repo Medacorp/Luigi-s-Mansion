@@ -7,7 +7,6 @@ execute if score #temp Room matches 6 run function #3ds_remake:room/hidden/balco
 execute if score #temp Room matches 8 run function #3ds_remake:room/hidden/study/interactions/gameboy_horror_scan
 execute if score #temp Room matches 9 run function #3ds_remake:room/hidden/master_bedroom/interactions/gameboy_horror_scan
 execute if score #temp Room matches 10 run function #3ds_remake:room/hidden/nursery/interactions/gameboy_horror_scan
-execute if score #temp Room matches 13 run function #3ds_remake:room/hidden/hallway_5/interactions/gameboy_horror_scan
 execute if score #temp Room matches 15 run function #3ds_remake:room/hidden/hallway_7/interactions/gameboy_horror_scan
 execute if score #temp Room matches 16 run function #3ds_remake:room/hidden/bathroom_1/interactions/gameboy_horror_scan
 execute if score #temp Room matches 17 run function #3ds_remake:room/hidden/ball_room/interactions/gameboy_horror_scan
@@ -28,7 +27,6 @@ execute if score #temp Room matches 31 run function #3ds_remake:room/hidden/bott
 execute if score #temp Room matches 32 run function #3ds_remake:room/hidden/rec_room/interactions/gameboy_horror_scan
 execute if score #temp Room matches 33 run function #3ds_remake:room/hidden/hallway_8/interactions/gameboy_horror_scan
 execute if score #temp Room matches 34 run function #3ds_remake:room/hidden/tea_room/interactions/gameboy_horror_scan
-execute if score #temp Room matches 36 run function #3ds_remake:room/hidden/hallway_10/interactions/gameboy_horror_scan
 execute if score #temp Room matches 40 run function #3ds_remake:room/hidden/hallway_14/interactions/gameboy_horror_scan
 execute if score #temp Room matches 42 run function #3ds_remake:room/hidden/washroom_2/interactions/gameboy_horror_scan
 execute if score #temp Room matches 43 run function #3ds_remake:room/hidden/bathroom_2/interactions/gameboy_horror_scan

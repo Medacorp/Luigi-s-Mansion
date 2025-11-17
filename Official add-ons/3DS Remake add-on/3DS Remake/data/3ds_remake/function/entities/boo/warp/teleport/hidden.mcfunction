@@ -1,6 +1,6 @@
 teleport @s[scores={Room=3}] 721.0 20 28.0
 teleport @s[scores={Room=4}] 689 20 33.0
-teleport @s[scores={Room=5}] 682 20 67.0
+teleport @s[scores={Room=5}] 682 20 66.0
 teleport @s[scores={Room=7}] 726 20 61
 teleport @s[scores={Room=8}] 709.0 20 53.0
 teleport @s[scores={Room=9}] 691.0 111 47.0
