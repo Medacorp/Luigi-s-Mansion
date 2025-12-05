@@ -85,6 +85,7 @@ v?:
 * Added "What just happed?" (tick door) to the jukebox
 * Added some rec room changes in the 3DS remake
 * Added trick door dialog
+* Added score results dialog (split off from portrificationizing) which visually shows the portraits optained, and money collected
 * Changed paintings dialog (now named portraits) to shake the new portrait furniture
 * Changed several furniture models to composite models, optimizing them, and smoothed the opening animations out
 * Changed ghost gauntlet spawn dialog (now named ghost art) to spawn all ghosts with a tag, and require an entity UUID to focus the camera on
@@ -107,6 +108,7 @@ v?:
 ** Boolossus Boos now rubberband like in the original game
 * Fixed Boos could hide in all old furniture; now the options match the original game
 * Fixed some converted furniture had the wrong can_hide_boo value
+* Fixed some invisible block mistakes
 * Fixed Garbage Can Ghosts chins were barely visible
 * Fixed Ghost Guy spears are facing the wrong way
 * Fixed ghosts appearing from furniture do not go to the furniture spawn position upon disappear, but rather the furniture position directly

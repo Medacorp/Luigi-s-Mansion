@@ -9,7 +9,7 @@ Mansion data is a massive collection of info storing everything the map needs to
         id:"normal" //The mansion ID.
     },
     can_clear_hidden:1b, //Used by the GCN hidden mansion. It is set to 0b the moment the data_index matched, but not the mansion_id.
-    area:X, //What area the player is in. This is used to unlock paths for Boos
+    area:X, //What area the player is in. This is used to unlock paths for Boos, the boneyard plant and, for 3DS remake, score results.
     in_mansion_time:X, //How many ticks have been spent in this mansion.
     lowest_health_moment:X, //The lowest anyone's health has ever been in this mansion.
     lowest_difficulty:X, //The lowest difficulty that has ever been selected in this mansion; used for score multiplier.
@@ -18,7 +18,7 @@ Mansion data is a massive collection of info storing everything the map needs to
         namespace:"luigis_mansion", //The item namespace.
         id:"null" //The item ID.
     },
-	no_collect_animation: [], //Item IDs which do not result in the collect item animation and dialog; they're not frozen during the dialog (unless 3DS Remake add-on is installed)
+	no_collect_animation:[], //Item IDs which do not result in the collect item animation and dialog; they're not frozen during the dialog (unless 3DS Remake add-on is installed)
     blackout:0b, //Whether the mansion is currently in the blackout.
     dead_players:[], //Player UUIDs that have died.
     ghosts_caught:[], //The mansion-local ghosts caught by player list, see save data documentation for more info, has additional uuid field to identify the player. Does not include boos object.
@@ -158,6 +158,12 @@ Mansion data is a massive collection of info storing everything the map needs to
             id:"boo_b_hatch" //The ID of the boo.
         }
     ],
+    last_area_portrificationized:X, //Value of "area" the last time the portrificationizer was triggered. Used to not overwrite previous area score is portrificationizing before area increases. If absent area scores are skipped.
+    previous_area_score:{ //Memory for score results
+        time:X, //Time spent up until previous area.
+        ghosts:X, //Ghosts defeated up until previous area.
+        money:X //Treasure aquired up until previous area, excluding the last 3 0s.
+    },
     gooigi_stats:{ //Gooigi's money and ghost count.
         ghosts:X, //How many ghosts Gooigi has defeated.
         money:X //How many Gs worth of money Gooigi has collected, excluding the last 3 0s.

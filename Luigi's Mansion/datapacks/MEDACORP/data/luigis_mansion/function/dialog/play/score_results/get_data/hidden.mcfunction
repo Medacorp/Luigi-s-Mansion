@@ -1,0 +1,1 @@
+function luigis_mansion:dialog/play/score_results/get_data/normal

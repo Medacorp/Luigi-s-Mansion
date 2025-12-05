@@ -1,0 +1,1 @@
+data modify storage luigis_mansion:data dialogs[0] merge value {portraits:{area:[[{namespace:"luigis_mansion",id:"neville",left:0.5d,up:-0.6d},{namespace:"luigis_mansion",id:"lydia",left:-0.7d,up:-0.8d},{namespace:"luigis_mansion",id:"spooky",left:-0.5d,up:0.6d},{namespace:"luigis_mansion",id:"miss_petunia",left:0.7d,up:-0.8d}]]},money:[{namespace:"e3_demo",id:"ghost_coin"}]}

@@ -1,8 +1,4 @@
-execute if data storage luigis_mansion:data current_state.current_data.portrait_ghosts.luigis_mansion.neville{portrificationized:0b,health:0} run tag @s add portrificationizing
-execute if data storage luigis_mansion:data current_state.current_data.portrait_ghosts.luigis_mansion.lydia{portrificationized:0b,health:0} run tag @s add portrificationizing
-execute if data storage luigis_mansion:data current_state.current_data.portrait_ghosts.luigis_mansion.miss_petunia{portrificationized:0b,health:0} run tag @s add portrificationizing
-execute if data storage luigis_mansion:data current_state.current_data.portrait_ghosts.luigis_mansion.spooky{portrificationized:0b,health:0} run tag @s add portrificationizing
-tag @s[tag=e_gadd,tag=portrificationize_dialog] remove portrificationizing
-execute if entity @s[tag=e_gadd,tag=portrificationizing] unless data storage luigis_mansion:data dialogs[{room:-3}] run data modify storage luigis_mansion:data dialogs append value {name:{namespace:"e3_demo",id:"portrificationizing"},room:-3,progress:0,caller:0,portraits:{}}
-execute if entity @s[tag=e_gadd,tag=portrificationizing] store result storage luigis_mansion:data dialogs[{room:-3}].caller int 1 run scoreboard players get @e[tag=calls_portrificationizing,limit=1] ID
-tag @s[tag=e_gadd,tag=portrificationizing] remove portrificationizing
+execute if data storage luigis_mansion:data current_state.current_data.portrait_ghosts.luigis_mansion.neville{portrificationized:0b,health:0} run scoreboard players set #temp Time 1
+execute if data storage luigis_mansion:data current_state.current_data.portrait_ghosts.luigis_mansion.lydia{portrificationized:0b,health:0} run scoreboard players set #temp Time 1
+execute if data storage luigis_mansion:data current_state.current_data.portrait_ghosts.luigis_mansion.miss_petunia{portrificationized:0b,health:0} run scoreboard players set #temp Time 1
+execute if data storage luigis_mansion:data current_state.current_data.portrait_ghosts.luigis_mansion.spooky{portrificationized:0b,health:0} run scoreboard players set #temp Time 1

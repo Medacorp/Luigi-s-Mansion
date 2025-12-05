@@ -1,0 +1,2 @@
+execute unless data storage luigis_mansion:data update_data{data_version:5} run function e3_demo:other/upgrade_path/data/v3.2
+data modify storage luigis_mansion:data update_data merge value {data_version:6,area:0,ending_dialog:{namespace:"e3_demo",id:"ending"}}

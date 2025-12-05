@@ -7,10 +7,10 @@ $execute store result score #temp2 ActionTime run data get storage luigis_mansio
 execute store result score #temp Money run data get storage luigis_mansion:data current_state.my_money_data.total
 execute store result score #temp2 Money run data get storage luigis_mansion:data current_state.money_grabbed.total
 scoreboard players operation #temp3 Money = #temp ActionTime
-$scoreboard players operation #temp3 Money *= #$(value) Constants
+scoreboard players operation #temp3 Money *= #temp5 Money
 scoreboard players operation #temp Money -= #temp3 Money
 scoreboard players operation #temp4 Money = #temp2 ActionTime
-$scoreboard players operation #temp4 Money *= #$(value) Constants
+scoreboard players operation #temp4 Money *= #temp5 Money
 scoreboard players operation #temp2 Money -= #temp4 Money
 scoreboard players operation #temp2 ActionTime -= #temp ActionTime
 scoreboard players operation #temp2 Money -= #temp Money
