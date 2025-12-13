@@ -36,6 +36,8 @@ scoreboard objectives add ForceScreen dummy
 scoreboard objectives add FurnitureContentForward dummy
 scoreboard objectives add FurnitureContentLeft dummy
 scoreboard objectives add FurnitureContentUp dummy
+scoreboard objectives add FurnitureCurtainOpen dummy
+scoreboard objectives add FurnitureCurtainSize dummy
 scoreboard objectives add FurnitureDust dummy
 scoreboard objectives add FurnitureDustForward dummy
 scoreboard objectives add FurnitureDustLeft dummy

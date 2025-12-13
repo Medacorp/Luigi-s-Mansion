@@ -7,6 +7,7 @@ execute unless data storage luigis_mansion:data current_state.current_data{data_
 execute unless data storage luigis_mansion:data current_state.current_data{data_index:0} if data storage luigis_mansion:data current_state.mansion_data[{data_index:0}] run function luigis_mansion:room/load_mansion_data {index:0}
 execute unless data storage luigis_mansion:data current_state.current_data{data_index:0} run function luigis_mansion:room/hidden/default_data
 execute if score #temp Time matches 1 run data modify storage luigis_mansion:data current_state.current_data.can_clear_hidden set value 0b
+execute if data storage luigis_mansion:data current_state.current_data{data_index:0,area:-1} run function luigis_mansion:room/hidden/default_data
 scoreboard players reset #temp Time
 function #luigis_mansion:room/reset_variable_to_default
 scoreboard players set #mirrored Selected 1

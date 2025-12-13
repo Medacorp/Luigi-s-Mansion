@@ -1,0 +1,3 @@
+execute if data storage luigis_mansion:data furniture.curtain{wind:1b} run tag @e[tag=this_entity,limit=1] add blown_by_wind
+execute if data storage luigis_mansion:data furniture.curtain.open store result score @e[tag=this_entity,limit=1] FurnitureCurtainOpen run data get storage luigis_mansion:data furniture.curtain.open
+execute as @e[tag=this_entity,limit=1] run scoreboard players operation @s FurnitureCurtainSize = @s FurnitureSizeLeft

@@ -1,0 +1,54 @@
+scoreboard players operation #temp2 PositionX = @s PositionX
+scoreboard players operation #temp2 PositionY = @s PositionY
+scoreboard players operation #temp2 EntityYOffset = @s EntityYOffset
+scoreboard players operation #temp2 EntityYOffset /= #2 Constants
+scoreboard players operation #temp2 PositionY -= #temp2 EntityYOffset
+scoreboard players reset #temp2 EntityYOffset
+scoreboard players operation #temp2 PositionZ = @s PositionZ
+
+scoreboard players operation #temp2 PositionX -= #temp PositionX
+scoreboard players operation #temp2 PositionY -= #temp PositionY
+scoreboard players operation #temp2 PositionZ -= #temp PositionZ
+scoreboard players operation #temp2 PositionX *= #-1 Constants
+scoreboard players operation #temp2 PositionY *= #-1 Constants
+scoreboard players operation #temp2 PositionZ *= #-1 Constants
+
+#-Left = Cos(jaw)PositionX + Sin(jaw)Cos(pitch)PositionZ - Sin(jaw)*-Sin(pitch)PositionY
+scoreboard players operation #temp FurnitureSizeLeft = #cosy Time
+scoreboard players operation #temp FurnitureSizeLeft *= #temp2 PositionX
+scoreboard players operation #temp FurnitureSizeLeft /= #10 Constants
+scoreboard players operation #temp2 FurnitureSizeLeft = #siny Time
+scoreboard players operation #temp2 FurnitureSizeLeft *= #cosx Time
+scoreboard players operation #temp2 FurnitureSizeLeft /= #10 Constants
+scoreboard players operation #temp2 FurnitureSizeLeft *= #temp2 PositionZ
+scoreboard players operation #temp2 FurnitureSizeLeft /= #10 Constants
+scoreboard players operation #temp FurnitureSizeLeft += #temp2 FurnitureSizeLeft
+scoreboard players reset #temp2 FurnitureSizeLeft
+scoreboard players operation #temp2 FurnitureSizeLeft -= #sinx Time
+scoreboard players operation #temp2 FurnitureSizeLeft *= #siny Time
+scoreboard players operation #temp2 FurnitureSizeLeft /= #10 Constants
+scoreboard players operation #temp2 FurnitureSizeLeft *= #temp2 PositionY
+scoreboard players operation #temp2 FurnitureSizeLeft /= #10 Constants
+scoreboard players operation #temp FurnitureSizeLeft -= #temp2 FurnitureSizeLeft
+scoreboard players reset #temp2 FurnitureSizeLeft
+#Forward = Cos(jaw)Cos(pitch)PositionZ - Sin(jaw)PositionX + Cos(jaw)Sin(pitch)PositionY
+scoreboard players operation #temp FurnitureSizeForward = #cosy Time
+scoreboard players operation #temp FurnitureSizeForward *= #cosx Time
+scoreboard players operation #temp FurnitureSizeForward /= #10 Constants
+scoreboard players operation #temp FurnitureSizeForward *= #temp2 PositionZ
+scoreboard players operation #temp FurnitureSizeForward /= #10 Constants
+scoreboard players operation #temp2 FurnitureSizeForward = #siny Time
+scoreboard players operation #temp2 FurnitureSizeForward *= #temp2 PositionX
+scoreboard players operation #temp2 FurnitureSizeForward /= #10 Constants
+scoreboard players operation #temp FurnitureSizeForward -= #temp2 FurnitureSizeForward
+scoreboard players reset #temp2 FurnitureSizeForward
+scoreboard players operation #temp2 FurnitureSizeForward -= #cosy Time
+scoreboard players operation #temp2 FurnitureSizeForward *= #sinx Time
+scoreboard players operation #temp2 FurnitureSizeForward /= #10 Constants
+scoreboard players operation #temp2 FurnitureSizeForward *= #temp2 PositionY
+scoreboard players operation #temp2 FurnitureSizeForward /= #10 Constants
+scoreboard players operation #temp FurnitureSizeForward += #temp2 FurnitureSizeForward
+scoreboard players reset #temp2 FurnitureSizeForward
+
+execute if score #temp2 FurnitureSizeLeft matches 5.. run tag @s add move_right
+execute if score #temp2 FurnitureSizeLeft matches ..-5 run tag @s add move_left

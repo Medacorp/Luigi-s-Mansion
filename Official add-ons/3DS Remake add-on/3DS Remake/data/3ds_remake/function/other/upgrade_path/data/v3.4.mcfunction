@@ -1,5 +1,5 @@
 execute unless data storage luigis_mansion:data update_data{data_version:8} run function 3ds_remake:other/upgrade_path/data/v3.3
-data modify storage luigis_mansion:data update_data merge value {data_version:9,area:1,ending_dialog:{namespace:"luigis_mansion",id:"mario_to_normal"}}
+data modify storage luigis_mansion:data update_data merge value {data_version:9,area:1,max_boo_counter:50,ending_dialog:{namespace:"luigis_mansion",id:"mario_to_normal"}}
 execute if data storage luigis_mansion:data update_data{obtained_keys:["hallway_3"]} run data modify storage luigis_mansion:data update_data.area set value 2
 execute if data storage luigis_mansion:data update_data{obtained_keys:["courtyard"]} run data modify storage luigis_mansion:data update_data.area set value 3
 execute if data storage luigis_mansion:data update_data{obtained_keys:["hallway_18"]} run data modify storage luigis_mansion:data update_data.area set value 4

@@ -1,9 +1,10 @@
 v?:
-* Updated to 1.21.9/1.21.10
+* Updated to 1.21.9-1.21.11
 * Added GBH map models (not in use yet)
 * Added cloth, ghost art and poster furniture types
-** Ghost art is the same as generic, but only opens when in a lit room, or when a ghost is hiding in it; cannot be searched (aside from revealing hidden Boos) before it is open
 ** Cloth type implemented, cloths get attached to the vacuumer's poltergust, and are slowly dragged off their object; they prevent revealing Boos when searching the furniture below (not in use yet)
+** Curtain furniture can be pulled in one direction to open, or the other to close
+** Ghost art is the same as generic, but only opens when in a lit room, or when a ghost is hiding in it; cannot be searched (aside from revealing hidden Boos) before it is open
 ** Poster furniture changed to actual furniture; they also visually get attached to the vacuumer's poltergust
 * Added furniture models for: 
   (Do note that the original game has some furniture baked into the room geometry, especially the fourth wall.
@@ -14,6 +15,7 @@ v?:
 ** Campfires
 ** Camping Burners
 ** Concrete bricks
+** Curtains
 ** Dresser mounted golden lamps
 ** Easels
 *** Blue Twirler
@@ -86,6 +88,7 @@ v?:
 * Added some rec room changes in the 3DS remake
 * Added trick door dialog
 * Added score results dialog (split off from portrificationizing) which visually shows the portraits optained, and money collected
+* Added mansion progress to the dialog choices when the 3DS Remake add-on is installed
 * Changed paintings dialog (now named portraits) to shake the new portrait furniture
 * Changed several furniture models to composite models, optimizing them, and smoothed the opening animations out
 * Changed ghost gauntlet spawn dialog (now named ghost art) to spawn all ghosts with a tag, and require an entity UUID to focus the camera on

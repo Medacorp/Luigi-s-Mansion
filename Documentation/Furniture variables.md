@@ -80,9 +80,13 @@ furniture:{
     },
     mirror_reflection:1b, //Whether the mirror will actually reflect the room, otherwise gets a solid glass texture. Valid for mirrors only. Default = 1b. Forced to 0b if the yaw rotation is not a multiple of 90, or pose pitch has a non-0 value.
     boo_poster:1b, //Whether or not this is a Boo poster and cannot be vacuumed up. Default = 0b.
+    curtain:{ //Fields exclusive to curtains
+        wind:Xb, //Whether this curtain flows in wind. Default = 0b.
+        open:X //The width this curtain must get before it rolls open and stays open, where 1 block = 10. The minimum width of a curtain is 15. If not set can always be closed.
+    },
     no_spawn_sound:1b, //Whether the unsearched room clear chest's spawn sound/cutscene is disabled, searched room clear chests always have it disabled, regardless of this value. Valid for room clear chests only. Can be set to 2b to disable the cutscene only. Default = 0b.
-    hitbox:{ //The size of the hitbox, only applies to and required for scan areas, cloths and posters.
-        type:"standing", //How the hitbox is aligned to the spawn position, "standing" is bottom aligned, "hanging" is top aligned. Default = centered. Cloth is always hanging.
+    hitbox:{ //The size of the hitbox, only applies to and required for cloths, curtains, posters and scan areas.
+        type:"standing", //How the hitbox is aligned to the spawn position, "standing" is bottom aligned, "hanging" is top aligned. Default = centered. Cloth and curtains are always hanging.
         radius:X, //Scan area only. A ball hitbox, value is the radius in tenths of a block.
         box:{ //Scan area only. A box shaped hitbox.
             height:X, //The height in tenths of a block.
