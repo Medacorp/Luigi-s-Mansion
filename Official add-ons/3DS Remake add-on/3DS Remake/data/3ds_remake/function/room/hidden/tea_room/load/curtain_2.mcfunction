@@ -1,0 +1,2 @@
+data modify storage luigis_mansion:data furniture set value {room:34,searchable:["vacuum"],hitbox:{rotated_box:{left:40,up:30,forward:2}}}
+execute positioned 639.1 25 61.0 rotated -90 0 run function luigis_mansion:spawn_furniture/curtain/red/right

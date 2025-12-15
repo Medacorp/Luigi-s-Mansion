@@ -1,5 +1,5 @@
 scoreboard players add @s[tag=!revert_wave] ActionTime 1
-scoreboard players add @s[tag=revert_wave] ActionTime 1
+scoreboard players remove @s[tag=revert_wave] ActionTime 1
 
 execute in minecraft:overworld run summon minecraft:marker 0.0 0.0 0.0 {Tags:["temp","remove_from_existence"]}
 data modify entity @e[tag=temp,limit=1] Rotation[0] set from entity @s Rotation[1]
@@ -40,10 +40,11 @@ scoreboard players operation #temp5 PositionZ -= #temp3 PositionZ
 tag @s add me
 $execute positioned ^$(offset) ^ ^ as @e[tag=vacuuming_me,sort=nearest,limit=1] run function luigis_mansion:entities/furniture/type/curtain/target
 tag @s remove me
-execute if entity @s[tag=!open,tag=move_left,tag=!right] unless score @s FurnitureSizeLeft = @s FurnitureCurtainSize run function luigis_mansion:entities/furniture/type/curtain/close
-execute if entity @s[tag=!open,tag=move_right,tag=right] unless score @s FurnitureSizeLeft = @s FurnitureCurtainSize run function luigis_mansion:entities/furniture/type/curtain/close
-execute if entity @s[tag=!open,tag=move_right,tag=!right] unless score @s FurnitureSizeLeft matches 15 run function luigis_mansion:entities/furniture/type/curtain/open
-execute if entity @s[tag=!open,tag=move_left,tag=right] unless score @s FurnitureSizeLeft matches 15 run function luigis_mansion:entities/furniture/type/curtain/open
+
+execute if entity @s[tag=!open,tag=left] if score #temp FurnitureSizeLeft matches ..-5 unless score @s FurnitureSizeLeft = @s FurnitureCurtainSize run function luigis_mansion:entities/furniture/type/curtain/close
+execute if entity @s[tag=!open,tag=!left] if score #temp FurnitureSizeLeft matches 5.. unless score @s FurnitureSizeLeft = @s FurnitureCurtainSize run function luigis_mansion:entities/furniture/type/curtain/close
+execute if entity @s[tag=!open,tag=left] if score #temp FurnitureSizeLeft matches 5.. unless score @s FurnitureSizeLeft matches 15 run function luigis_mansion:entities/furniture/type/curtain/open
+execute if entity @s[tag=!open,tag=!left] if score #temp FurnitureSizeLeft matches ..-5 unless score @s FurnitureSizeLeft matches 15 run function luigis_mansion:entities/furniture/type/curtain/open
 
 scoreboard players add @s FurnitureVacuum 1
 scoreboard players set @s[scores={FurnitureVacuum=5..}] FurnitureVacuum -5

@@ -1,2 +1,2 @@
-data modify storage luigis_mansion:data furniture set value {room:8,searchable:["interact","vacuum"],shake_animation:["interact","vacuum"],sound:{namespace:"luigis_mansion",id:"generic"},scan_result:{namespace:"luigis_mansion",id:"scan/scanner/7"}}
+data modify storage luigis_mansion:data furniture set value {room:6,searchable:["interact","vacuum"],shake_animation:["interact","vacuum"],sound:{namespace:"luigis_mansion",id:"generic"},scan_result:{namespace:"luigis_mansion",id:"scan/scanner/7"}}
 execute positioned 693 114.5 39.07 rotated 0 0 run function luigis_mansion:spawn_furniture/lydia_portrait/small

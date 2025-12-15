@@ -1,0 +1,2 @@
+data modify storage luigis_mansion:data furniture set value {room:43,searchable:["vacuum"],hitbox:{rotated_box:{left:70,up:50,forward:2}},curtain:{open:40},tags:["miss_petunia_curtain"]}
+execute positioned 654 25 24 rotated -90 0 run function luigis_mansion:spawn_furniture/curtain/shower/left

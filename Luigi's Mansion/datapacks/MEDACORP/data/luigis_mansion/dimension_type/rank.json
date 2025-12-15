@@ -1,21 +1,23 @@
 {
-	"ultrawarm": false,
-	"natural": false,
+	"attributes": {
+        "minecraft:visual/sun_angle": 0,
+        "minecraft:visual/moon_angle": 180,
+        "minecraft:visual/moon_phase": "full_moon",
+        "minecraft:visual/cloud_color": "#ccffffff",
+        "minecraft:visual/cloud_height": 192.33,
+        "minecraft:visual/fog_color": 10213375,
+        "minecraft:visual/sky_color": 8434175
+    },
 	"has_skylight": true,
 	"has_ceiling": false,
 	"ambient_light": 0.005,
-	"fixed_time": 6000,
-	"piglin_safe": true,
-	"bed_works": false,
-    "cloud_height": 192,
-	"respawn_anchor_works": false,
-	"has_raids": false,
 	"logical_height": 256,
 	"min_y": 0,
     "#torevert": "Mojang fixing the crash, change back to 256",
 	"height": 384,
 	"coordinate_scale": 1.0,
 	"infiniburn": "#minecraft:infiniburn_overworld",
+	"timelines": "#luigis_mansion:universal",
     "monster_spawn_light_level": 0,
     "monster_spawn_block_light_limit": 0
 }

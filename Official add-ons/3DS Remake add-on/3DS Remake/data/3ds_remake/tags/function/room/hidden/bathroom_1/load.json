@@ -2,6 +2,7 @@
     "values": [
         "3ds_remake:room/hidden/bathroom_1/load/set_loaded",
         "3ds_remake:room/hidden/bathroom_1/load/lights",
+        "3ds_remake:room/hidden/bathroom_1/load/curtain",
         "3ds_remake:room/hidden/bathroom_1/load/dripping_water",
         "3ds_remake:room/hidden/bathroom_1/load/hallway_6_door",
         "3ds_remake:room/hidden/bathroom_1/load/room_clear_loot_dropper"

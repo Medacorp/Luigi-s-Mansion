@@ -1,2 +1,2 @@
-data modify storage luigis_mansion:data furniture set value {room:28,particles:"dripping_water",shake_animation:["interact","vacuum"],sound:{namespace:"luigis_mansion",id:"metal"},scan_result:{namespace:"luigis_mansion",id:"scan/scanner/92"}}
+data modify storage luigis_mansion:data furniture set value {room:16,particles:"dripping_water",shake_animation:["interact","vacuum"],sound:{namespace:"luigis_mansion",id:"metal"},scan_result:{namespace:"luigis_mansion",id:"scan/scanner/92"}}
 execute positioned 681 102 39 rotated -10 0 run function luigis_mansion:spawn_furniture/water_tap

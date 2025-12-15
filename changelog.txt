@@ -81,6 +81,7 @@ v?:
 *** Trumpet
 *** Western
 ** Table mounted bust with portraits
+** Void
 ** Water taps
 ** Wooden stool mounted tools
 * Optimized some furniture types to skip ticking if left alone

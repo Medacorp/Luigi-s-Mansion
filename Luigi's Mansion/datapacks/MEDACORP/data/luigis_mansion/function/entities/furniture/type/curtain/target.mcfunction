@@ -49,6 +49,3 @@ scoreboard players operation #temp2 FurnitureSizeForward *= #temp2 PositionY
 scoreboard players operation #temp2 FurnitureSizeForward /= #10 Constants
 scoreboard players operation #temp FurnitureSizeForward += #temp2 FurnitureSizeForward
 scoreboard players reset #temp2 FurnitureSizeForward
-
-execute if score #temp2 FurnitureSizeLeft matches 5.. run tag @s add move_right
-execute if score #temp2 FurnitureSizeLeft matches ..-5 run tag @s add move_left

@@ -1,0 +1,1 @@
+{"format_version":"1.21.11","textures":{"0":"luigis_mansion:furniture/door_frame/box","particle":"luigis_mansion:furniture/door_frame/box"},"elements":[{"from":[0,0,8],"to":[16,16,8],"faces":{"north":{"uv":[0,0,16,16],"texture":"#0"}}}]}

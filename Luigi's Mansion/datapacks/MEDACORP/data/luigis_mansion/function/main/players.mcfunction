@@ -84,6 +84,7 @@ scoreboard players reset @s LightZ
 tag @s remove was_in_dialog
 tag @s[tag=in_dialog] add was_in_dialog
 tag @s remove in_dialog
+tag @s remove wall_warp_teleported
 
 tag @s add me
 execute as @a[distance=..0.4,tag=!me,tag=!spectator,tag=!door_animation,limit=1] run function luigis_mansion:entities/player/collide

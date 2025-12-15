@@ -1,0 +1,2 @@
+data modify storage luigis_mansion:data furniture set value {room:6,hitbox:{rotated_box:{left:50,up:20,forward:0}}}
+execute positioned 682.9 114 50 rotated 90 0 run function luigis_mansion:spawn_furniture/void

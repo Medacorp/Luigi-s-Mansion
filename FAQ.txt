@@ -1,3 +1,6 @@
+Q. Why does the game lag so much in rooms with mirrors
+A. Mirrors are quite resource intensive; you can disable them in the settings in the game boy horror. Do note that mirror ghosts will not compensate for turning them off.
+
 Q. Is the map multiplayer compatible?
 A. Absolutely! The map even provides different translation strings based on player count so languages can properly pluralize them.
 There is, however, an issue with rapid teleportation causing desyncs, see next question.
@@ -15,7 +18,7 @@ A. Those will be converted eventually, but it takes time to model all those. The
    1. It was already modeled before, just not a furniture entity
    2. It was a container before conversion
    3. It has candle flames or incense flames
-   4. It is a poster or portrait
+   4. It is a poster, portrait or curtain
    5. A very similar piece of furniture was converted, and it was not much work to make the model for this as well.
 
 Q. How do I scan furniture?

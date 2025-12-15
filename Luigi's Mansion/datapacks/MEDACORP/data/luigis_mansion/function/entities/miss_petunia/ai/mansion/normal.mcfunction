@@ -1,5 +1,5 @@
 scoreboard players add @s[scores={Dialog=2..60}] Dialog 1
-execute positioned ~3 ~ ~ if block ^ ^ ^2 minecraft:air run scoreboard players add @s[scores={Dialog=1}] Dialog 1
+execute if entity @e[tag=miss_petunia_curtain,tag=open,limit=1] run scoreboard players add @s[scores={Dialog=1}] Dialog 1
 execute unless entity @s[scores={Dialog=1..}] run scoreboard players add @s Dialog 1
 
 tag @s[scores={Dialog=1..2}] remove visible
@@ -25,6 +25,3 @@ execute unless entity @s[scores={Dialog=20..59}] run data remove entity @s[score
 
 execute if entity @s[scores={VulnerableTime=0,Sound=0}] unless entity @s[scores={Dialog=20..59}] run playsound luigis_mansion:entity.miss_petunia.ambient hostile @a[tag=same_room] ~ ~ ~ 1
 execute unless entity @s[scores={Dialog=20..59}] run scoreboard players set @s[scores={VulnerableTime=0,Sound=0}] Sound 40
-
-execute if entity @s[scores={VulnerableTime=0}] run tag @e[tag=same_room,limit=1,nbt={data:{entity:{namespace:"luigis_mansion",id:"showering_shadow"}}}] remove invisible
-execute if entity @s[scores={VulnerableTime=1..}] run tag @e[tag=same_room,limit=1,nbt={data:{entity:{namespace:"luigis_mansion",id:"showering_shadow"}}}] add invisible

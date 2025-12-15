@@ -1,2 +1,2 @@
 execute unless score @s FurnitureSizeLeft = @s FurnitureCurtainSize run function luigis_mansion:entities/furniture/type/curtain/close
-execute unless score @s FurnitureSizeLeft = @s FurnitureCurtainSize run function luigis_mansion:entities/furniture/type/curtain/non_ticking
+execute unless score @s FurnitureSizeLeft = @s FurnitureCurtainSize at @s run function luigis_mansion:entities/furniture/type/curtain/non_ticking
