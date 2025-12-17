@@ -1,5 +1,5 @@
-summon minecraft:armor_stand ~ ~-1.4 ~ {CustomName:{type:"translatable",translate:"luigis_mansion:furniture.marios_portrait"},Tags:["furniture","immobile","marios_portrait","this_entity"],NoGravity:1b,Marker:1b,data:{entity:{namespace:"luigis_mansion",id:"furniture"},furniture_type:"generic"},equipment:{head:{id:"minecraft:diamond_pickaxe",count:1,components:{"minecraft:item_model":"luigis_mansion:furniture/marios_portrait","minecraft:custom_model_data":{flags:[0b,0b]}}}},Invisible:1b,DisabledSlots:2039583}
-teleport @e[tag=this_entity,limit=1] ~ ~-1.4 ~ ~ 0
+summon minecraft:armor_stand ~ ~-1.43875 ~ {CustomName:{type:"translatable",translate:"luigis_mansion:furniture.marios_portrait"},Tags:["furniture","immobile","marios_portrait","this_entity"],NoGravity:1b,Marker:1b,data:{entity:{namespace:"luigis_mansion",id:"furniture"},furniture_type:"generic"},equipment:{head:{id:"minecraft:diamond_pickaxe",count:1,components:{"minecraft:item_model":"luigis_mansion:furniture/marios_portrait","minecraft:custom_model_data":{flags:[0b,0b]}}}},Invisible:1b,DisabledSlots:2039583}
+teleport @e[tag=this_entity,limit=1] ~ ~-1.43875 ~ ~ 0
 scoreboard players set @e[tag=this_entity,limit=1] FurnitureSizeLeft 16
 scoreboard players set @e[tag=this_entity,limit=1] FurnitureSizeUp 22
 scoreboard players set @e[tag=this_entity,limit=1] FurnitureSizeForward 2

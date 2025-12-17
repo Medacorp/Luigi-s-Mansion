@@ -4,7 +4,7 @@ scoreboard players reset #temp ID
 scoreboard players set @s FurnitureSpins 0
 tag @s add open
 tag @s[tag=light_on_search] add lit
-summon minecraft:marker ~ ~1.4 ~ {Tags:["location","remove_from_existence"]}
+summon minecraft:marker ~ ~1.43875 ~ {Tags:["location","remove_from_existence"]}
 execute store result entity @e[tag=location,limit=1] Pos[1] double 0.1 run scoreboard players get @s PositionY
 execute if data entity @s data.loot_chance run function luigis_mansion:entities/furniture/loot_chance with entity @s data.loot_chance
 execute at @e[tag=location] unless entity @e[distance=..0.1,tag=hidden_boo,tag=caught_by_boo_radar,limit=1] at @s rotated ~ 0 unless entity @s[nbt={data:{loot:{}}}] if entity @s[tag=!no_dust] run function luigis_mansion:entities/furniture/spawn/dust

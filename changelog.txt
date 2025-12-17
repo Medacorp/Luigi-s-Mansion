@@ -90,6 +90,7 @@ v?:
 * Added trick door dialog
 * Added score results dialog (split off from portrificationizing) which visually shows the portraits optained, and money collected
 * Added mansion progress to the dialog choices when the 3DS Remake add-on is installed
+* Changed ghosts that have a movement speed of 0 to change target task to "do nothing"
 * Changed paintings dialog (now named portraits) to shake the new portrait furniture
 * Changed several furniture models to composite models, optimizing them, and smoothed the opening animations out
 * Changed ghost gauntlet spawn dialog (now named ghost art) to spawn all ghosts with a tag, and require an entity UUID to focus the camera on
@@ -113,7 +114,13 @@ v?:
 * Fixed Boos could hide in all old furniture; now the options match the original game
 * Fixed some converted furniture had the wrong can_hide_boo value
 * Fixed some invisible block mistakes
+* Fixed Z-fighting on E. Gadd
 * Fixed Garbage Can Ghosts chins were barely visible
+* Fixed rocking chairs didn't start rocking if a ghost entered it until interacted with
+* Fixed rocking horse furniture takes a long time to stop rocking
+* Fixed rocking horse furniture makes shaking sounds while rocking
+* Fixed Chauncey's waking animations didn't bop up/down properly
+* Fixed Chauncey's waking up animation start timings were swapped
 * Fixed Ghost Guy spears are facing the wrong way
 * Fixed ghosts appearing from furniture do not go to the furniture spawn position upon disappear, but rather the furniture position directly
 * Fixed ceiling ghosts appearing from furniture spawn too low
@@ -121,8 +128,10 @@ v?:
 * Fixed a few gameboy horror scan mistakes
 * Fixed master bedroom nightstand lamp had no interactions
 * Fixed cellar dust not getting removed upon room reset
+* Fixed furniture rotation points are slightly off
 * Fixed missing teddy bears in E3 Demo child's room upon entering when lit
 * Fixed missing mice in E3 Demo kitchen
+* Fixed bad add-on installs now actually get reported to players
 * Removed item frame reflections (they broke recently, but item frames are no longer used in rooms with mirrors)
 
 v3.3.2:

@@ -24,7 +24,7 @@ execute if entity @s[tag=open,tag=full_search] run function luigis_mansion:entit
 
 execute if entity @s[tag=!open,tag=!dead,tag=!remove_from_existence] run function luigis_mansion:room/dark_room
 tag @s[tag=!dark_room] add open
-execute if entity @s[tag=!open] run summon minecraft:marker ~ ~1.4 ~ {Tags:["location","remove_from_existence"]}
+execute if entity @s[tag=!open] run summon minecraft:marker ~ ~1.43875 ~ {Tags:["location","remove_from_existence"]}
 execute if entity @s[tag=!open] store result entity @e[tag=location,limit=1] Pos[1] double 0.1 run scoreboard players get @s PositionY
 execute if entity @s[tag=!open] at @e[tag=location] if entity @e[distance=..0.1,tag=ghost,tag=hiding_in_furniture,limit=1] run tag @s add open
 kill @e[tag=location]

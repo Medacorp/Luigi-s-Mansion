@@ -31,7 +31,7 @@ kill @s[scores={ActionTime=133}]
 tag @s remove dead
 tag @s remove remove_from_existence
 
-summon minecraft:marker ~ ~1.4 ~ {Tags:["location","remove_from_existence"]}
+summon minecraft:marker ~ ~1.43875 ~ {Tags:["location","remove_from_existence"]}
 scoreboard players operation #temp Time = @s FurnitureLightLeft
 scoreboard players operation #temp2 Time = @s FurnitureLightUp
 scoreboard players operation #temp3 Time = @s FurnitureLightForward

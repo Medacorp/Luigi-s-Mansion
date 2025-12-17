@@ -1,1 +1,1 @@
-{"parent":"luigis_mansion:furniture/nightstand/mounted_green_lamp/off","textures":{"green_lamp_1":"luigis_mansion:furniture/green_lamp/on_1","green_lamp_2":"luigis_mansion:furniture/green_lamp/on_2"}}
+{"parent":"luigis_mansion:furniture/green_lamp/on","display":{"head":{"translation":[0,40,0],"scale":[1.6,1.6,1.6]}}}

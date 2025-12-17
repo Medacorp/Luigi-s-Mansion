@@ -4,6 +4,7 @@ function #luigis_mansion:anti_cheating/scores
 scoreboard players reset * Loaded
 scoreboard players set #training_choice Selected 0
 scoreboard players set #extra_gallery Selected 0
+data modify storage luigis_mansion:data bad_add_ons set value []
 function #luigis_mansion:loaded_add_ons
 function #luigis_mansion:post_loaded_add_ons
 

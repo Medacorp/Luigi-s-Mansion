@@ -1,5 +1,5 @@
-summon minecraft:armor_stand ~ ~-1.4 ~ {CustomName:{type:"translatable",translate:"luigis_mansion:furniture.punching_bag"},Tags:["furniture","immobile","swinging_harms","hanging_furniture","this_entity"],data:{entity:{namespace:"luigis_mansion",id:"furniture"},furniture_type:"swinging"},equipment:{head:{id:"minecraft:diamond_pickaxe",count:1,components:{"minecraft:item_model":"luigis_mansion:furniture/punching_bag"}}},NoGravity:1b,Marker:1b,Invisible:1b,DisabledSlots:2039583}
-teleport @e[tag=this_entity,limit=1] ~ ~-1.4 ~ ~ 0
+summon minecraft:armor_stand ~ ~-1.43875 ~ {CustomName:{type:"translatable",translate:"luigis_mansion:furniture.punching_bag"},Tags:["furniture","immobile","swinging_harms","hanging_furniture","this_entity"],data:{entity:{namespace:"luigis_mansion",id:"furniture"},furniture_type:"swinging"},equipment:{head:{id:"minecraft:diamond_pickaxe",count:1,components:{"minecraft:item_model":"luigis_mansion:furniture/punching_bag"}}},NoGravity:1b,Marker:1b,Invisible:1b,DisabledSlots:2039583}
+teleport @e[tag=this_entity,limit=1] ~ ~-1.43875 ~ ~ 0
 scoreboard players set @e[tag=this_entity,limit=1] FurnitureSizeWidth 10
 scoreboard players set @e[tag=this_entity,limit=1] FurnitureSizeHeight 60
 scoreboard players set @e[tag=this_entity,limit=1] FurnitureXOrigin 0

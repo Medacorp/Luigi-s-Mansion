@@ -64,6 +64,7 @@ execute if entity @s[tag=show_credits] run function luigis_mansion:credits
 execute at @s[gamemode=!spectator] run function luigis_mansion:entities/player/not_spectator
 execute at @s[gamemode=spectator] run function luigis_mansion:entities/player/spectator
 
+execute if data storage luigis_mansion:data bad_add_ons[0] run tellraw @s[tag=warn_for_add_ons] {type:"translatable",translate:"luigis_mansion:message.debug.format",with:[{type:"translatable",translate:"luigis_mansion:message.debug",color:"gold"},{type:"translatable",translate:"luigis_mansion:message.debug.bad_add_on_install",color:"red",with:[{source:"storage",storage:"luigis_mansion:data",type:"nbt",nbt:"bad_add_ons[]",interpret:true,separator:{type:"text",text:", ",hover_event:{action:"show_text",value:""}}}]}]}
 tag @s remove warn_for_add_ons
 execute unless entity @s[scores={Offline=0}] run function luigis_mansion:other/log_on
 execute if entity @s[scores={ChangedMansion=1}] run function luigis_mansion:entities/player/changed_mansion

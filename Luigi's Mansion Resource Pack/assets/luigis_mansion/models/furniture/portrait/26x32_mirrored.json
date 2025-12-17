@@ -1,1 +1,1 @@
-{"textures":{"particle":"#image"},"elements":[{"from":[-5,-5,8],"to":[21,27,8],"faces":{"north":{"uv":[14.5,0,1.5,16],"texture":"#image"}}}],"display":{"head":{"translation":[0,-12.75,0],"scale":[1.6,1.6,1.6]}}}
+{"textures":{"particle":"#image"},"elements":[{"from":[-5,-5,8],"to":[21,27,8],"faces":{"north":{"uv":[14.5,0,1.5,16],"texture":"#image"}}}],"display":{"head":{"translation":[0,-11.2,0],"scale":[1.6,1.6,1.6]}}}

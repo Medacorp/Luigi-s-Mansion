@@ -1,5 +1,5 @@
-summon minecraft:marker ~ ~1.4 ~ {Tags:["collision_check","z","remove_from_existence"]}
-teleport @e[tag=collision_check,tag=z,limit=1] ~ ~1.4 ~ ~ ~
+summon minecraft:marker ~ ~1.43875 ~ {Tags:["collision_check","z","remove_from_existence"]}
+teleport @e[tag=collision_check,tag=z,limit=1] ~ ~1.43875 ~ ~ ~
 execute if entity @s[scores={FurnitureSizeHeight=1..}] run scoreboard players operation #forward Steps = @s FurnitureSizeHeight
 execute if entity @s[scores={FurnitureSizeUp=1..}] run scoreboard players operation #forward Steps = @s FurnitureSizeUp
 execute if entity @s[scores={FurnitureSizeRadius=1..}] run scoreboard players operation #forward Steps = @s FurnitureSizeRadius

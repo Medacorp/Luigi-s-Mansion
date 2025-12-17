@@ -1,4 +1,4 @@
-execute at @s positioned ~ ~1.4 ~ facing entity @e[tag=searcher,limit=1] feet rotated ~ 0 run teleport @e[tag=interact,limit=1] ^ ^-1 ^1
+execute at @s positioned ~ ~1.43875 ~ facing entity @e[tag=searcher,limit=1] feet rotated ~ 0 run teleport @e[tag=interact,limit=1] ^ ^-1 ^1
 execute store result score #interact PositionX run data get entity @e[tag=interact,limit=1] Pos[0] 10
 execute store result score #interact PositionY run data get entity @e[tag=interact,limit=1] Pos[1] 10
 execute store result score #interact PositionZ run data get entity @e[tag=interact,limit=1] Pos[2] 10

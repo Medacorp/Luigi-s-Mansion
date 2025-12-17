@@ -1,5 +1,5 @@
-summon minecraft:armor_stand ~ ~-1.4 ~ {CustomName:{type:"translatable",translate:"luigis_mansion:furniture.legged_sink"},Tags:["furniture","immobile","standing_furniture","this_entity"],NoGravity:1b,Marker:1b,data:{entity:{namespace:"luigis_mansion",id:"furniture"},furniture_type:"generic"},equipment:{head:{id:"minecraft:diamond_pickaxe",count:1,components:{"minecraft:item_model":"luigis_mansion:furniture/legged_sink"}}},Invisible:1b,DisabledSlots:2039583}
-teleport @e[tag=this_entity,limit=1] ~ ~-1.4 ~ ~ 0
+summon minecraft:armor_stand ~ ~-1.43875 ~ {CustomName:{type:"translatable",translate:"luigis_mansion:furniture.legged_sink"},Tags:["furniture","immobile","standing_furniture","this_entity"],NoGravity:1b,Marker:1b,data:{entity:{namespace:"luigis_mansion",id:"furniture"},furniture_type:"generic"},equipment:{head:{id:"minecraft:diamond_pickaxe",count:1,components:{"minecraft:item_model":"luigis_mansion:furniture/legged_sink"}}},Invisible:1b,DisabledSlots:2039583}
+teleport @e[tag=this_entity,limit=1] ~ ~-1.43875 ~ ~ 0
 scoreboard players set @e[tag=this_entity,limit=1] FurnitureSizeLeft 26
 scoreboard players set @e[tag=this_entity,limit=1] FurnitureSizeUp 15
 scoreboard players set @e[tag=this_entity,limit=1] FurnitureSizeForward 12

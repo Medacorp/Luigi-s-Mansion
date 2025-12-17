@@ -1,5 +1,5 @@
-summon minecraft:armor_stand ~ ~-1.4 ~ {CustomName:{type:"translatable",translate:"3ds_remake:furniture.trophy"},Tags:["furniture","immobile","standing_furniture","this_entity"],NoGravity:1b,Marker:1b,data:{entity:{namespace:"luigis_mansion",id:"furniture"},furniture_type:"generic"},equipment:{head:{id:"minecraft:diamond_pickaxe",count:1,components:{"minecraft:item_model":"3ds_remake:furniture/trophy","minecraft:custom_model_data":{floats:[0f]}}}},Invisible:1b,DisabledSlots:2039583}
-teleport @e[tag=this_entity,limit=1] ~ ~-1.4 ~ ~ 0
+summon minecraft:armor_stand ~ ~-1.43875 ~ {CustomName:{type:"translatable",translate:"3ds_remake:furniture.trophy"},Tags:["furniture","immobile","standing_furniture","this_entity"],NoGravity:1b,Marker:1b,data:{entity:{namespace:"luigis_mansion",id:"furniture"},furniture_type:"generic"},equipment:{head:{id:"minecraft:diamond_pickaxe",count:1,components:{"minecraft:item_model":"3ds_remake:furniture/trophy","minecraft:custom_model_data":{floats:[0f]}}}},Invisible:1b,DisabledSlots:2039583}
+teleport @e[tag=this_entity,limit=1] ~ ~-1.43875 ~ ~ 0
 execute if data storage 3ds_remake:data current_state.trophy.beginner{done:1b} rotated ~ 0 run function 3ds_remake:spawn_furniture/trophy/gold_ghost
 execute if data storage 3ds_remake:data current_state.trophy.easy{done:1b} rotated ~ 0 run function 3ds_remake:spawn_furniture/trophy/garbage_can_ghost
 execute if data storage 3ds_remake:data current_state.trophy.normal{done:1b} rotated ~ 0 run function 3ds_remake:spawn_furniture/trophy/purple_puncher

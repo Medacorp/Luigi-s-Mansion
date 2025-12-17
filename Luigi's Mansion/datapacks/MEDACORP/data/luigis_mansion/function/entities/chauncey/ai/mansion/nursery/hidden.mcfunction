@@ -3,12 +3,13 @@ execute if data storage luigis_mansion:data current_state.current_data.technical
 scoreboard players add @s[scores={Dialog=50..129}] Dialog 1
 execute if entity @e[tag=rocking_horse,tag=same_room,tag=was_shaking,limit=1] run scoreboard players add @s[scores={Dialog=1..49}] Dialog 1
 execute unless entity @e[tag=rocking_horse,tag=same_room,tag=was_shaking,limit=1] run scoreboard players remove @s[scores={Dialog=2..49}] Dialog 3
-execute unless entity @s[scores={Dialog=1..}] unless entity @s[scores={Dialog=..-1}] run scoreboard players add @s Dialog 1
+execute unless entity @e[tag=rocking_horse,tag=same_room,tag=was_shaking,limit=1] if entity @s[scores={Dialog=2..49}] run return 0
+execute unless entity @s[scores={Dialog=1..}] run scoreboard players add @s Dialog 1
 data modify entity @s[scores={Dialog=1}] data.animation set value {namespace:"luigis_mansion",id:"sleep"}
 tag @s[scores={Dialog=1..51}] add visible
 tag @s[scores={Dialog=1..50},tag=portrait_ghost_hide] remove visible
-execute if entity @s[scores={Dialog=2}] if predicate luigis_mansion:chauncey/scream_wake_chance run data modify entity @s data.animation set value {namespace:"luigis_mansion",id:"scream_wake"}
-data modify entity @s[scores={Dialog=10},nbt=!{data:{animation:{namespace:"luigis_mansion",id:"scream_wake"}}}] data.animation set value {namespace:"luigis_mansion",id:"wake_up"}
+execute if entity @s[scores={Dialog=2}] unless predicate luigis_mansion:chauncey/scream_wake_chance run data modify entity @s data.animation set value {namespace:"luigis_mansion",id:"wake_up"}
+data modify entity @s[scores={Dialog=10},nbt=!{data:{animation:{namespace:"luigis_mansion",id:"wake_up"}}}] data.animation set value {namespace:"luigis_mansion",id:"scream_wake"}
 execute if entity @s[scores={Dialog=10},nbt={data:{animation:{namespace:"luigis_mansion",id:"wake_up"}}}] run playsound luigis_mansion:entity.chauncey.cry_wake hostile @a[tag=same_room] ~ ~ ~ 1
 execute if entity @s[scores={Dialog=30},nbt={data:{animation:{namespace:"luigis_mansion",id:"wake_up"}}}] run playsound luigis_mansion:entity.chauncey.cry_wake hostile @a[tag=same_room] ~ ~ ~ 1
 execute if entity @s[scores={Dialog=10},nbt={data:{animation:{namespace:"luigis_mansion",id:"scream_wake"}}}] run playsound luigis_mansion:entity.chauncey.scream_wake hostile @a[tag=same_room] ~ ~ ~ 1

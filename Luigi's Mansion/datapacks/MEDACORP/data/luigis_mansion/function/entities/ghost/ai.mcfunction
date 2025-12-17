@@ -34,6 +34,7 @@ execute at @s[tag=normal_death,tag=!captured,tag=!dead] run function luigis_mans
 execute at @s[scores={Health=0},tag=!element_hurt,tag=!element_death,tag=!normal_death,tag=!captured,tag=!dead] run function luigis_mansion:entities/ghost/death
 execute at @s[tag=!captured,tag=!dead] unless entity @s[scores={Health=1..}] unless entity @s[tag=!element_hurt,tag=!element_death] run function luigis_mansion:entities/ghost/death_element
 
+scoreboard players set @s[tag=!hurt,tag=!flee,tag=!freeze,scores={TargetTask=1..,ActionTime=0,Move=..0}] TargetTask 0
 execute at @s[tag=!hurt,tag=!flee,tag=!freeze,scores={TargetTask=0,ActionTime=0}] unless entity @s[scores={StunTime=1..}] run function luigis_mansion:entities/ghost/target_task/do_nothing
 execute at @s[tag=!hurt,tag=!flee,tag=!freeze,scores={TargetTask=1,ActionTime=0}] unless entity @s[scores={StunTime=1..}] run function luigis_mansion:entities/ghost/target_task/move_to_target
 execute at @s[tag=!hurt,tag=!flee,tag=!freeze,scores={TargetTask=2,ActionTime=0}] unless entity @s[scores={StunTime=1..}] run function luigis_mansion:entities/ghost/target_task/stay_away_from_target
