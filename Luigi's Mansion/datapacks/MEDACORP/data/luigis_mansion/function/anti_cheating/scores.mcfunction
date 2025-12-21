@@ -256,7 +256,7 @@ scoreboard players set #100 Constants 100
 scoreboard players set #256 Constants 256
 # Localizing position, pearl dropping
 scoreboard players set #1000 Constants 1000
-# Rotate Luigi body
+# Rotate Luigi body, model display upside down
 scoreboard players set #10000 Constants 10000
 
 execute store result score #players Totals if entity @a[tag=!spectator]

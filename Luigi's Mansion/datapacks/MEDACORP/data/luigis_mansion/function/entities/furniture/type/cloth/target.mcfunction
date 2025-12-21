@@ -32,14 +32,14 @@ scoreboard players operation #temp2 FurnitureSizeLeft /= #10 Constants
 scoreboard players operation #temp FurnitureSizeLeft -= #temp2 FurnitureSizeLeft
 scoreboard players reset #temp2 FurnitureSizeLeft
 #Up = Cos(pitch)PositionY - Sin(pitch)PositionZ
-scoreboard players operation #temp FurnitureSizeUp = #cosx Time
-scoreboard players operation #temp FurnitureSizeUp *= #temp2 PositionY
-scoreboard players operation #temp FurnitureSizeUp /= #10 Constants
-scoreboard players operation #temp2 FurnitureSizeUp = #sinx Time
-scoreboard players operation #temp2 FurnitureSizeUp *= #temp2 PositionZ
-scoreboard players operation #temp2 FurnitureSizeUp /= #10 Constants
-scoreboard players operation #temp FurnitureSizeUp -= #temp2 FurnitureSizeUp
-scoreboard players reset #temp2 FurnitureSizeUp
+#scoreboard players operation #temp FurnitureSizeUp = #cosx Time
+#scoreboard players operation #temp FurnitureSizeUp *= #temp2 PositionY
+#scoreboard players operation #temp FurnitureSizeUp /= #10 Constants
+#scoreboard players operation #temp2 FurnitureSizeUp = #sinx Time
+#scoreboard players operation #temp2 FurnitureSizeUp *= #temp2 PositionZ
+#scoreboard players operation #temp2 FurnitureSizeUp /= #10 Constants
+#scoreboard players operation #temp FurnitureSizeUp -= #temp2 FurnitureSizeUp
+#scoreboard players reset #temp2 FurnitureSizeUp
 #Forward = Cos(jaw)Cos(pitch)PositionZ - Sin(jaw)PositionX + Cos(jaw)Sin(pitch)PositionY
 scoreboard players operation #temp FurnitureSizeForward = #cosy Time
 scoreboard players operation #temp FurnitureSizeForward *= #cosx Time
@@ -66,26 +66,26 @@ execute if entity @e[tag=me,tag=!back,tag=!front] if score #temp FurnitureSizeLe
 execute if entity @e[tag=me,tag=!back,tag=!front] if score #temp FurnitureSizeLeft matches ..-1 run scoreboard players operation #temp4 PositionX = #temp5 PositionX
 execute if entity @e[tag=me,tag=!back,tag=!front,tag=left,tag=!right] run scoreboard players operation #temp4 PositionZ = #temp3 PositionZ
 execute if entity @e[tag=me,tag=!back,tag=!front,tag=!left,tag=right] run scoreboard players operation #temp4 PositionZ = #temp5 PositionZ
-scoreboard players operation #temp4 PositionY = #temp FurnitureSizeUp
-scoreboard players operation #temp4 PositionY < #temp3 PositionY
-scoreboard players operation #temp4 PositionY > #temp5 PositionY
+#scoreboard players operation #temp4 PositionY = #temp FurnitureSizeUp
+#scoreboard players operation #temp4 PositionY < #temp3 PositionY
+#scoreboard players operation #temp4 PositionY > #temp5 PositionY
 scoreboard players operation #temp4 PositionZ = #temp FurnitureSizeForward
 scoreboard players operation #temp4 PositionZ < #temp3 PositionZ
 scoreboard players operation #temp4 PositionZ > #temp5 PositionZ
 execute if entity @e[tag=me,tag=!left,tag=!right] if score #temp FurnitureSizeForward matches 0.. run scoreboard players operation #temp4 PositionZ = #temp3 PositionZ
 execute if entity @e[tag=me,tag=!left,tag=!right] if score #temp FurnitureSizeForward matches ..-1 run scoreboard players operation #temp4 PositionZ = #temp5 PositionZ
-execute if entity @e[tag=me,tag=!left,tag=!right,tag=front,tag=!back] run scoreboard players operation #temp4 PositionZ = #temp3 PositionZ
-execute if entity @e[tag=me,tag=!left,tag=!right,tag=!front,tag=back] run scoreboard players operation #temp4 PositionZ = #temp5 PositionZ
+execute if entity @e[tag=me,tag=!left,tag=!right,tag=!front,tag=back] run scoreboard players operation #temp4 PositionZ = #temp3 PositionZ
+execute if entity @e[tag=me,tag=!left,tag=!right,tag=front,tag=!back] run scoreboard players operation #temp4 PositionZ = #temp5 PositionZ
 scoreboard players operation #temp2 PositionX = #temp FurnitureSizeLeft
-scoreboard players operation #temp2 PositionY = #temp FurnitureSizeUp
+#scoreboard players operation #temp2 PositionY = #temp FurnitureSizeUp
 scoreboard players operation #temp2 PositionZ = #temp FurnitureSizeForward
 scoreboard players operation #temp2 PositionX -= #temp4 PositionX
-scoreboard players operation #temp2 PositionY -= #temp4 PositionY
+#scoreboard players operation #temp2 PositionY -= #temp4 PositionY
 scoreboard players operation #temp2 PositionZ -= #temp4 PositionZ
 scoreboard players operation #temp2 PositionX *= #temp2 PositionX
-scoreboard players operation #temp2 PositionY *= #temp2 PositionY
+#scoreboard players operation #temp2 PositionY *= #temp2 PositionY
 scoreboard players operation #temp2 PositionZ *= #temp2 PositionZ
-scoreboard players operation #temp2 PositionX += #temp2 PositionY
+#scoreboard players operation #temp2 PositionX += #temp2 PositionY
 scoreboard players operation #temp2 PositionX += #temp2 PositionZ
 execute if score #temp2 PositionX matches ..80 run tag @s add potential_latch
 execute if score #temp2 PositionX matches 800.. run tag @s add potential_pull

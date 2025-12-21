@@ -2,7 +2,7 @@ v?:
 * Updated to 1.21.9-1.21.11
 * Added GBH map models (not in use yet)
 * Added cloth, ghost art and poster furniture types
-** Cloth type implemented, cloths get attached to the vacuumer's poltergust, and are slowly dragged off their object; they prevent revealing Boos when searching the furniture below (not in use yet)
+** Cloth type implemented, cloths get attached to the vacuumer's poltergust, and are slowly dragged off their object; they prevent revealing Boos when searching the furniture below
 ** Curtain furniture can be pulled in one direction to open, or the other to close
 ** Ghost art is the same as generic, but only opens when in a lit room, or when a ghost is hiding in it; cannot be searched (aside from revealing hidden Boos) before it is open
 ** Poster furniture changed to actual furniture; they also visually get attached to the vacuumer's poltergust
@@ -14,6 +14,19 @@ v?:
 ** Barrels
 ** Campfires
 ** Camping Burners
+** Cloths
+*** Cube tablesheet
+*** Diamond bedsheet
+*** Drying tablesheet
+*** Flower tablesheet
+*** Lined bedsheet
+*** Outline tablesheet
+*** T-shirt
+*** Toilet paper
+*** Too long tableseet
+*** Torn tablesheet
+*** Towel
+*** Wash cloth
 ** Concrete bricks
 ** Curtains
 ** Dresser mounted golden lamps

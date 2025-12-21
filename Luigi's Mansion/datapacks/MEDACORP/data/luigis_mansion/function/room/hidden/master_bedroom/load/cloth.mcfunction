@@ -1,0 +1,2 @@
+data modify storage luigis_mansion:data furniture set value {room:9,no_dust:1b,hitbox:{rotated_box:{left:42,up:8,forward:42}},searchable:["vacuum"],scan_result:{namespace:"luigis_mansion",id:"scan/scanner/55"}}
+execute positioned 691.0 112.05 -37.0 rotated 0 0 run function luigis_mansion:spawn_furniture/cloth/diamond_bedsheet

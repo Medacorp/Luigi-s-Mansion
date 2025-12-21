@@ -7,7 +7,6 @@
         "luigis_mansion:room/normal/master_bedroom/reset/lamp",
         "luigis_mansion:room/normal/master_bedroom/reset/mirror",
         "luigis_mansion:room/normal/master_bedroom/reset/plant",
-        "luigis_mansion:room/normal/master_bedroom/reset/room_clear_chest",
-        "luigis_mansion:room/normal/master_bedroom/reset/vacuumable"
+        "luigis_mansion:room/normal/master_bedroom/reset/room_clear_chest"
     ]
 }

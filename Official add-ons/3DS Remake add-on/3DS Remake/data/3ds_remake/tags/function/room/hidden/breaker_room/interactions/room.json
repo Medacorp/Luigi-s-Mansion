@@ -2,7 +2,6 @@
     "values": [
         "3ds_remake:room/hidden/breaker_room/interactions/room/lamp",
         "3ds_remake:room/hidden/breaker_room/interactions/room/mirror",
-        "3ds_remake:room/hidden/breaker_room/interactions/room/table",
-        "3ds_remake:room/hidden/breaker_room/interactions/room/vacuumable"
+        "3ds_remake:room/hidden/breaker_room/interactions/room/table"
     ]
 }

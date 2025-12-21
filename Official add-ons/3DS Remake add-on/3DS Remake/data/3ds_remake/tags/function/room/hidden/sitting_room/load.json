@@ -2,6 +2,7 @@
     "values": [
         "3ds_remake:room/hidden/sitting_room/load/set_loaded",
         "3ds_remake:room/hidden/sitting_room/load/lights",
+        "3ds_remake:room/hidden/sitting_room/load/cloth",
         "3ds_remake:room/hidden/sitting_room/load/guest_room_door",
         "3ds_remake:room/hidden/sitting_room/load/hallway_13_door",
         "3ds_remake:room/hidden/sitting_room/load/lonely_tree_portrait",

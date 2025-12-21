@@ -2,7 +2,6 @@
     "values": [
         "luigis_mansion:room/hidden/breaker_room/interactions/poltergust/lamp",
         "luigis_mansion:room/hidden/breaker_room/interactions/poltergust/mirror",
-        "luigis_mansion:room/hidden/breaker_room/interactions/poltergust/table",
-        "luigis_mansion:room/hidden/breaker_room/interactions/poltergust/vacuumable"
+        "luigis_mansion:room/hidden/breaker_room/interactions/poltergust/table"
     ]
 }

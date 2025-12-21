@@ -5,7 +5,6 @@
         "3ds_remake:room/hidden/breaker_room/reset/lamp",
         "3ds_remake:room/hidden/breaker_room/reset/mirror",
         "3ds_remake:room/hidden/breaker_room/reset/room_clear_chest",
-        "3ds_remake:room/hidden/breaker_room/reset/table",
-        "3ds_remake:room/hidden/breaker_room/reset/vacuumable"
+        "3ds_remake:room/hidden/breaker_room/reset/table"
     ]
 }

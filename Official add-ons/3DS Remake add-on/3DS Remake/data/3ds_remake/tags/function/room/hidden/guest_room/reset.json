@@ -8,7 +8,6 @@
         "3ds_remake:room/hidden/guest_room/reset/lamp",
         "3ds_remake:room/hidden/guest_room/reset/nightstand_mounted_fishbowl",
         "3ds_remake:room/hidden/guest_room/reset/plant",
-        "3ds_remake:room/hidden/guest_room/reset/room_clear_chest",
-        "3ds_remake:room/hidden/guest_room/reset/vacuumable"
+        "3ds_remake:room/hidden/guest_room/reset/room_clear_chest"
     ]
 }

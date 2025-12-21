@@ -1,7 +1,6 @@
 {
     "values": [
         "luigis_mansion:room/hidden/foyer/interactions/poltergust/chandelier",
-        "luigis_mansion:room/hidden/foyer/interactions/poltergust/lamp",
-        "luigis_mansion:room/hidden/foyer/interactions/poltergust/vacuumable"
+        "luigis_mansion:room/hidden/foyer/interactions/poltergust/lamp"
     ]
 }

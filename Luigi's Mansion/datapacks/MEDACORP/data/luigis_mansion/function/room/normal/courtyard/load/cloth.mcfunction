@@ -1,0 +1,2 @@
+data modify storage luigis_mansion:data furniture set value {room:30,no_dust:1b,hitbox:{rotated_box:{left:32,up:20,forward:12}},searchable:["vacuum"],scan_result:{namespace:"luigis_mansion",id:"scan/scanner/55"}}
+execute positioned 647 106.05 31 rotated -90 0 run function luigis_mansion:spawn_furniture/cloth/drying_tablesheet

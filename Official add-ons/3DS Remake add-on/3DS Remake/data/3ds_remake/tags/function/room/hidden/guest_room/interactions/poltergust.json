@@ -3,7 +3,6 @@
         "3ds_remake:room/hidden/guest_room/interactions/poltergust/bed",
         "3ds_remake:room/hidden/guest_room/interactions/poltergust/chair",
         "3ds_remake:room/hidden/guest_room/interactions/poltergust/lamp",
-        "3ds_remake:room/hidden/guest_room/interactions/poltergust/plant",
-        "3ds_remake:room/hidden/guest_room/interactions/poltergust/vacuumable"
+        "3ds_remake:room/hidden/guest_room/interactions/poltergust/plant"
     ]
 }

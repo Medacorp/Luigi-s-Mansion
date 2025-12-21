@@ -3,7 +3,6 @@
         "luigis_mansion:room/hidden/foyer/reset/unload",
         "#luigis_mansion:room/hidden/foyer/turn_lights/off",
         "luigis_mansion:room/hidden/foyer/reset/chandelier",
-        "luigis_mansion:room/hidden/foyer/reset/lamp",
-        "luigis_mansion:room/hidden/foyer/reset/vacuumable"
+        "luigis_mansion:room/hidden/foyer/reset/lamp"
     ]
 }

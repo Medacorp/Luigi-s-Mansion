@@ -5,8 +5,6 @@
         "luigis_mansion:room/normal/butlers_room/interactions/poltergust/lamp",
         "luigis_mansion:room/normal/butlers_room/interactions/poltergust/sewing_machine",
         "luigis_mansion:room/normal/butlers_room/interactions/poltergust/table",
-        "luigis_mansion:room/normal/butlers_room/interactions/poltergust/toilet_paper",
-        "luigis_mansion:room/normal/butlers_room/interactions/poltergust/vacuumable_1",
-        "luigis_mansion:room/normal/butlers_room/interactions/poltergust/vacuumable_2"
+        "luigis_mansion:room/normal/butlers_room/interactions/poltergust/toilet_paper"
     ]
 }

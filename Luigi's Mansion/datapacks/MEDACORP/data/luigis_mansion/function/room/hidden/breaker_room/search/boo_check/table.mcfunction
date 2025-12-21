@@ -1,2 +1,2 @@
 execute unless entity @e[x=695.5,y=2,z=60.5,distance=..0.7,tag=hidden_boo,tag=caught_by_boo_radar] run function luigis_mansion:room/hidden/breaker_room/search/table
-execute unless block 694 2 60 minecraft:white_wool run tag @e[x=695.5,y=2,z=60.5,distance=..0.7,tag=hidden_boo,tag=caught_by_boo_radar] add spawn
+execute unless entity @e[tag=breaker_room_tablesheet,limit=1] run tag @e[x=695.5,y=2,z=60.5,distance=..0.7,tag=hidden_boo,tag=caught_by_boo_radar] add spawn

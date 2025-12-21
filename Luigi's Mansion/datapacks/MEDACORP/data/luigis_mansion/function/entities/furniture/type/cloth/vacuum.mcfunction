@@ -6,8 +6,10 @@ execute store result storage luigis_mansion:data macro.facing_y double 0.001 run
 execute store result score #temp EntityYOffset run data get entity @s Pos[2] 1000
 execute store result storage luigis_mansion:data macro.facing_z double 0.001 run scoreboard players remove #temp EntityYOffset 1
 execute store result score #temp EntityYOffset run data get entity @s data.default_transformation[0] 10
+execute if score #temp EntityYOffset matches ..-1 run scoreboard players operation #temp EntityYOffset *= #-1 Constants
 execute store result storage luigis_mansion:data macro.scale_x double 0.1 run scoreboard players operation #temp EntityYOffset /= #2 Constants
 execute store result score #temp EntityYOffset run data get entity @s data.default_transformation[10] 10
+execute if score #temp EntityYOffset matches ..-1 run scoreboard players operation #temp EntityYOffset *= #-1 Constants
 execute store result storage luigis_mansion:data macro.scale_z double 0.1 run scoreboard players operation #temp EntityYOffset /= #2 Constants
 scoreboard players reset #temp EntityYOffset
 
@@ -128,9 +130,11 @@ execute store result storage luigis_mansion:data transformation[5] float 0.05 ru
 execute if score #temp FurnitureSizeUp matches 0 run data modify storage luigis_mansion:data transformation[5] set value 0.01f
 execute store result storage luigis_mansion:data transformation[9] float 0.05 run scoreboard players get #temp FurnitureSizeForward
 execute store result score #temp Time run data get storage luigis_mansion:data transformation[0] 10
+execute if score #temp Time matches ..-1 run scoreboard players operation #temp Time *= #-1 Constants
 scoreboard players operation #temp FurnitureSizeLeft *= #10 Constants
 scoreboard players operation #temp FurnitureSizeLeft /= #temp Time
 execute store result score #temp Time run data get storage luigis_mansion:data transformation[10] 10
+execute if score #temp Time matches ..-1 run scoreboard players operation #temp Time *= #-1 Constants
 scoreboard players operation #temp FurnitureSizeForward *= #10 Constants
 scoreboard players operation #temp FurnitureSizeForward /= #temp Time
 scoreboard players operation #temp Time = #temp FurnitureSizeLeft

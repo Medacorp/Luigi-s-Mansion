@@ -3,7 +3,6 @@
         "luigis_mansion:room/hidden/guest_room/interactions/room/bed",
         "luigis_mansion:room/hidden/guest_room/interactions/room/chair",
         "luigis_mansion:room/hidden/guest_room/interactions/room/lamp",
-        "luigis_mansion:room/hidden/guest_room/interactions/room/plant",
-        "luigis_mansion:room/hidden/guest_room/interactions/room/vacuumable"
+        "luigis_mansion:room/hidden/guest_room/interactions/room/plant"
     ]
 }

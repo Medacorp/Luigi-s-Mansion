@@ -1,1 +1,0 @@
-scoreboard players set #washroom_1_vacuumable Searched 1

@@ -1,0 +1,2 @@
+data modify storage luigis_mansion:data furniture set value {room:57,no_dust:1b,hitbox:{rotated_box:{left:32,up:8,forward:22}},searchable:["vacuum"],tags:["breaker_room_tablesheet"]}
+execute positioned 695 3.05 60.0 rotated 0 0 run function luigis_mansion:spawn_furniture/cloth/torn_tablesheet

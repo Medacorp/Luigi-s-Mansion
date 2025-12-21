@@ -9,8 +9,6 @@
         "3ds_remake:room/hidden/butlers_room/reset/room_clear_chest",
         "3ds_remake:room/hidden/butlers_room/reset/sewing_machine",
         "3ds_remake:room/hidden/butlers_room/reset/table",
-        "3ds_remake:room/hidden/butlers_room/reset/toilet_paper",
-        "3ds_remake:room/hidden/butlers_room/reset/vacuumable_1",
-        "3ds_remake:room/hidden/butlers_room/reset/vacuumable_2"
+        "3ds_remake:room/hidden/butlers_room/reset/toilet_paper"
     ]
 }

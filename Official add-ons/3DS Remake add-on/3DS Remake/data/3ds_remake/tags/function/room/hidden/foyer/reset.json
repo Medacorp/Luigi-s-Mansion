@@ -3,7 +3,6 @@
         "3ds_remake:room/hidden/foyer/reset/unload",
         "#3ds_remake:room/hidden/foyer/turn_lights/off",
         "3ds_remake:room/hidden/foyer/reset/chandelier",
-        "3ds_remake:room/hidden/foyer/reset/lamp",
-        "3ds_remake:room/hidden/foyer/reset/vacuumable"
+        "3ds_remake:room/hidden/foyer/reset/lamp"
     ]
 }

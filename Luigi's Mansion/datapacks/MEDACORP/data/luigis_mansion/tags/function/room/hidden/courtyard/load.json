@@ -2,6 +2,7 @@
     "values": [
         "luigis_mansion:room/hidden/courtyard/load/set_loaded",
         "luigis_mansion:room/hidden/courtyard/load/lights",
+        "luigis_mansion:room/hidden/courtyard/load/cloth",
         "luigis_mansion:room/hidden/courtyard/load/hallway_6_door",
         "luigis_mansion:room/hidden/courtyard/load/rec_room_door",
         "luigis_mansion:room/hidden/courtyard/load/room_clear_chest",
