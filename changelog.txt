@@ -1,5 +1,5 @@
-v?:
-* Updated to 1.21.9-1.21.11
+v3.4:
+* Updated to 1.21.11
 * Added GBH map models (not in use yet)
 * Added cloth, ghost art and poster furniture types
 ** Cloth type implemented, cloths get attached to the vacuumer's poltergust, and are slowly dragged off their object; they prevent revealing Boos when searching the furniture below
@@ -102,6 +102,8 @@ v?:
 * Added some rec room changes in the 3DS remake
 * Added trick door dialog
 * Added score results dialog (split off from portrificationizing) which visually shows the portraits optained, and money collected
+** Portrait ghosts' areas, and what money is counted are defined by the mansion, it'll automatically scroll up the list of money if it has too many entries to display
+** 3DS Remake add-on now also stores the area best scores along with the high scores
 * Added mansion progress to the dialog choices when the 3DS Remake add-on is installed
 * Changed ghosts that have a movement speed of 0 to change target task to "do nothing"
 * Changed paintings dialog (now named portraits) to shake the new portrait furniture
@@ -124,6 +126,7 @@ v?:
 ** Agressive Boolossus Boos now only attack from behind
 ** Non-agressive Boolossus Boos now sometimes taunt
 ** Boolossus Boos now rubberband like in the original game
+* Fixed warping to lab from dialogs breaks under certain conditions
 * Fixed Boos could hide in all old furniture; now the options match the original game
 * Fixed some converted furniture had the wrong can_hide_boo value
 * Fixed some invisible block mistakes

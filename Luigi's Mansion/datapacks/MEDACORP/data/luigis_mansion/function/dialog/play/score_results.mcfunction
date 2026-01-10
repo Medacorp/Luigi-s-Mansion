@@ -1,9 +1,9 @@
 execute if score #dialog Dialog matches 250..251 if entity @a[tag=same_room,tag=next_dialog_line,limit=1] run scoreboard players add #dialog Dialog 1
 execute if score #dialog Dialog matches 251 if data storage luigis_mansion:data dialogs[0].ending run scoreboard players add #dialog Dialog 1
 execute if score #dialog Dialog matches 148..249 run scoreboard players add #dialog Dialog 1
-execute if score #dialog Dialog matches 231..249 if entity @a[tag=same_room,tag=next_dialog_line,limit=1] run scoreboard players set #dialog Dialog 250
-execute if score #dialog Dialog matches 191..229 if entity @a[tag=same_room,tag=next_dialog_line,limit=1] run scoreboard players set #dialog Dialog 230
-execute if score #dialog Dialog matches 150..188 if entity @a[tag=same_room,tag=next_dialog_line,limit=1] run scoreboard players set #dialog Dialog 189
+execute if score #dialog Dialog matches 232..249 if entity @a[tag=same_room,tag=next_dialog_line,limit=1] run scoreboard players set #dialog Dialog 250
+execute if score #dialog Dialog matches 192..229 if entity @a[tag=same_room,tag=next_dialog_line,limit=1] run scoreboard players set #dialog Dialog 230
+execute if score #dialog Dialog matches 151..188 if entity @a[tag=same_room,tag=next_dialog_line,limit=1] run scoreboard players set #dialog Dialog 189
 execute if score #dialog Dialog matches 146..147 if entity @a[tag=same_room,tag=next_dialog_line,limit=1] run scoreboard players add #dialog Dialog 1
 execute if score #dialog Dialog matches 145 run scoreboard players add #dialog Dialog 1
 execute if score #dialog Dialog matches 144 if entity @a[tag=same_room,tag=next_dialog_line,limit=1] run scoreboard players add #dialog Dialog 1
@@ -15,7 +15,6 @@ execute if score #dialog Dialog matches 81..250 as @a[tag=same_room,tag=!spectat
 execute if score #dialog Dialog matches 251 as @a[tag=same_room,tag=!spectator,tag=!dialog_choice_menu] unless entity @s[tag=using_selection_menu,tag=!dialog_menu] run function luigis_mansion:selection_menu/dialog/choice/save
 execute if score #dialog Dialog matches 252 as @a[tag=same_room,tag=dialog_menu] run function luigis_mansion:selection_menu/dialog/exit
 execute if score #dialog Dialog matches ..147 store result score #temp Time run data get storage luigis_mansion:data dialogs[0].counter
-execute if score #dialog Dialog matches 148.. store result score #temp Time run data get storage luigis_mansion:data dialogs[0].counter 10
 
 execute if score #dialog Dialog matches 1 run function luigis_mansion:dialog/play/score_results/get_data with storage luigis_mansion:data current_state.current_data.mansion_id
 execute if score #dialog Dialog matches 1..22 as @a[tag=same_room] run function luigis_mansion:other/music/set/non_overwritten_silence
@@ -86,6 +85,7 @@ execute if score #dialog Dialog matches 146 if score #temp Time matches 24.. as 
 execute if score #dialog Dialog matches 146 if score #temp Time = #temp2 Dialog run scoreboard players add #dialog Dialog 1
 execute if score #dialog Dialog matches 146 if score #temp Time < #temp2 Dialog store result storage luigis_mansion:data dialogs[0].counter int 1 run scoreboard players add #temp Time 1
 #147
+execute if score #dialog Dialog matches 148.. store result score #temp Time run data get storage luigis_mansion:data dialogs[0].counter 10
 execute if score #dialog Dialog matches 148 run fill 754 77 -13 754 82 -10 minecraft:black_concrete
 execute if score #dialog Dialog matches 148 run fill 754 78 -14 754 81 -9 minecraft:black_concrete
 execute if score #dialog Dialog matches 148 run tag @e[type=minecraft:text_display,scores={Room=-3}] add fade_out
@@ -106,7 +106,8 @@ execute if score #dialog Dialog matches 164 as @a[tag=same_room] at @s run plays
 execute if score #dialog Dialog matches 166 as @a[tag=same_room] at @s run playsound luigis_mansion:item.count_money player @s ~ ~ ~ 1
 execute if score #dialog Dialog matches 168 as @a[tag=same_room] at @s run playsound luigis_mansion:item.count_money player @s ~ ~ ~ 1
 execute if score #dialog Dialog matches 189 run data remove storage luigis_mansion:data dialogs[0].money[0]
-execute if score #dialog Dialog matches 189 store result storage luigis_mansion:data dialogs[0].counter double 0.1 run scoreboard players remove #temp Time 4
+execute if score #dialog Dialog matches 189 if score #temp Time matches ..-50 as @e[tag=money_counter] at @s run teleport @s ~ ~0.4 ~
+execute if score #dialog Dialog matches 189 unless score #temp Time matches ..-50 store result storage luigis_mansion:data dialogs[0].counter double 0.1 run scoreboard players remove #temp Time 4
 execute if score #dialog Dialog matches 189 if data storage luigis_mansion:data dialogs[0].money[0] run scoreboard players remove #dialog Dialog 41
 execute if score #dialog Dialog matches 190 unless data storage luigis_mansion:data dialogs[0].pearls run scoreboard players add #dialog Dialog 40
 execute if score #dialog Dialog matches 190 run function luigis_mansion:dialog/play/score_results/get_pearls
@@ -120,7 +121,8 @@ execute if score #dialog Dialog matches 203 as @a[tag=same_room] at @s run plays
 execute if score #dialog Dialog matches 205 as @a[tag=same_room] at @s run playsound luigis_mansion:item.count_money player @s ~ ~ ~ 1
 execute if score #dialog Dialog matches 207 as @a[tag=same_room] at @s run playsound luigis_mansion:item.count_money player @s ~ ~ ~ 1
 execute if score #dialog Dialog matches 209 as @a[tag=same_room] at @s run playsound luigis_mansion:item.count_money player @s ~ ~ ~ 1
-execute if score #dialog Dialog matches 230 store result storage luigis_mansion:data dialogs[0].counter double 0.1 run scoreboard players remove #temp Time 4
+execute if score #dialog Dialog matches 230 if score #temp Time matches ..-50 as @e[tag=money_counter] at @s run teleport @s ~ ~0.4 ~
+execute if score #dialog Dialog matches 230 unless score #temp Time matches ..-50 store result storage luigis_mansion:data dialogs[0].counter double 0.1 run scoreboard players remove #temp Time 4
 execute if score #dialog Dialog matches 230 unless data storage luigis_mansion:data dialogs[0].ending run function luigis_mansion:dialog/play/score_results/get_total_score
 execute if score #dialog Dialog matches 230 if data storage luigis_mansion:data dialogs[0].ending run function luigis_mansion:dialog/play/score_results/save_high_score
 execute if score #dialog Dialog matches 231 as @a[tag=same_room] at @s run playsound luigis_mansion:item.count_money player @s ~ ~ ~ 1
