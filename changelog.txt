@@ -1,3 +1,10 @@
+v?:
+* Added 3DS exclusive wooden arch door frame
+* Changed Luigi and Mario models
+* Fixed "Blue Twirler Easel" was called "Gold Ghost Easel"
+* Fixed "Elder Portraits" was called "Elders Portraits"
+* Fixed a typo in the 3DS Remake's score results strings
+
 v3.4:
 * Updated to 1.21.11
 * Added GBH map models (not in use yet)

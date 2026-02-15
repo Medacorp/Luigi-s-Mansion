@@ -1,8 +1,8 @@
 # Move with
-teleport @s[tag=!shrunk,tag=!flipped_gravity] ^-0.11 ^-2.34 ^ ~ ~
-teleport @s[tag=shrunk,tag=!flipped_gravity] ^-0.06 ^-1.22 ^ ~ ~
-teleport @s[tag=!shrunk,tag=flipped_gravity] ^0.11 ^0.21 ^ ~ ~
-teleport @s[tag=shrunk,tag=flipped_gravity] ^0.06 ^0.73 ^ ~ ~
+teleport @s[tag=!shrunk,tag=!flipped_gravity] ^-0.125 ^-2.34 ^ ~ ~
+teleport @s[tag=shrunk,tag=!flipped_gravity] ^-0.0625 ^-1.22 ^ ~ ~
+teleport @s[tag=!shrunk,tag=flipped_gravity] ^0.125 ^0.21 ^ ~ ~
+teleport @s[tag=shrunk,tag=flipped_gravity] ^0.0625 ^0.73 ^ ~ ~
 
 execute at @s run teleport @s[tag=low_health,tag=!shrunk] ^ ^ ^-0.2 ~ ~
 execute at @s run teleport @s[tag=low_health,tag=shrunk] ^ ^ ^-0.15 ~ ~

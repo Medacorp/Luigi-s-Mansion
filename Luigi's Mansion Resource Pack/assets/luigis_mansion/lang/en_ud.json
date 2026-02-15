@@ -1642,7 +1642,7 @@
     "luigis_mansion:message.debug.spawned_entities": "˙%s :pǝuʍɐds ǝɹǝʍ sǝᴉʇᴉʇuǝ ʍǝN",
     "luigis_mansion:message.debug.spawned_furniture": "˙%s :pǝuʍɐds sɐʍ ǝɹnʇᴉuɹnɟ ʍǝN",
     "luigis_mansion:message.debug.unknown_death_message": "˙%s :ǝᵷɐssǝɯ ɥʇɐǝp ǝɥʇ ɹoɟ ǝꞁqɐꞁᴉɐʌɐ sɐʍ uoᴉʇɐɯɹoɟuᴉ ᵷuᴉʍoꞁꞁoɟ ǝɥ⟘ ˙punoɟ sɐʍ poɥʇǝɯ ou ǝsnɐɔǝq puǝs ʇsnɾ sɐʍ ǝᵷɐssǝɯ ɥʇɐǝp ɔᴉɹǝuǝᵷ Ɐ",
-    "luigis_mansion:message.debug.unknown_exterior": "˙ʇꞁnsǝɹ ɐ sɐ pǝᵷuɐɥɔ ʇou sɐʍ ᵷuᴉʇʇǝs ɹoᴉɹǝʇxƎ ˙ʇsᴉxǝ ʇou sǝop („%2$s/ɹoᴉɹǝʇxǝ:%1$s„) ʇᴉ ɹoɟ uoᴉsuǝɯᴉp ǝɥʇ ʇnq ‘„s$ᘔ%:s$⥝%„ oʇ ʇǝs ǝq oʇ pǝʇdɯǝʇʇɐ sɐʍ ɹoᴉɹǝʇxǝ ǝɥ⟘",
+    "luigis_mansion:message.debug.unknown_exterior": "˙ʇꞁnsǝɹ ɐ sɐ pǝᵷuɐɥɔ ʇou sɐʍ ᵷuᴉʇʇǝs ɹoᴉɹǝʇxƎ ˙ʇsᴉxǝ ʇou sǝop („%2$s/ɹoᴉɹǝʇxǝ:%1$s„) ʇᴉ ɹoɟ uoᴉsuǝɯᴉp ǝɥʇ ʇnq ‘„%2$s:%1$s„ oʇ ʇǝs ǝq oʇ pǝʇdɯǝʇʇɐ sɐʍ ɹoᴉɹǝʇxǝ ǝɥ⟘",
     "luigis_mansion:message.debug.unsearchable_boo": "˙sᴉɥʇ ʇuǝʌǝɹd oʇ ooᗺ ɐ ᵷuᴉpᴉɥ ʍoꞁꞁɐ ʇou sǝop ǝɹnʇᴉuɹnɟ ǝɥ⟘ ˙ǝɹnʇᴉuɹnɟ ǝꞁqɐɥɔɹɐǝsun uᴉ ǝpᴉɥ oʇ ooᗺ ɐ ᵷuᴉʍoꞁꞁɐ ʇǝs sɐʍ ooq‾ǝpᴉɥ‾uɐɔ ʇǝʎ ‘ɹǝʎɐꞁd ǝɥʇ ʎq pǝɥɔɹɐǝs ᵷuᴉǝq ɟo suɐǝɯ ou sɐɥ %s ǝɹnʇᴉuɹnɟ ǝɥ⟘",
     "luigis_mansion:message.debug.vacuum_error": "˙ǝʞɐʇsᴉɯ ᵷuᴉɯnnɔɐʌ ɐ ǝpɐɯ %s",
     "luigis_mansion:message.floating_whirlindas.scan.1": "(¡sn ǝǝs uǝʌǝ uɐɔ ʇuǝᵷ sᴉɥʇ ʞuᴉɥʇ ʇ,uop I)",
