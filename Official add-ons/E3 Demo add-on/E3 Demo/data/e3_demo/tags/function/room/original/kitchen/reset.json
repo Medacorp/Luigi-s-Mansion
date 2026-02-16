@@ -4,7 +4,6 @@
         "#e3_demo:room/original/kitchen/turn_lights/off",
         "e3_demo:room/original/kitchen/reset/closet",
         "e3_demo:room/original/kitchen/reset/dish_washer",
-        "e3_demo:room/original/kitchen/reset/fridge",
         "e3_demo:room/original/kitchen/reset/oven",
         "e3_demo:room/original/kitchen/reset/lamp_1",
         "e3_demo:room/original/kitchen/reset/lamp_2",

@@ -1,0 +1,2 @@
+data modify storage luigis_mansion:data furniture set value {room:8,particles:"flames",ambient_light:{lit:1b},fire_elemental_source:{timer:1b},animation:{freeze:1b}}
+execute positioned 702 20 -39 rotated -90 0 run function luigis_mansion:spawn_furniture/fireplace/left

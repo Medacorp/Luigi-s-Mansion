@@ -1,0 +1,2 @@
+data modify storage luigis_mansion:data furniture set value {room:27,can_hide_boo:1b,particles:"chilly_fog",searchable:["interact","vacuum"],ice_elemental_source:{},shake_animation:["interact","vacuum"],sound:{namespace:"luigis_mansion",id:"fridge"},scan_result:{namespace:"luigis_mansion",id:"scan/scanner/2"}}
+execute positioned 700 11 70.0 rotated -75 0 run function luigis_mansion:spawn_furniture/refridgerator/left

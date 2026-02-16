@@ -2,7 +2,6 @@
     "values": [
         "e3_demo:room/original/kitchen/interactions/manual/closet",
         "e3_demo:room/original/kitchen/interactions/manual/dish_washer",
-        "e3_demo:room/original/kitchen/interactions/manual/fridge",
         "e3_demo:room/original/kitchen/interactions/manual/lamp_1",
         "e3_demo:room/original/kitchen/interactions/manual/lamp_2",
         "e3_demo:room/original/kitchen/interactions/manual/oven",
