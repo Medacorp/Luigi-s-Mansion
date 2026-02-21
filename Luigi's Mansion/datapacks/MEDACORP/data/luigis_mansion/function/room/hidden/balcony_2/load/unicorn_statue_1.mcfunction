@@ -1,0 +1,2 @@
+data modify storage luigis_mansion:data furniture set value {room:53,no_visual_shake:1b,searchable:["interact"],shake_animation:["interact"],sound:{namespace:"luigis_mansion",id:"stone"},loot_chance:{namespace:"luigis_mansion",id:"health_dependent_4"},scan_result:{namespace:"luigis_mansion",id:"scan/scanner/86"}}
+execute positioned 668.0 120 -12.0 rotated 0 0 run function luigis_mansion:spawn_furniture/unicorn_statue/right

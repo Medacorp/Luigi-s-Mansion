@@ -1,0 +1,4 @@
+data modify storage luigis_mansion:data furniture set value {room:75,ice_elemental_source:{cannot_disable:1b,always_spawn:1b},no_visual_shake:1b,searchable:["interact"],shake_animation:["interact"],sound:{namespace:"luigis_mansion",id:"heavy_generic"},scan_result:{namespace:"luigis_mansion",id:"scan/scanner/9"},tags:["sharp"]}
+execute positioned 586.0 27 17.0 rotated 0 0 run function luigis_mansion:spawn_furniture/unicorn_statue/frozen/right
+data modify storage luigis_mansion:data furniture set value {room:75,particles:"chilly_fog",no_ai:1b,animation:{frozen:1b}}
+execute positioned 586.0 28.2 17.0 rotated 0 0 run function luigis_mansion:spawn_furniture/particle_spawner

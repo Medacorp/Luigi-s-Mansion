@@ -2,6 +2,7 @@ v?:
 * Added 3DS exclusive wooden arch door frame
 * Added the following furniture model:
 ** Fireplaces
+** (Frozen) unicorn statues
 ** Refridgerators
 * Changed Luigi and Mario models
 * Changed how the 3DS remake replaces some portraits
@@ -9,7 +10,7 @@ v?:
 * Fixed "Blue Twirler Easel" was called "Gold Ghost Easel"
 * Fixed "Elder Portraits" was called "Elders Portraits"
 * Fixed a typo in the 3DS Remake's score results strings
-* Removed deprecated fire elemental source entity
+* Removed deprecated elemental source entities
 
 v3.4:
 * Updated to 1.21.11
