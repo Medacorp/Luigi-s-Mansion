@@ -13,6 +13,4 @@ execute as @a[scores={Room=16}] run function luigis_mansion:room/hidden/bathroom
 function #luigis_mansion:room/hidden/bathroom_1/interactions/room
 #/todelete
 
-clone 654 12 -7 654 16 -12 644 12 -12
-
 execute if entity @e[tag=luigi,tag=!door_animation,scores={Room=16},limit=1] run function luigis_mansion:room/hidden/bathroom_1/ghosts

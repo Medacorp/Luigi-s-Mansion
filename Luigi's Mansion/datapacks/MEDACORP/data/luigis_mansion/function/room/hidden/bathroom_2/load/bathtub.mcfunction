@@ -1,0 +1,2 @@
+data modify storage luigis_mansion:data furniture set value {room:43,can_hide_boo:1b,searchable:["interact","vacuum"],shake_animation:["interact","vacuum"],sound:{namespace:"luigis_mansion",id:"stone"},scan_result:{namespace:"luigis_mansion",id:"scan/scanner/60"}}
+execute positioned 652 20 -9.1 rotated -105 0 run function luigis_mansion:spawn_furniture/bathtub/left

@@ -1,15 +1,20 @@
 v?:
 * Added 3DS exclusive wooden arch door frame
 * Added the following furniture model:
+** Bathtubs
 ** Fireplaces
 ** (Frozen) unicorn statues
 ** Refridgerators
+** Showers
 * Changed Luigi and Mario models
+* Changed Chauncey's positioning so he's easier to hit with the ball
+* Changed legged sinks to be potential water elemental sources
 * Changed how the 3DS remake replaces some portraits
 * Fixed swinging doors and maces didn't deal damage
 * Fixed "Blue Twirler Easel" was called "Gold Ghost Easel"
 * Fixed "Elder Portraits" was called "Elders Portraits"
 * Fixed a typo in the 3DS Remake's score results strings
+* Fixed translations weren't updated
 * Removed deprecated elemental source entities
 
 v3.4:
