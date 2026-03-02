@@ -32,7 +32,7 @@ scoreboard players reset #temp ID
 scoreboard players reset #temp Room
 #/todelete
 scoreboard players reset #interact
-scoreboard players set @s[scores={InteractionTime=2}] Sound 20
+scoreboard players set @s[scores={InteractionTime=3}] Sound 14
 tag @s[scores={InteractionTime=17}] remove reset_rotation
 tag @s[scores={InteractionTime=17}] remove not_facing
 tag @s[scores={InteractionTime=17}] remove 1

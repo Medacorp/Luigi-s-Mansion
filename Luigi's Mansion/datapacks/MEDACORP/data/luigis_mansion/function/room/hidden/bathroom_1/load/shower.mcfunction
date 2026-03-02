@@ -1,2 +1,2 @@
-data modify storage luigis_mansion:data furniture set value {room:16,animation:{frozen:1b},water_elemental_source:{},particles:"dripping_water"}
+data modify storage luigis_mansion:data furniture set value {room:16,animation:{frozen:1b},water_elemental_source:{},particles:"leaking_water"}
 execute positioned 652 13.75 -12.0 rotated 0 0 run function luigis_mansion:spawn_furniture/shower/left

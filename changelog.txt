@@ -3,14 +3,18 @@ v?:
 * Added the following furniture model:
 ** Bathtubs
 ** Fireplaces
+** Fountains
 ** (Frozen) unicorn statues
+** High-level cisterns
 ** Refridgerators
 ** Showers
 * Changed Luigi and Mario models
 * Changed Chauncey's positioning so he's easier to hit with the ball
+* Changed Poltergust so it disregards too distant entities and entities that're not aimed towards
 * Changed legged sinks to be potential water elemental sources
 * Changed how the 3DS remake replaces some portraits
 * Fixed swinging doors and maces didn't deal damage
+* Fixed Dresser Mounted Golden Lamp doesn't change to lit model when the room is lit
 * Fixed "Blue Twirler Easel" was called "Gold Ghost Easel"
 * Fixed "Elder Portraits" was called "Elders Portraits"
 * Fixed a typo in the 3DS Remake's score results strings

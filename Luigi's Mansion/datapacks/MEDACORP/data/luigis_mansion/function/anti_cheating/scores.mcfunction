@@ -117,6 +117,7 @@ scoreboard objectives add KnockbackZ dummy
 scoreboard objectives add LastFloor dummy
 scoreboard objectives add LastHealth dummy
 scoreboard objectives add LastHealthMusic dummy
+scoreboard objectives add LastPoltergustDistance dummy
 scoreboard objectives add LastRoom dummy
 scoreboard objectives add LastTotalDamage dummy
 scoreboard objectives add LightStep dummy

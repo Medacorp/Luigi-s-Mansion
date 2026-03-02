@@ -18,6 +18,10 @@ scoreboard players operation #temp2 PositionX += #temp2 PositionZ
 scoreboard players add #temp FurnitureSizeRadius 5
 scoreboard players operation #temp FurnitureSizeRadius *= #temp FurnitureSizeRadius
 execute if score #temp2 PositionX <= #temp FurnitureSizeRadius run tag @s add hit_by_poltergust
+execute if score #temp2 PositionX > @s LastPoltergustDistance run tag @s add out_of_poltergust_range
+scoreboard players operation @s LastPoltergustDistance = #temp2 PositionX
+scoreboard players operation #temp2 PositionX -= #temp FurnitureSizeRadius
+execute if score #temp2 PositionX matches 2290.. run tag @s add out_of_poltergust_range
 scoreboard players reset #temp PositionX
 scoreboard players reset #temp PositionY
 scoreboard players reset #temp PositionZ

@@ -1,3 +1,3 @@
-teleport @s ^ ^-0.55 ^
+teleport @s ^ ^ ^
 
 $execute at @s run function $(namespace):animations/mario/$(id)/body

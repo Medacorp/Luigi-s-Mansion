@@ -5,7 +5,6 @@
         "e3_demo:room/original/lavatory/interactions/room/mirror",
         "e3_demo:room/original/lavatory/interactions/room/radiator",
         "e3_demo:room/original/lavatory/interactions/room/shelf",
-        "e3_demo:room/original/lavatory/interactions/room/toilet_paper",
-        "e3_demo:room/original/lavatory/interactions/room/toilet_storage"
+        "e3_demo:room/original/lavatory/interactions/room/toilet_paper"
     ]
 }

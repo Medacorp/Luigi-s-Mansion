@@ -7,7 +7,6 @@
         "e3_demo:room/original/lavatory/reset/mirror",
         "e3_demo:room/original/lavatory/reset/radiator",
         "e3_demo:room/original/lavatory/reset/shelf",
-        "e3_demo:room/original/lavatory/reset/toilet_paper",
-        "e3_demo:room/original/lavatory/reset/toilet_storage"
+        "e3_demo:room/original/lavatory/reset/toilet_paper"
     ]
 }
