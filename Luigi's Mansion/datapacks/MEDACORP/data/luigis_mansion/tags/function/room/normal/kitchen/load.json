@@ -4,14 +4,15 @@
         "luigis_mansion:room/normal/kitchen/load/lights",
         "luigis_mansion:room/normal/kitchen/load/boneyard_door",
         "luigis_mansion:room/normal/kitchen/load/bouquet_portrait",
+        "luigis_mansion:room/normal/kitchen/load/ceiling_cabinets",
         "luigis_mansion:room/normal/kitchen/load/cloth",
         "luigis_mansion:room/normal/kitchen/load/cobweb",
         "luigis_mansion:room/normal/kitchen/load/dining_room_door",
-        "luigis_mansion:room/normal/kitchen/load/dripping_water",
         "luigis_mansion:room/normal/kitchen/load/fern_portrait",
         "luigis_mansion:room/normal/kitchen/load/fruit_basket_portrait",
         "luigis_mansion:room/normal/kitchen/load/haunted_objects",
-        "luigis_mansion:room/normal/kitchen/load/refridgerator",
-        "luigis_mansion:room/normal/kitchen/load/room_clear_chest"
+        "luigis_mansion:room/normal/kitchen/load/refrigerator",
+        "luigis_mansion:room/normal/kitchen/load/room_clear_chest",
+        "luigis_mansion:room/normal/kitchen/load/sink_base_cabinets"
     ]
 }

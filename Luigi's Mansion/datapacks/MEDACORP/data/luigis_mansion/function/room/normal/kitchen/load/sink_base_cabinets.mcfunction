@@ -1,0 +1,2 @@
+data modify storage luigis_mansion:data furniture set value {room:27,animation:{frozen:1b},particles:"dripping_water",water_elemental_source:{}}
+execute positioned 700.0 11 80.0 rotated -90 0 run function luigis_mansion:spawn_furniture/sink_base_cabinets

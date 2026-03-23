@@ -1,0 +1,2 @@
+data modify storage luigis_mansion:data furniture set value {room:15,no_ai:1b,animation:{frozen:1b}}
+execute positioned 700.0 17.5 80.0 rotated -90 0 run function e3_demo:spawn_furniture/ceiling_cabinets

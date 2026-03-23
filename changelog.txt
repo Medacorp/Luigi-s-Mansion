@@ -2,12 +2,14 @@ v?:
 * Added 3DS exclusive wooden arch door frame
 * Added the following furniture model:
 ** Bathtubs
+** Ceiling cabinets
 ** Fireplaces
 ** Fountains
 ** (Frozen) unicorn statues
 ** High-level cisterns
-** Refridgerators
+** Refrigerators
 ** Showers
+** Sink base cabinets
 * Changed Luigi and Mario models
 * Changed Chauncey's positioning so he's easier to hit with the ball
 * Changed Poltergust so it disregards too distant entities and entities that're not aimed towards

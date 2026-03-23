@@ -1,0 +1,1 @@
+{"model":{"type":"minecraft:condition","property":"minecraft:custom_model_data","index":0,"on_false":{"type":"minecraft:model","model":"e3_demo:furniture/sink_base_cabinets/right"},"on_true":{"type":"minecraft:model","model":"e3_demo:furniture/sink_base_cabinets/left"}}}
