@@ -7,18 +7,23 @@ v?:
 ** Fountains
 ** (Frozen) unicorn statues
 ** High-level cisterns
+** Inside lantern (chandelier)s
 ** Refrigerators
 ** Showers
 ** Sink base cabinets
 * Changed Luigi and Mario models
+* Changed poltergust to have an additional 0.5 blocks reach if not latched to a ghost
+* Changed poltergust to no longer be able to vacuum through walls if not latched to a ghost
 * Changed Chauncey's positioning so he's easier to hit with the ball
 * Changed Poltergust so it disregards too distant entities and entities that're not aimed towards
 * Changed legged sinks to be potential water elemental sources
 * Changed how the 3DS remake replaces some portraits
 * Fixed swinging doors and maces didn't deal damage
 * Fixed Dresser Mounted Golden Lamp doesn't change to lit model when the room is lit
+* Fixed Green Lamp in Parlor didn't have effects during blackout triggering
 * Fixed "Blue Twirler Easel" was called "Gold Ghost Easel"
 * Fixed "Elder Portraits" was called "Elders Portraits"
+* Fixed 3DS Hidden's F1 hallway gold mouse had wrong loot assigned
 * Fixed a typo in the 3DS Remake's score results strings
 * Fixed translations weren't updated
 * Removed deprecated elemental source entities

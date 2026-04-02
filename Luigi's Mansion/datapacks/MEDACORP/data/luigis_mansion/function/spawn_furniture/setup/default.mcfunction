@@ -30,6 +30,7 @@ execute if entity @e[tag=this_entity,tag=can_be_fire_elemental_source,limit=1] r
 execute if entity @e[tag=this_entity,tag=can_be_water_elemental_source,limit=1] run function luigis_mansion:spawn_furniture/setup/water_elemental_source
 execute if entity @e[tag=this_entity,tag=can_be_ice_elemental_source,limit=1] run function luigis_mansion:spawn_furniture/setup/ice_elemental_source
 execute if entity @e[tag=this_entity,tag=!lamp,scores={FurnitureLightStrength=0..15},limit=1] run function luigis_mansion:spawn_furniture/setup/ambient_light
+execute if entity @e[tag=this_entity,tag=chandelier,limit=1] run function luigis_mansion:spawn_furniture/setup/falling_chandelier
 execute if entity @e[tag=this_entity,tag=mirror,limit=1] run function luigis_mansion:spawn_furniture/setup/mirror_reflection
 execute if entity @e[tag=this_entity,tag=poster,limit=1] run function luigis_mansion:spawn_furniture/setup/poster
 execute if entity @e[tag=this_entity,tag=curtain,limit=1] run function luigis_mansion:spawn_furniture/setup/curtain

@@ -111,7 +111,7 @@ scoreboard players operation #temp PositionX += #temp PositionZ
 execute if score #temp PositionX matches ..25 run tag @s add hit_by_poltergust
 execute if score #temp PositionX > @s LastPoltergustDistance run tag @s add out_of_poltergust_range
 scoreboard players operation @s LastPoltergustDistance = #temp PositionX
-execute if score #temp PositionX matches 2035.. run tag @s add out_of_poltergust_range
+execute if score #temp PositionX matches 3000.. run tag @s add out_of_poltergust_range
 
 scoreboard players reset #cosx
 scoreboard players reset #cosy

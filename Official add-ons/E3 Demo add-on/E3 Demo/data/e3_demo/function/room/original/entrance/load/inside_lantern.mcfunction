@@ -1,0 +1,2 @@
+data modify storage luigis_mansion:data furniture set value {room:1,shake_animation:["interact","vacuum"],no_visual_shake:1b,no_long_shake:1b,no_dust:1b,sound:{namespace:"luigis_mansion",id:"metal"},scan_result:{namespace:"luigis_mansion",id:"scan/scanner/58"}}
+execute positioned 745 18 9.0 rotated -90 0 run function luigis_mansion:spawn_furniture/inside_lantern

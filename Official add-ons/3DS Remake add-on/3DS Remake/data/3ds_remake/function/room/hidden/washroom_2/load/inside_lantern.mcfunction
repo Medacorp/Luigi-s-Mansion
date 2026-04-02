@@ -1,0 +1,3 @@
+data modify storage luigis_mansion:data furniture set value {room:42,searchable:["vacuum"],shake_animation:["interact","vacuum"],no_visual_shake:1b,no_long_shake:1b,loot_chance:{namespace:"3ds_remake",id:"health_dependent_1"},sound:{namespace:"luigis_mansion",id:"heavy_generic"},scan_result:{namespace:"luigis_mansion",id:"scan/scanner/65"}}
+execute unless data storage luigis_mansion:data current_state.current_data{money_spawned:["washroom_2_inside_lantern"]} run data modify storage luigis_mansion:data furniture.loot set value {name:"washroom_2_inside_lantern",contents:{luigis_mansion:{gold_coin:3}}}
+execute positioned 664 27 41 rotated -90 0 run function luigis_mansion:spawn_furniture/inside_lantern

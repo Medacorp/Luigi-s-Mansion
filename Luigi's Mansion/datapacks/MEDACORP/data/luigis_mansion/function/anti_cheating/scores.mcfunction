@@ -33,6 +33,7 @@ scoreboard objectives add FlyTime dummy
 scoreboard objectives add Food food
 scoreboard objectives add ForceRadar dummy
 scoreboard objectives add ForceScreen dummy
+scoreboard objectives add FurnitureChandelier dummy
 scoreboard objectives add FurnitureContentForward dummy
 scoreboard objectives add FurnitureContentLeft dummy
 scoreboard objectives add FurnitureContentUp dummy
@@ -55,6 +56,7 @@ scoreboard objectives add FurnitureHitDirection dummy
 scoreboard objectives add FurnitureLightForward dummy
 scoreboard objectives add FurnitureLightLeft dummy
 scoreboard objectives add FurnitureLightStrength dummy
+scoreboard objectives add FurnitureLightTime dummy
 scoreboard objectives add FurnitureLightUp dummy
 scoreboard objectives add FurnitureRotationDefault dummy
 scoreboard objectives add FurnitureRotationSpeed dummy
@@ -158,6 +160,7 @@ scoreboard objectives add OtherZ dummy
 scoreboard objectives add PassiveNr dummy
 scoreboard objectives add PathStep dummy
 scoreboard objectives add PlayerRotation dummy
+scoreboard objectives add PoltergustRange dummy
 scoreboard objectives add PoltergustSound dummy
 scoreboard objectives add PositionIntX dummy
 scoreboard objectives add PositionIntY dummy
@@ -255,6 +258,8 @@ scoreboard players set #60 Constants 60
 scoreboard players set #100 Constants 100
 # Color generation
 scoreboard players set #256 Constants 256
+# Falling chandelier
+scoreboard players set #654 Constants 654
 # Localizing position, pearl dropping
 scoreboard players set #1000 Constants 1000
 # Rotate Luigi body, model display upside down

@@ -78,6 +78,10 @@ furniture:{
         light_on_search:1b, //Whether the light source turns on when searched. Default = 0b.
         cast_shadow:1b //Whether the light source creates shadows. Default = 0b.
     },
+    falling_chandelier:... //The ID of the function which triggers falling for this chandelier. Only applies to chandeliers. Optional.
+        * "always" //If set to this string, defaults to "luigis_mansion:entities/furniture/type/lamp/fall_trigger/always", triggers for every player under it, only ignoring warping players
+        * "chance" //If set to this string, defaults to "luigis_mansion:entities/furniture/type/lamp/fall_trigger/chance", rolls chance for every (new) player under it
+        * "chauncey", //If set to this string, defaults to "luigis_mansion:entities/furniture/type/lamp/fall_trigger/chauncey", rolls chance for every (new) player under it only if portrait ghost luigis_mansion:chauncey is uncaught
     mirror_reflection:1b, //Whether the mirror will actually reflect the room, otherwise gets a solid glass texture. Valid for mirrors only. Default = 1b. Forced to 0b if the yaw rotation is not a multiple of 90, or pose pitch has a non-0 value.
     boo_poster:1b, //Whether or not this is a Boo poster and cannot be vacuumed up. Default = 0b.
     curtain:{ //Fields exclusive to curtains

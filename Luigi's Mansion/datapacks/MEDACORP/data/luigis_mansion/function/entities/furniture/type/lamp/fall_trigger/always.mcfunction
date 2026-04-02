@@ -1,0 +1,1 @@
+execute at @e[tag=luigi,tag=same_room,scores={Health=1..}] positioned ~-1 ~-1 ~-1 unless entity @a[distance=..3,tag=scanning,limit=1] run tag @s[dx=1,dy=50,dz=1] add falling

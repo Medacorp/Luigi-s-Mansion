@@ -1,0 +1,3 @@
+data modify storage luigis_mansion:data furniture set value {room:1,searchable:["vacuum"],shake_animation:["interact","vacuum"],no_visual_shake:1b,no_long_shake:1b,loot_chance:{namespace:"luigis_mansion",id:"health_dependent_1"},sound:{namespace:"luigis_mansion",id:"metal"},scan_result:{namespace:"luigis_mansion",id:"scan/scanner/58"}}
+execute unless data storage luigis_mansion:data current_state.current_data{money_spawned:["foyer_inside_lantern"]} run data modify storage luigis_mansion:data furniture.loot set value {name:"foyer_inside_lantern",contents:{luigis_mansion:{gold_coin:5}}}
+execute positioned 745 18 9.0 rotated -90 0 run function luigis_mansion:spawn_furniture/inside_lantern

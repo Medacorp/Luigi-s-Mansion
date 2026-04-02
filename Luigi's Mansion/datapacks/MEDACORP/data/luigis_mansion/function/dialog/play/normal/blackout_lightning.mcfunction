@@ -18,6 +18,10 @@ execute if score #dialog Dialog matches 1 as @e[tag=luigi,tag=same_room] at @s p
 execute if score #dialog Dialog matches 1 run summon minecraft:lightning_bolt 695 131 38
 execute if score #dialog Dialog matches 30 run summon minecraft:lightning_bolt 695 131 -13
 execute if score #dialog Dialog matches 70 run summon minecraft:lightning_bolt 687 151 8.0
+execute if score #dialog Dialog matches 70 run tag @e[tag=lamp,scores={Room=1..}] add trigger_blackout
+execute if score #dialog Dialog matches 110 run tag @e[tag=lamp,scores={Room=1..}] add trigger_blackout
+execute if score #dialog Dialog matches 150 run tag @e[tag=lamp,scores={Room=1..}] add trigger_blackout
+execute if score #dialog Dialog matches 160 run tag @e[tag=lamp,scores={Room=1..}] add trigger_blackout
 execute if score #dialog Dialog matches 70..90 run function luigis_mansion:dialog/play/normal/blackout_lightning/particles
 execute if score #dialog Dialog matches 110..130 run function luigis_mansion:dialog/play/normal/blackout_lightning/particles
 execute if score #dialog Dialog matches 150..180 run function luigis_mansion:dialog/play/normal/blackout_lightning/particles

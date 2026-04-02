@@ -1,0 +1,3 @@
+execute at @e[tag=luigi,tag=same_room,scores={Health=1..},tag=!falling_chandelier_chance_check] positioned ~-1 ~-1 ~-1 unless entity @a[distance=..3,tag=scanning,limit=1] if predicate luigis_mansion:falling_chandelier_chance run tag @s[dx=1,dy=50,dz=1] add falling
+execute at @e[tag=luigi,tag=same_room,scores={Health=1..},tag=falling_chandelier_chance_check] positioned ~-1 ~-1 ~-1 unless entity @s[dx=1,dy=50,dz=1] positioned ~1 ~1 ~1 run tag @e[tag=luigi,distance=..0.1] remove falling_chandelier_chance_check
+execute at @e[tag=luigi,tag=same_room,scores={Health=1..},tag=!falling_chandelier_chance_check] positioned ~-1 ~-1 ~-1 if entity @s[dx=1,dy=50,dz=1] positioned ~1 ~1 ~1 run tag @e[tag=luigi,distance=..0.1] add falling_chandelier_chance_check
