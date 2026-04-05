@@ -5,9 +5,12 @@ v?:
 ** Ceiling cabinets
 ** Fireplaces
 ** Fountains
+** Fans (redone, now have the lamps too)
+** Food (redone, now have the plates too)
 ** (Frozen) unicorn statues
 ** High-level cisterns
 ** Inside lantern (chandelier)s
+** Ovoid lamps
 ** Refrigerators
 ** Showers
 ** Sink base cabinets
@@ -20,7 +23,8 @@ v?:
 * Changed how the 3DS remake replaces some portraits
 * Fixed swinging doors and maces didn't deal damage
 * Fixed Dresser Mounted Golden Lamp doesn't change to lit model when the room is lit
-* Fixed Green Lamp in Parlor didn't have effects during blackout triggering
+* Fixed table mounted lamps in the Parlor and master bedroom didn't have effects during blackout triggering
+* Fixed wall warp between master bedroom and ceramics studio was off by 1 block
 * Fixed "Blue Twirler Easel" was called "Gold Ghost Easel"
 * Fixed "Elder Portraits" was called "Elders Portraits"
 * Fixed 3DS Hidden's F1 hallway gold mouse had wrong loot assigned

@@ -3,15 +3,11 @@ execute if score #anteroom Ticking matches 1 if data storage luigis_mansion:data
 execute if score #anteroom Ticking matches 1 if data storage luigis_mansion:data current_state.current_data.rooms.anteroom{cleared:1b} run particle minecraft:bubble_pop 689 25 36 0.9 0.6 0.9 0 10
 execute if score #wardrobe_room Ticking matches 1 if data storage luigis_mansion:data current_state.current_data.rooms.wardrobe_room{cleared:1b} run particle minecraft:bubble_pop 682.0 26 66.0 1.2 0.6 1.2 0 10
 execute if score #balcony_1 Ticking matches 1 if data storage luigis_mansion:data current_state.current_data.rooms.balcony_1{cleared:1b} run particle minecraft:bubble_pop 676 114.5 39 0.3 0.3 0.3 0 10
-execute if score #hallway_2 Ticking matches 1 if data storage luigis_mansion:data current_state.current_data.rooms.hallway_2{cleared:1b} run particle minecraft:bubble_pop 726 26 62 0.9 0.6 0.9 0 10
 execute if score #study Ticking matches 1 if data storage luigis_mansion:data current_state.current_data.rooms.study{cleared:1b} run particle minecraft:bubble_pop 709.0 26 53.0 1.2 0.6 1.2 0 10
 execute if score #study Ticking matches 1 if data storage luigis_mansion:data current_state.current_data.rooms.study{cleared:1b} run particle minecraft:bubble_pop 707 21.5 50 0.3 0.3 0.3 0 10
 execute if score #study Ticking matches 1 if data storage luigis_mansion:data current_state.current_data.rooms.study{cleared:1b} run particle minecraft:bubble_pop 715 23.5 61 0.3 0.3 0.3 0 10
-execute if score #master_bedroom Ticking matches 1 if data storage luigis_mansion:data current_state.current_data.rooms.master_bedroom{cleared:1b} run particle minecraft:bubble_pop 691.0 116.5 47.0 1.2 0.3 1.2 0 10
+execute if score #master_bedroom Ticking matches 1 if data storage luigis_mansion:data current_state.current_data.rooms.master_bedroom{cleared:1b} run particle minecraft:bubble_pop 695 112.5 55 0.3 0.3 0.3 0 10
 execute if score #nursery Ticking matches 1 if data storage luigis_mansion:data current_state.current_data.rooms.nursery{cleared:1b} run particle minecraft:bubble_pop 744.5 25.5 63.5 0.3 0.3 0.3 0 10
-execute if score #hallway_3 Ticking matches 1 if data storage luigis_mansion:data current_state.current_data.rooms.hallway_3{cleared:1b} run particle minecraft:bubble_pop 716 17 10 0.9 0.6 0.9 0 10
-execute if score #hallway_3 Ticking matches 1 if data storage luigis_mansion:data current_state.current_data.rooms.hallway_3{cleared:1b} run particle minecraft:bubble_pop 716 17 -19 0.9 0.6 0.9 0 10
-execute if score #hallway_5 Ticking matches 1 if data storage luigis_mansion:data current_state.current_data.rooms.hallway_5{cleared:1b} run particle minecraft:bubble_pop 682 17 -19 0.9 0.6 0.9 0 10
 execute if score #hallway_7 Ticking matches 1 if data storage luigis_mansion:data current_state.current_data.rooms.hallway_7{cleared:1b} run particle minecraft:bubble_pop 716 15 -56 0.9 0.6 0.9 0 10
 execute if score #hallway_7 Ticking matches 1 if data storage luigis_mansion:data current_state.current_data.rooms.hallway_7{cleared:1b} run particle minecraft:bubble_pop 716 5.5 -44 0.3 0.3 0.3 0 10
 execute if score #bathroom_1 Ticking matches 1 if data storage luigis_mansion:data current_state.current_data.rooms.bathroom_1{cleared:1b} run particle minecraft:bubble_pop 656 17.5 22 0.3 0.3 0.3 0 10
@@ -30,7 +26,6 @@ execute if score #laundry_room Ticking matches 1 if data storage luigis_mansion:
 execute if score #butlers_room Ticking matches 1 if data storage luigis_mansion:data current_state.current_data.rooms.butlers_room{cleared:1b} run particle minecraft:bubble_pop 744 16.5 63 0.3 0.3 0.3 0 10
 execute if score #hidden_room Ticking matches 1 if data storage luigis_mansion:data current_state.current_data.rooms.hidden_room{cleared:1b} run particle minecraft:bubble_pop 744.0 16 40.0 1.2 0.6 1.2 0 10
 execute if score #conservatory Ticking matches 1 if data storage luigis_mansion:data current_state.current_data.rooms.conservatory{cleared:1b} run particle minecraft:bubble_pop 658 17.5 -16 0.3 0.3 0.3 0 10
-execute if score #dining_room Ticking matches 1 if data storage luigis_mansion:data current_state.current_data.rooms.dining_room{cleared:1b} run particle minecraft:bubble_pop 704 17 43 0.9 0.6 0.9 0 10
 execute if score #dining_room Ticking matches 1 if data storage luigis_mansion:data current_state.current_data.rooms.dining_room{cleared:1b} run particle minecraft:bubble_pop 709 14.5 30 0.3 0.3 0.3 0 10
 execute if score #dining_room Ticking matches 1 if data storage luigis_mansion:data current_state.current_data.rooms.dining_room{cleared:1b} run particle minecraft:bubble_pop 699 14.5 38 0.3 0.3 0.3 0 10
 execute if score #dining_room Ticking matches 1 if data storage luigis_mansion:data current_state.current_data.rooms.dining_room{cleared:1b} run particle minecraft:bubble_pop 699 14.5 48 0.3 0.3 0.3 0 10
@@ -44,15 +39,11 @@ execute if score #rec_room Ticking matches 1 if data storage luigis_mansion:data
 execute if score #rec_room Ticking matches 1 if data storage luigis_mansion:data current_state.current_data.rooms.rec_room{cleared:1b} run particle minecraft:bubble_pop 643 16.5 -38 0.3 0.3 0.3 0 10
 execute if score #hallway_8 Ticking matches 1 if data storage luigis_mansion:data current_state.current_data.rooms.hallway_8{cleared:1b} run particle minecraft:bubble_pop 663 24 -56 0.9 0.6 0.9 0 10
 execute if score #tea_room Ticking matches 1 if data storage luigis_mansion:data current_state.current_data.rooms.tea_room{cleared:1b} run particle minecraft:bubble_pop 643.0 25 -45.0 1.2 0.6 1.2 0 10
-execute if score #hallway_9 Ticking matches 1 if data storage luigis_mansion:data current_state.current_data.rooms.hallway_9{cleared:1b} run particle minecraft:bubble_pop 682 26 8 0.9 0.6 0.9 0 10
-execute if score #hallway_9 Ticking matches 1 if data storage luigis_mansion:data current_state.current_data.rooms.hallway_9{cleared:1b} run particle minecraft:bubble_pop 682 26 -19 0.9 0.6 0.9 0 10
-execute if score #hallway_13 Ticking matches 1 if data storage luigis_mansion:data current_state.current_data.rooms.hallway_13{cleared:1b} run particle minecraft:bubble_pop 716 26 -19 0.9 0.6 0.9 0 10
 execute if score #hallway_14 Ticking matches 1 if data storage luigis_mansion:data current_state.current_data.rooms.hallway_14{cleared:1b} run particle minecraft:bubble_pop 716 32 -46 0.9 0.6 0.9 0 10
 execute if score #bathroom_2 Ticking matches 1 if data storage luigis_mansion:data current_state.current_data.rooms.bathroom_2{cleared:1b} run particle minecraft:bubble_pop 656 26.5 22 0.3 0.3 0.3 0 10
 execute if score #nanas_room Ticking matches 1 if data storage luigis_mansion:data current_state.current_data.rooms.nanas_room{cleared:1b} run particle minecraft:bubble_pop 658 25 -15 0.9 0.6 0.9 0 10
 execute if score #astral_hall Ticking matches 1 if data storage luigis_mansion:data current_state.current_data.rooms.astral_hall{cleared:1b} run particle minecraft:bubble_pop 666 25 -82 0.9 0.6 0.9 0 10
 execute if score #observatory Ticking matches 1 if data storage luigis_mansion:data current_state.current_data.rooms.observatory{cleared:1b} unless data storage luigis_mansion:data current_state.current_data.technical_data{observatory_destroyed:1b} run particle minecraft:bubble_pop 645 25 -78 0.9 0.6 0.9 0 10
-execute if score #billiards_room Ticking matches 1 if data storage luigis_mansion:data current_state.current_data.rooms.billiards_room{cleared:1b} run particle minecraft:bubble_pop 681.0 16.5 78.0 0.6 0.3 0.6 0 10
 execute if score #projection_room Ticking matches 1 if data storage luigis_mansion:data current_state.current_data.rooms.projection_room{cleared:1b} run particle minecraft:bubble_pop 681 16.5 41 0.3 0.3 0.3 0 10
 execute if score #projection_room Ticking matches 1 if data storage luigis_mansion:data current_state.current_data.rooms.projection_room{cleared:1b} run particle minecraft:bubble_pop 681 16.5 35 0.3 0.3 0.3 0 10
 execute if score #the_twins_room Ticking matches 1 if data storage luigis_mansion:data current_state.current_data.rooms.the_twins_room{cleared:1b} run particle minecraft:bubble_pop 743 25.5 40 0.3 0.3 0.3 0 10

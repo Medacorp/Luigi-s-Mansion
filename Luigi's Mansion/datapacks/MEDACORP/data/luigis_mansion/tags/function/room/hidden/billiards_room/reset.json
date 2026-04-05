@@ -1,7 +1,6 @@
 {
     "values": [
         "luigis_mansion:room/hidden/billiards_room/reset/unload",
-        "#luigis_mansion:room/hidden/billiards_room/turn_lights/off",
         "luigis_mansion:room/hidden/billiards_room/reset/billiards_table",
         "luigis_mansion:room/hidden/billiards_room/reset/chair_1",
         "luigis_mansion:room/hidden/billiards_room/reset/chair_2",
