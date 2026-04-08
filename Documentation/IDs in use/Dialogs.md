@@ -204,7 +204,7 @@ luigis_mansion:scan/scanner/65                        | Yes         | Field scan
 luigis_mansion:scan/scanner/66                        | Yes         | Field scanning_player                          | Finicky about hats                          | 
 luigis_mansion:scan/scanner/67                        | Yes         | Field scanning_player                          | Comfortable, stick with my buds             | 
 luigis_mansion:scan/scanner/68                        | Yes         | Field scanning_player                          | Pricey                                      | 
-luigis_mansion:scan/scanner/69                        | Yes         | Field scanning_player                          | interior decorating                         | 
+luigis_mansion:scan/scanner/69                        | Yes         | Field scanning_player                          | Interior decorating                         | 
 luigis_mansion:scan/scanner/70                        | Yes         | Field scanning_player                          | Not watered in a long time                  | 
 luigis_mansion:scan/scanner/71                        | Yes         | Field scanning_player                          | I had one of these!                         | 
 luigis_mansion:scan/scanner/72                        | Yes         | Field scanning_player                          | Flower season                               | 

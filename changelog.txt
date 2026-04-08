@@ -8,6 +8,7 @@ v?:
 ** Fans (redone, now have the lamps too)
 ** Food (redone, now have the plates too)
 ** (Frozen) unicorn statues
+** (E3 Demo) grandfather clocks
 ** Hanging toilet paper
 ** High-level cisterns
 ** Inside lantern (chandelier)s
