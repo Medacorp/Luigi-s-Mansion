@@ -4,32 +4,23 @@
 /*.json
 /*.properties
 /Future add-ons/
-/Luigi's Mansion/DIM-1/
-/Luigi's Mansion/DIM1/
-/Luigi's Mansion/advancements/
-/Luigi's Mansion/data/chunks.dat
-/Luigi's Mansion/data/command_storage_*
-/Luigi's Mansion/data/raids.dat
-/Luigi's Mansion/data/random_sequences.dat
-/Luigi's Mansion/data/scoreboard.dat
-/Luigi's Mansion/data/stopwatches.dat
-/Luigi's Mansion/data/world_border.dat
+/Luigi's Mansion/data/*
+!/Luigi's Mansion/data/minecraft/
+/Luigi's Mansion/data/minecraft/*.dat
+!/Luigi's Mansion/data/minecraft/world_gen_settings.dat
 /Luigi's Mansion/datapacks/*
 !/Luigi's Mansion/datapacks/MEDACORP/
 /Luigi's Mansion/dimensions/*
 !/Luigi's Mansion/dimensions/luigis_mansion/
-/Luigi's Mansion/dimensions/luigis_mansion/**/data/chunks.dat
-/Luigi's Mansion/dimensions/luigis_mansion/**/data/raids.dat
-/Luigi's Mansion/dimensions/luigis_mansion/**/data/world_border.dat
+/Luigi's Mansion/dimensions/luigis_mansion/**/data/
 /Luigi's Mansion/dimensions/luigis_mansion/**/entities/
 /Luigi's Mansion/dimensions/luigis_mansion/**/poi/
-/Luigi's Mansion/entities/
-/Luigi's Mansion/playerdata/
-/Luigi's Mansion/poi/
-/Luigi's Mansion/stats/
-/Official add-ons/*/Dimension/*/**/data/chunks.dat
-/Official add-ons/*/Dimension/*/**/data/raids.dat
-/Official add-ons/*/Dimension/*/**/data/world_border.dat
+!/Luigi's Mansion/dimensions/minecraft
+/Luigi's Mansion/dimensions/minecraft/overworld/data/
+/Luigi's Mansion/dimensions/minecraft/overworld/entities/
+/Luigi's Mansion/dimensions/minecraft/overworld/poi/
+/Luigi's Mansion/players/
+/Official add-ons/*/Dimension/*/**/data/
 /Official add-ons/*/Dimension/*/**/entities/
 /Official add-ons/*/Dimension/*/**/poi/
 /allowed_symlinks.txt

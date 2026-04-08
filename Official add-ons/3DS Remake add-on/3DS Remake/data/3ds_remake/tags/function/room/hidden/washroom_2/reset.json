@@ -3,8 +3,6 @@
         "3ds_remake:room/hidden/washroom_2/reset/unload",
         "3ds_remake:room/hidden/washroom_2/reset/mirror",
         "3ds_remake:room/hidden/washroom_2/reset/radiator",
-        "3ds_remake:room/hidden/washroom_2/reset/room_clear_chest",
-        "3ds_remake:room/hidden/washroom_2/reset/shelf",
-        "3ds_remake:room/hidden/washroom_2/reset/toilet_paper"
+        "3ds_remake:room/hidden/washroom_2/reset/room_clear_chest"
     ]
 }

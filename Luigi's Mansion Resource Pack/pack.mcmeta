@@ -1,7 +1,7 @@
 {
     "pack": {
-        "min_format": [ 75 ],
-        "max_format": [ 75 ],
+        "min_format": [ 84 ],
+        "max_format": [ 84 ],
         "description": {
             "type": "translatable",
             "translate": "luigis_mansion:resource_pack.description",

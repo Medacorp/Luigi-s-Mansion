@@ -1,0 +1,2 @@
+data modify storage luigis_mansion:data furniture set value {room:23,searchable:["interact","vacuum"],shake_animation:["interact","vacuum"],sound:{namespace:"luigis_mansion",id:"heavy_generic"},scan_result:{namespace:"luigis_mansion",id:"scan/scanner/4"}}
+execute positioned 745.5 11.75 -39.7 rotated -90 0 run function luigis_mansion:spawn_furniture/toilet_paper

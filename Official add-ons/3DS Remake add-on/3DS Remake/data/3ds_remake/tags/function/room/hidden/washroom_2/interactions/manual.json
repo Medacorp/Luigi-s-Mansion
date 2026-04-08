@@ -1,8 +1,6 @@
 {
     "values": [
         "3ds_remake:room/hidden/washroom_2/interactions/manual/mirror",
-        "3ds_remake:room/hidden/washroom_2/interactions/manual/radiator",
-        "3ds_remake:room/hidden/washroom_2/interactions/manual/shelf",
-        "3ds_remake:room/hidden/washroom_2/interactions/manual/toilet_paper"
+        "3ds_remake:room/hidden/washroom_2/interactions/manual/radiator"
     ]
 }
