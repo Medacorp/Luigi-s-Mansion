@@ -14,7 +14,9 @@ v?:
 ** Inside lantern (chandelier)s
 ** Ovoid lamps
 ** Refrigerators
+** Shelved food (and vases)
 ** Shelved toilet paper
+** (3DS Remake) Shelved washing supplies
 ** Showers
 ** Sink base cabinets
 ** Toilet paper (piles)

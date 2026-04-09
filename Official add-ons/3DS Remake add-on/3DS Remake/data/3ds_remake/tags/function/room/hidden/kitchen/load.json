@@ -13,6 +13,11 @@
         "3ds_remake:room/hidden/kitchen/load/haunted_objects",
         "3ds_remake:room/hidden/kitchen/load/refrigerator",
         "3ds_remake:room/hidden/kitchen/load/room_clear_chest",
+        "3ds_remake:room/hidden/kitchen/load/shelved_food_1",
+        "3ds_remake:room/hidden/kitchen/load/shelved_food_2",
+        "3ds_remake:room/hidden/kitchen/load/shelved_food_3",
+        "3ds_remake:room/hidden/kitchen/load/shelved_food_and_vase",
+        "3ds_remake:room/hidden/kitchen/load/shelved_washing_supplies",
         "3ds_remake:room/hidden/kitchen/load/sink_base_cabinets"
     ]
 }

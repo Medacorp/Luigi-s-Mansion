@@ -13,6 +13,11 @@
         "luigis_mansion:room/hidden/kitchen/load/haunted_objects",
         "luigis_mansion:room/hidden/kitchen/load/refrigerator",
         "luigis_mansion:room/hidden/kitchen/load/room_clear_chest",
+        "luigis_mansion:room/hidden/kitchen/load/shelved_food_1",
+        "luigis_mansion:room/hidden/kitchen/load/shelved_food_2",
+        "luigis_mansion:room/hidden/kitchen/load/shelved_food_3",
+        "luigis_mansion:room/hidden/kitchen/load/shelved_food_and_vase_1",
+        "luigis_mansion:room/hidden/kitchen/load/shelved_food_and_vase_2",
         "luigis_mansion:room/hidden/kitchen/load/sink_base_cabinets"
     ]
 }
