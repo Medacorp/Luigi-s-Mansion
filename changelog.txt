@@ -1,5 +1,5 @@
 v?:
-* Updated to 26.1
+* Updated to 26.1.2
 * Added the following furniture model:
 ** Bathtubs
 ** Ceiling cabinets
@@ -28,6 +28,8 @@ v?:
 * Changed Poltergust so it disregards too distant entities and entities that're not aimed towards
 * Changed legged sinks to be potential water elemental sources
 * Changed how the 3DS remake replaces some portraits
+* Fixed loading save data doesn't warp dead players to the underground lab
+* Fixed loading save data doesn't send revive messages if no mansion ended up being loaded (but did revive everyone)
 * Fixed swinging doors and maces didn't deal damage
 * Fixed Dresser Mounted Golden Lamp doesn't change to lit model when the room is lit
 * Fixed table mounted lamps in the Parlor and master bedroom didn't have effects during blackout triggering

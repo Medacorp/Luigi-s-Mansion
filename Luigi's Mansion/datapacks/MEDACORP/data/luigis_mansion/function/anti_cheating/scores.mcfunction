@@ -259,8 +259,8 @@ scoreboard players set #100 Constants 100
 # Color generation
 scoreboard players set #256 Constants 256
 # Falling chandelier
-scoreboard players set #654 Constants 654
-# Localizing position, pearl dropping
+scoreboard players set #625 Constants 625
+# Localizing position, pearl dropping, falling chandelier
 scoreboard players set #1000 Constants 1000
 # Rotate Luigi body, model display upside down
 scoreboard players set #10000 Constants 10000
@@ -273,7 +273,7 @@ scoreboard objectives setdisplay list Health
 execute store result score #global_difficulty Selected run difficulty
 execute unless score #global_mirror_reflections Selected matches 0..1 run scoreboard players set #global_mirror_reflections Selected 1
 execute unless score #global_player_names Selected matches 0..1 run scoreboard players set #global_player_names Selected 1
-execute store result score #debug_enabled Selected run gamerule minecraft:send_command_feedback
+execute unless score #debug_enabled Selected matches 0..1 run scoreboard players set #debug_enabled Selected 0
 execute unless score #debug_messages Selected matches 0..2 run scoreboard players set #debug_messages Selected 0
 execute unless score #debug_furniture Selected matches 0..1 run scoreboard players set #debug_furniture Selected 0
 execute unless score #debug_entities Selected matches 0..1 run scoreboard players set #debug_entities Selected 0
@@ -303,3 +303,7 @@ gamerule minecraft:fall_damage false
 gamerule minecraft:max_command_sequence_length 2147483647
 gamerule minecraft:max_command_forks 2147483647
 gamerule minecraft:pvp false
+gamerule minecraft:random_tick_speed 0
+gamerule minecraft:spawn_monsters false
+gamerule minecraft:spawn_phantoms false
+gamerule minecraft:spawn_wandering_traders false

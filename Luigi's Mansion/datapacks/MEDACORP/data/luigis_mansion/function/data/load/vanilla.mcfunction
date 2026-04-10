@@ -9,7 +9,9 @@ data remove storage luigis_mansion:data dialog
 scoreboard players set * ChangedMansion 1
 scoreboard players reset @e ChangedMansion
 
-execute as @a unless entity @s[scores={Room=..-1}] run function luigis_mansion:room/underground_lab/warp_to
+execute as @a[gamemode=!spectator] unless entity @s[scores={Room=..-1}] run function luigis_mansion:room/underground_lab/warp_to
+execute as @a[gamemode=spectator] unless entity @s[scores={Room=..-1}] in minecraft:overworld run teleport @s 790 77 15 45 0
+execute as @a[gamemode=spectator] unless entity @s[scores={Room=..-1}] run function luigis_mansion:main/update_last_position
 data modify storage luigis_mansion:data macro.index set from storage luigis_mansion:data current_state.current_data.data_index
 function luigis_mansion:room/reset_mansion with storage luigis_mansion:data current_state.current_data.mansion_id
 data modify storage luigis_mansion:data current_state.current_data set value {nothing_loaded:1b}
@@ -20,5 +22,6 @@ function luigis_mansion:data/load_mansion with storage luigis_mansion:data macro
 execute unless data storage luigis_mansion:data current_state.current_data{nothing_loaded:1b} run function luigis_mansion:room/forceload_mansion with storage luigis_mansion:data current_state.current_data.mansion_id
 execute unless data storage luigis_mansion:data current_state.current_data{nothing_loaded:1b} run function luigis_mansion:data/load_mansion_door with storage luigis_mansion:data current_state.current_data.mansion_id
 execute if data storage luigis_mansion:data current_state.current_data{nothing_loaded:1b} run scoreboard players set @a Health 100
+execute if data storage luigis_mansion:data current_state.current_data{nothing_loaded:1b} as @a[gamemode=spectator] run function luigis_mansion:entities/player/mansion_change_revived
 execute if data storage luigis_mansion:data current_state.current_data{nothing_loaded:1b} run gamemode adventure @a[gamemode=spectator]
 execute if data storage luigis_mansion:data current_state.current_data{nothing_loaded:1b} run function luigis_mansion:room/load_exterior {namespace:"luigis_mansion",id:"empty"}
