@@ -1,5 +1,4 @@
 #todelete - old furniture
-execute if score #temp Room matches 1 run function #luigis_mansion:room/hidden/foyer/interactions/manual
 execute if score #temp Room matches 3 run function #luigis_mansion:room/hidden/parlor/interactions/manual
 execute if score #temp Room matches 4 run function #luigis_mansion:room/hidden/anteroom/interactions/manual
 execute if score #temp Room matches 5 run function #luigis_mansion:room/hidden/wardrobe_room/interactions/manual

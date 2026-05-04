@@ -110,6 +110,8 @@ teleport @s[scores={Dialog=944},tag=!left] ~ ~ ~ -180 0
 teleport @s[scores={Dialog=944},tag=left] ~ ~ ~ 0 0
 data modify entity @s[scores={Dialog=944}] data.animation set value {namespace:"luigis_mansion",id:"bounce"}
 scoreboard players add @s[scores={Dialog=945}] PathStep 1
+execute if entity @s[scores={Dialog=945,PathStep=1}] run playsound luigis_mansion:entity.chauncey.shake_room hostile @a[tag=same_room] ~ ~ ~ 3
+execute if entity @s[scores={Dialog=945,PathStep=20}] run playsound luigis_mansion:entity.chauncey.bounce hostile @a[tag=same_room] ~ ~ ~ 1
 teleport @s[scores={Dialog=945,PathStep=1..10}] ^ ^0.2 ^0.2
 teleport @s[scores={Dialog=945,PathStep=11..20}] ^ ^-0.2 ^0.2
 execute at @s[scores={Dialog=945,PathStep=20}] run data modify storage luigis_mansion:data damage set value {method:{namespace:"luigis_mansion",id:"bounced_on"},amount:10,animation:{namespace:"luigis_mansion",id:"knockback/large"},no_delete:1b}

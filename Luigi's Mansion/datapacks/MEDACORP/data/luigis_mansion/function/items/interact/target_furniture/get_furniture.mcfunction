@@ -1,0 +1,1 @@
+$tag @e[nbt={UUID:$(search_furniture)},limit=1] add hit

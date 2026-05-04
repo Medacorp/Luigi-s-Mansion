@@ -10,6 +10,8 @@
         "luigis_mansion:room/hidden/laundry_room/load/hallway_3_door",
         "luigis_mansion:room/hidden/laundry_room/load/kitchen_fake_door",
         "luigis_mansion:room/hidden/laundry_room/load/metal_bucket",
-        "luigis_mansion:room/hidden/laundry_room/load/room_clear_chest"
+        "luigis_mansion:room/hidden/laundry_room/load/room_clear_chest",
+        "luigis_mansion:room/hidden/laundry_room/load/shelved_detergent",
+        "luigis_mansion:room/hidden/laundry_room/load/washing_machine"
     ]
 }

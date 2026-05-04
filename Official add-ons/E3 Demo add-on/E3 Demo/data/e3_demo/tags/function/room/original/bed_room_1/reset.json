@@ -1,7 +1,6 @@
 {
     "values": [
         "e3_demo:room/original/bed_room_1/reset/unload",
-        "#e3_demo:room/original/bed_room_1/turn_lights/off",
         "e3_demo:room/original/bed_room_1/reset/bed_1",
         "e3_demo:room/original/bed_room_1/reset/bed_2",
         "e3_demo:room/original/bed_room_1/reset/chair",

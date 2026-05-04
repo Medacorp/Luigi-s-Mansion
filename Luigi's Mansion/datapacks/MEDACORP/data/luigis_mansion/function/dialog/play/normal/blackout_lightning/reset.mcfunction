@@ -3,7 +3,6 @@ execute if score #anteroom Ticking matches 1 run function #luigis_mansion:room/n
 execute if score #wardrobe_room Ticking matches 1 run function #luigis_mansion:room/normal/wardrobe_room/turn_lights/off
 execute if score #balcony_1 Ticking matches 1 run function #luigis_mansion:room/normal/balcony_1/turn_lights/off
 execute if score #study Ticking matches 1 run function #luigis_mansion:room/normal/study/turn_lights/off
-execute if score #master_bedroom Ticking matches 1 run function #luigis_mansion:room/normal/master_bedroom/turn_lights/off
 execute if score #nursery Ticking matches 1 run function #luigis_mansion:room/normal/nursery/turn_lights/off
 execute if score #hallway_7 Ticking matches 1 run function #luigis_mansion:room/normal/hallway_7/turn_lights/off
 execute if score #bathroom_1 Ticking matches 1 run function #luigis_mansion:room/normal/bathroom_1/turn_lights/off

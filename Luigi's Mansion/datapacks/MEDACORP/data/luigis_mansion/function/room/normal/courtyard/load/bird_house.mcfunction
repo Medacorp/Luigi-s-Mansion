@@ -1,0 +1,3 @@
+data modify storage luigis_mansion:data furniture set value {room:30,searchable:["interact","vacuum"],shake_animation:["interact","vacuum"],sound:{namespace:"luigis_mansion",id:"generic"},scan_result:{namespace:"luigis_mansion",id:"scan/scanner/50"}}
+execute unless data storage luigis_mansion:data current_state.current_data.obtained_items{marios_letter:1b} run data modify storage luigis_mansion:data furniture.loot set value {contents:{luigis_mansion:{mario_item:[{variant:"letter"}]}}}
+execute positioned 647 102 -12 rotated -135 0 run function luigis_mansion:spawn_furniture/bird_house

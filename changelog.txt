@@ -1,4 +1,28 @@
 v?:
+* Added the following furniture model:
+** Bird houses
+** Drum lamps
+** Shampoo shelves
+** Shelved detergent
+** Tennis rackets
+** Twin desks
+** Washing machines
+** Wine bottles
+** Wine glasses
+* Added the following sounds:
+** Ceiling ghost hurting and attacking
+** Chauncey bouncing
+** Cold storage ambience
+** Furniture (that has a model) opening
+** Fireplace ambient and extinguish
+** Guest room flipping
+** Rocking horse rocking
+* Added 3DS exclusive stone bowl wall candelabras in the last hallway
+* Fixed manual searching could search multiple furniture at once; now searches the smallest of the hit furniture only
+* Fixed mirrors reflecting position wasn't fully accurate
+* Removed scan results for exterior; couldn't scan there anymore anyways
+
+v3.5:
 * Updated to 26.1.2
 * Added the following furniture model:
 ** Bathtubs

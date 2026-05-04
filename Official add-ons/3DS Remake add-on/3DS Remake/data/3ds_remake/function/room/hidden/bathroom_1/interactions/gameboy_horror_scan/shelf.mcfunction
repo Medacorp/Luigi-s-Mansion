@@ -1,1 +1,0 @@
-execute at @e[x=656.0,y=15,z=27.0,dx=2,dy=0,dz=0] run function luigis_mansion:selection_menu/game_boy_horror/scan/dialog {namespace:"luigis_mansion",id:"scan/scanner/12"}

@@ -2,7 +2,6 @@
     "values": [
         "luigis_mansion:room/hidden/master_bedroom/interactions/manual/bed",
         "luigis_mansion:room/hidden/master_bedroom/interactions/manual/chair",
-        "luigis_mansion:room/hidden/master_bedroom/interactions/manual/lamp",
         "luigis_mansion:room/hidden/master_bedroom/interactions/manual/mirror",
         "luigis_mansion:room/hidden/master_bedroom/interactions/manual/plant"
     ]

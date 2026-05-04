@@ -7,6 +7,23 @@
             }
         ]
     },
+    "ambience.flipping_room": {
+        "sounds": [
+            {
+                "name": "luigis_mansion:ambience/flipping_room",
+                "stream": true
+            }
+        ],
+        "subtitle": "luigis_mansion:subtitles.ambience.room_shake"
+    },
+    "ambience.freezing_wind": {
+        "sounds": [
+            {
+                "name": "luigis_mansion:ambience/freezing_wind",
+                "stream": true
+            }
+        ]
+    },
     "ambience.parlor_wind": {
         "sounds": [
             {
@@ -665,6 +682,15 @@
         ],
         "subtitle": "luigis_mansion:subtitles.entity.boolossus.pop"
     },
+    "entity.boolossus.shake_room": {
+        "sounds": [
+            {
+                "name": "luigis_mansion:entity/boolossus/shake_room",
+                "stream": false
+            }
+        ],
+        "subtitle": "luigis_mansion:subtitles.ambient.room_shake"
+    },
     "entity.bogmire.ambient": {
         "sounds": [
             {
@@ -1054,7 +1080,7 @@
     "entity.ceiling_surprise.element_hurt": {
         "sounds": [
             {
-                "name": "luigis_mansion:entity/ceiling_ghost/element_hurt",
+                "name": "luigis_mansion:entity/ceiling_ghost/hurt",
                 "stream": false
             }
         ],
@@ -1063,7 +1089,7 @@
     "entity.ceiling_surprise.flee": {
         "sounds": [
             {
-                "name": "luigis_mansion:entity/ceiling_ghost/flee",
+                "name": "luigis_mansion:entity/ceiling_ghost/hurt",
                 "stream": false
             }
         ],
@@ -1104,6 +1130,15 @@
             }
         ],
         "subtitle": "luigis_mansion:subtitles.entity.chauncey.attack"
+    },
+    "entity.chauncey.bounce": {
+        "sounds": [
+            {
+                "name": "luigis_mansion:entity/chauncey/bounce",
+                "stream": false
+            }
+        ],
+        "subtitle": "luigis_mansion:subtitles.entity.chauncey.bounce"
     },
     "entity.chauncey.complain": {
         "sounds": [
@@ -1225,6 +1260,15 @@
             }
         ],
         "subtitle": "luigis_mansion:subtitles.entity.chauncey.cry"
+    },
+    "entity.chauncey.shake_room": {
+        "sounds": [
+            {
+                "name": "luigis_mansion:entity/chauncey/shake_room",
+                "stream": false
+            }
+        ],
+        "subtitle": "luigis_mansion:subtitles.ambient.room_shake"
     },
     "entity.chauncey.yawn": {
         "sounds": [
@@ -7682,7 +7726,7 @@
     "entity.purple_bomber.element_hurt": {
         "sounds": [
             {
-                "name": "luigis_mansion:entity/ceiling_ghost/element_hurt",
+                "name": "luigis_mansion:entity/ceiling_ghost/hurt",
                 "stream": false
             }
         ],
@@ -7691,7 +7735,7 @@
     "entity.purple_bomber.flee": {
         "sounds": [
             {
-                "name": "luigis_mansion:entity/ceiling_ghost/flee",
+                "name": "luigis_mansion:entity/ceiling_ghost/hurt",
                 "stream": false
             }
         ],
@@ -9177,6 +9221,15 @@
         ],
         "subtitle": "luigis_mansion:subtitles.furniture.door.turn_knob"
     },
+    "furniture.dresser_mounted_golden_lamp": {
+        "sounds": [
+            {
+                "name": "luigis_mansion:furniture/dresser_mounted_golden_lamp",
+                "stream": false
+            }
+        ],
+        "subtitle": "luigis_mansion:subtitles.furniture.search.open"
+    },
     "furniture.dust": {
         "sounds": [
             {
@@ -9195,6 +9248,51 @@
         ],
         "subtitle": "luigis_mansion:subtitles.furniture.fan"
     },
+    "furniture.fire.ambient": {
+        "sounds": [
+            {
+                "name": "luigis_mansion:furniture/fire/ambient",
+                "stream": false
+            }
+        ],
+        "subtitle": "luigis_mansion:subtitles.furniture.fire.ambient"
+    },
+    "furniture.fire.extinguish": {
+        "sounds": [
+            {
+                "name": "luigis_mansion:furniture/fire/extinguish",
+                "stream": false
+            }
+        ],
+        "subtitle": "luigis_mansion:subtitles.furniture.fire.extinguish"
+    },
+    "furniture.hide_and_seek_box": {
+        "sounds": [
+            {
+                "name": "luigis_mansion:furniture/hide_and_seek_box",
+                "stream": false
+            }
+        ],
+        "subtitle": "luigis_mansion:subtitles.furniture.search.open"
+    },
+    "furniture.master_dresser": {
+        "sounds": [
+            {
+                "name": "luigis_mansion:furniture/master_dresser",
+                "stream": false
+            }
+        ],
+        "subtitle": "luigis_mansion:subtitles.furniture.search.open"
+    },
+    "furniture.metal_chest": {
+        "sounds": [
+            {
+                "name": "luigis_mansion:furniture/metal_chest",
+                "stream": false
+            }
+        ],
+        "subtitle": "luigis_mansion:subtitles.furniture.search.open"
+    },
     "furniture.moving_wall": {
         "sounds": [
             {
@@ -9203,6 +9301,15 @@
             }
         ],
         "subtitle": "luigis_mansion:subtitles.furniture.moving_wall"
+    },
+    "furniture.nightstand": {
+        "sounds": [
+            {
+                "name": "luigis_mansion:furniture/nightstand",
+                "stream": false
+            }
+        ],
+        "subtitle": "luigis_mansion:subtitles.furniture.search.open"
     },
     "furniture.painting.count": {
         "sounds": [
@@ -9231,6 +9338,15 @@
         ],
         "subtitle": "luigis_mansion:subtitles.furniture.painting.land"
     },
+    "furniture.refrigerator": {
+        "sounds": [
+            {
+                "name": "luigis_mansion:furniture/refrigerator",
+                "stream": false
+            }
+        ],
+        "subtitle": "luigis_mansion:subtitles.furniture.search.open"
+    },
     "furniture.rocking_chair.move_forward": {
         "sounds": [
             {
@@ -9249,23 +9365,27 @@
         ],
         "subtitle": "luigis_mansion:subtitles.furniture.rocking_chair.rock"
     },
-    "furniture.rocking_horse.move_forward": {
+    "furniture.rocking_horse.rock": {
         "sounds": [
             {
-                "name": "luigis_mansion:furniture/rocking_horse/move_forward",
+                "name": "luigis_mansion:furniture/rocking_horse/rock1",
+                "stream": false
+            },
+            {
+                "name": "luigis_mansion:furniture/rocking_horse/rock2",
                 "stream": false
             }
         ],
         "subtitle": "luigis_mansion:subtitles.furniture.rocking_horse.rock"
     },
-    "furniture.rocking_horse.move_backward": {
+    "furniture.room_clear_chest.open": {
         "sounds": [
             {
-                "name": "luigis_mansion:furniture/rocking_horse/move_backward",
+                "name": "luigis_mansion:furniture/room_clear_chest/open",
                 "stream": false
             }
         ],
-        "subtitle": "luigis_mansion:subtitles.furniture.rocking_horse.rock"
+        "subtitle": "luigis_mansion:subtitles.furniture.search.open"
     },
     "furniture.room_clear_chest.spawn": {
         "sounds": [
@@ -9306,6 +9426,16 @@
             }
         ],
         "subtitle": "luigis_mansion:subtitles.furniture.search"
+    },
+    "furniture.search.clothes": {
+        "sounds": [
+            {
+                "name": "luigis_mansion:furniture/search/clothes",
+                "stream": false,
+				"volume": 0.5
+            }
+        ],
+        "subtitle": "luigis_mansion:subtitles.furniture.search.swing"
     },
     "furniture.search.concrete": {
         "sounds": [
@@ -9386,16 +9516,6 @@
             }
         ],
         "subtitle": "luigis_mansion:subtitles.furniture.search"
-    },
-    "furniture.search.open.oven": {
-        "sounds": [
-            {
-                "name": "luigis_mansion:furniture/search/open/oven",
-                "stream": false,
-				"volume": 0.5
-            }
-        ],
-        "subtitle": "luigis_mansion:subtitles.furniture.search.open"
     },
     "furniture.search.oven": {
         "sounds": [
@@ -9506,6 +9626,33 @@
         ],
         "subtitle": "luigis_mansion:subtitles.furniture.telephone.ring"
     },
+    "furniture.toilet": {
+        "sounds": [
+            {
+                "name": "luigis_mansion:furniture/toilet",
+                "stream": false
+            }
+        ],
+        "subtitle": "luigis_mansion:subtitles.furniture.search.open"
+    },
+    "furniture.treasure_chest": {
+        "sounds": [
+            {
+                "name": "luigis_mansion:furniture/treasure_chest",
+                "stream": false
+            }
+        ],
+        "subtitle": "luigis_mansion:subtitles.furniture.search.open"
+    },
+    "furniture.washing_machine": {
+        "sounds": [
+            {
+                "name": "luigis_mansion:furniture/washing_machine",
+                "stream": false
+            }
+        ],
+        "subtitle": "luigis_mansion:subtitles.furniture.search.open"
+    },
     "furniture.weights.drop": {
         "sounds": [
             {
@@ -9523,6 +9670,24 @@
             }
         ],
         "subtitle": "luigis_mansion:subtitles.furniture.wind_warp"
+    },
+    "furniture.wooden_cabinet_mounted_wooden_colorful_candelabra": {
+        "sounds": [
+            {
+                "name": "luigis_mansion:furniture/wooden_cabinet_mounted_wooden_colorful_candelabra",
+                "stream": false
+            }
+        ],
+        "subtitle": "luigis_mansion:subtitles.furniture.search.open"
+    },
+    "furniture.wooden_chest": {
+        "sounds": [
+            {
+                "name": "luigis_mansion:furniture/wooden_chest",
+                "stream": false
+            }
+        ],
+        "subtitle": "luigis_mansion:subtitles.furniture.search.open"
     },
     "item.big_pearl.bounce": {
         "sounds": [

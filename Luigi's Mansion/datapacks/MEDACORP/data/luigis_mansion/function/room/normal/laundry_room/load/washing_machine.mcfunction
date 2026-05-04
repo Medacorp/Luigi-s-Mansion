@@ -1,0 +1,3 @@
+data modify storage luigis_mansion:data furniture set value {room:22,searchable:["interact","vacuum"],shake_animation:["interact","vacuum"],sound:{namespace:"luigis_mansion",id:"heavy_metal"},scan_result:{namespace:"luigis_mansion",id:"scan/scanner/83"}}
+execute unless data storage luigis_mansion:data current_state.current_data.obtained_items{marios_hat:1b} run data modify storage luigis_mansion:data furniture.loot set value {contents:{luigis_mansion:{mario_item:[{variant:"hat"}]}}}
+execute positioned 714.7 11 73.2 rotated -100 0 run function luigis_mansion:spawn_furniture/washing_machine/left

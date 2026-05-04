@@ -1,0 +1,2 @@
+data modify storage luigis_mansion:data furniture set value {room:61,candle_flames:[{lit:0b,type:"incense"}],no_ai:1b,animation:{frozen:1b}}
+execute positioned 674 3.75 38.0 rotated -180 0 run function luigis_mansion:spawn_furniture/stone_bowl_wall_candelabra

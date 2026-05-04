@@ -1,7 +1,5 @@
 #Table 1
 summon minecraft:marker 738 20 48 {Tags:["choice","hide_option"]}
-#Table 2
-summon minecraft:marker 745 20 47 {Tags:["choice","hide_option"]}
 #Chair 1
 summon minecraft:marker 747 20 46 {Tags:["choice","hide_option"]}
 #Chair 2

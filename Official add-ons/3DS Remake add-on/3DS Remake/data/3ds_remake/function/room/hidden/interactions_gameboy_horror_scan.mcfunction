@@ -1,5 +1,4 @@
 #todelete - old furniture
-execute if score #temp Room matches 1 run function #3ds_remake:room/hidden/foyer/interactions/gameboy_horror_scan
 execute if score #temp Room matches 3 run function #3ds_remake:room/hidden/parlor/interactions/gameboy_horror_scan
 execute if score #temp Room matches 4 run function #3ds_remake:room/hidden/anteroom/interactions/gameboy_horror_scan
 execute if score #temp Room matches 5 run function #3ds_remake:room/hidden/wardrobe_room/interactions/gameboy_horror_scan

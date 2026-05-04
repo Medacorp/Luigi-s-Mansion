@@ -2,6 +2,10 @@ execute unless entity @s[scores={ElementalNr=-2147483648..}] run function luigis
 scoreboard players operation #entity ElementalNr = @s ElementalNr
 execute as @e[nbt={data:{entity:{namespace:"luigis_mansion",id:"elemental_ghost"}}}] if score @s ElementalNr = #entity ElementalNr run tag @s add this_elemental_ghost
 
+execute if entity @s[tag=fire_elemental_source,tag=!element_in_water,tag=enabled,nbt={data:{particles:"flames"}},scores={RoomNoise=0}] run playsound luigis_mansion:furniture.fire.ambient block @a[tag=same_room] ~ ~ ~ 1
+scoreboard players set @s[tag=fire_elemental_source,tag=!element_in_water,tag=enabled,nbt={data:{particles:"flames"}},scores={RoomNoise=0}] RoomNoise 79
+execute if entity @s[tag=fire_elemental_source,tag=element_in_water,nbt={data:{particles:"flames"}}] run stopsound @a[tag=same_room] block luigis_mansion:furniture.fire.ambient
+execute if entity @s[tag=fire_elemental_source,tag=element_in_water,nbt={data:{particles:"flames"}}] run playsound luigis_mansion:furniture.fire.extinguish block @a[tag=same_room] ~ ~ ~ 1
 tag @s[tag=fire_elemental_source,tag=element_in_water,tag=!elemental_cannot_disable] remove enabled
 tag @s[tag=water_elemental_source,tag=element_in_ice,tag=!elemental_cannot_disable] remove enabled
 tag @s[tag=ice_elemental_source,tag=element_in_fire,tag=!elemental_cannot_disable] remove enabled

@@ -1,1 +1,0 @@
-$function $(namespace):room/exterior/gameboy_horror_scan/loaded/$(id)
