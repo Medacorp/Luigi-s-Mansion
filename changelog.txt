@@ -1,4 +1,4 @@
-v?:
+v3.6:
 * Added the following furniture model:
 ** Bird houses
 ** Drum lamps
@@ -18,6 +18,7 @@ v?:
 ** Guest room flipping
 ** Rocking horse rocking
 * Added 3DS exclusive stone bowl wall candelabras in the last hallway
+* Fixed download didn't include overworld files
 * Fixed manual searching could search multiple furniture at once; now searches the smallest of the hit furniture only
 * Fixed mirrors reflecting position wasn't fully accurate
 * Removed scan results for exterior; couldn't scan there anymore anyways
