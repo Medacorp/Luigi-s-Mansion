@@ -1,3 +1,13 @@
+?:
+*Added the following furniture model:
+** Buttons
+** Dish washers (potential water elemental source)
+** Stoves (potential fire elemental source)
+* Changed some loot IDs to final (planned) furniture names
+* Fixed manually searching furniture not having a hitbox at eye level didn't work
+* Fixed shake sounds of modeled furniture didn't pitch shift
+* Fixed Boo release cutscene Boos don't properly warp away
+
 v3.6:
 * Added the following furniture model:
 ** Bird houses

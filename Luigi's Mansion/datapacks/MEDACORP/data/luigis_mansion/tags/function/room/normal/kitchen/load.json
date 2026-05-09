@@ -8,6 +8,7 @@
         "luigis_mansion:room/normal/kitchen/load/cloth",
         "luigis_mansion:room/normal/kitchen/load/cobweb",
         "luigis_mansion:room/normal/kitchen/load/dining_room_door",
+        "luigis_mansion:room/normal/kitchen/load/dish_washer",
         "luigis_mansion:room/normal/kitchen/load/fern_portrait",
         "luigis_mansion:room/normal/kitchen/load/fruit_basket_portrait",
         "luigis_mansion:room/normal/kitchen/load/haunted_objects",
@@ -18,6 +19,7 @@
         "luigis_mansion:room/normal/kitchen/load/shelved_food_3",
         "luigis_mansion:room/normal/kitchen/load/shelved_food_and_vase_1",
         "luigis_mansion:room/normal/kitchen/load/shelved_food_and_vase_2",
-        "luigis_mansion:room/normal/kitchen/load/sink_base_cabinets"
+        "luigis_mansion:room/normal/kitchen/load/sink_base_cabinets",
+        "luigis_mansion:room/normal/kitchen/load/stove"
     ]
 }

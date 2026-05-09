@@ -6,6 +6,7 @@
         "e3_demo:room/original/kitchen/load/bouquet_portrait",
         "e3_demo:room/original/kitchen/load/ceiling_cabinets",
         "e3_demo:room/original/kitchen/load/dining_room_door",
+        "e3_demo:room/original/kitchen/load/dish_washer",
         "e3_demo:room/original/kitchen/load/fern_portrait",
         "e3_demo:room/original/kitchen/load/haunted_objects",
         "e3_demo:room/original/kitchen/load/missingno_17_door",
@@ -16,6 +17,7 @@
         "e3_demo:room/original/kitchen/load/shelved_food_3",
         "e3_demo:room/original/kitchen/load/shelved_food_and_vase_1",
         "e3_demo:room/original/kitchen/load/shelved_food_and_vase_2",
-        "e3_demo:room/original/kitchen/load/sink_base_cabinets"
+        "e3_demo:room/original/kitchen/load/sink_base_cabinets",
+        "e3_demo:room/original/kitchen/load/stove"
     ]
 }

@@ -191,6 +191,7 @@ scoreboard objectives add Searching dummy
 scoreboard objectives add SecondFleeDamage dummy
 scoreboard objectives add SecondFleeState dummy
 scoreboard objectives add Selected dummy
+scoreboard objectives add ShakerID dummy
 scoreboard objectives add Shrunk dummy
 scoreboard objectives add SlipX dummy
 scoreboard objectives add SlipZ dummy

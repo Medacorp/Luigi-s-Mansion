@@ -9113,6 +9113,15 @@
         ],
         "subtitle": "luigis_mansion:subtitles.furniture.crystal_ball.shine"
     },
+    "furniture.dish_washer": {
+        "sounds": [
+            {
+                "name": "luigis_mansion:furniture/dish_washer",
+                "stream": false
+            }
+        ],
+        "subtitle": "luigis_mansion:subtitles.furniture.search.open"
+    },
     "furniture.door.burn": {
         "sounds": [
             {
@@ -9457,16 +9466,6 @@
         ],
         "subtitle": "luigis_mansion:subtitles.furniture.search"
     },
-    "furniture.search.fridge": {
-        "sounds": [
-            {
-                "name": "luigis_mansion:furniture/search/fridge",
-                "stream": false,
-				"volume": 0.5
-            }
-        ],
-        "subtitle": "luigis_mansion:subtitles.furniture.search"
-    },
     "furniture.search.generic": {
         "sounds": [
             {
@@ -9517,16 +9516,6 @@
         ],
         "subtitle": "luigis_mansion:subtitles.furniture.search"
     },
-    "furniture.search.oven": {
-        "sounds": [
-            {
-                "name": "luigis_mansion:furniture/search/oven",
-                "stream": false,
-				"volume": 0.1
-            }
-        ],
-        "subtitle": "luigis_mansion:subtitles.furniture.search"
-    },
     "furniture.search.plant": {
         "sounds": [
             {
@@ -9541,6 +9530,16 @@
         "sounds": [
             {
                 "name": "luigis_mansion:furniture/search/plate",
+                "stream": false,
+				"volume": 0.5
+            }
+        ],
+        "subtitle": "luigis_mansion:subtitles.furniture.search"
+    },
+    "furniture.search.refrigerator": {
+        "sounds": [
+            {
+                "name": "luigis_mansion:furniture/search/refrigerator",
                 "stream": false,
 				"volume": 0.5
             }
@@ -9573,6 +9572,16 @@
                 "name": "luigis_mansion:furniture/search/stone",
                 "stream": false,
 				"volume": 0.5
+            }
+        ],
+        "subtitle": "luigis_mansion:subtitles.furniture.search"
+    },
+    "furniture.search.stove": {
+        "sounds": [
+            {
+                "name": "luigis_mansion:furniture/search/stove",
+                "stream": false,
+				"volume": 0.1
             }
         ],
         "subtitle": "luigis_mansion:subtitles.furniture.search"
@@ -9616,6 +9625,15 @@
             }
         ],
         "subtitle": "luigis_mansion:subtitles.furniture.search"
+    },
+    "furniture.stove": {
+        "sounds": [
+            {
+                "name": "luigis_mansion:furniture/stove",
+                "stream": false
+            }
+        ],
+        "subtitle": "luigis_mansion:subtitles.furniture.search.open"
     },
     "furniture.telephone.ring": {
         "sounds": [

@@ -6,5 +6,5 @@ execute unless score #rec_room_threadmill Search matches 1 run scoreboard player
 scoreboard players reset #rec_room_threadmill Search
 scoreboard players operation #temp Searching = #rec_room_threadmill Searching
 scoreboard players operation #temp Searching %= #3 Constants
-execute if score #rec_room_threadmill Searching matches 1.. if score #temp Searching matches 1 positioned 643 11 -32 run function luigis_mansion:blocks/search_sound/oven
+execute if score #rec_room_threadmill Searching matches 1.. if score #temp Searching matches 1 positioned 643 11 -32 run function luigis_mansion:blocks/search_sound/stove
 scoreboard players reset #temp Searching

@@ -13,6 +13,7 @@ execute if data entity @s data.search_command run function luigis_mansion:entiti
 execute at @e[tag=location] if entity @e[distance=..0.1,tag=hidden_boo,tag=caught_by_boo_radar,limit=1] at @s[tag=!cloth_on_top] rotated ~ 0 run function luigis_mansion:entities/furniture/spawn/boo
 execute at @e[tag=location] if entity @e[distance=..0.1,tag=ghost,tag=hiding_in_furniture,limit=1] at @s rotated ~ 0 run function luigis_mansion:entities/furniture/spawn/ghost
 scoreboard players reset @s SearcherID
+scoreboard players reset @s ShakerID
 execute if entity @s[tag=no_dust,tag=no_loot,tag=no_search_command,tag=!can_hide_boo,scores={ActionTime=-1}] at @e[tag=location] unless entity @e[distance=..0.1,tag=ghost,tag=hiding_in_furniture,limit=1] run tag @s add no_loot_tick
 kill @e[tag=location]
 tag @s add searched

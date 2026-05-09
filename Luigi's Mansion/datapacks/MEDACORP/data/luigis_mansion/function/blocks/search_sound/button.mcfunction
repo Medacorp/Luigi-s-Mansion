@@ -1,1 +1,0 @@
-playsound luigis_mansion:furniture.button.press block @a[tag=same_room] ~ ~ ~ 1

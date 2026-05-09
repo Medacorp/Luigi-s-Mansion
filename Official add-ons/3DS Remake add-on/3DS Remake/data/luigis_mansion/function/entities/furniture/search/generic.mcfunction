@@ -14,6 +14,7 @@ execute at @e[tag=location] if entity @e[distance=..0.1,tag=hidden_boo,tag=caugh
 execute at @e[tag=location] if entity @e[distance=..0.1,tag=ghost,tag=hiding_in_furniture,limit=1] at @s rotated ~ 0 run function luigis_mansion:entities/furniture/spawn/ghost
 execute if score @s[tag=grants_water_plant_task] FurnitureWater >= @s FurnitureSearch run function 3ds_remake:selection_menu/gallery_trophy/complete/beginner/task_5
 scoreboard players reset @s SearcherID
+scoreboard players reset @s ShakerID
 execute if entity @s[tag=no_dust,tag=no_loot,tag=no_search_command,tag=!can_hide_boo,scores={ActionTime=-1}] at @e[tag=location] unless entity @e[distance=..0.1,tag=ghost,tag=hiding_in_furniture,limit=1] run tag @s add no_loot_tick
 kill @e[tag=location]
 tag @s add searched

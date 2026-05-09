@@ -8,4 +8,5 @@ execute at @s[scores={ActionTime=10..},tag=move_up] run function luigis_mansion:
 execute at @s[scores={ActionTime=10..},tag=!move_up] run function luigis_mansion:entities/boo/move/down
 execute at @s[scores={Time=600..}] run function luigis_mansion:entities/boo/rotate_random
 execute if entity @s[tag=wall] run function luigis_mansion:entities/boo/warp_effects
+tag @s[tag=warped] add remove_from_existence
 scoreboard players reset #temp Move

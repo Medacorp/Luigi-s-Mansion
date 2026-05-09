@@ -17,3 +17,4 @@ execute if data entity @s[scores={Sound=0}] data.animation{namespace:"luigis_man
 
 tag @s add was_shaking
 tag @s[tag=!fake_shake,tag=!shake,tag=!long_shake] remove was_shaking
+scoreboard players reset @s[tag=!was_shaking] ShakerID

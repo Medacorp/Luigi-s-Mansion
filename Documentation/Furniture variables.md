@@ -11,8 +11,8 @@ furniture:{
     no_visual_shake:1b, //When set disables the shaking animations visually; sound will still play. Default = 0b.
     use_medium_shake:1b, //When set forces a shake animation used by room clear chests, rather than the long and short ones. Default = 0b.
     sound:{ //The ID of the furniture shake sound. See IDs in use for valid IDs.
-        namespace:"luigis_mansion", //The namespace of the furniture shake sound. Defaults to "luigis_mansion".
-        id:"heavy_generic" //The ID of the furniture shake sound. Defaults to "heavy_generic".
+        namespace:"luigis_mansion", //The namespace of the furniture shake sound. Defaults to "luigis_mansion" if "sound" is present.
+        id:"heavy_generic" //The ID of the furniture shake sound. Defaults to "heavy_generic" if "sound" is present.
     },
     interact_animation:{ //What animation gets used when using the interact method. Enthusiastic animation aditionally has a punch sound and will swing swinging furniture. Overrides default animation selecting. Default = none, except for room clear chests which use 3ds_remake:search/chest when the 3DS Remake add-on is installed and luigis_mansion:search/hump when not.
         namespace:"luigis_mansion", //The namespace of the animation.
