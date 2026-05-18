@@ -1,8 +1,9 @@
 scoreboard players reset #candle_flames Selected
-execute if data storage luigis_mansion:data furniture.candle_flames_edit[0] if entity @e[tag=this_entity,tag=candelabra,limit=1] if score #debug_messages Selected matches 1.. run tellraw @a {type:"translatable",translate:"luigis_mansion:message.debug.format",with:[{type:"translatable",translate:"luigis_mansion:message.debug",color:"gold"},{type:"translatable",translate:"luigis_mansion:message.debug.candle_flame.too_many",color:"red",with:[{type:"selector",selector:"@s"}]}]}
+execute if data storage luigis_mansion:data furniture.candle_flames_edit[0] as @e[tag=this_entity,tag=candelabra,limit=1] if score #debug_messages Selected matches 1.. run tellraw @a {type:"translatable",translate:"luigis_mansion:message.debug.format",with:[{type:"translatable",translate:"luigis_mansion:message.debug",color:"gold"},{type:"translatable",translate:"luigis_mansion:message.debug.candle_flame.too_many",color:"red",with:[{type:"selector",selector:"@s"}]}]}
 data remove storage luigis_mansion:data furniture.candle_flames_edit
 kill @e[tag=candle_angle]
 execute if entity @e[tag=this_entity,tag=requires_hitbox,limit=1] run function luigis_mansion:spawn_furniture/setup/hitbox
+function luigis_mansion:spawn_furniture/setup/fix_hitbox
 # Display and sound
 execute if entity @e[tag=this_entity,tag=!candelabra,type=minecraft:armor_stand,limit=1] run function luigis_mansion:spawn_furniture/setup/pose
 execute if entity @e[tag=this_entity,type=minecraft:item_display,limit=1] run function luigis_mansion:spawn_furniture/setup/transformation
@@ -16,7 +17,7 @@ function luigis_mansion:spawn_furniture/setup/searched_status
 function luigis_mansion:spawn_furniture/setup/must_face_to_search
 
 # Search result
-function luigis_mansion:spawn_furniture/setup/no_dust_on_search
+function luigis_mansion:spawn_furniture/setup/dust
 function luigis_mansion:spawn_furniture/setup/loot
 function luigis_mansion:spawn_furniture/setup/search_command
 function luigis_mansion:spawn_furniture/setup/boo_can_hide_in
@@ -33,8 +34,9 @@ execute if entity @e[tag=this_entity,tag=chandelier,limit=1] run function luigis
 execute if entity @e[tag=this_entity,tag=mirror,limit=1] run function luigis_mansion:spawn_furniture/setup/mirror_reflection with entity @e[tag=this_entity,tag=mirror,limit=1] data
 execute if entity @e[tag=this_entity,tag=poster,limit=1] run function luigis_mansion:spawn_furniture/setup/poster
 execute if entity @e[tag=this_entity,tag=curtain,limit=1] run function luigis_mansion:spawn_furniture/setup/curtain
+execute if entity @e[tag=this_entity,tag=instrument,limit=1] run function luigis_mansion:spawn_furniture/setup/instrument
 function luigis_mansion:spawn_furniture/setup/room
-execute if entity @e[tag=this_entity,tag=room_clear_chest,limit=1] run function luigis_mansion:spawn_furniture/setup/room_clear_chest_spawn_sound
+execute if entity @e[tag=this_entity,tag=room_clear_chest,limit=1] run function luigis_mansion:spawn_furniture/setup/room_clear_chest
 function luigis_mansion:spawn_furniture/setup/tags
 function luigis_mansion:spawn_furniture/setup/position
 function luigis_mansion:spawn_furniture/setup/optimize_entity_search

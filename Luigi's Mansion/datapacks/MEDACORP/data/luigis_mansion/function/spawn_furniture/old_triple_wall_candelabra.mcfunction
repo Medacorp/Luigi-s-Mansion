@@ -5,15 +5,6 @@ execute rotated as @e[tag=forward_angle,tag=candle_angle,limit=1] positioned ^ ^
 execute rotated as @e[tag=forward_angle,tag=candle_angle,limit=1] positioned ^ ^ ^0.424 rotated as @e[tag=up_angle,tag=candle_angle,limit=1] positioned ^ ^ ^0.641 rotated as @e[tag=this_entity,limit=1] run function luigis_mansion:spawn_furniture/setup/candle_flame
 execute rotated as @e[tag=forward_angle,tag=candle_angle,limit=1] positioned ^ ^ ^0.307 rotated as @e[tag=up_angle,tag=candle_angle,limit=1] positioned ^ ^ ^0.579 rotated as @e[tag=left_angle,tag=candle_angle,limit=1] positioned ^ ^ ^0.277 rotated as @e[tag=this_entity,limit=1] rotated ~-45 ~ run function luigis_mansion:spawn_furniture/setup/candle_flame
 scoreboard players set @e[tag=this_entity,limit=1] FurnitureSizeRadius 6
-scoreboard players set @e[tag=this_entity,limit=1] FurnitureDustLeft 0
-scoreboard players set @e[tag=this_entity,limit=1] FurnitureDustUp 0
-scoreboard players set @e[tag=this_entity,limit=1] FurnitureDustForward 0
-scoreboard players set @e[tag=this_entity,limit=1] FurnitureContentLeft 0
-scoreboard players set @e[tag=this_entity,limit=1] FurnitureContentUp 0
-scoreboard players set @e[tag=this_entity,limit=1] FurnitureContentForward 0
-scoreboard players set @e[tag=this_entity,limit=1] FurnitureGhostLeft 0
-scoreboard players set @e[tag=this_entity,limit=1] FurnitureGhostUp 0
-scoreboard players set @e[tag=this_entity,limit=1] FurnitureGhostForward 0
 function luigis_mansion:spawn_furniture/setup/default
 tag @e[tag=this_entity,limit=1] remove this_entity
 data remove storage luigis_mansion:data furniture

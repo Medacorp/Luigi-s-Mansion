@@ -2,21 +2,12 @@
     "values": [
         "luigis_mansion:room/hidden/conservatory/reset/unload",
         "#luigis_mansion:room/hidden/conservatory/turn_lights/off",
-        "luigis_mansion:room/hidden/conservatory/reset/chair_1",
-        "luigis_mansion:room/hidden/conservatory/reset/chair_2",
         "luigis_mansion:room/hidden/conservatory/reset/chair_3",
-        "luigis_mansion:room/hidden/conservatory/reset/cello",
         "luigis_mansion:room/hidden/conservatory/reset/closet",
-        "luigis_mansion:room/hidden/conservatory/reset/drum_1",
-        "luigis_mansion:room/hidden/conservatory/reset/drum_2",
-        "luigis_mansion:room/hidden/conservatory/reset/drum_3",
-        "luigis_mansion:room/hidden/conservatory/reset/harp",
         "luigis_mansion:room/hidden/conservatory/reset/lamp",
         "luigis_mansion:room/hidden/conservatory/reset/lectern_1",
         "luigis_mansion:room/hidden/conservatory/reset/lectern_2",
         "luigis_mansion:room/hidden/conservatory/reset/piano",
-        "luigis_mansion:room/hidden/conservatory/reset/room_clear_chest",
-        "luigis_mansion:room/hidden/conservatory/reset/saxophone",
-        "luigis_mansion:room/hidden/conservatory/reset/xylophone"
+        "luigis_mansion:room/hidden/conservatory/reset/room_clear_chest"
     ]
 }

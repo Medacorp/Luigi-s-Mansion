@@ -1,3 +1,2 @@
-summon minecraft:marker 656 11 -17 {Tags:["furniture","play_music","drum_3","no_ai","this_entity"]}
-scoreboard players set @e[tag=this_entity,limit=1] Room 25
-tag @e[tag=this_entity,limit=1] remove this_entity
+data modify storage luigis_mansion:data furniture set value {room:25,searchable:["interact"],shake_animation:["interact"],sound:{namespace:"luigis_mansion",id:"drum"},can_hide_boo:1b,scan_result:{namespace:"luigis_mansion",id:"scan/scanner/44"},instrument:{track:"drum_3"}}
+execute positioned 656 11 -17 rotated -135 0 run function luigis_mansion:spawn_furniture/drum

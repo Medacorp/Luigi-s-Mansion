@@ -2,15 +2,9 @@ summon minecraft:armor_stand ~ ~-1.43875 ~ {CustomName:{type:"translatable",tran
 teleport @e[tag=this_entity,limit=1] ~ ~-1.43875 ~ ~ 0
 scoreboard players set @e[tag=this_entity,limit=1] FurnitureSizeWidth 12
 scoreboard players set @e[tag=this_entity,limit=1] FurnitureSizeHeight 10
-scoreboard players set @e[tag=this_entity,limit=1] FurnitureDustLeft 0
 scoreboard players set @e[tag=this_entity,limit=1] FurnitureDustUp -10
-scoreboard players set @e[tag=this_entity,limit=1] FurnitureDustForward 0
-scoreboard players set @e[tag=this_entity,limit=1] FurnitureContentLeft 0
 scoreboard players set @e[tag=this_entity,limit=1] FurnitureContentUp -10
-scoreboard players set @e[tag=this_entity,limit=1] FurnitureContentForward 0
-scoreboard players set @e[tag=this_entity,limit=1] FurnitureGhostLeft 0
 scoreboard players set @e[tag=this_entity,limit=1] FurnitureGhostUp -10
-scoreboard players set @e[tag=this_entity,limit=1] FurnitureGhostForward 0
 scoreboard players set @e[tag=this_entity,limit=1] FurnitureLightLeft 0
 scoreboard players set @e[tag=this_entity,limit=1] FurnitureLightUp -8
 scoreboard players set @e[tag=this_entity,limit=1] FurnitureLightForward 0
@@ -31,15 +25,9 @@ teleport @e[tag=this_entity,limit=1] ~ ~-1.75875 ~ ~ 0
 scoreboard players set @e[tag=this_entity,limit=1] FurnitureRotationSpeed 9
 scoreboard players set @e[tag=this_entity,limit=1] FurnitureSizeWidth 56
 scoreboard players set @e[tag=this_entity,limit=1] FurnitureSizeHeight 6
-scoreboard players set @e[tag=this_entity,limit=1] FurnitureDustLeft 0
 scoreboard players set @e[tag=this_entity,limit=1] FurnitureDustUp -11
-scoreboard players set @e[tag=this_entity,limit=1] FurnitureDustForward 0
-scoreboard players set @e[tag=this_entity,limit=1] FurnitureContentLeft 0
 scoreboard players set @e[tag=this_entity,limit=1] FurnitureContentUp -11
-scoreboard players set @e[tag=this_entity,limit=1] FurnitureContentForward 0
-scoreboard players set @e[tag=this_entity,limit=1] FurnitureGhostLeft 0
 scoreboard players set @e[tag=this_entity,limit=1] FurnitureGhostUp -11
-scoreboard players set @e[tag=this_entity,limit=1] FurnitureGhostForward 0
 function luigis_mansion:spawn_furniture/setup/default
 tag @e[tag=this_entity,limit=1] remove this_entity
 data remove storage luigis_mansion:data furniture

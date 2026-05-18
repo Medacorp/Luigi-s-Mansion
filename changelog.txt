@@ -1,12 +1,26 @@
 ?:
-*Added the following furniture model:
+* Added wind warp scan result option for furniture
+* Added furniture particle option "wind_warp_sparkles"; requires wind warp scan result
+* Added the following furniture model:
+** Blue padded stool (mounted saxophone)s
 ** Buttons
+** Cellos
 ** Dish washers (potential water elemental source)
+** Dog houses
+** Drums
+** Harps
 ** Stoves (potential fire elemental source)
+** Treadmills (unique furniture type)
+** Xylophones
+* Changed Boneyard Mr. Bones' spawning logic to match original game
 * Changed some loot IDs to final (planned) furniture names
+* Changed 3DS dialog "dog_house" to "wind_warp_enabled"; it now also auto-triggers upon a wind warp's sparkles starting
+* Fixed searching furniture while in an idle animation doesn't set searching animation
 * Fixed manually searching furniture not having a hitbox at eye level didn't work
 * Fixed shake sounds of modeled furniture didn't pitch shift
 * Fixed Boo release cutscene Boos don't properly warp away
+* Fixed kitchen refrigerator's elemental ghost spawns before it is opened
+* Fixed lightning causes fire, and it spreads across the trees
 
 v3.6:
 * Added the following furniture model:
@@ -17,7 +31,7 @@ v3.6:
 ** Tennis rackets
 ** Twin desks
 ** Washing machines
-** Wine bottles
+** Wine bottles (unused)
 ** Wine glasses
 * Added the following sounds:
 ** Ceiling ghost hurting and attacking

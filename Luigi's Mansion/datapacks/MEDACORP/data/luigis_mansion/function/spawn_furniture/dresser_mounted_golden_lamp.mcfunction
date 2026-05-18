@@ -3,15 +3,6 @@ teleport @e[tag=this_entity,limit=1] ~ ~-1.43875 ~ ~ 0
 scoreboard players set @e[tag=this_entity,limit=1] FurnitureSizeLeft 20
 scoreboard players set @e[tag=this_entity,limit=1] FurnitureSizeUp 27
 scoreboard players set @e[tag=this_entity,limit=1] FurnitureSizeForward 10
-scoreboard players set @e[tag=this_entity,limit=1] FurnitureDustLeft 0
-scoreboard players set @e[tag=this_entity,limit=1] FurnitureDustUp 0
-scoreboard players set @e[tag=this_entity,limit=1] FurnitureDustForward 0
-scoreboard players set @e[tag=this_entity,limit=1] FurnitureContentLeft 0
-scoreboard players set @e[tag=this_entity,limit=1] FurnitureContentUp 0
-scoreboard players set @e[tag=this_entity,limit=1] FurnitureContentForward 0
-scoreboard players set @e[tag=this_entity,limit=1] FurnitureGhostLeft 0
-scoreboard players set @e[tag=this_entity,limit=1] FurnitureGhostUp 0
-scoreboard players set @e[tag=this_entity,limit=1] FurnitureGhostForward 0
 scoreboard players set @e[tag=this_entity,limit=1] FurnitureLightLeft 0
 scoreboard players set @e[tag=this_entity,limit=1] FurnitureLightUp 18
 scoreboard players set @e[tag=this_entity,limit=1] FurnitureLightForward 0

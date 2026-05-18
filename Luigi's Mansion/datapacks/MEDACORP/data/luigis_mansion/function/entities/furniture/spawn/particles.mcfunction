@@ -11,12 +11,13 @@ tag @s add me
 execute unless entity @s[scores={FurnitureElementLeft=0,FurnitureElementForward=0}] positioned as @e[tag=temp,limit=1] facing entity @s feet rotated ~-180 0 positioned as @s run teleport @s ~ ~ ~ ~ ~
 execute if entity @s[tag=store_home_y] store result score @s HomeRotationY run data get entity @s Rotation[0]
 tag @s remove store_home_y
+execute if data entity @s data{particles:"wind_warp_sparkles"} positioned as @e[tag=temp,limit=1] rotated as @s run function luigis_mansion:entities/furniture/spawn/particles/wind_warp_sparkles with entity @s data.scan_result
 execute if data entity @s data{particles:"sparkles"} positioned as @e[tag=temp,limit=1] rotated as @s run function luigis_mansion:entities/furniture/spawn/particles/sparkles
-execute if data entity @s data{particles:"flames"} positioned as @e[tag=temp,limit=1] rotated as @s run function luigis_mansion:entities/furniture/spawn/particles/flames
-execute if data entity @s data{particles:"dripping_water"} positioned as @e[tag=temp,limit=1] rotated as @s run function luigis_mansion:entities/furniture/spawn/particles/dripping_water
-execute if data entity @s data{particles:"spraying_water"} positioned as @e[tag=temp,limit=1] rotated as @s run function luigis_mansion:entities/furniture/spawn/particles/spraying_water
-execute if data entity @s data{particles:"leaking_water"} positioned as @e[tag=temp,limit=1] rotated as @s run function luigis_mansion:entities/furniture/spawn/particles/leaking_water
-execute if data entity @s data{particles:"chilly_fog"} positioned as @e[tag=temp,limit=1] rotated as @s run function luigis_mansion:entities/furniture/spawn/particles/chilly_fog
+execute if data entity @s data{particles:"flames"} positioned as @e[tag=temp,limit=1] rotated as @s unless entity @s[tag=elemental_must_be_searched,scores={ActionTime=0..}] run function luigis_mansion:entities/furniture/spawn/particles/flames
+execute if data entity @s data{particles:"dripping_water"} positioned as @e[tag=temp,limit=1] rotated as @s unless entity @s[tag=elemental_must_be_searched,scores={ActionTime=0..}] run function luigis_mansion:entities/furniture/spawn/particles/dripping_water
+execute if data entity @s data{particles:"spraying_water"} positioned as @e[tag=temp,limit=1] rotated as @s unless entity @s[tag=elemental_must_be_searched,scores={ActionTime=0..}] run function luigis_mansion:entities/furniture/spawn/particles/spraying_water
+execute if data entity @s data{particles:"leaking_water"} positioned as @e[tag=temp,limit=1] rotated as @s unless entity @s[tag=elemental_must_be_searched,scores={ActionTime=0..}] run function luigis_mansion:entities/furniture/spawn/particles/leaking_water
+execute if data entity @s data{particles:"chilly_fog"} positioned as @e[tag=temp,limit=1] rotated as @s unless entity @s[tag=elemental_must_be_searched,scores={ActionTime=0..}] run function luigis_mansion:entities/furniture/spawn/particles/chilly_fog
 execute if entity @s[tag=incense] positioned as @e[tag=temp,limit=1] run function luigis_mansion:entities/furniture/spawn/particles/incense
 tag @s remove me
 teleport @s ~ ~ ~ ~ ~

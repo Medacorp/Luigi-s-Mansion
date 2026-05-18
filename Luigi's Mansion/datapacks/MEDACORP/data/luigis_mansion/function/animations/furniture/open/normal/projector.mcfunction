@@ -7,10 +7,10 @@ execute if entity @s[scores={ActionTime=8..11}] store result entity @s Pose.Head
 execute if entity @s[scores={ActionTime=12..15}] store result entity @s Pose.Head[2] float 1 run scoreboard players remove #temp Time 4
 execute if entity @s[scores={ActionTime=16..17}] store result entity @s Pose.Head[2] float 1 run scoreboard players add #temp Time 4
 scoreboard players reset #temp Time
-execute if entity @s[scores={ActionTime=2}] run playsound luigis_mansion:furniture.ambient.projector block @a[tag=same_room] ~ ~1.4 ~
-execute if entity @s[scores={ActionTime=6}] run playsound luigis_mansion:furniture.ambient.projector block @a[tag=same_room] ~ ~1.4 ~
-execute if entity @s[scores={ActionTime=10}] run playsound luigis_mansion:furniture.ambient.projector block @a[tag=same_room] ~ ~1.4 ~
-execute if entity @s[scores={ActionTime=14}] run playsound luigis_mansion:furniture.ambient.projector block @a[tag=same_room] ~ ~1.4 ~
+execute if entity @s[scores={ActionTime=2}] run playsound luigis_mansion:furniture.projector block @a[tag=same_room] ~ ~1.4 ~
+execute if entity @s[scores={ActionTime=6}] run playsound luigis_mansion:furniture.projector block @a[tag=same_room] ~ ~1.4 ~
+execute if entity @s[scores={ActionTime=10}] run playsound luigis_mansion:furniture.projector block @a[tag=same_room] ~ ~1.4 ~
+execute if entity @s[scores={ActionTime=14}] run playsound luigis_mansion:furniture.projector block @a[tag=same_room] ~ ~1.4 ~
 data modify entity @s[scores={ActionTime=2}] equipment.head merge from entity @s equipment.head.components."minecraft:custom_data".model_data.open
 scoreboard players set @s[scores={ActionTime=17}] ActionTime 1
 

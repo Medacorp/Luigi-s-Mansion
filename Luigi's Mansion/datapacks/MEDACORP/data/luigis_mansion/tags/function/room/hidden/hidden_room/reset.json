@@ -2,7 +2,6 @@
     "values": [
         "luigis_mansion:room/hidden/hidden_room/reset/unload",
         "#luigis_mansion:room/hidden/hidden_room/turn_lights/off",
-        "luigis_mansion:room/hidden/hidden_room/reset/hole",
         "luigis_mansion:room/hidden/hidden_room/reset/lamp",
         "luigis_mansion:room/hidden/hidden_room/reset/room_clear_chest"
     ]

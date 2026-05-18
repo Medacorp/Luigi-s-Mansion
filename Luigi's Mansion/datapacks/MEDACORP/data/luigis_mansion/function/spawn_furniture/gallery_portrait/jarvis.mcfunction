@@ -6,15 +6,6 @@ execute if data storage luigis_mansion:data current_state.portrait_ghost_ranks{j
 scoreboard players set @e[tag=this_entity,limit=1] FurnitureSizeLeft 10
 scoreboard players set @e[tag=this_entity,limit=1] FurnitureSizeUp 10
 scoreboard players set @e[tag=this_entity,limit=1] FurnitureSizeForward 2
-scoreboard players set @e[tag=this_entity,limit=1] FurnitureDustLeft 0
-scoreboard players set @e[tag=this_entity,limit=1] FurnitureDustUp 0
-scoreboard players set @e[tag=this_entity,limit=1] FurnitureDustForward 0
-scoreboard players set @e[tag=this_entity,limit=1] FurnitureContentLeft 0
-scoreboard players set @e[tag=this_entity,limit=1] FurnitureContentUp 0
-scoreboard players set @e[tag=this_entity,limit=1] FurnitureContentForward 0
-scoreboard players set @e[tag=this_entity,limit=1] FurnitureGhostLeft 0
-scoreboard players set @e[tag=this_entity,limit=1] FurnitureGhostUp 0
-scoreboard players set @e[tag=this_entity,limit=1] FurnitureGhostForward 0
 function luigis_mansion:spawn_furniture/setup/default
 tag @e[tag=this_entity,limit=1] remove this_entity
 data remove storage luigis_mansion:data furniture

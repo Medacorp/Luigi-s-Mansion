@@ -3,14 +3,8 @@ execute if score #mirrored Selected matches 1 run summon minecraft:armor_stand ~
 teleport @e[tag=this_entity,limit=1] ~ ~-1.43875 ~ ~ 0
 scoreboard players set @e[tag=this_entity,limit=1] FurnitureSizeWidth 16
 scoreboard players set @e[tag=this_entity,limit=1] FurnitureSizeHeight 30
-scoreboard players set @e[tag=this_entity,limit=1] FurnitureDustLeft 0
 scoreboard players set @e[tag=this_entity,limit=1] FurnitureDustUp 15
-scoreboard players set @e[tag=this_entity,limit=1] FurnitureDustForward 0
-scoreboard players set @e[tag=this_entity,limit=1] FurnitureContentLeft 0
 scoreboard players set @e[tag=this_entity,limit=1] FurnitureContentUp 15
-scoreboard players set @e[tag=this_entity,limit=1] FurnitureContentForward 0
-scoreboard players set @e[tag=this_entity,limit=1] FurnitureGhostLeft 0
-scoreboard players set @e[tag=this_entity,limit=1] FurnitureGhostUp 0
 scoreboard players set @e[tag=this_entity,limit=1] FurnitureGhostForward 9
 function luigis_mansion:spawn_furniture/setup/default
 tag @e[tag=this_entity,limit=1] remove this_entity

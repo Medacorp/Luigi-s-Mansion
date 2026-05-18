@@ -3,15 +3,6 @@ teleport @e[tag=this_entity,limit=1] ~ ~-1.43875 ~ ~ 0
 function luigis_mansion:spawn_furniture/setup/candle_flame/get_angles
 execute rotated as @e[tag=forward_angle,tag=candle_angle,limit=1] positioned ^ ^ ^0.23 rotated as @e[tag=up_angle,tag=candle_angle,limit=1] positioned ^ ^ ^0.859 rotated as @e[tag=this_entity,limit=1] run function luigis_mansion:spawn_furniture/setup/candle_flame
 scoreboard players set @e[tag=this_entity,limit=1] FurnitureSizeRadius 6
-scoreboard players set @e[tag=this_entity,limit=1] FurnitureDustLeft 0
-scoreboard players set @e[tag=this_entity,limit=1] FurnitureDustUp 0
-scoreboard players set @e[tag=this_entity,limit=1] FurnitureDustForward 0
-scoreboard players set @e[tag=this_entity,limit=1] FurnitureContentLeft 0
-scoreboard players set @e[tag=this_entity,limit=1] FurnitureContentUp 0
-scoreboard players set @e[tag=this_entity,limit=1] FurnitureContentForward 0
-scoreboard players set @e[tag=this_entity,limit=1] FurnitureGhostLeft 0
-scoreboard players set @e[tag=this_entity,limit=1] FurnitureGhostUp 0
-scoreboard players set @e[tag=this_entity,limit=1] FurnitureGhostForward 0
 function luigis_mansion:spawn_furniture/setup/default
 tag @e[tag=this_entity,limit=1] remove this_entity
 data remove storage luigis_mansion:data furniture

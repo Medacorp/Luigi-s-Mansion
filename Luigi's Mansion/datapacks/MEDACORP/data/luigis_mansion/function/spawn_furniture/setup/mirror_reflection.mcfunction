@@ -7,8 +7,8 @@ scoreboard players reset #furniture Time
 execute unless data storage luigis_mansion:data furniture{mirror_reflection_edit:0b} run tag @e[tag=this_entity,limit=1] add reflects_entities
 execute unless data storage luigis_mansion:data furniture{mirror_reflection_edit:0b} as @e[tag=this_entity,limit=1] run data modify entity @s equipment.head merge from entity @s equipment.head.components."minecraft:custom_data".model_data.reflects
 #todelete - room models: builting 0.5 offset
-$execute positioned ~ ~1.43875 ~ positioned ^ ^ ^$(mirror_surface) run summon minecraft:marker ^ ^ ^-0.5 {Tags:["temp","dead"]}
-data modify entity @e[tag=this_entity,limit=1] data.reflection.position set from entity @e[tag=temp,limit=1] Pos
+$execute positioned ~ ~1.43875 ~ positioned ^ ^ ^$(mirror_surface) run summon minecraft:marker ^ ^ ^-0.5 {Tags:["reflection_position","dead"]}
+data modify entity @e[tag=this_entity,limit=1] data.reflection.position set from entity @e[tag=reflection_position,limit=1] Pos
 execute as @e[tag=this_entity,limit=1] run data modify entity @s data.reflection.rotation set from entity @s Rotation
-kill @e[tag=temp,limit=1]
+kill @e[tag=reflection_position,limit=1]
 data remove storage luigis_mansion:data furniture.mirror_reflection_edit

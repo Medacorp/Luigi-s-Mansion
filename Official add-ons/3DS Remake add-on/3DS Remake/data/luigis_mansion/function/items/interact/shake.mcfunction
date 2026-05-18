@@ -5,8 +5,8 @@ execute at @s[tag=2] if block ~ ~-0.1 ~ #luigis_mansion:interact_ignore rotated 
 execute at @s[tag=3] unless block ~ ~-0.1 ~ #luigis_mansion:interact_ignore rotated ~ 0 run summon minecraft:marker ^ ^2.1 ^0.5 {Tags:["interact","manual"]}
 execute at @s[tag=3] if block ~ ~-0.1 ~ #luigis_mansion:interact_ignore rotated ~ 0 run summon minecraft:marker ^ ^-0.9 ^0.5 {Tags:["interact","manual"]}
 tag @s add searcher
+tag @a[tag=this_player,limit=1] add searcher
 scoreboard players add @s InteractionTime 1
-scoreboard players operation #temp ID = @s ID
 tag @s[scores={InteractionTime=2}] add reset_rotation
 function luigis_mansion:items/interact/target_furniture/get_furniture with entity @s data
 execute if entity @s[scores={InteractionTime=2}] as @e[tag=hit,limit=1] run function luigis_mansion:items/interact/target_furniture/get_animation
@@ -15,8 +15,9 @@ execute if entity @s[scores={InteractionTime=2}] unless data entity @s data.anim
 execute if entity @s[scores={InteractionTime=2}] unless data entity @s data.animation run function luigis_mansion:entities/luigi/animation/set/search/bash
 execute if data entity @s data.animation{namespace:"luigis_mansion",id:"search/hump"} run tag @e[tag=interact,tag=manual,limit=1] add long_shake
 execute if entity @s[scores={InteractionTime=2}] unless data entity @s data.animation{namespace:"luigis_mansion",id:"search/hump"} run tag @e[tag=interact,tag=manual,limit=1] add fake_shake
+scoreboard players operation #temp ID = @s ID
 execute if entity @s[scores={InteractionTime=2},tag=!not_facing] as @e[tag=hit,tag=shaken_by_interact,limit=1] run function luigis_mansion:items/interact/target_furniture/shake
-execute if entity @s[scores={InteractionTime=2},tag=wall_bump] run function luigis_mansion:blocks/search_sound/wall
+execute if entity @s[scores={InteractionTime=2},tag=wall_bump] run playsound luigis_mansion:furniture.search.wall block @a[tag=same_room] ~ ~ ~ 1
 execute if entity @s[scores={InteractionTime=9},tag=!not_facing] if data entity @s data.animation{namespace:"luigis_mansion",id:"search/knock"} as @e[tag=hit,tag=shaken_by_interact,limit=1] run function luigis_mansion:items/interact/target_furniture/shake
 execute if entity @s[scores={InteractionTime=9},tag=!not_facing] if data entity @s data.animation{namespace:"luigis_mansion",id:"search/bash"} as @e[tag=hit,tag=shaken_by_interact,limit=1] run function luigis_mansion:items/interact/target_furniture/shake
 execute if entity @s[scores={InteractionTime=17},tag=!not_facing] as @e[tag=hit,tag=searchable_by_interact,limit=1] run function luigis_mansion:items/interact/target_furniture/search
@@ -47,3 +48,4 @@ execute if entity @s[scores={InteractionTime=17}] run function luigis_mansion:en
 scoreboard players reset @s[scores={InteractionTime=17}] InteractionTime
 kill @e[tag=interact,tag=manual,limit=1]
 tag @s remove searcher
+tag @a[tag=this_player,limit=1] remove searcher

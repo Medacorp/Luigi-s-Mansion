@@ -2,15 +2,6 @@ summon minecraft:armor_stand ~ ~-1.25 ~ {CustomName:{type:"translatable",transla
 teleport @e[tag=this_entity,limit=1] ~ ~-1.25 ~ ~ 0
 scoreboard players set @e[tag=this_entity,limit=1] FurnitureSizeWidth 20
 scoreboard players set @e[tag=this_entity,limit=1] FurnitureSizeHeight 20
-scoreboard players set @e[tag=this_entity,limit=1] FurnitureDustLeft 0
-scoreboard players set @e[tag=this_entity,limit=1] FurnitureDustUp 0
-scoreboard players set @e[tag=this_entity,limit=1] FurnitureDustForward 0
-scoreboard players set @e[tag=this_entity,limit=1] FurnitureContentLeft 0
-scoreboard players set @e[tag=this_entity,limit=1] FurnitureContentUp 0
-scoreboard players set @e[tag=this_entity,limit=1] FurnitureContentForward 0
-scoreboard players set @e[tag=this_entity,limit=1] FurnitureGhostLeft 0
-scoreboard players set @e[tag=this_entity,limit=1] FurnitureGhostUp 0
-scoreboard players set @e[tag=this_entity,limit=1] FurnitureGhostForward 0
 function luigis_mansion:spawn_furniture/setup/default
 tag @e[tag=this_entity,limit=1] remove this_entity
 data remove storage luigis_mansion:data furniture

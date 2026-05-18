@@ -1,0 +1,2 @@
+execute if data storage luigis_mansion:data furniture.instrument.track unless data storage luigis_mansion:data furniture.instrument{forced_play:1b} run tag @e[tag=this_entity,limit=1] add play_music
+execute if data storage luigis_mansion:data furniture.instrument.track run data modify entity @e[tag=this_entity,limit=1] Tags append from storage luigis_mansion:data furniture.instrument.track

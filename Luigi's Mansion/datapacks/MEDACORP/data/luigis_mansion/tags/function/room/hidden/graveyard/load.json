@@ -6,6 +6,7 @@
         "luigis_mansion:room/hidden/graveyard/load/lamp",
         "luigis_mansion:room/hidden/graveyard/load/room_clear_chest",
         "luigis_mansion:room/hidden/graveyard/load/torch_1",
-        "luigis_mansion:room/hidden/graveyard/load/torch_2"
+        "luigis_mansion:room/hidden/graveyard/load/torch_2",
+        "luigis_mansion:room/hidden/graveyard/load/tree_trunk"
     ]
 }

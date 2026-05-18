@@ -2,8 +2,8 @@ execute if data storage luigis_mansion:data my_memory run tag @s add keep_memory
 execute if entity @s[tag=!keep_memory] if entity @a[tag=searcher,limit=1] run function luigis_mansion:entities/player/memory/get with entity @a[tag=searcher,limit=1]
 execute unless entity @s as @a run function luigis_mansion:main/get_same_room
 execute unless entity @a[tag=searcher,limit=1] run playsound luigis_mansion:furniture.search.heavy_generic block @a[tag=same_room] ~ ~ ~ 1
-execute if data storage luigis_mansion:data my_memory.animation{namespace:"luigis_mansion",id:"search/knock"} if entity @a[tag=searcher,scores={InteractionTime=..7},limit=1] run playsound luigis_mansion:furniture.search.heavy_generic block @a[tag=same_room] ~ ~ ~ 1 0.9
-execute if data storage luigis_mansion:data my_memory.animation{namespace:"luigis_mansion",id:"search/knock"} if entity @a[tag=searcher,scores={InteractionTime=8..},limit=1] run playsound luigis_mansion:furniture.search.heavy_generic block @a[tag=same_room] ~ ~ ~ 1 1
+execute if data storage luigis_mansion:data my_memory.animation{namespace:"luigis_mansion",id:"search/knock"} if entity @a[tag=searcher,scores={AnimationProgress=..7},limit=1] run playsound luigis_mansion:furniture.search.heavy_generic block @a[tag=same_room] ~ ~ ~ 1 0.9
+execute if data storage luigis_mansion:data my_memory.animation{namespace:"luigis_mansion",id:"search/knock"} if entity @a[tag=searcher,scores={AnimationProgress=8..},limit=1] run playsound luigis_mansion:furniture.search.heavy_generic block @a[tag=same_room] ~ ~ ~ 1 1
 execute if data storage luigis_mansion:data my_memory.animation{namespace:"luigis_mansion",id:"search/hump"} run playsound luigis_mansion:furniture.search.heavy_generic block @a[tag=same_room] ~ ~ ~ 1 1
 execute if data storage luigis_mansion:data my_memory.animation{namespace:"luigis_mansion",id:"search/bash"} run playsound luigis_mansion:furniture.search.heavy_generic block @a[tag=same_room] ~ ~ ~ 1 0.9
 execute unless entity @s run tag @a[tag=same_room] remove same_room
@@ -17,7 +17,6 @@ tag @s remove keep_memory
 #ball room lamps
 #bathroom 2 lamp
 #billiards room billiards table
-#boneyard dog house
 #breaker room mirror and table
 #butler's room closet, ironing table, lamp, sewing machine, and table
 #ceramics studio crates
@@ -27,7 +26,6 @@ tag @s remove keep_memory
 #courtyard lamps
 #dining room closets, and table
 #fortune-tellers room chair, and pillars
-#graveyard tree trunk
 #guest room bed, lamp, and plant
 #hallway 14 lamp
 #hallway 8 lamp

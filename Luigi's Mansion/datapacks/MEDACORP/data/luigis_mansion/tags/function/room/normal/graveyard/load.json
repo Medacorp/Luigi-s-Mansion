@@ -6,6 +6,7 @@
         "luigis_mansion:room/normal/graveyard/load/lamp",
         "luigis_mansion:room/normal/graveyard/load/room_clear_chest",
         "luigis_mansion:room/normal/graveyard/load/torch_1",
-        "luigis_mansion:room/normal/graveyard/load/torch_2"
+        "luigis_mansion:room/normal/graveyard/load/torch_2",
+        "luigis_mansion:room/normal/graveyard/load/tree_trunk"
     ]
 }

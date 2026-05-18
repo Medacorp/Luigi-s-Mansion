@@ -8874,41 +8874,6 @@
         ],
         "subtitle": "luigis_mansion:subtitles.entity.yellow_bat.attack"
     },
-    "furniture.ambient.projector": {
-        "sounds": [
-            {
-                "name": "luigis_mansion:furniture/ambient/projector",
-                "stream": false,
-                "pitch": 0.8,
-				"volume": 0.5
-            },
-            {
-                "name": "luigis_mansion:furniture/ambient/projector",
-                "stream": false,
-                "pitch": 0.9,
-				"volume": 0.5
-            },
-            {
-                "name": "luigis_mansion:furniture/ambient/projector",
-                "stream": false,
-                "pitch": 1,
-				"volume": 0.5
-            },
-            {
-                "name": "luigis_mansion:furniture/ambient/projector",
-                "stream": false,
-                "pitch": 1.1,
-				"volume": 0.5
-            },
-            {
-                "name": "luigis_mansion:furniture/ambient/projector",
-                "stream": false,
-                "pitch": 1.2,
-				"volume": 0.5
-            }
-        ],
-        "subtitle": "luigis_mansion:subtitles.furniture.ambient.projector"
-    },
     "furniture.ball_floor.spin": {
         "sounds": [
             {
@@ -9347,6 +9312,41 @@
         ],
         "subtitle": "luigis_mansion:subtitles.furniture.painting.land"
     },
+    "furniture.projector": {
+        "sounds": [
+            {
+                "name": "luigis_mansion:furniture/projector",
+                "stream": false,
+                "pitch": 0.8,
+				"volume": 0.5
+            },
+            {
+                "name": "luigis_mansion:furniture/projector",
+                "stream": false,
+                "pitch": 0.9,
+				"volume": 0.5
+            },
+            {
+                "name": "luigis_mansion:furniture/projector",
+                "stream": false,
+                "pitch": 1,
+				"volume": 0.5
+            },
+            {
+                "name": "luigis_mansion:furniture/projector",
+                "stream": false,
+                "pitch": 1.1,
+				"volume": 0.5
+            },
+            {
+                "name": "luigis_mansion:furniture/projector",
+                "stream": false,
+                "pitch": 1.2,
+				"volume": 0.5
+            }
+        ],
+        "subtitle": "luigis_mansion:subtitles.furniture.projector.ambient"
+    },
     "furniture.refrigerator": {
         "sounds": [
             {
@@ -9643,6 +9643,24 @@
             }
         ],
         "subtitle": "luigis_mansion:subtitles.furniture.telephone.ring"
+    },
+    "furniture.treadmill.start": {
+        "sounds": [
+            {
+                "name": "luigis_mansion:furniture/treadmill/start",
+                "stream": false
+            }
+        ],
+        "subtitle": "luigis_mansion:subtitles.furniture.treadmill.run"
+    },
+    "furniture.treadmill.run": {
+        "sounds": [
+            {
+                "name": "luigis_mansion:furniture/treadmill/run",
+                "stream": false
+            }
+        ],
+        "subtitle": "luigis_mansion:subtitles.furniture.treadmill.run"
     },
     "furniture.toilet": {
         "sounds": [

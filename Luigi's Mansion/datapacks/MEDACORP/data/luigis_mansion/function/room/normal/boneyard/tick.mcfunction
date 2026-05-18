@@ -7,6 +7,8 @@ scoreboard players set #temp Room 28
 
 execute as @a[scores={Room=28}] run function luigis_mansion:room/normal/boneyard/tick_per_player
 
+tag @e[tag=mr_bones,tag=hidden,scores={Room=28}] add spawn
+
 #todelete - old furniture
 function #luigis_mansion:room/normal/boneyard/interactions/room
 #/todelete

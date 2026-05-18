@@ -33,7 +33,7 @@ furniture:{
         turn_speed:0, //Optional if value is "fan", the speed at which this fan turns in tenths of degrees (positive values only) per tick. Default = 0.
         turn_left:0b //Optional if value is "fan", whether the fan turns left rather than right. Default = 0b.
     },
-    searchable:["<method>"], //Sets what method can result in searching. If "interact" is absent here, but provided in shake_animation, interact will still try to shake it, and trigger the search animaton, but it won't actually get searched. Methods: time(will search automatically), flashlight(special tag on shining, no auto-searching), interact, vacuum, dust, fire, water, ice. Default = none.
+    searchable:["<method>"], //Sets what method can result in searching. If searchable by any of the expelling methods, vacuum and interact will NOT search, only open, and searching by expelling requires the furniture to be open. Methods: time(will search automatically), flashlight(special tag on shining, no auto-searching), interact, vacuum, dust, fire, water, ice. Default = none.
     shake_animation:["<method>"], //Sets what method can result in the furniture shaking. Methods: interact, vacuum, dust, fire, water, ice. Default = none.
     searched:1b, //When set the furniture should spawn triggering its searched animation. Default = 0b.
     no_search_animation:1b, //When set the furniture has no search animation at all (eg on a chest doesn't open it). If set alongside searched, the furniture spawns in the searched state, skipping the animation. Default = 0b.
@@ -51,16 +51,27 @@ furniture:{
     },
     search_command:"...", //Command to trigger on search. Runs as the furniture at the searcher (who's tagged "searcher"). Default = none.
     can_hide_boo:1b, //If this furniture is randomly selected by boos to hide in. Default = 0b.
-    scan_result: //Result from GBH scan. Not provided = ignored by scan. Has several formats and behaviors.
-        * {namespace:"luigis_mansion",id:"scan/scanner/1"}, //Dialog as a result from GBH scan. Gooigi scan always results in the "3ds_remake:scan/scanner/gooigi" dialog if the ID starts with "scan/scanner/".
-        * "warp", //Warps the scanner if they're not Gooigi and the can_warp global variable is turned on.
+    scan_result: //Result from GBH scan. Has several formats and behaviors. Any value provided prevents GBH scan from passing through, but has no result.
+        * { //Dialog as a result from GBH scan. Gooigi scan always results in the "3ds_remake:scan/scanner/gooigi" dialog if the ID starts with "scan/scanner/".
+            namespace:"luigis_mansion", //Namespace of the dialog
+            id:"scan/scanner/1" //ID of the dialog
+        },
+        * { //Wind warping to the specified location when stepping in front of this furniture when scanned.
+            x:X, //X position to warp to, can be relative and local too
+            y:X, //Y position to warp to, can be relative and local too
+            z:X, //Z position to warp to, can be relative and local too
+            yaw:X, //The y rotation the player gets upon warping, can be relative
+            pitch:X, //The x rotation the player gets upon warping, can be relative
+            forward:X, //The amount of blocks in front of this furniture's position the warping will take place
+            cleared_only:Xb //Whether the warp can only be enabled if the room is cleared. Will be enabled during blackout if the room would normally be lit too. Default = 0b
+        },
+        * "warp", //Warps the scanner to the default position in the mansion if they're not Gooigi and the can_warp global variable is turned on.
         * "spawn_ghost", //Spawns the ghost hiding in this furniture.
-        * "", //Prevents GBH scan from passing through, but has no result.
-    
+
     //non-default setup
     animation:{ //Animation info.
-        namespace:"luigis_mansion", //The namespace of the animation to use. Default = luigis_mansion.
-        id:"idle", //The namespace of the animation to use. Default = idle.
+        namespace:"luigis_mansion", //The namespace of the animation to use. Default = "luigis_mansion".
+        id:"idle", //The namespace of the animation to use. Default = "idle".
         progress:X, //The progress the animation already has on the first tick. Default = 0.
         frozen:1b //Whether or not the animation is frozen. Default = 0b.
     },
@@ -72,17 +83,21 @@ furniture:{
         timer:1b //When set it turns the spawning back on after 30 seconds of being disabled. Default = 0b.
         cannot_disable:1b //When set prevents being disabled. Default = 0b.
     },
-    particles:"chilly_fog", //What particles this furniture spawns. Allowed values are "chilly_fog", "dripping_water", "leaking_water", "spraying_water", "flames", "sparkles". Conditions depend on the particle. Only furniture with an elemental position can have particles. Default = none.
+    particles:"chilly_fog", //What particles this furniture spawns. Allowed values are "chilly_fog", "dripping_water", "leaking_water", "spraying_water", "flames", "sparkles", "wind_warp_sparkles". Conditions depend on the particle. Particles are spawned at element position. Default = none.
     ambient_light:{ //Ambient light data, can only be applied to furniture which can cast light, that's not a lamp (eg a torch or a projector). Default = none.
         lit:1b, //Whether the light source is currently lit. If this light source is also a fire elemental source, its lit state will match whether it can spawn fire elemental ghosts. Default = 0b.
         light_on_search:1b, //Whether the light source turns on when searched. Default = 0b.
         cast_shadow:1b //Whether the light source creates shadows. Default = 0b.
     },
     falling_chandelier:... //The ID of the function which triggers falling for this chandelier. Only applies to chandeliers. Optional.
-        * "always" //If set to this string, defaults to "luigis_mansion:entities/furniture/type/lamp/fall_trigger/always", triggers for every player under it, only ignoring warping players
-        * "chance" //If set to this string, defaults to "luigis_mansion:entities/furniture/type/lamp/fall_trigger/chance", rolls chance for every (new) player under it
-        * "chauncey", //If set to this string, defaults to "luigis_mansion:entities/furniture/type/lamp/fall_trigger/chauncey", rolls chance for every (new) player under it only if portrait ghost luigis_mansion:chauncey is uncaught
+        * "always" //If set to this string, defaults to "luigis_mansion:entities/furniture/type/lamp/fall_trigger/always", triggers for every player under it, only ignoring warping players.
+        * "chance" //If set to this string, defaults to "luigis_mansion:entities/furniture/type/lamp/fall_trigger/chance", rolls chance for every (new) player under it, ignoring warping players.
+        * "chauncey", //If set to this string, defaults to "luigis_mansion:entities/furniture/type/lamp/fall_trigger/chauncey", rolls chance for every (new) player under it, ignoring warping players, only if portrait ghost luigis_mansion:chauncey has non-0 health.
     mirror_reflection:1b, //Whether the mirror will actually reflect the room, otherwise gets a solid glass texture. Valid for mirrors only. Default = 1b. Forced to 0b if the yaw rotation is not a multiple of 90, or pose pitch has a non-0 value.
+    instrument:{ //When set, opening the instrument will play the corresponding track of the selected music. Only applies to instruments. Optional.
+        track:"drum_1", //The name of the track to enable.
+        forced_play:1b //When set, searching the furniture will not enable the track, the map must manually add the "play_music" tag to do so. Do note that the furniture must still be open in order to play.
+    },
     boo_poster:1b, //Whether or not this is a Boo poster and cannot be vacuumed up. Default = 0b.
     curtain:{ //Fields exclusive to curtains
         wind:Xb, //Whether this curtain flows in wind. Default = 0b.

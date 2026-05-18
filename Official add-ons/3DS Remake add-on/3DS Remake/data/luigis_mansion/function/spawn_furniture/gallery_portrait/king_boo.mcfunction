@@ -10,15 +10,6 @@ execute if score #global_3ds_remake_gallery Selected matches 1 run scoreboard pl
 execute unless score #global_3ds_remake_gallery Selected matches 1 run scoreboard players set @e[tag=this_entity,limit=1] FurnitureSizeLeft 16
 execute unless score #global_3ds_remake_gallery Selected matches 1 run scoreboard players set @e[tag=this_entity,limit=1] FurnitureSizeUp 22
 scoreboard players set @e[tag=this_entity,limit=1] FurnitureSizeForward 2
-scoreboard players set @e[tag=this_entity,limit=1] FurnitureDustLeft 0
-scoreboard players set @e[tag=this_entity,limit=1] FurnitureDustUp 0
-scoreboard players set @e[tag=this_entity,limit=1] FurnitureDustForward 0
-scoreboard players set @e[tag=this_entity,limit=1] FurnitureContentLeft 0
-scoreboard players set @e[tag=this_entity,limit=1] FurnitureContentUp 0
-scoreboard players set @e[tag=this_entity,limit=1] FurnitureContentForward 0
-scoreboard players set @e[tag=this_entity,limit=1] FurnitureGhostLeft 0
-scoreboard players set @e[tag=this_entity,limit=1] FurnitureGhostUp 0
-scoreboard players set @e[tag=this_entity,limit=1] FurnitureGhostForward 0
 function 3ds_remake:spawn_furniture/setup/gallery_portrait
 function luigis_mansion:spawn_furniture/setup/default
 tag @e[tag=this_entity,limit=1] remove this_entity

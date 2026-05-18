@@ -5,6 +5,7 @@ execute if entity @s[tag=mirror,tag=reflects_entities] if score #global_mirror_r
 execute if entity @s[tag=elemental_source] run function luigis_mansion:entities/furniture/type/elemental_source
 execute if entity @s[tag=lamp] run function luigis_mansion:entities/furniture/type/lamp
 execute if entity @s[scores={FurnitureLightStrength=0..15}] run function luigis_mansion:entities/furniture/spawn/light
+execute if entity @s[tag=wind_warp] run function luigis_mansion:entities/furniture/wind_warp with entity @s data.scan_result
 execute if entity @s[tag=spawn_particles] run function luigis_mansion:entities/furniture/spawn/particles
 
 execute unless entity @s[tag=!fake_shake,tag=!shake,tag=!long_shake,tag=!was_shaking] run function luigis_mansion:entities/furniture/shake

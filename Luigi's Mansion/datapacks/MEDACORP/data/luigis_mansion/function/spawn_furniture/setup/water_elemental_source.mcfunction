@@ -1,3 +1,6 @@
+execute if data storage luigis_mansion:data furniture.water_elemental_source run scoreboard players add @e[tag=this_entity,limit=1] FurnitureElementLeft 0
+execute if data storage luigis_mansion:data furniture.water_elemental_source run scoreboard players add @e[tag=this_entity,limit=1] FurnitureElementUp 0
+execute if data storage luigis_mansion:data furniture.water_elemental_source run scoreboard players add @e[tag=this_entity,limit=1] FurnitureElementRight 0
 execute if data storage luigis_mansion:data furniture.water_elemental_source run tag @e[tag=this_entity,limit=1] add elemental_source
 execute if data storage luigis_mansion:data furniture.water_elemental_source run tag @e[tag=this_entity,limit=1] add water_elemental_source
 execute if data storage luigis_mansion:data furniture.water_elemental_source run tag @e[tag=this_entity,limit=1] add enabled

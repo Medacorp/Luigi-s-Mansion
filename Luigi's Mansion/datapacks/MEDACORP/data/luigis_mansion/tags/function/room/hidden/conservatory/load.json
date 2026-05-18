@@ -2,6 +2,9 @@
     "values": [
         "luigis_mansion:room/hidden/conservatory/load/set_loaded",
         "luigis_mansion:room/hidden/conservatory/load/lights",
+        "luigis_mansion:room/hidden/conservatory/load/blue_padded_stool_1",
+        "luigis_mansion:room/hidden/conservatory/load/blue_padded_stool_2",
+        "luigis_mansion:room/hidden/conservatory/load/blue_padded_stool_mounted_saxophone",
         "luigis_mansion:room/hidden/conservatory/load/cello",
         "luigis_mansion:room/hidden/conservatory/load/drum_1",
         "luigis_mansion:room/hidden/conservatory/load/drum_2",
@@ -11,7 +14,6 @@
         "luigis_mansion:room/hidden/conservatory/load/piano",
         "luigis_mansion:room/hidden/conservatory/load/poster",
         "luigis_mansion:room/hidden/conservatory/load/room_clear_chest",
-        "luigis_mansion:room/hidden/conservatory/load/saxophone",
         "luigis_mansion:room/hidden/conservatory/load/saxophone_portrait_1",
         "luigis_mansion:room/hidden/conservatory/load/saxophone_portrait_2",
         "luigis_mansion:room/hidden/conservatory/load/trumpet_portrait_1",

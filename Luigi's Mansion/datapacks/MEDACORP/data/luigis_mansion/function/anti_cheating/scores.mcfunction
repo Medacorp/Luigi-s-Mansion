@@ -58,6 +58,7 @@ scoreboard objectives add FurnitureLightLeft dummy
 scoreboard objectives add FurnitureLightStrength dummy
 scoreboard objectives add FurnitureLightTime dummy
 scoreboard objectives add FurnitureLightUp dummy
+scoreboard objectives add FurnitureNoteTime dummy
 scoreboard objectives add FurnitureRotationDefault dummy
 scoreboard objectives add FurnitureRotationSpeed dummy
 scoreboard objectives add FurnitureRotationSpeedDefault dummy
@@ -300,6 +301,7 @@ execute unless score #freeze_timer Selected matches 0..1 run scoreboard players 
 
 execute unless data storage luigis_mansion:data current_state if entity @a[limit=1] run function luigis_mansion:other/upgrade_path/newly_installed
 
+gamerule minecraft:fire_spread_radius_around_player 0
 gamerule minecraft:fall_damage false
 gamerule minecraft:max_command_sequence_length 2147483647
 gamerule minecraft:max_command_forks 2147483647

@@ -1,3 +1,3 @@
 execute if entity @s[nbt={data:{furniture_type:"swinging",interact_animation:{namespace:"luigis_mansion",id:"enthusiastic"}}}] at @e[tag=interact,limit=1] run function luigis_mansion:items/interact/target_furniture/swing
 execute unless entity @s[nbt={data:{furniture_type:"swinging",interact_animation:{namespace:"luigis_mansion",id:"enthusiastic"}}}] run tag @s add search
-scoreboard players operation @s SearcherID = @e[tag=searcher,limit=1] ID
+scoreboard players operation @s SearcherID = #temp ID

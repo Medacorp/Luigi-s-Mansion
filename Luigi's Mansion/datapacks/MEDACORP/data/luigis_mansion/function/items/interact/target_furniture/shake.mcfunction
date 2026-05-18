@@ -1,4 +1,4 @@
 execute if entity @e[tag=interact,tag=manual,limit=1,tag=long_shake] run tag @s[tag=shaken_by_interact,tag=!no_long_shake_animation] add long_shake
 execute if entity @e[tag=interact,tag=manual,limit=1,tag=!long_shake,tag=!fake_shake] run tag @s[tag=shaken_by_interact,tag=!no_short_shake_animation] add shake
 execute if entity @e[tag=interact,tag=manual,limit=1,tag=!long_shake,tag=fake_shake] run tag @s[tag=shaken_by_interact,tag=!no_short_shake_animation] add fake_shake
-execute if entity @e[tag=interact,tag=manual,limit=1] run scoreboard players operation @s[tag=shaken_by_interact] ID = #temp ID
+execute if entity @e[tag=interact,tag=manual,limit=1] run scoreboard players operation @s[tag=shaken_by_interact] ShakerID = #temp ID

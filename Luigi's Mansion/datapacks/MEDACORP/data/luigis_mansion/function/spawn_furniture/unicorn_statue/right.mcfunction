@@ -3,14 +3,9 @@ teleport @e[tag=this_entity,limit=1] ~ ~-1.43875 ~ ~ 0
 scoreboard players set @e[tag=this_entity,limit=1] FurnitureSizeLeft 20
 scoreboard players set @e[tag=this_entity,limit=1] FurnitureSizeUp 50
 scoreboard players set @e[tag=this_entity,limit=1] FurnitureSizeForward 40
-scoreboard players set @e[tag=this_entity,limit=1] FurnitureDustLeft 0
 scoreboard players set @e[tag=this_entity,limit=1] FurnitureDustUp 12
-scoreboard players set @e[tag=this_entity,limit=1] FurnitureDustForward 0
-scoreboard players set @e[tag=this_entity,limit=1] FurnitureContentLeft 0
 scoreboard players set @e[tag=this_entity,limit=1] FurnitureContentUp 35
 scoreboard players set @e[tag=this_entity,limit=1] FurnitureContentForward 25
-scoreboard players set @e[tag=this_entity,limit=1] FurnitureGhostLeft 0
-scoreboard players set @e[tag=this_entity,limit=1] FurnitureGhostUp 0
 scoreboard players set @e[tag=this_entity,limit=1] FurnitureGhostForward 25
 function luigis_mansion:spawn_furniture/setup/default
 tag @e[tag=this_entity,limit=1] remove this_entity
