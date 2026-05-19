@@ -1,15 +1,16 @@
-execute at @s[tag=1] unless block ~ ~-0.1 ~ #luigis_mansion:interact_ignore rotated ~ 0 run summon minecraft:marker ^ ^0.1 ^0.5 {Tags:["interact","manual","feet"]}
-execute at @s[tag=1] if block ~ ~-0.1 ~ #luigis_mansion:interact_ignore rotated ~ 0 run summon minecraft:marker ^ ^0.1 ^0.5 {Tags:["interact","manual"]}
-execute at @s[tag=2] unless block ~ ~-0.1 ~ #luigis_mansion:interact_ignore rotated ~ 0 run summon minecraft:marker ^ ^1.1 ^0.5 {Tags:["interact","manual"]}
-execute at @s[tag=2] if block ~ ~-0.1 ~ #luigis_mansion:interact_ignore rotated ~ 0 run summon minecraft:marker ^ ^1.1 ^0.5 {Tags:["interact","manual","feet"]}
-execute at @s[tag=3] unless block ~ ~-0.1 ~ #luigis_mansion:interact_ignore rotated ~ 0 run summon minecraft:marker ^ ^2.1 ^0.5 {Tags:["interact","manual"]}
-execute at @s[tag=3] if block ~ ~-0.1 ~ #luigis_mansion:interact_ignore rotated ~ 0 run summon minecraft:marker ^ ^-0.9 ^0.5 {Tags:["interact","manual"]}
+execute at @s[tag=1] unless block ~ ~-0.1 ~ #luigis_mansion:interact_ignore rotated ~ 0 run summon minecraft:marker ^ ^0.5 ^0.5 {Tags:["interact","manual","feet"]}
+execute at @s[tag=1] if block ~ ~-0.1 ~ #luigis_mansion:interact_ignore rotated ~ 0 run summon minecraft:marker ^ ^0.5 ^0.5 {Tags:["interact","manual"]}
+execute at @s[tag=2] unless block ~ ~-0.1 ~ #luigis_mansion:interact_ignore rotated ~ 0 run summon minecraft:marker ^ ^1.5 ^0.5 {Tags:["interact","manual"]}
+execute at @s[tag=2] if block ~ ~-0.1 ~ #luigis_mansion:interact_ignore rotated ~ 0 run summon minecraft:marker ^ ^1.5 ^0.5 {Tags:["interact","manual","feet"]}
+execute at @s[tag=3] unless block ~ ~-0.1 ~ #luigis_mansion:interact_ignore rotated ~ 0 run summon minecraft:marker ^ ^2.5 ^0.5 {Tags:["interact","manual"]}
+execute at @s[tag=3] if block ~ ~-0.1 ~ #luigis_mansion:interact_ignore rotated ~ 0 run summon minecraft:marker ^ ^-0.5 ^0.5 {Tags:["interact","manual"]}
 tag @s add searcher
 tag @a[tag=this_player,limit=1] add searcher
 scoreboard players add @s InteractionTime 1
 tag @s[scores={InteractionTime=2}] add reset_rotation
 function luigis_mansion:items/interact/target_furniture/get_furniture with entity @s data
 execute if entity @s[scores={InteractionTime=2}] run function luigis_mansion:entities/luigi/animation/set/none
+execute if entity @s[scores={InteractionTime=2},tag=wall_bump] run function luigis_mansion:entities/luigi/animation/set/search/knock
 execute if entity @s[scores={InteractionTime=2}] as @e[tag=hit,limit=1] run function luigis_mansion:items/interact/target_furniture/get_animation
 execute if entity @s[scores={InteractionTime=2}] unless data entity @s data.animation if predicate luigis_mansion:luigi/search/knock_chance run function luigis_mansion:entities/luigi/animation/set/search/knock
 execute if entity @s[scores={InteractionTime=2}] unless data entity @s data.animation if predicate luigis_mansion:luigi/search/hump_chance run function luigis_mansion:entities/luigi/animation/set/search/hump

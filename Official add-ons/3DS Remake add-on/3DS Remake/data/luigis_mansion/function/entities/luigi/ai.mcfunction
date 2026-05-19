@@ -15,7 +15,6 @@ function #luigis_mansion:items/reset_disabled
 function luigis_mansion:entities/luigi/sync_inventory
 execute if entity @s[scores={Shrunk=1}] run function luigis_mansion:items/poison_mushroom/wear_off
 scoreboard players remove @s[scores={Shrunk=1..}] Shrunk 1
-execute if entity @s[tag=!death_animation,tag=!revived_animation,tag=!revived_by_polterpup] unless entity @s[nbt={data:{animation:{}}},tag=!idle] run function luigis_mansion:blocks/gravity_swap
 execute if entity @s[tag=riding_poltergust] run function luigis_mansion:entities/luigi/riding_poltergust
 
 execute unless entity @s[nbt={data:{animation:{}}},tag=!idle,tag=!animation_may_move] run function luigis_mansion:entities/luigi/spawn_ghosts

@@ -6,18 +6,18 @@ execute positioned ~-0.5 ~1.83875 ~-0.5 positioned ^ ^ ^-0.5 unless entity @e[ta
 execute positioned ~-0.5 ~1.83875 ~-0.5 positioned ^ ^ ^-0.5 if entity @e[tag=luigi,tag=can_trigger_treadmill,dx=0,dy=0,dz=0,limit=1] run scoreboard players add @s FurnitureSearch 1
 execute positioned ~-0.5 ~1.83875 ~-0.5 positioned ^ ^ ^-0.5 unless entity @e[tag=luigi,tag=can_trigger_treadmill,dx=0,dy=0,dz=0,limit=1] positioned ^ ^ ^1 if entity @e[tag=luigi,tag=can_trigger_treadmill,dx=0,dy=0,dz=0,limit=1] run scoreboard players add @s FurnitureSearch 1
 
-execute if score @s FurnitureSearch matches 1 positioned ^-0.5 ^1.83875 ^-0.5 if entity @e[tag=luigi,tag=can_trigger_treadmill,dx=0,dy=0,dz=1,limit=1] run tag @s[predicate=luigis_mansion:furniture/altered_pitch_chance] add altered_pitch
-execute if score @s FurnitureSearch matches 1 positioned ^-0.5 ^1.83875 ^-0.5 unless entity @e[tag=luigi,tag=can_trigger_treadmill,dx=0,dy=0,dz=1,limit=1] positioned ^ ^ ^1 if entity @e[tag=luigi,tag=can_trigger_treadmill,dx=0,dy=0,dz=0,limit=1] run tag @s[predicate=luigis_mansion:furniture/altered_pitch_chance] add altered_pitch
-execute unless score @s FurnitureShake = @s FurnitureSearch if entity @s[tag=!altered_pitch,tag=start_sound] run playsound luigis_mansion:furniture.treadmill.start block @a[tag=same_room] ~ ~ ~ 1 1
-execute unless score @s FurnitureShake = @s FurnitureSearch if entity @s[tag=altered_pitch,tag=start_sound] run playsound luigis_mansion:furniture.treadmill.start block @a[tag=same_room] ~ ~ ~ 1 1.4
-execute unless score @s FurnitureShake = @s FurnitureSearch if entity @s[tag=!altered_pitch,tag=!start_sound] run playsound luigis_mansion:furniture.treadmill.run block @a[tag=same_room] ~ ~ ~ 1 1
-execute unless score @s FurnitureShake = @s FurnitureSearch if entity @s[tag=altered_pitch,tag=!start_sound] run playsound luigis_mansion:furniture.treadmill.run block @a[tag=same_room] ~ ~ ~ 1 1.4
+execute unless score @s FurnitureShake = @s FurnitureSearch if score @s FurnitureSearch matches 1 run tag @s[predicate=luigis_mansion:furniture/altered_pitch_chance] add altered_pitch
+execute unless score @s FurnitureShake = @s FurnitureSearch if entity @s[tag=!altered_pitch,tag=start_sound,scores={RoomNoise=0}] run playsound luigis_mansion:furniture.treadmill.start block @a[tag=same_room] ~ ~ ~ 1 1
+execute unless score @s FurnitureShake = @s FurnitureSearch if entity @s[tag=altered_pitch,tag=start_sound,scores={RoomNoise=0}] run playsound luigis_mansion:furniture.treadmill.start block @a[tag=same_room] ~ ~ ~ 1 1.4
+execute unless score @s FurnitureShake = @s FurnitureSearch if entity @s[tag=!altered_pitch,tag=!start_sound,scores={RoomNoise=0}] run playsound luigis_mansion:furniture.treadmill.run block @a[tag=same_room] ~ ~ ~ 1 1
+execute unless score @s FurnitureShake = @s FurnitureSearch if entity @s[tag=altered_pitch,tag=!start_sound,scores={RoomNoise=0}] run playsound luigis_mansion:furniture.treadmill.run block @a[tag=same_room] ~ ~ ~ 1 1.4
+execute unless score @s FurnitureShake = @s FurnitureSearch run scoreboard players set @s[tag=!altered_pitch,scores={RoomNoise=0}] RoomNoise 3
+execute unless score @s FurnitureShake = @s FurnitureSearch run scoreboard players set @s[tag=altered_pitch,scores={RoomNoise=0}] RoomNoise 2
 execute unless score @s FurnitureShake = @s FurnitureSearch run tag @s remove start_sound
 execute if score @s FurnitureShake = @s FurnitureSearch run tag @s add start_sound
 execute if score @s FurnitureShake = @s FurnitureSearch run tag @s remove altered_pitch
 execute unless score @s FurnitureShake = @s FurnitureSearch store result score #temp Time run data get entity @s equipment.head.components."minecraft:custom_model_data".floats[0]
-execute unless score @s FurnitureShake = @s FurnitureSearch positioned ~-0.5 ~1.83875 ~-0.5 positioned ^ ^ ^-0.5 if entity @e[tag=luigi,tag=can_trigger_treadmill,dx=0,dy=0,dz=0,limit=1] store result entity @s equipment.head.components."minecraft:custom_model_data".floats[0] float 1 run scoreboard players add #temp Time 1
-execute unless score @s FurnitureShake = @s FurnitureSearch positioned ~-0.5 ~1.83875 ~-0.5 positioned ^ ^ ^-0.5 unless entity @e[tag=luigi,tag=can_trigger_treadmill,dx=0,dy=0,dz=0,limit=1] positioned ^ ^ ^1 if entity @e[tag=luigi,tag=can_trigger_treadmill,dx=0,dy=0,dz=0,limit=1] store result entity @s equipment.head.components."minecraft:custom_model_data".floats[0] float 1 run scoreboard players add #temp Time 1
+execute unless score @s FurnitureShake = @s FurnitureSearch store result entity @s equipment.head.components."minecraft:custom_model_data".floats[0] float 1 run scoreboard players add #temp Time 1
 execute unless score @s FurnitureShake = @s FurnitureSearch if score #temp Time matches 9.. store result entity @s equipment.head.components."minecraft:custom_model_data".floats[0] float 1 run scoreboard players set #temp Time 0
 scoreboard players reset #temp Time
 

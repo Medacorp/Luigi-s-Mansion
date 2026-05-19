@@ -1,13 +1,14 @@
-?:
+v3.7:
 * Added wind warp scan result option for furniture
 * Added furniture particle option "wind_warp_sparkles"; requires wind warp scan result
 * Added the following furniture model:
 ** Blue padded stool (mounted saxophone)s
-** Buttons
+** Buttons (unique furniture type)
 ** Cellos
 ** Dish washers (potential water elemental source)
 ** Dog houses
 ** Drums
+** Gravity flip platforms (unique furniture type)
 ** Harps
 ** Stoves (potential fire elemental source)
 ** Treadmills (unique furniture type)

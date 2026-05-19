@@ -1,9 +1,9 @@
-execute at @s unless block ~ ~-0.1 ~ #luigis_mansion:interact_ignore rotated ~ 0 run summon minecraft:marker ^ ^0.1 ^0.5 {Tags:["interact","manual","check","1","down"]}
-execute at @s unless block ~ ~-0.1 ~ #luigis_mansion:interact_ignore rotated ~ 0 run summon minecraft:marker ^ ^1.1 ^0.5 {Tags:["interact","manual","check","2","up"]}
-execute at @s unless block ~ ~-0.1 ~ #luigis_mansion:interact_ignore rotated ~ 0 run summon minecraft:marker ^ ^2.1 ^0.5 {Tags:["interact","manual","check","3"]}
-execute at @s if block ~ ~-0.1 ~ #luigis_mansion:interact_ignore unless block ~ ~2 ~ #luigis_mansion:interact_ignore rotated ~ 0 run summon minecraft:marker ^ ^0.1 ^0.5 {Tags:["interact","manual","check","1","up"]}
-execute at @s if block ~ ~-0.1 ~ #luigis_mansion:interact_ignore unless block ~ ~2 ~ #luigis_mansion:interact_ignore rotated ~ 0 run summon minecraft:marker ^ ^1.1 ^0.5 {Tags:["interact","manual","check","2","down"]}
-execute at @s if block ~ ~-0.1 ~ #luigis_mansion:interact_ignore unless block ~ ~2 ~ #luigis_mansion:interact_ignore rotated ~ 0 run summon minecraft:marker ^ ^-0.9 ^0.5 {Tags:["interact","manual","check","3"]}
+execute at @s unless block ~ ~-0.1 ~ #luigis_mansion:interact_ignore rotated ~ 0 run summon minecraft:marker ^ ^0.5 ^0.5 {Tags:["interact","manual","check","1","down"]}
+execute at @s unless block ~ ~-0.1 ~ #luigis_mansion:interact_ignore rotated ~ 0 run summon minecraft:marker ^ ^1.5 ^0.5 {Tags:["interact","manual","check","2","up"]}
+execute at @s unless block ~ ~-0.1 ~ #luigis_mansion:interact_ignore rotated ~ 0 run summon minecraft:marker ^ ^2.5 ^0.5 {Tags:["interact","manual","check","3"]}
+execute at @s if block ~ ~-0.1 ~ #luigis_mansion:interact_ignore unless block ~ ~2 ~ #luigis_mansion:interact_ignore rotated ~ 0 run summon minecraft:marker ^ ^0.5 ^0.5 {Tags:["interact","manual","check","1","up"]}
+execute at @s if block ~ ~-0.1 ~ #luigis_mansion:interact_ignore unless block ~ ~2 ~ #luigis_mansion:interact_ignore rotated ~ 0 run summon minecraft:marker ^ ^1.5 ^0.5 {Tags:["interact","manual","check","2","down"]}
+execute at @s if block ~ ~-0.1 ~ #luigis_mansion:interact_ignore unless block ~ ~2 ~ #luigis_mansion:interact_ignore rotated ~ 0 run summon minecraft:marker ^ ^-0.5 ^0.5 {Tags:["interact","manual","check","3"]}
 scoreboard players set @e[tag=interact,tag=manual] FurnitureSize 2147483647
 execute at @e[tag=interact,tag=manual] as @e[tag=furniture,tag=!door,tag=same_room,tag=affected_by_interact,tag=!no_ai] run function luigis_mansion:items/interact/target_furniture/find
 execute as @e[tag=interact,tag=manual] positioned as @s rotated ~ 0 run teleport @s ^ ^ ^0.5
