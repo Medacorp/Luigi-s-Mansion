@@ -1,2 +1,2 @@
-data modify storage luigis_mansion:data furniture set value {room:7,shake_animation:["manual","vacuum"],no_dust:1b,sound:{namespace:"luigis_mansion",id:"generic"},scan_result:{namespace:"luigis_mansion",id:"scan/scanner/5"}}
+data modify storage luigis_mansion:data furniture set value {room:7,shake_animation:["interact","vacuum"],no_dust:1b,sound:{namespace:"luigis_mansion",id:"generic"},scan_result:{namespace:"luigis_mansion",id:"scan/scanner/5"}}
 execute positioned 739 23 66 rotated -100 0 run function e3_demo:spawn_furniture/standing_chauncey_portrait

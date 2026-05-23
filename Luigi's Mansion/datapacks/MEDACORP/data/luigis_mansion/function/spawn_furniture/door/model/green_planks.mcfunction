@@ -1,0 +1,1 @@
+data modify entity @s equipment.head.components."minecraft:item_model" set value "luigis_mansion:furniture/door/green_planks"

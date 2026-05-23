@@ -1,3 +1,4 @@
+execute if score #mirrored Selected matches 1 run scoreboard players set #mirrored Selected 2
 execute unless score #3ds_gallery_back_room Ticking matches 1 run function #3ds_remake:room/gallery_back_room/load
 execute as @e[tag=player,x=733,y=-1,z=-36,dx=12,dy=12,dz=15] unless entity @s[scores={Room=-11}] run scoreboard players operation @s LastRoom = @s Room
 scoreboard players set @e[tag=player,x=733,y=-1,z=-36,dx=12,dy=12,dz=15] Room -11
@@ -8,5 +9,7 @@ scoreboard players set #temp Room -11
 execute as @a[scores={Room=-11}] run function 3ds_remake:room/gallery_back_room/tick_per_player
 
 execute unless block 736 2 -24 minecraft:barrier run function 3ds_remake:room/gallery/generate
-
+#todelete - old furniture
 function #3ds_remake:room/gallery_back_room/interactions/room
+#/todelete
+execute if score #mirrored Selected matches 2 run scoreboard players set #mirrored Selected 1

@@ -1,3 +1,4 @@
+execute if score #mirrored Selected matches 1 run scoreboard players set #mirrored Selected 2
 execute unless score #ghost_portrificationizer_room Ticking matches 1 run function #luigis_mansion:room/ghost_portrificationizer_room/load
 execute as @e[tag=player,x=764,y=75,z=-15,dx=14,dy=7,dz=38] unless entity @s[scores={Room=-3}] run scoreboard players operation @s LastRoom = @s Room
 scoreboard players set @e[tag=player,x=764,y=75,z=-15,dx=14,dy=7,dz=38] Room -3
@@ -18,3 +19,5 @@ setblock 768 77 -1 minecraft:lever[face=wall,facing=west,powered=true]
 #todelete - old furniture
 function #luigis_mansion:room/ghost_portrificationizer_room/interactions/room
 #/todelete
+
+execute if score #mirrored Selected matches 2 run scoreboard players set #mirrored Selected 1

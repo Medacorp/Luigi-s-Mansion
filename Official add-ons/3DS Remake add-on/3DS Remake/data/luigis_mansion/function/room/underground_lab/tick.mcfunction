@@ -1,12 +1,7 @@
+execute if score #mirrored Selected matches 1 run scoreboard players set #mirrored Selected 2
 execute unless score #underground_lab Ticking matches 1 run function #luigis_mansion:room/underground_lab/load
 execute as @e[tag=player,x=779,y=74,z=5,dx=18,dy=14,dz=19] unless entity @s[scores={Room=-1}] run scoreboard players operation @s LastRoom = @s Room
-scoreboard players set @e[x=779,y=74,z=5,dx=18,dy=14,dz=19] Room -1
-#todelete - old furniture
-scoreboard players set #temp Room -1
-#/todelete
-
-scoreboard players set @a[tag=!spectator,x=788,y=87,z=21,dx=1,dy=4,dz=0] Room 0
-execute as @a[tag=!spectator,x=788,y=87,z=21,dx=1,dy=4,dz=0] unless entity @s[scores={MusicGroup=0,MusicType=0}] run function luigis_mansion:other/music/set/silence
+scoreboard players set @e[tag=player,x=779,y=74,z=5,dx=18,dy=14,dz=19] Room -1
 
 execute if entity @e[tag=e_gadd,scores={Room=-1}] if data storage luigis_mansion:data rooms.underground_lab{cleared:0b} if entity @a[scores={Room=-1},tag=!spectator] unless data storage luigis_mansion:data dialogs[{room:-1}] run data modify storage luigis_mansion:data dialogs append value {name:{namespace:"luigis_mansion",id:"the_mansion"},room:-1,progress:0}
 execute if entity @e[tag=e_gadd,scores={Room=-1}] if data storage luigis_mansion:data rooms.underground_lab{cleared:1b} if entity @a[scores={Room=-1},tag=!spectator] if data storage 3ds_remake:data {shown_gameboy_horror_part:1b,spoke_with_future_e_gadd:0b} unless data storage luigis_mansion:data dialogs[{room:-1}] run data modify storage luigis_mansion:data dialogs append value {name:{namespace:"3ds_remake",id:"future_e_gadd"},room:-1,progress:0}
@@ -18,4 +13,4 @@ setblock 786 78 21 minecraft:lever[face=floor,facing=south,powered=false]
 setblock 785 78 21 minecraft:lever[face=floor,facing=south,powered=false]
 setblock 784 78 20 minecraft:lever[face=floor,facing=south,powered=false]
 
-function #luigis_mansion:room/underground_lab/interactions/room
+execute if score #mirrored Selected matches 2 run scoreboard players set #mirrored Selected 1

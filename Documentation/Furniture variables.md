@@ -150,6 +150,9 @@ furniture:{
             z:X //The integer/double Z coordinate
         }
     },
+    plaque_text:{ //The text this plaque will display. Default = ""
+        //Text component
+    },
     room:X, //Room number that this furniture is in. Default = room number of whoever is @s on function call, if absent = 0.
     tags:[] //A list of tags to append to the furniture's default tags used to target the furniture in functions. Default = none.
 }

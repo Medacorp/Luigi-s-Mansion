@@ -1,3 +1,4 @@
+execute if score #mirrored Selected matches 1 run scoreboard players set #mirrored Selected 2
 execute unless score #underground_lab Ticking matches 1 run function #luigis_mansion:room/underground_lab/load
 execute as @e[tag=player,x=779,y=74,z=5,dx=18,dy=14,dz=19] unless entity @s[scores={Room=-1}] run scoreboard players operation @s LastRoom = @s Room
 scoreboard players set @e[tag=player,x=779,y=74,z=5,dx=18,dy=14,dz=19] Room -1
@@ -10,3 +11,5 @@ execute as @a[scores={Room=-1}] run function luigis_mansion:room/underground_lab
 setblock 786 78 21 minecraft:lever[face=floor,facing=south,powered=false]
 setblock 785 78 21 minecraft:lever[face=floor,facing=south,powered=false]
 setblock 784 78 20 minecraft:lever[face=floor,facing=south,powered=false]
+
+execute if score #mirrored Selected matches 2 run scoreboard players set #mirrored Selected 1

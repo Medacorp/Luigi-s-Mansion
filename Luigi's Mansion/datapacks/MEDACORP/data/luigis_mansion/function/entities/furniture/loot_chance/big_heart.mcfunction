@@ -1,0 +1,1 @@
+data modify storage luigis_mansion:data furniture.loot set value {contents:{luigis_mansion:{big_heart:1}}}

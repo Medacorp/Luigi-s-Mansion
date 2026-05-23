@@ -330,5 +330,13 @@
                 "stream": true
             }
         ]
+    },
+    "task_clear": {
+        "sounds": [
+            {
+                "name": "3ds_remake:task_clear",
+                "stream": false
+            }
+        ]
     }
 }

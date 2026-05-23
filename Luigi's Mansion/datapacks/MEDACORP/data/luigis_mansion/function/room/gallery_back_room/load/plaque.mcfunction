@@ -1,0 +1,2 @@
+execute unless data storage luigis_mansion:data current_state.portrait_ghost_ranks{king_boo:-1b} run data modify storage luigis_mansion:data furniture set value {room:-7,no_dust:1b,no_ai:1b,animation:{frozen:1b},plaque_text:{type:"translatable",translate:"luigis_mansion:sign.gallery.23",color:"gray"}}
+execute unless data storage luigis_mansion:data current_state.portrait_ghost_ranks{king_boo:-1b} positioned 729.0 78.5 -28.0 rotated -180 0 run function luigis_mansion:spawn_furniture/plaque/small

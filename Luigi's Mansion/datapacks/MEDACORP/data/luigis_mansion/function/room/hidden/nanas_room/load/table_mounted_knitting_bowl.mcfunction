@@ -1,0 +1,2 @@
+data modify storage luigis_mansion:data furniture set value {room:44,searchable:["interact","vacuum"],shake_animation:["interact","vacuum"],sound:{namespace:"luigis_mansion",id:"generic"},search_command:"execute if entity @s[tag=search] run tag @e[scores={Room=44},tag=wool] add vacuumable",scan_result:{namespace:"luigis_mansion",id:"scan/scanner/102"}}
+execute positioned 659 20 27 rotated -90 0 run function luigis_mansion:spawn_furniture/table_mounted_knitting_bowl
