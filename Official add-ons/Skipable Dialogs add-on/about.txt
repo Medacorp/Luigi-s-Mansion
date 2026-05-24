@@ -1,0 +1,3 @@
+This data pack grants every dialog the skip option.
+No dialogs are altered to achieve this, rather the root "Progress Dialog" selection menu is changed.
+Skipping should always skip to the next choice menu, or the end of the dialog, if it does not, it's a problem with the dialog's source data pack.

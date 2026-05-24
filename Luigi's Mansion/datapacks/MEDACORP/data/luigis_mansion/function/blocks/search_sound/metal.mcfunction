@@ -16,7 +16,7 @@ tag @s remove keep_memory
 #balcony 2 benches
 #bottom of the well lamp
 #breaker room lamp
-#cellar lamp, and shelves
+#cellar lamp, and shelf contents
 #ceramics studio lamp
 #cold storage junk
 #graveyard rain pipe

@@ -2,7 +2,7 @@ tag @s add no_music
 tag @s remove warped
 execute unless entity @e[tag=luigi,tag=exact_same_room,limit=1] run scoreboard players add @s BooTimer 1
 scoreboard players set #temp Time 0
-execute if entity @s[scores={BooTimer=2..}] as @e[tag=luigi,tag=same_room,tag=!door_animation] facing entity @s feet run function 3ds_remake:entities/boo/line_of_sigh
+execute if entity @s[scores={BooTimer=2..}] as @e[tag=luigi,tag=same_room,tag=!door_animation] facing entity @s feet run function 3ds_remake:entities/boo/line_of_sight
 execute if score #temp Time matches 1 run function luigis_mansion:entities/boo/trigger_dialog
 scoreboard players reset #temp Time
 tag @s[scores={BooTimer=600..}] remove countdown

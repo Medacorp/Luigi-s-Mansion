@@ -18,7 +18,7 @@ tag @s remove keep_memory
 #balcony 2 plants
 #ball room chairs
 #billiards room chairs, chess table, and darting board
-#boneyard bowl and sign
+#boneyard bowl
 #cellar boxes
 #ceramics studio boxes, chair, table
 #conservatory chair, and lecterns

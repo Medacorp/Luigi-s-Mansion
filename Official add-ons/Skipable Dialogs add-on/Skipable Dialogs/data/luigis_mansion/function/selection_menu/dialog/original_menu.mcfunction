@@ -1,0 +1,1 @@
+function luigis_mansion:selection_menu/dialog/original_menu_skip

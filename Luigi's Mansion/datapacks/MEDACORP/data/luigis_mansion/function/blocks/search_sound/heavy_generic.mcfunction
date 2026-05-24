@@ -19,6 +19,7 @@ tag @s remove keep_memory
 #billiards room billiards table
 #breaker room mirror and table
 #butler's room closet, ironing table, lamp, sewing machine, and table
+#cellar shelves
 #ceramics studio crates
 #clockwork room chairs, lamps, puppets, small doors, and tables
 #cold storage crates

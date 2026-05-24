@@ -1,1 +1,0 @@
-data modify block 768 78 -17 front_text.messages[0] set value {type:"text",text:""}

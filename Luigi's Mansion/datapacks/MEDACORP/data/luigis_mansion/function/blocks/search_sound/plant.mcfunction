@@ -12,3 +12,4 @@ execute if entity @s[tag=!keep_memory] if entity @a[tag=searcher,limit=1] run da
 execute if entity @s[tag=!keep_memory] if entity @a[tag=searcher,limit=1] run data remove storage luigis_mansion:data my_memory
 tag @s remove keep_memory
 #courtyard plants
+#nursery plant

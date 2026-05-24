@@ -261,6 +261,7 @@
 "3ds_remake:dialog.underground_lab.change_amiibo.2.mario.on": "Turned Mario amiibo on.",
 "3ds_remake:dialog.underground_lab.change_amiibo.2.toad.off": "Turned Toad amiibo off.",
 "3ds_remake:dialog.underground_lab.change_amiibo.2.toad.on": "Turned Toad amiibo on.",
+"3ds_remake:dialog.underground_lab.change_amiibo.2.none": "Just looking?",
 "3ds_remake:dialog.underground_lab.leave_gooigi.1": "Very well then.",
 "3ds_remake:dialog.underground_lab.use_gooigi.1": "Very well then.",
 "3ds_remake:dialog.underground_lab.use_gooigi.1.alt": "Gooigi is only available in multiplayer.",

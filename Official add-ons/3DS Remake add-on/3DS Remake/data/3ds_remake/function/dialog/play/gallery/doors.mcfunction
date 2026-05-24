@@ -1,0 +1,36 @@
+execute if score #dialog Dialog matches 2..4 if entity @a[tag=same_room,tag=next_dialog_line,limit=1] run scoreboard players add #dialog Dialog 1
+execute if score #dialog Dialog matches ..1 run scoreboard players add #dialog Dialog 1
+execute if score #dialog Dialog matches 2..4 if entity @a[tag=same_room,tag=skip_dialog,limit=1] run scoreboard players set #dialog Dialog 5
+execute if score #dialog Dialog matches ..4 as @a[tag=same_room,tag=!spectator,tag=!dialog_menu,tag=!using_selection_menu] run function luigis_mansion:selection_menu/dialog/original_menu
+execute if score #dialog Dialog matches 5 as @a[tag=same_room,tag=dialog_menu] run function luigis_mansion:selection_menu/dialog/exit
+
+scoreboard players reset @a[tag=same_room,tag=!spectator] WarpTime
+execute as @a[tag=same_room,tag=!spectator,tag=game_boy_horror_menu] run function luigis_mansion:selection_menu/game_boy_horror/exit
+tag @e[tag=e_gadd,tag=same_room,limit=1] remove freeze_animation
+execute if score #dialog Dialog matches 1 run data modify entity @e[tag=e_gadd,tag=same_room,limit=1] data.animation set value {namespace:"luigis_mansion",id:"nod"}
+execute if score #dialog Dialog matches 1..4 as @e[tag=luigi,tag=same_room] run function luigis_mansion:entities/luigi/animation/set/think
+execute if score #dialog Dialog matches 1 run tellraw @a[tag=same_room] {type:"translatable",translate:"chat.type.text",with:[{type:"translatable",translate:"luigis_mansion:entity.e_gadd",color:"green"},{type:"translatable",translate:"3ds_remake:dialog.gallery.doors.1"}]}
+execute if score #dialog Dialog matches 1 at @e[tag=e_gadd,tag=same_room,limit=1] run playsound luigis_mansion:entity.e_gadd.talk.hap_poh_oomahkah_tatta_tatta neutral @a[tag=same_room] ~ ~ ~ 1
+
+execute if score #dialog Dialog matches 3 if entity @a[tag=next_dialog_line,limit=1] run stopsound @a[tag=same_room] neutral luigis_mansion:entity.e_gadd.talk.hap_poh_oomahkah_tatta_tatta
+execute if score #dialog Dialog matches 3 if data storage luigis_mansion:data current_state.portrait_ghost_ranks{king_boo:-1b} if entity @a[tag=next_dialog_line,limit=1] run tellraw @a[tag=same_room] {type:"translatable",translate:"chat.type.text",with:[{type:"translatable",translate:"luigis_mansion:entity.e_gadd",color:"green"},{type:"translatable",translate:"3ds_remake:dialog.gallery.doors.2"}]}
+execute if score #dialog Dialog matches 3 if data storage luigis_mansion:data current_state.portrait_ghost_ranks{king_boo:-1b} if entity @a[tag=next_dialog_line,limit=1] at @e[tag=e_gadd,tag=same_room,limit=1] run playsound luigis_mansion:entity.e_gadd.talk.hey_hey_suu_tahmentahkeh_oydohroh neutral @a[tag=same_room] ~ ~ ~ 1
+execute if score #dialog Dialog matches 3 unless data storage luigis_mansion:data current_state.portrait_ghost_ranks{king_boo:-1b} if entity @a[tag=next_dialog_line,limit=1] run tellraw @a[tag=same_room] {type:"translatable",translate:"chat.type.text",with:[{type:"translatable",translate:"luigis_mansion:entity.e_gadd",color:"green"},{type:"translatable",translate:"3ds_remake:dialog.gallery.doors.2.alt"}]}
+execute if score #dialog Dialog matches 3 unless data storage luigis_mansion:data current_state.portrait_ghost_ranks{king_boo:-1b} if entity @a[tag=next_dialog_line,limit=1] at @e[tag=e_gadd,tag=same_room,limit=1] run playsound luigis_mansion:entity.e_gadd.talk.gay_roon_ehdeedee_odoh neutral @a[tag=same_room] ~ ~ ~ 1
+
+execute if score #dialog Dialog matches 4 if entity @a[tag=next_dialog_line,limit=1] run stopsound @a[tag=same_room] neutral luigis_mansion:entity.e_gadd.talk.hey_hey_suu_tahmentahkeh_oydohroh
+execute if score #dialog Dialog matches 4 if entity @a[tag=next_dialog_line,limit=1] run stopsound @a[tag=same_room] neutral luigis_mansion:entity.e_gadd.talk.gay_roon_ehdeedee_odoh
+execute if score #dialog Dialog matches 4 if data storage luigis_mansion:data current_state.portrait_ghost_ranks{king_boo:-1b} if score #players Totals matches 1 if entity @a[tag=next_dialog_line,limit=1] run tellraw @a[tag=same_room] {type:"translatable",translate:"chat.type.text",with:[{type:"translatable",translate:"luigis_mansion:entity.e_gadd",color:"green"},{type:"translatable",translate:"3ds_remake:dialog.gallery.doors.3",with:[{type:"selector",selector:"@a[tag=!spectator]"}]}]}
+execute if score #dialog Dialog matches 4 if data storage luigis_mansion:data current_state.portrait_ghost_ranks{king_boo:-1b} if score #players Totals matches 2.. if entity @a[tag=next_dialog_line,limit=1] run tellraw @a[tag=same_room] {type:"translatable",translate:"chat.type.text",with:[{type:"translatable",translate:"luigis_mansion:entity.e_gadd",color:"green"},{type:"translatable",translate:"3ds_remake:dialog.gallery.doors.3.more"}]}
+execute if score #dialog Dialog matches 4 if data storage luigis_mansion:data current_state.portrait_ghost_ranks{king_boo:-1b} if entity @a[tag=next_dialog_line,limit=1] at @e[tag=e_gadd,tag=same_room,limit=1] run playsound luigis_mansion:entity.e_gadd.talk.ohmoogah_luigi_odoh neutral @a[tag=same_room] ~ ~ ~ 1
+execute if score #dialog Dialog matches 4 unless data storage luigis_mansion:data current_state.portrait_ghost_ranks{king_boo:-1b} if score #players Totals matches 1 if entity @a[tag=next_dialog_line,limit=1] run tellraw @a[tag=same_room] {type:"translatable",translate:"chat.type.text",with:[{type:"translatable",translate:"luigis_mansion:entity.e_gadd",color:"green"},{type:"translatable",translate:"3ds_remake:dialog.gallery.doors.3.alt",with:[{type:"selector",selector:"@a[tag=!spectator]"}]}]}
+execute if score #dialog Dialog matches 4 unless data storage luigis_mansion:data current_state.portrait_ghost_ranks{king_boo:-1b} if score #players Totals matches 2.. if entity @a[tag=next_dialog_line,limit=1] run tellraw @a[tag=same_room] {type:"translatable",translate:"chat.type.text",with:[{type:"translatable",translate:"luigis_mansion:entity.e_gadd",color:"green"},{type:"translatable",translate:"3ds_remake:dialog.gallery.doors.3.alt.more"}]}
+execute if score #dialog Dialog matches 4 unless data storage luigis_mansion:data current_state.portrait_ghost_ranks{king_boo:-1b} if entity @a[tag=next_dialog_line,limit=1] at @e[tag=e_gadd,tag=same_room,limit=1] run playsound luigis_mansion:entity.e_gadd.talk.mah_mah_mah_luigi_oui neutral @a[tag=same_room] ~ ~ ~ 1
+
+execute if score #dialog Dialog matches 5 if entity @a[tag=next_dialog_line,limit=1] run stopsound @a[tag=same_room] neutral luigis_mansion:entity.e_gadd.talk.ohmoogah_luigi_odoh
+execute if score #dialog Dialog matches 5 if entity @a[tag=next_dialog_line,limit=1] run stopsound @a[tag=same_room] neutral luigis_mansion:entity.e_gadd.talk.mah_mah_mah_luigi_oui
+execute if score #dialog Dialog matches 5 as @e[tag=luigi,tag=same_room] run function luigis_mansion:entities/luigi/animation/set/none
+execute if score #dialog Dialog matches 5 run data remove entity @e[tag=e_gadd,tag=same_room,limit=1] data.animation
+execute if score #dialog Dialog matches 5 run data modify storage luigis_mansion:data dialogs append value {name:{namespace:"3ds_remake",id:"gallery/more_questions"},room:-4,progress:0}
+execute if score #dialog Dialog matches 5 run data modify storage luigis_mansion:data dialogs[-1].room set from storage luigis_mansion:data dialogs[0].room
+execute if score #dialog Dialog matches 5 run scoreboard players set #dialog Dialog -1
