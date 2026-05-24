@@ -10,8 +10,6 @@ tag @s[tag=!dark_room] add caught_by_boo_radar
 scoreboard players set @s[scores={Dialog=0},tag=in_ice] Dialog 40
 execute if entity @s[scores={Dialog=1..}] run function luigis_mansion:entities/boo/ai/frozen
 
-scoreboard players operation #temp RoomSection = @s RoomSection
-
 execute if entity @s[tag=!dying,tag=!appear,tag=!countdown] unless entity @s[tag=!in_vacuum,scores={HurtTime=0}] run function luigis_mansion:entities/boo/hurt
 execute at @s[tag=!flee,tag=!in_vacuum,tag=!appear,tag=!countdown,tag=!laugh,tag=!taunt,tag=!attack,tag=!dying] run function luigis_mansion:entities/boo/ai/normal
 execute at @s[tag=flee,tag=!dying,tag=!appear,tag=!countdown] run function luigis_mansion:entities/boo/ai/flee
@@ -26,4 +24,3 @@ execute at @s[tag=!dying,tag=!appear] if entity @e[tag=luigi,distance=..0.7,limi
 execute if entity @s[tag=remove_from_existence,tag=!dying,tag=!warped] run function luigis_mansion:entities/boo/warp with entity @s data.mansion
 
 tag @s remove flee
-scoreboard players reset #temp RoomSection

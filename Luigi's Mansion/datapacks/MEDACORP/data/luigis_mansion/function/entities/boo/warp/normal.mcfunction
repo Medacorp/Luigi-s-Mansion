@@ -1,135 +1,55 @@
-scoreboard players operation @s LastRoom = @s Room
-scoreboard players set @s[scores={Room=3},tag=warp_north] LastRoom 38
-scoreboard players set @s[scores={Room=3},tag=warp_south] LastRoom 8
-scoreboard players set @s[scores={Room=3},tag=warp_west] LastRoom 4
-scoreboard players set @s[scores={Room=4},tag=warp_east] LastRoom 3
-scoreboard players set @s[scores={Room=4},tag=warp_north] LastRoom 37
-scoreboard players set @s[scores={Room=4},tag=warp_south] LastRoom 5
-scoreboard players set @s[scores={Room=4},tag=warp_west] LastRoom 35
-scoreboard players set @s[scores={Room=5},tag=warp_east] LastRoom 8
-scoreboard players set @s[scores={Room=5},tag=warp_north] LastRoom 4
-scoreboard players set @s[scores={Room=5,RoomSection=1},tag=warp_west] LastRoom 35
-scoreboard players set @s[scores={Room=5,RoomSection=2},tag=warp_west] LastRoom 42
-scoreboard players set @s[scores={Room=7,RoomSection=1},tag=warp_east] LastRoom 49
-scoreboard players set @s[scores={Room=7,RoomSection=2},tag=warp_east] LastRoom 10
-scoreboard players set @s[scores={Room=7,RoomSection=1},tag=warp_west] LastRoom 8
-scoreboard players set @s[scores={Room=7,RoomSection=2},tag=warp_west] LastRoom 9
-scoreboard players set @s[scores={Room=8},tag=warp_east] LastRoom 7
-scoreboard players set @s[scores={Room=8},tag=warp_north] LastRoom 3
-scoreboard players set @s[scores={Room=8},tag=warp_south] LastRoom 9
-scoreboard players set @s[scores={Room=8},tag=warp_west] LastRoom 5
-scoreboard players set @s[scores={Room=9},tag=warp_east] LastRoom 7
-scoreboard players set @s[scores={Room=9},tag=warp_north] LastRoom 8
-scoreboard players set @s[scores={Room=10},tag=warp_north] LastRoom 49
-scoreboard players set @s[scores={Room=10},tag=warp_west] LastRoom 7
-scoreboard players set @s[scores={Room=11,RoomSection=1..2},tag=warp_east] LastRoom 24
-scoreboard players set @s[scores={Room=11,RoomSection=4..5},tag=warp_east] LastRoom 20
-scoreboard players set @s[scores={Room=11,RoomSection=1},tag=warp_south] LastRoom 22
-scoreboard players set @s[scores={Room=11,RoomSection=1},tag=warp_west] LastRoom 27
-scoreboard players set @s[scores={Room=11,RoomSection=2..3},tag=warp_west] LastRoom 26
-scoreboard players set @s[scores={Room=11,RoomSection=5},tag=warp_west] LastRoom 17
-scoreboard players set @s[scores={Room=12,RoomSection=1..2},tag=warp_north] LastRoom 17
-scoreboard players set @s[scores={Room=12,RoomSection=3},tag=warp_north] LastRoom 18
-scoreboard players set @s[scores={Room=12,RoomSection=1},tag=warp_south] LastRoom 26
-scoreboard players set @s[scores={Room=12,RoomSection=2..3},tag=warp_south] LastRoom 48
-scoreboard players set @s[scores={Room=13,RoomSection=1},tag=warp_east] LastRoom 18
-scoreboard players set @s[scores={Room=13,RoomSection=3},tag=warp_east] LastRoom 48
-scoreboard players set @s[scores={Room=13,RoomSection=4..5},tag=warp_east] LastRoom 47
-scoreboard players set @s[scores={Room=13,RoomSection=1},tag=warp_west] LastRoom 32
-scoreboard players set @s[scores={Room=13,RoomSection=2..4},tag=warp_west] LastRoom 25
-scoreboard players set @s[scores={Room=17},tag=warp_east] LastRoom 11
-scoreboard players set @s[scores={Room=17},tag=warp_south] LastRoom 12
-scoreboard players set @s[scores={Room=17},tag=warp_west] LastRoom 18
-scoreboard players set @s[scores={Room=18},tag=warp_east] LastRoom 17
-scoreboard players set @s[scores={Room=18},tag=warp_south] LastRoom 12
-scoreboard players set @s[scores={Room=18},tag=warp_west] LastRoom 13
-scoreboard players set @s[scores={Room=20},tag=warp_north] LastRoom 21
-scoreboard players set @s[scores={Room=20},tag=warp_west] LastRoom 11
-scoreboard players set @s[scores={Room=21},tag=warp_south] LastRoom 20
-scoreboard players set @s[scores={Room=22},tag=warp_east] LastRoom 23
-scoreboard players set @s[scores={Room=22},tag=warp_north] LastRoom 11
-scoreboard players set @s[scores={Room=22},tag=warp_west] LastRoom 27
-scoreboard players set @s[scores={Room=23},tag=warp_north] LastRoom 24
-scoreboard players set @s[scores={Room=23},tag=warp_west] LastRoom 22
-scoreboard players set @s[scores={Room=24},tag=warp_south] LastRoom 23
-scoreboard players set @s[scores={Room=24},tag=warp_west] LastRoom 11
-scoreboard players set @s[scores={Room=25},tag=warp_east] LastRoom 13
-scoreboard players set @s[scores={Room=25},tag=warp_north] LastRoom 32
-scoreboard players set @s[scores={Room=26},tag=warp_east] LastRoom 11
-scoreboard players set @s[scores={Room=26},tag=warp_north] LastRoom 12
-scoreboard players set @s[scores={Room=26},tag=warp_south] LastRoom 27
-scoreboard players set @s[scores={Room=26,RoomSection=1},tag=warp_west] LastRoom 48
-scoreboard players set @s[scores={Room=26,RoomSection=2},tag=warp_west] LastRoom 47
-scoreboard players set @s[scores={Room=27,RoomSection=1},tag=warp_east] LastRoom 11
-scoreboard players set @s[scores={Room=27,RoomSection=2},tag=warp_east] LastRoom 22
-scoreboard players set @s[scores={Room=27},tag=warp_north] LastRoom 26
-scoreboard players set @s[scores={Room=27},tag=warp_west] LastRoom 47
-scoreboard players set @s[scores={Room=32},tag=warp_east] LastRoom 13
-scoreboard players set @s[scores={Room=32},tag=warp_south] LastRoom 25
-scoreboard players set @s[scores={Room=34},tag=warp_east] LastRoom 35
-scoreboard players set @s[scores={Room=34},tag=warp_south] LastRoom 44
-scoreboard players set @s[scores={Room=35,RoomSection=1},tag=warp_east] LastRoom 45
-scoreboard players set @s[scores={Room=35,RoomSection=3},tag=warp_east] LastRoom 4
-scoreboard players set @s[scores={Room=35,RoomSection=4},tag=warp_east] LastRoom 5
-scoreboard players set @s[scores={Room=35,RoomSection=4},tag=warp_south] LastRoom 42
-scoreboard players set @s[scores={Room=35,RoomSection=1},tag=warp_west] LastRoom 34
-scoreboard players set @s[scores={Room=35,RoomSection=2..3},tag=warp_west] LastRoom 44
-scoreboard players set @s[scores={Room=36},tag=warp_north] LastRoom 44
-scoreboard players set @s[scores={Room=36},tag=warp_south] LastRoom 43
-scoreboard players set @s[scores={Room=37},tag=warp_north] LastRoom 45
-scoreboard players set @s[scores={Room=37},tag=warp_south] LastRoom 4
-scoreboard players set @s[scores={Room=38},tag=warp_south] LastRoom 3
-scoreboard players set @s[scores={Room=39,RoomSection=1},tag=warp_east] LastRoom 69
-scoreboard players set @s[scores={Room=39,RoomSection=2},tag=warp_east] LastRoom 70
-scoreboard players set @s[scores={Room=42},tag=warp_east] LastRoom 5
-scoreboard players set @s[scores={Room=42},tag=warp_north] LastRoom 35
-scoreboard players set @s[scores={Room=42},tag=warp_west] LastRoom 43
-scoreboard players set @s[scores={Room=43},tag=warp_east] LastRoom 42
-scoreboard players set @s[scores={Room=43},tag=warp_north] LastRoom 36
-scoreboard players set @s[scores={Room=44},tag=warp_east] LastRoom 35
-scoreboard players set @s[scores={Room=44},tag=warp_north] LastRoom 34
-scoreboard players set @s[scores={Room=44},tag=warp_south] LastRoom 36
-scoreboard players set @s[scores={Room=45},tag=warp_south] LastRoom 37
-scoreboard players set @s[scores={Room=45},tag=warp_west] LastRoom 35
-scoreboard players set @s[scores={Room=47,RoomSection=1},tag=warp_east] LastRoom 26
-scoreboard players set @s[scores={Room=47,RoomSection=2},tag=warp_east] LastRoom 27
-scoreboard players set @s[scores={Room=47},tag=warp_north] LastRoom 48
-scoreboard players set @s[scores={Room=47,RoomSection=1},tag=warp_west] LastRoom 13
-scoreboard players set @s[scores={Room=48},tag=warp_east] LastRoom 26
-scoreboard players set @s[scores={Room=48},tag=warp_north] LastRoom 12
-scoreboard players set @s[scores={Room=48},tag=warp_south] LastRoom 47
-scoreboard players set @s[scores={Room=48},tag=warp_west] LastRoom 13
-scoreboard players set @s[scores={Room=49},tag=warp_south] LastRoom 10
-scoreboard players set @s[scores={Room=49},tag=warp_west] LastRoom 7
-scoreboard players set @s[scores={Room=50},tag=warp_south] LastRoom 51
-scoreboard players set @s[scores={Room=51},tag=warp_north] LastRoom 50
-scoreboard players set @s[scores={Room=52},tag=warp_north] LastRoom 71
-scoreboard players set @s[scores={Room=54},tag=warp_north] LastRoom 62
-scoreboard players set @s[scores={Room=54},tag=warp_south] LastRoom 65
-scoreboard players set @s[scores={Room=55},tag=warp_north] LastRoom 56
-scoreboard players set @s[scores={Room=55},tag=warp_south] LastRoom 64
-scoreboard players set @s[scores={Room=56},tag=warp_south] LastRoom 55
-scoreboard players set @s[scores={Room=56},tag=warp_west] LastRoom 62
-scoreboard players set @s[scores={Room=57},tag=warp_south] LastRoom 60
-scoreboard players set @s[scores={Room=58},tag=warp_south] LastRoom 59
-scoreboard players set @s[scores={Room=59},tag=warp_north] LastRoom 58
-scoreboard players set @s[scores={Room=59},tag=warp_south] LastRoom 68
-scoreboard players set @s[scores={Room=60},tag=warp_north] LastRoom 57
-scoreboard players set @s[scores={Room=60},tag=warp_south] LastRoom 67
-scoreboard players set @s[scores={Room=62},tag=warp_east] LastRoom 56
-scoreboard players set @s[scores={Room=62},tag=warp_south] LastRoom 54
-scoreboard players set @s[scores={Room=64},tag=warp_north] LastRoom 55
-scoreboard players set @s[scores={Room=64},tag=warp_west] LastRoom 65
-scoreboard players set @s[scores={Room=65},tag=warp_east] LastRoom 64
-scoreboard players set @s[scores={Room=65},tag=warp_north] LastRoom 54
-scoreboard players set @s[scores={Room=67},tag=warp_east] LastRoom 68
-scoreboard players set @s[scores={Room=67},tag=warp_north] LastRoom 60
-scoreboard players set @s[scores={Room=68},tag=warp_north] LastRoom 59
-scoreboard players set @s[scores={Room=68},tag=warp_west] LastRoom 67
-scoreboard players set @s[scores={Room=69},tag=warp_north] LastRoom 70
-scoreboard players set @s[scores={Room=69},tag=warp_west] LastRoom 39
-scoreboard players set @s[scores={Room=70},tag=warp_south] LastRoom 69
-scoreboard players set @s[scores={Room=70},tag=warp_west] LastRoom 39
-scoreboard players set @s[scores={Room=71},tag=warp_south] LastRoom 52
-scoreboard players operation @s Room = @s LastRoom
-function luigis_mansion:entities/boo/warp/teleport/normal
+teleport @s[scores={Room=3}] 721.0 20 28.0
+teleport @s[scores={Room=4}] 689 20 33.0
+teleport @s[scores={Room=5}] 682 20 66.0
+teleport @s[scores={Room=7}] 726 20 61
+teleport @s[scores={Room=8}] 709.0 20 53.0
+teleport @s[scores={Room=9}] 691.0 111 47.0
+teleport @s[scores={Room=10}] 744 20 63
+teleport @s[scores={Room=11}] 716 11 -5
+teleport @s[scores={Room=12}] 699 11 -19
+teleport @s[scores={Room=13}] 682 11 -9
+teleport @s[scores={Room=17}] 704.0 11 -53.0
+teleport @s[scores={Room=18}] 685 11 -53.0
+teleport @s[scores={Room=20}] 741 11 -29
+teleport @s[scores={Room=21}] 741 11 -52.0
+teleport @s[scores={Room=22}] 716 11 67
+teleport @s[scores={Room=23}] 744 11 63
+teleport @s[scores={Room=24}] 743 11 40.0
+teleport @s[scores={Room=25}] 658 11 -15
+teleport @s[scores={Room=26}] 704 11 43
+teleport @s[scores={Room=27}] 704 11 77.0
+teleport @s[scores={Room=32}] 643 11 -45.0
+teleport @s[scores={Room=34}] 643 20 -45.0
+teleport @s[scores={Room=35}] 682 20 -9
+teleport @s[scores={Room=36}] 674 20 8
+teleport @s[scores={Room=37}] 691 20 -19
+teleport @s[scores={Room=38}] 706 20 -19
+teleport @s[scores={Room=39}] 716 20 -35
+teleport @s[scores={Room=42}] 664 20 41
+teleport @s[scores={Room=43}] 654 20 22
+teleport @s[scores={Room=44}] 658 20 -15
+teleport @s[scores={Room=45}] 666 20 -82
+teleport @s[scores={Room=47}] 681.0 11 78.0
+teleport @s[scores={Room=48}] 681.0 11 38
+teleport @s[scores={Room=49}] 743 20 40
+teleport @s[scores={Room=50}] 739 29 -45.0
+teleport @s[scores={Room=51}] 750 29 -13
+teleport @s[scores={Room=52}] 736 29 -13
+teleport @s[scores={Room=54}] 735 29 44
+teleport @s[scores={Room=55}] 749 29 44
+teleport @s[scores={Room=56}] 746 29 18.0
+teleport @s[scores={Room=57}] 693 2 -52
+teleport @s[scores={Room=58}] 741 2 -52
+teleport @s[scores={Room=59}] 722 2 -18
+teleport @s[scores={Room=60}] 706 2 -18
+teleport @s[scores={Room=62}] 691 120 8.0
+teleport @s[scores={Room=64}] 754 29 66.0
+teleport @s[scores={Room=65}] 705 29 68.0
+teleport @s[scores={Room=67}] 693 2 3
+teleport @s[scores={Room=68}] 732 2 3
+teleport @s[scores={Room=69}] 741 20 -29
+teleport @s[scores={Room=70}] 741 20 -52.0
+teleport @s[scores={Room=71}] 696 29 -66.0
+
+function luigis_mansion:entities/boo/warp_update_data with entity @s data.boo
+function luigis_mansion:entities/boo/warp_effects

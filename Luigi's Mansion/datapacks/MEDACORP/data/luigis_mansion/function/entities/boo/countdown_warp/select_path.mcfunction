@@ -1,1 +1,0 @@
-$execute store result score #temp Time run random value 1..$(value)

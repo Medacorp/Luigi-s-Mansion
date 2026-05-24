@@ -1,11 +1,11 @@
-#Shelf 1 (x2 because shelf and contents need splitting)
+#Shelf 1 (x2 because shelf and contents need splitting; 4 tiers + shelf itself (boos hide in the tiers))
 summon minecraft:marker 742 2 -52 {Tags:["choice","hide_option"]}
 summon minecraft:marker 742 2 -52 {Tags:["choice","hide_option"]}
 #Shelf 2
 summon minecraft:marker 742 4 -52 {Tags:["choice","hide_option"]}
 #Shelf 3
 summon minecraft:marker 742 6 -52 {Tags:["choice","hide_option"]}
-#Shelf 4 (x2 because shelf and contents need splitting)
+#Shelf 4 (x2 because shelf and contents need splitting; 4 tiers + shelf itself (boos hide in the tiers))
 summon minecraft:marker 743 2 -61 {Tags:["choice","hide_option"]}
 summon minecraft:marker 743 2 -61 {Tags:["choice","hide_option"]}
 #Shelf 5

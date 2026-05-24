@@ -9,5 +9,6 @@ scoreboard players set @s[tag=wall] ActionTime 20
 tag @s remove wall
 tag @s remove rotated
 data remove entity @s[scores={ActionTime=20}] data.animation
+scoreboard players set @s[scores={ActionTime=20}] BooTimer 600
 tag @s[scores={ActionTime=20}] remove attack
 scoreboard players reset @s[scores={ActionTime=20}] ActionTime
