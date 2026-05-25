@@ -1,3 +1,4 @@
 data modify storage luigis_mansion:data furniture set value {room:66,searchable:["interact","vacuum"],shake_animation:["interact","vacuum"],sound:{namespace:"luigis_mansion",id:"generic"},scan_result:{namespace:"luigis_mansion",id:"scan/scanner/11"}}
-execute unless data storage luigis_mansion:data current_state.current_data{money_spawned:["sealed_room_treasure_chest_8"]} run data modify storage luigis_mansion:data furniture.loot set value {name:"sealed_room_treasure_chest_8",contents:{luigis_mansion:{bill:10}}}
+execute unless data storage luigis_mansion:data current_state.current_data{money_spawned:["sealed_room_treasure_chest_8"]} run data modify storage luigis_mansion:data furniture.loot set value {name:"sealed_room_treasure_chest_8"}
+execute unless data storage luigis_mansion:data current_state.current_data{money_spawned:["sealed_room_treasure_chest_8"]} run data modify storage luigis_mansion:data furniture.loot.contents set from storage luigis_mansion:data current_state.current_data.loot_collections.furniture.10_bills
 execute positioned 698 23 100 rotated -180 0 run function luigis_mansion:spawn_furniture/treasure_chest/small

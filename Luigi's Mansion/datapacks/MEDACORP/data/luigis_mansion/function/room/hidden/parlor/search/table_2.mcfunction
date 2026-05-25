@@ -1,5 +1,6 @@
 execute unless score #parlor_table_2 Searched matches 1 run data modify storage luigis_mansion:data furniture set value {room:3,tags:["drop_loot"]}
-execute unless score #parlor_table_2 Searched matches 1 unless data storage luigis_mansion:data current_state.current_data{money_spawned:["parlor_small_bookcase"]} run data modify storage luigis_mansion:data furniture.loot set value {name:"parlor_small_bookcase",contents:{luigis_mansion:{gold_coin:10,bill:10}}}
+execute unless score #parlor_table_2 Searched matches 1 unless data storage luigis_mansion:data current_state.current_data{money_spawned:["parlor_small_bookcase"]} run data modify storage luigis_mansion:data furniture.loot set value {name:"parlor_small_bookcase"}
+execute unless score #parlor_table_2 Searched matches 1 unless data storage luigis_mansion:data current_state.current_data{money_spawned:["parlor_small_bookcase"]} run data modify storage luigis_mansion:data furniture.loot.contents set from storage luigis_mansion:data current_state.current_data.loot_collections.furniture.10_gold_coins_and_bills
 execute unless data storage luigis_mansion:data furniture.loot positioned 714 20 -12.0 run function luigis_mansion:blocks/dust
 execute if data storage luigis_mansion:data furniture.loot positioned 715 20 -12.0 run function luigis_mansion:spawn_furniture/room_clear_loot_dropper
 scoreboard players set #parlor_table_2 Searched 1

@@ -1,1 +1,1 @@
-data modify storage luigis_mansion:data furniture.loot set value {contents:{luigis_mansion:{poison_mushroom:1}}}
+data modify storage luigis_mansion:data furniture.loot set value {contents:[{name:{namespace:"luigis_mansion",id:"item/poison_mushroom"}}]}

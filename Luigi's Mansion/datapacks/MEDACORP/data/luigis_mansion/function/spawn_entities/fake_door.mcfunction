@@ -13,7 +13,7 @@ scoreboard players operation @e[tag=this_entity,tag=model_piece] GhostNr = @e[ta
 tag @e[tag=this_entity,tag=model_piece] remove this_entity
 execute if data storage luigis_mansion:data entity.door{left_hinge:1b} run tag @e[tag=this_entity,limit=1] add left
 execute as @e[tag=this_entity,limit=1] store result score @s Health store result score @s LastHealth run data get storage luigis_mansion:data current_state.current_data.ghosts.luigis_mansion.fake_door.health
-data modify entity @e[tag=this_entity,limit=1] data.loot set from storage luigis_mansion:data current_state.current_data.ghosts.luigis_mansion.fake_door.loot
+data modify entity @e[tag=this_entity,limit=1] data.loot_storage set from storage luigis_mansion:data current_state.current_data.ghosts.luigis_mansion.fake_door.loot
 data modify entity @e[tag=this_entity,limit=1] data.damage set from storage luigis_mansion:data current_state.current_data.ghosts.luigis_mansion.fake_door.damage
 scoreboard players set @e[tag=this_entity,limit=1] Sound 0
 scoreboard players set @e[tag=this_entity,limit=1] AnimationProgress 0

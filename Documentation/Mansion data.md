@@ -18,7 +18,7 @@ Mansion data is a massive collection of info storing everything the map needs to
         namespace:"luigis_mansion", //The item namespace.
         id:"null" //The item ID.
     },
-	no_collect_animation:[], //Item IDs which do not result in the collect item animation and dialog; they're not frozen during the dialog (unless 3DS Remake add-on is installed)
+    no_collect_animation:[], //Item IDs which do not result in the collect item animation and dialog; they're not frozen during the dialog (unless 3DS Remake add-on is installed)
     blackout:0b, //Whether the mansion is currently in the blackout.
     dead_players:[], //Player UUIDs that have died.
     ghosts_caught:[], //The mansion-local ghosts caught by player list, see save data documentation for more info, has additional uuid field to identify the player. Does not include boos object.
@@ -28,6 +28,12 @@ Mansion data is a massive collection of info storing everything the map needs to
     obtained_keys:[], //List of door names of keys that have been collected.
     obtained_items:{}, //Flags of specific items that have been collected, where absent = not. (Mario items, boo radar, element medals)
     money_spawned:[], //List of loot names of loot that has been spawned before. Also contains entries for room clear chests opened, and "_money" entries for collecting any eternal coin in a room.
+    loot_collections:{ //Predefined loot collections, generally money sets.
+        <name>: { //A loot collection group, containing multiple collections.
+            <name>: [] //A loot collection, see loot format's contents documentation
+        },
+        <name>: [] //A loot collection, see loot format's contents documentation
+    },
     rooms:{ //Room data.
         <name>:{ //A room.
             seen:0b, //Whether the room has been entered before. Used by the map to mark rooms light gray or hallways lime.
@@ -38,7 +44,7 @@ Mansion data is a massive collection of info storing everything the map needs to
         <name>:{ //A portrait ghost.
             portrificationized:0b, //BASE; When health is 0, and this is 0b, the ghost can be portrificationized and turned into a painting. It is then set to 1b.
             rank:-1b, //BASE; The rank you're obtained. Default = -1b, which is undefined (treated as bronze), 0b is bronze, 1b is silver, 2b and above is gold. 3b and above is platinum if 3DS Remake add-on is installed.
-            top_vacuum_damage:0, //The highest amount of damage dealt in 1 suction.
+            top_vacuum_damage:X, //The highest amount of damage dealt in 1 suction.
             max_health:X, //The max health. Together with health, used to determine the pearl sizes to drop.
             //See also HP-having ghost data below
         },
@@ -73,8 +79,8 @@ Mansion data is a massive collection of info storing everything the map needs to
             //BASE portrait ghost data.
         },
         boolossus:{ //Save format for Boolossus.
-            speed:70, //The sum of all split Boos' speed. The more Boos, the slower. The value represents the speed a single split boo would have if Boolossus popped with a current health of 1.
-            merged_speed:30, //The speed the merged Boolossus form has.
+            speed:X, //The sum of all split Boos' speed. The more Boos, the slower. The value represents the speed a single split boo would have if Boolossus popped with a current health of 1.
+            merged_speed:X, //The speed the merged Boolossus form has.
             max_health:X, //The max health.
             //BASE portrait ghost data.
             //See also HP-having ghost data below, except pull, flee_speed and flee_task.
@@ -105,11 +111,19 @@ Mansion data is a massive collection of info storing everything the map needs to
                 angle:X //Angle in degrees where the player can move to damage the ghost, where 0 is directly opposite of the ghost. Widend and decreased based on difficulty; the value provided is for normal difficulty. Capped at 180. 
             },
             health:X, //Health at spawn.
-            loot:{ //Loot this ghost drops upon defeat.
-                drop_at_0:{ //Spawns the provided loot contents the moment health drops to 0, the other loot contents spawn the moment the ghost is captured. Mansions can modify this loot with their "loot_chances_ghost" function.
+            loot:{ //Loot this ghost possesses
+                drop_at_0:{ //Spawns the provided loot contents the moment health drops to 0. Mansions can modify this loot with their "loot_chances_ghost" function.
                     //See loot documentation for other variables.
                 },
-                //See loot documentation for other variables.
+                captured:{ //Spawns the provided loot contents the moment the ghost is captured.
+                    //See loot documentation for other variables.
+                },
+                spawn_attack:{ //Spawns the provided loot contents the moment the ghost tries to trigger the spawn_entity attack.
+                    //See loot documentation for other variables.
+                },
+                <name>: { //Not used by default, but other loot may be provided
+                    //See loot documentation for other variables.
+                }
             },
             speed:X, //The movement speed of the ghost. Default = 0.
             flee_speed:X, //The movement speed of the ghost while fleeing from the Poltergust. Default = 0.
@@ -120,8 +134,13 @@ Mansion data is a massive collection of info storing everything the map needs to
             }
         },
         <no-HP-having ghost>:{ //A ghost without HP (for example a bat).
-            loot:{ //Loot this ghost drops upon capture.
-                //See loot documentation for other variables.
+            loot:{ //Loot this ghost possesses
+                captured:{ //Spawns the provided loot contents the moment the ghost is captured.
+                    //See loot documentation for other variables.
+                },
+                <name>: { //Not used by default, but other loot may be provided
+                    //See loot documentation for other variables.
+                }
             },
             speed:X, //The movement speed of the ghost.
             damage:{ //Damage values the ghost uses in its functions.
@@ -129,11 +148,21 @@ Mansion data is a massive collection of info storing everything the map needs to
             }
         }
         black_bogmire:{ //Values used by black bogmires.
-            small_loot:{ //Loot small ones drops upon defeat.
-                //See loot documentation for other variables.
+            small_loot:{ //Loot small ones possess
+                captured:{ //Spawns the provided loot contents the moment the ghost is captured.
+                    //See loot documentation for other variables.
+                },
+                <name>: { //Not used by default, but other loot may be provided
+                    //See loot documentation for other variables.
+                }
             },
-            big_loot:{ //Loot big ones drops upon defeat.
-                //See loot documentation for other variables.
+            big_loot:{ //Loot big ones possess
+                captured:{ //Spawns the provided loot contents the moment the ghost is captured.
+                    //See loot documentation for other variables.
+                },
+                <name>: { //Not used by default, but other loot may be provided
+                    //See loot documentation for other variables.
+                }
             },
             small_speed:X, //The movement speed of the small ones.
             big_speed:X, //The movement speed of the big ones.

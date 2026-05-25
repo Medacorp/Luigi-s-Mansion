@@ -13,7 +13,11 @@ v?:
 * Changed Ghost Portrificationizer Room's E. Gadd to not be able to be talked to, forcing portrificationizing
 * Changed Boo pathfinding to be less cardinal direction-based
 * Changed Graveyard Mr. Bones' spawning logic to match original game
-* Changed how the underground lab and gallery dialogs are handled, making it easy to add more options 
+* Changed how the underground lab and gallery dialogs are handled, making it easy to add more options
+* Changed how loot is handled and stored; loot now supports all entities
+** Moved speedy spirit and gold mice money to be stored in mansion data rather than given via a function
+** Furniture money now selects from a predefined list, like speedy spirits and gold mice
+** Ceiling ghosts now spawn an entity as defined by their loot; if the previously spawned entity still exists spawns nothing and complains instead
 * Changed Training Room door in 3DS Remake to reflect changes made to it
 * Changed Chauncey in the Nursery in 3DS Remake not count progress back down when stopping the rocking horse, matching the remake
 * Changed score display to not list unobtained money types in 3DS Remake, matching the remake

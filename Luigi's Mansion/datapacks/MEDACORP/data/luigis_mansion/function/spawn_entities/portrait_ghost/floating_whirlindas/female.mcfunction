@@ -20,7 +20,7 @@ execute as @e[tag=this_entity,limit=1] store result score @s MoveFlee run data g
 execute as @e[tag=this_entity,limit=1] store result score @s VanishTime run data get storage luigis_mansion:data current_state.current_data.portrait_ghosts.luigis_mansion.floating_whirlindas.female.vanish_time
 execute as @e[tag=this_entity,limit=1] store result score @s PullStrength run data get storage luigis_mansion:data current_state.current_data.portrait_ghosts.luigis_mansion.floating_whirlindas.female.pull.strength
 execute as @e[tag=this_entity,limit=1] store result score @s PullAngle run data get storage luigis_mansion:data current_state.current_data.portrait_ghosts.luigis_mansion.floating_whirlindas.female.pull.angle
-data modify entity @e[tag=this_entity,limit=1] data.loot set from storage luigis_mansion:data current_state.current_data.portrait_ghosts.luigis_mansion.floating_whirlindas.female.loot
+data modify entity @e[tag=this_entity,limit=1] data.loot_storage set from storage luigis_mansion:data current_state.current_data.portrait_ghosts.luigis_mansion.floating_whirlindas.female.loot
 data modify entity @e[tag=this_entity,limit=1] data.damage set from storage luigis_mansion:data current_state.current_data.portrait_ghosts.luigis_mansion.floating_whirlindas.female.damage
 execute if data storage luigis_mansion:data current_state.current_data.portrait_ghosts.luigis_mansion.cloating_whirlindas.female{flee_task:"random"} run scoreboard players set @e[tag=this_entity,limit=1] FleeTask 0
 execute if data storage luigis_mansion:data current_state.current_data.portrait_ghosts.luigis_mansion.cloating_whirlindas.female{flee_task:"alternate"} run scoreboard players set @e[tag=this_entity,limit=1] FleeTask 1

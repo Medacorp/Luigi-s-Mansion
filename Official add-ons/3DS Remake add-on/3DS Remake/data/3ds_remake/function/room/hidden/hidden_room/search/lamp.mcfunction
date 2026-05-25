@@ -1,5 +1,6 @@
 execute unless score #hidden_room_lamp Searched matches 1 run data modify storage luigis_mansion:data furniture set value {room:24,tags:["drop_loot"]}
-execute unless score #hidden_room_lamp Searched matches 1 unless data storage luigis_mansion:data current_state.current_data{money_spawned:["hidden_room_bejeweled_chandelier"]} run data modify storage luigis_mansion:data furniture.loot set value {name:"hidden_room_bejeweled_chandelier",contents:{luigis_mansion:{bill:20}}}
+execute unless score #hidden_room_lamp Searched matches 1 unless data storage luigis_mansion:data current_state.current_data{money_spawned:["hidden_room_bejeweled_chandelier"]} run data modify storage luigis_mansion:data furniture.loot set value {name:"hidden_room_bejeweled_chandelier"}
+execute unless score #hidden_room_lamp Searched matches 1 unless data storage luigis_mansion:data current_state.current_data{money_spawned:["hidden_room_bejeweled_chandelier"]} run data modify storage luigis_mansion:data furniture.loot.contents set from storage luigis_mansion:data current_state.current_data.loot_collections.furniture.20_bills
 execute unless score #hidden_room_lamp Searched matches 1 as @e[tag=luigi] if score #hidden_room_lamp SearcherID = @s ID run tag @s add searcher
 execute unless score #hidden_room_lamp Searched matches 1 run function 3ds_remake:entities/furniture/loot_chance/health_dependent_1
 execute unless score #hidden_room_lamp Searched matches 1 run tag @e[tag=searcher] remove searcher

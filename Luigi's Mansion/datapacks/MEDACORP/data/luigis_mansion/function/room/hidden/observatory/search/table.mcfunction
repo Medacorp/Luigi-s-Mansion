@@ -1,5 +1,6 @@
 execute unless score #observatory_table Searched matches 1 run data modify storage luigis_mansion:data furniture set value {room:46,tags:["drop_loot"]}
-execute unless score #observatory_table Searched matches 1 unless data storage luigis_mansion:data current_state.current_data{money_spawned:["observatory_cabinet_mounted_planet"]} run data modify storage luigis_mansion:data furniture.loot set value {name:"observatory_cabinet_mounted_planet",contents:{luigis_mansion:{gold_bar:1}}}
+execute unless score #observatory_table Searched matches 1 unless data storage luigis_mansion:data current_state.current_data{money_spawned:["observatory_cabinet_mounted_planet"]} run data modify storage luigis_mansion:data furniture.loot set value {name:"observatory_cabinet_mounted_planet"}
+execute unless score #observatory_table Searched matches 1 unless data storage luigis_mansion:data current_state.current_data{money_spawned:["observatory_cabinet_mounted_planet"]} run data modify storage luigis_mansion:data furniture.loot.contents set from storage luigis_mansion:data current_state.current_data.loot_collections.furniture.gold_bar
 execute unless score #observatory_table Searched matches 1 as @e[tag=luigi] if score #observatory_table SearcherID = @s ID run tag @s add searcher
 execute unless score #observatory_table Searched matches 1 run function luigis_mansion:entities/furniture/loot_chance/health_dependent_3
 execute unless score #observatory_table Searched matches 1 run tag @e[tag=searcher] remove searcher

@@ -1,1 +1,1 @@
-execute if data storage luigis_mansion:data entity.loot run data modify entity @e[tag=this_entity,limit=1] data.loot set from storage luigis_mansion:data entity.loot
+execute if data storage luigis_mansion:data entity.loot run data modify entity @e[tag=this_entity,limit=1] data.loot_storage set from storage luigis_mansion:data entity.loot

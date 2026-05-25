@@ -1,5 +1,6 @@
 execute unless score #nursery_lamp Searched matches 1 run data modify storage luigis_mansion:data furniture set value {room:10,tags:["drop_loot"]}
-execute unless score #nursery_lamp Searched matches 1 unless data storage luigis_mansion:data current_state.current_data{money_spawned:["nursery_stained_glass_lamp"]} run data modify storage luigis_mansion:data furniture.loot set value {name:"nursery_stained_glass_lamp",contents:{luigis_mansion:{gold_coin:5}}}
+execute unless score #nursery_lamp Searched matches 1 unless data storage luigis_mansion:data current_state.current_data{money_spawned:["nursery_stained_glass_lamp"]} run data modify storage luigis_mansion:data furniture.loot set value {name:"nursery_stained_glass_lamp"}
+execute unless score #nursery_lamp Searched matches 1 unless data storage luigis_mansion:data current_state.current_data{money_spawned:["nursery_stained_glass_lamp"]} run data modify storage luigis_mansion:data furniture.loot.contents set from storage luigis_mansion:data current_state.current_data.loot_collections.furniture.5_gold_coins
 execute unless score #nursery_lamp Searched matches 1 as @e[tag=luigi] if score #nursery_lamp SearcherID = @s ID run tag @s add searcher
 execute unless score #nursery_lamp Searched matches 1 run function luigis_mansion:entities/furniture/loot_chance/health_dependent_3
 execute unless score #nursery_lamp Searched matches 1 run tag @e[tag=searcher] remove searcher

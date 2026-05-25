@@ -4,4 +4,4 @@ data modify storage luigis_mansion:data new_ghosts_caught[-1].caught.luigis_mans
 data remove storage luigis_mansion:data new_ghosts_caught[-1].caught.luigis_mansion.portrait_ghost
 data modify storage luigis_mansion:data new_ghosts_caught[-1].caught.luigis_mansion.neville set from storage luigis_mansion:data ghosts_caught[0].caught.portrait_ghost
 data remove storage luigis_mansion:data ghosts_caught[0]
-execute if data storage luigis_mansion:data ghosts_caught[0] run function luigis_mansion:other/upgrade_path/data/change_data/ghosts_caught
+execute if data storage luigis_mansion:data ghosts_caught[0] run function luigis_mansion:other/upgrade_path/change_data/ghosts_caught
