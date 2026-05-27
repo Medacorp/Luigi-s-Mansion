@@ -12,7 +12,8 @@ Loot is stored in several places, but has a consistent format:
             },
             variables: { //The entity variables to spawn this entity with.
                 //See entity variables
-            } 
+            },
+            count:X //How many times the entity is spawned, minimum of 1.
         }
     ]
 }

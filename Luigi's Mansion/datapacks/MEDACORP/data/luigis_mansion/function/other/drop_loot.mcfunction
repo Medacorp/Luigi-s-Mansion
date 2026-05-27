@@ -6,3 +6,4 @@ execute if data storage luigis_mansion:data drop_loot.name if entity @s[scores={
 execute if data storage luigis_mansion:data drop_loot.contents[-1] if data storage luigis_mansion:data drop_loot{works_in_lab:1b} run function luigis_mansion:other/drop_loot_loop with storage luigis_mansion:data drop_loot.contents[-1].name
 execute if data storage luigis_mansion:data drop_loot.contents[-1] unless data storage luigis_mansion:data drop_loot{works_in_lab:1b} if entity @s[scores={Room=0..}] run function luigis_mansion:other/drop_loot_loop with storage luigis_mansion:data drop_loot.contents[-1].name
 data remove storage luigis_mansion:data drop_loot
+scoreboard players reset #loot_count Time
