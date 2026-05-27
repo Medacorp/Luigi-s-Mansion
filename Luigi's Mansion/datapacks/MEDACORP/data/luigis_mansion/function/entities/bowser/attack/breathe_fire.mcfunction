@@ -7,10 +7,9 @@ execute if entity @s[scores={ActionTime=81..121}] run scoreboard players add @s 
 execute if entity @s[scores={ActionTime=21..121}] store result score #temp Time run data get entity @s Rotation[0] 10
 execute if entity @s[scores={ActionTime=21..121}] unless score #mirrored Selected matches 1 store result entity @s Rotation[0] float 0.1 run scoreboard players operation #temp Time -= @s Time
 execute if entity @s[scores={ActionTime=21..121}] if score #mirrored Selected matches 1 store result entity @s Rotation[0] float 0.1 run scoreboard players operation #temp Time += @s Time
-execute if entity @s[scores={ActionTime=21..121}] run data modify storage luigis_mansion:data entity set value {damage:{}}
-execute if entity @s[scores={ActionTime=21..121}] run data modify storage luigis_mansion:data entity.damage.attack set from entity @s data.damage.fire
-execute if entity @s[scores={ActionTime=21..121}] store result storage luigis_mansion:data entity.owner int 1 run scoreboard players get @s GhostNr
-execute at @s[scores={ActionTime=21..121}] positioned ^ ^ ^12 run function luigis_mansion:spawn_entities/burning_floor
+data modify entity @s[scores={ActionTime=21..121}] data.loot set from entity @s data.loot_storage.fire_attack
+execute if data entity @s[scores={ActionTime=21..121}] data.loot run data modify entity @s data.loot.owner set from entity @s UUID
+execute if data entity @s[scores={ActionTime=21..121}] data.loot positioned ^ ^ ^12 run function luigis_mansion:other/drop_loot
 execute if entity @s[scores={ActionTime=21..121}] run data modify storage luigis_mansion:data damage set value {method:{namespace:"luigis_mansion",id:"fire"},amount:0,animation:{namespace:"luigis_mansion",id:"knockback/burn"},no_delete:1b}
 execute if entity @s[scores={ActionTime=21..121}] run data modify storage luigis_mansion:data damage.amount set from entity @s data.damage.fire
 execute if entity @s[scores={ActionTime=21..121}] run data modify storage luigis_mansion:data damage.attacker set from entity @s UUID

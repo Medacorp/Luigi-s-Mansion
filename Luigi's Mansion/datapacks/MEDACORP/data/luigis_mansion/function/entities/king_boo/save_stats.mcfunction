@@ -1,1 +1,1 @@
-execute store result storage luigis_mansion:data current_state.current_data.portrait_ghosts.luigis_mansion.king_boo.health int 1 run scoreboard players operation @s LastHealth = @s Health
+execute store result storage luigis_mansion:data current_state.current_data.portrait_ghosts[{name:{namespace:"luigis_mansion",id:"king_boo"}}].health int 1 run scoreboard players operation @s LastHealth = @s Health

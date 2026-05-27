@@ -1,4 +1,4 @@
-$execute unless data storage luigis_mansion:data dialogs[{room:-3}] run function $(namespace):room/ghost_portrificationizer_room/portrificationize/$(id)
+execute unless data storage luigis_mansion:data dialogs[{room:-3}] if data storage luigis_mansion:data current_state.current_data.portrait_ghosts[{portrificationized:1b}] run scoreboard players set #temp Time 1
 execute if score #temp Time matches 1 unless data storage luigis_mansion:data dialogs[{room:-3}] run data modify storage luigis_mansion:data dialogs append value {name:{namespace:"luigis_mansion",id:"portrificationizing"},room:-3,progress:0,caller:0}
 execute if score #temp Time matches 1 store result storage luigis_mansion:data dialogs[{room:-3}].caller int 1 run scoreboard players get @s ID
 scoreboard players reset #temp Time

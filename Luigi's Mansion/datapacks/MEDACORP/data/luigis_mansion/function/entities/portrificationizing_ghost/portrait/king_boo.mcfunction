@@ -1,4 +1,4 @@
-execute store result score #temp ActionTime run data get storage luigis_mansion:data current_state.current_data.portrait_ghosts.luigis_mansion.king_boo.rank
+execute store result score #temp ActionTime run data get storage luigis_mansion:data current_state.current_data.portrait_ghosts[{name:{namespace:"luigis_mansion",id:"king_boo"}}].rank
 execute store result score #temp Time run data get storage luigis_mansion:data current_state.portrait_ghost_ranks.king_boo
 execute if score #temp ActionTime matches -1..0 run data modify entity @s equipment.head merge value {id:"minecraft:diamond_pickaxe",count:1,components:{"minecraft:item_model":"luigis_mansion:furniture/gallery_portrait/king_boo","minecraft:unbreakable":{},"minecraft:custom_model_data":{strings:["portrificationizing_bronze"]}}}
 execute if score #temp ActionTime matches 1 run data modify entity @s equipment.head merge value {id:"minecraft:diamond_pickaxe",count:1,components:{"minecraft:item_model":"luigis_mansion:furniture/gallery_portrait/king_boo","minecraft:unbreakable":{},"minecraft:custom_model_data":{strings:["portrificationizing_silver"]}}}
@@ -8,4 +8,4 @@ execute if score #temp ActionTime matches 1 unless score #temp Time matches 2.. 
 execute if score #temp ActionTime matches 2.. unless score #temp Time matches 3.. run data modify storage luigis_mansion:data current_state.portrait_ghost_ranks.king_boo set value 2b
 scoreboard players reset #temp ActionTime
 scoreboard players reset #temp Time
-data modify storage luigis_mansion:data current_state.current_data.portrait_ghosts.luigis_mansion.king_boo.portrificationized set value 1b
+data modify storage luigis_mansion:data current_state.current_data.portrait_ghosts[{name:{namespace:"luigis_mansion",id:"king_boo"}}].portrificationized set value 2b

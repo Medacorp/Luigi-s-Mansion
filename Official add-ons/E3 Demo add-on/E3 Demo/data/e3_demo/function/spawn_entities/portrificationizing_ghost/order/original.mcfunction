@@ -1,4 +1,0 @@
-function luigis_mansion:spawn_entities/portrificationizing_ghost/neville
-function luigis_mansion:spawn_entities/portrificationizing_ghost/lydia
-function luigis_mansion:spawn_entities/portrificationizing_ghost/spooky
-function luigis_mansion:spawn_entities/portrificationizing_ghost/miss_petunia

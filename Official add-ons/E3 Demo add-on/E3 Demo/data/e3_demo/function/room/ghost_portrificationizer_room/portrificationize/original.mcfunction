@@ -1,4 +1,0 @@
-execute if data storage luigis_mansion:data current_state.current_data.portrait_ghosts.luigis_mansion.neville{portrificationized:0b,health:0} run scoreboard players set #temp Time 1
-execute if data storage luigis_mansion:data current_state.current_data.portrait_ghosts.luigis_mansion.lydia{portrificationized:0b,health:0} run scoreboard players set #temp Time 1
-execute if data storage luigis_mansion:data current_state.current_data.portrait_ghosts.luigis_mansion.miss_petunia{portrificationized:0b,health:0} run scoreboard players set #temp Time 1
-execute if data storage luigis_mansion:data current_state.current_data.portrait_ghosts.luigis_mansion.spooky{portrificationized:0b,health:0} run scoreboard players set #temp Time 1

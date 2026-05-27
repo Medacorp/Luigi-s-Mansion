@@ -1,2 +1,2 @@
-execute store result storage luigis_mansion:data current_state.current_data.portrait_ghosts.luigis_mansion.jarvis.health int 1 run scoreboard players operation @s LastHealth = @s Health
-execute store result storage luigis_mansion:data current_state.current_data.portrait_ghosts.luigis_mansion.jarvis.top_vacuum_damage int 1 run scoreboard players get @s TopVacuumDamage
+execute store result storage luigis_mansion:data current_state.current_data.portrait_ghosts[{name:{namespace:"luigis_mansion",id:"jarvis"}}].health int 1 run scoreboard players operation @s LastHealth = @s Health
+execute store result storage luigis_mansion:data current_state.current_data.portrait_ghosts[{name:{namespace:"luigis_mansion",id:"jarvis"}}].top_vacuum_damage int 1 run scoreboard players get @s TopVacuumDamage

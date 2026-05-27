@@ -40,57 +40,59 @@ Mansion data is a massive collection of info storing everything the map needs to
             cleared:0b //Whether the room is cleared. Turns on lamps (if blackout is 0b) and colors the room on the map.
         }
     },
-    portrait_ghosts:{ //Portrait ghost data.
-        <name>:{ //A portrait ghost.
-            portrificationized:0b, //BASE; When health is 0, and this is 0b, the ghost can be portrificationized and turned into a painting. It is then set to 1b.
-            rank:-1b, //BASE; The rank you're obtained. Default = -1b, which is undefined (treated as bronze), 0b is bronze, 1b is silver, 2b and above is gold. 3b and above is platinum if 3DS Remake add-on is installed.
+    portrait_ghosts:[ //Portrait ghost data.
+        { //A portrait ghost; order determines what order the portrait ghosts get portrificationized.
+            //BASE portrait ghost data, this is always present in the root of the data
+            name: { //The ID of this portrait ghost.
+                namespace:"luigis_mansion", //The namespace.
+                id:"henry_and_orville" //The ID
+            },
+            portrificationized:0b, //When health reaches 0, and this is set to 1b, the ghost can be portrificationized and turned into a painting. It is then set to 2b to indicate it has already been portrificationized before.
+            rank:-1b, //The rank you're obtained. Default = -1b, which is undefined (treated as bronze), 0b is bronze, 1b is silver, 2b and above is gold. 3b and above is platinum if 3DS Remake add-on is installed.
+            
+            //ENTITY portrait ghost data, this is only in the root for single-entity portrait ghosts
             top_vacuum_damage:X, //The highest amount of damage dealt in 1 suction.
             max_health:X, //The max health. Together with health, used to determine the pearl sizes to drop.
             //See also HP-having ghost data below
-        },
-        floating_whirlindas:{ //Save format for the floating whirlindas.
+
+            //Floating whirlindas
             male:{ //Mr. Whirlinda's values.
-                //Non-base portrait ghost data.
+                //ENTITY portrait ghost data.
             },
             female:{ //Miss. Whirlinda's values.
-                //Non-base portrait ghost data.
-            },
-            //BASE portrait ghost data.
-        },
-        henry_and_orville:{ //Save format for henry and orville.
+                //ENTITY portrait ghost data.
+            }
+
+            //Henry and Orville
             henry:{ //Henry's values.
-                //Non-base portrait ghost data.
+                //ENTITY portrait ghost data.
             },
             orville:{ //Orville's values.
-                //Non-base portrait ghost data.
-            },
-            //BASE portrait ghost data.
-        },
-        clockwork_soldiers:{ //Save format for clockwork soldiers.
+                //ENTITY portrait ghost data.
+            }
+
+            //Clockwork Soldiers
             blue:{ //Blue soldier's values.
-                //Non-base portrait ghost data.
+                //ENTITY portrait ghost data.
             },
             pink:{ //Pink soldier's values.
-                //Non-base portrait ghost data.
+                //ENTITY portrait ghost data.
             },
             green:{ //Green soldier's values.
-                //Non-base portrait ghost data.
-            },
-            //BASE portrait ghost data.
-        },
-        boolossus:{ //Save format for Boolossus.
+                //ENTITY portrait ghost data.
+            }
+
+            //Boolossus
             speed:X, //The sum of all split Boos' speed. The more Boos, the slower. The value represents the speed a single split boo would have if Boolossus popped with a current health of 1.
             merged_speed:X, //The speed the merged Boolossus form has.
             max_health:X, //The max health.
-            //BASE portrait ghost data.
-            //See also HP-having ghost data below, except pull, flee_speed and flee_task.
-        },
-        king_boo:{ //Save format for King Boo.
+            //See also HP-having ghost data below, except pull, flee_speed and flee_task and vanish_time.
+            
+            //King Boo
             max_health:X, //The max health.
-            //BASE portrait ghost data.
-            //See also HP-having ghost data below, except pull, flee_speed and flee_task.
+            //See also HP-having ghost data below, except pull, flee_speed and flee_task and vanish_time.
         }
-    },
+    ],
     boos:[
         {
             name:{ //The boo ID.
@@ -118,7 +120,7 @@ Mansion data is a massive collection of info storing everything the map needs to
                 captured:{ //Spawns the provided loot contents the moment the ghost is captured.
                     //See loot documentation for other variables.
                 },
-                spawn_attack:{ //Spawns the provided loot contents the moment the ghost tries to trigger the spawn_entity attack.
+                attack:{ //Spawns the provided loot contents during the ghost's attack; only some attacks trigger this.
                     //See loot documentation for other variables.
                 },
                 <name>: { //Not used by default, but other loot may be provided
@@ -133,7 +135,7 @@ Mansion data is a massive collection of info storing everything the map needs to
                 <type>:X //The amount of damage dealt. Type is usually collision and attack (also used by created projectiles), but can be other values. Default = 0.
             }
         },
-        <no-HP-having ghost>:{ //A ghost without HP (for example a bat).
+        <no-HP-having ghost>:{ //A ghost without HP (for example a bat, and Bowser).
             loot:{ //Loot this ghost possesses
                 captured:{ //Spawns the provided loot contents the moment the ghost is captured.
                     //See loot documentation for other variables.
