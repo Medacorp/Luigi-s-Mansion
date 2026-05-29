@@ -6,6 +6,9 @@ data modify storage luigis_mansion:data damage set value {method:{namespace:"lui
 execute if data entity @s data.damage.attack run data modify storage luigis_mansion:data damage.amount set from entity @s data.damage.attack
 data modify storage luigis_mansion:data damage.attacker set from entity @s data.owner
 execute as @e[tag=luigi,distance=..3] run function luigis_mansion:entities/luigi/damage
+execute if entity @e[tag=luigi,distance=..3] run tag @s add hit_someone
+execute if data entity @s[tag=hit_someone] data.owner run function luigis_mansion:entities/ghost/owner_laugh with entity @s data
+execute if data entity @s[tag=!hit_someone] data.owner run function luigis_mansion:entities/ghost/owner_complain with entity @s data
 data remove storage luigis_mansion:data damage
 
 particle minecraft:explosion ~ ~ ~ 0.2 0.2 0.2 1 4 force @a[tag=same_room]

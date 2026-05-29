@@ -6,8 +6,8 @@ data modify entity @s[scores={ActionTime=1}] data.animation set value {namespace
 $execute if entity @s[scores={ActionTime=10}] run playsound $(namespace):entity.$(id).grab_ball hostile @a[tag=same_room] ~ ~ ~ 1
 
 data modify entity @s[scores={ActionTime=10}] data.loot set from entity @s data.loot_storage.attack
-execute if data entity @s[scores={ActionTime=10}] data.loot run data modify entity @s data.loot.no_ai set value 1b
-execute if data entity @s[scores={ActionTime=10}] data.loot run data modify entity @s data.loot.owner set from entity @s UUID
+execute if data entity @s[scores={ActionTime=10}] data.loot run data modify entity @s data.loot.contents[].variables.no_ai set value 1b
+execute if data entity @s[scores={ActionTime=10}] data.loot run data modify entity @s data.loot.contents[].variables.owner set from entity @s UUID
 execute if data entity @s[scores={ActionTime=10}] data.loot positioned ^ ^1.2 ^ run function luigis_mansion:other/drop_loot
 execute if entity @s[scores={ActionTime=11..20}] unless score #mirrored Selected matches 1 run function luigis_mansion:entities/bowling_ghost/ball_position/grab/normal
 execute if entity @s[scores={ActionTime=11..20}] if score #mirrored Selected matches 1 run function luigis_mansion:entities/bowling_ghost/ball_position/grab/mirrored

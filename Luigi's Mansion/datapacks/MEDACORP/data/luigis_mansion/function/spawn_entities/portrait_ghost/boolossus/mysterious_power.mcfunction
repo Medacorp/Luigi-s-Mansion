@@ -9,12 +9,12 @@ tag @e[tag=this_entity,tag=model_piece] remove this_entity
 teleport @e[tag=this_entity,limit=1] ~ ~ ~ ~ ~
 scoreboard players set @e[tag=this_entity,limit=1] Wave 0
 scoreboard players set @e[tag=this_entity,limit=1] VanishTime -1
-execute as @e[tag=this_entity,limit=1] store result score @s MaxHealth run data get storage luigis_mansion:data current_state.current_data.portrait_ghosts.luigis_mansion.boolossus.max_health
+execute as @e[tag=this_entity,limit=1] store result score @s MaxHealth run data get storage luigis_mansion:data current_state.current_data.portrait_ghosts[{name:{namespace:"luigis_mansion",id:"boolossus"}}].max_health
 scoreboard players set @e[tag=this_entity,limit=1] ActionTime 1
 scoreboard players set @e[tag=this_entity,limit=1] Dialog 0
-execute as @e[tag=this_entity,limit=1] store result score @s Move run data get storage luigis_mansion:data current_state.current_data.portrait_ghosts.luigis_mansion.boolossus.speed
-data modify entity @e[tag=this_entity,limit=1] data.loot_storage set from storage luigis_mansion:data current_state.current_data.portrait_ghosts.luigis_mansion.boolossus.loot
-data modify entity @e[tag=this_entity,limit=1] data.damage set from storage luigis_mansion:data current_state.current_data.portrait_ghosts.luigis_mansion.boolossus.damage
+execute as @e[tag=this_entity,limit=1] store result score @s Move run data get storage luigis_mansion:data current_state.current_data.portrait_ghosts[{name:{namespace:"luigis_mansion",id:"boolossus"}}].speed
+data modify entity @e[tag=this_entity,limit=1] data.loot_storage set from storage luigis_mansion:data current_state.current_data.portrait_ghosts[{name:{namespace:"luigis_mansion",id:"boolossus"}}].loot
+data modify entity @e[tag=this_entity,limit=1] data.damage set from storage luigis_mansion:data current_state.current_data.portrait_ghosts[{name:{namespace:"luigis_mansion",id:"boolossus"}}].damage
 scoreboard players set @e[tag=this_entity,limit=1] Sound 0
 scoreboard players set @e[tag=this_entity,limit=1] EntitySizeRadius 5
 scoreboard players set @e[tag=this_entity,limit=1] EntityYOffset 14

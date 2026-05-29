@@ -15,3 +15,4 @@ execute at @s[tag=!hit_floor,tag=!thrown] run teleport @s ~ ~-0.1 ~
 execute at @s[tag=hit_floor] if block ~ ~0.5 ~ #minecraft:slabs[type=bottom] run teleport @s ~ ~0.01 ~
 execute at @s[tag=hit_floor] unless block ~ ~ ~ #luigis_mansion:items_ignore unless block ~ ~0.4 ~ #minecraft:slabs[type=bottom] run teleport @s ~ ~0.01 ~
 execute at @s[tag=!captured,tag=!dead] if entity @e[tag=luigi,distance=..0.7,limit=1] run function luigis_mansion:entities/banana_peel/slip
+execute if data entity @s[tag=captured] data.owner run function luigis_mansion:entities/ghost/owner_complain with entity @s data

@@ -10,12 +10,29 @@ execute unless entity @s[scores={Dialog=1..}] unless entity @e[tag=same_room,tag
 execute unless entity @s[scores={Dialog=1..}] unless entity @e[tag=same_room,tag=light_me,tag=!lit] run scoreboard players set @s Dialog 1
 execute if entity @s[scores={Dialog=0..9}] as @e[tag=mr_luggs_food,limit=1] run data modify entity @s equipment.head merge from entity @s equipment.head.components."minecraft:custom_data".model_data.default
 execute if entity @s[scores={Dialog=10..54}] as @e[tag=mr_luggs_food,limit=1] run data modify entity @s equipment.head merge from entity @s equipment.head.components."minecraft:custom_data".model_data.slightly_decreased
-execute if entity @s[scores={Dialog=55..99}] as @e[tag=mr_luggs_food,limit=1] run data modify entity @s equipment.head merge from entity @s equipment.head.components."minecraft:custom_data".model_data.largely_descreased
-scoreboard players add @s[scores={Dialog=100..}] Dialog 1
+execute if entity @s[scores={Dialog=55..99}] as @e[tag=mr_luggs_food,limit=1] run data modify entity @s equipment.head merge from entity @s equipment.head.components."minecraft:custom_data".model_data.largely_decreased
+scoreboard players add @s[scores={Dialog=100..140}] Dialog 1
 execute if entity @e[tag=mr_luggs_food,tag=was_in_vacuum,limit=1] run scoreboard players add @s[scores={Dialog=1..99}] Dialog 1
 execute if entity @s[scores={Dialog=100}] as @e[tag=mr_luggs_food,limit=1] run data modify entity @s equipment.head merge from entity @s equipment.head.components."minecraft:custom_data".model_data.open
 execute if entity @s[scores={Dialog=2..99}] run tag @e[tag=hidden,nbt={data:{entity:{namespace:"luigis_mansion",id:"waiter"}}}] add spawn
 execute if entity @s[scores={Dialog=2..99}] if entity @e[tag=same_room,nbt={data:{entity:{namespace:"luigis_mansion",id:"waiter"}}},tag=attack] run scoreboard players set @s Dialog 1
+scoreboard players add @s[scores={Dialog=161..}] Dialog 1
+scoreboard players set @s[scores={Dialog=156..160},tag=owner_complain] Time 0
+scoreboard players add @s[scores={Dialog=156..160},tag=owner_complain] Dialog 1
+scoreboard players add @s[scores={Dialog=155,Time=3}] Dialog 1
+scoreboard players set @s[scores={Dialog=151..154},tag=owner_complain] Time 0
+scoreboard players add @s[scores={Dialog=151..154},tag=owner_complain] Dialog 1
+scoreboard players add @s[scores={Dialog=150,Time=3}] Dialog 1
+scoreboard players set @s[scores={Dialog=147..149},tag=owner_complain] Time 0
+scoreboard players add @s[scores={Dialog=147..149},tag=owner_complain] Dialog 1
+scoreboard players add @s[scores={Dialog=146,Time=3}] Dialog 1
+scoreboard players set @s[scores={Dialog=144..145},tag=owner_complain] Time 0
+scoreboard players add @s[scores={Dialog=144..145},tag=owner_complain] Dialog 1
+scoreboard players add @s[scores={Dialog=143,Time=3}] Dialog 1
+scoreboard players set @s[scores={Dialog=142},tag=owner_complain] Time 0
+scoreboard players add @s[scores={Dialog=142},tag=owner_complain] Dialog 1
+scoreboard players add @s[scores={Dialog=141,Time=3}] Dialog 1
+tag @s remove owner_complain
 
 execute unless entity @s[scores={Dialog=100..}] run scoreboard players add @s ActionTime 1
 data modify entity @s[scores={Dialog=..99,ActionTime=1}] data.animation set value {namespace:"luigis_mansion",id:"eat"}
@@ -41,57 +58,37 @@ execute if entity @s[scores={Dialog=..99,ActionTime=100}] run playsound luigis_m
 execute if entity @s[scores={Dialog=..99,ActionTime=120}] run playsound luigis_mansion:entity.mr_luggs.hit_table hostile @a[tag=same_room] ^ ^ ^2 4
 execute if entity @s[scores={Dialog=..99,ActionTime=140}] run playsound luigis_mansion:entity.mr_luggs.hit_table hostile @a[tag=same_room] ^ ^ ^2 4
 scoreboard players set @s[scores={Dialog=..99,ActionTime=150}] ActionTime 0
-scoreboard players set @s[scores={Dialog=101}] ActionTime 0
 
 execute if entity @s[scores={Dialog=100..}] run tag @e[tag=same_room,tag=waiter,tag=attack] add complain
 execute if entity @s[scores={Dialog=100..}] run tag @e[tag=same_room,tag=waiter,tag=attack] remove attack
 data modify entity @s[scores={Dialog=101}] data.animation set value {namespace:"luigis_mansion",id:"complain"}
-data modify entity @s[scores={Dialog=141}] data.animation set value {namespace:"luigis_mansion",id:"rage"}
-data modify entity @s[scores={Dialog=201}] data.animation set value {namespace:"luigis_mansion",id:"spit"}
-data modify entity @s[scores={Dialog=221}] data.animation set value {namespace:"luigis_mansion",id:"rage"}
-data modify entity @s[scores={Dialog=301}] data.animation set value {namespace:"luigis_mansion",id:"spit"}
-data modify entity @s[scores={Dialog=361}] data.animation set value {namespace:"luigis_mansion",id:"rage"}
-data modify entity @s[scores={Dialog=421}] data.animation set value {namespace:"luigis_mansion",id:"spit"}
-data modify entity @s[scores={Dialog=481}] data.animation set value {namespace:"luigis_mansion",id:"rage"}
-data modify entity @s[scores={Dialog=521}] data.animation set value {namespace:"luigis_mansion",id:"spit"}
-data modify entity @s[scores={Dialog=601}] data.animation set value {namespace:"luigis_mansion",id:"rage"}
-data modify entity @s[scores={Dialog=661}] data.animation set value {namespace:"luigis_mansion",id:"spit"}
-data modify entity @s[scores={Dialog=761}] data.animation set value {namespace:"luigis_mansion",id:"sigh"}
-data modify entity @s[scores={Dialog=861}] data.animation set value {namespace:"luigis_mansion",id:"complain"}
 execute if entity @s[scores={Dialog=101}] run playsound luigis_mansion:entity.mr_luggs.complain hostile @a[tag=same_room] ~ ~ ~ 1
 execute if entity @s[scores={Dialog=141..}] as @a[tag=same_room] run function luigis_mansion:other/music/set/danger
-execute if entity @s[scores={Dialog=141..781}] positioned ~ ~1 ~ facing entity @e[tag=same_room,tag=luigi,sort=nearest,limit=1] feet positioned ~ ~-1 ~ run teleport @s ~ ~ ~ ~ ~
-execute if entity @s[scores={Dialog=201}] run playsound luigis_mansion:entity.mr_luggs.spit hostile @a[tag=same_room] ~ ~ ~ 1
-execute if entity @s[scores={Dialog=221}] run function luigis_mansion:entities/mr_luggs/ai/mansion/normal/spit_fire
-execute if entity @s[scores={Dialog=301}] run playsound luigis_mansion:entity.mr_luggs.spit hostile @a[tag=same_room] ~ ~ ~ 1
-execute if entity @s[scores={Dialog=321}] run function luigis_mansion:entities/mr_luggs/ai/mansion/normal/spit_fire
-execute if entity @s[scores={Dialog=361}] run playsound luigis_mansion:entity.mr_luggs.spit_repeat hostile @a[tag=same_room] ~ ~ ~ 1
-execute if entity @s[scores={Dialog=361}] run function luigis_mansion:entities/mr_luggs/ai/mansion/normal/spit_fire
-execute if entity @s[scores={Dialog=421}] run playsound luigis_mansion:entity.mr_luggs.spit hostile @a[tag=same_room] ~ ~ ~ 1
-execute if entity @s[scores={Dialog=441}] run function luigis_mansion:entities/mr_luggs/ai/mansion/normal/spit_fire
-execute if entity @s[scores={Dialog=461}] run playsound luigis_mansion:entity.mr_luggs.spit_repeat hostile @a[tag=same_room] ~ ~ ~ 1
-execute if entity @s[scores={Dialog=461}] run function luigis_mansion:entities/mr_luggs/ai/mansion/normal/spit_fire
-execute if entity @s[scores={Dialog=481}] run playsound luigis_mansion:entity.mr_luggs.spit_repeat hostile @a[tag=same_room] ~ ~ ~ 1
-execute if entity @s[scores={Dialog=481}] run function luigis_mansion:entities/mr_luggs/ai/mansion/normal/spit_fire
-execute if entity @s[scores={Dialog=521}] run playsound luigis_mansion:entity.mr_luggs.spit hostile @a[tag=same_room] ~ ~ ~ 1
-execute if entity @s[scores={Dialog=541}] run function luigis_mansion:entities/mr_luggs/ai/mansion/normal/spit_fire
-execute if entity @s[scores={Dialog=561}] run playsound luigis_mansion:entity.mr_luggs.spit_repeat hostile @a[tag=same_room] ~ ~ ~ 1
-execute if entity @s[scores={Dialog=561}] run function luigis_mansion:entities/mr_luggs/ai/mansion/normal/spit_fire
-execute if entity @s[scores={Dialog=581}] run playsound luigis_mansion:entity.mr_luggs.spit_repeat hostile @a[tag=same_room] ~ ~ ~ 1
-execute if entity @s[scores={Dialog=581}] run function luigis_mansion:entities/mr_luggs/ai/mansion/normal/spit_fire
-execute if entity @s[scores={Dialog=601}] run playsound luigis_mansion:entity.mr_luggs.spit_repeat hostile @a[tag=same_room] ~ ~ ~ 1
-execute if entity @s[scores={Dialog=601}] run function luigis_mansion:entities/mr_luggs/ai/mansion/normal/spit_fire
-execute if entity @s[scores={Dialog=661}] run playsound luigis_mansion:entity.mr_luggs.spit hostile @a[tag=same_room] ~ ~ ~ 1
-execute if entity @s[scores={Dialog=681}] run function luigis_mansion:entities/mr_luggs/ai/mansion/normal/spit_fire
-execute if entity @s[scores={Dialog=701}] run playsound luigis_mansion:entity.mr_luggs.spit_repeat hostile @a[tag=same_room] ~ ~ ~ 1
-execute if entity @s[scores={Dialog=701}] run function luigis_mansion:entities/mr_luggs/ai/mansion/normal/spit_fire
-execute if entity @s[scores={Dialog=721}] run playsound luigis_mansion:entity.mr_luggs.spit_repeat hostile @a[tag=same_room] ~ ~ ~ 1
-execute if entity @s[scores={Dialog=721}] run function luigis_mansion:entities/mr_luggs/ai/mansion/normal/spit_fire
-execute if entity @s[scores={Dialog=741}] run playsound luigis_mansion:entity.mr_luggs.spit_repeat hostile @a[tag=same_room] ~ ~ ~ 1
-execute if entity @s[scores={Dialog=741}] run function luigis_mansion:entities/mr_luggs/ai/mansion/normal/spit_fire
-execute if entity @s[scores={Dialog=761}] run playsound luigis_mansion:entity.mr_luggs.spit_repeat hostile @a[tag=same_room] ~ ~ ~ 1
-execute if entity @s[scores={Dialog=761}] run function luigis_mansion:entities/mr_luggs/ai/mansion/normal/spit_fire
-execute if entity @s[scores={Dialog=761}] run playsound luigis_mansion:entity.mr_luggs.sigh hostile @a[tag=same_room] ~ ~ ~ 1
-execute if entity @s[scores={Dialog=781}] run scoreboard players set @s VulnerableTime 80
-execute if entity @s[scores={Dialog=881}] run playsound luigis_mansion:entity.mr_luggs.complain_repeat hostile @a[tag=same_room] ~ ~ ~ 1
-scoreboard players set @s[scores={Dialog=901}] Dialog 601
+execute if entity @s[scores={Dialog=141..160}] positioned ~ ~1 ~ facing entity @e[tag=same_room,tag=luigi,sort=nearest,limit=1] feet positioned ~ ~-1 ~ run teleport @s ~ ~ ~ ~ ~
+data modify entity @s[scores={Dialog=161}] data.animation set value {namespace:"luigis_mansion",id:"sigh"}
+execute if entity @s[scores={Dialog=161}] run playsound luigis_mansion:entity.mr_luggs.sigh hostile @a[tag=same_room] ~ ~ ~ 1
+execute if entity @s[scores={Dialog=161}] run scoreboard players set @s VulnerableTime 80
+data modify entity @s[scores={Dialog=241}] data.animation set value {namespace:"luigis_mansion",id:"complain"}
+execute if entity @s[scores={Dialog=261}] run playsound luigis_mansion:entity.mr_luggs.complain_repeat hostile @a[tag=same_room] ~ ~ ~ 1
+scoreboard players set @s[scores={Dialog=281..}] Dialog 155
+
+scoreboard players remove @s[scores={Dialog=101..},nbt={data:{animation:{namespace:"luigis_mansion",id:"spit"}}}] AnimationProgress 1
+execute if entity @s[scores={Dialog=101..,AnimationProgress=-1},tag=long_spit] run playsound luigis_mansion:entity.mr_luggs.spit hostile @a[tag=same_room] ~ ~ ~ 1
+execute if entity @s[scores={Dialog=101..,AnimationProgress=-15},tag=!long_spit] run playsound luigis_mansion:entity.mr_luggs.spit_repeat hostile @a[tag=same_room] ~ ~ ~ 1
+execute if entity @s[scores={Dialog=101..,AnimationProgress=-15}] run function luigis_mansion:entities/mr_luggs/ai/mansion/normal/spit_fire
+tag @s[scores={Dialog=101..,AnimationProgress=..-15}] remove long_spit
+scoreboard players set @s[scores={Dialog=101..,AnimationProgress=..-20}] AnimationProgress 0
+execute unless entity @s[scores={AnimationProgress=..-15}] unless entity @s[scores={AnimationProgress=-2..-1}] run data modify entity @s[scores={Dialog=141..160}] data.animation set value {namespace:"luigis_mansion",id:"rage"}
+execute unless entity @e[tag=mr_luggs_attack,limit=1] run data modify entity @s[scores={Dialog=142}] data.animation set value {namespace:"luigis_mansion",id:"spit"}
+execute unless entity @e[tag=mr_luggs_attack,limit=1] run data modify entity @s[scores={Dialog=144..145}] data.animation set value {namespace:"luigis_mansion",id:"spit"}
+execute unless entity @e[tag=mr_luggs_attack,limit=1] run data modify entity @s[scores={Dialog=147..149}] data.animation set value {namespace:"luigis_mansion",id:"spit"}
+execute unless entity @e[tag=mr_luggs_attack,limit=1] run data modify entity @s[scores={Dialog=151..154}] data.animation set value {namespace:"luigis_mansion",id:"spit"}
+execute unless entity @e[tag=mr_luggs_attack,limit=1] run data modify entity @s[scores={Dialog=156..160}] data.animation set value {namespace:"luigis_mansion",id:"spit"}
+scoreboard players add @s[scores={Dialog=101..},nbt={data:{animation:{namespace:"luigis_mansion",id:"rage"}}}] AnimationProgress 1
+scoreboard players add @s[scores={Dialog=101..,AnimationProgress=20..}] Time 1
+scoreboard players set @s[scores={Dialog=101..,AnimationProgress=20..}] AnimationProgress 0
+execute if entity @s[scores={Dialog=101..,AnimationProgress=1..15},nbt={data:{animation:{namespace:"luigis_mansion",id:"spit"}}}] run tag @s add long_spit
+scoreboard players set @s[scores={Dialog=101..,AnimationProgress=1..},nbt={data:{animation:{namespace:"luigis_mansion",id:"spit"}}}] AnimationProgress 0
+scoreboard players set @s[scores={Dialog=101..,AnimationProgress=1..},nbt=!{data:{animation:{namespace:"luigis_mansion",id:"rage"}}}] AnimationProgress 0
+scoreboard players set @s[scores={Dialog=101..,AnimationProgress=..-1},nbt=!{data:{animation:{namespace:"luigis_mansion",id:"spit"}}}] AnimationProgress 0
+scoreboard players set @s[scores={Dialog=101..},nbt=!{data:{animation:{namespace:"luigis_mansion",id:"rage"}}}] Time 0

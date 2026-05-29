@@ -3,4 +3,5 @@ execute if data entity @s data.damage.attack run data modify storage luigis_mans
 data modify storage luigis_mansion:data damage.attacker set from entity @s data.owner
 execute as @e[tag=luigi,dx=0,dy=1,dz=0] run function luigis_mansion:entities/luigi/damage
 data remove storage luigis_mansion:data damage
+execute if data entity @s data.owner run function luigis_mansion:entities/ghost/owner_laugh with entity @s data
 tag @s add dead
