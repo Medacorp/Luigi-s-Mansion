@@ -39,6 +39,10 @@ v?:
 ** Billiards Room
 ** Sitting Room
 ** Guest Room
+* Fixed ceiling ghosts' none attack didn't cancel after a certain distance; I didn't know about this behavior until now
+** Rather than using their broken "wait" animation like in the original, I opted for the finished-but-unused "idle" one
+* Fixed bowling ghosts' idling used the wrong animation; the wait animation has been removed
+* Fixed bowling ghosts and ceiling ghosts' didn't move at all when idle; again, didn't know about this behavior until now, they creep up or away every so slowly
 * Fixed some spawned entities were spawned belonging to the exterior, not the room they were in, causing no interactions
 * Fixed Nana's longer wool paths were a little broken
 * Removed underground lab's "Sorry to bother you" and "The Ghost Portrificationizer Room" options

@@ -80,12 +80,18 @@ data remove storage luigis_mansion:data update_data.ghosts.luigis_mansion.garbag
 data modify storage luigis_mansion:data update_data.ghosts.luigis_mansion.ceiling_surprise.loot set value {drop_at_0:{contents:[{name:{namespace:"luigis_mansion",id:"item/small_heart"}}]},attack:{contents:[{name:{namespace:"luigis_mansion",id:"bomb"},variables:{damage:{attack:10}}}]}}
 data modify storage luigis_mansion:data update_data.ghosts.luigis_mansion.ceiling_surprise.loot.attack.contents[0].variables.damage.attack set from storage luigis_mansion:data update_data.ghosts.luigis_mansion.ceiling_surprise.damage.attack
 data remove storage luigis_mansion:data update_data.ghosts.luigis_mansion.ceiling_surprise.damage.attack
+data modify storage luigis_mansion:data update_data.ghosts.luigis_mansion.ceiling_surprise.speed set value 1
+data modify storage luigis_mansion:data update_data.ghosts.luigis_mansion.ceiling_surprise.flee_speed set value 20
 data modify storage luigis_mansion:data update_data.ghosts.luigis_mansion.purple_bomber.loot set value {attack:{contents:[{name:{namespace:"luigis_mansion",id:"bomb"},variables:{damage:{attack:10}}}]}}
 data modify storage luigis_mansion:data update_data.ghosts.luigis_mansion.purple_bomber.loot.attack.contents[0].variables.damage.attack set from storage luigis_mansion:data update_data.ghosts.luigis_mansion.purple_bomber.damage.attack
 data remove storage luigis_mansion:data update_data.ghosts.luigis_mansion.purple_bomber.damage.attack
+data modify storage luigis_mansion:data update_data.ghosts.luigis_mansion.purple_bomber.speed set value 1
+data modify storage luigis_mansion:data update_data.ghosts.luigis_mansion.purple_bomber.flee_speed set value 20
 data modify storage luigis_mansion:data update_data.ghosts.luigis_mansion.bowling_ghost.loot set value {attack:{contents:[{name:{namespace:"luigis_mansion",id:"ball/bowling"},variables:{damage:{attack:10}}}]}}
 data modify storage luigis_mansion:data update_data.ghosts.luigis_mansion.bowling_ghost.loot.attack.contents[0].variables.damage.attack set from storage luigis_mansion:data update_data.ghosts.luigis_mansion.bowling_ghost.damage.attack
 data remove storage luigis_mansion:data update_data.ghosts.luigis_mansion.bowling_ghost.damage.attack
+data modify storage luigis_mansion:data update_data.ghosts.luigis_mansion.bowling_ghost.speed set value 1
+data modify storage luigis_mansion:data update_data.ghosts.luigis_mansion.bowling_ghost.flee_speed set value 20
 data modify storage luigis_mansion:data update_data.ghosts.luigis_mansion.ghost_guy.loot set value {mask:{contents:[{name:{namespace:"luigis_mansion",id:"vacuumable_object/mask/ghost_guy"},variables:{tags:["vacuumable"]}}]}}
 data modify storage luigis_mansion:data update_data.ghosts.luigis_mansion.dancing_ghost_guy.loot set value {mask:{contents:[{name:{namespace:"luigis_mansion",id:"vacuumable_object/mask/dancing_ghost_guy"},variables:{tags:["vacuumable"]}}]}}
 data modify storage luigis_mansion:data update_data.ghosts.luigis_mansion.mr_bones.loot set value {attack:{contents:[{name:{namespace:"luigis_mansion",id:"bone"},variables:{damage:{attack:5}}}]}}

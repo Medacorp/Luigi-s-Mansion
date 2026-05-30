@@ -3,7 +3,9 @@ data modify storage luigis_mansion:data update_data merge value {data_version:7,
 data modify storage luigis_mansion:data update_data.portrait_ghosts.luigis_mansion.neville.loot set value {drop_at_0:{contents:[{name:{namespace:"e3_demo",id:"item/ghost_coin"},count:10}]}}
 data modify storage luigis_mansion:data update_data.portrait_ghosts.luigis_mansion.lydia.loot set value {drop_at_0:{contents:[{name:{namespace:"e3_demo",id:"item/ghost_coin"},count:10}]}}
 data modify storage luigis_mansion:data update_data.portrait_ghosts.luigis_mansion.spooky.loot set value {drop_at_0:{contents:[{name:{namespace:"e3_demo",id:"item/ghost_coin"},count:10}]}}
+data modify storage luigis_mansion:data update_data.portrait_ghosts.luigis_mansion.spooky.flee_speed set value 20
 data modify storage luigis_mansion:data update_data.portrait_ghosts.luigis_mansion.miss_petunia.loot set value {drop_at_0:{contents:[{name:{namespace:"e3_demo",id:"item/ghost_coin"},count:10}]}}
+data modify storage luigis_mansion:data update_data.portrait_ghosts.luigis_mansion.miss_petunia.flee_speed set value 20
 data modify storage luigis_mansion:data update_data.new_portrait_ghosts set value []
 data modify storage luigis_mansion:data update_data.new_portrait_ghosts append from storage luigis_mansion:data update_data.portrait_ghosts.luigis_mansion.neville
 data modify storage luigis_mansion:data update_data.new_portrait_ghosts[-1].name set value {namespace:"luigis_mansion",id:"neville"}

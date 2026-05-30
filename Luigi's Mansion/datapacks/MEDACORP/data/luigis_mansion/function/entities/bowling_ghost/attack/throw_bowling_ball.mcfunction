@@ -15,6 +15,6 @@ execute if entity @s[scores={ActionTime=4}] run teleport @e[tag=this_bowling_bal
 execute if entity @s[scores={ActionTime=5}] run tag @e[tag=this_bowling_ball,limit=1] remove no_ai
 $execute if entity @s[scores={ActionTime=5}] run playsound $(namespace):entity.$(id).attack hostile @a[tag=same_room] ~ ~ ~ 1
 
-function luigis_mansion:entities/ghost/owner_effects
 execute unless entity @s[tag=!owner_laugh,tag=!owner_complain] run tag @s[scores={ActionTime=10..}] remove attack
+function luigis_mansion:entities/ghost/owner_effects
 scoreboard players set @s[tag=!attack] ActionTime 0

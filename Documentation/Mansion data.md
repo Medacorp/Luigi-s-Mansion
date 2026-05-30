@@ -107,72 +107,74 @@ Mansion data is a massive collection of info storing everything the map needs to
         }
     ],
     ghosts:{ //Normal ghost variables.
-        <HP-having ghost>:{ //A ghost with HP (for example a gold ghost).
-            pull: { //Pulling information.
-                strength:X, //Percentage of chance the ghost will pull the player, even if it is pulled.
-                angle:X //Angle in degrees where the player can move to damage the ghost, where 0 is directly opposite of the ghost. Widend and decreased based on difficulty; the value provided is for normal difficulty. Capped at 180. 
-            },
-            health:X, //Health at spawn.
-            loot:{ //Loot this ghost possesses
-                drop_at_0:{ //Spawns the provided loot contents the moment health drops to 0. Mansions can modify this loot with their "loot_chances_ghost" function.
-                    //See loot documentation for other variables.
+        <namespace>: { //Namespace of the ghosts
+            <HP-having ghost>:{ //A ghost with HP (for example a gold ghost).
+                pull: { //Pulling information.
+                    strength:X, //Percentage of chance the ghost will pull the player, even if it is pulled.
+                    angle:X //Angle in degrees where the player can move to damage the ghost, where 0 is directly opposite of the ghost. Widend and decreased based on difficulty; the value provided is for normal difficulty. Capped at 180. 
                 },
-                captured:{ //Spawns the provided loot contents the moment the ghost is captured.
-                    //See loot documentation for other variables.
+                health:X, //Health at spawn.
+                loot:{ //Loot this ghost possesses
+                    drop_at_0:{ //Spawns the provided loot contents the moment health drops to 0. Mansions can modify this loot with their "loot_chances_ghost" function.
+                        //See loot documentation for other variables.
+                    },
+                    captured:{ //Spawns the provided loot contents the moment the ghost is captured.
+                        //See loot documentation for other variables.
+                    },
+                    attack:{ //Spawns the provided loot contents during the ghost's attack; only some attacks trigger this.
+                        //See loot documentation for other variables.
+                    },
+                    <name>: { //Not used by default, but other loot may be provided
+                        //See loot documentation for other variables.
+                    }
                 },
-                attack:{ //Spawns the provided loot contents during the ghost's attack; only some attacks trigger this.
-                    //See loot documentation for other variables.
-                },
-                <name>: { //Not used by default, but other loot may be provided
-                    //See loot documentation for other variables.
+                speed:X, //The movement speed of the ghost. Default = 0.
+                flee_speed:X, //The movement speed of the ghost while fleeing from the Poltergust. Default = 0.
+                flee_task:"circle", //The flee task of the ghost while fleeing from the Poltergust. Allowed values are "random", "alternate", "circle", "random_in_range", "loops" and "straight_line". Default = "straight_line".
+                vanish_time:X, //How many ticks the ghost can stay in the world, haunting, but not attacking, laughing, complaining, being collided with, etc. before it vanishes. -1 means never. Default = -1.
+                damage:{ //Damage values the ghost uses in its functions.
+                    <type>:X //The amount of damage dealt. Type is usually collision and attack (also used by created projectiles), but can be other values. Default = 0.
                 }
             },
-            speed:X, //The movement speed of the ghost. Default = 0.
-            flee_speed:X, //The movement speed of the ghost while fleeing from the Poltergust. Default = 0.
-            flee_task:"circle", //The flee task of the ghost while fleeing from the Poltergust. Allowed values are "random", "alternate", "circle", "random_in_range", "loops" and "straight_line". Default = "straight_line".
-            vanish_time:X, //How many ticks the ghost can stay in the world, haunting, but not attacking, laughing, complaining, being collided with, etc. before it vanishes. -1 means never. Default = -1.
-            damage:{ //Damage values the ghost uses in its functions.
-                <type>:X //The amount of damage dealt. Type is usually collision and attack (also used by created projectiles), but can be other values. Default = 0.
+            <no-HP-having ghost>:{ //A ghost without HP (for example a bat, and Bowser).
+                loot:{ //Loot this ghost possesses
+                    captured:{ //Spawns the provided loot contents the moment the ghost is captured.
+                        //See loot documentation for other variables.
+                    },
+                    <name>: { //Not used by default, but other loot may be provided
+                        //See loot documentation for other variables.
+                    }
+                },
+                speed:X, //The movement speed of the ghost.
+                damage:{ //Damage values the ghost uses in its functions.
+                    <type>:X //The amount of damage dealt. Type is usually attack or collision, but can be other values. Default = 0.
+                }
             }
-        },
-        <no-HP-having ghost>:{ //A ghost without HP (for example a bat, and Bowser).
-            loot:{ //Loot this ghost possesses
-                captured:{ //Spawns the provided loot contents the moment the ghost is captured.
-                    //See loot documentation for other variables.
+            black_bogmire:{ //Values used by black bogmires.
+                small_loot:{ //Loot small ones possess
+                    captured:{ //Spawns the provided loot contents the moment the ghost is captured.
+                        //See loot documentation for other variables.
+                    },
+                    <name>: { //Not used by default, but other loot may be provided
+                        //See loot documentation for other variables.
+                    }
                 },
-                <name>: { //Not used by default, but other loot may be provided
-                    //See loot documentation for other variables.
-                }
-            },
-            speed:X, //The movement speed of the ghost.
-            damage:{ //Damage values the ghost uses in its functions.
-                <type>:X //The amount of damage dealt. Type is usually attack or collision, but can be other values. Default = 0.
-            }
-        }
-        black_bogmire:{ //Values used by black bogmires.
-            small_loot:{ //Loot small ones possess
-                captured:{ //Spawns the provided loot contents the moment the ghost is captured.
-                    //See loot documentation for other variables.
+                big_loot:{ //Loot big ones possess
+                    captured:{ //Spawns the provided loot contents the moment the ghost is captured.
+                        //See loot documentation for other variables.
+                    },
+                    <name>: { //Not used by default, but other loot may be provided
+                        //See loot documentation for other variables.
+                    }
                 },
-                <name>: { //Not used by default, but other loot may be provided
-                    //See loot documentation for other variables.
-                }
-            },
-            big_loot:{ //Loot big ones possess
-                captured:{ //Spawns the provided loot contents the moment the ghost is captured.
-                    //See loot documentation for other variables.
+                small_speed:X, //The movement speed of the small ones.
+                big_speed:X, //The movement speed of the big ones.
+                small_damage:{ //Damage values the small ones use in its functions.
+                    collision:X //The amount of damage dealt. Default = 0.
                 },
-                <name>: { //Not used by default, but other loot may be provided
-                    //See loot documentation for other variables.
+                big_damage:{ //Damage values the big ones use in its functions.
+                    collision:X //The amount of damage dealt. Default = 0.
                 }
-            },
-            small_speed:X, //The movement speed of the small ones.
-            big_speed:X, //The movement speed of the big ones.
-            small_damage:{ //Damage values the small ones use in its functions.
-                collision:X //The amount of damage dealt. Default = 0.
-            },
-            big_damage:{ //Damage values the big ones use in its functions.
-                collision:X //The amount of damage dealt. Default = 0.
             }
         }
     }

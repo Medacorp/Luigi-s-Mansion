@@ -1,0 +1,2 @@
+execute if entity @s[scores={AttackType=0}] run function luigis_mansion:entities/ceiling_surprise/attack/none with entity @s data.entity
+execute if entity @s[scores={AttackType=1}] run function luigis_mansion:entities/ceiling_surprise/attack/spawn_entity with entity @s data.entity
