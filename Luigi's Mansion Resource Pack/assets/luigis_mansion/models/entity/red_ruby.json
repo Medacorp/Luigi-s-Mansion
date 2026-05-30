@@ -1,6 +1,1 @@
-{
-	"parent": "luigis_mansion:entity/gem",
-	"textures": {
-		"0": "luigis_mansion:entity/red_ruby"
-	}
-}
+{"parent":"luigis_mansion:entity/gem","textures":{"0":"luigis_mansion:entity/red_ruby"}}

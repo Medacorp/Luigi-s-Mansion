@@ -15,4 +15,4 @@ function #luigis_mansion:room/normal/secret_altar/interactions/room
 
 execute if entity @e[tag=luigi,tag=!door_animation,scores={Room=72},limit=1] run function luigis_mansion:room/normal/secret_altar/ghosts
 
-execute as @e[tag=player,x=648.5,y=93,z=-9.5,distance=..0.7,tag=!spectator,limit=1] unless data storage luigis_mansion:data current_state.current_data.technical_data{saw_mario_again:1b} unless data storage luigis_mansion:data dialogs[{room:72}] run function luigis_mansion:room/normal/secret_altar/look_at_marios_painting
+execute as @e[tag=player,x=648.5,y=93,z=-9.5,distance=..0.7,tag=!spectator,limit=1] unless data storage luigis_mansion:data current_state.current_data.technical_data{saw_mario_again:1b} unless data storage luigis_mansion:data dialogs[{room:72}] run function luigis_mansion:room/normal/secret_altar/look_at_marios_portrait

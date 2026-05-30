@@ -1,0 +1,2 @@
+data modify storage luigis_mansion:data furniture set value {room:27,can_hide_boo:1b,searchable:["interact","vacuum"],shake_animation:["interact","vacuum"],sound:{namespace:"luigis_mansion",id:"ceramic"},scan_result:{namespace:"luigis_mansion",id:"scan/scanner/17"}}
+execute positioned 700 11 85.0 rotated -105 0 run function luigis_mansion:spawn_furniture/dish_washer/right

@@ -1,6 +1,1 @@
-{
-	"parent": "luigis_mansion:furniture/gallery_portrait/gold_boss",
-	"textures": {
-		"image": "luigis_mansion:furniture/gallery_portrait/gold/boolossus"
-	}
-}
+{"parent":"luigis_mansion:furniture/gallery_portrait/gold_boss","textures":{"image":"luigis_mansion:furniture/gallery_portrait/gold/boolossus"}}

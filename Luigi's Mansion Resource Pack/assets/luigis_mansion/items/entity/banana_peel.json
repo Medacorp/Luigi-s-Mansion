@@ -1,14 +1,1 @@
-{
-    "model": {
-        "type": "minecraft:condition",
-        "property": "minecraft:custom_model_data",
-        "index": 0,
-        "on_false": {
-            "type": "minecraft:model",
-            "model": "luigis_mansion:entity/banana_peel"
-        },
-        "on_true": {
-            "type": "minecraft:empty"
-        }
-    }
-}
+{"model":{"type":"minecraft:condition","property":"minecraft:custom_model_data","index":0,"on_false":{"type":"minecraft:model","model":"luigis_mansion:entity/banana_peel"},"on_true":{"type":"minecraft:empty"}}}

@@ -1,6 +1,1 @@
-{
-	"parent": "luigis_mansion:entity/ghost/left_arm",
-	"textures": {
-		"0": "3ds_remake:furniture/trophy/gold/ghost"
-	}
-}
+{"parent":"luigis_mansion:entity/ghost/left_arm","textures":{"0":"3ds_remake:furniture/trophy/gold/ghost"}}

@@ -6,10 +6,11 @@ scoreboard players set #temp Room 67
 #/todelete
 
 execute as @a[scores={Room=67}] run function 3ds_remake:room/hidden/pipe_room/tick_per_player
+
+#todelete - old furniture
 execute if data storage luigis_mansion:data current_state.current_data.technical_data{closed_pipe:1b} run setblock 689 4 10 minecraft:lever[face=wall,facing=east,powered=true]
 execute unless data storage luigis_mansion:data current_state.current_data.technical_data{closed_pipe:1b} if block 689 4 10 minecraft:lever[face=wall,facing=east,powered=true] unless data storage luigis_mansion:data dialogs[{room:67}] run function 3ds_remake:room/hidden/pipe_room/close_pipe
 
-#todelete - old furniture
 function #3ds_remake:room/hidden/pipe_room/interactions/room
 #/todelete
 

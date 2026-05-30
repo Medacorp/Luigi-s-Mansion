@@ -1,6 +1,1 @@
-{
-	"parent": "luigis_mansion:entity/boolossus/1/right_arm",
-	"textures": {
-		"0": "luigis_mansion:entity/boolossus/frozen"
-	}
-}
+{"parent":"luigis_mansion:entity/boolossus/1/right_arm","textures":{"0":"luigis_mansion:entity/boolossus/frozen"}}

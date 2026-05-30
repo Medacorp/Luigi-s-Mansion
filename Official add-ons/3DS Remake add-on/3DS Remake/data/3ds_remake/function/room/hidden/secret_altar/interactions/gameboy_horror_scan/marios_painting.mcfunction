@@ -1,2 +1,0 @@
-execute if entity @s[x=634.0,y=94,z=-18.0,dx=1,dy=1,dz=0] if block 635 94 -18 minecraft:rail run function luigis_mansion:selection_menu/game_boy_horror/scan/dialog {namespace:"luigis_mansion",id:"scan/scanner/51"}
-execute if entity @s[x=634.0,y=94,z=-18.0,dx=1,dy=1,dz=0] if entity @e[x=636.5,y=94,z=-17.5,distance=..0.7,type=minecraft:item_frame,nbt={Item:{id:"minecraft:painting"}}] run function luigis_mansion:selection_menu/game_boy_horror/scan/dialog {namespace:"luigis_mansion",id:"scan/scanner/51"}

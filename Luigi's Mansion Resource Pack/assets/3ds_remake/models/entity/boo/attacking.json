@@ -1,6 +1,1 @@
-{
-	"parent": "luigis_mansion:entity/boo/attacking",
-	"textures": {
-		"0": "3ds_remake:entity/boo"
-	}
-}
+{"parent":"luigis_mansion:entity/boo/attacking","textures":{"0":"3ds_remake:entity/boo"}}

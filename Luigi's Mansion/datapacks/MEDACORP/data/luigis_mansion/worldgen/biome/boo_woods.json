@@ -1,18 +1,16 @@
 {
+	"attributes": {
+        "minecraft:visual/water_fog_color": 329011
+    },
 	"has_precipitation": false,
 	"temperature": 0.7,
 	"downfall": 0,
 	"creature_spawn_probability": 0,
 	"effects": {
-		"fog_color": 15066597,
 		"foliage_color": 5877296,
 		"grass_color": 5271602,
-		"sky_color": 3355443,
 		"water_color": 4159204,
-		"water_fog_color": 329011,
-		"grass_color_modifier": "dark_forest",
-        "music": [],
-        "music_volume": 0.0
+		"grass_color_modifier": "dark_forest"
 	},
 	"carvers": [],
 	"features": [

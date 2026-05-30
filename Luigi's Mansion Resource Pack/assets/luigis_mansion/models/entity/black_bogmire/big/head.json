@@ -1,12 +1,1 @@
-{
-	"parent": "luigis_mansion:entity/bogmire/head",
-	"textures": {
-		"0": "luigis_mansion:entity/black_bogmire"
-	},
-	"display": {
-		"head": {
-			"translation": [0, -7.29, 0],
-			"scale": [1.8, 1.8, 1.8]
-		}
-	}
-}
+{"parent":"luigis_mansion:entity/bogmire/head","textures":{"0":"luigis_mansion:entity/black_bogmire"},"display":{"head":{"translation":[0,-7.29,0],"scale":[1.8,1.8,1.8]}}}

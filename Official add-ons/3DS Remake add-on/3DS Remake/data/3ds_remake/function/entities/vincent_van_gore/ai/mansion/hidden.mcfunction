@@ -6,7 +6,7 @@ tag @s[tag=!portrait_ghost_hide] add visible
 execute if entity @s[scores={Dialog=1}] if data storage luigis_mansion:data current_state.current_data.technical_data{vincent_van_gore_spoke:1b} run scoreboard players set @s Dialog 3
 execute if entity @s[scores={Dialog=2}] run data modify storage luigis_mansion:data dialogs append value {name:{namespace:"luigis_mansion",id:"ghost_gauntlet"},progress:0}
 execute if entity @s[scores={Dialog=2}] store result storage luigis_mansion:data dialogs[-1].room int 1 run scoreboard players get @s Room
-execute if entity @s[scores={Dialog=3}] run function 3ds_remake:room/hidden/the_artists_studio/wave_2 
+execute if entity @s[scores={Dialog=3}] run function 3ds_remake:room/hidden/the_artists_studio/wave_2
 execute if entity @s[scores={Dialog=3..4}] as @a[tag=same_room] run function luigis_mansion:other/music/set/minigame
 execute if entity @s[scores={Dialog=4}] run teleport @s ~ ~ ~ -180 ~
 execute if entity @s[scores={Dialog=5}] run data modify storage luigis_mansion:data dialogs append value {name:{namespace:"luigis_mansion",id:"vincent_van_gore"},progress:0}

@@ -1,15 +1,299 @@
 v?:
+* Added Skipable Dialogs add-on, it grants the skip option on all dialogs; that's it
+* Added proper training door, one without the sign is now named green_planks
+* Added the following furniture model:
+** Plaques
+** RIP signs
+** Table mounted knitting bowls
+* Added 3DS Remake task clear sound
+* Added the large knockback variation that's slightly shorter, called fall
+* Added a fall knockback variant that's just different sounds called ghost escape
+* Added bowser's damage and loot to mansion data's ghost list
+* Changed large knockback to more accurately reflect how it works in the original
+* Changed Underground Lab to always trigger the dialog if no dialog is active
+* Changed Ghost Portrificationizer Room's E. Gadd to not be able to be talked to, forcing portrificationizing
+* Changed Boo pathfinding to be less cardinal direction-based
+* Changed Mr. Luggs to behave more accurately to the original game
+* Changed Graveyard Mr. Bones' spawning logic to match original game
+* Changed Training Room door in 3DS Remake to reflect changes made to it
+* Changed Chauncey in the Nursery in 3DS Remake to not count progress back down when stopping the rocking horse, matching the remake
+* Changed score display to not list unobtained money types at all in 3DS Remake, matching the remake
+* Changed how the underground lab and gallery dialogs are handled, making it easy to add more options
+* Changed how portrait ghosts are stored to be a list; portrificationizing order is the list order, meaning it also finds them all automatically
+* Changed how loot is handled and stored; loot now supports all entities
+** Moved speedy spirit and gold mice money to be stored in mansion data rather than given via a function
+** Furniture money now selects from a predefined list, like speedy spirits and gold mice
+** Garbage can ghosts, bowling ghosts, ceiling ghosts, Mr. bones, Mr. Luggs, Miss Petunia, Nana, Sir Weston, and Bowser now spawn entities based on loot for their attacks
+** (Dancing) ghost guys now spawn their masks based on loot
+** Black bogmires now spawn their ball based on loot
+** If the previously spawned entity still exists, ceiling ghosts now spawn nothing and complain instead
+* Changed how owners' attacks hits are handled; owners can now ignore them, rather than always laughing or complaining
+** Alongside this, more entities now tell their owner if they hit or missed
+* Fixed entering the world in singleplayer displayed "reloaded" message
+* Fixed interact didn't work on portaits in:
+** Study
+** Nursery
+** Hallway 5 (F1)
+** Hallway 10 (F2)
+** Nana's Room
+** Billiards Room
+** Sitting Room
+** Guest Room
+* Fixed ceiling ghosts' none attack didn't cancel after a certain distance; I didn't know about this behavior until now
+** Rather than using their broken "wait" animation like in the original, I opted for the finished-but-unused "idle" one
+* Fixed bowling ghosts' idling used the wrong animation; the wait animation has been removed
+* Fixed bowling ghosts and ceiling ghosts' didn't move at all when idle; again, didn't know about this behavior until now, they creep up or away every so slowly
+* Fixed some spawned entities were spawned belonging to the exterior, not the room they were in, causing no interactions
+* Fixed Nana's longer wool paths were a little broken
+* Removed underground lab's "Sorry to bother you" and "The Ghost Portrificationizer Room" options
+* Removed ghost potrificationizer room repeat dialog
+* Removed "Full to Bursting You Say?" advancement, as it's now impossible to achieve
+
+v3.7:
+* Added wind warp scan result option for furniture
+* Added furniture particle option "wind_warp_sparkles"; requires wind warp scan result
+* Added the following furniture model:
+** Blue padded stool (mounted saxophone)s
+** Buttons (unique furniture type)
+** Cellos
+** Dish washers (potential water elemental source)
+** Dog houses
+** Drums
+** Gravity flip platforms (unique furniture type)
+** Harps
+** Stoves (potential fire elemental source)
+** Treadmills (unique furniture type)
+** Xylophones
+* Changed Boneyard Mr. Bones' spawning logic to match original game
+* Changed some loot IDs to final (planned) furniture names
+* Changed 3DS dialog "dog_house" to "wind_warp_enabled"; it now also auto-triggers upon a wind warp's sparkles starting
+* Fixed searching furniture while in an idle animation doesn't set searching animation
+* Fixed manually searching furniture not having a hitbox at eye level didn't work
+* Fixed shake sounds of modeled furniture didn't pitch shift
+* Fixed Boo release cutscene Boos don't properly warp away
+* Fixed kitchen refrigerator's elemental ghost spawns before it is opened
+* Fixed lightning causes fire, and it spreads across the trees
+
+v3.6:
+* Added the following furniture model:
+** Bird houses
+** Drum lamps
+** Shampoo shelves
+** Shelved detergent
+** Tennis rackets
+** Twin desks
+** Washing machines
+** Wine bottles (unused)
+** Wine glasses
+* Added the following sounds:
+** Ceiling ghost hurting and attacking
+** Chauncey bouncing
+** Cold storage ambience
+** Furniture (that has a model) opening
+** Fireplace ambient and extinguish
+** Guest room flipping
+** Rocking horse rocking
+* Added 3DS exclusive stone bowl wall candelabras in the last hallway
+* Fixed download didn't include overworld files
+* Fixed manual searching could search multiple furniture at once; now searches the smallest of the hit furniture only
+* Fixed mirrors reflecting position wasn't fully accurate
+* Removed scan results for exterior; couldn't scan there anymore anyways
+
+v3.5:
+* Updated to 26.1.2
+* Added the following furniture model:
+** Bathtubs
+** Ceiling cabinets
+** Fireplaces
+** Fountains
+** Fans (redone, now have the lamps too)
+** Food (redone, now have the plates too)
+** (Frozen) unicorn statues
+** (E3 Demo) grandfather clocks
+** Hanging toilet paper
+** High-level cisterns
+** Inside lantern (chandelier)s
+** Ovoid lamps
+** Refrigerators
+** Shelved food (and vases)
+** Shelved toilet paper
+** (3DS Remake) Shelved washing supplies
+** Showers
+** Sink base cabinets
+** Toilet paper (piles)
+* Added 3DS exclusive wooden arch door frame
+* Changed Luigi and Mario models
+* Changed poltergust to have an additional 0.5 blocks reach if not latched to a ghost
+* Changed poltergust to no longer be able to vacuum through walls if not latched to a ghost
+* Changed Chauncey's positioning so he's easier to hit with the ball
+* Changed Poltergust so it disregards too distant entities and entities that're not aimed towards
+* Changed legged sinks to be potential water elemental sources
+* Changed how the 3DS remake replaces some portraits
+* Fixed loading save data doesn't warp dead players to the underground lab
+* Fixed loading save data doesn't send revive messages if no mansion ended up being loaded (but did revive everyone)
+* Fixed swinging doors and maces didn't deal damage
+* Fixed Dresser Mounted Golden Lamp doesn't change to lit model when the room is lit
+* Fixed table mounted lamps in the Parlor and master bedroom didn't have effects during blackout triggering
+* Fixed wall warp between master bedroom and ceramics studio was off by 1 block
+* Fixed "Blue Twirler Easel" was called "Gold Ghost Easel"
+* Fixed "Elder Portraits" was called "Elders Portraits"
+* Fixed 3DS Hidden's F1 hallway gold mouse had wrong loot assigned
+* Fixed minor UV mapping problems
+* Fixed a typo in the 3DS Remake's score results strings
+* Fixed translations weren't updated
+* Removed deprecated elemental source entities
+
+v3.4:
+* Updated to 1.21.11
 * Added GBH map models (not in use yet)
-* Added cloth and poster furniture types
-** Poster furniture changed to actual furniture; they also visually get attached to the closest vacuumer's poltergust
-** Cloth type implemented, but not yet used, aside from a test entity
-* Added furniture models for:
+* Added cloth, ghost art and poster furniture types
+** Cloth type implemented, cloths get attached to the vacuumer's poltergust, and are slowly dragged off their object; they prevent revealing Boos when searching the furniture below
+** Curtain furniture can be pulled in one direction to open, or the other to close
+** Ghost art is the same as generic, but only opens when in a lit room, or when a ghost is hiding in it; cannot be searched (aside from revealing hidden Boos) before it is open
+** Poster furniture changed to actual furniture; they also visually get attached to the vacuumer's poltergust
+* Added furniture models for: 
+  (Do note that the original game has some furniture baked into the room geometry, especially the fourth wall.
+  The uninteractability of some portraits is as such intended)
 ** Angel statues
+** Artist shelves
 ** Barrels
+** Campfires
+** Camping Burners
+** Cloths
+*** Cube tablesheet
+*** Diamond bedsheet
+*** Drying tablesheet
+*** Flower tablesheet
+*** Lined bedsheet
+*** Outline tablesheet
+*** T-shirt
+*** Toilet paper
+*** Too long tableseet
+*** Torn tablesheet
+*** Towel
+*** Wash cloth
+** Concrete bricks
+** Curtains
+** Dresser mounted golden lamps
+** Easels
+*** Blue Twirler
+*** Garbage Can Ghost
+*** Ghost Guy
+*** Gold Ghost
+*** Purple Bomber
+*** Purple Puncher
+*** Red Grabbing Ghost
+*** Room clear chest
 ** (Frozen) oil drums
-* Optimized some furniture types to skip ticking if left along
+** Master dressers
+** Metal cabinet mounted angel statues
+** Metal cabinet mounted grails
+** Mirrors
+*** Bejeweled
+*** Gold
+*** Standing
+** Portraits
+*** (3DS Remake) Biff Atlas
+*** Blue dress
+*** Bouquet
+*** Cat
+*** (Standing) Chauncey
+*** Elders
+*** Fern
+*** Fruit basket
+*** Henry or Orville
+*** Horses
+*** Lonely tree
+*** Lydia
+*** Mansion
+*** Mario's
+*** Mr. Whirlinda
+*** Nana
+*** Neville
+*** Nobleman
+*** Noblewoman
+*** Old man
+*** Pink flowers
+*** (E3 Demo) poker ghost (unused)
+*** Puppies
+*** Rich child
+*** Rich man
+*** Rich woman
+*** Roses
+*** Saxophone
+*** Slim Bankshot
+*** Spooky
+*** Sue Pea
+*** (E3 Demo) top hat ghost (unused)
+*** Trumpet
+*** Vincent Van Gore
+*** Young man
+** Posters
+*** Boo
+*** Cloth
+*** Danger
+*** (3DS Remake) Landscape
+*** Monsters
+*** Projection Screen
+*** Torn Cloth
+*** Trumpet
+*** Western
+** Table mounted bust with portraits
+** Void
+** Water taps
+** Wooden stool mounted tools
+* Optimized some furniture types to skip ticking if left alone
+* Added "What just happed?" (tick door) to the jukebox
+* Added some rec room changes in the 3DS remake
+* Added trick door dialog
+* Added score results dialog (split off from portrificationizing) which visually shows the portraits optained, and money collected
+** Portrait ghosts' areas, and what money is counted are defined by the mansion, it'll automatically scroll up the list of money if it has too many entries to display
+** 3DS Remake add-on now also stores the area best scores along with the high scores
+* Added mansion progress to the dialog choices when the 3DS Remake add-on is installed
+* Changed ghosts that have a movement speed of 0 to change target task to "do nothing"
+* Changed paintings dialog (now named portraits) to shake the new portrait furniture
+* Changed several furniture models to composite models, optimizing them, and smoothed the opening animations out
+* Changed ghost gauntlet spawn dialog (now named ghost art) to spawn all ghosts with a tag, and require an entity UUID to focus the camera on
+* Changed the artist's studio to spawn all previously spawned waves at once, upon resetting the room; this is unused base game behavior
 * Changed leaving and re-entering the world while in an exterior cutscene will now skip it
+* Changed boos to match the original game more closely:
+** A discovered Boo will now prevent hidden Boos from appearing (and traps from triggering)
+** Multiple hidden Boos getting discovered at once will now stagger their triggers (Best seen in the storage room in the original game)
+** They can no longer hide in a room with all hiding spots occupied; they'll go to a neighbouring room instead just like hallways
+** They can no longer be captured in dark rooms (Health can be drained until 0, but then no longer get affected)
+** They now move to a warpable wall away from the nearest player in dark rooms
+** They now move faster and don't attack in dark rooms
+** They no longer travel between hallway viewpoints
+** Can no longer enter hallway 6 (bathroom 1/courtyard door section), bathroom 1 and washroom 1
+*** Boos in the bathroom or washroom in old saves will move to the conservatory
+*** Boos in hallway 6 in old saves will move to hallway 5
+** Boolossus Boos now only have 3-5 agressive ones upon getting split
+** Agressive Boolossus Boos now only attack from behind
+** Non-agressive Boolossus Boos now sometimes taunt
+** Boolossus Boos now rubberband like in the original game
+* Fixed warping to lab from dialogs breaks under certain conditions
+* Fixed Boos could hide in all old furniture; now the options match the original game
+* Fixed some converted furniture had the wrong can_hide_boo value
+* Fixed some invisible block mistakes
+* Fixed Z-fighting on E. Gadd
+* Fixed Garbage Can Ghosts chins were barely visible
+* Fixed rocking chairs didn't start rocking if a ghost entered it until interacted with
+* Fixed rocking horse furniture takes a long time to stop rocking
+* Fixed rocking horse furniture makes shaking sounds while rocking
+* Fixed Chauncey's waking animations didn't bop up/down properly
+* Fixed Chauncey's waking up animation start timings were swapped
+* Fixed Ghost Guy spears are facing the wrong way
+* Fixed ghosts appearing from furniture do not go to the furniture spawn position upon disappear, but rather the furniture position directly
+* Fixed ceiling ghosts appearing from furniture spawn too low
+* Fixed ice spike breaking animation doesn't work
+* Fixed a few gameboy horror scan mistakes
+* Fixed master bedroom nightstand lamp had no interactions
 * Fixed cellar dust not getting removed upon room reset
+* Fixed furniture rotation points are slightly off
+* Fixed missing teddy bears in E3 Demo child's room upon entering when lit
+* Fixed missing mice in E3 Demo kitchen
+* Fixed bad add-on installs now actually get reported to players
+* Removed item frame reflections (they broke recently, but item frames are no longer used in rooms with mirrors)
 
 v3.3.2:
 * Updated pack formats to also not complain for 1.21.7

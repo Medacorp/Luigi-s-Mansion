@@ -1,0 +1,2 @@
+data modify storage luigis_mansion:data furniture set value {room:23,no_dust:1b,hitbox:{rotated_box:{left:26,up:5,forward:22}},searchable:["vacuum"],scan_result:{namespace:"luigis_mansion",id:"scan/scanner/30"}}
+execute positioned 745 12.05 -55.0 rotated 0 0 run function luigis_mansion:spawn_furniture/cloth/t_shirt

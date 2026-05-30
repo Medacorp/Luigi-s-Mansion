@@ -1,10 +1,1 @@
-{
-	"parent": "luigis_mansion:entity/portrificationizing_king_boo/state_0",
-	"display": {
-		"head": {
-			"rotation": [90, 0, 0],
-			"translation": [0, -6.25, 0],
-			"scale": [1, 1, 0.65]
-		}
-	}
-}
+{"parent":"luigis_mansion:entity/portrificationizing_king_boo/state_0","display":{"head":{"rotation":[90,0,0],"translation":[0,-6.25,0],"scale":[1,1,0.65]}}}

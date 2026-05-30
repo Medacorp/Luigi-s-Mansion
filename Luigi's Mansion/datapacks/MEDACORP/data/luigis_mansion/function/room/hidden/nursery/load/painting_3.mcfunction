@@ -1,2 +1,0 @@
-summon minecraft:item_frame 745 23 -40 {block_pos:[I;0,0,0],FIXED_block_pos:[I;745,23,-40],Tags:["static","no_ai","freeze_animation"],Facing:2b,Silent:1b,Invulnerable:1b,Item:{id:"minecraft:filled_map",count:1,components:{"minecraft:map_id":304}},CustomName:{type:"translatable",translate:"luigis_mansion:furniture.painting"},Invisible:1b,Fixed:1b}
-scoreboard players set @e[x=745.5,y=23.0,z=-39.5,distance=..2,type=minecraft:item_frame] Room 10

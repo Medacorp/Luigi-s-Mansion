@@ -1,0 +1,3 @@
+execute positioned ~-0.5 ~1.33875 ~-0.5 as @e[tag=luigi,dx=0,dy=0,dz=0,tag=!flipped_gravity] unless entity @s[nbt={data:{animation:{}}},tag=!idle] run function luigis_mansion:entities/furniture/type/gravity_flip_platform/flip
+execute positioned ~-0.5 ~0.33875 ~-0.5 as @e[tag=luigi,dx=0,dy=0,dz=0,tag=flipped_gravity,scores={Shrunk=1..}] unless entity @s[nbt={data:{animation:{}}},tag=!idle] run function luigis_mansion:entities/furniture/type/gravity_flip_platform/restore
+execute positioned ~-0.5 ~-0.66125 ~-0.5 as @e[tag=luigi,dx=0,dy=0,dz=0,tag=flipped_gravity,scores={Shrunk=0}] unless entity @s[nbt={data:{animation:{}}},tag=!idle] run function luigis_mansion:entities/furniture/type/gravity_flip_platform/restore

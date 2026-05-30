@@ -1,7 +1,1 @@
-{
-	"parent": "luigis_mansion:entity/ball",
-	"credit": "Made with Blockbench",
-	"textures": {
-		"north": "luigis_mansion:entity/ball/shadow"
-	}
-}
+{"parent":"luigis_mansion:entity/ball","textures":{"north":"luigis_mansion:entity/ball/shadow"}}

@@ -14,11 +14,11 @@ execute if entity @e[tag=toad,scores={Room=19},tag=talk_this_tick] if data stora
 
 #todelete - old furniture
 function #luigis_mansion:room/hidden/washroom_1/interactions/room
-#/todelete
 
 execute if block 663 14 -22 minecraft:oak_trapdoor[open=true] run setblock 659 14 -22 minecraft:oak_trapdoor[open=true,facing=west,half=top]
 execute if block 663 14 -22 minecraft:oak_trapdoor[open=false] run setblock 659 14 -22 minecraft:oak_trapdoor[open=false,facing=west,half=top]
 execute if block 663 14 -21 minecraft:oak_trapdoor[open=true] run setblock 659 14 -21 minecraft:oak_trapdoor[open=true,facing=west,half=top]
 execute if block 663 14 -21 minecraft:oak_trapdoor[open=false] run setblock 659 14 -21 minecraft:oak_trapdoor[open=false,facing=west,half=top]
+#/todelete
 
 execute if entity @e[tag=luigi,tag=!door_animation,scores={Room=19},limit=1] run function luigis_mansion:room/hidden/washroom_1/ghosts

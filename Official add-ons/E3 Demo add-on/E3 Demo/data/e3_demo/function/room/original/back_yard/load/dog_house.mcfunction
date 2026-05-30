@@ -1,0 +1,2 @@
+data modify storage luigis_mansion:data furniture set value {room:28,shake_animation:["interact"],no_visual_shake:1b,no_long_shake:1b,sound:{namespace:"luigis_mansion",id:"heavy_generic"},scan_result:{namespace:"luigis_mansion",id:"scan/scanner/96"}}
+execute positioned 674.0 102 54.0 rotated -155 0 run function luigis_mansion:spawn_furniture/dog_house/left

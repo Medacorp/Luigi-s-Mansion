@@ -10,10 +10,10 @@ teleport @e[tag=this_entity,limit=1] ~ ~ ~ ~ ~
 scoreboard players set @e[tag=this_entity,limit=1] Wave 0
 scoreboard players set @e[tag=this_entity,limit=1] Dialog 0
 scoreboard players set @e[tag=this_entity,limit=1] VanishTime -1
-execute as @e[tag=this_entity,limit=1] store result score @s Health run data get storage luigis_mansion:data current_state.current_data.portrait_ghosts.luigis_mansion.boolossus.health
-execute as @e[tag=this_entity,limit=1] store result score @s MaxHealth run data get storage luigis_mansion:data current_state.current_data.portrait_ghosts.luigis_mansion.boolossus.max_health
-execute as @e[tag=this_entity,limit=1] store result score @s Move run data get storage luigis_mansion:data current_state.current_data.portrait_ghosts.luigis_mansion.boolossus.merged_speed
-data modify entity @e[tag=this_entity,limit=1] data.damage set from storage luigis_mansion:data current_state.current_data.portrait_ghosts.luigis_mansion.boolossus.damage
+execute as @e[tag=this_entity,limit=1] store result score @s Health run data get storage luigis_mansion:data current_state.current_data.portrait_ghosts[{name:{namespace:"luigis_mansion",id:"boolossus"}}].health
+execute as @e[tag=this_entity,limit=1] store result score @s MaxHealth run data get storage luigis_mansion:data current_state.current_data.portrait_ghosts[{name:{namespace:"luigis_mansion",id:"boolossus"}}].max_health
+execute as @e[tag=this_entity,limit=1] store result score @s Move run data get storage luigis_mansion:data current_state.current_data.portrait_ghosts[{name:{namespace:"luigis_mansion",id:"boolossus"}}].merged_speed
+data modify entity @e[tag=this_entity,limit=1] data.damage set from storage luigis_mansion:data current_state.current_data.portrait_ghosts[{name:{namespace:"luigis_mansion",id:"boolossus"}}].damage
 function luigis_mansion:spawn_entities/setup/default
 execute as @e[tag=this_entity,limit=1] run scoreboard players operation @s ActionTime = @s Health
 execute if entity @e[tag=this_entity,limit=1,scores={ActionTime=1}] as @e[tag=this_model] run data modify entity @s equipment.head.components."minecraft:custom_model_data".strings[0] set value "1"

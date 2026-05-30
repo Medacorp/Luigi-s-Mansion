@@ -5,7 +5,7 @@ execute as @a[tag=same_room,tag=!spectator,tag=game_boy_horror_menu] run functio
 tag @e[tag=same_room,tag=freeze_animation_dialog] remove freeze_animation
 tag @e[tag=same_room,tag=no_ai_dialog] remove no_ai
 execute if score #dialog Dialog matches 1..39 as @e[tag=luigi,tag=same_room] run function luigis_mansion:entities/luigi/animation/set/idle
-execute if score #dialog Dialog matches 1..39 as @a[tag=same_room] run function luigis_mansion:entities/player/camera/execute {execute:"at @e[tag=chandelier,tag=same_room,limit=1]",teleport:"~3 ~3 ~ 90 65"}
+execute if score #dialog Dialog matches 1..39 as @a[tag=same_room] run function luigis_mansion:entities/player/camera/execute {execute:"at @e[tag=chandelier,tag=falling,scores={ActionTime=1..39},tag=same_room,limit=1]",teleport:"~4 ~-0.4 ~ 90 32"}
 execute if score #dialog Dialog matches 40 as @a[tag=same_room] run function luigis_mansion:entities/player/camera/reset
 execute if score #dialog Dialog matches 40 as @e[tag=luigi,tag=same_room] run function luigis_mansion:entities/luigi/animation/set/none
 execute if score #dialog Dialog matches 40 run scoreboard players set #dialog Dialog -1

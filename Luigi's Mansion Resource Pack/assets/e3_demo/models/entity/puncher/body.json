@@ -1,6 +1,1 @@
-{
-	"parent": "luigis_mansion:entity/puncher/body",
-	"textures": {
-		"0": "e3_demo:entity/puncher"
-	}
-}
+{"parent":"luigis_mansion:entity/puncher/body","textures":{"0":"e3_demo:entity/puncher"}}

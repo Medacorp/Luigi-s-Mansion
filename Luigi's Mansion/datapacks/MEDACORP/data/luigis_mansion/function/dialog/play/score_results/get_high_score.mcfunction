@@ -1,0 +1,2 @@
+$execute if data storage luigis_mansion:data current_state.high_scores[{data_index:$(data_index)}] run data modify storage luigis_mansion:data current_high_score set from storage luigis_mansion:data current_state.high_scores[{data_index:$(data_index)}]
+$execute if data storage luigis_mansion:data current_state.high_scores[{data_index:$(data_index)}] run data remove storage luigis_mansion:data current_state.high_scores[{data_index:$(data_index)}]

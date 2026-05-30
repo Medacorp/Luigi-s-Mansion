@@ -1,6 +1,1 @@
-{
-	"parent": "luigis_mansion:item/game_boy_horror/screen/clock/minute_2",
-	"textures": {
-		"minute_2": "luigis_mansion:item/game_boy_horror/timer_8"
-	}
-}
+{"parent":"luigis_mansion:item/game_boy_horror/screen/clock/minute_2","textures":{"minute_2":"luigis_mansion:item/game_boy_horror/timer_8"}}

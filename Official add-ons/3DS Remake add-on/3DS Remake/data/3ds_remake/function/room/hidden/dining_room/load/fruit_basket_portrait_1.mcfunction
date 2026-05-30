@@ -1,0 +1,2 @@
+data modify storage luigis_mansion:data furniture set value {room:26,searchable:["interact","vacuum"],shake_animation:["interact","vacuum"],sound:{namespace:"luigis_mansion",id:"heavy_generic"},scan_result:{namespace:"luigis_mansion",id:"scan/scanner/55"}}
+execute positioned 699.07 14.5 43 rotated -90 0 run function luigis_mansion:spawn_furniture/fruit_basket_portrait

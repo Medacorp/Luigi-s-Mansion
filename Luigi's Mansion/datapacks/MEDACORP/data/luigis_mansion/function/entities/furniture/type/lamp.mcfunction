@@ -6,4 +6,8 @@ execute if entity @s[tag=!lit,tag=!dark_room] run tag @s add lit
 execute if entity @s[tag=lit,tag=dark_room] run data modify entity @s equipment.head merge from entity @s equipment.head.components."minecraft:custom_data".model_data.off
 execute if entity @s[tag=lit,tag=dark_room] run tag @s remove lit
 
-execute if entity @s[tag=falling] run function luigis_mansion:entities/furniture/type/lamp/fall
+execute if entity @s[tag=can_fall,tag=!falling] run function luigis_mansion:entities/furniture/type/lamp/fall_trigger with entity @s data
+execute if entity @s[tag=falling] run function luigis_mansion:entities/furniture/type/lamp/fall with entity @s data
+
+execute if entity @s[tag=trigger_blackout] run function luigis_mansion:entities/furniture/type/lamp/trigger_blackout
+execute if entity @s[tag=blackout] run function luigis_mansion:entities/furniture/type/lamp/blackout

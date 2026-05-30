@@ -1,2 +1,2 @@
 data modify storage luigis_mansion:data furniture set value {room:33}
-execute positioned 661.01 15 -40 rotated -90 0 run function luigis_mansion:spawn_furniture/cobweb
+execute positioned 661.01 15.5 -40 rotated -90 0 run function luigis_mansion:spawn_furniture/cobweb

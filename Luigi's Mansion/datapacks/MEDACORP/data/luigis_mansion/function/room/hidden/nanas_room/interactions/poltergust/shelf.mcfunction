@@ -1,2 +1,2 @@
-execute if entity @s[x=654.0,y=24,z=28.0,dx=0,dy=0,dz=4,tag=vacuum] unless score #nanas_room_shelf Search matches 1 run scoreboard players operation #nanas_room_shelf SearcherID = #temp ID
-execute if entity @s[x=654.0,y=24,z=28.0,dx=0,dy=0,dz=4,tag=vacuum] unless score #nanas_room_shelf Search matches 1 store success score #nanas_room_shelf Search run scoreboard players add #nanas_room_shelf Searching 1
+execute if entity @s[x=654.0,y=24,z=29.0,dx=0,dy=0,dz=2,tag=vacuum] unless score #nanas_room_shelf Search matches 1 run scoreboard players operation #nanas_room_shelf SearcherID = #temp ID
+execute if entity @s[x=654.0,y=24,z=29.0,dx=0,dy=0,dz=2,tag=vacuum] unless score #nanas_room_shelf Search matches 1 store success score #nanas_room_shelf Search run scoreboard players add #nanas_room_shelf Searching 1

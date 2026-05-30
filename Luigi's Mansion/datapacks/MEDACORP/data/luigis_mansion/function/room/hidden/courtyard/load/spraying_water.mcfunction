@@ -1,2 +1,0 @@
-data modify storage luigis_mansion:data furniture set value {room:30,water_elemental_source:{},particles:"spraying_water"}
-execute positioned 648 104 4 rotated -90 -90 run function luigis_mansion:spawn_furniture/elemental_source

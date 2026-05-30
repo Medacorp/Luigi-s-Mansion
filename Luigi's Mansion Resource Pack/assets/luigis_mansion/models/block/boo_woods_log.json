@@ -1,7 +1,1 @@
-{
-    "parent": "minecraft:block/cube_column",
-    "textures": {
-        "end": "luigis_mansion:block/boo_woods_log_top",
-        "side": "luigis_mansion:block/boo_woods_log"
-    }
-}
+{"parent":"minecraft:block/cube_column","textures":{"end":"luigis_mansion:block/boo_woods_log_top","side":"luigis_mansion:block/boo_woods_log"}}

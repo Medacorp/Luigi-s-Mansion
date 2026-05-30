@@ -1,1 +1,0 @@
-scoreboard players reset #living_room_painting_1

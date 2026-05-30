@@ -1,6 +1,1 @@
-{
-  "model": {
-    "type": "minecraft:model",
-    "model": "luigis_mansion:item/menu/next_page"
-  }
-}
+{"model":{"type":"minecraft:model","model":"luigis_mansion:item/menu/next_page"}}

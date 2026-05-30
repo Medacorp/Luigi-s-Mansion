@@ -1,7 +1,1 @@
-{
-	"parent": "luigis_mansion:entity/boolossus/2/left_arm",
-	"textures": {
-		"particle": "3ds_remake:entity/boolossus/boolossus",
-		"0": "3ds_remake:entity/boolossus/boolossus"
-	}
-}
+{"parent":"luigis_mansion:entity/boolossus/2/left_arm","textures":{"particle":"3ds_remake:entity/boolossus/boolossus","0":"3ds_remake:entity/boolossus/boolossus"}}

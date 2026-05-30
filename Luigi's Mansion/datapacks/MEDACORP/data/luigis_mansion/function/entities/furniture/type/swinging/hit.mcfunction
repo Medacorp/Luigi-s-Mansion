@@ -32,7 +32,7 @@ execute if score #temp Time matches 1.. run scoreboard players operation #temp T
 scoreboard players add #temp Time 900
 execute store result entity @s Rotation[1] float 0.1 run scoreboard players operation #temp Time += #temp2 Time
 execute at @s run function luigis_mansion:entities/furniture/type/swinging/hit_z_pos
-teleport @s ~ ~1.4 ~ ~ ~
+teleport @s ~ ~1.43875 ~ ~ ~
 scoreboard players reset #cosx
 scoreboard players reset #cosy
 scoreboard players reset #sinx

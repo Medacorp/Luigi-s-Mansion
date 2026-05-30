@@ -4,6 +4,7 @@ scoreboard objectives add AnimationProgress dummy
 scoreboard objectives add AttackType dummy
 scoreboard objectives add AvailableSlot dummy
 scoreboard objectives add BananaDropTime dummy
+scoreboard objectives add BooArea dummy
 scoreboard objectives add Boos dummy
 scoreboard objectives add BooTimer dummy
 scoreboard objectives add ChangedMansion dummy
@@ -32,9 +33,12 @@ scoreboard objectives add FlyTime dummy
 scoreboard objectives add Food food
 scoreboard objectives add ForceRadar dummy
 scoreboard objectives add ForceScreen dummy
+scoreboard objectives add FurnitureChandelier dummy
 scoreboard objectives add FurnitureContentForward dummy
 scoreboard objectives add FurnitureContentLeft dummy
 scoreboard objectives add FurnitureContentUp dummy
+scoreboard objectives add FurnitureCurtainOpen dummy
+scoreboard objectives add FurnitureCurtainSize dummy
 scoreboard objectives add FurnitureDust dummy
 scoreboard objectives add FurnitureDustForward dummy
 scoreboard objectives add FurnitureDustLeft dummy
@@ -52,7 +56,9 @@ scoreboard objectives add FurnitureHitDirection dummy
 scoreboard objectives add FurnitureLightForward dummy
 scoreboard objectives add FurnitureLightLeft dummy
 scoreboard objectives add FurnitureLightStrength dummy
+scoreboard objectives add FurnitureLightTime dummy
 scoreboard objectives add FurnitureLightUp dummy
+scoreboard objectives add FurnitureNoteTime dummy
 scoreboard objectives add FurnitureRotationDefault dummy
 scoreboard objectives add FurnitureRotationSpeed dummy
 scoreboard objectives add FurnitureRotationSpeedDefault dummy
@@ -114,6 +120,7 @@ scoreboard objectives add KnockbackZ dummy
 scoreboard objectives add LastFloor dummy
 scoreboard objectives add LastHealth dummy
 scoreboard objectives add LastHealthMusic dummy
+scoreboard objectives add LastPoltergustDistance dummy
 scoreboard objectives add LastRoom dummy
 scoreboard objectives add LastTotalDamage dummy
 scoreboard objectives add LightStep dummy
@@ -154,6 +161,7 @@ scoreboard objectives add OtherZ dummy
 scoreboard objectives add PassiveNr dummy
 scoreboard objectives add PathStep dummy
 scoreboard objectives add PlayerRotation dummy
+scoreboard objectives add PoltergustRange dummy
 scoreboard objectives add PoltergustSound dummy
 scoreboard objectives add PositionIntX dummy
 scoreboard objectives add PositionIntY dummy
@@ -184,6 +192,7 @@ scoreboard objectives add Searching dummy
 scoreboard objectives add SecondFleeDamage dummy
 scoreboard objectives add SecondFleeState dummy
 scoreboard objectives add Selected dummy
+scoreboard objectives add ShakerID dummy
 scoreboard objectives add Shrunk dummy
 scoreboard objectives add SlipX dummy
 scoreboard objectives add SlipZ dummy
@@ -223,28 +232,40 @@ scoreboard objectives add WalkUnderWater minecraft.custom:minecraft.walk_under_w
 scoreboard objectives add WarpTime dummy
 scoreboard objectives add Wave dummy
 
+# Inversion
 scoreboard players set #-1 Constants -1
+# Halving/doubling
 scoreboard players set #2 Constants 2
+# Boolossus speed boost/Frozen Boo speed decrease
 scoreboard players set #3 Constants 3
+# Many animations getting remainder, boolossus rubberbanding, item despawning, gameboy horror player hitbox fetching, score multiplier for peaceful
 scoreboard players set #4 Constants 4
+# Selection menu, Boo harm reduction, fan furniture type overwriting, lydia curtain speed
 scoreboard players set #5 Constants 5
+# Selection menu, gameboy horror settings menu
 scoreboard players set #6 Constants 6
+# Selection menu
 scoreboard players set #7 Constants 7
+# Cobweb, Meete E. Gadd camera stepping, swinging furniture
 scoreboard players set #8 Constants 8
+# Move decimal
 scoreboard players set #10 Constants 10
+# Tick count to time
 scoreboard players set #20 Constants 20
-scoreboard players set #30 Constants 30
+# Ghost angle
 scoreboard players set #50 Constants 50
+# Tick count to time
 scoreboard players set #60 Constants 60
+# Reflections, damage multipliers, ghost HP, 3rd person movement
 scoreboard players set #100 Constants 100
-scoreboard players set #200 Constants 200
+# Color generation
 scoreboard players set #256 Constants 256
-scoreboard players set #500 Constants 500
-scoreboard players set #800 Constants 800
+# Falling chandelier
+scoreboard players set #625 Constants 625
+# Localizing position, pearl dropping, falling chandelier
 scoreboard players set #1000 Constants 1000
-scoreboard players set #2000 Constants 2000
+# Rotate Luigi body, model display upside down
 scoreboard players set #10000 Constants 10000
-scoreboard players set #20000 Constants 20000
 
 execute store result score #players Totals if entity @a[tag=!spectator]
 execute store result score #all_players Totals if entity @a
@@ -254,7 +275,7 @@ scoreboard objectives setdisplay list Health
 execute store result score #global_difficulty Selected run difficulty
 execute unless score #global_mirror_reflections Selected matches 0..1 run scoreboard players set #global_mirror_reflections Selected 1
 execute unless score #global_player_names Selected matches 0..1 run scoreboard players set #global_player_names Selected 1
-execute store result score #debug_enabled Selected run gamerule sendCommandFeedback
+execute unless score #debug_enabled Selected matches 0..1 run scoreboard players set #debug_enabled Selected 0
 execute unless score #debug_messages Selected matches 0..2 run scoreboard players set #debug_messages Selected 0
 execute unless score #debug_furniture Selected matches 0..1 run scoreboard players set #debug_furniture Selected 0
 execute unless score #debug_entities Selected matches 0..1 run scoreboard players set #debug_entities Selected 0
@@ -280,7 +301,12 @@ execute unless score #freeze_timer Selected matches 0..1 run scoreboard players 
 
 execute unless data storage luigis_mansion:data current_state if entity @a[limit=1] run function luigis_mansion:other/upgrade_path/newly_installed
 
-gamerule fallDamage false
-gamerule maxCommandChainLength 2147483647
-gamerule maxCommandForkCount 2147483647
-gamerule spawnChunkRadius 0
+gamerule minecraft:fire_spread_radius_around_player 0
+gamerule minecraft:fall_damage false
+gamerule minecraft:max_command_sequence_length 2147483647
+gamerule minecraft:max_command_forks 2147483647
+gamerule minecraft:pvp false
+gamerule minecraft:random_tick_speed 0
+gamerule minecraft:spawn_monsters false
+gamerule minecraft:spawn_phantoms false
+gamerule minecraft:spawn_wandering_traders false

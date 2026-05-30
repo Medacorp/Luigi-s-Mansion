@@ -1,6 +1,1 @@
-{
-	"parent": "luigis_mansion:furniture/gallery_portrait/bronze",
-	"textures": {
-		"image": "luigis_mansion:furniture/gallery_portrait/bronze/sue_pea"
-	}
-}
+{"parent":"luigis_mansion:furniture/gallery_portrait/bronze","textures":{"image":"luigis_mansion:furniture/gallery_portrait/bronze/sue_pea"}}

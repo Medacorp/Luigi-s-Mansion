@@ -1,0 +1,2 @@
+data modify storage luigis_mansion:data furniture set value {room:9,no_ai:1b,animation:{frozen:1b},scan_result:{namespace:"luigis_mansion",id:"scan/scanner/22"}}
+execute positioned 697.93 113.5 -29 rotated 90 0 run function luigis_mansion:spawn_furniture/fern_portrait

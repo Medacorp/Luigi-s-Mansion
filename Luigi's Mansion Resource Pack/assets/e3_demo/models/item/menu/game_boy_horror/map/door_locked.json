@@ -1,6 +1,1 @@
-{
-	"parent": "luigis_mansion:item/menu/game_boy_horror/map/door",
-    "textures": {
-		"0": "e3_demo:item/menu/game_boy_horror/map/door_locked"
-	}
-}
+{"parent":"luigis_mansion:item/menu/game_boy_horror/map/door","textures":{"0":"e3_demo:item/menu/game_boy_horror/map/door_locked"}}

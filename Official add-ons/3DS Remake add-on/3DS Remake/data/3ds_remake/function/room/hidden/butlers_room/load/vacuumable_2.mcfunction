@@ -1,1 +1,0 @@
-setblock 740 16 58 minecraft:white_wool

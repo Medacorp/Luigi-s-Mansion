@@ -73,7 +73,6 @@ scoreboard players operation #temp2 FurnitureSizeForward /= #10 Constants
 scoreboard players operation #temp FurnitureSizeForward += #temp2 FurnitureSizeForward
 scoreboard players reset #temp2 FurnitureSizeForward
 
-
 scoreboard players operation #temp PositionX = @s FurnitureSizeLeft
 scoreboard players operation #temp PositionY = @s FurnitureSizeUp
 scoreboard players operation #temp PositionZ = @s FurnitureSizeForward
@@ -110,6 +109,9 @@ scoreboard players operation #temp PositionZ *= #temp PositionZ
 scoreboard players operation #temp PositionX += #temp PositionY
 scoreboard players operation #temp PositionX += #temp PositionZ
 execute if score #temp PositionX matches ..25 run tag @s add hit_by_poltergust
+execute if score #temp PositionX > @s LastPoltergustDistance run tag @s add out_of_poltergust_range
+scoreboard players operation @s LastPoltergustDistance = #temp PositionX
+execute if score #temp PositionX matches 3000.. run tag @s add out_of_poltergust_range
 
 scoreboard players reset #cosx
 scoreboard players reset #cosy
@@ -124,6 +126,9 @@ scoreboard players reset #temp FurnitureSizeForward
 scoreboard players reset #temp2 PositionX
 scoreboard players reset #temp2 PositionY
 scoreboard players reset #temp2 PositionZ
+scoreboard players reset #temp2 FurnitureSizeLeft
+scoreboard players reset #temp2 FurnitureSizeUp
+scoreboard players reset #temp2 FurnitureSizeForward
 scoreboard players reset #temp3 PositionX
 scoreboard players reset #temp3 PositionY
 scoreboard players reset #temp3 PositionZ

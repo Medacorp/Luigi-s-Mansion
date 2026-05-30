@@ -1,5 +1,6 @@
 execute unless score #safari_room_lamp_2 Searched matches 1 run data modify storage luigis_mansion:data furniture set value {room:50,tags:["drop_loot"]}
-execute unless score #safari_room_lamp_2 Searched matches 1 unless data storage luigis_mansion:data current_state.current_data{money_spawned:["safari_room_leopard_skin_decorated_lamp_2"]} run data modify storage luigis_mansion:data furniture.loot set value {name:"safari_room_leopard_skin_decorated_lamp_2",contents:{luigis_mansion:{gold_bar:1}}}
+execute unless score #safari_room_lamp_2 Searched matches 1 unless data storage luigis_mansion:data current_state.current_data{money_spawned:["safari_room_leopard_skin_decorated_lamp_2"]} run data modify storage luigis_mansion:data furniture.loot set value {name:"safari_room_leopard_skin_decorated_lamp_2"}
+execute unless score #safari_room_lamp_2 Searched matches 1 unless data storage luigis_mansion:data current_state.current_data{money_spawned:["safari_room_leopard_skin_decorated_lamp_2"]} run data modify storage luigis_mansion:data furniture.loot.contents set from storage luigis_mansion:data current_state.current_data.loot_collections.furniture.gold_bar
 execute unless score #safari_room_lamp_2 Searched matches 1 as @e[tag=luigi] if score #safari_room_lamp_2 SearcherID = @s ID run tag @s add searcher
 execute unless score #safari_room_lamp_2 Searched matches 1 run function luigis_mansion:entities/furniture/loot_chance/health_dependent_1
 execute unless score #safari_room_lamp_2 Searched matches 1 run tag @e[tag=searcher] remove searcher

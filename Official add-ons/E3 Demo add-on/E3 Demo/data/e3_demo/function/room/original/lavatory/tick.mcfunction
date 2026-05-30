@@ -11,12 +11,12 @@ execute as @a[scores={Room=13}] run function e3_demo:room/original/lavatory/tick
 
 #todelete - old furniture
 function #e3_demo:room/original/lavatory/interactions/room
-#/todelete
 
 execute if block 663 14 37 minecraft:oak_trapdoor[open=true] run setblock 659 14 37 minecraft:oak_trapdoor[open=true,facing=west,half=top]
 execute if block 663 14 37 minecraft:oak_trapdoor[open=false] run setblock 659 14 37 minecraft:oak_trapdoor[open=false,facing=west,half=top]
 execute if block 663 14 36 minecraft:oak_trapdoor[open=true] run setblock 659 14 36 minecraft:oak_trapdoor[open=true,facing=west,half=top]
 execute if block 663 14 36 minecraft:oak_trapdoor[open=false] run setblock 659 14 36 minecraft:oak_trapdoor[open=false,facing=west,half=top]
+#/todelete
 
 execute if entity @e[tag=luigi,tag=!door_animation,scores={Room=13},limit=1] run function e3_demo:room/original/lavatory/ghosts
 

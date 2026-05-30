@@ -1,0 +1,2 @@
+data modify storage luigis_mansion:data furniture set value {room:69,no_ai:1b,animation:{frozen:1b},scan_result:{namespace:"luigis_mansion",id:"scan/scanner/31"}}
+execute positioned 746.93 22.5 45.0 rotated 90 0 run function luigis_mansion:spawn_furniture/lonely_tree_portrait

@@ -1,0 +1,3 @@
+data modify storage luigis_mansion:data furniture set value {room:32,shake_animation:["interact","vacuum"],sound:{namespace:"luigis_mansion",id:"stove"},scan_result:{namespace:"luigis_mansion",id:"scan/scanner/42"}}
+execute unless data storage luigis_mansion:data current_state.current_data{obtained_keys:["hallway_8"]} run data modify storage luigis_mansion:data furniture.loot set value {contents:[{name:{namespace:"luigis_mansion",id:"item/key {door:'hallway_8'}"},variables:{rotation:[0.0f,0.0f]}}]}
+execute positioned 643 11 47.2 rotated 0 0 run function luigis_mansion:spawn_furniture/treadmill

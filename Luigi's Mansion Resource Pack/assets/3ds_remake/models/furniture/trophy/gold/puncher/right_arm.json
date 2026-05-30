@@ -1,6 +1,1 @@
-{
-	"parent": "luigis_mansion:entity/puncher/right_arm",
-	"textures": {
-		"0": "3ds_remake:furniture/trophy/gold/puncher"
-	}
-}
+{"parent":"luigis_mansion:entity/puncher/right_arm","textures":{"0":"3ds_remake:furniture/trophy/gold/puncher"}}

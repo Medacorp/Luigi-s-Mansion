@@ -1,0 +1,5 @@
+data modify storage luigis_mansion:data furniture set value {room:72,scan_result:{namespace:"luigis_mansion",id:"scan/scanner/51"}}
+execute unless data storage luigis_mansion:data current_state.current_data.rooms.secret_altar{cleared:1b} positioned 636.05 95.02 -18 rotated -90 0 run function luigis_mansion:spawn_furniture/marios_portrait/active
+execute unless data storage luigis_mansion:data current_state.current_data.rooms.secret_altar{cleared:1b} run place template luigis_mansion:mario_portrait_cutout 635 94 -19
+execute unless data storage luigis_mansion:data current_state.current_data.rooms.secret_altar{cleared:1b} run place template luigis_mansion:mario_portrait_cutout 635 94 -35
+execute if data storage luigis_mansion:data current_state.current_data.rooms.secret_altar{cleared:1b} positioned 636.05 95.02 -18 rotated -90 0 run function luigis_mansion:spawn_furniture/marios_portrait/collapsed

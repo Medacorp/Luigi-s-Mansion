@@ -2,16 +2,22 @@
     "values": [
         "3ds_remake:room/hidden/master_bedroom/load/set_loaded",
         "3ds_remake:room/hidden/master_bedroom/load/lights",
-        "3ds_remake:room/hidden/master_bedroom/load/cobweb",
+        "3ds_remake:room/hidden/master_bedroom/load/bouquet_portrait_1",
+        "3ds_remake:room/hidden/master_bedroom/load/bouquet_portrait_2",
+        "3ds_remake:room/hidden/master_bedroom/load/cloth",
+        "3ds_remake:room/hidden/master_bedroom/load/cobweb_1",
+        "3ds_remake:room/hidden/master_bedroom/load/cobweb_2",
+        "3ds_remake:room/hidden/master_bedroom/load/curtain_1",
+        "3ds_remake:room/hidden/master_bedroom/load/curtain_2",
+        "3ds_remake:room/hidden/master_bedroom/load/drum_lamp",
         "3ds_remake:room/hidden/master_bedroom/load/fan",
+        "3ds_remake:room/hidden/master_bedroom/load/fern_portrait_1",
+        "3ds_remake:room/hidden/master_bedroom/load/fern_portrait_2",
         "3ds_remake:room/hidden/master_bedroom/load/hallway_2_door",
+        "3ds_remake:room/hidden/master_bedroom/load/master_dresser",
         "3ds_remake:room/hidden/master_bedroom/load/nightstand",
-        "3ds_remake:room/hidden/master_bedroom/load/painting_1",
-        "3ds_remake:room/hidden/master_bedroom/load/painting_2",
-        "3ds_remake:room/hidden/master_bedroom/load/painting_3",
-        "3ds_remake:room/hidden/master_bedroom/load/painting_4",
-        "3ds_remake:room/hidden/master_bedroom/load/painting_5",
         "3ds_remake:room/hidden/master_bedroom/load/room_clear_chest",
-        "3ds_remake:room/hidden/master_bedroom/load/table_2"
+        "3ds_remake:room/hidden/master_bedroom/load/roses_portrait",
+        "3ds_remake:room/hidden/master_bedroom/load/scan_area"
     ]
 }

@@ -7,7 +7,8 @@ execute as @e[tag=temp,limit=1] positioned as @s run function luigis_mansion:ent
 scoreboard players reset #temp Time
 scoreboard players reset #temp2 Time
 scoreboard players reset #temp3 Time
-execute positioned as @e[tag=temp,limit=1] run function luigis_mansion:blocks/dust
+execute positioned as @e[tag=temp,limit=1] run playsound luigis_mansion:furniture.dust block @a[tag=same_room] ~ ~ ~ 1
+execute positioned as @e[tag=temp,limit=1] run particle minecraft:dust{color:11711129,scale:1.5f} ~ ~ ~ 0.5 0 0.5 1 30
 execute if entity @s[scores={MirrorX=-2147483648..}] as @e[tag=temp,limit=1] at @s run function luigis_mansion:entities/furniture/spawn/dust/mirror_x
 execute if entity @s[scores={MirrorZ=-2147483648..}] as @e[tag=temp,limit=1] at @s run function luigis_mansion:entities/furniture/spawn/dust/mirror_z
 kill @e[tag=temp,limit=1]

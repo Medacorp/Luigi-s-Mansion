@@ -1,0 +1,2 @@
+data modify storage luigis_mansion:data furniture set value {room:9,searchable:["interact","vacuum"],shake_animation:["interact","vacuum"],sound:{namespace:"luigis_mansion",id:"generic"},scan_result:{namespace:"luigis_mansion",id:"scan/scanner/31"}}
+execute positioned 696 114.5 -23.07 rotated -180 0 run function luigis_mansion:spawn_furniture/bouquet_portrait

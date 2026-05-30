@@ -1,6 +1,1 @@
-{
-	"parent": "luigis_mansion:furniture/door_frame/arched",
-	"textures": {
-		"door": "luigis_mansion:furniture/door_frame/golden"
-	}
-}
+{"parent":"luigis_mansion:furniture/door_frame/arched","textures":{"door":"luigis_mansion:furniture/door_frame/golden"}}

@@ -1,0 +1,2 @@
+data modify storage luigis_mansion:data furniture set value {room:16,searchable:["interact","vacuum"],shake_animation:["interact","vacuum"],sound:{namespace:"luigis_mansion",id:"generic"},scan_result:{namespace:"luigis_mansion",id:"scan/scanner/12"}}
+execute positioned 657.0 14.82 27 rotated -180 0 run function luigis_mansion:spawn_furniture/shampoo_shelf

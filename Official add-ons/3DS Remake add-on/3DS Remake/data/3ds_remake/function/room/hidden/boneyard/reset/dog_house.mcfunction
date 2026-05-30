@@ -1,1 +1,0 @@
-scoreboard players reset #boneyard_dog_house

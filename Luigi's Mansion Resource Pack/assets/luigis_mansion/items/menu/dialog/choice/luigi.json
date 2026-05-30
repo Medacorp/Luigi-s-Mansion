@@ -1,13 +1,1 @@
-{
-  "model": {
-    "type": "minecraft:model",
-    "model": "luigis_mansion:item/menu/dialog/choice/luigi",
-    "tints": [
-      {
-        "type": "minecraft:custom_model_data",
-        "index": 0,
-        "default": 37129
-      }
-    ]
-  }
-}
+{"model":{"type":"minecraft:model","model":"luigis_mansion:item/menu/dialog/choice/luigi","tints":[{"type":"minecraft:custom_model_data","index":0,"default":37129}]}}

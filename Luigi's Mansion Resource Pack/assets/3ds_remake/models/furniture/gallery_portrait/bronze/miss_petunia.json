@@ -1,6 +1,1 @@
-{
-	"parent": "3ds_remake:furniture/gallery_portrait/bronze",
-	"textures": {
-		"image": "3ds_remake:furniture/gallery_portrait/bronze/miss_petunia"
-	}
-}
+{"parent":"3ds_remake:furniture/gallery_portrait/bronze","textures":{"image":"3ds_remake:furniture/gallery_portrait/bronze/miss_petunia"}}

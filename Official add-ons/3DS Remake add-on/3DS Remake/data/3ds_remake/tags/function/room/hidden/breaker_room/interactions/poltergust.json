@@ -2,7 +2,6 @@
     "values": [
         "3ds_remake:room/hidden/breaker_room/interactions/poltergust/lamp",
         "3ds_remake:room/hidden/breaker_room/interactions/poltergust/mirror",
-        "3ds_remake:room/hidden/breaker_room/interactions/poltergust/table",
-        "3ds_remake:room/hidden/breaker_room/interactions/poltergust/vacuumable"
+        "3ds_remake:room/hidden/breaker_room/interactions/poltergust/table"
     ]
 }

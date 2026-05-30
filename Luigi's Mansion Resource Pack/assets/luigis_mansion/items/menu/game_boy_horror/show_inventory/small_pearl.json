@@ -1,6 +1,1 @@
-{
-  "model": {
-    "type": "minecraft:model",
-    "model": "luigis_mansion:item/menu/game_boy_horror/show_inventory/small_pearl"
-  }
-}
+{"model":{"type":"minecraft:model","model":"luigis_mansion:item/menu/game_boy_horror/show_inventory/small_pearl"}}

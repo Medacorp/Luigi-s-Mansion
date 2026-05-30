@@ -27,4 +27,5 @@ tag @e[tag=luigi,tag=killer,limit=1] add vaporizing_ghost
 tag @e[tag=killer] remove killer
 
 execute if entity @s[scores={Health=0},tag=!dropped_loot_at_0] run function luigis_mansion:room/loot_chance_ghost_element
+data modify entity @s data.loot set from entity @s data.loot_storage.capture
 function luigis_mansion:other/drop_loot

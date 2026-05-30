@@ -1,5 +1,5 @@
 execute unless entity @a[scores={LastRoom=10},limit=1] run function #luigis_mansion:room/hidden/nursery/reset
-execute as @e[scores={Room=10},tag=ghost,tag=!portrait_ghost,nbt=!{data:{entity:{namespace:"luigis_mansion",id:"boo"}}}] run function luigis_mansion:entities/ghost/non_ticking_room
+execute as @e[scores={Room=10},tag=ghost,tag=!no_remove_on_non_ticking] run function luigis_mansion:entities/ghost/non_ticking_room
 scoreboard players reset #nursery Vacuumables
 
 tag @e[scores={Room=10},tag=haunted_teddy_bear] remove enabled

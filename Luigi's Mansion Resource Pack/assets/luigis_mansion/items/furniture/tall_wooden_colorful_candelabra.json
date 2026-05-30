@@ -1,15 +1,1 @@
-{
-    "model": {
-        "type": "minecraft:condition",
-        "property": "minecraft:custom_model_data",
-        "index": 0,
-        "on_false": {
-            "type": "minecraft:model",
-            "model": "luigis_mansion:furniture/tall_wooden_colorful_candelabra/blue_green_red"
-        },
-        "on_true": {
-            "type": "minecraft:model",
-            "model": "luigis_mansion:furniture/tall_wooden_colorful_candelabra/red_green_blue"
-        }
-    }
-}
+{"model":{"type":"minecraft:condition","property":"minecraft:custom_model_data","index":0,"on_false":{"type":"minecraft:model","model":"luigis_mansion:furniture/tall_wooden_colorful_candelabra/blue_green_red"},"on_true":{"type":"minecraft:model","model":"luigis_mansion:furniture/tall_wooden_colorful_candelabra/red_green_blue"}}}

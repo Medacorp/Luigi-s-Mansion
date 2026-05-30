@@ -1,11 +1,7 @@
 {
     "values": [
-        "luigis_mansion:room/hidden/cold_storage/interactions/room/campfire_1",
-        "luigis_mansion:room/hidden/cold_storage/interactions/room/campfire_2",
-        "luigis_mansion:room/hidden/cold_storage/interactions/room/campfire_3",
         "luigis_mansion:room/hidden/cold_storage/interactions/room/crate_1",
         "luigis_mansion:room/hidden/cold_storage/interactions/room/crate_2",
-        "luigis_mansion:room/hidden/cold_storage/interactions/room/fire",
         "luigis_mansion:room/hidden/cold_storage/interactions/room/junk",
         "luigis_mansion:room/hidden/cold_storage/interactions/room/shelf_1",
         "luigis_mansion:room/hidden/cold_storage/interactions/room/shelf_2"

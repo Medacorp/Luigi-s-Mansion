@@ -1,10 +1,1 @@
-{
-	"parent": "luigis_mansion:entity/chauncey/head_scream",
-	"credit": "Made with Blockbench",
-	"display": {
-		"head": {
-			"translation": [0, -6.29, 0],
-			"scale": [1.84, 1.84, 1.84]
-		}
-	}
-}
+{"parent":"luigis_mansion:entity/chauncey/head_scream","display":{"head":{"translation":[0,-6.29,0],"scale":[1.84,1.84,1.84]}}}

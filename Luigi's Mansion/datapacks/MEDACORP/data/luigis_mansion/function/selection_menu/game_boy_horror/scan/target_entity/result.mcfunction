@@ -1,3 +1,3 @@
-execute if entity @s[nbt={data:{scan_result:{}}}] run function luigis_mansion:selection_menu/game_boy_horror/scan/dialog with entity @s data.scan_result
-execute if entity @s[nbt={data:{scan_result:"warp"}}] run tag @e[tag=this_interact,limit=1] add warp
+execute if data entity @s data.scan_result.id run function luigis_mansion:selection_menu/game_boy_horror/scan/dialog with entity @s data.scan_result
+execute if data entity @s data{scan_result:"warp"} run tag @e[tag=this_interact,limit=1] add warp
 execute if entity @s[tag=luigi] run function luigis_mansion:selection_menu/game_boy_horror/scan/dialog {namespace:"luigis_mansion",id:"scan/scanner/player"}

@@ -1,3 +1,3 @@
-execute unless score #temp PositionX matches 0 positioned as @s run function luigis_mansion:entities/poltergust_3000/effect_on_furniture/move/left
-execute unless score #temp PositionY matches 0 positioned as @s run function luigis_mansion:entities/poltergust_3000/effect_on_furniture/move/up
-execute unless score #temp PositionZ matches 0 positioned as @s run function luigis_mansion:entities/poltergust_3000/effect_on_furniture/move/forward
+execute unless score #temp PositionX matches 0 positioned as @s run function luigis_mansion:items/poltergust_3000/effect_on_furniture/move/left
+execute unless score #temp PositionY matches 0 positioned as @s run function luigis_mansion:items/poltergust_3000/effect_on_furniture/move/up
+execute unless score #temp PositionZ matches 0 positioned as @s run function luigis_mansion:items/poltergust_3000/effect_on_furniture/move/forward

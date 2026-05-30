@@ -1,6 +1,1 @@
-{
-  "model": {
-    "type": "minecraft:model",
-    "model": "luigis_mansion:item/menu/empty"
-  }
-}
+{"model":{"type":"minecraft:model","model":"luigis_mansion:item/menu/empty"}}

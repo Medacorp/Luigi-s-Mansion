@@ -1,2 +1,1 @@
 execute as @a run function luigis_mansion:entities/luigi/move/execute {execute:"in luigis_mansion:hidden",teleport:"490 37 16 160 0"}
-data modify storage luigis_mansion:data current_state.current_data.portrait_ghosts.luigis_mansion.king_boo.loot set value {}

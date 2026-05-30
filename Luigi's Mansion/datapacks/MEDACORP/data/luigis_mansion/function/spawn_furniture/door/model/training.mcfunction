@@ -1,1 +1,2 @@
-data modify entity @s equipment.head.components."minecraft:item_model" set value "luigis_mansion:furniture/door/training"
+execute unless score #mirrored Selected matches 1 run data modify entity @s equipment.head merge value {components:{"minecraft:item_model":"luigis_mansion:furniture/door/training","minecraft:custom_model_data":{flags:[0b]},"minecraft:custom_data":{mirror:{components:{"minecraft:custom_model_data":{flags:[1b]}}}}}}
+execute if score #mirrored Selected matches 1 run data modify entity @s equipment.head merge value {components:{"minecraft:item_model":"luigis_mansion:furniture/door/training","minecraft:custom_model_data":{flags:[1b]},"minecraft:custom_data":{mirror:{components:{"minecraft:custom_model_data":{flags:[0b]}}}}}}

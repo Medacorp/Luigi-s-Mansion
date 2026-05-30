@@ -1,9 +1,1 @@
-{
-	"parent": "luigis_mansion:entity/pearl",
-	"display": {
-		"head": {
-			"translation": [0, -12.5, 0],
-			"scale": [1.3, 1.3, 1.3]
-		}
-	}
-}
+{"parent":"luigis_mansion:entity/pearl","display":{"head":{"translation":[0,-12.5,0],"scale":[1.3,1.3,1.3]}}}

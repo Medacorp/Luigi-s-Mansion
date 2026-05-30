@@ -1,1 +1,0 @@
-execute if entity @s[x=666.0,y=120,z=-16.0,dx=4,dy=6,dz=8] unless block ~ ~ ~ minecraft:air run function luigis_mansion:selection_menu/game_boy_horror/scan/dialog {namespace:"luigis_mansion",id:"scan/scanner/86"}

@@ -5,14 +5,14 @@
         "luigis_mansion:room/hidden/study/load/cheese",
         "luigis_mansion:room/hidden/study/load/cobweb_1",
         "luigis_mansion:room/hidden/study/load/cobweb_2",
-        "luigis_mansion:room/hidden/study/load/fire",
+        "luigis_mansion:room/hidden/study/load/fireplace",
         "luigis_mansion:room/hidden/study/load/hallway_2_door",
-        "luigis_mansion:room/hidden/study/load/painting_1",
-        "luigis_mansion:room/hidden/study/load/painting_2",
-        "luigis_mansion:room/hidden/study/load/painting_3",
-        "luigis_mansion:room/hidden/study/load/painting_4",
-        "luigis_mansion:room/hidden/study/load/painting_5",
+        "luigis_mansion:room/hidden/study/load/horses_portrait",
+        "luigis_mansion:room/hidden/study/load/lydia_portrait",
+        "luigis_mansion:room/hidden/study/load/neville_portrait",
         "luigis_mansion:room/hidden/study/load/rocking_chair",
-        "luigis_mansion:room/hidden/study/load/room_clear_chest"
+        "luigis_mansion:room/hidden/study/load/room_clear_chest",
+        "luigis_mansion:room/hidden/study/load/roses_portrait",
+        "luigis_mansion:room/hidden/study/load/spooky_portrait"
     ]
 }

@@ -1,6 +1,1 @@
-{
-    "parent": "minecraft:item/generated",
-    "textures": {
-        "layer0": "luigis_mansion:block/iron_bars"
-    }
-}
+{"parent":"minecraft:item/generated","textures":{"layer0":"luigis_mansion:block/iron_bars"}}

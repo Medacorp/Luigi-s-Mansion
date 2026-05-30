@@ -1,6 +1,1 @@
-{
-	"parent": "e3_demo:item/poltergust_500/body_right",
-	"textures": {
-		"0": "e3_demo:item/poltergust_gooigi"
-	}
-}
+{"parent":"e3_demo:item/poltergust_500/body_right","textures":{"0":"e3_demo:item/poltergust_gooigi"}}

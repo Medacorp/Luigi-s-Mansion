@@ -1,0 +1,10 @@
+{
+    "pack": {
+        "min_format": [ 101 ],
+        "max_format": [ 101 ],
+        "description": {
+			"type": "translatable",
+            "translate": "skipable_dialogs:data_pack.description"
+		}
+    }
+}

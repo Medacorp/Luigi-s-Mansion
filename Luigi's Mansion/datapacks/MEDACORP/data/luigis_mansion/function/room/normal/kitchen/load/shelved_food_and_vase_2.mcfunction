@@ -1,0 +1,2 @@
+data modify storage luigis_mansion:data furniture set value {room:27,searchable:["interact","vacuum"],shake_animation:["interact","vacuum"],sound:{namespace:"luigis_mansion",id:"generic"},scan_result:{namespace:"luigis_mansion",id:"scan/scanner/91"}}
+execute positioned 699 15.5 75.0 rotated -90 0 run function luigis_mansion:spawn_furniture/shelved_food_and_vase/right

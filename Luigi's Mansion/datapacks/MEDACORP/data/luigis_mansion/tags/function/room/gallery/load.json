@@ -8,6 +8,9 @@
         "luigis_mansion:room/gallery/load/ghost_portrificationizer_room_door",
         "luigis_mansion:room/gallery/load/lydia_portrait",
         "luigis_mansion:room/gallery/load/mansion_rank_portrait",
-        "luigis_mansion:room/gallery/load/neville_portrait"
+        "luigis_mansion:room/gallery/load/neville_portrait",
+        "luigis_mansion:room/gallery/load/plaque_1",
+        "luigis_mansion:room/gallery/load/plaque_2",
+        "luigis_mansion:room/gallery/load/plaque_3"
     ]
 }

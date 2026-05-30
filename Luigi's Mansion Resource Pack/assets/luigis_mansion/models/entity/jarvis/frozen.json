@@ -1,6 +1,1 @@
-{
-	"parent": "luigis_mansion:entity/jarvis/normal",
-	"textures": {
-		"0": "luigis_mansion:entity/jarvis/frozen"
-	}
-}
+{"parent":"luigis_mansion:entity/jarvis/normal","textures":{"0":"luigis_mansion:entity/jarvis/frozen"}}

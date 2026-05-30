@@ -15,6 +15,7 @@ scoreboard players operation #temp2 PositionY *= #temp2 PositionY
 scoreboard players operation #temp2 PositionZ *= #temp2 PositionZ
 scoreboard players operation #temp2 PositionX += #temp2 PositionY
 scoreboard players operation #temp2 PositionX += #temp2 PositionZ
+scoreboard players add #temp FurnitureSizeRadius 5
 scoreboard players operation #temp FurnitureSizeRadius *= #temp FurnitureSizeRadius
 execute if score #temp2 PositionX <= #temp FurnitureSizeRadius run tag @s add hit
 scoreboard players reset #temp PositionX

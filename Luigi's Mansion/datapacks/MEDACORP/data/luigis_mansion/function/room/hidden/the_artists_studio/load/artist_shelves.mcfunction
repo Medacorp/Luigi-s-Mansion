@@ -1,0 +1,2 @@
+data modify storage luigis_mansion:data furniture set value {room:71,searchable:["interact","vacuum"],shake_animation:["interact","vacuum"],sound:{namespace:"luigis_mansion",id:"heavy_generic"},scan_result:{namespace:"luigis_mansion",id:"scan/scanner/23"}}
+execute positioned 690.9 29 84.2 rotated -90 0 run function luigis_mansion:spawn_furniture/artist_shelves/left

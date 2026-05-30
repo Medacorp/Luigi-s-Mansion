@@ -29,6 +29,7 @@ scoreboard players reset @s MirrorZ
 execute if score #mirrored Selected matches 2 run scoreboard players set #mirrored Selected 1
 tag @s[tag=freeze_animation_next_tick] add freeze_animation
 tag @s remove freeze_animation_next_tick
+tag @s remove wall_warp_teleported
 
 tag @s[tag=remove_from_existence] add dead
 teleport @s[tag=dead] ~ ~-100 ~

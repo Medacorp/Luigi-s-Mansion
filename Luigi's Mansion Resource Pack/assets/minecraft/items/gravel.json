@@ -1,6 +1,1 @@
-{
-  "model": {
-    "type": "minecraft:model",
-    "model": "luigis_mansion:block/path"
-  }
-}
+{"model":{"type":"minecraft:model","model":"luigis_mansion:block/path"}}

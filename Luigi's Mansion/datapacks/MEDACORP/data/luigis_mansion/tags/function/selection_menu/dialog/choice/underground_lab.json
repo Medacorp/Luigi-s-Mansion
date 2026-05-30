@@ -1,6 +1,9 @@
 {
     "values": [
-        "luigis_mansion:selection_menu/dialog/choice/underground_lab/normal_mansion",
-        "luigis_mansion:selection_menu/dialog/choice/underground_lab/hidden_mansion"
+        "#luigis_mansion:selection_menu/dialog/choice/mansion",
+        "luigis_mansion:selection_menu/dialog/choice/underground_lab/training",
+        "luigis_mansion:selection_menu/dialog/choice/underground_lab/gallery",
+        "luigis_mansion:selection_menu/dialog/choice/underground_lab/load_data",
+        "luigis_mansion:selection_menu/dialog/choice/underground_lab/save_data"
     ]
 }

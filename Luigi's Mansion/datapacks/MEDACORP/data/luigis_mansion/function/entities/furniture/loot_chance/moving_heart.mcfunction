@@ -1,0 +1,1 @@
+data modify storage luigis_mansion:data furniture.loot set value {contents:[{name:{namespace:"luigis_mansion",id:"item/small_heart"},variables:{tags:["random_turn_on_bounce"]}}]}

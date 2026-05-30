@@ -1,2 +1,0 @@
-execute unless entity @e[x=738.5,y=2,z=-0.5,distance=..0.7,tag=hidden_boo,tag=caught_by_boo_radar] run function 3ds_remake:room/hidden/cold_storage/search/campfire_3
-tag @e[x=738.5,y=2,z=-0.5,distance=..0.7,tag=hidden_boo,tag=caught_by_boo_radar] add spawn

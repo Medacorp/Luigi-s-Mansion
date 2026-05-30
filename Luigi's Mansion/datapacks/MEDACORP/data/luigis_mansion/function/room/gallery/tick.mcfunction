@@ -1,3 +1,4 @@
+execute if score #mirrored Selected matches 1 run scoreboard players set #mirrored Selected 2
 execute unless score #gallery Ticking matches 1 run function #luigis_mansion:room/gallery/load
 execute as @e[tag=player,x=0,y=1,z=17,dx=18,dy=6,dz=11] unless entity @s[scores={Room=-4}] run scoreboard players operation @s LastRoom = @s Room
 scoreboard players set @e[tag=player,x=0,y=1,z=17,dx=18,dy=6,dz=11] Room -4
@@ -7,4 +8,4 @@ execute if entity @e[tag=e_gadd,scores={Room=-4},tag=talk_this_tick] if data sto
 
 execute as @a[scores={Room=-4}] run function luigis_mansion:room/gallery/tick_per_player
 
-function #luigis_mansion:room/gallery/interactions/room
+execute if score #mirrored Selected matches 2 run scoreboard players set #mirrored Selected 1

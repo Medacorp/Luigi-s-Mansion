@@ -1,0 +1,1 @@
+data modify entity @s equipment.head merge value {components:{"minecraft:item_model":"3ds_remake:furniture/door_frame/wooden_arch"}}

@@ -38,4 +38,5 @@ luigis_mansion:windowed_2           | A second windowed design, lighter of color
 3ds_remake:double/reinforced_planks | Green planks with a metal center decoration, no single variant exists
 3ds_remake:red_metal                | Red metal outline
 3ds_remake:brown_metal              | Brown metal outline
+3ds_remake:wooden_arch              | Normal with wooden arch on top
 ```

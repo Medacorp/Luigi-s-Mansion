@@ -1,6 +1,1 @@
-{
-    "parent": "luigis_mansion:item/menu",
-    "textures": {
-        "layer0": "3ds_remake:item/menu/game_boy_horror/show_settings/flashlight_type_strobulb"
-    }
-}
+{"parent":"luigis_mansion:item/menu","textures":{"layer0":"3ds_remake:item/menu/game_boy_horror/show_settings/flashlight_type_strobulb"}}

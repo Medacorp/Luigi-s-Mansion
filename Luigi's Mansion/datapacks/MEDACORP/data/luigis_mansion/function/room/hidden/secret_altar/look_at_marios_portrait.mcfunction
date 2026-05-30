@@ -1,0 +1,4 @@
+function luigis_mansion:entities/luigi/move/teleport {teleport:"648 93 25 0 0"}
+execute unless data storage luigis_mansion:data current_state.current_data.technical_data{saw_mario:1b} run data modify storage luigis_mansion:data dialogs append value {name:{namespace:"luigis_mansion",id:"marios_portrait"},room:72,progress:0,observing_player:0}
+execute if data storage luigis_mansion:data current_state.current_data.technical_data{saw_mario:1b} run data modify storage luigis_mansion:data dialogs append value {name:{namespace:"luigis_mansion",id:"marios_portrait_repeat"},room:72,progress:0,observing_player:0}
+execute store result storage luigis_mansion:data dialogs[-1].observing_player int 1 run scoreboard players get @s ID

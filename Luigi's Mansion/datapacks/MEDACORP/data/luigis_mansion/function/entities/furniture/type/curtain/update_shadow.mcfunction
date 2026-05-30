@@ -1,0 +1,2 @@
+$execute if data storage luigis_mansion:data macro{open:1b} positioned ^$(offset) ^-$(height) ^ positioned ~-0.5 ~-0.5 ~-0.5 run tag @e[dx=0,dy=$(height),dz=0,tag=showering_shadow] remove has_curtain
+$execute if data storage luigis_mansion:data macro{open:0b} positioned ^$(offset) ^-$(height) ^ positioned ~-0.5 ~-0.5 ~-0.5 run tag @e[dx=0,dy=$(height),dz=0,tag=showering_shadow] add has_curtain

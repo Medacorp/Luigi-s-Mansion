@@ -9,6 +9,7 @@ scoreboard players reset @a[tag=same_room,tag=!spectator] WarpTime
 execute as @a[tag=same_room,tag=!spectator,tag=game_boy_horror_menu] run function luigis_mansion:selection_menu/game_boy_horror/exit
 execute if score #dialog Dialog matches 1..20 as @e[tag=luigi,tag=same_room] run function luigis_mansion:entities/luigi/animation/set/idle
 execute if score #dialog Dialog matches 21.. as @e[tag=luigi,tag=same_room] run function luigis_mansion:entities/luigi/animation/set/high_health_idle_no_sound
+execute if score #dialog Dialog matches 1.. as @a[tag=same_room] at @s run playsound luigis_mansion:ambience.flipping_room ambient @s ~ ~ ~ 1000
 execute if score #dialog Dialog matches 1.. as @a[tag=same_room,tag=!fully_separated_camera] run function luigis_mansion:entities/player/camera/execute {execute:"at @s rotated ~-180 0",teleport:"^ ^ ^-3 ~ ~"}
 execute if score #dialog Dialog matches 2.. as @a[tag=same_room] run function luigis_mansion:entities/player/camera/teleport {teleport:"~ ~ ~ ~ ~"}
 scoreboard players operation #temp AnimationProgress = #dialog Dialog

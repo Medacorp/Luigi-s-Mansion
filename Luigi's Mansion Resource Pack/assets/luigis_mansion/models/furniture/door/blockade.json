@@ -1,6 +1,1 @@
-{
-	"parent": "luigis_mansion:furniture/door/overlay",
-	"textures": {
-		"overlay": "luigis_mansion:furniture/door/blockade"
-	}
-}
+{"parent":"luigis_mansion:furniture/door/overlay","textures":{"overlay":"luigis_mansion:furniture/door/blockade"}}

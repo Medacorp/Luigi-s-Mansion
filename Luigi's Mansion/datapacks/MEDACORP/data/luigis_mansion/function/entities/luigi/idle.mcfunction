@@ -17,10 +17,10 @@ execute if data storage luigis_mansion:data my_memory.animation run function lui
 tag @s[tag=!keep_poltergust_grabbed] add new_poltergust_grabbed
 execute if entity @s[tag=!keep_poltergust_grabbed] run function #luigis_mansion:entities/luigi/overwrite_poltergust_grabbed
 tag @s remove keep_poltergust_grabbed
-execute if data storage luigis_mansion:data my_memory unless data storage luigis_mansion:data my_memory.animation if entity @s[tag=!new_poltergust_grabbed,tag=poltergust_grabbed] run function luigis_mansion:entities/luigi/animation/set/put_poltergust_away
-execute if data storage luigis_mansion:data my_memory unless data storage luigis_mansion:data my_memory.animation if entity @s[tag=new_poltergust_grabbed,tag=!poltergust_grabbed] run function luigis_mansion:entities/luigi/animation/set/grab_poltergust
-execute if data storage luigis_mansion:data my_memory.animation if entity @s[tag=!new_poltergust_grabbed,tag=poltergust_grabbed] if entity @s[tag=idle] run function luigis_mansion:entities/luigi/animation/set/put_poltergust_away
-execute if data storage luigis_mansion:data my_memory.animation if entity @s[tag=new_poltergust_grabbed,tag=!poltergust_grabbed] if entity @s[tag=idle] run function luigis_mansion:entities/luigi/animation/set/grab_poltergust
+execute if data storage luigis_mansion:data my_memory unless data storage luigis_mansion:data my_memory.animation if entity @s[tag=!new_poltergust_grabbed,tag=poltergust_grabbed] if score @s Room = @e[tag=this_player,limit=1] Room run function luigis_mansion:entities/luigi/animation/set/put_poltergust_away
+execute if data storage luigis_mansion:data my_memory unless data storage luigis_mansion:data my_memory.animation if entity @s[tag=new_poltergust_grabbed,tag=!poltergust_grabbed] if score @s Room = @e[tag=this_player,limit=1] Room run function luigis_mansion:entities/luigi/animation/set/grab_poltergust
+execute if data storage luigis_mansion:data my_memory.animation if entity @s[tag=!new_poltergust_grabbed,tag=poltergust_grabbed] if entity @s[tag=idle] if score @s Room = @e[tag=this_player,limit=1] Room run function luigis_mansion:entities/luigi/animation/set/put_poltergust_away
+execute if data storage luigis_mansion:data my_memory.animation if entity @s[tag=new_poltergust_grabbed,tag=!poltergust_grabbed] if entity @s[tag=idle] if score @s Room = @e[tag=this_player,limit=1] Room run function luigis_mansion:entities/luigi/animation/set/grab_poltergust
 execute unless data storage luigis_mansion:data my_memory run function luigis_mansion:entities/luigi/get_owner_memory
 data remove entity @s data.animation
 execute if data storage luigis_mansion:data my_memory.animation run data modify entity @s data.animation set from storage luigis_mansion:data my_memory.animation

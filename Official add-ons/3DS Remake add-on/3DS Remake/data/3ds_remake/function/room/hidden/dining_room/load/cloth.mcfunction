@@ -1,0 +1,2 @@
+data modify storage luigis_mansion:data furniture set value {room:26,no_dust:1b,hitbox:{rotated_box:{left:212,up:8,forward:32}},searchable:["vacuum"],tags:["dining_room_tablesheet"]}
+execute positioned 704 12.05 43 rotated -90 0 run function luigis_mansion:spawn_furniture/cloth/outline_tablesheet

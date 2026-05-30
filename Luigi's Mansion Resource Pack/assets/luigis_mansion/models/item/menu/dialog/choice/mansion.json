@@ -1,6 +1,1 @@
-{
-    "parent": "luigis_mansion:item/menu",
-	"textures": {
-        "layer0": "luigis_mansion:item/menu/dialog/choice/mansion"
-    }
-}
+{"parent":"luigis_mansion:item/menu","textures":{"layer0":"luigis_mansion:item/menu/dialog/choice/mansion"}}

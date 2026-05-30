@@ -1,5 +1,5 @@
 execute if entity @s[scores={PositionIntX=..572}] run function luigis_mansion:entities/luigi/move/wall_warp_teleport {teleport:"~1 ~ ~"}
-execute if entity @s[scores={PositionIntX=600..}] run function luigis_mansion:entities/luigi/move/wall_warp_teleport {teleport:"~-1 ~ ~"}
+execute if entity @s[scores={PositionIntX=599..}] run function luigis_mansion:entities/luigi/move/wall_warp_teleport {teleport:"~-1 ~ ~"}
 execute if entity @s[scores={PositionIntZ=68..}] run function luigis_mansion:entities/luigi/move/wall_warp_teleport {teleport:"~ ~ ~-1"}
 execute if entity @s[scores={PositionIntZ=..1}] run function luigis_mansion:entities/luigi/move/wall_warp_teleport {teleport:"~ ~ ~1"}
 

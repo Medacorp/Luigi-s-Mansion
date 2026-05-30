@@ -35,8 +35,6 @@ scoreboard players reset #temp ID
 scoreboard players reset #interact
 scoreboard players add @s OverheatMeter 1
 function e3_demo:items/poltergust_500/sync_overheat_meter
-tag @e[tag=being_vacuumed] remove being_vacuumed
-tag @e[tag=hit_by_poltergust] remove hit_by_poltergust
 tag @s add vacuuming
 tag @s remove expelling_water
 execute if entity @s[scores={DamagePitch=1,DamagePitchTimer=6}] run playsound e3_demo:item.poltergust_500.damage hostile @a[tag=same_room] ~ ~ ~ 1 1

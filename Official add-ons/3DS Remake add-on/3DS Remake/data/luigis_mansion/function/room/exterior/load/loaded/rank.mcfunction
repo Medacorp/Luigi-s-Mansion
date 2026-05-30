@@ -8,7 +8,7 @@ execute unless loaded 785 81 11 run scoreboard players set #temp Time 1
 execute unless score #exterior Ticking matches 1 run scoreboard players reset #temp Time
 execute if score #temp Time matches 1 run schedule function luigis_mansion:room/exterior/load/set_loaded 1
 execute if score #temp Time matches 2 run data modify storage luigis_mansion:data furniture set value {room:0,tags:["rank_reveal_painting"],no_ai:1b,animation:{frozen:1b}}
-execute if score #temp Time matches 2 positioned 786.05 74 2 rotated -90 0 run function 3ds_remake:spawn_furniture/mansion_rank_portrait
+execute if score #temp Time matches 2 positioned 786.0 74 2 rotated -90 0 run function 3ds_remake:spawn_furniture/mansion_rank_portrait
 execute if score #temp Time matches 2 run fill 803 71 -8 785 81 11 minecraft:brown_mushroom_block replace minecraft:yellow_concrete
 execute if score #temp Time matches 2 if data storage luigis_mansion:data loaded_exterior{rank:"h"} run function luigis_mansion:room/exterior/load/loaded/rank/h
 execute if score #temp Time matches 2 if data storage luigis_mansion:data loaded_exterior{rank:"g"} run function luigis_mansion:room/exterior/load/loaded/rank/g

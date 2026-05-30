@@ -1,6 +1,1 @@
-{
-  "model": {
-    "type": "minecraft:model",
-    "model": "luigis_mansion:item/menu/game_boy_horror/show_caught_portrait_ghosts/mr_luggs"
-  }
-}
+{"model":{"type":"minecraft:model","model":"luigis_mansion:item/menu/game_boy_horror/show_caught_portrait_ghosts/mr_luggs"}}

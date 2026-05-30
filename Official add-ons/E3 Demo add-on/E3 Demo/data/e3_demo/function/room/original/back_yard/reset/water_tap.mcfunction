@@ -1,1 +1,0 @@
-scoreboard players reset #back_yard_water_tap

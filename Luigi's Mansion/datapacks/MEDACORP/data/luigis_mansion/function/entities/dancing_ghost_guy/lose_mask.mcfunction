@@ -3,5 +3,6 @@ tag @s add stunable
 $function $(namespace):entities/$(id)/reset
 tag @s add complain
 tag @s add stop_dancing
-data modify storage luigis_mansion:data entity set value {tags:["vacuumable"]}
-$execute rotated ~ 0 positioned ^ ^1.3 ^0.4 run function $(namespace):spawn_entities/vacuumable_object/mask/$(id)
+data modify entity @s data.loot set from entity @s data.loot_storage.mask
+execute if data entity @s data.loot run data modify entity @s data.loot.contents[].variables.owner set from entity @s UUID
+execute if data entity @s data.loot positioned ~ ~1.3 ~ positioned ^ ^ ^0.4 run function luigis_mansion:other/drop_loot

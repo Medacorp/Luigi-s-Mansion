@@ -2,10 +2,14 @@
     "values": [
         "e3_demo:room/original/entrance/load/set_loaded",
         "e3_demo:room/original/entrance/load/lights",
+        "e3_demo:room/original/entrance/load/dresser_mounted_golden_lamp",
         "e3_demo:room/original/entrance/load/front_door",
         "e3_demo:room/original/entrance/load/hallway_3_door",
+        "e3_demo:room/original/entrance/load/inside_lantern",
+        "e3_demo:room/original/entrance/load/inside_lantern_chandelier",
         "e3_demo:room/original/entrance/load/simple_triple_wall_candelabra_1",
         "e3_demo:room/original/entrance/load/simple_triple_wall_candelabra_2",
+        "e3_demo:room/original/entrance/load/standing_mirror",
         "e3_demo:room/original/entrance/load/tall_simple_triple_candelabra_1",
         "e3_demo:room/original/entrance/load/tall_simple_triple_candelabra_2"
     ]

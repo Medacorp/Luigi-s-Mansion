@@ -13,6 +13,4 @@ execute as @a[scores={Room=43}] run function 3ds_remake:room/hidden/bathroom_2/t
 function #3ds_remake:room/hidden/bathroom_2/interactions/room
 #/todelete
 
-clone 654 21 21 654 25 27 644 21 21
-
 execute if entity @e[tag=luigi,tag=!door_animation,scores={Room=43},limit=1] run function 3ds_remake:room/hidden/bathroom_2/ghosts

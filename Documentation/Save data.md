@@ -53,7 +53,13 @@ The main save data contains a bunch of info. It is loaded at `luigis_mansion:dat
             value:X, //The highest score obtained.
             lowest_value:X, //The lowest score obtained.
             speed:X, //The fastest time this mansion was cleared in.
-            health:X //The best instance of lowest health of any player.
+            health:X, //The best instance of lowest health of any player.
+            area:[ //3DS REMAKE EXCLUSIVE: area high scores.
+                { //An area
+                    only:X, //Treasure aquired high score for only within this area
+                    total:X //Treasure aquired high score for up until this area
+                }
+            ]
         }
     ]
 }

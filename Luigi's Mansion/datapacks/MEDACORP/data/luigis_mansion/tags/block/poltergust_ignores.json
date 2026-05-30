@@ -1,0 +1,15 @@
+{
+    "values": [
+        "minecraft:air",
+        "minecraft:cave_air",
+        "minecraft:void_air",
+        "minecraft:light",
+        "minecraft:barrier",
+        "minecraft:water",
+        "minecraft:lava",
+        "minecraft:stone_button",
+        "minecraft:ladder",
+        "#minecraft:slabs",
+        "#minecraft:fences"
+    ]
+}

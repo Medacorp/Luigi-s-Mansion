@@ -1,7 +1,1 @@
-{
-	"parent": "luigis_mansion:furniture/poster",
-	"textures": {
-		"x": "luigis_mansion:furniture/poster/cloth_x",
-		"y": "luigis_mansion:furniture/poster/cloth_y"
-	}
-}
+{"parent":"luigis_mansion:furniture/poster","textures":{"x":"luigis_mansion:furniture/poster/cloth_x","y":"luigis_mansion:furniture/poster/cloth_y"}}

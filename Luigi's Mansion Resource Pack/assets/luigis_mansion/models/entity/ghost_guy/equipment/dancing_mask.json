@@ -1,6 +1,1 @@
-{
-	"parent": "luigis_mansion:entity/ghost_guy/body",
-	"textures": {
-		"1": "luigis_mansion:entity/ghost_guy/dancing_mask"
-	}
-}
+{"parent":"luigis_mansion:entity/ghost_guy/body","textures":{"1":"luigis_mansion:entity/ghost_guy/dancing_mask"}}

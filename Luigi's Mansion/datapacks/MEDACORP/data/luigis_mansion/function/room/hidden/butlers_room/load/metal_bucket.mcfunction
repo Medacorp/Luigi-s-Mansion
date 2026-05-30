@@ -1,3 +1,4 @@
 data modify storage luigis_mansion:data furniture set value {room:23,searchable:["interact","vacuum"],shake_animation:["interact","vacuum"],sound:{namespace:"luigis_mansion",id:"heavy_generic"},scan_result:{namespace:"luigis_mansion",id:"scan/scanner/77"}}
-execute unless data storage luigis_mansion:data current_state.current_data{money_spawned:["butlers_room_metal_bucket"]} run data modify storage luigis_mansion:data furniture.loot set value {name:"butlers_room_metal_bucket",contents:{luigis_mansion:{blue_sapphire:1}}}
+execute unless data storage luigis_mansion:data current_state.current_data{money_spawned:["butlers_room_metal_bucket"]} run data modify storage luigis_mansion:data furniture.loot set value {name:"butlers_room_metal_bucket"}
+execute unless data storage luigis_mansion:data current_state.current_data{money_spawned:["butlers_room_metal_bucket"]} run data modify storage luigis_mansion:data furniture.loot.contents set from storage luigis_mansion:data current_state.current_data.loot_collections.furniture.blue_sapphire
 execute positioned 749 11 -56 rotated -45 0 run function luigis_mansion:spawn_furniture/metal_bucket

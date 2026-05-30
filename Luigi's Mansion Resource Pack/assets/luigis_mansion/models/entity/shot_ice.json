@@ -1,9 +1,1 @@
-{
-	"parent": "luigis_mansion:entity/shot_element",
-	"credit": "Made with Blockbench",
-	"textures": {
-		"0": "luigis_mansion:entity/shot_element/ice/back",
-		"1": "luigis_mansion:entity/shot_element/ice/front",
-		"2": "luigis_mansion:entity/shot_element/ice/side"
-	}
-}
+{"parent":"luigis_mansion:entity/shot_element","textures":{"0":"luigis_mansion:entity/shot_element/ice/back","1":"luigis_mansion:entity/shot_element/ice/front","2":"luigis_mansion:entity/shot_element/ice/side"}}

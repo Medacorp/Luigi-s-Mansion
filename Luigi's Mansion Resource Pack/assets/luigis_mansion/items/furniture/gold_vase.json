@@ -1,6 +1,1 @@
-{
-  "model": {
-    "type": "minecraft:model",
-    "model": "luigis_mansion:furniture/gold_vase"
-  }
-}
+{"model":{"type":"minecraft:model","model":"luigis_mansion:furniture/gold_vase"}}

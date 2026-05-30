@@ -7,11 +7,11 @@ execute if entity @s[scores={Dialog=10}] run setblock 770 77 -12 minecraft:air
 execute if entity @s[scores={Dialog=10}] run setblock 770 78 -12 minecraft:light_gray_concrete
 execute if entity @s[scores={Dialog=20}] run teleport @s 771.01 78.65 -12
 execute if entity @s[scores={Dialog=20}] run setblock 770 79 -12 minecraft:light_gray_concrete
-execute if entity @s[scores={Dialog=65}] run data merge entity @s {Pose:{Head:[18.0f,-180.0f,0.0f]}}
-execute if entity @s[scores={Dialog=66}] run data merge entity @s {Pose:{Head:[36.0f,-180.0f,0.0f]}}
-execute if entity @s[scores={Dialog=67}] run data merge entity @s {Pose:{Head:[54.0f,-180.0f,0.0f]}}
-execute if entity @s[scores={Dialog=68}] run data merge entity @s {Pose:{Head:[72.0f,-180.0f,0.0f]}}
-execute if entity @s[scores={Dialog=69}] run data merge entity @s {Pose:{Head:[90.0f,-180.0f,0.0f]}}
+execute if entity @s[scores={Dialog=65}] run data merge entity @s {Pose:{Head:[-18.0f,0.0f,0.0f]}}
+execute if entity @s[scores={Dialog=66}] run data merge entity @s {Pose:{Head:[-36.0f,0.0f,0.0f]}}
+execute if entity @s[scores={Dialog=67}] run data merge entity @s {Pose:{Head:[-54.0f,0.0f,0.0f]}}
+execute if entity @s[scores={Dialog=68}] run data merge entity @s {Pose:{Head:[-72.0f,0.0f,0.0f]}}
+execute if entity @s[scores={Dialog=69}] run data merge entity @s {Pose:{Head:[-90.0f,0.0f,0.0f]}}
 execute if entity @s[scores={Dialog=70}] run teleport @s 770 79.05 -12
 execute if entity @s[scores={Dialog=75}] run teleport @s 770 78.05 -12
 execute if entity @s[scores={Dialog=75}] run setblock 770 79 -12 minecraft:air

@@ -1,0 +1,4 @@
+scoreboard players set #only Time -1
+scoreboard players set #total Time -1
+$execute if data storage luigis_mansion:data current_state.high_scores[{data_index:$(data_index)}] if data storage luigis_mansion:data current_state.high_scores[{data_index:$(data_index)}].area[$(area)] store result score #only Time run data get storage luigis_mansion:data current_state.high_scores[{data_index:$(data_index)}].area[$(area)].only
+$execute if data storage luigis_mansion:data current_state.high_scores[{data_index:$(data_index)}] if data storage luigis_mansion:data current_state.high_scores[{data_index:$(data_index)}].area[$(area)] store result score #total Time run data get storage luigis_mansion:data current_state.high_scores[{data_index:$(data_index)}].area[$(area)].total

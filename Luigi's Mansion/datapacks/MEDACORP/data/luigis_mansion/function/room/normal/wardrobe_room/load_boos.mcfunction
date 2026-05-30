@@ -1,3 +1,3 @@
 scoreboard players set #temp Room 5
-execute positioned 682 20 67.0 if data storage luigis_mansion:data current_state.current_data.boos[{name:{namespace:"luigis_mansion",id:"gameboo_advance"},trap_found:0b}] run function luigis_mansion:entities/hidden_boo/load_in_room/spawn_trap {namespace:"luigis_mansion",id:"gameboo_advance"}
-execute positioned 682 20 67.0 run function luigis_mansion:entities/hidden_boo/load_in_room
+execute positioned 682 20 66.0 if data storage luigis_mansion:data current_state.current_data.boos[{name:{namespace:"luigis_mansion",id:"gameboo_advance"},trap_found:0b}] run function luigis_mansion:entities/hidden_boo/load_in_room/spawn_trap {namespace:"luigis_mansion",id:"gameboo_advance"}
+execute positioned 682 20 66.0 run function luigis_mansion:entities/hidden_boo/load_in_room

@@ -6,8 +6,10 @@ execute store result storage luigis_mansion:data macro.facing_y double 0.001 run
 execute store result score #temp EntityYOffset run data get entity @s Pos[2] 1000
 execute store result storage luigis_mansion:data macro.facing_z double 0.001 run scoreboard players remove #temp EntityYOffset 1
 execute store result score #temp EntityYOffset run data get entity @s data.default_transformation[0] 10
+execute if score #temp EntityYOffset matches ..-1 run scoreboard players operation #temp EntityYOffset *= #-1 Constants
 execute store result storage luigis_mansion:data macro.scale_x double 0.1 run scoreboard players operation #temp EntityYOffset /= #2 Constants
 execute store result score #temp EntityYOffset run data get entity @s data.default_transformation[10] 10
+execute if score #temp EntityYOffset matches ..-1 run scoreboard players operation #temp EntityYOffset *= #-1 Constants
 execute store result storage luigis_mansion:data macro.scale_z double 0.1 run scoreboard players operation #temp EntityYOffset /= #2 Constants
 scoreboard players reset #temp EntityYOffset
 
@@ -128,18 +130,20 @@ execute store result storage luigis_mansion:data transformation[5] float 0.05 ru
 execute if score #temp FurnitureSizeUp matches 0 run data modify storage luigis_mansion:data transformation[5] set value 0.01f
 execute store result storage luigis_mansion:data transformation[9] float 0.05 run scoreboard players get #temp FurnitureSizeForward
 execute store result score #temp Time run data get storage luigis_mansion:data transformation[0] 10
+execute if score #temp Time matches ..-1 run scoreboard players operation #temp Time *= #-1 Constants
 scoreboard players operation #temp FurnitureSizeLeft *= #10 Constants
 scoreboard players operation #temp FurnitureSizeLeft /= #temp Time
 execute store result score #temp Time run data get storage luigis_mansion:data transformation[10] 10
+execute if score #temp Time matches ..-1 run scoreboard players operation #temp Time *= #-1 Constants
 scoreboard players operation #temp FurnitureSizeForward *= #10 Constants
 scoreboard players operation #temp FurnitureSizeForward /= #temp Time
 scoreboard players operation #temp Time = #temp FurnitureSizeLeft
 execute if score #temp Time matches ..-1 if score #temp FurnitureSizeForward matches 1.. run scoreboard players operation #temp Time *= #-1 Constants
 execute if score #temp Time matches 1.. if score #temp FurnitureSizeForward matches ..-1 run scoreboard players operation #temp Time *= #-1 Constants
-execute if score #temp FurnitureSizeForward matches 3.. if score #temp FurnitureSizeForward > #temp Time run tag @s[scores={SearcherID=-2147483648..},tag=!side_pull_only,tag=!pulled_left,tag=!pulled_right,tag=!pulled_front,tag=!pulled_back] add pulled_back
-execute if score #temp FurnitureSizeForward matches ..-3 if score #temp FurnitureSizeForward < #temp Time run tag @s[scores={SearcherID=-2147483648..},tag=!side_pull_only,tag=!pulled_left,tag=!pulled_right,tag=!pulled_front,tag=!pulled_back] add pulled_front
-execute if score #temp FurnitureSizeLeft matches ..-3 unless score #temp FurnitureSizeForward = #temp Time run tag @s[scores={SearcherID=-2147483648..},tag=!pulled_left,tag=!pulled_right,tag=!pulled_front,tag=!pulled_back] add pulled_left
-execute if score #temp FurnitureSizeLeft matches 3.. unless score #temp FurnitureSizeForward = #temp Time run tag @s[scores={SearcherID=-2147483648..},tag=!pulled_left,tag=!pulled_right,tag=!pulled_front,tag=!pulled_back] add pulled_right
+execute if score #temp FurnitureSizeForward matches 3.. if score #temp FurnitureSizeForward > #temp Time run tag @s[scores={SearcherID=-2147483648..},tag=back,tag=!pulled_left,tag=!pulled_right,tag=!pulled_front,tag=!pulled_back] add pulled_back
+execute if score #temp FurnitureSizeForward matches ..-3 if score #temp FurnitureSizeForward < #temp Time run tag @s[scores={SearcherID=-2147483648..},tag=front,tag=!pulled_left,tag=!pulled_right,tag=!pulled_front,tag=!pulled_back] add pulled_front
+execute if score #temp FurnitureSizeLeft matches ..-3 unless score #temp FurnitureSizeForward = #temp Time run tag @s[scores={SearcherID=-2147483648..},tag=left,tag=!pulled_left,tag=!pulled_right,tag=!pulled_front,tag=!pulled_back] add pulled_left
+execute if score #temp FurnitureSizeLeft matches 3.. unless score #temp FurnitureSizeForward = #temp Time run tag @s[scores={SearcherID=-2147483648..},tag=right,tag=!pulled_left,tag=!pulled_right,tag=!pulled_front,tag=!pulled_back] add pulled_right
 data modify entity @s transformation set from storage luigis_mansion:data transformation
 data modify storage luigis_mansion:data temp_transformation set from storage luigis_mansion:data transformation
 data remove storage luigis_mansion:data transformation

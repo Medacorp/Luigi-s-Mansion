@@ -1,0 +1,2 @@
+data modify storage luigis_mansion:data furniture set value {room:30,water_elemental_source:{},particles:"spraying_water",searchable:["interact"],shake_animation:["interact"],no_visual_shake:1b,sound:{namespace:"luigis_mansion",id:"stone"},scan_result:{namespace:"luigis_mansion",id:"scan/scanner/92"}}
+execute positioned 649.0 102 12.0 rotated -90 0 run function luigis_mansion:spawn_furniture/fountain

@@ -1,16 +1,1 @@
-{
-    "parent": "luigis_mansion:item/menu",
-    "display": {
-		"firstperson_righthand": {
-            "scale": [ 0.68, 0.68, 0.68 ],
-			"translation": [-9.05, 8.25, 0]
-		},
-		"firstperson_lefthand": {
-            "scale": [ 0.68, 0.68, 0.68 ],
-			"translation": [-9.05, 8.25, 0]
-		}
-    },
-	"textures": {
-        "layer0": "luigis_mansion:item/menu/dialog/skip"
-    }
-}
+{"parent":"luigis_mansion:item/menu","display":{"firstperson_righthand":{"scale":[0.68,0.68,0.68],"translation":[-9.05,8.25,0]},"firstperson_lefthand":{"scale":[0.68,0.68,0.68],"translation":[-9.05,8.25,0]}},"textures":{"layer0":"luigis_mansion:item/menu/dialog/skip"}}

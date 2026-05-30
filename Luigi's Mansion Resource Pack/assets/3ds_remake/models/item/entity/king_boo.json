@@ -1,6 +1,1 @@
-{
-    "parent": "luigis_mansion:item/entity/boo",
-	"textures": {
-		"0": "3ds_remake:entity/king_boo"
-	}
-}
+{"parent":"luigis_mansion:item/entity/boo","textures":{"0":"3ds_remake:entity/king_boo"}}

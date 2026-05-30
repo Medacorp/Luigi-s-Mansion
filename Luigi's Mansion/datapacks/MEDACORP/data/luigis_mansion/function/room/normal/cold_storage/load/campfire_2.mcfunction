@@ -1,0 +1,2 @@
+data modify storage luigis_mansion:data furniture set value {room:68,tags:["sir_weston_campfire"],particles:"flames",ambient_light:{lit:0b},searchable:["interact","vacuum"],shake_animation:["interact","vacuum"],sound:{namespace:"luigis_mansion",id:"plant"},scan_result:{namespace:"luigis_mansion",id:"scan/scanner/111"}}
+execute positioned 724 2 5 rotated 90 0 run function luigis_mansion:spawn_furniture/campfire/left

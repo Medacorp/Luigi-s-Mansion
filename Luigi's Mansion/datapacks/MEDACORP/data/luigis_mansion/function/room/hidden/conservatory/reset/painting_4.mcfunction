@@ -1,1 +1,0 @@
-scoreboard players reset #conservatory_painting_4

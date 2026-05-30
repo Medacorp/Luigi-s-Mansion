@@ -9,3 +9,6 @@ execute if data storage luigis_mansion:data current_state.current_data.rooms.col
 execute unless entity @s[tag=!wall_warp,tag=!spectator] if entity @s[tag=!already_ticked] run function luigis_mansion:room/normal/cold_storage/wall_warp
 
 tag @s add already_ticked
+
+execute at @s run playsound luigis_mansion:ambience.freezing_wind ambient @s[scores={Jukebox=0,RoomNoise=0}] ~ ~ ~ 1000
+scoreboard players set @s[scores={Jukebox=0,RoomNoise=0}] RoomNoise 290

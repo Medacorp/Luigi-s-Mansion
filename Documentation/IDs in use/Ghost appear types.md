@@ -1,5 +1,3 @@
-Ghost appear types:
-
 ```
 Ghost                             | Types              | Default
 luigis_mansion:black_bogmire      | none, normal       | normal

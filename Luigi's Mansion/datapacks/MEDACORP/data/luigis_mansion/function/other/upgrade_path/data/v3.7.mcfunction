@@ -1,0 +1,16 @@
+execute unless data storage luigis_mansion:data update_data{data_version:8} run function luigis_mansion:other/upgrade_path/data/v3.4
+data modify storage luigis_mansion:data update_data merge value {data_version:9}
+execute if data storage luigis_mansion:data update_data{money_grabbed:["parlor_bookcase"]} run data modify storage luigis_mansion:data update_data.money_grabbed append value "parlor_small_bookcase"
+execute if data storage luigis_mansion:data update_data{money_grabbed:["laundry_room_cleaning_supply_cabinet"]} run data modify storage luigis_mansion:data update_data.money_grabbed append value "laundry_room_cleaning_cabinet"
+execute if data storage luigis_mansion:data update_data{money_grabbed:["conservatory_large_cabinet_mounted_potted_fern"]} run data modify storage luigis_mansion:data update_data.money_grabbed append value "conservatory_large_cabinet_mounted_metal_flower_pot"
+execute if data storage luigis_mansion:data update_data{money_grabbed:["kitchen_dish_cabinet"]} run data modify storage luigis_mansion:data update_data.money_grabbed append value "kitchen_food_cabinet"
+execute if data storage luigis_mansion:data update_data{money_grabbed:["kitchen_oven"]} run data modify storage luigis_mansion:data update_data.money_grabbed append value "kitchen_stove"
+execute if data storage luigis_mansion:data update_data{money_grabbed:["tea_room_giant_cabinet_drawers_2"]} run data modify storage luigis_mansion:data update_data.money_grabbed append value "tea_room_giant_cabinet_2"
+execute if data storage luigis_mansion:data update_data{money_grabbed:["tea_room_crystal_chandelier"]} run data modify storage luigis_mansion:data update_data.money_grabbed append value "tea_room_capped_crystal_chandelier"
+execute if data storage luigis_mansion:data update_data{money_grabbed:["telephone_room_wooden_cabinet_2"]} run data modify storage luigis_mansion:data update_data.money_grabbed append value "telephone_room_large_bookcase_2"
+execute if data storage luigis_mansion:data update_data{money_grabbed:["cellar_shelf_1"]} run data modify storage luigis_mansion:data update_data.money_grabbed append value "cellar_three_boxes_1"
+execute if data storage luigis_mansion:data update_data{money_grabbed:["cellar_shelf_contents_vases_2"]} run data modify storage luigis_mansion:data update_data.money_grabbed append value "cellar_vases_and_bags_2"
+execute if data storage luigis_mansion:data update_data{money_grabbed:["cellar_shelf_contents_old_junk_1"]} run data modify storage luigis_mansion:data update_data.money_grabbed append value "cellar_bags_box_and_plate_1"
+execute if data storage luigis_mansion:data update_data{money_grabbed:["cellar_shelf_contents_old_junk_2"]} run data modify storage luigis_mansion:data update_data.money_grabbed append value "cellar_bags_box_and_plate_2"
+execute if data storage luigis_mansion:data update_data{money_grabbed:["cellar_shelf_contents_trophies_1"]} run data modify storage luigis_mansion:data update_data.money_grabbed append value "cellar_trophies_vase_and_plate_1"
+execute if data storage luigis_mansion:data update_data{money_grabbed:["cellar_shelf_contents_trophies_2"]} run data modify storage luigis_mansion:data update_data.money_grabbed append value "cellar_trophies_vase_and_plate_2"

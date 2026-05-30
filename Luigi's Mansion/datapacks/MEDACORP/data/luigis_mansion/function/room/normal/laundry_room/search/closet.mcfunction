@@ -1,5 +1,6 @@
 execute unless score #laundry_room_closet Searched matches 1 run data modify storage luigis_mansion:data furniture set value {room:22,tags:["drop_loot"]}
-execute unless score #laundry_room_closet Searched matches 1 unless data storage luigis_mansion:data current_state.current_data{money_spawned:["laundry_room_cleaning_supply_cabinet"]} run data modify storage luigis_mansion:data furniture.loot set value {name:"laundry_room_cleaning_supply_cabinet",contents:{luigis_mansion:{gold_coin:10,bill:10}}}
+execute unless score #laundry_room_closet Searched matches 1 unless data storage luigis_mansion:data current_state.current_data{money_spawned:["laundry_room_cleaning_cabinet"]} run data modify storage luigis_mansion:data furniture.loot set value {name:"laundry_room_cleaning_cabinet"}
+execute unless score #laundry_room_closet Searched matches 1 unless data storage luigis_mansion:data current_state.current_data{money_spawned:["laundry_room_cleaning_cabinet"]} run data modify storage luigis_mansion:data furniture.loot.contents set from storage luigis_mansion:data current_state.current_data.loot_collections.furniture.10_gold_coins_and_bills
 execute unless score #laundry_room_closet Searched matches 1 as @e[tag=luigi] if score #laundry_room_closet SearcherID = @s ID run tag @s add searcher
 execute unless score #laundry_room_closet Searched matches 1 run function luigis_mansion:entities/furniture/loot_chance/health_dependent_1
 execute unless score #laundry_room_closet Searched matches 1 run tag @e[tag=searcher] remove searcher

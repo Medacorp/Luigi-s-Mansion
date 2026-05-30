@@ -11,30 +11,28 @@ execute if entity @s[scores={Room=11..12}] run summon minecraft:marker ~ ~ ~ {Ta
 execute if entity @s[scores={Room=12..13}] run summon minecraft:marker ~ ~ ~ {Tags:["choice","storage_room"]}
 execute if entity @s[scores={Room=12..13}] unless entity @s[tag=!area_3,tag=!area_4] run summon minecraft:marker ~ ~ ~ {Tags:["choice","projection_room"]}
 execute if entity @s[scores={Room=13}] unless entity @s[tag=!area_3,tag=!area_4] run summon minecraft:marker ~ ~ ~ {Tags:["choice","rec_room"]}
-execute if entity @s[scores={Room=13..14}] run summon minecraft:marker ~ ~ ~ {Tags:["choice","conservatory"]}
-execute if entity @s[scores={Room=13..14}] unless entity @s[tag=!area_3,tag=!area_4] run summon minecraft:marker ~ ~ ~ {Tags:["choice","billiards_room"]}
-execute if entity @s[scores={Room=13..14}] run summon minecraft:marker ~ ~ ~ {Tags:["choice","washroom_1"]}
-execute if entity @s[scores={Room=14}] run summon minecraft:marker ~ ~ ~ {Tags:["choice","bathroom_1"]}
+execute if entity @s[scores={Room=13}] run summon minecraft:marker ~ ~ ~ {Tags:["choice","conservatory"]}
+execute if entity @s[scores={Room=13}] unless entity @s[tag=!area_3,tag=!area_4] run summon minecraft:marker ~ ~ ~ {Tags:["choice","billiards_room"]}
 execute if entity @s[scores={Room=35}] run summon minecraft:marker ~ ~ ~ {Tags:["choice","tea_room"]}
+execute if entity @s[scores={Room=35}] run summon minecraft:marker ~ ~ ~ {Tags:["choice","wardrobe_room"]}
+execute if entity @s[scores={Room=35}] run summon minecraft:marker ~ ~ ~ {Tags:["choice","washroom_2"]}
 execute if entity @s[scores={Room=35..36}] run summon minecraft:marker ~ ~ ~ {Tags:["choice","nanas_room"]}
-execute if entity @s[scores={Room=35..36}] run summon minecraft:marker ~ ~ ~ {Tags:["choice","wardrobe_room"]}
-execute if entity @s[scores={Room=35..36}] run summon minecraft:marker ~ ~ ~ {Tags:["choice","washroom_2"]}
-execute if entity @s[scores={Room=35..38}] unless entity @s[scores={Room=36}] run summon minecraft:marker ~ ~ ~ {Tags:["choice","astral_hall"]}
+execute if entity @s[scores={Room=35..37}] unless entity @s[scores={Room=36}] run summon minecraft:marker ~ ~ ~ {Tags:["choice","anteroom"]}
+execute if entity @s[scores={Room=35..37}] unless entity @s[scores={Room=36}] run summon minecraft:marker ~ ~ ~ {Tags:["choice","astral_hall"]}
 execute if entity @s[scores={Room=36}] run summon minecraft:marker ~ ~ ~ {Tags:["choice","bathroom_2"]}
-execute if entity @s[scores={Room=37..38}] run summon minecraft:marker ~ ~ ~ {Tags:["choice","anteroom"]}
-execute if entity @s[scores={Room=37..38}] run summon minecraft:marker ~ ~ ~ {Tags:["choice","parlor"]}
-execute if entity @s[scores={Room=39..40}] run summon minecraft:marker ~ ~ ~ {Tags:["choice","sitting_room"]}
-execute if entity @s[scores={Room=39..40}] unless entity @s[tag=!area_4] run summon minecraft:marker ~ ~ ~ {Tags:["choice","guest_room"]}
-execute if entity @s[scores={Room=51..52}] run summon minecraft:marker ~ ~ ~ {Tags:["choice","safari_room"]}
-execute if entity @s[scores={Room=51..52}] unless entity @s[tag=!area_4] run summon minecraft:marker ~ ~ ~ {Tags:["choice","artist_studio"]}
-execute if entity @s[scores={Room=54..55}] run summon minecraft:marker ~ ~ ~ {Tags:["choice","telephone_room"]}
-execute if entity @s[scores={Room=54..55}] run summon minecraft:marker ~ ~ ~ {Tags:["choice","clockwork_room"]}
-execute if entity @s[scores={Room=54..55}] run summon minecraft:marker ~ ~ ~ {Tags:["choice","armory"]}
-execute if entity @s[scores={Room=54..55}] run summon minecraft:marker ~ ~ ~ {Tags:["choice","cermatics_studio"]}
-execute if entity @s[scores={Room=59..60}] run summon minecraft:marker ~ ~ ~ {Tags:["choice","breaker_room"]}
-execute if entity @s[scores={Room=59..60}] run summon minecraft:marker ~ ~ ~ {Tags:["choice","cellar"]}
-execute if entity @s[scores={Room=59..60}] run summon minecraft:marker ~ ~ ~ {Tags:["choice","pipe_room"]}
-execute if entity @s[scores={Room=59..60}] run summon minecraft:marker ~ ~ ~ {Tags:["choice","cold_storage"]}
+execute if entity @s[scores={Room=38}] run summon minecraft:marker ~ ~ ~ {Tags:["choice","parlor"]}
+execute if entity @s[scores={Room=39}] run summon minecraft:marker ~ ~ ~ {Tags:["choice","sitting_room"]}
+execute if entity @s[scores={Room=39}] run summon minecraft:marker ~ ~ ~ {Tags:["choice","guest_room"]}
+execute if entity @s[scores={Room=51}] run summon minecraft:marker ~ ~ ~ {Tags:["choice","safari_room"]}
+execute if entity @s[scores={Room=52}] run summon minecraft:marker ~ ~ ~ {Tags:["choice","artist_studio"]}
+execute if entity @s[scores={Room=54}] run summon minecraft:marker ~ ~ ~ {Tags:["choice","clockwork_room"]}
+execute if entity @s[scores={Room=54}] run summon minecraft:marker ~ ~ ~ {Tags:["choice","cermatics_studio"]}
+execute if entity @s[scores={Room=55}] run summon minecraft:marker ~ ~ ~ {Tags:["choice","telephone_room"]}
+execute if entity @s[scores={Room=55}] run summon minecraft:marker ~ ~ ~ {Tags:["choice","armory"]}
+execute if entity @s[scores={Room=59}] run summon minecraft:marker ~ ~ ~ {Tags:["choice","cellar"]}
+execute if entity @s[scores={Room=59}] run summon minecraft:marker ~ ~ ~ {Tags:["choice","cold_storage"]}
+execute if entity @s[scores={Room=60}] run summon minecraft:marker ~ ~ ~ {Tags:["choice","breaker_room"]}
+execute if entity @s[scores={Room=60}] run summon minecraft:marker ~ ~ ~ {Tags:["choice","pipe_room"]}
 tag @e[type=minecraft:marker,tag=choice,sort=random,limit=1] add selected
 execute if entity @e[type=minecraft:marker,tag=choice,tag=selected,limit=1,tag=study] run scoreboard players set @s Room 8
 execute if entity @e[type=minecraft:marker,tag=choice,tag=selected,limit=1,tag=master_bedroom] run scoreboard players set @s Room 9
@@ -51,8 +49,6 @@ execute if entity @e[type=minecraft:marker,tag=choice,tag=selected,limit=1,tag=p
 execute if entity @e[type=minecraft:marker,tag=choice,tag=selected,limit=1,tag=rec_room] run scoreboard players set @s Room 32
 execute if entity @e[type=minecraft:marker,tag=choice,tag=selected,limit=1,tag=conservatory] run scoreboard players set @s Room 25
 execute if entity @e[type=minecraft:marker,tag=choice,tag=selected,limit=1,tag=billiards_room] run scoreboard players set @s Room 47
-execute if entity @e[type=minecraft:marker,tag=choice,tag=selected,limit=1,tag=washroom_1] run scoreboard players set @s Room 19
-execute if entity @e[type=minecraft:marker,tag=choice,tag=selected,limit=1,tag=bathroom_1] run scoreboard players set @s Room 16
 execute if entity @e[type=minecraft:marker,tag=choice,tag=selected,limit=1,tag=guest_room] run scoreboard players set @s Room 70
 execute if entity @e[type=minecraft:marker,tag=choice,tag=selected,limit=1,tag=sitting_room] run scoreboard players set @s Room 69
 execute if entity @e[type=minecraft:marker,tag=choice,tag=selected,limit=1,tag=parlor] run scoreboard players set @s Room 3

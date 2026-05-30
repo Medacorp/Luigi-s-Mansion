@@ -1,2 +1,0 @@
-function luigis_mansion:room/exterior/gameboy_horror_scan/loaded_exterior with storage luigis_mansion:data loaded_exterior
-execute unless entity @s[scores={Selected=1..}] run function luigis_mansion:room/exterior/gameboy_horror_scan

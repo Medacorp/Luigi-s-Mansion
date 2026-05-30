@@ -6,7 +6,7 @@ execute as @e[tag=this_entity,tag=!model_piece,limit=1] store result storage lui
 scoreboard players operation @e[tag=this_entity,tag=model_piece] GhostNr = @e[tag=this_entity,tag=!model_piece,limit=1] GhostNr
 tag @e[tag=this_entity,tag=model_piece] remove this_entity
 scoreboard players operation @e[tag=this_entity,limit=1] ElementalNr = #entity ElementalNr
-data modify entity @e[tag=this_entity,limit=1] data.loot set from storage luigis_mansion:data current_state.current_data.ghosts.luigis_mansion.ice_elemental_ghost.loot
+data modify entity @e[tag=this_entity,limit=1] data.loot_storage set from storage luigis_mansion:data current_state.current_data.ghosts.luigis_mansion.ice_elemental_ghost.loot
 data modify entity @e[tag=this_entity,limit=1] data.damage set from storage luigis_mansion:data current_state.current_data.ghosts.luigis_mansion.ice_elemental_ghost.damage
 execute as @e[tag=this_entity,limit=1] store result score @s Move run data get storage luigis_mansion:data current_state.current_data.ghosts.luigis_mansion.ice_elemental_ghost.speed
 scoreboard players set @e[tag=this_entity,limit=1] SpawnTime 0

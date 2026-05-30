@@ -1,6 +1,1 @@
-{
-	"parent": "luigis_mansion:furniture/door_frame/none",
-	"textures": {
-		"door": "luigis_mansion:furniture/door_frame/marble"
-	}
-}
+{"parent":"luigis_mansion:furniture/door_frame/none","textures":{"door":"luigis_mansion:furniture/door_frame/marble"}}

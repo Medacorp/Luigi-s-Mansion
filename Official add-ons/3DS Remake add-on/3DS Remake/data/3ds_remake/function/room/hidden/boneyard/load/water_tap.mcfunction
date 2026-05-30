@@ -1,0 +1,3 @@
+data modify storage luigis_mansion:data furniture set value {room:28,searchable:["interact","vacuum"],shake_animation:["interact","vacuum"],sound:{namespace:"luigis_mansion",id:"metal"},scan_result:{namespace:"luigis_mansion",id:"scan/scanner/92"}}
+execute unless data storage luigis_mansion:data current_state.current_data.portrait_battle run data modify storage luigis_mansion:data furniture merge value {particles:"dripping_water",water_elemental_source:{}}
+execute positioned 681 102 39 rotated -10 0 run function luigis_mansion:spawn_furniture/water_tap

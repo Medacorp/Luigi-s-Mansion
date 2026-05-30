@@ -3,15 +3,12 @@ execute if entity @s[scores={Room=5}] run function 3ds_remake:entities/hidden_bo
 execute if entity @s[scores={Room=8}] run function 3ds_remake:entities/hidden_boo/swap_spot/hidden/study
 execute if entity @s[scores={Room=9}] run function 3ds_remake:entities/hidden_boo/swap_spot/hidden/master_bedroom
 execute if entity @s[scores={Room=10}] run function 3ds_remake:entities/hidden_boo/swap_spot/hidden/nursery
-execute if entity @s[scores={Room=16}] run function 3ds_remake:entities/hidden_boo/swap_spot/hidden/bathroom_1
 execute if entity @s[scores={Room=17}] run function 3ds_remake:entities/hidden_boo/swap_spot/hidden/ball_room
 execute if entity @s[scores={Room=18}] run function 3ds_remake:entities/hidden_boo/swap_spot/hidden/storage_room
-execute if entity @s[scores={Room=19}] run function 3ds_remake:entities/hidden_boo/swap_spot/hidden/washroom_1
 execute if entity @s[scores={Room=20}] run function 3ds_remake:entities/hidden_boo/swap_spot/hidden/fortune_tellers_room
 execute if entity @s[scores={Room=21}] run function 3ds_remake:entities/hidden_boo/swap_spot/hidden/mirror_room
 execute if entity @s[scores={Room=22}] run function 3ds_remake:entities/hidden_boo/swap_spot/hidden/laundry_room
 execute if entity @s[scores={Room=23}] run function 3ds_remake:entities/hidden_boo/swap_spot/hidden/butlers_room
-execute if entity @s[scores={Room=24}] run function 3ds_remake:entities/hidden_boo/swap_spot/hidden/hidden_room
 execute if entity @s[scores={Room=25}] run function 3ds_remake:entities/hidden_boo/swap_spot/hidden/conservatory
 execute if entity @s[scores={Room=26}] run function 3ds_remake:entities/hidden_boo/swap_spot/hidden/dining_room
 execute if entity @s[scores={Room=27}] run function 3ds_remake:entities/hidden_boo/swap_spot/hidden/kitchen
@@ -30,7 +27,6 @@ execute if entity @s[scores={Room=57}] run function 3ds_remake:entities/hidden_b
 execute if entity @s[scores={Room=58}] run function 3ds_remake:entities/hidden_boo/swap_spot/hidden/cellar
 execute if entity @s[scores={Room=62}] run function 3ds_remake:entities/hidden_boo/swap_spot/hidden/clockwork_room
 execute if entity @s[scores={Room=64}] run function 3ds_remake:entities/hidden_boo/swap_spot/hidden/armory
-execute if entity @s[scores={Room=65}] run function 3ds_remake:entities/hidden_boo/swap_spot/hidden/ceramics_studio
 execute if entity @s[scores={Room=67}] run function 3ds_remake:entities/hidden_boo/swap_spot/hidden/pipe_room
 execute if entity @s[scores={Room=68}] run function 3ds_remake:entities/hidden_boo/swap_spot/hidden/cold_storage
 execute if entity @s[scores={Room=69}] run function 3ds_remake:entities/hidden_boo/swap_spot/hidden/sitting_room

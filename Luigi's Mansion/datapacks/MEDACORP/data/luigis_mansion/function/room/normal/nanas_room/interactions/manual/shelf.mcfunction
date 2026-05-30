@@ -1,4 +1,4 @@
-tag @s[x=654.0,y=24,z=-17.0,dx=0,dy=0,dz=4,tag=check] add can_interact
-execute if entity @s[x=654.0,y=24,z=-17.0,dx=0,dy=0,dz=4,tag=sound] run function luigis_mansion:blocks/search_sound/generic
-execute if entity @s[x=654.0,y=24,z=-17.0,dx=0,dy=0,dz=4,tag=!sound,tag=!check] run scoreboard players operation #nanas_room_shelf SearcherID = #temp ID
-execute if entity @s[x=654.0,y=24,z=-17.0,dx=0,dy=0,dz=4,tag=!sound,tag=!check] run function luigis_mansion:room/normal/nanas_room/search/boo_check/shelf
+tag @s[x=654.0,y=24,z=-16.0,dx=0,dy=0,dz=2,tag=check] add can_interact
+execute if entity @s[x=654.0,y=24,z=-16.0,dx=0,dy=0,dz=2,tag=sound] run function luigis_mansion:blocks/search_sound/generic
+execute if entity @s[x=654.0,y=24,z=-16.0,dx=0,dy=0,dz=2,tag=!sound,tag=!check] run scoreboard players operation #nanas_room_shelf SearcherID = #temp ID
+execute if entity @s[x=654.0,y=24,z=-16.0,dx=0,dy=0,dz=2,tag=!sound,tag=!check] run function luigis_mansion:room/normal/nanas_room/search/boo_check/shelf

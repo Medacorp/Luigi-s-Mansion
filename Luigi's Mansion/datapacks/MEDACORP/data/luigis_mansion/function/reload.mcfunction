@@ -1,12 +1,14 @@
-tellraw @a {type:"translatable",translate:"chat.type.text",with:[{type:"translatable",translate:"luigis_mansion:entity.mansion",color:"green"},{type:"translatable",translate:"luigis_mansion:message.reloaded"}]}
+tellraw @a[scores={Offline=0}] {type:"translatable",translate:"chat.type.text",with:[{type:"translatable",translate:"luigis_mansion:entity.mansion",color:"green"},{type:"translatable",translate:"luigis_mansion:message.reloaded"}]}
 
 function #luigis_mansion:anti_cheating/scores
 scoreboard players reset * Loaded
 scoreboard players set #training_choice Selected 0
 scoreboard players set #extra_gallery Selected 0
+data modify storage luigis_mansion:data bad_add_ons set value []
 function #luigis_mansion:loaded_add_ons
 function #luigis_mansion:post_loaded_add_ons
 
+tag @a add warn_for_add_ons
 scoreboard players add * Offline 1
 scoreboard players reset @e Offline
 scoreboard players set @a Offline 0

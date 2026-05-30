@@ -1,8 +1,1 @@
-{
-	"parent": "luigis_mansion:entity/billiards_ball",
-	"credit": "Made with Blockbench",
-	"textures": {
-		"north": "luigis_mansion:entity/ball/billiards/red_face",
-		"south": "luigis_mansion:entity/ball/billiards/red"
-	}
-}
+{"parent":"luigis_mansion:entity/billiards_ball","textures":{"north":"luigis_mansion:entity/ball/billiards/red_face","south":"luigis_mansion:entity/ball/billiards/red"}}

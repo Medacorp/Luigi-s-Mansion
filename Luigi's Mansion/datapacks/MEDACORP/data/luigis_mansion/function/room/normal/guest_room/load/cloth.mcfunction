@@ -1,0 +1,4 @@
+data modify storage luigis_mansion:data furniture set value {room:70,no_dust:1b,hitbox:{rotated_box:{left:42,up:8,forward:30}},searchable:["vacuum"],scan_result:{namespace:"luigis_mansion",id:"scan/scanner/55"}}
+execute unless data storage luigis_mansion:data current_state.current_data.rooms.guest_room{cleared:1b} run data modify storage luigis_mansion:data furniture.pose set value [-4.2f,0f,0f,0f,0f,-0.8f,0f,0f,0f,0f,3f,0f,0f,0f,0f,1f]
+execute unless data storage luigis_mansion:data current_state.current_data.rooms.guest_room{cleared:1b} positioned 742.0 25.95 -58 rotated 0 0 run function luigis_mansion:spawn_furniture/cloth/lined_bedsheet
+execute if data storage luigis_mansion:data current_state.current_data.rooms.guest_room{cleared:1b} positioned 742.0 21.05 -58 rotated 0 0 run function luigis_mansion:spawn_furniture/cloth/lined_bedsheet

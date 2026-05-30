@@ -126,7 +126,6 @@ execute if entity @s[scores={Dialog=570}] run setblock 770 81 -7 minecraft:green
 execute if entity @s[scores={Dialog=570}] run setblock 770 79 -7 minecraft:air
 execute if entity @s[scores={Dialog=570},tag=!dead] run data merge entity @s {Pose:{Head:[-90.0f,0.0f,0.0f]}}
 execute if entity @s[scores={Dialog=570},tag=!dead] run function luigis_mansion:entities/portrificationizing_ghost/portrait with entity @s data.ghost
-execute if entity @s[scores={Dialog=570},tag=!dead] run function luigis_mansion:entities/portrificationizing_ghost/clear_rooms with storage luigis_mansion:data current_state.current_data.mansion_id
 execute if entity @s[scores={Dialog=570}] run teleport @s 770 77.95 -8 -90 0
 execute if entity @s[scores={Dialog=575}] run teleport @s 770 77.95 -9
 execute if entity @s[scores={Dialog=580}] run teleport @s 770 77.95 -10

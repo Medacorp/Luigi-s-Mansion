@@ -1,0 +1,1 @@
+$execute if entity @e[nbt={data:{owner:$(UUID)}}] run tag @s remove successful_spawn

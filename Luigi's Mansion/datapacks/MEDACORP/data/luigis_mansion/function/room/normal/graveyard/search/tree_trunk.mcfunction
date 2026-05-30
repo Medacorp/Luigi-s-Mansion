@@ -1,2 +1,0 @@
-execute unless score #graveyard_tree_trunk Searched matches 1 as @a[scores={Room=29}] run function luigis_mansion:other/music/set/secret_revealed
-scoreboard players set #graveyard_tree_trunk Searched 1

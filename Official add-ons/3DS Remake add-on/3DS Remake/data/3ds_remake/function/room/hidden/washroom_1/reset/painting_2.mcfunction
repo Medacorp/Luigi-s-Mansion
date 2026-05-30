@@ -1,1 +1,0 @@
-scoreboard players reset #washroom_1_painting_2

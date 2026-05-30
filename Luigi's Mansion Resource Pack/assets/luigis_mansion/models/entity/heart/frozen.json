@@ -1,7 +1,1 @@
-{
-	"parent": "luigis_mansion:entity/heart/elemental",
-	"credit": "Made with Blockbench",
-	"textures": {
-		"0": "luigis_mansion:entity/heart/frozen"
-	}
-}
+{"parent":"luigis_mansion:entity/heart/elemental","textures":{"0":"luigis_mansion:entity/heart/frozen"}}

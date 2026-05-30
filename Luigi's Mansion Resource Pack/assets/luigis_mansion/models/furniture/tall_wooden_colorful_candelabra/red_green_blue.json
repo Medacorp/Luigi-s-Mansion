@@ -1,7 +1,1 @@
-{
-	"parent": "luigis_mansion:furniture/tall_wooden_colorful_candelabra/blue_green_red",
-	"textures": {
-		"1": "luigis_mansion:furniture/candle/blue",
-		"2": "luigis_mansion:furniture/candle/red"
-	}
-}
+{"parent":"luigis_mansion:furniture/tall_wooden_colorful_candelabra/blue_green_red","textures":{"1":"luigis_mansion:furniture/candle/blue","2":"luigis_mansion:furniture/candle/red"}}

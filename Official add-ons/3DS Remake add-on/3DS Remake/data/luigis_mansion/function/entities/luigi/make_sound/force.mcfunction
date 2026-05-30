@@ -1,5 +1,7 @@
 execute unless entity @a[tag=same_room,limit=1] run tag @s add clear_room
+scoreboard players operation #temp Room = @s Room
 execute if entity @s[tag=clear_room] as @a run function luigis_mansion:main/get_same_room
+scoreboard players reset #temp Room
 $execute at @s[scores={Health=71..,Shrunk=0},tag=!gooigi] run playsound $(high) player @a[tag=same_room] ~ ~ ~ 1
 $execute at @s[scores={Health=71..,Shrunk=1..},tag=!gooigi] run playsound $(high) player @a[tag=same_room] ~ ~ ~ 1 2
 $execute at @s[scores={Health=41..70,Shrunk=0},tag=!gooigi] run playsound $(medium) player @a[tag=same_room] ~ ~ ~ 1

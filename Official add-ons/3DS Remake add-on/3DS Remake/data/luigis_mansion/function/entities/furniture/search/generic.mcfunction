@@ -4,7 +4,7 @@ scoreboard players reset #temp ID
 scoreboard players set @s FurnitureSpins 0
 tag @s add open
 tag @s[tag=light_on_search] add lit
-summon minecraft:marker ~ ~1.4 ~ {Tags:["location","remove_from_existence"]}
+summon minecraft:marker ~ ~1.43875 ~ {Tags:["location","remove_from_existence"]}
 execute store result entity @e[tag=location,limit=1] Pos[1] double 0.1 run scoreboard players get @s PositionY
 execute if data entity @s data.loot_chance run function luigis_mansion:entities/furniture/loot_chance with entity @s data.loot_chance
 execute at @e[tag=location] unless entity @e[distance=..0.1,tag=hidden_boo,tag=caught_by_boo_radar,limit=1] at @s rotated ~ 0 unless entity @s[nbt={data:{loot:{}}}] if entity @s[tag=!no_dust] run function luigis_mansion:entities/furniture/spawn/dust
@@ -14,6 +14,7 @@ execute at @e[tag=location] if entity @e[distance=..0.1,tag=hidden_boo,tag=caugh
 execute at @e[tag=location] if entity @e[distance=..0.1,tag=ghost,tag=hiding_in_furniture,limit=1] at @s rotated ~ 0 run function luigis_mansion:entities/furniture/spawn/ghost
 execute if score @s[tag=grants_water_plant_task] FurnitureWater >= @s FurnitureSearch run function 3ds_remake:selection_menu/gallery_trophy/complete/beginner/task_5
 scoreboard players reset @s SearcherID
+scoreboard players reset @s ShakerID
 execute if entity @s[tag=no_dust,tag=no_loot,tag=no_search_command,tag=!can_hide_boo,scores={ActionTime=-1}] at @e[tag=location] unless entity @e[distance=..0.1,tag=ghost,tag=hiding_in_furniture,limit=1] run tag @s add no_loot_tick
 kill @e[tag=location]
 tag @s add searched

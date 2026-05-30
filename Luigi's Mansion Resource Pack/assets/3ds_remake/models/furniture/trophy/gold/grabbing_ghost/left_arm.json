@@ -1,6 +1,1 @@
-{
-	"parent": "luigis_mansion:entity/grabbing_ghost/left_arm",
-	"textures": {
-		"0": "3ds_remake:furniture/trophy/gold/grabbing_ghost"
-	}
-}
+{"parent":"luigis_mansion:entity/grabbing_ghost/left_arm","textures":{"0":"3ds_remake:furniture/trophy/gold/grabbing_ghost"}}

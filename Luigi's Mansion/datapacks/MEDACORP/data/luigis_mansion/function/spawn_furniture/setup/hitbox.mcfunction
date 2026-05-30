@@ -4,10 +4,11 @@ execute if data storage luigis_mansion:data furniture.hitbox.box store result sc
 execute if data storage luigis_mansion:data furniture.hitbox.rotated_box store result score @e[tag=this_entity,limit=1] FurnitureSizeLeft run data get storage luigis_mansion:data furniture.hitbox.rotated_box.left
 execute if data storage luigis_mansion:data furniture.hitbox.rotated_box store result score @e[tag=this_entity,limit=1] FurnitureSizeUp run data get storage luigis_mansion:data furniture.hitbox.rotated_box.up
 execute if data storage luigis_mansion:data furniture.hitbox.rotated_box store result score @e[tag=this_entity,limit=1] FurnitureSizeForward run data get storage luigis_mansion:data furniture.hitbox.rotated_box.forward
-# Cloth always is hanging
+# Cloth and curtains always are hanging
 tag @e[tag=this_entity,tag=cloth,limit=1] add hanging_furniture
-execute if data storage luigis_mansion:data furniture.hitbox{type:"hanging"} run tag @e[tag=this_entity,tag=!cloth,limit=1] add hanging_furniture
-execute if data storage luigis_mansion:data furniture.hitbox{type:"standing"} run tag @e[tag=this_entity,tag=!cloth,limit=1] add standing_furniture
+tag @e[tag=this_entity,tag=curtain,limit=1] add hanging_furniture
+execute if data storage luigis_mansion:data furniture.hitbox{type:"hanging"} run tag @e[tag=this_entity,tag=!cloth,tag=!curtain,limit=1] add hanging_furniture
+execute if data storage luigis_mansion:data furniture.hitbox{type:"standing"} run tag @e[tag=this_entity,tag=!cloth,tag=!curtain,limit=1] add standing_furniture
 # Type hanging -> align the top of the area with the provided coordinate, type standing -> same but bottom, other/none provided -> area is centered in height
 execute unless data storage luigis_mansion:data furniture.hitbox.radius unless data storage luigis_mansion:data furniture.hitbox.box unless data storage luigis_mansion:data furniture.hitbox.rotated_box run tag @e[tag=this_entity,limit=1] add remove_from_existence
 execute unless data storage luigis_mansion:data furniture.hitbox.rotated_box as @e[tag=this_entity,limit=1] unless entity @s[tag=!cloth,tag=!poster] run tag @s add remove_from_existence

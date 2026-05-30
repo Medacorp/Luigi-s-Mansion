@@ -1,0 +1,11 @@
+{
+    "replace": true,
+    "values": [
+        "luigis_mansion:selection_menu/dialog/choice/gallery/leave",
+        "luigis_mansion:selection_menu/dialog/choice/gallery/where",
+        "3ds_remake:selection_menu/dialog/choice/gallery/doors",
+        "luigis_mansion:selection_menu/dialog/choice/gallery/what",
+        "3ds_remake:selection_menu/dialog/choice/gallery/stand",
+        "luigis_mansion:selection_menu/dialog/choice/gallery/nothing"
+    ]
+}

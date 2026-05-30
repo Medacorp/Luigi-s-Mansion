@@ -6,8 +6,7 @@ execute if score #dialog Dialog matches 22.. as @a[tag=same_room,tag=dialog_menu
 
 scoreboard players reset @a[tag=same_room,tag=!spectator] WarpTime
 execute as @a[tag=same_room,tag=!spectator,tag=game_boy_horror_menu] run function luigis_mansion:selection_menu/game_boy_horror/exit
-tag @e[tag=e_gadd,tag=same_room,limit=1] remove freeze_animation
-tag @e[tag=gooigi,tag=same_room,limit=1] remove freeze_animation
+tag @e[tag=!furniture,tag=same_room] remove freeze_animation
 execute if score #dialog Dialog matches 1 unless data storage luigis_mansion:data current_state.current_data.mansion_id{namespace:"e3_demo",id:"original"} if entity @a[scores={Room=1..},tag=!spectator,limit=1] run data modify storage luigis_mansion:data dialogs append value {name:{namespace:"luigis_mansion",id:"go_to_mansion/failure"},progress:0,room:-1}
 execute if score #dialog Dialog matches 1 unless data storage luigis_mansion:data current_state.current_data.mansion_id{namespace:"e3_demo",id:"original"} if entity @a[scores={Room=1..},tag=!spectator,limit=1] run scoreboard players set #dialog Dialog -1
 

@@ -1,6 +1,1 @@
-{
-  "model": {
-    "type": "minecraft:model",
-    "model": "3ds_remake:furniture/hollow_portrait"
-  }
-}
+{"model":{"type":"minecraft:model","model":"3ds_remake:furniture/hollow_portrait"}}

@@ -1,0 +1,1 @@
+{"textures":{"particle":"#image","image":"luigis_mansion:furniture/mirror"},"elements":[{"from":[-3,-9,9],"to":[19,23,9],"faces":{"north":{"uv":[2.5,0,13.5,16],"texture":"#image"}}}],"display":{"head":{"translation":[0,-4.8,0],"scale":[1.6,1.6,1.6]}}}

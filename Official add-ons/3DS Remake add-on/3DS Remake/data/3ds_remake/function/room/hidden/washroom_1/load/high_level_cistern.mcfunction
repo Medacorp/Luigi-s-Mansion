@@ -1,0 +1,2 @@
+data modify storage luigis_mansion:data furniture set value {room:19,searchable:["interact","vacuum"],shake_animation:["interact","vacuum"],sound:{namespace:"luigis_mansion",id:"heavy_metal"},scan_result:{namespace:"luigis_mansion",id:"scan/scanner/12"}}
+execute positioned 664 11 46 rotated -75 0 run function luigis_mansion:spawn_furniture/high_level_cistern/right

@@ -1,3 +1,2 @@
 data modify storage luigis_mansion:data furniture set value {room:-4,searchable:["interact"],no_dust:1b,interact_animation:{namespace:"luigis_mansion",id:"inspect"}}
-execute positioned 17.96 4.5 25 rotated 90 0 run function luigis_mansion:spawn_furniture/mansion_rank_portrait
-execute if data storage luigis_mansion:data current_state.high_scores[-1] run function luigis_mansion:room/gallery/load/mansion_rank_portrait/get_high_score
+execute positioned 18.0 4.5 25 rotated 90 0 run function luigis_mansion:spawn_furniture/mansion_rank_portrait

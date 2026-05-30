@@ -1,0 +1,2 @@
+data modify storage luigis_mansion:data furniture set value {room:25,searchable:["interact"],shake_animation:["interact"],sound:{namespace:"luigis_mansion",id:"saxophone"},can_hide_boo:1b,scan_result:{namespace:"luigis_mansion",id:"scan/scanner/44"},instrument:{track:"saxophone"}}
+execute positioned 658 11 19 rotated -90 0 run function luigis_mansion:spawn_furniture/blue_padded_stool_mounted_saxophone

@@ -1,6 +1,1 @@
-{
-  "model": {
-    "type": "minecraft:model",
-    "model": "luigis_mansion:furniture/crystal_ball"
-  }
-}
+{"model":{"type":"minecraft:model","model":"luigis_mansion:furniture/crystal_ball"}}

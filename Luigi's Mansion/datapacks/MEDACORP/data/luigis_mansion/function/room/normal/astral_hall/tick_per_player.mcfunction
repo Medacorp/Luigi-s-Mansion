@@ -8,4 +8,6 @@ execute if data storage luigis_mansion:data current_state.current_data.rooms.ast
 
 execute unless entity @s[tag=!wall_warp,tag=!spectator] if entity @s[tag=!already_ticked] run function luigis_mansion:room/normal/astral_hall/wall_warp
 
+execute if entity @s[x=666.5,y=20.0,z=-90.5,distance=..1,tag=door_animation] unless data storage luigis_mansion:data dialogs[{room:45}] run function luigis_mansion:room/normal/astral_hall/trick_door
+
 tag @s add already_ticked

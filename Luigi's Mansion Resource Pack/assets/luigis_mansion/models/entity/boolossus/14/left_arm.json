@@ -1,15 +1,1 @@
-{
-	"parent": "luigis_mansion:entity/boolossus/1/left_arm",
-	"display": {
-		"thirdperson_lefthand": {
-			"rotation": [0, -90, 0],
-			"translation": [0, 0, 14],
-			"scale": [3.7857, 3.7857, 3.7857]
-		},
-		"head": {
-			"rotation": [0, 90, -90],
-			"translation": [0, -0.25, -3.25],
-			"scale": [3.7857, 3.7857, 3.7857]
-		}
-	}
-}
+{"parent":"luigis_mansion:entity/boolossus/1/left_arm","display":{"head":{"rotation":[0,90,-90],"translation":[0,-0.25,-3.25],"scale":[3.7857,3.7857,3.7857]}}}

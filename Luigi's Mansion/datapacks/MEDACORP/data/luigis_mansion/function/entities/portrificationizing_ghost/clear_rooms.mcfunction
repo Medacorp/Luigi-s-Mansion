@@ -1,1 +1,0 @@
-$function $(namespace):entities/portrificationizing_ghost/clear_rooms/$(id)

@@ -1,0 +1,2 @@
+data modify storage luigis_mansion:data furniture set value {room:9,hitbox:{box:{width:30,height:20}},scan_result:{namespace:"luigis_mansion",id:"scan/scanner/131"}}
+execute positioned 683 114 -30 rotated -90 0 run function luigis_mansion:spawn_furniture/scan_area

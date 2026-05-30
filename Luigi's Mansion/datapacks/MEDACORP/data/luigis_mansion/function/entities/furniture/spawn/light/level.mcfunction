@@ -1,3 +1,5 @@
+execute if entity @s[tag=lit,tag=falling] run fill ~-0.4 ~-2 ~-0.4 ~0.4 ~2 ~0.4 minecraft:air replace minecraft:light[waterlogged=false]
+execute if entity @s[tag=lit,tag=falling] run fill ~-0.4 ~-2 ~-0.4 ~0.4 ~2 ~0.4 minecraft:water[level=0] replace minecraft:light[waterlogged=true]
 execute if entity @s[tag=!lit] run fill ~-0.4 ~-0.4 ~-0.4 ~0.4 ~0.4 ~0.4 minecraft:air replace minecraft:light[waterlogged=false]
 execute if entity @s[tag=!lit] run fill ~-0.4 ~-0.4 ~-0.4 ~0.4 ~0.4 ~0.4 minecraft:water[level=0] replace minecraft:light[waterlogged=true]
 execute if entity @s[tag=lit,scores={FurnitureLightStrength=0}] run fill ~-0.4 ~-0.4 ~-0.4 ~0.4 ~0.4 ~0.4 minecraft:light[level=0,waterlogged=false] replace minecraft:air

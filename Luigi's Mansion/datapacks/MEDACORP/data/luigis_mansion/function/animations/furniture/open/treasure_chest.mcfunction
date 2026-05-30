@@ -1,8 +1,14 @@
 scoreboard players add @s ActionTime 1
+tag @s[scores={ActionTime=1},predicate=luigis_mansion:furniture/altered_pitch_chance] add altered_pitch
+execute if entity @s[scores={ActionTime=1},tag=!altered_pitch] run playsound luigis_mansion:furniture.treasure_chest block @a[tag=same_room] ~ ~ ~ 1 1
+execute if entity @s[scores={ActionTime=1},tag=altered_pitch] run playsound luigis_mansion:furniture.treasure_chest block @a[tag=same_room] ~ ~ ~ 1 0.8
+tag @s[scores={ActionTime=1}] remove altered_pitch
 execute store result score #temp Time run data get entity @s equipment.head.components."minecraft:custom_model_data".floats[0]
-execute if entity @s[scores={ActionTime=1}] store result entity @s equipment.head.components."minecraft:custom_model_data".floats[0] float 1 run scoreboard players add #temp Time 1
-execute if entity @s[scores={ActionTime=3}] store result entity @s equipment.head.components."minecraft:custom_model_data".floats[0] float 1 run scoreboard players add #temp Time 1
-execute if entity @s[scores={ActionTime=5}] store result entity @s equipment.head.components."minecraft:custom_model_data".floats[0] float 1 run scoreboard players add #temp Time 1
-execute if entity @s[scores={ActionTime=7}] store result entity @s equipment.head.components."minecraft:custom_model_data".floats[0] float 1 run scoreboard players add #temp Time 1
+execute if entity @s[scores={ActionTime=1..4}] store result entity @s equipment.head.components."minecraft:custom_model_data".floats[0] float 1 run scoreboard players add #temp Time 1
+execute store result score #temp Time run data get entity @s Pose.Head[0]
+execute if entity @s[scores={ActionTime=4}] store result entity @s Pose.Head[0] float 1 run scoreboard players remove #temp Time 4
+execute if entity @s[scores={ActionTime=7}] store result entity @s Pose.Head[0] float 1 run scoreboard players add #temp Time 5
+execute if entity @s[scores={ActionTime=8}] store result entity @s Pose.Head[0] float 1 run scoreboard players remove #temp Time 4
+execute if entity @s[scores={ActionTime=10}] store result entity @s Pose.Head[0] float 1 run scoreboard players add #temp Time 5
 scoreboard players reset #temp Time
-scoreboard players set @s[scores={ActionTime=8}] ActionTime -1
+scoreboard players set @s[scores={ActionTime=10}] ActionTime -1

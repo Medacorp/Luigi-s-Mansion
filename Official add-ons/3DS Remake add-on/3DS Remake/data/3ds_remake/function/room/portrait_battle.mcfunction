@@ -20,6 +20,7 @@ scoreboard players operation @s LastRoom = @s Room
 execute at @s as @a[tag=!same_room] run function luigis_mansion:entities/luigi/move/execute {execute:"positioned ~ ~ ~",teleport:"~ ~ ~"}
 
 execute as @e run data remove entity @s data.loot_chances
+execute as @e run data remove entity @s data.loot_storage
 execute as @e run data remove entity @s data.loot
 tag @e[tag=furniture,tag=!no_dust] add no_dust
 tag @e[tag=pearl_dropper] remove pearl_dropper

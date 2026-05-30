@@ -1,11 +1,7 @@
 {
     "values": [
-        "3ds_remake:room/hidden/cold_storage/interactions/room/campfire_1",
-        "3ds_remake:room/hidden/cold_storage/interactions/room/campfire_2",
-        "3ds_remake:room/hidden/cold_storage/interactions/room/campfire_3",
         "3ds_remake:room/hidden/cold_storage/interactions/room/crate_1",
         "3ds_remake:room/hidden/cold_storage/interactions/room/crate_2",
-        "3ds_remake:room/hidden/cold_storage/interactions/room/fire",
         "3ds_remake:room/hidden/cold_storage/interactions/room/junk",
         "3ds_remake:room/hidden/cold_storage/interactions/room/shelf_1",
         "3ds_remake:room/hidden/cold_storage/interactions/room/shelf_2"

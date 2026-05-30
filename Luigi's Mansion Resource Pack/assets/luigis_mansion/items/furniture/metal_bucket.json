@@ -1,6 +1,1 @@
-{
-  "model": {
-    "type": "minecraft:model",
-    "model": "luigis_mansion:furniture/metal_bucket"
-  }
-}
+{"model":{"type":"minecraft:model","model":"luigis_mansion:furniture/metal_bucket"}}

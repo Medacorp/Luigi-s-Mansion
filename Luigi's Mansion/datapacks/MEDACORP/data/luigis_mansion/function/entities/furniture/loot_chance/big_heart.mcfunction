@@ -1,0 +1,1 @@
+data modify storage luigis_mansion:data furniture.loot set value {contents:[{name:{namespace:"luigis_mansion",id:"item/big_heart"}}]}

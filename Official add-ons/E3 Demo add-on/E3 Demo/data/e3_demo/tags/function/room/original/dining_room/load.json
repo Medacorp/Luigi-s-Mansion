@@ -2,7 +2,8 @@
     "values": [
         "e3_demo:room/original/dining_room/load/set_loaded",
         "e3_demo:room/original/dining_room/load/lights",
-        "e3_demo:room/original/dining_room/load/clock",
+        "e3_demo:room/original/dining_room/load/chain_suspended_ovoid_lamp",
+        "e3_demo:room/original/dining_room/load/grandfather_clock",
         "e3_demo:room/original/dining_room/load/hallway_3_door",
         "e3_demo:room/original/dining_room/load/hallway_4_door",
         "e3_demo:room/original/dining_room/load/kitchen_door",

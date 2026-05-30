@@ -1,7 +1,1 @@
-{
-    "variants": {
-        "type=bottom": { "model": "luigis_mansion:block/carpeted_slab" },
-        "type=top": { "model": "luigis_mansion:block/carpeted_slab_top" },
-        "type=double": { "model": "minecraft:block/bricks" }
-    }
-}
+{"variants":{"type=bottom":{"model":"luigis_mansion:block/carpeted_slab"},"type=top":{"model":"luigis_mansion:block/carpeted_slab_top"},"type=double":{"model":"minecraft:block/bricks"}}}

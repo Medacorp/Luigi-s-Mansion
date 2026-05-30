@@ -26,5 +26,5 @@ execute if entity @s[scores={KillerID=-2147483648..}] run data modify entity @s 
 execute if entity @s[scores={KillerID=-2147483648..}] store result entity @s data.attacked_by[0] int 1 run scoreboard players get @s KillerID
 execute if entity @s[tag=dying] run tag @e[tag=luigi,tag=killer,limit=1] add capturing_ghost
 tag @e[tag=killer] remove killer
-
-execute if entity @s[tag=captured] if data entity @s data.loot run function luigis_mansion:other/drop_loot
+data modify entity @s[tag=captured] data.loot set from entity @s data.loot_storage.capture
+execute if data entity @s[tag=captured] data.loot run function luigis_mansion:other/drop_loot

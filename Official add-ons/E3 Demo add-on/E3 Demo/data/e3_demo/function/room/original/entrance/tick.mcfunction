@@ -1,15 +1,8 @@
 execute unless score #entrance Ticking matches 1 run function #e3_demo:room/original/entrance/load
 execute as @e[tag=player,x=743,y=10,z=-2,dx=15,dy=16,dz=21] unless entity @s[scores={Room=1}] run scoreboard players operation @s LastRoom = @s Room
 scoreboard players set @e[tag=player,x=743,y=10,z=-2,dx=15,dy=16,dz=21] Room 1
-#todelete - old furniture
-scoreboard players set #temp Room 1
-#/todelete
 
 execute as @a[scores={Room=1}] run function e3_demo:room/original/entrance/tick_per_player
-
-#todelete - old furniture
-function #e3_demo:room/original/entrance/interactions/room
-#/todelete
 
 execute if entity @e[tag=luigi,tag=!door_animation,scores={Room=1},limit=1] run function e3_demo:room/original/entrance/ghosts
 

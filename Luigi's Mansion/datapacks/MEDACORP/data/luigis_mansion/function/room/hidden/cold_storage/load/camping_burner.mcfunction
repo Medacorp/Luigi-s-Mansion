@@ -1,0 +1,2 @@
+data modify storage luigis_mansion:data furniture set value {room:68,particles:"flames",ambient_light:{lit:1b},fire_elemental_source:{timer:1b},searchable:["interact","vacuum"],shake_animation:["interact","vacuum"],sound:{namespace:"luigis_mansion",id:"metal"},scan_result:{namespace:"luigis_mansion",id:"scan/scanner/111"}}
+execute positioned 738 2 16 rotated -90 0 run function luigis_mansion:spawn_furniture/camping_burner/right

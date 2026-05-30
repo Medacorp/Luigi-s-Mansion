@@ -1,0 +1,1 @@
+scoreboard players set @s Sound 3

@@ -1,6 +1,1 @@
-{
-  "model": {
-    "type": "minecraft:model",
-    "model": "luigis_mansion:furniture/tall_neck_vase"
-  }
-}
+{"model":{"type":"minecraft:model","model":"luigis_mansion:furniture/tall_neck_vase"}}

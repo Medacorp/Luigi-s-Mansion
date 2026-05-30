@@ -59,7 +59,7 @@ execute if score #dialog Dialog matches 865 if score #players Totals matches 1 r
 execute if score #dialog Dialog matches 865 if score #players Totals matches 2.. run tellraw @a[tag=same_room] {type:"translatable",translate:"chat.type.text",with:[{type:"translatable",translate:"3ds_remake:entity.future_e_gadd",color:"green"},{type:"translatable",translate:"3ds_remake:dialog.future_e_gadd.9.more"}]}
 execute if score #dialog Dialog matches 865 as @a[tag=same_room] at @s run playsound luigis_mansion:entity.e_gadd.talk.mah_mah_mah_luigi_oui neutral @s ~ ~ ~ 1
 execute if score #dialog Dialog matches 1055 run data modify entity @e[tag=e_gadd,tag=same_room,limit=1] data.animation set value {namespace:"3ds_remake",id:"protect_eyes"}
-execute if score #dialog Dialog matches 1055..1155 run particle minecraft:flash 784 77 12 0 0 0 0 2 force
+execute if score #dialog Dialog matches 1055..1155 run particle minecraft:flash{color:-1} 784 77 12 0 0 0 0 2 force
 execute if score #dialog Dialog matches 1155 run data modify storage luigis_mansion:data entity set value {room:-1,animation:{namespace:"3ds_remake",id:"gooigi_pool"}}
 execute if score #dialog Dialog matches 1155 positioned 784 77 12 run function 3ds_remake:spawn_entities/gooigi/lab
 execute if score #dialog Dialog matches 1155 run data remove entity @e[tag=e_gadd,tag=same_room,limit=1] data.animation
@@ -103,6 +103,9 @@ execute if score #dialog Dialog matches 2498 if score #players Totals matches 2.
 execute if score #dialog Dialog matches 2498 if entity @a[tag=same_room,tag=next_dialog_line,limit=1] at @e[tag=e_gadd,tag=same_room,limit=1] run playsound luigis_mansion:entity.e_gadd.talk.oui_oydohroh_tahmentahkeh neutral @a[tag=same_room] ~ ~ ~ 1
 
 execute if score #dialog Dialog matches 2499 run data modify storage 3ds_remake:data spoke_with_future_e_gadd set value 1b
+execute if score #dialog Dialog matches 2499 run data modify storage 3ds_remake:data obtained_gameboy_horror_part set value 1b
+execute if score #dialog Dialog matches 2499 run data modify storage 3ds_remake:data shown_gameboy_horror_part set value 1b
+execute if score #dialog Dialog matches 2499 run data modify storage luigis_mansion:data rooms.gallery.cleared set value 1b
 execute if score #dialog Dialog matches 2499 run data remove entity @e[tag=e_gadd,tag=same_room,limit=1] data.animation
 execute if score #dialog Dialog matches 2499 run stopsound @a[tag=same_room] neutral luigis_mansion:entity.e_gadd.talk.oui_oydohroh_tahmentahkeh
 execute if score #dialog Dialog matches 2499 run data modify storage luigis_mansion:data dialogs append value {name:{namespace:"luigis_mansion",id:"underground_lab"},room:-1,progress:0}

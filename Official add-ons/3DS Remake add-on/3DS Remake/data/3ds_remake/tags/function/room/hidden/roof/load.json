@@ -2,7 +2,7 @@
     "values": [
         "3ds_remake:room/hidden/roof/load/set_loaded",
         "3ds_remake:room/hidden/roof/load/lights",
-        "3ds_remake:room/hidden/roof/load/fire",
+        "3ds_remake:room/hidden/roof/load/campfire",
         "3ds_remake:room/hidden/roof/load/room_clear_chest"
     ]
 }

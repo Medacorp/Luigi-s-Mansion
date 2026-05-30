@@ -4,6 +4,5 @@ tag @s[nbt=!{Dimension:"minecraft:overworld"}] remove loaded_chunks
 scoreboard players set @s[nbt=!{Dimension:"minecraft:overworld"}] LoadedChunks 0
 function luigis_mansion:entities/luigi/move/execute {execute:"in minecraft:overworld",teleport:"18.0 1 4.0 0 0"}
 scoreboard players set @s Room 1
-function luigis_mansion:entities/player/run_command_as_model {command:"scoreboard players set @s Room 1"}
 function luigis_mansion:items/poltergust_3000/remove_element
 scoreboard players set @s Health 100

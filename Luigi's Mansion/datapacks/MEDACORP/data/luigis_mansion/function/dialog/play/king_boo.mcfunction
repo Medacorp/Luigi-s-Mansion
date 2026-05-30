@@ -74,7 +74,7 @@ execute if score #dialog Dialog matches 154 at @e[tag=same_room,nbt={data:{entit
 execute if score #dialog Dialog matches 154 as @a[tag=same_room] run function luigis_mansion:other/music/set/secret_altar_magic
 execute if score #dialog Dialog matches 154..173 run effect give @a[tag=same_room] minecraft:nausea 6 0 true
 execute if score #dialog Dialog matches 174..193 run effect give @a[tag=same_room] minecraft:nausea 5 0 true
-execute if score #dialog Dialog matches 194 as @e[tag=same_room,nbt={data:{entity:{namespace:"luigis_mansion",id:"mario"}}},limit=1] at @s positioned ^ ^-1 ^-0.6 run function luigis_mansion:spawn_entities/bowser/painting
+execute if score #dialog Dialog matches 194 as @e[tag=same_room,nbt={data:{entity:{namespace:"luigis_mansion",id:"mario"}}},limit=1] at @s positioned ^ ^-1 ^-0.5 run function luigis_mansion:spawn_entities/bowser/painting
 execute if score #dialog Dialog matches 194..213 run effect give @a[tag=same_room] minecraft:nausea 4 0 true
 execute if score #dialog Dialog matches 214..233 run effect give @a[tag=same_room] minecraft:nausea 3 0 true
 execute if score #dialog Dialog matches 234 as @e[tag=same_room,tag=mario,limit=1] at @s run teleport @s ~ ~-4 ~

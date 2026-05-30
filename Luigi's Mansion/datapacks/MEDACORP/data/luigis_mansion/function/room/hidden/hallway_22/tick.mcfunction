@@ -8,5 +8,5 @@ scoreboard players set #temp Room 61
 execute as @e[tag=luigi,tag=!door_animation] run function luigis_mansion:main/get_same_room
 scoreboard players reset #temp Room
 execute if entity @e[tag=luigi,tag=same_room,limit=1] run function luigis_mansion:room/hidden/hallway_22/ghosts
-tag @a[tag=same_room] remove same_room
-tag @a[tag=exact_same_room] remove exact_same_room
+tag @e[tag=luigi,tag=same_room] remove same_room
+tag @e[tag=luigi,tag=exact_same_room] remove exact_same_room

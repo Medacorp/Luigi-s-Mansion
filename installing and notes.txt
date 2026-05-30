@@ -81,7 +81,6 @@ The best way to uninstall add-ons is as follows:
 
 == Server properties requirements ==
 difficulty=<desired difficulty>
-allow-flight=true
 
 == Credits ==
 Made by: Dhranios

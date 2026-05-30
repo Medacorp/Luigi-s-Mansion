@@ -1,3 +1,13 @@
+stopsound @s[scores={PositionIntX=722}] ambient luigis_mansion:ambience.freezing_wind
+scoreboard players set @s[scores={PositionIntX=722}] RoomNoise 1
+stopsound @s[scores={PositionIntZ=-5}] ambient luigis_mansion:ambience.freezing_wind
+scoreboard players set @s[scores={PositionIntZ=-5}] RoomNoise 1
+stopsound @s[scores={PositionIntY=9,PositionIntX=723..727}] ambient luigis_mansion:ambience.freezing_wind
+scoreboard players set @s[scores={PositionIntY=9,PositionIntX=723..727}] RoomNoise 1
+stopsound @s[scores={PositionIntY=9,PositionIntX=730..740,PositionIntZ=8..10}] ambient luigis_mansion:ambience.freezing_wind
+scoreboard players set @s[scores={PositionIntY=9,PositionIntX=730..740,PositionIntZ=8..10}] RoomNoise 1
+stopsound @s[scores={PositionIntY=9,PositionIntX=730..740,PositionIntZ=-4..5}] ambient luigis_mansion:ambience.freezing_wind
+scoreboard players set @s[scores={PositionIntY=9,PositionIntX=730..740,PositionIntZ=-4..5}] RoomNoise 1
 
 execute if entity @s[scores={PositionIntX=722}] run function luigis_mansion:entities/luigi/move/wall_warp_teleport {teleport:"~-24 ~ ~"}
 execute if entity @s[scores={PositionIntX=741}] run function luigis_mansion:entities/luigi/move/wall_warp_teleport {teleport:"~-1 ~ ~ "}

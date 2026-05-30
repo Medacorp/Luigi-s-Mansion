@@ -2,20 +2,22 @@
     "values": [
         "3ds_remake:room/hidden/conservatory/load/set_loaded",
         "3ds_remake:room/hidden/conservatory/load/lights",
+        "3ds_remake:room/hidden/conservatory/load/blue_padded_stool_1",
+        "3ds_remake:room/hidden/conservatory/load/blue_padded_stool_2",
+        "3ds_remake:room/hidden/conservatory/load/blue_padded_stool_mounted_saxophone",
         "3ds_remake:room/hidden/conservatory/load/cello",
         "3ds_remake:room/hidden/conservatory/load/drum_1",
         "3ds_remake:room/hidden/conservatory/load/drum_2",
         "3ds_remake:room/hidden/conservatory/load/drum_3",
         "3ds_remake:room/hidden/conservatory/load/hallway_5_door",
         "3ds_remake:room/hidden/conservatory/load/harp",
-        "3ds_remake:room/hidden/conservatory/load/painting_1",
-        "3ds_remake:room/hidden/conservatory/load/painting_2",
-        "3ds_remake:room/hidden/conservatory/load/painting_3",
-        "3ds_remake:room/hidden/conservatory/load/painting_4",
         "3ds_remake:room/hidden/conservatory/load/piano",
         "3ds_remake:room/hidden/conservatory/load/poster",
         "3ds_remake:room/hidden/conservatory/load/room_clear_chest",
-        "3ds_remake:room/hidden/conservatory/load/saxophone",
+        "3ds_remake:room/hidden/conservatory/load/saxophone_portrait_1",
+        "3ds_remake:room/hidden/conservatory/load/saxophone_portrait_2",
+        "3ds_remake:room/hidden/conservatory/load/trumpet_portrait_1",
+        "3ds_remake:room/hidden/conservatory/load/trumpet_portrait_2",
         "3ds_remake:room/hidden/conservatory/load/xylophone"
     ]
 }

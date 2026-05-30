@@ -11,4 +11,5 @@ execute as @a[scores={Room=29}] run function luigis_mansion:room/normal/graveyar
 function #luigis_mansion:room/normal/graveyard/interactions/room
 #/todelete
 
+tag @e[tag=ghost,tag=hidden,tag=can_spawn,scores={Room=29},tag=no_hidden_move] add spawn
 execute if entity @e[tag=luigi,tag=!door_animation,scores={Room=29},limit=1] run function luigis_mansion:room/normal/graveyard/ghosts

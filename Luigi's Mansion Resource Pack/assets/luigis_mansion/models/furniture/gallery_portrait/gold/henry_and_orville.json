@@ -1,6 +1,1 @@
-{
-	"parent": "luigis_mansion:furniture/gallery_portrait/gold",
-	"textures": {
-		"image": "luigis_mansion:furniture/gallery_portrait/gold/henry_and_orville"
-	}
-}
+{"parent":"luigis_mansion:furniture/gallery_portrait/gold","textures":{"image":"luigis_mansion:furniture/gallery_portrait/gold/henry_and_orville"}}

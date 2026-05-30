@@ -1,0 +1,2 @@
+data modify storage luigis_mansion:data furniture set value {room:-5,no_dust:1b,no_ai:1b,animation:{frozen:1b},plaque_text:{type:"translatable",translate:"luigis_mansion:sign.gallery.16",color:"gray"}}
+execute positioned 10.0 3.5 41 rotated -90 0 run function luigis_mansion:spawn_furniture/plaque/small

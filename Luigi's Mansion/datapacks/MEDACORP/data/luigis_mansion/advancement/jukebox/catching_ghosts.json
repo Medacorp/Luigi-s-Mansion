@@ -13,7 +13,7 @@
         "announce_to_chat": false,
         "hidden": true
     },
-    "parent": "luigis_mansion:jukebox/collect_marios_painting",
+    "parent": "luigis_mansion:jukebox/collect_marios_portrait",
     "criteria": {
         "unlock": {
             "trigger": "minecraft:impossible"

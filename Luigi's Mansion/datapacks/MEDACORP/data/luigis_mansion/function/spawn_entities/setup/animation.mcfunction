@@ -1,4 +1,4 @@
 execute if data storage luigis_mansion:data entity.animation.namespace run data modify entity @e[tag=this_entity,limit=1] data.animation.namespace set from storage luigis_mansion:data entity.animation.namespace
 execute if data storage luigis_mansion:data entity.animation.id run data modify entity @e[tag=this_entity,limit=1] data.animation.id set from storage luigis_mansion:data entity.animation.id
-execute if data storage luigis_mansion:data entity.animation.progress run data modify entity @e[tag=this_entity,limit=1] data.initial_animation_progress set from storage luigis_mansion:data entity.animation.prgoress
+execute if data storage luigis_mansion:data entity.animation.progress run data modify entity @e[tag=this_entity,limit=1] data.initial_animation_progress set from storage luigis_mansion:data entity.animation.progress
 execute if data storage luigis_mansion:data entity.animation{frozen:1b} run tag @e[tag=this_entity,limit=1] add freeze_animation_next_tick

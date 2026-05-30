@@ -5,10 +5,12 @@ Sawning a key additionally requires a macro string called "door", which matches 
 ```
 entity:{
     //Interaction
-    scan_result: //Result from GBH scan. Not provided = ignored by scan. Has several formats and behaviors.
-        * {namespace:"luigis_mansion",id:"scan/scanner/1"}, //Dialog as a result from GBH scan. Gooigi scan always results in the "3ds_remake:scan/scanner/gooigi" dialog if the ID starts with "scan/scanner/".
-        * "warp", //Warps the scanner if they're not Gooigi and the can_warp global variable is turned on.
-        * "", //Prevents GBH scan from passing through, but has no result.
+    scan_result: //Result from GBH scan. Has several formats and behaviors. Any value provided prevents GBH scan from passing through, but has no result.
+        * { //Dialog as a result from GBH scan. Gooigi scan always results in the "3ds_remake:scan/scanner/gooigi" dialog if the ID starts with "scan/scanner/".
+            namespace:"luigis_mansion", //Namespace of the dialog
+            id:"scan/scanner/1" //ID of the dialog
+        },
+        * "warp", //Warps the scanner to the default position in the mansion if they're not Gooigi and the can_warp global variable is turned on.
     can_talk_to:1b, //Whether this entity can be talked to. Default = 1b for Toad and E. Gadd, and 0b for everything else.
     
     //General
@@ -75,7 +77,8 @@ entity:{
     
     //Items
     variant:1b, //Sets the item variant to spawn, bill: (0b is green, 1b is gold. Default = random).
-	type:"", //Sets the type of poison mushroom or small heart to spawn. Small hearts set this value based on money, if it wasn't set before.
+    type:"", //Sets the type of poison mushroom or small heart to spawn. Small hearts: ("small" or "medium"; default = set based on money), Poison mushrooms: ("shrink", "choke" or (3DS Remake exclusive) "super", default = shrink). 
+    ignore_amiibo:1b, //3DS REMAKE ONLY; Whether the mushroom should ignore the Mario amiibo, and spawn the defined type, rather than a super mushroom. Default = 0b.
     silent:1b, //When set, makes no spawn sound for this item. Default = 0b.
     assign_rank:{ //The portrait ghost rank this pearl modifies. Is set by pearl droppers to their entity ID (or, if present their pearl_assign_rank data). Default value prevents saving anything.
         namespace:"luigis_mansion", //The namespace of the mansion. Default = "luigis_mansion".

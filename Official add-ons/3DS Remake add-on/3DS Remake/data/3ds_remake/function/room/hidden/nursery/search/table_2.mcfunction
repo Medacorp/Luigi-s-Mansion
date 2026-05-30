@@ -1,4 +1,4 @@
-execute unless score #nursery_table_2 Searched matches 1 run data modify storage luigis_mansion:data furniture set value {room:10,tags:["drop_loot"],loot:{contents:{luigis_mansion:{poison_mushroom:1}}}}
+execute unless score #nursery_table_2 Searched matches 1 run data modify storage luigis_mansion:data furniture set value {room:10,tags:["drop_loot"],loot_chances:{namespace:"luigis_mansion",id:"poison_mushroom"}}
 execute unless data storage luigis_mansion:data furniture.loot positioned 739 20 56.0 run function luigis_mansion:blocks/dust
 execute if data storage luigis_mansion:data furniture.loot positioned 739 21 56.0 run function luigis_mansion:spawn_furniture/room_clear_loot_dropper
 scoreboard players set #nursery_table_2 Searched 1

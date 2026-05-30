@@ -1,5 +1,5 @@
 execute unless entity @a[scores={LastRoom=70},limit=1] run function #luigis_mansion:room/normal/guest_room/reset
-execute as @e[scores={Room=70},tag=ghost,tag=!portrait_ghost,nbt=!{data:{entity:{namespace:"luigis_mansion",id:"boo"}}}] run function luigis_mansion:entities/ghost/non_ticking_room
+execute as @e[scores={Room=70},tag=ghost,tag=!no_remove_on_non_ticking] run function luigis_mansion:entities/ghost/non_ticking_room
 scoreboard players reset #guest_room Vacuumables
 
 execute if block 741 21 -53 minecraft:redstone_lamp[lit=true] run data modify storage luigis_mansion:data dialogs append value {name:{namespace:"luigis_mansion",id:"guest_room_flips"},progress:0}

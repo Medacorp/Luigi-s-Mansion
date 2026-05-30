@@ -1,6 +1,1 @@
-{
-	"parent": "3ds_remake:furniture/gallery_portrait/silver",
-	"textures": {
-		"image": "3ds_remake:furniture/gallery_portrait/silver/biff_atlas"
-	}
-}
+{"parent":"3ds_remake:furniture/gallery_portrait/silver","textures":{"image":"3ds_remake:furniture/gallery_portrait/silver/biff_atlas"}}

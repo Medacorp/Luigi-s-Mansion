@@ -3,7 +3,7 @@ execute unless entity @s[scores={Dialog=1..}] run tag @s[tag=portrait_ghost_hide
 scoreboard players add @s[scores={Dialog=92..}] Dialog 1
 scoreboard players add @s[scores={Dialog=32..91},tag=in_fire] Dialog 1
 scoreboard players add @s[scores={Dialog=1..31}] Dialog 1
-execute unless entity @s[scores={Dialog=1..}] if block ^2.7 ^ ^2.7 minecraft:soul_campfire[lit=true] if block ^-2.7 ^ ^2.7 minecraft:soul_campfire[lit=true] run scoreboard players add @s Dialog 1
+execute unless entity @s[scores={Dialog=1..}] unless entity @e[tag=same_room,tag=sir_weston_campfire,tag=!lit,limit=1] run scoreboard players add @s Dialog 1
 execute if entity @s[scores={Dialog=1}] as @a[tag=same_room] run function luigis_mansion:other/music/set/secret_revealed
 execute if entity @s[scores={Dialog=30}] if data storage luigis_mansion:data current_state.current_data.technical_data{sir_weston_spoke:1b} run scoreboard players set @s Dialog 31
 execute if entity @s[scores={Dialog=30}] run data modify storage luigis_mansion:data dialogs append value {name:{namespace:"luigis_mansion",id:"sir_weston"},progress:0,room:0}

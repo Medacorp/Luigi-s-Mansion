@@ -1,10 +1,1 @@
-{
-	"credit": "Made with Blockbench",
-	"parent": "luigis_mansion:furniture/rocking_horse",
-	"display": {
-		"head": {
-			"translation": [0, 0.75, 0],
-			"scale": [3, 3, 3]
-		}
-	}
-}
+{"parent":"luigis_mansion:furniture/rocking_horse","display":{"head":{"translation":[0,0.75,0],"scale":[3,3,3]}}}

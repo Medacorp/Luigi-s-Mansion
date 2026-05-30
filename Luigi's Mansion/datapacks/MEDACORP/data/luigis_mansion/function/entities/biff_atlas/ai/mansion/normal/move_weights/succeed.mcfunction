@@ -1,4 +1,4 @@
-execute if entity @s[scores={AnimationProgress=21}] at @e[tag=biff_atlas_weights,limit=1] run fill ^-1 ^1.17 ^ ^1 ^1.17 ^ minecraft:air
+execute if entity @s[scores={AnimationProgress=21}] at @e[tag=biff_atlas_weights,limit=1] run fill ^-1 ^1.5 ^ ^1 ^1.5 ^ minecraft:air
 execute if entity @s[scores={AnimationProgress=21..40}] as @e[tag=biff_atlas_weights,limit=1] at @s run teleport @s ^ ^0.04 ^
 execute if entity @s[scores={AnimationProgress=41..50}] as @e[tag=biff_atlas_weights,limit=1] at @s run teleport @s ^ ^0.06 ^
 execute if entity @s[scores={AnimationProgress=46..55}] as @e[tag=biff_atlas_weights,limit=1] at @s run teleport @s ^ ^0.04 ^-0.02

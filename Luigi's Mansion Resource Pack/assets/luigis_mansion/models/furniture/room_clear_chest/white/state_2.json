@@ -1,6 +1,1 @@
-{
-	"parent": "luigis_mansion:furniture/room_clear_chest/state_2",
-	"textures": {
-		"outside": "luigis_mansion:furniture/room_clear_chest/white"
-	}
-}
+{"parent":"luigis_mansion:furniture/room_clear_chest/state_2","textures":{"outside":"luigis_mansion:furniture/room_clear_chest/white"}}

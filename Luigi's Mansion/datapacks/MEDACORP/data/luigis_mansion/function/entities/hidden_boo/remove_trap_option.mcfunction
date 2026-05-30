@@ -1,0 +1,6 @@
+execute if entity @e[tag=hide_option,limit=1,distance=0.1..] run tag @s[tag=furniture] remove hide_option
+execute if entity @e[tag=hide_option,limit=1,distance=0.1..] run kill @s[tag=!furniture]
+execute unless entity @e[tag=hide_option,limit=1,distance=0.1..] at @e[tag=me,limit=1] run teleport @e[nbt={data:{entity:{namespace:"luigis_mansion",id:"hidden_boo"}}},tag=caught_by_boo_radar,tag=trap,limit=1] ~ ~ ~
+execute unless entity @e[tag=hide_option,limit=1,distance=0.1..] if entity @e[tag=me,limit=1,tag=!caught_by_boo_radar] run tag @e[nbt={data:{entity:{namespace:"luigis_mansion",id:"hidden_boo"}}},tag=caught_by_boo_radar,tag=trap,limit=1] remove can_play_sound
+execute unless entity @e[tag=hide_option,limit=1,distance=0.1..] if entity @e[tag=me,limit=1,tag=!caught_by_boo_radar] run tag @e[nbt={data:{entity:{namespace:"luigis_mansion",id:"hidden_boo"}}},tag=caught_by_boo_radar,tag=trap,limit=1] remove caught_by_boo_radar
+execute unless entity @e[tag=hide_option,limit=1,distance=0.1..] run tag @e[tag=me,limit=1,tag=!caught_by_boo_radar] add trap_swap

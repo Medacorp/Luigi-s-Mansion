@@ -1,6 +1,1 @@
-{
-	"parent": "luigis_mansion:furniture/door_frame/none",
-	"textures": {
-		"door": "luigis_mansion:furniture/door_frame/sawtooth"
-	}
-}
+{"parent":"luigis_mansion:furniture/door_frame/none","textures":{"door":"luigis_mansion:furniture/door_frame/sawtooth"}}

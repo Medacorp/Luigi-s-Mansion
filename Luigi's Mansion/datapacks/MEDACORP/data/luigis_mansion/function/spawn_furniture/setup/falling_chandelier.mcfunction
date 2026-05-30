@@ -1,0 +1,6 @@
+execute if data storage luigis_mansion:data furniture.falling_chandelier run tag @e[tag=this_entity,limit=1] add can_fall
+execute if data storage luigis_mansion:data furniture.falling_chandelier run data modify entity @e[tag=this_entity,limit=1] data.rod set value [I;]
+execute if data storage luigis_mansion:data furniture.falling_chandelier run data modify entity @e[tag=this_entity,limit=1] data.falling_chandelier set from storage luigis_mansion:data furniture.falling_chandelier
+execute as @e[tag=this_entity,limit=1] if data entity @s data{falling_chandelier:"always"} run data modify entity @s data.falling_chandelier set value "luigis_mansion:entities/furniture/type/lamp/fall_trigger/always"
+execute as @e[tag=this_entity,limit=1] if data entity @s data{falling_chandelier:"chance"} run data modify entity @s data.falling_chandelier set value "luigis_mansion:entities/furniture/type/lamp/fall_trigger/chance"
+execute as @e[tag=this_entity,limit=1] if data entity @s data{falling_chandelier:"chauncey"} run data modify entity @s data.falling_chandelier set value "luigis_mansion:entities/furniture/type/lamp/fall_trigger/chauncey"

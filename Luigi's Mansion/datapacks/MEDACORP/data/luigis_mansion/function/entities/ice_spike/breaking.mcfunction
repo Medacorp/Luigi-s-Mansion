@@ -1,6 +1,6 @@
 scoreboard players add @s ActionTime 1
 execute if entity @s[scores={ActionTime=1}] run playsound luigis_mansion:entity.ice_spike.shatter hostile @a[tag=same_room] ~ ~ ~ 1
-data modify entity @s[scores={ActionTime=1}] equipment.head merge from entity @s equipment.head.components."minecraft:custom_data".model_data.breaking
+data modify entity @s[scores={ActionTime=1}] equipment.head merge from entity @s equipment.head.components."minecraft:custom_data".model_data.broken
 data modify entity @s[scores={ActionTime=3}] equipment.head merge from entity @s equipment.head.components."minecraft:custom_data".model_data.invisible
 execute store result entity @s[scores={ActionTime=4}] Pos[0] double 0.01 run scoreboard players get @s HomeX
 execute store result entity @s[scores={ActionTime=4}] Pos[1] double 0.01 run scoreboard players get @s HomeY

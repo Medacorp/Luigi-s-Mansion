@@ -1,2 +1,0 @@
-function luigis_mansion:dialog/play/portrificationizing/load_score_index with storage luigis_mansion:data current_state.current_data
-execute store result score #temp2 Money run data get storage luigis_mansion:data current_high_score.value

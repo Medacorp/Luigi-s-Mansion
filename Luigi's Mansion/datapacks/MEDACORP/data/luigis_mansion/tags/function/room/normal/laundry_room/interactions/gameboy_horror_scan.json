@@ -5,8 +5,6 @@
         "luigis_mansion:room/normal/laundry_room/interactions/gameboy_horror_scan/closet",
         "luigis_mansion:room/normal/laundry_room/interactions/gameboy_horror_scan/dust_box",
         "luigis_mansion:room/normal/laundry_room/interactions/gameboy_horror_scan/lamp",
-        "luigis_mansion:room/normal/laundry_room/interactions/gameboy_horror_scan/shelf_1",
-        "luigis_mansion:room/normal/laundry_room/interactions/gameboy_horror_scan/shelf_2",
-        "luigis_mansion:room/normal/laundry_room/interactions/gameboy_horror_scan/washing_machine"
+        "luigis_mansion:room/normal/laundry_room/interactions/gameboy_horror_scan/shelf_2"
     ]
 }

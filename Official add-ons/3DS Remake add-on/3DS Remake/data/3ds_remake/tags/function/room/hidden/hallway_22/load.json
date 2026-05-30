@@ -4,6 +4,8 @@
         "3ds_remake:room/hidden/hallway_22/load/lights",
         "3ds_remake:room/hidden/hallway_22/load/hallway_21_door",
         "3ds_remake:room/hidden/hallway_22/load/lamp",
-        "3ds_remake:room/hidden/hallway_22/load/secret_altar_door"
+        "3ds_remake:room/hidden/hallway_22/load/secret_altar_door",
+        "3ds_remake:room/hidden/hallway_22/load/stone_bowl_wall_candelabra_1",
+        "3ds_remake:room/hidden/hallway_22/load/stone_bowl_wall_candelabra_2"
     ]
 }

@@ -1,2 +1,2 @@
-data modify storage luigis_mansion:data furniture set value {room:23,searchable:["interact","vacuum"],shake_animation:["interact","vacuum"],sound:{namespace:"luigis_mansion",id:"heavy_generic"},scan_result:{namespace:"luigis_mansion",id:"scan/scanner/77"}}
+data modify storage luigis_mansion:data furniture set value {room:23,searchable:["interact","vacuum"],shake_animation:["interact","vacuum"],sound:{namespace:"luigis_mansion",id:"heavy_generic"},can_hide_boo:1b,scan_result:{namespace:"luigis_mansion",id:"scan/scanner/77"}}
 execute positioned 747 11 55 rotated 0 0 run function luigis_mansion:spawn_furniture/water_bucket_with_broom/right

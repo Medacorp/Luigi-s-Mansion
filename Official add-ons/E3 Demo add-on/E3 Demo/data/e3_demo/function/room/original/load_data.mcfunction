@@ -4,6 +4,7 @@ function e3_demo:room/original/forceload_chunks
 execute unless data storage luigis_mansion:data current_state.current_data{data_index:2} if data storage luigis_mansion:data current_state.current_data.data_index run function luigis_mansion:room/save_mansion_data with storage luigis_mansion:data current_state.current_data
 execute unless data storage luigis_mansion:data current_state.current_data{data_index:2} if data storage luigis_mansion:data current_state.mansion_data[{data_index:2}] run function luigis_mansion:room/load_mansion_data {index:2}
 execute unless data storage luigis_mansion:data current_state.current_data{data_index:2} run function e3_demo:room/original/default_data
+execute if data storage luigis_mansion:data current_state.current_data{data_index:2,area:-1} run function e3_demo:room/original/default_data
 function #luigis_mansion:room/reset_variable_to_default
 scoreboard players set #can_warp Selected 1
 scoreboard players set #gbh_clock_increase Selected 10

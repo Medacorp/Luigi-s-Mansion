@@ -1,0 +1,3 @@
+execute unless data storage e3_demo:data update_data{data_version:2} run function e3_demo:other/upgrade_path/root/v3.0
+data merge storage e3_demo:data {data_version:3}
+execute if data storage luigis_mansion:data dialogs[{name:{namespace:"e3_demo",id:"portrificationizing"}}] run data modify storage luigis_mansion:data dialogs[{name:{namespace:"e3_demo",id:"portrificationizing"}}] merge value {name:{namespace:"luigis_mansion",id:"portrificationizing"},progress:0}

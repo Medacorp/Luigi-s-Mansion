@@ -1,2 +1,0 @@
-execute if entity @s[x=738.5,y=2,z=16.5,distance=..0.7,tag=vacuum] unless score #cold_storage_campfire_3 Search matches 1 run scoreboard players operation #cold_storage_campfire_3 SearcherID = #temp ID
-execute if entity @s[x=738.5,y=2,z=16.5,distance=..0.7,tag=vacuum] unless score #cold_storage_campfire_3 Search matches 1 store success score #cold_storage_campfire_3 Search run scoreboard players add #cold_storage_campfire_3 Searching 1

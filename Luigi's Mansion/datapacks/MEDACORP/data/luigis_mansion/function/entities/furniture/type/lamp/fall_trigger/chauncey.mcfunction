@@ -1,0 +1,1 @@
+execute unless data storage luigis_mansion:data current_state.current_data.portrait_ghosts[{name:{namespace:"luigis_mansion",id:"chauncey"},health:0}] run function luigis_mansion:entities/furniture/type/lamp/fall_trigger/chance

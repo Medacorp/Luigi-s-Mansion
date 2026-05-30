@@ -1,1 +1,0 @@
-advancement grant @s only luigis_mansion:vanilla/root

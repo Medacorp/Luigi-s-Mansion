@@ -1,2 +1,2 @@
-function luigis_mansion:blocks/search_sound/chest
+playsound luigis_mansion:furniture.search.chest block @a[tag=same_room] ~ ~ ~ 1
 scoreboard players set @s Sound 20

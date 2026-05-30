@@ -13,8 +13,6 @@ execute as @a[scores={Room=12}] run function e3_demo:room/original/bath_room/tic
 function #e3_demo:room/original/bath_room/interactions/room
 #/todelete
 
-clone 654 12 21 654 16 27 644 12 21
-
 execute if entity @e[tag=luigi,tag=!door_animation,scores={Room=12},limit=1] run function e3_demo:room/original/bath_room/ghosts
 
 execute store result score #temp Time run data get storage luigis_mansion:data current_state.current_data.rooms.bath_room.time_spent_in

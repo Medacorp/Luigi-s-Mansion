@@ -1,7 +1,1 @@
-{
-    "variants": {
-        "type=bottom": { "model": "luigis_mansion:block/sand_slab" },
-        "type=top": { "model": "luigis_mansion:block/sand_slab_top" },
-        "type=double": { "model": "minecraft:block/blackstone" }
-    }
-}
+{"variants":{"type=bottom":{"model":"luigis_mansion:block/sand_slab"},"type=top":{"model":"luigis_mansion:block/sand_slab_top"},"type=double":{"model":"minecraft:block/blackstone"}}}

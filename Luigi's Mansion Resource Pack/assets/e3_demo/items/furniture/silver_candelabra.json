@@ -1,6 +1,1 @@
-{
-    "model": {
-        "type": "minecraft:model",
-        "model": "e3_demo:furniture/silver_candelabra"
-    }
-}
+{"model":{"type":"minecraft:model","model":"e3_demo:furniture/silver_candelabra"}}

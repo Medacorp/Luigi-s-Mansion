@@ -1,6 +1,1 @@
-{
-	"parent": "luigis_mansion:furniture/gallery_portrait/bronze_boss",
-	"textures": {
-		"image": "luigis_mansion:furniture/gallery_portrait/bronze/chauncey"
-	}
-}
+{"parent":"luigis_mansion:furniture/gallery_portrait/bronze_boss","textures":{"image":"luigis_mansion:furniture/gallery_portrait/bronze/chauncey"}}

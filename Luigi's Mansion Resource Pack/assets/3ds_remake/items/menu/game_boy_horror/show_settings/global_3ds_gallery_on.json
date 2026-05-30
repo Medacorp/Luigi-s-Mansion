@@ -1,6 +1,1 @@
-{
-  "model": {
-    "type": "minecraft:model",
-    "model": "3ds_remake:item/menu/game_boy_horror/show_settings/global_3ds_gallery_on"
-  }
-}
+{"model":{"type":"minecraft:model","model":"3ds_remake:item/menu/game_boy_horror/show_settings/global_3ds_gallery_on"}}

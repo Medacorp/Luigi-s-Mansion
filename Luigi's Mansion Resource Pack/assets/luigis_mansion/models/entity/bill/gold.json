@@ -1,6 +1,1 @@
-{
-	"parent": "luigis_mansion:entity/bill",
-	"textures": {
-		"0": "luigis_mansion:entity/bill/gold"
-	}
-}
+{"parent":"luigis_mansion:entity/bill","textures":{"0":"luigis_mansion:entity/bill/gold"}}

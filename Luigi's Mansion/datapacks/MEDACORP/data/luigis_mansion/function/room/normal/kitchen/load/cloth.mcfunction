@@ -1,0 +1,2 @@
+data modify storage luigis_mansion:data furniture set value {room:27,no_dust:1b,hitbox:{rotated_box:{left:22,up:10,forward:32}},searchable:["vacuum"],tags:["kitchen_tablesheet"]}
+execute positioned 705 12.55 90.0 rotated -90 0 run function luigis_mansion:spawn_furniture/cloth/too_long_tablesheet

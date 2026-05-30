@@ -1,7 +1,8 @@
 execute unless score #astral_hall_table_1 Searched matches 1 run data modify storage luigis_mansion:data furniture set value {room:45,tags:["drop_loot"]}
-execute unless score #astral_hall_table_1 Searched matches 1 unless data storage luigis_mansion:data current_state.current_data{money_spawned:["astral_hall_astral_cabinet_1"]} run data modify storage luigis_mansion:data furniture.loot set value {name:"astral_hall_astral_cabinet_1",contents:{luigis_mansion:{gold_coin:10}}}
+execute unless score #astral_hall_table_1 Searched matches 1 unless data storage luigis_mansion:data current_state.current_data{money_spawned:["astral_hall_astral_cabinet_1"]} run data modify storage luigis_mansion:data furniture.loot set value {name:"astral_hall_astral_cabinet_1"}
+execute unless score #astral_hall_table_1 Searched matches 1 unless data storage luigis_mansion:data current_state.current_data{money_spawned:["astral_hall_astral_cabinet_1"]} run data modify storage luigis_mansion:data furniture.loot.contents set from storage luigis_mansion:data current_state.current_data.loot_collections.furniture.10_gold_coins
 execute unless score #astral_hall_table_1 Searched matches 1 as @e[tag=luigi] if score #astral_hall_table_1 SearcherID = @s ID run tag @s add searcher
-execute unless score #astral_hall_table_1 Searched matches 1 run function 3ds_remake:entities/furniture/loot_chance/d50_m15
+execute unless score #astral_hall_table_1 Searched matches 1 run function 3ds_remake:entities/furniture/loot_chance/d50_p15
 execute unless score #astral_hall_table_1 Searched matches 1 run tag @e[tag=searcher] remove searcher
 execute unless data storage luigis_mansion:data furniture.loot positioned 662 20 -75 run function luigis_mansion:blocks/dust
 execute if data storage luigis_mansion:data furniture.loot positioned 663 21 -75 run function luigis_mansion:spawn_furniture/room_clear_loot_dropper

@@ -11,4 +11,5 @@ execute as @a[scores={Room=29}] run function 3ds_remake:room/hidden/graveyard/ti
 function #3ds_remake:room/hidden/graveyard/interactions/room
 #/todelete
 
+tag @e[tag=ghost,tag=hidden,tag=can_spawn,scores={Room=29},tag=no_hidden_move] add spawn
 execute if entity @e[tag=luigi,tag=!door_animation,scores={Room=29},limit=1] run function 3ds_remake:room/hidden/graveyard/ghosts

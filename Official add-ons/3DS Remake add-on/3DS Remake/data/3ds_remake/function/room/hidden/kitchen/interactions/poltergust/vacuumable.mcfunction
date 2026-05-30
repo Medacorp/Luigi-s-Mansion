@@ -1,4 +1,0 @@
-execute if entity @s[x=704.0,y=11,z=89.0,dx=2,dy=1,dz=1,tag=vacuum] unless score #kitchen_vacuumable Searched matches 1 as @e[tag=me,limit=1] run function luigis_mansion:entities/luigi/vacuum/fabric {facing:"705.5 12 90.0",radius:4.8}
-execute if entity @s[x=704.0,y=11,z=89.0,dx=2,dy=1,dz=1,tag=vacuum] unless score #kitchen_vacuumable Search matches 1 unless score #kitchen_vacuumable Searched matches 1 if score #kitchen_vacuumable Searching matches 39 at @e[tag=me,limit=1] run function luigis_mansion:spawn_entities/vacuumed_cloth
-execute if entity @s[x=704.0,y=11,z=89.0,dx=2,dy=1,dz=1,tag=vacuum] unless score #kitchen_vacuumable Search matches 1 run scoreboard players operation #kitchen_vacuumable SearcherID = #temp ID
-execute if entity @s[x=704.0,y=11,z=89.0,dx=2,dy=1,dz=1,tag=vacuum] unless score #kitchen_vacuumable Search matches 1 store success score #kitchen_vacuumable Search run scoreboard players add #kitchen_vacuumable Searching 1

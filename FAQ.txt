@@ -1,3 +1,6 @@
+Q. Why does the game lag so much in rooms with mirrors
+A. Mirrors are quite resource intensive; you can disable them in the settings in the game boy horror. Do note that mirror ghosts will not compensate for turning them off.
+
 Q. Is the map multiplayer compatible?
 A. Absolutely! The map even provides different translation strings based on player count so languages can properly pluralize them.
 There is, however, an issue with rapid teleportation causing desyncs, see next question.
@@ -11,12 +14,13 @@ A. (No 3DS Remake) Search the angle statue, like E. Gadd hints, and his dialog w
    (3DS Remake) Find the Game Boy Horror part, and talk to E. Gadd again, and another time for an option to leave the gallery.
    
 Q. Why is only certain furniture modeled and animated, but not others?
-A. Those will be converted eventually, but it takes time to model all those. The furniture that has been converted already matched one of the following criteria:
+A. Those will be converted eventually, but it takes time to model all those. The furniture that has been converted already generally matched one of the following criteria:
    1. It was already modeled before, just not a furniture entity
-   2. It was a container before conversion
+   2. It was a container or item frame before conversion
    3. It has candle flames or incense flames
-   4. It is a poster
-   5. A very similar piece of furniture was converted, and it was not much work to make the model for this as well.
+   4. It is a curtain or elemental source
+   5. It contains a Mario item
+   6. A very similar piece of furniture was converted, and it was not much work to make the model for this as well.
 
 Q. How do I scan furniture?
 A. 1. Use the Game Boy Horror, and choose the Scan Furniture option.

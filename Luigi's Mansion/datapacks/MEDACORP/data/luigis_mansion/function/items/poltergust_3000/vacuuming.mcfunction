@@ -37,7 +37,6 @@ scoreboard players reset #temp MirrorZ
 scoreboard players reset #temp Room
 scoreboard players reset #temp ID
 scoreboard players reset #interact
-tag @e[tag=being_vacuumed] remove being_vacuumed
 tag @s add vacuuming
 tag @s remove expelling_dust
 tag @s remove expelling_fire
@@ -52,7 +51,6 @@ execute if entity @s[scores={DamagePitch=6..,DamagePitchTimer=6}] run playsound 
 scoreboard players set @s[scores={DamagePitchTimer=0}] DamagePitch 0
 scoreboard players remove @s[scores={DamagePitchTimer=1..}] DamagePitchTimer 1
 tag @s remove me
-tag @e[tag=hit_by_poltergust] remove hit_by_poltergust
 kill @e[type=minecraft:marker,tag=interact,limit=1]
 kill @e[type=minecraft:marker,tag=position,limit=1]
 data modify storage luigis_mansion:data memory append from storage luigis_mansion:data my_memory

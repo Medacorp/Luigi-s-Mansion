@@ -1,0 +1,2 @@
+data modify storage luigis_mansion:data furniture set value {room:71,searchable:["interact","vacuum"],shake_animation:["interact","vacuum"],sound:{namespace:"luigis_mansion",id:"heavy_generic"},scan_result:{namespace:"luigis_mansion",id:"scan/scanner/23"}}
+execute positioned 690.2 29 -63.8 rotated -90 0 run function luigis_mansion:spawn_furniture/table_mounted_bust_with_portraits/right

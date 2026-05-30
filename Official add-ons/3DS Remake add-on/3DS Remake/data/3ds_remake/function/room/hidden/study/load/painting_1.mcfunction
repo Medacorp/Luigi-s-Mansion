@@ -1,2 +1,0 @@
-summon minecraft:item_frame 707 22 61 {block_pos:[I;0,0,0],FIXED_block_pos:[I;707,22,61],Tags:["static","no_ai","freeze_animation"],Facing:2b,Silent:1b,Invulnerable:1b,Item:{id:"minecraft:filled_map",count:1,components:{"minecraft:map_id":124}},CustomName:{type:"translatable",translate:"luigis_mansion:furniture.painting"},Invisible:1b,Fixed:1b}
-scoreboard players set @e[x=707.5,y=22.0,z=61.5,distance=..2,type=minecraft:item_frame] Room 8
