@@ -1,0 +1,1 @@
+function luigis_mansion:animations/luigi/knockback/fall_backward/left_leg

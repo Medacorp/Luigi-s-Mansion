@@ -4794,6 +4794,24 @@
         ],
         "subtitle": "luigis_mansion:subtitles.entity.player.enthusiastic"
     },
+    "entity.player.escaping_ghost.high_health": {
+        "sounds": [
+            {
+                "name": "luigis_mansion:entity/player/escape_high",
+                "stream": false
+            }
+        ],
+        "subtitle": "subtitles.entity.player.hurt"
+    },
+    "entity.player.escaping_ghost.low_health": {
+        "sounds": [
+            {
+                "name": "luigis_mansion:entity/player/escape_low",
+                "stream": false
+            }
+        ],
+        "subtitle": "subtitles.entity.player.hurt"
+    },
     "entity.player.exploding_poltergust.high_health": {
         "sounds": [
             {
@@ -6456,6 +6474,37 @@
             },
             {
                 "name": "luigis_mansion:entity/player/hurt/bounce_low",
+                "stream": false
+            }
+        ],
+        "subtitle": "subtitles.entity.player.hurt"
+    },
+    "entity.player.hurt_flip": {
+        "sounds": [
+            {
+                "name": "luigis_mansion:entity/player/hurt/little2",
+                "stream": false
+            },
+            {
+                "name": "luigis_mansion:entity/player/hurt/little3",
+                "stream": false
+            }
+        ],
+        "subtitle": "subtitles.entity.player.hurt"
+    },
+    "entity.player.hurt_flip.back": {
+        "sounds": [
+            {
+                "name": "luigis_mansion:entity/player/hurt/bounce_low",
+                "stream": false
+            }
+        ],
+        "subtitle": "subtitles.entity.player.hurt"
+    },
+    "entity.player.hurt_flip.front": {
+        "sounds": [
+            {
+                "name": "luigis_mansion:entity/player/hurt/bounce_high",
                 "stream": false
             }
         ],

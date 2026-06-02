@@ -1,4 +1,4 @@
-data modify storage luigis_mansion:data damage set value {method:{namespace:"luigis_mansion",id:"crushed"},amount:0,animation:{namespace:"luigis_mansion",id:"knockback/large"}}
+data modify storage luigis_mansion:data damage set value {method:{namespace:"luigis_mansion",id:"crushed"},amount:0,animation:{namespace:"luigis_mansion",id:"knockback/fall"}}
 data modify storage luigis_mansion:data damage.amount set from entity @s data.damage.collision
 data modify storage luigis_mansion:data damage.attacker set from entity @s UUID
 tag @s add me

@@ -6,7 +6,7 @@ data modify entity @s[scores={ActionTime=41}] data.animation set value {namespac
 execute if entity @s[scores={ActionTime=41}] run playsound luigis_mansion:entity.ghost.punch hostile @a[tag=same_room] ~ ~ ~ 1
 $execute if entity @s[scores={ActionTime=41}] run playsound $(namespace):entity.$(id).attack hostile @a[tag=same_room] ~ ~ ~ 1
 execute at @s[scores={ActionTime=41}] positioned ^ ^ ^0.5 if entity @e[tag=luigi,distance=..1,scores={Invulnerable=0}] run tag @s add laugh
-execute at @s[scores={ActionTime=41}] run data modify storage luigis_mansion:data damage set value {method:{namespace:"luigis_mansion",id:"punch"},amount:0,animation:{namespace:"luigis_mansion",id:"knockback/large"},no_delete:1b}
+execute at @s[scores={ActionTime=41}] run data modify storage luigis_mansion:data damage set value {method:{namespace:"luigis_mansion",id:"punch"},amount:0,animation:{namespace:"luigis_mansion",id:"knockback/fall"},no_delete:1b}
 execute at @s[scores={ActionTime=41}] run data modify storage luigis_mansion:data damage.amount set from entity @s data.damage.attack
 execute at @s[scores={ActionTime=41}] run data modify storage luigis_mansion:data damage.attacker set from entity @s UUID
 execute at @s[scores={ActionTime=41}] positioned ^ ^ ^0.5 as @e[tag=luigi,distance=..1] run function luigis_mansion:entities/luigi/damage

@@ -38,6 +38,7 @@ v?:
 ** Guest Room
 * Fixed some spawned entities were spawned belonging to the exterior, not the room they were in; notibly Mr. Luggs' fire
 * Fixed Nana's yellow wool paths were a little broken
+* Fixed breaker room reflection showed some incorrect blocks
 * Removed underground lab's "Sorry to bother you" and "The Ghost Portrificationizer Room" options
 * Removed ghost potrificationizer room repeat dialog
 * Removed "Full to Bursting You Say?" advancement, as it's now impossible to achieve

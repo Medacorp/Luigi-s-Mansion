@@ -114,7 +114,7 @@ execute if entity @s[scores={Dialog=945,PathStep=1}] run playsound luigis_mansio
 execute if entity @s[scores={Dialog=945,PathStep=10}] run playsound luigis_mansion:entity.chauncey.bounce hostile @a[tag=same_room] ~ ~ ~ 1
 teleport @s[scores={Dialog=945,PathStep=1..5}] ^ ^0.4 ^0.4
 teleport @s[scores={Dialog=945,PathStep=6..10}] ^ ^-0.4 ^0.4
-execute at @s[scores={Dialog=945,PathStep=10}] run data modify storage luigis_mansion:data damage set value {method:{namespace:"luigis_mansion",id:"bounced_on"},amount:10,animation:{namespace:"luigis_mansion",id:"knockback/large"},no_delete:1b}
+execute at @s[scores={Dialog=945,PathStep=10}] run data modify storage luigis_mansion:data damage set value {method:{namespace:"luigis_mansion",id:"bounced_on"},amount:10,animation:{namespace:"luigis_mansion",id:"knockback/fall"},no_delete:1b}
 execute at @s[scores={Dialog=945,PathStep=10}] run data modify storage luigis_mansion:data damage.attacker set from entity @s UUID
 execute at @s[scores={Dialog=945,PathStep=10}] as @e[tag=luigi,distance=..1] run function luigis_mansion:entities/luigi/grant_advancement {id:"luigis_mansion:vanilla/waluigi_pinball/chauncey"}
 execute at @s[scores={Dialog=945,PathStep=10}] as @e[tag=luigi,distance=..1] run function luigis_mansion:entities/luigi/damage

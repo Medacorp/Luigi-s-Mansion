@@ -1,4 +1,4 @@
-data modify storage luigis_mansion:data damage set value {method:{namespace:"luigis_mansion",id:"rocking_horse"},amount:5,animation:{namespace:"luigis_mansion",id:"knockback/large"},no_delete:1b}
+data modify storage luigis_mansion:data damage set value {method:{namespace:"luigis_mansion",id:"rocking_horse"},amount:5,animation:{namespace:"luigis_mansion",id:"knockback/fall"},no_delete:1b}
 data modify storage luigis_mansion:data damage.attacker set from entity @s data.owner
 execute as @e[tag=luigi,distance=..2] run function luigis_mansion:entities/luigi/damage
 data remove storage luigis_mansion:data damage
