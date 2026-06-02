@@ -1,3 +1,5 @@
+tag @s remove owner_complain
+function luigis_mansion:entities/ghost/owner_effects
 scoreboard players add @s[scores={Dialog=946..}] Dialog 1
 scoreboard players add @s[scores={Dialog=582..944}] Dialog 1
 execute positioned ~-1 ~ ~-1 if entity @e[type=minecraft:armor_stand,tag=ball,tag=same_room,tag=spit,dx=1,dy=2,dz=1] run scoreboard players set @s[scores={Dialog=381..581}] Dialog 582

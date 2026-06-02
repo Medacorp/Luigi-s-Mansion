@@ -22,6 +22,7 @@ execute if entity @s[scores={Dialog=52..},tag=!attack,tag=!vanish] facing entity
 execute if entity @s[scores={Dialog=90}] run playsound luigis_mansion:entity.chauncey.yawn hostile @a[tag=same_room] ~ ~ ~ 1
 data modify entity @s[scores={Dialog=130}] data.animation set value {namespace:"luigis_mansion",id:"move"}
 
+function luigis_mansion:entities/ghost/owner_effects
 data modify entity @s[scores={Dialog=131},nbt=!{data:{animation:{}}}] data.animation set value {namespace:"luigis_mansion",id:"move"}
 execute if entity @s[scores={Dialog=131}] as @a[tag=same_room] run function luigis_mansion:other/music/set/danger
 execute if entity @s[scores={Dialog=131},tag=!attack,tag=!laugh,tag=!complain] run tag @e[tag=haunted_teddy_bear,tag=same_room] add enabled

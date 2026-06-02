@@ -4,3 +4,4 @@ execute as @e[tag=luigi,distance=..3] run function luigis_mansion:entities/luigi
 data remove storage luigis_mansion:data damage
 execute if data entity @s data.owner run function luigis_mansion:entities/ghost/owner_laugh with entity @s data
 tag @s add dead
+tag @s add hit_someone

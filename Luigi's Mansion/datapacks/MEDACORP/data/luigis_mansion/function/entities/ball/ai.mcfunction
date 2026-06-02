@@ -63,3 +63,4 @@ tag @s[tag=!in_vacuum,tag=can_spit_2,scores={Move=1..}] remove can_spit
 tag @s[tag=!in_vacuum,tag=can_spit_2,scores={Move=1..}] remove can_spit_2
 tag @s[tag=!in_vacuum,tag=can_spit_2] add spit
 tag @s[tag=!in_vacuum] remove can_spit
+execute if data entity @s[tag=dead] data.owner run function luigis_mansion:entities/ghost/owner_complain with entity @s data

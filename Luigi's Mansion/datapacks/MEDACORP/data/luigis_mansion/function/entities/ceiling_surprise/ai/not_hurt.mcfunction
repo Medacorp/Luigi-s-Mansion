@@ -1,3 +1,5 @@
+scoreboard players set @s[scores={TargetTask=0,ActionTime=0}] TargetTask 1
+
 execute if entity @e[tag=exact_same_room,tag=luigi,distance=..0.7,limit=1] if entity @s[tag=!vanish,tag=!appear] run function luigis_mansion:entities/ceiling_surprise/collide with entity @s data.entity
 execute if entity @s[tag=!collided,tag=!vanish,tag=!appear] run function luigis_mansion:entities/ceiling_surprise/try_attack
 
