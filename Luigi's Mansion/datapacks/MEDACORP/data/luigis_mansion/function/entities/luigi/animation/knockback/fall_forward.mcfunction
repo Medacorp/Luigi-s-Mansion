@@ -4,8 +4,8 @@ summon minecraft:marker ^ ^-1 ^ {Tags:["temp","remove_from_existence"]}
 execute store result entity @e[type=minecraft:marker,tag=temp,limit=1] Pos[0] double 0.01 run scoreboard players get @s KnockbackX
 execute store result entity @e[type=minecraft:marker,tag=temp,limit=1] Pos[2] double 0.01 run scoreboard players get @s KnockbackZ
 
-execute if entity @s[scores={AnimationProgress=1}] run function luigis_mansion:entities/luigi/make_sound/force {high:"luigis_mansion:entity.player.hurt_flip",medium:"luigis_mansion:entity.player.hurt_flip",low:"luigis_mansion:entity.player.hurt_flip",duration:10}
-execute if entity @s[scores={AnimationProgress=21}] run function luigis_mansion:entities/luigi/make_sound/force {high:"luigis_mansion:entity.player.hurt_flip.front",medium:"luigis_mansion:entity.player.hurt_flip.front",low:"luigis_mansion:entity.player.hurt_flip.front",duration:10}
+execute if entity @s[scores={AnimationProgress=1}] run function luigis_mansion:entities/luigi/make_sound/force {high:"luigis_mansion:entity.player.hurt_flip",medium:"luigis_mansion:entity.player.hurt_flip",low:"luigis_mansion:entity.player.hurt_flip",duration:20}
+execute if entity @s[scores={AnimationProgress=21}] run function luigis_mansion:entities/luigi/make_sound/force {high:"luigis_mansion:entity.player.hurt_flip.front",medium:"luigis_mansion:entity.player.hurt_flip.front",low:"luigis_mansion:entity.player.hurt_flip.front",duration:20}
 execute if entity @s[scores={AnimationProgress=..25}] run function luigis_mansion:entities/luigi/move/execute {execute:"at @s facing entity @e[type=minecraft:marker,tag=temp,limit=1] feet rotated ~-180 0",teleport:"^ ^ ^0.1 ~ ~"}
 tag @s[scores={AnimationProgress=20}] add poltergust_floor_sound
 tag @s[scores={AnimationProgress=25}] add poltergust_floor_sound

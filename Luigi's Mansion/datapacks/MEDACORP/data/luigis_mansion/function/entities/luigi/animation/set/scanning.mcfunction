@@ -1,8 +1,7 @@
 execute if data storage luigis_mansion:data my_memory run tag @s add keep_memory
 execute if entity @s[tag=!keep_memory] run function luigis_mansion:entities/luigi/get_owner_memory
-execute unless data storage luigis_mansion:data my_memory.animation{namespace:"luigis_mansion",id:"knockback/large_forward_wall"} run function luigis_mansion:entities/luigi/animation/set/none
-data modify storage luigis_mansion:data my_memory.animation set value {namespace:"luigis_mansion",id:"knockback/large_forward_wall"}
-tag @s remove hit_wall_front
+execute unless data storage luigis_mansion:data my_memory.animation{namespace:"luigis_mansion",id:"scanning"} run function luigis_mansion:entities/luigi/animation/set/none
+data modify storage luigis_mansion:data my_memory.animation set value {namespace:"luigis_mansion",id:"scanning"}
 data modify entity @s data.animation set from storage luigis_mansion:data my_memory.animation
 execute if entity @s[tag=!keep_memory] run data modify storage luigis_mansion:data memory append from storage luigis_mansion:data my_memory
 execute if entity @s[tag=!keep_memory] run data remove storage luigis_mansion:data my_memory

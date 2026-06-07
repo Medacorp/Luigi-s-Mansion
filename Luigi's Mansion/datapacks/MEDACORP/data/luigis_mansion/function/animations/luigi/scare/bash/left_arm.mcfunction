@@ -57,5 +57,5 @@ execute if score #mirrored Selected matches 1 if entity @s[tag=held_item,tag=!sh
 execute if score #mirrored Selected matches 1 if entity @s[tag=held_item,tag=shrunk,tag=!flipped_gravity] positioned ^-0.1825 ^0.02 ^ run function luigis_mansion:animations/luigi/scare/bash/item
 execute if score #mirrored Selected matches 1 if entity @s[tag=held_item,tag=!shrunk,tag=flipped_gravity] positioned ^0.375 ^-0.03 ^ run function luigis_mansion:animations/luigi/scare/bash/item
 execute if score #mirrored Selected matches 1 if entity @s[tag=held_item,tag=shrunk,tag=flipped_gravity] positioned ^0.1825 ^-0.02 ^ run function luigis_mansion:animations/luigi/scare/bash/item
-execute run scoreboard players set @s[scores={AnimationProgress=38..}] AnimationProgress 30
+scoreboard players set @s[scores={AnimationProgress=38..}] AnimationProgress 30
 scoreboard players reset #temp Time

@@ -51,5 +51,5 @@ execute if entity @s[scores={AnimationProgress=31..34}] unless score #mirrored S
 execute if entity @s[scores={AnimationProgress=35..38}] unless score #mirrored Selected matches 1 store result entity @s Pose.Head[0] float 1 run scoreboard players add #temp Time 2
 execute if entity @s[scores={AnimationProgress=31..34}] if score #mirrored Selected matches 1 store result entity @s Pose.Head[0] float 1 run scoreboard players add #temp Time 2
 execute if entity @s[scores={AnimationProgress=35..38}] if score #mirrored Selected matches 1 store result entity @s Pose.Head[0] float 1 run scoreboard players remove #temp Time 2
-execute run scoreboard players set @s[scores={AnimationProgress=38..}] AnimationProgress 30
+scoreboard players set @s[scores={AnimationProgress=38..}] AnimationProgress 30
 scoreboard players reset #temp Time

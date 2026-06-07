@@ -4794,24 +4794,6 @@
         ],
         "subtitle": "luigis_mansion:subtitles.entity.player.enthusiastic"
     },
-    "entity.player.escaping_ghost.high_health": {
-        "sounds": [
-            {
-                "name": "luigis_mansion:entity/player/escape_high",
-                "stream": false
-            }
-        ],
-        "subtitle": "subtitles.entity.player.hurt"
-    },
-    "entity.player.escaping_ghost.low_health": {
-        "sounds": [
-            {
-                "name": "luigis_mansion:entity/player/escape_low",
-                "stream": false
-            }
-        ],
-        "subtitle": "subtitles.entity.player.hurt"
-    },
     "entity.player.exploding_poltergust.high_health": {
         "sounds": [
             {
@@ -4847,6 +4829,24 @@
             }
         ],
         "subtitle": "luigis_mansion:subtitles.entity.player.flee"
+    },
+    "entity.player.ghost_escape.high_health": {
+        "sounds": [
+            {
+                "name": "luigis_mansion:entity.player.scare_bashed.high_health",
+                "type": "event"
+            }
+        ],
+        "subtitle": "subtitles.entity.player.hurt"
+    },
+    "entity.player.ghost_escape.low_health": {
+        "sounds": [
+            {
+                "name": "luigis_mansion:entity.player.scare_bashed.low_health",
+                "type": "event"
+            }
+        ],
+        "subtitle": "subtitles.entity.player.hurt"
     },
     "entity.player.grab_poltergust": {
         "sounds": [

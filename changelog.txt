@@ -1,15 +1,18 @@
 v?:
 * Added Skipable Dialogs add-on, it grants the skip option on all dialogs; that's it
 * Added proper training door, one without the sign is now named green_planks
+* Added Luigi animations:
+** Ghost escape
+** Knockback/fall
+** Knockback/large wall
+** Scanning
 * Added the following furniture model:
 ** Plaques
 ** RIP signs
 ** Table mounted knitting bowls
 * Added 3DS Remake task clear sound
-* Added the large knockback variation that's slightly shorter, called fall
-* Added a fall knockback variant that's just different sounds called ghost escape
 * Added bowser's damage and loot to mansion data's ghost list
-* Changed large knockback to more accurately reflect how it works in the original
+* Changed luigi's knockback/large and game boy horror animations to more accurately reflect how it looks in the original
 * Changed Underground Lab to always trigger the dialog if no dialog is active
 * Changed Ghost Portrificationizer Room's E. Gadd to not be able to be talked to, forcing portrificationizing
 * Changed Boo pathfinding to be less cardinal direction-based
