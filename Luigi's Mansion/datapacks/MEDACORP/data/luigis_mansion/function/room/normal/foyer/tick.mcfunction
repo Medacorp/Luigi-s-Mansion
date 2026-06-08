@@ -4,7 +4,4 @@ scoreboard players set @e[tag=player,x=743,y=10,z=-2,dx=15,dy=16,dz=21] Room 1
 
 execute as @a[scores={Room=1}] run function luigis_mansion:room/normal/foyer/tick_per_player
 
-execute if entity @e[tag=toad,scores={Room=1},tag=talk_this_tick] if data storage luigis_mansion:data current_state.current_data.rooms.foyer{cleared:0b} unless data storage luigis_mansion:data dialogs[{room:1}] run data modify storage luigis_mansion:data dialogs append value {name:{namespace:"luigis_mansion",id:"toad_1"},room:1,progress:0}
-execute if entity @e[tag=toad,scores={Room=1},tag=talk_this_tick] if data storage luigis_mansion:data current_state.current_data.rooms.foyer{cleared:1b} unless data storage luigis_mansion:data dialogs[{room:1}] run data modify storage luigis_mansion:data dialogs append value {name:{namespace:"luigis_mansion",id:"toad_1_repeat"},room:1,progress:0}
-
 execute if entity @e[tag=luigi,tag=!door_animation,scores={Room=1},limit=1] run function luigis_mansion:room/normal/foyer/ghosts

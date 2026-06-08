@@ -19,23 +19,21 @@ execute if entity @s[tag=!shrunk,scores={AnimationProgress=64..65}] positioned ^
 execute if entity @s[tag=shrunk,scores={AnimationProgress=64..65}] positioned ^0.1825 ^ ^ rotated ~45 ~ positioned ^-0.1825 ^ ^ run teleport @s ~ ~ ~ ~ ~
 data modify entity @s[scores={AnimationProgress=1..60}] equipment.head set from storage luigis_mansion:data luigi.animation.item
 data remove entity @s[scores={AnimationProgress=61}] equipment.head
-data merge entity @s[scores={AnimationProgress=1}] {Pose:{Head:[0.0f,0.0f,0.01f]}}
-data merge entity @s[scores={AnimationProgress=1},tag=flipped_gravity] {Pose:{Head:[0.0f,0.0f,-180.0f]}}
-execute store result score #temp2 Time run data get storage luigis_mansion:data luigi.animation.item.components."minecraft:custom_data".held_pitch
-execute store result score #temp Time run data get entity @s Pose.Head[0]
-execute if entity @s[scores={AnimationProgress=1}] run scoreboard players operation #temp Time += #temp2 Time
-execute if entity @s[scores={AnimationProgress=1}] store result entity @s Pose.Head[0] float 1 run scoreboard players add #temp Time 90
-execute if entity @s[scores={AnimationProgress=7..9}] store result entity @s Pose.Head[0] float 1 run scoreboard players remove #temp Time 30
-execute if entity @s[scores={AnimationProgress=45..47}] store result entity @s Pose.Head[0] float 1 run scoreboard players add #temp Time 40
-execute if entity @s[scores={AnimationProgress=50..51}] store result entity @s Pose.Head[0] float 1 run scoreboard players add #temp Time 3
-execute if entity @s[scores={AnimationProgress=52..53}] store result entity @s Pose.Head[0] float 1 run scoreboard players remove #temp Time 3
-execute if entity @s[scores={AnimationProgress=57..58}] store result entity @s Pose.Head[0] float 1 run scoreboard players add #temp Time 3
-execute if entity @s[scores={AnimationProgress=59..60}] store result entity @s Pose.Head[0] float 1 run scoreboard players remove #temp Time 3
-execute if entity @s[scores={AnimationProgress=63..65}] store result entity @s Pose.Head[0] float 1 run scoreboard players remove #temp Time 10
-scoreboard players operation #temp Time -= #temp2 Time
-execute store result entity @s Rotation[1] float 1 run scoreboard players remove #temp Time 90
-scoreboard players reset #temp Time
-scoreboard players reset #temp2 Time
+execute store result score #item Time run data get storage luigis_mansion:data luigi.animation.item.components."minecraft:custom_data".held_pitch 10
+execute if entity @s[scores={AnimationProgress=1}] run scoreboard players operation @s AnimationRotationX += #item Time
+execute if entity @s[scores={AnimationProgress=1}] run scoreboard players add @s AnimationRotationX 900
+execute if entity @s[scores={AnimationProgress=7..9}] run scoreboard players remove @s AnimationRotationX 300
+execute if entity @s[scores={AnimationProgress=45..47}] run scoreboard players add @s AnimationRotationX 400
+execute if entity @s[scores={AnimationProgress=50..51}] run scoreboard players add @s AnimationRotationX 30
+execute if entity @s[scores={AnimationProgress=52..53}] run scoreboard players remove @s AnimationRotationX 30
+execute if entity @s[scores={AnimationProgress=57..58}] run scoreboard players add @s AnimationRotationX 30
+execute if entity @s[scores={AnimationProgress=59..60}] run scoreboard players remove @s AnimationRotationX 30
+execute if entity @s[scores={AnimationProgress=63..65}] run scoreboard players remove @s AnimationRotationX 100
+scoreboard players operation #head Time = @s AnimationRotationX
+scoreboard players operation #head Time -= #item Time
+execute store result entity @s Rotation[1] float 0.1 run scoreboard players remove #head Time 900
+scoreboard players reset #head Time
+scoreboard players reset #item Time
 execute at @s[tag=!shrunk,scores={AnimationProgress=..47}] positioned ^ ^-0.74 ^ run teleport @s ~ ~ ~ ~ ~
 execute at @s[tag=shrunk,scores={AnimationProgress=..47}] positioned ^ ^-0.37 ^ run teleport @s ~ ~ ~ ~ ~
 execute at @s[tag=!shrunk,scores={AnimationProgress=48..}] positioned ^ ^-0.4 ^ run teleport @s ~ ~ ~ ~ ~

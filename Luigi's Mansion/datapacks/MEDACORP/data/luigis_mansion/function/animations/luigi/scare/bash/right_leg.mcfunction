@@ -39,17 +39,13 @@ teleport @s[scores={AnimationProgress=27},tag=flipped_gravity,tag=shrunk] ~ ~0.2
 teleport @s[scores={AnimationProgress=28},tag=flipped_gravity,tag=shrunk] ~ ~0.24 ~ ~ ~
 teleport @s[scores={AnimationProgress=29},tag=flipped_gravity,tag=shrunk] ~ ~0.27 ~ ~ ~
 teleport @s[scores={AnimationProgress=30..},tag=flipped_gravity,tag=shrunk] ~ ~0.3 ~ ~ ~
-data merge entity @s[scores={AnimationProgress=1}] {Pose:{Head:[-90.0f,5.0f,0.01f]}}
-data merge entity @s[scores={AnimationProgress=1},tag=flipped_gravity] {Pose:{Head:[-90.0f,5.0f,-180.0f]}}
+scoreboard players set @s[scores={AnimationProgress=1}] AnimationRotationX -900
+scoreboard players set @s[scores={AnimationProgress=1}] AnimationRotationY 50
 execute unless data storage luigis_mansion:data luigi{tags:["moved"]} run scoreboard players set @s[scores={AnimationProgress=31..}] AnimationProgress 30
-data merge entity @s[scores={AnimationProgress=30..}] {Pose:{Head:[-90.0f,5.0f,0.01f]}}
-data merge entity @s[scores={AnimationProgress=30..},tag=flipped_gravity] {Pose:{Head:[-90.0f,5.0f,-180.0f]}}
-execute unless score #mirrored Selected matches 1 run data merge entity @s[scores={AnimationProgress=31}] {Pose:{Head:[-98.0f,5.0f,0.01f]}}
-execute unless score #mirrored Selected matches 1 run data merge entity @s[scores={AnimationProgress=31},tag=flipped_gravity] {Pose:{Head:[-98.0f,5.0f,-180.0f]}}
-execute store result score #temp Time run data get entity @s Pose.Head[0]
-execute if entity @s[scores={AnimationProgress=31..34}] unless score #mirrored Selected matches 1 store result entity @s Pose.Head[0] float 1 run scoreboard players remove #temp Time 2
-execute if entity @s[scores={AnimationProgress=35..38}] unless score #mirrored Selected matches 1 store result entity @s Pose.Head[0] float 1 run scoreboard players add #temp Time 2
-execute if entity @s[scores={AnimationProgress=31..34}] if score #mirrored Selected matches 1 store result entity @s Pose.Head[0] float 1 run scoreboard players add #temp Time 2
-execute if entity @s[scores={AnimationProgress=35..38}] if score #mirrored Selected matches 1 store result entity @s Pose.Head[0] float 1 run scoreboard players remove #temp Time 2
+scoreboard players set @s[scores={AnimationProgress=30}] AnimationRotationX -900
+execute unless score #mirrored Selected matches 1 run scoreboard players remove @s[scores={AnimationProgress=30}] AnimationRotationX 80
+execute if entity @s[scores={AnimationProgress=31..34}] unless score #mirrored Selected matches 1 run scoreboard players remove @s AnimationRotationX 20
+execute if entity @s[scores={AnimationProgress=35..38}] unless score #mirrored Selected matches 1 run scoreboard players add @s AnimationRotationX 20
+execute if entity @s[scores={AnimationProgress=31..34}] if score #mirrored Selected matches 1 run scoreboard players add @s AnimationRotationX 20
+execute if entity @s[scores={AnimationProgress=35..38}] if score #mirrored Selected matches 1 run scoreboard players remove @s AnimationRotationX 20
 scoreboard players set @s[scores={AnimationProgress=38..}] AnimationProgress 30
-scoreboard players reset #temp Time

@@ -55,34 +55,34 @@ execute at @s[scores={AnimationProgress=305}] run teleport @s ^ ^-0.2 ^
 execute at @s[scores={AnimationProgress=306}] run teleport @s ^ ^-0.15 ^
 execute at @s[scores={AnimationProgress=307}] run teleport @s ^ ^-0.1 ^
 execute at @s[scores={AnimationProgress=308}] run teleport @s ^ ^-0.05 ^
-data merge entity @s[scores={AnimationProgress=1}] {Pose:{Head:[-90.0f,0.0f,-180.0f]}}
-execute store result score #temp Time run data get entity @s Pose.Head[0]
-execute if entity @s[scores={AnimationProgress=1..10}] store result entity @s Pose.Head[0] float 1 run scoreboard players add #temp Time 9
-execute if entity @s[scores={AnimationProgress=38..40}] store result entity @s Pose.Head[0] float 1 run scoreboard players remove #temp Time 5
-execute if entity @s[scores={AnimationProgress=41..43}] store result entity @s Pose.Head[0] float 1 run scoreboard players add #temp Time 5
-execute if entity @s[scores={AnimationProgress=55..60}] store result entity @s Pose.Head[0] float 1 run scoreboard players remove #temp Time 1
-execute if entity @s[scores={AnimationProgress=71..80}] store result entity @s Pose.Head[0] float 1 run scoreboard players add #temp Time 5
-execute if entity @s[scores={AnimationProgress=150..160}] store result entity @s Pose.Head[0] float 1 run scoreboard players remove #temp Time 4
-execute if entity @s[scores={AnimationProgress=176..180}] store result entity @s Pose.Head[0] float 1 run scoreboard players remove #temp Time 8
-execute if entity @s[scores={AnimationProgress=181..185}] store result entity @s Pose.Head[0] float 1 run scoreboard players add #temp Time 8
-execute if entity @s[scores={AnimationProgress=196..200}] store result entity @s Pose.Head[0] float 1 run scoreboard players remove #temp Time 12
-execute if entity @s[scores={AnimationProgress=221..225}] store result entity @s Pose.Head[0] float 1 run scoreboard players add #temp Time 12
-execute if entity @s[scores={AnimationProgress=240..245}] store result entity @s Pose.Head[0] float 1 run scoreboard players remove #temp Time 2
-execute if entity @s[scores={AnimationProgress=246..249}] store result entity @s Pose.Head[0] float 1 run scoreboard players add #temp Time 2
-execute if entity @s[scores={AnimationProgress=261..270}] store result entity @s Pose.Head[0] float 1 run scoreboard players add #temp Time 3
-execute if entity @s[scores={AnimationProgress=281..285}] store result entity @s Pose.Head[0] float 1 run scoreboard players remove #temp Time 5
-execute if entity @s[scores={AnimationProgress=286..290}] store result entity @s Pose.Head[0] float 1 run scoreboard players add #temp Time 5
-execute if entity @s[scores={AnimationProgress=291..295}] store result entity @s Pose.Head[0] float 1 run scoreboard players remove #temp Time 5
-execute if entity @s[scores={AnimationProgress=296..300}] store result entity @s Pose.Head[0] float 1 run scoreboard players add #temp Time 2
-execute if entity @s[scores={AnimationProgress=297..299}] store result entity @s Pose.Head[0] float 1 run scoreboard players remove #temp Time 5
-execute if entity @s[scores={AnimationProgress=300..302}] store result entity @s Pose.Head[0] float 1 run scoreboard players add #temp Time 5
-execute if entity @s[scores={AnimationProgress=305..307}] store result entity @s Pose.Head[0] float 1 run scoreboard players remove #temp Time 5
-execute if entity @s[scores={AnimationProgress=308..310}] store result entity @s Pose.Head[0] float 1 run scoreboard players add #temp Time 5
-execute if entity @s[scores={AnimationProgress=317..319}] store result entity @s Pose.Head[0] float 1 run scoreboard players remove #temp Time 5
-execute if entity @s[scores={AnimationProgress=320..322}] store result entity @s Pose.Head[0] float 1 run scoreboard players add #temp Time 5
-execute if entity @s[scores={AnimationProgress=325..327}] store result entity @s Pose.Head[0] float 1 run scoreboard players remove #temp Time 5
-execute if entity @s[scores={AnimationProgress=329..330}] store result entity @s Pose.Head[0] float 1 run scoreboard players add #temp Time 5
-execute if entity @s[scores={AnimationProgress=331..340}] store result entity @s Pose.Head[0] float 1 run scoreboard players add #temp Time 9
+scoreboard players set @s[scores={AnimationProgress=1}] AnimationRotationX -900
+scoreboard players set @s[scores={AnimationProgress=1}] AnimationRotationZ -1800
+execute if entity @s[scores={AnimationProgress=1..10}] run scoreboard players add @s AnimationRotationX 90
+execute if entity @s[scores={AnimationProgress=38..40}] run scoreboard players remove @s AnimationRotationX 50
+execute if entity @s[scores={AnimationProgress=41..43}] run scoreboard players add @s AnimationRotationX 50
+execute if entity @s[scores={AnimationProgress=55..60}] run scoreboard players remove @s AnimationRotationX 10
+execute if entity @s[scores={AnimationProgress=71..80}] run scoreboard players add @s AnimationRotationX 50
+execute if entity @s[scores={AnimationProgress=150..160}] run scoreboard players remove @s AnimationRotationX 40
+execute if entity @s[scores={AnimationProgress=176..180}] run scoreboard players remove @s AnimationRotationX 80
+execute if entity @s[scores={AnimationProgress=181..185}] run scoreboard players add @s AnimationRotationX 80
+execute if entity @s[scores={AnimationProgress=196..200}] run scoreboard players remove @s AnimationRotationX 120
+execute if entity @s[scores={AnimationProgress=221..225}] run scoreboard players add @s AnimationRotationX 120
+execute if entity @s[scores={AnimationProgress=240..245}] run scoreboard players remove @s AnimationRotationX 20
+execute if entity @s[scores={AnimationProgress=246..249}] run scoreboard players add @s AnimationRotationX 20
+execute if entity @s[scores={AnimationProgress=261..270}] run scoreboard players add @s AnimationRotationX 30
+execute if entity @s[scores={AnimationProgress=281..285}] run scoreboard players remove @s AnimationRotationX 50
+execute if entity @s[scores={AnimationProgress=286..290}] run scoreboard players add @s AnimationRotationX 50
+execute if entity @s[scores={AnimationProgress=291..295}] run scoreboard players remove @s AnimationRotationX 50
+execute if entity @s[scores={AnimationProgress=296..300}] run scoreboard players add @s AnimationRotationX 20
+execute if entity @s[scores={AnimationProgress=297..299}] run scoreboard players remove @s AnimationRotationX 50
+execute if entity @s[scores={AnimationProgress=300..302}] run scoreboard players add @s AnimationRotationX 50
+execute if entity @s[scores={AnimationProgress=305..307}] run scoreboard players remove @s AnimationRotationX 50
+execute if entity @s[scores={AnimationProgress=308..310}] run scoreboard players add @s AnimationRotationX 50
+execute if entity @s[scores={AnimationProgress=317..319}] run scoreboard players remove @s AnimationRotationX 50
+execute if entity @s[scores={AnimationProgress=320..322}] run scoreboard players add @s AnimationRotationX 50
+execute if entity @s[scores={AnimationProgress=325..327}] run scoreboard players remove @s AnimationRotationX 50
+execute if entity @s[scores={AnimationProgress=329..330}] run scoreboard players add @s AnimationRotationX 50
+execute if entity @s[scores={AnimationProgress=331..340}] run scoreboard players add @s AnimationRotationX 90
 data modify entity @s[scores={AnimationProgress=38}] equipment.head merge from entity @s equipment.head.components."minecraft:custom_data".model_data.open_mouth
 data modify entity @s[scores={AnimationProgress=42}] equipment.head merge from entity @s equipment.head.components."minecraft:custom_data".model_data.default
 data modify entity @s[scores={AnimationProgress=145}] equipment.head merge from entity @s equipment.head.components."minecraft:custom_data".model_data.open_mouth
@@ -100,5 +100,4 @@ data modify entity @s[scores={AnimationProgress=317}] equipment.head merge from 
 data modify entity @s[scores={AnimationProgress=322}] equipment.head merge from entity @s equipment.head.components."minecraft:custom_data".model_data.default
 data modify entity @s[scores={AnimationProgress=325}] equipment.head merge from entity @s equipment.head.components."minecraft:custom_data".model_data.open_mouth
 data modify entity @s[scores={AnimationProgress=330}] equipment.head merge from entity @s equipment.head.components."minecraft:custom_data".model_data.default
-scoreboard players reset #temp Time
 scoreboard players set @s[scores={AnimationProgress=340..}] AnimationProgress 0

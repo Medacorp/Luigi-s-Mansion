@@ -1,2 +1,4 @@
 scoreboard players set @s AnimationProgress 0
-execute unless entity @s[scores={FurnitureVacuum=1..},nbt={data:{furniture_type:"rolling"}}] run data modify entity @s Pose set from entity @s data.default_orientation
+scoreboard players operation @s AnimationRotationX = @s FurniturePoseX
+scoreboard players operation @s AnimationRotationY = @s FurniturePoseY
+scoreboard players operation @s AnimationRotationZ = @s FurniturePoseZ

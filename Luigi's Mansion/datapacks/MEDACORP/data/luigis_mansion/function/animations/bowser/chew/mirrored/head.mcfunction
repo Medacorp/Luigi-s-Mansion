@@ -19,13 +19,11 @@ teleport @s[scores={AnimationProgress=27}] ^ ^-0.8 ^0.533
 teleport @s[scores={AnimationProgress=28}] ^ ^-0.6 ^0.4
 teleport @s[scores={AnimationProgress=29}] ^ ^-0.4 ^0.267
 teleport @s[scores={AnimationProgress=30}] ^ ^-0.2 ^0.133
-data merge entity @s[scores={AnimationProgress=1}] {Pose:{Head:[30.0f,0.0f,0.01f]}}
-execute store result score #temp Time run data get entity @s Pose.Head[1] 10
-execute if entity @s[scores={AnimationProgress=1..20}] store result entity @s Pose.Head[1] float 0.1 run scoreboard players add #temp Time 7
-execute if entity @s[scores={AnimationProgress=21..40}] store result entity @s Pose.Head[1] float 0.1 run scoreboard players remove #temp Time 15
-execute if entity @s[scores={AnimationProgress=41..60}] store result entity @s Pose.Head[1] float 0.1 run scoreboard players add #temp Time 30
-execute if entity @s[scores={AnimationProgress=61..80}] store result entity @s Pose.Head[1] float 0.1 run scoreboard players remove #temp Time 15
-scoreboard players reset #temp Time
+scoreboard players set @s[scores={AnimationProgress=1}] AnimationRotationX 300
+execute if entity @s[scores={AnimationProgress=1..20}] run scoreboard players add @s AnimationRotationY 7
+execute if entity @s[scores={AnimationProgress=21..40}] run scoreboard players remove @s AnimationRotationY 15
+execute if entity @s[scores={AnimationProgress=41..60}] run scoreboard players add @s AnimationRotationY 30
+execute if entity @s[scores={AnimationProgress=61..80}] run scoreboard players remove @s AnimationRotationY 15
 execute if entity @s[scores={AnimationProgress=1}] run data modify entity @s equipment.head merge from entity @s equipment.head.components."minecraft:custom_data".model_data.default
 execute if entity @s[scores={AnimationProgress=56}] run data modify entity @s equipment.head merge from entity @s equipment.head.components."minecraft:custom_data".model_data.open_mouth
 execute if entity @s[scores={AnimationProgress=64}] run data modify entity @s equipment.head merge from entity @s equipment.head.components."minecraft:custom_data".model_data.default

@@ -38,5 +38,3 @@ teleport @s[scores={AnimationProgress=16},tag=flipped_gravity,tag=shrunk] ~ ~-0.
 teleport @s[scores={AnimationProgress=17},tag=flipped_gravity,tag=shrunk] ~ ~-0.3 ~ ~ ~
 teleport @s[scores={AnimationProgress=18},tag=flipped_gravity,tag=shrunk] ~ ~-0.2 ~ ~ ~
 teleport @s[scores={AnimationProgress=19},tag=flipped_gravity,tag=shrunk] ~ ~-0.1 ~ ~ ~
-data merge entity @s[scores={AnimationProgress=1}] {Pose:{Head:[0.0f,0.0f,0.01f]}}
-data merge entity @s[scores={AnimationProgress=1},tag=flipped_gravity] {Pose:{Head:[0.0f,0.0f,-180.0f]}}

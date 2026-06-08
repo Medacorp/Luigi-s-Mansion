@@ -1,10 +1,13 @@
 execute store success score #temp Time run data modify entity @s data.previous_animation set from entity @s data.animation
 execute if score #temp Time matches 1 run function luigis_mansion:animations/furniture/reset_pose
 scoreboard players reset #temp Time
-execute unless data entity @s Pose.Head[0] run data merge entity @s {Pose:{Head:[0.001f,0.001f,0.001f]}}
 
 function luigis_mansion:animations/furniture/animation with entity @s data.animation
 execute if entity @s[tag=open] unless score @s ActionTime matches -2..-1 run function luigis_mansion:animations/furniture/open_animation with entity @s data.open_animation
+
+execute unless score @s AnimationOldRotationX = @s AnimationRotationX run function luigis_mansion:animations/generic/sync
+execute unless score @s AnimationOldRotationY = @s AnimationRotationY run function luigis_mansion:animations/generic/sync
+execute unless score @s AnimationOldRotationZ = @s AnimationRotationZ run function luigis_mansion:animations/generic/sync
 
 #sync up animation for shaking
 execute store result score #temp Time run data get entity @s data.initial_animation_progress

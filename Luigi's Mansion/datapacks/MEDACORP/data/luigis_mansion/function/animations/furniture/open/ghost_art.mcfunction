@@ -15,5 +15,4 @@ kill @e[tag=temp,limit=1]
 execute if entity @s[scores={ActionTime=80}] run tag @s add full_search
 execute if entity @s[scores={ActionTime=80}] run tag @s remove idle_furniture
 data modify entity @s[scores={ActionTime=80}] equipment.head merge from entity @s equipment.head.components."minecraft:custom_data".model_data.open
-scoreboard players reset #temp Time
 scoreboard players set @s[scores={ActionTime=80}] ActionTime -1

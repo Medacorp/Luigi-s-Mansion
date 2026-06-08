@@ -18,10 +18,9 @@ execute if entity @s[scores={AnimationProgress=17}] positioned ^0.3 ^ ^ rotated 
 execute if entity @s[scores={AnimationProgress=18}] positioned ^0.3 ^ ^ rotated ~-112 ~ run teleport @s ^-0.3 ^1.4 ^ ~ ~
 execute if entity @s[scores={AnimationProgress=19}] positioned ^0.3 ^ ^ rotated ~-120 ~ run teleport @s ^-0.3 ^1.5 ^ ~ ~
 execute if entity @s[scores={AnimationProgress=20}] positioned ^0.3 ^ ^ rotated ~-128 ~ run teleport @s ^-0.3 ^1.6 ^ ~ ~
-data merge entity @s[scores={AnimationProgress=1}] {Pose:{Head:[-40.0f,20.0f,0.0f]}}
-execute store result score #temp Time run data get entity @s Pose.Head[2]
-execute if entity @s[scores={AnimationProgress=1..5}] store result entity @s Pose.Head[2] float 1 run scoreboard players add #temp Time 16
-execute if entity @s[scores={AnimationProgress=6..12}] store result entity @s Pose.Head[2] float 1 run scoreboard players remove #temp Time 16
-scoreboard players reset #temp Time
+scoreboard players set @s[scores={AnimationProgress=1}] AnimationRotationX -400
+scoreboard players set @s[scores={AnimationProgress=1}] AnimationRotationY 200
+execute if entity @s[scores={AnimationProgress=1..5}] run scoreboard players add @s AnimationRotationZ 160
+execute if entity @s[scores={AnimationProgress=6..12}] run scoreboard players remove @s AnimationRotationZ 160
 data modify entity @s[scores={AnimationProgress=1}] equipment.head merge from entity @s equipment.head.components."minecraft:custom_data".model_data.equipment
 scoreboard players set @s[scores={AnimationProgress=20}] AnimationProgress 0

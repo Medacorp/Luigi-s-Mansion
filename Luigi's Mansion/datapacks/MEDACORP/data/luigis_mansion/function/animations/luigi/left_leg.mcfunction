@@ -6,12 +6,12 @@ teleport @s[tag=shrunk,tag=flipped_gravity] ^-0.0625 ^0.73 ^ ~ ~
 
 execute at @s run teleport @s[tag=low_health,tag=!shrunk] ^ ^ ^-0.2 ~ ~
 execute at @s run teleport @s[tag=low_health,tag=shrunk] ^ ^ ^-0.15 ~ ~
-data modify entity @s[tag=was_flipped,tag=!flipped_gravity] Pose.Head[2] set value 0.001f
-data modify entity @s[tag=!was_flipped,tag=flipped_gravity] Pose.Head[2] set value -180.0f
+scoreboard players add @s[tag=was_flipped,tag=!flipped_gravity] AnimationRotationZ 1800
+scoreboard players remove @s[tag=!was_flipped,tag=flipped_gravity] AnimationRotationZ 1800
 
 # Move animations
-data modify entity @s[tag=riding_poltergust] Pose.Head[0] set value -30.0f
-data modify entity @s[tag=riding_poltergust] Pose.Head[1] set value -30.0f
+scoreboard players set @s[tag=riding_poltergust] AnimationRotationX -300
+scoreboard players set @s[tag=riding_poltergust] AnimationRotationY -300
 execute if entity @s[tag=sneaking,tag=!riding_poltergust,scores={AnimationProgress=0}] run function luigis_mansion:animations/luigi/sneak/left_leg
 execute if entity @s[tag=walking,tag=!riding_poltergust,scores={AnimationProgress=0}] run function luigis_mansion:animations/luigi/walk/left_leg
 execute if entity @s[tag=running,tag=!riding_poltergust,scores={AnimationProgress=0}] run function luigis_mansion:animations/luigi/run/left_leg

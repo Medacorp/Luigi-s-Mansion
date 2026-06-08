@@ -1,5 +1,4 @@
 scoreboard players add @s AnimationProgress 1
-data merge entity @s[scores={AnimationProgress=1}] {Pose:{Head:[0.0f,0.0f,0.0f]}}
 teleport @s[scores={AnimationProgress=21}] ~ ~ ~ ~36 ~
 teleport @s[scores={AnimationProgress=22}] ~ ~ ~ ~72 ~
 teleport @s[scores={AnimationProgress=23}] ~ ~ ~ ~108 ~
@@ -57,4 +56,4 @@ teleport @s[scores={AnimationProgress=119}] ~ ~ ~ ~324 ~
 data modify entity @s[scores={AnimationProgress=40}] equipment.head merge from entity @s equipment.head.components."minecraft:custom_data".model_data.invisible
 data modify entity @s[scores={AnimationProgress=80}] equipment.head merge from entity @s equipment.head.components."minecraft:custom_data".model_data.default
 scoreboard players set @s[scores={AnimationProgress=200}] AnimationProgress 0
-data modify entity @s Pose.Head[0] set from entity @e[tag=this_entity,limit=1] Rotation[1]
+execute store result score @s AnimationRotationX run data get entity @e[tag=this_entity,limit=1] Rotation[1] 10

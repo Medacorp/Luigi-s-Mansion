@@ -19,7 +19,7 @@ teleport @s[scores={AnimationProgress=17}] ^ ^-0.8 ^0.533
 teleport @s[scores={AnimationProgress=18}] ^ ^-0.6 ^0.4
 teleport @s[scores={AnimationProgress=19}] ^ ^-0.4 ^0.267
 teleport @s[scores={AnimationProgress=20}] ^ ^-0.2 ^0.133
-data merge entity @s[scores={AnimationProgress=1}] {Pose:{Head:[30.0f,0.0f,0.01f]}}
+scoreboard players set @s[scores={AnimationProgress=1}] AnimationRotationX 300
 data modify entity @s[scores={AnimationProgress=1}] equipment.head merge from entity @s equipment.head.components."minecraft:custom_data".model_data.open_mouth
 data modify entity @s[scores={AnimationProgress=5}] equipment.head merge from entity @s equipment.head.components."minecraft:custom_data".model_data.default
 scoreboard players set @s[scores={AnimationProgress=20}] AnimationProgress 0

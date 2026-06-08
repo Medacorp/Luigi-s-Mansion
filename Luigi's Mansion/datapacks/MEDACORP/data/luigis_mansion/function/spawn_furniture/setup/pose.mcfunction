@@ -24,4 +24,7 @@ execute unless score #furniture Time matches -900..900 run scoreboard players op
 execute unless score #furniture Time matches -900..900 run scoreboard players operation @e[tag=this_entity,scores={FurnitureLightUp=-2147483648..},limit=1] FurnitureLightUp *= #-1 Constants
 scoreboard players reset #furniture Time
 execute as @e[tag=this_entity,limit=1] run data modify entity @s data.default_orientation set from entity @s Pose
+execute store result score @e[tag=this_entity,limit=1] FurniturePoseX run data get storage luigis_mansion:data furniture.pose_edit[0] 10
+execute store result score @e[tag=this_entity,limit=1] FurniturePoseY run data get storage luigis_mansion:data furniture.pose_edit[1] 10
+execute store result score @e[tag=this_entity,limit=1] FurniturePoseZ run data get storage luigis_mansion:data furniture.pose_edit[2] 10
 data remove storage luigis_mansion:data furniture.pose_edit

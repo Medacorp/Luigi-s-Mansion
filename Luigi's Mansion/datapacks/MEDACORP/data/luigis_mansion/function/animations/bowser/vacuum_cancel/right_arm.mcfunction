@@ -29,5 +29,6 @@ execute at @s[scores={AnimationProgress=13..14}] positioned ^ ^0.667 ^0.667 run 
 execute at @s[scores={AnimationProgress=15..16}] positioned ^ ^0.667 ^0.667 run teleport @s ^ ^-0.187 ^-0.707
 execute at @s[scores={AnimationProgress=17..18}] positioned ^ ^0.667 ^0.667 run teleport @s ^ ^-0.347 ^-0.693
 execute at @s[scores={AnimationProgress=19..20}] positioned ^ ^0.667 ^0.667 run teleport @s ^ ^-0.507 ^-0.68
-data merge entity @s[scores={AnimationProgress=1}] {Pose:{Head:[-70.0f,7.0f,0.01f]}}
+scoreboard players set @s[scores={AnimationProgress=1}] AnimationRotationX -700
+scoreboard players set @s[scores={AnimationProgress=1}] AnimationRotationY 70
 scoreboard players set @s[scores={AnimationProgress=20}] AnimationProgress 0

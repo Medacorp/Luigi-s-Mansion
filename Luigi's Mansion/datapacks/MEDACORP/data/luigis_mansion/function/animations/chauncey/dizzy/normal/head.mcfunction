@@ -1,11 +1,28 @@
 scoreboard players add @s AnimationProgress 1
-data merge entity @s[scores={AnimationProgress=1}] {Pose:{Head:[0.0f,0.0f,0.01f]}}
-execute store result score #temp Time run data get entity @s Pose.Head[0] 100
-execute if entity @s[scores={AnimationProgress=1..180}] store result entity @s Pose.Head[0] float 0.01 run scoreboard players remove #temp Time 675
-execute if entity @s[scores={AnimationProgress=181..200}] store result entity @s Pose.Head[0] float 0.01 run scoreboard players add #temp Time 675
-execute store result score #temp Time run data get entity @s Pose.Head[1]
-execute if entity @s[scores={AnimationProgress=221..225}] store result entity @s Pose.Head[1] float 1 run scoreboard players add #temp Time 3
-execute if entity @s[scores={AnimationProgress=226..235}] store result entity @s Pose.Head[1] float 1 run scoreboard players remove #temp Time 3
-execute if entity @s[scores={AnimationProgress=236..240}] store result entity @s Pose.Head[1] float 1 run scoreboard players add #temp Time 3
-scoreboard players reset #temp Time
-scoreboard players set @s[scores={AnimationProgress=240..}] AnimationProgress 0
+execute if entity @s[scores={AnimationProgress=1..20}] run scoreboard players remove @s AnimationRotationX 360
+execute if entity @s[scores={AnimationProgress=21..25}] run scoreboard players remove @s AnimationRotationX 100
+execute if entity @s[scores={AnimationProgress=26..30}] run scoreboard players add @s AnimationRotationX 100
+execute if entity @s[scores={AnimationProgress=31..35}] run scoreboard players remove @s AnimationRotationX 100
+execute if entity @s[scores={AnimationProgress=36..40}] run scoreboard players add @s AnimationRotationX 100
+execute if entity @s[scores={AnimationProgress=41..45}] run scoreboard players remove @s AnimationRotationX 100
+execute if entity @s[scores={AnimationProgress=46..50}] run scoreboard players add @s AnimationRotationX 100
+execute if entity @s[scores={AnimationProgress=51..55}] run scoreboard players remove @s AnimationRotationX 100
+execute if entity @s[scores={AnimationProgress=56..60}] run scoreboard players add @s AnimationRotationX 100
+execute if entity @s[scores={AnimationProgress=61..65}] run scoreboard players remove @s AnimationRotationX 100
+execute if entity @s[scores={AnimationProgress=66..70}] run scoreboard players add @s AnimationRotationX 100
+execute if entity @s[scores={AnimationProgress=71..75}] run scoreboard players remove @s AnimationRotationX 100
+execute if entity @s[scores={AnimationProgress=76..80}] run scoreboard players add @s AnimationRotationX 100
+execute if entity @s[scores={AnimationProgress=81..85}] run scoreboard players remove @s AnimationRotationX 100
+execute if entity @s[scores={AnimationProgress=86..90}] run scoreboard players add @s AnimationRotationX 100
+execute if entity @s[scores={AnimationProgress=91..95}] run scoreboard players remove @s AnimationRotationX 100
+execute if entity @s[scores={AnimationProgress=96..100}] run scoreboard players add @s AnimationRotationX 100
+execute if entity @s[scores={AnimationProgress=101..105}] run scoreboard players remove @s AnimationRotationX 100
+execute if entity @s[scores={AnimationProgress=106..110}] run scoreboard players add @s AnimationRotationX 100
+execute if entity @s[scores={AnimationProgress=111..115}] run scoreboard players remove @s AnimationRotationX 100
+execute if entity @s[scores={AnimationProgress=116..120}] run scoreboard players add @s AnimationRotationX 100
+execute if entity @s[scores={AnimationProgress=121..125}] run scoreboard players remove @s AnimationRotationX 100
+execute if entity @s[scores={AnimationProgress=126..130}] run scoreboard players add @s AnimationRotationX 100
+execute if entity @s[scores={AnimationProgress=161..165}] run scoreboard players add @s AnimationRotationY 30
+execute if entity @s[scores={AnimationProgress=166..175}] run scoreboard players remove @s AnimationRotationY 30
+execute if entity @s[scores={AnimationProgress=176..180}] run scoreboard players add @s AnimationRotationY 30
+scoreboard players set @s[scores={AnimationProgress=180..}] AnimationProgress 0

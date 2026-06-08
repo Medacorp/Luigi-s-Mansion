@@ -8,5 +8,5 @@ teleport @s[scores={AnimationProgress=17}] ^ ^-0.2 ^-0.55
 teleport @s[scores={AnimationProgress=18}] ^ ^-0.35 ^-0.55
 teleport @s[scores={AnimationProgress=19}] ^ ^-0.5 ^-0.55
 teleport @s[scores={AnimationProgress=20}] ^ ^-0.65 ^-0.55
-data merge entity @s[scores={AnimationProgress=1}] {Pose:{Head:[90.0f,0.0f,0.01f]}}
+scoreboard players set @s[scores={AnimationProgress=1}] AnimationRotationX 900
 scoreboard players set @s[scores={AnimationProgress=20}] AnimationProgress 0

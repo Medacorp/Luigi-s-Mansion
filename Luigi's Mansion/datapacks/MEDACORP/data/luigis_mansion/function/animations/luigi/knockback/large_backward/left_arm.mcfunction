@@ -135,10 +135,7 @@ teleport @s[scores={AnimationProgress=32},tag=shrunk,tag=flipped_gravity] ^ ^0.1
 teleport @s[scores={AnimationProgress=33},tag=shrunk,tag=flipped_gravity] ^ ^0.1 ^
 teleport @s[scores={AnimationProgress=34},tag=shrunk,tag=flipped_gravity] ^ ^0.2 ^
 teleport @s[scores={AnimationProgress=35..},tag=shrunk,tag=flipped_gravity] ^ ^0.3 ^
-data merge entity @s[scores={AnimationProgress=1}] {Pose:{Head:[-90.0f,0.0f,0.01f]}}
-data merge entity @s[scores={AnimationProgress=1},tag=flipped_gravity] {Pose:{Head:[0.0f,0.0f,-180.0f]}}
-execute store result score #temp Time run data get entity @s Pose.Head[0]
-execute if entity @s[scores={AnimationProgress=31..40}] store result entity @s Pose.Head[0] float 1 run scoreboard players add #temp Time 8
-execute if entity @s[scores={AnimationProgress=..30}] store result entity @s Pose.Head[0] float 1 run scoreboard players remove #temp Time 24
+scoreboard players set @s[scores={AnimationProgress=1}] AnimationRotationX -900
+execute if entity @s[scores={AnimationProgress=31..40}] run scoreboard players add @s AnimationRotationX 80
+execute if entity @s[scores={AnimationProgress=..30}] run scoreboard players remove @s AnimationRotationX 240
 scoreboard players set @s[scores={AnimationProgress=50}] AnimationProgress 0
-scoreboard players reset #temp Time

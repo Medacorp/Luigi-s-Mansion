@@ -8,6 +8,5 @@ teleport @s[scores={AnimationProgress=6}] ^ ^ ^ ~-216 ~
 teleport @s[scores={AnimationProgress=7}] ^ ^ ^ ~-252 ~
 teleport @s[scores={AnimationProgress=8}] ^ ^ ^ ~-288 ~
 teleport @s[scores={AnimationProgress=9}] ^ ^ ^ ~-324 ~
-data merge entity @s[scores={AnimationProgress=1}] {Pose:{Head:[0.0f,0.0f,0.01f]}}
 scoreboard players set @s[scores={AnimationProgress=20}] AnimationProgress 0
 tag @e[tag=this_entity,limit=1] remove has_equipment

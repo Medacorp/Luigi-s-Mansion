@@ -8,10 +8,10 @@ teleport @s[tag=low_health,tag=!shrunk,tag=flipped_gravity] ^0.375 ^-0.34 ^ ~ ~
 teleport @s[tag=!low_health,tag=shrunk,tag=flipped_gravity] ^0.1825 ^0.4 ^ ~ ~
 teleport @s[tag=low_health,tag=shrunk,tag=flipped_gravity] ^0.1825 ^0.46 ^ ~ ~
 
-data modify entity @s[tag=was_low_health,tag=!low_health,tag=!low_health] Pose.Head[0] set value 0.001f
-data modify entity @s[tag=!was_low_health,tag=low_health,tag=!low_health] Pose.Head[0] set value 20.0f
-data modify entity @s[tag=was_flipped,tag=!flipped_gravity] Pose.Head[2] set value 0.001f
-data modify entity @s[tag=!was_flipped,tag=flipped_gravity] Pose.Head[2] set value -180.0f
+scoreboard players remove @s[tag=was_low_health,tag=!low_health] AnimationRotationX 200
+scoreboard players add @s[tag=!was_low_health,tag=low_health] AnimationRotationX 200
+scoreboard players add @s[tag=was_flipped,tag=!flipped_gravity] AnimationRotationZ 1800
+scoreboard players remove @s[tag=!was_flipped,tag=flipped_gravity] AnimationRotationZ 1800
 
 data remove entity @s[tag=held_item] equipment.head
 execute unless score #mirrored Selected matches 1 if data storage luigis_mansion:data luigi.selected_item.components."minecraft:custom_data".is_nozzle run tag @s add holding_poltergust

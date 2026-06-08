@@ -37,9 +37,8 @@ execute if data storage luigis_mansion:data ghost{tags:["big"]} run teleport @s[
 execute if data storage luigis_mansion:data ghost{tags:["big"]} run teleport @s[scores={AnimationProgress=17}] ~ ~-0.15 ~
 execute if data storage luigis_mansion:data ghost{tags:["big"]} run teleport @s[scores={AnimationProgress=18}] ~ ~-0.1 ~
 execute if data storage luigis_mansion:data ghost{tags:["big"]} run teleport @s[scores={AnimationProgress=19}] ~ ~-0.05 ~
-data merge entity @s[scores={AnimationProgress=1}] {Pose:{Head:[-90.0f,90.0f,0.0f]}}
-execute store result score #temp Time run data get entity @s Pose.Head[1]
-execute if entity @s[scores={AnimationProgress=1..10}] store result entity @s Pose.Head[1] float 1 run scoreboard players remove #temp Time 2
-execute if entity @s[scores={AnimationProgress=11..20}] store result entity @s Pose.Head[1] float 1 run scoreboard players add #temp Time 2
-scoreboard players reset #temp Time
+scoreboard players set @s[scores={AnimationProgress=1}] AnimationRotationX -900
+scoreboard players set @s[scores={AnimationProgress=1}] AnimationRotationY 900
+execute if entity @s[scores={AnimationProgress=1..10}] run scoreboard players remove @s AnimationRotationY 20
+execute if entity @s[scores={AnimationProgress=11..20}] run scoreboard players add @s AnimationRotationY 20
 scoreboard players set @s[scores={AnimationProgress=20..}] AnimationProgress 0

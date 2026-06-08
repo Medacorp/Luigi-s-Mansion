@@ -12,11 +12,11 @@ execute if entity @s[scores={AnimationProgress=10}] positioned ^0.3 ^ ^ rotated 
 teleport @s[scores={AnimationProgress=12}] ^ ^0.4 ^
 teleport @s[scores={AnimationProgress=13}] ^ ^0.8 ^
 teleport @s[scores={AnimationProgress=14}] ^ ^0.4 ^
-data merge entity @s[scores={AnimationProgress=1}] {Pose:{Head:[-40.0f,20.0f,-176.0f]}}
-execute store result score #temp Time run data get entity @s Pose.Head[2]
-execute if entity @s[scores={AnimationProgress=1..11}] store result entity @s Pose.Head[2] float 1 run scoreboard players remove #temp Time 16
-execute if entity @s[scores={AnimationProgress=12..13}] store result entity @s Pose.Head[2] float 1 run scoreboard players add #temp Time 16
-execute if entity @s[scores={AnimationProgress=14..15}] store result entity @s Pose.Head[2] float 1 run scoreboard players remove #temp Time 16
-scoreboard players reset #temp Time
+scoreboard players set @s[scores={AnimationProgress=1}] AnimationRotationX -400
+scoreboard players set @s[scores={AnimationProgress=1}] AnimationRotationY 200
+scoreboard players set @s[scores={AnimationProgress=1}] AnimationRotationZ -1760
+execute if entity @s[scores={AnimationProgress=1..11}] run scoreboard players remove @s AnimationRotationZ 160
+execute if entity @s[scores={AnimationProgress=12..13}] run scoreboard players add @s AnimationRotationZ 160
+execute if entity @s[scores={AnimationProgress=14..15}] run scoreboard players remove @s AnimationRotationZ 160
 data modify entity @s[scores={AnimationProgress=1}] equipment.head merge from entity @s equipment.head.components."minecraft:custom_data".model_data.banana_peel
 scoreboard players set @s[scores={AnimationProgress=20}] AnimationProgress 0

@@ -11,7 +11,10 @@ entity:{
             id:"scan/scanner/1" //ID of the dialog
         },
         * "warp", //Warps the scanner to the default position in the mansion if they're not Gooigi and the can_warp global variable is turned on.
-    can_talk_to:1b, //Whether this entity can be talked to. Default = 1b for Toad and E. Gadd, and 0b for everything else.
+    talk_dialog:{ //Dialog to trigger when trying to talk to this entity.
+        namespace:"luigis_mansion", //The dialog namespace.
+        id:"toad_1" //The dialog ID.
+    },
     
     //General
     rotation:[0.0f,0.0f], //Sets the direction this entity will face.

@@ -1,10 +1,7 @@
 scoreboard players add @s AnimationProgress 1
-data merge entity @s[scores={AnimationProgress=1}] {Pose:{Head:[0.0f,0.0f,0.01f]}}
-execute store result score #temp Time run data get entity @s Pose.Head[1]
-execute if entity @s[scores={AnimationProgress=1..3}] store result entity @s Pose.Head[1] float 1 run scoreboard players remove #temp Time 3
-execute if entity @s[scores={AnimationProgress=8..13}] store result entity @s Pose.Head[1] float 1 run scoreboard players add #temp Time 3
-execute if entity @s[scores={AnimationProgress=18..20}] store result entity @s Pose.Head[1] float 1 run scoreboard players remove #temp Time 3
-scoreboard players reset #temp Time
+execute if entity @s[scores={AnimationProgress=1..3}] run scoreboard players remove @s AnimationRotationY 30
+execute if entity @s[scores={AnimationProgress=8..13}] run scoreboard players add @s AnimationRotationY 30
+execute if entity @s[scores={AnimationProgress=18..20}] run scoreboard players remove @s AnimationRotationY 30
 scoreboard players set @s[scores={AnimationProgress=20..}] AnimationProgress 0
 execute if entity @s[scores={AnimationProgress=3}] run playsound luigis_mansion:entity.chauncey.scream hostile @a[tag=same_room] ~ ~ ~ 3
 execute unless data storage luigis_mansion:data ghost{tags:["big"]} run data modify entity @s[scores={AnimationProgress=3}] equipment.head merge from entity @s equipment.head.components."minecraft:custom_data".model_data.screaming

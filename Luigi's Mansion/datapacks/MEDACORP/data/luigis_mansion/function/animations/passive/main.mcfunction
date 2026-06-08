@@ -4,14 +4,17 @@ execute if data storage luigis_mansion:data passive.mirror.z store result score 
 #todelete - old mirror reflections
 execute if data storage luigis_mansion:data passive.mirror{mirror_set_by_furniture_entity:1b} run tag @s add mirror_set_by_furniture_entity
 #/todelete
+tag @s remove flipped_gravity
+execute if data storage luigis_mansion:data ghost{tags:["flipped_gravity"]} run tag @s add flipped_gravity
 execute store success score #temp Time run data modify entity @s data.animation set from storage luigis_mansion:data passive.animation
 execute if score #temp Time matches 1 run function luigis_mansion:animations/passive/reset_pose
 scoreboard players reset #temp Time
-tag @s remove flipped_gravity
-execute if data storage luigis_mansion:data ghost{tags:["flipped_gravity"]} run tag @s add flipped_gravity
-execute unless data entity @s Pose.Head[0] run data merge entity @s {Pose:{Head:[0.001f,0.001f,0.001f]}}
 teleport @s ~ ~ ~ ~ ~
 $function $(namespace):animations/$(id)/call_part_function
+
+execute unless score @s AnimationOldRotationX = @s AnimationRotationX run function luigis_mansion:animations/generic/sync
+execute unless score @s AnimationOldRotationY = @s AnimationRotationY run function luigis_mansion:animations/generic/sync
+execute unless score @s AnimationOldRotationZ = @s AnimationRotationZ run function luigis_mansion:animations/generic/sync
 
 execute store result score #temp Time run data get storage luigis_mansion:data passive.initial_animation_progress
 execute unless data storage luigis_mansion:data passive{initial_animation_progress:0} unless score @s AnimationProgress matches 0 unless score @s AnimationProgress = #temp Time run function luigis_mansion:animations/passive/main with storage luigis_mansion:data macro.passive

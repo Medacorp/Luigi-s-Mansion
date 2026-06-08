@@ -1,2 +1,3 @@
-data merge entity @s {Pose:{Head:[-110.0f,0.0f,-90.0f]}}
-data modify entity @s Pose.Head[1] set from entity @e[tag=this_entity,limit=1] Rotation[1]
+scoreboard players set @s AnimationRotationX -1100
+scoreboard players set @s AnimationRotationZ -900
+execute store result score @s AnimationRotationY run data get entity @e[tag=this_entity,limit=1] Rotation[1] 10

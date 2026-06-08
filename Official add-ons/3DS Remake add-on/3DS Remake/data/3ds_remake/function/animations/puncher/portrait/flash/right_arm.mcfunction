@@ -1,3 +1,4 @@
 teleport @s ^0.15 ^0.05 ^
-data merge entity @s {Pose:{Head:[-150.0f,0.0f,20.0f]}}
+scoreboard players set @s AnimationRotationX -1500
+scoreboard players set @s AnimationRotationZ 200
 attribute @s minecraft:scale base set 0.5

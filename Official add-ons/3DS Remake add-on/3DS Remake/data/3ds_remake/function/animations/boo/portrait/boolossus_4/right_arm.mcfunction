@@ -1,1 +1,2 @@
-data merge entity @s {Pose:{Head:[0.0f,40.0f,90.0f]}}
+scoreboard players set @s AnimationRotationY 400
+scoreboard players set @s AnimationRotationZ 900

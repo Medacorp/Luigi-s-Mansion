@@ -1,2 +1,2 @@
-data merge entity @s {Pose:{Head:[0.0f,0.0f,-160.0f]}}
+scoreboard players set @s AnimationRotationZ -1600
 data modify entity @s equipment.head merge from entity @s equipment.head.components."minecraft:custom_data".model_data.attacking

@@ -1,2 +1,2 @@
 data modify storage luigis_mansion:data furniture set value {room:6,shake_animation:["interact","vacuum"],no_dust:1b,sound:{namespace:"luigis_mansion",id:"heavy_generic"},scan_result:{namespace:"luigis_mansion",id:"scan/scanner/75"}}
-execute positioned 685 112.3 47 rotated -90 0 run function luigis_mansion:spawn_furniture/drum_lamp
+execute positioned 685 112.313 47 rotated -90 0 run function luigis_mansion:spawn_furniture/drum_lamp

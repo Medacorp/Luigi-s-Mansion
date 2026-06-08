@@ -55,16 +55,16 @@ execute at @s[scores={AnimationProgress=305}] run teleport @s ^ ^-0.2 ^
 execute at @s[scores={AnimationProgress=306}] run teleport @s ^ ^-0.15 ^
 execute at @s[scores={AnimationProgress=307}] run teleport @s ^ ^-0.1 ^
 execute at @s[scores={AnimationProgress=308}] run teleport @s ^ ^-0.05 ^
-data merge entity @s[scores={AnimationProgress=1}] {Pose:{Head:[-90.0f,0.0f,-180.0f]}}
-execute store result score #temp Time run data get entity @s Pose.Head[0]
-execute if entity @s[scores={AnimationProgress=1..10}] store result entity @s Pose.Head[0] float 1 run scoreboard players add #temp Time 9
-execute if entity @s[scores={AnimationProgress=21..30}] store result entity @s Pose.Head[0] float 1 run scoreboard players remove #temp Time 4
-execute if entity @s[scores={AnimationProgress=71..80}] store result entity @s Pose.Head[0] float 1 run scoreboard players add #temp Time 4
-execute if entity @s[scores={AnimationProgress=156..160}] store result entity @s Pose.Head[0] float 1 run scoreboard players remove #temp Time 8
-execute if entity @s[scores={AnimationProgress=181..185}] store result entity @s Pose.Head[0] float 1 run scoreboard players add #temp Time 8
-execute if entity @s[scores={AnimationProgress=196..200}] store result entity @s Pose.Head[0] float 1 run scoreboard players remove #temp Time 16
-execute if entity @s[scores={AnimationProgress=251..255}] store result entity @s Pose.Head[0] float 1 run scoreboard players add #temp Time 16
-execute if entity @s[scores={AnimationProgress=331..340}] store result entity @s Pose.Head[0] float 1 run scoreboard players add #temp Time 9
+scoreboard players set @s[scores={AnimationProgress=1}] AnimationRotationX -900
+scoreboard players set @s[scores={AnimationProgress=1}] AnimationRotationZ -1800
+execute if entity @s[scores={AnimationProgress=1..10}] run scoreboard players add @s AnimationRotationX 90
+execute if entity @s[scores={AnimationProgress=21..30}] run scoreboard players remove @s AnimationRotationX 40
+execute if entity @s[scores={AnimationProgress=71..80}] run scoreboard players add @s AnimationRotationX 40
+execute if entity @s[scores={AnimationProgress=156..160}] run scoreboard players remove @s AnimationRotationX 80
+execute if entity @s[scores={AnimationProgress=181..185}] run scoreboard players add @s AnimationRotationX 80
+execute if entity @s[scores={AnimationProgress=196..200}] run scoreboard players remove @s AnimationRotationX 160
+execute if entity @s[scores={AnimationProgress=251..255}] run scoreboard players add @s AnimationRotationX 160
+execute if entity @s[scores={AnimationProgress=331..340}] run scoreboard players add @s AnimationRotationX 90
 execute if entity @s[scores={AnimationProgress=40}] run playsound 3ds_remake:entity.polterpup.first_bark neutral @a[tag=same_room] ~ ~ ~ 1
 execute if entity @s[scores={AnimationProgress=60}] run playsound 3ds_remake:entity.polterpup.sniff neutral @a[tag=same_room] ~ ~ ~ 0.5
 execute if entity @s[scores={AnimationProgress=65}] run playsound 3ds_remake:entity.polterpup.sniff neutral @a[tag=same_room] ~ ~ ~ 0.5
@@ -88,5 +88,4 @@ execute if entity @s[scores={AnimationProgress=240}] run playsound 3ds_remake:en
 execute if entity @s[scores={AnimationProgress=260}] run playsound 3ds_remake:entity.polterpup.jump_bark neutral @a[tag=same_room] ~ ~ ~ 1
 execute if entity @s[scores={AnimationProgress=280}] run playsound 3ds_remake:entity.polterpup.lick2 neutral @a[tag=same_room] ~ ~ ~ 1
 execute if entity @s[scores={AnimationProgress=300}] run playsound 3ds_remake:entity.polterpup.last_bark neutral @a[tag=same_room] ~ ~ ~ 1
-scoreboard players reset #temp Time
 scoreboard players set @s[scores={AnimationProgress=340..}] AnimationProgress 0

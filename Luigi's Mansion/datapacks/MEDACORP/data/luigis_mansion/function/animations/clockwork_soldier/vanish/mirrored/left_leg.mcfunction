@@ -39,5 +39,4 @@ execute if entity @s[scores={AnimationProgress=37}] positioned ^-0.23 ^ ^ rotate
 execute if entity @s[scores={AnimationProgress=38}] positioned ^-0.23 ^ ^ rotated ~-288 ~ run teleport @s ^0.23 ^1.9 ^ ~ ~
 execute if entity @s[scores={AnimationProgress=39}] positioned ^-0.23 ^ ^ rotated ~-324 ~ run teleport @s ^0.23 ^1.95 ^ ~ ~
 teleport @s[scores={AnimationProgress=40..}] ^ ^2 ^
-data merge entity @s[scores={AnimationProgress=1}] {Pose:{Head:[0.0f,0.0f,0.0f]}}
 scoreboard players set @s[scores={AnimationProgress=120}] AnimationProgress 0

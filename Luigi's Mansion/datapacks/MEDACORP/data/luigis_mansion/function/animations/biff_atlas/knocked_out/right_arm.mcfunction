@@ -38,14 +38,11 @@ teleport @s[scores={AnimationProgress=126}] ~ ~-0.44 ~
 teleport @s[scores={AnimationProgress=127}] ~ ~-0.33 ~
 teleport @s[scores={AnimationProgress=128}] ~ ~-0.22 ~
 teleport @s[scores={AnimationProgress=129}] ~ ~-0.11 ~
-data merge entity @s[scores={AnimationProgress=1}] {Pose:{Head:[10.0f,0.0f,0.01f]}}
-execute store result score #temp Time run data get entity @s Pose.Head[0]
-execute if entity @s[scores={AnimationProgress=1..20}] store result entity @s Pose.Head[0] float 1 run scoreboard players add #temp Time 31
-execute if entity @s[scores={AnimationProgress=21..30}] store result entity @s Pose.Head[0] float 1 run scoreboard players add #temp Time 2
-execute if entity @s[scores={AnimationProgress=31..40}] store result entity @s Pose.Head[0] float 1 run scoreboard players remove #temp Time 2
-execute if entity @s[scores={AnimationProgress=121..130}] store result entity @s Pose.Head[0] float 1 run scoreboard players add #temp Time 9
-execute store result score #temp Time run data get entity @s Pose.Head[1]
-execute if entity @s[scores={AnimationProgress=31..40}] store result entity @s Pose.Head[1] float 1 run scoreboard players add #temp Time 9
-execute if entity @s[scores={AnimationProgress=121..130}] store result entity @s Pose.Head[1] float 1 run scoreboard players remove #temp Time 9
-scoreboard players reset #temp Time
+scoreboard players set @s[scores={AnimationProgress=1}] AnimationRotationX 100
+execute if entity @s[scores={AnimationProgress=1..20}] run scoreboard players add @s AnimationRotationX 310
+execute if entity @s[scores={AnimationProgress=21..30}] run scoreboard players add @s AnimationRotationX 20
+execute if entity @s[scores={AnimationProgress=31..40}] run scoreboard players remove @s AnimationRotationX 20
+execute if entity @s[scores={AnimationProgress=121..130}] run scoreboard players add @s AnimationRotationX 90
+execute if entity @s[scores={AnimationProgress=31..40}] run scoreboard players add @s AnimationRotationY 90
+execute if entity @s[scores={AnimationProgress=121..130}] run scoreboard players remove @s AnimationRotationY 90
 scoreboard players set @s[scores={AnimationProgress=130..}] AnimationProgress 0

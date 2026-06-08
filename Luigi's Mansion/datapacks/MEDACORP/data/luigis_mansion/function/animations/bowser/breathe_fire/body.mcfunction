@@ -59,13 +59,11 @@ execute at @s[scores={AnimationProgress=137..138}] positioned ^ ^0.667 ^0.667 ru
 execute at @s[scores={AnimationProgress=139..140}] positioned ^ ^0.667 ^0.667 run teleport @s ^ ^-0.507 ^-0.68
 scoreboard players operation #temp AnimationProgress = @s AnimationProgress
 scoreboard players operation #temp AnimationProgress %= #2 Constants
-data merge entity @s[scores={AnimationProgress=1}] {Pose:{Head:[10.0f,0.0f,0.01f]}}
-execute store result score #temp Time run data get entity @s Pose.Head[0] 10
-execute if entity @s[scores={AnimationProgress=1..20}] store result entity @s Pose.Head[0] float 0.1 run scoreboard players add #temp Time 35
-execute if entity @s[scores={AnimationProgress=21..121}] if score #temp AnimationProgress matches 0 store result entity @s Pose.Head[0] float 0.1 run scoreboard players add #temp Time 10
-execute if entity @s[scores={AnimationProgress=21..121}] if score #temp AnimationProgress matches 1 store result entity @s Pose.Head[0] float 0.1 run scoreboard players remove #temp Time 10
-execute if entity @s[scores={AnimationProgress=121..140}] store result entity @s Pose.Head[0] float 0.1 run scoreboard players remove #temp Time 35
-scoreboard players reset #temp Time
+scoreboard players set @s[scores={AnimationProgress=1}] AnimationRotationX 100
+execute if entity @s[scores={AnimationProgress=1..20}] run scoreboard players add @s AnimationRotationX 35
+execute if entity @s[scores={AnimationProgress=21..121}] if score #temp AnimationProgress matches 0 run scoreboard players add @s AnimationRotationX 10
+execute if entity @s[scores={AnimationProgress=21..121}] if score #temp AnimationProgress matches 1 run scoreboard players remove @s AnimationRotationX 10
+execute if entity @s[scores={AnimationProgress=121..140}] run scoreboard players remove @s AnimationRotationX 35
 scoreboard players reset #temp AnimationProgress
 execute if entity @s[scores={AnimationProgress=1}] run playsound luigis_mansion:entity.bowser.breathe_fire hostile @a[tag=same_room] ~ ~ ~ 3
 execute at @s[scores={AnimationProgress=21}] run playsound luigis_mansion:entity.bowser.fire hostile @a[tag=same_room] ~ ~ ~ 3

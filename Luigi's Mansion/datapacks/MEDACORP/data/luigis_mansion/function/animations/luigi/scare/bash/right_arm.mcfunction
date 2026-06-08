@@ -39,23 +39,18 @@ teleport @s[scores={AnimationProgress=27},tag=flipped_gravity,tag=shrunk] ~ ~0.2
 teleport @s[scores={AnimationProgress=28},tag=flipped_gravity,tag=shrunk] ~ ~0.24 ~ ~ ~
 teleport @s[scores={AnimationProgress=29},tag=flipped_gravity,tag=shrunk] ~ ~0.27 ~ ~ ~
 teleport @s[scores={AnimationProgress=30..},tag=flipped_gravity,tag=shrunk] ~ ~0.3 ~ ~ ~
-data merge entity @s[scores={AnimationProgress=1}] {Pose:{Head:[-180.0f,0.0f,0.01f]}}
-data merge entity @s[scores={AnimationProgress=1},tag=flipped_gravity] {Pose:{Head:[-180.0f,0.0f,-180.0f]}}
-execute store result score #temp Time run data get entity @s Pose.Head[0]
-execute if entity @s[scores={AnimationProgress=21..30}] store result entity @s Pose.Head[0] float 1 run scoreboard players add #temp Time 18
+scoreboard players set @s[scores={AnimationProgress=1}] AnimationRotationX -1800
+execute if entity @s[scores={AnimationProgress=21..30}] run scoreboard players add @s AnimationRotationX 180
 execute unless data storage luigis_mansion:data luigi{tags:["moved"]} run scoreboard players set @s[scores={AnimationProgress=31..}] AnimationProgress 30
-data merge entity @s[scores={AnimationProgress=30..}] {Pose:{Head:[0.0f,0.0f,0.01f]}}
-data merge entity @s[scores={AnimationProgress=30..},tag=flipped_gravity] {Pose:{Head:[0.0f,0.0f,-180.0f]}}
-execute store result score #temp Time run data get entity @s Pose.Head[0]
-execute if entity @s[scores={AnimationProgress=31..32}] unless score #mirrored Selected matches 1 store result entity @s Pose.Head[0] float 1 run scoreboard players remove #temp Time 4
-execute if entity @s[scores={AnimationProgress=33..36}] unless score #mirrored Selected matches 1 store result entity @s Pose.Head[0] float 1 run scoreboard players add #temp Time 4
-execute if entity @s[scores={AnimationProgress=37..38}] unless score #mirrored Selected matches 1 store result entity @s Pose.Head[0] float 1 run scoreboard players remove #temp Time 4
-execute if entity @s[scores={AnimationProgress=31..32}] if score #mirrored Selected matches 1 store result entity @s Pose.Head[0] float 1 run scoreboard players add #temp Time 4
-execute if entity @s[scores={AnimationProgress=33..36}] if score #mirrored Selected matches 1 store result entity @s Pose.Head[0] float 1 run scoreboard players remove #temp Time 4
-execute if entity @s[scores={AnimationProgress=37..38}] if score #mirrored Selected matches 1 store result entity @s Pose.Head[0] float 1 run scoreboard players add #temp Time 4
+scoreboard players set @s[scores={AnimationProgress=30}] AnimationRotationX 0
+execute if entity @s[scores={AnimationProgress=31..32}] unless score #mirrored Selected matches 1 run scoreboard players remove @s AnimationRotationX 40
+execute if entity @s[scores={AnimationProgress=33..36}] unless score #mirrored Selected matches 1 run scoreboard players add @s AnimationRotationX 40
+execute if entity @s[scores={AnimationProgress=37..38}] unless score #mirrored Selected matches 1 run scoreboard players remove @s AnimationRotationX 40
+execute if entity @s[scores={AnimationProgress=31..32}] if score #mirrored Selected matches 1 run scoreboard players add @s AnimationRotationX 40
+execute if entity @s[scores={AnimationProgress=33..36}] if score #mirrored Selected matches 1 run scoreboard players remove @s AnimationRotationX 40
+execute if entity @s[scores={AnimationProgress=37..38}] if score #mirrored Selected matches 1 run scoreboard players add @s AnimationRotationX 40
 execute unless score #mirrored Selected matches 1 if entity @s[tag=held_item,tag=!shrunk,tag=!flipped_gravity] positioned ^0.375 ^0.03 ^ run function luigis_mansion:animations/luigi/scare/bash/item
 execute unless score #mirrored Selected matches 1 if entity @s[tag=held_item,tag=shrunk,tag=!flipped_gravity] positioned ^0.1825 ^0.02 ^ run function luigis_mansion:animations/luigi/scare/bash/item
 execute unless score #mirrored Selected matches 1 if entity @s[tag=held_item,tag=!shrunk,tag=flipped_gravity] positioned ^-0.375 ^-0.03 ^ run function luigis_mansion:animations/luigi/scare/bash/item
 execute unless score #mirrored Selected matches 1 if entity @s[tag=held_item,tag=shrunk,tag=flipped_gravity] positioned ^-0.1825 ^-0.02 ^ run function luigis_mansion:animations/luigi/scare/bash/item
 scoreboard players set @s[scores={AnimationProgress=38..}] AnimationProgress 30
-scoreboard players reset #temp Time

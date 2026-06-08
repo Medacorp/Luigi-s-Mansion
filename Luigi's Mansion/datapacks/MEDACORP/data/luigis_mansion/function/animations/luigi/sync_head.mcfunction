@@ -17,8 +17,6 @@ execute unless entity @s[scores={RotationDifference=-60000..60000}] if entity @s
 scoreboard players reset #temp PlayerRotation
 
 # Look up/down
-execute if entity @s[tag=!flipped_gravity] store result score #temp Time run data get entity @e[tag=this_luigi,tag=!model_piece,limit=1] Rotation[1]
-execute if entity @s[tag=flipped_gravity] store result score #temp Time run data get entity @e[tag=this_luigi,tag=!model_piece,limit=1] Rotation[1] -1
-execute if entity @s[tag=low_health] run scoreboard players add #temp Time 20
-execute if entity @s store result entity @s Pose.Head[0] float 1 run scoreboard players get #temp Time
-scoreboard players reset #temp Time
+execute if entity @s[tag=!flipped_gravity] store result score @s AnimationRotationX run data get entity @e[tag=this_luigi,tag=!model_piece,limit=1] Rotation[1]
+execute if entity @s[tag=flipped_gravity] store result score @s AnimationRotationX run data get entity @e[tag=this_luigi,tag=!model_piece,limit=1] Rotation[1] -1
+execute if entity @s[tag=low_health] run scoreboard players add @s AnimationRotationX 20

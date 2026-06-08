@@ -4,6 +4,18 @@ execute if data storage luigis_mansion:data luigi.mirror.z store result score @s
 #todelete - old mirror reflections
 execute if data storage luigis_mansion:data luigi.mirror{mirror_set_by_furniture_entity:1b} run tag @s add mirror_set_by_furniture_entity
 #/todelete
+tag @s remove death_animation
+execute if data storage luigis_mansion:data luigi{tags:["riding_poltergust"]} run tag @s add riding_poltergust
+execute if data storage luigis_mansion:data luigi{tags:["low_health"]} run tag @s[tag=!riding_poltergust] add low_health
+execute if data storage luigis_mansion:data luigi{tags:["sneaking"]} run tag @s add sneaking
+execute if data storage luigis_mansion:data luigi{tags:["walking"]} run tag @s add walking
+execute if data storage luigis_mansion:data luigi{tags:["running"]} run tag @s add running
+execute if data storage luigis_mansion:data luigi{tags:["poltergust_grabbed"]} run tag @s add poltergust_grabbed
+execute if data storage luigis_mansion:data luigi{tags:["flipped_gravity"]} run tag @s add flipped_gravity
+execute if data storage luigis_mansion:data luigi{alive:0b} run tag @s add death_animation
+execute if data storage luigis_mansion:data luigi{shrunk:1b} run attribute @s minecraft:scale base set 0.5
+execute if data storage luigis_mansion:data luigi{shrunk:1b} run tag @s add shrunk
+execute if data storage luigis_mansion:data luigi{shrunk:0b} run attribute @s minecraft:scale base set 1
 execute if data storage luigis_mansion:data luigi{alive:1b} if entity @s[tag=was_sneaking,tag=!riding_poltergust] unless entity @s[scores={AnimationProgress=1..}] unless data storage luigis_mansion:data luigi{tags:["sneaking"]} run function luigis_mansion:animations/luigi/reset_pose
 execute if data storage luigis_mansion:data luigi{alive:1b} if entity @s[tag=was_walking,tag=!riding_poltergust] unless entity @s[scores={AnimationProgress=1..}] unless data storage luigis_mansion:data luigi{tags:["walking"]} run function luigis_mansion:animations/luigi/reset_pose
 execute if data storage luigis_mansion:data luigi{alive:1b} if entity @s[tag=was_running,tag=!riding_poltergust] unless entity @s[scores={AnimationProgress=1..}] unless data storage luigis_mansion:data luigi{tags:["running"]} run function luigis_mansion:animations/luigi/reset_pose
@@ -14,18 +26,6 @@ execute if data storage luigis_mansion:data luigi{alive:1b} if entity @s[tag=dea
 execute if data storage luigis_mansion:data luigi{alive:1b} store success score #temp Time run data modify entity @s data.animation set from storage luigis_mansion:data luigi.animation
 execute if score #temp Time matches 1 run function luigis_mansion:animations/luigi/reset_pose
 scoreboard players reset #temp Time
-tag @s remove death_animation
-execute if data storage luigis_mansion:data luigi{tags:["riding_poltergust"]} run tag @s add riding_poltergust
-execute if data storage luigis_mansion:data luigi{tags:["low_health"]} run tag @s[tag=!riding_poltergust] add low_health
-execute if data storage luigis_mansion:data luigi{tags:["sneaking"]} run tag @s add sneaking
-execute if data storage luigis_mansion:data luigi{tags:["walking"]} run tag @s add walking
-execute if data storage luigis_mansion:data luigi{tags:["running"]} run tag @s add running
-execute if data storage luigis_mansion:data luigi{tags:["poltergust_grabbed"]} run tag @s add poltergust_grabbed
-execute if data storage luigis_mansion:data luigi{alive:0b} run tag @s add death_animation
-execute if data storage luigis_mansion:data luigi{shrunk:1b} run attribute @s minecraft:scale base set 0.5
-execute if data storage luigis_mansion:data luigi{shrunk:1b} run tag @s add shrunk
-execute if data storage luigis_mansion:data luigi{shrunk:0b} run attribute @s minecraft:scale base set 1
-execute unless data entity @s Pose.Head[0] run data merge entity @s {Pose:{Head:[0.001f,0.001f,0.001f]}}
 function 3ds_remake:animations/gooigi/call_part_function
 execute if data storage luigis_mansion:data luigi{invulnerable:1b} if entity @s[tag=!source,tag=!held_item,tag=!poltergust_body] run function luigis_mansion:animations/luigi/invulnerability_blink
 execute if data storage luigis_mansion:data luigi{invulnerable:0b} if entity @s[tag=!source,tag=!held_item,tag=!poltergust_body,tag=was_invisible] run function luigis_mansion:animations/luigi/invulnerability_blink
@@ -49,6 +49,10 @@ tag @s[tag=!flipped_gravity] remove was_flipped
 tag @s[tag=flipped_gravity] remove flipped_gravity
 tag @s remove poltergust_grabbed
 tag @s remove shrunk
+
+execute unless score @s AnimationOldRotationX = @s AnimationRotationX run function luigis_mansion:animations/generic/sync
+execute unless score @s AnimationOldRotationY = @s AnimationRotationY run function luigis_mansion:animations/generic/sync
+execute unless score @s AnimationOldRotationZ = @s AnimationRotationZ run function luigis_mansion:animations/generic/sync
 
 execute store result score #temp Time run data get storage luigis_mansion:data luigi.initial_animation_progress
 execute unless data storage luigis_mansion:data luigi{initial_animation_progress:0} unless score @s AnimationProgress matches 0 unless score @s AnimationProgress = #temp Time run function 3ds_remake:animations/gooigi/main

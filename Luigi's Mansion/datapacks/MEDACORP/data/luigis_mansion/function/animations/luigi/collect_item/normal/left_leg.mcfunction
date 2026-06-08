@@ -7,6 +7,4 @@ execute if entity @s[tag=!shrunk,scores={AnimationProgress=8}] positioned ^-0.12
 execute if entity @s[tag=shrunk,scores={AnimationProgress=8}] positioned ^-0.0625 ^ ^ rotated ~90 ~ positioned ^0.0625 ^ ^ run teleport @s ~ ~ ~ ~ ~
 execute if entity @s[tag=!shrunk,scores={AnimationProgress=9}] positioned ^-0.125 ^ ^ rotated ~45 ~ positioned ^0.125 ^ ^ run teleport @s ~ ~ ~ ~ ~
 execute if entity @s[tag=shrunk,scores={AnimationProgress=9}] positioned ^-0.0625 ^ ^ rotated ~45 ~ positioned ^0.0625 ^ ^ run teleport @s ~ ~ ~ ~ ~
-data merge entity @s[scores={AnimationProgress=1}] {Pose:{Head:[0.0f,0.0f,0.01f]}}
-data merge entity @s[scores={AnimationProgress=1},tag=flipped_gravity] {Pose:{Head:[0.0f,0.0f,-180.0f]}}
 scoreboard players set @s[scores={AnimationProgress=70}] AnimationProgress 0

@@ -35,6 +35,6 @@ teleport @s[scores={AnimationProgress=6},tag=shrunk,tag=flipped_gravity] ^ ^0.2 
 teleport @s[scores={AnimationProgress=7..8},tag=shrunk,tag=flipped_gravity] ^ ^0.1 ^
 teleport @s[scores={AnimationProgress=9},tag=shrunk,tag=flipped_gravity] ^ ^0.2 ^
 teleport @s[scores={AnimationProgress=10..},tag=shrunk,tag=flipped_gravity] ^ ^0.3 ^
-data merge entity @s[scores={AnimationProgress=1}] {Pose:{Head:[-90.0f,-5.0f,0.01f]}}
-data merge entity @s[scores={AnimationProgress=1},tag=flipped_gravity] {Pose:{Head:[-90.0f,-5.0f,-180.0f]}}
+scoreboard players set @s[scores={AnimationProgress=1}] AnimationRotationX -900
+scoreboard players set @s[scores={AnimationProgress=1}] AnimationRotationY -50
 scoreboard players set @s[scores={AnimationProgress=20}] AnimationProgress 0

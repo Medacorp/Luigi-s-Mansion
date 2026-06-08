@@ -18,10 +18,8 @@ execute if entity @s[scores={AnimationProgress=16}] positioned ^0.3 ^ ^ rotated 
 execute if entity @s[scores={AnimationProgress=17}] positioned ^0.3 ^ ^ rotated ~-306 ~ run teleport @s ^-0.3 ^ ^ ~ ~
 execute if entity @s[scores={AnimationProgress=18}] positioned ^0.3 ^ ^ rotated ~-324 ~ run teleport @s ^-0.3 ^ ^ ~ ~
 execute if entity @s[scores={AnimationProgress=19}] positioned ^0.3 ^ ^ rotated ~-342 ~ run teleport @s ^-0.3 ^ ^ ~ ~
-data merge entity @s[scores={AnimationProgress=1}] {Pose:{Head:[-90.0f,0.0f,0.0f]}}
-execute store result score #temp Time run data get entity @s Pose.Head[0]
-execute if entity @s[scores={AnimationProgress=5..10}] store result entity @s Pose.Head[0] float 1 run scoreboard players add #temp Time 5
-execute if entity @s[scores={AnimationProgress=16..25}] store result entity @s Pose.Head[0] float 1 run scoreboard players remove #temp Time 7
-execute if entity @s[scores={AnimationProgress=31..40}] store result entity @s Pose.Head[0] float 1 run scoreboard players add #temp Time 5
-scoreboard players reset #temp Time
+scoreboard players set @s[scores={AnimationProgress=1}] AnimationRotationX -900
+execute if entity @s[scores={AnimationProgress=5..10}] run scoreboard players add @s AnimationRotationX 50
+execute if entity @s[scores={AnimationProgress=16..25}] run scoreboard players remove @s AnimationRotationX 70
+execute if entity @s[scores={AnimationProgress=31..40}] run scoreboard players add @s AnimationRotationX 50
 scoreboard players set @s[scores={AnimationProgress=40}] AnimationProgress 0

@@ -15,6 +15,9 @@ tag @e[tag=lamp,tag=same_room] remove freeze_animation
 tag @e[tag=lamp,tag=same_room] remove no_ai
 execute if score #dialog Dialog matches 1..26 as @e[tag=luigi,tag=same_room] run function luigis_mansion:entities/luigi/animation/set/idle_no_poltergust
 execute if score #dialog Dialog matches 1..46 as @a[tag=same_room] run function luigis_mansion:other/music/set/toad
+execute if score #dialog Dialog matches 1 if data storage luigis_mansion:data current_state.current_data.rooms.balcony_1{cleared:1b} run data modify storage luigis_mansion:data dialogs append value {name:{namespace:"luigis_mansion",id:"toad_1_repeat"},room:0,progress:0}
+execute if score #dialog Dialog matches 1 if data storage luigis_mansion:data current_state.current_data.rooms.balcony_1{cleared:1b} run data modify storage luigis_mansion:data dialogs[-1].room set from storage luigis_mansion:data dialogs[0].room
+execute if score #dialog Dialog matches 1 if data storage luigis_mansion:data current_state.current_data.rooms.balcony_1{cleared:1b} run scoreboard players set #dialog Dialog -1
 execute if score #dialog Dialog matches 1 run data modify entity @e[tag=toad,tag=same_room,limit=1] data.sound set value "cry_0"
 execute if score #dialog Dialog matches 1 run tellraw @a[tag=same_room] {type:"translatable",translate:"chat.type.text",with:[{type:"translatable",translate:"luigis_mansion:entity.toad",color:"green"},{type:"translatable",translate:"luigis_mansion:dialog.toad_2.1"}]}
 

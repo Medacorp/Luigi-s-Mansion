@@ -25,3 +25,4 @@ execute if score #dialog Dialog matches 3 as @e[tag=luigi,tag=same_room] run fun
 execute if score #dialog Dialog matches 4 as @e[tag=luigi,tag=same_room] run function luigis_mansion:entities/luigi/animation/set/none
 execute if score #dialog Dialog matches 4 run stopsound @a[tag=same_room] neutral luigis_mansion:entity.e_gadd.talk.luigi_oui
 execute if score #dialog Dialog matches 4 run data remove entity @e[tag=e_gadd,tag=same_room,limit=1] data.animation
+execute if score #dialog Dialog matches 4 run scoreboard players set #dialog Dialog -1

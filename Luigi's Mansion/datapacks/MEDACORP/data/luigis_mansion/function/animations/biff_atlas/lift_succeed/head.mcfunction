@@ -48,13 +48,10 @@ teleport @s[scores={AnimationProgress=136}] ^ ^ ^0.08
 teleport @s[scores={AnimationProgress=137}] ^ ^ ^0.06
 teleport @s[scores={AnimationProgress=138}] ^ ^ ^0.04
 teleport @s[scores={AnimationProgress=139}] ^ ^ ^0.02
-data merge entity @s[scores={AnimationProgress=1}] {Pose:{Head:[0.01f,0.0f,0.0f]}}
-execute store result score #temp Time run data get entity @s Pose.Head[0] 10
-execute if entity @s[scores={AnimationProgress=1..20}] store result entity @s Pose.Head[0] float 0.1 run scoreboard players add #temp Time 8
-execute if entity @s[scores={AnimationProgress=21..40}] store result entity @s Pose.Head[0] float 0.1 run scoreboard players remove #temp Time 4
-execute if entity @s[scores={AnimationProgress=51..60}] store result entity @s Pose.Head[0] float 0.1 run scoreboard players remove #temp Time 32
-execute if entity @s[scores={AnimationProgress=121..140}] store result entity @s Pose.Head[0] float 0.1 run scoreboard players add #temp Time 8
-execute if entity @s[scores={AnimationProgress=141..150}] store result entity @s Pose.Head[0] float 0.1 run scoreboard players add #temp Time 24
-execute if entity @s[scores={AnimationProgress=141..160}] store result entity @s Pose.Head[0] float 0.1 run scoreboard players remove #temp Time 8
-scoreboard players reset #temp Time
+execute if entity @s[scores={AnimationProgress=1..20}] run scoreboard players add @s AnimationRotationX 8
+execute if entity @s[scores={AnimationProgress=21..40}] run scoreboard players remove @s AnimationRotationX 4
+execute if entity @s[scores={AnimationProgress=51..60}] run scoreboard players remove @s AnimationRotationX 32
+execute if entity @s[scores={AnimationProgress=121..140}] run scoreboard players add @s AnimationRotationX 8
+execute if entity @s[scores={AnimationProgress=141..150}] run scoreboard players add @s AnimationRotationX 24
+execute if entity @s[scores={AnimationProgress=141..160}] run scoreboard players remove @s AnimationRotationX 8
 scoreboard players set @s[scores={AnimationProgress=160..}] AnimationProgress 0

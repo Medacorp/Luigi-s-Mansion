@@ -28,6 +28,9 @@ tag @e[tag=toad,tag=same_room,limit=1] remove freeze_animation
 tag @e[tag=toad,tag=same_room,limit=1] remove no_ai
 tag @e[tag=lamp,tag=same_room] remove freeze_animation
 tag @e[tag=lamp,tag=same_room] remove no_ai
+execute if score #dialog Dialog matches 1 if data storage luigis_mansion:data current_state.current_data.rooms.foyer{cleared:1b} run data modify storage luigis_mansion:data dialogs append value {name:{namespace:"luigis_mansion",id:"toad_1_repeat"},room:0,progress:0}
+execute if score #dialog Dialog matches 1 if data storage luigis_mansion:data current_state.current_data.rooms.foyer{cleared:1b} run data modify storage luigis_mansion:data dialogs[-1].room set from storage luigis_mansion:data dialogs[0].room
+execute if score #dialog Dialog matches 1 if data storage luigis_mansion:data current_state.current_data.rooms.foyer{cleared:1b} run scoreboard players set #dialog Dialog -1
 execute if score #dialog Dialog matches 1 if data storage luigis_mansion:data current_state.current_data.technical_data{toad_1_spoke:1b} run tag @a[tag=same_room,limit=1] add next_dialog_line
 execute if score #dialog Dialog matches 1 if data storage luigis_mansion:data current_state.current_data.technical_data{toad_1_spoke:1b} run scoreboard players set #dialog Dialog 27
 execute if score #dialog Dialog matches 1.. as @a[tag=same_room] run function luigis_mansion:other/music/set/toad

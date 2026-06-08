@@ -1,2 +1,2 @@
-data modify storage luigis_mansion:data entity set value {room:-4,scan_result:{namespace:"luigis_mansion",id:"scan/entity/e_gadd"}}
+data modify storage luigis_mansion:data entity set value {room:-4,scan_result:{namespace:"luigis_mansion",id:"scan/entity/e_gadd"},talk_dialog:{namespace:"luigis_mansion",id:"gallery/talk"}}
 execute positioned 772 77 -17.0 rotated -180 0 run function luigis_mansion:spawn_entities/e_gadd

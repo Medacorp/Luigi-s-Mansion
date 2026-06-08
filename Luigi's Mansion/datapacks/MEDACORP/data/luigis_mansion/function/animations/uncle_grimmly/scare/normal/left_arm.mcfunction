@@ -1,3 +1,4 @@
 scoreboard players add @s AnimationProgress 1
-data merge entity @s[scores={AnimationProgress=1}] {Pose:{Head:[-90.0f,-20.0f,0.01f]}}
+scoreboard players set @s[scores={AnimationProgress=1}] AnimationRotationX -900
+scoreboard players set @s[scores={AnimationProgress=1}] AnimationRotationY -200
 scoreboard players set @s[scores={AnimationProgress=8..}] AnimationProgress 0

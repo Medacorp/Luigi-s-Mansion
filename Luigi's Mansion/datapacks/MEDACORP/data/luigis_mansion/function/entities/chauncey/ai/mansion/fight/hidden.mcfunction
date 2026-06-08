@@ -89,15 +89,15 @@ data modify entity @s[scores={Dialog=540}] data.animation set value {namespace:"
 data modify entity @s[scores={Dialog=560}] data.animation set value {namespace:"luigis_mansion",id:"grab_rambler"}
 execute if entity @s[scores={Dialog=581}] run tag @e[type=minecraft:armor_stand,tag=ball,tag=same_room] add dead
 
-scoreboard players set @s[scores={Dialog=582}] VulnerableTime 240
+scoreboard players set @s[scores={Dialog=582}] VulnerableTime 180
 data modify entity @s[scores={Dialog=582}] data.animation set value {namespace:"luigis_mansion",id:"dizzy"}
 tag @s[scores={Dialog=582}] remove laugh
 scoreboard players set @s[scores={Dialog=582}] ActionTime 0
 execute if entity @s[scores={Dialog=582}] run playsound luigis_mansion:entity.chauncey.hit_by_ball hostile @a[tag=same_room] ~ ~ ~ 1
-execute at @s[scores={Dialog=582}] run teleport @s ~ ~-2 ~
-execute if entity @s[scores={Dialog=802}] run playsound luigis_mansion:entity.chauncey.recover hostile @a[tag=same_room] ~ ~ ~ 1
-teleport @s[scores={Dialog=822}] 796.0 20 -48.0
-scoreboard players set @s[scores={Dialog=822}] Dialog 0
+execute at @s[scores={Dialog=582..602}] run teleport @s ~ ~0.1 ~
+execute if entity @s[scores={Dialog=742}] run playsound luigis_mansion:entity.chauncey.recover hostile @a[tag=same_room] ~ ~ ~ 1
+teleport @s[scores={Dialog=762}] 796.0 20 64.0
+scoreboard players set @s[scores={Dialog=762}] Dialog 0
 
 data remove entity @s[scores={Dialog=824}] data.animation
 execute at @s[scores={Dialog=824}] run tag @s[z=-56.0,dz=7] add left

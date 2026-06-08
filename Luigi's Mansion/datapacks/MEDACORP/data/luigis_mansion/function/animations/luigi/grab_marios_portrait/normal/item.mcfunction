@@ -143,8 +143,7 @@ execute if entity @s[tag=shrunk,tag=flipped_gravity,scores={AnimationProgress=77
 execute if entity @s[tag=shrunk,tag=flipped_gravity,scores={AnimationProgress=78}] positioned ^-0.1825 ^ ^ rotated ~ ~65 positioned ^ ^ ^0.37 run teleport @s ~ ~-0.3 ~ ~ ~
 execute if entity @s[tag=shrunk,tag=flipped_gravity,scores={AnimationProgress=79}] positioned ^-0.1825 ^ ^ rotated ~ ~70 positioned ^ ^ ^0.37 run teleport @s ~ ~-0.3 ~ ~ ~
 execute if entity @s[tag=shrunk,tag=flipped_gravity,scores={AnimationProgress=80..}] positioned ^-0.1825 ^ ^ rotated ~ ~75 positioned ^ ^ ^0.37 run teleport @s ~ ~-0.3 ~ ~ ~
-data merge entity @s[scores={AnimationProgress=1}] {Pose:{Head:[0.0f,-180.0f,0.01f]}}
-data merge entity @s[scores={AnimationProgress=1},tag=flipped_gravity] {Pose:{Head:[0.0f,-180.0f,-180.0f]}}
+scoreboard players set @s[scores={AnimationProgress=1}] AnimationRotationY -1800
+scoreboard players set @s[scores={AnimationProgress=41}] AnimationRotationY 0
 data modify entity @s[scores={AnimationProgress=1..}] equipment.head set value {id:"minecraft:diamond_pickaxe",count:1,components:{"minecraft:item_model":"luigis_mansion:furniture/marios_portrait","minecraft:custom_model_data":{flags:[1b,1b]}}}
-data modify entity @s[scores={AnimationProgress=61}] Pose.Head[1] set value 0.0f
 scoreboard players set @s[scores={AnimationProgress=120}] AnimationProgress 0
